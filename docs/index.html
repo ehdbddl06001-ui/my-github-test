@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KMLE 대화형 퀴즈</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>KMLE 대화형 퀴즈</h1>
+  <p class="sub">문항을 풀고 보기를 클릭하면 즉시 채점됩니다. 오답은 브라우저에 자동 저장되고, 언제든 오답노트(.md)로 내보낼 수 있습니다.</p>
+</header>
+
+<!-- 설정 화면 -->
+<section id="setup" class="card">
+  <div class="row">
+    <label for="subject">과목</label>
+    <select id="subject"></select>
+  </div>
+  <div class="row">
+    <label><input type="checkbox" id="shuffle" /> 문항 순서 섞기</label>
+    <label><input type="checkbox" id="onlyWrong" /> 오답노트 문항만 다시 풀기</label>
+  </div>
+  <div class="row">
+    <button id="startBtn" class="primary">퀴즈 시작</button>
+    <button id="viewWrongBtn">오답노트 보기</button>
+  </div>
+  <p id="wrongCount" class="muted"></p>
+</section>
+
+<!-- 퀴즈 화면 -->
+<section id="quiz" class="card hidden">
+  <div class="quiz-top">
+    <span id="progress" class="badge"></span>
+    <span id="typeTag" class="tag"></span>
+    <span id="subjTag" class="subj"></span>
+  </div>
+  <p id="vignette" class="vignette"></p>
+  <p id="question" class="question"></p>
+  <div id="options"></div>
+  <div id="explanation" class="explanation hidden"></div>
+  <div class="quiz-nav">
+    <button id="nextBtn" class="primary hidden">다음 문항 →</button>
+    <button id="quitBtn">그만두기</button>
+  </div>
+</section>
+
+<!-- 결과 화면 -->
+<section id="result" class="card hidden">
+  <h2>결과 요약</h2>
+  <p id="score" class="score"></p>
+  <div id="wrongList"></div>
+  <div class="row">
+    <button id="restartBtn" class="primary">처음으로</button>
+    <button id="reviewBtn">오답만 다시 풀기</button>
+  </div>
+</section>
+
+<!-- 오답노트 화면 -->
+<section id="wrongbook" class="card hidden">
+  <h2>오답노트 <span id="wbCount" class="muted"></span></h2>
+  <div class="row">
+    <button id="exportMdBtn">오답노트 .md 내보내기</button>
+    <button id="exportCsvBtn">오답 .csv 내보내기</button>
+    <button id="clearBtn" class="danger">오답노트 비우기</button>
+    <button id="backBtn">← 돌아가기</button>
+  </div>
+  <div id="wbList"></div>
+</section>
+
+<footer>
+  <p class="muted">
+    브라우저 저장(localStorage)에 오답이 기록됩니다. 이 기기·브라우저에만 남습니다.<br />
+    repo의 <code>오답노트/*.md</code>에 파일로 남기려면 내보낸 파일을 커밋하거나 Codespaces에서 <code>python3 quiz.py</code>를 사용하세요.
+  </p>
+</footer>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

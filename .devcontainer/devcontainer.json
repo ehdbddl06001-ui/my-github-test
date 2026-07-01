@@ -1,0 +1,11 @@
+{
+  "name": "KMLE Quiz (Python)",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "postCreateCommand": "python3 --version && echo '준비 완료. 실행:  cd kmle/quiz && python3 quiz.py'",
+  "postAttachCommand": "echo '=== KMLE 퀴즈 ===  cd kmle/quiz && python3 quiz.py  (오답은 kmle/오답노트/에 자동 저장)'"
+}
