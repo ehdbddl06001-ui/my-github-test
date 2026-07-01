@@ -63,6 +63,24 @@ def is_today(q):
     return q.get("created") == datetime.date.today().isoformat()
 
 
+def recent_topics(questions, days=14):
+    """최근 N일 내 생성된 문항의 주제(topic)를 과목별로 모은다. 중복 방지용."""
+    cutoff = datetime.date.today() - datetime.timedelta(days=days)
+    by_subject = {}
+    for q in questions:
+        c = q.get("created")
+        if not c:
+            continue
+        try:
+            d = datetime.date.fromisoformat(c)
+        except ValueError:
+            continue
+        if d >= cutoff:
+            key = q.get("topic") or q["question"].strip()[:40]
+            by_subject.setdefault(q["subject"], []).append((c, key))
+    return by_subject
+
+
 # ----------------------------------------------------------------------------
 # 출력 헬퍼
 # ----------------------------------------------------------------------------
@@ -353,12 +371,27 @@ def main():
     p.add_argument("--review", action="store_true", help="오답노트에 쌓인 문항만 다시 풀기")
     p.add_argument("--today", action="store_true", help="오늘 생성된 문항만 풀기")
     p.add_argument("--export", action="store_true", help="JSON을 마크다운 문항집으로 재생성")
+    p.add_argument("--recent-topics", nargs="?", type=int, const=14, default=None,
+                   metavar="DAYS", help="최근 N일(기본 14) 내 생성 문항 주제 목록 출력(루틴 중복 방지용)")
     args = p.parse_args()
 
     questions = load_questions()
     if not questions:
         print(f"문항 JSON이 없습니다. ({QUESTIONS_DIR})")
         sys.exit(1)
+
+    if args.recent_topics is not None:
+        days = args.recent_topics
+        cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+        by = recent_topics(questions, days)
+        print(f"# 최근 {days}일({cutoff} 이후) 생성된 문항 주제 (이 목록과 겹치지 않게 생성하세요)")
+        if not by:
+            print("(해당 기간에 생성된 문항 없음 — 어떤 주제든 사용 가능)")
+        for sub in sorted(by):
+            print(f"\n[{sub}]")
+            for c, key in sorted(by[sub]):
+                print(f"  - ({c}) {key}")
+        return
 
     if args.export:
         print("마크다운 문항집을 재생성합니다…")
@@ -368,6 +401,7 @@ def main():
         return
 
     # 모드 결정: 플래그가 없으면 대화형 메뉴로 학습 구역을 고른다.
+    interactive = not (args.review or args.today or args.subject or args.all)
     mode = None
     if args.review:
         mode = "review"
@@ -390,6 +424,13 @@ def main():
         if not questions:
             print("\n오늘 생성된 문항이 아직 없습니다. (매일 오전 6시 루틴이 새 문항을 추가합니다)")
             return
+        # 오늘의 문항이 여러 과목이면 과목을 골라 풀 수 있게 한다(대화형일 때).
+        if interactive and len(subjects_of(questions)) > 1:
+            sub = choose_subject(questions)
+            if sub:
+                questions = [q for q in questions if q["subject"] == sub]
+        elif args.subject:
+            questions = [q for q in questions if q["subject"] == args.subject]
         print(f"\n[오늘의 문항] {len(questions)}개를 풉니다.\n")
     else:  # all
         if args.subject:
