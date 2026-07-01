@@ -58,6 +58,11 @@ def subjects_of(questions):
     return seen
 
 
+def is_today(q):
+    """created 필드가 오늘 날짜인 문항인지. created가 없으면 기존(baseline) 문항."""
+    return q.get("created") == datetime.date.today().isoformat()
+
+
 # ----------------------------------------------------------------------------
 # 출력 헬퍼
 # ----------------------------------------------------------------------------
@@ -306,6 +311,21 @@ def export_web_bundle(questions):
 # ----------------------------------------------------------------------------
 # 메뉴
 # ----------------------------------------------------------------------------
+def choose_mode(questions):
+    """학습 구역 선택: 오늘의 문항 / 전체 문항 / 오답 복습."""
+    today_cnt = sum(1 for q in questions if is_today(q))
+    wrong_cnt = len(collect_review_ids())
+    print("무엇을 풀까요?")
+    print(f"  1) 오늘의 문항 (오늘 생성된 새 문항: {today_cnt}개)")
+    print(f"  2) 전체 문항 (누적 {len(questions)}개)")
+    print(f"  3) 오답 복습 (오답노트에 쌓인 문항: {wrong_cnt}개)")
+    while True:
+        raw = input("번호 입력 [1-3]: ").strip()
+        if raw in ("1", "2", "3"):
+            return {"1": "today", "2": "all", "3": "review"}[raw]
+        print("  1~3 중에서 선택하세요.")
+
+
 def choose_subject(questions):
     subs = subjects_of(questions)
     print("과목을 선택하세요:")
@@ -331,6 +351,7 @@ def main():
     p.add_argument("--shuffle", action="store_true", help="문항 순서 무작위")
     p.add_argument("-n", type=int, default=0, help="출제 문항 수 제한")
     p.add_argument("--review", action="store_true", help="오답노트에 쌓인 문항만 다시 풀기")
+    p.add_argument("--today", action="store_true", help="오늘 생성된 문항만 풀기")
     p.add_argument("--export", action="store_true", help="JSON을 마크다운 문항집으로 재생성")
     args = p.parse_args()
 
@@ -346,22 +367,41 @@ def main():
         export_web_bundle(questions)
         return
 
+    # 모드 결정: 플래그가 없으면 대화형 메뉴로 학습 구역을 고른다.
+    mode = None
     if args.review:
+        mode = "review"
+    elif args.today:
+        mode = "today"
+    elif args.subject or args.all:
+        mode = "all"
+    else:
+        mode = choose_mode(questions)
+
+    if mode == "review":
         ids = collect_review_ids()
         questions = [q for q in questions if q.get("id") in ids]
         if not questions:
             print("오답노트에 기록된 문항이 없습니다. 먼저 퀴즈를 풀어보세요.")
             return
-        print(f"복습 모드: 오답노트 문항 {len(questions)}개를 다시 풉니다.\n")
-    elif args.subject:
-        questions = [q for q in questions if q["subject"] == args.subject]
+        print(f"\n[오답 복습] 오답노트 문항 {len(questions)}개를 다시 풉니다.\n")
+    elif mode == "today":
+        questions = [q for q in questions if is_today(q)]
         if not questions:
-            print(f"'{args.subject}' 과목 문항을 찾지 못했습니다.")
+            print("\n오늘 생성된 문항이 아직 없습니다. (매일 오전 6시 루틴이 새 문항을 추가합니다)")
             return
-    elif not args.all:
-        sub = choose_subject(questions)
-        if sub:
-            questions = [q for q in questions if q["subject"] == sub]
+        print(f"\n[오늘의 문항] {len(questions)}개를 풉니다.\n")
+    else:  # all
+        if args.subject:
+            questions = [q for q in questions if q["subject"] == args.subject]
+            if not questions:
+                print(f"'{args.subject}' 과목 문항을 찾지 못했습니다.")
+                return
+        elif not args.all:
+            sub = choose_subject(questions)
+            if sub:
+                questions = [q for q in questions if q["subject"] == sub]
+        print(f"\n[전체 문항] {len(questions)}개 대상.\n")
 
     if args.shuffle:
         random.shuffle(questions)

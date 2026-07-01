@@ -15,17 +15,25 @@
 <!-- 설정 화면 -->
 <section id="setup" class="card">
   <div class="row">
+    <label for="mode">학습 구역</label>
+    <select id="mode">
+      <option value="today">오늘의 문항 (오늘 생성된 새 문항)</option>
+      <option value="all" selected>전체 문항 (누적)</option>
+      <option value="review">오답 복습 (오답노트에 쌓인 문항)</option>
+    </select>
+  </div>
+  <div class="row" id="subjectRow">
     <label for="subject">과목</label>
     <select id="subject"></select>
   </div>
   <div class="row">
     <label><input type="checkbox" id="shuffle" /> 문항 순서 섞기</label>
-    <label><input type="checkbox" id="onlyWrong" /> 오답노트 문항만 다시 풀기</label>
   </div>
   <div class="row">
     <button id="startBtn" class="primary">퀴즈 시작</button>
     <button id="viewWrongBtn">오답노트 보기</button>
   </div>
+  <p id="modeHint" class="muted"></p>
   <p id="wrongCount" class="muted"></p>
 </section>
 
