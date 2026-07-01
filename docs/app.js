@@ -54,7 +54,9 @@ function buildDeck() {
   const mode = $("mode").value;
   let list;
   if (mode === "today") {
+    const subj = $("subject").value;
     list = ALL.filter(isToday);
+    if (subj && subj !== "__ALL__") list = list.filter((q) => q.subject === subj);
   } else if (mode === "review") {
     const ids = wrongIds();
     list = ALL.filter((q) => ids.has(q.id));
@@ -264,10 +266,29 @@ function updateWrongCount() {
   $("wrongCount").textContent = n ? `현재 오답노트에 ${n}개 저장됨` : "";
 }
 
+function populateSubjects(list) {
+  const sel = $("subject");
+  sel.innerHTML = "";
+  const optAll = document.createElement("option");
+  optAll.value = "__ALL__";
+  optAll.textContent = `전체 (${list.length})`;
+  sel.appendChild(optAll);
+  const seen = [];
+  list.forEach((q) => { if (!seen.includes(q.subject)) seen.push(q.subject); });
+  seen.forEach((s) => {
+    const cnt = list.filter((q) => q.subject === s).length;
+    const o = document.createElement("option");
+    o.value = s; o.textContent = `${s} (${cnt})`;
+    sel.appendChild(o);
+  });
+}
+
 function onModeChange() {
   const mode = $("mode").value;
-  // 과목 필터는 '전체 문항' 모드에서만 의미가 있음
-  $("subjectRow").style.display = mode === "all" ? "" : "none";
+  // 과목 필터는 '전체 문항'과 '오늘의 문항'에서 사용(오답 복습에서는 숨김)
+  $("subjectRow").style.display = mode === "review" ? "none" : "";
+  if (mode === "today") populateSubjects(ALL.filter(isToday));
+  else if (mode === "all") populateSubjects(ALL);
   const todayN = ALL.filter(isToday).length;
   const wrongN = Object.keys(loadWrong()).length;
   const hint = {
@@ -285,16 +306,7 @@ function init() {
       '<p style="max-width:820px;margin:16px auto;color:#ffb4b4">문항 데이터를 불러오지 못했습니다. questions.js를 확인하세요.</p>');
     return;
   }
-  const sel = $("subject");
-  const optAll = document.createElement("option");
-  optAll.value = "__ALL__"; optAll.textContent = `전체 (${ALL.length}문항)`;
-  sel.appendChild(optAll);
-  subjects().forEach((s) => {
-    const cnt = ALL.filter((q) => q.subject === s).length;
-    const o = document.createElement("option");
-    o.value = s; o.textContent = `${s} (${cnt})`;
-    sel.appendChild(o);
-  });
+  populateSubjects(ALL);
 
   $("mode").onchange = onModeChange;
   onModeChange();
