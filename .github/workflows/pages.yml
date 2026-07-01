@@ -1,0 +1,34 @@
+# GitHub Pages에 웹 퀴즈(docs/)를 자동 배포합니다.
+# 사용 전 준비: 저장소 Settings ▸ Pages ▸ Build and deployment ▸ Source = "GitHub Actions"
+# (Source를 "Deploy from a branch"로 두고 main /docs 를 선택해도 됩니다. 그 경우 이 워크플로는 필요 없습니다.)
+name: Deploy quiz to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

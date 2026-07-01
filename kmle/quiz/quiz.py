@@ -26,9 +26,11 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))          # kmle/quiz
 KMLE_DIR = os.path.dirname(BASE_DIR)                            # kmle
+REPO_ROOT = os.path.dirname(KMLE_DIR)                           # repo 루트
 QUESTIONS_DIR = os.path.join(BASE_DIR, "questions")
 WRONG_DIR = os.path.join(KMLE_DIR, "오답노트")
 MUNHANG_DIR = os.path.join(KMLE_DIR, "문항")
+DOCS_DIR = os.path.join(REPO_ROOT, "docs")                     # GitHub Pages 웹 퀴즈
 
 CIRCLED = {1: "①", 2: "②", 3: "③", 4: "④", 5: "⑤"}
 
@@ -286,6 +288,21 @@ def export_markdown(questions):
         print(f"  생성: {os.path.relpath(out, KMLE_DIR)}")
 
 
+def export_web_bundle(questions):
+    """웹 퀴즈(GitHub Pages)가 fetch/CORS 없이 읽을 수 있도록 JS 번들로 내보낸다."""
+    clean = []
+    for q in questions:
+        clean.append({k: v for k, v in q.items() if not k.startswith("_")})
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    payload = json.dumps(clean, ensure_ascii=False, indent=1)
+    out = os.path.join(DOCS_DIR, "questions.js")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("// 자동 생성 파일 — 수정하지 마세요.\n")
+        f.write("// 문항 원본: kmle/quiz/questions/*.json  →  `python3 quiz.py --export`로 재생성\n")
+        f.write("window.KMLE_QUESTIONS = " + payload + ";\n")
+    print(f"  생성: {os.path.relpath(out, REPO_ROOT)} ({len(clean)}문항)")
+
+
 # ----------------------------------------------------------------------------
 # 메뉴
 # ----------------------------------------------------------------------------
@@ -325,6 +342,8 @@ def main():
     if args.export:
         print("마크다운 문항집을 재생성합니다…")
         export_markdown(questions)
+        print("웹 퀴즈용 문항 번들을 재생성합니다…")
+        export_web_bundle(questions)
         return
 
     if args.review:

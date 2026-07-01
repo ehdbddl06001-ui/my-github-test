@@ -10,10 +10,23 @@
 - **보기별 임상적 차이(감별)**: 모든 오답 보기가 "왜 답이 아닌지"를 임상적으로 감별할 수 있게 설명했습니다.
 - **과목별 2문항**: 아래 16개 과목에서 각 2문항씩, 총 32문항을 제작했습니다.
 
-## 🖥️ 대화형 퀴즈 (직접 풀고, 오답은 자동 저장)
+## 🖥️ 퀴즈 푸는 3가지 방법
 
-문항을 직접 풀고 답을 선택하면 즉시 채점되며, **오답은 해당 과목 오답노트 파일에 자동 기록**됩니다.
+문항을 직접 풀고 답을 선택하면 즉시 채점되며 **오답이 자동 저장**됩니다. 환경에 따라 세 가지로 풀 수 있습니다.
 
+### ① 웹에서 클릭으로 풀기 — GitHub Pages (설치 불필요)
+- `../docs/`의 웹앱을 GitHub Pages로 배포하면 URL만 열어 클릭으로 풉니다. 배포법: [docs/README.md](../docs/README.md)
+- 오답은 브라우저에 저장되고 **오답노트 .md/.csv 내보내기** 버튼으로 파일로 받습니다.
+- 로컬 미리보기: `docs/index.html`을 브라우저로 바로 열어도 됩니다.
+
+### ② GitHub 안에서 실행 — Codespaces (오답이 repo 파일로 자동 기록)
+- 저장소 상단 **Code ▸ Codespaces ▸ Create** 후 터미널에서:
+  ```bash
+  cd kmle/quiz && python3 quiz.py
+  ```
+- 오답이 `오답노트/NN_과목.md`에 자동 기록되며 `git commit/push`로 저장소에 남길 수 있습니다.
+
+### ③ 로컬 터미널 (파이썬 3.7+)
 ```bash
 cd kmle/quiz
 python3 quiz.py               # 과목 선택 메뉴 → 풀이
@@ -21,8 +34,10 @@ python3 quiz.py --subject 순환기   # 특정 과목만
 python3 quiz.py --all              # 전 과목 연속
 python3 quiz.py --shuffle -n 10    # 무작위 10문항
 python3 quiz.py --review           # 오답노트에 쌓인 문항만 다시 풀기
-python3 quiz.py --export           # JSON → 문항/ 마크다운 재생성
+python3 quiz.py --export           # JSON → 문항/ 마크다운 + docs/ 웹 번들 재생성
 ```
+
+> **오답 저장 차이**: ②·③(파이썬)은 repo의 `오답노트/*.md`에 파일로 자동 기록됩니다. ①(웹)은 브라우저에 저장 후 내보내기로 파일화합니다 — 정적 웹페이지는 보안상 repo에 직접 쓸 수 없기 때문입니다.
 
 - 문항 데이터(단일 소스): `quiz/questions/NN_과목.json`
 - 실행기: `quiz/quiz.py` (파이썬 3.7+, 외부 의존성 없음)
