@@ -48,12 +48,19 @@ let pos = 0;
 let correctCnt = 0;
 let sessionWrong = [];
 
+function isToday(q) { return q.created === todayStr(); }
+
 function buildDeck() {
-  const subj = $("subject").value;
-  let list = subj === "__ALL__" ? ALL.slice() : ALL.filter((q) => q.subject === subj);
-  if ($("onlyWrong").checked) {
+  const mode = $("mode").value;
+  let list;
+  if (mode === "today") {
+    list = ALL.filter(isToday);
+  } else if (mode === "review") {
     const ids = wrongIds();
-    list = list.filter((q) => ids.has(q.id));
+    list = ALL.filter((q) => ids.has(q.id));
+  } else {
+    const subj = $("subject").value;
+    list = subj === "__ALL__" ? ALL.slice() : ALL.filter((q) => q.subject === subj);
   }
   if ($("shuffle").checked) {
     for (let i = list.length - 1; i > 0; i--) {
@@ -67,7 +74,13 @@ function buildDeck() {
 function startQuiz() {
   deck = buildDeck();
   if (deck.length === 0) {
-    alert("조건에 맞는 문항이 없습니다. (오답노트 문항만 보기를 껐는지 확인하세요)");
+    const mode = $("mode").value;
+    const msg = mode === "today"
+      ? "오늘 생성된 문항이 아직 없습니다. (매일 오전 6시 루틴이 새 문항을 추가합니다)"
+      : mode === "review"
+      ? "오답노트에 쌓인 문항이 없습니다. 먼저 전체 문항을 풀어보세요."
+      : "조건에 맞는 문항이 없습니다.";
+    alert(msg);
     return;
   }
   pos = 0; correctCnt = 0; sessionWrong = [];
@@ -251,6 +264,20 @@ function updateWrongCount() {
   $("wrongCount").textContent = n ? `현재 오답노트에 ${n}개 저장됨` : "";
 }
 
+function onModeChange() {
+  const mode = $("mode").value;
+  // 과목 필터는 '전체 문항' 모드에서만 의미가 있음
+  $("subjectRow").style.display = mode === "all" ? "" : "none";
+  const todayN = ALL.filter(isToday).length;
+  const wrongN = Object.keys(loadWrong()).length;
+  const hint = {
+    today: `오늘(${todayStr()}) 생성된 문항 ${todayN}개를 풉니다. 매일 오전 6시 루틴이 새 문항을 추가합니다.`,
+    all: `누적 ${ALL.length}개 전체(또는 선택 과목)를 풉니다. 이미 푼 문제가 다시 나올 수 있습니다.`,
+    review: `오답노트에 쌓인 ${wrongN}개만 다시 풉니다.`,
+  }[mode];
+  $("modeHint").textContent = hint || "";
+}
+
 /* ---------- 초기화 ---------- */
 function init() {
   if (ALL.length === 0) {
@@ -269,13 +296,15 @@ function init() {
     sel.appendChild(o);
   });
 
+  $("mode").onchange = onModeChange;
+  onModeChange();
   $("startBtn").onclick = startQuiz;
   $("viewWrongBtn").onclick = renderWrongbook;
   $("nextBtn").onclick = nextQuestion;
   $("quitBtn").onclick = finish;
-  $("restartBtn").onclick = () => { hide($("result")); show($("setup")); updateWrongCount(); };
-  $("reviewBtn").onclick = () => { $("onlyWrong").checked = true; hide($("result")); startQuiz(); };
-  $("backBtn").onclick = () => { hide($("wrongbook")); show($("setup")); updateWrongCount(); };
+  $("restartBtn").onclick = () => { hide($("result")); show($("setup")); onModeChange(); updateWrongCount(); };
+  $("reviewBtn").onclick = () => { $("mode").value = "review"; hide($("result")); startQuiz(); };
+  $("backBtn").onclick = () => { hide($("wrongbook")); show($("setup")); onModeChange(); updateWrongCount(); };
   $("exportMdBtn").onclick = exportMarkdown;
   $("exportCsvBtn").onclick = exportCsv;
   $("clearBtn").onclick = () => {
