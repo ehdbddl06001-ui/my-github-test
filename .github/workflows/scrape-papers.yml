@@ -1,0 +1,67 @@
+name: Scrape papers (daily)
+
+# 매일 PubMed에서 관심 주제의 최신 논문을 긁어와 Markdown 카드로 커밋한다.
+# 커밋이 main에 올라가면:
+#   - drive-sync.yml 이 content/** 를 Google Drive로 백업하고
+#   - pages.yml 이 docs/ (papers.js 포함)를 홈페이지로 배포한다.
+# 스크랩 카드는 사실 메타데이터 + 원문 초록만 담으므로(자동·결정론적) main 직접 커밋을 허용한다.
+# (요약·임상 임팩트 같은 해석은 이후 /gen-paper 로 사람이 검수해 채운다.)
+
+on:
+  schedule:
+    - cron: "0 21 * * *"   # 매일 21:00 UTC (KST 06:00)
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "최근 N일"
+        default: "7"
+      max:
+        description: "주제당 최대 편수"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-papers
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Scrape PubMed → Markdown cards
+        run: |
+          python pipelines/scrape_papers.py \
+            --days "${{ github.event.inputs.days || '7' }}" \
+            --max "${{ github.event.inputs.max || '3' }}"
+
+      - name: Validate frontmatter
+        run: python pipelines/indexer.py --check
+
+      - name: Rebuild web bundle (docs/papers.js)
+        run: python pipelines/export_papers_web.py
+
+      - name: Commit new papers
+        run: |
+          git config user.name  "medkos-bot"
+          git config user.email "medkos-bot@users.noreply.github.com"
+          git add content/papers state/seen_papers.json state/id_counter.json state/seen_topics.json docs/papers.js
+          if git diff --cached --quiet; then
+            echo "새 논문 없음 — 커밋 생략"
+            exit 0
+          fi
+          git commit -m "논문 스크랩: $(date -u +%Y-%m-%d) PubMed 최신 논문 자동 저장"
+          # 네트워크 실패 시 지수 백오프 재시도
+          for i in 1 2 3 4; do
+            git push origin HEAD:main && break || { echo "push 실패, ${i}회차 재시도"; sleep $((2**i)); }
+          done

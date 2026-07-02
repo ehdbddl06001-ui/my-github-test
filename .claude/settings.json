@@ -5,6 +5,10 @@
       "Bash(python3 pipelines/indexer.py:*)",
       "Bash(python pipelines/state.py:*)",
       "Bash(python3 pipelines/state.py:*)",
+      "Bash(python pipelines/scrape_papers.py:*)",
+      "Bash(python3 pipelines/scrape_papers.py:*)",
+      "Bash(python pipelines/export_papers_web.py:*)",
+      "Bash(python3 pipelines/export_papers_web.py:*)",
       "Bash(python -c:*)",
       "Bash(python3 -c:*)"
     ]
