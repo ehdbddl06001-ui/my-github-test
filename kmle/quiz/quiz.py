@@ -126,6 +126,27 @@ def print_explanation(q, chosen):
     if q.get("source"):
         print(f"  ▸ 출처     : {q['source']}")
     print()
+    print_appendix(q)
+
+
+def print_appendix(q):
+    ap = q.get("appendix")
+    if not ap:
+        return
+    hr()
+    print("【부록 — 함께 알아두면 좋은 내용】")
+    if ap.get("가이드라인"):
+        print("  ▸ 가이드라인")
+        for line in ap["가이드라인"].strip().splitlines():
+            print(f"      {line}")
+    if ap.get("최신지견"):
+        print(f"  ▸ 최신지견 : {ap['최신지견']}")
+    refs = ap.get("참고문헌")
+    if refs:
+        print("  ▸ 참고문헌 :")
+        for r in refs:
+            print(f"      - {r}")
+    print()
 
 
 # ----------------------------------------------------------------------------
@@ -304,6 +325,15 @@ def export_markdown(questions):
                     lines.append(f"- **{key}**: {ex[key]}")
             if q.get("source"):
                 lines.append(f"- **출처**: {q['source']}")
+            ap = q.get("appendix")
+            if ap:
+                lines.append("\n**부록 — 함께 알아두면 좋은 내용**\n")
+                if ap.get("가이드라인"):
+                    lines.append(ap["가이드라인"].strip() + "\n")
+                if ap.get("최신지견"):
+                    lines.append(f"- **최신지견**: {ap['최신지견']}")
+                if ap.get("참고문헌"):
+                    lines.append("- **참고문헌**: " + "; ".join(ap["참고문헌"]))
             lines.append("")
         out = os.path.join(MUNHANG_DIR, f"{sf}.md")
         with open(out, "w", encoding="utf-8") as f:

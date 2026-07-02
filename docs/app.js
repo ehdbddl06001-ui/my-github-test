@@ -150,8 +150,25 @@ function renderExplanation(q, chosenIdx, ok) {
     if (ex[k]) rows.push(`<div class="item"><span class="k">${k}</span>${escapeHtml(ex[k])}</div>`);
   });
   const src = q.source ? `<div class="src">출처: ${escapeHtml(q.source)}</div>` : "";
-  el.innerHTML = verdict + rows.join("") + src;
+  el.innerHTML = verdict + rows.join("") + src + renderAppendix(q.appendix);
   el.classList.remove("hidden");
+}
+
+function renderAppendix(ap) {
+  if (!ap) return "";
+  const parts = [];
+  if (ap["가이드라인"]) {
+    parts.push(`<div class="item"><span class="k">가이드라인</span></div><pre class="guide-table">${escapeHtml(ap["가이드라인"].trim())}</pre>`);
+  }
+  if (ap["최신지견"]) {
+    parts.push(`<div class="item"><span class="k">최신지견</span>${escapeHtml(ap["최신지견"])}</div>`);
+  }
+  if (Array.isArray(ap["참고문헌"]) && ap["참고문헌"].length) {
+    const refs = ap["참고문헌"].map((r) => `<li>${escapeHtml(r)}</li>`).join("");
+    parts.push(`<div class="item"><span class="k">참고문헌</span></div><ul class="refs">${refs}</ul>`);
+  }
+  if (parts.length === 0) return "";
+  return `<div class="appendix"><div class="appendix-head">부록 — 함께 알아두면 좋은 내용</div>${parts.join("")}</div>`;
 }
 
 function nextQuestion() {
