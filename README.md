@@ -64,8 +64,24 @@ python pipelines/export_usmle_web.py   # content/usmle/*.md → docs/questions_u
 
 - 웹 퀴즈 상단에서 **시험(KMLE/USMLE)**을 고르고, USMLE는 **Step 1(기초의학)·Step 2(임상)**
   로 나눠 과목을 선택해 푼다. 채점·오답노트는 시험별로 분리 저장된다.
-- 현재 USMLE는 Step 1·Step 2 각 4과목 × 2문항 = 16문항으로 시작(과목·문항은 확장 가능).
-- KMLE `quiz.py` CLI는 아직 KMLE 전용이다(USMLE CLI 연결은 후속 조정 대상).
+- 현재 USMLE는 Step 1·Step 2 **각 6과목 × 2문항 = 24문항**.
+  - Step 1: Pharmacology · Immunology · Biochemistry · Microbiology · Pathology · Physiology
+  - Step 2: Internal Medicine · Surgery · Neurology · Pediatrics · Obstetrics & Gynecology · Psychiatry
+
+### CLI로도 풀기 (`quiz.py`)
+
+`quiz.py`는 KMLE·USMLE를 모두 지원한다(USMLE는 A~E 입력, Step 필터).
+
+```bash
+cd kmle/quiz
+python3 quiz.py                          # KMLE (①~⑤)
+python3 quiz.py --exam usmle             # USMLE 전체 (A~E)
+python3 quiz.py --exam usmle --step 1     # USMLE Step 1(기초의학)만
+python3 quiz.py --exam usmle --step 2 --all# USMLE Step 2(임상) 전 과목 연속
+python3 quiz.py --exam usmle --review     # USMLE 오답만 다시 풀기
+```
+
+USMLE 오답은 `usmle/오답노트/<과목>.md` 에 자동 기록된다(KMLE는 `kmle/오답노트/`).
 
 ## 지금 상태 (1단계 스캐폴드)
 

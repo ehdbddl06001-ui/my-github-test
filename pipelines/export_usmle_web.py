@@ -62,11 +62,13 @@ def build_record(path: Path) -> dict | None:
     m = d.meta
     vignette, question = split_stem(m.get("stem", ""))
     ans = str(m.get("answer", "")).strip().upper()
+    subject = m.get("exam_subject") or m.get("topic", "")
     return {
         "id": d.id,
         "exam": "usmle",
         "step": m.get("step", ""),
-        "subject": m.get("exam_subject") or m.get("topic", ""),
+        "subject": subject,
+        "subject_file": subject,
         "subtopic": m.get("subtopic", ""),
         "type": m.get("subtopic", ""),
         "difficulty": m.get("difficulty"),
@@ -79,12 +81,18 @@ def build_record(path: Path) -> dict | None:
     }
 
 
-def main() -> int:
+def load_records() -> list[dict]:
+    """content/usmle/*.md 를 읽어 퀴즈용 레코드 리스트로 반환(웹·CLI 공용)."""
     records = []
     for p in sorted(USMLE_DIR.glob("*.md")):
         rec = build_record(p)
         if rec:
             records.append(rec)
+    return records
+
+
+def main() -> int:
+    records = load_records()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(records, ensure_ascii=False, indent=1)
     OUT.write_text(
