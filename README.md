@@ -36,6 +36,7 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 │   ├── frontmatter.py        # frontmatter 파싱·검증
 │   ├── indexer.py            # content/ → SQLite(FTS5) 재빌드
 │   ├── state.py              # ID 발급 + N일 중복방지 (ephemeral 컨테이너 대응)
+│   ├── export_usmle_web.py   # content/usmle/*.md → docs/questions_usmle.js (웹 퀴즈용)
 │   └── db_schema.sql
 ├── content/                  # ★ 원본 (kmle/usmle/basic/papers/diseases/drugs)
 ├── state/                    # id_counter.json, seen_topics.json (커밋됨)
@@ -48,8 +49,23 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 ├── kmle/                     # [기존] JSON 기반 KMLE 퀴즈 세트 (현재 Learning 계층)
 │   ├── quiz/                 # quiz.py 실행기 + questions/*.json (단일 소스)
 │   ├── 문항/  오답노트/       # JSON에서 생성된 읽기용 .md + 오답 기록
-└── docs/                     # [기존] GitHub Pages 웹 퀴즈 (클릭으로 풀기)
+└── docs/                     # GitHub Pages 웹 퀴즈 (KMLE + USMLE, 클릭으로 풀기)
+    ├── questions.js          #   KMLE 번들 (quiz.py --export)
+    └── questions_usmle.js    #   USMLE 번들 (export_usmle_web.py)
 ```
+
+## USMLE 웹 퀴즈 (Step 1 / Step 2)
+
+`content/usmle/*.md`(원본)를 웹에서 바로 풀 수 있다. 원본을 고친 뒤 번들만 재생성한다.
+
+```bash
+python pipelines/export_usmle_web.py   # content/usmle/*.md → docs/questions_usmle.js
+```
+
+- 웹 퀴즈 상단에서 **시험(KMLE/USMLE)**을 고르고, USMLE는 **Step 1(기초의학)·Step 2(임상)**
+  로 나눠 과목을 선택해 푼다. 채점·오답노트는 시험별로 분리 저장된다.
+- 현재 USMLE는 Step 1·Step 2 각 4과목 × 2문항 = 16문항으로 시작(과목·문항은 확장 가능).
+- KMLE `quiz.py` CLI는 아직 KMLE 전용이다(USMLE CLI 연결은 후속 조정 대상).
 
 ## 지금 상태 (1단계 스캐폴드)
 

@@ -3,17 +3,32 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>KMLE 대화형 퀴즈</title>
+<title>MedKOS 대화형 퀴즈 (KMLE · USMLE)</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header>
-  <h1>KMLE 대화형 퀴즈</h1>
-  <p class="sub">문항을 풀고 보기를 클릭하면 즉시 채점됩니다. 오답은 브라우저에 자동 저장되고, 언제든 오답노트(.md)로 내보낼 수 있습니다.</p>
+  <h1>MedKOS 대화형 퀴즈</h1>
+  <p class="sub">KMLE·USMLE 문항을 풀고 보기를 클릭하면 즉시 채점됩니다. USMLE는 Step 1(기초의학)·Step 2(임상)로 나눠 풀 수 있습니다. 오답은 시험별로 브라우저에 자동 저장되고, 언제든 오답노트(.md)로 내보낼 수 있습니다.</p>
 </header>
 
 <!-- 설정 화면 -->
 <section id="setup" class="card">
+  <div class="row">
+    <label for="exam">시험</label>
+    <select id="exam">
+      <option value="kmle" selected>KMLE (국시)</option>
+      <option value="usmle">USMLE</option>
+    </select>
+  </div>
+  <div class="row" id="stepRow" style="display:none">
+    <label for="step">Step</label>
+    <select id="step">
+      <option value="__ALL__" selected>전체 (Step 1 + Step 2)</option>
+      <option value="Step 1">Step 1 (기초의학)</option>
+      <option value="Step 2">Step 2 (임상)</option>
+    </select>
+  </div>
   <div class="row">
     <label for="mode">학습 구역</label>
     <select id="mode">
@@ -85,6 +100,7 @@
 </footer>
 
 <script src="questions.js"></script>
+<script src="questions_usmle.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
