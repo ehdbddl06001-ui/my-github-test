@@ -26,6 +26,9 @@ REQUIRED_QUESTION = ["stem", "choices", "answer"]
 VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug"}
 VALID_CONFIDENCE = {"high", "medium", "low"}
 QUESTION_TYPES = {"kmle", "usmle"}
+# USMLE는 웹/CLI 퀴즈에서 Step·과목으로 분류되므로 아래 두 필드를 추가로 요구한다.
+REQUIRED_USMLE = ["step", "exam_subject"]
+VALID_STEP = {"Step 1", "Step 2"}
 
 
 @dataclass
@@ -88,6 +91,14 @@ def validate(meta: dict[str, Any]) -> list[str]:
         # 정답이 stem 텍스트 안에 섞여 들어가지 않았는지 최소 확인
         if meta.get("answer_separated") is not True:
             errors.append("answer_separated: true 를 명시해야 함(정답 분리 원칙)")
+
+    if t == "usmle":
+        for k in REQUIRED_USMLE:
+            if k not in meta or meta[k] in (None, ""):
+                errors.append(f"USMLE 필수 필드 누락: {k} (Step 필터·과목 분류용)")
+        s = meta.get("step")
+        if s and s not in VALID_STEP:
+            errors.append(f"step 값 오류: {s} (허용: 'Step 1' / 'Step 2')")
     return errors
 
 

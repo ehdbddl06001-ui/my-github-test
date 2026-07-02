@@ -10,14 +10,15 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 
 ## 순서 (반드시 이 순서를 지킬 것)
 
-1. **상태 로드** — 최근 다룬 주제를 확인해 중복을 피한다.
+1. **상태 로드** — 최근 다룬 주제를 확인해 중복을 피한다. (타입 인자에 맞춰 조회)
    ```
    python -c "from pipelines.state import recent_topics; print(recent_topics('kmle', 14))"
+   python -c "from pipelines.state import recent_topics; print(recent_topics('usmle', 14))"
    ```
    여기서 나온 주제는 오늘 생성에서 제외 힌트로 쓴다.
 
 2. **생성** — 타입에 맞는 스킬 규칙을 따른다.
-   - KMLE/USMLE → `/gen-kmle` 규칙
+   - KMLE/USMLE → `/gen-kmle` 규칙 (USMLE는 `step`·`exam_subject` 필수)
    - 논문 → `/gen-paper` 규칙
    - 질환/약물 카드 → `/gen-card` 규칙
    각 항목마다 `state.next_id(<type>)` 로 id를 발급받는다.
@@ -26,7 +27,7 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 
 4. **주제 기록** — 생성한 각 주제를 기록한다.
    ```
-   python -c "from pipelines.state import record_topic; record_topic('kmle', '<주제>')"
+   python -c "from pipelines.state import record_topic; record_topic('usmle', '<주제>')"
    ```
 
 5. **검증 + 색인**
@@ -35,10 +36,16 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    python pipelines/indexer.py
    ```
 
-6. **커밋** — 새 `.md` + `state/*.json` 을 함께 커밋.
-   - KMLE: main 직접 커밋 허용
-   - paper/disease/drug: PR 생성
+6. **웹 번들 재생성** — 개인 페이지(docs/)에 새 문항이 뜨게 하려면 필수.
+   - USMLE를 생성했다면: `python pipelines/export_usmle_web.py` → `docs/questions_usmle.js`
+   - KMLE(quiz.py JSON 트랙)라면: `python3 kmle/quiz/quiz.py --export` → `docs/questions.js`
+   생성된 번들을 **같은 커밋에 포함**한다.
+
+7. **커밋** — 새 `.md` + `state/*.json` + 재생성된 `docs/` 번들을 함께 커밋.
+   - USMLE / paper / disease / drug: **claude/ 브랜치에 push 후 PR 생성**
+     (self-verify 한계 → 사람 검수). KMLE는 흐름이 안정적이면 직접 커밋 허용.
 
 ## 주의
 - 검증(5번)에서 실패하면 커밋하지 말고 무엇이 틀렸는지 보고한다.
 - 실행 한도를 고려해, 한 번에 한 타입만 처리하는 것을 기본으로 한다.
+- 요일 분산(권장): 월·수·금 KMLE, 화·목 USMLE, 일 논문. 프롬프트는 `prompts/` 참고.
