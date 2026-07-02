@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python pipelines/indexer.py:*)",
+      "Bash(python3 pipelines/indexer.py:*)",
+      "Bash(python pipelines/state.py:*)",
+      "Bash(python3 pipelines/state.py:*)",
+      "Bash(python -c:*)",
+      "Bash(python3 -c:*)"
+    ]
+  }
+}
