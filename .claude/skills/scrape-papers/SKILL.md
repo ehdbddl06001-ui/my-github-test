@@ -43,7 +43,12 @@ description: PubMed에서 관심 주제의 최신 논문을 긁어와 content/pa
 `pipelines/scrape_papers.py`의 `TOPICS` 딕셔너리에 `주제: PubMed 검색어`를 추가한다.
 저널을 한정하려면 검색어에 `AND "Circulation"[Journal]` 같은 절을 덧붙인다.
 
-## 스크랩 vs 요약
+## 스크랩 vs 요약 vs 내 노트
 
 - 스크랩(이 스킬): 사실 메타데이터 + 원문 초록만, `confidence: medium`. 매일 자동.
 - 요약(`/gen-paper`): 스크랩된 카드의 Summary/Clinical Impact/My Ideas를 사람·LLM이 채움.
+- 내 노트: 홈페이지에서 논문별로 적은 생각을 `apply_notes.py`로 카드 `## My Ideas`에 반영.
+  ```
+  python pipelines/apply_notes.py medkos-notes.json   # 홈페이지 '내 노트 내보내기(.json)'
+  python pipelines/indexer.py --check && python pipelines/export_papers_web.py
+  ```

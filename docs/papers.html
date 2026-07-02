@@ -22,7 +22,13 @@
     <input type="search" id="search" placeholder="제목·저널·초록·저자 검색…" />
     <select id="topicFilter"><option value="__ALL__">전체 주제</option></select>
   </div>
+  <div class="row" style="margin-top:6px">
+    <label><input type="checkbox" id="notesOnly" /> 내 노트가 있는 것만</label>
+    <button id="exportNotesJson" title="apply_notes.py로 카드 My Ideas에 반영">🗒 내 노트 내보내기(.json)</button>
+    <button id="exportNotesMd">📄 내 노트 미리보기(.md)</button>
+  </div>
   <p id="count" class="muted"></p>
+  <p id="noteHint" class="muted">💡 카드를 열고 <b>내 생각/아이디어</b>에 메모하면 이 브라우저에 자동 저장됩니다. 영구 보관·다른 기기 동기화는 <code>.json</code>으로 내보내 <code>python pipelines/apply_notes.py</code>로 카드에 반영하세요.</p>
 </section>
 
 <section id="list" class="card"></section>

@@ -39,6 +39,7 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 │   ├── export_usmle_web.py   # content/usmle/*.md → docs/questions_usmle.js (웹 퀴즈용)
 │   ├── scrape_papers.py      # PubMed 최신 논문 → content/papers/**/*.md (매일 자동)
 │   ├── export_papers_web.py  # content/papers/**/*.md → docs/papers.js (홈페이지 논문 피드)
+│   ├── apply_notes.py        # 홈페이지 노트(.json) → 카드의 ## My Ideas 반영(왕복)
 │   ├── fixtures/             # 오프라인 테스트용 PubMed XML 샘플
 │   └── db_schema.sql
 ├── content/                  # ★ 원본 (kmle/usmle/basic/papers/diseases/drugs)
@@ -123,6 +124,26 @@ python pipelines/scrape_papers.py --fixture pipelines/fixtures/pubmed_sample.xml
 
 홈페이지 상단 내비게이션에서 **🧠 퀴즈 ↔ 📄 논문**을 오간다. 논문 피드는 주제 필터·검색·
 초록 펼치기·PubMed 원문 링크를 제공한다(순수 정적, `docs/papers.js`만 읽음).
+
+### 논문 읽고 내 생각·아이디어 적기 (노트)
+
+논문 카드를 열면 **💡 내 생각/아이디어** 입력란이 있다. 읽으면서 적으면 **그 브라우저에 즉시
+자동 저장**된다(localStorage, 서버 불필요). 다만 이대로는 그 기기에만 남으므로, 영구 보관·다른
+기기 동기화·Drive 백업을 하려면 **카드의 `## My Ideas`로 반영**하는 왕복 경로를 쓴다.
+
+```
+홈페이지에서 메모(자동저장)
+  → '🗒 내 노트 내보내기(.json)' 클릭 → medkos-notes.json 다운로드
+  → python pipelines/apply_notes.py medkos-notes.json   # 각 카드의 ## My Ideas 에 써넣음
+  → python pipelines/indexer.py --check && python pipelines/export_papers_web.py
+  → git commit → main  (→ Drive 백업, 홈페이지에 '저장됨'으로 표시)
+```
+
+- `apply_notes.py`는 노트의 논문 id로 카드 파일을 찾아 `## My Ideas`를 교체하고 frontmatter에
+  `updated:`를 남긴다. `--dry-run`으로 미리 확인 가능.
+- 빠른 백업만 원하면 '📄 내 노트 미리보기(.md)'로 사람이 읽는 마크다운 한 장을 받아 Drive에
+  그대로 둘 수도 있다(카드 반영과는 별개).
+- 카드에 이미 반영된 노트는 피드에서 **My Ideas (저장됨)**으로 보이고, 입력란은 새 초안용이다.
 
 ### 준비물 (한 번만)
 

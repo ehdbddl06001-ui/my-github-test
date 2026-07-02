@@ -9,6 +9,8 @@
       "Bash(python3 pipelines/scrape_papers.py:*)",
       "Bash(python pipelines/export_papers_web.py:*)",
       "Bash(python3 pipelines/export_papers_web.py:*)",
+      "Bash(python pipelines/apply_notes.py:*)",
+      "Bash(python3 pipelines/apply_notes.py:*)",
       "Bash(python -c:*)",
       "Bash(python3 -c:*)"
     ]
