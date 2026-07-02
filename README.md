@@ -100,7 +100,7 @@ scrape-papers.yml (cron 매일 21:00 UTC)
        └─ python pipelines/indexer.py --check 검증
        └─ python pipelines/export_papers_web.py  → docs/papers.js
        └─ git commit → main
-             ├─ drive-sync.yml  → content/** 를 Google Drive(gdrive:MedicalOS/content)로 백업
+             ├─ drive-sync.yml  → content/** 를 Google Drive(gdrive:MedKOS/content)로 백업
              └─ pages.yml       → docs/(papers.html + papers.js)를 홈페이지로 배포
 ```
 

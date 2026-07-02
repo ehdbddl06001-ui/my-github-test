@@ -4,7 +4,7 @@ name: Sync to Google Drive
 # 사전 준비:
 #   1) 로컬에서 `rclone config` 로 gdrive 원격 설정
 #   2) `rclone config show` 결과 전체를 GitHub repo Secret 'RCLONE_CONF' 에 저장
-#   3) Drive 대상 폴더명을 아래 gdrive:MedicalOS/content 에서 조정
+#   3) Drive 대상 폴더명을 아래 gdrive:MedKOS/content 에서 조정
 
 on:
   push:
@@ -28,5 +28,5 @@ jobs:
 
       - name: Sync content to Drive
         run: |
-          rclone sync content/ gdrive:MedicalOS/content/ \
+          rclone sync content/ gdrive:MedKOS/content/ \
             --drive-use-trash=true --fast-list --verbose
