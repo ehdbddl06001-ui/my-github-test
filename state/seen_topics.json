@@ -1,1 +1,12 @@
-{}
+{
+  "usmle": {
+    "Biochemistry - Urea Cycle (OTC)": "2026-07-02",
+    "Cardiology - Heart Failure Pharmacology (ARNI)": "2026-07-02",
+    "Endocrinology - Pheochromocytoma": "2026-07-02",
+    "Hematology - HIT": "2026-07-02",
+    "Immunology - Chronic Granulomatous Disease": "2026-07-02",
+    "Infectious Disease - Enterococcal Endocarditis": "2026-07-02",
+    "Nephrology - Salicylate Mixed Acid-Base": "2026-07-02",
+    "Neurology - Lambert-Eaton (LEMS)": "2026-07-02"
+  }
+}
