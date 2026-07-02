@@ -1,0 +1,32 @@
+name: Sync to Google Drive
+
+# 루틴 안에서 Drive 자격증명을 다루지 않기 위해, 백업은 push 트리거로 분리한다.
+# 사전 준비:
+#   1) 로컬에서 `rclone config` 로 gdrive 원격 설정
+#   2) `rclone config show` 결과 전체를 GitHub repo Secret 'RCLONE_CONF' 에 저장
+#   3) Drive 대상 폴더명을 아래 gdrive:MedicalOS/content 에서 조정
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install rclone
+        run: curl https://rclone.org/install.sh | sudo bash
+
+      - name: Write rclone config
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
+
+      - name: Sync content to Drive
+        run: |
+          rclone sync content/ gdrive:MedicalOS/content/ \
+            --drive-use-trash=true --fast-list --verbose

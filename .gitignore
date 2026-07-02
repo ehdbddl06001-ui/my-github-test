@@ -1,0 +1,12 @@
+# SQLite는 Markdown에서 재빌드되는 파생물 — 커밋하지 않는다
+db/*.sqlite
+db/*.sqlite-*
+
+# 비밀/환경
+.env
+*.key
+
+# 파이썬
+__pycache__/
+*.pyc
+.venv/

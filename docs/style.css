@@ -57,6 +57,10 @@ button.danger{border-color:var(--bad); color:#ffb4b4}
 .explanation .item{margin:6px 0}
 .explanation .k{color:#8fb3ff; font-weight:600; margin-right:6px}
 .explanation .src{color:var(--muted); font-size:.86rem; margin-top:8px}
+.expl-text{
+  margin:8px 0 0; white-space:pre-wrap; word-break:break-word;
+  font-family:inherit; font-size:.92rem; line-height:1.65; color:var(--ink);
+}
 
 .appendix{margin-top:14px; padding-top:12px; border-top:1px dashed var(--line)}
 .appendix-head{color:var(--tag); font-weight:700; font-size:.9rem; margin-bottom:6px}

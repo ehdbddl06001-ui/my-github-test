@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KMLE 대화형 퀴즈 러너
-- 상세 증례형 문항을 화면에 출력하고, 사용자가 1~5 중 답을 선택하면 즉시 채점합니다.
-- 오답이 발생하면 해당 과목의 오답노트 파일(kmle/오답노트/NN_과목.md)에 '자동으로' 기록을 추가합니다.
+MedKOS 대화형 퀴즈 러너 (KMLE + USMLE)
+- 상세 증례형 문항을 화면에 출력하고, 사용자가 답을 선택하면 즉시 채점합니다.
+- 오답이 발생하면 해당 시험의 오답노트 파일에 '자동으로' 기록을 추가합니다.
+    KMLE  → kmle/오답노트/NN_과목.md   (①~⑤)
+    USMLE → usmle/오답노트/<과목>.md   (A~E, Step 1/2)
 
 사용법:
-    python3 quiz.py                # 전체 과목 대상, 과목 선택 메뉴
-    python3 quiz.py --subject 순환기   # 특정 과목만
-    python3 quiz.py --all              # 전 과목 연속 풀이
-    python3 quiz.py --shuffle -n 10    # 무작위 10문항
-    python3 quiz.py --review           # 오답노트에 쌓인 문항만 다시 풀기
-    python3 quiz.py --export           # JSON → 사람이 읽는 마크다운 문항집 재생성
+    python3 quiz.py                          # KMLE, 과목 선택 메뉴
+    python3 quiz.py --subject 순환기         # KMLE 특정 과목만
+    python3 quiz.py --all                     # 전 과목 연속 풀이
+    python3 quiz.py --shuffle -n 10           # 무작위 10문항
+    python3 quiz.py --review                  # 오답노트에 쌓인 문항만 다시 풀기
+    python3 quiz.py --export                   # (KMLE) JSON → 마크다운/웹 번들 재생성
+    python3 quiz.py --exam usmle              # USMLE 전체
+    python3 quiz.py --exam usmle --step 1      # USMLE Step 1(기초의학)만
+    python3 quiz.py --exam usmle --step 2 --all# USMLE Step 2(임상) 전 과목
 
-의존성 없음(파이썬 표준 라이브러리만 사용). 파이썬 3.7+.
+KMLE 경로는 외부 의존성이 없습니다(파이썬 표준 라이브러리만). USMLE 경로는
+content/usmle/*.md(원본)를 읽으므로 pyyaml이 필요합니다(requirements.txt).
 """
 import argparse
 import datetime
@@ -28,18 +34,25 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))          # kmle/quiz
 KMLE_DIR = os.path.dirname(BASE_DIR)                            # kmle
 REPO_ROOT = os.path.dirname(KMLE_DIR)                           # repo 루트
 QUESTIONS_DIR = os.path.join(BASE_DIR, "questions")
-WRONG_DIR = os.path.join(KMLE_DIR, "오답노트")
 MUNHANG_DIR = os.path.join(KMLE_DIR, "문항")
 DOCS_DIR = os.path.join(REPO_ROOT, "docs")                     # GitHub Pages 웹 퀴즈
 
-CIRCLED = {1: "①", 2: "②", 3: "③", 4: "④", 5: "⑤"}
+# 시험별 라벨/오답노트 위치 (main에서 EXAM에 따라 확정)
+EXAM = "kmle"
+LABELS = ["①", "②", "③", "④", "⑤"]
+WRONG_DIR = os.path.join(KMLE_DIR, "오답노트")
+
+
+def lab(n):
+    """1-based 선택지 번호를 현재 시험의 라벨(①… 또는 A…)로."""
+    return LABELS[n - 1] if 1 <= n <= len(LABELS) else str(n)
 
 
 # ----------------------------------------------------------------------------
 # 데이터 로딩
 # ----------------------------------------------------------------------------
 def load_questions():
-    """questions/*.json 을 모두 읽어 문항 리스트로 반환."""
+    """questions/*.json 을 모두 읽어 문항 리스트로 반환(KMLE)."""
     questions = []
     for path in sorted(glob.glob(os.path.join(QUESTIONS_DIR, "*.json"))):
         with open(path, encoding="utf-8") as f:
@@ -48,6 +61,21 @@ def load_questions():
             q["_file"] = os.path.basename(path)
             questions.append(q)
     return questions
+
+
+def load_usmle(step=None):
+    """content/usmle/*.md 를 읽어 문항 리스트로 반환(USMLE). pipelines의 로더를 재사용."""
+    sys.path.insert(0, os.path.join(REPO_ROOT, "pipelines"))
+    try:
+        import export_usmle_web as ex
+    except Exception as e:  # pragma: no cover
+        print(f"USMLE 로더를 불러오지 못했습니다({e}). `pip install -r requirements.txt` 후 다시 시도하세요.")
+        sys.exit(1)
+    recs = ex.load_records()
+    if step:
+        want = f"Step {step}" if step in ("1", "2") else step
+        recs = [r for r in recs if r.get("step") == want]
+    return recs
 
 
 def subjects_of(questions):
@@ -90,31 +118,38 @@ def hr(char="─", width=70):
 
 def print_question(q, idx=None, total=None):
     hr("═")
-    header = f"[{q.get('type', '')}]  {q['subject']}"
+    tags = [t for t in (q.get("step"), q.get("type")) if t]
+    header = f"[{' · '.join(tags)}]  {q['subject']}" if tags else q["subject"]
     if idx is not None and total is not None:
         header = f"({idx}/{total})  " + header
     print(header)
     hr()
-    # 워드 파일처럼 긴 증례를 자연스럽게 줄바꿈해 출력
     print(q["vignette"].strip())
     print()
     print("Q. " + q["question"].strip())
     print()
     for i, opt in enumerate(q["options"], start=1):
-        print(f"  {CIRCLED[i]} {opt}")
+        print(f"  {lab(i)} {opt}")
     print()
 
 
 def print_explanation(q, chosen):
     correct = q["answer"]
-    ex = q.get("explanation", {})
     hr()
     if chosen == correct:
-        print(f"✅ 정답입니다!  정답: {CIRCLED[correct]}")
+        print(f"✅ 정답입니다!  정답: {lab(correct)}")
     else:
-        print(f"❌ 오답입니다.  당신의 선택: {CIRCLED[chosen]}   /   정답: {CIRCLED[correct]}")
+        print(f"❌ 오답입니다.  당신의 선택: {lab(chosen)}   /   정답: {lab(correct)}")
     hr()
     print("【해설】")
+    if q.get("explanationText"):  # USMLE: 본문 해설 텍스트
+        for line in q["explanationText"].splitlines():
+            print("  " + line if line.strip() else "")
+        if q.get("source"):
+            print(f"  ▸ 출처     : {q['source']}")
+        print()
+        return
+    ex = q.get("explanation", {})  # KMLE: 구조화 해설
     if ex.get("진단"):
         print(f"  ▸ 진단     : {ex['진단']}")
     if ex.get("정답근거"):
@@ -152,12 +187,18 @@ def print_appendix(q):
 # ----------------------------------------------------------------------------
 # 오답노트 자동 기록
 # ----------------------------------------------------------------------------
+def _usmle_note(text, key):
+    """USMLE 해설 텍스트에서 '임상핵심'/'오답감별' 등의 한 줄을 뽑아낸다."""
+    for line in (text or "").splitlines():
+        s = line.strip().lstrip("-•").strip()
+        if s.startswith(key):
+            return s[len(key):].lstrip(":： ").strip()
+    return ""
+
+
 def wrong_file_for(q):
-    """문항의 subject_file(예: 02_순환기)에 해당하는 오답노트 경로."""
-    name = q.get("subject_file")
-    if not name:
-        # subject_file이 없으면 과목명으로 매칭 시도
-        name = q["subject"]
+    """문항의 subject_file(예: 02_순환기 / Pharmacology)에 해당하는 오답노트 경로."""
+    name = q.get("subject_file") or q["subject"]
     return os.path.join(WRONG_DIR, f"{name}.md")
 
 
@@ -176,7 +217,6 @@ def append_wrong_note(q, chosen):
     """오답을 해당 과목 오답노트 파일에 자동 추가하고, 요약 카운트를 갱신."""
     path = wrong_file_for(q)
     if not os.path.exists(path):
-        # 파일이 없으면 최소 골격 생성
         os.makedirs(os.path.dirname(path), exist_ok=True)
         text = (
             f"# 오답노트 — {q['subject']}\n\n"
@@ -188,12 +228,20 @@ def append_wrong_note(q, chosen):
         with open(path, encoding="utf-8") as f:
             text = f.read()
 
-    # 기존 오답 번호 계산
     existing = re.findall(r"### \[오답 #(\d+)\]", text)
     n = (max(int(x) for x in existing) + 1) if existing else 1
 
     today = datetime.date.today().isoformat()
-    ex = q.get("explanation", {})
+    if q.get("explanationText"):  # USMLE
+        core = _usmle_note(q["explanationText"], "임상핵심")
+        differ = _usmle_note(q["explanationText"], "오답감별")
+        detail = q.get("step", "")
+    else:                         # KMLE
+        ex = q.get("explanation", {})
+        core = ex.get("임상핵심", "")
+        differ = ex.get("오답감별", "")
+        detail = f"문항 유형 {q.get('type', '')}"
+
     keyword = q["question"].strip()
     if len(keyword) > 30:
         keyword = keyword[:30] + "…"
@@ -203,19 +251,18 @@ def append_wrong_note(q, chosen):
         "| 항목 | 내용 |\n|------|------|\n"
         f"| 기록일 | {today} |\n"
         f"| 과목 | {q['subject']} |\n"
-        f"| 세부 주제 | 문항 유형 {q.get('type', '')} |\n"
+        f"| 세부 | {detail} |\n"
         f"| 출처 문항 | quiz #{q.get('id', '')} |\n"
-        f"| 내가 고른 답 | {CIRCLED[chosen]} {q['options'][chosen - 1]} |\n"
-        f"| 정답 | {CIRCLED[q['answer']]} {q['options'][q['answer'] - 1]} |\n"
+        f"| 내가 고른 답 | {lab(chosen)} {q['options'][chosen - 1]} |\n"
+        f"| 정답 | {lab(q['answer'])} {q['options'][q['answer'] - 1]} |\n"
         "| 틀린 이유(지식 공백) | _(직접 작성)_ |\n"
-        f"| 핵심 정리 | {ex.get('임상핵심', '')} |\n"
-        f"| 감별 포인트 | {ex.get('오답감별', '')} |\n"
+        f"| 핵심 정리 | {core} |\n"
+        f"| 감별 포인트 | {differ} |\n"
         f"| 관련 개념 연결 | {q.get('source', '')} |\n"
         "| 복습 상태 | 🔴 |\n"
         "| 복습 예정일 | _(직접 작성)_ |\n"
     )
 
-    # '_(아직 기록 없음...)_' 플레이스홀더 제거
     text = re.sub(r"_\(아직 기록 없음[^)]*\)_\s*", "", text)
     text = _bump_summary(text).rstrip() + "\n" + entry
 
@@ -230,26 +277,32 @@ def append_wrong_note(q, chosen):
 def ask(q, idx, total):
     """한 문항을 출제하고 (정답여부, 선택) 반환. q 입력 시 중단."""
     print_question(q, idx, total)
+    n = len(q["options"])
+    valid = [str(i) for i in range(1, n + 1)]
+    hint = f"1-{n}" + ("/A-" + lab(n) if EXAM == "usmle" else "")
     while True:
-        raw = input("정답 선택 [1-5, s=건너뛰기, q=종료]: ").strip().lower()
+        raw = input(f"정답 선택 [{hint}, s=건너뛰기, q=종료]: ").strip().lower()
         if raw in ("q", "quit", "종료"):
             return None
         if raw in ("s", "skip", "건너뛰기"):
             print("↷ 건너뜁니다.\n")
             return ("skip", None)
-        if raw in ("1", "2", "3", "4", "5"):
+        # USMLE는 A~E 로도 입력 가능
+        if EXAM == "usmle" and raw.upper() in [lab(i) for i in range(1, n + 1)]:
+            raw = str([lab(i) for i in range(1, n + 1)].index(raw.upper()) + 1)
+        if raw in valid:
             chosen = int(raw)
             correct = chosen == q["answer"]
             print_explanation(q, chosen)
             if not correct:
                 path = append_wrong_note(q, chosen)
-                rel = os.path.relpath(path, KMLE_DIR)
+                rel = os.path.relpath(path, REPO_ROOT)
                 print(f"📝 오답을 오답노트에 자동 저장했습니다 → {rel}")
                 print()
             input("계속하려면 Enter…")
             print()
             return (correct, chosen)
-        print("  1~5 중에서 선택하세요.")
+        print(f"  {hint} 중에서 선택하세요.")
 
 
 def run_quiz(questions):
@@ -261,7 +314,7 @@ def run_quiz(questions):
     wrong_list = []
     for idx, q in enumerate(questions, start=1):
         result = ask(q, idx, total)
-        if result is None:  # 종료
+        if result is None:
             print("\n중단했습니다.")
             break
         ok, _ = result
@@ -274,7 +327,6 @@ def run_quiz(questions):
     else:
         idx = total
 
-    # 결과 요약
     hr("═")
     graded = correct_cnt + len(wrong_list)
     print("📊 결과 요약")
@@ -302,8 +354,11 @@ def collect_review_ids():
 
 
 # ----------------------------------------------------------------------------
-# export: JSON → 마크다운 문항집
+# export: JSON → 마크다운 문항집 (KMLE 전용)
 # ----------------------------------------------------------------------------
+CIRCLED = {1: "①", 2: "②", 3: "③", 4: "④", 5: "⑤"}
+
+
 def export_markdown(questions):
     by_file = {}
     for q in questions:
@@ -393,22 +448,53 @@ def choose_subject(questions):
 
 
 def main():
-    p = argparse.ArgumentParser(description="KMLE 대화형 퀴즈")
+    global EXAM, LABELS, WRONG_DIR
+    p = argparse.ArgumentParser(description="MedKOS 대화형 퀴즈 (KMLE + USMLE)")
+    p.add_argument("--exam", choices=["kmle", "usmle"], default="kmle", help="시험 선택(기본 kmle)")
+    p.add_argument("--step", choices=["1", "2"], help="USMLE Step 필터(1=기초의학, 2=임상)")
     p.add_argument("--subject", help="특정 과목만 풀기")
     p.add_argument("--all", action="store_true", help="전 과목 연속 풀이")
     p.add_argument("--shuffle", action="store_true", help="문항 순서 무작위")
     p.add_argument("-n", type=int, default=0, help="출제 문항 수 제한")
     p.add_argument("--review", action="store_true", help="오답노트에 쌓인 문항만 다시 풀기")
     p.add_argument("--today", action="store_true", help="오늘 생성된 문항만 풀기")
-    p.add_argument("--export", action="store_true", help="JSON을 마크다운 문항집으로 재생성")
+    p.add_argument("--export", action="store_true", help="(KMLE) 마크다운/웹 번들 재생성")
     p.add_argument("--recent-topics", nargs="?", type=int, const=14, default=None,
                    metavar="DAYS", help="최근 N일(기본 14) 내 생성 문항 주제 목록 출력(루틴 중복 방지용)")
     args = p.parse_args()
 
-    questions = load_questions()
-    if not questions:
-        print(f"문항 JSON이 없습니다. ({QUESTIONS_DIR})")
-        sys.exit(1)
+    # 시험 컨텍스트 확정
+    EXAM = args.exam
+    if EXAM == "usmle":
+        LABELS = ["A", "B", "C", "D", "E"]
+        WRONG_DIR = os.path.join(REPO_ROOT, "usmle", "오답노트")
+    else:
+        LABELS = ["①", "②", "③", "④", "⑤"]
+        WRONG_DIR = os.path.join(KMLE_DIR, "오답노트")
+
+    if args.export:
+        if EXAM == "usmle":
+            sys.path.insert(0, os.path.join(REPO_ROOT, "pipelines"))
+            import export_usmle_web as ex
+            return ex.main()
+        questions = load_questions()
+        print("마크다운 문항집을 재생성합니다…")
+        export_markdown(questions)
+        print("웹 퀴즈용 문항 번들을 재생성합니다…")
+        export_web_bundle(questions)
+        return
+
+    # 문항 로딩
+    if EXAM == "usmle":
+        questions = load_usmle(args.step)
+        if not questions:
+            print("USMLE 문항이 없습니다. content/usmle/*.md 를 확인하세요.")
+            sys.exit(1)
+    else:
+        questions = load_questions()
+        if not questions:
+            print(f"문항 JSON이 없습니다. ({QUESTIONS_DIR})")
+            sys.exit(1)
 
     if args.recent_topics is not None:
         days = args.recent_topics
@@ -423,16 +509,8 @@ def main():
                 print(f"  - ({c}) {key}")
         return
 
-    if args.export:
-        print("마크다운 문항집을 재생성합니다…")
-        export_markdown(questions)
-        print("웹 퀴즈용 문항 번들을 재생성합니다…")
-        export_web_bundle(questions)
-        return
-
     # 모드 결정: 플래그가 없으면 대화형 메뉴로 학습 구역을 고른다.
     interactive = not (args.review or args.today or args.subject or args.all)
-    mode = None
     if args.review:
         mode = "review"
     elif args.today:
@@ -452,9 +530,8 @@ def main():
     elif mode == "today":
         questions = [q for q in questions if is_today(q)]
         if not questions:
-            print("\n오늘 생성된 문항이 아직 없습니다. (매일 오전 6시 루틴이 새 문항을 추가합니다)")
+            print("\n오늘 생성된 문항이 아직 없습니다.")
             return
-        # 오늘의 문항이 여러 과목이면 과목을 골라 풀 수 있게 한다(대화형일 때).
         if interactive and len(subjects_of(questions)) > 1:
             sub = choose_subject(questions)
             if sub:
@@ -472,7 +549,8 @@ def main():
             sub = choose_subject(questions)
             if sub:
                 questions = [q for q in questions if q["subject"] == sub]
-        print(f"\n[전체 문항] {len(questions)}개 대상.\n")
+        label = f"USMLE{(' Step ' + args.step) if args.step else ''}" if EXAM == "usmle" else "전체 문항"
+        print(f"\n[{label}] {len(questions)}개 대상.\n")
 
     if args.shuffle:
         random.shuffle(questions)
