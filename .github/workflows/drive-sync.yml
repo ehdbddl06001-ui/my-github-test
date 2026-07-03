@@ -1,30 +1,42 @@
 name: Sync to Google Drive
 
-# 루틴 안에서 Drive 자격증명을 다루지 않기 위해, 백업은 push 트리거로 분리한다.
+# 사람이 content/ 를 직접 커밋해 push했을 때의 Drive 백업.
+# (매일 논문 스크랩의 Drive 백업은 scrape-papers.yml 안에서 자체적으로 처리한다 —
+#  봇의 GITHUB_TOKEN 커밋은 이 push 트리거를 발동시키지 못하기 때문.)
+#
 # 사전 준비:
-#   1) 로컬에서 `rclone config` 로 gdrive 원격 설정
-#   2) `rclone config show` 결과 전체를 GitHub repo Secret 'RCLONE_CONF' 에 저장
-#   3) Drive 대상 폴더명을 아래 gdrive:MedKOS/content 에서 조정
+#   1) 로컬에서 `rclone config` 로 이름이 gdrive 인 Google Drive 원격 설정
+#   2) 설정 파일을 base64로 인코딩해 GitHub repo Secret 'RCLONE_CONF_BASE64' 에 저장
+#      (base64를 쓰는 이유: 토큰 JSON의 따옴표·줄바꿈이 전달 중 깨지지 않게)
+#   3) Drive 대상 폴더명은 아래 gdrive:MedKOS/content 에서 조정
 
 on:
   push:
     branches: [main]
     paths:
       - "content/**"
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install rclone
         run: curl https://rclone.org/install.sh | sudo bash
 
-      - name: Write rclone config
+      - name: Write rclone config (from base64 secret)
+        env:
+          RCLONE_CONF_BASE64: ${{ secrets.RCLONE_CONF_BASE64 }}
         run: |
+          if [ -z "$RCLONE_CONF_BASE64" ]; then
+            echo "::error::RCLONE_CONF_BASE64 secret 이 비어 있습니다. 설정 후 다시 실행하세요."
+            exit 1
+          fi
           mkdir -p ~/.config/rclone
-          echo "${{ secrets.RCLONE_CONF }}" > ~/.config/rclone/rclone.conf
+          echo "$RCLONE_CONF_BASE64" | base64 -d > ~/.config/rclone/rclone.conf
+          echo "rclone 원격 확인:"; rclone listremotes
 
       - name: Sync content to Drive
         run: |

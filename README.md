@@ -95,14 +95,21 @@ USMLE 오답은 `usmle/오답노트/<과목>.md` 에 자동 기록된다(KMLE는
 기존 설계(Markdown=원본, Drive=백업, SQLite=색인)에 그대로 얹혔다.
 
 ```
-scrape-papers.yml (cron 매일 21:00 UTC)
+scrape-papers.yml (cron 매일 21:00 UTC) — 자기완결형
   └─ python pipelines/scrape_papers.py       PubMed(esearch+efetch) → content/papers/**/*.md
        └─ python pipelines/indexer.py --check 검증
        └─ python pipelines/export_papers_web.py  → docs/papers.js
        └─ git commit → main
-             ├─ drive-sync.yml  → content/** 를 Google Drive(gdrive:MedKOS/content)로 백업
-             └─ pages.yml       → docs/(papers.html + papers.js)를 홈페이지로 배포
+       └─ rclone sync content/ → Google Drive(gdrive:MedKOS/content)   ← 같은 실행 안에서 백업
+  (완료 후) pages.yml  → workflow_run 으로 이어받아 docs/ 를 홈페이지로 배포
 ```
+
+> **왜 백업을 같은 워크플로 안에서 하나?** GitHub Actions는 기본 `GITHUB_TOKEN`으로 만든
+> 커밋(=이 봇의 push)이 다른 워크플로(`drive-sync.yml`·`push` 트리거)를 다시 발동시키지
+> 못한다(무한루프 방지). 그래서 논문 커밋만으로는 Drive 백업이 자동으로 안 돈다.
+> → `scrape-papers.yml`이 스크랩·커밋에 이어 **직접 rclone 백업**까지 하고, 홈페이지 배포는
+> `pages.yml`이 `workflow_run`으로 이어받는다. `drive-sync.yml`은 사람이 `content/`를 직접
+> 커밋했을 때를 위한 경로로 남긴다.
 
 - **스크랩 카드**는 사실 메타데이터(저널·DOI·PMID·저자·게재일) + **원문 초록**만 담고
   `confidence: medium`. 해석(Summary/Clinical Impact/My Ideas)은 이후 `/gen-paper`로 채운다.
@@ -147,8 +154,22 @@ python pipelines/scrape_papers.py --fixture pipelines/fixtures/pubmed_sample.xml
 
 ### 준비물 (한 번만)
 
-- **Google Drive 백업**: `drive-sync.yml`이 이미 `content/**`를 동기화하므로 논문도 자동 포함.
-  repo Secret `RCLONE_CONF`(로컬 `rclone config show` 결과)만 설정하면 된다.
+- **Google Drive 백업** — repo Secret **`RCLONE_CONF_BASE64`** 하나만 설정한다.
+  1) 로컬에서 `rclone config`로 이름이 **`gdrive`**인 Google Drive 원격을 만든다(브라우저 로그인).
+  2) 설정 파일을 **base64로 인코딩**해 그 값을 Secret에 넣는다.
+     (텍스트 그대로 넣으면 토큰 JSON의 따옴표·줄바꿈이 전달 중 깨져 `invalid character …`
+     오류가 난다. base64는 특수문자가 없어 안전하다.)
+     ```bash
+     # macOS/Linux
+     base64 -w0 ~/.config/rclone/rclone.conf   # 출력 전체를 복사
+     ```
+     ```powershell
+     # Windows PowerShell (클립보드로 바로 복사)
+     [Convert]::ToBase64String([IO.File]::ReadAllBytes("$env:APPDATA\rclone\rclone.conf")) | Set-Clipboard
+     ```
+  3) GitHub ▸ Settings ▸ Secrets and variables ▸ Actions ▸ New repository secret →
+     Name `RCLONE_CONF_BASE64`, 값에 붙여넣기.
+  - Secret이 없으면 스크랩·커밋은 정상 진행되고 백업 단계만 건너뛴다.
 - **홈페이지**: Settings ▸ Pages ▸ Source = "GitHub Actions" (기존 퀴즈와 동일).
 - **스크랩 권한**: `scrape-papers.yml`은 `contents: write`로 main에 직접 커밋한다.
   (GitHub Actions 러너는 외부망이 열려 있어 PubMed 접근에 별도 설정이 필요 없다.)
