@@ -37,6 +37,10 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 │   ├── indexer.py            # content/ → SQLite(FTS5) 재빌드
 │   ├── state.py              # ID 발급 + N일 중복방지 (ephemeral 컨테이너 대응)
 │   ├── export_usmle_web.py   # content/usmle/*.md → docs/questions_usmle.js (웹 퀴즈용)
+│   ├── scrape_papers.py      # PubMed 최신 논문 → content/papers/**/*.md (매일 자동)
+│   ├── export_papers_web.py  # content/papers/**/*.md → docs/papers.js (홈페이지 논문 피드)
+│   ├── apply_notes.py        # 홈페이지 노트(.json) → 카드의 ## My Ideas 반영(왕복)
+│   ├── fixtures/             # 오프라인 테스트용 PubMed XML 샘플
 │   └── db_schema.sql
 ├── content/                  # ★ 원본 (kmle/usmle/basic/papers/diseases/drugs)
 ├── state/                    # id_counter.json, seen_topics.json (커밋됨)
@@ -44,7 +48,8 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 ├── db/                       # medkos.sqlite (gitignore, 재빌드됨)
 ├── .github/workflows/
 │   ├── drive-sync.yml        # content/ push 시 rclone로 Drive 백업
-│   └── pages.yml             # docs/ 웹 퀴즈를 GitHub Pages로 배포
+│   ├── scrape-papers.yml     # 매일 PubMed 스크랩 → 카드 커밋(→ Drive·Pages 자동 연쇄)
+│   └── pages.yml             # docs/ 웹 퀴즈·논문 피드를 GitHub Pages로 배포
 │
 ├── kmle/                     # [기존] JSON 기반 KMLE 퀴즈 세트 (현재 Learning 계층)
 │   ├── quiz/                 # quiz.py 실행기 + questions/*.json (단일 소스)
@@ -82,6 +87,71 @@ python3 quiz.py --exam usmle --review     # USMLE 오답만 다시 풀기
 ```
 
 USMLE 오답은 `usmle/오답노트/<과목>.md` 에 자동 기록된다(KMLE는 `kmle/오답노트/`).
+
+## 논문 자동 스크랩 → Google Drive 저장 → 홈페이지 피드
+
+매일 PubMed에서 관심 주제의 최신 논문을 긁어와 `content/papers/{연도}/*.md` 카드로 저장하고,
+그 카드가 **자동으로 Google Drive에 백업**되며 **홈페이지 논문 피드**에 뜬다. 새 코드 없이
+기존 설계(Markdown=원본, Drive=백업, SQLite=색인)에 그대로 얹혔다.
+
+```
+scrape-papers.yml (cron 매일 21:00 UTC)
+  └─ python pipelines/scrape_papers.py       PubMed(esearch+efetch) → content/papers/**/*.md
+       └─ python pipelines/indexer.py --check 검증
+       └─ python pipelines/export_papers_web.py  → docs/papers.js
+       └─ git commit → main
+             ├─ drive-sync.yml  → content/** 를 Google Drive(gdrive:MedKOS/content)로 백업
+             └─ pages.yml       → docs/(papers.html + papers.js)를 홈페이지로 배포
+```
+
+- **스크랩 카드**는 사실 메타데이터(저널·DOI·PMID·저자·게재일) + **원문 초록**만 담고
+  `confidence: medium`. 해석(Summary/Clinical Impact/My Ideas)은 이후 `/gen-paper`로 채운다.
+- **중복 방지**는 `state/seen_papers.json`(PMID 단위)로만 판정 → 임시 컨테이너에서 매일 돌아도
+  같은 논문을 두 번 저장하지 않는다. id는 `state.next_id('paper')`로만 발급.
+- **관심 주제**는 `pipelines/scrape_papers.py`의 `TOPICS` 딕셔너리에서 조정(기본: 심장학·감염내과·
+  신장·종양). 저널 한정은 검색어에 `AND "Circulation"[Journal]`처럼 덧붙인다.
+
+### 직접 돌려보기
+
+```bash
+python pipelines/scrape_papers.py --dry-run           # 무엇을 가져올지만 확인(저장 안 함)
+python pipelines/scrape_papers.py --days 7 --max 3    # 스크랩 → 카드 저장
+python pipelines/export_papers_web.py                 # → docs/papers.js 재생성
+
+# 네트워크 없이 파이프라인 검증(오프라인):
+python pipelines/scrape_papers.py --fixture pipelines/fixtures/pubmed_sample.xml --topic Cardiology --dry-run
+```
+
+홈페이지 상단 내비게이션에서 **🧠 퀴즈 ↔ 📄 논문**을 오간다. 논문 피드는 주제 필터·검색·
+초록 펼치기·PubMed 원문 링크를 제공한다(순수 정적, `docs/papers.js`만 읽음).
+
+### 논문 읽고 내 생각·아이디어 적기 (노트)
+
+논문 카드를 열면 **💡 내 생각/아이디어** 입력란이 있다. 읽으면서 적으면 **그 브라우저에 즉시
+자동 저장**된다(localStorage, 서버 불필요). 다만 이대로는 그 기기에만 남으므로, 영구 보관·다른
+기기 동기화·Drive 백업을 하려면 **카드의 `## My Ideas`로 반영**하는 왕복 경로를 쓴다.
+
+```
+홈페이지에서 메모(자동저장)
+  → '🗒 내 노트 내보내기(.json)' 클릭 → medkos-notes.json 다운로드
+  → python pipelines/apply_notes.py medkos-notes.json   # 각 카드의 ## My Ideas 에 써넣음
+  → python pipelines/indexer.py --check && python pipelines/export_papers_web.py
+  → git commit → main  (→ Drive 백업, 홈페이지에 '저장됨'으로 표시)
+```
+
+- `apply_notes.py`는 노트의 논문 id로 카드 파일을 찾아 `## My Ideas`를 교체하고 frontmatter에
+  `updated:`를 남긴다. `--dry-run`으로 미리 확인 가능.
+- 빠른 백업만 원하면 '📄 내 노트 미리보기(.md)'로 사람이 읽는 마크다운 한 장을 받아 Drive에
+  그대로 둘 수도 있다(카드 반영과는 별개).
+- 카드에 이미 반영된 노트는 피드에서 **My Ideas (저장됨)**으로 보이고, 입력란은 새 초안용이다.
+
+### 준비물 (한 번만)
+
+- **Google Drive 백업**: `drive-sync.yml`이 이미 `content/**`를 동기화하므로 논문도 자동 포함.
+  repo Secret `RCLONE_CONF`(로컬 `rclone config show` 결과)만 설정하면 된다.
+- **홈페이지**: Settings ▸ Pages ▸ Source = "GitHub Actions" (기존 퀴즈와 동일).
+- **스크랩 권한**: `scrape-papers.yml`은 `contents: write`로 main에 직접 커밋한다.
+  (GitHub Actions 러너는 외부망이 열려 있어 PubMed 접근에 별도 설정이 필요 없다.)
 
 ## 지금 상태 (1단계 스캐폴드)
 

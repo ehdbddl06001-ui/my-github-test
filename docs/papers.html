@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MedKOS 논문 스크랩</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html">🧠 퀴즈</a>
+  <a href="papers.html" class="active">📄 논문</a>
+</nav>
+
+<header>
+  <h1>논문 스크랩 피드</h1>
+  <p class="sub">매일 PubMed에서 관심 주제의 최신 논문을 자동으로 긁어와 Markdown 카드로 저장합니다. 원본은 <code>content/papers/</code>(GitHub), 백업은 Google Drive, 이 페이지는 그 색인입니다. 카드를 열어 초록을 보고 PubMed 원문으로 이동할 수 있습니다.</p>
+</header>
+
+<section class="card">
+  <div class="filters">
+    <input type="search" id="search" placeholder="제목·저널·초록·저자 검색…" />
+    <select id="topicFilter"><option value="__ALL__">전체 주제</option></select>
+  </div>
+  <div class="row" style="margin-top:6px">
+    <label><input type="checkbox" id="notesOnly" /> 내 노트가 있는 것만</label>
+    <button id="exportNotesJson" title="apply_notes.py로 카드 My Ideas에 반영">🗒 내 노트 내보내기(.json)</button>
+    <button id="exportNotesMd">📄 내 노트 미리보기(.md)</button>
+  </div>
+  <p id="count" class="muted"></p>
+  <p id="noteHint" class="muted">💡 카드를 열고 <b>내 생각/아이디어</b>에 메모하면 이 브라우저에 자동 저장됩니다. 영구 보관·다른 기기 동기화는 <code>.json</code>으로 내보내 <code>python pipelines/apply_notes.py</code>로 카드에 반영하세요.</p>
+</section>
+
+<section id="list" class="card"></section>
+
+<footer>
+  <p class="muted">
+    이 피드는 <code>content/papers/**/*.md</code>에서 생성된 <code>docs/papers.js</code>를 읽습니다.
+    새 논문은 매일 GitHub Actions(<code>scrape-papers.yml</code>)가 커밋하며, 커밋 즉시 Google Drive로 백업되고 이 페이지가 갱신됩니다.<br />
+    요약·임상 임팩트·연구 아이디어는 <code>/gen-paper</code>로 나중에 채웁니다(스크랩 단계에서는 사실 메타데이터 + 원문 초록만 저장).
+  </p>
+</footer>
+
+<script src="papers.js"></script>
+<script src="papers-app.js"></script>
+</body>
+</html>

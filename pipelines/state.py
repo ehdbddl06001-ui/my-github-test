@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parent.parent
 STATE_DIR = ROOT / "state"
 ID_FILE = STATE_DIR / "id_counter.json"
 TOPIC_FILE = STATE_DIR / "seen_topics.json"
+# 논문 스크랩 중복 방지: 이미 카드로 저장한 PubMed PMID → 저장일
+PAPER_FILE = STATE_DIR / "seen_papers.json"
 
 
 def _read(path: Path) -> dict:
@@ -67,6 +69,23 @@ def record_topic(doc_type: str, topic: str, when: str | None = None) -> None:
     seen = _read(TOPIC_FILE)
     seen.setdefault(doc_type, {})[topic] = when
     _write(TOPIC_FILE, seen)
+
+
+# ── 논문 스크랩 전용: PMID 단위 중복 방지 ────────────────────────────────
+# 논문은 '주제'가 아니라 개별 문헌(PMID)이 단위라 seen_topics 와 분리해 관리한다.
+# 임시 컨테이너에서 매일 돌아도, 이미 저장한 PMID는 state 파일로만 판별한다.
+
+def paper_seen(pmid: str) -> bool:
+    """이 PMID를 이미 카드로 저장했는가?"""
+    return str(pmid) in _read(PAPER_FILE)
+
+
+def mark_paper_seen(pmid: str, when: str | None = None) -> None:
+    """PMID를 저장 완료로 기록(같은 커밋에 포함시켜 push)."""
+    when = when or date.today().isoformat()
+    seen = _read(PAPER_FILE)
+    seen[str(pmid)] = when
+    _write(PAPER_FILE, seen)
 
 
 if __name__ == "__main__":
