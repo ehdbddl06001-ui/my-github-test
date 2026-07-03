@@ -123,7 +123,7 @@ scrape-papers.yml (cron 매일 20:00 UTC = KST 05:00) — 자기완결형
 
 ```bash
 python pipelines/scrape_papers.py --dry-run           # 무엇을 가져올지만 확인(저장 안 함)
-python pipelines/scrape_papers.py --days 7 --max 3    # 스크랩 → 카드 저장
+python pipelines/scrape_papers.py --days 7 --max 1    # 스크랩 → 카드 저장(주제당 1편 = 8편)
 python pipelines/export_papers_web.py                 # → docs/papers.js 재생성
 
 # 네트워크 없이 파이프라인 검증(오프라인):

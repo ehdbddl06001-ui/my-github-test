@@ -25,7 +25,7 @@ on:
         default: "7"
       max:
         description: "주제당 최대 편수"
-        default: "3"
+        default: "1"
 
 permissions:
   contents: write
@@ -51,7 +51,7 @@ jobs:
         run: |
           python pipelines/scrape_papers.py \
             --days "${{ github.event.inputs.days || '7' }}" \
-            --max "${{ github.event.inputs.max || '3' }}"
+            --max "${{ github.event.inputs.max || '1' }}"
 
       - name: Validate frontmatter
         run: python pipelines/indexer.py --check

@@ -12,7 +12,7 @@ MedKOS 원칙 준수:
   https://www.ncbi.nlm.nih.gov/books/NBK25501/
 
 사용:
-  python pipelines/scrape_papers.py                 # 설정된 주제 전부, 최근 7일, 주제당 최대 3편
+  python pipelines/scrape_papers.py                 # 설정된 주제 전부, 최근 7일, 주제당 최대 1편
   python pipelines/scrape_papers.py --days 3 --max 2
   python pipelines/scrape_papers.py --topic Cardiology
   python pipelines/scrape_papers.py --dry-run       # 저장하지 않고 무엇을 가져올지만 출력
@@ -293,8 +293,8 @@ def run(topics: dict[str, str], days: int, per_topic: int,
 def main() -> int:
     ap = argparse.ArgumentParser(description="PubMed 최신 논문 → Markdown 카드")
     ap.add_argument("--days", type=int, default=7, help="최근 N일(기본 7)")
-    ap.add_argument("--max", type=int, default=3, dest="per_topic",
-                    help="주제당 최대 편수(기본 3)")
+    ap.add_argument("--max", type=int, default=1, dest="per_topic",
+                    help="주제당 최대 편수(기본 1 → 8주제면 하루 8편)")
     ap.add_argument("--topic", help="이 주제 하나만 (TOPICS의 key)")
     ap.add_argument("--dry-run", action="store_true", help="저장하지 않고 목록만")
     ap.add_argument("--fixture", help="efetch XML 파일을 주입해 오프라인 테스트")
