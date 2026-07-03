@@ -19,6 +19,7 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 
 2. **생성** — 타입에 맞는 스킬 규칙을 따른다.
    - KMLE/USMLE → `/gen-kmle` 규칙 (USMLE는 `step`·`exam_subject` 필수)
+   - 기초의학 → `/gen-basic` 규칙 (생리·생화·약리 개념을 임상과 연결)
    - 논문 → `/gen-paper` 규칙
    - 질환/약물 카드 → `/gen-card` 규칙
    각 항목마다 `state.next_id(<type>)` 로 id를 발급받는다.
@@ -36,9 +37,11 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    python pipelines/indexer.py
    ```
 
-6. **웹 번들 재생성** — 개인 페이지(docs/)에 새 문항이 뜨게 하려면 필수.
+6. **웹 번들 재생성** — 개인 페이지(docs/)에 새 콘텐츠가 뜨게 하려면 필수.
    - USMLE를 생성했다면: `python pipelines/export_usmle_web.py` → `docs/questions_usmle.js`
    - KMLE(quiz.py JSON 트랙)라면: `python3 kmle/quiz/quiz.py --export` → `docs/questions.js`
+   - **어떤 타입이든**(basic·paper·disease·drug 포함): `python pipelines/export_search_web.py`
+     → `docs/search-index.js` (통합검색·대시보드 갱신). 매 실행 항상 재생성한다.
    생성된 번들을 **같은 커밋에 포함**한다.
 
 7. **커밋** — 새 `.md` + `state/*.json` + 재생성된 `docs/` 번들을 함께 커밋.

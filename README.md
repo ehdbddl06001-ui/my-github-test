@@ -19,7 +19,26 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
       ├──► GitHub          코드·프롬프트·규칙 버전관리 (이 repo)
       ├──► Google Drive    원본(Markdown/PDF/이미지) 백업
       └──► SQLite (FTS5)   검색용 색인 (재빌드 가능) → 이후 ChromaDB/RAG로 확장
+              │
+              ├── CLI:  pipelines/search.py    (FTS5 직접 조회 + 대시보드)
+              └── 웹:   docs/search.html       (content/→search-index.js 통합검색)
 ```
+
+## 통합검색 · 대시보드
+
+쌓인 콘텐츠(kmle/usmle/basic/paper/disease/drug)를 한곳에서 찾는다. 원본은 언제나
+`content/**/*.md`, 검색은 그 파생 색인을 쓴다.
+
+```bash
+python pipelines/search.py 심부전             # 전문검색(FTS5)
+python pipelines/search.py SGLT2 --type kmle   # 타입/주제/태그 필터
+python pipelines/search.py --stats            # 대시보드: 무엇이 얼마나 쌓였나
+python pipelines/export_search_web.py          # content/ → docs/search-index.js (웹 검색·대시보드)
+```
+
+- **CLI**는 `db/medkos.sqlite`(FTS5)를 직접 조회한다. 색인이 없으면 자동 재빌드(파생물).
+- **웹**(`docs/search.html`)은 정적 GitHub Pages라 SQLite를 못 쓰므로, `content/`에서
+  내보낸 `docs/search-index.js`를 브라우저에서 검색한다(퀴즈·논문 번들과 같은 방식).
 
 ## 저장소 구조
 
@@ -30,13 +49,15 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 │   ├── settings.json         # 파이프라인 실행 권한
 │   └── skills/               # 타입별 생성 + 색인 스킬 (자동/슬래시 호출)
 │       ├── daily-run/        # 하루치 오케스트레이터 (루틴이 호출)
-│       └── gen-kmle/  gen-paper/  gen-card/  index-db/
+│       └── gen-kmle/  gen-basic/  gen-paper/  gen-card/  index-db/
 ├── schemas/frontmatter.md    # 저장 규격(계약). 모든 .md가 따름
 ├── pipelines/                # 결정론적 작업(파싱·색인·ID·상태)은 파이썬이 담당
 │   ├── frontmatter.py        # frontmatter 파싱·검증
 │   ├── indexer.py            # content/ → SQLite(FTS5) 재빌드
+│   ├── search.py             # SQLite(FTS5) 조회 CLI + 대시보드(--stats) — 색인의 소비자
 │   ├── state.py              # ID 발급 + N일 중복방지 (ephemeral 컨테이너 대응)
 │   ├── export_usmle_web.py   # content/usmle/*.md → docs/questions_usmle.js (웹 퀴즈용)
+│   ├── export_search_web.py  # content/**/*.md → docs/search-index.js (웹 통합검색·대시보드)
 │   ├── scrape_papers.py      # PubMed 최신 논문 → content/papers/**/*.md (매일 자동)
 │   ├── export_papers_web.py  # content/papers/**/*.md → docs/papers.js (홈페이지 논문 피드)
 │   ├── apply_notes.py        # 홈페이지 노트(.json) → 카드의 ## My Ideas 반영(왕복)
@@ -49,14 +70,18 @@ Claude Code (매일 자동 실행: 루틴 / GitHub Actions)
 ├── .github/workflows/
 │   ├── drive-sync.yml        # content/ push 시 rclone로 Drive 백업
 │   ├── scrape-papers.yml     # 매일 PubMed 스크랩 → 카드 커밋(→ Drive·Pages 자동 연쇄)
-│   └── pages.yml             # docs/ 웹 퀴즈·논문 피드를 GitHub Pages로 배포
+│   └── pages.yml             # docs/ 웹 퀴즈·논문·통합검색을 GitHub Pages로 배포
 │
 ├── kmle/                     # [기존] JSON 기반 KMLE 퀴즈 세트 (현재 Learning 계층)
 │   ├── quiz/                 # quiz.py 실행기 + questions/*.json (단일 소스)
 │   ├── 문항/  오답노트/       # JSON에서 생성된 읽기용 .md + 오답 기록
-└── docs/                     # GitHub Pages 웹 퀴즈 (KMLE + USMLE, 클릭으로 풀기)
+└── docs/                     # GitHub Pages (퀴즈 + 논문 + 통합검색)
+    ├── index.html            #   🧠 퀴즈 (KMLE + USMLE, 클릭으로 풀기)
+    ├── papers.html           #   📄 논문 피드
+    ├── search.html           #   🔍 통합검색 · 대시보드
     ├── questions.js          #   KMLE 번들 (quiz.py --export)
-    └── questions_usmle.js    #   USMLE 번들 (export_usmle_web.py)
+    ├── questions_usmle.js    #   USMLE 번들 (export_usmle_web.py)
+    └── search-index.js       #   통합검색 색인 (export_search_web.py)
 ```
 
 ## USMLE 웹 퀴즈 (Step 1 / Step 2)
