@@ -2,6 +2,67 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0014",
+  "topic": "Hematology-Oncology",
+  "subtopic": "",
+  "title": "The immunopharmacological role of B-cell and neutrophil-derived extracellular vesicles in pancreatic cancer: Mechanisms of inflammation, tumor progression, and potential therapeutic targets",
+  "authors": [
+   "Maher Fatemeh",
+   "Samadi Ali",
+   "Sajjadi Seyedeh Fatemeh",
+   "Heydari Sepideh",
+   "Gross Jeffrey",
+   "Azimi Ghazal"
+  ],
+  "journal": "International immunopharmacology",
+  "doi": "10.1016/j.intimp.2026.117102",
+  "pmid": "42398175",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42398175/",
+  "pubdate": "2026-07-03",
+  "date": "2026-07-03",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Pancreatic cancer (PC) is defined by a highly orchestrated immunosuppressive and inflammatory microenvironment. Recent evidence identifies immune-cell-derived Extracellular vesicles (EVs) as pivotal mediators of this intercellular crosstalk. This review provides an in-depth analysis of EVs derived from B-lymphocytes and neutrophils, focusing on their dualistic roles in PC progression. We systematically examine the molecular mechanisms of their biogenesis, emphasizing the influence of NF-κB and STAT3 signaling pathways on cargo selection, including specific miRNAs and proteins. The manuscript further explores how these EVs modulate the tumor microenvironment (TME) to promote desmoplasia and chemoresistance, while also evaluating their pharmacological potential as biomimetic nanocarriers for targeted therapy. By synthesizing recent clinical and preclinical data (up to 2025), this review highlights the dual nature of these vesicles as both drivers of malignancy and promising tools for personalized immunotherapy in pancreatic adenocarcinoma. Pancreatic ductal adenocarcinoma (PDAC) is characterized by its aggressive clinical course and a complex multifactorial etiology, including genetic predispositions like Lynch syndrome and metabolic drivers such as obesity and chronic pancreatitis. Beyond these systemic risk factors, the progression of PDAC is profoundly orchestrated by the tumor microenvironment (TME). Central to this orchestration are immune-derived EVs, which act as critical mediators of intercellular communication. These vesicles facilitate tumor progression by modulating immune evasion and shaping an immunosuppressive landscape. Consequently, understanding the molecular cargo of immune-derived EVs and their role in immune regulation presents a transformative frontier for developing targeted therapeutic strategies in PDAC.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0013",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Effectiveness of cardiac Holter monitoring for more than four weeks for the detection of occult atrial fibrillation in embolic stroke of undetermined source",
+  "authors": [
+   "de Torres Chacón Reyes",
+   "Pérez-Sánchez Soledad",
+   "Tamayo Toledo José Antonio",
+   "Villegas Inmaculada",
+   "Antonio Cabezas Juan",
+   "Fernández Dolores",
+   "Fernández Javier",
+   "Montaner Joan",
+   "et al."
+  ],
+  "journal": "Medicina clinica",
+  "doi": "10.1016/j.medcli.2026.107502",
+  "pmid": "42398144",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42398144/",
+  "pubdate": "2026-07-03",
+  "date": "2026-07-03",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Hidden atrial fibrillation (AF) is considered a major contributor to embolic strokes of undetermined source (ESUS). Prolonged cardiac monitoring is effective for detecting AF, especially when started soon after stroke onset.\n\n**METHODS:** This prospective multicentre study evaluated the rate of AF detection in ESUS patients under real-world clinical conditions using wearable Holter cardiac monitoring for 30 days.\n\n**RESULTS:** A total of 352 patients were included. The mean age was 67.8 years, and 46% were women. The AF detection rate was 17.1%, with a mean episode duration of 401.7min. Compared with patients without AF, those with AF were older (72.2 vs 67.0 years; mean difference, 5.16 years; 95% CI, 2.24-8.09; p=0.0012), had a higher frequency of large vessel occlusion (35.9% vs 17.0%; OR, 2.66; 95% CI, 1.40-5.05; p=0.002), showed larger left atrial diameter (40.4 vs 38.1mm; mean difference, 2.25mm; 95% CI, 0.56-3.95; p=0.013), and more often had excessive supraventricular ectopic activity on 24-hour Holter monitoring (37.5% vs 20.5%; OR, 2.33; 95% CI, 1.26-4.32; p=0.006). Notably, 73.3% of AF cases were detected during monitoring initiated within the first 6 months after stroke onset.\n\n**CONCLUSIONS:** These findings support the potential clinical utility of 30-day prolonged cardiac monitoring to detect AF in ESUS patients, highlighting its value in etiological stroke assessment in real-world clinical practice, with greater efficacy during the first 30 days, but also in cases where monitoring is initiated months after the event.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0012",
   "topic": "Oncology",
   "subtopic": "",
