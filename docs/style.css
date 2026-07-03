@@ -126,3 +126,20 @@ button.danger{border-color:var(--bad); color:#ffb4b4}
 .w .ans{color:#9ff0b8}
 footer{max-width:820px; margin:8px auto 40px; padding:0 18px}
 code{background:#0e1826; border:1px solid var(--line); border-radius:5px; padding:1px 5px; font-size:.85em}
+
+/* 통합검색 · 대시보드 (search.html) */
+.dash-types{display:flex; flex-direction:column; gap:6px; margin:6px 0 4px}
+.dash-type{display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:#0e1826}
+.dash-type .dt-label{width:78px; flex:none; font-size:.9rem}
+.dash-type .dt-bar{flex:1; height:10px; background:#0b1420; border:1px solid var(--line); border-radius:6px; overflow:hidden}
+.dash-type .dt-bar span{display:block; height:100%; background:var(--accent)}
+.dash-type .dt-n{width:34px; flex:none; text-align:right; color:var(--muted); font-size:.9rem}
+.dash-h{margin:14px 0 6px; font-size:.9rem; color:var(--tag)}
+.chips{display:flex; flex-wrap:wrap; gap:6px}
+.chip{background:#0e1826; font-size:.85rem; padding:5px 10px}
+.chip .chip-n{color:var(--muted); font-size:.8em; margin-left:2px}
+.rid{color:var(--muted); font-size:.82rem; font-family:ui-monospace,Menlo,Consolas,monospace}
+.rsnip{color:var(--ink); font-size:.9rem; margin:6px 0; line-height:1.55}
+.rtags{display:flex; flex-wrap:wrap; gap:5px; margin:6px 0}
+.rmeta{color:var(--muted); font-size:.82rem; margin-top:4px}
+mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2px}
