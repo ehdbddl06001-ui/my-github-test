@@ -1,12 +1,16 @@
-# GitHub Pages에 웹 퀴즈(docs/)를 자동 배포합니다.
+# GitHub Pages에 웹(docs/: 퀴즈 + 논문 피드)을 자동 배포합니다.
 # 사용 전 준비: 저장소 Settings ▸ Pages ▸ Build and deployment ▸ Source = "GitHub Actions"
-# (Source를 "Deploy from a branch"로 두고 main /docs 를 선택해도 됩니다. 그 경우 이 워크플로는 필요 없습니다.)
-name: Deploy quiz to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths: ["docs/**", ".github/workflows/pages.yml"]
+  # 매일 논문 스크랩(scrape-papers.yml)이 봇 커밋으로 docs/papers.js 를 바꿔도 push 트리거는
+  # 발동하지 않으므로, 그 워크플로가 끝나면 이어받아 배포한다.
+  workflow_run:
+    workflows: ["Scrape papers (daily)"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -20,12 +24,16 @@ concurrency:
 
 jobs:
   deploy:
+    # workflow_run 으로 왔을 땐 스크랩이 성공했을 때만 배포
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with:
+          ref: main   # 봇이 방금 커밋한 최신 docs/ 를 확실히 가져오기
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
