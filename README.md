@@ -95,7 +95,7 @@ USMLE 오답은 `usmle/오답노트/<과목>.md` 에 자동 기록된다(KMLE는
 기존 설계(Markdown=원본, Drive=백업, SQLite=색인)에 그대로 얹혔다.
 
 ```
-scrape-papers.yml (cron 매일 21:00 UTC) — 자기완결형
+scrape-papers.yml (cron 매일 20:00 UTC = KST 05:00) — 자기완결형
   └─ python pipelines/scrape_papers.py       PubMed(esearch+efetch) → content/papers/**/*.md
        └─ python pipelines/indexer.py --check 검증
        └─ python pipelines/export_papers_web.py  → docs/papers.js
@@ -115,8 +115,9 @@ scrape-papers.yml (cron 매일 21:00 UTC) — 자기완결형
   `confidence: medium`. 해석(Summary/Clinical Impact/My Ideas)은 이후 `/gen-paper`로 채운다.
 - **중복 방지**는 `state/seen_papers.json`(PMID 단위)로만 판정 → 임시 컨테이너에서 매일 돌아도
   같은 논문을 두 번 저장하지 않는다. id는 `state.next_id('paper')`로만 발급.
-- **관심 주제**는 `pipelines/scrape_papers.py`의 `TOPICS` 딕셔너리에서 조정(기본: 심장학·감염내과·
-  신장·종양). 저널 한정은 검색어에 `AND "Circulation"[Journal]`처럼 덧붙인다.
+- **관심 주제**(8개)는 `pipelines/scrape_papers.py`의 `TOPICS` 딕셔너리에서 조정한다: 심장학·
+  감염내과·신장내과·혈액종양내과·병리학·진단검사의학·소아청소년과·외과. 저널 한정은 검색어에
+  `AND "Circulation"[Journal]`처럼 덧붙인다.
 
 ### 직접 돌려보기
 

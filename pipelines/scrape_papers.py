@@ -38,14 +38,32 @@ PAPERS_DIR = ROOT / "content" / "papers"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 # ── 관심 주제 설정 ────────────────────────────────────────────────────────
-# key = topic(카드의 topic/검색·연결 기준), value = PubMed 검색어.
-# PDF의 관심사(심장학·감염내과)를 기본값으로 두되, 여기만 고치면 주제를 늘릴 수 있다.
+# key = topic(카드의 topic/검색·연결 기준, 영문으로 통일), value = PubMed 검색어.
+# 여기만 고치면 주제를 늘리거나 검색어를 바꿀 수 있다.
 # 신뢰도 있는 저널로 한정하고 싶으면 검색어에 AND "Circulation"[Journal] 등을 덧붙인다.
+# 우선순위 정밀도를 위해 OR/AND 는 괄호로 명시한다.
 TOPICS: dict[str, str] = {
-    "Cardiology": '"heart failure"[Title/Abstract] OR "atrial fibrillation"[Title/Abstract]',
-    "Infectious Disease": '"antimicrobial resistance"[Title/Abstract] OR "sepsis"[Title/Abstract]',
-    "Nephrology": '"chronic kidney disease"[Title/Abstract] OR "SGLT2"[Title/Abstract]',
-    "Oncology": '"immunotherapy"[Title/Abstract] AND "clinical trial"[Publication Type]',
+    # 심장학
+    "Cardiology": '("heart failure"[Title/Abstract] OR "atrial fibrillation"[Title/Abstract])',
+    # 감염내과
+    "Infectious Disease": '("antimicrobial resistance"[Title/Abstract] OR "sepsis"[Title/Abstract])',
+    # 신장내과
+    "Nephrology": '("chronic kidney disease"[Title/Abstract] OR "SGLT2"[Title/Abstract])',
+    # 혈액종양내과
+    "Hematology-Oncology": '("immunotherapy"[Title/Abstract] OR "leukemia"[Title/Abstract] '
+                           'OR "lymphoma"[Title/Abstract] OR "multiple myeloma"[Title/Abstract])',
+    # 병리학
+    "Pathology": '("digital pathology"[Title/Abstract] OR "molecular pathology"[Title/Abstract] '
+                 'OR "histopathology"[Title/Abstract])',
+    # 진단검사의학
+    "Laboratory Medicine": '("laboratory medicine"[Title/Abstract] OR "clinical chemistry"[Title/Abstract] '
+                           'OR "diagnostic accuracy"[Title/Abstract])',
+    # 소아청소년과
+    "Pediatrics": '("pediatric"[Title/Abstract] OR "children"[Title/Abstract]) '
+                  'AND "randomized controlled trial"[Publication Type]',
+    # 외과
+    "Surgery": '("surgical"[Title/Abstract] OR "postoperative"[Title/Abstract]) '
+               'AND ("outcome"[Title/Abstract] OR "complication"[Title/Abstract])',
 }
 
 UA = "MedKOS-paper-scraper/1.0 (https://github.com/ehdbddl06001-ui/my-github-test)"
