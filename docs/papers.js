@@ -2,6 +2,240 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0022",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Biomechanical Assessment of Functional Tasks Beyond Level Walking Following Total Hip Arthroplasty: A Scoping Review",
+  "authors": [
+   "M'barki Haithem",
+   "Lavoie-Hudon Ariane",
+   "Gagnon Martine",
+   "Turcot Katia",
+   "Belzile Etienne L"
+  ],
+  "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
+  "doi": "10.1002/jor.70245",
+  "pmid": "42400315",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42400315/",
+  "pubdate": "2026-07",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "The aim of this scoping review was to summarize and to synthesize the existing literature on the most performed functional tasks and their associated biomechanical outcomes following total hip arthroplasty (THA). Five databases, including Medline, Embase, CINAHL, Web of Science, and Ergonomics Abstracts were searched based on 3 main concepts: Total hip arthroplasty, functional tasks and biomechanical outcomes. Studies were screened based on titles and abstracts, followed by a full text reading conducted by two authors following inclusion and exclusion criteria. Eighty three studies with a total of 2047 THA and 170 hip resurfacing arthroplasty (HRA) patients were included. Postural balance was the most frequently evaluated functional task, followed by sit-to-stand and stair negotiation. Most participants were older than 60 years, and the surgical approach was infrequently reported. Patient-reported outcome measures were rarely reported alongside motion analysis, with the Harris hip score and the Oxford Hip Score being the most commonly used. Factors such as age, population characteristics, surgical approaches and follow-up durations may influence the biomechanical outcomes of hip replacement. Therefore, caution is warranted when generalizing these findings to all THA population. Further research on young THA and HRA patients in more demanding task such as squat and work-related tasks are required to better understand functional recovery and implant performance under higher mechanical loads.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0021",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "The Effects of Neuromuscular Electrical Stimulation and Leap Motion-Based Exercises on Hand Function Parameters in Children With Cerebral Palsy: Study Protocol for a Randomized Controlled Trial",
+  "authors": [
+   "Özlü Erdoğan Hande",
+   "Aras Bayram Gülay",
+   "Targıt Akbaşak Sema",
+   "Tarakcı Devrim"
+  ],
+  "journal": "JMIR research protocols",
+  "doi": "10.2196/94705",
+  "pmid": "42398049",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42398049/",
+  "pubdate": "2026-07-03",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Cerebral palsy (CP) is a group of permanent but nonprogressive disorders that affect movement and posture, often accompanied by upper extremity impairments such as abnormal muscle tone, spasticity, weakness, and impaired motor control. Neuromuscular electrical stimulation (NMES) and Leap Motion-based interventions that promote neuroplasticity through different mechanisms. However, studies directly comparing these 2 approaches in children with spastic CP are limited.\n\n**OBJECTIVE:** This study primarily aims to investigate the effects of NMES and Leap Motion-based exercise interventions on hand function in children with spastic CP and to compare the effectiveness of these 2 modalities. The secondary objective is to evaluate and compare the effects of these interventions on wrist extensor muscle activation, wrist joint range of motion, selective motor control, and hand use in daily activities.\n\n**METHODS:** This study is a 2-arm, parallel-group randomized controlled trial with a 1:1 allocation ratio and will include 30 children aged 6-15 years with spastic CP and distal upper extremity involvement. All participants meeting the inclusion criteria will undergo baseline assessments at T0, where wrist range of motion will be measured using an electronic goniometer; selective motor control will be evaluated using the Selective Control of the Upper Extremity Scale (SCUES); hand function will be assessed using the Jebsen-Taylor Hand Function Test; daily hand use will be evaluated using the ABILHAND-Kids questionnaire; and wrist extensor and flexor muscle activation will be assessed using surface electromyography (sEMG). All participants will then undergo a 4-week conventional exercise program (3 sessions per week, 40 minutes per session). At the end of the 4 weeks, all baseline measurements will be repeated (T1). Subsequently, participants will be randomly assigned into 2 groups: the Leap Motion group (n=15) and the NMES group (n=15). Both groups will participate in an 8-week exercise program consisting of 3 sessions per week, 60 minutes per session (including 20 minutes of either Leap Motion-based exercise or NMES application, followed by 40 minutes of conventional exercise). At the end of this 8-week program, all assessments will be repeated (T2).\n\n**RESULTS:** Data collection started in January 2026. The study is expected to be completed by September 2026.\n\n**CONCLUSIONS:** To our knowledge, the study will be the first randomized controlled study to evaluate and compare the effects of NMES and Leap Motion-based training on hand functions in children with spastic CP. The findings are expected to contribute to evidence-based clinical practice by guiding the selection of effective upper extremity rehabilitation strategies for pediatric populations. Findings may inform future rehabilitation protocols by highlighting the benefits of integrating advanced technology-based interventions alongside conventional therapy approaches.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0020",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Predictive ability of the Hammersmith Neonatal Neurological Examination for identifying severe neurodevelopmental impairment in infants born very preterm",
+  "authors": [
+   "Liu Jiarui",
+   "Baral Vijayendra Ranjan",
+   "Ereno Imelda Lustestica",
+   "Zainal Kelly Ann",
+   "Ong Jaslyn",
+   "Chua Jing Shi",
+   "Yeo Joo Guan",
+   "Yeo Cheo Lian"
+  ],
+  "journal": "Developmental medicine and child neurology",
+  "doi": "10.1111/dmcn.70391",
+  "pmid": "42400163",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42400163/",
+  "pubdate": "2026-07-03",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**AIM:** To evaluate the predictive ability of the Hammersmith Neonatal Neurological Examination (HNNE) at term-corrected age (TCA) for severe neurodevelopmental impairments at 2 years corrected age in infants born very preterm.\n\n**METHOD:** This retrospective study evaluated 88 infants, born at less than 29 weeks' gestation or weighing less than 1250 g using the HNNE at TCA (37 + 0 to 41 + 6 weeks). Neurodevelopmental outcomes at 2 years corrected age were determined using the Bayley Scales of Infant and Toddler Development. The diagnostic accuracy of the HNNE was assessed according to its ability to predict severe motor (< 74.5), cognitive, and language (< 71.2) impairments.\n\n**RESULTS:** The HNNE demonstrated moderate diagnostic performance for severe motor impairment (sensitivity = 75.0%, specificity = 64.5%, area under the curve [AUC] = 0.80), with lower scores associated with poorer outcomes (median = 20.3; p = 0.04). Performance was weaker for cognitive (sensitivity = 66.7%, specificity = 61.9%, AUC = 0.73) and language (sensitivity = 44.4%, specificity = 63.0%, AUC = 0.62) outcomes. High negative predictive values (NPV) across all domains (NPV = 98.0%, 98.1%, 90.2%) indicated low risk of impairment with optimal scores.\n\n**INTERPRETATION:** The HNNE is a reliable early screening tool for severe motor and cognitive impairment at 2 years corrected age in infants born very preterm. Future studies should examine individual HNNE subscales and their integration with complementary tools to improve comprehensive neurodevelopmental risk stratification.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0019",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Endoscopic Transcaruncular Approach for Early Anterior Ethmoidal Artery Cauterization in Large Olfactory Groove Meningioma Surgery: Intraoperative Video",
+  "authors": [
+   "Choi Jae Min",
+   "Baek Sang Oon",
+   "Chung Dong-Sup",
+   "Yoon Wan-Soo"
+  ],
+  "journal": "The Journal of craniofacial surgery",
+  "doi": "10.1097/SCS.0000000000013093",
+  "pmid": "42400282",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42400282/",
+  "pubdate": "2026-07-06",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Large olfactory groove meningiomas (OGMs) derive their primary blood supply from the anterior and posterior ethmoidal arteries (AEA/PEA), which are inaccessible early during conventional subfrontal craniotomy, resulting in massive intraoperative hemorrhage. A 61-year-old man presented with altered consciousness and incoherent speech, which revealed a giant anterior skull-base meningioma with bilateral optic nerve encasement and ethmoid sinus invasion, with digital subtraction angiography confirming bilateral AEA/PEA as the dominant feeder. We used a staged hybrid strategy in which bilateral AEA cauterization through an endoscopic transcaruncular approach was performed before bifrontal craniotomy. This staged devascularization markedly reduced intraoperative hemorrhage and facilitated near-total resection. Histopathology confirmed an atypical meningioma, and 2-year follow-up MRI revealed no recurrence. Single-staged hybrid surgery incorporating endoscopic transcaruncular AEA cauterization is a safe and minimally invasive adjunct for large OGM surgery.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0018",
+  "topic": "Hematology-Oncology",
+  "subtopic": "",
+  "title": "The dual role of lectins in cancer-immunotherapy tools and therapeutic targets",
+  "authors": [
+   "Dziewicka Milena",
+   "Graczyk-Jarzynka Agnieszka"
+  ],
+  "journal": "FEBS letters",
+  "doi": "10.1002/1873-3468.70406",
+  "pmid": "42400321",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42400321/",
+  "pubdate": "2026-07-04",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Altered glycosylation is a hallmark of cancer that shapes immune recognition within the tumor microenvironment. Lectins-glycan-binding proteins-play a dual role in this process: they interpret tumor-associated glycan patterns and can also be exploited as therapeutic tools. In this review, we discuss emerging strategies that harness lectins in cancer immunotherapy. Engineered lectin-based constructs, including antibody-lectin chimeras, lectin-drug conjugates, and glycan-targeting CAR-T cells, enable recognition of tumor-specific glycosylation signatures. At the same time, endogenous lectin pathways such as the galectin-polyLacNAc and sialic acid-Siglec axes function as glyco-immune checkpoints that suppress anti-tumor responses and represent promising therapeutic targets. Understanding how lectins regulate tumor-immune interactions may guide the development of next-generation immunotherapies integrating antigen recognition with glycan sensing.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0017",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "A putative SGLT-relevant mechanistic perspective on quercetin-3-O-glucoside and rutin in diabetic kidney disease",
+  "authors": [
+   "Harbuwono Dante Saksono",
+   "Wardhani Yulia",
+   "Hadinata Edwin",
+   "Rohmah Siti Nur",
+   "Hendrawan Adha Fauzi",
+   "Ambari Ade Meidian",
+   "Puspitasari Metalia",
+   "Kuswadi Danny Pratama",
+   "et al."
+  ],
+  "journal": "Diabetology & metabolic syndrome",
+  "doi": "10.1186/s13098-026-02233-w",
+  "pmid": "42399973",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42399973/",
+  "pubdate": "2026-07-03",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Type 2 diabetes mellitus (T2DM) is escalating worldwide and remains difficult to control durably, in part because progressive β-cell dysfunction undermines many therapies and because long-term management must balance efficacy, safety, and affordability. Recent decades have shown that targeting sodium-glucose cotransporters (SGLTs) especially renal SGLT2 can reduce glucose levels independently of insulin and, crucially, deliver cardio-renal benefits that extend beyond glycaemic control. Yet, despite the clinical success of synthetic \"gliflozins\", gaps remain, adverse events, incomplete inhibition of renal glucose reabsorption, and limited access in some health systems.\n\n**METHODS:** This review focuses on two quercetin glycosides quercetin-3-O-glucoside (isoquercitrin) and quercetin-3-O-rutinoside (rutin) as potential SGLT-focused modulators. This study employed a narrative mechanistic review approach integrating published experimental evidence, physicochemical structure-activity relationship (SAR) analysis, and exploratory molecular docking to examine potential SGLT-related interactions and complementary glucose-regulatory pathways of Q3G and rutin.\n\n**RESULTS:** We synthesise mechanistic evidence suggesting that Q3G and rutin may modulate SGLT-related pathways through intestinal SGLT1 interaction, regulation of renal SGLT2 expression, and complementary glucose-regulatory mechanisms. However, direct inhibition of human SGLT2 transport activity has not yet been experimentally demonstrated, and current evidence predominantly may indicate indirect pathway modulation rather than gliflozin-like transporter inhibition. Contradictory findings across assay systems are discussed in relation to structure-activity relationships shaped by glycosylation. We further examine pharmacokinetics, tissue exposure plausibility, and translational feasibility, and propose a stepwise development roadmap emphasising transporter-specific assays, quantitative target engagement, and clinically meaningful biomarkers.\n\n**CONCLUSION:** Q3G and rutin may exhibit putative SGLT-relevant activity within a broader polypharmacological framework; however, direct transporter-specific inhibition and clinically relevant renal exposure remain to be established through future functional and translational studies.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0016",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Association between GLIM-defined malnutrition and in-hospital costs in adults with sepsis: A sub analysis of a prospective cohort study",
+  "authors": [
+   "Hashimoto Yuki",
+   "Yoshida Minoru",
+   "Miyagi Tomoka",
+   "Kariya Akane",
+   "Tanoue Hitomi",
+   "Kanda Naoki",
+   "Hoshi Yusuke",
+   "Fujita Takahiro",
+   "et al."
+  ],
+  "journal": "JPEN. Journal of parenteral and enteral nutrition",
+  "doi": "10.1002/jpen.70120",
+  "pmid": "42400337",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42400337/",
+  "pubdate": "2026-07-04",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** International statements suggest using the Global Leadership Initiative on Malnutrition (GLIM) criteria in intensive care units (ICUs); however, the economic impact of GLIM-defined malnutrition in sepsis remains unclear. This study investigated the association between GLIM-defined malnutrition and in-hospital costs in sepsis.\n\n**METHODS:** We conducted a sub-analysis of the prospective cohort study, Investing Long-term Outcomes of Sepsis or Septic shock, among medically managed critically ill patients with sepsis in 15 Japanese ICUs. Associations between GLIM-defined malnutrition and cost categories (low, moderate, and high) were assessed using multinomial logistic regression (reference: low-cost group), adjusted for age, sex, Charlson Comorbidity Index, and Sequential Organ Failure Assessment score. Individual GLIM components were also examined. Total in-hospital costs and secondary outcomes were compared between malnutrition and non-malnutrition groups using inverse probability of treatment weighting.\n\n**RESULTS:** Among 259 patients, 111 had GLIM-defined malnutrition. GLIM-defined malnutrition was associated with both the moderate-cost (adjusted odds ratio [AOR]: 2.03, 95% confidence interval [CI]: 1.05-3.89) and high-cost classifications (AOR: 2.27, 95% CI: 1.20-4.29). Among GLIM components, reduced muscle mass (AOR: 1.95, 95% CI: 1.04-3.68) and reduced food intake (AOR: 2.61, 95% CI: 1.39-4.92) were associated with the high-cost classification. After weighting, the malnutrition group had significantly higher median in-hospital costs (24,959 vs. 18,651 USD), longer hospital stays, and longer ICU stays than the non-malnutrition group.\n\n**CONCLUSIONS:** GLIM-defined malnutrition-particularly reduced muscle mass and reduced food intake-was associated with higher in-hospital costs in sepsis and may be a potential indicator of high-cost hospitalization.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0015",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Association of systemic lupus erythematosus with 90-day readmission following heart failure hospitalization: A national readmission database (NRD) analysis, 2016-2017",
+  "authors": [
+   "Malik Farheen",
+   "Saad Muhammad",
+   "Javaid Minahil",
+   "Gul Fatima",
+   "Zafar Meerub Fatima",
+   "Khan Rai Muhammad Umar",
+   "Ali Syed Nosherwan",
+   "Tahir Rija",
+   "et al."
+  ],
+  "journal": "Lupus",
+  "doi": "10.1177/09612033261465925",
+  "pmid": "42400355",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42400355/",
+  "pubdate": "2026-07-04",
+  "date": "2026-07-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "BackgroundSystemic lupus erythematosus is a chronic autoimmune disease associated with heightened cardiovascular risk. Data on the impact of systemic lupus erythematosus on outcomes following heart failure hospitalization remain limited. This study aimed to evaluate whether systemic lupus erythematosus is independently associated with 90-days readmission and other clinical outcomes among patients hospitalized with heart failure.MethodsWe conducted a retrospective cohort study using the 2016-2017 Nationwide Readmissions Database to evaluate the association of systemic lupus erythematosus with 90-days readmission after heart failure hospitalization. Adults ≥18 years with an index admission for heart failure were included. The primary outcome was 90-days all-cause readmission. Secondary outcomes included in-hospital mortality, median length of stay, and hospitalization costs. Multivariable Cox proportional hazards were used to identify independent predictors of outcomes.ResultsAmong 1,625,731 patients hospitalized with heart failure, 9096 had comorbid systemic lupus erythematosus. Compared with non-systemic lupus erythematosus patients, those with systemic lupus erythematosus were younger (mean age 61 vs 72 years), predominantly female, and more likely to have socioeconomic disadvantage and a higher comorbidity burden. The 90-days readmission rate was significantly higher in the systemic lupus erythematosus cohort (41%) versus the non-systemic lupus erythematosus cohort (34%) (HR: 1.07; 95% CI: 1.02-1.12; p = 0.010). In-hospital mortality did not differ significantly between groups; however, mortality during readmissions was nearly doubled compared with index admissions (5.4% vs 2.9%). SLE patients had a median length of stay of 4 days (vs 4 days in non-SLE) and incurred median hospitalization costs of USD 32,872 (13% higher than non-SLE patients). Independent predictors of readmission included Medicaid insurance, weekend admission, renal failure, myocardial infarction, and discharge to a non-home setting, whereas female sex, treatment at metropolitan teaching hospitals, and comorbid hypertension or diabetes were associated with a lower risk of readmission.ConclusionSystemic lupus erythematosus is independently associated with an increased risk of 90-days readmission following heart failure hospitalization, contributing to greater healthcare utilization and costs. These findings highlight the need for tailored strategies for transitional care, multidisciplinary follow-up, and socioeconomic support.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0014",
   "topic": "Hematology-Oncology",
   "subtopic": "",
