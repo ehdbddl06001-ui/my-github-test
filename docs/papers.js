@@ -2,6 +2,207 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0029",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Postoperative complications after injection laryngoplasty for minor laryngeal clefts",
+  "authors": [
+   "Tamani Zakaria",
+   "Mercier Erika",
+   "Bergeron Mathieu"
+  ],
+  "journal": "International journal of pediatric otorhinolaryngology",
+  "doi": "10.1016/j.ijporl.2026.112922",
+  "pmid": "42402231",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42402231/",
+  "pubdate": "2026-07-02",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**OBJECTIVE:** To describe the incidence, clinical presentation, and management of postoperative complications following injection laryngoplasty for minor laryngeal clefts and to assess their impact on postoperative dysphagia evolution.\n\n**METHODS:** A unicentric retrospective case-control study of pediatric patients who underwent injection laryngoplasty for minor laryngeal clefts (hyaluronic acid-based injectable or sodium carboxymethylcellulose) between January 2018 and October 2025 in a tertiary pediatric center was conducted. Demographics, comorbidities, intraoperative variables, postoperative dysphagia outcomes, and Penetration-Aspiration Scale scores were analyzed. Ordinal logistic regression was used to evaluate the overall dysphagia trajectory.\n\n**RESULTS:** Among 48 patients, 10 (20.8%) developed postoperative complications. Case and control groups were comparable in age, sex, weight percentiles, gestational age and most comorbidities. Operative duration, injected volume, and intraoperative antibiotic use were similar (all p > 0.2). Swallowing outcomes (resolution, improvement, persistence, or worsening) did not differ between groups. Ordinal logistic regression showed no association between complications and the dysphagia trajectory (Odds ratio, OR 5.1, p = 0.2). PAS severity categories were also similar (p = 0.8). Patients with hyaluronic acid appeared to have more complications (26.5%) compared to methylcellulose (7.1%), despite not reaching statistical significance.\n\n**CONCLUSION:** Despite a higher-than-expected complication rate, postoperative inflammatory or infectious complications were not linked to worse swallowing function or higher PAS scores. These findings inform risk-benefit discussions and support informed shared decision-making with families regarding minor cleft treatment options.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0028",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Determinants of Infant and Young Child Feeding Practices of Children With Severe Acute Malnutrition in Agrarian and Pastoralist Settings of Ethiopia",
+  "authors": [
+   "Areb Mohammed",
+   "Huybregts Lieven",
+   "Tamiru Dessalegn",
+   "Touré Mariama",
+   "Biru Bayise",
+   "Fall Talla",
+   "Haddis Alemayehu",
+   "Belachew Tefera"
+  ],
+  "journal": "Maternal & child nutrition",
+  "doi": "10.1111/mcn.70217",
+  "pmid": "42402167",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42402167/",
+  "pubdate": "2026-07",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Previous research has established determinants of young child feeding (IYCF) practices in the general child population, but determinants of these practices in children with severe acute malnutrition (SAM) are unknown. This study assessed the determinants of IYCF practices among children aged 6-23 months with SAM and under SAM treatment in a pastoralist and a predominantly agrarian setting in Ethiopia. As part of the baseline survey for the R-SWITCH cluster randomized control trial, we screened ~28,000 under-fives and included 486 children aged 6-23 months with SAM and under SAM treatment. Multivariable regression analysis was used to identify determinants on household, caregiver and child levels. Minimum meal frequency (MMF) was similar between children from the agrarian (53.9%) and pastoralist (51.9%) setting. The prevalence of children with minimum dietary diversity (MDD) was low overall but higher among pastoralist children (31.5%) than children from the agrarian setting (19.0%; p = 0.012). The consumption of egg/flesh foods was lower among pastoralist children (5.6%) than agrarian children (16.9%, p = 0.085). Caregiver literacy was positively associated with a higher likelihood of MMF (IRR = 1.21; 95% CI:1.02-1.43; p = 0.030), while caregiver depression was associated with a lower likelihood of MMF (RR = 0.97; 95% CI:0.95-0.99; p = 0.003). Improved water source (RR = 1.59; 95% CI:1.06-2.38; p = 0.037), caregiver literacy (RR = 2.04; 95% CI:1.25-3.34; p = 0.002), caregiver MDD (RR = 2.21; 95% CI:1.60-3.05; p ≤ 0.001), older children(RR = 1.05; 95% CI: 1.02-1.08;p ≤ 0.001), and pastoralist setting (RR = 1.62; 95% CI:1.07-2.44; p = 0.014) were associated with a significantly higher likelihood of meeting MDD. Conversely, caregiver depression (RR = 0.94; 95% CI:0.90-0.97; p < 0.001), caregiver mobility restriction (IRR = 0.94; 95% CI:0.89-1.00; p = 0.025), and food insecurity (RR = 0.64; 95% CI:0.41-1.01; p = 0.05) were associated with reduced MDD likelihood. Caregiver community involvement (IRR = 1.12; 95% CI:1.00-1.26; p = 0.038), caregiver MDD (RR = 1.67; 95% CI:1.10-2.53; p = 0.043), and older children (RR = 1.08; 95% CI:1.05-1.12; p < 0.001) were associated with increased egg/flesh-food consumption among children, while living in a pastoralist setting was associated with reduced it (RR = 0.36; 95% CI:0.13-0.97; p = 0.038). Integrated and Targeted interventions recommended: caregiver literacy/depression support to improve IYCF; livelihood-specific foods (eggs/flesh, fruits/vegetables); WaSH enhancements; community engagement; and IYCF counseling within CMAM programs.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0027",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "[The application of artificial intelligence in healthcare: benefits, challenges, and issues of responsibility]",
+  "authors": [
+   "Pásztor Ibolya",
+   "Papp Annamária",
+   "Bíró Klára",
+   "Bányai-Márton Gábor",
+   "Papp Zoltán"
+  ],
+  "journal": "Orvosi hetilap",
+  "doi": "10.1556/650.2026.33592",
+  "pmid": "42402141",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42402141/",
+  "pubdate": "2026-07-05",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**INTRODUCTION AND OBJECTIVE:** Artificial intelligence is playing an increasingly important role in healthcare, particularly in diagnostics, clinical decision support, personalized medicine, robotics, administration, and medical education. At the same time, the clinical use of artificial intelligence raises not only technological opportunities but also ethical, data protection, and legal challenges. The aim of our study was to provide an integrated overview of the main benefits and risks of artificial intelligence applications in healthcare, with particular emphasis on liability-related issues.\n\n**METHOD:** We conducted an interdisciplinary, narrative critical review of the literature. Scientific and regulatory sources were analyzed using content analysis, thematic analysis, and critical discourse analysis, with the integration of clinical, ethical, legal, and data protection perspectives.\n\n**RESULTS:** Based on the reviewed literature, artificial intelligence may improve diagnostic accuracy, support personalized decision-making, reduce administrative burden, contribute to better access to care, and create new opportunities in robotics and medical education. However, algorithmic bias, the lack of transparency resulting from the \"black box\" nature of many artificial intelligence systems, data protection and cybersecurity risks, as well as uncertainties related to social acceptance, represent major challenges. Our most important finding is that these issues converge in the question of clinical liability, while the traditional physician-centered model of responsibility appears increasingly insufficient.\n\n**CONCLUSION:** The use of artificial intelligence in healthcare can only be sustainable and legitimate within an integrated, liability-centered framework. Reconsidering the distribution of responsibilities among developers, healthcare institutions, and clinicians, as well as strengthening institutional guarantees of transparency, human oversight, patient autonomy, and data protection is essential for the safe implementation of artificial intelligence in healthcare. Orv Hetil. 2026; 167(27): 1079-1087.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0026",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Surgical Septal Myectomy and Atrial Myxoma Resection: Two Diseases, One Heart, and a Case Report",
+  "authors": [
+   "Garcia Leonardo Rufino",
+   "Felicio Marcello Laneza",
+   "Cury Julia Bortoleto",
+   "Okoshi Marina Politi",
+   "Okoshi Katashi"
+  ],
+  "journal": "The American journal of case reports",
+  "doi": "10.12659/AJCR.953036",
+  "pmid": "42401996",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42401996/",
+  "pubdate": "2026-07-05",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "BACKGROUND The coexistence of cardiac myxoma and hypertrophic cardiomyopathy is exceedingly rare and poses diagnostic and therapeutic challenges. While atrial myxomas may cause acute hemodynamic compromise, concomitant left ventricular outflow tract obstruction (LVOTO) due to hypertrophic cardiomyopathy can remain clinically underestimated, raising uncertainty regarding the optimal timing of septal reduction therapy. CASE REPORT A 38-year-old man was admitted with acute dyspnea and hypoxemia. Imaging revealed pulmonary congestion and a large left atrial mass causing functional mitral stenosis. Transthoracic echocardiography demonstrated asymmetric septal hypertrophy (maximum thickness 25 mm) with dynamic LVOTO and a mobile left atrial mass consistent with myxoma. The patient underwent surgical resection of the tumor with concomitant septal myectomy. Histopathology confirmed atrial myxoma and myocardial hyperplasia. Postoperatively, complete atrioventricular block required permanent dual-chamber pacemaker implantation. At short-term follow-up, the patient was asymptomatic with mild residual LVOTO. CONCLUSIONS This case underscores the importance of comprehensive structural and functional assessment in patients with intracardiac tumors. In young patients with favorable prognostic features and significant left atrial dilatation, early septal myectomy performed concomitantly with tumor resection may be justified, even when resting LVOT gradients are below conventional thresholds. This strategy aligns with the latest American and European guidelines on cardiomyopathies and may prevent delayed intervention and disease progression. The case also highlights atrioventricular block as a relevant complication of surgical myectomy, reinforcing the need for careful perioperative planning. Overall, this report provides an instructive example of individualized surgical decision-making in complex cardiomyopathy presentations.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0025",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Impact of Early Dose Adjustment of Piperacillin/Tazobactam on Mortality in Critically Ill Patients With Acute Kidney Injury: A Retrospective Multicenter Cohort Study",
+  "authors": [
+   "Saad Mohamed Omar",
+   "Abdul-Aziz Mohd Hafiz",
+   "Rachid Ousama",
+   "Mohamed Ibrahim Mohamed Izham"
+  ],
+  "journal": "The Annals of pharmacotherapy",
+  "doi": "10.1177/10600280261452547",
+  "pmid": "42402098",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42402098/",
+  "pubdate": "2026-07-05",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Acute kidney injury (AKI) is common in critically ill patients, but the optimal dosing of beta-lactam antibiotics in this setting remains controversial. It is not known whether the benefit of initiating beta-lactams at normal doses outweighs the risk of accumulation and toxicity.\n\n**OBJECTIVE:** We aimed to evaluate the association between early dose adjustment of piperacillin/tazobactam (PT) and 28-day intensive care unit (ICU) mortality in critically ill patients with AKI.\n\n**METHODS:** We conducted a retrospective multicenter cohort study using the eICU Collaborative Research Database v2.0 and included adult ICU patients with AKI who received PT and had a pretreatment serum creatinine level corresponding to an estimated glomerular filtration rate (eGFR) <40 mL/min/1.73 m2. The exposure was PT dose in the first 24 hours, which was categorized as normal (≥13.5 g/24 h) or adjusted (<13.5 g/24 h). The primary outcome was 28-day ICU mortality.\n\n**RESULTS:** Among 1639 eligible patients, 224 (13.7%) received normal-dose PT and 1415 (86.3%) received adjusted doses. The overall 28-day ICU mortality was 11%, with significantly lower mortality in the normal-dose group (6.7%) compared with the adjusted-dose group (11.7%) (unadjusted odds ratio [OR] 1.85, 95% confidence interval [CI] 1.07-3.20; P = .028). After multivariable adjustment, early dose adjustment was independently associated with higher 28-day ICU mortality (adjusted OR 2.11, 95% CI 1.13-3.96; P = .020). Results were consistent across multiple subgroup and sensitivity analyses, but statistical significance was attenuated when the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation was used for eGFR estimation.\n\n**CONCLUSION AND RELEVANCE:** Early dose adjustment of PT in critically ill patients with AKI is associated with increased 28-day ICU mortality. This finding suggests that renal dose adjustment of PT should be deferred beyond the first 24 hours of therapy in this population. Prospective studies are needed to confirm this finding, define the optimal timing of subsequent dose adjustments, and assess safety outcomes.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0024",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Longitudinal immune-inflammatory profiles and mortality in older adults with sepsis: a multicentre prospective cohort study",
+  "authors": [
+   "Wang Xianwen",
+   "Fu Miaomiao",
+   "Li Chunhui",
+   "Jin Jialin",
+   "Cui Na",
+   "Liao Xuelian",
+   "Wang Zhanwen",
+   "Zuo Zhihong",
+   "et al."
+  ],
+  "journal": "Journal of intensive care",
+  "doi": "10.1186/s40560-026-00902-6",
+  "pmid": "42401956",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42401956/",
+  "pubdate": "2026-07-04",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Older adults are at high risk of sepsis, but the immune-inflammatory features distinguishing sepsis from nonsevere infection and their prognostic relevance remain incompletely defined. We aimed to characterize immune-inflammatory profiles across the older adult infection spectrum and evaluate their longitudinal association with in-hospital mortality.\n\n**METHODS:** In this multicentre prospective observational cohort, 1,851 participants aged ≥ 60 years were enrolled, including healthy controls, patients with nonsevere infection, and patients with sepsis. Immune-cell subsets, cytokines, complement components, and routine laboratory indices were assessed. Adjusted cross-sectional comparisons were performed using multivariable linear regression. Among patients with sepsis, model-estimated longitudinal profiles from intensive care unit (ICU) day 1 to day 7 were analysed using linear mixed-effects models among available scheduled measurements, and day-1 biomarkers associated with in-hospital mortality were evaluated using Cox regression.\n\n**RESULTS:** The cohort included 524 healthy controls, 511 patients with nonsevere infection, and 816 patients with sepsis. Across the infection spectrum, sepsis was characterized by progressively lower circulating lymphocyte, T-cell, cluster of differentiation 8 (CD8+) T-cell, and natural killer (NK)-cell counts, together with higher interleukin (IL)-6, IL-8, and IL-10 levels. These differences remained after adjustment for age, sex, and major comorbidities. Among patients with available follow-up measurements, non-survivors had consistently higher Sequential Organ Failure Assessment (SOFA) scores, IL-6, and IL-10 and lower lymphocyte, T-cell, CD8⁺ T-cell, NK-cell, and complement component 3 (C3) levels. No time-by-outcome interaction remained significant after false-discovery-rate correction. In multivariable Cox models, higher day-1 SOFA score and IL-10 were associated with increased in-hospital mortality, whereas higher NK-cell count was associated with lower mortality.\n\n**CONCLUSIONS:** In older adults, sepsis was associated with an adjusted circulating immune-inflammatory pattern characterized by lower cellular immune markers and higher cytokine levels. This separation was evident on ICU day 1 and remained observable among patients with available follow-up measurements. Given the observational design, these associations should not be interpreted as causal.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0023",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Left Atrial Appendage Mechanical Dysfunction in De Novo Organized Left Atrial Tachyarrhythmia: A Multicenter Pre-Ablation Study",
+  "authors": [
+   "Wójcik Maciej",
+   "Błaszkiewicz Paweł",
+   "Bińkowski Bartłomiej",
+   "Kiliszek Marek",
+   "Denysiuk Piotr",
+   "Kucejko Tomasz"
+  ],
+  "journal": "Echocardiography (Mount Kisco, N.Y.)",
+  "doi": "10.1111/echo.70545",
+  "pmid": "42402187",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42402187/",
+  "pubdate": "2026-07",
+  "date": "2026-07-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**PURPOSE:** Whether de novo organized left atrial tachyarrhythmia (LAT) shows preserved left atrial appendage (LAA) mechanics has not been adequately characterized. We compared LAA peak emptying velocity across atrial fibrillation (AF) phenotypes and de novo LAT.\n\n**METHODS:** Multicenter retrospective cohort of 634 consecutive first-ablation candidates undergoing pre-ablation transesophageal echocardiography (TEE) at five centers: paroxysmal AF (PAF, n = 146), persistent AF (PeAF, n = 310), long-standing persistent AF (LsPeAF, n = 86), and LAT (n = 92). Markedly reduced LAA function was peak emptying velocity <25 cm/s. Multivariable regression adjusted for rhythm during TEE, CHA2DS2-VASc, body mass index (BMI), left ventricular ejection fraction (LVEF), and left atrial (LA) diameter.\n\n**RESULTS:** Mean LAA velocity was 55.7 ± 19.4 (PAF), 44.3 ± 18.5 (PeAF), 31.0 ± 12.5 (LsPeAF), and 36.6 ± 13.5 cm/s (LAT); p < 0.001. LAT lay closer to LsPeAF than to PAF and did not differ from LsPeAF (Tukey p = 0.140). Prevalence of velocity <25 cm/s: 2.7%, 11.9%, 32.6% and 18.5% (p < 0.001). After adjustment, larger LA diameter (β = -0.53/mm, p < 0.001) and higher CHA2DS2-VASc (β = -1.93/point, p < 0.001) were independently associated with lower velocity. Compared with LAT, PAF had lower odds of velocity <25 cm/s (OR 0.19, 95% CI 0.06-0.62).\n\n**CONCLUSION:** De novo organized LAT exhibits LAA mechanical dysfunction comparable to long-standing persistent AF rather than to PAF. Organized rhythm does not imply preserved appendage function. LAA peak emptying velocity may serve as a functional remodeling marker for pre-ablation phenotyping.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0022",
   "topic": "Surgery",
   "subtopic": "",
