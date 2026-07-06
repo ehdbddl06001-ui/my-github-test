@@ -1,50 +1,868 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-03",
+ "generated": "2026-07-06",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 72,
+  "total": 121,
   "byType": {
-   "paper": 12,
-   "kmle": 33,
+   "kmle": 65,
+   "paper": 29,
    "basic": 3,
    "usmle": 24
   },
   "byTopic": {
-   "Cardiology": 7,
-   "Infectious Disease": 6,
-   "Nephrology": 6,
-   "Neurology": 4,
-   "Obstetrics & Gynecology": 4,
-   "Pediatrics": 4,
+   "Cardiology": 12,
+   "Infectious Disease": 10,
+   "Nephrology": 10,
+   "Pediatrics": 8,
+   "Neurology": 6,
+   "Obstetrics & Gynecology": 6,
+   "Psychiatry": 6,
+   "Endocrinology": 5,
+   "Hematology": 5,
+   "Dermatology": 4,
+   "Gastroenterology": 4,
+   "General Surgery": 4,
+   "Ophthalmology": 4,
+   "Orthopedics": 4,
+   "Pathology": 4,
    "Physiology": 4,
-   "Psychiatry": 4,
-   "Endocrinology": 3,
-   "Hematology": 3,
+   "Pulmonology": 4,
+   "Rheumatology": 4,
    "Oncology": 3,
+   "Surgery": 3,
    "Biochemistry": 2,
-   "Dermatology": 2,
-   "Gastroenterology": 2,
-   "General Surgery": 2,
+   "Hematology-Oncology": 2,
    "Immunology": 2,
+   "Laboratory Medicine": 2,
    "Microbiology": 2,
-   "Ophthalmology": 2,
-   "Orthopedics": 2,
-   "Pathology": 2,
-   "Pulmonology": 2,
-   "Rheumatology": 2,
-   "Pharmacology": 1,
-   "Surgery": 1
+   "Pharmacology": 1
   },
   "byConfidence": {
-   "medium": 12,
-   "high": 60
+   "high": 92,
+   "medium": 29
   },
-  "tagCount": 224
+  "tagCount": 315
  },
  "docs": [
+  {
+   "id": "kmle-2026-0065",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Giant Cell Arteritis",
+   "tags": [
+    "giant cell arteritis",
+    "jaw claudication",
+    "high-dose steroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0065.md",
+   "snippet": "70세 여성이 새로 발생한 편측 측두부 두통과 두피 압통, 턱 파행(jaw claudication), 일시적 시야흐림을 호소한다. 적혈구침강속도(ESR)가 현저히 상승했다. 다음 중 실명을 막기 위해 가장 먼저 해야 할 것은? A. 즉시 고용량 글루코코르티코이드를 시작하고 이후 측두동맥 생검 B. 생검 결과를 기다린 뒤 치료 시작 C. 편두통약 처방 D. 항응고제 투여 E. 경과관찰 고령에서 측두부 두통·두피 압통·턱 파행·시",
+   "text": "Rheumatology Giant Cell Arteritis giant cell arteritis jaw claudication high-dose steroid KMLE 2026 / Claude Routine 70세 여성이 새로 발생한 편측 측두부 두통과 두피 압통, 턱 파행(jaw claudication), 일시적 시야흐림을 호소한다. 적혈구침강속도(ESR)가 현저히 상승했다. 다음 중 실명을 막기 위해 가장 먼저 해야 할 것은? A. 즉시 고용량 글루코코르티코이드를 시작하고 이후 측두동맥 생검 B. 생검 결과를 기다린 뒤 치료 시작 C. 편두통약 처방 D. 항응고제 투여 E. 경과관찰 고령에서 측두부 두통·두피 압통·턱 파행·시각증상과 ESR 상승은 거대세포동맥염을 시사한다. 허혈성 시신경병증에 의한 실명 위험이 크므로 생검 전이라도 즉시 고용량 스테로이드를 시작하고, 이후 측두동맥 생검으로 확인한다."
+  },
+  {
+   "id": "kmle-2026-0064",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Rheumatoid Arthritis",
+   "tags": [
+    "rheumatoid arthritis",
+    "anti-CCP",
+    "morning stiffness"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0064.md",
+   "snippet": "45세 여성이 6주 이상 지속되는 대칭성 다발성 소관절(손목·MCP·PIP) 통증과 1시간 이상의 아침경직을 호소한다. 류마티스인자와 항CCP 항체가 양성이다. 다음 중 가장 가능성이 높은 진단은? A. 류마티스관절염 B. 골관절염 C. 통풍 D. 전신홍반루푸스 E. 반응성관절염 대칭성 소관절(MCP·PIP·손목) 침범, 1시간 이상의 아침경직, 항CCP·RF 양성은 류마티스관절염의 특징이다. DIP 침범과 이형성결절이 특징인",
+   "text": "Rheumatology Rheumatoid Arthritis rheumatoid arthritis anti-CCP morning stiffness KMLE 2026 / Claude Routine 45세 여성이 6주 이상 지속되는 대칭성 다발성 소관절(손목·MCP·PIP) 통증과 1시간 이상의 아침경직을 호소한다. 류마티스인자와 항CCP 항체가 양성이다. 다음 중 가장 가능성이 높은 진단은? A. 류마티스관절염 B. 골관절염 C. 통풍 D. 전신홍반루푸스 E. 반응성관절염 대칭성 소관절(MCP·PIP·손목) 침범, 1시간 이상의 아침경직, 항CCP·RF 양성은 류마티스관절염의 특징이다. DIP 침범과 이형성결절이 특징인 골관절염과 감별된다. 조기에 DMARD(메토트렉세이트)를 시작해 관절파괴를 막는다."
+  },
+  {
+   "id": "kmle-2026-0063",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Asthma",
+   "tags": [
+    "asthma",
+    "reversible obstruction",
+    "inhaled corticosteroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0063.md",
+   "snippet": "20세 여성이 밤에 악화되는 발작성 호흡곤란·천명·기침을 호소하며 알레르기 병력이 있다. 폐기능검사에서 기관지확장제 투여 후 FEV1이 15% 이상 가역적으로 호전된다. 다음 중 진단과 장기 조절의 핵심 약제로 옳은 것은? A. 천식 흡입 코르티코스테로이드 B. 만성폐쇄성폐질환 금연 C. 심부전 이뇨제 D. 폐렴 항생제 E. 성대기능장애 언어치료 야간에 악화되는 발작성 천명·기침, 알레르기 소인, 기관지확장제에 대한 가역적 기",
+   "text": "Pulmonology Asthma asthma reversible obstruction inhaled corticosteroid KMLE 2026 / Claude Routine 20세 여성이 밤에 악화되는 발작성 호흡곤란·천명·기침을 호소하며 알레르기 병력이 있다. 폐기능검사에서 기관지확장제 투여 후 FEV1이 15% 이상 가역적으로 호전된다. 다음 중 진단과 장기 조절의 핵심 약제로 옳은 것은? A. 천식 흡입 코르티코스테로이드 B. 만성폐쇄성폐질환 금연 C. 심부전 이뇨제 D. 폐렴 항생제 E. 성대기능장애 언어치료 야간에 악화되는 발작성 천명·기침, 알레르기 소인, 기관지확장제에 대한 가역적 기류폐쇄(FEV1 12% 이상이면서 200mL 이상 호전)는 천식을 시사한다. 장기 조절의 근간은 흡입 코르티코스테로이드이며, 급성 악화는 속효성 베타작용제·전신 스테로이드·산소로 치료한다."
+  },
+  {
+   "id": "kmle-2026-0062",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Pulmonary Embolism",
+   "tags": [
+    "pulmonary embolism",
+    "CT pulmonary angiography",
+    "anticoagulation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0062.md",
+   "snippet": "60세 여성이 무릎수술을 받은 뒤 갑작스러운 호흡곤란과 흉막성 흉통, 빈호흡·빈맥, 산소포화도 저하를 보인다. 심전도는 동성빈맥이고 한쪽 다리 부종이 있다. 혈역학이 안정적일 때 확진을 위한 검사로 가장 적절한 것은? A. CT 폐동맥조영술 B. 흉부 단순촬영만 C. D dimer만으로 확진 D. 관상동맥조영술 E. 폐기능검사 수술·부동이라는 위험인자에 갑작스러운 호흡곤란·흉막성 흉통·저산소증이 동반되면 폐색전증을 의심한다. ",
+   "text": "Pulmonology Pulmonary Embolism pulmonary embolism CT pulmonary angiography anticoagulation KMLE 2026 / Claude Routine 60세 여성이 무릎수술을 받은 뒤 갑작스러운 호흡곤란과 흉막성 흉통, 빈호흡·빈맥, 산소포화도 저하를 보인다. 심전도는 동성빈맥이고 한쪽 다리 부종이 있다. 혈역학이 안정적일 때 확진을 위한 검사로 가장 적절한 것은? A. CT 폐동맥조영술 B. 흉부 단순촬영만 C. D dimer만으로 확진 D. 관상동맥조영술 E. 폐기능검사 수술·부동이라는 위험인자에 갑작스러운 호흡곤란·흉막성 흉통·저산소증이 동반되면 폐색전증을 의심한다. 혈역학이 안정적이면 CT 폐동맥조영술이 확진의 표준이다. D dimer는 저위험군 배제에 쓰이며, 신부전 등에서는 환기관류스캔을 고려한다. 항응고가 치료의 근간이다."
+  },
+  {
+   "id": "kmle-2026-0061",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Bipolar I Mania",
+   "tags": [
+    "bipolar disorder",
+    "manic episode",
+    "mood stabilizer"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0061.md",
+   "snippet": "24세 남성이 1주간 수면욕구 감소, 과대사고, 다변, 무분별한 소비와 성적 문란, 과민한 기분을 보이며 일상 기능에 장애가 생겼다. 정신병적 증상이나 물질사용은 없다. 다음 중 가장 가능성이 높은 진단은? A. 제1형 양극성장애 조증삽화 B. 주요우울장애 C. 조현병 D. 순환성장애 E. 범불안장애 1주 이상 지속되는 고양되거나 과민한 기분에 수면감소·과대성·다변·목표지향활동 증가·위험한 쾌락추구가 동반되어 기능장애가 있으면",
+   "text": "Psychiatry Bipolar I Mania bipolar disorder manic episode mood stabilizer KMLE 2026 / Claude Routine 24세 남성이 1주간 수면욕구 감소, 과대사고, 다변, 무분별한 소비와 성적 문란, 과민한 기분을 보이며 일상 기능에 장애가 생겼다. 정신병적 증상이나 물질사용은 없다. 다음 중 가장 가능성이 높은 진단은? A. 제1형 양극성장애 조증삽화 B. 주요우울장애 C. 조현병 D. 순환성장애 E. 범불안장애 1주 이상 지속되는 고양되거나 과민한 기분에 수면감소·과대성·다변·목표지향활동 증가·위험한 쾌락추구가 동반되어 기능장애가 있으면 조증삽화이며, 이는 제1형 양극성장애를 진단하게 한다. 기분안정제(리튬·발프로에이트)나 비정형 항정신병약으로 치료한다."
+  },
+  {
+   "id": "kmle-2026-0060",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Serotonin Syndrome",
+   "tags": [
+    "serotonin syndrome",
+    "clonus",
+    "hyperreflexia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0060.md",
+   "snippet": "25세 여성이 SSRI를 복용하던 중 트라마돌을 추가한 뒤 수 시간 만에 초조, 발한, 고열, 빈맥과 함께 하지에 우세한 간대성근경련(clonus)과 반사항진을 보인다. 다음 중 가장 가능성이 높은 진단은? A. 세로토닌증후군 B. 신경이완제 악성증후군 C. 악성 고열 D. 항콜린성 섬망 E. 갑상선폭풍 세로토닌 작용제(SSRI와 트라마돌)를 병용한 뒤 수 시간 내에 신경근 항진(clonus·반사항진, 하지 우세), 자율신경 ",
+   "text": "Psychiatry Serotonin Syndrome serotonin syndrome clonus hyperreflexia KMLE 2026 / Claude Routine 25세 여성이 SSRI를 복용하던 중 트라마돌을 추가한 뒤 수 시간 만에 초조, 발한, 고열, 빈맥과 함께 하지에 우세한 간대성근경련(clonus)과 반사항진을 보인다. 다음 중 가장 가능성이 높은 진단은? A. 세로토닌증후군 B. 신경이완제 악성증후군 C. 악성 고열 D. 항콜린성 섬망 E. 갑상선폭풍 세로토닌 작용제(SSRI와 트라마돌)를 병용한 뒤 수 시간 내에 신경근 항진(clonus·반사항진, 하지 우세), 자율신경 항진, 정신상태 변화가 나타나면 세로토닌증후군이다. 서서히 진행하며 강직·서반사를 보이는 NMS와 감별된다. 원인약 중단과 지지치료가 기본이고 중증은 시프로헵타딘을 쓴다."
+  },
+  {
+   "id": "kmle-2026-0059",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Pyloric Stenosis",
+   "tags": [
+    "pyloric stenosis",
+    "projectile vomiting",
+    "metabolic alkalosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0059.md",
+   "snippet": "생후 4주 된 남아가 수유 직후 점점 심해지는 비담즙성 분출성 구토를 보인다. 우상복부에서 올리브 모양의 종괴가 만져지고, 혈액검사에서 저염소성 저칼륨성 대사성 알칼리증이 확인된다. 다음 중 가장 가능성이 높은 진단은? A. 비대성 유문협착 B. 장중첩증 C. 선천성 거대결장 D. 위식도역류 E. 십이지장폐쇄 생후 3~6주 남아의 비담즙성 분출성 구토, 촉지되는 올리브 모양 종괴, 저염소성 저칼륨성 대사성 알칼리증은 비대성 유",
+   "text": "Pediatrics Pyloric Stenosis pyloric stenosis projectile vomiting metabolic alkalosis KMLE 2026 / Claude Routine 생후 4주 된 남아가 수유 직후 점점 심해지는 비담즙성 분출성 구토를 보인다. 우상복부에서 올리브 모양의 종괴가 만져지고, 혈액검사에서 저염소성 저칼륨성 대사성 알칼리증이 확인된다. 다음 중 가장 가능성이 높은 진단은? A. 비대성 유문협착 B. 장중첩증 C. 선천성 거대결장 D. 위식도역류 E. 십이지장폐쇄 생후 3~6주 남아의 비담즙성 분출성 구토, 촉지되는 올리브 모양 종괴, 저염소성 저칼륨성 대사성 알칼리증은 비대성 유문협착의 특징이다. 초음파로 확진하며, 먼저 수액·전해질을 교정한 뒤 유문근절개술(Ramstedt)을 시행한다."
+  },
+  {
+   "id": "kmle-2026-0058",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Epiglottitis",
+   "tags": [
+    "epiglottitis",
+    "tripod position",
+    "airway"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0058.md",
+   "snippet": "4세 소아가 갑자기 고열과 함께 삼킴곤란, 침흘림을 보이며 앞으로 숙여 앉는 자세(tripod)를 취하고 흡기 협착음과 먹먹한 목소리가 있다. 기침은 거의 없다. 다음 중 가장 우선되어야 할 처치는? A. 조절된 환경(수술실)에서의 기도 확보와 자극 최소화 B. 즉시 설압자로 인두 검진 C. 경구 항생제 처방 후 귀가 D. 기관지확장제 흡입 E. 요추천자 급성 발열·연하통·침흘림·tripod 자세·먹먹한 목소리는 급성 후두덮개",
+   "text": "Pediatrics Epiglottitis epiglottitis tripod position airway KMLE 2026 / Claude Routine 4세 소아가 갑자기 고열과 함께 삼킴곤란, 침흘림을 보이며 앞으로 숙여 앉는 자세(tripod)를 취하고 흡기 협착음과 먹먹한 목소리가 있다. 기침은 거의 없다. 다음 중 가장 우선되어야 할 처치는? A. 조절된 환경(수술실)에서의 기도 확보와 자극 최소화 B. 즉시 설압자로 인두 검진 C. 경구 항생제 처방 후 귀가 D. 기관지확장제 흡입 E. 요추천자 급성 발열·연하통·침흘림·tripod 자세·먹먹한 목소리는 급성 후두덮개염(Hib 등)을 시사한다. 완전 기도폐쇄 위험이 있으므로 아이를 자극하지 말고 조절된 환경(수술실)에서 기도를 확보하는 것이 최우선이다. 인두를 설압자로 검진하거나 눕히면 폐쇄를 유발할 수 있다."
+  },
+  {
+   "id": "kmle-2026-0057",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Cauda Equina Syndrome",
+   "tags": [
+    "cauda equina",
+    "urinary retention",
+    "saddle anesthesia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0057.md",
+   "snippet": "45세 남성이 심한 요통과 양측 하지 방사통에 더해 새로 발생한 요저류와 안장부위 감각저하, 항문괄약근 긴장도 저하를 보인다. 다음 중 가장 적절한 처치는? A. 응급 MRI 후 감압수술 B. 물리치료 후 외래 추적 C. 경구 진통제만 처방 D. 침상안정 6주 E. 스테로이드 관절강 내 주사 요통에 안장마취, 배뇨장애(요저류·실금), 괄약근 약화, 양측 좌골신경통이 동반되면 마미증후군이다. 응급 MRI로 거대 추간판탈출 등 압",
+   "text": "Orthopedics Cauda Equina Syndrome cauda equina urinary retention saddle anesthesia KMLE 2026 / Claude Routine 45세 남성이 심한 요통과 양측 하지 방사통에 더해 새로 발생한 요저류와 안장부위 감각저하, 항문괄약근 긴장도 저하를 보인다. 다음 중 가장 적절한 처치는? A. 응급 MRI 후 감압수술 B. 물리치료 후 외래 추적 C. 경구 진통제만 처방 D. 침상안정 6주 E. 스테로이드 관절강 내 주사 요통에 안장마취, 배뇨장애(요저류·실금), 괄약근 약화, 양측 좌골신경통이 동반되면 마미증후군이다. 응급 MRI로 거대 추간판탈출 등 압박을 확인한 뒤 조기 감압수술을 시행해야 영구 신경손상을 막을 수 있다."
+  },
+  {
+   "id": "kmle-2026-0056",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Scaphoid Fracture",
+   "tags": [
+    "scaphoid fracture",
+    "snuffbox tenderness",
+    "avascular necrosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0056.md",
+   "snippet": "22세 남성이 손을 짚고 넘어진 뒤 손목 요측의 통증을 호소한다. 해부학적 코담배갑(anatomical snuffbox)에 압통이 있으나 초기 손목 X선은 정상이다. 다음 중 가장 적절한 조치는? A. 무지수상 부목으로 고정한 뒤 재촬영 또는 MRI B. 즉시 퇴원시키고 경과관찰 C. 관절경 세척 D. 즉시 금속판 내고정 E. 온찜질만 시행 손을 짚고 넘어진 손상 후 snuffbox 압통은 초기 X선이 음성이어도 주상골 골절을",
+   "text": "Orthopedics Scaphoid Fracture scaphoid fracture snuffbox tenderness avascular necrosis KMLE 2026 / Claude Routine 22세 남성이 손을 짚고 넘어진 뒤 손목 요측의 통증을 호소한다. 해부학적 코담배갑(anatomical snuffbox)에 압통이 있으나 초기 손목 X선은 정상이다. 다음 중 가장 적절한 조치는? A. 무지수상 부목으로 고정한 뒤 재촬영 또는 MRI B. 즉시 퇴원시키고 경과관찰 C. 관절경 세척 D. 즉시 금속판 내고정 E. 온찜질만 시행 손을 짚고 넘어진 손상 후 snuffbox 압통은 초기 X선이 음성이어도 주상골 골절을 의심해야 한다. 근위 주상골은 역행성 혈류 특성상 무혈성괴사와 불유합 위험이 크므로, 부목으로 고정한 뒤 재촬영이나 MRI로 확인한다."
+  },
+  {
+   "id": "kmle-2026-0055",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Diabetic Retinopathy",
+   "tags": [
+    "diabetic retinopathy",
+    "neovascularization",
+    "panretinal photocoagulation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0055.md",
+   "snippet": "55세의 당뇨 15년 환자가 정기 안저검사에서 신생혈관, 유리체 출혈, 면화반을 보인다. 다음 중 실명을 막기 위한 표준 치료로 옳은 것은? A. 범망막 광응고술(필요 시 항VEGF 병용) B. 국소 스테로이드 점안 C. 백내장 수술 D. 경과관찰만 E. 각막이식 신생혈관을 동반한 증식성 당뇨망막병증은 유리체출혈과 견인망막박리로 실명 위험이 크다. 범망막 레이저 광응고술이 표준 치료이며, 황반부종이나 신생혈관에는 항VEGF를 ",
+   "text": "Ophthalmology Diabetic Retinopathy diabetic retinopathy neovascularization panretinal photocoagulation KMLE 2026 / Claude Routine 55세의 당뇨 15년 환자가 정기 안저검사에서 신생혈관, 유리체 출혈, 면화반을 보인다. 다음 중 실명을 막기 위한 표준 치료로 옳은 것은? A. 범망막 광응고술(필요 시 항VEGF 병용) B. 국소 스테로이드 점안 C. 백내장 수술 D. 경과관찰만 E. 각막이식 신생혈관을 동반한 증식성 당뇨망막병증은 유리체출혈과 견인망막박리로 실명 위험이 크다. 범망막 레이저 광응고술이 표준 치료이며, 황반부종이나 신생혈관에는 항VEGF를 병용한다. 혈당·혈압 조절과 정기 선별검사가 기본이다."
+  },
+  {
+   "id": "kmle-2026-0054",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Retinal Detachment",
+   "tags": [
+    "retinal detachment",
+    "floaters",
+    "flashes"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0054.md",
+   "snippet": "60세의 고도근시 남성이 갑자기 날파리증(floaters)과 광시증(flashes)을 느낀 뒤 커튼이 내려오듯 시야가 가려진다고 호소한다. 안저검사에서 들려 올라온 회색의 망막이 보인다. 다음 중 가장 가능성이 높은 진단은? A. 열공성 망막박리 B. 유리체출혈 C. 중심망막정맥폐쇄 D. 시신경염 E. 나이관련황반변성 광시증·날파리증에 이은 커튼 모양 시야결손과 들뜬 회색 망막은 열공성 망막박리를 시사하며 고도근시와 노화가 위",
+   "text": "Ophthalmology Retinal Detachment retinal detachment floaters flashes KMLE 2026 / Claude Routine 60세의 고도근시 남성이 갑자기 날파리증(floaters)과 광시증(flashes)을 느낀 뒤 커튼이 내려오듯 시야가 가려진다고 호소한다. 안저검사에서 들려 올라온 회색의 망막이 보인다. 다음 중 가장 가능성이 높은 진단은? A. 열공성 망막박리 B. 유리체출혈 C. 중심망막정맥폐쇄 D. 시신경염 E. 나이관련황반변성 광시증·날파리증에 이은 커튼 모양 시야결손과 들뜬 회색 망막은 열공성 망막박리를 시사하며 고도근시와 노화가 위험인자이다. 황반 침범 전에 응급 수술(공막두르기·유리체절제·기체망막유착술)을 하는 것이 시력 예후를 좌우한다."
+  },
+  {
+   "id": "kmle-2026-0053",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Placental Abruption",
+   "tags": [
+    "abruptio placentae",
+    "painful bleeding",
+    "rigid uterus"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0053.md",
+   "snippet": "32세 임신 34주 임산부가 고혈압 병력이 있으며 갑작스러운 복통과 어두운 색의 질출혈로 왔다. 자궁은 단단하고 압통이 있으며(강직성 수축) 태아곤란 소견이 있다. 다음 중 가장 가능성이 높은 진단은? A. 태반조기박리 B. 전치태반 C. 자궁파열 D. 양수색전증 E. 자궁근종의 변성 고혈압을 위험인자로 하는 통증성 질출혈, 판자처럼 단단하고 압통 있는 자궁, 태아곤란은 태반조기박리를 시사한다. 무통성 출혈이 전형적인 전치태반",
+   "text": "Obstetrics & Gynecology Placental Abruption abruptio placentae painful bleeding rigid uterus KMLE 2026 / Claude Routine 32세 임신 34주 임산부가 고혈압 병력이 있으며 갑작스러운 복통과 어두운 색의 질출혈로 왔다. 자궁은 단단하고 압통이 있으며(강직성 수축) 태아곤란 소견이 있다. 다음 중 가장 가능성이 높은 진단은? A. 태반조기박리 B. 전치태반 C. 자궁파열 D. 양수색전증 E. 자궁근종의 변성 고혈압을 위험인자로 하는 통증성 질출혈, 판자처럼 단단하고 압통 있는 자궁, 태아곤란은 태반조기박리를 시사한다. 무통성 출혈이 전형적인 전치태반과 감별된다. 산모·태아 상태에 따라 응급 분만/제왕절개를 하고 DIC를 감시한다."
+  },
+  {
+   "id": "kmle-2026-0052",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ectopic Pregnancy",
+   "tags": [
+    "ectopic pregnancy",
+    "beta-hCG",
+    "transvaginal ultrasound"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0052.md",
+   "snippet": "28세 여성이 6주간의 무월경 후 하복부 통증과 소량의 질출혈로 왔다. 임신반응이 양성이고 경질초음파에서 자궁강 내 임신낭이 보이지 않으며, β hCG는 2500 mIU/mL이나 자궁내막만 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 자궁외임신 B. 정상 초기임신 C. 계류유산 D. 포상기태 E. 절박유산 무월경·복통·질출혈의 삼징에 β hCG가 판별역치(약 1500~2000 mIU/mL)를 넘는데도 자궁강 내 임신낭",
+   "text": "Obstetrics & Gynecology Ectopic Pregnancy ectopic pregnancy beta-hCG transvaginal ultrasound KMLE 2026 / Claude Routine 28세 여성이 6주간의 무월경 후 하복부 통증과 소량의 질출혈로 왔다. 임신반응이 양성이고 경질초음파에서 자궁강 내 임신낭이 보이지 않으며, β hCG는 2500 mIU/mL이나 자궁내막만 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 자궁외임신 B. 정상 초기임신 C. 계류유산 D. 포상기태 E. 절박유산 무월경·복통·질출혈의 삼징에 β hCG가 판별역치(약 1500~2000 mIU/mL)를 넘는데도 자궁강 내 임신낭이 보이지 않으면 자궁외임신(대개 난관)을 강하게 의심한다. 파열 시 응급이며, 혈역학적으로 안정하면 메토트렉세이트, 불안정·파열 시 수술한다."
+  },
+  {
+   "id": "kmle-2026-0051",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Myasthenia Gravis",
+   "tags": [
+    "myasthenia gravis",
+    "acetylcholine receptor antibody",
+    "thymoma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0051.md",
+   "snippet": "30세 여성이 하루가 지날수록 악화되는(피로 시 심해지는) 안검하수와 복시, 씹기·삼키기 약화를 호소한다. 반복 신경자극에 근력이 점차 감소한다. 다음 중 이 질환의 자가항체와 흔히 동반되는 흉부 이상으로 옳은 것은? A. 항아세틸콜린수용체 항체 흉선종 B. 항Hu 항체 폐암 C. 항GM1 항체 이상 없음 D. 항전압의존칼슘통로 항체 소세포폐암 E. 항TSH수용체 항체 갑상선종 하루 경과에 따라 악화되는 피로성 안검하수·복시·",
+   "text": "Neurology Myasthenia Gravis myasthenia gravis acetylcholine receptor antibody thymoma KMLE 2026 / Claude Routine 30세 여성이 하루가 지날수록 악화되는(피로 시 심해지는) 안검하수와 복시, 씹기·삼키기 약화를 호소한다. 반복 신경자극에 근력이 점차 감소한다. 다음 중 이 질환의 자가항체와 흔히 동반되는 흉부 이상으로 옳은 것은? A. 항아세틸콜린수용체 항체 흉선종 B. 항Hu 항체 폐암 C. 항GM1 항체 이상 없음 D. 항전압의존칼슘통로 항체 소세포폐암 E. 항TSH수용체 항체 갑상선종 하루 경과에 따라 악화되는 피로성 안검하수·복시·구근증상은 중증근무력증이다. 신경근접합부 후막의 아세틸콜린수용체에 대한 자가항체가 원인이며 흉선종·흉선증식이 동반될 수 있다. 항콜린에스터라제제, 흉선절제술, 면역치료로 관리한다. 항VGCC 항체와 소세포폐암은 램버트 이튼 근무력증후군의 소견이다."
+  },
+  {
+   "id": "kmle-2026-0050",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Subarachnoid Hemorrhage",
+   "tags": [
+    "subarachnoid hemorrhage",
+    "thunderclap headache",
+    "lumbar puncture"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0050.md",
+   "snippet": "50세 여성이 갑자기 발생한 생애 최악의 벼락두통(thunderclap headache)과 구토, 목경직으로 왔다. 의식은 명료하다. 뇌 CT가 정상으로 나왔다면 다음 단계로 가장 적절한 것은? A. 요추천자로 황색변성(xanthochromia) 확인 B. 편두통으로 진단하고 귀가 C. 즉시 정맥내 tPA 투여 D. 뇌파검사 E. 경과관찰 후 귀가 벼락두통과 수막자극징후는 지주막하출혈(주로 동맥류 파열)을 의심하게 한다. CT",
+   "text": "Neurology Subarachnoid Hemorrhage subarachnoid hemorrhage thunderclap headache lumbar puncture KMLE 2026 / Claude Routine 50세 여성이 갑자기 발생한 생애 최악의 벼락두통(thunderclap headache)과 구토, 목경직으로 왔다. 의식은 명료하다. 뇌 CT가 정상으로 나왔다면 다음 단계로 가장 적절한 것은? A. 요추천자로 황색변성(xanthochromia) 확인 B. 편두통으로 진단하고 귀가 C. 즉시 정맥내 tPA 투여 D. 뇌파검사 E. 경과관찰 후 귀가 벼락두통과 수막자극징후는 지주막하출혈(주로 동맥류 파열)을 의심하게 한다. CT가 정상이어도 배제할 수 없으므로 요추천자로 황색변성·적혈구를 확인하거나 CT혈관조영을 시행한다. tPA는 출혈성 병변에서 금기이다."
+  },
+  {
+   "id": "kmle-2026-0049",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Rhabdomyolysis AKI",
+   "tags": [
+    "rhabdomyolysis",
+    "myoglobinuria",
+    "acute kidney injury"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0049.md",
+   "snippet": "25세 남성이 장시간 압박된 상태로 있다가 구조되었다. 갈색뇨를 보이고 소변 잠혈검사는 양성이나 현미경검사에서 적혈구는 보이지 않는다. 혈청 CK가 매우 상승했고 고칼륨혈증과 급성신손상이 동반된다. 다음 중 진단과 초기 치료로 옳은 것은? A. 횡문근융해 다량의 등장성 생리식염수 수액 B. 급성사구체신염 스테로이드 C. 요로결석 진통제 D. 용혈성 빈혈 수혈 E. 방광암 방광경검사 압좌 손상 후 갈색뇨, 잠혈 양성이나 적혈구 ",
+   "text": "Nephrology Rhabdomyolysis AKI rhabdomyolysis myoglobinuria acute kidney injury KMLE 2026 / Claude Routine 25세 남성이 장시간 압박된 상태로 있다가 구조되었다. 갈색뇨를 보이고 소변 잠혈검사는 양성이나 현미경검사에서 적혈구는 보이지 않는다. 혈청 CK가 매우 상승했고 고칼륨혈증과 급성신손상이 동반된다. 다음 중 진단과 초기 치료로 옳은 것은? A. 횡문근융해 다량의 등장성 생리식염수 수액 B. 급성사구체신염 스테로이드 C. 요로결석 진통제 D. 용혈성 빈혈 수혈 E. 방광암 방광경검사 압좌 손상 후 갈색뇨, 잠혈 양성이나 적혈구 없음(미오글로빈뇨), CK 급상승, 고칼륨혈증, 급성신손상은 횡문근융해를 시사한다. 미오글로빈의 세뇨관 독성과 색소원주가 원인이며, 조기 대량 등장성 수액으로 소변량을 확보하는 것이 핵심이고 고칼륨혈증을 면밀히 감시한다."
+  },
+  {
+   "id": "kmle-2026-0048",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Minimal Change Nephrotic Syndrome",
+   "tags": [
+    "nephrotic syndrome",
+    "minimal change",
+    "steroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0048.md",
+   "snippet": "6세 남아가 전신부종과 눈꺼풀 부종으로 왔다. 소변 단백 3+, 저알부민혈증, 고지질혈증이 있고 하루 소변단백이 4g이다. 혈뇨와 고혈압은 없다. 다음 중 이 연령에서 가장 흔한 원인과 일차 치료로 옳은 것은? A. 미세변화신증후군 경구 스테로이드 B. 국소분절사구체경화증 즉시 투석 C. 막성신병증 항응고제 D. IgA신병증 편도절제술 E. 급성사구체신염 항생제 소아 신증후군(대량 단백뇨·저알부민혈증·부종·고지질혈증)의 가장 ",
+   "text": "Nephrology Minimal Change Nephrotic Syndrome nephrotic syndrome minimal change steroid KMLE 2026 / Claude Routine 6세 남아가 전신부종과 눈꺼풀 부종으로 왔다. 소변 단백 3+, 저알부민혈증, 고지질혈증이 있고 하루 소변단백이 4g이다. 혈뇨와 고혈압은 없다. 다음 중 이 연령에서 가장 흔한 원인과 일차 치료로 옳은 것은? A. 미세변화신증후군 경구 스테로이드 B. 국소분절사구체경화증 즉시 투석 C. 막성신병증 항응고제 D. IgA신병증 편도절제술 E. 급성사구체신염 항생제 소아 신증후군(대량 단백뇨·저알부민혈증·부종·고지질혈증)의 가장 흔한 원인은 미세변화신증후군이다. 대개 스테로이드 반응이 좋아 신생검 없이 경험적 경구 프레드니솔론으로 치료를 시작한다."
+  },
+  {
+   "id": "kmle-2026-0047",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Necrotizing Fasciitis",
+   "tags": [
+    "necrotizing fasciitis",
+    "surgical debridement",
+    "crepitus"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0047.md",
+   "snippet": "58세 당뇨 남성이 하지 통증이 진찰 소견에 비해 지나치게 심하고(pain out of proportion), 빠르게 번지는 홍반, 수포, 피부 감각저하, 염발음(crepitus)과 함께 패혈증 소견을 보인다. 다음 중 가장 적절한 처치는? A. 응급 외과적 변연절제와 광범위 항생제 B. 경구 항생제 후 외래 추적 C. 국소 스테로이드 도포 D. 압박붕대 적용 E. 온찜질 진찰 소견 대비 극심한 통증, 급속히 진행하는 홍반·수",
+   "text": "Infectious Disease Necrotizing Fasciitis necrotizing fasciitis surgical debridement crepitus KMLE 2026 / Claude Routine 58세 당뇨 남성이 하지 통증이 진찰 소견에 비해 지나치게 심하고(pain out of proportion), 빠르게 번지는 홍반, 수포, 피부 감각저하, 염발음(crepitus)과 함께 패혈증 소견을 보인다. 다음 중 가장 적절한 처치는? A. 응급 외과적 변연절제와 광범위 항생제 B. 경구 항생제 후 외래 추적 C. 국소 스테로이드 도포 D. 압박붕대 적용 E. 온찜질 진찰 소견 대비 극심한 통증, 급속히 진행하는 홍반·수포·감각저하·염발음은 괴사성 근막염을 시사한다. 외과적 응급으로 즉각적인 광범위 변연절제와 그람양성·음성·혐기균을 포괄하는 광범위 항생제(±클린다마이신), 소생술이 생존을 좌우한다."
+  },
+  {
+   "id": "kmle-2026-0046",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Infective Endocarditis",
+   "tags": [
+    "endocarditis",
+    "blood culture",
+    "IV drug use"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0046.md",
+   "snippet": "28세의 정맥주사 약물사용자가 지속되는 발열과 새로 발생한 삼첨판 역류 잡음, 흉부 CT의 다발성 폐 결절을 보인다. 손발톱밑 splinter 출혈도 관찰된다. 다음 중 진단에 가장 중요한 검사는? A. 서로 다른 시점의 혈액배양 3세트와 심초음파 B. 흉부 CT 단독 C. 소변배양 D. 류마티스인자 E. 골수검사 정맥주사 약물사용자의 지속 발열·삼첨판 역류·패혈성 폐색전은 우측 감염심내막염(주로 S. aureus)을 시사한다",
+   "text": "Infectious Disease Infective Endocarditis endocarditis blood culture IV drug use KMLE 2026 / Claude Routine 28세의 정맥주사 약물사용자가 지속되는 발열과 새로 발생한 삼첨판 역류 잡음, 흉부 CT의 다발성 폐 결절을 보인다. 손발톱밑 splinter 출혈도 관찰된다. 다음 중 진단에 가장 중요한 검사는? A. 서로 다른 시점의 혈액배양 3세트와 심초음파 B. 흉부 CT 단독 C. 소변배양 D. 류마티스인자 E. 골수검사 정맥주사 약물사용자의 지속 발열·삼첨판 역류·패혈성 폐색전은 우측 감염심내막염(주로 S. aureus)을 시사한다. Duke 진단기준의 핵심은 서로 다른 시점의 혈액배양과 심초음파(증식물 확인)이다. 경험적 항생제는 배양 채취 후 시작한다."
+  },
+  {
+   "id": "kmle-2026-0045",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Disseminated Intravascular Coagulation",
+   "tags": [
+    "DIC",
+    "sepsis",
+    "D-dimer"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0045.md",
+   "snippet": "60세 남성이 그람음성균 패혈증 치료 중 전신 출혈경향과 함께 혈전 소견을 보인다. 검사에서 혈소판감소, PT·aPTT 연장, 피브리노겐 감소, D dimer 현저 상승, 분열적혈구가 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 파종혈관내응고(DIC) B. 비타민K 결핍 C. 혈우병 A D. 면역혈소판감소증 E. 폰빌레브란트병 패혈증을 유발인자로 혈소판감소, PT/aPTT 연장, 피브리노겐 감소, D dimer 상승이",
+   "text": "Hematology Disseminated Intravascular Coagulation DIC sepsis D-dimer KMLE 2026 / Claude Routine 60세 남성이 그람음성균 패혈증 치료 중 전신 출혈경향과 함께 혈전 소견을 보인다. 검사에서 혈소판감소, PT·aPTT 연장, 피브리노겐 감소, D dimer 현저 상승, 분열적혈구가 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 파종혈관내응고(DIC) B. 비타민K 결핍 C. 혈우병 A D. 면역혈소판감소증 E. 폰빌레브란트병 패혈증을 유발인자로 혈소판감소, PT/aPTT 연장, 피브리노겐 감소, D dimer 상승이 동반되면 DIC이다. 응고인자·혈소판 소모와 이차 섬유소용해가 특징이다. 기저질환(패혈증) 치료가 최우선이며 출혈 시 혈소판·신선동결혈장·크리오침전물을 보충한다."
+  },
+  {
+   "id": "kmle-2026-0044",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Thrombotic Thrombocytopenic Purpura",
+   "tags": [
+    "TTP",
+    "ADAMTS13",
+    "schistocyte"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0044.md",
+   "snippet": "35세 여성이 발열과 함께 미세혈관병용혈빈혈(말초혈액에 분열적혈구), 혈소판감소, 변동하는 신경학적 증상, 신기능장애를 보인다. PT와 aPTT는 정상이다. 다음 중 가장 가능성이 높은 진단은? A. 혈전성 혈소판감소자색반병(TTP) B. 파종혈관내응고 C. 면역혈소판감소증 D. 헤파린유발혈소판감소증 E. 거대적혈모구빈혈 분열적혈구를 동반한 미세혈관병용혈빈혈, 혈소판감소, 신경증상, 발열, 신기능장애의 다섯 징후와 정상 PT/",
+   "text": "Hematology Thrombotic Thrombocytopenic Purpura TTP ADAMTS13 schistocyte KMLE 2026 / Claude Routine 35세 여성이 발열과 함께 미세혈관병용혈빈혈(말초혈액에 분열적혈구), 혈소판감소, 변동하는 신경학적 증상, 신기능장애를 보인다. PT와 aPTT는 정상이다. 다음 중 가장 가능성이 높은 진단은? A. 혈전성 혈소판감소자색반병(TTP) B. 파종혈관내응고 C. 면역혈소판감소증 D. 헤파린유발혈소판감소증 E. 거대적혈모구빈혈 분열적혈구를 동반한 미세혈관병용혈빈혈, 혈소판감소, 신경증상, 발열, 신기능장애의 다섯 징후와 정상 PT/aPTT는 TTP를 시사한다. ADAMTS13 결핍으로 초거대 vWF 다량체가 미세혈전을 형성한다. 즉시 혈장교환술이 핵심이며 혈소판 수혈은 원칙적으로 금기이다."
+  },
+  {
+   "id": "kmle-2026-0043",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Perforated Peptic Ulcer",
+   "tags": [
+    "perforation",
+    "free air",
+    "peritonitis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0043.md",
+   "snippet": "55세 남성이 관절통으로 NSAID를 복용하던 중 갑자기 극심한 상복부 통증이 발생해 전 복부로 퍼졌다. 복벽이 판자처럼 단단하고(board like rigidity) 반발압통이 있으며, 기립 흉부 X선에서 횡격막 아래 자유공기가 보인다. 다음 중 가장 가능성이 높은 진단은? A. 위·십이지장 궤양 천공 B. 급성 췌장염 C. 급성 담낭염 D. 급성 심근경색 E. 급성 충수염 NSAID 관련 소화성 궤양의 천공은 갑작스러운 복",
+   "text": "General Surgery Perforated Peptic Ulcer perforation free air peritonitis KMLE 2026 / Claude Routine 55세 남성이 관절통으로 NSAID를 복용하던 중 갑자기 극심한 상복부 통증이 발생해 전 복부로 퍼졌다. 복벽이 판자처럼 단단하고(board like rigidity) 반발압통이 있으며, 기립 흉부 X선에서 횡격막 아래 자유공기가 보인다. 다음 중 가장 가능성이 높은 진단은? A. 위·십이지장 궤양 천공 B. 급성 췌장염 C. 급성 담낭염 D. 급성 심근경색 E. 급성 충수염 NSAID 관련 소화성 궤양의 천공은 갑작스러운 복통, 범발성 복막염(board like rigidity), 횡격막하 자유공기가 특징이다. 응급 수술(단순봉합과 대망성형)과 소생술이 필요하다. 급성 췌장염에서는 자유공기가 보이지 않아 감별된다."
+  },
+  {
+   "id": "kmle-2026-0042",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Small Bowel Obstruction",
+   "tags": [
+    "bowel obstruction",
+    "adhesion",
+    "air-fluid level"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0042.md",
+   "snippet": "60세 여성이 과거 개복수술 병력이 있으며 경련성 복통, 담즙성 구토, 복부팽만, 배변·배가스 중단으로 왔다. 복부 X선에서 확장된 소장 고리와 계단식 공기 액체층이 보인다. 다음 중 이 폐색의 가장 흔한 원인은? A. 수술 후 유착 B. 대장암 C. 담석성 장폐색 D. 서혜부 탈장 E. 장중첩증 개복수술 병력이 있는 소장폐색에서 가장 흔한 원인은 수술 후 유착이다. 경련성 복통·담즙성 구토·복부팽만·변비와 계단식 공기 액체층",
+   "text": "General Surgery Small Bowel Obstruction bowel obstruction adhesion air-fluid level KMLE 2026 / Claude Routine 60세 여성이 과거 개복수술 병력이 있으며 경련성 복통, 담즙성 구토, 복부팽만, 배변·배가스 중단으로 왔다. 복부 X선에서 확장된 소장 고리와 계단식 공기 액체층이 보인다. 다음 중 이 폐색의 가장 흔한 원인은? A. 수술 후 유착 B. 대장암 C. 담석성 장폐색 D. 서혜부 탈장 E. 장중첩증 개복수술 병력이 있는 소장폐색에서 가장 흔한 원인은 수술 후 유착이다. 경련성 복통·담즙성 구토·복부팽만·변비와 계단식 공기 액체층이 특징이다. 초기에는 금식·비위관 감압·수액으로 치료하고 교액이나 불응 시 수술한다."
+  },
+  {
+   "id": "kmle-2026-0041",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Ulcerative Colitis",
+   "tags": [
+    "ulcerative colitis",
+    "bloody diarrhea",
+    "continuous inflammation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0041.md",
+   "snippet": "24세 남성이 수주간 혈성 설사와 점액변, 뒤무직(tenesmus)으로 왔다. 대장내시경에서 직장부터 근위부로 연속적으로 이어지는 미만성 점막 발적과 얕은 궤양이 보이고 회장은 정상이다. 다음 중 가장 가능성이 높은 진단은? A. 궤양성 대장염 B. 크론병 C. 감염성 대장염 D. 과민성 장증후군 E. 허혈성 대장염 직장에서 시작해 연속적으로 근위부로 진행하는 미만성 점막 염증, 혈성 점액변, 회장 비침범은 궤양성 대장염의 특",
+   "text": "Gastroenterology Ulcerative Colitis ulcerative colitis bloody diarrhea continuous inflammation KMLE 2026 / Claude Routine 24세 남성이 수주간 혈성 설사와 점액변, 뒤무직(tenesmus)으로 왔다. 대장내시경에서 직장부터 근위부로 연속적으로 이어지는 미만성 점막 발적과 얕은 궤양이 보이고 회장은 정상이다. 다음 중 가장 가능성이 높은 진단은? A. 궤양성 대장염 B. 크론병 C. 감염성 대장염 D. 과민성 장증후군 E. 허혈성 대장염 직장에서 시작해 연속적으로 근위부로 진행하는 미만성 점막 염증, 혈성 점액변, 회장 비침범은 궤양성 대장염의 특징이다. 도약병변·전층 침범·회말단 침범이 흔한 크론병과 감별된다. 치료는 5 ASA, 스테로이드, 면역조절제 등이다."
+  },
+  {
+   "id": "kmle-2026-0040",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Achalasia",
+   "tags": [
+    "achalasia",
+    "bird-beak",
+    "dysphagia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0040.md",
+   "snippet": "40세 남성이 수년간 서서히 진행하는 연하곤란으로 왔는데 고형식과 액상식 모두에서 삼키기 어렵고 역류가 동반된다. 식도조영에서 새부리 모양(bird beak)의 원위부 협착과 확장된 근위부 식도가 보인다. 다음 중 가장 가능성이 높은 진단은? A. 식도이완불능증(아칼라지아) B. 식도암 C. 미만성 식도경련 D. 위식도역류질환 E. 전신경화증 고형식과 액상식 모두에 대한 연하곤란(진행성 협착과의 감별점), bird beak 협",
+   "text": "Gastroenterology Achalasia achalasia bird-beak dysphagia KMLE 2026 / Claude Routine 40세 남성이 수년간 서서히 진행하는 연하곤란으로 왔는데 고형식과 액상식 모두에서 삼키기 어렵고 역류가 동반된다. 식도조영에서 새부리 모양(bird beak)의 원위부 협착과 확장된 근위부 식도가 보인다. 다음 중 가장 가능성이 높은 진단은? A. 식도이완불능증(아칼라지아) B. 식도암 C. 미만성 식도경련 D. 위식도역류질환 E. 전신경화증 고형식과 액상식 모두에 대한 연하곤란(진행성 협착과의 감별점), bird beak 협착, 식도체부 연동 소실은 아칼라지아의 특징이다. 하부식도괄약근 이완장애와 근신경총(Auerbach) 신경절 소실이 원인이며 식도내압검사로 확진하고 근절개술·공기확장술·POEM으로 치료한다."
+  },
+  {
+   "id": "kmle-2026-0039",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Cushing Syndrome",
+   "tags": [
+    "Cushing",
+    "hypercortisolism",
+    "dexamethasone suppression"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0039.md",
+   "snippet": "42세 여성이 중심성 비만, 달덩이 얼굴, 보라색 복부 선조, 근위부 근력약화, 고혈압, 고혈당으로 왔다. 다음 중 진단을 위한 선별검사로 가장 적절한 것은? A. 심야 타액 코르티솔 또는 1mg 야간 덱사메타손 억제검사 B. 아침 공복 인슐린 C. 성장호르몬 자극검사 D. 소변 메타네프린 E. 갑상선자극호르몬 중심성 비만·자색 선조·근위부 근병증·고혈압·고혈당은 쿠싱증후군을 시사한다. 선별검사는 심야 타액/혈청 코르티솔, 2",
+   "text": "Endocrinology Cushing Syndrome Cushing hypercortisolism dexamethasone suppression KMLE 2026 / Claude Routine 42세 여성이 중심성 비만, 달덩이 얼굴, 보라색 복부 선조, 근위부 근력약화, 고혈압, 고혈당으로 왔다. 다음 중 진단을 위한 선별검사로 가장 적절한 것은? A. 심야 타액 코르티솔 또는 1mg 야간 덱사메타손 억제검사 B. 아침 공복 인슐린 C. 성장호르몬 자극검사 D. 소변 메타네프린 E. 갑상선자극호르몬 중심성 비만·자색 선조·근위부 근병증·고혈압·고혈당은 쿠싱증후군을 시사한다. 선별검사는 심야 타액/혈청 코르티솔, 24시간 소변 유리코르티솔, 1mg 야간 덱사메타손 억제검사 중 선택한다. 확진 후 ACTH를 측정해 뇌하수체·부신·이소성 원인을 감별한다."
+  },
+  {
+   "id": "kmle-2026-0038",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Thyroid Storm",
+   "tags": [
+    "thyroid storm",
+    "Graves",
+    "beta-blocker"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0038.md",
+   "snippet": "35세 여성이 그레이브스병 병력이 있으며 폐렴을 앓은 뒤 40도의 고열, 심박수 150회/분, 심한 초조와 지남력 저하로 왔다. 다음 중 가장 적절한 초기 약물 조합은? A. 프로프라놀롤 + 프로필티오우라실 + (PTU 투여 후)요오드 + 하이드로코르티손 B. 레보티록신 단독 C. 아스피린 + 수액만 D. 즉시 방사성요오드 치료 E. 즉시 갑상선전절제술 갑상선폭풍은 감염 등 유발인자 후 발열·빈맥·의식변화로 나타나는 응급이다.",
+   "text": "Endocrinology Thyroid Storm thyroid storm Graves beta-blocker KMLE 2026 / Claude Routine 35세 여성이 그레이브스병 병력이 있으며 폐렴을 앓은 뒤 40도의 고열, 심박수 150회/분, 심한 초조와 지남력 저하로 왔다. 다음 중 가장 적절한 초기 약물 조합은? A. 프로프라놀롤 + 프로필티오우라실 + (PTU 투여 후)요오드 + 하이드로코르티손 B. 레보티록신 단독 C. 아스피린 + 수액만 D. 즉시 방사성요오드 치료 E. 즉시 갑상선전절제술 갑상선폭풍은 감염 등 유발인자 후 발열·빈맥·의식변화로 나타나는 응급이다. 프로프라놀롤로 증상을 조절하고, PTU로 호르몬 합성을 억제하며, PTU 투여 후 요오드로 분비를 억제하고, 스테로이드로 T4→T3 전환 억제와 상대적 부신부전에 대비한다. 요오드는 반드시 항갑상선제 투여 후에 준다."
+  },
+  {
+   "id": "kmle-2026-0037",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Pemphigus Vulgaris",
+   "tags": [
+    "pemphigus",
+    "Nikolsky sign",
+    "intraepidermal IgG"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0037.md",
+   "snippet": "55세 여성이 구강 점막의 통증성 미란과 몸통의 이완성 물집으로 왔다. 정상으로 보이는 피부를 문지르면 표피가 벗겨진다(Nikolsky 징후 양성). 직접면역형광검사에서 표피세포 사이에 그물모양의 IgG 침착이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진상피부염 D. 다형홍반 E. 농가진 점막 침범이 흔하고 이완성 수포, Nikolsky 양성, 표피세포간 데스모글레인에 대",
+   "text": "Dermatology Pemphigus Vulgaris pemphigus Nikolsky sign intraepidermal IgG KMLE 2026 / Claude Routine 55세 여성이 구강 점막의 통증성 미란과 몸통의 이완성 물집으로 왔다. 정상으로 보이는 피부를 문지르면 표피가 벗겨진다(Nikolsky 징후 양성). 직접면역형광검사에서 표피세포 사이에 그물모양의 IgG 침착이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진상피부염 D. 다형홍반 E. 농가진 점막 침범이 흔하고 이완성 수포, Nikolsky 양성, 표피세포간 데스모글레인에 대한 IgG 침착은 심상성 천포창의 특징이다. 수포성 유천포창(노인, 긴장성 수포, 기저막대 선상 침착)과 감별된다. 치료는 전신 스테로이드·리툭시맙이다."
+  },
+  {
+   "id": "kmle-2026-0036",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Psoriasis",
+   "tags": [
+    "psoriasis",
+    "Auspitz sign",
+    "silvery scale"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0036.md",
+   "snippet": "30세 남성이 수개월간 지속된 피부병변으로 왔다. 팔꿈치·무릎의 신전면과 두피에 경계가 뚜렷한 홍반성 판이 은백색 인설로 덮여 있고, 인설을 벗기면 점상 출혈이 나타난다(Auspitz 징후). 다음 중 가장 가능성이 높은 진단은? A. 건선 B. 아토피피부염 C. 지루피부염 D. 편평태선 E. 백선 신전면·두피의 경계가 뚜렷한 홍반성 판과 은백색 인설, Auspitz 징후는 판상 건선의 특징이다. 표피 각질세포 과증식이 병태생",
+   "text": "Dermatology Psoriasis psoriasis Auspitz sign silvery scale KMLE 2026 / Claude Routine 30세 남성이 수개월간 지속된 피부병변으로 왔다. 팔꿈치·무릎의 신전면과 두피에 경계가 뚜렷한 홍반성 판이 은백색 인설로 덮여 있고, 인설을 벗기면 점상 출혈이 나타난다(Auspitz 징후). 다음 중 가장 가능성이 높은 진단은? A. 건선 B. 아토피피부염 C. 지루피부염 D. 편평태선 E. 백선 신전면·두피의 경계가 뚜렷한 홍반성 판과 은백색 인설, Auspitz 징후는 판상 건선의 특징이다. 표피 각질세포 과증식이 병태생리이며 국소 스테로이드·비타민D 유사체를 사용하고, 중증은 광선치료나 생물학제제를 고려한다."
+  },
+  {
+   "id": "kmle-2026-0035",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Acute Pericarditis",
+   "tags": [
+    "pericarditis",
+    "ST elevation",
+    "PR depression"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0035.md",
+   "snippet": "32세 남성이 수일 전 상기도감염을 앓은 뒤 발생한 흉통으로 왔다. 앉아서 앞으로 숙이면 완화되고 누우면 악화되며, 청진에서 마찰음이 들린다. 심전도에서 광범위한 유도의 ST분절 상승과 PR분절 하강이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 급성 심낭염 B. 급성 심근경색 C. 대동맥박리 D. 폐색전증 E. 위식도역류질환 자세에 따라 변하는 흉통(앞으로 숙이면 완화), 심낭마찰음, 관상동맥 분포를 따르지 않는 광",
+   "text": "Cardiology Acute Pericarditis pericarditis ST elevation PR depression KMLE 2026 / Claude Routine 32세 남성이 수일 전 상기도감염을 앓은 뒤 발생한 흉통으로 왔다. 앉아서 앞으로 숙이면 완화되고 누우면 악화되며, 청진에서 마찰음이 들린다. 심전도에서 광범위한 유도의 ST분절 상승과 PR분절 하강이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 급성 심낭염 B. 급성 심근경색 C. 대동맥박리 D. 폐색전증 E. 위식도역류질환 자세에 따라 변하는 흉통(앞으로 숙이면 완화), 심낭마찰음, 관상동맥 분포를 따르지 않는 광범위 ST상승과 PR하강은 급성 심낭염의 전형적 소견이다. 대개 바이러스성이며 NSAIDs와 콜히친으로 치료한다. STEMI와 달리 상호(reciprocal) ST하강이 없다는 점이 감별점이다."
+  },
+  {
+   "id": "kmle-2026-0034",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Aortic Stenosis",
+   "tags": [
+    "aortic stenosis",
+    "syncope",
+    "systolic murmur"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-06",
+   "path": "content/kmle/2026/kmle-2026-0034.md",
+   "snippet": "78세 남성이 운동 시 실신과 흉통, 호흡곤란으로 내원하였다. 우측 제2늑간에서 경동맥으로 방사되는 거친 수축기 구출성 잡음이 들리고, 경동맥 맥박이 지연되고 약하게 촉지된다(pulsus parvus et tardus). 다음 중 가장 가능성이 높은 진단은? A. 대동맥판막협착증 B. 승모판막폐쇄부전 C. 비후성심근병증 D. 대동맥판막폐쇄부전 E. 승모판막협착증 노인의 운동성 실신·협심증·심부전 삼주징과 우상흉골연에서 경동맥으",
+   "text": "Cardiology Aortic Stenosis aortic stenosis syncope systolic murmur KMLE 2026 / Claude Routine 78세 남성이 운동 시 실신과 흉통, 호흡곤란으로 내원하였다. 우측 제2늑간에서 경동맥으로 방사되는 거친 수축기 구출성 잡음이 들리고, 경동맥 맥박이 지연되고 약하게 촉지된다(pulsus parvus et tardus). 다음 중 가장 가능성이 높은 진단은? A. 대동맥판막협착증 B. 승모판막폐쇄부전 C. 비후성심근병증 D. 대동맥판막폐쇄부전 E. 승모판막협착증 노인의 운동성 실신·협심증·심부전 삼주징과 우상흉골연에서 경동맥으로 방사되는 수축기 구출성 잡음, pulsus parvus et tardus는 중증 대동맥판막협착(주로 노인성 석회화)의 특징이다. 증상 발현 시 예후가 급격히 나빠지므로 대동맥판막치환술(SAVR/TAVR)이 필요하다."
+  },
+  {
+   "id": "paper-2026-0029",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of pediatric otorhinolaryngology",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0029_postoperative_complications_after_injection_laryngoplasty_fo.md",
+   "snippet": "Title Postoperative complications after injection laryngoplasty for minor laryngeal clefts Authors Tamani Zakaria, Mercier Erika, Bergeron Mathieu Journal / DOI International journal of pediatric otorhinolaryngology · DOI: 10.1016/j.ijporl.",
+   "text": "Surgery scraped pubmed PubMed / International journal of pediatric otorhinolaryngology Title Postoperative complications after injection laryngoplasty for minor laryngeal clefts Authors Tamani Zakaria, Mercier Erika, Bergeron Mathieu Journal / DOI International journal of pediatric otorhinolaryngology · DOI: 10.1016/j.ijporl.2026.112922 · PMID: 42402231 https://pubmed.ncbi.nlm.nih.gov/42402231/ Abstract OBJECTIVE: To describe the incidence, clinical presentation, and management of postoperative complications following injection laryngoplasty for minor laryngeal clefts and to assess their impact on postoperative dysphagia evolution. METHODS: A unicentric retrospective case control study of pediatric patients who underwent injection laryngoplasty for minor laryngeal clefts (hyaluronic acid based injectable or sodium carboxymethylcellulose) between January 2018 and October 2025 in a tertiary pediatric center was conducted. Demographics, comorbidities, intraoperative variables, postoperative dysphagia outcomes, and Penetration Aspiration Scale scores were analyzed. Ordinal logistic regression was used to evaluate the overall dysphagia trajectory. RESULTS: Among 48 patients, 10 (20.8%) developed postoperative complications. Case and control groups were comparable in age, sex, weight percentiles, gestational age and most comorbidities. Operative duration, injected volume, and intraoperative antibiotic use were similar (all p 0.2). Swallowing outcomes (resolution, improvement, persistence, or worsening) did not differ between groups. Ordinal logistic regression showed no association between complications and the dysphagia trajectory (Odds ratio, OR 5.1, p = 0.2). PAS severity categories were also similar (p = 0.8). Patients with hyaluronic acid appeared to have more complications (26.5%) compared to methylcellulose (7.1%), despite not reaching statistical significance. CONCLUSION: Despite a higher than expected complication rate, postoperative inflammatory or infectious complications were not linked to worse swallowing function or higher PAS scores. These findings inform risk benefit discussions and support informed shared decision making with families regarding minor cleft treatment options. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0028",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Maternal & child nutrition",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0028_determinants_of_infant_and_young_child_feeding_practices_of_.md",
+   "snippet": "Title Determinants of Infant and Young Child Feeding Practices of Children With Severe Acute Malnutrition in Agrarian and Pastoralist Settings of Ethiopia Authors Areb Mohammed, Huybregts Lieven, Tamiru Dessalegn, Touré Mariama, Biru Bayise",
+   "text": "Pediatrics scraped pubmed PubMed / Maternal & child nutrition Title Determinants of Infant and Young Child Feeding Practices of Children With Severe Acute Malnutrition in Agrarian and Pastoralist Settings of Ethiopia Authors Areb Mohammed, Huybregts Lieven, Tamiru Dessalegn, Touré Mariama, Biru Bayise, Fall Talla, Haddis Alemayehu, Belachew Tefera Journal / DOI Maternal & child nutrition · DOI: 10.1111/mcn.70217 · PMID: 42402167 https://pubmed.ncbi.nlm.nih.gov/42402167/ Abstract Previous research has established determinants of young child feeding (IYCF) practices in the general child population, but determinants of these practices in children with severe acute malnutrition (SAM) are unknown. This study assessed the determinants of IYCF practices among children aged 6 23 months with SAM and under SAM treatment in a pastoralist and a predominantly agrarian setting in Ethiopia. As part of the baseline survey for the R SWITCH cluster randomized control trial, we screened ~28,000 under fives and included 486 children aged 6 23 months with SAM and under SAM treatment. Multivariable regression analysis was used to identify determinants on household, caregiver and child levels. Minimum meal frequency (MMF) was similar between children from the agrarian (53.9%) and pastoralist (51.9%) setting. The prevalence of children with minimum dietary diversity (MDD) was low overall but higher among pastoralist children (31.5%) than children from the agrarian setting (19.0%; p = 0.012). The consumption of egg/flesh foods was lower among pastoralist children (5.6%) than agrarian children (16.9%, p = 0.085). Caregiver literacy was positively associated with a higher likelihood of MMF (IRR = 1.21; 95% CI:1.02 1.43; p = 0.030), while caregiver depression was associated with a lower likelihood of MMF (RR = 0.97; 95% CI:0.95 0.99; p = 0.003). Improved water source (RR = 1.59; 95% CI:1.06 2.38; p = 0.037), caregiver literacy (RR = 2.04; 95% CI:1.25 3.34; p = 0.002), caregiver MDD (RR = 2.21; 95% CI:1.60 3.05; p ≤ 0.001), older children(RR = 1.05; 95% CI: 1.02 1.08;p ≤ 0.001), and pastoralist setting (RR = 1.62; 95% CI:1.07 2.44; p = 0.014) were associated with a significantly higher likelihood of meeting MDD. Conversely, caregiver depression (RR = 0.94; 95% CI:0.90 0.97; p < 0.001), caregiver mobility restriction (IRR = 0.94; 95% CI:0.89 1.00; p = 0.025), and food insecurity (RR = 0.64; 95% CI:0.41 1.01; p = 0.05) were associated with reduced MDD likelihood. Caregiver community involvement (IRR = 1.12; 95% CI:1.00 1.26; p = 0.038), caregiver MDD (RR = 1.67; 95% CI:1.10 2.53; p = 0.043), and older children (RR = 1.08; 95% CI:1.05 1.12; p < 0.001) were associated with increased egg/flesh food consumption among children, while living in a pastoralist setting was associated with reduced it (RR = 0.36; 95% CI:0.13 0.97; p = 0.038). Integrated and Targeted interventions recommended: caregiver literacy/depression support to improve IYCF; livelihood specific foods (eggs/flesh, fruits/vegetables); WaSH enhancements; community engagement; and IYCF counseling within CMAM programs. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0027",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Orvosi hetilap",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0027_the_application_of_artificial_intelligence_in_healthcare_ben.md",
+   "snippet": "Title [The application of artificial intelligence in healthcare: benefits, challenges, and issues of responsibility] Authors Pásztor Ibolya, Papp Annamária, Bíró Klára, Bányai Márton Gábor, Papp Zoltán Journal / DOI Orvosi hetilap · DOI: 10",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Orvosi hetilap Title [The application of artificial intelligence in healthcare: benefits, challenges, and issues of responsibility] Authors Pásztor Ibolya, Papp Annamária, Bíró Klára, Bányai Márton Gábor, Papp Zoltán Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33592 · PMID: 42402141 https://pubmed.ncbi.nlm.nih.gov/42402141/ Abstract INTRODUCTION AND OBJECTIVE: Artificial intelligence is playing an increasingly important role in healthcare, particularly in diagnostics, clinical decision support, personalized medicine, robotics, administration, and medical education. At the same time, the clinical use of artificial intelligence raises not only technological opportunities but also ethical, data protection, and legal challenges. The aim of our study was to provide an integrated overview of the main benefits and risks of artificial intelligence applications in healthcare, with particular emphasis on liability related issues. METHOD: We conducted an interdisciplinary, narrative critical review of the literature. Scientific and regulatory sources were analyzed using content analysis, thematic analysis, and critical discourse analysis, with the integration of clinical, ethical, legal, and data protection perspectives. RESULTS: Based on the reviewed literature, artificial intelligence may improve diagnostic accuracy, support personalized decision making, reduce administrative burden, contribute to better access to care, and create new opportunities in robotics and medical education. However, algorithmic bias, the lack of transparency resulting from the \"black box\" nature of many artificial intelligence systems, data protection and cybersecurity risks, as well as uncertainties related to social acceptance, represent major challenges. Our most important finding is that these issues converge in the question of clinical liability, while the traditional physician centered model of responsibility appears increasingly insufficient. CONCLUSION: The use of artificial intelligence in healthcare can only be sustainable and legitimate within an integrated, liability centered framework. Reconsidering the distribution of responsibilities among developers, healthcare institutions, and clinicians, as well as strengthening institutional guarantees of transparency, human oversight, patient autonomy, and data protection is essential for the safe implementation of artificial intelligence in healthcare. Orv Hetil. 2026; 167(27): 1079 1087. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0026",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The American journal of case reports",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0026_surgical_septal_myectomy_and_atrial_myxoma_resection_two_dis.md",
+   "snippet": "Title Surgical Septal Myectomy and Atrial Myxoma Resection: Two Diseases, One Heart, and a Case Report Authors Garcia Leonardo Rufino, Felicio Marcello Laneza, Cury Julia Bortoleto, Okoshi Marina Politi, Okoshi Katashi Journal / DOI The Ame",
+   "text": "Pathology scraped pubmed PubMed / The American journal of case reports Title Surgical Septal Myectomy and Atrial Myxoma Resection: Two Diseases, One Heart, and a Case Report Authors Garcia Leonardo Rufino, Felicio Marcello Laneza, Cury Julia Bortoleto, Okoshi Marina Politi, Okoshi Katashi Journal / DOI The American journal of case reports · DOI: 10.12659/AJCR.953036 · PMID: 42401996 https://pubmed.ncbi.nlm.nih.gov/42401996/ Abstract BACKGROUND The coexistence of cardiac myxoma and hypertrophic cardiomyopathy is exceedingly rare and poses diagnostic and therapeutic challenges. While atrial myxomas may cause acute hemodynamic compromise, concomitant left ventricular outflow tract obstruction (LVOTO) due to hypertrophic cardiomyopathy can remain clinically underestimated, raising uncertainty regarding the optimal timing of septal reduction therapy. CASE REPORT A 38 year old man was admitted with acute dyspnea and hypoxemia. Imaging revealed pulmonary congestion and a large left atrial mass causing functional mitral stenosis. Transthoracic echocardiography demonstrated asymmetric septal hypertrophy (maximum thickness 25 mm) with dynamic LVOTO and a mobile left atrial mass consistent with myxoma. The patient underwent surgical resection of the tumor with concomitant septal myectomy. Histopathology confirmed atrial myxoma and myocardial hyperplasia. Postoperatively, complete atrioventricular block required permanent dual chamber pacemaker implantation. At short term follow up, the patient was asymptomatic with mild residual LVOTO. CONCLUSIONS This case underscores the importance of comprehensive structural and functional assessment in patients with intracardiac tumors. In young patients with favorable prognostic features and significant left atrial dilatation, early septal myectomy performed concomitantly with tumor resection may be justified, even when resting LVOT gradients are below conventional thresholds. This strategy aligns with the latest American and European guidelines on cardiomyopathies and may prevent delayed intervention and disease progression. The case also highlights atrioventricular block as a relevant complication of surgical myectomy, reinforcing the need for careful perioperative planning. Overall, this report provides an instructive example of individualized surgical decision making in complex cardiomyopathy presentations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0025",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Annals of pharmacotherapy",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0025_impact_of_early_dose_adjustment_of_piperacillin_tazobactam_o.md",
+   "snippet": "Title Impact of Early Dose Adjustment of Piperacillin/Tazobactam on Mortality in Critically Ill Patients With Acute Kidney Injury: A Retrospective Multicenter Cohort Study Authors Saad Mohamed Omar, Abdul Aziz Mohd Hafiz, Rachid Ousama, Moh",
+   "text": "Nephrology scraped pubmed PubMed / The Annals of pharmacotherapy Title Impact of Early Dose Adjustment of Piperacillin/Tazobactam on Mortality in Critically Ill Patients With Acute Kidney Injury: A Retrospective Multicenter Cohort Study Authors Saad Mohamed Omar, Abdul Aziz Mohd Hafiz, Rachid Ousama, Mohamed Ibrahim Mohamed Izham Journal / DOI The Annals of pharmacotherapy · DOI: 10.1177/10600280261452547 · PMID: 42402098 https://pubmed.ncbi.nlm.nih.gov/42402098/ Abstract BACKGROUND: Acute kidney injury (AKI) is common in critically ill patients, but the optimal dosing of beta lactam antibiotics in this setting remains controversial. It is not known whether the benefit of initiating beta lactams at normal doses outweighs the risk of accumulation and toxicity. OBJECTIVE: We aimed to evaluate the association between early dose adjustment of piperacillin/tazobactam (PT) and 28 day intensive care unit (ICU) mortality in critically ill patients with AKI. METHODS: We conducted a retrospective multicenter cohort study using the eICU Collaborative Research Database v2.0 and included adult ICU patients with AKI who received PT and had a pretreatment serum creatinine level corresponding to an estimated glomerular filtration rate (eGFR) <40 mL/min/1.73 m2. The exposure was PT dose in the first 24 hours, which was categorized as normal (≥13.5 g/24 h) or adjusted (<13.5 g/24 h). The primary outcome was 28 day ICU mortality. RESULTS: Among 1639 eligible patients, 224 (13.7%) received normal dose PT and 1415 (86.3%) received adjusted doses. The overall 28 day ICU mortality was 11%, with significantly lower mortality in the normal dose group (6.7%) compared with the adjusted dose group (11.7%) (unadjusted odds ratio [OR] 1.85, 95% confidence interval [CI] 1.07 3.20; P = .028). After multivariable adjustment, early dose adjustment was independently associated with higher 28 day ICU mortality (adjusted OR 2.11, 95% CI 1.13 3.96; P = .020). Results were consistent across multiple subgroup and sensitivity analyses, but statistical significance was attenuated when the Chronic Kidney Disease Epidemiology Collaboration (CKD EPI) equation was used for eGFR estimation. CONCLUSION AND RELEVANCE: Early dose adjustment of PT in critically ill patients with AKI is associated with increased 28 day ICU mortality. This finding suggests that renal dose adjustment of PT should be deferred beyond the first 24 hours of therapy in this population. Prospective studies are needed to confirm this finding, define the optimal timing of subsequent dose adjustments, and assess safety outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0024",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of intensive care",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0024_longitudinal_immune_inflammatory_profiles_and_mortality_in_o.md",
+   "snippet": "Title Longitudinal immune inflammatory profiles and mortality in older adults with sepsis: a multicentre prospective cohort study Authors Wang Xianwen, Fu Miaomiao, Li Chunhui, Jin Jialin, Cui Na, Liao Xuelian, Wang Zhanwen, Zuo Zhihong, et",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of intensive care Title Longitudinal immune inflammatory profiles and mortality in older adults with sepsis: a multicentre prospective cohort study Authors Wang Xianwen, Fu Miaomiao, Li Chunhui, Jin Jialin, Cui Na, Liao Xuelian, Wang Zhanwen, Zuo Zhihong, et al. Journal / DOI Journal of intensive care · DOI: 10.1186/s40560 026 00902 6 · PMID: 42401956 https://pubmed.ncbi.nlm.nih.gov/42401956/ Abstract BACKGROUND: Older adults are at high risk of sepsis, but the immune inflammatory features distinguishing sepsis from nonsevere infection and their prognostic relevance remain incompletely defined. We aimed to characterize immune inflammatory profiles across the older adult infection spectrum and evaluate their longitudinal association with in hospital mortality. METHODS: In this multicentre prospective observational cohort, 1,851 participants aged ≥ 60 years were enrolled, including healthy controls, patients with nonsevere infection, and patients with sepsis. Immune cell subsets, cytokines, complement components, and routine laboratory indices were assessed. Adjusted cross sectional comparisons were performed using multivariable linear regression. Among patients with sepsis, model estimated longitudinal profiles from intensive care unit (ICU) day 1 to day 7 were analysed using linear mixed effects models among available scheduled measurements, and day 1 biomarkers associated with in hospital mortality were evaluated using Cox regression. RESULTS: The cohort included 524 healthy controls, 511 patients with nonsevere infection, and 816 patients with sepsis. Across the infection spectrum, sepsis was characterized by progressively lower circulating lymphocyte, T cell, cluster of differentiation 8 (CD8+) T cell, and natural killer (NK) cell counts, together with higher interleukin (IL) 6, IL 8, and IL 10 levels. These differences remained after adjustment for age, sex, and major comorbidities. Among patients with available follow up measurements, non survivors had consistently higher Sequential Organ Failure Assessment (SOFA) scores, IL 6, and IL 10 and lower lymphocyte, T cell, CD8⁺ T cell, NK cell, and complement component 3 (C3) levels. No time by outcome interaction remained significant after false discovery rate correction. In multivariable Cox models, higher day 1 SOFA score and IL 10 were associated with increased in hospital mortality, whereas higher NK cell count was associated with lower mortality. CONCLUSIONS: In older adults, sepsis was associated with an adjusted circulating immune inflammatory pattern characterized by lower cellular immune markers and higher cytokine levels. This separation was evident on ICU day 1 and remained observable among patients with available follow up measurements. Given the observational design, these associations should not be interpreted as causal. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0023",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Echocardiography (Mount Kisco, N.Y.)",
+   "confidence": "medium",
+   "date": "2026-07-05",
+   "path": "content/papers/2026/2026-07-05_paper-2026-0023_left_atrial_appendage_mechanical_dysfunction_in_de_novo_orga.md",
+   "snippet": "Title Left Atrial Appendage Mechanical Dysfunction in De Novo Organized Left Atrial Tachyarrhythmia: A Multicenter Pre Ablation Study Authors Wójcik Maciej, Błaszkiewicz Paweł, Bińkowski Bartłomiej, Kiliszek Marek, Denysiuk Piotr, Kucejko T",
+   "text": "Cardiology scraped pubmed PubMed / Echocardiography (Mount Kisco, N.Y.) Title Left Atrial Appendage Mechanical Dysfunction in De Novo Organized Left Atrial Tachyarrhythmia: A Multicenter Pre Ablation Study Authors Wójcik Maciej, Błaszkiewicz Paweł, Bińkowski Bartłomiej, Kiliszek Marek, Denysiuk Piotr, Kucejko Tomasz Journal / DOI Echocardiography (Mount Kisco, N.Y.) · DOI: 10.1111/echo.70545 · PMID: 42402187 https://pubmed.ncbi.nlm.nih.gov/42402187/ Abstract PURPOSE: Whether de novo organized left atrial tachyarrhythmia (LAT) shows preserved left atrial appendage (LAA) mechanics has not been adequately characterized. We compared LAA peak emptying velocity across atrial fibrillation (AF) phenotypes and de novo LAT. METHODS: Multicenter retrospective cohort of 634 consecutive first ablation candidates undergoing pre ablation transesophageal echocardiography (TEE) at five centers: paroxysmal AF (PAF, n = 146), persistent AF (PeAF, n = 310), long standing persistent AF (LsPeAF, n = 86), and LAT (n = 92). Markedly reduced LAA function was peak emptying velocity <25 cm/s. Multivariable regression adjusted for rhythm during TEE, CHA2DS2 VASc, body mass index (BMI), left ventricular ejection fraction (LVEF), and left atrial (LA) diameter. RESULTS: Mean LAA velocity was 55.7 ± 19.4 (PAF), 44.3 ± 18.5 (PeAF), 31.0 ± 12.5 (LsPeAF), and 36.6 ± 13.5 cm/s (LAT); p < 0.001. LAT lay closer to LsPeAF than to PAF and did not differ from LsPeAF (Tukey p = 0.140). Prevalence of velocity <25 cm/s: 2.7%, 11.9%, 32.6% and 18.5% (p < 0.001). After adjustment, larger LA diameter (β = 0.53/mm, p < 0.001) and higher CHA2DS2 VASc (β = 1.93/point, p < 0.001) were independently associated with lower velocity. Compared with LAT, PAF had lower odds of velocity <25 cm/s (OR 0.19, 95% CI 0.06 0.62). CONCLUSION: De novo organized LAT exhibits LAA mechanical dysfunction comparable to long standing persistent AF rather than to PAF. Organized rhythm does not imply preserved appendage function. LAA peak emptying velocity may serve as a functional remodeling marker for pre ablation phenotyping. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0022",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0022_biomechanical_assessment_of_functional_tasks_beyond_level_wa.md",
+   "snippet": "Title Biomechanical Assessment of Functional Tasks Beyond Level Walking Following Total Hip Arthroplasty: A Scoping Review Authors M'barki Haithem, Lavoie Hudon Ariane, Gagnon Martine, Turcot Katia, Belzile Etienne L Journal / DOI Journal o",
+   "text": "Surgery scraped pubmed PubMed / Journal of orthopaedic research : official publication of the Orthopaedic Research Society Title Biomechanical Assessment of Functional Tasks Beyond Level Walking Following Total Hip Arthroplasty: A Scoping Review Authors M'barki Haithem, Lavoie Hudon Ariane, Gagnon Martine, Turcot Katia, Belzile Etienne L Journal / DOI Journal of orthopaedic research : official publication of the Orthopaedic Research Society · DOI: 10.1002/jor.70245 · PMID: 42400315 https://pubmed.ncbi.nlm.nih.gov/42400315/ Abstract The aim of this scoping review was to summarize and to synthesize the existing literature on the most performed functional tasks and their associated biomechanical outcomes following total hip arthroplasty (THA). Five databases, including Medline, Embase, CINAHL, Web of Science, and Ergonomics Abstracts were searched based on 3 main concepts: Total hip arthroplasty, functional tasks and biomechanical outcomes. Studies were screened based on titles and abstracts, followed by a full text reading conducted by two authors following inclusion and exclusion criteria. Eighty three studies with a total of 2047 THA and 170 hip resurfacing arthroplasty (HRA) patients were included. Postural balance was the most frequently evaluated functional task, followed by sit to stand and stair negotiation. Most participants were older than 60 years, and the surgical approach was infrequently reported. Patient reported outcome measures were rarely reported alongside motion analysis, with the Harris hip score and the Oxford Hip Score being the most commonly used. Factors such as age, population characteristics, surgical approaches and follow up durations may influence the biomechanical outcomes of hip replacement. Therefore, caution is warranted when generalizing these findings to all THA population. Further research on young THA and HRA patients in more demanding task such as squat and work related tasks are required to better understand functional recovery and implant performance under higher mechanical loads. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0021",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR research protocols",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0021_the_effects_of_neuromuscular_electrical_stimulation_and_leap.md",
+   "snippet": "Title The Effects of Neuromuscular Electrical Stimulation and Leap Motion Based Exercises on Hand Function Parameters in Children With Cerebral Palsy: Study Protocol for a Randomized Controlled Trial Authors Özlü Erdoğan Hande, Aras Bayram ",
+   "text": "Pediatrics scraped pubmed PubMed / JMIR research protocols Title The Effects of Neuromuscular Electrical Stimulation and Leap Motion Based Exercises on Hand Function Parameters in Children With Cerebral Palsy: Study Protocol for a Randomized Controlled Trial Authors Özlü Erdoğan Hande, Aras Bayram Gülay, Targıt Akbaşak Sema, Tarakcı Devrim Journal / DOI JMIR research protocols · DOI: 10.2196/94705 · PMID: 42398049 https://pubmed.ncbi.nlm.nih.gov/42398049/ Abstract BACKGROUND: Cerebral palsy (CP) is a group of permanent but nonprogressive disorders that affect movement and posture, often accompanied by upper extremity impairments such as abnormal muscle tone, spasticity, weakness, and impaired motor control. Neuromuscular electrical stimulation (NMES) and Leap Motion based interventions that promote neuroplasticity through different mechanisms. However, studies directly comparing these 2 approaches in children with spastic CP are limited. OBJECTIVE: This study primarily aims to investigate the effects of NMES and Leap Motion based exercise interventions on hand function in children with spastic CP and to compare the effectiveness of these 2 modalities. The secondary objective is to evaluate and compare the effects of these interventions on wrist extensor muscle activation, wrist joint range of motion, selective motor control, and hand use in daily activities. METHODS: This study is a 2 arm, parallel group randomized controlled trial with a 1:1 allocation ratio and will include 30 children aged 6 15 years with spastic CP and distal upper extremity involvement. All participants meeting the inclusion criteria will undergo baseline assessments at T0, where wrist range of motion will be measured using an electronic goniometer; selective motor control will be evaluated using the Selective Control of the Upper Extremity Scale (SCUES); hand function will be assessed using the Jebsen Taylor Hand Function Test; daily hand use will be evaluated using the ABILHAND Kids questionnaire; and wrist extensor and flexor muscle activation will be assessed using surface electromyography (sEMG). All participants will then undergo a 4 week conventional exercise program (3 sessions per week, 40 minutes per session). At the end of the 4 weeks, all baseline measurements will be repeated (T1). Subsequently, participants will be randomly assigned into 2 groups: the Leap Motion group (n=15) and the NMES group (n=15). Both groups will participate in an 8 week exercise program consisting of 3 sessions per week, 60 minutes per session (including 20 minutes of either Leap Motion based exercise or NMES application, followed by 40 minutes of conventional exercise). At the end of this 8 week program, all assessments will be repeated (T2). RESULTS: Data collection started in January 2026. The study is expected to be completed by September 2026. CONCLUSIONS: To our knowledge, the study will be the first randomized controlled study to evaluate and compare the effects of NMES and Leap Motion based training on hand functions in children with spastic CP. The findings are expected to contribute to evidence based clinical practice by guiding the selection of effective upper extremity rehabilitation strategies for pediatric populations. Findings may inform future rehabilitation protocols by highlighting the benefits of integrating advanced technology based interventions alongside conventional therapy approaches. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0020",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Developmental medicine and child neurology",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0020_predictive_ability_of_the_hammersmith_neonatal_neurological_.md",
+   "snippet": "Title Predictive ability of the Hammersmith Neonatal Neurological Examination for identifying severe neurodevelopmental impairment in infants born very preterm Authors Liu Jiarui, Baral Vijayendra Ranjan, Ereno Imelda Lustestica, Zainal Kel",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Developmental medicine and child neurology Title Predictive ability of the Hammersmith Neonatal Neurological Examination for identifying severe neurodevelopmental impairment in infants born very preterm Authors Liu Jiarui, Baral Vijayendra Ranjan, Ereno Imelda Lustestica, Zainal Kelly Ann, Ong Jaslyn, Chua Jing Shi, Yeo Joo Guan, Yeo Cheo Lian Journal / DOI Developmental medicine and child neurology · DOI: 10.1111/dmcn.70391 · PMID: 42400163 https://pubmed.ncbi.nlm.nih.gov/42400163/ Abstract AIM: To evaluate the predictive ability of the Hammersmith Neonatal Neurological Examination (HNNE) at term corrected age (TCA) for severe neurodevelopmental impairments at 2 years corrected age in infants born very preterm. METHOD: This retrospective study evaluated 88 infants, born at less than 29 weeks' gestation or weighing less than 1250 g using the HNNE at TCA (37 + 0 to 41 + 6 weeks). Neurodevelopmental outcomes at 2 years corrected age were determined using the Bayley Scales of Infant and Toddler Development. The diagnostic accuracy of the HNNE was assessed according to its ability to predict severe motor (< 74.5), cognitive, and language (< 71.2) impairments. RESULTS: The HNNE demonstrated moderate diagnostic performance for severe motor impairment (sensitivity = 75.0%, specificity = 64.5%, area under the curve [AUC] = 0.80), with lower scores associated with poorer outcomes (median = 20.3; p = 0.04). Performance was weaker for cognitive (sensitivity = 66.7%, specificity = 61.9%, AUC = 0.73) and language (sensitivity = 44.4%, specificity = 63.0%, AUC = 0.62) outcomes. High negative predictive values (NPV) across all domains (NPV = 98.0%, 98.1%, 90.2%) indicated low risk of impairment with optimal scores. INTERPRETATION: The HNNE is a reliable early screening tool for severe motor and cognitive impairment at 2 years corrected age in infants born very preterm. Future studies should examine individual HNNE subscales and their integration with complementary tools to improve comprehensive neurodevelopmental risk stratification. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0019",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of craniofacial surgery",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0019_endoscopic_transcaruncular_approach_for_early_anterior_ethmo.md",
+   "snippet": "Title Endoscopic Transcaruncular Approach for Early Anterior Ethmoidal Artery Cauterization in Large Olfactory Groove Meningioma Surgery: Intraoperative Video Authors Choi Jae Min, Baek Sang Oon, Chung Dong Sup, Yoon Wan Soo Journal / DOI T",
+   "text": "Pathology scraped pubmed PubMed / The Journal of craniofacial surgery Title Endoscopic Transcaruncular Approach for Early Anterior Ethmoidal Artery Cauterization in Large Olfactory Groove Meningioma Surgery: Intraoperative Video Authors Choi Jae Min, Baek Sang Oon, Chung Dong Sup, Yoon Wan Soo Journal / DOI The Journal of craniofacial surgery · DOI: 10.1097/SCS.0000000000013093 · PMID: 42400282 https://pubmed.ncbi.nlm.nih.gov/42400282/ Abstract Large olfactory groove meningiomas (OGMs) derive their primary blood supply from the anterior and posterior ethmoidal arteries (AEA/PEA), which are inaccessible early during conventional subfrontal craniotomy, resulting in massive intraoperative hemorrhage. A 61 year old man presented with altered consciousness and incoherent speech, which revealed a giant anterior skull base meningioma with bilateral optic nerve encasement and ethmoid sinus invasion, with digital subtraction angiography confirming bilateral AEA/PEA as the dominant feeder. We used a staged hybrid strategy in which bilateral AEA cauterization through an endoscopic transcaruncular approach was performed before bifrontal craniotomy. This staged devascularization markedly reduced intraoperative hemorrhage and facilitated near total resection. Histopathology confirmed an atypical meningioma, and 2 year follow up MRI revealed no recurrence. Single staged hybrid surgery incorporating endoscopic transcaruncular AEA cauterization is a safe and minimally invasive adjunct for large OGM surgery. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0018",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / FEBS letters",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0018_the_dual_role_of_lectins_in_cancer_immunotherapy_tools_and_t.md",
+   "snippet": "Title The dual role of lectins in cancer immunotherapy tools and therapeutic targets Authors Dziewicka Milena, Graczyk Jarzynka Agnieszka Journal / DOI FEBS letters · DOI: 10.1002/1873 3468.70406 · PMID: 42400321 https://pubmed.ncbi.nlm.nih",
+   "text": "Hematology-Oncology scraped pubmed PubMed / FEBS letters Title The dual role of lectins in cancer immunotherapy tools and therapeutic targets Authors Dziewicka Milena, Graczyk Jarzynka Agnieszka Journal / DOI FEBS letters · DOI: 10.1002/1873 3468.70406 · PMID: 42400321 https://pubmed.ncbi.nlm.nih.gov/42400321/ Abstract Altered glycosylation is a hallmark of cancer that shapes immune recognition within the tumor microenvironment. Lectins glycan binding proteins play a dual role in this process: they interpret tumor associated glycan patterns and can also be exploited as therapeutic tools. In this review, we discuss emerging strategies that harness lectins in cancer immunotherapy. Engineered lectin based constructs, including antibody lectin chimeras, lectin drug conjugates, and glycan targeting CAR T cells, enable recognition of tumor specific glycosylation signatures. At the same time, endogenous lectin pathways such as the galectin polyLacNAc and sialic acid Siglec axes function as glyco immune checkpoints that suppress anti tumor responses and represent promising therapeutic targets. Understanding how lectins regulate tumor immune interactions may guide the development of next generation immunotherapies integrating antigen recognition with glycan sensing. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0017",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetology & metabolic syndrome",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0017_a_putative_sglt_relevant_mechanistic_perspective_on_querceti.md",
+   "snippet": "Title A putative SGLT relevant mechanistic perspective on quercetin 3 O glucoside and rutin in diabetic kidney disease Authors Harbuwono Dante Saksono, Wardhani Yulia, Hadinata Edwin, Rohmah Siti Nur, Hendrawan Adha Fauzi, Ambari Ade Meidia",
+   "text": "Nephrology scraped pubmed PubMed / Diabetology & metabolic syndrome Title A putative SGLT relevant mechanistic perspective on quercetin 3 O glucoside and rutin in diabetic kidney disease Authors Harbuwono Dante Saksono, Wardhani Yulia, Hadinata Edwin, Rohmah Siti Nur, Hendrawan Adha Fauzi, Ambari Ade Meidian, Puspitasari Metalia, Kuswadi Danny Pratama, et al. Journal / DOI Diabetology & metabolic syndrome · DOI: 10.1186/s13098 026 02233 w · PMID: 42399973 https://pubmed.ncbi.nlm.nih.gov/42399973/ Abstract BACKGROUND: Type 2 diabetes mellitus (T2DM) is escalating worldwide and remains difficult to control durably, in part because progressive β cell dysfunction undermines many therapies and because long term management must balance efficacy, safety, and affordability. Recent decades have shown that targeting sodium glucose cotransporters (SGLTs) especially renal SGLT2 can reduce glucose levels independently of insulin and, crucially, deliver cardio renal benefits that extend beyond glycaemic control. Yet, despite the clinical success of synthetic \"gliflozins\", gaps remain, adverse events, incomplete inhibition of renal glucose reabsorption, and limited access in some health systems. METHODS: This review focuses on two quercetin glycosides quercetin 3 O glucoside (isoquercitrin) and quercetin 3 O rutinoside (rutin) as potential SGLT focused modulators. This study employed a narrative mechanistic review approach integrating published experimental evidence, physicochemical structure activity relationship (SAR) analysis, and exploratory molecular docking to examine potential SGLT related interactions and complementary glucose regulatory pathways of Q3G and rutin. RESULTS: We synthesise mechanistic evidence suggesting that Q3G and rutin may modulate SGLT related pathways through intestinal SGLT1 interaction, regulation of renal SGLT2 expression, and complementary glucose regulatory mechanisms. However, direct inhibition of human SGLT2 transport activity has not yet been experimentally demonstrated, and current evidence predominantly may indicate indirect pathway modulation rather than gliflozin like transporter inhibition. Contradictory findings across assay systems are discussed in relation to structure activity relationships shaped by glycosylation. We further examine pharmacokinetics, tissue exposure plausibility, and translational feasibility, and propose a stepwise development roadmap emphasising transporter specific assays, quantitative target engagement, and clinically meaningful biomarkers. CONCLUSION: Q3G and rutin may exhibit putative SGLT relevant activity within a broader polypharmacological framework; however, direct transporter specific inhibition and clinically relevant renal exposure remain to be established through future functional and translational studies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0016",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JPEN. Journal of parenteral and enteral nutrition",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0016_association_between_glim_defined_malnutrition_and_in_hospita.md",
+   "snippet": "Title Association between GLIM defined malnutrition and in hospital costs in adults with sepsis: A sub analysis of a prospective cohort study Authors Hashimoto Yuki, Yoshida Minoru, Miyagi Tomoka, Kariya Akane, Tanoue Hitomi, Kanda Naoki, H",
+   "text": "Infectious Disease scraped pubmed PubMed / JPEN. Journal of parenteral and enteral nutrition Title Association between GLIM defined malnutrition and in hospital costs in adults with sepsis: A sub analysis of a prospective cohort study Authors Hashimoto Yuki, Yoshida Minoru, Miyagi Tomoka, Kariya Akane, Tanoue Hitomi, Kanda Naoki, Hoshi Yusuke, Fujita Takahiro, et al. Journal / DOI JPEN. Journal of parenteral and enteral nutrition · DOI: 10.1002/jpen.70120 · PMID: 42400337 https://pubmed.ncbi.nlm.nih.gov/42400337/ Abstract BACKGROUND: International statements suggest using the Global Leadership Initiative on Malnutrition (GLIM) criteria in intensive care units (ICUs); however, the economic impact of GLIM defined malnutrition in sepsis remains unclear. This study investigated the association between GLIM defined malnutrition and in hospital costs in sepsis. METHODS: We conducted a sub analysis of the prospective cohort study, Investing Long term Outcomes of Sepsis or Septic shock, among medically managed critically ill patients with sepsis in 15 Japanese ICUs. Associations between GLIM defined malnutrition and cost categories (low, moderate, and high) were assessed using multinomial logistic regression (reference: low cost group), adjusted for age, sex, Charlson Comorbidity Index, and Sequential Organ Failure Assessment score. Individual GLIM components were also examined. Total in hospital costs and secondary outcomes were compared between malnutrition and non malnutrition groups using inverse probability of treatment weighting. RESULTS: Among 259 patients, 111 had GLIM defined malnutrition. GLIM defined malnutrition was associated with both the moderate cost (adjusted odds ratio [AOR]: 2.03, 95% confidence interval [CI]: 1.05 3.89) and high cost classifications (AOR: 2.27, 95% CI: 1.20 4.29). Among GLIM components, reduced muscle mass (AOR: 1.95, 95% CI: 1.04 3.68) and reduced food intake (AOR: 2.61, 95% CI: 1.39 4.92) were associated with the high cost classification. After weighting, the malnutrition group had significantly higher median in hospital costs (24,959 vs. 18,651 USD), longer hospital stays, and longer ICU stays than the non malnutrition group. CONCLUSIONS: GLIM defined malnutrition particularly reduced muscle mass and reduced food intake was associated with higher in hospital costs in sepsis and may be a potential indicator of high cost hospitalization. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0015",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Lupus",
+   "confidence": "medium",
+   "date": "2026-07-04",
+   "path": "content/papers/2026/2026-07-04_paper-2026-0015_association_of_systemic_lupus_erythematosus_with_90_day_read.md",
+   "snippet": "Title Association of systemic lupus erythematosus with 90 day readmission following heart failure hospitalization: A national readmission database (NRD) analysis, 2016 2017 Authors Malik Farheen, Saad Muhammad, Javaid Minahil, Gul Fatima, Z",
+   "text": "Cardiology scraped pubmed PubMed / Lupus Title Association of systemic lupus erythematosus with 90 day readmission following heart failure hospitalization: A national readmission database (NRD) analysis, 2016 2017 Authors Malik Farheen, Saad Muhammad, Javaid Minahil, Gul Fatima, Zafar Meerub Fatima, Khan Rai Muhammad Umar, Ali Syed Nosherwan, Tahir Rija, et al. Journal / DOI Lupus · DOI: 10.1177/09612033261465925 · PMID: 42400355 https://pubmed.ncbi.nlm.nih.gov/42400355/ Abstract BackgroundSystemic lupus erythematosus is a chronic autoimmune disease associated with heightened cardiovascular risk. Data on the impact of systemic lupus erythematosus on outcomes following heart failure hospitalization remain limited. This study aimed to evaluate whether systemic lupus erythematosus is independently associated with 90 days readmission and other clinical outcomes among patients hospitalized with heart failure.MethodsWe conducted a retrospective cohort study using the 2016 2017 Nationwide Readmissions Database to evaluate the association of systemic lupus erythematosus with 90 days readmission after heart failure hospitalization. Adults ≥18 years with an index admission for heart failure were included. The primary outcome was 90 days all cause readmission. Secondary outcomes included in hospital mortality, median length of stay, and hospitalization costs. Multivariable Cox proportional hazards were used to identify independent predictors of outcomes.ResultsAmong 1,625,731 patients hospitalized with heart failure, 9096 had comorbid systemic lupus erythematosus. Compared with non systemic lupus erythematosus patients, those with systemic lupus erythematosus were younger (mean age 61 vs 72 years), predominantly female, and more likely to have socioeconomic disadvantage and a higher comorbidity burden. The 90 days readmission rate was significantly higher in the systemic lupus erythematosus cohort (41%) versus the non systemic lupus erythematosus cohort (34%) (HR: 1.07; 95% CI: 1.02 1.12; p = 0.010). In hospital mortality did not differ significantly between groups; however, mortality during readmissions was nearly doubled compared with index admissions (5.4% vs 2.9%). SLE patients had a median length of stay of 4 days (vs 4 days in non SLE) and incurred median hospitalization costs of USD 32,872 (13% higher than non SLE patients). Independent predictors of readmission included Medicaid insurance, weekend admission, renal failure, myocardial infarction, and discharge to a non home setting, whereas female sex, treatment at metropolitan teaching hospitals, and comorbid hypertension or diabetes were associated with a lower risk of readmission.ConclusionSystemic lupus erythematosus is independently associated with an increased risk of 90 days readmission following heart failure hospitalization, contributing to greater healthcare utilization and costs. These findings highlight the need for tailored strategies for transitional care, multidisciplinary follow up, and socioeconomic support. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0014",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International immunopharmacology",
+   "confidence": "medium",
+   "date": "2026-07-03",
+   "path": "content/papers/2026/2026-07-03_paper-2026-0014_the_immunopharmacological_role_of_b_cell_and_neutrophil_deri.md",
+   "snippet": "Title The immunopharmacological role of B cell and neutrophil derived extracellular vesicles in pancreatic cancer: Mechanisms of inflammation, tumor progression, and potential therapeutic targets Authors Maher Fatemeh, Samadi Ali, Sajjadi S",
+   "text": "Hematology-Oncology scraped pubmed PubMed / International immunopharmacology Title The immunopharmacological role of B cell and neutrophil derived extracellular vesicles in pancreatic cancer: Mechanisms of inflammation, tumor progression, and potential therapeutic targets Authors Maher Fatemeh, Samadi Ali, Sajjadi Seyedeh Fatemeh, Heydari Sepideh, Gross Jeffrey, Azimi Ghazal Journal / DOI International immunopharmacology · DOI: 10.1016/j.intimp.2026.117102 · PMID: 42398175 https://pubmed.ncbi.nlm.nih.gov/42398175/ Abstract Pancreatic cancer (PC) is defined by a highly orchestrated immunosuppressive and inflammatory microenvironment. Recent evidence identifies immune cell derived Extracellular vesicles (EVs) as pivotal mediators of this intercellular crosstalk. This review provides an in depth analysis of EVs derived from B lymphocytes and neutrophils, focusing on their dualistic roles in PC progression. We systematically examine the molecular mechanisms of their biogenesis, emphasizing the influence of NF κB and STAT3 signaling pathways on cargo selection, including specific miRNAs and proteins. The manuscript further explores how these EVs modulate the tumor microenvironment (TME) to promote desmoplasia and chemoresistance, while also evaluating their pharmacological potential as biomimetic nanocarriers for targeted therapy. By synthesizing recent clinical and preclinical data (up to 2025), this review highlights the dual nature of these vesicles as both drivers of malignancy and promising tools for personalized immunotherapy in pancreatic adenocarcinoma. Pancreatic ductal adenocarcinoma (PDAC) is characterized by its aggressive clinical course and a complex multifactorial etiology, including genetic predispositions like Lynch syndrome and metabolic drivers such as obesity and chronic pancreatitis. Beyond these systemic risk factors, the progression of PDAC is profoundly orchestrated by the tumor microenvironment (TME). Central to this orchestration are immune derived EVs, which act as critical mediators of intercellular communication. These vesicles facilitate tumor progression by modulating immune evasion and shaping an immunosuppressive landscape. Consequently, understanding the molecular cargo of immune derived EVs and their role in immune regulation presents a transformative frontier for developing targeted therapeutic strategies in PDAC. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0013",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medicina clinica",
+   "confidence": "medium",
+   "date": "2026-07-03",
+   "path": "content/papers/2026/2026-07-03_paper-2026-0013_effectiveness_of_cardiac_holter_monitoring_for_more_than_fou.md",
+   "snippet": "Title Effectiveness of cardiac Holter monitoring for more than four weeks for the detection of occult atrial fibrillation in embolic stroke of undetermined source Authors de Torres Chacón Reyes, Pérez Sánchez Soledad, Tamayo Toledo José Ant",
+   "text": "Cardiology scraped pubmed PubMed / Medicina clinica Title Effectiveness of cardiac Holter monitoring for more than four weeks for the detection of occult atrial fibrillation in embolic stroke of undetermined source Authors de Torres Chacón Reyes, Pérez Sánchez Soledad, Tamayo Toledo José Antonio, Villegas Inmaculada, Antonio Cabezas Juan, Fernández Dolores, Fernández Javier, Montaner Joan, et al. Journal / DOI Medicina clinica · DOI: 10.1016/j.medcli.2026.107502 · PMID: 42398144 https://pubmed.ncbi.nlm.nih.gov/42398144/ Abstract BACKGROUND: Hidden atrial fibrillation (AF) is considered a major contributor to embolic strokes of undetermined source (ESUS). Prolonged cardiac monitoring is effective for detecting AF, especially when started soon after stroke onset. METHODS: This prospective multicentre study evaluated the rate of AF detection in ESUS patients under real world clinical conditions using wearable Holter cardiac monitoring for 30 days. RESULTS: A total of 352 patients were included. The mean age was 67.8 years, and 46% were women. The AF detection rate was 17.1%, with a mean episode duration of 401.7min. Compared with patients without AF, those with AF were older (72.2 vs 67.0 years; mean difference, 5.16 years; 95% CI, 2.24 8.09; p=0.0012), had a higher frequency of large vessel occlusion (35.9% vs 17.0%; OR, 2.66; 95% CI, 1.40 5.05; p=0.002), showed larger left atrial diameter (40.4 vs 38.1mm; mean difference, 2.25mm; 95% CI, 0.56 3.95; p=0.013), and more often had excessive supraventricular ectopic activity on 24 hour Holter monitoring (37.5% vs 20.5%; OR, 2.33; 95% CI, 1.26 4.32; p=0.006). Notably, 73.3% of AF cases were detected during monitoring initiated within the first 6 months after stroke onset. CONCLUSIONS: These findings support the potential clinical utility of 30 day prolonged cardiac monitoring to detect AF in ESUS patients, highlighting its value in etiological stroke assessment in real world clinical practice, with greater efficacy during the first 30 days, but also in cases where monitoring is initiated months after the event. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "paper-2026-0012",
    "type": "paper",
