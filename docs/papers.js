@@ -2,6 +2,149 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0034",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Testing child STEPS in school-based mental health care: Cluster-randomized controlled effectiveness trial in five school districts",
+  "authors": [
+   "Weisz John R",
+   "Evans Spencer C",
+   "Price Maggi A",
+   "Lee Erica H",
+   "Hollinsaid Nathan L",
+   "Harmon Sherelle L",
+   "Rodriguez Gabriela M",
+   "Corteselli Katherine A",
+   "et al."
+  ],
+  "journal": "Journal of consulting and clinical psychology",
+  "doi": "10.1037/ccp0001014",
+  "pmid": "42406483",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42406483/",
+  "pubdate": "2026-06",
+  "date": "2026-07-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**OBJECTIVE:** More youth mental health care in the United States is provided in schools than any other setting. So, there is a need for evidence-based psychotherapies that can work well with students in those sometimes complex environments. Transdiagnostic modular therapies may help, given their flexibility and capacity to address diverse youth disorders and problems.\n\n**METHOD:** We tested this possibility by conducting a school-based cluster-randomized controlled trial of Child STEPs, an intervention that combines the Modular Approach to Therapy for Children with consultation and measurement-based care. One hundred forty-two elementary and middle school students (Mage = 9.78, SD = 1.76, range 7-14; 39% female; 59% White, 18% multiracial, 9% Black, 6% Asian, 4% Hispanic, 4% another race/ethnicity) from five urban and suburban school districts were treated by 57 school counselors who had been randomized to STEPs or usual counseling (UC).\n\n**RESULTS:** The full sample improved significantly across multiple multi-informant mental health measures-administered at baseline, during treatment, at posttreatment, and 6-month follow-up. STEPs counselors showed strong Modular Approach to Therapy for Children fidelity (coded from session recordings) and strong endorsement of Modular Approach to Therapy for Children effectiveness. However, there was no significant difference between STEPs and UC on any mental health outcome, and STEPs students showed poorer school engagement during treatment than UC students.\n\n**CONCLUSIONS:** STEPs did not outperform UC, despite strong STEPs fidelity by counselors; future research may test whether this finding is robust or might be altered by adapting evidence-based modular treatment for the school context. (PsycInfo Database Record (c) 2026 APA, all rights reserved).",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0033",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Assessment of Large Language Models and Expert Clinicians in Grading Mandibular Third Molar Extraction Difficulty",
+  "authors": [
+   "Yoon Suk Min",
+   "Yoo Jeong Hun",
+   "Kim Taejun",
+   "Kang Jae Hyun",
+   "Kim Bong Chul"
+  ],
+  "journal": "International dental journal",
+  "doi": "10.1016/j.identj.2026.109736",
+  "pmid": "42407142",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42407142/",
+  "pubdate": "2026-07-06",
+  "date": "2026-07-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** The Pederson difficulty score (PDS) is widely used to assess mandibular third molar extraction difficulty, but is subject to interobserver variability because no universally accepted reference standard exists. This study investigates whether multimodal large language models (LLMs) demonstrate systematic grading tendencies comparable to those of human clinicians in the absence of a definitive standard.\n\n**METHODS:** This retrospective cross-sectional study included 100 panoramic radiographs. Two LLMs (GPT and Gemini) and two oral and maxillofacial surgeons independently graded extraction difficulty using the PDS. No reference standard or gold-standard rater was designated; all raters were treated as independent assessors. Agreement was assessed using quadratic-weighted kappa and intraclass correlation coefficient values. Systematic bias was analysed using Bland-Altman plots and ordinal logistic regression. The effects of prompt language and session protocol were also evaluated.\n\n**RESULTS:** The interexpert agreement was substantial (κ = 0.754). GPT demonstrated moderate agreement with experts (κ = 0.564-0.590), whereas Gemini exhibited fair-to-moderate agreement (κ = 0.356-0.461). Overall, the four-rater reliability was moderate (intraclass correlation coefficient = 0.553). Both LLMs displayed minimal systematic bias (GPT: -0.13; Gemini: -0.08), with no significant differences in grading tendencies compared with human experts (P > .05). However, sequential-session evaluation significantly reduced the scoring consistency for both models (GPT: P = .001; Gemini: P < .001), whereas prompt language had no significant effect on total PDS scores (GPT: P = .543; Gemini: P = .386). A component-level linguistic variation was observed only in GPT's assessment of the ramus relationship (P = .003).\n\n**CONCLUSION:** The examined LLMs showed grading tendencies partly comparable to those of human clinicians, without evidence of systematic directional bias; however, agreement remained below interexpert levels and was sensitive to conversational context. These findings should not be interpreted as evidence of diagnostic accuracy or clinical reliability, as no reference standard was established.\n\n**CLINICAL RELEVANCE:** LLMs may provide supplementary grading information if used with independent-session protocols; however, their role in clinical decision-making requires further validation against defined outcome standards.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0032",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Artificial intelligence-based prediction of claudin 18.2 expression and immune phenotype from routine histology to guide treatment decisions in patients with gastric cancer",
+  "authors": [
+   "Kim H-D",
+   "Shin S",
+   "Hwang W",
+   "Shin J",
+   "Lee T",
+   "Hyung J",
+   "Park J",
+   "Pereira S",
+   "et al."
+  ],
+  "journal": "ESMO open",
+  "doi": "10.1016/j.esmoop.2026.108021",
+  "pmid": "42407198",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42407198/",
+  "pubdate": "2026-07-06",
+  "date": "2026-07-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** First-line treatment of gastric cancer is evolving with the integration of immune checkpoint inhibitors (ICIs) and targeted agents, complicating biomarker stratification. Claudin 18.2 (CLDN18.2) is an established target for zolbetuximab; however, immunohistochemistry (IHC) is limited by tissue requirements, cost, and turnaround time. Artificial intelligence (AI) analysis of hematoxylin and eosin (H&E)-stained slides may provide a scalable alternative. We developed and validated an AI model to predict CLDN18.2 expression from H&E slides and evaluated its clinical utility integrated with AI-derived immune phenotyping.\n\n**PATIENTS AND METHODS:** This retrospective study included three independent cohorts of patients with gastric cancer. The development cohort comprised 622 patients (497 for training and 125 for tuning). The internal validation cohort included 378 patients treated with first-line nivolumab plus chemotherapy or chemotherapy alone. The external validation cohort included 98 patients from diverse ethnic backgrounds. Whole-slide H&E-stained images were analyzed using a Vision Transformer-based AI model to predict CLDN18.2 expression. A separate AI model classified the immune microenvironment as inflamed or noninflamed. Primary outcomes were predictive performance metrics, including area under the receiver operating characteristic curve (AUROC). Secondary outcomes included progression-free survival (PFS) and overall survival (OS), stratified by AI-predicted CLDN18.2 status and immune phenotype.\n\n**RESULTS:** CLDN18.2 positivity by IHC was 42.9% (development), 36.8% (internal validation), and 25.5% (external validation). The AI model yielded AUROC values of 0.752 (internal validation) and 0.856 (external validation). In the internal validation cohort, patients with AI-predicted CLDN18.2-negative/inflamed tumors exhibited improved outcomes with nivolumab plus chemotherapy versus chemotherapy alone [PFS: hazard ratio (HR) 0.35, 95% confidence interval (CI) 0.15-0.82; OS: HR 0.40, 95% CI 0.18-0.89]. Patients with CLDN18.2-positive/noninflamed tumors showed no benefit from nivolumab plus chemotherapy.\n\n**CONCLUSIONS:** An AI model using routine histology predicted CLDN18.2 expression and immune phenotype in gastric cancer, identifying subgroups with differential benefit from ICI-based chemotherapy.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0031",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Determinants of Acute Kidney Injury After Endoscopic Retrograde Cholangiopancreatography in Patients With Liver Cirrhosis: Retrospective Observational Study",
+  "authors": [
+   "Chang Chieh Wei"
+  ],
+  "journal": "JMIR medical informatics",
+  "doi": "10.2196/87551",
+  "pmid": "42407059",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42407059/",
+  "pubdate": "2026-07-06",
+  "date": "2026-07-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Patients with cirrhosis may have acute kidney injury (AKI) after receiving endoscopic retrograde cholangiopancreatography (ERCP).\n\n**OBJECTIVE:** This study aimed to identify determinants of AKI that require dialysis following ERCP in patients with cirrhosis.\n\n**METHODS:** Data from the US Nationwide Inpatient Sample from 2016 to 2020 were retrospectively reviewed. Patients aged ≥20 years with liver cirrhosis who underwent ERCP were identified. The primary outcome was AKI requiring dialysis. Logistic regression with stepwise selection was used to identify factors associated with dialysis-requiring AKI among demographic variables, comorbidities, and hospital characteristics.\n\n**RESULTS:** Data from 6748 patients with liver cirrhosis who underwent ERCP were analyzed, and 2.2% (n=148) developed AKI that required dialysis. After adjustment, the results showed that decompensated liver cirrhosis (adjusted odds ratio [aOR] 4.73, 95% CI 3.12-7.15; P<.001), chronic kidney disease (aOR 5.93, 95% CI 4.00-8.79; P<.001), obesity (aOR 1.65, 95% CI 1.05-2.59; P=.03), and sepsis (aOR 3.57, 95% CI 2.44-5.23; P<.001) were significant factors associated with AKI that required dialysis. The developed model demonstrated good calibration and discrimination (c-index: 0.826 for derivation cohort, 0.824 for validation cohort).\n\n**CONCLUSIONS:** Decompensated liver cirrhosis, preexisting chronic kidney disease, obesity, and sepsis are significant factors associated with AKI that require dialysis following ERCP in patients with liver cirrhosis. These findings can inform risk stratification and management strategies to improve outcomes in this high-risk population.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0030",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Therapeutic strategies of traditional Chinese medicine for chronic heart failure: from active ingredients to herbal formulations",
+  "authors": [
+   "Wang Yingying",
+   "Li Li",
+   "He Min",
+   "Zhou Ke"
+  ],
+  "journal": "The Journal of pharmacy and pharmacology",
+  "doi": "10.1093/jpp/rgag072",
+  "pmid": "42407106",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42407106/",
+  "pubdate": "2026-07-03",
+  "date": "2026-07-06",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Chronic heart failure (CHF) remains a global health challenge with complex pathological mechanisms, including inflammation, oxidative stress, mitochondrial dysfunction, myocardial remodeling, ferroptosis, and autophagy. Despite some progress in modern medicine for the treatment of CHF, challenges remain, including insufficient therapeutic efficacy and significant side effects. In this context, traditional Chinese medicine (TCM), characterized by its multi-component, multi-target, and holistic regulatory properties, demonstrates potential advantages in the prevention and treatment of CHF. This paper summarizes the research progress of active ingredients from Chinese medicinal herbs, single herbs, and traditional Chinese herbal formulations in addressing key pathological mechanisms related to CHF. These mechanisms include inflammation and oxidative stress, mitochondrial quality and energy metabolism disorders, myocardial remodeling, ferroptosis, and autophagy abnormalities. A multi-target framework is constructed by linking active ingredients from Chinese medicinal herbs, the signaling pathways they regulate, and the corresponding pathological mechanisms involved in CHF. Further integrating the classification background of HFrEF, HFmrEF, and HFpEF, this paper analyzes the potential differential focal roles of TCM-related mechanisms across different heart failure subtypes and pathological processes, and discusses existing problems in current research in the aspects of evidence hierarchy, druggability of active components, quality control, and clinical translation, as well as other related fields. This paper aims to provide a reference for subsequent research on TCM-based prevention and treatment of CHF.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0029",
   "topic": "Surgery",
   "subtopic": "",
