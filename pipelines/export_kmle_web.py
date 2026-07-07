@@ -24,6 +24,7 @@ from export_usmle_web import (
     clean_option,
     explanation_items,
     explanation_text,
+    render_figure,
     split_stem,
 )
 
@@ -59,6 +60,7 @@ def build_record(path: Path) -> dict | None:
         "vitals": m.get("vitals", []) or [],
         "labs": m.get("labs", []) or [],
         "appendix": m.get("appendix") or None,
+        "figureSvg": render_figure(m.get("figure"), path.name),
     }
 
 
