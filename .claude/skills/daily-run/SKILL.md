@@ -25,6 +25,9 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    각 항목마다 `state.next_id(<type>)` 로 id를 발급받는다.
 
 3. **저장** — `schemas/frontmatter.md` 규격의 `.md` 로 올바른 `content/` 폴더에 저장.
+   - `date` 는 **한국시간(KST) 기준 오늘**로 적는다: `TZ=Asia/Seoul date +%F` 로 확인.
+     (루틴 컨테이너는 UTC이고 스케줄이 20:00 UTC=05:00 KST라, UTC 날짜로 찍으면
+     하루 밀려 웹 '오늘의 문항'에 안 잡힌다. 웹도 KST 기준으로 오늘을 판단한다.)
 
 4. **주제 기록** — 생성한 각 주제를 기록한다.
    ```

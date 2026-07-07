@@ -72,6 +72,7 @@ def build_record(path: Path) -> dict | None:
         "subtopic": m.get("subtopic", ""),
         "type": m.get("subtopic", ""),
         "difficulty": m.get("difficulty"),
+        "created": str(m.get("date", "") or ""),   # '오늘의 문항'(웹 today 모드) 필터용
         "vignette": vignette,
         "question": question,
         "options": [clean_option(o) for o in m.get("choices", [])],

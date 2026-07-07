@@ -10,6 +10,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Heart Failure Pharmacology",
   "type": "Heart Failure Pharmacology",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 58-year-old man with HFrEF (LVEF 30%) on lisinopril, carvedilol, and spironolactone is transitioned to sacubitril/valsartan after a 36-hour washout of lisinopril. Two weeks later his exertional dyspnea has improved and he has lost 2 kg, but a repeat serum B-type natriuretic peptide (BNP) is higher than his pretreatment value. His NT-proBNP is lower than baseline.",
   "question": "Which statement best explains this biomarker discordance?",
   "options": [
@@ -32,6 +33,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Infective Endocarditis",
   "type": "Infective Endocarditis",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 72-year-old man has 3 weeks of low-grade fever, fatigue, and weight loss. He underwent screening colonoscopy 6 weeks ago that revealed an invasive colonic adenocarcinoma. Examination reveals a new murmur of aortic regurgitation; TEE shows a 9-mm aortic valve vegetation. Three sets of blood cultures grow Enterococcus faecalis that is susceptible to ampicillin and vancomycin but demonstrates high-level gentamicin resistance (HLGR). Renal function is normal.",
   "question": "Which antibiotic regimen is most appropriate?",
   "options": [
@@ -54,6 +56,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Acid-Base (Mixed Disorder)",
   "type": "Acid-Base (Mixed Disorder)",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 19-year-old woman is brought in 4 hours after ingesting an unknown quantity of aspirin. She is tachypneic and reports tinnitus. Arterial blood gas on room air: pH 7.44, PaCO2 18 mmHg, HCO3- 12 mEq/L. Serum electrolytes: Na+ 140, Cl- 101, HCO3- 12 (anion gap 27).",
   "question": "Which of the following best characterizes her acid-base disorder?",
   "options": [
@@ -76,6 +79,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Pheochromocytoma",
   "type": "Pheochromocytoma",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 45-year-old woman has 6 months of episodic pounding headaches, palpitations, and diaphoresis. BP is 190/112 mmHg. Plasma free metanephrines are markedly elevated and abdominal CT shows a 4-cm right adrenal mass. Adrenalectomy is planned.",
   "question": "Which of the following is the most appropriate preoperative pharmacologic preparation?",
   "options": [
@@ -98,6 +102,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Heparin-Induced Thrombocytopenia",
   "type": "Heparin-Induced Thrombocytopenia",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 64-year-old man is on prophylactic unfractionated heparin after coronary artery bypass grafting. On postoperative day 6 his platelet count falls from 245,000 to 90,000/uL and he develops a new right lower-extremity deep vein thrombosis. A heparin-PF4 antibody ELISA is positive and a serotonin release assay confirms the diagnosis.",
   "question": "Which of the following is the most appropriate next step?",
   "options": [
@@ -120,6 +125,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Chronic Granulomatous Disease",
   "type": "Chronic Granulomatous Disease",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 2-year-old boy has had recurrent Staphylococcus aureus lymphadenitis, a Serratia marcescens skin abscess, and an Aspergillus pneumonia, plus a hepatic abscess. Neutrophil count is normal. A dihydrorhodamine (DHR) flow-cytometry oxidative-burst assay shows markedly reduced fluorescence after stimulation.",
   "question": "Which of the following underlying defects best explains this presentation?",
   "options": [
@@ -142,6 +148,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Lambert-Eaton Myasthenic Syndrome",
   "type": "Lambert-Eaton Myasthenic Syndrome",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 62-year-old man with a 40-pack-year smoking history reports several months of proximal lower-limb weakness and difficulty rising from a chair. He notes that grip strength briefly improves after sustained effort. He also has dry mouth and reduced knee reflexes that become detectable after brief exercise. Repetitive nerve stimulation shows a low baseline compound muscle action potential that increases by >100% at high frequency (or after exercise).",
   "question": "Which of the following is the most likely pathophysiologic mechanism?",
   "options": [
@@ -164,6 +171,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Urea Cycle (Ornithine Transcarbamylase Deficiency)",
   "type": "Urea Cycle (Ornithine Transcarbamylase Deficiency)",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A male neonate is normal at birth but on day 3 of life becomes lethargic and feeds poorly, then develops tachypnea and seizures. Laboratory studies show a markedly elevated plasma ammonia, a low BUN, and a respiratory alkalosis. Urine orotic acid is elevated, and there is no megaloblastic anemia. Plasma citrulline is low.",
   "question": "Which enzyme deficiency best explains these findings?",
   "options": [
@@ -186,6 +194,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Terminal Complement Deficiency",
   "type": "Terminal Complement Deficiency",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "An 18-year-old college student is admitted with his second lifetime episode of Neisseria meningitidis meningitis; he had a documented meningococcal bacteremia at age 12. Immunoglobulin levels and T- and B-cell counts are normal. Total hemolytic complement activity (CH50) is undetectable, while C3 is normal.",
   "question": "Which of the following best explains his susceptibility?",
   "options": [
@@ -208,6 +217,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Acute Intermittent Porphyria",
   "type": "Acute Intermittent Porphyria",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 28-year-old woman has recurrent attacks of severe, poorly localized abdominal pain with no peritoneal signs, accompanied by tachycardia, hyponatremia, anxiety, and a symmetric motor neuropathy. Attacks are triggered by fasting and by starting phenobarbital; her urine darkens on standing. There is no photosensitivity. Urinary delta-aminolevulinic acid (ALA) and porphobilinogen (PBG) are markedly elevated.",
   "question": "Which enzyme is deficient?",
   "options": [
@@ -230,6 +240,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Vancomycin Resistance (VRE)",
   "type": "Vancomycin Resistance (VRE)",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A hospitalized patient develops bacteremia with Enterococcus faecium that is resistant to vancomycin. The resistance is mediated by an acquired operon carried on a transposon.",
   "question": "Which molecular change most directly accounts for the vancomycin resistance?",
   "options": [
@@ -252,6 +263,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Exotoxin Mechanism (EF-2 ADP-ribosylation)",
   "type": "Exotoxin Mechanism (EF-2 ADP-ribosylation)",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 6-year-old unvaccinated child develops a gray pseudomembrane over the tonsils, a bull neck, and, one week later, myocarditis with heart block. The responsible toxin halts host protein synthesis. This toxin shares its precise molecular mechanism with the exotoxin A of Pseudomonas aeruginosa.",
   "question": "Which mechanism is it?",
   "options": [
@@ -274,6 +286,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Acute Mesenteric Ischemia",
   "type": "Acute Mesenteric Ischemia",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 74-year-old man with atrial fibrillation who is not on anticoagulation develops sudden severe periumbilical pain. On examination the abdomen is soft with pain that is strikingly out of proportion to the benign findings. Two hours later he passes bloody stool; lactate is elevated with a metabolic acidosis. CT angiography shows an abrupt cutoff of the superior mesenteric artery.",
   "question": "Which of the following is the most appropriate management?",
   "options": [
@@ -296,6 +309,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Acute Ischemic Stroke (Thrombolysis)",
   "type": "Acute Ischemic Stroke (Thrombolysis)",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 68-year-old man has sudden left hemiparesis, facial droop, and aphasia that began 2 hours ago. Blood pressure is 170/95 mmHg, fingerstick glucose is normal, and he takes no anticoagulants and has had no recent surgery or bleeding. Noncontrast head CT shows no hemorrhage and no large established infarct.",
   "question": "Which of the following is the most appropriate next step?",
   "options": [
@@ -318,6 +332,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Ductal-Dependent Cyanotic CHD",
   "type": "Ductal-Dependent Cyanotic CHD",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A term neonate becomes profoundly cyanotic on the second day of life. The cyanosis does not improve with 100% oxygen (a failed hyperoxia test), the second heart sound is single, and a chest radiograph shows an 'egg-on-a-string' cardiac silhouette. The infant deteriorates as the ductus arteriosus begins to close.",
   "question": "Which of the following is the most appropriate immediate intervention?",
   "options": [
@@ -340,6 +355,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Hypertrophic Pyloric Stenosis",
   "type": "Hypertrophic Pyloric Stenosis",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 4-week-old firstborn boy has 1 week of progressive nonbilious projectile vomiting and remains hungry after emesis. Examination reveals visible gastric peristalsis and a firm 'olive-like' mass in the epigastrium. Laboratory studies show a hypochloremic, hypokalemic metabolic alkalosis with paradoxically acidic urine; ultrasound confirms a thickened, elongated pylorus.",
   "question": "Which of the following is the most appropriate next step?",
   "options": [
@@ -362,6 +378,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Retinoblastoma (Two-Hit Hypothesis)",
   "type": "Retinoblastoma (Two-Hit Hypothesis)",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 14-month-old girl is found to have bilateral retinoblastomas, and her father was treated for a similar eye tumor in childhood. Genetic testing shows a germline loss-of-function mutation in one RB1 allele.",
   "question": "Which additional event is required within a retinal cell for a tumor to develop, and what is the mechanism?",
   "options": [
@@ -384,6 +401,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Amyloidosis",
   "type": "Amyloidosis",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 63-year-old man has nephrotic-range proteinuria, hepatomegaly, macroglossia, and echocardiographic findings of a restrictive cardiomyopathy with low-voltage QRS. A fat-pad biopsy stained with Congo red shows deposits that display apple-green birefringence under polarized light. Serum and urine studies reveal a monoclonal lambda light chain.",
   "question": "Which protein most likely composes the deposits?",
   "options": [
@@ -406,6 +424,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Hypoxemia (A-a Gradient)",
   "type": "Hypoxemia (A-a Gradient)",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 40-year-old man with lobar pneumonia is hypoxemic. On 100% inspired oxygen his PaO2 rises only minimally, and the calculated alveolar-arterial (A-a) oxygen gradient is markedly elevated.",
   "question": "Which mechanism of hypoxemia does this pattern most specifically indicate?",
   "options": [
@@ -428,6 +447,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Polyuria (SIADH vs Diabetes Insipidus)",
   "type": "Polyuria (SIADH vs Diabetes Insipidus)",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 35-year-old man has polyuria and polydipsia. A water-deprivation test fails to concentrate his urine (urine osmolality remains low despite rising serum osmolality). After administration of desmopressin (a vasopressin analog), his urine osmolality rises by more than 50%.",
   "question": "Which mechanism best explains his condition?",
   "options": [
@@ -450,6 +470,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Preeclampsia with Severe Features",
   "type": "Preeclampsia with Severe Features",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 29-year-old woman at 34 weeks gestation presents with blood pressure 168/112 mmHg on two readings, a severe headache with visual scotomata, and 3+ proteinuria. Deep tendon reflexes are brisk.",
   "question": "Which of the following is the most appropriate immediate pharmacologic management to prevent the major acute neurologic complication?",
   "options": [
@@ -472,6 +493,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Ectopic Pregnancy",
   "type": "Ectopic Pregnancy",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 26-year-old woman with a prior chlamydial pelvic infection presents at 6 weeks by dates with mild left lower-quadrant pain and minimal vaginal spotting. She is hemodynamically stable. Serum beta-hCG is 1,800 mIU/mL; transvaginal ultrasound shows no intrauterine gestational sac but a small 2-cm adnexal mass without free fluid.",
   "question": "Which of the following is the most appropriate management?",
   "options": [
@@ -494,6 +516,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Serotonin Syndrome",
   "type": "Serotonin Syndrome",
   "difficulty": 5,
+  "created": "2026-07-02",
   "vignette": "A 24-year-old man on fluoxetine is given tramadol for back pain. Within hours he becomes agitated and diaphoretic with a temperature of 39.4 C, tachycardia, dilated pupils, and prominent lower-extremity clonus with hyperreflexia.",
   "question": "Which diagnosis best fits, and what neuromuscular finding most distinguishes it from its main mimic?",
   "options": [
@@ -516,6 +539,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Lithium Toxicity",
   "type": "Lithium Toxicity",
   "difficulty": 4,
+  "created": "2026-07-02",
   "vignette": "A 52-year-old woman with bipolar I disorder maintained on lithium develops a coarse tremor, ataxia, confusion, and vomiting one week after starting a thiazide diuretic and ibuprofen for a new diagnosis of hypertension and joint pain.",
   "question": "Which mechanism best explains her acute deterioration?",
   "options": [
@@ -538,6 +562,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Acetaminophen Toxicity (NAPQI / N-acetylcysteine)",
   "type": "Acetaminophen Toxicity (NAPQI / N-acetylcysteine)",
   "difficulty": 4,
+  "created": "2026-07-07",
   "vignette": "A 19-year-old woman is brought to the emergency department 10 hours after ingesting a large number of tablets in a suicide attempt. She is nauseated but alert, with a normal examination and normal aminotransferases. A serum level of the ingested drug plots above the treatment line on the Rumack-Matthew nomogram, and the recommended antidote is started.",
   "question": "The antidote's protective effect against hepatocellular necrosis is best explained by which of the following mechanisms?",
   "options": [
@@ -560,6 +585,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Carbon Monoxide Poisoning (O2-Hb dissociation curve)",
   "type": "Carbon Monoxide Poisoning (O2-Hb dissociation curve)",
   "difficulty": 4,
+  "created": "2026-07-07",
   "vignette": "A 30-year-old man is rescued from a house fire and brought in with headache, dizziness, and confusion. He is breathing spontaneously. Pulse oximetry reads 99%, and arterial blood gas shows a normal PaO2. Despite these values his tissues are hypoxic.",
   "question": "Which set of changes best explains his impaired oxygen delivery?",
   "options": [
@@ -582,6 +608,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Invasive Aspergillosis in prolonged neutropenia",
   "type": "Invasive Aspergillosis in prolonged neutropenia",
   "difficulty": 4,
+  "created": "2026-07-07",
   "vignette": "A 46-year-old man receiving induction chemotherapy for acute myeloid leukemia has had a neutrophil count near zero for 3 weeks. He develops fever, pleuritic chest pain, and hemoptysis despite broad-spectrum antibacterial therapy. CT of the chest shows nodules with surrounding ground-glass halos, and a serum galactomannan assay is positive.",
   "question": "Which characteristic of the responsible organism most directly accounts for his hemoptysis and the CT findings?",
   "options": [
@@ -604,6 +631,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "DKA Potassium Management",
   "type": "DKA Potassium Management",
   "difficulty": 4,
+  "created": "2026-07-07",
   "vignette": "A 24-year-old man with type 1 diabetes presents with vomiting and deep rapid breathing. Glucose is 540 mg/dL, arterial pH 7.08, bicarbonate 8 mEq/L, and large serum and urine ketones. He has received 2 L of isotonic saline. His initial serum potassium is 3.2 mEq/L.",
   "question": "Which of the following is the most appropriate next step?",
   "options": [
@@ -626,6 +654,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "Necrotizing Fasciitis",
   "type": "Necrotizing Fasciitis",
   "difficulty": 4,
+  "created": "2026-07-07",
   "vignette": "A 58-year-old man with diabetes presents with 1 day of rapidly worsening pain in the left leg after a minor scratch. He is febrile and tachycardic. The skin shows a dusky discoloration with a few tense bullae, and pain is far greater than the modest overlying erythema suggests. There is crepitus on palpation, and the margin of erythema is advancing over minutes.",
   "question": "Which of the following is the most appropriate next step in management?",
   "options": [
@@ -648,6 +677,7 @@ window.USMLE_QUESTIONS = [
   "subtopic": "STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated)",
   "type": "STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated)",
   "difficulty": 5,
+  "created": "2026-07-07",
   "vignette": "A 4-year-old girl develops bloody diarrhea after eating an undercooked hamburger at a picnic. Five days later she is pale and lethargic with reduced urine output. Laboratory studies show anemia with schistocytes, a platelet count of 40,000/microL, and a creatinine three times her baseline. Stool testing identifies a Shiga-toxin-producing organism.",
   "question": "Which of the following is the most appropriate management?",
   "options": [
