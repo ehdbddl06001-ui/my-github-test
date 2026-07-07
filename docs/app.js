@@ -36,7 +36,9 @@ function loadWrong() {
   catch (e) { return {}; }
 }
 function saveWrong(map) { localStorage.setItem(storeKey(), JSON.stringify(map)); }
-function todayStr() { return new Date().toISOString().slice(0, 10); }
+// 한국시간(KST=UTC+9) 기준 '오늘'. 콘텐츠 date도 KST로 스탬프하므로 '오늘의 문항'이
+// 한국 날짜와 일치한다(UTC로 하면 새벽 생성분이 하루 밀려 안 잡힘).
+function todayStr() { return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10); }
 
 function recordWrong(q, chosenIdx) {
   const map = loadWrong();
@@ -338,10 +340,9 @@ function onModeChange() {
 function onExamChange() {
   const usmle = isUsmle();
   $("stepRow").style.display = usmle ? "" : "none";
-  // USMLE에는 '오늘의 문항' 개념이 없으므로 해당 옵션을 비활성화하고 기본을 '전체'로.
+  // USMLE도 '오늘의 문항'을 지원한다(레코드에 created=생성일 포함). 옵션 항상 활성화.
   const todayOpt = $("mode").querySelector('option[value="today"]');
-  if (todayOpt) todayOpt.disabled = usmle;
-  if (usmle && $("mode").value === "today") $("mode").value = "all";
+  if (todayOpt) todayOpt.disabled = false;
   onModeChange();
   updateWrongCount();
 }

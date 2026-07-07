@@ -52,6 +52,7 @@
     var authors = (p.authors || []).join(", ");
     var hasNote = !!(NOTES[p.id] && NOTES[p.id].text);
     var noteBadge = hasNote ? '<span class="pill notebadge">📝 내 노트</span>' : "";
+    var dateBadge = p.date ? '<span class="pill datepill">🗓 ' + esc(p.date) + "</span>" : "";
 
     // 초록·요약 섹션 + 카드에 이미 저장된 My Ideas
     var body = section("Abstract", p.abstract) + section("Summary", p.summary)
@@ -74,13 +75,32 @@
       ? '<a class="plink" href="' + esc(p.url) + '" target="_blank" rel="noopener">PubMed 원문 →</a>' : "";
 
     return '<article class="paper">'
-      + '<div class="ptop"><span class="pill">' + esc(p.topic || "?") + "</span>" + conf + noteBadge + "</div>"
+      + '<div class="ptop"><span class="pill">' + esc(p.topic || "?") + "</span>" + dateBadge + conf + noteBadge + "</div>"
       + '<div class="ptitle">' + esc(p.title) + "</div>"
       + (meta.length ? '<div class="pmeta">' + meta.join(" · ") + "</div>" : "")
       + (authors ? '<div class="pauthors">' + esc(authors) + "</div>" : "")
       + details
       + (link ? '<div style="margin-top:8px">' + link + "</div>" : "")
       + "</article>";
+  }
+
+  // 스크랩 날짜(p.date, 최신순 정렬됨)별로 그룹 헤더를 끼워 "어디까지 봤는지" 경계를 만든다.
+  function groupedHTML(rows) {
+    var counts = {};
+    rows.forEach(function (p) { var d = p.date || ""; counts[d] = (counts[d] || 0) + 1; });
+    var html = "", last = null;
+    rows.forEach(function (p) {
+      var d = p.date || "";
+      if (d !== last) {
+        html += '<div class="datehead">'
+          + '<span class="dhdate">📅 ' + esc(d || "날짜 미상") + "</span>"
+          + '<span class="dhcount">' + counts[d] + "편</span>"
+          + '<span class="dhline"></span></div>';
+        last = d;
+      }
+      html += card(p);
+    });
+    return html;
   }
 
   var debounceT;
@@ -137,7 +157,7 @@
     countEl.textContent = "총 " + PAPERS.length + "편 중 " + rows.length + "편 표시"
       + (noteN ? " · 내 노트 " + noteN + "개" : "");
     listEl.innerHTML = rows.length
-      ? rows.map(card).join("")
+      ? groupedHTML(rows)
       : '<div class="empty">조건에 맞는 논문이 없습니다.</div>';
     bindNoteEditors();
   }

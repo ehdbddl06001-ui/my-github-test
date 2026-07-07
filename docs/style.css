@@ -44,6 +44,14 @@ h1{margin:0 0 4px; font-size:1.5rem}
 .conf-low{color:#ef8f8f}
 .conf-high{color:var(--ok)}
 .empty{text-align:center; color:var(--muted); padding:30px 10px}
+/* 날짜별 스크랩 그룹 구분(어디까지 봤는지 경계) */
+.datehead{display:flex; align-items:center; gap:10px; position:sticky; top:0; z-index:2;
+  margin:20px 0 8px; padding:7px 12px; background:rgba(59,130,246,.14);
+  border:1px solid #2f4a72; border-radius:8px}
+.datehead .dhdate{font-weight:600; color:#9cc3ff; font-size:.92rem}
+.datehead .dhcount{color:var(--muted); font-size:.82rem}
+.datehead .dhline{flex:1; height:1px; background:var(--line)}
+.datepill{background:rgba(124,92,255,.12); color:#c9bcff; border-color:#4a3d7a}
 .notebadge{background:rgba(124,92,255,.15); color:#c9bcff; border-color:#4a3d7a}
 .noteedit{border-top:1px dashed var(--line); padding-top:10px; margin-top:12px}
 .noteinput{
