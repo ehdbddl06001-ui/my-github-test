@@ -65,6 +65,9 @@ let deck = [];
 let pos = 0;
 let correctCnt = 0;
 let sessionWrong = [];
+let answers = [];   // 위치별 선택(idx). null=미답 → 뒤로가기·이어풀기 지원
+
+const PROG_KEY = "medkos_quiz_progress";
 
 function isToday(q) { return q.created === todayStr(); }
 
@@ -104,10 +107,11 @@ function startQuiz() {
     alert(msg);
     return;
   }
-  pos = 0; correctCnt = 0; sessionWrong = [];
+  pos = 0; correctCnt = 0; sessionWrong = []; answers = [];
   hide($("setup")); hide($("result")); hide($("wrongbook"));
   show($("quiz"));
   renderQuestion();
+  saveProgress();
 }
 
 function renderQuestion() {
@@ -134,28 +138,40 @@ function renderQuestion() {
   ex.classList.add("hidden");
   ex.innerHTML = "";
   hide($("nextBtn"));
+  $("prevBtn").classList.toggle("hidden", pos === 0);
+  // 이미 답한 문항이면 채점 상태로 복원(뒤로가기·이어풀기 시)
+  if (answers[pos] != null) showGraded(answers[pos]);
 }
 
-function grade(chosenIdx, btn) {
+// 채점 결과 표시(정답/오답 표시 + 해설 + 다음 버튼). grade·복원에서 공용.
+function showGraded(chosenIdx) {
   const q = deck[pos];
   const correctIdx = q.answer - 1;
-  const buttons = Array.from($("options").children);
-  buttons.forEach((b, i) => {
+  Array.from($("options").children).forEach((b, i) => {
     b.disabled = true;
     if (i === correctIdx) b.classList.add("correct");
     if (i === chosenIdx && chosenIdx !== correctIdx) b.classList.add("wrong");
   });
+  renderExplanation(q, chosenIdx, chosenIdx === correctIdx);
+  const nb = $("nextBtn");
+  nb.textContent = pos >= deck.length - 1 ? "결과 보기 →" : "다음 문항 →";
+  show(nb);
+}
 
-  const ok = chosenIdx === correctIdx;
+function grade(chosenIdx, btn) {
+  if (answers[pos] != null) return;   // 이미 답한 문항(뒤로 왔다 온 경우) 재채점 방지
+  answers[pos] = chosenIdx;
+  const q = deck[pos];
+  const ok = chosenIdx === q.answer - 1;
   if (ok) {
     correctCnt++;
   } else {
     recordWrong(q, chosenIdx);
     sessionWrong.push(q);
   }
-  renderExplanation(q, chosenIdx, ok);
-  show($("nextBtn"));
+  showGraded(chosenIdx);
   updateWrongCount();
+  saveProgress();
 }
 
 function renderExplanation(q, chosenIdx, ok) {
@@ -239,12 +255,79 @@ function renderAppendix(ap) {
 }
 
 function nextQuestion() {
+  if (pos >= deck.length - 1) { finish(); return; }
   pos++;
-  if (pos >= deck.length) { finish(); return; }
+  renderQuestion();
+  saveProgress();
+}
+
+function prevQuestion() {
+  if (pos > 0) { pos--; renderQuestion(); saveProgress(); }
+}
+
+// 나가기 = 진행 저장 후 설정으로(나중에 '이어서 풀기'로 복귀). 완료(finish)와 구분.
+function pauseQuiz() {
+  saveProgress();
+  hide($("quiz"));
+  show($("setup"));
+  refreshResume();
+}
+
+// ── 진행 저장/복원(localStorage) ─────────────────────────────
+function saveProgress() {
+  try {
+    localStorage.setItem(PROG_KEY, JSON.stringify({
+      exam: exam(), mode: $("mode").value, subject: $("subject").value,
+      step: $("step").value, ids: deck.map((q) => q.id), answers, pos,
+    }));
+  } catch (e) { /* 저장 실패는 무시 */ }
+}
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(PROG_KEY) || "null"); }
+  catch (e) { return null; }
+}
+function clearProgress() { localStorage.removeItem(PROG_KEY); refreshResume(); }
+
+function refreshResume() {
+  const p = loadProgress();
+  const btn = $("resumeBtn");
+  if (!btn) return;
+  if (p && p.ids && p.ids.length && (p.pos || 0) < p.ids.length) {
+    btn.classList.remove("hidden");
+    btn.textContent = `이어서 풀기 (${(p.pos || 0) + 1}/${p.ids.length} · ${(p.exam || "").toUpperCase()})`;
+  } else {
+    btn.classList.add("hidden");
+  }
+}
+
+function resumeQuiz() {
+  const p = loadProgress();
+  if (!p || !p.ids) return;
+  if (p.exam) { $("exam").value = p.exam; onExamChange(); }
+  if (p.step) $("step").value = p.step;
+  if (p.mode) $("mode").value = p.mode;
+  onModeChange();
+  if (p.subject && [...$("subject").options].some((o) => o.value === p.subject)) {
+    $("subject").value = p.subject;
+  }
+  const byId = {};
+  allQuestions().forEach((q) => { byId[q.id] = q; });
+  deck = p.ids.map((id) => byId[id]).filter(Boolean);
+  if (!deck.length) { clearProgress(); return; }
+  answers = (p.answers || []).slice(0, deck.length);
+  pos = Math.min(p.pos || 0, deck.length - 1);
+  correctCnt = 0; sessionWrong = [];
+  answers.forEach((a, i) => {
+    if (a == null) return;
+    if (a === deck[i].answer - 1) correctCnt++; else sessionWrong.push(deck[i]);
+  });
+  hide($("setup")); hide($("result")); hide($("wrongbook"));
+  show($("quiz"));
   renderQuestion();
 }
 
 function finish() {
+  clearProgress();
   hide($("quiz"));
   show($("result"));
   const graded = correctCnt + sessionWrong.length;
@@ -405,10 +488,13 @@ function init() {
   onExamChange();
 
   $("startBtn").onclick = startQuiz;
+  $("resumeBtn").onclick = resumeQuiz;
   $("viewWrongBtn").onclick = renderWrongbook;
   $("nextBtn").onclick = nextQuestion;
-  $("quitBtn").onclick = finish;
-  $("restartBtn").onclick = () => { hide($("result")); show($("setup")); onModeChange(); updateWrongCount(); };
+  $("prevBtn").onclick = prevQuestion;
+  $("quitBtn").onclick = pauseQuiz;
+  $("restartBtn").onclick = () => { hide($("result")); show($("setup")); onModeChange(); updateWrongCount(); refreshResume(); };
+  refreshResume();
   $("reviewBtn").onclick = () => { $("mode").value = "review"; hide($("result")); startQuiz(); };
   $("backBtn").onclick = () => { hide($("wrongbook")); show($("setup")); onModeChange(); updateWrongCount(); };
   $("exportMdBtn").onclick = exportMarkdown;
