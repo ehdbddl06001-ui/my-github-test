@@ -2,6 +2,177 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0040",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Zero-Programmed-Sphere Keratorefractive Lenticule Extraction: Visual, Refractive, Anterior-Keratometric, and Wavefront Outcomes in a Single-Center Series of 74 Eyes",
+  "authors": [
+   "Gabrić Ivan",
+   "Grulović Filip",
+   "Bodakoš Karla",
+   "Bohač Maja"
+  ],
+  "journal": "Ophthalmology and therapy",
+  "doi": "10.1007/s40123-026-01447-5",
+  "pmid": "42412306",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42412306/",
+  "pubdate": "2026-07-07",
+  "date": "2026-07-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**INTRODUCTION:** Zero-programmed-sphere keratorefractive lenticule extraction (KLEx), also called cylinder-only KLEx, is an uncommon cylinder-dominated treatment pattern in which the planned spherical correction is 0.00 diopters (D). To our knowledge, no published outcome data characterize this pattern. To address this lack of data, we retrospectively identified all such cases from a prospectively maintained single-center refractive-surgery registry and reported visual, refractive, anterior-keratometric, and wavefront outcomes, using Alpins vector analysis.\n\n**METHODS:** This study is retrospective single-center, single-surgeon case series of consecutive eyes treated with the SCHWIND ATOS femtosecond laser (SCHWIND eye-tech-solutions GmbH, Kleinostheim, Germany) between August 2024 and March 2026 at a programmed sphere of 0.00 D. Cycloplegic refraction was 0.00 D sphere in all 74 eyes (cycloplegic-plano target). The data lock was 31 March 2026, and eyes treated within the 3 months preceding that date were classified as not yet eligible to be included in the study. Inter-eye dependence was assessed using generalized estimating equations (GEE), and refractive stability was studied using a linear mixed model. Corrected distance visual acuity (CDVA) was imputed as uncorrected distance visual acuity (UDVA) when UDVA ≥ 20/20 and CDVA was missing. Complete-case sensitivity was also reported. The full-cohort ideal-outcome convention was determined using the refractive Alpins metric with a nonzero-difference-vector (DV) sensitivity subgroup; a parallel anterior-keratometric Alpins was run on the paired-keratometry subset.\n\n**RESULTS:** A total of 74 eyes had been treated with the SCHWIND ATOS platform. At data lock, 62 were eligible for the ≥ 3-month follow-up and 37 had completed refractive examinations (analyzed primary cohort; mean age 33 years; mean programmed cylinder - 2.96 ± 1.30 D). UDVA ≥ 20/20 and ≥ 20/25 was achieved in 75.7% (Wilson 59.9-86.6%) and 91.9% of eyes, respectively; 83.8% of eyes were within ± 0.50 D of plano spherical equivalent refraction (SEQ); and 73.0% of eyes had postoperative cylinder ≤ 0.50 D. In terms of the refractive Alpins (side-by-side), the full-cohort correction index (CI) was 1.04, and mean absolute angle of error (|AoE|) was 2.9° versus 5.2° in the nonzero-DV subgroup (n = 21). In the 25-eye paired-keratometry subset, anterior-keratometric Alpins gave a CI of 1.05 and |AoE| of 13.4°, with residual anterior-keratometric DV of 1.12 ± 0.45 D versus refractive DV of 0.44 ± 0.60 D. Among the nine eyes with UDVA < 20/20, four had directly measured postoperative CDVA and five were not eligible for the imputation rule; the paired safety analysis therefore included 32 eyes (28 imputed + 4 directly measured), with complete-case (n = 4) and imputation-based indices 0.98 and 1.25, respectively. The analyzed cohort overrepresented against-the-rule (ATR) and oblique astigmatism (p = 0.002), so axis-fidelity estimates may reflect a more challenging case mix than the full treated population.\n\n**CONCLUSION:** Zero-programmed-sphere KLEx produced favorable refractive outcomes in eyes reaching the ≥ 3-month endpoint. The 37/62 completion rate among eligible eyes and the imputation-based safety index limit generalizability. Wavefront changes were exploratory and generally followed the pattern expected after KLEx. The anterior-keratometric and refractive Alpins results diverged substantially, suggesting that future studies should include total corneal vector analysis and direct assessment of intraoperative rotation.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0039",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Validation and Reliability of the \"SLU-AMSAD\" Depression Scale in Individuals With Dementia",
+  "authors": [
+   "Ontan Mehmet Selman",
+   "Petek Yakar Kadriye",
+   "Akpinar Soylemez Burcu",
+   "Grossberg George T",
+   "Isik Ahmet Turan"
+  ],
+  "journal": "Journal of the American Medical Directors Association",
+  "doi": "10.1016/j.jamda.2026.106371",
+  "pmid": "42413154",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42413154/",
+  "pubdate": "2026-07-07",
+  "date": "2026-07-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**OBJECTIVES:** The diagnosis of depression may be challenging in older adults with dementia because of atypical symptoms and overlap with other comorbidities. While the Cornell Scale for Depression in Dementia (CSDD) is the gold standard for screening, the Saint Louis University-Appetite, Mood, Sleep, Activity, and Thoughts of Death (SLU-AMSAD), another brief screening tool designed to assess late-life depression, seems to be more practical than the CSDD, with a shorter test duration.\n\n**DESIGN:** Cross-sectional validation study.\n\n**SETTING AND PARTICIPANTS:** In this study, conducted at a geriatric outpatient clinic, a total of 111 patients with dementia were enrolled, and both depression and dementia were diagnosed according to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition criteria.\n\n**METHODS:** The SLU-AMSAD was administered to both patients and caregivers, along with the CSDD. Spearman's rank correlation coefficient was used to assess the correlation between the SLU-AMSAD and CSDD. The diagnostic accuracy of the SLU-AMSAD was evaluated using receiver operating characteristic analysis, with the area under the curve (AUC).\n\n**RESULTS:** Caregiver-reported SLU-AMSAD scores demonstrated a strong correlation with CSDD (r = 0.875; P < .001), whereas patient-reported SLU-AMSAD scores exhibited a moderate positive correlation (r = 0.384; P < .001). With an optimal cutoff of ≥3, diagnostic performance was substantially stronger for the caregiver-reported SLU-AMSAD-achieving 95.3% sensitivity and 93.6% specificity (AUC, 0.984; 95% CI, 0.965-1.000; P < .001)-whereas the patient-reported SLU-AMSAD yielded a sensitivity of 59.4% and a specificity of 83% (AUC, 0.731; 95% CI, 0.638-0.823; P < .001).\n\n**CONCLUSIONS AND IMPLICATIONS:** The SLU-AMSAD is a valid and practical screening tool for depression in older adults with dementia. Given the shorter duration and strong caregiver-reported performance, it should be integrated into clinical dementia assessment, facilitating early detection and intervention for depression in such a vulnerable patient group.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0038",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Impact of duration of cyclic heat stress exposure at different ages on growth performance, recovery, and histopathology in broilers",
+  "authors": [
+   "Papanikolaou A",
+   "Kampschoer E M J M",
+   "Matthijs M G R",
+   "Khempaka S",
+   "Weerts E A W S",
+   "Schonewille J T"
+  ],
+  "journal": "Poultry science",
+  "doi": "10.1016/j.psj.2026.107367",
+  "pmid": "42413182",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42413182/",
+  "pubdate": "2026-07-02",
+  "date": "2026-07-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Heat stress (HS) poses a significant challenge to broiler welfare and growth. While the effects of constant (24 hr/day) HS are well documented, the consequences of HS duration at specific ages and the capacity for subsequent recovery, remain less understood. Therefore, 630 one-day-old Cobb500 broilers were assigned to 7 treatments and reared during a 6 week period to investigate the effects of varying HS duration on broiler growth, and recovery at different ages of exposure. Broilers were housed either in a climate-controlled (CC) barn or a natural cyclic HS open-sided (OS) barn. Treatments included broilers continuously housed for 6 weeks in CC (6CC) or OS (6OS). In addition, three other treatments were transferred from CC to OS for the final 3 weeks (3OS), 2 weeks (2OS), or 1 week (1OS) of the experiment. The last two recovery treatments (REC1, REC2) were placed in the CC house followed by 1 or 2 weeks in the OS house, from day 21 or 28 until 35, before returning to CC for the final week of the experiment. Each treatment included six replicates, with 15 broilers per replicate pen at the start of the experiment. Cloacal temperature, growth performance, mortality, plasma corticosterone, protein carbonyls, and histological morphology of the heart and lung were evaluated. Exposure to HS increased the cloacal temperature by at least 1.5°C at all ages (P < 0.001). Sudden exposure to HS at 36 days of age (1OS) resulted in severe mortality (67%) compared to control (6CC) and broilers exposed to HS at younger age (3OS and 2OS). HS consistently reduced body weight (BW) and average daily feed intake (ADFI); 6OS broilers finished 40.1% lighter than 6CC broilers (P < 0.001). Upon returning to thermoneutral conditions, REC1 and REC2 broilers immediately resumed growth rates comparable to controls but did not exhibit compensatory growth to recover the accumulated BW deficit. Very short-term HS exposure (1OS) triggered a spike in plasma corticosterone (25.42 nmol/L) and protein carbonyls (1.92 nmol/mg) compared to 6CC controls (P < 0.001). Descriptive histological examination revealed that subendocardial erythrocyte accumulations were increased in 6OS hearts and were absent in CC-housed broilers. Taken together, sudden HS exposure at 36 days of age poses an unmanageable threat to survival. While broilers recover from HS quickly, lost performance is not regained through compensatory growth within the 6 week period.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0037",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Plasma cell-free DNA measured prior to renal replacement therapy initiation is not associated with incident adverse outcomes, hospitalizations or malignancies in chronic kidney disease stage 4-5 patients",
+  "authors": [
+   "Liuhto Niilo",
+   "Tuominen Jenni",
+   "Manni Noora",
+   "Hakamäki Markus",
+   "Lankinen Roosa",
+   "Toukola Tomi",
+   "Virtanen Jonna",
+   "Metsärinne Kaj",
+   "et al."
+  ],
+  "journal": "PloS one",
+  "doi": "10.1371/journal.pone.0353258",
+  "pmid": "42412773",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42412773/",
+  "pubdate": "2026",
+  "date": "2026-07-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "Inflammation is an inherent feature of advanced chronic kidney disease (CKD) and associated with adverse outcomes. Several inflammatory biomarkers have been shown to be associated with mortality in CKD. Cell-free DNA (cfDNA) is a novel biomarker for inflammation which has not been previously examined in patients with CKD stage 4-5 not undergoing dialysis. cfDNA was extracted from plasma and quantified with Qubit Flex Fluorometer using dsDNA High Sensitivity kit in 138 patients with CKD stage 4-5 not undergoing dialysis at baseline and at a control time point of median 2.7 years of follow-up. A ratio of control and baseline measurement adjusted for an increment of one year of follow-up was calculated. Associations between cfDNA at baseline and all-cause mortality, major adverse cardiovascular and cerebrovascular events (MACCE, defined as a composite outcome of acute myocardial infarction, coronary revascularization, ischemic or hemorrhagic stroke and cardiovascular death), emergency room (ER) visits, hospitalizations or incident malignancies were assessed. Within a median follow-up of 6.2 years, no associations were observed between cfDNA and mortality, MACCEs, ER visits, hospitalizations or incident malignancies. cfDNA control measurement and cfDNA delta ratio was available in 101 patients. Patients who had received a kidney transplant by the control cfDNA measurement had significantly higher cfDNA delta ratio compared to patients not on renal replacement therapy (RRT) and those undergoing dialysis (p < 0.001 for both comparisons). Patients undergoing dialysis at the time of the control cfDNA measurement had higher cfDNA delta ratio (p = 0.003) compared to patients not on RRT. The present study is the first to show that cfDNA is not associated with adverse outcomes in patients with advanced CKD not undergoing dialysis at baseline. Furthermore, our results provide unique data on the evolution of cfDNA levels in predialysis CKD stage 4-5 patients transitioning to different modalities of RRT.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0036",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Recurrent urinary tract infections in older adults: A systematic review of current challenges and emerging therapeutic strategies",
+  "authors": [
+   "Lv Junmei",
+   "Waza Ajaz Ahmad"
+  ],
+  "journal": "Acta pharmaceutica (Zagreb, Croatia)",
+  "doi": "10.2478/acph-2026-0017",
+  "pmid": "42412955",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42412955/",
+  "pubdate": "2026-06-01",
+  "date": "2026-07-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "As global life expectancy continues to rise, urinary tract infections (UTIs) have become an increasing concern in older adults. The higher prevalence in this population is attributed to anatomical and physiological changes of the urinary tract, hormonal imbalances, immunosenescence, and the presence of comorbidities. These factors, combined with a distinct microbiological profile and rising antimicrobial resistance, create significant clinical challenges in diagnosis and treatment. We conducted a systematic review of clinical trials and observational studies on the epidemiology, pathogenesis, diagnosis, and management of recurrent urinary tract infections (rUTIs) in older adults. The prevalence of rUTIs increases with age, disproportionately affecting women, with 53 % of those over 55 years experiencing recurrences within one year. Healthcare-associated UTIs (HAUTIs) account for 20-30 % of nosocomial infections, primarily impacting older adults. The host microbiome seemed crucial in UTI pathogenesis, with Escherichia coli being the leading causative agent due to its ability to adhere, colonise, and evade the immune response. In elderly patients, atypical presentations - such as delirium, functional decline, or nonspecific abdominal symptoms - complicate diagnosis, underscoring the critical need to differentiate symptomatic infections from asymptomatic bacteriuria (ASB) to prevent misdiagnosis and overtreatment. Effective management requires accurate diagnosis, appropriate antibiotic selection, and careful monitoring of adverse effects, especially in patients with comorbidities. Emerging therapies, including faecal microbiota transplantation, bacteriophages, probiotics, and proanthocyanidins, offer promising adjuncts. While long-term antibiotic prophylaxis is effective, it increases the risk of bacterial resistance, particularly in catheterised patients. Behavioural modifications, such as increased fluid intake, aid pathogen clearance, and topical estrogen therapy in postmenopausal women provides additional preventive benefit. Managing recurrent UTIs in ageing populations requires addressing microbiological, diagnostic, and antimicrobial resistance challenges. Despite resistance levels, the first-line treatment, nitrofurantoin, remains a viable therapeutic option, particularly in developed countries. An integrated approach combining individualised care, healthcare provider training, and rational antimicrobial use is essential to improving patient outcomes and quality of life. Future strategies should focus on novel antimicrobials targeting bacterial virulence factors, vaccines against uropathogens, and advanced diagnostic technologies.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0035",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Prevalence and Factors Associated With Anxiety and Depression in Individuals With Chronic Atrial Fibrillation: A Cross-Sectional Study in Brazil",
+  "authors": [
+   "Queiroz Gustavo Carvalho de Lima",
+   "Monteiro Amanda da Silva",
+   "Melo Débora Ananias de",
+   "Mangueira Suzana de Oliveira",
+   "Leadebal Oriana Deyze Correia Paiva",
+   "Silva Butcher Rita de Cassia Gengo E",
+   "Sousa Mailson Marques de"
+  ],
+  "journal": "The Journal of cardiovascular nursing",
+  "doi": "10.1097/JCN.0000000000001319",
+  "pmid": "42413105",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42413105/",
+  "pubdate": "2026-07-07",
+  "date": "2026-07-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "abstract": "**BACKGROUND:** Chronic atrial fibrillation (CAF) is the most frequent sustained cardiac arrhythmia, and it is associated with a high burden of symptoms that impair self-care behaviors, treatment adherence, and quality of life.\n\n**OBJECTIVE:** In this study, our aim was to estimate the prevalence of anxiety and depressive symptoms in individuals with CAF and identify associated factors.\n\n**METHODS:** A cross-sectional analytical study was conducted at the cardiology outpatient clinic of a university hospital in João Pessoa (Paraíba, Brazil). Anxiety and depressive symptoms were assessed using the Hospital Anxiety and Depression Scale. Data were analyzed using the Chi-square test, prevalence ratio with a 95% confidence interval, and Poisson regression with robust variance.\n\n**RESULTS:** The study included 102 individuals with CAF; 60.8% reported anxiety symptoms and 38.2% reported depressive symptoms. The prevalence of anxiety symptoms was significantly lower in men (39.0%) than in women, and 27.0% lower among individuals with 8 years of education or less than in those with 9 years or more. The prevalence of depressive symptoms was 59.0% lower in men than in women, and 43.0% lower in individuals with up to 3 comorbidities than in those with 4 or more comorbidities.\n\n**CONCLUSIONS:** Among individuals with CAF, factors associated with anxiety and depressive symptoms were identified, including sex, educational level, and the number of comorbidities. These findings underscore the importance of incorporating systematic mental health assessment and integrative care strategies into the nursing management of individuals with CAF.",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0034",
   "topic": "Pediatrics",
   "subtopic": "",
