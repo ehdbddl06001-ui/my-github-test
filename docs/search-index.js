@@ -1,52 +1,247 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-06",
+ "generated": "2026-07-07",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 121,
+  "total": 132,
   "byType": {
+   "usmle": 30,
+   "paper": 34,
    "kmle": 65,
-   "paper": 29,
-   "basic": 3,
-   "usmle": 24
+   "basic": 3
   },
   "byTopic": {
-   "Cardiology": 12,
+   "Cardiology": 13,
+   "Nephrology": 11,
    "Infectious Disease": 10,
-   "Nephrology": 10,
-   "Pediatrics": 8,
+   "Pediatrics": 10,
    "Neurology": 6,
    "Obstetrics & Gynecology": 6,
    "Psychiatry": 6,
    "Endocrinology": 5,
    "Hematology": 5,
+   "Pathology": 5,
+   "Physiology": 5,
    "Dermatology": 4,
    "Gastroenterology": 4,
    "General Surgery": 4,
    "Ophthalmology": 4,
    "Orthopedics": 4,
-   "Pathology": 4,
-   "Physiology": 4,
    "Pulmonology": 4,
    "Rheumatology": 4,
+   "Surgery": 4,
+   "Laboratory Medicine": 3,
+   "Microbiology": 3,
    "Oncology": 3,
-   "Surgery": 3,
    "Biochemistry": 2,
    "Hematology-Oncology": 2,
    "Immunology": 2,
-   "Laboratory Medicine": 2,
-   "Microbiology": 2,
-   "Pharmacology": 1
+   "Pharmacology": 2,
+   "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 92,
-   "medium": 29
+   "high": 98,
+   "medium": 34
   },
-  "tagCount": 315
+  "tagCount": 340
  },
  "docs": [
+  {
+   "id": "usmle-2026-0030",
+   "type": "usmle",
+   "topic": "Pediatrics",
+   "subtopic": "STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated)",
+   "tags": [
+    "HUS",
+    "Shiga-toxin",
+    "E-coli-O157",
+    "thrombotic-microangiopathy",
+    "antibiotics"
+   ],
+   "source": "USMLE-style / MedKOS (pediatric nephrology · infectious diarrhea)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0030.md",
+   "snippet": "A 4 year old girl develops bloody diarrhea after eating an undercooked hamburger at a picnic. Five days later she is pale and lethargic with reduced urine output. Laboratory studies show anemia with schistocytes, a platelet count of 40,000/",
+   "text": "Pediatrics STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated) HUS Shiga-toxin E-coli-O157 thrombotic-microangiopathy antibiotics USMLE-style / MedKOS (pediatric nephrology · infectious diarrhea) A 4 year old girl develops bloody diarrhea after eating an undercooked hamburger at a picnic. Five days later she is pale and lethargic with reduced urine output. Laboratory studies show anemia with schistocytes, a platelet count of 40,000/microL, and a creatinine three times her baseline. Stool testing identifies a Shiga toxin producing organism. Which of the following is the most appropriate management? A. Empiric antibiotics to eradicate the organism and shorten the illness B. Loperamide to reduce stool frequency and fluid losses C. Prophylactic platelet transfusion to prevent bleeding D. Immediate plasma exchange as first line therapy E. Supportive care with careful fluid and electrolyte management, avoiding antibiotics and antimotility agents 혈성 설사 후 미세혈관병성 용혈성 빈혈(분열적혈구)·혈소판감소·급성 신손상 삼징은 Shiga toxin 생성 대장균(O157:H7 등)에 의한 전형적 HUS다. 소아 HUS는 지지치료(수액·전해질·필요시 투석)가 핵심이며, 항생제와 지사제(loperamide)는 독소 방출·전신 노출을 늘려 HUS 위험을 높이므로 금기다. 혈소판은 활동성 출혈·시술 시에만, 예방적 수혈은 피한다. 혈장교환은 전형적 소아 STEC HUS의 1차가 아니다."
+  },
+  {
+   "id": "usmle-2026-0029",
+   "type": "usmle",
+   "topic": "Surgery",
+   "subtopic": "Necrotizing Fasciitis",
+   "tags": [
+    "necrotizing-fasciitis",
+    "pain-out-of-proportion",
+    "crepitus",
+    "debridement",
+    "sepsis"
+   ],
+   "source": "USMLE-style / MedKOS (surgical emergency · soft-tissue infection)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0029.md",
+   "snippet": "A 58 year old man with diabetes presents with 1 day of rapidly worsening pain in the left leg after a minor scratch. He is febrile and tachycardic. The skin shows a dusky discoloration with a few tense bullae, and pain is far greater than t",
+   "text": "Surgery Necrotizing Fasciitis necrotizing-fasciitis pain-out-of-proportion crepitus debridement sepsis USMLE-style / MedKOS (surgical emergency · soft-tissue infection) A 58 year old man with diabetes presents with 1 day of rapidly worsening pain in the left leg after a minor scratch. He is febrile and tachycardic. The skin shows a dusky discoloration with a few tense bullae, and pain is far greater than the modest overlying erythema suggests. There is crepitus on palpation, and the margin of erythema is advancing over minutes. Which of the following is the most appropriate next step in management? A. Outpatient oral antibiotics and elevation with next day wound check B. Urgent surgical exploration and debridement, with broad spectrum antibiotics as an adjunct C. MRI of the leg before any surgical decision is made D. Incision and drainage at the bedside with packing E. Compression bandaging and empiric anticoagulation for suspected DVT 심한 통증(overlying 홍반에 비해 과도한 통증), 어두운 변색·수포, 염발음(crepitus), 분 단위로 진행하는 경계, 전신 독성은 괴사성 근막염의 전형이다. 이는 외과적 응급으로 지체 없는 광범위 debridement가 생존을 좌우하며 항생제는 보조다. 영상(MRI)이나 침상 절개배농으로 시간을 지체하면 사망률이 급증한다. DVT 오인·압박은 위험하다."
+  },
+  {
+   "id": "usmle-2026-0028",
+   "type": "usmle",
+   "topic": "Internal Medicine",
+   "subtopic": "DKA Potassium Management",
+   "tags": [
+    "DKA",
+    "potassium",
+    "insulin",
+    "total-body-depletion",
+    "arrhythmia"
+   ],
+   "source": "USMLE-style / MedKOS (endocrine emergency · electrolytes)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0028.md",
+   "snippet": "A 24 year old man with type 1 diabetes presents with vomiting and deep rapid breathing. Glucose is 540 mg/dL, arterial pH 7.08, bicarbonate 8 mEq/L, and large serum and urine ketones. He has received 2 L of isotonic saline. His initial seru",
+   "text": "Internal Medicine DKA Potassium Management DKA potassium insulin total-body-depletion arrhythmia USMLE-style / MedKOS (endocrine emergency · electrolytes) A 24 year old man with type 1 diabetes presents with vomiting and deep rapid breathing. Glucose is 540 mg/dL, arterial pH 7.08, bicarbonate 8 mEq/L, and large serum and urine ketones. He has received 2 L of isotonic saline. His initial serum potassium is 3.2 mEq/L. Which of the following is the most appropriate next step? A. Start an insulin infusion immediately without potassium because total body potassium is high B. Give intravenous sodium bicarbonate to correct the acidemia first C. Start insulin and add potassium only once potassium falls below 2.5 mEq/L D. Give intravenous potassium and hold insulin until potassium is above 3.3 mEq/L E. Administer intravenous calcium gluconate to stabilize the myocardium DKA에서는 삼투성 이뇨와 산증에 의한 세포 내→외 이동으로 전신 총칼륨이 크게 고갈돼 있다. 측정 혈청 K가 정상~높게 보여도 실제로는 부족하며, insulin은 K를 세포 내로 밀어넣어 급격한 저칼륨혈증과 치명적 부정맥을 유발한다. 따라서 K<3.3이면 insulin을 보류하고 먼저 K를 보충한다. bicarbonate는 대개 불필요(pH<6.9에서만 고려)하고 오히려 저칼륨을 악화시킬 수 있다."
+  },
+  {
+   "id": "usmle-2026-0027",
+   "type": "usmle",
+   "topic": "Microbiology",
+   "subtopic": "Invasive Aspergillosis in prolonged neutropenia",
+   "tags": [
+    "aspergillus",
+    "angioinvasion",
+    "neutropenia",
+    "galactomannan",
+    "voriconazole"
+   ],
+   "source": "USMLE-style / MedKOS (mycology · immunocompromised host)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0027.md",
+   "snippet": "A 46 year old man receiving induction chemotherapy for acute myeloid leukemia has had a neutrophil count near zero for 3 weeks. He develops fever, pleuritic chest pain, and hemoptysis despite broad spectrum antibacterial therapy. CT of the ",
+   "text": "Microbiology Invasive Aspergillosis in prolonged neutropenia aspergillus angioinvasion neutropenia galactomannan voriconazole USMLE-style / MedKOS (mycology · immunocompromised host) A 46 year old man receiving induction chemotherapy for acute myeloid leukemia has had a neutrophil count near zero for 3 weeks. He develops fever, pleuritic chest pain, and hemoptysis despite broad spectrum antibacterial therapy. CT of the chest shows nodules with surrounding ground glass halos, and a serum galactomannan assay is positive. Which characteristic of the responsible organism most directly accounts for his hemoptysis and the CT findings? A. Broad, ribbon like nonseptate hyphae with wide angle branching B. Angioinvasion by septate hyphae that branch at acute angles, causing vascular thrombosis and hemorrhagic infarction C. A polysaccharide capsule that blocks phagocytosis D. Germ tube forming yeast that invades along mucosal surfaces E. Dimorphic yeast surviving within macrophages after inhalation 장기 호중구감소 환자에서 발열·흉통·객혈 + CT의 halo sign(결절 주변 간유리) + galactomannan 양성은 침습성 폐 aspergillosis에 전형적이다. Aspergillus는 예각(약 45도)으로 분지하는 격벽성(septate) 균사로 혈관을 침습(angioinvasion)해 혈전·출혈성 경색을 일으켜 객혈과 halo/공동을 만든다. 넓은 무격벽 균사는 Mucor, 협막 효모는 Cryptococcus, germ tube 효모는 Candida albicans, 대식세포 내 이형성 효모는 Histoplasma에 해당한다."
+  },
+  {
+   "id": "usmle-2026-0026",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Carbon Monoxide Poisoning (O2-Hb dissociation curve)",
+   "tags": [
+    "carbon-monoxide",
+    "oxygen-content",
+    "pulse-oximetry",
+    "left-shift",
+    "PaO2"
+   ],
+   "source": "USMLE-style / MedKOS (respiratory · O2 transport)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0026.md",
+   "snippet": "A 30 year old man is rescued from a house fire and brought in with headache, dizziness, and confusion. He is breathing spontaneously. Pulse oximetry reads 99%, and arterial blood gas shows a normal PaO2. Despite these values his tissues are",
+   "text": "Physiology Carbon Monoxide Poisoning (O2-Hb dissociation curve) carbon-monoxide oxygen-content pulse-oximetry left-shift PaO2 USMLE-style / MedKOS (respiratory · O2 transport) A 30 year old man is rescued from a house fire and brought in with headache, dizziness, and confusion. He is breathing spontaneously. Pulse oximetry reads 99%, and arterial blood gas shows a normal PaO2. Despite these values his tissues are hypoxic. Which set of changes best explains his impaired oxygen delivery? A. Reduced dissolved PaO2 with a compensatory right shift of the oxyhemoglobin curve B. Increased methemoglobin with a normal oxygen carrying capacity C. Reduced oxygen carrying capacity plus a left shift of the oxyhemoglobin curve, with preserved dissolved PaO2 D. Increased alveolar dead space lowering arterial oxygen content E. A diffusion barrier at the alveolar membrane lowering PaO2 CO는 Hb에 O2보다 약 240배 높은 친화도로 결합해 산소 운반능(O2 content)을 떨어뜨리고, 남은 결합부위의 O2 방출을 방해해 곡선을 좌측 이동시켜 조직으로의 O2 전달을 더욱 악화시킨다. 용존 산소(PaO2)는 정상이라 일반 pulse oximeter는 carboxyhemoglobin을 oxyhemoglobin으로 오인해 SpO2가 거짓 정상으로 나온다. 진단은 co oximetry로 측정한 carboxyhemoglobin, 치료는 100% O2(중증 시 고압산소)."
+  },
+  {
+   "id": "usmle-2026-0025",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Acetaminophen Toxicity (NAPQI / N-acetylcysteine)",
+   "tags": [
+    "acetaminophen",
+    "NAPQI",
+    "glutathione",
+    "N-acetylcysteine",
+    "CYP2E1"
+   ],
+   "source": "USMLE-style / MedKOS (toxicology · phase II metabolism)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0025.md",
+   "snippet": "A 19 year old woman is brought to the emergency department 10 hours after ingesting a large number of tablets in a suicide attempt. She is nauseated but alert, with a normal examination and normal aminotransferases. A serum level of the ing",
+   "text": "Pharmacology Acetaminophen Toxicity (NAPQI / N-acetylcysteine) acetaminophen NAPQI glutathione N-acetylcysteine CYP2E1 USMLE-style / MedKOS (toxicology · phase II metabolism) A 19 year old woman is brought to the emergency department 10 hours after ingesting a large number of tablets in a suicide attempt. She is nauseated but alert, with a normal examination and normal aminotransferases. A serum level of the ingested drug plots above the treatment line on the Rumack Matthew nomogram, and the recommended antidote is started. The antidote's protective effect against hepatocellular necrosis is best explained by which of the following mechanisms? A. Replenishing hepatic glutathione stores used to conjugate a reactive electrophilic metabolite B. Competitively inhibiting CYP2E1 so the parent drug is excreted unchanged C. Chelating the parent drug within the gut lumen to block absorption D. Inducing glucuronosyltransferase to accelerate phase II conjugation of the parent drug E. Acting as a receptor antagonist that reverses the drug's central effects 아세트아미노펜은 대부분 glucuronidation/sulfation으로 무독성 대사되지만, 과량에서는 이 경로가 포화되어 CYP2E1이 반응성 대사물 NAPQI를 다량 생성한다. NAPQI는 정상적으로 glutathione(GSH)과 포합되어 해독되는데, GSH가 고갈되면 NAPQI가 간세포 단백과 공유결합해 중심소엽(zone 3) 괴사를 일으킨다. N acetylcysteine(NAC)은 cysteine을 공급해 GSH를 재보충(및 직접 NAPQI 포합)함으로써 간독성을 막는다. 나머지 보기는 기전이 틀렸다."
+  },
+  {
+   "id": "paper-2026-0034",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of consulting and clinical psychology",
+   "confidence": "medium",
+   "date": "2026-07-06",
+   "path": "content/papers/2026/2026-07-06_paper-2026-0034_testing_child_steps_in_school_based_mental_health_care_clust.md",
+   "snippet": "Title Testing child STEPS in school based mental health care: Cluster randomized controlled effectiveness trial in five school districts Authors Weisz John R, Evans Spencer C, Price Maggi A, Lee Erica H, Hollinsaid Nathan L, Harmon Sherelle",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of consulting and clinical psychology Title Testing child STEPS in school based mental health care: Cluster randomized controlled effectiveness trial in five school districts Authors Weisz John R, Evans Spencer C, Price Maggi A, Lee Erica H, Hollinsaid Nathan L, Harmon Sherelle L, Rodriguez Gabriela M, Corteselli Katherine A, et al. Journal / DOI Journal of consulting and clinical psychology · DOI: 10.1037/ccp0001014 · PMID: 42406483 https://pubmed.ncbi.nlm.nih.gov/42406483/ Abstract OBJECTIVE: More youth mental health care in the United States is provided in schools than any other setting. So, there is a need for evidence based psychotherapies that can work well with students in those sometimes complex environments. Transdiagnostic modular therapies may help, given their flexibility and capacity to address diverse youth disorders and problems. METHOD: We tested this possibility by conducting a school based cluster randomized controlled trial of Child STEPs, an intervention that combines the Modular Approach to Therapy for Children with consultation and measurement based care. One hundred forty two elementary and middle school students (Mage = 9.78, SD = 1.76, range 7 14; 39% female; 59% White, 18% multiracial, 9% Black, 6% Asian, 4% Hispanic, 4% another race/ethnicity) from five urban and suburban school districts were treated by 57 school counselors who had been randomized to STEPs or usual counseling (UC). RESULTS: The full sample improved significantly across multiple multi informant mental health measures administered at baseline, during treatment, at posttreatment, and 6 month follow up. STEPs counselors showed strong Modular Approach to Therapy for Children fidelity (coded from session recordings) and strong endorsement of Modular Approach to Therapy for Children effectiveness. However, there was no significant difference between STEPs and UC on any mental health outcome, and STEPs students showed poorer school engagement during treatment than UC students. CONCLUSIONS: STEPs did not outperform UC, despite strong STEPs fidelity by counselors; future research may test whether this finding is robust or might be altered by adapting evidence based modular treatment for the school context. (PsycInfo Database Record (c) 2026 APA, all rights reserved). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0033",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International dental journal",
+   "confidence": "medium",
+   "date": "2026-07-06",
+   "path": "content/papers/2026/2026-07-06_paper-2026-0033_assessment_of_large_language_models_and_expert_clinicians_in.md",
+   "snippet": "Title Assessment of Large Language Models and Expert Clinicians in Grading Mandibular Third Molar Extraction Difficulty Authors Yoon Suk Min, Yoo Jeong Hun, Kim Taejun, Kang Jae Hyun, Kim Bong Chul Journal / DOI International dental journal",
+   "text": "Laboratory Medicine scraped pubmed PubMed / International dental journal Title Assessment of Large Language Models and Expert Clinicians in Grading Mandibular Third Molar Extraction Difficulty Authors Yoon Suk Min, Yoo Jeong Hun, Kim Taejun, Kang Jae Hyun, Kim Bong Chul Journal / DOI International dental journal · DOI: 10.1016/j.identj.2026.109736 · PMID: 42407142 https://pubmed.ncbi.nlm.nih.gov/42407142/ Abstract BACKGROUND: The Pederson difficulty score (PDS) is widely used to assess mandibular third molar extraction difficulty, but is subject to interobserver variability because no universally accepted reference standard exists. This study investigates whether multimodal large language models (LLMs) demonstrate systematic grading tendencies comparable to those of human clinicians in the absence of a definitive standard. METHODS: This retrospective cross sectional study included 100 panoramic radiographs. Two LLMs (GPT and Gemini) and two oral and maxillofacial surgeons independently graded extraction difficulty using the PDS. No reference standard or gold standard rater was designated; all raters were treated as independent assessors. Agreement was assessed using quadratic weighted kappa and intraclass correlation coefficient values. Systematic bias was analysed using Bland Altman plots and ordinal logistic regression. The effects of prompt language and session protocol were also evaluated. RESULTS: The interexpert agreement was substantial (κ = 0.754). GPT demonstrated moderate agreement with experts (κ = 0.564 0.590), whereas Gemini exhibited fair to moderate agreement (κ = 0.356 0.461). Overall, the four rater reliability was moderate (intraclass correlation coefficient = 0.553). Both LLMs displayed minimal systematic bias (GPT: 0.13; Gemini: 0.08), with no significant differences in grading tendencies compared with human experts (P .05). However, sequential session evaluation significantly reduced the scoring consistency for both models (GPT: P = .001; Gemini: P < .001), whereas prompt language had no significant effect on total PDS scores (GPT: P = .543; Gemini: P = .386). A component level linguistic variation was observed only in GPT's assessment of the ramus relationship (P = .003). CONCLUSION: The examined LLMs showed grading tendencies partly comparable to those of human clinicians, without evidence of systematic directional bias; however, agreement remained below interexpert levels and was sensitive to conversational context. These findings should not be interpreted as evidence of diagnostic accuracy or clinical reliability, as no reference standard was established. CLINICAL RELEVANCE: LLMs may provide supplementary grading information if used with independent session protocols; however, their role in clinical decision making requires further validation against defined outcome standards. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0032",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ESMO open",
+   "confidence": "medium",
+   "date": "2026-07-06",
+   "path": "content/papers/2026/2026-07-06_paper-2026-0032_artificial_intelligence_based_prediction_of_claudin_18_2_exp.md",
+   "snippet": "Title Artificial intelligence based prediction of claudin 18.2 expression and immune phenotype from routine histology to guide treatment decisions in patients with gastric cancer Authors Kim H D, Shin S, Hwang W, Shin J, Lee T, Hyung J, Par",
+   "text": "Pathology scraped pubmed PubMed / ESMO open Title Artificial intelligence based prediction of claudin 18.2 expression and immune phenotype from routine histology to guide treatment decisions in patients with gastric cancer Authors Kim H D, Shin S, Hwang W, Shin J, Lee T, Hyung J, Park J, Pereira S, et al. Journal / DOI ESMO open · DOI: 10.1016/j.esmoop.2026.108021 · PMID: 42407198 https://pubmed.ncbi.nlm.nih.gov/42407198/ Abstract BACKGROUND: First line treatment of gastric cancer is evolving with the integration of immune checkpoint inhibitors (ICIs) and targeted agents, complicating biomarker stratification. Claudin 18.2 (CLDN18.2) is an established target for zolbetuximab; however, immunohistochemistry (IHC) is limited by tissue requirements, cost, and turnaround time. Artificial intelligence (AI) analysis of hematoxylin and eosin (H&E) stained slides may provide a scalable alternative. We developed and validated an AI model to predict CLDN18.2 expression from H&E slides and evaluated its clinical utility integrated with AI derived immune phenotyping. PATIENTS AND METHODS: This retrospective study included three independent cohorts of patients with gastric cancer. The development cohort comprised 622 patients (497 for training and 125 for tuning). The internal validation cohort included 378 patients treated with first line nivolumab plus chemotherapy or chemotherapy alone. The external validation cohort included 98 patients from diverse ethnic backgrounds. Whole slide H&E stained images were analyzed using a Vision Transformer based AI model to predict CLDN18.2 expression. A separate AI model classified the immune microenvironment as inflamed or noninflamed. Primary outcomes were predictive performance metrics, including area under the receiver operating characteristic curve (AUROC). Secondary outcomes included progression free survival (PFS) and overall survival (OS), stratified by AI predicted CLDN18.2 status and immune phenotype. RESULTS: CLDN18.2 positivity by IHC was 42.9% (development), 36.8% (internal validation), and 25.5% (external validation). The AI model yielded AUROC values of 0.752 (internal validation) and 0.856 (external validation). In the internal validation cohort, patients with AI predicted CLDN18.2 negative/inflamed tumors exhibited improved outcomes with nivolumab plus chemotherapy versus chemotherapy alone [PFS: hazard ratio (HR) 0.35, 95% confidence interval (CI) 0.15 0.82; OS: HR 0.40, 95% CI 0.18 0.89]. Patients with CLDN18.2 positive/noninflamed tumors showed no benefit from nivolumab plus chemotherapy. CONCLUSIONS: An AI model using routine histology predicted CLDN18.2 expression and immune phenotype in gastric cancer, identifying subgroups with differential benefit from ICI based chemotherapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0031",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR medical informatics",
+   "confidence": "medium",
+   "date": "2026-07-06",
+   "path": "content/papers/2026/2026-07-06_paper-2026-0031_determinants_of_acute_kidney_injury_after_endoscopic_retrogr.md",
+   "snippet": "Title Determinants of Acute Kidney Injury After Endoscopic Retrograde Cholangiopancreatography in Patients With Liver Cirrhosis: Retrospective Observational Study Authors Chang Chieh Wei Journal / DOI JMIR medical informatics · DOI: 10.2196",
+   "text": "Nephrology scraped pubmed PubMed / JMIR medical informatics Title Determinants of Acute Kidney Injury After Endoscopic Retrograde Cholangiopancreatography in Patients With Liver Cirrhosis: Retrospective Observational Study Authors Chang Chieh Wei Journal / DOI JMIR medical informatics · DOI: 10.2196/87551 · PMID: 42407059 https://pubmed.ncbi.nlm.nih.gov/42407059/ Abstract BACKGROUND: Patients with cirrhosis may have acute kidney injury (AKI) after receiving endoscopic retrograde cholangiopancreatography (ERCP). OBJECTIVE: This study aimed to identify determinants of AKI that require dialysis following ERCP in patients with cirrhosis. METHODS: Data from the US Nationwide Inpatient Sample from 2016 to 2020 were retrospectively reviewed. Patients aged ≥20 years with liver cirrhosis who underwent ERCP were identified. The primary outcome was AKI requiring dialysis. Logistic regression with stepwise selection was used to identify factors associated with dialysis requiring AKI among demographic variables, comorbidities, and hospital characteristics. RESULTS: Data from 6748 patients with liver cirrhosis who underwent ERCP were analyzed, and 2.2% (n=148) developed AKI that required dialysis. After adjustment, the results showed that decompensated liver cirrhosis (adjusted odds ratio [aOR] 4.73, 95% CI 3.12 7.15; P<.001), chronic kidney disease (aOR 5.93, 95% CI 4.00 8.79; P<.001), obesity (aOR 1.65, 95% CI 1.05 2.59; P=.03), and sepsis (aOR 3.57, 95% CI 2.44 5.23; P<.001) were significant factors associated with AKI that required dialysis. The developed model demonstrated good calibration and discrimination (c index: 0.826 for derivation cohort, 0.824 for validation cohort). CONCLUSIONS: Decompensated liver cirrhosis, preexisting chronic kidney disease, obesity, and sepsis are significant factors associated with AKI that require dialysis following ERCP in patients with liver cirrhosis. These findings can inform risk stratification and management strategies to improve outcomes in this high risk population. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0030",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of pharmacy and pharmacology",
+   "confidence": "medium",
+   "date": "2026-07-06",
+   "path": "content/papers/2026/2026-07-06_paper-2026-0030_therapeutic_strategies_of_traditional_chinese_medicine_for_c.md",
+   "snippet": "Title Therapeutic strategies of traditional Chinese medicine for chronic heart failure: from active ingredients to herbal formulations Authors Wang Yingying, Li Li, He Min, Zhou Ke Journal / DOI The Journal of pharmacy and pharmacology · DO",
+   "text": "Cardiology scraped pubmed PubMed / The Journal of pharmacy and pharmacology Title Therapeutic strategies of traditional Chinese medicine for chronic heart failure: from active ingredients to herbal formulations Authors Wang Yingying, Li Li, He Min, Zhou Ke Journal / DOI The Journal of pharmacy and pharmacology · DOI: 10.1093/jpp/rgag072 · PMID: 42407106 https://pubmed.ncbi.nlm.nih.gov/42407106/ Abstract Chronic heart failure (CHF) remains a global health challenge with complex pathological mechanisms, including inflammation, oxidative stress, mitochondrial dysfunction, myocardial remodeling, ferroptosis, and autophagy. Despite some progress in modern medicine for the treatment of CHF, challenges remain, including insufficient therapeutic efficacy and significant side effects. In this context, traditional Chinese medicine (TCM), characterized by its multi component, multi target, and holistic regulatory properties, demonstrates potential advantages in the prevention and treatment of CHF. This paper summarizes the research progress of active ingredients from Chinese medicinal herbs, single herbs, and traditional Chinese herbal formulations in addressing key pathological mechanisms related to CHF. These mechanisms include inflammation and oxidative stress, mitochondrial quality and energy metabolism disorders, myocardial remodeling, ferroptosis, and autophagy abnormalities. A multi target framework is constructed by linking active ingredients from Chinese medicinal herbs, the signaling pathways they regulate, and the corresponding pathological mechanisms involved in CHF. Further integrating the classification background of HFrEF, HFmrEF, and HFpEF, this paper analyzes the potential differential focal roles of TCM related mechanisms across different heart failure subtypes and pathological processes, and discusses existing problems in current research in the aspects of evidence hierarchy, druggability of active components, quality control, and clinical translation, as well as other related fields. This paper aims to provide a reference for subsequent research on TCM based prevention and treatment of CHF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0065",
    "type": "kmle",
