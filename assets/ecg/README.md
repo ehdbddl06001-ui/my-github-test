@@ -15,6 +15,11 @@
 | `ptbxl-00001-norm.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 1 — 정상 12유도 | CC-BY 4.0 |
 | `ptbxl-00172-crbbb.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 172 — 완전우각차단+LAFB 12유도 | CC-BY 4.0 |
 | `ptbxl-00270-imi.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 270 — 하벽·전중격 심근경색 12유도 | CC-BY 4.0 |
+| `ptbxl-08191-ami.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 8191 — 급성 심근경색(STEMI) 12유도 | CC-BY 4.0 |
+| `ptbxl-00180-clbbb.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 180 — 완전좌각차단 12유도 | CC-BY 4.0 |
+
+> Brugada는 PTB-XL 표준 SCP 라벨에 없어 미수록(별도 전용 소스 필요). 모양 기반 진단은
+> 위 각차단·경색 레코드로 커버.
 
 **12유도(PTB-XL)** 는 `figure: {type: ecg12, source: assets/ecg/<name>.json}` 로 표준
 3×4 + 리듬 스트립으로 렌더한다(`render_signal_svg.twelve_lead_svg`). CC-BY이므로

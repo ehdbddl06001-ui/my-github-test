@@ -5,15 +5,15 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 136,
+  "total": 138,
   "byType": {
-   "usmle": 34,
+   "usmle": 36,
    "paper": 34,
    "kmle": 65,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 16,
+   "Cardiology": 18,
    "Nephrology": 11,
    "Infectious Disease": 10,
    "Pediatrics": 10,
@@ -42,12 +42,50 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 102,
+   "high": 104,
    "medium": 34
   },
-  "tagCount": 351
+  "tagCount": 354
  },
  "docs": [
+  {
+   "id": "usmle-2026-0036",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Complete Left Bundle Branch Block (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "LBBB",
+    "wide-QRS",
+    "conduction"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0036.md",
+   "snippet": "A 70 year old woman has a 12 lead electrocardiogram during an outpatient visit. The QRS duration is prolonged. There is a broad, notched, monophasic R wave in leads I and V6 and a predominantly negative QRS (QS/rS) in V1, with loss of the n",
+   "text": "Cardiology Complete Left Bundle Branch Block (12-lead, real ECG) ECG 12-lead LBBB wide-QRS conduction USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 70 year old woman has a 12 lead electrocardiogram during an outpatient visit. The QRS duration is prolonged. There is a broad, notched, monophasic R wave in leads I and V6 and a predominantly negative QRS (QS/rS) in V1, with loss of the normal septal q waves. Which of the following is the most likely diagnosis? A. Complete left bundle branch block B. Complete right bundle branch block C. Wolff Parkinson White pattern D. Left ventricular hypertrophy without conduction delay E. Hyperkalemia 넓은 QRS(≥120 ms)에 I·V6의 넓고 노치된 단일 R파, V1의 QS/rS, 중격 q파 소실 → 완전좌각차단(CLBBB). 우각차단은 정반대로 V1의 rSR′와 I·V6의 넓은 S파를 보인다. WPW는 짧은 PR+델타파, LVH 단독은 전압 증가가 특징이며 QRS를 크게 넓히지 않는다, 고칼륨은 뾰족T·사인파 등 다른 맥락을 동반한다. 임상적으로 '새로 생긴 CLBBB + 허혈성 흉통'은 STEMI equivalent로 취급한다."
+  },
+  {
+   "id": "usmle-2026-0035",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Acute STEMI management (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "STEMI",
+    "reperfusion",
+    "chest-pain"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0035.md",
+   "snippet": "A 58 year old man arrives 60 minutes after the onset of severe crushing chest pain with diaphoresis. He is hemodynamically stable. His 12 lead electrocardiogram is shown and a high sensitivity troponin is elevated. A cardiac catheterization",
+   "text": "Cardiology Acute STEMI management (12-lead, real ECG) ECG 12-lead STEMI reperfusion chest-pain USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 58 year old man arrives 60 minutes after the onset of severe crushing chest pain with diaphoresis. He is hemodynamically stable. His 12 lead electrocardiogram is shown and a high sensitivity troponin is elevated. A cardiac catheterization laboratory is available on site. Which of the following is the most appropriate next step? A. Immediate reperfusion with primary percutaneous coronary intervention B. High dose NSAIDs and observation for pericarditis C. Repeat the ECG and troponin in 6 hours before deciding D. Outpatient exercise stress test after discharge E. Anticoagulation alone without reperfusion 허혈성 흉통 + 12유도의 급성 ST 상승 + 트로포닌 상승 = 급성 ST상승 심근경색(STEMI). 근치는 가능한 빨리 막힌 관동맥을 여는 재관류이며, PCI 시설이 있으면 일차적 PCI가 최우선(door to balloon 최소화). 심막염(광범위 오목형 ST상승·PR하강)·조기재분극과 감별하되, 전형적 허혈 흉통+국소 ST상승+트로포닌 상승이면 STEMI로 다루고 지체 없이 재관류한다."
+  },
   {
    "id": "usmle-2026-0034",
    "type": "usmle",
