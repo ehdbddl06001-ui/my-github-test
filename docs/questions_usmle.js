@@ -528,5 +528,137 @@ window.USMLE_QUESTIONS = [
   "answer": 1,
   "explanationText": "- 정답근거(약동학): 리튬은 대사되지 않고 신장으로만 배설되며 치료지수가\n  매우 좁다. Thiazide는 용적을 줄여 근위세뇨관에서 Na⁺(과 함께 Li⁺) 재흡수\n  를 늘리고, NSAID(ibuprofen)는 신전 prostaglandin을 줄여 신혈류·GFR을 낮춘다 →\n  리튬 청소율 감소 → 농도 상승 → 독성(조대 진전·실조·혼돈·구토, 중증엔 경련·\n  신부전).\n- 오답감별: (B) 리튬은 단백결합을 하지 않는 이온이라 displacement 무관.\n  (C) 리튬은 간대사 안 됨 → 효소유도 무관. (D) 독성은 저나트륨/용적감소가 핵심\n  이지 고칼륨이 아님(thiazide는 오히려 저칼륨 경향). (E) CYP 대사 산물 없음.\n- 임상핵심: 리튬 농도를 올리는 약: thiazide, ACEi/ARB, NSAID, 탈수. 리튬\n  부작용: 신성 요붕증, 갑상선저하, 진전, 기형(Ebstein). 중증 독성은 혈액투석.\n- 출처: psychopharmacology references; clinical toxicology.",
   "source": "USMLE-style / MedKOS (mood stabilizer safety)"
+ },
+ {
+  "id": "usmle-2026-0025",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pharmacology",
+  "subject_file": "Pharmacology",
+  "subtopic": "Acetaminophen Toxicity (NAPQI / N-acetylcysteine)",
+  "type": "Acetaminophen Toxicity (NAPQI / N-acetylcysteine)",
+  "difficulty": 4,
+  "vignette": "A 19-year-old woman is brought to the emergency department 10 hours after ingesting a large number of tablets in a suicide attempt. She is nauseated but alert, with a normal examination and normal aminotransferases. A serum level of the ingested drug plots above the treatment line on the Rumack-Matthew nomogram, and the recommended antidote is started.",
+  "question": "The antidote's protective effect against hepatocellular necrosis is best explained by which of the following mechanisms?",
+  "options": [
+   "Replenishing hepatic glutathione stores used to conjugate a reactive electrophilic metabolite",
+   "Competitively inhibiting CYP2E1 so the parent drug is excreted unchanged",
+   "Chelating the parent drug within the gut lumen to block absorption",
+   "Inducing glucuronosyltransferase to accelerate phase II conjugation of the parent drug",
+   "Acting as a receptor antagonist that reverses the drug's central effects"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거(대사 경로): 치료용량 acetaminophen은 대부분 glucuronidation/\n  sulfation(phase II)으로 무독화된다. 과량에서 이 경로가 포화되면 여분이\n  CYP2E1을 통해 반응성 친전자성 대사물 NAPQI로 전환된다. NAPQI는 평소\n  glutathione(GSH)과 포합돼 해독되지만, GSH가 고갈되면 간세포 단백에\n  공유결합해 중심소엽(zone 3) 괴사를 일으킨다.\n- antidote 기전: N-acetylcysteine(NAC)은 cysteine을 공급해 GSH를 재합성\n  (및 직접 NAPQI 결합)함으로써 간독성을 예방한다 → 정답 A.\n- 오답감별: (B) NAC는 CYP2E1 억제제가 아니며 모약을 미변화 배설시키지 않는다.\n  (C) 흡착·킬레이트는 activated charcoal 역할이지 NAC가 아니다. (D) UGT 유도로\n  작용하지 않는다. (E) naloxone식 수용체 길항 기전이 아니다.\n- 임상핵심: 시간축이 있어도 nomogram(4시간 이후 레벨)으로 판단하며, 초기엔\n  AST/ALT가 정상일 수 있다(괴사는 24–72시간에 최고조). NAC는 8–10시간 이내\n  투여 시 거의 완전 예방, 늦어도 투여 이득이 있다.\n- 출처: clinical toxicology; pharmacology (phase II metabolism, NAPQI–GSH).",
+  "source": "USMLE-style / MedKOS (toxicology · phase II metabolism)"
+ },
+ {
+  "id": "usmle-2026-0026",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "Carbon Monoxide Poisoning (O2-Hb dissociation curve)",
+  "type": "Carbon Monoxide Poisoning (O2-Hb dissociation curve)",
+  "difficulty": 4,
+  "vignette": "A 30-year-old man is rescued from a house fire and brought in with headache, dizziness, and confusion. He is breathing spontaneously. Pulse oximetry reads 99%, and arterial blood gas shows a normal PaO2. Despite these values his tissues are hypoxic.",
+  "question": "Which set of changes best explains his impaired oxygen delivery?",
+  "options": [
+   "Reduced dissolved PaO2 with a compensatory right shift of the oxyhemoglobin curve",
+   "Increased methemoglobin with a normal oxygen-carrying capacity",
+   "Reduced oxygen-carrying capacity plus a left shift of the oxyhemoglobin curve, with preserved dissolved PaO2",
+   "Increased alveolar dead space lowering arterial oxygen content",
+   "A diffusion barrier at the alveolar membrane lowering PaO2"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거(산소 운반): CO는 Hb에 대한 친화도가 O2보다 ~200–250배 높아\n  carboxyhemoglobin을 형성 → O2 content(운반능) 감소. 게다가 남은 자리의\n  O2 방출을 방해해 곡선을 좌측 이동(조직에서 O2를 못 놓음) → 조직 저산소 악화.\n- 왜 지표가 정상처럼 보이나: 용존 O2(PaO2)는 정상이고, 표준 pulse\n  oximeter는 두 파장만 읽어 COHb를 oxyHb로 오인 → SpO2 거짓 정상. 실제\n  포화도·COHb는 co-oximetry로 측정해야 한다.\n- 오답감별: (A) PaO2는 정상이고 곡선은 좌측(우측 아님) 이동. (B)\n  methemoglobin은 별개 기전(산화 스트레스, 초콜릿색 혈액, methylene blue 치료).\n  (D)(E) dead space·확산장벽은 PaO2를 낮추는데 여기선 PaO2가 정상이라 배제.\n- 임상핵심: 화재/난방기 노출 + 두통·혼돈 + 정상 SpO2/PaO2 = CO 중독을 의심.\n  치료 100% O2(반감기 단축), 중증(신경학적 증상·심근허혈·임신)엔 고압산소.\n- 출처: respiratory physiology; toxicology (COHb, co-oximetry).",
+  "source": "USMLE-style / MedKOS (respiratory · O2 transport)"
+ },
+ {
+  "id": "usmle-2026-0027",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Invasive Aspergillosis in prolonged neutropenia",
+  "type": "Invasive Aspergillosis in prolonged neutropenia",
+  "difficulty": 4,
+  "vignette": "A 46-year-old man receiving induction chemotherapy for acute myeloid leukemia has had a neutrophil count near zero for 3 weeks. He develops fever, pleuritic chest pain, and hemoptysis despite broad-spectrum antibacterial therapy. CT of the chest shows nodules with surrounding ground-glass halos, and a serum galactomannan assay is positive.",
+  "question": "Which characteristic of the responsible organism most directly accounts for his hemoptysis and the CT findings?",
+  "options": [
+   "Broad, ribbon-like nonseptate hyphae with wide-angle branching",
+   "Angioinvasion by septate hyphae that branch at acute angles, causing vascular thrombosis and hemorrhagic infarction",
+   "A polysaccharide capsule that blocks phagocytosis",
+   "Germ-tube-forming yeast that invades along mucosal surfaces",
+   "Dimorphic yeast surviving within macrophages after inhalation"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거(형태·병리): Aspergillus는 격벽성(septate) 균사가 예각\n  (~45°)으로 분지하며 혈관을 침습(angioinvasion) → 혈전·출혈성 경색 →\n  객혈과 CT의 halo sign(초기)·이후 air-crescent/공동을 만든다. 장기\n  호중구감소가 결정적 위험인자이고 galactomannan(세포벽 성분)이 진단 보조.\n- 오답감별: (A) 넓은 무격벽·직각 분지 = Mucorales(당뇨 케토산증·철과부하,\n  비대뇌형). (C) 협막 효모 = Cryptococcus(India ink, 뇌수막염). (D) germ\n  tube 형성 효모 = Candida albicans. (E) 대식세포 내 이형성 효모 =\n  Histoplasma.\n- 임상핵심: 침습성 aspergillosis 1차 치료는 voriconazole(또는\n  isavuconazole). 예방은 호중구 회복. Mucor와의 감별이 치료(amphotericin B +\n  수술적 절제)를 좌우하므로 균사 형태·숙주 배경을 함께 본다.\n- 출처: medical mycology; immunocompromised host infections.",
+  "source": "USMLE-style / MedKOS (mycology · immunocompromised host)"
+ },
+ {
+  "id": "usmle-2026-0028",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "DKA Potassium Management",
+  "type": "DKA Potassium Management",
+  "difficulty": 4,
+  "vignette": "A 24-year-old man with type 1 diabetes presents with vomiting and deep rapid breathing. Glucose is 540 mg/dL, arterial pH 7.08, bicarbonate 8 mEq/L, and large serum and urine ketones. He has received 2 L of isotonic saline. His initial serum potassium is 3.2 mEq/L.",
+  "question": "Which of the following is the most appropriate next step?",
+  "options": [
+   "Start an insulin infusion immediately without potassium because total-body potassium is high",
+   "Give intravenous sodium bicarbonate to correct the acidemia first",
+   "Start insulin and add potassium only once potassium falls below 2.5 mEq/L",
+   "Give intravenous potassium and hold insulin until potassium is above 3.3 mEq/L",
+   "Administer intravenous calcium gluconate to stabilize the myocardium"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거(칼륨 동태): DKA는 삼투성 이뇨·구토·산증에 의한 세포 내→외 이동\n  으로 전신 총칼륨이 심하게 고갈돼 있다. 측정 혈청 K가 정상이어도 실제 부족이며,\n  여기선 이미 3.2 mEq/L로 낮다. Insulin은 K⁺를 세포 내로 이동시켜 급격한\n  저칼륨혈증 → 치명적 부정맥을 유발할 수 있다.\n- 원칙: K < 3.3 mEq/L면 insulin을 보류하고 먼저 K를 정주 보충한다. K가\n  3.3–5.2면 insulin과 함께 K를 보충, K > 5.2면 K 없이 insulin 시작하며 추적.\n- 오답감별: (A) 총칼륨은 높지 않고 오히려 고갈 → 즉시 insulin은 위험. (B)\n  bicarbonate는 대개 불필요(pH < 6.9에서만 고려)하고 저칼륨·역설적 CNS 산증\n  위험. (C) K 2.5까지 방치하면 부정맥 위험이 이미 크다. (E) calcium은 고칼륨의\n  심근 안정화용으로 상황이 반대다.\n- 임상핵심: DKA 3축 = 수액 → 칼륨 확인 → insulin, 그리고 glucose ~200\n  에서 포도당 병용·insulin 유지로 ketone을 마저 제거(anion gap 정상화까지).\n- 출처: ADA DKA guidance; internal medicine.",
+  "source": "USMLE-style / MedKOS (endocrine emergency · electrolytes)"
+ },
+ {
+  "id": "usmle-2026-0029",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Necrotizing Fasciitis",
+  "type": "Necrotizing Fasciitis",
+  "difficulty": 4,
+  "vignette": "A 58-year-old man with diabetes presents with 1 day of rapidly worsening pain in the left leg after a minor scratch. He is febrile and tachycardic. The skin shows a dusky discoloration with a few tense bullae, and pain is far greater than the modest overlying erythema suggests. There is crepitus on palpation, and the margin of erythema is advancing over minutes.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Outpatient oral antibiotics and elevation with next-day wound check",
+   "Urgent surgical exploration and debridement, with broad-spectrum antibiotics as an adjunct",
+   "MRI of the leg before any surgical decision is made",
+   "Incision and drainage at the bedside with packing",
+   "Compression bandaging and empiric anticoagulation for suspected DVT"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거(임상 인지): 통증이 홍반에 비해 과도(pain out of proportion),\n  어두운 변색·긴장성 수포, 염발음(crepitus, 가스형성), 분 단위로 번지는\n  경계, 전신 독성 → necrotizing fasciitis. 이는 외과적 응급으로 즉각적\n  광범위 debridement가 예후를 결정하고, 광범위 항생제(예: vancomycin +\n  piperacillin-tazobactam ± clindamycin)는 보조다.\n- 오답감별: (A) 외래 경구 치료는 치명적 지연. (C) MRI로 수술을 지연시키면\n  안 된다—진단이 임상적으로 뚜렷하면 곧장 수술(진단 겸 치료). (D) 침상 I&D로는\n  근막 괴사 범위를 못 다룬다. (E) DVT로 오인해 압박·항응고하면 악화.\n- 임상핵심: 보조지표 LRINEC score, 수술장 소견 회백색 무출혈 근막·\n  \"dishwater\" 삼출. clindamycin은 독소 생성 억제 목적 추가. 조기 수술 지연\n  1시간마다 사망률 상승.\n- 출처: surgical infections; emergency general surgery.",
+  "source": "USMLE-style / MedKOS (surgical emergency · soft-tissue infection)"
+ },
+ {
+  "id": "usmle-2026-0030",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated)",
+  "type": "STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated)",
+  "difficulty": 5,
+  "vignette": "A 4-year-old girl develops bloody diarrhea after eating an undercooked hamburger at a picnic. Five days later she is pale and lethargic with reduced urine output. Laboratory studies show anemia with schistocytes, a platelet count of 40,000/microL, and a creatinine three times her baseline. Stool testing identifies a Shiga-toxin-producing organism.",
+  "question": "Which of the following is the most appropriate management?",
+  "options": [
+   "Empiric antibiotics to eradicate the organism and shorten the illness",
+   "Loperamide to reduce stool frequency and fluid losses",
+   "Prophylactic platelet transfusion to prevent bleeding",
+   "Immediate plasma exchange as first-line therapy",
+   "Supportive care with careful fluid and electrolyte management, avoiding antibiotics and antimotility agents"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거(삼징 인지): 혈성 설사 후 미세혈관병성 용혈성 빈혈(schistocyte) +\n  혈소판감소 + 급성 신손상 = Shiga toxin 생성 대장균(STEC, O157:H7)에\n  의한 전형적 HUS. 치료의 핵심은 지지요법(신중한 수액·전해질, 필요 시 투석).\n- 왜 항생제 금기: 항생제와 지사제(loperamide)는 균 사멸·정체로 Shiga\n  toxin 방출·흡수를 늘려 HUS를 유발·악화시킬 수 있어 피한다 → 정답 E.\n- 오답감별: (A)(B) 위 이유로 금기(항생제·loperamide). (C) 예방적 혈소판\n  수혈은 피함(활동성 출혈·침습적 시술 시에만). (D) plasma exchange는\n  비전형(complement) HUS나 TTP의 치료로, 전형적 소아 STEC-HUS의 1차가 아니다.\n- 임상핵심: 성인 TTP는 ADAMTS13 결핍(신경증상 우세)로 혈장교환이 1차 —\n  소아 STEC-HUS와 구분. 비전형 HUS는 보체 조절이상 → eculizumab.\n- 출처: pediatric nephrology; STEC-HUS management.",
+  "source": "USMLE-style / MedKOS (pediatric nephrology · infectious diarrhea)"
  }
 ];

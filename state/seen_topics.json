@@ -115,7 +115,9 @@
     "Immunology - Chronic Granulomatous Disease": "2026-07-02",
     "Immunology - Terminal Complement Deficiency": "2026-07-02",
     "Infectious Disease - Enterococcal Endocarditis": "2026-07-02",
+    "Internal Medicine - DKA Potassium Management": "2026-07-07",
     "Microbiology - Exotoxin EF-2 ADP-ribosylation": "2026-07-02",
+    "Microbiology - Invasive Aspergillosis (neutropenia)": "2026-07-07",
     "Microbiology - Vancomycin Resistance (VRE)": "2026-07-02",
     "Nephrology - Salicylate Mixed Acid-Base": "2026-07-02",
     "Neurology - Acute Ischemic Stroke Thrombolysis": "2026-07-02",
@@ -126,10 +128,14 @@
     "Pathology - Retinoblastoma Two-Hit": "2026-07-02",
     "Pediatrics - Ductal-Dependent Cyanotic CHD": "2026-07-02",
     "Pediatrics - Hypertrophic Pyloric Stenosis": "2026-07-02",
+    "Pediatrics - STEC-HUS (avoid antibiotics)": "2026-07-07",
+    "Pharmacology - Acetaminophen Toxicity (NAPQI/NAC)": "2026-07-07",
+    "Physiology - Carbon Monoxide Poisoning (O2-Hb curve)": "2026-07-07",
     "Physiology - Hypoxemia A-a Gradient": "2026-07-02",
     "Physiology - SIADH vs DI": "2026-07-02",
     "Psychiatry - Lithium Toxicity": "2026-07-02",
     "Psychiatry - Serotonin Syndrome": "2026-07-02",
-    "Surgery - Acute Mesenteric Ischemia": "2026-07-02"
+    "Surgery - Acute Mesenteric Ischemia": "2026-07-02",
+    "Surgery - Necrotizing Fasciitis": "2026-07-07"
   }
 }
