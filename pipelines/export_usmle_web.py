@@ -79,6 +79,10 @@ def build_record(path: Path) -> dict | None:
         "answer": LETTERS.get(ans, 0),
         "explanationText": explanation_text(d.body),
         "source": m.get("source", ""),
+        # 구조화 임상 자료(선택): 활력징후·검사소견 박스, 해설 부록(결정표 등)
+        "vitals": m.get("vitals", []) or [],
+        "labs": m.get("labs", []) or [],
+        "appendix": m.get("appendix") or None,
     }
 
 

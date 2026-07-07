@@ -112,6 +112,7 @@ function renderQuestion() {
   $("typeTag").textContent = q.step ? `${q.step} · ${q.type || ""}` : (q.type || "");
   $("subjTag").textContent = q.subject;
   $("vignette").textContent = q.vignette.trim();
+  $("clindata").innerHTML = dataBox(q);
   $("question").textContent = "Q. " + q.question.trim();
 
   const box = $("options");
@@ -161,8 +162,8 @@ function renderExplanation(q, chosenIdx, ok) {
 
   let bodyHtml;
   if (q.explanationText) {
-    // USMLE: '## 정답 및 해설' 본문 텍스트를 그대로 보여준다(줄바꿈 유지).
-    bodyHtml = `<pre class="expl-text">${escapeHtml(q.explanationText)}</pre>`;
+    // USMLE: '## 정답 및 해설' 본문 텍스트 + (있으면) 부록 결정표 박스.
+    bodyHtml = `<pre class="expl-text">${escapeHtml(q.explanationText)}</pre>` + renderAppendix(q.appendix);
   } else {
     const ex = q.explanation || {};
     const rows = [];
@@ -174,6 +175,26 @@ function renderExplanation(q, chosenIdx, ok) {
   }
   el.innerHTML = verdict + bodyHtml;
   el.classList.remove("hidden");
+}
+
+// 구조화 임상 자료(활력징후·검사소견)를 문제 상단 박스로 렌더한다.
+function dataBox(q) {
+  const vit = Array.isArray(q.vitals) ? q.vitals : [];
+  const labs = Array.isArray(q.labs) ? q.labs : [];
+  if (!vit.length && !labs.length) return "";
+  let html = '<div class="databox">';
+  if (vit.length) {
+    html += '<div class="db-h">활력징후</div><div class="db-vitals">'
+      + vit.map((v) => `<span class="vchip"><b>${escapeHtml(v.name)}</b> ${escapeHtml(v.value)}</span>`).join("")
+      + "</div>";
+  }
+  if (labs.length) {
+    html += '<div class="db-h">검사 소견</div>'
+      + '<table class="db-labs"><thead><tr><th>항목</th><th>값</th><th>참고치</th></tr></thead><tbody>'
+      + labs.map((l) => `<tr><td>${escapeHtml(l.name)}</td><td>${escapeHtml(l.value)}</td><td class="ref">${escapeHtml(l.ref || "")}</td></tr>`).join("")
+      + "</tbody></table>";
+  }
+  return html + "</div>";
 }
 
 function renderAppendix(ap) {

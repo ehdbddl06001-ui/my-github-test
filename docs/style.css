@@ -125,6 +125,19 @@ button.danger{border-color:var(--bad); color:#ffb4b4}
 .refs{margin:4px 0 4px 20px; padding:0; color:var(--muted); font-size:.86rem}
 .refs li{margin:2px 0}
 
+/* 임상 자료 박스(활력징후·검사소견) — 문제 상단 */
+.databox{background:#0e1826; border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:12px 0}
+.databox .db-h{color:var(--tag); font-weight:700; font-size:.82rem; margin:2px 0 6px}
+.databox .db-h + .db-h, .databox .db-labs + .db-h, .databox table + .db-h{margin-top:12px}
+.db-vitals{display:flex; flex-wrap:wrap; gap:6px}
+.vchip{background:#0b1420; border:1px solid var(--line); border-radius:6px; padding:3px 9px; font-size:.86rem; color:var(--ink)}
+.vchip b{color:#9cc3ff; font-weight:600; margin-right:4px}
+.db-labs{width:100%; border-collapse:collapse; font-size:.88rem}
+.db-labs th{text-align:left; color:var(--muted); font-weight:600; font-size:.8rem; padding:4px 8px; border-bottom:1px solid var(--line)}
+.db-labs td{padding:4px 8px; border-bottom:1px solid #16202e}
+.db-labs td.ref{color:var(--muted); font-size:.82rem; white-space:nowrap}
+.db-labs tr:last-child td{border-bottom:none}
+
 .quiz-nav{display:flex; gap:10px; margin-top:16px}
 .score{font-size:1.1rem; font-weight:600}
 #wrongList .w, #wbList .w{border:1px solid var(--line); border-radius:10px; padding:12px; margin:10px 0; background:#0e1826}

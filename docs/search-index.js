@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 132,
+  "total": 133,
   "byType": {
-   "usmle": 30,
+   "usmle": 31,
    "paper": 34,
    "kmle": 65,
    "basic": 3
@@ -17,8 +17,8 @@ window.MEDKOS_INDEX = {
    "Nephrology": 11,
    "Infectious Disease": 10,
    "Pediatrics": 10,
+   "Obstetrics & Gynecology": 7,
    "Neurology": 6,
-   "Obstetrics & Gynecology": 6,
    "Psychiatry": 6,
    "Endocrinology": 5,
    "Hematology": 5,
@@ -42,12 +42,31 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 98,
+   "high": 99,
    "medium": 34
   },
-  "tagCount": 340
+  "tagCount": 343
  },
  "docs": [
+  {
+   "id": "usmle-2026-0031",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Severe Preeclampsia Management (delivery timing, IUGR/oligohydramnios)",
+   "tags": [
+    "preeclampsia",
+    "magnesium-sulfate",
+    "IUGR",
+    "oligohydramnios",
+    "delivery"
+   ],
+   "source": "USMLE-style / MedKOS (obstetric emergency · hypertensive disorders)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0031.md",
+   "snippet": "A 25 year old primigravida at 38 weeks of gestation presents with 2 days of hand swelling and headache. On examination the cervix is 3 cm dilated, 90% effaced, with the vertex at 2 station. Ultrasound shows a cephalic fetus with an estimate",
+   "text": "Obstetrics & Gynecology Severe Preeclampsia Management (delivery timing, IUGR/oligohydramnios) preeclampsia magnesium-sulfate IUGR oligohydramnios delivery USMLE-style / MedKOS (obstetric emergency · hypertensive disorders) A 25 year old primigravida at 38 weeks of gestation presents with 2 days of hand swelling and headache. On examination the cervix is 3 cm dilated, 90% effaced, with the vertex at 2 station. Ultrasound shows a cephalic fetus with an estimated weight of 2,000 g (below the 10th percentile) and an amniotic fluid index of 3 cm. Continuous fetal heart rate monitoring shows a baseline of 140/min with moderate variability and no late decelerations. Her vital signs and laboratory findings are shown. Which of the following is the most appropriate next step in management? A. Expectant management with outpatient blood pressure monitoring until 40 weeks B. Tocolysis to prolong the pregnancy and lower the blood pressure C. Intravenous magnesium sulfate and an antihypertensive, then proceed with delivery D. Betamethasone for fetal lung maturity and delay delivery for 48 hours E. Immediate cesarean delivery without magnesium sulfate or antihypertensive therapy BP 170/110 + 두통 + 요단백 4+ + 혈소판 9만 → 중증 전자간증. 38주이고 CTG가 안정적(정상 기저·중등도 변이·만기감속 없음)이라 '중증·태아안정' 분기 → MgSO4 발작예방 + 혈압조절 후 분만(자궁경부 양호·두위라 유도분만 우선). 38주라 betamethasone·expectant·tocolysis는 부적절하고, 태아가 안정적이라 응급 제왕절개가 필수는 아니며 MgSO4/혈압조절을 생략해선 안 된다."
+  },
   {
    "id": "usmle-2026-0030",
    "type": "usmle",
