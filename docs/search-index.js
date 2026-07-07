@@ -5,15 +5,15 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 134,
+  "total": 135,
   "byType": {
-   "usmle": 32,
+   "usmle": 33,
    "paper": 34,
    "kmle": 65,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 14,
+   "Cardiology": 15,
    "Nephrology": 11,
    "Infectious Disease": 10,
    "Pediatrics": 10,
@@ -42,12 +42,30 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 100,
+   "high": 101,
    "medium": 34
   },
-  "tagCount": 345
+  "tagCount": 347
  },
  "docs": [
+  {
+   "id": "usmle-2026-0033",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Normal Sinus Rhythm (real ECG from open DB)",
+   "tags": [
+    "ECG",
+    "normal-sinus-rhythm",
+    "rhythm",
+    "real-signal"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: MIT-BIH Arrhythmia DB (ODC-BY)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0033.md",
+   "snippet": "A 45 year old man has a routine preoperative electrocardiogram. He is asymptomatic and hemodynamically stable. The rhythm strip shown is recorded. Which of the following best describes the underlying rhythm? A. Atrial fibrillation B. Normal",
+   "text": "Cardiology Normal Sinus Rhythm (real ECG from open DB) ECG normal-sinus-rhythm rhythm real-signal USMLE-style / MedKOS · ECG: MIT-BIH Arrhythmia DB (ODC-BY) A 45 year old man has a routine preoperative electrocardiogram. He is asymptomatic and hemodynamically stable. The rhythm strip shown is recorded. Which of the following best describes the underlying rhythm? A. Atrial fibrillation B. Normal sinus rhythm C. Atrial flutter D. Junctional rhythm E. Third degree atrioventricular block 리듬 스트립에서 RR 간격이 규칙적이고, 각 QRS 앞에 일정한 형태의 P파가 있으며, QRS 폭이 좁다 → 정상 동율동(normal sinus rhythm). 심방세동(P소실·불규칙), 심방조동(톱니 F파), 접합부율동(P소실/역행 P), 완전방실차단(P와 QRS 독립)과 구분된다."
+  },
   {
    "id": "usmle-2026-0032",
    "type": "usmle",

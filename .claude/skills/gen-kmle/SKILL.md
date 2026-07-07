@@ -88,8 +88,13 @@ figure: {type: ecg, rhythm: afib, rate: 112}
 ```
 - 가능한 rhythm: `sinus·brady·tachy·afib·flutter·vtach·vfib·cavb·asystole`
   (리듬·간격·무질서형만). 심박수는 `rate` 로 조정(생략 시 기본값).
-- **금지**: 브루가다·STEMI·심막염처럼 **ST/복합체 모양·12유도**로 정의되는 진단은
-  파형을 합성하지 않는다(틀린 도형 위험) — 텍스트 소견 + `confidence` 하향으로 처리.
+- **금지(합성)**: 브루가다·STEMI·심막염처럼 **ST/복합체 모양·12유도**로 정의되는
+  진단은 파형을 **합성**하지 않는다(틀린 도형 위험).
+- **실데이터가 필요하면** `type: ecg_signal` 로 `assets/ecg/*.json`(오픈 DB 실파형)을
+  렌더한다 — 진짜 모양이라 안전. 다만 오픈 라이선스·출처 표기 필수(schemas 참조).
+  ```yaml
+  figure: {type: ecg_signal, source: assets/ecg/mitdb-100.json, lead: MLII}
+  ```
 
 ## 해설 3층 구조 (관리·처치형은 필수)
 단순 정답 설명을 넘어, 재사용 가능한 프레임워크까지 준다.

@@ -92,20 +92,27 @@ appendix:
     (중증도 × 재태주수 × 태아상태 → 처치, 각주로 약물 factoring)
   최신지견: "핵심 한 줄."
   참고문헌: ["ACOG …", "Williams …"]
-figure:                       # 심전도 판독 문항일 때만
+figure:                       # (1) 수식 합성 — 리듬형
   type: ecg
   rhythm: afib                # sinus·brady·tachy·afib·flutter·vtach·vfib·cavb·asystole
   rate: 112                   # 생략 시 리듬별 기본값
+# 또는 (2) 실데이터 렌더 — 오픈 신호 DB
+figure:
+  type: ecg_signal
+  source: assets/ecg/mitdb-100.json   # ingest_ecg.py 산출물
+  lead: MLII
 ```
 
 ### `figure` (심전도) 규칙 — 매우 중요
-- `pipelines/gen_ecg_svg.py`가 **수식**으로 생성한다(AI 이미지 아님). `rhythm`이 곧
-  정답이 되도록 통제되므로, 문항의 정답과 `rhythm`이 **반드시 일치**해야 한다.
-- **다룰 수 있는 것 = 리듬·간격·무질서형만**: 위 목록의 rhythm들(정상/서맥/빈맥/
-  심방세동/조동/심실빈맥/심실세동/완전방실차단/무수축).
-- **다루면 안 되는 것 = 모양·ST·유도별 진단**: 브루가다·STEMI·심막염·정밀 각차단/LVH
-  등은 12유도와 정확한 파형 모양이 본질이라 **합성 금지**(틀린 도형 위험). 이런 문항은
-  이미지 없이 소견을 텍스트로 기술하고 `confidence`를 낮춘다.
+- **type=ecg (수식 합성)**: `pipelines/gen_ecg_svg.py`가 수식으로 생성(AI 이미지
+  아님). `rhythm`이 곧 정답이니 문항 정답과 **반드시 일치**시킨다.
+  - 다룰 수 있는 것 = **리듬·간격·무질서형만**(위 rhythm 목록).
+  - **금지 = 모양·ST·유도별 진단**(브루가다·STEMI·심막염 등): 12유도와 정확한 파형
+    모양이 본질이라 합성하면 틀린 도형이 된다.
+- **type=ecg_signal (실데이터)**: `assets/ecg/*.json`(오픈 DB 신호)을
+  `render_signal_svg.py`로 렌더. **진짜 파형**이라 모양이 본질인 진단도 안전
+  (12유도 확장 시). 재배포 가능한 **오픈 라이선스만**, 출처를 `source`·에셋에 표기.
+  새 레코드는 `pipelines/ingest_ecg.py`로 오프라인 1회 커밋.
 
 ## 원칙
 
