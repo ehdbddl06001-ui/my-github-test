@@ -129,6 +129,10 @@ button.danger{border-color:var(--bad); color:#ffb4b4}
 .refs{margin:4px 0 4px 20px; padding:0; color:var(--muted); font-size:.86rem}
 .refs li{margin:2px 0}
 
+/* 도형(심전도 등 결정론 SVG) 박스 — 문제 상단 */
+.figbox{background:#fff; border:1px solid var(--line); border-radius:10px; padding:8px; margin:12px 0; overflow-x:auto}
+.figbox svg{display:block}
+
 /* 임상 자료 박스(활력징후·검사소견) — 문제 상단 */
 .databox{background:#0e1826; border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:12px 0}
 .databox .db-h{color:var(--tag); font-weight:700; font-size:.82rem; margin:2px 0 6px}

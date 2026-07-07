@@ -18,6 +18,7 @@ import re
 from pathlib import Path
 
 from frontmatter import load
+from gen_ecg_svg import ecg_svg
 
 ROOT = Path(__file__).resolve().parent.parent
 USMLE_DIR = ROOT / "content" / "usmle"
@@ -80,6 +81,25 @@ def explanation_items(body: str) -> list[dict]:
     return items
 
 
+def render_figure(fig: dict | None, fname: str = "") -> str:
+    """frontmatter의 figure 명세를 인라인 SVG 문자열로 렌더한다(결정론적 생성).
+    현재 type=ecg 지원. 확장 시 여기서 분기한다(ctg·spirometry 등)."""
+    if not isinstance(fig, dict):
+        return ""
+    kind = fig.get("type")
+    try:
+        if kind == "ecg":
+            return ecg_svg(
+                rhythm=fig.get("rhythm", "sinus"),
+                rate=float(fig.get("rate", 75)),
+                seconds=float(fig.get("seconds", 6)),
+                label=fig.get("label"),
+            )
+    except Exception as e:  # 생성 실패해도 문항은 살린다
+        print(f"[figure] {fname}: {e}")
+    return ""
+
+
 def build_record(path: Path) -> dict | None:
     d = load(path)
     if d.errors:
@@ -89,6 +109,7 @@ def build_record(path: Path) -> dict | None:
     vignette, question = split_stem(m.get("stem", ""))
     ans = str(m.get("answer", "")).strip().upper()
     subject = m.get("exam_subject") or m.get("topic", "")
+    figure_svg = render_figure(m.get("figure"), path.name)
     return {
         "id": d.id,
         "exam": "usmle",
@@ -110,6 +131,7 @@ def build_record(path: Path) -> dict | None:
         "vitals": m.get("vitals", []) or [],
         "labs": m.get("labs", []) or [],
         "appendix": m.get("appendix") or None,
+        "figureSvg": figure_svg,
     }
 
 

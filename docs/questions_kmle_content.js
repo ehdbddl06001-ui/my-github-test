@@ -25,7 +25,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0064",
@@ -51,7 +52,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0063",
@@ -77,7 +79,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0062",
@@ -103,7 +106,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0061",
@@ -129,7 +133,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0060",
@@ -155,7 +160,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0059",
@@ -181,7 +187,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0058",
@@ -207,7 +214,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0057",
@@ -233,7 +241,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0056",
@@ -259,7 +268,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0055",
@@ -285,7 +295,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0054",
@@ -311,7 +322,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0053",
@@ -337,7 +349,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0052",
@@ -363,7 +376,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0051",
@@ -389,7 +403,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0050",
@@ -415,7 +430,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0049",
@@ -441,7 +457,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0048",
@@ -467,7 +484,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0047",
@@ -493,7 +511,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0046",
@@ -519,7 +538,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0045",
@@ -545,7 +565,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0044",
@@ -571,7 +592,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0043",
@@ -597,7 +619,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0042",
@@ -623,7 +646,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0041",
@@ -649,7 +673,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0040",
@@ -675,7 +700,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0039",
@@ -701,7 +727,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0038",
@@ -727,7 +754,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0037",
@@ -753,7 +781,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0036",
@@ -779,7 +808,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0035",
@@ -805,7 +835,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0034",
@@ -831,7 +862,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0033",
@@ -857,7 +889,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0032",
@@ -883,7 +916,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0031",
@@ -909,7 +943,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0030",
@@ -935,7 +970,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0029",
@@ -961,7 +997,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0028",
@@ -987,7 +1024,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0027",
@@ -1013,7 +1051,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0026",
@@ -1039,7 +1078,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0025",
@@ -1065,7 +1105,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0024",
@@ -1091,7 +1132,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0023",
@@ -1117,7 +1159,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0022",
@@ -1143,7 +1186,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0021",
@@ -1169,7 +1213,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0020",
@@ -1195,7 +1240,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0019",
@@ -1221,7 +1267,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0018",
@@ -1247,7 +1294,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0017",
@@ -1273,7 +1321,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0016",
@@ -1299,7 +1348,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0015",
@@ -1325,7 +1375,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0014",
@@ -1351,7 +1402,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0013",
@@ -1377,7 +1429,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0012",
@@ -1403,7 +1456,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0011",
@@ -1429,7 +1483,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0010",
@@ -1455,7 +1510,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0009",
@@ -1481,7 +1537,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0008",
@@ -1507,7 +1564,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0007",
@@ -1533,7 +1591,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0006",
@@ -1559,7 +1618,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0005",
@@ -1585,7 +1645,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0004",
@@ -1611,7 +1672,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0003",
@@ -1637,7 +1699,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0002",
@@ -1663,7 +1726,8 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / Claude Routine",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  },
  {
   "id": "kmle-2026-0001",
@@ -1689,6 +1753,7 @@ window.KMLE_CONTENT_QUESTIONS = [
   "source": "KMLE 2026 / 예시",
   "vitals": [],
   "labs": [],
-  "appendix": null
+  "appendix": null,
+  "figureSvg": ""
  }
 ];

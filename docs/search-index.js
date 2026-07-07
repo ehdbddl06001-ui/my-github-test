@@ -5,15 +5,15 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 133,
+  "total": 134,
   "byType": {
-   "usmle": 31,
+   "usmle": 32,
    "paper": 34,
    "kmle": 65,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 13,
+   "Cardiology": 14,
    "Nephrology": 11,
    "Infectious Disease": 10,
    "Pediatrics": 10,
@@ -42,12 +42,30 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 99,
+   "high": 100,
    "medium": 34
   },
-  "tagCount": 343
+  "tagCount": 345
  },
  "docs": [
+  {
+   "id": "usmle-2026-0032",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Atrial Fibrillation (ECG rhythm recognition)",
+   "tags": [
+    "atrial-fibrillation",
+    "ECG",
+    "irregularly-irregular",
+    "rhythm"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · ECG)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0032.md",
+   "snippet": "A 68 year old woman presents with 3 hours of palpitations and mild dyspnea. Her pulse is irregularly irregular. She has no chest pain and is hemodynamically stable. A rhythm strip is shown. Which of the following best describes the rhythm? ",
+   "text": "Cardiology Atrial Fibrillation (ECG rhythm recognition) atrial-fibrillation ECG irregularly-irregular rhythm USMLE-style / MedKOS (cardiology · ECG) A 68 year old woman presents with 3 hours of palpitations and mild dyspnea. Her pulse is irregularly irregular. She has no chest pain and is hemodynamically stable. A rhythm strip is shown. Which of the following best describes the rhythm? A. Atrial fibrillation B. Atrial flutter C. Multifocal atrial tachycardia D. Sinus arrhythmia E. Ventricular tachycardia 리듬 스트립에서 뚜렷한 P파가 없고 기저가 잔물결(f파)처럼 흔들리며 RR 간격이 불규칙하게 불규칙하다 → 심방세동. 맥박도 irregularly irregular. 협착조동(톱니 F파·대개 규칙적 전도), MAT(≥3가지 P형태), 동성부정맥(정상 P·호흡성 변동), 심실빈맥(넓은 QRS·규칙적·빠름)과 감별된다."
+  },
   {
    "id": "usmle-2026-0031",
    "type": "usmle",

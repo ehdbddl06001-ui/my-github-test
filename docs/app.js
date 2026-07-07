@@ -116,7 +116,8 @@ function renderQuestion() {
   $("typeTag").textContent = q.step ? `${q.step} · ${q.type || ""}` : (q.type || "");
   $("subjTag").textContent = q.subject;
   $("vignette").textContent = q.vignette.trim();
-  $("clindata").innerHTML = dataBox(q);
+  $("clindata").innerHTML =
+    (q.figureSvg ? `<div class="figbox">${q.figureSvg}</div>` : "") + dataBox(q);
   $("question").textContent = "Q. " + q.question.trim();
 
   const box = $("options");
