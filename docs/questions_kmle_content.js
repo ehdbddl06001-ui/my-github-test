@@ -2,6 +2,1024 @@
 // 원본: content/kmle/**/*.md  →  `python pipelines/export_kmle_web.py`로 재생성
 window.KMLE_CONTENT_QUESTIONS = [
  {
+  "id": "kmle-2026-0097",
+  "exam": "kmle",
+  "subject": "Allergy",
+  "subject_file": "Allergy",
+  "subtopic": "DRESS Syndrome",
+  "type": "DRESS Syndrome",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "40세 남성이 카르바마제핀을 시작한 지 4주 뒤 광범위 발진과 안면부종, 고열, 림프절종대가 생겼다. 호산구 증가와 간효소 상승이 동반됐다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "단순 약물발진",
+   "스티븐스-존슨증후군",
+   "호산구증가·전신증상 동반 약물반응(DRESS)",
+   "접촉피부염",
+   "성홍열"
+  ],
+  "answer": 3,
+  "explanationText": "긴 잠복기(2~8주) 후 발진·안면부종·발열·림프절종대에 호산구 증가와 간침범이 겹치면 DRESS다.\n\n- 오답감별: A 단순 약물발진은 전신증상·장기침범·호산구 증가가 없다. B SJS는 점막 미란·수포·표피박리가 중심이다. D 접촉피부염은 노출 부위에 국한된다. E 성홍열은 사포양 발진과 인두염(연쇄구균)이 특징이다.\n- 임상핵심: DRESS=긴 잠복·호산구 증가·장기침범. 원인약 즉시 중단과 전신 스테로이드로 치료한다.\n- 출처: KMLE 2026 / RegiSCAR criteria.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [
+   {
+    "name": "호산구",
+    "value": "1,800 /mm³",
+    "ref": "< 500"
+   },
+   {
+    "name": "AST",
+    "value": "180 U/L",
+    "ref": "< 40"
+   },
+   {
+    "name": "ALT",
+    "value": "210 U/L",
+    "ref": "< 41"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0096",
+  "exam": "kmle",
+  "subject": "Allergy",
+  "subject_file": "Allergy",
+  "subtopic": "Anaphylaxis Management",
+  "type": "Anaphylaxis Management",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "22세 여성이 벌에 쏘인 뒤 수 분 만에 전신 두드러기와 입술부종, 천명과 호흡곤란, 혈압 80/50 mmHg로 왔다.",
+  "question": "다음 중 가장 먼저 투여할 약물과 경로로 옳은 것은?",
+  "options": [
+   "정맥 항히스타민제",
+   "대퇴 전외측에 근육주사 에피네프린",
+   "정맥 스테로이드",
+   "흡입 기관지확장제 단독",
+   "피하 에피네프린"
+  ],
+  "answer": 2,
+  "explanationText": "다기관(피부+호흡+순환) 침범은 아나필락시스이며, 즉시 대퇴 전외측 근육주사 에피네프린이 1차·생명구제 처치다.\n\n- 오답감별: A 항히스타민·C 스테로이드는 보조제로 즉효가 없고 이상성 반응 대비용이다. D 기관지확장제 단독은 저혈압을 해결하지 못한다. E 피하 경로는 흡수가 느려 근육주사가 우선이다.\n- 임상핵심: 아나필락시스=지체 없이 IM 에피네프린, 이후 수액·산소·체위(앙와위)와 관찰.\n- 출처: KMLE 2026 / WAO anaphylaxis guideline.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "80/50 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "128회/분"
+   }
+  ],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0095",
+  "exam": "kmle",
+  "subject": "Orthopedics",
+  "subject_file": "Orthopedics",
+  "subtopic": "Acute Hematogenous Osteomyelitis",
+  "type": "Acute Hematogenous Osteomyelitis",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "8세 남아가 발열과 함께 하지 장골 골간단 부위의 국소 통증·압통과 보행거부로 왔다. 염증수치(CRP·ESR)가 상승했고 혈액배양을 시행했다.",
+  "question": "다음 중 가장 가능성이 높은 진단과 흔한 원인균으로 옳은 것은?",
+  "options": [
+   "급성 혈행성 골수염 — 황색포도알균",
+   "연소기특발관절염 — 무균",
+   "성장통 — 원인균 없음",
+   "봉와직염 — A군연쇄구균만",
+   "골육종 — 종양"
+  ],
+  "answer": 1,
+  "explanationText": "소아 골간단(혈류 풍부)의 국소 통증·발열·염증수치 상승은 급성 혈행성 골수염이며, 최다 원인균은 황색포도알균이다.\n\n- 오답감별: B JIA는 관절 중심의 만성 경과다. C 성장통은 야간·양측성이며 검사가 정상이다. D 봉와직염은 피부 발적이 중심으로 골 압통이 주가 아니다. E 골육종은 아급성 종괴로 특징적 X선 소견을 보인다(영상으로 배제).\n- 임상핵심: 소아 골간단 통증+발열=골수염 의심. MRI와 배양 후 경험적 항포도알균 항생제를 시작한다.\n- 출처: KMLE 2026 / Nelson Pediatrics 21e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0094",
+  "exam": "kmle",
+  "subject": "Orthopedics",
+  "subject_file": "Orthopedics",
+  "subtopic": "Femoral Neck Fracture (Elderly)",
+  "type": "Femoral Neck Fracture (Elderly)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "80세 여성이 낙상 후 고관절 통증으로 걷지 못한다. 다친 다리가 짧아지고 바깥으로 돌아가 있으며 고관절 운동 시 통증이 심하다. X선에서 대퇴경부의 전위골절이 확인되었다.",
+  "question": "평소 활동적이던 이 환자에게 가장 적절한 치료는?",
+  "options": [
+   "침상안정과 견인만",
+   "경피적 핀고정",
+   "장기 석고고정",
+   "보존적 재활만",
+   "인공관절치환술(반치환/전치환)"
+  ],
+  "answer": 5,
+  "explanationText": "고령의 전위 대퇴경부골절은 골두 혈류 손상으로 무혈성괴사·불유합 위험이 커, 활동적 환자에서는 관절치환술이 표준이다.\n\n- 오답감별: A·C·D 비수술·고정은 욕창·혈전·불유합 등 합병증이 크다. B 내고정은 비전위 골절이나 젊은 환자에 적합하다.\n- 임상핵심: 고령 전위 경부골절=치환술로 조기 거동을 도모(비전위/젊은 층은 내고정).\n- 출처: KMLE 2026 / AAOS, Rockwood.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0093",
+  "exam": "kmle",
+  "subject": "Ophthalmology",
+  "subject_file": "Ophthalmology",
+  "subtopic": "Chemical (Alkali) Ocular Burn",
+  "type": "Chemical (Alkali) Ocular Burn",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "34세 남성이 작업 중 강알칼리 세정제가 눈에 튄 뒤 심한 통증과 시야흐림으로 왔다.",
+  "question": "다음 중 가장 먼저 시행할 처치는?",
+  "options": [
+   "안압검사를 먼저 시행",
+   "항생제 안연고를 도포하고 안대",
+   "정밀 세극등검사부터 시행",
+   "즉시 다량의 생리식염수로 지속 세척(pH 정상화까지)",
+   "스테로이드를 점안하고 경과관찰"
+  ],
+  "answer": 4,
+  "explanationText": "알칼리 화학화상은 액화괴사로 심부 침투하므로 즉시·다량·지속 세척이 최우선이다(결막낭 pH가 중성이 될 때까지).\n\n- 오답감별: A·C 검사를 먼저 하면 세척이 늦어져 손상이 커진다. B 안대·연고 우선은 부적절하다. E 스테로이드는 세척 이후 단계다.\n- 임상핵심: 화학화상은 \"묻지도 따지지도 말고 즉시 세척\". 알칼리가 산보다 예후가 나쁘다.\n- 출처: KMLE 2026 / AAO External Disease.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0092",
+  "exam": "kmle",
+  "subject": "Ophthalmology",
+  "subject_file": "Ophthalmology",
+  "subtopic": "Orbital Cellulitis",
+  "type": "Orbital Cellulitis",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "9세 남아가 부비동염을 앓은 뒤 한쪽 눈꺼풀 발적·부종과 함께 안구돌출, 안구운동 시 통증과 복시, 발열로 왔다.",
+  "question": "다음 중 가장 가능성이 높은 진단과 필요한 처치로 옳은 것은?",
+  "options": [
+   "알레르기결막염 — 항히스타민",
+   "다래끼 — 온찜질",
+   "안와연조직염 — 입원 정맥 항생제와 안와 CT",
+   "안와앞(전격막)연조직염 — 경구 항생제 후 귀가",
+   "바이러스결막염 — 경과관찰"
+  ],
+  "answer": 3,
+  "explanationText": "안구돌출+안구운동통+복시+발열은 안와(격막후)연조직염이며 안과응급이다. 입원 정맥 항생제와 안와 CT가 필요하다.\n\n- 오답감별: A·E 결막염은 안구돌출·운동통이 없다. B 다래끼는 국소 병변이다. D 안와앞연조직염은 돌출·운동제한·복시가 없어야 하며, 이 소견이 있으면 안와형으로 경구·귀가는 위험하다.\n- 임상핵심: 안구돌출·운동통·복시=안와형 → 정맥 항생제+CT, 시신경 위협 농양은 배농.\n- 출처: KMLE 2026 / Nelson Pediatrics, AAO.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0091",
+  "exam": "kmle",
+  "subject": "General Surgery",
+  "subject_file": "General Surgery",
+  "subtopic": "Breast Cancer (Palpable Mass Workup)",
+  "type": "Breast Cancer (Palpable Mass Workup)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "58세 여성이 오른쪽 유방에 딱딱하고 고정된 무통성 종괴가 만져진다고 왔다. 종괴는 불규칙하고 피부 함몰이 동반되며 동측 겨드랑이에 림프절이 만져진다.",
+  "question": "다음 중 가장 적절한 다음 단계는?",
+  "options": [
+   "3개월 후 재촉진",
+   "유방촬영/초음파와 핵심바늘생검(삼중평가)",
+   "항생제 투여 후 관찰",
+   "세침흡인만으로 종결",
+   "조직 확진 없이 즉시 유방전절제"
+  ],
+  "answer": 2,
+  "explanationText": "악성이 의심되는 유방 종괴는 삼중평가(임상+영상+조직생검)가 표준이며, 핵심바늘생검으로 조직·수용체 정보를 얻는다.\n\n- 오답감별: A 관찰은 진단을 지연시킨다. C 감염이 아니다. D 세침흡인은 조직구조·수용체 정보가 부족해 핵심바늘생검이 선호된다. E 조직 확진 전 수술은 부적절하다.\n- 임상핵심: 의심 종괴=삼중평가. 조직형·ER/PR/HER2 확인 후 병기·치료를 결정한다.\n- 출처: KMLE 2026 / NCCN Breast.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0090",
+  "exam": "kmle",
+  "subject": "General Surgery",
+  "subject_file": "General Surgery",
+  "subtopic": "Acute Mesenteric Ischemia",
+  "type": "Acute Mesenteric Ischemia",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "72세 심방세동 환자가 갑작스런 심한 복통으로 왔다. 통증은 극심하나 진찰상 복부 압통은 그에 비해 경미하다. 혈청 젖산(lactate)이 상승하고 대사성 산증이 있다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "급성장간막허혈(색전)",
+   "급성췌장염",
+   "소화성궤양천공",
+   "게실염",
+   "급성담낭염"
+  ],
+  "answer": 1,
+  "explanationText": "심방세동(색전원)+통증-진찰 불일치+젖산 산증은 상장간막동맥 색전에 의한 급성장간막허혈의 전형이다.\n\n- 오답감별: B 췌장염은 리파아제 상승과 등으로 방사되는 통증이 특징이다. C 천공은 판자 같은 복벽과 기복(free air)을 보인다. D 게실염은 좌하복부 국소 압통이 특징이다. E 담낭염은 우상복부 통증과 머피징후가 있다.\n- 임상핵심: AF+심한 복통-경미한 압통=장간막허혈. CT 혈관조영으로 확인하고 재관류·수술을 서두른다.\n- 출처: KMLE 2026 / Sabiston Surgery 21e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0089",
+  "exam": "kmle",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "Hydatidiform Mole (GTD)",
+  "type": "Hydatidiform Mole (GTD)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "26세 여성이 무월경 후 질출혈과 심한 오심·구토로 왔다. 자궁이 임신주수보다 크고, 초음파에서 태아 없이 포도송이 모양의 소견이 보이며 혈청 β-hCG가 매우 높다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "정상임신",
+   "절박유산",
+   "자궁외임신",
+   "쌍둥이임신",
+   "포상기태"
+  ],
+  "answer": 5,
+  "explanationText": "주수보다 큰 자궁, 태아 없는 포도송이 초음파, 매우 높은 β-hCG, 심한 입덧은 포상기태를 가리킨다.\n\n- 오답감별: A·D 정상임신·쌍둥이는 태아가 확인된다. B 절박유산은 태아가 있고 hCG가 그렇게 높지 않다. C 자궁외임신은 hCG가 상대적으로 낮고 부속기 종괴·복통이 특징이다.\n- 임상핵심: 치료는 흡입소파이며, 이후 β-hCG를 추적해 융모암(임신영양막종양)을 감시한다.\n- 출처: KMLE 2026 / Williams Obstetrics 26e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0088",
+  "exam": "kmle",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "Placenta Previa",
+  "type": "Placenta Previa",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "임신 30주의 임신부가 통증 없는 선홍색 질출혈로 왔다. 자궁수축이나 압통은 없고 태아심박은 안정적이다.",
+  "question": "다음 중 가장 적절한 처치는?",
+  "options": [
+   "즉시 내진 후 유도분만",
+   "옥시토신으로 진통 촉진",
+   "자궁수축억제 없이 즉시 제왕절개",
+   "내진을 피하고 초음파로 태반위치를 먼저 확인",
+   "관장 후 질식분만 준비"
+  ],
+  "answer": 4,
+  "explanationText": "무통성 출혈+무수축은 전치태반을 시사한다. 내진은 금기이므로 초음파로 태반위치를 먼저 확인한다.\n\n- 오답감별: A·E 내진·질식 조작은 대량출혈을 유발해 금기다. B 옥시토신 촉진은 출혈을 악화시킨다. C 산모·태아가 안정된 조산 주수에서는 즉각 제왕절개보다 기대관리가 우선이다.\n- 임상핵심: 무통성 출혈=전치태반, 태반조기박리(통증·긴장 자궁)와 감별. 내진 전 반드시 초음파.\n- 출처: KMLE 2026 / Williams Obstetrics 26e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0087",
+  "exam": "kmle",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Henoch-Schonlein Purpura (IgA Vasculitis)",
+  "type": "Henoch-Schonlein Purpura (IgA Vasculitis)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "6세 남아가 상기도감염 뒤 양쪽 하지 신전면에 만져지는 자반, 복통, 관절통이 왔다. 혈소판수는 정상이고 소변에 현미경적 혈뇨가 있다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "특발혈소판감소자반증",
+   "용혈요독증후군",
+   "헤노흐-쇤라인자반증(IgA혈관염)",
+   "수막알균혈증",
+   "백혈병"
+  ],
+  "answer": 3,
+  "explanationText": "촉지자반(하지)+복통+관절통+신침범에 정상 혈소판이면 IgA혈관염(HSP)이다.\n\n- 오답감별: A ITP는 혈소판감소로 인한 비촉지 점상출혈이다. B HUS는 혈소판감소·용혈·급성신손상에 혈성 설사가 선행한다. D 수막알균혈증은 급성 중독·발열에 비촉지 자반이 빠르게 진행한다. E 백혈병은 혈구감소와 말초 모구를 보인다.\n- 임상핵심: 정상 혈소판+촉지자반 4징=HSP. 대개 지지치료로 호전하나 신장(IgA신염)을 추적한다.\n- 출처: KMLE 2026 / EULAR/PRINTO/PRES criteria.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0086",
+  "exam": "kmle",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Croup (Laryngotracheobronchitis)",
+  "type": "Croup (Laryngotracheobronchitis)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "2세 남아가 밤에 갑자기 개 짖는 듯한 기침과 흡기 시 협착음, 쉰 목소리로 왔다. 미열이 있으나 침흘림이나 중독 증상은 없다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "급성후두개염",
+   "크루프(후두기관기관지염)",
+   "세기관지염",
+   "이물흡인",
+   "세균기관염"
+  ],
+  "answer": 2,
+  "explanationText": "개 짖는 기침·흡기협착음·쉰 목소리·미열은 크루프의 전형이다.\n\n- 오답감별: A 후두개염은 고열·침흘림·삼킴곤란·중독양상을 보인다(예방접종력 확인). C 세기관지염은 영아의 천명과 호기연장이 특징이다. D 이물은 갑작스런 질식과 편측 소견이 있다. E 세균기관염은 고열·독성·화농성 분비물을 동반한다.\n- 임상핵심: 크루프는 덱사메타손 1회 투여가 표준이고, 중등도 이상은 분무 에피네프린을 추가한다.\n- 출처: KMLE 2026 / Nelson Pediatrics 21e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0085",
+  "exam": "kmle",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Post-traumatic Stress Disorder",
+  "type": "Post-traumatic Stress Disorder",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "27세 여성이 3개월 전 교통사고 후 반복적 악몽과 재경험(flashback), 사고 관련 자극의 회피, 과각성과 놀람반응을 지속적으로 호소한다. 증상이 한 달 이상 지속되며 일상생활에 지장을 준다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "외상후스트레스장애",
+   "급성스트레스장애",
+   "공황장애",
+   "적응장애",
+   "범불안장애"
+  ],
+  "answer": 1,
+  "explanationText": "외상사건 후 재경험·회피·과각성·부정적 인지가 1개월을 넘겨 지속되면 PTSD다.\n\n- 오답감별: B 급성스트레스장애는 증상이 3일~1개월에 국한된다(1개월 초과 시 PTSD). C 공황장애는 예기치 못한 공황발작이 중심이다. D 적응장애는 스트레스 후 비특이 증상으로 재경험 기준을 충족하지 않는다. E 범불안장애는 만성적·광범위한 걱정이 특징이다.\n- 임상핵심: 1개월 경계로 급성스트레스장애와 PTSD를 나눈다. 1차 치료는 외상초점 심리치료이고 SSRI를 병용한다.\n- 출처: KMLE 2026 / DSM-5-TR.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0084",
+  "exam": "kmle",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Neuroleptic Malignant Syndrome",
+  "type": "Neuroleptic Malignant Syndrome",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "30세 남성이 항정신병약을 시작한 지 며칠 만에 고열, 심한 근강직, 의식변화, 자율신경 불안정을 보였다. 크레아틴키나아제가 크게 상승해 있다.",
+  "question": "다음 중 가장 적절한 초기 조치는?",
+  "options": [
+   "항정신병약 증량",
+   "선택적세로토닌재흡수억제제 추가",
+   "할로페리돌 정주",
+   "리튬 투여",
+   "원인약 즉시 중단과 적극적 냉각·수액, 필요시 단트롤렌/브로모크립틴"
+  ],
+  "answer": 5,
+  "explanationText": "도파민차단제 후 고열·lead-pipe 강직·의식변화·자율신경 불안정+CK 상승은 NMS다. 원인약 중단과 지지치료가 핵심이고 중증에는 단트롤렌/브로모크립틴을 추가한다.\n\n- 오답감별: A 증량은 악화시킨다. B·D 세로토닌계·리튬은 무관하고 위험하다. C 할로페리돌은 도파민차단제로 금기다.\n- 임상핵심: 세로토닌증후군(간대·반사항진 우세)과 감별해야 하며, NMS는 강직·서서히 발현이 특징이다.\n- 출처: KMLE 2026 / DSM-5-TR, Levenson criteria.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0083",
+  "exam": "kmle",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Multiple Sclerosis",
+  "type": "Multiple Sclerosis",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "28세 여성이 며칠에 걸쳐 한쪽 눈의 통증과 시력저하가 왔고, 수개월 전에는 일시적 하지 저림이 있었다. MRI에서 뇌실주위와 척수에 시간·공간적으로 분리된 탈수초 병변이 확인되었다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "시신경척수염",
+   "길랑-바레증후군",
+   "중증근무력증",
+   "다발경화증",
+   "근위축성측삭경화증"
+  ],
+  "answer": 4,
+  "explanationText": "시간·공간적으로 파종된 중추신경 탈수초 병변과 시신경염은 다발경화증을 가리킨다.\n\n- 오답감별: A 시신경척수염은 AQP4 항체 양성, 세 분절 이상의 긴 척수병변, 심한 양측 시신경염이 특징이다. B 길랑-바레는 상행마비의 말초신경병증으로 CSF 알부민세포해리를 보인다. C 중증근무력증은 피로성 근력저하이며 감각은 정상이다. E ALS는 상·하위운동신경 침범에 감각은 보존된다.\n- 임상핵심: 시공간 파종=MS. 급성 재발은 고용량 스테로이드로 치료한다.\n- 출처: KMLE 2026 / 2017 McDonald criteria.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0082",
+  "exam": "kmle",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Status Epilepticus",
+  "type": "Status Epilepticus",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "26세 남성이 전신강직간대발작이 7분간 멈추지 않는 상태로 응급실에 도착했다. 기도는 유지되고 정맥로가 확보되어 있다.",
+  "question": "다음 중 가장 먼저 투여할 약물은?",
+  "options": [
+   "페니토인 정주",
+   "발프로산 경구",
+   "로라제팜 정주",
+   "레베티라세탐 경구",
+   "프로포폴로 마취 유도"
+  ],
+  "answer": 3,
+  "explanationText": "5분 이상 지속 발작은 경련지속상태이며, 1차는 벤조디아제핀(로라제팜 정주/미다졸람 근주)이다.\n\n- 오답감별: A 페니토인은 벤조 후 2차 항경련제다. B 발프로산 경구는 발작 중 투여가 부적절하다. D 레베티라세탐도 2차이며 경구 경로는 부적절하다. E 프로포폴 마취는 불응성 단계에서 고려한다.\n- 임상핵심: 벤조로 안 멎으면 페니토인/발프로산/레베티라세탐을 부하하고, 그래도 지속되면 마취약으로 진정한다.\n- 출처: KMLE 2026 / NCS status epilepticus guideline.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0081",
+  "exam": "kmle",
+  "subject": "Rheumatology",
+  "subject_file": "Rheumatology",
+  "subtopic": "Scleroderma Renal Crisis",
+  "type": "Scleroderma Renal Crisis",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "46세 여성이 수개월간 손가락 피부경화와 레이노현상이 있었다. 최근 갑자기 심한 고혈압(210/120 mmHg)과 급성신손상, 미세혈관병용혈이 나타났다.",
+  "question": "다음 중 가장 적절한 치료는?",
+  "options": [
+   "고용량 스테로이드",
+   "ACE억제제(캅토프릴)",
+   "베타차단제",
+   "혈장교환",
+   "칼슘차단제 단독"
+  ],
+  "answer": 2,
+  "explanationText": "피부경화+악성고혈압+급성신손상+미세혈관병용혈은 전신경화증 신위기다. 레닌-안지오텐신계가 주 기전이므로 ACE억제제가 1차이며 예후를 개선한다.\n\n- 오답감별: A 고용량 스테로이드는 오히려 신위기를 유발/악화시킬 수 있다. C·E 베타차단제·칼슘차단제 단독은 레닌 축을 차단하지 못한다. D 혈장교환은 근거가 부족하다.\n- 임상핵심: 경피증 신위기=ACE억제제 즉시. 신기능이 악화되어도 ACE억제제는 유지한다.\n- 출처: KMLE 2026 / EULAR SSc recommendations.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0080",
+  "exam": "kmle",
+  "subject": "Rheumatology",
+  "subject_file": "Rheumatology",
+  "subtopic": "Antiphospholipid Syndrome",
+  "type": "Antiphospholipid Syndrome",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "32세 여성이 반복적 유산과 하지 심부정맥혈전증의 병력이 있다. 이번에 뇌졸중이 발생했고 aPTT가 연장되어 있으며 항카디오리핀항체와 루푸스항응고인자가 12주 간격으로 두 번 양성이었다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "항인지질항체증후군",
+   "단백C 결핍",
+   "파종혈관내응고",
+   "혈전혈소판감소자반증",
+   "제5인자라이덴 변이"
+  ],
+  "answer": 1,
+  "explanationText": "동·정맥혈전+반복 유산+지속(12주 간격 2회) 항인지질항체 양성은 항인지질항체증후군의 진단 기준을 충족한다.\n\n- 오답감별: B 단백C 결핍은 정맥혈전 위주이고 항체는 음성이다. C DIC는 소모성 출혈과 저피브리노겐이 특징이다. D TTP는 미세혈관병용혈·혈소판감소·신경증상의 5징이다. E 라이덴 변이는 정맥혈전 위주이며 항인지질항체와 무관하다.\n- 임상핵심: 혈전이 생기면 장기 와파린 항응고가 필요하다. aPTT 연장에도 임상은 혈전 경향임에 주의.\n- 출처: KMLE 2026 / revised Sapporo criteria.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0079",
+  "exam": "kmle",
+  "subject": "Infectious Disease",
+  "subject_file": "Infectious Disease",
+  "subtopic": "Clostridioides difficile Colitis",
+  "type": "Clostridioides difficile Colitis",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "68세 여성이 광범위 항생제 치료 후 하루 8회 이상의 물설사와 복통, 발열로 왔다. 대변검사에서 독소를 생성하는 세균이 양성이고 백혈구가 증가해 있다.",
+  "question": "다음 중 가장 적절한 치료는?",
+  "options": [
+   "로페라마이드로 지사",
+   "원인과 무관하게 기존 항생제 지속",
+   "반코마이신을 정맥으로 투여",
+   "프로바이오틱스 단독",
+   "유발 항생제를 중단하고 경구 반코마이신(또는 피닥소마이신)"
+  ],
+  "answer": 5,
+  "explanationText": "항생제 후 독소 양성 설사는 CDI다. 유발 항생제 중단과 함께 경구 반코마이신 또는 피닥소마이신이 1차다.\n\n- 오답감별: A 지사제는 독성거대결장 위험으로 금기다. B 유발 항생제 지속은 악화시킨다. C 반코마이신은 장관 내에서 작용해야 하므로 반드시 경구여야 하며 정맥투여는 무효다. D 프로바이오틱스 단독은 치료가 아니다.\n- 임상핵심: CDI=경구 반코/피닥소, 지사제 금기. 전격성은 경구 반코+정맥 메트로니다졸을 병용한다.\n- 출처: KMLE 2026 / IDSA/SHEA CDI 2021.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0078",
+  "exam": "kmle",
+  "subject": "Infectious Disease",
+  "subject_file": "Infectious Disease",
+  "subtopic": "Febrile Neutropenia",
+  "type": "Febrile Neutropenia",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "55세 남성이 항암치료 10일째 38.5 ℃ 발열로 왔다. 절대호중구수 300/mm³이고 활력징후는 안정적이며 뚜렷한 국소 감염징후는 없다.",
+  "question": "다음 중 가장 먼저 해야 할 처치는?",
+  "options": [
+   "해열제만 투여하고 관찰",
+   "호중구 회복까지 항생제 보류",
+   "경구 항진균제 단독",
+   "배양검사 후 즉시 경험적 광범위 항생제(항녹농균 베타락탐)",
+   "과립구집락자극인자 단독"
+  ],
+  "answer": 4,
+  "explanationText": "ANC<500+발열은 발열성 호중구감소증으로 응급이다. 혈액배양 후 1시간 내 항녹농균 베타락탐을 경험적으로 투여한다.\n\n- 오답감별: A·B 항생제 지연은 패혈증 사망을 높인다. C 항진균은 초기 경험적 1차가 아니며 지속 발열 시 추가한다. E G-CSF 단독은 즉시 항생제를 대체하지 못한다.\n- 임상핵심: 발열성 호중구감소증은 \"발열 인지 후 1시간 내 경험적 항생제\"가 원칙이다.\n- 출처: KMLE 2026 / IDSA febrile neutropenia.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0077",
+  "exam": "kmle",
+  "subject": "Hematology-Oncology",
+  "subject_file": "Hematology-Oncology",
+  "subtopic": "Acute Promyelocytic Leukemia (APL)",
+  "type": "Acute Promyelocytic Leukemia (APL)",
+  "difficulty": 5,
+  "created": "2026-07-08",
+  "vignette": "35세 여성이 잇몸출혈과 멍, 발열로 왔다. 범혈구감소가 있고 말초혈액에 Auer소체가 많은 비정상 전골수구가 보이며 PT/aPTT가 연장되고 피브리노겐 감소, D-dimer 상승이 동반됐다.",
+  "question": "다음 중 가장 시급히 시작해야 할 치료는?",
+  "options": [
+   "광범위 항생제만 투여",
+   "혈소판만 수혈하며 경과관찰",
+   "전트랜스레티노산(ATRA) 즉시 시작",
+   "동종조혈모세포이식 우선",
+   "헤파린 단독 항응고"
+  ],
+  "answer": 3,
+  "explanationText": "전골수구·Auer소체·DIC 소견은 APL을 강력히 시사한다. 조기 사망의 주원인이 출혈성 DIC이므로 의심 즉시 ATRA를 시작해 분화를 유도하고 응고병증을 교정한다.\n\n- 오답감별: A 항생제는 감염 동반 시 보조일 뿐이다. B 관찰은 치명적 출혈 위험이 크다. D 이식은 관해유도 후에 고려한다. E 헤파린 단독은 표준치료가 아니다.\n- 임상핵심: APL 의심 시 ATRA를 확진 전에 시작하고 혈액응고인자·혈소판을 적극 보충한다.\n- 출처: KMLE 2026 / NCCN AML/APL.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0076",
+  "exam": "kmle",
+  "subject": "Hematology-Oncology",
+  "subject_file": "Hematology-Oncology",
+  "subtopic": "Tumor Lysis Syndrome",
+  "type": "Tumor Lysis Syndrome",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "30세 남성이 거대 종괴를 동반한 버킷림프종으로 항암치료를 시작한 뒤 소변량 감소와 근육경련이 생겼다. 혈청 칼륨·인·요산이 상승하고 칼슘은 감소했으며 크레아티닌도 올라 있다.",
+  "question": "다음 중 이 합병증을 예방·치료하는 데 가장 핵심적인 조치는?",
+  "options": [
+   "칼슘 대량 보충",
+   "적극적 수액과 라스부리케이스(요산분해효소)",
+   "티아지드 이뇨제",
+   "칼륨 정맥 보충",
+   "저용량 스테로이드 단독"
+  ],
+  "answer": 2,
+  "explanationText": "고칼륨·고인·고요산·저칼슘+급성신손상이 화학요법 직후 나타나면 종양용해증후군이다. 적극적 수액과 라스부리케이스(고위험)/알로퓨리놀이 핵심이다.\n\n- 오답감별: A 무증상 저칼슘에 칼슘을 대량 보충하면 인산칼슘 침착 위험이 있다. C 티아지드는 요산을 올리고 탈수를 조장한다. D 칼륨 보충은 이미 고칼륨인 상태에서 치명적이다. E 스테로이드 단독은 핵심 조치가 아니다.\n- 임상핵심: TLS는 예방이 우선(수액+요산강하). 무증상 저칼슘에는 칼슘 투여를 삼간다.\n- 출처: KMLE 2026 / Cairo-Bishop, NCCN.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [
+   {
+    "name": "혈청 칼륨",
+    "value": "6.2 mmol/L",
+    "ref": "3.5–5.0"
+   },
+   {
+    "name": "혈청 인",
+    "value": "7.5 mg/dL",
+    "ref": "2.5–4.5"
+   },
+   {
+    "name": "혈청 요산",
+    "value": "12 mg/dL",
+    "ref": "3.5–7.2"
+   },
+   {
+    "name": "혈청 칼슘",
+    "value": "7.0 mg/dL",
+    "ref": "8.5–10.5"
+   },
+   {
+    "name": "크레아티닌",
+    "value": "2.1 mg/dL",
+    "ref": "0.6–1.2"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0075",
+  "exam": "kmle",
+  "subject": "Endocrinology",
+  "subject_file": "Endocrinology",
+  "subtopic": "Adrenal Crisis (Primary Adrenal Insufficiency)",
+  "type": "Adrenal Crisis (Primary Adrenal Insufficiency)",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "42세 여성이 수개월간 피로·식욕부진·체중감소와 피부색소침착이 있었고, 위장염을 앓은 뒤 저혈압과 기면으로 왔다. 혈압 80/50 mmHg, 혈당 60 mg/dL이고 혈청 나트륨은 낮고 칼륨은 높다.",
+  "question": "다음 중 가장 먼저 투여할 것은?",
+  "options": [
+   "정맥 하이드로코르티손",
+   "경구 플루드로코르티손",
+   "고용량 티록신",
+   "인슐린",
+   "광범위 항생제 단독"
+  ],
+  "answer": 1,
+  "explanationText": "색소침착·저나트륨·고칼륨·저혈당·저혈압에 유발 스트레스가 더해지면 원발부신부전 위기(Addison)다. 정맥 스테로이드(하이드로코르티손)와 수액을 즉시 투여한다.\n\n- 오답감별: B 경구 미네랄로코르티코이드는 위기 상황에 부적절하며, 고용량 하이드로코르티손이 광물부신피질 작용을 대신한다. C 티록신을 먼저 주면 대사 항진으로 부신위기가 악화된다. D 인슐린은 저혈당을 악화시킨다. E 항생제만으로는 부신위기가 해결되지 않는다.\n- 임상핵심: 부신위기는 확진검사(코르티솔·ACTH) 채혈 후 지체 없이 스테로이드를 먼저 투여한다.\n- 출처: KMLE 2026 / Endocrine Society guideline.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0074",
+  "exam": "kmle",
+  "subject": "Endocrinology",
+  "subject_file": "Endocrinology",
+  "subtopic": "Hyperosmolar Hyperglycemic State",
+  "type": "Hyperosmolar Hyperglycemic State",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "73세 여성이 며칠간 다뇨와 기면으로 왔다. 심한 탈수 소견과 함께 혈당 950 mg/dL, 동맥혈 pH 7.34, 혈청 케톤 미량, 혈청 삼투질농도 340 mOsm/kg이며 의식은 혼미하다.",
+  "question": "다음 중 가장 먼저 시행할 치료는?",
+  "options": [
+   "인슐린 정주 볼루스 먼저",
+   "중탄산염 투여",
+   "경구 수분섭취를 권고하고 관찰",
+   "저장성 포도당액 투여",
+   "다량의 등장성 생리식염수 정주"
+  ],
+  "answer": 5,
+  "explanationText": "극심한 고혈당·고삼투에 케톤·산증이 경미하면 HHS다. 심한 혈관내 용적 결핍을 먼저 교정해야 하므로 등장식염수 대량 수액이 최우선이다.\n\n- 오답감별: A 수액 전 인슐린 볼루스는 혈관내 용적을 더 줄이고 저칼륨을 유발한다. B 중탄산은 pH 7.34에서 불필요하다. C 혼미 환자에게 경구는 부적절하다. D 포도당액은 고혈당을 악화시킨다.\n- 임상핵심: HHS 우선순위는 수액 → 칼륨 확인 → 인슐린이다.\n- 출처: KMLE 2026 / ADA hyperglycemic crises.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "92/60 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "112회/분"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈당",
+    "value": "950 mg/dL",
+    "ref": "70–100"
+   },
+   {
+    "name": "동맥혈 pH",
+    "value": "7.34",
+    "ref": "7.35–7.45"
+   },
+   {
+    "name": "혈청 케톤",
+    "value": "미량",
+    "ref": "음성"
+   },
+   {
+    "name": "혈청 삼투질농도",
+    "value": "340 mOsm/kg",
+    "ref": "275–295"
+   },
+   {
+    "name": "혈청 칼륨",
+    "value": "4.2 mmol/L",
+    "ref": "3.5–5.0"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0073",
+  "exam": "kmle",
+  "subject": "Nephrology",
+  "subject_file": "Nephrology",
+  "subtopic": "Acute Poststreptococcal Glomerulonephritis",
+  "type": "Acute Poststreptococcal Glomerulonephritis",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "7세 남아가 2주 전 인후염을 앓은 뒤 콜라색 소변과 눈 주위 부종, 혈압상승으로 왔다. 소변에 적혈구원주와 단백뇨가 있고 혈청 C3는 감소, ASO는 상승해 있다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "IgA신병증",
+   "미세변화신증후군",
+   "용혈요독증후군",
+   "감염후사구체신염",
+   "알포트증후군"
+  ],
+  "answer": 4,
+  "explanationText": "선행 인두염 후 1~2주 잠복 뒤 나타난 신염증후군에 C3 감소·ASO 상승이 동반되면 감염후사구체신염이다.\n\n- 오답감별: A IgA신병증은 감염과 거의 동시에(잠복기 없음) 혈뇨가 나타나고 C3는 정상이다. B 미세변화는 대량 단백뇨의 신증후군이며 혈뇨는 드물다. C 용혈요독증후군은 혈소판감소·용혈·급성신손상에 혈성 설사가 선행한다. E 알포트는 가족력과 감각신경성 난청이 동반된다.\n- 임상핵심: 잠복기+C3 감소=PSGN. 대개 지지치료로 회복하며 C3는 6~8주 내 정상화된다.\n- 출처: KMLE 2026 / Nelson Pediatrics 21e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0072",
+  "exam": "kmle",
+  "subject": "Nephrology",
+  "subject_file": "Nephrology",
+  "subtopic": "SIADH Hyponatremia",
+  "type": "SIADH Hyponatremia",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "68세 남성이 소세포폐암 치료 중 경한 오심과 집중력저하로 왔다. 부종이나 탈수 소견은 없다. 혈청 나트륨 118 mmol/L, 혈청 삼투질농도는 낮고 소변 삼투질농도 480 mOsm/kg, 소변 나트륨 60 mmol/L이며 갑상선·부신기능은 정상이다.",
+  "question": "다음 중 가장 적절한 초기 치료는?",
+  "options": [
+   "생리식염수 대량 정주",
+   "자유수 공급 증가",
+   "수분제한",
+   "저장성식염수 투여",
+   "데스모프레신 투여"
+  ],
+  "answer": 3,
+  "explanationText": "정상용적·저삼투 저나트륨혈증에 요삼투가 부적절하게 높고 요나트륨이 높으며 갑상선·부신이 정상이면 SIADH다. 증상이 경한 만성 저나트륨혈증이므로 수분제한이 1차 치료다.\n\n- 오답감별: A 등장식염수는 요삼투가 수액 삼투보다 높으면 오히려 나트륨을 더 낮출 수 있다. B·D 자유수·저장액은 저나트륨을 악화시킨다. E 데스모프레신은 ADH 작용제로 금기다.\n- 임상핵심: SIADH=수분제한. 만성 저나트륨은 급속 교정 시 삼투성 탈수초증후군을 유발하므로 24시간 8 mmol/L 이내로 올린다.\n- 출처: KMLE 2026 / Harrison 21e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [
+   {
+    "name": "혈청 나트륨",
+    "value": "118 mmol/L",
+    "ref": "135–145"
+   },
+   {
+    "name": "혈청 삼투질농도",
+    "value": "245 mOsm/kg",
+    "ref": "275–295"
+   },
+   {
+    "name": "소변 삼투질농도",
+    "value": "480 mOsm/kg",
+    "ref": "가변(부적절 농축)"
+   },
+   {
+    "name": "소변 나트륨",
+    "value": "60 mmol/L",
+    "ref": "가변"
+   },
+   {
+    "name": "TSH",
+    "value": "2.1 mIU/L",
+    "ref": "0.4–4.0"
+   },
+   {
+    "name": "오전 코르티솔",
+    "value": "15 μg/dL",
+    "ref": "정상"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0071",
+  "exam": "kmle",
+  "subject": "Gastroenterology",
+  "subject_file": "Gastroenterology",
+  "subtopic": "Crohn Disease",
+  "type": "Crohn Disease",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "24세 남성이 수개월간 우하복부 통증과 비혈성 설사, 체중감소를 호소한다. 대장내시경에서 말단회장과 대장에 건너뛰는(skip) 궤양과 조약돌 점막이 보이고, 생검에서 비건락성 육아종이 확인되었다.",
+  "question": "다음 중 가장 가능성이 높은 진단은?",
+  "options": [
+   "궤양성대장염",
+   "크론병",
+   "과민성장증후군",
+   "장결핵",
+   "아메바성 대장염"
+  ],
+  "answer": 2,
+  "explanationText": "건너뛰는 병변·경벽성 염증·비건락성 육아종·말단회장 침범은 크론병을 가리킨다.\n\n- 오답감별: A 궤양성대장염은 직장부터 연속성이며 점막층에 국한된다. C 과민성장증후군은 기질적 소견·체중감소가 없다. D 장결핵은 건락성 육아종을 보인다. E 아메바증은 여행력과 플라스크형 궤양이 특징이다.\n- 임상핵심: skip lesion+비건락성 육아종=크론병. 장결핵과의 감별이 치료(면역억제 전 결핵 배제)에 중요하다.\n- 출처: KMLE 2026 / Sleisenger GI 11e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0070",
+  "exam": "kmle",
+  "subject": "Gastroenterology",
+  "subject_file": "Gastroenterology",
+  "subtopic": "Spontaneous Bacterial Peritonitis",
+  "type": "Spontaneous Bacterial Peritonitis",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "58세 간경변 남성이 복부팽만과 발열, 미만성 복통으로 왔다. 이뇨제로 조절되던 복수가 있었다. 체온 38.4 ℃이고 복부에 경한 미만성 압통이 있다.",
+  "question": "다음 중 진단을 위해 가장 먼저 시행할 것은?",
+  "options": [
+   "진단적 복수천자와 복수 다형핵중구 수 측정",
+   "복부 CT 후 경과관찰",
+   "천자 없이 경험적 항생제만 투여하고 관찰",
+   "이뇨제 증량",
+   "대장내시경"
+  ],
+  "answer": 1,
+  "explanationText": "간경변 복수에 발열·복통이 생기면 SBP를 의심하고, 진단적 복수천자로 PMN ≥250/mm³를 확인하는 것이 최우선이다(확인 즉시 세포탁심 등).\n\n- 오답감별: B CT는 우선순위가 낮고 진단을 지연시킨다. C 천자 없이 항생제만 쓰면 진단·감별을 놓친다. D 이뇨제 증량은 신손상 위험이 있다. E 대장내시경은 무관하다.\n- 임상핵심: 복수+발열=먼저 천자. 반복 SBP·저단백복수는 노르플록사신 예방을 고려한다.\n- 출처: KMLE 2026 / AASLD ascites guideline.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0069",
+  "exam": "kmle",
+  "subject": "Pulmonology",
+  "subject_file": "Pulmonology",
+  "subtopic": "ARDS (lung-protective ventilation)",
+  "type": "ARDS (lung-protective ventilation)",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "48세 여성이 중증 폐렴으로 기계환기 중이다. 급성으로 악화되어 PaO2/FiO2가 150이 되었고 흉부영상에서 양측 폐 침윤이 있으며 심부전 소견은 없다.",
+  "question": "다음 중 사망률을 낮추는 것으로 입증된 인공호흡기 설정은?",
+  "options": [
+   "예측체중 12 mL/kg의 고용적 환기",
+   "높은 일회호흡량과 낮은 호기말양압",
+   "100% 산소로 지속 유지",
+   "예측체중 6 mL/kg의 저용적 폐보호환기",
+   "기관지확장제 지속 분무"
+  ],
+  "answer": 4,
+  "explanationText": "P/F 150, 양측 침윤, 비심인성 폐부종은 ARDS(Berlin 정의)다. 예측체중 6 mL/kg의 저용적·적정 PEEP·plateau압<30 폐보호환기가 사망률을 낮춘다(ARDSNet).\n\n- 오답감별: A·B 고용적은 인공호흡기유발폐손상을 늘린다. C 고농도 산소 지속은 산소독성·흡수무기폐를 유발한다. E 기관지확장제는 ARDS 사망률을 개선하지 않는다.\n- 임상핵심: ARDS의 근거 기반 처치는 저용적 폐보호환기이며, 중증(P/F<150)에서는 복와위를 추가한다.\n- 출처: KMLE 2026 / ARDSNet, Berlin definition.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0068",
+  "exam": "kmle",
+  "subject": "Pulmonology",
+  "subject_file": "Pulmonology",
+  "subtopic": "Community-Acquired Pneumonia (CURB-65)",
+  "type": "Community-Acquired Pneumonia (CURB-65)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "72세 남성이 3일간 기침과 화농성 가래, 발열로 왔다. 의식은 명료하다. 혈압 88/58 mmHg, 호흡수 22회/분, BUN 25 mg/dL이고 흉부 X선에서 우하엽 폐포 음영이 보인다.",
+  "question": "다음 중 이 환자의 치료 장소 결정으로 가장 적절한 것은?",
+  "options": [
+   "외래에서 경구 항생제 처방 후 귀가",
+   "항바이러스제 단독으로 외래치료",
+   "입원하여 경험적 정맥 항생제 시작",
+   "즉시 귀가시키고 3일 후 재평가",
+   "스테로이드 단독 투여"
+  ],
+  "answer": 3,
+  "explanationText": "CURB-65에서 요소 상승(1)·나이≥65(1)·수축기혈압<90(1)으로 3점이다. 2점 이상은 입원을 고려하므로 입원 후 경험적 정맥 항생제를 시작한다.\n\n- 오답감별: A·D 외래·귀가는 중증도를 과소평가한 것이다. B 세균성 폐렴에 항바이러스 단독은 부적절하다. E 스테로이드 단독은 치료가 아니다.\n- 임상핵심: CURB-65 ≥2는 입원, ≥3은 중증(ICU 고려)으로 분류한다.\n- 출처: KMLE 2026 / BTS·IDSA CAP guideline.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "88/58 mmHg"
+   },
+   {
+    "name": "호흡수",
+    "value": "22회/분"
+   },
+   {
+    "name": "체온",
+    "value": "38.6 ℃"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈액요소질소(BUN)",
+    "value": "25 mg/dL",
+    "ref": "8–20"
+   },
+   {
+    "name": "백혈구",
+    "value": "14,500 /mm³",
+    "ref": "4,000–10,000"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0067",
+  "exam": "kmle",
+  "subject": "Cardiology",
+  "subject_file": "Cardiology",
+  "subtopic": "Heart Failure GDMT (HFrEF)",
+  "type": "Heart Failure GDMT (HFrEF)",
+  "difficulty": 3,
+  "created": "2026-07-08",
+  "vignette": "62세 남성이 수개월간 악화된 운동 시 호흡곤란과 하지부종으로 왔다. 심초음파에서 좌심실 구혈률 28%로 측정되었다. 현재 증상 조절을 위해 루프이뇨제만 복용 중이다.",
+  "question": "다음 중 이 환자의 장기 사망률을 낮추는 것으로 입증된 약물은?",
+  "options": [
+   "디곡신",
+   "안지오텐신수용체-네프릴리신억제제(ARNI)",
+   "암로디핀",
+   "루프이뇨제 증량",
+   "아스피린"
+  ],
+  "answer": 2,
+  "explanationText": "EF 28%는 HFrEF다. 사망률을 낮추는 GDMT 4대 축(ARNI/ACEi·베타차단제·MRA·SGLT2i) 중 보기에 있는 것은 ARNI다.\n\n- 오답감별: A 디곡신은 증상·입원을 줄이지만 사망률 개선 근거는 없다. C 칼슘차단제는 이득이 없고 일부는 악화시킨다. D 이뇨제는 증상완화용으로 예후를 바꾸지 않는다. E 아스피린은 관상동맥질환이 없으면 이득이 없다.\n- 임상핵심: HFrEF는 4제 병용으로 예후를 개선하며, 증상약(이뇨제·디곡신)과 예후약을 구분해야 한다.\n- 출처: KMLE 2026 / 2022 AHA/ACC/HFSA HF Guideline.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "kmle-2026-0066",
+  "exam": "kmle",
+  "subject": "Cardiology",
+  "subject_file": "Cardiology",
+  "subtopic": "Cardiac Tamponade",
+  "type": "Cardiac Tamponade",
+  "difficulty": 4,
+  "created": "2026-07-08",
+  "vignette": "55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다.",
+  "question": "다음 중 가장 먼저 시행할 처치는?",
+  "options": [
+   "심낭천자",
+   "정맥 이뇨제 투여",
+   "베타차단제 정주",
+   "혈전용해제 투여",
+   "좌위 취하고 경과관찰"
+  ],
+  "answer": 1,
+  "explanationText": "Beck 삼징(저혈압·경정맥팽대·심음감소)에 기이맥과 전기교대가 더해지면 심장눌림증이다. 폐쇄성 쇼크이므로 즉시 심낭천자로 심낭액을 배액한다.\n\n- 오답감별: B 이뇨제는 전부하를 줄여 오히려 심박출을 악화시켜 금기다. C 베타차단제는 보상성 빈맥을 차단해 심박출이 급감한다. D 혈전용해는 근거가 없고 출혈성 심낭에서는 치명적이다. E 경과관찰은 쇼크 상태에서 부적절하다.\n- 임상핵심: 눌림증은 전부하 의존 상태 → 수액과 배액이 답이며, 이뇨·혈관확장은 금기다.\n- 출처: KMLE 2026 / Harrison 21e.",
+  "explanationItems": [],
+  "source": "KMLE 2026 / Claude Routine",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "84/62 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "120회/분"
+   },
+   {
+    "name": "흡기 시 수축기혈압 저하",
+    "value": "18 mmHg"
+   }
+  ],
+  "labs": [],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
   "id": "kmle-2026-0065",
   "exam": "kmle",
   "subject": "Rheumatology",
