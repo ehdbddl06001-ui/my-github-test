@@ -106,7 +106,11 @@ button.danger{border-color:var(--bad); color:#ffb4b4}
 .verdict.ok{color:var(--ok)}
 .verdict.bad{color:var(--bad)}
 .explanation .item{margin:6px 0}
+.explanation .expl-item{margin:11px 0; line-height:1.65}
+.explanation .expl-item:first-child{margin-top:2px}
 .explanation .k{color:#8fb3ff; font-weight:600; margin-right:6px}
+.explanation .expl-item .k{font-weight:700}
+.optlines{display:block; white-space:pre-line; margin-top:3px}
 .explanation .src{color:var(--muted); font-size:.86rem; margin-top:8px}
 .expl-text{
   margin:8px 0 0; white-space:pre-wrap; word-break:break-word;

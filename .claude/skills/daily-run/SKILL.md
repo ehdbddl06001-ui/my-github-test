@@ -42,7 +42,9 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 
 6. **웹 번들 재생성** — 개인 페이지(docs/)에 새 콘텐츠가 뜨게 하려면 필수.
    - USMLE를 생성했다면: `python pipelines/export_usmle_web.py` → `docs/questions_usmle.js`
-   - KMLE(quiz.py JSON 트랙)라면: `python3 kmle/quiz/quiz.py --export` → `docs/questions.js`
+   - **KMLE를 생성했다면(content/kmle SoT): `python pipelines/export_kmle_web.py`**
+     → `docs/questions_kmle_content.js` (인터랙티브 퀴즈에 오늘 문항이 뜨게 함). 웹은
+     이 번들을 레거시 `docs/questions.js`(quiz.py 트랙)와 합쳐서 KMLE 덱을 만든다.
    - **어떤 타입이든**(basic·paper·disease·drug 포함): `python pipelines/export_search_web.py`
      → `docs/search-index.js` (통합검색·대시보드 갱신). 매 실행 항상 재생성한다.
    생성된 번들을 **같은 커밋에 포함**한다.

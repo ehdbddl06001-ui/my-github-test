@@ -54,6 +54,32 @@ def explanation_text(body: str) -> str:
     return "\n".join(lines).strip()
 
 
+def explanation_items(body: str) -> list[dict]:
+    """'## 정답 및 해설'의 `- **키**: 값` 불릿을 [{k, v}] 로 파싱한다.
+    값이 여러 줄로 감싸져 있으면 한 값으로 병합한다(웹이 항목별 박스로 렌더)."""
+    if "## 정답 및 해설" not in body:
+        return []
+    sec = body.split("## 정답 및 해설", 1)[1]
+    items: list[dict] = []
+    cur: dict | None = None
+    for raw in sec.splitlines():
+        st = raw.strip()
+        if st.startswith(">"):          # '> 정답: X' 인용줄 제외
+            continue
+        m = re.match(r"^-\s*\*\*(.+?)\*\*\s*[:：]?\s*(.*)$", st)
+        if m:
+            if cur:
+                items.append(cur)
+            cur = {"k": m.group(1).strip(), "v": m.group(2).strip()}
+        elif cur is not None and st:     # 이어지는 줄바꿈 값 병합
+            cur["v"] = (cur["v"] + " " + st).strip()
+    if cur:
+        items.append(cur)
+    for it in items:
+        it["v"] = it["v"].replace("**", "").strip()
+    return items
+
+
 def build_record(path: Path) -> dict | None:
     d = load(path)
     if d.errors:
@@ -78,6 +104,7 @@ def build_record(path: Path) -> dict | None:
         "options": [clean_option(o) for o in m.get("choices", [])],
         "answer": LETTERS.get(ans, 0),
         "explanationText": explanation_text(d.body),
+        "explanationItems": explanation_items(d.body),
         "source": m.get("source", ""),
         # 구조화 임상 자료(선택): 활력징후·검사소견 박스, 해설 부록(결정표 등)
         "vitals": m.get("vitals", []) or [],

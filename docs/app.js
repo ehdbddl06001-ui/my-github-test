@@ -4,7 +4,11 @@
    - USMLE는 Step 1(기초의학)/Step 2(임상) 필터를 지원 */
 "use strict";
 
-const KMLE = Array.isArray(window.KMLE_QUESTIONS) ? window.KMLE_QUESTIONS : [];
+// KMLE 덱 = content/kmle(MedKOS SoT) + 레거시 quiz.py 번들. 둘 다 있으면 합친다.
+const KMLE = [].concat(
+  Array.isArray(window.KMLE_CONTENT_QUESTIONS) ? window.KMLE_CONTENT_QUESTIONS : [],
+  Array.isArray(window.KMLE_QUESTIONS) ? window.KMLE_QUESTIONS : []
+);
 const USMLE = Array.isArray(window.USMLE_QUESTIONS) ? window.USMLE_QUESTIONS : [];
 const CIRCLED = ["①", "②", "③", "④", "⑤"];
 const ALPHA = ["A", "B", "C", "D", "E"];
@@ -161,20 +165,39 @@ function renderExplanation(q, chosenIdx, ok) {
        <div class="muted">↳ 이 오답은 오답노트에 자동 저장되었습니다.</div></div>`;
 
   let bodyHtml;
-  if (q.explanationText) {
-    // USMLE: '## 정답 및 해설' 본문 텍스트 + (있으면) 부록 결정표 박스.
+  if (q.explanationItems && q.explanationItems.length) {
+    // 구조화 해설(항목별 박스) + (있으면) 부록 결정표 박스.
+    bodyHtml = renderExplItems(q.explanationItems) + renderAppendix(q.appendix);
+  } else if (q.explanationText) {
     bodyHtml = `<pre class="expl-text">${escapeHtml(q.explanationText)}</pre>` + renderAppendix(q.appendix);
   } else {
     const ex = q.explanation || {};
     const rows = [];
     ["진단", "정답근거", "오답감별", "임상핵심"].forEach((k) => {
-      if (ex[k]) rows.push(`<div class="item"><span class="k">${k}</span>${escapeHtml(ex[k])}</div>`);
+      if (ex[k]) rows.push(`<div class="expl-item"><span class="k">${k}</span>${fmtExplValue(ex[k])}</div>`);
     });
     const src = q.source ? `<div class="src">출처: ${escapeHtml(q.source)}</div>` : "";
     bodyHtml = rows.join("") + src + renderAppendix(q.appendix);
   }
   el.innerHTML = verdict + bodyHtml;
   el.classList.remove("hidden");
+}
+
+// 해설 값에서 보기 반박 (A)…(B)… 은 각 줄로 분리해 가독성을 높인다.
+function fmtExplValue(v) {
+  let s = escapeHtml(v);
+  if ((s.match(/\([A-E]\)/g) || []).length >= 2) {
+    s = s.replace(/\s*(?=\([A-E]\)\s)/g, "\n").replace(/^\n+/, "");
+    return `<span class="optlines">${s}</span>`;
+  }
+  return s;
+}
+
+// 구조화 해설: `- **키**: 값` 항목들을 각각 간격을 둔 박스로 렌더한다.
+function renderExplItems(items) {
+  return items.map((it) =>
+    `<div class="expl-item"><span class="k">${escapeHtml(it.k)}</span>${fmtExplValue(it.v)}</div>`
+  ).join("");
 }
 
 // 구조화 임상 자료(활력징후·검사소견)를 문제 상단 박스로 렌더한다.
