@@ -109,10 +109,12 @@ figure:
   - 다룰 수 있는 것 = **리듬·간격·무질서형만**(위 rhythm 목록).
   - **금지 = 모양·ST·유도별 진단**(브루가다·STEMI·심막염 등): 12유도와 정확한 파형
     모양이 본질이라 합성하면 틀린 도형이 된다.
-- **type=ecg_signal (실데이터)**: `assets/ecg/*.json`(오픈 DB 신호)을
-  `render_signal_svg.py`로 렌더. **진짜 파형**이라 모양이 본질인 진단도 안전
-  (12유도 확장 시). 재배포 가능한 **오픈 라이선스만**, 출처를 `source`·에셋에 표기.
-  새 레코드는 `pipelines/ingest_ecg.py`로 오프라인 1회 커밋.
+- **type=ecg_signal (실데이터·단일 유도)**: `assets/ecg/*.json`(오픈 DB 신호)을
+  `render_signal_svg.py`로 렌더. **진짜 파형**이라 모양이 본질인 진단도 안전.
+- **type=ecg12 (실데이터·12유도)**: PTB-XL 등 12유도 에셋을 표준 3×4 + 리듬 스트립으로
+  렌더(`twelve_lead_svg`). **브루가다·STEMI·각차단 등 모양·유도별 진단은 이 경로로만**
+  다룬다(합성 금지). 재배포 가능한 **오픈 라이선스만**, `source`·`참고문헌`에 출처 표기.
+  새 레코드는 `pipelines/ingest_ecg.py`로 오프라인 1회 커밋(S3 미러는 assets/ecg/README).
 
 ## 원칙
 

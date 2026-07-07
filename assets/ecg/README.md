@@ -12,6 +12,17 @@
 | 파일 | 출처 | 라이선스 |
 |------|------|----------|
 | `mitdb-100.json` | MIT-BIH Arrhythmia Database (PhysioNet), MIT-LCP/wfdb-python 샘플데이터 | ODC-BY 1.0 |
+| `ptbxl-00001-norm.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 1 — 정상 12유도 | CC-BY 4.0 |
+| `ptbxl-00172-crbbb.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 172 — 완전우각차단+LAFB 12유도 | CC-BY 4.0 |
+| `ptbxl-00270-imi.json` | PTB-XL 1.0.3 (PhysioNet), ecg_id 270 — 하벽·전중격 심근경색 12유도 | CC-BY 4.0 |
+
+**12유도(PTB-XL)** 는 `figure: {type: ecg12, source: assets/ecg/<name>.json}` 로 표준
+3×4 + 리듬 스트립으로 렌더한다(`render_signal_svg.twelve_lead_svg`). CC-BY이므로
+문항 `참고문헌`·에셋 `source`에 PTB-XL 출처를 표기한다.
+
+PhysioNet 직접 접근이 막힌 환경에선 **오픈 S3 미러**에서 받는다:
+`https://physionet-open.s3.amazonaws.com/ptb-xl/1.0.3/records100/<폴더>/<id>_lr.{hea,dat}`
+(진단 라벨은 `ptbxl_database.csv` 의 `scp_codes`.)
 
 ## 새 레코드 추가(데이터 접근 되는 환경에서 1회)
 ```

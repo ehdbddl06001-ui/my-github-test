@@ -104,6 +104,12 @@ def render_figure(fig: dict | None, fname: str = "") -> str:
                 return svg_from_asset(path, lead=fig.get("lead"),
                                       seconds=fig.get("seconds"),
                                       label=fig.get("label"))
+        if kind == "ecg12":                       # 12유도 실데이터(PTB-XL 등)
+            from render_signal_svg import svg12_from_asset
+            src = fig.get("source")
+            if src:
+                path = src if str(src).startswith("/") else str(ROOT / src)
+                return svg12_from_asset(path, label=fig.get("label"))
     except Exception as e:  # 생성/로드 실패해도 문항은 살린다
         print(f"[figure] {fname}: {e}")
     return ""

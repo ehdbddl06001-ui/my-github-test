@@ -5,15 +5,15 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 135,
+  "total": 136,
   "byType": {
-   "usmle": 33,
+   "usmle": 34,
    "paper": 34,
    "kmle": 65,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 15,
+   "Cardiology": 16,
    "Nephrology": 11,
    "Infectious Disease": 10,
    "Pediatrics": 10,
@@ -42,12 +42,31 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 101,
+   "high": 102,
    "medium": 34
   },
-  "tagCount": 347
+  "tagCount": 351
  },
  "docs": [
+  {
+   "id": "usmle-2026-0034",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Complete Right Bundle Branch Block (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "RBBB",
+    "wide-QRS",
+    "conduction"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0034.md",
+   "snippet": "A 62 year old man has a 12 lead electrocardiogram performed before elective surgery. He is asymptomatic. The tracing is shown. Which of the following best accounts for the widened QRS complex? A. Complete right bundle branch block B. Comple",
+   "text": "Cardiology Complete Right Bundle Branch Block (12-lead, real ECG) ECG 12-lead RBBB wide-QRS conduction USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 62 year old man has a 12 lead electrocardiogram performed before elective surgery. He is asymptomatic. The tracing is shown. Which of the following best accounts for the widened QRS complex? A. Complete right bundle branch block B. Complete left bundle branch block C. Wolff Parkinson White pattern D. Left anterior fascicular block E. Left ventricular hypertrophy 넓은 QRS(≥120 ms)에 V1–V2의 rSR′(토끼귀 M자)와 I·V6의 넓고 뭉툭한 S파 → 완전우각차단(CRBBB). 좌각차단은 반대로 I·V6의 넓은 단일 R파와 V1의 QS/rS이며 rSR′가 없다. WPW는 짧은 PR + 델타파로 넓어지고, 좌전섬유속차단(LAFB)은 좌축편위를 만들지만 QRS를 넓히지 않는다(대개 <120 ms). LVH는 전압 증가가 특징이지 QRS 폭 확장의 주원인이 아니다."
+  },
   {
    "id": "usmle-2026-0033",
    "type": "usmle",
