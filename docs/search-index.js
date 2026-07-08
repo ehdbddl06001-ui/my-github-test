@@ -46,7 +46,7 @@ window.MEDKOS_INDEX = {
    "high": 136,
    "medium": 40
   },
-  "tagCount": 456
+  "tagCount": 457
  },
  "docs": [
   {
@@ -608,6 +608,7 @@ window.MEDKOS_INDEX = {
     "cardiac tamponade",
     "Beck triad",
     "pulsus paradoxus",
+    "electrical alternans",
     "pericardiocentesis"
    ],
    "source": "KMLE 2026 / Claude Routine",
@@ -615,7 +616,7 @@ window.MEDKOS_INDEX = {
    "date": "2026-07-08",
    "path": "content/kmle/2026/kmle-2026-0066.md",
    "snippet": "55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥",
-   "text": "Cardiology Cardiac Tamponade cardiac tamponade Beck triad pulsus paradoxus pericardiocentesis KMLE 2026 / Claude Routine 55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥팽대·심음감소)+기이맥+전기교대 → 심장눌림증(폐쇄성 쇼크). 즉시 심낭천자로 심낭액을 배액해야 한다."
+   "text": "Cardiology Cardiac Tamponade cardiac tamponade Beck triad pulsus paradoxus electrical alternans pericardiocentesis KMLE 2026 / Claude Routine 55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥팽대·심음감소)+기이맥( 10 mmHg)+전기교대 → 심장눌림증(폐쇄성 쇼크). 즉시 심낭천자로 심낭액을 배액해야 하며, 전부하를 줄이는 이뇨·혈관확장·서맥 유발은 금기다."
   },
   {
    "id": "usmle-2026-0036",

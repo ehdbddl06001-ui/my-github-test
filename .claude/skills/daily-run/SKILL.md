@@ -19,6 +19,8 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 
 2. **생성** — 타입에 맞는 스킬 규칙을 따른다.
    - KMLE/USMLE → `/gen-kmle` 규칙 (USMLE는 `step`·`exam_subject` 필수)
+     · **자료 다양성**: 세트에 **심전도 판독 문항 ≥1개**를 넣고 `figure`(합성 `type:ecg`
+       기본, 모양형은 커밋된 `type:ecg12` 에셋)로 실제 파형을 붙인다 — export가 자동 렌더.
    - 기초의학 → `/gen-basic` 규칙 (생리·생화·약리 개념을 임상과 연결)
    - 논문 → `/gen-paper` 규칙
    - 질환/약물 카드 → `/gen-card` 규칙

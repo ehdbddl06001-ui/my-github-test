@@ -79,22 +79,29 @@ frontmatter의 `vitals`·`labs` 를 쓰면 웹이 **박스**로 렌더한다(`sc
 - **영상 한계**: X선·CT·조직·안저 등은 다루지 않는다. 필요한 소견은 `stem` 에 텍스트로
   기술하고 해설에 "자료 관련 한계"를 명시, `confidence` 를 조정한다.
 
-### 심전도 판독 문항이면 `figure` 를 넣는다
-리듬 판독형 문항(예: "이 리듬은?", "부정맥 진단은?")은 소견을 산문으로 설명하지 말고
-frontmatter에 `figure`(type=ecg)를 넣어 **파형을 붙인다**. export가 결정론적 SVG로
-그려주므로 그림 작업은 없다. **`rhythm` 이 곧 정답**이니 정답과 반드시 일치시킬 것.
+### 심전도 문항에 `figure` 를 **능동적으로** 넣는다 (다양성)
+심전도는 자료 다양성의 핵심이다. **하루 생성 세트마다 심전도 판독 문항을 최소 1개
+포함**하고(가능하면 순환기 2문항 중 1개), 소견을 산문으로만 쓰지 말고 frontmatter에
+`figure` 를 넣어 **실제 파형을 붙인다**. export가 자동으로 SVG를 렌더하므로 그림 작업은
+없다. 파형이 **곧 정답**이니 정답과 반드시 일치시킨다.
+
+**① 합성(리듬형) — 기본. 자기완결·네트워크 불필요:**
 ```yaml
 figure: {type: ecg, rhythm: afib, rate: 112}
 ```
-- 가능한 rhythm: `sinus·brady·tachy·afib·flutter·vtach·vfib·cavb·asystole`
-  (리듬·간격·무질서형만). 심박수는 `rate` 로 조정(생략 시 기본값).
-- **금지(합성)**: 브루가다·STEMI·심막염처럼 **ST/복합체 모양·12유도**로 정의되는
-  진단은 파형을 **합성**하지 않는다(틀린 도형 위험).
-- **실데이터가 필요하면** `type: ecg_signal` 로 `assets/ecg/*.json`(오픈 DB 실파형)을
-  렌더한다 — 진짜 모양이라 안전. 다만 오픈 라이선스·출처 표기 필수(schemas 참조).
-  ```yaml
-  figure: {type: ecg_signal, source: assets/ecg/mitdb-100.json, lead: MLII}
-  ```
+- 가능한 rhythm: `sinus·brady·tachy·afib·flutter·vtach·vfib·cavb·asystole`.
+- **합성 금지**: 브루가다·STEMI·각차단 등 **ST/복합체 모양·12유도**형은 합성하면
+  틀린 도형이 된다.
+
+**② 실데이터 12유도 — 모양 기반 진단은 여기로. 커밋된 에셋만 참조(런타임 다운로드 금지):**
+```yaml
+figure: {type: ecg12, source: assets/ecg/ptbxl-00172-crbbb.json}
+```
+사용 가능한 커밋 에셋(assets/ecg/README 참조): `ptbxl-00172-crbbb`(완전우각차단),
+`ptbxl-00180-clbbb`(완전좌각차단), `ptbxl-08191-ami`(급성 STEMI),
+`ptbxl-00270-imi`(하벽 MI), `ptbxl-00001-norm`(정상), `mitdb-100`(리듬 스트립).
+새 병리가 필요하면 `pipelines/ingest_ecg.py` 로 **오프라인 1회** 추가 커밋한다(루틴이
+매번 받지 않는다).
 
 ## 해설 템플릿 — 고정(LOCK). 모든 문항이 이 형식을 지킨다
 스타일이 문항마다 들쭉날쭉하지 않도록, `## 정답 및 해설` 본문은 **아래 불릿을 항상**
