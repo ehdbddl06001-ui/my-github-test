@@ -33,7 +33,7 @@ GitHub 경로를 Colab이 직접 연다:
 ## 준비 셀이 하는 일
 1. `drive.mount` — Drive를 붙여 `MyDrive/MedKOS/{data,ckpt}` 준비
 2. `git clone` — 최신 repo를 가져와 `pipelines/datasets.py` 등을 import 가능하게
-3. `weekly_topic()` — 이번 주 실습 주제를 **코드에게** 물어봄(ISO 주차 기준 결정론)
+3. `current_topic()` — 현재 주차 실습 주제를 **코드에게** 물어봄(1→12 순차 진도)
 4. GPU 확인
 
 자세한 셋업·모델 코드 읽는 법은 카드 `content/ailab/ailab-2026-0003.md` 참고.

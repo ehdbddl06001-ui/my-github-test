@@ -224,11 +224,14 @@ Code walkthrough / Instructions(지시어→무엇을 시키는가 표) / Exerci
 법은 `content/ailab/ailab-2026-0003.md`.
 
 **3) 오픈 데이터 + 매주 실습** — EKG(PTB-XL·MIT-BIH), 3D 뇌 MRI(BraTS·MSD·IXI), 흉부
-X선·CT·병리·피부·안저·EHR까지 접근조건(🟢open/🟡가입/🔴심사)과 함께 정리. **이번 주 주제는
-코드가** 정한다(ISO 주차 기준, LLM 아님):
+X선·CT·병리·피부·안저·EHR까지 접근조건(🟢open/🟡가입/🔴심사)과 함께 정리. 커리큘럼은
+**1주차(신호)부터 12주차(3D/표형)까지 순서대로** 진행한다(달력이 아니라 내 진도 기준,
+`state/ailab_progress.json`에 저장):
 
 ```bash
-python pipelines/datasets.py                 # 이번 주 주제 + 오픈 데이터 카탈로그
+python pipelines/datasets.py                 # 현재 주차 주제 + 오픈 데이터 카탈로그
+python pipelines/datasets.py --list          # 12주 전체 + 진도(현재/완료)
+python pipelines/datasets.py --advance        # 이번 주 완료 → 다음 주차로
 python pipelines/datasets.py --modality ecg   # 양식별 필터
 python pipelines/export_ailab_web.py          # content/ailab + datasets.py → docs/ailab.js
 ```

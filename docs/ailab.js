@@ -6,16 +6,18 @@ window.AILAB = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "weekly": {
-  "week": 28,
-  "goal": "피부병변 7종 분류(불균형 처리)",
-  "arch": "EfficientNet",
-  "why": "클래스 가중치·증강으로 불균형을 다루는 법.",
-  "dataset_key": "ham10000",
-  "dataset_name": "HAM10000 (Skin Lesion)",
-  "dataset_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T",
-  "modality": "derm",
-  "access": "registration",
-  "colab_ready": true
+  "week": 1,
+  "total": 12,
+  "goal": "심전도 1D-CNN 부정맥 분류",
+  "arch": "1D-CNN",
+  "why": "가장 가벼운 의료 딥러닝. 신호 → 라벨의 전 과정을 하루에 끝낸다.",
+  "dataset_key": "mitdb",
+  "dataset_name": "MIT-BIH Arrhythmia",
+  "dataset_url": "https://physionet.org/content/mitdb/",
+  "modality": "ecg",
+  "access": "open",
+  "colab_ready": true,
+  "done": false
  },
  "modalityLabels": {
   "ecg": "심전도·생체신호",
@@ -297,9 +299,9 @@ window.AILAB = {
     "open-data"
    ],
    "sections": {
-    "Overview": "의료 AI·코딩을 **매주 하나씩 직접 돌려보며** 익히는 12주 로드맵이다. 각 주차는\n`pipelines/datasets.py`의 `CURRICULUM`과 1:1로 묶여 있고, **이번 주 주제는 코드가**\n정한다(ISO 주차 기준, LLM 아님):\n\n```bash\npython pipelines/datasets.py            # 이번 주 주제 + 오픈 데이터 카탈로그\n```\n\n원칙은 MedKOS와 같다 — **신호 → 2D 영상 → 3D → 병리/멀티모달** 순으로 난도를 올린다.\n가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다.",
+    "Overview": "의료 AI·코딩을 **매주 하나씩 직접 돌려보며** 익히는 12주 로드맵이다. 각 주차는\n`pipelines/datasets.py`의 `CURRICULUM`과 1:1로 묶여 있고, **1주차(신호)부터 순서대로**\n진행한다(달력이 아니라 내 진도 기준, 진도는 `state/ailab_progress.json`에 저장):\n\n```bash\npython pipelines/datasets.py            # 현재 주차 주제 + 오픈 데이터 카탈로그\npython pipelines/datasets.py --list     # 12주 전체 + 진도(현재/완료)\npython pipelines/datasets.py --advance  # 이번 주 완료 → 다음 주차로\n```\n\n원칙은 MedKOS와 같다 — **신호 → 2D 영상 → 3D → 병리/멀티모달** 순으로 난도를 올린다.\n가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다.",
     "Architecture": "학습 경로(왼쪽이 쉽고 오른쪽이 어렵다):\n\n```mermaid\nflowchart LR\n  ECG[\"① 신호(ECG)\\n1D-CNN\"] --> XR[\"② 흉부 X선\\n전이학습·Grad-CAM\"]\n  XR --> SKIN[\"③ 피부·안저\\n불균형·순서형\"]\n  SKIN --> PATH[\"④ 병리 패치\\nPCam\"]\n  PATH --> SEG2D[\"⑤ 2D 분할\\nU-Net·Dice\"]\n  SEG2D --> SEG3D[\"⑥ 3D 분할\\n3D U-Net·MONAI\"]\n  SEG3D --> SSL[\"⑦ 자기지도·표형\\nSSL·MIMIC\"]\n```",
-    "Data": "아래 12주는 커리큘럼 순서이며, 실제 이번 주 주제는 `datasets.py`가 순환 선택한다.\n🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보).\n\n| 주 | 목표 | 모델 | 데이터셋 | 접근 |\n|----|------|------|----------|------|\n| 1 | 심전도 부정맥 분류 | 1D-CNN | MIT-BIH | 🟢 |\n| 2 | 12유도 다중라벨 진단 | 1D-ResNet | PTB-XL | 🟢 |\n| 3 | 흉부 X선 폐렴(전이학습) | ResNet50 | NIH ChestX-ray14 | 🟢 |\n| 4 | 흉부 14종 + Grad-CAM | DenseNet121 | CheXpert | 🟡 |\n| 5 | 피부병변 7종(불균형) | EfficientNet | HAM10000 | 🟡 |\n| 6 | 당뇨망막병증 등급 | EfficientNet+회귀 | APTOS 2019 | 🟡 |\n| 7 | 병리 패치 전이 | CNN | PatchCamelyon | 🟢 |\n| 8 | 폐 CT 결절 분할 | 2D U-Net | MSD Lung | 🟢 |\n| 9 | 3D 뇌종양 분할(입문) | 3D U-Net | MSD Brain | 🟢 |\n| 10 | 3D 뇌종양 분할(심화) | SwinUNETR | BraTS | 🟡 |\n| 11 | 정상 뇌 자기지도 | Autoencoder/SSL | IXI | 🟢 |\n| 12 | ICU 임상 예측(표형) | GBM/시계열 | MIMIC-IV | 🔴 |",
+    "Data": "아래 12주를 **순서대로** 진행한다(현재 주차는 `datasets.py`가 진도로 관리).\n🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보).\n\n| 주 | 목표 | 모델 | 데이터셋 | 접근 |\n|----|------|------|----------|------|\n| 1 | 심전도 부정맥 분류 | 1D-CNN | MIT-BIH | 🟢 |\n| 2 | 12유도 다중라벨 진단 | 1D-ResNet | PTB-XL | 🟢 |\n| 3 | 흉부 X선 폐렴(전이학습) | ResNet50 | NIH ChestX-ray14 | 🟢 |\n| 4 | 흉부 14종 + Grad-CAM | DenseNet121 | CheXpert | 🟡 |\n| 5 | 피부병변 7종(불균형) | EfficientNet | HAM10000 | 🟡 |\n| 6 | 당뇨망막병증 등급 | EfficientNet+회귀 | APTOS 2019 | 🟡 |\n| 7 | 병리 패치 전이 | CNN | PatchCamelyon | 🟢 |\n| 8 | 폐 CT 결절 분할 | 2D U-Net | MSD Lung | 🟢 |\n| 9 | 3D 뇌종양 분할(입문) | 3D U-Net | MSD Brain | 🟢 |\n| 10 | 3D 뇌종양 분할(심화) | SwinUNETR | BraTS | 🟡 |\n| 11 | 정상 뇌 자기지도 | Autoencoder/SSL | IXI | 🟢 |\n| 12 | ICU 임상 예측(표형) | GBM/시계열 | MIMIC-IV | 🔴 |",
     "Instructions": "매주 도는 절차는 `/ai-weekly` 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에):\n\n1. `python pipelines/datasets.py` 로 이번 주 주제·데이터 확인\n2. `/gen-ailab` 로 그 주제의 실습 카드(분석·도식·지시어 해설)를 `content/ailab/`에 생성\n3. Colab 노트북(`notebooks/`)에서 직접 돌리고, 결과·막힌 점을 카드 `## My notes`에 기록\n4. `indexer.py --check` → `export_ailab_web.py` → 커밋 (홈페이지 🤖 AI랩에 반영)",
     "Exercises": "- 이번 주 주제를 `datasets.py`로 확인하고, 해당 데이터셋 링크를 실제로 열어본다.\n- 첫 주(신호)는 반드시 **끝까지 완주**해 '데이터→모델→평가'의 감을 잡는다.\n- 매주 카드에 **재현 가능한 한 줄 결과**(Dice/AUROC 등)를 남긴다.",
     "Resources": "- 프로젝트 분석 예시: `ailab-2026-0002` (Keras 3D 뇌종양 분할)\n- Colab·Drive 셋업 & 지시어 읽는 법: `ailab-2026-0003`\n- 오픈 데이터 레지스트리: `pipelines/datasets.py`"
@@ -332,7 +334,7 @@ window.AILAB = {
    "sections": {
     "Overview": "실습을 **무료 GPU(Google Colab)** 에서 하고, 결과·데이터는 **Google Drive**에 남기고,\n코드·노트는 **GitHub(이 repo)** 에 버전관리하는 3각 구조다. MedKOS 철학 그대로:\n*GitHub=원본/코드, Drive=데이터·산출물 백업, 노트=실습장.*\n\n```mermaid\nflowchart LR\n  GH[\"GitHub repo\\n(노트북·카드·datasets.py)\"] -->|\"Colab이 바로 열기\"| CO[\"Google Colab\\n(무료 GPU)\"]\n  DR[\"Google Drive\\n(데이터·체크포인트)\"] <-->|\"drive.mount\"| CO\n  CO -->|\"결과 캡처·노트\"| GH\n```",
     "Data": "- **데이터는 Drive에** 둔다: 큰 의료 데이터를 매번 새로 받으면 느리다. 한 번 받아\n  `MyDrive/MedKOS/data/<dataset>/`에 풀어두고 매 세션 마운트해 재사용한다.\n- **체크포인트도 Drive에**: 학습 중 `.keras`/`.pt`를 `MyDrive/MedKOS/ckpt/`에 저장하면\n  Colab 세션이 끊겨도 이어서 할 수 있다.\n- **코드·카드는 Drive가 아니라 GitHub에**: 원본은 항상 repo. 노트북은 GitHub에서 Colab이\n  바로 연다(`colab_url` 참고).",
-    "Code walkthrough": "Colab 첫 셀에서 Drive를 붙이고 repo를 당겨오는 표준 준비 코드:\n\n```python\n# 1) Google Drive 마운트 → 데이터·체크포인트를 영구 보관\nfrom google.colab import drive\ndrive.mount(\"/content/drive\")\nimport os, pathlib\nBASE = pathlib.Path(\"/content/drive/MyDrive/MedKOS\")\n(BASE / \"data\").mkdir(parents=True, exist_ok=True)\n(BASE / \"ckpt\").mkdir(parents=True, exist_ok=True)\n\n# 2) 최신 코드·데이터셋 레지스트리 당겨오기(datasets.py 등)\n!git clone --depth 1 https://github.com/ehdbddl06001-ui/my-github-test.git /content/medkos || \\\n  (cd /content/medkos && git pull)\nimport sys; sys.path.append(\"/content/medkos\")\n\n# 3) 이번 주 주제를 '코드'에게 물어본다(LLM 아님, 결정론적)\nfrom pipelines.datasets import weekly_topic, get_dataset\nwt = weekly_topic(); print(wt[\"week\"], wt[\"goal\"], \"→\", wt[\"dataset_name\"])\n\n# 4) GPU 확인\nimport tensorflow as tf; print(\"GPU:\", tf.config.list_physical_devices(\"GPU\"))\n```\n\n이후엔 `BASE/\"data\"` 아래 데이터를 읽고, 학습이 끝나면\n`model.save(BASE/\"ckpt\"/\"week{}.keras\".format(wt[\"week\"]))` 로 Drive에 남긴다.",
+    "Code walkthrough": "Colab 첫 셀에서 Drive를 붙이고 repo를 당겨오는 표준 준비 코드:\n\n```python\n# 1) Google Drive 마운트 → 데이터·체크포인트를 영구 보관\nfrom google.colab import drive\ndrive.mount(\"/content/drive\")\nimport os, pathlib\nBASE = pathlib.Path(\"/content/drive/MyDrive/MedKOS\")\n(BASE / \"data\").mkdir(parents=True, exist_ok=True)\n(BASE / \"ckpt\").mkdir(parents=True, exist_ok=True)\n\n# 2) 최신 코드·데이터셋 레지스트리 당겨오기(datasets.py 등)\n!git clone --depth 1 https://github.com/ehdbddl06001-ui/my-github-test.git /content/medkos || \\\n  (cd /content/medkos && git pull)\nimport sys; sys.path.append(\"/content/medkos\")\n\n# 3) 현재 주차 주제를 '코드'에게 물어본다(LLM 아님, 1→12 순차 진도)\nfrom pipelines.datasets import current_topic, get_dataset\nwt = current_topic(); print(wt[\"week\"], \"주차:\", wt[\"goal\"], \"→\", wt[\"dataset_name\"])\n\n# 4) GPU 확인\nimport tensorflow as tf; print(\"GPU:\", tf.config.list_physical_devices(\"GPU\"))\n```\n\n이후엔 `BASE/\"data\"` 아래 데이터를 읽고, 학습이 끝나면\n`model.save(BASE/\"ckpt\"/\"week{}.keras\".format(wt[\"week\"]))` 로 Drive에 남긴다.",
     "Instructions": "> **모델 코드(지시어)를 처음 볼 때 읽는 순서** — 낯선 프로젝트도 이 5개 질문으로 해부된다.\n\n1. **입력·출력이 뭐냐** — `Input(...)`과 마지막 층(`Dense`/`Conv...`의 활성함수)만 봐도\n   문제 유형이 나온다. `sigmoid`=이진/다중라벨, `softmax`=단일 다중클래스, 활성 없음=회귀.\n2. **손실이 뭐냐** — `compile(loss=...)`. 문제의 '채점 기준'이자 모델이 최적화하는 목표.\n   (분할=Dice, 불균형 분류=weighted BCE, 등급=회귀/QWK …)\n3. **몸통이 뭐냐** — 반복되는 블록의 이름(Conv/Residual/Attention)이 곧 아키텍처 이름.\n4. **데이터가 어떻게 들어오냐** — `Dataset`/`generator`의 전처리·증강이 성능의 절반.\n5. **어떻게 도느냐** — `fit`/학습 루프의 epoch·batch·lr·콜백(early stop, checkpoint).\n\n각 항목의 '지시어→무엇을 시키는가' 대응표는 프로젝트 카드(`ailab-2026-0002`)의\n**## Instructions** 표를 템플릿으로 재사용한다. 새 프로젝트를 볼 때마다 그 표를 채우면\n자연스럽게 구조가 정리된다.",
     "Exercises": "1. 위 준비 셀을 Colab에서 실행해 Drive 마운트 + `weekly_topic()` 출력까지 확인.\n2. `ailab-2026-0002`의 지시어 표를 **가리고**, 코드만 보고 스스로 채운 뒤 대조.\n3. 아무 Kaggle/Keras 의료 예제 하나를 골라 위 '5개 질문'으로 1문단 요약을 써 본다.",
     "Resources": "- 템플릿 노트북: `notebooks/ailab_template.ipynb`\n- 뇌종양 분할 실습 노트북: `notebooks/ailab_brain_tumor_segmentation.ipynb`\n- Colab 문서: https://colab.research.google.com/\n- Keras 3 가이드: https://keras.io/guides/"

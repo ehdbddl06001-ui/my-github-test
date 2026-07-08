@@ -70,7 +70,8 @@
     var host = document.getElementById("weekly");
     if (!host || !w.goal) { if (host) host.style.display = "none"; return; }
     host.innerHTML =
-      '<h2>🗓 이번 주 실습 <span class="muted">(ISO ' + esc(w.week) + '주차 · 코드가 선정)</span></h2>' +
+      '<h2>🗓 실습 진도 <span class="muted">(' + esc(w.week) + '주차 / 총 ' + esc(w.total || 12) + '주' +
+      (w.done ? ' · ✅완료' : '') + ')</span></h2>' +
       '<div class="goal">🎯 ' + esc(w.goal) + '</div>' +
       '<p style="margin:6px 0"><span class="badgep">모델 ' + esc(w.arch) + '</span>' +
       '<span class="badgep">양식 ' + esc(DATA.modalityLabels[w.modality] || w.modality) + '</span>' +

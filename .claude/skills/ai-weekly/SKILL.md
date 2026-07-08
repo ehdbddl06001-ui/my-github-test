@@ -6,14 +6,17 @@ description: 매주 도는 의료 AI 실습 오케스트레이터. pipelines/dat
 # 주간 AI 실습 절차
 
 의료 AI를 매주 하나씩 직접 돌려보게 만드는 얇은 루틴. **무엇을 할지는 코드가 정한다**
-(ISO 주차 기준, LLM 아님). 규칙은 여기, 결정론은 `pipelines/datasets.py`.
+(커리큘럼 1→12 순서, 달력 아님, LLM 아님). 규칙은 여기, 결정론은 `pipelines/datasets.py`.
 
 ## 순서
-1. **이번 주 주제 확인 (결정론)**
+1. **이번 주 주제 확인 (결정론, 순차 진행)**
    ```
-   python pipelines/datasets.py         # 이번 주 목표·모델·데이터셋 + 카탈로그
+   python pipelines/datasets.py         # 현재 주차 목표·모델·데이터셋 + 카탈로그
+   python pipelines/datasets.py --list  # 12주 전체와 진도(현재/완료) 확인
    ```
    출력의 `goal / arch / dataset_key / dataset_url / access`를 이번 주 대상으로 삼는다.
+   커리큘럼은 **1주차(신호)부터 순서대로** 진행한다. 한 주를 마치면 마지막에
+   `python pipelines/datasets.py --advance` 로 다음 주차로 넘긴다(진도는 state에 저장).
 
 2. **중복 회피** — 최근 다룬 ailab 주제 확인:
    ```
@@ -22,7 +25,7 @@ description: 매주 도는 의료 AI 실습 오케스트레이터. pipelines/dat
    이미 최근에 만든 주제면 커리큘럼의 다음 항목으로 옮기거나, 심화 각도로 변주한다.
 
 3. **카드 생성** — `/gen-ailab` 규칙으로 `kind: weekly` 카드를 만든다.
-   - frontmatter의 `dataset`은 `datasets.py`의 key와 일치, `week`는 이번 ISO 주차.
+   - frontmatter의 `dataset`은 `datasets.py`의 key와 일치, `week`는 커리큘럼 주차(1~12).
    - `notebook`은 `notebooks/ailab_template.ipynb`(또는 주제 전용 노트북) 경로.
    - Architecture 도식 + Instructions(지시어 해설) 표를 반드시 포함.
 

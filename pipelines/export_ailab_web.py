@@ -123,8 +123,9 @@ def main() -> int:
         "window.AILAB = " + json.dumps(payload, ensure_ascii=False, indent=1) + ";\n",
         encoding="utf-8",
     )
+    w = payload["weekly"]
     print(f"생성: {OUT.relative_to(ROOT)}  카드 {len(cards)}개 · "
-          f"데이터셋 {len(DATASETS)}개 · 이번주 ISO {payload['weekly']['week']}주차")
+          f"데이터셋 {len(DATASETS)}개 · 현재 {w['week']}/{w.get('total', 12)}주차")
     return 0
 
 
