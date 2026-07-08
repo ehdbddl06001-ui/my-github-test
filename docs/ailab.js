@@ -6,16 +6,21 @@ window.AILAB = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "weekly": {
-  "week": 28,
-  "goal": "피부병변 7종 분류(불균형 처리)",
-  "arch": "EfficientNet",
-  "why": "클래스 가중치·증강으로 불균형을 다루는 법.",
-  "dataset_key": "ham10000",
-  "dataset_name": "HAM10000 (Skin Lesion)",
-  "dataset_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T",
-  "modality": "derm",
-  "access": "registration",
-  "colab_ready": true
+  "week": 1,
+  "total": 12,
+  "goal": "심전도 1D-CNN 부정맥 분류",
+  "arch": "1D-CNN",
+  "why": "가장 가벼운 의료 딥러닝. 신호 → 라벨의 전 과정을 하루에 끝낸다.",
+  "dataset_key": "mitdb",
+  "dataset_name": "MIT-BIH Arrhythmia",
+  "dataset_url": "https://physionet.org/content/mitdb/",
+  "modality": "ecg",
+  "access": "open",
+  "colab_ready": true,
+  "metric": "macro_f1",
+  "target": 0.8,
+  "deliverable": "5클래스(AAMI) 비트 분류 혼동행렬 + macro-F1, 체크포인트를 Drive에 저장",
+  "done": false
  },
  "modalityLabels": {
   "ecg": "심전도·생체신호",
@@ -297,10 +302,10 @@ window.AILAB = {
     "open-data"
    ],
    "sections": {
-    "Overview": "의료 AI·코딩을 **매주 하나씩 직접 돌려보며** 익히는 12주 로드맵이다. 각 주차는\n`pipelines/datasets.py`의 `CURRICULUM`과 1:1로 묶여 있고, **이번 주 주제는 코드가**\n정한다(ISO 주차 기준, LLM 아님):\n\n```bash\npython pipelines/datasets.py            # 이번 주 주제 + 오픈 데이터 카탈로그\n```\n\n원칙은 MedKOS와 같다 — **신호 → 2D 영상 → 3D → 병리/멀티모달** 순으로 난도를 올린다.\n가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다.",
+    "Overview": "의료 AI·코딩을 **매주 하나씩 직접 돌려보며** 익히는 12주 로드맵이다. 각 주차는\n`pipelines/datasets.py`의 `CURRICULUM`과 1:1로 묶여 있고, **1주차(신호)부터 순서대로**\n진행한다(달력이 아니라 내 진도 기준, 진도는 `state/ailab_progress.json`에 저장):\n\n```bash\npython pipelines/datasets.py            # 현재 주차 주제 + 오픈 데이터 카탈로그\npython pipelines/datasets.py --list     # 12주 전체 + 진도(현재/완료)\npython pipelines/datasets.py --advance  # 이번 주 완료 → 다음 주차로\n```\n\n원칙은 MedKOS와 같다 — **신호 → 2D 영상 → 3D → 병리/멀티모달** 순으로 난도를 올린다.\n가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다.",
     "Architecture": "학습 경로(왼쪽이 쉽고 오른쪽이 어렵다):\n\n```mermaid\nflowchart LR\n  ECG[\"① 신호(ECG)\\n1D-CNN\"] --> XR[\"② 흉부 X선\\n전이학습·Grad-CAM\"]\n  XR --> SKIN[\"③ 피부·안저\\n불균형·순서형\"]\n  SKIN --> PATH[\"④ 병리 패치\\nPCam\"]\n  PATH --> SEG2D[\"⑤ 2D 분할\\nU-Net·Dice\"]\n  SEG2D --> SEG3D[\"⑥ 3D 분할\\n3D U-Net·MONAI\"]\n  SEG3D --> SSL[\"⑦ 자기지도·표형\\nSSL·MIMIC\"]\n```",
-    "Data": "아래 12주는 커리큘럼 순서이며, 실제 이번 주 주제는 `datasets.py`가 순환 선택한다.\n🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보).\n\n| 주 | 목표 | 모델 | 데이터셋 | 접근 |\n|----|------|------|----------|------|\n| 1 | 심전도 부정맥 분류 | 1D-CNN | MIT-BIH | 🟢 |\n| 2 | 12유도 다중라벨 진단 | 1D-ResNet | PTB-XL | 🟢 |\n| 3 | 흉부 X선 폐렴(전이학습) | ResNet50 | NIH ChestX-ray14 | 🟢 |\n| 4 | 흉부 14종 + Grad-CAM | DenseNet121 | CheXpert | 🟡 |\n| 5 | 피부병변 7종(불균형) | EfficientNet | HAM10000 | 🟡 |\n| 6 | 당뇨망막병증 등급 | EfficientNet+회귀 | APTOS 2019 | 🟡 |\n| 7 | 병리 패치 전이 | CNN | PatchCamelyon | 🟢 |\n| 8 | 폐 CT 결절 분할 | 2D U-Net | MSD Lung | 🟢 |\n| 9 | 3D 뇌종양 분할(입문) | 3D U-Net | MSD Brain | 🟢 |\n| 10 | 3D 뇌종양 분할(심화) | SwinUNETR | BraTS | 🟡 |\n| 11 | 정상 뇌 자기지도 | Autoencoder/SSL | IXI | 🟢 |\n| 12 | ICU 임상 예측(표형) | GBM/시계열 | MIMIC-IV | 🔴 |",
-    "Instructions": "매주 도는 절차는 `/ai-weekly` 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에):\n\n1. `python pipelines/datasets.py` 로 이번 주 주제·데이터 확인\n2. `/gen-ailab` 로 그 주제의 실습 카드(분석·도식·지시어 해설)를 `content/ailab/`에 생성\n3. Colab 노트북(`notebooks/`)에서 직접 돌리고, 결과·막힌 점을 카드 `## My notes`에 기록\n4. `indexer.py --check` → `export_ailab_web.py` → 커밋 (홈페이지 🤖 AI랩에 반영)",
+    "Data": "아래 12주를 **순서대로** 진행한다(현재 주차는 `datasets.py`가 진도로 관리).\n🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보).\n\n| 주 | 목표 | 모델 | 데이터셋 | 접근 |\n|----|------|------|----------|------|\n| 1 | 심전도 부정맥 분류 | 1D-CNN | MIT-BIH | 🟢 |\n| 2 | 12유도 다중라벨 진단 | 1D-ResNet | PTB-XL | 🟢 |\n| 3 | 흉부 X선 폐렴(전이학습) | ResNet50 | NIH ChestX-ray14 | 🟢 |\n| 4 | 흉부 14종 + Grad-CAM | DenseNet121 | CheXpert | 🟡 |\n| 5 | 피부병변 7종(불균형) | EfficientNet | HAM10000 | 🟡 |\n| 6 | 당뇨망막병증 등급 | EfficientNet+회귀 | APTOS 2019 | 🟡 |\n| 7 | 병리 패치 전이 | CNN | PatchCamelyon | 🟢 |\n| 8 | 폐 CT 결절 분할 | 2D U-Net | MSD Lung | 🟢 |\n| 9 | 3D 뇌종양 분할(입문) | 3D U-Net | MSD Brain | 🟢 |\n| 10 | 3D 뇌종양 분할(심화) | SwinUNETR | BraTS | 🟡 |\n| 11 | 정상 뇌 자기지도 | Autoencoder/SSL | IXI | 🟢 |\n| 12 | ICU 임상 예측(표형) | GBM/시계열 | MIMIC-IV | 🔴 |",
+    "Instructions": "매주 도는 절차는 `/ai-weekly` 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에):\n\n1. `python pipelines/datasets.py` 로 현재 주차 주제·데이터·**통과 기준** 확인\n2. `/gen-ailab` 로 그 주제의 실습 카드(분석·도식·지시어 해설 + `## Gate`)를 생성\n3. Colab 노트북(`notebooks/`)에서 직접 돌리고, 결과·막힌 점을 카드 `## My notes`에 기록\n4. **완료 판정 → 자동 진급**: 노트북이 `results.json`을 남기면\n   `python pipelines/check_week.py --results <파일>` 가 기준과 비교해 통과 시 다음 주차로.\n   (바빠서 매주 못 만들어도, 기준을 넘긴 주만 골라 진급할 수 있다.)\n5. `indexer.py --check` → `export_ailab_web.py` → 커밋 (홈페이지 🤖 AI랩에 반영)",
     "Exercises": "- 이번 주 주제를 `datasets.py`로 확인하고, 해당 데이터셋 링크를 실제로 열어본다.\n- 첫 주(신호)는 반드시 **끝까지 완주**해 '데이터→모델→평가'의 감을 잡는다.\n- 매주 카드에 **재현 가능한 한 줄 결과**(Dice/AUROC 등)를 남긴다.",
     "Resources": "- 프로젝트 분석 예시: `ailab-2026-0002` (Keras 3D 뇌종양 분할)\n- Colab·Drive 셋업 & 지시어 읽는 법: `ailab-2026-0003`\n- 오픈 데이터 레지스트리: `pipelines/datasets.py`"
    }
@@ -332,7 +337,7 @@ window.AILAB = {
    "sections": {
     "Overview": "실습을 **무료 GPU(Google Colab)** 에서 하고, 결과·데이터는 **Google Drive**에 남기고,\n코드·노트는 **GitHub(이 repo)** 에 버전관리하는 3각 구조다. MedKOS 철학 그대로:\n*GitHub=원본/코드, Drive=데이터·산출물 백업, 노트=실습장.*\n\n```mermaid\nflowchart LR\n  GH[\"GitHub repo\\n(노트북·카드·datasets.py)\"] -->|\"Colab이 바로 열기\"| CO[\"Google Colab\\n(무료 GPU)\"]\n  DR[\"Google Drive\\n(데이터·체크포인트)\"] <-->|\"drive.mount\"| CO\n  CO -->|\"결과 캡처·노트\"| GH\n```",
     "Data": "- **데이터는 Drive에** 둔다: 큰 의료 데이터를 매번 새로 받으면 느리다. 한 번 받아\n  `MyDrive/MedKOS/data/<dataset>/`에 풀어두고 매 세션 마운트해 재사용한다.\n- **체크포인트도 Drive에**: 학습 중 `.keras`/`.pt`를 `MyDrive/MedKOS/ckpt/`에 저장하면\n  Colab 세션이 끊겨도 이어서 할 수 있다.\n- **코드·카드는 Drive가 아니라 GitHub에**: 원본은 항상 repo. 노트북은 GitHub에서 Colab이\n  바로 연다(`colab_url` 참고).",
-    "Code walkthrough": "Colab 첫 셀에서 Drive를 붙이고 repo를 당겨오는 표준 준비 코드:\n\n```python\n# 1) Google Drive 마운트 → 데이터·체크포인트를 영구 보관\nfrom google.colab import drive\ndrive.mount(\"/content/drive\")\nimport os, pathlib\nBASE = pathlib.Path(\"/content/drive/MyDrive/MedKOS\")\n(BASE / \"data\").mkdir(parents=True, exist_ok=True)\n(BASE / \"ckpt\").mkdir(parents=True, exist_ok=True)\n\n# 2) 최신 코드·데이터셋 레지스트리 당겨오기(datasets.py 등)\n!git clone --depth 1 https://github.com/ehdbddl06001-ui/my-github-test.git /content/medkos || \\\n  (cd /content/medkos && git pull)\nimport sys; sys.path.append(\"/content/medkos\")\n\n# 3) 이번 주 주제를 '코드'에게 물어본다(LLM 아님, 결정론적)\nfrom pipelines.datasets import weekly_topic, get_dataset\nwt = weekly_topic(); print(wt[\"week\"], wt[\"goal\"], \"→\", wt[\"dataset_name\"])\n\n# 4) GPU 확인\nimport tensorflow as tf; print(\"GPU:\", tf.config.list_physical_devices(\"GPU\"))\n```\n\n이후엔 `BASE/\"data\"` 아래 데이터를 읽고, 학습이 끝나면\n`model.save(BASE/\"ckpt\"/\"week{}.keras\".format(wt[\"week\"]))` 로 Drive에 남긴다.",
+    "Code walkthrough": "Colab 첫 셀에서 Drive를 붙이고 repo를 당겨오는 표준 준비 코드:\n\n```python\n# 1) Google Drive 마운트 → 데이터·체크포인트를 영구 보관\nfrom google.colab import drive\ndrive.mount(\"/content/drive\")\nimport os, pathlib\nBASE = pathlib.Path(\"/content/drive/MyDrive/MedKOS\")\n(BASE / \"data\").mkdir(parents=True, exist_ok=True)\n(BASE / \"ckpt\").mkdir(parents=True, exist_ok=True)\n\n# 2) 최신 코드·데이터셋 레지스트리 당겨오기(datasets.py 등)\n!git clone --depth 1 https://github.com/ehdbddl06001-ui/my-github-test.git /content/medkos || \\\n  (cd /content/medkos && git pull)\nimport sys; sys.path.append(\"/content/medkos\")\n\n# 3) 현재 주차 주제를 '코드'에게 물어본다(LLM 아님, 1→12 순차 진도)\nfrom pipelines.datasets import current_topic, get_dataset\nwt = current_topic(); print(wt[\"week\"], \"주차:\", wt[\"goal\"], \"→\", wt[\"dataset_name\"])\n\n# 4) GPU 확인\nimport tensorflow as tf; print(\"GPU:\", tf.config.list_physical_devices(\"GPU\"))\n```\n\n이후엔 `BASE/\"data\"` 아래 데이터를 읽고, 학습이 끝나면\n`model.save(BASE/\"ckpt\"/\"week{}.keras\".format(wt[\"week\"]))` 로 Drive에 남긴다.",
     "Instructions": "> **모델 코드(지시어)를 처음 볼 때 읽는 순서** — 낯선 프로젝트도 이 5개 질문으로 해부된다.\n\n1. **입력·출력이 뭐냐** — `Input(...)`과 마지막 층(`Dense`/`Conv...`의 활성함수)만 봐도\n   문제 유형이 나온다. `sigmoid`=이진/다중라벨, `softmax`=단일 다중클래스, 활성 없음=회귀.\n2. **손실이 뭐냐** — `compile(loss=...)`. 문제의 '채점 기준'이자 모델이 최적화하는 목표.\n   (분할=Dice, 불균형 분류=weighted BCE, 등급=회귀/QWK …)\n3. **몸통이 뭐냐** — 반복되는 블록의 이름(Conv/Residual/Attention)이 곧 아키텍처 이름.\n4. **데이터가 어떻게 들어오냐** — `Dataset`/`generator`의 전처리·증강이 성능의 절반.\n5. **어떻게 도느냐** — `fit`/학습 루프의 epoch·batch·lr·콜백(early stop, checkpoint).\n\n각 항목의 '지시어→무엇을 시키는가' 대응표는 프로젝트 카드(`ailab-2026-0002`)의\n**## Instructions** 표를 템플릿으로 재사용한다. 새 프로젝트를 볼 때마다 그 표를 채우면\n자연스럽게 구조가 정리된다.",
     "Exercises": "1. 위 준비 셀을 Colab에서 실행해 Drive 마운트 + `weekly_topic()` 출력까지 확인.\n2. `ailab-2026-0002`의 지시어 표를 **가리고**, 코드만 보고 스스로 채운 뒤 대조.\n3. 아무 Kaggle/Keras 의료 예제 하나를 골라 위 '5개 질문'으로 1문단 요약을 써 본다.",
     "Resources": "- 템플릿 노트북: `notebooks/ailab_template.ipynb`\n- 뇌종양 분할 실습 노트북: `notebooks/ailab_brain_tumor_segmentation.ipynb`\n- Colab 문서: https://colab.research.google.com/\n- Keras 3 가이드: https://keras.io/guides/"
@@ -371,6 +376,42 @@ window.AILAB = {
     "Instructions": "> **핵심: 코드의 각 '지시어'가 모델에게 뭘 시키는지**를 말로 옮기면 구조가 보인다.\n> (사용자가 요청한 '해당 지시어가 어떤 지시문인지' 파트)\n\n| 지시어(코드) | 무엇을 시키는가 | 왜 필요한가 |\n|---|---|---|\n| `keras.Input(shape)` | \"입력은 이 모양의 텐서다\"라고 그래프의 입구를 선언 | 모델이 받을 볼륨 크기·채널 수를 고정 |\n| `layers.Conv3D(f, 3)` | 3×3×3 커널 `f`개로 **지역 패턴**을 훑어라 | 가장자리·질감 같은 국소 특징 추출 |\n| `BatchNormalization()` | 배치 통계로 값을 **정규화**해 학습을 안정화 | 깊은 3D망의 발산 방지·수렴 가속 |\n| `Activation(\"relu\")` | 음수는 0으로 눌러 **비선형성** 부여 | 없으면 층을 쌓아도 선형에 불과 |\n| `MaxPooling3D()` | 2배 다운샘플: \"이 영역의 최댓값만 남겨라\" | 시야(receptive field)를 넓히고 계산량↓ |\n| `UpSampling3D()` | 다시 2배 키워라 | 디코더에서 원해상도 마스크로 복원 |\n| `concatenate([u, c])` | 디코더 특징에 **같은 층 인코더 특징을 붙여라** | 스킵 연결 — 잃어버린 경계 디테일 회복 |\n| `Conv3D(n,1,\"sigmoid\")` | 복셀마다 클래스 확률(0~1)을 내라 | 최종 분할 마스크 생성 |\n| `dice_loss` | \"예측∩정답을 최대화하라\"(겹침 비율) | 종양이 작아 픽셀 정확도는 속기 쉬움 → Dice로 겹침을 직접 최적화 |\n| `model.compile(...)` | 손실·옵티마이저·지표를 **묶어라** | 학습 규칙 확정 |\n| `model.fit(...)` | 데이터를 반복 투입해 **가중치를 갱신하라** | 실제 학습 루프 |\n\n**한눈 요약**: `Conv3D`가 보고 → `Pool`이 요약하고 → `Bottleneck`이 판단하고 →\n`UpSampling+concat`이 복원하고 → `sigmoid`가 칠하고 → `dice_loss`가 채점해 → `fit`이 고친다.",
     "Exercises": "1. **읽기**: 원본 예제(`project_url`)를 열어 위 골격과 1:1 대조하고, 다른 점 3가지를 이 카드\n   아래에 메모한다.\n2. **돌리기**: `notebook`(Colab)에서 MSD Task01 소량으로 5 epoch 학습 → Dice 곡선을 캡처.\n3. **바꿔보기**: 손실을 `dice_loss` → `BCE+Dice` 혼합으로 바꾸고 검증 Dice 변화를 비교.\n4. **줄이기**: 패치 크기를 128³→64³로 줄여 메모리·속도·성능의 트레이드오프를 관찰.\n5. **연결**: 결과 마스크 1장을 캡처해 `## My notes`에 붙이고, KMLE 신경과 종양 문항과 링크.",
     "Resources": "- 원본 예제: https://keras.io/examples/vision/brain_tumor_segmentation/\n- U-Net 원논문: Ronneberger 2015 (MICCAI)\n- 3D U-Net: Çiçek 2016 (MICCAI)\n- MONAI(의료영상 특화 파이프라인): https://monai.io/\n- 데이터: `pipelines/datasets.py`의 `msd-brain`·`brats` 항목"
+   }
+  },
+  {
+   "id": "ailab-2026-0005",
+   "topic": "Medical Signal AI",
+   "subtopic": "ECG Arrhythmia Classification (MIT-BIH)",
+   "kind": "weekly",
+   "framework": "TensorFlow/Keras",
+   "arch": "1D-CNN",
+   "modality": "ecg",
+   "level": "beginner",
+   "projectUrl": "",
+   "dataset": "mitdb",
+   "datasetUrl": "https://physionet.org/content/mitdb/",
+   "colabUrl": "https://colab.research.google.com/github/ehdbddl06001-ui/my-github-test/blob/main/notebooks/ailab_week01_ecg_mitbih.ipynb",
+   "notebook": "notebooks/ailab_week01_ecg_mitbih.ipynb",
+   "week": 1,
+   "date": "2026-07-08",
+   "confidence": "medium",
+   "tags": [
+    "ECG",
+    "arrhythmia",
+    "1D-CNN",
+    "MIT-BIH",
+    "AAMI",
+    "imbalanced"
+   ],
+   "sections": {
+    "Overview": "커리큘럼 **1주차**. 가장 가벼운 의료 딥러닝으로 **신호 → 라벨** 전 과정을 하루에 완주한다.\n심전도(1D 신호) 한 비트를 보고 부정맥 유형을 맞히는 **1D-CNN 분류기**.\n\n> **완료 게이트**: AAMI 5클래스 **macro-F1 ≥ 0.80**. 달성하면 `check_week.py`가 판정해\n> 자동으로 2주차(PTB-XL 12유도)로 넘어간다. → `## Gate` 참조.\n\n- **왜 이걸 1주차로**: 이미지보다 가볍고(1D), 오픈 데이터라 바로 받으며, 전처리·불균형·\n  평가지표라는 핵심 3요소를 한 번에 만난다.\n- **기존 접근**: MIT-BIH는 부정맥 연구의 고전. AAMI EC57 표준으로 비트를 N/S/V/F/Q 5군으로\n  묶어 분류하는 것이 관례다. 고전 baseline은 1D-CNN·RNN이며 비트 단위 정확도는 매우 높지만,\n  **환자 단위 분리**를 하면 난도가 확 오른다(그래서 이 과제의 진짜 공부 포인트).",
+    "Architecture": "1D-CNN = 이미지의 2D 합성곱을 **시간축 1D**로 바꾼 것. 신호의 국소 파형(QRS 모양)을 훑어\n비트 유형을 판단한다.\n\n```mermaid\nflowchart LR\n  A[\"한 비트\\n(R-peak ±128 = 256 샘플, 1채널)\"] --> C1[\"Conv1D 32 + Pool\"]\n  C1 --> C2[\"Conv1D 64 + Pool\"]\n  C2 --> C3[\"Conv1D 128\"]\n  C3 --> G[\"GlobalAveragePooling1D\"]\n  G --> D[\"Dense 64 + Dropout\"]\n  D --> O[\"Dense 5 + softmax\\n→ N·S·V·F·Q 확률\"]\n```",
+    "Data": "- **MIT-BIH Arrhythmia**(PhysioNet, 오픈, 48 레코드·2유도·360Hz). `wfdb`로 직접 스트리밍.\n- **비트 추출**: 주석(atr)의 R-peak 위치 ±128 샘플을 한 비트로 자르고 비트별 z-score 정규화.\n- **라벨(AAMI 5군)**: N(정상계열)·S(상심실성)·V(심실성)·F(융합)·Q(미분류). 심한 **불균형**\n  (N이 대부분) → 클래스 가중치로 보정.\n- **환자 단위 분리**: 레코드를 train/test로 나눠 같은 환자가 양쪽에 섞이지 않게 한다\n  (섞이면 점수가 부풀려짐 — 임상 연구로 그대로 이어지는 핵심 개념).",
+    "Code walkthrough": "핵심만. 전체는 `notebook`(Colab)에서 실행한다.\n\n```python\n# 비트 하나 = R-peak 양옆을 자른 256 샘플, 비트별 정규화\nbeat = ch[pos-128:pos+128]\nbeat = (beat - beat.mean()) / (beat.std() + 1e-6)\n\n# 1D-CNN\nfrom tensorflow.keras import layers, models\nmodel = models.Sequential([\n    layers.Input((256, 1)),\n    layers.Conv1D(32, 7, activation=\"relu\"), layers.MaxPool1D(2),\n    layers.Conv1D(64, 5, activation=\"relu\"), layers.MaxPool1D(2),\n    layers.Conv1D(128, 3, activation=\"relu\"), layers.GlobalAveragePooling1D(),\n    layers.Dense(64, activation=\"relu\"), layers.Dropout(0.3),\n    layers.Dense(5, activation=\"softmax\"),\n])\nmodel.compile(optimizer=\"adam\", loss=\"sparse_categorical_crossentropy\", metrics=[\"accuracy\"])\nmodel.fit(Xtr, ytr, validation_split=0.1, epochs=8, class_weight=cw)  # cw=클래스 가중치\n\n# 평가: 불균형이라 accuracy가 아니라 macro-F1로 본다\nfrom sklearn.metrics import f1_score\nmacro_f1 = f1_score(yte, model.predict(Xte).argmax(1), average=\"macro\")\n```",
+    "Instructions": "> 코드의 각 지시어가 뭘 시키는지(1D 버전).\n\n| 지시어 | 무엇을 시키는가 | 왜 |\n|---|---|---|\n| `wfdb.rdsamp/rdann` | 신호와 R-peak 주석을 읽어라 | 원신호 → 비트 조각의 원천 |\n| `Conv1D(f, k)` | 길이 k 커널 f개로 시간축 국소 파형을 훑어라 | QRS 모양 같은 국소 특징 |\n| `MaxPool1D(2)` | 시간축 절반으로 요약 | 시야↑·계산량↓ |\n| `GlobalAveragePooling1D` | 시간축 전체를 하나로 평균 | 가변 위치에 강건한 요약 |\n| `Dropout(0.3)` | 학습 때 뉴런 30%를 끔 | 과적합 억제 |\n| `softmax(5)` | 5클래스 확률을 내라 | 비트 유형 분류 |\n| `class_weight` | 드문 클래스에 가중치를 더 줘라 | N 편중(불균형) 보정 — accuracy 함정 회피 |\n| `f1_score(macro)` | 클래스별 F1의 단순평균으로 채점 | 불균형에서 소수 클래스도 공평히 평가 |",
+    "Gate": "- **기준**: `macro_f1 ≥ 0.80` (AAMI 5클래스, 환자 단위 분리)\n- **산출물**: 혼동행렬 + macro-F1, 체크포인트를 Drive에 저장\n- **판정/진급**:\n  ```bash\n  # 노트북이 남긴 결과로 판정(통과 시 자동으로 2주차로)\n  python pipelines/check_week.py --results week01_results.json\n  # 또는 값만 직접:\n  python pipelines/check_week.py --value 0.83\n  ```\n  통과가 애매하지만 개념을 충분히 이해했다면 `/ai-mentor` 질적 리뷰 후 `--pass`로 승인 가능.",
+    "Exercises": "1. **완주**: Colab에서 끝까지 돌려 macro-F1과 혼동행렬을 얻는다.\n2. **관찰**: 어느 클래스가 약한가(보통 S·F)? 왜? 한 문단으로 `## My notes`에 적는다.\n3. **개선**: (a) 시프트·노이즈 증강 (b) Residual 블록 (c) 에폭/학습률 조정 중 하나로 macro-F1을\n   올려본다.\n4. **진급**: 기준을 넘으면 `check_week.py`로 2주차(PTB-XL)로 넘어간다.",
+    "Resources": "- 데이터: https://physionet.org/content/mitdb/  · WFDB 파이썬: https://github.com/MIT-LCP/wfdb-python\n- AAMI EC57 표준(비트 5군 매핑)  · MedKOS 기존 ECG 에셋: `assets/ecg/mitdb-100.json`\n- 신호 딥러닝 개론: PhysioNet Challenges"
    }
   }
  ]

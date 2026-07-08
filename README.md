@@ -224,14 +224,22 @@ Code walkthrough / Instructions(지시어→무엇을 시키는가 표) / Exerci
 법은 `content/ailab/ailab-2026-0003.md`.
 
 **3) 오픈 데이터 + 매주 실습** — EKG(PTB-XL·MIT-BIH), 3D 뇌 MRI(BraTS·MSD·IXI), 흉부
-X선·CT·병리·피부·안저·EHR까지 접근조건(🟢open/🟡가입/🔴심사)과 함께 정리. **이번 주 주제는
-코드가** 정한다(ISO 주차 기준, LLM 아님):
+X선·CT·병리·피부·안저·EHR까지 접근조건(🟢open/🟡가입/🔴심사)과 함께 정리. 커리큘럼은
+**1주차(신호)부터 12주차(3D/표형)까지 순서대로** 진행한다(달력이 아니라 내 진도 기준,
+`state/ailab_progress.json`에 저장):
 
 ```bash
-python pipelines/datasets.py                 # 이번 주 주제 + 오픈 데이터 카탈로그
-python pipelines/datasets.py --modality ecg   # 양식별 필터
+python pipelines/datasets.py                 # 현재 주차 주제 + 통과 기준 + 카탈로그
+python pipelines/datasets.py --list          # 12주 전체 + 진도(현재/완료)
+python pipelines/check_week.py --value 0.83   # 완료 판정 → 통과 시 자동으로 다음 주차
+python pipelines/datasets.py --advance        # (수동) 이번 주 완료 → 다음 주차로
 python pipelines/export_ailab_web.py          # content/ailab + datasets.py → docs/ailab.js
 ```
+
+**완료 게이트(지속 연습)** — 각 주차엔 통과 기준(지표+임계값)이 있고, Colab 노트북이
+`results.json`을 남기면 `check_week.py`가 기준과 비교해 **통과한 주만 다음으로 진급**시킨다
+(진도는 `state/ailab_progress.json`). 바빠서 매주 카드를 못 만들어도, 기준을 넘긴 주차만
+골라 순서대로 나아갈 수 있다. 판정은 결정론(지표)만 신뢰하고, 질적 리뷰는 `/ai-mentor`가 맡는다.
 
 매주 도는 흐름은 `/ai-weekly`, 새 프로젝트 분석 카드는 `/gen-ailab` 스킬이 만든다(신규
 타입이라 self-verify 한계 → claude/ 브랜치 push 후 PR로 검수).

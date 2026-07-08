@@ -23,6 +23,9 @@ ID_FILE = STATE_DIR / "id_counter.json"
 TOPIC_FILE = STATE_DIR / "seen_topics.json"
 # 논문 스크랩 중복 방지: 이미 카드로 저장한 PubMed PMID → 저장일
 PAPER_FILE = STATE_DIR / "seen_papers.json"
+# AI랩 실습 진도: 커리큘럼(datasets.py)을 1→12 '순서대로' 진행하기 위한 현재 주차/완료기록.
+# 달력(ISO 주차)이 아니라 사람의 진도를 따른다 → 임시 컨테이너에서 돌아도 순서가 유지된다.
+AILAB_PROGRESS_FILE = STATE_DIR / "ailab_progress.json"
 
 
 def _read(path: Path) -> dict:
@@ -88,7 +91,56 @@ def mark_paper_seen(pmid: str, when: str | None = None) -> None:
     _write(PAPER_FILE, seen)
 
 
+# ── AI랩 실습 진도(순차 1→12) ─────────────────────────────────────────────
+# datasets.py 의 CURRICULUM 을 달력이 아니라 '완료할 때마다 한 칸' 진행한다.
+
+def ailab_week() -> int:
+    """현재 진행 중인 실습 주차(1-based). 기록이 없으면 1주차부터."""
+    return int(_read(AILAB_PROGRESS_FILE).get("week", 1))
+
+
+def set_ailab_week(n: int) -> None:
+    """현재 주차를 n으로 지정(건너뛰기/되돌리기)."""
+    data = _read(AILAB_PROGRESS_FILE)
+    data["week"] = int(n)
+    _write(AILAB_PROGRESS_FILE, data)
+
+
+def mark_ailab_done(
+    week: int, when: str | None = None,
+    metric: str | None = None, value: float | None = None,
+) -> None:
+    """해당 주차를 완료로 기록(달성 지표·값도 함께 남길 수 있다)."""
+    when = when or date.today().isoformat()
+    data = _read(AILAB_PROGRESS_FILE)
+    entry: dict = {"date": when}
+    if metric:
+        entry["metric"] = metric
+    if value is not None:
+        entry["value"] = value
+    data.setdefault("done", {})[str(week)] = entry
+    _write(AILAB_PROGRESS_FILE, data)
+
+
+def advance_ailab_week(
+    total: int, metric: str | None = None, value: float | None = None,
+) -> int:
+    """현재 주차를 완료 처리하고 다음(최대 total)으로 이동. 새 현재 주차를 반환."""
+    cur = ailab_week()
+    mark_ailab_done(cur, metric=metric, value=value)
+    nxt = min(cur + 1, int(total))
+    set_ailab_week(nxt)
+    return nxt
+
+
+def ailab_progress() -> dict:
+    """{'week': 현재주차, 'done': {주차: 완료일}} 형태로 진도 전체를 반환."""
+    d = _read(AILAB_PROGRESS_FILE)
+    return {"week": int(d.get("week", 1)), "done": d.get("done", {}) or {}}
+
+
 if __name__ == "__main__":
     # 데모: 오늘 KMLE에서 피해야 할 주제와 다음 ID 확인
     print("최근 14일 KMLE 주제:", recent_topics("kmle"))
     print("다음 KMLE ID(미리보기 아님, 실제 증가):", next_id("kmle"))
+    print("AI랩 현재 주차:", ailab_week())
