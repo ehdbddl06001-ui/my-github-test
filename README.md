@@ -200,6 +200,42 @@ python pipelines/scrape_papers.py --fixture pipelines/fixtures/pubmed_sample.xml
 - **스크랩 권한**: `scrape-papers.yml`은 `contents: write`로 main에 직접 커밋한다.
   (GitHub Actions 러너는 외부망이 열려 있어 PubMed 접근에 별도 설정이 필요 없다.)
 
+## 🤖 AI랩 — 의료 AI·코딩 실습 (공개 프로젝트 분석 → 오픈데이터 실습)
+
+의대 공부와 별개로 **의료 AI·코딩을 직접 해보며** 익히는 기둥. 공개 프로젝트(예: Keras
+[뇌종양 분할](https://keras.io/examples/vision/brain_tumor_segmentation/))을 뜯어보고,
+오픈 의료 데이터로 **매주 하나씩** 모델을 돌린다. 기존 설계에 그대로 얹혔다 —
+Markdown(`content/ailab/`)이 원본, 결정론(데이터·주차)은 `pipelines/datasets.py`, 실습은
+`notebooks/`(Colab)에서, 홈페이지 `🤖 AI랩` 탭이 색인이다.
+
+```
+content/ailab/*.md      학습 카드(원본): 프로젝트 분석·구조 도식(Mermaid)·지시어 해설·실습과제
+pipelines/datasets.py   오픈 데이터 레지스트리 + 12주 커리큘럼 + '이번 주 주제' 결정론 선정
+notebooks/*.ipynb       Colab 노트북(Google Drive 마운트 → 데이터·체크포인트 재사용)
+docs/ailab.html         홈페이지 🤖 AI랩 (이번주 주제 + 오픈데이터 카탈로그 + 학습카드)
+```
+
+**1) 공개 프로젝트 분석** — 카드 하나에 `## Overview / Architecture(도식) / Data /
+Code walkthrough / Instructions(지시어→무엇을 시키는가 표) / Exercises / Resources`를 담는다.
+예: `content/ailab/ailab-2026-0002.md`(Keras 3D U-Net 뇌종양 분할).
+
+**2) Colab + Google Drive 실습** — `notebooks/`의 노트북이 GitHub에서 Colab으로 바로 열리고,
+첫 셀이 Drive를 마운트해 데이터·체크포인트를 `MyDrive/MedKOS/`에 재사용한다. 셋업·코드 읽는
+법은 `content/ailab/ailab-2026-0003.md`.
+
+**3) 오픈 데이터 + 매주 실습** — EKG(PTB-XL·MIT-BIH), 3D 뇌 MRI(BraTS·MSD·IXI), 흉부
+X선·CT·병리·피부·안저·EHR까지 접근조건(🟢open/🟡가입/🔴심사)과 함께 정리. **이번 주 주제는
+코드가** 정한다(ISO 주차 기준, LLM 아님):
+
+```bash
+python pipelines/datasets.py                 # 이번 주 주제 + 오픈 데이터 카탈로그
+python pipelines/datasets.py --modality ecg   # 양식별 필터
+python pipelines/export_ailab_web.py          # content/ailab + datasets.py → docs/ailab.js
+```
+
+매주 도는 흐름은 `/ai-weekly`, 새 프로젝트 분석 카드는 `/gen-ailab` 스킬이 만든다(신규
+타입이라 self-verify 한계 → claude/ 브랜치 push 후 PR로 검수).
+
 ## 지금 상태 (1단계 스캐폴드)
 
 이 커밋은 **큰 틀(구조)**을 세운 것이다. 아직 대량 콘텐츠 마이그레이션은 하지 않았다.

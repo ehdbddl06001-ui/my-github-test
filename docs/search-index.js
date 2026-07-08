@@ -5,9 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 176,
+  "total": 179,
   "byType": {
    "kmle": 97,
+   "ailab": 3,
    "usmle": 36,
    "paper": 40,
    "basic": 3
@@ -40,13 +41,16 @@ window.MEDKOS_INDEX = {
    "Biochemistry": 2,
    "Immunology": 2,
    "Pharmacology": 2,
-   "Internal Medicine": 1
+   "Internal Medicine": 1,
+   "ML Engineering": 1,
+   "Medical AI Curriculum": 1,
+   "Medical Imaging AI": 1
   },
   "byConfidence": {
-   "high": 136,
-   "medium": 40
+   "high": 138,
+   "medium": 41
   },
-  "tagCount": 457
+  "tagCount": 472
  },
  "docs": [
   {
@@ -617,6 +621,64 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0066.md",
    "snippet": "55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥",
    "text": "Cardiology Cardiac Tamponade cardiac tamponade Beck triad pulsus paradoxus electrical alternans pericardiocentesis KMLE 2026 / Claude Routine 55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥팽대·심음감소)+기이맥( 10 mmHg)+전기교대 → 심장눌림증(폐쇄성 쇼크). 즉시 심낭천자로 심낭액을 배액해야 하며, 전부하를 줄이는 이뇨·혈관확장·서맥 유발은 금기다."
+  },
+  {
+   "id": "ailab-2026-0003",
+   "type": "ailab",
+   "topic": "ML Engineering",
+   "subtopic": "Colab + Drive Setup & Reading Model Code",
+   "tags": [
+    "colab",
+    "google-drive",
+    "setup",
+    "workflow",
+    "how-to-read-code"
+   ],
+   "source": "MedKOS AI랩 실습 셋업",
+   "confidence": "high",
+   "date": "2026-07-08",
+   "path": "content/ailab/ailab-2026-0003.md",
+   "snippet": "Overview 실습을 무료 GPU(Google Colab) 에서 하고, 결과·데이터는 Google Drive 에 남기고, 코드·노트는 GitHub(이 repo) 에 버전관리하는 3각 구조다. MedKOS 철학 그대로: GitHub=원본/코드, Drive=데이터·산출물 백업, 노트=실습장. mermaid flowchart LR GH[\"GitHub repo\\n(노트북·카드·datasets.py)\"] \"Colab이 바로 열기\" C",
+   "text": "ML Engineering Colab + Drive Setup & Reading Model Code colab google-drive setup workflow how-to-read-code MedKOS AI랩 실습 셋업 Overview 실습을 무료 GPU(Google Colab) 에서 하고, 결과·데이터는 Google Drive 에 남기고, 코드·노트는 GitHub(이 repo) 에 버전관리하는 3각 구조다. MedKOS 철학 그대로: GitHub=원본/코드, Drive=데이터·산출물 백업, 노트=실습장. mermaid flowchart LR GH[\"GitHub repo\\n(노트북·카드·datasets.py)\"] \"Colab이 바로 열기\" CO[\"Google Colab\\n(무료 GPU)\"] DR[\"Google Drive\\n(데이터·체크포인트)\"] < \"drive.mount\" CO CO \"결과 캡처·노트\" GH Data 데이터는 Drive에 둔다: 큰 의료 데이터를 매번 새로 받으면 느리다. 한 번 받아 MyDrive/MedKOS/data/<dataset / 에 풀어두고 매 세션 마운트해 재사용한다. 체크포인트도 Drive에 : 학습 중 .keras / .pt 를 MyDrive/MedKOS/ckpt/ 에 저장하면 Colab 세션이 끊겨도 이어서 할 수 있다. 코드·카드는 Drive가 아니라 GitHub에 : 원본은 항상 repo. 노트북은 GitHub에서 Colab이 바로 연다( colab url 참고). Code walkthrough Colab 첫 셀에서 Drive를 붙이고 repo를 당겨오는 표준 준비 코드: python 1) Google Drive 마운트 → 데이터·체크포인트를 영구 보관 from google.colab import drive drive.mount(\"/content/drive\") import os, pathlib BASE = pathlib.Path(\"/content/drive/MyDrive/MedKOS\") (BASE / \"data\").mkdir(parents=True, exist ok=True) (BASE / \"ckpt\").mkdir(parents=True, exist ok=True) 2) 최신 코드·데이터셋 레지스트리 당겨오기(datasets.py 등) !git clone depth 1 https://github.com/ehdbddl06001 ui/my github test.git /content/medkos \\ (cd /content/medkos && git pull) import sys; sys.path.append(\"/content/medkos\") 3) 이번 주 주제를 '코드'에게 물어본다(LLM 아님, 결정론적) from pipelines.datasets import weekly topic, get dataset wt = weekly topic(); print(wt[\"week\"], wt[\"goal\"], \"→\", wt[\"dataset name\"]) 4) GPU 확인 import tensorflow as tf; print(\"GPU:\", tf.config.list physical devices(\"GPU\")) 이후엔 BASE/\"data\" 아래 데이터를 읽고, 학습이 끝나면 model.save(BASE/\"ckpt\"/\"week{}.keras\".format(wt[\"week\"])) 로 Drive에 남긴다. Instructions 모델 코드(지시어)를 처음 볼 때 읽는 순서 — 낯선 프로젝트도 이 5개 질문으로 해부된다. 1. 입력·출력이 뭐냐 — Input(...) 과 마지막 층( Dense / Conv... 의 활성함수)만 봐도 문제 유형이 나온다. sigmoid =이진/다중라벨, softmax =단일 다중클래스, 활성 없음=회귀. 2. 손실이 뭐냐 — compile(loss=...) . 문제의 '채점 기준'이자 모델이 최적화하는 목표. (분할=Dice, 불균형 분류=weighted BCE, 등급=회귀/QWK …) 3. 몸통이 뭐냐 — 반복되는 블록의 이름(Conv/Residual/Attention)이 곧 아키텍처 이름. 4. 데이터가 어떻게 들어오냐 — Dataset / generator 의 전처리·증강이 성능의 절반. 5. 어떻게 도느냐 — fit /학습 루프의 epoch·batch·lr·콜백(early stop, checkpoint). 각 항목의 '지시어→무엇을 시키는가' 대응표는 프로젝트 카드( ailab 2026 0002 )의 Instructions 표를 템플릿으로 재사용한다. 새 프로젝트를 볼 때마다 그 표를 채우면 자연스럽게 구조가 정리된다. Exercises 1. 위 준비 셀을 Colab에서 실행해 Drive 마운트 + weekly topic() 출력까지 확인. 2. ailab 2026 0002 의 지시어 표를 가리고 , 코드만 보고 스스로 채운 뒤 대조. 3. 아무 Kaggle/Keras 의료 예제 하나를 골라 위 '5개 질문'으로 1문단 요약을 써 본다. Resources 템플릿 노트북: notebooks/ailab template.ipynb 뇌종양 분할 실습 노트북: notebooks/ailab brain tumor segmentation.ipynb Colab 문서: https://colab.research.google.com/ Keras 3 가이드: https://keras.io/guides/ My notes <! 셋업하며 막힌 점(권한·경로·GPU 등)과 해결을 기록."
+  },
+  {
+   "id": "ailab-2026-0002",
+   "type": "ailab",
+   "topic": "Medical Imaging AI",
+   "subtopic": "3D Brain Tumor Segmentation",
+   "tags": [
+    "segmentation",
+    "U-Net",
+    "MRI",
+    "BraTS",
+    "Dice",
+    "Keras"
+   ],
+   "source": "Keras 공식 예제 분석 / MedKOS AI랩",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/ailab/ailab-2026-0002.md",
+   "snippet": "Overview 공개 프로젝트 하나를 끝까지 뜯어보며 의료영상 딥러닝의 전형(典型)을 익히는 카드다. 대상은 Keras 공식 예제 Brain Tumor Segmentation (3D U Net). 하는 일은 한 문장으로: 4가지 MRI 시퀀스(3D 볼륨)를 입력받아, 복셀(voxel)마다 '종양/정상'을 칠하는 3D 분할. 문제 유형 : 분류(classification)가 아니라 분할(segmentation) — 출력이 라벨 ",
+   "text": "Medical Imaging AI 3D Brain Tumor Segmentation segmentation U-Net MRI BraTS Dice Keras Keras 공식 예제 분석 / MedKOS AI랩 Overview 공개 프로젝트 하나를 끝까지 뜯어보며 의료영상 딥러닝의 전형(典型)을 익히는 카드다. 대상은 Keras 공식 예제 Brain Tumor Segmentation (3D U Net). 하는 일은 한 문장으로: 4가지 MRI 시퀀스(3D 볼륨)를 입력받아, 복셀(voxel)마다 '종양/정상'을 칠하는 3D 분할. 문제 유형 : 분류(classification)가 아니라 분할(segmentation) — 출력이 라벨 1개가 아니라 입력과 같은 크기의 '마스크(mask)'다. 각 복셀이 어느 조직인지 픽셀 단위로 예측한다. 왜 3D인가 : 뇌 MRI는 슬라이스를 쌓은 볼륨이다. 종양은 위·아래 슬라이스로 이어지므로 Conv3D 로 깊이 방향 맥락 까지 본다(2D보다 무겁지만 경계가 정확). 왜 U Net인가 : 분할의 사실상 표준 구조. 아래 Architecture 참조. Architecture U Net = 인코더(수축)로 '무엇'을 파악 → 디코더(확장)로 '어디'를 복원 , 그 사이를 스킵 연결 로 이어 세밀한 경계를 살린다. 3D는 모든 conv/pool이 3차원이라는 점만 다르다. mermaid flowchart LR subgraph 입력 A[\"MRI 4채널 볼륨\\n(H×W×D×4)\\nT1·T1ce·T2·FLAIR\"] end A E1[\"Conv3D×2 + BN + ReLU\"] E1 \"skip 1\" D1 E1 P1[\"MaxPool3D ↓\"] P1 E2[\"Conv3D×2\"] E2 \"skip 2\" D2 E2 P2[\"MaxPool3D ↓\"] P2 B[\"Bottleneck\\n(가장 압축된 특징)\"] B U2[\"UpSampling3D ↑ + concat\"] D2[\"Decoder L2\"] U1[\"UpSampling3D ↑ + concat\"] U2 D2 U1 D1[\"Decoder L1\"] D1 O[\"Conv3D 1×1×1 + sigmoid\\n→ 분할 마스크 (H×W×D×클래스)\"] 인코더 : Conv3D → BatchNorm → ReLU 를 두 번 쌓고 MaxPool3D 로 절반씩 줄인다. 해상도를 줄이며 채널(특징 수)을 늘려 '무엇이 있는가'를 추상화한다. Bottleneck : 가장 압축된 표현. 여기서 전역 맥락을 쥔다. 디코더 : UpSampling3D (또는 Conv3DTranspose )로 다시 키우며, 같은 해상도의 인코더 특징을 concat(스킵 연결) 해 경계 디테일을 되살린다. 출력 헤드 : Conv3D 1×1×1 + sigmoid (이진) 또는 softmax (다중 클래스)로 복셀별 확률. Data 데이터셋 : BraTS / Medical Segmentation Decathlon Task01( datasets.py 의 msd brain ). 4개 MRI 시퀀스(T1, T1ce, T2, FLAIR)가 채널 로 들어가고, 정답은 종양 하위영역 마스크. 형식 : NIfTI(.nii.gz) — 의료 볼륨 표준. nibabel 로 읽어 NumPy 배열로 만든다. 전처리 정석 (공부 포인트): 1. 강도 정규화 : MRI는 절대값 의미가 없어 케이스별 z score/min max 정규화. 2. 리샘플/크롭 : 케이스마다 크기가 달라 공통 spacing·크기로 맞추고 배경을 크롭. 3. 패치 학습 : 볼륨 전체는 GPU 메모리를 초과 → 128³ 같은 패치 를 잘라 학습. 4. 증강 : 회전·플립·강도 지터로 일반화. (좌우 플립은 해부학적으로 주의) Code walkthrough 아래는 Keras 3 분할 파이프라인의 대표 골격 이다(실제 예제 코드와 대조하며 읽어라). python import keras from keras import layers def conv block(x, filters): 인코더/디코더 공통 블록 x = layers.Conv3D(filters, 3, padding=\"same\")(x) x = layers.BatchNormalization()(x) x = layers.Activation(\"relu\")(x) x = layers.Conv3D(filters, 3, padding=\"same\")(x) x = layers.BatchNormalization()(x) return layers.Activation(\"relu\")(x) def build unet3d(shape=(128,128,128,4), n classes=3): inp = keras.Input(shape) c1 = conv block(inp, 16); p1 = layers.MaxPooling3D()(c1) c2 = conv block(p1, 32); p2 = layers.MaxPooling3D()(c2) b = conv block(p2, 64) bottleneck u2 = layers.UpSampling3D()(b) u2 = layers.concatenate([u2, c2]) skip connection d2 = conv block(u2, 32) u1 = layers.UpSampling3D()(d2) u1 = layers.concatenate([u1, c1]) d1 = conv block(u1, 16) out = layers.Conv3D(n classes, 1, activation=\"sigmoid\")(d1) return keras.Model(inp, out) def dice loss(y true, y pred, eps=1e 6): 분할의 핵심 손실 inter = keras.ops.sum(y true y pred, axis=[1,2,3]) union = keras.ops.sum(y true + y pred, axis=[1,2,3]) return 1 keras.ops.mean((2 inter + eps) / (union + eps)) model = build unet3d() model.compile(optimizer=\"adam\", loss=dice loss, metrics=[\"accuracy\"]) model.fit(train ds, validation data=val ds, epochs=30) Instructions 핵심: 코드의 각 '지시어'가 모델에게 뭘 시키는지 를 말로 옮기면 구조가 보인다. (사용자가 요청한 '해당 지시어가 어떤 지시문인지' 파트) 지시어(코드) 무엇을 시키는가 왜 필요한가 keras.Input(shape) \"입력은 이 모양의 텐서다\"라고 그래프의 입구를 선언 모델이 받을 볼륨 크기·채널 수를 고정 layers.Conv3D(f, 3) 3×3×3 커널 f 개로 지역 패턴 을 훑어라 가장자리·질감 같은 국소 특징 추출 BatchNormalization() 배치 통계로 값을 정규화 해 학습을 안정화 깊은 3D망의 발산 방지·수렴 가속 Activation(\"relu\") 음수는 0으로 눌러 비선형성 부여 없으면 층을 쌓아도 선형에 불과 MaxPooling3D() 2배 다운샘플: \"이 영역의 최댓값만 남겨라\" 시야(receptive field)를 넓히고 계산량↓ UpSampling3D() 다시 2배 키워라 디코더에서 원해상도 마스크로 복원 concatenate([u, c]) 디코더 특징에 같은 층 인코더 특징을 붙여라 스킵 연결 — 잃어버린 경계 디테일 회복 Conv3D(n,1,\"sigmoid\") 복셀마다 클래스 확률(0~1)을 내라 최종 분할 마스크 생성 dice loss \"예측∩정답을 최대화하라\"(겹침 비율) 종양이 작아 픽셀 정확도는 속기 쉬움 → Dice로 겹침을 직접 최적화 model.compile(...) 손실·옵티마이저·지표를 묶어라 학습 규칙 확정 model.fit(...) 데이터를 반복 투입해 가중치를 갱신하라 실제 학습 루프 한눈 요약 : Conv3D 가 보고 → Pool 이 요약하고 → Bottleneck 이 판단하고 → UpSampling+concat 이 복원하고 → sigmoid 가 칠하고 → dice loss 가 채점해 → fit 이 고친다. Exercises 1. 읽기 : 원본 예제( project url )를 열어 위 골격과 1:1 대조하고, 다른 점 3가지를 이 카드 아래에 메모한다. 2. 돌리기 : notebook (Colab)에서 MSD Task01 소량으로 5 epoch 학습 → Dice 곡선을 캡처. 3. 바꿔보기 : 손실을 dice loss → BCE+Dice 혼합으로 바꾸고 검증 Dice 변화를 비교. 4. 줄이기 : 패치 크기를 128³→64³로 줄여 메모리·속도·성능의 트레이드오프를 관찰. 5. 연결 : 결과 마스크 1장을 캡처해 My notes 에 붙이고, KMLE 신경과 종양 문항과 링크. Resources 원본 예제: https://keras.io/examples/vision/brain tumor segmentation/ U Net 원논문: Ronneberger 2015 (MICCAI) 3D U Net: Çiçek 2016 (MICCAI) MONAI(의료영상 특화 파이프라인): https://monai.io/ 데이터: pipelines/datasets.py 의 msd brain · brats 항목 My notes <! 여기에 실습하며 배운 것, 막힌 것, 아이디어를 적는다. 홈페이지 노트와 왕복 가능."
+  },
+  {
+   "id": "ailab-2026-0001",
+   "type": "ailab",
+   "topic": "Medical AI Curriculum",
+   "subtopic": "12-Week Hands-on Roadmap",
+   "tags": [
+    "roadmap",
+    "curriculum",
+    "weekly",
+    "colab",
+    "open-data"
+   ],
+   "source": "MedKOS AI랩 커리큘럼",
+   "confidence": "high",
+   "date": "2026-07-08",
+   "path": "content/ailab/ailab-2026-0001.md",
+   "snippet": "Overview 의료 AI·코딩을 매주 하나씩 직접 돌려보며 익히는 12주 로드맵이다. 각 주차는 pipelines/datasets.py 의 CURRICULUM 과 1:1로 묶여 있고, 이번 주 주제는 코드가 정한다(ISO 주차 기준, LLM 아님): bash python pipelines/datasets.py 이번 주 주제 + 오픈 데이터 카탈로그 원칙은 MedKOS와 같다 — 신호 → 2D 영상 → 3D → 병리/멀티모달 ",
+   "text": "Medical AI Curriculum 12-Week Hands-on Roadmap roadmap curriculum weekly colab open-data MedKOS AI랩 커리큘럼 Overview 의료 AI·코딩을 매주 하나씩 직접 돌려보며 익히는 12주 로드맵이다. 각 주차는 pipelines/datasets.py 의 CURRICULUM 과 1:1로 묶여 있고, 이번 주 주제는 코드가 정한다(ISO 주차 기준, LLM 아님): bash python pipelines/datasets.py 이번 주 주제 + 오픈 데이터 카탈로그 원칙은 MedKOS와 같다 — 신호 → 2D 영상 → 3D → 병리/멀티모달 순으로 난도를 올린다. 가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다. Architecture 학습 경로(왼쪽이 쉽고 오른쪽이 어렵다): mermaid flowchart LR ECG[\"① 신호(ECG)\\n1D CNN\"] XR[\"② 흉부 X선\\n전이학습·Grad CAM\"] XR SKIN[\"③ 피부·안저\\n불균형·순서형\"] SKIN PATH[\"④ 병리 패치\\nPCam\"] PATH SEG2D[\"⑤ 2D 분할\\nU Net·Dice\"] SEG2D SEG3D[\"⑥ 3D 분할\\n3D U Net·MONAI\"] SEG3D SSL[\"⑦ 자기지도·표형\\nSSL·MIMIC\"] Data 아래 12주는 커리큘럼 순서이며, 실제 이번 주 주제는 datasets.py 가 순환 선택한다. 🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보). 주 목표 모델 데이터셋 접근 1 심전도 부정맥 분류 1D CNN MIT BIH 🟢 2 12유도 다중라벨 진단 1D ResNet PTB XL 🟢 3 흉부 X선 폐렴(전이학습) ResNet50 NIH ChestX ray14 🟢 4 흉부 14종 + Grad CAM DenseNet121 CheXpert 🟡 5 피부병변 7종(불균형) EfficientNet HAM10000 🟡 6 당뇨망막병증 등급 EfficientNet+회귀 APTOS 2019 🟡 7 병리 패치 전이 CNN PatchCamelyon 🟢 8 폐 CT 결절 분할 2D U Net MSD Lung 🟢 9 3D 뇌종양 분할(입문) 3D U Net MSD Brain 🟢 10 3D 뇌종양 분할(심화) SwinUNETR BraTS 🟡 11 정상 뇌 자기지도 Autoencoder/SSL IXI 🟢 12 ICU 임상 예측(표형) GBM/시계열 MIMIC IV 🔴 Instructions 매주 도는 절차는 /ai weekly 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에): 1. python pipelines/datasets.py 로 이번 주 주제·데이터 확인 2. /gen ailab 로 그 주제의 실습 카드(분석·도식·지시어 해설)를 content/ailab/ 에 생성 3. Colab 노트북( notebooks/ )에서 직접 돌리고, 결과·막힌 점을 카드 My notes 에 기록 4. indexer.py check → export ailab web.py → 커밋 (홈페이지 🤖 AI랩에 반영) Exercises 이번 주 주제를 datasets.py 로 확인하고, 해당 데이터셋 링크를 실제로 열어본다. 첫 주(신호)는 반드시 끝까지 완주 해 '데이터→모델→평가'의 감을 잡는다. 매주 카드에 재현 가능한 한 줄 결과 (Dice/AUROC 등)를 남긴다. Resources 프로젝트 분석 예시: ailab 2026 0002 (Keras 3D 뇌종양 분할) Colab·Drive 셋업 & 지시어 읽는 법: ailab 2026 0003 오픈 데이터 레지스트리: pipelines/datasets.py My notes <! 주차별 진행·회고를 여기에."
   },
   {
    "id": "usmle-2026-0036",

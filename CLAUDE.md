@@ -21,6 +21,8 @@
 - KMLE → `content/kmle/{연도}/`   USMLE → `content/usmle/`
 - 기초의학 → `content/basic/`      논문 → `content/papers/{연도}/`
 - 질환 카드 → `content/diseases/`  약물 카드 → `content/drugs/`
+- AI·코딩 학습(ailab) → `content/ailab/`  (실습 노트북은 `notebooks/`, Colab+Drive 연동)
+  · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
 ## 커밋 전 필수 순서
 1. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
@@ -38,4 +40,6 @@
 - `/gen-kmle` `/gen-paper` `/gen-card` : 타입별 생성
 - `/scrape-papers` : PubMed 최신 논문 스크랩(recency, 매일)
 - `/landmark-papers` : 파트별 고인용 '꼭 봐야 하는' 논문 정리(impact, 주간). iCite 인용랭킹.
+- `/gen-ailab` : 의료 AI·코딩 학습 카드(공개 프로젝트 분석·도식·지시어 해설) 생성
+- `/ai-weekly` : 이번 주 실습 주제(`datasets.py`)를 받아 카드·Colab 노트북 연결(주간)
 - `/index-db` : 색인 재빌드/검증
