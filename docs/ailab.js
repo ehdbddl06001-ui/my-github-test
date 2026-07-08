@@ -240,6 +240,39 @@ window.AILAB = {
  ],
  "cards": [
   {
+   "id": "ailab-2026-0004",
+   "topic": "AI Mentorship",
+   "subtopic": "논의 노트 · 2026 W28",
+   "kind": "mentor",
+   "framework": "",
+   "arch": "",
+   "modality": "",
+   "level": "intermediate",
+   "projectUrl": "",
+   "dataset": "",
+   "datasetUrl": "",
+   "colabUrl": "",
+   "notebook": "",
+   "week": 28,
+   "date": "2026-07-08",
+   "confidence": "medium",
+   "tags": [
+    "mentor",
+    "discussion",
+    "roadmap",
+    "code-review",
+    "ideas"
+   ],
+   "sections": {
+    "Overview": "AI랩 첫 회차 논의 노트. 방금 세운 구조(로드맵·Keras 뇌종양 분할 분석·Colab/Drive 셋업·\n오픈데이터 레지스트리)를 검토하고, **심화 학습 / 코드 보완 / 새 기능**을 제안한다.\n이 노트는 클로드와의 **비동기 토론 스레드**다 — 아래 `## 내 답변`에 답을 적으면 다음\n`/ai-mentor` 회차가 그 맥락을 이어받는다.\n\n지금 상태 한눈에: ailab 카드 3장 + 논의 1장, 오픈데이터 16종, 노트북 2개, 스킬\n`/gen-ailab`·`/ai-weekly`·`/ai-mentor`. 이번 주(ISO 28) 코드 선정 주제 = 피부병변 분류(HAM10000).",
+    "심화 학습": "지금 뇌종양 분할 카드(`ailab-2026-0002`)에서 **한 걸음 더** 갈 지점들. 우선순위 순.\n\n1. **[높음] 분할 손실을 제대로 이해하기** — Dice만 알고 넘어가지 말고 IoU·Tversky·\n   Focal-Tversky를 비교하라. 종양이 작을수록(클래스 불균형) Tversky의 α/β로 위양성·위음성을\n   저울질하는 감각이 실전에서 성능을 가른다. → 실험: 손실만 바꿔 검증 Dice 곡선 3개 겹쳐 보기.\n2. **[높음] 환자 단위 분리(data leakage)** — 같은 환자의 슬라이스가 train/val에 섞이면\n   점수가 부풀려진다. 3D 볼륨은 케이스 단위로 split해야 한다. 왜 중요한지 한 문단으로 정리해\n   카드에 남겨라(임상 연구로 그대로 이어지는 개념).\n3. **[중간] 패치 학습 → 전체 볼륨 추론 '스티칭'** — 128³로 학습하고 추론 때 겹쳐가며 이어\n   붙일 때 경계 아티팩트를 줄이는 법(Gaussian weighting). MONAI의 `sliding_window_inference`가\n   이걸 한다 — 코드로 한 번 읽어보면 개념이 박힌다.\n4. **[중간] 평가지표 Dice + Hausdorff** — 겹침(Dice)과 경계 오차(HD95)를 같이 봐야 한다.\n   왜 둘 다 필요한지(작은 오분류 vs 큰 경계 이탈).",
+    "코드 보완": "실제 파일을 열어 확인한 개선점. **작고 확실한 건 표시**해 두었다(원하면 바로 반영).\n\n1. **[확실·작음] `pipelines/datasets.py`에 정합성 테스트 없음** — `CURRICULUM`의 각\n   `dataset` 키가 `DATASETS`에 실제로 존재하는지 아무도 검증하지 않는다. 오타 하나면 조용히\n   깨진다. → 작은 `pipelines/test_datasets.py`(키 유일성 + 커리큘럼↔데이터셋 존재 + `weekly_topic`\n   결정성)를 추가하면 안전하다. **이번 회차에 함께 넣자고 제안**(아래 새 기능 1번과 연결).\n2. **[논의 필요] `weekly_topic()`이 달력 주차(`week % 12`)로 선정** — 로드맵은 '신호→3D' 순인데,\n   연중 아무 때나 시작하면 커리큘럼 중간(예: 지금은 5번 피부)으로 튄다. 입문자는 1번(신호)부터\n   순서대로 가는 게 맞다. → **선택지**: (a) 지금처럼 달력 순환 유지, (b) `state/`에 '내 진도(주차\n   인덱스)'를 저장해 순서대로 진행, (c) 둘 다 지원하고 사용자가 고른다. 어느 쪽을 원하는지 답을\n   주면 그 방식으로 `datasets.py`를 고치겠다.\n3. **[확실·작음] Colab 링크가 `main` 브랜치 고정** — 노트북/카드의 `colab_url`이 `.../blob/main/...`\n   이라, 아직 머지 안 된 작업은 못 연다. 지금은 머지됐으니 OK지만, 규칙으로 남겨두자(주간 카드는\n   머지 후에 링크 유효).\n4. **[확실·작음] `docs/ailab-app.js`의 CDN 의존** — marked/mermaid를 CDN에서 불러오고 실패 시\n   텍스트로 폴백하도록 이미 처리했지만, 버전 고정(SRI 해시)까지 하면 재현성이 올라간다. 우선순위 낮음.",
+    "새 기능 아이디어": "MedKOS/AI랩에 더하면 좋을 것. (난이도 / 가치)\n\n1. **실습 진도 추적 + 홈페이지 진행바** (쉬움/높음) — `state/ailab_progress.json`에 완료 주차를\n   기록하고, 홈페이지 🤖 AI랩에 \"12주 중 n주 완료\" 진행바. 코드 보완 2번(순서 진행)과 자연스레 묶임.\n2. **주차별 스타터 노트북 자동 생성** (중간/높음) — `datasets.py`의 이번 주 `arch`·`dataset`을\n   받아 `notebooks/week_NN.ipynb`를 파라미터로 찍어내는 `gen_notebook.py`. 매주 빈손으로 시작하지\n   않게.\n3. **지식 그래프 연결(ailab ↔ kmle/paper)** (중간/중간) — 뇌종양 분할 카드를 신경종양 KMLE 문항·\n   관련 논문과 `related`로 잇는다. 이미 `relations` 테이블·`related` 필드가 씨앗으로 있다 →\n   \"이 모델이 푸는 임상 문제\"로 공부가 연결된다.\n4. **결과 로그 왕복(notebook → 카드)** (중간/중간) — 노트북이 `results.json`(Dice/AUROC)을 Drive에\n   쓰고, 파이프라인이 그 값을 카드 상단 배지로 끌어온다(논문 `apply_notes.py` 왕복과 같은 패턴).\n5. **모델 구조 도감(model zoo) 카드 타입** (쉬움/중간) — U-Net·ResNet·ViT·Transformer를 Mermaid\n   도식 + '언제 쓰나'로 한 장씩. `/gen-ailab kind:concept`로 찍어내면 됨.",
+    "다음 주 추천": "- 이번 주 코드 선정은 **HAM10000 피부병변 분류**(불균형 처리·클래스 가중치·증강). 입문 난이도로\n  좋다. `notebooks/ailab_template.ipynb`로 시작 → 결과 한 줄을 이 노트 아래 `## 내 답변`에 남겨라.\n- 만약 뇌종양(3D)로 먼저 가고 싶다면 코드 보완 2번의 '순서 진행' 방식을 켜자(그럼 9주차 3D U-Net\n  입문부터 순서대로). **원하는 쪽을 답해 달라.**",
+    "Resources": "- 검토 대상: `content/ailab/ailab-2026-0001~0003.md`, `pipelines/datasets.py`, `notebooks/`\n- Tversky loss: Salehi 2017 · Focal-Tversky: Abraham 2019\n- MONAI sliding-window inference: https://docs.monai.io/\n- 이 노트를 만든 스킬: `/ai-mentor` (`.claude/skills/ai-mentor/SKILL.md`)"
+   }
+  },
+  {
    "id": "ailab-2026-0001",
    "topic": "Medical AI Curriculum",
    "subtopic": "12-Week Hands-on Roadmap",
@@ -269,8 +302,7 @@ window.AILAB = {
     "Data": "아래 12주는 커리큘럼 순서이며, 실제 이번 주 주제는 `datasets.py`가 순환 선택한다.\n🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보).\n\n| 주 | 목표 | 모델 | 데이터셋 | 접근 |\n|----|------|------|----------|------|\n| 1 | 심전도 부정맥 분류 | 1D-CNN | MIT-BIH | 🟢 |\n| 2 | 12유도 다중라벨 진단 | 1D-ResNet | PTB-XL | 🟢 |\n| 3 | 흉부 X선 폐렴(전이학습) | ResNet50 | NIH ChestX-ray14 | 🟢 |\n| 4 | 흉부 14종 + Grad-CAM | DenseNet121 | CheXpert | 🟡 |\n| 5 | 피부병변 7종(불균형) | EfficientNet | HAM10000 | 🟡 |\n| 6 | 당뇨망막병증 등급 | EfficientNet+회귀 | APTOS 2019 | 🟡 |\n| 7 | 병리 패치 전이 | CNN | PatchCamelyon | 🟢 |\n| 8 | 폐 CT 결절 분할 | 2D U-Net | MSD Lung | 🟢 |\n| 9 | 3D 뇌종양 분할(입문) | 3D U-Net | MSD Brain | 🟢 |\n| 10 | 3D 뇌종양 분할(심화) | SwinUNETR | BraTS | 🟡 |\n| 11 | 정상 뇌 자기지도 | Autoencoder/SSL | IXI | 🟢 |\n| 12 | ICU 임상 예측(표형) | GBM/시계열 | MIMIC-IV | 🔴 |",
     "Instructions": "매주 도는 절차는 `/ai-weekly` 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에):\n\n1. `python pipelines/datasets.py` 로 이번 주 주제·데이터 확인\n2. `/gen-ailab` 로 그 주제의 실습 카드(분석·도식·지시어 해설)를 `content/ailab/`에 생성\n3. Colab 노트북(`notebooks/`)에서 직접 돌리고, 결과·막힌 점을 카드 `## My notes`에 기록\n4. `indexer.py --check` → `export_ailab_web.py` → 커밋 (홈페이지 🤖 AI랩에 반영)",
     "Exercises": "- 이번 주 주제를 `datasets.py`로 확인하고, 해당 데이터셋 링크를 실제로 열어본다.\n- 첫 주(신호)는 반드시 **끝까지 완주**해 '데이터→모델→평가'의 감을 잡는다.\n- 매주 카드에 **재현 가능한 한 줄 결과**(Dice/AUROC 등)를 남긴다.",
-    "Resources": "- 프로젝트 분석 예시: `ailab-2026-0002` (Keras 3D 뇌종양 분할)\n- Colab·Drive 셋업 & 지시어 읽는 법: `ailab-2026-0003`\n- 오픈 데이터 레지스트리: `pipelines/datasets.py`",
-    "My notes": "4. `indexer.py --check` → `export_ailab_web.py` → 커밋 (홈페이지 🤖 AI랩에 반영)"
+    "Resources": "- 프로젝트 분석 예시: `ailab-2026-0002` (Keras 3D 뇌종양 분할)\n- Colab·Drive 셋업 & 지시어 읽는 법: `ailab-2026-0003`\n- 오픈 데이터 레지스트리: `pipelines/datasets.py`"
    }
   },
   {

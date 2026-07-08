@@ -236,6 +236,12 @@ python pipelines/export_ailab_web.py          # content/ailab + datasets.py → 
 매주 도는 흐름은 `/ai-weekly`, 새 프로젝트 분석 카드는 `/gen-ailab` 스킬이 만든다(신규
 타입이라 self-verify 한계 → claude/ 브랜치 push 후 PR로 검수).
 
+**4) 클로드와 토론(멘토)** — `/ai-mentor`는 최근 학습(`content/ailab/`·`notebooks/`)을 검토해
+**심화 학습·코드 보완·새 기능 아이디어**를 제안하고, 채팅으로 흘리지 않고 **repo에 쌓이는
+논의 노트**(`content/ailab/mentor/mentor-YYYY-Www.md`)로 남긴다. 노트의 `## 내 답변`에 답을
+적으면 다음 회차가 그 맥락을 이어받는 **비동기 토론 스레드**가 된다(홈페이지 🤖 AI랩 맨 위 표시,
+Drive 백업). 결정론 검증은 `python pipelines/test_datasets.py`로 커밋 전 돌린다.
+
 ## 지금 상태 (1단계 스캐폴드)
 
 이 커밋은 **큰 틀(구조)**을 세운 것이다. 아직 대량 콘텐츠 마이그레이션은 하지 않았다.
