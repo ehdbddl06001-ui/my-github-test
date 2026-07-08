@@ -54,17 +54,22 @@ class Doc:
 
 
 def split_frontmatter(text: str) -> tuple[dict[str, Any], str]:
-    """'---'로 감싼 YAML 블록과 나머지 본문을 분리한다."""
-    if not text.startswith("---"):
+    """'---' 펜스로 감싼 YAML 블록과 본문을 분리한다.
+
+    구분자는 **한 줄이 정확히 '---'인 경우에만** 인정한다(앞뒤 공백 허용). 이렇게 해야
+    값 안에 들어간 '---'(예: appendix의 마크다운 표 '|---|')에 오작동하지 않는다.
+    """
+    lines = text.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
         return {}, text
-    parts = text.split("---", 2)
-    if len(parts) < 3:
-        return {}, text
-    meta = yaml.safe_load(parts[1]) or {}
-    body = parts[2].lstrip("\n")
-    if not isinstance(meta, dict):
-        return {}, text
-    return meta, body
+    for i in range(1, len(lines)):
+        if lines[i].strip() == "---":
+            meta = yaml.safe_load("".join(lines[1:i])) or {}
+            body = "".join(lines[i + 1:]).lstrip("\n")
+            if not isinstance(meta, dict):
+                return {}, text
+            return meta, body
+    return {}, text
 
 
 def validate(meta: dict[str, Any]) -> list[str]:

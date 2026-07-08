@@ -72,17 +72,17 @@ python pipelines/export_search_web.py          # content/ → docs/search-index.
 │   ├── scrape-papers.yml     # 매일 PubMed 스크랩 → 카드 커밋(→ Drive·Pages 자동 연쇄)
 │   └── pages.yml             # docs/ 웹 퀴즈·논문·통합검색을 GitHub Pages로 배포
 │
-├── kmle/                     # [기존] JSON 기반 KMLE 퀴즈 세트 (현재 Learning 계층)
-│   ├── quiz/                 # quiz.py 실행기 + questions/*.json (단일 소스)
-│   ├── 문항/  오답노트/       # JSON에서 생성된 읽기용 .md + 오답 기록
 └── docs/                     # GitHub Pages (퀴즈 + 논문 + 통합검색)
     ├── index.html            #   🧠 퀴즈 (KMLE + USMLE, 클릭으로 풀기)
     ├── papers.html           #   📄 논문 피드
     ├── search.html           #   🔍 통합검색 · 대시보드
-    ├── questions.js          #   KMLE 번들 (quiz.py --export)
-    ├── questions_usmle.js    #   USMLE 번들 (export_usmle_web.py)
+    ├── questions_kmle_content.js  # KMLE 번들 (export_kmle_web.py ← content/kmle)
+    ├── questions_usmle.js    #   USMLE 번들 (export_usmle_web.py ← content/usmle)
     └── search-index.js       #   통합검색 색인 (export_search_web.py)
 ```
+
+> 옛 `kmle/quiz`(quiz.py) 트랙과 `docs/questions.js`는 `content/kmle/*.md`(SoT)로 **이관 후
+> 폐기**했다. 이제 KMLE·USMLE 모두 `content/**/*.md` → export 번들 → 웹 퀴즈 단일 경로다.
 
 ## USMLE 웹 퀴즈 (Step 1 / Step 2)
 
@@ -98,18 +98,11 @@ python pipelines/export_usmle_web.py   # content/usmle/*.md → docs/questions_u
   - Step 1: Pharmacology · Immunology · Biochemistry · Microbiology · Pathology · Physiology
   - Step 2: Internal Medicine · Surgery · Neurology · Pediatrics · Obstetrics & Gynecology · Psychiatry
 
-### CLI로도 풀기 (`quiz.py`)
+### 레거시 CLI(`quiz.py`)는 폐기됨
 
-`quiz.py`는 KMLE·USMLE를 모두 지원한다(USMLE는 A~E 입력, Step 필터).
-
-```bash
-cd kmle/quiz
-python3 quiz.py                          # KMLE (①~⑤)
-python3 quiz.py --exam usmle             # USMLE 전체 (A~E)
-python3 quiz.py --exam usmle --step 1     # USMLE Step 1(기초의학)만
-python3 quiz.py --exam usmle --step 2 --all# USMLE Step 2(임상) 전 과목 연속
-python3 quiz.py --exam usmle --review     # USMLE 오답만 다시 풀기
-```
+옛 `kmle/quiz/quiz.py` + `docs/questions.js` 트랙은 `content/kmle/*.md`(SoT)로 **이관 후
+제거**했다. 문항 추가·수정은 `content/**/*.md` 를 고치고 `pipelines/export_*_web.py` 로
+번들을 재생성하면 된다(웹 퀴즈가 단일 소스로 렌더).
 
 USMLE 오답은 `usmle/오답노트/<과목>.md` 에 자동 기록된다(KMLE는 `kmle/오답노트/`).
 
@@ -240,8 +233,8 @@ python pipelines/indexer.py              # SQLite 재빌드 → db/medkos.sqlite
 4. **루틴 얇게** — `prompts/routine_kmle.md`로 교체.
 5. **타입 확장** — USMLE/논문/카드는 요일 분산으로 루틴 복제.
 
-퀴즈 UI(`kmle/quiz/quiz.py`, `docs/`)는 마이그레이션이 끝난 뒤 `content/`(또는
-SQLite 색인)을 읽도록 연결하면 된다. 그 전까지는 두 체계가 공존한다.
+퀴즈 UI(`docs/`)는 이제 `content/**/*.md`(SoT) → export 번들만 읽는다. 옛
+`kmle/quiz/quiz.py` 트랙은 이관 후 폐기돼 **단일 체계**다.
 
 ## 임시 컨테이너(루틴) 대응이 왜 중요한가
 

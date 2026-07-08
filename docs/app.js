@@ -1,14 +1,11 @@
 /* MedKOS 대화형 웹 퀴즈 — 순수 JS, 의존성 없음
-   - 문항: window.KMLE_QUESTIONS (questions.js), window.USMLE_QUESTIONS (questions_usmle.js)
+   - 문항: window.KMLE_CONTENT_QUESTIONS (questions_kmle_content.js), window.USMLE_QUESTIONS (questions_usmle.js)
    - 오답: localStorage("wrong_<exam>")에 문항 id 기준으로 시험별 분리 저장
    - USMLE는 Step 1(기초의학)/Step 2(임상) 필터를 지원 */
 "use strict";
 
-// KMLE 덱 = content/kmle(MedKOS SoT) + 레거시 quiz.py 번들. 둘 다 있으면 합친다.
-const KMLE = [].concat(
-  Array.isArray(window.KMLE_CONTENT_QUESTIONS) ? window.KMLE_CONTENT_QUESTIONS : [],
-  Array.isArray(window.KMLE_QUESTIONS) ? window.KMLE_QUESTIONS : []
-);
+// KMLE 덱 = content/kmle(MedKOS SoT) 단일 소스. (레거시 quiz.py 트랙은 이관 후 폐기)
+const KMLE = Array.isArray(window.KMLE_CONTENT_QUESTIONS) ? window.KMLE_CONTENT_QUESTIONS : [];
 const USMLE = Array.isArray(window.USMLE_QUESTIONS) ? window.USMLE_QUESTIONS : [];
 const CIRCLED = ["①", "②", "③", "④", "⑤"];
 const ALPHA = ["A", "B", "C", "D", "E"];
