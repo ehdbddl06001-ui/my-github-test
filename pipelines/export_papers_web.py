@@ -59,7 +59,13 @@ def build_record(path: Path) -> dict | None:
         "date": str(m.get("date", "") or ""),
         "tags": m.get("tags", []) or [],
         "confidence": m.get("confidence", ""),
+        # 랜드마크(고인용) 논문 메타 — scrape_landmark_papers.py가 채운다.
+        "landmark": bool(m.get("landmark", False)),
+        "citations": m.get("citations"),
+        "rcr": m.get("rcr"),
+        "nihPercentile": m.get("nih_percentile"),
         "abstract": section(d.body, "Abstract"),
+        "whyMustRead": section(d.body, "Why must-read"),
         "summary": section(d.body, "Summary"),
         "clinicalImpact": section(d.body, "Clinical Impact"),
         "myIdeas": section(d.body, "My Ideas"),

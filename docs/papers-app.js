@@ -10,6 +10,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var listEl = $("list"), countEl = $("count");
   var searchEl = $("search"), topicEl = $("topicFilter"), notesOnlyEl = $("notesOnly");
+  var landmarkOnlyEl = $("landmarkOnly"), sortByEl = $("sortBy");
 
   // ── 노트 저장소(localStorage) ────────────────────────────────
   function loadNotes() {
@@ -53,9 +54,14 @@
     var hasNote = !!(NOTES[p.id] && NOTES[p.id].text);
     var noteBadge = hasNote ? '<span class="pill notebadge">📝 내 노트</span>' : "";
     var dateBadge = p.date ? '<span class="pill datepill">🗓 ' + esc(p.date) + "</span>" : "";
+    // 랜드마크(고인용) 배지 — 인용수를 함께 보여 '왜 꼭 봐야 하는지'를 한눈에.
+    var landmarkBadge = p.landmark
+      ? '<span class="pill landmark">⭐ 꼭 봐야 함' + (p.citations != null ? " · 인용 " + esc(p.citations) : "") + "</span>"
+      : "";
 
     // 초록·요약 섹션 + 카드에 이미 저장된 My Ideas
-    var body = section("Abstract", p.abstract) + section("Summary", p.summary)
+    var body = section("왜 꼭 봐야 하는가", p.whyMustRead)
+      + section("Abstract", p.abstract) + section("Summary", p.summary)
       + section("Clinical Impact", p.clinicalImpact) + section("My Ideas (저장됨)", p.myIdeas);
 
     // 내 생각 에디터 (localStorage 초안)
@@ -75,7 +81,7 @@
       ? '<a class="plink" href="' + esc(p.url) + '" target="_blank" rel="noopener">PubMed 원문 →</a>' : "";
 
     return '<article class="paper">'
-      + '<div class="ptop"><span class="pill">' + esc(p.topic || "?") + "</span>" + dateBadge + conf + noteBadge + "</div>"
+      + '<div class="ptop"><span class="pill">' + esc(p.topic || "?") + "</span>" + landmarkBadge + dateBadge + conf + noteBadge + "</div>"
       + '<div class="ptitle">' + esc(p.title) + "</div>"
       + (meta.length ? '<div class="pmeta">' + meta.join(" · ") + "</div>" : "")
       + (authors ? '<div class="pauthors">' + esc(authors) + "</div>" : "")
@@ -138,14 +144,23 @@
     var q = (searchEl.value || "").trim().toLowerCase();
     var topic = topicEl.value;
     var notesOnly = notesOnlyEl.checked;
+    var landmarkOnly = landmarkOnlyEl.checked;
+    var sortBy = sortByEl.value;
     var rows = PAPERS.filter(function (p) {
       if (topic !== "__ALL__" && p.topic !== topic) return false;
+      if (landmarkOnly && !p.landmark) return false;
       if (notesOnly && !(NOTES[p.id] && NOTES[p.id].text)) return false;
       if (!q) return true;
       var hay = [p.title, p.journal, p.abstract, p.summary, (p.authors || []).join(" ")]
         .join(" ").toLowerCase();
       return hay.indexOf(q) !== -1;
     });
+    // 인용순 정렬: 인용 많은 논문부터(값 없으면 뒤로). 최신순은 window.PAPERS 기본 순서.
+    if (sortBy === "citations") {
+      rows = rows.slice().sort(function (a, b) {
+        return (b.citations || 0) - (a.citations || 0);
+      });
+    }
 
     if (!PAPERS.length) {
       listEl.innerHTML = '<div class="empty">아직 스크랩된 논문이 없습니다.<br>'
@@ -157,7 +172,7 @@
     countEl.textContent = "총 " + PAPERS.length + "편 중 " + rows.length + "편 표시"
       + (noteN ? " · 내 노트 " + noteN + "개" : "");
     listEl.innerHTML = rows.length
-      ? groupedHTML(rows)
+      ? (sortBy === "citations" ? rows.map(card).join("") : groupedHTML(rows))
       : '<div class="empty">조건에 맞는 논문이 없습니다.</div>';
     bindNoteEditors();
   }
@@ -196,5 +211,7 @@
   searchEl.addEventListener("input", render);
   topicEl.addEventListener("change", render);
   notesOnlyEl.addEventListener("change", render);
+  landmarkOnlyEl.addEventListener("change", render);
+  sortByEl.addEventListener("change", render);
   render();
 })();

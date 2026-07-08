@@ -22,8 +22,13 @@
   <div class="filters">
     <input type="search" id="search" placeholder="제목·저널·초록·저자 검색…" />
     <select id="topicFilter"><option value="__ALL__">전체 주제</option></select>
+    <select id="sortBy" title="정렬 기준">
+      <option value="date">최신순</option>
+      <option value="citations">인용 많은순</option>
+    </select>
   </div>
   <div class="row" style="margin-top:6px">
+    <label><input type="checkbox" id="landmarkOnly" /> ⭐ 꼭 봐야 하는 논문(고인용)만</label>
     <label><input type="checkbox" id="notesOnly" /> 내 노트가 있는 것만</label>
     <button id="exportNotesJson" title="apply_notes.py로 카드 My Ideas에 반영">🗒 내 노트 내보내기(.json)</button>
     <button id="exportNotesMd">📄 내 노트 미리보기(.md)</button>
