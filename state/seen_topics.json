@@ -147,8 +147,12 @@
   "usmle": {
     "Biochemistry - Acute Intermittent Porphyria": "2026-07-02",
     "Biochemistry - Urea Cycle (OTC)": "2026-07-02",
+    "Cardiology - Acute STEMI management (12-lead)": "2026-07-07",
     "Cardiology - Atrial Fibrillation (ECG rhythm recognition)": "2026-07-07",
+    "Cardiology - Complete LBBB (12-lead)": "2026-07-07",
+    "Cardiology - Complete RBBB (12-lead real ECG)": "2026-07-07",
     "Cardiology - Heart Failure Pharmacology (ARNI)": "2026-07-02",
+    "Cardiology - Normal Sinus Rhythm (real ECG render)": "2026-07-07",
     "Endocrinology - Pheochromocytoma": "2026-07-02",
     "Hematology - HIT": "2026-07-02",
     "Immunology - Chronic Granulomatous Disease": "2026-07-02",

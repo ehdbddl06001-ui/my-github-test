@@ -1,21 +1,21 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-07",
+ "generated": "2026-07-08",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 166,
+  "total": 176,
   "byType": {
    "kmle": 97,
-   "usmle": 32,
-   "paper": 34,
+   "usmle": 36,
+   "paper": 40,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 16,
-   "Nephrology": 13,
-   "Infectious Disease": 12,
+   "Cardiology": 21,
+   "Nephrology": 14,
+   "Infectious Disease": 13,
    "Pediatrics": 12,
    "Obstetrics & Gynecology": 9,
    "Neurology": 8,
@@ -25,15 +25,15 @@ window.MEDKOS_INDEX = {
    "General Surgery": 6,
    "Ophthalmology": 6,
    "Orthopedics": 6,
+   "Pathology": 6,
    "Pulmonology": 6,
    "Rheumatology": 6,
    "Hematology": 5,
-   "Pathology": 5,
    "Physiology": 5,
+   "Surgery": 5,
    "Dermatology": 4,
    "Hematology-Oncology": 4,
-   "Surgery": 4,
-   "Laboratory Medicine": 3,
+   "Laboratory Medicine": 4,
    "Microbiology": 3,
    "Oncology": 3,
    "Allergy": 2,
@@ -43,10 +43,10 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1
   },
   "byConfidence": {
-   "high": 132,
-   "medium": 34
+   "high": 136,
+   "medium": 40
   },
-  "tagCount": 447
+  "tagCount": 456
  },
  "docs": [
   {
@@ -618,6 +618,81 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Cardiac Tamponade cardiac tamponade Beck triad pulsus paradoxus pericardiocentesis KMLE 2026 / Claude Routine 55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥팽대·심음감소)+기이맥+전기교대 → 심장눌림증(폐쇄성 쇼크). 즉시 심낭천자로 심낭액을 배액해야 한다."
   },
   {
+   "id": "usmle-2026-0036",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Complete Left Bundle Branch Block (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "LBBB",
+    "wide-QRS",
+    "conduction"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0036.md",
+   "snippet": "A 70 year old woman has a 12 lead electrocardiogram during an outpatient visit. The QRS duration is prolonged. There is a broad, notched, monophasic R wave in leads I and V6 and a predominantly negative QRS (QS/rS) in V1, with loss of the n",
+   "text": "Cardiology Complete Left Bundle Branch Block (12-lead, real ECG) ECG 12-lead LBBB wide-QRS conduction USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 70 year old woman has a 12 lead electrocardiogram during an outpatient visit. The QRS duration is prolonged. There is a broad, notched, monophasic R wave in leads I and V6 and a predominantly negative QRS (QS/rS) in V1, with loss of the normal septal q waves. Which of the following is the most likely diagnosis? A. Complete left bundle branch block B. Complete right bundle branch block C. Wolff Parkinson White pattern D. Left ventricular hypertrophy without conduction delay E. Hyperkalemia 넓은 QRS(≥120 ms)에 I·V6의 넓고 노치된 단일 R파, V1의 QS/rS, 중격 q파 소실 → 완전좌각차단(CLBBB). 우각차단은 정반대로 V1의 rSR′와 I·V6의 넓은 S파를 보인다. WPW는 짧은 PR+델타파, LVH 단독은 전압 증가가 특징이며 QRS를 크게 넓히지 않는다, 고칼륨은 뾰족T·사인파 등 다른 맥락을 동반한다. 임상적으로 '새로 생긴 CLBBB + 허혈성 흉통'은 STEMI equivalent로 취급한다."
+  },
+  {
+   "id": "usmle-2026-0035",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Acute STEMI management (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "STEMI",
+    "reperfusion",
+    "chest-pain"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0035.md",
+   "snippet": "A 58 year old man arrives 60 minutes after the onset of severe crushing chest pain with diaphoresis. He is hemodynamically stable. His 12 lead electrocardiogram is shown and a high sensitivity troponin is elevated. A cardiac catheterization",
+   "text": "Cardiology Acute STEMI management (12-lead, real ECG) ECG 12-lead STEMI reperfusion chest-pain USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 58 year old man arrives 60 minutes after the onset of severe crushing chest pain with diaphoresis. He is hemodynamically stable. His 12 lead electrocardiogram is shown and a high sensitivity troponin is elevated. A cardiac catheterization laboratory is available on site. Which of the following is the most appropriate next step? A. Immediate reperfusion with primary percutaneous coronary intervention B. High dose NSAIDs and observation for pericarditis C. Repeat the ECG and troponin in 6 hours before deciding D. Outpatient exercise stress test after discharge E. Anticoagulation alone without reperfusion 허혈성 흉통 + 12유도의 급성 ST 상승 + 트로포닌 상승 = 급성 ST상승 심근경색(STEMI). 근치는 가능한 빨리 막힌 관동맥을 여는 재관류이며, PCI 시설이 있으면 일차적 PCI가 최우선(door to balloon 최소화). 심막염(광범위 오목형 ST상승·PR하강)·조기재분극과 감별하되, 전형적 허혈 흉통+국소 ST상승+트로포닌 상승이면 STEMI로 다루고 지체 없이 재관류한다."
+  },
+  {
+   "id": "usmle-2026-0034",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Complete Right Bundle Branch Block (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "RBBB",
+    "wide-QRS",
+    "conduction"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0034.md",
+   "snippet": "A 62 year old man has a 12 lead electrocardiogram performed before elective surgery. He is asymptomatic. The tracing is shown. Which of the following best accounts for the widened QRS complex? A. Complete right bundle branch block B. Comple",
+   "text": "Cardiology Complete Right Bundle Branch Block (12-lead, real ECG) ECG 12-lead RBBB wide-QRS conduction USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 62 year old man has a 12 lead electrocardiogram performed before elective surgery. He is asymptomatic. The tracing is shown. Which of the following best accounts for the widened QRS complex? A. Complete right bundle branch block B. Complete left bundle branch block C. Wolff Parkinson White pattern D. Left anterior fascicular block E. Left ventricular hypertrophy 넓은 QRS(≥120 ms)에 V1–V2의 rSR′(토끼귀 M자)와 I·V6의 넓고 뭉툭한 S파 → 완전우각차단(CRBBB). 좌각차단은 반대로 I·V6의 넓은 단일 R파와 V1의 QS/rS이며 rSR′가 없다. WPW는 짧은 PR + 델타파로 넓어지고, 좌전섬유속차단(LAFB)은 좌축편위를 만들지만 QRS를 넓히지 않는다(대개 <120 ms). LVH는 전압 증가가 특징이지 QRS 폭 확장의 주원인이 아니다."
+  },
+  {
+   "id": "usmle-2026-0033",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Normal Sinus Rhythm (real ECG from open DB)",
+   "tags": [
+    "ECG",
+    "normal-sinus-rhythm",
+    "rhythm",
+    "real-signal"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: MIT-BIH Arrhythmia DB (ODC-BY)",
+   "confidence": "high",
+   "date": "2026-07-07",
+   "path": "content/usmle/usmle-2026-0033.md",
+   "snippet": "A 45 year old man has a routine preoperative electrocardiogram. He is asymptomatic and hemodynamically stable. The rhythm strip shown is recorded. Which of the following best describes the underlying rhythm? A. Atrial fibrillation B. Normal",
+   "text": "Cardiology Normal Sinus Rhythm (real ECG from open DB) ECG normal-sinus-rhythm rhythm real-signal USMLE-style / MedKOS · ECG: MIT-BIH Arrhythmia DB (ODC-BY) A 45 year old man has a routine preoperative electrocardiogram. He is asymptomatic and hemodynamically stable. The rhythm strip shown is recorded. Which of the following best describes the underlying rhythm? A. Atrial fibrillation B. Normal sinus rhythm C. Atrial flutter D. Junctional rhythm E. Third degree atrioventricular block 리듬 스트립에서 RR 간격이 규칙적이고, 각 QRS 앞에 일정한 형태의 P파가 있으며, QRS 폭이 좁다 → 정상 동율동(normal sinus rhythm). 심방세동(P소실·불규칙), 심방조동(톱니 F파), 접합부율동(P소실/역행 P), 완전방실차단(P와 QRS 독립)과 구분된다."
+  },
+  {
    "id": "usmle-2026-0032",
    "type": "usmle",
    "topic": "Cardiology",
@@ -767,6 +842,102 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0025.md",
    "snippet": "A 19 year old woman is brought to the emergency department 10 hours after ingesting a large number of tablets in a suicide attempt. She is nauseated but alert, with a normal examination and normal aminotransferases. A serum level of the ing",
    "text": "Pharmacology Acetaminophen Toxicity (NAPQI / N-acetylcysteine) acetaminophen NAPQI glutathione N-acetylcysteine CYP2E1 USMLE-style / MedKOS (toxicology · phase II metabolism) A 19 year old woman is brought to the emergency department 10 hours after ingesting a large number of tablets in a suicide attempt. She is nauseated but alert, with a normal examination and normal aminotransferases. A serum level of the ingested drug plots above the treatment line on the Rumack Matthew nomogram, and the recommended antidote is started. The antidote's protective effect against hepatocellular necrosis is best explained by which of the following mechanisms? A. Replenishing hepatic glutathione stores used to conjugate a reactive electrophilic metabolite B. Competitively inhibiting CYP2E1 so the parent drug is excreted unchanged C. Chelating the parent drug within the gut lumen to block absorption D. Inducing glucuronosyltransferase to accelerate phase II conjugation of the parent drug E. Acting as a receptor antagonist that reverses the drug's central effects 아세트아미노펜은 대부분 glucuronidation/sulfation으로 무독성 대사되지만, 과량에서는 이 경로가 포화되어 CYP2E1이 반응성 대사물 NAPQI를 다량 생성한다. NAPQI는 정상적으로 glutathione(GSH)과 포합되어 해독되는데, GSH가 고갈되면 NAPQI가 간세포 단백과 공유결합해 중심소엽(zone 3) 괴사를 일으킨다. N acetylcysteine(NAC)은 cysteine을 공급해 GSH를 재보충(및 직접 NAPQI 포합)함으로써 간독성을 막는다. 나머지 보기는 기전이 틀렸다."
+  },
+  {
+   "id": "paper-2026-0040",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ophthalmology and therapy",
+   "confidence": "medium",
+   "date": "2026-07-07",
+   "path": "content/papers/2026/2026-07-07_paper-2026-0040_zero_programmed_sphere_keratorefractive_lenticule_extraction.md",
+   "snippet": "Title Zero Programmed Sphere Keratorefractive Lenticule Extraction: Visual, Refractive, Anterior Keratometric, and Wavefront Outcomes in a Single Center Series of 74 Eyes Authors Gabrić Ivan, Grulović Filip, Bodakoš Karla, Bohač Maja Journa",
+   "text": "Surgery scraped pubmed PubMed / Ophthalmology and therapy Title Zero Programmed Sphere Keratorefractive Lenticule Extraction: Visual, Refractive, Anterior Keratometric, and Wavefront Outcomes in a Single Center Series of 74 Eyes Authors Gabrić Ivan, Grulović Filip, Bodakoš Karla, Bohač Maja Journal / DOI Ophthalmology and therapy · DOI: 10.1007/s40123 026 01447 5 · PMID: 42412306 https://pubmed.ncbi.nlm.nih.gov/42412306/ Abstract INTRODUCTION: Zero programmed sphere keratorefractive lenticule extraction (KLEx), also called cylinder only KLEx, is an uncommon cylinder dominated treatment pattern in which the planned spherical correction is 0.00 diopters (D). To our knowledge, no published outcome data characterize this pattern. To address this lack of data, we retrospectively identified all such cases from a prospectively maintained single center refractive surgery registry and reported visual, refractive, anterior keratometric, and wavefront outcomes, using Alpins vector analysis. METHODS: This study is retrospective single center, single surgeon case series of consecutive eyes treated with the SCHWIND ATOS femtosecond laser (SCHWIND eye tech solutions GmbH, Kleinostheim, Germany) between August 2024 and March 2026 at a programmed sphere of 0.00 D. Cycloplegic refraction was 0.00 D sphere in all 74 eyes (cycloplegic plano target). The data lock was 31 March 2026, and eyes treated within the 3 months preceding that date were classified as not yet eligible to be included in the study. Inter eye dependence was assessed using generalized estimating equations (GEE), and refractive stability was studied using a linear mixed model. Corrected distance visual acuity (CDVA) was imputed as uncorrected distance visual acuity (UDVA) when UDVA ≥ 20/20 and CDVA was missing. Complete case sensitivity was also reported. The full cohort ideal outcome convention was determined using the refractive Alpins metric with a nonzero difference vector (DV) sensitivity subgroup; a parallel anterior keratometric Alpins was run on the paired keratometry subset. RESULTS: A total of 74 eyes had been treated with the SCHWIND ATOS platform. At data lock, 62 were eligible for the ≥ 3 month follow up and 37 had completed refractive examinations (analyzed primary cohort; mean age 33 years; mean programmed cylinder 2.96 ± 1.30 D). UDVA ≥ 20/20 and ≥ 20/25 was achieved in 75.7% (Wilson 59.9 86.6%) and 91.9% of eyes, respectively; 83.8% of eyes were within ± 0.50 D of plano spherical equivalent refraction (SEQ); and 73.0% of eyes had postoperative cylinder ≤ 0.50 D. In terms of the refractive Alpins (side by side), the full cohort correction index (CI) was 1.04, and mean absolute angle of error ( AoE ) was 2.9° versus 5.2° in the nonzero DV subgroup (n = 21). In the 25 eye paired keratometry subset, anterior keratometric Alpins gave a CI of 1.05 and AoE of 13.4°, with residual anterior keratometric DV of 1.12 ± 0.45 D versus refractive DV of 0.44 ± 0.60 D. Among the nine eyes with UDVA < 20/20, four had directly measured postoperative CDVA and five were not eligible for the imputation rule; the paired safety analysis therefore included 32 eyes (28 imputed + 4 directly measured), with complete case (n = 4) and imputation based indices 0.98 and 1.25, respectively. The analyzed cohort overrepresented against the rule (ATR) and oblique astigmatism (p = 0.002), so axis fidelity estimates may reflect a more challenging case mix than the full treated population. CONCLUSION: Zero programmed sphere KLEx produced favorable refractive outcomes in eyes reaching the ≥ 3 month endpoint. The 37/62 completion rate among eligible eyes and the imputation based safety index limit generalizability. Wavefront changes were exploratory and generally followed the pattern expected after KLEx. The anterior keratometric and refractive Alpins results diverged substantially, suggesting that future studies should include total corneal vector analysis and direct assessment of intraoperative rotation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0039",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American Medical Directors Association",
+   "confidence": "medium",
+   "date": "2026-07-07",
+   "path": "content/papers/2026/2026-07-07_paper-2026-0039_validation_and_reliability_of_the_slu_amsad_depression_scale.md",
+   "snippet": "Title Validation and Reliability of the \"SLU AMSAD\" Depression Scale in Individuals With Dementia Authors Ontan Mehmet Selman, Petek Yakar Kadriye, Akpinar Soylemez Burcu, Grossberg George T, Isik Ahmet Turan Journal / DOI Journal of the Am",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of the American Medical Directors Association Title Validation and Reliability of the \"SLU AMSAD\" Depression Scale in Individuals With Dementia Authors Ontan Mehmet Selman, Petek Yakar Kadriye, Akpinar Soylemez Burcu, Grossberg George T, Isik Ahmet Turan Journal / DOI Journal of the American Medical Directors Association · DOI: 10.1016/j.jamda.2026.106371 · PMID: 42413154 https://pubmed.ncbi.nlm.nih.gov/42413154/ Abstract OBJECTIVES: The diagnosis of depression may be challenging in older adults with dementia because of atypical symptoms and overlap with other comorbidities. While the Cornell Scale for Depression in Dementia (CSDD) is the gold standard for screening, the Saint Louis University Appetite, Mood, Sleep, Activity, and Thoughts of Death (SLU AMSAD), another brief screening tool designed to assess late life depression, seems to be more practical than the CSDD, with a shorter test duration. DESIGN: Cross sectional validation study. SETTING AND PARTICIPANTS: In this study, conducted at a geriatric outpatient clinic, a total of 111 patients with dementia were enrolled, and both depression and dementia were diagnosed according to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition criteria. METHODS: The SLU AMSAD was administered to both patients and caregivers, along with the CSDD. Spearman's rank correlation coefficient was used to assess the correlation between the SLU AMSAD and CSDD. The diagnostic accuracy of the SLU AMSAD was evaluated using receiver operating characteristic analysis, with the area under the curve (AUC). RESULTS: Caregiver reported SLU AMSAD scores demonstrated a strong correlation with CSDD (r = 0.875; P < .001), whereas patient reported SLU AMSAD scores exhibited a moderate positive correlation (r = 0.384; P < .001). With an optimal cutoff of ≥3, diagnostic performance was substantially stronger for the caregiver reported SLU AMSAD achieving 95.3% sensitivity and 93.6% specificity (AUC, 0.984; 95% CI, 0.965 1.000; P < .001) whereas the patient reported SLU AMSAD yielded a sensitivity of 59.4% and a specificity of 83% (AUC, 0.731; 95% CI, 0.638 0.823; P < .001). CONCLUSIONS AND IMPLICATIONS: The SLU AMSAD is a valid and practical screening tool for depression in older adults with dementia. Given the shorter duration and strong caregiver reported performance, it should be integrated into clinical dementia assessment, facilitating early detection and intervention for depression in such a vulnerable patient group. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0038",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Poultry science",
+   "confidence": "medium",
+   "date": "2026-07-07",
+   "path": "content/papers/2026/2026-07-07_paper-2026-0038_impact_of_duration_of_cyclic_heat_stress_exposure_at_differe.md",
+   "snippet": "Title Impact of duration of cyclic heat stress exposure at different ages on growth performance, recovery, and histopathology in broilers Authors Papanikolaou A, Kampschoer E M J M, Matthijs M G R, Khempaka S, Weerts E A W S, Schonewille J ",
+   "text": "Pathology scraped pubmed PubMed / Poultry science Title Impact of duration of cyclic heat stress exposure at different ages on growth performance, recovery, and histopathology in broilers Authors Papanikolaou A, Kampschoer E M J M, Matthijs M G R, Khempaka S, Weerts E A W S, Schonewille J T Journal / DOI Poultry science · DOI: 10.1016/j.psj.2026.107367 · PMID: 42413182 https://pubmed.ncbi.nlm.nih.gov/42413182/ Abstract Heat stress (HS) poses a significant challenge to broiler welfare and growth. While the effects of constant (24 hr/day) HS are well documented, the consequences of HS duration at specific ages and the capacity for subsequent recovery, remain less understood. Therefore, 630 one day old Cobb500 broilers were assigned to 7 treatments and reared during a 6 week period to investigate the effects of varying HS duration on broiler growth, and recovery at different ages of exposure. Broilers were housed either in a climate controlled (CC) barn or a natural cyclic HS open sided (OS) barn. Treatments included broilers continuously housed for 6 weeks in CC (6CC) or OS (6OS). In addition, three other treatments were transferred from CC to OS for the final 3 weeks (3OS), 2 weeks (2OS), or 1 week (1OS) of the experiment. The last two recovery treatments (REC1, REC2) were placed in the CC house followed by 1 or 2 weeks in the OS house, from day 21 or 28 until 35, before returning to CC for the final week of the experiment. Each treatment included six replicates, with 15 broilers per replicate pen at the start of the experiment. Cloacal temperature, growth performance, mortality, plasma corticosterone, protein carbonyls, and histological morphology of the heart and lung were evaluated. Exposure to HS increased the cloacal temperature by at least 1.5°C at all ages (P < 0.001). Sudden exposure to HS at 36 days of age (1OS) resulted in severe mortality (67%) compared to control (6CC) and broilers exposed to HS at younger age (3OS and 2OS). HS consistently reduced body weight (BW) and average daily feed intake (ADFI); 6OS broilers finished 40.1% lighter than 6CC broilers (P < 0.001). Upon returning to thermoneutral conditions, REC1 and REC2 broilers immediately resumed growth rates comparable to controls but did not exhibit compensatory growth to recover the accumulated BW deficit. Very short term HS exposure (1OS) triggered a spike in plasma corticosterone (25.42 nmol/L) and protein carbonyls (1.92 nmol/mg) compared to 6CC controls (P < 0.001). Descriptive histological examination revealed that subendocardial erythrocyte accumulations were increased in 6OS hearts and were absent in CC housed broilers. Taken together, sudden HS exposure at 36 days of age poses an unmanageable threat to survival. While broilers recover from HS quickly, lost performance is not regained through compensatory growth within the 6 week period. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0037",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-07-07",
+   "path": "content/papers/2026/2026-07-07_paper-2026-0037_plasma_cell_free_dna_measured_prior_to_renal_replacement_the.md",
+   "snippet": "Title Plasma cell free DNA measured prior to renal replacement therapy initiation is not associated with incident adverse outcomes, hospitalizations or malignancies in chronic kidney disease stage 4 5 patients Authors Liuhto Niilo, Tuominen",
+   "text": "Nephrology scraped pubmed PubMed / PloS one Title Plasma cell free DNA measured prior to renal replacement therapy initiation is not associated with incident adverse outcomes, hospitalizations or malignancies in chronic kidney disease stage 4 5 patients Authors Liuhto Niilo, Tuominen Jenni, Manni Noora, Hakamäki Markus, Lankinen Roosa, Toukola Tomi, Virtanen Jonna, Metsärinne Kaj, et al. Journal / DOI PloS one · DOI: 10.1371/journal.pone.0353258 · PMID: 42412773 https://pubmed.ncbi.nlm.nih.gov/42412773/ Abstract Inflammation is an inherent feature of advanced chronic kidney disease (CKD) and associated with adverse outcomes. Several inflammatory biomarkers have been shown to be associated with mortality in CKD. Cell free DNA (cfDNA) is a novel biomarker for inflammation which has not been previously examined in patients with CKD stage 4 5 not undergoing dialysis. cfDNA was extracted from plasma and quantified with Qubit Flex Fluorometer using dsDNA High Sensitivity kit in 138 patients with CKD stage 4 5 not undergoing dialysis at baseline and at a control time point of median 2.7 years of follow up. A ratio of control and baseline measurement adjusted for an increment of one year of follow up was calculated. Associations between cfDNA at baseline and all cause mortality, major adverse cardiovascular and cerebrovascular events (MACCE, defined as a composite outcome of acute myocardial infarction, coronary revascularization, ischemic or hemorrhagic stroke and cardiovascular death), emergency room (ER) visits, hospitalizations or incident malignancies were assessed. Within a median follow up of 6.2 years, no associations were observed between cfDNA and mortality, MACCEs, ER visits, hospitalizations or incident malignancies. cfDNA control measurement and cfDNA delta ratio was available in 101 patients. Patients who had received a kidney transplant by the control cfDNA measurement had significantly higher cfDNA delta ratio compared to patients not on renal replacement therapy (RRT) and those undergoing dialysis (p < 0.001 for both comparisons). Patients undergoing dialysis at the time of the control cfDNA measurement had higher cfDNA delta ratio (p = 0.003) compared to patients not on RRT. The present study is the first to show that cfDNA is not associated with adverse outcomes in patients with advanced CKD not undergoing dialysis at baseline. Furthermore, our results provide unique data on the evolution of cfDNA levels in predialysis CKD stage 4 5 patients transitioning to different modalities of RRT. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0036",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta pharmaceutica (Zagreb, Croatia)",
+   "confidence": "medium",
+   "date": "2026-07-07",
+   "path": "content/papers/2026/2026-07-07_paper-2026-0036_recurrent_urinary_tract_infections_in_older_adults_a_systema.md",
+   "snippet": "Title Recurrent urinary tract infections in older adults: A systematic review of current challenges and emerging therapeutic strategies Authors Lv Junmei, Waza Ajaz Ahmad Journal / DOI Acta pharmaceutica (Zagreb, Croatia) · DOI: 10.2478/acp",
+   "text": "Infectious Disease scraped pubmed PubMed / Acta pharmaceutica (Zagreb, Croatia) Title Recurrent urinary tract infections in older adults: A systematic review of current challenges and emerging therapeutic strategies Authors Lv Junmei, Waza Ajaz Ahmad Journal / DOI Acta pharmaceutica (Zagreb, Croatia) · DOI: 10.2478/acph 2026 0017 · PMID: 42412955 https://pubmed.ncbi.nlm.nih.gov/42412955/ Abstract As global life expectancy continues to rise, urinary tract infections (UTIs) have become an increasing concern in older adults. The higher prevalence in this population is attributed to anatomical and physiological changes of the urinary tract, hormonal imbalances, immunosenescence, and the presence of comorbidities. These factors, combined with a distinct microbiological profile and rising antimicrobial resistance, create significant clinical challenges in diagnosis and treatment. We conducted a systematic review of clinical trials and observational studies on the epidemiology, pathogenesis, diagnosis, and management of recurrent urinary tract infections (rUTIs) in older adults. The prevalence of rUTIs increases with age, disproportionately affecting women, with 53 % of those over 55 years experiencing recurrences within one year. Healthcare associated UTIs (HAUTIs) account for 20 30 % of nosocomial infections, primarily impacting older adults. The host microbiome seemed crucial in UTI pathogenesis, with Escherichia coli being the leading causative agent due to its ability to adhere, colonise, and evade the immune response. In elderly patients, atypical presentations such as delirium, functional decline, or nonspecific abdominal symptoms complicate diagnosis, underscoring the critical need to differentiate symptomatic infections from asymptomatic bacteriuria (ASB) to prevent misdiagnosis and overtreatment. Effective management requires accurate diagnosis, appropriate antibiotic selection, and careful monitoring of adverse effects, especially in patients with comorbidities. Emerging therapies, including faecal microbiota transplantation, bacteriophages, probiotics, and proanthocyanidins, offer promising adjuncts. While long term antibiotic prophylaxis is effective, it increases the risk of bacterial resistance, particularly in catheterised patients. Behavioural modifications, such as increased fluid intake, aid pathogen clearance, and topical estrogen therapy in postmenopausal women provides additional preventive benefit. Managing recurrent UTIs in ageing populations requires addressing microbiological, diagnostic, and antimicrobial resistance challenges. Despite resistance levels, the first line treatment, nitrofurantoin, remains a viable therapeutic option, particularly in developed countries. An integrated approach combining individualised care, healthcare provider training, and rational antimicrobial use is essential to improving patient outcomes and quality of life. Future strategies should focus on novel antimicrobials targeting bacterial virulence factors, vaccines against uropathogens, and advanced diagnostic technologies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0035",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of cardiovascular nursing",
+   "confidence": "medium",
+   "date": "2026-07-07",
+   "path": "content/papers/2026/2026-07-07_paper-2026-0035_prevalence_and_factors_associated_with_anxiety_and_depressio.md",
+   "snippet": "Title Prevalence and Factors Associated With Anxiety and Depression in Individuals With Chronic Atrial Fibrillation: A Cross Sectional Study in Brazil Authors Queiroz Gustavo Carvalho de Lima, Monteiro Amanda da Silva, Melo Débora Ananias d",
+   "text": "Cardiology scraped pubmed PubMed / The Journal of cardiovascular nursing Title Prevalence and Factors Associated With Anxiety and Depression in Individuals With Chronic Atrial Fibrillation: A Cross Sectional Study in Brazil Authors Queiroz Gustavo Carvalho de Lima, Monteiro Amanda da Silva, Melo Débora Ananias de, Mangueira Suzana de Oliveira, Leadebal Oriana Deyze Correia Paiva, Silva Butcher Rita de Cassia Gengo E, Sousa Mailson Marques de Journal / DOI The Journal of cardiovascular nursing · DOI: 10.1097/JCN.0000000000001319 · PMID: 42413105 https://pubmed.ncbi.nlm.nih.gov/42413105/ Abstract BACKGROUND: Chronic atrial fibrillation (CAF) is the most frequent sustained cardiac arrhythmia, and it is associated with a high burden of symptoms that impair self care behaviors, treatment adherence, and quality of life. OBJECTIVE: In this study, our aim was to estimate the prevalence of anxiety and depressive symptoms in individuals with CAF and identify associated factors. METHODS: A cross sectional analytical study was conducted at the cardiology outpatient clinic of a university hospital in João Pessoa (Paraíba, Brazil). Anxiety and depressive symptoms were assessed using the Hospital Anxiety and Depression Scale. Data were analyzed using the Chi square test, prevalence ratio with a 95% confidence interval, and Poisson regression with robust variance. RESULTS: The study included 102 individuals with CAF; 60.8% reported anxiety symptoms and 38.2% reported depressive symptoms. The prevalence of anxiety symptoms was significantly lower in men (39.0%) than in women, and 27.0% lower among individuals with 8 years of education or less than in those with 9 years or more. The prevalence of depressive symptoms was 59.0% lower in men than in women, and 43.0% lower in individuals with up to 3 comorbidities than in those with 4 or more comorbidities. CONCLUSIONS: Among individuals with CAF, factors associated with anxiety and depressive symptoms were identified, including sex, educational level, and the number of comorbidities. These findings underscore the importance of incorporating systematic mental health assessment and integrative care strategies into the nursing management of individuals with CAF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0034",

@@ -82,8 +82,9 @@ def explanation_items(body: str) -> list[dict]:
 
 
 def render_figure(fig: dict | None, fname: str = "") -> str:
-    """frontmatter의 figure 명세를 인라인 SVG 문자열로 렌더한다(결정론적 생성).
-    현재 type=ecg 지원. 확장 시 여기서 분기한다(ctg·spirometry 등)."""
+    """frontmatter의 figure 명세를 인라인 SVG 문자열로 렌더한다.
+    - type=ecg        : gen_ecg_svg 로 수식 합성(리듬형).
+    - type=ecg_signal : assets/ecg/*.json(실데이터)을 render_signal_svg 로 렌더."""
     if not isinstance(fig, dict):
         return ""
     kind = fig.get("type")
@@ -91,11 +92,25 @@ def render_figure(fig: dict | None, fname: str = "") -> str:
         if kind == "ecg":
             return ecg_svg(
                 rhythm=fig.get("rhythm", "sinus"),
-                rate=float(fig.get("rate", 75)),
+                rate=fig.get("rate"),                 # None이면 리듬별 기본값
                 seconds=float(fig.get("seconds", 6)),
                 label=fig.get("label"),
             )
-    except Exception as e:  # 생성 실패해도 문항은 살린다
+        if kind == "ecg_signal":
+            from render_signal_svg import svg_from_asset
+            src = fig.get("source")
+            if src:
+                path = src if str(src).startswith("/") else str(ROOT / src)
+                return svg_from_asset(path, lead=fig.get("lead"),
+                                      seconds=fig.get("seconds"),
+                                      label=fig.get("label"))
+        if kind == "ecg12":                       # 12유도 실데이터(PTB-XL 등)
+            from render_signal_svg import svg12_from_asset
+            src = fig.get("source")
+            if src:
+                path = src if str(src).startswith("/") else str(ROOT / src)
+                return svg12_from_asset(path, label=fig.get("label"))
+    except Exception as e:  # 생성/로드 실패해도 문항은 살린다
         print(f"[figure] {fname}: {e}")
     return ""
 
