@@ -82,6 +82,23 @@
       '<p style="margin:6px 0">📦 ' + esc(w.dataset_name) +
       (w.dataset_url ? ' · <a href="' + esc(w.dataset_url) + '" target="_blank" rel="noopener">데이터 열기 ↗</a>' : "") +
       '</p>';
+
+    // 이 주차에 해당하는 학습 카드로 바로 이동(설명이 카드에 있으니 클릭 한 번으로 연결)
+    var match = (DATA.cards || []).filter(function (c) {
+      return c.kind === "weekly" && String(c.week) === String(w.week);
+    })[0] || (DATA.cards || []).filter(function (c) {
+      return c.kind === "weekly" && c.dataset === w.dataset_key;
+    })[0];
+    if (match) {
+      var btn = el("button", "jump-btn", "📖 이 주차 학습 카드 열기 →");
+      btn.addEventListener("click", function () { openCard(match.id); });
+      host.appendChild(btn);
+    } else {
+      var hint = el("p", "muted");
+      hint.style.marginTop = "8px";
+      hint.innerHTML = "이 주차 학습 카드는 아직 없습니다. <code>/ai-weekly</code>로 생성하세요.";
+      host.appendChild(hint);
+    }
   }
 
   // ── 오픈 데이터 카탈로그 ─────────────────────────────────────────
@@ -139,11 +156,19 @@
     "내 답변": "🗣 내 답변",
   };
 
+  var cardKind = "__ALL__";
+
   function renderCards() {
     var host = document.getElementById("cards");
     host.innerHTML = "";
-    (DATA.cards || []).forEach(function (c) {
+    var list = (DATA.cards || []).filter(function (c) {
+      return cardKind === "__ALL__" || c.kind === cardKind;
+    });
+    if (!list.length) { host.appendChild(el("p", "muted", "해당 종류의 카드가 없습니다.")); return; }
+    list.forEach(function (c) {
       var det = el("details", "ai-card card");
+      det.id = "card-" + c.id;
+      det.dataset.kind = c.kind || "";
       var links = [];
       if (c.projectUrl) links.push('<a href="' + esc(c.projectUrl) + '" target="_blank" rel="noopener">원본 프로젝트 ↗</a>');
       if (c.colabUrl) links.push('<a href="' + esc(c.colabUrl) + '" target="_blank" rel="noopener">▶ Colab 열기</a>');
@@ -202,8 +227,61 @@
     document.getElementById("openOnly").addEventListener("change", renderDatasets);
   }
 
+  // ── 서브탭 전환(실습 진도 · 오픈 데이터 · 학습 카드) ──────────────
+  function switchTab(name) {
+    ["progress", "data", "cards"].forEach(function (p) {
+      var panel = document.getElementById("panel-" + p);
+      if (panel) panel.hidden = (p !== name);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("#subtabs button"), function (b) {
+      b.classList.toggle("active", b.dataset.panel === name);
+    });
+  }
+  function initTabs() {
+    Array.prototype.forEach.call(document.querySelectorAll("#subtabs button"), function (b) {
+      b.addEventListener("click", function () { switchTab(b.dataset.panel); });
+    });
+  }
+
+  // ── 학습 카드 종류 필터 ─────────────────────────────────────────
+  var KIND_KO = { mentor: "🗣 논의", roadmap: "🗺 로드맵", concept: "📘 개념", project: "🔬 프로젝트", weekly: "🗓 주간" };
+  function initKindFilter() {
+    var host = document.getElementById("kindFilter");
+    if (!host) return;
+    var kinds = ["__ALL__"];
+    (DATA.cards || []).forEach(function (c) { if (kinds.indexOf(c.kind) < 0) kinds.push(c.kind); });
+    kinds.forEach(function (k) {
+      var b = el("button", k === "__ALL__" ? "active" : null, k === "__ALL__" ? "전체" : (KIND_KO[k] || k));
+      b.addEventListener("click", function () {
+        cardKind = k;
+        Array.prototype.forEach.call(host.children, function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+        renderCards();
+      });
+      host.appendChild(b);
+    });
+  }
+
+  // ── 카드로 점프(실습 진도 배너 → 해당 학습 카드 열기) ────────────
+  function openCard(cardId) {
+    cardKind = "__ALL__";
+    var host = document.getElementById("kindFilter");
+    if (host) Array.prototype.forEach.call(host.children, function (x, i) { x.classList.toggle("active", i === 0); });
+    renderCards();
+    switchTab("cards");
+    var det = document.getElementById("card-" + cardId);
+    if (!det) return;
+    det.open = true;
+    det.scrollIntoView({ behavior: "smooth", block: "start" });
+    det.classList.add("flash");
+    setTimeout(function () { det.classList.remove("flash"); }, 1500);
+  }
+  window.__ailabOpenCard = openCard;  // 인라인 onclick에서 호출
+
   renderWeekly();
   initFilters();
+  initTabs();
+  initKindFilter();
   renderDatasets();
   renderCards();
 })();

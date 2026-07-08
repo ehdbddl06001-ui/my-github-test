@@ -36,6 +36,19 @@
   .sec :not(pre) > code { background: rgba(124,92,255,.16); color: #d7ccff; padding: 1px 5px; border-radius: 4px; }
   .mermaid { background: #f8fafc; border: 1px solid var(--line); border-radius: 8px; padding: 10px; overflow-x: auto; }
   .badgep { font-size: .78em; background: rgba(59,130,246,.15); color: #9cc3ff; border: 1px solid #2f4a72; border-radius: 6px; padding: 1px 7px; margin-right: 5px; }
+  /* 서브탭(실습 진도 · 오픈 데이터 · 학습 카드) */
+  .subtabs { display: flex; gap: 8px; max-width: 820px; margin: 16px auto 0; flex-wrap: wrap; }
+  .subtabs button { flex: 1 1 auto; min-width: 120px; background: var(--card); color: var(--muted); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: .95rem; cursor: pointer; }
+  .subtabs button:hover { border-color: var(--accent); color: var(--ink); }
+  .subtabs button.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .panel[hidden] { display: none; }
+  .jump-btn { display: inline-block; background: rgba(59,130,246,.15); color: #9cc3ff; border: 1px solid #2f4a72; border-radius: 8px; padding: 7px 13px; font-size: .92em; cursor: pointer; margin-top: 10px; }
+  .jump-btn:hover { border-color: var(--accent); color: #fff; }
+  .kindfilter { display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0 12px; }
+  .kindfilter button { background: var(--card); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .85rem; cursor: pointer; }
+  .kindfilter button.active { background: rgba(124,92,255,.18); color: #c9bcff; border-color: #4a3d7a; font-weight: 600; }
+  .ai-card.flash { animation: flash 1.4s ease; }
+  @keyframes flash { 0%,100% { box-shadow: none; } 30% { box-shadow: 0 0 0 3px var(--accent); } }
 </style>
 </head>
 <body>
@@ -51,9 +64,17 @@
   <p class="sub">공개 프로젝트(예: Keras 뇌종양 분할)를 뜯어보고, 오픈 의료 데이터로 매주 직접 돌려보는 공간입니다. 원본은 <code>content/ailab/</code>와 <code>pipelines/datasets.py</code>, 실습은 <code>notebooks/</code>(Colab)에서 합니다.</p>
 </header>
 
-<section class="card weekly" id="weekly"></section>
+<div class="subtabs" id="subtabs">
+  <button data-panel="progress" class="active">🗓 실습 진도</button>
+  <button data-panel="data">📦 오픈 데이터</button>
+  <button data-panel="cards">📚 학습 카드</button>
+</div>
 
-<section class="card">
+<section class="card panel weekly" id="panel-progress">
+  <div id="weekly"></div>
+</section>
+
+<section class="card panel" id="panel-data" hidden>
   <h2 style="margin-top:0">📦 오픈 데이터 카탈로그</h2>
   <div class="filters">
     <input type="search" id="dsSearch" placeholder="데이터셋·과제 검색…" />
@@ -64,9 +85,10 @@
   <div id="datasets"></div>
 </section>
 
-<section class="card">
+<section class="card panel" id="panel-cards" hidden>
   <h2 style="margin-top:0">📚 학습 카드</h2>
   <p class="muted">카드를 펼치면 개요·구조 도식·데이터·코드·<b>지시어 해설</b>·실습 과제가 나옵니다.</p>
+  <div class="kindfilter" id="kindFilter"></div>
   <div id="cards"></div>
 </section>
 

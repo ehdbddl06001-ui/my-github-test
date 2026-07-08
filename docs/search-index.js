@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 181,
+  "total": 182,
   "byType": {
    "kmle": 97,
-   "ailab": 5,
+   "ailab": 6,
    "usmle": 36,
    "paper": 40,
    "basic": 3
@@ -43,16 +43,17 @@ window.MEDKOS_INDEX = {
    "Pharmacology": 2,
    "AI Mentorship": 1,
    "Internal Medicine": 1,
+   "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
    "Medical Imaging AI": 1,
    "Medical Signal AI": 1
   },
   "byConfidence": {
-   "high": 138,
+   "high": 139,
    "medium": 43
   },
-  "tagCount": 480
+  "tagCount": 484
  },
  "docs": [
   {
@@ -623,6 +624,25 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0066.md",
    "snippet": "55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥",
    "text": "Cardiology Cardiac Tamponade cardiac tamponade Beck triad pulsus paradoxus electrical alternans pericardiocentesis KMLE 2026 / Claude Routine 55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥팽대·심음감소)+기이맥( 10 mmHg)+전기교대 → 심장눌림증(폐쇄성 쇼크). 즉시 심낭천자로 심낭액을 배액해야 하며, 전부하를 줄이는 이뇨·혈관확장·서맥 유발은 금기다."
+  },
+  {
+   "id": "ailab-2026-0006",
+   "type": "ailab",
+   "topic": "ML Debugging",
+   "subtopic": "의료 AI 디버그 로그 (에러 → 원인 → 수정)",
+   "tags": [
+    "debugging",
+    "errors",
+    "colab",
+    "troubleshooting",
+    "faq"
+   ],
+   "source": "MedKOS AI랩 디버그 로그 (/ai-debug)",
+   "confidence": "high",
+   "date": "2026-07-08",
+   "path": "content/ailab/ailab-2026-0006.md",
+   "snippet": "Overview 실습 중 만나는 에러를 원인·최소수정·개념 으로 정리해 쌓는 개인 트러블슈팅 FAQ. /ai debug 가 새 에러를 여기 한 줄씩 추가한다. 채팅에서 사라지지 않고 다음에 같은 에러를 스스로 잡게 만드는 게 목적. 아래 표는 초보가 가장 자주 겪는 것부터 시드로 채워 둔 것. 에러 로그 증상(에러) 원인 최소 수정 개념 / 재발방지 ValueError: Input 0 is incompatible ... exp",
+   "text": "ML Debugging 의료 AI 디버그 로그 (에러 → 원인 → 수정) debugging errors colab troubleshooting faq MedKOS AI랩 디버그 로그 (/ai-debug) Overview 실습 중 만나는 에러를 원인·최소수정·개념 으로 정리해 쌓는 개인 트러블슈팅 FAQ. /ai debug 가 새 에러를 여기 한 줄씩 추가한다. 채팅에서 사라지지 않고 다음에 같은 에러를 스스로 잡게 만드는 게 목적. 아래 표는 초보가 가장 자주 겪는 것부터 시드로 채워 둔 것. 에러 로그 증상(에러) 원인 최소 수정 개념 / 재발방지 ValueError: Input 0 is incompatible ... expected axis ... shape 모델이 기대하는 입력 shape ≠ 실제 데이터 shape (보통 채널 차원 누락) X = X[..., None] 로 채널축 추가하거나 Input(shape) 을 데이터에 맞춤 학습 전 print(X.shape) + assert X.shape[1:]==모델입력 . 1D/3D는 채널축을 항상 확인 ResourceExhaustedError / CUDA out of memory 배치·볼륨·모델이 GPU 메모리 초과 (3D·고해상도에서 흔함) 배치↓, 패치 크기↓(128³→64³), mixed float16 , 필요시 keras.backend.clear session() 메모리 ≈ 배치×해상도×채널×깊이. 큰 볼륨은 '패치 학습'이 기본 손실이 nan 학습률 과대 · 입력 미정규화 · log(0) /0 나눗셈 입력 정규화(z score/min max), LR↓(1e 3→1e 4), 손실에 eps 추가 NaN은 대개 '폭발'. 첫 에폭부터면 정규화·LR부터 의심 정확도는 높은데 쓸모없음(소수 클래스 다 놓침) 클래스 불균형에서 accuracy가 다수 클래스에 속음 지표를 macro F1·AUROC로, class weight /오버샘플링 적용 불균형에선 accuracy 금지. 혼동행렬을 항상 같이 본다 loss='sparse categorical crossentropy' 인데 shape 에러 라벨 형태 불일치: sparse(정수) vs categorical(원 핫) 정수 라벨이면 sparse, 원 핫이면 categorical crossentropy 라벨 dtype/shape를 손실과 맞춘다. 이진은 sigmoid + binary crossentropy FileNotFoundError (Drive 경로) Drive 미마운트 또는 경로 오타 drive.mount('/content/drive') 후 pathlib.Path 로 경로 확인 세션마다 재마운트 필요. p.exists() 로 먼저 점검 !pip install 후 ImportError /버전충돌 런타임에 이미 로드된 구버전이 남아있음 설치 후 런타임 재시작 (Runtime→Restart) 뒤 import Colab은 설치≠반영. 무거운 패키지는 첫 셀에서 설치+재시작 학습이 매우 느림 GPU 런타임 아님 / 데이터 로딩 병목 Runtime→GPU 확인( tf.config.list physical devices('GPU') ), tf.data 캐시·prefetch GPU 붙었는지 먼저 확인. I/O 병목은 캐시/프리패치로 검증 점수가 비현실적으로 높음(누수) 같은 환자/슬라이스가 train·val에 섞임 환자 단위 분리 (레코드/케이스 ID로 split) 에러는 안 나지만 최악의 버그. 분할을 ID 기준으로 Shapes ... are incompatible (분할) 마스크와 출력 클래스 수/해상도 불일치 출력 Conv(n classes,...) 와 마스크 원 핫/크기를 맞춤 분할은 출력=입력 해상도. 마스크 채널=클래스 수 How to use 에러가 나면 트레이스백을 /ai debug 에 붙인다 → 무엇/왜/최소수정/재발방지 4줄로 답하고, 교훈적이면 위 표에 한 줄 추가한다. 표에 이미 있으면 그 줄을 먼저 보고, 더 나은 수정이 있으면 그 줄을 개선한다. My notes <! 내가 실제로 겪은 에러와 해결을 여기(또는 위 표)에 남긴다."
   },
   {
    "id": "ailab-2026-0005",
