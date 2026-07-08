@@ -15,6 +15,7 @@ MedKOS 원칙: Markdown이 원본, docs/ailab.js는 파생물. export_papers_web
 from __future__ import annotations
 
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -28,27 +29,35 @@ OUT = ROOT / "docs" / "ailab.js"
 REPO = "ehdbddl06001-ui/my-github-test"
 BRANCH = "main"
 
-# 본문에서 뽑아 웹 카드에 넣을 섹션(순서 = 화면 표시 순서)
-SECTIONS = [
-    "Overview", "Architecture", "Data", "Code walkthrough",
-    "Instructions", "Exercises", "Resources", "My notes",
-]
+def parse_sections(body: str) -> dict[str, str]:
+    """본문의 모든 '## ' 섹션을 **저작 순서대로** {제목: 본문}으로 담는다.
 
+    화이트리스트를 두지 않으므로 카드마다 자유로운 섹션(한국어 포함)을 쓸 수 있고,
+    JSON/JS 모두 삽입 순서를 보존하므로 홈페이지가 저작 순서 그대로 렌더한다.
+    자리표시자 주석(<!-- ... -->, 여러 줄 포함)은 통째로 제거하고, 그러고도 빈 섹션은 버린다.
+    (예: 멘토 노트의 `## 내 답변`은 사용자가 채우기 전엔 안내 주석뿐이라 웹에 나오지 않는다.)
+    """
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.DOTALL)
+    out: dict[str, str] = {}
+    name: str | None = None
+    buf: list[str] = []
 
-def section(body: str, name: str) -> str:
-    """'## name' 섹션 본문을 다음 '## '까지 추출. 자리표시자 주석은 버린다."""
-    marker = f"## {name}"
-    if marker not in body:
-        return ""
-    rest = body.split(marker, 1)[1]
-    lines: list[str] = []
-    for line in rest.splitlines()[1:]:
+    def flush() -> None:
+        if name is None:
+            return
+        text = "\n".join(buf).strip()
+        if text:
+            out[name] = text
+
+    for line in body.splitlines():
         if line.startswith("## "):
-            break
-        if line.strip().startswith("<!--"):
-            continue
-        lines.append(line)
-    return "\n".join(lines).strip()
+            flush()
+            name = line[3:].strip()
+            buf = []
+        elif name is not None:
+            buf.append(line)
+    flush()
+    return out
 
 
 def build_card(path: Path) -> dict | None:
@@ -57,8 +66,7 @@ def build_card(path: Path) -> dict | None:
         print(f"[SKIP] {path.name}: {d.errors}")
         return None
     m = d.meta
-    sections = {name: section(d.body, name) for name in SECTIONS}
-    sections = {k: v for k, v in sections.items() if v}  # 빈 섹션 제거
+    sections = parse_sections(d.body)
     return {
         "id": d.id,
         "topic": m.get("topic", "") or "",
@@ -88,9 +96,11 @@ def load_cards() -> list[dict]:
             c = build_card(p)
             if c:
                 cards.append(c)
-    # roadmap/concept를 먼저, 그다음 최신순
-    kind_rank = {"roadmap": 0, "concept": 1, "project": 2, "weekly": 3}
-    cards.sort(key=lambda c: (kind_rank.get(c["kind"], 9), c["date"]), reverse=False)
+    # mentor(최신 논의)를 맨 위, 그다음 roadmap/concept/project/weekly, 각 그룹 내 최신순.
+    # 안정 정렬을 이용: 먼저 최신순(내림차순)으로 둔 뒤, kind 우선순위로 재정렬한다.
+    kind_rank = {"mentor": 0, "roadmap": 1, "concept": 2, "project": 3, "weekly": 4}
+    cards.sort(key=lambda c: (c["date"], c["id"]), reverse=True)
+    cards.sort(key=lambda c: kind_rank.get(c["kind"], 9))
     return cards
 
 

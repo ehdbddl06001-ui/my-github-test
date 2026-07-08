@@ -125,11 +125,15 @@
 
   // ── 학습 카드 ────────────────────────────────────────────────────
   var SECTION_ICON = {
+    // 프로젝트/개념 카드
     "Overview": "📌 개요", "Architecture": "🧩 구조(도식)", "Data": "📊 데이터",
     "Code walkthrough": "💻 코드", "Instructions": "📖 지시어 해설",
     "Exercises": "🏃 실습 과제", "Resources": "🔗 자료", "My notes": "📝 내 노트",
+    // 멘토(논의) 노트
+    "심화 학습": "🔬 심화 학습", "코드 보완": "🛠 코드 보완",
+    "새 기능 아이디어": "💡 새 기능 아이디어", "다음 주 추천": "➡️ 다음 주 추천",
+    "내 답변": "🗣 내 답변",
   };
-  var SECTION_ORDER = ["Overview", "Architecture", "Data", "Code walkthrough", "Instructions", "Exercises", "Resources", "My notes"];
 
   function renderCards() {
     var host = document.getElementById("cards");
@@ -162,8 +166,9 @@
       det.addEventListener("toggle", function () {
         if (det.open && !body.dataset.done) {
           body.dataset.done = "1";
-          SECTION_ORDER.forEach(function (name) {
-            var text = (c.sections || {})[name];
+          // 섹션은 저작(삽입) 순서 그대로 렌더 — 화이트리스트 없이 어떤 섹션이든 표시
+          Object.keys(c.sections || {}).forEach(function (name) {
+            var text = c.sections[name];
             if (!text) return;
             var sec = el("div", "sec");
             sec.appendChild(el("h4", null, SECTION_ICON[name] || name));
