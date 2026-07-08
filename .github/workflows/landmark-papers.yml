@@ -1,0 +1,91 @@
+name: Landmark papers (weekly)
+
+# 파트(주제)별 '꼭 봐야 하는' 고인용 랜드마크 논문을 인용수로 랭킹해 Markdown 카드로
+# 커밋하고, 같은 실행 안에서 Google Drive 백업까지 끝낸다(scrape-papers.yml 과 대칭).
+#
+# 최신 논문(scrape-papers)은 매일 바뀌지만, 인용수는 하루 단위로 의미 있게 변하지
+# 않는다. 그래서 이 워크플로는 주간 주기로 돈다.
+#
+# Drive 백업 사전 준비는 scrape-papers.yml 주석과 동일(Secret 'RCLONE_CONF_BASE64').
+# Secret이 없으면 백업 단계는 건너뛴다(스크랩·커밋은 정상 진행).
+
+on:
+  schedule:
+    - cron: "0 21 * * 1"   # 매주 월요일 21:00 UTC (KST 화 06:00)
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "주제당 저장할 상위 편수"
+        default: "2"
+      min_citations:
+        description: "최소 인용수 하한선"
+        default: "50"
+      since_year:
+        description: "이 연도 이후만(비우면 제한 없음)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: landmark-papers
+  cancel-in-progress: false
+
+jobs:
+  landmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Rank landmark papers (iCite) → Markdown cards
+        run: |
+          SINCE=""
+          if [ -n "${{ github.event.inputs.since_year }}" ]; then
+            SINCE="--since-year ${{ github.event.inputs.since_year }}"
+          fi
+          python pipelines/scrape_landmark_papers.py \
+            --max "${{ github.event.inputs.max || '2' }}" \
+            --min-citations "${{ github.event.inputs.min_citations || '50' }}" \
+            $SINCE
+
+      - name: Validate frontmatter
+        run: python pipelines/indexer.py --check
+
+      - name: Rebuild web bundle (docs/papers.js)
+        run: python pipelines/export_papers_web.py
+
+      - name: Commit new landmark papers
+        run: |
+          git config user.name  "medkos-bot"
+          git config user.email "medkos-bot@users.noreply.github.com"
+          git add content/papers state/seen_papers.json state/id_counter.json state/seen_topics.json docs/papers.js
+          if git diff --cached --quiet; then
+            echo "새 랜드마크 논문 없음 — 커밋 생략"
+          else
+            git commit -m "랜드마크 논문: $(date -u +%Y-%m-%d) 파트별 고인용 논문 자동 정리"
+            for i in 1 2 3 4; do
+              git push origin HEAD:main && break || { echo "push 실패, ${i}회차 재시도"; sleep $((2**i)); }
+            done
+          fi
+
+      - name: Backup content to Google Drive
+        env:
+          RCLONE_CONF_BASE64: ${{ secrets.RCLONE_CONF_BASE64 }}
+        run: |
+          if [ -z "$RCLONE_CONF_BASE64" ]; then
+            echo "RCLONE_CONF_BASE64 secret 미설정 — Google Drive 백업 건너뜀"
+            exit 0
+          fi
+          curl https://rclone.org/install.sh | sudo bash
+          mkdir -p ~/.config/rclone
+          echo "$RCLONE_CONF_BASE64" | base64 -d > ~/.config/rclone/rclone.conf
+          echo "rclone 원격 확인:"; rclone listremotes
+          rclone sync content/ gdrive:MedKOS/content/ \
+            --drive-use-trash=true --fast-list --verbose

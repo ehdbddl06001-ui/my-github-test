@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "pmid": 40123456,
+      "year": 2021,
+      "citation_count": 1240,
+      "relative_citation_ratio": 18.7,
+      "nih_percentile": 99.2
+    },
+    {
+      "pmid": 40987654,
+      "year": 2019,
+      "citation_count": 47,
+      "relative_citation_ratio": 2.1,
+      "nih_percentile": 82.4
+    }
+  ]
+}

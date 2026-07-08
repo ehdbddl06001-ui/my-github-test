@@ -53,6 +53,7 @@ h1{margin:0 0 4px; font-size:1.5rem}
 .datehead .dhline{flex:1; height:1px; background:var(--line)}
 .datepill{background:rgba(124,92,255,.12); color:#c9bcff; border-color:#4a3d7a}
 .notebadge{background:rgba(124,92,255,.15); color:#c9bcff; border-color:#4a3d7a}
+.landmark{background:rgba(234,179,8,.15); color:#eab308; border-color:#8a6d1f; font-weight:600}
 .noteedit{border-top:1px dashed var(--line); padding-top:10px; margin-top:12px}
 .noteinput{
   width:100%; background:#0b1420; color:var(--ink); border:1px solid var(--line);

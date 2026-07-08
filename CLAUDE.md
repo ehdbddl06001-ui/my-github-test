@@ -36,4 +36,6 @@
 ## 스킬
 - `/daily-run` : 하루치 콘텐츠 생성 오케스트레이터(루틴이 이걸 호출)
 - `/gen-kmle` `/gen-paper` `/gen-card` : 타입별 생성
+- `/scrape-papers` : PubMed 최신 논문 스크랩(recency, 매일)
+- `/landmark-papers` : 파트별 고인용 '꼭 봐야 하는' 논문 정리(impact, 주간). iCite 인용랭킹.
 - `/index-db` : 색인 재빌드/검증
