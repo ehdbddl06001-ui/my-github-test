@@ -28,6 +28,9 @@ description: 매주 도는 의료 AI 실습 오케스트레이터. pipelines/dat
    - frontmatter의 `dataset`은 `datasets.py`의 key와 일치, `week`는 커리큘럼 주차(1~12).
    - `notebook`은 `notebooks/ailab_template.ipynb`(또는 주제 전용 노트북) 경로.
    - Architecture 도식 + Instructions(지시어 해설) 표를 반드시 포함.
+   - **`## Gate` 섹션 필수**: 그 주차의 `metric`·`target`·`deliverable`(datasets.py에서 옴)을
+     적고, `python pipelines/check_week.py --results <파일>` 진급 명령을 넣는다. 노트북은
+     끝에서 `results.json`({week, metric, value})을 남기게 한다.
 
 4. **노트북 연결** — 새 구조가 필요하면 `notebooks/`에 노트북을 추가하고 `colab_url`을
    frontmatter에 링크(`https://colab.research.google.com/github/<repo>/blob/main/notebooks/<file>`).
@@ -43,6 +46,13 @@ description: 매주 도는 의료 AI 실습 오케스트레이터. pipelines/dat
 
 6. **주제 기록 + 커밋** — `record_topic('ailab', '<goal>')` 후, 새 `.md` + `state/*.json`
    + `docs/` 번들 + (있다면)새 노트북을 **같은 커밋**에. **claude/ 브랜치 push → PR**.
+
+## 완료 게이트 (지속 연습의 핵심)
+- 사용자가 바빠 매주 못 만들어도, **판정→진급은 코드가** 한다: 노트북이 남긴 `results.json`을
+  `python pipelines/check_week.py --results <파일>`(또는 `--value <값>`)로 판정 → 기준 통과 시
+  자동으로 다음 주차로 넘어가고 다음 과제를 출력한다. 진도는 `state/ailab_progress.json`.
+- 판정은 **결정론(지표 임계값)**만 신뢰한다. '학습됐다'를 LLM이 지어내지 않는다. 질적 판단
+  (코드 품질·이해도)은 `/ai-mentor`가 맡고, 애매하면 `check_week.py --pass`로 승인한다.
 
 ## 주의
 - 실습 데이터가 `credentialed`(🔴, 예: MIMIC)면 카드에 접근 절차를 명시하고, 바로 못 받는

@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 180,
+  "total": 181,
   "byType": {
    "kmle": 97,
-   "ailab": 4,
+   "ailab": 5,
    "usmle": 36,
    "paper": 40,
    "basic": 3
@@ -45,13 +45,14 @@ window.MEDKOS_INDEX = {
    "Internal Medicine": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "Medical Imaging AI": 1
+   "Medical Imaging AI": 1,
+   "Medical Signal AI": 1
   },
   "byConfidence": {
    "high": 138,
-   "medium": 42
+   "medium": 43
   },
-  "tagCount": 476
+  "tagCount": 480
  },
  "docs": [
   {
@@ -624,6 +625,26 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Cardiac Tamponade cardiac tamponade Beck triad pulsus paradoxus electrical alternans pericardiocentesis KMLE 2026 / Claude Routine 55세 남성이 이틀 전부터 악화된 호흡곤란으로 응급실에 왔다. 혈압 84/62 mmHg, 맥박 120회/분이며 경정맥이 심하게 팽대되어 있고 심음이 멀게 들린다. 흡기 시 수축기혈압이 18 mmHg 떨어진다. 심전도에서 QRS 진폭이 박동마다 교대로 변한다. 다음 중 가장 먼저 시행할 처치는? A. 심낭천자 B. 정맥 이뇨제 투여 C. 베타차단제 정주 D. 혈전용해제 투여 E. 좌위 취하고 경과관찰 Beck 삼징(저혈압·경정맥팽대·심음감소)+기이맥( 10 mmHg)+전기교대 → 심장눌림증(폐쇄성 쇼크). 즉시 심낭천자로 심낭액을 배액해야 하며, 전부하를 줄이는 이뇨·혈관확장·서맥 유발은 금기다."
   },
   {
+   "id": "ailab-2026-0005",
+   "type": "ailab",
+   "topic": "Medical Signal AI",
+   "subtopic": "ECG Arrhythmia Classification (MIT-BIH)",
+   "tags": [
+    "ECG",
+    "arrhythmia",
+    "1D-CNN",
+    "MIT-BIH",
+    "AAMI",
+    "imbalanced"
+   ],
+   "source": "MedKOS AI랩 1주차 / PhysioNet MIT-BIH",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/ailab/ailab-2026-0005.md",
+   "snippet": "Overview 커리큘럼 1주차 . 가장 가벼운 의료 딥러닝으로 신호 → 라벨 전 과정을 하루에 완주한다. 심전도(1D 신호) 한 비트를 보고 부정맥 유형을 맞히는 1D CNN 분류기 . 완료 게이트 : AAMI 5클래스 macro F1 ≥ 0.80 . 달성하면 check week.py 가 판정해 자동으로 2주차(PTB XL 12유도)로 넘어간다. → Gate 참조. 왜 이걸 1주차로 : 이미지보다 가볍고(1D), 오픈 데이터",
+   "text": "Medical Signal AI ECG Arrhythmia Classification (MIT-BIH) ECG arrhythmia 1D-CNN MIT-BIH AAMI imbalanced MedKOS AI랩 1주차 / PhysioNet MIT-BIH Overview 커리큘럼 1주차 . 가장 가벼운 의료 딥러닝으로 신호 → 라벨 전 과정을 하루에 완주한다. 심전도(1D 신호) 한 비트를 보고 부정맥 유형을 맞히는 1D CNN 분류기 . 완료 게이트 : AAMI 5클래스 macro F1 ≥ 0.80 . 달성하면 check week.py 가 판정해 자동으로 2주차(PTB XL 12유도)로 넘어간다. → Gate 참조. 왜 이걸 1주차로 : 이미지보다 가볍고(1D), 오픈 데이터라 바로 받으며, 전처리·불균형· 평가지표라는 핵심 3요소를 한 번에 만난다. 기존 접근 : MIT BIH는 부정맥 연구의 고전. AAMI EC57 표준으로 비트를 N/S/V/F/Q 5군으로 묶어 분류하는 것이 관례다. 고전 baseline은 1D CNN·RNN이며 비트 단위 정확도는 매우 높지만, 환자 단위 분리 를 하면 난도가 확 오른다(그래서 이 과제의 진짜 공부 포인트). Architecture 1D CNN = 이미지의 2D 합성곱을 시간축 1D 로 바꾼 것. 신호의 국소 파형(QRS 모양)을 훑어 비트 유형을 판단한다. mermaid flowchart LR A[\"한 비트\\n(R peak ±128 = 256 샘플, 1채널)\"] C1[\"Conv1D 32 + Pool\"] C1 C2[\"Conv1D 64 + Pool\"] C2 C3[\"Conv1D 128\"] C3 G[\"GlobalAveragePooling1D\"] G D[\"Dense 64 + Dropout\"] D O[\"Dense 5 + softmax\\n→ N·S·V·F·Q 확률\"] Data MIT BIH Arrhythmia (PhysioNet, 오픈, 48 레코드·2유도·360Hz). wfdb 로 직접 스트리밍. 비트 추출 : 주석(atr)의 R peak 위치 ±128 샘플을 한 비트로 자르고 비트별 z score 정규화. 라벨(AAMI 5군) : N(정상계열)·S(상심실성)·V(심실성)·F(융합)·Q(미분류). 심한 불균형 (N이 대부분) → 클래스 가중치로 보정. 환자 단위 분리 : 레코드를 train/test로 나눠 같은 환자가 양쪽에 섞이지 않게 한다 (섞이면 점수가 부풀려짐 — 임상 연구로 그대로 이어지는 핵심 개념). Code walkthrough 핵심만. 전체는 notebook (Colab)에서 실행한다. python 비트 하나 = R peak 양옆을 자른 256 샘플, 비트별 정규화 beat = ch[pos 128:pos+128] beat = (beat beat.mean()) / (beat.std() + 1e 6) 1D CNN from tensorflow.keras import layers, models model = models.Sequential([ layers.Input((256, 1)), layers.Conv1D(32, 7, activation=\"relu\"), layers.MaxPool1D(2), layers.Conv1D(64, 5, activation=\"relu\"), layers.MaxPool1D(2), layers.Conv1D(128, 3, activation=\"relu\"), layers.GlobalAveragePooling1D(), layers.Dense(64, activation=\"relu\"), layers.Dropout(0.3), layers.Dense(5, activation=\"softmax\"), ]) model.compile(optimizer=\"adam\", loss=\"sparse categorical crossentropy\", metrics=[\"accuracy\"]) model.fit(Xtr, ytr, validation split=0.1, epochs=8, class weight=cw) cw=클래스 가중치 평가: 불균형이라 accuracy가 아니라 macro F1로 본다 from sklearn.metrics import f1 score macro f1 = f1 score(yte, model.predict(Xte).argmax(1), average=\"macro\") Instructions 코드의 각 지시어가 뭘 시키는지(1D 버전). 지시어 무엇을 시키는가 왜 wfdb.rdsamp/rdann 신호와 R peak 주석을 읽어라 원신호 → 비트 조각의 원천 Conv1D(f, k) 길이 k 커널 f개로 시간축 국소 파형을 훑어라 QRS 모양 같은 국소 특징 MaxPool1D(2) 시간축 절반으로 요약 시야↑·계산량↓ GlobalAveragePooling1D 시간축 전체를 하나로 평균 가변 위치에 강건한 요약 Dropout(0.3) 학습 때 뉴런 30%를 끔 과적합 억제 softmax(5) 5클래스 확률을 내라 비트 유형 분류 class weight 드문 클래스에 가중치를 더 줘라 N 편중(불균형) 보정 — accuracy 함정 회피 f1 score(macro) 클래스별 F1의 단순평균으로 채점 불균형에서 소수 클래스도 공평히 평가 Gate 기준 : macro f1 ≥ 0.80 (AAMI 5클래스, 환자 단위 분리) 산출물 : 혼동행렬 + macro F1, 체크포인트를 Drive에 저장 판정/진급 : bash 노트북이 남긴 결과로 판정(통과 시 자동으로 2주차로) python pipelines/check week.py results week01 results.json 또는 값만 직접: python pipelines/check week.py value 0.83 통과가 애매하지만 개념을 충분히 이해했다면 /ai mentor 질적 리뷰 후 pass 로 승인 가능. Exercises 1. 완주 : Colab에서 끝까지 돌려 macro F1과 혼동행렬을 얻는다. 2. 관찰 : 어느 클래스가 약한가(보통 S·F)? 왜? 한 문단으로 My notes 에 적는다. 3. 개선 : (a) 시프트·노이즈 증강 (b) Residual 블록 (c) 에폭/학습률 조정 중 하나로 macro F1을 올려본다. 4. 진급 : 기준을 넘으면 check week.py 로 2주차(PTB XL)로 넘어간다. Resources 데이터: https://physionet.org/content/mitdb/ · WFDB 파이썬: https://github.com/MIT LCP/wfdb python AAMI EC57 표준(비트 5군 매핑) · MedKOS 기존 ECG 에셋: assets/ecg/mitdb 100.json 신호 딥러닝 개론: PhysioNet Challenges My notes <! 실습 결과(macro F1), 약한 클래스와 이유, 개선 시도와 효과를 적는다."
+  },
+  {
    "id": "ailab-2026-0004",
    "type": "ailab",
    "topic": "AI Mentorship",
@@ -698,7 +719,7 @@ window.MEDKOS_INDEX = {
    "date": "2026-07-08",
    "path": "content/ailab/ailab-2026-0001.md",
    "snippet": "Overview 의료 AI·코딩을 매주 하나씩 직접 돌려보며 익히는 12주 로드맵이다. 각 주차는 pipelines/datasets.py 의 CURRICULUM 과 1:1로 묶여 있고, 1주차(신호)부터 순서대로 진행한다(달력이 아니라 내 진도 기준, 진도는 state/ailab progress.json 에 저장): bash python pipelines/datasets.py 현재 주차 주제 + 오픈 데이터 카탈로그 pytho",
-   "text": "Medical AI Curriculum 12-Week Hands-on Roadmap roadmap curriculum weekly colab open-data MedKOS AI랩 커리큘럼 Overview 의료 AI·코딩을 매주 하나씩 직접 돌려보며 익히는 12주 로드맵이다. 각 주차는 pipelines/datasets.py 의 CURRICULUM 과 1:1로 묶여 있고, 1주차(신호)부터 순서대로 진행한다(달력이 아니라 내 진도 기준, 진도는 state/ailab progress.json 에 저장): bash python pipelines/datasets.py 현재 주차 주제 + 오픈 데이터 카탈로그 python pipelines/datasets.py list 12주 전체 + 진도(현재/완료) python pipelines/datasets.py advance 이번 주 완료 → 다음 주차로 원칙은 MedKOS와 같다 — 신호 → 2D 영상 → 3D → 병리/멀티모달 순으로 난도를 올린다. 가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다. Architecture 학습 경로(왼쪽이 쉽고 오른쪽이 어렵다): mermaid flowchart LR ECG[\"① 신호(ECG)\\n1D CNN\"] XR[\"② 흉부 X선\\n전이학습·Grad CAM\"] XR SKIN[\"③ 피부·안저\\n불균형·순서형\"] SKIN PATH[\"④ 병리 패치\\nPCam\"] PATH SEG2D[\"⑤ 2D 분할\\nU Net·Dice\"] SEG2D SEG3D[\"⑥ 3D 분할\\n3D U Net·MONAI\"] SEG3D SSL[\"⑦ 자기지도·표형\\nSSL·MIMIC\"] Data 아래 12주를 순서대로 진행한다(현재 주차는 datasets.py 가 진도로 관리). 🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보). 주 목표 모델 데이터셋 접근 1 심전도 부정맥 분류 1D CNN MIT BIH 🟢 2 12유도 다중라벨 진단 1D ResNet PTB XL 🟢 3 흉부 X선 폐렴(전이학습) ResNet50 NIH ChestX ray14 🟢 4 흉부 14종 + Grad CAM DenseNet121 CheXpert 🟡 5 피부병변 7종(불균형) EfficientNet HAM10000 🟡 6 당뇨망막병증 등급 EfficientNet+회귀 APTOS 2019 🟡 7 병리 패치 전이 CNN PatchCamelyon 🟢 8 폐 CT 결절 분할 2D U Net MSD Lung 🟢 9 3D 뇌종양 분할(입문) 3D U Net MSD Brain 🟢 10 3D 뇌종양 분할(심화) SwinUNETR BraTS 🟡 11 정상 뇌 자기지도 Autoencoder/SSL IXI 🟢 12 ICU 임상 예측(표형) GBM/시계열 MIMIC IV 🔴 Instructions 매주 도는 절차는 /ai weekly 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에): 1. python pipelines/datasets.py 로 이번 주 주제·데이터 확인 2. /gen ailab 로 그 주제의 실습 카드(분석·도식·지시어 해설)를 content/ailab/ 에 생성 3. Colab 노트북( notebooks/ )에서 직접 돌리고, 결과·막힌 점을 카드 My notes 에 기록 4. indexer.py check → export ailab web.py → 커밋 (홈페이지 🤖 AI랩에 반영) Exercises 이번 주 주제를 datasets.py 로 확인하고, 해당 데이터셋 링크를 실제로 열어본다. 첫 주(신호)는 반드시 끝까지 완주 해 '데이터→모델→평가'의 감을 잡는다. 매주 카드에 재현 가능한 한 줄 결과 (Dice/AUROC 등)를 남긴다. Resources 프로젝트 분석 예시: ailab 2026 0002 (Keras 3D 뇌종양 분할) Colab·Drive 셋업 & 지시어 읽는 법: ailab 2026 0003 오픈 데이터 레지스트리: pipelines/datasets.py My notes <! 주차별 진행·회고를 여기에."
+   "text": "Medical AI Curriculum 12-Week Hands-on Roadmap roadmap curriculum weekly colab open-data MedKOS AI랩 커리큘럼 Overview 의료 AI·코딩을 매주 하나씩 직접 돌려보며 익히는 12주 로드맵이다. 각 주차는 pipelines/datasets.py 의 CURRICULUM 과 1:1로 묶여 있고, 1주차(신호)부터 순서대로 진행한다(달력이 아니라 내 진도 기준, 진도는 state/ailab progress.json 에 저장): bash python pipelines/datasets.py 현재 주차 주제 + 오픈 데이터 카탈로그 python pipelines/datasets.py list 12주 전체 + 진도(현재/완료) python pipelines/datasets.py advance 이번 주 완료 → 다음 주차로 원칙은 MedKOS와 같다 — 신호 → 2D 영상 → 3D → 병리/멀티모달 순으로 난도를 올린다. 가벼운 데이터로 '전 과정 1회 완주'를 먼저 하고, 뒤로 갈수록 규모·구조를 키운다. Architecture 학습 경로(왼쪽이 쉽고 오른쪽이 어렵다): mermaid flowchart LR ECG[\"① 신호(ECG)\\n1D CNN\"] XR[\"② 흉부 X선\\n전이학습·Grad CAM\"] XR SKIN[\"③ 피부·안저\\n불균형·순서형\"] SKIN PATH[\"④ 병리 패치\\nPCam\"] PATH SEG2D[\"⑤ 2D 분할\\nU Net·Dice\"] SEG2D SEG3D[\"⑥ 3D 분할\\n3D U Net·MONAI\"] SEG3D SSL[\"⑦ 자기지도·표형\\nSSL·MIMIC\"] Data 아래 12주를 순서대로 진행한다(현재 주차는 datasets.py 가 진도로 관리). 🟢=가입 없이 바로, 🟡=무료가입, 🔴=자격심사(민감정보). 주 목표 모델 데이터셋 접근 1 심전도 부정맥 분류 1D CNN MIT BIH 🟢 2 12유도 다중라벨 진단 1D ResNet PTB XL 🟢 3 흉부 X선 폐렴(전이학습) ResNet50 NIH ChestX ray14 🟢 4 흉부 14종 + Grad CAM DenseNet121 CheXpert 🟡 5 피부병변 7종(불균형) EfficientNet HAM10000 🟡 6 당뇨망막병증 등급 EfficientNet+회귀 APTOS 2019 🟡 7 병리 패치 전이 CNN PatchCamelyon 🟢 8 폐 CT 결절 분할 2D U Net MSD Lung 🟢 9 3D 뇌종양 분할(입문) 3D U Net MSD Brain 🟢 10 3D 뇌종양 분할(심화) SwinUNETR BraTS 🟡 11 정상 뇌 자기지도 Autoencoder/SSL IXI 🟢 12 ICU 임상 예측(표형) GBM/시계열 MIMIC IV 🔴 Instructions 매주 도는 절차는 /ai weekly 스킬이 오케스트레이션한다(얇은 루틴, 규칙은 repo에): 1. python pipelines/datasets.py 로 현재 주차 주제·데이터· 통과 기준 확인 2. /gen ailab 로 그 주제의 실습 카드(분석·도식·지시어 해설 + Gate )를 생성 3. Colab 노트북( notebooks/ )에서 직접 돌리고, 결과·막힌 점을 카드 My notes 에 기록 4. 완료 판정 → 자동 진급 : 노트북이 results.json 을 남기면 python pipelines/check week.py results <파일 가 기준과 비교해 통과 시 다음 주차로. (바빠서 매주 못 만들어도, 기준을 넘긴 주만 골라 진급할 수 있다.) 5. indexer.py check → export ailab web.py → 커밋 (홈페이지 🤖 AI랩에 반영) Exercises 이번 주 주제를 datasets.py 로 확인하고, 해당 데이터셋 링크를 실제로 열어본다. 첫 주(신호)는 반드시 끝까지 완주 해 '데이터→모델→평가'의 감을 잡는다. 매주 카드에 재현 가능한 한 줄 결과 (Dice/AUROC 등)를 남긴다. Resources 프로젝트 분석 예시: ailab 2026 0002 (Keras 3D 뇌종양 분할) Colab·Drive 셋업 & 지시어 읽는 법: ailab 2026 0003 오픈 데이터 레지스트리: pipelines/datasets.py My notes <! 주차별 진행·회고를 여기에."
   },
   {
    "id": "usmle-2026-0036",

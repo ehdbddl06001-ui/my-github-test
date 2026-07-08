@@ -77,6 +77,8 @@
       '<span class="badgep">양식 ' + esc(DATA.modalityLabels[w.modality] || w.modality) + '</span>' +
       '<span class="acc acc-' + esc(w.access) + '">' + (ACC_KO[w.access] || w.access) + '</span></p>' +
       '<p class="muted" style="margin:4px 0">💡 ' + esc(w.why) + '</p>' +
+      (w.metric ? '<p style="margin:4px 0">🚦 통과 기준: <b>' + esc(w.metric) + ' ≥ ' + esc(w.target) + '</b>' +
+        (w.deliverable ? ' <span class="muted">· ' + esc(w.deliverable) + '</span>' : '') + '</p>' : '') +
       '<p style="margin:6px 0">📦 ' + esc(w.dataset_name) +
       (w.dataset_url ? ' · <a href="' + esc(w.dataset_url) + '" target="_blank" rel="noopener">데이터 열기 ↗</a>' : "") +
       '</p>';
@@ -130,6 +132,7 @@
     "Overview": "📌 개요", "Architecture": "🧩 구조(도식)", "Data": "📊 데이터",
     "Code walkthrough": "💻 코드", "Instructions": "📖 지시어 해설",
     "Exercises": "🏃 실습 과제", "Resources": "🔗 자료", "My notes": "📝 내 노트",
+    "Gate": "🚦 완료 게이트",
     // 멘토(논의) 노트
     "심화 학습": "🔬 심화 학습", "코드 보완": "🛠 코드 보완",
     "새 기능 아이디어": "💡 새 기능 아이디어", "다음 주 추천": "➡️ 다음 주 추천",

@@ -106,18 +106,28 @@ def set_ailab_week(n: int) -> None:
     _write(AILAB_PROGRESS_FILE, data)
 
 
-def mark_ailab_done(week: int, when: str | None = None) -> None:
-    """해당 주차를 완료로 기록."""
+def mark_ailab_done(
+    week: int, when: str | None = None,
+    metric: str | None = None, value: float | None = None,
+) -> None:
+    """해당 주차를 완료로 기록(달성 지표·값도 함께 남길 수 있다)."""
     when = when or date.today().isoformat()
     data = _read(AILAB_PROGRESS_FILE)
-    data.setdefault("done", {})[str(week)] = when
+    entry: dict = {"date": when}
+    if metric:
+        entry["metric"] = metric
+    if value is not None:
+        entry["value"] = value
+    data.setdefault("done", {})[str(week)] = entry
     _write(AILAB_PROGRESS_FILE, data)
 
 
-def advance_ailab_week(total: int) -> int:
+def advance_ailab_week(
+    total: int, metric: str | None = None, value: float | None = None,
+) -> int:
     """현재 주차를 완료 처리하고 다음(최대 total)으로 이동. 새 현재 주차를 반환."""
     cur = ailab_week()
-    mark_ailab_done(cur)
+    mark_ailab_done(cur, metric=metric, value=value)
     nxt = min(cur + 1, int(total))
     set_ailab_week(nxt)
     return nxt

@@ -54,8 +54,20 @@ def test_sequential_weeks() -> None:
     assert weekly_topic()["week"] == current_topic()["week"]
 
 
+def test_completion_gates() -> None:
+    # 모든 주차에 완료 게이트(metric·target·deliverable)가 있어야 한다
+    for i, item in enumerate(CURRICULUM, start=1):
+        assert item.get("metric"), f"{i}주차: metric 누락"
+        assert item.get("target") is not None, f"{i}주차: target 누락"
+        assert isinstance(item["target"], (int, float)), f"{i}주차: target은 숫자여야 함"
+        assert item.get("deliverable"), f"{i}주차: deliverable 누락"
+        t = topic_for_week(i)
+        assert t["metric"] == item["metric"] and t["target"] == item["target"]
+
+
 def main() -> int:
-    tests = [test_dataset_shape, test_curriculum_links, test_sequential_weeks]
+    tests = [test_dataset_shape, test_curriculum_links, test_sequential_weeks,
+             test_completion_gates]
     failed = 0
     for t in tests:
         try:

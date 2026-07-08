@@ -272,31 +272,59 @@ MODALITY_LABELS = {
 
 # ── 12주 실습 커리큘럼 ───────────────────────────────────────────────────────
 # 순서 = 학습 경로(신호 → 2D 영상 → 3D → 병리/멀티모달). 주차 선정은 코드가 한다.
+# 각 주차엔 '완료 게이트'가 있다: metric(지표)·target(통과 임계값)·deliverable(산출물).
+# 노트북이 results.json에 {"metric","value"}를 쓰면 check_week.py가 target과 비교해
+# 통과 시 자동으로 다음 주차로 넘긴다. target은 입문자 기준의 '가이드'이며(절대선 아님),
+# 애매하면 /ai-mentor의 질적 통과로 보완한다.
 CURRICULUM: list[dict] = [
     {"goal": "심전도 1D-CNN 부정맥 분류", "dataset": "mitdb", "arch": "1D-CNN",
-     "why": "가장 가벼운 의료 딥러닝. 신호 → 라벨의 전 과정을 하루에 끝낸다."},
+     "why": "가장 가벼운 의료 딥러닝. 신호 → 라벨의 전 과정을 하루에 끝낸다.",
+     "metric": "macro_f1", "target": 0.80,
+     "deliverable": "5클래스(AAMI) 비트 분류 혼동행렬 + macro-F1, 체크포인트를 Drive에 저장"},
     {"goal": "12유도 ECG 다중라벨 진단", "dataset": "ptb-xl", "arch": "1D-ResNet",
-     "why": "다중라벨·클래스불균형·AUROC를 실제 규모에서 경험."},
+     "why": "다중라벨·클래스불균형·AUROC를 실제 규모에서 경험.",
+     "metric": "macro_auroc", "target": 0.85,
+     "deliverable": "진단 상위클래스 다중라벨 macro-AUROC + 클래스별 AUROC 표"},
     {"goal": "흉부 X선 폐렴 이진분류(전이학습)", "dataset": "nih-cxr14", "arch": "ResNet50(전이학습)",
-     "why": "ImageNet 사전학습 → 의료영상 미세조정의 표준 레시피."},
+     "why": "ImageNet 사전학습 → 의료영상 미세조정의 표준 레시피.",
+     "metric": "auroc", "target": 0.80,
+     "deliverable": "폐렴 vs 정상 AUROC + ROC 곡선, 사전학습/미세조정 비교"},
     {"goal": "흉부 X선 14종 다중라벨 + Grad-CAM", "dataset": "chexpert", "arch": "DenseNet121",
-     "why": "불확실 라벨 처리 + 설명가능성(Grad-CAM) 시각화."},
+     "why": "불확실 라벨 처리 + 설명가능성(Grad-CAM) 시각화.",
+     "metric": "macro_auroc", "target": 0.80,
+     "deliverable": "5개 주요 소견 macro-AUROC + Grad-CAM 히트맵 1장"},
     {"goal": "피부병변 7종 분류(불균형 처리)", "dataset": "ham10000", "arch": "EfficientNet",
-     "why": "클래스 가중치·증강으로 불균형을 다루는 법."},
+     "why": "클래스 가중치·증강으로 불균형을 다루는 법.",
+     "metric": "macro_f1", "target": 0.70,
+     "deliverable": "7클래스 macro-F1 + 혼동행렬, 클래스가중치 유무 비교"},
     {"goal": "당뇨망막병증 순서형 등급", "dataset": "aptos2019", "arch": "EfficientNet + 회귀",
-     "why": "순서형 출력·QWK 지표라는 다른 문제틀을 경험."},
+     "why": "순서형 출력·QWK 지표라는 다른 문제틀을 경험.",
+     "metric": "qwk", "target": 0.80,
+     "deliverable": "5등급 Quadratic Weighted Kappa + 예측 분포"},
     {"goal": "병리 패치 전이 이진분류", "dataset": "pcam", "arch": "CNN",
-     "why": "병리 입문. 작은 패치라 무료 Colab로 끝까지 학습 가능."},
+     "why": "병리 입문. 작은 패치라 무료 Colab로 끝까지 학습 가능.",
+     "metric": "auroc", "target": 0.90,
+     "deliverable": "전이 vs 정상 patch AUROC + 오분류 패치 예시"},
     {"goal": "폐 CT 결절 분할(2D 슬라이스)", "dataset": "msd-lung", "arch": "2D U-Net",
-     "why": "분할(segmentation) 문제와 Dice 손실 첫 경험."},
+     "why": "분할(segmentation) 문제와 Dice 손실 첫 경험.",
+     "metric": "dice", "target": 0.60,
+     "deliverable": "검증 Dice + 예측 마스크 오버레이 1장"},
     {"goal": "3D 뇌종양 분할 — 입문", "dataset": "msd-brain", "arch": "3D U-Net",
-     "why": "Keras 공식 예제 재현. 볼륨 데이터·패치 학습·메모리 관리."},
+     "why": "Keras 공식 예제 재현. 볼륨 데이터·패치 학습·메모리 관리.",
+     "metric": "dice", "target": 0.65,
+     "deliverable": "전체종양(WT) Dice + 3D 예측 슬라이스 캡처"},
     {"goal": "3D 뇌종양 분할 — 심화(MONAI)", "dataset": "brats", "arch": "SegResNet/SwinUNETR",
-     "why": "MONAI 파이프라인·데이터 증강·후처리로 성능을 끌어올린다."},
+     "why": "MONAI 파이프라인·데이터 증강·후처리로 성능을 끌어올린다.",
+     "metric": "dice", "target": 0.75,
+     "deliverable": "WT/TC/ET 평균 Dice + 9주차 대비 개선폭"},
     {"goal": "정상 뇌 MRI 자기지도 사전학습", "dataset": "ixi", "arch": "Autoencoder/SSL",
-     "why": "라벨 없이 표현학습. 이후 소량 라벨 미세조정으로 연결."},
+     "why": "라벨 없이 표현학습. 이후 소량 라벨 미세조정으로 연결.",
+     "metric": "downstream_gain", "target": 0.0,
+     "deliverable": "SSL 사전학습 유무의 다운스트림 성능 차이(양수면 통과)"},
     {"goal": "ICU 임상 예측(표형)", "dataset": "mimic-iv", "arch": "GBM/시계열",
-     "why": "영상이 아닌 표형·시계열 임상예측으로 시야를 넓힌다."},
+     "why": "영상이 아닌 표형·시계열 임상예측으로 시야를 넓힌다.",
+     "metric": "auroc", "target": 0.80,
+     "deliverable": "원내사망 예측 AUROC + 특징중요도 상위 10"},
 ]
 
 
@@ -331,6 +359,10 @@ def topic_for_week(n: int) -> dict:
         "modality": ds.get("modality", ""),
         "access": ds.get("access", ""),
         "colab_ready": ds.get("colab_ready", False),
+        # 완료 게이트
+        "metric": item.get("metric", ""),
+        "target": item.get("target"),
+        "deliverable": item.get("deliverable", ""),
         "done": str(n) in prog["done"],
     }
 
@@ -368,6 +400,11 @@ def _print_week(wt: dict) -> None:
     print(f"  📦 데이터: {wt['dataset_name']}  ({wt['access']})")
     print(f"  🔗 {wt['dataset_url']}")
     print(f"  💡 {wt['why']}")
+    if wt.get("metric"):
+        print(f"  ✅ 통과 기준: {wt['metric']} ≥ {wt['target']}  →  달성 시 "
+              f"`python pipelines/check_week.py --value <값>`")
+    if wt.get("deliverable"):
+        print(f"  📝 산출물: {wt['deliverable']}")
 
 
 def _print_curriculum() -> None:
