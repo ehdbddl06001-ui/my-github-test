@@ -5,42 +5,42 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 182,
+  "total": 188,
   "byType": {
+   "usmle": 42,
    "kmle": 97,
    "ailab": 6,
-   "usmle": 36,
    "paper": 40,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 21,
+   "Cardiology": 22,
    "Nephrology": 14,
    "Infectious Disease": 13,
    "Pediatrics": 12,
+   "Neurology": 9,
    "Obstetrics & Gynecology": 9,
-   "Neurology": 8,
-   "Psychiatry": 8,
+   "Psychiatry": 9,
    "Endocrinology": 7,
+   "Pathology": 7,
    "Gastroenterology": 6,
    "General Surgery": 6,
    "Ophthalmology": 6,
    "Orthopedics": 6,
-   "Pathology": 6,
+   "Physiology": 6,
    "Pulmonology": 6,
    "Rheumatology": 6,
    "Hematology": 5,
-   "Physiology": 5,
    "Surgery": 5,
    "Dermatology": 4,
    "Hematology-Oncology": 4,
    "Laboratory Medicine": 4,
    "Microbiology": 3,
    "Oncology": 3,
+   "Pharmacology": 3,
    "Allergy": 2,
    "Biochemistry": 2,
    "Immunology": 2,
-   "Pharmacology": 2,
    "AI Mentorship": 1,
    "Internal Medicine": 1,
    "ML Debugging": 1,
@@ -50,12 +50,127 @@ window.MEDKOS_INDEX = {
    "Medical Signal AI": 1
   },
   "byConfidence": {
-   "high": 139,
+   "high": 145,
    "medium": 43
   },
-  "tagCount": 484
+  "tagCount": 510
  },
  "docs": [
+  {
+   "id": "usmle-2026-0042",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Neuroleptic Malignant Syndrome vs Serotonin Syndrome (differentiating features)",
+   "tags": [
+    "neuroleptic-malignant-syndrome",
+    "serotonin-syndrome",
+    "dantrolene",
+    "bromocriptine",
+    "antipsychotic"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · drug-induced hyperthermic syndromes)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0042.md",
+   "snippet": "A 45 year old man with schizophrenia is brought to the emergency department by his group home staff. His haloperidol dose was increased 5 days ago. Over the past 2 days he has become progressively confused with a fever and profuse diaphores",
+   "text": "Psychiatry Neuroleptic Malignant Syndrome vs Serotonin Syndrome (differentiating features) neuroleptic-malignant-syndrome serotonin-syndrome dantrolene bromocriptine antipsychotic USMLE-style / MedKOS (psychiatry · drug-induced hyperthermic syndromes) A 45 year old man with schizophrenia is brought to the emergency department by his group home staff. His haloperidol dose was increased 5 days ago. Over the past 2 days he has become progressively confused with a fever and profuse diaphoresis. On examination he has generalized 'lead pipe' rigidity without clonus, and deep tendon reflexes are normal rather than increased. His vital signs and CK are shown. Which of the following clinical features most strongly favors this diagnosis over serotonin syndrome? A. Presence of hyperreflexia with inducible clonus in the lower extremities B. Rapid symptom onset within hours of the causative drug exposure C. Symptom onset over several days after a dopamine blocking agent was started or increased, with rigidity but no clonus D. Gastrointestinal hyperactivity with diarrhea and hyperactive bowel sounds E. Dilated pupils and ocular clonus on examination Neuroleptic malignant syndrome typically develops over days after starting or increasing a dopamine antagonist and produces lead pipe rigidity without clonus or hyperreflexia, whereas serotonin syndrome develops within hours and features clonus, hyperreflexia, mydriasis, and GI hyperactivity — the tempo of onset plus the absence of clonus/hyperreflexia is the most reliable bedside discriminator."
+  },
+  {
+   "id": "usmle-2026-0041",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Guillain-Barré Syndrome — Respiratory Monitoring Before Definitive Therapy",
+   "tags": [
+    "Guillain-Barre",
+    "ascending-paralysis",
+    "FVC-monitoring",
+    "respiratory-failure",
+    "IVIG"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute neuromuscular emergency)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0041.md",
+   "snippet": "A 34 year old woman comes to the emergency department because of progressive weakness over the past 3 days, beginning in her feet and now involving her legs and hands. She reports mild difficulty swallowing but no shortness of breath. Two w",
+   "text": "Neurology Guillain-Barré Syndrome — Respiratory Monitoring Before Definitive Therapy Guillain-Barre ascending-paralysis FVC-monitoring respiratory-failure IVIG USMLE-style / MedKOS (neurology · acute neuromuscular emergency) A 34 year old woman comes to the emergency department because of progressive weakness over the past 3 days, beginning in her feet and now involving her legs and hands. She reports mild difficulty swallowing but no shortness of breath. Two weeks ago she had a bout of bloody diarrhea that resolved without treatment. On examination she has symmetric weakness, absent deep tendon reflexes, and intact sensation. Her vital signs are currently stable. Which of the following is the most appropriate immediate next step in management? A. Begin oral corticosteroids to reduce inflammatory demyelination B. Start intravenous immunoglobulin immediately, without further assessment of respiratory status C. Reassure the patient and arrange outpatient neurology follow up in one week given her stable vital signs D. Obtain nerve conduction studies to confirm the diagnosis before initiating any monitoring or treatment E. Admit for close monitoring of forced vital capacity (FVC) and negative inspiratory force to anticipate respiratory failure This presentation (post infectious ascending, symmetric weakness with areflexia and mild bulbar involvement) is classic Guillain Barré syndrome. Before anything else, the immediate priority is admitting for serial FVC/NIF monitoring, because respiratory failure can develop rapidly and unpredictably even when current vitals look reassuring; IVIG or plasmapheresis follow once safety monitoring is in place."
+  },
+  {
+   "id": "usmle-2026-0040",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Inferior Wall MI with Suspected Right Ventricular Involvement (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "inferior-MI",
+    "right-ventricular-infarction",
+    "preload-dependent",
+    "nitrate-contraindication"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0040.md",
+   "snippet": "A 61 year old man arrives with 90 minutes of crushing substernal chest pain radiating to the jaw and diaphoresis. His blood pressure is 88/56 mmHg and heart rate is 58/min. The 12 lead electrocardiogram shown is obtained. A cardiac catheter",
+   "text": "Cardiology Inferior Wall MI with Suspected Right Ventricular Involvement (12-lead, real ECG) ECG 12-lead inferior-MI right-ventricular-infarction preload-dependent nitrate-contraindication USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 61 year old man arrives with 90 minutes of crushing substernal chest pain radiating to the jaw and diaphoresis. His blood pressure is 88/56 mmHg and heart rate is 58/min. The 12 lead electrocardiogram shown is obtained. A cardiac catheterization laboratory has already been activated. Which of the following is the most appropriate immediate next step, given his current vital signs? A. Administer sublingual nitroglycerin for chest pain relief before further evaluation B. Give intravenous furosemide to reduce preload and relieve presumed pulmonary congestion C. Obtain a right sided ECG (lead V4R) to evaluate for right ventricular infarction before giving nitrates or diuretics D. Administer intravenous morphine as first line analgesia despite the current blood pressure E. Start a beta blocker now to reduce myocardial oxygen demand despite the relative bradycardia Inferior MI with hypotension and relative bradycardia raises concern for right ventricular infarction, in which cardiac output is preload dependent — nitrates, diuretics, morphine, and beta blockers can all precipitate severe hypotension. A right sided ECG (V4R ST elevation) should be checked before giving any preload reducing or negative chronotropic agent."
+  },
+  {
+   "id": "usmle-2026-0039",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "ACE Inhibitor-Induced AKI in Bilateral Renal Artery Stenosis",
+   "tags": [
+    "renal-artery-stenosis",
+    "ACE-inhibitor",
+    "efferent-arteriole",
+    "GFR-autoregulation",
+    "angiotensin-II"
+   ],
+   "source": "USMLE-style / MedKOS (renal physiology · glomerular hemodynamics)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0039.md",
+   "snippet": "A 74 year old man with hypertension and known bilateral renal artery stenosis is started on lisinopril. One week later his serum creatinine has risen sharply, as shown in the accompanying labs, while his potassium and sodium remain within t",
+   "text": "Physiology ACE Inhibitor-Induced AKI in Bilateral Renal Artery Stenosis renal-artery-stenosis ACE-inhibitor efferent-arteriole GFR-autoregulation angiotensin-II USMLE-style / MedKOS (renal physiology · glomerular hemodynamics) A 74 year old man with hypertension and known bilateral renal artery stenosis is started on lisinopril. One week later his serum creatinine has risen sharply, as shown in the accompanying labs, while his potassium and sodium remain within the reference range. Which of the following best explains the mechanism of this acute decline in renal function? A. Loss of angiotensin II mediated efferent arteriolar constriction removes the compensatory mechanism maintaining glomerular filtration pressure distal to the stenoses B. Lisinopril directly constricts the afferent arteriole, reducing total renal blood flow independent of angiotensin II C. Lisinopril accumulates in proximal tubular cells and causes direct toxic tubular necrosis D. Loss of angiotensin II feedback increases renin release, and renin itself is directly toxic to glomerular capillaries at high concentration E. Lisinopril precipitates acute thrombosis at the stenotic segment of the renal artery, causing renal infarction When renal perfusion pressure is critically reduced by bilateral stenosis, angiotensin II preferentially constricts the efferent arteriole to keep glomerular filtration pressure adequate; removing that angiotensin II effect with an ACE inhibitor drops filtration pressure and GFR sharply — the classic mechanism behind ACE inhibitor/ARB induced AKI in bilateral renal artery stenosis."
+  },
+  {
+   "id": "usmle-2026-0038",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Beta-Blocker Overdose — Glucagon Rescue Mechanism",
+   "tags": [
+    "beta-blocker-overdose",
+    "glucagon",
+    "adenylate-cyclase",
+    "cAMP",
+    "propranolol"
+   ],
+   "source": "USMLE-style / MedKOS (toxicology · receptor pharmacology)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0038.md",
+   "snippet": "A 44 year old man is brought to the emergency department after intentionally ingesting a large quantity of propranolol. He is bradycardic and hypotensive despite intravenous fluids and atropine. Intravenous glucagon is administered and his ",
+   "text": "Pharmacology Beta-Blocker Overdose — Glucagon Rescue Mechanism beta-blocker-overdose glucagon adenylate-cyclase cAMP propranolol USMLE-style / MedKOS (toxicology · receptor pharmacology) A 44 year old man is brought to the emergency department after intentionally ingesting a large quantity of propranolol. He is bradycardic and hypotensive despite intravenous fluids and atropine. Intravenous glucagon is administered and his heart rate and blood pressure improve. Which of the following best explains the mechanism by which glucagon reverses this patient's bradycardia and hypotension? A. Glucagon inhibits phosphodiesterase in cardiac myocytes, slowing the breakdown of existing cAMP B. Glucagon directly opens myocardial L type calcium channels, raising intracellular calcium independent of any second messenger C. Glucagon triggers hepatic glycogenolysis, and the resulting hyperglycemia raises heart rate through an osmotic effect D. Glucagon binds its own Gs coupled receptor on cardiac myocytes, activating adenylate cyclase and raising intracellular cAMP independent of the blocked beta adrenergic receptor E. Glucagon competitively displaces propranolol from the beta 1 adrenergic receptor binding site Glucagon acts on its own Gs protein coupled receptor, bypassing the blocked beta adrenergic receptor entirely and directly activating adenylate cyclase to raise cAMP, restoring inotropy and chronotropy — this is why it works even when beta receptors remain pharmacologically blocked."
+  },
+  {
+   "id": "usmle-2026-0037",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Chronic Passive Hepatic Congestion (centrilobular / zone 3 necrosis)",
+   "tags": [
+    "nutmeg-liver",
+    "zone-3",
+    "hepatic-congestion",
+    "right-heart-failure",
+    "centrilobular-necrosis"
+   ],
+   "source": "USMLE-style / MedKOS (hepatic pathology · zonal injury)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0037.md",
+   "snippet": "A 68 year old man with longstanding tricuspid regurgitation and progressive right sided heart failure is found to have a firm, mottled, reddish brown liver with a mosaic appearance on cut section. Serum aminotransferases are mildly elevated",
+   "text": "Pathology Chronic Passive Hepatic Congestion (centrilobular / zone 3 necrosis) nutmeg-liver zone-3 hepatic-congestion right-heart-failure centrilobular-necrosis USMLE-style / MedKOS (hepatic pathology · zonal injury) A 68 year old man with longstanding tricuspid regurgitation and progressive right sided heart failure is found to have a firm, mottled, reddish brown liver with a mosaic appearance on cut section. Serum aminotransferases are mildly elevated. A liver biopsy shows congestion and hepatocyte necrosis concentrated around the central veins, with relative sparing of hepatocytes near the portal tracts. Which of the following best explains why this histologic pattern is centered on the central veins rather than the portal tracts? A. Kupffer cells are concentrated around the central veins and mediate a localized cytokine driven injury there B. Central vein hepatocytes are the last in the sinusoidal flow to receive oxygen and are the first to bear the retrograde rise in venous pressure from right heart failure C. The central vein carries oxygen rich hepatic arterial blood directly, so elevated right sided pressure is transmitted there first D. A one way valve in the sinusoidal capillary bed shields portal tract hepatocytes from any rise in central venous pressure E. Bile canaliculi converge on the central vein, so cholestatic bile acid toxicity accounts for the necrosis seen here Zone 3 (centrilobular) hepatocytes sit farthest along the sinusoid from the oxygen delivered at the portal triad, and the central vein is the first structure to transmit an elevated central venous pressure backward from a failing right heart — combined hypoxia and congestion produces zone 3 necrosis."
+  },
   {
    "id": "kmle-2026-0097",
    "type": "kmle",
