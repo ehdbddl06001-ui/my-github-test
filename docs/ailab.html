@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MedKOS AI랩 (의료 AI·코딩 실습)</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  .weekly { border-left: 4px solid #6c8cff; }
+  .weekly h2 { margin: 0 0 6px; }
+  .weekly .goal { font-size: 1.15em; font-weight: 700; }
+  .ds-group { margin: 10px 0; }
+  .ds-group h3 { margin: 12px 0 6px; font-size: 1em; }
+  .ds { padding: 8px 10px; border: 1px solid var(--border, #e5e7eb); border-radius: 8px; margin: 6px 0; }
+  .ds .ds-top { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .ds .name { font-weight: 700; }
+  .ds .meta { color: #6b7280; font-size: .9em; }
+  .acc { font-size: .8em; padding: 1px 7px; border-radius: 999px; white-space: nowrap; }
+  .acc-open { background: #e6f6ec; color: #1a7f37; }
+  .acc-registration { background: #fef6e0; color: #9a6700; }
+  .acc-credentialed { background: #fde8e8; color: #b42318; }
+  .colab-ok { color: #1a7f37; font-size: .85em; }
+  .kind { font-size: .75em; padding: 1px 8px; border-radius: 999px; background: #eef2ff; color: #4054b2; text-transform: uppercase; letter-spacing: .03em; }
+  .ai-card > summary { cursor: pointer; list-style: none; padding: 12px 4px; }
+  .ai-card > summary::-webkit-details-marker { display: none; }
+  .ai-card .title { font-weight: 700; font-size: 1.05em; }
+  .ai-card .sub2 { color: #6b7280; font-size: .9em; margin-top: 2px; }
+  .ai-card .links a { margin-right: 10px; font-size: .9em; }
+  .sec h4 { margin: 16px 0 6px; border-bottom: 1px solid var(--border, #eee); padding-bottom: 3px; }
+  .sec table { border-collapse: collapse; width: 100%; margin: 8px 0; display: block; overflow-x: auto; }
+  .sec th, .sec td { border: 1px solid var(--border, #e5e7eb); padding: 5px 8px; text-align: left; font-size: .92em; }
+  .sec pre { background: #0d1117; color: #e6edf3; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: .85em; }
+  .sec code { font-size: .9em; }
+  .sec :not(pre) > code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; }
+  .mermaid { background: #f8fafc; border: 1px solid var(--border, #e5e7eb); border-radius: 8px; padding: 10px; overflow-x: auto; }
+  .badgep { font-size: .78em; background: #f3f4f6; border-radius: 6px; padding: 1px 7px; margin-right: 5px; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html">🧠 퀴즈</a>
+  <a href="papers.html">📄 논문</a>
+  <a href="ailab.html" class="active">🤖 AI랩</a>
+  <a href="search.html">🔍 검색</a>
+</nav>
+
+<header>
+  <h1>AI랩 — 의료 AI·코딩 실습</h1>
+  <p class="sub">공개 프로젝트(예: Keras 뇌종양 분할)를 뜯어보고, 오픈 의료 데이터로 매주 직접 돌려보는 공간입니다. 원본은 <code>content/ailab/</code>와 <code>pipelines/datasets.py</code>, 실습은 <code>notebooks/</code>(Colab)에서 합니다.</p>
+</header>
+
+<section class="card weekly" id="weekly"></section>
+
+<section class="card">
+  <h2 style="margin-top:0">📦 오픈 데이터 카탈로그</h2>
+  <div class="filters">
+    <input type="search" id="dsSearch" placeholder="데이터셋·과제 검색…" />
+    <select id="modFilter"><option value="__ALL__">전체 양식(modality)</option></select>
+    <label style="font-size:.9em"><input type="checkbox" id="openOnly" /> 🟢 바로 받을 수 있는 것만</label>
+  </div>
+  <p class="muted" style="margin:6px 0 0">🟢 open(가입 없이) · 🟡 registration(무료가입) · 🔴 credentialed(자격심사)</p>
+  <div id="datasets"></div>
+</section>
+
+<section class="card">
+  <h2 style="margin-top:0">📚 학습 카드</h2>
+  <p class="muted">카드를 펼치면 개요·구조 도식·데이터·코드·<b>지시어 해설</b>·실습 과제가 나옵니다.</p>
+  <div id="cards"></div>
+</section>
+
+<footer>
+  <p class="muted">
+    이 페이지는 <code>content/ailab/**/*.md</code> + <code>pipelines/datasets.py</code>에서 생성된 <code>docs/ailab.js</code>를 읽습니다.
+    새 카드는 <code>/gen-ailab</code>, 매주 실습은 <code>/ai-weekly</code> 스킬로 만듭니다.<br />
+    실습 노트북은 <code>notebooks/</code>에 있으며 Colab에서 바로 열립니다(Google Drive 연동).
+  </p>
+</footer>
+
+<script src="ailab.js"></script>
+<script src="ailab-app.js"></script>
+</body>
+</html>

@@ -23,7 +23,7 @@ except ImportError:  # pragma: no cover
 REQUIRED_COMMON = ["id", "type", "topic", "date", "confidence"]
 # 문제형(kmle/usmle) 문서에 추가로 필수인 필드
 REQUIRED_QUESTION = ["stem", "choices", "answer"]
-VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug"}
+VALID_TYPES = {"kmle", "usmle", "basic", "paper", "disease", "drug", "ailab"}
 VALID_CONFIDENCE = {"high", "medium", "low"}
 QUESTION_TYPES = {"kmle", "usmle"}
 # USMLE는 웹/CLI 퀴즈에서 Step·과목으로 분류되므로 아래 두 필드를 추가로 요구한다.
