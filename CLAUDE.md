@@ -29,7 +29,8 @@
 2. `python pipelines/indexer.py`          (SQLite 재빌드)
 3. 상태 파일과 새 `.md` 를 함께 커밋
 4. 신규 타입(paper/disease/drug)은 self-verify 한계를 고려해 **PR로** 올린다.
-   KMLE는 흐름이 안정적이면 main 직접 커밋 허용.
+   시험 문항(KMLE·USMLE)은 흐름이 안정적이면 **main 직접 커밋 허용** — PR이 병합되지
+   않으면 `docs/` 번들이 main에 못 올라가 홈페이지 '오늘의 문항'에 안 뜨므로 동일 취급한다.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.

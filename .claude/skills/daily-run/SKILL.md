@@ -52,8 +52,11 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
    생성된 번들을 **같은 커밋에 포함**한다.
 
 7. **커밋** — 새 `.md` + `state/*.json` + 재생성된 `docs/` 번들을 함께 커밋.
-   - USMLE / paper / disease / drug: **claude/ 브랜치에 push 후 PR 생성**
-     (self-verify 한계 → 사람 검수). KMLE는 흐름이 안정적이면 직접 커밋 허용.
+   - **KMLE / USMLE(시험 문항): main 직접 커밋 허용** — 흐름이 안정적이고, PR이
+     병합되지 않으면 `docs/` 번들이 main에 못 올라가 홈페이지 '오늘의 문항'에 안 뜬다.
+     문항 타입은 KMLE·USMLE 동일하게 취급해 생성 즉시 사이트에 반영한다.
+   - paper / disease / drug: **claude/ 브랜치에 push 후 PR 생성**
+     (신규 타입 self-verify 한계 → 사람 검수).
 
 ## 주의
 - 검증(5번)에서 실패하면 커밋하지 말고 무엇이 틀렸는지 보고한다.

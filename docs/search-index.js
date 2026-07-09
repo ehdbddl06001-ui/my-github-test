@@ -1,46 +1,46 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-08",
+ "generated": "2026-07-09",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 182,
+  "total": 196,
   "byType": {
+   "usmle": 42,
+   "paper": 48,
    "kmle": 97,
    "ailab": 6,
-   "usmle": 36,
-   "paper": 40,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 21,
-   "Nephrology": 14,
-   "Infectious Disease": 13,
-   "Pediatrics": 12,
+   "Cardiology": 23,
+   "Nephrology": 15,
+   "Infectious Disease": 14,
+   "Pediatrics": 13,
+   "Neurology": 9,
    "Obstetrics & Gynecology": 9,
-   "Neurology": 8,
-   "Psychiatry": 8,
+   "Psychiatry": 9,
+   "Pathology": 8,
    "Endocrinology": 7,
    "Gastroenterology": 6,
    "General Surgery": 6,
    "Ophthalmology": 6,
    "Orthopedics": 6,
-   "Pathology": 6,
+   "Physiology": 6,
    "Pulmonology": 6,
    "Rheumatology": 6,
+   "Surgery": 6,
    "Hematology": 5,
-   "Physiology": 5,
-   "Surgery": 5,
+   "Hematology-Oncology": 5,
+   "Laboratory Medicine": 5,
    "Dermatology": 4,
-   "Hematology-Oncology": 4,
-   "Laboratory Medicine": 4,
    "Microbiology": 3,
    "Oncology": 3,
+   "Pharmacology": 3,
    "Allergy": 2,
    "Biochemistry": 2,
    "Immunology": 2,
-   "Pharmacology": 2,
    "AI Mentorship": 1,
    "Internal Medicine": 1,
    "ML Debugging": 1,
@@ -50,12 +50,255 @@ window.MEDKOS_INDEX = {
    "Medical Signal AI": 1
   },
   "byConfidence": {
-   "high": 139,
-   "medium": 43
+   "high": 145,
+   "medium": 51
   },
-  "tagCount": 484
+  "tagCount": 510
  },
  "docs": [
+  {
+   "id": "usmle-2026-0042",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Neuroleptic Malignant Syndrome vs Serotonin Syndrome (differentiating features)",
+   "tags": [
+    "neuroleptic-malignant-syndrome",
+    "serotonin-syndrome",
+    "dantrolene",
+    "bromocriptine",
+    "antipsychotic"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · drug-induced hyperthermic syndromes)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0042.md",
+   "snippet": "A 45 year old man with schizophrenia is brought to the emergency department by his group home staff. His haloperidol dose was increased 5 days ago. Over the past 2 days he has become progressively confused with a fever and profuse diaphores",
+   "text": "Psychiatry Neuroleptic Malignant Syndrome vs Serotonin Syndrome (differentiating features) neuroleptic-malignant-syndrome serotonin-syndrome dantrolene bromocriptine antipsychotic USMLE-style / MedKOS (psychiatry · drug-induced hyperthermic syndromes) A 45 year old man with schizophrenia is brought to the emergency department by his group home staff. His haloperidol dose was increased 5 days ago. Over the past 2 days he has become progressively confused with a fever and profuse diaphoresis. On examination he has generalized 'lead pipe' rigidity without clonus, and deep tendon reflexes are normal rather than increased. His vital signs and CK are shown. Which of the following clinical features most strongly favors this diagnosis over serotonin syndrome? A. Presence of hyperreflexia with inducible clonus in the lower extremities B. Rapid symptom onset within hours of the causative drug exposure C. Symptom onset over several days after a dopamine blocking agent was started or increased, with rigidity but no clonus D. Gastrointestinal hyperactivity with diarrhea and hyperactive bowel sounds E. Dilated pupils and ocular clonus on examination Neuroleptic malignant syndrome typically develops over days after starting or increasing a dopamine antagonist and produces lead pipe rigidity without clonus or hyperreflexia, whereas serotonin syndrome develops within hours and features clonus, hyperreflexia, mydriasis, and GI hyperactivity — the tempo of onset plus the absence of clonus/hyperreflexia is the most reliable bedside discriminator."
+  },
+  {
+   "id": "usmle-2026-0041",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Guillain-Barré Syndrome — Respiratory Monitoring Before Definitive Therapy",
+   "tags": [
+    "Guillain-Barre",
+    "ascending-paralysis",
+    "FVC-monitoring",
+    "respiratory-failure",
+    "IVIG"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute neuromuscular emergency)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0041.md",
+   "snippet": "A 34 year old woman comes to the emergency department because of progressive weakness over the past 3 days, beginning in her feet and now involving her legs and hands. She reports mild difficulty swallowing but no shortness of breath. Two w",
+   "text": "Neurology Guillain-Barré Syndrome — Respiratory Monitoring Before Definitive Therapy Guillain-Barre ascending-paralysis FVC-monitoring respiratory-failure IVIG USMLE-style / MedKOS (neurology · acute neuromuscular emergency) A 34 year old woman comes to the emergency department because of progressive weakness over the past 3 days, beginning in her feet and now involving her legs and hands. She reports mild difficulty swallowing but no shortness of breath. Two weeks ago she had a bout of bloody diarrhea that resolved without treatment. On examination she has symmetric weakness, absent deep tendon reflexes, and intact sensation. Her vital signs are currently stable. Which of the following is the most appropriate immediate next step in management? A. Begin oral corticosteroids to reduce inflammatory demyelination B. Start intravenous immunoglobulin immediately, without further assessment of respiratory status C. Reassure the patient and arrange outpatient neurology follow up in one week given her stable vital signs D. Obtain nerve conduction studies to confirm the diagnosis before initiating any monitoring or treatment E. Admit for close monitoring of forced vital capacity (FVC) and negative inspiratory force to anticipate respiratory failure This presentation (post infectious ascending, symmetric weakness with areflexia and mild bulbar involvement) is classic Guillain Barré syndrome. Before anything else, the immediate priority is admitting for serial FVC/NIF monitoring, because respiratory failure can develop rapidly and unpredictably even when current vitals look reassuring; IVIG or plasmapheresis follow once safety monitoring is in place."
+  },
+  {
+   "id": "usmle-2026-0040",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Inferior Wall MI with Suspected Right Ventricular Involvement (12-lead, real ECG)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "inferior-MI",
+    "right-ventricular-infarction",
+    "preload-dependent",
+    "nitrate-contraindication"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0040.md",
+   "snippet": "A 61 year old man arrives with 90 minutes of crushing substernal chest pain radiating to the jaw and diaphoresis. His blood pressure is 88/56 mmHg and heart rate is 58/min. The 12 lead electrocardiogram shown is obtained. A cardiac catheter",
+   "text": "Cardiology Inferior Wall MI with Suspected Right Ventricular Involvement (12-lead, real ECG) ECG 12-lead inferior-MI right-ventricular-infarction preload-dependent nitrate-contraindication USMLE-style / MedKOS · ECG: PTB-XL 1.0.3 (PhysioNet, CC-BY 4.0) A 61 year old man arrives with 90 minutes of crushing substernal chest pain radiating to the jaw and diaphoresis. His blood pressure is 88/56 mmHg and heart rate is 58/min. The 12 lead electrocardiogram shown is obtained. A cardiac catheterization laboratory has already been activated. Which of the following is the most appropriate immediate next step, given his current vital signs? A. Administer sublingual nitroglycerin for chest pain relief before further evaluation B. Give intravenous furosemide to reduce preload and relieve presumed pulmonary congestion C. Obtain a right sided ECG (lead V4R) to evaluate for right ventricular infarction before giving nitrates or diuretics D. Administer intravenous morphine as first line analgesia despite the current blood pressure E. Start a beta blocker now to reduce myocardial oxygen demand despite the relative bradycardia Inferior MI with hypotension and relative bradycardia raises concern for right ventricular infarction, in which cardiac output is preload dependent — nitrates, diuretics, morphine, and beta blockers can all precipitate severe hypotension. A right sided ECG (V4R ST elevation) should be checked before giving any preload reducing or negative chronotropic agent."
+  },
+  {
+   "id": "usmle-2026-0039",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "ACE Inhibitor-Induced AKI in Bilateral Renal Artery Stenosis",
+   "tags": [
+    "renal-artery-stenosis",
+    "ACE-inhibitor",
+    "efferent-arteriole",
+    "GFR-autoregulation",
+    "angiotensin-II"
+   ],
+   "source": "USMLE-style / MedKOS (renal physiology · glomerular hemodynamics)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0039.md",
+   "snippet": "A 74 year old man with hypertension and known bilateral renal artery stenosis is started on lisinopril. One week later his serum creatinine has risen sharply, as shown in the accompanying labs, while his potassium and sodium remain within t",
+   "text": "Physiology ACE Inhibitor-Induced AKI in Bilateral Renal Artery Stenosis renal-artery-stenosis ACE-inhibitor efferent-arteriole GFR-autoregulation angiotensin-II USMLE-style / MedKOS (renal physiology · glomerular hemodynamics) A 74 year old man with hypertension and known bilateral renal artery stenosis is started on lisinopril. One week later his serum creatinine has risen sharply, as shown in the accompanying labs, while his potassium and sodium remain within the reference range. Which of the following best explains the mechanism of this acute decline in renal function? A. Loss of angiotensin II mediated efferent arteriolar constriction removes the compensatory mechanism maintaining glomerular filtration pressure distal to the stenoses B. Lisinopril directly constricts the afferent arteriole, reducing total renal blood flow independent of angiotensin II C. Lisinopril accumulates in proximal tubular cells and causes direct toxic tubular necrosis D. Loss of angiotensin II feedback increases renin release, and renin itself is directly toxic to glomerular capillaries at high concentration E. Lisinopril precipitates acute thrombosis at the stenotic segment of the renal artery, causing renal infarction When renal perfusion pressure is critically reduced by bilateral stenosis, angiotensin II preferentially constricts the efferent arteriole to keep glomerular filtration pressure adequate; removing that angiotensin II effect with an ACE inhibitor drops filtration pressure and GFR sharply — the classic mechanism behind ACE inhibitor/ARB induced AKI in bilateral renal artery stenosis."
+  },
+  {
+   "id": "usmle-2026-0038",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Beta-Blocker Overdose — Glucagon Rescue Mechanism",
+   "tags": [
+    "beta-blocker-overdose",
+    "glucagon",
+    "adenylate-cyclase",
+    "cAMP",
+    "propranolol"
+   ],
+   "source": "USMLE-style / MedKOS (toxicology · receptor pharmacology)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0038.md",
+   "snippet": "A 44 year old man is brought to the emergency department after intentionally ingesting a large quantity of propranolol. He is bradycardic and hypotensive despite intravenous fluids and atropine. Intravenous glucagon is administered and his ",
+   "text": "Pharmacology Beta-Blocker Overdose — Glucagon Rescue Mechanism beta-blocker-overdose glucagon adenylate-cyclase cAMP propranolol USMLE-style / MedKOS (toxicology · receptor pharmacology) A 44 year old man is brought to the emergency department after intentionally ingesting a large quantity of propranolol. He is bradycardic and hypotensive despite intravenous fluids and atropine. Intravenous glucagon is administered and his heart rate and blood pressure improve. Which of the following best explains the mechanism by which glucagon reverses this patient's bradycardia and hypotension? A. Glucagon inhibits phosphodiesterase in cardiac myocytes, slowing the breakdown of existing cAMP B. Glucagon directly opens myocardial L type calcium channels, raising intracellular calcium independent of any second messenger C. Glucagon triggers hepatic glycogenolysis, and the resulting hyperglycemia raises heart rate through an osmotic effect D. Glucagon binds its own Gs coupled receptor on cardiac myocytes, activating adenylate cyclase and raising intracellular cAMP independent of the blocked beta adrenergic receptor E. Glucagon competitively displaces propranolol from the beta 1 adrenergic receptor binding site Glucagon acts on its own Gs protein coupled receptor, bypassing the blocked beta adrenergic receptor entirely and directly activating adenylate cyclase to raise cAMP, restoring inotropy and chronotropy — this is why it works even when beta receptors remain pharmacologically blocked."
+  },
+  {
+   "id": "usmle-2026-0037",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Chronic Passive Hepatic Congestion (centrilobular / zone 3 necrosis)",
+   "tags": [
+    "nutmeg-liver",
+    "zone-3",
+    "hepatic-congestion",
+    "right-heart-failure",
+    "centrilobular-necrosis"
+   ],
+   "source": "USMLE-style / MedKOS (hepatic pathology · zonal injury)",
+   "confidence": "high",
+   "date": "2026-07-09",
+   "path": "content/usmle/usmle-2026-0037.md",
+   "snippet": "A 68 year old man with longstanding tricuspid regurgitation and progressive right sided heart failure is found to have a firm, mottled, reddish brown liver with a mosaic appearance on cut section. Serum aminotransferases are mildly elevated",
+   "text": "Pathology Chronic Passive Hepatic Congestion (centrilobular / zone 3 necrosis) nutmeg-liver zone-3 hepatic-congestion right-heart-failure centrilobular-necrosis USMLE-style / MedKOS (hepatic pathology · zonal injury) A 68 year old man with longstanding tricuspid regurgitation and progressive right sided heart failure is found to have a firm, mottled, reddish brown liver with a mosaic appearance on cut section. Serum aminotransferases are mildly elevated. A liver biopsy shows congestion and hepatocyte necrosis concentrated around the central veins, with relative sparing of hepatocytes near the portal tracts. Which of the following best explains why this histologic pattern is centered on the central veins rather than the portal tracts? A. Kupffer cells are concentrated around the central veins and mediate a localized cytokine driven injury there B. Central vein hepatocytes are the last in the sinusoidal flow to receive oxygen and are the first to bear the retrograde rise in venous pressure from right heart failure C. The central vein carries oxygen rich hepatic arterial blood directly, so elevated right sided pressure is transmitted there first D. A one way valve in the sinusoidal capillary bed shields portal tract hepatocytes from any rise in central venous pressure E. Bile canaliculi converge on the central vein, so cholestatic bile acid toxicity accounts for the necrosis seen here Zone 3 (centrilobular) hepatocytes sit farthest along the sinusoid from the oxygen delivered at the portal triad, and the central vein is the first structure to transmit an elevated central venous pressure backward from a failing right heart — combined hypoxia and congestion produces zone 3 necrosis."
+  },
+  {
+   "id": "paper-2026-0048",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cranio-maxillo-facial surgery : official publication of the European Association for Cranio-Maxillo-Facial Surgery",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0048_functional_and_morphometric_outcome_of_adaptable_slicing_con.md",
+   "snippet": "Title Functional and morphometric outcome of adaptable slicing condylectomy in transverse condylar hyperplasia: A deep learning enhanced 3D study Authors Spallaccia F, Committeri U, Giovannoni M E, Ricciardi A, Cascone P Journal / DOI Journ",
+   "text": "Surgery scraped pubmed PubMed / Journal of cranio-maxillo-facial surgery : official publication of the European Association for Cranio-Maxillo-Facial Surgery Title Functional and morphometric outcome of adaptable slicing condylectomy in transverse condylar hyperplasia: A deep learning enhanced 3D study Authors Spallaccia F, Committeri U, Giovannoni M E, Ricciardi A, Cascone P Journal / DOI Journal of cranio maxillo facial surgery : official publication of the European Association for Cranio Maxillo Facial Surgery · DOI: 10.1016/j.jcms.2026.104649 · PMID: 42418925 https://pubmed.ncbi.nlm.nih.gov/42418925/ Abstract BACKGROUND: Unilateral condylar hyperplasia (UCH) with transverse mandibular deviation is a frequent cause of facial asymmetry and skeletal Class III malocclusion. Adaptive slice condylectomy (ASC) has been proposed as a focused alternative to bimaxillary orthognathic surgery (OS), aiming to recenter the dental midline without bilateral skeletal osteotomies. We evaluated morphological and functional outcomes after SC using AI assisted 3D analysis. MATERIALS AND METHODS: This retrospective cohort comprised 55 patients with transverse UCH treated between 2011 and 2024 at a single maxillofacial unit: 36 underwent unilateral ASC and 19 received bimaxillary OS. Cone beam CT (CBCT) scans at baseline (T0) and 12 months (T1) were processed in 3D Slicer using a pretrained MONAI 3D U Net for segmentation. Rigid cranial base registration aligned T1 to T0. Metrics included condylar head volume, mean bone density, center displacement (ΔX/ΔY/ΔZ; Δ ), and orientation change (axis axis angle and yaw/pitch/roll). Postoperatively, the operated condyle was compared with the mirrored contralateral healthy side. RESULTS: ASC produced a predominantly lateral superior repositioning of the treated condyle with midline correction. The contralateral condyle showed small adaptive shifts with overall morphologic stability. Mean postoperative asymmetry versus the mirrored side was 0.35 mm; the healthy side varied minimally (mean 0.32 mm), with deviations 1.5 mm confined to posteromedial sectors. No TMJ dysfunction occurred after ASC. Relative to OS, ASC was associated with shorter operative time ( 80 min), reduced length of stay ( 0.5 days), and fewer complications. CONCLUSION: Adaptive slice condylectomy is a safe and effective unilateral option for transverse UCH with III class, achieving functional correction and symmetry targets without routine bimaxillary osteotomies. The results are so good that we applied this procedure instead of bilateral sagittal split osteotomy (BSSO) in all patients with classes III and asymmetry adding, if necessary, Le Fort I surgery (advancement, canting correction, surgically assisted rapid palatal expansion SARPE). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0047",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of pediatrics",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0047_effects_of_classical_music_on_physiological_parameters_and_a.md",
+   "snippet": "Title Effects of classical music on physiological parameters and anxiety in adolescents during transthoracic echocardiography: a randomized controlled trial Authors Altınbezer Pelin, Koçak Ahmet, Kaya Özkan, Örün Utku Arman, Arı Mehmet Emre",
+   "text": "Pediatrics scraped pubmed PubMed / European journal of pediatrics Title Effects of classical music on physiological parameters and anxiety in adolescents during transthoracic echocardiography: a randomized controlled trial Authors Altınbezer Pelin, Koçak Ahmet, Kaya Özkan, Örün Utku Arman, Arı Mehmet Emre Journal / DOI European journal of pediatrics · DOI: 10.1007/s00431 026 07241 6 · PMID: 42417876 https://pubmed.ncbi.nlm.nih.gov/42417876/ Abstract UNLABELLED: Classical music is increasingly used as a non pharmacological intervention to reduce procedural anxiety. Although transthoracic echocardiography (TTE) is a noninvasive imaging modality, it may cause mild anticipatory stress in adolescents, particularly during first time examinations. A total of 168 adolescents (10 19 years) undergoing TTE between December 2024 and March 2025 were randomized to a music group (slow tempo classical music before and during TTE) or a control group. Heart rate and blood pressure were measured before, during, and after the procedure, and anxiety was assessed post procedure using the State Trait Anxiety Inventory (STAI). State and trait anxiety scores were similar between groups (p 0.05). Heart rate decreased significantly during TTE in the music group (p < 0.05) but not in controls. Both groups showed reductions in systolic and diastolic blood pressure after the procedure (p < 0.05). CONCLUSION: Listening to classical music during TTE was not associated with a reduction in self reported anxiety but was linked to a significant decrease in heart rate. These findings suggest a potential modulatory effect on physiological stress responses. Music may serve as a simple, safe adjunct to improve patient comfort during pediatric cardiac imaging. WHAT IS KNOWN: • Music interventions may reduce anxiety and physiological stress during medical procedures in pediatric patients. WHAT IS NEW: • In adolescents undergoing transthoracic echocardiography, classical music was associated with a significant reduction in heart rate but not anxiety scores in this randomized controlled trial. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0046",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR formative research",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0046_symptom_only_localization_of_brainstem_ischemia_using_large_.md",
+   "snippet": "Title Symptom Only Localization of Brainstem Ischemia Using Large Language Models Versus Neurologists in Diffusion Weighted Imaging Positive Cases: Retrospective Single Center Study Authors Beste Nedim, Dratsch Thomas, Kottlors Jonathan, Fl",
+   "text": "Laboratory Medicine scraped pubmed PubMed / JMIR formative research Title Symptom Only Localization of Brainstem Ischemia Using Large Language Models Versus Neurologists in Diffusion Weighted Imaging Positive Cases: Retrospective Single Center Study Authors Beste Nedim, Dratsch Thomas, Kottlors Jonathan, Floßdorf Pia, Konitsioti Agni Maria, Volz Lukas J, Hanning Uta, Pinto Dos Santos Daniel, et al. Journal / DOI JMIR formative research · DOI: 10.2196/87163 · PMID: 42418842 https://pubmed.ncbi.nlm.nih.gov/42418842/ Abstract BACKGROUND: Symptom based localization of brainstem ischemia is challenging because of the anatomical complexity of the brainstem and the nonspecific overlap of clinical syndromes. Whether large language models (LLMs) can meaningfully assist in this task remains uncertain. OBJECTIVE: This study aimed to compare the performance of several OpenAI LLMs and neurologists in localizing diffusion weighted imaging (DWI) confirmed brainstem ischemic lesions based on symptom descriptions alone. METHODS: In this retrospective single center study, 109 patients with DWI confirmed acute brainstem ischemia were included. Three neurologists and 6 LLMs (GPT 5, GPT 4, GPT 4.1, GPT 4o, o3, and o3 pro) predicted lesion localization using a combined anatomical lateral end point (left or right midbrain, pons, and medulla) based on symptom descriptions alone. Overall and regional accuracy, the Cohen κ, 6 class confusion matrices, and point biserial correlations between symptom count and correct prediction were assessed. Because all raters evaluated the same cases, paired McNemar tests with Benjamini Hochberg correction were used for pairwise performance comparisons. RESULTS: GPT 4 and GPT 4o achieved the highest overall accuracy (61/109, 56%; 95% CI 46.1% 65.5%). Agreement with the DWI reference standard remained limited across all raters, with the Cohen κ reaching a maximum of 0.291 for GPT 4o. Confusion matrices showed that higher performance was driven mainly by pontine cases, whereas misclassification remained frequent in mesencephalic and medullary lesions. Regional analyses outside the pons were imprecise because mesencephalic and medullary subgroups each contained only 16 cases. A higher number of documented symptoms was associated with correct prediction for GPT 4, GPT 5, GPT o3, and 1 neurologist. CONCLUSIONS: Although some LLMs showed higher relative accuracy than the participating neurologists, absolute performance remained limited and clinically insufficient. These findings are best interpreted as an exploratory benchmark under constrained conditions: absolute performance remained modest, agreement beyond chance was limited, and performance outside pontine lesions was inconclusive. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0045",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Inflammatory bowel diseases",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0045_mast_cell_derived_il_13_as_a_driver_of_crohn_disease_associa.md",
+   "snippet": "Title Mast cell derived IL 13 as a driver of Crohn disease associated intestinal fibrosis Authors Safari Kwestan, Ma Wei Jen, Sekhon Prabhreet, Rai Priya, Menzies Susan C, Hoshino Tomoaki, Fratzscher Anne Sophie, Roth Andrew, et al. Journal",
+   "text": "Pathology scraped pubmed PubMed / Inflammatory bowel diseases Title Mast cell derived IL 13 as a driver of Crohn disease associated intestinal fibrosis Authors Safari Kwestan, Ma Wei Jen, Sekhon Prabhreet, Rai Priya, Menzies Susan C, Hoshino Tomoaki, Fratzscher Anne Sophie, Roth Andrew, et al. Journal / DOI Inflammatory bowel diseases · DOI: 10.1093/ibd/izag127 · PMID: 42418669 https://pubmed.ncbi.nlm.nih.gov/42418669/ Abstract BACKGROUND: Crohn disease is a chronic, immune mediated disease that can lead to intestinal fibrosis, strictures, and bowel obstruction. The Src homology 2 domain containing inositol polyphosphate 5' phosphatase deficient (SHIP / ) mouse develops spontaneous Crohn disease like ileal inflammation and fibrosis. Fibrosis depends on increased phosphatidylinositol 3 kinase p110δ activity downstream of interleukin 4 (IL 4) or IL 13. Because current anti inflammatory treatments do not prevent or reverse fibrosis, we aimed to identify the key cytokine(s) and its cellular source(s). METHODS: We blocked IL 4 or IL 13 in mice by use of neutralizing antibodies or genetic ablation. Intestinal inflammation and fibrosis were assessed by gross pathology, histopathology, collagen accumulation, muscle thickening, immune cell infiltration, and tissue IL 1β concentrations. IL13 and its cellular source in stricturing Crohn disease were examined using single cell RNA sequencing and RNAscope. Mast cells and Il13 were also assessed in ileal cross sections from SHIP+/+ and SHIP / mice. RESULTS: Blocking or genetic ablation of IL 13, but not IL 4, significantly reduced ileal fibrosis in mice, including collagen accumulation, smooth muscle thickening, vimentin + cells, and proliferating vimentin + cells. Blockade of IL 13 also reduced intestinal inflammation, including immune cell infiltration and ileal IL 1β concentrations. Single cell RNA sequencing analyses identified mast cells as the exclusive source of IL13 in stricturing Crohn disease. Human resection tissues confirmed increased mast cells in diseased small intestine and identified mast cells as the source of IL13. SHIP / mice similarly showed increased ileal mast cells that were also a source of IL13. CONCLUSIONS: IL 13 is critical for intestinal fibrosis in SHIP deficient mice, and mast cells are a source of IL13 in Crohn disease associated intestinal fibrosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0044",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Stem cell research",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0044_generation_of_three_induced_pluripotent_stem_cell_lines_from.md",
+   "snippet": "Title Generation of three induced pluripotent stem cell lines from an immune checkpoint inhibitor induced myocarditis patient and controls Authors Sun Yin, Vitale Maria Rosaria, Hnatiuk Anna P, Wagner Noah S, Sun Shuai, Yang Xiaochun, Liu L",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Stem cell research Title Generation of three induced pluripotent stem cell lines from an immune checkpoint inhibitor induced myocarditis patient and controls Authors Sun Yin, Vitale Maria Rosaria, Hnatiuk Anna P, Wagner Noah S, Sun Shuai, Yang Xiaochun, Liu Lu, Khatua Shaheen, et al. Journal / DOI Stem cell research · DOI: 10.1016/j.scr.2026.104057 · PMID: 42418861 https://pubmed.ncbi.nlm.nih.gov/42418861/ Abstract Immune checkpoint inhibitor associated myocarditis (ICIM) is an uncommon but potentially fatal inflammatory heart disease triggered by cancer immunotherapy, with up to 40% mortality. The underlying mechanisms are still elusive, partly due to the lack of appropriate human disease models. Here, we report the generation of three induced pluripotent stem cell (iPSC) lines derived from an ICIM patient, an ICI treated patient without myocarditis, and a healthy donor. These lines exhibit typical pluripotent stem cell morphology, express pluripotency markers, maintain normal karyotypes, and differentiate into derivatives of the three germ layers, providing a valuable platform for mechanistic studies and therapeutic discovery. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0043",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0043_trends_and_prevalence_of_chronic_kidney_disease_in_the_unite.md",
+   "snippet": "Title Trends and Prevalence of Chronic Kidney Disease in the United States Authors Claudel Sophie E, Verma Ashish Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMc2518565 · PMID: 42418783 https://pubmed.ncbi.nlm.nih.gov",
+   "text": "Nephrology scraped pubmed PubMed / The New England journal of medicine Title Trends and Prevalence of Chronic Kidney Disease in the United States Authors Claudel Sophie E, Verma Ashish Journal / DOI The New England journal of medicine · DOI: 10.1056/NEJMc2518565 · PMID: 42418783 https://pubmed.ncbi.nlm.nih.gov/42418783/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0042",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The American journal of emergency medicine",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0042_frequency_of_alcoholic_ketoacidosis_in_the_emergency_departm.md",
+   "snippet": "Title Frequency of alcoholic ketoacidosis in the emergency department Authors Sidlak Alexander Journal / DOI The American journal of emergency medicine · DOI: 10.1016/j.ajem.2026.06.045 · PMID: 42418923 https://pubmed.ncbi.nlm.nih.gov/42418",
+   "text": "Infectious Disease scraped pubmed PubMed / The American journal of emergency medicine Title Frequency of alcoholic ketoacidosis in the emergency department Authors Sidlak Alexander Journal / DOI The American journal of emergency medicine · DOI: 10.1016/j.ajem.2026.06.045 · PMID: 42418923 https://pubmed.ncbi.nlm.nih.gov/42418923/ Abstract OBJECTIVE: Alcoholic Ketoacidosis (AKA) is a complication from alcohol use characterized by an elevated anion gap metabolic acidosis (AGMA). Though the underlying pathophysiology is well characterized, the frequency in patients presenting to the emergency department (ED) has not been studied. This study aims to quantify the frequency of AKA amongst patients presenting to the ED with alcohol intoxication or suspected withdrawal. METHODS: We performed a multi center retrospective chart review of adults (age 18 and older) presenting to the ED with an alcohol related chief complaint or diagnosis. The primary outcome was the frequency of AKA. We excluded patients with an acute medical condition that could lead to an acidosis or alter the presentation (diabetic ketoacidosis, seizure, pancreatitis, sepsis, pulmonary embolism, medication overdose, or intracranial hemorrhage). We excluded patients with withdrawal or an overdose. RESULTS: We identified 905 individual patient presentations to the ED with alcohol related complaints, including both intoxication and withdrawal. The average bicarbonate was 23 meq/L and 13% of patients had a bicarbonate less than 20 meq/L. Of the included patients, 235 patients (26% +/ 3%) had an elevated anion gap. Only 349 patients had a urinalysis performed with 43% of those positive for ketones. Using a stricter diagnosis of AKA (ketonuria and an AGMA) we identified 96 patients (11% +/ 2%). In 9% of (20/235) a those with an AGMA and in 15% (14/96) with a strict diagnosis of AKA. CONCLUSION: Alcohol ketoacidosis complicates alcohol related ED presentations in 11 26% of cases. Diagnosis was infrequent and increased recognition of this pathology may improve the care of these patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0041",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Experimental and molecular pathology",
+   "confidence": "medium",
+   "date": "2026-07-08",
+   "path": "content/papers/2026/2026-07-08_paper-2026-0041_biomarkers_for_congestion_assessment_and_prognosis_in_acute_.md",
+   "snippet": "Title Biomarkers for congestion assessment and prognosis in acute heart failure: A systematic review Authors Asaftei Andreea, Ceasovschih Alexandr, Constantin Mihai, Rusu Zota Gabriela, Alexa Raluca Elena, Lionte Catalina, Sorodoc Laurentiu",
+   "text": "Cardiology scraped pubmed PubMed / Experimental and molecular pathology Title Biomarkers for congestion assessment and prognosis in acute heart failure: A systematic review Authors Asaftei Andreea, Ceasovschih Alexandr, Constantin Mihai, Rusu Zota Gabriela, Alexa Raluca Elena, Lionte Catalina, Sorodoc Laurentiu, Sorodoc Victorita Journal / DOI Experimental and molecular pathology · DOI: 10.1016/j.yexmp.2026.105063 · PMID: 42418867 https://pubmed.ncbi.nlm.nih.gov/42418867/ Abstract Congestion is the central pathophysiological mechanism and a major determinant of morbidity and mortality in acute heart failure (AHF). Natriuretic peptides (NPs), although guideline recommended, provide only an indirect assessment of congestion and may have limited accuracy. This systematic review synthesized evidence on four biomarkers, including carbohydrate antigen 125 (CA 125), adrenomedullin (ADM) and its derivatives, soluble suppression of tumorigenicity 2 (sST2), and soluble cluster of differentiation 146 (sCD146), focusing on their associations with congestion and prognosis in AHF. A systematic search of PubMed and Embase was conducted in June 2025. Eligible studies included patients with AHF and evaluated at least one biomarker in relation to clinical, imaging, or laboratory markers of congestion and/or prognostic outcomes. After screening and full text review, 39 studies met the inclusion criteria. CA 125 consistently correlated with systemic congestion, with higher admission levels predicting increased mortality and rehospitalization. Interventional studies suggested its potential role in guiding decongestive therapy. ADM derivatives were associated with congestion severity and residual congestion at discharge. Bio adrenomedullin reflected rapid hemodynamic changes due to its short half life, while mid regional proadrenomedullin provided prognostic information. sST2, primarily reflecting myocardial stress and inflammation, demonstrated robust prognostic value and dynamic decline during hospitalization. sCD146 emerged as a novel marker strongly associated with systemic congestion, with additional diagnostic value in conditions where NPs underperform. Overall, these biomarkers provide mechanistically complementary information to NPs, improving congestion assessment and risk stratification in AHF. Larger prospective and interventional studies are required to define their role in routine clinical practice and in guiding decongestive strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0097",
    "type": "kmle",
