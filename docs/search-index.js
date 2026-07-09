@@ -5,36 +5,36 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 196,
+  "total": 228,
   "byType": {
+   "kmle": 129,
    "usmle": 42,
    "paper": 48,
-   "kmle": 97,
    "ailab": 6,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 23,
-   "Nephrology": 15,
-   "Infectious Disease": 14,
-   "Pediatrics": 13,
-   "Neurology": 9,
-   "Obstetrics & Gynecology": 9,
-   "Psychiatry": 9,
+   "Cardiology": 25,
+   "Nephrology": 17,
+   "Infectious Disease": 16,
+   "Pediatrics": 15,
+   "Neurology": 11,
+   "Obstetrics & Gynecology": 11,
+   "Psychiatry": 11,
+   "Endocrinology": 9,
+   "Gastroenterology": 8,
+   "General Surgery": 8,
+   "Ophthalmology": 8,
+   "Orthopedics": 8,
    "Pathology": 8,
-   "Endocrinology": 7,
-   "Gastroenterology": 6,
-   "General Surgery": 6,
-   "Ophthalmology": 6,
-   "Orthopedics": 6,
+   "Pulmonology": 8,
+   "Rheumatology": 8,
+   "Hematology": 7,
+   "Dermatology": 6,
    "Physiology": 6,
-   "Pulmonology": 6,
-   "Rheumatology": 6,
    "Surgery": 6,
-   "Hematology": 5,
    "Hematology-Oncology": 5,
    "Laboratory Medicine": 5,
-   "Dermatology": 4,
    "Microbiology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
@@ -50,12 +50,592 @@ window.MEDKOS_INDEX = {
    "Medical Signal AI": 1
   },
   "byConfidence": {
-   "high": 145,
+   "high": 177,
    "medium": 51
   },
-  "tagCount": 510
+  "tagCount": 632
  },
  "docs": [
+  {
+   "id": "kmle-2026-0129",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Scabies",
+   "tags": [
+    "scabies",
+    "permethrin",
+    "burrow",
+    "nocturnal-pruritus",
+    "contact-treatment"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0129.md",
+   "snippet": "24세 남자가 2주간 밤에 심해지는 온몸 가려움으로 왔다. 손가락 사이와 손목 굽힘부, 성기에 붉은 구진과 가느다란 선상 굴이 보인다. 같은 고시원에 사는 친구들도 비슷하게 가렵다고 한다. 이 환자의 치료로 가장 적절한 것은? A. 국소 스테로이드 단독 B. 경구 항히스타민만 처방 C. 국소 퍼메트린을 온몸에 도포하고 밀접 접촉자를 함께 치료한다 D. 국소 항생제 연고 E. 광선치료 야간 악화 소양증, 손가락 사이·손목·성기의",
+   "text": "Dermatology Scabies scabies permethrin burrow nocturnal-pruritus contact-treatment KMLE 2026 / Claude Routine 24세 남자가 2주간 밤에 심해지는 온몸 가려움으로 왔다. 손가락 사이와 손목 굽힘부, 성기에 붉은 구진과 가느다란 선상 굴이 보인다. 같은 고시원에 사는 친구들도 비슷하게 가렵다고 한다. 이 환자의 치료로 가장 적절한 것은? A. 국소 스테로이드 단독 B. 경구 항히스타민만 처방 C. 국소 퍼메트린을 온몸에 도포하고 밀접 접촉자를 함께 치료한다 D. 국소 항생제 연고 E. 광선치료 야간 악화 소양증, 손가락 사이·손목·성기의 굴(burrow), 접촉자 동시 발병은 옴이며, 국소 퍼메트린 도포와 함께 밀접 접촉자·침구를 동시에 치료·소독해야 재감염을 막는다."
+  },
+  {
+   "id": "kmle-2026-0128",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Bullous Pemphigoid",
+   "tags": [
+    "bullous-pemphigoid",
+    "tense-bullae",
+    "BP180",
+    "subepidermal-blister"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0128.md",
+   "snippet": "76세 남자가 몇 주간 심한 소양증 뒤 몸통과 사지 굽힘부에 긴장성 큰 물집이 생겨 왔다. 물집은 잘 터지지 않고 옆으로 밀어도 벗겨지지 않으며(니콜스키 음성), 구강 점막은 대체로 침범되지 않았다. 직접면역형광에서 표피기저막을 따라 선상 IgG·C3 침착이 보인다. 가장 가능성이 높은 진단은? A. 천포창(심상성 천포창) B. 수포성 유천포창 C. 포진피부염 D. 다형홍반 E. 농가진 고령에서 소양증 뒤 니콜스키 음성의 긴장",
+   "text": "Dermatology Bullous Pemphigoid bullous-pemphigoid tense-bullae BP180 subepidermal-blister KMLE 2026 / Claude Routine 76세 남자가 몇 주간 심한 소양증 뒤 몸통과 사지 굽힘부에 긴장성 큰 물집이 생겨 왔다. 물집은 잘 터지지 않고 옆으로 밀어도 벗겨지지 않으며(니콜스키 음성), 구강 점막은 대체로 침범되지 않았다. 직접면역형광에서 표피기저막을 따라 선상 IgG·C3 침착이 보인다. 가장 가능성이 높은 진단은? A. 천포창(심상성 천포창) B. 수포성 유천포창 C. 포진피부염 D. 다형홍반 E. 농가진 고령에서 소양증 뒤 니콜스키 음성의 긴장성 큰 물집, 점막 침범이 드물고 기저막대에 선상 IgG·C3 침착이면 수포성 유천포창(표피하 수포)이다."
+  },
+  {
+   "id": "kmle-2026-0127",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Herpes Zoster Ophthalmicus",
+   "tags": [
+    "herpes-zoster-ophthalmicus",
+    "Hutchinson-sign",
+    "antiviral",
+    "VZV"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0127.md",
+   "snippet": "67세 남자가 이마와 한쪽 눈꺼풀, 코끝에 통증성 물집이 무리지어 생겨 왔다. 피부병변은 이마 정중선을 넘지 않고 한쪽에 국한되며, 코끝에도 병변이 있다. 눈이 충혈되고 이물감을 호소한다. 이 환자에서 안구 침범을 강하게 시사하는 소견과 그에 따른 처치로 옳은 것은? A. 코끝 병변(허친슨 징후)은 무의미하므로 국소 항생제만 준다 B. 코끝 병변은 안구 침범 위험이 높아 전신 항바이러스제와 안과 협진이 필요하다 C. 정중선을 ",
+   "text": "Ophthalmology Herpes Zoster Ophthalmicus herpes-zoster-ophthalmicus Hutchinson-sign antiviral VZV KMLE 2026 / Claude Routine 67세 남자가 이마와 한쪽 눈꺼풀, 코끝에 통증성 물집이 무리지어 생겨 왔다. 피부병변은 이마 정중선을 넘지 않고 한쪽에 국한되며, 코끝에도 병변이 있다. 눈이 충혈되고 이물감을 호소한다. 이 환자에서 안구 침범을 강하게 시사하는 소견과 그에 따른 처치로 옳은 것은? A. 코끝 병변(허친슨 징후)은 무의미하므로 국소 항생제만 준다 B. 코끝 병변은 안구 침범 위험이 높아 전신 항바이러스제와 안과 협진이 필요하다 C. 정중선을 넘지 않으므로 대상포진이 아니다 D. 전신 스테로이드 단독이 1차 치료다 E. 자연 소실되므로 경과만 관찰한다 삼차신경 안분지(V1) 대상포진에서 코끝 병변(허친슨 징후)은 비모양체신경 침범을 반영해 각막·포도막 등 안구 침범 위험이 높으므로, 전신 항바이러스제와 즉시 안과 협진이 필요하다."
+  },
+  {
+   "id": "kmle-2026-0126",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Acute Anterior Uveitis",
+   "tags": [
+    "anterior-uveitis",
+    "HLA-B27",
+    "ciliary-flush",
+    "topical-steroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0126.md",
+   "snippet": "28세 남자가 하루 사이 한쪽 눈의 통증, 충혈, 눈부심과 시야 흐림으로 왔다. 각막 가장자리를 따라 붉게 충혈(모양체충혈)돼 있고, 세극등검사에서 전방에 염증세포와 혼탁(flare)이 보이며 동공이 작고 불규칙하다. 강직척추염 병력이 있다. 이 환자의 초기 치료로 가장 적절한 것은? A. 국소 스테로이드와 산동제(모양근마비제) B. 국소 축동제(필로카르핀) C. 항히스타민 점안제 D. 항생제 점안 단독 E. 즉시 레이저홍채절",
+   "text": "Ophthalmology Acute Anterior Uveitis anterior-uveitis HLA-B27 ciliary-flush topical-steroid KMLE 2026 / Claude Routine 28세 남자가 하루 사이 한쪽 눈의 통증, 충혈, 눈부심과 시야 흐림으로 왔다. 각막 가장자리를 따라 붉게 충혈(모양체충혈)돼 있고, 세극등검사에서 전방에 염증세포와 혼탁(flare)이 보이며 동공이 작고 불규칙하다. 강직척추염 병력이 있다. 이 환자의 초기 치료로 가장 적절한 것은? A. 국소 스테로이드와 산동제(모양근마비제) B. 국소 축동제(필로카르핀) C. 항히스타민 점안제 D. 항생제 점안 단독 E. 즉시 레이저홍채절개술 모양체충혈·전방 세포/flare·축동을 동반한 급성 전방포도막염(HLA B27 연관)은 국소 스테로이드로 염증을, 산동제로 통증·홍채유착을 줄이는 것이 초기 치료다."
+  },
+  {
+   "id": "kmle-2026-0125",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Panic Disorder",
+   "tags": [
+    "panic-disorder",
+    "SSRI",
+    "CBT",
+    "anxiety"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0125.md",
+   "snippet": "29세 여자가 지난 3개월간 예고 없이 반복되는 발작으로 왔다. 발작 때 갑작스러운 두근거림, 흉통, 숨막힘, 죽을 것 같은 공포가 10분 내 정점에 이르렀다가 가라앉는다. 또 발작이 올까 봐 늘 불안해한다. 심전도·트로포닌·갑상선기능은 정상이다. 이 환자의 장기 관리를 위한 1차 치료로 가장 적절한 것은? A. 필요시 벤조디아제핀만 장기 처방 B. 베타차단제 단독 유지 C. 갑상선호르몬 보충 D. 선택적 세로토닌재흡수억제제(",
+   "text": "Psychiatry Panic Disorder panic-disorder SSRI CBT anxiety KMLE 2026 / Claude Routine 29세 여자가 지난 3개월간 예고 없이 반복되는 발작으로 왔다. 발작 때 갑작스러운 두근거림, 흉통, 숨막힘, 죽을 것 같은 공포가 10분 내 정점에 이르렀다가 가라앉는다. 또 발작이 올까 봐 늘 불안해한다. 심전도·트로포닌·갑상선기능은 정상이다. 이 환자의 장기 관리를 위한 1차 치료로 가장 적절한 것은? A. 필요시 벤조디아제핀만 장기 처방 B. 베타차단제 단독 유지 C. 갑상선호르몬 보충 D. 선택적 세로토닌재흡수억제제(SSRI)와 인지행동치료 E. 항정신병약 투여 반복되는 예기치 못한 공황발작과 예기불안이 신체질환 없이 지속되면 공황장애이며, 장기 1차 치료는 SSRI(또는 SNRI)와 인지행동치료(CBT)다."
+  },
+  {
+   "id": "kmle-2026-0124",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Anorexia Nervosa / Refeeding Syndrome",
+   "tags": [
+    "anorexia-nervosa",
+    "refeeding-syndrome",
+    "hypophosphatemia",
+    "eating-disorder"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0124.md",
+   "snippet": "18세 여자가 극심한 저체중과 무월경으로 입원했다. 살찌는 것에 대한 강한 두려움으로 음식을 제한해 왔고 서맥과 저혈압이 있다. 영양 재개(refeeding)를 시작하려 한다. 재영양을 시작한 뒤 며칠간 급격히 떨어져 부정맥·심부전을 유발할 수 있어 가장 주의 깊게 감시·보충해야 할 전해질은? A. 나트륨 B. 인(phosphate) C. 칼슘 D. 염소 E. 중탄산 심한 영양결핍 상태에서 재영양을 시작하면 인슐린 분비로 인이",
+   "text": "Psychiatry Anorexia Nervosa / Refeeding Syndrome anorexia-nervosa refeeding-syndrome hypophosphatemia eating-disorder KMLE 2026 / Claude Routine 18세 여자가 극심한 저체중과 무월경으로 입원했다. 살찌는 것에 대한 강한 두려움으로 음식을 제한해 왔고 서맥과 저혈압이 있다. 영양 재개(refeeding)를 시작하려 한다. 재영양을 시작한 뒤 며칠간 급격히 떨어져 부정맥·심부전을 유발할 수 있어 가장 주의 깊게 감시·보충해야 할 전해질은? A. 나트륨 B. 인(phosphate) C. 칼슘 D. 염소 E. 중탄산 심한 영양결핍 상태에서 재영양을 시작하면 인슐린 분비로 인이 세포 내로 급격히 이동해 저인산혈증이 생기고 부정맥·심부전·횡문근융해를 유발한다(재영양증후군). 인을 밀착 감시·보충한다."
+  },
+  {
+   "id": "kmle-2026-0123",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ovarian Torsion",
+   "tags": [
+    "ovarian-torsion",
+    "adnexal-mass",
+    "Doppler",
+    "laparoscopy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0123.md",
+   "snippet": "26세 여자가 갑자기 시작된 심한 한쪽 아랫배 통증과 구역·구토로 왔다. 통증은 간헐적으로 심해졌다 덜해진다. 임신반응은 음성이고 골반 초음파에서 한쪽에 커진 난소 낭종과 부종성 난소가 보이며 도플러에서 난소 혈류가 감소돼 있다. 다음 중 가장 적절한 처치는? A. 경구 진통제 처방 후 외래 추적 B. 항생제 투여 후 관찰 C. 경구피임약으로 낭종 소실 유도 D. 다음 월경 후 재평가 E. 응급 복강경으로 난소 꼬임을 풀고 난",
+   "text": "Obstetrics & Gynecology Ovarian Torsion ovarian-torsion adnexal-mass Doppler laparoscopy KMLE 2026 / Claude Routine 26세 여자가 갑자기 시작된 심한 한쪽 아랫배 통증과 구역·구토로 왔다. 통증은 간헐적으로 심해졌다 덜해진다. 임신반응은 음성이고 골반 초음파에서 한쪽에 커진 난소 낭종과 부종성 난소가 보이며 도플러에서 난소 혈류가 감소돼 있다. 다음 중 가장 적절한 처치는? A. 경구 진통제 처방 후 외래 추적 B. 항생제 투여 후 관찰 C. 경구피임약으로 낭종 소실 유도 D. 다음 월경 후 재평가 E. 응급 복강경으로 난소 꼬임을 풀고 난소를 보존 가임기 여성의 갑작스러운 편측 골반통+커진 난소+도플러 혈류 감소는 난소염전이며, 난소 생존을 위해 응급 복강경으로 즉시 정복(가능하면 난소 보존)한다."
+  },
+  {
+   "id": "kmle-2026-0122",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Preterm Premature Rupture of Membranes",
+   "tags": [
+    "PPROM",
+    "latency-antibiotics",
+    "corticosteroid",
+    "preterm"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0122.md",
+   "snippet": "임신 30주 임신부가 맑은 물이 왕창 쏟아지는 느낌 뒤 지속적인 질 분비물로 왔다. 검경 검사에서 후질원개에 고인 양수가 보이고 나이트라진 검사가 양성이다. 자궁수축과 발열, 태아곤란 징후는 없고 감염 지표는 정상이다. 다음 중 가장 적절한 처치 조합은? A. 즉시 유도분만 B. 자궁수축억제제만 투여 후 귀가 C. 항생제 + 산전 부신피질호르몬 + 기대요법 D. 이뇨제와 침상안정 E. 응급 제왕절개 감염·태아곤란이 없는 임신 ",
+   "text": "Obstetrics & Gynecology Preterm Premature Rupture of Membranes PPROM latency-antibiotics corticosteroid preterm KMLE 2026 / Claude Routine 임신 30주 임신부가 맑은 물이 왕창 쏟아지는 느낌 뒤 지속적인 질 분비물로 왔다. 검경 검사에서 후질원개에 고인 양수가 보이고 나이트라진 검사가 양성이다. 자궁수축과 발열, 태아곤란 징후는 없고 감염 지표는 정상이다. 다음 중 가장 적절한 처치 조합은? A. 즉시 유도분만 B. 자궁수축억제제만 투여 후 귀가 C. 항생제 + 산전 부신피질호르몬 + 기대요법 D. 이뇨제와 침상안정 E. 응급 제왕절개 감염·태아곤란이 없는 임신 34주 미만 조기양막파수는 기대요법이 원칙이며, 잠복기 연장 항생제와 태아 폐성숙을 위한 산전 스테로이드를 함께 투여한다."
+  },
+  {
+   "id": "kmle-2026-0121",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Simple Febrile Seizure",
+   "tags": [
+    "febrile-seizure",
+    "pediatrics",
+    "reassurance",
+    "antipyretic"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0121.md",
+   "snippet": "18개월 여아가 열이 오르던 중 전신이 뻣뻣해지며 팔다리를 떠는 발작을 2분간 하고 곧 멈췄다. 발작 후 곧 의식이 완전히 회복됐다. 상기도감염 소견 외에 경부 강직이나 국소 신경학적 이상은 없고, 이전에 발작 병력은 없다. 다음 중 가장 적절한 처치는? A. 해열·부모 안심교육 후 원인 감염을 평가한다 B. 즉시 요추천자로 뇌수막염을 확인 C. 뇌 CT 촬영 D. 예방적 항경련제를 매일 복용시킨다 E. 뇌파검사 후 입원 6개",
+   "text": "Pediatrics Simple Febrile Seizure febrile-seizure pediatrics reassurance antipyretic KMLE 2026 / Claude Routine 18개월 여아가 열이 오르던 중 전신이 뻣뻣해지며 팔다리를 떠는 발작을 2분간 하고 곧 멈췄다. 발작 후 곧 의식이 완전히 회복됐다. 상기도감염 소견 외에 경부 강직이나 국소 신경학적 이상은 없고, 이전에 발작 병력은 없다. 다음 중 가장 적절한 처치는? A. 해열·부모 안심교육 후 원인 감염을 평가한다 B. 즉시 요추천자로 뇌수막염을 확인 C. 뇌 CT 촬영 D. 예방적 항경련제를 매일 복용시킨다 E. 뇌파검사 후 입원 6개월~5세, 15분 미만, 전신형, 하루 1회, 발작 후 정상 회복은 단순 열성경련이다. 특별한 신경학적 이상이 없으면 해열과 부모 안심교육, 열의 원인 감염 평가로 충분하다."
+  },
+  {
+   "id": "kmle-2026-0120",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Bronchiolitis (RSV)",
+   "tags": [
+    "bronchiolitis",
+    "RSV",
+    "supportive-care",
+    "infant"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0120.md",
+   "snippet": "생후 7개월 남아가 3일간의 콧물·기침 뒤 숨이 가빠져 왔다. 겨울철이며 진찰에서 빠른 호흡과 흉곽 함몰, 양폐야에 천명(wheezing)과 미세수포음이 들린다. 산소포화도는 94%이고 수분 섭취는 유지된다. 다음 중 가장 적절한 처치는? A. 경험적 정맥 항생제 B. 전신 스테로이드 C. 흡입 기관지확장제 지속 투여 D. 수분·산소 공급 등 지지치료 E. 리바비린 흡입 겨울철 영아의 콧물 뒤 천명·빈호흡·함몰은 대개 RSV ",
+   "text": "Pediatrics Bronchiolitis (RSV) bronchiolitis RSV supportive-care infant KMLE 2026 / Claude Routine 생후 7개월 남아가 3일간의 콧물·기침 뒤 숨이 가빠져 왔다. 겨울철이며 진찰에서 빠른 호흡과 흉곽 함몰, 양폐야에 천명(wheezing)과 미세수포음이 들린다. 산소포화도는 94%이고 수분 섭취는 유지된다. 다음 중 가장 적절한 처치는? A. 경험적 정맥 항생제 B. 전신 스테로이드 C. 흡입 기관지확장제 지속 투여 D. 수분·산소 공급 등 지지치료 E. 리바비린 흡입 겨울철 영아의 콧물 뒤 천명·빈호흡·함몰은 대개 RSV 세기관지염이며, 치료는 수분·산소 공급 등 지지요법이 핵심이다. 항생제·스테로이드·기관지확장제 상용은 권장되지 않는다."
+  },
+  {
+   "id": "kmle-2026-0119",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Slipped Capital Femoral Epiphysis",
+   "tags": [
+    "SCFE",
+    "adolescent",
+    "hip-pain",
+    "referred-knee-pain",
+    "in-situ-fixation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0119.md",
+   "snippet": "13세 남자가 몇 주간 지속된 왼쪽 무릎과 넓적다리 통증, 절뚝거림으로 왔다. 비만하며 무릎 진찰은 정상이다. 왼쪽 고관절을 굽히면 다리가 저절로 바깥으로 돌아간다. 개구리자세 골반 X선에서 대퇴골두 골단이 골단판을 따라 후하방으로 미끄러져 있다. 가장 적절한 치료는? A. 체중 부하 물리치료와 경과 관찰 B. 제자리 나사고정(in situ pinning) 수술 C. 도수정복 후 석고고정 D. 통증 조절 후 성장 완료까지 대기",
+   "text": "Orthopedics Slipped Capital Femoral Epiphysis SCFE adolescent hip-pain referred-knee-pain in-situ-fixation KMLE 2026 / Claude Routine 13세 남자가 몇 주간 지속된 왼쪽 무릎과 넓적다리 통증, 절뚝거림으로 왔다. 비만하며 무릎 진찰은 정상이다. 왼쪽 고관절을 굽히면 다리가 저절로 바깥으로 돌아간다. 개구리자세 골반 X선에서 대퇴골두 골단이 골단판을 따라 후하방으로 미끄러져 있다. 가장 적절한 치료는? A. 체중 부하 물리치료와 경과 관찰 B. 제자리 나사고정(in situ pinning) 수술 C. 도수정복 후 석고고정 D. 통증 조절 후 성장 완료까지 대기 E. 무릎 관절경 비만 청소년의 무릎으로 연관된 고관절 통증과 개구리자세 X선의 골단 후하방 활주는 대퇴골두골단분리증(SCFE)이며, 추가 활주를 막기 위해 즉시 제자리 나사고정을 한다."
+  },
+  {
+   "id": "kmle-2026-0118",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Anterior Shoulder Dislocation",
+   "tags": [
+    "shoulder-dislocation",
+    "axillary-nerve",
+    "neurovascular-exam",
+    "reduction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0118.md",
+   "snippet": "23세 남자가 럭비 중 팔이 밖으로 젖혀지며 넘어진 뒤 어깨 통증으로 왔다. 팔을 약간 벌리고 바깥으로 돌린 자세로 고정하고 있으며, 어깨의 정상 둥근 윤곽이 사라지고 각진 모양이다. 정복 전 반드시 확인해야 할 신경학적 소견으로 가장 중요한 것은? A. 손목 신전(요골신경)만 확인 B. 손가락 벌림(척골신경)만 확인 C. 어깨 바깥쪽 감각과 삼각근 기능(액와신경) D. 엄지 검지 대립(정중신경)만 확인 E. 발등 감각(비골신",
+   "text": "Orthopedics Anterior Shoulder Dislocation shoulder-dislocation axillary-nerve neurovascular-exam reduction KMLE 2026 / Claude Routine 23세 남자가 럭비 중 팔이 밖으로 젖혀지며 넘어진 뒤 어깨 통증으로 왔다. 팔을 약간 벌리고 바깥으로 돌린 자세로 고정하고 있으며, 어깨의 정상 둥근 윤곽이 사라지고 각진 모양이다. 정복 전 반드시 확인해야 할 신경학적 소견으로 가장 중요한 것은? A. 손목 신전(요골신경)만 확인 B. 손가락 벌림(척골신경)만 확인 C. 어깨 바깥쪽 감각과 삼각근 기능(액와신경) D. 엄지 검지 대립(정중신경)만 확인 E. 발등 감각(비골신경) 앞쪽 어깨탈구에서 가장 흔히 손상되는 신경은 액와신경이므로, 정복 전후로 어깨 바깥쪽 감각과 삼각근 기능을 반드시 평가·기록한다."
+  },
+  {
+   "id": "kmle-2026-0117",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Sigmoid Volvulus",
+   "tags": [
+    "sigmoid-volvulus",
+    "coffee-bean-sign",
+    "endoscopic-detorsion",
+    "large-bowel-obstruction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0117.md",
+   "snippet": "78세 남자가 요양병원에서 만성 변비 병력으로 지내다 심한 복부팽만과 복통, 배변·배가스 중단으로 왔다. 복부 X선에서 좌하복부에서 기원해 크게 확장된 '커피콩' 모양 고리가 보인다. 복막자극징후나 복막염, 장허혈 소견은 없다. 다음 중 가장 적절한 초기 처치는? A. 즉시 결장전절제술 B. 바륨관장 C. 이뇨제 투여 D. 항생제만 투여 후 관찰 E. 대장내시경(에스결장경)으로 감압·정복 고령·변비 환자의 커피콩 징후는 에스결",
+   "text": "General Surgery Sigmoid Volvulus sigmoid-volvulus coffee-bean-sign endoscopic-detorsion large-bowel-obstruction KMLE 2026 / Claude Routine 78세 남자가 요양병원에서 만성 변비 병력으로 지내다 심한 복부팽만과 복통, 배변·배가스 중단으로 왔다. 복부 X선에서 좌하복부에서 기원해 크게 확장된 '커피콩' 모양 고리가 보인다. 복막자극징후나 복막염, 장허혈 소견은 없다. 다음 중 가장 적절한 초기 처치는? A. 즉시 결장전절제술 B. 바륨관장 C. 이뇨제 투여 D. 항생제만 투여 후 관찰 E. 대장내시경(에스결장경)으로 감압·정복 고령·변비 환자의 커피콩 징후는 에스결장 꼬임(volvulus)이며, 허혈·천공 징후가 없으면 내시경적 감압·정복이 1차 처치이고 이후 재발 방지 수술을 계획한다."
+  },
+  {
+   "id": "kmle-2026-0116",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Ruptured Abdominal Aortic Aneurysm",
+   "tags": [
+    "AAA",
+    "rupture",
+    "hypotension",
+    "emergency-surgery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0116.md",
+   "snippet": "72세 남자가 갑작스러운 심한 허리·복부 통증과 실신으로 왔다. 흡연력이 많고 혈압이 매우 낮으며 빈맥이다. 진찰에서 배꼽 주위에 박동성 종괴가 만져지고 좌측 옆구리에 반상출혈이 있다. 다음 중 가장 적절한 처치는? A. 즉시 혈관수술/스텐트그라프트로 응급 수술 B. 조영증강 CT를 촬영한 뒤 입원 대기 C. 진통제 투여 후 경과 관찰 D. 대량 수액으로 혈압을 정상까지 끌어올린 뒤 예약수술 E. 위장관내시경 박동성 복부 종괴",
+   "text": "General Surgery Ruptured Abdominal Aortic Aneurysm AAA rupture hypotension emergency-surgery KMLE 2026 / Claude Routine 72세 남자가 갑작스러운 심한 허리·복부 통증과 실신으로 왔다. 흡연력이 많고 혈압이 매우 낮으며 빈맥이다. 진찰에서 배꼽 주위에 박동성 종괴가 만져지고 좌측 옆구리에 반상출혈이 있다. 다음 중 가장 적절한 처치는? A. 즉시 혈관수술/스텐트그라프트로 응급 수술 B. 조영증강 CT를 촬영한 뒤 입원 대기 C. 진통제 투여 후 경과 관찰 D. 대량 수액으로 혈압을 정상까지 끌어올린 뒤 예약수술 E. 위장관내시경 박동성 복부 종괴+저혈압+급성 복통/요통은 복부대동맥류 파열이며, 혈역학적으로 불안정하면 영상에 시간을 쓰지 말고 즉시 응급 수술(개복 또는 EVAR)로 가야 한다."
+  },
+  {
+   "id": "kmle-2026-0115",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Ankylosing Spondylitis",
+   "tags": [
+    "ankylosing-spondylitis",
+    "HLA-B27",
+    "sacroiliitis",
+    "inflammatory-back-pain"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0115.md",
+   "snippet": "24세 남자가 3개월 이상 지속된 허리·엉덩이 통증으로 왔다. 통증은 새벽에 심하고 아침 강직이 1시간 넘게 가며 운동하면 좋아지고 쉬면 악화된다. 골반 X선에서 양측 엉치엉덩관절의 미란과 경화가 보이고 HLA B27이 양성, 류마티스인자는 음성이다. 이 환자의 초기 약물치료로 가장 적절한 것은? A. 경구 부신피질호르몬 고용량 B. 알로푸리놀 C. 비스테로이드소염제(NSAID) D. 메토트렉세이트 단독 E. 콜히친 염증성 요",
+   "text": "Rheumatology Ankylosing Spondylitis ankylosing-spondylitis HLA-B27 sacroiliitis inflammatory-back-pain KMLE 2026 / Claude Routine 24세 남자가 3개월 이상 지속된 허리·엉덩이 통증으로 왔다. 통증은 새벽에 심하고 아침 강직이 1시간 넘게 가며 운동하면 좋아지고 쉬면 악화된다. 골반 X선에서 양측 엉치엉덩관절의 미란과 경화가 보이고 HLA B27이 양성, 류마티스인자는 음성이다. 이 환자의 초기 약물치료로 가장 적절한 것은? A. 경구 부신피질호르몬 고용량 B. 알로푸리놀 C. 비스테로이드소염제(NSAID) D. 메토트렉세이트 단독 E. 콜히친 염증성 요통(야간 악화·운동 시 호전·긴 조조강직)+양측 엉치엉덩관절염+HLA B27 양성은 강직척추염이며, 축성 질환의 1차 약물은 NSAID다."
+  },
+  {
+   "id": "kmle-2026-0114",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Dermatomyositis",
+   "tags": [
+    "dermatomyositis",
+    "Gottron",
+    "heliotrope",
+    "malignancy-screening"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0114.md",
+   "snippet": "52세 여자가 수 주에 걸쳐 계단 오르기와 머리 빗기가 힘들어지는 대칭적 근위부 위약으로 왔다. 양쪽 눈꺼풀의 보라색 홍반과 손가락 관절 신전면의 붉은 구진이 있다. CK가 크게 상승했다. 진단 확인과 함께 이 환자에서 반드시 함께 시행해야 할 것은? A. 갑상선기능 재확인만으로 충분 B. 연령·성별에 맞춘 악성종양 선별검사 C. 근이완제 처방 D. 24시간 소변 코르티솔 E. 즉시 근전도만 반복 고트론 구진·헬리오트로프 발진",
+   "text": "Rheumatology Dermatomyositis dermatomyositis Gottron heliotrope malignancy-screening KMLE 2026 / Claude Routine 52세 여자가 수 주에 걸쳐 계단 오르기와 머리 빗기가 힘들어지는 대칭적 근위부 위약으로 왔다. 양쪽 눈꺼풀의 보라색 홍반과 손가락 관절 신전면의 붉은 구진이 있다. CK가 크게 상승했다. 진단 확인과 함께 이 환자에서 반드시 함께 시행해야 할 것은? A. 갑상선기능 재확인만으로 충분 B. 연령·성별에 맞춘 악성종양 선별검사 C. 근이완제 처방 D. 24시간 소변 코르티솔 E. 즉시 근전도만 반복 고트론 구진·헬리오트로프 발진과 근위부 근염(CK 상승)은 피부근염이며, 성인 피부근염은 잠재 악성종양 위험이 높아 연령·성별에 맞춘 종양 선별이 필수다."
+  },
+  {
+   "id": "kmle-2026-0113",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Normal Pressure Hydrocephalus",
+   "tags": [
+    "NPH",
+    "gait-apraxia",
+    "dementia",
+    "CSF-tap-test",
+    "shunt"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0113.md",
+   "snippet": "73세 남자가 수개월에 걸쳐 걸음이 느려지고 자석에 붙은 듯 발이 안 떨어지는 보행장애, 요실금, 기억력 저하가 순서대로 나타났다. 뇌 MRI에서 뇌실이 뇌위축에 비해 불균형하게 확장돼 있다. 이 환자에서 치료 반응을 예측하고 진단을 돕는 가장 적절한 검사는? A. 뇌파검사 B. 경동맥 초음파 C. 도파민운반체 SPECT D. 뇌척수액 대량 배액검사(tap test) E. 근전도검사 보행장애·요실금·인지저하의 3징에 불균형한 ",
+   "text": "Neurology Normal Pressure Hydrocephalus NPH gait-apraxia dementia CSF-tap-test shunt KMLE 2026 / Claude Routine 73세 남자가 수개월에 걸쳐 걸음이 느려지고 자석에 붙은 듯 발이 안 떨어지는 보행장애, 요실금, 기억력 저하가 순서대로 나타났다. 뇌 MRI에서 뇌실이 뇌위축에 비해 불균형하게 확장돼 있다. 이 환자에서 치료 반응을 예측하고 진단을 돕는 가장 적절한 검사는? A. 뇌파검사 B. 경동맥 초음파 C. 도파민운반체 SPECT D. 뇌척수액 대량 배액검사(tap test) E. 근전도검사 보행장애·요실금·인지저하의 3징에 불균형한 뇌실확장이면 정상압수두증이며, 뇌척수액 대량 배액검사(tap test) 후 보행 호전 여부로 션트 반응을 예측한다."
+  },
+  {
+   "id": "kmle-2026-0112",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Wernicke Encephalopathy",
+   "tags": [
+    "Wernicke",
+    "thiamine",
+    "ophthalmoplegia",
+    "ataxia",
+    "alcohol"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0112.md",
+   "snippet": "54세 남자가 며칠간 혼란과 걸음 불안정으로 왔다. 만성 음주력이 있고 최근 식사를 거의 못 했다. 진찰에서 안구운동마비(수평 안진과 외전신경 마비)와 보행실조, 혼동이 있다. 응급실에서 정맥 포도당을 먼저 주자 증상이 급격히 악화됐다. 이 환자에게 우선적으로 투여했어야 할 것은? A. 티아민(비타민 B1) B. 엽산 C. 비타민 B12 D. 마그네슘 단독 E. 만니톨 안구운동마비+실조+의식변화의 3징에 음주·영양결핍이면 베르",
+   "text": "Neurology Wernicke Encephalopathy Wernicke thiamine ophthalmoplegia ataxia alcohol KMLE 2026 / Claude Routine 54세 남자가 며칠간 혼란과 걸음 불안정으로 왔다. 만성 음주력이 있고 최근 식사를 거의 못 했다. 진찰에서 안구운동마비(수평 안진과 외전신경 마비)와 보행실조, 혼동이 있다. 응급실에서 정맥 포도당을 먼저 주자 증상이 급격히 악화됐다. 이 환자에게 우선적으로 투여했어야 할 것은? A. 티아민(비타민 B1) B. 엽산 C. 비타민 B12 D. 마그네슘 단독 E. 만니톨 안구운동마비+실조+의식변화의 3징에 음주·영양결핍이면 베르니케뇌병증이며, 포도당보다 티아민을 먼저(또는 동시에) 줘야 한다. 티아민 없이 포도당을 주면 악화한다."
+  },
+  {
+   "id": "kmle-2026-0111",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Falciparum Malaria",
+   "tags": [
+    "malaria",
+    "Plasmodium-falciparum",
+    "artesunate",
+    "travel-medicine"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0111.md",
+   "snippet": "34세 남자가 나이지리아 여행에서 돌아온 뒤 고열과 오한, 두통, 의식 저하로 왔다. 말초혈액도말에서 여러 개의 고리형 원충이 든 적혈구와 바나나 모양 생식모세포가 보이고 기생충혈증이 6%다. 저혈당과 혈소판감소, 황달이 동반됐다. 가장 적절한 치료는? A. 경구 클로로퀸 B. 경구 프리마퀸 단독 C. 경구 독시사이클린 단독 D. 대증치료 후 경과 관찰 E. 정맥 아르테수네이트 고 기생충혈증(≥5%)·의식저하·저혈당·황달이 있",
+   "text": "Infectious Disease Falciparum Malaria malaria Plasmodium-falciparum artesunate travel-medicine KMLE 2026 / Claude Routine 34세 남자가 나이지리아 여행에서 돌아온 뒤 고열과 오한, 두통, 의식 저하로 왔다. 말초혈액도말에서 여러 개의 고리형 원충이 든 적혈구와 바나나 모양 생식모세포가 보이고 기생충혈증이 6%다. 저혈당과 혈소판감소, 황달이 동반됐다. 가장 적절한 치료는? A. 경구 클로로퀸 B. 경구 프리마퀸 단독 C. 경구 독시사이클린 단독 D. 대증치료 후 경과 관찰 E. 정맥 아르테수네이트 고 기생충혈증(≥5%)·의식저하·저혈당·황달이 있는 열대열원충(P. falciparum) 중증 말라리아는 정맥 아르테수네이트가 1차 치료다."
+  },
+  {
+   "id": "kmle-2026-0110",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Scrub Typhus (Tsutsugamushi)",
+   "tags": [
+    "scrub-typhus",
+    "eschar",
+    "Orientia-tsutsugamushi",
+    "doxycycline"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0110.md",
+   "snippet": "62세 농부가 가을철에 고열과 두통, 근육통, 전신 발진으로 왔다. 최근 밭일을 많이 했다. 진찰에서 서혜부에 검은 딱지(가피)가 덮인 궤양과 국소 림프절 종대가 있고, 간효소 상승과 경한 혈소판감소가 동반됐다. 가장 적절한 치료제는? A. 세프트리악손 B. 반코마이신 C. 독시사이클린 D. 아시클로버 E. 메트로니다졸 가을철·야외활동·특징적 가피(eschar)에 발열·발진·간효소 상승·혈소판감소면 쯔쯔가무시병(Orientia",
+   "text": "Infectious Disease Scrub Typhus (Tsutsugamushi) scrub-typhus eschar Orientia-tsutsugamushi doxycycline KMLE 2026 / Claude Routine 62세 농부가 가을철에 고열과 두통, 근육통, 전신 발진으로 왔다. 최근 밭일을 많이 했다. 진찰에서 서혜부에 검은 딱지(가피)가 덮인 궤양과 국소 림프절 종대가 있고, 간효소 상승과 경한 혈소판감소가 동반됐다. 가장 적절한 치료제는? A. 세프트리악손 B. 반코마이신 C. 독시사이클린 D. 아시클로버 E. 메트로니다졸 가을철·야외활동·특징적 가피(eschar)에 발열·발진·간효소 상승·혈소판감소면 쯔쯔가무시병(Orientia tsutsugamushi)이며, 독시사이클린이 1차 치료다."
+  },
+  {
+   "id": "kmle-2026-0109",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "G6PD Deficiency",
+   "tags": [
+    "G6PD",
+    "hemolysis",
+    "Heinz-body",
+    "bite-cell",
+    "oxidative-stress"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0109.md",
+   "snippet": "22세 남자가 잠두(fava bean)를 먹은 뒤 갑자기 황달과 진한 소변, 피로가 생겨 왔다. 검사에서 간접빌리루빈 상승, 망상적혈구 증가, LDH 상승과 합토글로빈 감소가 있고 말초혈액도말에 '물어뜯긴' 적혈구가 보인다. 이 환자에서 예상되는 소견은? A. 삼투압취약성 증가 B. 하인츠소체(변성 헤모글로빈 침착) C. 표적적혈구와 HbS D. 구형적혈구 증가 E. 냉응집소 양성 산화 스트레스(잠두·감염·약물)로 유발되는 급",
+   "text": "Hematology G6PD Deficiency G6PD hemolysis Heinz-body bite-cell oxidative-stress KMLE 2026 / Claude Routine 22세 남자가 잠두(fava bean)를 먹은 뒤 갑자기 황달과 진한 소변, 피로가 생겨 왔다. 검사에서 간접빌리루빈 상승, 망상적혈구 증가, LDH 상승과 합토글로빈 감소가 있고 말초혈액도말에 '물어뜯긴' 적혈구가 보인다. 이 환자에서 예상되는 소견은? A. 삼투압취약성 증가 B. 하인츠소체(변성 헤모글로빈 침착) C. 표적적혈구와 HbS D. 구형적혈구 증가 E. 냉응집소 양성 산화 스트레스(잠두·감염·약물)로 유발되는 급성 혈관내 용혈에 물어뜯긴 적혈구(bite cell)가 보이면 G6PD 결핍이며, 특수염색에서 하인츠소체가 관찰된다."
+  },
+  {
+   "id": "kmle-2026-0108",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Immune Thrombocytopenia (ITP)",
+   "tags": [
+    "ITP",
+    "isolated-thrombocytopenia",
+    "corticosteroid",
+    "IVIG"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0108.md",
+   "snippet": "27세 여자가 며칠 전부터 다리에 점상출혈과 잇몸 출혈이 생겨 왔다. 최근 상기도감염을 앓았다. 혈소판만 심하게 감소했고 혈색소·백혈구·응고검사는 정상이며 말초혈액도말에서 분열적혈구나 비정상 세포가 없다. 활동성 출혈은 없다. 가장 적절한 초기 치료는? A. 혈소판 수혈 B. 신선동결혈장 투여 C. 비장절제술 D. 부신피질호르몬(스테로이드) E. 항생제 경험적 투여 다른 계열은 정상이고 분열적혈구 없이 고립성 혈소판감소면 면역",
+   "text": "Hematology Immune Thrombocytopenia (ITP) ITP isolated-thrombocytopenia corticosteroid IVIG KMLE 2026 / Claude Routine 27세 여자가 며칠 전부터 다리에 점상출혈과 잇몸 출혈이 생겨 왔다. 최근 상기도감염을 앓았다. 혈소판만 심하게 감소했고 혈색소·백혈구·응고검사는 정상이며 말초혈액도말에서 분열적혈구나 비정상 세포가 없다. 활동성 출혈은 없다. 가장 적절한 초기 치료는? A. 혈소판 수혈 B. 신선동결혈장 투여 C. 비장절제술 D. 부신피질호르몬(스테로이드) E. 항생제 경험적 투여 다른 계열은 정상이고 분열적혈구 없이 고립성 혈소판감소면 면역혈소판감소증(ITP)이며, 성인 초기치료는 코르티코스테로이드(중증·출혈 시 IVIG 병용)다."
+  },
+  {
+   "id": "kmle-2026-0107",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Primary Hyperparathyroidism",
+   "tags": [
+    "hypercalcemia",
+    "primary-hyperparathyroidism",
+    "PTH",
+    "parathyroid-adenoma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0107.md",
+   "snippet": "56세 여자가 건강검진에서 고칼슘혈증이 발견됐다. 반복되는 신장결석과 피로가 있다. 혈청 칼슘이 높은데 부갑상선호르몬(PTH)이 함께 상승해 있고 혈청 인은 낮다. 24시간 소변 칼슘은 증가되어 있다. 가장 가능성이 높은 진단은? A. 악성종양 관련 고칼슘혈증 B. 가족성 저칼슘뇨성 고칼슘혈증 C. 원발성 부갑상선기능항진증 D. 비타민 D 중독 E. 사르코이드증 고칼슘혈증에 PTH가 억제되지 않고 오히려 상승(부적절)하고 저인",
+   "text": "Endocrinology Primary Hyperparathyroidism hypercalcemia primary-hyperparathyroidism PTH parathyroid-adenoma KMLE 2026 / Claude Routine 56세 여자가 건강검진에서 고칼슘혈증이 발견됐다. 반복되는 신장결석과 피로가 있다. 혈청 칼슘이 높은데 부갑상선호르몬(PTH)이 함께 상승해 있고 혈청 인은 낮다. 24시간 소변 칼슘은 증가되어 있다. 가장 가능성이 높은 진단은? A. 악성종양 관련 고칼슘혈증 B. 가족성 저칼슘뇨성 고칼슘혈증 C. 원발성 부갑상선기능항진증 D. 비타민 D 중독 E. 사르코이드증 고칼슘혈증에 PTH가 억제되지 않고 오히려 상승(부적절)하고 저인산혈증·고칼슘뇨가 동반되면 원발성 부갑상선기능항진증(대개 선종)이다."
+  },
+  {
+   "id": "kmle-2026-0106",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Pheochromocytoma",
+   "tags": [
+    "pheochromocytoma",
+    "catecholamine",
+    "alpha-blockade",
+    "perioperative"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0106.md",
+   "snippet": "44세 여자가 발작적 두통·심계항진·발한과 함께 심한 혈압 상승 삽화를 반복한다. 혈장·소변 메타네프린이 상승했고 부신 종괴가 CT에서 확인됐다. 수술적 절제를 계획하는데, 수술 전 혈압 조절을 위해 가장 먼저 시작해야 할 약물은? A. 페녹시벤자민(비선택적 α차단제) B. 프로프라놀롤(β차단제) C. 아테놀롤(β1차단제) D. 히드로클로로티아지드 E. 딜티아젬 갈색세포종은 수술 전 α차단(페녹시벤자민)을 먼저 시작해 카테콜아",
+   "text": "Endocrinology Pheochromocytoma pheochromocytoma catecholamine alpha-blockade perioperative KMLE 2026 / Claude Routine 44세 여자가 발작적 두통·심계항진·발한과 함께 심한 혈압 상승 삽화를 반복한다. 혈장·소변 메타네프린이 상승했고 부신 종괴가 CT에서 확인됐다. 수술적 절제를 계획하는데, 수술 전 혈압 조절을 위해 가장 먼저 시작해야 할 약물은? A. 페녹시벤자민(비선택적 α차단제) B. 프로프라놀롤(β차단제) C. 아테놀롤(β1차단제) D. 히드로클로로티아지드 E. 딜티아젬 갈색세포종은 수술 전 α차단(페녹시벤자민)을 먼저 시작해 카테콜아민의 혈관수축을 막고, 필요 시 그 후에 β차단을 추가한다. β를 먼저 쓰면 위험하다."
+  },
+  {
+   "id": "kmle-2026-0105",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Distal (Type 1) Renal Tubular Acidosis",
+   "tags": [
+    "RTA",
+    "non-anion-gap-acidosis",
+    "hypokalemia",
+    "nephrolithiasis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0105.md",
+   "snippet": "34세 여자가 전신 위약과 반복되는 신장결석으로 왔다. 대사성 산증이 있는데 음이온차는 정상이고 저칼륨혈증이 동반됐다. 전신 산증에도 불구하고 소변 pH가 6.5로 높게 유지된다. 이 환자의 산 염기 이상을 가장 잘 설명하는 기전은? A. 근위세뇨관의 중탄산 재흡수 장애 B. 알도스테론 결핍으로 인한 나트륨 소실 C. 케톤산 생성 증가 D. 원위세뇨관 α중간세포의 수소이온 분비 장애 E. 젖산 축적 정상 음이온차 대사성 산증+",
+   "text": "Nephrology Distal (Type 1) Renal Tubular Acidosis RTA non-anion-gap-acidosis hypokalemia nephrolithiasis KMLE 2026 / Claude Routine 34세 여자가 전신 위약과 반복되는 신장결석으로 왔다. 대사성 산증이 있는데 음이온차는 정상이고 저칼륨혈증이 동반됐다. 전신 산증에도 불구하고 소변 pH가 6.5로 높게 유지된다. 이 환자의 산 염기 이상을 가장 잘 설명하는 기전은? A. 근위세뇨관의 중탄산 재흡수 장애 B. 알도스테론 결핍으로 인한 나트륨 소실 C. 케톤산 생성 증가 D. 원위세뇨관 α중간세포의 수소이온 분비 장애 E. 젖산 축적 정상 음이온차 대사성 산증+저칼륨혈증+산증에도 소변 pH 5.5(요산성화 실패)+신장결석은 원위(1형) RTA로, α중간세포의 H+ 분비 장애가 원인이다."
+  },
+  {
+   "id": "kmle-2026-0104",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "IgA Nephropathy",
+   "tags": [
+    "IgA-nephropathy",
+    "synpharyngitic-hematuria",
+    "glomerulonephritis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0104.md",
+   "snippet": "24세 남자가 감기 증상이 시작된 그 날 육안적 혈뇨가 생겨 왔다. 과거에도 상기도감염과 동시에 혈뇨가 반복됐다. 혈압은 약간 높고 이형적혈구뇨와 경도 단백뇨가 있으며 보체와 ASO는 정상이다. 가장 가능성이 높은 진단은? A. 감염 후 사구체신염 B. IgA 신병증 C. 얇은기저막병 D. 알포트증후군 E. 미세변화신증후군 상기도감염과 '동시에(synpharyngitic)' 반복되는 육안적 혈뇨에 보체 정상이면 IgA 신병증이",
+   "text": "Nephrology IgA Nephropathy IgA-nephropathy synpharyngitic-hematuria glomerulonephritis KMLE 2026 / Claude Routine 24세 남자가 감기 증상이 시작된 그 날 육안적 혈뇨가 생겨 왔다. 과거에도 상기도감염과 동시에 혈뇨가 반복됐다. 혈압은 약간 높고 이형적혈구뇨와 경도 단백뇨가 있으며 보체와 ASO는 정상이다. 가장 가능성이 높은 진단은? A. 감염 후 사구체신염 B. IgA 신병증 C. 얇은기저막병 D. 알포트증후군 E. 미세변화신증후군 상기도감염과 '동시에(synpharyngitic)' 반복되는 육안적 혈뇨에 보체 정상이면 IgA 신병증이 가장 가능성이 높다."
+  },
+  {
+   "id": "kmle-2026-0103",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Celiac Disease",
+   "tags": [
+    "celiac",
+    "tTG-IgA",
+    "villous-atrophy",
+    "malabsorption"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0103.md",
+   "snippet": "28세 여자가 만성 설사와 복부팽만, 체중감소로 왔다. 철결핍빈혈이 있고 경구 철분에 잘 반응하지 않는다. 항조직트랜스글루타미나제(tTG) IgA 항체가 강양성이고 총 IgA는 정상이다. 진단을 확정하기 위해 가장 적절한 검사는? A. 대장내시경과 대장 생검 B. 유당 수소호기검사 C. 위·십이지장내시경과 십이지장 점막 생검 D. 복부 CT 조영 E. 대변 지방 정량검사 tTG IgA 양성(총 IgA 정상)에서 셀리악병 확진은",
+   "text": "Gastroenterology Celiac Disease celiac tTG-IgA villous-atrophy malabsorption KMLE 2026 / Claude Routine 28세 여자가 만성 설사와 복부팽만, 체중감소로 왔다. 철결핍빈혈이 있고 경구 철분에 잘 반응하지 않는다. 항조직트랜스글루타미나제(tTG) IgA 항체가 강양성이고 총 IgA는 정상이다. 진단을 확정하기 위해 가장 적절한 검사는? A. 대장내시경과 대장 생검 B. 유당 수소호기검사 C. 위·십이지장내시경과 십이지장 점막 생검 D. 복부 CT 조영 E. 대변 지방 정량검사 tTG IgA 양성(총 IgA 정상)에서 셀리악병 확진은 십이지장 점막 생검으로 융모위축·음와과증식·상피내 림프구 증가를 확인한다."
+  },
+  {
+   "id": "kmle-2026-0102",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Acute Ascending Cholangitis",
+   "tags": [
+    "cholangitis",
+    "Charcot-triad",
+    "ERCP",
+    "biliary-sepsis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0102.md",
+   "snippet": "68세 여자가 발열과 오한, 우상복부 통증, 황달로 왔다. 혈압이 낮고 빈맥이며, 담관 확장과 총담관 결석이 초음파에서 보인다. 광범위 항생제와 수액을 시작해 활력징후를 안정화하고 있다. 다음 중 가장 적절한 다음 처치는? A. 내시경역행담췌관조영술(ERCP)로 담도 배액 B. 즉시 개복 담낭절제술 C. 경과 관찰하며 항생제만 5일 지속 D. 우르소데옥시콜산 경구 투여 E. 체외충격파 쇄석술 샤르코 3징(발열·황달·우상복부통)",
+   "text": "Gastroenterology Acute Ascending Cholangitis cholangitis Charcot-triad ERCP biliary-sepsis KMLE 2026 / Claude Routine 68세 여자가 발열과 오한, 우상복부 통증, 황달로 왔다. 혈압이 낮고 빈맥이며, 담관 확장과 총담관 결석이 초음파에서 보인다. 광범위 항생제와 수액을 시작해 활력징후를 안정화하고 있다. 다음 중 가장 적절한 다음 처치는? A. 내시경역행담췌관조영술(ERCP)로 담도 배액 B. 즉시 개복 담낭절제술 C. 경과 관찰하며 항생제만 5일 지속 D. 우르소데옥시콜산 경구 투여 E. 체외충격파 쇄석술 샤르코 3징(발열·황달·우상복부통)에 저혈압이 겹친 급성 담관염은 담도 감압이 핵심이며, ERCP로 결석 제거·배액하는 것이 표준이다."
+  },
+  {
+   "id": "kmle-2026-0101",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Complicated Parapneumonic Effusion / Empyema",
+   "tags": [
+    "pleural-effusion",
+    "Light-criteria",
+    "empyema",
+    "chest-tube"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0101.md",
+   "snippet": "58세 남자가 폐렴 치료 중 열이 지속되고 우측 흉막삼출이 늘었다. 흉강천자로 얻은 흉수는 혼탁하고, pH 7.10, 포도당 38 mg/dL, LDH 1,400 U/L로 나왔다. 항생제는 유지 중이다. 다음 중 가장 먼저 해야 할 처치는? A. 이뇨제 증량 B. 흉수 재검을 위해 3일 후 재천자 C. 경구 스테로이드 추가 D. 항생제만 2주 더 지속 E. 흉관 삽입으로 배액 삼출성 흉수에서 pH<7.20, 포도당<60, 농성(",
+   "text": "Pulmonology Complicated Parapneumonic Effusion / Empyema pleural-effusion Light-criteria empyema chest-tube KMLE 2026 / Claude Routine 58세 남자가 폐렴 치료 중 열이 지속되고 우측 흉막삼출이 늘었다. 흉강천자로 얻은 흉수는 혼탁하고, pH 7.10, 포도당 38 mg/dL, LDH 1,400 U/L로 나왔다. 항생제는 유지 중이다. 다음 중 가장 먼저 해야 할 처치는? A. 이뇨제 증량 B. 흉수 재검을 위해 3일 후 재천자 C. 경구 스테로이드 추가 D. 항생제만 2주 더 지속 E. 흉관 삽입으로 배액 삼출성 흉수에서 pH<7.20, 포도당<60, 농성(혼탁)이면 합병 부폐렴삼출/농흉으로, 항생제만으로 낫지 않고 흉관 배액이 필요하다."
+  },
+  {
+   "id": "kmle-2026-0100",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Sarcoidosis",
+   "tags": [
+    "sarcoidosis",
+    "bilateral-hilar-lymphadenopathy",
+    "noncaseating-granuloma",
+    "Lofgren"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0100.md",
+   "snippet": "31세 여자가 두 달째 마른기침과 피로, 양측 발목 앞쪽의 붉고 아픈 결절로 왔다. 흉부 X선에서 양측 폐문 림프절 종대가 보이고, 혈청 칼슘이 높다. 결핵 검사는 음성이다. 기관지 초음파 유도 림프절 조직검사에서 가장 기대되는 소견은? A. 건락성 육아종과 항산균 B. 비건락성 육아종 C. 이형성 상피세포와 각질진주 D. 호산구 침윤과 샤르코 라이덴 결정 E. 랑게르한스세포와 버벡과립 양측 폐문 림프절종대+결절홍반+고칼슘혈증",
+   "text": "Pulmonology Sarcoidosis sarcoidosis bilateral-hilar-lymphadenopathy noncaseating-granuloma Lofgren KMLE 2026 / Claude Routine 31세 여자가 두 달째 마른기침과 피로, 양측 발목 앞쪽의 붉고 아픈 결절로 왔다. 흉부 X선에서 양측 폐문 림프절 종대가 보이고, 혈청 칼슘이 높다. 결핵 검사는 음성이다. 기관지 초음파 유도 림프절 조직검사에서 가장 기대되는 소견은? A. 건락성 육아종과 항산균 B. 비건락성 육아종 C. 이형성 상피세포와 각질진주 D. 호산구 침윤과 샤르코 라이덴 결정 E. 랑게르한스세포와 버벡과립 양측 폐문 림프절종대+결절홍반+고칼슘혈증+ACE 상승은 사르코이드증(뢰프그렌 증후군)이며 조직에서 비건락성 육아종이 특징이다."
+  },
+  {
+   "id": "kmle-2026-0099",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Hypertrophic Obstructive Cardiomyopathy",
+   "tags": [
+    "HOCM",
+    "LVOT-obstruction",
+    "systolic-murmur",
+    "sudden-cardiac-death"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0099.md",
+   "snippet": "19세 남자가 축구 중 실신했다가 회복되어 왔다. 가족 중 젊은 나이에 급사한 병력이 있다. 좌측 흉골연에서 수축기 잡음이 들리는데, 쭈그려 앉으면 잡음이 작아지고 발살바(긴장)를 하면 커진다. 심전도에 좌심실 비대와 깊은 중격 Q파가 있다. 이 환자에서 잡음을 커지게 한 기전으로 옳은 것은? A. 좌심실 후부하 증가로 승모판 역류가 심해짐 B. 전부하 증가로 심박출량이 늘어남 C. 정맥환류 감소로 좌심실 용적이 줄어 유출로 ",
+   "text": "Cardiology Hypertrophic Obstructive Cardiomyopathy HOCM LVOT-obstruction systolic-murmur sudden-cardiac-death KMLE 2026 / Claude Routine 19세 남자가 축구 중 실신했다가 회복되어 왔다. 가족 중 젊은 나이에 급사한 병력이 있다. 좌측 흉골연에서 수축기 잡음이 들리는데, 쭈그려 앉으면 잡음이 작아지고 발살바(긴장)를 하면 커진다. 심전도에 좌심실 비대와 깊은 중격 Q파가 있다. 이 환자에서 잡음을 커지게 한 기전으로 옳은 것은? A. 좌심실 후부하 증가로 승모판 역류가 심해짐 B. 전부하 증가로 심박출량이 늘어남 C. 정맥환류 감소로 좌심실 용적이 줄어 유출로 폐색이 심해짐 D. 관상동맥 혈류 증가로 심근 수축이 강해짐 E. 대동맥판 석회화로 판막 통과 속도가 빨라짐 발살바·기립은 전부하를 줄여 좌심실 용적을 감소시키고, 이는 비후중격 승모판 접촉(SAM)에 의한 좌심실 유출로 폐색을 악화시켜 HOCM 잡음을 키운다."
+  },
+  {
+   "id": "kmle-2026-0098",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Third-degree AV Block",
+   "tags": [
+    "bradycardia",
+    "complete-heart-block",
+    "ECG",
+    "pacemaker"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-10",
+   "path": "content/kmle/2026/kmle-2026-0098.md",
+   "snippet": "74세 남성이 어지럼과 실신 직전 증상으로 왔다. 활력징후에서 서맥과 저혈압이 있고, 심전도에서 P파와 QRS가 서로 무관하게 각자의 규칙으로 나타난다. 흉통은 없고 트로포닌과 전해질은 정상이다. 아트로핀 0.5 mg을 정주했으나 심박수 반응이 없다. 다음 중 가장 적절한 처치는? A. 정맥 아데노신 투여 B. 경구 베타차단제 시작 C. 관상동맥 조영술 후 스텐트 D. 경피 심박조율(체외 페이싱) 후 영구 심박동기 E. 경과 ",
+   "text": "Cardiology Third-degree AV Block bradycardia complete-heart-block ECG pacemaker KMLE 2026 / Claude Routine 74세 남성이 어지럼과 실신 직전 증상으로 왔다. 활력징후에서 서맥과 저혈압이 있고, 심전도에서 P파와 QRS가 서로 무관하게 각자의 규칙으로 나타난다. 흉통은 없고 트로포닌과 전해질은 정상이다. 아트로핀 0.5 mg을 정주했으나 심박수 반응이 없다. 다음 중 가장 적절한 처치는? A. 정맥 아데노신 투여 B. 경구 베타차단제 시작 C. 관상동맥 조영술 후 스텐트 D. 경피 심박조율(체외 페이싱) 후 영구 심박동기 E. 경과 관찰과 수분 공급 P QRS 해리와 방실 무관성은 완전방실차단이다. 증상성 서맥이 아트로핀에 반응하지 않으면 경피/경정맥 페이싱으로 다리를 놓고 영구 심박동기로 확정한다."
+  },
   {
    "id": "usmle-2026-0042",
    "type": "usmle",
