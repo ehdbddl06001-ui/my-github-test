@@ -72,8 +72,12 @@ def explanation_items(body: str) -> list[dict]:
             if cur:
                 items.append(cur)
             cur = {"k": m.group(1).strip(), "v": m.group(2).strip()}
-        elif cur is not None and st:     # 이어지는 줄바꿈 값 병합
-            cur["v"] = (cur["v"] + " " + st).strip()
+        elif cur is not None and st:     # 이어지는 줄 병합
+            # 보기별 반박 하위 불릿(`- A: …`, `(A) …`)은 '\n'으로 보존해 웹이 줄로 렌더.
+            is_sub = re.match(r"^[-*•]?\s*\(?[A-E]\)?\s*[:.)]", st)
+            piece = re.sub(r"^[-*•]\s*", "", st)   # 하위 불릿의 글머리 '- ' 제거
+            sep = "\n" if (is_sub and cur["v"]) else (" " if cur["v"] else "")
+            cur["v"] = cur["v"] + sep + piece
     if cur:
         items.append(cur)
     for it in items:

@@ -200,11 +200,19 @@ function renderExplanation(q, chosenIdx, ok) {
   el.classList.remove("hidden");
 }
 
-// 해설 값에서 보기 반박 (A)…(B)… 은 각 줄로 분리해 가독성을 높인다.
+// 해설의 '오답감별' 값을 보기(A~E)별로 각 줄에 나눠 가독성을 높인다.
+// 세 경우를 모두 처리한다:
+//   1) 파서가 하위 불릿을 '\n'으로 보존해 이미 줄이 나뉜 경우 → 그대로 줄 렌더
+//   2) 레거시: 한 줄에 (A)…(B)… 로 붙어온 경우
+//   3) 레거시: 한 줄에 'A …정답… B …' 처럼 맨 글자로 붙어온 경우
 function fmtExplValue(v) {
   let s = escapeHtml(v);
-  if ((s.match(/\([A-E]\)/g) || []).length >= 2) {
-    s = s.replace(/\s*(?=\([A-E]\)\s)/g, "\n").replace(/^\n+/, "");
+  if (s.indexOf("\n") >= 0) {
+    return `<span class="optlines">${s.replace(/^\n+/, "")}</span>`;
+  }
+  const markers = s.match(/(?:\([A-E]\)|(?:^|\s)[A-E](?=\s+\S))/g) || [];
+  if (markers.length >= 3) {
+    s = s.replace(/\s+(?=(?:\([A-E]\)|[A-E]\s+\S))/g, "\n").replace(/^\n+/, "");
     return `<span class="optlines">${s}</span>`;
   }
   return s;

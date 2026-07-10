@@ -1,40 +1,40 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-09",
+ "generated": "2026-07-10",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 228,
+  "total": 236,
   "byType": {
    "kmle": 129,
    "usmle": 42,
-   "paper": 48,
+   "paper": 56,
    "ailab": 6,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 25,
-   "Nephrology": 17,
-   "Infectious Disease": 16,
-   "Pediatrics": 15,
+   "Cardiology": 26,
+   "Nephrology": 18,
+   "Infectious Disease": 17,
+   "Pediatrics": 16,
    "Neurology": 11,
    "Obstetrics & Gynecology": 11,
    "Psychiatry": 11,
    "Endocrinology": 9,
+   "Pathology": 9,
    "Gastroenterology": 8,
    "General Surgery": 8,
    "Ophthalmology": 8,
    "Orthopedics": 8,
-   "Pathology": 8,
    "Pulmonology": 8,
    "Rheumatology": 8,
    "Hematology": 7,
+   "Surgery": 7,
    "Dermatology": 6,
+   "Hematology-Oncology": 6,
+   "Laboratory Medicine": 6,
    "Physiology": 6,
-   "Surgery": 6,
-   "Hematology-Oncology": 5,
-   "Laboratory Medicine": 5,
    "Microbiology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
@@ -51,7 +51,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 177,
-   "medium": 51
+   "medium": 59
   },
   "tagCount": 632
  },
@@ -72,8 +72,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-07-10",
    "path": "content/kmle/2026/kmle-2026-0129.md",
-   "snippet": "24세 남자가 2주간 밤에 심해지는 온몸 가려움으로 왔다. 손가락 사이와 손목 굽힘부, 성기에 붉은 구진과 가느다란 선상 굴이 보인다. 같은 고시원에 사는 친구들도 비슷하게 가렵다고 한다. 이 환자의 치료로 가장 적절한 것은? A. 국소 스테로이드 단독 B. 경구 항히스타민만 처방 C. 국소 퍼메트린을 온몸에 도포하고 밀접 접촉자를 함께 치료한다 D. 국소 항생제 연고 E. 광선치료 야간 악화 소양증, 손가락 사이·손목·성기의",
-   "text": "Dermatology Scabies scabies permethrin burrow nocturnal-pruritus contact-treatment KMLE 2026 / Claude Routine 24세 남자가 2주간 밤에 심해지는 온몸 가려움으로 왔다. 손가락 사이와 손목 굽힘부, 성기에 붉은 구진과 가느다란 선상 굴이 보인다. 같은 고시원에 사는 친구들도 비슷하게 가렵다고 한다. 이 환자의 치료로 가장 적절한 것은? A. 국소 스테로이드 단독 B. 경구 항히스타민만 처방 C. 국소 퍼메트린을 온몸에 도포하고 밀접 접촉자를 함께 치료한다 D. 국소 항생제 연고 E. 광선치료 야간 악화 소양증, 손가락 사이·손목·성기의 굴(burrow), 접촉자 동시 발병은 옴이며, 국소 퍼메트린 도포와 함께 밀접 접촉자·침구를 동시에 치료·소독해야 재감염을 막는다."
+   "snippet": "24세 남자가 2주 전부터 밤에 심해지는 온몸 가려움으로 병원에 왔다. 손가락 사이와 손목 굽힘쪽, 음부에 붉은 구진이 있고 그 위로 가느다란 선상 병터가 보인다. 같은 고시원에서 지내는 동거인 두 명도 비슷하게 가렵다고 한다. 활력징후는 자료와 같고, 발열이나 고름집은 없다. 가장 적절한 치료 방침은? A. 병터 부위에만 국소 스테로이드를 바른다 B. 증상이 있는 사람만 국소 퍼메트린으로 치료한다 C. 환자와 밀접 접촉자를 ",
+   "text": "Dermatology Scabies scabies permethrin burrow nocturnal-pruritus contact-treatment KMLE 2026 / Claude Routine 24세 남자가 2주 전부터 밤에 심해지는 온몸 가려움으로 병원에 왔다. 손가락 사이와 손목 굽힘쪽, 음부에 붉은 구진이 있고 그 위로 가느다란 선상 병터가 보인다. 같은 고시원에서 지내는 동거인 두 명도 비슷하게 가렵다고 한다. 활력징후는 자료와 같고, 발열이나 고름집은 없다. 가장 적절한 치료 방침은? A. 병터 부위에만 국소 스테로이드를 바른다 B. 증상이 있는 사람만 국소 퍼메트린으로 치료한다 C. 환자와 밀접 접촉자를 함께 국소 퍼메트린으로 치료한다 D. 경구 항히스타민만 주고 경과를 관찰한다 E. 국소 항생제 연고를 바른다 야간 악화 소양, 손가락 사이·손목·음부의 굴(burrow), 집단 발병은 옴이다. 국소 퍼메트린 5%를 전신 도포하되 증상 유무와 무관하게 밀접 접촉자를 동시에 치료하고 침구·의류를 소독해야 재감염(핑퐁)을 막는다."
   },
   {
    "id": "kmle-2026-0128",
@@ -83,15 +83,16 @@ window.MEDKOS_INDEX = {
    "tags": [
     "bullous-pemphigoid",
     "tense-bullae",
-    "BP180",
-    "subepidermal-blister"
+    "subepidermal-blister",
+    "immunobullous",
+    "eosinophilia"
    ],
    "source": "KMLE 2026 / Claude Routine",
    "confidence": "high",
    "date": "2026-07-10",
    "path": "content/kmle/2026/kmle-2026-0128.md",
-   "snippet": "76세 남자가 몇 주간 심한 소양증 뒤 몸통과 사지 굽힘부에 긴장성 큰 물집이 생겨 왔다. 물집은 잘 터지지 않고 옆으로 밀어도 벗겨지지 않으며(니콜스키 음성), 구강 점막은 대체로 침범되지 않았다. 직접면역형광에서 표피기저막을 따라 선상 IgG·C3 침착이 보인다. 가장 가능성이 높은 진단은? A. 천포창(심상성 천포창) B. 수포성 유천포창 C. 포진피부염 D. 다형홍반 E. 농가진 고령에서 소양증 뒤 니콜스키 음성의 긴장",
-   "text": "Dermatology Bullous Pemphigoid bullous-pemphigoid tense-bullae BP180 subepidermal-blister KMLE 2026 / Claude Routine 76세 남자가 몇 주간 심한 소양증 뒤 몸통과 사지 굽힘부에 긴장성 큰 물집이 생겨 왔다. 물집은 잘 터지지 않고 옆으로 밀어도 벗겨지지 않으며(니콜스키 음성), 구강 점막은 대체로 침범되지 않았다. 직접면역형광에서 표피기저막을 따라 선상 IgG·C3 침착이 보인다. 가장 가능성이 높은 진단은? A. 천포창(심상성 천포창) B. 수포성 유천포창 C. 포진피부염 D. 다형홍반 E. 농가진 고령에서 소양증 뒤 니콜스키 음성의 긴장성 큰 물집, 점막 침범이 드물고 기저막대에 선상 IgG·C3 침착이면 수포성 유천포창(표피하 수포)이다."
+   "snippet": "76세 남자가 4주 전부터 심한 가려움과 함께 몸통과 양쪽 넓적다리 굽힘쪽에 팽팽하고 큰 물집이 잡혀 병원에 왔다. 물집은 잘 터지지 않고, 터진 자리는 비교적 빠르게 아문다고 한다. 입안과 눈 점막에는 병터가 없다. 활력징후와 검사 소견은 자료와 같다. 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진피부염 D. 선상 IgA 물집피부증 E. 후천물집표피박리증 고령의 심한 소양 뒤 잘 터지지 않는",
+   "text": "Dermatology Bullous Pemphigoid bullous-pemphigoid tense-bullae subepidermal-blister immunobullous eosinophilia KMLE 2026 / Claude Routine 76세 남자가 4주 전부터 심한 가려움과 함께 몸통과 양쪽 넓적다리 굽힘쪽에 팽팽하고 큰 물집이 잡혀 병원에 왔다. 물집은 잘 터지지 않고, 터진 자리는 비교적 빠르게 아문다고 한다. 입안과 눈 점막에는 병터가 없다. 활력징후와 검사 소견은 자료와 같다. 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진피부염 D. 선상 IgA 물집피부증 E. 후천물집표피박리증 고령의 심한 소양 뒤 잘 터지지 않는 '긴장성' 큰 물집, 니콜스키 음성, 점막 침범이 드물고 말초 호산구 증가에 기저막부위 선상 IgG·C3 침착이면 수포성 유천포창(표피하 수포)이다."
   },
   {
    "id": "kmle-2026-0127",
@@ -750,6 +751,134 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0037.md",
    "snippet": "A 68 year old man with longstanding tricuspid regurgitation and progressive right sided heart failure is found to have a firm, mottled, reddish brown liver with a mosaic appearance on cut section. Serum aminotransferases are mildly elevated",
    "text": "Pathology Chronic Passive Hepatic Congestion (centrilobular / zone 3 necrosis) nutmeg-liver zone-3 hepatic-congestion right-heart-failure centrilobular-necrosis USMLE-style / MedKOS (hepatic pathology · zonal injury) A 68 year old man with longstanding tricuspid regurgitation and progressive right sided heart failure is found to have a firm, mottled, reddish brown liver with a mosaic appearance on cut section. Serum aminotransferases are mildly elevated. A liver biopsy shows congestion and hepatocyte necrosis concentrated around the central veins, with relative sparing of hepatocytes near the portal tracts. Which of the following best explains why this histologic pattern is centered on the central veins rather than the portal tracts? A. Kupffer cells are concentrated around the central veins and mediate a localized cytokine driven injury there B. Central vein hepatocytes are the last in the sinusoidal flow to receive oxygen and are the first to bear the retrograde rise in venous pressure from right heart failure C. The central vein carries oxygen rich hepatic arterial blood directly, so elevated right sided pressure is transmitted there first D. A one way valve in the sinusoidal capillary bed shields portal tract hepatocytes from any rise in central venous pressure E. Bile canaliculi converge on the central vein, so cholestatic bile acid toxicity accounts for the necrosis seen here Zone 3 (centrilobular) hepatocytes sit farthest along the sinusoid from the oxygen delivered at the portal triad, and the central vein is the first structure to transmit an elevated central venous pressure backward from a failing right heart — combined hypoxia and congestion produces zone 3 necrosis."
+  },
+  {
+   "id": "paper-2026-0056",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of obstetrics, gynecology, and reproductive biology",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0056_balancing_ovarian_preservation_and_recurrence_risk_a_systema.md",
+   "snippet": "Title Balancing ovarian preservation and recurrence risk: A systematic review and meta analysis of cystectomy versus ablative methods in endometrioma management Authors Romeo P, Tassone A, Bonanno L, Vizzielli G, Restaino S, Ronsini C, Chia",
+   "text": "Surgery scraped pubmed PubMed / European journal of obstetrics, gynecology, and reproductive biology Title Balancing ovarian preservation and recurrence risk: A systematic review and meta analysis of cystectomy versus ablative methods in endometrioma management Authors Romeo P, Tassone A, Bonanno L, Vizzielli G, Restaino S, Ronsini C, Chiantera V, Granese R, et al. Journal / DOI European journal of obstetrics, gynecology, and reproductive biology · DOI: 10.1016/j.ejogrb.2026.115288 · PMID: 42424709 https://pubmed.ncbi.nlm.nih.gov/42424709/ Abstract OBJECTIVE: To compare cystectomy and ablative surgical techniques for the treatment of ovarian endometrioma, focusing on recurrence, ovarian reserve, and fertility outcomes. METHODS: This systematic review and meta analysis was conducted according to PRISMA 2020 guidelines and prospectively registered in PROSPERO (CRD420261342497). PubMed and Scopus were searched from January 2000 to September 2025. Studies comparing cystectomy with ablative techniques (CO2 laser, argon plasma coagulation, PlasmaJet, bipolar energy, or hybrid approaches) in women with ovarian endometrioma ≥3 cm were included. Random effects models were used to calculate pooled risk ratios (RRs) for dichotomous outcomes and mean differences (MDs) for continuous outcomes. RESULTS: Twelve studies were included, with 4 6 studies contributing to each meta analysis depending on outcome availability. Cystectomy showed a trend toward lower recurrence compared with ablative techniques (RR 0.61, 95% CI 0.37 1.01; p = 0.054), although this did not reach statistical significance. Ablative techniques were associated with better preservation of ovarian reserve, with a significantly smaller decline in antral follicle count (MD 1.96, 95% CI 3.04 to 0.88; p < 0.001), while no significant difference was observed in anti Müllerian hormone levels (MD 0.24, 95% CI 0.69 to 0.21; p = 0.30). No significant differences were found in overall pregnancy (RR 1.02), spontaneous conception (RR 1.02), or ART/IVF pregnancy rates (RR 0.83). CONCLUSION: Cystectomy may reduce recurrence risk, whereas ablative techniques better preserve ovarian reserve. However, neither approach appears to confer a significant advantage in fertility outcomes. Surgical management of ovarian endometrioma should be individualized based on patient characteristics and reproductive goals. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0055",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Developmental psychology",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0055_let_s_watch_and_focus_on_this_the_effects_of_advance_organiz.md",
+   "snippet": "Title Let's watch and focus on this: The effects of advance organizers on young children's learning from prosocial and science, technology, engineering, and mathematics (STEM) digital narratives Authors Peebles Alanna L Journal / DOI Develo",
+   "text": "Pediatrics scraped pubmed PubMed / Developmental psychology Title Let's watch and focus on this: The effects of advance organizers on young children's learning from prosocial and science, technology, engineering, and mathematics (STEM) digital narratives Authors Peebles Alanna L Journal / DOI Developmental psychology · DOI: 10.1037/dev0002204 · PMID: 42423684 https://pubmed.ncbi.nlm.nih.gov/42423684/ Abstract Young children are taught primarily by stories, and many popular stories have gone digital. The aim of these stories is to teach children concepts that they can later apply to their own lives. Despite this, children often exhibit minimal learning after one time exposure without additional help. Based on the propositions in Fisch's capacity model about children's information processing of educational narratives, this project investigates a simple instructional design intervention of adding structured previews (\"advance organizers\") at the beginning of two different commercially available digital narratives to manage children's essential processing. A total of 123 preschool aged U.S. children (Mage = 52.33 months, 52% female, 74% White) were randomly assigned to one of three conditions: no advance organizer, an advance organizer about the overarching lesson, or an advance organizer about the plot. Children watched a prosocial digital narrative about sharing (Session 1) and watched a science, technology, engineering, and mathematics digital narrative about using a pan balance roughly 2 weeks later (Session 2). Linear mixed effect models revealed that the efficacy of the advance organizers varied based on children's cognitive capacity or working memory. Children with lower cognitive capacity benefited more from a plot focused advance organizer than a lesson focused advance organizer, but children with more cognitive capacity benefited more from a lesson focused advance organizer than a plot focused advance organizer. The results have theoretical implications for the propositions put forth by information processing approaches, as well as equity minded implications about the design of children's digital narrative content. (PsycInfo Database Record (c) 2026 APA, all rights reserved). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0054",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinics (Sao Paulo, Brazil)",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0054_assessing_d_dimer_test_specificity_for_pulmonary_embolism_di.md",
+   "snippet": "Title Assessing D dimer test specificity for pulmonary embolism diagnosis in emergency departments Authors Al Aseri Zohair, Owaid Faisal, Aloufi Yasser, Altowariqi Fares, Almehbash Abdulaziz, Alsulami Younis, Alrawdhan Saleh, Alqahtani Khal",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Clinics (Sao Paulo, Brazil) Title Assessing D dimer test specificity for pulmonary embolism diagnosis in emergency departments Authors Al Aseri Zohair, Owaid Faisal, Aloufi Yasser, Altowariqi Fares, Almehbash Abdulaziz, Alsulami Younis, Alrawdhan Saleh, Alqahtani Khalid, et al. Journal / DOI Clinics (Sao Paulo, Brazil) · DOI: 10.1016/j.clinsp.2026.101037 · PMID: 42424666 https://pubmed.ncbi.nlm.nih.gov/42424666/ Abstract Pulmonary Embolism (PE) is a potentially life threatening condition that requires rapid and accurate diagnosis in emergency settings. Although Computed Tomography Pulmonary Angiography (CTPA) is the reference standard, its routine use is limited by cost, radiation exposure, and contrast related risks. This study aimed to evaluate the diagnostic performance of D dimer testing in patients suspected of PE. A retrospective cross sectional study was conducted at King Khalid University Hospital, Riyadh, Saudi Arabia, including 1,316 patients who underwent D dimer testing between January and December 2023. CTPA was used as the reference standard in patients selected for imaging based on clinical assessment. The prevalence of confirmed PE was 8.4%. D dimer demonstrated high sensitivity (87.4%) and excellent negative predictive value (97.4%), supporting its role as a reliable rule out tool. However, specificity was low (43.9%) and the positive predictive value was limited (12.5%), reflecting a high rate of false positive results. Application of the age adjusted D dimer threshold reclassified 23 patients, resulting in a modest improvement in specificity from 43.9% to 45.8%, while maintaining diagnostic safety. Receiver operating characteristic analysis showed modest discriminative ability (AUC = 0.656). D dimer levels were significantly associated with increasing age and male sex, while nationality showed no significant effect. In conclusion, D dimer testing is an effective initial screening tool for excluding PE in emergency departments; however, its low specificity limits its standalone diagnostic value. Integration with clinical prediction rules and age adjusted thresholds may improve diagnostic accuracy and reduce unnecessary imaging. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0053",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Phytomedicine : international journal of phytotherapy and phytopharmacology",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0053_celastrol_alleviates_airway_remodeling_in_severe_steroid_res.md",
+   "snippet": "Title Celastrol alleviates airway remodeling in severe steroid resistant asthma via AMOTL1 dependent restoration of Hippo/YAP signaling Authors Sun Jialiang, Liu Ziyu, Zhang Ying, Zhang Yanqiu, Zhao Peiliang, Li Yanan Journal / DOI Phytomed",
+   "text": "Pathology scraped pubmed PubMed / Phytomedicine : international journal of phytotherapy and phytopharmacology Title Celastrol alleviates airway remodeling in severe steroid resistant asthma via AMOTL1 dependent restoration of Hippo/YAP signaling Authors Sun Jialiang, Liu Ziyu, Zhang Ying, Zhang Yanqiu, Zhao Peiliang, Li Yanan Journal / DOI Phytomedicine : international journal of phytotherapy and phytopharmacology · DOI: 10.1016/j.phymed.2026.158527 · PMID: 42424677 https://pubmed.ncbi.nlm.nih.gov/42424677/ Abstract BACKGROUND: Severe steroid resistant asthma (SSRA) is frequently associated with irreversible airway remodeling (AR), which contributes to persistent airflow limitation and poor therapeutic responsiveness. Celastrol (CEL) exhibits anti inflammatory and tissue protective properties; however, its role in steroid resistant AR remains unclear. PURPOSE: This study aimed to evaluate the therapeutic effects of CEL on SSRA and to determine whether AMOTL1 dependent Hippo/Yes associated protein (YAP)/transcriptional co activator with PDZ binding motif (TAZ) signaling contributes to its anti remodeling activity. METHODS: SSRA mice were generated via OVA/CFA/LPS sensitization and challenge and treated with CEL or dexamethasone. Airway hyperresponsiveness (AHR), lung histopathology, inflammatory cell infiltration, mucus secretion, collagen deposition, and lung proteomic profiles were evaluated. Osteopontin (OPN) stimulated human bronchial smooth muscle cells (HBSMCs) were used to model airway smooth muscle remodeling. AMOTL1 gain and loss of function studies were conducted in HBSMCs, and airway local Amotl1 knockdown was introduced into SSRA mice. RESULTS: CEL improved AHR and suppressed airway inflammation, mucus production, and collagen accumulation in SSRA mice. Proteomic analysis revealed that AMOTL1 was downregulated in SSRA and restored by CEL treatment. In HBSMCs, CEL suppressed OPN induced proliferation, migration, and extracellular matrix production, accompanied by Hippo pathway reactivation and YAP/TAZ inhibition. AMOTL1 knockdown in HBSMCs attenuated these anti remodeling effects, whereas AMOTL1 overexpression recapitulated the protective effects of CEL. In vivo, Amotl1 knockdown blunted CEL mediated improvement in SSRA associated AR. CONCLUSION: CEL alleviates steroid resistant AR through AMOTL1 dependent restoration of Hippo/YAP signaling, highlighting the AMOTL1/Hippo/YAP axis as a potential therapeutic target in SSRA. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0052",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of cranio-maxillo-facial surgery : official publication of the European Association for Cranio-Maxillo-Facial Surgery",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0052_amz2_facilitates_oral_squamous_cell_carcinoma_progression_vi.md",
+   "snippet": "Title AMZ2 facilitates oral squamous cell carcinoma progression via USP10 mediated deubiquitination of SF3B1 and regulation of MCL 1 alternative splicing Authors Liu Yang, You Huiting, Jiang Qingkun, He Fei, Zhang Xinjian, Xu Zichen, Guo Ke",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of cranio-maxillo-facial surgery : official publication of the European Association for Cranio-Maxillo-Facial Surgery Title AMZ2 facilitates oral squamous cell carcinoma progression via USP10 mediated deubiquitination of SF3B1 and regulation of MCL 1 alternative splicing Authors Liu Yang, You Huiting, Jiang Qingkun, He Fei, Zhang Xinjian, Xu Zichen, Guo Ke, Wang Wenquan, et al. Journal / DOI Journal of cranio maxillo facial surgery : official publication of the European Association for Cranio Maxillo Facial Surgery · DOI: 10.1016/j.jcms.2026.104654 · PMID: 42424707 https://pubmed.ncbi.nlm.nih.gov/42424707/ Abstract BACKGROUND: Oral squamous cell carcinoma (OSCC) is a prevalent malignancy characterized by high morbidity and poor prognosis, largely due to late stage diagnosis and limited therapeutic options. The molecular mechanisms underlying OSCC pathogenesis remain incompletely understood, necessitating further investigation to support the development of targeted treatment approaches. METHODS: The expression of Archaelysin Family Metallopeptidase 2 (AMZ2) was evaluated in OSCC tissues and cell lines. A series of in vitro and in vivo functional experiments were conducted to assess the impact of AMZ2 on OSCC tumorigenesis and disease progression. Co immunoprecipitation and related molecular analyses were performed to examine the interactions among AMZ2, Ubiquitin Specific Peptidase 10 (USP10), and Splicing Factor 3B Subunit 1 (SF3B1). RESULTS: AMZ2 expression was significantly upregulated in OSCC tissues and cells. Functional assays demonstrated that elevated AMZ2 expression enhanced cellular proliferation, invasion, and migration, while inhibiting apoptosis. Mechanistically, AMZ2 recruited the deubiquitinase USP10, which stabilized SF3B1 by removing its ubiquitin chains. The subsequent deubiquitination of SF3B1 modulated myeloid cell leukemia 1 (MCL 1) alternative splicing, resulting in an increase in anti apoptotic isoforms and promoting OSCC progression. CONCLUSION: AMZ2 functions as an oncogenic driver in OSCC by forming an AMZ2/USP10/SF3B1 signaling axis that regulates MCL 1 splicing and suppresses apoptosis. Targeting this axis may represent a potential therapeutic strategy to improve clinical outcomes in patients with OSCC. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0051",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Nutrition research (New York, N.Y.)",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0051_obesity_prevalence_varies_markedly_by_definition_multiple_cr.md",
+   "snippet": "Title Obesity prevalence varies markedly by definition: multiple cross sectional and prospective studies Authors Simó García Elena, Bochud Murielle, Clair Carole, Lasserre Aurélie M, Berney Alexandre, Vaucher Julien, Strippoli Marie Pierre ",
+   "text": "Nephrology scraped pubmed PubMed / Nutrition research (New York, N.Y.) Title Obesity prevalence varies markedly by definition: multiple cross sectional and prospective studies Authors Simó García Elena, Bochud Murielle, Clair Carole, Lasserre Aurélie M, Berney Alexandre, Vaucher Julien, Strippoli Marie Pierre F, Vollenweider Peter, et al. Journal / DOI Nutrition research (New York, N.Y.) · DOI: 10.1016/j.nutres.2026.06.002 · PMID: 42424708 https://pubmed.ncbi.nlm.nih.gov/42424708/ Abstract Multiple operational definitions of obesity have been proposed. We compared obesity prevalence and incidence according to World Health Organization (WHO), National Institute of Health (NIH), and European Association for the Study of Obesity (EASO) using the baseline survey and subsequent follow ups of a population based cohort (CoLaus PsyCoLaus), in Lausanne, Switzerland. Sample included adults aged 35 to 75 years (n = 6733 at baseline). Obesity was defined by WHO (body mass index [BMI]), NIH (BMI and waist circumference), and EASO (BMI/waist to height ratio plus obesity related complications such as hypertension, type 2 diabetes, cardiovascular disease, or chronic kidney disease). The joint prevalence of overweight and obesity did not change, but there was a twofold increase in obesity prevalence between WHO and NIH/EASO (average obesity prevalence combining all follow ups: 17.4%, 33.9% and 37.5%, respectively), at the expense of the overweight category (average prevalence of 38.7%, 22.2% and 18.6%, respectively), with a particularly marked shift at older ages: obesity prevalence in age group +75 years old for follow up 2 was 19.2%, 48.9% and 55.9% for WHO, NIH and EASO, respectively. Regarding the incidence analysis (n = 2334, 34.7% of the baseline cohort), after a median follow up of 14.5 years, the incidence of obesity among participants without obesity at baseline was 5.8% (WHO), 16.8% (NIH), and 20.6% (EASO). For EASO definition, final prevalence of obesity (20.6%) exceeded overweight (18.3%). We conclude that broader definitions, notably EASO, identify more individuals at potential risk but substantially expand the obesity category, with implications for case classification, clinical management, and resource allocation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0050",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR medical informatics",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0050_correction_enterocutaneous_fistula_associated_sepsis_and_mor.md",
+   "snippet": "Title Correction: Enterocutaneous Fistula Associated Sepsis and Mortality: Development and Validation of a Multimodal Artificial Intelligence Prediction Model Authors Li Hui, Chen Jing, Lin Peijun, Pan Youmei, Cao Yawen, Xie Wenfeng Journal",
+   "text": "Infectious Disease scraped pubmed PubMed / JMIR medical informatics Title Correction: Enterocutaneous Fistula Associated Sepsis and Mortality: Development and Validation of a Multimodal Artificial Intelligence Prediction Model Authors Li Hui, Chen Jing, Lin Peijun, Pan Youmei, Cao Yawen, Xie Wenfeng Journal / DOI JMIR medical informatics · DOI: 10.2196/104943 · PMID: 42424611 https://pubmed.ncbi.nlm.nih.gov/42424611/ Abstract [This corrects the article DOI: 10.2196/79985.]. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0049",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / EBioMedicine",
+   "confidence": "medium",
+   "date": "2026-07-09",
+   "path": "content/papers/2026/2026-07-09_paper-2026-0049_off_label_testosterone_therapy_is_associated_with_higher_lon.md",
+   "snippet": "Title Off label testosterone therapy is associated with higher long term cardiovascular risk in men Authors Kerniss Hatim, Curman Philip, Olbrich Henning, Kridin Khalaf, Francis Rohin, Leistner David M, Alam Uazman, Ludwig Ralf J Journal / ",
+   "text": "Cardiology scraped pubmed PubMed / EBioMedicine Title Off label testosterone therapy is associated with higher long term cardiovascular risk in men Authors Kerniss Hatim, Curman Philip, Olbrich Henning, Kridin Khalaf, Francis Rohin, Leistner David M, Alam Uazman, Ludwig Ralf J Journal / DOI EBioMedicine · DOI: 10.1016/j.ebiom.2026.106373 · PMID: 42424704 https://pubmed.ncbi.nlm.nih.gov/42424704/ Abstract BACKGROUND: Testosterone therapy (TT) is increasingly initiated outside classical hypogonadism, but long term cardiovascular safety in this context remains uncertain. We assessed whether TT initiation without evidence of hypogonadism is associated with higher long term cardiovascular risk than TT initiation with evidence of hypogonadism. METHODS: In this global retrospective real world cohort study, men aged 30 75 years initiating TT were identified from secondary, de identified structured EHR data from 123 healthcare organisations. A prespecified 3 year pre index washout excluded prior TT and major cardiovascular/thromboembolic events. Men initiating TT without evidence of hypogonadism were compared with those with evidence of hypogonadism using 1:1 propensity score matching. The primary outcome was major adverse cardiovascular events (MACE); secondary outcomes included separately all cause mortality, myocardial infarction, ischaemic stroke, cardiac arrest, and heart failure. Acute appendicitis served as a negative control outcome. FINDINGS: Among 358,957 TT initiators, 127,152 (35.4%) had no evidence of hypogonadism. After matching, 113,554 pairs were followed for up to 10 years. TT without evidence of hypogonadism was associated with higher risk of MACE (16.53% vs 11.83%; HR 1.51, 1.45 1.56) and all cause mortality (HR 1.90, 1.79 2.00), with higher risks of ischaemic stroke (HR 1.23, 1.14 1.33), cardiac arrest (HR 1.41, 1.23 1.61), and heart failure (HR 1.32, 1.26 1.39). Race stratified estimates were directionally consistent but varied in magnitude. INTERPRETATION: The cardiovascular safety of TT appears context dependent and less favourable when treatment is initiated without evidence of hypogonadism, with clinically relevant heterogeneity across race/ethnicity, supporting biologically informed prescribing and cardiovascular risk surveillance. FUNDING: Deutsche Forschungsgemeinschaft, Schleswig Holstein Excellence Chair Program, and Region Stockholm. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0048",
