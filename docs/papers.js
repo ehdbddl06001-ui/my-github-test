@@ -2,6 +2,76 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0058",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Nodal staging in endometrial cancer: quality of life, patient-reported outcomes, and survivorship",
+  "authors": [
+   "Buda Alessandro",
+   "Bollino Michele",
+   "Mauro Jessica",
+   "Casarin Jvan",
+   "Viveros-Carreno David"
+  ],
+  "journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+  "doi": "10.1016/j.ijgc.2026.104787",
+  "pmid": "42430890",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42430890/",
+  "pubdate": "2026-06-04",
+  "date": "2026-07-10",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVES:** To evaluate quality of life, patient-reported outcomes, and survivorship after different nodal staging strategies in endometrial cancer, with a focus on lower-extremity lymphedema after sentinel lymph node mapping versus lymphadenectomy.\n\n**METHODS:** A systematic literature search was performed according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses checklist. MEDLINE (through PubMed), Embase, and Scopus were searched for studies published from 2010 to 2025. Eligible studies included women with endometrial cancer who underwent surgical nodal staging with sentinel lymph node mapping, lymphadenectomy, or combined approaches and reported validated quality-of-life or patient-reported outcomes.\n\n**RESULTS:** Nine comparative studies including 3298 patients treated between 2006 and 2023 were included. Sentinel lymph node mapping alone was performed in 1334 women, 1508 underwent lymphadenectomy with or without sentinel lymph node mapping, and 456 underwent hysterectomy alone. Patient-reported lower-extremity lymphedema was consistently less frequent after sentinel lymph node mapping than after lymphadenectomy. Reported lymphedema prevalence ranged from 2% to 36% after sentinel lymph node mapping versus 21% to 51% after lymphadenectomy. Studies using multi-variable analyses consistently identified more extensive nodal dissection as an independent predictor of increased lymphatic morbidity. Global quality-of-life scores showed no consistent differences between nodal staging strategies; however, symptom-specific and functional outcomes, particularly lower-extremity symptoms and physical functioning, more often favored sentinel lymph node mapping. Considerable heterogeneity was observed in surgical approach, outcome measures, and timing of assessment.\n\n**CONCLUSION:** Although differences in global quality of life remain inconsistent, sentinel lymph node mapping appears to reduce patient-reported lymphatic morbidity compared with more extensive nodal dissection. These findings support the integration of patient-reported outcomes into nodal staging decision-making and reinforce the survivorship advantages of less extensive surgical staging strategies in endometrial cancer.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0057",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Thrombus formation, endogenous fibrinolysis and atrial fibrillation states in patients with ischaemic stroke: An assessment using global thrombosis test profiles",
+  "authors": [
+   "Chen Yang",
+   "Gue Ying",
+   "Elsheikh Sandra",
+   "Ditchfield Coleen",
+   "Koolaji Sogol",
+   "Hill Andrew M",
+   "McDowell Garry",
+   "Gorog Diana A",
+   "et al."
+  ],
+  "journal": "Thrombosis research",
+  "doi": "10.1016/j.thromres.2026.109772",
+  "pmid": "42430877",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42430877/",
+  "pubdate": "2026-07-07",
+  "date": "2026-07-10",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Atrial fibrillation (AF) is often first detected during or after ischaemic stroke (IS), yet many cases remain undetected. We evaluated whether thrombotic and fibrinolytic profiles vary with AF status in IS and whether these markers may help identify AF.\n\n**METHODS:** We conducted a prospective observational study of adults with confirmed IS, with blood sampling during index admission after withholding pre-admission anticoagulant therapy where applicable. Patients were classified as AF or non-AF, with AF subtyped as known AF (KAF, N = 20), AF detected concurrently with stroke (AFDCS, N = 10), or detected after stroke (AFDNCS, N = 6). Thrombotic status was assessed using Global Thrombosis Test-derived occlusion time (OT) and lysis time (LT). Multivariable linear regression analyses were performed to account for demographic, clinical, and anticoagulant-related factors. An exploratory cohort excluding KAF, AFDCS, and thrombolysis was used to evaluate AFDNCS prediction.\n\n**RESULTS:** 115 patients with IS (mean [SD] age: 68.5 ± 13.5 years; 57.4% male) were included. AF patients were older and had a higher burden of comorbidities, but most laboratory parameters were similar between groups. Despite normal coagulation tests, AF patients had longer OT than non-AF patients (474 ± 214 vs. 373 ± 176 s, P = 0.009), while LT did not differ. OT varied significantly across AF states (P = 0.002), longest in KAF and shortest in AFDNCS, whereas LT did not differ. In multivariable analyses, the association between AF and longer OT was attenuated after accounting for prior anticoagulant exposure. In the exploratory cohort (N = 72) with 5 AFDNCS cases during 6-month follow-up, OT showed discrimination for predicting AFDNCS (AUC = 0.737, 95% CI 0.620-0.834).\n\n**CONCLUSIONS:** We identify distinct haemostatic patterns across AF states in patients with IS. Short OT in patients with AFDNCS may identify a cohort at increased ischaemic risk of future events, and requires further study.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0056",
   "topic": "Surgery",
   "subtopic": "",
