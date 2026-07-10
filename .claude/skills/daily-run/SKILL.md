@@ -38,9 +38,13 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
 
 5. **검증 + 색인**
    ```
-   python pipelines/indexer.py --check   # 실패하면 여기서 멈추고 원인 보고
-   python pipelines/indexer.py
+   python pipelines/indexer.py --check              # frontmatter 계약 검증(필수)
+   python pipelines/lint_questions.py <오늘 만든 .md들>   # 문항 품질 린트(문제형만)
+   python pipelines/indexer.py                       # SQLite 재빌드
    ```
+   - `--check` 나 린터 **ERROR** 가 나면 여기서 멈추고 원인 보고 후 문항을 고친다.
+   - 린터는 에포님 떠먹임·활력징후 부재·정답 보기 누설·오답감별 뭉침 등 '시험 감각'
+     결함을 KMLE·USMLE 공통으로 잡는다(기준: `/gen-kmle`의 '실제 시험지 감각').
 
 6. **웹 번들 재생성** — 개인 페이지(docs/)에 새 콘텐츠가 뜨게 하려면 필수.
    - USMLE를 생성했다면: `python pipelines/export_usmle_web.py` → `docs/questions_usmle.js`

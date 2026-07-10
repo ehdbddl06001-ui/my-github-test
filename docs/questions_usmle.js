@@ -29,7 +29,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "정답근거(biomarker discordance)",
-    "v": "BNP는 neprilysin의 기질이므로 약물로 분해가 줄면 혈중 BNP가 상승한다. 반면 NT-proBNP는 neprilysin이 자르지 않으므로 심부전이 호전되면 감소한다. 그래서 ARNI 치료 중에는 반드시 NT-proBNP로 반응을 모니터링한다(BNP로 판단하면 악화로 오해)."
+    "v": "BNP는 neprilysin의 기질이므로 약물로 분해가 줄면 혈중 BNP가 상승한다. 반면 NT-proBNP는 neprilysin이 자르지 않으므로 심부전이 호전되면 감소한다. 그래서 ARNI 치료 중에는 반드시 *NT-proBNP로 반응을 모니터링한다(BNP로 판단하면 악화로 오해)."
    },
    {
     "k": "오답감별",
@@ -74,11 +74,11 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "진단",
-    "v": "아급성 심내막염 + E. faecalis 균혈증. 대장 신생물과 enterococcal/ *Streptococcus gallolyticus*(구 bovis) 균혈증의 연관은 고전적 단서다."
+    "v": "아급성 심내막염 + E. faecalis 균혈증. 대장 신생물과 enterococcal/ Streptococcus gallolyticus*(구 bovis) 균혈증의 연관은 고전적 단서다."
    },
    {
     "k": "정답근거",
-    "v": "전통적 상승 요법은 ampicillin + aminoglycoside지만, 본 균주는 HLGR이라 gentamicin 상승효과를 기대할 수 없고 독성만 남는다. 이때 ampicillin + ceftriaxone(이중 베타락탐)이 표준이다. 두 약이 서로 다른 penicillin-binding protein을 포화시켜(ampicillin→PBP4/5, ceftriaxone→ PBP2/3) 상승적 살균효과를 낸다. 신독성·이독성도 피할 수 있다."
+    "v": "전통적 상승 요법은 ampicillin + aminoglycoside지만, 본 균주는 *HLGR이라 gentamicin 상승효과를 기대할 수 없고 독성만 남는다. 이때 *ampicillin + ceftriaxone(이중 베타락탐)이 표준이다. 두 약이 서로 다른 *penicillin-binding protein을 포화시켜(ampicillin→PBP4/5, ceftriaxone→ PBP2/3) 상승적 살균효과를 낸다. 신독성·이독성도 피할 수 있다."
    },
    {
     "k": "오답감별",
@@ -135,7 +135,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(A) AG 상승·HCO3 저하를 설명 못 함. (B) 보상이라기엔 PaCO2가 과도하게 낮음(Winter 벗어남). (D) pH·HCO3 방향상 대사성 알칼리증 근거 없음. (E) 과호흡·저PaCO2와 반대."
+    "v": "(A) AG 상승·HCO3 저하를 설명 못 함. (B) 보상이라기엔 PaCO2가 과도하게 낮음(Winter 벗어남). (D) pH·HCO3 방향상 대사성 알칼리증 근거 없음.\n(E) 과호흡·저PaCO2와 반대."
    },
    {
     "k": "임상핵심",
@@ -225,7 +225,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "진단",
-    "v": "전형적 HIT type II. 노출 5–10일 후 혈소판 >50% 감소 + 새로운 혈전(DVT) + heparin-PF4 항체·SRA 양성 (4T score 高)."
+    "v": "전형적 HIT type II. 노출 5–10일 후 혈소판 >50% 감소 + *새로운 혈전(DVT) + heparin-PF4 항체·SRA 양성 (4T score 高)."
    },
    {
     "k": "기전",
@@ -237,7 +237,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(A) heparin 지속은 절대 금기. (B) 즉시 warfarin은 괴사 위험. (D) 혈소판 수혈은 연료 공급. (E) LMWH도 HIT 항체와 교차반응."
+    "v": "(A) heparin 지속은 절대 금기. (B) 즉시 warfarin은 괴사 위험.\n(D) 혈소판 수혈은 연료 공급. (E) LMWH도 HIT 항체와 교차반응."
    },
    {
     "k": "임상핵심",
@@ -282,15 +282,15 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "기전",
-    "v": "호중구 NADPH oxidase가 산소를 O2−(superoxide)로 환원하는 호흡 폭발(respiratory burst)을 못 한다. 그래서 자신의 H2O2를 분해해버리는 catalase-양성 미생물(S. aureus, Serratia, Burkholderia cepacia, Nocardia, Aspergillus)을 죽이지 못한다(catalase-음성균은 자기 H2O2를 남겨 호중구가 이용 → 상대적으로 문제 적음)."
+    "v": "호중구 NADPH oxidase가 산소를 O2−(superoxide)로 환원하는 호흡 폭발(respiratory burst)을 못 한다. 그래서 자신의 H2O2를 분해해버리는 *catalase-양성 미생물(S. aureus, Serratia, Burkholderia cepacia, Nocardia, Aspergillus)을 죽이지 못한다(catalase-음성균은 자기 H2O2를 남겨 호중구가 이용 → 상대적으로 문제 적음)."
    },
    {
     "k": "검사",
-    "v": "DHR 유세포검사(활성산소 있으면 형광↑; CGD는 감소) 또는 고전적 nitroblue tetrazolium(NBT) 검사 음성."
+    "v": "DHR 유세포검사(활성산소 있으면 형광↑; CGD는 감소) 또는 고전적 *nitroblue tetrazolium(NBT) 검사 음성."
    },
    {
     "k": "오답감별",
-    "v": "(B) LAD-1은 CD18 integrin 결손 → 지연된 탯줄 탈락, 농(pus) 형성 안 됨, 백혈구 증가. (C) XLA는 B세포·면역글로불린 부재 → 협막균 재발. (D) WAS는 습진·혈소판감소·감염 3징(X-연관). (E) IL-12R 결핍은 파종성 mycobacteria/Salmonella."
+    "v": "(B) LAD-1은 CD18 integrin 결손 → 지연된 탯줄 탈락, 농(pus) 형성 안 됨, 백혈구 증가. (C) XLA는 B세포·면역글로불린 부재 → 협막균 재발.\n(D) WAS는 습진·혈소판감소·감염 3징(X-연관). (E) IL-12R 결핍은 파종성 *mycobacteria/Salmonella."
    },
    {
     "k": "임상핵심",
@@ -343,7 +343,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별(MG와 대조)",
-    "v": "(A) MG는 postsynaptic AChR 항체 → 사용할수록 악화(decremental), 안구·연수 증상 먼저, 반사 정상, 자율신경 정상. (C) MuSK 항체는 seronegative MG의 일부. (D) VGKC는 신경근긴장(neuromyotonia)/변연계뇌염. (E) 항-GM1은 다초점운동신경병/GBS 변형."
+    "v": "(A) MG는 postsynaptic AChR 항체 → 사용할수록 악화(decremental), 안구·연수 증상 먼저, 반사 정상, 자율신경 정상. (C) MuSK 항체는 seronegative MG의 일부. (D) VGKC는 신경근긴장(neuromyotonia)/변연계뇌염.\n(E) 항-GM1은 다초점운동신경병/GBS 변형."
    },
    {
     "k": "임상핵심",
@@ -384,7 +384,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "진단",
-    "v": "Ornithine transcarbamylase(OTC) 결핍 — 가장 흔한 요소회로 장애, 유일한 X-연관(남아에서 중증). 신생아 초기 정상 → 단백 부하(수유) 후 급성 고암모니아혈증 뇌증."
+    "v": "Ornithine transcarbamylase(OTC) 결핍 — 가장 흔한 요소회로 장애, 유일한 X-연관(남아에서 중증). 신생아 초기 정상 → 단백 부하(수유) 후 급성 *고암모니아혈증 뇌증."
    },
    {
     "k": "기전(왜 orotic acid가 오르나)",
@@ -392,7 +392,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별(감별의 핵심)",
-    "v": "- (B) CPS1 결핍: carbamoyl phosphate 자체를 못 만들어 상류가 비므로 orotic acid는 정상/낮음 — 본 증례처럼 orotic acid↑와 맞지 않음. - (C) UMP synthase 결핍(유전성 orotic aciduria): orotic aciduria는 같지만 거대적혈모구빈혈(+)이고 고암모니아혈증은 없다 — 본 증례와 반대. - (D) MCAD 결핍: 금식 시 저케톤성 저혈당, 고암모니아혈증·orotic aciduria 아님. - (E) PKU: 발달지연·musty odor, 요소회로와 무관."
+    "v": "(B) CPS1 결핍: carbamoyl phosphate 자체를 못 만들어 상류가 비므로 *orotic acid는 정상/낮음 — 본 증례처럼 orotic acid↑와 맞지 않음.\n(C) UMP synthase 결핍(유전성 orotic aciduria): orotic aciduria는 같지만 *거대적혈모구빈혈(+)이고 고암모니아혈증은 없다 — 본 증례와 반대.\n(D) MCAD 결핍: 금식 시 저케톤성 저혈당, 고암모니아혈증·orotic aciduria 아님.\n(E) PKU: 발달지연·musty odor, 요소회로와 무관."
    },
    {
     "k": "임상핵심",
@@ -441,7 +441,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(B) C3 결핍이면 C3 낮고 화농균·협막균 중증 감염 + 옵소닌화 장애. (C) C1 INH 결핍은 유전성 혈관부종(감염 아님). (D) XLA는 협막균 재발·면역 글로불린 저하. (E) 선택적 IgA는 대개 경미, 점막감염/아나필락시스(수혈)."
+    "v": "(B) C3 결핍이면 C3 낮고 화농균·협막균 중증 감염 + 옵소닌화 장애.\n(C) C1 INH 결핍은 유전성 혈관부종(감염 아님). (D) XLA는 협막균 재발·면역 글로불린 저하. (E) 선택적 IgA는 대개 경미, 점막감염/아나필락시스(수혈)."
    },
    {
     "k": "임상핵심",
@@ -494,7 +494,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(B) ferrochelatase → erythropoietic protoporphyria(광과민성). (C) uroporphyrinogen decarboxylase → porphyria cutanea tarda(광과민·수포, 가장 흔함). (D) ALA dehydratase 결핍/납중독은 드묾. (E) G6PD는 heme 합성과 무관 (용혈)."
+    "v": "(B) ferrochelatase → erythropoietic protoporphyria(광과민성).\n(C) uroporphyrinogen decarboxylase → porphyria cutanea tarda(광과민·수포, 가장 흔함). (D) ALA dehydratase 결핍/납중독은 드묾. (E) G6PD는 heme 합성과 무관 (용혈)."
    },
    {
     "k": "임상핵심",
@@ -535,7 +535,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "기전",
-    "v": "Vancomycin은 펩티도글리칸 전구체의 말단 D-Ala-D-Ala에 수소결합해 transglycosylation/가교를 막는다. VanA형 VRE는 van 오페론(ligase)이 말단을 D-Ala-D-Lactate로 바꿔 수소결합 하나를 잃게 만들어 친화도를 약 1000배 떨어뜨린다 → 내성."
+    "v": "Vancomycin은 펩티도글리칸 전구체의 말단 D-Ala-D-Ala에 수소결합해 transglycosylation/가교를 막는다. VanA형 VRE는 van 오페론(ligase)이 말단을 *D-Ala-D-Lactate로 바꿔 수소결합 하나를 잃게 만들어 친화도를 약 1000배 떨어뜨린다 → 내성."
    },
    {
     "k": "오답감별",
@@ -543,7 +543,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "임상핵심",
-    "v": "\"VRE(VanA) = D-Ala-D-Lac.\" 치료는 linezolid 또는 daptomycin(중증 균혈증). MRSA와 혼동 금지(그건 PBP2a)."
+    "v": "\"VRE(VanA) = D-Ala-D-Lac.\" 치료는 linezolid 또는 *daptomycin(중증 균혈증). MRSA와 혼동 금지(그건 PBP2a)."
    },
    {
     "k": "출처",
@@ -584,7 +584,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별(독소 기전 비교)",
-    "v": "- (B) Gs ADP-ribosylation → cAMP↑: 콜레라 독소, ETEC 이열성독소(LT), 백일해는 Gi 억제로 cAMP↑. - (C) 28S rRNA에서 아데닌 제거(60S 불활성): Shiga / Shiga-like(EHEC) 독소 → HUS. - (D) SNARE 절단: 보툴리눔(ACh 방출 차단→이완마비), 파상풍(glycine/ GABA 방출 차단→경직마비). - (E) 초항원(superantigen): TSST-1, 연쇄상구균 발열외독소 → 다량 사이토카인."
+    "v": "(B) Gs ADP-ribosylation → cAMP↑: 콜레라 독소, ETEC 이열성독소(LT), 백일해는 Gi 억제로 cAMP↑.\n(C) 28S rRNA에서 아데닌 제거(60S 불활성): Shiga / Shiga-like(EHEC) 독소 → HUS.\n(D) SNARE 절단: 보툴리눔(ACh 방출 차단→이완마비), 파상풍(glycine/ GABA 방출 차단→경직마비).\n(E) 초항원(superantigen): TSST-1, 연쇄상구균 발열외독소 → 다량 사이토카인."
    },
    {
     "k": "임상핵심",
@@ -678,7 +678,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- (B) tPA 적격자에게 aspirin으로 대체하면 안 됨(항혈소판은 tPA 후 24시간 뒤). - (C) 급성기 permissive hypertension — tPA 줄 때만 <185/110로 조절하고, tPA 안 주면 대개 <220/120까지 허용. <120/80로 급강하하면 penumbra 관류 악화. - (D) 급성 허혈성 뇌졸중에 즉시 전량 헤파린은 이득 없고 출혈 위험. - (E) tPA를 늦추려 MRI를 기다리는 것은 부적절(비조영 CT로 출혈만 배제되면 투여)."
+    "v": "(B) tPA 적격자에게 aspirin으로 대체하면 안 됨(항혈소판은 tPA 후 24시간 뒤).\n(C) 급성기 permissive hypertension — tPA 줄 때만 <185/110로 조절하고, tPA 안 주면 대개 <220/120까지 허용. <120/80로 급강하하면 penumbra 관류 악화.\n(D) 급성 허혈성 뇌졸중에 즉시 전량 헤파린은 이득 없고 출혈 위험.\n(E) tPA를 늦추려 MRI를 기다리는 것은 부적절(비조영 CT로 출혈만 배제되면 투여)."
    },
    {
     "k": "임상핵심",
@@ -768,7 +768,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "진단",
-    "v": "비후성 유문협착(hypertrophic pyloric stenosis) — 생후 3~6주 남아, 비담즙성 사출성 구토, 수유 후에도 배고파함, 올리브 종괴, 초음파에서 유문 비후."
+    "v": "비후성 유문협착(hypertrophic pyloric stenosis) — 생후 3~6주 남아, *비담즙성 사출성 구토, 수유 후에도 배고파함, 올리브 종괴, 초음파에서 유문 비후."
    },
    {
     "k": "정답근거(산-염기 기전)",
@@ -878,7 +878,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(B) AA는 만성 염증(류마티스관절염·만성감염·가족성지중해열)의 serum amyloid A 유래. (C) ATTR는 transthyretin(노인성 심장/유전성 신경). (D) β2-microglobulin은 장기 투석 관련(손목터널). (E) Aβ는 알츠하이머·뇌 아밀로이드혈관병."
+    "v": "(B) AA는 만성 염증(류마티스관절염·만성감염·가족성지중해열)의 *serum amyloid A 유래. (C) ATTR는 transthyretin(노인성 심장/유전성 신경).\n(D) β2-microglobulin은 장기 투석 관련(손목터널). (E) Aβ는 알츠하이머·뇌 아밀로이드혈관병."
    },
    {
     "k": "임상핵심",
@@ -923,7 +923,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별(저산소증 5기전 감별)",
-    "v": "- (B) 저환기: A-a 정상, PaCO2 상승, 산소에 잘 반응. - (C) 저흡입산소(고지대): A-a 정상, 산소로 교정. - (D) V/Q 부조화: A-a 증가하지만 100% 산소에 대체로 교정(저 V/Q 폐포도 결국 산소 도달) — 션트와의 핵심 감별점. - (E) 확산장애: A-a 증가하나 보충 산소에 반응(운동 시 악화)."
+    "v": "(B) 저환기: A-a 정상, PaCO2 상승, 산소에 잘 반응.\n(C) 저흡입산소(고지대): A-a 정상, 산소로 교정.\n(D) V/Q 부조화: A-a 증가하지만 100% 산소에 대체로 교정(저 V/Q 폐포도 결국 산소 도달) — 션트와의 핵심 감별점.\n(E) 확산장애: A-a 증가하나 보충 산소에 반응(운동 시 악화)."
    },
    {
     "k": "임상핵심",
@@ -968,7 +968,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- (B) 신성 요붕증: 신장이 ADH에 저항 → desmopressin에도 반응 없음(핵심 감별점). 원인: lithium, 고칼슘혈증, 유전성 V2/AQP2. - (C) SIADH: ADH 과다 → 농축뇨·저나트륨혈증, 다뇨가 아니라 수분저류. - (D) 원발성 다음증: 수분제한만으로도 어느 정도 농축(기저 ADH 억제 상태), desmopressin에 과반응 안 함. - (E) 삼투성 이뇨(고혈당): 소변 삼투압이 낮지 않고 포도당 존재."
+    "v": "(B) 신성 요붕증: 신장이 ADH에 저항 → desmopressin에도 반응 없음(핵심 감별점). 원인: lithium, 고칼슘혈증, 유전성 V2/AQP2.\n(C) SIADH: ADH 과다 → 농축뇨·저나트륨혈증, 다뇨가 아니라 수분저류.\n(D) 원발성 다음증: 수분제한만으로도 어느 정도 농축(기저 ADH 억제 상태), desmopressin에 과반응 안 함.\n(E) 삼투성 이뇨(고혈당): 소변 삼투압이 낮지 않고 포도당 존재."
    },
    {
     "k": "임상핵심",
@@ -1013,7 +1013,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "정답근거",
-    "v": "정맥 황산마그네슘(MgSO4)이 경련 예방·치료의 1차. 동시에 항고혈압제(labetalol·hydralazine·경구 nifedipine)로 중증 고혈압을 조절하고, 근치는 분만(≥34주 중증이면 분만)."
+    "v": "정맥 황산마그네슘(MgSO4)이 경련 예방·치료의 1차. 동시에 *항고혈압제(labetalol·hydralazine·경구 nifedipine)로 중증 고혈압을 조절하고, 근치는 분만(≥34주 중증이면 분만)."
    },
    {
     "k": "오답감별",
@@ -1156,11 +1156,11 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(약동학)",
-    "v": "리튬은 대사되지 않고 신장으로만 배설되며 치료지수가 매우 좁다. Thiazide는 용적을 줄여 근위세뇨관에서 Na⁺(과 함께 Li⁺) 재흡수 를 늘리고, NSAID(ibuprofen)는 신전 prostaglandin을 줄여 신혈류·GFR을 낮춘다 → 리튬 청소율 감소 → 농도 상승 → 독성(조대 진전·실조·혼돈·구토, 중증엔 경련· 신부전)."
+    "v": "리튬은 대사되지 않고 신장으로만 배설되며 치료지수가 매우 좁다. Thiazide는 용적을 줄여 근위세뇨관에서 Na⁺(과 함께 Li⁺) 재흡수 를 늘리고, NSAID(ibuprofen)는 신전 prostaglandin을 줄여 신혈류·GFR을 낮춘다 → *리튬 청소율 감소 → 농도 상승 → 독성(조대 진전·실조·혼돈·구토, 중증엔 경련· 신부전)."
    },
    {
     "k": "오답감별",
-    "v": "(B) 리튬은 단백결합을 하지 않는 이온이라 displacement 무관. (C) 리튬은 간대사 안 됨 → 효소유도 무관. (D) 독성은 저나트륨/용적감소가 핵심 이지 고칼륨이 아님(thiazide는 오히려 저칼륨 경향). (E) CYP 대사 산물 없음."
+    "v": "(B) 리튬은 단백결합을 하지 않는 이온이라 displacement 무관.\n(C) 리튬은 간대사 안 됨 → 효소유도 무관. (D) 독성은 저나트륨/용적감소가 핵심 이지 고칼륨이 아님(thiazide는 오히려 저칼륨 경향). (E) CYP 대사 산물 없음."
    },
    {
     "k": "임상핵심",
@@ -1201,7 +1201,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(대사 경로)",
-    "v": "치료용량 acetaminophen은 대부분 glucuronidation/ sulfation(phase II)으로 무독화된다. 과량에서 이 경로가 포화되면 여분이 CYP2E1을 통해 반응성 친전자성 대사물 NAPQI로 전환된다. NAPQI는 평소 glutathione(GSH)과 포합돼 해독되지만, GSH가 고갈되면 간세포 단백에 공유결합해 중심소엽(zone 3) 괴사를 일으킨다."
+    "v": "치료용량 acetaminophen은 대부분 glucuronidation/ sulfation(phase II)으로 무독화된다. 과량에서 이 경로가 포화되면 여분이 *CYP2E1을 통해 반응성 친전자성 대사물 NAPQI로 전환된다. NAPQI는 평소 *glutathione(GSH)과 포합돼 해독되지만, GSH가 고갈되면 간세포 단백에 공유결합해 중심소엽(zone 3) 괴사를 일으킨다."
    },
    {
     "k": "antidote 기전",
@@ -1209,11 +1209,11 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(B) NAC는 CYP2E1 억제제가 아니며 모약을 미변화 배설시키지 않는다. (C) 흡착·킬레이트는 activated charcoal 역할이지 NAC가 아니다. (D) UGT 유도로 작용하지 않는다. (E) naloxone식 수용체 길항 기전이 아니다."
+    "v": "(B) NAC는 CYP2E1 억제제가 아니며 모약을 미변화 배설시키지 않는다.\n(C) 흡착·킬레이트는 activated charcoal 역할이지 NAC가 아니다. (D) UGT 유도로 작용하지 않는다. (E) naloxone식 수용체 길항 기전이 아니다."
    },
    {
     "k": "임상핵심",
-    "v": "시간축이 있어도 nomogram(4시간 이후 레벨)으로 판단하며, 초기엔 AST/ALT가 정상일 수 있다(괴사는 24–72시간에 최고조). NAC는 8–10시간 이내 투여 시 거의 완전 예방, 늦어도 투여 이득이 있다."
+    "v": "시간축이 있어도 nomogram(4시간 이후 레벨)으로 판단하며, 초기엔 *AST/ALT가 정상일 수 있다(괴사는 24–72시간에 최고조). NAC는 8–10시간 이내 투여 시 거의 완전 예방, 늦어도 투여 이득이 있다."
    },
    {
     "k": "출처",
@@ -1250,7 +1250,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(산소 운반)",
-    "v": "CO는 Hb에 대한 친화도가 O2보다 ~200–250배 높아 carboxyhemoglobin을 형성 → O2 content(운반능) 감소. 게다가 남은 자리의 O2 방출을 방해해 곡선을 좌측 이동(조직에서 O2를 못 놓음) → 조직 저산소 악화."
+    "v": "CO는 Hb에 대한 친화도가 O2보다 ~200–250배 높아 *carboxyhemoglobin을 형성 → O2 content(운반능) 감소. 게다가 남은 자리의 O2 방출을 방해해 곡선을 좌측 이동(조직에서 O2를 못 놓음) → 조직 저산소 악화."
    },
    {
     "k": "왜 지표가 정상처럼 보이나",
@@ -1258,7 +1258,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(A) PaO2는 정상이고 곡선은 좌측(우측 아님) 이동. (B) methemoglobin은 별개 기전(산화 스트레스, 초콜릿색 혈액, methylene blue 치료). (D)(E) dead space·확산장벽은 PaO2를 낮추는데 여기선 PaO2가 정상이라 배제."
+    "v": "(A) PaO2는 정상이고 곡선은 좌측(우측 아님) 이동. (B) *methemoglobin은 별개 기전(산화 스트레스, 초콜릿색 혈액, methylene blue 치료).\n(D)(E) dead space·확산장벽은 PaO2를 낮추는데 여기선 PaO2가 정상이라 배제."
    },
    {
     "k": "임상핵심",
@@ -1299,7 +1299,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(형태·병리)",
-    "v": "Aspergillus는 격벽성(septate) 균사가 예각 (~45°)으로 분지하며 혈관을 침습(angioinvasion) → 혈전·출혈성 경색 → 객혈과 CT의 halo sign(초기)·이후 air-crescent/공동을 만든다. 장기 호중구감소가 결정적 위험인자이고 galactomannan(세포벽 성분)이 진단 보조."
+    "v": "Aspergillus는 격벽성(septate) 균사가 예각 (~45°)으로 분지하며 혈관을 침습(angioinvasion) → 혈전·출혈성 경색 → *객혈과 CT의 halo sign(초기)·이후 air-crescent/공동을 만든다. 장기 *호중구감소가 결정적 위험인자이고 galactomannan(세포벽 성분)이 진단 보조."
    },
    {
     "k": "오답감별",
@@ -1344,7 +1344,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(칼륨 동태)",
-    "v": "DKA는 삼투성 이뇨·구토·산증에 의한 세포 내→외 이동 으로 전신 총칼륨이 심하게 고갈돼 있다. 측정 혈청 K가 정상이어도 실제 부족이며, 여기선 이미 3.2 mEq/L로 낮다. Insulin은 K⁺를 세포 내로 이동시켜 급격한 저칼륨혈증 → 치명적 부정맥을 유발할 수 있다."
+    "v": "DKA는 삼투성 이뇨·구토·산증에 의한 세포 내→외 이동 으로 전신 총칼륨이 심하게 고갈돼 있다. 측정 혈청 K가 정상이어도 실제 부족이며, 여기선 이미 3.2 mEq/L로 낮다. Insulin은 K⁺를 세포 내로 이동시켜 급격한 *저칼륨혈증 → 치명적 부정맥을 유발할 수 있다."
    },
    {
     "k": "원칙",
@@ -1352,7 +1352,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(A) 총칼륨은 높지 않고 오히려 고갈 → 즉시 insulin은 위험. (B) bicarbonate는 대개 불필요(pH < 6.9에서만 고려)하고 저칼륨·역설적 CNS 산증 위험. (C) K 2.5까지 방치하면 부정맥 위험이 이미 크다. (E) calcium은 고칼륨의 심근 안정화용으로 상황이 반대다."
+    "v": "(A) 총칼륨은 높지 않고 오히려 고갈 → 즉시 insulin은 위험. (B) *bicarbonate는 대개 불필요(pH < 6.9에서만 고려)하고 저칼륨·역설적 CNS 산증 위험. (C) K 2.5까지 방치하면 부정맥 위험이 이미 크다. (E) calcium은 고칼륨의 심근 안정화용으로 상황이 반대다."
    },
    {
     "k": "임상핵심",
@@ -1393,7 +1393,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(임상 인지)",
-    "v": "통증이 홍반에 비해 과도(pain out of proportion), 어두운 변색·긴장성 수포, 염발음(crepitus, 가스형성), 분 단위로 번지는 경계, 전신 독성 → necrotizing fasciitis. 이는 외과적 응급으로 즉각적 광범위 debridement가 예후를 결정하고, 광범위 항생제(예: vancomycin + piperacillin-tazobactam ± clindamycin)는 보조다."
+    "v": "통증이 홍반에 비해 과도(pain out of proportion), *어두운 변색·긴장성 수포, 염발음(crepitus, 가스형성), 분 단위로 번지는 경계, 전신 독성 → necrotizing fasciitis. 이는 외과적 응급으로 즉각적 광범위 debridement가 예후를 결정하고, 광범위 항생제(예: vancomycin + piperacillin-tazobactam ± clindamycin)는 보조다."
    },
    {
     "k": "오답감별",
@@ -1438,7 +1438,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "정답근거(삼징 인지)",
-    "v": "혈성 설사 후 미세혈관병성 용혈성 빈혈(schistocyte) + 혈소판감소 + 급성 신손상 = Shiga toxin 생성 대장균(STEC, O157:H7)에 의한 전형적 HUS. 치료의 핵심은 지지요법(신중한 수액·전해질, 필요 시 투석)."
+    "v": "혈성 설사 후 미세혈관병성 용혈성 빈혈(schistocyte) + *혈소판감소 + 급성 신손상 = Shiga toxin 생성 대장균(STEC, O157:H7)에 의한 전형적 HUS. 치료의 핵심은 지지요법(신중한 수액·전해질, 필요 시 투석)."
    },
    {
     "k": "왜 항생제 금기",
@@ -1446,7 +1446,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(A)(B) 위 이유로 금기(항생제·loperamide). (C) 예방적 혈소판 수혈은 피함(활동성 출혈·침습적 시술 시에만). (D) plasma exchange는 비전형(complement) HUS나 TTP의 치료로, 전형적 소아 STEC-HUS의 1차가 아니다."
+    "v": "(A)(B) 위 이유로 금기(항생제·loperamide). (C) 예방적 혈소판 수혈은 피함(활동성 출혈·침습적 시술 시에만). (D) plasma exchange는 *비전형(complement) HUS나 TTP의 치료로, 전형적 소아 STEC-HUS의 1차가 아니다."
    },
    {
     "k": "임상핵심",
@@ -1487,7 +1487,7 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "적용(소견 → 진단 → 분기)",
-    "v": "BP 170/110(중증 범위) + 두통 + 요 단백 4+ + 혈소판 90,000(감소) → 중증 전자간증(severe preeclampsia). 38주 이고 CTG가 기저 140·중등도 변이·만기감속 없음(reassuring) → 알고리즘상 \"중증 · 태아 안정\" 분기. 여기에 추정체중 <10 백분위 + 양수과소(AFI 3 cm) 로 IUGR 동반. → MgSO₄ 발작예방 + 혈압조절 후 분만, 자궁경부 양호 (3 cm/90%/-2)·두위·태아안정이므로 유도분만 우선."
+    "v": "BP 170/110(중증 범위) + 두통 + 요 단백 4+ + 혈소판 90,000(감소) → 중증 전자간증(severe preeclampsia). 38주 이고 CTG가 기저 140·중등도 변이·만기감속 없음(reassuring) → 알고리즘상 *\"중증 · 태아 안정\" 분기. 여기에 추정체중 <10 백분위 + 양수과소(AFI 3 cm) 로 IUGR 동반. → MgSO₄ 발작예방 + 혈압조절 후 분만, 자궁경부 양호 (3 cm/90%/-2)·두위·태아안정이므로 유도분만 우선."
    },
    {
     "k": "일반 프레임워크",
@@ -1495,11 +1495,11 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "(A) 38주 중증 전자간증에 expectant/외래관찰은 부적절(분만이 근치). (B) tocolysis는 중증 전자간증에서 금기(임신 연장 위험). (D) betamethasone은 <34주 폐성숙 목적 — 38주엔 불필요하고 분만 지연은 해롭다. (E) 태아가 안정적이면 제왕절개가 필수는 아니며, 무엇보다 MgSO₄·혈압조절을 생략하는 선택은 안전하지 않다."
+    "v": "(A) 38주 중증 전자간증에 expectant/외래관찰은 부적절(분만이 근치). (B) tocolysis는 중증 전자간증에서 금기(임신 연장 위험). (D) *betamethasone은 <34주 폐성숙 목적 — 38주엔 불필요하고 분만 지연은 해롭다.\n(E) 태아가 안정적이면 제왕절개가 필수는 아니며, 무엇보다 MgSO₄·혈압조절을 생략하는 선택은 안전하지 않다."
    },
    {
     "k": "임상핵심",
-    "v": "중증 혈압 기준 ≥160/110, 발작예방 MgSO₄, 급성 중증 고혈압 labetalol·hydralazine·nifedipine. 분만 방식은 중증도가 아니라 태아상태· 자궁경부·산과 적응으로 결정한다."
+    "v": "중증 혈압 기준 ≥160/110, 발작예방 MgSO₄, 급성 중증 고혈압 *labetalol·hydralazine·nifedipine. 분만 방식은 중증도가 아니라 태아상태· 자궁경부·산과 적응으로 결정한다."
    },
    {
     "k": "자료 관련 한계",
@@ -1600,11 +1600,11 @@ window.USMLE_QUESTIONS = [
   "explanationItems": [
    {
     "k": "적용(심전도 판독 → 진단)",
-    "v": "리듬 스트립에서 뚜렷한 P파가 없고, 기저가 잔물결(f파)처럼 흔들리며 RR 간격이 불규칙하게 불규칙(irregularly irregular) → 심방세동(atrial fibrillation). 진찰의 불규칙한 맥박과 일치."
+    "v": "리듬 스트립에서 뚜렷한 P파가 없고, 기저가 *잔물결(f파)처럼 흔들리며 RR 간격이 불규칙하게 불규칙(irregularly irregular) → 심방세동(atrial fibrillation). 진찰의 불규칙한 맥박과 일치."
    },
    {
     "k": "오답감별",
-    "v": "(B) 심방조동은 톱니(sawtooth) F파에 흔히 규칙적 전도. (C) MAT는 P파가 3가지 이상 형태 + 불규칙(흔히 COPD). (D) 동성부정맥은 정상 P파가 있고 호흡에 따라 RR이 변동. (E) 심실빈맥은 넓은 QRS가 규칙적으로 빠르게 — 형태가 명확히 다르다."
+    "v": "(B) 심방조동은 톱니(sawtooth) F파에 흔히 규칙적 전도.\n(C) MAT는 P파가 3가지 이상 형태 + 불규칙(흔히 COPD). (D) 동성부정맥은 *정상 P파가 있고 호흡에 따라 RR이 변동. (E) 심실빈맥은 넓은 QRS가 규칙적으로 빠르게 — 형태가 명확히 다르다."
    },
    {
     "k": "임상핵심",
@@ -1722,7 +1722,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별(낚시 주의)",
-    "v": "(B) 좌각차단(CLBBB)도 넓은 QRS지만 정반대로 I·V6에 넓은 단일 R파, V1에 QS/rS이고 rSR′가 없다 — \"넓은 QRS = LBBB\"로 넘겨짚기 쉬운 함정. (C) WPW는 짧은 PR + 델타파로 넓어진다(형태가 다름). (D) 좌전섬유속차단(LAFB)은 좌축편위를 만들지만 QRS를 넓히지 않는다(이 심전도 질문의 핵심: 폭 확장의 원인이 아님) — 이 기록에 LAFB가 동반돼 있어 특히 매력적인 오답. (E) LVH는 전압 증가가 특징이지 폭 확장의 주원인이 아니다."
+    "v": "(B) 좌각차단(CLBBB)도 넓은 QRS지만 정반대로 I·V6에 *넓은 단일 R파, V1에 QS/rS이고 rSR′가 없다 — \"넓은 QRS = LBBB\"로 넘겨짚기 쉬운 함정. (C) WPW는 짧은 PR + 델타파로 넓어진다(형태가 다름). (D) *좌전섬유속차단(LAFB)은 좌축편위를 만들지만 QRS를 넓히지 않는다(이 심전도 질문의 핵심: 폭 확장의 원인이 아님) — 이 기록에 LAFB가 동반돼 있어 특히 매력적인 오답. (E) LVH는 전압 증가가 특징이지 폭 확장의 주원인이 아니다."
    },
    {
     "k": "임상핵심",
@@ -1834,7 +1834,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별(낚시 주의)",
-    "v": "(B) 우각차단(CRBBB)은 정반대 — V1의 rSR′(M)와 I·V6의 넓은 S파. \"넓은 QRS면 다 RBBB\"로 넘겨짚기 쉬운 함정. (C) WPW는 짧은 PR+델타파. (D) LVH 단독은 전압 증가가 핵심이지 QRS를 크게 넓히지 않는다. (E) 고칼륨은 뾰족T·사인파 등 전해질 맥락을 동반."
+    "v": "(B) 우각차단(CRBBB)은 정반대 — V1의 rSR′(M)와 I·V6의 넓은 S파. \"넓은 QRS면 다 RBBB\"로 넘겨짚기 쉬운 함정. (C) WPW는 짧은 PR+델타파. (D) LVH 단독은 전압 증가가 핵심이지 QRS를 크게 넓히지 않는다. (E) *고칼륨은 뾰족T·사인파 등 전해질 맥락을 동반."
    },
    {
     "k": "임상핵심",
@@ -1890,7 +1890,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- A: Kupffer cell(간 대식세포)은 굴모세혈관 전체에 고르게 분포하며 특정 구역(zone 3)에 국한되지 않는다. 이 문항의 병태생리는 면역·사이토카인 매개가 아니라 저산소증-울혈 매개다. - C: 해부학의 역전 함정이다. 중심정맥은 산소가 풍부한 간동맥혈이 아니라 이미 조직을 거친 간정맥 유출혈(저산소)을 모으는 통로다. 오히려 문맥삼합부가 간동맥의 신선한 산소혈을 먼저 받는다. - D: 그런 \"일방향 밸브\" 구조는 실재하지 않는 가상의 기전이다. 문맥역 간세포는 이중 혈액공급(간동맥+문맥) 덕분에 상대적으로 보호되는 것이지, 밸브 때문이 아니다. - E: 담관은 문맥역(portal tract)으로 모여 담관계를 이루지, 중심정맥으로 모이지 않는다. 이 증례의 생검 소견은 울혈·괴사이지 담즙정체(cholestasis) 패턴이 아니다."
+    "v": "A: Kupffer cell(간 대식세포)은 굴모세혈관 전체에 고르게 분포하며 특정 구역(zone 3)에 국한되지 않는다. 이 문항의 병태생리는 면역·사이토카인 매개가 아니라 저산소증-울혈 매개다.\nC: 해부학의 역전 함정이다. 중심정맥은 산소가 풍부한 간동맥혈이 아니라 이미 조직을 거친 간정맥 유출혈(저산소)을 모으는 통로다. 오히려 문맥삼합부가 간동맥의 신선한 산소혈을 먼저 받는다.\nD: 그런 \"일방향 밸브\" 구조는 실재하지 않는 가상의 기전이다. 문맥역 간세포는 이중 혈액공급(간동맥+문맥) 덕분에 상대적으로 보호되는 것이지, 밸브 때문이 아니다.\nE: 담관은 문맥역(portal tract)으로 모여 담관계를 이루지, 중심정맥으로 모이지 않는다. 이 증례의 생검 소견은 울혈·괴사이지 담즙정체(cholestasis) 패턴이 아니다."
    },
    {
     "k": "임상핵심",
@@ -1935,7 +1935,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- A: 포스포디에스터라제(PDE) 억제로 cAMP 분해를 늦추는 것은 밀리논(milrinone) 같은 PDE 억제제의 기전이다. 글루카곤의 주작용은 새로운 cAMP를 만드는 수용체-매개 활성화이지, 기존 cAMP 분해를 막는 것이 아니다 — 강심제 기전을 혼동하기 쉬운 함정이다. - B: 글루카곤은 칼슘통로를 직접 여는 것이 아니라 cAMP-단백인산화효소A(PKA) 경로를 통해 간접적으로 칼슘유입을 늘린다. \"직접 통로 개방\"은 기전을 지나치게 단순화한 오개념이다. - C: 글루카곤이 혈당을 올리는 대사 작용은 잘 알려져 있지만, 이는 이 환자의 심박수·혈압 회복과 직접적 인과관계가 없다 — \"글루카곤=혈당호르몬\"이라는 익숙한 지식을 엉뚱한 상황에 끌어오는 전형적 함정이다. - E: 글루카곤은 베타 수용체 결합부위에서 프로프라놀롤과 경쟁하지 않는다. 애초에 별도의 수용체를 쓰기 때문에 \"우회\"라는 표현이 성립한다."
+    "v": "A: 포스포디에스터라제(PDE) 억제로 cAMP 분해를 늦추는 것은 밀리논(milrinone) 같은 PDE 억제제의 기전이다. 글루카곤의 주작용은 새로운 cAMP를 만드는 수용체-매개 활성화이지, 기존 cAMP 분해를 막는 것이 아니다 — 강심제 기전을 혼동하기 쉬운 함정이다.\nB: 글루카곤은 칼슘통로를 직접 여는 것이 아니라 cAMP-단백인산화효소A(PKA) 경로를 통해 간접적으로 칼슘유입을 늘린다. \"직접 통로 개방\"은 기전을 지나치게 단순화한 오개념이다.\nC: 글루카곤이 혈당을 올리는 대사 작용은 잘 알려져 있지만, 이는 이 환자의 심박수·혈압 회복과 직접적 인과관계가 없다 — \"글루카곤=혈당호르몬\"이라는 익숙한 지식을 엉뚱한 상황에 끌어오는 전형적 함정이다.\nE: 글루카곤은 베타 수용체 결합부위에서 프로프라놀롤과 경쟁하지 않는다. 애초에 별도의 수용체를 쓰기 때문에 \"우회\"라는 표현이 성립한다."
    },
    {
     "k": "임상핵심",
@@ -1980,7 +1980,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- B: 수입세동맥(afferent)과 수출세동맥(efferent)을 혼동한 함정이다. ACE 억제제가 문제를 일으키는 부위는 수출세동맥이며, 그것도 직접 수축이 아니라 안지오텐신II 매개 수축을 제거하는 것이다. - C: 세뇨관 직접 독성은 아미노글리코시드 같은 약물의 급성세뇨관괴사(ATN) 기전과 혼동한 것이다. ACE 억제제-신동맥협착 AKI는 혈역학적(hemodynamic) 기전이지 세포독성 기전이 아니다. - D: 레닌 수치는 실제로 상승하지만(음성되먹임 상실), 레닌 자체가 사구체를 직접 손상시킨다는 것은 사실이 아니다 — 되먹임 개념과 가상의 독성 기전을 억지로 결합한 오답이다. - E: 이미 협착이 있다는 사실을 이용한 그럴듯한 함정이지만, ACE 억제제가 혈전증을 유발한다는 기전은 존재하지 않는다. 이 증례처럼 K/Na이 정상 범위인 것도 급성 경색보다는 순수 혈역학적 GFR 저하에 부합한다(참고치로 제시한 정상 K·Na는 신경계 콩팥 손상이 아닌 여과압 저하만 시사하는 미끼값)."
+    "v": "B: 수입세동맥(afferent)과 수출세동맥(efferent)을 혼동한 함정이다. ACE 억제제가 문제를 일으키는 부위는 수출세동맥이며, 그것도 직접 수축이 아니라 안지오텐신II 매개 수축을 제거하는 것이다.\nC: 세뇨관 직접 독성은 아미노글리코시드 같은 약물의 급성세뇨관괴사(ATN) 기전과 혼동한 것이다. ACE 억제제-신동맥협착 AKI는 혈역학적(hemodynamic) 기전이지 세포독성 기전이 아니다.\nD: 레닌 수치는 실제로 상승하지만(음성되먹임 상실), 레닌 자체가 사구체를 직접 손상시킨다는 것은 사실이 아니다 — 되먹임 개념과 가상의 독성 기전을 억지로 결합한 오답이다.\nE: 이미 협착이 있다는 사실을 이용한 그럴듯한 함정이지만, ACE 억제제가 혈전증을 유발한다는 기전은 존재하지 않는다. 이 증례처럼 K/Na이 정상 범위인 것도 급성 경색보다는 순수 혈역학적 GFR 저하에 부합한다(참고치로 제시한 정상 K·Na는 신경계 콩팥 손상이 아닌 여과압 저하만 시사하는 미끼값)."
    },
    {
     "k": "임상핵심",
@@ -2063,7 +2063,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- A: 하벽경색의 흉통에 반사적으로 니트로글리세린을 주는 것은 우심실경색이 있다면 전부하를 급격히 감소시켜 치명적 저혈압을 유발할 수 있다 — 가장 흔한 함정. - B: 이뇨제 역시 전부하를 줄이는 약제로, 니트로글리세린과 같은 기전으로 우심실경색 환자에서 위험하다. \"폐울혈이 있을 것\"이라는 추정만으로 투여하면 안 된다. - D: 모르핀도 정맥확장을 통해 전부하를 낮춘다. 통증 조절보다 혈역학적 안전 확인이 우선이다. - E: 베타차단제는 서맥을 악화시켜 심박출량을 더 떨어뜨릴 수 있고, 이미 상대적 서맥이 있는 하벽경색에서는 상대적 금기에 가깝다."
+    "v": "A: 하벽경색의 흉통에 반사적으로 니트로글리세린을 주는 것은 우심실경색이 있다면 전부하를 급격히 감소시켜 치명적 저혈압을 유발할 수 있다 — 가장 흔한 함정.\nB: 이뇨제 역시 전부하를 줄이는 약제로, 니트로글리세린과 같은 기전으로 우심실경색 환자에서 위험하다. \"폐울혈이 있을 것\"이라는 추정만으로 투여하면 안 된다.\nD: 모르핀도 정맥확장을 통해 전부하를 낮춘다. 통증 조절보다 혈역학적 안전 확인이 우선이다.\nE: 베타차단제는 서맥을 악화시켜 심박출량을 더 떨어뜨릴 수 있고, 이미 상대적 서맥이 있는 하벽경색에서는 상대적 금기에 가깝다."
    },
    {
     "k": "임상핵심",
@@ -2148,7 +2148,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- A: 스테로이드는 GBS에서 효과가 입증되지 않았다(다발성경화증과 혼동하기 쉬운 함정) — 사용하지 않는다. - B: IVIG는 실제 표준 치료이지만, 순서가 틀렸다. 호흡 안전이 확보되지 않은 상태에서 치료만 서두르면 안 되고, 입원·모니터링 체계 안에서 시행해야 한다(\"치료 자체는 맞지만 지금 당장 가장 먼저 할 일은 아니다\"라는 순서 함정). - C: 활력징후가 안정적이라고 외래로 돌려보내는 것은 위험하다. 상행성 마비는 예측 불가능하게 빠르게 진행할 수 있다 — 가장 치명적인 오답. - D: 신경전도검사는 진단을 뒷받침하지만, 결과를 기다리느라 호흡 안전 모니터링을 지연시켜서는 안 된다. 임상적으로 GBS가 강력히 의심되면 확진 검사 결과를 기다리지 않고 모니터링·치료 준비를 시작한다."
+    "v": "A: 스테로이드는 GBS에서 효과가 입증되지 않았다(다발성경화증과 혼동하기 쉬운 함정) — 사용하지 않는다.\nB: IVIG는 실제 표준 치료이지만, 순서가 틀렸다. 호흡 안전이 확보되지 않은 상태에서 치료만 서두르면 안 되고, 입원·모니터링 체계 안에서 시행해야 한다(\"치료 자체는 맞지만 지금 당장 가장 먼저 할 일은 아니다\"라는 순서 함정).\nC: 활력징후가 안정적이라고 외래로 돌려보내는 것은 위험하다. 상행성 마비는 예측 불가능하게 빠르게 진행할 수 있다 — 가장 치명적인 오답.\nD: 신경전도검사는 진단을 뒷받침하지만, 결과를 기다리느라 호흡 안전 모니터링을 지연시켜서는 안 된다. 임상적으로 GBS가 강력히 의심되면 확진 검사 결과를 기다리지 않고 모니터링·치료 준비를 시작한다."
    },
    {
     "k": "임상핵심",
@@ -2217,7 +2217,7 @@ window.USMLE_QUESTIONS = [
    },
    {
     "k": "오답감별",
-    "v": "- A: 간대를 동반한 과반사는 오히려 세로토닌증후군의 특징이다. NMS는 반사가 정상이거나 오히려 저하될 수 있다 — 두 질환을 헷갈리기 쉬운 대표적 함정. - B: 수시간 내 급성 발병은 세로토닌증후군의 전형적 시간경과다. NMS는 대개 약제 변경 후 1~3일 이상에 걸쳐 서서히 진행한다 — 시간경과를 반대로 아는 경우가 많다. - D: 설사·장운동 항진은 세로토닌 과잉에 의한 자율신경 증상으로 세로토닌증후군에 가깝다. NMS는 오히려 자율신경 불안정이 있어도 장운동 저하(심하면 마비성 장폐색)로 나타나는 경우가 더 특징적이다. - E: 산동(mydriasis)과 안구간대(ocular clonus)는 세로토닌증후군의 전형적 눈 소견이다. NMS에서는 이런 안구 소견이 특징적이지 않다."
+    "v": "A: 간대를 동반한 과반사는 오히려 세로토닌증후군의 특징이다. NMS는 반사가 정상이거나 오히려 저하될 수 있다 — 두 질환을 헷갈리기 쉬운 대표적 함정.\nB: 수시간 내 급성 발병은 세로토닌증후군의 전형적 시간경과다. NMS는 대개 약제 변경 후 1~3일 이상에 걸쳐 서서히 진행한다 — 시간경과를 반대로 아는 경우가 많다.\nD: 설사·장운동 항진은 세로토닌 과잉에 의한 자율신경 증상으로 세로토닌증후군에 가깝다. NMS는 오히려 자율신경 불안정이 있어도 장운동 저하(심하면 마비성 장폐색)로 나타나는 경우가 더 특징적이다.\nE: 산동(mydriasis)과 안구간대(ocular clonus)는 세로토닌증후군의 전형적 눈 소견이다. NMS에서는 이런 안구 소견이 특징적이지 않다."
    },
    {
     "k": "임상핵심",
