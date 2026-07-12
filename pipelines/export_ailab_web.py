@@ -20,7 +20,10 @@ from datetime import date
 from pathlib import Path
 
 from frontmatter import load
-from datasets import DATASETS, MODALITY_LABELS, weekly_topic
+from datasets import (
+    DATASETS, MODALITY_LABELS, weekly_topic, topic_for_week, TOTAL_WEEKS,
+)
+from state import ailab_progress
 
 ROOT = Path(__file__).resolve().parent.parent
 AILAB_DIR = ROOT / "content" / "ailab"
@@ -85,6 +88,11 @@ def build_card(path: Path) -> dict | None:
         "date": str(m.get("date", "") or ""),
         "confidence": m.get("confidence", "") or "",
         "tags": [str(t) for t in (m.get("tags", []) or [])],
+        # 실행 로그(kind: log)용 필드 — 주차별 진도 목록이 점수 배지를 그릴 때 쓴다.
+        "split": m.get("split", "") or "",
+        "metric": m.get("metric", "") or "",
+        "value": m.get("value"),
+        "passed": bool(m.get("passed", False)),
         "sections": sections,
     }
 
@@ -107,11 +115,15 @@ def load_cards() -> list[dict]:
 
 def main() -> int:
     cards = load_cards()
+    # 12주 커리큘럼 전체(진도 목록용) — 홈페이지가 '현재 주차'만이 아니라 모든 주차를 보여준다.
+    curriculum = [topic_for_week(i) for i in range(1, TOTAL_WEEKS + 1)]
     payload = {
         "generated": date.today().isoformat(),
         "repo": REPO,
         "branch": BRANCH,
         "weekly": weekly_topic(),
+        "curriculum": curriculum,          # 주차별 목표·게이트·완료여부
+        "progress": ailab_progress(),      # {week, done{주차:{date,metric,value}}}
         "modalityLabels": MODALITY_LABELS,
         "datasets": DATASETS,
         "cards": cards,

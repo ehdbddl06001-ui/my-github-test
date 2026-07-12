@@ -49,6 +49,21 @@
   .kindfilter button.active { background: rgba(124,92,255,.18); color: #c9bcff; border-color: #4a3d7a; font-weight: 600; }
   .ai-card.flash { animation: flash 1.4s ease; }
   @keyframes flash { 0%,100% { box-shadow: none; } 30% { box-shadow: 0 0 0 3px var(--accent); } }
+  /* 주차별 진도 목록 */
+  .wk-list { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .wk-list-h { margin: 4px 0 10px; font-size: 1em; }
+  .wk-row { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; margin: 6px 0; background: #0e1826; }
+  .wk-row.wk-cur { border-color: var(--accent); background: rgba(59,130,246,.08); }
+  .wk-row.wk-done { border-left: 3px solid #2f6b45; }
+  .wk-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px; }
+  .wk-num { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .wk-goal { font-weight: 600; color: var(--ink); }
+  .wk-arch { font-size: .88em; }
+  .wk-score { font-size: .8em; margin-left: auto; background: rgba(34,197,94,.15); color: #6ee7a0; border: 1px solid #2f6b45; border-radius: 999px; padding: 1px 8px; }
+  .wk-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+  .wk-chip { background: rgba(124,92,255,.16); color: #d7ccff; border: 1px solid #4a3d7a; border-radius: 999px; padding: 3px 11px; font-size: .82rem; cursor: pointer; }
+  .wk-chip:hover { border-color: var(--accent); color: #fff; background: rgba(59,130,246,.2); }
+  .wk-empty { font-size: .82rem; }
 </style>
 </head>
 <body>
