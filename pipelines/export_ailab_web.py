@@ -106,8 +106,8 @@ def load_cards() -> list[dict]:
                 cards.append(c)
     # mentor(최신 논의)를 맨 위, 그다음 deepdive(주차 심화)·roadmap/concept/project/weekly,
     # 각 그룹 내 최신순. 안정 정렬을 이용: 먼저 최신순(내림차순)으로 둔 뒤, kind 우선순위로 재정렬.
-    kind_rank = {"mentor": 0, "deepdive": 1, "roadmap": 2, "concept": 3,
-                 "project": 4, "weekly": 5, "log": 6}
+    kind_rank = {"mentor": 0, "quest": 1, "deepdive": 2, "roadmap": 3, "concept": 4,
+                 "project": 5, "weekly": 6, "log": 7}
     cards.sort(key=lambda c: (c["date"], c["id"]), reverse=True)
     cards.sort(key=lambda c: kind_rank.get(c["kind"], 9))
     return cards

@@ -66,7 +66,7 @@
 
   // ── 주차별 진도 목록(모든 주차 + 각 주차의 카드로 바로 이동) ──────
   var CHIP_KO = {
-    weekly: "📖 실습카드", deepdive: "🔬 심화", log: "🧪 로그",
+    weekly: "📖 실습카드", deepdive: "🔬 심화", log: "🧪 로그", quest: "🎯 퀘스트",
     concept: "📘 개념", project: "🔬 프로젝트", mentor: "🗣 논의", roadmap: "🗺 로드맵",
   };
   function chipFor(card) {
@@ -116,6 +116,28 @@
       wrap.appendChild(row);
     });
     host.appendChild(wrap);
+    renderQuests(host);
+  }
+
+  // ── 심화 퀘스트(주차 밖 독립 트랙) ────────────────────────────────
+  function renderQuests(host) {
+    var quests = (DATA.cards || []).filter(function (c) { return c.kind === "quest"; });
+    if (!quests.length) return;
+    var box = el("div", "quest-box");
+    box.appendChild(el("h3", "wk-list-h", "🎯 심화 퀘스트 <span class='muted'>(주차 밖 독립 트랙 · 클릭 → 열림)</span>"));
+    quests.forEach(function (c) {
+      var row = el("div", "wk-row");
+      row.appendChild(el("div", "wk-head",
+        '<span class="wk-goal">🎯 ' + esc(c.subtopic || c.topic) + "</span>" +
+        (c.level ? '<span class="muted wk-arch"> · ' + esc(c.level) + "</span>" : "")));
+      var chips = el("div", "wk-chips");
+      var b = el("button", "wk-chip", "🎯 퀘스트 열기");
+      b.addEventListener("click", function () { openCard(c.id); });
+      chips.appendChild(b);
+      row.appendChild(chips);
+      box.appendChild(row);
+    });
+    host.appendChild(box);
   }
 
   // ── 이번 주 배너 + 주차별 진도 ────────────────────────────────────
@@ -307,7 +329,7 @@
   }
 
   // ── 학습 카드 종류 필터 ─────────────────────────────────────────
-  var KIND_KO = { mentor: "🗣 논의", roadmap: "🗺 로드맵", deepdive: "🔬 심화", concept: "📘 개념", project: "🔬 프로젝트", weekly: "🗓 주간", log: "🧪 로그" };
+  var KIND_KO = { mentor: "🗣 논의", quest: "🎯 퀘스트", roadmap: "🗺 로드맵", deepdive: "🔬 심화", concept: "📘 개념", project: "🔬 프로젝트", weekly: "🗓 주간", log: "🧪 로그" };
   function initKindFilter() {
     var host = document.getElementById("kindFilter");
     if (!host) return;
