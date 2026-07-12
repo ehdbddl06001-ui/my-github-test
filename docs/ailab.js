@@ -2,24 +2,24 @@
 // 원본: content/ailab/**/*.md + pipelines/datasets.py
 //   →  `python pipelines/export_ailab_web.py`로 재생성
 window.AILAB = {
- "generated": "2026-07-08",
+ "generated": "2026-07-12",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "weekly": {
-  "week": 1,
+  "week": 2,
   "total": 12,
-  "goal": "심전도 1D-CNN 부정맥 분류",
-  "arch": "1D-CNN",
-  "why": "가장 가벼운 의료 딥러닝. 신호 → 라벨의 전 과정을 하루에 끝낸다.",
-  "dataset_key": "mitdb",
-  "dataset_name": "MIT-BIH Arrhythmia",
-  "dataset_url": "https://physionet.org/content/mitdb/",
+  "goal": "12유도 ECG 다중라벨 진단",
+  "arch": "1D-ResNet",
+  "why": "다중라벨·클래스불균형·AUROC를 실제 규모에서 경험.",
+  "dataset_key": "ptb-xl",
+  "dataset_name": "PTB-XL 12-lead ECG",
+  "dataset_url": "https://physionet.org/content/ptb-xl/",
   "modality": "ecg",
   "access": "open",
   "colab_ready": true,
-  "metric": "macro_f1",
-  "target": 0.8,
-  "deliverable": "5클래스(AAMI) 비트 분류 혼동행렬 + macro-F1, 체크포인트를 Drive에 저장",
+  "metric": "macro_auroc",
+  "target": 0.85,
+  "deliverable": "진단 상위클래스 다중라벨 macro-AUROC + 클래스별 AUROC 표",
   "done": false
  },
  "modalityLabels": {
@@ -424,7 +424,7 @@ window.AILAB = {
    "notebook": "notebooks/ailab_week01_ecg_mitbih.ipynb",
    "week": 1,
    "date": "2026-07-08",
-   "confidence": "medium",
+   "confidence": "high",
    "tags": [
     "ECG",
     "arrhythmia",
@@ -441,7 +441,8 @@ window.AILAB = {
     "Instructions": "> 코드의 각 지시어가 뭘 시키는지(1D 버전).\n\n| 지시어 | 무엇을 시키는가 | 왜 |\n|---|---|---|\n| `wfdb.rdsamp/rdann` | 신호와 R-peak 주석을 읽어라 | 원신호 → 비트 조각의 원천 |\n| `Conv1D(f, k)` | 길이 k 커널 f개로 시간축 국소 파형을 훑어라 | QRS 모양 같은 국소 특징 |\n| `MaxPool1D(2)` | 시간축 절반으로 요약 | 시야↑·계산량↓ |\n| `GlobalAveragePooling1D` | 시간축 전체를 하나로 평균 | 가변 위치에 강건한 요약 |\n| `Dropout(0.3)` | 학습 때 뉴런 30%를 끔 | 과적합 억제 |\n| `softmax(5)` | 5클래스 확률을 내라 | 비트 유형 분류 |\n| `class_weight` | 드문 클래스에 가중치를 더 줘라 | N 편중(불균형) 보정 — accuracy 함정 회피 |\n| `f1_score(macro)` | 클래스별 F1의 단순평균으로 채점 | 불균형에서 소수 클래스도 공평히 평가 |",
     "Gate": "- **기준**: `macro_f1 ≥ 0.80` (AAMI 5클래스, 환자 단위 분리)\n- **산출물**: 혼동행렬 + macro-F1, 체크포인트를 Drive에 저장\n- **판정/진급**:\n  ```bash\n  # 노트북이 남긴 결과로 판정(통과 시 자동으로 2주차로)\n  python pipelines/check_week.py --results week01_results.json\n  # 또는 값만 직접:\n  python pipelines/check_week.py --value 0.83\n  ```\n  통과가 애매하지만 개념을 충분히 이해했다면 `/ai-mentor` 질적 리뷰 후 `--pass`로 승인 가능.",
     "Exercises": "1. **완주**: Colab에서 끝까지 돌려 macro-F1과 혼동행렬을 얻는다.\n2. **관찰**: 어느 클래스가 약한가(보통 S·F)? 왜? 한 문단으로 `## My notes`에 적는다.\n3. **개선**: (a) 시프트·노이즈 증강 (b) Residual 블록 (c) 에폭/학습률 조정 중 하나로 macro-F1을\n   올려본다.\n4. **진급**: 기준을 넘으면 `check_week.py`로 2주차(PTB-XL)로 넘어간다.",
-    "Resources": "- 데이터: https://physionet.org/content/mitdb/  · WFDB 파이썬: https://github.com/MIT-LCP/wfdb-python\n- AAMI EC57 표준(비트 5군 매핑)  · MedKOS 기존 ECG 에셋: `assets/ecg/mitdb-100.json`\n- 신호 딥러닝 개론: PhysioNet Challenges"
+    "Resources": "- 데이터: https://physionet.org/content/mitdb/  · WFDB 파이썬: https://github.com/MIT-LCP/wfdb-python\n- AAMI EC57 표준(비트 5군 매핑)  · MedKOS 기존 ECG 에셋: `assets/ecg/mitdb-100.json`\n- 신호 딥러닝 개론: PhysioNet Challenges",
+    "My notes": "- **2026-07-12 완주 — 게이트 통과 ✅**: AAMI 5클래스 **macro-F1 = 0.8273** (≥ 0.80). 환자 단위 분리, 1D-CNN.\n- **클래스별 F1**: N 0.994 · V 0.978 · S 0.881 · F 0.840 · **Q 0.444**.\n- **약한 클래스와 이유**:\n  - **Q(미분류)**: test에 단 3개(support=3)뿐이라 한 개만 틀려도 F1이 요동친다 — 데이터 자체가 극소수라 통계적으로 불안정. 점수보다 \"희소 클래스는 지표가 못 미더움\"을 배우는 지점.\n  - **F(융합)·S(상심실성)**: N과 파형이 겹쳐 혼동행렬에서 일부가 N으로 흡수됨(F→N 25건, S 파형이 N과 유사). class_weight로 recall은 올렸으나(S recall 0.955) precision 손해.\n- **다음 개선 아이디어**(Exercises 3): 시프트·노이즈 증강으로 S·F 보강, Residual 블록으로 파형 표현력↑. 진급했으니 2주차(PTB-XL)와 병행 심화 예정."
    }
   }
  ]
