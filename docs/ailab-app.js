@@ -119,17 +119,42 @@
     renderQuests(host);
   }
 
-  // ── 심화 퀘스트(주차 밖 독립 트랙) ────────────────────────────────
+  // ── 심화 퀘스트(주차 밖 독립 트랙 · 결과 누적 + 다음 목표) ────────
   function renderQuests(host) {
     var quests = (DATA.cards || []).filter(function (c) { return c.kind === "quest"; });
     if (!quests.length) return;
     var box = el("div", "quest-box");
-    box.appendChild(el("h3", "wk-list-h", "🎯 심화 퀘스트 <span class='muted'>(주차 밖 독립 트랙 · 클릭 → 열림)</span>"));
+    box.appendChild(el("h3", "wk-list-h", "🎯 심화 퀘스트 <span class='muted'>(주차 밖 독립 트랙 · 결과가 쌓이고 다음 목표가 갱신됨)</span>"));
     quests.forEach(function (c) {
       var row = el("div", "wk-row");
-      row.appendChild(el("div", "wk-head",
-        '<span class="wk-goal">🎯 ' + esc(c.subtopic || c.topic) + "</span>" +
-        (c.level ? '<span class="muted wk-arch"> · ' + esc(c.level) + "</span>" : "")));
+      var head = '<span class="wk-goal">🎯 ' + esc(c.subtopic || c.topic) + "</span>";
+      if (c.status) head += '<span class="q-status q-' + esc(c.status) + '">' + esc(c.status) + "</span>";
+      row.appendChild(el("div", "wk-head", head));
+
+      if (c.baseline) row.appendChild(el("div", "q-line muted", "🏁 출발점: " + esc(c.baseline)));
+
+      // 이 퀘스트에 귀속된 실행 로그(결과) 목록
+      var runs = (DATA.cards || []).filter(function (x) { return x.kind === "log" && x.quest === c.id; });
+      runs.sort(function (a, b) { return String(a.step).localeCompare(String(b.step)); });
+      if (runs.length) {
+        var ul = el("div", "q-runs");
+        runs.forEach(function (r) {
+          var ok = r.passed ? "✅" : "•";
+          var line = ok + " <b>" + esc(r.step || r.split || "run") + "</b> " +
+            esc(r.metric || "") + " " + esc(r.value != null ? r.value : "") +
+            (r.note ? ' <span class="muted">— ' + esc(r.note) + "</span>" : "");
+          var rr = el("div", "q-run", line);
+          rr.style.cursor = "pointer";
+          rr.addEventListener("click", (function (id) { return function () { openCard(id); }; })(r.id));
+          ul.appendChild(rr);
+        });
+        row.appendChild(ul);
+      } else {
+        row.appendChild(el("div", "q-line muted", "🧪 실험 결과 아직 없음 — 첫 실험을 돌려 로그로 남기면 여기에 쌓입니다."));
+      }
+
+      if (c.nextGoal) row.appendChild(el("div", "q-next", "➡️ 다음 목표: " + esc(c.nextGoal)));
+
       var chips = el("div", "wk-chips");
       var b = el("button", "wk-chip", "🎯 퀘스트 열기");
       b.addEventListener("click", function () { openCard(c.id); });

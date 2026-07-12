@@ -44,6 +44,21 @@ python pipelines/export_search_web.py
 새 `.md` + `state/*.json` + `docs/` 번들을 **같은 커밋**에. 신규 해석 카드라 **claude/ 브랜치**에
 push(사용자 검수).
 
+## 진척 갱신 루프 (MedKOS에서 '결과 + 다음 목표'가 보이게 — 매우 중요)
+퀘스트는 한 번 만들고 끝이 아니라, 실험을 하나씩 하며 **갱신**된다. 사용자가 실험 결과를 주면:
+1. **결과를 퀘스트에 귀속시켜 로그**:
+   ```bash
+   python pipelines/ingest_run.py --quest <퀘스트id> --step "<실험명>" \
+     --week <출발점주차> --split inter --metric macro_f1 --value <값> \
+     --note "<한 줄 관찰>" --notebook notebooks/<파일>.ipynb
+   ```
+   → `content/ailab/logs/`에 `quest`·`step`이 붙은 로그가 쌓인다(같은 퀘스트의 다른 실험은
+   `step`이 달라 별도로 쌓인다). 지어내지 말 것 — 사용자가 준 실측값만.
+2. **퀘스트 카드의 `next_goal`을 다음 실험으로 갱신**(끝낸 실험은 `## 실험 큐`에서 ✅ 표시).
+   필요하면 `status`도 갱신(`done`이면 완료).
+3. **번들 재생성**: `export_ailab_web.py` → 홈페이지 🎯 심화 퀘스트에 **결과 목록 + 다음 목표**가
+   함께 뜬다.
+
 ## 주의
 - 퀘스트는 **열린 트랙**이라 게이트(target)가 없다. 진척은 `## 실험 큐`의 항목을 로그로 채우며
   쌓는다(매번 하나씩 — 완벽주의로 다 하려 하지 말 것).

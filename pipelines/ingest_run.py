@@ -56,8 +56,11 @@ def _metric_value_from_results(data: dict) -> tuple[str | None, float | None]:
     return None, None
 
 
-def find_existing(week: int, split: str) -> Path | None:
-    """같은 (week, split)의 기존 로그 카드 경로. 없으면 None(멱등 갱신용)."""
+def find_existing(week: int, split: str, step: str = "") -> Path | None:
+    """같은 (week, split, step)의 기존 로그 카드 경로. 없으면 None(멱등 갱신용).
+
+    step은 퀘스트 실험 구분자(같은 week·split이라도 실험이 다르면 다른 로그로 쌓인다).
+    """
     if not LOGS_DIR.exists():
         return None
     for p in sorted(LOGS_DIR.glob("*.md")):
@@ -66,7 +69,8 @@ def find_existing(week: int, split: str) -> Path | None:
             continue
         m = d.meta
         if m.get("kind") == "log" and str(m.get("week")) == str(week) \
-                and str(m.get("split", "")) == str(split):
+                and str(m.get("split", "")) == str(split) \
+                and str(m.get("step", "")) == str(step):
             return p
     return None
 
@@ -84,12 +88,19 @@ def render_card(meta: dict) -> str:
         "inter": "DS1/DS2 환자 단위 분리 — 실전 벤치마크(보통 더 낮게 나옴)",
     }.get(split, "")
 
+    step = meta.get("step", "")
+    quest = meta.get("quest", "")
+    label = (f"{quest} 실험" if quest else f"{meta['week']}주차 실행")
+    sub = f"{label} 로그 — {meta.get('task','')}"
+    sub += f" · {step}" if step else ""
+    sub += f" [{split}]"
+
     fm = [
         "---",
         f"id: {meta['id']}",
         "type: ailab",
         f"topic: {meta['topic']}",
-        f"subtopic: {meta['week']}주차 실행 로그 — {meta.get('task','')} [{split}]",
+        f"subtopic: {sub}",
         "kind: log",
         f"week: {meta['week']}",
         f"split: {split}",
@@ -100,6 +111,10 @@ def render_card(meta: dict) -> str:
         f"dataset: {t.get('dataset_key','')}",
         f"notebook: {meta.get('notebook','')}",
     ]
+    if quest:
+        fm.append(f"quest: {quest}")           # 이 실행이 어느 퀘스트에 귀속되나
+    if step:
+        fm.append(f"step: {step}")             # 퀘스트 실험 구분자(예: RR-hybrid)
     if meta.get("checkpoint"):
         fm.append(f"checkpoint: {meta['checkpoint']}")
     fm += [
@@ -125,13 +140,26 @@ def render_card(meta: dict) -> str:
     ]
     if meta.get("checkpoint"):
         body.append(f"- 💾 체크포인트: `{meta['checkpoint']}` (Drive는 파생물)")
+    if quest:
+        body.append(f"- 🎯 퀘스트: `{quest}`" + (f" · 실험 **{step}**" if step else ""))
+    if meta.get("note"):
+        body.append(f"- 📝 관찰: {meta['note']}")
     body += [
         "",
         "## Next",
-        "- 이 실행을 되돌아보는 심화는 `/deepen-week`가 이 로그의 `notebook`을 **직접 읽어** 쓴다",
-        "  (glob 추정 대신 실제 코드 기준). 예측이 끼어들지 않는다.",
-        f"- `split: intra`로 통과했다면, `SPLIT=\"inter\"`로 한 번 더 돌려 실전 난이도를 로그로 남겨라",
-        "  (같은 주차·다른 split은 별도 로그로 쌓인다).",
+    ]
+    if quest:
+        body += [
+            f"- 이 결과는 퀘스트 `{quest}`에 쌓인다. 다음 목표는 퀘스트 카드의 `next_goal`을 갱신해 정한다",
+            "  (홈페이지 🎯 심화 퀘스트에 '결과 + 다음 목표'가 함께 뜬다).",
+        ]
+    else:
+        body += [
+            "- 이 실행을 되돌아보는 심화는 `/deepen-week`가 이 로그의 `notebook`을 **직접 읽어** 쓴다",
+            "  (glob 추정 대신 실제 코드 기준). 예측이 끼어들지 않는다.",
+            "- `split: intra`로 통과했다면, `SPLIT=\"inter\"`로 한 번 더 돌려 실전 난이도를 로그로 남겨라.",
+        ]
+    body += [
         "",
         "## My notes",
         "<!-- 이 실행에서 관찰한 것을 한 줄로. 다음 /deepen-week·/ai-mentor가 이어받는다. -->",
@@ -143,7 +171,8 @@ def render_card(meta: dict) -> str:
 def ingest(meta: dict, force_new: bool = False) -> Path:
     """로그 카드를 쓰고 경로를 반환. 같은 (week,split) 카드가 있으면 갱신(멱등)."""
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
-    existing = None if force_new else find_existing(meta["week"], meta.get("split", ""))
+    existing = None if force_new else find_existing(
+        meta["week"], meta.get("split", ""), meta.get("step", ""))
     if existing is not None:
         meta["id"] = load(existing).meta.get("id")  # id 유지(낭비·역행 방지)
         path = existing
@@ -151,7 +180,8 @@ def ingest(meta: dict, force_new: bool = False) -> Path:
         meta["id"] = next_id("ailab")
         path = LOGS_DIR / f"{meta['id']}.md"
     path.write_text(render_card(meta), encoding="utf-8")
-    record_topic("ailab", f"week{meta['week']} run {meta.get('split','')}")
+    tag = meta.get("quest") or f"week{meta['week']}"
+    record_topic("ailab", f"{tag} run {meta.get('step','') or meta.get('split','')}")
     return path
 
 
@@ -186,6 +216,10 @@ def build_meta(args) -> dict:
         "topic": "Medical AI Lab",   # 실행 로그의 대주제(검색·연결 기준)
         "date": args.date or data.get("date") or date.today().isoformat(),
         "related": [r for r in (args.related or "").split(",") if r.strip()],
+        # 퀘스트 실험이면 그 퀘스트에 귀속(홈페이지가 결과를 퀘스트 아래로 모은다).
+        "quest": args.quest or data.get("quest", ""),
+        "step": args.step or data.get("step", ""),
+        "note": args.note or data.get("note", ""),
     }
 
 
@@ -203,8 +237,11 @@ def main() -> int:
     ap.add_argument("--checkpoint", help="베스트 가중치 위치(예: drive:MedKOS/...)")
     ap.add_argument("--related", help="쉼표로 구분한 관련 카드 id")
     ap.add_argument("--date", help="실행일(ISO, 없으면 오늘)")
+    ap.add_argument("--quest", help="이 실행이 귀속될 퀘스트 카드 id(예: ailab-2026-0011)")
+    ap.add_argument("--step", help="퀘스트 실험 이름(예: 'RR-hybrid') — 같은 퀘스트의 실험 구분자")
+    ap.add_argument("--note", help="한 줄 관찰(예: 'inter S-F1 0.18→0.46')")
     ap.add_argument("--force-new", action="store_true",
-                    help="같은 (week,split) 로그가 있어도 새 카드로 발급")
+                    help="같은 (week,split,step) 로그가 있어도 새 카드로 발급")
     args = ap.parse_args()
 
     meta = build_meta(args)

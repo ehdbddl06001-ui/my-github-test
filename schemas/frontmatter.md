@@ -128,6 +128,20 @@ repo에 박아두는 것이 목적이다. `content/ailab/logs/ailab-YYYY-NNNN.md
 섹션 골격: `## Overview` → `## 왜 독립 퀘스트인가` → `## 문제 정의` → `## 접근 로드맵` →
 `## Architecture`(도식) → `## 실험 큐` → `## Resources` → `## My notes`.
 
+퀘스트 진척을 홈페이지에서 보이게 하는 필드(전부 선택, 갱신형):
+
+| 필드 | 예시 | 설명 |
+|------|------|------|
+| `status` | `active` | `active`/`paused`/`done` — 퀘스트 상태 |
+| `baseline` | `inter macro 0.432 · S 0.179` | 출발점 수치(원천 로그에서) |
+| `next_goal` | `실험1 RR-hybrid → S 0.18을 0.4+로` | **이후 목표**(홈페이지에 크게 뜬다). 실험을 하나 끝낼 때마다 갱신 |
+
+**퀘스트 진척 루프**: 실험을 돌리면 `ingest_run.py --quest <퀘스트id> --step "<실험명>" --value <값>
+--split inter --note "<한 줄 관찰>"` 로 **로그를 퀘스트에 귀속**시킨다(로그 frontmatter에 `quest`·
+`step`이 붙는다). 홈페이지 🎯 심화 퀘스트 블록은 그 퀘스트에 귀속된 로그들을 **결과 목록**으로,
+카드의 `next_goal`을 **다음 목표**로 함께 보여준다. → "결과가 쌓이고 다음 목표가 갱신되는" 게
+MedKOS에서 그대로 보인다.
+
 ## 문제형(`kmle`/`usmle`) 추가 필수 필드
 
 | 필드 | 예시 | 설명 |

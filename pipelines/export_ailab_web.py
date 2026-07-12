@@ -93,6 +93,13 @@ def build_card(path: Path) -> dict | None:
         "metric": m.get("metric", "") or "",
         "value": m.get("value"),
         "passed": bool(m.get("passed", False)),
+        # 퀘스트 연결/진척 — 로그는 quest/step으로 귀속되고, 퀘스트 카드는 baseline/nextGoal을 보인다.
+        "quest": m.get("quest", "") or "",
+        "step": m.get("step", "") or "",
+        "note": m.get("note", "") or "",
+        "baseline": m.get("baseline", "") or "",
+        "nextGoal": m.get("next_goal", "") or "",
+        "status": m.get("status", "") or "",
         "sections": sections,
     }
 
