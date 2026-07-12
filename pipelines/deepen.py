@@ -44,6 +44,7 @@ AILAB_DIR = ROOT / "content" / "ailab"
 
 DEEPDIVE_KIND = "deepdive"   # 심화 카드의 frontmatter kind
 WEEKLY_KIND = "weekly"       # 원 실습 카드의 kind(심화의 원본)
+LOG_KIND = "log"             # 실제 실행 로그(ingest_run.py 산출) — 예측 대신 진짜 코드/수치
 
 
 def _int_or_none(v) -> int | None:
@@ -83,6 +84,36 @@ def card_for_week(week: int, kind: str = WEEKLY_KIND) -> str | None:
     return None
 
 
+def run_logs_for_week(week: int) -> list[dict]:
+    """그 주차의 **실제 실행 로그**(kind: log). 예측이 아니라 진짜 돌린 기록.
+
+    같은 주차에 split(intra/inter)별로 여러 개일 수 있어 리스트로 준다.
+    """
+    out = []
+    for d in _cards():
+        if d.meta.get("kind") == LOG_KIND and _int_or_none(d.meta.get("week")) == week:
+            m = d.meta
+            out.append({
+                "id": d.id,
+                "split": m.get("split", ""),
+                "metric": m.get("metric"),
+                "value": m.get("value"),
+                "passed": bool(m.get("passed", False)),
+                "notebook": m.get("notebook", ""),
+                "checkpoint": m.get("checkpoint", ""),
+            })
+    out.sort(key=lambda r: str(r["split"]))
+    return out
+
+
+def real_notebook_for_week(week: int) -> str | None:
+    """실행 로그가 기록한 **실제 노트북 경로**(glob 추정보다 우선). 없으면 None."""
+    for log in run_logs_for_week(week):
+        if log.get("notebook"):
+            return log["notebook"]
+    return None
+
+
 def completed_weeks() -> list[int]:
     """check_week가 완료 처리한 주차(오름차순)."""
     done = ailab_progress().get("done", {})
@@ -117,6 +148,8 @@ def work_order(week: int | None = None) -> dict | None:
         week = pending[0]
 
     t = topic_for_week(week)
+    logs = run_logs_for_week(week)
+    real_nb = real_notebook_for_week(week)
     return {
         "week": week,
         "total": TOTAL_WEEKS,
@@ -128,8 +161,13 @@ def work_order(week: int | None = None) -> dict | None:
         "modality": t["modality"],
         # 심화의 '원본' — 이 카드와 대응 노트북을 읽어 A~E를 쓴다.
         "source_card": card_for_week(week),
+        # 예측 방지: 실행 로그가 있으면 **실제로 돌린 노트북**을, 없으면 glob 추정을 가리킨다.
+        "notebook": real_nb or f"notebooks/ailab_week{week:02d}_*.ipynb",
+        "notebook_is_real": real_nb is not None,
         "notebook_hint": f"notebooks/ailab_week{week:02d}_*.ipynb",
-        # 통과 당시 기록(정직한 출발점: '무엇으로' 통과했는지)
+        # 실제 실행 로그(split별). 심화는 이걸 정직한 출발점으로 삼는다.
+        "run_logs": logs,
+        # 통과 당시 기록(state 게이트). 로그가 있으면 로그가 더 정확하다.
         "achieved": achieved(week),
         "already_deepened": week in deepdive_weeks(),
         "queue": pending_deepdives(),
@@ -144,10 +182,19 @@ def _print_order(wo: dict) -> None:
     print(f"  📦 데이터: {wo['dataset_name']}  🔗 {wo['dataset_url']}")
     print(f"  🏁 통과 당시: {got}  ({a.get('date') or '?'})")
     print(f"  📄 원본 카드: {wo['source_card'] or '(없음)'}")
-    print(f"  📓 노트북: {wo['notebook_hint']}")
+    if wo["notebook_is_real"]:
+        print(f"  📓 노트북(실측): {wo['notebook']}  ← 실행 로그가 가리키는 진짜 코드")
+    else:
+        print(f"  📓 노트북(추정): {wo['notebook']}  ⚠️ 실행 로그 없음 → 예측 위험. "
+              f"ingest_run.py로 실제 노트북을 등록하라")
+    if wo["run_logs"]:
+        print("  🧪 실행 로그:")
+        for r in wo["run_logs"]:
+            mark = "✅" if r["passed"] else "❌"
+            print(f"     {mark} [{r['split']}] {r['metric']}={r['value']}  ({r['id']})")
     print(f"  {'⚠️ 이미 심화됨' if wo['already_deepened'] else '🟢 아직 심화 안 됨(대상)'}")
     print(f"  📋 심화 대기 큐: {wo['queue'] or '없음(모두 심화 완료)'}")
-    print("\n  다음: `/deepen-week` 스킬이 이 주차의 카드·노트북을 읽어 A~E 심화 카드를 쓴다.")
+    print("\n  다음: `/deepen-week` 스킬이 이 주차의 카드·**실제 노트북**을 읽어 A~E 심화 카드를 쓴다.")
 
 
 def _print_queue() -> None:

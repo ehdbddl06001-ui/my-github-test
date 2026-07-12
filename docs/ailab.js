@@ -485,6 +485,35 @@ window.AILAB = {
     "Resources": "- 데이터: https://physionet.org/content/mitdb/  · WFDB 파이썬: https://github.com/MIT-LCP/wfdb-python\n- AAMI EC57 표준(비트 5군 매핑)  · MedKOS 기존 ECG 에셋: `assets/ecg/mitdb-100.json`\n- 신호 딥러닝 개론: PhysioNet Challenges",
     "My notes": "- **2026-07-12 완주 — 게이트 통과 ✅**: AAMI 5클래스 **macro-F1 = 0.8273** (≥ 0.80). 환자 단위 분리, 1D-CNN.\n- **클래스별 F1**: N 0.994 · V 0.978 · S 0.881 · F 0.840 · **Q 0.444**.\n- **약한 클래스와 이유**:\n  - **Q(미분류)**: test에 단 3개(support=3)뿐이라 한 개만 틀려도 F1이 요동친다 — 데이터 자체가 극소수라 통계적으로 불안정. 점수보다 \"희소 클래스는 지표가 못 미더움\"을 배우는 지점.\n  - **F(융합)·S(상심실성)**: N과 파형이 겹쳐 혼동행렬에서 일부가 N으로 흡수됨(F→N 25건, S 파형이 N과 유사). class_weight로 recall은 올렸으나(S recall 0.955) precision 손해.\n- **다음 개선 아이디어**(Exercises 3): 시프트·노이즈 증강으로 S·F 보강, Residual 블록으로 파형 표현력↑. 진급했으니 2주차(PTB-XL)와 병행 심화 예정."
    }
+  },
+  {
+   "id": "ailab-2026-0008",
+   "topic": "Medical AI Lab",
+   "subtopic": "1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [intra]",
+   "kind": "log",
+   "framework": "",
+   "arch": "",
+   "modality": "ecg",
+   "level": "",
+   "projectUrl": "",
+   "dataset": "mitdb",
+   "datasetUrl": "",
+   "colabUrl": "",
+   "notebook": "notebooks/week01_ecg_1dcnn.ipynb",
+   "week": 1,
+   "date": "2026-07-12",
+   "confidence": "high",
+   "tags": [
+    "ailab",
+    "run-log",
+    "week1",
+    "intra",
+    "macro_f1"
+   ],
+   "sections": {
+    "Overview": "**1주차 실습을 실제로 돌린 결과 기록.** 이 카드는 결정론적으로\n`pipelines/ingest_run.py`가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님).\n\n- 🎯 과제: ECG 1D-CNN (MIT-BIH AAMI 5-class)\n- 📓 노트북: `notebooks/week01_ecg_1dcnn.ipynb`\n- 🔀 분할: **intra** — 무작위 분할(같은 환자가 train/test에 섞임) — 파이프라인 통과용, 낙관적\n- 🏁 결과: **macro_f1 = 0.8273** → ✅ 통과 (게이트 macro_f1 ≥ 0.8)\n- 💾 체크포인트: `drive:MedKOS/ailab/week01/week01_best.keras` (Drive는 파생물)",
+    "Next": "- 이 실행을 되돌아보는 심화는 `/deepen-week`가 이 로그의 `notebook`을 **직접 읽어** 쓴다\n  (glob 추정 대신 실제 코드 기준). 예측이 끼어들지 않는다.\n- `split: intra`로 통과했다면, `SPLIT=\"inter\"`로 한 번 더 돌려 실전 난이도를 로그로 남겨라\n  (같은 주차·다른 split은 별도 로그로 쌓인다)."
+   }
   }
  ]
 };

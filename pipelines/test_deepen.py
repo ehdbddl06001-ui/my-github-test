@@ -15,7 +15,7 @@ import sys
 
 from deepen import (
     completed_weeks, deepdive_weeks, pending_deepdives, work_order,
-    card_for_week, achieved,
+    card_for_week, achieved, run_logs_for_week, real_notebook_for_week,
 )
 from state import ailab_progress
 
@@ -58,12 +58,28 @@ def test_forced_week_and_fields() -> None:
     assert wo["source_card"] == card_for_week(w)
 
 
+def test_run_log_beats_glob() -> None:
+    # 실행 로그가 있는 주차는 work_order가 '실제 노트북'을 가리켜야 한다(예측 방지).
+    logged = [w for w in completed_weeks() if run_logs_for_week(w)]
+    if not logged:
+        return  # 아직 실행 로그가 없으면 검증 생략
+    w = logged[0]
+    wo = work_order(w)
+    assert wo["notebook_is_real"] is True, "실행 로그가 있는데 notebook_is_real이 False"
+    assert wo["notebook"] == real_notebook_for_week(w), "work_order 노트북이 로그와 불일치"
+    assert wo["notebook"] and not wo["notebook"].endswith("*.ipynb"), "실측인데 glob을 가리킴"
+    # run_logs의 각 항목은 지표·값을 갖는다
+    for r in wo["run_logs"]:
+        assert r["metric"] and r["value"] is not None, "실행 로그에 metric/value 누락"
+
+
 def main() -> int:
     tests = [
         test_queue_subset_of_completed,
         test_deepened_weeks_excluded,
         test_work_order_picks_earliest,
         test_forced_week_and_fields,
+        test_run_log_beats_glob,
     ]
     failed = 0
     for t in tests:

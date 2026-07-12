@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 225,
+  "total": 226,
   "byType": {
-   "ailab": 7,
+   "ailab": 8,
    "paper": 66,
    "kmle": 107,
    "usmle": 42,
@@ -47,15 +47,35 @@ window.MEDKOS_INDEX = {
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
+   "Medical AI Lab": 1,
    "Medical Imaging AI": 1
   },
   "byConfidence": {
-   "medium": 69,
-   "high": 156
+   "high": 157,
+   "medium": 69
   },
-  "tagCount": 550
+  "tagCount": 555
  },
  "docs": [
+  {
+   "id": "ailab-2026-0008",
+   "type": "ailab",
+   "topic": "Medical AI Lab",
+   "subtopic": "1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [intra]",
+   "tags": [
+    "ailab",
+    "run-log",
+    "week1",
+    "intra",
+    "macro_f1"
+   ],
+   "source": "MedKOS AI랩 실행 로그(ingest_run.py) · 실제 노트북 실행 결과",
+   "confidence": "high",
+   "date": "2026-07-12",
+   "path": "content/ailab/logs/ailab-2026-0008.md",
+   "snippet": "Overview 1주차 실습을 실제로 돌린 결과 기록. 이 카드는 결정론적으로 pipelines/ingest run.py 가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님). 🎯 과제: ECG 1D CNN (MIT BIH AAMI 5 class) 📓 노트북: notebooks/week01 ecg 1dcnn.ipynb 🔀 분할: intra — 무작위 분할(같은 환자가 train/test에 섞임) — 파이프라인 통과용, 낙관",
+   "text": "Medical AI Lab 1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [intra] ailab run-log week1 intra macro_f1 MedKOS AI랩 실행 로그(ingest_run.py) · 실제 노트북 실행 결과 Overview 1주차 실습을 실제로 돌린 결과 기록. 이 카드는 결정론적으로 pipelines/ingest run.py 가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님). 🎯 과제: ECG 1D CNN (MIT BIH AAMI 5 class) 📓 노트북: notebooks/week01 ecg 1dcnn.ipynb 🔀 분할: intra — 무작위 분할(같은 환자가 train/test에 섞임) — 파이프라인 통과용, 낙관적 🏁 결과: macro f1 = 0.8273 → ✅ 통과 (게이트 macro f1 ≥ 0.8) 💾 체크포인트: drive:MedKOS/ailab/week01/week01 best.keras (Drive는 파생물) Next 이 실행을 되돌아보는 심화는 /deepen week 가 이 로그의 notebook 을 직접 읽어 쓴다 (glob 추정 대신 실제 코드 기준). 예측이 끼어들지 않는다. split: intra 로 통과했다면, SPLIT=\"inter\" 로 한 번 더 돌려 실전 난이도를 로그로 남겨라 (같은 주차·다른 split은 별도 로그로 쌓인다). My notes <! 이 실행에서 관찰한 것을 한 줄로. 다음 /deepen week·/ai mentor가 이어받는다."
+  },
   {
    "id": "ailab-2026-0007",
    "type": "ailab",
