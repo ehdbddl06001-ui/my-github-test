@@ -1,35 +1,35 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-10",
+ "generated": "2026-07-12",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 214,
+  "total": 224,
   "byType": {
+   "paper": 66,
    "kmle": 107,
    "usmle": 42,
-   "paper": 56,
    "ailab": 6,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 25,
-   "Nephrology": 17,
-   "Infectious Disease": 16,
-   "Pediatrics": 15,
+   "Cardiology": 27,
+   "Nephrology": 18,
+   "Infectious Disease": 17,
+   "Pediatrics": 16,
    "Obstetrics & Gynecology": 10,
+   "Pathology": 10,
    "Neurology": 9,
-   "Pathology": 9,
    "Psychiatry": 9,
+   "Surgery": 9,
    "Endocrinology": 8,
    "Gastroenterology": 7,
+   "Hematology-Oncology": 7,
+   "Laboratory Medicine": 7,
    "Pulmonology": 7,
-   "Surgery": 7,
    "Dermatology": 6,
    "General Surgery": 6,
-   "Hematology-Oncology": 6,
-   "Laboratory Medicine": 6,
    "Ophthalmology": 6,
    "Orthopedics": 6,
    "Physiology": 6,
@@ -50,12 +50,172 @@ window.MEDKOS_INDEX = {
    "Medical Signal AI": 1
   },
   "byConfidence": {
-   "high": 155,
-   "medium": 59
+   "medium": 68,
+   "high": 156
   },
   "tagCount": 546
  },
  "docs": [
+  {
+   "id": "paper-2026-0066",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / North American Spine Society journal",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0066_independent_and_combined_associations_of_cannabis_and_nicoti.md",
+   "snippet": "Title Independent and combined associations of cannabis and nicotine use with postoperative outcomes after cervical and lumbar interbody fusion: a retrospective cohort study Authors Hamad Christopher D, Wiener Joshua, Shahamatdar Soroush, G",
+   "text": "Surgery scraped pubmed PubMed / North American Spine Society journal Title Independent and combined associations of cannabis and nicotine use with postoperative outcomes after cervical and lumbar interbody fusion: a retrospective cohort study Authors Hamad Christopher D, Wiener Joshua, Shahamatdar Soroush, Golzar Autreen, Liu Timothy, Su Gabriel, Kittredge Andrew P, Patel Rahi, et al. Journal / DOI North American Spine Society journal · DOI: 10.1016/j.xnsj.2026.100915 · PMID: 42434720 https://pubmed.ncbi.nlm.nih.gov/42434720/ Abstract BACKGROUND CONTEXT: Cannabis use has increased substantially in the United States and is commonly perceived to improve pain control and reduce opioid requirements. However, its perioperative impact in spine surgery remains unclear, particularly when isolated from nicotine use. PURPOSE: To evaluate the independent and combined associations of cannabis and nicotine use with postoperative outcomes following cervical and lumbar interbody fusion. STUDY DESIGN/SETTING: Retrospective cohort study using the TriNetX Research Network, a federated national database of deidentified electronic health records from over 200 US healthcare organizations. PATIENT SAMPLE: A total of 144,488 adult patients undergoing primary anterior cervical discectomy and fusion or lumbar interbody fusion procedures between 2015 and 2022. OUTCOME MEASURES: Neurological complications, surgical complications (including infection and pseudoarthrosis), medical complications, pain and functional outcomes, psychiatric outcomes, opioid related outcomes, and healthcare utilization through 2 years postoperatively. METHODS: Substance use exposures were defined using ICD 10 codes within 2 years preoperatively and categorized as nonusers, nicotine only users, cannabis only users, or concurrent cannabis and nicotine users. Cannabis exposure was identified using cannabis related disorder codes or cannabis poisoning, and therefore reflects clinically documented problematic use rather than recreational cannabis behaviors. Multivariable logistic regression models adjusted for demographics, comorbidities, spine region, and surgical approach were used to estimate adjusted odds ratios (aORs) for outcomes. Pairwise intergroup comparisons and subgroup analyses by region and surgical approach were performed. RESULTS: Among 144,488 patients, 108,962 were nonusers (75.4%), 33,309 nicotine only users (23.1%), 540 cannabis only users (0.4%), and 1,677 concurrent users (1.2%). Cannabis only use was associated with higher odds of radiculopathy, cauda equina syndrome, chronic pain, myocardial infarction, acute respiratory failure, acute kidney injury, depression, opioid use disorder, and increased rehospitalization and emergency department utilization. Nicotineonly and concurrent use demonstrated broadly elevated risk across neurologic, surgical, medical, psychiatric, and utilization outcomes, including higher rates of infection, pseudoarthrosis, and opioid related complications. Across most domains, concurrent users exhibited the highest adjusted odds. Venous thromboembolism was not significantly associated with any exposure group. Findings were generally consistent across cervical and lumbar procedures, with stronger associations observed following anterior approaches. CONCLUSIONS: Cannabis related diagnoses were associated with higher odds of multiple adverse postoperative outcomes following spine fusion, particularly for pain, psychiatric, opioid related, and healthcare utilization endpoints. Rather than demonstrating an opioid sparing effect, documented cannabis related diagnoses appear to identify a subgroup of patients with increased perioperative vulnerability, especially when combined with nicotine use. These findings support routine preoperative screening, risk stratification, and targeted counseling regarding cannabis and nicotine use before elective spine fusion. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0065",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Endocrine",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0065_the_crumb_study_closed_loop_response_to_unannounced_mixed_an.md",
+   "snippet": "Title The CRUMB study: closed loop response to unannounced mixed and carbohydrates rich breakfasts. A randomized controlled crossover pilot study in a cohort of adolescents with type 1 diabetes Authors Lo Presti Donatella, Scirè Calabrisott",
+   "text": "Pediatrics scraped pubmed PubMed / Endocrine Title The CRUMB study: closed loop response to unannounced mixed and carbohydrates rich breakfasts. A randomized controlled crossover pilot study in a cohort of adolescents with type 1 diabetes Authors Lo Presti Donatella, Scirè Calabrisotto Salvatore, Tomaselli Letizia Grazia, Pezzino Giulia, Frasca Francesco, Baratta Roberto, Sciacca Laura, Latina Concetta, et al. Journal / DOI Endocrine · DOI: 10.1007/s12020 026 04705 5 · PMID: 42430041 https://pubmed.ncbi.nlm.nih.gov/42430041/ Abstract PURPOSE: Unannounced meals pose a major challenge to type 1 diabetes patients. This study compared the performance of two automated insulin delivery (AID) algorithms, the Medtronic MiniMed 780G's proportional integral derivative (PID) and the Tandem t: slim X2's model predictive control (MPC), following unannounced breakfasts (ClinicalTrials.gov identifier: NCT07455643, retrospectively registered the 3rd of February 2026). METHODS: In a randomized crossover study, we enrolled 20 children between 11 and 18 years using the MiniMed 780G or the Tandem t: slim X2 AID system. Endpoints included 2 hour and 4 hour blood glucose difference (ΔBG), glucose peak, time to peak, and time spent above (TAR), below (TBS), in range (TIR), and in tight range (TITR). Two meals were tested: a carbohydrate (CHO) meal and a mixed one, both containing 30 g of carbohydrates, and additional 15 g proteins for the mixed meal. Announced (AM) and unannounced (UM) meals were analyzed. RESULTS: AM, compared to UM, showed significant higher 2 hourΔBG; conversely 4 hourΔBG did not differ significantly. In CHO AM, algorithms were comparable. In mixed AM, PID gained lower peaks and TAR, with higher TIR and TITR. In UM, PID obtained lower 2 hourΔBG than MPC, with reduced peak, TAR, and improved TIR and TITR. Differences in 4 hourΔBG and time at peak were not significant. CONCLUSION: Both AID algorithms mitigated postprandial glycemia and returned glucose to baseline levels within 4 h without safety concerns. The PID demonstrated higher reactivity to unannounced meals, while performances were comparable when meal boluses were properly announced. GOV IDENTIFIER: NCT07455643. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0064",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in allergy",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0064_point_of_care_smell_testing_for_evaluation_of_olfactory_func.md",
+   "snippet": "Title Point of care smell testing for evaluation of olfactory function: a narrative review of clinical utility Authors Joshi Akshita, Ogbemudia Haley, Cruess Cailin, Livinski Alicia A, Hall Rosangele, Roback Ethan, Jain Jasmine, Sharma Aart",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Frontiers in allergy Title Point of care smell testing for evaluation of olfactory function: a narrative review of clinical utility Authors Joshi Akshita, Ogbemudia Haley, Cruess Cailin, Livinski Alicia A, Hall Rosangele, Roback Ethan, Jain Jasmine, Sharma Aarti, et al. Journal / DOI Frontiers in allergy · DOI: 10.3389/falgy.2026.1882615 · PMID: 42434765 https://pubmed.ncbi.nlm.nih.gov/42434765/ Abstract IMPORTANCE: Olfactory dysfunction (OD) is increasingly recognized as a clinically relevant biomarker for a wide range of health conditions, including neurodegenerative diseases, respiratory infections such as COVID 19, psychiatric disorders, and age related sensory decline. Despite its diagnostic value, olfactory testing remains underutilized in routine clinical care due to challenges related to test accessibility, cultural adaptability, cost and practical implementation. OBSERVATIONS: This narrative review provides a clinically focused synthesis of olfactory tests suitable for point of care (POC), focusing on their diagnostic accuracy, administration methods, user friendliness, and applicability across diverse clinical populations. Commonly used tests such as the University of Pennsylvania Smell Identification Test (UPSIT®) and Sniffin' Sticks® are discussed alongside emerging rapid screening tools, pediatric assessments, and culturally adapted tests. Attention is given to distinguishing screening tools from comprehensive diagnostic batteries and to the role of point of care (POC) testing in primary care, neurology, and otorhinolaryngology settings. Practical considerations including assessment time, workflow feasibility, and clinical decision pathways are also examined. This review emphasizes the translation of available psychophysical tests into a practical POC framework for real world clinical use. CONCLUSIONS AND RELEVANCE: Available olfactory tests vary substantially in diagnostic accuracy, feasibility, and clinical applicability, highlighting the importance of selecting tests based on clinical indication and practice setting. Brief POC tests are best positioned as screening tools, while comprehensive batteries remain necessary when diagnostic precision is required. The main contribution of this review is a clinically oriented framework that distinguishes screening from diagnostic testing and aligns test selection with adult and pediatric clinical scenarios, workflow constraints, and referral needs. A tiered clinical approach using rapid screening followed by targeted comprehensive testing may represent the most practical, cost and time effective strategy for integrating olfactory assessment into routine care. Broader implementation of clinically feasible olfactory testing may improve early disease detection, support clinical decision making, and enhance patient care across conditions associated with OD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0063",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Frontiers in oncology",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0063_an_interpretable_deep_learning_framework_for_intestinal_meta.md",
+   "snippet": "Title An interpretable deep learning framework for intestinal metaplasia detection in gastric histopathology images Authors Al Mohtaseb Alia, Alotaibi Fahad T, Alhatamleh Salem, Malkawi Hatem, Alishwait Amal, Aljehani Ala Meshal, Madain Rol",
+   "text": "Pathology scraped pubmed PubMed / Frontiers in oncology Title An interpretable deep learning framework for intestinal metaplasia detection in gastric histopathology images Authors Al Mohtaseb Alia, Alotaibi Fahad T, Alhatamleh Salem, Malkawi Hatem, Alishwait Amal, Aljehani Ala Meshal, Madain Rola, Amin Mohammad Journal / DOI Frontiers in oncology · DOI: 10.3389/fonc.2026.1808098 · PMID: 42434758 https://pubmed.ncbi.nlm.nih.gov/42434758/ Abstract BACKGROUND: Intestinal metaplasia (IM) is a precancerous gastric lesion that commonly develops in the setting of chronic gastric inflammation and represents a key step in gastric carcinogenesis. Delayed or inaccurate identification of IM may delay appropriate surveillance and clinical management, potentially increasing the risk of progression to gastric cancer. METHODS: In this study, we propose a deep learning based framework, termed CNXTGeM, for the automated detection of intestinal metaplasia in hematoxylin and eosin (H&E) stained gastric histopathology images. The model integrates a ConvNeXt Tiny backbone with Generalized Mean (GeM) pooling and Efficient Channel Attention (ECA) to enhance feature representation and discrimination of histopathological patterns associated with intestinal metaplasia. The framework was evaluated using 1,037 H&E stained gastric biopsy samples (516 IM and 521 controls) obtained from Elazığ Fethi Sekin City Hospital, with an 80/10/10 stratified patient level train/validation/test split to prevent data leakage. External validation was further performed using the publicly available GasHisSDB dataset (33,284 image patches). Model interpretability was assessed using three complementary gradient based visualization techniques: Grad CAM, Grad CAM++, and XGrad CAM. RESULTS: CNXTGeM outperformed the evaluated baseline deep learning models, including VGG16, VGG19, DenseNet121, and MobileNetV2, achieving an accuracy of 99.04%, precision of 98.08%, specificity of 98.11%, and an F1 score of 99.03%. Notably, the proposed framework achieved 100% sensitivity, representing an 8.51% improvement in recall over the baseline ConvNeXt model, which may help reduce missed IM cases in computer assisted histopathological assessment. On the external GasHisSDB dataset, CNXTGeM maintained robust performance (accuracy = 99.34%, F1 score = 99.31%), suggesting good generalization to an independent external dataset. Gradient based visualization analyses (Grad CAM, Grad CAM++, and XGrad CAM) indicated that the model consistently focused on histopathological regions relevant to inflammation related mucosal alterations. CONCLUSION: The proposed CNXTGeM framework demonstrates the potential to provide a reliable, efficient, and interpretable artificial intelligence based approach for computer assisted detection of intestinal metaplasia. By accurately identifying inflammation associated histopathological features, the model supports computer assisted histopathological assessment, reduces inter observer variability, and may facilitate digital pathology workflows for the assessment of intestinal metaplasia. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0062",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Future medicinal chemistry",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0062_lsd1_based_dual_target_inhibitors_as_emerging_anticancer_age.md",
+   "snippet": "Title LSD1 based dual target inhibitors as emerging anticancer agents: pharmacological perspectives and SAR exploration Authors Ghosh Pitam, Dhir Ryena, Sharma Dinki, Maity Subhadip, Bharti Sanjay Kumar, Asati Vivek Journal / DOI Future med",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Future medicinal chemistry Title LSD1 based dual target inhibitors as emerging anticancer agents: pharmacological perspectives and SAR exploration Authors Ghosh Pitam, Dhir Ryena, Sharma Dinki, Maity Subhadip, Bharti Sanjay Kumar, Asati Vivek Journal / DOI Future medicinal chemistry · DOI: 10.1080/17568919.2026.2699684 · PMID: 42434811 https://pubmed.ncbi.nlm.nih.gov/42434811/ Abstract LSD1 is a key epigenetic eraser that demethylates the histone proteins and regulates transcription. Overexpression of LSD1 drives the development of multiple cancers, such as prostate, breast, gastric, lung, colorectal cancers, and acute myeloid leukemia. Although several LSD1 inhibitors have shown promise for cancer therapy, monotherapy faces challenges such as low selectivity, high toxicity, and drug resistance. To overcome these drawbacks and achieve synergistic anticancer effects, researchers have focused on dual inhibitors that target LSD1 along with other oncogenic partners, including HDAC, EGFR, EZH2, tubulin, ERα, G9a, JmjC, DCN1, and SMOX. This review aims to provide recent design strategies and SAR for LSD1 based dual inhibitors, emphasizing the fusion of different LSD1 pharmacophore (tranylcypromine, pargyline, pyridine, 5 cyano 3 phenylindole, indole, benzyl/aryl piperazine, triazole dithiocarbamate and substituted triazole scaffold) with various heterocyclic and zinc binding cores such as hydroxamic acids, bipyridine, hydroxy quinoline to generate hybrids capable of inducing apoptosis, blocking cell cycle, differentiation. This review explores the pharmacological role of LSD1 in oncogenesis and offers structural and SAR insights to guide the design of LSD1 based dual inhibitors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0061",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of translational medicine",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0061_hospitalization_icu_admission_and_mortality_among_diabetic_p.md",
+   "snippet": "Title Hospitalization, ICU admission, and mortality among diabetic patients with inflammatory bowel disease receiving SGLT 2 inhibitors: a retrospective cohort study from the global collaborative network Authors Abdelhalim Omar, Youssef Moh",
+   "text": "Nephrology scraped pubmed PubMed / Annals of translational medicine Title Hospitalization, ICU admission, and mortality among diabetic patients with inflammatory bowel disease receiving SGLT 2 inhibitors: a retrospective cohort study from the global collaborative network Authors Abdelhalim Omar, Youssef Mohammed Y, Al Lababidi Sawsan, Eldesouki Mohamed H, Mohamed Ahmed, Abusuliman Mohammed, Nassar Mahmoud, Abushanab Mohammad, et al. Journal / DOI Annals of translational medicine · DOI: 10.21037/atm 2026 0131 · PMID: 42434776 https://pubmed.ncbi.nlm.nih.gov/42434776/ Abstract BACKGROUND: Patients with coexisting type 2 diabetes mellitus (T2DM) and inflammatory bowel disease (IBD) represent a high risk population with competing comorbidities, complex medication regimens, and overlapping inflammatory pathways. Although the role of sodium glucose co transporter 2 (SGLT2) inhibitors in managing type 2 diabetes is well established, their impact on outcomes in diabetic patients with coexisting IBD remains unclear. This study aimed to investigate the association between SGLT2i use and hospitalization, intensive care unit (ICU) admission, mortality, IBD related complications, and surgical procedures in diabetic patients with IBD. METHODS: We conducted a retrospective cohort study using the TriNetX Global Collaborative Network. Cohort 1 comprised diabetic patients with IBD who received SGLT2 inhibitors with at least three dispensations within one year of IBD diagnosis, and Cohort 2 comprised diabetic patients with IBD never prescribed SGLT2i, matched on baseline characteristics, comorbidities, IBD specific medications, and laboratory values, yielding 3,950 patients per cohort. Clinical outcomes were evaluated at 1 and 5 years following the index event. RESULTS: At 1 year, hospitalization, ICU admission, and mortality were significantly lower in Cohort 1 [risk ratio (RR): 0.886, P<0.001; RR: 0.851, P=0.03; and RR: 0.525, P<0.001, respectively]. Kaplan Meier analysis demonstrated improved survival in Cohort 1 [94.27% vs. 88.76%, P<0.001; hazard ratio (HR): 0.490]. IBD related complications and surgical procedures were also significantly reduced (RR: 0.879, P=0.004 and RR: 0.548, P=0.02, respectively). At 5 years, hospitalization, ICU admission, and mortality remained significantly lower in Cohort 1 (RR: 0.932, P=0.002; RR: 0.848, P=0.003; and RR: 0.545, P<0.001, respectively). Kaplan Meier analysis continued to demonstrate improved survival in Cohort 1 (85.01% vs. 74.95%, P<0.001; HR: 0.532), whereas IBD related complications and surgical procedures were numerically lower but no longer statistically significant (RR: 0.954, P=0.18 and RR: 0.741, P=0.15, respectively). CONCLUSIONS: SGLT2i therapy in diabetic patients with IBD was associated with reduced hospitalization, ICU admission, and mortality, with persistent benefits observed at both 1 and 5 years of follow up. Reductions in IBD related complications and surgical procedures were observed, particularly at 1 year. These findings suggest a potential disease modifying role warranting further prospective investigation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0060",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0060_patterns_and_outcomes_of_surgically_treated_non_traumatic_ac.md",
+   "snippet": "Title Patterns and Outcomes of Surgically Treated Non traumatic Acute Abdomen in a Teaching Hospital in Nigeria: A 10 Year Retrospective Study Authors Afolabi Oluwatosin G, Adegbamigbe Adedamola B, Oluwajuyigbe Mayowa E, Okunlola Abiodun I ",
+   "text": "Infectious Disease scraped pubmed PubMed / Cureus Title Patterns and Outcomes of Surgically Treated Non traumatic Acute Abdomen in a Teaching Hospital in Nigeria: A 10 Year Retrospective Study Authors Afolabi Oluwatosin G, Adegbamigbe Adedamola B, Oluwajuyigbe Mayowa E, Okunlola Abiodun I Journal / DOI Cureus · DOI: 10.7759/cureus.110608 · PMID: 42434652 https://pubmed.ncbi.nlm.nih.gov/42434652/ Abstract AIM/OBJECTIVE: This study aimed to investigate the epidemiology, clinical patterns, and outcomes of surgically treated non traumatic acute abdomen in a Nigerian teaching hospital, identifying key predictors of morbidity and mortality. MATERIALS AND METHODS: This retrospective study, conducted from 2014 to 2024 at Federal Teaching Hospital, Ido Ekiti, Nigeria, included 611 patients undergoing surgery for non traumatic acute abdomen. Obstetric, gynecological, pediatric, traumatic, or conservatively managed cases were excluded. Data on demographics, diagnoses, complications, and outcomes were collected from medical records and analyzed using IBM SPSS Statistics for Windows, version 21.0. Logistic regression identified predictors of adverse outcomes, with significance set at p < 0.05. RESULTS: Non traumatic acute abdomen accounted for 16.94% (611/3,605) of surgical operations. The cohort (51.06% male, 312/611; 48.93% female, 299/611; mean age 39.70 years) predominantly comprised younger patients (18 27 years, 35.19%, 215/611). Acute appendicitis (51.06%, 312/611), intestinal obstruction (30.61%, 187/611), and perforation (13.75%, 84/611) were the leading diagnoses. Complications occurred in 21.77% (133/611) of cases, primarily wound infection (29.29%, 39/133), sepsis (13.74%, 18/133), and chest infection (9.00%, 12/133). Mortality was 9.98% (61/611), mainly due to septic shock (52.46%, 32/61) and fecal fistula (19.67%, 12/61). Fever, comorbidities, delayed presentation ( 7 days), and referred status were significant predictors of adverse outcomes, as detailed in the multivariate analysis. CONCLUSION: Non traumatic acute abdomen carries a high burden in Nigeria, driven largely by appendicitis, bowel obstruction, and visceral perforation. Outcomes are worsened by delays at several points along the care pathway, from late recognition of symptoms and delayed decisions to seek care, to prolonged transit to facilities and protracted waits for diagnosis and surgery once patients arrive. These cumulative delays, compounded by systemic infection and coexisting comorbidities, escalate morbidity and mortality, underscoring the need for earlier presentation, faster diagnostic access, and timely surgical intervention. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0059",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Future cardiology",
+   "confidence": "medium",
+   "date": "2026-07-11",
+   "path": "content/papers/2026/2026-07-11_paper-2026-0059_feasibility_of_pulsed_field_ablation_for_ventricular_arrhyth.md",
+   "snippet": "Title Feasibility of pulsed field ablation for ventricular arrhythmia: a systematic review Authors Irnizarifka Irnizarifka, Tristan Christopher Daniel, Budiono Enrico Ananda, Wijayanto Matthew Aldo, Tanudjaya Immanuel Soni, Pranata Raymond,",
+   "text": "Cardiology scraped pubmed PubMed / Future cardiology Title Feasibility of pulsed field ablation for ventricular arrhythmia: a systematic review Authors Irnizarifka Irnizarifka, Tristan Christopher Daniel, Budiono Enrico Ananda, Wijayanto Matthew Aldo, Tanudjaya Immanuel Soni, Pranata Raymond, Iqbal Mohammad Journal / DOI Future cardiology · DOI: 10.1080/14796678.2026.2699788 · PMID: 42434806 https://pubmed.ncbi.nlm.nih.gov/42434806/ Abstract INTRODUCTION: Beyond its efficacy on atrial fibrillation, pulsed field ablation (PFA) presents potential advantages in ventricular arrhythmia. This study sought to investigate the feasibility of PFA for ventricular tachycardia (VT) and premature ventricular complexes (PVC). METHOD: A systematic search (Scopus, PubMed, and Science Direct) with citation searching was performed on 9 January 2026. Studies evaluating the feasibility of PFA in VT and PVC were included. RESULT: This study included seven studies (74 patients with VT and 86 with PVC). Pooled acute procedural success rate in VT was 0.92 (95% CI: 0.86 0.99) and in the PVC was 0.93 (95% CI: 0.86 1.00). During follow up, VT recurrence rates ranged from 20% to 54%. PVC ablation demonstrated a significant burden reduction (MD: 86.54%; 95% CI: 59.21 113.86; p = 0.005) with long term success rates ranging from 50% to 85%. Safety evaluation demonstrated satisfactory outcomes, with major adverse cardiovascular events (MACE) during follow up occurring in four patients with high risk comorbidity. Major adverse events (AEs) occurred in 11 patients and were preventable; minor AEs consisted solely of vascular access site AEs. CONCLUSION: PFA was feasible for VT and PVC ablation. Larger long term studies and standardized protocol were urgently necessary to ensure efficacy with minimal AEs. PROTOCOL REGISTRATION: www.crd.york.ac.uk/prospero identifier is CRD420251272352. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0058",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+   "confidence": "medium",
+   "date": "2026-07-10",
+   "path": "content/papers/2026/2026-07-10_paper-2026-0058_nodal_staging_in_endometrial_cancer_quality_of_life_patient_.md",
+   "snippet": "Title Nodal staging in endometrial cancer: quality of life, patient reported outcomes, and survivorship Authors Buda Alessandro, Bollino Michele, Mauro Jessica, Casarin Jvan, Viveros Carreno David Journal / DOI International journal of gyne",
+   "text": "Surgery scraped pubmed PubMed / International journal of gynecological cancer : official journal of the International Gynecological Cancer Society Title Nodal staging in endometrial cancer: quality of life, patient reported outcomes, and survivorship Authors Buda Alessandro, Bollino Michele, Mauro Jessica, Casarin Jvan, Viveros Carreno David Journal / DOI International journal of gynecological cancer : official journal of the International Gynecological Cancer Society · DOI: 10.1016/j.ijgc.2026.104787 · PMID: 42430890 https://pubmed.ncbi.nlm.nih.gov/42430890/ Abstract OBJECTIVES: To evaluate quality of life, patient reported outcomes, and survivorship after different nodal staging strategies in endometrial cancer, with a focus on lower extremity lymphedema after sentinel lymph node mapping versus lymphadenectomy. METHODS: A systematic literature search was performed according to the Preferred Reporting Items for Systematic Reviews and Meta Analyses checklist. MEDLINE (through PubMed), Embase, and Scopus were searched for studies published from 2010 to 2025. Eligible studies included women with endometrial cancer who underwent surgical nodal staging with sentinel lymph node mapping, lymphadenectomy, or combined approaches and reported validated quality of life or patient reported outcomes. RESULTS: Nine comparative studies including 3298 patients treated between 2006 and 2023 were included. Sentinel lymph node mapping alone was performed in 1334 women, 1508 underwent lymphadenectomy with or without sentinel lymph node mapping, and 456 underwent hysterectomy alone. Patient reported lower extremity lymphedema was consistently less frequent after sentinel lymph node mapping than after lymphadenectomy. Reported lymphedema prevalence ranged from 2% to 36% after sentinel lymph node mapping versus 21% to 51% after lymphadenectomy. Studies using multi variable analyses consistently identified more extensive nodal dissection as an independent predictor of increased lymphatic morbidity. Global quality of life scores showed no consistent differences between nodal staging strategies; however, symptom specific and functional outcomes, particularly lower extremity symptoms and physical functioning, more often favored sentinel lymph node mapping. Considerable heterogeneity was observed in surgical approach, outcome measures, and timing of assessment. CONCLUSION: Although differences in global quality of life remain inconsistent, sentinel lymph node mapping appears to reduce patient reported lymphatic morbidity compared with more extensive nodal dissection. These findings support the integration of patient reported outcomes into nodal staging decision making and reinforce the survivorship advantages of less extensive surgical staging strategies in endometrial cancer. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0057",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Thrombosis research",
+   "confidence": "medium",
+   "date": "2026-07-10",
+   "path": "content/papers/2026/2026-07-10_paper-2026-0057_thrombus_formation_endogenous_fibrinolysis_and_atrial_fibril.md",
+   "snippet": "Title Thrombus formation, endogenous fibrinolysis and atrial fibrillation states in patients with ischaemic stroke: An assessment using global thrombosis test profiles Authors Chen Yang, Gue Ying, Elsheikh Sandra, Ditchfield Coleen, Koolaji",
+   "text": "Cardiology scraped pubmed PubMed / Thrombosis research Title Thrombus formation, endogenous fibrinolysis and atrial fibrillation states in patients with ischaemic stroke: An assessment using global thrombosis test profiles Authors Chen Yang, Gue Ying, Elsheikh Sandra, Ditchfield Coleen, Koolaji Sogol, Hill Andrew M, McDowell Garry, Gorog Diana A, et al. Journal / DOI Thrombosis research · DOI: 10.1016/j.thromres.2026.109772 · PMID: 42430877 https://pubmed.ncbi.nlm.nih.gov/42430877/ Abstract BACKGROUND: Atrial fibrillation (AF) is often first detected during or after ischaemic stroke (IS), yet many cases remain undetected. We evaluated whether thrombotic and fibrinolytic profiles vary with AF status in IS and whether these markers may help identify AF. METHODS: We conducted a prospective observational study of adults with confirmed IS, with blood sampling during index admission after withholding pre admission anticoagulant therapy where applicable. Patients were classified as AF or non AF, with AF subtyped as known AF (KAF, N = 20), AF detected concurrently with stroke (AFDCS, N = 10), or detected after stroke (AFDNCS, N = 6). Thrombotic status was assessed using Global Thrombosis Test derived occlusion time (OT) and lysis time (LT). Multivariable linear regression analyses were performed to account for demographic, clinical, and anticoagulant related factors. An exploratory cohort excluding KAF, AFDCS, and thrombolysis was used to evaluate AFDNCS prediction. RESULTS: 115 patients with IS (mean [SD] age: 68.5 ± 13.5 years; 57.4% male) were included. AF patients were older and had a higher burden of comorbidities, but most laboratory parameters were similar between groups. Despite normal coagulation tests, AF patients had longer OT than non AF patients (474 ± 214 vs. 373 ± 176 s, P = 0.009), while LT did not differ. OT varied significantly across AF states (P = 0.002), longest in KAF and shortest in AFDNCS, whereas LT did not differ. In multivariable analyses, the association between AF and longer OT was attenuated after accounting for prior anticoagulant exposure. In the exploratory cohort (N = 72) with 5 AFDNCS cases during 6 month follow up, OT showed discrimination for predicting AFDNCS (AUC = 0.737, 95% CI 0.620 0.834). CONCLUSIONS: We identify distinct haemostatic patterns across AF states in patients with IS. Short OT in patients with AFDNCS may identify a cohort at increased ischaemic risk of future events, and requires further study. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0137",
    "type": "kmle",
@@ -1220,11 +1380,11 @@ window.MEDKOS_INDEX = {
     "imbalanced"
    ],
    "source": "MedKOS AI랩 1주차 / PhysioNet MIT-BIH",
-   "confidence": "medium",
+   "confidence": "high",
    "date": "2026-07-08",
    "path": "content/ailab/ailab-2026-0005.md",
    "snippet": "Overview 커리큘럼 1주차 . 가장 가벼운 의료 딥러닝으로 신호 → 라벨 전 과정을 하루에 완주한다. 심전도(1D 신호) 한 비트를 보고 부정맥 유형을 맞히는 1D CNN 분류기 . 완료 게이트 : AAMI 5클래스 macro F1 ≥ 0.80 . 달성하면 check week.py 가 판정해 자동으로 2주차(PTB XL 12유도)로 넘어간다. → Gate 참조. 왜 이걸 1주차로 : 이미지보다 가볍고(1D), 오픈 데이터",
-   "text": "Medical Signal AI ECG Arrhythmia Classification (MIT-BIH) ECG arrhythmia 1D-CNN MIT-BIH AAMI imbalanced MedKOS AI랩 1주차 / PhysioNet MIT-BIH Overview 커리큘럼 1주차 . 가장 가벼운 의료 딥러닝으로 신호 → 라벨 전 과정을 하루에 완주한다. 심전도(1D 신호) 한 비트를 보고 부정맥 유형을 맞히는 1D CNN 분류기 . 완료 게이트 : AAMI 5클래스 macro F1 ≥ 0.80 . 달성하면 check week.py 가 판정해 자동으로 2주차(PTB XL 12유도)로 넘어간다. → Gate 참조. 왜 이걸 1주차로 : 이미지보다 가볍고(1D), 오픈 데이터라 바로 받으며, 전처리·불균형· 평가지표라는 핵심 3요소를 한 번에 만난다. 기존 접근 : MIT BIH는 부정맥 연구의 고전. AAMI EC57 표준으로 비트를 N/S/V/F/Q 5군으로 묶어 분류하는 것이 관례다. 고전 baseline은 1D CNN·RNN이며 비트 단위 정확도는 매우 높지만, 환자 단위 분리 를 하면 난도가 확 오른다(그래서 이 과제의 진짜 공부 포인트). Architecture 1D CNN = 이미지의 2D 합성곱을 시간축 1D 로 바꾼 것. 신호의 국소 파형(QRS 모양)을 훑어 비트 유형을 판단한다. mermaid flowchart LR A[\"한 비트\\n(R peak ±128 = 256 샘플, 1채널)\"] C1[\"Conv1D 32 + Pool\"] C1 C2[\"Conv1D 64 + Pool\"] C2 C3[\"Conv1D 128\"] C3 G[\"GlobalAveragePooling1D\"] G D[\"Dense 64 + Dropout\"] D O[\"Dense 5 + softmax\\n→ N·S·V·F·Q 확률\"] Data MIT BIH Arrhythmia (PhysioNet, 오픈, 48 레코드·2유도·360Hz). wfdb 로 직접 스트리밍. 비트 추출 : 주석(atr)의 R peak 위치 ±128 샘플을 한 비트로 자르고 비트별 z score 정규화. 라벨(AAMI 5군) : N(정상계열)·S(상심실성)·V(심실성)·F(융합)·Q(미분류). 심한 불균형 (N이 대부분) → 클래스 가중치로 보정. 환자 단위 분리 : 레코드를 train/test로 나눠 같은 환자가 양쪽에 섞이지 않게 한다 (섞이면 점수가 부풀려짐 — 임상 연구로 그대로 이어지는 핵심 개념). Code walkthrough 핵심만. 전체는 notebook (Colab)에서 실행한다. python 비트 하나 = R peak 양옆을 자른 256 샘플, 비트별 정규화 beat = ch[pos 128:pos+128] beat = (beat beat.mean()) / (beat.std() + 1e 6) 1D CNN from tensorflow.keras import layers, models model = models.Sequential([ layers.Input((256, 1)), layers.Conv1D(32, 7, activation=\"relu\"), layers.MaxPool1D(2), layers.Conv1D(64, 5, activation=\"relu\"), layers.MaxPool1D(2), layers.Conv1D(128, 3, activation=\"relu\"), layers.GlobalAveragePooling1D(), layers.Dense(64, activation=\"relu\"), layers.Dropout(0.3), layers.Dense(5, activation=\"softmax\"), ]) model.compile(optimizer=\"adam\", loss=\"sparse categorical crossentropy\", metrics=[\"accuracy\"]) model.fit(Xtr, ytr, validation split=0.1, epochs=8, class weight=cw) cw=클래스 가중치 평가: 불균형이라 accuracy가 아니라 macro F1로 본다 from sklearn.metrics import f1 score macro f1 = f1 score(yte, model.predict(Xte).argmax(1), average=\"macro\") Instructions 코드의 각 지시어가 뭘 시키는지(1D 버전). 지시어 무엇을 시키는가 왜 wfdb.rdsamp/rdann 신호와 R peak 주석을 읽어라 원신호 → 비트 조각의 원천 Conv1D(f, k) 길이 k 커널 f개로 시간축 국소 파형을 훑어라 QRS 모양 같은 국소 특징 MaxPool1D(2) 시간축 절반으로 요약 시야↑·계산량↓ GlobalAveragePooling1D 시간축 전체를 하나로 평균 가변 위치에 강건한 요약 Dropout(0.3) 학습 때 뉴런 30%를 끔 과적합 억제 softmax(5) 5클래스 확률을 내라 비트 유형 분류 class weight 드문 클래스에 가중치를 더 줘라 N 편중(불균형) 보정 — accuracy 함정 회피 f1 score(macro) 클래스별 F1의 단순평균으로 채점 불균형에서 소수 클래스도 공평히 평가 Gate 기준 : macro f1 ≥ 0.80 (AAMI 5클래스, 환자 단위 분리) 산출물 : 혼동행렬 + macro F1, 체크포인트를 Drive에 저장 판정/진급 : bash 노트북이 남긴 결과로 판정(통과 시 자동으로 2주차로) python pipelines/check week.py results week01 results.json 또는 값만 직접: python pipelines/check week.py value 0.83 통과가 애매하지만 개념을 충분히 이해했다면 /ai mentor 질적 리뷰 후 pass 로 승인 가능. Exercises 1. 완주 : Colab에서 끝까지 돌려 macro F1과 혼동행렬을 얻는다. 2. 관찰 : 어느 클래스가 약한가(보통 S·F)? 왜? 한 문단으로 My notes 에 적는다. 3. 개선 : (a) 시프트·노이즈 증강 (b) Residual 블록 (c) 에폭/학습률 조정 중 하나로 macro F1을 올려본다. 4. 진급 : 기준을 넘으면 check week.py 로 2주차(PTB XL)로 넘어간다. Resources 데이터: https://physionet.org/content/mitdb/ · WFDB 파이썬: https://github.com/MIT LCP/wfdb python AAMI EC57 표준(비트 5군 매핑) · MedKOS 기존 ECG 에셋: assets/ecg/mitdb 100.json 신호 딥러닝 개론: PhysioNet Challenges My notes <! 실습 결과(macro F1), 약한 클래스와 이유, 개선 시도와 효과를 적는다."
+   "text": "Medical Signal AI ECG Arrhythmia Classification (MIT-BIH) ECG arrhythmia 1D-CNN MIT-BIH AAMI imbalanced MedKOS AI랩 1주차 / PhysioNet MIT-BIH Overview 커리큘럼 1주차 . 가장 가벼운 의료 딥러닝으로 신호 → 라벨 전 과정을 하루에 완주한다. 심전도(1D 신호) 한 비트를 보고 부정맥 유형을 맞히는 1D CNN 분류기 . 완료 게이트 : AAMI 5클래스 macro F1 ≥ 0.80 . 달성하면 check week.py 가 판정해 자동으로 2주차(PTB XL 12유도)로 넘어간다. → Gate 참조. 왜 이걸 1주차로 : 이미지보다 가볍고(1D), 오픈 데이터라 바로 받으며, 전처리·불균형· 평가지표라는 핵심 3요소를 한 번에 만난다. 기존 접근 : MIT BIH는 부정맥 연구의 고전. AAMI EC57 표준으로 비트를 N/S/V/F/Q 5군으로 묶어 분류하는 것이 관례다. 고전 baseline은 1D CNN·RNN이며 비트 단위 정확도는 매우 높지만, 환자 단위 분리 를 하면 난도가 확 오른다(그래서 이 과제의 진짜 공부 포인트). Architecture 1D CNN = 이미지의 2D 합성곱을 시간축 1D 로 바꾼 것. 신호의 국소 파형(QRS 모양)을 훑어 비트 유형을 판단한다. mermaid flowchart LR A[\"한 비트\\n(R peak ±128 = 256 샘플, 1채널)\"] C1[\"Conv1D 32 + Pool\"] C1 C2[\"Conv1D 64 + Pool\"] C2 C3[\"Conv1D 128\"] C3 G[\"GlobalAveragePooling1D\"] G D[\"Dense 64 + Dropout\"] D O[\"Dense 5 + softmax\\n→ N·S·V·F·Q 확률\"] Data MIT BIH Arrhythmia (PhysioNet, 오픈, 48 레코드·2유도·360Hz). wfdb 로 직접 스트리밍. 비트 추출 : 주석(atr)의 R peak 위치 ±128 샘플을 한 비트로 자르고 비트별 z score 정규화. 라벨(AAMI 5군) : N(정상계열)·S(상심실성)·V(심실성)·F(융합)·Q(미분류). 심한 불균형 (N이 대부분) → 클래스 가중치로 보정. 환자 단위 분리 : 레코드를 train/test로 나눠 같은 환자가 양쪽에 섞이지 않게 한다 (섞이면 점수가 부풀려짐 — 임상 연구로 그대로 이어지는 핵심 개념). Code walkthrough 핵심만. 전체는 notebook (Colab)에서 실행한다. python 비트 하나 = R peak 양옆을 자른 256 샘플, 비트별 정규화 beat = ch[pos 128:pos+128] beat = (beat beat.mean()) / (beat.std() + 1e 6) 1D CNN from tensorflow.keras import layers, models model = models.Sequential([ layers.Input((256, 1)), layers.Conv1D(32, 7, activation=\"relu\"), layers.MaxPool1D(2), layers.Conv1D(64, 5, activation=\"relu\"), layers.MaxPool1D(2), layers.Conv1D(128, 3, activation=\"relu\"), layers.GlobalAveragePooling1D(), layers.Dense(64, activation=\"relu\"), layers.Dropout(0.3), layers.Dense(5, activation=\"softmax\"), ]) model.compile(optimizer=\"adam\", loss=\"sparse categorical crossentropy\", metrics=[\"accuracy\"]) model.fit(Xtr, ytr, validation split=0.1, epochs=8, class weight=cw) cw=클래스 가중치 평가: 불균형이라 accuracy가 아니라 macro F1로 본다 from sklearn.metrics import f1 score macro f1 = f1 score(yte, model.predict(Xte).argmax(1), average=\"macro\") Instructions 코드의 각 지시어가 뭘 시키는지(1D 버전). 지시어 무엇을 시키는가 왜 wfdb.rdsamp/rdann 신호와 R peak 주석을 읽어라 원신호 → 비트 조각의 원천 Conv1D(f, k) 길이 k 커널 f개로 시간축 국소 파형을 훑어라 QRS 모양 같은 국소 특징 MaxPool1D(2) 시간축 절반으로 요약 시야↑·계산량↓ GlobalAveragePooling1D 시간축 전체를 하나로 평균 가변 위치에 강건한 요약 Dropout(0.3) 학습 때 뉴런 30%를 끔 과적합 억제 softmax(5) 5클래스 확률을 내라 비트 유형 분류 class weight 드문 클래스에 가중치를 더 줘라 N 편중(불균형) 보정 — accuracy 함정 회피 f1 score(macro) 클래스별 F1의 단순평균으로 채점 불균형에서 소수 클래스도 공평히 평가 Gate 기준 : macro f1 ≥ 0.80 (AAMI 5클래스, 환자 단위 분리) 산출물 : 혼동행렬 + macro F1, 체크포인트를 Drive에 저장 판정/진급 : bash 노트북이 남긴 결과로 판정(통과 시 자동으로 2주차로) python pipelines/check week.py results week01 results.json 또는 값만 직접: python pipelines/check week.py value 0.83 통과가 애매하지만 개념을 충분히 이해했다면 /ai mentor 질적 리뷰 후 pass 로 승인 가능. Exercises 1. 완주 : Colab에서 끝까지 돌려 macro F1과 혼동행렬을 얻는다. 2. 관찰 : 어느 클래스가 약한가(보통 S·F)? 왜? 한 문단으로 My notes 에 적는다. 3. 개선 : (a) 시프트·노이즈 증강 (b) Residual 블록 (c) 에폭/학습률 조정 중 하나로 macro F1을 올려본다. 4. 진급 : 기준을 넘으면 check week.py 로 2주차(PTB XL)로 넘어간다. Resources 데이터: https://physionet.org/content/mitdb/ · WFDB 파이썬: https://github.com/MIT LCP/wfdb python AAMI EC57 표준(비트 5군 매핑) · MedKOS 기존 ECG 에셋: assets/ecg/mitdb 100.json 신호 딥러닝 개론: PhysioNet Challenges My notes 2026 07 12 완주 — 게이트 통과 ✅ : AAMI 5클래스 macro F1 = 0.8273 (≥ 0.80). 환자 단위 분리, 1D CNN. 클래스별 F1 : N 0.994 · V 0.978 · S 0.881 · F 0.840 · Q 0.444 . 약한 클래스와 이유 : Q(미분류) : test에 단 3개(support=3)뿐이라 한 개만 틀려도 F1이 요동친다 — 데이터 자체가 극소수라 통계적으로 불안정. 점수보다 \"희소 클래스는 지표가 못 미더움\"을 배우는 지점. F(융합)·S(상심실성) : N과 파형이 겹쳐 혼동행렬에서 일부가 N으로 흡수됨(F→N 25건, S 파형이 N과 유사). class weight로 recall은 올렸으나(S recall 0.955) precision 손해. 다음 개선 아이디어 (Exercises 3): 시프트·노이즈 증강으로 S·F 보강, Residual 블록으로 파형 표현력↑. 진급했으니 2주차(PTB XL)와 병행 심화 예정."
   },
   {
    "id": "ailab-2026-0004",
