@@ -45,6 +45,9 @@
 - `/ai-weekly` : 이번 주 실습 주제(`datasets.py`)를 받아 카드·Colab 노트북 연결(주간)
 - `/ai-mentor` : 학습(content/ailab·notebooks) 검토 → 심화학습·코드보완·새기능 제안을
   repo에 쌓이는 '논의 노트'(`content/ailab/mentor/`)로 남김. `## 내 답변`으로 왕복 토론
+- `/deepen-week` : **통과한 주차를 되돌아보며 심화 카드 생성**(주간 루틴 가능). 대상 선정
+  결정론은 `pipelines/deepen.py`(완료했지만 아직 안 판 주차를 자동 선택), 실습 카드·노트북을
+  실측해 A)무엇을 했나 B)문제점 C)대안 D)모델 심화 E)자율학습 로드맵을 `kind: deepdive` 카드로.
 - `/ai-debug` : Colab/ML 에러를 원인·최소수정·재발방지로 설명하고, 반복 에러는 '디버그
   로그' 카드(`content/ailab/`)에 쌓아 개인 트러블슈팅 FAQ로 축적
 - `/index-db` : 색인 재빌드/검증
