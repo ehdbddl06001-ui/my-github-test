@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 224,
+  "total": 229,
   "byType": {
+   "ailab": 11,
    "paper": 66,
    "kmle": 107,
    "usmle": 42,
-   "ailab": 6,
    "basic": 3
   },
   "byTopic": {
@@ -35,27 +35,137 @@ window.MEDKOS_INDEX = {
    "Physiology": 6,
    "Rheumatology": 6,
    "Hematology": 5,
+   "Medical AI Lab": 4,
    "Microbiology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
    "Allergy": 2,
    "Biochemistry": 2,
    "Immunology": 2,
+   "Medical Signal AI": 2,
    "AI Mentorship": 1,
    "Internal Medicine": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1,
-   "Medical Imaging AI": 1,
-   "Medical Signal AI": 1
+   "Medical Imaging AI": 1
   },
   "byConfidence": {
-   "medium": 68,
-   "high": 156
+   "medium": 70,
+   "high": 159
   },
-  "tagCount": 546
+  "tagCount": 572
  },
  "docs": [
+  {
+   "id": "ailab-2026-0011",
+   "type": "ailab",
+   "topic": "Medical AI Lab",
+   "subtopic": "심화 퀘스트 — 부정맥 inter-patient 일반화",
+   "tags": [
+    "quest",
+    "inter-patient",
+    "generalization",
+    "RR-interval",
+    "SMOTE",
+    "focal-loss",
+    "domain-adaptation",
+    "self-supervised",
+    "foundation-model",
+    "ECG"
+   ],
+   "source": "MedKOS AI랩 심화 퀘스트(/gen-quest) · 원천 ailab-2026-0010 inter 로그",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/ailab/quests/ailab-2026-0011.md",
+   "snippet": "Overview 1주차에서 진짜 문제 가 드러났다: 무작위(intra) macro F1 0.83이 환자분리(inter, de Chazal DS2)에서 0.346으로 붕괴 하고, 특히 S 0.87→0.18, F 0.82→0.005 로 죽는다(로그 ailab 2026 0010 ). 이건 1주차 숙제로 끝낼 문제가 아니라 논문급 열린 문제 라, 별도 심화 퀘스트로 큐에 넣는다. 목표: inter patient에서 S·F를 정직하게 ",
+   "text": "Medical AI Lab 심화 퀘스트 — 부정맥 inter-patient 일반화 quest inter-patient generalization RR-interval SMOTE focal-loss domain-adaptation self-supervised foundation-model ECG MedKOS AI랩 심화 퀘스트(/gen-quest) · 원천 ailab-2026-0010 inter 로그 Overview 1주차에서 진짜 문제 가 드러났다: 무작위(intra) macro F1 0.83이 환자분리(inter, de Chazal DS2)에서 0.346으로 붕괴 하고, 특히 S 0.87→0.18, F 0.82→0.005 로 죽는다(로그 ailab 2026 0010 ). 이건 1주차 숙제로 끝낼 문제가 아니라 논문급 열린 문제 라, 별도 심화 퀘스트로 큐에 넣는다. 목표: inter patient에서 S·F를 정직하게 끌어올리는 현대적 방법들을 하나씩 실측한다. 왜 독립 퀘스트인가 inter를 0.8까지 올리는 건 1주차 범위 밖이다 — 여러 방법·여러 논문 이 필요하다. 1주차 카드에 다 욱여넣으면 \"진도 리듬\"이 깨진다(스스로 경계한 완벽주의 패턴). 이 문제(환자 간 분포 이동 + 극심한 불균형 + 정보 부족)는 의료 AI의 본질적 난제 라, 트랙 하나를 통째로 줄 가치가 있다. 앞서 개념 카드( ailab 2026 0009 )의 발전사 끝에 있던 파운데이션 모델이 바로 이 문제를 겨냥 한다. 문제 정의 무엇 : MIT BIH AAMI 5클래스 비트 분류를 환자 단위 분리(de Chazal DS1 train / DS2 test) 에서. 지표 : N/S/V/F macro F1 (Q는 support 7로 무의미 → 제외). 출발점 = 0.432 (Q 제외 inter). 왜 어려운가 (3중고): 1. 분포 이동(domain shift) : 환자마다 파형 버릇이 달라, DS1에서 배운 게 DS2에 안 맞는다. 2. 정보 부족 : 비트 하나만 보면 S(상심실성)는 간격(RR) 없이 정상과 구분 불가. 3. 극심한 불균형 : F 388개·S 1837개 vs N 44238개. 단순 upsample은 누수(1주차 B 3에서 확인). 접근 로드맵 난이도 순. 각 방법이 위 3중고 중 무엇을 푸는지 와 근거를 붙였다. 하나씩 로그로. 1. RR 간격 feature 주입 (정보 부족) — 직전RR·직후RR·국소평균 대비 3값을 GAP 뒤에 concat. S의 본질이 \"빠른 박동\"이라 가장 큰 한 방 . 근거: de Chazal 2004(RR이 최상위 feature). 2. 불균형: SMOTE·focal loss·2단계 (불균형) — 단순 복원추출 대신 SMOTE (소수 클래스 합성)로 누수를 줄이거나, focal loss 로 어려운 소수 표본에 집중. 근거: Chawla 2002(SMOTE), Lin 2017(Focal Loss). 3. inter patient 전용 설계 (분포 이동) — (a) de Chazal식 수작업 feature (형태+RR+간격) 기반, (b) 도메인 적응 (adversarial DANN 등)으로 환자 불변 표현 학습. 근거: Ganin 2016(DANN). 4. Self supervised 사전학습 (정보 부족+분포 이동) — 라벨 없는 대량 ECG로 표현을 먼저 배우고 소량 라벨로 미세조정. 환자 간 대조학습 이 핵심. 근거: Kiyasseh 2021 CLOCS (환자·시간·공간 대조학습, 부정맥 일반화를 정조준). 5. ECG 파운데이션 모델 (전부) — 대규모 무라벨 사전학습 모델을 전이. 개념 카드 발전사의 종착점. 근거: Papers With Code의 ECG 사전학습·파운데이션 트렌드(아래 Resources). Architecture \"형태만 보는 1D CNN\"에서 \"환자 불변 + 문맥 + 사전지식\"으로 올라가는 사다리: mermaid flowchart TD BASE[\"1주차: 형태만 보는 1D CNN<br/ inter macro(N/S/V/F) 0.432\"] \"+RR 3값\" A1[\"1. RR hybrid<br/ (정보 부족 해소)\"] A1 \"+SMOTE/focal\" A2[\"2. 불균형 교정<br/ (누수 없는 소수 보강)\"] A2 \"+도메인적응\" A3[\"3. 환자 불변 표현<br/ (분포 이동 해소)\"] A3 \"무라벨 사전학습\" A4[\"4. Self supervised (CLOCS)\"] A4 \"대규모 전이\" A5[\"5. ECG 파운데이션 모델\"] 실험 큐 각 항목 = 노트북에서 돌릴 실험 + 합격 기준. 돌리면 ingest run.py 로 로그(예: split inter ). 1. RR hybrid — GAP 뒤 RR 3값 concat. 합격: inter S F1 0.18 → 0.4+ . 2. SMOTE vs focal — 둘을 각각 붙여 비교. 합격: F F1이 0.005 → 유의미( 0.2) . 3. de Chazal feature baseline — 수작업 feature + 얕은 분류기로 딥러닝과 대조. 합격: 재현·비교표. 4. 도메인 적응(DANN) — 환자 도메인 판별기를 적대적으로. 합격: inter macro RR hybrid . 5. CLOCS식 대조 사전학습 — 무라벨 사전학습 → 미세조정. 합격: 소량 라벨에서 이득 확인. 우선순위: 1 → 2 가 즉효(정보·불균형), 3~5 는 논문 재현 성격의 장기 과제. 한 번에 하나씩, 매번 실행 로그로. 완벽주의 금지. Resources RR/수작업 feature : de Chazal et al., IEEE TBME 2004 불균형 : Chawla et al. 2002 (SMOTE) · Lin et al. 2017 (Focal Loss, arXiv:1708.02002) 도메인 적응 : Ganin et al. 2016 (DANN, JMLR) Self supervised ECG : Kiyasseh et al. 2021, CLOCS (ICML) — 환자 간 대조학습 SOTA·파운데이션 추적 : Papers With Code — https://paperswithcode.com/task/ecg classification MedKOS 내부 : 원천 로그 ailab 2026 0010 · 심화 ailab 2026 0007 · 개념/발전사 ailab 2026 0009 My notes <! 각 실험(1~5) 결과를 한 줄씩. inter 로그(ingest run split inter)로도 남기면 자동으로 이어진다. 예: \"실험1 RR hybrid: inter S F1 0.18 → 0.46. RR이 결정적임을 확인.\""
+  },
+  {
+   "id": "ailab-2026-0010",
+   "type": "ailab",
+   "topic": "Medical AI Lab",
+   "subtopic": "1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [inter]",
+   "tags": [
+    "ailab",
+    "run-log",
+    "week1",
+    "inter",
+    "macro_f1"
+   ],
+   "source": "MedKOS AI랩 실행 로그(ingest_run.py) · 실제 노트북 실행 결과",
+   "confidence": "high",
+   "date": "2026-07-12",
+   "path": "content/ailab/logs/ailab-2026-0010.md",
+   "snippet": "Overview 1주차 실습을 실제로 돌린 결과 기록. 이 카드는 결정론적으로 pipelines/ingest run.py 가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님). 🎯 과제: ECG 1D CNN (MIT BIH AAMI 5 class) 📓 노트북: notebooks/week01 ecg 1dcnn.ipynb 🔀 분할: inter — DS1/DS2 환자 단위 분리 — 실전 벤치마크(보통 더 낮게 나옴) 🏁 결과: ",
+   "text": "Medical AI Lab 1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [inter] ailab run-log week1 inter macro_f1 MedKOS AI랩 실행 로그(ingest_run.py) · 실제 노트북 실행 결과 Overview 1주차 실습을 실제로 돌린 결과 기록. 이 카드는 결정론적으로 pipelines/ingest run.py 가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님). 🎯 과제: ECG 1D CNN (MIT BIH AAMI 5 class) 📓 노트북: notebooks/week01 ecg 1dcnn.ipynb 🔀 분할: inter — DS1/DS2 환자 단위 분리 — 실전 벤치마크(보통 더 낮게 나옴) 🏁 결과: macro f1 = 0.3456 → ❌ 미달 (게이트 macro f1 ≥ 0.8) 💾 체크포인트: drive:MedKOS/ailab/week01/week01 best.keras (Drive는 파생물) Next 이 실행을 되돌아보는 심화는 /deepen week 가 이 로그의 notebook 을 직접 읽어 쓴다 (glob 추정 대신 실제 코드 기준). 예측이 끼어들지 않는다. split: intra 로 통과했다면, SPLIT=\"inter\" 로 한 번 더 돌려 실전 난이도를 로그로 남겨라 (같은 주차·다른 split은 별도 로그로 쌓인다). My notes <! 이 실행에서 관찰한 것을 한 줄로. 다음 /deepen week·/ai mentor가 이어받는다."
+  },
+  {
+   "id": "ailab-2026-0009",
+   "type": "ailab",
+   "topic": "Medical AI Lab",
+   "subtopic": "내가 공부한 모델 이해하기 — CNN·학습용어·Keras vs PyTorch·발전사",
+   "tags": [
+    "CNN",
+    "deep-learning",
+    "val_accuracy",
+    "checkpoint",
+    "PyTorch",
+    "Keras",
+    "ResNet",
+    "Transformer",
+    "개념"
+   ],
+   "source": "MedKOS AI랩 개념 카드 · 교과서/공식문서 기반",
+   "confidence": "high",
+   "date": "2026-07-12",
+   "path": "content/ailab/ailab-2026-0009.md",
+   "snippet": "Overview 1주차에 돌린 게 정확히 어떤 모델인지 , 그리고 노트북에 나온 val accuracy · checkpoint · PyTorch 같은 말들이 뭔지, 나아가 이런 모델이 어떻게 발전해왔는지 를 한 장에 정리한다. 예시는 전부 네 노트북 week01 ecg 1dcnn.ipynb 에서 가져왔다(추상론이 아니라 네 코드로). 이 카드는 개념 참고서다 — 1주차에 걸어두었지만 2주차 이후에도 계속 돌아와 보는 용도. 내",
+   "text": "Medical AI Lab 내가 공부한 모델 이해하기 — CNN·학습용어·Keras vs PyTorch·발전사 CNN deep-learning val_accuracy checkpoint PyTorch Keras ResNet Transformer 개념 MedKOS AI랩 개념 카드 · 교과서/공식문서 기반 Overview 1주차에 돌린 게 정확히 어떤 모델인지 , 그리고 노트북에 나온 val accuracy · checkpoint · PyTorch 같은 말들이 뭔지, 나아가 이런 모델이 어떻게 발전해왔는지 를 한 장에 정리한다. 예시는 전부 네 노트북 week01 ecg 1dcnn.ipynb 에서 가져왔다(추상론이 아니라 네 코드로). 이 카드는 개념 참고서다 — 1주차에 걸어두었지만 2주차 이후에도 계속 돌아와 보는 용도. 내가 쓴 모델: CNN이란 네가 쓴 건 CNN(Convolutional Neural Network, 합성곱 신경망) , 그중 신호(1차원)용인 1D CNN 이다. 핵심 부품 4개만 알면 된다. Convolution(합성곱) / Kernel(커널·필터) : 작은 창(예: Conv1D(32, 13) 의 길이 13짜리) 하나를 신호 위로 미끄러뜨리며 국소 모양을 훑는다. \"이 구간이 QRS처럼 뾰족한가?\"를 재는 패턴 탐지기 . 32개면 32가지 패턴을 동시에 본다. Feature map(특징 지도) : 커널이 훑고 남긴 반응값의 배열. \"어디서 그 패턴이 강했나\"의 지도. Pooling(풀링, MaxPooling1D(2) ) : 특징 지도를 절반으로 요약 . 시야를 넓히고 계산을 줄이며 위치가 조금 달라도 견디게(translation invariance) 한다. 깊이(층 쌓기) : 앞층은 잔파형·기울기 같은 저수준 특징을, 뒷층은 그것들을 조합한 고수준 (비트 모양 전체)을 본다. 네 모델은 이걸 5번 쌓았다(32→64→128→256→512). 마지막에 GAP (시간축 평균)로 한 벡터로 접고, Dense(완전연결)+softmax 로 5개 클래스 확률을 낸다. 이미지용 2D CNN과 원리는 같고 축이 시간 1개 라는 것만 다르다. Architecture 네 1D CNN의 데이터 흐름(1주차 실측): mermaid flowchart LR X[\"비트 300샘플×1채널\"] C1[\"Conv1D 32·k13 +BN +Pool\"] C1 C2[\"Conv1D 64·k11 +BN +Pool\"] C2 C3[\"Conv1D 128·k9 +BN +Pool\"] C3 C4[\"Conv1D 256·k7 +BN +Pool\"] C4 C5[\"Conv1D 512·k5 +BN\"] C5 G[\"GlobalAveragePooling1D\"] G D[\"Dense 64 +Dropout 0.2\"] D O[\"Dense 5 + softmax → N·S·V·F·Q\"] 학습 용어 사전 (네 노트북 어디에 있나) CELL 6(학습)에서 쏟아진 말들의 뜻. \"어디서\" 칸이 네 코드의 위치다. 용어 뜻 네 노트북 어디서 epoch(에폭) 학습 데이터를 처음부터 끝까지 한 바퀴 도는 것 EPOCHS=40 — 최대 40바퀴 batch(배치) 한 번에 모델에 넣는 표본 묶음(가중치 1회 갱신 단위) batch size=128 loss(손실) \"얼마나 틀렸나\"의 숫자. 학습은 이걸 줄이는 방향 loss=\"sparse categorical crossentropy\" optimizer(옵티마이저) 손실을 줄이려 가중치를 어떻게 바꿀지의 규칙 optimizer=\"adam\" (가장 무난한 기본값) accuracy(정확도) 맞힌 비율. 불균형에선 함정(전부 N만 찍어도 높음) metrics=[\"accuracy\"] validation split / val\\ 학습셋 일부를 떼어 학습 중 채점 용으로. val 접두사가 그 점수 validation split=0.3 val accuracy 한 번도 학습에 안 쓴 검증셋에서의 정확도 EarlyStopping/체크포인트가 이걸 본다 overfitting(과적합) 학습셋만 외워 새 데이터에 약해짐. accuracy↑ 인데 val accuracy↓ 면 신호 Dropout·BN이 이걸 억제 checkpoint(체크포인트) 학습 도중 가장 좋은 순간의 가중치 를 파일로 저장 ModelCheckpoint(CKPT, monitor=\"val accuracy\", save best only=True) early stopping 검증 점수가 더 안 오르면 일찍 멈춤 (시간 절약·과적합 방지) EarlyStopping(patience=6, restore best weights=True) class weight 드문 클래스에 가중치를 더 줘 불균형 보정 CELL 4 (단, 균형화 후라 지금은 1.0=무효) accuracy vs val accuracy vs macro F1 (왜 셋을 구분하나) 같은 \"잘한다\"라도 어디서 재느냐 가 다르다. accuracy (train): 학습셋에서 맞힌 비율 → 외우기만 해도 높다. 믿으면 안 됨 . val accuracy : 학습 중 안 본 검증셋 → 과적합 감지·체크포인트 선택용. 네 로그에서 0.99까지 올랐다. macro F1 (test): 최종 시험. 클래스별 F1의 단순 평균 이라 소수 클래스(S·F·Q)도 공평히 본다. 그래서 accuracy 0.986인데 macro F1은 0.775 로 낮게 나온다(Q가 끌어내림). → 불균형 문제에선 게이트를 macro F1으로 잡는 이유 가 이것. 핵심: 체크포인트는 val accuracy 로 고르는데 게이트는 macro F1 으로 채점한다 → 기준이 어긋난다. 심화 카드( ailab 2026 0007 B 5)에서 \"체크포인트도 macro F1으로\"라고 짚은 게 이 얘기다. 프레임워크: Keras/TensorFlow vs PyTorch 둘 다 딥러닝을 짜는 라이브러리 다. 모델의 수학은 같고, 쓰는 문법 이 다르다. TensorFlow/Keras (네가 쓴 것): models.Sequential([...]) 처럼 레고 블록 쌓듯 간결. 입문· 프로토타입에 빠르다. model.fit() 한 줄로 학습 루프가 돈다. PyTorch : 학습 루프(순전파→손실→역전파→갱신)를 직접 for문으로 쓴다. 더 손이 가지만 내부가 투명 해 디버깅·연구에 강하다. 공개 의료 AI 구현의 대부분이 PyTorch 라(PhysioNet Challenge, timm, MONAI 등), 레포를 뜯어보려면 PyTorch를 읽을 줄 알아야 한다. 같은 한 층을 두 문법으로: python Keras layers.Conv1D(32, 13, padding=\"same\", activation=\"relu\") PyTorch (대응) import torch.nn as nn nn.Conv1d(in channels=1, out channels=32, kernel size=13, padding=\"same\"); nn.ReLU() → 2주차가 1D ResNet 이고 공개 구현이 PyTorch라, 한 번 포팅해두면 이후가 매끄럽다 (심화 카드 C 6). 모델은 어떻게 발전해왔나 (구조 발전사) 네 CNN은 큰 계보의 한 지점이다. 각 단계는 앞 단계의 한계를 풀며 나왔다. mermaid flowchart TD MLP[\"MLP(완전연결)<br/ 모든 픽셀을 한 줄로 → 위치정보 손실\"] \"국소 패턴을<br/ 공유 필터로\" CNN[\"CNN (LeNet·AlexNet)<br/ = 네가 쓴 것\"] CNN \"더 깊게\" VGG[\"VGG<br/ 깊이↑ 그러나 gradient 소실\"] VGG \"항등 지름길 F(x)+x\" RES[\"ResNet<br/ 안전하게 아주 깊게\"] CNN \"시간 순서를<br/ 기억\" RNN[\"RNN·LSTM<br/ 시퀀스·문맥(예: 리듬)\"] RES HYB[\"CRNN<br/ (CNN+RNN 결합)\"] RNN HYB HYB \"멀리 있는 것끼리<br/ 직접 연결(attention)\" TF[\"Transformer<br/ 병렬·장거리 문맥\"] TF \"대량 무라벨<br/ 사전학습\" FM[\"파운데이션 모델<br/ (자기지도·전이)\"] ECG로 구체화하면: 1D CNN(1주차) → 1D ResNet(2주차, PTB XL) → CRNN (형태+리듬) → ECG Transformer → ECG 파운데이션 모델 (대량 무라벨로 사전학습 후 소량 라벨 미세조정). 핵심 흐름 = \"국소 형태(CNN) → 더 깊이(ResNet) → 시간 문맥(RNN/Attention) → 라벨 없이 배우기\". 자료·구조도 (어디서 더 보나) 개념 교과서 : Dive into Deep Learning https://d2l.ai (코드로 배우는 무료 책, CNN·ResNet· Transformer 장) · Stanford CS231n https://cs231n.github.io (CNN의 정석) 프레임워크 : Keras 가이드 https://keras.io/guides · PyTorch 튜토리얼 https://pytorch.org/tutorials SOTA 추적·구조도 : Papers With Code — ECG 분류 https://paperswithcode.com/task/ecg classification (최신 모델·순위·코드가 한눈에) 랜드마크 논문 : ResNet(He 2015, arXiv:1512.03385) · Transformer \"Attention Is All You Need\" (Vaswani 2017, arXiv:1706.03762) · ECG 딥러닝 : Hannun & Rajpurkar et al., Nature Medicine 2019(심장전문의 수준 부정맥 검출) · 리뷰: Hong et al. 2020 \"Deep learning for ECG: a review\" MedKOS 내부 : 심화 ailab 2026 0007 · 실행 로그 ailab 2026 0008 · 뇌종양 분할 ailab 2026 0002 Exercises 1. 용어 찾기 : CELL 6에서 epoch·batch·loss·val accuracy·checkpoint·early stopping을 각각 짚어본다. 2. 왜 macro F1? : accuracy 0.986 vs macro F1 0.775가 왜 벌어지는지 한 문장으로 My notes 에. 3. PyTorch 눈 익히기 : 위 Conv1d 한 줄을 보고, 네 5층을 PyTorch nn.Sequential 로 상상해 적어본다. 4. 발전사 위치 : 2주차 1D ResNet이 위 도식에서 어디인지 표시하고, \"무슨 한계를 푸는가\" 한 줄. Resources Dive into Deep Learning https://d2l.ai · CS231n https://cs231n.github.io Keras https://keras.io/guides · PyTorch https://pytorch.org/tutorials Papers With Code(ECG) https://paperswithcode.com/task/ecg classification ResNet arXiv:1512.03385 · Transformer arXiv:1706.03762 · Hannun Nat Med 2019 My notes <! 헷갈렸던 용어나 \"아 이거였구나\" 한 줄을 남겨두면 다음 학습에 이어진다."
+  },
+  {
+   "id": "ailab-2026-0008",
+   "type": "ailab",
+   "topic": "Medical AI Lab",
+   "subtopic": "1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [intra]",
+   "tags": [
+    "ailab",
+    "run-log",
+    "week1",
+    "intra",
+    "macro_f1"
+   ],
+   "source": "MedKOS AI랩 실행 로그(ingest_run.py) · 실제 노트북 실행 결과",
+   "confidence": "high",
+   "date": "2026-07-12",
+   "path": "content/ailab/logs/ailab-2026-0008.md",
+   "snippet": "Overview 1주차 실습을 실제로 돌린 결과 기록. 이 카드는 결정론적으로 pipelines/ingest run.py 가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님). 🎯 과제: ECG 1D CNN (MIT BIH AAMI 5 class) 📓 노트북: notebooks/week01 ecg 1dcnn.ipynb 🔀 분할: intra — 무작위 분할(같은 환자가 train/test에 섞임) — 파이프라인 통과용, 낙관",
+   "text": "Medical AI Lab 1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [intra] ailab run-log week1 intra macro_f1 MedKOS AI랩 실행 로그(ingest_run.py) · 실제 노트북 실행 결과 Overview 1주차 실습을 실제로 돌린 결과 기록. 이 카드는 결정론적으로 pipelines/ingest run.py 가 노트북 결과에서 생성했다(수치는 실측 — 예측 아님). 🎯 과제: ECG 1D CNN (MIT BIH AAMI 5 class) 📓 노트북: notebooks/week01 ecg 1dcnn.ipynb 🔀 분할: intra — 무작위 분할(같은 환자가 train/test에 섞임) — 파이프라인 통과용, 낙관적 🏁 결과: macro f1 = 0.8273 → ✅ 통과 (게이트 macro f1 ≥ 0.8) 💾 체크포인트: drive:MedKOS/ailab/week01/week01 best.keras (Drive는 파생물) Next 이 실행을 되돌아보는 심화는 /deepen week 가 이 로그의 notebook 을 직접 읽어 쓴다 (glob 추정 대신 실제 코드 기준). 예측이 끼어들지 않는다. split: intra 로 통과했다면, SPLIT=\"inter\" 로 한 번 더 돌려 실전 난이도를 로그로 남겨라 (같은 주차·다른 split은 별도 로그로 쌓인다). My notes <! 이 실행에서 관찰한 것을 한 줄로. 다음 /deepen week·/ai mentor가 이어받는다."
+  },
+  {
+   "id": "ailab-2026-0007",
+   "type": "ailab",
+   "topic": "Medical Signal AI",
+   "subtopic": "1주차 심화 — ECG 부정맥 분류 딥다이브(구조·한계·대안·모델)",
+   "tags": [
+    "ECG",
+    "arrhythmia",
+    "1D-CNN",
+    "1D-ResNet",
+    "MIT-BIH",
+    "AAMI",
+    "intra-vs-inter",
+    "RR-interval",
+    "imbalanced",
+    "deepdive"
+   ],
+   "source": "MedKOS AI랩 1주차 심화(/deepen-week) · 실제 노트북 week01_ecg_1dcnn.ipynb 실측",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/ailab/ailab-2026-0007.md",
+   "snippet": "Overview 1주차는 macro F1 0.8273 으로 게이트를 통과했다. 하지만 회고에 \"정확하게 안다는 개념은 아닌 것 같다\"고 스스로 적었다 — 맞는 직감이다. 통과(진도)와 이해(깊이)는 다른 축 이고, 이 카드가 그 깊이 축을 채운다. 순서는 요청한 A~E 그대로다. 이 카드는 실제 노트북 notebooks/week01 ecg 1dcnn.ipynb 를 셀 단위로 읽고 다시 썼다 (실행 로그 ailab 2026 00",
+   "text": "Medical Signal AI 1주차 심화 — ECG 부정맥 분류 딥다이브(구조·한계·대안·모델) ECG arrhythmia 1D-CNN 1D-ResNet MIT-BIH AAMI intra-vs-inter RR-interval imbalanced deepdive MedKOS AI랩 1주차 심화(/deepen-week) · 실제 노트북 week01_ecg_1dcnn.ipynb 실측 Overview 1주차는 macro F1 0.8273 으로 게이트를 통과했다. 하지만 회고에 \"정확하게 안다는 개념은 아닌 것 같다\"고 스스로 적었다 — 맞는 직감이다. 통과(진도)와 이해(깊이)는 다른 축 이고, 이 카드가 그 깊이 축을 채운다. 순서는 요청한 A~E 그대로다. 이 카드는 실제 노트북 notebooks/week01 ecg 1dcnn.ipynb 를 셀 단위로 읽고 다시 썼다 (실행 로그 ailab 2026 0008 기준 — 예측 아님). 이전 판은 repo의 낡은 노트북을 보고 추측 해 창 크기·정규화·모델 깊이·체크포인트 유무가 어긋났었다. 실행 로그 루프 ( pipelines/ingest run.py )를 도입해 그 예측을 제거했다. A. 1주차에 실제로 한 것 (코드 실측) 셀별 실측 요약( week01 ecg 1dcnn.ipynb ): 셀 한 일 실측 세부 2 설정 SPLIT=\"intra\" (기본), 창 WIN BEFORE=WIN AFTER=150 → 300 샘플(≈0.83초) , BALANCE T=10000 , EPOCHS=40 . de Chazal DS1/DS2 목록 내장 3 데이터 MIT BIH 44 레코드 (페이스 102/104/107/217 제외), 채널 0 , 레코드 단위 z 정규화 . intra =전체 비트를 모아 train test split(stratify, test 0.2) , inter =DS1(train)/DS2(test) 4 균형화 학습셋을 클래스마다 10000개로 리샘플 (부족분은 복원추출) → 50000개. 테스트는 자연분포 유지. class weight 계산(균형 후라 전부 1.0 ), 블록이 중복 5 모델 1D CNN 5층 : Conv 32·64·128·256·512(커널 13·11·9·7·5, padding=same ) 각 BatchNorm +Pool → GAP → Dense64 → Dropout0.2 → softmax(5). ≈102만 파라미터 6 학습 Adam, sparse categorical crossentropy , metrics=accuracy , validation split=0.3 , EarlyStopping/ModelCheckpoint(monitor=val accuracy, restore best) , batch 128, class weight(=1.0) 7 평가 f1 score(macro) + 혼동행렬 + classification report 8 저장 베스트 가중치·혼동행렬· result.json 을 Drive에 저장 결과 — intra(통과) vs inter(실전) 실측 비교 (이제 둘 다 돌려서 숫자가 붙었다): 클래스 intra F1 inter F1(DS2) 변화 N 정상계열 0.993 0.913 −0.08 S 상심실성 0.871 0.179 −0.69 붕괴 V 심실성 0.968 0.631 −0.34 F 융합 0.822 0.005 −0.82 붕괴 Q 미분류 0.222 0.000 (support 7 — 무의미) macro F1 ≈0.83 0.346 −0.48 intra=무작위 20% test(같은 환자 누수), inter=de Chazal DS2 환자 단위 (support가 교과서 DS2와 정확히 일치: N 44238·S 1837·V 3220·F 388·Q 7). 로그: ailab 2026 0008 (intra)· ailab 2026 0010 (inter). intra 클래스별은 intra test 실행 기준(그 실행의 macro는 Q 때문에 0.775, 게이트 통과 실행은 0.827). 이게 이 심화의 결론이다 : S·F가 0.87/0.82 → 0.18/0.005로 무너진 것 이 B 2(RR 부재)의 직접 증거다. V는 0.63으로 상대적으로 버티는데, 심실성 이소성 박동(VEB)은 형태가 환자와 무관하게 뚜렷 하기 때문이다. 반면 S(상심실성)·F(융합)는 형태만으론 정상과 구분이 안 돼 , 간격(RR) 정보 없이는 새 환자에서 붕괴한다. 노트북 주석의 \"보통 0.5~0.65\" 추정보다도 낮게(0.346) 나온 건 F까지 거의 0으로 무너졌기 때문이다. B. 구조의 문제점·단점 0.8273은 \"통과\"엔 충분하지만, 몇 가지가 그 숫자를 실제보다 좋게 만든다. 우선순위 순. 1. [핵심] intra 분할은 같은 환자가 train/test에 섞인다(누수). 기본값 intra 는 44 레코드의 비트를 전부 모아 무작위로 8:2로 가른다. 같은 환자의 다른 비트가 양쪽에 들어가므로, 모델이 환자 고유의 파형 버릇을 외워 점수가 부푼다. 즉 0.8273은 \"파이프라인이 돈다\"는 증거이지 \"새 환자에 일반화한다\"는 증거가 아니다 . 노트북이 이걸 정직하게 명시하고 inter (DS1/DS2, 환자 단위)를 내장해 \"보통 0.5~0.65로 떨어진다\"고 적어둔 건 아주 좋은 태도다. → 실제로 돌려 확인됨 (E 1 완료): macro 0.83 → 0.346 , S·F는 사실상 붕괴(위 표). Q 제외 N/S/V/F macro도 0.432에 그친다. 즉 intra 통과는 \"파이프라인이 돈다\"였을 뿐이다. 2. [핵심] S를 가르는 RR 간격을 여전히 못 본다. 창이 300 샘플(한 비트)이고 레코드 단위로 정규화 하지만, 입력은 비트 하나 뿐이라 앞뒤 박동과의 시간 간격(RR)이 통째로 빠진다 . 상심실성 조기박동(S)의 본질은 \"빨리 온 박동\"(짧은 직전 RR)인데 모델은 그걸 볼 창구가 없다. 그래서 5층으로 깊어져도 S는 inter 에서 무너질 수밖에 없다 (D의 수용영역 논의 참조). 3. [중간] Q 클래스는 사실상 학습·측정 불가. Q는 전체 12개 뿐인데 리샘플에서 복원추출로 10000개까지 부풀린다 → 같은 ~10개 비트를 수천 번 반복. validation split=0.3 도 같은 풀에서 뽑으니 train/val에 동일 Q 비트가 겹쳐 (누수) val 지표가 무의미하고, 테스트엔 Q가 극소수. → Q는 빼고 N/S/V/F만 보고 하거나, 최소한 Q는 강제 균형에서 제외한다. 4. [중간] 불균형 전략이 이중이고 하나는 무효. CELL 4에서 클래스를 균일(10000)로 리샘플한 뒤 class weight를 계산하면 값이 전부 1.0 → fit(class weight=...) 가 아무 일도 안 한다. 게다가 그 블록이 복사되어 두 번 있다. 리샘플 또는 class weight 중 하나만 쓰고 중복 제거. 5. [중간] 체크포인트 기준이 val accuracy . 균형 val에선 accuracy가 그럭저럭이지만, 게이트· 테스트는 자연분포에서 macro F1 으로 채점한다. 기준이 어긋나면 최고 macro F1이 아닌 에폭이 저장될 수 있다 → 자연분포(또는 환자 분리) val에 macro F1 으로 모니터하는 게 일관적. 6. [낮음] 단일 유도·유도 불일치. 채널 0만 쓴다. 대부분 MLII지만 일부 레코드는 유도 구성이 달라 섞이면 숨은 교란. 2유도를 쓰거나 유도를 맞추면 견고해진다. mermaid flowchart TB P[\"intra 0.8273 통과\"] Q1{\"왜 좋아 보였나?\"} Q1 R1[\"같은 환자가<br/ train/test에 섞임<br/ (intra 누수)\"] Q1 R2[\"입력이 비트 하나뿐<br/ → RR 없음<br/ → S는 원래 약함\"] Q1 R3[\"Q는 12개를 1만개로<br/ 복원추출 → val 누수\"] R1 F[\"→ inter(DS1/DS2)로 재측정 +<br/ Q 정리 + RR 추가가<br/ '진짜 실력'을 드러낸다\"] R2 F R3 F C. 다른 구조·방식 (무엇을 바꾸면 무엇이 좋아지나) 효과/난이도로. 위 문제 번호와 연결. 1. SPLIT=\"inter\" 로 정직하게 재기 — 효과 최상 / 난이도 최저 (B 1). 이미 내장돼 있으니 한 줄만 바꾸면 된다. 떨어지는 게 정상이고, 그 하락폭이 곧 \"일반화 갭\"이다. 2. Q 정리 — 효과 중상 / 난이도 낮음 (B 3). Q를 빼고 N/S/V/F 4클래스로 보거나, Q를 균형에서 제외. 지표가 정직해진다. 3. 불균형 전략 단일화 — 효과 중간 / 난이도 최저 (B 4). 리샘플 또는 focal loss/class weight 중 하나만. 중복 블록 제거. (S 표적 증강: 시프트·진폭 스케일·기저선 변동·노이즈) 4. RR 간격 feature 추가 — 효과 최상 / 난이도 중간 (B 2). 직전RR·직후RR·국소평균 대비 3값을 GAP 뒤 벡터에 concat . inter 에서 S를 살리는 최대 지렛대. 5. 체크포인트를 macro F1로 — 효과 중간 / 난이도 낮음 (B 5). 커스텀 macro F1 콜백 + ModelCheckpoint(monitor='val macro f1') , 자연분포/환자 분리 val. 6. 1D ResNet · PyTorch 정렬 — 효과 중간(장기) / 난이도 중간 . 2주차(PTB XL)가 1D ResNet 이고 ECG 공개 구현 대부분이 PyTorch라, 지금 잔차 블록/PyTorch로 포팅해두면 다음 주가 이어진다. D. 모델 심화 — 이 5층 CNN이 실제로 보는 것 이전 판은 \"수용영역이 ~26샘플이라 QRS도 겨우 본다\"고 썼는데, 그건 낡은 3층 노트북 얘기라 틀렸다. 실제 5층 모델의 수용영역을 다시 계산하자(공식 RF += (k 1)·jump , jump ×= stride ): 층 커널/풀 누적 RF jump Conv k13 → Pool2 14 2 Conv k11 → Pool2 36 4 Conv k9 → Pool2 72 8 Conv k7 → Pool2 128 16 Conv k5 → GAP ≈192 16 → 깊은 뉴런의 수용영역은 약 192 샘플 ≈ 0.53초 로, 입력 창(300 샘플)의 대부분을 덮는다. 즉 이 모델은 \"한 비트의 QRS T 모양 전체\"를 충분히 본다 — 형태 표현력은 부족하지 않다. 병목은 RF가 아니라 입력 창의 틀 이다: 창이 R peak ±150 = 비트 하나 라, 아무리 RF가 커도 옆 박동(=RR 간격)은 창 밖 이다. 그래서 B 2의 S 약점은 \"모델이 얕아서\"가 아니라 \"입력이 비트 하나라서\" 생긴다 — 해결은 깊이가 아니라 입력에 RR을 직접 넣는 것 (C 4)이다. GAP : 시간축 전체를 채널별 평균으로 접어 위치를 버린다. 단일 비트 분류엔 무난. BatchNorm : 층마다 활성 분포를 정규화해 학습을 안정화·가속(이 노트북이 40에폭을 안전하게 도는 이유 중 하나). 1D ResNet(왜 더 깊이 가나) : 층을 더 쌓으면 gradient가 옅어지는데, 출력=F(x)+x 의 항등 지름길이 \"최소한 이전 성능은 보장\"해 안전하게 깊어진다. 다만 여기선 깊이보다 입력(RR)·분할(inter)·라벨(Q) 이 더 큰 지렛대다. mermaid flowchart LR subgraph now[\"1주차: plain 5층 1D CNN(+BN)\"] A1[\"비트 300샘플\"] B1[\"Conv13→BN→Pool\"] C1[\"… Conv5→BN\"] G1[\"GAP→Dense→softmax\"] end subgraph next[\"대안: RR 주입 + (선택)ResNet\"] A2[\"비트 300샘플\"] B2[\"Conv 스택<br/ (→ResNet 블록)\"] G2[\"GAP\"] RR[\"RR 3값(직전/직후/비율)\"] CAT[\"concat\"] G2 CAT H2[\"Dense→softmax\"] end E. 자동 학습 로드맵 (실행 로그로 쌓이는 실험 큐) 각 항목은 노트북에서 바로 돌릴 실험 + 합격 기준 이다. 돌린 결과는 ingest run.py 로 실행 로그 ( kind: log )로 박으면, 다음 /deepen week 가 그 실제 코드/수치를 예측 없이 이어받는다. 1. SPLIT=\"inter\" 로 재측정 (B 1,C 1) — ✅ 완료 : macro 0.83→0.346, S 0.87→0.18, F 0.82→0.005 (로그 ailab 2026 0010 ). 다음은 이 무너진 S·F를 아래 2~4로 되살리는 것. 2. Q 정리 (B 3,C 2) — Q 제외(N/S/V/F) 또는 균형에서 빼고 다시. 합격: 클래스별 F1이 \"측정 가능한\" 숫자가 됨(Q 누수 제거). 3. 불균형 전략 단일화 + 체크포인트 macro F1 (B 4,5) — 중복/무효 class weight 제거, monitor를 macro F1으로. 합격: 최고 val macro F1 에폭이 저장됨을 로그로 확인. 4. RR 간격 feature 추가 (B 2,C 4) — 3값을 GAP 뒤에 concat. 합격: inter 기준 대비 S F1 상승폭 기록. 5. 1D ResNet · PyTorch 포팅 (C 6) — 같은 데이터·split에서 재현. 합격: Keras판과 ±0.02 이내 재현 → 2주차부터 PyTorch. 우선순위: 1 → 2 → 3 이 \"정직한 숫자\"를 만들고, 4 가 S의 실력을 올리고, 5 는 2주차와 병합된다. 한 번에 다 하지 말 것 — 주당 1~2개 , 매번 실행 로그로. Architecture 전체 파이프라인(원본 + 심화가 더하는 지점을 ◇로): mermaid flowchart LR RAW[\"MIT BIH 원신호<br/ (44rec, 360Hz, ch0)\"] NORM[\"레코드 단위 z 정규화\"] NORM BEAT[\"R peak ±150<br/ 300샘플 비트\"] BEAT SPLIT{\"분할\"} SPLIT \"intra(무작위·누수·통과용)\" BAL SPLIT . \"◇inter DS1/DS2<br/ (환자 단위·실전)\" BAL BAL[\"균형화(◇Q 정리)\"] CNN[\"5층 1D CNN+BN<br/ (◇→ResNet)\"] RRX[\"◇RR 3값\"] . CAT CNN GAP[\"GAP\"] CAT[\"concat\"] CAT HEAD[\"Dense→Dropout→softmax(5)\"] HEAD EVAL[\"macro F1 + 혼동행렬<br/ (◇체크포인트 macro F1)\"] Exercises 1. 재현 : intra 로 그대로 돌려 macro F1이 0.8273 근처인지 확인(기준선 고정). 2. E 1 실행 : SPLIT=\"inter\" 로 바꿔 클래스별 F1 하락을 관찰하고 ingest run.py 로 로그. 3. E 4 실행 : RR feature를 넣어 inter 에서 S F1이 얼마나 회복되는지 측정. 4. 회고 : \"왜 intra 0.8273을 곧이곧대로 믿으면 안 되는가\"를 한 문단으로 My notes 에. Resources 실제 노트북: notebooks/week01 ecg 1dcnn.ipynb · 실행 로그: content/ailab/logs/ailab 2026 0008.md 원 실습 카드: content/ailab/ailab 2026 0005.md · 데이터: https://physionet.org/content/mitdb/ inter patient 표준 분할·RR feature : de Chazal et al., IEEE TBME 2004 (DS1/DS2, RR 간격 feature의 고전) AAMI EC57(N/S/V/F/Q 5군 매핑) · 멘토 논의: content/ailab/mentor/mentor 2026 W28.md 이 카드를 만든 파이프라인: pipelines/deepen.py + pipelines/ingest run.py + /deepen week My notes <! 각 실험(E 1~E 5) 결과를 한 줄씩. 실행 로그(ingest run.py)로도 남기면 자동으로 이어받는다. 예: \"E 1 inter: intra 0.8273 → 0.58로 하락. S/F가 특히 무너짐(예상대로).\" \"E 4 RR feature: inter S F1 0.4x → 0.6x. RR이 결정적이라는 걸 확인.\""
+  },
   {
    "id": "paper-2026-0066",
    "type": "paper",

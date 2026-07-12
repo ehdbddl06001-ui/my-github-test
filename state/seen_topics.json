@@ -1,10 +1,15 @@
 {
   "ailab": {
+    "CNN 개념·용어·PyTorch·발전사": "2026-07-12",
+    "ECG week1 deepdive": "2026-07-12",
     "ML Debugging": "2026-07-08",
     "ML Engineering": "2026-07-08",
     "Medical AI Curriculum": "2026-07-08",
     "Medical Imaging AI": "2026-07-08",
-    "Medical Signal AI": "2026-07-08"
+    "Medical Signal AI": "2026-07-08",
+    "week1 run inter": "2026-07-12",
+    "week1 run intra": "2026-07-12",
+    "부정맥 inter-patient 일반화 퀘스트": "2026-07-12"
   },
   "basic": {
     "Anion gap 산-염기": "2026-07-03",

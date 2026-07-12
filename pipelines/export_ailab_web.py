@@ -20,7 +20,10 @@ from datetime import date
 from pathlib import Path
 
 from frontmatter import load
-from datasets import DATASETS, MODALITY_LABELS, weekly_topic
+from datasets import (
+    DATASETS, MODALITY_LABELS, weekly_topic, topic_for_week, TOTAL_WEEKS,
+)
+from state import ailab_progress
 
 ROOT = Path(__file__).resolve().parent.parent
 AILAB_DIR = ROOT / "content" / "ailab"
@@ -85,6 +88,18 @@ def build_card(path: Path) -> dict | None:
         "date": str(m.get("date", "") or ""),
         "confidence": m.get("confidence", "") or "",
         "tags": [str(t) for t in (m.get("tags", []) or [])],
+        # 실행 로그(kind: log)용 필드 — 주차별 진도 목록이 점수 배지를 그릴 때 쓴다.
+        "split": m.get("split", "") or "",
+        "metric": m.get("metric", "") or "",
+        "value": m.get("value"),
+        "passed": bool(m.get("passed", False)),
+        # 퀘스트 연결/진척 — 로그는 quest/step으로 귀속되고, 퀘스트 카드는 baseline/nextGoal을 보인다.
+        "quest": m.get("quest", "") or "",
+        "step": m.get("step", "") or "",
+        "note": m.get("note", "") or "",
+        "baseline": m.get("baseline", "") or "",
+        "nextGoal": m.get("next_goal", "") or "",
+        "status": m.get("status", "") or "",
         "sections": sections,
     }
 
@@ -96,9 +111,10 @@ def load_cards() -> list[dict]:
             c = build_card(p)
             if c:
                 cards.append(c)
-    # mentor(최신 논의)를 맨 위, 그다음 roadmap/concept/project/weekly, 각 그룹 내 최신순.
-    # 안정 정렬을 이용: 먼저 최신순(내림차순)으로 둔 뒤, kind 우선순위로 재정렬한다.
-    kind_rank = {"mentor": 0, "roadmap": 1, "concept": 2, "project": 3, "weekly": 4}
+    # mentor(최신 논의)를 맨 위, 그다음 deepdive(주차 심화)·roadmap/concept/project/weekly,
+    # 각 그룹 내 최신순. 안정 정렬을 이용: 먼저 최신순(내림차순)으로 둔 뒤, kind 우선순위로 재정렬.
+    kind_rank = {"mentor": 0, "quest": 1, "deepdive": 2, "roadmap": 3, "concept": 4,
+                 "project": 5, "weekly": 6, "log": 7}
     cards.sort(key=lambda c: (c["date"], c["id"]), reverse=True)
     cards.sort(key=lambda c: kind_rank.get(c["kind"], 9))
     return cards
@@ -106,11 +122,15 @@ def load_cards() -> list[dict]:
 
 def main() -> int:
     cards = load_cards()
+    # 12주 커리큘럼 전체(진도 목록용) — 홈페이지가 '현재 주차'만이 아니라 모든 주차를 보여준다.
+    curriculum = [topic_for_week(i) for i in range(1, TOTAL_WEEKS + 1)]
     payload = {
         "generated": date.today().isoformat(),
         "repo": REPO,
         "branch": BRANCH,
         "weekly": weekly_topic(),
+        "curriculum": curriculum,          # 주차별 목표·게이트·완료여부
+        "progress": ailab_progress(),      # {week, done{주차:{date,metric,value}}}
         "modalityLabels": MODALITY_LABELS,
         "datasets": DATASETS,
         "cards": cards,
