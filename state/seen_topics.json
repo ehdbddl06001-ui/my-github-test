@@ -263,9 +263,11 @@
   },
   "usmle": {
     "Biochemistry - Acute Intermittent Porphyria": "2026-07-02",
+    "Biochemistry - MCAD Deficiency (Fatty Acid Oxidation)": "2026-07-13",
     "Biochemistry - Urea Cycle (OTC)": "2026-07-02",
     "Cardiology - Acute STEMI management (12-lead)": "2026-07-07",
     "Cardiology - Atrial Fibrillation (ECG rhythm recognition)": "2026-07-07",
+    "Cardiology - Atrial Flutter (ECG rhythm recognition)": "2026-07-13",
     "Cardiology - Complete LBBB (12-lead)": "2026-07-07",
     "Cardiology - Complete RBBB (12-lead real ECG)": "2026-07-07",
     "Cardiology - Heart Failure Pharmacology (ARNI)": "2026-07-02",
@@ -275,10 +277,12 @@
     "Hematology - HIT": "2026-07-02",
     "Immunology - Chronic Granulomatous Disease": "2026-07-02",
     "Immunology - Terminal Complement Deficiency": "2026-07-02",
+    "Immunology - X-linked Agammaglobulinemia (Bruton's Disease)": "2026-07-13",
     "Infectious Disease - Enterococcal Endocarditis": "2026-07-02",
     "Internal Medicine - DKA Potassium Management": "2026-07-07",
     "Microbiology - Exotoxin EF-2 ADP-ribosylation": "2026-07-02",
     "Microbiology - Invasive Aspergillosis (neutropenia)": "2026-07-07",
+    "Microbiology - Legionella pneumophila (atypical pneumonia)": "2026-07-13",
     "Microbiology - Vancomycin Resistance (VRE)": "2026-07-02",
     "Nephrology - Salicylate Mixed Acid-Base": "2026-07-02",
     "Neurology - Acute Ischemic Stroke Thrombolysis": "2026-07-02",
@@ -292,6 +296,7 @@
     "Pathology - Retinoblastoma Two-Hit": "2026-07-02",
     "Pediatrics - Ductal-Dependent Cyanotic CHD": "2026-07-02",
     "Pediatrics - Hypertrophic Pyloric Stenosis": "2026-07-02",
+    "Pediatrics - Kawasaki Disease (coronary aneurysm prevention)": "2026-07-13",
     "Pediatrics - STEC-HUS (avoid antibiotics)": "2026-07-07",
     "Pharmacology - Acetaminophen Toxicity (NAPQI/NAC)": "2026-07-07",
     "Pharmacology - Beta-Blocker Overdose Glucagon Rescue": "2026-07-08",
@@ -303,6 +308,7 @@
     "Psychiatry - Neuroleptic Malignant Syndrome vs Serotonin Syndrome": "2026-07-08",
     "Psychiatry - Serotonin Syndrome": "2026-07-02",
     "Surgery - Acute Mesenteric Ischemia": "2026-07-02",
+    "Surgery - Ascending Cholangitis (Reynolds Pentad)": "2026-07-13",
     "Surgery - Necrotizing Fasciitis": "2026-07-07"
   }
 }
