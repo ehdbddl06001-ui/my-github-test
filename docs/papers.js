@@ -2,6 +2,70 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0082",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Sex- and Gender-Focused Education in Cardiovascular Nursing: Implications for Clinical Practice and Health Equity",
+  "authors": [
+   "Mattioli Anna Vittoria",
+   "Nasi Milena",
+   "Pinti Marcello"
+  ],
+  "journal": "The Journal of cardiovascular nursing",
+  "doi": "10.1097/JCN.0000000000001359",
+  "pmid": "42447404",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42447404/",
+  "pubdate": "2026-07-14",
+  "date": "2026-07-14",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Sex- and gender-based differences significantly influence cardiovascular disease presentation, diagnosis, treatment response, and outcomes, contributing to persistent health disparities. Despite this, gender-focused education remains inconsistently integrated into cardiovascular nursing curricula.\n\n**PURPOSE:** Our aim, in this discussion paper was to examine the benefits and challenges of incorporating sex- and gender-focused care into cardiovascular nursing education and to highlight its role in improving clinical practice and promoting health equity.\n\n**CONCLUSIONS:** Integrating gender-focused education enhances nurses' ability to recognize both sex- and gender-specific differences, improves clinical decision-making, and supports more equitable care delivery. However, implementation is limited by curriculum constraints, lack of faculty expertise, and the risk of reinforcing stereotypes. Structured, evidence-based approaches are needed to ensure effective integration.\n\n**CLINICAL IMPLICATIONS:** Embedding sex- and gender-focused care into nursing education can improve diagnostic accuracy, optimize treatment strategies, and foster patient-centered and culturally responsive care. This approach is essential to reduce disparities and enhance outcomes in cardiovascular health.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0081",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Lasting Empowerment After Discontinuing a Heart Failure Telemonitoring Program: A Randomized Controlled Trial",
+  "authors": [
+   "Beltrán Jesús",
+   "Achury Diana",
+   "García-Peña Ángel",
+   "Fernández Daniel",
+   "Muñoz Oscar"
+  ],
+  "journal": "Computers, informatics, nursing : CIN",
+  "doi": "10.1097/CIN.0000000000001597",
+  "pmid": "42447390",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42447390/",
+  "pubdate": "2026-07-14",
+  "date": "2026-07-14",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "This study evaluated the long-term effects of the ControlVit mobile application on clinical outcomes and patient empowerment in individuals with chronic heart failure (HF), 6 months after discontinuation of the app. In this open-label, randomized, controlled clinical trial, patients were assigned to either an intervention group receiving standard HF management plus the ControlVit app for 6 months or to a control group receiving standard care alone. After 6 months, app use was discontinued, and all participants were followed for an additional 6 months. The primary outcome was the composite of death or HF-related hospital readmission at 12 months, whereas secondary outcomes included changes in body weight, natriuretic peptide levels, New York Heart Association (NYHA) functional class, and patient empowerment, measured using the Empowerment Evaluation Scale (EES). A total of 140 patients were enrolled (28.6% women; mean age, 67 y). At 12 months, 8 patients (11.4%) in the intervention group and 3 patients (4.3%) in the control group experienced the primary outcome [relative risk (RR): 2.62; 95% CI: 0.73-9.52; P=.122). Empowerment levels were significantly higher among app users compared with controls (EES score: 4.68 ± 0.36 vs. 4.40 ± 1.91; P=.012). Use of SGLT2 inhibitors and ARNi increased significantly in both groups during follow-up (ControlVit: 60% to 85%, P<.001; Control: 51.4% to 75%, P<.001). Among outpatients with chronic HF participating in a structured HF program, the addition of a mobile telemonitoring application did not reduce mortality or HF readmissions 6 months after its discontinuation. However, the intervention was associated with sustained improvements in patient empowerment, suggesting a lasting behavioral impact beyond the period of active app use.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0080",
   "topic": "Surgery",
   "subtopic": "",
