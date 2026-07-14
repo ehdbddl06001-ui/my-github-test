@@ -11,8 +11,22 @@
       "Bash(python3 pipelines/export_papers_web.py:*)",
       "Bash(python pipelines/apply_notes.py:*)",
       "Bash(python3 pipelines/apply_notes.py:*)",
+      "Bash(python pipelines/merge_state.py:*)",
+      "Bash(python3 pipelines/merge_state.py:*)",
       "Bash(python -c:*)",
       "Bash(python3 -c:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "git config merge.medkos-state.name 'MedKOS deterministic state merge' && git config merge.medkos-state.driver 'python3 pipelines/merge_state.py %O %A %B %P'"
+          }
+        ]
+      }
     ]
   }
 }

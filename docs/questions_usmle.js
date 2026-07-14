@@ -2273,5 +2273,580 @@ window.USMLE_QUESTIONS = [
    ]
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0043",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "X-linked Agammaglobulinemia (Bruton's Disease)",
+  "type": "X-linked Agammaglobulinemia (Bruton's Disease)",
+  "difficulty": 4,
+  "created": "2026-07-14",
+  "vignette": "A 5-month-old boy is brought to the emergency department with a 2-day history of fever and productive cough. He was well until about 5 months of age. He has already had two episodes of otitis media and one episode of sinusitis, each treated with oral antibiotics. On examination, the tonsils are absent and no cervical lymph nodes are palpable. Chest x-ray shows a right lower lobe infiltrate, and sputum culture grows Streptococcus pneumoniae. Vital signs and laboratory studies, including flow cytometry, are shown.",
+  "question": "Which of the following best describes the mechanism underlying this infant's disease?",
+  "options": [
+   "Impaired class-switch recombination due to a defective CD40 ligand on activated T cells",
+   "Arrest of B-cell maturation at the pre-B stage due to a defective Bruton tyrosine kinase",
+   "Global arrest of lymphocyte development due to adenosine deaminase deficiency",
+   "Failure of the neutrophil oxidative burst due to defective NADPH oxidase",
+   "Failure of membrane attack complex formation due to a terminal complement component deficiency"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 생후 5~6개월(모체 이행항체 소실 시점) 이후부터 시작된 encapsulated organism(폐렴구균) 반복 감염, 편도·림프절 저형성, 전 클래스(IgG/IgA/IgM) 면역글로불린 저하, 그리고 말초혈 CD19+ B세포가 거의 소실된 소견은 X-linked agammaglobulinemia(XLA)에 합당하다. BTK(Bruton tyrosine kinase) 결함으로 pre-B세포 수용체 신호전달이 차단되어 pre-B세포에서 성숙 B세포로의 분화가 멈춘다.\n- 오답감별:\n  - A: CD40 리간드 결함(Hyper-IgM 증후군)은 클래스스위칭만 안 되므로 B세포 수 자체는 정상이고 IgM은 정상~상승한다. 이 환아는 B세포가 거의 없고 IgM도 낮아 부합하지 않는다.\n  - C: 아데노신탈아미노효소(ADA) 결핍은 SCID를 일으켜 T세포까지 결핍되는데, 이 환아는 절대호중구수는 정상이고 문항에서 T세포 결핍 소견이 제시되지 않았다(B세포 선택적 결핍).\n  - D: NADPH 산화효소 결함(만성육아종병, CGD)은 B세포·면역글로불린은 정상이며 호중구 살균능만 소실된다. 이 환아는 ANC가 정상이고 오히려 체액성 면역(Ig·B세포)이 결핍되어 있어 반대 패턴이다.\n  - E: 말단보체(C5-C9) 결핍은 Neisseria 균종 반복 감염이 특징이며 CH50이 저하되는데, 이 환아는 CH50이 정상이고 폐렴구균 감염·저감마글로불린혈증이 핵심이다.\n- 임상핵심: 남아 + 생후 6개월 전후부터 시작되는 반복적 encapsulated organism 감염 + 편도/림프절 저형성 + 전 클래스 Ig 저하 + CD19+ B세포 부재 → XLA를 우선 의심하고 BTK 결함을 원인 기전으로 연결한다.\n- 출처: First Aid for the USMLE Step 1 — Immunology, Immunodeficiencies; Nelson Textbook of Pediatrics.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "생후 5~6개월(모체 이행항체 소실 시점) 이후부터 시작된 encapsulated organism(폐렴구균) 반복 감염, 편도·림프절 저형성, 전 클래스(IgG/IgA/IgM) 면역글로불린 저하, 그리고 말초혈 CD19+ B세포가 거의 소실된 소견은 X-linked agammaglobulinemia(XLA)에 합당하다. BTK(Bruton tyrosine kinase) 결함으로 pre-B세포 수용체 신호전달이 차단되어 pre-B세포에서 성숙 B세포로의 분화가 멈춘다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: CD40 리간드 결함(Hyper-IgM 증후군)은 클래스스위칭만 안 되므로 B세포 수 자체는 정상이고 IgM은 정상~상승한다. 이 환아는 B세포가 거의 없고 IgM도 낮아 부합하지 않는다.\nC: 아데노신탈아미노효소(ADA) 결핍은 SCID를 일으켜 T세포까지 결핍되는데, 이 환아는 절대호중구수는 정상이고 문항에서 T세포 결핍 소견이 제시되지 않았다(B세포 선택적 결핍).\nD: NADPH 산화효소 결함(만성육아종병, CGD)은 B세포·면역글로불린은 정상이며 호중구 살균능만 소실된다. 이 환아는 ANC가 정상이고 오히려 체액성 면역(Ig·B세포)이 결핍되어 있어 반대 패턴이다.\nE: 말단보체(C5-C9) 결핍은 Neisseria 균종 반복 감염이 특징이며 CH50이 저하되는데, 이 환아는 CH50이 정상이고 폐렴구균 감염·저감마글로불린혈증이 핵심이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "남아 + 생후 6개월 전후부터 시작되는 반복적 encapsulated organism 감염 + 편도/림프절 저형성 + 전 클래스 Ig 저하 + CD19+ B세포 부재 → XLA를 우선 의심하고 BTK 결함을 원인 기전으로 연결한다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1 — Immunology, Immunodeficiencies; Nelson Textbook of Pediatrics."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (immunology · primary humoral immunodeficiency)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "88/54 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "132회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "40회/분"
+   },
+   {
+    "name": "체온",
+    "value": "38.6 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈청 IgG",
+    "value": "92 mg/dL",
+    "ref": "400–1000"
+   },
+   {
+    "name": "혈청 IgA",
+    "value": "<7 mg/dL",
+    "ref": "20–100"
+   },
+   {
+    "name": "혈청 IgM",
+    "value": "15 mg/dL",
+    "ref": "40–160"
+   },
+   {
+    "name": "말초혈 CD19+ B세포",
+    "value": "0.2 %",
+    "ref": "5–20"
+   },
+   {
+    "name": "절대호중구수(ANC)",
+    "value": "3,200 /mm³",
+    "ref": "1,500–8,000"
+   },
+   {
+    "name": "총보체활성(CH50)",
+    "value": "정상 범위",
+    "ref": "정상"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "주요 원발성 면역결핍의 감별 (제시된 검사 소견 기준)\n─────────────────────────────────────────────────────\n질환                 B세포        Ig(전체)     T세포     특이 소견\nXLA(BTK 결함)         부재/저하    전 클래스↓   정상      남아, 6개월 이후 발병\nHyper-IgM(CD40L 결함)  정상 수      IgM 정상/↑,  정상      클래스스위칭 안 됨\n                                    IgG/IgA↓\nSCID(ADA 결핍 등)      저하         저하         저하      전반적 림프구 결핍\nCGD(NADPH옥시다제)     정상         정상         정상      호중구 살균능 소실\n말단보체결핍(C5-9)     정상         정상         정상      Neisseria 반복감염\n─────────────────────────────────────────────────────\n",
+   "최신지견": "확진은 BTK 유전자 검사 또는 B세포 내 BTK 단백 발현 소실 확인으로 하며, 치료는 정기적 IVIG 대체요법이다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 1 — Immunology, Immunodeficiencies",
+    "Nelson Textbook of Pediatrics — Primary Humoral Immunodeficiencies"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0044",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Fatty Acid Oxidation Disorder (MCAD Deficiency)",
+  "type": "Fatty Acid Oxidation Disorder (MCAD Deficiency)",
+  "difficulty": 5,
+  "created": "2026-07-14",
+  "vignette": "An 18-month-old girl is brought to the emergency department after being found difficult to arouse this morning. She had a low-grade fever and poor oral intake yesterday and missed both dinner and breakfast. On arrival she is lethargic but responds to voice. Vital signs and laboratory studies are shown. Urine ketones are unexpectedly low given the degree of hypoglycemia present.",
+  "question": "Which of the following best explains the absence of ketosis in this hypoglycemic child?",
+  "options": [
+   "Impaired carnitine palmitoyltransferase-1 activity prevents long-chain fatty acids from entering the mitochondria",
+   "Deficient glucose-6-phosphatase activity prevents the final step of glycogenolysis and gluconeogenesis",
+   "Deficient pyruvate dehydrogenase activity prevents conversion of pyruvate to acetyl-CoA",
+   "Deficient medium-chain acyl-CoA dehydrogenase activity blocks beta-oxidation of medium-chain fatty acids, limiting the acetyl-CoA available for ketogenesis",
+   "Deficient HMG-CoA lyase activity blocks the terminal step of ketone body synthesis"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 장시간 공복(저녁·아침 결식) 후 저혈당인데도 소변 케톤이 미량에 그치는 \"저케톤성 저혈당(hypoketotic hypoglycemia)\"과, 유리지방산 상승, 젖산은 정상, 아실카르니틴 profile에서 C8(옥타노일카르니틴)이 뚜렷이 상승한 소견은 MCAD(중쇄 아실-CoA 탈수소효소) 결핍의 전형이다. 중쇄 지방산이 미토콘드리아 베타산화를 거치지 못해 아세틸-CoA 공급이 끊기고, 그 결과 간에서 케톤체 합성 기질이 부족해진다.\n- 오답감별:\n  - A: CPT-1 결핍은 장쇄 지방산이 미토콘드리아로 들어가지 못하는 질환으로 임상상은 유사하나, 이 문항의 핵심 단서인 C8 아실카르니틴 상승은 중쇄(medium-chain) 효소 결함을 가리키며 CPT-1(장쇄 운반체) 결함과는 부합하지 않는다.\n  - B: Von Gierke병(G6Pase 결핍)도 공복 저혈당을 일으키지만, 당신생 경로 전체가 막혀 젖산이 축적되므로 젖산산증을 동반한다. 이 환아는 젖산이 정상 범위(1.4 mmol/L)로, 당원분해 장애를 시사하는 소견과 맞지 않는다.\n  - C: 피루브산탈수소효소 결핍 역시 젖산·피루브산이 함께 상승하는 것이 특징인데, 이 환아의 젖산은 정상이다.\n  - E: HMG-CoA 리아제 결핍도 저케톤성 저혈당을 일으켜 매력적인 오답이지만, 이 경우 케톤생성 \"마지막 단계\"만 막혀 전구체(아세토아세틸-CoA)가 축적되고 아실카르니틴 패턴은 C8이 아닌 다른 패턴(디카르복실산뇨 등)으로 나타난다. 문항에 제시된 C8 상승은 지방산 산화의 중쇄 단계 결함(MCAD)을 특이적으로 가리킨다.\n- 임상핵심: \"공복 유발 저케톤성 저혈당 + 젖산 정상 + 아실카르니틴 C8 상승\" 조합은 MCAD 결핍을 시사하는 대표 패턴으로 암기한다. 급성기에는 공복을 피하고 포도당을 정주하는 것이 핵심 치료다.\n- 출처: First Aid for the USMLE Step 1 — Biochemistry, Fatty Acid Metabolism; Nelson Textbook of Pediatrics.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "장시간 공복(저녁·아침 결식) 후 저혈당인데도 소변 케톤이 미량에 그치는 \"저케톤성 저혈당(hypoketotic hypoglycemia)\"과, 유리지방산 상승, 젖산은 정상, 아실카르니틴 profile에서 C8(옥타노일카르니틴)이 뚜렷이 상승한 소견은 MCAD(중쇄 아실-CoA 탈수소효소) 결핍의 전형이다. 중쇄 지방산이 미토콘드리아 베타산화를 거치지 못해 아세틸-CoA 공급이 끊기고, 그 결과 간에서 케톤체 합성 기질이 부족해진다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: CPT-1 결핍은 장쇄 지방산이 미토콘드리아로 들어가지 못하는 질환으로 임상상은 유사하나, 이 문항의 핵심 단서인 C8 아실카르니틴 상승은 중쇄(medium-chain) 효소 결함을 가리키며 CPT-1(장쇄 운반체) 결함과는 부합하지 않는다.\nB: Von Gierke병(G6Pase 결핍)도 공복 저혈당을 일으키지만, 당신생 경로 전체가 막혀 젖산이 축적되므로 젖산산증을 동반한다. 이 환아는 젖산이 정상 범위(1.4 mmol/L)로, 당원분해 장애를 시사하는 소견과 맞지 않는다.\nC: 피루브산탈수소효소 결핍 역시 젖산·피루브산이 함께 상승하는 것이 특징인데, 이 환아의 젖산은 정상이다.\nE: HMG-CoA 리아제 결핍도 저케톤성 저혈당을 일으켜 매력적인 오답이지만, 이 경우 케톤생성 \"마지막 단계\"만 막혀 전구체(아세토아세틸-CoA)가 축적되고 아실카르니틴 패턴은 C8이 아닌 다른 패턴(디카르복실산뇨 등)으로 나타난다. 문항에 제시된 C8 상승은 지방산 산화의 중쇄 단계 결함(MCAD)을 특이적으로 가리킨다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "\"공복 유발 저케톤성 저혈당 + 젖산 정상 + 아실카르니틴 C8 상승\" 조합은 MCAD 결핍을 시사하는 대표 패턴으로 암기한다. 급성기에는 공복을 피하고 포도당을 정주하는 것이 핵심 치료다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1 — Biochemistry, Fatty Acid Metabolism; Nelson Textbook of Pediatrics."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (biochemistry · fatty acid oxidation)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "92/58 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "128회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "26회/분"
+   },
+   {
+    "name": "체온",
+    "value": "38.3 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈당",
+    "value": "38 mg/dL",
+    "ref": "70–100"
+   },
+   {
+    "name": "소변 케톤",
+    "value": "미량",
+    "ref": "저혈당 시 강양성 예상"
+   },
+   {
+    "name": "혈청 유리지방산(FFA)",
+    "value": "2.1 mmol/L",
+    "ref": "0.1–0.6"
+   },
+   {
+    "name": "혈청 젖산",
+    "value": "1.4 mmol/L",
+    "ref": "0.5–2.2"
+   },
+   {
+    "name": "AST/ALT",
+    "value": "88/76 U/L",
+    "ref": "< 40"
+   },
+   {
+    "name": "혈장 아실카르니틴 profile",
+    "value": "옥타노일카르니틴(C8) 뚜렷한 상승",
+    "ref": "정상 대비 증가"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "공복 저혈당 감별 — 케톤 유무와 젖산으로 좁히기\n───────────────────────────────────────────────\n기전                      케톤       젖산     핵심 검사 소견\n지방산 산화 장애(MCAD 등)  저/음성    정상     아실카르니틴 이상(C8↑)\n당신생/당원분해 장애(Von   저/음성    상승     젖산산증 동반\n  Gierke, G6Pase 결핍)\n피루브산탈수소효소 결핍    저/음성    상승     피루브산·젖산 동반 상승\n케톤생성 장애(HMG-CoA      저/음성    정상     아세토아세트산 전구체 축적,\n  리아제 결핍)                                  아실카르니틴 패턴 다름\n───────────────────────────────────────────────\n",
+   "최신지견": "신생아 선별검사(탠덤매스)로 C8 아실카르니틴 상승을 조기 발견하면 급성 대사위기 전에 진단할 수 있다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 1 — Biochemistry, Fatty Acid Metabolism",
+    "Nelson Textbook of Pediatrics — Inborn Errors of Fatty Acid Oxidation"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0045",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Atypical Pneumonia (Legionella pneumophila)",
+  "type": "Atypical Pneumonia (Legionella pneumophila)",
+  "difficulty": 4,
+  "created": "2026-07-14",
+  "vignette": "A 58-year-old man returns from a business trip and presents with a 3-day history of high fever, headache, and watery diarrhea followed by a dry cough and worsening dyspnea. He stayed at a hotel with a large decorative fountain and used the hot tub daily. Chest x-ray shows a patchy infiltrate in the right lower lobe. Sputum Gram stain shows many neutrophils but no visible organisms, and a routine sputum culture on standard blood agar shows no growth after 48 hours. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate next diagnostic test to confirm the suspected diagnosis?",
+  "options": [
+   "Urinary antigen test for Legionella pneumophila serogroup 1",
+   "Repeat sputum culture on standard blood agar for an additional 48 hours",
+   "Cold agglutinin titer to evaluate for Mycoplasma pneumoniae infection",
+   "Sputum acid-fast bacillus smear and culture for suspected tuberculosis",
+   "Serum beta-D-glucan assay to evaluate for an invasive fungal infection"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 온수(핫텁)·분수 노출력, 고열에 비해 상대적으로 낮은 맥박, 설사 등 위장관 증상 동반, 저나트륨혈증, 간효소 상승, 그리고 Gram 염색에서 호중구는 많으나 균이 보이지 않고 표준 혈액한천배지에서 배양이 안 되는 소견은 모두 Legionella pneumophila 폐렴을 시사한다. Legionella는 시스테인·철분이 첨가된 특수배지(BCYE)에서만 자라므로, 신속한 확진에는 소변 항원검사(혈청군 1)가 가장 적합하다.\n- 오답감별:\n  - B: 표준 혈액한천배지는 Legionella가 필요로 하는 시스테인이 없어 배양 기간을 늘려도 자라지 않는다. 반복 배양은 시간만 지연시킨다.\n  - C: 콜드응집소 검사는 Mycoplasma pneumoniae 감염을 시사하는 보조검사로, 이 환자의 수인성 노출력·저나트륨혈증 패턴과는 맞지 않는다.\n  - D: 항산균 도말·배양은 결핵이 의심될 때(만성 기침·객혈·야간발한·고위험 노출력) 시행하며, 이 환자의 급성 경과·수계 노출력과는 부합하지 않는다.\n  - E: 베타-D-글루칸은 아스페르길루스·주폐포자충 등 진균 감염의 표지자로, 세균성 비정형 폐렴인 Legionella 감별에는 사용하지 않는다.\n- 임상핵심: 여행/온수 노출력 + 고열 대비 상대적 서맥 + 위장관 증상 동반 폐렴 + 저나트륨혈증 + 표준배지 배양 음성 → Legionella를 의심하고 소변항원검사로 신속 확진한다(단, 혈청군 1만 검출하는 한계는 기억).\n- 출처: First Aid for the USMLE Step 1 — Microbiology, Atypical Pneumonias; IDSA/ATS CAP Guidelines.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "온수(핫텁)·분수 노출력, 고열에 비해 상대적으로 낮은 맥박, 설사 등 위장관 증상 동반, 저나트륨혈증, 간효소 상승, 그리고 Gram 염색에서 호중구는 많으나 균이 보이지 않고 표준 혈액한천배지에서 배양이 안 되는 소견은 모두 Legionella pneumophila 폐렴을 시사한다. Legionella는 시스테인·철분이 첨가된 특수배지(BCYE)에서만 자라므로, 신속한 확진에는 소변 항원검사(혈청군 1)가 가장 적합하다."
+   },
+   {
+    "k": "오답감별",
+    "v": "B: 표준 혈액한천배지는 Legionella가 필요로 하는 시스테인이 없어 배양 기간을 늘려도 자라지 않는다. 반복 배양은 시간만 지연시킨다.\nC: 콜드응집소 검사는 Mycoplasma pneumoniae 감염을 시사하는 보조검사로, 이 환자의 수인성 노출력·저나트륨혈증 패턴과는 맞지 않는다.\nD: 항산균 도말·배양은 결핵이 의심될 때(만성 기침·객혈·야간발한·고위험 노출력) 시행하며, 이 환자의 급성 경과·수계 노출력과는 부합하지 않는다.\nE: 베타-D-글루칸은 아스페르길루스·주폐포자충 등 진균 감염의 표지자로, 세균성 비정형 폐렴인 Legionella 감별에는 사용하지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "여행/온수 노출력 + 고열 대비 상대적 서맥 + 위장관 증상 동반 폐렴 + 저나트륨혈증 + 표준배지 배양 음성 → Legionella를 의심하고 소변항원검사로 신속 확진한다(단, 혈청군 1만 검출하는 한계는 기억)."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1 — Microbiology, Atypical Pneumonias; IDSA/ATS CAP Guidelines."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (microbiology · atypical pneumonia)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "132/84 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "82회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "24회/분"
+   },
+   {
+    "name": "체온",
+    "value": "39.6 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈청 나트륨",
+    "value": "128 mEq/L",
+    "ref": "135–145"
+   },
+   {
+    "name": "AST/ALT",
+    "value": "76/68 U/L",
+    "ref": "< 40"
+   },
+   {
+    "name": "C-반응단백(CRP)",
+    "value": "18 mg/dL",
+    "ref": "< 0.5"
+   },
+   {
+    "name": "백혈구",
+    "value": "13,200 /mm³",
+    "ref": "4,000–10,000"
+   },
+   {
+    "name": "혈소판",
+    "value": "210,000 /mm³",
+    "ref": "150,000–400,000"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "비정형 폐렴 원인균별 확진검사 감별\n───────────────────────────────────────────────\n원인균                  표준 배지 성장   특이 확진검사\nLegionella pneumophila   불가(BCYE 필요)  소변항원(혈청군1), BCYE 배양/PCR\nMycoplasma pneumoniae    불가(특수배지)   콜드응집소, PCR, IgM 혈청검사\nChlamydophila pneumoniae 불가             PCR, 혈청검사\nMycobacterium tuberculosis 불가(특수배지) AFB 도말/배양, NAAT\nAspergillus/Pneumocystis 진균배지 필요    베타-D-글루칸, 갈락토만난\n───────────────────────────────────────────────\n",
+   "최신지견": "소변항원검사는 혈청군 1(전체 원인균의 약 80~90%)만 검출하므로 음성이어도 배양·PCR로 배제를 확인해야 한다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 1 — Microbiology, Atypical Pneumonias",
+    "IDSA/ATS Community-Acquired Pneumonia Guidelines"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0046",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "Atrial Flutter (ECG rhythm recognition)",
+  "type": "Atrial Flutter (ECG rhythm recognition)",
+  "difficulty": 4,
+  "created": "2026-07-14",
+  "vignette": "A 70-year-old man with a history of COPD presents with 6 hours of palpitations and mild dyspnea. He denies chest pain or syncope. He is alert and oriented, and his skin is warm and well-perfused. Vital signs are shown. An ECG (shown) reveals a regular, narrow-complex tachycardia with sawtooth-appearing atrial activity and 2:1 atrioventricular conduction. He is unsure exactly when his symptoms began, saying it may have started sometime yesterday. Thyroid and electrolyte panels are shown and are unremarkable.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Immediate synchronized electrical cardioversion despite stable hemodynamics",
+   "Intravenous adenosine to attempt pharmacologic termination of the rhythm",
+   "Rate control with an intravenous beta-blocker as the initial step in management",
+   "Immediate intravenous amiodarone for pharmacologic cardioversion today",
+   "Electrical cardioversion today without prior transesophageal echocardiography"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 이 환자는 혈역학적으로 안정(정상 혈압, 의식명료, 관류 양호)하고 증상 발생 시점이 불명확한 심방조동이다. 안정형이면서 지속시간이 불확실할 때는 우선 심박수 조절을 시행하고, 이후 뇌졸중 위험(CHA2DS2-VASc)을 평가해 항응고 여부를 결정한 뒤에 리듬조절(동율동전환)을 고려하는 것이 표준 순서다.\n- 오답감별:\n  - A: 즉시 전기적 동율동전환은 저혈압·흉통·의식저하·폐부종 등 혈역학적 불안정 소견이 있을 때만 우선한다. 이 환자는 안정적이므로 응급 동율동전환의 적응증이 아니다.\n  - B: 아데노신은 방실결절 의존 회로(AVNRT/AVRT)의 진단·치료에 쓰인다. 심방조동은 거대 회귀회로가 방실결절에 의존하지 않아 아데노신으로 일시적 방실차단은 되어도 부정맥 자체는 종료되지 않는다.\n  - D: 아미오다론으로 즉시 화학적 동율동전환을 시도하면, 지속시간이 불명확한 상태에서 좌심방이 혈전이 있을 경우 색전증(뇌졸중) 위험이 있다. 항응고 평가 없이 리듬조절을 서두르면 안 된다.\n  - E: TEE 없이 지속시간 불명확한 부정맥을 동율동전환하는 것은 활력징후가 안정적이더라도 색전 위험을 배제하지 못한 채 시행하는 것이라 위험하다.\n- 임상핵심: 안정형 심방조동/세동 신환, 지속시간 불명확 → 심박수 조절이 최우선, 리듬조절(동율동전환)은 항응고 평가·TEE 또는 지속시간 확인 이후에만 시행한다.\n- 출처: 2023 ACC/AHA/ACCP/HRS Atrial Fibrillation Guideline; UpToDate — Atrial Flutter.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "이 환자는 혈역학적으로 안정(정상 혈압, 의식명료, 관류 양호)하고 증상 발생 시점이 불명확한 심방조동이다. 안정형이면서 지속시간이 불확실할 때는 우선 심박수 조절을 시행하고, 이후 뇌졸중 위험(CHA2DS2-VASc)을 평가해 항응고 여부를 결정한 뒤에 리듬조절(동율동전환)을 고려하는 것이 표준 순서다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 즉시 전기적 동율동전환은 저혈압·흉통·의식저하·폐부종 등 혈역학적 불안정 소견이 있을 때만 우선한다. 이 환자는 안정적이므로 응급 동율동전환의 적응증이 아니다.\nB: 아데노신은 방실결절 의존 회로(AVNRT/AVRT)의 진단·치료에 쓰인다. 심방조동은 거대 회귀회로가 방실결절에 의존하지 않아 아데노신으로 일시적 방실차단은 되어도 부정맥 자체는 종료되지 않는다.\nD: 아미오다론으로 즉시 화학적 동율동전환을 시도하면, 지속시간이 불명확한 상태에서 좌심방이 혈전이 있을 경우 색전증(뇌졸중) 위험이 있다. 항응고 평가 없이 리듬조절을 서두르면 안 된다.\nE: TEE 없이 지속시간 불명확한 부정맥을 동율동전환하는 것은 활력징후가 안정적이더라도 색전 위험을 배제하지 못한 채 시행하는 것이라 위험하다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "안정형 심방조동/세동 신환, 지속시간 불명확 → 심박수 조절이 최우선, 리듬조절(동율동전환)은 항응고 평가·TEE 또는 지속시간 확인 이후에만 시행한다."
+   },
+   {
+    "k": "출처",
+    "v": "2023 ACC/AHA/ACCP/HRS Atrial Fibrillation Guideline; UpToDate — Atrial Flutter."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (cardiology · arrhythmia management)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "118/76 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "148회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "22회/분"
+   },
+   {
+    "name": "체온",
+    "value": "36.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈청 TSH",
+    "value": "2.1 mIU/L",
+    "ref": "0.4–4.0"
+   },
+   {
+    "name": "혈청 칼륨",
+    "value": "4.2 mEq/L",
+    "ref": "3.5–5.0"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "안정형 심방조동/세동 신환 처치 순서\n───────────────────────────────────────────\n1단계  혈역학적 안정성 평가 (저혈압·흉통·의식저하·폐부종 → 불안정 시 즉시 동율동전환)\n2단계  안정 시: 베타차단제/non-DHP 칼슘차단제로 심박수 조절\n3단계  지속시간 확인 → 48시간 미만 확실 / TEE로 좌심방이 혈전 배제 시에만 조기 동율동전환 고려\n4단계  지속시간 불명확 or 48시간 이상 → 최소 3주 항응고 후 선택적 동율동전환(또는 CHA2DS2-VASc 기반 지속 항응고)\n───────────────────────────────────────────\n",
+   "최신지견": "심방조동은 심방세동과 달리 방실결절 비의존 거대 회귀회로라 아데노신으로 일시적 방실차단은 되지만 종료되지 않는다.",
+   "참고문헌": [
+    "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+    "UpToDate — Atrial Flutter: Overview and Management"
+   ]
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG flutter · 148 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,90.0 0.6,90.4 1.2,90.8 1.8,91.2 2.4,91.5 3.0,91.9 3.6,92.3 4.2,92.7 4.8,93.1 5.4,93.5 6.0,93.8 6.6,94.2 7.2,94.6 7.8,95.0 8.4,95.4 9.0,95.8 9.6,96.1 10.2,96.5 10.8,96.9 11.4,97.3 12.0,97.7 12.6,98.1 13.2,98.4 13.8,98.8 14.4,99.2 15.0,80.4 15.6,80.8 16.2,81.2 16.8,81.6 17.4,81.9 18.0,82.3 18.6,82.7 19.2,83.1 19.8,83.5 20.4,83.9 21.0,84.2 21.6,84.6 22.2,85.0 22.8,85.4 23.4,85.8 24.0,86.2 24.6,86.5 25.2,86.9 25.8,87.3 26.4,87.7 27.0,88.1 27.6,88.5 28.2,88.8 28.8,89.2 29.4,89.6 30.0,90.0 30.6,90.4 31.2,90.8 31.8,91.2 32.4,91.5 33.0,91.9 33.6,92.3 34.2,92.7 34.8,93.1 35.4,93.5 36.0,93.8 36.6,94.2 37.2,94.6 37.8,95.0 38.4,95.4 39.0,95.8 39.6,96.1 40.2,96.5 40.8,96.9 41.4,97.3 42.0,97.7 42.6,98.1 43.2,98.4 43.8,98.8 44.4,99.2 45.0,80.4 45.6,80.8 46.2,81.2 46.8,81.6 47.4,81.9 48.0,82.3 48.6,82.7 49.2,83.1 49.8,83.5 50.4,83.9 51.0,84.2 51.6,84.6 52.2,85.0 52.8,85.4 53.4,86.0 54.0,86.9 54.6,88.1 55.2,89.1 55.8,88.4 56.4,84.9 57.0,77.9 57.6,67.4 58.2,54.4 58.8,41.0 59.4,30.7 60.0,27.3 60.6,32.1 61.2,43.9 61.8,59.2 62.4,74.5 63.0,87.0 63.6,95.8 64.2,100.8 64.8,102.8 65.4,102.5 66.0,100.9 66.6,99.0 67.2,97.4 67.8,96.5 68.4,96.0 69.0,96.0 69.6,96.2 70.2,96.6 70.8,96.9 71.4,97.3 72.0,97.7 72.6,98.1 73.2,98.4 73.8,98.8 74.4,99.2 75.0,80.4 75.6,80.8 76.2,81.2 76.8,81.5 77.4,81.9 78.0,82.3 78.6,82.7 79.2,83.1 79.8,83.5 80.4,83.8 81.0,84.2 81.6,84.6 82.2,85.0 82.8,85.3 83.4,85.7 84.0,86.0 84.6,86.4 85.2,86.7 85.8,87.0 86.4,87.3 87.0,87.6 87.6,87.9 88.2,88.1 88.8,88.3 89.4,88.5 90.0,88.6 90.6,88.7 91.2,88.7 91.8,88.7 92.4,88.6 93.0,88.5 93.6,88.3 94.2,88.0 94.8,87.7 95.4,87.3 96.0,86.9 96.6,86.5 97.2,86.0 97.8,85.5 98.4,85.0 99.0,84.4 99.6,83.9 100.2,83.5 100.8,83.1 101.4,82.7 102.0,82.5 102.6,82.3 103.2,82.2 103.8,82.3 104.4,82.5 105.0,63.6 105.6,64.1 106.2,64.6 106.8,65.3 107.4,66.2 108.0,67.1 108.6,68.1 109.2,69.2 109.8,70.4 110.4,71.7 111.0,72.9 111.6,74.2 112.2,75.5 112.8,76.8 113.4,78.1 114.0,79.4 114.6,81.0 115.2,82.8 115.8,84.7 116.4,85.4 117.0,83.6 117.6,78.3 118.2,69.5 118.8,57.6 119.4,44.3 120.0,32.8 120.6,26.9 121.2,29.0 121.8,38.9 122.4,53.6 123.0,69.4 123.6,83.1 124.2,93.4 124.8,99.8 125.4,102.7 126.0,103.2 126.6,101.9 127.2,100.1 127.8,98.4 128.4,97.2 129.0,96.6 129.6,96.5 130.2,96.7 130.8,97.0 131.4,97.3 132.0,97.7 132.6,98.1 133.2,98.4 133.8,98.8 134.4,99.2 135.0,80.4 135.6,80.8 136.2,81.2 136.8,81.6 137.4,81.9 138.0,82.3 138.6,82.7 139.2,83.1 139.8,83.5 140.4,83.8 141.0,84.2 141.6,84.6 142.2,85.0 142.8,85.3 143.4,85.7 144.0,86.1 144.6,86.4 145.2,86.8 145.8,87.1 146.4,87.4 147.0,87.7 147.6,88.0 148.2,88.3 148.8,88.5 149.4,88.7 150.0,88.9 150.6,89.1 151.2,89.2 151.8,89.2 152.4,89.2 153.0,89.1 153.6,89.0 154.2,88.9 154.8,88.6 155.4,88.3 156.0,88.0 156.6,87.6 157.2,87.2 157.8,86.7 158.4,86.2 159.0,85.7 159.6,85.1 160.2,84.6 160.8,84.2 161.4,83.7 162.0,83.4 162.6,83.1 163.2,82.9 163.8,82.8 164.4,82.8 165.0,63.7 165.6,64.0 166.2,64.4 166.8,64.9 167.4,65.6 168.0,66.4 168.6,67.3 169.2,68.3 169.8,69.4 170.4,70.5 171.0,71.7 171.6,73.0 172.2,74.3 172.8,75.6 173.4,76.8 174.0,78.1 174.6,79.4 175.2,80.9 175.8,82.7 176.4,84.6 177.0,85.9 177.6,85.1 178.2,81.1 178.8,73.5 179.4,62.6 180.0,49.5 180.6,36.9 181.2,28.7 181.8,27.9 182.4,35.2 183.0,48.6 183.6,64.4 184.2,79.2 184.8,90.7 185.4,98.4 186.0,102.6 186.6,103.8 187.2,103.0 187.8,101.3 188.4,99.5 189.0,98.1 189.6,97.3 190.2,97.0 190.8,97.1 191.4,97.4 192.0,97.7 192.6,98.1 193.2,98.4 193.8,98.8 194.4,99.2 195.0,80.4 195.6,80.8 196.2,81.2 196.8,81.6 197.4,81.9 198.0,82.3 198.6,82.7 199.2,83.1 199.8,83.5 200.4,83.8 201.0,84.2 201.6,84.6 202.2,85.0 202.8,85.4 203.4,85.7 204.0,86.1 204.6,86.5 205.2,86.8 205.8,87.2 206.4,87.5 207.0,87.8 207.6,88.1 208.2,88.4 208.8,88.7 209.4,89.0 210.0,89.2 210.6,89.4 211.2,89.5 211.8,89.6 212.4,89.7 213.0,89.7 213.6,89.7 214.2,89.6 214.8,89.4 215.4,89.2 216.0,89.0 216.6,88.6 217.2,88.3 217.8,87.8 218.4,87.4 219.0,86.9 219.6,86.4 220.2,85.8 220.8,85.3 221.4,84.8 222.0,84.4 222.6,84.0 223.2,83.7 223.8,83.4 224.4,83.3 225.0,64.1 225.6,64.2 226.2,64.4 226.8,64.8 227.4,65.2 228.0,65.9 228.6,66.6 229.2,67.5 229.8,68.4 230.4,69.5 231.0,70.6 231.6,71.8 232.2,73.1 232.8,74.3 233.4,75.6 234.0,76.9 234.6,78.2 235.2,79.5 235.8,80.9 236.4,82.5 237.0,84.5 237.6,86.1 238.2,86.2 238.8,83.5 239.4,77.1 240.0,67.3 240.6,54.7 241.2,41.6 241.8,31.4 242.4,27.7 243.0,32.3 243.6,44.0 244.2,59.4 244.8,74.8 245.4,87.6 246.0,96.7 246.6,102.0 247.2,104.1 247.8,104.0 248.4,102.5 249.0,100.6 249.6,99.1 250.2,98.0 250.8,97.6 251.4,97.6 252.0,97.8 252.6,98.1 253.2,98.5 253.8,98.8 254.4,99.2 255.0,80.4 255.6,80.8 256.2,81.2 256.8,81.6 257.4,81.9 258.0,82.3 258.6,82.7 259.2,83.1 259.8,83.5 260.4,83.9 261.0,84.2 261.6,84.6 262.2,85.0 262.8,85.4 263.4,85.7 264.0,86.1 264.6,86.5 265.2,86.9 265.8,87.2 266.4,87.6 267.0,87.9 267.6,88.2 268.2,88.6 268.8,88.9 269.4,89.1 270.0,89.4 270.6,89.6 271.2,89.8 271.8,90.0 272.4,90.1 273.0,90.2 273.6,90.2 274.2,90.2 274.8,90.2 275.4,90.0 276.0,89.8 276.6,89.6 277.2,89.3 277.8,88.9 278.4,88.5 279.0,88.1 279.6,87.6 280.2,87.1 280.8,86.5 281.4,86.0 282.0,85.5 282.6,85.1 283.2,84.6 283.8,84.3 284.4,84.0 285.0,64.7 285.6,64.6 286.2,64.6 286.8,64.8 287.4,65.1 288.0,65.6 288.6,66.2 289.2,66.9 289.8,67.7 290.4,68.6 291.0,69.6 291.6,70.7 292.2,71.9 292.8,73.1 293.4,74.4 294.0,75.7 294.6,77.0 295.2,78.3 295.8,79.5 296.4,80.9 297.0,82.4 297.6,84.3 298.2,86.2 298.8,87.0 299.4,85.3 300.0,80.3 300.6,71.6 301.2,59.8 301.8,46.6 302.4,34.9 303.0,28.6 303.6,30.3 304.2,39.7 304.8,54.3 305.4,70.1 306.0,84.0 306.6,94.5 307.2,101.1 307.8,104.2 308.4,104.7 309.0,103.6 309.6,101.8 310.2,100.1 310.8,98.9 311.4,98.2 312.0,98.1 312.6,98.2 313.2,98.5 313.8,98.8 314.4,99.2 315.0,80.4 315.6,80.8 316.2,81.2 316.8,81.6 317.4,81.9 318.0,82.3 318.6,82.7 319.2,83.1 319.8,83.5 320.4,83.9 321.0,84.2 321.6,84.6 322.2,85.0 322.8,85.4 323.4,85.8 324.0,86.1 324.6,86.5 325.2,86.9 325.8,87.2 326.4,87.6 327.0,88.0 327.6,88.3 328.2,88.6 328.8,89.0 329.4,89.3 330.0,89.6 330.6,89.8 331.2,90.1 331.8,90.3 332.4,90.5 333.0,90.6 333.6,90.7 334.2,90.8 334.8,90.8 335.4,90.7 336.0,90.6 336.6,90.4 337.2,90.2 337.8,89.9 338.4,89.6 339.0,89.2 339.6,88.7 340.2,88.3 340.8,87.8 341.4,87.2 342.0,86.7 342.6,86.2 343.2,85.7 343.8,85.3 344.4,84.9 345.0,65.4 345.6,65.2 346.2,65.1 346.8,65.1 347.4,65.3 348.0,65.5 348.6,65.9 349.2,66.5 349.8,67.1 350.4,67.9 351.0,68.8 351.6,69.8 352.2,70.9 352.8,72.0 353.4,73.2 354.0,74.5 354.6,75.8 355.2,77.1 355.8,78.3 356.4,79.6 357.0,80.9 357.6,82.4 358.2,84.1 358.8,86.1 359.4,87.4 360.0,86.8 360.6,83.0 361.2,75.6 361.8,64.8 362.4,51.8 363.0,39.1 363.6,30.5 364.2,29.2 364.8,36.2 365.4,49.4 366.0,65.1 366.6,80.0 367.2,91.8 367.8,99.7 368.4,104.0 369.0,105.3 369.6,104.6 370.2,102.9 370.8,101.2 371.4,99.7 372.0,98.9 372.6,98.6 373.2,98.7 373.8,98.9 374.4,99.2 375.0,80.4 375.6,80.8 376.2,81.2 376.8,81.6 377.4,81.9 378.0,82.3 378.6,82.7 379.2,83.1 379.8,83.5 380.4,83.9 381.0,84.2 381.6,84.6 382.2,85.0 382.8,85.4 383.4,85.8 384.0,86.1 384.6,86.5 385.2,86.9 385.8,87.3 386.4,87.6 387.0,88.0 387.6,88.4 388.2,88.7 388.8,89.0 389.4,89.4 390.0,89.7 390.6,90.0 391.2,90.3 391.8,90.5 392.4,90.7 393.0,90.9 393.6,91.1 394.2,91.2 394.8,91.3 395.4,91.3 396.0,91.3 396.6,91.2 397.2,91.0 397.8,90.8 398.4,90.5 399.0,90.2 399.6,89.8 400.2,89.4 400.8,89.0 401.4,88.5 402.0,87.9 402.6,87.4 403.2,86.9 403.8,86.4 404.4,86.0 405.0,66.4 405.6,66.0 406.2,65.8 406.8,65.7 407.4,65.6 408.0,65.7 408.6,65.9 409.2,66.3 409.8,66.8 410.4,67.4 411.0,68.1 411.6,69.0 412.2,69.9 412.8,71.0 413.4,72.1 414.0,73.3 414.6,74.6 415.2,75.8 415.8,77.1 416.4,78.4 417.0,79.7 417.6,81.0 418.2,82.4 418.8,84.0 419.4,85.9 420.0,87.6 420.6,87.9 421.2,85.3 421.8,79.1 422.4,69.4 423.0,57.0 423.6,43.8 424.2,33.3 424.8,29.3 425.4,33.4 426.0,44.7 426.6,60.1 427.2,75.6 427.8,88.6 428.4,97.9 429.0,103.4 429.6,105.6 430.2,105.6 430.8,104.1 431.4,102.2 432.0,100.7 432.6,99.6 433.2,99.2 433.8,99.1 434.4,99.3 435.0,80.4 435.6,80.8 436.2,81.2 436.8,81.6 437.4,81.9 438.0,82.3 438.6,82.7 439.2,83.1 439.8,83.5 440.4,83.9 441.0,84.2 441.6,84.6 442.2,85.0 442.8,85.4 443.4,85.8 444.0,86.1 444.6,86.5 445.2,86.9 445.8,87.3 446.4,87.7 447.0,88.0 447.6,88.4 448.2,88.8 448.8,89.1 449.4,89.4 450.0,89.8 450.6,90.1 451.2,90.4 451.8,90.7 452.4,90.9 453.0,91.2 453.6,91.4 454.2,91.6 454.8,91.7 455.4,91.8 456.0,91.8 456.6,91.8 457.2,91.7 457.8,91.6 458.4,91.4 459.0,91.2 459.6,90.9 460.2,90.5 460.8,90.1 461.4,89.6 462.0,89.2 462.6,88.7 463.2,88.1 463.8,87.6 464.4,87.1 465.0,67.4 465.6,67.0 466.2,66.7 466.8,66.4 467.4,66.2 468.0,66.1 468.6,66.2 469.2,66.4 469.8,66.7 470.4,67.1 471.0,67.7 471.6,68.4 472.2,69.2 472.8,70.1 473.4,71.1 474.0,72.2 474.6,73.4 475.2,74.6 475.8,75.9 476.4,77.2 477.0,78.5 477.6,79.8 478.2,81.0 478.8,82.4 479.4,83.9 480.0,85.7 480.6,87.6 481.2,88.6 481.8,87.1 482.4,82.2 483.0,73.7 483.6,62.1 484.2,48.8 484.8,37.0 485.4,30.3 486.0,31.5 486.6,40.6 487.2,55.0 487.8,70.8 488.4,84.9 489.0,95.6 489.6,102.3 490.2,105.7 490.8,106.3 491.4,105.2 492.0,103.4 492.6,101.7 493.2,100.5 493.8,99.8 494.4,99.6 495.0,80.6 495.6,80.8 496.2,81.2 496.8,81.6 497.4,81.9 498.0,82.3 498.6,82.7 499.2,83.1 499.8,83.5 500.4,83.9 501.0,84.2 501.6,84.6 502.2,85.0 502.8,85.4 503.4,85.8 504.0,86.2 504.6,86.5 505.2,86.9 505.8,87.3 506.4,87.7 507.0,88.0 507.6,88.4 508.2,88.8 508.8,89.1 509.4,89.5 510.0,89.8 510.6,90.2 511.2,90.5 511.8,90.8 512.4,91.1 513.0,91.4 513.6,91.6 514.2,91.8 514.8,92.0 515.4,92.2 516.0,92.3 516.6,92.3 517.2,92.3 517.8,92.3 518.4,92.2 519.0,92.0 519.6,91.8 520.2,91.5 520.8,91.2 521.4,90.8 522.0,90.3 522.6,89.9 523.2,89.3 523.8,88.8 524.4,88.3 525.0,68.6 525.6,68.1 526.2,67.7 526.8,67.3 527.4,67.0 528.0,66.8 528.6,66.7 529.2,66.7 529.8,66.8 530.4,67.1 531.0,67.5 531.6,68.0 532.2,68.6 532.8,69.4 533.4,70.3 534.0,71.3 534.6,72.4 535.2,73.5 535.8,74.7 536.4,76.0 537.0,77.2 537.6,78.5 538.2,79.8 538.8,81.1 539.4,82.4 540.0,83.8 540.6,85.6 541.2,87.5 541.8,88.9 542.4,88.5 543.0,84.8 543.6,77.6 544.2,67.0 544.8,54.0 545.4,41.3 546.0,32.4 546.6,30.6 547.2,37.2 547.8,50.1 548.4,65.8 549.0,80.8 549.6,92.8 550.2,100.9 550.8,105.4 551.4,106.9 552.0,106.3 552.6,104.6 553.2,102.8 553.8,101.4 554.4,100.5 555.0,81.0 555.6,81.0 556.2,81.2 556.8,81.6 557.4,81.9 558.0,82.3 558.6,82.7 559.2,83.1 559.8,83.5 560.4,83.9 561.0,84.2 561.6,84.6 562.2,85.0 562.8,85.4 563.4,85.8 564.0,86.2 564.6,86.5 565.2,86.9 565.8,87.3 566.4,87.7 567.0,88.1 567.6,88.4 568.2,88.8 568.8,89.2 569.4,89.5 570.0,89.9 570.6,90.2 571.2,90.6 571.8,90.9 572.4,91.2 573.0,91.5 573.6,91.8 574.2,92.1 574.8,92.3 575.4,92.5 576.0,92.6 576.6,92.7 577.2,92.8 577.8,92.8 578.4,92.8 579.0,92.7 579.6,92.6 580.2,92.4 580.8,92.1 581.4,91.8 582.0,91.4 582.6,91.0 583.2,90.5 583.8,90.0 584.4,89.5 585.0,69.8 585.6,69.3 586.2,68.8 586.8,68.4 587.4,67.9 588.0,67.6 588.6,67.4 589.2,67.2 589.8,67.2 590.4,67.3 591.0,67.5 591.6,67.8 592.2,68.3 592.8,68.9 593.4,69.6 594.0,70.5 594.6,71.4 595.2,72.5 595.8,73.6 596.4,74.8 597.0,76.0 597.6,77.3 598.2,78.6 598.8,79.9 599.4,81.2 600.0,82.5 600.6,83.8 601.2,85.4 601.8,87.4 602.4,89.1 603.0,89.5 603.6,87.0 604.2,81.1 604.8,71.6 605.4,59.3 606.0,46.0 606.6,35.3 607.2,30.8 607.8,34.5 608.4,45.6 609.0,60.8 609.6,76.3 610.2,89.5 610.8,99.0 611.4,104.7 612.0,107.1 612.6,107.2 613.2,105.8 613.8,103.9 614.4,102.3 615.0,82.0 615.6,81.5 616.2,81.5 616.8,81.7 617.4,82.0 618.0,82.3 618.6,82.7 619.2,83.1 619.8,83.5 620.4,83.9 621.0,84.2 621.6,84.6 622.2,85.0 622.8,85.4 623.4,85.8 624.0,86.2 624.6,86.5 625.2,86.9 625.8,87.3 626.4,87.7 627.0,88.1 627.6,88.4 628.2,88.8 628.8,89.2 629.4,89.6 630.0,89.9 630.6,90.3 631.2,90.6 631.8,91.0 632.4,91.3 633.0,91.6 633.6,91.9 634.2,92.2 634.8,92.5 635.4,92.7 636.0,92.9 636.6,93.1 637.2,93.2 637.8,93.3 638.4,93.4 639.0,93.3 639.6,93.3 640.2,93.2 640.8,93.0 641.4,92.7 642.0,92.4 642.6,92.1 643.2,91.7 643.8,91.2 644.4,90.7 645.0,71.0 645.6,70.5 646.2,70.0 646.8,69.5 647.4,69.0 648.0,68.6 648.6,68.2 649.2,68.0 649.8,67.8 650.4,67.7 651.0,67.7 651.6,67.9 652.2,68.2 652.8,68.6 653.4,69.2 654.0,69.9 654.6,70.7 655.2,71.6 655.8,72.6 656.4,73.7 657.0,74.9 657.6,76.1 658.2,77.4 658.8,78.7 659.4,80.0 660.0,81.2 660.6,82.5 661.2,83.8 661.8,85.4 662.4,87.2 663.0,89.1 663.6,90.1 664.2,88.8 664.8,84.1 665.4,75.8 666.0,64.3 666.6,51.1 667.2,39.1 667.8,32.0 668.4,32.8 669.0,41.5 669.6,55.7 670.2,71.5 670.8,85.8 671.4,96.6 672.0,103.6 672.6,107.1 673.2,107.9 673.8,106.9 674.4,105.1 675.0,84.2 675.6,82.9 676.2,82.2 676.8,82.0 677.4,82.1 678.0,82.4 678.6,82.7 679.2,83.1 679.8,83.5 680.4,83.9 681.0,84.2 681.6,84.6 682.2,85.0 682.8,85.4 683.4,85.8 684.0,86.2 684.6,86.5 685.2,86.9 685.8,87.3 686.4,87.7 687.0,88.1 687.6,88.5 688.2,88.8 688.8,89.2 689.4,89.6 690.0,90.0 690.6,90.3 691.2,90.7 691.8,91.0 692.4,91.4 693.0,91.7 693.6,92.0 694.2,92.4 694.8,92.6 695.4,92.9 696.0,93.2 696.6,93.4 697.2,93.6 697.8,93.7 698.4,93.8 699.0,93.9 699.6,93.9 700.2,93.8 700.8,93.7 701.4,93.6 702.0,93.3 702.6,93.1 703.2,92.7 703.8,92.3 704.4,91.9 705.0,72.2 705.6,71.7 706.2,71.2 706.8,70.7 707.4,70.2 708.0,69.7 708.6,69.3 709.2,68.9 709.8,68.6 710.4,68.4 711.0,68.2 711.6,68.2 712.2,68.4 712.8,68.6 713.4,69.0 714.0,69.5 714.6,70.1 715.2,70.9 715.8,71.8 716.4,72.8 717.0,73.9 717.6,75.0 718.2,76.2 718.8,77.5 719.4,78.7 720.0,80.0 720.6,81.3 721.2,82.6 721.8,83.9 722.4,85.3 723.0,87.0 723.6,89.0 724.2,90.5 724.8,90.1 725.4,86.7 726.0,79.7 726.6,69.2 727.2,56.3 727.8,43.4 728.4,34.2 729.0,32.1 729.6,38.2 730.2,50.9 730.8,66.5 731.4,81.6 732.0,93.8 732.6,102.1 733.2,106.8 733.8,108.4 734.4,107.9 735.0,87.1 735.6,85.2 736.2,83.8 736.8,82.9 737.4,82.5 738.0,82.5 738.6,82.8 739.2,83.1 739.8,83.5 740.4,83.9 741.0,84.2 741.6,84.6 742.2,85.0 742.8,85.4 743.4,85.8 744.0,86.2 744.6,86.5 745.2,86.9 745.8,87.3 746.4,87.7 747.0,88.1 747.6,88.5 748.2,88.8 748.8,89.2 749.4,89.6 750.0,90.0 750.6,90.3 751.2,90.7 751.8,91.1 752.4,91.4 753.0,91.8 753.6,92.1 754.2,92.5 754.8,92.8 755.4,93.1 756.0,93.3 756.6,93.6 757.2,93.8 757.8,94.0 758.4,94.2 759.0,94.3 759.6,94.4 760.2,94.4 760.8,94.4 761.4,94.3 762.0,94.1 762.6,93.9 763.2,93.7 763.8,93.4 764.4,93.0 765.0,73.4 765.6,72.9 766.2,72.4 766.8,71.9 767.4,71.4 768.0,70.9 768.6,70.4 769.2,69.9 769.8,69.5 770.4,69.2 771.0,68.9 771.6,68.8 772.2,68.7 772.8,68.8 773.4,69.0 774.0,69.4 774.6,69.8 775.2,70.4 775.8,71.2 776.4,72.0 777.0,72.9 777.6,74.0 778.2,75.1 778.8,76.3 779.4,77.5 780.0,78.8 780.6,80.1 781.2,81.4 781.8,82.7 782.4,83.9 783.0,85.3 783.6,86.9 784.2,88.8 784.8,90.6 785.4,91.1 786.0,88.8 786.6,83.1 787.2,73.8 787.8,61.5 788.4,48.3 789.0,37.3 789.6,32.4 790.2,35.7 790.8,46.4 791.4,61.4 792.0,77.1 792.6,90.5 793.2,100.2 793.8,106.0 794.4,108.6 795.0,89.6 795.6,88.2 796.2,86.4 796.8,84.8 797.4,83.6 798.0,83.1 798.6,83.0 799.2,83.2 799.8,83.5 800.4,83.9 801.0,84.2 801.6,84.6 802.2,85.0 802.8,85.4 803.4,85.8 804.0,86.2 804.6,86.5 805.2,86.9 805.8,87.3 806.4,87.7 807.0,88.1 807.6,88.5 808.2,88.8 808.8,89.2 809.4,89.6 810.0,90.0 810.6,90.4 811.2,90.7 811.8,91.1 812.4,91.5 813.0,91.8 813.6,92.2 814.2,92.5 814.8,92.9 815.4,93.2 816.0,93.5 816.6,93.8 817.2,94.0 817.8,94.3 818.4,94.5 819.0,94.6 819.6,94.8 820.2,94.9 820.8,94.9 821.4,94.9 822.0,94.8 822.6,94.7 823.2,94.5 823.8,94.3 824.4,94.0 825.0,74.5 825.6,74.1 826.2,73.6 826.8,73.1 827.4,72.6 828.0,72.1 828.6,71.6 829.2,71.1 829.8,70.6 830.4,70.2 831.0,69.8 831.6,69.5 832.2,69.3 832.8,69.3 833.4,69.3 834.0,69.5 834.6,69.7 835.2,70.2 835.8,70.7 836.4,71.4 837.0,72.2 837.6,73.1 838.2,74.1 838.8,75.2 839.4,76.4 840.0,77.6 840.6,78.9 841.2,80.2 841.8,81.4 842.4,82.7 843.0,84.0 843.6,85.3 844.2,86.8 844.8,88.6 845.4,90.6 846.0,91.7 846.6,90.5 847.2,86.0 847.8,77.9 848.4,66.6 849.0,53.4 849.6,41.2 850.2,33.8 850.8,34.1 851.4,42.4 852.0,56.4 852.6,72.3 853.2,86.7 853.8,97.7 854.4,104.9 855.0,89.4 855.6,90.3 856.2,89.3 856.8,87.5 857.4,85.8 858.0,84.5 858.6,83.8 859.2,83.5 859.8,83.6 860.4,83.9 861.0,84.3 861.6,84.6 862.2,85.0 862.8,85.4 863.4,85.8 864.0,86.2 864.6,86.5 865.2,86.9 865.8,87.3 866.4,87.7 867.0,88.1 867.6,88.5 868.2,88.8 868.8,89.2 869.4,89.6 870.0,90.0 870.6,90.4 871.2,90.7 871.8,91.1 872.4,91.5 873.0,91.9 873.6,92.2 874.2,92.6 874.8,92.9 875.4,93.3 876.0,93.6 876.6,93.9 877.2,94.2 877.8,94.5 878.4,94.7 879.0,94.9 879.6,95.1 880.2,95.3 880.8,95.4 881.4,95.4 882.0,95.4 882.6,95.4 883.2,95.3 883.8,95.1 884.4,94.9 885.0,75.4 885.6,75.1 886.2,74.7 886.8,74.3 887.4,73.8 888.0,73.3 888.6,72.8 889.2,72.3 889.8,71.8 890.4,71.3 891.0,70.8 891.6,70.5 892.2,70.1 892.8,69.9 893.4,69.8 894.0,69.8 894.6,69.9 895.2,70.1 895.8,70.5 896.4,71.0 897.0,71.7 897.6,72.4 898.2,73.3 898.8,74.3 899.4,75.3 900.0,76.5\"/><text class=\"cap\" x=\"4\" y=\"193\">flutter · 148 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0047",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Acute Cholangitis (Biliary Sepsis)",
+  "type": "Acute Cholangitis (Biliary Sepsis)",
+  "difficulty": 4,
+  "created": "2026-07-14",
+  "vignette": "A 68-year-old woman is brought to the emergency department with 1 day of right upper quadrant pain, fever, and yellowing of her skin. Over the past 2 hours she has become confused, and her family notes she is unusually drowsy. Vital signs and laboratory studies are shown. Abdominal ultrasound shows a dilated common bile duct (12 mm) with an echogenic focus and posterior shadowing within it. Intravenous fluids and empiric broad-spectrum antibiotics are started immediately.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Continue antibiotics alone and reassess clinical status in 24 hours",
+   "Emergency open cholecystectomy to address the biliary source of infection",
+   "Discharge home with outpatient MRCP scheduled within the next week",
+   "Percutaneous transhepatic drainage while withholding antibiotics until cultures return",
+   "Urgent ERCP for biliary decompression following resuscitation and antibiotics"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 우상복부 통증·발열·황달(Charcot triad)에 더해 새로 발생한 저혈압과 의식변화까지 동반된 것은 Reynolds pentad로, 화농성 담관염(suppurative cholangitis)에 의한 패혈성 쇼크를 의미한다. 초기 수액소생과 경험적 항생제 투여 후에는 감염원 조절을 위한 응급 담도감압이 필요하며, ERCP가 1차 선택이다.\n- 오답감별:\n  - A: 항생제만으로는 폐쇄된 담도 내 감염원을 제거할 수 없어 패혈증이 진행할 위험이 크다. 장기부전(쇼크·의식저하)이 있는 중증에서는 반드시 담도감압이 병행되어야 한다.\n  - B: 담낭절제술은 급성 담낭염(담낭 자체 병변)의 처치이며, 총담관 폐쇄로 인한 담관염을 감압하지 못한다. 패혈성 쇼크 상태의 환자에게 즉시 개복 수술을 시행하는 것은 위험도도 지나치게 높다.\n  - C: 장기부전을 동반한 응급 상황에서 외래 재평가로 미루는 것은 치료를 지연시켜 패혈증을 악화시킨다.\n  - D: PTBD는 ERCP가 불가능할 때의 대안이 될 수 있지만, 항생제 투여를 배양결과가 나올 때까지 미루는 것은 패혈증 번들 원칙(경험적 항생제 즉시 시작)에 위배된다.\n- 임상핵심: Charcot triad(발열·황달·우상복부통)에 쇼크·의식저하가 더해진 Reynolds pentad는 담관염 중에서도 응급 담도감압이 필요한 중증 신호다. 수액소생·경험적 항생제를 즉시 시작한 뒤 ERCP(불가 시 PTBD)로 감압한다.\n- 출처: Tokyo Guidelines 2018 (TG18) for Acute Cholangitis; Sabiston Textbook of Surgery.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "우상복부 통증·발열·황달(Charcot triad)에 더해 새로 발생한 저혈압과 의식변화까지 동반된 것은 Reynolds pentad로, 화농성 담관염(suppurative cholangitis)에 의한 패혈성 쇼크를 의미한다. 초기 수액소생과 경험적 항생제 투여 후에는 감염원 조절을 위한 응급 담도감압이 필요하며, ERCP가 1차 선택이다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 항생제만으로는 폐쇄된 담도 내 감염원을 제거할 수 없어 패혈증이 진행할 위험이 크다. 장기부전(쇼크·의식저하)이 있는 중증에서는 반드시 담도감압이 병행되어야 한다.\nB: 담낭절제술은 급성 담낭염(담낭 자체 병변)의 처치이며, 총담관 폐쇄로 인한 담관염을 감압하지 못한다. 패혈성 쇼크 상태의 환자에게 즉시 개복 수술을 시행하는 것은 위험도도 지나치게 높다.\nC: 장기부전을 동반한 응급 상황에서 외래 재평가로 미루는 것은 치료를 지연시켜 패혈증을 악화시킨다.\nD: PTBD는 ERCP가 불가능할 때의 대안이 될 수 있지만, 항생제 투여를 배양결과가 나올 때까지 미루는 것은 패혈증 번들 원칙(경험적 항생제 즉시 시작)에 위배된다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "Charcot triad(발열·황달·우상복부통)에 쇼크·의식저하가 더해진 Reynolds pentad는 담관염 중에서도 응급 담도감압이 필요한 중증 신호다. 수액소생·경험적 항생제를 즉시 시작한 뒤 ERCP(불가 시 PTBD)로 감압한다."
+   },
+   {
+    "k": "출처",
+    "v": "Tokyo Guidelines 2018 (TG18) for Acute Cholangitis; Sabiston Textbook of Surgery."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (surgery · hepatobiliary emergencies)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "84/54 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "118회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "24회/분"
+   },
+   {
+    "name": "체온",
+    "value": "39.2 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "총빌리루빈",
+    "value": "6.8 mg/dL",
+    "ref": "0.2–1.2"
+   },
+   {
+    "name": "직접빌리루빈",
+    "value": "5.1 mg/dL",
+    "ref": "0–0.3"
+   },
+   {
+    "name": "알칼리인산분해효소(ALP)",
+    "value": "420 U/L",
+    "ref": "44–147"
+   },
+   {
+    "name": "AST/ALT",
+    "value": "98/85 U/L",
+    "ref": "< 40"
+   },
+   {
+    "name": "백혈구",
+    "value": "19,400 /mm³",
+    "ref": "4,000–10,000"
+   },
+   {
+    "name": "혈소판",
+    "value": "232,000 /mm³",
+    "ref": "150,000–400,000"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "급성 담관염 중증도별 처치(Tokyo Guidelines 개념)\n───────────────────────────────────────────────\n중증도               정의                       처치\n경증(Grade I)         전신장기부전 없음           항생제 ± 조기 담도배액\n중등증(Grade II)      백혈구/빌리루빈/연령 등 기준 조기(24~48시간 내) 담도배액\n중증(Grade III,       장기부전 동반(쇼크·의식저하  즉시 수액소생+항생제 →\n  Reynolds pentad)     = 이 환자)                  응급 담도감압(ERCP 우선, 불가시 PTBD)\n───────────────────────────────────────────────\n",
+   "최신지견": "ERCP가 기술적으로 불가능하거나 응급실에서 즉시 시행이 어려운 경우 PTBD를 대안으로 시행하되, 항생제 시작을 지연시켜서는 안 된다.",
+   "참고문헌": [
+    "Tokyo Guidelines 2018 (TG18) for Acute Cholangitis and Cholecystitis",
+    "Sabiston Textbook of Surgery — Biliary Tract"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0048",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Kawasaki Disease (Coronary Artery Aneurysm Prevention)",
+  "type": "Kawasaki Disease (Coronary Artery Aneurysm Prevention)",
+  "difficulty": 4,
+  "created": "2026-07-14",
+  "vignette": "A 3-year-old boy has had fever ≥39°C for 5 days that has not responded to acetaminophen or ibuprofen. Examination shows bilateral non-exudative conjunctival injection, a diffusely erythematous 'strawberry' tongue, dry cracked lips, a polymorphous truncal rash, and a single tender 1.8-cm right cervical lymph node. His fingertips have begun to peel. Blood cultures obtained on admission are negative at 48 hours. Vital signs and laboratory studies are shown. Echocardiogram shows mild dilation of the left main coronary artery (z-score 2.3).",
+  "question": "Which of the following is the most appropriate treatment at this time?",
+  "options": [
+   "Intravenous ceftriaxone pending further culture results",
+   "A single dose of intravenous immunoglobulin (IVIG) plus high-dose aspirin",
+   "Systemic corticosteroids as sole initial therapy",
+   "Low-dose aspirin alone, without an anti-inflammatory dose",
+   "Continued observation and antipyretics, with reassessment in 48 hours"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 5일 이상 지속되는 고열에 결막충혈·구강점막변화·발진·사지말단변화·경부림프절병증 중 4가지 이상이 동반되고, 무균성 농뇨·혈소판증가증·관상동맥 경도 확장까지 확인되어 가와사키병 진단기준을 충족한다. 발병 10일 이내 IVIG 1회 투여와 고용량(항염증 용량) 아스피린 병용이 관상동맥류 위험을 낮추는 표준 초기 치료다.\n- 오답감별:\n  - A: 48시간 혈액배양이 음성으로 세균감염이 배제된 상태이며, 가와사키병은 항생제에 반응하지 않는 혈관염이다.\n  - C: 전신 스테로이드는 표준 1차 단독요법이 아니며, IVIG에 반응하지 않는 저항성 환자나 관상동맥류 고위험군에서 IVIG에 추가하는 보조요법으로 사용한다.\n  - D: 급성기에는 항혈소판 목적의 저용량이 아니라 항염증 목적의 고용량 아스피린이 필요하며, 해열되고 안정화된 이후에 저용량으로 전환한다.\n  - E: 이미 관상동맥 확장 소견이 나타난 상태에서 치료를 지연시키면 관상동맥류로 진행할 위험이 유의하게 증가한다.\n- 임상핵심: 5일 이상 발열 + 임상기준 4/5 충족 → 발병 10일 이내 IVIG 1회 + 고용량 아스피린이 치료의 핵심이며, 목표는 관상동맥류 예방이다.\n- 출처: AHA Scientific Statement on Kawasaki Disease; Nelson Textbook of Pediatrics.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "5일 이상 지속되는 고열에 결막충혈·구강점막변화·발진·사지말단변화·경부림프절병증 중 4가지 이상이 동반되고, 무균성 농뇨·혈소판증가증·관상동맥 경도 확장까지 확인되어 가와사키병 진단기준을 충족한다. 발병 10일 이내 IVIG 1회 투여와 고용량(항염증 용량) 아스피린 병용이 관상동맥류 위험을 낮추는 표준 초기 치료다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 48시간 혈액배양이 음성으로 세균감염이 배제된 상태이며, 가와사키병은 항생제에 반응하지 않는 혈관염이다.\nC: 전신 스테로이드는 표준 1차 단독요법이 아니며, IVIG에 반응하지 않는 저항성 환자나 관상동맥류 고위험군에서 IVIG에 추가하는 보조요법으로 사용한다.\nD: 급성기에는 항혈소판 목적의 저용량이 아니라 항염증 목적의 고용량 아스피린이 필요하며, 해열되고 안정화된 이후에 저용량으로 전환한다.\nE: 이미 관상동맥 확장 소견이 나타난 상태에서 치료를 지연시키면 관상동맥류로 진행할 위험이 유의하게 증가한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "5일 이상 발열 + 임상기준 4/5 충족 → 발병 10일 이내 IVIG 1회 + 고용량 아스피린이 치료의 핵심이며, 목표는 관상동맥류 예방이다."
+   },
+   {
+    "k": "출처",
+    "v": "AHA Scientific Statement on Kawasaki Disease; Nelson Textbook of Pediatrics."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (pediatrics · vasculitis)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "96/60 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "138회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "26회/분"
+   },
+   {
+    "name": "체온",
+    "value": "39.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "적혈구침강속도(ESR)",
+    "value": "68 mm/hr",
+    "ref": "< 20"
+   },
+   {
+    "name": "C-반응단백(CRP)",
+    "value": "9.8 mg/dL",
+    "ref": "< 0.5"
+   },
+   {
+    "name": "혈소판",
+    "value": "620,000 /mm³",
+    "ref": "150,000–450,000"
+   },
+   {
+    "name": "혈청 알부민",
+    "value": "2.9 g/dL",
+    "ref": "3.5–5.0"
+   },
+   {
+    "name": "소변 백혈구(무균성 농뇨)",
+    "value": "30/HPF, 소변배양 음성",
+    "ref": "< 5/HPF"
+   },
+   {
+    "name": "혈액배양(48시간)",
+    "value": "음성",
+    "ref": "음성"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "가와사키병 임상기준 및 치료 (관상동맥류 예방)\n───────────────────────────────────────────────\n주요 임상기준(발열≥5일 + 아래 5개 중 ≥4개)\n  · 양측 비삼출성 결막충혈\n  · 구강점막 변화(딸기혀·구순균열)\n  · 다형성 발진\n  · 사지말단 변화(급성기 부종/홍반 → 아급성기 낙설)\n  · 경부 림프절병증(≥1.5cm, 대개 단측)\n치료: 발병 10일 이내 IVIG 2g/kg 1회 + 고용량 아스피린(항염증 용량)\n      → 해열 후 저용량 아스피린(항혈소판 용량)으로 전환\n      IVIG 저항성/고위험군: 추가 IVIG 또는 스테로이드 보조\n───────────────────────────────────────────────\n",
+   "최신지견": "치료 지연 시 관상동맥류 발생률이 최대 25%까지 보고되나, 적절한 IVIG 치료로 약 4% 미만으로 감소한다.",
+   "참고문헌": [
+    "AHA Scientific Statement — Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease",
+    "Nelson Textbook of Pediatrics — Kawasaki Disease"
+   ]
+  },
+  "figureSvg": ""
  }
 ];

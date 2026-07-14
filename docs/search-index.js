@@ -1,47 +1,47 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-12",
+ "generated": "2026-07-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 261,
+  "total": 283,
   "byType": {
+   "usmle": 48,
+   "paper": 82,
    "kmle": 139,
    "ailab": 11,
-   "paper": 66,
-   "usmle": 42,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 29,
-   "Nephrology": 20,
-   "Infectious Disease": 19,
-   "Pediatrics": 18,
+   "Cardiology": 33,
+   "Nephrology": 22,
+   "Infectious Disease": 21,
+   "Pediatrics": 20,
    "Obstetrics & Gynecology": 12,
+   "Pathology": 12,
+   "Surgery": 12,
    "Neurology": 11,
    "Psychiatry": 11,
    "Endocrinology": 10,
-   "Pathology": 10,
+   "Laboratory Medicine": 10,
    "Gastroenterology": 9,
    "Pulmonology": 9,
-   "Surgery": 9,
    "Dermatology": 8,
    "General Surgery": 8,
+   "Hematology-Oncology": 8,
    "Ophthalmology": 8,
    "Orthopedics": 8,
    "Rheumatology": 8,
    "Hematology": 7,
-   "Hematology-Oncology": 7,
-   "Laboratory Medicine": 7,
    "Physiology": 6,
    "Medical AI Lab": 4,
-   "Microbiology": 3,
+   "Microbiology": 4,
+   "Biochemistry": 3,
+   "Immunology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
    "Allergy": 2,
-   "Biochemistry": 2,
-   "Immunology": 2,
    "Medical Signal AI": 2,
    "AI Mentorship": 1,
    "Internal Medicine": 1,
@@ -51,12 +51,268 @@ window.MEDKOS_INDEX = {
    "Medical Imaging AI": 1
   },
   "byConfidence": {
-   "high": 191,
-   "medium": 70
+   "high": 197,
+   "medium": 86
   },
-  "tagCount": 716
+  "tagCount": 738
  },
  "docs": [
+  {
+   "id": "usmle-2026-0048",
+   "type": "usmle",
+   "topic": "Pediatrics",
+   "subtopic": "Kawasaki Disease (Coronary Artery Aneurysm Prevention)",
+   "tags": [
+    "Kawasaki-disease",
+    "IVIG",
+    "coronary-aneurysm",
+    "sterile-pyuria",
+    "aspirin"
+   ],
+   "source": "USMLE-style / MedKOS (pediatrics · vasculitis)",
+   "confidence": "high",
+   "date": "2026-07-14",
+   "path": "content/usmle/usmle-2026-0048.md",
+   "snippet": "A 3 year old boy has had fever ≥39°C for 5 days that has not responded to acetaminophen or ibuprofen. Examination shows bilateral non exudative conjunctival injection, a diffusely erythematous 'strawberry' tongue, dry cracked lips, a polymo",
+   "text": "Pediatrics Kawasaki Disease (Coronary Artery Aneurysm Prevention) Kawasaki-disease IVIG coronary-aneurysm sterile-pyuria aspirin USMLE-style / MedKOS (pediatrics · vasculitis) A 3 year old boy has had fever ≥39°C for 5 days that has not responded to acetaminophen or ibuprofen. Examination shows bilateral non exudative conjunctival injection, a diffusely erythematous 'strawberry' tongue, dry cracked lips, a polymorphous truncal rash, and a single tender 1.8 cm right cervical lymph node. His fingertips have begun to peel. Blood cultures obtained on admission are negative at 48 hours. Vital signs and laboratory studies are shown. Echocardiogram shows mild dilation of the left main coronary artery (z score 2.3). Which of the following is the most appropriate treatment at this time? A. Intravenous ceftriaxone pending further culture results B. A single dose of intravenous immunoglobulin (IVIG) plus high dose aspirin C. Systemic corticosteroids as sole initial therapy D. Low dose aspirin alone, without an anti inflammatory dose E. Continued observation and antipyretics, with reassessment in 48 hours Fever ≥5 days with ≥4 of the principal clinical criteria (conjunctivitis, oral changes, rash, extremity changes, cervical lymphadenopathy), sterile pyuria, thrombocytosis, and early coronary dilation on echocardiogram establish Kawasaki disease; IVIG plus high dose aspirin given within 10 days of fever onset reduces the risk of coronary artery aneurysm."
+  },
+  {
+   "id": "usmle-2026-0047",
+   "type": "usmle",
+   "topic": "Surgery",
+   "subtopic": "Acute Cholangitis (Biliary Sepsis)",
+   "tags": [
+    "cholangitis",
+    "Reynolds-pentad",
+    "ERCP",
+    "biliary-decompression",
+    "biliary-sepsis"
+   ],
+   "source": "USMLE-style / MedKOS (surgery · hepatobiliary emergencies)",
+   "confidence": "high",
+   "date": "2026-07-14",
+   "path": "content/usmle/usmle-2026-0047.md",
+   "snippet": "A 68 year old woman is brought to the emergency department with 1 day of right upper quadrant pain, fever, and yellowing of her skin. Over the past 2 hours she has become confused, and her family notes she is unusually drowsy. Vital signs a",
+   "text": "Surgery Acute Cholangitis (Biliary Sepsis) cholangitis Reynolds-pentad ERCP biliary-decompression biliary-sepsis USMLE-style / MedKOS (surgery · hepatobiliary emergencies) A 68 year old woman is brought to the emergency department with 1 day of right upper quadrant pain, fever, and yellowing of her skin. Over the past 2 hours she has become confused, and her family notes she is unusually drowsy. Vital signs and laboratory studies are shown. Abdominal ultrasound shows a dilated common bile duct (12 mm) with an echogenic focus and posterior shadowing within it. Intravenous fluids and empiric broad spectrum antibiotics are started immediately. Which of the following is the most appropriate next step in management? A. Continue antibiotics alone and reassess clinical status in 24 hours B. Emergency open cholecystectomy to address the biliary source of infection C. Discharge home with outpatient MRCP scheduled within the next week D. Percutaneous transhepatic drainage while withholding antibiotics until cultures return E. Urgent ERCP for biliary decompression following resuscitation and antibiotics Fever, jaundice, and right upper quadrant pain plus new hypotension and altered mental status (Reynolds pentad) indicate suppurative cholangitis; after fluid resuscitation and empiric antibiotics, urgent biliary decompression — ERCP first line — is required to control the septic source."
+  },
+  {
+   "id": "usmle-2026-0046",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "Atrial Flutter (ECG rhythm recognition)",
+   "tags": [
+    "atrial-flutter",
+    "ECG",
+    "rate-control",
+    "anticoagulation",
+    "cardioversion"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · arrhythmia management)",
+   "confidence": "high",
+   "date": "2026-07-14",
+   "path": "content/usmle/usmle-2026-0046.md",
+   "snippet": "A 70 year old man with a history of COPD presents with 6 hours of palpitations and mild dyspnea. He denies chest pain or syncope. He is alert and oriented, and his skin is warm and well perfused. Vital signs are shown. An ECG (shown) reveal",
+   "text": "Cardiology Atrial Flutter (ECG rhythm recognition) atrial-flutter ECG rate-control anticoagulation cardioversion USMLE-style / MedKOS (cardiology · arrhythmia management) A 70 year old man with a history of COPD presents with 6 hours of palpitations and mild dyspnea. He denies chest pain or syncope. He is alert and oriented, and his skin is warm and well perfused. Vital signs are shown. An ECG (shown) reveals a regular, narrow complex tachycardia with sawtooth appearing atrial activity and 2:1 atrioventricular conduction. He is unsure exactly when his symptoms began, saying it may have started sometime yesterday. Thyroid and electrolyte panels are shown and are unremarkable. Which of the following is the most appropriate next step in management? A. Immediate synchronized electrical cardioversion despite stable hemodynamics B. Intravenous adenosine to attempt pharmacologic termination of the rhythm C. Rate control with an intravenous beta blocker as the initial step in management D. Immediate intravenous amiodarone for pharmacologic cardioversion today E. Electrical cardioversion today without prior transesophageal echocardiography A hemodynamically stable patient with atrial flutter of uncertain duration should receive rate control first, with anticoagulation risk stratified before any rhythm control attempt, since cardioverting flutter of unknown or 48 hour duration without adequate anticoagulation or a negative TEE risks embolic stroke."
+  },
+  {
+   "id": "usmle-2026-0045",
+   "type": "usmle",
+   "topic": "Microbiology",
+   "subtopic": "Atypical Pneumonia (Legionella pneumophila)",
+   "tags": [
+    "Legionella",
+    "atypical-pneumonia",
+    "hyponatremia",
+    "urinary-antigen"
+   ],
+   "source": "USMLE-style / MedKOS (microbiology · atypical pneumonia)",
+   "confidence": "high",
+   "date": "2026-07-14",
+   "path": "content/usmle/usmle-2026-0045.md",
+   "snippet": "A 58 year old man returns from a business trip and presents with a 3 day history of high fever, headache, and watery diarrhea followed by a dry cough and worsening dyspnea. He stayed at a hotel with a large decorative fountain and used the ",
+   "text": "Microbiology Atypical Pneumonia (Legionella pneumophila) Legionella atypical-pneumonia hyponatremia urinary-antigen USMLE-style / MedKOS (microbiology · atypical pneumonia) A 58 year old man returns from a business trip and presents with a 3 day history of high fever, headache, and watery diarrhea followed by a dry cough and worsening dyspnea. He stayed at a hotel with a large decorative fountain and used the hot tub daily. Chest x ray shows a patchy infiltrate in the right lower lobe. Sputum Gram stain shows many neutrophils but no visible organisms, and a routine sputum culture on standard blood agar shows no growth after 48 hours. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next diagnostic test to confirm the suspected diagnosis? A. Urinary antigen test for Legionella pneumophila serogroup 1 B. Repeat sputum culture on standard blood agar for an additional 48 hours C. Cold agglutinin titer to evaluate for Mycoplasma pneumoniae infection D. Sputum acid fast bacillus smear and culture for suspected tuberculosis E. Serum beta D glucan assay to evaluate for an invasive fungal infection Hotel water source exposure, high fever with a relatively low pulse, GI symptoms, hyponatremia, transaminitis, and a Gram stain with neutrophils but no organisms on a culture negative standard plate point to Legionella pneumonia; the urinary antigen test for serogroup 1 is the fastest confirmatory study, though it misses non serogroup 1 strains."
+  },
+  {
+   "id": "usmle-2026-0044",
+   "type": "usmle",
+   "topic": "Biochemistry",
+   "subtopic": "Fatty Acid Oxidation Disorder (MCAD Deficiency)",
+   "tags": [
+    "MCAD",
+    "fatty-acid-oxidation",
+    "hypoketotic-hypoglycemia",
+    "acylcarnitine"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · fatty acid oxidation)",
+   "confidence": "high",
+   "date": "2026-07-14",
+   "path": "content/usmle/usmle-2026-0044.md",
+   "snippet": "An 18 month old girl is brought to the emergency department after being found difficult to arouse this morning. She had a low grade fever and poor oral intake yesterday and missed both dinner and breakfast. On arrival she is lethargic but r",
+   "text": "Biochemistry Fatty Acid Oxidation Disorder (MCAD Deficiency) MCAD fatty-acid-oxidation hypoketotic-hypoglycemia acylcarnitine USMLE-style / MedKOS (biochemistry · fatty acid oxidation) An 18 month old girl is brought to the emergency department after being found difficult to arouse this morning. She had a low grade fever and poor oral intake yesterday and missed both dinner and breakfast. On arrival she is lethargic but responds to voice. Vital signs and laboratory studies are shown. Urine ketones are unexpectedly low given the degree of hypoglycemia present. Which of the following best explains the absence of ketosis in this hypoglycemic child? A. Impaired carnitine palmitoyltransferase 1 activity prevents long chain fatty acids from entering the mitochondria B. Deficient glucose 6 phosphatase activity prevents the final step of glycogenolysis and gluconeogenesis C. Deficient pyruvate dehydrogenase activity prevents conversion of pyruvate to acetyl CoA D. Deficient medium chain acyl CoA dehydrogenase activity blocks beta oxidation of medium chain fatty acids, limiting the acetyl CoA available for ketogenesis E. Deficient HMG CoA lyase activity blocks the terminal step of ketone body synthesis Hypoketotic hypoglycemia after a prolonged fast, elevated free fatty acids, normal lactate, and an elevated C8 (octanoylcarnitine) acylcarnitine species point to medium chain acyl CoA dehydrogenase (MCAD) deficiency, which blocks beta oxidation of medium chain fatty acids and starves the liver of the acetyl CoA needed for ketogenesis."
+  },
+  {
+   "id": "usmle-2026-0043",
+   "type": "usmle",
+   "topic": "Immunology",
+   "subtopic": "X-linked Agammaglobulinemia (Bruton's Disease)",
+   "tags": [
+    "XLA",
+    "BTK",
+    "B-cell-deficiency",
+    "primary-immunodeficiency",
+    "encapsulated-organisms"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · primary humoral immunodeficiency)",
+   "confidence": "high",
+   "date": "2026-07-14",
+   "path": "content/usmle/usmle-2026-0043.md",
+   "snippet": "A 5 month old boy is brought to the emergency department with a 2 day history of fever and productive cough. He was well until about 5 months of age. He has already had two episodes of otitis media and one episode of sinusitis, each treated",
+   "text": "Immunology X-linked Agammaglobulinemia (Bruton's Disease) XLA BTK B-cell-deficiency primary-immunodeficiency encapsulated-organisms USMLE-style / MedKOS (immunology · primary humoral immunodeficiency) A 5 month old boy is brought to the emergency department with a 2 day history of fever and productive cough. He was well until about 5 months of age. He has already had two episodes of otitis media and one episode of sinusitis, each treated with oral antibiotics. On examination, the tonsils are absent and no cervical lymph nodes are palpable. Chest x ray shows a right lower lobe infiltrate, and sputum culture grows Streptococcus pneumoniae. Vital signs and laboratory studies, including flow cytometry, are shown. Which of the following best describes the mechanism underlying this infant's disease? A. Impaired class switch recombination due to a defective CD40 ligand on activated T cells B. Arrest of B cell maturation at the pre B stage due to a defective Bruton tyrosine kinase C. Global arrest of lymphocyte development due to adenosine deaminase deficiency D. Failure of the neutrophil oxidative burst due to defective NADPH oxidase E. Failure of membrane attack complex formation due to a terminal complement component deficiency Absent tonsils/lymph nodes, recurrent encapsulated organism infections beginning once maternal antibody wanes, panhypogammaglobulinemia, and near absent CD19+ B cells in a male infant with a normal neutrophil count and complement activity point to X linked agammaglobulinemia: a BTK mutation that arrests B cell maturation at the pre B stage."
+  },
+  {
+   "id": "paper-2026-0082",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of cardiovascular nursing",
+   "confidence": "medium",
+   "date": "2026-07-14",
+   "path": "content/papers/2026/2026-07-14_paper-2026-0082_sex_and_gender_focused_education_in_cardiovascular_nursing_i.md",
+   "snippet": "Title Sex and Gender Focused Education in Cardiovascular Nursing: Implications for Clinical Practice and Health Equity Authors Mattioli Anna Vittoria, Nasi Milena, Pinti Marcello Journal / DOI The Journal of cardiovascular nursing · DOI: 10",
+   "text": "Laboratory Medicine scraped pubmed PubMed / The Journal of cardiovascular nursing Title Sex and Gender Focused Education in Cardiovascular Nursing: Implications for Clinical Practice and Health Equity Authors Mattioli Anna Vittoria, Nasi Milena, Pinti Marcello Journal / DOI The Journal of cardiovascular nursing · DOI: 10.1097/JCN.0000000000001359 · PMID: 42447404 https://pubmed.ncbi.nlm.nih.gov/42447404/ Abstract BACKGROUND: Sex and gender based differences significantly influence cardiovascular disease presentation, diagnosis, treatment response, and outcomes, contributing to persistent health disparities. Despite this, gender focused education remains inconsistently integrated into cardiovascular nursing curricula. PURPOSE: Our aim, in this discussion paper was to examine the benefits and challenges of incorporating sex and gender focused care into cardiovascular nursing education and to highlight its role in improving clinical practice and promoting health equity. CONCLUSIONS: Integrating gender focused education enhances nurses' ability to recognize both sex and gender specific differences, improves clinical decision making, and supports more equitable care delivery. However, implementation is limited by curriculum constraints, lack of faculty expertise, and the risk of reinforcing stereotypes. Structured, evidence based approaches are needed to ensure effective integration. CLINICAL IMPLICATIONS: Embedding sex and gender focused care into nursing education can improve diagnostic accuracy, optimize treatment strategies, and foster patient centered and culturally responsive care. This approach is essential to reduce disparities and enhance outcomes in cardiovascular health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0081",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Computers, informatics, nursing : CIN",
+   "confidence": "medium",
+   "date": "2026-07-14",
+   "path": "content/papers/2026/2026-07-14_paper-2026-0081_lasting_empowerment_after_discontinuing_a_heart_failure_tele.md",
+   "snippet": "Title Lasting Empowerment After Discontinuing a Heart Failure Telemonitoring Program: A Randomized Controlled Trial Authors Beltrán Jesús, Achury Diana, García Peña Ángel, Fernández Daniel, Muñoz Oscar Journal / DOI Computers, informatics, ",
+   "text": "Cardiology scraped pubmed PubMed / Computers, informatics, nursing : CIN Title Lasting Empowerment After Discontinuing a Heart Failure Telemonitoring Program: A Randomized Controlled Trial Authors Beltrán Jesús, Achury Diana, García Peña Ángel, Fernández Daniel, Muñoz Oscar Journal / DOI Computers, informatics, nursing : CIN · DOI: 10.1097/CIN.0000000000001597 · PMID: 42447390 https://pubmed.ncbi.nlm.nih.gov/42447390/ Abstract This study evaluated the long term effects of the ControlVit mobile application on clinical outcomes and patient empowerment in individuals with chronic heart failure (HF), 6 months after discontinuation of the app. In this open label, randomized, controlled clinical trial, patients were assigned to either an intervention group receiving standard HF management plus the ControlVit app for 6 months or to a control group receiving standard care alone. After 6 months, app use was discontinued, and all participants were followed for an additional 6 months. The primary outcome was the composite of death or HF related hospital readmission at 12 months, whereas secondary outcomes included changes in body weight, natriuretic peptide levels, New York Heart Association (NYHA) functional class, and patient empowerment, measured using the Empowerment Evaluation Scale (EES). A total of 140 patients were enrolled (28.6% women; mean age, 67 y). At 12 months, 8 patients (11.4%) in the intervention group and 3 patients (4.3%) in the control group experienced the primary outcome [relative risk (RR): 2.62; 95% CI: 0.73 9.52; P=.122). Empowerment levels were significantly higher among app users compared with controls (EES score: 4.68 ± 0.36 vs. 4.40 ± 1.91; P=.012). Use of SGLT2 inhibitors and ARNi increased significantly in both groups during follow up (ControlVit: 60% to 85%, P<.001; Control: 51.4% to 75%, P<.001). Among outpatients with chronic HF participating in a structured HF program, the addition of a mobile telemonitoring application did not reduce mortality or HF readmissions 6 months after its discontinuation. However, the intervention was associated with sustained improvements in patient empowerment, suggesting a lasting behavioral impact beyond the period of active app use. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0080",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0080_the_h63d_polymorphism_in_the_hfe_gene_promotes_aggressive_di.md",
+   "snippet": "Title The H63D Polymorphism in the HFE Gene Promotes Aggressive Disease Phenotypes in Pancreatic Ductal Adenocarcinoma Authors Rubbino Federica, Greco Luana, Scagliotti Alessandro, Di Cristofaro Alessio, de Murtas Valentina, De Simone Gabri",
+   "text": "Surgery scraped pubmed PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research Title The H63D Polymorphism in the HFE Gene Promotes Aggressive Disease Phenotypes in Pancreatic Ductal Adenocarcinoma Authors Rubbino Federica, Greco Luana, Scagliotti Alessandro, Di Cristofaro Alessio, de Murtas Valentina, De Simone Gabriele, Forciniti Stefania, Grizzi Fabio, et al. Journal / DOI Clinical cancer research : an official journal of the American Association for Cancer Research · DOI: 10.1158/1078 0432.CCR 25 4154 · PMID: 42440369 https://pubmed.ncbi.nlm.nih.gov/42440369/ Abstract PURPOSE: Controversy exists regarding the association between HFE H63D polymorphism and pancreatic ductal adenocarcinoma (PDAC). This study initially assessed the frequency of H63D in PDAC patients and subsequently investigated correlations between genotype and disease phenotype. EXPERIMENTAL DESIGN: H63D prevalence was determined by genotyping 795 PDAC patients from two retrospective cohorts of unselected (n = 389) or surgically resected (n = 171) individuals, and one prospective cohort of resectable cases (n = 235). Associations between H63D status and clinicopathological variables were retrospectively evaluated in unselected patients and prospectively validated in surgical candidates. The phenotypic impact of H63D carriage was also investigated using a genetically engineered KCH67D murine model and PDAC cell lines. Spatial transcriptomics was applied to human PDAC samples to define genotype associated microenvironmental and cell cycle alterations. RESULTS: H63D prevalence was higher in patients with resectable PDAC (37.7%, 37.4%, and 34% across cohorts) than in those with unresectable disease (22.4%) or the general population (24.1%). Despite this, resected H63D carriers had significantly worse outcomes, with the variant emerging as an independent predictor of shorter disease free survival (p = 0.002). Consequently, KCh67d mice developed earlier, larger tumors with increased metastatic spread. H63D PDAC cells and tumor spatial transcriptomic showed enhanced invasiveness, G1 phase accumulation, and TGFβ independent EMT activation. CONCLUSIONS: The H63D variant is strongly associated with PDAC resectability and, paradoxically, with a poorer post surgical outcome. Activation of a TWIST1 dependent EMT program within a G1 enriched cellular context underlies the more aggressive phenotype of H63D PDAC, possibly accounting for the clinical conundrum. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0079",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of imaging informatics in medicine",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0079_jade_plus_a_multimodal_agentic_retrieval_augmented_generatio.md",
+   "snippet": "Title JADE Plus: A Multimodal Agentic Retrieval Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study Authors Baseri Saadi Soroush, Ver Berne Jonas, Fontenele Roc",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of imaging informatics in medicine Title JADE Plus: A Multimodal Agentic Retrieval Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study Authors Baseri Saadi Soroush, Ver Berne Jonas, Fontenele Rocharles Cavalcante, Claes Peter, Jacobs Reinhilde Journal / DOI Journal of imaging informatics in medicine · DOI: 10.1007/s10278 026 02086 9 · PMID: 42440194 https://pubmed.ncbi.nlm.nih.gov/42440194/ Abstract Diagnosing jawbone lesions in oral and maxillofacial radiology remains challenging due to overlapping radiological features and the need for integrated clinical reasoning. This study aimed to develop and validate JADE Plus, a novel multimodal, agent controlled retrieval augmented generation (RAG) framework for diagnostic decision support in jawbone lesion assessment. JADE Plus was implemented as a cloud based, tablet optimized system integrating a vision language model (VLM) for panoramic radiograph analysis, a knowledge grounded RAG module, and an agentic verification loop for diagnostic fusion and re ranking. The system was evaluated using 40 representative jawbone lesion cases and compared with JADE, GPT 5.4, GPT 5.4 VLM, and ORAD. Performance was assessed using Top 1 and Top 3 accuracy, ablation and statistical analyses, intra model stability, and response time. JADE Plus achieved the highest diagnostic performance, with a Top 1 accuracy of 90% (36/40; 95% CI 76 97%) and a Top 3 accuracy of 100%, with no missed diagnoses. Cochran's Q test demonstrated significant differences among models for both Top 3 correctness (Q = 25.66, p < 0.001) and Top 1 correctness (Q = 27.55, p < 0.001). Post hoc McNemar tests with the Benjamini Hochberg correction showed that JADE Plus significantly outperformed other models, particularly under the stricter Top 1 evaluation. Ablation analysis showed that the agentic verification stage improved Top 1 and Top 3 accuracy by 15 and 8 percentage points, respectively. JADE Plus achieved the highest reproducibility (mean Jaccard similarity 0.97 ± 0.12) while maintaining a mean response time of 33 ± 1.5 s per case. JADE Plus demonstrated superior diagnostic accuracy, stability, and reproducibility compared with baseline systems, supporting multimodal agentic RAG frameworks for jawbone lesion diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0078",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0078_gut_derived_sodium_butyrate_attenuates_liver_fibrosis_by_inh.md",
+   "snippet": "Title Gut Derived Sodium Butyrate Attenuates Liver Fibrosis by Inhibiting Aerobic Glycolysis via the HDAC3/c Myc Signaling Axis Authors Sun Yong, Wu Huayue, Zhou Yutong, Yin Pengsheng, Wu Long, Li Haiyang, Zuo Shi, Yang Zhe, et al. Journal ",
+   "text": "Pathology scraped pubmed PubMed / FASEB journal : official publication of the Federation of American Societies for Experimental Biology Title Gut Derived Sodium Butyrate Attenuates Liver Fibrosis by Inhibiting Aerobic Glycolysis via the HDAC3/c Myc Signaling Axis Authors Sun Yong, Wu Huayue, Zhou Yutong, Yin Pengsheng, Wu Long, Li Haiyang, Zuo Shi, Yang Zhe, et al. Journal / DOI FASEB journal : official publication of the Federation of American Societies for Experimental Biology · DOI: 10.1096/fj.202504713R · PMID: 42440300 https://pubmed.ncbi.nlm.nih.gov/42440300/ Abstract Liver fibrosis remains a major global health challenge, driving interest in bioactive metabolites from natural sources as potential therapies. Sodium butyrate (NaB), a gut microbiota derived short chain fatty acid with notable anti fibrotic activity, shows promise, although its mechanisms remain unclear. This study aims to explore the molecular mechanisms through which NaB attenuates liver fibrosis. This study integrates bioinformatics and network pharmacology to predict the molecular targets through which NaB exerts its anti fibrotic effects. Candidate targets were validated through molecular docking, histopathology, CETSA, and SPR. The inferred mechanisms were further validated in vitro (LX 2 cells) and in vivo (CCl4 induced mice) using Western blot, IF Co IP, RT qPCR, ELISA, and histopathological staining. HDAC3 was identified as a key driver of liver fibrosis. As a natural HDAC3 inhibitor, NaB markedly attenuated CCl4 induced hepatic injury and fibrosis, accompanied by reduced expression of HDAC3, c Myc, glycolytic enzymes (HK2, PFKFB3, and PKM2), and fibrotic markers (α SMA and type I collagen) in fibrotic liver tissues and LX 2 cells. Mechanistically, NaB exerts its anti fibrotic effects by inhibiting HDAC3 expression and deacetylase activity, promoting c Myc acetylation and downregulating its expression, thereby suppressing glycolytic metabolic reprogramming in hepatic stellate cells. These findings indicate that NaB attenuates liver fibrosis by inhibiting HDAC3/c Myc mediated metabolic reprogramming, revealing a gut derived anti fibrotic mechanism and potential therapeutic targets. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0077",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0077_role_of_ctdna_tumor_fraction_in_selecting_immunotherapy_base.md",
+   "snippet": "Title Role of ctDNA Tumor Fraction in Selecting Immunotherapy Based Regimens in Advanced Non small Cell Lung Cancer Authors Dall'Olio Filippo G, Zrafi Wael, Vasseur Damien, Garcia Camilo, Beshiri Kristi, Marinello Arianna, Tagliamento Marco",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research Title Role of ctDNA Tumor Fraction in Selecting Immunotherapy Based Regimens in Advanced Non small Cell Lung Cancer Authors Dall'Olio Filippo G, Zrafi Wael, Vasseur Damien, Garcia Camilo, Beshiri Kristi, Marinello Arianna, Tagliamento Marco, Planchard David, et al. Journal / DOI Clinical cancer research : an official journal of the American Association for Cancer Research · DOI: 10.1158/1078 0432.CCR 25 3917 · PMID: 42440365 https://pubmed.ncbi.nlm.nih.gov/42440365/ Abstract BACKGROUND: Immune checkpoint blockers (ICBs) have transformed advanced non small cell lung cancer (aNSCLC) treatment, but identifying patients who benefit from adding chemotherapy remains challenging, especially in PD L1 ≥ 50%. PD L1 is an imperfect biomarker, highlighting the need for better selection tools. METHODS: Liquid biopsy (LBx) assessment was performed using hybrid capture based next generation sequencing of plasma cell free DNA. LBx data, molecular profile, and clinico pathological data were collected. The predictive and prognostic values of tumor fraction (TF) were assessed using a de identified nationwide (US based) NSCLC clinicogenomic database (CGDB). An independent cohort with aNSCLC from Gustave Roussy was used to validate the findings and to study the correlation of ctDNA tumor fraction and total metabolic tumor volume (tMTV) and its molecular correlates. RESULTS: In the CGDB Database (n=965), elevated ctDNA TF was prognostic for worse outcomes on ICBs and, when ≥5%, predictive of benefit from ICB+chemotherapy (HR for real world progression free survival 0.58 [0.41 0.82], p=0.002). The 5% cutoff for TF was validated in an independent cohort from Gustave Roussy. In 283 patients with paired PET scans, ctDNA TF correlated with metabolic tumor volume (rho=0.46, p<0.001) and was influenced by TP53/RB1 mutations. CONCLUSIONS: ctDNA TF integrates disease burden and biology. Patients with high ctDNA TF derive greater benefit from chemo immunotherapy, supporting its use as a biomarker to guide treatment intensification. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0076",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of endocrinological investigation",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0076_comparative_effectiveness_of_subcutaneous_glp_1_receptor_ago.md",
+   "snippet": "Title Comparative effectiveness of subcutaneous GLP 1 receptor agonists versus SGLT2 inhibitors on metabolic and hepatic outcomes in T2DM with MASLD: a propensity score matched study Authors Toffoli Barbara, Sirignano Matteo, Bonato Valeria",
+   "text": "Nephrology scraped pubmed PubMed / Journal of endocrinological investigation Title Comparative effectiveness of subcutaneous GLP 1 receptor agonists versus SGLT2 inhibitors on metabolic and hepatic outcomes in T2DM with MASLD: a propensity score matched study Authors Toffoli Barbara, Sirignano Matteo, Bonato Valeria, Fusaro Giulia, Russo Erica, Velardi Valerio, Crocè Lory Saveria, Fabris Bruno, et al. Journal / DOI Journal of endocrinological investigation · DOI: 10.1007/s40618 026 02976 3 · PMID: 42440238 https://pubmed.ncbi.nlm.nih.gov/42440238/ Abstract AIMS: Metabolic dysfunction associated steatotic liver disease (MASLD) frequently coexists with type 2 diabetes mellitus (T2DM), complicating its management. In this population, we aimed to compare the effectiveness of subcutaneous GLP 1 receptor agonists (scGLP 1RA) to SGLT2 inhibitors (SGLT2i) on metabolic and hepatic parameters, while investigating the influence of GLP1R and PNPLA3 genetic variants on treatment response. METHODS: This retrospective study included patients with T2DM starting scGLP 1RA or SGLT2i, balanced through Propensity Score Matching (PSM) to account for baseline clinical differences. Clinical and biochemical data were compared at baseline and after one year of treatment. Genotyping was performed for PNPLA3 (rs738409) and GLP1R (rs761387, rs6923761) polymorphisms. Multivariable linear regression was used to identify independent predictors of HbA1c, BMI, and transaminase reduction. RESULTS: Both drug classes significantly improved glycemic control and BMI. However, scGLP 1RA demonstrated superior efficacy in HbA1c and BMI reduction compared to SGLT2i (β = 0.349, p = 0.001; β = 0.711, p = 0.045). In MASLD subgroups (baseline ALT 35 U/L or hepatic steatosis), only scGLP 1RA led to a significant reduction in ALT levels (p = 0.02). Multivariable analysis identified the GLP1R rs761387 G allele as an independent predictor of a blunted glycemic response (β = 0.277, p = 0.018). CONCLUSIONS: In a real world setting, scGLP 1RA showed higher potency than SGLT2i on metabolic and hepatic parameters. These findings support the preferential use of scGLP 1RA in patients with T2DM and MASLD and are consistent with current international recommendations. The association between GLP1R rs761387 variant and HbA1c reduction sheds light on the impact of this variant on treatment response. Further studies are needed to validate this genetic predictor in broader populations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0075",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Avian diseases",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0075_epidemiology_antimicrobial_resistance_and_genetic_determinan.md",
+   "snippet": "Title Epidemiology, Antimicrobial Resistance, and Genetic Determinants of Methicillin Resistant Staphylococcus aureus (MRSA) in Broiler Chickens with Arthritis Authors El Sharkawy Hanem, Marzok Mohamed, Al Rasheed Mohammed, Tahoun Amin Jour",
+   "text": "Infectious Disease scraped pubmed PubMed / Avian diseases Title Epidemiology, Antimicrobial Resistance, and Genetic Determinants of Methicillin Resistant Staphylococcus aureus (MRSA) in Broiler Chickens with Arthritis Authors El Sharkawy Hanem, Marzok Mohamed, Al Rasheed Mohammed, Tahoun Amin Journal / DOI Avian diseases · DOI: 10.1637/aviandiseases D 25 00060 · PMID: 42440286 https://pubmed.ncbi.nlm.nih.gov/42440286/ Abstract Methicillin resistant Staphylococcus aureus (MRSA) is a serious zoonotic pathogen that poses significant threats to both public health and the poultry industry due to its multidrug resistance and virulence. In broiler chickens, MRSA infections are commonly associated with arthritis, resulting in impaired mobility, reduced productivity, and economic losses. This study aimed to investigate the epidemiology, antimicrobial resistance profiles, and genetic determinants of MRSA in broiler chickens presenting with clinical arthritis in the Kafr El Sheikh Governorate, northern Egypt. In this study, 100 broiler farms were randomly selected from a list provided by the local veterinary authority in Kafr El Sheikh Governorate. Of these, 20 medium sized farms (5000 10,000 birds per cycle) had clinically arthritic chickens. A total of 140 synovial fluid samples (six to eight chickens per farm) were aseptically collected from affected birds. The affected farms represented approximately 4.8% of the total broiler farms in the governorate and were distributed across different districts, indicating that MRSA associated arthritis was not confined to a single locality. Bacterial isolation was performed using selective culture media and confirmed via biochemical tests and PCR targeting the nuc gene. Antimicrobial susceptibility testing was conducted using the Kirby Bauer disk diffusion method against 16 antibiotics following CLSI 2020 guidelines. Molecular screening for resistance and virulence genes (mecA, vanA, hig) was performed by uniplex PCR. Phylogenetic analysis of 16S rRNA sequences was carried out using the Maximum Likelihood method. Clinical signs included joint swelling, deformity, and impaired locomotion. Epidemiological analysis revealed that MRSA associated arthritis was detected in (3/20) 15% of infected farms, with 7.67 ± 1.53% of birds affected within infected flocks. Staphylococcus aureus was isolated from 60% of footpad abscesses and 65% of hock joint swellings. All isolates were resistant to multiple β lactam antibiotics, including oxacillin, cefoxitin, penicillin G, and piperacillin. High resistance was also observed to clindamycin, cephradine, and cephalexin. The most effective agents were ampicillin sulbactam and vancomycin. The mecA and nuc genes were detected in all isolates, and vanA and hig genes were detected in 5% and 25% of isolates, respectively. Phylogenetic analysis confirmed the close genetic relatedness of the local isolate (PQ879639.1) to global S. aureus strains. MRSA is an emerging pathogen in broiler flocks with a marked capacity for antimicrobial resistance and zoonotic transmission. The detection of multidrug resistant strains carrying key resistance genes highlights the urgent need for enhanced biosecurity, prudent antimicrobial use, and routine monitoring programs to mitigate its impact on poultry and public health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0074",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR formative research",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0074_a_mobile_health_platform_for_heart_failure_self_management_f.md",
+   "snippet": "Title A Mobile Health Platform for Heart Failure Self Management: Feasibility Study on Patient Engagement, Acceptance, and Potential Health Outcomes Authors Li Jane, Varnfield Marlien, Bayor Andrew A, Good Norm, Rheault Haunnah, Beevors Est",
+   "text": "Cardiology scraped pubmed PubMed / JMIR formative research Title A Mobile Health Platform for Heart Failure Self Management: Feasibility Study on Patient Engagement, Acceptance, and Potential Health Outcomes Authors Li Jane, Varnfield Marlien, Bayor Andrew A, Good Norm, Rheault Haunnah, Beevors Estelle, Stibijl Kathryn, Roxas Maricel, et al. Journal / DOI JMIR formative research · DOI: 10.2196/89416 · PMID: 42440360 https://pubmed.ncbi.nlm.nih.gov/42440360/ Abstract BACKGROUND: Heart failure is a chronic condition that significantly impacts patients' quality of life and increases health care burden. Effective self monitoring and lifestyle modification are essential components of heart failure management and can support improved health outcomes. Mobile health technologies, such as smartphone apps, are increasingly used to assist patients with heart failure in self management. However, evidence regarding patient engagement, user experience, and the effectiveness of these mobile health tools remains limited and continues to evolve. OBJECTIVE: This study aimed to explore the feasibility of a mobile health platform, MoTER HF, which incorporates a smartphone app and a web based clinical portal to support self management in patients with heart failure. METHODS: The feasibility study used a single group pretest posttest mixed methods design. A total of 23 participants diagnosed with heart failure were recruited to use the app and 2 Bluetooth enabled measurement devices (a blood pressure monitor and a digital weight scale) over a 12 week period. Participants' engagement and acceptance were assessed using a satisfaction questionnaire, semistructured interviews, and platform usage logs. Potential health and behavioral outcomes were explored using validated instruments administered at baseline and week 12. RESULTS: Most participants found the MoTER HF app easy to use and aligned with their routine self monitoring practices. Daily monitoring features such as blood pressure and weight tracking were used frequently. However, features such as symptom tracking and exercise logging were used less often, reflecting individual preferences and perceived relevance. Participants reported improved self monitoring practices and valued the ability to visualize and track their data, and the reassurance provided through nurses' oversight in the satisfaction questionnaire and interviews. Changes in health and behavioral outcome measures were not statistically significant, although exploratory changes were observed in the scores of self care, quality of life, and psychological well being. CONCLUSIONS: The MoTER HF platform has demonstrated potential in supporting self management among individuals with heart failure, particularly when it incorporates features that participants find engaging. Further research is needed to better understand the platform's impact on health outcomes and the implementation challenges, and to involve clinicians in developing a scalable digital model of care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0169",
    "type": "kmle",
@@ -665,6 +921,118 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0138.md",
    "snippet": "64세 남자가 3시간 전부터 지속되는 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통이나 호흡곤란은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아데노신을 빠르게 정주한다 B. 비동기 제세동을 즉시 시행한다 C. 정맥 딜티아젬으로 심박수를 조절한다 D. 경구 아스피린만 투여하고 퇴원시킨다 E. 미주신경자극수기만 반복 시행한다 심전도의 규칙적 좁은 QRS ",
    "text": "Cardiology Atrial Flutter atrial-flutter rate-control diltiazem AV-nodal-blocker narrow-complex-tachycardia KMLE 2026 / Claude Routine 64세 남자가 3시간 전부터 지속되는 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통이나 호흡곤란은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아데노신을 빠르게 정주한다 B. 비동기 제세동을 즉시 시행한다 C. 정맥 딜티아젬으로 심박수를 조절한다 D. 경구 아스피린만 투여하고 퇴원시킨다 E. 미주신경자극수기만 반복 시행한다 심전도의 규칙적 좁은 QRS 빈맥에 톱니모양 조동파와 대략 2:1 방실전도(심실 약 150회)는 심방조동이다. 혈역학적으로 안정적이므로 즉각 심율동전환보다 방실결절차단제(딜티아젬 등)로 심박수를 먼저 조절한다."
+  },
+  {
+   "id": "paper-2026-0073",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International ophthalmology",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0073_risk_factors_for_iatrogenic_retinal_breaks_during_induction_.md",
+   "snippet": "Title Risk factors for iatrogenic retinal breaks during induction of posterior vitreous detachment in macula surgery Authors Paris Jai Ethan, Macri Carmelo Zak, Agrawal Surbhi, Lake Stewart, Chan Weng Onn Journal / DOI International ophthal",
+   "text": "Surgery scraped pubmed PubMed / International ophthalmology Title Risk factors for iatrogenic retinal breaks during induction of posterior vitreous detachment in macula surgery Authors Paris Jai Ethan, Macri Carmelo Zak, Agrawal Surbhi, Lake Stewart, Chan Weng Onn Journal / DOI International ophthalmology · DOI: 10.1007/s10792 026 04162 z · PMID: 42437431 https://pubmed.ncbi.nlm.nih.gov/42437431/ Abstract PURPOSE: To determine risk factors for retinal breaks (RB) during the surgical induction of posterior vitreous detachment (IPVD) in macula surgery. METHODS: We retrospectively reviewed electronic records for all adult patients undergoing 25 G or 27 G vitrectomy for macula pathology between November 2019 and January 2024 requiring intraoperative IPVD. We excluded eyes with pre existing PVD, panretinal photocoagulation, trauma, age < 18 years or missing information. The outcome measure was non sclerotomy related iatrogenic RB. We assessed the effect of age, gauge size (25 G vs 27 G), surgical indication (epiretinal membrane [ERM] vs macular hole[MH]/vitreomacular traction syndrome[VMTS]), lens status (Phakic vs Aphakic/Pseudophakic) and surgeon (Consultant vs Fellow) on the odds of RB. RESULTS: Among 185 eyes included in our study, 15.1% experienced a RB during IPVD. Breaks were predominantly located in the inferior retina (69%). Multivariable analysis revealed gauge size significantly impacted RB rate (27 G OR 0.13 95%CI 0.03 0.60, p = 0.008). Other factors including age (OR 0.98 95%CI 0.96 1.01, p = 0.18), lens status (Phakic OR 0.36 95%CI 0.13 1.01, p = 0.053), surgeon grade (Fellow OR 1.8 95%CI 0.18 18.9, p = 0.61) and surgical indication (MH OR 0.70 95%CI 0.30 1.7, p = 0.42) were not significantly associated with odds of RB. CONCLUSIONS: There is a high rate of iatrogenic RB in eyes requiring IPVD undergoing macula surgery. Smaller instrument gauge size was associated with lower odds of RB during IPVD, however causal inferences cannot be drawn from these findings. Neither age, surgical indication nor lens status were associated with odds of RB. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0072",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Iranian journal of allergy, asthma, and immunology",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0072_comparison_of_the_efficacy_of_different_doses_of_glucocortic.md",
+   "snippet": "Title Comparison of the Efficacy of Different Doses of Glucocorticoid Nasal Spray Combined with Loratadine in the Treatment of Rhinitis in Children: A Randomized Clinical Trial Authors Wang Huiying, Ren Zhen Journal / DOI Iranian journal of",
+   "text": "Pediatrics scraped pubmed PubMed / Iranian journal of allergy, asthma, and immunology Title Comparison of the Efficacy of Different Doses of Glucocorticoid Nasal Spray Combined with Loratadine in the Treatment of Rhinitis in Children: A Randomized Clinical Trial Authors Wang Huiying, Ren Zhen Journal / DOI Iranian journal of allergy, asthma, and immunology · PMID: 42437310 https://pubmed.ncbi.nlm.nih.gov/42437310/ Abstract Pediatric rhinitis is a common recurrent disorder that may progress to asthma or sinusitis in severe cases. This study aimed to compare the efficacy of different doses of glucocorticoid nasal spray combined with loratadine for rhinitis in children, and provide evidence for optimizing clinical treatment. A total of 150 children with rhinitis admitted from June 2022 to June 2024 were divided into three groups: group I (low dose group, n=50), group II (medium dose group, n=50), and group III (high dose group, n=50). Patients in all three groups were treated with a glucocorticoid nasal spray with loratadine combined with antihistamines. The immune function, serum inflammatory factor level, quantitative Lund Kennedy score by nasal endoscopy, nasal symptom score, Quality of Life Questionnaire (RQLQ) scores, clinical efficacy, incidence of adverse events, and treatment compliance were assessed. Post treatment, all indices improved in the three groups. The percentages of CD4+ and CD8+ T cells, IL 10 content, and clinical efficacy in groups II and III were significantly higher than those in group I, while the immunoglobulin E (IgE), IL 6 and IL 17 content, the quantitative Lund Kennedy score of nasal endoscopy, the children's nasal symptom scores, the RQLQ scores, and the incidence rate of adverse events were below in group I. No significant differences were found between groups II and III in all indices, nor in treatment compliance across the three groups. Loratadine combined with a glucocorticoid nasal spray therapy effectively improves clinical outcomes, inflammation, immune function, symptoms, and quality of life in rhinitis in children, with high clinical application value. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0071",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Orvosi hetilap",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0071_fitness_to_drive_legal_context_and_new_opportunities_for_cog.md",
+   "snippet": "Title [Fitness to drive: legal context and new opportunities for cognitive assessment] Authors Szabó Gábor, Baksa Judit, Cserháti Péter, Fazekas Gábor Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33599 · PMID: 42437471 https://pubme",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Orvosi hetilap Title [Fitness to drive: legal context and new opportunities for cognitive assessment] Authors Szabó Gábor, Baksa Judit, Cserháti Péter, Fazekas Gábor Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33599 · PMID: 42437471 https://pubmed.ncbi.nlm.nih.gov/42437471/ Abstract Decisions regarding driving licence eligibility represents a complex medical and legal challenge, requiring careful consideration of both public safety and individual interests. The present paper provides a brief overview of the legal and administrative framework of fitness to drive evaluation, the roles of the professionals involved in the process, and key issues related to cognitive assessment. While physical symptoms associated with neurological conditions are generally objectively identifiable, cognitive impairments often remain less apparent and may significantly affect driving ability even in milder forms. The diagnostic accuracy of currently used neuropsychological tests is moderate, which limits the reliability of clinical decision making. In this context, we present a prospective study conducted in stroke patients, in which a validated model based on the combination of multiple neuropsychological tests and logistic regression was developed. The model explicitly accounts for uncertainty and does not enforce categorical decisions in all cases, thereby allowing clinicians to refrain from definitive judgement in borderline cases. Although the method was validated in a stroke population, the proposed approach may be extended in future research to larger populations, such as older drivers. This would require the selection and validation of age specific cognitive tests, which may support decision making already at the level of primary care. Orv Hetil. 2026; 167(28): 1097 1104. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0070",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of pharmaceutical sciences",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0070_tagetes_patula_l_flower_methanolic_extract_exhibited_benefic.md",
+   "snippet": "Title Tagetes patula L. flower methanolic extract exhibited beneficial actions against hepatocellular carcinoma via induction of apoptosis Authors Ajab Khan Asfandyar, Kashif Muhammad, Khan Hazar, Razzak Anam, Aslam Shazmeen, Bano Samina, F",
+   "text": "Pathology scraped pubmed PubMed / Pakistan journal of pharmaceutical sciences Title Tagetes patula L. flower methanolic extract exhibited beneficial actions against hepatocellular carcinoma via induction of apoptosis Authors Ajab Khan Asfandyar, Kashif Muhammad, Khan Hazar, Razzak Anam, Aslam Shazmeen, Bano Samina, Faizi Shaheen, Roome Talat Journal / DOI Pakistan journal of pharmaceutical sciences · DOI: 10.36721/PJPS.2026.39.9.267.1 · PMID: 42437333 https://pubmed.ncbi.nlm.nih.gov/42437333/ Abstract BACKGROUND: Hepatocellular carcinoma (HCC) is considered as a primary malignant tumor with limited treatment options. Tagetes patula flower methanolic extract, containing patuletin as major flavonoid, was reported to exhibit beneficial effects against various cancer cell lines. OBJECTIVE: Keeping this in view, the present study was designed to assess their beneficial action against HCC in both in vitro and in vivo models. METHODS: The anti HCC (Hep G2 cancer cell line) action was determined (Sulforhodamine B assay) followed by apoptosis (Annexin V) assay. For in vivo assessment, diethylnitrosamine (DEN) induced HCC rat model was used. The parameters evaluated involve body and liver weights, CBC, LFT, histopathology and expression of inflammatory cytokines (TNF α, IL 6 and AFP). RESULTS: The extract caused dose dependent inhibition of growth (IC50=176±23 μg/ml) against Hep G2 cells, while patuletin failed to exhibit any such action. Furthermore, the Tagetes extract treatment resulted in a significant decrease in cell viability and a corresponding increase in apoptosis (both early and late phase), comparable to the effects observed with vinblastine. In rats, DEN treatment also decreased the body weight, altered liver architecture and raised cytokines levels. All of these effects were neutralized by extract in both prevention and treatment protocols. CONCLUSION: Overall, T. patula flower methanolic extract has demonstrated beneficial effects in in vitro and in vivo models of HCC. Hence, it presents itself as a potential source for anti HCC drug development. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0069",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of pharmaceutical sciences",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0069_effect_of_quercetin_on_aconitine_induced_renal_interstitial_.md",
+   "snippet": "Title Effect of quercetin on aconitine induced renal interstitial fibrosis and its relationship with PI3K/Akt pathway Authors Feng Wei, Zhou Jie, Zheng Yuanjue, Li Yingang Journal / DOI Pakistan journal of pharmaceutical sciences · DOI: 10.",
+   "text": "Nephrology scraped pubmed PubMed / Pakistan journal of pharmaceutical sciences Title Effect of quercetin on aconitine induced renal interstitial fibrosis and its relationship with PI3K/Akt pathway Authors Feng Wei, Zhou Jie, Zheng Yuanjue, Li Yingang Journal / DOI Pakistan journal of pharmaceutical sciences · DOI: 10.36721/PJPS.2026.39.9.265.1 · PMID: 42437331 https://pubmed.ncbi.nlm.nih.gov/42437331/ Abstract BACKGROUND: Renal interstitial fibrosis (RIF) is a critical pathological outcome of chronic kidney disease (CKD). Aconitine has been shown to induce RIF, with the phosphatidylinositol 3 kinase/protein kinase B (PI3K/Akt) signaling pathway potentially playing a key role in this process. Quercetin, a natural flavonoid compound, exhibits anti fibrotic effects that may be associated with this pathway. However, there is no clear evidence yet regarding its role in aconitine induced RIF. OBJECTIVES: This study aimed to investigate the intervention effect of quercetin on aconitine induced RIF and the role of PI3K/Akt pathway in its mechanism. METHODS: A mouse model of RIF was established and the animals were randomly assigned to the following groups: normal control, aconitine model, low dose quercetin, medium dose quercetin, high dose quercetin and high dose quercetin combined with the PI3K inhibitor S27673 MA. The extent of fibrosis and the expression of key molecules in the PI3K/Akt pathway were evaluated using histopathology, qPCR and Western blot. RESULTS: Compared to the model group, the high dose quercetin group exhibited an approximately 60% reduction in fibrotic area (P<0.01). Moreover, quercetin significantly suppressed the overexpression of phospho PI3K (p PI3K), phospho AKT (p AKT), neutrophil elastase (NE) and nuclear factor kappa B p65 (NF κB p65) at both transcriptional and protein levels in renal tissues (P<0.05). The use of the PI3K inhibitor S27673 MA further enhanced the anti fibrotic effect of quercetin and its inhibitory effect on the aforementioned molecules. CONCLUSION: Quercetin ameliorates aconitine induced RIF by inhibiting the PI3K/Akt pathway and its downstream NE/NF κB axis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0068",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Naunyn-Schmiedeberg's archives of pharmacology",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0068_molecular_characterization_of_virulence_and_resistance_deter.md",
+   "snippet": "Title Molecular characterization of virulence and resistance determinants in clinical Pseudomonas aeruginosa isolates: a cross sectional analysis of virulence resistance associations Authors Moursi Soha Abdallah, Saleem Mohd, Salem Alharbi ",
+   "text": "Infectious Disease scraped pubmed PubMed / Naunyn-Schmiedeberg's archives of pharmacology Title Molecular characterization of virulence and resistance determinants in clinical Pseudomonas aeruginosa isolates: a cross sectional analysis of virulence resistance associations Authors Moursi Soha Abdallah, Saleem Mohd, Salem Alharbi Mohammed, Rakha Ehab Badran Mohammed, Alshammari Ahmed Nawi, Aboras Rana, SyedKhaja AzharuddinSajid, Hossain Ashfaque Journal / DOI Naunyn Schmiedeberg's archives of pharmacology · DOI: 10.1007/s00210 026 05706 x · PMID: 42437416 https://pubmed.ncbi.nlm.nih.gov/42437416/ Abstract Pseudomonas aeruginosa is a clinically significant opportunistic pathogen characterized by intrinsic and acquired resistance mechanisms coupled with a diverse array of virulence determinants. This study investigated the distribution of P. aeruginosa in various clinical specimens (n = 382), its virulence genes, antimicrobial resistance patterns, and associations with total resistant P. aeruginosa (TRPA) phenotypes. The majority of isolates were recovered from sputum (24.3%) and endotracheal tube samples (22.5%). Virulence gene screening revealed moderate to high prevalence of lasB (55.0%), toxA (49.7%), pilA (53.7%), aprA (56.5%), phzS (45.0%), exoS (41.9%), and exoU (38.0%), indicating their widespread involvement in pathogenicity. Antimicrobial susceptibility profiling demonstrated the highest susceptibility to amikacin (56.3%) and gentamicin (52.4%), while resistance to carbapenems (imipenem 52.4%, meropenem 52.9%) and cephalosporins was alarmingly high. Based on resistance classification, 33.5% of isolates were MDR, and 9.7% XDR. Among ceftazidime resistant isolates (n = 200), 83% harboured ESBL genes, with blaCTX M (38.0%) being most prevalent. Notably, 30.7% and 22.8% of isolates carried blaNDM 1 and blaOXA 48, respectively. Comparative analysis demonstrated statistically significant associations between TRPA phenotype and virulence genes: lasB (OR = 90.3), toxA (OR = 260.9), and pilA (OR = 32.6) (p < 0.0001). Resistance determinants such as blaCTX M (OR = 3.5), aac(6') Ib (OR = 2.9), qnrA (OR = 3.9), and co carriage of NDM 1 + OXA 48 (OR = 4.9) were significantly enriched in TRPA isolates. These findings demonstrate a significant association between virulence and antimicrobial resistance traits, emphasizing the potential expansion of high risk P. aeruginosa clones in clinical settings and highlighting the need for genomic surveillance and antimicrobial stewardship interventions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0067",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Regenerative therapy",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0067_human_induced_pluripotent_stem_cell_derived_cardiomyocyte_pa.md",
+   "snippet": "Title Human induced pluripotent stem cell derived cardiomyocyte patch enhances cardiac regeneration in a J2N k hamster model of dilated cardiomyopathy Authors Inoue Koichi, Kugo Yosuke, Kawamura Takuji, Kaneda Eri, Fujimura Lisa, Ito Emiko,",
+   "text": "Cardiology scraped pubmed PubMed / Regenerative therapy Title Human induced pluripotent stem cell derived cardiomyocyte patch enhances cardiac regeneration in a J2N k hamster model of dilated cardiomyopathy Authors Inoue Koichi, Kugo Yosuke, Kawamura Takuji, Kaneda Eri, Fujimura Lisa, Ito Emiko, Takeda Maki, Harada Akima, et al. Journal / DOI Regenerative therapy · DOI: 10.1016/j.reth.2026.101154 · PMID: 42437293 https://pubmed.ncbi.nlm.nih.gov/42437293/ Abstract INTRODUCTION: Dilated cardiomyopathy (DCM) is a major cause of heart failure with limited therapeutic options beyond heart transplantation. This study aimed to evaluated the therapeutic potential of human induced pluripotent stem cell derived cardiomyocyte (hiPS CM) patch transplantation in a genetic DCM model. METHODS: hiPS CM patches were transplanted onto the left ventricular surface of adult J2N k hamsters with DCM. Cardiac function, survival, and histological evaluation were assessed. Single nucleus RNA sequencing using left ventricular myocardium was performed to investigate cell type specific transcriptional alteration associated with treatment. RESULTS: hiPS CM patch transplantation preserved cardiac function [left ventricular ejection fraction, 41.2 (38.9 42.8) vs. 43.4 (40.5 44.6) %, P = 0.07], improved survival [Hazrod ratio 0.39 (95% confidence interval 0.16 0.63), P < 0.05], reduced myocardial fibrosis [fibrous area, 10.2 (9.4 12.1) vs. 14.1 (13.1 18.3) %, P < 0.05], and increased capillary density [CD 31 positive cells cout, 373.2 (336.4 441.3) vs. 210.7 (157.4 232.3) cells/mm3, P < 0.05] in J2N k hamsters compared with controls. Transcriptomic analysis revealed regenerative shifts across multiple cell types, including activation of cardiac transcription factors (MEF2C, GATA4, NKX2 5), upregulation of angiogenesis related pathways (ERK1/2 cascade, KLF4, ETS1, GATA2), and modulation of pro fibrotic signaling (SMAD3, STAT3, NF κB). CONCLUSIONS: hiPS CM patch transplantation exerts therapeutic effects through multicellular mechanisms, including enhanced angiogenesis, improved myocardial microenvironment, and modulation of fibrosis. These findings support the feasibility of hiPS CM patch therapy as a regenerative strategy for end stage DCM and provide mechanistic insights into its therapeutic action. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "ailab-2026-0011",
