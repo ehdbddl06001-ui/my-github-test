@@ -25,12 +25,27 @@
   · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
 ## 커밋 전 필수 순서
-1. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
-2. `python pipelines/indexer.py`          (SQLite 재빌드)
-3. 상태 파일과 새 `.md` 를 함께 커밋
-4. 신규 타입(paper/disease/drug)은 self-verify 한계를 고려해 **PR로** 올린다.
+1. **main 동기화(충돌 예방 — 매우 중요)**: push/PR 직전에 `git fetch origin main` 후
+   `git merge origin/main`. 그 사이 다른 루틴(논문 스크랩 등)이 앞서 나가도, `state/*.json`
+   은 머지 드라이버(`pipelines/merge_state.py`)가 **union/최댓값으로 자동 해소**한다.
+   병합으로 남의 `content/`가 딸려 들어왔으면 반드시 2단계 재색인·번들 재생성을 다시 돌려
+   `docs/` 번들이 그 신규 콘텐츠까지 반영하게 한다(병합 직후 번들은 낡아 있음).
+2. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
+3. `python pipelines/indexer.py`          (SQLite 재빌드) → 이어서 `docs/` 번들 재생성
+4. 상태 파일과 새 `.md` 를 함께 커밋
+5. 신규 타입(paper/disease/drug)은 self-verify 한계를 고려해 **PR로** 올린다.
    시험 문항(KMLE·USMLE)은 흐름이 안정적이면 **main 직접 커밋 허용** — PR이 병합되지
    않으면 `docs/` 번들이 main에 못 올라가 홈페이지 '오늘의 문항'에 안 뜨므로 동일 취급한다.
+
+### 상태 파일 머지 드라이버 (가짜 충돌 제거)
+`state/*.json`(id_counter·seen_topics·seen_papers·ailab_progress)은 여러 루틴이 각자
+브랜치에서 '추가'만 하는 결정론 레지스트리다. 두 브랜치가 같은 파일을 늘리면 git 기본
+병합은 충돌을 내지만 정답은 늘 '합집합'뿐이라, `.gitattributes`(`state/*.json
+merge=medkos-state`) + `pipelines/merge_state.py` 드라이버가 이를 자동 병합한다. 드라이버는
+매 컨테이너에서 `.claude` SessionStart 훅이 `git config`로 등록한다(임시 컨테이너 안전).
+주의: 이 드라이버는 **로컬 git 병합**에만 작동한다 → GitHub의 'Update branch'·서버 병합은
+드라이버를 안 쓰므로, PR이 dirty 해지면 위 1단계(로컬 `git merge origin/main` 후 push)로
+해소한다. 회귀 테스트: `python pipelines/merge_state.py --selftest`.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.
