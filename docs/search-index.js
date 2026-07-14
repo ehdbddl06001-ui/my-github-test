@@ -5,16 +5,16 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 281,
+  "total": 283,
   "byType": {
    "usmle": 48,
-   "paper": 80,
+   "paper": 82,
    "kmle": 139,
    "ailab": 11,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 32,
+   "Cardiology": 33,
    "Nephrology": 22,
    "Infectious Disease": 21,
    "Pediatrics": 20,
@@ -24,8 +24,8 @@ window.MEDKOS_INDEX = {
    "Neurology": 11,
    "Psychiatry": 11,
    "Endocrinology": 10,
+   "Laboratory Medicine": 10,
    "Gastroenterology": 9,
-   "Laboratory Medicine": 9,
    "Pulmonology": 9,
    "Dermatology": 8,
    "General Surgery": 8,
@@ -52,7 +52,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 197,
-   "medium": 84
+   "medium": 86
   },
   "tagCount": 738
  },
@@ -168,6 +168,38 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0043.md",
    "snippet": "A 5 month old boy is brought to the emergency department with a 2 day history of fever and productive cough. He was well until about 5 months of age. He has already had two episodes of otitis media and one episode of sinusitis, each treated",
    "text": "Immunology X-linked Agammaglobulinemia (Bruton's Disease) XLA BTK B-cell-deficiency primary-immunodeficiency encapsulated-organisms USMLE-style / MedKOS (immunology · primary humoral immunodeficiency) A 5 month old boy is brought to the emergency department with a 2 day history of fever and productive cough. He was well until about 5 months of age. He has already had two episodes of otitis media and one episode of sinusitis, each treated with oral antibiotics. On examination, the tonsils are absent and no cervical lymph nodes are palpable. Chest x ray shows a right lower lobe infiltrate, and sputum culture grows Streptococcus pneumoniae. Vital signs and laboratory studies, including flow cytometry, are shown. Which of the following best describes the mechanism underlying this infant's disease? A. Impaired class switch recombination due to a defective CD40 ligand on activated T cells B. Arrest of B cell maturation at the pre B stage due to a defective Bruton tyrosine kinase C. Global arrest of lymphocyte development due to adenosine deaminase deficiency D. Failure of the neutrophil oxidative burst due to defective NADPH oxidase E. Failure of membrane attack complex formation due to a terminal complement component deficiency Absent tonsils/lymph nodes, recurrent encapsulated organism infections beginning once maternal antibody wanes, panhypogammaglobulinemia, and near absent CD19+ B cells in a male infant with a normal neutrophil count and complement activity point to X linked agammaglobulinemia: a BTK mutation that arrests B cell maturation at the pre B stage."
+  },
+  {
+   "id": "paper-2026-0082",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of cardiovascular nursing",
+   "confidence": "medium",
+   "date": "2026-07-14",
+   "path": "content/papers/2026/2026-07-14_paper-2026-0082_sex_and_gender_focused_education_in_cardiovascular_nursing_i.md",
+   "snippet": "Title Sex and Gender Focused Education in Cardiovascular Nursing: Implications for Clinical Practice and Health Equity Authors Mattioli Anna Vittoria, Nasi Milena, Pinti Marcello Journal / DOI The Journal of cardiovascular nursing · DOI: 10",
+   "text": "Laboratory Medicine scraped pubmed PubMed / The Journal of cardiovascular nursing Title Sex and Gender Focused Education in Cardiovascular Nursing: Implications for Clinical Practice and Health Equity Authors Mattioli Anna Vittoria, Nasi Milena, Pinti Marcello Journal / DOI The Journal of cardiovascular nursing · DOI: 10.1097/JCN.0000000000001359 · PMID: 42447404 https://pubmed.ncbi.nlm.nih.gov/42447404/ Abstract BACKGROUND: Sex and gender based differences significantly influence cardiovascular disease presentation, diagnosis, treatment response, and outcomes, contributing to persistent health disparities. Despite this, gender focused education remains inconsistently integrated into cardiovascular nursing curricula. PURPOSE: Our aim, in this discussion paper was to examine the benefits and challenges of incorporating sex and gender focused care into cardiovascular nursing education and to highlight its role in improving clinical practice and promoting health equity. CONCLUSIONS: Integrating gender focused education enhances nurses' ability to recognize both sex and gender specific differences, improves clinical decision making, and supports more equitable care delivery. However, implementation is limited by curriculum constraints, lack of faculty expertise, and the risk of reinforcing stereotypes. Structured, evidence based approaches are needed to ensure effective integration. CLINICAL IMPLICATIONS: Embedding sex and gender focused care into nursing education can improve diagnostic accuracy, optimize treatment strategies, and foster patient centered and culturally responsive care. This approach is essential to reduce disparities and enhance outcomes in cardiovascular health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0081",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Computers, informatics, nursing : CIN",
+   "confidence": "medium",
+   "date": "2026-07-14",
+   "path": "content/papers/2026/2026-07-14_paper-2026-0081_lasting_empowerment_after_discontinuing_a_heart_failure_tele.md",
+   "snippet": "Title Lasting Empowerment After Discontinuing a Heart Failure Telemonitoring Program: A Randomized Controlled Trial Authors Beltrán Jesús, Achury Diana, García Peña Ángel, Fernández Daniel, Muñoz Oscar Journal / DOI Computers, informatics, ",
+   "text": "Cardiology scraped pubmed PubMed / Computers, informatics, nursing : CIN Title Lasting Empowerment After Discontinuing a Heart Failure Telemonitoring Program: A Randomized Controlled Trial Authors Beltrán Jesús, Achury Diana, García Peña Ángel, Fernández Daniel, Muñoz Oscar Journal / DOI Computers, informatics, nursing : CIN · DOI: 10.1097/CIN.0000000000001597 · PMID: 42447390 https://pubmed.ncbi.nlm.nih.gov/42447390/ Abstract This study evaluated the long term effects of the ControlVit mobile application on clinical outcomes and patient empowerment in individuals with chronic heart failure (HF), 6 months after discontinuation of the app. In this open label, randomized, controlled clinical trial, patients were assigned to either an intervention group receiving standard HF management plus the ControlVit app for 6 months or to a control group receiving standard care alone. After 6 months, app use was discontinued, and all participants were followed for an additional 6 months. The primary outcome was the composite of death or HF related hospital readmission at 12 months, whereas secondary outcomes included changes in body weight, natriuretic peptide levels, New York Heart Association (NYHA) functional class, and patient empowerment, measured using the Empowerment Evaluation Scale (EES). A total of 140 patients were enrolled (28.6% women; mean age, 67 y). At 12 months, 8 patients (11.4%) in the intervention group and 3 patients (4.3%) in the control group experienced the primary outcome [relative risk (RR): 2.62; 95% CI: 0.73 9.52; P=.122). Empowerment levels were significantly higher among app users compared with controls (EES score: 4.68 ± 0.36 vs. 4.40 ± 1.91; P=.012). Use of SGLT2 inhibitors and ARNi increased significantly in both groups during follow up (ControlVit: 60% to 85%, P<.001; Control: 51.4% to 75%, P<.001). Among outpatients with chronic HF participating in a structured HF program, the addition of a mobile telemonitoring application did not reduce mortality or HF readmissions 6 months after its discontinuation. However, the intervention was associated with sustained improvements in patient empowerment, suggesting a lasting behavioral impact beyond the period of active app use. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0080",
