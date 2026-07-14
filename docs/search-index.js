@@ -1,39 +1,39 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-12",
+ "generated": "2026-07-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 261,
+  "total": 307,
   "byType": {
-   "kmle": 139,
+   "kmle": 171,
+   "paper": 80,
    "ailab": 11,
-   "paper": 66,
    "usmle": 42,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 29,
-   "Nephrology": 20,
-   "Infectious Disease": 19,
-   "Pediatrics": 18,
-   "Obstetrics & Gynecology": 12,
-   "Neurology": 11,
-   "Psychiatry": 11,
-   "Endocrinology": 10,
-   "Pathology": 10,
-   "Gastroenterology": 9,
-   "Pulmonology": 9,
-   "Surgery": 9,
-   "Dermatology": 8,
-   "General Surgery": 8,
-   "Ophthalmology": 8,
-   "Orthopedics": 8,
-   "Rheumatology": 8,
-   "Hematology": 7,
-   "Hematology-Oncology": 7,
-   "Laboratory Medicine": 7,
+   "Cardiology": 33,
+   "Nephrology": 24,
+   "Infectious Disease": 23,
+   "Pediatrics": 21,
+   "Obstetrics & Gynecology": 14,
+   "Neurology": 13,
+   "Psychiatry": 13,
+   "Endocrinology": 12,
+   "Pathology": 12,
+   "Gastroenterology": 11,
+   "Pulmonology": 11,
+   "Surgery": 11,
+   "Dermatology": 10,
+   "General Surgery": 10,
+   "Ophthalmology": 10,
+   "Orthopedics": 10,
+   "Rheumatology": 10,
+   "Hematology": 9,
+   "Laboratory Medicine": 9,
+   "Hematology-Oncology": 8,
    "Physiology": 6,
    "Medical AI Lab": 4,
    "Microbiology": 3,
@@ -51,12 +51,701 @@ window.MEDKOS_INDEX = {
    "Medical Imaging AI": 1
   },
   "byConfidence": {
-   "high": 191,
-   "medium": 70
+   "high": 222,
+   "medium": 85
   },
-  "tagCount": 716
+  "tagCount": 830
  },
  "docs": [
+  {
+   "id": "kmle-2026-0201",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Basal Cell Carcinoma",
+   "tags": [
+    "basal-cell-carcinoma",
+    "pearly-nodule",
+    "sun-exposure",
+    "skin-cancer"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0201.md",
+   "snippet": "68세 농부가 몇 달간 코 옆에서 서서히 커진 병변으로 왔다. 병변은 진주빛으로 반질거리고 가장자리가 말려 올라갔으며 가운데가 헐어 있다. 통증은 없고 좀처럼 낫지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 편평세포암 B. 악성흑색종 C. 기저세포암 D. 지루각화증 E. 각질가시세포종 만성 햇빛 노출 부위(얼굴)에 진주빛·말린 가장자리·중앙 궤양과 표면 모세혈관 확장을 보이며 서서히 커지고 잘",
+   "text": "Dermatology Basal Cell Carcinoma basal-cell-carcinoma pearly-nodule sun-exposure skin-cancer KMLE 2026 / Claude Routine 68세 농부가 몇 달간 코 옆에서 서서히 커진 병변으로 왔다. 병변은 진주빛으로 반질거리고 가장자리가 말려 올라갔으며 가운데가 헐어 있다. 통증은 없고 좀처럼 낫지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 편평세포암 B. 악성흑색종 C. 기저세포암 D. 지루각화증 E. 각질가시세포종 만성 햇빛 노출 부위(얼굴)에 진주빛·말린 가장자리·중앙 궤양과 표면 모세혈관 확장을 보이며 서서히 커지고 잘 낫지 않는 병변은 기저세포암의 전형이다. 전이는 드물지만 국소 침습이 있어 확진 후 절제한다."
+  },
+  {
+   "id": "kmle-2026-0200",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Herpes Zoster",
+   "tags": [
+    "herpes-zoster",
+    "dermatome",
+    "antiviral",
+    "vesicular-rash"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0200.md",
+   "snippet": "65세 여자가 3일 전부터 오른쪽 등에서 옆구리로 이어지는 띠 모양의 아픈 물집 발진으로 왔다. 발진이 생기기 이틀 전부터 그 부위에 찌르는 통증이 있었고 정중선을 넘지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 항진균제를 투여한다 B. 광범위 항생제를 정맥주사한다 C. 전신 스테로이드만 투여한다 D. 국소 스테로이드만 도포한다 E. 경구 항바이러스제를 투여한다 한쪽 피부분절을 따라 정중선을 ",
+   "text": "Dermatology Herpes Zoster herpes-zoster dermatome antiviral vesicular-rash KMLE 2026 / Claude Routine 65세 여자가 3일 전부터 오른쪽 등에서 옆구리로 이어지는 띠 모양의 아픈 물집 발진으로 왔다. 발진이 생기기 이틀 전부터 그 부위에 찌르는 통증이 있었고 정중선을 넘지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 항진균제를 투여한다 B. 광범위 항생제를 정맥주사한다 C. 전신 스테로이드만 투여한다 D. 국소 스테로이드만 도포한다 E. 경구 항바이러스제를 투여한다 한쪽 피부분절을 따라 정중선을 넘지 않는 통증성 군집 수포와 선행 신경통은 대상포진이다. 발병 72시간 이내 경구 항바이러스제를 투여하면 병변 회복을 촉진하고 대상포진후신경통 위험을 줄인다."
+  },
+  {
+   "id": "kmle-2026-0199",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Age-related Macular Degeneration",
+   "tags": [
+    "wet-amd",
+    "anti-vegf",
+    "metamorphopsia",
+    "central-scotoma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0199.md",
+   "snippet": "78세 남자가 몇 주 사이 오른눈 중심 시력이 떨어지고 직선이 휘어 보인다고 왔다. 글자를 볼 때 가운데가 안 보이고 안압은 정상이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 백내장 제거 수술 B. 고용량 항생제 정맥주사 C. 안압하강제 점안 D. 항혈관내피성장인자 유리체내 주사 E. 별다른 치료 없이 관찰한다 고령에서 중심 시력 저하·직선 왜곡·중심암점과 안저 황반부 삼출·출혈, 빛간섭단층촬영의 망막하",
+   "text": "Ophthalmology Age-related Macular Degeneration wet-amd anti-vegf metamorphopsia central-scotoma KMLE 2026 / Claude Routine 78세 남자가 몇 주 사이 오른눈 중심 시력이 떨어지고 직선이 휘어 보인다고 왔다. 글자를 볼 때 가운데가 안 보이고 안압은 정상이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 백내장 제거 수술 B. 고용량 항생제 정맥주사 C. 안압하강제 점안 D. 항혈관내피성장인자 유리체내 주사 E. 별다른 치료 없이 관찰한다 고령에서 중심 시력 저하·직선 왜곡·중심암점과 안저 황반부 삼출·출혈, 빛간섭단층촬영의 망막하액은 삼출성(습성) 나이관련황반변성이다. 맥락막 신생혈관을 억제하는 항혈관내피성장인자 유리체내 주사가 표준 치료다."
+  },
+  {
+   "id": "kmle-2026-0198",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Primary Open-Angle Glaucoma",
+   "tags": [
+    "open-angle-glaucoma",
+    "prostaglandin",
+    "cup-disc-ratio",
+    "visual-field"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0198.md",
+   "snippet": "60세 남자가 특별한 증상 없이 건강검진에서 안과 이상 소견으로 왔다. 통증·충혈은 없고 시야검사에서 주변부 결손이 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 일차 치료는? A. 즉시 홍채절개술을 한다 B. 항생제 점안액을 쓴다 C. 프로스타글란딘 점안액을 쓴다 D. 고용량 스테로이드를 점안한다 E. 별다른 치료 없이 관찰한다 무증상·정상 전방각에 안압 상승, 시신경 유두함몰비 증가, 주변 시야 결손이 동반되면 원",
+   "text": "Ophthalmology Primary Open-Angle Glaucoma open-angle-glaucoma prostaglandin cup-disc-ratio visual-field KMLE 2026 / Claude Routine 60세 남자가 특별한 증상 없이 건강검진에서 안과 이상 소견으로 왔다. 통증·충혈은 없고 시야검사에서 주변부 결손이 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 일차 치료는? A. 즉시 홍채절개술을 한다 B. 항생제 점안액을 쓴다 C. 프로스타글란딘 점안액을 쓴다 D. 고용량 스테로이드를 점안한다 E. 별다른 치료 없이 관찰한다 무증상·정상 전방각에 안압 상승, 시신경 유두함몰비 증가, 주변 시야 결손이 동반되면 원발개방각녹내장이다. 일차 치료는 방수 유출을 늘려 안압을 낮추는 프로스타글란딘 유사체 점안액이다."
+  },
+  {
+   "id": "kmle-2026-0197",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Obsessive-Compulsive Disorder",
+   "tags": [
+    "ocd",
+    "ssri",
+    "compulsion",
+    "first-line"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0197.md",
+   "snippet": "25세 여자가 오염에 대한 반복적이고 원치 않는 생각과 이를 없애려 하루 여러 시간 손을 씻는 행동으로 왔다. 본인도 지나치다고 느끼지만 멈추기 어렵고 일상생활에 지장이 크다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 일차 치료는? A. 항정신병약물 단독 투여 B. 벤조디아제핀 장기 투여 C. 기분안정제 투여 D. 갑상선호르몬 보충 E. 선택세로토닌재흡수억제제 원치 않는 강박사고와 이를 중화하려는 강박행동이 시간을 크게",
+   "text": "Psychiatry Obsessive-Compulsive Disorder ocd ssri compulsion first-line KMLE 2026 / Claude Routine 25세 여자가 오염에 대한 반복적이고 원치 않는 생각과 이를 없애려 하루 여러 시간 손을 씻는 행동으로 왔다. 본인도 지나치다고 느끼지만 멈추기 어렵고 일상생활에 지장이 크다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 일차 치료는? A. 항정신병약물 단독 투여 B. 벤조디아제핀 장기 투여 C. 기분안정제 투여 D. 갑상선호르몬 보충 E. 선택세로토닌재흡수억제제 원치 않는 강박사고와 이를 중화하려는 강박행동이 시간을 크게 소모하고 기능을 해치며 자아이질적이면 강박장애다. 일차 약물치료는 선택세로토닌재흡수억제제이며 인지행동치료(노출·반응방지)를 병행한다."
+  },
+  {
+   "id": "kmle-2026-0196",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Schizophrenia",
+   "tags": [
+    "schizophrenia",
+    "psychosis",
+    "duration-criterion",
+    "differential"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0196.md",
+   "snippet": "22세 남자가 7개월간 지속된 환청과 피해망상, 와해된 말과 사회적 위축으로 왔다. 학업과 대인관계 기능이 뚜렷이 떨어졌고 물질 사용력은 없다. 검사에서 기질적·물질 원인은 배제되었다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 단기정신병적장애 B. 조현양상장애 C. 조현병 D. 조현정동장애 E. 망상장애 환청·망상·와해된 사고 등 정신병 증상과 기능 저하가 6개월 이상 지속되고 물질·기질 원인이 배제",
+   "text": "Psychiatry Schizophrenia schizophrenia psychosis duration-criterion differential KMLE 2026 / Claude Routine 22세 남자가 7개월간 지속된 환청과 피해망상, 와해된 말과 사회적 위축으로 왔다. 학업과 대인관계 기능이 뚜렷이 떨어졌고 물질 사용력은 없다. 검사에서 기질적·물질 원인은 배제되었다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 단기정신병적장애 B. 조현양상장애 C. 조현병 D. 조현정동장애 E. 망상장애 환청·망상·와해된 사고 등 정신병 증상과 기능 저하가 6개월 이상 지속되고 물질·기질 원인이 배제되면 조현병이다. 지속 기간과 뚜렷한 기능 저하가 다른 정신병적 장애와 감별의 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0195",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Shoulder Dystocia",
+   "tags": [
+    "shoulder-dystocia",
+    "mcroberts",
+    "macrosomia",
+    "delivery-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0195.md",
+   "snippet": "32세 임신부가 질식분만 중 아기 머리가 나온 뒤 어깨가 나오지 않는다. 머리가 회음부 쪽으로 다시 당겨지고 통상적 견인으로 진행되지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시행할 처치는? A. 즉시 제왕절개로 전환한다 B. 자궁수축제를 증량한다 C. 태아 두피에서 채혈한다 D. 산모 대퇴를 배쪽으로 강하게 굽힌다 E. 회음부에 냉찜질을 한다 아두 만출 후 어깨가 걸려 진행되지 않는 견갑난산이다. 가장 먼저 시",
+   "text": "Obstetrics & Gynecology Shoulder Dystocia shoulder-dystocia mcroberts macrosomia delivery-emergency KMLE 2026 / Claude Routine 32세 임신부가 질식분만 중 아기 머리가 나온 뒤 어깨가 나오지 않는다. 머리가 회음부 쪽으로 다시 당겨지고 통상적 견인으로 진행되지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시행할 처치는? A. 즉시 제왕절개로 전환한다 B. 자궁수축제를 증량한다 C. 태아 두피에서 채혈한다 D. 산모 대퇴를 배쪽으로 강하게 굽힌다 E. 회음부에 냉찜질을 한다 아두 만출 후 어깨가 걸려 진행되지 않는 견갑난산이다. 가장 먼저 시행하는 처치는 산모의 대퇴를 배쪽으로 강하게 굽혀 골반 경사를 바꾸는 조작(맥로버츠)이며, 필요 시 치골상부 압박을 더한다."
+  },
+  {
+   "id": "kmle-2026-0194",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Gestational Diabetes Mellitus",
+   "tags": [
+    "gestational-diabetes",
+    "ogtt",
+    "medical-nutrition-therapy",
+    "pregnancy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0194.md",
+   "snippet": "28세 임신부가 임신 26주 정기검진에서 당부하검사 이상으로 왔다. 자각 증상은 없고 태아 상태는 안정적이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 초기 관리는? A. 즉시 제왕절개를 시행한다 B. 즉시 유도분만을 한다 C. 식이·운동요법을 시작한다 D. 경구 피임약을 투여한다 E. 갑상선호르몬을 투여한다 임신 24~28주 당부하검사에서 진단된 임신성 당뇨는 우선 의학영양요법(식이 조절)과 규칙적 운동, 혈당 자가측",
+   "text": "Obstetrics & Gynecology Gestational Diabetes Mellitus gestational-diabetes ogtt medical-nutrition-therapy pregnancy KMLE 2026 / Claude Routine 28세 임신부가 임신 26주 정기검진에서 당부하검사 이상으로 왔다. 자각 증상은 없고 태아 상태는 안정적이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 초기 관리는? A. 즉시 제왕절개를 시행한다 B. 즉시 유도분만을 한다 C. 식이·운동요법을 시작한다 D. 경구 피임약을 투여한다 E. 갑상선호르몬을 투여한다 임신 24~28주 당부하검사에서 진단된 임신성 당뇨는 우선 의학영양요법(식이 조절)과 규칙적 운동, 혈당 자가측정으로 관리한다. 목표 혈당에 도달하지 못하면 인슐린을 추가한다."
+  },
+  {
+   "id": "kmle-2026-0193",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Hirschsprung Disease",
+   "tags": [
+    "hirschsprung",
+    "delayed-meconium",
+    "rectal-biopsy",
+    "aganglionosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0193.md",
+   "snippet": "생후 3일 남아가 태변을 아직 못 봤고 배가 부르며 담즙성 구토를 한다. 직장수지검사 뒤 가스와 변이 한꺼번에 뿜어져 나왔다. 활력징후·검사 소견은 자료와 같다. 진단 확진을 위해 가장 적절한 검사는? A. 땀 염소검사 B. 직장 흡인 생검 C. 복부 초음파 D. 상부위장관내시경 E. 대변 배양검사 48시간 이상 태변 지연·복부 팽만·담즙성 구토와 직장 자극 후 폭발적 배변은 원위 장관의 신경절세포 무형성(허쉬스프룽병)을 시사",
+   "text": "Pediatrics Hirschsprung Disease hirschsprung delayed-meconium rectal-biopsy aganglionosis KMLE 2026 / Claude Routine 생후 3일 남아가 태변을 아직 못 봤고 배가 부르며 담즙성 구토를 한다. 직장수지검사 뒤 가스와 변이 한꺼번에 뿜어져 나왔다. 활력징후·검사 소견은 자료와 같다. 진단 확진을 위해 가장 적절한 검사는? A. 땀 염소검사 B. 직장 흡인 생검 C. 복부 초음파 D. 상부위장관내시경 E. 대변 배양검사 48시간 이상 태변 지연·복부 팽만·담즙성 구토와 직장 자극 후 폭발적 배변은 원위 장관의 신경절세포 무형성(허쉬스프룽병)을 시사한다. 직장 흡인 생검으로 점막·점막하 신경절세포 부재를 확인하는 것이 확진 검사다."
+  },
+  {
+   "id": "kmle-2026-0192",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Meckel Diverticulum",
+   "tags": [
+    "meckel-diverticulum",
+    "painless-bleeding",
+    "technetium-scan",
+    "ectopic-mucosa"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0192.md",
+   "snippet": "2세 남아가 하루 사이 두 번의 다량 선혈변으로 왔다. 복통이나 구토는 없고 배는 부드럽다. 이전에 건강했고 응고질환 가족력은 없다. 활력징후·검사 소견은 자료와 같다. 진단에 가장 적절한 검사는? A. 테크네튬 스캔 B. 상부위장관조영 C. 복부 초음파 도플러 D. 대장내시경 용종절제 E. 항문경 검사 유아의 무통성 다량 하부 위장관 출혈은 이소성 위점막을 가진 멕켈게실이 흔한 원인이다. 테크네튬(Tc 99m 과테크네트산염)",
+   "text": "Pediatrics Meckel Diverticulum meckel-diverticulum painless-bleeding technetium-scan ectopic-mucosa KMLE 2026 / Claude Routine 2세 남아가 하루 사이 두 번의 다량 선혈변으로 왔다. 복통이나 구토는 없고 배는 부드럽다. 이전에 건강했고 응고질환 가족력은 없다. 활력징후·검사 소견은 자료와 같다. 진단에 가장 적절한 검사는? A. 테크네튬 스캔 B. 상부위장관조영 C. 복부 초음파 도플러 D. 대장내시경 용종절제 E. 항문경 검사 유아의 무통성 다량 하부 위장관 출혈은 이소성 위점막을 가진 멕켈게실이 흔한 원인이다. 테크네튬(Tc 99m 과테크네트산염) 스캔이 이소성 위점막을 표지해 진단에 가장 유용하다."
+  },
+  {
+   "id": "kmle-2026-0191",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Legg-Calve-Perthes Disease",
+   "tags": [
+    "perthes",
+    "avascular-necrosis",
+    "limp",
+    "pediatric-hip"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0191.md",
+   "snippet": "6세 남아가 몇 주간 지속되는 절뚝거림과 사타구니·무릎 통증으로 왔다. 통증은 경미하고 열은 없으며 오른쪽 고관절의 외전과 내회전이 제한된다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 대퇴골두 골단분리증 B. 레그 칼베 페르테스병 C. 화농고관절염 D. 일과성 활막염 E. 발달성 고관절이형성 학령기 남아의 몇 주간 지속되는 절뚝거림·경미한 사타구니/무릎통, 무열, 고관절 외전·내회전 제한에 X선의 대",
+   "text": "Orthopedics Legg-Calve-Perthes Disease perthes avascular-necrosis limp pediatric-hip KMLE 2026 / Claude Routine 6세 남아가 몇 주간 지속되는 절뚝거림과 사타구니·무릎 통증으로 왔다. 통증은 경미하고 열은 없으며 오른쪽 고관절의 외전과 내회전이 제한된다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 대퇴골두 골단분리증 B. 레그 칼베 페르테스병 C. 화농고관절염 D. 일과성 활막염 E. 발달성 고관절이형성 학령기 남아의 몇 주간 지속되는 절뚝거림·경미한 사타구니/무릎통, 무열, 고관절 외전·내회전 제한에 X선의 대퇴골두 골단 경화·편평이 동반되면 특발성 대퇴골두 무혈성괴사(레그 칼베 페르테스병)다. 염증표지자가 정상이라 감염을 배제한다."
+  },
+  {
+   "id": "kmle-2026-0190",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Achilles Tendon Rupture",
+   "tags": [
+    "achilles-rupture",
+    "calf-squeeze",
+    "plantarflexion",
+    "sports-injury"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0190.md",
+   "snippet": "40세 남자가 배드민턴 중 종아리 뒤쪽에서 '뻥' 하는 느낌과 통증을 느낀 뒤 걷기 힘들어 왔다. 발뒤꿈치 위쪽이 움푹 들어가 만져지고 부어 있다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 아킬레스건 파열 B. 종아리근육 좌상 C. 발목 염좌 D. 심부정맥혈전증 E. 족저근막염 운동 중 종아리 뒤 '뻥' 소리와 통증, 발끝으로 서기 불가, 종아리를 짜도 발바닥이 굽지 않음, 아킬레스건 부위 함몰은 아",
+   "text": "Orthopedics Achilles Tendon Rupture achilles-rupture calf-squeeze plantarflexion sports-injury KMLE 2026 / Claude Routine 40세 남자가 배드민턴 중 종아리 뒤쪽에서 '뻥' 하는 느낌과 통증을 느낀 뒤 걷기 힘들어 왔다. 발뒤꿈치 위쪽이 움푹 들어가 만져지고 부어 있다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 아킬레스건 파열 B. 종아리근육 좌상 C. 발목 염좌 D. 심부정맥혈전증 E. 족저근막염 운동 중 종아리 뒤 '뻥' 소리와 통증, 발끝으로 서기 불가, 종아리를 짜도 발바닥이 굽지 않음, 아킬레스건 부위 함몰은 아킬레스건 완전 파열의 전형이다. D 이합체 정상으로 심부정맥혈전증 가능성은 낮다."
+  },
+  {
+   "id": "kmle-2026-0189",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Blunt Splenic Trauma",
+   "tags": [
+    "splenic-injury",
+    "blunt-trauma",
+    "hemodynamic-instability",
+    "laparotomy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0189.md",
+   "snippet": "25세 남자가 오토바이 사고로 왼쪽 옆구리를 부딪친 뒤 왼쪽 윗배 통증과 왼쪽 어깨로 뻗치는 통증으로 왔다. 빠른 수액에도 혈압이 오르지 않고 창백하다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 다음 처치는? A. 외래에서 경과 관찰 B. 즉시 응급 개복술 C. 복부 단순촬영 후 귀가 D. 경구 수분 보충 E. 진통제 투여 후 재평가 둔상 후 왼쪽 상복부 통증·연관 어깨통증·저혈압·빈맥·헤모글로빈 저하와 FAST 양성은",
+   "text": "General Surgery Blunt Splenic Trauma splenic-injury blunt-trauma hemodynamic-instability laparotomy KMLE 2026 / Claude Routine 25세 남자가 오토바이 사고로 왼쪽 옆구리를 부딪친 뒤 왼쪽 윗배 통증과 왼쪽 어깨로 뻗치는 통증으로 왔다. 빠른 수액에도 혈압이 오르지 않고 창백하다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 다음 처치는? A. 외래에서 경과 관찰 B. 즉시 응급 개복술 C. 복부 단순촬영 후 귀가 D. 경구 수분 보충 E. 진통제 투여 후 재평가 둔상 후 왼쪽 상복부 통증·연관 어깨통증·저혈압·빈맥·헤모글로빈 저하와 FAST 양성은 비장 손상에 의한 복강내 출혈을 시사한다. 수액에 반응하지 않는 혈역학적 불안정은 즉각적 개복술(출혈 조절)의 적응이다."
+  },
+  {
+   "id": "kmle-2026-0188",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Fournier Gangrene",
+   "tags": [
+    "fournier-gangrene",
+    "necrotizing-fasciitis",
+    "debridement",
+    "diabetes"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0188.md",
+   "snippet": "60세 남자가 하루 만에 급격히 심해진 회음부 통증과 고열로 왔다. 음낭과 회음부가 붉게 붓고 물집과 악취가 나며, 만지면 피부 밑에서 사각거리는 느낌이 있다. 당뇨병으로 치료 중이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 응급 외과적 변연절제 B. 경구 항생제 후 외래 추적 C. 국소 소독과 드레싱 D. 진통제 투여 후 경과 관찰 E. 스테로이드 연고 도포 당뇨 환자에서 회음부의 급속 진행 연조직 감",
+   "text": "General Surgery Fournier Gangrene fournier-gangrene necrotizing-fasciitis debridement diabetes KMLE 2026 / Claude Routine 60세 남자가 하루 만에 급격히 심해진 회음부 통증과 고열로 왔다. 음낭과 회음부가 붉게 붓고 물집과 악취가 나며, 만지면 피부 밑에서 사각거리는 느낌이 있다. 당뇨병으로 치료 중이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 응급 외과적 변연절제 B. 경구 항생제 후 외래 추적 C. 국소 소독과 드레싱 D. 진통제 투여 후 경과 관찰 E. 스테로이드 연고 도포 당뇨 환자에서 회음부의 급속 진행 연조직 감염에 물집·악취·피하 염발음과 패혈증 징후가 있으면 회음부 괴사근막염(푸르니에 괴저)이다. 생명을 위협하므로 광범위 항생제와 함께 즉각적이고 광범위한 외과적 변연절제가 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0187",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Adult-Onset Still Disease",
+   "tags": [
+    "adult-still-disease",
+    "ferritin",
+    "quotidian-fever",
+    "diagnosis-of-exclusion"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "medium",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0187.md",
+   "snippet": "32세 여자가 3주간 매일 오후에 치솟는 고열과 함께 열이 오를 때만 나타나는 연어색 발진, 관절통, 인후통으로 왔다. 항생제에 반응이 없었고 여러 감염·자가면역 검사가 음성이다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 전신홍반루푸스 B. 성인스틸병 C. 감염성 심내막염 D. 림프종 E. 류마티스관절염 매일 스파이킹 고열 + 열과 함께 나타나는 연어색 발진 + 관절통·인후통 + 호중구 증가 + 매우",
+   "text": "Rheumatology Adult-Onset Still Disease adult-still-disease ferritin quotidian-fever diagnosis-of-exclusion KMLE 2026 / Claude Routine 32세 여자가 3주간 매일 오후에 치솟는 고열과 함께 열이 오를 때만 나타나는 연어색 발진, 관절통, 인후통으로 왔다. 항생제에 반응이 없었고 여러 감염·자가면역 검사가 음성이다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 전신홍반루푸스 B. 성인스틸병 C. 감염성 심내막염 D. 림프종 E. 류마티스관절염 매일 스파이킹 고열 + 열과 함께 나타나는 연어색 발진 + 관절통·인후통 + 호중구 증가 + 매우 높은 페리틴 + 자가항체 음성은 성인스틸병의 전형이다. 감염·악성·다른 자가면역을 배제한 뒤 내리는 임상 진단이다."
+  },
+  {
+   "id": "kmle-2026-0186",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Reactive Arthritis",
+   "tags": [
+    "reactive-arthritis",
+    "hla-b27",
+    "arthrocentesis",
+    "post-infectious"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0186.md",
+   "snippet": "28세 남자가 5일 전부터 오른쪽 무릎과 발목이 붓고 아파서 왔다. 3주 전 심한 설사를 앓았고 최근 눈 충혈과 배뇨통도 있었다. 관절은 붓고 열감이 있으나 이전 관절질환은 없었다. 활력징후·검사 소견은 자료와 같다. 화농관절염을 배제하기 위해 가장 먼저 시행할 것은? A. 관절액 천자검사 B. 즉시 관절경 세척 C. 경험적 항결핵제 투여 D. 요산 강하제 시작 E. 관절내 스테로이드 주사 선행 장염 후 하지 소수관절염에 결막",
+   "text": "Rheumatology Reactive Arthritis reactive-arthritis hla-b27 arthrocentesis post-infectious KMLE 2026 / Claude Routine 28세 남자가 5일 전부터 오른쪽 무릎과 발목이 붓고 아파서 왔다. 3주 전 심한 설사를 앓았고 최근 눈 충혈과 배뇨통도 있었다. 관절은 붓고 열감이 있으나 이전 관절질환은 없었다. 활력징후·검사 소견은 자료와 같다. 화농관절염을 배제하기 위해 가장 먼저 시행할 것은? A. 관절액 천자검사 B. 즉시 관절경 세척 C. 경험적 항결핵제 투여 D. 요산 강하제 시작 E. 관절내 스테로이드 주사 선행 장염 후 하지 소수관절염에 결막염·요도염이 동반되면 반응관절염이 유력하다. 그러나 단일 관절이 붓고 열감이 있으면 화농관절염을 먼저 배제해야 하므로, 관절액 천자로 세포수·그람염색·배양·결정 검사를 시행한다."
+  },
+  {
+   "id": "kmle-2026-0185",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Trigeminal Neuralgia",
+   "tags": [
+    "trigeminal-neuralgia",
+    "carbamazepine",
+    "facial-pain",
+    "paroxysmal"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0185.md",
+   "snippet": "62세 여자가 오른쪽 뺨과 턱에 몇 초간 지속되는 전기충격 같은 극심한 통증으로 왔다. 통증은 세수·양치·씹기로 유발되고 발작 사이에는 통증이 없다. 신경학적 진찰과 염증표지자는 정상이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 일차 치료 약물은? A. 수마트립탄 B. 카바마제핀 C. 경구 글루코코르티코이드 D. 인도메타신 E. 아미트립틸린 한쪽 삼차신경 분포에 유발점이 있는 수초간의 발작성 전격통과 정상 신경학적 소",
+   "text": "Neurology Trigeminal Neuralgia trigeminal-neuralgia carbamazepine facial-pain paroxysmal KMLE 2026 / Claude Routine 62세 여자가 오른쪽 뺨과 턱에 몇 초간 지속되는 전기충격 같은 극심한 통증으로 왔다. 통증은 세수·양치·씹기로 유발되고 발작 사이에는 통증이 없다. 신경학적 진찰과 염증표지자는 정상이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 일차 치료 약물은? A. 수마트립탄 B. 카바마제핀 C. 경구 글루코코르티코이드 D. 인도메타신 E. 아미트립틸린 한쪽 삼차신경 분포에 유발점이 있는 수초간의 발작성 전격통과 정상 신경학적 소견은 삼차신경통이다. 일차 치료는 나트륨통로를 안정화하는 카바마제핀이다."
+  },
+  {
+   "id": "kmle-2026-0184",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Bell Palsy",
+   "tags": [
+    "bell-palsy",
+    "facial-nerve",
+    "corticosteroid",
+    "lower-motor-neuron"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0184.md",
+   "snippet": "34세 여자가 하루 전 아침 갑자기 왼쪽 얼굴이 마비되어 왔다. 왼쪽 이마를 못 올리고 눈이 안 감기며 입꼬리가 처진다. 왼쪽 미각 저하와 소리가 크게 들리는 증상, 귀 뒤 통증이 있다. 최근 감기를 앓았다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 글루코코르티코이드 B. 경구 항응고제 C. 안면신경 감압술 D. 정맥 혈전용해제 E. 항경련제 투여 이마를 포함한 한쪽 얼굴 전체 마비는 하부운동신경(말",
+   "text": "Neurology Bell Palsy bell-palsy facial-nerve corticosteroid lower-motor-neuron KMLE 2026 / Claude Routine 34세 여자가 하루 전 아침 갑자기 왼쪽 얼굴이 마비되어 왔다. 왼쪽 이마를 못 올리고 눈이 안 감기며 입꼬리가 처진다. 왼쪽 미각 저하와 소리가 크게 들리는 증상, 귀 뒤 통증이 있다. 최근 감기를 앓았다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 글루코코르티코이드 B. 경구 항응고제 C. 안면신경 감압술 D. 정맥 혈전용해제 E. 항경련제 투여 이마를 포함한 한쪽 얼굴 전체 마비는 하부운동신경(말초 안면신경) 병변이며, 미각 저하·청각과민·귀 뒤 통증을 동반하는 급성 특발성 안면마비(벨마비)다. 발병 72시간 이내 경구 글루코코르티코이드가 회복을 높이는 일차 치료다."
+  },
+  {
+   "id": "kmle-2026-0183",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Vibrio vulnificus Septicemia",
+   "tags": [
+    "vibrio-vulnificus",
+    "cirrhosis",
+    "hemorrhagic-bullae",
+    "sepsis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0183.md",
+   "snippet": "58세 남자가 하루 전부터 오른쪽 다리에 급속히 번지는 붉은 반점과 출혈성 물집, 발열로 왔다. 이틀 전 바닷가에서 날 해산물을 먹었다. 간경변으로 치료 중이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 초기 항생제 선택은? A. 경구 아목시실린 단독 투여 B. 독시사이클린과 세팔로스포린 병용 C. 국소 항생제 연고 도포 D. 항바이러스제 투여 E. 경구 항진균제 투여 간경변 환자가 날 해산물 섭취 후 급속 진행하는 출",
+   "text": "Infectious Disease Vibrio vulnificus Septicemia vibrio-vulnificus cirrhosis hemorrhagic-bullae sepsis KMLE 2026 / Claude Routine 58세 남자가 하루 전부터 오른쪽 다리에 급속히 번지는 붉은 반점과 출혈성 물집, 발열로 왔다. 이틀 전 바닷가에서 날 해산물을 먹었다. 간경변으로 치료 중이다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 초기 항생제 선택은? A. 경구 아목시실린 단독 투여 B. 독시사이클린과 세팔로스포린 병용 C. 국소 항생제 연고 도포 D. 항바이러스제 투여 E. 경구 항진균제 투여 간경변 환자가 날 해산물 섭취 후 급속 진행하는 출혈성 수포·연조직 감염과 패혈증을 보이면 비브리오 불니피쿠스 패혈증이다. 표준 치료는 독시사이클린과 3세대 세팔로스포린 병용이며 괴사 조직은 응급 변연절제한다."
+  },
+  {
+   "id": "kmle-2026-0182",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Tetanus",
+   "tags": [
+    "tetanus",
+    "tetanospasmin",
+    "trismus",
+    "neurotoxin"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0182.md",
+   "snippet": "45세 농부가 1주 전 밭일 중 못에 발바닥을 찔린 뒤 어제부터 턱이 뻣뻣해 입을 벌리기 어렵고 목과 등이 굳는다고 왔다. 소리나 자극에 갑자기 온몸이 뒤틀리는 근경련이 생긴다. 예방접종력은 확실치 않다. 활력징후·검사 소견은 자료와 같다. 이 질환의 원인 독소가 직접 억제하는 것은? A. 억제성 신경전달물질의 분비 B. 아세틸콜린의 분비 C. 신경근접합부 수용체의 활성 D. 나트륨통로의 불활성화 E. 세포막의 삼투 안정성 관",
+   "text": "Infectious Disease Tetanus tetanus tetanospasmin trismus neurotoxin KMLE 2026 / Claude Routine 45세 농부가 1주 전 밭일 중 못에 발바닥을 찔린 뒤 어제부터 턱이 뻣뻣해 입을 벌리기 어렵고 목과 등이 굳는다고 왔다. 소리나 자극에 갑자기 온몸이 뒤틀리는 근경련이 생긴다. 예방접종력은 확실치 않다. 활력징후·검사 소견은 자료와 같다. 이 질환의 원인 독소가 직접 억제하는 것은? A. 억제성 신경전달물질의 분비 B. 아세틸콜린의 분비 C. 신경근접합부 수용체의 활성 D. 나트륨통로의 불활성화 E. 세포막의 삼투 안정성 관통 창상 후 개구장애·전신 강직·자극 유발성 근경련은 파상풍이다. 원인 독소 테타노스파스민은 척수 억제성 사이신경세포의 억제성 신경전달물질(글리신·GABA) 분비를 차단해, 근육이 지속 수축하는 강직마비를 일으킨다."
+  },
+  {
+   "id": "kmle-2026-0181",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Hemophilia A",
+   "tags": [
+    "hemophilia-a",
+    "factor-viii",
+    "hemarthrosis",
+    "prolonged-aptt"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0181.md",
+   "snippet": "5세 남아가 넘어진 뒤 무릎이 붓고 아파서 왔다. 이전에도 사소한 외상 뒤 관절이 붓거나 멍이 크게 드는 일이 반복되었다. 외삼촌이 비슷한 출혈 경향이 있었다. 혼합검사에서 연장된 응고시간이 교정되었다. 활력징후·검사 소견은 자료와 같다. 확진을 위해 가장 적절한 검사는? A. 제8인자 활성도 측정 B. 혈소판 응집검사 C. 프로트롬빈시간 재검 D. 항핵항체검사 E. 골수검사 남아의 반복 관절출혈·가족력(외가), 단독 aPTT",
+   "text": "Hematology Hemophilia A hemophilia-a factor-viii hemarthrosis prolonged-aptt KMLE 2026 / Claude Routine 5세 남아가 넘어진 뒤 무릎이 붓고 아파서 왔다. 이전에도 사소한 외상 뒤 관절이 붓거나 멍이 크게 드는 일이 반복되었다. 외삼촌이 비슷한 출혈 경향이 있었다. 혼합검사에서 연장된 응고시간이 교정되었다. 활력징후·검사 소견은 자료와 같다. 확진을 위해 가장 적절한 검사는? A. 제8인자 활성도 측정 B. 혈소판 응집검사 C. 프로트롬빈시간 재검 D. 항핵항체검사 E. 골수검사 남아의 반복 관절출혈·가족력(외가), 단독 aPTT 연장이 혼합검사로 교정되고 폰빌레브란트인자가 정상이면 응고인자 결핍이며 혈우병 A가 유력하다. 제8인자 활성도 측정으로 확진하고 중증도를 정한다."
+  },
+  {
+   "id": "kmle-2026-0180",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Polycythemia Vera",
+   "tags": [
+    "polycythemia-vera",
+    "jak2",
+    "aquagenic-pruritus",
+    "erythrocytosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0180.md",
+   "snippet": "62세 남자가 두통·어지럼과 목욕 후 심해지는 전신 가려움으로 왔다. 얼굴이 붉고 비장이 만져진다. 흡연력은 없고 산소포화도는 정상이다. 활력징후·검사 소견은 자료와 같다. 진단에 가장 도움이 되는 검사는? A. BCR ABL 융합유전자검사 B. JAK2 V617F 변이검사 C. 혈청 페리틴검사 D. 직접 쿰스검사 E. 헤모글로빈 전기영동 적혈구증가증에 목욕 후 가려움·비장비대·낮은 에리트로포이에틴이 동반되고 저산소증이 없으면",
+   "text": "Hematology Polycythemia Vera polycythemia-vera jak2 aquagenic-pruritus erythrocytosis KMLE 2026 / Claude Routine 62세 남자가 두통·어지럼과 목욕 후 심해지는 전신 가려움으로 왔다. 얼굴이 붉고 비장이 만져진다. 흡연력은 없고 산소포화도는 정상이다. 활력징후·검사 소견은 자료와 같다. 진단에 가장 도움이 되는 검사는? A. BCR ABL 융합유전자검사 B. JAK2 V617F 변이검사 C. 혈청 페리틴검사 D. 직접 쿰스검사 E. 헤모글로빈 전기영동 적혈구증가증에 목욕 후 가려움·비장비대·낮은 에리트로포이에틴이 동반되고 저산소증이 없으면 진성적혈구증가증(원발성)이다. 확진 표지자는 JAK2 V617F 변이로 대부분에서 검출된다."
+  },
+  {
+   "id": "kmle-2026-0179",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Insulinoma",
+   "tags": [
+    "insulinoma",
+    "hypoglycemia",
+    "whipple-triad",
+    "supervised-fast"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0179.md",
+   "snippet": "45세 여자가 몇 달간 반복되는 어지럼·식은땀·의식 흐림으로 왔다. 증상은 공복이나 운동 후에 잘 생기고 사탕을 먹으면 곧 좋아진다. 당뇨병이나 혈당강하제 사용력은 없다. 활력징후·검사 소견은 자료와 같다. 진단을 위해 가장 적절한 검사는? A. 감시된 72시간 금식검사 B. 경구포도당부하검사 C. 오전 코르티솔 반복 측정 D. 갑상선기능검사 E. 복부 단순촬영 공복 저혈당 증상 + 저혈당 확인 + 당 섭취로 호전(휘플 세징후",
+   "text": "Endocrinology Insulinoma insulinoma hypoglycemia whipple-triad supervised-fast KMLE 2026 / Claude Routine 45세 여자가 몇 달간 반복되는 어지럼·식은땀·의식 흐림으로 왔다. 증상은 공복이나 운동 후에 잘 생기고 사탕을 먹으면 곧 좋아진다. 당뇨병이나 혈당강하제 사용력은 없다. 활력징후·검사 소견은 자료와 같다. 진단을 위해 가장 적절한 검사는? A. 감시된 72시간 금식검사 B. 경구포도당부하검사 C. 오전 코르티솔 반복 측정 D. 갑상선기능검사 E. 복부 단순촬영 공복 저혈당 증상 + 저혈당 확인 + 당 섭취로 호전(휘플 세징후)에서 인슐린종이 의심된다. 감시된 72시간 금식으로 저혈당을 유발한 시점에 인슐린·C 펩타이드·프로인슐린 상승을 증명하는 것이 표준 진단이다."
+  },
+  {
+   "id": "kmle-2026-0178",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Subacute Thyroiditis",
+   "tags": [
+    "subacute-thyroiditis",
+    "thyroid-pain",
+    "nsaid",
+    "viral"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0178.md",
+   "snippet": "34세 여자가 1주 전부터 목 앞의 통증과 미열로 왔다. 통증은 턱과 귀로 뻗치고 2주 전 상기도감염을 앓았다. 갑상선은 만지면 아프고 커져 있으며 두근거림과 더위를 못 견딤이 동반된다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 항갑상선제를 투여한다 B. 비스테로이드소염제를 투여한다 C. 방사성요오드 치료를 시행한다 D. 갑상선 전절제술을 시행한다 E. 레보티록신을 투여한다 선행 상기도감염·통증성 갑상선·",
+   "text": "Endocrinology Subacute Thyroiditis subacute-thyroiditis thyroid-pain nsaid viral KMLE 2026 / Claude Routine 34세 여자가 1주 전부터 목 앞의 통증과 미열로 왔다. 통증은 턱과 귀로 뻗치고 2주 전 상기도감염을 앓았다. 갑상선은 만지면 아프고 커져 있으며 두근거림과 더위를 못 견딤이 동반된다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 항갑상선제를 투여한다 B. 비스테로이드소염제를 투여한다 C. 방사성요오드 치료를 시행한다 D. 갑상선 전절제술을 시행한다 E. 레보티록신을 투여한다 선행 상기도감염·통증성 갑상선·ESR 상승·낮은 방사성요오드 섭취율의 일과성 갑상선중독증은 아급성(육아종성) 갑상선염이다. 저장호르몬 누출이라 새 합성을 막는 항갑상선제는 무효하며, 통증에 비스테로이드소염제가 일차 치료다."
+  },
+  {
+   "id": "kmle-2026-0177",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Type 4 Renal Tubular Acidosis",
+   "tags": [
+    "type-4-rta",
+    "hyperkalemia",
+    "hypoaldosteronism",
+    "diabetes"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0177.md",
+   "snippet": "68세 남자가 당뇨병으로 추적 중 검사에서 이상이 발견되어 왔다. 특별한 증상은 없고 신기능은 경도 저하 상태다. 정상 음이온차 대사성 산증과 지속적 고칼륨혈증이 있으며 요는 적절히 산성이다. 활력징후·검사 소견은 자료와 같다. 이 소견을 가장 잘 설명하는 기전은? A. 알도스테론 작용 저하 B. 근위세뇨관 중탄산 소실 C. 원위세뇨관 수소이온 분비 결함 D. 사구체 여과율의 급성 상승 E. 집합관 수분 재흡수 증가 당뇨병에서",
+   "text": "Nephrology Type 4 Renal Tubular Acidosis type-4-rta hyperkalemia hypoaldosteronism diabetes KMLE 2026 / Claude Routine 68세 남자가 당뇨병으로 추적 중 검사에서 이상이 발견되어 왔다. 특별한 증상은 없고 신기능은 경도 저하 상태다. 정상 음이온차 대사성 산증과 지속적 고칼륨혈증이 있으며 요는 적절히 산성이다. 활력징후·검사 소견은 자료와 같다. 이 소견을 가장 잘 설명하는 기전은? A. 알도스테론 작용 저하 B. 근위세뇨관 중탄산 소실 C. 원위세뇨관 수소이온 분비 결함 D. 사구체 여과율의 급성 상승 E. 집합관 수분 재흡수 증가 당뇨병에서 흔한 저레닌·저알도스테론혈증은 집합관의 나트륨 재흡수·칼륨 및 수소이온 분비를 모두 떨어뜨려 고칼륨혈증과 정상 음이온차 대사성 산증(제4형 세뇨관성 산증)을 만든다. 요 산성화 능력이 유지되어 요 pH는 낮다."
+  },
+  {
+   "id": "kmle-2026-0176",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Autosomal Dominant Polycystic Kidney Disease",
+   "tags": [
+    "adpkd",
+    "intracranial-aneurysm",
+    "hypertension",
+    "family-history"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0176.md",
+   "snippet": "42세 남자가 건강검진에서 고혈압이 발견되어 왔다. 간헐적 양쪽 옆구리 불편감과 육안 혈뇨가 있었다. 아버지가 50대에 투석을 시작했다. 활력징후·검사 소견은 자료와 같다. 이 환자에서 파열 시 치명적이어서 선별을 고려해야 하는 동반 이상은? A. 폐섬유증 B. 두개내 동맥류 C. 갑상선암 D. 망막 혈관종 E. 대장 폴립증 가족력·고혈압·양측 신장 다발성 낭종은 상염색체우성 다낭성신질환이다. 이 질환은 두개내 동맥류 빈도가 ",
+   "text": "Nephrology Autosomal Dominant Polycystic Kidney Disease adpkd intracranial-aneurysm hypertension family-history KMLE 2026 / Claude Routine 42세 남자가 건강검진에서 고혈압이 발견되어 왔다. 간헐적 양쪽 옆구리 불편감과 육안 혈뇨가 있었다. 아버지가 50대에 투석을 시작했다. 활력징후·검사 소견은 자료와 같다. 이 환자에서 파열 시 치명적이어서 선별을 고려해야 하는 동반 이상은? A. 폐섬유증 B. 두개내 동맥류 C. 갑상선암 D. 망막 혈관종 E. 대장 폴립증 가족력·고혈압·양측 신장 다발성 낭종은 상염색체우성 다낭성신질환이다. 이 질환은 두개내 동맥류 빈도가 높고 파열 시 지주막하출혈로 치명적이므로, 가족력이 있거나 고위험군에서 선별검사를 고려한다."
+  },
+  {
+   "id": "kmle-2026-0175",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Wilson Disease",
+   "tags": [
+    "wilson-disease",
+    "ceruloplasmin",
+    "hepatolenticular",
+    "young-adult"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0175.md",
+   "snippet": "19세 남자가 몇 달 전부터 생긴 손떨림과 어눌한 말투로 왔다. 최근 성격 변화와 학업 저하도 있었다. 신경학적으로 안정 시 떨림과 근긴장이상이 있고, 세극등검사에서 양쪽 각막 가장자리에 갈색 색소 침착이 보인다. 활력징후·검사 소견은 자료와 같다. 진단에 가장 도움이 되는 검사는? A. 혈청 세룰로플라스민 B. 혈청 페리틴 C. 항미토콘드리아항체 D. 혈청 알파태아단백 E. 혈청 암모니아 젊은 나이의 간기능 이상 + 추체외로",
+   "text": "Gastroenterology Wilson Disease wilson-disease ceruloplasmin hepatolenticular young-adult KMLE 2026 / Claude Routine 19세 남자가 몇 달 전부터 생긴 손떨림과 어눌한 말투로 왔다. 최근 성격 변화와 학업 저하도 있었다. 신경학적으로 안정 시 떨림과 근긴장이상이 있고, 세극등검사에서 양쪽 각막 가장자리에 갈색 색소 침착이 보인다. 활력징후·검사 소견은 자료와 같다. 진단에 가장 도움이 되는 검사는? A. 혈청 세룰로플라스민 B. 혈청 페리틴 C. 항미토콘드리아항체 D. 혈청 알파태아단백 E. 혈청 암모니아 젊은 나이의 간기능 이상 + 추체외로 신경증상 + 각막 가장자리 갈색 침착(구리 침착)은 윌슨병을 시사한다. 선별검사로 혈청 세룰로플라스민 저하가 가장 도움이 되며 24시간 소변 구리로 보완한다."
+  },
+  {
+   "id": "kmle-2026-0174",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Ischemic Colitis",
+   "tags": [
+    "ischemic-colitis",
+    "hematochezia",
+    "atrial-fibrillation",
+    "ct-angiography"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0174.md",
+   "snippet": "74세 여자가 3시간 전 갑자기 시작된 왼쪽 아랫배 통증과 이어진 선홍색 혈변으로 왔다. 심방세동으로 항응고제를 복용했으나 최근 자주 걸렀다. 배는 좌하복부에 압통이 있으나 반발통은 없다. 활력징후·검사 소견은 자료와 같다. 진단을 위해 가장 적절한 다음 검사는? A. 상부위장관내시경 B. 캡슐내시경 C. 간담도 초음파 D. 복부 CT 혈관조영 E. 항문경 검사 고령·심방세동·항응고 불이행 상태에서 갑작스런 복통 후 혈변과 젖",
+   "text": "Gastroenterology Ischemic Colitis ischemic-colitis hematochezia atrial-fibrillation ct-angiography KMLE 2026 / Claude Routine 74세 여자가 3시간 전 갑자기 시작된 왼쪽 아랫배 통증과 이어진 선홍색 혈변으로 왔다. 심방세동으로 항응고제를 복용했으나 최근 자주 걸렀다. 배는 좌하복부에 압통이 있으나 반발통은 없다. 활력징후·검사 소견은 자료와 같다. 진단을 위해 가장 적절한 다음 검사는? A. 상부위장관내시경 B. 캡슐내시경 C. 간담도 초음파 D. 복부 CT 혈관조영 E. 항문경 검사 고령·심방세동·항응고 불이행 상태에서 갑작스런 복통 후 혈변과 젖산 상승은 대장 허혈을 시사한다. 장벽 관류·혈관·합병증을 한 번에 평가하는 복부 CT 혈관조영이 다음 검사로 적절하다."
+  },
+  {
+   "id": "kmle-2026-0173",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Primary Spontaneous Pneumothorax",
+   "tags": [
+    "pneumothorax",
+    "chest-pain",
+    "observation",
+    "oxygen"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0173.md",
+   "snippet": "22세 마른 남자가 2시간 전 갑자기 시작된 왼쪽 가슴 통증과 가벼운 숨참으로 왔다. 흡연자이며 외상은 없었다. 왼쪽 호흡음이 약간 감소했으나 기관 편위나 저혈압은 없다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 흉관을 삽입한다 B. 산소를 투여하며 경과를 관찰한다 C. 개흉술을 시행한다 D. 흉막유착술을 시행한다 E. 응급 바늘 감압을 시행한다 젊고 마른 흡연 남성의 외상 없는 일차성 자연기흉이며,",
+   "text": "Pulmonology Primary Spontaneous Pneumothorax pneumothorax chest-pain observation oxygen KMLE 2026 / Claude Routine 22세 마른 남자가 2시간 전 갑자기 시작된 왼쪽 가슴 통증과 가벼운 숨참으로 왔다. 흡연자이며 외상은 없었다. 왼쪽 호흡음이 약간 감소했으나 기관 편위나 저혈압은 없다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 흉관을 삽입한다 B. 산소를 투여하며 경과를 관찰한다 C. 개흉술을 시행한다 D. 흉막유착술을 시행한다 E. 응급 바늘 감압을 시행한다 젊고 마른 흡연 남성의 외상 없는 일차성 자연기흉이며, 크기가 작고(약 12%) 활력징후가 안정적이고 산소포화도가 유지된다. 소량·무증상에 가까운 안정 기흉은 산소 투여와 경과 관찰로 흡수를 촉진한다."
+  },
+  {
+   "id": "kmle-2026-0172",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Obstructive Sleep Apnea",
+   "tags": [
+    "osa",
+    "daytime-sleepiness",
+    "polysomnography",
+    "obesity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0172.md",
+   "snippet": "48세 남자가 심한 주간 졸림으로 왔다. 배우자는 큰 코골이와 자다가 숨이 멎었다가 헐떡이며 깨는 것을 자주 목격했다. 아침 두통과 집중력 저하가 있다. 활력징후·검사 소견은 자료와 같다. 진단을 확정하기 위해 가장 적절한 검사는? A. 폐기능검사 B. 갑상선기능 재검사 C. 야간 수면다원검사 D. 관상동맥 CT조영술 E. 운동부하 심전도검사 비만·큰 코골이·목격된 무호흡·주간 졸림은 폐쇄성 수면무호흡을 강하게 시사한다. 확진",
+   "text": "Pulmonology Obstructive Sleep Apnea osa daytime-sleepiness polysomnography obesity KMLE 2026 / Claude Routine 48세 남자가 심한 주간 졸림으로 왔다. 배우자는 큰 코골이와 자다가 숨이 멎었다가 헐떡이며 깨는 것을 자주 목격했다. 아침 두통과 집중력 저하가 있다. 활력징후·검사 소견은 자료와 같다. 진단을 확정하기 위해 가장 적절한 검사는? A. 폐기능검사 B. 갑상선기능 재검사 C. 야간 수면다원검사 D. 관상동맥 CT조영술 E. 운동부하 심전도검사 비만·큰 코골이·목격된 무호흡·주간 졸림은 폐쇄성 수면무호흡을 강하게 시사한다. 확진과 중증도(무호흡 저호흡 지수) 판정의 표준 검사는 야간 수면다원검사다."
+  },
+  {
+   "id": "kmle-2026-0171",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Aortic Dissection",
+   "tags": [
+    "aortic-dissection",
+    "chest-pain",
+    "emergency",
+    "cardiothoracic-surgery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0171.md",
+   "snippet": "58세 남자가 30분 전 갑자기 시작된 찢어지는 듯한 앞가슴 통증으로 왔다. 통증은 등으로 뻗치고 강도가 처음부터 최고조였다. 고혈압으로 약을 불규칙하게 복용했다. 활력징후·검사 소견은 자료와 같고, 흉부 CT에서 상행대동맥부터 시작하는 내막 박리가 확인되었다. 가장 적절한 다음 처치는? A. 응급 수술을 위해 흉부외과에 의뢰한다 B. 혈전용해제를 투여한다 C. 경피적 관상동맥 중재술을 시행한다 D. 고용량 항혈소판제를 투여한",
+   "text": "Cardiology Aortic Dissection aortic-dissection chest-pain emergency cardiothoracic-surgery KMLE 2026 / Claude Routine 58세 남자가 30분 전 갑자기 시작된 찢어지는 듯한 앞가슴 통증으로 왔다. 통증은 등으로 뻗치고 강도가 처음부터 최고조였다. 고혈압으로 약을 불규칙하게 복용했다. 활력징후·검사 소견은 자료와 같고, 흉부 CT에서 상행대동맥부터 시작하는 내막 박리가 확인되었다. 가장 적절한 다음 처치는? A. 응급 수술을 위해 흉부외과에 의뢰한다 B. 혈전용해제를 투여한다 C. 경피적 관상동맥 중재술을 시행한다 D. 고용량 항혈소판제를 투여한다 E. 외래에서 추적 관찰한다 상행대동맥을 침범한 스탠퍼드 A형 급성 대동맥박리는 심장압전·관상동맥 침범·파열로 급사할 수 있어 응급 수술이 원칙이다. 혈압·심박수는 조절하되 항혈소판·혈전용해는 파열·출혈을 악화시켜 금기다."
+  },
+  {
+   "id": "kmle-2026-0170",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Sick Sinus Syndrome",
+   "tags": [
+    "bradycardia",
+    "syncope",
+    "sick-sinus-syndrome",
+    "pacemaker",
+    "ecg"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/kmle/2026/kmle-2026-0170.md",
+   "snippet": "72세 여자가 최근 한 달간 반복되는 어지럼과 두 번의 실신으로 왔다. 실신은 앉아 있을 때도 생겼고 흉통은 없었다. 복용 중인 서맥 유발 약물은 없다. 활력징후·검사 소견과 심전도는 자료와 같다. 증상과 소견이 지속될 때 가장 적절한 처치는? A. 경구 베타차단제를 시작한다 B. 영구 심박동조율기를 삽입한다 C. 관상동맥 조영술을 시행한다 D. 고용량 이뇨제를 투여한다 E. 별다른 처치 없이 경과를 관찰한다 증상(어지럼·실신",
+   "text": "Cardiology Sick Sinus Syndrome bradycardia syncope sick-sinus-syndrome pacemaker ecg KMLE 2026 / Claude Routine 72세 여자가 최근 한 달간 반복되는 어지럼과 두 번의 실신으로 왔다. 실신은 앉아 있을 때도 생겼고 흉통은 없었다. 복용 중인 서맥 유발 약물은 없다. 활력징후·검사 소견과 심전도는 자료와 같다. 증상과 소견이 지속될 때 가장 적절한 처치는? A. 경구 베타차단제를 시작한다 B. 영구 심박동조율기를 삽입한다 C. 관상동맥 조영술을 시행한다 D. 고용량 이뇨제를 투여한다 E. 별다른 처치 없이 경과를 관찰한다 증상(어지럼·실신)과 시간적으로 일치하는 지속적 동서맥이 있고 가역적 원인(약물·갑상선기능저하·전해질·허혈)이 배제되면 증상성 동기능부전증후군이다. 가역 원인이 없는 증상성 서맥의 확립된 치료는 영구 심박동조율기다."
+  },
+  {
+   "id": "paper-2026-0080",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0080_the_h63d_polymorphism_in_the_hfe_gene_promotes_aggressive_di.md",
+   "snippet": "Title The H63D Polymorphism in the HFE Gene Promotes Aggressive Disease Phenotypes in Pancreatic Ductal Adenocarcinoma Authors Rubbino Federica, Greco Luana, Scagliotti Alessandro, Di Cristofaro Alessio, de Murtas Valentina, De Simone Gabri",
+   "text": "Surgery scraped pubmed PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research Title The H63D Polymorphism in the HFE Gene Promotes Aggressive Disease Phenotypes in Pancreatic Ductal Adenocarcinoma Authors Rubbino Federica, Greco Luana, Scagliotti Alessandro, Di Cristofaro Alessio, de Murtas Valentina, De Simone Gabriele, Forciniti Stefania, Grizzi Fabio, et al. Journal / DOI Clinical cancer research : an official journal of the American Association for Cancer Research · DOI: 10.1158/1078 0432.CCR 25 4154 · PMID: 42440369 https://pubmed.ncbi.nlm.nih.gov/42440369/ Abstract PURPOSE: Controversy exists regarding the association between HFE H63D polymorphism and pancreatic ductal adenocarcinoma (PDAC). This study initially assessed the frequency of H63D in PDAC patients and subsequently investigated correlations between genotype and disease phenotype. EXPERIMENTAL DESIGN: H63D prevalence was determined by genotyping 795 PDAC patients from two retrospective cohorts of unselected (n = 389) or surgically resected (n = 171) individuals, and one prospective cohort of resectable cases (n = 235). Associations between H63D status and clinicopathological variables were retrospectively evaluated in unselected patients and prospectively validated in surgical candidates. The phenotypic impact of H63D carriage was also investigated using a genetically engineered KCH67D murine model and PDAC cell lines. Spatial transcriptomics was applied to human PDAC samples to define genotype associated microenvironmental and cell cycle alterations. RESULTS: H63D prevalence was higher in patients with resectable PDAC (37.7%, 37.4%, and 34% across cohorts) than in those with unresectable disease (22.4%) or the general population (24.1%). Despite this, resected H63D carriers had significantly worse outcomes, with the variant emerging as an independent predictor of shorter disease free survival (p = 0.002). Consequently, KCh67d mice developed earlier, larger tumors with increased metastatic spread. H63D PDAC cells and tumor spatial transcriptomic showed enhanced invasiveness, G1 phase accumulation, and TGFβ independent EMT activation. CONCLUSIONS: The H63D variant is strongly associated with PDAC resectability and, paradoxically, with a poorer post surgical outcome. Activation of a TWIST1 dependent EMT program within a G1 enriched cellular context underlies the more aggressive phenotype of H63D PDAC, possibly accounting for the clinical conundrum. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0079",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of imaging informatics in medicine",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0079_jade_plus_a_multimodal_agentic_retrieval_augmented_generatio.md",
+   "snippet": "Title JADE Plus: A Multimodal Agentic Retrieval Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study Authors Baseri Saadi Soroush, Ver Berne Jonas, Fontenele Roc",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of imaging informatics in medicine Title JADE Plus: A Multimodal Agentic Retrieval Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study Authors Baseri Saadi Soroush, Ver Berne Jonas, Fontenele Rocharles Cavalcante, Claes Peter, Jacobs Reinhilde Journal / DOI Journal of imaging informatics in medicine · DOI: 10.1007/s10278 026 02086 9 · PMID: 42440194 https://pubmed.ncbi.nlm.nih.gov/42440194/ Abstract Diagnosing jawbone lesions in oral and maxillofacial radiology remains challenging due to overlapping radiological features and the need for integrated clinical reasoning. This study aimed to develop and validate JADE Plus, a novel multimodal, agent controlled retrieval augmented generation (RAG) framework for diagnostic decision support in jawbone lesion assessment. JADE Plus was implemented as a cloud based, tablet optimized system integrating a vision language model (VLM) for panoramic radiograph analysis, a knowledge grounded RAG module, and an agentic verification loop for diagnostic fusion and re ranking. The system was evaluated using 40 representative jawbone lesion cases and compared with JADE, GPT 5.4, GPT 5.4 VLM, and ORAD. Performance was assessed using Top 1 and Top 3 accuracy, ablation and statistical analyses, intra model stability, and response time. JADE Plus achieved the highest diagnostic performance, with a Top 1 accuracy of 90% (36/40; 95% CI 76 97%) and a Top 3 accuracy of 100%, with no missed diagnoses. Cochran's Q test demonstrated significant differences among models for both Top 3 correctness (Q = 25.66, p < 0.001) and Top 1 correctness (Q = 27.55, p < 0.001). Post hoc McNemar tests with the Benjamini Hochberg correction showed that JADE Plus significantly outperformed other models, particularly under the stricter Top 1 evaluation. Ablation analysis showed that the agentic verification stage improved Top 1 and Top 3 accuracy by 15 and 8 percentage points, respectively. JADE Plus achieved the highest reproducibility (mean Jaccard similarity 0.97 ± 0.12) while maintaining a mean response time of 33 ± 1.5 s per case. JADE Plus demonstrated superior diagnostic accuracy, stability, and reproducibility compared with baseline systems, supporting multimodal agentic RAG frameworks for jawbone lesion diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0078",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0078_gut_derived_sodium_butyrate_attenuates_liver_fibrosis_by_inh.md",
+   "snippet": "Title Gut Derived Sodium Butyrate Attenuates Liver Fibrosis by Inhibiting Aerobic Glycolysis via the HDAC3/c Myc Signaling Axis Authors Sun Yong, Wu Huayue, Zhou Yutong, Yin Pengsheng, Wu Long, Li Haiyang, Zuo Shi, Yang Zhe, et al. Journal ",
+   "text": "Pathology scraped pubmed PubMed / FASEB journal : official publication of the Federation of American Societies for Experimental Biology Title Gut Derived Sodium Butyrate Attenuates Liver Fibrosis by Inhibiting Aerobic Glycolysis via the HDAC3/c Myc Signaling Axis Authors Sun Yong, Wu Huayue, Zhou Yutong, Yin Pengsheng, Wu Long, Li Haiyang, Zuo Shi, Yang Zhe, et al. Journal / DOI FASEB journal : official publication of the Federation of American Societies for Experimental Biology · DOI: 10.1096/fj.202504713R · PMID: 42440300 https://pubmed.ncbi.nlm.nih.gov/42440300/ Abstract Liver fibrosis remains a major global health challenge, driving interest in bioactive metabolites from natural sources as potential therapies. Sodium butyrate (NaB), a gut microbiota derived short chain fatty acid with notable anti fibrotic activity, shows promise, although its mechanisms remain unclear. This study aims to explore the molecular mechanisms through which NaB attenuates liver fibrosis. This study integrates bioinformatics and network pharmacology to predict the molecular targets through which NaB exerts its anti fibrotic effects. Candidate targets were validated through molecular docking, histopathology, CETSA, and SPR. The inferred mechanisms were further validated in vitro (LX 2 cells) and in vivo (CCl4 induced mice) using Western blot, IF Co IP, RT qPCR, ELISA, and histopathological staining. HDAC3 was identified as a key driver of liver fibrosis. As a natural HDAC3 inhibitor, NaB markedly attenuated CCl4 induced hepatic injury and fibrosis, accompanied by reduced expression of HDAC3, c Myc, glycolytic enzymes (HK2, PFKFB3, and PKM2), and fibrotic markers (α SMA and type I collagen) in fibrotic liver tissues and LX 2 cells. Mechanistically, NaB exerts its anti fibrotic effects by inhibiting HDAC3 expression and deacetylase activity, promoting c Myc acetylation and downregulating its expression, thereby suppressing glycolytic metabolic reprogramming in hepatic stellate cells. These findings indicate that NaB attenuates liver fibrosis by inhibiting HDAC3/c Myc mediated metabolic reprogramming, revealing a gut derived anti fibrotic mechanism and potential therapeutic targets. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0077",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0077_role_of_ctdna_tumor_fraction_in_selecting_immunotherapy_base.md",
+   "snippet": "Title Role of ctDNA Tumor Fraction in Selecting Immunotherapy Based Regimens in Advanced Non small Cell Lung Cancer Authors Dall'Olio Filippo G, Zrafi Wael, Vasseur Damien, Garcia Camilo, Beshiri Kristi, Marinello Arianna, Tagliamento Marco",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Clinical cancer research : an official journal of the American Association for Cancer Research Title Role of ctDNA Tumor Fraction in Selecting Immunotherapy Based Regimens in Advanced Non small Cell Lung Cancer Authors Dall'Olio Filippo G, Zrafi Wael, Vasseur Damien, Garcia Camilo, Beshiri Kristi, Marinello Arianna, Tagliamento Marco, Planchard David, et al. Journal / DOI Clinical cancer research : an official journal of the American Association for Cancer Research · DOI: 10.1158/1078 0432.CCR 25 3917 · PMID: 42440365 https://pubmed.ncbi.nlm.nih.gov/42440365/ Abstract BACKGROUND: Immune checkpoint blockers (ICBs) have transformed advanced non small cell lung cancer (aNSCLC) treatment, but identifying patients who benefit from adding chemotherapy remains challenging, especially in PD L1 ≥ 50%. PD L1 is an imperfect biomarker, highlighting the need for better selection tools. METHODS: Liquid biopsy (LBx) assessment was performed using hybrid capture based next generation sequencing of plasma cell free DNA. LBx data, molecular profile, and clinico pathological data were collected. The predictive and prognostic values of tumor fraction (TF) were assessed using a de identified nationwide (US based) NSCLC clinicogenomic database (CGDB). An independent cohort with aNSCLC from Gustave Roussy was used to validate the findings and to study the correlation of ctDNA tumor fraction and total metabolic tumor volume (tMTV) and its molecular correlates. RESULTS: In the CGDB Database (n=965), elevated ctDNA TF was prognostic for worse outcomes on ICBs and, when ≥5%, predictive of benefit from ICB+chemotherapy (HR for real world progression free survival 0.58 [0.41 0.82], p=0.002). The 5% cutoff for TF was validated in an independent cohort from Gustave Roussy. In 283 patients with paired PET scans, ctDNA TF correlated with metabolic tumor volume (rho=0.46, p<0.001) and was influenced by TP53/RB1 mutations. CONCLUSIONS: ctDNA TF integrates disease burden and biology. Patients with high ctDNA TF derive greater benefit from chemo immunotherapy, supporting its use as a biomarker to guide treatment intensification. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0076",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of endocrinological investigation",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0076_comparative_effectiveness_of_subcutaneous_glp_1_receptor_ago.md",
+   "snippet": "Title Comparative effectiveness of subcutaneous GLP 1 receptor agonists versus SGLT2 inhibitors on metabolic and hepatic outcomes in T2DM with MASLD: a propensity score matched study Authors Toffoli Barbara, Sirignano Matteo, Bonato Valeria",
+   "text": "Nephrology scraped pubmed PubMed / Journal of endocrinological investigation Title Comparative effectiveness of subcutaneous GLP 1 receptor agonists versus SGLT2 inhibitors on metabolic and hepatic outcomes in T2DM with MASLD: a propensity score matched study Authors Toffoli Barbara, Sirignano Matteo, Bonato Valeria, Fusaro Giulia, Russo Erica, Velardi Valerio, Crocè Lory Saveria, Fabris Bruno, et al. Journal / DOI Journal of endocrinological investigation · DOI: 10.1007/s40618 026 02976 3 · PMID: 42440238 https://pubmed.ncbi.nlm.nih.gov/42440238/ Abstract AIMS: Metabolic dysfunction associated steatotic liver disease (MASLD) frequently coexists with type 2 diabetes mellitus (T2DM), complicating its management. In this population, we aimed to compare the effectiveness of subcutaneous GLP 1 receptor agonists (scGLP 1RA) to SGLT2 inhibitors (SGLT2i) on metabolic and hepatic parameters, while investigating the influence of GLP1R and PNPLA3 genetic variants on treatment response. METHODS: This retrospective study included patients with T2DM starting scGLP 1RA or SGLT2i, balanced through Propensity Score Matching (PSM) to account for baseline clinical differences. Clinical and biochemical data were compared at baseline and after one year of treatment. Genotyping was performed for PNPLA3 (rs738409) and GLP1R (rs761387, rs6923761) polymorphisms. Multivariable linear regression was used to identify independent predictors of HbA1c, BMI, and transaminase reduction. RESULTS: Both drug classes significantly improved glycemic control and BMI. However, scGLP 1RA demonstrated superior efficacy in HbA1c and BMI reduction compared to SGLT2i (β = 0.349, p = 0.001; β = 0.711, p = 0.045). In MASLD subgroups (baseline ALT 35 U/L or hepatic steatosis), only scGLP 1RA led to a significant reduction in ALT levels (p = 0.02). Multivariable analysis identified the GLP1R rs761387 G allele as an independent predictor of a blunted glycemic response (β = 0.277, p = 0.018). CONCLUSIONS: In a real world setting, scGLP 1RA showed higher potency than SGLT2i on metabolic and hepatic parameters. These findings support the preferential use of scGLP 1RA in patients with T2DM and MASLD and are consistent with current international recommendations. The association between GLP1R rs761387 variant and HbA1c reduction sheds light on the impact of this variant on treatment response. Further studies are needed to validate this genetic predictor in broader populations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0075",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Avian diseases",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0075_epidemiology_antimicrobial_resistance_and_genetic_determinan.md",
+   "snippet": "Title Epidemiology, Antimicrobial Resistance, and Genetic Determinants of Methicillin Resistant Staphylococcus aureus (MRSA) in Broiler Chickens with Arthritis Authors El Sharkawy Hanem, Marzok Mohamed, Al Rasheed Mohammed, Tahoun Amin Jour",
+   "text": "Infectious Disease scraped pubmed PubMed / Avian diseases Title Epidemiology, Antimicrobial Resistance, and Genetic Determinants of Methicillin Resistant Staphylococcus aureus (MRSA) in Broiler Chickens with Arthritis Authors El Sharkawy Hanem, Marzok Mohamed, Al Rasheed Mohammed, Tahoun Amin Journal / DOI Avian diseases · DOI: 10.1637/aviandiseases D 25 00060 · PMID: 42440286 https://pubmed.ncbi.nlm.nih.gov/42440286/ Abstract Methicillin resistant Staphylococcus aureus (MRSA) is a serious zoonotic pathogen that poses significant threats to both public health and the poultry industry due to its multidrug resistance and virulence. In broiler chickens, MRSA infections are commonly associated with arthritis, resulting in impaired mobility, reduced productivity, and economic losses. This study aimed to investigate the epidemiology, antimicrobial resistance profiles, and genetic determinants of MRSA in broiler chickens presenting with clinical arthritis in the Kafr El Sheikh Governorate, northern Egypt. In this study, 100 broiler farms were randomly selected from a list provided by the local veterinary authority in Kafr El Sheikh Governorate. Of these, 20 medium sized farms (5000 10,000 birds per cycle) had clinically arthritic chickens. A total of 140 synovial fluid samples (six to eight chickens per farm) were aseptically collected from affected birds. The affected farms represented approximately 4.8% of the total broiler farms in the governorate and were distributed across different districts, indicating that MRSA associated arthritis was not confined to a single locality. Bacterial isolation was performed using selective culture media and confirmed via biochemical tests and PCR targeting the nuc gene. Antimicrobial susceptibility testing was conducted using the Kirby Bauer disk diffusion method against 16 antibiotics following CLSI 2020 guidelines. Molecular screening for resistance and virulence genes (mecA, vanA, hig) was performed by uniplex PCR. Phylogenetic analysis of 16S rRNA sequences was carried out using the Maximum Likelihood method. Clinical signs included joint swelling, deformity, and impaired locomotion. Epidemiological analysis revealed that MRSA associated arthritis was detected in (3/20) 15% of infected farms, with 7.67 ± 1.53% of birds affected within infected flocks. Staphylococcus aureus was isolated from 60% of footpad abscesses and 65% of hock joint swellings. All isolates were resistant to multiple β lactam antibiotics, including oxacillin, cefoxitin, penicillin G, and piperacillin. High resistance was also observed to clindamycin, cephradine, and cephalexin. The most effective agents were ampicillin sulbactam and vancomycin. The mecA and nuc genes were detected in all isolates, and vanA and hig genes were detected in 5% and 25% of isolates, respectively. Phylogenetic analysis confirmed the close genetic relatedness of the local isolate (PQ879639.1) to global S. aureus strains. MRSA is an emerging pathogen in broiler flocks with a marked capacity for antimicrobial resistance and zoonotic transmission. The detection of multidrug resistant strains carrying key resistance genes highlights the urgent need for enhanced biosecurity, prudent antimicrobial use, and routine monitoring programs to mitigate its impact on poultry and public health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0074",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JMIR formative research",
+   "confidence": "medium",
+   "date": "2026-07-13",
+   "path": "content/papers/2026/2026-07-13_paper-2026-0074_a_mobile_health_platform_for_heart_failure_self_management_f.md",
+   "snippet": "Title A Mobile Health Platform for Heart Failure Self Management: Feasibility Study on Patient Engagement, Acceptance, and Potential Health Outcomes Authors Li Jane, Varnfield Marlien, Bayor Andrew A, Good Norm, Rheault Haunnah, Beevors Est",
+   "text": "Cardiology scraped pubmed PubMed / JMIR formative research Title A Mobile Health Platform for Heart Failure Self Management: Feasibility Study on Patient Engagement, Acceptance, and Potential Health Outcomes Authors Li Jane, Varnfield Marlien, Bayor Andrew A, Good Norm, Rheault Haunnah, Beevors Estelle, Stibijl Kathryn, Roxas Maricel, et al. Journal / DOI JMIR formative research · DOI: 10.2196/89416 · PMID: 42440360 https://pubmed.ncbi.nlm.nih.gov/42440360/ Abstract BACKGROUND: Heart failure is a chronic condition that significantly impacts patients' quality of life and increases health care burden. Effective self monitoring and lifestyle modification are essential components of heart failure management and can support improved health outcomes. Mobile health technologies, such as smartphone apps, are increasingly used to assist patients with heart failure in self management. However, evidence regarding patient engagement, user experience, and the effectiveness of these mobile health tools remains limited and continues to evolve. OBJECTIVE: This study aimed to explore the feasibility of a mobile health platform, MoTER HF, which incorporates a smartphone app and a web based clinical portal to support self management in patients with heart failure. METHODS: The feasibility study used a single group pretest posttest mixed methods design. A total of 23 participants diagnosed with heart failure were recruited to use the app and 2 Bluetooth enabled measurement devices (a blood pressure monitor and a digital weight scale) over a 12 week period. Participants' engagement and acceptance were assessed using a satisfaction questionnaire, semistructured interviews, and platform usage logs. Potential health and behavioral outcomes were explored using validated instruments administered at baseline and week 12. RESULTS: Most participants found the MoTER HF app easy to use and aligned with their routine self monitoring practices. Daily monitoring features such as blood pressure and weight tracking were used frequently. However, features such as symptom tracking and exercise logging were used less often, reflecting individual preferences and perceived relevance. Participants reported improved self monitoring practices and valued the ability to visualize and track their data, and the reassurance provided through nurses' oversight in the satisfaction questionnaire and interviews. Changes in health and behavioral outcome measures were not statistically significant, although exploratory changes were observed in the scores of self care, quality of life, and psychological well being. CONCLUSIONS: The MoTER HF platform has demonstrated potential in supporting self management among individuals with heart failure, particularly when it incorporates features that participants find engaging. Further research is needed to better understand the platform's impact on health outcomes and the implementation challenges, and to involve clinicians in developing a scalable digital model of care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0169",
    "type": "kmle",
@@ -665,6 +1354,118 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0138.md",
    "snippet": "64세 남자가 3시간 전부터 지속되는 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통이나 호흡곤란은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아데노신을 빠르게 정주한다 B. 비동기 제세동을 즉시 시행한다 C. 정맥 딜티아젬으로 심박수를 조절한다 D. 경구 아스피린만 투여하고 퇴원시킨다 E. 미주신경자극수기만 반복 시행한다 심전도의 규칙적 좁은 QRS ",
    "text": "Cardiology Atrial Flutter atrial-flutter rate-control diltiazem AV-nodal-blocker narrow-complex-tachycardia KMLE 2026 / Claude Routine 64세 남자가 3시간 전부터 지속되는 두근거림으로 응급실에 왔다. 의식은 명료하고 흉통이나 호흡곤란은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아데노신을 빠르게 정주한다 B. 비동기 제세동을 즉시 시행한다 C. 정맥 딜티아젬으로 심박수를 조절한다 D. 경구 아스피린만 투여하고 퇴원시킨다 E. 미주신경자극수기만 반복 시행한다 심전도의 규칙적 좁은 QRS 빈맥에 톱니모양 조동파와 대략 2:1 방실전도(심실 약 150회)는 심방조동이다. 혈역학적으로 안정적이므로 즉각 심율동전환보다 방실결절차단제(딜티아젬 등)로 심박수를 먼저 조절한다."
+  },
+  {
+   "id": "paper-2026-0073",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International ophthalmology",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0073_risk_factors_for_iatrogenic_retinal_breaks_during_induction_.md",
+   "snippet": "Title Risk factors for iatrogenic retinal breaks during induction of posterior vitreous detachment in macula surgery Authors Paris Jai Ethan, Macri Carmelo Zak, Agrawal Surbhi, Lake Stewart, Chan Weng Onn Journal / DOI International ophthal",
+   "text": "Surgery scraped pubmed PubMed / International ophthalmology Title Risk factors for iatrogenic retinal breaks during induction of posterior vitreous detachment in macula surgery Authors Paris Jai Ethan, Macri Carmelo Zak, Agrawal Surbhi, Lake Stewart, Chan Weng Onn Journal / DOI International ophthalmology · DOI: 10.1007/s10792 026 04162 z · PMID: 42437431 https://pubmed.ncbi.nlm.nih.gov/42437431/ Abstract PURPOSE: To determine risk factors for retinal breaks (RB) during the surgical induction of posterior vitreous detachment (IPVD) in macula surgery. METHODS: We retrospectively reviewed electronic records for all adult patients undergoing 25 G or 27 G vitrectomy for macula pathology between November 2019 and January 2024 requiring intraoperative IPVD. We excluded eyes with pre existing PVD, panretinal photocoagulation, trauma, age < 18 years or missing information. The outcome measure was non sclerotomy related iatrogenic RB. We assessed the effect of age, gauge size (25 G vs 27 G), surgical indication (epiretinal membrane [ERM] vs macular hole[MH]/vitreomacular traction syndrome[VMTS]), lens status (Phakic vs Aphakic/Pseudophakic) and surgeon (Consultant vs Fellow) on the odds of RB. RESULTS: Among 185 eyes included in our study, 15.1% experienced a RB during IPVD. Breaks were predominantly located in the inferior retina (69%). Multivariable analysis revealed gauge size significantly impacted RB rate (27 G OR 0.13 95%CI 0.03 0.60, p = 0.008). Other factors including age (OR 0.98 95%CI 0.96 1.01, p = 0.18), lens status (Phakic OR 0.36 95%CI 0.13 1.01, p = 0.053), surgeon grade (Fellow OR 1.8 95%CI 0.18 18.9, p = 0.61) and surgical indication (MH OR 0.70 95%CI 0.30 1.7, p = 0.42) were not significantly associated with odds of RB. CONCLUSIONS: There is a high rate of iatrogenic RB in eyes requiring IPVD undergoing macula surgery. Smaller instrument gauge size was associated with lower odds of RB during IPVD, however causal inferences cannot be drawn from these findings. Neither age, surgical indication nor lens status were associated with odds of RB. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0072",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Iranian journal of allergy, asthma, and immunology",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0072_comparison_of_the_efficacy_of_different_doses_of_glucocortic.md",
+   "snippet": "Title Comparison of the Efficacy of Different Doses of Glucocorticoid Nasal Spray Combined with Loratadine in the Treatment of Rhinitis in Children: A Randomized Clinical Trial Authors Wang Huiying, Ren Zhen Journal / DOI Iranian journal of",
+   "text": "Pediatrics scraped pubmed PubMed / Iranian journal of allergy, asthma, and immunology Title Comparison of the Efficacy of Different Doses of Glucocorticoid Nasal Spray Combined with Loratadine in the Treatment of Rhinitis in Children: A Randomized Clinical Trial Authors Wang Huiying, Ren Zhen Journal / DOI Iranian journal of allergy, asthma, and immunology · PMID: 42437310 https://pubmed.ncbi.nlm.nih.gov/42437310/ Abstract Pediatric rhinitis is a common recurrent disorder that may progress to asthma or sinusitis in severe cases. This study aimed to compare the efficacy of different doses of glucocorticoid nasal spray combined with loratadine for rhinitis in children, and provide evidence for optimizing clinical treatment. A total of 150 children with rhinitis admitted from June 2022 to June 2024 were divided into three groups: group I (low dose group, n=50), group II (medium dose group, n=50), and group III (high dose group, n=50). Patients in all three groups were treated with a glucocorticoid nasal spray with loratadine combined with antihistamines. The immune function, serum inflammatory factor level, quantitative Lund Kennedy score by nasal endoscopy, nasal symptom score, Quality of Life Questionnaire (RQLQ) scores, clinical efficacy, incidence of adverse events, and treatment compliance were assessed. Post treatment, all indices improved in the three groups. The percentages of CD4+ and CD8+ T cells, IL 10 content, and clinical efficacy in groups II and III were significantly higher than those in group I, while the immunoglobulin E (IgE), IL 6 and IL 17 content, the quantitative Lund Kennedy score of nasal endoscopy, the children's nasal symptom scores, the RQLQ scores, and the incidence rate of adverse events were below in group I. No significant differences were found between groups II and III in all indices, nor in treatment compliance across the three groups. Loratadine combined with a glucocorticoid nasal spray therapy effectively improves clinical outcomes, inflammation, immune function, symptoms, and quality of life in rhinitis in children, with high clinical application value. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0071",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Orvosi hetilap",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0071_fitness_to_drive_legal_context_and_new_opportunities_for_cog.md",
+   "snippet": "Title [Fitness to drive: legal context and new opportunities for cognitive assessment] Authors Szabó Gábor, Baksa Judit, Cserháti Péter, Fazekas Gábor Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33599 · PMID: 42437471 https://pubme",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Orvosi hetilap Title [Fitness to drive: legal context and new opportunities for cognitive assessment] Authors Szabó Gábor, Baksa Judit, Cserháti Péter, Fazekas Gábor Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33599 · PMID: 42437471 https://pubmed.ncbi.nlm.nih.gov/42437471/ Abstract Decisions regarding driving licence eligibility represents a complex medical and legal challenge, requiring careful consideration of both public safety and individual interests. The present paper provides a brief overview of the legal and administrative framework of fitness to drive evaluation, the roles of the professionals involved in the process, and key issues related to cognitive assessment. While physical symptoms associated with neurological conditions are generally objectively identifiable, cognitive impairments often remain less apparent and may significantly affect driving ability even in milder forms. The diagnostic accuracy of currently used neuropsychological tests is moderate, which limits the reliability of clinical decision making. In this context, we present a prospective study conducted in stroke patients, in which a validated model based on the combination of multiple neuropsychological tests and logistic regression was developed. The model explicitly accounts for uncertainty and does not enforce categorical decisions in all cases, thereby allowing clinicians to refrain from definitive judgement in borderline cases. Although the method was validated in a stroke population, the proposed approach may be extended in future research to larger populations, such as older drivers. This would require the selection and validation of age specific cognitive tests, which may support decision making already at the level of primary care. Orv Hetil. 2026; 167(28): 1097 1104. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0070",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of pharmaceutical sciences",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0070_tagetes_patula_l_flower_methanolic_extract_exhibited_benefic.md",
+   "snippet": "Title Tagetes patula L. flower methanolic extract exhibited beneficial actions against hepatocellular carcinoma via induction of apoptosis Authors Ajab Khan Asfandyar, Kashif Muhammad, Khan Hazar, Razzak Anam, Aslam Shazmeen, Bano Samina, F",
+   "text": "Pathology scraped pubmed PubMed / Pakistan journal of pharmaceutical sciences Title Tagetes patula L. flower methanolic extract exhibited beneficial actions against hepatocellular carcinoma via induction of apoptosis Authors Ajab Khan Asfandyar, Kashif Muhammad, Khan Hazar, Razzak Anam, Aslam Shazmeen, Bano Samina, Faizi Shaheen, Roome Talat Journal / DOI Pakistan journal of pharmaceutical sciences · DOI: 10.36721/PJPS.2026.39.9.267.1 · PMID: 42437333 https://pubmed.ncbi.nlm.nih.gov/42437333/ Abstract BACKGROUND: Hepatocellular carcinoma (HCC) is considered as a primary malignant tumor with limited treatment options. Tagetes patula flower methanolic extract, containing patuletin as major flavonoid, was reported to exhibit beneficial effects against various cancer cell lines. OBJECTIVE: Keeping this in view, the present study was designed to assess their beneficial action against HCC in both in vitro and in vivo models. METHODS: The anti HCC (Hep G2 cancer cell line) action was determined (Sulforhodamine B assay) followed by apoptosis (Annexin V) assay. For in vivo assessment, diethylnitrosamine (DEN) induced HCC rat model was used. The parameters evaluated involve body and liver weights, CBC, LFT, histopathology and expression of inflammatory cytokines (TNF α, IL 6 and AFP). RESULTS: The extract caused dose dependent inhibition of growth (IC50=176±23 μg/ml) against Hep G2 cells, while patuletin failed to exhibit any such action. Furthermore, the Tagetes extract treatment resulted in a significant decrease in cell viability and a corresponding increase in apoptosis (both early and late phase), comparable to the effects observed with vinblastine. In rats, DEN treatment also decreased the body weight, altered liver architecture and raised cytokines levels. All of these effects were neutralized by extract in both prevention and treatment protocols. CONCLUSION: Overall, T. patula flower methanolic extract has demonstrated beneficial effects in in vitro and in vivo models of HCC. Hence, it presents itself as a potential source for anti HCC drug development. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0069",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pakistan journal of pharmaceutical sciences",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0069_effect_of_quercetin_on_aconitine_induced_renal_interstitial_.md",
+   "snippet": "Title Effect of quercetin on aconitine induced renal interstitial fibrosis and its relationship with PI3K/Akt pathway Authors Feng Wei, Zhou Jie, Zheng Yuanjue, Li Yingang Journal / DOI Pakistan journal of pharmaceutical sciences · DOI: 10.",
+   "text": "Nephrology scraped pubmed PubMed / Pakistan journal of pharmaceutical sciences Title Effect of quercetin on aconitine induced renal interstitial fibrosis and its relationship with PI3K/Akt pathway Authors Feng Wei, Zhou Jie, Zheng Yuanjue, Li Yingang Journal / DOI Pakistan journal of pharmaceutical sciences · DOI: 10.36721/PJPS.2026.39.9.265.1 · PMID: 42437331 https://pubmed.ncbi.nlm.nih.gov/42437331/ Abstract BACKGROUND: Renal interstitial fibrosis (RIF) is a critical pathological outcome of chronic kidney disease (CKD). Aconitine has been shown to induce RIF, with the phosphatidylinositol 3 kinase/protein kinase B (PI3K/Akt) signaling pathway potentially playing a key role in this process. Quercetin, a natural flavonoid compound, exhibits anti fibrotic effects that may be associated with this pathway. However, there is no clear evidence yet regarding its role in aconitine induced RIF. OBJECTIVES: This study aimed to investigate the intervention effect of quercetin on aconitine induced RIF and the role of PI3K/Akt pathway in its mechanism. METHODS: A mouse model of RIF was established and the animals were randomly assigned to the following groups: normal control, aconitine model, low dose quercetin, medium dose quercetin, high dose quercetin and high dose quercetin combined with the PI3K inhibitor S27673 MA. The extent of fibrosis and the expression of key molecules in the PI3K/Akt pathway were evaluated using histopathology, qPCR and Western blot. RESULTS: Compared to the model group, the high dose quercetin group exhibited an approximately 60% reduction in fibrotic area (P<0.01). Moreover, quercetin significantly suppressed the overexpression of phospho PI3K (p PI3K), phospho AKT (p AKT), neutrophil elastase (NE) and nuclear factor kappa B p65 (NF κB p65) at both transcriptional and protein levels in renal tissues (P<0.05). The use of the PI3K inhibitor S27673 MA further enhanced the anti fibrotic effect of quercetin and its inhibitory effect on the aforementioned molecules. CONCLUSION: Quercetin ameliorates aconitine induced RIF by inhibiting the PI3K/Akt pathway and its downstream NE/NF κB axis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0068",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Naunyn-Schmiedeberg's archives of pharmacology",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0068_molecular_characterization_of_virulence_and_resistance_deter.md",
+   "snippet": "Title Molecular characterization of virulence and resistance determinants in clinical Pseudomonas aeruginosa isolates: a cross sectional analysis of virulence resistance associations Authors Moursi Soha Abdallah, Saleem Mohd, Salem Alharbi ",
+   "text": "Infectious Disease scraped pubmed PubMed / Naunyn-Schmiedeberg's archives of pharmacology Title Molecular characterization of virulence and resistance determinants in clinical Pseudomonas aeruginosa isolates: a cross sectional analysis of virulence resistance associations Authors Moursi Soha Abdallah, Saleem Mohd, Salem Alharbi Mohammed, Rakha Ehab Badran Mohammed, Alshammari Ahmed Nawi, Aboras Rana, SyedKhaja AzharuddinSajid, Hossain Ashfaque Journal / DOI Naunyn Schmiedeberg's archives of pharmacology · DOI: 10.1007/s00210 026 05706 x · PMID: 42437416 https://pubmed.ncbi.nlm.nih.gov/42437416/ Abstract Pseudomonas aeruginosa is a clinically significant opportunistic pathogen characterized by intrinsic and acquired resistance mechanisms coupled with a diverse array of virulence determinants. This study investigated the distribution of P. aeruginosa in various clinical specimens (n = 382), its virulence genes, antimicrobial resistance patterns, and associations with total resistant P. aeruginosa (TRPA) phenotypes. The majority of isolates were recovered from sputum (24.3%) and endotracheal tube samples (22.5%). Virulence gene screening revealed moderate to high prevalence of lasB (55.0%), toxA (49.7%), pilA (53.7%), aprA (56.5%), phzS (45.0%), exoS (41.9%), and exoU (38.0%), indicating their widespread involvement in pathogenicity. Antimicrobial susceptibility profiling demonstrated the highest susceptibility to amikacin (56.3%) and gentamicin (52.4%), while resistance to carbapenems (imipenem 52.4%, meropenem 52.9%) and cephalosporins was alarmingly high. Based on resistance classification, 33.5% of isolates were MDR, and 9.7% XDR. Among ceftazidime resistant isolates (n = 200), 83% harboured ESBL genes, with blaCTX M (38.0%) being most prevalent. Notably, 30.7% and 22.8% of isolates carried blaNDM 1 and blaOXA 48, respectively. Comparative analysis demonstrated statistically significant associations between TRPA phenotype and virulence genes: lasB (OR = 90.3), toxA (OR = 260.9), and pilA (OR = 32.6) (p < 0.0001). Resistance determinants such as blaCTX M (OR = 3.5), aac(6') Ib (OR = 2.9), qnrA (OR = 3.9), and co carriage of NDM 1 + OXA 48 (OR = 4.9) were significantly enriched in TRPA isolates. These findings demonstrate a significant association between virulence and antimicrobial resistance traits, emphasizing the potential expansion of high risk P. aeruginosa clones in clinical settings and highlighting the need for genomic surveillance and antimicrobial stewardship interventions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0067",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Regenerative therapy",
+   "confidence": "medium",
+   "date": "2026-07-12",
+   "path": "content/papers/2026/2026-07-12_paper-2026-0067_human_induced_pluripotent_stem_cell_derived_cardiomyocyte_pa.md",
+   "snippet": "Title Human induced pluripotent stem cell derived cardiomyocyte patch enhances cardiac regeneration in a J2N k hamster model of dilated cardiomyopathy Authors Inoue Koichi, Kugo Yosuke, Kawamura Takuji, Kaneda Eri, Fujimura Lisa, Ito Emiko,",
+   "text": "Cardiology scraped pubmed PubMed / Regenerative therapy Title Human induced pluripotent stem cell derived cardiomyocyte patch enhances cardiac regeneration in a J2N k hamster model of dilated cardiomyopathy Authors Inoue Koichi, Kugo Yosuke, Kawamura Takuji, Kaneda Eri, Fujimura Lisa, Ito Emiko, Takeda Maki, Harada Akima, et al. Journal / DOI Regenerative therapy · DOI: 10.1016/j.reth.2026.101154 · PMID: 42437293 https://pubmed.ncbi.nlm.nih.gov/42437293/ Abstract INTRODUCTION: Dilated cardiomyopathy (DCM) is a major cause of heart failure with limited therapeutic options beyond heart transplantation. This study aimed to evaluated the therapeutic potential of human induced pluripotent stem cell derived cardiomyocyte (hiPS CM) patch transplantation in a genetic DCM model. METHODS: hiPS CM patches were transplanted onto the left ventricular surface of adult J2N k hamsters with DCM. Cardiac function, survival, and histological evaluation were assessed. Single nucleus RNA sequencing using left ventricular myocardium was performed to investigate cell type specific transcriptional alteration associated with treatment. RESULTS: hiPS CM patch transplantation preserved cardiac function [left ventricular ejection fraction, 41.2 (38.9 42.8) vs. 43.4 (40.5 44.6) %, P = 0.07], improved survival [Hazrod ratio 0.39 (95% confidence interval 0.16 0.63), P < 0.05], reduced myocardial fibrosis [fibrous area, 10.2 (9.4 12.1) vs. 14.1 (13.1 18.3) %, P < 0.05], and increased capillary density [CD 31 positive cells cout, 373.2 (336.4 441.3) vs. 210.7 (157.4 232.3) cells/mm3, P < 0.05] in J2N k hamsters compared with controls. Transcriptomic analysis revealed regenerative shifts across multiple cell types, including activation of cardiac transcription factors (MEF2C, GATA4, NKX2 5), upregulation of angiogenesis related pathways (ERK1/2 cascade, KLF4, ETS1, GATA2), and modulation of pro fibrotic signaling (SMAD3, STAT3, NF κB). CONCLUSIONS: hiPS CM patch transplantation exerts therapeutic effects through multicellular mechanisms, including enhanced angiogenesis, improved myocardial microenvironment, and modulation of fibrosis. These findings support the feasibility of hiPS CM patch therapy as a regenerative strategy for end stage DCM and provide mechanistic insights into its therapeutic action. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "ailab-2026-0011",
