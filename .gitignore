@@ -10,3 +10,9 @@ db/*.sqlite-*
 __pycache__/
 *.pyc
 .venv/
+
+# 상태는 content 에서 파생 — 커밋하지 않는다(충돌 원천 제거). state.py 참조.
+state/id_counter.json
+state/seen_topics.json
+state/seen_papers.json
+state/.id_cache.json

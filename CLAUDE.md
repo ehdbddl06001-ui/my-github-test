@@ -12,9 +12,14 @@
 - 출처가 충돌하면 임의로 고르지 말고 source/edition/date를 남기고 confidence를 낮춘다.
 
 ## 임시 컨테이너(루틴) 대응 — 매우 중요
-- 실행 시작: `python pipelines/state.py` 관점으로, 최근 주제(`recent_topics`)를 읽어
-  중복을 피하고, ID는 `next_id()` 로만 발급한다.
-- 실행 끝: `state/id_counter.json`, `state/seen_topics.json` 을 갱신해 **같은 커밋에 포함**.
+- 실행 시작: 최근 주제(`recent_topics`)를 읽어 중복을 피하고, ID는 `next_id()` 로만 발급한다.
+- **상태는 `content/` 파생물이다(충돌 원천 제거)**: `next_id`·`recent_topics`·`paper_seen`
+  은 저장된 `content` 카드에서 그때그때 계산한다. `state/id_counter.json`·`seen_topics.json`·
+  `seen_papers.json` 은 **더는 만들지도 커밋하지도 않는다**(.gitignore). 따라서 두 루틴이
+  같은 상태 파일을 건드려 충돌날 일이 없다. `next_id` 는 content 최댓값을 바닥으로 삼고
+  gitignore 된 컨테이너 캐시(`state/.id_cache.json`)로 같은 실행 내 단조 발급만 보장한다.
+- 유일하게 커밋되는 상태는 `state/ailab_progress.json`(주간 단일트랙 진도)뿐이고, 혹시
+  갈라져도 머지 드라이버가 union 한다. `record_topic`·`mark_paper_seen` 은 호환용 no-op.
 - `db/medkos.sqlite` 는 커밋하지 않는다(.gitignore). 커밋 전 `indexer.py`로 재빌드만.
 
 ## 저장 위치
@@ -25,27 +30,29 @@
   · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
 ## 커밋 전 필수 순서
-1. **main 동기화(충돌 예방 — 매우 중요)**: push/PR 직전에 `git fetch origin main` 후
-   `git merge origin/main`. 그 사이 다른 루틴(논문 스크랩 등)이 앞서 나가도, `state/*.json`
-   은 머지 드라이버(`pipelines/merge_state.py`)가 **union/최댓값으로 자동 해소**한다.
-   병합으로 남의 `content/`가 딸려 들어왔으면 반드시 2단계 재색인·번들 재생성을 다시 돌려
-   `docs/` 번들이 그 신규 콘텐츠까지 반영하게 한다(병합 직후 번들은 낡아 있음).
+1. **main 동기화(충돌 예방)**: push/PR 직전에 `git fetch origin main` 후 `git merge origin/main`.
+   상태를 content 파생으로 바꾼 뒤로 kmle/usmle·논문 스크랩은 공유 커밋 파일이 없어
+   충돌하지 않지만, 그래도 최신 main 위에서 번들을 만들도록 병합한다. 병합으로 남의
+   `content/`가 딸려 들어왔으면 2단계 재색인·번들 재생성을 다시 돌려 `docs/` 번들이 그
+   신규 콘텐츠까지 반영하게 한다(병합 직후 번들은 낡아 있음).
 2. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
 3. `python pipelines/indexer.py`          (SQLite 재빌드) → 이어서 `docs/` 번들 재생성
-4. 상태 파일과 새 `.md` 를 함께 커밋
+4. 새 `.md` 와 재생성된 `docs/` 번들을 함께 커밋(id_counter·seen_topics·seen_papers 는
+   파생물이라 커밋 대상이 아니다; ailab 진도를 바꿨다면 `state/ailab_progress.json` 만 포함).
 5. 신규 타입(paper/disease/drug)은 self-verify 한계를 고려해 **PR로** 올린다.
    시험 문항(KMLE·USMLE)은 흐름이 안정적이면 **main 직접 커밋 허용** — PR이 병합되지
    않으면 `docs/` 번들이 main에 못 올라가 홈페이지 '오늘의 문항'에 안 뜨므로 동일 취급한다.
 
-### 상태 파일 머지 드라이버 (가짜 충돌 제거)
-`state/*.json`(id_counter·seen_topics·seen_papers·ailab_progress)은 여러 루틴이 각자
-브랜치에서 '추가'만 하는 결정론 레지스트리다. 두 브랜치가 같은 파일을 늘리면 git 기본
-병합은 충돌을 내지만 정답은 늘 '합집합'뿐이라, `.gitattributes`(`state/*.json
-merge=medkos-state`) + `pipelines/merge_state.py` 드라이버가 이를 자동 병합한다. 드라이버는
-매 컨테이너에서 `.claude` SessionStart 훅이 `git config`로 등록한다(임시 컨테이너 안전).
-주의: 이 드라이버는 **로컬 git 병합**에만 작동한다 → GitHub의 'Update branch'·서버 병합은
-드라이버를 안 쓰므로, PR이 dirty 해지면 위 1단계(로컬 `git merge origin/main` 후 push)로
-해소한다. 회귀 테스트: `python pipelines/merge_state.py --selftest`.
+### 상태 충돌 방지: content 파생 + 머지 드라이버(이중 안전망)
+1차 방어는 **파생물화**다: id_counter·seen_topics·seen_papers 를 커밋하지 않고 `content`
+에서 계산하므로(→ `pipelines/state.py`), 두 루틴이 같은 상태 파일을 건드릴 일이 없다.
+2차 방어(백스톱)는 **머지 드라이버**다: 유일하게 남은 커밋 상태 `state/ailab_progress.json`
+(과 혹시 로컬에 재등장하는 `state/*.json`)이 갈라지면, `.gitattributes`(`state/*.json
+merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병합한다. 드라이버는
+`.claude` SessionStart 훅이 매 컨테이너에서 `git config`로 등록한다(임시 컨테이너 안전).
+주의: 드라이버는 **로컬 git 병합**에만 작동한다 → GitHub 서버 병합은 위 1단계(로컬
+`git merge origin/main` 후 push)로 해소. 회귀 테스트: `python pipelines/merge_state.py --selftest`,
+`python pipelines/test_state.py`.
 
 ## 금지
 - DB에 직접 write. `content/` 밖에 콘텐츠 저장. frontmatter 없는 `.md` 생성.

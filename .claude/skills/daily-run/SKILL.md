@@ -31,10 +31,9 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
      (루틴 컨테이너는 UTC이고 스케줄이 20:00 UTC=05:00 KST라, UTC 날짜로 찍으면
      하루 밀려 웹 '오늘의 문항'에 안 잡힌다. 웹도 KST 기준으로 오늘을 판단한다.)
 
-4. **주제 기록** — 생성한 각 주제를 기록한다.
-   ```
-   python -c "from pipelines.state import record_topic; record_topic('usmle', '<주제>')"
-   ```
+4. **주제 기록** — 불필요(파생물화). 주제는 저장한 카드의 `topic`/`subtopic` frontmatter가
+   SoT이고 `recent_topics()`가 여기서 계산한다. `record_topic()`은 호환용 no-op이라 굳이
+   부르지 않아도 된다.
 
 5. **검증 + 색인**
    ```
@@ -55,7 +54,9 @@ description: 하루치 MedKOS 콘텐츠를 생성·저장·색인·커밋하는 
      → `docs/search-index.js` (통합검색·대시보드 갱신). 매 실행 항상 재생성한다.
    생성된 번들을 **같은 커밋에 포함**한다.
 
-7. **커밋** — 새 `.md` + `state/*.json` + 재생성된 `docs/` 번들을 함께 커밋.
+7. **커밋** — 새 `.md` + 재생성된 `docs/` 번들을 함께 커밋. (id_counter·seen_topics·
+   seen_papers 는 파생물이라 커밋하지 않는다 — `.gitignore`. AI랩 진도를 바꿨을 때만
+   `state/ailab_progress.json` 포함.)
    - **KMLE / USMLE(시험 문항): main 직접 커밋 허용** — 흐름이 안정적이고, PR이
      병합되지 않으면 `docs/` 번들이 main에 못 올라가 홈페이지 '오늘의 문항'에 안 뜬다.
      문항 타입은 KMLE·USMLE 동일하게 취급해 생성 즉시 사이트에 반영한다.
