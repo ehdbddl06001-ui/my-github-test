@@ -2848,5 +2848,534 @@ window.USMLE_QUESTIONS = [
    ]
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0049",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pathology",
+  "subject_file": "Pathology",
+  "subtopic": "Fat Embolism Syndrome (Long-Bone Fracture)",
+  "type": "Fat Embolism Syndrome (Long-Bone Fracture)",
+  "difficulty": 4,
+  "created": "2026-07-16",
+  "vignette": "A 22-year-old man underwent open reduction and internal fixation of a closed femoral shaft fracture sustained in a motor vehicle collision 36 hours ago. He is now increasingly short of breath and confused, unable to state the correct year. Examination reveals new non-palpable petechiae scattered across both axillae and the anterior chest wall that were not present on admission. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following mechanisms best explains this patient's respiratory failure and skin findings?",
+  "options": [
+   "Circulating antiplatelet antibodies destroy platelets and trigger diffuse microvascular thrombosis",
+   "Marrow megakaryocytes embolize to the pulmonary vasculature and cause acute pulmonary infarction",
+   "Marrow fat globules occlude pulmonary capillaries, and the free fatty acids released produce direct endothelial injury",
+   "Immune complexes deposit in alveolar capillaries and trigger complement-mediated diffuse alveolar damage",
+   "A lower-extremity venous thrombus crosses a patent foramen ovale into the systemic arterial circulation"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 장골 골절/고정술 후 24~72시간 사이에 나타나는 호흡곤란·의식변화·점상출혈의 삼주징, 신규 혈소판감소, 저산소혈증, 정상 응고수치의 조합은 지방색전증후군의 전형이다. 골절 부위에서 골수 지방이 정맥계로 유입되어 폐·전신 모세혈관을 기계적으로 막고, 지방분해효소가 유리시킨 유리지방산이 모세혈관 내피를 직접 손상시켜 모세혈관 누출, 혈소판이 지방 방울에 부착되며 생기는 혈소판감소, 진피 모세혈관 폐색에 의한 점상출혈을 일으킨다.\n- 오답감별:\n  - A: 항혈소판항체 매개 혈소판감소는 헤파린유발혈소판감소증(HIT) 등에서 보이나, 이 환자는 최근 헤파린 노출력이 제시되지 않았고 장골 골절 후 시간 경과·저산소혈증·점상출혈 조합이 지방색전에 더 부합한다.\n  - B: 거핵세포 색전은 실제로는 드물고 폐경색을 일으키는 기전이 아니며, 이 환자의 전신성 점상출혈·의식변화를 설명하지 못한다.\n  - D: 면역복합체 매개 미만성폐포손상은 시간 경과나 유발 인자(골절)와 직접 연관되지 않으며, 점상출혈이나 신경학적 증상을 전형적으로 설명하지 못한다.\n  - E: 정맥혈전의 역설색전은 이론적으로 가능하나 편측 신경학적 증상(뇌졸중양)으로 나타나는 것이 전형이며, 전신 점상출혈이나 양측 저산소혈증을 설명하지 못한다.\n- 임상핵심: \"장골 골절 24~72시간 후 호흡곤란+의식변화+점상출혈 + 혈소판감소 + 정상 응고수치\"는 지방색전증후군을 시사하는 대표 패턴이며, 응고장애(DIC)와의 감별점은 PT/INR·피브리노겐이 정상이라는 것이다.\n- 출처: First Aid for the USMLE Step 1 — Pathology, Embolism; Robbins Basic Pathology.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "장골 골절/고정술 후 24~72시간 사이에 나타나는 호흡곤란·의식변화·점상출혈의 삼주징, 신규 혈소판감소, 저산소혈증, 정상 응고수치의 조합은 지방색전증후군의 전형이다. 골절 부위에서 골수 지방이 정맥계로 유입되어 폐·전신 모세혈관을 기계적으로 막고, 지방분해효소가 유리시킨 유리지방산이 모세혈관 내피를 직접 손상시켜 모세혈관 누출, 혈소판이 지방 방울에 부착되며 생기는 혈소판감소, 진피 모세혈관 폐색에 의한 점상출혈을 일으킨다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 항혈소판항체 매개 혈소판감소는 헤파린유발혈소판감소증(HIT) 등에서 보이나, 이 환자는 최근 헤파린 노출력이 제시되지 않았고 장골 골절 후 시간 경과·저산소혈증·점상출혈 조합이 지방색전에 더 부합한다.\nB: 거핵세포 색전은 실제로는 드물고 폐경색을 일으키는 기전이 아니며, 이 환자의 전신성 점상출혈·의식변화를 설명하지 못한다.\nD: 면역복합체 매개 미만성폐포손상은 시간 경과나 유발 인자(골절)와 직접 연관되지 않으며, 점상출혈이나 신경학적 증상을 전형적으로 설명하지 못한다.\nE: 정맥혈전의 역설색전은 이론적으로 가능하나 편측 신경학적 증상(뇌졸중양)으로 나타나는 것이 전형이며, 전신 점상출혈이나 양측 저산소혈증을 설명하지 못한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "\"장골 골절 24~72시간 후 호흡곤란+의식변화+점상출혈 + 혈소판감소 + 정상 응고수치\"는 지방색전증후군을 시사하는 대표 패턴이며, 응고장애(DIC)와의 감별점은 PT/INR·피브리노겐이 정상이라는 것이다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1 — Pathology, Embolism; Robbins Basic Pathology."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (pathology · fat embolism)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "108/68 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "128회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "34회/분"
+   },
+   {
+    "name": "체온",
+    "value": "38.4 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈소판",
+    "value": "92,000 /mm³",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "혈색소",
+    "value": "10.1 g/dL",
+    "ref": "13.5–17.5"
+   },
+   {
+    "name": "PT/INR",
+    "value": "1.0",
+    "ref": "0.8–1.1"
+   },
+   {
+    "name": "혈장 피브리노겐",
+    "value": "320 mg/dL",
+    "ref": "200–400"
+   },
+   {
+    "name": "동맥혈 PaO2 (실내공기)",
+    "value": "58 mmHg",
+    "ref": "80–100"
+   },
+   {
+    "name": "혈청 칼슘",
+    "value": "8.7 mg/dL",
+    "ref": "8.5–10.5"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "지방색전증후군(FES) — Gurd 기준으로 감별\n───────────────────────────────────────────────\n주기준(≥1개)              부기준(≥4개)\n  · 겨드랑이/흉부 점상출혈    · 빈맥(>110/분)\n  · 저산소혈증(PaO2<60)      · 발열(>38.5°C)\n  · 중추신경계 억제           · 망막 지방색전\n                              · 소변/객담 내 지방구\n                              · 혈소판 감소·급격한 Hb 하강\n                              · 혈침(ESR) 상승\n핵심: 응고인자(PT/INR·피브리노겐)는 대개 정상 — DIC와의 감별점.\n───────────────────────────────────────────────\n",
+   "최신지견": "장골 골절 후 조기 골수강내 고정(intramedullary reaming) 시 지방색전 위험이 이론상 증가하나, 조기 골절 고정 자체는 전신 합병증을 줄여 여전히 권장된다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 1 — Pathology, Embolism",
+    "Robbins Basic Pathology — Fat and Marrow Embolism"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0050",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Pharmacology",
+  "subject_file": "Pharmacology",
+  "subtopic": "Methotrexate Toxicity — Leucovorin Rescue Mechanism",
+  "type": "Methotrexate Toxicity — Leucovorin Rescue Mechanism",
+  "difficulty": 5,
+  "created": "2026-07-16",
+  "vignette": "A 14-year-old girl with osteosarcoma is receiving a cycle of high-dose intravenous methotrexate as part of her chemotherapy protocol. She also receives aggressive intravenous hydration and urinary alkalinization, and is given scheduled doses of leucovorin beginning 24 hours after the methotrexate infusion, continuing until her serum methotrexate level falls below a defined threshold. Vital signs and laboratory studies obtained during monitoring are shown.",
+  "question": "Which of the following best explains how leucovorin protects this patient's normal tissues from methotrexate toxicity?",
+  "options": [
+   "Leucovorin competitively displaces methotrexate from dihydrofolate reductase, restoring the enzyme's normal catalytic activity in all cells",
+   "Leucovorin induces hepatic cytochrome P450 enzymes, thereby accelerating renal and biliary clearance of circulating methotrexate",
+   "Leucovorin binds circulating methotrexate directly in the plasma, forming an inactive complex that is excreted by the kidneys",
+   "Leucovorin upregulates expression of the reduced folate carrier, increasing active efflux of methotrexate out of cells",
+   "Leucovorin bypasses the methotrexate-inhibited dihydrofolate reductase step by directly supplying reduced folate for purine and thymidylate synthesis"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 메토트렉세이트는 디하이드로엽산환원효소(DHFR)를 경쟁적으로 억제해 퓨린·티미딜산 합성에 필요한 테트라하이드로엽산 재생을 막는다. 류코보린(폴린산)은 이미 환원된 형태의 엽산이므로, 차단된 DHFR 단계를 우회해 하류에서 바로 1탄소 전달 회로에 필요한 보조인자를 정상세포에 공급함으로써 효소 자체를 재활성화하지 않고도 항증식 효과로부터 정상세포를 구조한다.\n- 오답감별:\n  - A: 류코보린이 DHFR에서 메토트렉세이트를 경쟁적으로 밀어내 효소를 재활성화한다는 것은 흔한 오개념이며, 실제로는 효소 단계 자체를 우회하는 것이 핵심이다. 만약 A가 사실이라면 종양세포에서도 효소가 재활성화되어 항종양 효과가 무효화되어야 한다.\n  - B: 메토트렉세이트의 청소는 주로 신장을 통한 미변화 약물 배설이며, 간 CYP450 유도가 핵심 기전이 아니다.\n  - C: 류코보린이 혈중에서 메토트렉세이트를 직접 결합·불활성화한다는 킬레이션 기전은 실재하지 않는다.\n  - D: 환원엽산운반체(RFC) 발현 조절은 세포 내 엽산·메토트렉세이트 유입에 관여하나, 류코보린 구조요법의 핵심 기전은 운반체 상향조절이 아니라 대사 우회 공급이다.\n- 임상핵심: HD-MTX 구조요법의 핵심은 \"차단된 DHFR 단계를 우회해 이미 환원된 엽산(류코보린)을 직접 공급\"하는 것이며, 엽산(folic acid)이 아닌 류코보린을 쓰는 이유도 여기에 있다(엽산은 DHFR을 거쳐야 환원되므로 구조 효과가 없다).\n- 출처: First Aid for the USMLE Step 1 — Pharmacology, Antimetabolites; Goodman & Gilman's.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "메토트렉세이트는 디하이드로엽산환원효소(DHFR)를 경쟁적으로 억제해 퓨린·티미딜산 합성에 필요한 테트라하이드로엽산 재생을 막는다. 류코보린(폴린산)은 이미 환원된 형태의 엽산이므로, 차단된 DHFR 단계를 우회해 하류에서 바로 1탄소 전달 회로에 필요한 보조인자를 정상세포에 공급함으로써 효소 자체를 재활성화하지 않고도 항증식 효과로부터 정상세포를 구조한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 류코보린이 DHFR에서 메토트렉세이트를 경쟁적으로 밀어내 효소를 재활성화한다는 것은 흔한 오개념이며, 실제로는 효소 단계 자체를 우회하는 것이 핵심이다. 만약 A가 사실이라면 종양세포에서도 효소가 재활성화되어 항종양 효과가 무효화되어야 한다.\nB: 메토트렉세이트의 청소는 주로 신장을 통한 미변화 약물 배설이며, 간 CYP450 유도가 핵심 기전이 아니다.\nC: 류코보린이 혈중에서 메토트렉세이트를 직접 결합·불활성화한다는 킬레이션 기전은 실재하지 않는다.\nD: 환원엽산운반체(RFC) 발현 조절은 세포 내 엽산·메토트렉세이트 유입에 관여하나, 류코보린 구조요법의 핵심 기전은 운반체 상향조절이 아니라 대사 우회 공급이다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "HD-MTX 구조요법의 핵심은 \"차단된 DHFR 단계를 우회해 이미 환원된 엽산(류코보린)을 직접 공급\"하는 것이며, 엽산(folic acid)이 아닌 류코보린을 쓰는 이유도 여기에 있다(엽산은 DHFR을 거쳐야 환원되므로 구조 효과가 없다)."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1 — Pharmacology, Antimetabolites; Goodman & Gilman's."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (pharmacology · antimetabolites)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "108/64 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "88회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "16회/분"
+   },
+   {
+    "name": "체온",
+    "value": "36.7 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈청 크레아티닌",
+    "value": "0.5 mg/dL",
+    "ref": "0.3–0.7"
+   },
+   {
+    "name": "혈중 메토트렉세이트 농도(48시간)",
+    "value": "0.3 μmol/L",
+    "ref": "< 1.0 (48시간 목표치)"
+   },
+   {
+    "name": "소변 pH",
+    "value": "7.2",
+    "ref": "≥ 7.0 (알칼리화 목표)"
+   },
+   {
+    "name": "백혈구",
+    "value": "3,800 /mm³",
+    "ref": "4,000–10,000"
+   },
+   {
+    "name": "AST/ALT",
+    "value": "32/28 U/L",
+    "ref": "< 40"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "고용량 메토트렉세이트(HD-MTX) 구조요법(rescue) 3대 축\n───────────────────────────────────────────────\n1) 수액 + 소변 알칼리화(목표 pH≥7) — 신세뇨관 내 MTX 결정 침착 방지\n2) 혈중 MTX 농도 추적(24·48·72시간) — 예상 청소 곡선과 비교\n3) 류코보린(폴린산) 정시 투여 — DHFR 차단 하류에서 환원엽산 직접 공급\n   ※ 엽산(folic acid)이 아닌 '이미 환원된' 류코보린을 쓰는 이유가 핵심\n청소 지연(신독성 등) 시 류코보린 용량 상향 + 글루카르피다제 고려.\n───────────────────────────────────────────────\n",
+   "최신지견": "글루카르피다제(carboxypeptidase G2)는 MTX를 비활성 대사체로 직접 가수분해해, 신독성으로 청소가 지연된 중증 사례의 구조 요법으로 쓰인다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 1 — Pharmacology, Antimetabolites",
+    "Goodman & Gilman's — Antineoplastic Agents, Folate Antagonists"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0051",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "Baroreceptor Reflex in Hemorrhagic Shock",
+  "type": "Baroreceptor Reflex in Hemorrhagic Shock",
+  "difficulty": 4,
+  "created": "2026-07-16",
+  "vignette": "A 27-year-old man is brought to the emergency department after a motor vehicle collision with significant blood loss from an open femur fracture. He is anxious and diaphoretic, and his extremities are cool and pale. Vital signs are shown.",
+  "question": "Which of the following mechanisms best accounts for this patient's elevated heart rate?",
+  "options": [
+   "Reduced arterial wall stretch decreases baroreceptor afferent firing, disinhibits the vasomotor center, and increases sympathetic outflow",
+   "Decreased atrial natriuretic peptide release directly raises heart rate through increased renal sodium retention",
+   "Activation of the renin-angiotensin system causes angiotensin II to directly increase sinoatrial nodal automaticity",
+   "Cerebral hypoperfusion triggers the Cushing reflex, producing reflex tachycardia through brainstem vasomotor centers",
+   "Reduced blood volume directly stimulates the sinoatrial node via stretch-activated calcium channels, independent of autonomic input"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 급성 출혈로 동맥압이 떨어지면 경동맥동·대동맥궁 압력수용체의 신장이 감소하고, 이에 따라 CN IX·X를 경유하는 구심성 신호가 줄어든다. 이는 연수 혈관운동중추에 대한 억제를 해제해 교감신경 유출을 증가시키고(빈맥·수축력 증가·세동맥/정맥 수축) 부교감 긴장을 감소시켜, 저혈량에 대한 가장 즉각적인 보상 반응을 만든다.\n- 오답감별:\n  - B: 심방나트륨이뇨펩티드는 혈량 증가 시 분비가 늘고 이뇨·나트륨배설을 촉진하는 호르몬으로, 심박수를 직접 올리는 경로가 아니며 이 상황(혈량 감소)에서는 오히려 분비가 감소한다.\n  - C: 레닌-안지오텐신계는 활성화되지만, 안지오텐신 II의 주작용은 세동맥 수축과 알도스테론 분비이며 동방결절 자동능을 직접 증가시켜 빈맥을 일으키는 1차 기전이 아니다.\n  - D: 쿠싱반사는 두개내압 상승 시 뇌관류압을 지키기 위한 반사로, 오히려 고혈압과 서맥(반사성 부교감 항진)을 특징으로 하며 이 환자의 저혈압·빈맥 양상과 반대다.\n  - E: 동방결절을 직접 자극하는 신전-활성 칼슘통로 기전은 실재하지 않으며, 심박수 증가는 자율신경계(교감신경 항진)를 통해 매개된다.\n- 임상핵심: 저혈량성 쇼크의 즉각 보상은 압력수용체 반사를 통한 교감신경 항진이며, \"고혈압+서맥\"이 특징인 쿠싱반사와 혼동하지 않아야 한다.\n- 출처: First Aid for the USMLE Step 1 — Physiology; Guyton and Hall Textbook of Medical Physiology.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "급성 출혈로 동맥압이 떨어지면 경동맥동·대동맥궁 압력수용체의 신장이 감소하고, 이에 따라 CN IX·X를 경유하는 구심성 신호가 줄어든다. 이는 연수 혈관운동중추에 대한 억제를 해제해 교감신경 유출을 증가시키고(빈맥·수축력 증가·세동맥/정맥 수축) 부교감 긴장을 감소시켜, 저혈량에 대한 가장 즉각적인 보상 반응을 만든다."
+   },
+   {
+    "k": "오답감별",
+    "v": "B: 심방나트륨이뇨펩티드는 혈량 증가 시 분비가 늘고 이뇨·나트륨배설을 촉진하는 호르몬으로, 심박수를 직접 올리는 경로가 아니며 이 상황(혈량 감소)에서는 오히려 분비가 감소한다.\nC: 레닌-안지오텐신계는 활성화되지만, 안지오텐신 II의 주작용은 세동맥 수축과 알도스테론 분비이며 동방결절 자동능을 직접 증가시켜 빈맥을 일으키는 1차 기전이 아니다.\nD: 쿠싱반사는 두개내압 상승 시 뇌관류압을 지키기 위한 반사로, 오히려 고혈압과 서맥(반사성 부교감 항진)을 특징으로 하며 이 환자의 저혈압·빈맥 양상과 반대다.\nE: 동방결절을 직접 자극하는 신전-활성 칼슘통로 기전은 실재하지 않으며, 심박수 증가는 자율신경계(교감신경 항진)를 통해 매개된다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "저혈량성 쇼크의 즉각 보상은 압력수용체 반사를 통한 교감신경 항진이며, \"고혈압+서맥\"이 특징인 쿠싱반사와 혼동하지 않아야 한다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1 — Physiology; Guyton and Hall Textbook of Medical Physiology."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (physiology · cardiovascular reflexes)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "84/56 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "132회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "26회/분"
+   },
+   {
+    "name": "체온",
+    "value": "36.0 °C"
+   }
+  ],
+  "labs": [],
+  "appendix": {
+   "가이드라인": "저혈량성 쇼크의 즉각 보상 반사 — 경로 요약\n───────────────────────────────────────────────\n혈압↓ → 경동맥동/대동맥궁 압력수용체 신장↓ → 구심성 발화↓\n  (CN IX, X 경유) → 연수 혈관운동중추 억제 해제\n  → 교감신경 항진(빈맥·수축력↑·세동맥/정맥 수축) + 부교감 긴장 소실\n※ Cushing reflex(두개내압 상승 시)는 반대로 서맥+고혈압을 유발 —\n  본 문항과 혼동하기 쉬운 대표 함정.\n───────────────────────────────────────────────\n",
+   "최신지견": "출혈량이 순환혈액량의 약 30%를 넘어서면 압력수용체 보상만으로는 혈압을 유지할 수 없어 대상부전(decompensated shock)으로 이행한다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 1 — Physiology, Cardiovascular Reflexes",
+    "Guyton and Hall Textbook of Medical Physiology — Nervous Regulation of the Circulation"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0052",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Elevated Intracranial Pressure — Impending Herniation Management",
+  "type": "Elevated Intracranial Pressure — Impending Herniation Management",
+  "difficulty": 5,
+  "created": "2026-07-16",
+  "vignette": "A 34-year-old man is brought to the emergency department after a high-speed motorcycle collision. Over the next hour in the trauma bay, his level of consciousness declines: he now opens his eyes only to painful stimuli, makes incomprehensible sounds, and extends his arms and legs in response to pain. His right pupil is now 6 mm and reacts sluggishly to light, while the left pupil is 3 mm and reacts briskly. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate immediate management step?",
+  "options": [
+   "Immediate lumbar puncture to directly measure and relieve the elevated intracranial pressure",
+   "Elevate the head of the bed, initiate brief hyperventilation to a PaCO2 of approximately 30 mmHg, and give hypertonic saline or mannitol",
+   "Aggressive intravenous isotonic fluid boluses to maximize cerebral perfusion pressure",
+   "Immediate high-dose intravenous dexamethasone as the primary measure to reduce cerebral edema",
+   "Prophylactic phenytoin loading without any further airway- or pressure-directed intervention"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 의식수준 저하(개안·언어·운동반응 악화), 편측 동공 확대·대광반사 둔화, 고혈압과 서맥은 외상 후 두개내압 상승에 의한 구상회(uncal) 탈출이 임박했음을 시사한다. 두부 거상, 단기 과호흡을 통한 뇌혈관 수축, 고장성 생리식염수나 만니톨을 통한 삼투압 이뇨는 신경외과적 확정 치료(영상·수술)를 준비하는 동안 두개내압을 즉시 낮추는 가교(temporizing) 조치다.\n- 오답감별:\n  - A: 두개내압이 상승한 상태에서 요추천자는 두개-척추강 간 압력차를 만들어 뇌탈출을 오히려 촉발할 수 있어 금기다.\n  - C: 등장성 수액을 다량 투여하면 뇌부종을 악화시킬 수 있어, 목표는 정상혈량 유지이지 다량의 수액 부하가 아니다.\n  - D: 고용량 스테로이드는 종양성 뇌부종에는 효과가 있으나, 외상성 뇌손상에서는 이득이 없고 CRASH 시험에서 오히려 사망률을 높여 사용하지 않는다.\n  - E: 예방적 항경련제는 조기 외상후 발작 위험을 낮출 수 있으나, 상승한 두개내압 자체를 낮추는 조치가 아니므로 기도·압력 지향적 조치보다 우선할 수 없다.\n- 임상핵심: 뇌탈출 징후(의식저하+편측 동공산대+고혈압/서맥)가 보이면 두부 거상·단기 과호흡·고장성 삼투요법으로 즉시 두개내압을 낮추며 신경외과 협진을 서두른다. 요추천자와 고용량 스테로이드는 이 상황에서 피해야 한다.\n- 출처: First Aid for the USMLE Step 2 CK — Neurology; Brain Trauma Foundation Guidelines.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "의식수준 저하(개안·언어·운동반응 악화), 편측 동공 확대·대광반사 둔화, 고혈압과 서맥은 외상 후 두개내압 상승에 의한 구상회(uncal) 탈출이 임박했음을 시사한다. 두부 거상, 단기 과호흡을 통한 뇌혈관 수축, 고장성 생리식염수나 만니톨을 통한 삼투압 이뇨는 신경외과적 확정 치료(영상·수술)를 준비하는 동안 두개내압을 즉시 낮추는 가교(temporizing) 조치다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 두개내압이 상승한 상태에서 요추천자는 두개-척추강 간 압력차를 만들어 뇌탈출을 오히려 촉발할 수 있어 금기다.\nC: 등장성 수액을 다량 투여하면 뇌부종을 악화시킬 수 있어, 목표는 정상혈량 유지이지 다량의 수액 부하가 아니다.\nD: 고용량 스테로이드는 종양성 뇌부종에는 효과가 있으나, 외상성 뇌손상에서는 이득이 없고 CRASH 시험에서 오히려 사망률을 높여 사용하지 않는다.\nE: 예방적 항경련제는 조기 외상후 발작 위험을 낮출 수 있으나, 상승한 두개내압 자체를 낮추는 조치가 아니므로 기도·압력 지향적 조치보다 우선할 수 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "뇌탈출 징후(의식저하+편측 동공산대+고혈압/서맥)가 보이면 두부 거상·단기 과호흡·고장성 삼투요법으로 즉시 두개내압을 낮추며 신경외과 협진을 서두른다. 요추천자와 고용량 스테로이드는 이 상황에서 피해야 한다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 2 CK — Neurology; Brain Trauma Foundation Guidelines."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (neurology · neurocritical care)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "176/96 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "48회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "불규칙(간헐적 무호흡 동반), 측정불가"
+   },
+   {
+    "name": "체온",
+    "value": "36.5 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈당",
+    "value": "118 mg/dL",
+    "ref": "70–140"
+   },
+   {
+    "name": "혈청 나트륨",
+    "value": "139 mEq/L",
+    "ref": "135–145"
+   },
+   {
+    "name": "동맥혈 PaCO2",
+    "value": "44 mmHg",
+    "ref": "35–45"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "외상성 뇌손상, 탈출(herniation) 징후 시 즉각 조치 vs 금기\n───────────────────────────────────────────────\n즉각 시행                         피해야 할 것\n  · 두부 30도 거상                  · 요추천자(뇌탈출 유발 위험)\n  · 단기 과호흡(PaCO2 ~30mmHg)      · 등장성 수액 다량 투여(부종 악화)\n  · 고장성 생리식염수/만니톨          · 고용량 스테로이드(TBI에서 무효·유해,\n  · 기도확보·산소화                    CRASH 시험에서 사망률 증가)\n  · 신경외과 응급 협진·영상            · 증상 조절 없이 예방적 항경련제만 투여\n───────────────────────────────────────────────\n",
+   "최신지견": "CRASH 시험 이후 외상성 뇌손상에서 고용량 스테로이드는 사망률을 오히려 높여 표준 치료에서 배제되었다(종양성 부종과의 핵심 차이점).",
+   "참고문헌": [
+    "First Aid for the USMLE Step 2 CK — Neurology, Increased Intracranial Pressure",
+    "Brain Trauma Foundation Guidelines for the Management of Severe TBI"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0053",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Obstetrics & Gynecology",
+  "subject_file": "Obstetrics & Gynecology",
+  "subtopic": "Postpartum Hemorrhage — Second-Line Uterotonic Selection",
+  "type": "Postpartum Hemorrhage — Second-Line Uterotonic Selection",
+  "difficulty": 5,
+  "created": "2026-07-16",
+  "vignette": "A 34-year-old woman, G3P3, delivers a 4300-g infant vaginally after a prolonged second stage of labor complicated by shoulder dystocia. Fifteen minutes postpartum, she continues to have brisk vaginal bleeding despite vigorous fundal massage and one dose of intravenous oxytocin; on examination the uterus remains soft and poorly contracted. Her medical history is notable for chronic hypertension controlled with labetalol; she has no history of asthma or other pulmonary disease. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Administer intramuscular methylergonovine",
+   "Administer intramuscular carboprost tromethamine",
+   "Discontinue oxytocin and reassess for spontaneous resolution in 30 minutes",
+   "Proceed directly to emergency hysterectomy",
+   "Administer an additional intravenous fluid bolus only, without further uterotonic therapy"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 자궁마사지와 옥시토신에도 지속되는 이완성 자궁(soft, poorly contracted)에 의한 출혈은 2차 자궁수축제가 필요하다. 이 환자는 만성 고혈압이 있어 메틸에르고노빈은 고혈압 위기·뇌졸중 위험으로 금기이며, 천식 등 금기 소견이 없으므로 카보프로스트(프로스타글란딘 F2α 유사체)가 다음으로 적절한 선택이다.\n- 오답감별:\n  - A: 메틸에르고노빈(에르고트 제제)은 강력한 혈관수축 작용이 있어 만성 고혈압·자간전증 환자에서 고혈압 위기와 뇌졸중 위험 때문에 금기다.\n  - C: 옥시토신을 중단하고 관찰만 하는 것은 지속적인 출혈 상황에서 적절한 대응이 아니며, 오히려 지연은 실혈량을 늘린다.\n  - D: 자궁적출술은 자궁수축제·압박봉합·풍선탐폰 등 덜 침습적인 방법이 실패한 뒤 시행하는 최종 수단이며, 이 시점에서는 시기상조다.\n  - E: 수액 단독 투여는 순환량 보충에는 도움이 되나 근본 원인인 자궁이완을 해결하지 못해 출혈이 지속된다.\n- 임상핵심: 산후출혈에서 2차 자궁수축제를 고를 때는 효과보다 먼저 \"금기\"를 확인한다 — 고혈압에는 메틸에르고노빈 금기, 천식에는 카보프로스트 금기.\n- 출처: ACOG Practice Bulletin — Postpartum Hemorrhage; Williams Obstetrics.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "자궁마사지와 옥시토신에도 지속되는 이완성 자궁(soft, poorly contracted)에 의한 출혈은 2차 자궁수축제가 필요하다. 이 환자는 만성 고혈압이 있어 메틸에르고노빈은 고혈압 위기·뇌졸중 위험으로 금기이며, 천식 등 금기 소견이 없으므로 카보프로스트(프로스타글란딘 F2α 유사체)가 다음으로 적절한 선택이다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 메틸에르고노빈(에르고트 제제)은 강력한 혈관수축 작용이 있어 만성 고혈압·자간전증 환자에서 고혈압 위기와 뇌졸중 위험 때문에 금기다.\nC: 옥시토신을 중단하고 관찰만 하는 것은 지속적인 출혈 상황에서 적절한 대응이 아니며, 오히려 지연은 실혈량을 늘린다.\nD: 자궁적출술은 자궁수축제·압박봉합·풍선탐폰 등 덜 침습적인 방법이 실패한 뒤 시행하는 최종 수단이며, 이 시점에서는 시기상조다.\nE: 수액 단독 투여는 순환량 보충에는 도움이 되나 근본 원인인 자궁이완을 해결하지 못해 출혈이 지속된다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "산후출혈에서 2차 자궁수축제를 고를 때는 효과보다 먼저 \"금기\"를 확인한다 — 고혈압에는 메틸에르고노빈 금기, 천식에는 카보프로스트 금기."
+   },
+   {
+    "k": "출처",
+    "v": "ACOG Practice Bulletin — Postpartum Hemorrhage; Williams Obstetrics."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "96/58 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "122회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "22회/분"
+   },
+   {
+    "name": "체온",
+    "value": "36.6 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈색소",
+    "value": "9.4 g/dL",
+    "ref": "분만 전 12.6 g/dL"
+   },
+   {
+    "name": "혈소판",
+    "value": "210,000 /mm³",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "혈장 피브리노겐",
+    "value": "340 mg/dL",
+    "ref": "200–400"
+   },
+   {
+    "name": "PT/INR",
+    "value": "1.0",
+    "ref": "0.8–1.1"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "산후출혈(자궁이완) 단계별 자궁수축제 — 금기 확인이 핵심\n───────────────────────────────────────────────\n1차: 옥시토신 정주/근주 — 특이 금기 거의 없음\n2차 선택(금기 확인 후):\n  · 메틸에르고노빈(ergot) — 고혈압/자간전증에서 금기(혈압 급상승)\n  · 카보프로스트(PGF2α analog) — 천식에서 금기(기관지수축)\n  · 미소프로스톨 — 상대적으로 금기 적음, 효과는 다소 약함\n반응 없으면: 자궁압박봉합·풍선탐폰 → 자궁동맥색전술 → (최종) 자궁적출\n───────────────────────────────────────────────\n",
+   "최신지견": "트라넥삼산의 조기(출혈 발생 3시간 이내) 병용 투여가 산후출혈로 인한 사망률을 유의하게 낮춘다는 근거(WOMAN trial)가 축적되어 있다.",
+   "참고문헌": [
+    "ACOG Practice Bulletin — Postpartum Hemorrhage",
+    "Williams Obstetrics — Obstetrical Hemorrhage"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0054",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Alcohol Withdrawal — Symptom-Triggered Benzodiazepine Therapy",
+  "type": "Alcohol Withdrawal — Symptom-Triggered Benzodiazepine Therapy",
+  "difficulty": 4,
+  "created": "2026-07-16",
+  "vignette": "A 52-year-old man is hospitalized after an emergency appendectomy. He reports drinking approximately 10 standard alcoholic drinks daily for several years, with his last drink about 40 hours before admission. He is now agitated, tremulous, and diaphoretic; he remains oriented to person, place, and time, with no hallucinations or seizures. He has already received intravenous thiamine. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate next step in his management?",
+  "options": [
+   "Administer scheduled high-dose haloperidol to control his agitation",
+   "Administer 50% dextrose intravenously before any further intervention",
+   "Initiate prophylactic phenytoin to prevent a withdrawal seizure",
+   "Administer symptom-triggered lorazepam dosing guided by a standardized withdrawal assessment scale",
+   "Apply physical restraints and reassess in 24 hours without pharmacologic therapy"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 마지막 음주 약 40시간 후 나타난 빈맥·고혈압·진전·발한은 알코올 금단을 시사하며, 티아민은 이미 투여된 상태다. CIWA-Ar 같은 표준화 척도로 유도하는 증상유발형 벤조디아제핀(로라제팜 등) 투여는 GABA/글루타메이트 조절이상이라는 근본 기전을 치료하고 자율신경 항진을 조절하며, 고정용량 투여보다 총 약물 노출을 줄이면서 금단발작·진전섬망으로의 진행을 효과적으로 예방한다.\n- 오답감별:\n  - A: 할로페리돌 같은 항정신병제는 경련역치를 낮추고 금단의 자율신경 항진·발작 자체를 치료하지 못해 단독 요법으로 부적절하다.\n  - B: 티아민이 이미 투여된 상태이므로 포도당 투여 순서 문제는 해당되지 않으며, 포도당 자체도 금단 증상을 치료하지 못한다.\n  - C: 페니토인은 알코올 금단발작 예방·치료에 효과가 입증되지 않았으며, 표준 치료는 벤조디아제핀이다.\n  - E: 신체 억제만으로는 근본적인 자율신경 항진과 발작·진전섬망 진행 위험을 막지 못하며, 약물치료 없이 관찰만 하는 것은 부적절하다.\n- 임상핵심: 알코올 금단의 핵심 치료는 표준화 척도 기반 증상유발형 벤조디아제핀이며, 포도당 투여 전 티아민을 먼저(또는 동시) 주는 원칙과 페니토인이 무효라는 점을 함께 기억한다.\n- 출처: First Aid for the USMLE Step 2 CK — Psychiatry; Kaplan & Sadock's Synopsis of Psychiatry.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "마지막 음주 약 40시간 후 나타난 빈맥·고혈압·진전·발한은 알코올 금단을 시사하며, 티아민은 이미 투여된 상태다. CIWA-Ar 같은 표준화 척도로 유도하는 증상유발형 벤조디아제핀(로라제팜 등) 투여는 GABA/글루타메이트 조절이상이라는 근본 기전을 치료하고 자율신경 항진을 조절하며, 고정용량 투여보다 총 약물 노출을 줄이면서 금단발작·진전섬망으로의 진행을 효과적으로 예방한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "A: 할로페리돌 같은 항정신병제는 경련역치를 낮추고 금단의 자율신경 항진·발작 자체를 치료하지 못해 단독 요법으로 부적절하다.\nB: 티아민이 이미 투여된 상태이므로 포도당 투여 순서 문제는 해당되지 않으며, 포도당 자체도 금단 증상을 치료하지 못한다.\nC: 페니토인은 알코올 금단발작 예방·치료에 효과가 입증되지 않았으며, 표준 치료는 벤조디아제핀이다.\nE: 신체 억제만으로는 근본적인 자율신경 항진과 발작·진전섬망 진행 위험을 막지 못하며, 약물치료 없이 관찰만 하는 것은 부적절하다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "알코올 금단의 핵심 치료는 표준화 척도 기반 증상유발형 벤조디아제핀이며, 포도당 투여 전 티아민을 먼저(또는 동시) 주는 원칙과 페니토인이 무효라는 점을 함께 기억한다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 2 CK — Psychiatry; Kaplan & Sadock's Synopsis of Psychiatry."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (psychiatry · substance withdrawal)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "152/94 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "118회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "22회/분"
+   },
+   {
+    "name": "체온",
+    "value": "37.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈당",
+    "value": "96 mg/dL",
+    "ref": "70–100"
+   },
+   {
+    "name": "혈청 마그네슘",
+    "value": "1.4 mg/dL",
+    "ref": "1.7–2.2"
+   },
+   {
+    "name": "혈청 칼륨",
+    "value": "3.9 mEq/L",
+    "ref": "3.5–5.0"
+   },
+   {
+    "name": "AST/ALT",
+    "value": "68/34 U/L",
+    "ref": "< 40"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "알코올 금단 관리 — 시간경과 × 중증도별 접근\n───────────────────────────────────────────────\n금단 6~24시간   경한 진전·불안·자율신경항진 → 증상유발형 벤조디아제핀\n금단 12~48시간  금단 발작 위험 최고조 → 벤조디아제핀이 예방·치료 모두 담당\n                 (페니토인은 알코올 금단발작에 효과 없음)\n금단 48~96시간  진전섬망(DTs) 위험 → 고용량 벤조디아제핀, 집중관찰\n공통: 티아민을 포도당보다 먼저(또는 동시) 투여 — 베르니케뇌증 예방\n───────────────────────────────────────────────\n",
+   "최신지견": "CIWA-Ar 등 표준화 척도 기반 증상유발형 투여는 고정용량 스케줄 대비 총 벤조디아제핀 사용량과 재원기간을 줄이는 것으로 확인되었다.",
+   "참고문헌": [
+    "First Aid for the USMLE Step 2 CK — Psychiatry, Substance-Related Disorders",
+    "Kaplan & Sadock's Synopsis of Psychiatry — Alcohol-Related Disorders"
+   ]
+  },
+  "figureSvg": ""
  }
 ];
