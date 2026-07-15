@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 286,
+  "total": 292,
   "byType": {
+   "usmle": 54,
    "ailab": 14,
-   "usmle": 48,
    "paper": 82,
    "kmle": 139,
    "basic": 3
@@ -18,11 +18,11 @@ window.MEDKOS_INDEX = {
    "Nephrology": 22,
    "Infectious Disease": 21,
    "Pediatrics": 20,
-   "Obstetrics & Gynecology": 12,
-   "Pathology": 12,
+   "Obstetrics & Gynecology": 13,
+   "Pathology": 13,
+   "Neurology": 12,
+   "Psychiatry": 12,
    "Surgery": 12,
-   "Neurology": 11,
-   "Psychiatry": 11,
    "Endocrinology": 10,
    "Laboratory Medicine": 10,
    "Gastroenterology": 9,
@@ -34,14 +34,14 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 8,
    "Rheumatology": 8,
    "Hematology": 7,
-   "Physiology": 6,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,12 +51,125 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "medium": 87,
-   "high": 199
+   "high": 205,
+   "medium": 87
   },
-  "tagCount": 752
+  "tagCount": 778
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Alcohol Withdrawal — Symptom-Triggered Benzodiazepine Therapy",
+   "tags": [
+    "alcohol-withdrawal",
+    "benzodiazepine",
+    "CIWA-Ar",
+    "thiamine",
+    "delirium-tremens-prevention"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · substance withdrawal)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 52 year old man is hospitalized after an emergency appendectomy. He reports drinking approximately 10 standard alcoholic drinks daily for several years, with his last drink about 40 hours before admission. He is now agitated, tremulous, a",
+   "text": "Psychiatry Alcohol Withdrawal — Symptom-Triggered Benzodiazepine Therapy alcohol-withdrawal benzodiazepine CIWA-Ar thiamine delirium-tremens-prevention USMLE-style / MedKOS (psychiatry · substance withdrawal) A 52 year old man is hospitalized after an emergency appendectomy. He reports drinking approximately 10 standard alcoholic drinks daily for several years, with his last drink about 40 hours before admission. He is now agitated, tremulous, and diaphoretic; he remains oriented to person, place, and time, with no hallucinations or seizures. He has already received intravenous thiamine. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in his management? A. Administer scheduled high dose haloperidol to control his agitation B. Administer 50% dextrose intravenously before any further intervention C. Initiate prophylactic phenytoin to prevent a withdrawal seizure D. Administer symptom triggered lorazepam dosing guided by a standardized withdrawal assessment scale E. Apply physical restraints and reassess in 24 hours without pharmacologic therapy This patient's tachycardia, hypertension, tremor, and diaphoresis roughly 40 hours after his last drink reflect alcohol withdrawal, with thiamine already addressed. Symptom triggered benzodiazepine dosing (e.g., lorazepam) guided by a standardized scale such as CIWA Ar treats the underlying GABAergic/glutamatergic dysregulation, controls autonomic hyperactivity, and reduces progression to withdrawal seizures or delirium tremens more effectively and with less total drug exposure than fixed schedule dosing."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage — Second-Line Uterotonic Selection",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "carboprost",
+    "methylergonovine",
+    "uterotonics"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 34 year old woman, G3P3, delivers a 4300 g infant vaginally after a prolonged second stage of labor complicated by shoulder dystocia. Fifteen minutes postpartum, she continues to have brisk vaginal bleeding despite vigorous fundal massage",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage — Second-Line Uterotonic Selection postpartum-hemorrhage uterine-atony carboprost methylergonovine uterotonics USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 34 year old woman, G3P3, delivers a 4300 g infant vaginally after a prolonged second stage of labor complicated by shoulder dystocia. Fifteen minutes postpartum, she continues to have brisk vaginal bleeding despite vigorous fundal massage and one dose of intravenous oxytocin; on examination the uterus remains soft and poorly contracted. Her medical history is notable for chronic hypertension controlled with labetalol; she has no history of asthma or other pulmonary disease. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Administer intramuscular methylergonovine B. Administer intramuscular carboprost tromethamine C. Discontinue oxytocin and reassess for spontaneous resolution in 30 minutes D. Proceed directly to emergency hysterectomy E. Administer an additional intravenous fluid bolus only, without further uterotonic therapy Uterine atony persisting despite fundal massage and oxytocin requires a second line uterotonic. Methylergonovine is contraindicated in this patient because of her chronic hypertension (risk of hypertensive crisis and stroke), whereas she has no asthma or other contraindication to carboprost (a prostaglandin F2 alpha analog, which is relatively contraindicated in asthma due to bronchospasm risk), making carboprost the most appropriate next agent."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Elevated Intracranial Pressure — Impending Herniation Management",
+   "tags": [
+    "intracranial-pressure",
+    "herniation",
+    "traumatic-brain-injury",
+    "hyperventilation",
+    "hypertonic-saline"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · neurocritical care)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 34 year old man is brought to the emergency department after a high speed motorcycle collision. Over the next hour in the trauma bay, his level of consciousness declines: he now opens his eyes only to painful stimuli, makes incomprehensib",
+   "text": "Neurology Elevated Intracranial Pressure — Impending Herniation Management intracranial-pressure herniation traumatic-brain-injury hyperventilation hypertonic-saline USMLE-style / MedKOS (neurology · neurocritical care) A 34 year old man is brought to the emergency department after a high speed motorcycle collision. Over the next hour in the trauma bay, his level of consciousness declines: he now opens his eyes only to painful stimuli, makes incomprehensible sounds, and extends his arms and legs in response to pain. His right pupil is now 6 mm and reacts sluggishly to light, while the left pupil is 3 mm and reacts briskly. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate management step? A. Immediate lumbar puncture to directly measure and relieve the elevated intracranial pressure B. Elevate the head of the bed, initiate brief hyperventilation to a PaCO2 of approximately 30 mmHg, and give hypertonic saline or mannitol C. Aggressive intravenous isotonic fluid boluses to maximize cerebral perfusion pressure D. Immediate high dose intravenous dexamethasone as the primary measure to reduce cerebral edema E. Prophylactic phenytoin loading without any further airway or pressure directed intervention A declining GCS, asymmetric pupillary findings, and hypertension with bradycardia after trauma indicate impending uncal herniation from rising intracranial pressure. Temporizing measures to acutely lower ICP — head of bed elevation, brief controlled hyperventilation, and hyperosmolar therapy (hypertonic saline or mannitol) — buy time while definitive neurosurgical evaluation and imaging are arranged."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Baroreceptor Reflex in Hemorrhagic Shock",
+   "tags": [
+    "baroreceptor-reflex",
+    "hemorrhagic-shock",
+    "autonomic-nervous-system",
+    "sympathetic-tone"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · cardiovascular reflexes)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 27 year old man is brought to the emergency department after a motor vehicle collision with significant blood loss from an open femur fracture. He is anxious and diaphoretic, and his extremities are cool and pale. Vital signs are shown. W",
+   "text": "Physiology Baroreceptor Reflex in Hemorrhagic Shock baroreceptor-reflex hemorrhagic-shock autonomic-nervous-system sympathetic-tone USMLE-style / MedKOS (physiology · cardiovascular reflexes) A 27 year old man is brought to the emergency department after a motor vehicle collision with significant blood loss from an open femur fracture. He is anxious and diaphoretic, and his extremities are cool and pale. Vital signs are shown. Which of the following mechanisms best accounts for this patient's elevated heart rate? A. Reduced arterial wall stretch decreases baroreceptor afferent firing, disinhibits the vasomotor center, and increases sympathetic outflow B. Decreased atrial natriuretic peptide release directly raises heart rate through increased renal sodium retention C. Activation of the renin angiotensin system causes angiotensin II to directly increase sinoatrial nodal automaticity D. Cerebral hypoperfusion triggers the Cushing reflex, producing reflex tachycardia through brainstem vasomotor centers E. Reduced blood volume directly stimulates the sinoatrial node via stretch activated calcium channels, independent of autonomic input Acute hemorrhage lowers arterial pressure and reduces stretch of the carotid sinus and aortic arch baroreceptors. Decreased afferent firing along the glossopharyngeal and vagus nerves disinhibits the medullary vasomotor center, increasing sympathetic outflow (tachycardia, increased contractility, arteriolar and venous vasoconstriction) and withdrawing parasympathetic tone — the immediate compensatory response to hypovolemia."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Methotrexate Toxicity — Leucovorin Rescue Mechanism",
+   "tags": [
+    "methotrexate",
+    "leucovorin",
+    "folinic-acid",
+    "dihydrofolate-reductase",
+    "antimetabolite"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antimetabolites)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 14 year old girl with osteosarcoma is receiving a cycle of high dose intravenous methotrexate as part of her chemotherapy protocol. She also receives aggressive intravenous hydration and urinary alkalinization, and is given scheduled dose",
+   "text": "Pharmacology Methotrexate Toxicity — Leucovorin Rescue Mechanism methotrexate leucovorin folinic-acid dihydrofolate-reductase antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolites) A 14 year old girl with osteosarcoma is receiving a cycle of high dose intravenous methotrexate as part of her chemotherapy protocol. She also receives aggressive intravenous hydration and urinary alkalinization, and is given scheduled doses of leucovorin beginning 24 hours after the methotrexate infusion, continuing until her serum methotrexate level falls below a defined threshold. Vital signs and laboratory studies obtained during monitoring are shown. Which of the following best explains how leucovorin protects this patient's normal tissues from methotrexate toxicity? A. Leucovorin competitively displaces methotrexate from dihydrofolate reductase, restoring the enzyme's normal catalytic activity in all cells B. Leucovorin induces hepatic cytochrome P450 enzymes, thereby accelerating renal and biliary clearance of circulating methotrexate C. Leucovorin binds circulating methotrexate directly in the plasma, forming an inactive complex that is excreted by the kidneys D. Leucovorin upregulates expression of the reduced folate carrier, increasing active efflux of methotrexate out of cells E. Leucovorin bypasses the methotrexate inhibited dihydrofolate reductase step by directly supplying reduced folate for purine and thymidylate synthesis Methotrexate competitively inhibits dihydrofolate reductase (DHFR), blocking regeneration of tetrahydrofolate needed for purine and thymidylate synthesis. Leucovorin (folinic acid) is already a reduced folate; it enters the one carbon pool downstream of the blocked DHFR step and directly supplies the cofactors normal cells need, rescuing them from methotrexate's antiproliferative effect without reactivating the inhibited enzyme itself."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Fat Embolism Syndrome (Long-Bone Fracture)",
+   "tags": [
+    "fat-embolism",
+    "long-bone-fracture",
+    "petechiae",
+    "hypoxemia",
+    "ARDS-mimic"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · fat embolism)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 22 year old man underwent open reduction and internal fixation of a closed femoral shaft fracture sustained in a motor vehicle collision 36 hours ago. He is now increasingly short of breath and confused, unable to state the correct year. ",
+   "text": "Pathology Fat Embolism Syndrome (Long-Bone Fracture) fat-embolism long-bone-fracture petechiae hypoxemia ARDS-mimic USMLE-style / MedKOS (pathology · fat embolism) A 22 year old man underwent open reduction and internal fixation of a closed femoral shaft fracture sustained in a motor vehicle collision 36 hours ago. He is now increasingly short of breath and confused, unable to state the correct year. Examination reveals new non palpable petechiae scattered across both axillae and the anterior chest wall that were not present on admission. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's respiratory failure and skin findings? A. Circulating antiplatelet antibodies destroy platelets and trigger diffuse microvascular thrombosis B. Marrow megakaryocytes embolize to the pulmonary vasculature and cause acute pulmonary infarction C. Marrow fat globules occlude pulmonary capillaries, and the free fatty acids released produce direct endothelial injury D. Immune complexes deposit in alveolar capillaries and trigger complement mediated diffuse alveolar damage E. A lower extremity venous thrombus crosses a patent foramen ovale into the systemic arterial circulation Onset 24 72 hours after long bone fracture or fixation with the triad of respiratory distress, altered mentation, and a petechial rash over the axillae/chest, plus new thrombocytopenia and hypoxemia with normal coagulation studies, is the classic presentation of fat embolism syndrome. Marrow fat is released into the venous circulation at the fracture site, mechanically occludes pulmonary and systemic capillaries, and the free fatty acids liberated by lipase activity directly injure capillary endothelium, producing capillary leak, thrombocytopenia (platelet adherence to fat droplets), and petechiae from dermal capillary occlusion."
+  },
   {
    "id": "ailab-2026-0014",
    "type": "ailab",
