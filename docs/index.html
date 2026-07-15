@@ -38,10 +38,17 @@
   <div class="row">
     <label for="mode">학습 구역</label>
     <select id="mode">
-      <option value="today">오늘의 문항 (오늘 생성된 새 문항)</option>
-      <option value="all" selected>전체 문항 (누적)</option>
+      <option value="latest" selected>최신 세트 (가장 최근에 만든 문항)</option>
+      <option value="range">기간 선택 (날짜 범위로 풀기)</option>
+      <option value="all">전체 문항 (누적)</option>
       <option value="review">오답 복습 (오답노트에 쌓인 문항)</option>
     </select>
+  </div>
+  <div class="row" id="rangeRow" style="display:none">
+    <label for="rangeFrom">기간</label>
+    <input type="date" id="rangeFrom" />
+    <span class="muted">~</span>
+    <input type="date" id="rangeTo" />
   </div>
   <div class="row" id="subjectRow">
     <label for="subject">과목</label>
