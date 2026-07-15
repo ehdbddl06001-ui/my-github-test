@@ -22,13 +22,25 @@ Google Drive     ── 데이터·체크포인트(용량 큰 산출물) 영구 
 GitHub 경로를 Colab이 직접 연다:
 
 - 템플릿: https://colab.research.google.com/github/ehdbddl06001-ui/my-github-test/blob/main/notebooks/ailab_template.ipynb
+- 1주차 ECG 1D-CNN: https://colab.research.google.com/github/ehdbddl06001-ui/my-github-test/blob/main/notebooks/week01_ecg_1dcnn.ipynb
+- **2주차 PTB-XL 1D-ResNet**: https://colab.research.google.com/github/ehdbddl06001-ui/my-github-test/blob/main/notebooks/week02_ptbxl_resnet1d.ipynb
 - 뇌종양 3D 분할: https://colab.research.google.com/github/ehdbddl06001-ui/my-github-test/blob/main/notebooks/ailab_brain_tumor_segmentation.ipynb
 
 ## 노트북
 | 파일 | 용도 |
 |------|------|
 | `ailab_template.ipynb` | 매주 아무 주제나 시작하는 범용 템플릿(준비 셀 4개 + 빈 실습 셀) |
+| `week01_ecg_1dcnn.ipynb` | 1주차 MIT-BIH 1D-CNN 부정맥 분류(카드 `ailab-2026-0005`와 짝) |
+| `week02_ptbxl_resnet1d.ipynb` | 2주차 PTB-XL 12유도 1D-ResNet 다중라벨 진단(카드 `ailab-2026-0012`와 짝) |
 | `ailab_brain_tumor_segmentation.ipynb` | Keras 3D U-Net 뇌종양 분할 실습(카드 `ailab-2026-0002`와 짝) |
+
+## 오픈소스 원본 코드 받기
+분석 대상 공개 저장소(예: PTB-XL 벤치마크)는 GPL 등 라이선스 전염을 피해 **repo에 넣지 않고
+받아서 읽는다**. 어느 저장소를 어느 커밋으로 받을지는 코드가 정한다:
+```bash
+python pipelines/fetch_project.py --list                     # 받을 수 있는 프로젝트
+python pipelines/fetch_project.py --download ptbxl-benchmark # projects/ 로 clone(.gitignore)
+```
 
 ## 준비 셀이 하는 일
 1. `drive.mount` — Drive를 붙여 `MyDrive/MedKOS/{data,ckpt}` 준비

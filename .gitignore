@@ -16,3 +16,6 @@ state/id_counter.json
 state/seen_topics.json
 state/seen_papers.json
 state/.id_cache.json
+
+# fetch_project.py 로 받은 오픈소스 저장소 — GPL 등 copyleft 전염 방지. 받아서 읽기만.
+projects/

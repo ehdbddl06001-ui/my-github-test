@@ -1,16 +1,16 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-14",
+ "generated": "2026-07-15",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 283,
+  "total": 286,
   "byType": {
+   "ailab": 14,
    "usmle": 48,
    "paper": 82,
    "kmle": 139,
-   "ailab": 11,
    "basic": 3
   },
   "byTopic": {
@@ -36,27 +36,96 @@ window.MEDKOS_INDEX = {
    "Hematology": 7,
    "Physiology": 6,
    "Medical AI Lab": 4,
+   "Medical Signal AI": 4,
    "Microbiology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
    "Allergy": 2,
-   "Medical Signal AI": 2,
+   "Medical Imaging AI": 2,
    "AI Mentorship": 1,
    "Internal Medicine": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
-   "Medical AI Curriculum": 1,
-   "Medical Imaging AI": 1
+   "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 197,
-   "medium": 86
+   "medium": 87,
+   "high": 199
   },
-  "tagCount": 738
+  "tagCount": 752
  },
  "docs": [
+  {
+   "id": "ailab-2026-0014",
+   "type": "ailab",
+   "topic": "Medical Signal AI",
+   "subtopic": "심화 퀘스트 — PTB-XL 12유도 다중라벨의 열린 문제들",
+   "tags": [
+    "quest",
+    "PTB-XL",
+    "multi-label",
+    "calibration",
+    "threshold",
+    "hierarchical-label",
+    "cross-dataset",
+    "ICBEB",
+    "foundation-model",
+    "ECG"
+   ],
+   "source": "MedKOS AI랩 심화 퀘스트(/gen-quest) · 원천 2주차 카드 ailab-2026-0012 · 벤치마크 Strodthoff 2021",
+   "confidence": "medium",
+   "date": "2026-07-15",
+   "path": "content/ailab/quests/ailab-2026-0014.md",
+   "snippet": "Overview 2주차( ailab 2026 0012 )는 macro AUROC로 게이트를 통과하도록 설계됐다. 그런데 AUROC를 넘긴다고 '임상에서 쓸 만한 진단기'가 되는 건 아니다. 12유도 다중라벨에는 한 주차 숙제로 못 끝낼 열린 문제들 이 줄줄이 딸려 있다 — 임계값·캘리브레이션, 계층적 라벨, 다른 병원·기기로의 일반화, 그리고 파운데이션 모델. 이걸 별도 심화 퀘스트로 큐에 넣고 하나씩 실측 한다. 이 퀘스트는",
+   "text": "Medical Signal AI 심화 퀘스트 — PTB-XL 12유도 다중라벨의 열린 문제들 quest PTB-XL multi-label calibration threshold hierarchical-label cross-dataset ICBEB foundation-model ECG MedKOS AI랩 심화 퀘스트(/gen-quest) · 원천 2주차 카드 ailab-2026-0012 · 벤치마크 Strodthoff 2021 Overview 2주차( ailab 2026 0012 )는 macro AUROC로 게이트를 통과하도록 설계됐다. 그런데 AUROC를 넘긴다고 '임상에서 쓸 만한 진단기'가 되는 건 아니다. 12유도 다중라벨에는 한 주차 숙제로 못 끝낼 열린 문제들 이 줄줄이 딸려 있다 — 임계값·캘리브레이션, 계층적 라벨, 다른 병원·기기로의 일반화, 그리고 파운데이션 모델. 이걸 별도 심화 퀘스트로 큐에 넣고 하나씩 실측 한다. 이 퀘스트는 1주차 퀘스트( ailab 2026 0011 , inter patient 일반화)의 12유도·다중라벨 판 이다. 1주차가 \"형태만으론 S·F가 무너진다\"였다면, 2주차는 \"라벨을 잘 맞혀도(AUROC↑) 결정을 못 내린다 (임계값·캘리브레이션) \"가 첫 관문이다. 왜 독립 퀘스트인가 macro AUROC 0.85는 \"모델이 진단을 순위 로 구분한다\"는 증거일 뿐, 어느 확률에서 양성이라 부를지(임계값) · 그 확률이 진짜 확률인지(캘리브레이션) 는 다른 문제다. 임상 배치에 직결된다. PTB XL 라벨은 계층(super→sub→diagnostic) 이고 코드마다 likelihood 가 붙는다. 이 구조를 살리는 건 논문급 주제라 2주차 카드에 다 넣으면 진도 리듬이 깨진다(스스로 경계한 완벽주의). 다른 데이터셋(ICBEB·Chapman)으로의 일반화 는 1주차 inter patient 문제가 병원·기기 단위로 커진 것 이다. 벤치마크 논문도 여기서 성능이 떨어짐을 보고한다 → 트랙 하나를 줄 가치가 있다. 문제 정의 무엇 : PTB XL 12유도 10초 심전도의 다중라벨 진단 을, 단지 AUROC가 아니라 배치 가능한 결정 규칙 까지. 지표(다층) : ① macro AUROC(순위) → ② 운영 임계값에서의 진단별 precision/recall/F1 → ③ 캘리브레이션 오차 (ECE·신뢰도 곡선) → ④ 크로스데이터셋 macro AUROC 하락폭 . 왜 어려운가 : 1. 임계값·불균형 : HYP·특정 MI 하위형은 매우 드물어, 0.5 고정 임계값은 소수 진단을 다 놓친다. 2. 캘리브레이션 : 딥넷은 대개 과신(overconfident) 한다 — 확률 0.9가 실제 0.9가 아니다. 3. 계층·likelihood 라벨 : super만 쓰면 정보를 버리고, diagnostic까지 가면 극심한 롱테일. 4. 분포 이동 : 다른 기기·인구(ICBEB)에서 파형·라벨 분포가 달라 그대로는 안 맞는다. 접근 로드맵 난이도 순. 각 방법이 위 4난제 중 무엇을 푸는지와 근거를 붙였다. 하나씩 실행 로그로. 1. 운영 임계값 탐색 + 진단별 리포트 (임계값) — 검증셋에서 진단마다 F1 최대 임계값 을 찾아 test에 적용, precision/recall/F1 표를 낸다. 근거: 벤치마크 utils.py 의 임계값 탐색과 같은 결. 2. 확률 캘리브레이션 (캘리브레이션) — temperature scaling / isotonic으로 보정하고 ECE 와 신뢰도 곡선을 before/after 비교. 근거: Guo et al. 2017( On Calibration of Modern NN ). 3. 불균형 손실 (임계값+불균형) — BCEWithLogitsLoss(pos weight=...) 또는 focal loss 로 드문 진단(HYP)을 살린다. 근거: Lin et al. 2017(Focal Loss). 4. 계층/likelihood 라벨 활용 (라벨 구조) — super→sub→diagnostic 계층 손실, 또는 SCP likelihood를 소프트 타깃으로. 근거: PTB XL/SCP ECG 라벨 스킴, 계층 다중라벨 학습 문헌. 5. 크로스데이터셋 일반화 (분포 이동) — PTB XL 학습 → ICBEB/Chapman 에서 평가, 하락폭을 측정하고 도메인적응/정규화로 좁힌다. 근거: 벤치마크 논문의 cross dataset 절. 6. ECG 파운데이션 모델 (전부) — 대규모 무라벨 12유도로 사전학습 후 전이. 1주차 발전사 ( ailab 2026 0009 )의 종착점이 12유도 규모에서 실제로 이득이 있는지 확인. Architecture \"AUROC를 넘긴 모델\"에서 \"믿고 쓸 수 있는 진단기\"로 올라가는 사다리: mermaid flowchart TD BASE[\"2주차: 1D ResNet<br/ superdiagnostic macro AUROC ≥ 0.85\"] \"+임계값 탐색\" A1[\"1. 운영 임계값<br/ 진단별 P/R/F1\"] A1 \"+temperature/isotonic\" A2[\"2. 캘리브레이션<br/ (ECE↓, 신뢰도 곡선)\"] A2 \"+focal/pos weight\" A3[\"3. 불균형 손실<br/ (드문 진단 회복)\"] A3 \"+계층/likelihood\" A4[\"4. 계층 라벨 활용\"] A4 \"ICBEB/Chapman 평가\" A5[\"5. 크로스데이터셋 일반화\"] A5 \"무라벨 사전학습\" A6[\"6. ECG 파운데이션 모델\"] 실험 큐 각 항목 = 노트북에서 돌릴 실험 + 합격 기준. 돌리면 이 퀘스트에 귀속되게 로그로 남긴다: python pipelines/ingest run.py quest ailab 2026 0014 step \"<실험명 \" value <값 note \"<관찰 \" . 1. 임계값 + 진단별 리포트 — 검증셋 F1 최대 임계값을 test 적용. 합격: 5진단군 F1 표 를 얻고, 가장 약한 진단(대개 HYP)을 지목. 2. 캘리브레이션 — temperature scaling 전/후 ECE 비교. 합격: ECE가 유의미하게 감소 . 3. focal vs pos weight — 둘을 각각 붙여 HYP AUROC/F1 비교. 합격: 드문 진단 F1 상승 확인. 4. 계층 라벨 — super→sub 계층 손실 or likelihood 소프트타깃. 합격: sub 과제 macro AUROC 기록. 5. 크로스데이터셋 — PTB XL→ICBEB 평가. 합격: 하락폭(일반화 갭) 을 숫자로 남김. 6. 파운데이션/SSL 전이 — 무라벨 사전학습→소량 미세조정. 합격: 소량 라벨 구간에서 이득 확인. 우선순위: 1 → 2 가 즉효(배치 가능성·신뢰). 3~4 가 소수 진단·라벨 구조. 5~6 은 논문 재현 성격의 장기 과제. 한 번에 하나씩, 매번 실행 로그로. 완벽주의 금지. Resources 임계값/평가 : 벤치마크 code/utils/utils.py (임계값 탐색·macro AUROC) — fetch project.py 로 받기 캘리브레이션 : Guo et al. 2017, On Calibration of Modern Neural Networks (ICML) 불균형 : Lin et al. 2017 (Focal Loss, arXiv:1708.02002) 데이터/라벨 : PTB XL https://physionet.org/content/ptb xl/ · SCP ECG scp statements.csv 크로스데이터셋 : Chapman Shaoxing https://physionet.org/content/ecg arrhythmia/ · ICBEB 2018 SOTA·파운데이션 추적 : Papers With Code — https://paperswithcode.com/task/ecg classification MedKOS 내부 : 원천 실습 ailab 2026 0012 · 프로젝트 분석 ailab 2026 0013 · 1주차 퀘스트(자매편) ailab 2026 0011 · 발전사 ailab 2026 0009 My notes <! 각 실험(1~6) 결과를 한 줄씩. 실행 로그(ingest run quest ailab 2026 0014)로 남기면 자동으로 이어진다. 예: \"실험1 임계값: HYP F1 0.3x, 가장 약함. 실험2 캘리브레이션: ECE 0.08→0.03.\""
+  },
+  {
+   "id": "ailab-2026-0013",
+   "type": "ailab",
+   "topic": "Medical Imaging AI",
+   "subtopic": "오픈소스 프로젝트 분석 — PTB-XL 벤치마크(ecg_ptbxl_benchmarking)",
+   "tags": [
+    "PTB-XL",
+    "benchmark",
+    "resnet1d",
+    "xresnet1d",
+    "open-source",
+    "PyTorch",
+    "fastai",
+    "GPL",
+    "multi-label"
+   ],
+   "source": "Strodthoff et al. 2021(IEEE JBHI) 공개 저장소 helme/ecg_ptbxl_benchmarking 분석 · GitHub 실측",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/ailab/ailab-2026-0013.md",
+   "snippet": "Overview 2주차 실습( ailab 2026 0012 )의 레퍼런스가 되는 실제 공개 프로젝트를 끝까지 뜯어보는 카드다. 대상은 PTB XL 딥러닝 벤치마크 helme/ecg ptbxl benchmarking — Strodthoff 외, \"Deep Learning for ECG Analysis: Benchmarks and Insights from PTB XL\" , IEEE JBHI 25(5):1519–1528, 2021 ",
+   "text": "Medical Imaging AI 오픈소스 프로젝트 분석 — PTB-XL 벤치마크(ecg_ptbxl_benchmarking) PTB-XL benchmark resnet1d xresnet1d open-source PyTorch fastai GPL multi-label Strodthoff et al. 2021(IEEE JBHI) 공개 저장소 helme/ecg_ptbxl_benchmarking 분석 · GitHub 실측 Overview 2주차 실습( ailab 2026 0012 )의 레퍼런스가 되는 실제 공개 프로젝트를 끝까지 뜯어보는 카드다. 대상은 PTB XL 딥러닝 벤치마크 helme/ecg ptbxl benchmarking — Strodthoff 외, \"Deep Learning for ECG Analysis: Benchmarks and Insights from PTB XL\" , IEEE JBHI 25(5):1519–1528, 2021 의 공식 코드다. 하는 일을 한 문장으로: 여러 1D 딥러닝 구조(ResNet·xResNet·Inception·LSTM·Wavelet+NN)를 PTB XL의 6가지 라벨 과제에 대해 동일 프로토콜로 학습·평가해, 무엇이 얼마나 잘 되는지 공정하게 비교한다. 왜 이 저장소인가 : PTB XL 12유도 분류의 사실상 표준 baseline이다. 상위클래스 진단 과제에서 xresnet1d101 / resnet1d wang 가 macro AUROC 0.92~0.93 을 보고해, 우리 게이트(0.85)의 현실적 상한을 알려준다. ⚠️ 라이선스(GPL 3.0) : 이 저장소는 GNU GPL v3 (© 2020 Patrick Wagner)다. 그래서 MedKOS는 이 코드를 repo에 복사·커밋하지 않는다 . 대신 아래 다운로드 처럼 받아서 읽기만 한다 (copyleft 전염 방지 — MedKOS의 \"content가 SoT, 코드는 pipelines\" 원칙과도 맞음). 2주차 노트북의 ResNet1d 는 그 구조를 참고해 우리가 새로 쓴 최소 구현이지 원본의 복사가 아니다. Architecture 저장소는 \"데이터 → 실험 오케스트레이터 → 모델군 → 평가\"의 4층 구조다(실측한 경로 포함). mermaid flowchart TD subgraph data[\"data/ (get datasets.sh로 받음)\"] P[\"ptbxl/ (PhysioNet)\"] I[\"ICBEB/ (2018 챌린지)\"] end R[\"code/reproduce results.py\\n= 모든 실험 실행 진입점\"] E E[\"code/experiments/scp experiment.py\\nclass SCP Experiment.perform()\"] M data E subgraph M[\"code/models/ (구조들)\"] RN[\"resnet1d.py\\nBasicBlock1d · Bottleneck1d · ResNet1d · resnet1d wang\"] FM[\"fastai model.py\\nfastai 학습 래퍼(xresnet1d101 등)\"] IN[\"inception1d · fcn wang · lstm · lstm bidir · Wavelet+NN\"] end M U[\"code/utils/utils.py\\nevaluate experiment() · 임계값 탐색 · macro AUROC\"] C[\"code/configs/\\n실험·모델 설정\"] E Data PTB XL + ICBEB(2018) 두 데이터셋을 ./get datasets.sh 가 data/ptbxl/ · data/ICBEB/ 로 내려받는다(PTB XL은 PhysioNet, 오픈). 6가지 라벨 과제 를 정의한다: all , diagnostic , subdiagnostic , superdiagnostic (상위 5군 — 우리 2주차 타깃), form , rhythm . 과제마다 라벨 수·난이도가 다르다. 표준 10겹 분할 ( strat fold )을 그대로 사용 → 환자 단위 분리가 보장된다(1주차 누수 교훈). Code walkthrough 저장소에서 실제로 확인한 핵심 요소들(클래스·함수 이름은 GitHub 실측). 원본을 받아 대조하라. text code/ ├─ reproduce results.py 논문 전체 실험 재현 진입점 ├─ experiments/scp experiment.py class SCP Experiment: perform() 로 학습·예측·저장 ├─ models/ │ ├─ resnet1d.py 우리가 집중할 파일 ↓ │ ├─ fastai model.py fastai Learner 래퍼(xresnet1d101 등 학습) │ └─ (inception1d, fcn wang, lstm ...) ├─ configs/ 실험/모델 하이퍼파라미터 └─ utils/utils.py evaluate experiment(): macro AUROC·임계값 탐색 code/models/resnet1d.py 의 실제 구성(시그니처는 GitHub에서 확인): python 실제 저장소의 뼈대(요약; 정확한 코드는 원본 대조) class BasicBlock1d(nn.Module): def init (self, inplanes, planes, stride=1, kernel size=[3, 3], downsample=None): conv→bn→relu→conv→bn 후 residual 더하고 relu ... class Bottleneck1d(nn.Module): def init (self, inplanes, planes, stride=1, kernel size=3, downsample=None): 1×1 → k → 1×1 병목 후 residual ... class ResNet1d(nn.Sequential): def init (self, block, layers, kernel size=3, num classes=2, input channels=3, inplanes=64, stride stem=2, pooling stem=True, stride=2, concat pooling=True, ...): stem(conv→bn→relu→maxpool) → 백본 layers → head ... def resnet1d wang(): 논문에서 강한 baseline. kernel size=[5, 3] 로 특화 ... def resnet1d18(): ... resnet1d34/50/101/152, wrn1d 22 도 제공 읽는 순서(1주차 ailab 2026 0003 의 5개 질문) : 1. 입·출력 → input channels (=12유도), num classes (=과제별 라벨 수), 헤드는 다중라벨이라 최종 sigmoid. 2. 손실/평가 → utils.evaluate experiment() 가 macro AUROC 를 계산(임계값 무관 지표). 3. 몸통 → BasicBlock1d / Bottleneck1d 의 잔차 연결 이 곧 ResNet. 4. 데이터 투입 → SCP Experiment.perform() 가 fold 기반 분할로 배치를 만든다. 5. 학습 루프 → fastai Learner ( fastai model.py )가 lr find·one cycle로 돈다. Instructions resnet1d wang 의 각 설계 선택이 무엇을, 왜 하는지(1주차 지시어 표의 심화판). 요소 무엇을 시키는가 왜 필요한가 input channels=12 12유도를 입력 채널 로 함께 넣어라 유도 간 상호정보(예: 하벽 MI는 II·III·aVF)를 한 모델이 본다 BasicBlock1d (잔차) F(x)+x 로 블록을 통과시켜라 깊이를 늘려도 gradient 소실 없이 형태 표현력↑ kernel size=[5,3] (wang) 첫 conv는 넓게(5), 둘째는 좁게(3) 넓은 커널로 파형 맥락을, 좁은 커널로 국소 디테일을 stride stem=2 , MaxPool 초반에 시간축을 빠르게 줄여라 1000샘플의 계산량을 줄이고 시야를 넓힘 concat pooling=True avg+max 풀링을 이어 붙여라(fastai head) 평균·최대 요약을 함께 써 표현을 풍부하게 num classes=과제별 과제(superdiagnostic=5 등)에 맞춰 출력 수를 바꿔라 하나의 구조로 6개 과제를 공정 비교 evaluate experiment() 예측에서 macro AUROC 를 계산하라 다중라벨·불균형에서 임계값에 안 흔들리는 표준 지표 다운로드 (오픈소스 코드 받기) GPL 코드라 repo에 넣지 않고 필요할 때 받아서 읽는다 . MedKOS에 결정론 유틸을 새로 뒀다 — 어느 저장소를, 어느 브랜치/커밋으로, 어디에 받을지는 코드( pipelines/fetch project.py )가 정한다. bash 받을 수 있는 프로젝트 목록(레지스트리) python pipelines/fetch project.py list PTB XL 벤치마크 원본 코드를 받는다 (기본 대상: projects/ ← .gitignore, 커밋 안 됨) python pipelines/fetch project.py download ptbxl benchmark → projects/ecg ptbxl benchmarking/ 에 clone. 핵심 파일 경로를 함께 출력한다. 특정 커밋으로 고정해서 재현성 있게 받기(권장) python pipelines/fetch project.py download ptbxl benchmark ref <commit sha 받은 뒤 실제 모델 코드를 읽어본다 sed n '1,80p' projects/ecg ptbxl benchmarking/code/models/resnet1d.py Colab에서는 2주차 노트북 ( week02 ptbxl resnet1d.ipynb )의 \"원본 코드 받기\" 셀이 같은 일을 한다 ( !git clone + 데이터 get datasets.sh ). 우리 최소 ResNet1d 로 먼저 게이트를 통과한 뒤, 이 원본과 나란히 놓고 차이를 배우는 흐름이다. Exercises 1. 받아서 대조 : fetch project.py download ptbxl benchmark 후 resnet1d.py 를 열어, 2주차 노트북의 우리 ResNet1d 와 다른 점 3가지 (stem·블록 종류·헤드 풀링)를 My notes 에. 2. 과제 바꾸기 : superdiagnostic (5) 대신 diagnostic (더 세분) 라벨로 바꾸면 macro AUROC가 어떻게 변하는지 예상 → 노트북에서 확인. 3. 구조 비교 : resnet1d wang vs xresnet1d101 의 논문 보고값을 표로 옮기고, 우리 결과와 비교. 4. 읽기 훈련 : SCP Experiment.perform() 가 fold를 train/val/test로 어떻게 나누는지 코드로 확인해 1주차 \"환자 누수\"가 왜 자동으로 막히는지 한 문단으로. Resources 원본 저장소: https://github.com/helme/ecg ptbxl benchmarking ( GPL 3.0 , © 2020 Patrick Wagner) 논문: Strodthoff, Wagner, Schaeffter, Samek, IEEE JBHI 25(5):1519–1528, 2021 데이터: https://physionet.org/content/ptb xl/ (CC BY 4.0) · SCP ECG 라벨: scp statements.csv 받기 유틸: pipelines/fetch project.py · 실습 카드: ailab 2026 0012 · 노트북: notebooks/week02 ptbxl resnet1d.ipynb 프로젝트 분석 템플릿(3D U Net): ailab 2026 0002 · 발전사(CNN→ResNet): ailab 2026 0009 My notes <! 원본 코드를 받아 읽으며 배운 것, 우리 구현과의 차이를 여기에 적는다."
+  },
+  {
+   "id": "ailab-2026-0012",
+   "type": "ailab",
+   "topic": "Medical Signal AI",
+   "subtopic": "12-Lead ECG Multi-label Diagnosis (PTB-XL)",
+   "tags": [
+    "ECG",
+    "12-lead",
+    "PTB-XL",
+    "multi-label",
+    "1D-ResNet",
+    "AUROC",
+    "imbalanced",
+    "PyTorch"
+   ],
+   "source": "MedKOS AI랩 2주차 / PhysioNet PTB-XL · Strodthoff 2021 벤치마크",
+   "confidence": "high",
+   "date": "2026-07-15",
+   "path": "content/ailab/ailab-2026-0012.md",
+   "snippet": "Overview 커리큘럼 2주차 . 1주차(MIT BIH·1D CNN·단일 비트)에서 배운 신호 딥러닝을 실제 규모 로 키운다. 이번엔 한 비트가 아니라 10초짜리 12유도 심전도 한 장 을 통째로 보고, 이 심전도에 어떤 진단들이 붙는가 를 동시에 맞힌다 — 라벨이 하나가 아닌 다중라벨(multi label) 문제다. 1주차와 무엇이 달라지나 (여기가 2주차의 핵심 학습 포인트): 입력 : 1채널 300샘플 한 비트 → 12",
+   "text": "Medical Signal AI 12-Lead ECG Multi-label Diagnosis (PTB-XL) ECG 12-lead PTB-XL multi-label 1D-ResNet AUROC imbalanced PyTorch MedKOS AI랩 2주차 / PhysioNet PTB-XL · Strodthoff 2021 벤치마크 Overview 커리큘럼 2주차 . 1주차(MIT BIH·1D CNN·단일 비트)에서 배운 신호 딥러닝을 실제 규모 로 키운다. 이번엔 한 비트가 아니라 10초짜리 12유도 심전도 한 장 을 통째로 보고, 이 심전도에 어떤 진단들이 붙는가 를 동시에 맞힌다 — 라벨이 하나가 아닌 다중라벨(multi label) 문제다. 1주차와 무엇이 달라지나 (여기가 2주차의 핵심 학습 포인트): 입력 : 1채널 300샘플 한 비트 → 12채널 1000샘플(100Hz·10초) 한 기록 . 출력 : softmax 단일 선택(5택1) → sigmoid 다중라벨 (각 진단이 독립적으로 0/1). 손실 : sparse categorical crossentropy → BCEWithLogitsLoss (라벨마다 이진). 지표 : macro F1 → macro AUROC (임계값에 안 흔들리는, 다중라벨의 표준 지표). 모델 : plain 1D CNN → 1D ResNet (잔차 연결로 안전하게 더 깊게 — 1주차 발전사의 다음 칸). 왜 이걸 2주차로 : 1주차 개념 카드( ailab 2026 0009 )의 발전사에서 CNN → ResNet 이 바로 다음 단계였다. 데이터도 커지고(2만 건), 라벨 구조도 실제 임상처럼 복잡해져 \"다중라벨·불균형·AUROC\"라는 임상 AI의 3대 감각을 실제 규모에서 처음 만난다. 기존 접근 : PTB XL 벤치마크(Strodthoff 2021)가 사실상 표준 레퍼런스다. resnet1d wang · xresnet1d101 · inception1d 등을 같은 프로토콜로 비교했고, 상위 클래스 진단에서 macro AUROC 0.92~0.93 을 보고한다. 이 공개 구현을 직접 받아 뜯어보는 것이 프로젝트 카드 ailab 2026 0013 이다. Architecture 1D ResNet = 1주차 1D CNN에 잔차(residual) 지름길 출력 = F(x) + x 를 더한 것. 층을 더 깊이 쌓아도 gradient가 옅어지지 않아 \"형태(morphology)\"를 더 정교하게 뽑는다. mermaid flowchart LR A[\"12유도 ECG\\n(12ch × 1000samples\\n= 100Hz · 10초)\"] S[\"Stem\\nConv1d + BN + ReLU + MaxPool\"] S B1[\"Residual block ×2\\n(64ch)\"] B1 B2[\"Residual block ×2\\n(128ch, stride↓)\"] B2 B3[\"Residual block ×2\\n(256ch, stride↓)\"] B3 G[\"AdaptiveAvgPool1d\\n(시간축 요약)\"] G H[\"Linear head\"] H O[\"Sigmoid × 5\\n→ 진단 상위클래스\\n(NORM·MI·STTC·CD·HYP) 각각 0~1\"] subgraph resblock[\"Residual block 내부\"] X[\"x\"] C1[\"Conv1d k5 + BN + ReLU\"] C2[\"Conv1d k3 + BN\"] ADD((\"+\")) X \"skip (identity/1×1)\" ADD R[\"ReLU\"] end Data PTB XL (PhysioNet, 오픈, CC BY 4.0 ): 18,885명 환자의 21,837건 · 12유도 · 10초 심전도. 1주차 MIT BIH와 달리 가입 없이 바로 받는다( datasets.py 의 ptb xl ). MedKOS가 이미 12유도 렌더( assets/ecg )에 쓰는 그 데이터셋이다. 두 해상도 : records100 (100Hz, 12×1000) / records500 (500Hz, 12×5000). 입문·Colab에는 100Hz 가 가볍고 충분하다. 라벨 구조(SCP ECG) : 각 기록에 여러 SCP 코드가 붙고, scp statements.csv 가 이를 상위 5개 진단군 으로 묶어준다 — NORM (정상)· MI (심근경색)· STTC (ST/T 변화)· CD (전도장애)· HYP (비대). 한 심전도에 여러 개가 동시에 참(→ 다중라벨). 표준 분할 : PTB XL은 strat fold 열로 10겹 층화 분할을 미리 제공 한다. 관례상 fold 1–8 = train, 9 = validation, 10 = test . (1주차의 환자 누수 교훈이 이미 데이터에 반영돼 있어, 이걸 그대로 쓰면 환자 단위 분리가 지켜진다.) 전처리 : 유도별/기록별 표준화, (선택) 0.5–40Hz 대역 필터. 라벨은 5차원 멀티핫 벡터 . Code walkthrough 아래는 이번 주 노트북( week02 ptbxl resnet1d.ipynb )의 대표 골격 (PyTorch). 전체는 Colab에서 실행하고, 원본 벤치마크 구현과의 대조는 ailab 2026 0013 에서 한다. python import torch, torch.nn as nn from sklearn.metrics import roc auc score class BasicBlock1d(nn.Module): 잔차 블록 = 2주차의 핵심 def init (self, cin, cout, stride=1): super(). init () self.conv1 = nn.Conv1d(cin, cout, 5, stride, padding=2, bias=False) self.bn1 = nn.BatchNorm1d(cout) self.conv2 = nn.Conv1d(cout, cout, 3, 1, padding=1, bias=False) self.bn2 = nn.BatchNorm1d(cout) self.down = (nn.Sequential(nn.Conv1d(cin, cout, 1, stride, bias=False), nn.BatchNorm1d(cout)) if stride != 1 or cin != cout else None) def forward(self, x): idt = x if self.down is None else self.down(x) x = torch.relu(self.bn1(self.conv1(x))) x = self.bn2(self.conv2(x)) return torch.relu(x + idt) F(x) + x ← 잔차 지름길 class ResNet1d(nn.Module): def init (self, n classes=5, in ch=12): super(). init () self.stem = nn.Sequential(nn.Conv1d(in ch, 64, 7, 2, 3, bias=False), nn.BatchNorm1d(64), nn.ReLU(), nn.MaxPool1d(2)) self.layer1 = nn.Sequential(BasicBlock1d(64, 64), BasicBlock1d(64, 64)) self.layer2 = nn.Sequential(BasicBlock1d(64, 128, 2), BasicBlock1d(128, 128)) self.layer3 = nn.Sequential(BasicBlock1d(128, 256, 2), BasicBlock1d(256, 256)) self.head = nn.Sequential(nn.AdaptiveAvgPool1d(1), nn.Flatten(), nn.Linear(256, n classes)) logits (sigmoid는 손실에서) def forward(self, x): x: (B, 12, 1000) return self.head(self.layer3(self.layer2(self.layer1(self.stem(x))))) model = ResNet1d(n classes=5, in ch=12) loss fn = nn.BCEWithLogitsLoss() 다중라벨: 라벨마다 독립 이진 ... 학습 루프(순전파→BCE→역전파→step) ... probs = torch.sigmoid(model(X test)) (N, 5) 진단별 확률 macro auroc = roc auc score(y test, probs.numpy(), average=\"macro\") Instructions 1주차 Instructions 표와 같은 방식. 다중라벨·ResNet에서 새로 등장하는 지시어 에 집중. 지시어(코드) 무엇을 시키는가 왜 (1주차와 무엇이 다른가) nn.Conv1d(12, 64, 7, 2) 12유도를 입력 채널 12개 로 받아 시간축을 훑어라 1주차는 1채널, 이번엔 유도 12개를 채널로 동시에 본다 x + idt (잔차) conv 출력에 입력을 그대로 더하라 ResNet의 심장. \"최소한 이전 성능 보장\"으로 깊이를 안전하게 self.down = Conv1d(...,1,stride) 채널·길이가 바뀌면 지름길도 1×1로 맞춰라 skip 연결의 모양을 맞추는 실무 디테일 nn.AdaptiveAvgPool1d(1) 시간축 전체를 하나로 평균 1주차 GlobalAveragePooling1D 의 PyTorch판 Linear(256, 5) + sigmoid 진단 5개 각각 의 확률을 내라(서로 배타 아님) softmax(5택1)와 결정적으로 다름 — 동시 참 허용 BCEWithLogitsLoss() 라벨마다 독립 이진 교차엔트로피 로 채점 다중라벨의 표준 손실. pos weight 로 불균형 보정 가능 roc auc score(..., average=\"macro\") 진단별 AUROC를 구해 단순 평균 임계값에 안 흔들려 다중라벨·불균형에 견고 → 게이트 지표 strat fold 슬라이싱 fold 9=val, 10=test로 환자 단위 분리 1주차 최대 교훈(누수 금지)이 데이터에 내장돼 있음 한눈 요약 : Conv1d(12ch) 가 12유도를 보고 → 잔차 블록 이 깊게 형태를 뽑고 → AvgPool 이 요약하고 → sigmoid×5 가 진단별로 칠하고 → BCE 가 라벨마다 채점하고 → macro AUROC 가 최종 시험을 매긴다. Gate 기준 : macro auroc ≥ 0.85 (상위 5진단군 다중라벨, PTB XL 표준 분할 test=fold 10) 산출물 : 상위클래스 다중라벨 macro AUROC + 클래스별 AUROC 표 (+ 체크포인트를 Drive에) 판정/진급 : bash 노트북이 남긴 결과로 판정(통과 시 자동으로 3주차로) python pipelines/check week.py results week02 result.json {\"week\":2,\"metric\":\"macro auroc\",\"value\":...} 또는 값만 직접: python pipelines/check week.py value 0.90 벤치마크 상위 모델이 0.92~0.93이라 0.85는 입문 기준으로 넉넉히 도달 가능 하다. 애매하면 /ai mentor 질적 리뷰 후 pass 로 승인. Exercises 1. 완주 : Colab에서 week02 ptbxl resnet1d.ipynb 를 끝까지 돌려 macro AUROC와 클래스별 AUROC 표 를 얻는다. (100Hz·소량 fold로 먼저 스모크 테스트 → 전체) 2. 다중라벨 감 잡기 : 한 심전도에 라벨이 2개 이상 붙은 사례를 찾아, softmax였다면 왜 안 되는지 한 문단으로 My notes 에. 3. 원본과 대조 : python pipelines/fetch project.py download ptbxl benchmark 로 실제 벤치마크 코드를 받아, 우리 ResNet1d 와 resnet1d wang 의 차이 3가지를 ailab 2026 0013 을 보며 메모. 4. 불균형 실험 : BCEWithLogitsLoss(pos weight=...) 를 켜고 HYP (가장 드문 진단군) AUROC가 어떻게 바뀌는지 비교. 5. 진급 : 기준을 넘으면 check week.py 로 3주차(흉부 X선 전이학습)로 넘어간다. Resources 데이터: https://physionet.org/content/ptb xl/ · SCP ECG 라벨 계층: scp statements.csv 원본 벤치마크(공개 구현) : https://github.com/helme/ecg ptbxl benchmarking (분석·다운로드는 프로젝트 카드 ailab 2026 0013 ) 논문: Strodthoff, Wagner, Schaeffter, Samek, IEEE JBHI 25(5):1519–1528, 2021 1주차 연결: 실습 ailab 2026 0005 · 개념/발전사 ailab 2026 0009 (CNN→ResNet) · 심화 ailab 2026 0007 심화 퀘스트(2주차에서 파생되는 열린 문제): ailab 2026 0014 My notes <! 실습하며 배운 것·막힌 것·아이디어를 여기에. 다중라벨/AUROC에서 헷갈린 점을 남겨두면 좋다."
+  },
   {
    "id": "usmle-2026-0048",
    "type": "usmle",
