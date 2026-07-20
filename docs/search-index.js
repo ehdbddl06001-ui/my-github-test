@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-19",
+ "generated": "2026-07-20",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 350,
+  "total": 356,
   "byType": {
+   "usmle": 54,
    "kmle": 203,
    "ailab": 14,
-   "usmle": 48,
    "paper": 82,
    "basic": 3
   },
@@ -18,45 +18,159 @@ window.MEDKOS_INDEX = {
    "Nephrology": 26,
    "Infectious Disease": 25,
    "Pediatrics": 24,
+   "Neurology": 16,
    "Obstetrics & Gynecology": 16,
-   "Neurology": 15,
-   "Psychiatry": 15,
+   "Psychiatry": 16,
    "Endocrinology": 14,
    "Gastroenterology": 13,
+   "Pathology": 13,
    "Pulmonology": 13,
    "Dermatology": 12,
    "General Surgery": 12,
    "Ophthalmology": 12,
    "Orthopedics": 12,
-   "Pathology": 12,
    "Rheumatology": 12,
    "Surgery": 12,
    "Hematology": 11,
    "Laboratory Medicine": 10,
    "Hematology-Oncology": 8,
    "Physiology": 6,
+   "Biochemistry": 4,
+   "Immunology": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
-   "Biochemistry": 3,
-   "Immunology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
    "Allergy": 2,
+   "Internal Medicine": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
-   "Internal Medicine": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 263,
+   "high": 269,
    "medium": 87
   },
-  "tagCount": 1012
+  "tagCount": 1028
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Severe Lithium Toxicity — Thiazide- and Dehydration-Precipitated",
+   "tags": [
+    "lithium-toxicity",
+    "bipolar-disorder",
+    "hemodialysis",
+    "thiazide-interaction",
+    "drug-toxicity"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · lithium toxicity)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 54 year old woman with bipolar I disorder maintained on chronic lithium started hydrochlorothiazide for hypertension 2 weeks ago and then had a week of viral gastroenteritis with vomiting and diarrhea. She now presents with coarse tremor,",
+   "text": "Psychiatry Severe Lithium Toxicity — Thiazide- and Dehydration-Precipitated lithium-toxicity bipolar-disorder hemodialysis thiazide-interaction drug-toxicity USMLE-style / MedKOS (psychiatry · lithium toxicity) A 54 year old woman with bipolar I disorder maintained on chronic lithium started hydrochlorothiazide for hypertension 2 weeks ago and then had a week of viral gastroenteritis with vomiting and diarrhea. She now presents with coarse tremor, ataxia, confusion, and myoclonic jerks. She is normothermic and has no muscular rigidity. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Initiate emergent hemodialysis B. Administer sodium polystyrene sulfonate C. Start IV normal saline and reassess in 24 hours D. Administer IV sodium bicarbonate to alkalinize the urine E. Begin oral whole bowel irrigation with polyethylene glycol Severe neurologic lithium toxicity with a markedly elevated level and acute kidney injury impairing lithium clearance is an indication for hemodialysis rather than fluids or decontamination measures alone."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Cholinergic Crisis vs Myasthenic Crisis — Pyridostigmine Overdose",
+   "tags": [
+    "myasthenia-gravis",
+    "cholinergic-crisis",
+    "pyridostigmine",
+    "muscarinic-toxicity",
+    "respiratory-failure"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · neuromuscular junction disorders)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 23 year old woman with myasthenia gravis on home pyridostigmine develops a upper respiratory infection and, over the past 2 days, self increases her pyridostigmine dose because her weakness feels worse. She now presents with worsening gen",
+   "text": "Neurology Cholinergic Crisis vs Myasthenic Crisis — Pyridostigmine Overdose myasthenia-gravis cholinergic-crisis pyridostigmine muscarinic-toxicity respiratory-failure USMLE-style / MedKOS (neurology · neuromuscular junction disorders) A 23 year old woman with myasthenia gravis on home pyridostigmine develops a upper respiratory infection and, over the past 2 days, self increases her pyridostigmine dose because her weakness feels worse. She now presents with worsening generalized weakness, excessive salivation, watery diarrhea, and abdominal cramping. On examination she has diffuse muscle fasciculations, bilateral ptosis, and diaphoresis. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate step in management? A. Increase the pyridostigmine dose to overcome receptor blockade B. Administer edrophonium to confirm the diagnosis before treatment C. Begin plasmapheresis emergently before addressing muscarinic symptoms D. Administer neostigmine to reverse the muscle weakness E. Discontinue pyridostigmine with atropine for muscarinic symptom control Dose escalation followed by miosis, bradycardia, salivation, diarrhea, and fasciculations indicates cholinergic (muscarinic) toxicity rather than myasthenic weakness alone; management is to hold the acetylcholinesterase inhibitor, give atropine for muscarinic symptoms, and monitor for respiratory failure."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Internal Medicine",
+   "subtopic": "Unstable Wide-Complex Tachycardia — Synchronized Cardioversion",
+   "tags": [
+    "ventricular-tachycardia",
+    "unstable-arrhythmia",
+    "synchronized-cardioversion",
+    "ACLS",
+    "ischemic-cardiomyopathy"
+   ],
+   "source": "USMLE-style / MedKOS (internal medicine · arrhythmia, synthetic ECG)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 62 year old man with a history of myocardial infarction 3 years ago presents with sudden palpitations and near syncope. He is diaphoretic, pale, and mildly confused but has a palpable pulse. The rhythm strip is shown. Vital signs and labo",
+   "text": "Internal Medicine Unstable Wide-Complex Tachycardia — Synchronized Cardioversion ventricular-tachycardia unstable-arrhythmia synchronized-cardioversion ACLS ischemic-cardiomyopathy USMLE-style / MedKOS (internal medicine · arrhythmia, synthetic ECG) A 62 year old man with a history of myocardial infarction 3 years ago presents with sudden palpitations and near syncope. He is diaphoretic, pale, and mildly confused but has a palpable pulse. The rhythm strip is shown. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate management? A. Immediate unsynchronized defibrillation B. Intravenous amiodarone loading infusion over 10 minutes C. Immediate synchronized cardioversion D. Vagal maneuvers followed by adenosine if unsuccessful E. Intravenous metoprolol bolus A wide complex tachycardia with hypotension, altered mentation, and a palpable pulse is unstable and requires immediate synchronized cardioversion; unsynchronized defibrillation is reserved for pulseless rhythms."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "AL (Primary) Amyloidosis — Source of Amyloidogenic Protein",
+   "tags": [
+    "amyloidosis",
+    "AL-amyloid",
+    "plasma-cell-dyscrasia",
+    "nephrotic-syndrome",
+    "congo-red"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · amyloidosis)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 58 year old man presents with 6 months of progressive lower extremity edema, fatigue, and foamy urine. He has no history of diabetes, chronic infection, autoimmune disease, or dialysis. On examination he has macroglossia and easy bruising",
+   "text": "Pathology AL (Primary) Amyloidosis — Source of Amyloidogenic Protein amyloidosis AL-amyloid plasma-cell-dyscrasia nephrotic-syndrome congo-red USMLE-style / MedKOS (pathology · amyloidosis) A 58 year old man presents with 6 months of progressive lower extremity edema, fatigue, and foamy urine. He has no history of diabetes, chronic infection, autoimmune disease, or dialysis. On examination he has macroglossia and easy bruising around the eyes after routine phlebotomy. Serum protein electrophoresis shows a monoclonal spike in the gamma region. A renal biopsy demonstrates extracellular deposits that stain with Congo red and show apple green birefringence under polarized light. Vital signs and laboratory studies are shown. Which of the following is the most likely underlying source of the amyloidogenic protein in this patient? A. Serum amyloid A protein produced during chronic inflammation B. Clonal plasma cells producing misfolded immunoglobulin light chains C. Mutant transthyretin protein synthesized by the liver D. β2 microglobulin accumulation from long term dialysis E. Islet amyloid polypeptide deposition in pancreatic islets A monoclonal gammopathy with a markedly skewed serum free light chain ratio, nephrotic syndrome, macroglossia, and periorbital bruising in a patient without chronic inflammatory disease or dialysis points to AL amyloidosis from a clonal plasma cell dyscrasia."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Immunology",
+   "subtopic": "Chronic Granulomatous Disease — Phagocyte NADPH Oxidase Defect",
+   "tags": [
+    "chronic-granulomatous-disease",
+    "NADPH-oxidase",
+    "catalase-positive",
+    "oxidative-burst",
+    "primary-immunodeficiency"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · phagocyte disorders)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "An 18 month old boy is brought to the hospital with a 4 day history of fever and a painful, fluctuant perianal mass. This is his third hospitalization for a deep soft tissue abscess in the past year; a prior admission was for pneumonia with",
+   "text": "Immunology Chronic Granulomatous Disease — Phagocyte NADPH Oxidase Defect chronic-granulomatous-disease NADPH-oxidase catalase-positive oxidative-burst primary-immunodeficiency USMLE-style / MedKOS (immunology · phagocyte disorders) An 18 month old boy is brought to the hospital with a 4 day history of fever and a painful, fluctuant perianal mass. This is his third hospitalization for a deep soft tissue abscess in the past year; a prior admission was for pneumonia with a right upper lobe nodule on chest imaging that grew Aspergillus species on culture. His maternal uncle had a similar history of recurrent infections in childhood. Vital signs and laboratory studies are shown. Which of the following is the most likely underlying defect? A. Defect in myeloperoxidase (MPO) within neutrophil phagolysosomes B. Deficiency of terminal complement components C5 through C9 C. Deficiency of the IL 12/IFN γ signaling axis D. Defect in the phagocyte NADPH oxidase complex (gp91 phox) E. Mutation in the Wiskott–Aldrich syndrome protein (WASP) gene Recurrent abscesses and invasive infections with catalase positive organisms (Serratia, Aspergillus) with normal immunoglobulins and complement point to a defect of the phagocyte respiratory burst, most commonly an X linked NADPH oxidase (gp91 phox) defect."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Biochemistry",
+   "subtopic": "Ornithine Transcarbamylase (OTC) Deficiency — Urea Cycle Biochemistry",
+   "tags": [
+    "urea-cycle",
+    "OTC-deficiency",
+    "hyperammonemia",
+    "orotic-acid",
+    "X-linked"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · urea cycle)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 3 day old male newborn, born after an uncomplicated term vaginal delivery, becomes progressively lethargic and refuses feeds over the past 24 hours. He has had several episodes of non bilious vomiting without diarrhea or fever. His mother",
+   "text": "Biochemistry Ornithine Transcarbamylase (OTC) Deficiency — Urea Cycle Biochemistry urea-cycle OTC-deficiency hyperammonemia orotic-acid X-linked USMLE-style / MedKOS (biochemistry · urea cycle) A 3 day old male newborn, born after an uncomplicated term vaginal delivery, becomes progressively lethargic and refuses feeds over the past 24 hours. He has had several episodes of non bilious vomiting without diarrhea or fever. His mother reports that two maternal uncles died in infancy of an undiagnosed illness. Vital signs and laboratory studies are shown. Which of the following additional findings would most strongly support this infant's specific enzyme defect over other proximal urea cycle disorders? A. Elevated urine orotic acid with low plasma citrulline B. Markedly elevated plasma citrulline with elevated urine orotic acid C. Low or undetectable urine orotic acid with low plasma citrulline D. Elevated plasma propionylcarnitine (C3) with normal urine orotic acid E. Elevated plasma lysine with low plasma ornithine OTC deficiency causes carbamoyl phosphate to accumulate proximal to the block and divert into cytosolic pyrimidine synthesis, raising urine orotic acid, while citrulline synthesis downstream of OTC is reduced."
+  },
   {
    "id": "kmle-2026-0233",
    "type": "kmle",
