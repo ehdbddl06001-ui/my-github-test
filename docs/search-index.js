@@ -1,15 +1,15 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-21",
+ "generated": "2026-07-22",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 382,
+  "total": 388,
   "byType": {
+   "usmle": 54,
    "kmle": 235,
    "ailab": 14,
-   "usmle": 48,
    "paper": 82,
    "basic": 3
   },
@@ -18,9 +18,9 @@ window.MEDKOS_INDEX = {
    "Nephrology": 28,
    "Infectious Disease": 27,
    "Pediatrics": 26,
-   "Obstetrics & Gynecology": 18,
-   "Neurology": 17,
-   "Psychiatry": 17,
+   "Obstetrics & Gynecology": 19,
+   "Neurology": 18,
+   "Psychiatry": 18,
    "Endocrinology": 16,
    "Gastroenterology": 15,
    "Pulmonology": 15,
@@ -30,18 +30,18 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 14,
    "Rheumatology": 14,
    "Hematology": 13,
-   "Pathology": 12,
+   "Pathology": 13,
    "Surgery": 12,
    "Laboratory Medicine": 10,
    "Hematology-Oncology": 8,
-   "Physiology": 6,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,12 +51,127 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 295,
+   "high": 301,
    "medium": 87
   },
-  "tagCount": 1126
+  "tagCount": 1149
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Lithium Toxicity Precipitated by Thiazide Diuretic (Renal Clearance Mechanism)",
+   "tags": [
+    "lithium-toxicity",
+    "thiazide-diuretic",
+    "bipolar-disorder",
+    "drug-interaction",
+    "nephrogenic-diabetes-insipidus"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · psychopharmacology)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 58 year old woman with bipolar I disorder maintained on a stable dose of lithium for 6 years is brought in by her family for new onset coarse tremor, slurred speech, and unsteady gait over the past 4 days. Two weeks ago, her primary care ",
+   "text": "Psychiatry Lithium Toxicity Precipitated by Thiazide Diuretic (Renal Clearance Mechanism) lithium-toxicity thiazide-diuretic bipolar-disorder drug-interaction nephrogenic-diabetes-insipidus USMLE-style / MedKOS (psychiatry · psychopharmacology) A 58 year old woman with bipolar I disorder maintained on a stable dose of lithium for 6 years is brought in by her family for new onset coarse tremor, slurred speech, and unsteady gait over the past 4 days. Two weeks ago, her primary care physician started hydrochlorothiazide for newly diagnosed hypertension. She reports no changes to her lithium dose or diet. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's current presentation? A. Thiazide induced volume depletion increases proximal tubular reabsorption of sodium and lithium B. Thiazide directly displaces lithium from plasma protein binding sites C. Thiazide induces hepatic enzymes that increase conversion of lithium to an active toxic metabolite D. Thiazide causes a pharmacodynamic interaction that increases lithium receptor sensitivity in the central nervous system E. Thiazide impairs biliary excretion of lithium, causing systemic accumulation Thiazide diuretics cause mild volume depletion, which increases proximal tubular sodium (and secondarily lithium) reabsorption; because lithium is renally excreted and not protein bound, hepatically metabolized, or biliary excreted, this reduced renal clearance is the mechanism behind thiazide precipitated lithium toxicity."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Wernicke Encephalopathy (Thiamine Before Glucose in Suspected Thiamine Deficiency)",
+   "tags": [
+    "Wernicke-encephalopathy",
+    "thiamine",
+    "alcohol-use-disorder",
+    "hypoglycemia-management-sequence",
+    "ophthalmoplegia"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · nutritional encephalopathy)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 51 year old man with a long history of heavy alcohol use is brought to the emergency department by a friend because of confusion and unsteady gait over the past two days. He has not eaten a full meal in several days. Examination shows hor",
+   "text": "Neurology Wernicke Encephalopathy (Thiamine Before Glucose in Suspected Thiamine Deficiency) Wernicke-encephalopathy thiamine alcohol-use-disorder hypoglycemia-management-sequence ophthalmoplegia USMLE-style / MedKOS (neurology · nutritional encephalopathy) A 51 year old man with a long history of heavy alcohol use is brought to the emergency department by a friend because of confusion and unsteady gait over the past two days. He has not eaten a full meal in several days. Examination shows horizontal nystagmus, bilateral abducens palsy, and a wide based, ataxic gait. Vital signs and a bedside capillary glucose are shown. He is disheveled and appears malnourished. Which of the following is the most appropriate immediate next step in management? A. Administer thiamine before dextrose infusion B. Administer dextrose alone C. Obtain a noncontrast head CT before giving any treatment D. Administer naloxone E. Begin a benzodiazepine taper for alcohol withdrawal This patient's nystagmus, ophthalmoplegia, and ataxia in the setting of chronic alcohol use and poor nutrition suggest thiamine deficient Wernicke encephalopathy; because thiamine is a required cofactor for glucose metabolism, administering glucose first can precipitate or worsen Wernicke encephalopathy, so thiamine should be given before or together with dextrose in any thiamine deficient patient who also needs glucose correction."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage (Second-Line Uterotonic Selection with Comorbidity Contraindications)",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "methylergonovine",
+    "carboprost",
+    "asthma-contraindication"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 29 year old woman, G2P2, has continuous heavy vaginal bleeding 20 minutes after a vaginal delivery. The uterus is soft and boggy on bimanual examination, and no lacerations are seen. Her history includes moderate persistent asthma treated",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage (Second-Line Uterotonic Selection with Comorbidity Contraindications) postpartum-hemorrhage uterine-atony uterotonics methylergonovine carboprost asthma-contraindication USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 29 year old woman, G2P2, has continuous heavy vaginal bleeding 20 minutes after a vaginal delivery. The uterus is soft and boggy on bimanual examination, and no lacerations are seen. Her history includes moderate persistent asthma treated with an inhaled corticosteroid and albuterol as needed, and chronic hypertension treated with labetalol. An indwelling Foley catheter shows adequate urine output. Bimanual uterine massage and an infusion of intravenous oxytocin have been started, but bleeding continues. Which of the following is the most appropriate next step in pharmacologic management? A. Intramuscular methylergonovine B. Intramuscular carboprost tromethamine C. Rectal misoprostol D. Intravenous tranexamic acid monotherapy E. Uterine artery embolization This patient has uterine atony refractory to oxytocin. Methylergonovine is relatively contraindicated because of her chronic hypertension (risk of severe hypertensive crisis), and carboprost is relatively contraindicated because of her asthma (risk of bronchospasm); misoprostol, a prostaglandin E1 analog, carries neither contraindication and is the most appropriate next uterotonic in this patient."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Fat Embolism Syndrome (Mechanism of Petechial Rash after Long Bone Fracture)",
+   "tags": [
+    "fat-embolism-syndrome",
+    "long-bone-fracture",
+    "petechiae",
+    "thrombocytopenia",
+    "free-fatty-acids"
+   ],
+   "source": "USMLE-style / MedKOS (general pathology · embolism)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 19 year old man develops confusion, dyspnea, and a petechial rash over the chest and axillae 36 hours after surgical fixation of a closed femoral shaft fracture sustained in a motor vehicle collision. He was neurologically intact and hemo",
+   "text": "Pathology Fat Embolism Syndrome (Mechanism of Petechial Rash after Long Bone Fracture) fat-embolism-syndrome long-bone-fracture petechiae thrombocytopenia free-fatty-acids USMLE-style / MedKOS (general pathology · embolism) A 19 year old man develops confusion, dyspnea, and a petechial rash over the chest and axillae 36 hours after surgical fixation of a closed femoral shaft fracture sustained in a motor vehicle collision. He was neurologically intact and hemodynamically stable immediately after the injury. Vital signs and laboratory studies obtained now are shown. Chest imaging shows diffuse bilateral opacities. Which of the following mechanisms best explains this patient's petechial rash? A. Occlusion of dermal capillaries by marrow derived fat globules with local endothelial injury from free fatty acids B. Immune mediated platelet destruction from fracture associated antiplatelet antibodies C. Disseminated intravascular coagulation from gram negative sepsis D. Vitamin C deficiency causing impaired collagen cross linking in vessel walls E. Direct bacterial invasion of dermal vessels from an open wound In fat embolism syndrome, marrow fat globules released after long bone fracture mechanically occlude small vessels and are hydrolyzed to free fatty acids that directly injure capillary endothelium, causing petechiae (classically over the chest, axillae, and conjunctivae), consumptive thrombocytopenia, hypoxemia, and neurologic changes 24 72 hours after injury."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Cushing Reflex (Baroreceptor-Mediated Bradycardia from Raised ICP)",
+   "tags": [
+    "Cushing-reflex",
+    "baroreceptor-reflex",
+    "intracranial-pressure",
+    "brainstem-herniation",
+    "cardiovascular-physiology"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · neuro-cardiovascular reflex)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 34 year old man is brought to the emergency department after a motorcycle collision. He was initially responsive but is now unresponsive with a fixed, dilated left pupil. Vital signs are shown, with widened pulse pressure and irregular re",
+   "text": "Physiology Cushing Reflex (Baroreceptor-Mediated Bradycardia from Raised ICP) Cushing-reflex baroreceptor-reflex intracranial-pressure brainstem-herniation cardiovascular-physiology USMLE-style / MedKOS (physiology · neuro-cardiovascular reflex) A 34 year old man is brought to the emergency department after a motorcycle collision. He was initially responsive but is now unresponsive with a fixed, dilated left pupil. Vital signs are shown, with widened pulse pressure and irregular respirations. A noncontrast head CT shows a large epidural hematoma with midline shift. Which of the following physiologic mechanisms best explains this patient's current heart rate and blood pressure? A. Arterial baroreceptor mediated reflex response to acutely elevated systemic blood pressure B. Direct compression of the sinoatrial node by displaced brain parenchyma C. Loss of sympathetic outflow from spinal cord transection below the medulla D. Reflex tachycardia from decreased cerebral perfusion pressure E. Vagal nerve compression by the expanding hematoma at the skull base Rising intracranial pressure reduces cerebral perfusion, triggering a sympathetically mediated pressor response that raises systemic arterial pressure to restore cerebral blood flow; the resulting acute hypertension activates arterial baroreceptors, which reflexively drive vagal mediated bradycardia — the Cushing reflex (hypertension, bradycardia, irregular respirations)."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Tricyclic Antidepressant Overdose (Sodium Channel Blockade)",
+   "tags": [
+    "TCA-overdose",
+    "sodium-channel-blockade",
+    "sodium-bicarbonate",
+    "wide-complex-tachycardia",
+    "amitriptyline"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · toxicology)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 22 year old woman is brought to the emergency department after being found unresponsive with an empty pill bottle labeled amitriptyline nearby. She is lethargic and minimally responsive to voice. Vital signs, arterial blood gas, and a rhy",
+   "text": "Pharmacology Tricyclic Antidepressant Overdose (Sodium Channel Blockade) TCA-overdose sodium-channel-blockade sodium-bicarbonate wide-complex-tachycardia amitriptyline USMLE-style / MedKOS (pharmacology · toxicology) A 22 year old woman is brought to the emergency department after being found unresponsive with an empty pill bottle labeled amitriptyline nearby. She is lethargic and minimally responsive to voice. Vital signs, arterial blood gas, and a rhythm strip obtained on arrival are shown. Which of the following is the most appropriate immediate pharmacologic intervention? A. Intravenous sodium bicarbonate B. Intravenous flecainide C. Intravenous physostigmine D. Intravenous calcium gluconate E. Intravenous naloxone TCA overdose blocks fast cardiac sodium channels, widening the QRS and predisposing to wide complex tachyarrhythmias and hypotension; serum alkalinization with IV sodium bicarbonate increases the extracellular sodium gradient and shifts drug binding kinetics, narrowing the QRS and improving conduction."
+  },
   {
    "id": "kmle-2026-0265",
    "type": "kmle",
