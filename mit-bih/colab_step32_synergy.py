@@ -37,7 +37,9 @@ def diag_synergy(Kwst=40, ngroup=4):
     COND={"WST":Xwk,"morph":Xm,"repol":Xr[:,_REPOLK_IDX],"segT":Xs[:,_SEG_IDX],"xlead":Xx}
     Xv=globals().get("_VCG",None)                          # step33 리드-벡터관계 — 있으면 시너지에 포함
     if Xv is not None: COND["VCG"]=Xv
-    else: print("(주의: _VCG 없음 → step33 diag_vcg() 먼저 돌리면 VCG 포함해 재구성됨)\n")
+    Xd=globals().get("_DTW",None)                          # step35 DTW 조기성 — 있으면 포함
+    if Xd is not None: COND["DTW"]=Xd
+    if Xv is None or Xd is None: print("(주의: _VCG/_DTW 중 없는 조건은 제외 → diag_vcg()/diag_dtw() 먼저)\n")
     names=list(COND); n=len(names); memo={}
     def P(sub):
         key=tuple(sorted(sub))
@@ -91,7 +93,9 @@ def diag_combos(Kwst=40, top=18):
     COND={"WST":Xwk,"morph":Xm,"repol":Xr[:,_REPOLK_IDX],"segT":Xs[:,_SEG_IDX],"xlead":Xx}
     Xv=globals().get("_VCG",None)
     if Xv is not None: COND["VCG"]=Xv
-    else: print("(주의: _VCG 없음 → diag_vcg() 먼저 돌리면 VCG 포함)\n")
+    Xd=globals().get("_DTW",None)
+    if Xd is not None: COND["DTW"]=Xd
+    if Xv is None or Xd is None: print("(주의: _VCG/_DTW 중 없는 조건은 제외 → diag_vcg()/diag_dtw() 먼저 돌리면 포함)\n")
     names=list(COND); memo={}
     def P(sub):
         key=tuple(sorted(sub))
