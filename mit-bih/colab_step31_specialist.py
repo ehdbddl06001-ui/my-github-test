@@ -85,14 +85,17 @@ def run_specialist(Kwst=40, nseed_oof=1, nseed_full=2, half=20, seed0=1000):
     Xd=globals().get("_DTW",None); Xd=Xd if Xd is not None else extract_dtw_features(beats,ref,pid)     # step35
     m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y1,p1=y[m1],pid[m1]; y2=y[m2]; N1=int(m1.sum())
     Xwk=np.nan_to_num(SelectKBest(f_classif,k=min(Kwst,Xw.shape[1])).fit(np.nan_to_num(Xw[m1]),y[m1]).transform(np.nan_to_num(Xw))).astype("float32")
-    Fw=np.concatenate([feats0,Xwk],1).astype("float32"); Fwm=np.concatenate([feats0,Xwk,Xm],1).astype("float32")
-    Fbest=np.concatenate([feats0,Xwk,Xm,Xr[:,_REPOLK_IDX]],1).astype("float32")
-    # step32 반영: xlead 제거(죽음), VCG·DTW 전문가 추가. 백본 26+WST+morph 공유.
-    EXP={"A_wst":(Fw,False),"B_wstm":(Fwm,False),"C_repol":(Fbest,False),
-         "D_segT":(np.concatenate([Fwm,Xs[:,_SEG_IDX]],1).astype("float32"),False),
-         "E_VCG":(np.concatenate([Fwm,Xv],1).astype("float32"),False),
-         "F_ptbr":(Fbest,True),                                        # best + P/T분기
-         "G_DTW":(np.concatenate([Fwm,Xd],1).astype("float32"),False)} # +DTW 조기성
+    Fwm=np.concatenate([feats0,Xwk,Xm],1).astype("float32")           # 백본 26+WST+morph
+    Fbest=np.concatenate([Fwm,Xr[:,_REPOLK_IDX]],1).astype("float32")  # +repol
+    seg=Xs[:,_SEG_IDX]
+    # 조합 전문가(사장님 #2): 백본에 여러 기준 조합 — 더 강하고 다양.
+    EXP={"A_wstm":(Fwm,False),                                                 # 백본 generalist
+         "B_repol":(Fbest,False),                                             # +repol
+         "C_rs":(np.concatenate([Fbest,seg],1).astype("float32"),False),      # +repol+segT
+         "D_5way":(np.concatenate([Fbest,seg,Xv],1).astype("float32"),False), # +repol+segT+VCG (5-way)
+         "E_rd":(np.concatenate([Fbest,Xd],1).astype("float32"),False),       # +repol+DTW
+         "F_svd":(np.concatenate([Fwm,seg,Xv,Xd],1).astype("float32"),False), # +segT+VCG+DTW
+         "G_ptbr":(Fbest,True)}                                               # best + P/T분기
     names=list(EXP)
     b1,r1,bp1,rp1=beats[m1],ref[m1],BPT[m1],RPT[m1]; b2,r2,bp2,rp2=beats[m2],ref[m2],BPT[m2],RPT[m2]
     def met(p,yy): return average_precision_score((yy==1).astype(int),p[:,1])

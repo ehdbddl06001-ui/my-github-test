@@ -69,15 +69,26 @@ def run_moe2(tauS=0.08, tauV=0.20, soft=True, Kwst=40):
     else:
         sel=rf.predict(G2[amb2]); route=DA[sel,np.where(amb2)[0]]
     moe2=assemble(norm(route))
+    # ★ 스태킹 재검(사장님 #3): 애매 비트를 '선택' 말고 '결합' — 모든 전문가 출력+특징으로 메타 재판정
+    def meta_feat(A,Gd): return np.concatenate([A[:,:,1].T,A[:,:,2].T,Gd],1)  # (N, 2K+G)
+    M1=meta_feat(OA,G1); M2=meta_feat(DA,G2)
+    meta=RandomForestClassifier(n_estimators=400,max_depth=16,min_samples_leaf=20,n_jobs=-1,random_state=0,class_weight="balanced")
+    meta.fit(M1[amb1],(y1[amb1]==1).astype(int))
+    stackS=meanA[:,1].copy(); stackS[amb2]=meta.predict_proba(M2[amb2])[:,1]     # 확실한N=낮은S 유지
+    stackP=np.stack([1-stackS,stackS,np.zeros(N2)],1)                            # S-랭킹용(PR-AUC는 [:,1]만)
     # ── 비교 ──
     best_single=max(names,key=lambda n:met(DA[names.index(n)]))
     uni=norm(DA.mean(0))
     honest_all=DA[rf.predict(G2),np.arange(N2)]                        # 필터없이 전체 라우팅(step31식)
     oracle=DA[DA[:,np.arange(N2),y2].argmax(0),np.arange(N2)]
-    print(f"\n{'='*54}\n[DS2] (라우팅=특징만, 오라클=라벨 천장)")
-    for nm,P in [(f"최고단일({best_single})",DA[names.index(best_single)]),("균일",uni),
-                 ("전체 라우팅(step31식)",honest_all),("★2단계+소프트 MoE",moe2),("오라클",oracle)]:
-        pr,se,f1=_f1(y2,P[:,1]); print(f"  {nm:22s} S={met(P):.4f}  PREC={pr:.3f} SEN={se:.3f} F1={f1:.3f}")
-    print(f"\n▶ '2단계+소프트'가 최고단일·전체라우팅 넘으면 = 라우팅 병목 해소(오라클 0.75로 접근).")
-    print(f"  tauS·tauV(확실한N 문턱)·soft 조절로 튜닝 가능.")
+    def stackS_metric(): return average_precision_score((y2==1).astype(int),stackS)
+    print(f"\n{'='*54}\n[DS2] (라우팅/스태킹=특징+DS1라벨만, 오라클=DS2라벨 천장)")
+    rows=[(f"최고단일({best_single})",DA[names.index(best_single)][:,1]),("균일",uni[:,1]),
+          ("전체 라우팅(하드)",honest_all[:,1]),("2단계+소프트 라우팅",moe2[:,1]),
+          ("★2단계+스태킹재검",stackS),("오라클(상한)",oracle[:,1])]
+    for nm,s in rows:
+        pr,se,f1=_f1(y2,s); print(f"  {nm:22s} S={average_precision_score((y2==1).astype(int),s):.4f}  PREC={pr:.3f} SEN={se:.3f} F1={f1:.3f}")
+    print(f"\n▶ ★스태킹재검이 최고단일·라우팅 넘으면 = '선택' 대신 '결합'이 병목 해소(오라클로 접근).")
+    print(f"  스태킹은 전문가 전부+특징을 메타모델이 재판정 → 라우팅 오류에 강건.  tauS·tauV로 확실한N 조절.")
+    moe2=stackP
     return dict(moe2=moe2,rf=rf)
