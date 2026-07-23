@@ -35,6 +35,9 @@ def diag_synergy(Kwst=40, ngroup=4):
     Xw=globals()["_WST"]; Xm=globals()["_MORPHO"]; Xr=globals()["_REPOL"]; Xs=globals()["_SEGDEV"]; Xx=globals()["_XLEAD"]
     Xwk=np.nan_to_num(SelectKBest(f_classif,k=40).fit(np.nan_to_num(Xw[m1]),y1).transform(np.nan_to_num(Xw)))
     COND={"WST":Xwk,"morph":Xm,"repol":Xr[:,_REPOLK_IDX],"segT":Xs[:,_SEG_IDX],"xlead":Xx}
+    Xv=globals().get("_VCG",None)                          # step33 리드-벡터관계 — 있으면 시너지에 포함
+    if Xv is not None: COND["VCG"]=Xv
+    else: print("(주의: _VCG 없음 → step33 diag_vcg() 먼저 돌리면 VCG 포함해 재구성됨)\n")
     names=list(COND); n=len(names); memo={}
     def P(sub):
         key=tuple(sorted(sub))
