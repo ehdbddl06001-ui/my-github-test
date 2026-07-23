@@ -49,7 +49,13 @@ def _medref(beats,pid):
     for p in np.unique(pid): m=pid==p; r[m]=np.median(beats[m],axis=0,keepdims=True)
     return r.astype("float32")
 
-def run_leadablation(Kwst=40, Sw=11.0, seeds=None, recompute_wst=True):
+def auto_weights(y1, beta=0.9999):
+    """DS1 클래스수에서 S가중치 계산(하드코딩 금지·DB전이): 유효표본수(Cui 2019)."""
+    nN=(y1==0).sum(); nS=max((y1==1).sum(),1)
+    eff=lambda n:(1-beta)/(1-beta**n+1e-12)
+    return float(eff(nS)/eff(nN))                     # N대비 S배수 (MIT-BIH면 ≈11)
+
+def run_leadablation(Kwst=40, Sw=None, seeds=None, recompute_wst=True):
     import torch, torch.nn as nn
     from sklearn.preprocessing import RobustScaler
     from sklearn.model_selection import GroupShuffleSplit
@@ -57,6 +63,7 @@ def run_leadablation(Kwst=40, Sw=11.0, seeds=None, recompute_wst=True):
     seeds=seeds or list(range(1000,1010)); dev="cuda" if torch.cuda.is_available() else "cpu"
     d=np.load("/content/drive/MyDrive/mitbih/mamba_data.npz"); beats,feats0,y,pid=d["beat"],d["feats"],d["y"],d["pid"]
     m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y2=y[m2]
+    if Sw is None: Sw=auto_weights(y[m1]); print(f"S가중치 자동계산(유효표본수, DS1 클래스수 유래)= {Sw:.2f}  (DS2 튜닝 아님)")
     def buildF(bb, Xw, Xm, Xr, Xd):
         Xwk=np.nan_to_num(SelectKBest(f_classif,k=min(Kwst,Xw.shape[1])).fit(np.nan_to_num(Xw[m1]),y[m1]).transform(np.nan_to_num(Xw))).astype("float32")
         return np.concatenate([feats0,Xwk,Xm,Xr[:,_REPOLK_IDX],Xd],1).astype("float32")
