@@ -91,8 +91,10 @@ atan2 벡터방향(이소성 축), P/QRS/T 에너지분해, residual=숨은 P(P-
 - 5 seed: base26 0.433 → pwave 0.519(+0.086) — 노이즈바닥 초과처럼 보였으나
 - **15 seed: base26 0.544 → pwave 0.501(−0.043)** — **+0.086은 seed 1001 운빨,
   15seed에서 소멸.** V는 그대로.
+- **크루드8+분리8 합본(step11, 15 seed): base26 0.494 → combined 0.406(−0.088)** —
+  16개는 오히려 CNN을 **해침**(크루드는 흡수, 분리8은 노이즈 추가로 특징MLP 교란).
 - **해석**: P파 정보는 로지스틱엔 크게 기여하나, **CNN은 raw 파형에서 이미 흡수** →
-  8개 요약특징으로 또 줘도 순증 없음.
+  요약특징으로 또 줘도 순증 없고, 많이 주면 오히려 해로움. **P파 축은 CNN용으로 소진.**
 
 ### 벡터 분리(denoise, step10)
 - 환자 정상 P축 기준 coh(정렬=진짜P)/perp(이탈=노이즈·이소성) 분리 + 저역통과.
@@ -128,5 +130,15 @@ atan2 벡터방향(이소성 축), P/QRS/T 에너지분해, residual=숨은 P(P-
 - 환자 수가 커지면 (a) 학습 환자적응(FiLM/hypernetwork)이 비로소 일반화 가능,
   (b) 희소 S 분산 감소, (c) P파 특징의 신호가 CNN 흡수분을 초과할 여지.
 
+## 6. 선행연구 비교 주의 (intra vs inter-patient)
+- Ait Bourkha et al.(IJACSA 2025), "Optimized WSN and CNN": MIT-BIH 15클래스
+  **98.5% accuracy**. 그러나 **비트 무작위 80/20(클래스 층화) 분할 = intra-patient**
+  (동일 환자 비트가 train·test 공존) + **SMOTE** + 전체 accuracy. → 과대평가된
+  쉬운 세팅으로, 우리의 inter-patient S_PR-AUC와 **비교 불가**. 이 논문은 inter-patient를
+  측정하지 않음. (첫 GPT PDF가 경고한 "동일환자 train/test 공존 과대평가"의 실례.)
+- **교훈**: "데이터 충분"은 **intra-patient엔 참, inter-patient엔 거짓**. 우리 결론 유지.
+- **빌릴 것**: WST(Wavelet Scattering) 특징 추출법은 유효 → 우리 inter-patient·label-free·
+  증분 검증 세팅에서 테스트(step12). 우리 방법론이 차별점.
+
 ---
-*본 문서는 step1~11 실험 로그의 종합. 각 step의 코드와 저장 예측(npz)은 동일 저장소에 존재.*
+*본 문서는 step1~12 실험 로그의 종합. 각 step의 코드와 저장 예측(npz)은 동일 저장소에 존재.*
