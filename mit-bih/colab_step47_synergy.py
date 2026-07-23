@@ -220,6 +220,11 @@ def synergy_stage2_cnn(masks, seeds=None):
 # ─────────────────────────── 결과 리포트 ───────────────────────────
 def synergy_report(top=25):
     p1=f"{_OUTDIR}/stage1.jsonl"; p2=f"{_OUTDIR}/stage2.jsonl"
+    if not os.path.exists(p1) and not os.path.exists(p2):
+        print("아직 저장된 결과 없음. 먼저 run_synergy() 로 실험을 돌려줘 (수 시간).")
+        print("  진행 중 확인: stage1은 조합마다, stage2는 seed마다 Drive에 즉시 쌓임 →")
+        print("  중간에 synergy_report() 부르면 그때까지 완료분을 보여줌.")
+        return
     if os.path.exists(p1):
         rows=[json.loads(l) for l in open(p1)]
         rows.sort(key=lambda r:-r["S"])
