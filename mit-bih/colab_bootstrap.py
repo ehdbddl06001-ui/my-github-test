@@ -12,12 +12,22 @@
 #    # → 이후 run_prec / run_wsweep / run_autoweight / run_leadablation / run_nsdiscrim 정상
 #    # 강제 재계산: bootstrap_caches(force=True)
 # =============================================================================
-import numpy as np
+import numpy as np, importlib, subprocess, sys
 _BASE="/content/drive/MyDrive/mitbih"
 _SRC=["colab_step12_wst.py","colab_step15_morpho.py","colab_step18_repol.py","colab_step35_dtw.py"]
 
+def _ensure(pkg, imp=None):
+    """런타임 재시작으로 사라진 pip 패키지 자동 재설치(WST용 kymatio 등)."""
+    try:
+        importlib.import_module(imp or pkg)
+    except ModuleNotFoundError:
+        print(f"'{pkg}' 재설치 중(재시작으로 소실)...")
+        subprocess.run([sys.executable,"-m","pip","install","-q",pkg],check=True)
+        importlib.invalidate_caches()
+
 def bootstrap_caches(force=False):
     g=globals()
+    _ensure("kymatio")                                   # WST scattering(재시작 시 소실됨)
     # 1) 함수정의 로드(WST·morpho·repol·DTW 추출기 + 헬퍼)를 전역에 주입
     for f in _SRC:
         path=f"{_BASE}/{f}"
