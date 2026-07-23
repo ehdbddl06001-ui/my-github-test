@@ -37,12 +37,14 @@ def run_moe2(tauS=0.08, tauV=0.20, soft=True, Kwst=40):
     ref=np.empty_like(beats)
     for p in np.unique(pid): m=pid==p; ref[m]=np.median(beats[m],axis=0,keepdims=True)
     ref=ref.astype("float32")
-    Xw=globals()["_WST"]; Xm=globals()["_MORPHO"]; Xr=globals()["_REPOL"]; Xs=globals()["_SEGDEV"]; Xx=globals()["_XLEAD"]
+    Xw=globals()["_WST"]; Xm=globals()["_MORPHO"]; Xr=globals()["_REPOL"]; Xs=globals()["_SEGDEV"]
     m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2)
     Xwk=np.nan_to_num(SelectKBest(f_classif,k=40).fit(np.nan_to_num(Xw[m1]),y[m1]).transform(np.nan_to_num(Xw)))
-    G=np.concatenate([feats0,Xwk,Xm,Xr[:,_REPOLK_IDX],Xs[:,_SEG_IDX],Xx],1)
+    G=np.concatenate([feats0,Xwk,Xm,Xr[:,_REPOLK_IDX],Xs[:,_SEG_IDX]],1)
     Xv=globals().get("_VCG",None)
-    if Xv is not None: G=np.concatenate([G,Xv],1)
+    if Xv is not None: G=np.concatenate([G,Xv],1)                       # step33
+    Xd=globals().get("_DTW",None)
+    if Xd is not None: G=np.concatenate([G,Xd],1)                       # step35 (라우터가 조기성도 봄)
     scg=StandardScaler().fit(np.nan_to_num(G[m1])); G1=np.nan_to_num(scg.transform(np.nan_to_num(G[m1]))); G2=np.nan_to_num(scg.transform(np.nan_to_num(G[m2])))
     met=lambda P: average_precision_score((y2==1).astype(int),P[:,1])
     norm=lambda P: P/P.sum(-1,keepdims=True)
