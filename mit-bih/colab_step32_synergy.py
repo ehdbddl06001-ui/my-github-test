@@ -81,3 +81,42 @@ def diag_synergy(Kwst=40, ngroup=4):
     print(f"\n  ★ Shapley 높고 '보편(+전부)'인 조건 = 백본.  '조건부(갈림)' = 전문가 차별자.")
     print(f"    ★시너지 쌍은 함께 백본 채택 검토.  (로지스틱 근사 → 최종은 CNN 확인)")
     return dict(shapley=phi,base=base)
+
+def diag_combos(Kwst=40, top=18):
+    """전체 조합 지형: 모든 2^n 부분집합 S(고차 3·4·5·6개 동시 포함) + 크기별 최고 + 고차시너지.
+       _VCG 캐시 있으면 6조건 포함. 실행: diag_vcg() 먼저 → diag_combos()."""
+    beats,feats0,y,pid=_load(); m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y1,y2=y[m1],y[m2]
+    Xw=globals()["_WST"]; Xm=globals()["_MORPHO"]; Xr=globals()["_REPOL"]; Xs=globals()["_SEGDEV"]; Xx=globals()["_XLEAD"]
+    Xwk=np.nan_to_num(SelectKBest(f_classif,k=40).fit(np.nan_to_num(Xw[m1]),y1).transform(np.nan_to_num(Xw)))
+    COND={"WST":Xwk,"morph":Xm,"repol":Xr[:,_REPOLK_IDX],"segT":Xs[:,_SEG_IDX],"xlead":Xx}
+    Xv=globals().get("_VCG",None)
+    if Xv is not None: COND["VCG"]=Xv
+    else: print("(주의: _VCG 없음 → diag_vcg() 먼저 돌리면 VCG 포함)\n")
+    names=list(COND); memo={}
+    def P(sub):
+        key=tuple(sorted(sub))
+        if key in memo: return memo[key]
+        X=np.concatenate([feats0]+[COND[c] for c in key],1) if key else feats0
+        sc=StandardScaler().fit(np.nan_to_num(X[m1]))
+        X1=np.nan_to_num(sc.transform(np.nan_to_num(X[m1]))); X2=np.nan_to_num(sc.transform(np.nan_to_num(X[m2])))
+        clf=LogisticRegression(max_iter=4000,C=0.5,class_weight={0:1,1:3,2:1.5}).fit(X1,y1)
+        p2=clf.predict_proba(X2)[:,1]; memo[key]=p2; return p2
+    S=lambda sub: average_precision_score((y2==1).astype(int),P(sub))
+    base=S(()); solo={c:S((c,))-base for c in names}
+    allsubs=[c for k in range(1,len(names)+1) for c in combinations(names,k)]
+    res=sorted(((sub,S(sub)) for sub in allsubs), key=lambda x:-x[1])
+    print(f"기준 26 S={base:.4f}   (전체 {len(allsubs)}조합, 조건 {len(names)}개)\n")
+    print(f"=== 상위 {top} 조합 (S, 고차시너지=가법초과) ===")
+    for sub,s in res[:top]:
+        exc=s-base-sum(solo[c] for c in sub)
+        print(f"  {'+'.join(sub):32s} S={s:.4f}  (고차시너지 {exc:+.4f})")
+    print(f"\n=== 크기별 최고 조합 (동시 몇 개가 최적인가) ===")
+    for k in range(1,len(names)+1):
+        bs=max((c for c in combinations(names,k)),key=lambda c:S(c)); s=S(bs)
+        exc=s-base-sum(solo[c] for c in bs)
+        print(f"  {k}개: {'+'.join(bs):32s} S={s:.4f}  (고차시너지 {exc:+.4f})")
+    best=res[0]
+    print(f"\n▶ 전체 최고: {'+'.join(best[0])}  S={best[1]:.4f}")
+    print(f"  크기별 최고가 계속 오르면 = 많이 넣을수록 좋음. 어느 크기서 꺾이면 = 그 조합이 백본.")
+    print(f"  '고차시너지'가 큰 조합 = 개별 합보다 폭발(교집합 가치) → 백본 우선.")
+    return res
