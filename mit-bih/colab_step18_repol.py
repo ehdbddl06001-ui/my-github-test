@@ -115,3 +115,39 @@ def diag_repol():
         print("\n  (WST·morpho 비교하려면 step12·step15 먼저 로드해 _WST·_MORPHO 캐시)")
     global _REPOL; _REPOL=Xr
     return Xr
+
+# 정상대비(비율/차이) 특징 인덱스 = 환자 베이스라인 제거 → 이동에 강함. Tfrac(8)도 within-beat 비율.
+_REL_IDX=[1,3,5,7,8,9,11]
+
+def diag_repol_shift():
+    """왜 고단변량 특징이 모델서 떨어지나 = DS1→DS2 분포이동(covariate shift) 진단.
+       + 이동에 강한 '정상대비'만 남겨 재검(구제 가능성)."""
+    beats,feats,y,pid=_load()
+    ref=_allbeat_median_ref(beats,pid)
+    Xr=globals().get("_REPOL",None); Xr=Xr if Xr is not None else extract_repol_features(beats,ref,pid)
+    m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y1,y2=y[m1],y[m2]
+    print("=== 특징별 [단변량AUC] vs [DS1→DS2 이동량(σ)] ===")
+    print("   (이동량 = |mean_DS2-mean_DS1| / std_DS1. 큰 값 = 전달 안 되는 베이스라인=독)")
+    print(f"   {'특징':16s} {'단변량':>7s} {'이동σ':>7s}  판정")
+    for k,nm in enumerate(REPOL_NAMES):
+        c2=Xr[m2,k]
+        auc=roc_auc_score((y2==1).astype(int),c2); auc=max(auc,1-auc)
+        sd1=Xr[m1,k].std()+1e-9; shift=abs(Xr[m2,k].mean()-Xr[m1,k].mean())/sd1
+        rel="(정상대비)" if k in _REL_IDX else "(절대)   "
+        flag="← 고단변량·고이동=독" if (auc>0.75 and shift>0.5) else ""
+        print(f"   {nm:16s} {auc:7.3f} {shift:7.2f}  {rel}{flag}")
+    base=_ev(feats,m1,m2,y1,y2)
+    print(f"\n=== 재검: 전체 vs 정상대비만 (기준 26 S={base:.4f}) ===")
+    rows=[("26+repol전체",np.concatenate([feats,Xr],1)),
+          ("26+repol정상대비만",np.concatenate([feats,Xr[:,_REL_IDX]],1))]
+    Xw=globals().get("_WST",None); Xm=globals().get("_MORPHO",None)
+    if Xw is not None and Xm is not None:
+        Xwk=np.nan_to_num(SelectKBest(f_classif,k=40).fit(np.nan_to_num(Xw[m1]),y1).transform(np.nan_to_num(Xw)))
+        WM=np.concatenate([feats,Xwk,Xm],1)
+        rows+=[("26+WST+morpho",WM),
+               ("  +repol전체",np.concatenate([WM,Xr],1)),
+               ("  +repol정상대비만",np.concatenate([WM,Xr[:,_REL_IDX]],1))]
+    for nm,X in rows:
+        S=_ev(X,m1,m2,y1,y2); print(f"  {nm:20s}: S={S:.4f}  (증분 {S-base:+.4f})")
+    print("\n  → 절대 특징이 고단변량인데 이동도 크면: 단변량은 함정, 정상대비만 남기면 덜 깎임.")
+    return Xr
