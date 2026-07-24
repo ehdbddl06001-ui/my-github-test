@@ -2,15 +2,15 @@
 #  colab_prep_all.py  —  전체 특징군 복원/준비 마스터 (GPU 교체·런타임 재시작 대비)
 #
 #  지금까지의 모든 특징군을 한 방에 계산해 Drive(synergy_feats/*.npy)에 영속화한다.
-#  전부 CPU(numpy/kymatio) — GPU 무관. GPU는 이후 sweep의 CNN training에만 필요.
+#  대부분 CPU(numpy/kymatio). AE만 GPU 학습(~1-2분). GPU 없어도 나머진 다 됨.
 #  이미 있는 .npy는 스킵(재개가능) → 재실행 싸다. 다음 '고정백본 시너지 sweep'의 준비물.
 #
 #  포함 군: [기존10] WST40 MORPHO REPOL4 DTW SEGDEV VCG PWAVE XLEAD DENOISE MF
-#          [신규 ] RHYTHM(10, 리듬 innovation) NOISE(7, 잔차 노이즈성격)
+#          [신규 ] RHYTHM(10) NOISE(7) KOOPMAN(5) AE(5) GNN(5)
 #  + 코어 캐시(_WST,_MORPHO,_REPOL,_DTW)를 globals에 세팅(레거시 단일스텝 호환).
 #
 #  전제(Drive에 함께 있어야): colab_step47_synergy.py, colab_step49_rhythm2.py,
-#                          colab_step50_noise.py, colab_recover.py + 추출기 소스들
+#                          colab_step50_noise.py, colab_step52_newfeats.py, colab_recover.py + 추출기 소스들
 #  실행(새 런타임에서 1줄):
 #    exec(open('/content/drive/MyDrive/mitbih/colab_prep_all.py').read())
 #    # → "✔ 전체 복원 완료" + 군별 차원 매니페스트. 이후 sweep 바로.
@@ -51,6 +51,20 @@ def prep_all(force=False):
             N=g["extract_noise_features"](beats,pid,y)
             np.save(f"{_FEATDIR}/NOISE.npy", np.nan_to_num(N).astype("float32")); print(f"  NOISE 저장 dim={N.shape[1]}")
     else: print("  NOISE 캐시 있음")
+
+    # ── 3.5) 신규 3군: KOOPMAN(CPU)·GNN(CPU)·AE(GPU 학습 ~1-2분) ──
+    print("[3.5/4] 신규 3군 KOOPMAN·AE·GNN...")
+    need3=any(_need(k,force) for k in ("KOOPMAN","AE","GNN"))
+    if need3 and _exec("colab_step52_newfeats.py", g):
+        if _need("KOOPMAN",force):
+            K=g["extract_koopman_features"](beats,pid,y); np.save(f"{_FEATDIR}/KOOPMAN.npy",np.nan_to_num(K).astype("float32")); print(f"  KOOPMAN dim={K.shape[1]}")
+        else: print("  KOOPMAN 캐시 있음")
+        if _need("GNN",force):
+            Gn=g["extract_gnn_features"](beats,pid,y); np.save(f"{_FEATDIR}/GNN.npy",np.nan_to_num(Gn).astype("float32")); print(f"  GNN dim={Gn.shape[1]}")
+        else: print("  GNN 캐시 있음")
+        if _need("AE",force):
+            print("  AE 학습(GPU 권장, ~1-2분)..."); Ae=g["extract_ae_features"](beats,y,pid); np.save(f"{_FEATDIR}/AE.npy",np.nan_to_num(Ae).astype("float32")); print(f"  AE dim={Ae.shape[1]}")
+        else: print("  AE 캐시 있음")
 
     # ── 4) 코어 캐시 globals 세팅(_WST 등) : colab_recover 재사용(레거시 단일스텝 호환) ──
     print("[4/4] 코어 캐시 globals(_WST,_MORPHO,_REPOL,_DTW) 세팅...")
