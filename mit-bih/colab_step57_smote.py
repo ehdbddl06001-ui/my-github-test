@@ -28,11 +28,11 @@ def auto_weights(y1,beta=0.9999):
     nN=(y1==0).sum(); nS=max((y1==1).sum(),1); eff=lambda n:(1-beta)/(1-beta**n+1e-12); return float(eff(nS)/eff(nN))
 def _Lnpy(n):
     p=f"{_FEATDIR}/{n}.npy"; return np.load(p) if os.path.exists(p) else None
-def _bestF():
+def _bestF(fams=("RHYTHM","KOOPMAN","GNN")):
     d=np.load(f"{_BASE}/mamba_data.npz"); beats,y,pid=d["beat"],d["y"],d["pid"]
-    BB=[_Lnpy(n) for n in ["feats0","WST","MORPHO","REPOL","DTW","RHYTHM","KOOPMAN","GNN"]]
+    BB=[_Lnpy(n) for n in ["feats0","WST","MORPHO","REPOL","DTW"]+list(fams)]
     if any(x is None for x in BB): raise RuntimeError("캐시 없음 → colab_prep_all.py 먼저")
-    return beats,y,pid,np.concatenate(BB,1).astype("float32")
+    return beats,y,pid,np.concatenate(BB,1).astype("float32"),"+".join(fams)
 
 def _smote(kind, Xs, b, r, fr, ysub, k=5, mult=2, rng=None):
     """DS1-train 안에서 S 합성. Xs=이웃탐색용(스케일특징), b/r/fr=파형/기준/원특징, ysub=라벨."""
@@ -81,12 +81,12 @@ def _net(fdim):
             return s.cls(torch.cat([z,zp,s.fm(ft)],-1))
     return Net()
 
-def run_smote(seeds=None, mult=2):
+def run_smote(fams=("RHYTHM","KOOPMAN","GNN"), seeds=None, mult=2):
     import torch, torch.nn as nn, torch.nn.functional as Fn
     from sklearn.preprocessing import RobustScaler
     from sklearn.model_selection import GroupShuffleSplit
     seeds=seeds or list(range(2000,2015)); dev="cuda" if torch.cuda.is_available() else "cpu"
-    beats,y,pid,BEST=_bestF(); ref=np.empty_like(beats)
+    beats,y,pid,BEST,bb=_bestF(fams); print(f"백본: {bb}"); ref=np.empty_like(beats)
     for p in np.unique(pid): m=pid==p; ref[m]=np.median(beats[m],0,keepdims=True)
     ref=ref.astype("float32"); m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y2=y[m2]
     Sw=auto_weights(y[m1]); nc=np.array([(y[m1]==k).sum() for k in range(3)],np.float32); mc=(1.0/np.power(nc,0.25)); mc=(mc/mc.max()*0.5).astype("float32")
@@ -138,3 +138,10 @@ def run_smote(seeds=None, mult=2):
         print(f"  {kind:12s}: ΔS={S-b[0]:+.4f} ΔPREC={pr-b[1]:+.3f} ΔSEN={se-b[2]:+.3f} ΔF1={f1-b[3]:+.3f}")
     print(f"\n  ★ ΔSEN>0 & F1↑ = subtle S 합성이 경계학습에 도움. borderline이 특히 subtle 겨냥.")
     return res
+
+# 여러 백본 한 번에 (균형형 / 정밀형 / 4가지)
+def run_smote_backbones(seeds=None, mult=2):
+    R={}
+    for fams in [("RHYTHM","KOOPMAN","GNN"),("KOOPMAN","AE","GNN"),("RHYTHM","KOOPMAN","AE","GNN")]:
+        print("\n"+"="*58); R["+".join(fams)]=run_smote(fams,seeds,mult)
+    return R

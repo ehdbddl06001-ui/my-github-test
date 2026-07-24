@@ -57,15 +57,16 @@ def extract_atrial_features(beats, pid, y=None):
         F[idx,5]=rVM[:,Ps:Pe].max(1)/(rVM[:,Ps:Pe].mean(1)+eps)     # P잔차 집중도(구조=피크성)
     return np.nan_to_num(F,posinf=0,neginf=0).astype("float32")
 
-def _bestF():
+def _bestF(fams=("RHYTHM","KOOPMAN","GNN")):
     d=np.load(f"{_BASE}/mamba_data.npz"); beats,feats0,y,pid=d["beat"],d["feats"],d["y"],d["pid"]
-    BB=[_Lnpy(n) for n in ["feats0","WST","MORPHO","REPOL","DTW","RHYTHM","KOOPMAN","GNN"]]
+    cols=["feats0","WST","MORPHO","REPOL","DTW"]+list(fams)
+    BB=[_Lnpy(n) for n in cols]
     if any(x is None for x in BB): raise RuntimeError("캐시 없음 → colab_prep_all.py 먼저")
-    BEST=np.concatenate(BB,1).astype("float32")                     # 백본 + RHYTHM+KOOPMAN+GNN
-    return beats,y,pid,BEST
+    return beats,y,pid,np.concatenate(BB,1).astype("float32"),"+".join(fams)
 
-def diag_atrial():
-    beats,y,pid,BEST=_bestF(); m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y1,y2=y[m1],y[m2]
+def diag_atrial(fams=("RHYTHM","KOOPMAN","GNN")):
+    beats,y,pid,BEST,bb=_bestF(fams); print(f"백본: {bb}")
+    m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y1,y2=y[m1],y[m2]
     print("심방(P) 잔차 계산..."); A=extract_atrial_features(beats,pid,y)
     def ev(X):
         sc=StandardScaler().fit(np.nan_to_num(X[m1])); X1=np.nan_to_num(sc.transform(np.nan_to_num(X[m1]))); X2=np.nan_to_num(sc.transform(np.nan_to_num(X[m2])))
@@ -105,16 +106,16 @@ def _net(fdim):
             return s.cls(torch.cat([z,zp,s.fm(ft)],-1))
     return Net()
 
-def run_atrial_cnn(seeds=None):
+def run_atrial_cnn(fams=("RHYTHM","KOOPMAN","GNN"), seeds=None):
     import torch, torch.nn as nn, torch.nn.functional as Fn
     from sklearn.preprocessing import RobustScaler
     from sklearn.model_selection import GroupShuffleSplit
     seeds=seeds or list(range(2000,2015)); dev="cuda" if torch.cuda.is_available() else "cpu"
-    beats,y,pid,BEST=_bestF(); A=extract_atrial_features(beats,pid,y); ref=np.empty_like(beats)
+    beats,y,pid,BEST,bb=_bestF(fams); print(f"백본: {bb}"); A=extract_atrial_features(beats,pid,y); ref=np.empty_like(beats)
     for p in np.unique(pid): m=pid==p; ref[m]=np.median(beats[m],0,keepdims=True)
     ref=ref.astype("float32"); m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y2=y[m2]
     Sw=auto_weights(y[m1]); nc=np.array([(y[m1]==k).sum() for k in range(3)],np.float32); mc=(1.0/np.power(nc,0.25)); mc=(mc/mc.max()*0.5).astype("float32")
-    CFG={"best(RKG)":BEST, "best+심방잔차":np.concatenate([BEST,A],1).astype("float32")}
+    CFG={f"[{bb}]":BEST, f"[{bb}]+심방잔차":np.concatenate([BEST,A],1).astype("float32")}
     def met(p,yy): return (average_precision_score((yy==1).astype(int),p[:,1]),average_precision_score((yy==2).astype(int),p[:,2]))
     @torch.no_grad()
     def pred(M,b,r,ft):
@@ -148,7 +149,14 @@ def run_atrial_cnn(seeds=None):
     for nm,F in CFG.items():
         Pt=trim(np.stack([train_one(F,s) for s in seeds],0)); S,V=met(Pt,y2); pr,se,f1=_f1(y2,Pt[:,1]); res[nm]=(S,pr,se,f1)
         print(f"  {nm:16s} S={S:.4f} PREC={pr:.3f} SEN={se:.3f} F1={f1:.3f}")
-    b=res["best(RKG)"]; a=res["best+심방잔차"]
+    b=res[f"[{bb}]"]; a=res[f"[{bb}]+심방잔차"]
     print(f"\n▶ ΔS={a[0]-b[0]:+.4f} ΔPREC={a[1]-b[1]:+.3f} ΔSEN={a[2]-b[2]:+.3f} ΔF1={a[3]-b[3]:+.3f}")
     print(f"  ★ ΔSEN>0 이면서 PREC 유지 = 심방잔차가 subtle S를 잡아 민감도 회복(Pareto 개선).")
     return res
+
+# 여러 백본 한 번에 비교 (균형형 / 정밀형 / 4가지)
+def run_atrial_backbones(seeds=None):
+    R={}
+    for fams in [("RHYTHM","KOOPMAN","GNN"),("KOOPMAN","AE","GNN"),("RHYTHM","KOOPMAN","AE","GNN")]:
+        print("\n"+"="*58); R["+".join(fams)]=run_atrial_cnn(fams,seeds)
+    return R
