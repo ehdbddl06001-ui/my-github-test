@@ -41,22 +41,30 @@ cells = [
 
 허가초과 근거 문서 생성 · 임상시험 적격성 검토 프로토타입을 **내 Gemini API 키**로 실제 동작시킨다.
 
-**흐름**: ①필요 패키지 설치 → ②백엔드/프론트 파일 기록 → ③Gemini API 키 입력 → ④서버 실행(cloudflared 공개 URL) → 출력된 `https://....trycloudflare.com` 링크를 새 탭에서 열면 끝.
+**흐름**: ⓪초기화 → ①설치 → ②파일 기록 → ③Gemini 키 입력 → ④서버 실행(cloudflared URL).
 
-> ⚠️ 문헌/수치/임상시험은 Gemini가 생성한 초안이라 실제 출판물과 다를 수 있습니다. 데모/프로토타입 용도이며, 인용·제출 전 반드시 원문 대조·전문가 검증이 필요합니다.
+> ⚠️ 문헌/수치/임상시험은 Gemini가 생성한 초안이라 실제 출판물과 다를 수 있습니다. 인용·제출 전 반드시 원문 대조·전문가 검증이 필요합니다.
+
+> 🔴 **다른 앱(TrialMatch)과 안 섞이게** — 이 앱은 전용 폴더(`oncoreg_ai/`), 전용 모듈명
+> (`oncoreg_app`), 전용 포트(8000)를 씁니다. 그래도 한 런타임에서 여러 앱을 돌렸다면
+> **런타임 → 세션 다시 시작** 후 이 노트북만 위에서부터 실행하는 게 가장 확실합니다.
+"""),
+    md("## 0) 초기화 — 이전에 돌린 다른 앱의 캐시/포트 정리"),
+    code("""# 같은 런타임에서 다른 앱을 돌렸다면, 파이썬이 캐시한 옛 모듈이 그대로 다시 뜨는 걸 막는다.
+import sys
+for _m in ['server', 'oncoreg_app', 'trialmatch_app']:
+    sys.modules.pop(_m, None)
+print('모듈 캐시 정리 완료. (포트가 이미 사용 중이면 런타임 다시 시작을 권장)')
 """),
     md("## 1) 패키지 설치"),
     code("!pip -q install google-genai flask flask-cors flask-cloudflared pydantic\n"),
-    md("## 2) 백엔드(server.py)와 프론트(templates/index.html) 기록"),
-    code("import os; os.makedirs('templates', exist_ok=True); print('templates/ 준비 완료')\n"),
-    writefile_cell("server.py", server_src),
-    writefile_cell("templates/index.html", html_src),
+    md("## 2) 백엔드/프론트 파일 기록 (전용 폴더 `oncoreg_ai/`)"),
+    code("import os; os.makedirs('oncoreg_ai/templates', exist_ok=True); print('oncoreg_ai/ 준비 완료')\n"),
+    writefile_cell("oncoreg_ai/oncoreg_app.py", server_src),
+    writefile_cell("oncoreg_ai/templates/index.html", html_src),
     md("""## 3) Gemini API 키 입력
 
-키 발급: <https://aistudio.google.com/app/apikey>
-
-아래 셀을 실행하면 입력창이 뜬다. (더 안전하게 하려면 Colab 왼쪽 🔑 '보안 비밀'에
-`GEMINI_API_KEY` 를 넣어두면 자동으로 읽는다.)"""),
+키 발급: <https://aistudio.google.com/app/apikey>  (왼쪽 🔑 '보안 비밀'에 `GEMINI_API_KEY` 저장도 가능)"""),
     code("""import os
 key = None
 try:
@@ -68,11 +76,8 @@ if not key:
     import getpass
     key = getpass.getpass('Gemini API Key 를 붙여넣고 Enter: ')
 os.environ['GEMINI_API_KEY'] = key.strip()
-
-# (선택) 모델 변경: gemini-2.5-flash(기본) / gemini-2.0-flash 등
 os.environ.setdefault('GEMINI_MODEL', 'gemini-2.5-flash')
 
-# 키가 살아있는지 빠른 확인
 from google import genai
 try:
     _ = genai.Client(api_key=os.environ['GEMINI_API_KEY']).models.list()
@@ -82,24 +87,24 @@ except Exception as e:
 """),
     md("""## 4) 서버 실행 → 공개 URL 받기
 
-실행하면 잠시 뒤 `https://....trycloudflare.com` 형태의 주소가 출력된다.
-**그 주소를 새 탭에서 열면** HTML 화면이 뜨고, '검색' 버튼이 내 Gemini 로 실제 동작한다.
-
-- 이 셀은 서버라서 **계속 실행 상태로 둔다**(멈추면 서버도 꺼짐). 중지하려면 ⏹️.
-- cloudflared 가 막히면 아래 '대안: Colab 내장 프록시' 셀을 쓴다."""),
-    code("""from server import create_app
+출력되는 `https://....trycloudflare.com` 주소를 새 탭에서 열면 이 앱(OncoReg)이 뜬다.
+이 셀은 서버라 **계속 실행 상태로 둔다**(중지: ⏹️)."""),
+    code("""import sys
+sys.path.insert(0, 'oncoreg_ai')          # 전용 폴더에서 import
+sys.modules.pop('oncoreg_app', None)      # 캐시된 옛 모듈 제거 후 최신 파일로 로드
+from oncoreg_app import create_app
 from flask_cloudflared import run_with_cloudflared
 
 app = create_app()
-run_with_cloudflared(app)      # 공개 URL 을 만들어 콘솔에 출력
-app.run(port=8000)             # 이 줄에서 서버가 계속 돈다 (아래 출력의 trycloudflare 주소 사용)
+print('>>> 실행 중인 앱: OncoReg AI (oncoreg_app, port 8000)')
+run_with_cloudflared(app)
+app.run(port=8000)
 """),
-    md("""### (대안) cloudflared 가 안 될 때 — Colab 내장 프록시
-
-위 셀 대신 아래를 실행한다. 별도 설치 없이 Colab 이 만들어 주는 링크로 접속한다.
-(프론트의 fetch 는 상대경로라 이 프록시에서도 그대로 동작한다.)"""),
-    code("""import threading
-from server import create_app
+    md("""### (대안) cloudflared 가 안 될 때 — Colab 내장 프록시"""),
+    code("""import sys, threading
+sys.path.insert(0, 'oncoreg_ai')
+sys.modules.pop('oncoreg_app', None)
+from oncoreg_app import create_app
 app = create_app()
 threading.Thread(target=lambda: app.run(port=8000, use_reloader=False), daemon=True).start()
 
