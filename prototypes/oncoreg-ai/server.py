@@ -216,12 +216,15 @@ def sanitize_result(d: dict) -> dict:
     trials = d.get("trials") or []
 
     valid_ids = {p.get("id") for p in papers}
-    # src 가 없는 지표 제거, 키 중복 제거
+    default_src = papers[0].get("id") if papers else None
+    # src 가 유효하지 않으면 버리지 말고 대표(첫) 논문으로 보정 → 지표가 통째로 사라지는 것 방지
     seen_k = set()
     clean_metrics = []
     for m in metrics:
         if m.get("src") not in valid_ids:
-            continue
+            if default_src is None:
+                continue
+            m["src"] = default_src
         k = m.get("k") or f"M{len(clean_metrics)}"
         if k in seen_k:
             k = f"{k}_{len(clean_metrics)}"
