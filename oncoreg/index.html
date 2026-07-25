@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OncoReg AI — 근거 문서 생성 프로토타입 (Gemini 연동)</title>
+<style>
+:root{
+  --paper:#FBFAF7;--card:#FFF;--ink:#16181A;--muted:#6B6E73;--faint:#9A9C9F;
+  --rule:#E3DFD7;--rule2:#EFECE6;
+  --seal:#0E6E5E;--seal-bg:#E8F2EF;
+  --alert:#B03A2E;--alert-bg:#FBEEEC;
+  --trial:#5A4B8C;--trial-bg:#EEEBF5;
+  --mark:#FFF0B8;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"D2Coding",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Pretendard","Malgun Gothic","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px 80px}
+.demo{background:var(--alert-bg);border-bottom:1px solid #E9CFC9;padding:9px 28px;font-size:12.5px;color:#8A2F26;text-align:center}
+.demo b{font-weight:600}
+header{padding:30px 0 22px;border-bottom:1px solid var(--rule);margin-bottom:26px}
+.brand{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+.brand h1{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.brand .tag{font-size:12px;color:var(--muted);border-left:1px solid var(--rule);padding-left:11px}
+.brand .eng{font-size:11px;color:#fff;background:var(--seal);padding:2px 8px;border-radius:10px;font-family:var(--mono)}
+.brand .eng.off{background:var(--faint)}
+.kpi{margin-top:16px;display:flex;gap:26px;flex-wrap:wrap}
+.kpi div{font-size:12px;color:var(--muted)}
+.kpi b{font-family:var(--mono);font-size:16px;color:var(--ink);font-weight:600;margin-right:4px}
+.kpi .ok b{color:var(--seal)} .kpi .tr b{color:var(--trial)}
+nav{display:flex;margin-bottom:28px;border:1px solid var(--rule);border-radius:3px;overflow:hidden;background:var(--card)}
+nav button{flex:1;border:0;background:transparent;padding:13px 10px 13px 18px;font-family:inherit;font-size:13.5px;color:var(--faint);cursor:pointer;border-right:1px solid var(--rule);text-align:left}
+nav button:last-child{border-right:0}
+nav button:hover:not(:disabled){background:#FAF8F4}
+nav button:disabled{cursor:not-allowed;opacity:.55}
+nav button.on{background:var(--ink);color:#fff}
+nav button .n{font-family:var(--mono);font-size:11px;opacity:.65;display:block;margin-bottom:1px}
+nav button .t{font-weight:500}
+.panel{display:none}.panel.on{display:block}
+h2{font-size:16px;font-weight:600;margin-bottom:5px;letter-spacing:-.02em}
+.sub{font-size:13px;color:var(--muted);margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:3px;padding:22px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.f{margin-bottom:15px}
+.f label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}
+.f input,.f select{width:100%;padding:9px 11px;border:1px solid var(--rule);border-radius:3px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.f input:focus,.f select:focus{outline:2px solid var(--seal);outline-offset:-1px;border-color:transparent}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+button.go{background:var(--ink);color:#fff;border:0;border-radius:3px;padding:11px 22px;font-family:inherit;font-size:14px;font-weight:500;cursor:pointer}
+button.go:hover{background:#2C2F33} button.go:disabled{background:#C9C6C0;cursor:not-allowed}
+button.ghost{background:#fff;color:var(--ink);border:1px solid var(--rule);border-radius:3px;padding:9px 16px;font-family:inherit;font-size:13px;cursor:pointer}
+button.ghost:hover{background:#FAF8F4}
+.chk{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--rule);margin-bottom:16px}
+.tabs button{border:0;background:transparent;padding:9px 15px;font-family:inherit;font-size:13px;color:var(--faint);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button.on{color:var(--ink);border-bottom-color:var(--ink);font-weight:500}
+.tabs button .cnt{font-family:var(--mono);font-size:11px;margin-left:5px;opacity:.7}
+.simwrap{border:1px solid var(--rule);border-radius:3px;background:#fff;padding:14px 16px;margin-bottom:16px}
+.simwrap .sh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:11px}
+.simwrap .sh .t{font-size:12px;color:var(--muted);line-height:1.55}
+.simwrap .sh .t b{color:var(--ink)}
+.wt{display:grid;grid-template-columns:78px 1fr 30px;gap:10px;align-items:center;margin-bottom:5px}
+.wt label{font-size:12px;color:var(--ink)}
+.wt input[type=range]{width:100%;accent-color:var(--seal)}
+.wt .wv{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right}
+.paper{border:1px solid var(--rule);border-radius:3px;padding:14px 16px;margin-bottom:9px;background:#fff;cursor:pointer}
+.paper:hover{border-color:#C9C4BA}
+.paper.sel{border-color:var(--seal);background:var(--seal-bg)}
+.paper .top{display:flex;gap:11px;align-items:flex-start}
+.paper .cb{width:15px;height:15px;border:1.5px solid #B8B4AC;border-radius:2px;flex-shrink:0;margin-top:3px;position:relative;background:#fff}
+.paper.sel .cb{background:var(--seal);border-color:var(--seal)}
+.paper.sel .cb::after{content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(42deg)}
+.paper .ttl{font-size:14px;font-weight:500;line-height:1.45}
+.paper .meta{font-size:12px;color:var(--muted);margin-top:3px;font-family:var(--mono)}
+.paper .fit{display:inline-block;font-size:11px;padding:1px 7px;border-radius:2px;background:#F2EFE9;color:var(--muted);margin-top:7px}
+.paper.sel .fit{background:#fff;color:var(--seal)}
+.paper .simline{display:flex;align-items:center;gap:8px;margin-top:9px}
+.paper .simtrack{flex:1;height:5px;background:#EEEBE5;border-radius:3px;overflow:hidden}
+.paper .simfill{height:100%;background:var(--seal)}
+.paper .simsc{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--seal)}
+.paper .axes{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.paper .ax{font-size:10.5px;font-family:var(--mono);color:var(--muted);background:#F4F1EB;border-radius:2px;padding:1px 6px}
+.paper.sel .ax{background:#fff}
+.topmatch{display:inline-block;font-size:10.5px;color:#fff;background:var(--seal);border-radius:2px;padding:1px 6px;margin-left:6px;vertical-align:1px;font-weight:600}
+.m{border:1px solid var(--rule);border-radius:3px;background:#fff;margin-bottom:9px;overflow:hidden}
+.m .mh{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;gap:12px}
+.m .mname{font-size:13px;color:var(--muted)}
+.m .mval{font-family:var(--mono);font-size:19px;font-weight:600;cursor:pointer;border-bottom:2px dotted #C6C1B6;padding-bottom:1px}
+.m .mval:hover{border-bottom-color:var(--seal);color:var(--seal)}
+.m.act{border-color:var(--seal)} .m.act .mval{color:var(--seal);border-bottom-style:solid;border-bottom-color:var(--seal)}
+.m .mf{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-top:1px solid var(--rule2);background:#FCFBF9;font-size:12px}
+.m .src{color:var(--faint);font-family:var(--mono);font-size:11px}
+.vbtn{border:1px solid var(--rule);background:#fff;border-radius:2px;padding:3px 10px;font-family:inherit;font-size:11.5px;color:var(--muted);cursor:pointer}
+.vbtn:hover{border-color:var(--seal);color:var(--seal)}
+.vbtn.done{background:var(--seal-bg);border-color:var(--seal);color:var(--seal)}
+.tr{border:1px solid var(--rule);border-radius:3px;background:#fff;margin-bottom:10px;overflow:hidden;cursor:pointer}
+.tr:hover{border-color:#BCB4D0}
+.tr.act{border-color:var(--trial)}
+.tr .th{padding:13px 15px}
+.tr .tt{font-size:13.5px;font-weight:500;line-height:1.45}
+.tr .tm{font-size:11.5px;color:var(--muted);font-family:var(--mono);margin-top:4px}
+.tr .bar{display:flex;align-items:center;gap:9px;margin-top:10px}
+.tr .track{flex:1;height:5px;background:#EEEBE5;border-radius:3px;overflow:hidden}
+.tr .fill{height:100%;background:var(--trial)}
+.tr .pct{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--trial)}
+.tr .tf{padding:8px 15px;border-top:1px solid var(--rule2);background:#FCFBF9;font-size:11.5px;color:var(--muted)}
+.crit{padding:14px 15px;border-top:1px solid var(--rule2)}
+.crit .cl{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.04em;margin-bottom:7px}
+.crit ul{list-style:none}
+.crit li{font-size:12.5px;padding:3px 0 3px 20px;position:relative;line-height:1.55}
+.crit li.y::before{content:"✓";position:absolute;left:0;color:var(--seal);font-weight:600}
+.crit li.n::before{content:"—";position:absolute;left:0;color:var(--alert)}
+.crit li.q::before{content:"?";position:absolute;left:0;color:var(--faint);font-weight:600}
+.crit li.n{color:var(--alert)}
+.viewer{position:sticky;top:20px}
+.vempty{border:1px dashed var(--rule);border-radius:3px;padding:44px 24px;text-align:center;color:var(--faint);font-size:13px;background:#FCFBF9}
+.vbox{border:1px solid var(--rule);border-radius:3px;background:#fff;overflow:hidden}
+.vhead{padding:12px 16px;border-bottom:1px solid var(--rule);background:#FCFBF9}
+.vhead .vt{font-size:13px;font-weight:500}
+.vhead .vm{font-size:11px;color:var(--muted);font-family:var(--mono);margin-top:2px}
+.vbody{padding:16px}
+.vloc{font-size:11px;color:var(--faint);font-family:var(--mono);margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}
+.vtext{font-size:13.5px;line-height:1.85;color:#33363A}
+mark{background:var(--mark);padding:1px 2px;border-radius:1px;font-weight:500;color:var(--ink)}
+.vfoot{padding:11px 16px;border-top:1px solid var(--rule2);background:#FCFBF9;font-size:11.5px;color:var(--muted)}
+.doc{background:#fff;border:1px solid var(--rule);border-radius:3px;padding:44px 46px;font-size:13.5px;line-height:1.9}
+@media(max-width:700px){.doc{padding:26px 22px}}
+.doc .dh{text-align:center;padding-bottom:20px;border-bottom:2px solid var(--ink);margin-bottom:24px}
+.doc .dh h3{font-size:18px;font-weight:600;letter-spacing:.06em}
+.doc .dh .dnote{font-size:11.5px;color:var(--muted);margin-top:6px}
+.doc section{margin-bottom:22px}
+.doc h4{font-size:13px;font-weight:600;padding-bottom:5px;border-bottom:1px solid var(--rule);margin-bottom:9px}
+.doc table{width:100%;border-collapse:collapse;font-size:13px}
+.doc td{padding:6px 4px;vertical-align:top;border-bottom:1px solid var(--rule2)}
+.doc td:first-child{width:126px;color:var(--muted)}
+.cite{font-family:var(--mono);font-size:12px;font-weight:600;background:var(--seal-bg);color:var(--seal);padding:1px 5px;border-radius:2px;cursor:help}
+.cite.no{background:var(--alert-bg);color:var(--alert)}
+.ref{font-size:12px;color:var(--muted);padding-left:22px;text-indent:-22px;margin-bottom:5px;font-family:var(--mono)}
+.sign{margin-top:32px;padding-top:18px;border-top:1px solid var(--rule);display:flex;justify-content:flex-end;gap:36px;font-size:12.5px;color:var(--muted)}
+.sign span{border-bottom:1px solid var(--rule);padding:0 44px 3px}
+.warnbar{background:var(--alert-bg);border:1px solid #E9CFC9;border-radius:3px;padding:11px 15px;font-size:12.5px;color:#8A2F26;margin-bottom:16px}
+.okbar{background:var(--seal-bg);border:1px solid #C5DFD8;border-radius:3px;padding:11px 15px;font-size:12.5px;color:#0B5647;margin-bottom:16px}
+.trialbar{background:var(--trial-bg);border:1px solid #D3CCE6;border-radius:3px;padding:11px 15px;font-size:12.5px;color:#443A6B;margin-bottom:16px}
+.aibar{background:#EEF3FA;border:1px solid #CFDBEC;border-radius:3px;padding:11px 15px;font-size:12.5px;color:#2B4A73;margin-bottom:16px}
+.formhint{font-size:12px;color:var(--muted);background:#FCFBF9;border:1px solid var(--rule2);border-radius:3px;padding:9px 12px;margin-top:-6px;margin-bottom:15px;line-height:1.55}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid var(--rule);border-top-color:var(--ink);border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:7px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.spin{animation:none}}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);font-size:11.5px;color:var(--faint);line-height:1.7}
+</style>
+</head>
+<body>
+
+<div class="demo"><b>데모 화면입니다.</b> 표시되는 문헌 인용·수치·임상시험 정보는 <b>Gemini가 생성한 예시</b>이거나 시연용 예시이며 실제 출판물·공식 서식이 아닙니다. 인용·제출 용도로 사용할 수 없고, 반드시 원문 대조·전문가 검증이 필요합니다.</div>
+
+<div class="wrap">
+
+<header>
+  <div class="brand"><h1>OncoReg AI</h1><span class="tag">허가초과 근거 문서 생성 · 임상시험 적격성 검토</span><span class="eng off" id="engBadge" onclick="setBackend()" title="클릭: 라이브 Gemini 백엔드(Colab) URL 설정" style="cursor:pointer">엔진 확인 중…</span></div>
+  <div class="kpi">
+    <div class="ok"><b id="kTrace">—</b>출처 추적 가능 비율</div>
+    <div><b id="kVer">0/0</b>약사 검증 완료</div>
+    <div class="tr"><b id="kTrial">—</b>적격 가능 임상시험</div>
+    <div><b id="kTime">—</b>경과 시간</div>
+  </div>
+</header>
+
+<nav>
+  <button id="n1" class="on" onclick="go(1)"><span class="n">STEP 1</span><span class="t">케이스 입력</span></button>
+  <button id="n2" disabled onclick="go(2)"><span class="n">STEP 2</span><span class="t">유사 근거 · 시험 대조</span></button>
+  <button id="n3" disabled onclick="go(3)"><span class="n">STEP 3</span><span class="t">신청서 생성</span></button>
+</nav>
+
+<div class="panel on" id="p1">
+  <h2>검토 대상 케이스</h2>
+  <p class="sub">환자 식별정보는 입력하지 않습니다. 임상 조건만으로 가장 유사한 문헌과 임상시험 선정기준을 대조합니다.</p>
+  <div class="card">
+    <div class="row2">
+      <div class="f"><label>질환 유형</label>
+        <select id="fType" onchange="switchCase()">
+          <option value="onco">항암 — 유방암 (HER2-low)</option>
+          <option value="rare">희귀질환 — 전신성 경화증 관련 폐동맥고혈압</option>
+        </select></div>
+      <div class="f"><label>신청 서식 유형 (의약품 구분)</label>
+        <select id="fForm" onchange="switchForm()">
+          <option value="eff">효능·효과 초과 (일반 허가초과)</option>
+          <option value="orphan">희귀의약품 (희귀질환 대상)</option>
+          <option value="dose">추가 용량 의약품 (용법·용량 초과)</option>
+        </select></div>
+    </div>
+    <div class="formhint" id="formHint"></div>
+    <div class="row2">
+      <div class="f"><label>병기 / 상태</label><select id="fStage"></select></div>
+      <div class="f"><label>이전 치료 차수</label><select id="fLine"></select></div>
+    </div>
+    <div class="row2">
+      <div class="f"><label>주요 임상 지표</label><input id="fBio"></div>
+      <div class="f"><label>검토 약제</label><input id="fDrug"></div>
+    </div>
+    <div class="row2" id="doseFields" style="display:none">
+      <div class="f"><label>기존 허가 용량</label><input id="fApprovedDose" placeholder="예: 5.4 mg/kg, 3주 간격"></div>
+      <div class="f"><label>신청(증량) 용량</label><input id="fRequestDose" placeholder="예: 6.4 mg/kg, 3주 간격"></div>
+    </div>
+    <div class="f" id="orphanFields" style="display:none">
+      <label>국내 추정 환자 수 (희귀질환)</label><input id="fPrevalence" placeholder="예: 국내 약 200명 미만(추정)">
+    </div>
+    <div style="margin-top:18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+      <button class="go" id="btnSearch" onclick="search()">유사 근거 · 임상시험 검색</button>
+      <label class="chk"><input type="checkbox" id="useDemo"> 데모 데이터로 미리보기 (Gemini 호출 안 함)</label>
+      <span id="searchMsg" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p2">
+  <h2>유사 근거 추출 및 임상시험 대조</h2>
+  <p class="sub">논문은 환자 유사도 순으로 정렬됩니다. 수치를 클릭하면 원문이, 임상시험을 클릭하면 선정기준 대조가 표시됩니다.</p>
+  <div id="aiBanner"></div>
+  <div class="split">
+    <div>
+      <div class="tabs">
+        <button id="tb1" class="on" onclick="tab('lit')">유사 근거 문헌<span class="cnt" id="cLit"></span></button>
+        <button id="tb2" onclick="tab('trial')">임상시험<span class="cnt" id="cTrial"></span></button>
+      </div>
+      <div id="paneLit">
+        <div id="simWrap" style="display:none">
+          <div class="simwrap">
+            <div class="sh"><span class="t"><b>환자 유사도 가중치</b><br>이 환자와의 유사도로 논문을 정렬합니다. 무엇을 더 중요하게 볼지 슬라이더로 조절하면 즉시 재정렬됩니다.</span>
+              <button class="vbtn" onclick="resetWeights()">기본값</button></div>
+            <div id="weights"></div>
+          </div>
+        </div>
+        <div id="papers"></div>
+        <div id="metricsWrap" style="margin-top:24px;display:none">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:9px">추출된 지표</div>
+          <div id="metrics"></div>
+        </div>
+      </div>
+      <div id="paneTrial" style="display:none">
+        <div style="font-size:12px;color:var(--muted);margin-bottom:10px">공개 임상시험 등록정보 대조 결과 · 부합률순</div>
+        <div id="trials"></div>
+        <div style="font-size:11.5px;color:var(--faint);margin-top:12px;line-height:1.6">
+          본 화면은 의료진의 검토를 돕기 위한 참고 정보이며, 대상자 모집과 참여 결정은 각 임상시험 실시기관의 절차에 따릅니다.
+        </div>
+      </div>
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--rule)">
+        <button class="go" id="btnDoc" onclick="makeDoc()" disabled>신청서 생성</button>
+        <span id="docMsg" style="font-size:12.5px;color:var(--muted);margin-left:10px"></span>
+      </div>
+    </div>
+    <div class="viewer" id="viewer">
+      <div class="vempty">지표 수치 또는 임상시험을 클릭하면<br>상세 내용이 여기에 표시됩니다</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p3">
+  <h2>신청서 초안</h2>
+  <p class="sub">선택한 서식에 맞춰 섹션이 구성됩니다. 모든 인용 수치에 출처가 결합되고, 미검증 항목은 붉게 표시됩니다.</p>
+  <div id="docBar"></div>
+  <div style="margin-bottom:14px;display:flex;gap:9px;flex-wrap:wrap">
+    <button class="ghost" onclick="window.print()">인쇄 / PDF 저장</button>
+    <button class="ghost" onclick="go(2)">근거 화면으로</button>
+  </div>
+  <div class="doc" id="doc"></div>
+</div>
+
+<footer>
+  본 화면은 2026 MEDI:ON 창업 프로그램 제출용 프로토타입입니다. 서식 항목 구성은 공개된 절차 안내를 참고해 구성한 것으로 실제 심의 서식과 다를 수 있으며, 실제 서식 확보 시 항목 정의만 교체하면 동일한 흐름으로 동작하도록 설계했습니다.<br>
+  검색·유사도 평가·문서 생성은 Google Gemini API로 수행되는 시연이며, 결과는 AI가 생성한 초안으로 실제 출판물과 다를 수 있습니다. 본 도구는 환자를 직접 모집하지 않습니다. 최종 판단과 서명은 약사·의사가 수행하며, 진단이나 치료 방침을 판정하지 않습니다.
+</footer>
+</div>
+
+<script>
+// 유사도 축 정의 + 기본 가중치(합=1). 백엔드가 weights 를 주면 덮어씀.
+const AXES=[["disease","질환/암종"],["biomarker","임상지표"],["stage","병기"],["line","치료차수"],["drug","약제"]];
+const DEFAULT_WEIGHTS={disease:.30,biomarker:.25,stage:.15,line:.15,drug:.15};
+let WEIGHTS={...DEFAULT_WEIGHTS};
+
+const FORM_HINT={
+ eff:"효능·효과 초과: 허가된 적응증을 벗어난 사용. 유효성 근거 + 대체요법 검토 중심으로 서식을 구성합니다.",
+ orphan:"희귀의약품: 대상 환자가 적어 근거가 제한적. '대체치료 부재', '국내외 허가·공급 현황' 섹션이 추가됩니다.",
+ dose:"추가 용량 의약품: 허가된 용법·용량 초과. '용량 설정 근거', '기존 용량 대비 이익-위해 평가' 섹션으로 바뀝니다."
+};
+const PROSE_FALLBACK={
+ reason:"대상 환자는 표준치료가 소진된 상태로 대체 가능한 급여 약제가 제한적이다. 아래 임상 근거에 따라 해당 요법의 유효성과 안전성이 확인되어 허가범위 초과 사용을 신청한다.",
+ alternatives:"현재 급여 적용되는 대체 요법은 본 환자군에서 반응이 제한적으로 보고되어, 위 요법 대비 임상적 이익이 낮은 것으로 판단된다.",
+ unmet_need:"본 질환은 대상 환자가 적고 확립된 표준요법이 부족하여, 현재 국내에서 사용 가능한 대체치료가 매우 제한적이다.",
+ approval_status:"해당 약제는 국외에서 유사 적응증에 사용된 근거가 보고되어 있으며, 국내에서는 허가범위를 초과하는 사용에 해당한다.",
+ dose_rationale:"신청 용량은 공개된 용량-반응 근거에 비추어 유효성 개선이 기대되는 범위이며, 기존 허가 용량으로는 반응이 불충분하였다.",
+ benefit_risk:"증량에 따른 기대 이익이 용량 관련 이상반응 위험을 상회하는 것으로 판단되며, 아래 모니터링·감량 기준으로 위해를 관리한다."
+};
+
+const CASES={
+ onco:{stage:["전이성 (4기)","국소진행성"],line:["2차 이상 (표준치료 소진)","1차"],
+   bio:"HER2 IHC 1+, HR 양성",drug:"트라스투주맙 데룩스테칸 (T-DXd)",
+   defaultForm:"eff",approvedDose:"5.4 mg/kg, 3주 간격",requestDose:"6.4 mg/kg, 3주 간격",prevalence:"",
+   papers:[
+    {id:1,t:"HER2-low 전이성 유방암에서 항체-약물 접합체 3상 연구",j:"N Engl J Med",y:2022,n:557,fit:"암종·바이오마커·치료차수 일치",sim:{disease:95,biomarker:92,stage:88,line:90,drug:96}},
+    {id:2,t:"HER2 저발현 유방암 하위군 분석",j:"Lancet Oncol",y:2023,n:373,fit:"하위군 조건 일치",sim:{disease:90,biomarker:96,stage:78,line:74,drug:82}},
+    {id:3,t:"ADC 관련 간질성 폐질환 통합 분석",j:"J Clin Oncol",y:2023,n:1150,fit:"안전성 지표 보완",sim:{disease:72,biomarker:45,stage:55,line:48,drug:90}},
+    {id:4,t:"진행성 유방암 진료 권고안 — 항HER2 항목",j:"진료지침",y:2024,n:null,fit:"권고 등급 근거",sim:{disease:84,biomarker:68,stage:70,line:66,drug:78}}],
+   metrics:[
+    {k:"ORR",label:"객관적 반응률",val:"52.6%",src:1,loc:"Results · 2번째 문단",
+     pre:"Among patients with hormone receptor–positive disease, ",mark:"the confirmed objective response rate was 52.6%",post:" in the antibody–drug conjugate group, as compared with 16.3% in the chemotherapy group."},
+    {k:"PFS",label:"무진행생존기간 (중앙값)",val:"10.1개월",src:1,loc:"Results · Table 2",
+     pre:"In the hormone receptor–positive cohort, ",mark:"median progression-free survival was 10.1 months",post:" versus 5.4 months with physician's-choice chemotherapy."},
+    {k:"HR",label:"위험비 (95% CI)",val:"0.51 (0.40–0.64)",src:1,loc:"Results · Table 2",
+     pre:"The hazard ratio for disease progression or death was ",mark:"0.51 (95% CI, 0.40 to 0.64)",post:", P<0.001, favoring the study arm."},
+    {k:"AE",label:"간질성 폐질환 (전등급)",val:"12.1%",src:3,loc:"Safety · 3번째 문단",
+     pre:"Adjudicated drug-related interstitial lung disease occurred in ",mark:"12.1% of patients (any grade)",post:", with grade 5 events in 0.8%."}],
+   trials:[
+    {id:"T-01",t:"HER2 저발현 진행성 유방암에서 신규 ADC 병용요법의 유효성 평가",ph:"2상",site:"국내 4개 기관",pct:86,
+     crit:[["y","전이성 유방암 확진"],["y","HER2 IHC 1+ 또는 2+ / ISH 음성"],["y","이전 전신치료 1개 요법 이상"],["q","ECOG 수행능력 0–1 — 확인 필요"],["n","최근 6개월 내 활동성 간질성 폐질환 없음"]]},
+    {id:"T-02",t:"호르몬수용체 양성 진행성 유방암 대상 표적치료 병용 3상",ph:"3상",site:"국내 9개 기관",pct:64,
+     crit:[["y","HR 양성"],["y","전이성 확진"],["n","이전 CDK4/6 억제제 치료력 필요"],["q","측정 가능 병변 존재 — 영상 확인 필요"]]}]},
+
+ rare:{stage:["WHO 기능분류 III","WHO 기능분류 II"],line:["3제 병용 후 반응 불충분","2제 병용 중"],
+   bio:"6분 보행거리 320m, NT-proBNP 상승",drug:"경구용 프로스타사이클린 수용체 작용제",
+   defaultForm:"orphan",approvedDose:"200 µg 1일 2회",requestDose:"400 µg 1일 2회",prevalence:"국내 약 200명 미만(추정)",
+   papers:[
+    {id:1,t:"결합조직질환 관련 폐동맥고혈압 환자의 병용요법 확대 연구",j:"Eur Respir J",y:2023,n:112,fit:"질환군·치료단계 일치",sim:{disease:93,biomarker:88,stage:85,line:80,drug:92}},
+    {id:2,t:"전신성 경화증 관련 폐동맥고혈압 다기관 사례군 보고",j:"Chest",y:2022,n:34,fit:"희귀 하위군 · 사례군",sim:{disease:90,biomarker:75,stage:70,line:72,drug:70}},
+    {id:3,t:"폐동맥고혈압 진료지침 — 병용요법 권고",j:"진료지침",y:2024,n:null,fit:"권고 등급 근거",sim:{disease:82,biomarker:65,stage:68,line:60,drug:75}},
+    {id:4,t:"단일기관 후향적 코호트 — 3제 병용 전환 경험",j:"J Rheum Dis",y:2023,n:18,fit:"국내 사례 · 근거수준 낮음",sim:{disease:78,biomarker:62,stage:66,line:85,drug:68}}],
+   metrics:[
+    {k:"6MWD",label:"6분 보행거리 변화",val:"+38m",src:1,loc:"Results · Table 3",
+     pre:"At week 24, patients receiving add-on therapy showed ",mark:"a mean improvement of 38 metres in six-minute walk distance",post:" compared with baseline (p=0.01)."},
+    {k:"PVR",label:"폐혈관저항 감소",val:"-21%",src:1,loc:"Results · 4번째 문단",
+     pre:"Haemodynamic assessment demonstrated ",mark:"a 21% reduction in pulmonary vascular resistance",post:" in the treatment group at week 24."},
+    {k:"CASE",label:"증례 반응률 (사례군)",val:"14/34명",src:2,loc:"Case series · Table 1",
+     pre:"Clinical improvement was observed in ",mark:"14 of 34 patients (41%)",post:" with connective tissue disease–associated pulmonary arterial hypertension."},
+    {k:"AE",label:"주요 이상반응 (두통)",val:"29%",src:1,loc:"Safety · Table 4",
+     pre:"The most frequently reported adverse event was headache, occurring in ",mark:"29% of treated patients",post:", generally mild to moderate in severity."}],
+   trials:[
+    {id:"T-11",t:"결합조직질환 관련 폐동맥고혈압 환자 대상 신규 경구제 3상 임상시험",ph:"3상",site:"국내 6개 기관",pct:92,
+     crit:[["y","결합조직질환 관련 폐동맥고혈압 확진"],["y","WHO 기능분류 II–III"],["y","6분 보행거리 150–450m"],["y","기존 치료 3개월 이상 유지"],["q","우심도자 검사 12개월 이내 — 시행일 확인 필요"]]},
+    {id:"T-12",t:"희귀 폐혈관질환 환자 레지스트리 기반 관찰연구",ph:"관찰연구",site:"국내 12개 기관",pct:78,
+     crit:[["y","희귀 폐혈관질환 진단"],["y","연령 19세 이상"],["q","정기 추적 가능 여부 확인 필요"],["n","타 중재연구 동시 참여 불가"]]},
+    {id:"T-13",t:"전신성 경화증 표적치료제 확장 적응증 2상",ph:"2상",site:"국내 3개 기관",pct:55,
+     crit:[["y","전신성 경화증 확진"],["n","폐동맥고혈압 동반 시 제외"],["q","피부 침범 점수 기준 확인 필요"]]}]}
+};
+let C=JSON.parse(JSON.stringify(CASES.onco)),selected=[],verified=[],active=null,curTab='lit',t0=null,timer=null,trialSel=[],aiMode=false;
+
+// --- 백엔드 URL 설정 (정적 호스팅=GitHub Pages 에서도 Colab 백엔드에 연결) -------
+let API_BASE=(localStorage.getItem('oncoreg_api')||'').replace(/\/+$/,'');
+const api=p=>API_BASE?API_BASE+'/'+p:p;   // 비어있으면 상대경로(같은 서버)로 동작
+function setBackend(){
+  const cur=localStorage.getItem('oncoreg_api')||'';
+  const u=prompt('라이브 Gemini를 쓰려면 실행 중인 백엔드 URL을 입력하세요.\n(Colab의 https://….trycloudflare.com 또는 http://localhost:8000)\n비우면 데모(샘플) 모드로 동작합니다.',cur);
+  if(u===null)return;
+  API_BASE=u.trim().replace(/\/+$/,'');
+  localStorage.setItem('oncoreg_api',API_BASE);
+  document.getElementById('searchMsg').textContent=API_BASE?('백엔드 설정됨 · '+API_BASE):'데모 모드로 전환됨';
+  checkEngine();
+}
+
+// --- 유사도 계산: 축별 점수 × 가중치 (가중치 합으로 정규화) -------------------
+function paperScore(p){
+  if(!p.sim)return 0;
+  let ws=0,s=0;
+  for(const[a] of AXES){const w=WEIGHTS[a]||0;ws+=w;s+=w*(p.sim[a]??0);}
+  return ws?Math.round(s/ws):0;
+}
+function sortedPapers(){return [...C.papers].sort((a,b)=>paperScore(b)-paperScore(a));}
+
+// --- 백엔드 상태 확인 -------------------------------------------------------
+async function checkEngine(){
+  const badge=document.getElementById('engBadge');
+  try{
+    const r=await fetch(api('api/health'));const h=await r.json();
+    if(h.key_present){badge.textContent='Gemini · '+h.model;badge.classList.remove('off');}
+    else{badge.textContent='엔진 연결됨 · API 키 없음';badge.classList.add('off');}
+  }catch(e){
+    badge.textContent='백엔드 없음 (데모 모드)';badge.classList.add('off');
+    document.getElementById('useDemo').checked=true;
+  }
+}
+
+function val(id){return document.getElementById(id).value;}
+function typeText(){return document.getElementById('fType').selectedOptions[0].text;}
+function formType(){return document.getElementById('fForm').value;}
+
+function switchCase(){
+  const k=document.getElementById('fType').value;C=JSON.parse(JSON.stringify(CASES[k]||CASES.onco));
+  document.getElementById('fStage').innerHTML=C.stage.map(x=>`<option>${x}</option>`).join('');
+  document.getElementById('fLine').innerHTML=C.line.map(x=>`<option>${x}</option>`).join('');
+  document.getElementById('fBio').value=C.bio;
+  document.getElementById('fDrug').value=C.drug;
+  document.getElementById('fForm').value=C.defaultForm||'eff';
+  document.getElementById('fApprovedDose').value='';
+  document.getElementById('fRequestDose').value='';
+  document.getElementById('fPrevalence').value='';
+  switchForm();
+  selected=[];verified=[];trialSel=[];active=null;
+  document.getElementById('n2').disabled=true;document.getElementById('n3').disabled=true;
+  updateKPI();
+}
+function switchForm(){
+  const f=formType();
+  document.getElementById('formHint').textContent=FORM_HINT[f]||'';
+  document.getElementById('doseFields').style.display=f==='dose'?'grid':'none';
+  document.getElementById('orphanFields').style.display=f==='orphan'?'block':'none';
+  if(f==='dose'){prefill('fApprovedDose',C.approvedDose);prefill('fRequestDose',C.requestDose);}
+  if(f==='orphan'){prefill('fPrevalence',C.prevalence);}
+}
+function prefill(id,v){const el=document.getElementById(id);if(el&&!el.value&&v)el.value=v;}
+
+function go(s){[1,2,3].forEach(i=>{document.getElementById('p'+i).classList.toggle('on',i===s);
+  document.getElementById('n'+i).classList.toggle('on',i===s)});window.scrollTo({top:0,behavior:'smooth'})}
+function tab(t){curTab=t;
+  document.getElementById('paneLit').style.display=t==='lit'?'block':'none';
+  document.getElementById('paneTrial').style.display=t==='trial'?'block':'none';
+  document.getElementById('tb1').classList.toggle('on',t==='lit');
+  document.getElementById('tb2').classList.toggle('on',t==='trial');}
+function fmtTime(){if(!t0)return '—';const s=Math.floor((Date.now()-t0)/1000);
+  return Math.floor(s/60)+"분 "+String(s%60).padStart(2,'0')+"초"}
+function shownMetrics(){return C.metrics.filter(m=>selected.includes(m.src))}
+function updateKPI(){
+  const sh=shownMetrics();
+  document.getElementById('kTrace').textContent=sh.length?'100%':'—';
+  document.getElementById('kVer').textContent=verified.length+"/"+sh.length;
+  document.getElementById('kTrial').textContent=trialSel.length?trialSel.length+"건":'—';
+  document.getElementById('kTime').textContent=fmtTime();
+  const b=document.getElementById('btnDoc');
+  if(b){b.disabled=sh.length===0;
+    document.getElementById('docMsg').textContent=
+      (sh.length&&verified.length<sh.length)?"미검증 "+(sh.length-verified.length)+"건은 문서에 표시됩니다":""}
+}
+
+function normTrials(trials){
+  return (trials||[]).map(t=>({...t,crit:(t.crit||[]).map(c=>Array.isArray(c)?c:[c.status,c.text])}));
+}
+
+function applyResult(data,isAI){
+  C.papers=data.papers||[];
+  C.metrics=data.metrics||[];
+  C.trials=normTrials(data.trials);
+  if(data.weights)WEIGHTS={...DEFAULT_WEIGHTS,...data.weights};
+  aiMode=isAI;
+  selected=[];verified=[];active=null;
+  trialSel=C.trials.filter(t=>t.pct>=60).map(t=>t.id);
+  document.getElementById('aiBanner').innerHTML=isAI
+    ?`<div class="aibar"><b>Gemini가 생성한 유사 근거입니다.</b> 각 논문의 유사도 점수·수치·임상시험은 실제 출판물과 다를 수 있으며, 반드시 원문 대조·전문가 검증이 필요합니다.</div>`
+    :`<div class="okbar"><b>데모 데이터로 표시 중입니다.</b> (Gemini 호출 없이 예시 데이터를 사용)</div>`;
+  renderWeights();renderPapers();renderTrials();
+  document.getElementById('cLit').textContent=C.papers.length;
+  document.getElementById('cTrial').textContent=C.trials.length;
+  document.getElementById('n2').disabled=false;tab('lit');go(2);updateKPI();
+}
+
+async function search(){
+  const b=document.getElementById('btnSearch'),m=document.getElementById('searchMsg');
+  const useDemo=document.getElementById('useDemo').checked;
+  const payload={
+    type:document.getElementById('fType').value,typeLabel:typeText(),form:formType(),
+    stage:val('fStage'),line:val('fLine'),bio:val('fBio'),drug:val('fDrug'),
+    approvedDose:val('fApprovedDose'),requestDose:val('fRequestDose'),prevalence:val('fPrevalence')
+  };
+  t0=Date.now();if(timer)clearInterval(timer);timer=setInterval(updateKPI,1000);
+
+  if(useDemo){
+    b.disabled=true;m.innerHTML='<span class="spin"></span>데모 데이터 불러오는 중';
+    setTimeout(()=>{b.disabled=false;m.textContent="";
+      const d=JSON.parse(JSON.stringify(CASES[payload.type]||CASES.onco));
+      applyResult({papers:d.papers,metrics:d.metrics,trials:d.trials},false);},400);
+    return;
+  }
+
+  b.disabled=true;m.innerHTML='<span class="spin"></span>Gemini로 유사 문헌·임상시험을 검색·채점하는 중… (10~30초)';
+  try{
+    const r=await fetch(api('api/search'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
+    const data=await r.json();
+    b.disabled=false;m.textContent="";applyResult(data,true);
+  }catch(e){
+    b.disabled=false;m.innerHTML='⚠ 백엔드/Gemini 호출 실패 — 데모 데이터로 표시합니다. ('+e.message+')';
+    const d=JSON.parse(JSON.stringify(CASES[payload.type]||CASES.onco));
+    applyResult({papers:d.papers,metrics:d.metrics,trials:d.trials},false);
+  }
+}
+
+// --- 가중치 슬라이더 --------------------------------------------------------
+function renderWeights(){
+  document.getElementById('simWrap').style.display=C.papers.length?'block':'none';
+  document.getElementById('weights').innerHTML=AXES.map(([a,lab])=>`
+    <div class="wt"><label>${lab}</label>
+      <input type="range" min="0" max="100" value="${Math.round((WEIGHTS[a]||0)*100)}" oninput="setWeight('${a}',this.value)">
+      <span class="wv" id="wv_${a}">${Math.round((WEIGHTS[a]||0)*100)}</span></div>`).join('');
+}
+function setWeight(a,v){WEIGHTS[a]=(+v)/100;document.getElementById('wv_'+a).textContent=v;renderPapers();}
+function resetWeights(){WEIGHTS={...DEFAULT_WEIGHTS};renderWeights();renderPapers();}
+
+function renderPapers(){
+  const ps=sortedPapers();
+  document.getElementById('papers').innerHTML=ps.map((p,i)=>{
+    const sc=paperScore(p);
+    const axes=p.sim?AXES.map(([a,lab])=>`<span class="ax">${lab} ${p.sim[a]}</span>`).join(''):'';
+    const sim=p.sim?`<div class="simline"><div class="simtrack"><div class="simfill" style="width:${sc}%"></div></div><span class="simsc">유사도 ${sc}</span></div><div class="axes">${axes}</div>`:'';
+    return `<div class="paper${selected.includes(p.id)?' sel':''}" onclick="toggle(${p.id})">
+      <div class="top"><div class="cb"></div><div style="flex:1">
+        <div class="ttl">${p.t}${i===0&&sc>0?'<span class="topmatch">최고 유사도</span>':''}</div>
+        <div class="meta">${p.j} · ${p.y}${p.n?' · n='+p.n:''}</div>
+        <div class="fit">${p.fit}</div>${sim}</div></div></div>`;
+  }).join('');
+}
+function toggle(id){
+  selected.includes(id)?selected=selected.filter(x=>x!==id):selected.push(id);
+  verified=verified.filter(k=>{const m=C.metrics.find(x=>x.k===k);return m&&selected.includes(m.src)});
+  renderPapers();renderMetrics();updateKPI();}
+function renderMetrics(){
+  const w=document.getElementById('metricsWrap'),c=document.getElementById('metrics'),sh=shownMetrics();
+  w.style.display=sh.length?'block':'none';
+  c.innerHTML=sh.map(m=>`<div class="m${active==='M'+m.k?' act':''}">
+    <div class="mh"><span class="mname">${m.label}</span>
+      <span class="mval" onclick="showSrc('${m.k}')">${m.val}</span></div>
+    <div class="mf"><span class="src">출처 [${m.src}] ${m.loc}</span>
+      <button class="vbtn${verified.includes(m.k)?' done':''}" onclick="verify('${m.k}')">
+        ${verified.includes(m.k)?'✓ 검증됨':'원문 대조 후 검증'}</button></div></div>`).join('')}
+function renderTrials(){document.getElementById('trials').innerHTML=C.trials.map(t=>`
+  <div class="tr${active==='T'+t.id?' act':''}" onclick="showTrial('${t.id}')">
+    <div class="th"><div class="tt">${t.t}</div>
+      <div class="tm">${t.id} · ${t.ph} · ${t.site}</div>
+      <div class="bar"><div class="track"><div class="fill" style="width:${t.pct}%"></div></div>
+        <span class="pct">${t.pct}%</span></div></div>
+    <div class="tf">선정기준 ${t.crit.filter(c=>c[0]==='y').length}/${t.crit.length}항목 부합 · 클릭하면 상세 대조</div>
+  </div>`).join('')}
+function showSrc(k){
+  active='M'+k;const m=C.metrics.find(x=>x.k===k),p=C.papers.find(x=>x.id===m.src);
+  document.getElementById('viewer').innerHTML=`<div class="vbox">
+    <div class="vhead"><div class="vt">${p?p.t:'(출처 없음)'}</div><div class="vm">[${m.src}] ${p?p.j+' · '+p.y:''}</div></div>
+    <div class="vbody"><div class="vloc">${m.loc}</div>
+      <div class="vtext">${m.pre||''}<mark>${m.mark||m.val}</mark>${m.post||''}</div></div>
+    <div class="vfoot">추출값 <b style="font-family:var(--mono)">${m.val}</b> — 위 문장에서 도출됨</div></div>`;
+  renderMetrics();renderTrials();}
+function showTrial(id){
+  active='T'+id;const t=C.trials.find(x=>x.id===id);
+  const lab={y:"부합",n:"불충족",q:"확인 필요"};
+  document.getElementById('viewer').innerHTML=`<div class="vbox">
+    <div class="vhead"><div class="vt">${t.t}</div><div class="vm">${t.id} · ${t.ph} · ${t.site}</div></div>
+    <div class="crit"><div class="cl">선정 · 제외 기준 대조</div><ul>
+      ${t.crit.map(c=>`<li class="${c[0]}">${c[1]} <span style="color:var(--faint);font-size:11px">(${lab[c[0]]||'확인 필요'})</span></li>`).join('')}
+    </ul></div>
+    <div class="vfoot">부합률 <b style="font-family:var(--mono);color:var(--trial)">${t.pct}%</b> — 최종 적격 판정은 실시기관의 선별검사로 확정됩니다</div></div>`;
+  renderTrials();renderMetrics();}
+function verify(k){verified.includes(k)?verified=verified.filter(x=>x!==k):verified.push(k);
+  renderMetrics();updateKPI();}
+
+async function makeDoc(){
+  const btn=document.getElementById('btnDoc');
+  const sh=shownMetrics();
+  const top=C.trials.filter(t=>t.pct>=60);
+  let prose={...PROSE_FALLBACK};
+  if(aiMode){
+    btn.disabled=true;const old=btn.textContent;btn.innerHTML='<span class="spin"></span>Gemini로 서식 문단 생성 중';
+    try{
+      const r=await fetch(api('api/generate'),{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({form:formType(),case:{
+            typeLabel:typeText(),stage:val('fStage'),line:val('fLine'),drug:val('fDrug'),
+            approvedDose:val('fApprovedDose'),requestDose:val('fRequestDose'),prevalence:val('fPrevalence')},
+          metrics:sh,trials:top})});
+      if(r.ok){const j=await r.json();for(const key in prose){if(j[key])prose[key]=j[key];}}
+    }catch(e){/* 실패 시 정적 문구 유지 */}
+    btn.disabled=false;btn.textContent=old;
+  }
+  renderDoc(prose);
+}
+
+function renderDoc(prose){
+  const form=formType();
+  const sh=shownMetrics();
+  const g=k=>{const m=sh.find(x=>x.k===k);if(!m)return '<span class="cite no">미확보</span>';
+    return `<b style="font-family:var(--mono)">${m.val}</b> <span class="cite${verified.includes(k)?'':' no'}" title="${verified.includes(k)?'검증 완료':'약사 검증 필요'}">[${m.src}]</span>`};
+  const eff=sh.filter(m=>m.k!=='AE'),ae=sh.filter(m=>m.k==='AE');
+  const effTable=`<table>${eff.map(m=>`<tr><td>${m.label}</td><td>${g(m.k)}</td></tr>`).join('')}</table>`;
+  const aeTable=extra=>`<table>${ae.map(m=>`<tr><td>${m.label}</td><td>${g(m.k)}</td></tr>`).join('')}
+    <tr><td>모니터링 계획</td><td>투여 주기별 임상 증상 및 검사 소견 확인, 이상 소견 시 즉시 투여 중단 및 평가</td></tr>${extra||''}</table>`;
+  const top=C.trials.filter(t=>t.pct>=60);
+  const refs=C.papers.filter(p=>selected.includes(p.id)).sort((a,b)=>paperScore(b)-paperScore(a));
+  const formLabel={eff:'효능·효과 초과 (일반)',orphan:'희귀의약품',dose:'추가 용량 (용법·용량 초과)'}[form];
+
+  const miss=sh.length-verified.length;
+  document.getElementById('docBar').innerHTML=
+    (aiMode?`<div class="aibar"><b>본 초안의 서술·수치는 Gemini가 생성했습니다.</b> 제출 전 반드시 약사·의사의 원문 대조가 필요합니다.</div>`:'')
+    +(miss>0?`<div class="warnbar"><b>검증 대기 ${miss}건.</b> 붉은 출처 표시 항목은 약사 대조가 완료되지 않았습니다. 제출 전 검증이 필요합니다.</div>`
+          :`<div class="okbar"><b>인용 수치 ${sh.length}건 모두 검증 완료.</b> 각 수치는 원문 위치와 연결되어 있습니다.</div>`)
+    +(top.length?`<div class="trialbar"><b>적격 가능 임상시험 ${top.length}건이 함께 검토되었습니다.</b> 표준치료가 소진된 환자의 치료 선택지로 신청서에 병기됩니다.</div>`:'');
+
+  // 신청 개요 행 (서식별로 달라짐)
+  let ov=`<tr><td>신청 서식</td><td>${formLabel}</td></tr>
+    <tr><td>신청 약제</td><td>${val('fDrug')}</td></tr>
+    <tr><td>대상 질환</td><td>${typeText()} · ${val('fStage')}</td></tr>
+    <tr><td>투여 단계</td><td>${val('fLine')}</td></tr>
+    <tr><td>주요 임상 지표</td><td>${val('fBio')}</td></tr>`;
+  if(form==='dose')ov+=`<tr><td>기존 허가 용량</td><td>${val('fApprovedDose')||'—'}</td></tr>
+    <tr><td>신청(증량) 용량</td><td>${val('fRequestDose')||'—'}</td></tr>`;
+  if(form==='orphan')ov+=`<tr><td>희귀질환 구분</td><td>해당 (희귀의약품 서식)</td></tr>
+    <tr><td>국내 추정 환자 수</td><td>${val('fPrevalence')||'—'}</td></tr>`;
+
+  // 서식별 섹션 구성
+  let secs=[];
+  if(form==='orphan'){
+    secs=[
+      ["신청 사유",`<p>${prose.reason}</p>`],
+      ["대체치료 부재 근거",`<p>${prose.unmet_need}</p>`],
+      ["유효성 근거 (사례군 포함)",effTable],
+      ["국내외 허가·공급 현황",`<p>${prose.approval_status}</p>`],
+      ["안전성 및 위해성 관리",aeTable()]
+    ];
+  }else if(form==='dose'){
+    secs=[
+      ["신청 사유 (증량 필요성)",`<p>${prose.reason}</p>`],
+      ["용량 설정 근거",`<p>${prose.dose_rationale}</p>${effTable}`],
+      ["안전성 — 용량 관련",aeTable(`<tr><td>감량·중단 기준</td><td>용량 관련 이상반응(Grade 3 이상) 발생 시 감량 또는 투여 중단 후 재평가</td></tr>`)],
+      ["기존 용량 대비 이익-위해 평가",`<p>${prose.benefit_risk}</p>`]
+    ];
+  }else{
+    secs=[
+      ["신청 사유",`<p>${prose.reason}</p>`],
+      ["유효성 근거",effTable],
+      ["안전성 고려사항",aeTable()],
+      ["대체요법 검토",`<p>${prose.alternatives}</p>`]
+    ];
+  }
+
+  let num=1;
+  let html=`<section><h4>${num++}. 신청 개요</h4><table>${ov}</table></section>`;
+  for(const[h,b] of secs)html+=`<section><h4>${num++}. ${h}</h4>${b}</section>`;
+  if(top.length)html+=`<section><h4>${num++}. 임상시험 참여 가능성 검토</h4>
+      <p style="margin-bottom:8px">본 환자의 임상 조건을 공개 임상시험 등록정보의 선정기준과 대조한 결과는 다음과 같다.</p>
+      <table>${top.map(t=>`<tr><td>${t.id} · ${t.ph}</td><td>${t.t}<br>
+        <span style="font-size:12px;color:var(--muted)">선정기준 ${t.crit.filter(c=>c[0]==='y').length}/${t.crit.length}항목 부합 · ${t.site}</span></td></tr>`).join('')}</table>
+      <p style="font-size:12px;color:var(--muted);margin-top:9px">※ 최종 적격 여부는 각 실시기관의 선별검사로 확정되며, 본 검토는 참고 자료다.</p></section>`;
+  html+=`<section><h4>${num++}. 참고문헌 (유사도순)</h4>
+      ${refs.map(p=>`<div class="ref">[${p.id}] ${p.t}. ${p.j}. ${p.y}${p.n?'; n='+p.n:''}. <span style="color:var(--seal)">유사도 ${paperScore(p)}</span></div>`).join('')}</section>`;
+
+  document.getElementById('doc').innerHTML=`
+    <div class="dh"><h3>허가초과 사용승인 신청서 — ${formLabel}</h3>
+      <div class="dnote">※ 데모용 예시 문서 — 서식 항목 구성은 공개 절차를 참고한 것으로 실제 서식과 다를 수 있음${aiMode?' · 서술/수치는 Gemini 생성':''}</div></div>
+    ${html}
+    <div class="sign"><div>담당 약사 <span></span></div><div>신청 의사 <span></span></div></div>`;
+  document.getElementById('n3').disabled=false;go(3);
+}
+
+switchCase();updateKPI();checkEngine();
+</script>
+</body>
+</html>
