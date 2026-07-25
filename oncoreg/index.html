@@ -411,11 +411,14 @@ function prefill(id,v){const el=document.getElementById(id);if(el&&!el.value&&v)
 
 function go(s){[1,2,3].forEach(i=>{document.getElementById('p'+i).classList.toggle('on',i===s);
   document.getElementById('n'+i).classList.toggle('on',i===s)});window.scrollTo({top:0,behavior:'smooth'})}
-function tab(t){curTab=t;
+function tab(t){curTab=t;active=null;
   document.getElementById('paneLit').style.display=t==='lit'?'block':'none';
   document.getElementById('paneTrial').style.display=t==='trial'?'block':'none';
   document.getElementById('tb1').classList.toggle('on',t==='lit');
-  document.getElementById('tb2').classList.toggle('on',t==='trial');}
+  document.getElementById('tb2').classList.toggle('on',t==='trial');
+  // 탭을 바꾸면 오른쪽 뷰어와 강조를 초기화(임상시험 상세가 남아있지 않도록)
+  document.getElementById('viewer').innerHTML='<div class="vempty">지표 수치 또는 임상시험을 클릭하면<br>상세 내용이 여기에 표시됩니다</div>';
+  if(C.papers&&C.papers.length){renderPapers();renderMetrics();renderTrials();}}
 function fmtTime(){if(!t0)return '—';const s=Math.floor((Date.now()-t0)/1000);
   return Math.floor(s/60)+"분 "+String(s%60).padStart(2,'0')+"초"}
 function shownMetrics(){return C.metrics.filter(m=>selected.includes(m.src))}
@@ -441,7 +444,9 @@ function applyResult(data,isAI){
   C.trials=normTrials(data.trials);
   if(data.weights)WEIGHTS={...DEFAULT_WEIGHTS,...data.weights};
   aiMode=isAI;
-  selected=[];verified=[];active=null;
+  // 지표의 출처 논문을 자동 선택 → 검색 직후 '추출된 지표'가 바로 보이고 생성 버튼이 활성화된다.
+  selected=[...new Set(C.metrics.map(m=>m.src))].filter(id=>C.papers.some(p=>p.id===id));
+  verified=[];active=null;
   trialSel=C.trials.filter(t=>t.pct>=60).map(t=>t.id);
   document.getElementById('aiBanner').innerHTML=isAI
     ?`<div class="aibar"><b>Gemini가 생성한 유사 근거입니다.</b> 각 논문의 유사도 점수·수치·임상시험은 실제 출판물과 다를 수 있으며, 반드시 원문 대조·전문가 검증이 필요합니다.</div>`
