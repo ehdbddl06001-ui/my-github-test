@@ -103,8 +103,8 @@ def run_context(fams=("RHYTHM","KOOPMAN","AE","GNN"), seeds=None, batch=512):
         ds=torch.utils.data.TensorDataset(*[torch.from_numpy(x) for x in arrs]); dl=torch.utils.data.DataLoader(ds,batch_size=batch,shuffle=True); best=-1; bs=None
         for ep in range(15):
             M.train()
-            for batch in dl:
-                batch=[t.to(dev) for t in batch]; bb2,rr,ff,yy=batch[:4]; cc=batch[4] if use_ctx else None
+            for bh in dl:
+                bh=[t.to(dev) for t in bh]; bb2,rr,ff,yy=bh[:4]; cc=bh[4] if use_ctx else None
                 opt.zero_grad(); lo=M(bb2,rr,ff,cc); lo=lo-torch.zeros_like(lo).scatter_(1,yy[:,None],mcv[yy][:,None])
                 ce=Fn.cross_entropy(lo,yy,reduction="none"); loss=(ce*cw[yy]).sum()/cw[yy].sum()
                 loss.backward(); torch.nn.utils.clip_grad_norm_(M.parameters(),1.0); opt.step()
