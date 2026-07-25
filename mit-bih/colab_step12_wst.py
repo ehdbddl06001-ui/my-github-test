@@ -28,6 +28,10 @@ def _load():
 
 def compute_wst_features(beats,J=6,Q=8,chunk=2048,log=True):
     """각 비트 2 lead에 1D Wavelet Scattering, 시간평균 → 고정 특징벡터[N,2P]."""
+    import importlib,subprocess,sys
+    try: importlib.import_module("kymatio")
+    except ModuleNotFoundError:
+        print("  kymatio 없음 → 자동설치(Colab 세션 초기화 대응)"); subprocess.run([sys.executable,"-m","pip","install","-q","kymatio"],check=True)
     import torch
     from kymatio.torch import Scattering1D
     dev="cuda" if torch.cuda.is_available() else "cpu"
