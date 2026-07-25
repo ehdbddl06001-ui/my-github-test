@@ -36,26 +36,33 @@ def mitbih_beat_stats():
     print("  → 이 통계에 맞춰 build_incart 의 정규화(norm=) 결정")
     return b.mean(),b.std()
 
-def build_incart(n_rec=None, norm="perbeat_z", dl=True):
-    """INCART 다운로드·전처리 → incart_data.npz. norm: 'perbeat_z'(비트별 z) | 'none'."""
+def build_incart(n_rec=None, norm="perbeat_z", dl=True, dldir=None):
+    """INCART 다운로드·전처리 → incart_data.npz. norm: 'perbeat_z'|'none'.
+       재개: 이미 받은 파일은 스킵. dldir=Drive경로 주면 재시작해도 유지(재개 가능)."""
     _ensure("wfdb"); import wfdb
     from scipy.signal import resample_poly
-    os.makedirs(_DLDIR,exist_ok=True)
-    # 레코드 목록
+    dldir=dldir or _DLDIR; os.makedirs(dldir,exist_ok=True)
     try: recs=wfdb.get_record_list("incartdb")
     except Exception: recs=[f"I{ i:02d}" for i in range(1,76)]
     if n_rec: recs=recs[:n_rec]
-    print(f"INCART {len(recs)}레코드 처리 (norm={norm})...")
+    print(f"INCART {len(recs)}레코드 처리 (norm={norm}, dldir={dldir}) — 이미 받은 건 스킵(재개)")
     BEAT=[]; Y=[]; PID=[]; PRE=[]; POST=[]
     for ri,rec in enumerate(recs):
         try:
             if dl:
-                for ext in ("dat","hea","atr"):
-                    try: wfdb.dl_files("incartdb",_DLDIR,[f"{rec}.{ext}"])
-                    except Exception: pass
-            r=wfdb.rdrecord(f"{_DLDIR}/{rec}"); ann=wfdb.rdann(f"{_DLDIR}/{rec}","atr")
+                for ext in ("hea","dat","atr"):
+                    fp=f"{dldir}/{rec}.{ext}"
+                    if os.path.exists(fp) and os.path.getsize(fp)>0: continue    # 이미 받음 → 스킵
+                    for _try in range(3):
+                        try: wfdb.dl_files("incartdb",dldir,[f"{rec}.{ext}"]); break
+                        except Exception: pass
+            r=wfdb.rdrecord(f"{dldir}/{rec}"); ann=wfdb.rdann(f"{dldir}/{rec}","atr")
         except Exception as e:
-            print(f"  ✗ {rec}: {type(e).__name__} {e}"); continue
+            print(f"  ✗ {rec}: {type(e).__name__} {e} (손상 가능 → 파일 삭제, 재실행시 재다운로드)")
+            for ext in ("hea","dat","atr"):
+                try: os.remove(f"{dldir}/{rec}.{ext}")
+                except Exception: pass
+            continue
         names=[s.upper() for s in r.sig_name]
         if "II" not in names or "V1" not in names: print(f"  ✗ {rec}: 리드없음 {r.sig_name}"); continue
         sig=r.p_signal[:,[names.index("II"),names.index("V1")]].T          # (2, T) @257Hz
