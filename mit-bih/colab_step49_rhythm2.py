@@ -39,9 +39,11 @@ def _f1(y2,s):
 def auto_weights(y1,beta=0.9999):
     nN=(y1==0).sum(); nS=max((y1==1).sum(),1); eff=lambda n:(1-beta)/(1-beta**n+1e-12); return float(eff(nS)/eff(nN))
 
-def extract_rhythm_v2(beats, feats0, pid, y=None, alpha=0.3, K=8, verbose=True):
-    """robust innovation: 스케일 바닥값 + tanh-squash(폭발 제거, AUC 보존), 상수컬럼 배제."""
-    if y is None: y=np.load(f"{_BASE}/mamba_data.npz")["y"]
+def extract_rhythm_v2(beats, feats0, pid, y=None, alpha=0.3, K=8, verbose=True, pre_col=None, post_col=None):
+    """robust innovation: 스케일 바닥값 + tanh-squash(폭발 제거, AUC 보존), 상수컬럼 배제.
+       pre_col/post_col 을 명시하면 라벨 기반 자동식별을 건너뛴다(교차DB=라벨 미사용용)."""
+    _detect = (pre_col is None or post_col is None)
+    if y is None and _detect: y=np.load(f"{_BASE}/mamba_data.npz")["y"]
     N=len(beats); eps=1e-6; m1=np.isin(pid,_DS1); C=feats0.shape[1]
     # feats0 각 컬럼 인과 innovation + robust squash
     innovF=np.zeros_like(feats0,dtype=np.float32)
@@ -59,12 +61,15 @@ def extract_rhythm_v2(beats, feats0, pid, y=None, alpha=0.3, K=8, verbose=True):
         sc=np.median(np.abs(X-np.median(X,0,keepdims=True)),0,keepdims=True)
         sc=np.maximum(sc, 0.2*gsc[None,:])                            # 스케일 바닥값(폭발 방지)
         innovF[idx]=np.tanh((res/(sc+eps))/3.0).astype(np.float32)    # tanh-squash → (-1,1)
-    # pre/post 자동식별: 유효컬럼 중 DS1 S평균 innov 최소/최대
-    meanS=np.array([innovF[m1&(y==1),c].mean() if valid[c] else 0.0 for c in range(C)])
-    pre_col=int(np.argmin(meanS)); post_col=int(np.argmax(meanS))
-    if verbose:
-        print(f"  [자동식별v2] pre=feats0[{pre_col}] meanInnov@S={meanS[pre_col]:+.3f}  "
-              f"post=feats0[{post_col}] meanInnov@S={meanS[post_col]:+.3f}  (폭발 없어야 정상, |·|<1)")
+    # pre/post 자동식별: 유효컬럼 중 DS1 S평균 innov 최소/최대 (명시 컬럼 있으면 건너뜀=라벨 미사용)
+    if _detect:
+        meanS=np.array([innovF[m1&(y==1),c].mean() if valid[c] else 0.0 for c in range(C)])
+        pre_col=int(np.argmin(meanS)); post_col=int(np.argmax(meanS))
+        if verbose:
+            print(f"  [자동식별v2] pre=feats0[{pre_col}] meanInnov@S={meanS[pre_col]:+.3f}  "
+                  f"post=feats0[{post_col}] meanInnov@S={meanS[post_col]:+.3f}  (폭발 없어야 정상, |·|<1)")
+    elif verbose:
+        print(f"  [명시컬럼] pre=feats0[{pre_col}] post=feats0[{post_col}] (라벨 미사용, 교차DB)")
     F=np.zeros((N,10),np.float32)
     for p in np.unique(pid):
         idx=np.where(pid==p)[0]; b=beats[idx]

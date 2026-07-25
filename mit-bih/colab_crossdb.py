@@ -2,8 +2,11 @@
 #  colab_crossdb.py  —  [교차DB ②③] MIT-BIH 학습 → INCART 적용 (외부 검증)
 #
 #  MIT-BIH 전체로 학습한 앙상블을 INCART(다른 DB)에 재학습·튜닝 없이 적용 → 진짜 일반화 검증.
-#  v1 특징(두 DB에서 우리 코드가 동일 계산하는 자립 특징): WST+MORPHO+REPOL+KOOPMAN+GNN.
-#   (제외: feats0[외부]·RHYTHM[feats0-RR]·DTW[DS1템플릿]·AE[모델저장] → v2에서)
+#  v1 특징(형태 자립특징): WST+MORPHO+REPOL+KOOPMAN+GNN.
+#  v2 특징(+리듬 축): v1 + RHYTHM(10). ★S(상심실)는 형태 아닌 '타이밍'으로 정의 → 리듬 없으면 붕괴.
+#   RHYTHM 10특징은 전부 무차원(0~5 형태잔차=비율, 6~9 RR innovation=환자별 MAD+tanh) → 교차DB 자립.
+#   INCART RR은 저장된 pre_rr/post_rr을 명시컬럼으로 → extract_rhythm_v2 라벨 자동식별 건너뜀(오염X).
+#   (여전히 제외: DTW[DS1템플릿]·AE[모델저장] → v3에서)
 #  스케일 매칭: 두 DB 비트를 per-beat z정규(진폭 불일치 제거). WST 선택은 MIT-BIH서 fit·양쪽 적용.
 #  두 가지 보고: (a) raw-transfer  (b) BN-적응(INCART 입력분포로 BatchNorm 재보정, 라벨X=오염X).
 #   raw가 낮고 BN적응이 회복되면 = '모델 과적합 아니라 분포 shift'였음(해석 분리).
@@ -11,7 +14,7 @@
 #  선행: colab_prep_all.py(MIT-BIH 캐시) + incart_data.npz(전처리 완료) + 추출기 소스들 Drive에
 #  실행:
 #    exec(open('/content/drive/MyDrive/mitbih/colab_crossdb.py').read())
-#    run_crossdb(seeds=list(range(2000,2010)))   # ~10seed 앙상블
+#    run_crossdb(seeds=list(range(2000,2010)), compare=True)  # v1(리듬X) vs v2(리듬O) A/B
 # =============================================================================
 import os
 import numpy as np
@@ -78,24 +81,42 @@ def _net(fdim):
             return s.cls(torch.cat([z,zp,s.fm(ft)],-1))
     return Net()
 
-def run_crossdb(seeds=None, Kwst=40):
+def _crossdb_rhythm(mb, mfeats0, mpid, ib, ipre, ipost, ipid):
+    """두 DB 리듬 10특징(무차원). MIT=라벨 자동식별, INCART=명시컬럼(라벨 미사용)."""
+    g=globals()
+    if "extract_rhythm_v2" not in g: exec(open(f"{_BASE}/colab_step49_rhythm2.py").read(), g)
+    er=g["extract_rhythm_v2"]
+    print("  RHYTHM(MIT-BIH): 라벨 자동식별로 RR 컬럼 탐지...")
+    mRHY=er(mb, mfeats0, mpid, verbose=True)                                   # MIT: feats0서 RR 자동식별(학습DB 라벨 허용)
+    f0i=np.stack([ipre.astype("float64"), ipost.astype("float64")],1)         # INCART feats0 대용: [pre_rr, post_rr]
+    print("  RHYTHM(INCART): 저장 pre/post_rr 명시컬럼(라벨 미사용)...")
+    iRHY=er(ib, f0i, ipid, pre_col=0, post_col=1, verbose=True)                # INCART: 명시컬럼 → 라벨 안 씀
+    return np.nan_to_num(mRHY).astype("float32"), np.nan_to_num(iRHY).astype("float32")
+
+def run_crossdb(seeds=None, Kwst=40, use_rhythm=True, compare=True):
     import torch, torch.nn as nn, torch.nn.functional as Fn
     from sklearn.preprocessing import RobustScaler
     from sklearn.feature_selection import SelectKBest, f_classif
     _determinism(); seeds=list(seeds) if seeds is not None else list(range(2000,2010)); dev="cuda" if torch.cuda.is_available() else "cpu"
     # ── MIT-BIH (학습) ──
-    d=np.load(f"{_BASE}/mamba_data.npz"); mb=_znorm(d["beat"]); my=d["y"]; mpid=d["pid"]; mref=_medref(mb,mpid)
+    d=np.load(f"{_BASE}/mamba_data.npz"); mb=_znorm(d["beat"]); my=d["y"]; mpid=d["pid"]; mref=_medref(mb,mpid); mfeats0=d["feats"]
     exec(open(f"{_BASE}/colab_step12_wst.py").read(), globals()); mWSTraw=globals()["compute_wst_features"](d["beat"])
     sel=SelectKBest(f_classif,k=Kwst).fit(np.nan_to_num(mWSTraw),my)           # WST 선택 = MIT-BIH서 fit
     def wsel(raw): return np.nan_to_num(sel.transform(np.nan_to_num(raw))).astype("float32")
-    Fm=np.concatenate([wsel(mWSTraw), np.load(f"{_FEATDIR}/MORPHO.npy"), np.load(f"{_FEATDIR}/REPOL.npy"),
-                       np.load(f"{_FEATDIR}/KOOPMAN.npy"), np.load(f"{_FEATDIR}/GNN.npy")],1).astype("float32")
+    Fm1=np.concatenate([wsel(mWSTraw), np.load(f"{_FEATDIR}/MORPHO.npy"), np.load(f"{_FEATDIR}/REPOL.npy"),
+                        np.load(f"{_FEATDIR}/KOOPMAN.npy"), np.load(f"{_FEATDIR}/GNN.npy")],1).astype("float32")
     # ── INCART (테스트) ──
     di=np.load(f"{_BASE}/incart_data.npz"); ib=_znorm(di["beat"]); iy=di["y"]; ipid=di["pid"]; iref=_medref(ib,ipid)
     IF=_incart_feats()
-    Fi=np.concatenate([wsel(IF["WST_raw"]), IF["MORPHO"], IF["REPOL"], IF["KOOPMAN"], IF["GNN"]],1).astype("float32")
+    Fi1=np.concatenate([wsel(IF["WST_raw"]), IF["MORPHO"], IF["REPOL"], IF["KOOPMAN"], IF["GNN"]],1).astype("float32")
     print(f"MIT-BIH {len(my)}비트(N/S/V={int((my==0).sum())}/{int((my==1).sum())}/{int((my==2).sum())}) → INCART {len(iy)}비트(N/S/V={int((iy==0).sum())}/{int((iy==1).sum())}/{int((iy==2).sum())})")
-    print(f"특징차원 {Fm.shape[1]}  (WST{Kwst}+MORPHO16+REPOL4+KOOPMAN5+GNN5)")
+    # ── 리듬 축(v2) ──
+    CFG=[("v1(형태만)", Fm1, Fi1)]
+    if use_rhythm:
+        mRHY,iRHY=_crossdb_rhythm(mb, mfeats0, mpid, ib, di["pre_rr"], di["post_rr"], ipid)
+        Fm2=np.concatenate([Fm1,mRHY],1).astype("float32"); Fi2=np.concatenate([Fi1,iRHY],1).astype("float32")
+        CFG=(CFG if compare else [])+[("v2(형태+리듬)", Fm2, Fi2)]
+    print(f"특징차원: v1={Fm1.shape[1]}(WST{Kwst}+MORPHO16+REPOL4+KOOPMAN5+GNN5)" + (f"  v2={Fm1.shape[1]+10}(+RHYTHM10)" if use_rhythm else ""))
     Sw=auto_weights(my); nc=np.array([(my==k).sum() for k in range(3)],np.float32); mc=(1.0/np.power(nc,0.25)); mc=(mc/mc.max()*0.5).astype("float32")
     def met(p,yy): return (average_precision_score((yy==1).astype(int),p[:,1]),average_precision_score((yy==2).astype(int),p[:,2]))
     @torch.no_grad()
@@ -109,7 +130,7 @@ def run_crossdb(seeds=None, Kwst=40):
         for i in range(0,len(b),4096):
             o.append(torch.softmax(M(torch.from_numpy(b[i:i+4096]).to(dev),torch.from_numpy(r[i:i+4096]).to(dev),torch.from_numpy(ft[i:i+4096]).to(dev)),-1).cpu().numpy())
         return np.concatenate(o)
-    def train_one(seed):
+    def train_one(Fm,Fi,seed):
         torch.manual_seed(seed); np.random.seed(seed)
         sc=RobustScaler().fit(Fm); f_tr=np.nan_to_num(sc.transform(Fm),posinf=0,neginf=0).astype("float32")
         f_in=np.nan_to_num(sc.transform(Fi),posinf=0,neginf=0).astype("float32")
@@ -130,10 +151,15 @@ def run_crossdb(seeds=None, Kwst=40):
         medS=np.median(Pn[:,:,1],0); corr=np.array([np.corrcoef(Pn[i,:,1],medS)[0,1] for i in range(len(Pn))])
         keep=np.argsort(-corr)[:max(1,int(round(len(Pn)*0.8)))]; P=Pn[keep].mean(0); return P/P.sum(1,keepdims=True)
     print(f"\n결정성 ON  {len(seeds)}seed 앙상블 (MIT-BIH 전체 학습 → INCART)")
-    RAW=[]; BN=[]
-    for s in seeds: pr,pb=train_one(s); RAW.append(pr); BN.append(pb)
-    for nm,P in [("raw-transfer",np.stack(RAW,0)),("BN-adapted",np.stack(BN,0))]:
-        Pt=trim(P); S,V=met(Pt,iy); pr,se,f1=_f1(iy,Pt[:,1])
-        print(f"  {nm:14s}: S_PR={S:.4f} PREC={pr:.3f} SEN={se:.3f} F1={f1:.3f}  (V_PR={V:.3f})")
-    print(f"\n  ★ S_PR가 MIT-BIH(0.78)에 가까우면 = 진짜 일반화(외부DB 전이). BN적응이 raw보다 크게↑면 = 분포shift가 주원인.")
-    return dict(raw=np.stack(RAW,0), bn=np.stack(BN,0), iy=iy)
+    OUT={}
+    for cname,Fm,Fi in CFG:
+        RAW=[]; BN=[]
+        for s in seeds: pr,pb=train_one(Fm,Fi,s); RAW.append(pr); BN.append(pb)
+        print(f"\n[{cname}]  특징 {Fm.shape[1]}차원")
+        for nm,P in [("raw-transfer",np.stack(RAW,0)),("BN-adapted",np.stack(BN,0))]:
+            Pt=trim(P); S,V=met(Pt,iy); prc,se,f1=_f1(iy,Pt[:,1])
+            print(f"  {nm:14s}: S_PR={S:.4f} PREC={prc:.3f} SEN={se:.3f} F1={f1:.3f}  (V_PR={V:.3f})")
+        OUT[cname]=dict(raw=np.stack(RAW,0), bn=np.stack(BN,0))
+    print(f"\n  ★ v2 S_PR가 v1보다 크게↑ = 리듬 축이 교차DB에서도 S를 나른다(RHYTHM 승리 전이 확증).")
+    print(f"    S 기저율 {(iy==1).mean():.4f} → 우연 S_PR≈{(iy==1).mean():.3f}. 그보다 유의미하게 높아야 진짜.")
+    OUT["iy"]=iy; return OUT
