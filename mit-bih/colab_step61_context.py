@@ -70,7 +70,7 @@ def _net(fdim, use_ctx=False, K=3):
             return s.cls(torch.cat(parts,-1))
     return Net()
 
-def run_context(fams=("RHYTHM","KOOPMAN","AE","GNN"), seeds=None):
+def run_context(fams=("RHYTHM","KOOPMAN","AE","GNN"), seeds=None, batch=512):
     import torch, torch.nn as nn, torch.nn.functional as Fn
     from sklearn.preprocessing import RobustScaler
     from sklearn.model_selection import GroupShuffleSplit
@@ -100,7 +100,7 @@ def run_context(fams=("RHYTHM","KOOPMAN","AE","GNN"), seeds=None):
                 o.append(torch.softmax(lo,-1).cpu().numpy())
             return np.concatenate(o)
         arrs=[b1[tr],r1[tr],f1[tr],y1[tr]]+([c1[tr]] if use_ctx else [])
-        ds=torch.utils.data.TensorDataset(*[torch.from_numpy(x) for x in arrs]); dl=torch.utils.data.DataLoader(ds,batch_size=256,shuffle=True); best=-1; bs=None
+        ds=torch.utils.data.TensorDataset(*[torch.from_numpy(x) for x in arrs]); dl=torch.utils.data.DataLoader(ds,batch_size=batch,shuffle=True); best=-1; bs=None
         for ep in range(15):
             M.train()
             for batch in dl:
