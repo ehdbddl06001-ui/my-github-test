@@ -15,7 +15,7 @@
 import os
 import numpy as np
 
-_BASE="/content/drive/MyDrive/mitbih"; _DLDIR=f"{_BASE}/incart_raw"
+_BASE="/content/drive/MyDrive/mitbih"; _DLDIR="/content/incart_raw"    # 원본은 로컬(임시) — Drive 안 먹음. 결과만 Drive에
 _FS_SRC=257; _FS_DST=360; _L=300; _RPRE=100      # R중심: [R-100, R+200] = 300샘플 (argmax로 재정합되므로 여유만)
 # AAMI 매핑: 기호 → 0=N,1=S,2=V (F/Q는 제외)
 _AAMI={ 'N':0,'L':0,'R':0,'e':0,'j':0, 'A':1,'a':1,'J':1,'S':1, 'V':2,'E':2 }
