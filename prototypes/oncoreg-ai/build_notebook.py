@@ -65,25 +65,52 @@ print('모듈 캐시 정리 완료. (포트가 이미 사용 중이면 런타임
     md("""## 3) Gemini API 키 입력
 
 키 발급: <https://aistudio.google.com/app/apikey>  (왼쪽 🔑 '보안 비밀'에 `GEMINI_API_KEY` 저장도 가능)"""),
-    code("""import os
-key = None
-try:
-    from google.colab import userdata          # Colab 보안 비밀에서 우선 시도
-    key = userdata.get('GEMINI_API_KEY')
-except Exception:
-    pass
-if not key:
-    import getpass
-    key = getpass.getpass('Gemini API Key 를 붙여넣고 Enter: ')
-os.environ['GEMINI_API_KEY'] = key.strip()
+    code("""# 직접 입력 칸 + 저장 버튼. (연결 확인이 실패해도 키만 맞으면 4번 셀로 진행 가능)
+import os
 os.environ.setdefault('GEMINI_MODEL', 'gemini-2.5-flash')
 
-from google import genai
+_pre = ''
 try:
-    _ = genai.Client(api_key=os.environ['GEMINI_API_KEY']).models.list()
-    print('✅ Gemini 연결 OK · 모델:', os.environ['GEMINI_MODEL'])
-except Exception as e:
-    print('⚠️ 키 확인 실패:', e)
+    from google.colab import userdata          # Colab 보안 비밀에 있으면 칸에 미리 채움
+    _pre = userdata.get('GEMINI_API_KEY') or ''
+except Exception:
+    pass
+
+def _verify():
+    try:
+        from google import genai
+        client = genai.Client(api_key=os.environ.get('GEMINI_API_KEY', ''))
+        client.models.generate_content(model=os.environ['GEMINI_MODEL'], contents='ping')
+        print('✅ Gemini 연결 OK · 모델:', os.environ['GEMINI_MODEL'])
+    except Exception as e:
+        print('⚠️ 연결 확인만 실패(키가 맞아도 날 수 있음):', e)
+        print('   → 키를 칸에 제대로 넣었다면 4번 "서버 실행" 셀로 그냥 넘어가도 됩니다.')
+
+try:
+    import ipywidgets as w
+    from IPython.display import display
+    _key = w.Text(value=_pre, description='API Key', placeholder='여기에 키를 붙여넣기',
+                  layout=w.Layout(width='620px'), style={'description_width': '70px'})
+    _model = w.Text(value=os.environ['GEMINI_MODEL'], description='Model',
+                    layout=w.Layout(width='380px'), style={'description_width': '70px'})
+    _btn = w.Button(description='저장하고 확인', button_style='success')
+    _out = w.Output()
+    if _pre:
+        os.environ['GEMINI_API_KEY'] = _pre
+    def _save(_):
+        with _out:
+            _out.clear_output()
+            os.environ['GEMINI_API_KEY'] = _key.value.strip()
+            os.environ['GEMINI_MODEL'] = _model.value.strip() or 'gemini-2.5-flash'
+            if not os.environ['GEMINI_API_KEY']:
+                print('⚠️ 키 칸이 비어 있어요. 붙여넣고 다시 누르세요.'); return
+            print('저장됨. 확인 중…'); _verify()
+    _btn.on_click(_save)
+    display(w.VBox([_key, w.HBox([_model, _btn]), _out]))
+    print('↑ 칸에 키를 붙여넣고 [저장하고 확인]을 누르세요.')
+except Exception:
+    os.environ['GEMINI_API_KEY'] = input('Gemini API Key 를 붙여넣고 Enter: ').strip()
+    _verify()
 """),
     md("""## 4) 서버 실행 → 공개 URL 받기
 
