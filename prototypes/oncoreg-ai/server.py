@@ -33,6 +33,15 @@ DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 # ----------------------------------------------------------------------------
 # 응답 스키마 — 프론트엔드(index.html)가 기대하는 구조와 1:1로 맞춘다.
 # ----------------------------------------------------------------------------
+class Similarity(BaseModel):
+    """이 논문의 대상 집단이 '현재 환자'와 얼마나 비슷한지 축별 점수(0~100)."""
+    disease: int            # 질환/암종 일치도
+    biomarker: int          # 임상지표/바이오마커 일치도
+    stage: int              # 병기/중증도 일치도
+    line: int               # 이전 치료 차수 일치도
+    drug: int               # 검토 약제 일치도
+
+
 class Paper(BaseModel):
     id: int                 # 1,2,3... 인용 번호
     t: str                  # 논문 제목(한국어)
@@ -40,6 +49,7 @@ class Paper(BaseModel):
     y: int                  # 연도
     n: Optional[int] = None # 표본 수 (지침 등은 null)
     fit: str                # 이 케이스와의 부합 사유(짧게)
+    sim: Similarity         # 환자 유사도 축별 점수
 
 
 class Metric(BaseModel):
@@ -74,8 +84,23 @@ class CaseResult(BaseModel):
 
 
 class DocProse(BaseModel):
-    reason: str             # 2. 신청 사유 문단
-    alternatives: str       # 5. 대체요법 검토 문단
+    reason: str                 # 신청 사유 문단 (모든 서식 공통)
+    alternatives: str = ""      # 대체요법 검토 (효능·효과 초과 서식)
+    unmet_need: str = ""        # 대체치료 부재 근거 (희귀의약품 서식)
+    approval_status: str = ""   # 국내외 허가·공급 현황 (희귀의약품 서식)
+    dose_rationale: str = ""    # 용량 설정 근거 (추가 용량 서식)
+    benefit_risk: str = ""      # 기존 용량 대비 이익-위해 (추가 용량 서식)
+
+
+# 유사도 가중치 기본값(합=1.0). 프론트 슬라이더로 조정 가능.
+DEFAULT_WEIGHTS = {"disease": 0.30, "biomarker": 0.25, "stage": 0.15, "line": 0.15, "drug": 0.15}
+
+# 신청 서식 유형별 안내(프롬프트/문서에서 사용)
+FORM_LABELS = {
+    "eff": "효능·효과 초과 (일반 허가초과)",
+    "orphan": "희귀의약품 (희귀질환 대상)",
+    "dose": "추가 용량 의약품 (용법·용량 초과)",
+}
 
 
 # ----------------------------------------------------------------------------
@@ -94,9 +119,14 @@ def build_search_prompt(c: dict) -> str:
 - 검토 약제: {c.get('drug')}
 
 [작성 규칙]
-1) papers: 이 케이스에 부합하는 근거 문헌 3~5개.
+1) papers: 이 케이스에 부합하는 근거 문헌 4~6개. 유사도가 서로 다른 논문을 섞어라
+   (거의 동일한 집단 ~ 부분적으로만 겹치는 집단까지). 그래야 순위가 의미를 갖는다.
    - t(제목)·j(출처)·fit(부합 사유)은 한국어. 그중 1개는 진료지침(j="진료지침", n=null).
    - id 는 1부터 연속. y 는 최근 연도 위주.
+   - sim: 이 논문의 '대상 집단'이 위 [검토 케이스] 환자와 얼마나 비슷한지 축별 점수
+     (0~100, 정수). disease(질환/암종), biomarker(임상지표), stage(병기), line(치료차수),
+     drug(약제) 각각을 환자 조건과 대조해 냉정하게 매긴다. 진료지침처럼 특정 집단이
+     아니면 중간값(50~70) 정도로.
 2) metrics: 위 papers 에서 도출되는 핵심 지표 3~5개. 반드시 안전성 지표 1개 포함(k="AE").
    - k 는 짧은 영문 대문자 키(ORR/PFS/HR/AE 등), 서로 중복되지 않게.
    - src 는 반드시 위 papers 의 id 중 하나.
@@ -111,21 +141,44 @@ def build_search_prompt(c: dict) -> str:
 실제 인용 시에는 원문 대조가 필요함을 전제로 한다."""
 
 
-def build_generate_prompt(c: dict, metrics: List[dict], trials: List[dict]) -> str:
+def build_generate_prompt(c: dict, metrics: List[dict], trials: List[dict], form: str) -> str:
     ev = "\n".join(f"- {m.get('label')}: {m.get('val')} (출처 [{m.get('src')}])" for m in metrics)
     tr = "\n".join(f"- {t.get('id')} {t.get('t')} (부합률 {t.get('pct')}%)" for t in trials) or "- 없음"
-    return f"""아래 근거를 바탕으로 '허가초과 사용승인 신청서'의 두 서술 문단을 한국어로 작성하라.
-과장·단정 없이 사실 근거에 기반해 담백하게 쓴다. 각 문단 3~5문장.
+    header = f"""아래 근거를 바탕으로 '허가초과 사용승인 신청서'의 서술 문단을 한국어로 작성하라.
+과장·단정 없이 사실 근거에 기반해 담백하게 쓴다. 각 문단 3~5문장. 채우라고 지정된
+필드만 작성하고, 나머지 필드는 빈 문자열("")로 둔다.
 
+[신청 서식] {FORM_LABELS.get(form, FORM_LABELS['eff'])}
 [약제] {c.get('drug')}
-[질환] {c.get('typeLabel')} · {c.get('stage')} · {c.get('line')}
+[질환] {c.get('typeLabel')} · {c.get('stage')} · {c.get('line')}"""
+    if form == "dose":
+        header += f"\n[기존 허가 용량] {c.get('approvedDose') or '미기재'}\n[신청(증량) 용량] {c.get('requestDose') or '미기재'}"
+    if form == "orphan":
+        header += f"\n[국내 추정 환자 수] {c.get('prevalence') or '미기재'}"
+    body = f"""
 [유효성/안전성 근거]
 {ev}
 [검토된 임상시험]
 {tr}
-
+"""
+    if form == "orphan":
+        fields = """[채울 필드]
+- reason: '신청 사유'. 희귀질환이라 허가 임상근거가 제한적인 상황과 위 근거를 들어 신청 이유를 서술.
+- unmet_need: '대체치료 부재 근거'. 현재 사용 가능한 대체치료가 없거나 매우 제한적임을 서술.
+- approval_status: '국내외 허가·공급 현황'. 해외 허가/오프라벨 사용 관행 등 공급·근거 현황을 서술.
+(alternatives, dose_rationale, benefit_risk 는 "")"""
+    elif form == "dose":
+        fields = """[채울 필드]
+- reason: '신청 사유'. 기존 허가 용량으로 반응이 불충분해 증량이 필요한 상황을 위 근거로 서술.
+- dose_rationale: '용량 설정 근거'. 신청 용량이 근거상 용량-반응 관계로 정당화됨을 서술.
+- benefit_risk: '기존 용량 대비 이익-위해 평가'. 증량의 기대 이익과 용량 관련 위해를 균형 있게 서술.
+(alternatives, unmet_need, approval_status 는 "")"""
+    else:  # eff
+        fields = """[채울 필드]
 - reason: '신청 사유'. 표준치료 소진 상황과 위 근거에 근거해 왜 이 약제를 신청하는지.
-- alternatives: '대체요법 검토'. 현행 급여 대체요법 대비 본 요법의 상대적 임상 이익을 서술."""
+- alternatives: '대체요법 검토'. 현행 급여 대체요법 대비 본 요법의 상대적 임상 이익을 서술.
+(unmet_need, approval_status, dose_rationale, benefit_risk 는 "")"""
+    return header + body + fields
 
 
 # ----------------------------------------------------------------------------
@@ -176,17 +229,26 @@ def sanitize_result(d: dict) -> dict:
         seen_k.add(k)
         clean_metrics.append(m)
 
+    # 유사도 점수 보정: 누락/범위이탈 방지 (프론트가 이 값으로 가중 정렬)
+    axes = ("disease", "biomarker", "stage", "line", "drug")
+    for p in papers:
+        sim = p.get("sim") or {}
+        p["sim"] = {a: _clamp(sim.get(a, 55)) for a in axes}
+
     for t in trials:
-        pct = t.get("pct", 0)
-        try:
-            t["pct"] = max(0, min(100, int(pct)))
-        except Exception:
-            t["pct"] = 0
+        t["pct"] = _clamp(t.get("pct", 0))
         for c in t.get("crit", []):
             if c.get("status") not in ("y", "n", "q"):
                 c["status"] = "q"
 
-    return {"papers": papers, "metrics": clean_metrics, "trials": trials}
+    return {"papers": papers, "metrics": clean_metrics, "trials": trials, "weights": DEFAULT_WEIGHTS}
+
+
+def _clamp(v, lo=0, hi=100):
+    try:
+        return max(lo, min(hi, int(v)))
+    except Exception:
+        return lo
 
 
 # ----------------------------------------------------------------------------
@@ -224,8 +286,9 @@ def create_app() -> Flask:
         c = body.get("case", {})
         metrics = body.get("metrics", [])
         trials = body.get("trials", [])
+        form = body.get("form", "eff")
         try:
-            prose = call_gemini(build_generate_prompt(c, metrics, trials), DocProse)
+            prose = call_gemini(build_generate_prompt(c, metrics, trials, form), DocProse)
             return jsonify(prose)
         except Exception as e:
             return jsonify({"error": str(e)}), 502
