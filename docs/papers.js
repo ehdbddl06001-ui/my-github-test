@@ -2,6 +2,80 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0106",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Early fascia iliaca block documentation in hip-fracture care: A retrospective perioperative pathway audit",
+  "authors": [
+   "Mersal Mahmoud",
+   "Moon Zahid",
+   "Ghauri Ali Ullah",
+   "Purushothaman Aligha",
+   "Elsaidy Sara",
+   "Ahmed Khandaker Touqeer",
+   "Karim Faisal",
+   "Azimi David Yousefi",
+   "et al."
+  ],
+  "journal": "Journal of perioperative practice",
+  "doi": "10.1177/17504589261462323",
+  "pmid": "42500859",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42500859/",
+  "pubdate": "2026-07-25",
+  "date": "2026-07-25",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Fascia iliaca block is recommended as part of multimodal analgesia for patients with hip fracture, but early delivery and timestamped documentation are difficult to confirm in routine practice. This retrospective clinical audit assessed whether early delivery could be demonstrated from routine documentation in an operative hip-fracture pathway. The primary audit measure was fascia iliaca block documented within 2 h of emergency department arrival; exploratory outcomes included 48-h oral morphine equivalent dose, postoperative delirium, 30-day mortality and length of stay. Of 204 analysable episodes, 13 (6.4%; 95% confidence interval 3.8% to 10.6%) had fascia iliaca block documented within 2 h. A further 155 of 359 cleaned operative episodes (43.2%) had no recorded fascia iliaca block timing category. Exploratory outcome comparisons were underpowered because the early-delivery group was small. The findings identify a practical perioperative documentation and pathway gap requiring targeted improvement, mandatory timestamped recording and repeat audit.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0105",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Association Between Social Determinants of Health and Readmission Outcomes in Heart Failure: A Retrospective Cohort Study Using Medical Information Mart for Intensive Care IV (MIMIC-IV)",
+  "authors": [
+   "Odoeke Moses C",
+   "Mbakwe Favour K",
+   "Nnanna Jemie U",
+   "Barrah Vincent U",
+   "Mbonu Jennifer C",
+   "Okwu Steve",
+   "Anyata Anulika",
+   "Abonyi Obinna",
+   "et al."
+  ],
+  "journal": "Cureus",
+  "doi": "10.7759/cureus.111435",
+  "pmid": "42500773",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42500773/",
+  "pubdate": "2026-06",
+  "date": "2026-07-25",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Heart failure remains a major contributor to hospital readmissions and healthcare burden in the United States. Social determinants of health may influence post-discharge outcomes, yet their role among critically ill patients is not fully characterized.\n\n**OBJECTIVE:** To evaluate the association between selected social determinants of health and 30-day readmission among critically ill patients with heart failure.\n\n**METHODS:** This retrospective cohort study used the Medical Information Mart for Intensive Care IV (MIMIC IV) version 3.1 database. Adult patients with heart failure admitted to the intensive care unit were identified using diagnosis codes. The primary outcome was 30-day hospital readmission. Exposures included insurance type, marital status, and race. Multivariable logistic regression was performed, adjusting for age, sex, Charlson Comorbidity Index, Sequential Organ Failure Assessment score, and length of stay.\n\n**RESULTS:** A total of 16,324 patients were included. The 30-day readmission rate was 17.6%. Black patients had higher odds of readmission compared to White patients, aOR: 1.37, 95% CI: 1.21 to 1.56, p<0.001, and Hispanic patients also had higher odds, aOR: 1.31, 95% CI: 1.04 to 1.64, p=0.020. Private insurance was associated with lower odds compared to Medicare (aOR: 0.83, 95% CI: 0.73 to 0.95, p=0.008). A higher Charlson Comorbidity Index and longer length of stay were associated with increased odds of readmission, while a higher Sequential Organ Failure Assessment score was associated with lower odds.\n\n**CONCLUSION:** This study highlights that social and clinical factors are associated with 30-day readmission in critically ill patients with heart failure. Consideration of social context alongside clinical risk may improve identification of patients at higher risk of rehospitalization.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0104",
   "topic": "Surgery",
   "subtopic": "",
