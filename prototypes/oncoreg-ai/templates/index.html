@@ -159,7 +159,7 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);font-si
 <div class="wrap">
 
 <header>
-  <div class="brand"><h1>OncoReg AI</h1><span class="tag">허가초과 근거 문서 생성 · 임상시험 적격성 검토</span><span class="eng off" id="engBadge">엔진 확인 중…</span></div>
+  <div class="brand"><h1>OncoReg AI</h1><span class="tag">허가초과 근거 문서 생성 · 임상시험 적격성 검토</span><span class="eng off" id="engBadge" onclick="setBackend()" title="클릭: 라이브 Gemini 백엔드(Colab) URL 설정" style="cursor:pointer">엔진 확인 중…</span></div>
   <div class="kpi">
     <div class="ok"><b id="kTrace">—</b>출처 추적 가능 비율</div>
     <div><b id="kVer">0/0</b>약사 검증 완료</div>
@@ -345,6 +345,19 @@ const CASES={
 };
 let C=JSON.parse(JSON.stringify(CASES.onco)),selected=[],verified=[],active=null,curTab='lit',t0=null,timer=null,trialSel=[],aiMode=false;
 
+// --- 백엔드 URL 설정 (정적 호스팅=GitHub Pages 에서도 Colab 백엔드에 연결) -------
+let API_BASE=(localStorage.getItem('oncoreg_api')||'').replace(/\/+$/,'');
+const api=p=>API_BASE?API_BASE+'/'+p:p;   // 비어있으면 상대경로(같은 서버)로 동작
+function setBackend(){
+  const cur=localStorage.getItem('oncoreg_api')||'';
+  const u=prompt('라이브 Gemini를 쓰려면 실행 중인 백엔드 URL을 입력하세요.\n(Colab의 https://….trycloudflare.com 또는 http://localhost:8000)\n비우면 데모(샘플) 모드로 동작합니다.',cur);
+  if(u===null)return;
+  API_BASE=u.trim().replace(/\/+$/,'');
+  localStorage.setItem('oncoreg_api',API_BASE);
+  document.getElementById('searchMsg').textContent=API_BASE?('백엔드 설정됨 · '+API_BASE):'데모 모드로 전환됨';
+  checkEngine();
+}
+
 // --- 유사도 계산: 축별 점수 × 가중치 (가중치 합으로 정규화) -------------------
 function paperScore(p){
   if(!p.sim)return 0;
@@ -358,7 +371,7 @@ function sortedPapers(){return [...C.papers].sort((a,b)=>paperScore(b)-paperScor
 async function checkEngine(){
   const badge=document.getElementById('engBadge');
   try{
-    const r=await fetch('api/health');const h=await r.json();
+    const r=await fetch(api('api/health'));const h=await r.json();
     if(h.key_present){badge.textContent='Gemini · '+h.model;badge.classList.remove('off');}
     else{badge.textContent='엔진 연결됨 · API 키 없음';badge.classList.add('off');}
   }catch(e){
@@ -459,7 +472,7 @@ async function search(){
 
   b.disabled=true;m.innerHTML='<span class="spin"></span>Gemini로 유사 문헌·임상시험을 검색·채점하는 중… (10~30초)';
   try{
-    const r=await fetch('api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const r=await fetch(api('api/search'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
     if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
     const data=await r.json();
     b.disabled=false;m.textContent="";applyResult(data,true);
@@ -544,7 +557,7 @@ async function makeDoc(){
   if(aiMode){
     btn.disabled=true;const old=btn.textContent;btn.innerHTML='<span class="spin"></span>Gemini로 서식 문단 생성 중';
     try{
-      const r=await fetch('api/generate',{method:'POST',headers:{'Content-Type':'application/json'},
+      const r=await fetch(api('api/generate'),{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({form:formType(),case:{
             typeLabel:typeText(),stage:val('fStage'),line:val('fLine'),drug:val('fDrug'),
             approvedDose:val('fApprovedDose'),requestDose:val('fRequestDose'),prevalence:val('fPrevalence')},

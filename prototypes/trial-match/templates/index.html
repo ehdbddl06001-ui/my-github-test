@@ -107,7 +107,7 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);font-si
 <div class="wrap">
 
 <header>
-  <div class="brand"><h1>TrialMatch</h1><span class="tag">치료 선택지가 소진된 환자를 위한 임상시험 연결 검색</span><span class="eng off" id="engBadge">엔진 확인 중…</span></div>
+  <div class="brand"><h1>TrialMatch</h1><span class="tag">치료 선택지가 소진된 환자를 위한 임상시험 연결 검색</span><span class="eng off" id="engBadge" onclick="setBackend()" title="클릭: 라이브 백엔드(Colab) URL 설정" style="cursor:pointer">엔진 확인 중…</span></div>
 </header>
 
 <div class="irb">
@@ -175,6 +175,19 @@ const SAMPLE={
 };
 let LAST=null,active=null;
 
+// --- 백엔드 URL 설정 (GitHub Pages 등 정적 호스팅에서도 Colab 백엔드에 연결) -----
+let API_BASE=(localStorage.getItem('trialmatch_api')||'').replace(/\/+$/,'');
+const api=p=>API_BASE?API_BASE+'/'+p:p;
+function setBackend(){
+  const cur=localStorage.getItem('trialmatch_api')||'';
+  const u=prompt('라이브 검색을 쓰려면 실행 중인 백엔드 URL을 입력하세요.\n(Colab의 https://….trycloudflare.com 또는 http://localhost:8001)\n비우면 표본(데모) 모드로 동작합니다.',cur);
+  if(u===null)return;
+  API_BASE=u.trim().replace(/\/+$/,'');
+  localStorage.setItem('trialmatch_api',API_BASE);
+  document.getElementById('msg').textContent=API_BASE?('백엔드 설정됨 · '+API_BASE):'표본 모드로 전환됨';
+  checkEngine();
+}
+
 const STMAP={RECRUITING:["모집중","rec"],NOT_YET_RECRUITING:["모집예정","soon"],ACTIVE_NOT_RECRUITING:["모집종료·진행중","soon"]};
 const PHMAP={PHASE1:"1상",PHASE2:"2상",PHASE3:"3상",PHASE4:"4상",EARLY_PHASE1:"초기 1상",NA:"해당없음"};
 function phaseLabel(ph){return (ph&&ph.length)?ph.map(x=>PHMAP[x]||x).join("·"):"단계 미표기";}
@@ -182,7 +195,7 @@ function normCrit(c){return (c||[]).map(x=>Array.isArray(x)?x:[x.status,x.text])
 
 async function checkEngine(){
   const b=document.getElementById('engBadge');
-  try{const r=await fetch('api/health');const h=await r.json();
+  try{const r=await fetch(api('api/health'));const h=await r.json();
     if(h.key_present){b.textContent='Gemini · '+h.model;b.classList.remove('off');}
     else{b.textContent='엔진 연결됨 · API 키 없음';b.classList.add('off');}
   }catch(e){b.textContent='백엔드 없음 (표본 모드)';b.classList.add('off');document.getElementById('useDemo').checked=true;}
@@ -198,7 +211,7 @@ async function search(){
   if(document.getElementById('useDemo').checked){show(SAMPLE);return;}
   b.disabled=true;m.innerHTML='<span class="spin"></span>Gemini로 검색어를 해석하고 모집중 임상시험을 대조하는 중… (10~30초)';
   try{
-    const r=await fetch('api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    const r=await fetch(api('api/search'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
     if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
     const data=await r.json();b.disabled=false;m.textContent="";show(data);
   }catch(e){b.disabled=false;m.innerHTML='⚠ 백엔드/네트워크 실패 — 표본 데이터로 표시합니다. ('+e.message+')';show(SAMPLE);}
