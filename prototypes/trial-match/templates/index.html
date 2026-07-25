@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrialMatch — 임상시험 연결 검색 (Gemini + ClinicalTrials.gov)</title>
+<style>
+:root{
+  --paper:#FBFAF7;--card:#FFF;--ink:#16181A;--muted:#6B6E73;--faint:#9A9C9F;
+  --rule:#E3DFD7;--rule2:#EFECE6;
+  --seal:#0E6E5E;--seal-bg:#E8F2EF;
+  --alert:#B03A2E;--alert-bg:#FBEEEC;
+  --trial:#5A4B8C;--trial-bg:#EEEBF5;
+  --amber:#9A6A00;--amber-bg:#FBF3DF;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"D2Coding",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Pretendard","Malgun Gothic","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px 80px}
+.demo{background:var(--alert-bg);border-bottom:1px solid #E9CFC9;padding:9px 28px;font-size:12.5px;color:#8A2F26;text-align:center}
+.demo b{font-weight:600}
+header{padding:30px 0 20px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+.brand{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+.brand h1{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.brand .tag{font-size:12px;color:var(--muted);border-left:1px solid var(--rule);padding-left:11px}
+.brand .eng{font-size:11px;color:#fff;background:var(--seal);padding:2px 8px;border-radius:10px;font-family:var(--mono)}
+.brand .eng.off{background:var(--faint)}
+.irb{background:var(--amber-bg);border:1px solid #EAD9A8;border-radius:3px;padding:11px 15px;font-size:12px;color:#6E4E00;margin:16px 0 22px;line-height:1.6}
+.irb b{font-weight:600}
+.searchcard{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:20px}
+.searchcard label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:7px}
+.searchcard textarea{width:100%;min-height:82px;resize:vertical;padding:12px 13px;border:1px solid var(--rule);border-radius:3px;font-family:inherit;font-size:14.5px;line-height:1.6;color:var(--ink);background:#fff}
+.searchcard textarea:focus{outline:2px solid var(--seal);outline-offset:-1px;border-color:transparent}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+.chip{font-size:12px;color:var(--muted);background:#F4F1EB;border:1px solid var(--rule2);border-radius:14px;padding:5px 12px;cursor:pointer}
+.chip:hover{border-color:var(--seal);color:var(--seal)}
+.searchrow{margin-top:15px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+button.go{background:var(--ink);color:#fff;border:0;border-radius:3px;padding:11px 24px;font-family:inherit;font-size:14px;font-weight:500;cursor:pointer}
+button.go:hover{background:#2C2F33} button.go:disabled{background:#C9C6C0;cursor:not-allowed}
+.chk{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer}
+.qbar{margin:22px 0 14px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.qbar .qsum{font-size:13px;color:var(--ink)}
+.qbar .qsum b{color:var(--muted);font-weight:500}
+.qbar .qterms{font-size:11.5px;color:var(--faint);font-family:var(--mono);margin-top:3px}
+.srcbadge{font-size:11px;font-family:var(--mono);padding:3px 9px;border-radius:2px;white-space:nowrap}
+.srcbadge.live{background:var(--seal-bg);color:var(--seal)}
+.srcbadge.sample{background:var(--amber-bg);color:var(--amber)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.tcard{border:1px solid var(--rule);border-radius:4px;background:#fff;margin-bottom:11px;overflow:hidden;cursor:pointer}
+.tcard:hover{border-color:#C9C4BA}
+.tcard.act{border-color:var(--seal)}
+.tcard .thead{padding:14px 16px}
+.tstatus{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:2px;margin-bottom:7px}
+.tstatus.rec{background:var(--seal-bg);color:var(--seal)}
+.tstatus.soon{background:var(--trial-bg);color:var(--trial)}
+.tcard .ttl{font-size:14.5px;font-weight:500;line-height:1.45}
+.tcard .meta{font-size:11.5px;color:var(--muted);font-family:var(--mono);margin-top:5px}
+.tcard .conds{margin-top:7px;display:flex;flex-wrap:wrap;gap:5px}
+.tcard .cond{font-size:11px;background:#F2EFE9;color:var(--muted);border-radius:2px;padding:1px 7px}
+.tcard .sum{font-size:12.5px;color:#33363A;margin-top:9px;line-height:1.55}
+.matchbar{display:flex;align-items:center;gap:9px;margin-top:11px}
+.matchtrack{flex:1;height:6px;background:#EEEBE5;border-radius:3px;overflow:hidden}
+.matchfill{height:100%;background:var(--seal)}
+.matchpct{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--seal)}
+.matchpct.none{color:var(--faint)}
+.tcard .foot{padding:8px 16px;border-top:1px solid var(--rule2);background:#FCFBF9;font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.viewer{position:sticky;top:20px}
+.vempty{border:1px dashed var(--rule);border-radius:4px;padding:44px 24px;text-align:center;color:var(--faint);font-size:13px;background:#FCFBF9}
+.vbox{border:1px solid var(--rule);border-radius:4px;background:#fff;overflow:hidden}
+.vhead{padding:13px 16px;border-bottom:1px solid var(--rule);background:#FCFBF9}
+.vhead .vt{font-size:13.5px;font-weight:500;line-height:1.4}
+.vhead .vm{font-size:11px;color:var(--muted);font-family:var(--mono);margin-top:3px}
+.vsec{padding:14px 16px;border-bottom:1px solid var(--rule2)}
+.vsec:last-child{border-bottom:0}
+.vsec .vl{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.crit{list-style:none}
+.crit li{font-size:12.5px;padding:3px 0 3px 20px;position:relative;line-height:1.55}
+.crit li.y::before{content:"✓";position:absolute;left:0;color:var(--seal);font-weight:600}
+.crit li.n::before{content:"—";position:absolute;left:0;color:var(--alert)}
+.crit li.q::before{content:"?";position:absolute;left:0;color:var(--faint);font-weight:600}
+.crit li.n{color:var(--alert)}
+.eltext{font-size:12px;line-height:1.7;color:#44474B;white-space:pre-wrap;max-height:220px;overflow:auto;background:#FCFBF9;border:1px solid var(--rule2);border-radius:3px;padding:11px}
+.loc{font-size:12.5px;color:#33363A;padding:5px 0;border-bottom:1px solid var(--rule2)}
+.loc:last-child{border-bottom:0}
+.loc .lc{font-size:11px;color:var(--faint);font-family:var(--mono)}
+.contact{font-size:12.5px;color:#33363A;font-family:var(--mono);padding:2px 0}
+.inq{font-size:12.5px;line-height:1.7;color:#33363A;white-space:pre-wrap;background:var(--seal-bg);border:1px solid #C5DFD8;border-radius:3px;padding:12px}
+.btnrow{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+button.ghost{background:#fff;color:var(--ink);border:1px solid var(--rule);border-radius:3px;padding:7px 13px;font-family:inherit;font-size:12.5px;cursor:pointer}
+button.ghost:hover{background:#FAF8F4}
+a.ext{font-size:12px;color:var(--seal);text-decoration:none;font-family:var(--mono)}
+a.ext:hover{text-decoration:underline}
+.note{font-size:11.5px;color:var(--faint);margin-top:10px;line-height:1.6}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid var(--rule);border-top-color:var(--ink);border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:7px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.spin{animation:none}}
+.empty{border:1px dashed var(--rule);border-radius:4px;padding:40px 24px;text-align:center;color:var(--faint);font-size:13px;background:#FCFBF9}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);font-size:11.5px;color:var(--faint);line-height:1.7}
+</style>
+</head>
+<body>
+
+<div class="demo"><b>데모 화면입니다.</b> 임상시험 정보는 ClinicalTrials.gov 공개 데이터를 조회하는 방식을 시연하며, 적합도 점수는 Gemini가 생성한 참고 추정치입니다. 실제 참여 적격 여부·연락은 각 실시기관의 절차를 따릅니다.</div>
+
+<div class="wrap">
+
+<header>
+  <div class="brand"><h1>TrialMatch</h1><span class="tag">치료 선택지가 소진된 환자를 위한 임상시험 연결 검색</span><span class="eng off" id="engBadge">엔진 확인 중…</span></div>
+</header>
+
+<div class="irb">
+  <b>연결 범위(윤리·규제 경계)</b> — 본 플랫폼은 <b>공개 등록되어 현재 '모집 중'인 임상시험</b>만 조회합니다(중재연구는 기관생명윤리위원회(IRB)/규제기관 승인 하에 등록·수행됩니다). 본 도구는 <b>환자를 직접 모집·중개하지 않으며</b>, 표시되는 연락처는 각 시험의 공식 등록 연락처입니다. 최종 참여 결정과 적격 판정은 <b>담당 의료진과 실시기관</b>이 수행합니다. 개인 식별정보는 입력하지 마세요.
+</div>
+
+<div class="searchcard">
+  <label>환자 상황을 자유롭게 적어주세요 (진단명, 이전 치료, 바이오마커, 지역 등 — 식별정보 제외)</label>
+  <textarea id="q" placeholder="예) 전신성 경화증에 동반된 폐동맥고혈압입니다. 3제 병용요법에도 6분 보행거리가 늘지 않고 WHO 기능분류 III입니다. 국내에서 참여 가능한 시험을 찾고 있어요."></textarea>
+  <div class="chips" id="chips"></div>
+  <div class="searchrow">
+    <button class="go" id="btnSearch" onclick="search()">임상시험 검색</button>
+    <label class="chk"><input type="checkbox" id="useDemo"> 표본 데이터로 미리보기 (실검색 안 함)</label>
+    <span id="msg" style="font-size:12.5px;color:var(--muted)"></span>
+  </div>
+</div>
+
+<div class="qbar" id="qbar" style="display:none">
+  <div><div class="qsum" id="qsum"></div><div class="qterms" id="qterms"></div></div>
+  <div class="srcbadge" id="srcbadge"></div>
+</div>
+
+<div class="split">
+  <div id="resultsCol"></div>
+  <div class="viewer" id="viewer">
+    <div class="vempty">시험을 클릭하면 선정기준·기관·연락처와<br>담당 의사 전달용 문의 초안이 여기에 표시됩니다</div>
+  </div>
+</div>
+
+<footer>
+  본 화면은 창업 프로그램 제출용 프로토타입입니다. 임상시험 데이터는 ClinicalTrials.gov API를 통해 조회하는 방식을 가정하며(네트워크 미도달 시 '표본' 데이터로 대체 표시), 적합도 점수는 Gemini가 선정기준과 대조해 생성한 참고 추정치로 실제 적격성을 보장하지 않습니다. 본 도구는 진단·치료를 판정하지 않고 환자를 모집하지 않으며, 정보 제공과 담당 의료진 상담 보조만을 목적으로 합니다.
+</footer>
+</div>
+
+<script>
+const EXAMPLES=[
+  "전신성 경화증에 동반된 폐동맥고혈압입니다. 3제 병용에도 6분 보행거리가 늘지 않고 WHO 기능분류 III입니다. 국내 시험을 찾고 있어요.",
+  "희귀 고형암 환자입니다. 표준치료와 표적치료까지 모두 진행했고 ECOG 1, 특정 바이오마커 양성입니다.",
+  "HER2 저발현 전이성 유방암, 이전 항암 2차 이상 진행했습니다. 새로운 ADC 시험이 있는지 궁금합니다."
+];
+// 백엔드 미연결/표본 미리보기용 임베디드 결과(구조는 실데이터와 동일, 명확히 표본 표시)
+const SAMPLE={
+ query:{summary_ko:"(표본) 결합조직질환 관련 폐동맥고혈압, 병용요법 반응 불충분 환자",condition_en:"systemic sclerosis pulmonary arterial hypertension",other_terms:"combination therapy",location_en:"Korea"},
+ source:"sample",
+ results:[
+  {nctId:"NCT00000000",title:"[표본] 결합조직질환 관련 폐동맥고혈압 대상 신규 경구제 3상",status:"RECRUITING",phases:["PHASE3"],
+   conditions:["Pulmonary Arterial Hypertension","Systemic Sclerosis"],interventions:["Investigational oral agent"],
+   eligibilityText:"Inclusion: adults with CTD-associated PAH, WHO FC II-III, 6MWD 150-450m, on stable background therapy >=3 months.\nExclusion: PVOD, severe hepatic impairment.",
+   sex:"ALL",minAge:"19 Years",maxAge:"80 Years",
+   locations:[{facility:"[표본] 서울 소재 대학병원",city:"Seoul",country:"Korea, Republic of",status:"RECRUITING"}],
+   contacts:[{name:"[표본] 임상시험 코디네이터",phone:"02-000-0000",email:"trial@example.org"}],
+   url:"https://clinicaltrials.gov/",
+   matchPct:88,summary:"질환·기능분류·병용치료 조건이 선정기준과 대체로 부합합니다.",note:"6MWD 범위와 배경치료 유지 기간 확인 필요.",
+   crit:[["y","결합조직질환 관련 폐동맥고혈압"],["y","WHO 기능분류 II–III"],["q","6분 보행거리 150–450m — 수치 확인 필요"],["y","배경치료 3개월 이상 유지"],["q","우측 심도자 검사 시점 확인"]]},
+  {nctId:"NCT00000002",title:"[표본] 폐동맥고혈압 환자 레지스트리 기반 관찰연구",status:"NOT_YET_RECRUITING",phases:[],
+   conditions:["Pulmonary Hypertension"],interventions:[],
+   eligibilityText:"Inclusion: confirmed pulmonary hypertension, age >=19. Observational, no additional intervention.",
+   sex:"ALL",minAge:"19 Years",maxAge:"N/A",
+   locations:[{facility:"[표본] 국내 다기관",city:"Seoul",country:"Korea, Republic of",status:"NOT_YET_RECRUITING"}],
+   contacts:[{name:"[표본] 연구간호사",phone:"02-000-0002",email:"registry@example.org"}],
+   url:"https://clinicaltrials.gov/",
+   matchPct:61,summary:"관찰연구로 참여 부담은 낮으나 직접적 치료 효과는 기대하기 어렵습니다.",note:"중재가 없어 치료 목적과는 거리가 있음.",
+   crit:[["y","폐고혈압 확진"],["y","연령 19세 이상"],["q","정기 추적 가능 여부 확인 필요"]]}
+ ]
+};
+let LAST=null,active=null;
+
+const STMAP={RECRUITING:["모집중","rec"],NOT_YET_RECRUITING:["모집예정","soon"],ACTIVE_NOT_RECRUITING:["모집종료·진행중","soon"]};
+const PHMAP={PHASE1:"1상",PHASE2:"2상",PHASE3:"3상",PHASE4:"4상",EARLY_PHASE1:"초기 1상",NA:"해당없음"};
+function phaseLabel(ph){return (ph&&ph.length)?ph.map(x=>PHMAP[x]||x).join("·"):"단계 미표기";}
+function normCrit(c){return (c||[]).map(x=>Array.isArray(x)?x:[x.status,x.text]);}
+
+async function checkEngine(){
+  const b=document.getElementById('engBadge');
+  try{const r=await fetch('api/health');const h=await r.json();
+    if(h.key_present){b.textContent='Gemini · '+h.model;b.classList.remove('off');}
+    else{b.textContent='엔진 연결됨 · API 키 없음';b.classList.add('off');}
+  }catch(e){b.textContent='백엔드 없음 (표본 모드)';b.classList.add('off');document.getElementById('useDemo').checked=true;}
+}
+function renderChips(){document.getElementById('chips').innerHTML=EXAMPLES.map((e,i)=>
+  `<span class="chip" onclick="useExample(${i})">${e.slice(0,26)}…</span>`).join('');}
+function useExample(i){document.getElementById('q').value=EXAMPLES[i];}
+
+async function search(){
+  const text=document.getElementById('q').value.trim();
+  const b=document.getElementById('btnSearch'),m=document.getElementById('msg');
+  if(!text){m.textContent="환자 상황을 먼저 입력하세요.";return;}
+  if(document.getElementById('useDemo').checked){show(SAMPLE);return;}
+  b.disabled=true;m.innerHTML='<span class="spin"></span>Gemini로 검색어를 해석하고 모집중 임상시험을 대조하는 중… (10~30초)';
+  try{
+    const r=await fetch('api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
+    const data=await r.json();b.disabled=false;m.textContent="";show(data);
+  }catch(e){b.disabled=false;m.innerHTML='⚠ 백엔드/네트워크 실패 — 표본 데이터로 표시합니다. ('+e.message+')';show(SAMPLE);}
+}
+
+function show(data){
+  LAST=data;active=null;
+  const q=data.query||{};
+  document.getElementById('qbar').style.display='flex';
+  document.getElementById('qsum').innerHTML='<b>해석된 검색:</b> '+(q.summary_ko||'');
+  document.getElementById('qterms').textContent=[q.condition_en,q.other_terms,q.location_en].filter(Boolean).join(' · ');
+  const sb=document.getElementById('srcbadge');
+  if(data.source==='clinicaltrials.gov'){sb.className='srcbadge live';sb.textContent='실데이터 · ClinicalTrials.gov';}
+  else{sb.className='srcbadge sample';sb.textContent='표본 데이터 (실 API 미도달/미리보기)';}
+  renderResults();
+  document.getElementById('viewer').innerHTML='<div class="vempty">시험을 클릭하면 선정기준·기관·연락처와<br>담당 의사 전달용 문의 초안이 여기에 표시됩니다</div>';
+  window.scrollTo({top:document.getElementById('qbar').offsetTop-20,behavior:'smooth'});
+}
+
+function renderResults(){
+  const res=(LAST.results||[]);
+  const col=document.getElementById('resultsCol');
+  if(!res.length){col.innerHTML='<div class="empty">조건에 맞는 모집중 임상시험을 찾지 못했습니다.<br>검색어를 더 일반적인 진단명으로 바꾸거나 지역 조건을 빼보세요.</div>';return;}
+  col.innerHTML=res.map((t,i)=>{
+    const st=STMAP[t.status]||[t.status||'상태미상','soon'];
+    const pct=t.matchPct;
+    const conds=(t.conditions||[]).slice(0,4).map(c=>`<span class="cond">${c}</span>`).join('');
+    return `<div class="tcard${active===i?' act':''}" onclick="showTrial(${i})">
+      <div class="thead">
+        <span class="tstatus ${st[1]}">${st[0]}</span>
+        <div class="ttl">${t.title}</div>
+        <div class="meta">${t.nctId||''} · ${phaseLabel(t.phases)}${t.locations&&t.locations[0]?' · '+(t.locations[0].country||''):''}</div>
+        <div class="conds">${conds}</div>
+        ${t.summary?`<div class="sum">${t.summary}</div>`:''}
+        <div class="matchbar"><div class="matchtrack"><div class="matchfill" style="width:${pct||0}%"></div></div>
+          <span class="matchpct${pct==null?' none':''}">${pct==null?'점수없음':'적합도 '+pct}</span></div>
+      </div>
+      <div class="foot"><span>선정기준 ${normCrit(t.crit).filter(c=>c[0]==='y').length}/${normCrit(t.crit).length}항목 부합 · 클릭하면 상세</span>
+        <span>${(t.contacts&&t.contacts.length)?'연락처 있음':'연락처 미표기'}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function inquiryDraft(t){
+  const patient=document.getElementById('q').value.trim();
+  const st=(STMAP[t.status]||['모집'])[0];
+  return `[임상시험 참여 문의 초안 — 담당 의료진 전달용]
+
+안녕하세요. 아래 임상시험 참여 가능성을 문의드립니다.
+· 시험명: ${t.title}
+· 등록번호: ${t.nctId} (ClinicalTrials.gov)
+· 상태: ${st}
+· 등록정보: ${t.url||'ClinicalTrials.gov'}
+
+환자 상황(요약): ${patient||'(입력한 상황)'}
+
+선정/제외 기준 충족 여부와 다음 절차를 안내 부탁드립니다.
+※ 본 문의는 참고용 초안이며, 최종 적격 여부는 실시기관의 선별검사로 확정됩니다.`;
+}
+
+function showTrial(i){
+  active=i;const t=LAST.results[i];
+  const lab={y:"부합",n:"불충족",q:"확인 필요"};
+  const crit=normCrit(t.crit);
+  const critHtml=crit.length?`<ul class="crit">${crit.map(c=>`<li class="${c[0]}">${c[1]} <span style="color:var(--faint);font-size:11px">(${lab[c[0]]||'확인 필요'})</span></li>`).join('')}</ul>`:'<div class="note">선정기준 요약이 제공되지 않았습니다. 원문을 확인하세요.</div>';
+  const locs=(t.locations||[]);
+  const locHtml=locs.length?locs.map(l=>`<div class="loc">${l.facility||'(기관명 미표기)'}<div class="lc">${[l.city,l.country].filter(Boolean).join(', ')}${l.status?' · '+l.status:''}</div></div>`).join(''):'<div class="note">등록된 실시기관 정보가 없습니다.</div>';
+  const cons=(t.contacts||[]).filter(c=>c.name||c.phone||c.email);
+  const conHtml=cons.length?cons.map(c=>`<div class="contact">${[c.name,c.phone,c.email].filter(Boolean).join(' · ')}</div>`).join(''):'<div class="note">공식 등록 연락처가 없습니다. 담당 의료진을 통해 실시기관에 문의하세요.</div>';
+  const demo=[t.minAge,t.maxAge].filter(x=>x&&x!=='N/A').join(' ~ ');
+  document.getElementById('viewer').innerHTML=`<div class="vbox">
+    <div class="vhead"><div class="vt">${t.title}</div>
+      <div class="vm">${t.nctId} · ${phaseLabel(t.phases)}${demo?' · '+demo:''}${t.sex&&t.sex!=='ALL'?' · '+t.sex:''}</div></div>
+    <div class="vsec"><div class="vl">환자 기준 선정·제외 대조 ${t.matchPct!=null?'· 적합도 '+t.matchPct:''}</div>${critHtml}
+      ${t.note?`<div class="note">${t.note}</div>`:''}</div>
+    <div class="vsec"><div class="vl">원문 선정기준 (eligibility)</div>
+      <div class="eltext">${(t.eligibilityText||'원문 미제공').replace(/</g,'&lt;')}</div></div>
+    <div class="vsec"><div class="vl">실시기관</div>${locHtml}</div>
+    <div class="vsec"><div class="vl">공식 등록 연락처</div>${conHtml}
+      ${t.url?`<div class="btnrow"><a class="ext" href="${t.url}" target="_blank" rel="noopener">ClinicalTrials.gov 원문 보기 ↗</a></div>`:''}</div>
+    <div class="vsec"><div class="vl">담당 의료진 전달용 문의 초안</div>
+      <div class="inq" id="inqText">${inquiryDraft(t)}</div>
+      <div class="btnrow"><button class="ghost" onclick="copyInq()">문의 초안 복사</button></div>
+      <div class="note">본 플랫폼은 환자를 직접 모집·중개하지 않습니다. 위 초안을 담당 의료진과 상의해 활용하세요.</div></div>
+  </div>`;
+  renderResults();
+}
+function copyInq(){const el=document.getElementById('inqText');
+  navigator.clipboard&&navigator.clipboard.writeText(el.textContent).then(()=>{
+    const b=event.target;const o=b.textContent;b.textContent='복사됨 ✓';setTimeout(()=>b.textContent=o,1500);});}
+
+renderChips();checkEngine();
+</script>
+</body>
+</html>
