@@ -117,25 +117,29 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
    "special": true/false,          // 특이/복잡 케이스면 true, 전형적이면 false
    "summary_ko":"1~2문장 요약"
  },
- "papers": [                        // 6~8편. 근거수준을 섞고, 유사도가 서로 다르게.
-   {
+ "references": [                    // 핵심 지표의 한국·미국·유럽 '기준치/정상범위'(가이드라인 근거)
+   {"metric":"예: HbA1c","unit":"%","kr":"한국 기준","us":"미국 기준","eu":"유럽 기준"}
+ ],
+ "guideline_links": {              // 한/미/유럽 대표 가이드라인 접속 링크
+   "kr":{"name":"기관/지침명","url":"실제 접속 가능 URL"},
+   "us":{"name":"","url":""}, "eu":{"name":"","url":""}
+ },
+ "papers": [                        // 6~8편. '연구논문 약 절반 + 증례(case report/series) 약 절반'.
+   {                               //   ※ 진료지침(가이드라인)은 papers 에 넣지 않는다(문서작성 단계 담당).
      "id":1, "title":"제목(한국어)", "journal":"출처", "year":2023, "n":정수 또는 null,
      "doi":"있으면 DOI, 없으면 \\"\\"",
      "evidence_level":"체계적 문헌고찰/메타분석|무작위 대조연구(RCT)|코호트 연구|환자-대조군 연구|사례군/사례보고",
      "evidence_rank":1,             // 1(최상)~5(최하)
      "sim":{"symptom":0-100,"age":0-100,"comorbidity":0-100,"pathology":0-100,"priormed":0-100},
-     "sim_detail":{                 // 각 축이 '왜 그 점수인지' 한 구절씩(구체적으로)
-       "symptom":"예: 증상/중증도 유사","age":"예: 연령대 포함","comorbidity":"예: 동반질환 일치",
-       "pathology":"예: 병리/기전 일치","priormed":"예: 이전 치료 경험 일치"
-     },
-     "relevance":0-100,             // 이 케이스의 '문서작성 유용성'을 스스로 종합 판단한 점수.
-                                    //   진료지침/직접 해당하는 RCT=높게(85~100), 부수적=낮게. 정렬 기준.
-     "why":"이 논문이 본 환자와 얼마나/왜 유사·적합한지 2~3문장(무엇이 같고 무엇이 다른지 구체적으로)",
-     "items":[                       // 서식 각 칸에 넣을 '근거 조각'. 반드시 원문 한 문장·위치·대상 칸 포함.
+     "sim_detail":{"symptom":"","age":"","comorbidity":"","pathology":"","priormed":""},
+     "relevance":0-100,             // 문서작성 유용성 종합판단. 정렬 기준.
+     "why":"이 논문이 본 환자와 얼마나/왜 유사·적합한지 2~3문장",
+     "items":[                       // 서식 각 칸에 넣을 '근거 조각'. 원문 한 문장·위치·대상 칸·한국기준 부합 포함.
        {"key":"ORR","label":"객관적 반응률","value":"52.6%",
         "pre":"영어 원문 앞부분 ","mark":"the ORR was 52.6%","post":" ...(원문 문장 끝).",
-        "loc":"Results · Table 2",
-        "field":"evidence"          // 이 항목이 들어갈 서식 칸(아래 목록 중 하나)
+        "loc":"Results · Table 2", "field":"evidence",
+        "kr_ok": true,              // 이 수치가 '한국 기준치/권고'에 부합하면 true, 어긋나면 false
+        "kr_note": "한국 기준 대비 한 줄(부합/불일치 사유)"
        }
      ]
    }
@@ -154,14 +158,13 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
   잘 모르면 "evidence".
 
 규칙:
-- **relevance 는 사용자 케이스에 대한 '문서작성 유용성'을 스스로 판단해 매긴다**. 진료지침·직접
-  해당하는 RCT는 85~100, 부분적으로만 겹치면 낮게. (사용자에게 가중치를 묻지 않는다 — 모델이 판단)
-- papers 6~8편, 근거수준 다양(메타분석~사례보고). 같은 질환이라도 매번 조금씩 다른 논문을
-  제시해도 좋다(temperature 반영). 희귀질환이면 사례군/사례보고도 포함.
-- 각 논문 items 2~5개로 '여러 칸'을 채우도록 field 를 다양하게(유효성·특장점·대상·용법 등).
-  안전성 item 1개 이상(key 를 "AE"로, field 는 "evidence").
-- pre/mark/post 는 실제 논문에 나올 법한 '영어 원문 한 문장'으로, mark 안에 value 가 그대로 포함.
-- sim 6축을 냉정하게 매기고, sim_detail 로 근거를 남긴다. 과장 금지, 검증 전 초안."""
+- **papers 는 진료지침(가이드라인)을 넣지 않는다.** 6~8편 중 **약 절반은 원저 연구(RCT/코호트/
+  메타), 나머지 절반은 증례(사례군/사례보고)**. 같은 질환이라도 매번 조금씩 다른 논문을 제시해도 좋다.
+- relevance 는 '문서작성 유용성' 종합판단(원저·직접 근거 높게). 가중치는 묻지 않고 모델이 판단.
+- 각 item 에 kr_ok(한국 기준 부합 여부)·kr_note 를 반드시 넣는다. **한국 기준을 벗어나는 값은 kr_ok=false.**
+- references 는 2~4개 핵심 지표(한/미/유럽 기준치), guideline_links 는 한/미/유럽 각 1개(실제 접속 URL).
+- items 2~5개로 field 다양히. 안전성 item 1개 이상(key 를 "AE"로, field 는 "evidence").
+- pre/mark/post 는 영어 원문 한 문장(value 포함). 과장 금지, 검증 전 초안."""
 
 DRUG_SYS = """당신은 의약품 규제·급여 정보를 정리하는 의학 보조자다. 준 약제(또는 질환)에 대해
 허가초과/희귀의약품/긴급(신속)승인 관점 정보를 구조화한다. 아래 JSON '하나의 객체'로만. 한국어.
@@ -192,6 +195,19 @@ FIELD_SYS = """당신은 허가초과 사용승인 신청서의 '특정 칸' 초
 규칙: 반드시 한국·미국·유럽 각 1개씩. URL은 실제 접속 가능한 공식·대표 페이지(모르면 해당 기관
 대표 도메인). 규제·용량은 '지침 원문 확인 필요'를 전제로 단정하지 않는다."""
 
+VERIFY_SYS = """당신은 허가초과 사용승인 신청서 초안을 '검증'한다. 각 칸의 내용에서 사실 불일치,
+한국 기준 위반, 누락, 과장, 근거 없는 수치를 찾아 JSON '하나'로만 답한다.
+{"ok": true, "issues":[{"field":"칸 이름","severity":"high|medium|low","note":"문제와 수정 제안"}]}
+문제 없으면 ok=true, issues=[]. 확실치 않으면 severity 는 medium 이하."""
+
+TRIALS_SYS = """당신은 '진행 중인 임상시험 연결(expanded access)'을 돕는 검색 보조자다. 표준치료가
+소진된 환자 상황을 받아, 참여를 검토할 만한 임상시험을 구조화한다. JSON '하나'로만. 한국어.
+{"summary":"해석 요약","trials":[
+  {"title":"","phase":"1상|2상|3상|관찰연구","status":"모집중|모집예정|미상","where":"국내 n개 기관 등",
+   "nct":"NCT번호(있으면) 또는 \\"\\"","url":"ClinicalTrials.gov 검색/등록 URL",
+   "eligibility":["핵심 선정기준 3~5개"],"match":"이 환자와의 부합 한 줄"}]}
+규칙: 실제 등록 확인 전 참고용(등록번호·기관은 반드시 확인 필요). url 은 접속 가능한 검색 링크라도 제공."""
+
 
 # ---------------------------------------------------------------- 정합성 보정
 def sanitize_papers(papers):
@@ -218,6 +234,8 @@ def sanitize_papers(papers):
             it["key"] = it.get("key") or f"IT{i}_{j}"
             if it.get("field") not in valid_fields:
                 it["field"] = "evidence"
+            if it.get("kr_ok") is None:
+                it["kr_ok"] = True
             items.append(it)
         p["items"] = items
         out.append(p)
@@ -291,6 +309,29 @@ def create_app() -> Flask:
         try:
             usr = f"[작성할 칸] {label}\n[약제] {drug}\n[환자 상태] {patient}"
             return jsonify(chat_json(FIELD_SYS, usr, temperature=0.4))
+        except Exception as e:
+            traceback.print_exc()
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
+
+    @app.post("/api/verify")
+    def verify():
+        b = request.get_json(force=True) or {}
+        fields = b.get("fields", {})
+        usr = ("[약제] " + str(b.get("drug", "")) + "\n[환자] " + str(b.get("patient", "")) +
+               "\n[신청서 칸]\n" + "\n".join(f"- {k}: {v}" for k, v in fields.items() if v))
+        try:
+            return jsonify(chat_json(VERIFY_SYS, usr, temperature=0.2))
+        except Exception as e:
+            traceback.print_exc()
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
+
+    @app.post("/api/trials")
+    def trials():
+        text = (request.get_json(force=True) or {}).get("text", "").strip()
+        if not text:
+            return jsonify({"error": "환자 상황을 입력하세요."}), 400
+        try:
+            return jsonify(chat_json(TRIALS_SYS, f"[환자 상황]\n{text}", temperature=0.5))
         except Exception as e:
             traceback.print_exc()
             return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
