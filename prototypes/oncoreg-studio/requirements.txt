@@ -1,0 +1,4 @@
+openai>=1.30
+flask>=3.0
+flask-cors>=4.0
+flask-cloudflared>=0.0.14

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OncoReg Studio — 자유서술 검색 · 근거 가중 · 문서 스튜디오</title>
+<style>
+:root{
+  --paper:#FBFAF7;--card:#FFF;--ink:#16181A;--muted:#6B6E73;--faint:#9A9C9F;
+  --rule:#E3DFD7;--rule2:#EFECE6;--seal:#0E6E5E;--seal-bg:#E8F2EF;
+  --alert:#B03A2E;--alert-bg:#FBEEEC;--trial:#5A4B8C;--trial-bg:#EEEBF5;
+  --amber:#9A6A00;--amber-bg:#FBF3DF;--mark:#FFF0B8;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"D2Coding",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Pretendard","Malgun Gothic","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px 70px}
+.demo{background:var(--amber-bg);border-bottom:1px solid #EAD9A8;padding:8px 24px;font-size:12px;color:#6E4E00;text-align:center}
+.demo b{font-weight:600}
+header{padding:24px 0 16px;border-bottom:1px solid var(--rule);margin-bottom:18px}
+.brand{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+.brand h1{font-size:19px;font-weight:600;letter-spacing:-.02em}
+.brand .tag{font-size:12px;color:var(--muted);border-left:1px solid var(--rule);padding-left:11px}
+.brand .eng{font-size:11px;color:#fff;background:var(--seal);padding:2px 8px;border-radius:10px;font-family:var(--mono);cursor:pointer}
+.brand .eng.off{background:var(--faint)}
+.tabs{display:flex;gap:8px;margin:16px 0 4px}
+.tabs button{border:1px solid var(--rule);background:#fff;padding:9px 16px;font-family:inherit;font-size:13.5px;color:var(--muted);cursor:pointer;border-radius:20px}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.view{display:none}.view.on{display:block}
+.chatcard{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:18px}
+.chatcard label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:8px}
+textarea{width:100%;min-height:88px;resize:vertical;padding:12px 13px;border:1px solid var(--rule);border-radius:5px;font-family:inherit;font-size:14.5px;line-height:1.6;color:var(--ink);background:#fff}
+textarea:focus,input:focus,select:focus{outline:2px solid var(--seal);outline-offset:-1px;border-color:transparent}
+input.txt,select.sel{padding:9px 11px;border:1px solid var(--rule);border-radius:5px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.chip{font-size:12px;color:var(--muted);background:#F4F1EB;border:1px solid var(--rule2);border-radius:14px;padding:5px 12px;cursor:pointer}
+.chip:hover{border-color:var(--seal);color:var(--seal)}
+.row{margin-top:14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+button.go{background:var(--ink);color:#fff;border:0;border-radius:5px;padding:11px 22px;font-family:inherit;font-size:14px;font-weight:500;cursor:pointer}
+button.go:hover{background:#2C2F33}button.go:disabled{background:#C9C6C0;cursor:not-allowed}
+button.ghost{background:#fff;color:var(--ink);border:1px solid var(--rule);border-radius:5px;padding:9px 15px;font-family:inherit;font-size:13px;cursor:pointer}
+button.ghost:hover{background:#FAF8F4}
+.chk{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:6px;cursor:pointer}
+.qsum{margin:18px 0 8px;font-size:13.5px}.qsum b{color:var(--muted);font-weight:500}
+.qchips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 4px}
+.qc{font-size:11.5px;font-family:var(--mono);background:var(--seal-bg);color:var(--seal);border-radius:3px;padding:2px 8px}
+.simwrap{border:1px solid var(--rule);border-radius:6px;background:#fff;padding:13px 15px;margin:14px 0}
+.simwrap .sh{font-size:12px;color:var(--muted);margin-bottom:9px}.simwrap .sh b{color:var(--ink)}
+.wt{display:grid;grid-template-columns:92px 1fr 30px;gap:10px;align-items:center;margin-bottom:5px}
+.wt label{font-size:12px}.wt input[type=range]{width:100%;accent-color:var(--seal)}
+.wt .wv{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right}
+.pcard{border:1px solid var(--rule);border-radius:6px;background:#fff;margin-bottom:10px;overflow:hidden}
+.pcard.top{border-color:var(--seal)}
+.pcard .ph{padding:13px 15px}
+.pcard .pt{font-size:14.5px;font-weight:500;line-height:1.45}
+.pcard .pm{font-size:11.5px;color:var(--muted);font-family:var(--mono);margin-top:4px}
+.pcard .fit{font-size:12px;color:#33363A;margin-top:7px}
+.evb{display:inline-block;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:3px;margin-right:6px;vertical-align:1px}
+.ev1{background:#DDEEE6;color:#0B5647}.ev2{background:#E6EFDD;color:#3B5A16}.ev3{background:#EDEBD6;color:#6E5E10}
+.ev4{background:#F3E7DA;color:#7A4E12}.ev5{background:#F1E4E2;color:#8A2F26}
+.topbadge{display:inline-block;font-size:10.5px;color:#fff;background:var(--seal);border-radius:3px;padding:1px 7px;margin-left:6px;font-weight:600}
+.simline{display:flex;align-items:center;gap:8px;margin-top:9px}
+.simtrack{flex:1;height:5px;background:#EEEBE5;border-radius:3px;overflow:hidden}
+.simfill{height:100%;background:var(--seal)}
+.simsc{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--seal)}
+.items{border-top:1px solid var(--rule2);background:#FCFBF9;padding:9px 15px;display:flex;flex-wrap:wrap;gap:6px}
+.itchip{font-size:11.5px;font-family:var(--mono);background:#fff;border:1px solid var(--rule);border-radius:3px;padding:3px 8px;cursor:default}
+.itchip b{color:var(--seal)}
+.dcard{border:1px solid var(--rule);border-radius:6px;background:#fff;padding:16px;margin-bottom:12px}
+.dcard h3{font-size:14px;font-weight:600;margin-bottom:8px}
+.deslist{list-style:none}.deslist li{font-size:13px;padding:4px 0 4px 16px;position:relative;color:#33363A}
+.deslist li::before{content:"–";position:absolute;left:0;color:var(--seal)}
+.gl-row{display:flex;gap:8px;flex-wrap:wrap}
+/* studio */
+.studio{display:grid;grid-template-columns:minmax(360px,44%) 1fr;gap:18px;align-items:start}
+@media(max-width:960px){.studio{grid-template-columns:1fr}}
+.pane{border:1px solid var(--rule);border-radius:6px;background:#fff;padding:14px}
+.pane h3{font-size:13px;font-weight:600;margin-bottom:9px}
+.ctrl{display:grid;grid-template-columns:96px 1fr;gap:8px 10px;align-items:center;font-size:12.5px;margin-bottom:5px}
+.ctrl label{color:var(--muted)}
+.palette{border:1px dashed var(--rule);border-radius:5px;padding:10px;background:#FCFBF9;margin:10px 0}
+.palette .pl{font-size:11.5px;color:var(--faint);margin-bottom:7px}
+.pitem{display:inline-block;font-size:11.5px;font-family:var(--mono);background:#fff;border:1px solid var(--rule);border-radius:3px;padding:3px 8px;margin:0 5px 5px 0;cursor:pointer}
+.pitem:hover{border-color:var(--seal);color:var(--seal)}
+.pitem b{color:var(--seal)}
+.srcview{font-size:12px;line-height:1.7;color:#44474B;background:#fff;border:1px solid var(--rule2);border-radius:4px;padding:9px;margin-top:8px;min-height:20px}
+.srcview mark{background:var(--mark);padding:0 2px;border-radius:1px}
+.fld{border:1px solid var(--rule2);border-radius:5px;padding:9px 10px;margin-bottom:9px}
+.fld .fh{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+.fld .fn{font-size:12px;font-weight:600}
+.fld .fx{font-size:10.5px;color:var(--faint)}
+.fld textarea{min-height:46px;font-size:13px;padding:7px 9px}
+.fld.act{border-color:var(--seal);box-shadow:0 0 0 1px var(--seal) inset}
+.viewer{position:sticky;top:14px}
+/* 관공서 서식 */
+.gov{color:#111;font-size:12px;line-height:1.5}
+.gov .ghead{font-size:10.5px;color:#333;margin-bottom:5px}
+.gov h3.gt{text-align:center;font-size:16px;font-weight:700;letter-spacing:.05em;margin:2px 0}
+.gov .gsub{text-align:center;font-size:11.5px;color:#333;margin-bottom:8px}
+.gov table.gf{width:100%;border-collapse:collapse;border:1.4px solid #222;table-layout:fixed}
+.gov table.gf td{border:.8px solid #666;padding:4px 6px;vertical-align:top;word-break:break-word;font-size:11px}
+.gov td.gl{background:#F1EEE7;font-weight:600;text-align:center}
+.gov td.gl2{background:#F8F6F1;text-align:center;font-size:11px}
+.gov td.gl3{background:#F8F6F1;text-align:center;font-size:11px;font-weight:600}
+.gov .cbi{display:inline-block;margin-right:10px;font-size:11px;line-height:1.95;font-family:var(--mono)}
+.gov .oh{font-weight:600;display:block;margin-top:3px}.gov .oh:first-child{margin-top:0}
+.gov .blank{color:#BBB6AC}
+.gov .cite{font-family:var(--mono);font-size:10px;font-weight:600;background:var(--seal-bg);color:var(--seal);padding:0 3px;border-radius:2px}
+.gov .gapply{margin:12px 2px 2px;text-align:center}.gov .gdate{text-align:center;letter-spacing:.1em;margin:7px 0}
+.gov .gsign{text-align:right;line-height:1.9;margin:4px 26px 4px 0}.gov .gto{font-weight:600;margin:7px 2px}
+.gov .fn{font-size:10px;color:#444;margin-top:8px;border-top:1px solid var(--rule);padding-top:6px}
+.warnbar{background:var(--alert-bg);border:1px solid #E9CFC9;border-radius:5px;padding:10px 13px;font-size:12px;color:#8A2F26;margin-bottom:12px}
+.okbar{background:var(--seal-bg);border:1px solid #C5DFD8;border-radius:5px;padding:10px 13px;font-size:12px;color:#0B5647;margin-bottom:12px}
+.aibar{background:#EEF3FA;border:1px solid #CFDBEC;border-radius:5px;padding:10px 13px;font-size:12px;color:#2B4A73;margin-bottom:12px}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid var(--rule);border-top-color:var(--ink);border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px;margin-right:7px}
+@keyframes sp{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.spin{animation:none}}
+footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--rule);font-size:11px;color:var(--faint);line-height:1.7}
+</style>
+</head>
+<body>
+<div class="demo"><b>데모/프로토타입.</b> 문헌·수치·지정(긴급승인·희귀의약품)·가이드라인은 <b>AI가 생성한 참고 초안</b>이며 실제와 다를 수 있습니다. 제출 전 반드시 원문·규제정보 검증이 필요합니다.</div>
+<div class="wrap">
+<header>
+  <div class="brand"><h1>OncoReg Studio</h1><span class="tag">자유서술 검색 · 근거 가중 랭킹 · 문서 스튜디오</span>
+    <span class="eng off" id="engBadge" onclick="setBackend()" title="클릭: 백엔드(Colab) URL 설정">엔진 확인 중…</span></div>
+  <div class="tabs">
+    <button id="tSearch" class="on" onclick="mode('search')">① 자유서술 검색</button>
+    <button id="tDrug" onclick="mode('drug')">② 약제·질환 기준</button>
+    <button id="tStudio" onclick="mode('studio')" disabled>③ 문서 스튜디오</button>
+  </div>
+</header>
+
+<!-- ① 자유서술 검색 -->
+<div class="view on" id="vSearch">
+  <div class="chatcard">
+    <label>환자 상황을 자유롭게 적어주세요 (진단명·유전체/바이오마커·이전 치료·검사 수치 등 · 식별정보 제외)</label>
+    <textarea id="q" placeholder="예) HER2 IHC 1+, HR 양성 전이성 유방암입니다. 표준 항암 2차까지 진행했고 트라스투주맙 데룩스테칸(T-DXd) 사용을 검토 중입니다. 관련 근거와 가장 비슷한 논문을 찾아주세요."></textarea>
+    <div class="chips" id="exs"></div>
+    <div class="row">
+      <button class="go" id="btnSearch" onclick="runSearch()">근거 검색</button>
+      <label class="chk"><input type="checkbox" id="useDemo"> 데모 데이터로 미리보기</label>
+      <span id="msg" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>
+  </div>
+  <div id="searchOut"></div>
+</div>
+
+<!-- ② 약제·질환 기준 -->
+<div class="view" id="vDrug">
+  <div class="chatcard">
+    <label>약제명 또는 질환명을 입력하세요 — 지정(긴급승인·희귀의약품)·대상 환자군·가이드라인·근거 논문을 모아 보여줍니다</label>
+    <div class="row">
+      <select class="sel" id="dKind"><option value="drug">약제명</option><option value="disease">질환명</option></select>
+      <input class="txt" id="dName" style="flex:1;min-width:220px" placeholder="예: 트라스투주맙 데룩스테칸 (또는 전신성 경화증 관련 폐동맥고혈압)">
+      <button class="go" id="btnDrug" onclick="runDrug()">조회</button>
+      <label class="chk"><input type="checkbox" id="useDemoD"> 데모</label>
+      <span id="msgD" style="font-size:12.5px;color:var(--muted)"></span>
+    </div>
+    <div class="chips" id="exsD"></div>
+  </div>
+  <div id="drugOut"></div>
+</div>
+
+<!-- ③ 문서 스튜디오 -->
+<div class="view" id="vStudio">
+  <div id="studioBar"></div>
+  <div style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap">
+    <button class="ghost" onclick="mode('search')">← 근거 화면</button>
+    <button class="ghost" onclick="window.print()">인쇄 / PDF 저장</button>
+  </div>
+  <div class="studio">
+    <div>
+      <div class="pane">
+        <h3>서식 유형 · 체크 항목</h3>
+        <div class="ctrl"><label>허가초과 유형</label>
+          <select class="sel" id="cExcess" onchange="syncChecks();renderForm()">
+            <option value="eff">효능·효과 초과</option><option value="dose">용법·용량 초과</option><option value="age">연령·대상군 초과</option>
+          </select></div>
+        <div class="ctrl"><label>희귀질환</label><label class="chk"><input type="checkbox" id="cRare" onchange="renderForm()"> 예(희귀질환여부)</label></div>
+        <div class="ctrl"><label>병용여부</label><label class="chk"><input type="checkbox" id="cCombo" onchange="renderForm()"> 병용</label></div>
+        <div class="ctrl"><label>질환유형</label>
+          <select class="sel" id="cSev" onchange="renderForm()">
+            <option>생명을 위협하는 질환</option><option>사망에 이르는 질환</option><option>비가역적인 기능상실을 초래하는 질환</option><option>기타(해당없음 등)</option>
+          </select></div>
+        <div class="ctrl"><label>주성분명</label><input class="txt" id="cDrug" oninput="renderForm()" placeholder="약제명"></div>
+      </div>
+      <div class="pane" style="margin-top:12px">
+        <h3>논문 근거 팔레트 <span style="font-weight:400;color:var(--faint);font-size:11px">— 칸을 클릭해 활성화한 뒤, 아래 근거를 눌러 넣으세요</span></h3>
+        <div class="palette"><div class="pl">삽입 가능한 근거 (클릭 → 활성 칸에 삽입)</div><div id="palette"></div>
+          <div class="srcview" id="srcView">근거를 클릭하면 원문 인용이 여기에 표시됩니다.</div>
+        </div>
+        <div id="fields"></div>
+      </div>
+    </div>
+    <div class="viewer"><div class="pane"><div id="form" class="gov"></div></div></div>
+  </div>
+</div>
+
+<footer>
+  본 화면은 창업 프로그램 제출용 프로토타입입니다. 검색·근거수준 평가·지정 정보·문서 초안은 OpenAI API로 생성되는 시연이며 실제 출판물·규제사실·서식과 다를 수 있습니다. 진단·치료를 판정하지 않으며 최종 판단·서명은 의료 전문가가 수행합니다.
+</footer>
+</div>
+
+<script>
+/* ---------------- 상태 ---------------- */
+const AXES=[["disease","질환/암종"],["biomarker","지표/유전체"],["stage","병기"],["line","치료차수"],["drug","약제"],["evidence","근거수준"]];
+const DEFAULT_WEIGHTS={disease:.24,biomarker:.20,stage:.12,line:.12,drug:.17,evidence:.15};
+let WEIGHTS={...DEFAULT_WEIGHTS};
+const EV={"체계적 문헌고찰/메타분석":1,"무작위 대조연구(RCT)":2,"코호트 연구":3,"환자-대조군 연구":4,"사례군/사례보고":5};
+let LAST=null, activeField='evidence';
+let builder={checks:{},drug:'',fields:{evidence:'',merits:'',target:'',dosage:'',duration:'',other:'',reason2:'',opinion:''}};
+
+const FIELD_DEFS=[
+  ['evidence','의학적 근거자료'],['merits','신청약제의 특·장점'],['target','대상 환자 기준'],
+  ['dosage','용법·용량'],['duration','투여기간(투여중단 시기 포함)'],['other','기타(재투여 기준 등)'],
+  ['reason2','고시 제2조 해당 사유'],['opinion','기타 의견']
+];
+
+/* ---------------- 백엔드/엔진 ---------------- */
+let API_BASE=(localStorage.getItem('studio_api')||'').replace(/\/+$/,'');
+const api=p=>API_BASE?API_BASE+'/'+p:p;
+function setBackend(){const c=localStorage.getItem('studio_api')||'';
+  const u=prompt('OpenAI 백엔드 URL을 입력하세요 (Colab의 https://….trycloudflare.com 또는 http://localhost:8000).\n비우면 데모 모드로 동작합니다.',c);
+  if(u===null)return; API_BASE=u.trim().replace(/\/+$/,''); localStorage.setItem('studio_api',API_BASE); checkEngine();}
+async function checkEngine(){const b=document.getElementById('engBadge');
+  try{const r=await fetch(api('api/health'));const h=await r.json();
+    if(h.key_present){b.textContent='OpenAI · '+h.model;b.classList.remove('off');}
+    else{b.textContent='엔진 연결됨 · 키 없음';b.classList.add('off');}
+  }catch(e){b.textContent='백엔드 없음 (데모 모드)';b.classList.add('off');
+    document.getElementById('useDemo').checked=true;document.getElementById('useDemoD').checked=true;}}
+
+/* ---------------- 데모 데이터 ---------------- */
+const DEMO_SEARCH={
+ query:{condition:"HER2-low 전이성 유방암",drug:"트라스투주맙 데룩스테칸 (T-DXd)",biomarker:"HER2 IHC 1+, HR 양성",
+   stage:"전이성(4기)",line:"2차 이상(표준치료 소진)",excess_type:"eff",rare:false,
+   summary_ko:"HER2 저발현·HR 양성 전이성 유방암, 표준 2차 이상 진행, T-DXd 검토"},
+ weights:{...DEFAULT_WEIGHTS},
+ papers:[
+  {id:1,title:"HER2-low 전이성 유방암에서 항체-약물 접합체 vs 화학요법 (DESTINY-Breast04)",journal:"N Engl J Med",year:2022,n:557,
+   evidence_level:"무작위 대조연구(RCT)",evidence_rank:2,fit:"암종·바이오마커·치료차수 매우 유사",
+   sim:{disease:96,biomarker:92,stage:90,line:90,drug:96},
+   items:[{key:"ORR",label:"객관적 반응률",value:"52.6%",pre:"Among HR-positive patients, ",mark:"the confirmed objective response rate was 52.6%",post:" vs 16.3% with chemotherapy.",loc:"Results · Table 2"},
+    {key:"PFS",label:"무진행생존(중앙값)",value:"10.1개월",pre:"",mark:"median progression-free survival was 10.1 months",post:" vs 5.4 months.",loc:"Results · Table 2"},
+    {key:"AE",label:"간질성 폐질환(전등급)",value:"12.1%",pre:"Drug-related ILD occurred in ",mark:"12.1% of patients (any grade)",post:".",loc:"Safety"}]},
+  {id:2,title:"HER2 저발현 유방암 ADC 치료의 체계적 문헌고찰·메타분석",journal:"Ann Oncol",year:2023,n:null,
+   evidence_level:"체계적 문헌고찰/메타분석",evidence_rank:1,fit:"근거수준 최상 · 집단 부분 일치",
+   sim:{disease:88,biomarker:84,stage:74,line:72,drug:80},
+   items:[{key:"HR",label:"통합 위험비(PFS)",value:"0.52",pre:"Pooled analysis showed a ",mark:"hazard ratio of 0.52",post:" for progression.",loc:"Forest plot"}]},
+  {id:3,title:"진행성 유방암 진료 권고안 — 항HER2/ADC 항목",journal:"진료지침",year:2024,n:null,
+   evidence_level:"코호트 연구",evidence_rank:3,fit:"권고 등급 근거",
+   sim:{disease:82,biomarker:66,stage:70,line:66,drug:78},
+   items:[{key:"REC",label:"권고 등급",value:"Category 1",pre:"For HR+, HER2-low mBC, T-DXd is a ",mark:"Category 1 (preferred) regimen",post:" after prior therapy.",loc:"권고 요약"}]},
+  {id:4,title:"실제임상 HER2-low 유방암 T-DXd 사용 경험 (사례군)",journal:"Breast",year:2023,n:21,
+   evidence_level:"사례군/사례보고",evidence_rank:5,fit:"국내외 실사용 · 근거수준 낮음",
+   sim:{disease:90,biomarker:70,stage:78,line:80,drug:92},
+   items:[{key:"RW",label:"실사용 반응률",value:"11/21명",pre:"Clinical response was observed in ",mark:"11 of 21 patients",post:".",loc:"Results"}]}
+ ]};
+const DEMO_DRUG={
+ drug:"트라스투주맙 데룩스테칸 (T-DXd)",disease:"HER2 저발현/양성 전이성 유방암",
+ designation:{orphan:"일부 적응증에서 희귀 관련 지정 이력 — 확인 필요",emergency:"국내 신속·특례 여부 확인 필요",note:"규제 사실은 반드시 식약처/심평원 공고로 확인"},
+ populations:["HER2 IHC 1+/2+(ISH-) 전이성 유방암, 표준치료 이후","HER2 양성 전이성 위암(적응증별 상이)","HER2 변이 폐암 등(적응증 확대 검토군)"],
+ guidelines:[{name:"진행성 유방암 진료 권고안",org:"국내 학회",year:2024,recommendation:"HER2-low 전이성 유방암 2차 이상에서 T-DXd 우선 고려"},
+   {name:"NCCN Breast Cancer",org:"NCCN",year:2024,recommendation:"HR+/HER2-low mBC에서 Category 1"}],
+ weights:{...DEFAULT_WEIGHTS},
+ papers:DEMO_SEARCH.papers.slice(0,3),confidence:"low"};
+
+/* ---------------- 공통 ---------------- */
+function mode(m){['search','drug','studio'].forEach(x=>{
+  document.getElementById('v'+x[0].toUpperCase()+x.slice(1)).classList.toggle('on',x===m);
+  document.getElementById('t'+x[0].toUpperCase()+x.slice(1)).classList.toggle('on',x===m);});
+  window.scrollTo({top:0,behavior:'smooth'});}
+function evSub(p){return Math.round((6-(p.evidence_rank||3))/5*100);}
+function paperScore(p){const s=p.sim||{};let ws=0,v=0;
+  for(const[a] of AXES){const w=WEIGHTS[a]||0;ws+=w;v+=w*(a==='evidence'?evSub(p):(s[a]??0));}
+  return ws?Math.round(v/ws):0;}
+function sortedPapers(ps){return [...ps].sort((a,b)=>paperScore(b)-paperScore(a));}
+function evClass(r){return 'ev'+Math.max(1,Math.min(5,r||3));}
+const EXAMPLES=[
+ "HER2 IHC 1+, HR 양성 전이성 유방암. 표준 항암 2차까지 진행, T-DXd 검토 중. 가장 비슷한 근거를 찾아줘.",
+ "전신성 경화증 관련 폐동맥고혈압, 3제 병용에도 6분보행 개선 미미(WHO FC III). 희귀질환이라 사례보고라도 필요해.",
+ "KRAS G12C 변이 비소세포폐암, 표적치료 실패. 관련 RCT와 실사용 근거를 근거수준 높은 순으로."];
+const EX_DRUG=["트라스투주맙 데룩스테칸","소토라십","경구용 프로스타사이클린 수용체 작용제","전신성 경화증 관련 폐동맥고혈압"];
+
+/* ---------------- ① 검색 ---------------- */
+function renderExamples(){document.getElementById('exs').innerHTML=EXAMPLES.map((e,i)=>`<span class="chip" onclick="document.getElementById('q').value=EXAMPLES[${i}]">${e.slice(0,30)}…</span>`).join('');
+  document.getElementById('exsD').innerHTML=EX_DRUG.map((e,i)=>`<span class="chip" onclick="document.getElementById('dName').value=EX_DRUG[${i}]">${e}</span>`).join('');}
+async function runSearch(){
+  const text=document.getElementById('q').value.trim();
+  const b=document.getElementById('btnSearch'),m=document.getElementById('msg');
+  if(!text){m.textContent="상황을 먼저 입력하세요.";return;}
+  if(document.getElementById('useDemo').checked){LAST=JSON.parse(JSON.stringify(DEMO_SEARCH));WEIGHTS={...DEFAULT_WEIGHTS,...(LAST.weights||{})};renderSearch(false);return;}
+  b.disabled=true;m.innerHTML='<span class="spin"></span>OpenAI로 서술을 해석하고 근거를 정리하는 중…';
+  try{const r=await fetch(api('api/search'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
+    LAST=await r.json();WEIGHTS={...DEFAULT_WEIGHTS,...(LAST.weights||{})};b.disabled=false;m.textContent="";renderSearch(true);
+  }catch(e){b.disabled=false;m.innerHTML='⚠ 실패 — 데모로 표시합니다. ('+e.message+')';LAST=JSON.parse(JSON.stringify(DEMO_SEARCH));WEIGHTS={...DEFAULT_WEIGHTS};renderSearch(false);}}
+
+function renderSearch(isAI){
+  const q=LAST.query||{};
+  const chips=[q.condition,q.drug,q.biomarker,q.stage,q.line,q.rare?'희귀질환':'', {eff:'효능효과 초과',dose:'용법용량 초과',age:'연령대상군 초과'}[q.excess_type]].filter(Boolean);
+  document.getElementById('searchOut').innerHTML=`
+    <div class="qsum"><b>해석:</b> ${q.summary_ko||''}</div>
+    <div class="qchips">${chips.map(c=>`<span class="qc">${c}</span>`).join('')}</div>
+    ${isAI?'<div class="aibar">AI가 생성한 근거입니다. 근거수준·수치·유사도는 실제와 다를 수 있으니 원문 검증이 필요합니다.</div>':'<div class="okbar">데모 데이터로 표시 중입니다.</div>'}
+    <div class="simwrap"><div class="sh"><b>가중치</b> — 근거수준을 <b>필터가 아니라 가중치</b>로 반영합니다. 슬라이더로 무엇을 더 볼지 조절하면 즉시 재정렬됩니다.</div><div id="weights"></div></div>
+    <div id="papers"></div>
+    <div style="margin-top:14px"><button class="go" onclick="toStudio()">이 근거로 서류 작성 →</button></div>`;
+  renderWeights();renderPapers();}
+function renderWeights(){document.getElementById('weights').innerHTML=AXES.map(([a,l])=>`
+  <div class="wt"><label>${l}</label><input type="range" min="0" max="100" value="${Math.round((WEIGHTS[a]||0)*100)}" oninput="WEIGHTS['${a}']=this.value/100;document.getElementById('wv_${a}').textContent=this.value;renderPapers()"><span class="wv" id="wv_${a}">${Math.round((WEIGHTS[a]||0)*100)}</span></div>`).join('');}
+function renderPapers(){const ps=sortedPapers(LAST.papers||[]);
+  document.getElementById('papers').innerHTML=ps.map((p,i)=>{const sc=paperScore(p);
+    return `<div class="pcard${i===0?' top':''}"><div class="ph">
+      <span class="evb ${evClass(p.evidence_rank)}">${p.evidence_level}</span>
+      <span class="pt">${p.title}${i===0?'<span class="topbadge">최적</span>':''}</span>
+      <div class="pm">${p.journal} · ${p.year}${p.n?' · n='+p.n:''}</div>
+      <div class="fit">${p.fit||''}</div>
+      <div class="simline"><div class="simtrack"><div class="simfill" style="width:${sc}%"></div></div><span class="simsc">적합도 ${sc}</span></div></div>
+      <div class="items">${(p.items||[]).map(it=>`<span class="itchip"><b>${it.value}</b> ${it.label}</span>`).join('')||'<span style="color:var(--faint);font-size:11.5px">추출 항목 없음</span>'}</div></div>`;}).join('');}
+
+/* ---------------- ② 약제/질환 ---------------- */
+async function runDrug(){
+  const name=document.getElementById('dName').value.trim(),kind=document.getElementById('dKind').value;
+  const b=document.getElementById('btnDrug'),m=document.getElementById('msgD');
+  if(!name){m.textContent="약제/질환명을 입력하세요.";return;}
+  if(document.getElementById('useDemoD').checked){renderDrug(JSON.parse(JSON.stringify(DEMO_DRUG)),false);return;}
+  b.disabled=true;m.innerHTML='<span class="spin"></span>OpenAI로 지정·가이드라인·근거를 정리하는 중…';
+  try{const r=await fetch(api('api/drug'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,kind})});
+    if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
+    b.disabled=false;m.textContent="";renderDrug(await r.json(),true);
+  }catch(e){b.disabled=false;m.innerHTML='⚠ 실패 — 데모로 표시합니다. ('+e.message+')';renderDrug(JSON.parse(JSON.stringify(DEMO_DRUG)),false);}}
+function renderDrug(d,isAI){
+  WEIGHTS={...DEFAULT_WEIGHTS,...(d.weights||{})};
+  LAST={query:{condition:d.disease,drug:d.drug,rare:/희귀/.test(JSON.stringify(d.designation||{})),excess_type:'eff'},papers:d.papers||[],weights:d.weights};
+  const des=d.designation||{};
+  document.getElementById('drugOut').innerHTML=`
+    ${isAI?'<div class="aibar">AI가 정리한 참고 정보입니다. <b>규제 지정(긴급승인·희귀의약품)은 반드시 식약처/심평원 공고로 확인</b>하세요. (confidence: '+(d.confidence||'-')+')</div>':'<div class="okbar">데모 데이터로 표시 중입니다.</div>'}
+    <div class="dcard"><h3>${d.drug||''} <span style="font-weight:400;color:var(--muted);font-size:12px">· ${d.disease||''}</span></h3>
+      <ul class="deslist">
+        <li><b>희귀의약품 지정:</b> ${des.orphan||'확인 필요'}</li>
+        <li><b>긴급·신속승인/특례:</b> ${des.emergency||'확인 필요'}</li>
+        ${des.note?`<li style="color:var(--muted)">${des.note}</li>`:''}</ul></div>
+    <div class="dcard"><h3>고려 대상 환자군</h3><ul class="deslist">${(d.populations||[]).map(x=>`<li>${x}</li>`).join('')||'<li class="blank">정보 없음</li>'}</ul></div>
+    <div class="dcard"><h3>가이드라인 · 권고</h3><ul class="deslist">${(d.guidelines||[]).map(g=>`<li><b>${g.name}</b> (${g.org}${g.year?', '+g.year:''}) — ${g.recommendation}</li>`).join('')||'<li class="blank">정보 없음</li>'}</ul></div>
+    <div class="dcard"><h3>근거 논문 (근거수준·적합도순)</h3><div id="papers2"></div></div>
+    <div><button class="go" onclick="mode('search');renderSearch(${isAI?'true':'false'});">이 약제 근거로 이동/서류 작성 →</button></div>`;
+  // reuse paper rendering
+  const host=document.getElementById('papers2');
+  const ps=sortedPapers(d.papers||[]);
+  host.innerHTML=ps.map((p,i)=>`<div class="pcard${i===0?' top':''}"><div class="ph">
+      <span class="evb ${evClass(p.evidence_rank)}">${p.evidence_level}</span><span class="pt">${p.title}</span>
+      <div class="pm">${p.journal} · ${p.year}${p.n?' · n='+p.n:''}</div>
+      <div class="simline"><div class="simtrack"><div class="simfill" style="width:${paperScore(p)}%"></div></div><span class="simsc">적합도 ${paperScore(p)}</span></div></div>
+      <div class="items">${(p.items||[]).map(it=>`<span class="itchip"><b>${it.value}</b> ${it.label}</span>`).join('')}</div></div>`).join('');}
+
+/* ---------------- ③ 스튜디오 ---------------- */
+function toStudio(){
+  if(!LAST){mode('search');return;}
+  const q=LAST.query||{};
+  builder.drug=q.drug||'';
+  document.getElementById('cExcess').value=q.excess_type||'eff';
+  document.getElementById('cRare').checked=!!q.rare;
+  document.getElementById('cCombo').checked=/병용/.test((q.line||'')+' '+(q.biomarker||''));
+  document.getElementById('cDrug').value=q.drug||'';
+  // 대상 환자 기준 자동 채움
+  builder.fields.target=[q.condition,q.stage,q.line].filter(Boolean).join(' · ')+(q.biomarker?(' ('+q.biomarker+')'):'');
+  document.getElementById('tStudio').disabled=false;
+  syncChecks();renderPalette();renderFields();renderForm();mode('studio');}
+function syncChecks(){builder.checks={
+  excess:document.getElementById('cExcess').value,
+  rare:document.getElementById('cRare').checked,
+  combo:document.getElementById('cCombo').checked,
+  sev:document.getElementById('cSev').value};builder.drug=document.getElementById('cDrug').value;}
+function renderPalette(){
+  const ps=sortedPapers(LAST.papers||[]);const out=[];
+  ps.forEach(p=>{(p.items||[]).forEach(it=>{out.push({...it,paperId:p.id,ev:p.evidence_rank});});});
+  document.getElementById('palette').innerHTML=out.map((it,i)=>`<span class="pitem" onclick='insertItem(${JSON.stringify(it).replace(/'/g,"&#39;")})'><b>${it.value}</b> ${it.label} <span style="color:var(--faint)">[${it.paperId}]</span></span>`).join('')||'<span style="color:var(--faint);font-size:12px">삽입 가능한 근거가 없습니다.</span>';}
+function renderFields(){
+  document.getElementById('fields').innerHTML=FIELD_DEFS.map(([k,l])=>`
+    <div class="fld${activeField===k?' act':''}" id="fld_${k}">
+      <div class="fh"><span class="fn">${l}</span><span class="fx">${k==='evidence'?'수치·문장 삽입 대상':''}</span></div>
+      <textarea onfocus="activeField='${k}';markActive()" oninput="builder.fields['${k}']=this.value;renderForm()" placeholder="직접 입력하거나 위 팔레트에서 근거를 클릭해 넣으세요">${builder.fields[k]||''}</textarea>
+    </div>`).join('');}
+function markActive(){FIELD_DEFS.forEach(([k])=>{const el=document.getElementById('fld_'+k);if(el)el.classList.toggle('act',k===activeField);});}
+function insertItem(it){
+  const k=activeField||'evidence';
+  const line=`· ${it.label}: ${it.value} [${it.paperId}]`;
+  builder.fields[k]=(builder.fields[k]?builder.fields[k].replace(/\s*$/,'')+'\n':'')+line;
+  // 원문 인용 표시
+  document.getElementById('srcView').innerHTML=`<b>[${it.paperId}] ${it.loc||''}</b><br>${it.pre||''}<mark>${it.mark||it.value}</mark>${it.post||''}`;
+  renderFields();renderForm();
+  const ta=document.querySelector('#fld_'+k+' textarea');if(ta){ta.focus();ta.selectionStart=ta.value.length;}}
+
+/* 별지 제1호서식 — 실제 HWP 좌표 재현, builder 상태로 채움 */
+function cbx(on,t){return '<span class="cbi">'+(on?'[✔]':'[  ]')+' '+t+'</span>';}
+function nl(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\n/g,'<br>');}
+function renderForm(){
+  syncChecks();
+  const c=builder.checks, f=builder.fields, drug=builder.drug||'', B='<span class="blank">　　</span>';
+  const t1eff=c.excess==='eff',t1dose=c.excess==='dose',t1age=c.excess==='age';
+  const t2sel=c.rare?0:2, sev=c.sev;
+  document.getElementById('form').innerHTML=`
+   <div class="ghead">■ 허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차 [별지 제1호서식]</div>
+   <h3 class="gt">허가초과 약제 비급여 사용승인 신청서</h3><div class="gsub">(IRB 지정 요양기관)</div>
+   <table class="gf"><colgroup><col style="width:14.4%"><col style="width:8.4%"><col style="width:13.9%"><col style="width:13.7%"><col style="width:19.9%"><col style="width:29.7%"></colgroup>
+    <tr><td class="gl">요양기관명칭</td><td colspan="3">${B}</td><td class="gl">요양기호</td><td>${B}</td></tr>
+    <tr><td class="gl">주성분명<br>(주성분코드)</td><td colspan="3">${nl(drug)||B} (　)</td><td class="gl">제품명<br>(제품코드)</td><td>(　)</td></tr>
+    <tr><td class="gl" rowspan="10">허가초과<br>(중복기재<br>가능)</td>
+        <td class="gl2" rowspan="2">유형1</td><td colspan="4">${cbx(t1eff,'효능‧효과 초과')}${cbx(t1dose,'용법‧용량 초과')}${cbx(t1age,'연령‧대상군 초과')}</td></tr>
+    <tr><td colspan="4">${cbx(false,'기타 <　>')}</td></tr>
+    <tr><td class="gl2" rowspan="3">유형2</td><td colspan="4">${cbx(t2sel===0,'대체약제가 없는 경우')}${cbx(false,'대체약제가 있으나 투여금기인 경우')}</td></tr>
+    <tr><td colspan="4">${cbx(t2sel===2,'대체약제보다 비용 효과적이거나 부작용이 적고 치료효과가 높을 것으로 기대되는 경우')}</td></tr>
+    <tr><td colspan="4">${cbx(false,'기타 <　>')}</td></tr>
+    <tr><td class="gl2">유형3</td><td colspan="4">${cbx(true,'성인')}${cbx(false,'소아')}${cbx(false,'임산부')}</td></tr>
+    <tr><td class="gl2">유형4</td><td class="gl3">약제 병용여부</td><td colspan="3">${cbx(!c.combo,'단독')}${cbx(c.combo,'병용<약제: '+(c.combo?drug:'　')+'>')}</td></tr>
+    <tr><td class="gl2">유형5</td><td class="gl3">희귀질환여부</td><td colspan="3">${cbx(c.rare,'예(희귀질환 근거 기재)')}${cbx(!c.rare,'아니오')}</td></tr>
+    <tr><td class="gl2" rowspan="2">유형6</td><td class="gl3" rowspan="2">질환유형</td><td colspan="3">${cbx(sev==='사망에 이르는 질환','사망에 이르는 질환')}${cbx(sev==='생명을 위협하는 질환','생명을 위협하는 질환')}</td></tr>
+    <tr><td colspan="3">${cbx(sev==='비가역적인 기능상실을 초래하는 질환','비가역적인 기능상실을 초래하는 질환')}${cbx(sev==='기타(해당없음 등)','기타(해당없음 등)')}</td></tr>
+    <tr><td class="gl" colspan="2">IRB 심사일자</td><td colspan="4">${B}</td></tr>
+    <tr><td class="gl" colspan="2">IRB 심사내용</td><td colspan="4">${B}</td></tr>
+    <tr><td class="gl" rowspan="5">제출자료<br>(요약)</td>
+        <td class="gl2" rowspan="2">의학적<br>근거</td><td colspan="4"><span class="oh">○ 의학적 근거자료</span>${nl(f.evidence)||B}</td></tr>
+    <tr><td colspan="4"><span class="oh">○ 신청약제의 특‧장점</span>${nl(f.merits)||B}</td></tr>
+    <tr><td class="gl2">투여<br>대상</td><td colspan="4"><span class="oh">○ 대상 환자 기준</span>${nl(f.target)||B}</td></tr>
+    <tr><td class="gl2">투여<br>방법</td><td colspan="4"><span class="oh">○ 용법‧용량</span>${nl(f.dosage)||B}<span class="oh">○ 투여기간(투여중단 시기 포함)</span>${nl(f.duration)||B}<span class="oh">○ 기타(재투여 기준 등)</span>${nl(f.other)||B}</td></tr>
+    <tr><td class="gl2">기타</td><td colspan="4"><span class="oh">○ 신청약제 소요비용</span><span class="blank">요양기관 작성</span><span class="oh">○ 고시 제2조 각 호 해당 사유</span>${nl(f.reason2)||B}</td></tr>
+    <tr><td class="gl" colspan="2">기타 의견</td><td colspan="4">${nl(f.opinion)||B}</td></tr>
+   </table>
+   <div class="gapply">허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차에 따라 위와 같이 비급여 사용승인을 신청합니다.</div>
+   <div class="gdate">　　　年　　月　　日</div>
+   <div class="gsign"><div>요양기관의 장　　　(서명 또는 인)</div><div>작성자</div><div>연락처　　　E-mail</div></div>
+   <div class="gto">건강보험심사평가원장 귀하</div>
+   <div class="fn"><b>작성방법</b> 1. IRB: 의약품임상시험실시기관 2. 각 자료는 별첨. 3. 약제정보·가이드라인·학술지 수재내역 등 기재.</div>`;}
+
+renderExamples();checkEngine();
+</script>
+</body>
+</html>
