@@ -151,11 +151,12 @@ mark{background:var(--mark);padding:1px 2px;border-radius:1px;font-weight:500;co
 .gov .ghead{font-size:10.5px;color:#333;margin-bottom:6px}
 .gov h3.gt{text-align:center;font-size:17px;font-weight:700;letter-spacing:.06em;margin:2px 0}
 .gov .gsub{text-align:center;font-size:12px;color:#333;margin-bottom:9px}
-.gov table.gf{width:100%;border-collapse:collapse;border:1.4px solid #222}
+.gov table.gf{width:100%;border-collapse:collapse;border:1.4px solid #222;table-layout:fixed}
 .gov table.gf td{border:.8px solid #666;padding:5px 7px;vertical-align:top;word-break:break-word}
-.gov td.gl{background:#F1EEE7;font-weight:600;text-align:center;white-space:nowrap}
-.gov td.gl2{background:#F8F6F1;text-align:center;white-space:nowrap;width:58px;font-size:11.5px}
-.gov .cbi{display:inline-block;margin-right:14px;white-space:nowrap;font-size:11.5px;line-height:1.9}
+.gov td.gl{background:#F1EEE7;font-weight:600;text-align:center}
+.gov td.gl2{background:#F8F6F1;text-align:center;font-size:11.5px}
+.gov td.gl3{background:#F8F6F1;text-align:center;font-size:11.5px;font-weight:600}
+.gov .cbi{display:inline-block;margin-right:12px;font-size:11.5px;line-height:2;font-family:var(--mono)}
 .gov .oh{font-weight:600;display:block;margin-top:3px}
 .gov .oh:first-child{margin-top:0}
 .gov .blank{color:#BBB6AC}
@@ -584,7 +585,7 @@ function verify(k){verified.includes(k)?verified=verified.filter(x=>x!==k):verif
   renderMetrics();updateKPI();}
 
 const CLS_OPTS=['메타분석','Systematic Review','Randomized controlled trial(RCT)','case-control or cohort studies','case report or case series','기타'];
-function cbx(on,t){return '<span class="cbi">'+(on?'☑':'☐')+' '+t+'</span>';}
+function cbx(on,t){return '<span class="cbi">'+(on?'[✔]':'[  ]')+' '+t+'</span>';}
 function guessClass(p){
   const s=(p.t||'')+' '+(p.j||'');
   if(p.j==='진료지침')return '기타';
@@ -668,71 +669,75 @@ function renderDoc(doc,sh,papers,top){
   document.getElementById('n3').disabled=false;go(3);
 }
 
+// 별지 제1호서식 — 실제 HWP 셀 좌표(6구간 열, 병합/행 구조)를 그대로 재현.
 function form1Html(f1,ck,mLines,top){
-  const B='<span class="blank">　　　　</span>';
-  const t2=['대체약제가 없는 경우','대체약제가 있으나 투여금기인 경우','대체약제보다 비용 효과적이거나 부작용이 적고 치료효과가 높을 것으로 기대되는 경우','기타 <　>'];
-  const t3=['성인','소아','임산부'];
-  const t6=['사망에 이르는 질환','생명을 위협하는 질환','비가역적인 기능상실을 초래하는 질환','기타(해당없음 등)'];
+  const B='<span class="blank">　　　</span>';
   const drug=val('fDrug');
-  const trialNote = top.length? '<br><b>(참고)</b> 참여 검토 가능 임상시험: '+top.map(t=>t.id+' '+t.t).join(' / ') : '';
-  const opinion = (f1.opinion||'')+trialNote;
+  const opinion=(f1.opinion||'')+(top.length?'<br><b>(참고)</b> 참여 검토 가능 임상시험: '+top.map(t=>t.id+' '+t.t).join(' / '):'');
   return `<div class="gov">
    <div class="ghead">■ 허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차 [별지 제1호서식]</div>
    <h3 class="gt">허가초과 약제 비급여 사용승인 신청서</h3>
    <div class="gsub">(IRB 지정 요양기관)</div>
-   <table class="gf"><colgroup><col style="width:15%"><col style="width:35%"><col style="width:15%"><col style="width:35%"></colgroup>
-    <tr><td class="gl">요양기관명칭</td><td>${B}</td><td class="gl">요양기호</td><td>${B}</td></tr>
-    <tr><td class="gl">주성분명<br>(주성분코드)</td><td>${drug} (　　)</td><td class="gl">제품명<br>(제품코드)</td><td>${B} (　　)</td></tr>
-    <tr><td class="gl" rowspan="6">허가초과<br>(중복기재<br>가능)</td>
-        <td class="gl2">유형1</td><td colspan="2">${cbx(ck.t1eff,'효능‧효과 초과')}${cbx(ck.t1dose,'용법‧용량 초과')}${cbx(false,'연령‧대상군 초과')}${cbx(false,'기타 <　>')}</td></tr>
-    <tr><td class="gl2">유형2</td><td colspan="2">${t2.map((o,i)=>cbx(i===ck.t2sel,o)).join('')}</td></tr>
-    <tr><td class="gl2">유형3</td><td colspan="2">${t3.map((o,i)=>cbx(i===ck.t3sel,o)).join('')}</td></tr>
-    <tr><td class="gl2">유형4</td><td colspan="2"><b>약제 병용여부</b> &nbsp; ${cbx(!ck.combo,'단독')}${cbx(ck.combo,'병용<약제: '+(ck.combo?drug:'　')+'>')}</td></tr>
-    <tr><td class="gl2">유형5</td><td colspan="2"><b>희귀질환여부</b> &nbsp; ${cbx(ck.t5rare,'예(희귀질환 근거 기재)')}${cbx(!ck.t5rare,'아니오')}</td></tr>
-    <tr><td class="gl2">유형6</td><td colspan="2"><b>질환유형</b> &nbsp; ${t6.map(o=>cbx(o===ck.t6,o)).join('')}</td></tr>
-    <tr><td class="gl">IRB 심사일자</td><td>${B}</td><td class="gl">IRB 심사내용</td><td>${B}</td></tr>
-    <tr><td class="gl" rowspan="4">제출자료<br>(요약)</td>
-        <td class="gl2">의학적<br>근거</td><td colspan="2"><span class="oh">○ 의학적 근거자료</span>${f1.evidence_basis||B}<br>${mLines}<span class="oh">○ 신청약제의 특‧장점</span>${f1.drug_merits||B}</td></tr>
-    <tr><td class="gl2">투여<br>대상</td><td colspan="2"><span class="oh">○ 대상 환자 기준</span>${f1.target_criteria||B}</td></tr>
-    <tr><td class="gl2">투여<br>방법</td><td colspan="2"><span class="oh">○ 용법‧용량</span>${f1.dosage||B}<span class="oh">○ 투여기간(투여중단 시기 포함)</span>${f1.duration||B}<span class="oh">○ 기타(재투여 기준 등)</span>${f1.other_admin||B}</td></tr>
-    <tr><td class="gl2">기타</td><td colspan="2"><span class="oh">○ 신청약제 소요비용</span><span class="blank">요양기관 작성</span><span class="oh">○ 고시 제2조 각 호 해당 사유(유형2 내용)</span>${f1.reason_type2||B}</td></tr>
-    <tr><td class="gl">기타 의견</td><td colspan="3">${opinion||B}</td></tr>
+   <table class="gf"><colgroup><col style="width:14.37%"><col style="width:8.43%"><col style="width:13.91%"><col style="width:13.74%"><col style="width:19.88%"><col style="width:29.67%"></colgroup>
+    <tr><td class="gl">요양기관명칭</td><td colspan="3">${B}</td><td class="gl">요양기호</td><td>${B}</td></tr>
+    <tr><td class="gl">주성분명<br>(주성분코드)</td><td colspan="3">${drug} (　　)</td><td class="gl">제품명<br>(제품코드)</td><td>(　　)</td></tr>
+    <tr><td class="gl" rowspan="10">허가초과<br>(중복기재<br>가능)</td>
+        <td class="gl2" rowspan="2">유형1</td><td colspan="4">${cbx(ck.t1eff,'효능‧효과 초과')}${cbx(ck.t1dose,'용법‧용량 초과')}${cbx(false,'연령‧대상군 초과')}</td></tr>
+    <tr><td colspan="4">${cbx(false,'기타 <　　>')}</td></tr>
+    <tr><td class="gl2" rowspan="3">유형2</td><td colspan="4">${cbx(ck.t2sel===0,'대체약제가 없는 경우')}${cbx(false,'대체약제가 있으나 투여금기인 경우')}</td></tr>
+    <tr><td colspan="4">${cbx(ck.t2sel===2,'대체약제보다 비용 효과적이거나 부작용이 적고 치료효과가 높을 것으로 기대되는 경우')}</td></tr>
+    <tr><td colspan="4">${cbx(false,'기타 <　　>')}</td></tr>
+    <tr><td class="gl2">유형3</td><td colspan="4">${cbx(true,'성인')}${cbx(false,'소아')}${cbx(false,'임산부')}</td></tr>
+    <tr><td class="gl2">유형4</td><td class="gl3">약제 병용여부</td><td colspan="3">${cbx(!ck.combo,'단독')}${cbx(ck.combo,'병용<약제: '+(ck.combo?drug:'　')+'>')}</td></tr>
+    <tr><td class="gl2">유형5</td><td class="gl3">희귀질환여부</td><td colspan="3">${cbx(ck.t5rare,'예(희귀질환 근거 기재)')}${cbx(!ck.t5rare,'아니오')}</td></tr>
+    <tr><td class="gl2" rowspan="2">유형6</td><td class="gl3" rowspan="2">질환유형</td><td colspan="3">${cbx(ck.t6==='사망에 이르는 질환','사망에 이르는 질환')}${cbx(ck.t6==='생명을 위협하는 질환','생명을 위협하는 질환')}</td></tr>
+    <tr><td colspan="3">${cbx(ck.t6==='비가역적인 기능상실을 초래하는 질환','비가역적인 기능상실을 초래하는 질환')}${cbx(false,'기타(해당없음 등)')}</td></tr>
+    <tr><td class="gl" colspan="2">IRB 심사일자</td><td colspan="4">${B}</td></tr>
+    <tr><td class="gl" colspan="2">IRB 심사내용</td><td colspan="4">${B}</td></tr>
+    <tr><td class="gl" rowspan="5">제출자료<br>(요약)</td>
+        <td class="gl2" rowspan="2">의학적<br>근거</td><td colspan="4"><span class="oh">○ 의학적 근거자료</span>${f1.evidence_basis||B}<br>${mLines}</td></tr>
+    <tr><td colspan="4"><span class="oh">○ 신청약제의 특‧장점</span>${f1.drug_merits||B}</td></tr>
+    <tr><td class="gl2">투여<br>대상</td><td colspan="4"><span class="oh">○ 대상 환자 기준</span>${f1.target_criteria||B}</td></tr>
+    <tr><td class="gl2">투여<br>방법</td><td colspan="4"><span class="oh">○ 용법‧용량</span>${f1.dosage||B}<span class="oh">○ 투여기간(투여중단 시기 포함)</span>${f1.duration||B}<span class="oh">○ 기타(재투여 기준 등)</span>${f1.other_admin||B}</td></tr>
+    <tr><td class="gl2">기타</td><td colspan="4"><span class="oh">○ 신청약제 소요비용</span><span class="blank">요양기관 작성</span><span class="oh">○ 고시 제2조 각 호 어느 하나에 해당하는지 사유(유형2 내용 기재)</span>${f1.reason_type2||B}</td></tr>
+    <tr><td class="gl" colspan="2">기타 의견</td><td colspan="4">${opinion||B}</td></tr>
    </table>
    <div class="gapply">허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차에 따라 위와 같이 비급여 사용승인을 신청합니다.</div>
    <div class="gdate">　　　　년　　　월　　　일</div>
    <div class="gsign"><div>요양기관의 장　　　　　　(서명 또는 인)</div><div>작성자</div><div>연락처　　　　　　　　E-mail</div></div>
    <div class="gto">건강보험심사평가원장 귀하</div>
-   <div class="fn"><b>작성방법</b><br>1. IRB(Institutional Review Board): 의약품임상시험실시기관<br>2. 해당 항목에 대한 각각의 자료를 별첨으로 첨부하여야 함.<br>3. 약제정보(식품의약품안전처 허가사항 등), 외국 의약품집, 교과서, 국내·외 가이드라인, 학술지(초록은 인정되지 아니함) 수재내역 등을 기재하여야 함.</div>
+   <div class="fn"><b>작성방법</b><br>1. IRB(Institutional Review Board): 의약품임상시험실시기관<br>2. 해당 항목에 대한 각각의 자료를 별첨으로 첨부하여야 함.<br>3. 약제정보(식품의약품안전처 허가사항 등), 외국 의약품집, 교과서, 국내ㆍ외 가이드라인, 학술지(초록은 인정되지 아니함) 수재내역 등을 기재하여야 함.</div>
   </div>`;
 }
 
+// 별지 제2호서식 — 4열(구분/내용), 시험약·대조약은 한 행 4칸. 실제 HWP 좌표 기준.
 function form2Html(p,s,idx){
-  const B='<span class="blank">　　　　</span>';
+  const B='<span class="blank">　　　</span>';
   const cls=s.classification||guessClass(p);
   const src=p.j+' · '+p.y+(p.n?'; n='+p.n:'');
-  const row=(l,v)=>`<tr><td class="gl">${l}</td><td>${v||B}</td></tr>`;
+  const R=(l,v)=>`<tr><td class="gl">${l}</td><td colspan="3">${v||B}</td></tr>`;
   return `<div class="gov">
    <div class="ghead">■ 허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차 [별지 제2호서식]</div>
    <h3 class="gt">제출논문 요약표</h3>
-   <table class="gf"><colgroup><col style="width:22%"><col style="width:78%"></colgroup>
-    ${row('연번',String(idx))}
-    ${row('범주<sup>1)</sup>','Category ( '+(s.category||'　')+' )')}
-    <tr><td class="gl">분류</td><td>${CLS_OPTS.map(o=>cbx(o===cls,o)).join('')}</td></tr>
-    ${row('제목',p.t)}
-    ${row('출전',src)}
-    ${row('시험 참여 국가',s.country)}
-    ${row('저자, 소속기관명','')}
-    ${row('시험목적',s.purpose)}
-    ${row('대상환자 선정기준',s.selection)}
-    ${row('피험자 수',s.subjects)}
-    ${row('시험약',s.test_drug)}
-    ${row('대조약',s.control_drug)}
-    ${row('시험기간',s.period)}
-    ${row('시험방법<sup>2)</sup>',s.method)}
-    ${row('평가항목<sup>3)</sup>',s.endpoints)}
-    ${row('피험자 특성<sup>4)</sup>',s.subject_chars)}
-    ${row('시험결과 및 결론<sup>5)</sup>',s.results)}
-    ${row('기타<sup>6)</sup>',s.etc)}
+   <table class="gf"><colgroup><col style="width:21.45%"><col style="width:35.22%"><col style="width:13.23%"><col style="width:30.10%"></colgroup>
+    <tr><td class="gl">구분</td><td colspan="3" class="gl">내  용</td></tr>
+    ${R('연번',String(idx))}
+    ${R('범주<sup>1)</sup>','Category ( '+(s.category||'　')+' )')}
+    <tr><td class="gl">분류</td><td colspan="3">${CLS_OPTS.map(o=>cbx(o===cls,o)).join('')}</td></tr>
+    ${R('제목',p.t)}
+    ${R('출전',src)}
+    ${R('시험 참여 국가',s.country)}
+    ${R('저자, 소속기관명','')}
+    ${R('시험목적',s.purpose)}
+    ${R('대상환자 선정기준',s.selection)}
+    ${R('피험자 수',s.subjects)}
+    <tr><td class="gl">시험약</td><td>${s.test_drug||B}</td><td class="gl">대조약</td><td>${s.control_drug||B}</td></tr>
+    ${R('시험기간',s.period)}
+    ${R('시험방법<sup>2)</sup>',s.method)}
+    ${R('평가항목<sup>3)</sup>',s.endpoints)}
+    ${R('피험자 특성<sup>4)</sup>',s.subject_chars)}
+    ${R('시험결과 및 결론<sup>5)</sup>',s.results)}
+    ${R('기타<sup>6)</sup>',s.etc)}
    </table>
    <div class="fn"><b>작성방법</b><br>1) 임상연구문헌의 의학적 근거수준 분류·기준에 따른 범주를 명시. &nbsp; 2) 전향/후향, 단면/환자대조/코호트, RCT·이중맹검 여부, 투여·평가계획 등. &nbsp; 3) primary/secondary endpoint 구분. &nbsp; 4) 참여 환자특성·중도탈락 수 및 사유. &nbsp; 5) 결과수치를 p값(또는 신뢰구간)으로. &nbsp; 6) 연구 한계, 연구기금 지원 여부 등.</div>
   </div>`;
