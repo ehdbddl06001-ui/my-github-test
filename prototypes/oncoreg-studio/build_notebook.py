@@ -27,29 +27,37 @@ for _m in ['server','studio_app','oncoreg_app','trialmatch_app']:
 print('모듈 캐시 정리 완료.')
 """),
  md("## 1) 패키지 설치"),
- code("!pip -q install openai flask flask-cors flask-cloudflared\n"),
+ code("!pip -q install google-genai openai flask flask-cors flask-cloudflared\n"),
  md("## 2) 백엔드/프론트 파일 기록 (전용 폴더 `oncoreg_studio/`)"),
  code("import os; os.makedirs('oncoreg_studio/templates', exist_ok=True); print('준비 완료')\n"),
  wf("oncoreg_studio/studio_app.py", readfile("server.py")),
  wf("oncoreg_studio/templates/index.html", readfile(os.path.join("templates","index.html"))),
- md("""## 3) OpenAI API 키 입력 (직접 입력 칸)
-키 발급: <https://platform.openai.com/api-keys>  (왼쪽 🔑 보안 비밀에 `OPENAI_API_KEY` 저장도 가능)"""),
+ md("""## 3) API 키 입력 (Gemini 또는 OpenAI · 직접 입력 칸)
+- Gemini 키: <https://aistudio.google.com/app/apikey>  ·  OpenAI 키: <https://platform.openai.com/api-keys>
+- 공급자를 고르고 키를 붙여넣으세요. (보안 비밀 `GEMINI_API_KEY`/`OPENAI_API_KEY` 가 있으면 자동으로 채워집니다)"""),
  code("""import os
-os.environ.setdefault('OPENAI_MODEL', 'gpt-4o-mini')   # 필요시 gpt-4o 등으로 변경
-_pre=''
+_pre_g=_pre_o=''
 try:
     from google.colab import userdata
-    _pre = userdata.get('OPENAI_API_KEY') or ''
+    _pre_g=userdata.get('GEMINI_API_KEY') or ''
+    _pre_o=userdata.get('OPENAI_API_KEY') or ''
 except Exception:
     pass
 
 def _verify():
+    prov=os.environ.get('LLM_PROVIDER','gemini')
     try:
-        from openai import OpenAI
-        c=OpenAI(api_key=os.environ.get('OPENAI_API_KEY',''))
-        c.chat.completions.create(model=os.environ['OPENAI_MODEL'],
-            messages=[{'role':'user','content':'ping'}], max_tokens=1)
-        print('✅ OpenAI 연결 OK · 모델:', os.environ['OPENAI_MODEL'])
+        if prov=='gemini':
+            from google import genai
+            genai.Client(api_key=os.environ.get('GEMINI_API_KEY','')).models.generate_content(
+                model=os.environ.get('GEMINI_MODEL','gemini-2.5-flash'), contents='ping')
+            print('✅ Gemini 연결 OK · 모델:', os.environ.get('GEMINI_MODEL'))
+        else:
+            from openai import OpenAI
+            OpenAI(api_key=os.environ.get('OPENAI_API_KEY','')).chat.completions.create(
+                model=os.environ.get('OPENAI_MODEL','gpt-4o-mini'),
+                messages=[{'role':'user','content':'ping'}], max_tokens=1)
+            print('✅ OpenAI 연결 OK · 모델:', os.environ.get('OPENAI_MODEL'))
     except Exception as e:
         print('⚠️ 연결 확인만 실패(키가 맞아도 날 수 있음):', e)
         print('   → 키를 칸에 제대로 넣었다면 4번 서버 실행 셀로 진행해도 됩니다.')
@@ -57,23 +65,34 @@ def _verify():
 try:
     import ipywidgets as w
     from IPython.display import display
-    _key=w.Text(value=_pre, description='API Key', placeholder='sk-... 붙여넣기',
+    _prov=w.Dropdown(options=[('Gemini','gemini'),('OpenAI','openai')], value='gemini',
+                     description='공급자', style={'description_width':'70px'})
+    _key=w.Text(value=_pre_g, description='API Key', placeholder='키 붙여넣기',
                 layout=w.Layout(width='620px'), style={'description_width':'70px'})
-    _model=w.Text(value=os.environ['OPENAI_MODEL'], description='Model',
+    _model=w.Text(value='gemini-2.5-flash', description='Model',
                   layout=w.Layout(width='360px'), style={'description_width':'70px'})
     _btn=w.Button(description='저장하고 확인', button_style='success'); _out=w.Output()
-    if _pre: os.environ['OPENAI_API_KEY']=_pre
+    def _on_prov(ch):
+        if ch['new']=='gemini': _key.value=_pre_g; _model.value='gemini-2.5-flash'
+        else: _key.value=_pre_o; _model.value='gpt-4o-mini'
+    _prov.observe(_on_prov, names='value')
     def _save(_):
         with _out:
             _out.clear_output()
-            os.environ['OPENAI_API_KEY']=_key.value.strip()
-            os.environ['OPENAI_MODEL']=_model.value.strip() or 'gpt-4o-mini'
-            if not os.environ['OPENAI_API_KEY']: print('⚠️ 키 칸이 비어 있어요.'); return
-            print('저장됨. 확인 중…'); _verify()
-    _btn.on_click(_save); display(w.VBox([_key, w.HBox([_model,_btn]), _out]))
-    print('↑ 칸에 키를 붙여넣고 [저장하고 확인]을 누르세요.')
+            prov=_prov.value; os.environ['LLM_PROVIDER']=prov
+            k=_key.value.strip()
+            if not k: print('⚠️ 키 칸이 비어 있어요.'); return
+            if prov=='gemini':
+                os.environ['GEMINI_API_KEY']=k; os.environ['GEMINI_MODEL']=_model.value.strip() or 'gemini-2.5-flash'
+            else:
+                os.environ['OPENAI_API_KEY']=k; os.environ['OPENAI_MODEL']=_model.value.strip() or 'gpt-4o-mini'
+            print('저장됨('+prov+'). 확인 중…'); _verify()
+    _btn.on_click(_save); display(w.VBox([_prov, _key, w.HBox([_model,_btn]), _out]))
+    print('↑ 공급자 선택 → 키 붙여넣고 [저장하고 확인].')
 except Exception:
-    os.environ['OPENAI_API_KEY']=input('OpenAI API Key 붙여넣고 Enter: ').strip(); _verify()
+    os.environ['LLM_PROVIDER']='gemini'
+    os.environ['GEMINI_API_KEY']=input('Gemini API Key 붙여넣고 Enter: ').strip()
+    os.environ.setdefault('GEMINI_MODEL','gemini-2.5-flash'); _verify()
 """),
  md("""## 4) 서버 실행 → 공개 URL
 출력되는 `https://….trycloudflare.com` 주소를 새 탭에서 열면 스튜디오가 뜹니다. 이 셀은 계속 실행 상태로 둡니다(중지: ⏹️)."""),
