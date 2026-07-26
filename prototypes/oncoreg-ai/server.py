@@ -92,6 +92,42 @@ class DocProse(BaseModel):
     benefit_risk: str = ""      # 기존 용량 대비 이익-위해 (추가 용량 서식)
 
 
+# --- 실제 정부 서식(별지 제1호/제2호) 항목 -----------------------------------
+class Form1Prose(BaseModel):
+    """별지 제1호서식 '제출자료(요약)'."""
+    evidence_basis: str = ""    # 의학적 근거자료
+    drug_merits: str = ""       # 신청약제의 특·장점
+    target_criteria: str = ""   # 대상 환자 기준
+    dosage: str = ""            # 용법·용량
+    duration: str = ""          # 투여기간(투여중단 시기 포함)
+    other_admin: str = ""       # 기타(재투여 기준 등)
+    reason_type2: str = ""      # 고시 제2조 해당 사유(유형2)
+    opinion: str = ""           # 기타 의견
+
+
+class PaperSummary(BaseModel):
+    """별지 제2호서식 '제출논문 요약표' (논문 1편)."""
+    id: int
+    category: str = ""          # 근거수준 범주
+    classification: str = ""    # 메타분석/Systematic Review/RCT/case-control or cohort/case report or case series/기타
+    purpose: str = ""           # 시험목적
+    selection: str = ""         # 대상환자 선정기준
+    subjects: str = ""          # 피험자 수
+    test_drug: str = ""         # 시험약
+    control_drug: str = ""      # 대조약
+    period: str = ""            # 시험기간
+    method: str = ""            # 시험방법
+    endpoints: str = ""         # 평가항목
+    subject_chars: str = ""     # 피험자 특성
+    results: str = ""           # 시험결과 및 결론
+    etc: str = ""               # 기타
+
+
+class OfficialDoc(BaseModel):
+    form1: Form1Prose
+    papers: List[PaperSummary]
+
+
 # 유사도 가중치 기본값(합=1.0). 프론트 슬라이더로 조정 가능.
 DEFAULT_WEIGHTS = {"disease": 0.30, "biomarker": 0.25, "stage": 0.15, "line": 0.15, "drug": 0.15}
 
@@ -179,6 +215,45 @@ def build_generate_prompt(c: dict, metrics: List[dict], trials: List[dict], form
 - alternatives: '대체요법 검토'. 현행 급여 대체요법 대비 본 요법의 상대적 임상 이익을 서술.
 (unmet_need, approval_status, dose_rationale, benefit_risk 는 "")"""
     return header + body + fields
+
+
+def build_official_prompt(c: dict, metrics: List[dict], papers: List[dict], form: str) -> str:
+    ev = "; ".join(f"{m.get('label')} {m.get('val')}" for m in metrics) or "제공된 지표 없음"
+    plist = "\n".join(
+        f"- id {p.get('id')}: {p.get('t')} / {p.get('j')} {p.get('y')} n={p.get('n')}" for p in papers
+    ) or "- 없음"
+    excess = "용법·용량 초과" if form == "dose" else "효능·효과 초과"
+    rare = " · 희귀질환 해당(유형5 예)" if form == "orphan" else ""
+    return f"""당신은 한국 '허가초과 약제 비급여 사용승인 신청서(별지 제1호서식)'와 논문별
+'제출논문 요약표(별지 제2호서식)' 항목을 채우는 의학 보조자다. 반드시 JSON 스키마를 따른다.
+과장 없이 담백하게 쓰고, 아는 것만 채우고 모르면 빈 문자열("")로 둔다.
+
+[환자/신청]
+- 질환: {c.get('typeLabel')} · {c.get('stage')} · {c.get('line')}
+- 임상지표: {c.get('bio')}
+- 약제: {c.get('drug')}
+- 허가초과 유형(유형1): {excess}{rare}
+- (증량 신청 시) 기존→신청 용량: {c.get('approvedDose')} → {c.get('requestDose')}
+[추출 지표] {ev}
+[제출 논문]
+{plist}
+
+[form1] 별지1 '제출자료(요약)' 필드:
+- evidence_basis(의학적 근거자료 요약), drug_merits(신청약제의 특·장점),
+  target_criteria(대상 환자 기준, 위 질환·지표 반영), dosage(용법·용량; 증량 신청이면 신청 용량),
+  duration(투여기간, 투여중단 시기 포함), other_admin(기타-재투여 기준 등),
+  reason_type2(고시 제2조 해당 사유 한 문장), opinion(기타 의견; 없으면 "").
+
+[papers] 각 제출 논문 id마다 별지2 항목을 하나씩 채운다:
+- id(그대로 정수),
+- classification 은 정확히 다음 중 하나: "메타분석","Systematic Review",
+  "Randomized controlled trial(RCT)","case-control or cohort studies",
+  "case report or case series","기타".
+- category(근거수준, 모르면 ""), purpose(시험목적), selection(대상환자 선정기준),
+  subjects(피험자 수; 모르면 n 기반 "약 N명" 또는 ""), test_drug(시험약), control_drug(대조약),
+  period(시험기간, 모르면 ""), method(시험방법), endpoints(평가항목),
+  subject_chars(피험자 특성, 모르면 ""), results(시험결과 및 결론), etc(기타, 모르면 "").
+반드시 위 제출 논문 id 각각에 대해 하나씩 생성한다."""
 
 
 # ----------------------------------------------------------------------------
@@ -288,11 +363,11 @@ def create_app() -> Flask:
         body = request.get_json(force=True) or {}
         c = body.get("case", {})
         metrics = body.get("metrics", [])
-        trials = body.get("trials", [])
+        papers = body.get("papers", [])
         form = body.get("form", "eff")
         try:
-            prose = call_gemini(build_generate_prompt(c, metrics, trials, form), DocProse)
-            return jsonify(prose)
+            out = call_gemini(build_official_prompt(c, metrics, papers, form), OfficialDoc)
+            return jsonify(out)
         except Exception as e:
             return jsonify({"error": str(e)}), 502
 
