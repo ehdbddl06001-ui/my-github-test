@@ -113,6 +113,10 @@ a.ext{font-size:11.5px;color:var(--seal);text-decoration:none;font-family:var(--
 .reftab th,.reftab td{border:1px solid #D5DEE9;padding:3px 7px;text-align:left}
 .reftab th{background:#E7EEF6;font-weight:600;color:#2B4A73}
 .srcnote{font-size:10px;color:var(--faint);margin-top:5px;line-height:1.5}.srcnote b{color:var(--muted);font-weight:600}
+.frefs{margin-top:7px;border:1px solid #E4DFF0;background:#F7F5FC;border-radius:5px;padding:7px 9px}
+.frefs .frt{font-size:10.5px;font-weight:600;color:var(--trial);margin-bottom:5px}
+.frefs .reftab th{background:#ECE7F7;color:var(--trial);border-color:#DAD1EE}
+.frefs .reftab td{border-color:#DAD1EE}
 .gov .srcmini{display:block;font-size:8.5px;color:#9A8F7A;font-family:var(--mono);margin-top:2px;line-height:1.3}
 .issue{border:1px solid var(--rule);border-left-width:3px;border-radius:4px;padding:7px 10px;margin-bottom:6px;font-size:12px;background:#fff}
 .issue.high{border-left-color:var(--alert)}.issue.medium{border-left-color:var(--amber)}.issue.low{border-left-color:var(--seal)}
@@ -240,8 +244,7 @@ footer{margin-top:34px;padding-top:14px;border-top:1px solid var(--rule);font-si
           <option>생명을 위협하는 질환</option><option>사망에 이르는 질환</option><option>비가역적인 기능상실을 초래하는 질환</option><option>기타(해당없음 등)</option></select></div>
         <div class="ctrl"><label>주성분명</label><input class="txt" id="cDrug" oninput="renderForm()" placeholder="약제명"></div>
       </div>
-      <div class="pane" style="margin-top:12px"><h3>근거 → 서식 칸 채우기 <span style="font-weight:400;color:var(--faint);font-size:11px">— 오른쪽 서식의 <b>네모칸을 클릭</b>(또는 아래 칸 선택)한 뒤, 근거를 누르면 값·원문 문장·위치가 들어갑니다</span></h3>
-        <div class="srcview" id="srcView">근거를 누르면 원문 인용(문장·위치)이 여기에 표시됩니다.</div>
+      <div class="pane" style="margin-top:12px"><h3>AI 자동 초안 · 수정 <span style="font-weight:400;color:var(--faint);font-size:11px">— AI가 <b>모든 칸을 먼저 작성</b>합니다. 각 칸 아래 <b>가이드라인별 정상치</b>를 보며 자유롭게 고치세요(오른쪽 서식 실시간 반영).</span></h3>
         <div id="fields"></div>
       </div>
     </div>
@@ -443,97 +446,90 @@ function toStudio(){
   document.getElementById('cDrug').value=q.drug||q.I||'';
   builder.fields={evidence:'',merits:'',target:'',dosage:'',duration:'',other:'',reason2:'',opinion:''};
   builder.fieldSrc={evidence:[],merits:[],target:[],dosage:[],duration:[],other:[],reason2:[],opinion:[]};
-  builder.fields.target=[q.condition||q.P,q.stage,q.line].filter(Boolean).join(' · ')+(q.biomarker?(' ('+q.biomarker+')'):'');
-  fieldGuides={};
+  builder.fieldRefs={};
   const src=((LAST&&LAST.papers)||[]).filter(p=>selectedIds.size===0||selectedIds.has(p.id));
   PALETTE=[];sortedPapers(src).forEach(p=>(p.items||[]).forEach(it=>PALETTE.push({...it,paperId:p.id,journal:p.journal})));
   activeField='evidence';studioReady=true;document.getElementById('tStudio').disabled=false;
   const vo=document.getElementById('verifyOut');if(vo)vo.innerHTML='';
-  renderFields();renderForm();mode('studio');}
+  renderFields();renderForm();mode('studio');
+  composeDoc(false);}     // 진입 즉시 AI가 모든 칸을 자동 생성
+// AI가 전체 신청서 초안을 한 번에 생성 → 사용자는 정상치를 보며 수정
+async function composeDoc(force){
+  const q=(LAST&&LAST.query)||{}, m=document.getElementById('msgS');
+  const already=Object.values(builder.fields).some(v=>(v||'').trim());
+  if(already&&!force)return;                 // 이미 채워져 있으면(수정 중) 덮어쓰지 않음
+  if(m)m.innerHTML='<span class="spin"></span>AI가 전체 초안 생성 중…';
+  const papers=((LAST&&LAST.papers)||[]).filter(p=>selectedIds.size===0||selectedIds.has(p.id));
+  let d;
+  try{
+    if(API_BASE){const r=await fetch(api('api/compose'),{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({query:q,papers,references:(LAST&&LAST.references)||[]})});
+      if(!r.ok)throw new Error(await errMsg(r));d=await r.json();}
+    else d=demoCompose();
+  }catch(e){d=demoCompose();d._note='오프라인/실패 대체 — '+e.message;}
+  const F=d.fields||{};
+  FIELD_DEFS.forEach(([k])=>{ if(typeof F[k]==='string')builder.fields[k]=F[k]; });
+  if(!builder.fields.target)builder.fields.target=[q.condition||q.P,q.stage,q.line].filter(Boolean).join(' · ')+(q.biomarker?(' ('+q.biomarker+')'):'');
+  builder.fieldRefs=d.field_refs||{};
+  // 근거 출처(선택 논문) 기록
+  const by={};PALETTE.forEach(it=>{const fk=fieldOf(it);(by[fk]=by[fk]||[]).push(it);});
+  FIELD_DEFS.forEach(([k])=>{builder.fieldSrc[k]=(by[k]||[]).filter(it=>it.kr_ok!==false).map(it=>({id:it.paperId,title:(paperById(it.paperId)||{}).title||''}))
+    .filter((s,i,a)=>a.findIndex(x=>x.id===s.id)===i);});
+  if(m)m.textContent=d._note?('⚠ '+d._note):'AI 전체 초안 생성 완료 — 아래에서 수정하세요.';
+  renderFields();renderForm();}
+function demoCompose(){
+  const q=(LAST&&LAST.query)||{}, drug=q.drug||q.I||document.getElementById('cDrug').value||'해당 약제';
+  const cite=k=>{const it=PALETTE.filter(x=>x.kr_ok!==false&&fieldOf(x)===k);
+    return it.map(x=>`${x.label} ${x.value} [${x.paperId}]`).join(', ');};
+  const ev=cite('evidence'), tgt=[q.condition||q.P,q.stage,q.line].filter(Boolean).join(' · ')+(q.biomarker?(' ('+q.biomarker+')'):'');
+  const F={
+    evidence:(ev?`선택 근거상 ${ev} 등이 확인되어 유효성·안전성이 뒷받침된다. `:'')+'세부 수치는 원문 검증이 필요하다.',
+    merits:`${drug}는 표준요법 대비 반응률·생존 지표에서 이점이 보고되어 본 환자군에 우선 고려된다(가이드라인 권고 위상 확인 필요).`,
+    target:tgt||'대상 환자 기준(질환·병기·바이오마커·치료력)을 기재.',
+    dosage:`${drug}는 국내 허가 용법·용량 범위 내에서 환자 상태(신·간기능 등)에 따라 투여한다(허가사항·지침 확인 필요).`,
+    duration:'질병 진행 또는 허용 불가 독성 전까지 유지하며, 발생 시 중단·감량한다(지침 확인 필요).',
+    other:'투여 중 정기적 영상·검사 모니터링을 시행하고, 재투여는 반응·내약성에 따라 담당 의료진이 판단한다.',
+    reason2:'대체 가능한 급여 약제가 제한적이고 본 약제가 치료효과·부작용 면에서 유리하여 고시 제2조에 해당한다(급여기준 확인 필요).',
+    opinion:'상기 초안은 제출 전 원문·규제 공고 검증이 필요한 참고본이다.'
+  };
+  // 데모: 참고 정상치를 칸별로 배치(references 를 heuristic 으로 분배)
+  const fr={};((LAST&&LAST.references)||[]).forEach(r=>{const fk=refFieldOf(r.metric||'');(fr[fk]=fr[fk]||[]).push(r);});
+  return {fields:F,field_refs:fr};}
+function refFieldOf(metric){const s=metric||'';
+  if(/용량|용법|mg|dose/i.test(s))return 'dosage';
+  if(/기간|모니터|투여\s*중단|duration/i.test(s))return 'duration';
+  if(/부작용|이상반응|안전|ILD|독성/i.test(s))return 'other';
+  if(/판정|기준|IHC|바이오마커|대상|적응|변이|양성/i.test(s))return 'target';
+  return 'evidence';}
 function openStudio(){ if(!studioReady){toStudio();} else {renderFields();renderForm();mode('studio');} }
 function startBlank(){LAST=null;PALETTE=[];SCORE_MODE='sim';selectedIds=new Set();toStudio();}
-function autoDraft(){   // 한국기준 위반(kr_ok=false) 값은 자동 채우기에서 제외
-  const by={};PALETTE.forEach(it=>{if(it.kr_ok===false)return;const k=fieldOf(it);(by[k]=by[k]||[]).push(it);});
-  FIELD_DEFS.forEach(([k])=>{ if(k==='target')return;
-    const items=by[k]||[]; if(items.length){builder.fields[k]=items.map(lineOf).join('\n');
-      builder.fieldSrc[k]=items.map(it=>({id:it.paperId,title:(paperById(it.paperId)||{}).title||''}));}});}
 function clearFields(){FIELD_DEFS.forEach(([k])=>{builder.fields[k]='';builder.fieldSrc[k]=[];});renderFields();renderForm();}
 function refBox(){
   const refs=(LAST&&LAST.references)||[], gl=(LAST&&LAST.guideline_links)||{};
   const rows=refs.map(r=>`<tr><td>${esc(r.metric||'')}${r.unit?` <span style="color:var(--faint)">(${esc(r.unit)})</span>`:''}</td><td>${esc(r.kr||'-')}</td><td>${esc(r.us||'-')}</td><td>${esc(r.eu||'-')}</td></tr>`).join('');
   const links=['kr','us','eu'].map(rg=>{const g=gl[rg],nm={kr:'한국',us:'미국',eu:'유럽'}[rg];return g&&g.url?`<a class="ext" href="${esc(g.url)}" target="_blank" rel="noopener">${nm}: ${esc(g.name||'가이드라인')} ↗</a>`:'';}).filter(Boolean).join('');
   if(!rows&&!links)return '';
-  return `<div class="refbox"><div class="rt">가이드라인 기준치(한/미/유럽) · 바로가기</div>
+  return `<div class="refbox"><div class="rt">가이드라인 기준치(한/미/유럽) · 수정 참고 · 바로가기</div>
     ${rows?`<div style="overflow-x:auto"><table class="reftab"><tr><th>지표</th><th>한국</th><th>미국</th><th>유럽</th></tr>${rows}</table></div>`:''}
     ${links?`<div class="glinks" style="margin-top:8px">${links}</div>`:''}
-    <div style="font-size:10.5px;color:var(--faint);margin-top:6px">※ 한국 기준을 벗어나는 논문 수치(⛔)는 선택·자동채움에서 제외됩니다.</div></div>`;}
-function demoField(k,drug){
-  const t={
-    dosage:(drug||'해당 약제')+'의 용법·용량은 한국·미국·유럽 진료지침의 권고 범위 내에서 환자 상태(신기능 등)에 따라 조정한다(지침 원문 확인 필요).',
-    duration:'투여기간은 반응·내약성에 따라 유지하며, 질병 진행 또는 허용 불가 독성 발생 시 중단한다(지침 확인 필요).',
-    other:'재투여·모니터링 기준은 관련 지침 및 담당 의료진 판단에 따른다.',
-    reason2:'대체 가능한 급여 약제가 제한적이어서 고시 제2조에 해당한다(급여기준·지침 확인 필요).'
-  }[k]||'';
-  return {text:t,guidelines:[
-    {region:'한국',name:'대한의학회 임상진료지침',url:'https://www.guideline.or.kr/'},
-    {region:'미국',name:'관련 학회(ASCO·NCCN·ADA 등)',url:'https://www.uptodate.com/'},
-    {region:'유럽',name:'ESMO / EMA 가이드라인',url:'https://www.esmo.org/guidelines'}
-  ]};}
-async function fieldDraft(k){
-  const drug=document.getElementById('cDrug').value||'';
-  const q=(LAST&&LAST.query)||{};
-  const patient=[q.condition||q.P,q.stage,q.line,q.biomarker].filter(Boolean).join(', ')||(document.getElementById('q').value||'');
-  const label={dosage:'용법·용량',duration:'투여기간(투여중단 시기 포함)',other:'기타(재투여 기준 등)',reason2:'고시 제2조 해당 사유'}[k]||k;
-  const btn=document.getElementById('gb_'+k);if(btn){btn.disabled=true;btn.innerHTML='<span class="spin"></span>생성 중';}
-  let d;
-  try{
-    if(API_BASE){const r=await fetch(api('api/field'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({field:k,fieldLabel:label,drug,patient})});
-      if(!r.ok)throw new Error(await errMsg(r));d=await r.json();}
-    else d=demoField(k,drug);
-  }catch(e){d=demoField(k,drug);d.text+=' (오프라인/실패 대체 — '+e.message+')';}
-  builder.fields[k]=(builder.fields[k]?builder.fields[k].replace(/\s*$/,'')+'\n':'')+(d.text||'');
-  fieldGuides[k]=d.guidelines||[];
-  activeField=k;renderFields();renderForm();}
-function persistLinks(){        // 한/미/유럽 가이드라인 고정 링크(AI 자동선택 위)
-  const gl=(LAST&&LAST.guideline_links)||{};
-  const links=['kr','us','eu'].map(rg=>{const g=gl[rg],nm={kr:'한국',us:'미국',eu:'유럽'}[rg];
-    return g&&g.url?`<a class="ext" href="${esc(g.url)}" target="_blank" rel="noopener">${nm}: ${esc(g.name||'가이드라인')} ↗</a>`:'';}).filter(Boolean).join('');
-  return links?`<div class="glinks" style="margin:6px 0 0">${links}</div>`:'';}
+    <div style="font-size:10.5px;color:var(--faint);margin-top:6px">※ AI 초안은 <b>한국 기준</b>을 우선합니다. 위 정상치와 비교해 각 칸을 고치세요.</div></div>`;}
+function fieldRefBox(k){         // 각 칸 아래: 그 칸에 해당하는 가이드라인별 정상치
+  const refs=(builder.fieldRefs&&builder.fieldRefs[k])||[]; if(!refs.length)return '';
+  const rows=refs.map(r=>`<tr><td>${esc(r.metric||'')}${r.unit?` <span style="color:var(--faint)">(${esc(r.unit)})</span>`:''}</td><td>${esc(r.kr||'-')}</td><td>${esc(r.us||'-')}</td><td>${esc(r.eu||'-')}</td></tr>`).join('');
+  return `<div class="frefs"><div class="frt">가이드라인별 정상치 · 이 값과 비교해 수정</div>
+    <div style="overflow-x:auto"><table class="reftab"><tr><th>지표</th><th>한국</th><th>미국</th><th>유럽</th></tr>${rows}</table></div></div>`;}
 function renderFields(){
   const host=document.getElementById('fields');if(!host)return;
-  const tools=`<div class="row" style="margin:0 0 8px"><button class="ghost" onclick="autoDraft();renderFields();renderForm()">AI 초안 채우기(칸별 자동배치)</button><button class="ghost" onclick="clearFields()">모두 비우기</button></div>`;
+  const tools=`<div class="row" style="margin:0 0 8px"><button class="ghost" onclick="composeDoc(true)">AI 전체 초안 다시 생성</button><button class="ghost" onclick="clearFields()">모두 비우기</button></div>`;
   const flds=FIELD_DEFS.map(([k,l])=>{
-    const its=PALETTE.map((it,idx)=>({it,idx})).filter(x=>fieldOf(x.it)===k);
-    const chips=its.map(({it,idx})=>{const bad=it.kr_ok===false;
-      const tip=esc(it.label)+' · '+esc(it.journal||'')+' '+esc(it.loc||'')+(bad?(' · ⛔ 한국 기준 위반: '+esc(it.kr_note||'')):'');
-      return bad
-        ?`<span class="pk bad" title="${tip}">⛔ <b>${esc(it.value)}</b> ${esc(it.label)}</span>`
-        :`<span class="pk" title="${tip}" onclick="insertItem('${k}',${idx})"><b>${esc(it.value)}</b> ${esc(it.label)}</span>`;}).join('');
-    // 용법·용량/투여기간/재투여/고시 제2조: 한/미/유럽 지침 고정 링크 + AI가 약물·환자로 초안 채움
-    const guide=GUIDE_FIELDS.includes(k)?`
-      ${persistLinks()}
-      <div class="row" style="margin:6px 0 0"><button class="ghost gbtn" id="gb_${k}" onclick="fieldDraft('${k}')">AI 가이드라인 초안</button>
-        <span style="font-size:11px;color:var(--faint)">약물·환자 상태로 초안 + 한/미/유럽 지침 링크</span></div>
-      ${(fieldGuides[k]&&fieldGuides[k].length)?`<div class="glinks">${fieldGuides[k].map(g=>`<a class="ext" href="${esc(g.url||'#')}" target="_blank" rel="noopener">${esc(g.region||'')}: ${esc(g.name||'가이드라인')} ↗</a>`).join('')}</div>`:''}`:'';
     const src=(builder.fieldSrc&&builder.fieldSrc[k])||[];
     const srcnote=src.length?`<div class="srcnote"><b>근거 출처:</b> ${src.map(s=>esc(s.title||('논문 '+s.id))).join(' · ')}</div>`:'';
     return `<div class="fld${activeField===k?' act':''}" id="fld_${k}"><div class="fn">${l}</div>
-      <textarea onfocus="activeField='${k}';mark()" oninput="builder.fields['${k}']=this.value;renderForm()" placeholder="직접 입력하거나 아래 근거를 눌러 넣으세요">${esc(builder.fields[k])}</textarea>
+      <textarea onfocus="activeField='${k}';mark()" oninput="builder.fields['${k}']=this.value;renderForm()" placeholder="AI 초안 생성 중… 또는 직접 입력">${esc(builder.fields[k])}</textarea>
       ${srcnote}
-      <div class="picks">${chips||'<span style="color:var(--faint);font-size:11px">이 칸에 배정된 근거 없음 — 직접 입력하세요</span>'}</div>${guide}</div>`;}).join('');
+      ${fieldRefBox(k)}</div>`;}).join('');
   host.innerHTML=refBox()+tools+flds;}
 function mark(){FIELD_DEFS.forEach(([k])=>{const el=document.getElementById('fld_'+k);if(el)el.classList.toggle('act',k===activeField);});}
-function insertItem(k,idx){const it=PALETTE[idx];if(!it)return;
-  if(it.kr_ok===false){document.getElementById('srcView').innerHTML=`<span style="color:var(--alert)">⛔ 이 수치는 한국 기준을 벗어나 삽입할 수 없습니다.</span> ${esc(it.kr_note||'')}`;return;}
-  activeField=k;
-  const line=lineOf(it);
-  if(!(builder.fields[k]||'').includes(line))
-    builder.fields[k]=(builder.fields[k]?builder.fields[k].replace(/\s*$/,'')+'\n':'')+line;
-  builder.fieldSrc=builder.fieldSrc||{};builder.fieldSrc[k]=builder.fieldSrc[k]||[];
-  const t=(paperById(it.paperId)||{}).title||'';
-  if(!builder.fieldSrc[k].some(s=>s.id===it.paperId))builder.fieldSrc[k].push({id:it.paperId,title:t});
-  document.getElementById('srcView').innerHTML=`<b>[${it.paperId}] ${esc(it.journal||'')} · ${esc(it.loc||'')}</b><br>${esc(it.pre||'')}<mark>${esc(it.mark||it.value)}</mark>${esc(it.post||'')}`;
-  renderFields();renderForm();const ta=document.querySelector('#fld_'+k+' textarea');if(ta){ta.focus();ta.selectionStart=ta.value.length;}}
 
 function cbx(on,t){return '<span class="cbi">'+(on?'[✔]':'[  ]')+' '+t+'</span>';}
 function nl(s){return esc(s).replace(/\n/g,'<br>');}
@@ -546,7 +542,7 @@ function renderForm(){
   // 서식 칸을 클릭하면 왼쪽 편집기가 활성화되고 그 칸에 근거를 넣을 수 있다.
   const fc=(k,v)=>{const src=(builder.fieldSrc&&builder.fieldSrc[k])||[];
     const mini=(v&&src.length)?`<span class="srcmini">출처: ${src.map(s=>esc((s.title||('논문 '+s.id)).slice(0,42))).join(' · ')}</span>`:'';
-    return `<span class="fc${activeField===k?' on':''}" onclick="focusField('${k}')">${v?nl(v):'<span class="fcp">＋ 근거 선택/입력</span>'}${mini}</span>`;};
+    return `<span class="fc${activeField===k?' on':''}" onclick="focusField('${k}')">${v?nl(v):'<span class="fcp">（미작성 — 왼쪽에서 수정）</span>'}${mini}</span>`;};
   document.getElementById('form').innerHTML=`
    <div class="ghead">■ 허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차 [별지 제1호서식]</div>
    <h3 class="gt">허가초과 약제 비급여 사용승인 신청서</h3><div class="gsub">(IRB 지정 요양기관)</div>
