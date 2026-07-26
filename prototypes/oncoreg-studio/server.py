@@ -97,19 +97,33 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
        "symptom":"","age":"예: 중앙연령 58세로 유사","comorbidity":"","pathology":"","priormed":"예: 이전 항암 2차 경험 일치"
      },
      "why":"이 논문이 본 환자와 얼마나/왜 유사한지 2~3문장(무엇이 같고 무엇이 다른지 구체적으로)",
-     "items":[                       // 서식 각 칸에 넣을 '근거 조각'. 반드시 원문 한 문장과 위치 포함.
+     "items":[                       // 서식 각 칸에 넣을 '근거 조각'. 반드시 원문 한 문장·위치·대상 칸 포함.
        {"key":"ORR","label":"객관적 반응률","value":"52.6%",
         "pre":"영어 원문 앞부분 ","mark":"the ORR was 52.6%","post":" ...(원문 문장 끝).",
-        "loc":"Results · Table 2"}
+        "loc":"Results · Table 2",
+        "field":"evidence"          // 이 항목이 들어갈 서식 칸(아래 목록 중 하나)
+       }
      ]
    }
  ]
 }
 
+[items.field 배정 규칙] 각 근거 항목을 '알맞은 서식 칸' 하나로 분류한다:
+- "evidence"  : 유효성·안전성 수치(반응률·생존·위험비·이상반응 발생률 등) → 의학적 근거자료
+- "merits"    : 약제의 특장점·기전·표준 대비 우월성·권고 위상 → 신청약제의 특·장점
+- "target"    : 대상 환자·선정 기준·바이오마커 정의 → 대상 환자 기준
+- "dosage"    : 용법·용량·투여 스케줄 → 용법·용량
+- "duration"  : 투여기간·투여중단 시점 → 투여기간
+- "other"     : 재투여·모니터링 기준 → 기타(투여방법)
+- "reason2"   : 대체약제 부재/우월성 등 고시 제2조 사유 → 고시 제2조 해당 사유
+- "opinion"   : 그 외 참고 의견 → 기타 의견
+  잘 모르면 "evidence".
+
 규칙:
 - papers 6~8편, 근거수준 다양(메타분석~사례보고). 같은 질환이라도 매번 조금씩 다른 논문을
   제시해도 좋다(temperature 반영). 희귀질환이면 사례군/사례보고도 포함.
-- 각 논문 items 최소 2개(수치가 없으면 권고등급/핵심 결론을 value로). 안전성 item 1개 이상(key 를 "AE"로 시작).
+- 각 논문 items 2~5개로 '여러 칸'을 채우도록 field 를 다양하게(유효성·특장점·대상·용법 등).
+  안전성 item 1개 이상(key 를 "AE"로, field 는 "evidence").
 - pre/mark/post 는 실제 논문에 나올 법한 '영어 원문 한 문장'으로, mark 안에 value 가 그대로 포함.
 - sim 6축을 냉정하게 매기고, sim_detail 로 근거를 남긴다. 과장 금지, 검증 전 초안."""
 
@@ -143,8 +157,11 @@ def sanitize_papers(papers):
         if p.get("evidence_level") not in EVIDENCE_LEVELS:
             p["evidence_level"] = EVIDENCE_LEVELS[p["evidence_rank"] - 1]
         items = []
+        valid_fields = {"evidence", "merits", "target", "dosage", "duration", "other", "reason2", "opinion"}
         for j, it in enumerate(p.get("items") or []):
             it["key"] = it.get("key") or f"IT{i}_{j}"
+            if it.get("field") not in valid_fields:
+                it["field"] = "evidence"
             items.append(it)
         p["items"] = items
         out.append(p)

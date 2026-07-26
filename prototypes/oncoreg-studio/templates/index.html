@@ -132,7 +132,7 @@ footer{margin-top:34px;padding-top:14px;border-top:1px solid var(--rule);font-si
     <button id="tSearch" class="on" onclick="mode('search')">① 자유서술 검색</button>
     <button id="tPico" onclick="mode('pico')">② PICO 단답형</button>
     <button id="tDrug" onclick="mode('drug')">③ 약제 선택</button>
-    <button id="tStudio" onclick="mode('studio')" disabled>④ 문서 스튜디오</button>
+    <button id="tStudio" onclick="openStudio()">④ 문서 스튜디오</button>
   </div>
 </header>
 
@@ -143,6 +143,7 @@ footer{margin-top:34px;padding-top:14px;border-top:1px solid var(--rule);font-si
     <textarea id="q" placeholder="예) 당뇨병성 만성신부전으로 투석이 필요한 62세 환자. HbA1c 8.0, 10년간 메트포르민, 최근 SGLT2 억제제 사용. 어떤 투석·약제 근거가 있는지 가장 비슷한 논문을 찾아줘."></textarea>
     <div class="chips" id="exs"></div>
     <div class="row"><button class="go" id="btnSearch" onclick="runSearch()">근거 검색</button>
+      <button class="ghost" onclick="startBlank()">빈 문서로 바로 작성 →</button>
       <label class="chk"><input type="checkbox" id="useDemo"> 데모</label>
       <span id="msg" style="font-size:12.5px;color:var(--muted)"></span></div>
   </div>
@@ -215,7 +216,7 @@ const AXES=[["genetic","유전적 동일성"],["symptom","증상"],["age","나�
 const SIM_AXES=AXES.filter(a=>a[0]!=='evidence');
 const DEFAULT_WEIGHTS={genetic:.22,symptom:.15,age:.10,comorbidity:.14,pathology:.17,priormed:.14,evidence:.08};
 let WEIGHTS={...DEFAULT_WEIGHTS};
-let LAST=null, lastInput=null, activeField='evidence', PALETTE=[];
+let LAST=null, lastInput=null, activeField='evidence', PALETTE=[], SCORE_MODE='sim', studioReady=false;
 let builder={fields:{evidence:'',merits:'',target:'',dosage:'',duration:'',other:'',reason2:'',opinion:''}};
 const FIELD_DEFS=[['evidence','의학적 근거자료'],['merits','신청약제의 특·장점'],['target','대상 환자 기준'],
   ['dosage','용법·용량'],['duration','투여기간(투여중단 시기 포함)'],['other','기타(재투여 기준 등)'],
@@ -289,9 +290,21 @@ function mode(m){['search','pico','drug','studio'].forEach(x=>{
   window.scrollTo({top:0,behavior:'smooth'});}
 function back(){mode(lastInput&&lastInput.mode==='drug'?'drug':(lastInput&&lastInput.mode==='pico'?'pico':'search'));}
 function evSub(p){return Math.round((6-(p.evidence_rank||3))/5*100);}
-function paperScore(p){const s=p.sim||{};let ws=0,v=0;
+function paperScore(p){if(SCORE_MODE==='evidence')return evSub(p);
+  const s=p.sim||{};let ws=0,v=0;
   for(const[a] of AXES){const w=WEIGHTS[a]||0;ws+=w;v+=w*(a==='evidence'?evSub(p):(s[a]??0));}
   return ws?Math.round(v/ws):0;}
+const FIELD_LABEL={evidence:'의학적 근거자료',merits:'특·장점',target:'대상 환자 기준',dosage:'용법·용량',duration:'투여기간',other:'투여방법 기타',reason2:'고시 제2조 사유',opinion:'기타 의견'};
+function fieldOf(it){
+  if(it.field&&FIELD_LABEL[it.field])return it.field;
+  const s=(it.key||'')+' '+(it.label||'');
+  if(/특장점|특·장점|우월|기전|자리매김|역할|프로파일|권고|Category|MERIT|REC\b/i.test(s))return 'merits';
+  if(/대상|선정|정의|기준|IHC|바이오마커|유전/i.test(s))return 'target';
+  if(/용량|\bmg\b|용법|dose|일\s*\d/i.test(s))return 'dosage';
+  if(/투여기간|지속 기간|duration|주간|개월(?!.*생존)/i.test(s))return 'duration';
+  return 'evidence';}
+function lineOf(it){const sent=((it.pre||'')+(it.mark||it.value||'')+(it.post||'')).trim();
+  return `· ${it.label}: ${it.value} — "${sent}" (${it.journal||''}${it.loc?', '+it.loc:''}) [${it.paperId}]`;}
 function sortedPapers(ps){return [...(ps||[])].map(p=>({p,sc:paperScore(p)})).sort((a,b)=>b.sc-a.sc).map(x=>x.p);}
 function evClass(r){return 'ev'+Math.max(1,Math.min(5,r||3));}
 function scholarUrl(p){return 'https://scholar.google.com/scholar?q='+encodeURIComponent((p.title||'')+' '+(p.journal||''));}
@@ -314,6 +327,7 @@ async function runPico(){const p={p:document.getElementById('pP').value.trim(),i
   lastInput={mode:'pico'};
   await doSearch({pico:p},document.getElementById('btnPico'),document.getElementById('msgP'),document.getElementById('useDemoP').checked,'outP');}
 async function doSearch(payload,btn,msg,useDemo,host){
+  SCORE_MODE='sim';
   if(useDemo){LAST=JSON.parse(JSON.stringify(DEMO));WEIGHTS={...DEFAULT_WEIGHTS,...(LAST.weights||{})};renderResults(host,false);return;}
   btn.disabled=true;msg.innerHTML='<span class="spin"></span>LLM으로 해석·근거 정리 중…';
   try{const r=await fetch(api('api/search'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
@@ -347,8 +361,8 @@ function paperCard(p,i){const sc=paperScore(p);
     <div class="pm">${esc(p.journal)} · ${p.year||''}${p.n?' · n='+p.n:''}</div>
     <div class="links"><a class="ext" href="${pubmedUrl(p)}" target="_blank" rel="noopener">PubMed 검색 ↗</a><a class="ext" href="${scholarUrl(p)}" target="_blank" rel="noopener">Google Scholar ↗</a>${p.doi?`<a class="ext" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a>`:''}</div>
     ${p.why?`<div class="why"><b>왜 ${i===0?'가장 ':''}유사한가:</b> ${esc(p.why)}</div>`:''}
-    <div class="simline"><div class="simtrack"><div class="simfill" style="width:${sc}%"></div></div><span class="simsc">적합도 ${sc}</span></div></div>
-    <details class="det"><summary>유사도 상세 (6축) 보기</summary>${axr}</details>
+    <div class="simline"><div class="simtrack"><div class="simfill" style="width:${sc}%"></div></div><span class="simsc">${SCORE_MODE==='evidence'?'근거수준':'적합도'} ${sc}</span></div></div>
+    ${SCORE_MODE==='evidence'?'':`<details class="det"><summary>유사도 상세 (6축) 보기</summary>${axr}</details>`}
     <div class="items">${(p.items||[]).map(it=>`<span class="itchip"><b>${esc(it.value)}</b> ${esc(it.label)}</span>`).join('')||'<span style="color:var(--faint);font-size:11.5px">항목 없음</span>'}</div></div>`;}
 function reSearch(){if(!lastInput)return;
   if(lastInput.mode==='pico')runPico();else runSearch();}
@@ -363,44 +377,62 @@ async function runDrug(name){name=(name||'').trim();if(!name){document.getElemen
     if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
     b.disabled=false;m.textContent="";renderDrug(await r.json(),true);
   }catch(e){b.disabled=false;m.innerHTML='⚠ 실패 — 데모로 표시 ('+e.message+')';renderDrug(JSON.parse(JSON.stringify(DEMO_DRUG)),false);}}
-function renderDrug(d,isAI){WEIGHTS={...DEFAULT_WEIGHTS,...(d.weights||{})};
-  LAST={query:{P:d.disease,I:d.drug,condition:d.disease,drug:d.drug,rare:/희귀/.test(JSON.stringify(d.designation||{})),excess_type:'eff',special:false},papers:d.papers||[],weights:d.weights};
+function renderDrug(d,isAI){SCORE_MODE='evidence';
+  LAST={query:{P:d.disease,I:d.drug,condition:d.disease,drug:d.drug,populations:d.populations||[],rare:/희귀/.test(JSON.stringify(d.designation||{})),excess_type:'eff',special:false},papers:d.papers||[]};
   const des=d.designation||{};
   document.getElementById('outD').innerHTML=
     (isAI?'<div class="aibar">AI 정리 참고 정보. <b>규제 지정(긴급승인·희귀의약품)은 반드시 식약처/심평원 공고로 확인</b>하세요. (confidence: '+(d.confidence||'-')+')</div>':'<div class="okbar">데모 데이터로 표시 중입니다.</div>')
     +`<div class="dcard"><h3>${esc(d.drug||'')} <span style="font-weight:400;color:var(--muted);font-size:12px">· ${esc(d.disease||'')}</span></h3>
       <ul class="deslist"><li><b>희귀의약품 지정:</b> ${esc(des.orphan||'확인 필요')}</li><li><b>긴급·신속승인/특례:</b> ${esc(des.emergency||'확인 필요')}</li>${des.note?`<li style="color:var(--muted)">${esc(des.note)}</li>`:''}</ul></div>
-    <div class="dcard"><h3>고려 대상 환자군</h3><ul class="deslist">${(d.populations||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>정보 없음</li>'}</ul></div>
+    <div class="dcard"><h3>고려 대상 환자군 <span style="font-weight:400;color:var(--faint);font-size:11px">— 클릭하면 서류의 '대상 환자 기준'에 넣습니다</span></h3>
+      <ul class="deslist">${(d.populations||[]).map((x,idx)=>`<li><span class="chip" style="margin:0" onclick="pickPop(${idx})">${esc(x)}</span></li>`).join('')||'<li>정보 없음</li>'}</ul></div>
     <div class="dcard"><h3>가이드라인 · 권고</h3><ul class="deslist">${(d.guidelines||[]).map(g=>`<li><b>${esc(g.name)}</b> (${esc(g.org)}${g.year?', '+g.year:''}) — ${esc(g.recommendation)}</li>`).join('')||'<li>정보 없음</li>'}</ul></div>
-    <div class="simwrap"><div class="sh"><b>유사도 가중치</b></div><div id="weights_outD"></div></div>
+    <div style="font-size:12px;color:var(--muted);margin:6px 2px">환자 정보 없이 약제 기준이므로 <b>근거수준순</b>으로 정렬합니다. 특정 환자에 맞추려면 ① 자유서술/② PICO 를 쓰세요.</div>
     <div id="papers_outD"></div>
-    <div class="row"><button class="go" onclick="toStudio()">이 근거로 서류 작성 →</button></div>`;
-  renderWeights('outD');renderPapers('outD');}
+    <div class="row"><button class="go" onclick="toStudio()">이 약제로 서류 작성 →</button></div>`;
+  renderPapers('outD');}
+let _drugPops=[];function pickPop(i){const q=(LAST&&LAST.query)||{};_drugPops=q.populations||[];const v=_drugPops[i]||'';
+  builder.fields.target=(builder.fields.target?builder.fields.target+' · ':'')+v; if(document.getElementById('form').innerHTML){renderFields();renderForm();}
+  const b=event&&event.target;if(b){const o=b.textContent;b.textContent='서류에 추가됨 ✓';setTimeout(()=>b.textContent=o,1200);}}
 
 /* ---------- ④ 스튜디오 ---------- */
-function toStudio(){if(!LAST){mode('search');return;}
-  const q=LAST.query||{};
+function toStudio(){
+  const q=(LAST&&LAST.query)||{};
   document.getElementById('cExcess').value=q.excess_type||'eff';
   document.getElementById('cRare').checked=!!q.rare;
   document.getElementById('cCombo').checked=/병용/.test((q.line||'')+' '+(q.biomarker||''));
   document.getElementById('cDrug').value=q.drug||q.I||'';
   builder.fields={evidence:'',merits:'',target:'',dosage:'',duration:'',other:'',reason2:'',opinion:''};
   builder.fields.target=[q.condition||q.P,q.stage,q.line].filter(Boolean).join(' · ')+(q.biomarker?(' ('+q.biomarker+')'):'');
-  PALETTE=[];sortedPapers(LAST.papers).forEach(p=>(p.items||[]).forEach(it=>PALETTE.push({...it,paperId:p.id,journal:p.journal})));
-  document.getElementById('tStudio').disabled=false;
+  PALETTE=[];sortedPapers((LAST&&LAST.papers)||[]).forEach(p=>(p.items||[]).forEach(it=>PALETTE.push({...it,paperId:p.id,journal:p.journal})));
+  autoDraft();                 // AI가 항목을 알맞은 칸에 자동 배치(초안)
+  studioReady=true;document.getElementById('tStudio').disabled=false;
   renderFields();renderForm();mode('studio');}
+function openStudio(){ if(!studioReady){toStudio();} else {renderFields();renderForm();mode('studio');} }
+function startBlank(){LAST=null;PALETTE=[];SCORE_MODE='sim';toStudio();}
+function autoDraft(){
+  const by={};PALETTE.forEach(it=>{const k=fieldOf(it);(by[k]=by[k]||[]).push(it);});
+  FIELD_DEFS.forEach(([k])=>{ if(k==='target')return;   // 대상은 질환 조건에서 이미 채움
+    const items=by[k]||[]; if(items.length)builder.fields[k]=items.map(lineOf).join('\n'); });}
+function clearFields(){FIELD_DEFS.forEach(([k])=>builder.fields[k]='');renderFields();renderForm();}
 function renderFields(){
-  document.getElementById('fields').innerHTML=FIELD_DEFS.map(([k,l])=>`
-    <div class="fld${activeField===k?' act':''}" id="fld_${k}">
-      <div class="fn">${l}</div>
+  const host=document.getElementById('fields');if(!host)return;
+  const tools=`<div class="row" style="margin:0 0 8px"><button class="ghost" onclick="autoDraft();renderFields();renderForm()">AI 초안 채우기(칸별 자동배치)</button><button class="ghost" onclick="clearFields()">모두 비우기</button></div>`;
+  const flds=FIELD_DEFS.map(([k,l])=>{
+    const its=PALETTE.map((it,idx)=>({it,idx})).filter(x=>fieldOf(x.it)===k);
+    const chips=its.map(({it,idx})=>`<span class="pk" title="${esc(it.label)} · ${esc(it.journal||'')} ${esc(it.loc||'')}" onclick="insertItem('${k}',${idx})"><b>${esc(it.value)}</b> ${esc(it.label)}</span>`).join('');
+    return `<div class="fld${activeField===k?' act':''}" id="fld_${k}"><div class="fn">${l}</div>
       <textarea onfocus="activeField='${k}';mark()" oninput="builder.fields['${k}']=this.value;renderForm()" placeholder="직접 입력하거나 아래 근거를 눌러 넣으세요">${esc(builder.fields[k])}</textarea>
-      <div class="picks">${PALETTE.map((it,idx)=>`<span class="pk" title="${esc(it.label)} · ${esc(it.journal||'')} ${esc(it.loc||'')}" onclick="insertItem('${k}',${idx})"><b>${esc(it.value)}</b> ${esc(it.label)}</span>`).join('')||'<span style="color:var(--faint);font-size:11px">근거 없음</span>'}</div>
-    </div>`).join('');}
+      <div class="picks">${chips||'<span style="color:var(--faint);font-size:11px">이 칸에 배정된 근거 없음 — 직접 입력하세요</span>'}</div></div>`;}).join('');
+  const all=PALETTE.length?`<details class="det" style="margin-top:6px"><summary>전체 근거에서 직접 고르기(활성 칸으로)</summary>
+    <div style="font-size:11px;color:var(--muted);margin:6px 0">넣을 칸 입력창을 먼저 클릭(활성화)한 뒤 아래를 누르세요.</div>
+    ${PALETTE.map((it,idx)=>`<span class="pk" onclick="insertItem(activeField,${idx})"><b>${esc(it.value)}</b> ${esc(it.label)} <span style="color:var(--faint)">→${FIELD_LABEL[fieldOf(it)]}</span></span>`).join('')}</details>`:'';
+  host.innerHTML=tools+flds+all;}
 function mark(){FIELD_DEFS.forEach(([k])=>{const el=document.getElementById('fld_'+k);if(el)el.classList.toggle('act',k===activeField);});}
 function insertItem(k,idx){const it=PALETTE[idx];if(!it)return;activeField=k;
-  const sent=((it.pre||'')+(it.mark||it.value||'')+(it.post||'')).trim();
-  const line=`· ${it.label}: ${it.value} — "${sent}" (${it.journal||''}${it.loc?', '+it.loc:''}) [${it.paperId}]`;
-  builder.fields[k]=(builder.fields[k]?builder.fields[k].replace(/\s*$/,'')+'\n':'')+line;
+  const line=lineOf(it);
+  if(!(builder.fields[k]||'').includes(line))
+    builder.fields[k]=(builder.fields[k]?builder.fields[k].replace(/\s*$/,'')+'\n':'')+line;
   document.getElementById('srcView').innerHTML=`<b>[${it.paperId}] ${esc(it.journal||'')} · ${esc(it.loc||'')}</b><br>${esc(it.pre||'')}<mark>${esc(it.mark||it.value)}</mark>${esc(it.post||'')}`;
   renderFields();renderForm();const ta=document.querySelector('#fld_'+k+' textarea');if(ta){ta.focus();ta.selectionStart=ta.value.length;}}
 
