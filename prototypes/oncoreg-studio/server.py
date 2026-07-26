@@ -96,7 +96,9 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
        "genetic":"예: 동일 HER2 IHC 1+ 집단, KRAS 상태 유사",
        "symptom":"","age":"예: 중앙연령 58세로 유사","comorbidity":"","pathology":"","priormed":"예: 이전 항암 2차 경험 일치"
      },
-     "why":"이 논문이 본 환자와 얼마나/왜 유사한지 2~3문장(무엇이 같고 무엇이 다른지 구체적으로)",
+     "relevance":0-100,             // 이 케이스의 '문서작성 유용성'을 스스로 종합 판단한 점수.
+                                    //   진료지침/직접 해당하는 RCT=높게(85~100), 부수적=낮게. 정렬 기준.
+     "why":"이 논문이 본 환자와 얼마나/왜 유사·적합한지 2~3문장(무엇이 같고 무엇이 다른지 구체적으로)",
      "items":[                       // 서식 각 칸에 넣을 '근거 조각'. 반드시 원문 한 문장·위치·대상 칸 포함.
        {"key":"ORR","label":"객관적 반응률","value":"52.6%",
         "pre":"영어 원문 앞부분 ","mark":"the ORR was 52.6%","post":" ...(원문 문장 끝).",
@@ -120,6 +122,8 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
   잘 모르면 "evidence".
 
 규칙:
+- **relevance 는 사용자 케이스에 대한 '문서작성 유용성'을 스스로 판단해 매긴다**. 진료지침·직접
+  해당하는 RCT는 85~100, 부분적으로만 겹치면 낮게. (사용자에게 가중치를 묻지 않는다 — 모델이 판단)
 - papers 6~8편, 근거수준 다양(메타분석~사례보고). 같은 질환이라도 매번 조금씩 다른 논문을
   제시해도 좋다(temperature 반영). 희귀질환이면 사례군/사례보고도 포함.
 - 각 논문 items 2~5개로 '여러 칸'을 채우도록 field 를 다양하게(유효성·특장점·대상·용법 등).
@@ -156,6 +160,11 @@ def sanitize_papers(papers):
             p["evidence_rank"] = 3
         if p.get("evidence_level") not in EVIDENCE_LEVELS:
             p["evidence_level"] = EVIDENCE_LEVELS[p["evidence_rank"] - 1]
+        # relevance(모델 종합 판단)이 없으면 유사도 평균으로 보정
+        if p.get("relevance") is None:
+            vals = list(p["sim"].values())
+            p["relevance"] = round(sum(vals) / len(vals)) if vals else 60
+        p["relevance"] = _clamp(p["relevance"])
         items = []
         valid_fields = {"evidence", "merits", "target", "dosage", "duration", "other", "reason2", "opinion"}
         for j, it in enumerate(p.get("items") or []):
