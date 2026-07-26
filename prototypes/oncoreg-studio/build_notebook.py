@@ -35,7 +35,9 @@ print('모듈 캐시 정리 완료.')
  md("""## 3) API 키 입력 (Gemini 또는 OpenAI · 직접 입력 칸)
 - Gemini 키: <https://aistudio.google.com/app/apikey>  ·  OpenAI 키: <https://platform.openai.com/api-keys>
 - 공급자를 고르고 키를 붙여넣으세요. (보안 비밀 `GEMINI_API_KEY`/`OPENAI_API_KEY` 가 있으면 자동으로 채워집니다)
-- **모델(Model 칸)**: 빠름 `gemini-2.5-flash-lite` / `gemini-2.0-flash` · 균형 `gemini-2.5-flash`(기본) · 고품질(느림) `gemini-2.5-pro`.
+- **모델(Model 칸)**: 원하는 모델 ID를 자유롭게 입력하세요. 예) 최신 플래시 `gemini-flash-latest`,
+  균형 `gemini-2.5-flash`(기본), 빠름 `gemini-2.5-flash-lite`/`gemini-2.0-flash`, 고품질 `gemini-2.5-pro`.
+  실제 존재하는 ID면 그대로 씁니다(예 `gemini-3.5-flash` 등이 출시돼 있으면 그 이름 입력). 없는 ID면 오류가 납니다.
 - **속도 팁**: 2.5 flash 계열은 기본 '사고(thinking)'로 느릴 수 있어, 서버는 `GEMINI_THINKING=0`(사고 끔, 기본)으로 빠르게 돕니다. 의학 추론 품질을 더 원하면 아래 실행 셀 전에 `os.environ['GEMINI_THINKING']='512'` 처럼 올리거나 모델을 `gemini-2.5-pro`로 바꾸세요(느려짐)."""),
  code("""import os
 _pre_g=_pre_o=''

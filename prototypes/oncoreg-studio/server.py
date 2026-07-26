@@ -17,10 +17,10 @@ import traceback
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
-# 유사도 가중치 축(사용자 지정) + 근거수준. 합=1.
-DEFAULT_WEIGHTS = {"genetic": 0.22, "symptom": 0.15, "age": 0.10,
-                   "comorbidity": 0.14, "pathology": 0.17, "priormed": 0.14, "evidence": 0.08}
-SIM_AXES = ["genetic", "symptom", "age", "comorbidity", "pathology", "priormed"]
+# 유사도 축(정렬은 relevance가 담당, 이 축들은 '왜 비슷한지' 설명용). 축은 유연히 늘려도 됨.
+DEFAULT_WEIGHTS = {"symptom": 0.20, "age": 0.12, "comorbidity": 0.20,
+                   "pathology": 0.24, "priormed": 0.24}
+SIM_AXES = ["symptom", "age", "comorbidity", "pathology", "priormed"]
 
 EVIDENCE_LEVELS = ["체계적 문헌고찰/메타분석", "무작위 대조연구(RCT)", "코호트 연구",
                    "환자-대조군 연구", "사례군/사례보고"]
@@ -123,10 +123,10 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
      "doi":"있으면 DOI, 없으면 \\"\\"",
      "evidence_level":"체계적 문헌고찰/메타분석|무작위 대조연구(RCT)|코호트 연구|환자-대조군 연구|사례군/사례보고",
      "evidence_rank":1,             // 1(최상)~5(최하)
-     "sim":{"genetic":0-100,"symptom":0-100,"age":0-100,"comorbidity":0-100,"pathology":0-100,"priormed":0-100},
+     "sim":{"symptom":0-100,"age":0-100,"comorbidity":0-100,"pathology":0-100,"priormed":0-100},
      "sim_detail":{                 // 각 축이 '왜 그 점수인지' 한 구절씩(구체적으로)
-       "genetic":"예: 동일 HER2 IHC 1+ 집단, KRAS 상태 유사",
-       "symptom":"","age":"예: 중앙연령 58세로 유사","comorbidity":"","pathology":"","priormed":"예: 이전 항암 2차 경험 일치"
+       "symptom":"예: 증상/중증도 유사","age":"예: 연령대 포함","comorbidity":"예: 동반질환 일치",
+       "pathology":"예: 병리/기전 일치","priormed":"예: 이전 치료 경험 일치"
      },
      "relevance":0-100,             // 이 케이스의 '문서작성 유용성'을 스스로 종합 판단한 점수.
                                     //   진료지침/직접 해당하는 RCT=높게(85~100), 부수적=낮게. 정렬 기준.
@@ -175,7 +175,22 @@ DRUG_SYS = """당신은 의약품 규제·급여 정보를 정리하는 의학 �
  "papers":[ (search 와 동일한 paper 객체, 3~5편) ],
  "confidence":"high|medium|low"
 }
-규칙: 규제 사실은 단정 말고 '확인 필요' 적극 사용. papers 는 sim 6축·sim_detail·why·items 포함."""
+규칙: 규제 사실은 단정 말고 '확인 필요' 적극 사용. papers 는 sim·sim_detail·why·items 포함."""
+
+FIELD_SYS = """당신은 허가초과 사용승인 신청서의 '특정 칸' 초안을 돕는다. 주어진 약제와 환자
+상태를 바탕으로, 한국·미국·유럽 진료지침 관점에서 그 칸에 들어갈 한국어 초안을 담백하게 쓰고,
+사용자가 직접 확인할 수 있도록 한국·미국·유럽 가이드라인 링크를 제시한다. 아래 JSON '하나'로만.
+
+{
+ "text":"해당 칸 초안(2~4문장, 과장 없이. 용량·기간은 지침상 범위로. 확인 필요 사항 명시).",
+ "guidelines":[
+   {"region":"한국","name":"발행기관/지침명","url":"실제 접속 가능한 공식/대표 페이지 URL"},
+   {"region":"미국","name":"","url":""},
+   {"region":"유럽","name":"","url":""}
+ ]
+}
+규칙: 반드시 한국·미국·유럽 각 1개씩. URL은 실제 접속 가능한 공식·대표 페이지(모르면 해당 기관
+대표 도메인). 규제·용량은 '지침 원문 확인 필요'를 전제로 단정하지 않는다."""
 
 
 # ---------------------------------------------------------------- 정합성 보정
@@ -263,6 +278,19 @@ def create_app() -> Flask:
             d["papers"] = sanitize_papers(d.get("papers"))
             d["weights"] = DEFAULT_WEIGHTS
             return jsonify(d)
+        except Exception as e:
+            traceback.print_exc()
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
+
+    @app.post("/api/field")
+    def field():
+        b = request.get_json(force=True) or {}
+        label = b.get("fieldLabel") or b.get("field", "")
+        drug = b.get("drug", "")
+        patient = b.get("patient", "")
+        try:
+            usr = f"[작성할 칸] {label}\n[약제] {drug}\n[환자 상태] {patient}"
+            return jsonify(chat_json(FIELD_SYS, usr, temperature=0.4))
         except Exception as e:
             traceback.print_exc()
             return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
