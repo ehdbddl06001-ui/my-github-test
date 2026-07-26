@@ -55,10 +55,18 @@ def chat_json(system: str, user: str, temperature=0.6) -> dict:
         if not key:
             raise RuntimeError("GEMINI_API_KEY 환경변수가 설정되지 않았습니다.")
         client = genai.Client(api_key=key)
+        kwargs = dict(response_mime_type="application/json", temperature=temperature)
+        # 속도 조절: 2.5 flash 계열은 기본 'thinking'이 켜져 느리다.
+        #   GEMINI_THINKING=0(기본, 빠름) / 양수=사고 예산 늘려 품질↑(느려짐).
+        try:
+            if "flash" in _model().lower():
+                tb = int(os.environ.get("GEMINI_THINKING", "0"))
+                kwargs["thinking_config"] = types.ThinkingConfig(thinking_budget=tb)
+        except Exception:
+            pass
         resp = client.models.generate_content(
             model=_model(), contents=system + "\n\n" + user,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json", temperature=temperature))
+            config=types.GenerateContentConfig(**kwargs))
         return json.loads(resp.text)
     from openai import OpenAI
     key = os.environ.get("OPENAI_API_KEY")

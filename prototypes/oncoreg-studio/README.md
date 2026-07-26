@@ -44,8 +44,19 @@ export OPENAI_API_KEY="sk-..."          # Windows(PS): $env:OPENAI_API_KEY="sk-.
 export OPENAI_MODEL="gpt-4o-mini"       # 선택
 python server.py                         # http://localhost:8000
 ```
-> 모델: 기본 `gpt-4o-mini`(저렴). 더 정교하게는 `gpt-4o`. 비용은 <https://openai.com/api/pricing> 참고.
-> 결제수단 없이 무료 크레딧이 없으면 401/429가 날 수 있음 — 키/크레딧 확인.
+## 모델 · 속도 (중요)
+느리게 느껴지면 **Pro가 아니라 더 가벼운 Flash로 내려야** 빨라집니다(Pro는 품질↑·속도↓).
+- **빠름**: `gemini-2.5-flash-lite`, `gemini-2.0-flash`
+- **균형(기본)**: `gemini-2.5-flash`
+- **고품질·의학 추론(느림)**: `gemini-2.5-pro`
+
+가장 큰 속도 요인은 모델보다 **① 2.5-flash의 기본 '사고(thinking)'** 와 **② 큰 출력(논문 6~8편)** 입니다.
+- 서버는 flash 계열에서 `GEMINI_THINKING=0`(사고 끔)으로 **기본 빠르게** 돕니다.
+- 품질을 더 원하면 `GEMINI_THINKING=512`(예) 로 올리거나 `GEMINI_MODEL=gemini-2.5-pro`.
+- 모델 변경: 노트북 3번 셀의 Model 칸, 또는 로컬에서 `export GEMINI_MODEL=...`.
+
+> OpenAI로 쓸 경우 모델은 `gpt-4o-mini`(빠름/저렴) / `gpt-4o`(고품질). 비용은 각 공급자 요금 페이지 참고.
+> 무료 크레딧/결제 미설정 시 401/429가 날 수 있음 — 키·크레딧 확인.
 
 ## 쓰는 법 (시연 순서)
 1. **① 자유서술 검색**: 상황을 줄글로 적고 검색 → 해석 요약 + 가중치 슬라이더 + 근거수준 배지가 달린
