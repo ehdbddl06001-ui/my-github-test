@@ -208,6 +208,35 @@ TRIALS_SYS = """당신은 '진행 중인 임상시험 연결(expanded access)'�
    "eligibility":["핵심 선정기준 3~5개"],"match":"이 환자와의 부합 한 줄"}]}
 규칙: 실제 등록 확인 전 참고용(등록번호·기관은 반드시 확인 필요). url 은 접속 가능한 검색 링크라도 제공."""
 
+COMPOSE_SYS = """당신은 '허가초과 약제 비급여 사용승인 신청서(별지 제1호)'의 초안을 **처음부터 끝까지
+자동으로** 작성한다. 준 환자 정보·선택 근거·가이드라인 기준치를 종합해, 각 칸을 담백한 한국어
+문장으로 완성한다. 아래 JSON '하나의 객체'로만 답한다.
+
+{
+ "fields": {
+   "evidence":"의학적 근거자료(핵심 유효성·안전성 수치를 근거[번호]와 함께 2~4문장)",
+   "merits":"신청약제의 특·장점(표준 대비 우월성·기전·권고 위상)",
+   "target":"대상 환자 기준(질환·병기·바이오마커·이전 치료력)",
+   "dosage":"용법·용량(가이드라인 허가 범위 내. 한국 기준 우선)",
+   "duration":"투여기간(투여중단 시점 포함)",
+   "other":"기타(재투여·모니터링 기준)",
+   "reason2":"고시 제2조 해당 사유(대체약제 부재/우월성 등)",
+   "opinion":"기타 의견(없으면 간단히)"
+ },
+ "field_refs": {                  // 각 칸을 '사용자가 수정할 때' 참고할 가이드라인별 정상치/기준치
+   "dosage":[{"metric":"허가 용량","unit":"mg/kg","kr":"한국값","us":"미국값","eu":"유럽값"}],
+   "target":[{"metric":"판정 기준","unit":"","kr":"","us":"","eu":""}]
+   // 값이 있는 칸에만 넣는다. 관련 기준치가 없으면 생략.
+ }
+}
+규칙:
+- **한국 기준을 벗어나는 값(kr_ok=false)은 절대 초안에 쓰지 않는다.** 그런 지표는 한국 기준치로
+  대체하고, 필요하면 '국내 허가 기준(예: 용량 X)' 으로 명시한다.
+- 근거 수치에는 [번호] 인용을 붙인다. 과장·창작 금지. 확실치 않으면 '확인 필요'.
+- field_refs 는 준 '가이드라인 기준치'를 각 칸에 맞게 분배(용량→dosage, 판정/바이오마커→target,
+  모니터링/이상반응→other/duration 등). 사용자가 그 정상치와 비교해 초안을 고칠 수 있게 돕는 자료다.
+- 모든 문장은 제출 전 검증이 필요한 '초안'임을 전제로 간결하게."""
+
 
 # ---------------------------------------------------------------- 정합성 보정
 def sanitize_papers(papers):
@@ -332,6 +361,29 @@ def create_app() -> Flask:
             return jsonify({"error": "환자 상황을 입력하세요."}), 400
         try:
             return jsonify(chat_json(TRIALS_SYS, f"[환자 상황]\n{text}", temperature=0.5))
+        except Exception as e:
+            traceback.print_exc()
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
+
+    @app.post("/api/compose")
+    def compose():
+        b = request.get_json(force=True) or {}
+        query = b.get("query", {})
+        papers = b.get("papers", [])
+        refs = b.get("references", [])
+        lines = []
+        for p in papers:
+            for it in (p.get("items") or []):
+                lines.append(
+                    f"- [{p.get('id')}] {it.get('label','')}: {it.get('value','')} "
+                    f"(field={it.get('field','evidence')}, kr_ok={it.get('kr_ok', True)}"
+                    f"{'; '+it.get('kr_note','') if it.get('kr_note') else ''}) "
+                    f"— {p.get('journal','')} {it.get('loc','')}")
+        usr = ("[환자/질의]\n" + json.dumps(query, ensure_ascii=False) +
+               "\n\n[선택 근거]\n" + ("\n".join(lines) or "(선택 근거 없음 — 환자 정보만으로 초안)") +
+               "\n\n[가이드라인 기준치]\n" + json.dumps(refs, ensure_ascii=False))
+        try:
+            return jsonify(chat_json(COMPOSE_SYS, usr, temperature=0.4))
         except Exception as e:
             traceback.print_exc()
             return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
