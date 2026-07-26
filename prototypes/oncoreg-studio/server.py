@@ -13,6 +13,7 @@ OncoReg Studio — 자유서술/PICO 검색 + 상세 유사도 가중 랭킹 + �
 """
 import os
 import json
+import traceback
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
@@ -67,7 +68,22 @@ def chat_json(system: str, user: str, temperature=0.6) -> dict:
         resp = client.models.generate_content(
             model=_model(), contents=system + "\n\n" + user,
             config=types.GenerateContentConfig(**kwargs))
-        return json.loads(resp.text)
+        try:
+            txt = resp.text
+        except Exception:
+            txt = None
+        if not txt:
+            reason = ""
+            try:
+                reason = str(resp.candidates[0].finish_reason)
+            except Exception:
+                try:
+                    reason = str(resp.prompt_feedback)
+                except Exception:
+                    pass
+            raise RuntimeError(f"모델 응답이 비었습니다(안전 필터 차단 가능: {reason}). "
+                               f"모델={_model()}. 다른 표현으로 재시도하거나 GEMINI_THINKING 조정.")
+        return _loads(txt)
     from openai import OpenAI
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
@@ -77,7 +93,15 @@ def chat_json(system: str, user: str, temperature=0.6) -> dict:
         model=_model(),
         messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
         response_format={"type": "json_object"}, temperature=temperature)
-    return json.loads(r.choices[0].message.content)
+    return _loads(r.choices[0].message.content)
+
+
+def _loads(txt: str) -> dict:
+    """모델 출력에서 JSON 객체만 뽑아 파싱(코드펜스/잡텍스트 방어)."""
+    if not txt:
+        raise RuntimeError("모델 응답이 비어 있습니다.")
+    s, e = txt.find("{"), txt.rfind("}")
+    return json.loads(txt[s:e + 1] if (s != -1 and e != -1) else txt)
 
 
 # ---------------------------------------------------------------- 프롬프트
@@ -225,7 +249,8 @@ def create_app() -> Flask:
             d["weights"] = DEFAULT_WEIGHTS
             return jsonify(d)
         except Exception as e:
-            return jsonify({"error": str(e)}), 502
+            traceback.print_exc()
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
 
     @app.post("/api/drug")
     def drug():
@@ -239,7 +264,8 @@ def create_app() -> Flask:
             d["weights"] = DEFAULT_WEIGHTS
             return jsonify(d)
         except Exception as e:
-            return jsonify({"error": str(e)}), 502
+            traceback.print_exc()
+            return jsonify({"error": f"{type(e).__name__}: {e}"}), 502
 
     return app
 
