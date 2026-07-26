@@ -1,5 +1,5 @@
 """
-OncoReg Studio — 자유서술/PICO 검색 + 상세 유사도 가중 랭킹 + 문서 스튜디오
+MediReg AI — 자유서술/PICO 검색 + 상세 유사도 가중 랭킹 + 문서 스튜디오
 공급자 자동감지: GEMINI_API_KEY 있으면 Gemini, 없고 OPENAI_API_KEY 있으면 OpenAI.
 
 엔드포인트
@@ -341,5 +341,5 @@ def create_app() -> Flask:
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "8000"))
-    print(f"[OncoReg Studio] http://localhost:{port}  (provider={_provider()}, model={_model()})")
+    print(f"[MediReg AI] http://localhost:{port}  (provider={_provider()}, model={_model()})")
     create_app().run(host="0.0.0.0", port=port, debug=False)

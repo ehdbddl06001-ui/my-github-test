@@ -1,4 +1,4 @@
-"""OncoReg_Studio_Colab.ipynb 생성기. (OpenAI 연동)
+"""MediReg_AI_Colab.ipynb 생성기. (Gemini/OpenAI 자동감지)
 사용:  python build_notebook.py"""
 import json, os
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -11,7 +11,7 @@ def md(s): return {"cell_type":"markdown","metadata":{},
 def wf(path,content): return code([f"%%writefile {path}\n"]+content.splitlines(keepends=True))
 
 cells=[
- md("""# OncoReg Studio — OpenAI 연동 실행 노트북
+ md("""# MediReg AI — Gemini/OpenAI 연동 실행 노트북
 
 자유서술 검색 · 근거수준 가중 랭킹 · 문서 스튜디오(오른쪽 실제 서식 + 왼쪽 근거 삽입).
 
@@ -104,7 +104,7 @@ except Exception:
 sys.path.insert(0,'oncoreg_studio'); sys.modules.pop('studio_app',None)
 from studio_app import create_app
 from flask_cloudflared import run_with_cloudflared
-app=create_app(); print('>>> 실행 중인 앱: OncoReg Studio (studio_app, port 8020)')
+app=create_app(); print('>>> 실행 중인 앱: MediReg AI (studio_app, port 8020)')
 run_with_cloudflared(app); app.run(port=8020)
 """),
  md("### (대안) cloudflared 가 안 될 때 — Colab 내장 프록시"),
@@ -118,6 +118,6 @@ serve_kernel_port_as_window(8020)
 """),
 ]
 nb={"cells":cells,"metadata":{"colab":{"provenance":[]},"kernelspec":{"display_name":"Python 3","name":"python3"},"language_info":{"name":"python"}},"nbformat":4,"nbformat_minor":5}
-out=os.path.join(HERE,"OncoReg_Studio_Colab.ipynb")
+out=os.path.join(HERE,"MediReg_AI_Colab.ipynb")
 with open(out,"w",encoding="utf-8") as f: json.dump(nb,f,ensure_ascii=False,indent=1)
 print("wrote",out,"cells:",len(cells))

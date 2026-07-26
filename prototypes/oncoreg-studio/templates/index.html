@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OncoReg Studio — 근거 검색 · 유사도 가중 · 문서 스튜디오</title>
+<title>MediReg AI — 근거 검색 · 관련도 랭킹 · 문서 스튜디오</title>
 <style>
 :root{
   --paper:#FBFAF7;--card:#FFF;--ink:#16181A;--muted:#6B6E73;--faint:#9A9C9F;
@@ -147,13 +147,13 @@ footer{margin-top:34px;padding-top:14px;border-top:1px solid var(--rule);font-si
 <div class="demo"><b>데모/프로토타입.</b> 문헌·수치·지정·가이드라인은 <b>AI가 생성한 참고 초안</b>으로 실제와 다를 수 있습니다. 제출 전 원문/규제 공고 검증 필수. 논문 링크는 제목 기반 검색 링크입니다.</div>
 <div class="wrap">
 <header>
-  <div class="brand"><h1>OncoReg Studio</h1><span class="tag">근거 검색 · 관련도 랭킹 · 문서 스튜디오</span></div>
+  <div class="brand"><h1>MediReg AI</h1><span class="tag">근거 검색 · 관련도 랭킹 · 문서 스튜디오</span></div>
   <div class="tabs">
     <button id="tSearch" class="on" onclick="mode('search')">① 자유서술 검색</button>
     <button id="tPico" onclick="mode('pico')">② PICO·약제 검색</button>
     <button id="tStudio" onclick="openStudio()">③ 문서 스튜디오</button>
     <button id="tTrials" onclick="mode('trials')">④ 임상시험 연결</button>
-    <button id="tReport" onclick="mode('report')">⑤ 사후결과 보고서</button>
+    <button id="tReport" onclick="mode('report')">⑤ 사용내역 통보서</button>
   </div>
 </header>
 
@@ -204,16 +204,16 @@ footer{margin-top:34px;padding-top:14px;border-top:1px solid var(--rule);font-si
   <div id="outT"></div>
 </div>
 
-<!-- ⑤ 사후결과 보고서 (별지 제3호서식) -->
+<!-- ⑤ 허가초과 승인약제 비급여 사용내역 통보서 (별지 제3호서식) -->
 <div class="view" id="vReport">
   <div class="card">
-    <label class="fl">앞서 저장한 <b>신청서와 연동</b>해 사후결과 보고서(별지 제3호서식)를 채웁니다. 나머지는 약사·의사가 작성.</label>
+    <label class="fl">앞서 저장한 <b>신청서(별지 제1호)와 연동</b>해 <b>허가초과 승인약제 비급여 사용내역 통보서(별지 제3호서식, 제5조 관련)</b>를 채웁니다. 기관·수진자 정보와 최종 확인은 약사·의사가 작성.</label>
     <div class="row"><button class="ghost" onclick="loadApp()">저장된 신청서 불러오기</button>
       <button class="ghost" onclick="window.print()">인쇄 / PDF 저장</button>
       <span id="msgR" style="font-size:12.5px;color:var(--muted)"></span></div>
   </div>
   <div class="studio" style="margin-top:12px">
-    <div><div class="pane"><h3>추가 작성(치료 결과 등)</h3><div id="reportFields"></div></div></div>
+    <div><div class="pane"><h3>추가 작성(사용내역·치료 결과 등)</h3><div id="reportFields"></div></div></div>
     <div class="viewer"><div class="pane"><div id="report" class="gov"></div></div></div>
   </div>
 </div>
@@ -621,44 +621,53 @@ function saveApp(){
   try{localStorage.setItem('studio_saved_app',JSON.stringify(collectApp()));
     const m=document.getElementById('msgS');if(m){m.textContent='저장됨 ✓ — ⑤ 사후결과 보고서에서 불러올 수 있습니다.';setTimeout(()=>m.textContent='',2600);}
   }catch(e){const m=document.getElementById('msgS');if(m)m.textContent='저장 실패: '+e.message;}}
-let reportBuilder={fields:{result:'',period:'',ae:'',assessment:''},app:null};
+let reportBuilder={fields:{target:'',usage:'',efficacy:'',safety:'',cost:'',opinion:''},app:null,_primed:false};
 function loadApp(){
   const m=document.getElementById('msgR');
   try{const raw=localStorage.getItem('studio_saved_app');
     if(!raw){if(m)m.textContent='저장된 신청서가 없습니다. ③ 스튜디오에서 [신청서 저장]을 먼저 누르세요.';reportBuilder.app=null;renderReport();return;}
-    reportBuilder.app=JSON.parse(raw);if(m)m.textContent='신청서를 불러왔습니다 ✓';renderReport();
+    const a=JSON.parse(raw);reportBuilder.app=a;const af=a.fields||{};
+    // 신청서(별지1)에서 통보서(별지3)로 연동 프리필
+    reportBuilder.fields.target=af.target||'';
+    reportBuilder.fields.usage=['1. 용법·용량: '+(af.dosage||''),'2. 투여기간·총 사용량: '+(af.duration||''),'3. 기타(병용투여 약제): '+(af.other||'')].join('\n');
+    reportBuilder.fields.opinion=af.opinion||'';
+    reportBuilder._primed=true;
+    if(m)m.textContent='신청서를 불러왔습니다 ✓ — 사용내역·대상기준·기타의견이 연동되었습니다.';renderReport();
   }catch(e){if(m)m.textContent='불러오기 실패: '+e.message;}}
 function renderReportFields(){
   const host=document.getElementById('reportFields');if(!host)return;
-  const F=[['period','치료(투여) 기간'],['result','치료 결과(반응·경과)'],['ae','발생한 이상반응'],['assessment','종합 평가·비고']];
-  host.innerHTML=`<div style="font-size:11.5px;color:var(--muted);margin-bottom:8px">기관명·주성분·대상·근거는 저장된 신청서에서 자동 연동됩니다. 아래 <b>치료 결과 등</b>만 추가 작성하세요.</div>`
+  const F=[['target','투여대상 — 대상환자 기준'],['usage','사용내역 (1.용법·용량 2.투여기간·총 사용량 3.기타 병용약제)'],
+    ['efficacy','치료 결과 — 1. 효과에 대한 평가 결과(검사수치 등)'],['safety','치료 결과 — 2. 안전성 평가결과(부작용 포함)'],
+    ['cost','소요비용(금액)'],['opinion','기타 의견']];
+  host.innerHTML=`<div style="font-size:11.5px;color:var(--muted);margin-bottom:8px">기관·수진자 정보와 승인일자는 <b>요양기관(약사·의사)</b>이 작성합니다. 대상기준·사용내역·기타의견은 저장된 신청서에서 <b>연동</b>되며(수정 가능), <b>치료 결과·소요비용</b>은 여기서 작성하세요.</div>`
     +F.map(([k,l])=>`<div class="fld" id="rf_${k}"><div class="fn">${l}</div>
       <textarea oninput="reportBuilder.fields['${k}']=this.value;renderReport()" placeholder="직접 입력">${esc(reportBuilder.fields[k])}</textarea></div>`).join('');}
 function renderReport(){
   renderReportFields();
   const host=document.getElementById('report');if(!host)return;
-  const a=reportBuilder.app,rf=reportBuilder.fields,B='<span class="blank">　　</span>';
-  const drug=a?(a.ctrl.drug||''):'', q=a?(a.query||{}):{}, af=a?(a.fields||{}):{};
-  const target=af.target||[q.condition||q.P,q.stage,q.line].filter(Boolean).join(' · ')||'';
+  const a=reportBuilder.app,rf=reportBuilder.fields,B='<span class="blank">　　　</span>';
+  const drug=a?(a.ctrl&&a.ctrl.drug||''):'';
   const nl2=s=>esc(s||'').replace(/\n/g,'<br>')||B;
   host.innerHTML=`
-   <div class="ghead">■ 허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차 [별지 제3호서식]</div>
-   <h3 class="gt">허가초과 약제 비급여 사용 결과 보고서</h3><div class="gsub">(IRB 지정 요양기관)</div>
-   <table class="gf"><colgroup><col style="width:22%"><col style="width:28%"><col style="width:22%"><col style="width:28%"></colgroup>
-    <tr><td class="gl">요양기관명칭</td><td>${B}</td><td class="gl">요양기호</td><td>${B}</td></tr>
-    <tr><td class="gl">주성분명</td><td>${nl2(drug)}</td><td class="gl">승인번호</td><td>${B}</td></tr>
-    <tr><td class="gl">대상 환자 기준</td><td colspan="3">${nl2(target)}</td></tr>
-    <tr><td class="gl">투여(치료) 기간</td><td colspan="3">${nl2(rf.period)}</td></tr>
-    <tr><td class="gl">치료 결과<br>(반응·경과)</td><td colspan="3">${nl2(rf.result)}</td></tr>
-    <tr><td class="gl">이상반응 발생</td><td colspan="3">${nl2(rf.ae)}</td></tr>
-    <tr><td class="gl">당초 신청 근거<br>(요약)</td><td colspan="3">${nl2(af.evidence)}</td></tr>
-    <tr><td class="gl">종합 평가·비고</td><td colspan="3">${nl2(rf.assessment)}</td></tr>
+   <div class="ghead">■ 허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차 [별지 제3호서식] <span style="float:right">(1쪽)</span></div>
+   <h3 class="gt">허가초과 승인약제 비급여 사용내역 통보서</h3><div class="gsub">(제5조 관련)</div>
+   <table class="gf"><colgroup><col style="width:11%"><col style="width:13%"><col style="width:22%"><col style="width:9%"><col style="width:13%"><col style="width:32%"></colgroup>
+    <tr><td class="gl" rowspan="2">요양기관</td><td class="gl3">명 칭</td><td>${B}</td><td class="gl" rowspan="2">수진자</td><td class="gl3">성 명</td><td>${B}</td></tr>
+    <tr><td class="gl3">요양기호</td><td>${B}</td><td class="gl3">생년월일</td><td>${B}</td></tr>
+    <tr><td class="gl" colspan="2">주성분명<br>(주성분코드)</td><td>${nl2(drug)} (　)</td><td class="gl" colspan="2">제품명<br>(제품코드)</td><td>(　)</td></tr>
+    <tr><td class="gl" colspan="2">비급여 승인일자</td><td colspan="4">　　　年　　月　　日</td></tr>
+    <tr><td class="gl" colspan="2">투여대상<br><span style="font-weight:400;font-size:10px">(※ 해당 적응증만 기재)</span></td><td colspan="4"><span class="oh">○ 대상환자 기준</span>${nl2(rf.target)}</td></tr>
+    <tr><td class="gl" colspan="2">사용내역</td><td colspan="4">${nl2(rf.usage)}</td></tr>
+    <tr><td class="gl" colspan="2" rowspan="2">치료 결과<br>(검사결과)</td><td colspan="4"><span class="oh">○ 1. 효과에 대한 평가 결과</span><span style="font-size:10px;color:#555">(검사수치 등 객관적 유효성이 입증되는 결과 첨부)</span><br>${nl2(rf.efficacy)}</td></tr>
+    <tr><td colspan="4"><span class="oh">○ 2. 부작용을 포함한 안전성 평가결과</span><span style="font-size:10px;color:#555">(부작용이 있는 경우 「허가초과 사용약제의 이상사례·약물이상반응 보고」자료 첨부)</span><br>${nl2(rf.safety)}</td></tr>
+    <tr><td class="gl" colspan="2">소요비용(금액)</td><td colspan="4">${nl2(rf.cost)}</td></tr>
+    <tr><td class="gl" colspan="2">기타 의견</td><td colspan="4">${nl2(rf.opinion)}</td></tr>
    </table>
-   <div class="gapply">허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차에 따라 위와 같이 사용 결과를 보고합니다.</div>
+   <div class="gapply">허가 또는 신고범위 초과 약제 비급여 사용승인에 관한 기준 및 절차에 따라 위와 같이 비급여 사용내역을 보고합니다.</div>
    <div class="gdate">　　　年　　月　　日</div>
    <div class="gsign"><div>요양기관의 장　　　(서명 또는 인)</div><div>작성자</div><div>연락처　　　E-mail</div></div>
    <div class="gto">건강보험심사평가원장 귀하</div>
-   <div class="fn"><b>작성방법</b> 기관정보·승인번호·이상반응 상세는 요양기관(약사·의사)이 최종 확인·작성합니다. 본 초안은 저장된 신청서에서 연동된 참고본입니다.</div>`;}
+   <div class="fn"><b>작성방법</b> 1. 사용 환자수가 2명 이상일 경우 동 서식으로 1부 작성하고, 수진자별 사용내역(수진자명·생년월일·투여대상·사용내역·치료 결과·소요비용 등)을 데이터(excel 등)로 작성하여 제출하여야 함. 2. 해당 항목에 대한 각각의 자료나 검사결과지가 있을 경우 첨부하여야 함. 3. 약사법 제68조의8(부작용 등의 보고)제2항 관련 허가초과 사용약제의 이상사례·약물이상반응 보고서 양식.</div>`;}
 
 /* ---------- ④ 임상시험 연결 ---------- */
 async function runTrials(){
