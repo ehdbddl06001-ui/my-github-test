@@ -162,9 +162,14 @@ SEARCH_SYS = """당신은 근거중심의학 리서치 보조자다. 사용자�
   메타), 나머지 절반은 증례(사례군/사례보고)**. 같은 질환이라도 매번 조금씩 다른 논문을 제시해도 좋다.
 - relevance 는 '문서작성 유용성' 종합판단(원저·직접 근거 높게). 가중치는 묻지 않고 모델이 판단.
 - 각 item 에 kr_ok(한국 기준 부합 여부)·kr_note 를 반드시 넣는다. **한국 기준을 벗어나는 값은 kr_ok=false.**
-- references 는 2~4개 핵심 지표(한/미/유럽 기준치), guideline_links 는 한/미/유럽 각 1개(실제 접속 URL).
-- items 2~5개로 field 다양히. 안전성 item 1개 이상(key 를 "AE"로, field 는 "evidence").
-- pre/mark/post 는 영어 원문 한 문장(value 포함). 과장 금지, 검증 전 초안."""
+- references 는 3~5개 핵심 지표(한/미/유럽 기준치). **약제가 특정되면 '허가 용량'(mg 등 숫자)과
+  '표준 투여기간/간격' 지표를 반드시 포함**한다(문서의 용법·용량/투여기간 칸을 사용자가 정상치와
+  비교하도록). guideline_links 는 한/미/유럽 각 1개. **URL 은 접속 실패 위험을 줄이려 공식 기관의
+  대표(루트) 페이지를 쓰고, 정확한 심층 URL이 불확실하면 지침명 자체를 name 에 정확히 적는다**(앱이
+  이름으로 검색 링크를 만든다).
+- dosage·duration·target 에 해당하는 item 을 최소 1개씩 포함해 각 칸에 넣을 숫자 근거를 제공한다.
+- items 3~6개로 field 다양히(evidence·merits·target·dosage·duration 골고루). 안전성 item 1개 이상(key "AE", field "evidence").
+- pre/mark/post 는 영어 원문 한 문장(value 포함), loc 에 '어느 절·표·쪽'인지 최대한 구체적으로. 과장 금지, 검증 전 초안."""
 
 DRUG_SYS = """당신은 의약품 규제·급여 정보를 정리하는 의학 보조자다. 준 약제(또는 질환)에 대해
 허가초과/희귀의약품/긴급(신속)승인 관점 정보를 구조화한다. 아래 JSON '하나의 객체'로만. 한국어.
@@ -195,10 +200,16 @@ FIELD_SYS = """당신은 허가초과 사용승인 신청서의 '특정 칸' 초
 규칙: 반드시 한국·미국·유럽 각 1개씩. URL은 실제 접속 가능한 공식·대표 페이지(모르면 해당 기관
 대표 도메인). 규제·용량은 '지침 원문 확인 필요'를 전제로 단정하지 않는다."""
 
-VERIFY_SYS = """당신은 허가초과 사용승인 신청서 초안을 '검증'한다. 각 칸의 내용에서 사실 불일치,
-한국 기준 위반, 누락, 과장, 근거 없는 수치를 찾아 JSON '하나'로만 답한다.
-{"ok": true, "issues":[{"field":"칸 이름","severity":"high|medium|low","note":"문제와 수정 제안"}]}
-문제 없으면 ok=true, issues=[]. 확실치 않으면 severity 는 medium 이하."""
+VERIFY_SYS = """당신은 허가초과 사용승인 신청서 초안을 '검증'한다. [신청서 칸]과 [사용자가 근거로
+선택한 논문/근거조각]을 대조해, 각 칸에서 다음을 찾아 JSON '하나'로만 답한다.
+ (a) 문맥 오류: 문장이 어색하거나 앞뒤가 맞지 않거나 칸의 목적과 다른 내용.
+ (b) 근거 불일치: 초안의 수치·주장(용량·기간·반응률 등)이 [선택 근거]의 값과 다르거나, 근거에 없는데
+     지어낸 값. 반드시 어떤 근거[번호]와 어떻게 다른지 note 에 적는다.
+ (c) 한국 기준 위반·누락·과장.
+{"ok": true, "issues":[{"field":"evidence|merits|target|dosage|duration|other|reason2|opinion",
+  "severity":"high|medium|low","kind":"context|mismatch|kr|missing",
+  "note":"문제와 근거[번호] 대조·수정 제안"}]}
+문제 없으면 ok=true, issues=[]. 확실치 않으면 severity 는 medium 이하. 수치 불일치(mismatch)는 high."""
 
 TRIALS_SYS = """당신은 '진행 중인 임상시험 연결(expanded access)'을 돕는 검색 보조자다. 표준치료가
 소진된 환자 상황을 받아, 참여를 검토할 만한 임상시험을 구조화한다. JSON '하나'로만. 한국어.
@@ -230,11 +241,16 @@ COMPOSE_SYS = """당신은 '허가초과 약제 비급여 사용승인 신청서
  }
 }
 규칙:
+- **숫자(용량·투여기간·투여간격·반응률 등)는 반드시 준 [선택 근거]·[가이드라인 기준치]에 있는
+  실제 수치를 우선 사용**하고 [번호] 인용을 붙인다. dosage·duration 칸은 **구체적 숫자(예: 5.4
+  mg/kg, 3주 간격, 중앙 10.1개월)를 반드시 포함**한다. 근거에 숫자가 없으면 '(용량 확인 필요)'처럼
+  표시하되 임의 창작하지 않는다.
 - **한국 기준을 벗어나는 값(kr_ok=false)은 절대 초안에 쓰지 않는다.** 그런 지표는 한국 기준치로
-  대체하고, 필요하면 '국내 허가 기준(예: 용량 X)' 으로 명시한다.
-- 근거 수치에는 [번호] 인용을 붙인다. 과장·창작 금지. 확실치 않으면 '확인 필요'.
-- field_refs 는 준 '가이드라인 기준치'를 각 칸에 맞게 분배(용량→dosage, 판정/바이오마커→target,
-  모니터링/이상반응→other/duration 등). 사용자가 그 정상치와 비교해 초안을 고칠 수 있게 돕는 자료다.
+  대체하고 '국내 허가 기준(예: 용량 5.4 mg/kg)' 으로 명시한다.
+- 과장·창작 금지. 확실치 않으면 '확인 필요'.
+- field_refs 는 **관련 있는 모든 칸에 반드시 채운다**(특히 dosage·duration·target). 준 '가이드라인
+  기준치'를 각 칸에 맞게 분배(용량→dosage, 투여기간/모니터링→duration/other, 판정·바이오마커→target).
+  준 기준치가 부족하면 널리 알려진 한/미/유럽 표준치라도 채워, 사용자가 정상치와 비교해 고칠 수 있게 한다.
 - 모든 문장은 제출 전 검증이 필요한 '초안'임을 전제로 간결하게."""
 
 
@@ -346,8 +362,14 @@ def create_app() -> Flask:
     def verify():
         b = request.get_json(force=True) or {}
         fields = b.get("fields", {})
+        ev = []
+        for p in (b.get("papers") or []):
+            for it in (p.get("items") or []):
+                ev.append(f"- [{p.get('id')}] {it.get('label','')}: {it.get('value','')} "
+                          f"(kr_ok={it.get('kr_ok', True)}) {p.get('journal','')} {it.get('loc','')}")
         usr = ("[약제] " + str(b.get("drug", "")) + "\n[환자] " + str(b.get("patient", "")) +
-               "\n[신청서 칸]\n" + "\n".join(f"- {k}: {v}" for k, v in fields.items() if v))
+               "\n[사용자가 근거로 선택한 논문/근거조각]\n" + ("\n".join(ev) or "(선택 근거 없음)") +
+               "\n\n[신청서 칸]\n" + "\n".join(f"- {k}: {v}" for k, v in fields.items() if v))
         try:
             return jsonify(chat_json(VERIFY_SYS, usr, temperature=0.2))
         except Exception as e:
