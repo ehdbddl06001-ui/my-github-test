@@ -319,6 +319,10 @@ function evClass(r){return 'ev'+Math.max(1,Math.min(5,r||3));}
 function scholarUrl(p){return 'https://scholar.google.com/scholar?q='+encodeURIComponent((p.title||'')+' '+(p.journal||''));}
 function pubmedUrl(p){return 'https://pubmed.ncbi.nlm.nih.gov/?term='+encodeURIComponent(p.title||'');}
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+async function errMsg(r){                       // 백엔드 실패 이유를 최대한 그대로 보여준다
+  try{const j=await r.clone().json();if(j&&j.error)return j.error;}catch(_){}
+  let m='HTTP '+r.status;try{const t=await r.text();if(t)m+=' · '+t.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().slice(0,160);}catch(__){}
+  return m;}
 
 function renderExamples(){
   document.getElementById('exs').innerHTML=EX_FREE.map((e,i)=>`<span class="chip" onclick="document.getElementById('q').value=EX_FREE[${i}]">${e.slice(0,30)}…</span>`).join('');
@@ -340,7 +344,7 @@ async function doSearch(payload,btn,msg,useDemo,host){
   if(useDemo){LAST=JSON.parse(JSON.stringify(DEMO));WEIGHTS={...DEFAULT_WEIGHTS,...(LAST.weights||{})};renderResults(host,false);return;}
   btn.disabled=true;msg.innerHTML='<span class="spin"></span>LLM으로 해석·근거 정리 중…';
   try{const r=await fetch(api('api/search'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
+    if(!r.ok){throw new Error(await errMsg(r));}
     LAST=await r.json();WEIGHTS={...DEFAULT_WEIGHTS,...(LAST.weights||{})};btn.disabled=false;msg.textContent="";renderResults(host,true);
   }catch(e){btn.disabled=false;msg.innerHTML='⚠ 실패 — 데모로 표시 ('+e.message+')';LAST=JSON.parse(JSON.stringify(DEMO));WEIGHTS={...DEFAULT_WEIGHTS};renderResults(host,false);}}
 
@@ -386,7 +390,7 @@ async function runDrug(name){name=(name||'').trim();if(!name){document.getElemen
   if(document.getElementById('useDemoD').checked){renderDrug(JSON.parse(JSON.stringify(DEMO_DRUG)),false);return;}
   b.disabled=true;m.innerHTML='<span class="spin"></span>지정·가이드라인·근거 정리 중…';
   try{const r=await fetch(api('api/drug'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,kind:'drug'})});
-    if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.error||('HTTP '+r.status));}
+    if(!r.ok){throw new Error(await errMsg(r));}
     b.disabled=false;m.textContent="";renderDrug(await r.json(),true);
   }catch(e){b.disabled=false;m.innerHTML='⚠ 실패 — 데모로 표시 ('+e.message+')';renderDrug(JSON.parse(JSON.stringify(DEMO_DRUG)),false);}}
 function renderDrug(d,isAI){SCORE_MODE='sim';
