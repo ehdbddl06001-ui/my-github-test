@@ -20,6 +20,7 @@
 #  코드를 고친 뒤에는 sync() 만 다시 돌리면 된다(런타임 재시작 불필요).
 # =============================================================================
 import os
+import time
 import urllib.request
 
 REPO   = "ehdbddl06001-ui/my-github-test"
@@ -42,8 +43,15 @@ CHAIN = ["colab_step67_selfref.py", "colab_step68_oppoint.py",
          "svdb_prep.py"]
 
 
-def _raw(fn, branch=None):
-    return f"https://raw.githubusercontent.com/{REPO}/{branch or BRANCH}/mit-bih/{fn}"
+def _raw(fn, branch=None, bust=True):
+    """raw.githubusercontent.com URL.
+
+    ★캐시 우회가 필수인 이유: raw 는 CDN 캐시를 두어서, push 직후 몇 분간 **옛 파일**을
+      돌려준다. 코드를 고치고 곧바로 sync() 하는 반복 작업에서 이걸 모르면
+      "고쳤는데 왜 그대로지?" 로 시간을 버린다. 쿼리스트링으로 캐시를 우회한다.
+    """
+    u = f"https://raw.githubusercontent.com/{REPO}/{branch or BRANCH}/mit-bih/{fn}"
+    return f"{u}?_={int(time.time())}" if bust else u
 
 
 def fetch(files=None, branch=None, base=None, verbose=True):
@@ -55,7 +63,9 @@ def fetch(files=None, branch=None, base=None, verbose=True):
     for fn in files:
         url = _raw(fn, branch)
         try:
-            with urllib.request.urlopen(url) as r:
+            req = urllib.request.Request(
+                url, headers={"Cache-Control": "no-cache", "Pragma": "no-cache"})
+            with urllib.request.urlopen(req) as r:
                 body = r.read()
         except Exception as e:
             print(f"  ✗ {fn}: {type(e).__name__} {e}")
