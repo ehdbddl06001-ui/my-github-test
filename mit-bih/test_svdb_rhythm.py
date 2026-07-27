@@ -1,0 +1,153 @@
+# =============================================================================
+#  test_svdb_rhythm.py — svdb_rhythm.py + svdb_bench.py arm 레지스트리 통합 검증
+#
+#  Colab/Drive/GPU 없이 로컬에서 도는 검증. 두 가지를 확인한다:
+#   (1) svdb_rhythm.selftest()          — RR 문맥·모델·판정 로직의 불변식
+#   (2) 하니스 통합                      — attach_arms() 후 bench_models() 가
+#       B0~B4C 와 '동일 폴드'에서 R0/R1/R2 를 함께 평가하고, fper 가 대응 비교
+#       가능한 형태(같은 환자 순서·같은 길이)로 나오는지
+#
+#  ★B0~B4C 의 수치적 동작은 이 테스트의 대상이 아니다(내가 건드리지 않은 코드).
+#    B 계열이 의존하는 colab_step67~70 헬퍼는 '테스트 더블'로 대체한다 —
+#    검증 대상은 레지스트리 배선과 RSN arm 이다.
+#
+#  실행:  python test_svdb_rhythm.py
+# =============================================================================
+import os
+import sys
+import tempfile
+import numpy as np
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+# ─── 테스트 더블: B 계열이 기대하는 헬퍼(colab_step67~70 유래) ───
+def _doubles():
+    def _determinism():
+        pass
+
+    def _median_ref(beats, pid):
+        r = np.empty_like(beats)
+        for p in np.unique(pid):
+            m = pid == p
+            r[m] = np.median(beats[m], 0, keepdims=True)
+        return r.astype("float32")
+
+    def robust_template(beats, pid, frac=0.6, n_iter=6, conf_cut=0.85, verbose=True):
+        return _median_ref(beats, pid), []
+
+    def auto_weights(y1, beta=0.9999):
+        nN = (y1 == 0).sum(); nS = max((y1 == 1).sum(), 1)
+        eff = lambda n: (1 - beta) / (1 - beta ** n + 1e-12)
+        return float(eff(nS) / eff(nN))
+
+    def _binmet(s, y, t):
+        pos = s >= t; yp = (y == 1)
+        tp = float((pos & yp).sum()); fp = float((pos & ~yp).sum()); fn = float((~pos & yp).sum())
+        pr = tp / (tp + fp + 1e-9); se = tp / (tp + fn + 1e-9)
+        return pr, se, 2 * pr * se / (pr + se + 1e-9)
+
+    def _best_t_f1(s, y, n=300):
+        ts = np.unique(np.quantile(s, np.linspace(0.50, 0.9995, n)))
+        best = (-1.0, ts[0])
+        for t in ts:
+            f1 = _binmet(s, y, t)[2]
+            if f1 > best[0]: best = (f1, t)
+        return float(best[1])
+
+    def _pp_center2(s, pid, sep=1.0):
+        out = s.copy().astype(np.float64)
+        for p in np.unique(pid):
+            m = pid == p
+            out[m] = s[m] - np.median(s[m])
+        return out
+
+    def _net(fdim):
+        import torch, torch.nn as nn
+        class Net(nn.Module):
+            def __init__(s):
+                super().__init__()
+                s.c = nn.Sequential(nn.Conv1d(2, 16, 7, padding=3), nn.ReLU(),
+                                    nn.AdaptiveAvgPool1d(1))
+                s.fm = nn.Sequential(nn.Linear(max(fdim, 1), 32), nn.ReLU())
+                s.cls = nn.Linear(16 + 32, 3)
+            def forward(s, b, rr, ft):
+                return s.cls(torch.cat([s.c(b).squeeze(-1), s.fm(ft)], -1))
+        return Net()
+
+    return dict(_determinism=_determinism, _median_ref=_median_ref,
+                robust_template=robust_template, auto_weights=auto_weights,
+                _best_t_f1=_best_t_f1, _binmet=_binmet, _pp_center2=_pp_center2,
+                _net=_net)
+
+
+def main():
+    ok = lambda c, m: (_ for _ in ()).throw(AssertionError(m)) if not c else print(f"  ✔ {m}")
+
+    # ── (1) 단위 자기검증 ────────────────────────────────────────────────
+    g = dict(__name__="svdb_rhythm_test")
+    exec(open(f"{HERE}/svdb_rhythm.py").read(), g)
+    g["selftest"]()
+
+    # ── (2) 하니스 통합 ─────────────────────────────────────────────────
+    print("\n=== 하니스 통합 검증 (svdb_bench arm 레지스트리) ===")
+    beat, y, pid, pre, post = g["_synth"](n_rec=9, n_beat=260, seed=1)
+    tmp = tempfile.mkdtemp()
+    feat = os.path.join(tmp, "svdb_feats"); os.makedirs(feat, exist_ok=True)
+    np.savez(os.path.join(tmp, "svdb_data.npz"),
+             beat=beat, y=y, pid=pid, pre_rr=pre, post_rr=post)
+    rng = np.random.RandomState(0)
+    dims = dict(WST=8, MORPHO=6, REPOL=4, RHYTHM=10, KOOPMAN=5, GNN=5, AE=5)
+    for nm, d in dims.items():
+        np.save(f"{feat}/{nm}.npy", rng.randn(len(y), d).astype("float32"))
+    np.save(f"{feat}/RR.npy", np.stack([pre, post], 1).astype("float32"))
+
+    H = dict(__name__="svdb_bench_test")
+    H.update(_doubles())                       # → step70 체인 exec 를 건너뛴다
+    exec(open(f"{HERE}/svdb_bench.py").read(), H)
+    H["_BASE"] = tmp; H["_SFEAT"] = feat       # Drive 대신 임시 디렉터리
+
+    ok(callable(H.get("register_arm")), "register_arm 노출됨")
+    ok(H["EXTRA_ARMS"] == {}, "초기 EXTRA_ARMS 비어 있음")
+
+    # svdb_rhythm 을 하니스와 '같은 globals'에 얹는다 (Colab exec 순서와 동일)
+    exec(open(f"{HERE}/svdb_rhythm.py").read(), H)
+    n = H["attach_arms"](n_seed=1, epochs=3)
+    ok(n == 3 and len(H["EXTRA_ARMS"]) == 3, f"arm {n}개 등록 (EXTRA_ARMS={list(H['EXTRA_ARMS'])})")
+
+    OUT = H["bench_models"](n_rep=1, k=3, use_ae=True)
+    R = OUT["res"]
+    ok(not OUT["dead"], f"실패한 arm 없음 (dead={OUT['dead']})")
+    for a in ("R0.RSN(리듬만)", "R1.RSN(리듬+형태)", "R2.RSN(+Poincaré)"):
+        ok(a in R, f"{a} 결과 존재 (매크로F1={R[a]['macro']:.3f})")
+
+    # 대응 비교의 전제: 모든 arm 의 환자별 F1 벡터가 같은 길이·같은 환자 순서
+    ls = {a: len(R[a]["fper"]) for a in R}
+    ok(len(set(ls.values())) == 1, f"모든 arm 의 fper 길이 동일 ({set(ls.values())})")
+
+    # 리듬 시퀀스가 raw 형태 CNN 을 이겨야 한다(합성 데이터: S 는 타이밍으로만 정의됨)
+    ok(R["R1.RSN(리듬+형태)"]["macro"] > R["B2.CNN(raw)"]["macro"],
+       f"R1 {R['R1.RSN(리듬+형태)']['macro']:.3f} > B2(형태만) {R['B2.CNN(raw)']['macro']:.3f}")
+
+    rep = H["report"](OUT, base="B2.CNN(raw)")
+    ok("R1.RSN(리듬+형태)" in rep and "ci" in rep["R1.RSN(리듬+형태)"], "report() 대응 비교 산출")
+
+    # arm 이 예외를 던져도 전체 실행이 죽지 않아야 한다
+    H["clear_arms"]()
+    H["register_arm"]("Z.고장난arm", lambda ctx: (_ for _ in ()).throw(RuntimeError("의도된 실패")))
+    O2 = H["bench_models"](n_rep=1, k=3, use_ae=True)
+    ok(O2["dead"] == ["Z.고장난arm"] and "Z.고장난arm" not in O2["res"],
+       "실패 arm 은 격리되고 나머지 결과는 보존됨")
+
+    # 잘못된 길이를 반환하는 arm 도 거부되어야 한다
+    H["clear_arms"]()
+    H["register_arm"]("Z.길이틀림", lambda ctx: np.zeros(3, bool))
+    O3 = H["bench_models"](n_rep=1, k=3, use_ae=True)
+    ok(O3["dead"] == ["Z.길이틀림"], "길이 계약 위반 arm 거부")
+
+    print("\n=== 통합 검증 전 항목 통과 ===")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

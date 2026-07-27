@@ -46,6 +46,7 @@ MIT-BIH 유산을 이식하지 말고 처음부터 리듬 중심으로 모델을
 | 파일 | 내용 |
 |---|---|
 | **`PAPER.md`** | ★논문 형식 종합 보고서. 모든 수치·근거·한계. **먼저 읽을 것** |
+| **`SVDB_RHYTHM_DESIGN.md`** | ★리듬 시퀀스 모델(RSN) 설계·사전등록·검증 상태. **§6에 실측 결과를 채울 것** |
 | `LARGESCALE_PLAN.md` | 대규모 DB 확장 계획, 검정력 계산 |
 | `INDEX.md` | 83개 스크립트 파이프라인 지도 |
 | `HANDOFF.md` | (이 문서) |
@@ -171,6 +172,11 @@ B4 기존 제안모델    0.534 [0.472–0.595]   ← ★넘어야 할 목표
 
 **새 모델은 이 하니스에 arm 하나로 추가**하면 기존 5개 기준선과 자동으로 같은 조건에서 비교된다.
 
+> ✅ **구현됨**: `svdb_bench.py` 에 arm 레지스트리(`register_arm` / `clear_arms` / `list_arms`)를
+> 추가했다. `fn(ctx) -> bool[len(te)]` 계약이며, `bench_models()` 가 각 폴드에서
+> B0~B4C 와 **동일한 tr/cal/te/Sw/mc/seed** 로 호출한다 → 대응 부트스트랩이 유효해진다.
+> arm 이 실패해도 그 arm 만 제외되고 실행은 계속된다. 사용 예는 `svdb_rhythm.attach_arms()`.
+
 ---
 
 ## 6. 즉시 시작 지점
@@ -227,5 +233,5 @@ def paired(a, b, B=5000, seed=0):
 | SVDB 특징 캐시 | ✅ 완료 (`svdb_feats/`) |
 | SVDB 기준선 벤치 | ✅ 완료 (B0~B4C, 위 표) |
 | 논문 문서화 | ✅ 완료 (`PAPER.md`) |
-| **SVDB 네이티브 모델** | **⬜ 미착수 ← 새 세션의 과제** |
+| **SVDB 네이티브 모델(RSN)** | **🟨 설계·구현·자기검증 완료 / 실측 미실시** — `svdb_rhythm.py`, `SVDB_RHYTHM_DESIGN.md`. Colab에서 `attach_arms(); bench_models(); report(OUT)` 실행만 남음 |
 | Icentia11k (1,000+환자) | ⬜ 향후 (CI ±0.02 확보용) |

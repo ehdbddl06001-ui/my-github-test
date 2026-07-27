@@ -480,7 +480,8 @@ S를 구분할 수 없다(B2: F1 0.164).
 | **평가 무결성** | **`colab_step70_evalintegrity.py`** |
 | 리듬 게이트(음성) | `colab_step71_rhythmgate.py` |
 | 교차DB(INCART) | `colab_incart_prep.py`, `colab_crossdb.py` |
-| **SVDB 확증 벤치마크** | **`svdb_prep.py`, `svdb_bench.py`** |
+| **SVDB 확증 벤치마크** | **`svdb_prep.py`, `svdb_bench.py`** (arm 레지스트리 포함) |
+| **SVDB 리듬 시퀀스 모델(RSN)** | **`svdb_rhythm.py`**, `test_svdb_rhythm.py`, `SVDB_RHYTHM_DESIGN.md` — 설계·사전등록 완료, **실측 미실시** |
 
 ## Appendix B. 핵심 수치 원본
 ```

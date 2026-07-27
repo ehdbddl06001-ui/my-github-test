@@ -28,6 +28,11 @@
 #    exec(open('/content/drive/MyDrive/mitbih/svdb_bench.py').read())
 #    svdb_prep_feats()            # ① 특징 계산·캐시 (GPU 권장, 15~30분, 재개가능)
 #    OUT=bench_models(n_rep=1)    # ② B0~B4C 벤치 (5fold, NN 3종 → 15학습)
+#
+#  신규 모델을 같은 폴드에 붙이려면 (arm 레지스트리):
+#    exec(open('/content/drive/MyDrive/mitbih/svdb_rhythm.py').read())
+#    attach_arms()                # R0/R1/R2 등록 → bench_models()가 함께 평가
+#    OUT=bench_models(n_rep=1);  report(OUT)
 # =============================================================================
 import os
 import numpy as np
@@ -40,6 +45,26 @@ if "robust_template" not in globals():
 def _sv():
     d=np.load(f"{_BASE}/svdb_data.npz")
     return d["beat"],d["y"],d["pid"],d["pre_rr"],d["post_rr"]
+
+# ─────────────── 확장 arm 레지스트리 (신규 모델을 같은 폴드에 붙이는 통로) ───────────────
+#  왜: 새 모델을 별도 스크립트에서 따로 돌리면 폴드·calib·임계규약이 달라져 대응
+#      부트스트랩(같은 환자의 F1 차이)이 성립하지 않는다. 여기에 arm 으로 붙이면
+#      B0~B4C 와 '완전히 동일한 분할·동일 임계법'에서 평가되어 비교가 유효해진다.
+#  계약: fn(ctx) -> bool 배열, 길이 len(ctx["te"]).  ctx 키는 아래 _arm_ctx 참조.
+#      ctx["te"] 라벨은 절대 보지 않는다(임계는 ctx["cal"] 에서만 — 무결성 §7-1).
+EXTRA_ARMS={}
+
+def register_arm(name, fn):
+    """새 모델 arm 등록. 예: register_arm("R1.RSN", my_fn)  (svdb_rhythm.attach_arms 사용)"""
+    if not callable(fn): raise TypeError("fn 은 호출 가능해야 합니다")
+    EXTRA_ARMS[name]=fn; return name
+
+def clear_arms():
+    EXTRA_ARMS.clear()
+
+def list_arms():
+    print(f"등록된 확장 arm {len(EXTRA_ARMS)}개: {list(EXTRA_ARMS)}")
+    return list(EXTRA_ARMS)
 
 # ─────────────── ① 특징 계산 (캐시·재개) ───────────────
 def svdb_prep_feats(force=False, use_ae=True, Kwst=40):
@@ -172,7 +197,10 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
     refM=_median_ref(beats,pid)
     refR=robust_template(beats,pid,frac=0.6,conf_cut=0.879,verbose=True)[0]   # DS1서 정한 값 그대로
     ARMS=["B0.다수결","B1.LDA(형태+RR)","B2.CNN(raw)","B3.CNN+RR","B4.본연구","B4C.본연구+센터링"]
+    ARMS+= [a for a in EXTRA_ARMS if a not in ARMS]           # 확장 arm(신규 모델)
+    if EXTRA_ARMS: print(f"확장 arm {len(EXTRA_ARMS)}개 동반 평가: {list(EXTRA_ARMS)}\n")
     acc={a:[] for a in ARMS}                                  # 각 arm의 test 결정벡터(전 폴드 합침)
+    dead=set()                                                # 실패한 확장 arm(전체 실행은 계속)
     order_idx=[]                                              # 대응하는 원본 인덱스
     gkf=GroupKFold(n_splits=k)
     for rep in range(n_rep):
@@ -199,7 +227,23 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
             t=_best_t_f1(pc[:,1],y[cal]); acc["B4.본연구"].append(pt[:,1]>=t)
             cc=_pp_center2(pc[:,1],pid[cal]); ct=_pp_center2(pt[:,1],pid[te]); tc=_best_t_f1(cc,y[cal])
             acc["B4C.본연구+센터링"].append(ct>=tc)
+            # ─── 확장 arm (동일 폴드·동일 calib·동일 임계규약) ───
+            if EXTRA_ARMS:
+                ctx=dict(beats=beats,y=y,pid=pid,pre=pre,post=post,refM=refM,refR=refR,
+                         tr=tr,cal=cal,te=te,Sw=Sw,mc=mc,seed=seed,rep=rep,fold=fi,
+                         best_t=_best_t_f1)
+                for nm,fn in EXTRA_ARMS.items():
+                    if nm in dead: continue
+                    try:
+                        v=np.asarray(fn(ctx)).astype(bool).reshape(-1)
+                        if v.shape!=(len(te),): raise ValueError(f"길이 {v.shape} != test {len(te)}")
+                        acc[nm].append(v)
+                    except Exception as e:
+                        # 한 arm의 실패로 15회 학습을 버리지 않는다. 해당 arm만 결과에서 제외.
+                        print(f"  ⚠ arm '{nm}' 실패 → 결과에서 제외: {type(e).__name__}: {e}")
+                        dead.add(nm)
             print(f"  rep{rep} fold{fi} 완료 (train {len(tr)} / calib {len(cal)} / test {len(te)})")
+    if dead: ARMS=[a for a in ARMS if a not in dead]
     idx=np.concatenate(order_idx); yA=y[idx]; pA=pid[idx]
     print(f"\n=== 결과 (환자단위 매크로 F1 = 주지표, 환자 부트스트랩 95%CI) ===")
     RES={}
@@ -222,4 +266,7 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
     print(f"  제안 vs 최선기준선(B3): Δ매크로={b4['macro']-b3['macro']:+.3f}  "
           f"{'★유의' if b4['ci'][0]>b3['ci'][1] else 'CI 겹침(유의하지 않음)'}")
     print(f"\n  ★해석 규율: CI가 겹치면 '개선'이라 쓰지 않는다. micro는 위 지배율과 함께만 인용한다.")
-    return dict(res=RES, y=yA, pid=pA, top=top, share=share)
+    if any(a in RES for a in EXTRA_ARMS):
+        print(f"\n  ※ 확장 arm 은 주변 CI 비교로 판정하지 말 것. 대응 부트스트랩을 쓰세요:")
+        print(f"     report(OUT)   # svdb_rhythm.py — 환자별 F1 차이 + Bonferroni + ±0.07 판정")
+    return dict(res=RES, y=yA, pid=pA, top=top, share=share, arms=ARMS, dead=sorted(dead))
