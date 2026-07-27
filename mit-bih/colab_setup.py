@@ -7,12 +7,15 @@
 #  이 두 가지가 반복될 수밖에 없으므로, 한 셀로 끝내는 동기화 도구를 둔다.
 #
 #  ── Colab 첫 셀 (이것만 복사하면 됨) ─────────────────────────────────────────
-#    import urllib.request as _u
-#    _B="claude/svdb-rhythm-sequence-model-h5t30u"
-#    exec(_u.urlopen(f"https://raw.githubusercontent.com/ehdbddl06001-ui/"
-#                    f"my-github-test/{_B}/mit-bih/colab_setup.py").read().decode())
-#    sync()
+#    import urllib.request as u, json
+#    R="ehdbddl06001-ui/my-github-test"; B="claude/svdb-rhythm-sequence-model-h5t30u"
+#    S=json.load(u.urlopen(f"https://api.github.com/repos/{R}/commits/{B.replace('/','%2F')}"))["sha"]
+#    exec(u.urlopen(f"https://raw.githubusercontent.com/{R}/{S}/mit-bih/colab_setup.py").read().decode())
+#    sync()          # 체인 파일까지 새로 받으려면 sync(chain=True)
 #  ─────────────────────────────────────────────────────────────────────────────
+#  ★셀 안에서 SHA 를 먼저 푸는 이유: raw 의 '브랜치 이름' URL 은 CDN 캐시 때문에
+#    push 직후에도 옛 파일을 준다. 이 셀 자신이 그 함정에 빠지면 아무리 고쳐도
+#    반영이 안 되므로, 부트스트랩 단계부터 SHA 로 고정한다(resolve_sha 주석 참조).
 #
 #  sync() 가 하는 일: 최신 파일 내려받기 → Drive 저장 → globals 로 로드 → 검증.
 #  이후 바로:  rr_audit();  attach_arms();  OUT=bench_models(n_rep=1);  report(OUT)
