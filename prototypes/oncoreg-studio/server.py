@@ -1,3 +1,4 @@
+# © 2026 권도융 (Kwon Do-yung). All Rights Reserved. 무단 복제·사용·배포 금지 — /LICENSE 참조.
 """
 MediReg AI — 자유서술/PICO 검색 + 상세 유사도 가중 랭킹 + 문서 스튜디오
 공급자 자동감지: GEMINI_API_KEY 있으면 Gemini, 없고 OPENAI_API_KEY 있으면 OpenAI.

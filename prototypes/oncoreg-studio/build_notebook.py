@@ -1,3 +1,4 @@
+# © 2026 권도융 (Kwon Do-yung). All Rights Reserved. 무단 복제·사용·배포 금지 — /LICENSE 참조.
 """MediReg_AI_Colab.ipynb 생성기. (Gemini/OpenAI 자동감지)
 사용:  python build_notebook.py"""
 import json, os

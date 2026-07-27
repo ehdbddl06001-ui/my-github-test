@@ -1,3 +1,4 @@
+# © 2026 권도융 (Kwon Do-yung). All Rights Reserved. 무단 복제·사용·배포 금지 — /LICENSE 참조.
 """
 TrialMatch — 임상시험 연결 검색 플랫폼 (프로토타입)
 

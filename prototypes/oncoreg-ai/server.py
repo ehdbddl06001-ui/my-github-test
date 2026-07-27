@@ -1,3 +1,4 @@
+# © 2026 권도융 (Kwon Do-yung). All Rights Reserved. 무단 복제·사용·배포 금지 — /LICENSE 참조.
 """
 OncoReg AI — Gemini 연동 백엔드 (프로토타입)
 

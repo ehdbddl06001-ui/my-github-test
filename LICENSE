@@ -1,0 +1,52 @@
+Copyright (c) 2026 권도융 (Kwon Do-yung). All Rights Reserved.
+저작권 (c) 2026 권도융. 모든 권리 보유.
+
+================================================================================
+독점 소프트웨어 라이선스 (PROPRIETARY SOFTWARE LICENSE)
+================================================================================
+
+[한국어]
+
+본 저장소(repository)에 포함된 모든 소스 코드·문서·데이터·디자인 등(이하 "본
+소프트웨어")의 저작권은 권도융에게 있으며, 대한민국 저작권법 및 관련 국제 조약에
+의해 보호됩니다.
+
+저작권자의 사전 서면 허락 없이는 다음 행위를 할 수 없습니다.
+  1. 본 소프트웨어의 전부 또는 일부를 복제·배포·전송·전시하는 행위
+  2. 본 소프트웨어를 수정·번역·2차적저작물로 작성하는 행위
+  3. 본 소프트웨어를 상업적·비상업적 목적으로 사용하는 행위
+  4. 본 소프트웨어를 리버스 엔지니어링·역컴파일·역어셈블하는 행위
+
+본 저장소가 공개(public)로 설정되어 열람이 가능하더라도, 이는 열람 이외의 어떠한
+권리(사용·복제·배포 등)도 부여하지 않습니다. "열람 가능 = 사용 허가"가 아닙니다.
+
+본 소프트웨어는 "있는 그대로(AS IS)" 제공되며, 저작권자는 명시적·묵시적 어떠한
+보증도 하지 않고, 사용으로 인한 손해에 대해 책임지지 않습니다. 본 소프트웨어는
+의료 프로토타입/데모이며 실제 진료·규제 판단의 근거로 사용해서는 안 됩니다.
+
+이용 문의·라이선스 협의: 저작권자(권도융)에게 연락 바랍니다.
+
+--------------------------------------------------------------------------------
+
+[English]
+
+All source code, documentation, data, and designs contained in this repository
+(the "Software") are the copyrighted work of 권도융 (Kwon Do-yung) and are
+protected by the copyright laws of the Republic of Korea and international
+treaties.
+
+No part of the Software may be used, copied, modified, merged, published,
+distributed, sublicensed, sold, reverse-engineered, or otherwise exploited, in
+whole or in part, for any purpose (commercial or non-commercial) without the
+prior written permission of the copyright holder.
+
+The fact that this repository may be publicly viewable does NOT grant any right
+other than viewing. Viewing access does not constitute a license to use.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE. This Software is a medical
+prototype/demo and must NOT be relied upon for actual clinical or regulatory
+decisions.
+
+For licensing inquiries, please contact the copyright holder (권도융 / Kwon Do-yung).
