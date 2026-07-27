@@ -20,7 +20,6 @@
 #  코드를 고친 뒤에는 sync() 만 다시 돌리면 된다(런타임 재시작 불필요).
 # =============================================================================
 import os
-import time
 import urllib.request
 
 REPO   = "ehdbddl06001-ui/my-github-test"
@@ -43,25 +42,49 @@ CHAIN = ["colab_step67_selfref.py", "colab_step68_oppoint.py",
          "svdb_prep.py"]
 
 
-def _raw(fn, branch=None, bust=True):
-    """raw.githubusercontent.com URL.
+def resolve_sha(branch=None, verbose=True):
+    """브랜치 → 커밋 SHA.
 
-    ★캐시 우회가 필수인 이유: raw 는 CDN 캐시를 두어서, push 직후 몇 분간 **옛 파일**을
-      돌려준다. 코드를 고치고 곧바로 sync() 하는 반복 작업에서 이걸 모르면
-      "고쳤는데 왜 그대로지?" 로 시간을 버린다. 쿼리스트링으로 캐시를 우회한다.
+    ★왜 SHA 를 쓰는가: raw.githubusercontent.com 의 '브랜치 이름' URL 은 CDN 캐시를
+      타서 push 직후 몇 분간 **옛 파일**을 돌려준다(실측 확인). 쿼리스트링·no-cache
+      헤더로도 우회되지 않는다. 반면 **SHA 로 고정한 raw URL 은 불변**이라 항상
+      정확한 내용을 준다. 그래서 API 로 SHA 를 먼저 받고 그 SHA 로 파일을 받는다.
+      덤으로 '어떤 코드가 이 수치를 냈는가'가 SHA 로 기록된다(연구 재현성).
     """
-    u = f"https://raw.githubusercontent.com/{REPO}/{branch or BRANCH}/mit-bih/{fn}"
-    return f"{u}?_={int(time.time())}" if bust else u
+    import json
+    import urllib.parse
+    b = urllib.parse.quote(branch or BRANCH, safe="")
+    url = f"https://api.github.com/repos/{REPO}/commits/{b}"
+    try:
+        req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json",
+                                                   "Cache-Control": "no-cache"})
+        with urllib.request.urlopen(req) as r:
+            sha = json.load(r)["sha"]
+        if verbose:
+            print(f"  코드 버전 {sha[:10]}  ({branch or BRANCH})")
+        return sha
+    except Exception as e:
+        print(f"  ⚠ SHA 조회 실패({type(e).__name__}) → 브랜치 URL 로 대체합니다.")
+        print(f"    이 경우 CDN 캐시 때문에 방금 push 한 수정이 안 보일 수 있습니다"
+              f"(몇 분 뒤 재시도).")
+        return None
 
 
-def fetch(files=None, branch=None, base=None, verbose=True):
-    """GitHub 에서 내려받아 Drive 에 저장. 반환: 저장된 경로 리스트."""
+def _raw(fn, ref=None):
+    """ref 는 SHA(권장) 또는 브랜치 이름."""
+    return f"https://raw.githubusercontent.com/{REPO}/{ref or BRANCH}/mit-bih/{fn}"
+
+
+def fetch(files=None, branch=None, base=None, verbose=True, ref=None):
+    """GitHub 에서 내려받아 Drive 에 저장. 반환: 저장된 경로 리스트.
+       ref 를 주면 그 SHA 로 고정해 받는다(캐시 문제 없음)."""
     base = base or _BASE
     files = files or CORE
+    ref = ref or resolve_sha(branch, verbose=verbose) or (branch or BRANCH)
     os.makedirs(base, exist_ok=True)
     out = []
     for fn in files:
-        url = _raw(fn, branch)
+        url = _raw(fn, ref)
         try:
             req = urllib.request.Request(
                 url, headers={"Cache-Control": "no-cache", "Pragma": "no-cache"})
@@ -94,12 +117,14 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
     if not os.path.isdir(base):
         print(f"  ⚠ {base} 없음 — Drive 마운트가 안 됐을 수 있습니다:")
         print(f"    from google.colab import drive; drive.mount('/content/drive')")
-    got = fetch(files, branch=branch, base=base, verbose=verbose)
+    ref = resolve_sha(branch, verbose=verbose)
+    got = fetch(files, branch=branch, base=base, verbose=verbose, ref=ref)
     if not load:
         return got
 
     g = globals()
     g["_BASE"] = base                                # 이후 모든 스크립트가 이 경로를 씀
+    g["CODE_SHA"] = ref                              # 실험 기록용: 이 수치를 낸 코드 버전
     for p in got:
         try:
             exec(open(p).read(), g)
@@ -131,6 +156,7 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print("      attach_arms()                 # R0/R1/R2 등록")
         print("      OUT = bench_models(n_rep=1)   # 벤치(GPU, 수십 분)")
         print("      report(OUT)                   # 판정 + 환자별 분해")
+        if g.get("CODE_SHA"): print(f"    (실험 기록용 코드 버전: CODE_SHA={g['CODE_SHA'][:10]})")
     return got
 
 
