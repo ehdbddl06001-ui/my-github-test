@@ -12,6 +12,10 @@ DS1 클래스 카운트/공식에서 유도(DS2 최적화 금지).
 
 | 파일 | 역할 |
 |---|---|
+| **`PAPER.md`** | ★**논문 형식 종합 보고서** — 여기부터 읽을 것. 정직한 성능·5개 발견·음성결과 12건 |
+| **`LARGESCALE_PLAN.md`** | ★**대규모 DB 확장 계획** — 검정력 계산, DB 비교, 비교모델, 단계별 실행 |
+| `colab_step70_evalintegrity.py` | 평가 무결성(232 지배 분해·환자매크로·44CV) |
+| `svdb_prep.py` | Phase A: MIT-BIH SVDB 전처리(R재정합·정규화대칭) |
 | `colab_common.py` | DS1 유도 전이 하이퍼파라미터 단일 소스: `auto_weights`(effective-number), `ldam_margins`, `scaled_lr` |
 | `colab_prep_all.py` | 마스터 특징 복원 — 12+개 특징군을 Drive 캐시로 계산(WST/MORPHO/REPOL/DTW/…/RHYTHM/KOOPMAN/AE/GNN) |
 | `colab_step49_rhythm2.py` | **RHYTHM innovation(최대 성과)** — 환자별 인과 EWMA(=이산 선형 SDE/칼만 innovation) 예측 잔차 = 조기성 신호. 보상성 지수로 APC/PVC 분리 |
