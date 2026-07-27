@@ -1,26 +1,26 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-26",
+ "generated": "2026-07-27",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 470,
+  "total": 484,
   "byType": {
+   "usmle": 54,
    "kmle": 299,
-   "paper": 106,
+   "paper": 114,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 47,
-   "Nephrology": 34,
-   "Infectious Disease": 33,
-   "Pediatrics": 33,
-   "Obstetrics & Gynecology": 22,
-   "Neurology": 21,
-   "Psychiatry": 21,
+   "Cardiology": 48,
+   "Nephrology": 35,
+   "Infectious Disease": 34,
+   "Pediatrics": 34,
+   "Obstetrics & Gynecology": 23,
+   "Neurology": 22,
+   "Psychiatry": 22,
    "Endocrinology": 20,
    "Gastroenterology": 19,
    "Pulmonology": 19,
@@ -30,18 +30,18 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 18,
    "Rheumatology": 18,
    "Hematology": 17,
-   "Surgery": 16,
-   "Pathology": 15,
-   "Laboratory Medicine": 13,
-   "Hematology-Oncology": 11,
-   "Physiology": 6,
+   "Pathology": 17,
+   "Surgery": 17,
+   "Laboratory Medicine": 14,
+   "Hematology-Oncology": 12,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,12 +51,124 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 358,
-   "medium": 112
+   "high": 364,
+   "medium": 120
   },
-  "tagCount": 1337
+  "tagCount": 1359
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome)",
+   "tags": [
+    "catatonia",
+    "lorazepam-challenge",
+    "NMS-differentiation",
+    "antipsychotic-induced"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · catatonia management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, ",
+   "text": "Psychiatry Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome) catatonia lorazepam-challenge NMS-differentiation antipsychotic-induced USMLE-style / MedKOS (psychiatry · catatonia management) A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, stares blankly, and has had markedly decreased oral intake. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Discontinue the antipsychotic and initiate a benzodiazepine (lorazepam) trial B. Administer dantrolene and bromocriptine while continuing the current antipsychotic C. Initiate electroconvulsive therapy before any medication trial D. Restart a different high potency antipsychotic at a lower dose E. Obtain an urgent MRI of the brain before initiating any treatment Mutism, waxy flexibility, and posturing without fever, rigidity, autonomic instability, or elevated CK point to catatonia rather than neuroleptic malignant syndrome; the antipsychotic should be discontinued and a lorazepam challenge (both diagnostic and often therapeutic) initiated first, reserving ECT for benzodiazepine refractory cases and avoiding further antipsychotic exposure, which can precipitate NMS."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage (Uterine Atony — Uterotonic Selection with Dual Contraindications)",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "misoprostol",
+    "contraindications"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 28 year old woman with chronic hypertension and asthma undergoes vaginal delivery of a 4.2 kg infant after a prolonged second stage. She now has heavy vaginal bleeding with a soft, boggy uterus palpable above the umbilicus. The placenta i",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage (Uterine Atony — Uterotonic Selection with Dual Contraindications) postpartum-hemorrhage uterine-atony uterotonics misoprostol contraindications USMLE-style / MedKOS (obstetrics · postpartum hemorrhage management) A 28 year old woman with chronic hypertension and asthma undergoes vaginal delivery of a 4.2 kg infant after a prolonged second stage. She now has heavy vaginal bleeding with a soft, boggy uterus palpable above the umbilicus. The placenta is intact and no lacerations are found on exam. Bleeding continues despite vigorous fundal massage and a first line intravenous oxytocin infusion at the maximum recommended rate. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Intramuscular carboprost tromethamine (15 methyl prostaglandin F2α) B. Intramuscular methylergonovine C. Sublingual or rectal misoprostol D. Repeating the intravenous oxytocin infusion at the same rate E. Uterine artery embolization as the immediate next step With uterine atony refractory to maximal oxytocin, the next uterotonic should avoid this patient's specific contraindications: carboprost is contraindicated in asthma (bronchospasm risk) and methylergonovine is contraindicated in hypertension (risk of severe hypertension/stroke), leaving misoprostol as the appropriate second line agent; repeating oxytocin at the same rate has already failed, and embolization is reserved for hemorrhage refractory to pharmacologic uterotonics."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Status Epilepticus (Benzodiazepine-Refractory Stepwise Management)",
+   "tags": [
+    "status-epilepticus",
+    "benzodiazepine-refractory",
+    "fosphenytoin",
+    "seizure-management"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · seizure emergency management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 34 year old woman is brought in by EMS after a witnessed generalized tonic clonic seizure that has now lasted more than 20 minutes without return to baseline. She has no history of epilepsy. EMS administered two doses of intravenous loraz",
+   "text": "Neurology Status Epilepticus (Benzodiazepine-Refractory Stepwise Management) status-epilepticus benzodiazepine-refractory fosphenytoin seizure-management USMLE-style / MedKOS (neurology · seizure emergency management) A 34 year old woman is brought in by EMS after a witnessed generalized tonic clonic seizure that has now lasted more than 20 minutes without return to baseline. She has no history of epilepsy. EMS administered two doses of intravenous lorazepam en route, 4 minutes apart, without effect. On arrival she continues to have rhythmic limb jerking. Vital signs and point of care studies are shown. Which of the following is the most appropriate next step in management? A. A third dose of intravenous lorazepam B. An intravenous loading dose of fosphenytoin C. Immediate induction of general anesthesia with continuous EEG monitoring D. Oral phenytoin administered via nasogastric tube E. Intravenous phenobarbital as the preferred initial second line agent This patient has benzodiazepine refractory status epilepticus after two adequate doses of a first line benzodiazepine; the next step is an intravenous second line agent — fosphenytoin, valproate, or levetiracetam — rather than a third benzodiazepine dose, oral therapy, or escalation straight to anesthetic infusion, which is reserved for seizures refractory to an adequate second line agent."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Complete (Third-Degree) AV Block — Escape Pacemaker Physiology",
+   "tags": [
+    "complete-heart-block",
+    "escape-rhythm",
+    "automaticity",
+    "ECG",
+    "conduction-system"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · cardiac conduction system)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 74 year old man presents with recurrent syncope. He takes no cardioactive medications. Vital signs are shown. An ECG (shown) reveals complete dissociation between P waves and QRS complexes, with atrial activity at a faster, regular rate a",
+   "text": "Physiology Complete (Third-Degree) AV Block — Escape Pacemaker Physiology complete-heart-block escape-rhythm automaticity ECG conduction-system USMLE-style / MedKOS (physiology · cardiac conduction system) A 74 year old man presents with recurrent syncope. He takes no cardioactive medications. Vital signs are shown. An ECG (shown) reveals complete dissociation between P waves and QRS complexes, with atrial activity at a faster, regular rate and a slower, regular wide complex ventricular rhythm. Serum electrolytes, troponin, and digoxin level are unremarkable, as shown. Which of the following mechanisms is most likely responsible for the ventricular rhythm seen on this patient's ECG? A. Spontaneous phase 4 diastolic depolarization in a subsidiary pacemaker distal to the site of block B. A re entrant circuit confined entirely within the AV node that bypasses the site of block C. Triggered activity from early afterdepolarizations in Purkinje fibers D. Retrograde conduction from the ventricles depolarizing the sinoatrial node E. Enhanced automaticity of the sinoatrial node overriding a structurally normal AV node In complete (third degree) AV block, no atrial impulses reach the ventricles, so a subsidiary pacemaker distal to the block — the AV junction or, when block is infranodal, the His Purkinje/ventricular myocardium — generates the ventricular rhythm via its own intrinsic phase 4 diastolic (pacemaker) depolarization; the slower, regular rate reflects the lower intrinsic firing rate of these distal pacemaker tissues compared with the SA node."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Multiple Myeloma (Cast Nephropathy Mechanism)",
+   "tags": [
+    "multiple-myeloma",
+    "cast-nephropathy",
+    "bence-jones-protein",
+    "rouleaux",
+    "hypercalcemia"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · plasma cell dyscrasia)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a m",
+   "text": "Pathology Multiple Myeloma (Cast Nephropathy Mechanism) multiple-myeloma cast-nephropathy bence-jones-protein rouleaux hypercalcemia USMLE-style / MedKOS (pathology · plasma cell dyscrasia) A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a monoclonal spike, and urine immunofixation confirms free kappa light chains. Which of the following mechanisms most likely accounts for this patient's renal dysfunction? A. Precipitation of free immunoglobulin light chains with Tamm–Horsfall protein forming obstructing casts in the distal tubules B. Diffuse deposition of AL amyloid fibrils in the glomerular basement membrane causing nephrotic range proteinuria C. Hypercalcemia induced nephrogenic diabetes insipidus with distal tubular resistance to antidiuretic hormone D. NSAID induced afferent arteriolar vasoconstriction reducing glomerular perfusion pressure E. Immune complex deposition activating complement in the glomerular mesangium Multiple myeloma most commonly causes acute kidney injury through myeloma cast nephropathy: filtered free light chains combine with Tamm–Horsfall protein secreted by the thick ascending limb/distal tubule to form obstructing intratubular casts, distinct from AL amyloidosis (which causes nephrotic range proteinuria via glomerular deposition rather than tubular obstruction) or the other listed mechanisms."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Methotrexate Toxicity (Leucovorin Rescue Mechanism)",
+   "tags": [
+    "methotrexate",
+    "dihydrofolate-reductase",
+    "leucovorin",
+    "folinic-acid",
+    "antimetabolite"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antimetabolite rescue)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are show",
+   "text": "Pharmacology Methotrexate Toxicity (Leucovorin Rescue Mechanism) methotrexate dihydrofolate-reductase leucovorin folinic-acid antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are shown; renal function remains normal. Which of the following best explains the mechanism by which the rescue therapy prevents further toxicity in this patient? A. It competitively displaces methotrexate from dihydrofolate reductase, restoring enzyme activity B. It provides a reduced folate cofactor that bypasses the blocked dihydrofolate reductase step, restoring one carbon transfer reactions C. It inhibits renal organic anion transporters, reducing tubular reabsorption of methotrexate D. It alkalinizes the urine, increasing methotrexate solubility and enhancing renal clearance E. It induces hepatic cytochrome enzymes that accelerate methotrexate metabolism to inactive metabolites Leucovorin (folinic acid) is a reduced folate that does not require dihydrofolate reductase for activation, so it restores tetrahydrofolate dependent one carbon transfer (thymidylate and purine synthesis) in normal proliferating cells even while methotrexate continues to inhibit the enzyme — this is a metabolic bypass, not competitive displacement or enhanced clearance."
+  },
   {
    "id": "kmle-2026-0329",
    "type": "kmle",
@@ -664,6 +776,134 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0298.md",
    "snippet": "72세 여자가 아침에 갑자기 눈앞이 캄캄해지며 쓰러질 뻔하여 응급실에 왔다. 평소 복용하는 약은 없다. 어지럽고 기운이 없다고 호소한다. 활력징후·검사와 심전도는 자료와 같다. 가장 먼저 시행할 처치는? A. 아데노신을 정맥으로 준다 B. 아트로핀을 정맥으로 준다 C. 베라파밀을 정맥으로 준다 D. 아미오다론을 정맥으로 준다 E. 에스몰롤을 정맥으로 준다 저혈압과 어지럼을 동반한 증상성 동서맥이다. 혈역학적으로 불안정한 서맥의",
    "text": "Cardiology Symptomatic Sinus Bradycardia sinus-bradycardia sick-sinus-syndrome atropine bradyarrhythmia syncope KMLE 2026 / Claude Routine 72세 여자가 아침에 갑자기 눈앞이 캄캄해지며 쓰러질 뻔하여 응급실에 왔다. 평소 복용하는 약은 없다. 어지럽고 기운이 없다고 호소한다. 활력징후·검사와 심전도는 자료와 같다. 가장 먼저 시행할 처치는? A. 아데노신을 정맥으로 준다 B. 아트로핀을 정맥으로 준다 C. 베라파밀을 정맥으로 준다 D. 아미오다론을 정맥으로 준다 E. 에스몰롤을 정맥으로 준다 저혈압과 어지럼을 동반한 증상성 동서맥이다. 혈역학적으로 불안정한 서맥의 1차 약물은 아트로핀이며, 반응이 없으면 경피 심박조율이나 도파민·에피네프린 주입으로 넘어간다."
+  },
+  {
+   "id": "paper-2026-0114",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / ANZ journal of surgery",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0114_effectiveness_of_an_interdisciplinary_integrated_care_model_.md",
+   "snippet": "Title Effectiveness of an Interdisciplinary Integrated Care Model on Perioperative Outcomes in Patients Undergoing Lung Cancer Surgery: A Randomized Controlled Trial Authors Chen Xingu, Zhang Nili, Zhang Xiaohong, Liang Shuping, Liu Shuting",
+   "text": "Surgery scraped pubmed PubMed / ANZ journal of surgery Title Effectiveness of an Interdisciplinary Integrated Care Model on Perioperative Outcomes in Patients Undergoing Lung Cancer Surgery: A Randomized Controlled Trial Authors Chen Xingu, Zhang Nili, Zhang Xiaohong, Liang Shuping, Liu Shuting, Liu Ying, Yu Yan Journal / DOI ANZ journal of surgery · DOI: 10.1111/ans.70841 · PMID: 42503044 https://pubmed.ncbi.nlm.nih.gov/42503044/ Abstract BACKGROUND: Lung cancer surgery is associated with significant perioperative morbidity, including pulmonary complications and psychological distress. The effectiveness of comprehensive interdisciplinary care models in improving outcomes remains insufficiently studied. METHODS: This single center randomized controlled trial enrolled 240 patients undergoing lung cancer surgery between March 2021 and December 2023. Patients were randomized 1:1 to receive either an interdisciplinary integrated care intervention (n = 120) or standard care (n = 120). The intervention included preoperative pulmonary rehabilitation, psychological support, nutritional optimization, and enhanced postoperative recovery protocols. The primary outcome was postoperative length of hospital stay (LOS). Secondary outcomes included postoperative pulmonary complications (PPCs), pain scores, functional recovery (6 min walk distance), psychological status (HADS), and quality of life (QLQ C30). Intention to treat analysis was performed as the primary analysis. RESULTS: In the ITT analysis, the intervention group had significantly shorter LOS compared to control (7.43 ± 1.94 vs. 9.02 ± 2.30 days; mean difference 1.59 days, 95% CI: 1.07 2.12; p < 0.001; Cohen's d = 0.75). After adjusting for baseline FEV1 imbalance, the difference remained significant (adjusted mean difference 1.54 days, 95% CI: 1.02 2.06; p < 0.001). PPCs were significantly lower in the intervention group (12.0% vs. 26.1%; RR = 0.46, 95% CI: 0.26 0.81; p = 0.008). The intervention group demonstrated superior functional recovery, with 6 min walk distance differences of 57.77 m at 1 month and 61.97 m at 3 months, both exceeding the minimal clinically important difference of 22 42 m. Psychological outcomes (HADS anxiety: 4.19 ± 2.55 vs. 6.48 ± 3.22; HADS Depression: 3.57 ± 1.97 vs. 5.19 ± 2.89 at 3 months; both p < 0.001) and quality of life were significantly improved. CONCLUSIONS: An interdisciplinary integrated care model significantly reduces hospital stay, decreases pulmonary complications, and improves functional and psychological outcomes in patients undergoing lung cancer surgery. These findings support the implementation of comprehensive perioperative care programs. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0113",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC pediatrics",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0113_tooth_brushing_versus_routine_oral_care_impact_on_ventilator.md",
+   "snippet": "Title Tooth brushing versus routine oral care impact on ventilator associated pneumonia in PICU: a clinical trial Authors Rezk Ahmed R, Hassan Samar A, Abd Elhakam Rabab M, Kamel Aya Mahmoud, Bakry Nehad A Journal / DOI BMC pediatrics · DOI",
+   "text": "Pediatrics scraped pubmed PubMed / BMC pediatrics Title Tooth brushing versus routine oral care impact on ventilator associated pneumonia in PICU: a clinical trial Authors Rezk Ahmed R, Hassan Samar A, Abd Elhakam Rabab M, Kamel Aya Mahmoud, Bakry Nehad A Journal / DOI BMC pediatrics · DOI: 10.1186/s12887 026 07239 x · PMID: 42502162 https://pubmed.ncbi.nlm.nih.gov/42502162/ Abstract OBJECTIVES: Ventilator associated pneumonia (VAP) is a frequent and serious infection among mechanically ventilated children in pediatric intensive care units (PICUs), with oral colonization playing a key role in its pathogenesis. Effective oral hygiene measures are therefore crucial to reduce VAP incidence and improve clinical outcomes. This study aimed to compare the incidence of VAP in PICU patients receiving routine oral care versus toothbrushing with chlorhexidine, and to evaluate the impact on mechanical ventilation duration, PICU stay, and mortality with secondary outcomes including microbiological colonization, inflammatory markers, and inotropic support requirements. DESIGN: A parallel group superiority randomized controlled trial. METHODS: A randomized controlled trial was conducted on 118 children aged 18 months to 16 years, including PICU patients requiring invasive mechanical ventilation for ≥ 48 h. On admission, patients were randomly allocated into two groups: the intervention group received oral care with toothbrushing plus 0.12% chlorhexidine mouth rinse, while the control group received routine care with 0.12% chlorhexidine rinse only. Both procedures were performed three times daily. VAP was diagnosed according to CDC criteria. Quantitative and qualitative analyses assessed variables distinguishing VAP cases from controls, and multivariate logistic regression identified independent predictors of disease severity. RESULTS: The results of our study revealed that VAP occurred in 31 patients (52.5%) in the control group and 25 patients (42.3%) in the intervention group, indicating a lower incidence with toothbrushing plus chlorhexidine, although this difference was not statistically significant (p = 0.36). Among all participants, 45.8% died and 54.2% were discharged. Mortality was higher in the control group (53.7%) compared with the intervention group (46.3%), while discharge rates favored the intervention group (53.1% vs. 46.9%); however, these differences did not reach statistical significance (p = 0.46). Positive sputum cultures were more frequent in the control group (55.6%) than in the intervention group (44.4%), whereas negative cultures were more common among intervention patients (54.7% vs. 45.3%), with no significant difference between groups (p = 0.268). CONCLUSION: Although adding toothbrushing to routine chlorhexidine oral care did not produce a statistically significant reduction in VAP incidence or mortality, a consistent trend toward clinical benefit was observed across multiple outcome measures, including lower rates of positive sputum cultures, reduced inotropic support requirements, and fewer new pulmonary infiltrates. These findings highlight the potential value of enhanced oral hygiene in the PICU and support the need for larger multicenter studies to confirm its effect. TRIAL REGISTRATION: ClinicalTrials.gov, NCT07287566. Registered on November 20, 2025. Retrospectively registered at https://clinicaltrials.gov/ct2/show/NCT07287566 . PROTOCOL AND STATISTICAL ANALYSIS PLAN ACCESS: The full study protocol and the statistical analysis plan are included in this document and are available from the corresponding author upon reasonable request. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0112",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Orvosi hetilap",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0112_the_role_of_photon_counting_ct_technology_in_the_detection_o.md",
+   "snippet": "Title [The role of photon counting CT technology in the detection of pulmonary diseases] Authors Rédei Mátyás, Gurza Kriszta Beáta, Maurovich Horvat Pál, Marton Nikolett Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33603 · PMID: 425",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Orvosi hetilap Title [The role of photon counting CT technology in the detection of pulmonary diseases] Authors Rédei Mátyás, Gurza Kriszta Beáta, Maurovich Horvat Pál, Marton Nikolett Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33603 · PMID: 42503163 https://pubmed.ncbi.nlm.nih.gov/42503163/ Abstract Computed tomography of the chest is a cornerstone imaging modality in the diagnosis of pulmonary diseases; however, conventional systems based on energy integrating detectors have inherent physical limitations, including restricted spatial resolution, electronic noise, and reduced image quality at low radiation doses, which may compromise diagnostic accuracy in certain clinical scenarios. Photon counting detector computed tomography represents a novel technological approach based on the individual detection and energy discrimination of incoming X ray photons. This enables improved dose efficiency, reduced image noise, higher spatial resolution, and intrinsic spectral imaging from a single acquisition. The aim of this review is to provide an overview of the role of photon counting detector computed tomography in pulmonary imaging. Based on the available literature, this technology offers particular advantages in the detection and characterization of small pulmonary nodules, subsolid and ground glass lesions, as well as in the assessment of fine morphological features of interstitial lung diseases. In addition, it improves the visualization of infectious, vascular, and traumatic pulmonary abnormalities. Spectral imaging capabilities, including virtual monoenergetic reconstructions and iodine maps, provide additional functional information on tissue perfusion, lesion characterization, and treatment response. The technique also shows promise in interventional applications by improving the visualization of target lesions and interventional devices. Photon counting detector computed tomography represents a significant technological advancement in lung imaging. However, its widespread clinical implementation is currently limited by restricted availability, high costs, and challenges related to inter system comparability. Nevertheless, current evidence suggests that this technology will play an increasingly important role in pulmonary diagnostics in the future. Orv Hetil. 2026; 167(30): 1186 1198. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0111",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medical image analysis",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0111_genar_next_scale_autoregressive_generation_for_spatial_gene_.md",
+   "snippet": "Title GenAR: Next scale autoregressive generation for spatial gene expression prediction Authors Ouyang Jiarui, Wang Yihui, Gao Yihang, Xu Yingxue, Yang Shu, Chen Hao Journal / DOI Medical image analysis · DOI: 10.1016/j.media.2026.104232 ·",
+   "text": "Pathology scraped pubmed PubMed / Medical image analysis Title GenAR: Next scale autoregressive generation for spatial gene expression prediction Authors Ouyang Jiarui, Wang Yihui, Gao Yihang, Xu Yingxue, Yang Shu, Chen Hao Journal / DOI Medical image analysis · DOI: 10.1016/j.media.2026.104232 · PMID: 42503259 https://pubmed.ncbi.nlm.nih.gov/42503259/ Abstract Spatial Transcriptomics (ST) offers spatially resolved gene expression but remains costly. Predicting expression directly from widely available Hematoxylin and Eosin (H&E) stained images presents a cost effective alternative. However, most computational approaches (i) predict each gene independently, overlooking co expression structure, and (ii) cast the task as continuous regression despite expression being discrete counts. This mismatch can yield biologically implausible outputs and complicate downstream analyses. We introduce GenAR, a multi scale autoregressive framework that refines predictions from coarse to fine. GenAR (a) clusters genes into hierarchical groups to expose cross gene dependencies, (b) models expression as discrete token generation over a fixed vocabulary of integer count tokens to directly predict raw counts, and (c) conditions decoding on fused histological and spatial embeddings. By modeling expression on the physical count scale, GenAR avoids the limitations of continuous regression, while its coarse to fine factorization ensures a principled conditional decomposition. Extensive experimental results on five ST datasets across different tissue types demonstrate that GenAR achieves state of the art performance, offering potential implications for precision medicine and cost effective molecular profiling. Code is publicly available at https://github.com/oyjr/genar. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0110",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International immunopharmacology",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0110_plod2_promotes_colorectal_cancer_progression_and_immune_esca.md",
+   "snippet": "Title PLOD2 promotes colorectal cancer progression and immune escape via attenuating CD8+ T cells function Authors Yang Zhangquan, Huang Guotao, Lin Yilong, Lin Yanzong, Zeng Yongzhi, Dong Lingyi, Lv You, Huang Kunzhai, et al. Journal / DOI",
+   "text": "Hematology-Oncology scraped pubmed PubMed / International immunopharmacology Title PLOD2 promotes colorectal cancer progression and immune escape via attenuating CD8+ T cells function Authors Yang Zhangquan, Huang Guotao, Lin Yilong, Lin Yanzong, Zeng Yongzhi, Dong Lingyi, Lv You, Huang Kunzhai, et al. Journal / DOI International immunopharmacology · DOI: 10.1016/j.intimp.2026.117190 · PMID: 42503264 https://pubmed.ncbi.nlm.nih.gov/42503264/ Abstract Colorectal cancer (CRC) remains a leading cause of cancer related morbidity worldwide. Although immunotherapy has shown promise in improving outcomes for some patients, the response is variable, largely due to the complex dynamics of the tumor microenvironment (TME). The protein PLOD2, which is often overexpressed in CRC tissues, has been implicated in promoting tumor growth and epithelial mesenchymal transition (EMT), but its role in immune modulation and response to immunotherapy has not been well understood. In this study, we employed single cell RNA sequencing to investigate PLOD2 expression and cell interactions. Functional assays in CRC cell lines with PLOD2 knockdown showed a reduction in proliferation, migration, and EMT markers, along with increased apoptosis. Mechanistically, PLOD2 was found to interact directly with c Myc, stabilizing it by preventing proteasome mediated degradation, which in turn led to upregulation of PD L1 expression. Furthermore, silencing PLOD2 enhanced T cell activity, including increased secretion of GZMB and IFN γ, and boosted T cell mediated cytotoxicity. In mouse models, combining PLOD2 knockdown with anti CTLA 4 therapy resulted in significant tumor growth suppression, increased infiltration of CD3+/CD8+ T cells, and higher proportions of GZMB+/IFN γ+ CD8+ T cells. These findings suggest that PLOD2 contributes to CRC progression by modulating both tumor biology and immune responses through its interaction with c Myc. Targeting PLOD2 could be a promising strategy to enhance the efficacy of anti CTLA 4 immunotherapy and serve as a potential biomarker for CRC treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0109",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Transplantation reviews (Orlando, Fla.)",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0109_acute_kidney_injury_after_heart_transplantation_a_systematic.md",
+   "snippet": "Title Acute kidney injury after heart transplantation: A systematic review and meta analysis Authors Murad Ciro Mancilha, Freitas Arthur Pinheiro Silveira, Cavalcanti Humberto Talarico Galeno, Zeferino Suely Pereira, Marcondes Braga Fabiana",
+   "text": "Nephrology scraped pubmed PubMed / Transplantation reviews (Orlando, Fla.) Title Acute kidney injury after heart transplantation: A systematic review and meta analysis Authors Murad Ciro Mancilha, Freitas Arthur Pinheiro Silveira, Cavalcanti Humberto Talarico Galeno, Zeferino Suely Pereira, Marcondes Braga Fabiana G, Galas Filomena Regina Barbosa Gomes, Bacal Fernando Journal / DOI Transplantation reviews (Orlando, Fla.) · DOI: 10.1016/j.trre.2026.101045 · PMID: 42503261 https://pubmed.ncbi.nlm.nih.gov/42503261/ Abstract BACKGROUND: Acute kidney injury (AKI) after heart transplantation (HT) remains incompletely understood. This systematic review and meta analysis aimed to estimate the pooled incidence of AKI and AKI requiring renal replacement therapy (RRT) after HT, assess associated mortality risks and identify characteristics associated with AKI requiring RRT. METHODS: A systematic literature search identified original studies reporting the incidence of AKI after HT using standardized definitions or reporting AKI requiring RRT. Meta analyses were conducted using random effects models. RESULTS: Forty eight studies covering 14,389 patients were included. The pooled incidence of AKI was 57.05% (95% CI: 49.51 64.28), and AKI requiring RRT occurred in 16.99% (95% CI: 13.58 21.04). Among patients with AKI, 30 day and one year mortality were of 12.96% (95% CI: 9.80 16.94) and 18.51% (95% CI: 14.56 23.23) respectively. AKI was associated with an approximately threefold increase in 30 day (OR: 2.92; 95% CI: 2.02 4.22) and one year mortality (OR: 3.07; 95% CI: 1.76 5.34). In patients requiring RRT, 30 day and one year mortality were 26.47% (95% CI: 18.46 36.41) and 35.13% (95% CI: 28.78 42.06), respectively. AKI requiring RRT was associated with and increased 30 day mortality of more than twelvefold (OR: 12.11; 95% CI: 6.05 24.24) and one year mortality of more than fivefold (OR: 5.40; 95% CI: 3.88 7.51) Characteristics associated with AKI requiring RRT included higher body mass index, elevated baseline creatinine, chronic kidney disease, perioperative extracorporeal membrane oxygenation support, and longer cardiopulmonary bypass time. CONCLUSIONS: AKI is highly prevalent after HT and is strongly associated with increased early and late mortality, particularly in patients requiring RRT. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0108",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Biomaterials",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0108_ultrasound_gated_nanobubbles_for_sequential_pyroptosis_block.md",
+   "snippet": "Title Ultrasound gated nanobubbles for sequential pyroptosis blockade and mechanotransductive neurorepair in sepsis associated encephalopathy Authors Wang Xiao, Liu Yang, Li Mingxi, Xu Huiting, Ju Yongxu, Cui Lin, Liu Ling, Yang Fang Journa",
+   "text": "Infectious Disease scraped pubmed PubMed / Biomaterials Title Ultrasound gated nanobubbles for sequential pyroptosis blockade and mechanotransductive neurorepair in sepsis associated encephalopathy Authors Wang Xiao, Liu Yang, Li Mingxi, Xu Huiting, Ju Yongxu, Cui Lin, Liu Ling, Yang Fang Journal / DOI Biomaterials · DOI: 10.1016/j.biomaterials.2026.124475 · PMID: 42503286 https://pubmed.ncbi.nlm.nih.gov/42503286/ Abstract Sepsis associated encephalopathy (SAE) is a life threatening neuroinflammatory complication of sepsis for which effective treatment remains unavailable. A major challenge is that most therapeutics cannot efficiently cross the blood brain barrier or simultaneously address the coupled pathological processes driving disease progression, namely microglial pyroptosis and impaired neurotrophic support. Here, we report an ultrasound gated nanobubble platform designed for SAE that enables sequential pyroptosis blockade and mechanotransduction mediated neurorepair. The platform consists of sphingosine 1 phosphate functionalized, disulfiram loaded nanobubbles (S1P@DSF NBs), which actively accumulate in inflamed cerebral vasculature via the S1P S1PR1 axis and serve as a localized reservoir for ultrasound programmed intervention. Under a dual ultrasound regimen, low intensity pulsed ultrasound first induces stable nanobubble oscillation, mechanically activating Piezo1 dependent CREB BDNF signaling in microglia to restore neurotrophic support. Subsequent high intensity pulsed ultrasound triggers nanobubble destabilization and localized disulfiram release, leading to gasdermin D inhibition, suppression of pyroptosis, and attenuation of inflammatory amplification. In a murine SAE model, ultrasound programmed S1P@DSF NBs reduced systemic and hippocampal inflammation, decreased neuronal loss by 40 %, and improved cognitive performance by 2.24 fold, while reprogramming microglia toward a neuroprotective phenotype and disrupting the pyroptotic inflammatory cascade. These findings demonstrate that ultrasound programmed nanobubble therapy can concurrently interrupt inflammatory injury and restore neuroprotective signaling in SAE. This work establishes an actively targeted, ultrasound responsive biomaterials strategy for ultrasound programmed intervention in SAE and offers a versatile framework for the treatment of other neuroinflammatory disorders. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0107",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions",
+   "confidence": "medium",
+   "date": "2026-07-26",
+   "path": "content/papers/2026/2026-07-26_paper-2026-0107_performance_of_the_occlutech_atrial_flow_regulator_device_in.md",
+   "snippet": "Title Performance of the Occlutech® Atrial Flow Regulator Device in Patients With Either Failing Fontan Circulations or Irreversible Pulmonary Hypertension Authors Kucuk Mehmet, Zablah Jenny E, Fleming Gregory, Vanloozen Dennis, Aregullin O",
+   "text": "Cardiology scraped pubmed PubMed / Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions Title Performance of the Occlutech® Atrial Flow Regulator Device in Patients With Either Failing Fontan Circulations or Irreversible Pulmonary Hypertension Authors Kucuk Mehmet, Zablah Jenny E, Fleming Gregory, Vanloozen Dennis, Aregullin Oliver, Averin Konstantin, Hoyer Mark H, Law Mark A, et al. Journal / DOI Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions · DOI: 10.1002/ccd.70776 · PMID: 42503001 https://pubmed.ncbi.nlm.nih.gov/42503001/ Abstract BACKGROUND: The presence of an atrial level right to left shunt may be desirable in patients with severe pulmonary hypertension (PH) or failing Fontan circulation. The Occlutech Atrial Flow Regulator (AFR) was originally designed to create an atrial shunt for left heart failure and is currently being used off label in patients with PH or failing Fontan circulation. There is limited evidence supporting AFR use for these indications. AIMS AND METHODS: We performed a retrospective review of consecutive patients with Fontan circulation or severe irreversible PH who underwent AFR implantation. Comprehensive data were collected and analyzed. RESULTS: Sixteen Fontan and eight PH patients underwent AFR implantation. Median age and weight at implantation were 7.5 years (range 2 34) and 22.3 kg (range 11.3 80), respectively. Twenty eight devices were implanted in 24 patients during 27 procedures. Successful deployment was achieved in all. The device proved versatile and durable across diverse anatomic substrates, even after multiple repositioning attempts. There were no deaths or urgent surgical interventions. Transseptal puncture or Fontan baffle perforation using a Brockenbrough needle or radiofrequency before AFR implantation was required in 10 patients (42%). The most serious complication was a hemorrhagic stroke related to anticoagulation therapy. Thrombotic events occurred in three Fontan patients (11% of all implantations). CONCLUSIONS: AFR appears to be a promising adjunctive option for PH and failing Fontan patients, with acceptable safety and clinically effective results. Device thrombosis remains a risk, particularly with smaller devices in Fontan circulation, likely related to the Fontan patients' underlying hypercoagulable state. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0106",
