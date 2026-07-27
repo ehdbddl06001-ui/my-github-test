@@ -4,18 +4,20 @@
 #  문제: 지금까지 SEN/PREC/F1 은 DS2 라벨로 F1최적 임계를 고른 '오라클 임계'(작은 누출).
 #        게다가 임계가 고정 스칼라 → 환자별 점수 baseline 차이를 못 흡수(inter-patient 근본문제).
 #  해결: 동작점을 '환자별로 변하는 함수'로 만들고 그 파라미터를 DS1 에서만 최적화 → DS2 동결적용.
-#    A. 고정         : t=argmax F1(DS1-OOF)                 (정직 베이스라인, 오라클 누출 제거)
-#    B. 목표-SEN     : DS1-OOF SEN=target 되는 t             (SEN 다이얼)
+#    A. 고정         : t=argmax F1(calib)                   (정직 베이스라인, 오라클 누출 제거)
+#    B. 목표-SEN     : calib SEN=target 되는 t               (SEN 다이얼)
 #    C. 환자별 적응  : 결정점 = s - median_p(s) 후 전역 t    (★변수 자체가 바뀌는 함수, 무라벨)
-#    D. 공변량-선형  : t_i = t0 + β·z_i (z=강건템플릿 신뢰도) (학습형, 실험적)
-#  무결성: 임계용 DS1 점수는 GroupKFold(5) out-of-fold(모든 DS1 환자 정확히 1회 held-out).
-#          DS2 절대 안 봄. 오라클(DS2 F1최적)은 '상한 참고'로만 나란히.
-#  ★ 발견(val≠test) 때문에 DS1→DS2 전이 갭을 반드시 같이 본다: DS1-OOF 값과 DS2 값을 병기.
+#  ★핵심(예측기 일치): 임계와 그 적용 대상 DS2 예측이 반드시 '같은 단일 모델'에서 나와야 스케일 일치.
+#    각 시드: DS1을 fit/calib 환자분할 → fit 학습 → 그 모델로 calib(held-out DS1)·DS2 예측
+#           → 그 모델 calib에서 임계 t → 그 모델 DS2 점수를 (s2 - t)로 '정렬' → 시드평균 후 0에서 결정.
+#    (다수결은 각 모델 SEN을 깨서 X. 정렬점수평균이 캘리브레이션 보존 — 시뮬 검증됨.)
+#  무결성: 임계는 calib=held-out DS1 환자에서만. DS2 절대 안 봄. 오라클(DS2 F1최적)은 상한참고만.
+#  ★ val≠test 때문에 calib→DS2 전이 갭을 병기(calib 값과 DS2 값 나란히).
 #
 #  선행: colab_prep_all.py + colab_step67_selfref.py (Drive)
 #  실행:
 #    exec(open('/content/drive/MyDrive/mitbih/colab_step68_oppoint.py').read())
-#    run_oppoint(target_sen=0.82)     # 3seed × GroupKFold5 = 15 학습(STEP67과 동일 예산)
+#    run_oppoint(target_sen=0.82)     # 8시드 자기캘리브+정렬평균 (학습 8회)
 # =============================================================================
 import os
 import numpy as np
@@ -96,81 +98,58 @@ def _train_fold(F, beats, ref, y, pid, mc, Sw, tr_idx, va_idx, m2_idx, seed):
     M.load_state_dict(bs)
     return pred(bV,rV,f_v), pred(b2,r2,f_2)
 
-def run_oppoint(fams=("RHYTHM","KOOPMAN","AE","GNN"), seeds=(0,1,2), target_sen=0.82,
-                frac=0.6, conf_cut=0.879, use_robust=True):
-    from sklearn.model_selection import GroupKFold
+def run_oppoint(fams=("RHYTHM","KOOPMAN","AE","GNN"), seeds=tuple(range(8)), target_sen=0.82,
+                frac=0.6, conf_cut=0.879, use_robust=True, cal_frac=0.25):
+    """모델별 자기-캘리브레이션 + 정렬점수 평균(예측기 불일치 제거).
+       각 시드: DS1을 fit/calib 환자분할 → fit학습 → 그 모델로 calib·DS2 예측
+       → 그 모델 calib에서 임계 t → 그 모델 DS2 점수를 (s2-t)로 정렬 → 시드평균 후 0에서 결정.
+       S_PR은 DS2 확률평균(임계무관)."""
+    from sklearn.model_selection import GroupShuffleSplit
     _determinism()
     beats,y,pid,F,tag=_bestF(fams)
     m1=np.isin(pid,_DS1); m2=np.isin(pid,_DS2); y2=y[m2]; pid2=pid[m2]
     Sw=auto_weights(y[m1]); nc=np.array([(y[m1]==k).sum() for k in range(3)],np.float32)
     mc=(1.0/np.power(nc,0.25)); mc=(mc/mc.max()*0.5).astype("float32")
-    # ref: robust-template(STEP67 채택본) 또는 median
     if use_robust:
         ref,info=robust_template(beats,pid,frac=frac,conf_cut=conf_cut,verbose=True)
-        conf={p:c for (p,c,fl,kf) in info}
     else:
-        ref=_median_ref(beats,pid); conf={p:1.0 for p in np.unique(pid)}
+        ref=_median_ref(beats,pid)
     idx1=np.where(m1)[0]; idx2=np.where(m2)[0]; y1=y[idx1]; p1=pid[idx1]
-    # ── OOF: DS1 모든 환자 1회 held-out + DS2 예측 누적 ──
-    oof=np.zeros((len(idx1),3),np.float64); oof_n=np.zeros(len(idx1)); P2=[]
+    seeds=list(seeds)
     print(f"\n백본 feats0+WST+MORPHO+REPOL+DTW+{tag}  ref={'robust' if use_robust else 'median'}  Sw={Sw:.2f}")
-    print(f"OOF GroupKFold(5) × {len(seeds)}seed = {5*len(seeds)} 학습 (DS2 절대 미사용)")
-    gkf=GroupKFold(n_splits=5)
+    print(f"모델별 자기캘리브 + 정렬점수평균: {len(seeds)}시드(각 fit{1-cal_frac:.0%}/calib{cal_frac:.0%} 환자분할) — DS2 미사용")
+    METHODS=["A.고정F1", f"B.목표SEN={target_sen}", "C.환자별적응", f"C+목표SEN={target_sen}"]
+    dels={k:[] for k in METHODS}; cals={k:[] for k in METHODS}; P2prob=[]
     for s in seeds:
-        for tr_l,va_l in gkf.split(idx1, y1, groups=p1):
-            tr=idx1[tr_l]; va=idx1[va_l]
-            pv,p2=_train_fold(F,beats,ref,y,pid,mc,Sw,tr,va,idx2,s)
-            oof[va_l]+=pv; oof_n[va_l]+=1; P2.append(p2)
-    oof/=np.maximum(oof_n,1)[:,None]                 # DS1 OOF 평균(각 환자 held-out만)
-    P2=np.stack(P2,0); Pt2=_trim(P2)                 # DS2 트림앙상블
-    sv=oof[:,1]; s2=Pt2[:,1]                          # S-score
-    # 환자별 covariate(신뢰도) 벡터
-    zc1=np.array([conf[p] for p in p1]); zc2=np.array([conf[p] for p in pid2])
-    S_PR=average_precision_score((y2==1).astype(int),s2)
-    print(f"\n임계무관: S_PR(DS2)={S_PR:.4f}  V_PR(DS2)={average_precision_score((y2==2).astype(int),Pt2[:,2]):.4f}  (동작점과 무관, 랭킹력)")
-
-    def rep(name, tD1, applyfn):
-        """DS1-OOF와 DS2 각각에서 (PREC,SEN,F1) 보고 — 전이갭 노출."""
-        p1m=_binmet(applyfn(sv,p1,'d1'), y1, tD1); p2m=_binmet(applyfn(s2,pid2,'d2'), y2, tD1)
-        print(f"  {name:16s}| DS1-OOF SEN={p1m[1]:.3f} PREC={p1m[0]:.3f} F1={p1m[2]:.3f}"
-              f"   →  DS2 SEN={p2m[1]:.3f} PREC={p2m[0]:.3f} F1={p2m[2]:.3f}")
-        return p2m
-
-    ident=lambda s,pid,who: s
-    print("\n=== 동작점 함수 (임계는 DS1-OOF에서 결정 → DS2 동결적용) ===")
-    # 참고 상한: 오라클(DS2 F1최적) — 누출, 상한 표시용만
-    t_or=_best_t_f1(s2,y2); om=_binmet(s2,y2,t_or)
+        fit_l,cal_l=next(GroupShuffleSplit(1,test_size=cal_frac,random_state=s).split(idx1,y1,groups=p1))
+        fit=idx1[fit_l]; cal=idx1[cal_l]
+        pv,p2=_train_fold(F,beats,ref,y,pid,mc,Sw,fit,cal,idx2,s)   # pv=calib예측, p2=DS2예측 (같은 모델)
+        P2prob.append(p2)
+        sc=pv[:,1]; yc=y1[cal_l]; pc=p1[cal_l]; s2=p2[:,1]         # 같은 모델의 calib·DS2 S-score
+        # 각 모델 점수를 자기 임계로 '정렬'(s2 - t): 캘리브레이션 보존(다수결은 SEN 깨짐)
+        tA=_best_t_f1(sc,yc);            dels["A.고정F1"].append(s2-tA);       cals["A.고정F1"].append(_binmet(sc,yc,tA))
+        tB=_t_for_sen(sc,yc,target_sen); dels[f"B.목표SEN={target_sen}"].append(s2-tB); cals[f"B.목표SEN={target_sen}"].append(_binmet(sc,yc,tB))
+        cc=_pp_center(sc,pc); c2=_pp_center(s2,pid2)               # 환자별 baseline 제거(같은 모델 안)
+        tC=_best_t_f1(cc,yc);            dels["C.환자별적응"].append(c2-tC);   cals["C.환자별적응"].append(_binmet(cc,yc,tC))
+        tCs=_t_for_sen(cc,yc,target_sen);dels[f"C+목표SEN={target_sen}"].append(c2-tCs); cals[f"C+목표SEN={target_sen}"].append(_binmet(cc,yc,tCs))
+    Pens=np.stack(P2prob,0).mean(0)                                 # 확률평균(임계무관 S_PR용)
+    S_PR=average_precision_score((y2==1).astype(int),Pens[:,1]); V_PR=average_precision_score((y2==2).astype(int),Pens[:,2])
+    print(f"\n임계무관: S_PR(DS2)={S_PR:.4f}  V_PR(DS2)={V_PR:.4f}  (동작점과 무관, 랭킹력)")
+    t_or=_best_t_f1(Pens[:,1],y2); om=_binmet(Pens[:,1],y2,t_or)   # 오라클(DS2 F1최적) — 누출 상한
+    print("\n=== 동작점 함수 (임계는 각 모델 calib=held-out DS1 에서 결정 → 정렬점수 평균) ===")
     print(f"  [참고상한] 오라클(DS2)  DS2 SEN={om[1]:.3f} PREC={om[0]:.3f} F1={om[2]:.3f}  (누출-상한, 채택 아님)")
-    # A. 고정
-    tA=_best_t_f1(sv,y1); rep("A.고정F1", tA, ident)
-    # B. 목표-SEN
-    tB=_t_for_sen(sv,y1,target_sen); rep(f"B.목표SEN={target_sen}", tB, ident)
-    # C. 환자별 적응(로짓 중앙값 제거)
-    cv=_pp_center(sv,p1); c2=_pp_center(s2,pid2); tC=_best_t_f1(cv,y1)
-    def applyC(s,pid,who): return cv if who=='d1' else c2
-    rep("C.환자별적응", tC, applyC)
-    # C+목표SEN
-    tCs=_t_for_sen(cv,y1,target_sen); rep(f"C+목표SEN={target_sen}", tCs, applyC)
-    # D. 공변량-선형 t_i=t0+β·(z-z̄): DS1 grid fit
-    z1c=zc1-zc1.mean(); z2c=zc2-zc2.mean()
-    bestD=(-1,0,tA)
-    for t0 in np.quantile(sv,np.linspace(0.6,0.98,25)):
-        for be in np.linspace(-0.5,0.5,21):
-            ti=t0+be*z1c; f1=_binmet_vec(sv,y1,ti)
-            if f1>bestD[0]: bestD=(f1,be,t0)
-    _,beD,t0D=bestD
-    tiD1=t0D+beD*z1c; tiD2=t0D+beD*z2c
-    d1=_binmet_vec(sv,y1,tiD1,ret=True); d2=_binmet_vec(s2,y2,tiD2,ret=True)
-    print(f"  {'D.공변량선형':16s}| DS1-OOF SEN={d1[1]:.3f} PREC={d1[0]:.3f} F1={d1[2]:.3f}"
-          f"   →  DS2 SEN={d2[1]:.3f} PREC={d2[0]:.3f} F1={d2[2]:.3f}   (β={beD:+.2f})")
-    print(f"\n  ★ 채택기준: DS2 F1가 오라클상한에 근접 + SEN이 목표 근처 + DS1→DS2 갭 작음.")
-    print(f"     C(환자별적응)가 A(고정)보다 DS2 F1↑면 = 환자별 baseline 흡수 이득(무라벨 개인화).")
-    print(f"     B/C+목표SEN 으로 SEN을 원하는 값에 정직하게 고정 가능(오라클 아님).")
-    return dict(S_PR=S_PR, sv=sv, y1=y1, p1=p1, s2=s2, y2=y2, pid2=pid2, conf=conf)
-
-def _binmet_vec(s, y, t_vec, ret=False):
-    """환자별(또는 비트별) 임계 벡터 t_vec 로 이진지표."""
-    pos=s>=t_vec; yp=(y==1)
-    tp=float((pos&yp).sum()); fp=float((pos&~yp).sum()); fn=float((~pos&yp).sum())
-    prec=tp/(tp+fp+1e-9); sen=tp/(tp+fn+1e-9); f1=2*prec*sen/(prec+sen+1e-9)
-    return (prec,sen,f1) if ret else f1
+    def _boolmet(v,yy):
+        yp=(yy==1); tp=float((v&yp).sum()); fp=float((v&~yp).sum()); fn=float((~v&yp).sum())
+        pr=tp/(tp+fp+1e-9); se=tp/(tp+fn+1e-9); return pr,se,2*pr*se/(pr+se+1e-9)
+    RES={}
+    for k in METHODS:
+        v=np.mean(dels[k],0)>=0                                     # 정렬점수 평균 후 0에서 결정
+        pr,se,f1=_boolmet(v,y2)
+        cm=np.mean(cals[k],0)                                       # calib 평균(전이 참고)
+        print(f"  {k:16s}| calib SEN={cm[1]:.3f} PREC={cm[0]:.3f} F1={cm[2]:.3f}"
+              f"   →  DS2 SEN={se:.3f} PREC={pr:.3f} F1={f1:.3f}")
+        RES[k]=(pr,se,f1)
+    print(f"\n  ★ B/C+목표SEN 의 DS2 SEN 이 {target_sen} 근처면 = SEN 정직 다이얼 성공(오라클 아님).")
+    print(f"     C가 A보다 DS2 F1↑면 = 환자별 baseline 흡수 이득(무라벨 개인화).")
+    print(f"     DS2 F1가 오라클상한({om[2]:.3f})에 근접할수록 = 누출없이 다 짜낸 것.")
+    return dict(S_PR=S_PR, V_PR=V_PR, oracle=om, res=RES, Pens=Pens, y2=y2, pid2=pid2)
