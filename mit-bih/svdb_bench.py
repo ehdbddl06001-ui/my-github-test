@@ -78,7 +78,10 @@ def svdb_prep_feats(force=False, use_ae=True, Kwst=40):
         if need("GNN"):
             np.save(f"{_SFEAT}/GNN.npy",np.nan_to_num(g["extract_gnn_features"](beats,pid,y)).astype("float32")); print("  GNN 저장")
         if use_ae and need("AE"):
-            print("  AE 학습(GPU, 수분)..."); np.save(f"{_SFEAT}/AE.npy",np.nan_to_num(g["extract_ae_features"](beats,y,pid)).astype("float32")); print("  AE 저장")
+            # ★SVDB pid(0~77)는 MIT-BIH _DS1과 교집합이 없다 → train_mask 명시 필수(전체 환자의 정상비트로 학습)
+            print("  AE 학습(GPU, 수분)...")
+            A=g["extract_ae_features"](beats,y,pid,train_mask=np.ones(len(y),bool))
+            np.save(f"{_SFEAT}/AE.npy",np.nan_to_num(A).astype("float32")); print("  AE 저장")
     else: print("  KOOPMAN/GNN/AE 캐시")
     # RR 원값도 특징으로(정규화는 학습시 RobustScaler)
     if need("RR"): np.save(f"{_SFEAT}/RR.npy",np.stack([pre,post],1).astype("float32")); print("  RR 저장")

@@ -54,10 +54,17 @@ def extract_koopman_features(beats, pid, y=None, L2=24, ridge=1e-2):
     return np.nan_to_num(F,posinf=0,neginf=0).astype("float32")
 
 # ─────────────── 개인 정상 AE (conv denoising) ───────────────
-def extract_ae_features(beats, y, pid, epochs=20, bott=16, noise=0.1, seed=0):
+def extract_ae_features(beats, y, pid, epochs=20, bott=16, noise=0.1, seed=0, train_mask=None):
+    """train_mask: AE 학습에 쓸 환자 마스크. None이면 MIT-BIH _DS1.
+       ★다른 DB(SVDB 등)는 pid가 _DS1과 교집합이 없어 학습셋이 비므로 반드시 지정할 것
+         (전체 환자를 주면 됨 — AE는 '정상' 비트만 쓰므로 라벨 y==0만 사용)."""
     import torch, torch.nn as nn
     dev="cuda" if torch.cuda.is_available() else "cpu"
-    N=len(beats); L=beats.shape[2]; m1=np.isin(pid,_DS1)
+    N=len(beats); L=beats.shape[2]
+    m1=np.isin(pid,_DS1) if train_mask is None else np.asarray(train_mask,bool)
+    if not (m1&(y==0)).any():
+        raise RuntimeError("AE 학습셋이 비었습니다. 이 DB의 pid가 _DS1과 교집합이 없습니다 "
+                           "→ extract_ae_features(..., train_mask=np.ones(len(y),bool)) 로 호출하세요.")
     Xb=beats.astype("float32").copy()
     mu=Xb.mean(2,keepdims=True); sd=Xb.std(2,keepdims=True)+1e-6; Xb=(Xb-mu)/sd    # 비트별 리드별 z
     class AE(nn.Module):
