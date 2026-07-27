@@ -502,7 +502,48 @@ def report(OUT, base="B4.본연구", mde=0.07, B=5000):
         print("\n  [절제] 형태 가지의 기여:")
         out["morph"] = paired(R, "R1.RSN(리듬+형태)", "R0.RSN(리듬만)", B=B, k_bonf=k, mde=mde)
     print("\n  ※ CI가 0을 포함하면 '개선'이라 쓰지 않는다 (HANDOFF §7-6).")
+    # 최고 성적 arm 의 환자별 분해 — 다음 반복의 표적을 고르기 위한 것
+    best = max(arms, key=lambda a: R[a]["macro"])
+    patient_breakdown(OUT, best)
     return out
+
+
+def patient_breakdown(OUT, arm, topn=10, targets=(0.50, 0.90, 0.99), show=True):
+    """환자별 F1 분해 — '모든 ECG를 정답에' 목표의 실제 병목을 드러낸다.
+
+    ★왜 이게 필요한가: 환자단위 매크로 F1 은 환자별 F1 의 '평균'이다. 따라서
+      매크로 0.99 는 '73명 전원이 0.99 이상'을 뜻한다. 평균을 조금 올리는 개선과
+      최악 환자를 끌어올리는 개선은 완전히 다른 작업이고, 목표가 후자라면
+      **분산(꼬리)이 병목이지 평균이 아니다**. PAPER §5.3 의 σ≈0.32 가 그 크기다.
+      매 반복에서 '어떤 환자가 여전히 실패하는가'를 보고 다음 수를 정하기 위한 도구.
+    """
+    y, pid = OUT["y"], OUT["pid"]
+    ps = np.array([int(p) for p in np.unique(pid) if (y[pid == p] == 1).sum() > 0])
+    f = np.asarray(OUT["res"][arm]["fper"], float)
+    if len(f) != len(ps):
+        print(f"  ⚠ 정렬 불일치(fper {len(f)} vs 환자 {len(ps)}) — 건너뜀"); return {}
+    nS = np.array([int((y[pid == p] == 1).sum()) for p in ps])
+    nB = np.array([int((pid == p).sum()) for p in ps])
+    o = np.argsort(f)
+    res = dict(pid=ps, f1=f, n_S=nS, n_beat=nB)
+    if not show:
+        return res
+    q = np.percentile(f, [0, 25, 50, 75, 100])
+    print(f"\n  [환자별 분해] {arm}   n={len(f)}")
+    print(f"    평균 {f.mean():.3f}  |  최소 {q[0]:.3f}  Q1 {q[1]:.3f}  중앙 {q[2]:.3f}  "
+          f"Q3 {q[3]:.3f}  최대 {q[4]:.3f}   (표준편차 {f.std(ddof=1):.3f})")
+    for t in targets:
+        k = int((f >= t).sum())
+        print(f"    F1 ≥ {t:.2f} 인 환자: {k}/{len(f)} ({100*k/len(f):.0f}%)"
+              f"{'   ← 매크로 ' + format(t,'.2f') + ' 은 이 값이 100% 여야 달성' if t == max(targets) else ''}")
+    print(f"    최악 {min(topn, len(f))}명 (여기가 다음 반복의 표적):")
+    print(f"      {'rec':>5} {'F1':>6} {'S비트':>7} {'총비트':>8} {'S비율':>7}")
+    for i in o[:topn]:
+        print(f"      {ps[i]:5d} {f[i]:6.3f} {nS[i]:7d} {nB[i]:8d} {100*nS[i]/nB[i]:6.2f}%")
+    gap = float(np.maximum(max(targets) - f, 0).mean())
+    print(f"    목표 {max(targets):.2f} 까지 평균 결손 {gap:.3f} "
+          f"(전원 달성 시 매크로 = {max(targets):.2f})")
+    return res
 
 
 def repro_check(OUT, arm="R1.RSN(리듬+형태)", base="B4.본연구", n_rep=3, mde=0.07):
