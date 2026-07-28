@@ -2,6 +2,170 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0125",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Pregnancies in gynecologic oncologists: An assessment of pregnancy policies and complications within a surgical subspecialty",
+  "authors": [
+   "Goon Kelsey C",
+   "Chor Julie",
+   "Mills Kathryn A"
+  ],
+  "journal": "Gynecologic oncology",
+  "doi": "10.1016/j.ygyno.2026.07.020",
+  "pmid": "42520341",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42520341/",
+  "pubdate": "2026-07-28",
+  "date": "2026-07-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVES:** To describe pregnancy-related experiences, complications and leave among gynecologic oncologists. Secondarily, to explore the institutional policy landscape pertaining to workload adjustments during pregnancy.\n\n**METHODS:** We sent an anonymous, elective survey to all active physicians within the Society of Gynecologic Oncology (SGO) registry from September to December 2024. The survey explored family planning goals, pregnancy outcomes, pregnancy complications, leave after pregnancy, and work hours during pregnancy. Respondents were allowed but not required to offer open-ended comments, which were thematically analyzed.\n\n**RESULTS:** 276 respondents reported on 480 pregnancies, 385 of which were carried by the respondent. Of live births carried by gynecologic oncologists, more than half experienced a major complication and 1 in 4 delivered preterm. Working more than 60 h per week in the third trimester (66% vs 50%, p = 0.02), taking more than seven nights of call per month in the third trimester (45% vs 31%, p = 0.04) and experiencing a major complication of pregnancy (87% vs 38%, p < 0.001) were associated with reporting that workload negatively impacted a pregnancy. Very few pregnancies involved work-hour reductions or institutional policies for work-hour reduction. A majority of respondents reported delaying childbearing for training; most (76%) regretted this delay.\n\n**CONCLUSIONS:** Gynecologic oncologists reported high rates of pregnancy complications, most strikingly a preterm delivery rate of 25%. Very few adjusted work hours in pregnancy or had access to institutional policies for work hour reduction. This study provides insight into the experiences of pregnant gynecologic oncologists and highlights a need for explicit policies to support pregnancy.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0124",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Fulminant Secondary HLH Following EBV Reactivation in an Adult With Trisomy 21 After Teplizumab Treatment for Stage 2 Type 1 Diabetes",
+  "authors": [
+   "Klemann Christian",
+   "Kordonouri Olga"
+  ],
+  "journal": "Diabetes care",
+  "doi": "10.2337/dc26-0543",
+  "pmid": "42520060",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42520060/",
+  "pubdate": "2026-07-28",
+  "date": "2026-07-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVE:** Teplizumab delays progression from stage 2 to stage 3 type 1 diabetes (T1D). Epstein-Barr virus (EBV) reactivation after teplizumab is usually transient and mild. We report EBV reactivation-associated secondary hemophagocytic lymphohistiocytosis (HLH) in an adult with trisomy 21 who was treated with teplizumab.\n\n**RESEARCH METHODS AND DESIGN:** We describe the clinical course, virologic testing, histopathology, treatment, and follow-up of a 44-year-old man with trisomy 21 and stage 2 T1D after a 14-day teplizumab course.\n\n**RESULTS:** Six days after completion of the 14-day teplizumab course, he developed respiratory, hepatic, and renal failure. EBV PCR peaked at >2,000,000 copies/mL; serology confirmed reactivation. Lymph node biopsy showed EBV-associated lymphoproliferation, and criteria for secondary HLH were fulfilled (HScore 238). Dexamethasone and four weekly rituximab doses were associated with clinical, biochemical, and virologic recovery. At 12 months, he remained clinically stable with stage 2 T1D and no insulin treatment.\n\n**CONCLUSIONS:** This case documents EBV reactivation-associated secondary HLH after teplizumab treatment in a patient with trisomy 21. Causality cannot be established, and the absence of pretreatment EBV PCR limits assessment of whether preexisting EBV DNAemia at treatment initiation contributed to the poor outcome. The observation raises a plausible but unproven host-virus-drug interaction and supports early EBV PCR and HLH evaluation after severe inflammatory deterioration after teplizumab.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0123",
+  "topic": "Hematology-Oncology",
+  "subtopic": "",
+  "title": "Decoding BCR::ABL1 kinase domain mutations in chronic myeloid leukemia: Implications for tyrosine kinase inhibitor resistance in a South Asian population",
+  "authors": [
+   "Sharif Fatima",
+   "Mahmood Rafia",
+   "Roghani Maimoona",
+   "Khan Sikandar Hayat",
+   "Khan Ibrahim"
+  ],
+  "journal": "Hematology, transfusion and cell therapy",
+  "doi": "10.1016/j.htct.2026.106502",
+  "pmid": "42520346",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42520346/",
+  "pubdate": "2026-07-28",
+  "date": "2026-07-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**INTRODUCTION:** Treatment resistance has become increasingly common in patients with chronic myeloid leukemia. Lack of response to tyrosine kinase inhibitors is associated with mutations in the BCR::ABL1 kinase domain. This study aims to report the frequency and types of BCR::ABL1 kinase domain mutations in Pakistani chronic myeloid leukemia patients.\n\n**MATERIALS AND METHODS:** This prospective study was conducted from January to June 2025 at the Armed Forces Institute of Pathology in Pakistan. It included adult patients with chronic myeloid leukemia who were non-responsive to treatment based on molecular, hematological, and clinical criteria. Allele-specific real-time polymerase chain reaction was performed to detect four kinase domain mutations: T315I, E255V, E255K and Y253H. Data was analyzed using IBM SPSS v23.\n\n**RESULTS:** The mean age of the 133 treatment-resistant chronic myeloid leukemia patients included in the study was 47.3 ± 13.6 years. The majority of cases (62.4%) were male and 79 (59.4%) patients were currently on imatinib therapy. The median BCR::ABL1 level, as measured by quantitative polymerase chain reaction, was 30.73% (range: 1.17-100%) International Scale. BCR::ABL1 kinase domain mutations were detected in 57 (42.9%) patients. E255K was the most common mutation detected in 45 (33.8%) cases, followed by E255V in 11 (8.3%), T315I in 1 (0.8%) and the Y253H mutation in 1 (0.8%) patient. The presence of kinase domain mutations was significantly associated with higher total leucocyte count (p = 0.002), while the E255K mutation was significantly associated with blast crisis (p = 0.048).\n\n**CONCLUSION:** This study revealed a high prevalence of BCR::ABL1 kinase domain mutations in Pakistani chronic myeloid leukemia patients. E255K, the most frequently detected mutation, was significantly associated with blast crisis. These findings underscore the significance of molecular testing for personalized treatment.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0122",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Analysis of energy expenditure and behavioral characteristics in different mouse strains under normal and disease conditions",
+  "authors": [
+   "Zeng Jiacheng",
+   "Ji Yuanjun",
+   "Zou Yan",
+   "Tan Jing",
+   "Wu Teng",
+   "Shen Conghui",
+   "Huang Tongsheng",
+   "Xiong Shijie",
+   "et al."
+  ],
+  "journal": "Animal models and experimental medicine",
+  "doi": "10.1002/ame2.70268",
+  "pmid": "42520300",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42520300/",
+  "pubdate": "2026-07-28",
+  "date": "2026-07-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Metabolic and behavioral traits in mice exhibit substantial variability across strains, ages, and disease states, which can confound preclinical study outcomes. However, systematic characterization of these parameters (e.g., energy metabolism, activity, and feeding behavior) across diverse experimental conditions remains limited.\n\n**METHODS:** Core metabolic and behavioral parameters were assessed via metabolic cages in five 8-week-old mouse strains (ICR, C57BL/6J, BALB/c, BALB/c-nude, NOD-SCID), six C57BL/6J age groups (3 weeks to 18 months), and four mouse disease models (LPS-induced pneumonia, chronic kidney disease, acute myocardial infarction, and type 1 diabetes). Data were stratified by light/dark cycles and statistically compared.\n\n**RESULTS:** Herein, metabolic and behavioral phenotypes of mice were systematically characterized across different strains, ages, and four disease models (three organ-specific, one systemic). Distinct strain- and age-related differences in basal metabolism, activity, and energy expenditure were observed. Specifically, ICR mice displayed higher basal aerobic metabolism, whereas C57BL/6J mice exhibited greater locomotor activity; metabolism and energy balance also underwent marked shifts during development, pregnancy, and aging. Furthermore, all disease models presented unique metabolic rearrangements: LPS-induced acute pneumonia reduced aerobic metabolism and locomotor activity; CKD caused hypometabolism, polydipsia, and a substrate shift to carbohydrate oxidation; AMI increased respiratory exchange ratio (RER) and water intake; and T1DM induced polyphagia and polydipsia, with normal metabolism but impaired energy utilization.\n\n**CONCLUSIONS:** Mouse metabolic and behavioral phenotypes are highly dependent on strain, age, and disease state. These findings highlight the need to standardize experimental conditions (e.g., age, strain, disease state) and account for baseline variability when designing preclinical studies.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0121",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Exercise for Atrial Fibrillation: Unmasking Comorbidities and Improving Treatment",
+  "authors": [
+   "Dziano Jenelle K",
+   "Ariyaratnam Jonathan P",
+   "Middeldorp Melissa E",
+   "Sanders Prashanthan",
+   "Elliott Adrian D"
+  ],
+  "journal": "Exercise and sport sciences reviews",
+  "doi": "10.1249/JES.0000000000000391",
+  "pmid": "42520286",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42520286/",
+  "pubdate": "2026-07-22",
+  "date": "2026-07-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Atrial fibrillation is associated with significant symptoms, comorbidities and shared pathophysiological features with heart failure with preserved ejection fraction (HFpEF). We propose that exercise testing, including cardiopulmonary exercise testing (CPET) and exercise cardiac imaging, can unmask subclinical cardiac dysfunction, guide diagnosis and inform intervention. Exercise training has a key role in AF management, improving arrhythmia burden, atrial remodelling and quality of life. Summary: Exercise testing identifies additional cardiac limitations in atrial fibrillation; exercise intervention reduces arrhythmia episodes and improves quality of life.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0120",
   "topic": "Surgery",
   "subtopic": "",
