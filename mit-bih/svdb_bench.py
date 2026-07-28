@@ -183,21 +183,47 @@ def _fit_predict(kind, beats, ref, F, y, pid, tr, cal, te, Sw, mc, seed):
             loss.backward(); torch.nn.utils.clip_grad_norm_(M.parameters(),1.0); opt.step()
     return pred(cal,Fca), pred(te,Fte)
 
-def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
+def bench_models(n_rep=1, k=5, use_ae=True, seed0=0, only=None):
+    """only=[arm이름,...] 을 주면 그 arm 만 학습한다(나머지는 건너뜀).
+
+    ★왜 이게 안전한가 — 폴드가 결정론적이기 때문이다:
+      · GroupKFold(k) 는 (데이터, pid) 가 같으면 항상 같은 분할을 만든다.
+      · calib 분리도 GroupShuffleSplit(random_state=rep) 로 rep 마다 고정이다.
+      따라서 같은 n_rep·k·데이터로 따로 돌린 결과라도 '같은 환자·같은 폴드'가
+      보장되고, 대응 부트스트랩(환자별 F1 차이)이 그대로 성립한다.
+      → 이미 돌린 기준선(B0~B4C)이나 arm 을 매번 다시 학습할 이유가 없다.
+      → 새 arm 만 돌린 뒤 svdb_rhythm.merge_out() 으로 옛 결과와 합치면 된다.
+      merge_out() 은 y/pid/order 가 완전히 같은지 검증한 뒤에만 합친다.
+
+    ⚠ 재사용하면 안 되는 경우(반드시 전부 다시 돌릴 것):
+      데이터가 바뀜 / 폴드·calib 로직이 바뀜 / 그 arm 의 코드가 바뀜 / n_rep·k 가 바뀜.
+    """
     from sklearn.model_selection import GroupKFold, GroupShuffleSplit
     from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
     from sklearn.preprocessing import StandardScaler
     _determinism()
     beats,y,pid,pre,post=_sv()
+    _want=lambda nm: (only is None) or (nm in only)
+    need_b4 = _want("B4.본연구") or _want("B4C.본연구+센터링")
     FAM=["WST","MORPHO","REPOL","RHYTHM","KOOPMAN","GNN"]+(["AE"] if use_ae else [])
-    Fall=_load_feats(FAM+["RR"]); FRR=_load_feats(["RR"]); Fmor=_load_feats(["MORPHO","REPOL","RR"])
+    # 필요한 특징만 로드(87차원 로드는 느리고 메모리를 크게 먹는다)
+    Fall=_load_feats(FAM+["RR"]) if need_b4 else None
+    FRR=_load_feats(["RR"]) if _want("B3.CNN+RR") else None
+    Fmor=_load_feats(["MORPHO","REPOL","RR"]) if _want("B1.LDA(형태+RR)") else None
     print(f"SVDB {len(y)}비트  S={int((y==1).sum())}({100*(y==1).mean():.2f}%)  레코드 {len(np.unique(pid))}")
-    print(f"특징: 전체 {Fall.shape[1]}차원 [{'+'.join(FAM)}+RR]  ※feats0 없음(MIT-BIH판과 상이)")
-    print(f"★구성 동결: MIT-BIH 확정 구성 그대로. SVDB에서 재탐색 없음.\n")
+    if Fall is not None:
+        print(f"특징: 전체 {Fall.shape[1]}차원 [{'+'.join(FAM)}+RR]  ※feats0 없음(MIT-BIH판과 상이)")
+    print(f"★구성 동결: MIT-BIH 확정 구성 그대로. SVDB에서 재탐색 없음.")
+    if only is not None:
+        print(f"★only 지정 → {list(only)} 만 학습합니다. 나머지는 건너뜁니다.")
+        print(f"  폴드는 결정론적이므로 옛 결과와 merge_out() 으로 합쳐도 대응비교가 유효합니다.\n")
+    else:
+        print()
     refM=_median_ref(beats,pid)
     refR=robust_template(beats,pid,frac=0.6,conf_cut=0.879,verbose=True)[0]   # DS1서 정한 값 그대로
     ARMS=["B0.다수결","B1.LDA(형태+RR)","B2.CNN(raw)","B3.CNN+RR","B4.본연구","B4C.본연구+센터링"]
     ARMS+= [a for a in EXTRA_ARMS if a not in ARMS]           # 확장 arm(신규 모델)
+    if only is not None: ARMS=[a for a in ARMS if a in only]
     if EXTRA_ARMS: print(f"확장 arm {len(EXTRA_ARMS)}개 동반 평가: {list(EXTRA_ARMS)}\n")
     else: print("※ 확장 arm 없음 — B0~B4C 기준선만 돕니다. 신규 모델(R0/R1/R2)도 함께\n"
                 "   평가하려면 이 실행을 멈추고 attach_arms() 를 먼저 부르세요.\n"
@@ -220,27 +246,33 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
             seed=100*rep+fi
             order_idx.append(te)
             # B0
-            acc["B0.다수결"].append(np.zeros(len(te),bool)); scr["B0.다수결"].append(np.zeros(len(te)))
+            if _want("B0.다수결"):
+                acc["B0.다수결"].append(np.zeros(len(te),bool)); scr["B0.다수결"].append(np.zeros(len(te)))
             # B1 LDA
-            ss=StandardScaler().fit(Fmor[tr]); L=LinearDiscriminantAnalysis().fit(ss.transform(Fmor[tr]),y[tr])
-            pc=L.predict_proba(ss.transform(Fmor[cal]))[:,1]; pt=L.predict_proba(ss.transform(Fmor[te]))[:,1]
-            t=_best_t_f1(pc,y[cal]); acc["B1.LDA(형태+RR)"].append(pt>=t); scr["B1.LDA(형태+RR)"].append(pt)
+            if _want("B1.LDA(형태+RR)"):
+                ss=StandardScaler().fit(Fmor[tr]); L=LinearDiscriminantAnalysis().fit(ss.transform(Fmor[tr]),y[tr])
+                pc=L.predict_proba(ss.transform(Fmor[cal]))[:,1]; pt=L.predict_proba(ss.transform(Fmor[te]))[:,1]
+                t=_best_t_f1(pc,y[cal]); acc["B1.LDA(형태+RR)"].append(pt>=t); scr["B1.LDA(형태+RR)"].append(pt)
             # B2 CNN(raw) / B3 CNN+RR
             for nm,Fx in [("B2.CNN(raw)",np.zeros((len(y),1),"float32")),("B3.CNN+RR",FRR)]:
+                if not _want(nm): continue
                 pc,pt=_fit_predict("cnn",beats,refM,Fx,y,pid,tr,cal,te,Sw,mc,seed)
                 t=_best_t_f1(pc[:,1],y[cal]); acc[nm].append(pt[:,1]>=t); scr[nm].append(pt[:,1])
-            # B4 / B4C (같은 모델, 임계법만 다름)
-            pc,pt=_fit_predict("ours",beats,refR,Fall,y,pid,tr,cal,te,Sw,mc,seed)
-            t=_best_t_f1(pc[:,1],y[cal]); acc["B4.본연구"].append(pt[:,1]>=t); scr["B4.본연구"].append(pt[:,1])
-            cc=_pp_center2(pc[:,1],pid[cal]); ct=_pp_center2(pt[:,1],pid[te]); tc=_best_t_f1(cc,y[cal])
-            acc["B4C.본연구+센터링"].append(ct>=tc); scr["B4C.본연구+센터링"].append(ct)
+            # B4 / B4C (같은 모델을 공유하므로 둘 중 하나만 필요해도 한 번만 학습)
+            if need_b4:
+                pc,pt=_fit_predict("ours",beats,refR,Fall,y,pid,tr,cal,te,Sw,mc,seed)
+                if _want("B4.본연구"):
+                    t=_best_t_f1(pc[:,1],y[cal]); acc["B4.본연구"].append(pt[:,1]>=t); scr["B4.본연구"].append(pt[:,1])
+                if _want("B4C.본연구+센터링"):
+                    cc=_pp_center2(pc[:,1],pid[cal]); ct=_pp_center2(pt[:,1],pid[te]); tc=_best_t_f1(cc,y[cal])
+                    acc["B4C.본연구+센터링"].append(ct>=tc); scr["B4C.본연구+센터링"].append(ct)
             # ─── 확장 arm (동일 폴드·동일 calib·동일 임계규약) ───
             if EXTRA_ARMS:
                 ctx=dict(beats=beats,y=y,pid=pid,pre=pre,post=post,refM=refM,refR=refR,
                          tr=tr,cal=cal,te=te,Sw=Sw,mc=mc,seed=seed,rep=rep,fold=fi,
                          best_t=_best_t_f1)
                 for nm,fn in EXTRA_ARMS.items():
-                    if nm in dead: continue
+                    if nm in dead or not _want(nm): continue
                     try:
                         r=fn(ctx)
                         # 계약: bool[len(te)] 또는 (bool[len(te)], score[len(te)])
@@ -274,12 +306,17 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
     print(f"\n=== H5 검정: 단일 레코드 지배 여부 ===")
     print(f"  최다 S 레코드 = {top} (S {cnt[top]}, 전체의 {share:.1f}%)   [MIT-BIH #232는 75.2%]")
     print(f"  → {'지배 있음(MIT-BIH와 유사)' if share>40 else '★지배 없음 → #232 지배는 MIT-BIH 고유 현상'}")
-    b4=RES["B4.본연구"]; b4c=RES["B4C.본연구+센터링"]; b3=RES["B3.CNN+RR"]
-    print(f"\n=== 사전등록 가설 검정 ===")
-    print(f"  H3(센터링이 매크로F1 개선): Δ={b4c['macro']-b4['macro']:+.3f}  "
-          f"{'★지지' if b4c['ci'][0]>b4['macro'] else '기각/불확정(CI 겹침)'}   [MIT-BIH에선 −0.004로 기각됨]")
-    print(f"  제안 vs 최선기준선(B3): Δ매크로={b4['macro']-b3['macro']:+.3f}  "
-          f"{'★유의' if b4['ci'][0]>b3['ci'][1] else 'CI 겹침(유의하지 않음)'}")
+    # only= 로 일부만 돌린 경우 아래 기준선이 없을 수 있다 → 있을 때만 출력
+    b4=RES.get("B4.본연구"); b4c=RES.get("B4C.본연구+센터링"); b3=RES.get("B3.CNN+RR")
+    if b4 and b4c and b3:
+        print(f"\n=== 사전등록 가설 검정 ===")
+        print(f"  H3(센터링이 매크로F1 개선): Δ={b4c['macro']-b4['macro']:+.3f}  "
+              f"{'★지지' if b4c['ci'][0]>b4['macro'] else '기각/불확정(CI 겹침)'}   [MIT-BIH에선 −0.004로 기각됨]")
+        print(f"  제안 vs 최선기준선(B3): Δ매크로={b4['macro']-b3['macro']:+.3f}  "
+              f"{'★유의' if b4['ci'][0]>b3['ci'][1] else 'CI 겹침(유의하지 않음)'}")
+    elif only is not None:
+        print(f"\n  ※ 기준선(B3/B4/B4C)을 이 실행에서 돌리지 않았습니다.")
+        print(f"     merge_out(이번OUT, 옛OUT) 으로 합친 뒤 report() 하세요.")
     print(f"\n  ★해석 규율: CI가 겹치면 '개선'이라 쓰지 않는다. micro는 위 지배율과 함께만 인용한다.")
     if any(a in RES for a in EXTRA_ARMS):
         print(f"\n  ※ 확장 arm 은 주변 CI 비교로 판정하지 말 것. 대응 부트스트랩을 쓰세요:")

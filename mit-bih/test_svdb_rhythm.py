@@ -158,6 +158,22 @@ def main():
     ok(H["ceiling_analysis"]({"res": {"X": dict(fper=[1], score=None)}}, "X") == {},
        "score 없는 옛 OUT 은 안내 후 안전 종료")
 
+    # only= 로 일부만 학습 → merge_out 으로 합치기 (재실행 시간 절약의 핵심)
+    O_only = H["bench_models"](n_rep=1, k=3, use_ae=True, only=["R4.RSN(+P파)"])
+    ok(set(O_only["res"]) == {"R4.RSN(+P파)"}, f"only= 로 1개만 학습됨 {list(O_only['res'])}")
+    M = H["merge_out"](O_only, OUT)
+    ok(set(M["res"]) == set(OUT["res"]) | {"R4.RSN(+P파)"}, "병합 후 arm 집합이 합집합")
+    ok(len(set(len(M["res"][a]["fper"]) for a in M["res"])) == 1,
+       "병합 후에도 모든 arm 의 fper 길이 동일(대응비교 성립)")
+    ok(np.array_equal(M["res"]["B4.본연구"]["fper"], OUT["res"]["B4.본연구"]["fper"]),
+       "재사용된 arm 의 값이 그대로 보존됨")
+    # 정렬이 다르면 반드시 거부해야 한다 (조용한 오비교 방지)
+    bad = dict(O_only); bad["pid"] = np.asarray(O_only["pid"])[:-1]
+    try:
+        H["merge_out"](bad, OUT); ok(False, "정렬 불일치 거부")
+    except ValueError:
+        ok(True, "정렬 불일치 시 병합 거부(조용한 오비교 방지)")
+
     # arm 이 예외를 던져도 전체 실행이 죽지 않아야 한다
     H["clear_arms"]()
     H["register_arm"]("Z.고장난arm", lambda ctx: (_ for _ in ()).throw(RuntimeError("의도된 실패")))

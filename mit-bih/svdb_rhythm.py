@@ -784,6 +784,45 @@ def save_out(OUT, name="rsn_last", base=None):
     return p
 
 
+def merge_out(new_OUT, old_OUT, verbose=True):
+    """새로 돌린 arm 결과를 옛 결과와 합친다 — **정렬이 완전히 같을 때만**.
+
+    ★왜 안전한가: 폴드가 결정론적이다(GroupKFold + GroupShuffleSplit(random_state=rep)).
+      같은 데이터·같은 n_rep·k 면 환자 배정과 평가 순서가 동일하므로, 따로 돌린
+      결과라도 '같은 환자의 F1' 끼리 짝지을 수 있다 → 대응 부트스트랩이 유효하다.
+
+    ★그래서 무엇을 검증하는가: y / pid / order 가 **완전히 일치**하는지. 하나라도
+      다르면 두 실행이 다른 분할을 본 것이므로 합치기를 거부한다. 조용히 잘못된
+      비교를 만드는 것보다 멈추는 편이 낫다.
+
+    이름이 겹치면 new_OUT 이 이긴다(방금 돌린 것이 최신).
+    """
+    for k in ("y", "pid"):
+        a, b = np.asarray(new_OUT.get(k)), np.asarray(old_OUT.get(k))
+        if a.shape != b.shape or not np.array_equal(a, b):
+            raise ValueError(
+                f"합칠 수 없습니다: '{k}' 가 다릅니다(shape {a.shape} vs {b.shape}).\n"
+                f"  두 실행이 서로 다른 분할을 봤다는 뜻입니다 — 데이터·n_rep·k 가\n"
+                f"  같은지 확인하세요. 다르면 전부 다시 돌려야 합니다.")
+    if "order" in new_OUT and "order" in old_OUT:
+        if not np.array_equal(np.asarray(new_OUT["order"]), np.asarray(old_OUT["order"])):
+            raise ValueError("합칠 수 없습니다: 'order'(평가 순서)가 다릅니다.")
+    out = dict(old_OUT)
+    out.update({k: v for k, v in new_OUT.items() if k != "res"})
+    res = dict(old_OUT.get("res", {}))
+    res.update(new_OUT.get("res", {}))
+    out["res"] = res
+    out["arms"] = list(res)
+    if verbose:
+        fresh = sorted(new_OUT.get("res", {}))
+        kept = [a for a in old_OUT.get("res", {}) if a not in fresh]
+        print(f"✔ 병합 완료 (정렬 검증 통과: 환자·폴드 동일)")
+        print(f"  새로 학습: {fresh}")
+        print(f"  재사용   : {kept}")
+        print(f"  → report(OUT) 로 전체 대응비교가 그대로 가능합니다.")
+    return out
+
+
 def load_out(name="rsn_last", base=None, verbose=True):
     """Drive 에서 OUT 복원. 학습 없이 report(OUT)/patient_breakdown() 가능."""
     import pickle
