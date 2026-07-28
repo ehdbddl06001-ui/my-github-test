@@ -459,8 +459,15 @@ def bench_transfer(task="beat5", path=None, K=8, k=5, epochs=20, ft_epochs=5,
     nfit = 3 * k * len(uds)
     print(f"\n  ⚠ 학습 {nfit}회 예정 (DB {len(uds)} × {k}폴드 × 3모델)."
           f"  P1 은 매번 {len(y):,}비트 전체를 본다.")
-    print(f"    SVDB 벤치(184k비트 15회)가 수십 분이었으니 여기는 **수 시간**일 수 있다.")
-    print(f"    먼저 k=3, epochs=10 으로 감을 잡고 늘리는 것을 권한다.")
+    # 연산량 환산 추정(추측 아님): 샘플당 MAC × (샘플 × 에폭 × 학습횟수) 를 세어
+    # 이미 돌려본 SVDB 벤치(87 TMAC = 실측 '수십 분')와 비율로 비교한다.
+    #   기준점: K=8·3DB·k=3 (=27회 학습) → 110.6 TMAC = SVDB 벤치의 1.3배
+    mac = 1_121_152 if c["seq"].shape[2] <= 33 else 3_959_680      # K=8 / K=32
+    ratio = (nfit / 27.0) * 1.3 * (mac / 1_121_152)
+    print(f"    연산량 ≈ SVDB 벤치(실측 '수십 분')의 {ratio:.1f}배 → L4 기준 "
+          f"대략 {int(20 * ratio)}~{int(35 * ratio)}분 예상.")
+    if mac > 2e6:
+        print(f"    (K=32 는 샘플당 연산이 K=8 의 3.5배라 그만큼 더 걸린다.)")
     acc = {a: [] for a in ("P0.단독", "P1.통합", "P2.통합→미세")}
     order = []
     for db in uds:
