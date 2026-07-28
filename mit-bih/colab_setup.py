@@ -36,7 +36,8 @@ _DEFAULT_BASE = "/content/drive/MyDrive/mitbih"
 _BASE  = globals().get("_BASE", _DEFAULT_BASE)
 
 # 리듬 시퀀스 모델 실행에 필요한 최소 집합(순서 = 로드 순서)
-CORE = ["svdb_bench.py", "svdb_rhythm.py", "svdb_labels.py", "ecg_multidb.py"]
+CORE = ["svdb_bench.py", "svdb_rhythm.py", "svdb_labels.py", "ecg_multidb.py",
+        "rhythm_bench.py"]
 # B1~B4 기준선이 의존하는 체인. 이미 Drive 에 있으면 굳이 안 받아도 된다.
 CHAIN = ["colab_step67_selfref.py", "colab_step68_oppoint.py",
          "colab_step69_ratepoint.py", "colab_step70_evalintegrity.py",
@@ -167,6 +168,8 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
             "build_labeled": "svdb_labels.py",
             "db_audit":     "ecg_multidb.py",
             "build_multi":  "ecg_multidb.py",
+            "bench_rhythm": "rhythm_bench.py",
+            "report_rhythm": "rhythm_bench.py",
             "label_ceiling_probe": "svdb_rhythm.py",
             "save_out":     "svdb_rhythm.py",
             "load_out":     "svdb_rhythm.py"}
@@ -179,7 +182,10 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print(f"    → sync(chain=True) 를 시도하거나 {base} 의 파일을 확인하세요.")
     else:
         print("  ✔ 준비 완료.  다음 순서로 실행하세요:")
-        print("      db_audit()                    # ★지금 할 것: 다중 DB 재고조사(GPU 불필요)")
+        print("      # ★리듬(질환) 과제 — 지금 여기:")
+        print("      build_multi()                 # 통합 npz (한 번만, 수십 분)")
+        print("      OUT = bench_rhythm(n_rep=1)   # AFIB/B/T/VT 분류 (GPU)")
+        print("      report_rhythm(OUT)            # 클래스별 판정")
         print()
         print("      # 이미 돌린 결과를 다시 보려면(학습 0초):")
         print("      OUT = load_out('rsn_adathr_rep3'); report(OUT)")

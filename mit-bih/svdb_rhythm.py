@@ -317,10 +317,20 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
             # 미사용 파라미터가 옵티마이저에 남으면 '순수 대조군'이라 말할 수 없다.
             s.rz = s.rp = None
             if use_seq:
-                s.rz = nn.Sequential(
-                    nn.Conv1d(cseq, 64, 5, padding=2), nn.BatchNorm1d(64), nn.GELU(),
-                    nn.Conv1d(64, 64, 3, padding=2, dilation=2), nn.BatchNorm1d(64), nn.GELU(),
-                    nn.Conv1d(64, 64, 3, padding=4, dilation=4), nn.BatchNorm1d(64), nn.GELU())
+                # ★수용야를 창 길이에 맞춰 자동으로 키운다.
+                #   비트 이소성(K=8, L=17)은 dilation 1-2-4 로 충분하지만,
+                #   AF·VT 같은 '지속 상태'는 수십 박 문맥이 필요해 L 이 커진다.
+                #   수용야가 L 보다 짧으면 창 끝을 아예 못 보므로 층을 늘린다.
+                #   RF = 5(k5,d1) 에서 시작해 k3,d 를 배로 늘릴 때마다 +2d.
+                layers = [nn.Conv1d(cseq, 64, 5, padding=2), nn.BatchNorm1d(64), nn.GELU()]
+                rf, d = 5, 1
+                while rf < L and d <= 64:
+                    d *= 2
+                    layers += [nn.Conv1d(64, 64, 3, padding=d, dilation=d),
+                               nn.BatchNorm1d(64), nn.GELU()]
+                    rf += 2 * d
+                s.rz = nn.Sequential(*layers)
+                s.rf = rf
                 s.rp = nn.Sequential(nn.Linear(64 * 3, w_r), nn.GELU())
             s.k0 = (L - 1) // 2                      # 슬롯 k=0 (자기 pre-RR)
             s.k1 = min(s.k0 + 1, L - 1)              # 슬롯 k=+1 (자기 post-RR)
