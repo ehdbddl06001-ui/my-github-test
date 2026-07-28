@@ -36,7 +36,7 @@ _DEFAULT_BASE = "/content/drive/MyDrive/mitbih"
 _BASE  = globals().get("_BASE", _DEFAULT_BASE)
 
 # 리듬 시퀀스 모델 실행에 필요한 최소 집합(순서 = 로드 순서)
-CORE = ["svdb_bench.py", "svdb_rhythm.py", "svdb_labels.py"]
+CORE = ["svdb_bench.py", "svdb_rhythm.py", "svdb_labels.py", "ecg_multidb.py"]
 # B1~B4 기준선이 의존하는 체인. 이미 Drive 에 있으면 굳이 안 받아도 된다.
 CHAIN = ["colab_step67_selfref.py", "colab_step68_oppoint.py",
          "colab_step69_ratepoint.py", "colab_step70_evalintegrity.py",
@@ -148,6 +148,9 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
             "patient_breakdown": "svdb_rhythm.py",
             "label_audit":  "svdb_labels.py",
             "build_labeled": "svdb_labels.py",
+            "db_audit":     "ecg_multidb.py",
+            "build_multi":  "ecg_multidb.py",
+            "label_ceiling_probe": "svdb_rhythm.py",
             "save_out":     "svdb_rhythm.py",
             "load_out":     "svdb_rhythm.py"}
     miss = {k: v for k, v in need.items() if k not in g}
@@ -159,7 +162,7 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print(f"    → sync(chain=True) 를 시도하거나 {base} 의 파일을 확인하세요.")
     else:
         print("  ✔ 준비 완료.  다음 순서로 실행하세요:")
-        print("      label_audit()                 # 라벨 재고조사(무엇을 버리고 있나)")
+        print("      db_audit()                    # ★다중 DB 재고조사(어떤 클래스·질환이 가능한가)")
         print("      rr_audit()                    # RR 위생 점검")
         print("      attach_arms()                 # R0/R1/R2 등록")
         print("      OUT = bench_models(n_rep=1)   # 벤치(GPU, 수십 분)")

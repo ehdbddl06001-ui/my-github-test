@@ -295,7 +295,8 @@ P_LO, P_HI = SEGS["P"]          # 하위호환
 
 
 def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
-         segs=(), use_seq=True, w_r=64, w_m=16, w_a=16, w_p=16, p_drop=0.1):
+         segs=(), use_seq=True, w_r=64, w_m=16, w_a=16, w_p=16, p_drop=0.1,
+         n_class=3, n_rhythm=0):
     """리듬 주(主) · 형태 보조(補) 구조.
 
     리듬 가지: dilation 1-2-4 의 3층 TCN. 수용야 17 = 창 전체(K=8)를 정확히 덮는다.
@@ -348,7 +349,14 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
             s.ap = nn.Sequential(nn.Linear(max(daux, 1), w_a), nn.ReLU()) if daux > 0 else None
             d = ((w_r if use_seq else 0) + (w_m if use_morph else 0)
                  + w_p * len(s.segs) + (w_a if daux > 0 else 0))
-            s.cls = nn.Sequential(nn.Linear(d, 64), nn.ReLU(), nn.Dropout(p_drop), nn.Linear(64, 3))
+            s.cls = nn.Sequential(nn.Linear(d, 64), nn.ReLU(), nn.Dropout(p_drop),
+                                  nn.Linear(64, n_class))
+            # ★리듬(질병) 다중태스크 헤드. 비트 분류와 공유 표현을 쓴다 —
+            #   리듬은 비트보다 긴 시간 규모지만 RSN 의 ±8박 창이 이미 그 방향의
+            #   정보를 담고 있어(AF 는 정의상 RR 불규칙) 공유가 자연스럽다.
+            #   n_rhythm=0 이면 헤드를 만들지 않는다(기존 3-class 동작 그대로).
+            s.rhy = (nn.Sequential(nn.Linear(d, 64), nn.ReLU(), nn.Dropout(p_drop),
+                                   nn.Linear(64, n_rhythm)) if n_rhythm > 0 else None)
 
         def _mk(s, bt, rf):
             """형태 입력 구성. use_ref 면 [비트, 환자템플릿, 비트−템플릿] (6채널).
@@ -376,7 +384,8 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
                 parts.append(s.sp[nm](torch.cat([q.mean(-1), q.amax(-1)], -1)))
             if s.ap is not None:
                 parts.append(s.ap(ax))
-            return s.cls(torch.cat(parts, -1))
+            z = torch.cat(parts, -1)
+            return s.cls(z) if s.rhy is None else (s.cls(z), s.rhy(z))
 
     return RSN()
 
@@ -1520,6 +1529,18 @@ def selftest(train=True):
         ok(abs(b2["bias"]) < 1e-9 and abs(b2["pearson"] - 1) < 1e-9,
            "완벽 예측 → 편향 0, Pearson r=1")
         ok(b2["band_agree"] == 1.0, "완벽 예측 → 임상 구간 일치율 100%")
+
+        # 다중클래스 / 리듬 헤드 (다중 DB 확장용)
+        M3 = _rsn(4, S.shape[2], A.shape[1], n_class=3)
+        M5 = _rsn(4, S.shape[2], A.shape[1], n_class=5)
+        MR = _rsn(4, S.shape[2], A.shape[1], n_class=5, n_rhythm=6)
+        args = (torch.from_numpy(S[:4]), torch.from_numpy(beat[:4]), torch.from_numpy(A[:4]))
+        ok(tuple(M3(*args).shape) == (4, 3), "n_class=3 기본 동작 불변(하위호환)")
+        ok(tuple(M5(*args).shape) == (4, 5), "n_class=5 출력")
+        o5, orh = MR(*args)
+        ok(tuple(o5.shape) == (4, 5) and tuple(orh.shape) == (4, 6),
+           "리듬 헤드 동시 출력 (비트 5-class + 리듬 6종)")
+        ok(sum(p.numel() for p in MR.parameters()) < 100000, "다중태스크도 소형 유지")
 
         # 라벨 천장 탐침 (합성: S 는 조기성으로 정의됨 → FN 은 TN 과 덜 겹쳐야 정상)
         prm = S[:, 2, K_CTX]
