@@ -154,6 +154,51 @@ def require(*names):
     return False
 
 
+def code_version(verbose=True):
+    """★메모리에 로드된 코드가 최신인지 확인한다(파일은 안 받는다).
+
+    NameError 가 반복된 진짜 이유: **파일을 내려받아도 이미 메모리에 있는 정의는
+    바뀌지 않는다.** 새 함수는 exec 를 다시 해야 생긴다. 그런데 부트스트랩 셀은
+    노트북 위쪽에 있어 실험 셀만 다시 돌리기 쉽고, 그러면 옛 코드로 몇 십 분짜리
+    작업을 다시 돌린 뒤에야 NameError 를 만난다(실제로 그렇게 됐다).
+    그래서 '지금 뭐가 올라와 있는지'를 한 줄로 볼 수 있게 한다.
+    """
+    g = globals()
+    cur = g.get("CODE_SHA")
+    rem = resolve_sha(verbose=False)
+    if verbose:
+        print(f"  메모리에 로드된 코드: {str(cur)[:10] if cur else '(모름 — sync 를 한 적 없음)'}")
+        print(f"  GitHub 최신        : {str(rem)[:10] if rem else '(조회 실패)'}")
+    if cur and rem and cur != rem:
+        print(f"\n  ⚠ 코드가 최신이 아닙니다. 아래 셀을 다시 실행하세요:")
+        _bootstrap_cell()
+        return False
+    if verbose and cur and rem:
+        print(f"  ✔ 최신입니다.")
+    return bool(cur and rem and cur == rem)
+
+
+def go(*names):
+    """★한 줄로 '최신 코드 확보 + 필요한 함수 존재 확인'.
+
+    실험 셀 **맨 위에 이 한 줄만** 두면 순서를 틀릴 수가 없다:
+        go('build_atrial_feats', 'atrial_audit')
+    없으면 알아서 최신을 받아 로드하고, 그래도 없으면 부트스트랩 셀을 찍는다.
+    """
+    if not code_version(verbose=False):
+        print("  ↻ 코드가 최신이 아니라 동기화합니다…")
+        sync(verbose=False)
+    g = globals()
+    miss = [n for n in names if n not in g]
+    if miss:
+        print(f"  ✗ 아직 없는 함수: {miss}")
+        print(f"  → 아래 셀을 통째로 다시 실행하세요(메모리의 옛 정의는 그래야 바뀝니다):")
+        _bootstrap_cell()
+        raise RuntimeError(f"{miss} 없음 — 위 부트스트랩 셀을 실행하세요.")
+    print(f"  ✔ 최신 코드({str(g.get('CODE_SHA'))[:10]})로 {', '.join(names)} 준비됨")
+    return True
+
+
 def _bootstrap_cell():
     print("  import urllib.request as u, json")
     print(f"  R=\"{REPO}\"; B=\"{BRANCH}\"")
@@ -272,9 +317,11 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
     #   그걸 막지만, self_update 자체가 없던 버전에서 넘어올 때는 한 번은 아래 셀이
     #   필요하다. 매번 보여줘서 "sync() 만 하면 되겠지"로 막히는 일을 없앤다.
     print()
-    print("  ── 무엇이 없다고 나오면 이 셀을 통째로 다시 실행하세요 ──")
+    print(f"  ┏━ 지금 메모리에 올라온 코드 버전: {str(ref)[:10] if ref else '(미상)'}")
+    print(f"  ┗━ ★실험 셀 맨 위에 go(...) 한 줄을 두면 순서를 틀릴 수 없습니다:")
+    print(f"       go('build_atrial_feats', 'atrial_audit')")
+    print("  ── 그래도 없다고 나오면 이 셀을 통째로 다시 실행 ──")
     _bootstrap_cell()
-    print("  ※ NameError 가 의심되면 먼저: require('rr_audit_dbs','bench_afib')")
     return got
 
 
