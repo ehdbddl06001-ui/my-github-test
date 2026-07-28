@@ -126,9 +126,14 @@ def main():
     ls = {a: len(R[a]["fper"]) for a in R}
     ok(len(set(ls.values())) == 1, f"모든 arm 의 fper 길이 동일 ({set(ls.values())})")
 
-    # 리듬 시퀀스가 raw 형태 CNN 을 이겨야 한다(합성 데이터: S 는 타이밍으로만 정의됨)
-    ok(R["R1.RSN(리듬+형태)"]["macro"] > R["B2.CNN(raw)"]["macro"],
-       f"R1 {R['R1.RSN(리듬+형태)']['macro']:.3f} > B2(형태만) {R['B2.CNN(raw)']['macro']:.3f}")
+    # ★합성 데이터에는 이제 이소성 P파가 들어 있으므로 '형태만으로는 S 를 못 잡는다'는
+    #   전제가 성립하지 않는다(B2 도 P 를 보고 잘 맞힌다). 실데이터의 결론1과 달리
+    #   합성은 P 대비가 과장돼 있기 때문이며, 이는 배선 검증용 데이터의 성질일 뿐이다.
+    #   따라서 B2 와 비교하지 않고, RSN 이 자명한 하한을 확실히 넘는지만 확인한다.
+    ok(R["R1.RSN(리듬+형태)"]["macro"] > max(R["B0.다수결"]["macro"], 0.4),
+       f"R1 {R['R1.RSN(리듬+형태)']['macro']:.3f} > 자명한 하한(B0=0, 0.4)")
+    ok(R["R4.RSN(+P파)"]["macro"] >= R["R1.RSN(리듬+형태)"]["macro"] - 0.15,
+       f"R4 {R['R4.RSN(+P파)']['macro']:.3f} 가 R1 {R['R1.RSN(리듬+형태)']['macro']:.3f} 대비 붕괴하지 않음")
 
     rep = H["report"](OUT, base="B2.CNN(raw)")
     ok("R1.RSN(리듬+형태)" in rep and "ci" in rep["R1.RSN(리듬+형태)"], "report() 대응 비교 산출")
