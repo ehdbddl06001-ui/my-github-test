@@ -225,6 +225,7 @@ def label_audit(db="svdb", recs=None, dldir=None, n_rec=None, target=0.99, verbo
         recs = recs[:n_rec]
     sym_counts, rhy_counts = {}, {}
     rhy_records, sym_records = {}, {}
+    nonbeat = {}
     bad = []
     print(f"라벨 재고조사: {db}, {len(recs)}레코드 (.atr 만 읽음)")
     for ri, rec in enumerate(recs):
@@ -239,6 +240,11 @@ def label_audit(db="svdb", recs=None, dldir=None, n_rec=None, target=0.99, verbo
         for s in np.array(sym)[bmask]:
             sym_counts[s] = sym_counts.get(s, 0) + 1
             sym_records.setdefault(s, set()).add(rec)
+        # ★비-비트 주석도 센다. svdb_prep 은 rr=np.diff(ann.sample) 로 '모든 주석'의
+        #   간격을 RR 로 쓰므로, 비트 사이에 낀 비-비트 주석이 가짜 RR 을 만든다.
+        #   rr_audit 이 센 '생리범위 밖 RR' 의 원인을 여기서 확인할 수 있다.
+        for s in np.array(sym)[~bmask]:
+            nonbeat[s] = nonbeat.get(s, 0) + 1
         rp = rhythm_per_beat(samp, sym, aux, samp[bmask])
         for r in rp:
             k = r or "(미상)"
@@ -249,7 +255,17 @@ def label_audit(db="svdb", recs=None, dldir=None, n_rec=None, target=0.99, verbo
     if bad:
         print(f"  ⚠ 읽기 실패 {len(bad)}건: {bad[:5]}")
     out = summarize(sym_counts, rhy_counts, rhy_records, sym_records, target)
-    out.update(sym_counts=sym_counts, rhy_counts=rhy_counts,
+    if nonbeat:
+        nb = sum(nonbeat.values())
+        print(f"\n=== 비-비트 주석 (RR 오염의 원인 후보) ===")
+        print(f"  총 {nb:,}개 — svdb_prep 의 np.diff(ann.sample) 는 이것들의 간격도 RR 로 쓴다")
+        for s2, c in sorted(nonbeat.items(), key=lambda kv: -kv[1])[:12]:
+            print(f"    '{s2}'  {c:,}")
+        print(f"  → 비트 사이에 낀 것만큼 가짜 RR 이 생긴다. rr_audit 의 '생리범위 밖'과 대조할 것.")
+        print(f"     svdb_labels.beat_only_rr() 는 비트 주석만 diff 하므로 이 오염이 없다.")
+    else:
+        print(f"\n  비-비트 주석 없음 → svdb_prep 의 RR 오염 가설은 이 DB 에서 기각.")
+    out.update(nonbeat=nonbeat, sym_counts=sym_counts, rhy_counts=rhy_counts,
                rhy_records={k: sorted(v) for k, v in rhy_records.items()}, failed=bad)
     return out
 

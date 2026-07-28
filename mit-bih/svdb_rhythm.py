@@ -914,6 +914,75 @@ def burden_analysis(OUT, arm, bands=(1.0, 5.0, 10.0), show=True):
     return out
 
 
+def label_ceiling_probe(OUT, arm, show=True):
+    """★오류가 '경계'에 몰려 있는가 — 라벨 천장인지 모델 한계인지 가른다.
+
+    PAPER §8.4 는 정체된 성능의 원인을 셋으로 나눴다: (1) 정보 포화 (2) 라벨 천장
+    (3) 표본 한계. 축 4종·임계 1종이 모두 실패한 지금, 남은 것은 (2)와 (3)이다.
+    (2)는 **측정할 수 있다**: 오분류가 조기성 경계에 집중되는지 보면 된다.
+
+      · FN(놓친 S)의 조기성이 **정상(TN)과 겹치면** → 리듬으로는 원리적으로 못 잡는
+        박이다. 늦은 결합(late-coupled) PAC 이거나 주석이 흔들린 경우다.
+      · FP(헛알람)의 조기성이 **진짜 S(TP)와 겹치면** → 리듬상 PAC 과 구별 불가한데
+        N 으로 라벨된 박이다. 라벨 잡음의 직접 증거가 된다.
+      · 반대로 오류가 경계에서 멀리 흩어져 있으면 → 모델이 아직 못 배운 것이다.
+
+    조기성 지표는 RSN 의 ch2(자기 pre-RR 의 인과적 EWMA 잔차, tanh 유계)를 쓴다.
+    라벨과 무관하게 계산되므로 이 진단이 순환논증이 되지 않는다.
+    """
+    R = OUT["res"].get(arm)
+    if R is None or "pred" not in R or "order" not in OUT:
+        print(f"  ⚠ {arm} 의 pred/order 가 없습니다 — 최신 코드로 재실행하세요."); return {}
+    c = prepare_context(verbose=False)
+    prem = c["seq"][:, 2, K_CTX][np.asarray(OUT["order"])]   # 자기 박의 조기성
+    y = np.asarray(OUT["y"]); v = np.asarray(R["pred"], bool)
+    yp = (y == 1)
+    grp = {"TP": v & yp, "FN": ~v & yp, "FP": v & ~yp, "TN": ~v & ~yp}
+    st = {k: (float(np.median(prem[m])), float(np.percentile(prem[m], 25)),
+              float(np.percentile(prem[m], 75)), int(m.sum()))
+          for k, m in grp.items() if m.any()}
+
+    def _ovl(a, b, bins=60):
+        """두 분포의 겹침 계수(0~1). 1 이면 완전히 같은 분포."""
+        lo, hi = -1.0, 1.0
+        ha, _ = np.histogram(prem[grp[a]], bins=bins, range=(lo, hi), density=True)
+        hb, _ = np.histogram(prem[grp[b]], bins=bins, range=(lo, hi), density=True)
+        w = (hi - lo) / bins
+        return float(np.minimum(ha, hb).sum() * w)
+
+    ov_fn = _ovl("FN", "TN") if "FN" in st and "TN" in st else float("nan")
+    ov_fp = _ovl("FP", "TP") if "FP" in st and "TP" in st else float("nan")
+    ov_ref = _ovl("TP", "TN") if "TP" in st and "TN" in st else float("nan")
+    out = dict(stats=st, ovl_FN_TN=ov_fn, ovl_FP_TP=ov_fp, ovl_TP_TN=ov_ref)
+    if not show:
+        return out
+    print(f"\n  [라벨 천장 탐침] {arm}   조기성 = 인과적 EWMA 잔차(라벨 무관)")
+    print(f"    {'군':<4}{'n':>10}{'중앙':>9}{'Q1':>8}{'Q3':>8}")
+    for k in ("TP", "FN", "FP", "TN"):
+        if k in st:
+            m, q1, q3, n = st[k]
+            print(f"    {k:<4}{n:>10,}{m:>9.3f}{q1:>8.3f}{q3:>8.3f}")
+    print(f"\n    분포 겹침 계수 (1=구별 불가)")
+    print(f"      FN ↔ TN : {ov_fn:.3f}   놓친 S 가 정상과 얼마나 겹치나")
+    print(f"      FP ↔ TP : {ov_fp:.3f}   헛알람이 진짜 S 와 얼마나 겹치나")
+    print(f"      TP ↔ TN : {ov_ref:.3f}   (기준선) 맞힌 S 와 정상의 겹침")
+    print()
+    if np.isfinite(ov_fn) and np.isfinite(ov_ref):
+        if ov_fn > 0.6 and ov_fn > ov_ref + 0.2:
+            print(f"    → FN 이 정상과 크게 겹친다. **리듬으로는 원리적으로 못 잡는 S** 가")
+            print(f"       상당수라는 뜻이다(늦은 결합 PAC 또는 주석 모호성).")
+            print(f"       모델을 더 만들기보다 라벨·다른 모달리티를 봐야 한다.")
+        else:
+            print(f"    → FN 이 정상과 크게 겹치지는 않는다. 조기성은 있는데 못 잡은 것이므로")
+            print(f"       아직 모델 쪽 여지가 남아 있다.")
+    if np.isfinite(ov_fp) and ov_fp > 0.6:
+        print(f"    → FP 가 진짜 S 와 크게 겹친다. 리듬상 구별 불가한데 N 으로 라벨된 박이")
+        print(f"       많다는 뜻 — **라벨 잡음의 직접 증거**다. 이 부분은 모델로 못 이긴다.")
+    print(f"\n    ⚠ 이것은 라벨 천장의 '탐침'이지 증명이 아니다. 확정하려면 두 번째")
+    print(f"       주석자나 다른 DB 의 같은 환자가 필요하다(SVDB 에는 없다).")
+    return out
+
+
 def compare_arms(OUT, a, b, strat="prev", nbin=3, show=True):
     """두 arm 을 **유병률 구간별로** 비교한다 — 평균만 보면 안 보이는 것을 드러낸다.
 
@@ -1451,6 +1520,21 @@ def selftest(train=True):
         ok(abs(b2["bias"]) < 1e-9 and abs(b2["pearson"] - 1) < 1e-9,
            "완벽 예측 → 편향 0, Pearson r=1")
         ok(b2["band_agree"] == 1.0, "완벽 예측 → 임상 구간 일치율 100%")
+
+        # 라벨 천장 탐침 (합성: S 는 조기성으로 정의됨 → FN 은 TN 과 덜 겹쳐야 정상)
+        prm = S[:, 2, K_CTX]
+        vv2 = prm < -0.95                                  # 일부러 엄격 → FN 도 생기게
+        FK = dict(res={"R9": dict(pred=vv2, fper=np.full(6, .7))},
+                  y=y, pid=pid, order=np.arange(len(y)))
+        lc = label_ceiling_probe(FK, "R9", show=False)
+        ok({"TP", "FN", "FP", "TN"} >= set(lc["stats"]), "천장 탐침: 4개 군 통계 산출")
+        ok(len(lc["stats"]) == 4, f"4개 군 모두 비어 있지 않음 {sorted(lc['stats'])}")
+        ok(all(0 <= lc[k] <= 1 for k in ("ovl_FN_TN", "ovl_FP_TP", "ovl_TP_TN")),
+           "겹침 계수 0~1 범위")
+        ok(lc["ovl_TP_TN"] < 0.5,
+           f"합성에서 TP↔TN 겹침이 작음 ({lc['ovl_TP_TN']:.3f}) — 지표가 신호를 봄")
+        ok(label_ceiling_probe({"res": {"X": dict(fper=[1])}, "y": [], "pid": []}, "X") == {},
+           "order 없는 옛 OUT 은 안내 후 안전 종료")
 
         # save_out/load_out 왕복 (런타임 복구용)
         import tempfile
