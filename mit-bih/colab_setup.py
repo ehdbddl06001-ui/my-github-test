@@ -147,7 +147,9 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
             "report":       "svdb_rhythm.py",
             "patient_breakdown": "svdb_rhythm.py",
             "label_audit":  "svdb_labels.py",
-            "build_labeled": "svdb_labels.py"}
+            "build_labeled": "svdb_labels.py",
+            "save_out":     "svdb_rhythm.py",
+            "load_out":     "svdb_rhythm.py"}
     miss = {k: v for k, v in need.items() if k not in g}
     print()
     if miss:

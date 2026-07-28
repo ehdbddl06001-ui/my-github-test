@@ -508,6 +508,43 @@ def report(OUT, base="B4.본연구", mde=0.07, B=5000):
     return out
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+#  결과 영속화 — 런타임이 끊겨도 OUT 을 잃지 않게 (긴 여정용)
+# ─────────────────────────────────────────────────────────────────────────────
+#  Colab 런타임은 몇십 분만 놀아도 끊긴다. 끊기면 메모리의 OUT(수십 분 GPU 학습의
+#  산출물)이 통째로 사라진다. bench_models() 는 다시 돌리면 되지만 시간이 아깝다.
+#  → 끝나면 바로 Drive 에 저장하고, 다음 세션에서 학습 없이 불러와 report/분해만 한다.
+def save_out(OUT, name="rsn_last", base=None):
+    """OUT 을 Drive 에 저장(pickle). 반환: 저장 경로."""
+    import pickle
+    base = base or _BASE
+    sha = globals().get("CODE_SHA")
+    meta = dict(code_sha=sha)                          # 어떤 코드가 낸 결과인지 함께 박는다
+    p = f"{base}/{name}.pkl"
+    with open(p, "wb") as f:
+        pickle.dump({"OUT": OUT, "meta": meta}, f)
+    macros = {a: OUT["res"][a]["macro"] for a in OUT["res"]}
+    print(f"✔ 저장 {p}")
+    print(f"  코드버전 {str(sha)[:10]}  |  arms: " +
+          ", ".join(f"{a.split('.')[0]}={m:.3f}" for a, m in macros.items()))
+    return p
+
+
+def load_out(name="rsn_last", base=None, verbose=True):
+    """Drive 에서 OUT 복원. 학습 없이 report(OUT)/patient_breakdown() 가능."""
+    import pickle
+    base = base or _BASE
+    p = f"{base}/{name}.pkl"
+    with open(p, "rb") as f:
+        d = pickle.load(f)
+    OUT = d["OUT"] if isinstance(d, dict) and "OUT" in d else d
+    if verbose:
+        sha = (d.get("meta") or {}).get("code_sha") if isinstance(d, dict) else None
+        print(f"✔ 복원 {p}  (코드버전 {str(sha)[:10]})")
+        print(f"  → report(OUT) 또는 patient_breakdown(OUT, 'R1.RSN(리듬+형태)') 바로 가능")
+    return OUT
+
+
 def patient_breakdown(OUT, arm, topn=10, targets=(0.50, 0.90, 0.99), show=True):
     """환자별 F1 분해 — '모든 ECG를 정답에' 목표의 실제 병목을 드러낸다.
 
@@ -733,6 +770,17 @@ def selftest(train=True):
         R2 = {"a": dict(fper=np.full(73, 0.55)), "b": dict(fper=np.full(73, 0.52))}
         ok(not paired(R2, "a", "b", B=500, k_bonf=3, show=False)["meets_mde"],
            "paired: Δ=0.03 → MDE 미달")
+
+        # save_out/load_out 왕복 (런타임 복구용)
+        import tempfile
+        td = tempfile.mkdtemp()
+        fake = dict(res={"R1.RSN(리듬+형태)": dict(macro=0.622, ci=(0.56, 0.68),
+                    micro=0.565, prec=0.565, sen=0.566, fper=np.full(73, 0.622))},
+                    y=np.array([1, 0]), pid=np.array([0, 0]))
+        save_out(fake, name="t", base=td)
+        back = load_out(name="t", base=td, verbose=False)
+        ok(abs(back["res"]["R1.RSN(리듬+형태)"]["macro"] - 0.622) < 1e-9,
+           "save_out/load_out 왕복(런타임 끊겨도 OUT 복원)")
     finally:
         set_data(None)
     print("=== 전 항목 통과 ===")
