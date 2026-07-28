@@ -136,7 +136,11 @@ def require(*names):
     긴 실험을 돌리기 직전에 부르면, 30분 학습 뒤에 NameError 로 날리는 일이 없다.
     """
     g = globals()
-    miss = [n for n in names if n not in g]
+    miss = []
+    for n in names:                      # ★함수 이름 / 파일 이름 둘 다 받는다
+        want, _ = _resolve_name(n, g)
+        miss += [x for x in want if x not in g]
+    miss = sorted(set(miss))
     if not miss:
         print(f"  ✔ {', '.join(names)} 준비됨")
         return True
@@ -178,24 +182,55 @@ def code_version(verbose=True):
     return bool(cur and rem and cur == rem)
 
 
+def _resolve_name(n, g):
+    """이름 하나를 '확인해야 할 함수 목록'으로 푼다.
+
+    ★함수 이름과 **파일 이름**을 둘 다 받는다. 이게 없어서 실제로 막혔다:
+      go("afib_bench") 를 안내했는데 afib_bench 는 파일이지 변수가 아니라서
+      globals 에 영원히 안 생기고, sync 가 멀쩡히 끝났는데도 매번
+      "아직 없는 함수: ['afib_bench']" 로 튕겼다. 이름이 파일이면 그 파일의
+      공개 함수가 **전부** 로드됐는지로 판정하는 게 사용자가 의도한 뜻이다.
+
+    반환: (확인할 이름들, 출처설명) — 파일로 해석되면 이름들이 그 파일의 공개 함수.
+    """
+    if n in g:
+        return [n], None
+    base = g.get("_BASE", _BASE)
+    for cand in (n, f"{n}.py"):
+        if cand.endswith(".py") and os.path.exists(f"{base}/{cand}"):
+            d = _defs(f"{base}/{cand}")
+            if d:
+                return d, cand
+    return [n], None
+
+
 def go(*names):
     """★한 줄로 '최신 코드 확보 + 필요한 함수 존재 확인'.
 
     실험 셀 **맨 위에 이 한 줄만** 두면 순서를 틀릴 수가 없다:
-        go('build_atrial_feats', 'atrial_audit')
+        go('build_atrial_feats', 'atrial_audit')     # 함수 이름
+        go('afib_bench')                             # 파일 이름도 됨
     없으면 알아서 최신을 받아 로드하고, 그래도 없으면 부트스트랩 셀을 찍는다.
     """
     if not code_version(verbose=False):
         print("  ↻ 코드가 최신이 아니라 동기화합니다…")
         sync(verbose=False)
     g = globals()
-    miss = [n for n in names if n not in g]
+    miss, srcs = [], []
+    for n in names:
+        want, src = _resolve_name(n, g)
+        gone = [x for x in want if x not in g]
+        miss += gone
+        if src and not gone:
+            srcs.append(f"{n}({len(want)}개 함수)")
+        elif not gone:
+            srcs.append(n)
     if miss:
-        print(f"  ✗ 아직 없는 함수: {miss}")
+        print(f"  ✗ 아직 없는 함수: {sorted(set(miss))[:8]}")
         print(f"  → 아래 셀을 통째로 다시 실행하세요(메모리의 옛 정의는 그래야 바뀝니다):")
         _bootstrap_cell()
-        raise RuntimeError(f"{miss} 없음 — 위 부트스트랩 셀을 실행하세요.")
-    print(f"  ✔ 최신 코드({str(g.get('CODE_SHA'))[:10]})로 {', '.join(names)} 준비됨")
+        raise RuntimeError(f"{sorted(set(miss))[:8]} 없음 — 위 부트스트랩 셀을 실행하세요.")
+    print(f"  ✔ 최신 코드({str(g.get('CODE_SHA'))[:10]})로 {', '.join(srcs)} 준비됨")
     return True
 
 
