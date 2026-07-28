@@ -54,9 +54,14 @@ DB_SPEC = {
 #  그 조건을 만족하는 DB 가 훨씬 많다. 두 층의 가용 DB 집합이 다르다는 것이
 #  "하나의 다중클래스 softmax" 가 아니라 **층으로 나눠야 하는 실질적 이유**다.
 #
-#  ★.dat 를 안 받는 것이 핵심 실용 이득: afdb 23레코드 × 10시간 신호 = ~15GB /
-#    ltafdb 84레코드 × 24시간 = 그 이상. 주석(.atr/.qrs)만 받으면 전부 수십 MB다.
-#    대신 형태(morphology) 축은 이 코퍼스에서 못 쓴다 → 2층-B 는 mitdb 계열로만.
+#  ★.dat 를 안 받는 것이 핵심 실용 이득. 신호 용량(WFDB format 212 = 1.5 B/표본):
+#      afdb   250Hz×2리드×10h  = 27 MB/레코드 × 23 ≈ 620 MB
+#      ltafdb 128Hz×2리드×24h  = 33 MB/레코드 × 84 ≈ 2.8 GB
+#      mitdb  360Hz×2리드×30m  =  2 MB/레코드 × 48 ≈  95 MB
+#    주석(.atr/.qrs)만 받으면 전부 합쳐 수십 MB다.
+#    (초안에 'afdb ~15GB' 라고 적었던 것은 과대 추정이었다 — 실제는 ~620MB.)
+#    형태 축이 필요하면 §5 build_atrial_feats 가 레코드 하나씩 받아 특징만 남기고
+#    신호를 버린다 → 최종 파일 1MB 미만.
 #
 #  ★afdb 주의: 비트 주석(.qrs)은 **자동검출·미감사**다. R위치로는 쓸 수 있지만
 #    AAMI 비트 클래스로는 절대 쓰면 안 된다 → y5 = -1(미상)로 박아 둔다.
@@ -530,6 +535,7 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
     AAMI5 = _need("AAMI5"); beat_only_rr = _need("beat_only_rr")
     T = []; PRE = []; POST = []; EDGE = []; PID = []; DB = []; RHY = []; Y5 = []
     rnames = {}
+    p2rec = {}      # pid → "db:rec". ★2층-B(심방활동)가 신호를 다시 찾으려면 필수
     for db in dbs:
         spec = RRDB_SPEC.get(db)
         if spec is None:
@@ -555,6 +561,7 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
             t360, rp, bsym = got
             pre, post, edge = beat_only_rr(t360)          # 이미 360Hz 환산됨
             gpid = off + rec2pid[rec]
+            p2rec[gpid] = f"{db}:{rec}"
             for i in range(len(t360)):
                 nm = rp[i]
                 if nm not in rnames:
@@ -575,7 +582,9 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
              post_rr=np.array(POST, "float32"), rr_edge=np.array(EDGE, bool),
              pid=np.array(PID, np.int64), db=np.array(DB),
              rhythm=np.array(RHY, np.int64), rhythm_names=np.array(inv),
-             y5=np.array(Y5, np.int64))
+             y5=np.array(Y5, np.int64),
+             pid_uniq=np.array(sorted(p2rec), np.int64),
+             pid_rec=np.array([p2rec[k] for k in sorted(p2rec)]))
     mb = os.path.getsize(out) / 1e6
     print(f"\n✔ 저장 {out}  ({mb:.1f} MB)  비트 {len(T):,}  환자 {len(set(PID))}")
     R = np.array(RHY)
@@ -590,7 +599,242 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-#  5. 자기검증
+#  5. 2층-B: 심방활동(atrial activity) 축 — RR 이 못 보는 유일한 물리 신호
+#
+#  ── 왜 이 축인가 (생리로 정해진다, 취향이 아니다) ──────────────────────────
+#    리듬      심방 활동                          RR
+#    N        뚜렷한 P파, QRS 앞 1:1, 형태 일정    규칙적
+#    AFIB     f파 — 무질서, 350~600/분             ★불규칙
+#    AFL      F파 — 톱니, 240~340/분, ★규칙적 반복  ★규칙적(2:1·3:1 전도)
+#
+#  → N vs AFIB 는 RR 만으로 갈린다(실측 F1 0.92, 이미 포화).
+#  → **AFL 은 RR 이 N 과 거의 같아 구조적으로 못 갈린다**(실측: RSN 이 A1 보다 낮음).
+#    AFL 을 가르는 유일한 신호가 심방 활동이고, 그건 파형에만 있다.
+#
+#  ── 어떻게 뽑나: QRST 소거 → 잔차 스펙트럼 (Bollmann/Stridh 계열 표준) ─────
+#    1) 레코드별 평균 QRST 템플릿을 만들어 박마다 빼면 남는 것이 심방 활동이다
+#       (심실 성분이 심방 성분보다 10~50배 커서 빼기 전에는 안 보인다)
+#    2) 3~12 Hz 대역통과 — 기저동요와 잔여 T파를 제거
+#    3) 창(=128박, 약 100초)마다 Welch PSD → 주파수 분해능 ~0.01 Hz
+#       ★박 하나(TQ 0.45초)로 스펙트럼을 보면 분해능이 2.2 Hz 라 AFL(4~5.7Hz)과
+#         AFIB(5.8~10Hz)이 안 갈린다. 반드시 창 단위여야 한다.
+#
+#  ── 저장 전략: 신호를 저장하지 않는다 ──────────────────────────────────────
+#    레코드 하나씩 받아 → 특징 계산 → 신호 버림. 결과는 창당 스칼라 8개뿐이라
+#    최종 파일이 1 MB 미만이다. (afdb 원신호는 ~620MB 로 Drive 에 두기엔 아깝고,
+#    ltafdb 는 ~2.8GB 라 애초에 부담이다.)
+#
+#  ★창 정의가 afib_bench.make_windows 와 **정확히 같아야** 한다 → 같은 win_starts()
+#    를 쓴다. 어긋나면 에러 없이 '다른 창의 특징'이 붙는다.
+# ─────────────────────────────────────────────────────────────────────────────
+ATR_NAMES = ["daf", "sc", "sent", "afl_ratio", "aa_rms", "p_consist", "aa_snr", "lead"]
+
+
+def _atrial_residual(sig, rpk, fs):
+    """QRST 소거 → 심방 잔차. sig[n] 1리드, rpk = R 표본위치.
+
+    평균이 아니라 **중앙값** 템플릿을 쓴다: 이소성 박·잡음 구간이 섞여도 템플릿이
+    끌려가지 않는다(평균은 한 번의 큰 잡음에 무너진다).
+    """
+    a = int(0.25 * fs); b = int(0.45 * fs)          # R 전 250ms ~ 후 450ms = QRST
+    ok = rpk[(rpk >= a) & (rpk + b < len(sig))]
+    if len(ok) < 8:
+        return None
+    seg = np.stack([sig[r - a:r + b] for r in ok])
+    seg = seg - np.median(seg[:, :int(0.05 * fs)], axis=1, keepdims=True)  # 등전위 정렬
+    tpl = np.median(seg, axis=0)
+    res = sig.astype("float32").copy()
+    for r in ok:                                     # 박마다 템플릿 감산
+        res[r - a:r + b] -= tpl
+    return res
+
+
+def _bandpass(x, fs, lo=3.0, hi=12.0):
+    from scipy.signal import butter, filtfilt
+    ny = 0.5 * fs
+    hi = min(hi, ny * 0.95)
+    if lo >= hi:
+        return x
+    b, a = butter(3, [lo / ny, hi / ny], btype="band")
+    return filtfilt(b, a, x)
+
+
+def _atrial_win_feats(res, i0, i1, fs):
+    """한 창의 잔차 → 특징 8종. 실패하면 None."""
+    from scipy.signal import welch
+    x = res[i0:i1]
+    if len(x) < int(4 * fs):                         # 4초 미만이면 스펙트럼이 무의미
+        return None
+    nper = min(len(x), int(8 * fs))
+    f, P = welch(x, fs=fs, nperseg=nper, noverlap=nper // 2)
+    band = (f >= 3.0) & (f <= 12.0)
+    if band.sum() < 8 or P[band].sum() <= 0:
+        return None
+    fb, Pb = f[band], P[band]
+    k = int(np.argmax(Pb))
+    daf = float(fb[k])                                # 지배 심방 주파수
+    near = np.abs(fb - daf) <= 0.5
+    sc = float(Pb[near].sum() / Pb.sum())             # 스펙트럼 집중도 ★AFL↑ AFIB↓
+    p = Pb / Pb.sum()
+    sent = float(-(p[p > 0] * np.log(p[p > 0])).sum() / np.log(len(p)))
+    afl = (fb >= 3.5) & (fb <= 5.5)                   # 조동 대역
+    fib = (fb > 5.5) & (fb <= 9.0)                    # 세동 대역
+    ratio = float(Pb[afl].sum() / (Pb[fib].sum() + 1e-12))
+    rms = float(np.sqrt(np.mean(x ** 2)))
+    # 대역 밖(12~20Hz)을 잡음 바닥으로 보고 잰 SNR — 잔차가 심방인지 잡음인지 가른다
+    nb = (f > 12.0) & (f <= min(20.0, 0.45 * fs))
+    snr = float(Pb.mean() / (P[nb].mean() + 1e-12)) if nb.sum() > 3 else float("nan")
+    return [daf, sc, sent, ratio, rms, float("nan"), snr, 0.0]
+
+
+def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
+                       stride=None, dldir=None, verbose=True):
+    """창별 심방활동 특징 → afib_atrial.npz (창당 8개 스칼라, 1MB 미만).
+
+    ★corpus 의 pid_rec 매핑이 필요하다. 없으면(옛 코퍼스) 어느 pid 가 어느 레코드인지
+      알 수 없어 신호를 못 붙인다 → build_rr_corpus 를 다시 돌려야 한다(주석은 캐시돼
+      있으므로 몇 분이면 끝난다).
+    ★신호(.dat)는 /content 에 받고 레코드마다 버린다 — Drive 를 쓰지 않는다.
+    """
+    _ensure = _need("_ensure"); _ensure("wfdb"); _ensure("scipy")
+    import wfdb
+    g = globals()
+    if "win_starts" not in g:
+        raise RuntimeError("win_starts 없음 — afib_bench.py 를 먼저 로드하세요.")
+    win_starts = g["win_starts"]
+    stride = int(stride or W)
+    d = np.load(corpus or f"{_BASE}/afib_rr.npz", allow_pickle=True)
+    if "pid_rec" not in d.files:
+        raise RuntimeError(
+            "코퍼스에 pid_rec 매핑이 없습니다(옛 버전). build_rr_corpus() 를 다시 "
+            "돌리세요 — 주석이 캐시돼 있어 몇 분이면 끝나고, 이참에 ltafdb·nsrdb 도 "
+            "함께 넣으면 됩니다.")
+    pid, t = d["pid"], d["t"]
+    pid_uniq = d["pid_uniq"]; pid_rec = [str(x) for x in d["pid_rec"]]
+    p2r = dict(zip([int(x) for x in pid_uniq], pid_rec))
+
+    KEY = []; F = []
+    n_ok = n_bad = 0
+    for p in np.unique(pid):
+        tag = p2r.get(int(p))
+        if tag is None:
+            continue
+        db, rec = tag.split(":", 1)
+        if db not in dbs:
+            continue
+        idx = np.flatnonzero(pid == p)
+        starts = win_starts(len(idx), W, stride)
+        if not starts:
+            continue
+        dd = _cache_dir(db, ann_only=False, dldir=dldir)
+        os.makedirs(dd, exist_ok=True)
+        try:
+            for ext in ("hea", "dat"):
+                fp = f"{dd}/{rec}.{ext}"
+                if os.path.exists(fp) and os.path.getsize(fp) > 0:
+                    continue
+                wfdb.dl_files(db, dd, [f"{rec}.{ext}"])
+            r = wfdb.rdrecord(f"{dd}/{rec}")
+        except Exception as e:
+            print(f"  ✗ {db}/{rec}: 신호 로드 실패 {type(e).__name__}"); n_bad += 1; continue
+        fs = float(r.fs)
+        sig = np.asarray(r.p_signal, "float32")
+        nlead = min(2, sig.shape[1])
+        rpk = np.round(np.asarray(t[idx], np.float64) * fs).astype(int)
+        rpk = np.clip(rpk, 0, len(sig) - 1)
+        # 리드별로 잔차를 만들고, 창마다 **스펙트럼 집중도가 높은 리드**를 채택한다
+        res = []
+        for c in range(nlead):
+            rr_ = _atrial_residual(sig[:, c], rpk, fs)
+            res.append(_bandpass(rr_, fs) if rr_ is not None else None)
+        if all(v is None for v in res):
+            n_bad += 1; continue
+        for s in starts:
+            i0, i1 = rpk[s], rpk[min(s + W - 1, len(rpk) - 1)]
+            best = None
+            for c, rv in enumerate(res):
+                if rv is None:
+                    continue
+                f_ = _atrial_win_feats(rv, i0, i1, fs)
+                if f_ is None:
+                    continue
+                f_[7] = float(c)
+                if best is None or f_[1] > best[1]:      # sc 가 큰 리드 채택
+                    best = f_
+            KEY.append((int(p), int(s)))
+            F.append(best if best is not None else [float("nan")] * 8)
+        n_ok += 1
+        del sig, res
+        if verbose:
+            print(f"    {db}/{rec}: 창 {len(starts)}  (누적 {len(F):,})")
+    if not F:
+        raise RuntimeError("특징이 하나도 안 만들어졌습니다 — dbs 가 코퍼스에 있는지 확인.")
+    out = out or f"{_BASE}/afib_atrial.npz"
+    np.savez(out, key=np.array(KEY, np.int64), feat=np.array(F, "float32"),
+             names=np.array(ATR_NAMES), W=int(W), stride=int(stride))
+    A = np.array(F, "float32")
+    print(f"\n✔ 저장 {out}  ({os.path.getsize(out)/1e6:.2f} MB)  "
+          f"창 {len(F):,}  레코드 {n_ok} 성공 / {n_bad} 실패")
+    bad = int(np.isnan(A[:, 0]).sum())
+    print(f"  추출 실패 창 {bad:,} ({100*bad/len(A):.1f}%) → NaN 으로 남김(0 으로 위장 안 함)")
+    print(f"  ★신호는 저장하지 않았다 — 레코드마다 계산 후 버렸다")
+    return out
+
+
+def atrial_audit(atrial=None, corpus=None, W=128, stride=None, verbose=True):
+    """★모델 이전의 기전 검증(사전등록 H-P).
+
+    "AFL 은 스펙트럼 집중도(sc)가 AFIB 보다 높다" 가 특징 자체에서 보이는지 본다.
+    안 보이면 **추출이 잘못된 것**이지 모델 문제가 아니다. 모델을 붙이기 전에
+    이걸 확인해야 실패했을 때 어디를 고칠지 알 수 있다.
+    """
+    g = globals()
+    win_starts = g["win_starts"]
+    stride = int(stride or W)
+    a = np.load(atrial or f"{_BASE}/afib_atrial.npz", allow_pickle=True)
+    d = np.load(corpus or f"{_BASE}/afib_rr.npz", allow_pickle=True)
+    names = [str(x) for x in a["names"]]
+    K = {(int(p), int(s)): i for i, (p, s) in enumerate(a["key"])}
+    rn = [str(x) for x in d["rhythm_names"]]
+    pid, rhy = d["pid"], d["rhythm"]
+    lab, feat = [], []
+    for p in np.unique(pid):
+        idx = np.flatnonzero(pid == p)
+        for s in win_starts(len(idx), W, stride):
+            j = K.get((int(p), int(s)))
+            if j is None:
+                continue
+            w = rhy[idx][s:s + W]
+            u, c = np.unique(w, return_counts=True)
+            k = int(np.argmax(c))
+            if c[k] / W < 0.90:
+                continue
+            lab.append(rn[u[k]]); feat.append(a["feat"][j])
+    lab = np.array(lab); feat = np.array(feat)
+    print(f"\n=== 심방활동 특징 감사 (창 {len(lab):,}) ===")
+    print(f"  {'리듬':<8}{'창':>7}" + "".join(f"{n:>10}" for n in names[:5]))
+    for nm in ("N", "AFIB", "AFL"):
+        m = lab == nm
+        if m.sum() < 5:
+            print(f"  {nm:<8}{int(m.sum()):>7}   (표본 부족)"); continue
+        v = np.nanmedian(feat[m], axis=0)
+        print(f"  {nm:<8}{int(m.sum()):>7}" + "".join(f"{v[i]:>10.3f}" for i in range(5)))
+    ok_afl = (lab == "AFL").sum() >= 5 and (lab == "AFIB").sum() >= 5
+    if ok_afl:
+        sc_fl = float(np.nanmedian(feat[lab == "AFL", 1]))
+        sc_fb = float(np.nanmedian(feat[lab == "AFIB", 1]))
+        df_fl = float(np.nanmedian(feat[lab == "AFL", 0]))
+        df_fb = float(np.nanmedian(feat[lab == "AFIB", 0]))
+        print(f"\n  [H-P] 집중도 sc:  AFL {sc_fl:.3f} vs AFIB {sc_fb:.3f}  "
+              f"→ {'★기전 확인' if sc_fl > sc_fb else '✗ 예상과 반대 — 추출을 점검할 것'}")
+        print(f"       지배주파수 daf: AFL {df_fl:.2f} Hz vs AFIB {df_fb:.2f} Hz  "
+              f"(문헌: AFL 4~5.7, AFIB 5.8~10)")
+        print(f"  ※ 이 표가 문헌과 어긋나면 모델을 붙이기 전에 QRST 소거를 먼저 고친다.")
+    return lab, feat, names
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  6. 자기검증
 # ─────────────────────────────────────────────────────────────────────────────
 def selftest():
     ok = lambda c, m: (_ for _ in ()).throw(AssertionError(m)) if not c else print(f"  ✔ {m}")

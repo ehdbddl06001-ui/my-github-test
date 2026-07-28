@@ -142,6 +142,16 @@ def _win_aux(rr, valid, med_rec):
                      (q3 - q1) / med_w, float(valid.mean())], "float32")
 
 
+def win_starts(n, W, stride):
+    """레코드 길이 n 에서 창 시작 인덱스들.
+
+    ★make_windows 와 build_atrial_feats 가 **반드시 이 함수를 함께** 써야 두 결과의
+      창이 1:1 로 대응한다. 각자 range() 를 따로 적으면 어긋나도 아무 에러가 안 나고
+      **다른 창의 특징이 붙는다** — 찾기 가장 어려운 종류의 버그다.
+    """
+    return list(range(0, n - W + 1, stride)) if n >= W else []
+
+
 def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
                  verbose=True):
     """비트 코퍼스 → 창 데이터셋.
@@ -157,6 +167,7 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
     pid, rhy = d["pid"], d["rhythm"]
     pre, dbv = d["pre_rr"], d["db"]
     SEQ = []; AUX = []; Y = []; PID = []; DB = []; DUR = []; NOV = []; T0 = []; PUR = []
+    KEY = []                                   # (pid, 창 시작 비트인덱스) — 심방특징 결합키
     n_trans = 0
     for p in np.unique(pid):
         idx = np.flatnonzero(pid == p)              # 레코드 내 시간순(저장 순서)
@@ -167,7 +178,7 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
         lab = np.array([want.get(names[r], -1) for r in rhy[idx]])
         tt = np.concatenate([[0.0], np.cumsum(rr[1:])])
         db0 = str(dbv[idx[0]])
-        for s in range(0, len(idx) - W + 1, stride):
+        for s in win_starts(len(idx), W, stride):
             sl = slice(s, s + W)
             l = lab[sl]
             u, c = np.unique(l, return_counts=True)
@@ -178,13 +189,14 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
             SEQ.append(C[:, sl]); AUX.append(_win_aux(rr[sl], valid[sl], med))
             Y.append(y); PID.append(int(p)); DB.append(db0)
             DUR.append(float(rr[sl].sum())); T0.append(float(tt[s]))
-            NOV.append(s % W == 0); PUR.append(float(pu))
+            NOV.append(s % W == 0); PUR.append(float(pu)); KEY.append((int(p), int(s)))
     if not SEQ:
         raise RuntimeError(f"창이 하나도 안 만들어졌습니다 — W={W} 가 레코드 길이보다 큰지 확인.")
     w = dict(seq=np.stack(SEQ), aux=np.stack(AUX), y=np.array(Y, np.int64),
              pid=np.array(PID, np.int64), db=np.array(DB),
              dur=np.array(DUR, "float32"), nov=np.array(NOV, bool),
              t0=np.array(T0, "float32"), pur=np.array(PUR, "float32"),
+             key=np.array(KEY, np.int64), W=int(W), stride=int(stride),
              classes=list(classes))
     if verbose:
         keep = w["y"] >= 0
@@ -575,12 +587,70 @@ def _arm_rsn_nodisp(w, tr, te, ncls, seed, epochs=20):
     return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=False, epochs=epochs)
 
 
+def attach_atrial(w, path=None, verbose=True):
+    """창별 심방활동 특징 8종을 w["aux"] 에 이어 붙인다(10 → 18).
+
+    ★결합은 (pid, 창 시작 비트인덱스) 키로 한다. 순서가 같을 것이라고 **가정하지
+      않는다** — 가정하면 어긋나도 에러가 안 나고 다른 창의 특징이 붙는다.
+    ★추출 실패 창은 NaN 이다. 신경망에 NaN 을 넣으면 손실이 통째로 NaN 이 되므로
+      그 열의 중앙값으로 채우고, '채웠음' 표시 열을 하나 더 붙인다(정보를 숨기지
+      않으면서 학습은 가능하게).
+    """
+    a = np.load(path or f"{_BASE}/afib_atrial.npz", allow_pickle=True)
+    if int(a["W"]) != int(w["W"]) or int(a["stride"]) != int(w["stride"]):
+        raise RuntimeError(
+            f"창 설정 불일치: 특징 W={int(a['W'])}/stride={int(a['stride'])} vs "
+            f"창 W={w['W']}/stride={w['stride']} — 같은 값으로 다시 만드세요.")
+    names = [str(x) for x in a["names"]]
+    K = {(int(p), int(s)): i for i, (p, s) in enumerate(a["key"])}
+    F = a["feat"]
+    M = np.full((len(w["y"]), F.shape[1]), np.nan, "float32")
+    hit = 0
+    for r, (p, s) in enumerate(w["key"]):
+        j = K.get((int(p), int(s)))
+        if j is not None:
+            M[r] = F[j]; hit += 1
+    miss = np.isnan(M[:, 0])
+    med = np.nanmedian(M, axis=0)
+    med = np.where(np.isfinite(med), med, 0.0)
+    M = np.where(np.isnan(M), med, M).astype("float32")
+    w = dict(w)
+    w["aux"] = np.concatenate([w["aux"], M, miss.astype("float32")[:, None]], 1)
+    w["aux_names"] = (["rr%d" % i for i in range(10)] + names + ["atr_missing"])
+    if verbose:
+        print(f"\n[심방활동 결합] 창 {len(w['y']):,} 중 {hit:,} 결합 "
+              f"({100*hit/len(w['y']):.1f}%)  보조특징 10 → {w['aux'].shape[1]}")
+        print(f"  추출 실패·미결합 {int(miss.sum()):,} → 열 중앙값으로 대체 + 표시열 추가")
+        if hit == 0:
+            print(f"  ✗ 하나도 결합되지 않았습니다 — 코퍼스와 특징의 W/stride 또는 "
+                  f"pid 규약이 다릅니다.")
+    return w
+
+
+def _arm_rsn_atrial(w, tr, te, ncls, seed, epochs=20):
+    """A4. RSN + 심방활동. ★AFL 의 유일한 물리 신호(F파)를 넣은 팔."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, epochs=epochs)
+
+
+def _arm_atrial_only(w, tr, te, ncls, seed, epochs=20):
+    """A4c. 심방활동 스칼라만(시퀀스 제거) — AFL 의 이득이 정말 심방축에서
+       오는지 가르는 대조군. A4 만 보면 RSN 덕인지 심방 덕인지 알 수 없다."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=False, use_aux=True, epochs=epochs)
+
+
 def _arm_rsn_dom(w, tr, te, ncls, seed, epochs=20):
     """A3. RSN + DB 조건부 FiLM. ★같은 DB 안에서만 오르면 사전확률 암기다 →
        판정은 반드시 bench_afib(split="db") 로 한다."""
     return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True,
                     n_domain=len(set(map(str, w["db"]))), epochs=epochs)
 
+
+# ★A4 계열은 attach_atrial() 을 거친 w 에서만 의미가 있다. 기본 팔에 넣으면
+#   심방특징 없이 조용히 돌아 "심방축은 효과 없음" 이라는 가짜 결론을 만든다.
+ATRIAL_ARMS = {
+    "A4.RSN+심방활동": _arm_rsn_atrial,
+    "A4c.심방활동만": _arm_atrial_only,
+}
 
 DEFAULT_ARMS = {
     "A0.자명": _arm_trivial,
@@ -629,7 +699,14 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
     y, pid, dbv = w["y"], w["pid"], np.array(list(map(str, w["db"])))
     keep = np.flatnonzero(y >= 0)                 # 전이구간 제외
     cls = w["classes"]; ncls = len(cls)
-    arms = dict(DEFAULT_ARMS); arms.update(ARMS)
+    arms = dict(DEFAULT_ARMS)
+    # 심방특징이 실제로 붙어 있을 때만 A4 계열을 켠다(가짜 음성 결론 방지)
+    if w["aux"].shape[1] > 10:
+        arms.update(ATRIAL_ARMS)
+    elif any(a.startswith("A4") for a in (only or ())):
+        raise RuntimeError("A4 계열은 심방특징이 필요합니다 — "
+                           "w = attach_atrial(w) 를 먼저 하세요.")
+    arms.update(ARMS)
     if only:
         arms = {a: f for a, f in arms.items() if a in set(only)}
     OUT = {"classes": cls, "res": {}, "split": split}
