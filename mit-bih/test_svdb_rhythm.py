@@ -112,13 +112,14 @@ def main():
 
     # svdb_rhythm 을 하니스와 '같은 globals'에 얹는다 (Colab exec 순서와 동일)
     exec(open(f"{HERE}/svdb_rhythm.py").read(), H)
-    n = H["attach_arms"](n_seed=1, epochs=3)
-    ok(n == 3 and len(H["EXTRA_ARMS"]) == 3, f"arm {n}개 등록 (EXTRA_ARMS={list(H['EXTRA_ARMS'])})")
+    n = H["attach_arms"](which=("R0","R1","R2","R3","R4"), n_seed=1, epochs=3)
+    ok(n == 5 and len(H["EXTRA_ARMS"]) == 5, f"arm {n}개 등록 (EXTRA_ARMS={list(H['EXTRA_ARMS'])})")
 
     OUT = H["bench_models"](n_rep=1, k=3, use_ae=True)
     R = OUT["res"]
     ok(not OUT["dead"], f"실패한 arm 없음 (dead={OUT['dead']})")
-    for a in ("R0.RSN(리듬만)", "R1.RSN(리듬+형태)", "R2.RSN(+Poincaré)"):
+    for a in ("R0.RSN(리듬만)", "R1.RSN(리듬+형태)", "R2.RSN(+Poincaré)",
+              "R3.RSN(+환자템플릿)", "R4.RSN(+P파)"):
         ok(a in R, f"{a} 결과 존재 (매크로F1={R[a]['macro']:.3f})")
 
     # 대응 비교의 전제: 모든 arm 의 환자별 F1 벡터가 같은 길이·같은 환자 순서
