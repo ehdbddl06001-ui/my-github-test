@@ -627,7 +627,13 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
 #  ★창 정의가 afib_bench.make_windows 와 **정확히 같아야** 한다 → 같은 win_starts()
 #    를 쓴다. 어긋나면 에러 없이 '다른 창의 특징'이 붙는다.
 # ─────────────────────────────────────────────────────────────────────────────
-ATR_NAMES = ["daf", "sc", "sent", "afl_ratio", "aa_rms", "p_consist", "aa_snr", "lead"]
+#  심방활동(잔차 스펙트럼) 8종 — AFIB/AFL 의 f·F 파 전용
+SPEC_NAMES = ["daf", "sc", "sent", "afl_ratio", "aa_rel", "av_ratio", "av_int",
+              "aa_snr", "daf_vh"]
+#  P-QRS-T '관계' 11종 — ★원신호에서 잰다(아래 주석의 이유)
+PQ_NAMES = ["p_amp", "p_cons", "pr_med", "pr_cv", "t_amp", "rt_med", "rt_cv",
+            "tp_rms", "pt_ratio", "pqt_ok", "lead"]
+ATR_NAMES = SPEC_NAMES + PQ_NAMES
 
 
 def _atrial_residual(sig, rpk, fs):
@@ -659,8 +665,18 @@ def _bandpass(x, fs, lo=3.0, hi=12.0):
     return filtfilt(b, a, x)
 
 
-def _atrial_win_feats(res, i0, i1, fs):
-    """한 창의 잔차 → 특징 8종. 실패하면 None."""
+def _spec_win_feats(res, i0, i1, fs, med_rr, qrs_amp):
+    """한 창의 **잔차** → 심방활동 스펙트럼 특징 8종. 실패하면 None.
+
+    ★av_ratio 착안(사용자 제안 '1:1:1 비율'의 스펙트럼판):
+        av_ratio = 심방 주파수(Hz) × 심실 RR(초) = 심실 1박당 심방 편위 수
+      정상 1, AFL 2:1 → 2, 3:1 → 3 처럼 **정수**에 붙는다. AFIB 는 심방이
+      무질서해 정수에 안 붙는다 → av_int(가장 가까운 정수까지의 거리)가 커진다.
+    ★단 정상동조율에서는 av_ratio 를 믿으면 안 된다(아래 _pqrst_win_feats 주석 참조:
+      P 가 템플릿과 함께 지워진다). 그래서 aa_rel(잔차/QRS 진폭)을 같이 준다 —
+      aa_rel 이 낮으면 '뚜렷한 비-R고정 심방활동이 없음'이고, 모델이 그 조건부를
+      스스로 배울 수 있다. 사람이 임계를 정해 주지 않는다.
+    """
     from scipy.signal import welch
     x = res[i0:i1]
     if len(x) < int(4 * fs):                         # 4초 미만이면 스펙트럼이 무의미
@@ -677,19 +693,132 @@ def _atrial_win_feats(res, i0, i1, fs):
     sc = float(Pb[near].sum() / Pb.sum())             # 스펙트럼 집중도 ★AFL↑ AFIB↓
     p = Pb / Pb.sum()
     sent = float(-(p[p > 0] * np.log(p[p > 0])).sum() / np.log(len(p)))
-    afl = (fb >= 3.5) & (fb <= 5.5)                   # 조동 대역
-    fib = (fb > 5.5) & (fb <= 9.0)                    # 세동 대역
+    afl = (fb >= 3.5) & (fb <= 5.5)                   # 조동 대역(240~330/분)
+    fib = (fb > 5.5) & (fb <= 9.0)                    # 세동 대역(330~540/분)
     ratio = float(Pb[afl].sum() / (Pb[fib].sum() + 1e-12))
-    rms = float(np.sqrt(np.mean(x ** 2)))
-    # 대역 밖(12~20Hz)을 잡음 바닥으로 보고 잰 SNR — 잔차가 심방인지 잡음인지 가른다
-    nb = (f > 12.0) & (f <= min(20.0, 0.45 * fs))
+    rel = float(np.sqrt(np.mean(x ** 2)) / (qrs_amp + 1e-9))
+    av = float(daf * med_rr)                          # 심실 1박당 심방 편위 수
+    avi = float(abs(av - round(av)))                  # 정수와의 거리 ★AFL↓ AFIB↑
+    nb = (f > 12.0) & (f <= min(20.0, 0.45 * fs))     # 12~20Hz 를 잡음 바닥으로
     snr = float(Pb.mean() / (P[nb].mean() + 1e-12)) if nb.sum() > 3 else float("nan")
-    return [daf, sc, sent, ratio, rms, float("nan"), snr, 0.0]
+    # ★daf 가 진짜 심방 주파수인지 '심실 박동의 고조파'인지 구분하는 진단값.
+    #   전도비가 고정이면 심방 주파수 = 심실 주파수의 정수배라 둘이 겹친다. 그때
+    #   daf 를 심방 활동의 증거로 읽으면 안 된다 → 모델에 그 조건을 알려 준다.
+    vh = 1.0 / max(med_rr, 1e-6)
+    dvh = float(abs(daf - round(daf / vh) * vh))
+    return [daf, sc, sent, ratio, rel, av, avi, snr, dvh]
+
+
+def _pqrst_win_feats(x, rpk, s, e, fs):
+    """한 창의 **원신호** → P-QRS-T '관계' 특징 11종.
+
+    ★★왜 잔차가 아니라 원신호인가 — 이 절의 존재 이유
+      QRST 템플릿 감산은 **R 에 시간고정된 성분을 전부 지운다**. 정상동조율에서는
+      PR 간격이 일정해 P 도 R 에 고정돼 있으므로 **P 가 템플릿과 함께 지워진다**.
+      그래서 잔차로는 "정상에는 P 가 1:1로 있다"를 절대 못 잰다 — 잔차에서 정상은
+      '아무것도 없음'으로 보인다. 잔차는 AFIB/AFL 의 f·F 파(비-R고정) 전용이고,
+      **P·T 계측은 반드시 원신호에서** 해야 한다.
+
+    ★무엇을 재는가 (임상 판독의 순서 그대로)
+      1:1:1 비율 : 박마다 P 가 하나씩 있는가 → p_amp, pqt_ok(P·T 둘 다 잡힌 박의 비율)
+      전도 일관성: PR 이 일정한가 → pr_cv. 정상 낮음 / AFL 은 전도비가 바뀌며 커짐
+      탈분극-재분극: R→T 정점 시간과 그 변동 → rt_med, rt_cv
+      등전위 구간 : T 정점~다음 P 사이가 **평평한가** → tp_rms(그 구간의 RMS/QRS진폭).
+                   정상은 평평해 낮고, AFL 은 톱니가, AFIB 는 f파가 채워 높아진다.
+                   ★이것이 사용자가 말한 "1:1:1 비율이 무너진다"의 직접 측정이다 —
+                     정상은 한 박에 P 하나뿐이라 그 사이가 비어 있어야 한다.
+      P/T 균형   : pt_ratio = P진폭/T진폭
+    """
+    n = len(rpk)
+    e = min(e, n - 1)
+    if e - s < 8:
+        return None
+    pa = []; ta = []; pr = []; rt = []; tp = []; segs = []
+    for i in range(s, e):
+        r0, r1 = int(rpk[i]), int(rpk[i + 1])
+        rr = (r1 - r0) / fs
+        if not (0.2 <= rr <= 3.0) or r0 < int(0.06 * fs) or r1 + 1 > len(x):
+            continue
+        qa = float(np.ptp(x[max(0, r0 - int(0.05 * fs)):r0 + int(0.05 * fs)]))
+        if qa <= 1e-9:
+            continue
+        base = float(np.median(x[r0:r1]))
+        # T: R 후 100ms ~ min(450ms, 0.55·RR)
+        t_lo = r0 + int(0.10 * fs); t_hi = r0 + int(min(0.45, 0.55 * rr) * fs)
+        # P: 다음 R 전 min(320ms, 0.45·RR) ~ 40ms
+        p_lo = r1 - int(min(0.32, 0.45 * rr) * fs); p_hi = r1 - int(0.04 * fs)
+        if t_hi - t_lo < 3 or p_hi - p_lo < 3:
+            continue
+        tt = t_lo + int(np.argmax(np.abs(x[t_lo:t_hi] - base)))
+        p_lo = max(p_lo, tt + int(0.04 * fs))         # ★T 를 P 로 오인하지 않게
+        if p_hi - p_lo < 3:
+            continue
+        pp = p_lo + int(np.argmax(np.abs(x[p_lo:p_hi] - base)))
+        pa.append(abs(x[pp] - base) / qa); ta.append(abs(x[tt] - base) / qa)
+        pr.append((r1 - pp) / fs); rt.append((tt - r0) / fs)
+        # 등전위(TP) 구간의 RMS — 정상은 비어 평평, AFL/AFIB 는 심방파가 채운다
+        g0, g1 = tt + int(0.05 * fs), pp - int(0.02 * fs)
+        tp.append(float(np.sqrt(np.mean((x[g0:g1] - base) ** 2)) / qa)
+                  if g1 - g0 >= 3 else np.nan)
+        L = int(0.20 * fs)                            # P 창(다음 R 기준 고정 길이)
+        if r1 - L >= 0:
+            q = x[r1 - L - int(0.04 * fs):r1 - int(0.04 * fs)]
+            if len(q) == L:
+                segs.append((q - q.mean()) / (q.std() + 1e-9))
+    if len(pa) < 5:
+        return None
+    cons = np.nan
+    if len(segs) >= 3:
+        c = [float(np.dot(segs[j], segs[j + 1]) / len(segs[j]))
+             for j in range(len(segs) - 1)]
+        cons = float(np.median(c))                    # 박간 P 형태 상관 ★정상↑ AFIB↓
+    cv = lambda v: float(np.std(v) / (abs(np.mean(v)) + 1e-9))
+    return [float(np.median(pa)), cons, float(np.median(pr)), cv(pr),
+            float(np.median(ta)), float(np.median(rt)), cv(rt),
+            float(np.nanmedian(tp)) if np.isfinite(tp).any() else float("nan"),
+            float(np.median(pa) / (np.median(ta) + 1e-9)),
+            len(pa) / max(e - s, 1), 0.0]
+
+
+def _reconstruct_pid_rec(d, dbs, dldir=None, verbose=True):
+    """pid_rec 이 없는 옛 코퍼스를 위해 pid → "db:rec" 를 **규칙으로** 복원한다.
+
+    build_rr_corpus 가 쓴 규칙 그대로다: gpid = pid0 + sorted(recs).index(rec).
+    주석이 이미 캐시돼 있으므로 목록만 다시 세면 되고 다운로드는 없다.
+
+    ★안전장치: 복원한 pid 집합이 코퍼스에 실제로 있는 pid 를 **전부 덮지 못하면**
+      사용하지 않고 예외를 던진다. 어긋난 매핑으로 신호를 붙이면 에러 없이
+      '남의 심전도'가 붙는다 — 이번 프로젝트에서 가장 위험한 종류의 버그다.
+    """
+    have = set(int(x) for x in np.unique(d["pid"]))
+    out = {}
+    for db in dbs:
+        spec = RRDB_SPEC.get(db)
+        if spec is None:
+            continue
+        dd = _cache_dir(db, ann_only=True, dldir=dldir)
+        exts = sorted({"hea", spec["beat_ext"], spec["rhy_ext"]})
+        recs = _rr_records(db, dd, exts, verbose=False)
+        for i, rec in enumerate(sorted(recs)):
+            out[spec["pid0"] + i] = f"{db}:{rec}"
+    tgt = {p for p in have
+           if any(RRDB_SPEC[db]["pid0"] <= p < RRDB_SPEC[db]["pid0"] + 1000
+                  for db in dbs if db in RRDB_SPEC)}
+    miss = tgt - set(out)
+    if miss:
+        raise RuntimeError(
+            f"pid_rec 복원 실패 — 코퍼스의 pid {sorted(miss)[:5]} 를 레코드에 대응시킬 "
+            f"수 없습니다. 주석 캐시가 코퍼스 생성 때와 다릅니다. "
+            f"build_rr_corpus() 를 다시 돌려 pid_rec 을 심으세요(주석은 캐시됨).")
+    if verbose:
+        print(f"  ↻ pid_rec 이 없어 규칙으로 복원했습니다 "
+              f"({len(tgt)}개 pid 전부 대응 확인). 다음 build_rr_corpus 부터는 저장됩니다.")
+    return out
 
 
 def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
                        stride=None, dldir=None, verbose=True):
-    """창별 심방활동 특징 → afib_atrial.npz (창당 8개 스칼라, 1MB 미만).
+    """창별 심방활동 + P-QRS-T 관계 특징 → afib_atrial.npz (창당 19개 스칼라).
 
     ★corpus 의 pid_rec 매핑이 필요하다. 없으면(옛 코퍼스) 어느 pid 가 어느 레코드인지
       알 수 없어 신호를 못 붙인다 → build_rr_corpus 를 다시 돌려야 한다(주석은 캐시돼
@@ -704,14 +833,13 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
     win_starts = g["win_starts"]
     stride = int(stride or W)
     d = np.load(corpus or f"{_BASE}/afib_rr.npz", allow_pickle=True)
-    if "pid_rec" not in d.files:
-        raise RuntimeError(
-            "코퍼스에 pid_rec 매핑이 없습니다(옛 버전). build_rr_corpus() 를 다시 "
-            "돌리세요 — 주석이 캐시돼 있어 몇 분이면 끝나고, 이참에 ltafdb·nsrdb 도 "
-            "함께 넣으면 됩니다.")
     pid, t = d["pid"], d["t"]
-    pid_uniq = d["pid_uniq"]; pid_rec = [str(x) for x in d["pid_rec"]]
-    p2r = dict(zip([int(x) for x in pid_uniq], pid_rec))
+    if "pid_rec" in d.files:
+        p2r = dict(zip([int(x) for x in d["pid_uniq"]],
+                       [str(x) for x in d["pid_rec"]]))
+    else:
+        # 옛 코퍼스 — 매핑을 규칙으로 복원한다(735MB 를 다시 만들지 않기 위해).
+        p2r = _reconstruct_pid_rec(d, dbs, dldir=dldir, verbose=verbose)
 
     KEY = []; F = []
     n_ok = n_bad = 0
@@ -742,27 +870,38 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         nlead = min(2, sig.shape[1])
         rpk = np.round(np.asarray(t[idx], np.float64) * fs).astype(int)
         rpk = np.clip(rpk, 0, len(sig) - 1)
-        # 리드별로 잔차를 만들고, 창마다 **스펙트럼 집중도가 높은 리드**를 채택한다
+        # 리드별로 (a) 심방 잔차 (b) 원신호 를 준비한다.
+        #  ★(a)와 (b)는 서로 대체 불가다: 잔차는 R 고정 성분을 지우므로 AFIB/AFL 의
+        #    f·F 파에는 이상적이지만 정상 P 를 함께 지운다. P·T 계측은 원신호에서.
         res = []
         for c in range(nlead):
             rr_ = _atrial_residual(sig[:, c], rpk, fs)
             res.append(_bandpass(rr_, fs) if rr_ is not None else None)
         if all(v is None for v in res):
             n_bad += 1; continue
+        nf = len(ATR_NAMES)
         for s in starts:
-            i0, i1 = rpk[s], rpk[min(s + W - 1, len(rpk) - 1)]
+            s2 = min(s + W - 1, len(rpk) - 1)
+            i0, i1 = rpk[s], rpk[s2]
+            med_rr = float(np.median(np.diff(rpk[s:s2 + 1]))) / fs if s2 > s else 0.8
             best = None
             for c, rv in enumerate(res):
                 if rv is None:
                     continue
-                f_ = _atrial_win_feats(rv, i0, i1, fs)
-                if f_ is None:
+                qa = float(np.median([np.ptp(sig[max(0, int(r) - int(0.05 * fs)):
+                                                 int(r) + int(0.05 * fs), c])
+                                      for r in rpk[s:s2 + 1:8]] or [1.0]))
+                fs_ = _spec_win_feats(rv, i0, i1, fs, med_rr, qa)
+                if fs_ is None:
                     continue
-                f_[7] = float(c)
-                if best is None or f_[1] > best[1]:      # sc 가 큰 리드 채택
-                    best = f_
+                fp_ = _pqrst_win_feats(sig[:, c], rpk, s, s2, fs)
+                fp_ = fp_ if fp_ is not None else [float("nan")] * len(PQ_NAMES)
+                fp_[-1] = float(c)
+                cand = fs_ + fp_
+                if best is None or cand[1] > best[1]:    # sc 가 큰 리드 채택
+                    best = cand
             KEY.append((int(p), int(s)))
-            F.append(best if best is not None else [float("nan")] * 8)
+            F.append(best if best is not None else [float("nan")] * nf)
         n_ok += 1
         del sig, res
         if verbose:
@@ -836,6 +975,99 @@ def atrial_audit(atrial=None, corpus=None, W=128, stride=None, verbose=True):
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증
 # ─────────────────────────────────────────────────────────────────────────────
+def _synth_ecg(kind="N", secs=120, fs=250, seed=0):
+    """합성 심전도 — 추출 로직을 데이터 없이 검증하기 위한 것.
+
+    N    : P(PR 160ms 고정) - QRS - T,  HR 60         → 한 박에 P 하나, TP 평평
+    AFL  : F파 톱니 5Hz(300/분) 연속 + 2:1 전도(HR 150) → TP 구간이 톱니로 채워짐
+    AFIB : f파 무질서 6~9Hz + RR 불규칙                → TP 채워짐 + 불규칙
+    반환 (신호, R위치)
+    """
+    rng = np.random.RandomState(seed)
+    n = int(secs * fs); x = np.zeros(n, "float64")
+    g = lambda c, w, a: a * np.exp(-0.5 * ((np.arange(n) - c) / (w * fs)) ** 2)
+    if kind == "AFL":
+        rr = 0.4; f_at = 5.0
+        x += 0.15 * np.abs(((np.arange(n) / fs * f_at) % 1.0) - 0.5) * 4 - 0.3
+    elif kind == "AFIB":
+        rr = None
+        # f파는 진폭·주파수·위상이 모두 무질서해야 한다. 위상이 이어지는 sine 은
+        # 실제보다 훨씬 규칙적이라 스펙트럼 집중도를 과대평가한다.
+        for _ in range(int(secs * 7)):
+            c = rng.randint(0, n); w = rng.uniform(0.010, 0.030)
+            x += rng.choice([-1, 1]) * rng.uniform(0.03, 0.10) * \
+                 np.exp(-0.5 * ((np.arange(n) - c) / (w * fs)) ** 2)
+    else:
+        rr = 1.0
+    t = 0.5; R = []
+    while t < secs - 1.0:
+        r = int(t * fs); R.append(r)
+        x += g(r, 0.012, 1.0) - g(r - int(0.022 * fs), 0.008, 0.18) \
+             - g(r + int(0.022 * fs), 0.008, 0.25)          # QRS
+        x += g(r + int(0.30 * fs), 0.045, 0.28)             # T
+        if kind == "N":
+            x += g(r - int(0.16 * fs), 0.022, 0.14)         # P (R 에 고정)
+        step = rr if rr else float(np.clip(0.55 + rng.randn() * 0.16, 0.3, 1.6))
+        t += step
+    x += rng.randn(n) * 0.008
+    return x.astype("float32"), np.array(R, np.int64)
+
+
+def selftest_atrial(verbose=True):
+    """★심방·PQRST 추출이 생리와 맞는 방향으로 움직이는지 합성 심전도로 검증.
+
+    실데이터에서 H-P 가 실패했을 때 '추출이 틀렸나 / 데이터가 그런가'를 가르려면
+    추출이 옳다는 독립 증거가 있어야 한다. 이것이 그 증거다.
+    """
+    ok = lambda c, m: (_ for _ in ()).throw(AssertionError(m)) if not c else print(f"  ✔ {m}")
+    fs = 250; W = 96
+    got = {}
+    for kind in ("N", "AFL", "AFIB"):
+        x, R = _synth_ecg(kind, secs=200, fs=fs, seed=1)
+        res = _bandpass(_atrial_residual(x, R, fs), fs)
+        s, e = 0, min(W - 1, len(R) - 1)
+        med_rr = float(np.median(np.diff(R[s:e + 1]))) / fs
+        qa = float(np.median([np.ptp(x[r - 12:r + 12]) for r in R[s:e + 1:8]]))
+        sp = _spec_win_feats(res, R[s], R[e], fs, med_rr, qa)
+        pq = _pqrst_win_feats(x, R, s, e, fs)
+        got[kind] = dict(zip(ATR_NAMES, (sp or [np.nan] * len(SPEC_NAMES))
+                                + (pq or [np.nan] * len(PQ_NAMES))))
+    if verbose:
+        keys = ["daf", "daf_vh", "sc", "av_ratio", "aa_rel", "tp_rms", "p_amp", "pr_cv"]
+        print(f"\n  {'리듬':<6}" + "".join(f"{k:>10}" for k in keys))
+        for k, v in got.items():
+            print(f"  {k:<6}" + "".join(f"{v[n]:>10.3f}" for n in keys))
+    N, FL, FB = got["N"], got["AFL"], got["AFIB"]
+    # ── ① P-QRS-T 관계(원신호) — 사용자 착안. 여기가 AFL 의 주 판별축이다 ──────
+    ok(FL["tp_rms"] > N["tp_rms"] * 1.5,
+       f"AFL: 등전위 구간이 톱니로 채워짐 (tp_rms {FL['tp_rms']:.3f} > N {N['tp_rms']:.3f})")
+    ok(FB["tp_rms"] > N["tp_rms"] * 1.5,
+       f"AFIB: 등전위 구간이 f파로 채워짐 (tp_rms {FB['tp_rms']:.3f})")
+    ok(N["pr_cv"] < 0.05, f"정상: PR 이 일정 (pr_cv {N['pr_cv']:.4f}) — 1:1 전도")
+    ok(FB["pr_cv"] > N["pr_cv"] * 3,
+       f"AFIB: PR 이 일정하지 않음 ({FB['pr_cv']:.3f}) — P 가 R 에 안 묶임")
+
+    # ── ② 잔차 스펙트럼 — ★알려진 한계를 '검증'으로 못 박는다 ─────────────────
+    #  고정비 AFL 에서는 조동파가 R 에 시간고정이라 QRST 평균감산이 **조동파까지
+    #  함께 지운다**. 그래서 잔차의 daf 는 조동 주파수를 못 준다. 이건 합성으로
+    #  재현되는 구조적 성질이지 버그가 아니다 — 문서·특징(daf_vh)으로 드러내고,
+    #  AFL 판별은 ①(원신호 P-QRS-T)에 맡긴다.
+    ok(FL["daf_vh"] < 0.5,
+       f"AFL: daf 가 심실 고조파와 겹침 (거리 {FL['daf_vh']:.3f}Hz) → daf 를 심방 "
+       f"증거로 읽으면 안 되는 상황이 daf_vh 로 드러남")
+    ok(FB["daf_vh"] > FL["daf_vh"],
+       f"AFIB: daf 가 심실 고조파에서 떨어져 있음 ({FB['daf_vh']:.3f} > {FL['daf_vh']:.3f})")
+    ok(FB["aa_rel"] > N["aa_rel"] * 3,
+       f"AFIB: 비-R고정 심방활동이 크다 (aa_rel {FB['aa_rel']:.3f} vs N {N['aa_rel']:.3f})")
+    ok(N["aa_rel"] < 0.02,
+       f"정상: 잔차가 거의 0 (aa_rel {N['aa_rel']:.4f}) — P 가 R 고정이라 템플릿과 "
+       f"함께 지워진다. ★그래서 정상 P 계측은 원신호에서만 가능하다")
+    print("=== 심방 추출 검증 통과 ===")
+    print("  ※ 확인된 구조적 한계: 고정비 AFL 은 잔차 스펙트럼으로 못 잡는다.")
+    print("     AFL 판별은 원신호 P-QRS-T 관계(tp_rms 등)가 담당한다.")
+    return got
+
+
 def selftest():
     ok = lambda c, m: (_ for _ in ()).throw(AssertionError(m)) if not c else print(f"  ✔ {m}")
     print("=== ecg_multidb 자기검증 ===")
@@ -859,6 +1091,11 @@ def selftest():
     ok(RRDB_SPEC["afdb"]["beat_audited"] is False,
        "afdb 는 비트 미감사로 표시됨(AAMI 라벨 오용 차단)")
     ok(callable(build_rr_corpus) and callable(rr_audit_dbs), "2층 공개 함수 존재")
+    ok(len(ATR_NAMES) == len(SPEC_NAMES) + len(PQ_NAMES) == 20, "심방 특징 20종")
+    try:
+        selftest_atrial(verbose=True)
+    except ImportError:
+        print("  · scipy 없음 — 심방 추출 검증 건너뜀")
     print("=== 전 항목 통과 ===")
     return True
 
