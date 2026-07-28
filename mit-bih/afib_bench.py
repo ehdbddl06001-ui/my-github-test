@@ -506,9 +506,42 @@ def _torch():
     return torch, torch.nn
 
 
-def _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, n_domain=0,
+def _aux_cols(w, mode):
+    """팔이 쓸 보조특징 열을 고른다.
+
+    ★★이 함수가 없어서 실제로 사고가 났다 — attach_atrial(w) 가 w["aux"] 를
+      10 → 31 열로 늘리는데, 모든 팔이 w["aux"] 를 통째로 쓰고 있었다. 그 결과
+      'RR 산포 기준선(A1)'·'RSN(A2)' 까지 심방 특징을 받아 **팔의 정의가 조용히
+      바뀌었고**, A2 와 A4 는 비트 단위로 같은 예측을 냈다(= 비교가 무의미).
+      이제 팔마다 mode 를 선언해야 하고, 선언하지 않으면 열이 안 붙는다.
+
+      "none"   보조특징 없음 (시퀀스만)
+      "rr"     RR 산포 10종만        ← A1·A2·A2c·A3 의 정의
+      "atrial" 심방·P-QRS-T 특징만   ← A4c
+      "all"    둘 다                 ← A4
+    """
+    n = w["aux"].shape[1]
+    nrr = int(w.get("n_rr", n))          # attach_atrial 이 없으면 전부 RR
+    if mode == "none":
+        return np.zeros(0, int)
+    if mode == "rr":
+        return np.arange(nrr)
+    if mode == "atrial":
+        if nrr >= n:
+            raise RuntimeError("심방특징이 없습니다 — attach_atrial(w) 를 먼저 하세요.")
+        return np.arange(nrr, n)
+    if mode == "all":
+        return np.arange(n)
+    raise ValueError(f"알 수 없는 aux mode: {mode}")
+
+
+def _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="rr", n_domain=0,
              epochs=20, bs=256, lr=1e-3):
-    """창 분류기 학습. 인코더는 1층과 **같은** `_rsn`(형태 가지 끔)."""
+    """창 분류기 학습. 인코더는 1층과 **같은** `_rsn`(형태 가지 끔).
+
+    aux 는 반드시 명시한다(_aux_cols 참조). 기본값을 "rr" 로 둔 것은, 실수로
+    빠뜨렸을 때 **팔이 조용히 강해지는 쪽이 아니라 원래 정의대로** 돌게 하기 위함이다.
+    """
     torch, nn = _torch()
     g = globals()
     if "_rsn" not in g:
@@ -516,7 +549,8 @@ def _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, n_domain=0,
     torch.manual_seed(seed); np.random.seed(seed)
     dev = "cuda" if torch.cuda.is_available() else "cpu"
     L = w["seq"].shape[2]
-    daux = w["aux"].shape[1] if use_aux else 0
+    cols = _aux_cols(w, aux)
+    daux = len(cols)
     net = g["_rsn"](4, L, daux, use_morph=False, use_seq=use_seq,
                     n_class=ncls, n_domain=n_domain).to(dev)
     dom_ids = None
@@ -525,8 +559,9 @@ def _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, n_domain=0,
         dm = {d: i for i, d in enumerate(uds)}
         dom_ids = np.array([dm[str(x)] for x in w["db"]], np.int64)
 
-    X = torch.tensor(w["seq"]); A = torch.tensor(w["aux"] if use_aux else
-                                                 np.zeros((len(w["y"]), 1), "float32"))
+    X = torch.tensor(w["seq"])
+    A = torch.tensor(w["aux"][:, cols] if daux else
+                     np.zeros((len(w["y"]), 1), "float32"))
     Y = torch.tensor(w["y"])
     # 클래스 불균형 보정 — N 이 압도적이라 보정 없이는 AFL 이 학습되지 않는다
     cnt = np.bincount(w["y"][tr], minlength=ncls).astype("float64")
@@ -573,7 +608,8 @@ def _arm_rrdisp(w, tr, te, ncls, seed, epochs=20):
     torch, nn = _torch()
     torch.manual_seed(seed); np.random.seed(seed)
     dev = "cuda" if torch.cuda.is_available() else "cpu"
-    A = torch.tensor(w["aux"]); Y = torch.tensor(w["y"])
+    A = torch.tensor(w["aux"][:, _aux_cols(w, "rr")])   # ★RR 산포 10종만 — 문헌 기준선
+    Y = torch.tensor(w["y"])
     net = nn.Sequential(nn.Linear(A.shape[1], 64), nn.ReLU(), nn.Dropout(0.1),
                         nn.Linear(64, 64), nn.ReLU(), nn.Linear(64, ncls)).to(dev)
     cnt = np.bincount(w["y"][tr], minlength=ncls).astype("float64")
@@ -592,13 +628,13 @@ def _arm_rrdisp(w, tr, te, ncls, seed, epochs=20):
 
 
 def _arm_rsn(w, tr, te, ncls, seed, epochs=20):
-    """A2. RSN 시퀀스 — 1층에서 유일하게 살아남은 효과(R1−R5 = +0.105)의 이식."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, epochs=epochs)
+    """A2. RSN 시퀀스 + RR 산포. ★심방특징은 쓰지 않는다(A4 와의 대비를 위해)."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="rr", epochs=epochs)
 
 
 def _arm_rsn_nodisp(w, tr, te, ncls, seed, epochs=20):
-    """A2c. RSN 시퀀스만(스칼라 보조 제거) — A2 의 이득이 스칼라 덕인지 가르는 대조군."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=False, epochs=epochs)
+    """A2c. RSN 시퀀스만(스칼라 보조 전부 제거) — A2 의 이득이 스칼라 덕인지 가르는 대조군."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="none", epochs=epochs)
 
 
 def attach_atrial(w, path=None, verbose=True):
@@ -629,8 +665,9 @@ def attach_atrial(w, path=None, verbose=True):
     med = np.where(np.isfinite(med), med, 0.0)
     M = np.where(np.isnan(M), med, M).astype("float32")
     w = dict(w)
+    w["n_rr"] = int(w["aux"].shape[1])      # ★RR/심방 경계 — 팔이 열을 고르는 기준
     w["aux"] = np.concatenate([w["aux"], M, miss.astype("float32")[:, None]], 1)
-    w["aux_names"] = (["rr%d" % i for i in range(10)] + names + ["atr_missing"])
+    w["aux_names"] = ([f"rr{i}" for i in range(w["n_rr"])] + names + ["atr_missing"])
     if verbose:
         print(f"\n[심방활동 결합] 창 {len(w['y']):,} 중 {hit:,} 결합 "
               f"({100*hit/len(w['y']):.1f}%)  보조특징 10 → {w['aux'].shape[1]}")
@@ -642,20 +679,20 @@ def attach_atrial(w, path=None, verbose=True):
 
 
 def _arm_rsn_atrial(w, tr, te, ncls, seed, epochs=20):
-    """A4. RSN + 심방활동. ★AFL 의 유일한 물리 신호(F파)를 넣은 팔."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, epochs=epochs)
+    """A4. RSN + RR산포 + **심방활동**. A2 와의 차이가 곧 심방축의 순효과다."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="all", epochs=epochs)
 
 
 def _arm_atrial_only(w, tr, te, ncls, seed, epochs=20):
     """A4c. 심방활동 스칼라만(시퀀스 제거) — AFL 의 이득이 정말 심방축에서
        오는지 가르는 대조군. A4 만 보면 RSN 덕인지 심방 덕인지 알 수 없다."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=False, use_aux=True, epochs=epochs)
+    return _fit_win(w, tr, te, ncls, seed, use_seq=False, aux="atrial", epochs=epochs)
 
 
 def _arm_rsn_dom(w, tr, te, ncls, seed, epochs=20):
     """A3. RSN + DB 조건부 FiLM. ★같은 DB 안에서만 오르면 사전확률 암기다 →
        판정은 반드시 bench_afib(split="db") 로 한다."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True,
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="rr",
                     n_domain=len(set(map(str, w["db"]))), epochs=epochs)
 
 
@@ -665,6 +702,16 @@ ATRIAL_ARMS = {
     "A4.RSN+심방활동": _arm_rsn_atrial,
     "A4c.심방활동만": _arm_atrial_only,
 }
+
+# ★팔이 실제로 어떤 입력을 받는지 함수에 못 박아 두고, 벤치 시작 때 출력한다.
+#   (한 번 두 팔이 같은 입력을 받는 배선 오류로 사전등록 비교가 통째로 무효가 된
+#    적이 있다. 선언을 눈에 보이게 두는 것이 재발 방지의 절반이다.)
+for _f, _seq, _ax in ((_arm_trivial, False, "none"), (_arm_rrdisp, False, "rr"),
+                      (_arm_rsn, True, "rr"), (_arm_rsn_nodisp, True, "none"),
+                      (_arm_rsn_dom, True, "rr"), (_arm_rsn_atrial, True, "all"),
+                      (_arm_atrial_only, False, "atrial")):
+    _f._use_seq, _f._aux_mode = _seq, _ax
+del _f, _seq, _ax
 
 DEFAULT_ARMS = {
     "A0.자명": _arm_trivial,
@@ -739,6 +786,14 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
     print(f"\n=== 2층 벤치 [{split}]  팔 {len(arms)} × 폴드 {len(folds)} = "
           f"{len(arms)*len(folds)}회 학습 ===")
     _cost(w, arms, folds, epochs)
+    nrr = int(w.get("n_rr", w["aux"].shape[1])); nall = w["aux"].shape[1]
+    print(f"    보조특징: RR {nrr}열" + (f" + 심방 {nall-nrr}열 = {nall}" if nall > nrr
+                                        else " (심방특징 없음)"))
+    for a, f in arms.items():                 # ★팔별 실제 입력 선언 — 배선 감사용
+        md = getattr(f, "_aux_mode", "?"); sq = getattr(f, "_use_seq", None)
+        nc = len(_aux_cols(w, md)) if md in ("none", "rr", "atrial", "all") else -1
+        print(f"      {a:<18} 시퀀스 {'O' if sq else 'X' if sq is False else '?'}  "
+              f"보조 {md}({nc}열)")
     for nm, fn in arms.items():
         P = np.full(len(y), -1, np.int64)
         S = np.zeros((len(y), ncls), "float32")
@@ -750,7 +805,34 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
         m = P >= 0
         OUT["res"][nm] = dict(pred=P, score=S, mask=m)
     OUT["w"] = dict(y=y, pid=pid, db=dbv, dur=w["dur"], nov=w["nov"], t0=w["t0"])
+    _check_distinct(OUT)
     return OUT
+
+
+def _check_distinct(OUT, verbose=True):
+    """★서로 다른 팔이 **똑같은 예측**을 냈는지 검사한다.
+
+    왜 필요한가: 실제로 A2 와 A4 가 비트 단위로 같은 예측을 낸 적이 있다. 두 팔이
+    같은 함수를 호출하고 있었는데(둘 다 w["aux"] 전체를 씀), 표에는 서로 다른
+    이름으로 나란히 찍히니 **'효과 없음'으로 읽히고 넘어갈 뻔했다.** 값이 같으면
+    그것은 결과가 아니라 배선 오류다. 조용히 지나가지 않게 여기서 잡는다.
+    """
+    ks = [k for k in OUT["res"] if not k.startswith("A0")]
+    dup = []
+    for i in range(len(ks)):
+        for j in range(i + 1, len(ks)):
+            a, b = OUT["res"][ks[i]]["pred"], OUT["res"][ks[j]]["pred"]
+            if a.shape == b.shape and np.array_equal(a, b):
+                dup.append((ks[i], ks[j]))
+    if dup and verbose:
+        print(f"\n  ✗✗ 배선 오류: 서로 다른 팔이 **동일한 예측**을 냈습니다")
+        for a, b in dup:
+            print(f"      {a}  ≡  {b}")
+        print(f"      → 두 팔이 같은 입력·같은 함수를 쓰고 있습니다. 결과가 아니라 버그입니다.")
+        print(f"      → 각 팔의 aux 모드(_aux_cols)와 use_seq 를 확인하세요.")
+    elif verbose:
+        print(f"  ✔ 팔 {len(ks)}개가 서로 다른 예측을 냄(배선 정상)")
+    return dup
 
 
 def report_afib(OUT, base="A1.RR산포", show=True):
@@ -955,6 +1037,30 @@ def selftest():
     # (4) 실측 σ 가 계산되고 유한해야 한다
     sg = sigma_measured(O, verbose=False)
     ok(all(np.isfinite(v[0]) and v[0] >= 0 for v in sg.values()), "실측 σ 가 유한·비음수")
+
+    # ── 배선 검증 (★ A2 ≡ A4 사고 재발 방지) ─────────────────────────────
+    #  심방특징이 붙은 w 를 흉내 내고, 팔마다 **다른 열**을 받는지 직접 센다.
+    wa = dict(w); wa["n_rr"] = 10
+    wa["aux"] = np.concatenate([w["aux"], np.zeros((len(w["y"]), 21), "float32")], 1)
+    ok(len(_aux_cols(wa, "rr")) == 10 and len(_aux_cols(wa, "all")) == 31 and
+       len(_aux_cols(wa, "atrial")) == 21 and len(_aux_cols(wa, "none")) == 0,
+       "aux 모드별 열 수: none 0 / rr 10 / atrial 21 / all 31")
+    md = {a: getattr(f, "_aux_mode", None)
+          for a, f in {**DEFAULT_ARMS, **ATRIAL_ARMS}.items()}
+    ok(all(v is not None for v in md.values()), "모든 팔이 aux 모드를 선언함")
+    ok(md["A2.RSN"] == "rr" and md["A4.RSN+심방활동"] == "all",
+       "A2 는 RR 만, A4 는 RR+심방 — 두 팔의 차이가 곧 심방축의 순효과")
+    ok(len(_aux_cols(wa, md["A2.RSN"])) != len(_aux_cols(wa, md["A4.RSN+심방활동"])),
+       "A2 와 A4 가 실제로 다른 입력을 받음(같으면 비교가 무의미)")
+    ok(getattr(_arm_atrial_only, "_use_seq") is False, "A4c 는 시퀀스를 쓰지 않음")
+    # 심방특징이 없는 w 에서 "atrial" 을 요구하면 조용히 0열이 아니라 예외여야 한다
+    try:
+        _aux_cols(w, "atrial"); ok(False, "심방특징 없이 atrial 요구 시 예외")
+    except RuntimeError:
+        ok(True, "심방특징 없이 A4c 를 돌리면 예외 — 빈 입력으로 조용히 돌지 않음")
+    dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
+                          verbose=False)
+    ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
     print("=== 전 항목 통과 ===")
     return True
 
