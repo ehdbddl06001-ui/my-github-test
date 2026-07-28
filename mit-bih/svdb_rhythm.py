@@ -798,6 +798,42 @@ def error_profile(OUT, arm, topn=12, show=True):
     return dict(rows=rows)
 
 
+def compare_arms(OUT, a, b, strat="prev", nbin=3, show=True):
+    """두 arm 을 **유병률 구간별로** 비교한다 — 평균만 보면 안 보이는 것을 드러낸다.
+
+    ★왜: 환자별 효과가 방향이 다르면 평균에서 상쇄된다(§6.2 에서 유병률이 정밀도와
+      민감도를 반대로 미는 것을 이미 겪었다). 특히 '환자별 적응' 계열은 어떤 구간을
+      돕고 어떤 구간을 해치는지 봐야 실패 원인을 특정할 수 있다.
+    """
+    R = OUT["res"]
+    if a not in R or b not in R:
+        print(f"  ⚠ {a} 또는 {b} 없음"); return {}
+    y, pid = OUT["y"], OUT["pid"]
+    ps = np.array([int(p) for p in np.unique(pid) if (y[pid == p] == 1).sum() > 0])
+    fa = np.asarray(R[a]["fper"], float); fb = np.asarray(R[b]["fper"], float)
+    prev = np.array([float((y[pid == p] == 1).mean()) for p in ps])
+    q = np.quantile(prev, np.linspace(0, 1, nbin + 1)[1:-1])
+    g = np.digitize(prev, q)
+    if not show:
+        return dict(pid=ps, a=fa, b=fb, prev=prev, grp=g)
+    print(f"\n  [구간별 비교] {a}  −  {b}")
+    print(f"    {'구간':<10}{'n':>3}{'유병률중앙':>10}{b[:14]:>16}{a[:14]:>16}{'Δ':>9}")
+    for i in range(nbin):
+        m = g == i
+        if not m.any(): continue
+        nm = ["저유병", "중간", "고유병"][i] if nbin == 3 else f"Q{i+1}"
+        print(f"    {nm:<10}{int(m.sum()):>3}{100*np.median(prev[m]):>9.2f}%"
+              f"{fb[m].mean():>16.3f}{fa[m].mean():>16.3f}{fa[m].mean()-fb[m].mean():>+9.3f}")
+    d = fa - fb
+    print(f"    {'전체':<10}{len(d):>3}{'':>10}{fb.mean():>16.3f}{fa.mean():>16.3f}{d.mean():>+9.3f}")
+    w, l = int((d > 0.01).sum()), int((d < -0.01).sum())
+    print(f"    개선 {w}명 / 악화 {l}명 / 변화없음 {len(d)-w-l}명")
+    if l > w:
+        print(f"      → 악화가 더 많다. 구간별 부호가 갈리면 '방향이 틀린 것',"
+              f" 전 구간에서 악화면 '적합 자체가 틀린 것'이다.")
+    return dict(pid=ps, a=fa, b=fb, prev=prev, grp=g, delta=d)
+
+
 def ceiling_analysis(OUT, arm, show=True):
     """★결정적 진단 — '순위(판별축)' 문제인가 '임계(동작점)' 문제인가.
 
