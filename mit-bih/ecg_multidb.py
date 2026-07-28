@@ -118,7 +118,8 @@ def cache_status(base=None, verbose=True):
     for fn, what in [("svdb_data.npz", "1층 SVDB 원본"),
                      ("svdb_data5.npz", "1층 SVDB 5-class"),
                      ("ecg_multi.npz", "1층 통합(mitdb+svdb+incartdb)"),
-                     ("afib_rr.npz", "2층 RR 코퍼스")]:
+                     ("afib_rr.npz", "2층 RR 코퍼스"),
+                     ("afib_atrial.npz", "2층-B 심방활동·P-QRS-T 특징")]:
         p = f"{b}/{fn}"
         if os.path.exists(p):
             print(f"    ✔ {fn:<18} {os.path.getsize(p)/1e6:>8.1f} MB  {what}")

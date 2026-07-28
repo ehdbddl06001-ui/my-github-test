@@ -199,14 +199,18 @@ def go(*names):
     return True
 
 
-def _bootstrap_cell():
+def _bootstrap_cell(mount=True):
+    """복구 셀을 그대로 찍는다. ★런타임이 끊기면 메모리의 정의가 전부 사라지므로
+       Drive 마운트부터 다시 해야 한다 — 그래서 마운트 줄을 함께 넣는다."""
+    if mount:
+        print("  from google.colab import drive; drive.mount('/content/drive')")
     print("  import urllib.request as u, json")
     print(f"  R=\"{REPO}\"; B=\"{BRANCH}\"")
     print("  S=json.load(u.urlopen(f\"https://api.github.com/repos/{R}/commits/"
           "{B.replace('/','%2F')}\"))[\"sha\"]")
     print("  exec(u.urlopen(f\"https://raw.githubusercontent.com/{R}/{S}/mit-bih/"
           "colab_setup.py\").read().decode())")
-    print("  sync()")
+    print("  sync(); cache_status()")
 
 
 def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=True,
