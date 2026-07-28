@@ -42,7 +42,16 @@
 import numpy as np
 
 _BASE  = globals().get("_BASE", "/content/drive/MyDrive/mitbih")
-_DLDIR = "/content/svdb_raw"
+# ★다운로드 캐시. `/content` 는 런타임이 끊기면 사라져 매번 다시 받게 된다.
+#   주석(.hea/.atr)만 받는 경로는 전부 합쳐 수십 MB 라 Drive 에 두는 편이 낫고,
+#   ecg_multidb._cache_dir 과 **같은 규약**이라 mitdb .atr 을 한 번만 받아
+#   label_audit 과 rr_audit_dbs 가 같이 쓴다. 신호까지 받는 build_labeled 는
+#   용량이 커서 기본을 /content 로 둔다(dldir 로 Drive 지정 가능).
+def _ann_dir(db):
+    return f"{_BASE}/raw_ann/{db}"
+
+
+_DLDIR = "/content/svdb_raw"      # 신호까지 받는 경로의 기본값(임시 디스크)
 _FS_SRC, _FS_DST = 128, 360
 _L, _RPRE = 300, 100
 
@@ -215,7 +224,7 @@ def _records(db="svdb"):
 
 def _load_ann(rec, db="svdb", dldir=None):
     _ensure("wfdb"); import wfdb, os
-    dldir = dldir or _DLDIR
+    dldir = dldir or _ann_dir(db)      # 주석만 → Drive 캐시(DB별로 분리)
     os.makedirs(dldir, exist_ok=True)
     for ext in ("hea", "atr"):
         fp = f"{dldir}/{rec}.{ext}"

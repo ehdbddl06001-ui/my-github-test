@@ -85,6 +85,54 @@ RRDB_SPEC = {
 }
 
 
+def _cache_dir(db, ann_only, dldir=None):
+    """다운로드 캐시 위치를 정한다.
+
+    ★기본을 Drive 로 두는 이유: `/content` 는 **런타임 컨테이너의 임시 디스크**다.
+      세션이 끊기면 통째로 사라져서 같은 파일을 매번 다시 받게 된다. 지금까지
+      build_multi 가 `/content/{db}_raw` 를 써서 정확히 그 일이 벌어졌다.
+
+    ★그런데 신호(.dat)까지 받는 경로는 Drive 로 옮기면 안 된다: incartdb 원신호만
+      ~2GB 라 Drive 용량을 조용히 잡아먹는다. 그래서 갈라 놓는다.
+        주석만(2층 RR 코퍼스, 전부 합쳐 ~60MB) → Drive 캐시  ← 이득이 명확
+        신호까지(1층 build_multi, ~수 GB)      → /content (원하면 dldir 로 지정)
+    """
+    if dldir:
+        return dldir
+    return f"{_BASE}/raw_ann/{db}" if ann_only else f"/content/{db}_raw"
+
+
+def cache_status(base=None, verbose=True):
+    """지금 Drive 에 무엇이 이미 있는지 보여 준다 — "또 받아야 하나?" 에 대한 답.
+
+    파생 npz(한 번 만들면 끝)와 원본 주석 캐시(DB별)를 나눠서 센다.
+    """
+    b = base or _BASE
+    print(f"\n=== Drive 캐시 현황  {b} ===")
+    print("  ── 만들어진 데이터셋(다시 안 만들어도 됨) ──")
+    for fn, what in [("svdb_data.npz", "1층 SVDB 원본"),
+                     ("svdb_data5.npz", "1층 SVDB 5-class"),
+                     ("ecg_multi.npz", "1층 통합(mitdb+svdb+incartdb)"),
+                     ("afib_rr.npz", "2층 RR 코퍼스")]:
+        p = f"{b}/{fn}"
+        if os.path.exists(p):
+            print(f"    ✔ {fn:<18} {os.path.getsize(p)/1e6:>8.1f} MB  {what}")
+        else:
+            print(f"    · {fn:<18} {'—':>8}     {what} (아직 없음)")
+    print("  ── 원본 주석 캐시(있으면 다운로드를 건너뜀) ──")
+    root = f"{b}/raw_ann"
+    if not os.path.isdir(root):
+        print(f"    · {root} 없음 — 첫 실행에서 만들어집니다")
+        return
+    for db in sorted(os.listdir(root)):
+        d = f"{root}/{db}"
+        if not os.path.isdir(d):
+            continue
+        fs = os.listdir(d)
+        mb = sum(os.path.getsize(f"{d}/{f}") for f in fs) / 1e6
+        print(f"    ✔ {db:<12} 파일 {len(fs):>4}개  {mb:>7.1f} MB")
+
+
 def _need(name):
     """svdb_labels.py 에서 오는 심볼을 빌려 쓴다(중복 정의하지 않는다)."""
     g = globals()
@@ -112,7 +160,7 @@ def incart_groups(dldir=None, verbose=True):
     """
     _ensure = _need("_ensure"); _ensure("wfdb")
     import wfdb
-    dldir = dldir or "/content/incart_raw"
+    dldir = _cache_dir("incartdb", ann_only=True, dldir=dldir)  # .hea 만 → Drive 캐시
     os.makedirs(dldir, exist_ok=True)
     try:
         recs = wfdb.get_record_list("incartdb")
@@ -221,7 +269,7 @@ def db_audit(dbs=("mitdb", "svdb", "incartdb"), n_rec=None, target=0.99, verbose
 #  3. 통합 데이터셋 생성
 # ─────────────────────────────────────────────────────────────────────────────
 def build_multi(dbs=("mitdb", "svdb", "incartdb"), out=None, n_rec=None,
-                realign=True, patient_map=None, verbose=True):
+                realign=True, patient_map=None, raw_dir=None, verbose=True):
     """여러 DB 를 하나의 npz 로. 환자 ID 는 **전역 유일**하게 재배정한다.
 
     저장 키
@@ -248,7 +296,8 @@ def build_multi(dbs=("mitdb", "svdb", "incartdb"), out=None, n_rec=None,
 
     for db in dbs:
         off = DB_SPEC.get(db, {}).get("pid0", 0)
-        dldir = f"/content/{db}_raw"; os.makedirs(dldir, exist_ok=True)
+        dldir = _cache_dir(db, ann_only=False, dldir=raw_dir)
+        os.makedirs(dldir, exist_ok=True)
         try:
             recs = wfdb.get_record_list(db)
         except Exception:
@@ -361,22 +410,27 @@ def _rr_records(db, dldir, exts, verbose=True):
         if r not in recs:
             recs.append(r)
     os.makedirs(dldir, exist_ok=True)
-    got = []
+    got = []; n_hit = 0; n_new = 0
     for rec in recs:
         ok = True
         for ext in exts:
             fp = f"{dldir}/{rec}.{ext}"
             if os.path.exists(fp) and os.path.getsize(fp) > 0:
-                continue
+                n_hit += 1; continue          # ★캐시 적중 — 다시 받지 않는다
             for _ in range(3):
                 try:
                     wfdb.dl_files(db, dldir, [f"{rec}.{ext}"]); break
                 except Exception:
                     pass
-            if not (os.path.exists(fp) and os.path.getsize(fp) > 0):
+            if os.path.exists(fp) and os.path.getsize(fp) > 0:
+                n_new += 1
+            else:
                 ok = False; break
         if ok:
             got.append(rec)
+    if verbose:
+        mb = sum(os.path.getsize(f"{dldir}/{f}") for f in os.listdir(dldir)) / 1e6
+        print(f"  캐시 {dldir}  ({mb:.1f} MB)  기존 {n_hit}개 재사용 / 새로 {n_new}개")
     if verbose and len(got) != len(recs):
         miss = [r for r in recs if r not in got]
         print(f"  ⚠ {db}: 주석 확보 {len(got)}/{len(recs)}  누락 {miss[:6]}")
@@ -427,7 +481,7 @@ def rr_audit_dbs(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), dldir=None, verbose=T
         spec = RRDB_SPEC.get(db)
         if spec is None:
             print(f"  ✗ {db}: RRDB_SPEC 에 없음"); continue
-        dd = dldir or f"/content/{db}_ann"
+        dd = _cache_dir(db, ann_only=True, dldir=dldir)
         exts = sorted({"hea", spec["beat_ext"], spec["rhy_ext"]})
         recs = _rr_records(db, dd, exts, verbose=verbose)
         per = {}
@@ -481,7 +535,7 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
         if spec is None:
             print(f"  ✗ {db}: RRDB_SPEC 에 없음"); continue
         off = spec["pid0"]
-        dd = dldir or f"/content/{db}_ann"
+        dd = _cache_dir(db, ann_only=True, dldir=dldir)
         exts = sorted({"hea", spec["beat_ext"], spec["rhy_ext"]})
         recs = _rr_records(db, dd, exts, verbose=verbose)
         if n_rec:

@@ -250,6 +250,7 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
               f" 원인이 있습니다.\n    없으면 {base} 의 파일 내용을 확인하세요.")
     else:
         print("\n  ✔ 준비 완료.  다음 순서로 실행하세요:")
+        print("      cache_status()                # Drive 에 이미 뭐가 있는지 (다운로드 전 확인)")
         print("      # ★2층(리듬·질환축) — 지금 여기:")
         print("      rr_audit_dbs()                # 리듬별 환자수·MDE (신호 안 받음, 수 분)")
         print("      build_rr_corpus(dbs=('afdb','mitdb'))   # 먼저 작게 배관 검증")
