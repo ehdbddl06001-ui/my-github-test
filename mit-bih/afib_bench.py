@@ -224,18 +224,48 @@ def _f1_af(v, yp):
     return 0.0 if tp == 0 else 2 * tp / (2 * tp + fp + fn)
 
 
-def win_macro(pred, y, pid, classes):
-    """창단위 **환자매크로 F1** — 1층과 같은 추정량이라 층 간 비교가 성립한다."""
+def win_macro(pred, y, pid, classes, detail=False):
+    """창단위 **환자매크로 F1** — 1층과 같은 추정량이라 층 간 비교가 성립한다.
+
+    detail=True 면 (평균, 환자수, 환자별 F1 벡터, 환자 id 벡터)를 준다.
+    ★벡터가 필요한 이유: 두 팔을 비교하려면 **같은 환자에서 짝지은 차이**를 봐야
+      한다. 평균만 있으면 짝을 못 짓고, 그러면 검정력을 크게 낭비한다.
+    """
     out = {}
+    ps = np.unique(pid)
     for c, nm in enumerate(classes):
-        v = []
-        for p in np.unique(pid):
+        v = []; ids = []
+        for p in ps:
             m = pid == p
             if not (y[m] == c).any():
                 continue                       # 그 리듬이 없는 환자는 제외(1층 규약)
-            v.append(_f1_af(pred[m] == c, y[m] == c))
-        out[nm] = (float(np.mean(v)) if v else float("nan"), len(v))
+            v.append(_f1_af(pred[m] == c, y[m] == c)); ids.append(p)
+        mu = float(np.mean(v)) if v else float("nan")
+        out[nm] = ((mu, len(v), np.array(v), np.array(ids)) if detail
+                   else (mu, len(v)))
     return out
+
+
+def _arm_vecs(OUT, arm, cls):
+    """한 팔의 (환자 id, 환자별 F1) — 팔 사이 짝짓기용."""
+    W = OUT["w"]; r = OUT["res"][arm]; m = r["mask"]
+    d = win_macro(r["pred"][m], W["y"][m], W["pid"][m], OUT["classes"], detail=True)
+    _, _, v, ids = d[cls]
+    return ids, v
+
+
+def _burden_vec(pred, y, pid, dur, cls_idx):
+    """환자별 (id, 실제 burden%, 예측 burden%). 환자 순서를 고정해 팔 사이 짝을 맞춘다."""
+    ps = np.unique(pid)
+    tb = np.zeros(len(ps)); pb = np.zeros(len(ps))
+    for i, p in enumerate(ps):
+        m = pid == p
+        tot = float(dur[m].sum())
+        if tot <= 0:
+            continue
+        tb[i] = 100.0 * float(dur[m][y[m] == cls_idx].sum()) / tot
+        pb[i] = 100.0 * float(dur[m][pred[m] == cls_idx].sum()) / tot
+    return ps, tb, pb
 
 
 def burden_metrics(pred, y, pid, dur, cls_idx, verbose=True, name="AFIB"):
@@ -246,15 +276,7 @@ def burden_metrics(pred, y, pid, dur, cls_idx, verbose=True, name="AFIB"):
       그래서 F1 이 같아도 burden 오차가 다르면 임상 가치가 다르다.
     ★시간 가중이다(창마다 길이가 다르므로 창 개수로 세면 편향된다).
     """
-    tb, pb = [], []
-    for p in np.unique(pid):
-        m = pid == p
-        tot = float(dur[m].sum())
-        if tot <= 0:
-            continue
-        tb.append(100.0 * float(dur[m][y[m] == cls_idx].sum()) / tot)
-        pb.append(100.0 * float(dur[m][pred[m] == cls_idx].sum()) / tot)
-    tb, pb = np.array(tb), np.array(pb)
+    ids, tb, pb = _burden_vec(pred, y, pid, dur, cls_idx)
     n = len(tb)
     nan = float("nan")
     out = dict(n=n, true=tb, pred=pb, r=nan, r_ci=(nan, nan), bias=nan, sd=nan,
@@ -324,6 +346,130 @@ def episode_metrics(pred, y, pid, t0, nov, cls_idx, short_win=3, verbose=True,
         print(f"    {name} 에피소드  Se {se:.3f} ({hit}/{tot})  "
               f"PPV {ppv:.3f} ({phit}/{ptot})  짧은발작(≤{short_win}창) Se {sse:.3f} ({shit}/{stot})")
     return dict(se=se, ppv=ppv, n_true=tot, n_pred=ptot, se_short=sse, n_short=stot)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  3.5 짝지은 검정 — 사전등록 H-J / H-K 의 실제 판정
+#
+#  ★왜 '짝'을 지어야 하는가 (이 절 전체의 근거)
+#    두 팔의 신뢰구간이 안 겹치면 다르다 — 이 논리는 **독립 표본**일 때만 맞다.
+#    여기서는 같은 68명을 두 모델이 각각 잰 것이라 환자 한 명이 두 값에 동시에
+#    영향을 준다(어려운 환자는 양쪽 다 틀린다). 그 상관을 무시하면 차이의 분산을
+#    과대평가해 **실제로 있는 차이를 놓친다**.
+#    그래서 재표집 단위를 '창'이 아니라 **환자**로 두고, 같은 환자 집합에서 두 팔의
+#    값을 함께 뽑는다. 1층 paired() 와 같은 구조다.
+# ─────────────────────────────────────────────────────────────────────────────
+def sigma_measured(OUT, verbose=True):
+    """환자별 F1 의 **실측** 표준편차 → 가정 σ=0.32 를 대체하고 MDE 를 다시 계산.
+
+    ★사전등록(LAYER2_AFIB.md §1)에 "첫 실행 뒤 실측 σ 로 갱신한다"고 적어 둔 절차다.
+      σ 를 가정값으로 놔두면 MDE 가 가정이고, 그 위에서 내린 판정도 가정이 된다.
+      팔마다 σ 가 다르므로 **가장 큰 σ**(보수적)를 쓴다.
+    """
+    cls = OUT["classes"]; out = {}
+    arms = [a for a in OUT["res"] if not a.startswith("A0")]
+    for c in cls:
+        sg, n = 0.0, 0
+        for a in arms:
+            ids, v = _arm_vecs(OUT, a, c)
+            if len(v) > 1:
+                sg = max(sg, float(v.std(ddof=1))); n = len(v)
+        out[c] = (sg, n, float(1.96 * sg / max(np.sqrt(n), 1)) if n else float("nan"))
+    if verbose:
+        print(f"\n  [검정력 갱신] 환자별 F1 의 **실측** σ (팔 중 최댓값 = 보수적)")
+        print(f"  {'리듬':<8}{'환자':>6}{'σ(가정)':>10}{'σ(실측)':>10}{'MDE(실측)':>11}")
+        for c, (sg, n, m) in out.items():
+            print(f"  {c:<8}{n:>6}{0.32:>10.3f}{sg:>10.3f}{m:>11.3f}")
+        print(f"  ※ 실측 σ 가 가정보다 작으면 검정력이 생각보다 좋다는 뜻이다(반대면 나쁘다).")
+    return out
+
+
+def paired_win(OUT, new, base, cls="AFIB", B=5000, seed=0, verbose=True):
+    """H-J: 창 F1 을 **같은 환자에서 짝지어** 비교."""
+    ia, va = _arm_vecs(OUT, base, cls)
+    ib, vb = _arm_vecs(OUT, new, cls)
+    if len(ia) != len(ib) or not np.array_equal(ia, ib):
+        raise RuntimeError("두 팔의 환자 집합이 다릅니다 — 짝을 지을 수 없습니다.")
+    d = vb - va
+    n = len(d)
+    rng = np.random.RandomState(seed)
+    bs = np.array([d[rng.randint(0, n, n)].mean() for _ in range(B)])
+    lo, hi = np.percentile(bs, [2.5, 97.5])
+    out = dict(delta=float(d.mean()), ci=(float(lo), float(hi)), n=n,
+               p_one=float((bs <= 0).mean()))
+    if verbose:
+        v = "★유의(0 배제)" if lo > 0 else ("역행" if hi < 0 else "미달(0 포함)")
+        print(f"    [{cls}] {new} − {base}  Δ={out['delta']:+.4f} "
+              f"[{lo:+.4f},{hi:+.4f}]  n={n}  {v}")
+    return out
+
+
+def paired_burden(OUT, new, base, cls="AFIB", B=5000, seed=0, verbose=True):
+    """H-K: burden 추정 오차를 **같은 환자에서 짝지어** 비교.
+
+    세 통계를 함께 본다 — 하나만 보면 오도되기 쉽다:
+      ratio_LoA  = SD(new 오차) / SD(base 오차)   <1 이면 new 가 좁다
+                   (Bland-Altman 폭은 3.92×SD 이므로 SD 비 = 폭 비)
+      d_medAE    = |오차| 중앙값의 차               SD 는 이상치 몇 명에 좌우되므로
+                   중앙값도 같이 본다(둘의 방향이 다르면 '소수 환자 이야기'다)
+      d_r        = Pearson r 의 차
+    """
+    W = OUT["w"]; ci = OUT["classes"].index(cls)
+    ra, rb = OUT["res"][base], OUT["res"][new]
+    ma, mb = ra["mask"], rb["mask"]
+    pa, ta, qa = _burden_vec(ra["pred"][ma], W["y"][ma], W["pid"][ma], W["dur"][ma], ci)
+    pb_, tb, qb = _burden_vec(rb["pred"][mb], W["y"][mb], W["pid"][mb], W["dur"][mb], ci)
+    if not np.array_equal(pa, pb_):
+        raise RuntimeError("두 팔의 환자 집합이 다릅니다 — 짝을 지을 수 없습니다.")
+    if not np.allclose(ta, tb):
+        raise RuntimeError("실제 burden 이 팔마다 다릅니다 — 마스크가 어긋났습니다.")
+    ea, eb = qa - ta, qb - tb                     # 팔별 오차(%p)
+    n = len(ta)
+
+    def stat(k):
+        sa, sb = ea[k].std(ddof=1), eb[k].std(ddof=1)
+        ra_ = np.corrcoef(ta[k], qa[k])[0, 1] if ta[k].std() > 0 and qa[k].std() > 0 else np.nan
+        rb_ = np.corrcoef(tb[k], qb[k])[0, 1] if tb[k].std() > 0 and qb[k].std() > 0 else np.nan
+        return (sb / sa if sa > 0 else np.nan,
+                float(np.median(np.abs(eb[k])) - np.median(np.abs(ea[k]))),
+                float(rb_ - ra_))
+
+    obs = stat(np.arange(n))
+    rng = np.random.RandomState(seed)
+    bs = np.array([stat(rng.randint(0, n, n)) for _ in range(B)])
+    ci95 = np.nanpercentile(bs, [2.5, 97.5], axis=0)
+    out = dict(n=n,
+               ratio_loa=obs[0], ratio_ci=(float(ci95[0, 0]), float(ci95[1, 0])),
+               d_medae=obs[1],   medae_ci=(float(ci95[0, 1]), float(ci95[1, 1])),
+               d_r=obs[2],       r_ci=(float(ci95[0, 2]), float(ci95[1, 2])),
+               loa_base=3.92 * ea.std(ddof=1), loa_new=3.92 * eb.std(ddof=1))
+    if verbose:
+        v = ("★유의(1 배제)" if out["ratio_ci"][1] < 1 else
+             ("역행" if out["ratio_ci"][0] > 1 else "미달(1 포함)"))
+        print(f"    [{cls}] {new} vs {base}  n={n}")
+        print(f"      LoA 폭  {out['loa_base']:.1f} → {out['loa_new']:.1f} %p"
+              f"   비 {out['ratio_loa']:.3f} [{out['ratio_ci'][0]:.3f},"
+              f"{out['ratio_ci'][1]:.3f}]  {v}")
+        print(f"      |오차| 중앙값 차 {out['d_medae']:+.2f}%p "
+              f"[{out['medae_ci'][0]:+.2f},{out['medae_ci'][1]:+.2f}]"
+              f"   r 차 {out['d_r']:+.3f} [{out['r_ci'][0]:+.3f},{out['r_ci'][1]:+.3f}]")
+    return out
+
+
+def burden_outliers(OUT, arm, cls="AFIB", k=6, verbose=True):
+    """burden 오차가 큰 환자 상위 k명 — LoA 를 넓히는 것이 '전반'인지 '몇 명'인지 가른다."""
+    W = OUT["w"]; ci = OUT["classes"].index(cls); r = OUT["res"][arm]; m = r["mask"]
+    ids, t, q = _burden_vec(r["pred"][m], W["y"][m], W["pid"][m], W["dur"][m], ci)
+    e = q - t
+    o = np.argsort(-np.abs(e))[:k]
+    if verbose:
+        print(f"\n    [{arm}] {cls} burden 오차 상위 {k}명 "
+              f"(전체 |오차| 합 대비 이들의 비중 "
+              f"{100*np.abs(e[o]).sum()/max(np.abs(e).sum(),1e-9):.0f}%)")
+        print(f"      {'환자':>6}{'실제%':>9}{'예측%':>9}{'오차%p':>9}")
+        for i in o:
+            print(f"      {ids[i]:>6}{t[i]:>9.1f}{q[i]:>9.1f}{e[i]:>+9.1f}")
+    return ids[o], t[o], q[o], e[o]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -547,22 +693,38 @@ def report_afib(OUT, base="A1.RR산포", show=True):
                             ci, name=c)
             burden_metrics(r["pred"][m], y[m], pid[m], W["dur"][m], ci, name=c)
 
+    # ── 검정력 갱신: 가정 σ 를 실측으로 대체 ──────────────────────────────
+    sigma_measured(OUT)
+
     # ── 사전등록 가설 판정 ────────────────────────────────────────────────
+    #  ★판정은 **짝지은 부트스트랩**으로 한다. 예전엔 '2×MDE 막대'를 썼는데 그건
+    #    어림이다. MDE 는 "이 표본에서 검출 가능한 최소 효과"이지 "이 비교의 불확실성"이
+    #    아니다. 두 팔이 같은 환자를 보므로 짝지으면 훨씬 좁은 구간이 나온다.
     if base in rows:
-        print(f"\n=== 사전등록 판정 (기준 {base}, Bonferroni k=4) ===")
-        mde = {c: 1.96 * 0.32 / max(np.sqrt(rows[base][c][1]), 1) for c in cls}
-        for nm in ("A2.RSN", "A3.RSN+도메인"):
-            if nm not in rows:
-                continue
+        print(f"\n=== 사전등록 판정 (기준 {base}, 짝지은 부트스트랩 B=5000) ===")
+        cand = [a for a in ("A2.RSN", "A2c.RSN(스칼라X)", "A3.RSN+도메인") if a in rows]
+        print(f"\n  [H-J] 창 F1 — 95% CI 가 0 을 배제해야 지지")
+        for nm in cand:
             for c in cls:
                 if c == "N":
                     continue
-                dlt = rows[nm][c][0] - rows[base][c][0]
-                bar = mde[c] * 2.0        # Bonferroni k=4 ≈ z 1.96→2.50, 여유 있게 2×
-                v = "★유의" if dlt > bar else ("미달" if dlt > 0 else "역행")
-                print(f"  {nm} − {base}  [{c}]  Δ={dlt:+.3f}  기준 {bar:+.3f}  {v}")
-        print(f"  ※ H-L(AFL 에서 A2−A1 ≤ 0)은 **영가설 방향의 예측**이다. 그것이 확인되면"
-              f"\n    'AFL 은 RR 로 안 된다 → 형태축이 필요하다'의 직접 근거가 된다.")
+                try:
+                    paired_win(OUT, nm, base, cls=c)
+                except Exception as e:
+                    print(f"    [{c}] {nm}: 검정 실패 {type(e).__name__}: {e}")
+        print(f"\n  [H-K] burden 오차 — LoA 폭 비의 95% CI 가 1 을 배제해야 지지")
+        for nm in cand:
+            for c in cls:
+                if c == "N":
+                    continue
+                try:
+                    paired_burden(OUT, nm, base, cls=c)
+                except Exception as e:
+                    print(f"    [{c}] {nm}: 검정 실패 {type(e).__name__}: {e}")
+        print(f"\n  ※ Bonferroni: 위 비교가 k 개면 유의수준을 k 로 나눠야 한다."
+              f" 95% CI 는 보정 전 값이므로,\n    경계에 걸친 결과는 지지로 읽지 않는다.")
+        print(f"  ※ H-L(AFL 에서 A2−A1 ≤ 0)은 **영가설 방향의 예측**이다. AFL 은 환자 수가"
+              f" 적어\n    크기는 보고하지 않고 방향만 취한다(사전등록 §8.4).")
     return rows
 
 
@@ -649,6 +811,59 @@ def selftest():
        f"burden 이 시간가중 ({b2['true'][0]:.2f}% ≠ 개수기준 62.50%)")
 
     ok(set(DEFAULT_ARMS) >= {"A0.자명", "A1.RR산포", "A2.RSN", "A3.RSN+도메인"}, "기본 팔 등록")
+
+    # ── 짝지은 검정 (H-J / H-K) ────────────────────────────────────────────
+    #  torch 없이 검증하려고 예측을 손으로 만든 가짜 OUT 을 쓴다.
+    rng = np.random.RandomState(0)
+    wf = make_windows(_synth_rr(n_pat=40, n_beat=1500, seed=1), W=64, verbose=False)
+    keep = wf["y"] >= 0
+    yv, pidv = wf["y"], wf["pid"]
+
+    def mkout(preds):
+        return dict(classes=wf["classes"], split="patient",
+                    res={k: dict(pred=np.where(keep, p, -1), mask=keep.copy(),
+                                 score=None) for k, p in preds.items()},
+                    w=dict(y=yv, pid=pidv, db=wf["db"], dur=wf["dur"],
+                           nov=wf["nov"], t0=wf["t0"]))
+
+    def noisy(flip):
+        p = yv.copy()
+        f = rng.rand(len(p)) < flip
+        p[f] = rng.randint(0, 3, f.sum())
+        return p
+
+    perfect = yv.copy()
+    O = mkout({"A1.RR산포": noisy(0.30), "A2.RSN": noisy(0.05), "same": None})
+    O["res"]["same"] = dict(pred=np.where(keep, O["res"]["A1.RR산포"]["pred"], -1),
+                            mask=keep.copy(), score=None)
+
+    # (1) 같은 예측끼리는 차이가 정확히 0이고 CI 도 0을 포함해야 한다
+    s = paired_win(O, "same", "A1.RR산포", cls="AFIB", B=400, verbose=False)
+    ok(abs(s["delta"]) < 1e-12 and s["ci"][0] <= 0 <= s["ci"][1],
+       "짝지은 F1: 동일 예측 → Δ=0, CI 가 0 포함")
+    sb = paired_burden(O, "same", "A1.RR산포", cls="AFIB", B=400, verbose=False)
+    ok(abs(sb["ratio_loa"] - 1.0) < 1e-12 and sb["ratio_ci"][0] <= 1 <= sb["ratio_ci"][1],
+       "짝지은 burden: 동일 예측 → 비=1, CI 가 1 포함")
+
+    # (2) 명백히 나은 팔은 잡아내야 한다(검정력 확인 — 통계가 무디면 여기서 걸린다)
+    s2 = paired_win(O, "A2.RSN", "A1.RR산포", cls="AFIB", B=1000, verbose=False)
+    ok(s2["delta"] > 0 and s2["ci"][0] > 0, f"짝지은 F1: 5%오류 > 30%오류 검출 (Δ={s2['delta']:+.3f})")
+    sb2 = paired_burden(O, "A2.RSN", "A1.RR산포", cls="AFIB", B=1000, verbose=False)
+    ok(sb2["ratio_loa"] < 1 and sb2["ratio_ci"][1] < 1,
+       f"짝지은 burden: LoA 폭 비 {sb2['ratio_loa']:.3f}, CI 상한 {sb2['ratio_ci'][1]:.3f} < 1")
+
+    # (3) 환자 집합이 어긋나면 조용히 넘어가지 말고 예외를 던져야 한다
+    Obad = mkout({"A1.RR산포": noisy(0.3), "A2.RSN": noisy(0.1)})
+    Obad["res"]["A2.RSN"]["mask"] = keep & (pidv != pidv.max())
+    try:
+        paired_burden(Obad, "A2.RSN", "A1.RR산포", cls="AFIB", B=50, verbose=False)
+        ok(False, "환자 집합 불일치에 예외")
+    except RuntimeError:
+        ok(True, "환자 집합이 어긋나면 예외 — 잘못된 짝짓기를 조용히 통과시키지 않음")
+
+    # (4) 실측 σ 가 계산되고 유한해야 한다
+    sg = sigma_measured(O, verbose=False)
+    ok(all(np.isfinite(v[0]) and v[0] >= 0 for v in sg.values()), "실측 σ 가 유한·비음수")
     print("=== 전 항목 통과 ===")
     return True
 
