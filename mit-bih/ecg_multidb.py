@@ -920,12 +920,27 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
     return out
 
 
-def atrial_audit(atrial=None, corpus=None, W=128, stride=None, verbose=True):
-    """★모델 이전의 기전 검증(사전등록 H-P).
+def _auc_rank(x, pos):
+    """순위 기반 AUC(=Mann-Whitney U). NaN 제외, 동점은 평균순위."""
+    from scipy.stats import rankdata
+    m = np.isfinite(x)
+    x, pos = np.asarray(x)[m], np.asarray(pos, bool)[m]
+    n1 = int(pos.sum()); n0 = int((~pos).sum())
+    if n1 < 2 or n0 < 2:
+        return float("nan")
+    r = rankdata(x)
+    return float((r[pos].sum() - n1 * (n1 + 1) / 2) / (n1 * n0))
 
-    "AFL 은 스펙트럼 집중도(sc)가 AFIB 보다 높다" 가 특징 자체에서 보이는지 본다.
-    안 보이면 **추출이 잘못된 것**이지 모델 문제가 아니다. 모델을 붙이기 전에
-    이걸 확인해야 실패했을 때 어디를 고칠지 알 수 있다.
+
+def atrial_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
+                 verbose=True):
+    """★모델 이전의 기전 검증 (사전등록 H-P / H-R).
+
+    ── 이 함수가 반드시 두 층위로 보는 이유 ─────────────────────────────────
+    창 단위로만 보면 **창을 많이 가진 소수 환자가 결론을 만든다**. AFL 은 환자가
+    7명뿐이라 한 명이 창 50개를 내면 그 사람 하나가 '기전 확인'을 만들어낼 수 있다.
+    그래서 (환자, 리듬) 칸마다 중앙값을 내어 **환자 단위 AUC**를 따로 계산하고,
+    창 AUC 와 크게 벌어지면 경고한다. 벌어짐 자체가 진단 정보다.
     """
     g = globals()
     win_starts = g["win_starts"]
@@ -936,7 +951,7 @@ def atrial_audit(atrial=None, corpus=None, W=128, stride=None, verbose=True):
     K = {(int(p), int(s)): i for i, (p, s) in enumerate(a["key"])}
     rn = [str(x) for x in d["rhythm_names"]]
     pid, rhy = d["pid"], d["rhythm"]
-    lab, feat = [], []
+    lab, feat, who = [], [], []
     for p in np.unique(pid):
         idx = np.flatnonzero(pid == p)
         for s in win_starts(len(idx), W, stride):
@@ -948,28 +963,104 @@ def atrial_audit(atrial=None, corpus=None, W=128, stride=None, verbose=True):
             k = int(np.argmax(c))
             if c[k] / W < 0.90:
                 continue
-            lab.append(rn[u[k]]); feat.append(a["feat"][j])
-    lab = np.array(lab); feat = np.array(feat)
-    print(f"\n=== 심방활동 특징 감사 (창 {len(lab):,}) ===")
-    print(f"  {'리듬':<8}{'창':>7}" + "".join(f"{n:>10}" for n in names[:5]))
-    for nm in ("N", "AFIB", "AFL"):
+            lab.append(rn[u[k]]); feat.append(a["feat"][j]); who.append(int(p))
+    lab = np.array(lab); feat = np.array(feat); who = np.array(who)
+    TGT = ("N", "AFIB", "AFL")
+
+    # ── (환자, 리듬) 칸별 중앙값 — 환자 단위 통계의 기본 단위 ────────────────
+    cells = {}                       # (pid, rhythm) → 특징 중앙값
+    for nm in TGT:
+        for p in np.unique(who[lab == nm]) if (lab == nm).any() else []:
+            m = (lab == nm) & (who == p)
+            if m.sum() >= min_win:
+                cells[(int(p), nm)] = np.nanmedian(feat[m], axis=0)
+
+    print(f"\n=== 심방활동 특징 감사  창 {len(lab):,} / 환자 {len(np.unique(who))} ===")
+    print(f"  ('환자' 열 = 그 리듬 창을 {min_win}개 이상 가진 환자 / 조금이라도 가진 환자)")
+    nsp = len(SPEC_NAMES)
+
+    def _tbl(title, cols):
+        print(f"\n  [{title}]  (창 중앙값)")
+        print(f"  {'리듬':<7}{'창':>7}{'환자':>7}" + "".join(f"{names[i]:>10}" for i in cols))
+        for nm in TGT:
+            m = lab == nm
+            npat = len({k[0] for k in cells if k[1] == nm})
+            nall = len(np.unique(who[m])) if m.any() else 0
+            # '환자' 는 창 min_win 개 이상을 가진 환자 수 / 그 리듬을 가진 전체 환자 수.
+            # 둘이 크게 다르면 대부분의 환자가 그 리듬을 아주 조금만 가졌다는 뜻이다.
+            pc = f"{npat}/{nall}"
+            if m.sum() < min_win:
+                print(f"  {nm:<7}{int(m.sum()):>7}{pc:>7}   (표본 부족)"); continue
+            v = np.nanmedian(feat[m], axis=0)
+            print(f"  {nm:<7}{int(m.sum()):>7}{pc:>7}"
+                  + "".join(f"{v[i]:>10.3f}" for i in cols))
+
+    _tbl("심방활동 스펙트럼 (QRST 소거 잔차)", list(range(nsp)))
+    _tbl("P-QRS-T 관계 (원신호)", list(range(nsp, len(names) - 1)))
+
+    # ── 판별력: 창 AUC vs 환자 AUC ───────────────────────────────────────
+    def _cmp(a_nm, b_nm):
+        wm = np.isin(lab, [a_nm, b_nm])
+        if wm.sum() < 10:
+            print(f"\n  [{a_nm} vs {b_nm}] 표본 부족 — 생략"); return
+        wpos = lab[wm] == a_nm
+        ck = [k for k in cells if k[1] in (a_nm, b_nm)]
+        cX = np.array([cells[k] for k in ck]); cpos = np.array([k[1] == a_nm for k in ck])
+        na, nb = int(cpos.sum()), int((~cpos).sum())
+        print(f"\n  [{a_nm} vs {b_nm}]  창 {int(wm.sum()):,}  |  환자칸 {a_nm} {na} vs {b_nm} {nb}")
+        if na < 2 or nb < 2:
+            print(f"    ⚠ 환자칸이 2개 미만 — 환자단위 AUC 계산 불가. 창 AUC 만 참고할 것.")
+        print(f"    {'특징':<11}{'창AUC':>8}{'환자AUC':>9}   판정")
+        rows = []
+        for i, n in enumerate(names):
+            if n == "lead":
+                continue
+            aw = _auc_rank(feat[wm][:, i], wpos)
+            ap = _auc_rank(cX[:, i], cpos) if (na >= 2 and nb >= 2) else float("nan")
+            rows.append((max(aw, 1 - aw) if np.isfinite(aw) else 0, i, n, aw, ap))
+        for _, i, n, aw, ap in sorted(rows, reverse=True)[:8]:
+            d_ = abs(aw - 0.5)
+            if not np.isfinite(ap):
+                v = "환자단위 미산출"
+            elif abs(aw - ap) > 0.15:
+                v = "⚠창≫환자 — 소수 환자가 끎"
+            elif d_ < 0.10:
+                v = "판별력 낮음"
+            else:
+                v = "★일치(견고)"
+            aps = f"{ap:>9.3f}" if np.isfinite(ap) else f"{'—':>9}"
+            print(f"    {n:<11}{aw:>8.3f}{aps}   {v}")
+
+    _cmp("AFL", "AFIB")
+    _cmp("AFL", "N")
+    _cmp("AFIB", "N")
+
+    # ── 사전등록 판정 ────────────────────────────────────────────────────
+    def med(nm, i):
         m = lab == nm
-        if m.sum() < 5:
-            print(f"  {nm:<8}{int(m.sum()):>7}   (표본 부족)"); continue
-        v = np.nanmedian(feat[m], axis=0)
-        print(f"  {nm:<8}{int(m.sum()):>7}" + "".join(f"{v[i]:>10.3f}" for i in range(5)))
-    ok_afl = (lab == "AFL").sum() >= 5 and (lab == "AFIB").sum() >= 5
-    if ok_afl:
-        sc_fl = float(np.nanmedian(feat[lab == "AFL", 1]))
-        sc_fb = float(np.nanmedian(feat[lab == "AFIB", 1]))
-        df_fl = float(np.nanmedian(feat[lab == "AFL", 0]))
-        df_fb = float(np.nanmedian(feat[lab == "AFIB", 0]))
-        print(f"\n  [H-P] 집중도 sc:  AFL {sc_fl:.3f} vs AFIB {sc_fb:.3f}  "
-              f"→ {'★기전 확인' if sc_fl > sc_fb else '✗ 예상과 반대 — 추출을 점검할 것'}")
-        print(f"       지배주파수 daf: AFL {df_fl:.2f} Hz vs AFIB {df_fb:.2f} Hz  "
-              f"(문헌: AFL 4~5.7, AFIB 5.8~10)")
-        print(f"  ※ 이 표가 문헌과 어긋나면 모델을 붙이기 전에 QRST 소거를 먼저 고친다.")
-    return lab, feat, names
+        return float(np.nanmedian(feat[m, i])) if m.sum() >= min_win else float("nan")
+    i_sc, i_daf = names.index("sc"), names.index("daf")
+    i_tp, i_prcv = names.index("tp_rms"), names.index("pr_cv")
+    print(f"\n  === 사전등록 판정 ===")
+    sc_fl, sc_fb = med("AFL", i_sc), med("AFIB", i_sc)
+    print(f"  [H-P] 집중도 sc: AFL {sc_fl:.3f} vs AFIB {sc_fb:.3f}  "
+          f"→ {'★기전 확인' if sc_fl > sc_fb else '✗ 예상과 반대 — 추출 점검'}")
+    df_fl, df_fb, df_n = med("AFL", i_daf), med("AFIB", i_daf), med("N", i_daf)
+    print(f"  [H-P] 지배주파수 daf: N {df_n:.2f} / AFIB {df_fb:.2f} / AFL {df_fl:.2f} Hz"
+          f"  (문헌 AFL 4~5.7, AFIB 5.8~10)")
+    if abs(df_fb - df_n) < 0.5:
+        print(f"    ✗ AFIB 의 daf 가 정상과 거의 같다 → daf 는 심방 주파수가 아니라")
+        print(f"      **QRST 소거 잔차**를 재고 있다. daf 를 단독 근거로 쓰면 안 된다.")
+        print(f"      (스펙트럼 '모양' 지표 sc·sent·afl_ratio 는 이 오염에 덜 민감하다)")
+    tp_n, tp_fl, tp_fb = med("N", i_tp), med("AFL", i_tp), med("AFIB", i_tp)
+    pv_n, pv_fb = med("N", i_prcv), med("AFIB", i_prcv)
+    print(f"  [H-R] 등전위 tp_rms: N {tp_n:.4f} / AFIB {tp_fb:.4f} / AFL {tp_fl:.4f}"
+          f"  → {'★확인' if (tp_fl > tp_n and tp_fb > tp_n) else '미확인'}")
+    print(f"  [H-R] PR 변동 pr_cv: N {pv_n:.4f} / AFIB {pv_fb:.4f}"
+          f"  → {'★확인' if pv_fb > pv_n else '미확인'}")
+    print(f"\n  ※ '⚠창≫환자' 가 붙은 특징은 소수 환자가 만든 것이다. 그 특징에 기댄")
+    print(f"    결론은 환자 수를 늘리기 전까지 유보한다(사전등록 §8.4).")
+    return dict(lab=lab, feat=feat, who=who, names=names, cells=cells)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
