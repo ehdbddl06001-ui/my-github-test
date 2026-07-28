@@ -296,7 +296,7 @@ P_LO, P_HI = SEGS["P"]          # 하위호환
 
 def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
          segs=(), use_seq=True, w_r=64, w_m=16, w_a=16, w_p=16, p_drop=0.1,
-         n_class=3, n_rhythm=0):
+         n_class=3, n_rhythm=0, n_domain=0):
     """리듬 주(主) · 형태 보조(補) 구조.
 
     리듬 가지: dilation 1-2-4 의 3층 TCN. 수용야 17 = 창 전체(K=8)를 정확히 덮는다.
@@ -367,6 +367,23 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
             #   n_rhythm=0 이면 헤드를 만들지 않는다(기존 3-class 동작 그대로).
             s.rhy = (nn.Sequential(nn.Linear(d, 64), nn.ReLU(), nn.Dropout(p_drop),
                                    nn.Linear(64, n_rhythm)) if n_rhythm > 0 else None)
+            # ── DB(도메인) 조건부 가중치 — 요청에 따른 선택 기능 ────────────────
+            #  융합 표현 z 에 도메인별 FiLM(스케일·이동)을 건다. 도메인 3개면
+            #  2×96×3 = 576 파라미터로 매우 작다(환자 단위였던 N6/N12 와 다른 점).
+            #  항등(γ=1, β=0)으로 초기화해 켜도 처음엔 아무것도 안 바뀐다.
+            #
+            #  ★★반드시 알고 쓸 것 — 이 기능은 '개선'을 만들기 쉽고 그 개선이
+            #    가짜이기도 쉽다. DB 는 클래스 사전확률과 강하게 얽혀 있다
+            #    (S 유병률 svdb 6.61% vs incart 1.11%, Q 는 mitdb 7.35% vs 나머지 0%).
+            #    DB 라벨을 주면 모델이 "이 DB 는 S 가 흔하다"를 외울 수 있고, 그건
+            #    심전도를 더 잘 읽는 것이 아니다. 같은 DB 안에서는 점수가 오르지만
+            #    새 병원 데이터에는 전이되지 않는다.
+            #  → 판정은 반드시 **leave-one-DB-out** 으로 한다(bench_rhythm(split="db")).
+            #    같은 DB 안에서만 오르고 LODO 에서 무너지면 사전확률 암기다.
+            s.dg = s.dbi = None
+            if n_domain > 0:
+                s.dg = nn.Embedding(n_domain, d); s.dbi = nn.Embedding(n_domain, d)
+                nn.init.ones_(s.dg.weight); nn.init.zeros_(s.dbi.weight)
 
         def _mk(s, bt, rf):
             """형태 입력 구성. use_ref 면 [비트, 환자템플릿, 비트−템플릿] (6채널).
@@ -380,7 +397,7 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
                 return torch.cat([bt, bt, torch.zeros_like(bt)], 1)
             return torch.cat([bt, rf, bt - rf], 1)
 
-        def forward(s, sq, bt, ax, rf=None):
+        def forward(s, sq, bt, ax, rf=None, dom=None):
             parts = []
             if s.use_seq:
                 h = s.rz(sq)
@@ -395,6 +412,8 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
             if s.ap is not None:
                 parts.append(s.ap(ax))
             z = torch.cat(parts, -1)
+            if s.dg is not None and dom is not None:
+                z = z * s.dg(dom) + s.dbi(dom)        # 도메인 조건부 FiLM
             return s.cls(z) if s.rhy is None else (s.cls(z), s.rhy(z))
 
     return RSN()

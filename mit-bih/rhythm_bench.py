@@ -87,7 +87,8 @@ def load_rhythm(path=None, min_records=8, exclude=("(미상)",), verbose=True):
     y = np.array([remap[v] for v in rhy[sel]], np.int64)
     cls = [names[i] for i in keep_ids]
     out = dict(beat=beat[sel], y=y, pid=pid[sel], pre=pre[sel], post=post[sel],
-               classes=cls, y5=(y5[sel] if y5 is not None else None))
+               classes=cls, y5=(y5[sel] if y5 is not None else None),
+               db=(d["db"][sel] if "db" in d else None))
     if verbose:
         print(f"리듬 과제 데이터: {len(y):,}비트  환자 {len(np.unique(out['pid']))}명  "
               f"클래스 {len(cls)}종")
@@ -211,8 +212,16 @@ def _fit_mlp(F, y, tr, te, ncls, seed, epochs=20, bs=512):
 #  4. 하니스
 # ─────────────────────────────────────────────────────────────────────────────
 def bench_rhythm(n_rep=1, k=5, K=32, min_records=8, path=None, only=None,
-                 epochs=20, verbose=True):
-    """리듬 분류 벤치. 규율은 SVEB 하니스와 동일(환자 GroupKFold, 결정론적 분할)."""
+                 epochs=20, split="patient", verbose=True):
+    """리듬 분류 벤치. 규율은 SVEB 하니스와 동일(환자 GroupKFold, 결정론적 분할).
+
+    split="patient" : 환자 GroupKFold (기본)
+    split="db"      : ★leave-one-DB-out — 한 DB 를 통째로 빼고 학습, 그 DB 로 평가.
+                      **DB 조건부 가중치의 진위를 가르는 유일한 검정**이다.
+                      같은 DB 안에서만 오르고 여기서 무너지면 사전확률 암기다.
+                      (테스트 DB 의 도메인 임베딩은 학습에서 본 적이 없으므로
+                       평균 도메인으로 폴백된다 — 그게 정직한 배포 조건이다.)
+    """
     from sklearn.model_selection import GroupKFold
     D = load_rhythm(path=path, min_records=min_records, verbose=verbose)
     beat, y, pid, pre, post, cls = (D["beat"], D["y"], D["pid"], D["pre"],
@@ -239,9 +248,31 @@ def bench_rhythm(n_rep=1, k=5, K=32, min_records=8, path=None, only=None,
         ctxc = rc(pre, post, pid, K=K, poincare=True, verbose=verbose)
 
     FRR = _rr_scalars(pre, post, pid) if _want("A1.RR스칼라") else None
-    gkf = GroupKFold(n_splits=k)
+
+    # 분할 생성
+    if split == "db":
+        dbv = D.get("db")
+        if dbv is None:
+            raise RuntimeError("npz 에 db 열이 없습니다 — build_multi 로 만든 파일이 필요합니다.")
+        uds = [d for d in np.unique(dbv) if (dbv == d).sum() > 0]
+        folds = []
+        for d in uds:
+            te = np.flatnonzero(dbv == d); tr = np.flatnonzero(dbv != d)
+            # 그 DB 에만 있는 클래스는 학습에서 못 보므로 평가에서 뺀다(불가능한 문제 방지)
+            seen = set(np.unique(y[tr]).tolist())
+            keep = np.isin(y[te], list(seen))
+            if keep.sum() < len(te) and verbose:
+                print(f"  [LODO {d}] 학습에 없는 클래스의 비트 {int((~keep).sum()):,}개 평가 제외")
+            folds.append((tr, te[keep], str(d)))
+        if verbose:
+            print(f"\n★leave-one-DB-out: {len(folds)}폴드 {[f[2] for f in folds]}")
+            print(f"  DB 조건부 가중치가 여기서도 이기면 진짜, 여기서만 무너지면 사전확률 암기다.")
+    else:
+        gkf = GroupKFold(n_splits=k)
+        folds = [(a, b, None) for a, b in gkf.split(np.arange(len(y)), y, groups=pid)]
+
     for rep in range(n_rep):
-        for fi, (tr, te) in enumerate(gkf.split(np.arange(len(y)), y, groups=pid)):
+        for fi, (tr, te, tag) in enumerate(folds):
             seed = 100 * rep + fi
             order.append(te)
             if _want("A0.다수결"):
@@ -266,7 +297,8 @@ def bench_rhythm(n_rep=1, k=5, K=32, min_records=8, path=None, only=None,
                     print(f"  ⚠ arm '{nm}' 실패 → 제외: {type(e).__name__}: {e}")
                     dead.add(nm)
             if verbose:
-                print(f"  rep{rep} fold{fi} 완료 (train {len(tr):,} / test {len(te):,})")
+                print(f"  rep{rep} fold{fi}{'('+tag+')' if tag else ''} 완료 "
+                      f"(train {len(tr):,} / test {len(te):,})")
     if dead:
         ARMS = [a for a in ARMS if a not in dead]
     idx = np.concatenate(order); yA = y[idx]; pA = pid[idx]
@@ -281,8 +313,12 @@ def bench_rhythm(n_rep=1, k=5, K=32, min_records=8, path=None, only=None,
         print(f"  {a:<14}" + "".join(f"{pc[c]['macro']:>12.3f}" if c in pc else f"{'—':>12}"
                                      for c in cls) + f"{RES[a]['mean']:>10.3f}")
     print(f"\n  ※ 클래스마다 환자 수가 달라 MDE 가 다르다(위 검정력 표). 평균은 참고용.")
+    if split == "db":
+        print(f"\n  ★이 수치는 leave-one-DB-out 이다 — 학습에서 본 적 없는 DB 로 평가했다.")
+        print(f"    환자 GroupKFold 수치보다 낮은 것이 정상이며, 그 격차가 'DB 특화로")
+        print(f"    얻은 것 중 전이되지 않는 몫'이다.")
     return dict(res=RES, y=yA, pid=pA, order=idx, classes=cls, mde=mde,
-                arms=ARMS, dead=sorted(dead))
+                arms=ARMS, dead=sorted(dead), split=split)
 
 
 def _fit_rsn_rhythm(c, beat, y, tr, te, ncls, seed, epochs=20, bs=512):
@@ -422,12 +458,37 @@ def selftest():
 
     OUT = bench_rhythm(n_rep=1, k=3, K=16, path=f"{td}/ecg_multi.npz",
                        epochs=3, verbose=False)
+    ok(OUT["split"] == "patient", "기본 분할은 환자 GroupKFold")
     ok(set(OUT["res"]) == {"A0.다수결", "A1.RR스칼라", "A2.RSN-리듬"}, "3개 arm 실행")
     ok(OUT["res"]["A2.RSN-리듬"]["mean"] > OUT["res"]["A0.다수결"]["mean"],
        f"RSN {OUT['res']['A2.RSN-리듬']['mean']:.3f} > 다수결 "
        f"{OUT['res']['A0.다수결']['mean']:.3f}")
     rp = report_rhythm(OUT, show=False)
     ok(any("AFIB" in k2 for k2 in rp), "클래스별 대응 비교 산출")
+
+    # ★leave-one-DB-out — DB 조건부 가중치의 진위를 가르는 검정
+    np.savez(f"{td}/multi2.npz", beat=beat, y5=np.zeros(len(rhy), np.int64),
+             y3=np.zeros(len(rhy), np.int64), pid=pid, pre_rr=pre, post_rr=post,
+             rhythm=rhy, rhythm_names=np.array(names + ["(미상)"]),
+             sym=np.array(["N"] * len(rhy)),
+             db=np.where(pid % 2 == 0, "dbA", "dbB"),        # 두 DB 로 가르기
+             rr_edge=np.zeros(len(rhy), bool))
+    O2 = bench_rhythm(n_rep=1, K=16, path=f"{td}/multi2.npz", split="db",
+                      only=["A0.다수결", "A1.RR스칼라"], epochs=3, verbose=False)
+    ok(O2["split"] == "db", "split='db' 로 LODO 실행")
+    ok(len(np.unique(O2["pid"])) == len(np.unique(D["pid"])),
+       f"LODO 도 (제외 클래스 뺀) 전체 환자를 한 번씩 평가 "
+       f"({len(np.unique(O2['pid']))}명)")
+    ok(O2["res"]["A1.RR스칼라"]["mean"] > O2["res"]["A0.다수결"]["mean"],
+       "LODO 에서도 RR 기준선이 다수결을 이김")
+
+    # n_domain FiLM 이 항등으로 시작하는지 (도메인 정보가 없을 때 기존 동작 보존)
+    import torch
+    M = g["_rsn"](4, 33, 10, n_class=3, n_domain=2); M.eval()
+    a1 = (torch.randn(4, 4, 33), torch.randn(4, 2, 300), torch.randn(4, 10))
+    with torch.no_grad():
+        z0 = M(*a1, None, None); z1 = M(*a1, None, torch.tensor([0, 1, 0, 1]))
+    ok(torch.allclose(z0, z1, atol=1e-6), "도메인 FiLM 은 항등 초기화(켜도 처음엔 무변화)")
     print("=== 전 항목 통과 ===")
     return True
 
