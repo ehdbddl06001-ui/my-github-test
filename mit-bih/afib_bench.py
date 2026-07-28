@@ -894,10 +894,52 @@ def report_afib(OUT, base="A1.RR산포", show=True):
                     paired_burden(OUT, nm, base, cls=c)
                 except Exception as e:
                     print(f"    [{c}] {nm}: 검정 실패 {type(e).__name__}: {e}")
+        # ── H-N/H-O/H-Q: 심방축의 **순효과**. 기준은 A1 이 아니라 A2 다 ──────
+        #  ★이 블록이 없어서 A4 가 사전등록 표에 통째로 빠진 적이 있다. 팔은 돌았고
+        #    F1 도 찍혔는데 검정만 안 돼서, 표를 눈으로 비교하고 넘어갈 뻔했다.
+        #    가설이 있으면 검정도 자동으로 돌아야 한다 — 손으로 고른 목록은 또 샌다.
+        a2, a4, a4c = "A2.RSN", "A4.RSN+심방활동", "A4c.심방활동만"
+        if a4 in rows and a2 in rows:
+            print(f"\n  [H-N/H-O] 심방축 순효과 — A4 − A2 (기준이 A1 이 아님에 주의)")
+            print(f"    H-N: AFL 에서 > 0 이어야 지지 / H-O: AFIB 에서 ≈ 0 이 예측")
+            for c in cls:
+                if c == "N":
+                    continue
+                try:
+                    paired_win(OUT, a4, a2, cls=c)
+                except Exception as e:
+                    print(f"    [{c}] {a4}: 검정 실패 {type(e).__name__}: {e}")
+        if a4 in rows and a4c in rows:
+            print(f"\n  [H-Q] 시퀀스가 정말 필요한가 — A4 − A4c (AFL 에서 > 0 이어야 지지)")
+            for c in cls:
+                if c == "N":
+                    continue
+                try:
+                    paired_win(OUT, a4, a4c, cls=c)
+                except Exception as e:
+                    print(f"    [{c}] {a4} vs {a4c}: 검정 실패 {type(e).__name__}: {e}")
+
         print(f"\n  ※ Bonferroni: 위 비교가 k 개면 유의수준을 k 로 나눠야 한다."
               f" 95% CI 는 보정 전 값이므로,\n    경계에 걸친 결과는 지지로 읽지 않는다.")
         print(f"  ※ H-L(AFL 에서 A2−A1 ≤ 0)은 **영가설 방향의 예측**이다. AFL 은 환자 수가"
               f" 적어\n    크기는 보고하지 않고 방향만 취한다(사전등록 §8.4).")
+        # ★A3 은 split="patient" 에서 유의해도 지지로 읽으면 안 된다 ────────────
+        if OUT["split"] != "db" and "A3.RSN+도메인" in rows:
+            dbs = sorted(set(map(str, OUT["w"]["db"])))
+            print(f"\n  ✗ [A3 판정 보류] split=\"{OUT['split']}\" 에서는 A3 을 판정하지 않는다"
+                  f"(사전등록 §5·§6).")
+            print(f"    A3 은 창이 어느 DB 에서 왔는지를 입력으로 받는다. 지금 DB 는 {dbs} 이고")
+            print(f"    각 DB 의 리듬 구성이 크게 다르므로, 'DB 이름'만으로 리듬을 상당 부분")
+            print(f"    맞힐 수 있다 — 일반화가 아니라 **사전확률 암기**다. 위 A3 결과가")
+            print(f"    유의하게 나왔다면 그것이야말로 암기를 의심할 근거다.")
+            print(f"    → 판정: OUT_db = bench_afib(w, split=\"db\"); report_afib(OUT_db)")
+            for db in dbs:                      # 암기가 실제로 가능한지 수치로 보인다
+                m = (np.array(list(map(str, OUT["w"]["db"]))) == db) & (OUT["w"]["y"] >= 0)
+                if m.sum():
+                    cnt = np.bincount(OUT["w"]["y"][m], minlength=len(cls))
+                    top = cnt.argmax()
+                    print(f"      {db:<10} 창 {int(m.sum()):>6,}  최빈 {cls[top]} "
+                          f"{100*cnt[top]/m.sum():.1f}%  ← DB 이름만으로 이만큼 맞힌다")
     return rows
 
 
