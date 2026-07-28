@@ -111,6 +111,59 @@ def fetch(files=None, branch=None, base=None, verbose=True, ref=None):
     return out
 
 
+def _defs(path):
+    """파일의 최상위 공개 함수 이름들.
+
+    ★왜 파싱하는가: 검증용 심볼 목록을 손으로 관리하면 새 파일을 추가할 때마다
+      갱신을 잊고, 그러면 그 파일이 안 실렸는데도 '준비 완료'가 찍혀 NameError 가
+      난다(실제로 attach_arms·db_audit·bench_transfer·rr_audit_dbs 에서 4번 발생).
+      코드에서 목록을 유도하면 이 실수 자체가 불가능해진다.
+    """
+    import ast
+    try:
+        tree = ast.parse(open(path, encoding="utf-8").read())
+    except Exception as e:
+        print(f"  ⚠ {os.path.basename(path)} 파싱 실패({type(e).__name__}) — 검증 생략")
+        return []
+    return [n.name for n in tree.body
+            if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))
+            and not n.name.startswith("_")]
+
+
+def require(*names):
+    """쓰려는 함수가 로드돼 있는지 먼저 확인한다. 없으면 어느 파일에서 오는지 알려준다.
+
+    긴 실험을 돌리기 직전에 부르면, 30분 학습 뒤에 NameError 로 날리는 일이 없다.
+    """
+    g = globals()
+    miss = [n for n in names if n not in g]
+    if not miss:
+        print(f"  ✔ {', '.join(names)} 준비됨")
+        return True
+    where = {}
+    for fn in list(g.get("CORE", CORE)):
+        p = f"{g.get('_BASE', _BASE)}/{fn}"
+        if os.path.exists(p):
+            for d in _defs(p):
+                where.setdefault(d, fn)
+    print("  ✗ 없는 함수:")
+    for n in miss:
+        print(f"      {n}()  ← {where.get(n, '(어느 파일인지 미상 — 최신 코드일 수 있음)')}")
+    print("  → 아래 부트스트랩 셀을 통째로 다시 실행하세요.")
+    _bootstrap_cell()
+    return False
+
+
+def _bootstrap_cell():
+    print("  import urllib.request as u, json")
+    print(f"  R=\"{REPO}\"; B=\"{BRANCH}\"")
+    print("  S=json.load(u.urlopen(f\"https://api.github.com/repos/{R}/commits/"
+          "{B.replace('/','%2F')}\"))[\"sha\"]")
+    print("  exec(u.urlopen(f\"https://raw.githubusercontent.com/{R}/{S}/mit-bih/"
+          "colab_setup.py\").read().decode())")
+    print("  sync()")
+
+
 def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=True,
          self_update=True):
     """내려받기 + 로드 + 검증. 이 함수 하나로 준비가 끝난다.
@@ -157,39 +210,55 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print(f"  ⚠ _BASE 가 '{g.get('_BASE')}' 로 되덮였습니다(레거시 파일의 하드코딩).")
         print(f"    요청한 base='{base}' 는 CORE 파일 저장에만 적용됩니다.")
 
-    # 검증 — 무엇이 준비됐는지 이름으로 확인한다
-    need = {"register_arm": "svdb_bench.py (arm 레지스트리)",
-            "bench_models": "svdb_bench.py",
-            "attach_arms":  "svdb_rhythm.py",
-            "rr_audit":     "svdb_rhythm.py",
-            "report":       "svdb_rhythm.py",
-            "patient_breakdown": "svdb_rhythm.py",
-            "label_audit":  "svdb_labels.py",
-            "build_labeled": "svdb_labels.py",
-            "db_audit":     "ecg_multidb.py",
-            "build_multi":  "ecg_multidb.py",
-            "bench_rhythm": "rhythm_bench.py",
-            "report_rhythm": "rhythm_bench.py",
-            "bench_transfer": "rhythm_bench.py",
-            "load_task":    "rhythm_bench.py",
-            "label_ceiling_probe": "svdb_rhythm.py",
-            "save_out":     "svdb_rhythm.py",
-            "load_out":     "svdb_rhythm.py"}
-    miss = {k: v for k, v in need.items() if k not in g}
+    # ── 검증 ────────────────────────────────────────────────────────────────
+    # ★손으로 관리하는 심볼 목록을 쓰지 않는다. 예전엔 need={...} 를 직접 적어
+    #   뒀는데, 새 파일(afib_bench.py)을 추가하고 그 목록을 갱신하지 않으면
+    #   그 파일이 안 실렸는데도 '준비 완료'가 찍혔다 → NameError 가 반복됐다.
+    #   대신 **받은 파일을 파싱해 최상위 공개 함수를 뽑아** globals 와 대조한다.
+    #   목록이 코드에서 유도되므로 파일을 아무리 추가해도 다시 어긋나지 않는다.
     print()
-    if miss:
-        print("  ✗ 준비 안 됨:")
-        for k, v in miss.items():
-            print(f"      {k}()  ← {v}")
-        print(f"    → sync(chain=True) 를 시도하거나 {base} 의 파일을 확인하세요.")
+    bad = []
+    owner = {}                       # 심볼 → 먼저 정의한 파일
+    clash = []
+    for p in got:
+        fn = os.path.basename(p)
+        want = _defs(p)
+        if not want:
+            continue
+        gone = [n for n in want if n not in g]
+        if gone:
+            bad.append((fn, gone))
+            print(f"  ✗ {fn}: 공개 함수 {len(gone)}/{len(want)}개 누락 → {gone[:6]}")
+        elif verbose:
+            print(f"  ✔ {fn}: 공개 함수 {len(want)}개 로드")
+        # ★이름 충돌 검사 — CORE 는 **같은 globals** 로 순서대로 exec 되므로
+        #   같은 이름이 두 파일에 있으면 나중 파일이 조용히 덮어쓴다. 예외도
+        #   에러도 안 나고 "그 함수가 다른 일을 하기 시작"할 뿐이라 가장 찾기 어렵다.
+        #   (실제로 afib_bench 의 register_arm 이 svdb_bench 의 것을 덮어써서
+        #    attach_arms 가 1층 arm 을 2층 레지스트리에 넣을 뻔했다.)
+        for n in want:
+            if n in owner and n != "selftest":
+                clash.append((n, owner[n], fn))
+            owner[n] = fn
+    if clash:
+        print(f"\n  ⚠ 이름 충돌 {len(clash)}건 — 나중 파일이 앞 파일을 덮어씁니다:")
+        for n, a, b in clash:
+            print(f"      {n}()  {a} → {b}")
+        print(f"    한쪽 이름을 바꿔야 합니다(예: register_arm → register_afib_arm).")
+    if bad:
+        print(f"\n  → 위 파일의 로드가 실패했습니다. 바로 위의 '✗ 로드 실패' 줄에"
+              f" 원인이 있습니다.\n    없으면 {base} 의 파일 내용을 확인하세요.")
     else:
-        print("  ✔ 준비 완료.  다음 순서로 실행하세요:")
-        print("      # ★리듬(질환) 과제 — 지금 여기:")
-        print("      build_multi()                 # 통합 npz (한 번만, 수십 분)")
-        print("      OUT = bench_rhythm(n_rep=1)   # AFIB/B/T/VT 분류 (GPU)")
-        print("      report_rhythm(OUT)            # 클래스별 판정")
+        print("\n  ✔ 준비 완료.  다음 순서로 실행하세요:")
+        print("      # ★2층(리듬·질환축) — 지금 여기:")
+        print("      rr_audit_dbs()                # 리듬별 환자수·MDE (신호 안 받음, 수 분)")
+        print("      build_rr_corpus(dbs=('afdb','mitdb'))   # 먼저 작게 배관 검증")
+        print("      d = load_rr(); w = make_windows(d, W=128)")
+        print("      OUT = bench_afib(w, k=3); report_afib(OUT)")
+        print("      ※ make_windows 의 [검정력] 표가 '★불가'면 모델을 돌리지 말고")
+        print("         ltafdb 를 먼저 넣으세요 (LAYER2_AFIB.md §1).")
         print()
-        print("      # 이미 돌린 결과를 다시 보려면(학습 0초):")
+        print("      # 1층(비트) 결과를 다시 보려면(학습 0초):")
         print("      OUT = load_out('rsn_adathr_rep3'); report(OUT)")
         print()
         print("      # ★새 arm 만 돌릴 때 — 기준선·기존 arm 재학습 금지(시간 낭비):")
@@ -197,21 +266,14 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print("      attach_arms(which=('R8',))")
         print("      NEW = bench_models(n_rep=3, only=['R8...'])")
         print("      OUT = merge_out(NEW, OLD); save_out(OUT, 'next'); report(OUT)")
-        print("      ※ attach_arms() 를 인자 없이 부르면 R0/R1/R2 만 등록되고,")
-        print("         only= 없이 bench_models 를 부르면 B0~B4C 까지 전부 재학습합니다.")
         if g.get("CODE_SHA"): print(f"    (실험 기록용 코드 버전: CODE_SHA={g['CODE_SHA'][:10]})")
     # ★새 파일이 CORE 에 추가되면 메모리의 옛 sync() 는 그걸 모른다. self_update 가
     #   그걸 막지만, self_update 자체가 없던 버전에서 넘어올 때는 한 번은 아래 셀이
     #   필요하다. 매번 보여줘서 "sync() 만 하면 되겠지"로 막히는 일을 없앤다.
     print()
     print("  ── 무엇이 없다고 나오면 이 셀을 통째로 다시 실행하세요 ──")
-    print("  import urllib.request as u, json")
-    print(f"  R=\"{REPO}\"; B=\"{BRANCH}\"")
-    print("  S=json.load(u.urlopen(f\"https://api.github.com/repos/{R}/commits/"
-          "{B.replace('/','%2F')}\"))[\"sha\"]")
-    print("  exec(u.urlopen(f\"https://raw.githubusercontent.com/{R}/{S}/mit-bih/"
-          "colab_setup.py\").read().decode())")
-    print("  sync()")
+    _bootstrap_cell()
+    print("  ※ NameError 가 의심되면 먼저: require('rr_audit_dbs','bench_afib')")
     return got
 
 

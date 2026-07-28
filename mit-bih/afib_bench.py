@@ -53,12 +53,16 @@ AF_CLASSES = ("N", "AFIB", "AFL")
 ARMS = {}
 
 
-def register_arm(name, fn):
+def register_afib_arm(name, fn):
+    """★이름에 afib 를 붙인 이유: CORE 파일들은 같은 globals 로 exec 되므로
+       svdb_bench.register_arm 과 이름이 겹치면 나중에 로드되는 쪽이 덮어쓴다.
+       그러면 attach_arms() 가 1층 arm 을 2층 레지스트리에 넣는 조용한 사고가 난다.
+       rhythm_bench 가 register_rhythm_arm 을 쓰는 것과 같은 이유다."""
     ARMS[name] = fn
     return name
 
 
-def clear_arms():
+def clear_afib_arms():
     ARMS.clear()
 
 
@@ -215,7 +219,7 @@ def _mde(w, sigma=0.32, verbose=True):
 # ─────────────────────────────────────────────────────────────────────────────
 #  3. 지표 — 창 / 에피소드 / burden
 # ─────────────────────────────────────────────────────────────────────────────
-def _f1(v, yp):
+def _f1_af(v, yp):
     tp = float((v & yp).sum()); fp = float((v & ~yp).sum()); fn = float((~v & yp).sum())
     return 0.0 if tp == 0 else 2 * tp / (2 * tp + fp + fn)
 
@@ -229,7 +233,7 @@ def win_macro(pred, y, pid, classes):
             m = pid == p
             if not (y[m] == c).any():
                 continue                       # 그 리듬이 없는 환자는 제외(1층 규약)
-            v.append(_f1(pred[m] == c, y[m] == c))
+            v.append(_f1_af(pred[m] == c, y[m] == c))
         out[nm] = (float(np.mean(v)) if v else float("nan"), len(v))
     return out
 
@@ -565,7 +569,7 @@ def report_afib(OUT, base="A1.RR산포", show=True):
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증 — 합성 RR 로 wfdb/torch 없이 로직만 검증
 # ─────────────────────────────────────────────────────────────────────────────
-def _synth(n_pat=12, n_beat=1200, seed=0):
+def _synth_rr(n_pat=12, n_beat=1200, seed=0):
     """합성 코퍼스: 환자마다 N 구간과 AFIB 구간을 번갈아 만든다.
     AFIB 는 RR 이 불규칙(σ 큼), AFL 은 규칙적이되 빠름 — ★AFL 이 RR 로 구분 안 되는
     구조를 일부러 재현한다(H-L 이 검증 가능한 실험인지 확인하기 위함)."""
@@ -598,7 +602,7 @@ def _synth(n_pat=12, n_beat=1200, seed=0):
 def selftest():
     ok = lambda c, m: (_ for _ in ()).throw(AssertionError(m)) if not c else print(f"  ✔ {m}")
     print("=== afib_bench 자기검증 ===")
-    d = _synth()
+    d = _synth_rr()
     w = make_windows(d, W=64, verbose=False)
     ok(w["seq"].shape[1] == 4 and w["seq"].shape[2] == 64, "창 텐서 모양 [N,4,64]")
     ok(w["aux"].shape[1] == 10, "보조 스칼라 10종")
