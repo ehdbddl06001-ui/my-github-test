@@ -1571,7 +1571,9 @@ def selftest(train=True):
            "완벽 예측 → 편향 0, Pearson r=1")
         ok(b2["band_agree"] == 1.0, "완벽 예측 → 임상 구간 일치율 100%")
 
-        # 다중클래스 / 리듬 헤드 (다중 DB 확장용)
+        # 다중클래스 / 리듬 헤드 (다중 DB 확장용) — --fast 에서도 도는 블록이라
+        # torch 를 여기서 직접 import 한다(위 `if train:` 안의 import 에 기대지 않는다).
+        import torch
         M3 = _rsn(4, S.shape[2], A.shape[1], n_class=3)
         M5 = _rsn(4, S.shape[2], A.shape[1], n_class=5)
         MR = _rsn(4, S.shape[2], A.shape[1], n_class=5, n_rhythm=6)
