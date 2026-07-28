@@ -179,11 +179,18 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print(f"    → sync(chain=True) 를 시도하거나 {base} 의 파일을 확인하세요.")
     else:
         print("  ✔ 준비 완료.  다음 순서로 실행하세요:")
-        print("      db_audit()                    # ★다중 DB 재고조사(어떤 클래스·질환이 가능한가)")
-        print("      rr_audit()                    # RR 위생 점검")
-        print("      attach_arms()                 # R0/R1/R2 등록")
-        print("      OUT = bench_models(n_rep=1)   # 벤치(GPU, 수십 분)")
-        print("      report(OUT)                   # 판정 + 환자별 분해")
+        print("      db_audit()                    # ★지금 할 것: 다중 DB 재고조사(GPU 불필요)")
+        print()
+        print("      # 이미 돌린 결과를 다시 보려면(학습 0초):")
+        print("      OUT = load_out('rsn_adathr_rep3'); report(OUT)")
+        print()
+        print("      # ★새 arm 만 돌릴 때 — 기준선·기존 arm 재학습 금지(시간 낭비):")
+        print("      OLD = load_out('rsn_adathr_rep3')")
+        print("      attach_arms(which=('R8',))")
+        print("      NEW = bench_models(n_rep=3, only=['R8...'])")
+        print("      OUT = merge_out(NEW, OLD); save_out(OUT, 'next'); report(OUT)")
+        print("      ※ attach_arms() 를 인자 없이 부르면 R0/R1/R2 만 등록되고,")
+        print("         only= 없이 bench_models 를 부르면 B0~B4C 까지 전부 재학습합니다.")
         if g.get("CODE_SHA"): print(f"    (실험 기록용 코드 버전: CODE_SHA={g['CODE_SHA'][:10]})")
     return got
 
