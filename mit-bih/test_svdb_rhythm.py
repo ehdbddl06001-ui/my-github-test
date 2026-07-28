@@ -112,14 +112,15 @@ def main():
 
     # svdb_rhythm 을 하니스와 '같은 globals'에 얹는다 (Colab exec 순서와 동일)
     exec(open(f"{HERE}/svdb_rhythm.py").read(), H)
-    n = H["attach_arms"](which=("R0","R1","R2","R3","R4"), n_seed=1, epochs=3)
-    ok(n == 5 and len(H["EXTRA_ARMS"]) == 5, f"arm {n}개 등록 (EXTRA_ARMS={list(H['EXTRA_ARMS'])})")
+    n = H["attach_arms"](which=("R0","R1","R2","R3","R4","R5","R6"), n_seed=1, epochs=3)
+    ok(n == 7 and len(H["EXTRA_ARMS"]) == 7, f"arm {n}개 등록 (EXTRA_ARMS={list(H['EXTRA_ARMS'])})")
 
     OUT = H["bench_models"](n_rep=1, k=3, use_ae=True)
     R = OUT["res"]
     ok(not OUT["dead"], f"실패한 arm 없음 (dead={OUT['dead']})")
     for a in ("R0.RSN(리듬만)", "R1.RSN(리듬+형태)", "R2.RSN(+Poincaré)",
-              "R3.RSN(+환자템플릿)", "R4.RSN(+P파)"):
+              "R3.RSN(+환자템플릿)", "R4.RSN(+P파)",
+              "R5.RSN(시퀀스제거·대조)", "R6.RSN(+P/QRS/T)"):
         ok(a in R, f"{a} 결과 존재 (매크로F1={R[a]['macro']:.3f})")
 
     # 대응 비교의 전제: 모든 arm 의 환자별 F1 벡터가 같은 길이·같은 환자 순서
@@ -137,6 +138,7 @@ def main():
 
     rep = H["report"](OUT, base="B2.CNN(raw)")
     ok("R1.RSN(리듬+형태)" in rep and "ci" in rep["R1.RSN(리듬+형태)"], "report() 대응 비교 산출")
+    ok("R6.RSN(+P/QRS/T)" in rep, "report() 가 R3~R6 도 포함(예전엔 R0~R2 만 하드코딩)")
 
     # 오류 분해에 필요한 것들이 OUT 에 실렸는지 (없으면 '왜 낮은가'를 못 묻는다)
     ok("pred" in R["R1.RSN(리듬+형태)"], "RES 에 비트별 pred 저장됨")

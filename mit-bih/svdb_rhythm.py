@@ -280,13 +280,19 @@ def prepare_context(K=K_CTX, W=W_NORM, WP=W_POIN, poincare=True,
 # ─────────────────────────────────────────────────────────────────────────────
 #  2. 모델 — RSN (Rhythm Sequence Net)
 # ─────────────────────────────────────────────────────────────────────────────
-# P파 창 — 저장된 비트는 [2,300], R 피크가 인덱스 _RPRE=100 에 있다.
-# colab_step49._segwin 의 P 구간 정의 (R-90, R-25) → (10, 75). 여유를 둬 (5, 85).
-P_LO, P_HI = 5, 85
+# ── 분절(segment) 창 — 저장된 비트는 [2,300], R 피크가 인덱스 _RPRE=100 에 있다.
+#   colab_step49._segwin 의 정의를 그대로 따르되 경계에 약간 여유를 준다:
+#     P   (R-90, R-25) → (10, 75)     심방 탈분극  — 상심실성(S)의 기원 신호
+#     QRS (R-25, R+25) → (75, 125)    심실 탈분극  — 전도이상·심실기원(V)·각차단
+#     T   (R+30, R+130)→ (130, 230)   재분극       — 허혈·전해질·QT
+#   ★질환마다 드러나는 분절이 다르므로 분절별로 따로 인코딩한다. 전체 비트를 한
+#     CNN 에 넣고 GAP 를 걸면 300샘플 평균에 각 분절이 희석된다(P는 65/300).
+SEGS = {"P": (5, 85), "QRS": (72, 130), "T": (128, 240)}
+P_LO, P_HI = SEGS["P"]          # 하위호환
 
 
 def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
-         w_r=64, w_m=16, w_a=16, w_p=16, p_drop=0.1):
+         segs=(), use_seq=True, w_r=64, w_m=16, w_a=16, w_p=16, p_drop=0.1):
     """리듬 주(主) · 형태 보조(補) 구조.
 
     리듬 가지: dilation 1-2-4 의 3층 TCN. 수용야 17 = 창 전체(K=8)를 정확히 덮는다.
@@ -303,11 +309,15 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
     class RSN(nn.Module):
         def __init__(s):
             super().__init__()
-            s.rz = nn.Sequential(
-                nn.Conv1d(cseq, 64, 5, padding=2), nn.BatchNorm1d(64), nn.GELU(),
-                nn.Conv1d(64, 64, 3, padding=2, dilation=2), nn.BatchNorm1d(64), nn.GELU(),
-                nn.Conv1d(64, 64, 3, padding=4, dilation=4), nn.BatchNorm1d(64), nn.GELU())
-            s.rp = nn.Sequential(nn.Linear(64 * 3, w_r), nn.GELU())
+            # use_seq=False(R5 대조군)면 리듬 가지를 아예 만들지 않는다 —
+            # 미사용 파라미터가 옵티마이저에 남으면 '순수 대조군'이라 말할 수 없다.
+            s.rz = s.rp = None
+            if use_seq:
+                s.rz = nn.Sequential(
+                    nn.Conv1d(cseq, 64, 5, padding=2), nn.BatchNorm1d(64), nn.GELU(),
+                    nn.Conv1d(64, 64, 3, padding=2, dilation=2), nn.BatchNorm1d(64), nn.GELU(),
+                    nn.Conv1d(64, 64, 3, padding=4, dilation=4), nn.BatchNorm1d(64), nn.GELU())
+                s.rp = nn.Sequential(nn.Linear(64 * 3, w_r), nn.GELU())
             s.k0 = (L - 1) // 2                      # 슬롯 k=0 (자기 pre-RR)
             s.k1 = min(s.k0 + 1, L - 1)              # 슬롯 k=+1 (자기 post-RR)
             s.use_ref = bool(use_ref)
@@ -323,15 +333,18 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
             # ★P파 가지 — S 의 유일한 비-RR 물리 신호(이소성 심방 초점 → P 형태·극성·시점 변화)
             #   전체 비트 CNN 은 GAP 로 300샘플을 평균내므로 65샘플짜리 P 가 희석된다.
             #   P 구간만 잘라 별도 인코딩하고, GAP 와 함께 GMP 를 써서 진폭·극성을 살린다.
-            s.pz = None
-            if use_pwave:
-                s.pz = nn.Sequential(
+            #   use_pwave 는 segs=("P",) 의 하위호환 별칭이다.
+            s.segs = tuple(segs) if segs else (("P",) if use_pwave else ())
+            s.use_seq = bool(use_seq)
+            s.sz = nn.ModuleDict(); s.sp = nn.ModuleDict()
+            for nm in s.segs:
+                s.sz[nm] = nn.Sequential(
                     nn.Conv1d(mch, 32, 7, padding=3), nn.BatchNorm1d(32), nn.ReLU(), nn.MaxPool1d(2),
                     nn.Conv1d(32, 32, 5, padding=2), nn.BatchNorm1d(32), nn.ReLU())
-                s.pp = nn.Sequential(nn.Linear(64, w_p), nn.ReLU())
+                s.sp[nm] = nn.Sequential(nn.Linear(64, w_p), nn.ReLU())
             s.ap = nn.Sequential(nn.Linear(max(daux, 1), w_a), nn.ReLU()) if daux > 0 else None
-            d = (w_r + (w_m if use_morph else 0) + (w_p if use_pwave else 0)
-                 + (w_a if daux > 0 else 0))
+            d = ((w_r if use_seq else 0) + (w_m if use_morph else 0)
+                 + w_p * len(s.segs) + (w_a if daux > 0 else 0))
             s.cls = nn.Sequential(nn.Linear(d, 64), nn.ReLU(), nn.Dropout(p_drop), nn.Linear(64, 3))
 
         def _mk(s, bt, rf):
@@ -347,15 +360,17 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
             return torch.cat([bt, rf, bt - rf], 1)
 
         def forward(s, sq, bt, ax, rf=None):
-            h = s.rz(sq)
-            z = s.rp(torch.cat([h.mean(-1), h[:, :, s.k0], h[:, :, s.k1]], -1))
-            parts = [z]
-            x = s._mk(bt, rf) if (s.mz is not None or s.pz is not None) else None
+            parts = []
+            if s.use_seq:
+                h = s.rz(sq)
+                parts.append(s.rp(torch.cat([h.mean(-1), h[:, :, s.k0], h[:, :, s.k1]], -1)))
+            x = s._mk(bt, rf) if (s.mz is not None or s.segs) else None
             if s.mz is not None:
                 parts.append(s.mp(s.mz(x).squeeze(-1)))
-            if s.pz is not None:
-                q = s.pz(x[:, :, P_LO:P_HI])
-                parts.append(s.pp(torch.cat([q.mean(-1), q.amax(-1)], -1)))
+            for nm in s.segs:                       # 분절별 인코딩 (P / QRS / T)
+                lo, hi = SEGS[nm]
+                q = s.sz[nm](x[:, :, lo:hi])
+                parts.append(s.sp[nm](torch.cat([q.mean(-1), q.amax(-1)], -1)))
             if s.ap is not None:
                 parts.append(s.ap(ax))
             return s.cls(torch.cat(parts, -1))
@@ -368,7 +383,7 @@ def _rsn(cseq, L, daux, use_morph=True, use_ref=False, use_pwave=False,
 # ─────────────────────────────────────────────────────────────────────────────
 def _fit_predict_rsn(SEQ, AUX, beats, y, tr, cal, te, Sw, mc, seed,
                      use_morph=True, epochs=15, bs=512, n_seed=1,
-                     ref=None, use_ref=False, use_pwave=False):
+                     ref=None, use_ref=False, use_pwave=False, segs=(), use_seq=True):
     """(calib 확률, test 확률) 반환. 하니스 _fit_predict 와 동일한 옵티마이저·손실·
        epoch·batch·grad clip. 달라지는 것은 입력 표현과 인코더뿐이다.
 
@@ -392,7 +407,7 @@ def _fit_predict_rsn(SEQ, AUX, beats, y, tr, cal, te, Sw, mc, seed,
         sd = int(seed) * 1000 + si
         torch.manual_seed(sd); np.random.seed(sd)
         M = _rsn(SEQ.shape[1], L, AUX.shape[1], use_morph=use_morph,
-                 use_ref=use_ref, use_pwave=use_pwave).to(dev)
+                 use_ref=use_ref, use_pwave=use_pwave, segs=segs, use_seq=use_seq).to(dev)
         opt = torch.optim.AdamW(M.parameters(), lr=1e-3, weight_decay=1e-4)
         cw = torch.tensor([1., Sw, 1.5], device=dev)
         mcv = torch.from_numpy(np.asarray(mc, "float32")).to(dev)
@@ -444,7 +459,8 @@ def _fit_predict_rsn(SEQ, AUX, beats, y, tr, cal, te, Sw, mc, seed,
 #    beats,y,pid,pre,post,refM,refR,tr,cal,te,Sw,mc,seed,rep,fold,best_t
 #
 def make_arm(use_morph=True, poincare=True, K=K_CTX, W=W_NORM, WP=W_POIN,
-             causal_only=False, n_seed=1, epochs=15, use_ref=False, use_pwave=False):
+             causal_only=False, n_seed=1, epochs=15, use_ref=False, use_pwave=False,
+             segs=(), use_seq=True):
     """RSN arm 클로저 생성. 문맥은 첫 호출에서 한 번만 계산해 캐시된다.
 
     use_ref/use_pwave 는 하니스가 ctx 로 넘겨주는 환자별 강건 템플릿(refR)을 쓴다.
@@ -454,12 +470,13 @@ def make_arm(use_morph=True, poincare=True, K=K_CTX, W=W_NORM, WP=W_POIN,
     def arm(ctx):
         c = prepare_context(K=K, W=W, WP=WP, poincare=poincare,
                             causal_only=causal_only, verbose=False)
-        rf = ctx.get("refR") if (use_ref or use_pwave) else None
+        rf = ctx.get("refR") if (use_ref or use_pwave or segs) else None
         pc, pt = _fit_predict_rsn(
             c["seq"], c["aux"], ctx["beats"], ctx["y"],
             ctx["tr"], ctx["cal"], ctx["te"], ctx["Sw"], ctx["mc"], ctx["seed"],
             use_morph=use_morph, epochs=epochs, n_seed=n_seed,
-            ref=rf, use_ref=(use_ref or use_pwave), use_pwave=use_pwave)
+            ref=rf, use_ref=(use_ref or use_pwave or bool(segs)),
+            use_pwave=use_pwave, segs=segs, use_seq=use_seq)
         t = ctx["best_t"](pc[:, 1], ctx["y"][ctx["cal"]])     # 임계는 calib 에서만
         return (pt[:, 1] >= t), pt[:, 1]                       # (결정, 점수) — 점수는 사후 진단용
     return arm
@@ -478,6 +495,15 @@ ARM_SPEC = {
     #      순위한계 환자(RR 변동이 커서 조기성이 안 드러나는 17명)의 표적.
     "R4.RSN(+P파)":                dict(use_morph=True,  poincare=False, use_ref=True,
                                         use_pwave=True),
+    # ── 3차 (SVDB_RHYTHM_DESIGN §10 사전등록) ──
+    #  R5: 리듬 시퀀스 가지를 '제거'한 대조군. 나머지는 R1 과 완전히 동일하고 RR 은
+    #      aux 스칼라로만 들어간다. → '펼치기'를 **단일 변수**로 검정하는 유일한 arm.
+    #      (R1−B3 는 형태 CNN 용량까지 달라서 순수 대조가 아니다)
+    "R5.RSN(시퀀스제거·대조)":       dict(use_morph=True,  poincare=False, use_seq=False),
+    #  R6: 분절 형태 — P/QRS/T 를 각각 환자템플릿 대비로 인코딩.
+    #      질환마다 드러나는 분절이 다르다(P:심방, QRS:전도·심실, T:재분극).
+    "R6.RSN(+P/QRS/T)":            dict(use_morph=True,  poincare=False, use_ref=True,
+                                        segs=("P", "QRS", "T")),
 }
 
 def attach_arms(which=("R0", "R1", "R2"), K=K_CTX, n_seed=1, epochs=15,
@@ -534,7 +560,9 @@ def paired(RES, a, b, B=5000, seed=0, k_bonf=1, mde=0.07, show=True):
 def report(OUT, base="B4.본연구", mde=0.07, B=5000):
     """RSN arm 전체를 기준선 대비 판정. bench_models() 반환값을 그대로 넣는다."""
     R = OUT["res"]
-    arms = [a for a in R if a.split(".")[0] in ("R0", "R1", "R2")]
+    # ★R 로 시작하는 모든 확장 arm (예전엔 R0/R1/R2 만 하드코딩돼 R3~ 가 비교에서 빠졌다)
+    import re as _re
+    arms = [a for a in R if _re.match(r"^R\d+\.", a)]
     if not arms:
         print("RSN arm 결과가 없습니다. attach_arms() 후 bench_models() 를 실행하세요.")
         return {}
@@ -1041,11 +1069,20 @@ def selftest(train=True):
             for p in np.unique(pid):
                 m = pid == p
                 refs[m] = np.median(beat[m], 0, keepdims=True)
-            M2 = _rsn(4, S.shape[2], A.shape[1], use_ref=True, use_pwave=True)
+            M2 = _rsn(4, S.shape[2], A.shape[1], use_ref=True, segs=("P", "QRS", "T"))
             o2 = M2(torch.from_numpy(S[:8]), torch.from_numpy(beat[:8]),
                     torch.from_numpy(A[:8]), torch.from_numpy(refs[:8]))
-            ok(tuple(o2.shape) == (8, 3), f"R4(+환자템플릿+P파) 출력 형상 {tuple(o2.shape)}")
-            ok(sum(p.numel() for p in M2.parameters()) < 300000, "R4 도 소형 유지")
+            ok(tuple(o2.shape) == (8, 3), f"R6(+P/QRS/T) 출력 형상 {tuple(o2.shape)}")
+            ok(sum(p.numel() for p in M2.parameters()) < 400000, "R6 도 소형 유지")
+            # R5: 리듬 시퀀스 제거 대조군
+            M5 = _rsn(4, S.shape[2], A.shape[1], use_seq=False)
+            ok(tuple(M5(torch.from_numpy(S[:4]), torch.from_numpy(beat[:4]),
+                        torch.from_numpy(A[:4])).shape) == (4, 3), "R5(시퀀스제거) 출력 형상")
+            ok(not any("rz" in n for n, _ in M5.named_parameters()),
+               "R5 에는 리듬 TCN 파라미터가 아예 없음(순수 대조군)")
+            # 분절 창이 서로 겹치지 않고 비트 범위 안에 있는지
+            for nm, (lo, hi) in SEGS.items():
+                ok(0 <= lo < hi <= 300, f"분절 {nm} 창 [{lo},{hi}] 유효")
             # ref 없이 호출해도 죽지 않아야(폴백)
             ok(tuple(M2(torch.from_numpy(S[:4]), torch.from_numpy(beat[:4]),
                         torch.from_numpy(A[:4])).shape) == (4, 3), "ref 미제공 시 폴백 동작")
@@ -1072,8 +1109,8 @@ def selftest(train=True):
         reg = {}
         g["register_arm"] = lambda n, f: reg.__setitem__(n, f)
         try:
-            n = attach_arms(which=("R0","R1","R2","R3","R4"), verbose=False)
-            ok(n == 5 and len(reg) == 5, f"arm {n}개 등록 {sorted(reg)}")
+            n = attach_arms(which=("R0","R1","R2","R3","R4","R5","R6"), verbose=False)
+            ok(n == 7 and len(reg) == 7, f"arm {n}개 등록")
             if train:
                 ctx = dict(beats=beat, y=y, pid=pid, tr=np.flatnonzero(pid < 4),
                            cal=np.flatnonzero(pid == 4), te=np.flatnonzero(pid == 5),
