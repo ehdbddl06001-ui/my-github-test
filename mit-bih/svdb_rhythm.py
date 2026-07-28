@@ -946,7 +946,13 @@ def label_ceiling_probe(OUT, arm, show=True):
     prem = c["seq"][:, 2, K_CTX][np.asarray(OUT["order"])]   # 자기 박의 조기성
     y = np.asarray(OUT["y"]); v = np.asarray(R["pred"], bool)
     yp = (y == 1)
-    grp = {"TP": v & yp, "FN": ~v & yp, "FP": v & ~yp, "TN": ~v & ~yp}
+    # ★FP 를 진짜 클래스로 쪼갠다. 'S 아님'에는 N 과 **V** 가 섞여 있는데,
+    #   V(심실 조기박)는 **정의상 조기박**이다. 쪼개지 않으면 "조기박인데 S 가
+    #   아니라고 라벨됨 → 라벨 잡음"이라는 잘못된 결론이 나온다.
+    #   실제로는 V 를 S 로 오분류한 것일 수 있고, 그건 형태로 고칠 수 있는 문제다.
+    yv = (y == 2)
+    grp = {"TP": v & yp, "FN": ~v & yp,
+           "FP_N": v & ~yp & ~yv, "FP_V": v & yv, "TN": ~v & ~yp & ~yv}
     st = {k: (float(np.median(prem[m])), float(np.percentile(prem[m], 25)),
               float(np.percentile(prem[m], 75)), int(m.sum()))
           for k, m in grp.items() if m.any()}
@@ -959,34 +965,59 @@ def label_ceiling_probe(OUT, arm, show=True):
         w = (hi - lo) / bins
         return float(np.minimum(ha, hb).sum() * w)
 
-    ov_fn = _ovl("FN", "TN") if "FN" in st and "TN" in st else float("nan")
-    ov_fp = _ovl("FP", "TP") if "FP" in st and "TP" in st else float("nan")
-    ov_ref = _ovl("TP", "TN") if "TP" in st and "TN" in st else float("nan")
-    out = dict(stats=st, ovl_FN_TN=ov_fn, ovl_FP_TP=ov_fp, ovl_TP_TN=ov_ref)
+    have = lambda *k: all(x in st for x in k)
+    ov_fn = _ovl("FN", "TN") if have("FN", "TN") else float("nan")
+    ov_fp = _ovl("FP_N", "TP") if have("FP_N", "TP") else float("nan")   # ★N 만
+    ov_fpv = _ovl("FP_V", "TP") if have("FP_V", "TP") else float("nan")
+    ov_ref = _ovl("TP", "TN") if have("TP", "TN") else float("nan")
+    nfp = st.get("FP_N", (0, 0, 0, 0))[3]; nfv = st.get("FP_V", (0, 0, 0, 0))[3]
+    out = dict(stats=st, ovl_FN_TN=ov_fn, ovl_FPn_TP=ov_fp, ovl_FPv_TP=ov_fpv,
+               ovl_TP_TN=ov_ref, n_FP_N=nfp, n_FP_V=nfv,
+               frac_FP_is_V=float(nfv / max(nfp + nfv, 1)))
     if not show:
         return out
     print(f"\n  [라벨 천장 탐침] {arm}   조기성 = 인과적 EWMA 잔차(라벨 무관)")
-    print(f"    {'군':<4}{'n':>10}{'중앙':>9}{'Q1':>8}{'Q3':>8}")
-    for k in ("TP", "FN", "FP", "TN"):
+    print(f"    {'군':<6}{'n':>10}{'중앙':>9}{'Q1':>8}{'Q3':>8}   설명")
+    _desc = {"TP": "맞힌 S", "FN": "놓친 S", "FP_N": "N 을 S 라 함",
+             "FP_V": "V 를 S 라 함(★V는 정의상 조기박)", "TN": "맞힌 N"}
+    for k in ("TP", "FN", "FP_N", "FP_V", "TN"):
         if k in st:
             m, q1, q3, n = st[k]
-            print(f"    {k:<4}{n:>10,}{m:>9.3f}{q1:>8.3f}{q3:>8.3f}")
-    print(f"\n    분포 겹침 계수 (1=구별 불가)")
-    print(f"      FN ↔ TN : {ov_fn:.3f}   놓친 S 가 정상과 얼마나 겹치나")
-    print(f"      FP ↔ TP : {ov_fp:.3f}   헛알람이 진짜 S 와 얼마나 겹치나")
-    print(f"      TP ↔ TN : {ov_ref:.3f}   (기준선) 맞힌 S 와 정상의 겹침")
+            print(f"    {k:<6}{n:>10,}{m:>9.3f}{q1:>8.3f}{q3:>8.3f}   {_desc[k]}")
+    print(f"\n    분포 겹침 계수 (1=구별 불가).  기준선 TP↔TN = {ov_ref:.3f}")
+    print(f"      FN   ↔ TP : 놓친 S 의 조기성 — 아래 Q3 로 판단")
+    print(f"      FN   ↔ TN : {ov_fn:.3f}  ({ov_fn/max(ov_ref,1e-9):.1f}× 기준선)"
+          f"   놓친 S 가 정상과 얼마나 겹치나")
+    print(f"      FP_N ↔ TP : {ov_fp:.3f}  ({ov_fp/max(ov_ref,1e-9):.1f}× 기준선)"
+          f"   ★N 오경보가 진짜 S 와 얼마나 겹치나")
+    print(f"      FP_V ↔ TP : {ov_fpv:.3f}   V 오경보(참고 — V 는 원래 조기박이라 높게 나온다)")
+    print(f"\n    FP 구성: N 오경보 {nfp:,} / V 오경보 {nfv:,}"
+          f"  → V 비중 {100*out['frac_FP_is_V']:.1f}%")
     print()
+    # ★판정은 '기준선 대비 배수'로 한다. 절대 임계(예: 0.6)는 데이터마다 의미가 달라진다.
     if np.isfinite(ov_fn) and np.isfinite(ov_ref):
-        if ov_fn > 0.6 and ov_fn > ov_ref + 0.2:
-            print(f"    → FN 이 정상과 크게 겹친다. **리듬으로는 원리적으로 못 잡는 S** 가")
-            print(f"       상당수라는 뜻이다(늦은 결합 PAC 또는 주석 모호성).")
-            print(f"       모델을 더 만들기보다 라벨·다른 모달리티를 봐야 한다.")
+        r = ov_fn / max(ov_ref, 1e-9)
+        q3fn = st["FN"][2] if "FN" in st else float("nan")
+        print(f"    [FN 해석] 정상과의 겹침이 기준선의 {r:.1f}배, FN 의 Q3 = {q3fn:+.3f}")
+        if q3fn > -0.1:
+            print(f"      → FN 의 상위 25% 는 조기성이 사실상 없다(≥{q3fn:+.3f}).")
+            print(f"         **리듬으로는 원리적으로 못 잡는 S** 다 — P파 등 다른 축이거나")
+            print(f"         주석이 흔들린 경우. 이 부분은 리듬 축을 아무리 키워도 안 된다.")
         else:
-            print(f"    → FN 이 정상과 크게 겹치지는 않는다. 조기성은 있는데 못 잡은 것이므로")
-            print(f"       아직 모델 쪽 여지가 남아 있다.")
-    if np.isfinite(ov_fp) and ov_fp > 0.6:
-        print(f"    → FP 가 진짜 S 와 크게 겹친다. 리듬상 구별 불가한데 N 으로 라벨된 박이")
-        print(f"       많다는 뜻 — **라벨 잡음의 직접 증거**다. 이 부분은 모델로 못 이긴다.")
+            print(f"      → FN 도 대체로 조기성이 있다. 리듬 축으로 더 잡을 여지가 남아 있다.")
+    if np.isfinite(ov_fp) and np.isfinite(ov_ref):
+        r = ov_fp / max(ov_ref, 1e-9)
+        print(f"    [FP 해석] N 오경보와 진짜 S 의 겹침이 기준선의 {r:.1f}배")
+        if r > 2.0:
+            print(f"      → 리듬상 진짜 S 와 구별 안 되는데 N 으로 라벨된 박이 많다.")
+            print(f"         라벨 잡음 **또는** 리듬만으로는 원리적 구별 불가(동성부정맥 등).")
+            print(f"         어느 쪽이든 리듬 축으로는 못 이긴다 — 형태·P파가 필요하다.")
+        else:
+            print(f"      → N 오경보는 진짜 S 와 구별된다. 모델이 아직 못 배운 것이다.")
+    if out["frac_FP_is_V"] > 0.3:
+        print(f"    [★V 혼동] FP 의 {100*out['frac_FP_is_V']:.0f}% 가 V 다. 이건 라벨 문제가")
+        print(f"       아니라 **S/V 분리 실패**이며, 형태(넓은 QRS)로 고칠 수 있는 문제다.")
+        print(f"       PAPER §6.5: V 는 형태로 잘 전이된다 — 여기에 용량을 주면 회수 가능.")
     print(f"\n    ⚠ 이것은 라벨 천장의 '탐침'이지 증명이 아니다. 확정하려면 두 번째")
     print(f"       주석자나 다른 DB 의 같은 환자가 필요하다(SVDB 에는 없다).")
     return out
@@ -1548,10 +1579,15 @@ def selftest(train=True):
         FK = dict(res={"R9": dict(pred=vv2, fper=np.full(6, .7))},
                   y=y, pid=pid, order=np.arange(len(y)))
         lc = label_ceiling_probe(FK, "R9", show=False)
-        ok({"TP", "FN", "FP", "TN"} >= set(lc["stats"]), "천장 탐침: 4개 군 통계 산출")
-        ok(len(lc["stats"]) == 4, f"4개 군 모두 비어 있지 않음 {sorted(lc['stats'])}")
-        ok(all(0 <= lc[k] <= 1 for k in ("ovl_FN_TN", "ovl_FP_TP", "ovl_TP_TN")),
-           "겹침 계수 0~1 범위")
+        ok({"TP","FN","FP_N","FP_V","TN"} >= set(lc["stats"]), "천장 탐침: 군 통계 산출")
+        ok("FP_V" in lc["stats"], "★FP 를 N/V 로 분리(V 는 정의상 조기박이라 섞으면 오판)")
+        ok({"TP","FN","TN"} <= set(lc["stats"]) and
+           ({"FP_N","FP_V"} & set(lc["stats"])),
+           f"핵심 군 존재 + FP 가 분리됨 {sorted(lc['stats'])}")
+        ok(all((0 <= lc[k] <= 1) or np.isnan(lc[k])
+               for k in ("ovl_FN_TN","ovl_FPn_TP","ovl_FPv_TP","ovl_TP_TN")),
+           "겹침 계수 0~1 범위(군이 비면 NaN)")
+        ok(0 <= lc["frac_FP_is_V"] <= 1, f"FP 중 V 비중 {lc['frac_FP_is_V']:.2f}")
         ok(lc["ovl_TP_TN"] < 0.5,
            f"합성에서 TP↔TN 겹침이 작음 ({lc['ovl_TP_TN']:.3f}) — 지표가 신호를 봄")
         ok(label_ceiling_probe({"res": {"X": dict(fper=[1])}, "y": [], "pid": []}, "X") == {},

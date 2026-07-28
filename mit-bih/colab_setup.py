@@ -110,17 +110,34 @@ def fetch(files=None, branch=None, base=None, verbose=True, ref=None):
     return out
 
 
-def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=True):
-    """내려받기 + 로드 + 검증. 이 함수 하나로 준비가 끝난다."""
+def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=True,
+         self_update=True):
+    """내려받기 + 로드 + 검증. 이 함수 하나로 준비가 끝난다.
+
+    ★self_update: colab_setup.py **자신을 먼저 갱신**한다.
+      이게 없으면 새 파일을 CORE 에 추가해도 노트북 메모리의 옛 sync() 가 옛 목록을
+      쓰기 때문에 그 파일이 영영 안 받아진다. 실제로 ecg_multidb.py 를 추가한 뒤
+      sync() 가 3개만 받아 `NameError: db_audit` 이 났다. 그래서 자기 자신부터 받는다.
+    """
     base = base or _BASE
-    files = list(files or CORE)
-    if chain:
-        files = CHAIN + files                       # 체인 먼저, 그 다음 CORE
     print(f"동기화: {REPO}@{branch or BRANCH} → {base}")
     if not os.path.isdir(base):
         print(f"  ⚠ {base} 없음 — Drive 마운트가 안 됐을 수 있습니다:")
         print(f"    from google.colab import drive; drive.mount('/content/drive')")
     ref = resolve_sha(branch, verbose=verbose)
+    g0 = globals()
+    if self_update and files is None:
+        me = fetch(["colab_setup.py"], base=base, ref=ref, verbose=False)
+        if me:
+            try:
+                exec(open(me[0]).read(), g0)        # CORE/CHAIN/need 목록이 최신이 됨
+                if verbose and set(g0.get("CORE", CORE)) != set(CORE):
+                    print(f"  ↻ 파일 목록 갱신: {sorted(set(g0['CORE']) - set(CORE))} 추가")
+            except Exception as e:
+                print(f"  ⚠ colab_setup 자기갱신 실패({type(e).__name__}) — 옛 목록으로 진행")
+    files = list(files or g0.get("CORE", CORE))
+    if chain:
+        files = list(g0.get("CHAIN", CHAIN)) + files   # 체인 먼저, 그 다음 CORE
     got = fetch(files, branch=branch, base=base, verbose=verbose, ref=ref)
     if not load:
         return got
