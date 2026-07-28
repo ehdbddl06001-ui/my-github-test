@@ -46,6 +46,44 @@ DB_SPEC = {
     "incartdb": dict(name="St.Petersburg INCART", pid0=2000, note="V 가 풍부(20,006)"),
 }
 
+# ─────────────────────────────────────────────────────────────────────────────
+#  2층(리듬·질환축) 전용 DB 명세 — ★신호(.dat) 를 받지 않는다
+#
+#  왜 따로 두는가: 1층(비트 N/S/V/F/Q)은 **감사된 비트 라벨**이 필요해 mitdb·svdb·
+#  incartdb 로 제한된다. 2층(AFIB/AFL/…)은 **R위치 + 리듬 라벨**만 있으면 되고,
+#  그 조건을 만족하는 DB 가 훨씬 많다. 두 층의 가용 DB 집합이 다르다는 것이
+#  "하나의 다중클래스 softmax" 가 아니라 **층으로 나눠야 하는 실질적 이유**다.
+#
+#  ★.dat 를 안 받는 것이 핵심 실용 이득: afdb 23레코드 × 10시간 신호 = ~15GB /
+#    ltafdb 84레코드 × 24시간 = 그 이상. 주석(.atr/.qrs)만 받으면 전부 수십 MB다.
+#    대신 형태(morphology) 축은 이 코퍼스에서 못 쓴다 → 2층-B 는 mitdb 계열로만.
+#
+#  ★afdb 주의: 비트 주석(.qrs)은 **자동검출·미감사**다. R위치로는 쓸 수 있지만
+#    AAMI 비트 클래스로는 절대 쓰면 안 된다 → y5 = -1(미상)로 박아 둔다.
+# ─────────────────────────────────────────────────────────────────────────────
+RRDB_SPEC = {
+    "afdb":     dict(name="MIT-BIH AF (AFDB)", pid0=3000, fs=250,
+                     beat_ext="qrs", rhy_ext="atr", beat_audited=False,
+                     extra_recs=("00735", "03665"),
+                     note="AFIB/AFL/J/N 전량 라벨. AF 검출의 사실상 표준 벤치마크"),
+    "ltafdb":   dict(name="Long-Term AF (LTAFDB)", pid0=4000, fs=128,
+                     beat_ext="atr", rhy_ext="atr", beat_audited=False,
+                     note="84레코드 24~25시간. 지속·발작 혼재 → burden 평가의 핵심"),
+    "nsrdb":    dict(name="MIT-BIH Normal Sinus", pid0=5000, fs=128,
+                     beat_ext="atr", rhy_ext="atr", beat_audited=True,
+                     default_rhythm="N",
+                     note="정상동조율 18명. 리듬 주석이 없어 N 으로 가정(음성대조 전용)"),
+    "mitdb":    dict(name="MIT-BIH Arrhythmia", pid0=0, fs=360,
+                     beat_ext="atr", rhy_ext="atr", beat_audited=True,
+                     note="리듬 주석 보유. 1층·2층 공통"),
+    "svdb":     dict(name="MIT-BIH SVDB", pid0=1000, fs=128,
+                     beat_ext="atr", rhy_ext="atr", beat_audited=True,
+                     note="리듬 주석 1/78 레코드뿐 — 2층 기여 거의 없음"),
+    "incartdb": dict(name="St.Petersburg INCART", pid0=2000, fs=257,
+                     beat_ext="atr", rhy_ext="atr", beat_audited=True,
+                     note="리듬 주석 없음 — 2층 기여 없음"),
+}
+
 
 def _need(name):
     """svdb_labels.py 에서 오는 심볼을 빌려 쓴다(중복 정의하지 않는다)."""
@@ -307,7 +345,198 @@ def build_multi(dbs=("mitdb", "svdb", "incartdb"), out=None, n_rec=None,
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-#  4. 자기검증
+#  4. 2층(리듬축) RR 코퍼스 — 주석만 받아서 만든다
+# ─────────────────────────────────────────────────────────────────────────────
+def _rr_records(db, dldir, exts, verbose=True):
+    """레코드 목록 + 필요한 주석 확장자만 내려받는다(.dat 는 받지 않는다)."""
+    _ensure = _need("_ensure"); _ensure("wfdb")
+    import wfdb
+    spec = RRDB_SPEC[db]
+    try:
+        recs = list(wfdb.get_record_list(db))
+    except Exception:
+        print(f"  ✗ {db}: 레코드 목록 실패"); return []
+    # RECORDS 에 안 실렸지만 주석만 존재하는 레코드(afdb 00735/03665)
+    for r in spec.get("extra_recs", ()):
+        if r not in recs:
+            recs.append(r)
+    os.makedirs(dldir, exist_ok=True)
+    got = []
+    for rec in recs:
+        ok = True
+        for ext in exts:
+            fp = f"{dldir}/{rec}.{ext}"
+            if os.path.exists(fp) and os.path.getsize(fp) > 0:
+                continue
+            for _ in range(3):
+                try:
+                    wfdb.dl_files(db, dldir, [f"{rec}.{ext}"]); break
+                except Exception:
+                    pass
+            if not (os.path.exists(fp) and os.path.getsize(fp) > 0):
+                ok = False; break
+        if ok:
+            got.append(rec)
+    if verbose and len(got) != len(recs):
+        miss = [r for r in recs if r not in got]
+        print(f"  ⚠ {db}: 주석 확보 {len(got)}/{len(recs)}  누락 {miss[:6]}")
+    return got
+
+
+def _rr_one_record(db, rec, dldir):
+    """한 레코드 → (t360, rhythm_name_per_beat, sym_per_beat).
+
+    t360 = 비트 위치를 360Hz 샘플로 환산한 값(build_multi 와 같은 규약).
+    """
+    import wfdb
+    spec = RRDB_SPEC[db]
+    BEAT_SYMS = _need("BEAT_SYMS"); rhythm_per_beat = _need("rhythm_per_beat")
+    hd = wfdb.rdheader(f"{dldir}/{rec}")
+    fs = float(getattr(hd, "fs", spec.get("fs", 360)) or spec.get("fs", 360))
+    sc = _FS_DST / fs
+
+    ba = wfdb.rdann(f"{dldir}/{rec}", spec["beat_ext"])
+    bsym = np.asarray(list(ba.symbol))
+    bkeep = np.array([s in BEAT_SYMS for s in bsym])
+    if not bkeep.any():
+        return None
+    bsamp = np.asarray(ba.sample)[bkeep]
+    bsym = bsym[bkeep]
+
+    if spec["rhy_ext"] == spec["beat_ext"]:
+        ra = ba
+    else:
+        ra = wfdb.rdann(f"{dldir}/{rec}", spec["rhy_ext"])
+    aux = list(getattr(ra, "aux_note", []) or [None] * len(ra.symbol))
+    rp = rhythm_per_beat(np.asarray(ra.sample), list(ra.symbol), aux, bsamp)
+    dflt = spec.get("default_rhythm")
+    rp = [(r or dflt or "(미상)") for r in rp]
+    return (np.asarray(bsamp, np.float64) * sc), rp, bsym
+
+
+def rr_audit_dbs(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), dldir=None, verbose=True):
+    """★2층 진입 전 필수 — 리듬별 '보유 환자 수'와 그로부터 나오는 MDE 를 센다.
+
+    모델을 짜기 전에 이걸 먼저 보는 이유: 리듬 클래스의 검정력은 비트 수가 아니라
+    **그 리듬을 가진 환자 수**로 정해진다. AFIB 10명이면 MDE 0.198 이고, 그 상태에서
+    나온 F1 0.75 와 0.95 는 구분되지 않는다 — 어떤 모델을 붙여도 해석이 안 된다.
+    신호를 안 받으므로 몇 분이면 끝난다.
+    """
+    tot = {}
+    for db in dbs:
+        spec = RRDB_SPEC.get(db)
+        if spec is None:
+            print(f"  ✗ {db}: RRDB_SPEC 에 없음"); continue
+        dd = dldir or f"/content/{db}_ann"
+        exts = sorted({"hea", spec["beat_ext"], spec["rhy_ext"]})
+        recs = _rr_records(db, dd, exts, verbose=verbose)
+        per = {}
+        nbeat = 0
+        for rec in recs:
+            try:
+                got = _rr_one_record(db, rec, dd)
+            except Exception as e:
+                print(f"  ✗ {db}/{rec}: {type(e).__name__}"); continue
+            if got is None:
+                continue
+            t, rp, _ = got
+            nbeat += len(t)
+            for nm in set(rp):
+                per.setdefault(nm, set()).add(f"{db}:{rec}")
+        print(f"\n▶ {spec['name']}  레코드 {len(recs)}  비트 {nbeat:,}")
+        if not spec["beat_audited"]:
+            print(f"    ⚠ 비트 주석 미감사(.{spec['beat_ext']}) → R위치 전용, AAMI 라벨 금지")
+        for nm, s in sorted(per.items(), key=lambda kv: -len(kv[1])):
+            print(f"    {nm:<12}{len(s):>4}레코드")
+            tot.setdefault(nm, set()).update(s)
+    print(f"\n=== 통합 리듬 재고 ===")
+    print(f"  {'리듬':<12}{'환자':>6}{'MDE(σ=.32)':>12}{'MDE(σ=.20)':>12}")
+    for nm, s in sorted(tot.items(), key=lambda kv: -len(kv[1])):
+        n = len(s)
+        print(f"  {nm:<12}{n:>6}{1.96*0.32/max(np.sqrt(n),1):>12.3f}"
+              f"{1.96*0.20/max(np.sqrt(n),1):>12.3f}")
+    print(f"  ※ σ 는 아직 가정이다. 첫 실행 뒤 환자별 F1 의 실측 표준편차로 갱신할 것.")
+    return {k: sorted(v) for k, v in tot.items()}
+
+
+def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
+                    dldir=None, n_rec=None, verbose=True):
+    """2층용 RR 코퍼스 npz. 신호를 받지 않으므로 작고 빠르다(수십 MB).
+
+    저장 키 (전부 비트 단위 1차원, 길이 N)
+      t       비트 시각(초)          — 에피소드·burden 계산의 기준
+      pre_rr  직전 RR(360Hz 샘플)    — rr_context 규약과 동일
+      post_rr 직후 RR(360Hz 샘플)
+      rr_edge 레코드 경계 플래그
+      pid     전역 유일 환자 ID      — GroupKFold 가 DB 를 넘어 유효
+      db      출처
+      rhythm  리듬 id  / rhythm_names
+      y5      AAMI 비트 클래스(감사된 DB만, 나머지는 -1)
+    """
+    AAMI5 = _need("AAMI5"); beat_only_rr = _need("beat_only_rr")
+    T = []; PRE = []; POST = []; EDGE = []; PID = []; DB = []; RHY = []; Y5 = []
+    rnames = {}
+    for db in dbs:
+        spec = RRDB_SPEC.get(db)
+        if spec is None:
+            print(f"  ✗ {db}: RRDB_SPEC 에 없음"); continue
+        off = spec["pid0"]
+        dd = dldir or f"/content/{db}_ann"
+        exts = sorted({"hea", spec["beat_ext"], spec["rhy_ext"]})
+        recs = _rr_records(db, dd, exts, verbose=verbose)
+        if n_rec:
+            recs = recs[:n_rec]
+        # ★pid 는 레코드 이름의 사전순 위치로 고정한다. enumerate 위치를 쓰면 한
+        #   레코드의 다운로드가 실패한 실행과 성공한 실행에서 같은 환자가 다른 ID 를
+        #   받아 재현성이 깨진다.
+        rec2pid = {r: i for i, r in enumerate(sorted(recs))}
+        print(f"\n▶ {spec['name']}: {len(recs)}레코드")
+        for ri, rec in enumerate(recs):
+            try:
+                got = _rr_one_record(db, rec, dd)
+            except Exception as e:
+                print(f"  ✗ {rec}: {type(e).__name__}"); continue
+            if got is None:
+                continue
+            t360, rp, bsym = got
+            pre, post, edge = beat_only_rr(t360)          # 이미 360Hz 환산됨
+            gpid = off + rec2pid[rec]
+            for i in range(len(t360)):
+                nm = rp[i]
+                if nm not in rnames:
+                    rnames[nm] = len(rnames)
+                T.append(t360[i] / _FS_DST); PRE.append(pre[i]); POST.append(post[i])
+                EDGE.append(edge[i]); PID.append(gpid); DB.append(db)
+                RHY.append(rnames[nm])
+                Y5.append(AAMI5.get(bsym[i], -1) if spec["beat_audited"] else -1)
+            if verbose and ((ri + 1) % 20 == 0 or ri == len(recs) - 1):
+                print(f"    {ri+1}/{len(recs)}  누적 {len(T):,}")
+    if not T:
+        raise RuntimeError("비트가 하나도 수집되지 않았습니다.")
+    inv = [None] * len(rnames)
+    for k, v in rnames.items():
+        inv[v] = k
+    out = out or f"{_BASE}/afib_rr.npz"
+    np.savez(out, t=np.array(T, "float32"), pre_rr=np.array(PRE, "float32"),
+             post_rr=np.array(POST, "float32"), rr_edge=np.array(EDGE, bool),
+             pid=np.array(PID, np.int64), db=np.array(DB),
+             rhythm=np.array(RHY, np.int64), rhythm_names=np.array(inv),
+             y5=np.array(Y5, np.int64))
+    mb = os.path.getsize(out) / 1e6
+    print(f"\n✔ 저장 {out}  ({mb:.1f} MB)  비트 {len(T):,}  환자 {len(set(PID))}")
+    R = np.array(RHY)
+    P = np.array(PID)
+    print(f"  {'리듬':<12}{'비트':>12}{'환자':>6}{'비율':>8}")
+    for i, nm in enumerate(inv):
+        m = R == i
+        print(f"  {nm:<12}{int(m.sum()):>12,}{len(np.unique(P[m])):>6}"
+              f"{100*m.mean():>7.2f}%")
+    print(f"  ★신호(.dat)는 받지 않았다 → 형태축은 이 코퍼스로 못 돈다(2층-B 는 mitdb 계열)")
+    return out
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  5. 자기검증
 # ─────────────────────────────────────────────────────────────────────────────
 def selftest():
     ok = lambda c, m: (_ for _ in ()).throw(AssertionError(m)) if not c else print(f"  ✔ {m}")
@@ -322,6 +551,16 @@ def selftest():
     except RuntimeError as e:
         ok("svdb_labels" in str(e), "없는 심볼이면 svdb_labels 를 먼저 로드하라고 안내")
     ok(callable(db_audit) and callable(build_multi), "공개 함수 존재")
+    # ── 2층 RR 코퍼스 명세 ──
+    ok(len(set(v["pid0"] for v in RRDB_SPEC.values())) == len(RRDB_SPEC),
+       "RRDB_SPEC 도 pid 오프셋이 서로 다름")
+    for db, v in RRDB_SPEC.items():
+        if db in DB_SPEC:
+            ok(v["pid0"] == DB_SPEC[db]["pid0"],
+               f"{db}: 두 명세의 pid 오프셋 일치(코퍼스를 섞어도 환자가 안 뒤섞임)")
+    ok(RRDB_SPEC["afdb"]["beat_audited"] is False,
+       "afdb 는 비트 미감사로 표시됨(AAMI 라벨 오용 차단)")
+    ok(callable(build_rr_corpus) and callable(rr_audit_dbs), "2층 공개 함수 존재")
     print("=== 전 항목 통과 ===")
     return True
 

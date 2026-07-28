@@ -37,7 +37,7 @@ _BASE  = globals().get("_BASE", _DEFAULT_BASE)
 
 # 리듬 시퀀스 모델 실행에 필요한 최소 집합(순서 = 로드 순서)
 CORE = ["svdb_bench.py", "svdb_rhythm.py", "svdb_labels.py", "ecg_multidb.py",
-        "rhythm_bench.py"]
+        "rhythm_bench.py", "afib_bench.py"]
 # B1~B4 기준선이 의존하는 체인. 이미 Drive 에 있으면 굳이 안 받아도 된다.
 CHAIN = ["colab_step67_selfref.py", "colab_step68_oppoint.py",
          "colab_step69_ratepoint.py", "colab_step70_evalintegrity.py",
