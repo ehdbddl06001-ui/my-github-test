@@ -1,39 +1,39 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-27",
+ "generated": "2026-07-28",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 484,
+  "total": 522,
   "byType": {
+   "kmle": 331,
    "usmle": 54,
-   "kmle": 299,
-   "paper": 114,
+   "paper": 120,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 48,
-   "Nephrology": 35,
-   "Infectious Disease": 34,
-   "Pediatrics": 34,
-   "Obstetrics & Gynecology": 23,
-   "Neurology": 22,
-   "Psychiatry": 22,
-   "Endocrinology": 20,
-   "Gastroenterology": 19,
-   "Pulmonology": 19,
-   "Dermatology": 18,
-   "General Surgery": 18,
-   "Ophthalmology": 18,
-   "Orthopedics": 18,
-   "Rheumatology": 18,
-   "Hematology": 17,
-   "Pathology": 17,
-   "Surgery": 17,
-   "Laboratory Medicine": 14,
-   "Hematology-Oncology": 12,
+   "Cardiology": 51,
+   "Infectious Disease": 37,
+   "Nephrology": 37,
+   "Pediatrics": 36,
+   "Obstetrics & Gynecology": 25,
+   "Neurology": 24,
+   "Psychiatry": 24,
+   "Endocrinology": 22,
+   "Gastroenterology": 21,
+   "Pulmonology": 21,
+   "Dermatology": 20,
+   "General Surgery": 20,
+   "Ophthalmology": 20,
+   "Orthopedics": 20,
+   "Rheumatology": 20,
+   "Hematology": 19,
+   "Pathology": 18,
+   "Surgery": 18,
+   "Laboratory Medicine": 15,
+   "Hematology-Oncology": 13,
    "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
@@ -51,12 +51,620 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 364,
-   "medium": 120
+   "high": 396,
+   "medium": 126
   },
-  "tagCount": 1359
+  "tagCount": 1445
  },
  "docs": [
+  {
+   "id": "kmle-2026-0361",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Granulomatosis with Polyangiitis",
+   "tags": [
+    "granulomatosis-polyangiitis",
+    "c-anca",
+    "sinusitis",
+    "glomerulonephritis",
+    "tissue-biopsy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0361.md",
+   "snippet": "55세 남자가 몇 달째 낫지 않는 코막힘과 반복되는 코피로 병원에 왔다. 최근에는 기침과 함께 피가 섞인 가래가 나오고, 소변이 콜라색으로 나온다고 한다. 콧등이 조금씩 주저앉는 느낌이라고도 한다. 활력징후·검사는 자료와 같다. 진단을 확인하기 위해 가장 적절한 다음 검사는? A. 항핵항체 검사 B. 침범 조직 생검 C. 혈액 배양 검사 D. 결핵 도말 검사 E. 혈청 보체 측정 만성 코·부비동 병변, 폐결절, 사구체신염(혈뇨",
+   "text": "Rheumatology Granulomatosis with Polyangiitis granulomatosis-polyangiitis c-anca sinusitis glomerulonephritis tissue-biopsy KMLE 2026 / Claude Routine 55세 남자가 몇 달째 낫지 않는 코막힘과 반복되는 코피로 병원에 왔다. 최근에는 기침과 함께 피가 섞인 가래가 나오고, 소변이 콜라색으로 나온다고 한다. 콧등이 조금씩 주저앉는 느낌이라고도 한다. 활력징후·검사는 자료와 같다. 진단을 확인하기 위해 가장 적절한 다음 검사는? A. 항핵항체 검사 B. 침범 조직 생검 C. 혈액 배양 검사 D. 결핵 도말 검사 E. 혈청 보체 측정 만성 코·부비동 병변, 폐결절, 사구체신염(혈뇨·단백뇨)에 c형 항호중구세포질항체 양성이 겹치면 육아종증다발혈관염이다. 항체는 강하게 시사할 뿐이며, 확진은 침범 조직 생검에서 괴사성 육아종혈관염을 확인하는 것이다."
+  },
+  {
+   "id": "kmle-2026-0360",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Polymyalgia Rheumatica",
+   "tags": [
+    "polymyalgia-rheumatica",
+    "girdle-stiffness",
+    "elevated-esr",
+    "normal-ck",
+    "glucocorticoid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0360.md",
+   "snippet": "68세 여자가 몇 주 전부터 양쪽 어깨와 엉덩이 부위가 아프고 뻣뻣해 병원에 왔다. 아침에 일어나면 한 시간 넘게 뻣뻣해 머리 빗기와 자리에서 일어나기가 힘들다고 한다. 진찰에서 실제 근력 저하는 없고 관절 붓기도 뚜렷하지 않다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 저용량 경구 스테로이드 B. 고용량 정맥 스테로이드 C. 메토트렉세이트 단독 투여 D. 비스테로이드소염제 단독 E. 물리치료 단독 유지 50세",
+   "text": "Rheumatology Polymyalgia Rheumatica polymyalgia-rheumatica girdle-stiffness elevated-esr normal-ck glucocorticoid KMLE 2026 / Claude Routine 68세 여자가 몇 주 전부터 양쪽 어깨와 엉덩이 부위가 아프고 뻣뻣해 병원에 왔다. 아침에 일어나면 한 시간 넘게 뻣뻣해 머리 빗기와 자리에서 일어나기가 힘들다고 한다. 진찰에서 실제 근력 저하는 없고 관절 붓기도 뚜렷하지 않다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 저용량 경구 스테로이드 B. 고용량 정맥 스테로이드 C. 메토트렉세이트 단독 투여 D. 비스테로이드소염제 단독 E. 물리치료 단독 유지 50세 이상에서 양쪽 어깨·엉덩이 이음부 통증과 한 시간 넘는 조조강직, 크게 오른 침강속도·C반응단백, 정상 근효소·근력은 류마티스다발근통이다. 저용량 경구 스테로이드에 극적으로 반응하는 것이 특징이자 치료의 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0359",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Idiopathic Pulmonary Fibrosis",
+   "tags": [
+    "pulmonary-fibrosis",
+    "velcro-crackles",
+    "honeycombing",
+    "antifibrotic",
+    "restrictive-lung"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0359.md",
+   "snippet": "68세 남자가 6개월에 걸쳐 점점 심해지는 마른기침과 조금만 걸어도 숨이 차 병원에 왔다. 양쪽 아래 폐 부위에서 숨을 들이쉴 때 끝에 마치 벨크로를 뗄 때 같은 거친 소리가 들리고, 손가락 끝이 곤봉처럼 뭉툭하다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 고용량 스테로이드 단독 투여 B. 광범위 항생제 정맥 투여 C. 흡입 기관지확장제 유지 D. 면역억제제 삼제 병용 요법 E. 항섬유화제 경구 투여 만성 진행",
+   "text": "Pulmonology Idiopathic Pulmonary Fibrosis pulmonary-fibrosis velcro-crackles honeycombing antifibrotic restrictive-lung KMLE 2026 / Claude Routine 68세 남자가 6개월에 걸쳐 점점 심해지는 마른기침과 조금만 걸어도 숨이 차 병원에 왔다. 양쪽 아래 폐 부위에서 숨을 들이쉴 때 끝에 마치 벨크로를 뗄 때 같은 거친 소리가 들리고, 손가락 끝이 곤봉처럼 뭉툭하다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 고용량 스테로이드 단독 투여 B. 광범위 항생제 정맥 투여 C. 흡입 기관지확장제 유지 D. 면역억제제 삼제 병용 요법 E. 항섬유화제 경구 투여 만성 진행성 노력호흡곤란·마른기침에 양측 하부 흡기말 거친 소리(velcro)·곤봉지, 고해상도CT의 벌집모양, 제한성 폐기능, 음성 자가항체는 특발폐섬유증(UIP)이다. 항섬유화제가 폐기능 저하를 늦추며, 스테로이드·면역억제 병용은 오히려 해롭다."
+  },
+  {
+   "id": "kmle-2026-0358",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Tension Pneumothorax",
+   "tags": [
+    "tension-pneumothorax",
+    "trauma",
+    "tracheal-deviation",
+    "needle-decompression",
+    "hypotension"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0358.md",
+   "snippet": "25세 남자가 교통사고로 왼쪽 가슴을 부딪친 뒤 갑자기 숨이 차 응급실로 실려 왔다. 왼쪽 가슴에서 숨소리가 들리지 않고 두드리면 북소리가 나며, 기관이 오른쪽으로 밀려 있다. 얼굴은 창백하고 식은땀을 흘린다. 활력징후·검사는 자료와 같다. 가장 먼저 할 처치는? A. 흉부 전산화단층촬영 시행 B. 고농도 산소만 투여 후 관찰 C. 기관내삽관 후 양압환기 D. 둘째 갈비사이 바늘 감압 E. 흉부X선 확인 후 결정 외상 후 저혈",
+   "text": "Pulmonology Tension Pneumothorax tension-pneumothorax trauma tracheal-deviation needle-decompression hypotension KMLE 2026 / Claude Routine 25세 남자가 교통사고로 왼쪽 가슴을 부딪친 뒤 갑자기 숨이 차 응급실로 실려 왔다. 왼쪽 가슴에서 숨소리가 들리지 않고 두드리면 북소리가 나며, 기관이 오른쪽으로 밀려 있다. 얼굴은 창백하고 식은땀을 흘린다. 활력징후·검사는 자료와 같다. 가장 먼저 할 처치는? A. 흉부 전산화단층촬영 시행 B. 고농도 산소만 투여 후 관찰 C. 기관내삽관 후 양압환기 D. 둘째 갈비사이 바늘 감압 E. 흉부X선 확인 후 결정 외상 후 저혈압·빈맥·편측 호흡음 소실·과공명·기관 편위·목정맥 확장은 긴장기흉의 임상 진단이다. 흉막강 압력이 순환을 눌러 급속히 심정지로 갈 수 있어 영상 대기 없이 즉시 바늘 감압으로 압력을 빼고 이어 흉관을 삽입한다."
+  },
+  {
+   "id": "kmle-2026-0357",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Delirium",
+   "tags": [
+    "delirium",
+    "fluctuating-consciousness",
+    "inattention",
+    "elderly",
+    "precipitant"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0357.md",
+   "snippet": "폐렴으로 입원 중인 80세 남자가 어제부터 갑자기 딴 사람처럼 굴어 협진 의뢰되었다. 정신이 맑았다 흐렸다 하며 대화의 초점을 유지하지 못하고, 벽에 벌레가 기어간다며 없는 것을 본다고 한다. 증상은 밤에 심해지고 여러 약을 함께 복용 중이다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 벤조디아제핀 정맥 투여 B. 신체 억제대 우선 적용 C. 유발 원인 교정·환경 조정 D. 콜린분해효소억제제 시작 E. 수면제 규",
+   "text": "Psychiatry Delirium delirium fluctuating-consciousness inattention elderly precipitant KMLE 2026 / Claude Routine 폐렴으로 입원 중인 80세 남자가 어제부터 갑자기 딴 사람처럼 굴어 협진 의뢰되었다. 정신이 맑았다 흐렸다 하며 대화의 초점을 유지하지 못하고, 벽에 벌레가 기어간다며 없는 것을 본다고 한다. 증상은 밤에 심해지고 여러 약을 함께 복용 중이다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 벤조디아제핀 정맥 투여 B. 신체 억제대 우선 적용 C. 유발 원인 교정·환경 조정 D. 콜린분해효소억제제 시작 E. 수면제 규칙적 투여 급성으로 시작해 하루 중 변동하는 의식·주의력 저하와 지각장애가 아픈 노인에서 나타나면 섬망이다. 감염·약물 등 유발 요인을 찾아 교정하고 지남력을 돕는 환경 중재가 일차이며, 항정신병약은 심한 초조에만 소량 보조적으로 쓴다."
+  },
+  {
+   "id": "kmle-2026-0356",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Lithium Toxicity",
+   "tags": [
+    "lithium-toxicity",
+    "dehydration",
+    "nsaid-interaction",
+    "tremor",
+    "ataxia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0356.md",
+   "snippet": "양극성장애로 리튬을 복용해 온 45세 여자가 손떨림과 걸음이 휘청거려 병원에 왔다. 며칠 전부터 설사로 탈수가 있었고 관절통에 소염진통제를 복용했다고 한다. 진찰에서 거친 손떨림과 반사항진, 처지는 의식이 관찰된다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 항정신병약 정맥 투여 B. 원인 약물 중단·등장액 정맥 투여 C. 활성탄 경구 투여 D. 벤조디아제핀 정맥 투여 E. 삼환계 항우울제 투여 탈수와 소염진통제",
+   "text": "Psychiatry Lithium Toxicity lithium-toxicity dehydration nsaid-interaction tremor ataxia KMLE 2026 / Claude Routine 양극성장애로 리튬을 복용해 온 45세 여자가 손떨림과 걸음이 휘청거려 병원에 왔다. 며칠 전부터 설사로 탈수가 있었고 관절통에 소염진통제를 복용했다고 한다. 진찰에서 거친 손떨림과 반사항진, 처지는 의식이 관찰된다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 항정신병약 정맥 투여 B. 원인 약물 중단·등장액 정맥 투여 C. 활성탄 경구 투여 D. 벤조디아제핀 정맥 투여 E. 삼환계 항우울제 투여 탈수와 소염진통제는 신장에서 리튬 배설을 줄여 농도를 독성 범위로 올린다. 거친 진전·운동실조·의식저하와 농도 상승이 그 근거다. 처치는 원인 약물을 끊고 등장액으로 수분·나트륨을 보충하는 것이며, 중증(신경증상·초고농도)이면 혈액투석을 고려한다."
+  },
+  {
+   "id": "kmle-2026-0355",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Necrotizing Enterocolitis",
+   "tags": [
+    "premature-infant",
+    "necrotizing-enterocolitis",
+    "pneumatosis",
+    "bloody-stool",
+    "feeding-intolerance"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0355.md",
+   "snippet": "재태 28주로 태어난 생후 10일 미숙아가 수유량을 늘리던 중 배가 부풀고 처지며 힘들어한다. 담즙이 섞인 초록색 구토를 하고 기저귀에서 피가 섞인 변이 보인다. 복부는 팽만되고 눌렀을 때 만지기 싫어한다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 금식·위감압·정맥항생제 B. 수유량 증량·경구수분보충 C. 관장·완하제 투여 D. 즉시 개복 장절제술 E. 경구항생제·수유 지속 미숙아에서 수유 진행 중 복부팽만·혈",
+   "text": "Pediatrics Necrotizing Enterocolitis premature-infant necrotizing-enterocolitis pneumatosis bloody-stool feeding-intolerance KMLE 2026 / Claude Routine 재태 28주로 태어난 생후 10일 미숙아가 수유량을 늘리던 중 배가 부풀고 처지며 힘들어한다. 담즙이 섞인 초록색 구토를 하고 기저귀에서 피가 섞인 변이 보인다. 복부는 팽만되고 눌렀을 때 만지기 싫어한다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 금식·위감압·정맥항생제 B. 수유량 증량·경구수분보충 C. 관장·완하제 투여 D. 즉시 개복 장절제술 E. 경구항생제·수유 지속 미숙아에서 수유 진행 중 복부팽만·혈변·담즙성 구토에 복부X선의 장벽내 공기(pneumatosis)가 동반되면 괴사장염이다. 일차 처치는 장을 쉬게 하는 금식과 위감압, 그리고 정맥 항생제이며, 수술은 천공·괴사 진행 시에 국한한다."
+  },
+  {
+   "id": "kmle-2026-0354",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Duct-dependent Cyanotic Congenital Heart Disease",
+   "tags": [
+    "neonatal-cyanosis",
+    "hyperoxia-test",
+    "duct-dependent",
+    "prostaglandin",
+    "congenital-heart-disease"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0354.md",
+   "snippet": "생후 3일 남자 신생아가 온몸이 파랗게 보여 병원에 왔다. 얼굴과 입술, 손발이 청색을 띠며, 마스크로 100% 산소를 충분히 주어도 청색증이 나아지지 않는다. 심잡음은 뚜렷하지 않고 호흡곤란은 심하지 않다. 활력징후·검사는 자료와 같다. 가장 적절한 즉각 처치는? A. 100% 산소 지속 흡입 B. 고리작용이뇨제 정맥 주입 C. 경험적 항생제 정맥 투여 D. 흡입 산화질소 투여 E. 프로스타글란딘 E1 정맥 주입 고농도 산소",
+   "text": "Pediatrics Duct-dependent Cyanotic Congenital Heart Disease neonatal-cyanosis hyperoxia-test duct-dependent prostaglandin congenital-heart-disease KMLE 2026 / Claude Routine 생후 3일 남자 신생아가 온몸이 파랗게 보여 병원에 왔다. 얼굴과 입술, 손발이 청색을 띠며, 마스크로 100% 산소를 충분히 주어도 청색증이 나아지지 않는다. 심잡음은 뚜렷하지 않고 호흡곤란은 심하지 않다. 활력징후·검사는 자료와 같다. 가장 적절한 즉각 처치는? A. 100% 산소 지속 흡입 B. 고리작용이뇨제 정맥 주입 C. 경험적 항생제 정맥 투여 D. 흡입 산화질소 투여 E. 프로스타글란딘 E1 정맥 주입 고농도 산소에도 저산소혈증이 교정되지 않는(hyperoxia 검사 무반응) 신생아 청색증은 폐혈류나 체혈류가 동맥관에 의존하는 청색성 선천심장병을 시사한다. 심장구조 교정 전까지 동맥관을 열어 두어야 하므로 프로스타글란딘 E1을 즉시 주입한다."
+  },
+  {
+   "id": "kmle-2026-0353",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Acute Hematogenous Osteomyelitis",
+   "tags": [
+    "acute-hematogenous-osteomyelitis",
+    "pediatric",
+    "bone-marrow-edema",
+    "blood-culture",
+    "empiric-antibiotics"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0353.md",
+   "snippet": "7세 남아가 3일 전부터 열이 나고 한쪽 다리 정강이 부위를 아파하며 걷기를 거부하여 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 경구 소염진통제만 주고 지켜본다 B. 국소 스테로이드를 병터에 주사한다 C. 물리치료로 관절운동을 시작한다 D. 배양검사를 낸 뒤 정맥 경험적 항생제를 시작한다 E. 부목만 대고 다음 주에 재평가한다 소아의 발열과 국소 뼈 통증·보행 거부에 염증수치가 오르고 MRI에",
+   "text": "Orthopedics Acute Hematogenous Osteomyelitis acute-hematogenous-osteomyelitis pediatric bone-marrow-edema blood-culture empiric-antibiotics KMLE 2026 / Claude Routine 7세 남아가 3일 전부터 열이 나고 한쪽 다리 정강이 부위를 아파하며 걷기를 거부하여 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 경구 소염진통제만 주고 지켜본다 B. 국소 스테로이드를 병터에 주사한다 C. 물리치료로 관절운동을 시작한다 D. 배양검사를 낸 뒤 정맥 경험적 항생제를 시작한다 E. 부목만 대고 다음 주에 재평가한다 소아의 발열과 국소 뼈 통증·보행 거부에 염증수치가 오르고 MRI에서 골수부종이 보이면 급성 혈행성 골수염이다. 원인균 확인을 위해 혈액배양을 낸 뒤 지체 없이 정맥 경험적 항생제를 시작하는 것이 다음 처치다."
+  },
+  {
+   "id": "kmle-2026-0352",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Posterior Hip Dislocation",
+   "tags": [
+    "posterior-hip-dislocation",
+    "dashboard-injury",
+    "sciatic-nerve",
+    "closed-reduction",
+    "avascular-necrosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0352.md",
+   "snippet": "30세 남자가 승용차 정면충돌로 무릎이 계기판에 심하게 부딪힌 뒤 한쪽 엉덩관절이 몹시 아프고 다리를 움직이지 못해 응급실에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 침상안정 후 다음 날 정복한다 B. 골반 견인만 4주간 유지한다 C. 되도록 빨리 도수정복을 시행한다 D. 즉시 인공관절 전치환술을 한다 E. 석고붕대로 고정하고 경과를 관찰한다 계기판 손상으로 다리가 굽고 안쪽으로 돌아간 채 짧아지고 좌골",
+   "text": "Orthopedics Posterior Hip Dislocation posterior-hip-dislocation dashboard-injury sciatic-nerve closed-reduction avascular-necrosis KMLE 2026 / Claude Routine 30세 남자가 승용차 정면충돌로 무릎이 계기판에 심하게 부딪힌 뒤 한쪽 엉덩관절이 몹시 아프고 다리를 움직이지 못해 응급실에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 침상안정 후 다음 날 정복한다 B. 골반 견인만 4주간 유지한다 C. 되도록 빨리 도수정복을 시행한다 D. 즉시 인공관절 전치환술을 한다 E. 석고붕대로 고정하고 경과를 관찰한다 계기판 손상으로 다리가 굽고 안쪽으로 돌아간 채 짧아지고 좌골신경 증상이 동반되면 후방 엉덩관절탈구다. 넙다리뼈머리 혈류 차단으로 무혈성괴사 위험이 시간에 비례해 커지므로 되도록 빨리 도수정복하는 것이 원칙이다."
+  },
+  {
+   "id": "kmle-2026-0351",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Bacterial Keratitis",
+   "tags": [
+    "bacterial-keratitis",
+    "contact-lens",
+    "corneal-infiltrate",
+    "hypopyon",
+    "fortified-antibiotics"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0351.md",
+   "snippet": "24세 여자가 소프트콘택트렌즈를 낀 채 자고 난 뒤 한쪽 눈이 몹시 아프고 충혈되며 잘 안 보여 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 스테로이드 안약만 하루 여러 번 넣는다 B. 각막 검체를 배양한 뒤 강화 국소항생제를 넣는다 C. 눈가리개를 대고 하루 뒤 경과를 지켜본다 D. 항바이러스 안연고를 자주 도포한다 E. 인공눈물을 자주 넣으며 지켜본다 콘택트렌즈 착용자의 통증·충혈에 각막 침윤과 ",
+   "text": "Ophthalmology Bacterial Keratitis bacterial-keratitis contact-lens corneal-infiltrate hypopyon fortified-antibiotics KMLE 2026 / Claude Routine 24세 여자가 소프트콘택트렌즈를 낀 채 자고 난 뒤 한쪽 눈이 몹시 아프고 충혈되며 잘 안 보여 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 스테로이드 안약만 하루 여러 번 넣는다 B. 각막 검체를 배양한 뒤 강화 국소항생제를 넣는다 C. 눈가리개를 대고 하루 뒤 경과를 지켜본다 D. 항바이러스 안연고를 자주 도포한다 E. 인공눈물을 자주 넣으며 지켜본다 콘택트렌즈 착용자의 통증·충혈에 각막 침윤과 전방축농이 보이면 세균각막염을 의심한다. 원인균 확인을 위해 각막 검체를 배양한 뒤 지체 없이 강화 국소항생제를 자주 점안하는 것이 표준 처치다. 스테로이드 단독이나 안대는 감염을 악화시킨다."
+  },
+  {
+   "id": "kmle-2026-0350",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Central Retinal Vein Occlusion",
+   "tags": [
+    "central-retinal-vein-occlusion",
+    "flame-hemorrhage",
+    "painless-vision-loss",
+    "macular-edema",
+    "hypertension"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0350.md",
+   "snippet": "68세 남자가 갑자기 한쪽 눈이 통증 없이 잘 안 보여 병원에 왔다. 고혈압으로 약을 먹고 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치와 평가는? A. 황반부종과 신생혈관 발생 여부를 정기적으로 감시한다 B. 즉시 안구를 세게 마사지하여 색전을 밀어낸다 C. 앞방천자를 시행하여 안압을 급히 낮춘다 D. 고압산소요법을 곧바로 시작한다 E. 항생제 안약을 넣고 눈가리개를 댄다 고혈압 노인의 급성 무통성 시력저하에 안저에",
+   "text": "Ophthalmology Central Retinal Vein Occlusion central-retinal-vein-occlusion flame-hemorrhage painless-vision-loss macular-edema hypertension KMLE 2026 / Claude Routine 68세 남자가 갑자기 한쪽 눈이 통증 없이 잘 안 보여 병원에 왔다. 고혈압으로 약을 먹고 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치와 평가는? A. 황반부종과 신생혈관 발생 여부를 정기적으로 감시한다 B. 즉시 안구를 세게 마사지하여 색전을 밀어낸다 C. 앞방천자를 시행하여 안압을 급히 낮춘다 D. 고압산소요법을 곧바로 시작한다 E. 항생제 안약을 넣고 눈가리개를 댄다 고혈압 노인의 급성 무통성 시력저하에 안저에서 다발성 불꽃모양 출혈과 정맥울혈이 보이면 중심망막정맥폐쇄다. 상대구심동공결손이 뚜렷하지 않아 동맥폐쇄와 구별되며, 황반부종과 신생혈관 합병증을 감시하며 전신 위험인자를 조절하는 것이 적절하다."
+  },
+  {
+   "id": "kmle-2026-0349",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postmenopausal Bleeding",
+   "tags": [
+    "postmenopausal-bleeding",
+    "endometrial-thickening",
+    "obesity",
+    "diabetes",
+    "cancer-workup"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0349.md",
+   "snippet": "58세 여자가 3년 전 폐경했는데 최근 다시 질출혈이 있어 병원에 왔다. 비만하고 당뇨가 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 검사는? A. 혈청 CA 125를 측정한다 B. 자궁목세포도말검사를 시행한다 C. 골반 자기공명영상을 촬영한다 D. 혈청 여성호르몬 수치를 측정한다 E. 자궁내막 조직을 채취하여 검사한다 폐경 후 질출혈에 비만·당뇨 같은 위험인자와 자궁내막 비후가 있으면 자궁내막암을 먼저 배제해야 한",
+   "text": "Obstetrics & Gynecology Postmenopausal Bleeding postmenopausal-bleeding endometrial-thickening obesity diabetes cancer-workup KMLE 2026 / Claude Routine 58세 여자가 3년 전 폐경했는데 최근 다시 질출혈이 있어 병원에 왔다. 비만하고 당뇨가 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 검사는? A. 혈청 CA 125를 측정한다 B. 자궁목세포도말검사를 시행한다 C. 골반 자기공명영상을 촬영한다 D. 혈청 여성호르몬 수치를 측정한다 E. 자궁내막 조직을 채취하여 검사한다 폐경 후 질출혈에 비만·당뇨 같은 위험인자와 자궁내막 비후가 있으면 자궁내막암을 먼저 배제해야 한다. 원인을 확정하는 결정적 검사는 자궁내막 조직을 직접 채취해 병리로 확인하는 것이다."
+  },
+  {
+   "id": "kmle-2026-0348",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Umbilical Cord Prolapse",
+   "tags": [
+    "umbilical-cord-prolapse",
+    "fetal-bradycardia",
+    "rupture-of-membranes",
+    "emergency-cesarean",
+    "obstetric-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0348.md",
+   "snippet": "39주 임신부가 양막이 터진 직후 태아 심박이 갑자기 느려져 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 먼저 할 처치는? A. 옥시토신으로 진통을 촉진한다 B. 자궁수축억제제만 투여하며 지켜본다 C. 양수주입술을 시행한다 D. 선진부를 들어 올리고 응급 제왕절개를 한다 E. 응급 흡입분만을 시도한다 양막파수 직후 태아서맥과 함께 질에서 박동하는 삭이 만져지면 제대탈출이다. 눌린 탯줄의 압박을 풀기 위해 손으로 선진부를 ",
+   "text": "Obstetrics & Gynecology Umbilical Cord Prolapse umbilical-cord-prolapse fetal-bradycardia rupture-of-membranes emergency-cesarean obstetric-emergency KMLE 2026 / Claude Routine 39주 임신부가 양막이 터진 직후 태아 심박이 갑자기 느려져 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 먼저 할 처치는? A. 옥시토신으로 진통을 촉진한다 B. 자궁수축억제제만 투여하며 지켜본다 C. 양수주입술을 시행한다 D. 선진부를 들어 올리고 응급 제왕절개를 한다 E. 응급 흡입분만을 시도한다 양막파수 직후 태아서맥과 함께 질에서 박동하는 삭이 만져지면 제대탈출이다. 눌린 탯줄의 압박을 풀기 위해 손으로 선진부를 밀어 올려 두고 곧바로 응급 제왕절개로 분만하는 것이 가장 먼저 할 처치다."
+  },
+  {
+   "id": "kmle-2026-0347",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Idiopathic Intracranial Hypertension",
+   "tags": [
+    "idiopathic-intracranial-hypertension",
+    "papilledema",
+    "transient-visual-obscuration",
+    "acetazolamide",
+    "obesity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0347.md",
+   "snippet": "26세 여자가 몇 주간 이어지는 두통과 함께 갑자기 눈앞이 잠깐씩 캄캄해지는 증상으로 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 장기간 경구 스테로이드를 투여한다 B. 경구 편두통 예방약제를 시작한다 C. 뇌척수액압을 측정한 뒤 탄산탈수효소억제제를 투여한다 D. 뇌정맥동 혈전을 용해하는 시술을 한다 E. 곧바로 뇌실복강션트를 삽입한다 비만한 젊은 여성의 두통·일과성 시야흐림·양측 유두부종에 영",
+   "text": "Neurology Idiopathic Intracranial Hypertension idiopathic-intracranial-hypertension papilledema transient-visual-obscuration acetazolamide obesity KMLE 2026 / Claude Routine 26세 여자가 몇 주간 이어지는 두통과 함께 갑자기 눈앞이 잠깐씩 캄캄해지는 증상으로 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 장기간 경구 스테로이드를 투여한다 B. 경구 편두통 예방약제를 시작한다 C. 뇌척수액압을 측정한 뒤 탄산탈수효소억제제를 투여한다 D. 뇌정맥동 혈전을 용해하는 시술을 한다 E. 곧바로 뇌실복강션트를 삽입한다 비만한 젊은 여성의 두통·일과성 시야흐림·양측 유두부종에 영상이 정상이면 특발두개내압상승을 의심한다. 요추천자로 개방압을 확인해 진단하고 탄산탈수효소억제제로 뇌척수액 생성을 줄이며 시력을 감시하는 것이 다음 처치다."
+  },
+  {
+   "id": "kmle-2026-0346",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Normal Pressure Hydrocephalus",
+   "tags": [
+    "normal-pressure-hydrocephalus",
+    "gait-apraxia",
+    "urinary-incontinence",
+    "ventriculomegaly",
+    "tap-test"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0346.md",
+   "snippet": "74세 남자가 몇 달 전부터 걸음이 자석에 붙은 듯 느려지고 자주 넘어지며, 소변을 지리고 기억력이 떨어져 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 도파민작용제를 시작한다 B. 뇌척수액을 대량 배액한 뒤 보행 변화를 관찰한다 C. 아세틸콜린분해효소억제제를 시작한다 D. 고용량 정맥 스테로이드를 투여한다 E. 경구 항혈소판제를 시작한다 보행장애·요실금·인지저하의 세 징후에 뇌실확장이 동반되면 ",
+   "text": "Neurology Normal Pressure Hydrocephalus normal-pressure-hydrocephalus gait-apraxia urinary-incontinence ventriculomegaly tap-test KMLE 2026 / Claude Routine 74세 남자가 몇 달 전부터 걸음이 자석에 붙은 듯 느려지고 자주 넘어지며, 소변을 지리고 기억력이 떨어져 병원에 왔다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 도파민작용제를 시작한다 B. 뇌척수액을 대량 배액한 뒤 보행 변화를 관찰한다 C. 아세틸콜린분해효소억제제를 시작한다 D. 고용량 정맥 스테로이드를 투여한다 E. 경구 항혈소판제를 시작한다 보행장애·요실금·인지저하의 세 징후에 뇌실확장이 동반되면 정상압수두증을 의심한다. 진단 확인과 션트 반응 예측을 위해 요추천자로 뇌척수액을 대량 배액한 뒤 보행이 호전되는지 보는 배액검사가 다음 단계다."
+  },
+  {
+   "id": "kmle-2026-0345",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Bilateral Renal Artery Stenosis",
+   "tags": [
+    "renal-artery-stenosis",
+    "resistant-hypertension",
+    "ace-inhibitor",
+    "acute-kidney-injury",
+    "renovascular"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0345.md",
+   "snippet": "71세 남자가 세 가지 혈압약으로도 잘 조절되지 않아 얼마 전 새 혈압약을 추가했는데, 일주일 만에 신장 수치가 두 배로 뛰어 왔다. 배꼽 옆에서 혈관 잡음이 들리고 흡연력이 길다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 원인 약제 중단 후 신동맥 검사 B. 원인 약제 증량하여 혈압 조절 C. 이뇨제 추가하고 경과 관찰 D. 수액 제한하며 혈압약 유지 E. 베타차단제로 바꿔 혈압 조절 저항성 고혈압 노인",
+   "text": "Nephrology Bilateral Renal Artery Stenosis renal-artery-stenosis resistant-hypertension ace-inhibitor acute-kidney-injury renovascular KMLE 2026 / Claude Routine 71세 남자가 세 가지 혈압약으로도 잘 조절되지 않아 얼마 전 새 혈압약을 추가했는데, 일주일 만에 신장 수치가 두 배로 뛰어 왔다. 배꼽 옆에서 혈관 잡음이 들리고 흡연력이 길다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 원인 약제 중단 후 신동맥 검사 B. 원인 약제 증량하여 혈압 조절 C. 이뇨제 추가하고 경과 관찰 D. 수액 제한하며 혈압약 유지 E. 베타차단제로 바꿔 혈압 조절 저항성 고혈압 노인에서 안지오텐신전환효소억제제 시작 후 급성 신기능 악화와 복부 혈관 잡음은 양쪽 신동맥협착을 시사한다. 협착 신장은 사구체압을 유지하려 원심세동맥을 수축시키는데, ACE억제제가 이를 풀어 여과율이 급락한다. 따라서 원인 약제를 즉시 중단하고 신동맥을 영상으로 평가한다."
+  },
+  {
+   "id": "kmle-2026-0344",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Minimal Change Disease",
+   "tags": [
+    "minimal-change-disease",
+    "nephrotic-syndrome",
+    "proteinuria",
+    "pediatric",
+    "corticosteroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0344.md",
+   "snippet": "5세 남아가 며칠 전부터 눈두덩이 붓더니 온몸이 붓고 배도 불러 병원에 왔다. 소변에 거품이 많고 양이 줄었다고 한다. 혈뇨는 없고 신장기능은 정상이며 보체도 정상이었다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 항생제 경구 투여 B. 혈장교환술 시행 C. 사이클로포스파미드 정맥 투여 D. 이뇨제 단독으로 부종 조절 E. 경구 프레드니손 투여 소아에서 전신부종·심한 단백뇨·저알부민혈증의 신증후군에 혈뇨가 없고 ",
+   "text": "Nephrology Minimal Change Disease minimal-change-disease nephrotic-syndrome proteinuria pediatric corticosteroid KMLE 2026 / Claude Routine 5세 남아가 며칠 전부터 눈두덩이 붓더니 온몸이 붓고 배도 불러 병원에 왔다. 소변에 거품이 많고 양이 줄었다고 한다. 혈뇨는 없고 신장기능은 정상이며 보체도 정상이었다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 항생제 경구 투여 B. 혈장교환술 시행 C. 사이클로포스파미드 정맥 투여 D. 이뇨제 단독으로 부종 조절 E. 경구 프레드니손 투여 소아에서 전신부종·심한 단백뇨·저알부민혈증의 신증후군에 혈뇨가 없고 보체·신기능이 정상이면 미세변화병이 가장 흔한 원인이다. 스테로이드 반응성이 매우 좋아 1차 치료는 경구 프레드니손이며, 대부분 수 주 내에 단백뇨가 소실된다."
+  },
+  {
+   "id": "kmle-2026-0343",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Scrub Typhus (Tsutsugamushi)",
+   "tags": [
+    "scrub-typhus",
+    "tsutsugamushi",
+    "eschar",
+    "rickettsia",
+    "doxycycline"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0343.md",
+   "snippet": "56세 여자가 지난주 밭일과 등산을 다녀온 뒤 5일째 열이 나고 몸통에 붉은 발진이 돋아 병원에 왔다. 두통과 근육통을 호소하며, 같은 지역에서 비슷한 환자가 여럿 나왔다고 한다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손 정맥 투여 B. 반코마이신 정맥 투여 C. 아시클로버 정맥 투여 D. 독시사이클린 경구 투여 E. 오셀타미비르 경구 투여 가을철 야외활동력, 발열·발진·두통에 진드기 유충이 문 자",
+   "text": "Infectious Disease Scrub Typhus (Tsutsugamushi) scrub-typhus tsutsugamushi eschar rickettsia doxycycline KMLE 2026 / Claude Routine 56세 여자가 지난주 밭일과 등산을 다녀온 뒤 5일째 열이 나고 몸통에 붉은 발진이 돋아 병원에 왔다. 두통과 근육통을 호소하며, 같은 지역에서 비슷한 환자가 여럿 나왔다고 한다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손 정맥 투여 B. 반코마이신 정맥 투여 C. 아시클로버 정맥 투여 D. 독시사이클린 경구 투여 E. 오셀타미비르 경구 투여 가을철 야외활동력, 발열·발진·두통에 진드기 유충이 문 자리의 가피와 지역 유행은 쓰쓰가무시병(양충병)의 특징이다. 리케차 계열 감염이므로 1차 치료는 독시사이클린이며 대개 48시간 내 해열된다. 베타락탐·반코마이신 같은 세포벽 표적 항생제는 효과가 없다."
+  },
+  {
+   "id": "kmle-2026-0342",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Pneumocystis jirovecii Pneumonia",
+   "tags": [
+    "pneumocystis",
+    "hiv",
+    "opportunistic-infection",
+    "hypoxemia",
+    "ground-glass-opacity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0342.md",
+   "snippet": "34세 남자가 3주에 걸쳐 서서히 숨이 차고 마른기침이 심해져 병원에 왔다. 몇 걸음만 걸어도 산소포화도가 뚝 떨어지며, 최근 체중이 많이 줄고 아구창이 있었다고 한다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손 정맥 투여 B. 오셀타미비르 경구 투여 C. 트리메토프림 설파메톡사졸 투여 D. 리팜핀 포함 4제 결핵약 투여 E. 암포테리신비 정맥 투여 면역저하(낮은 CD4, 아구창, 체중감소) 배경에서",
+   "text": "Infectious Disease Pneumocystis jirovecii Pneumonia pneumocystis hiv opportunistic-infection hypoxemia ground-glass-opacity KMLE 2026 / Claude Routine 34세 남자가 3주에 걸쳐 서서히 숨이 차고 마른기침이 심해져 병원에 왔다. 몇 걸음만 걸어도 산소포화도가 뚝 떨어지며, 최근 체중이 많이 줄고 아구창이 있었다고 한다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 세프트리악손 정맥 투여 B. 오셀타미비르 경구 투여 C. 트리메토프림 설파메톡사졸 투여 D. 리팜핀 포함 4제 결핵약 투여 E. 암포테리신비 정맥 투여 면역저하(낮은 CD4, 아구창, 체중감소) 배경에서 아급성 호흡곤란·마른기침·저산소증에 LDH 상승과 양쪽 미만성 간유리음영이면 주폐포자충 폐렴이 가장 유력하다. 1차 치료는 트리메토프림 설파메톡사졸이며, 저산소증(PaO2 ≤ 70 mmHg)이 있으면 코르티코스테로이드를 함께 준다."
+  },
+  {
+   "id": "kmle-2026-0341",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Acute Hemolytic Transfusion Reaction",
+   "tags": [
+    "transfusion-reaction",
+    "hemolysis",
+    "abo-incompatibility",
+    "hemoglobinuria",
+    "transfusion"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0341.md",
+   "snippet": "58세 여자가 수술 후 적혈구 수혈을 시작한 지 10분 만에 오한과 함께 열이 나고 양쪽 옆구리가 아프며 소변이 붉게 나온다고 한다. 혈압이 떨어지고 맥박이 빨라졌다. 활력징후·검사는 자료와 같다. 가장 먼저 할 처치는? A. 수혈 속도만 줄이고 계속 투여 B. 즉시 수혈 중단 후 식염수 투여 C. 해열제 주고 같은 혈액 계속 수혈 D. 이뇨제 정맥 투여 후 관찰 E. 항히스타민제만 주고 수혈 지속 수혈 직후 발열·오한·옆구리",
+   "text": "Hematology Acute Hemolytic Transfusion Reaction transfusion-reaction hemolysis abo-incompatibility hemoglobinuria transfusion KMLE 2026 / Claude Routine 58세 여자가 수술 후 적혈구 수혈을 시작한 지 10분 만에 오한과 함께 열이 나고 양쪽 옆구리가 아프며 소변이 붉게 나온다고 한다. 혈압이 떨어지고 맥박이 빨라졌다. 활력징후·검사는 자료와 같다. 가장 먼저 할 처치는? A. 수혈 속도만 줄이고 계속 투여 B. 즉시 수혈 중단 후 식염수 투여 C. 해열제 주고 같은 혈액 계속 수혈 D. 이뇨제 정맥 투여 후 관찰 E. 항히스타민제만 주고 수혈 지속 수혈 직후 발열·오한·옆구리통증·혈색소뇨·저혈압은 ABO 부적합에 의한 급성 혈관내 용혈을 시사한다. 가장 먼저 해야 할 조치는 즉시 수혈을 멈추고 정맥로를 생리식염수로 유지해 신관류를 지키며 혈압을 떠받치는 것이다. 이후 혈액은행 재검사와 신부전·DIC 감시를 한다."
+  },
+  {
+   "id": "kmle-2026-0340",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Heparin-Induced Thrombocytopenia",
+   "tags": [
+    "heparin",
+    "thrombocytopenia",
+    "thrombosis",
+    "argatroban",
+    "anticoagulation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0340.md",
+   "snippet": "70세 여자가 무릎관절 수술 뒤 예방적으로 정맥 항응고제를 맞으며 지내던 중, 투여 7일째에 왼쪽 종아리가 붓고 아파 협진이 의뢰되었다. 같은 약을 계속 맞는 상태이며 검사에서 혈소판이 절반 이하로 줄었다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 헤파린 중단 후 아르가트로반 투여 B. 헤파린 유지하며 혈소판 수혈 C. 와파린으로 즉시 단독 전환 D. 저분자량헤파린으로 변경 E. 항응고 중단하고 경과 관찰 헤파",
+   "text": "Hematology Heparin-Induced Thrombocytopenia heparin thrombocytopenia thrombosis argatroban anticoagulation KMLE 2026 / Claude Routine 70세 여자가 무릎관절 수술 뒤 예방적으로 정맥 항응고제를 맞으며 지내던 중, 투여 7일째에 왼쪽 종아리가 붓고 아파 협진이 의뢰되었다. 같은 약을 계속 맞는 상태이며 검사에서 혈소판이 절반 이하로 줄었다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 헤파린 중단 후 아르가트로반 투여 B. 헤파린 유지하며 혈소판 수혈 C. 와파린으로 즉시 단독 전환 D. 저분자량헤파린으로 변경 E. 항응고 중단하고 경과 관찰 헤파린 투여 5~10일에 혈소판이 기저치의 50% 이상 감소하면서 새 혈전이 생기면 헤파린유발혈소판감소증을 의심한다. 면역매개 혈전증이므로 모든 헤파린을 즉시 끊고, 혈소판이 회복될 때까지 아르가트로반 같은 비헤파린 항응고제로 전환한다. 초기 와파린 단독은 피부괴사·혈전 악화 위험이 있어 금기다."
+  },
+  {
+   "id": "kmle-2026-0339",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Boerhaave Syndrome",
+   "tags": [
+    "boerhaave-syndrome",
+    "esophageal-perforation",
+    "subcutaneous-emphysema",
+    "pleural-effusion",
+    "emergency-surgery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0339.md",
+   "snippet": "54세 남자가 술을 마신 뒤 심하게 여러 번 토하고 나서 갑자기 가슴이 찢어지듯 아파 응급실에 왔다. 숨쉬기 힘들어 하고 목과 가슴을 누르면 사각사각한 느낌이 만져진다. 활력징후·검사는 자료와 같다. 진단 확인 후 가장 적절한 처치는? A. 제산제 투여 후 경과 관찰 B. 위내시경으로 지혈술 시행 C. 항생제만 정맥 투여하며 관찰 D. 심장초음파 후 이뇨제 투여 E. 즉시 응급 수술로 봉합과 배액 심한 구토 뒤 급성 흉통, 피",
+   "text": "General Surgery Boerhaave Syndrome boerhaave-syndrome esophageal-perforation subcutaneous-emphysema pleural-effusion emergency-surgery KMLE 2026 / Claude Routine 54세 남자가 술을 마신 뒤 심하게 여러 번 토하고 나서 갑자기 가슴이 찢어지듯 아파 응급실에 왔다. 숨쉬기 힘들어 하고 목과 가슴을 누르면 사각사각한 느낌이 만져진다. 활력징후·검사는 자료와 같다. 진단 확인 후 가장 적절한 처치는? A. 제산제 투여 후 경과 관찰 B. 위내시경으로 지혈술 시행 C. 항생제만 정맥 투여하며 관찰 D. 심장초음파 후 이뇨제 투여 E. 즉시 응급 수술로 봉합과 배액 심한 구토 뒤 급성 흉통, 피하기종, 왼쪽 가슴막삼출과 세로칸 공기, 가슴막액 아밀라제 상승은 자발성 식도파열(Boerhaave 증후군)을 시사한다. 종격동염·패혈증으로 급속히 악화되므로 조기 진단 시 응급 수술로 파열부를 봉합하고 배액하는 것이 원칙이다."
+  },
+  {
+   "id": "kmle-2026-0338",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Strangulated Inguinal Hernia",
+   "tags": [
+    "inguinal-hernia",
+    "strangulation",
+    "acute-abdomen",
+    "emergency-surgery",
+    "bowel-ischemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0338.md",
+   "snippet": "62세 남자가 6시간 전부터 오른쪽 사타구니가 아프게 부풀며 배가 아프고 여러 차례 토해서 응급실에 왔다. 부푼 부위를 만지면 매우 아파하고 피부가 붉게 변해 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 진통제만 주고 경과 관찰 B. 얼음찜질 후 손으로 밀어 정복 시도 C. 서혜부 초음파만 하고 외래 추적 D. 즉시 응급 수술로 탐색과 정복 E. 광범위 항생제만 주며 입원 관찰 정복되지 않는 통증성 서",
+   "text": "General Surgery Strangulated Inguinal Hernia inguinal-hernia strangulation acute-abdomen emergency-surgery bowel-ischemia KMLE 2026 / Claude Routine 62세 남자가 6시간 전부터 오른쪽 사타구니가 아프게 부풀며 배가 아프고 여러 차례 토해서 응급실에 왔다. 부푼 부위를 만지면 매우 아파하고 피부가 붉게 변해 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 진통제만 주고 경과 관찰 B. 얼음찜질 후 손으로 밀어 정복 시도 C. 서혜부 초음파만 하고 외래 추적 D. 즉시 응급 수술로 탐색과 정복 E. 광범위 항생제만 주며 입원 관찰 정복되지 않는 통증성 서혜부 팽윤에 구토·복통과 국소 발적, 빈맥·발열·젖산 상승이 동반되면 목졸림(strangulation)에 의한 장 허혈을 의미한다. 도수정복은 죽은 장을 복강으로 되밀어 넣을 위험이 있어 금기이며, 즉시 응급 수술로 탐색해 장 생존성을 확인하고 필요시 절제해야 한다."
+  },
+  {
+   "id": "kmle-2026-0337",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Bleeding Peptic Ulcer",
+   "tags": [
+    "bleeding-peptic-ulcer",
+    "nsaid",
+    "melena",
+    "endoscopic-hemostasis",
+    "upper-gi-bleeding"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0337.md",
+   "snippet": "70세 남자가 오늘 아침 검은색 변을 보고 붉은 피를 토해 왔다. 관절염으로 소염진통제를 여러 주 복용해 왔다. 정맥로를 확보하고 수액을 준 뒤 활력징후가 안정되었다. 간질환이나 음주 병력은 없다. 활력징후·검사는 자료와 같다. 혈역학 안정화 후 가장 적절한 다음 처치는? A. 문맥정맥단락술을 시행한다 B. 옥트레오타이드를 정맥으로 준다 C. 응급 위내시경으로 지혈한다 D. 항생제를 예방적으로 투여한다 E. 풍선탐폰을 코위로 ",
+   "text": "Gastroenterology Bleeding Peptic Ulcer bleeding-peptic-ulcer nsaid melena endoscopic-hemostasis upper-gi-bleeding KMLE 2026 / Claude Routine 70세 남자가 오늘 아침 검은색 변을 보고 붉은 피를 토해 왔다. 관절염으로 소염진통제를 여러 주 복용해 왔다. 정맥로를 확보하고 수액을 준 뒤 활력징후가 안정되었다. 간질환이나 음주 병력은 없다. 활력징후·검사는 자료와 같다. 혈역학 안정화 후 가장 적절한 다음 처치는? A. 문맥정맥단락술을 시행한다 B. 옥트레오타이드를 정맥으로 준다 C. 응급 위내시경으로 지혈한다 D. 항생제를 예방적으로 투여한다 E. 풍선탐폰을 코위로 삽입한다 소염진통제 복용 노인의 흑색변·토혈에 낮은 헤모글로빈과 상승한 혈액요소질소는 소화궤양에 의한 상부위장관출혈이다. 간질환·음주가 없어 정맥류가 아니므로, 안정화 후 응급 내시경으로 출혈점을 지혈하고 양성자펌프억제제를 병용한다."
+  },
+  {
+   "id": "kmle-2026-0336",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Hepatic Encephalopathy",
+   "tags": [
+    "hepatic-encephalopathy",
+    "cirrhosis",
+    "asterixis",
+    "lactulose",
+    "precipitant"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0336.md",
+   "snippet": "59세 남자가 하루 전부터 말이 어눌해지고 자꾸 잠에 빠지려 해 왔다. 여러 해 간경변으로 치료 중이며 최근 며칠 변을 보지 못했다. 팔을 앞으로 뻗게 하면 손목이 퍼덕이며 떨린다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 고단백 식이를 늘린다 B. 락툴로오스를 경구로 투여한다 C. 벤조디아제핀을 투여한다 D. 만니톨을 정맥으로 투여한다 E. 생리식염수를 빠르게 투여한다 간경변 환자에서 변비 뒤 의식혼탁과 손목",
+   "text": "Gastroenterology Hepatic Encephalopathy hepatic-encephalopathy cirrhosis asterixis lactulose precipitant KMLE 2026 / Claude Routine 59세 남자가 하루 전부터 말이 어눌해지고 자꾸 잠에 빠지려 해 왔다. 여러 해 간경변으로 치료 중이며 최근 며칠 변을 보지 못했다. 팔을 앞으로 뻗게 하면 손목이 퍼덕이며 떨린다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 고단백 식이를 늘린다 B. 락툴로오스를 경구로 투여한다 C. 벤조디아제핀을 투여한다 D. 만니톨을 정맥으로 투여한다 E. 생리식염수를 빠르게 투여한다 간경변 환자에서 변비 뒤 의식혼탁과 손목 퍼덕떨림은 간성뇌증이다. 장에서 질소성 물질 생성·흡수를 줄이는 삼투성 완하제로 배변을 유도하고, 변비·감염·출혈 같은 유발인자를 함께 교정한다."
+  },
+  {
+   "id": "kmle-2026-0335",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Primary Aldosteronism (Conn)",
+   "tags": [
+    "primary-aldosteronism",
+    "resistant-hypertension",
+    "hypokalemia",
+    "aldosterone-renin-ratio",
+    "confirmatory-test"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0335.md",
+   "snippet": "48세 남자가 세 가지 이상의 혈압약을 써도 조절되지 않는 고혈압으로 왔다. 힘이 빠지고 소변을 자주 본다. 부종이나 두근거림은 없다. 활력징후·검사는 자료와 같다. 다음 단계로 가장 적절한 것은? A. 식염수부하 검사로 확진한다 B. 소변 메타네프린을 측정한다 C. 덱사메타손 억제 검사를 한다 D. 신동맥 도플러초음파를 한다 E. 저용량 이뇨제를 추가한다 저항성 고혈압에 저칼륨혈증·대사알칼리증과 상승된 알도스테론 레닌비는 원",
+   "text": "Endocrinology Primary Aldosteronism (Conn) primary-aldosteronism resistant-hypertension hypokalemia aldosterone-renin-ratio confirmatory-test KMLE 2026 / Claude Routine 48세 남자가 세 가지 이상의 혈압약을 써도 조절되지 않는 고혈압으로 왔다. 힘이 빠지고 소변을 자주 본다. 부종이나 두근거림은 없다. 활력징후·검사는 자료와 같다. 다음 단계로 가장 적절한 것은? A. 식염수부하 검사로 확진한다 B. 소변 메타네프린을 측정한다 C. 덱사메타손 억제 검사를 한다 D. 신동맥 도플러초음파를 한다 E. 저용량 이뇨제를 추가한다 저항성 고혈압에 저칼륨혈증·대사알칼리증과 상승된 알도스테론 레닌비는 원발알도스테론증의 선별 양성 소견이다. 다음 단계는 나트륨 부하에도 알도스테론이 억제되지 않음을 보이는 확진 검사다."
+  },
+  {
+   "id": "kmle-2026-0334",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Myxedema Coma",
+   "tags": [
+    "myxedema-coma",
+    "hypothermia",
+    "hyponatremia",
+    "levothyroxine",
+    "altered-mental-status"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0334.md",
+   "snippet": "78세 여자가 한겨울에 반응이 둔해지고 자꾸 잠에 빠져 응급실에 실려 왔다. 여러 해 전 갑상선기능저하로 진단받았으나 최근 약을 끊었다. 몸이 차고 맥이 느리며 얼굴과 손발이 부어 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 인슐린을 정맥으로 투여한다 B. 프로프라놀롤을 정맥으로 투여한다 C. 삼환계 항우울제를 투여한다 D. 생리식염수만 빠르게 투여한다 E. 레보티록신을 정맥으로 투여한다 겨울철 노인의 저체",
+   "text": "Endocrinology Myxedema Coma myxedema-coma hypothermia hyponatremia levothyroxine altered-mental-status KMLE 2026 / Claude Routine 78세 여자가 한겨울에 반응이 둔해지고 자꾸 잠에 빠져 응급실에 실려 왔다. 여러 해 전 갑상선기능저하로 진단받았으나 최근 약을 끊었다. 몸이 차고 맥이 느리며 얼굴과 손발이 부어 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 인슐린을 정맥으로 투여한다 B. 프로프라놀롤을 정맥으로 투여한다 C. 삼환계 항우울제를 투여한다 D. 생리식염수만 빠르게 투여한다 E. 레보티록신을 정맥으로 투여한다 겨울철 노인의 저체온·서맥·의식저하·저나트륨혈증에 부종과 갑상선기능저하 병력이 겹치면 갑상선호르몬 결핍 극단인 점액부종혼수다. 정맥 갑상선호르몬 보충이 필수이며 부신부전 동반 가능성에 스테로이드를 함께 고려한다."
+  },
+  {
+   "id": "kmle-2026-0333",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Pyoderma Gangrenosum",
+   "tags": [
+    "pyoderma-gangrenosum",
+    "inflammatory-bowel-disease",
+    "pathergy",
+    "systemic-steroid",
+    "painful-ulcer"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0333.md",
+   "snippet": "42세 여자가 3주 전 정강이에 생긴 작은 고름집이 빠르게 커져 통증이 심한 궤양이 되어 왔다. 수년째 혈변과 설사로 궤양성 대장염을 앓고 있다. 궤양 가장자리는 자주색을 띠며 밑으로 파여 들어가 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 광범위 항생제를 정맥으로 준다 B. 병터를 넓게 변연절제한다 C. 고압산소요법을 시행한다 D. 전신 스테로이드를 투여한다 E. 항진균제를 병터에 바른다 염증성 장질환에 ",
+   "text": "Dermatology Pyoderma Gangrenosum pyoderma-gangrenosum inflammatory-bowel-disease pathergy systemic-steroid painful-ulcer KMLE 2026 / Claude Routine 42세 여자가 3주 전 정강이에 생긴 작은 고름집이 빠르게 커져 통증이 심한 궤양이 되어 왔다. 수년째 혈변과 설사로 궤양성 대장염을 앓고 있다. 궤양 가장자리는 자주색을 띠며 밑으로 파여 들어가 있다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 광범위 항생제를 정맥으로 준다 B. 병터를 넓게 변연절제한다 C. 고압산소요법을 시행한다 D. 전신 스테로이드를 투여한다 E. 항진균제를 병터에 바른다 염증성 장질환에 동반된 빠르게 커지는 통증성 궤양에 자주색 잠식성 경계는 호중구성 피부질환을 시사한다. 치료는 면역을 억제하는 전신 스테로이드가 1차이며, 외상은 병터를 악화(pathergy)시키므로 변연절제는 금물이다."
+  },
+  {
+   "id": "kmle-2026-0332",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Staphylococcal Scalded Skin Syndrome",
+   "tags": [
+    "ssss",
+    "exfoliation",
+    "antistaphylococcal",
+    "nafcillin",
+    "pediatric-fever"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0332.md",
+   "snippet": "생후 18개월 남아가 이틀 전부터 열이 나고 온몸이 벌겋게 되었다. 피부를 살살 문지르면 얇은 표피가 벗겨지며 진물이 배어 나온다. 입안 점막은 깨끗하다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 아시클로버를 정맥으로 준다 B. 프레드니솔론을 정맥으로 준다 C. 나프실린을 정맥으로 준다 D. 암포테리신B를 정맥으로 준다 E. 반코마이신을 경구로 준다 발열과 광범위 홍반에 문지르면 표피가 벗겨지고 점막은 보존되는",
+   "text": "Dermatology Staphylococcal Scalded Skin Syndrome ssss exfoliation antistaphylococcal nafcillin pediatric-fever KMLE 2026 / Claude Routine 생후 18개월 남아가 이틀 전부터 열이 나고 온몸이 벌겋게 되었다. 피부를 살살 문지르면 얇은 표피가 벗겨지며 진물이 배어 나온다. 입안 점막은 깨끗하다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 아시클로버를 정맥으로 준다 B. 프레드니솔론을 정맥으로 준다 C. 나프실린을 정맥으로 준다 D. 암포테리신B를 정맥으로 준다 E. 반코마이신을 경구로 준다 발열과 광범위 홍반에 문지르면 표피가 벗겨지고 점막은 보존되는 소견은 포도알균이 만든 표피박리독소에 의한 것이다. 치료는 독소를 만드는 균을 없애는 항포도알균 항생제의 전신 투여다."
+  },
+  {
+   "id": "kmle-2026-0331",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Vasospastic (Prinzmetal) Angina",
+   "tags": [
+    "vasospastic-angina",
+    "coronary-spasm",
+    "calcium-channel-blocker",
+    "st-elevation",
+    "smoking"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0331.md",
+   "snippet": "34세 남자가 최근 2주간 새벽에 반복되는 가슴 조임으로 왔다. 하루 한 갑씩 담배를 피우며, 발작은 안정 시에 생겨 수 분 내 저절로 사라진다. 이전 발작 때 심전도에서 일시적 ST분절 상승이 있었으나, 관상동맥조영술은 정상이었다. 활력징후·검사는 자료와 같다. 치료로 가장 적절한 것은? A. 프로프라놀롤을 매일 복용한다 B. 암로디핀을 매일 복용한다 C. 디곡신을 매일 복용한다 D. 푸로세미드를 매일 복용한다 E. 와파린을",
+   "text": "Cardiology Vasospastic (Prinzmetal) Angina vasospastic-angina coronary-spasm calcium-channel-blocker st-elevation smoking KMLE 2026 / Claude Routine 34세 남자가 최근 2주간 새벽에 반복되는 가슴 조임으로 왔다. 하루 한 갑씩 담배를 피우며, 발작은 안정 시에 생겨 수 분 내 저절로 사라진다. 이전 발작 때 심전도에서 일시적 ST분절 상승이 있었으나, 관상동맥조영술은 정상이었다. 활력징후·검사는 자료와 같다. 치료로 가장 적절한 것은? A. 프로프라놀롤을 매일 복용한다 B. 암로디핀을 매일 복용한다 C. 디곡신을 매일 복용한다 D. 푸로세미드를 매일 복용한다 E. 와파린을 매일 복용한다 안정 시 흉통, 일과성 ST분절 상승, 정상 관상동맥은 관상동맥연축(변이형 협심증)을 시사한다. 치료의 핵심은 연축을 막는 칼슘통로차단제이며, 비선택적 베타차단제는 연축을 악화시켜 금기다."
+  },
+  {
+   "id": "kmle-2026-0330",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Atrial Flutter",
+   "tags": [
+    "atrial-flutter",
+    "narrow-qrs-tachycardia",
+    "rate-control",
+    "diltiazem",
+    "palpitation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-07-29",
+   "path": "content/kmle/2026/kmle-2026-0330.md",
+   "snippet": "58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 ",
+   "text": "Cardiology Atrial Flutter atrial-flutter narrow-qrs-tachycardia rate-control diltiazem palpitation KMLE 2026 / Claude Routine 58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 약 150회로 톱니파 양상을 보이는 심방조동이다. 혈역학적으로 안정하므로 즉각적 율동전환보다 방실결절 차단 약물로 심박수를 먼저 조절하는 것이 적절하다."
+  },
   {
    "id": "usmle-2026-0054",
    "type": "usmle",
@@ -168,6 +776,102 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0049.md",
    "snippet": "A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are show",
    "text": "Pharmacology Methotrexate Toxicity (Leucovorin Rescue Mechanism) methotrexate dihydrofolate-reductase leucovorin folinic-acid antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are shown; renal function remains normal. Which of the following best explains the mechanism by which the rescue therapy prevents further toxicity in this patient? A. It competitively displaces methotrexate from dihydrofolate reductase, restoring enzyme activity B. It provides a reduced folate cofactor that bypasses the blocked dihydrofolate reductase step, restoring one carbon transfer reactions C. It inhibits renal organic anion transporters, reducing tubular reabsorption of methotrexate D. It alkalinizes the urine, increasing methotrexate solubility and enhancing renal clearance E. It induces hepatic cytochrome enzymes that accelerate methotrexate metabolism to inactive metabolites Leucovorin (folinic acid) is a reduced folate that does not require dihydrofolate reductase for activation, so it restores tetrahydrofolate dependent one carbon transfer (thymidylate and purine synthesis) in normal proliferating cells even while methotrexate continues to inhibit the enzyme — this is a metabolic bypass, not competitive displacement or enhanced clearance."
+  },
+  {
+   "id": "paper-2026-0120",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurosurgery. Case lessons",
+   "confidence": "medium",
+   "date": "2026-07-27",
+   "path": "content/papers/2026/2026-07-27_paper-2026-0120_delayed_coil_migration_after_endovascular_treatment_of_a_rup.md",
+   "snippet": "Title Delayed coil migration after endovascular treatment of a ruptured intracranial aneurysm managed by open microsurgical surgery: illustrative case Authors Tran Chi Cuong, Tran Duy Vu, Nguyen Thi Ngoc Tuyen, Nguyen Quang Hung, Le Thi Chi",
+   "text": "Surgery scraped pubmed PubMed / Journal of neurosurgery. Case lessons Title Delayed coil migration after endovascular treatment of a ruptured intracranial aneurysm managed by open microsurgical surgery: illustrative case Authors Tran Chi Cuong, Tran Duy Vu, Nguyen Thi Ngoc Tuyen, Nguyen Quang Hung, Le Thi Chi Lan, Nguyen Duy Linh Journal / DOI Journal of neurosurgery. Case lessons · DOI: 10.3171/CASE26239 · PMID: 42508071 https://pubmed.ncbi.nlm.nih.gov/42508071/ Abstract BACKGROUND: Endovascular coil embolization is widely used for the treatment of ruptured intracranial aneurysms because of its minimally invasive nature and rapid effectiveness. However, coil migration is a rare but potentially severe complication that may lead to parent artery occlusion, thromboembolism, or cerebral infarction, requiring prompt management. OBSERVATIONS: A 65 year old woman presented with subarachnoid hemorrhage caused by a ruptured intracranial aneurysm. She underwent emergency endovascular coil embolization. Postprocedural CT angiography revealed migration of the coil into the parent artery, posing a high risk of vascular compromise. Emergency open microsurgical intervention was performed. The migrated coil was carefully retrieved through arteriotomy, and the aneurysm neck was successfully clipped. Postoperative angiography demonstrated preserved cerebral blood flow and complete aneurysm occlusion. The patient recovered with neurological deficits and was discharged in stable condition. LESSONS: Open microsurgical coil retrieval combined with aneurysm clipping can be an effective treatment option in selected cases of coil migration, particularly when endovascular retrieval is not feasible or carries significant risk. Early recognition of this complication and timely multidisciplinary decision making are essential to prevent ischemic injury and achieve acceptable outcomes. https://thejns.org/doi/10.3171/CASE26239. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0119",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Legal medicine (Tokyo, Japan)",
+   "confidence": "medium",
+   "date": "2026-07-27",
+   "path": "content/papers/2026/2026-07-27_paper-2026-0119_sudden_infant_and_fetal_death_comparative_analysis_of_intern.md",
+   "snippet": "Title Sudden infant and fetal death: comparative analysis of international legislation and medico legal issues Authors Cortese Roberto, Capasso Emanuele, Di Lorenzo Pierpaolo, Di Donna Gaetano, Casella Claudia Journal / DOI Legal medicine (",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Legal medicine (Tokyo, Japan) Title Sudden infant and fetal death: comparative analysis of international legislation and medico legal issues Authors Cortese Roberto, Capasso Emanuele, Di Lorenzo Pierpaolo, Di Donna Gaetano, Casella Claudia Journal / DOI Legal medicine (Tokyo, Japan) · DOI: 10.1016/j.legalmed.2026.102941 · PMID: 42508099 https://pubmed.ncbi.nlm.nih.gov/42508099/ Abstract INTRODUCTION: Sudden Infant Death Syndrome (SIDS) and Sudden Unexpected Fetal Death (SUFD) raise complex clinical, ethical, legal, and forensic issues. Determining the cause of death is essential both for family bereavement support and for prevention strategies. MATERIALS AND METHODS: A comparative analysis was conducted on national regulations and standard practices in five selected countries (Italy, France, Spain, Germany and United Kingdom). Sources included national legislation, implementing regulations, and peer reviewed literature. Comparison focused on: (1) performance of post mortem examination/autopsy, (2) use of post mortem imaging, and (3) implementation of national registries. RESULTS: In Italy, with parental consent, post mortem examinations may be authorized by hospital medical directors; in all five countries, judicial authorities can mandate autopsies in suspected criminal cases, while the role of hospital physicians varies by national context. In the UK, authority lies with the coroner, an independent judicial officer empowered to investigate unexplained deaths. Post mortem imaging is fully integrated only in the UK; it remains non standardized in other countries. The UK (NCMD) maintains a compulsory national database, while France (OMIN) operates a voluntary national observatory for sudden infant deaths. Spain launched a stillbirth registry in 2023 (for gestational age ≥ 6 months), though clinical epidemiological implementation is pending. Italy lacks a national registry, relying instead on a surveillance network coordinated by the Italian National Institute of Health (ISS). DISCUSSION: Marked differences in regulatory and operational frameworks persist across Europe. Harmonizing protocols, standardizing imaging use, and establishing national registries are essential steps toward improving diagnostic accuracy and implementing effective SIDS and SUFD prevention measures. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0118",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of international medical research",
+   "confidence": "medium",
+   "date": "2026-07-27",
+   "path": "content/papers/2026/2026-07-27_paper-2026-0118_misdiagnosis_of_ameloblastoma_a_case_report_and_literature_r.md",
+   "snippet": "Title Misdiagnosis of ameloblastoma: A case report and literature review Authors Huang Yihan, Ding Qingqing, Zhang Weiming, Yin Min Journal / DOI The Journal of international medical research · DOI: 10.1177/03000605251388874 · PMID: 4250803",
+   "text": "Pathology scraped pubmed PubMed / The Journal of international medical research Title Misdiagnosis of ameloblastoma: A case report and literature review Authors Huang Yihan, Ding Qingqing, Zhang Weiming, Yin Min Journal / DOI The Journal of international medical research · DOI: 10.1177/03000605251388874 · PMID: 42508031 https://pubmed.ncbi.nlm.nih.gov/42508031/ Abstract Ameloblastomas are slow growing benign tumors that mostly occur in the mandible, and the most conventional histopathological subtype is follicular. This report describes the case of a 60 year old man with an ameloblastoma in the right maxilla. In March 2012, the patient was diagnosed with basal cell adenocarcinoma at a local hospital. In April 2012, imaging and clinical assessment performed at the First Affiliated Hospital of Nanjing Medical University confirmed the diagnosis of basal cell adenocarcinoma. A sinus coronal enhanced scan showed a well defined lesion in the right maxilla. A total right maxillary osteotomy was performed under general anesthesia to remove the tumor. The postoperative histopathology report showed that the mass was an ameloblastoma. A literature review was conducted to review age and sex predisposition, histopathological subtypes, and initial clinical symptoms of maxillary ameloblastoma and to compare previous findings with those of the present case. In addition, we explored the potential causes of misdiagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0117",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Translational oncology",
+   "confidence": "medium",
+   "date": "2026-07-27",
+   "path": "content/papers/2026/2026-07-27_paper-2026-0117_extracellular_vesicles_derived_from_fetal_stem_cells_in_earl.md",
+   "snippet": "Title Extracellular vesicles derived from fetal stem cells in early pregnancy modulate glycolysis and lipid metabolism to induce apoptosis in cancer cells Authors Lee Jangho, Cho Kyoungshik, Kim Songrae, Cho Eunsil, Kook Hyejin, Kang Suman,",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Translational oncology Title Extracellular vesicles derived from fetal stem cells in early pregnancy modulate glycolysis and lipid metabolism to induce apoptosis in cancer cells Authors Lee Jangho, Cho Kyoungshik, Kim Songrae, Cho Eunsil, Kook Hyejin, Kang Suman, Kim Junho, Cho Mi Hyeon, et al. Journal / DOI Translational oncology · DOI: 10.1016/j.tranon.2026.102938 · PMID: 42508145 https://pubmed.ncbi.nlm.nih.gov/42508145/ Abstract Glycolytic dependency in solid tumors underlies resistance to current therapies. We developed antitumoral fetal stem cell derived extracellular vesicles (itAT FSC EVs) using an ex vivo multistage conditioning workflow to enhance their metabolism modulating capacity and evaluated their effects in cellular and animal models. In colorectal (HCT116) and hepatic (HepG2) cancer cells, itAT FSC EVs reduced lactate release and downregulated pyruvate dehydrogenase kinase 1, indicating pyruvate influx into mitochondria. This was accompanied by reduced glycolytic activity, increased oxygen consumption, and elevated mitochondrial membrane potential. Reactive oxygen species accumulated and contributed to cytotoxicity, culminating in apoptosis, whereas normal HEK293 cells remained viable with transient oxidative stress. Cancer cells exhibited suppression of lipogenic genes, including fatty acid synthase, reduced mitochondrial mass and a sustained increase in the NADP/NADPH ratio, indicating impaired redox buffering despite enhanced respiration. In HCT116 xenografts, systemic itAT FSC EV administration reduced tumor growth and lowered pyruvate dehydrogenase kinase 1 and fatty acid synthase levels, supporting a metabolic reset in vivo. These findings indicate that itAT FSC EVs reprogram malignant cells from glycolytic dependence toward mitochondrial oxidative metabolism, disrupt redox homeostasis, and induce cell death. This approach may synergistically modulate the tumor niche with immunotherapy by lowering lactate production, an immunosuppressive factor in solid tumors. Thus, itAT FSC EVs represent a metabolism rewiring biological system with translational potential for normalizing tumor metabolism and complementing existing anticancer modalities. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0116",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Proceedings of the National Academy of Sciences of the United States of America",
+   "confidence": "medium",
+   "date": "2026-07-27",
+   "path": "content/papers/2026/2026-07-27_paper-2026-0116_accelerating_campylobacter_zoonosis_in_the_anthropocene.md",
+   "snippet": "Title Accelerating Campylobacter zoonosis in the Anthropocene Authors Kyne Oakem J, Penman Bridget S, Kelly David J, Sheppard Samuel K Journal / DOI Proceedings of the National Academy of Sciences of the United States of America · DOI: 10.1",
+   "text": "Infectious Disease scraped pubmed PubMed / Proceedings of the National Academy of Sciences of the United States of America Title Accelerating Campylobacter zoonosis in the Anthropocene Authors Kyne Oakem J, Penman Bridget S, Kelly David J, Sheppard Samuel K Journal / DOI Proceedings of the National Academy of Sciences of the United States of America · DOI: 10.1073/pnas.2609969123 · PMID: 42507914 https://pubmed.ncbi.nlm.nih.gov/42507914/ Abstract Intensive poultry farming has transformed global bird populations, concentrating billions of chickens into dense industrial systems that fundamentally reshape ecological space. As birds are important pathogen reservoirs, these changes can have important consequences for the spread of zoonoses including Campylobacter jejuni the leading cause of bacterial gastroenteritis. Analyzing 2,747 genomes from chickens and wild birds, we show that poultry intensification has eroded historic host strain associations and created a new and expanding ecological niche. Phylogenetic reconstructions reveal an estimated 100 fold increase in chicken to wild bird host transitions since 1900 compared to predomestication levels, alongside dramatic post 1960 expansions of chicken associated lineages and rising pathogen effective population sizes. Model simulations further indicate that expanding, high density chicken populations could act as ecological \"pathogen sponges,\" absorbing and amplifying diverse strains while sustaining high prevalence and coinfection rates. Genome wide association analyses show that strains adapted to the chicken niche frequently acquire genes linked to oxidative stress, metal homeostasis, motility, and antimicrobial resistance. Together, these findings demonstrate that intensive poultry farming is reshaping pathogen ecology and accelerating the evolution and spread of a major zoonotic bacterium, with direct implications for human health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0115",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Ecotoxicology and environmental safety",
+   "confidence": "medium",
+   "date": "2026-07-27",
+   "path": "content/papers/2026/2026-07-27_paper-2026-0115_molecular_mechanism_of_lead_exposure_induced_atrial_fibrilla.md",
+   "snippet": "Title Molecular mechanism of lead exposure induced atrial fibrillation: A systematic study based on network toxicology, machine learning, and in vivo and in vitro experiments Authors Liang Junqing, Qiu Xianwei, Xu Liao, Shao Shijie, Liu Lel",
+   "text": "Cardiology scraped pubmed PubMed / Ecotoxicology and environmental safety Title Molecular mechanism of lead exposure induced atrial fibrillation: A systematic study based on network toxicology, machine learning, and in vivo and in vitro experiments Authors Liang Junqing, Qiu Xianwei, Xu Liao, Shao Shijie, Liu Lele, Yang Na, Qin Xueting, Rejiepu Manzeremu, et al. Journal / DOI Ecotoxicology and environmental safety · DOI: 10.1016/j.ecoenv.2026.120570 · PMID: 42508107 https://pubmed.ncbi.nlm.nih.gov/42508107/ Abstract Lead is a ubiquitous environmental toxic metal. Lead exposure is closely linked to an increased risk of atrial fibrillation (AF), yet its molecular mechanism remains incompletely understood. Here, we conducted an integrated study using network toxicology, machine learning, molecular docking, and in vivo and in vitro experiments to explore lead induced AF. The global burden of disease analysis showed a marked rise in lead exposure related AF/atrial flutter mortality and disability‑adjusted life years from 1990 to 2021, especially in low socio‑demographic index regions. We identified 142 overlapping targets between lead exposure and AF. Protein protein interaction network and machine learning identified MAPK3 and ALB as core hub genes. Functional enrichment indicated critical roles of the PI3K‑Akt pathway. Molecular docking verified strong binding between Pb²⁺ and key pathway proteins. Lead exposure in mice triggered atrial electrical and structural remodeling and increased AF inducibility. In vitro, lead inhibited PI3K‑Akt phosphorylation, which was prevented by the pathway agonist 740 Y‑P. In conclusion, lead exposure was shown to promote AF by suppressing the PI3K‑Akt pathway, with MAPK3 and ALB as key targets. This study provides mechanistic insight and potential intervention targets for lead exposure related AF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0329",
