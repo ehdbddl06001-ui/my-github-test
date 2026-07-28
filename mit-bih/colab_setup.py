@@ -170,6 +170,8 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
             "build_multi":  "ecg_multidb.py",
             "bench_rhythm": "rhythm_bench.py",
             "report_rhythm": "rhythm_bench.py",
+            "bench_transfer": "rhythm_bench.py",
+            "load_task":    "rhythm_bench.py",
             "label_ceiling_probe": "svdb_rhythm.py",
             "save_out":     "svdb_rhythm.py",
             "load_out":     "svdb_rhythm.py"}

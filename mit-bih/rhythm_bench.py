@@ -58,8 +58,12 @@ def clear_rhythm_arms():
 # ─────────────────────────────────────────────────────────────────────────────
 #  1. 데이터 준비
 # ─────────────────────────────────────────────────────────────────────────────
-def load_rhythm(path=None, min_records=8, exclude=("(미상)",), verbose=True):
-    """ecg_multi.npz → 리듬 과제용 부분집합.
+def load_task(path=None, task="rhythm", min_records=8, exclude=("(미상)",), verbose=True):
+    """ecg_multi.npz → 과제용 부분집합.
+
+    task="rhythm" : 리듬(질환) 라벨 — AFIB/B/T/VT ...
+    task="beat5"  : AAMI 5-class 비트 라벨 — N/S/V/F/Q
+    ★두 축은 직교한다(AFIB 구간의 박은 대부분 AAMI N). 같은 하니스로 둘 다 돈다.
 
     ★'(미상)' 은 **클래스가 아니라 '주석이 없음'** 이다. 클래스로 넣으면
       "리듬 주석이 안 달린 구간"을 학습·평가하게 되어 무의미하다. 반드시 제외한다.
@@ -69,7 +73,10 @@ def load_rhythm(path=None, min_records=8, exclude=("(미상)",), verbose=True):
     """
     d = np.load(path or f"{_BASE}/ecg_multi.npz", allow_pickle=True)
     beat, pid, pre, post = d["beat"], d["pid"], d["pre_rr"], d["post_rr"]
-    rhy = d["rhythm"]; names = [str(x) for x in d["rhythm_names"]]
+    if task == "beat5":
+        rhy = d["y5"]; names = ["N", "S", "V", "F", "Q"]; exclude = ()
+    else:
+        rhy = d["rhythm"]; names = [str(x) for x in d["rhythm_names"]]
     y5 = d["y5"] if "y5" in d else None
     keep_ids, kept = [], []
     for i, nm in enumerate(names):
@@ -90,15 +97,21 @@ def load_rhythm(path=None, min_records=8, exclude=("(미상)",), verbose=True):
                classes=cls, y5=(y5[sel] if y5 is not None else None),
                db=(d["db"][sel] if "db" in d else None))
     if verbose:
-        print(f"리듬 과제 데이터: {len(y):,}비트  환자 {len(np.unique(out['pid']))}명  "
+        print(f"[{task}] 데이터: {len(y):,}비트  환자 {len(np.unique(out['pid']))}명  "
               f"클래스 {len(cls)}종")
         print(f"  {'클래스':<8}{'비트':>10}{'레코드':>8}{'비율':>8}")
         for nm, nb, nr in kept:
             print(f"  {nm:<8}{nb:>10,}{nr:>8}{100*nb/len(y):>7.2f}%")
         drop = int((~sel).sum())
         print(f"  제외 {drop:,}비트 (미상 + 레코드<{min_records} 클래스)")
-        print(f"  ⚠ 리듬 주석은 사실상 MIT-BIH 에만 있다 → 환자 수가 SVDB(73)보다 적다")
+        if task == "rhythm":
+            print(f"  ⚠ 리듬 주석은 사실상 MIT-BIH 에만 있다 → 환자 수가 SVDB(73)보다 적다")
     return out
+
+
+def load_rhythm(path=None, min_records=8, exclude=("(미상)",), verbose=True):
+    """하위호환 별칭."""
+    return load_task(path, "rhythm", min_records, exclude, verbose)
 
 
 def mde_estimate(pid, y, cls, sigma=0.32, verbose=True):
@@ -359,6 +372,145 @@ def _fit_rsn_rhythm(c, beat, y, tr, te, ncls, seed, epochs=20, bs=512):
     return np.concatenate(o)
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+#  5. 전이 실험 — "통합 학습 → 해당 DB 로 미세조정" 이 정말 이득인가
+# ─────────────────────────────────────────────────────────────────────────────
+def _fit_rsn_generic(c, beat, y, tr, te, ncls, seed, epochs, lr=1e-3,
+                     init=None, ft_scope="all", bs=512, ret_model=False):
+    """RSN 학습. init 이 주어지면 그 가중치에서 시작(= 미세조정)."""
+    import copy
+    import torch
+    import torch.nn.functional as Fn
+    from sklearn.preprocessing import RobustScaler
+    g = globals(); _rsn = g["_rsn"]
+    SEQ, AUX = c["seq"], c["aux"]
+    dev = "cuda" if torch.cuda.is_available() else "cpu"
+    torch.manual_seed(seed); np.random.seed(seed)
+    sc = RobustScaler().fit(AUX[tr])
+    T = lambda X: np.nan_to_num(sc.transform(X), posinf=0, neginf=0).astype("float32")
+    M = _rsn(SEQ.shape[1], SEQ.shape[2], AUX.shape[1], n_class=ncls).to(dev)
+    if init is not None:
+        M.load_state_dict(copy.deepcopy(init))
+        if ft_scope == "head":
+            # ★인코더를 얼리면 '파국적 망각'을 막는다. 통합 학습으로 얻은 표현
+            #   (특히 희소 클래스 F/Q 는 mitdb 에만 있다)을 미세조정이 지워버리는
+            #   것을 방지하려는 것. 대신 적응력은 떨어진다 — 둘 다 재볼 것.
+            for n_, p_ in M.named_parameters():
+                p_.requires_grad = n_.startswith("cls") or n_.startswith("dg") or n_.startswith("dbi")
+    opt = torch.optim.AdamW([p_ for p_ in M.parameters() if p_.requires_grad],
+                            lr=lr, weight_decay=1e-4)
+    cnt = np.array([(y[tr] == cc).sum() for cc in range(ncls)], np.float64)
+    cw = torch.tensor((cnt.sum() / np.maximum(cnt, 1)) ** 0.5, dtype=torch.float32, device=dev)
+    ds = torch.utils.data.TensorDataset(torch.from_numpy(SEQ[tr]), torch.from_numpy(beat[tr]),
+                                        torch.from_numpy(T(AUX[tr])), torch.from_numpy(y[tr]))
+    dl = torch.utils.data.DataLoader(ds, batch_size=bs, shuffle=True)
+    for _ in range(epochs):
+        M.train()
+        for sq, bt, ax, yb in dl:
+            sq, bt, ax, yb = (t.to(dev) for t in (sq, bt, ax, yb))
+            opt.zero_grad()
+            Fn.cross_entropy(M(sq, bt, ax), yb, weight=cw).backward()
+            torch.nn.utils.clip_grad_norm_(M.parameters(), 1.0); opt.step()
+    M.eval(); Ate = T(AUX[te]); o = []
+    with torch.no_grad():
+        for i in range(0, len(te), 4096):
+            sl = te[i:i + 4096]
+            o.append(M(torch.from_numpy(SEQ[sl]).to(dev), torch.from_numpy(beat[sl]).to(dev),
+                       torch.from_numpy(Ate[i:i + 4096]).to(dev)).argmax(1).cpu().numpy())
+    pred = np.concatenate(o)
+    return (pred, {k2: v.detach().cpu().clone() for k2, v in M.state_dict().items()}) \
+        if ret_model else pred
+
+
+def bench_transfer(task="beat5", path=None, K=8, k=5, epochs=20, ft_epochs=5,
+                   ft_lr=2e-4, ft_scope="all", min_records=8, verbose=True):
+    """★"통합 학습 → 해당 DB 미세조정" 이 정말 이득인가 — 3자 비교.
+
+    같은 홀드아웃 환자로 세 가지를 비교한다(대응 비교가 성립한다):
+      P0.단독      그 DB 의 학습 환자만으로 학습        ← 지금까지의 방식
+      P1.통합      전 DB 의 학습 환자로 학습            ← 표본은 늘지만 도메인이 섞임
+      P2.통합→미세 P1 에서 시작해 그 DB 로 미세조정      ← ★제안하신 방식
+
+    ★이 설계가 답하는 것:
+      P1 > P0 이면 → 다른 DB 를 합치는 것 자체가 이득이다(희소 클래스에 특히).
+      P2 > P1 이면 → 도메인 특화가 추가 이득을 준다.
+      P2 ≈ P1 이면 → 미세조정은 불필요하다(통합만으로 충분).
+      P2 < P1 이면 → **파국적 망각**. ft_scope="head" 로 다시 볼 것.
+
+    ★무결성: 미세조정은 **그 DB 의 학습 환자만** 쓴다. 홀드아웃 환자는 어느
+      단계에서도 보지 않는다. 이건 '이 병원의 라벨 일부를 갖고 있다'는 현실적
+      배포 시나리오이며, zero-shot 전이(=LODO)와는 다른 질문이다.
+    """
+    from sklearn.model_selection import GroupKFold
+    D = load_task(path=path, task=task, min_records=min_records, verbose=verbose)
+    beat, y, pid, pre, post, cls = (D["beat"], D["y"], D["pid"], D["pre"],
+                                    D["post"], D["classes"])
+    dbv = D.get("db")
+    if dbv is None:
+        raise RuntimeError("npz 에 db 열이 없습니다 — build_multi 로 만든 파일이 필요합니다.")
+    ncls = len(cls)
+    g = globals()
+    if verbose:
+        print(f"\nRSN 문맥 계산: K=±{K}")
+    c = g["rr_context"](pre, post, pid, K=K, poincare=True, verbose=verbose)
+
+    uds = sorted(set(map(str, dbv)))
+    acc = {a: [] for a in ("P0.단독", "P1.통합", "P2.통합→미세")}
+    order = []
+    for db in uds:
+        inn = np.flatnonzero(np.array(list(map(str, dbv))) == db)
+        pin = pid[inn]
+        if len(np.unique(pin)) < k:
+            print(f"  ⚠ {db}: 환자 {len(np.unique(pin))}명 < {k}폴드 → 건너뜀"); continue
+        out_idx = np.flatnonzero(np.array(list(map(str, dbv))) != db)
+        gkf = GroupKFold(n_splits=k)
+        for fi, (a_, b_) in enumerate(gkf.split(inn, y[inn], groups=pin)):
+            tr_d, te = inn[a_], inn[b_]
+            tr_all = np.concatenate([tr_d, out_idx])
+            seed = 1000 * uds.index(db) + fi
+            order.append(te)
+            acc["P0.단독"].append(_fit_rsn_generic(c, beat, y, tr_d, te, ncls, seed, epochs))
+            p1, w = _fit_rsn_generic(c, beat, y, tr_all, te, ncls, seed, epochs,
+                                     ret_model=True)
+            acc["P1.통합"].append(p1)
+            acc["P2.통합→미세"].append(
+                _fit_rsn_generic(c, beat, y, tr_d, te, ncls, seed, ft_epochs,
+                                 lr=ft_lr, init=w, ft_scope=ft_scope))
+            if verbose:
+                print(f"  {db} fold{fi}: 단독 {len(tr_d):,} / 통합 {len(tr_all):,} "
+                      f"/ 테스트 {len(te):,}")
+    idx = np.concatenate(order); yA = y[idx]; pA = pid[idx]
+    dbA = np.array(list(map(str, dbv)))[idx]
+    RES = {}
+    print(f"\n=== 전이 실험 [{task}] (클래스별 환자단위 매크로 F1) ===")
+    print(f"  {'arm':<14}" + "".join(f"{cc:>10}" for cc in cls) + f"{'평균':>9}")
+    for a in acc:
+        v = np.concatenate(acc[a])
+        pc = per_class_macro(v, yA, pA, cls)
+        RES[a] = dict(per_class=pc, pred=v,
+                      mean=float(np.mean([pc[cc]["macro"] for cc in pc])))
+        print(f"  {a:<14}" + "".join(f"{pc[cc]['macro']:>10.3f}" if cc in pc else f"{'—':>10}"
+                                     for cc in cls) + f"{RES[a]['mean']:>9.3f}")
+    print(f"\n  [DB별]")
+    for db in uds:
+        m = dbA == db
+        if not m.any():
+            continue
+        print(f"    {db:<10}" + "  ".join(
+            f"{a.split('.')[0]} {np.mean([q['macro'] for q in per_class_macro(RES[a]['pred'][m], yA[m], pA[m], cls).values()]):.3f}"
+            for a in acc))
+    d10 = RES["P1.통합"]["mean"] - RES["P0.단독"]["mean"]
+    d21 = RES["P2.통합→미세"]["mean"] - RES["P1.통합"]["mean"]
+    print(f"\n  통합의 효과   P1−P0 = {d10:+.3f}")
+    print(f"  미세조정 효과 P2−P1 = {d21:+.3f}")
+    if d21 < -0.01:
+        print(f"    ⚠ 미세조정이 오히려 나쁘다 — 파국적 망각 의심."
+              f" ft_scope='head' 로 인코더를 얼리고 다시 볼 것.")
+    elif abs(d21) <= 0.01:
+        print(f"    → 미세조정이 사실상 무효. 통합 학습만으로 충분하다는 뜻.")
+    return dict(res=RES, y=yA, pid=pA, db=dbA, order=idx, classes=cls, task=task)
+
+
 def report_rhythm(OUT, base="A1.RR스칼라", B=5000, show=True):
     """클래스별 대응 부트스트랩. MDE 는 **클래스마다 다른 값**을 쓴다."""
     R = OUT["res"]; cls = OUT["classes"]; mde = OUT["mde"]
@@ -489,6 +641,18 @@ def selftest():
     with torch.no_grad():
         z0 = M(*a1, None, None); z1 = M(*a1, None, torch.tensor([0, 1, 0, 1]))
     ok(torch.allclose(z0, z1, atol=1e-6), "도메인 FiLM 은 항등 초기화(켜도 처음엔 무변화)")
+
+    # ★전이 실험 — 통합/미세조정 3자 비교
+    OT = bench_transfer(task="rhythm", path=f"{td}/multi2.npz", K=16, k=3,
+                        epochs=3, ft_epochs=2, verbose=False)
+    ok(set(OT["res"]) == {"P0.단독", "P1.통합", "P2.통합→미세"}, "3자 비교 실행")
+    ls = {a: len(OT["res"][a]["pred"]) for a in OT["res"]}
+    ok(len(set(ls.values())) == 1, f"세 arm 이 같은 홀드아웃을 본다(대응비교 성립) {ls}")
+    ok(len(OT["y"]) == len(np.unique(OT["order"])), "홀드아웃이 중복 없이 한 번씩")
+    # beat5 태스크도 도는지
+    D5 = load_task(path=f"{td}/multi2.npz", task="beat5", min_records=1, verbose=False)
+    ok(D5["classes"] and all(cc in ["N","S","V","F","Q"] for cc in D5["classes"]),
+       f"beat5 태스크 로드 {D5['classes']}")
     print("=== 전 항목 통과 ===")
     return True
 
