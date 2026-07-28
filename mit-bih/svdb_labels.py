@@ -160,14 +160,25 @@ def summarize(sym_counts, rhy_counts, rhy_records=None, sym_records=None, target
         if a is not None:
             agg[a] = agg.get(a, 0) + c
     need = n_for_halfwidth(0.01, target)
+    # ★비트 수만으로는 부족하다. 환자단위 매크로 평가에서는 '그 클래스를 가진
+    #   레코드 수'가 유효표본이다(HANDOFF §2). 비트가 8,000개여도 4명에 몰려 있으면
+    #   환자분리 평가가 성립하지 않는다.
+    rec_of = {}
+    for s, v in (sym_records or {}).items():
+        a = AAMI5.get(s)
+        if a is not None:
+            rec_of.setdefault(a, set()).update(v)
+    print(f"  {'클래스':<5}{'비트':>11}{'레코드':>8}   {target:.0%} 주장 CI   비트기준   레코드기준")
     for a in range(5):
-        c = agg.get(a, 0)
+        c = agg.get(a, 0); nr = len(rec_of.get(a, ()))
         h = power_for_accuracy(c, target)
-        ok = "가능" if c >= need else f"불가(최소 {need:,} 필요)"
+        ok = "가능" if c >= need else "불가"
+        okr = "가능" if nr >= 8 else ("한계적" if nr >= 4 else "불가")
         hs = "—" if not np.isfinite(h) else f"±{100*h:.2f}%"
-        print(f"  {CLS5[a]:<3} {c:>10,}   {target:.0%} 주장 CI {hs:>10}   {ok}")
-    print(f"  ※ {target:.0%} 를 ±1%p 정밀도로 주장하려면 클래스당 {need:,}개 이상 필요.")
-    print(f"     표본이 적은 클래스는 '{target:.0%} 달성'을 통계적으로 말할 수 없다.")
+        print(f"  {CLS5[a]:<5}{c:>11,}{nr:>8}   {hs:>10}   {ok:<9}  {okr}")
+    print(f"  ※ 비트기준: {target:.0%}±1%p 에 클래스당 {need:,}개 필요.")
+    print(f"     ★레코드기준: 환자단위 매크로는 '그 클래스를 가진 환자 수'가 유효표본이다.")
+    print(f"       비트가 많아도 소수 환자에 몰려 있으면 환자분리 평가가 성립하지 않는다.")
 
     if rhy_counts:
         print(f"\n=== 리듬(질병) 라벨 재고 — 지금 100% 버려지는 정보 ===")
@@ -266,6 +277,7 @@ def label_audit(db="svdb", recs=None, dldir=None, n_rec=None, target=0.99, verbo
     else:
         print(f"\n  비-비트 주석 없음 → svdb_prep 의 RR 오염 가설은 이 DB 에서 기각.")
     out.update(nonbeat=nonbeat, sym_counts=sym_counts, rhy_counts=rhy_counts,
+               sym_records={k: sorted(v) for k, v in sym_records.items()},
                rhy_records={k: sorted(v) for k, v in rhy_records.items()}, failed=bad)
     return out
 

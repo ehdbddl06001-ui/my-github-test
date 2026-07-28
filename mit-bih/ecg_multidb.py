@@ -111,7 +111,7 @@ def db_audit(dbs=("mitdb", "svdb", "incartdb"), n_rec=None, target=0.99, verbose
     """DB 별로 재고조사하고 **통합 시** 클래스·리듬별 검정력을 계산한다."""
     label_audit = _need("label_audit"); AAMI5 = _need("AAMI5"); CLS5 = _need("CLS5")
     n_for = _need("n_for_halfwidth"); pw = _need("power_for_accuracy")
-    per, sym_all, rhy_all, rhyrec_all = {}, {}, {}, {}
+    per, sym_all, rhy_all, rhyrec_all, symrec_all = {}, {}, {}, {}, {}
     for db in dbs:
         print(f"\n{'='*66}\n▶ {db}  ({DB_SPEC.get(db,{}).get('name',db)})\n{'='*66}")
         try:
@@ -121,6 +121,8 @@ def db_audit(dbs=("mitdb", "svdb", "incartdb"), n_rec=None, target=0.99, verbose
         per[db] = r
         for s, c in r["sym_counts"].items():
             sym_all[s] = sym_all.get(s, 0) + c
+        for s, v in (r.get("sym_records") or {}).items():
+            symrec_all.setdefault(s, set()).update(f"{db}:{x}" for x in v)
         for k, c in r["rhy_counts"].items():
             rhy_all[k] = rhy_all.get(k, 0) + c
             rhyrec_all.setdefault(k, set()).update(
@@ -135,16 +137,28 @@ def db_audit(dbs=("mitdb", "svdb", "incartdb"), n_rec=None, target=0.99, verbose
         if a is not None:
             agg[a] = agg.get(a, 0) + c
     need = n_for(0.01, target)
+    recs_of = {}
+    for s, v in symrec_all.items():
+        a = AAMI5.get(s)
+        if a is not None:
+            recs_of.setdefault(a, set()).update(v)
     print(f"=== AAMI 5-class 통합 분포 ===")
-    print(f"  {'클래스':<6}{'통합':>12}   " + "".join(f"{d:>12}" for d in per))
+    print(f"  {'클래스':<5}{'통합비트':>11}{'레코드':>7}  " + "".join(f"{d:>11}" for d in per)
+          + "   판정(비트/레코드)")
     for a in range(5):
-        row = []
-        for d in per:
-            row.append(sum(c for s, c in per[d]["sym_counts"].items() if AAMI5.get(s) == a))
-        tot = agg.get(a, 0)
-        mark = "✓" if tot >= need else "✗"
-        print(f"  {CLS5[a]:<6}{tot:>12,} {mark} " + "".join(f"{v:>12,}" for v in row))
-    print(f"  ※ {target:.0%}±1%p 주장에 클래스당 {need:,}개 필요. ✓=통합하면 가능")
+        row = [sum(c for s, c in per[d]["sym_counts"].items() if AAMI5.get(s) == a) for d in per]
+        tot = agg.get(a, 0); nr = len(recs_of.get(a, ()))
+        m1 = "✓" if tot >= need else "✗"
+        m2 = "✓" if nr >= 8 else ("△" if nr >= 4 else "✗")
+        print(f"  {CLS5[a]:<5}{tot:>11,}{nr:>7}  " + "".join(f"{v:>11,}" for v in row)
+              + f"      {m1} / {m2}")
+    print(f"  ※ 비트 {need:,}개 이상이면 ✓. ★레코드는 8명 이상 ✓ / 4~7명 △ / 3명 이하 ✗")
+    print(f"     ★★비트가 충분해도 레코드가 적으면 환자단위 매크로 평가가 성립하지 않는다.")
+    for a in range(5):
+        tot = agg.get(a, 0); nr = len(recs_of.get(a, ()))
+        if tot >= need and nr < 8:
+            print(f"    ⚠ {CLS5[a]}: 비트 {tot:,}개는 충분하나 **레코드 {nr}개뿐** —"
+                  f" 환자단위로는 검정 불가")
     for a in range(5):
         tot = agg.get(a, 0)
         if 0 < tot < need:
@@ -161,6 +175,7 @@ def db_audit(dbs=("mitdb", "svdb", "incartdb"), n_rec=None, target=0.99, verbose
     print(f"  ※ 비트 수가 많아도 **레코드 수**가 적으면 환자분리 평가가 안 된다.")
     print(f"     같은 환자의 같은 에피소드를 반복 세는 것이라 독립 표본이 아니기 때문이다.")
     return dict(per_db=per, sym=sym_all, agg=agg, rhythm=rhy_all,
+                class_records={CLS5[a]: sorted(v) for a, v in recs_of.items()},
                 rhythm_records={k: sorted(v) for k, v in rhyrec_all.items()})
 
 
