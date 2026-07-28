@@ -458,9 +458,82 @@ def _fit_predict_rsn(SEQ, AUX, beats, y, tr, cal, te, Sw, mc, seed,
 #  길이 len(te) 의 bool 결정벡터를 받는다. ctx 키:
 #    beats,y,pid,pre,post,refM,refR,tr,cal,te,Sw,mc,seed,rep,fold,best_t
 #
+# ─────────────────────────────────────────────────────────────────────────────
+#  라벨프리 환자별 적응 임계 — §9.1 이 지목한 병목
+# ─────────────────────────────────────────────────────────────────────────────
+#  왜: 환자별 S 유병률이 0.07%~57.6%(800배)인데 임계는 전역 하나뿐이다.
+#      그 결과 유병률↑ → 정밀도↑·민감도↓ 로 정반대 실패가 생기고(§6.2),
+#      새 축이 순위를 개선해도 F1 으로 환산되지 않는다(rec43: PR-AUC 불변인데 F1 −0.217).
+#
+#  ★무결성: 테스트 환자에 대해서는 **그 환자 자신의 점수만** 쓴다(라벨 미사용).
+#    '라벨프리 대용치 → 최적 임계 분위' 의 사상(mapping)만 **calib 라벨**로 학습한다.
+#    HANDOFF §7-1(테스트 라벨로 어떤 결정도 하지 않는다), §7-3(개인화는 본인 신호만) 준수.
+#
+#  ⚠ 한계: 그 환자의 레코드 전체 점수로 분위를 잡으므로 **transductive** 다
+#    (PAPER §9-6 이 `_pp_center2` 에 대해 지적한 것과 같은 성질). 스트리밍에는
+#    이동창 버전이 필요하다. 오프라인 Holter 분석에는 그대로 적용 가능하다.
+def _logit(p, eps=1e-6):
+    p = np.clip(np.asarray(p, float), eps, 1 - eps)
+    return np.log(p / (1 - p))
+
+
+def _prev_proxy(s, t_global):
+    """라벨 없이 구하는 '전역 규칙이 이 환자에서 몇 %를 양성이라 하는가'.
+
+    ★2성분 군집(k-means)을 먼저 시도했다가 버렸다: 유병률이 낮은 환자의 점수 분포는
+      사실상 단봉이라 2-means 가 '정상 덩어리'를 반으로 쪼개고, 유병률 0.5% 환자에
+      0.983 같은 무의미한 값을 돌려준다(실측 확인). 봉우리가 두 개라는 가정이
+      저유병 환자에서 깨지기 때문이다.
+
+    대신 **전역 임계가 그 환자에서 실현하는 양성률**을 대용치로 쓴다. 이것은
+      · 단봉/양봉에 무관하게 항상 잘 정의되고,
+      · 우리가 고치려는 대상(전역 임계의 환자별 오작동)을 직접 측정하며,
+      · 테스트 환자의 라벨을 전혀 쓰지 않는다(t_global 은 calib 에서 온 상수).
+    """
+    return float((np.asarray(s) >= t_global).mean())
+
+
+def _fit_adaptive(sc, y_cal, pid_cal, best_t, t_global):
+    """calib 에서 (라벨프리 대용치 x) → (F1 최적 임계의 분위 q) 사상을 학습.
+       반환 (a, b) 또는 None(표본 부족 → 전역 임계 폴백)."""
+    xs, qs = [], []
+    for p in np.unique(pid_cal):
+        m = pid_cal == p
+        s = sc[m]; yy = y_cal[m]
+        if (yy == 1).sum() < 3 or len(s) < 32:      # 최적 분위를 신뢰할 수 없는 환자 제외
+            continue
+        t = best_t(s, yy)
+        xs.append(_prev_proxy(s, t_global))         # 전역 규칙이 실현하는 양성률
+        qs.append(float((s < t).mean()))            # 그 환자의 최적 임계 '분위 순위'
+    if len(xs) < 8:
+        return None
+    # 전역 임계가 함의하는 분위 → 실제 최적 분위. 둘 다 logit 공간에서 선형 적합.
+    X = _logit(np.clip(1.0 - np.array(xs), 1e-4, 1 - 1e-4))
+    Q = _logit(np.clip(np.array(qs), 1e-4, 1 - 1e-4))
+    if np.std(X) < 1e-9:
+        return None
+    b, a = np.polyfit(X, Q, 1)                      # logit(q*) = a + b·logit(q_global)
+    return (float(a), float(b))
+
+
+def _apply_adaptive(st, pid_te, ab, t_global):
+    """테스트 환자별 임계 적용. ab 가 None 이거나 환자가 너무 짧으면 전역 임계 폴백."""
+    out = np.zeros(len(st), bool)
+    for p in np.unique(pid_te):
+        m = pid_te == p
+        s = st[m]
+        if ab is None or len(s) < 32:
+            out[m] = s >= t_global; continue
+        qg = _logit(np.clip(1.0 - _prev_proxy(s, t_global), 1e-4, 1 - 1e-4))
+        q = 1.0 / (1.0 + np.exp(-(ab[0] + ab[1] * qg)))
+        q = float(np.clip(q, 0.50, 0.9995))
+        out[m] = s >= np.quantile(s, q)
+    return out
+
+
 def make_arm(use_morph=True, poincare=True, K=K_CTX, W=W_NORM, WP=W_POIN,
              causal_only=False, n_seed=1, epochs=15, use_ref=False, use_pwave=False,
-             segs=(), use_seq=True):
+             segs=(), use_seq=True, adaptive_thr=False):
     """RSN arm 클로저 생성. 문맥은 첫 호출에서 한 번만 계산해 캐시된다.
 
     use_ref/use_pwave 는 하니스가 ctx 로 넘겨주는 환자별 강건 템플릿(refR)을 쓴다.
@@ -478,6 +551,11 @@ def make_arm(use_morph=True, poincare=True, K=K_CTX, W=W_NORM, WP=W_POIN,
             ref=rf, use_ref=(use_ref or use_pwave or bool(segs)),
             use_pwave=use_pwave, segs=segs, use_seq=use_seq)
         t = ctx["best_t"](pc[:, 1], ctx["y"][ctx["cal"]])     # 임계는 calib 에서만
+        if adaptive_thr:
+            # 사상만 calib 라벨로 학습하고, 테스트는 환자 자신의 점수만으로 임계를 정한다
+            ab = _fit_adaptive(pc[:, 1], ctx["y"][ctx["cal"]], ctx["pid"][ctx["cal"]],
+                               ctx["best_t"], t)
+            return _apply_adaptive(pt[:, 1], ctx["pid"][ctx["te"]], ab, t), pt[:, 1]
         return (pt[:, 1] >= t), pt[:, 1]                       # (결정, 점수) — 점수는 사후 진단용
     return arm
 
@@ -504,6 +582,11 @@ ARM_SPEC = {
     #      질환마다 드러나는 분절이 다르다(P:심방, QRS:전도·심실, T:재분극).
     "R6.RSN(+P/QRS/T)":            dict(use_morph=True,  poincare=False, use_ref=True,
                                         segs=("P", "QRS", "T")),
+    # ── 4차 (SVDB_RHYTHM_DESIGN §12 사전등록) ──
+    #  R7: R6 와 **모델이 완전히 동일**하고 임계 결정법만 환자별 적응으로 바꾼 arm.
+    #      → R7 − R6 = '전역 임계 → 적응 임계' 의 순수 효과. 모델 변경 없음.
+    "R7.RSN(+적응임계)":            dict(use_morph=True,  poincare=False, use_ref=True,
+                                        segs=("P", "QRS", "T"), adaptive_thr=True),
 }
 
 def attach_arms(which=("R0", "R1", "R2"), K=K_CTX, n_seed=1, epochs=15,
@@ -585,6 +668,20 @@ def report(OUT, base="B4.본연구", mde=0.07, B=5000):
     if "R0.RSN(리듬만)" in R and "R1.RSN(리듬+형태)" in R:
         print("\n  [절제] 형태 가지의 기여:")
         out["morph"] = paired(R, "R1.RSN(리듬+형태)", "R0.RSN(리듬만)", B=B, k_bonf=k, mde=mde)
+    # ★핵심 단일변수 검정들 — 어느 축이 실제로 일했는지 분해한다.
+    #   전체 Δ(vs B4)만 보면 '가장 높은 arm' 이 좋아 보이지만, 증분을 보면
+    #   대부분의 이득이 한 축에서 나왔다는 것이 드러날 수 있다.
+    for a, b, nm in [
+        ("R1.RSN(리듬+형태)", "R5.RSN(시퀀스제거·대조)",
+         "[H-G] 리듬 시퀀스의 순수 효과 (다른 조건 완전 동일)"),
+        ("R6.RSN(+P/QRS/T)", "R3.RSN(+환자템플릿)",
+         "[H-H] 분절(P/QRS/T) 축의 순수 효과"),
+        ("R4.RSN(+P파)", "R3.RSN(+환자템플릿)", "[절제] P파 축의 순수 효과"),
+        ("R3.RSN(+환자템플릿)", "R1.RSN(리듬+형태)", "[절제] 환자템플릿의 순수 효과"),
+    ]:
+        if a in R and b in R:
+            print(f"\n  {nm}:")
+            out[f"{a}|{b}"] = paired(R, a, b, B=B, k_bonf=k, mde=mde)
     print("\n  ※ CI가 0을 포함하면 '개선'이라 쓰지 않는다 (HANDOFF §7-6).")
     # 최고 성적 arm 의 환자별 분해 — 다음 반복의 표적을 고르기 위한 것
     best = max(arms, key=lambda a: R[a]["macro"])
@@ -1109,8 +1206,8 @@ def selftest(train=True):
         reg = {}
         g["register_arm"] = lambda n, f: reg.__setitem__(n, f)
         try:
-            n = attach_arms(which=("R0","R1","R2","R3","R4","R5","R6"), verbose=False)
-            ok(n == 7 and len(reg) == 7, f"arm {n}개 등록")
+            n = attach_arms(which=("R0","R1","R2","R3","R4","R5","R6","R7"), verbose=False)
+            ok(n == 8 and len(reg) == 8, f"arm {n}개 등록")
             if train:
                 ctx = dict(beats=beat, y=y, pid=pid, tr=np.flatnonzero(pid < 4),
                            cal=np.flatnonzero(pid == 4), te=np.flatnonzero(pid == 5),
@@ -1132,6 +1229,50 @@ def selftest(train=True):
         R2 = {"a": dict(fper=np.full(73, 0.55)), "b": dict(fper=np.full(73, 0.52))}
         ok(not paired(R2, "a", "b", B=500, k_bonf=3, show=False)["meets_mde"],
            "paired: Δ=0.03 → MDE 미달")
+
+        # 적응 임계 — 유병률이 다른 환자들에서 전역 임계보다 나은가 (홀드아웃)
+        def _bt(sx, yx, n=200):
+            ts = np.unique(np.quantile(sx, np.linspace(.5, .9995, n))); best = (-1, ts[0])
+            for t in ts:
+                v = sx >= t; tp = (v & (yx == 1)).sum(); fp = (v & (yx != 1)).sum()
+                fn = ((~v) & (yx == 1)).sum()
+                pr = tp / (tp + fp + 1e-9); re = tp / (tp + fn + 1e-9)
+                f = 2 * pr * re / (pr + re + 1e-9)
+                if f > best[0]: best = (f, t)
+            return float(best[1])
+
+        def _mk(pvs, sd):
+            r = np.random.RandomState(sd); A = []; B2 = []; C = []
+            for i, pv in enumerate(pvs):
+                n = 900; yy = (r.rand(n) < pv).astype(int)
+                sc = np.clip(np.where(yy == 1, r.normal(.72, .16, n), r.normal(.28, .16, n)),
+                             1e-4, 1 - 1e-4)
+                A.append(sc); B2.append(yy); C.append(np.full(n, i))
+            return np.concatenate(A), np.concatenate(B2), np.concatenate(C)
+
+        def _mac(dec, yy, pp):
+            f = []
+            for i in np.unique(pp):
+                m2 = pp == i; v = dec[m2]; q = yy[m2]
+                tp = (v & (q == 1)).sum(); fp = (v & (q != 1)).sum(); fn = ((~v) & (q == 1)).sum()
+                pr = tp / (tp + fp + 1e-9); re = tp / (tp + fn + 1e-9)
+                f.append(2 * pr * re / (pr + re + 1e-9))
+            return float(np.mean(f))
+
+        pvs = [0.003, 0.006, 0.01, 0.02, 0.03, 0.05, 0.08, 0.12, 0.20, 0.30, 0.45, 0.57]
+        Sc, Yc, Pc = _mk(pvs, 0); St, Yt, Pt = _mk(pvs, 7)     # calib / 홀드아웃 환자 분리
+        tg = _bt(Sc, Yc)
+        ok(abs(_prev_proxy(St[Pt == 0], tg) - _prev_proxy(St[Pt == 11], tg)) > 0.2,
+           "prev_proxy 가 저유병/고유병 환자를 구분함")
+        ab = _fit_adaptive(Sc, Yc, Pc, _bt, tg)
+        ok(ab is not None, f"적응 사상 학습됨 (a,b)={tuple(round(v,3) for v in ab)}")
+        m_g = _mac(St >= tg, Yt, Pt)
+        m_a = _mac(_apply_adaptive(St, Pt, ab, tg), Yt, Pt)
+        ok(m_a > m_g + 0.01, f"홀드아웃 환자에서 적응 임계 {m_a:.3f} > 전역 {m_g:.3f}")
+        ok(np.array_equal(_apply_adaptive(St, Pt, None, tg), St >= tg),
+           "사상 학습 실패 시 전역 임계로 폴백")
+        ok(_fit_adaptive(Sc[:200], Yc[:200], Pc[:200], _bt, tg) is None,
+           "calib 환자가 부족하면 None(무리하게 적합하지 않음)")
 
         # save_out/load_out 왕복 (런타임 복구용)
         import tempfile
