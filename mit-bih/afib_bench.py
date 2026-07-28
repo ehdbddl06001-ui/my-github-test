@@ -381,14 +381,14 @@ def _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, n_domain=0,
     return np.concatenate(P)
 
 
-def _arm_trivial(w, tr, te, ncls, seed):
+def _arm_trivial(w, tr, te, ncls, seed, epochs=20):
     """A0. 항상 다수 클래스 — 자명한 하한. 이 아래면 모델이 해로운 것이다."""
     c = np.bincount(w["y"][tr], minlength=ncls).argmax()
     p = np.zeros((len(te), ncls), "float32"); p[:, c] = 1.0
     return p
 
 
-def _arm_rrdisp(w, tr, te, ncls, seed):
+def _arm_rrdisp(w, tr, te, ncls, seed, epochs=20):
     """A1. 고전 RR산포 스칼라 10종 → MLP. **문헌 기준선**.
 
     RMSSD·pNN50·CV·ΔRR 엔트로피·Poincaré 는 1990~2010년대 AF 검출기의 표준 특징이다.
@@ -404,7 +404,7 @@ def _arm_rrdisp(w, tr, te, ncls, seed):
     cw = torch.tensor((cnt.sum() / np.maximum(cnt, 1)) ** 0.5, dtype=torch.float32).to(dev)
     opt = torch.optim.Adam(net.parameters(), lr=1e-3)
     lossf = nn.CrossEntropyLoss(weight=cw)
-    for ep in range(20):
+    for ep in range(epochs):
         net.train(); perm = np.random.permutation(tr)
         for i in range(0, len(perm), 256):
             b = perm[i:i + 256]
@@ -415,21 +415,21 @@ def _arm_rrdisp(w, tr, te, ncls, seed):
         return torch.softmax(net(A[te].to(dev)), -1).cpu().numpy()
 
 
-def _arm_rsn(w, tr, te, ncls, seed):
+def _arm_rsn(w, tr, te, ncls, seed, epochs=20):
     """A2. RSN 시퀀스 — 1층에서 유일하게 살아남은 효과(R1−R5 = +0.105)의 이식."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True)
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True, epochs=epochs)
 
 
-def _arm_rsn_nodisp(w, tr, te, ncls, seed):
+def _arm_rsn_nodisp(w, tr, te, ncls, seed, epochs=20):
     """A2c. RSN 시퀀스만(스칼라 보조 제거) — A2 의 이득이 스칼라 덕인지 가르는 대조군."""
-    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=False)
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=False, epochs=epochs)
 
 
-def _arm_rsn_dom(w, tr, te, ncls, seed):
+def _arm_rsn_dom(w, tr, te, ncls, seed, epochs=20):
     """A3. RSN + DB 조건부 FiLM. ★같은 DB 안에서만 오르면 사전확률 암기다 →
        판정은 반드시 bench_afib(split="db") 로 한다."""
     return _fit_win(w, tr, te, ncls, seed, use_seq=True, use_aux=True,
-                    n_domain=len(set(map(str, w["db"]))))
+                    n_domain=len(set(map(str, w["db"]))), epochs=epochs)
 
 
 DEFAULT_ARMS = {
@@ -444,6 +444,31 @@ DEFAULT_ARMS = {
 # ─────────────────────────────────────────────────────────────────────────────
 #  5. 벤치
 # ─────────────────────────────────────────────────────────────────────────────
+def _cost(w, arms, folds, epochs):
+    """연산량 환산 비용 경고 — 추측이 아니라 MAC 을 세어 **실측 앵커**와 비교한다.
+
+    앵커: 이미 돌려 본 SVDB 벤치 = 87 TMAC = 실측 '수십 분'(L4).
+    ltafdb 를 넣으면 창이 10만 개까지 늘어 몇 시간이 될 수 있으므로, 돌리기 전에
+    숫자를 보여 준다. 먼저 dbs=("afdb","mitdb") 로 배관을 검증하는 것을 권한다.
+    """
+    L = w["seq"].shape[2]
+    mac = 4 * 64 * 5 * L                       # 첫 conv (k=5)
+    rf, d = 5, 1
+    while rf < L and d <= 64:                  # _rsn 의 수용야 자동확장과 동일한 규칙
+        d *= 2; mac += 64 * 64 * 3 * L; rf += 2 * d
+    nseq = sum(1 for a in arms if a.startswith(("A2", "A3")))
+    ntr = sum(len(tr) for _, tr, _ in folds)
+    tot = nseq * ntr * epochs * 3 * mac        # 순전파+역전파 ≈ 3배
+    r = tot / 87e12
+    print(f"    수용야 {rf}/{L}  창당 {mac/1e6:.1f} MMAC  학습창·에폭 {nseq*ntr*epochs:,}")
+    print(f"    연산량 {tot/1e12:.0f} TMAC ≈ SVDB 벤치(실측 '수십 분')의 {r:.1f}배 "
+          f"→ L4 기준 대략 {int(20*r)}~{int(35*r)}분 예상.")
+    if rf < L:
+        print(f"    ⚠ 수용야 {rf} < 창 {L} — 창 끝을 아예 못 본다. W 를 줄일 것.")
+    if r > 3:
+        print(f"    ⚠ 먼저 dbs=(\"afdb\",\"mitdb\") + k=3 으로 배관을 검증하고 늘릴 것.")
+
+
 def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=True):
     """창단위 2층 벤치.
 
@@ -472,11 +497,12 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
                 folds.append((f"r{rep}f{fi}", keep[a], keep[b]))
     print(f"\n=== 2층 벤치 [{split}]  팔 {len(arms)} × 폴드 {len(folds)} = "
           f"{len(arms)*len(folds)}회 학습 ===")
+    _cost(w, arms, folds, epochs)
     for nm, fn in arms.items():
         P = np.full(len(y), -1, np.int64)
         S = np.zeros((len(y), ncls), "float32")
         for fname, tr, te in folds:
-            pr = fn(w, tr, te, ncls, seed=abs(hash(fname)) % 10000)
+            pr = fn(w, tr, te, ncls, seed=abs(hash(fname)) % 10000, epochs=epochs)
             P[te] = pr.argmax(1); S[te] = pr
             if verbose:
                 print(f"  {nm:<18}{fname}  학습 {len(tr):,} / 테스트 {len(te):,}")
