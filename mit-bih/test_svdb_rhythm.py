@@ -143,6 +143,15 @@ def main():
     ok(H["error_profile"]({"res": {"X": dict(fper=[1])}, "y": [], "pid": []}, "X") == {},
        "pred 없는 옛 OUT 은 안내 후 안전 종료")
 
+    # 점수 저장 + 천장 분석 (순위 문제 vs 임계 문제 판정)
+    ok(R["R1.RSN(리듬+형태)"].get("score") is not None, "RES 에 연속 점수 score 저장됨")
+    ca = H["ceiling_analysis"](OUT, "R1.RSN(리듬+형태)")
+    ok("oracle" in ca and len(ca["oracle"]) == len(ca["cur"]), "천장 분석: 오라클 임계 F1 산출")
+    ok((ca["oracle"] >= ca["cur"] - 1e-9).all(),
+       "오라클 임계 F1 은 항상 현재 이상(상한의 정의)")
+    ok(H["ceiling_analysis"]({"res": {"X": dict(fper=[1], score=None)}}, "X") == {},
+       "score 없는 옛 OUT 은 안내 후 안전 종료")
+
     # arm 이 예외를 던져도 전체 실행이 죽지 않아야 한다
     H["clear_arms"]()
     H["register_arm"]("Z.고장난arm", lambda ctx: (_ for _ in ()).throw(RuntimeError("의도된 실패")))

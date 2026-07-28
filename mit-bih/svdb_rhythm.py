@@ -413,7 +413,7 @@ def make_arm(use_morph=True, poincare=True, K=K_CTX, W=W_NORM, WP=W_POIN,
             ctx["tr"], ctx["cal"], ctx["te"], ctx["Sw"], ctx["mc"], ctx["seed"],
             use_morph=use_morph, epochs=epochs, n_seed=n_seed)
         t = ctx["best_t"](pc[:, 1], ctx["y"][ctx["cal"]])     # 임계는 calib 에서만
-        return pt[:, 1] >= t
+        return (pt[:, 1] >= t), pt[:, 1]                       # (결정, 점수) — 점수는 사후 진단용
     return arm
 
 
@@ -579,7 +579,8 @@ def error_profile(OUT, arm, topn=12, show=True):
 
     # 전체 경향 — 낮은 F1 이 무엇과 같이 가는가(원인 가설 좁히기)
     F = np.array([r["f1"] for r in rows])
-    print(f"\n    [전체 경향] 낮은 F1 과 함께 가는 것:")
+    PR = np.array([r["prec"] for r in rows]); RC = np.array([r["rec"] for r in rows])
+    print(f"\n    [전체 경향] 상관:")
     for k, nm in [("prev", "S유병률"), ("contam", "RR오염률"), ("hrv", "RR변동성")]:
         x = np.array([r[k] for r in rows], float)
         if np.isfinite(x).sum() < 5 or np.nanstd(x) == 0:
@@ -587,13 +588,100 @@ def error_profile(OUT, arm, topn=12, show=True):
         g = np.isfinite(x)
         c = float(np.corrcoef(F[g], x[g])[0, 1])
         arrow = "낮을수록 F1 낮음" if c > 0.15 else ("높을수록 F1 낮음" if c < -0.15 else "관련 약함")
-        print(f"      {nm:<10} 상관 {c:+.3f}   {arrow}")
+        print(f"      {nm:<10} ↔ F1  {c:+.3f}   {arrow}")
+
+    # ★유병률은 F1 과의 상관만 보면 놓친다 — precision 과 recall 을 '반대 방향'으로
+    #   밀기 때문에 F1 에서 상쇄되기 때문이다. 반드시 쪼개서 본다.
+    pv = np.log10(np.maximum(np.array([r["prev"] for r in rows], float), 1e-6))
+    cp = float(np.corrcoef(pv, PR)[0, 1]); cr = float(np.corrcoef(pv, RC)[0, 1])
+    print(f"\n    [★유병률 효과 분해] log10(유병률) ↔ PREC {cp:+.3f} / REC {cr:+.3f}")
+    if cp > 0.2 and cr < -0.2:
+        print(f"      → 유병률이 높을수록 정밀도↑·민감도↓. 단일 전역 임계가 저유병 환자에겐")
+        print(f"        너무 관대하고 고유병 환자에겐 너무 엄격하다는 신호입니다.")
+        print(f"        F1 상관만 보면 두 효과가 상쇄돼 '관련 약함'으로 보입니다 — 반드시 쪼개 볼 것.")
+        print(f"        → ceiling_analysis() 로 '임계 문제 vs 판별축 문제'를 판정하세요.")
+    # 유병률 3분위별 요약
+    prev = np.array([r["prev"] for r in rows], float)
+    q = np.quantile(prev, [1/3, 2/3]); gg = np.digitize(prev, q)
+    print(f"      {'구간':<10}{'n':>3}{'유병률중앙':>10}{'PREC':>8}{'REC':>8}{'F1':>8}")
+    for i, nm in enumerate(["저유병", "중간", "고유병"]):
+        m = gg == i
+        if not m.any(): continue
+        print(f"      {nm:<10}{int(m.sum()):>3}{100*np.median(prev[m]):>9.2f}%"
+              f"{PR[m].mean():>8.3f}{RC[m].mean():>8.3f}{F[m].mean():>8.3f}")
     nfn = sum(1 for r in rows[:topn] if mode(r).startswith("FN"))
     nfp = sum(1 for r in rows[:topn] if mode(r).startswith("FP"))
     print(f"\n    최악 {min(topn,len(rows))}명의 실패양상: FN우세 {nfn} / FP우세 {nfp} / "
           f"양쪽 {min(topn,len(rows))-nfn-nfp}")
     print(f"      → FN 우세면 '판별축 부족', FP 우세면 '개인 정규화 부족'이 1순위 가설.")
     return dict(rows=rows)
+
+
+def ceiling_analysis(OUT, arm, show=True):
+    """★결정적 진단 — '순위(판별축)' 문제인가 '임계(동작점)' 문제인가.
+
+    두 실패는 처방이 완전히 다른데 이진 판정만 보면 구분되지 않는다:
+      · 순위가 나쁘다 → 점수 자체가 S 와 N 을 못 가른다 → **새 판별축이 필요**
+      · 순위는 좋은데 임계가 안 맞는다 → 환자마다 최적 동작점이 다르다
+        → **라벨프리 환자별 임계 적응이 필요** (모델은 그대로 둬도 된다)
+
+    세 수치를 나란히 놓는다:
+      현재        지금 쓰는 전역 임계의 환자매크로 F1
+      오라클임계  환자마다 F1 최적 임계를 골랐을 때 (★테스트 라벨 사용 = 상한 참고용)
+      PR-AUC      임계 무관 순위 품질
+
+    ★오라클은 테스트 라벨을 쓰므로 **달성 가능한 성능이 아니다**(HANDOFF §7-1).
+      '동작점만 완벽히 맞추면 어디까지 가는가'라는 상한을 재는 계측기일 뿐이다.
+      현재와 오라클의 격차가 크면 임계 문제, 작으면 판별축 문제다.
+    """
+    R = OUT["res"].get(arm)
+    if R is None or R.get("score") is None:
+        print(f"  ⚠ {arm} 의 score 가 없습니다 — 최신 svdb_bench.py 로 재실행하면 저장됩니다.")
+        return {}
+    from sklearn.metrics import average_precision_score
+    y, pid, s = OUT["y"], OUT["pid"], np.asarray(R["score"], float)
+    ps = np.array([int(p) for p in np.unique(pid) if (y[pid == p] == 1).sum() > 0])
+    cur = np.asarray(R["fper"], float)
+    orc = np.zeros(len(ps)); ap = np.zeros(len(ps))
+    for i, p in enumerate(ps):
+        m = pid == p
+        yp = (y[m] == 1); sp = s[m]
+        ap[i] = average_precision_score(yp.astype(int), sp) if yp.any() and (~yp).any() else 1.0
+        ts = np.unique(np.quantile(sp, np.linspace(0.0, 1.0, 200)))
+        best = 0.0
+        for t in ts:
+            v = sp >= t
+            tp = float((v & yp).sum()); fp = float((v & ~yp).sum()); fn = float((~v & yp).sum())
+            pr = tp / (tp + fp + 1e-9); re = tp / (tp + fn + 1e-9)
+            best = max(best, 2 * pr * re / (pr + re + 1e-9))
+        orc[i] = best
+    if not show:
+        return dict(pid=ps, cur=cur, oracle=orc, prauc=ap)
+
+    print(f"\n  [천장 분석] {arm}   n={len(ps)}")
+    print(f"    현재(전역 임계)      매크로 F1 = {cur.mean():.3f}")
+    print(f"    오라클 환자별 임계   매크로 F1 = {orc.mean():.3f}   (★테스트 라벨 사용 = 상한)")
+    print(f"    임계 무관 PR-AUC     평균      = {ap.mean():.3f}")
+    gap = orc.mean() - cur.mean()
+    print(f"\n    동작점 격차 = {gap:+.3f}")
+    if gap >= 0.10:
+        print(f"      → ★임계(동작점) 문제가 큽니다. 순위는 이미 이만큼 좋은데 전역 임계가")
+        print(f"        환자별 최적점을 못 맞추고 있습니다. 라벨프리 환자별 임계 적응이 1순위.")
+    elif gap >= 0.05:
+        print(f"      → 임계 문제가 유의미하지만 판별축 개선도 함께 필요합니다.")
+    else:
+        print(f"      → 임계로 얻을 여지가 작습니다. 판별축(새 입력 축)이 1순위.")
+    # 유병률 구간별로 어디서 격차가 큰가
+    prev = np.array([float((y[pid == p] == 1).mean()) for p in ps])
+    q = np.quantile(prev, [1/3, 2/3]); g = np.digitize(prev, q)
+    print(f"\n    유병률 구간별 (동작점 격차가 어디에 몰려 있나):")
+    print(f"      {'구간':<12}{'n':>3}{'유병률중앙':>10}{'현재':>8}{'오라클':>8}{'격차':>8}{'PR-AUC':>8}")
+    for i, nm in enumerate(["저유병", "중간", "고유병"]):
+        m = g == i
+        if not m.any(): continue
+        print(f"      {nm:<12}{int(m.sum()):>3}{100*np.median(prev[m]):>9.2f}%"
+              f"{cur[m].mean():>8.3f}{orc[m].mean():>8.3f}{orc[m].mean()-cur[m].mean():>+8.3f}{ap[m].mean():>8.3f}")
+    return dict(pid=ps, cur=cur, oracle=orc, prauc=ap, gap=float(gap))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -867,8 +955,11 @@ def selftest(train=True):
                            cal=np.flatnonzero(pid == 4), te=np.flatnonzero(pid == 5),
                            Sw=8.0, mc=np.array([.3, .5, .4], "float32"), seed=0,
                            best_t=lambda s, yy: float(np.quantile(s, 0.9)))
-                v = reg["R1.RSN(리듬+형태)"](ctx)
-                ok(v.dtype == bool and len(v) == len(ctx["te"]), "arm 반환 계약(bool[len(te)])")
+                r = reg["R1.RSN(리듬+형태)"](ctx)
+                ok(isinstance(r, tuple) and len(r) == 2, "arm 반환 계약((결정, 점수) 튜플)")
+                v, sc = r
+                ok(v.dtype == bool and len(v) == len(ctx["te"]), "결정 = bool[len(te)]")
+                ok(len(sc) == len(ctx["te"]) and np.isfinite(sc).all(), "점수 = float[len(te)]")
         finally:
             if saved is None: g.pop("register_arm", None)
             else: g["register_arm"] = saved

@@ -203,7 +203,11 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
                 "   평가하려면 이 실행을 멈추고 attach_arms() 를 먼저 부르세요.\n"
                 "   (런타임이 끊기면 등록이 초기화되므로 재실행 때마다 다시 불러야 합니다.)\n")
     acc={a:[] for a in ARMS}                                  # 각 arm의 test 결정벡터(전 폴드 합침)
+    scr={a:[] for a in ARMS}                                  # 각 arm의 test 점수(연속값) — 아래 참조
     dead=set()                                                # 실패한 확장 arm(전체 실행은 계속)
+    # ★점수를 함께 남기는 이유: 이진 판정만 남기면 '순위가 나쁜 것(판별축 문제)'과
+    #   '임계가 안 맞는 것(동작점 문제)'을 사후에 구분할 수 없다. 유병률이 환자마다
+    #   800배 차이 나는 데이터에서 이 구분은 다음 수를 정하는 핵심이다.
     order_idx=[]                                              # 대응하는 원본 인덱스
     gkf=GroupKFold(n_splits=k)
     for rep in range(n_rep):
@@ -216,20 +220,20 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
             seed=100*rep+fi
             order_idx.append(te)
             # B0
-            acc["B0.다수결"].append(np.zeros(len(te),bool))
+            acc["B0.다수결"].append(np.zeros(len(te),bool)); scr["B0.다수결"].append(np.zeros(len(te)))
             # B1 LDA
             ss=StandardScaler().fit(Fmor[tr]); L=LinearDiscriminantAnalysis().fit(ss.transform(Fmor[tr]),y[tr])
             pc=L.predict_proba(ss.transform(Fmor[cal]))[:,1]; pt=L.predict_proba(ss.transform(Fmor[te]))[:,1]
-            t=_best_t_f1(pc,y[cal]); acc["B1.LDA(형태+RR)"].append(pt>=t)
+            t=_best_t_f1(pc,y[cal]); acc["B1.LDA(형태+RR)"].append(pt>=t); scr["B1.LDA(형태+RR)"].append(pt)
             # B2 CNN(raw) / B3 CNN+RR
             for nm,Fx in [("B2.CNN(raw)",np.zeros((len(y),1),"float32")),("B3.CNN+RR",FRR)]:
                 pc,pt=_fit_predict("cnn",beats,refM,Fx,y,pid,tr,cal,te,Sw,mc,seed)
-                t=_best_t_f1(pc[:,1],y[cal]); acc[nm].append(pt[:,1]>=t)
+                t=_best_t_f1(pc[:,1],y[cal]); acc[nm].append(pt[:,1]>=t); scr[nm].append(pt[:,1])
             # B4 / B4C (같은 모델, 임계법만 다름)
             pc,pt=_fit_predict("ours",beats,refR,Fall,y,pid,tr,cal,te,Sw,mc,seed)
-            t=_best_t_f1(pc[:,1],y[cal]); acc["B4.본연구"].append(pt[:,1]>=t)
+            t=_best_t_f1(pc[:,1],y[cal]); acc["B4.본연구"].append(pt[:,1]>=t); scr["B4.본연구"].append(pt[:,1])
             cc=_pp_center2(pc[:,1],pid[cal]); ct=_pp_center2(pt[:,1],pid[te]); tc=_best_t_f1(cc,y[cal])
-            acc["B4C.본연구+센터링"].append(ct>=tc)
+            acc["B4C.본연구+센터링"].append(ct>=tc); scr["B4C.본연구+센터링"].append(ct)
             # ─── 확장 arm (동일 폴드·동일 calib·동일 임계규약) ───
             if EXTRA_ARMS:
                 ctx=dict(beats=beats,y=y,pid=pid,pre=pre,post=post,refM=refM,refR=refR,
@@ -238,9 +242,14 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
                 for nm,fn in EXTRA_ARMS.items():
                     if nm in dead: continue
                     try:
-                        v=np.asarray(fn(ctx)).astype(bool).reshape(-1)
+                        r=fn(ctx)
+                        # 계약: bool[len(te)] 또는 (bool[len(te)], score[len(te)])
+                        v,s=(r if isinstance(r,tuple) else (r,None))
+                        v=np.asarray(v).astype(bool).reshape(-1)
                         if v.shape!=(len(te),): raise ValueError(f"길이 {v.shape} != test {len(te)}")
                         acc[nm].append(v)
+                        scr[nm].append(np.asarray(s,float).reshape(-1) if s is not None
+                                       else v.astype(float))
                     except Exception as e:
                         # 한 arm의 실패로 15회 학습을 버리지 않는다. 해당 arm만 결과에서 제외.
                         print(f"  ⚠ arm '{nm}' 실패 → 결과에서 제외: {type(e).__name__}: {e}")
@@ -256,7 +265,8 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
         pr,se,f1=_prf(v,yA)
         # pred: 비트별 판정 벡터(yA/pA 와 같은 순서). 환자별 오류 분해(FP/FN)에 필수 —
         # 이걸 안 남기면 "이 환자가 왜 낮은가"를 사후에 물을 수 없다.
-        RES[a]=dict(macro=m,ci=(lo,hi),micro=f1,prec=pr,sen=se,fper=fper,pred=v)
+        RES[a]=dict(macro=m,ci=(lo,hi),micro=f1,prec=pr,sen=se,fper=fper,pred=v,
+                    score=(np.concatenate(scr[a]) if len(scr[a])==len(acc[a]) else None))
         print(f"  {a:20s} 매크로F1={m:.3f} [{lo:.3f}–{hi:.3f}] (n={n})   micro={f1:.3f} (SEN {se:.3f}/PREC {pr:.3f})")
     # H5 검정: 최다 S 레코드의 micro 기여
     cnt={int(p):int((yA[pA==p]==1).sum()) for p in np.unique(pA)}
