@@ -455,6 +455,12 @@ def bench_transfer(task="beat5", path=None, K=8, k=5, epochs=20, ft_epochs=5,
     c = g["rr_context"](pre, post, pid, K=K, poincare=True, verbose=verbose)
 
     uds = sorted(set(map(str, dbv)))
+    # ★비용 경고 — 폴드마다 3회 학습이고 P1 은 매번 전체 데이터를 본다.
+    nfit = 3 * k * len(uds)
+    print(f"\n  ⚠ 학습 {nfit}회 예정 (DB {len(uds)} × {k}폴드 × 3모델)."
+          f"  P1 은 매번 {len(y):,}비트 전체를 본다.")
+    print(f"    SVDB 벤치(184k비트 15회)가 수십 분이었으니 여기는 **수 시간**일 수 있다.")
+    print(f"    먼저 k=3, epochs=10 으로 감을 잡고 늘리는 것을 권한다.")
     acc = {a: [] for a in ("P0.단독", "P1.통합", "P2.통합→미세")}
     order = []
     for db in uds:

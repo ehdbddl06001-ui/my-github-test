@@ -200,6 +200,18 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
         print("      ※ attach_arms() 를 인자 없이 부르면 R0/R1/R2 만 등록되고,")
         print("         only= 없이 bench_models 를 부르면 B0~B4C 까지 전부 재학습합니다.")
         if g.get("CODE_SHA"): print(f"    (실험 기록용 코드 버전: CODE_SHA={g['CODE_SHA'][:10]})")
+    # ★새 파일이 CORE 에 추가되면 메모리의 옛 sync() 는 그걸 모른다. self_update 가
+    #   그걸 막지만, self_update 자체가 없던 버전에서 넘어올 때는 한 번은 아래 셀이
+    #   필요하다. 매번 보여줘서 "sync() 만 하면 되겠지"로 막히는 일을 없앤다.
+    print()
+    print("  ── 무엇이 없다고 나오면 이 셀을 통째로 다시 실행하세요 ──")
+    print("  import urllib.request as u, json")
+    print(f"  R=\"{REPO}\"; B=\"{BRANCH}\"")
+    print("  S=json.load(u.urlopen(f\"https://api.github.com/repos/{R}/commits/"
+          "{B.replace('/','%2F')}\"))[\"sha\"]")
+    print("  exec(u.urlopen(f\"https://raw.githubusercontent.com/{R}/{S}/mit-bih/"
+          "colab_setup.py\").read().decode())")
+    print("  sync()")
     return got
 
 
