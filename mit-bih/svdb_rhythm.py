@@ -508,6 +508,94 @@ def report(OUT, base="B4.본연구", mde=0.07, B=5000):
     return out
 
 
+def error_profile(OUT, arm, topn=12, show=True):
+    """★"이 환자가 왜 낮은가" — 환자별 오류를 FP/FN 으로 쪼개고 공변량과 대조한다.
+
+    patient_breakdown() 이 '누가 낮은가'를 알려준다면, 이것은 '왜'의 첫 단계다.
+    같은 낮은 F1 이라도 처방이 정반대이기 때문에 반드시 구분해야 한다:
+
+      · FN 우세(놓침)  : S 를 못 잡는다 → 민감도 문제. 판별축이 약하거나 임계가 높다.
+      · FP 우세(헛알람): 정상을 S 라 한다 → 특이도 문제. 그 환자의 '정상'이 특이하다
+                         (동성부정맥·잦은 체위변화 등) → 개인 정규화가 필요하다는 신호.
+      · 양쪽          : 축 자체가 그 환자에게 안 먹는다 → 새 축이 필요하다.
+
+    함께 보는 공변량(원인 가설을 좁히기 위한 것):
+      S유병률   극단적으로 낮으면 F1 은 몇 개만 틀려도 무너진다(지표의 성질).
+      RR오염    생리범위 밖 RR 비율. rr_audit 이 센 949개가 특정 환자에 몰렸는지.
+      RR변동    med 대비 MAD. 높으면 AF/동성부정맥 의심 → 리듬축이 흔들리는 환자.
+    """
+    R = OUT["res"].get(arm)
+    if R is None:
+        print(f"  ⚠ {arm} 없음"); return {}
+    if "pred" not in R:
+        print("  ⚠ 이 OUT 에는 pred(비트별 판정)가 없습니다 — 예전 코드로 만든 결과입니다.")
+        print("    sync() 로 최신 svdb_bench.py 를 받은 뒤 bench_models() 를 다시 돌리면 생깁니다.")
+        return {}
+    y, pid, v = OUT["y"], OUT["pid"], np.asarray(R["pred"], bool)
+    ps = np.array([int(p) for p in np.unique(pid) if (y[pid == p] == 1).sum() > 0])
+    f = np.asarray(R["fper"], float)
+
+    # 공변량: 원본 RR 을 OUT["order"] 로 정렬해 맞춘다
+    pre = post = None
+    if "order" in OUT:
+        try:
+            _, _, _, P0, Q0 = _rsn_sv()
+            o = OUT["order"]
+            pre = np.asarray(P0, float)[o] / FS
+            post = np.asarray(Q0, float)[o] / FS
+        except Exception:
+            pass
+
+    rows = []
+    for i, p in enumerate(ps):
+        m = pid == p
+        yp = (y[m] == 1); vp = v[m]
+        tp = int((vp & yp).sum()); fp = int((vp & ~yp).sum()); fn = int((~vp & yp).sum())
+        prec = tp / max(tp + fp, 1); rec = tp / max(tp + fn, 1)
+        contam = hrv = float("nan")
+        if pre is not None:
+            a = pre[m]; b = post[m]
+            contam = float(np.mean((a < RR_LO) | (a > RR_HI) | (b < RR_LO) | (b > RR_HI)))
+            med = np.median(a); hrv = float(np.median(np.abs(a - med)) / max(med, 1e-6))
+        rows.append(dict(pid=int(p), f1=float(f[i]), tp=tp, fp=fp, fn=fn,
+                         prec=prec, rec=rec, n_S=int(yp.sum()), n=int(m.sum()),
+                         prev=float(yp.mean()), contam=contam, hrv=hrv))
+    rows.sort(key=lambda r: r["f1"])
+    if not show:
+        return dict(rows=rows)
+
+    def mode(r):
+        if r["fn"] > 2 * max(r["fp"], 1): return "FN우세(놓침)"
+        if r["fp"] > 2 * max(r["fn"], 1): return "FP우세(헛알람)"
+        return "양쪽"
+
+    print(f"\n  [오류 프로파일] {arm} — 최악 {min(topn,len(rows))}명")
+    print(f"    {'rec':>4} {'F1':>6} {'PREC':>6} {'REC':>6} {'TP':>5} {'FP':>6} {'FN':>5} "
+          f"{'S유병':>6} {'RR오염':>7} {'RR변동':>6}  실패양상")
+    for r in rows[:topn]:
+        print(f"    {r['pid']:4d} {r['f1']:6.3f} {r['prec']:6.3f} {r['rec']:6.3f} "
+              f"{r['tp']:5d} {r['fp']:6d} {r['fn']:5d} {100*r['prev']:5.2f}% "
+              f"{100*r['contam']:6.2f}% {r['hrv']:6.3f}  {mode(r)}")
+
+    # 전체 경향 — 낮은 F1 이 무엇과 같이 가는가(원인 가설 좁히기)
+    F = np.array([r["f1"] for r in rows])
+    print(f"\n    [전체 경향] 낮은 F1 과 함께 가는 것:")
+    for k, nm in [("prev", "S유병률"), ("contam", "RR오염률"), ("hrv", "RR변동성")]:
+        x = np.array([r[k] for r in rows], float)
+        if np.isfinite(x).sum() < 5 or np.nanstd(x) == 0:
+            continue
+        g = np.isfinite(x)
+        c = float(np.corrcoef(F[g], x[g])[0, 1])
+        arrow = "낮을수록 F1 낮음" if c > 0.15 else ("높을수록 F1 낮음" if c < -0.15 else "관련 약함")
+        print(f"      {nm:<10} 상관 {c:+.3f}   {arrow}")
+    nfn = sum(1 for r in rows[:topn] if mode(r).startswith("FN"))
+    nfp = sum(1 for r in rows[:topn] if mode(r).startswith("FP"))
+    print(f"\n    최악 {min(topn,len(rows))}명의 실패양상: FN우세 {nfn} / FP우세 {nfp} / "
+          f"양쪽 {min(topn,len(rows))-nfn-nfp}")
+    print(f"      → FN 우세면 '판별축 부족', FP 우세면 '개인 정규화 부족'이 1순위 가설.")
+    return dict(rows=rows)
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  결과 영속화 — 런타임이 끊겨도 OUT 을 잃지 않게 (긴 여정용)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -515,12 +603,34 @@ def report(OUT, base="B4.본연구", mde=0.07, B=5000):
 #  산출물)이 통째로 사라진다. bench_models() 는 다시 돌리면 되지만 시간이 아깝다.
 #  → 끝나면 바로 Drive 에 저장하고, 다음 세션에서 학습 없이 불러와 report/분해만 한다.
 def save_out(OUT, name="rsn_last", base=None):
-    """OUT 을 Drive 에 저장(pickle). 반환: 저장 경로."""
+    """OUT 을 Drive 에 저장(pickle). 반환: 저장 경로.
+
+    ★덮어쓰기 보호: 기존 파일이 지금 저장하려는 것보다 **더 많은 arm** 을 갖고 있으면
+      (예: R0/R1/R2 가 든 결과를 B 계열만 있는 결과로 덮으려 할 때) 자동으로
+      .bak.pkl 로 백업하고 경고한다. 수십 분 GPU 학습 결과를 실수로 날리지 않기 위함.
+    """
+    import os
     import pickle
+    import shutil
     base = base or _BASE
     sha = globals().get("CODE_SHA")
     meta = dict(code_sha=sha)                          # 어떤 코드가 낸 결과인지 함께 박는다
     p = f"{base}/{name}.pkl"
+    new_arms = set(OUT.get("res", {}))
+    if os.path.exists(p):
+        try:
+            with open(p, "rb") as f:
+                old = pickle.load(f)
+            oo = old.get("OUT", old) if isinstance(old, dict) else old
+            old_arms = set(oo.get("res", {}))
+            lost = old_arms - new_arms
+            if lost:
+                bak = f"{base}/{name}.bak.pkl"
+                shutil.copyfile(p, bak)
+                print(f"  ⚠ 기존 저장본에만 있던 arm 이 사라집니다: {sorted(lost)}")
+                print(f"    → 백업했습니다: {bak}  (load_out(name='{name}.bak') 로 복원)")
+        except Exception:
+            pass
     with open(p, "wb") as f:
         pickle.dump({"OUT": OUT, "meta": meta}, f)
     macros = {a: OUT["res"][a]["macro"] for a in OUT["res"]}

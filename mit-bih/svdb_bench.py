@@ -199,6 +199,9 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
     ARMS=["B0.다수결","B1.LDA(형태+RR)","B2.CNN(raw)","B3.CNN+RR","B4.본연구","B4C.본연구+센터링"]
     ARMS+= [a for a in EXTRA_ARMS if a not in ARMS]           # 확장 arm(신규 모델)
     if EXTRA_ARMS: print(f"확장 arm {len(EXTRA_ARMS)}개 동반 평가: {list(EXTRA_ARMS)}\n")
+    else: print("※ 확장 arm 없음 — B0~B4C 기준선만 돕니다. 신규 모델(R0/R1/R2)도 함께\n"
+                "   평가하려면 이 실행을 멈추고 attach_arms() 를 먼저 부르세요.\n"
+                "   (런타임이 끊기면 등록이 초기화되므로 재실행 때마다 다시 불러야 합니다.)\n")
     acc={a:[] for a in ARMS}                                  # 각 arm의 test 결정벡터(전 폴드 합침)
     dead=set()                                                # 실패한 확장 arm(전체 실행은 계속)
     order_idx=[]                                              # 대응하는 원본 인덱스
@@ -251,7 +254,9 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
         v=np.concatenate(acc[a])
         m,lo,hi,n,fper=_macro(v,yA,pA)
         pr,se,f1=_prf(v,yA)
-        RES[a]=dict(macro=m,ci=(lo,hi),micro=f1,prec=pr,sen=se,fper=fper)
+        # pred: 비트별 판정 벡터(yA/pA 와 같은 순서). 환자별 오류 분해(FP/FN)에 필수 —
+        # 이걸 안 남기면 "이 환자가 왜 낮은가"를 사후에 물을 수 없다.
+        RES[a]=dict(macro=m,ci=(lo,hi),micro=f1,prec=pr,sen=se,fper=fper,pred=v)
         print(f"  {a:20s} 매크로F1={m:.3f} [{lo:.3f}–{hi:.3f}] (n={n})   micro={f1:.3f} (SEN {se:.3f}/PREC {pr:.3f})")
     # H5 검정: 최다 S 레코드의 micro 기여
     cnt={int(p):int((yA[pA==p]==1).sum()) for p in np.unique(pA)}
@@ -269,4 +274,6 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0):
     if any(a in RES for a in EXTRA_ARMS):
         print(f"\n  ※ 확장 arm 은 주변 CI 비교로 판정하지 말 것. 대응 부트스트랩을 쓰세요:")
         print(f"     report(OUT)   # svdb_rhythm.py — 환자별 F1 차이 + Bonferroni + ±0.07 판정")
-    return dict(res=RES, y=yA, pid=pA, top=top, share=share, arms=ARMS, dead=sorted(dead))
+    # order: yA/pA/pred 를 원본 배열(beat, pre_rr ...)로 되돌리는 색인. 오류 분석용.
+    return dict(res=RES, y=yA, pid=pA, order=idx, top=top, share=share,
+                arms=ARMS, dead=sorted(dead))

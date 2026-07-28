@@ -132,6 +132,17 @@ def main():
     rep = H["report"](OUT, base="B2.CNN(raw)")
     ok("R1.RSN(리듬+형태)" in rep and "ci" in rep["R1.RSN(리듬+형태)"], "report() 대응 비교 산출")
 
+    # 오류 분해에 필요한 것들이 OUT 에 실렸는지 (없으면 '왜 낮은가'를 못 묻는다)
+    ok("pred" in R["R1.RSN(리듬+형태)"], "RES 에 비트별 pred 저장됨")
+    ok("order" in OUT and len(OUT["order"]) == len(OUT["y"]), "OUT 에 원본 색인 order 저장됨")
+    ep = H["error_profile"](OUT, "R1.RSN(리듬+형태)", topn=5)
+    ok(ep["rows"] and {"tp", "fp", "fn", "contam", "hrv"} <= set(ep["rows"][0]),
+       "error_profile: 환자별 FP/FN + 공변량 산출")
+    r0 = ep["rows"][0]
+    ok(r0["tp"] + r0["fn"] == r0["n_S"], "오류 분해 정합(TP+FN = 실제 S 수)")
+    ok(H["error_profile"]({"res": {"X": dict(fper=[1])}, "y": [], "pid": []}, "X") == {},
+       "pred 없는 옛 OUT 은 안내 후 안전 종료")
+
     # arm 이 예외를 던져도 전체 실행이 죽지 않아야 한다
     H["clear_arms"]()
     H["register_arm"]("Z.고장난arm", lambda ctx: (_ for _ in ()).throw(RuntimeError("의도된 실패")))
