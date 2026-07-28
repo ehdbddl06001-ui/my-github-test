@@ -153,8 +153,13 @@ def win_starts(n, W, stride):
 
 
 def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
-                 verbose=True):
+                 dbs=None, verbose=True):
     """비트 코퍼스 → 창 데이터셋.
+
+    ★dbs 로 DB 를 골라낼 수 있다. 심방활동 특징(2층-B)은 신호를 받은 DB 에만
+      있으므로, 그 축을 쓰는 실험에서는 dbs=("afdb","mitdb") 처럼 좁혀야 한다.
+      좁히지 않으면 대부분의 창이 특징 없이(NaN→중앙값 대체) 들어와 형태축의
+      효과가 희석된다 — 있지도 않은 정보를 '효과 없음'으로 오판하게 된다.
 
     반환 dict: seq[Nw,4,W] aux[Nw,10] y[Nw] pid db dur(초) nov(비중첩 플래그)
                t0(창 시작 시각) pur(순도) classes
@@ -166,6 +171,15 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
     want = {nm: i for i, nm in enumerate(classes)}
     pid, rhy = d["pid"], d["rhythm"]
     pre, dbv = d["pre_rr"], d["db"]
+    if dbs is not None:
+        keep_db = np.isin(np.array(list(map(str, dbv))), list(dbs))
+        if not keep_db.any():
+            raise RuntimeError(f"dbs={dbs} 에 해당하는 비트가 없습니다 — "
+                               f"코퍼스의 DB: {sorted(set(map(str, dbv)))}")
+        pid, rhy, pre, dbv = pid[keep_db], rhy[keep_db], pre[keep_db], dbv[keep_db]
+        if verbose:
+            print(f"  [DB 필터] {list(dbs)} → 비트 {int(keep_db.sum()):,} / "
+                  f"{len(keep_db):,}  환자 {len(np.unique(pid))}")
     SEQ = []; AUX = []; Y = []; PID = []; DB = []; DUR = []; NOV = []; T0 = []; PUR = []
     KEY = []                                   # (pid, 창 시작 비트인덱스) — 심방특징 결합키
     n_trans = 0

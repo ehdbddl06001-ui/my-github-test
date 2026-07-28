@@ -951,8 +951,8 @@ def atrial_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
     names = [str(x) for x in a["names"]]
     K = {(int(p), int(s)): i for i, (p, s) in enumerate(a["key"])}
     rn = [str(x) for x in d["rhythm_names"]]
-    pid, rhy = d["pid"], d["rhythm"]
-    lab, feat, who = [], [], []
+    pid, rhy, pre = d["pid"], d["rhythm"], d["pre_rr"]
+    lab, feat, who, rrw = [], [], [], []
     for p in np.unique(pid):
         idx = np.flatnonzero(pid == p)
         for s in win_starts(len(idx), W, stride):
@@ -965,7 +965,10 @@ def atrial_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
             if c[k] / W < 0.90:
                 continue
             lab.append(rn[u[k]]); feat.append(a["feat"][j]); who.append(int(p))
+            # ★창의 중앙 RR — '이 특징이 사실은 심박수 아닌가' 를 검사하기 위한 것
+            rrw.append(float(np.median(pre[idx][s:s + W])) / 360.0)
     lab = np.array(lab); feat = np.array(feat); who = np.array(who)
+    rrw = np.array(rrw)
     TGT = ("N", "AFIB", "AFL")
 
     # ── (환자, 리듬) 칸별 중앙값 — 환자 단위 통계의 기본 단위 ────────────────
@@ -1035,6 +1038,27 @@ def atrial_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
     _cmp("AFL", "AFIB")
     _cmp("AFL", "N")
     _cmp("AFIB", "N")
+
+    # ── ★심박수 교란 점검 ───────────────────────────────────────────────
+    #  절대 시간 특징(pr_med·rt_med 등)은 심박수가 빨라지면 그냥 짧아진다.
+    #  그런데 심박수는 **이미 RR 축(1층·2층 시퀀스)이 갖고 있는 정보**다.
+    #  RR 과 강하게 붙은 특징의 판별력은 '새 정보'가 아니라 중복이므로,
+    #  형태축의 기여로 계상하면 안 된다. 여기서 그것을 먼저 걸러 낸다.
+    from scipy.stats import spearmanr
+    print(f"\n  [심박수 교란 점검]  특징 vs 창 중앙 RR 의 |Spearman ρ|")
+    print(f"    (|ρ|>0.5 면 그 특징의 판별력은 대부분 심박수다 — 형태축 기여로 세지 말 것)")
+    conf = {}
+    for i, n in enumerate(names):
+        if n == "lead":
+            continue
+        m = np.isfinite(feat[:, i])
+        if m.sum() < 20:
+            continue
+        r = spearmanr(feat[m, i], rrw[m]).statistic
+        conf[n] = abs(float(r)) if np.isfinite(r) else 0.0
+    for n, r in sorted(conf.items(), key=lambda kv: -kv[1])[:8]:
+        v = "⚠심박수 대리" if r > 0.5 else ("주의" if r > 0.35 else "독립적")
+        print(f"    {n:<11}|ρ|={r:.3f}   {v}")
 
     # ── 사전등록 판정 ────────────────────────────────────────────────────
     def med(nm, i):
