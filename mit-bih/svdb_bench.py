@@ -220,7 +220,16 @@ def bench_models(n_rep=1, k=5, use_ae=True, seed0=0, only=None):
     else:
         print()
     refM=_median_ref(beats,pid)
-    refR=robust_template(beats,pid,frac=0.6,conf_cut=0.879,verbose=True)[0]   # DS1서 정한 값 그대로
+    # ★verbose=False: robust_template 의 기본 출력은 MIT-BIH 전용이라 SVDB 에서 무의미하다.
+    #   (DS2 플래그 / 참고 AF 환자=[202,210,219,221] 은 MIT-BIH 레코드 ID 인데 SVDB pid 는
+    #    0~77 이라 겹침이 항상 빈 리스트로 찍힌다.) SVDB 기준 요약을 여기서 직접 낸다.
+    refR,_tinfo=robust_template(beats,pid,frac=0.6,conf_cut=0.879,verbose=False)  # DS1서 정한 값 그대로
+    print(f"  강건템플릿: frac=0.6 conf_cut=0.879 (MIT-BIH DS1에서 확정, SVDB 재조정 없음)")
+    _tinfo=list(_tinfo or [])
+    if _tinfo:                                   # info 를 안 주는 구현도 있으므로 방어
+        _fl=[int(x[0]) for x in _tinfo if x[2]]; _cf=np.array([x[1] for x in _tinfo],float)
+        print(f"    신뢰도 중앙 {np.median(_cf):.3f} [{_cf.min():.3f}, {_cf.max():.3f}]  "
+              f"median 폴백 {len(_fl)}/{len(_tinfo)}명" + (f" {_fl}" if 0<len(_fl)<=8 else ""))
     ARMS=["B0.다수결","B1.LDA(형태+RR)","B2.CNN(raw)","B3.CNN+RR","B4.본연구","B4C.본연구+센터링"]
     ARMS+= [a for a in EXTRA_ARMS if a not in ARMS]           # 확장 arm(신규 모델)
     if only is not None: ARMS=[a for a in ARMS if a in only]

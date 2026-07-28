@@ -38,6 +38,9 @@
 #    OUT = bench_models(n_rep=1)   # ③ B0~B4C + R0/R1/R2 동일 폴드에서 학습·평가
 #    report(OUT)                   # ④ 대응 부트스트랩 + Bonferroni + ±0.07 판정
 #    repro_check(OUT)              # ⑤ 재현성(시드) 점검 — N3(SMOTE) 실패 재발 방지
+#    literature_table(OUT, arm)    # ⑥ 비트풀링(micro) Se/+P/F1 — 문헌과 같은 잣대(비교불가 사유 병기)
+#    burden_analysis(OUT, arm)     # ⑦ PAC burden 추정 정확도 — 임상 의의(Pearson + Bland-Altman)
+#    compare_arms(OUT, a, b)       # ⑧ 두 arm 을 유병률 구간별로 비교(평균이 감추는 것)
 #
 #  자기검증(데이터 없이):  python svdb_rhythm.py --selftest
 # =============================================================================
@@ -798,6 +801,119 @@ def error_profile(OUT, arm, topn=12, show=True):
     return dict(rows=rows)
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+#  문헌 비교용 지표 + 임상 지표(PAC burden)
+# ─────────────────────────────────────────────────────────────────────────────
+#  문헌 대다수는 **비트풀링(micro) Se/+P** 를 MIT-BIH DS2 에서 보고한다. 본 연구의
+#  주지표(환자단위 매크로 F1)와는 다른 잣대이므로 직접 비교할 수 없다(PAPER §2.2).
+#  그럼에도 '같은 잣대로 환산하면 얼마인가'는 독자가 반드시 묻는 질문이라 산출한다.
+#  ★비교불가 사유를 표와 함께 항상 출력한다 — 숫자만 떼어 인용되는 것을 막기 위함.
+LIT_REF = [
+    # (연구, 방식, Se, +P, F1, 데이터셋)   None = 미보고
+    ("de Chazal 2004",      "LDA, 형태+RR",        0.76, 0.39, None, "MIT-BIH DS2"),
+    ("Garcia 2017",         "VCG+PSO",             0.70, None, None, "MIT-BIH DS2"),
+    ("Sellami & Hwang 2019", "batch-weighted CNN", 0.82, None, None, "MIT-BIH DS2"),
+    ("Wang 2019",           "기호표현+multi-CNN",   None, None, 0.766, "MIT-BIH DS2"),
+    ("Adversarial CNN 2021", "적대적 학습",         0.788, 0.908, None, "MIT-BIH DS2"),
+]
+
+
+def literature_table(OUT, arm, show=True):
+    """비트풀링(micro) Se/+P/F1 — 문헌과 같은 잣대로 환산.
+
+    ⚠ 이 값을 문헌과 직접 비교하면 안 된다:
+      · 데이터셋이 다르다 (본 연구 SVDB 73환자 / 문헌 대다수 MIT-BIH DS2 22레코드)
+      · S 유병률이 다르다 (SVDB 6.61% / DS2 3.73%) → +P 는 유병률에 직접 묶인다
+      · 분할이 다르다 (환자 GroupKFold / de Chazal DS1-DS2 고정분할)
+      · MIT-BIH DS2 는 단일 레코드(#232)가 S 의 75.2% 를 차지해 micro 를 지배한다
+        (PAPER §5.2). SVDB 는 최다 14.9% 로 그 성질이 없다.
+      → 맥락 제공용이며, 본 연구의 결론은 동일 프로토콜 재구현(B0~B4C)에만 근거한다.
+    """
+    R = OUT["res"].get(arm)
+    if R is None or "pred" not in R:
+        print(f"  ⚠ {arm} 의 pred 가 없습니다 — 최신 코드로 재실행하세요."); return {}
+    y = np.asarray(OUT["y"]); v = np.asarray(R["pred"], bool)
+    out = {}
+    for cls, nm in [(1, "S(SVEB)"), (2, "V(VEB)")]:
+        yp = (y == cls)
+        if cls == 2:
+            # V 는 이 3-class 모델에서 별도 임계를 두지 않았다 → 산출 생략(오도 방지)
+            continue
+        tp = float((v & yp).sum()); fp = float((v & ~yp).sum()); fn = float((~v & yp).sum())
+        tn = float((~v & ~yp).sum())
+        se = tp / (tp + fn + 1e-9); pp = tp / (tp + fp + 1e-9)
+        sp = tn / (tn + fp + 1e-9); f1 = 2 * se * pp / (se + pp + 1e-9)
+        out[nm] = dict(Se=se, PP=pp, Sp=sp, F1=f1, TP=int(tp), FP=int(fp), FN=int(fn))
+    if not show:
+        return out
+    s = out["S(SVEB)"]
+    print(f"\n  [문헌 비교용 지표] {arm}  — 비트풀링(micro), S vs rest")
+    print(f"    Se(민감도) {s['Se']:.3f}   +P(정밀도) {s['PP']:.3f}   "
+          f"Sp(특이도) {s['Sp']:.3f}   F1 {s['F1']:.3f}")
+    print(f"    TP {s['TP']:,}  FP {s['FP']:,}  FN {s['FN']:,}")
+    print(f"\n    {'연구':<22}{'방식':<22}{'Se':>7}{'+P':>7}{'F1':>7}  데이터셋")
+    for nmr, how, se, pp, f1, ds in LIT_REF:
+        f = lambda x: f"{x:.3f}" if x is not None else "  —  "
+        print(f"    {nmr:<22}{how:<22}{f(se):>7}{f(pp):>7}{f(f1):>7}  {ds}")
+    print(f"    {'▶ 본 연구 ('+arm.split('.')[0]+')':<44}"
+          f"{s['Se']:>7.3f}{s['PP']:>7.3f}{s['F1']:>7.3f}  SVDB 73환자")
+    print(f"\n    ⚠ 직접 비교 불가: 데이터셋·유병률(SVDB 6.61% vs DS2 3.73%)·분할이 다르다.")
+    print(f"       특히 +P 는 유병률에 직접 묶이고, MIT-BIH DS2 는 #232 한 레코드가")
+    print(f"       S 의 75.2% 를 차지해 micro 를 지배한다(SVDB 최다 14.9%).")
+    print(f"       본 연구의 결론은 동일 프로토콜로 재구현한 B0~B4C 비교에만 근거한다.")
+    return out
+
+
+def burden_analysis(OUT, arm, bands=(1.0, 5.0, 10.0), show=True):
+    """PAC(SVEB) burden 추정 정확도 — 임상에서 실제로 쓰는 양.
+
+    ★왜 F1 과 별도로 봐야 하는가: 임상 판단은 '이 박이 PAC 인가'가 아니라
+      '이 환자의 PAC 부담이 몇 %인가'로 내려진다(PAC burden 은 심방세동 발생·
+      뇌졸중 위험의 예측인자로 쓰인다). burden 은 **개수의 비율**이라 위양성과
+      위음성이 서로 상쇄될 수 있다 — F1 이 중간이어도 burden 추정은 정확할 수 있고,
+      그 반대도 가능하다. 둘은 다른 질문이므로 따로 보고한다.
+
+    산출: 환자별 예측 burden vs 실제 burden 의 Pearson/Spearman r,
+          Bland-Altman(편향 + 일치한계), 임상 구간 일치율.
+    """
+    R = OUT["res"].get(arm)
+    if R is None or "pred" not in R:
+        print(f"  ⚠ {arm} 의 pred 가 없습니다 — 최신 코드로 재실행하세요."); return {}
+    y = np.asarray(OUT["y"]); pid = np.asarray(OUT["pid"]); v = np.asarray(R["pred"], bool)
+    ps = np.array([int(p) for p in np.unique(pid) if (y[pid == p] == 1).sum() > 0])
+    true_b = np.array([100.0 * (y[pid == p] == 1).mean() for p in ps])
+    pred_b = np.array([100.0 * v[pid == p].mean() for p in ps])
+    d = pred_b - true_b
+    bias = float(d.mean()); sd = float(d.std(ddof=1))
+    loa = (bias - 1.96 * sd, bias + 1.96 * sd)
+    pr = float(np.corrcoef(pred_b, true_b)[0, 1])
+    rk = lambda x: np.argsort(np.argsort(x))
+    sp = float(np.corrcoef(rk(pred_b), rk(true_b))[0, 1])
+    band = lambda x: np.digitize(x, bands)
+    agree = float((band(pred_b) == band(true_b)).mean())
+    out = dict(pid=ps, true=true_b, pred=pred_b, pearson=pr, spearman=sp,
+               bias=bias, sd=sd, loa=loa, band_agree=agree)
+    if not show:
+        return out
+    print(f"\n  [PAC burden 추정 정확도] {arm}   n={len(ps)}환자")
+    print(f"    실제 burden  중앙 {np.median(true_b):5.2f}%  범위 {true_b.min():.2f}~{true_b.max():.2f}%")
+    print(f"    예측 burden  중앙 {np.median(pred_b):5.2f}%  범위 {pred_b.min():.2f}~{pred_b.max():.2f}%")
+    print(f"    Pearson r = {pr:.3f}    Spearman ρ = {sp:.3f}")
+    print(f"    Bland-Altman: 편향 {bias:+.2f}%p,  일치한계 [{loa[0]:+.2f}, {loa[1]:+.2f}]%p")
+    print(f"      (편향>0 = 과대추정. 일치한계는 개별 환자 오차가 95% 들어가는 구간)")
+    lab = [f"<{bands[0]:g}%"] + [f"{bands[i]:g}~{bands[i+1]:g}%" for i in range(len(bands)-1)] \
+          + [f"≥{bands[-1]:g}%"]
+    print(f"\n    임상 구간 일치율 {100*agree:.1f}%  (구간: {', '.join(lab)})")
+    hdr = "실제 \\ 예측"
+    print("      " + hdr.ljust(10) + "".join(f"{l:>10}" for l in lab))
+    for i, l in enumerate(lab):
+        row = [int(((band(true_b) == i) & (band(pred_b) == j)).sum()) for j in range(len(lab))]
+        print(f"      {l:<10}" + "".join(f"{r:>10d}" for r in row))
+    print(f"\n    ※ burden 은 위양성·위음성이 상쇄될 수 있어 F1 과 다른 질문이다.")
+    print(f"       r 이 높고 편향이 작으면 '개별 비트는 틀려도 환자 부담 추정은 쓸 만하다'는 뜻.")
+    return out
+
+
 def compare_arms(OUT, a, b, strat="prev", nbin=3, show=True):
     """두 arm 을 **유병률 구간별로** 비교한다 — 평균만 보면 안 보이는 것을 드러낸다.
 
@@ -1309,6 +1425,32 @@ def selftest(train=True):
            "사상 학습 실패 시 전역 임계로 폴백")
         ok(_fit_adaptive(Sc[:200], Yc[:200], Pc[:200], _bt, tg) is None,
            "calib 환자가 부족하면 None(무리하게 적합하지 않음)")
+
+        # 문헌 비교표 / burden 분석 (합성 OUT 으로 계약 검증)
+        nP = 400
+        rr = np.random.RandomState(3)
+        yy = np.concatenate([np.where(rr.rand(nP) < pv, 1, 0) for pv in (0.005, 0.03, 0.12)])
+        pp = np.repeat([0, 1, 2], nP)
+        vv = (yy == 1)
+        flip = rr.rand(len(vv)) < 0.05                                  # 약간의 오류 주입
+        vv[flip] = ~vv[flip]
+        FAKE = dict(res={"R9.테스트": dict(pred=vv, fper=np.full(3, .8), macro=.8,
+                                          ci=(.7, .9), micro=.8, prec=.8, sen=.8)},
+                    y=yy, pid=pp)
+        lt = literature_table(FAKE, "R9.테스트", show=False)
+        ok("S(SVEB)" in lt and 0 <= lt["S(SVEB)"]["Se"] <= 1, "문헌 비교표: Se/+P/F1 산출")
+        ok("V(VEB)" not in lt, "V 는 별도 임계가 없어 산출에서 제외(오도 방지)")
+        ba = burden_analysis(FAKE, "R9.테스트", show=False)
+        ok(len(ba["true"]) == 3 and len(ba["pred"]) == 3, "burden: 환자별 실제/예측 산출")
+        ok(abs(ba["true"][2] - 12.0) < 4.0, f"burden 실제값 타당 ({ba['true'][2]:.1f}% ≈ 12%)")
+        ok(ba["loa"][0] <= ba["bias"] <= ba["loa"][1], "Bland-Altman 일치한계가 편향을 포함")
+        ok(-1 <= ba["pearson"] <= 1 and 0 <= ba["band_agree"] <= 1, "상관·구간일치율 범위")
+        # 완벽 예측이면 편향 0, r=1
+        FAKE["res"]["R9.테스트"]["pred"] = (yy == 1)
+        b2 = burden_analysis(FAKE, "R9.테스트", show=False)
+        ok(abs(b2["bias"]) < 1e-9 and abs(b2["pearson"] - 1) < 1e-9,
+           "완벽 예측 → 편향 0, Pearson r=1")
+        ok(b2["band_agree"] == 1.0, "완벽 예측 → 임상 구간 일치율 100%")
 
         # save_out/load_out 왕복 (런타임 복구용)
         import tempfile
