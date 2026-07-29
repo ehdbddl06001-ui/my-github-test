@@ -546,6 +546,7 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
       y5      AAMI 비트 클래스(감사된 DB만, 나머지는 -1)
     """
     AAMI5 = _need("AAMI5"); beat_only_rr = _need("beat_only_rr")
+    warn_if_gpu("RR 코퍼스 생성")
     T = []; PRE = []; POST = []; EDGE = []; PID = []; DB = []; RHY = []; Y5 = []
     rnames = {}
     p2rec = {}      # pid → "db:rec". ★2층-B(심방활동)가 신호를 다시 찾으려면 필수
@@ -829,6 +830,32 @@ def _reconstruct_pid_rec(d, dbs, dldir=None, verbose=True):
     return out
 
 
+def warn_if_gpu(task="이 작업"):
+    """★GPU 런타임이 붙어 있는데 GPU 를 쓰지 않는 작업이면 알려 준다.
+
+    왜 필요한가: Colab 의 컴퓨팅 단위는 **GPU 런타임이 붙어 있는 동안 시간으로**
+    소모된다 — 실제로 GPU 를 쓰는지와 무관하다. 그런데 코퍼스 생성·심방특징 추출은
+    numpy/scipy 전용이라 GPU 사용률이 0% 다. 즉 다운로드로 90분을 보내면 GPU 를
+    한 번도 안 쓰면서 90분치 단위가 빠진다. 실제로 그렇게 소모된 것을 사용자가
+    먼저 발견했다. 이 함수는 그 낭비를 시작 시점에 드러낸다.
+    """
+    try:
+        import torch
+        if not torch.cuda.is_available():
+            return False
+        name = torch.cuda.get_device_name(0)
+    except Exception:
+        return False
+    print(f"\n  ⚠ GPU({name})가 붙어 있는데 {task}은 **GPU 를 쓰지 않습니다**"
+          f"(numpy/scipy 전용).")
+    print(f"    Colab 컴퓨팅 단위는 GPU 런타임이 붙어 있는 시간으로 소모되므로,"
+          f" 이 작업은\n    런타임 유형을 **CPU 로 바꿔** 돌리는 것이 이득입니다"
+          f"(결과 파일은 동일).")
+    print(f"    GPU 는 bench_afib(학습)에서만 필요합니다 → 특징 추출을 CPU 로 끝낸 뒤"
+          f" GPU 로 전환.")
+    return True
+
+
 def _dl_rec(db, rec, dd):
     """레코드 하나의 .hea/.dat 를 내려받는다(이미 있으면 건너뜀). 스레드에서 호출 가능."""
     for ext in ("hea", "dat"):
@@ -881,6 +908,7 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         # 옛 코퍼스 — 매핑을 규칙으로 복원한다(735MB 를 다시 만들지 않기 위해).
         p2r = _reconstruct_pid_rec(d, dbs, dldir=dldir, verbose=verbose)
 
+    warn_if_gpu("심방특징 추출")
     parts = f"{_BASE}/atrial_parts"
     os.makedirs(parts, exist_ok=True)
     todo = []
