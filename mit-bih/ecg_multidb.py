@@ -887,6 +887,25 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
     if verbose:
         print(f"\n[심방특징] 대상 레코드 {len(targets)}  이미 계산됨 "
               f"{len(targets)-len(todo)}  남음 {len(todo)}")
+        # ★남은 다운로드 용량을 **미리** 보여 준다. 레코드 길이는 코퍼스의 t 에서
+        #   직접 구한다(하드코딩하면 DB 를 추가할 때 틀린 값이 남는다).
+        #   WFDB format 212 = 샘플당 1.5바이트, 2채널 가정.
+        per = {}
+        for p, db, rec in todo:
+            tt = t[pid == p]
+            if not len(tt):
+                continue
+            mb = float(tt.max()) * RRDB_SPEC[db]["fs"] * 2 * 1.5 / 1e6
+            a, b = per.get(db, (0, 0.0))
+            per[db] = (a + 1, b + mb)
+        if per:
+            print(f"  남은 다운로드(신호):")
+            for db, (k, mb) in sorted(per.items()):
+                print(f"    {db:<10} {k:>4}레코드  {mb/1000:>6.2f} GB  "
+                      f"(레코드당 ~{mb/max(k,1):.0f} MB)")
+            tot = sum(v[1] for v in per.values())
+            print(f"    합계 {tot/1000:.2f} GB  —  keep_sig={keep_sig} 이므로 디스크 최대"
+                  f" 점유는 레코드 1개분뿐")
         if len(todo) < len(targets):
             print(f"  ↻ 이어하기: 완료된 레코드는 건너뜁니다(조각 {parts})")
     if max_rec:
@@ -968,7 +987,7 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
                     pass
         if verbose:
             print(f"    {db}/{rec}: 창 {len(KEY)} 저장  "
-                  f"(이번 실행 {n_ok}/{len(todo)})")
+                  f"({n_ok}/{len(todo)}, 남음 {len(todo)-n_ok})", flush=True)
 
     # ── 조각 모으기 — 이번에 만든 것 + 예전 실행이 남긴 것 ────────────────────
     KEY, F = [], []
