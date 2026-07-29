@@ -392,21 +392,33 @@ def sigma_measured(OUT, verbose=True):
       σ 를 가정값으로 놔두면 MDE 가 가정이고, 그 위에서 내린 판정도 가정이 된다.
       팔마다 σ 가 다르므로 **가장 큰 σ**(보수적)를 쓴다.
     """
-    cls = OUT["classes"]; out = {}
+    cls = OUT["classes"]; out = {}; dead = set()
     arms = [a for a in OUT["res"] if not a.startswith("A0")]
     for c in cls:
-        sg, n = 0.0, 0
+        sg, n, mx = 0.0, 0, 0.0
         for a in arms:
             ids, v = _arm_vecs(OUT, a, c)
             if len(v) > 1:
                 sg = max(sg, float(v.std(ddof=1))); n = len(v)
+                mx = max(mx, float(np.nanmax(v)) if len(v) else 0.0)
+        # ★σ=0 을 '검정력 무한'으로 읽으면 안 된다. 전 팔이 그 리듬을 통째로 못
+        #   맞히면 환자별 F1 이 전부 0 이라 표준편차도 0 이 되고, MDE 0.000 이
+        #   찍힌다. 실제로 LODO 에서 AFL 이 그랬다. 이건 완벽한 검정력이 아니라
+        #   **측정 자체가 안 된 것**이다.
+        if sg == 0.0 and mx == 0.0 and n:
+            dead.add(c)
         out[c] = (sg, n, float(1.96 * sg / max(np.sqrt(n), 1)) if n else float("nan"))
     if verbose:
         print(f"\n  [검정력 갱신] 환자별 F1 의 **실측** σ (팔 중 최댓값 = 보수적)")
         print(f"  {'리듬':<8}{'환자':>6}{'σ(가정)':>10}{'σ(실측)':>10}{'MDE(실측)':>11}")
         for c, (sg, n, m) in out.items():
-            print(f"  {c:<8}{n:>6}{0.32:>10.3f}{sg:>10.3f}{m:>11.3f}")
+            flag = "  ✗측정 불가" if c in dead else ""
+            print(f"  {c:<8}{n:>6}{0.32:>10.3f}{sg:>10.3f}{m:>11.3f}{flag}")
         print(f"  ※ 실측 σ 가 가정보다 작으면 검정력이 생각보다 좋다는 뜻이다(반대면 나쁘다).")
+        for c in sorted(dead):
+            print(f"  ✗ {c}: 모든 팔의 환자별 F1 이 **전부 0** → σ=0 은 검정력이 완벽하다는"
+                  f" 뜻이 아니라\n     그 리듬이 한 번도 검출되지 않았다는 뜻이다."
+                  f" MDE 0.000 을 신뢰하지 말 것.")
     return out
 
 
@@ -423,10 +435,19 @@ def paired_win(OUT, new, base, cls="AFIB", B=5000, seed=0, verbose=True):
     lo, hi = np.percentile(bs, [2.5, 97.5])
     out = dict(delta=float(d.mean()), ci=(float(lo), float(hi)), n=n,
                p_one=float((bs <= 0).mean()))
+    # ★두 팔 모두 그 리듬을 **한 번도 못 맞힌** 경우 — Δ=0 은 "차이 없음"이 아니라
+    #   "정보 없음"이다. LODO 에서 AFL 이 전 팔 0.000 이 나왔는데 '미달(0 포함)'로
+    #   찍혀서, 검정이 성립한 것처럼 보였다. 이런 건 판정에서 빼야 한다.
+    dead = bool(np.all(va == 0) and np.all(vb == 0))
+    out["dead"] = dead
     if verbose:
-        v = "★유의(0 배제)" if lo > 0 else ("역행" if hi < 0 else "미달(0 포함)")
-        print(f"    [{cls}] {new} − {base}  Δ={out['delta']:+.4f} "
-              f"[{lo:+.4f},{hi:+.4f}]  n={n}  {v}")
+        if dead:
+            print(f"    [{cls}] {new} − {base}  ✗판정 불가 — 두 팔 모두 F1=0"
+                  f"(그 리듬을 아무도 검출 못 함). n={n}")
+        else:
+            v = "★유의(0 배제)" if lo > 0 else ("역행" if hi < 0 else "미달(0 포함)")
+            print(f"    [{cls}] {new} − {base}  Δ={out['delta']:+.4f} "
+                  f"[{lo:+.4f},{hi:+.4f}]  n={n}  {v}")
     return out
 
 

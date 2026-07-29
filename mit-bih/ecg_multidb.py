@@ -125,6 +125,18 @@ def cache_status(base=None, verbose=True):
             print(f"    ✔ {fn:<18} {os.path.getsize(p)/1e6:>8.1f} MB  {what}")
         else:
             print(f"    · {fn:<18} {'—':>8}     {what} (아직 없음)")
+    # ★심방특징 조각 — "런타임이 죽었는데 어디까지 됐나"에 대한 답
+    pr = f"{b}/atrial_parts"
+    if os.path.isdir(pr):
+        fs = [f for f in os.listdir(pr) if f.endswith(".npz")]
+        per = {}
+        for f in fs:
+            per[f.split("_", 1)[0]] = per.get(f.split("_", 1)[0], 0) + 1
+        mb = sum(os.path.getsize(f"{pr}/{f}") for f in fs) / 1e6
+        print(f"  ── 심방특징 조각(레코드별, 이어하기용) ──")
+        print(f"    ✔ 레코드 {len(fs)}개 계산 완료  {mb:.1f} MB  "
+              f"{ {k: v for k, v in sorted(per.items())} }")
+        print(f"    → build_atrial_feats(...) 를 다시 부르면 나머지만 계산합니다.")
     print("  ── 원본 주석 캐시(있으면 다운로드를 건너뜀) ──")
     root = f"{b}/raw_ann"
     if not os.path.isdir(root):
@@ -817,14 +829,30 @@ def _reconstruct_pid_rec(d, dbs, dldir=None, verbose=True):
     return out
 
 
+def _part_path(base, db, rec, W, stride):
+    """레코드 하나의 특징 조각 경로. ★Drive 에 둔다 — 런타임이 죽어도 살아남아야 한다."""
+    return f"{base}/atrial_parts/{db}_{str(rec).replace('/', '_')}_W{W}s{stride}.npz"
+
+
 def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
-                       stride=None, dldir=None, verbose=True):
+                       stride=None, dldir=None, verbose=True, resume=True,
+                       keep_sig=False, max_rec=None):
     """창별 심방활동 + P-QRS-T 관계 특징 → afib_atrial.npz (창당 19개 스칼라).
 
     ★corpus 의 pid_rec 매핑이 필요하다. 없으면(옛 코퍼스) 어느 pid 가 어느 레코드인지
       알 수 없어 신호를 못 붙인다 → build_rr_corpus 를 다시 돌려야 한다(주석은 캐시돼
       있으므로 몇 분이면 끝난다).
-    ★신호(.dat)는 /content 에 받고 레코드마다 버린다 — Drive 를 쓰지 않는다.
+
+    ★★이어하기(resume) — 왜 필요한가
+      ltafdb 는 84 레코드 × 24시간이라 전체가 수십 분 걸린다. 예전 구현은 **모든
+      결과를 메모리에만 쌓다가 마지막에 한 번 저장**했다. 그래서 ltafdb/113 쯤에서
+      런타임이 죽자 **그때까지 계산한 25,000 창이 통째로 사라졌다.** 오래 걸리는
+      작업이 중간 산출물을 안 남기는 것은 그 자체가 결함이다.
+      이제 레코드 하나가 끝날 때마다 Drive 에 조각으로 저장하고(<20KB), 다시 부르면
+      이미 있는 레코드를 건너뛴다. 런타임이 몇 번 죽어도 이어서 끝난다.
+
+    ★keep_sig=False: 계산이 끝난 신호 파일(.dat/.hea)을 지운다. 조각이 Drive 에
+      남으므로 신호를 남겨 둘 이유가 없고, ltafdb 전체는 ~3GB 라 /content 를 채운다.
     """
     _ensure = _need("_ensure"); _ensure("wfdb"); _ensure("scipy")
     import wfdb
@@ -842,15 +870,32 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         # 옛 코퍼스 — 매핑을 규칙으로 복원한다(735MB 를 다시 만들지 않기 위해).
         p2r = _reconstruct_pid_rec(d, dbs, dldir=dldir, verbose=verbose)
 
-    KEY = []; F = []
-    n_ok = n_bad = 0
+    parts = f"{_BASE}/atrial_parts"
+    os.makedirs(parts, exist_ok=True)
+    todo = []
     for p in np.unique(pid):
         tag = p2r.get(int(p))
         if tag is None:
             continue
         db, rec = tag.split(":", 1)
-        if db not in dbs:
-            continue
+        if db in dbs:
+            todo.append((int(p), db, rec))
+    targets = list(todo)                       # 조각 모을 때 쓸 전체 목록(자르지 않음)
+    if resume:
+        todo = [x for x in todo
+                if not os.path.exists(_part_path(_BASE, x[1], x[2], W, stride))]
+    if verbose:
+        print(f"\n[심방특징] 대상 레코드 {len(targets)}  이미 계산됨 "
+              f"{len(targets)-len(todo)}  남음 {len(todo)}")
+        if len(todo) < len(targets):
+            print(f"  ↻ 이어하기: 완료된 레코드는 건너뜁니다(조각 {parts})")
+    if max_rec:
+        todo = todo[:int(max_rec)]
+        print(f"  (max_rec={max_rec} → 이번 실행은 {len(todo)}개만 처리)")
+
+    n_ok = n_bad = 0
+    for p, db, rec in todo:
+        pp = _part_path(_BASE, db, rec, W, stride)
         idx = np.flatnonzero(pid == p)
         starts = win_starts(len(idx), W, stride)
         if not starts:
@@ -869,6 +914,12 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         fs = float(r.fs)
         sig = np.asarray(r.p_signal, "float32")
         nlead = min(2, sig.shape[1])
+        # ★리드를 **여기서 한 번** 잘라 둔다. 예전엔 창마다 sig[:, c] 를 다시
+        #   잘랐는데, 그건 비연속 슬라이스라 매번 복사본을 만든다. ltafdb 한
+        #   레코드가 2,200만 샘플이라 창 800개 × 리드 2개 = 복사 1,600회(회당
+        #   ~88MB)가 됐다. 런타임이 죽은 유력한 원인이다.
+        col = [np.ascontiguousarray(sig[:, c]) for c in range(nlead)]
+        del r                                  # p_signal 은 float64 라 원본이 4배 크다
         rpk = np.round(np.asarray(t[idx], np.float64) * fs).astype(int)
         rpk = np.clip(rpk, 0, len(sig) - 1)
         # 리드별로 (a) 심방 잔차 (b) 원신호 를 준비한다.
@@ -876,11 +927,12 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         #    f·F 파에는 이상적이지만 정상 P 를 함께 지운다. P·T 계측은 원신호에서.
         res = []
         for c in range(nlead):
-            rr_ = _atrial_residual(sig[:, c], rpk, fs)
+            rr_ = _atrial_residual(col[c], rpk, fs)
             res.append(_bandpass(rr_, fs) if rr_ is not None else None)
         if all(v is None for v in res):
             n_bad += 1; continue
         nf = len(ATR_NAMES)
+        KEY, F = [], []                       # ★레코드 하나치만 담는다(조각 저장)
         for s in starts:
             s2 = min(s + W - 1, len(rpk) - 1)
             i0, i1 = rpk[s], rpk[s2]
@@ -889,13 +941,13 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
             for c, rv in enumerate(res):
                 if rv is None:
                     continue
-                qa = float(np.median([np.ptp(sig[max(0, int(r) - int(0.05 * fs)):
-                                                 int(r) + int(0.05 * fs), c])
-                                      for r in rpk[s:s2 + 1:8]] or [1.0]))
+                qa = float(np.median([np.ptp(col[c][max(0, int(rp) - int(0.05 * fs)):
+                                                    int(rp) + int(0.05 * fs)])
+                                      for rp in rpk[s:s2 + 1:8]] or [1.0]))
                 fs_ = _spec_win_feats(rv, i0, i1, fs, med_rr, qa)
                 if fs_ is None:
                     continue
-                fp_ = _pqrst_win_feats(sig[:, c], rpk, s, s2, fs)
+                fp_ = _pqrst_win_feats(col[c], rpk, s, s2, fs)
                 fp_ = fp_ if fp_ is not None else [float("nan")] * len(PQ_NAMES)
                 fp_[-1] = float(c)
                 cand = fs_ + fp_
@@ -903,18 +955,43 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
                     best = cand
             KEY.append((int(p), int(s)))
             F.append(best if best is not None else [float("nan")] * nf)
+        # ★레코드가 끝나는 즉시 Drive 에 조각 저장 — 다음 줄에서 죽어도 안 잃는다
+        np.savez(pp, key=np.array(KEY, np.int64), feat=np.array(F, "float32"),
+                 names=np.array(ATR_NAMES), W=int(W), stride=int(stride))
         n_ok += 1
-        del sig, res
+        del sig, res, col
+        if not keep_sig:                       # 신호는 조각을 남긴 뒤엔 쓸모없다
+            for ext in ("hea", "dat"):
+                try:
+                    os.remove(f"{dd}/{rec}.{ext}")
+                except OSError:
+                    pass
         if verbose:
-            print(f"    {db}/{rec}: 창 {len(starts)}  (누적 {len(F):,})")
+            print(f"    {db}/{rec}: 창 {len(KEY)} 저장  "
+                  f"(이번 실행 {n_ok}/{len(todo)})")
+
+    # ── 조각 모으기 — 이번에 만든 것 + 예전 실행이 남긴 것 ────────────────────
+    KEY, F = [], []
+    miss = []
+    for p, db, rec in targets:                 # ★max_rec 로 잘리기 전의 전체 목록
+        pp = _part_path(_BASE, db, rec, W, stride)
+        if not os.path.exists(pp):
+            miss.append(f"{db}/{rec}"); continue
+        a = np.load(pp, allow_pickle=True)
+        KEY.append(a["key"]); F.append(a["feat"])
     if not F:
         raise RuntimeError("특징이 하나도 안 만들어졌습니다 — dbs 가 코퍼스에 있는지 확인.")
+    KEY = np.concatenate(KEY); F = np.concatenate(F)
     out = out or f"{_BASE}/afib_atrial.npz"
-    np.savez(out, key=np.array(KEY, np.int64), feat=np.array(F, "float32"),
+    np.savez(out, key=KEY.astype(np.int64), feat=F.astype("float32"),
              names=np.array(ATR_NAMES), W=int(W), stride=int(stride))
-    A = np.array(F, "float32")
+    A = F.astype("float32")
     print(f"\n✔ 저장 {out}  ({os.path.getsize(out)/1e6:.2f} MB)  "
-          f"창 {len(F):,}  레코드 {n_ok} 성공 / {n_bad} 실패")
+          f"창 {len(F):,}  레코드 {n_ok} 신규 / {len(targets)-len(todo)} 재사용 "
+          f"/ {n_bad} 실패")
+    if miss:
+        print(f"  ⚠ 조각 없는 레코드 {len(miss)}개: {miss[:6]}{' …' if len(miss) > 6 else ''}")
+        print(f"    → 같은 명령을 다시 부르면 이 레코드만 이어서 계산합니다.")
     bad = int(np.isnan(A[:, 0]).sum())
     print(f"  추출 실패 창 {bad:,} ({100*bad/len(A):.1f}%) → NaN 으로 남김(0 으로 위장 안 함)")
     print(f"  ★신호는 저장하지 않았다 — 레코드마다 계산 후 버렸다")
