@@ -1,26 +1,26 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-07-28",
+ "generated": "2026-07-29",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 516,
+  "total": 527,
   "byType": {
+   "usmle": 54,
    "kmle": 331,
-   "paper": 120,
+   "paper": 125,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 51,
+   "Cardiology": 52,
+   "Nephrology": 38,
    "Infectious Disease": 37,
-   "Nephrology": 37,
    "Pediatrics": 36,
-   "Obstetrics & Gynecology": 24,
-   "Neurology": 23,
-   "Psychiatry": 23,
+   "Obstetrics & Gynecology": 25,
+   "Neurology": 24,
+   "Psychiatry": 24,
    "Endocrinology": 22,
    "Gastroenterology": 21,
    "Pulmonology": 21,
@@ -30,18 +30,18 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 20,
    "Rheumatology": 20,
    "Hematology": 19,
-   "Surgery": 18,
-   "Pathology": 17,
+   "Pathology": 19,
+   "Surgery": 19,
    "Laboratory Medicine": 15,
-   "Hematology-Oncology": 13,
-   "Physiology": 6,
+   "Hematology-Oncology": 14,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,12 +51,126 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 390,
-   "medium": 126
+   "high": 396,
+   "medium": 131
   },
-  "tagCount": 1423
+  "tagCount": 1441
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Alcohol Withdrawal Delirium (Delirium Tremens) — Symptom-Triggered Benzodiazepine Therapy",
+   "tags": [
+    "alcohol-withdrawal",
+    "delirium-tremens",
+    "benzodiazepine",
+    "ciwa-ar",
+    "autonomic-instability"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · substance withdrawal)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 48 year old man with a 20 year history of heavy daily alcohol use is hospitalized for pancreatitis. On hospital day 3, he becomes agitated and diaphoretic, with a coarse hand tremor, and reports seeing insects crawling on the walls. He is",
+   "text": "Psychiatry Alcohol Withdrawal Delirium (Delirium Tremens) — Symptom-Triggered Benzodiazepine Therapy alcohol-withdrawal delirium-tremens benzodiazepine ciwa-ar autonomic-instability USMLE-style / MedKOS (psychiatry · substance withdrawal) A 48 year old man with a 20 year history of heavy daily alcohol use is hospitalized for pancreatitis. On hospital day 3, he becomes agitated and diaphoretic, with a coarse hand tremor, and reports seeing insects crawling on the walls. He is disoriented to place and time. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Immediate physical restraints alone, pending psychiatric evaluation B. Scheduled fixed dose haloperidol as monotherapy for agitation C. Symptom triggered benzodiazepine dosing guided by a standardized withdrawal scale (e.g., CIWA Ar) D. Initiation of disulfiram to reduce further alcohol seeking behavior E. Naltrexone administration to blunt autonomic symptoms and craving 장기간 과도한 음주 후 입원 3일째 발생한 초조·발한·거친 진전·환시(벌레가 기어다니는 것을 봄)·지남력장애와 자율신경 항진(빈맥·고혈압·발열)은 알코올금단섬망(진전섬망)에 합당하다. 표준 처치는 CIWA Ar 같은 표준화 척도로 증상을 평가해 그에 따라 용량을 조절하는 벤조디아제핀 증상유도 투여이며, 경련·섬망으로의 진행을 예방한다."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Status Epilepticus — Stepwise Pharmacologic Management",
+   "tags": [
+    "status-epilepticus",
+    "benzodiazepine",
+    "fosphenytoin",
+    "levetiracetam",
+    "seizure-algorithm"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · seizure emergency)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 34 year old man is brought to the emergency department after his girlfriend witnessed 8 minutes of continuous generalized tonic clonic convulsions with no return to baseline between episodes. On arrival, convulsions are ongoing. IV access",
+   "text": "Neurology Status Epilepticus — Stepwise Pharmacologic Management status-epilepticus benzodiazepine fosphenytoin levetiracetam seizure-algorithm USMLE-style / MedKOS (neurology · seizure emergency) A 34 year old man is brought to the emergency department after his girlfriend witnessed 8 minutes of continuous generalized tonic clonic convulsions with no return to baseline between episodes. On arrival, convulsions are ongoing. IV access is obtained, and he receives 4 mg IV lorazepam, followed by a second 4 mg dose 5 minutes later. Convulsions continue. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Administer a third dose of IV lorazepam B. Obtain an emergent MRI of the brain before further pharmacologic treatment C. Load with an intravenous second line antiseizure agent such as fosphenytoin D. Administer intramuscular midazolam as an alternative benzodiazepine route E. Begin a continuous propofol infusion with endotracheal intubation 충분한 용량의 벤조디아제핀(2회) 투여에도 경련이 지속되면 '난치성' 단계로 넘어가기 전, 표준 알고리즘상 다음 단계는 정맥용 2차 항경련제(포스페니토인·레베티라세탐·발프로산 중 하나) 부하이며, 마취제(프로포폴 등) 지속주입은 2차 약물에도 반응하지 않는 '초난치성' 단계에서 고려한다."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage — Uterine Atony First-Line Management",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "bimanual-massage",
+    "oxytocin"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 29 year old woman, G3P3, undergoes vaginal delivery after a prolonged second stage augmented with oxytocin. Ten minutes after delivery of the placenta, she has brisk vaginal bleeding. On examination, the uterine fundus is difficult to pal",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage — Uterine Atony First-Line Management postpartum-hemorrhage uterine-atony uterotonics bimanual-massage oxytocin USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 29 year old woman, G3P3, undergoes vaginal delivery after a prolonged second stage augmented with oxytocin. Ten minutes after delivery of the placenta, she has brisk vaginal bleeding. On examination, the uterine fundus is difficult to palpate and feels soft above the umbilicus, with no evidence of vaginal or cervical laceration. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Emergent hysterectomy to secure hemostasis B. Administration of tranexamic acid alone, with close observation C. Placement of an intrauterine balloon tamponade device as the initial intervention D. Bimanual uterine massage and compression while initiating additional uterotonic therapy E. Immediate exploratory laparotomy for bilateral uterine artery ligation 부드럽고 만져지지 않는 자궁저(자궁이완)와 파열 소견이 없는 상태에서의 다량 출혈은 자궁근이완이 원인인 산후출혈이다. 1차 처치는 양손 자궁마사지·압박과 함께 추가 자궁수축제(옥시토신 증량, 메칠에르고노빈, 카보프로스트, 미소프로스톨 등) 투여이며, 이에 반응하지 않을 때 풍선탐폰·수술적 처치로 단계적으로 올라간다."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Analgesic Nephropathy — Renal Papillary Necrosis",
+   "tags": [
+    "renal-papillary-necrosis",
+    "analgesic-nephropathy",
+    "nsaid",
+    "prostaglandin",
+    "vasa-recta"
+   ],
+   "source": "USMLE-style / MedKOS (renal pathology · chronic analgesic use)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 52 year old woman with a 15 year history of daily combination analgesic tablets (acetaminophen aspirin caffeine) for chronic low back pain presents with sudden colicky flank pain and gross hematuria. Imaging shows a sloughed renal papilla",
+   "text": "Pathology Analgesic Nephropathy — Renal Papillary Necrosis renal-papillary-necrosis analgesic-nephropathy nsaid prostaglandin vasa-recta USMLE-style / MedKOS (renal pathology · chronic analgesic use) A 52 year old woman with a 15 year history of daily combination analgesic tablets (acetaminophen aspirin caffeine) for chronic low back pain presents with sudden colicky flank pain and gross hematuria. Imaging shows a sloughed renal papilla producing a 'ring sign' on the collecting system. Vital signs and laboratory studies are shown. The renal injury in this patient is best explained by which of the following underlying pathophysiologic mechanisms? A. Ischemic necrosis of the vasa recta from analgesic induced loss of vasodilatory prostaglandins in the renal medulla B. Immune complex deposition in the papillary interstitium triggering complement mediated necrosis C. Crystal induced obstruction of the collecting ducts by monosodium urate deposits D. Direct viral cytopathic injury to the papillary transitional epithelium E. Amyloid fibril deposition within the vasa recta causing progressive microvascular occlusion 복합진통제(아스피린+아세트아미노펜 등)를 오래 사용하면 아스피린이 프로스타글란딘 합성을 억제해 저산소 상태인 신수질 유두부의 혈관확장 보상기전을 없애 허혈을 유발하고, 아세트아미노펜 대사산물은 유두 세관세포에 직접 독성을 준다. 두 기전이 겹쳐 유두 허혈·괴사(신유두괴사)가 발생한다."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism)",
+   "tags": [
+    "atrial-fibrillation",
+    "atrial-kick",
+    "frank-starling",
+    "preload",
+    "ecg"
+   ],
+   "source": "USMLE-style / MedKOS (cardiac physiology · arrhythmia)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atr",
+   "text": "Physiology Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism) atrial-fibrillation atrial-kick frank-starling preload ecg USMLE-style / MedKOS (cardiac physiology · arrhythmia) A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atrial contraction in this rhythm most directly produces which of the following physiologic consequences? A. Increased ventricular preload from prolonged diastolic filling time B. Reduced left ventricular end diastolic volume from loss of coordinated atrial contraction ('atrial kick') C. Increased stroke volume via an enhanced Frank Starling response D. Decreased myocardial oxygen demand due to the irregular ventricular rate E. Increased coronary perfusion pressure from variable diastolic intervals 심방세동에서는 심방의 조직화된 수축이 소실되어(무질서한 전기활동) 심실 이완기 말 충만의 마지막 능동 성분인 '심방 수축(atrial kick)'이 사라진다. 특히 심실 이완기능이 저하된 환자(고령·좌심실비대)에서는 이 능동 충만분의 소실이 좌심실 이완기말 용적을 유의하게 줄여, Frank Starling 기전에 따라 일회박출량이 감소한다."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Methotrexate Toxicity — Leucovorin (Folinic Acid) Rescue Mechanism",
+   "tags": [
+    "methotrexate",
+    "leucovorin",
+    "folinic-acid",
+    "dihydrofolate-reductase",
+    "antimetabolite"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antimetabolite rescue)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 9 year old girl with high grade osteosarcoma is receiving high dose methotrexate as part of chemotherapy. On day 3, she develops oral mucositis. Vital signs and laboratory studies are shown. She is started on IV hydration, urinary alkalin",
+   "text": "Pharmacology Methotrexate Toxicity — Leucovorin (Folinic Acid) Rescue Mechanism methotrexate leucovorin folinic-acid dihydrofolate-reductase antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 9 year old girl with high grade osteosarcoma is receiving high dose methotrexate as part of chemotherapy. On day 3, she develops oral mucositis. Vital signs and laboratory studies are shown. She is started on IV hydration, urinary alkalinization, and leucovorin, dosed according to her serum methotrexate level. Leucovorin reduces methotrexate induced cytotoxicity by which of the following mechanisms? A. Bypassing dihydrofolate reductase blockade by supplying reduced folate for thymidylate and purine synthesis B. Competitively displacing methotrexate from renal tubular transporters to enhance urinary excretion C. Inhibiting hepatic cytochrome P450 metabolism of methotrexate to lower circulating active drug levels D. Chelating methotrexate in the plasma to form an inactive, renally excreted complex E. Directly inhibiting dihydrofolate reductase to prevent further methotrexate binding at the active site 메토트렉세이트는 디하이드로엽산환원효소(DHFR)를 억제해 테트라하이드로엽산 생성을 막고, 그 결과 티미딜산·퓨린 합성이 차단되어 급속 증식 세포(골수·구강점막)가 손상된다. 류코보린(폴린산)은 이미 환원된 엽산 형태로, DHFR 단계를 우회해 세포에 직접 환원엽산을 공급함으로써 티미딜산·퓨린 합성을 정상화시킨다."
+  },
   {
    "id": "kmle-2026-0361",
    "type": "kmle",
@@ -664,6 +778,86 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0330.md",
    "snippet": "58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 ",
    "text": "Cardiology Atrial Flutter atrial-flutter narrow-qrs-tachycardia rate-control diltiazem palpitation KMLE 2026 / Claude Routine 58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 약 150회로 톱니파 양상을 보이는 심방조동이다. 혈역학적으로 안정하므로 즉각적 율동전환보다 방실결절 차단 약물로 심박수를 먼저 조절하는 것이 적절하다."
+  },
+  {
+   "id": "paper-2026-0125",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Gynecologic oncology",
+   "confidence": "medium",
+   "date": "2026-07-28",
+   "path": "content/papers/2026/2026-07-28_paper-2026-0125_pregnancies_in_gynecologic_oncologists_an_assessment_of_preg.md",
+   "snippet": "Title Pregnancies in gynecologic oncologists: An assessment of pregnancy policies and complications within a surgical subspecialty Authors Goon Kelsey C, Chor Julie, Mills Kathryn A Journal / DOI Gynecologic oncology · DOI: 10.1016/j.ygyno.",
+   "text": "Surgery scraped pubmed PubMed / Gynecologic oncology Title Pregnancies in gynecologic oncologists: An assessment of pregnancy policies and complications within a surgical subspecialty Authors Goon Kelsey C, Chor Julie, Mills Kathryn A Journal / DOI Gynecologic oncology · DOI: 10.1016/j.ygyno.2026.07.020 · PMID: 42520341 https://pubmed.ncbi.nlm.nih.gov/42520341/ Abstract OBJECTIVES: To describe pregnancy related experiences, complications and leave among gynecologic oncologists. Secondarily, to explore the institutional policy landscape pertaining to workload adjustments during pregnancy. METHODS: We sent an anonymous, elective survey to all active physicians within the Society of Gynecologic Oncology (SGO) registry from September to December 2024. The survey explored family planning goals, pregnancy outcomes, pregnancy complications, leave after pregnancy, and work hours during pregnancy. Respondents were allowed but not required to offer open ended comments, which were thematically analyzed. RESULTS: 276 respondents reported on 480 pregnancies, 385 of which were carried by the respondent. Of live births carried by gynecologic oncologists, more than half experienced a major complication and 1 in 4 delivered preterm. Working more than 60 h per week in the third trimester (66% vs 50%, p = 0.02), taking more than seven nights of call per month in the third trimester (45% vs 31%, p = 0.04) and experiencing a major complication of pregnancy (87% vs 38%, p < 0.001) were associated with reporting that workload negatively impacted a pregnancy. Very few pregnancies involved work hour reductions or institutional policies for work hour reduction. A majority of respondents reported delaying childbearing for training; most (76%) regretted this delay. CONCLUSIONS: Gynecologic oncologists reported high rates of pregnancy complications, most strikingly a preterm delivery rate of 25%. Very few adjusted work hours in pregnancy or had access to institutional policies for work hour reduction. This study provides insight into the experiences of pregnant gynecologic oncologists and highlights a need for explicit policies to support pregnancy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0124",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetes care",
+   "confidence": "medium",
+   "date": "2026-07-28",
+   "path": "content/papers/2026/2026-07-28_paper-2026-0124_fulminant_secondary_hlh_following_ebv_reactivation_in_an_adu.md",
+   "snippet": "Title Fulminant Secondary HLH Following EBV Reactivation in an Adult With Trisomy 21 After Teplizumab Treatment for Stage 2 Type 1 Diabetes Authors Klemann Christian, Kordonouri Olga Journal / DOI Diabetes care · DOI: 10.2337/dc26 0543 · PM",
+   "text": "Pathology scraped pubmed PubMed / Diabetes care Title Fulminant Secondary HLH Following EBV Reactivation in an Adult With Trisomy 21 After Teplizumab Treatment for Stage 2 Type 1 Diabetes Authors Klemann Christian, Kordonouri Olga Journal / DOI Diabetes care · DOI: 10.2337/dc26 0543 · PMID: 42520060 https://pubmed.ncbi.nlm.nih.gov/42520060/ Abstract OBJECTIVE: Teplizumab delays progression from stage 2 to stage 3 type 1 diabetes (T1D). Epstein Barr virus (EBV) reactivation after teplizumab is usually transient and mild. We report EBV reactivation associated secondary hemophagocytic lymphohistiocytosis (HLH) in an adult with trisomy 21 who was treated with teplizumab. RESEARCH METHODS AND DESIGN: We describe the clinical course, virologic testing, histopathology, treatment, and follow up of a 44 year old man with trisomy 21 and stage 2 T1D after a 14 day teplizumab course. RESULTS: Six days after completion of the 14 day teplizumab course, he developed respiratory, hepatic, and renal failure. EBV PCR peaked at 2,000,000 copies/mL; serology confirmed reactivation. Lymph node biopsy showed EBV associated lymphoproliferation, and criteria for secondary HLH were fulfilled (HScore 238). Dexamethasone and four weekly rituximab doses were associated with clinical, biochemical, and virologic recovery. At 12 months, he remained clinically stable with stage 2 T1D and no insulin treatment. CONCLUSIONS: This case documents EBV reactivation associated secondary HLH after teplizumab treatment in a patient with trisomy 21. Causality cannot be established, and the absence of pretreatment EBV PCR limits assessment of whether preexisting EBV DNAemia at treatment initiation contributed to the poor outcome. The observation raises a plausible but unproven host virus drug interaction and supports early EBV PCR and HLH evaluation after severe inflammatory deterioration after teplizumab. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0123",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Hematology, transfusion and cell therapy",
+   "confidence": "medium",
+   "date": "2026-07-28",
+   "path": "content/papers/2026/2026-07-28_paper-2026-0123_decoding_bcr_abl1_kinase_domain_mutations_in_chronic_myeloid.md",
+   "snippet": "Title Decoding BCR::ABL1 kinase domain mutations in chronic myeloid leukemia: Implications for tyrosine kinase inhibitor resistance in a South Asian population Authors Sharif Fatima, Mahmood Rafia, Roghani Maimoona, Khan Sikandar Hayat, Kha",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Hematology, transfusion and cell therapy Title Decoding BCR::ABL1 kinase domain mutations in chronic myeloid leukemia: Implications for tyrosine kinase inhibitor resistance in a South Asian population Authors Sharif Fatima, Mahmood Rafia, Roghani Maimoona, Khan Sikandar Hayat, Khan Ibrahim Journal / DOI Hematology, transfusion and cell therapy · DOI: 10.1016/j.htct.2026.106502 · PMID: 42520346 https://pubmed.ncbi.nlm.nih.gov/42520346/ Abstract INTRODUCTION: Treatment resistance has become increasingly common in patients with chronic myeloid leukemia. Lack of response to tyrosine kinase inhibitors is associated with mutations in the BCR::ABL1 kinase domain. This study aims to report the frequency and types of BCR::ABL1 kinase domain mutations in Pakistani chronic myeloid leukemia patients. MATERIALS AND METHODS: This prospective study was conducted from January to June 2025 at the Armed Forces Institute of Pathology in Pakistan. It included adult patients with chronic myeloid leukemia who were non responsive to treatment based on molecular, hematological, and clinical criteria. Allele specific real time polymerase chain reaction was performed to detect four kinase domain mutations: T315I, E255V, E255K and Y253H. Data was analyzed using IBM SPSS v23. RESULTS: The mean age of the 133 treatment resistant chronic myeloid leukemia patients included in the study was 47.3 ± 13.6 years. The majority of cases (62.4%) were male and 79 (59.4%) patients were currently on imatinib therapy. The median BCR::ABL1 level, as measured by quantitative polymerase chain reaction, was 30.73% (range: 1.17 100%) International Scale. BCR::ABL1 kinase domain mutations were detected in 57 (42.9%) patients. E255K was the most common mutation detected in 45 (33.8%) cases, followed by E255V in 11 (8.3%), T315I in 1 (0.8%) and the Y253H mutation in 1 (0.8%) patient. The presence of kinase domain mutations was significantly associated with higher total leucocyte count (p = 0.002), while the E255K mutation was significantly associated with blast crisis (p = 0.048). CONCLUSION: This study revealed a high prevalence of BCR::ABL1 kinase domain mutations in Pakistani chronic myeloid leukemia patients. E255K, the most frequently detected mutation, was significantly associated with blast crisis. These findings underscore the significance of molecular testing for personalized treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0122",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Animal models and experimental medicine",
+   "confidence": "medium",
+   "date": "2026-07-28",
+   "path": "content/papers/2026/2026-07-28_paper-2026-0122_analysis_of_energy_expenditure_and_behavioral_characteristic.md",
+   "snippet": "Title Analysis of energy expenditure and behavioral characteristics in different mouse strains under normal and disease conditions Authors Zeng Jiacheng, Ji Yuanjun, Zou Yan, Tan Jing, Wu Teng, Shen Conghui, Huang Tongsheng, Xiong Shijie, e",
+   "text": "Nephrology scraped pubmed PubMed / Animal models and experimental medicine Title Analysis of energy expenditure and behavioral characteristics in different mouse strains under normal and disease conditions Authors Zeng Jiacheng, Ji Yuanjun, Zou Yan, Tan Jing, Wu Teng, Shen Conghui, Huang Tongsheng, Xiong Shijie, et al. Journal / DOI Animal models and experimental medicine · DOI: 10.1002/ame2.70268 · PMID: 42520300 https://pubmed.ncbi.nlm.nih.gov/42520300/ Abstract BACKGROUND: Metabolic and behavioral traits in mice exhibit substantial variability across strains, ages, and disease states, which can confound preclinical study outcomes. However, systematic characterization of these parameters (e.g., energy metabolism, activity, and feeding behavior) across diverse experimental conditions remains limited. METHODS: Core metabolic and behavioral parameters were assessed via metabolic cages in five 8 week old mouse strains (ICR, C57BL/6J, BALB/c, BALB/c nude, NOD SCID), six C57BL/6J age groups (3 weeks to 18 months), and four mouse disease models (LPS induced pneumonia, chronic kidney disease, acute myocardial infarction, and type 1 diabetes). Data were stratified by light/dark cycles and statistically compared. RESULTS: Herein, metabolic and behavioral phenotypes of mice were systematically characterized across different strains, ages, and four disease models (three organ specific, one systemic). Distinct strain and age related differences in basal metabolism, activity, and energy expenditure were observed. Specifically, ICR mice displayed higher basal aerobic metabolism, whereas C57BL/6J mice exhibited greater locomotor activity; metabolism and energy balance also underwent marked shifts during development, pregnancy, and aging. Furthermore, all disease models presented unique metabolic rearrangements: LPS induced acute pneumonia reduced aerobic metabolism and locomotor activity; CKD caused hypometabolism, polydipsia, and a substrate shift to carbohydrate oxidation; AMI increased respiratory exchange ratio (RER) and water intake; and T1DM induced polyphagia and polydipsia, with normal metabolism but impaired energy utilization. CONCLUSIONS: Mouse metabolic and behavioral phenotypes are highly dependent on strain, age, and disease state. These findings highlight the need to standardize experimental conditions (e.g., age, strain, disease state) and account for baseline variability when designing preclinical studies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0121",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Exercise and sport sciences reviews",
+   "confidence": "medium",
+   "date": "2026-07-28",
+   "path": "content/papers/2026/2026-07-28_paper-2026-0121_exercise_for_atrial_fibrillation_unmasking_comorbidities_and.md",
+   "snippet": "Title Exercise for Atrial Fibrillation: Unmasking Comorbidities and Improving Treatment Authors Dziano Jenelle K, Ariyaratnam Jonathan P, Middeldorp Melissa E, Sanders Prashanthan, Elliott Adrian D Journal / DOI Exercise and sport sciences ",
+   "text": "Cardiology scraped pubmed PubMed / Exercise and sport sciences reviews Title Exercise for Atrial Fibrillation: Unmasking Comorbidities and Improving Treatment Authors Dziano Jenelle K, Ariyaratnam Jonathan P, Middeldorp Melissa E, Sanders Prashanthan, Elliott Adrian D Journal / DOI Exercise and sport sciences reviews · DOI: 10.1249/JES.0000000000000391 · PMID: 42520286 https://pubmed.ncbi.nlm.nih.gov/42520286/ Abstract Atrial fibrillation is associated with significant symptoms, comorbidities and shared pathophysiological features with heart failure with preserved ejection fraction (HFpEF). We propose that exercise testing, including cardiopulmonary exercise testing (CPET) and exercise cardiac imaging, can unmask subclinical cardiac dysfunction, guide diagnosis and inform intervention. Exercise training has a key role in AF management, improving arrhythmia burden, atrial remodelling and quality of life. Summary: Exercise testing identifies additional cardiac limitations in atrial fibrillation; exercise intervention reduces arrhythmia episodes and improves quality of life. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0120",
