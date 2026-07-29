@@ -829,6 +829,17 @@ def _reconstruct_pid_rec(d, dbs, dldir=None, verbose=True):
     return out
 
 
+def _dl_rec(db, rec, dd):
+    """레코드 하나의 .hea/.dat 를 내려받는다(이미 있으면 건너뜀). 스레드에서 호출 가능."""
+    for ext in ("hea", "dat"):
+        fp = f"{dd}/{rec}.{ext}"
+        if os.path.exists(fp) and os.path.getsize(fp) > 0:
+            continue
+        import wfdb                            # 받을 것이 있을 때만 필요하다
+        wfdb.dl_files(db, dd, [f"{rec}.{ext}"])
+    return True
+
+
 def _part_path(base, db, rec, W, stride):
     """레코드 하나의 특징 조각 경로. ★Drive 에 둔다 — 런타임이 죽어도 살아남아야 한다."""
     return f"{base}/atrial_parts/{db}_{str(rec).replace('/', '_')}_W{W}s{stride}.npz"
@@ -836,7 +847,7 @@ def _part_path(base, db, rec, W, stride):
 
 def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
                        stride=None, dldir=None, verbose=True, resume=True,
-                       keep_sig=False, max_rec=None):
+                       keep_sig=False, max_rec=None, prefetch=3):
     """창별 심방활동 + P-QRS-T 관계 특징 → afib_atrial.npz (창당 19개 스칼라).
 
     ★corpus 의 pid_rec 매핑이 필요하다. 없으면(옛 코퍼스) 어느 pid 가 어느 레코드인지
@@ -912,21 +923,48 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         todo = todo[:int(max_rec)]
         print(f"  (max_rec={max_rec} → 이번 실행은 {len(todo)}개만 처리)")
 
+    # ── 다운로드 선행 인출(prefetch) ──────────────────────────────────────────
+    #  ★실측: ltafdb 레코드 1개의 **계산**은 31초인데 실제로는 ~6분이 걸린다.
+    #    차이(~5.5분)는 전부 PhysioNet 다운로드다(34MB ≈ 100KB/s). 즉 이 작업은
+    #    CPU 병목이 아니라 **네트워크 병목**이고, 계산을 최적화해도 6분은 안 줄어든다.
+    #    그래서 다음 레코드들을 미리 받아 둔다 — 계산과 다운로드가 겹치고,
+    #    동시 연결이 여러 개면 단일 연결 속도 제한도 우회된다.
+    ex = None
+    if prefetch and prefetch > 1 and len(todo) > 1:
+        from concurrent.futures import ThreadPoolExecutor
+        ex = ThreadPoolExecutor(max_workers=int(prefetch))
+        if verbose:
+            print(f"  ⇉ 다운로드 선행 인출 {prefetch}개 동시 "
+                  f"(디스크 최대 ~{34*prefetch}MB 점유)")
+    fut = {}
+
+    def _submit(i):
+        if ex is None or not (0 <= i < len(todo)):
+            return
+        _, db_, rec_ = todo[i]
+        dd_ = _cache_dir(db_, ann_only=False, dldir=dldir)
+        os.makedirs(dd_, exist_ok=True)
+        fut[i] = ex.submit(_dl_rec, db_, rec_, dd_)
+
+    for i in range(min(int(prefetch or 1), len(todo))):
+        _submit(i)
+
     n_ok = n_bad = 0
-    for p, db, rec in todo:
+    for i, (p, db, rec) in enumerate(todo):
+        _submit(i + int(prefetch or 1))        # 계산하는 동안 뒤쪽을 받아 둔다
         pp = _part_path(_BASE, db, rec, W, stride)
         idx = np.flatnonzero(pid == p)
         starts = win_starts(len(idx), W, stride)
         if not starts:
+            fut.pop(i, None)                   # 선행 인출을 버려도 파일은 캐시에 남는다
             continue
         dd = _cache_dir(db, ann_only=False, dldir=dldir)
         os.makedirs(dd, exist_ok=True)
         try:
-            for ext in ("hea", "dat"):
-                fp = f"{dd}/{rec}.{ext}"
-                if os.path.exists(fp) and os.path.getsize(fp) > 0:
-                    continue
-                wfdb.dl_files(db, dd, [f"{rec}.{ext}"])
+            if i in fut:
+                fut.pop(i).result()            # 미리 받던 것이 끝나길 기다림
+            else:
+                _dl_rec(db, rec, dd)
             r = wfdb.rdrecord(f"{dd}/{rec}")
         except Exception as e:
             print(f"  ✗ {db}/{rec}: 신호 로드 실패 {type(e).__name__}"); n_bad += 1; continue
@@ -988,6 +1026,11 @@ def build_atrial_feats(dbs=("afdb", "mitdb"), corpus=None, out=None, W=128,
         if verbose:
             print(f"    {db}/{rec}: 창 {len(KEY)} 저장  "
                   f"({n_ok}/{len(todo)}, 남음 {len(todo)-n_ok})", flush=True)
+
+    if ex is not None:
+        for f in fut.values():                 # 남은 선행 인출 취소(다음 실행이 다시 받음)
+            f.cancel()
+        ex.shutdown(wait=False)
 
     # ── 조각 모으기 — 이번에 만든 것 + 예전 실행이 남긴 것 ────────────────────
     KEY, F = [], []
