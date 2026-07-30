@@ -364,6 +364,90 @@ def sync(files=None, branch=None, base=None, load=True, chain=False, verbose=Tru
     return got
 
 
+def mem_report(top=12, verbose=True):
+    """★지금 RAM 을 뭐가 먹고 있는지 — "왜 런타임이 죽었나" 에 대한 답.
+
+    Colab 무료 티어는 약 12.7GB 다. 이 프로젝트에서 실제로 큰 것은:
+      · afib_rr.npz 의 db 열   12M개 문자열 배열 = **386MB** (한 번 복사하면 두 배)
+      · w["seq"]               창 80,602 × 4 × 128 float32 = 165MB
+      · torch 사본             _fit_win 의 X = torch.tensor(w["seq"]) = +165MB
+    여기에 `np.array(list(map(str, dbv)))` 같은 한 줄이 12M개 파이썬 str 객체
+    (≈700MB)를 만들면 순식간에 넘친다 — 실제로 그렇게 죽었다.
+    """
+    g = globals()
+    import gc
+    rows = []
+    for k, v in list(g.items()):
+        if k.startswith("_") or k in ("In", "Out"):
+            continue
+        try:
+            if isinstance(v, dict):
+                nb = sum(getattr(x, "nbytes", 0) for x in v.values()
+                         if hasattr(x, "nbytes"))
+                if nb:
+                    rows.append((k, nb, f"dict({len(v)}키)"))
+            elif hasattr(v, "nbytes"):
+                rows.append((k, int(v.nbytes), type(v).__name__))
+        except Exception:
+            pass
+    rows.sort(key=lambda r: -r[1])
+    tot_os = None
+    try:
+        import psutil
+        pm = psutil.Process().memory_info().rss / 1e9
+        vm = psutil.virtual_memory()
+        tot_os = (pm, vm.total / 1e9, vm.available / 1e9)
+    except Exception:
+        pass
+    if verbose:
+        print("\n=== RAM 현황 ===")
+        if tot_os:
+            print(f"  이 프로세스 {tot_os[0]:.2f} GB / 전체 {tot_os[1]:.1f} GB "
+                  f"(남음 {tot_os[2]:.2f} GB)")
+        else:
+            print("  (psutil 없음 — 전체 사용량은 못 봄. pip install psutil)")
+        print(f"  {'이름':<22}{'크기':>10}   종류")
+        for k, nb, t in rows[:top]:
+            print(f"  {k:<22}{nb/1e6:>9.1f}MB   {t}")
+        s = sum(r[1] for r in rows)
+        print(f"  {'(합계)':<22}{s/1e6:>9.1f}MB  ← globals 의 배열만. "
+              f"torch 사본·순간할당은 안 잡힌다")
+        print(f"\n  ▸ 정리:  free_big('d')  또는  free_big('d','w','OUT')")
+        print(f"  ▸ 코퍼스는 파일에 있으니 필요할 때 다시 load_rr() 하면 된다")
+    gc.collect()
+    return rows
+
+
+def free_big(*names, verbose=True):
+    """큰 객체를 globals 에서 지우고 gc 를 돌린다.
+
+    ★del 만으로는 안 줄어드는 경우가 있다: 노트북의 `Out[...]`·`_`·`__` 가 옛 값을
+      붙잡고 있으면 참조가 남는다. 그래서 그것들도 함께 비운다.
+    """
+    import gc
+    g = globals()
+    freed = 0
+    for n in names:
+        v = g.pop(n, None)
+        if v is not None:
+            freed += (sum(getattr(x, "nbytes", 0) for x in v.values()
+                          if hasattr(x, "nbytes")) if isinstance(v, dict)
+                      else getattr(v, "nbytes", 0))
+    for n in ("_", "__", "___"):
+        if n in g:
+            g[n] = None
+    try:                                    # IPython 의 출력 캐시가 최대 용의자다
+        ip = g.get("get_ipython", lambda: None)()
+        if ip is not None:
+            ip.user_ns.get("Out", {}).clear()
+    except Exception:
+        pass
+    gc.collect()
+    if verbose:
+        print(f"  ✔ {', '.join(names)} 해제 (배열 {freed/1e6:.0f}MB) + 출력캐시 비움")
+    return freed
+
+
 def which():
     """지금 globals 에 무엇이 로드돼 있는지 점검(NameError 원인 추적용)."""
     g = globals()

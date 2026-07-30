@@ -175,7 +175,9 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
     pid, rhy = d["pid"], d["rhythm"]
     pre, dbv = d["pre_rr"], d["db"]
     if dbs is not None:
-        keep_db = np.isin(np.array(list(map(str, dbv))), list(dbs))
+        # ★numpy 문자열 배열은 그대로 비교된다. list(map(str, dbv)) 를 쓰면
+        #   12M개 파이썬 str 객체(≈700MB) + 386MB 배열을 새로 만든다 → OOM.
+        keep_db = np.isin(dbv, np.array(list(dbs), dtype=dbv.dtype))
         if not keep_db.any():
             raise RuntimeError(f"dbs={dbs} 에 해당하는 비트가 없습니다 — "
                                f"코퍼스의 DB: {sorted(set(map(str, dbv)))}")
@@ -183,6 +185,9 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
         if verbose:
             print(f"  [DB 필터] {list(dbs)} → 비트 {int(keep_db.sum()):,} / "
                   f"{len(keep_db):,}  환자 {len(np.unique(pid))}")
+    # ★리듬코드 → 클래스인덱스 룩업표. 환자마다 파이썬 내포로 만들면
+    #   157번 × 수만 개 객체가 된다(느리고 메모리를 튀게 한다).
+    code2y = np.array([want.get(str(nm), -1) for nm in names], np.int64)
     SEQ = []; AUX = []; Y = []; PID = []; DB = []; DUR = []; NOV = []; T0 = []; PUR = []
     KEY = []                                   # (pid, 창 시작 비트인덱스) — 심방특징 결합키
     n_trans = 0
@@ -192,7 +197,7 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
             continue
         rr = np.asarray(pre[idx], np.float64) / FS_RR
         C, med, mad, valid = _rec_channels(rr)
-        lab = np.array([want.get(names[r], -1) for r in rhy[idx]])
+        lab = code2y[rhy[idx]]
         tt = np.concatenate([[0.0], np.cumsum(rr[1:])])
         db0 = str(dbv[idx[0]])
         for s in win_starts(len(idx), W, stride):
@@ -234,20 +239,27 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
         #  보면 "AFL 데이터가 원래 없다"로 읽히지만, 사실은 **있는 데이터를 창 정의가
         #  버리고 있는 것**이다. 원인이 다르면 대책도 다르므로(수집 vs W·purity 조정)
         #  반드시 구분해서 보여 준다.
-        dbs_all = sorted(set(map(str, dbv)))
+        # ★문자열 배열을 코드로 한 번만 바꿔 둔다. 아래 표를 만들면서
+        #   np.array(list(map(str, dbv))) 를 리듬×DB 마다 다시 만들었더니
+        #   한 번에 ~1.1GB 씩 반복 할당돼 런타임이 RAM 부족으로 죽었다.
+        dbu, dbi = np.unique(dbv, return_inverse=True)
+        dbs_all = [str(x) for x in dbu]
+        nm2code = {str(nm): i for i, nm in enumerate(names)}
         print(f"\n  [창 생성 효율] 비트는 있는데 창이 안 생기는 리듬을 찾는다")
         print(f"  {'리듬':<8}{'비트':>11}{'최대창':>8}{'실제창':>8}{'효율':>7}   DB별 비트")
         for i, nm in enumerate(classes):
-            bm = np.array([names[r] == nm for r in rhy])
+            code = nm2code.get(nm)
+            if code is None:
+                continue
+            bm = rhy == code                   # 벡터 비교 — 12M 파이썬 객체 안 만든다
             nb = int(bm.sum())
             if not nb:
                 continue
             cap = nb // W
             got = int((w["y"] == i).sum())
             eff = got / cap if cap else float("nan")
-            per = "  ".join(f"{db}:{int((bm & (np.array(list(map(str, dbv))) == db)).sum()):,}"
-                            for db in dbs_all
-                            if (bm & (np.array(list(map(str, dbv))) == db)).any())
+            cnt_db = np.bincount(dbi[bm], minlength=len(dbu))
+            per = "  ".join(f"{d}:{int(c):,}" for d, c in zip(dbs_all, cnt_db) if c)
             print(f"  {nm:<8}{nb:>11,}{cap:>8,}{got:>8,}{eff:>6.0%}   {per}")
             if cap >= 20 and eff < 0.25:
                 print(f"    ✗ {nm}: 비트로는 창 {cap:,}개가 가능한데 {got:,}개만 생겼다"

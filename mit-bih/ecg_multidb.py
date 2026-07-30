@@ -142,20 +142,29 @@ def rate_correct_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
     K = {(int(p), int(s)): i for i, (p, s) in enumerate(a["key"])}
     rn = [str(x) for x in d["rhythm_names"]]
     pid, rhy, pre = d["pid"], d["rhythm"], d["pre_rr"]
+    # ★한 번 정렬해 환자 경계를 구한다. for p: flatnonzero(pid == p) 는 환자마다
+    #   12M 원소를 전부 훑어(불리언 12MB 할당) 157번 반복한다 — 느리고 RAM 을 튀게
+    #   한다. 코퍼스는 이미 (환자, 시간) 순이므로 경계만 찾으면 슬라이스로 끝난다.
+    order = np.argsort(pid, kind="stable")
+    ps_sorted = pid[order]
+    bnd = np.flatnonzero(np.diff(ps_sorted)) + 1
+    groups = list(zip(np.r_[0, bnd], np.r_[bnd, len(ps_sorted)]))
+    FEAT = a["feat"]
     lab, feat, who, rrw = [], [], [], []
-    for p in np.unique(pid):
-        idx = np.flatnonzero(pid == p)
+    for g0, g1 in groups:
+        idx = order[g0:g1]
+        p = int(ps_sorted[g0])
+        rhy_p = rhy[idx]; pre_p = pre[idx]
         for s in win_starts(len(idx), W, stride):
-            j = K.get((int(p), int(s)))
+            j = K.get((p, int(s)))
             if j is None:
                 continue
-            wv = rhy[idx][s:s + W]
-            u, c = np.unique(wv, return_counts=True)
+            u, c = np.unique(rhy_p[s:s + W], return_counts=True)
             k = int(np.argmax(c))
             if c[k] / W < 0.90:
                 continue
-            lab.append(rn[u[k]]); feat.append(a["feat"][j]); who.append(int(p))
-            rrw.append(float(np.median(pre[idx][s:s + W])) / 360.0)
+            lab.append(rn[u[k]]); feat.append(FEAT[j]); who.append(p)
+            rrw.append(float(np.median(pre_p[s:s + W])) / 360.0)
     lab = np.array(lab); feat = np.array(feat); who = np.array(who)
     rrw = np.array(rrw)
     from scipy.stats import spearmanr
