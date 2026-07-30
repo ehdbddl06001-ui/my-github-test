@@ -437,6 +437,80 @@ def ectopy_veto(OUT, w, arm="A1.RR산포", cls="AFIB", feat="s_frac", thr=0.0,
                 d_npred=int(rows[1][1]["n_pred"]) - int(rows[0][1]["n_pred"]))
 
 
+def veto_noise_sweep(OUT, w, arm="A1.RR산포", cls="AFIB", W=None,
+                     ses=(1.0, 0.9, 0.8, 0.7, 0.5, 0.3), fprs=(0.0, 0.001, 0.005, 0.02),
+                     seed=0, verbose=True):
+    """★1층 모델을 만들기 **전에**: 비트 분류가 얼마나 정확해야 이 규칙이 살아남나.
+
+    왜 이것부터 하는가: §44.5 의 규칙은 `s_frac` 이 **주석**에서 온다. 그것을 1층
+    모델의 **예측**으로 바꾸려면 (a) 신호 3.6GB 다운로드 (b) 1층 비트분류기 학습·저장
+    (지금 저장된 모델이 없다 — torch.save 가 코드에 없다) 가 필요하다.
+    그런데 **모델이 얼마나 정확해야 하는지**는 주석을 일부러 망가뜨려 보면 지금
+    알 수 있다. 20% 오류에서 이미 무너지면 어떤 1층 모델도 못 살린다 →
+    3.6GB 와 학습을 쓰기 전에 답이 나온다(§23·§38 과 같은 순서).
+
+    모형: 창의 참 S 비트 수 n_S, 그 외 n_O 에 대해
+      검출된 S = Binomial(n_S, se) + Binomial(n_O, fpr)
+    검출된 S > 0 이면 철회. se=1.0, fpr=0 이 주석 그대로(= §42 결과)다.
+    """
+    ci = OUT["classes"].index(cls)
+    Wd = OUT["w"]
+    r = OUT["res"][arm]
+    b = _blocks(w)
+    if "ect" not in b:
+        raise RuntimeError("이소성 블록이 없습니다 — attach_beat_feats(w) 를 먼저.")
+    j0 = b["ect"][0]
+    W = int(W or w.get("W", 128))
+    sf = w["aux"][:, j0 + ECT_NAMES.index("s_frac")]
+    vf = w["aux"][:, j0 + ECT_NAMES.index("v_frac")]
+    nS = np.rint(sf * W).astype(int)
+    nO = np.maximum(W - nS - np.rint(vf * W).astype(int), 0)
+    m = r["mask"] & (Wd["y"] >= 0)
+    rng = np.random.RandomState(seed)
+    base = None
+    rows = []
+    for fpr in fprs:
+        for se in ses:
+            det = rng.binomial(nS, se) + (rng.binomial(nO, fpr) if fpr > 0 else 0)
+            pv = np.where((r["pred"] == ci) & (det > 0) & m, -2, r["pred"])
+            e = episode_metrics(pv[m], Wd["y"][m], Wd["pid"][m], Wd["t0"][m],
+                               Wd["nov"][m], ci, verbose=False)
+            f1 = win_macro(pv[m], Wd["y"][m], Wd["pid"][m], OUT["classes"])[cls][0]
+            rows.append(dict(se=se, fpr=fpr, ep_se=e["se"], ep_ppv=e["ppv"],
+                             n_pred=int(e["n_pred"]), f1=f1))
+            if se == 1.0 and fpr == 0.0:
+                base = rows[-1]
+    if verbose:
+        e0 = episode_metrics(r["pred"][m], Wd["y"][m], Wd["pid"][m], Wd["t0"][m],
+                            Wd["nov"][m], ci, verbose=False)
+        print(f"\n=== 비트분류 정확도 감도분석  {arm} / {cls} (창 W={W}) ===")
+        print(f"  규칙 없음: 에피소드 Se {e0['se']:.3f}  PPV {e0['ppv']:.3f}  "
+              f"예측 {int(e0['n_pred']):,}건")
+        print(f"  {'S검출 Se':>9}{'S 위양성률':>11}{'에피Se':>8}{'에피PPV':>9}"
+              f"{'예측건수':>9}{'창F1':>8}   판정")
+        for d in rows:
+            okk = (d["ep_ppv"] - e0["ppv"] >= 0.05 and d["ep_se"] - e0["se"] >= -0.03
+                   and d["n_pred"] <= int(e0["n_pred"]))
+            print(f"  {d['se']:>9.2f}{d['fpr']:>11.3f}{d['ep_se']:>8.3f}"
+                  f"{d['ep_ppv']:>9.3f}{d['n_pred']:>9,}{d['f1']:>8.3f}"
+                  f"   {'★H-AR 통과' if okk else '미달'}")
+        pas = [d for d in rows if (d["ep_ppv"] - e0["ppv"] >= 0.05
+                                  and d["ep_se"] - e0["se"] >= -0.03
+                                  and d["n_pred"] <= int(e0["n_pred"]))]
+        if pas:
+            worst = min(pas, key=lambda d: d["se"])
+            print(f"\n  ★필요 조건: S 비트 검출 Se ≥ {worst['se']:.2f} 에서도 통과한다"
+                  f" (위양성률 ≤ {max(d['fpr'] for d in pas):.3f})")
+            print(f"    → 1층 비트분류기가 이 정도면 주석 없이도 규칙이 작동한다.")
+            print(f"    사용자 1층 이력의 S 축 성적과 비교해 실현 가능성을 판단할 것.")
+        else:
+            print(f"\n  ✗ 어떤 정확도에서도 H-AR 을 통과하지 못한다 →"
+                  f" 1층 모델로는 이 규칙을 재현할 수 없다.")
+            print(f"    ★신호 3.6GB 와 1층 학습을 쓰지 말 것. 이 축은 주석이 있는")
+            print(f"    데이터에서만 성립한다고 결론.")
+    return dict(rows=rows, base=base)
+
+
 def win_label_scan(d, Ws=(16, 24, 32, 48, 64, 96, 128), purity=None, classes=None,
                    dbs=None, sigma=None, verbose=True):
     """★창 크기 W 를 바꾸면 리듬별 환자·창 수가 어떻게 변하는지 — **주석만** 쓴다.
@@ -2643,6 +2717,16 @@ def selftest():
     O8 = dict(O6); O8["res"] = {"A1.RR산포": dict(
         pred=np.r_[np.ones(5, np.int64), np.zeros(235, np.int64)],
         mask=np.ones(240, bool), score=None)}
+
+    # 감도분석: se=1.0/fpr=0 은 주석 그대로여야 한다
+    NS = veto_noise_sweep(O6, w6, "A1.RR산포", "AFIB", W=8,
+                          ses=(1.0, 0.5), fprs=(0.0,), verbose=False)
+    b0 = [d for d in NS["rows"] if d["se"] == 1.0 and d["fpr"] == 0.0][0]
+    ok(abs(b0["ep_ppv"] - R6["rows"][1][1]["ppv"]) < 1e-9,
+       "★se=1.0/fpr=0 은 주석 규칙과 정확히 같다(감도분석의 기준점)")
+    b5 = [d for d in NS["rows"] if d["se"] == 0.5][0]
+    ok(b5["ep_ppv"] <= b0["ep_ppv"] + 1e-9,
+       f"S 검출 Se 를 낮추면 PPV 이득이 줄어든다 ({b0['ep_ppv']:.3f} → {b5['ep_ppv']:.3f})")
     a8 = ectopy_audit(O8, w6, "AFIB", verbose=False)
     ok(a8["_verdict"]["undecidable"] and not a8["_verdict"]["supported"],
        f"★FP {a8['_verdict']['n_fp']}창이면 '판정 불가' — '미달' 과 구분한다")
