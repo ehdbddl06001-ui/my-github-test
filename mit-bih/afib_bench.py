@@ -409,16 +409,32 @@ def ectopy_veto(OUT, w, arm="A1.RR산포", cls="AFIB", feat="s_frac", thr=0.0,
                   f"{e.get('se_short', float('nan')):>11.3f}{f1:>8.3f}{bu['r']:>10.3f}")
         d_ppv = rows[1][1]["ppv"] - rows[0][1]["ppv"]
         d_se = rows[1][1]["se"] - rows[0][1]["se"]
+        d_np = int(rows[1][1]["n_pred"]) - int(rows[0][1]["n_pred"])
         print(f"  Δ  에피소드 PPV {d_ppv:+.3f}   Se {d_se:+.3f}   "
-              f"(참 에피소드 {int(rows[0][1]['n_true'])}건)")
-        print(f"\n  판정 기준(H-AR, §41): PPV +0.05 이상 **그리고** Se 손실 ≤ 0.03")
-        okk = d_ppv >= 0.05 and d_se >= -0.03
+              f"예측건수 {d_np:+,}   (참 에피소드 {int(rows[0][1]['n_true'])}건)")
+        # ★파편화로 부풀려진 PPV 를 걸러 낸다 ─────────────────────────────
+        #  에피소드 PPV = '참과 겹치는 예측 에피소드' 비율이다. 긴 참 에피소드
+        #  중간을 잘라 10조각으로 쪼개면 **TP 가 10개**가 되어 PPV 가 오른다.
+        #  실측: bigem>0 규칙이 PPV 0.693→0.948 인데 예측건수 721→1,790 이었고
+        #  창 F1(0.956→0.925)·burden r(0.975→0.968)은 함께 **떨어졌다.**
+        #  → 예측 건수가 늘면서 오른 PPV 는 믿지 않는다.
+        if d_ppv > 0 and d_np > 0:
+            print(f"  ✗✗ 파편화 경고: PPV 가 올랐는데 **예측 에피소드가 {d_np:+,}건 늘었다.**")
+            print(f"     철회가 긴 참 에피소드 중간을 잘라 여러 조각으로 쪼갠 것이다.")
+            print(f"     에피소드 PPV 는 겹침 기준이라 참 하나를 N조각으로 쪼개면")
+            print(f"     TP 가 N 개가 되어 **부풀려진다.** 이 PPV 상승은 진짜가 아니다.")
+            print(f"     창 F1 {rows[0][3]:.3f}→{rows[1][3]:.3f}, "
+                  f"burden r {rows[0][2]['r']:.3f}→{rows[1][2]['r']:.3f} 을 함께 볼 것.")
+        print(f"\n  판정 기준(H-AR, §41): PPV +0.05 이상, Se 손실 ≤ 0.03, "
+              f"**예측 에피소드가 늘지 않을 것**")
+        okk = d_ppv >= 0.05 and d_se >= -0.03 and d_np <= 0
         print(f"    → {'★H-AR 지지 — 기전이 지표를 실제로 고친다' if okk else '✗H-AR 미달'}")
         if not okk and d_ppv >= 0.05:
             print(f"      PPV 는 올랐지만 Se 를 {-d_se:.3f} 잃었다 — §27 후처리와 같은 교환이다.")
     return dict(rows=rows, veto=veto, pred=new,
                 d_ppv=rows[1][1]["ppv"] - rows[0][1]["ppv"],
-                d_se=rows[1][1]["se"] - rows[0][1]["se"])
+                d_se=rows[1][1]["se"] - rows[0][1]["se"],
+                d_npred=int(rows[1][1]["n_pred"]) - int(rows[0][1]["n_pred"]))
 
 
 def win_label_scan(d, Ws=(16, 24, 32, 48, 64, 96, 128), purity=None, classes=None,
@@ -2594,6 +2610,27 @@ def selftest():
                                     score=None)},
               w={k: w6[k] for k in ("y", "pid", "db", "dur", "nov", "t0")})
     R6 = ectopy_veto(O6, w6, "A1.RR산포", "AFIB", verbose=False)
+
+    # 파편화 인공물 검출: 참 에피소드 중간을 잘라 쪼개면 PPV 가 부풀려진다
+    pr7 = np.r_[np.ones(60, np.int64), np.zeros(60, np.int64)]
+    pr7 = np.r_[pr7, pr7]
+    y7 = pr7.copy()                                   # 완벽한 예측(참=예측)
+    aux7 = np.zeros((240, 18), "float32")
+    aux7[10:60:2, 10 + ECT_NAMES.index("s_frac")] = 0.1   # 참 구간 중간에 표지를 심는다
+    aux7[130:180:2, 10 + ECT_NAMES.index("s_frac")] = 0.1
+    w7f = dict(y=y7, pid=np.r_[np.zeros(120, np.int64), np.ones(120, np.int64)],
+               aux=aux7, W=8, stride=8, aux_blocks={"rr": (0, 10), "ect": (10, 18)},
+               classes=["N", "AFIB"], db=np.array(["s"] * 240),
+               dur=np.ones(240, "float32"), nov=np.ones(240, bool),
+               t0=np.tile(np.arange(120, dtype="float32"), 2))
+    O7 = dict(classes=["N", "AFIB"], split="patient",
+              res={"A1.RR산포": dict(pred=pr7, mask=np.ones(240, bool), score=None)},
+              w={k: w7f[k] for k in ("y", "pid", "db", "dur", "nov", "t0")})
+    R7 = ectopy_veto(O7, w7f, "A1.RR산포", "AFIB", verbose=False)
+    ok(R7["d_npred"] > 0,
+       f"★참 에피소드 중간을 자르면 예측 건수가 늘어난다 ({R7['d_npred']:+d}) — 파편화")
+    ok(R7["d_ppv"] <= 0 or R7["d_npred"] > 0,
+       "파편화 상황이 재현된다(PPV 가 올라도 건수 증가로 걸러진다)")
     ok(int(R6["veto"].sum()) == 40,
        f"위양성 창 40개만 철회 (실제 {int(R6['veto'].sum())})")
     ok(R6["d_ppv"] > 0 and R6["d_se"] == 0,
