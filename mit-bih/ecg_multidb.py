@@ -107,6 +107,83 @@ def _cache_dir(db, ann_only, dldir=None):
     return f"{_BASE}/raw_ann/{db}" if ann_only else f"/content/{db}_raw"
 
 
+def beat_symbol_audit(dbs=("mitdb", "ltafdb", "afdb", "nsrdb"), dldir=None,
+                      n_rec=None, verbose=True):
+    """★ltafdb 계열의 비트 주석에 S/V 기호가 **실제로 있는지** 센다(주석 캐시만 씀).
+
+    왜 이것부터 하는가: 새 리듬 클래스(SVTA·AB·VT·SBR)의 95~99% 가 ltafdb 에서
+    오는데 ltafdb 는 `beat_audited=False` 라 코퍼스에 y5=−1 로 박혀 있다. 그런데
+    그것은 **우리가 보수적으로 내린 결정**이고, 주석 파일에 기호가 없다는 뜻은
+    아니다. 기호가 있는지 없는지에 따라 1층↔2층 연결이 가능한지가 갈린다.
+    신호를 받지 않고 캐시된 주석만 읽으므로 몇 분이면 끝난다.
+
+    ★그리고 기호가 있어도 **AB/B/T/VT 를 예측하는 데는 쓰면 안 된다** — 그 리듬
+      라벨 자체가 비트 패턴을 보고 붙인 것이라 동어반복이 된다(§38.1).
+      쓸 곳은 AFIB 의 위양성(이소성 박동 오인)을 줄이는 것이다.
+    """
+    _ensure = _need("_ensure"); _ensure("wfdb")
+    import wfdb
+    AAMI5 = _need("AAMI5")
+    BEAT_SYMS = set("NLReAaJSVEFjnQ/f|")
+    out = {}
+    for db in dbs:
+        spec = RRDB_SPEC.get(db)
+        if spec is None:
+            print(f"  ✗ {db}: RRDB_SPEC 에 없음"); continue
+        dd = _cache_dir(db, ann_only=True, dldir=dldir)
+        exts = sorted({"hea", spec["beat_ext"], spec["rhy_ext"]})
+        recs = _rr_records(db, dd, exts, verbose=False)
+        if n_rec:
+            recs = recs[:int(n_rec)]
+        cnt = {}
+        nrec_with = 0
+        for rec in recs:
+            try:
+                a = wfdb.rdann(f"{dd}/{rec}", spec["beat_ext"])
+            except Exception:
+                continue
+            syms = [s for s in a.symbol if s in BEAT_SYMS]
+            if not syms:
+                continue
+            u, c = np.unique(np.array(syms), return_counts=True)
+            for uu, cc in zip(u, c):
+                cnt[str(uu)] = cnt.get(str(uu), 0) + int(cc)
+            if any(AAMI5.get(s, -1) in (1, 2) for s in syms):   # S 또는 V 가 있는 레코드
+                nrec_with += 1
+        tot = sum(cnt.values())
+        by5 = {}
+        for sy, c in cnt.items():
+            k = AAMI5.get(sy, -1)
+            by5[k] = by5.get(k, 0) + c
+        out[db] = dict(sym=cnt, by5=by5, total=tot, rec=len(recs),
+                       rec_with_sv=nrec_with)
+        if verbose:
+            nm5 = {0: "N", 1: "S", 2: "V", 3: "F", 4: "Q", -1: "(미지정)"}
+            print(f"\n▶ {spec['name']}  레코드 {len(recs)}  비트 {tot:,}"
+                  f"  (감사표기 {spec['beat_audited']})")
+            if not tot:
+                print(f"    ✗ 비트 기호가 하나도 없다 → 1층 라벨을 쓸 수 없다")
+                continue
+            print(f"    기호: " + "  ".join(
+                f"{k}:{v:,}" for k, v in sorted(cnt.items(), key=lambda kv: -kv[1])[:10]))
+            print(f"    AAMI: " + "  ".join(
+                f"{nm5.get(k,k)} {v:,}({100*v/tot:.2f}%)"
+                for k, v in sorted(by5.items(), key=lambda kv: -kv[1])))
+            sv = by5.get(1, 0) + by5.get(2, 0)
+            print(f"    S+V {sv:,} ({100*sv/tot:.2f}%)   "
+                  f"S 또는 V 가 있는 레코드 {nrec_with}/{len(recs)}")
+            if sv == 0:
+                print(f"    ✗ 이소성 박동 기호가 없다 → 이 DB 로는 1층↔2층 연결 불가")
+            elif not spec["beat_audited"]:
+                print(f"    △ 기호는 있으나 미감사다. **1층 학습에는 쓰지 않고**")
+                print(f"      2층 창 특징(이소성 비율·패턴)으로만 쓴다 — 그 용도에는")
+                print(f"      개별 비트의 정확도보다 창 단위 비율이 중요하다.")
+    if verbose and out:
+        print(f"\n  ※ 기호가 있어도 AB/B/T/VT 예측에는 쓰지 않는다(동어반복, §38.1).")
+        print(f"    쓸 곳은 AFIB 위양성(이소성 박동 오인) 감소다 — 에피소드 PPV 0.702.")
+    return out
+
+
 def rate_correct_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
                        exps=(1 / 3, 1 / 2, 2 / 3, 1.0), targets=("rt_med", "pr_med"),
                        verbose=True):
