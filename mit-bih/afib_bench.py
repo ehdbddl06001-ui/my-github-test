@@ -692,8 +692,29 @@ def _aux_cols(w, mode):
             raise RuntimeError("심방특징이 없습니다 — attach_atrial(w) 를 먼저 하세요.")
         return np.arange(nrr, n)
     if mode == "all":
-        return np.arange(n)
+        # ★개인편차 열까지 삼키면 A4 와 A5 가 같은 입력을 받는다(§13 배선 오류 재발)
+        return np.arange(_natr(w))
+    # ── 개인화 모드 ────────────────────────────────────────────────────────
+    #  natr = 개인편차가 붙기 전의 열 수. personalize() 가 w["n_atr"] 에 기록한다.
+    #  "all" 이 편차까지 삼키면 A4 와 A5 가 같아진다 → 배선 오류(§13 재발)이므로
+    #  "all" 은 natr 까지만 본다.
+    if mode == "pers":
+        _need_pers(w)
+        return np.arange(n)                      # RR + 심방 + 개인편차 전부
+    if mode == "dev":
+        _need_pers(w)
+        return np.arange(_natr(w), n)            # 개인편차만
     raise ValueError(f"알 수 없는 aux mode: {mode}")
+
+
+def _natr(w):
+    """개인편차가 붙기 전의 aux 열 수(= RR + 심방)."""
+    return int(w.get("n_atr", w["aux"].shape[1]))
+
+
+def _need_pers(w):
+    if "n_atr" not in w:
+        raise RuntimeError("개인편차가 없습니다 — w = personalize(w) 를 먼저 하세요.")
 
 
 def _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="rr", n_domain=0,
@@ -996,6 +1017,11 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
     # 심방특징이 실제로 붙어 있을 때만 A4 계열을 켠다(가짜 음성 결론 방지)
     if w["aux"].shape[1] > 10:
         arms.update(ATRIAL_ARMS)
+    if "n_atr" in w:                          # personalize(w) 를 거쳤을 때만
+        arms.update(PERS_ARMS)
+    elif any(a.startswith("A5") for a in (only or ())):
+        raise RuntimeError("A5 계열은 개인편차가 필요합니다 — "
+                           "w = personalize(w) 를 먼저 하세요.")
     elif any(a.startswith("A4") for a in (only or ())):
         raise RuntimeError("A4 계열은 심방특징이 필요합니다 — "
                            "w = attach_atrial(w) 를 먼저 하세요.")
@@ -1380,6 +1406,338 @@ def report_op(OUT, arms=None, cls="AFIB", criterion="f1", min_ppv=0.80):
         rows.append(o)
     return rows
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  8. 시간축 후처리 — 문턱이 못 고치는 것을 고친다
+#
+#  §20.3 의 진단: 창 단위 PPV 는 0.987 인데 **에피소드 PPV 는 0.702** 다. 참
+#  에피소드 254건에 771건을 예측했다. 창은 거의 다 맞히는데 **띄엄띄엄** 맞혀서
+#  가짜 에피소드가 517건 생긴 것이다. 문턱은 창을 하나씩 독립으로 보므로 이걸
+#  고칠 수 없다 — 시간축에서 파편을 합쳐야 한다.
+#
+#  임상 홀터 소프트웨어가 쓰는 두 가지를 그대로 넣는다.
+#    · 히스테리시스: 진입 문턱(t_hi) > 이탈 문턱(t_lo). 한 번 들어가면 쉽게 안 나온다.
+#      AF 는 지속하는 현상이므로, 애매한 창 하나로 에피소드를 끊는 것이 더 부자연스럽다.
+#    · 최소 지속시간: 연속 min_len 창 미만의 에피소드는 버린다(임상의 '30초 규칙'과 같은 논리).
+#    · 간극 메우기: gap 창 미만으로 떨어진 두 에피소드는 하나로 잇는다.
+#
+#  ★문턱 조정(§18)과 같은 규율을 적용한다: 파라미터를 고른 데이터로 성능을 재면
+#    부풀려진다. 여기서도 **환자 단위 leave-one-out** 으로 고르고, 오라클을 함께 찍어
+#    낙관 편향의 크기를 보인다.
+# ─────────────────────────────────────────────────────────────────────────────
+def _runs_bool(v):
+    """불리언 벡터의 True 구간 [(시작,끝)] (끝 포함)."""
+    out = []
+    i = 0
+    n = len(v)
+    while i < n:
+        if v[i]:
+            j = i
+            while j + 1 < n and v[j + 1]:
+                j += 1
+            out.append((i, j)); i = j + 1
+        else:
+            i += 1
+    return out
+
+
+def _smooth_one(s, t_hi, t_lo, min_len, gap):
+    """점수열 하나 → 이진 결정. 히스테리시스 → 간극 메우기 → 최소 지속시간."""
+    on = np.zeros(len(s), bool)
+    live = False
+    for i, v in enumerate(s):                  # 히스테리시스
+        if not live and v >= t_hi:
+            live = True
+        elif live and v < t_lo:
+            live = False
+        on[i] = live
+    if gap > 0:                                # 간극 메우기(닫힘 연산)
+        r = _runs_bool(on)
+        for k in range(len(r) - 1):
+            if r[k + 1][0] - r[k][1] - 1 <= gap:
+                on[r[k][1] + 1:r[k + 1][0]] = True
+    if min_len > 1:                            # 최소 지속시간
+        for a, b in _runs_bool(on):
+            if b - a + 1 < min_len:
+                on[a:b + 1] = False
+    return on
+
+
+def smooth_pred(OUT, arm, cls="AFIB", t_hi=0.5, t_lo=0.35, min_len=2, gap=1):
+    """후처리된 이진 예측을 만든다(환자마다 시간순으로).
+
+    ★비중첩 창만 쓴다. 중첩 창을 시간축 규칙에 넣으면 같은 구간이 여러 번 세어져
+      '연속 2창' 같은 조건의 뜻이 달라진다.
+    """
+    r = OUT["res"][arm]
+    if r.get("score") is None:
+        raise RuntimeError(f"{arm}: score 가 없습니다 — 후처리는 확률이 필요합니다.")
+    ci = OUT["classes"].index(cls)
+    W = OUT["w"]
+    m = r["mask"] & (W["y"] >= 0) & W["nov"]
+    pred = np.full(len(W["y"]), -2, np.int64)
+    loc = np.flatnonzero(m)
+    sc = np.asarray(r["score"])[loc, ci]
+    pid = np.asarray(W["pid"])[loc]
+    t0 = np.asarray(W["t0"])[loc]
+    for p in np.unique(pid):
+        k = np.flatnonzero(pid == p)
+        o = k[np.argsort(t0[k])]
+        on = _smooth_one(sc[o], t_hi, t_lo, min_len, gap)
+        pred[loc[o]] = np.where(on, ci, -2)
+    return pred, m
+
+
+def _ep_pp(OUT, pred, m, ci):
+    """(에피소드 Se, PPV, 예측건수, F1(창), burden r, LoA폭) 한 번에."""
+    W = OUT["w"]
+    e = episode_metrics(pred[m], W["y"][m], W["pid"][m], W["t0"][m], W["nov"][m],
+                        ci, verbose=False)
+    b = burden_metrics(pred[m], W["y"][m], W["pid"][m], W["dur"][m], ci, verbose=False)
+    f = win_macro(pred[m], W["y"][m], W["pid"][m], OUT["classes"])
+    return dict(se=e["se"], ppv=e["ppv"], n_pred=e["n_pred"], n_true=e["n_true"],
+                se_short=e.get("se_short", float("nan")),
+                f1=f[OUT["classes"][ci]][0], r=b["r"], loa_w=3.92 * b["sd"])
+
+
+def op_smooth(OUT, arm="A1.RR산포", cls="AFIB", grid=None, criterion="ep_f1",
+              verbose=True):
+    """★후처리 파라미터를 환자 단위 LOO 로 고르고 편향 없이 평가한다.
+
+    criterion="ep_f1"  에피소드 Se·PPV 의 조화평균(F1) 최대 — 파편화의 직접 지표
+    criterion="win_f1" 창 F1 최대
+    """
+    if grid is None:
+        grid = [(hi, lo, ml, gp)
+                for hi in (0.5, 0.7, 0.9)
+                for lo in (0.1, 0.2, 0.35, 0.5)
+                for ml in (1, 2, 3, 5, 8)
+                for gp in (0, 1, 2, 4)
+                if lo <= hi]
+    ci = OUT["classes"].index(cls)
+    W = OUT["w"]
+    r = OUT["res"][arm]
+    base_m = r["mask"] & (W["y"] >= 0) & W["nov"]
+    ps = np.unique(np.asarray(W["pid"])[base_m])
+    # 파라미터 × 환자 별 에피소드 카운트를 미리 계산한다(LOO 를 O(1)로 만들기 위해)
+    #  환자마다 (참건수, 검출건수, 예측건수, 참예측건수) 를 센다.
+    T = np.zeros((len(grid), len(ps), 4))
+    preds = []
+    for gi, (hi, lo, ml, gp) in enumerate(grid):
+        pr, m = smooth_pred(OUT, arm, cls, hi, lo, ml, gp)
+        preds.append(pr)
+        for pj, p in enumerate(ps):
+            k = m & (np.asarray(W["pid"]) == p)
+            if not k.any():
+                continue
+            o = np.argsort(np.asarray(W["t0"])[k])
+            yt = (np.asarray(W["y"])[k][o] == ci)
+            yp = (pr[k][o] == ci)
+            tr = _runs_bool(yt); pd_ = _runs_bool(yp)
+            T[gi, pj, 0] = len(tr)
+            T[gi, pj, 1] = sum(1 for a, b in tr if yp[a:b + 1].any())
+            T[gi, pj, 2] = len(pd_)
+            T[gi, pj, 3] = sum(1 for a, b in pd_ if yt[a:b + 1].any())
+
+    def crit(idx):                             # 환자 집합 idx 에서의 기준값(파라미터별)
+        t = T[:, idx, :].sum(1)
+        se = t[:, 1] / np.maximum(t[:, 0], 1e-9)
+        pv = t[:, 3] / np.maximum(t[:, 2], 1e-9)
+        return 2 * se * pv / np.maximum(se + pv, 1e-9)
+
+    all_idx = np.arange(len(ps))
+    gi_or = int(np.argmax(crit(all_idx)))      # 오라클(자기 포함)
+    sel = np.zeros(len(ps), int)
+    for pj in range(len(ps)):
+        keep = np.delete(all_idx, pj)
+        sel[pj] = int(np.argmax(crit(keep)))
+    # 환자마다 자기 LOO 파라미터를 적용한 예측을 합성
+    pred_loo = np.full(len(W["y"]), -2, np.int64)
+    pidv = np.asarray(W["pid"])
+    for pj, p in enumerate(ps):
+        k = base_m & (pidv == p)
+        pred_loo[k] = preds[sel[pj]][k]
+    base = _ep_pp(OUT, r["pred"], base_m, ci)
+    orc = _ep_pp(OUT, preds[gi_or], base_m, ci)
+    loo = _ep_pp(OUT, pred_loo, base_m, ci)
+    if verbose:
+        u, c = np.unique(sel, return_counts=True)
+        top = grid[u[int(np.argmax(c))]]
+        print(f"\n=== 시간축 후처리  {arm} / {cls} (격자 {len(grid)}개, 환자 {len(ps)}) ===")
+        print(f"  LOO 가 가장 많이 고른 파라미터: 진입{top[0]} 이탈{top[1]} "
+              f"최소{top[2]}창 간극{top[3]}창  ({int(c.max())}/{len(ps)}명)")
+        print(f"  {'':<12}{'에피소드Se':>10}{'PPV':>8}{'예측건수':>9}"
+              f"{'창F1':>8}{'burden r':>10}{'LoA폭':>8}")
+        for nm, d_ in (("원본(argmax)", base), ("★LOO 후처리", loo), ("오라클", orc)):
+            print(f"  {nm:<12}{d_['se']:>10.3f}{d_['ppv']:>8.3f}{int(d_['n_pred']):>9,}"
+                  f"{d_['f1']:>8.3f}{d_['r']:>10.3f}{d_['loa_w']:>8.1f}")
+        print(f"  (참 에피소드 {int(base['n_true'])}건)")
+        print(f"  낙관 편향: 오라클 PPV {orc['ppv']:.3f} − LOO {loo['ppv']:.3f} = "
+              f"{orc['ppv']-loo['ppv']:+.3f}  ← 이 차이만큼 오라클은 부풀려져 있다")
+    return dict(base=base, loo=loo, oracle=orc, sel=sel, grid=grid,
+                pred_loo=pred_loo, mask=base_m)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  9. 개인화 기준선 (사용자 제안) — "그 사람의 평소 파형"에서 얼마나 벗어났는가
+#
+#  임상 판독의 핵심 동작 하나가 "이전 심전도와 비교" 다. 절대 수치로 정상/비정상을
+#  가르는 대신 **그 사람의 평소**를 기준으로 편차를 본다. 여기서는 그것을 특징
+#  수준에서 구현한다: 개인 기준선 b_p 를 만들고 각 창에 (x − b_p) 를 덧붙인다.
+#
+#  ★먼저: RR 축은 **이미 개인화되어 있다.**
+#    _rec_channels 가 clip(log(RR / med_record)) 를 쓰고, _win_aux 도 전부 med_rec
+#    으로 나눈 무차원량이다 → 심박수의 개인차는 이미 제거돼 있다.
+#    개인화가 **안 된** 것은 심방·P-QRS-T 특징 21열이다(p_amp·p_cons·pr_med… 전부
+#    절대값을 환자 간에 비교한다). 거기가 이 제안의 미개척지다.
+#
+#  ★★누수 함정 — 무엇을 '평소'로 삼는가
+#    "환자 자신의 정상 구간 평균" 이 가장 자연스럽지만 **어느 창이 정상인지는 라벨**
+#    이다. 테스트 환자의 라벨로 기준선을 만들면 정답을 보고 특징을 만드는 것이고,
+#    환자분리 교차검증에서는 그 환자의 학습 데이터가 아예 없다. 그래서 **라벨을
+#    쓰지 않는** 기준선만 허용한다(아래 세 mode 모두 y 를 참조하지 않는다).
+# ─────────────────────────────────────────────────────────────────────────────
+#  ★_win_aux 의 열 순서를 이름으로 못 박는다. 예전에 "가장 규칙적인 창"을 고르려고
+#    0번 열을 썼는데 0번은 med_w/med_rec = **심박수**다(산포가 아니다). 그러면
+#    '가장 느린 창'을 기준선으로 잡는다 — 조용히 틀린 결과가 나온다.
+AUX_IDX = dict(rate=0, rmssd=1, pnn50=2, cv=3, ent=4, sd1=5, sd2=6,
+               sd1sd2=7, iqr=8, valid=9)
+
+
+def personalize(w, mode="quiet", q=0.25, k=20, verbose=True):
+    """개인 기준선 편차 21열을 aux 에 덧붙인다(31 → 52열).
+
+    mode — 전부 라벨(y) 을 쓰지 않는다:
+      "median" 그 환자 전체 창의 중앙값.
+               ⚠지속성 AF 환자는 '평소'가 AF 라 기준선이 AF 가 된다 → 발작성에서
+                 이득, 지속성에서 손해가 예상된다. persistence_split 로 층화해 본다.
+      "quiet"  그 환자 창 중 **ΔRR 엔트로피가 낮은**(=가장 규칙적인) 하위 q 분위의
+               중앙값. AF 는 불규칙하므로 그 구간은 정상동조율일 가능성이 높다 —
+               라벨을 보지 않는 '정상 구간' 대리다.
+      "calib"  기록 앞부분 k 창(홀터 부착 직후를 기준으로 쓰는 실무 관행).
+               ⚠처음부터 AF 인 환자에서는 틀린 기준선이 된다.
+    """
+    n = w["aux"].shape[1]
+    nrr = int(w.get("n_rr", n))
+    if nrr >= n:
+        raise RuntimeError("심방특징이 없습니다 — attach_atrial(w) 를 먼저 하세요.")
+    if mode not in ("median", "quiet", "calib"):
+        raise ValueError(f"알 수 없는 mode: {mode} (median/quiet/calib)")
+    A = w["aux"]
+    atr = np.arange(nrr, n)
+    pid = np.asarray(w["pid"])
+    D = np.zeros((len(A), len(atr)), "float32")
+    used = np.zeros(len(A), bool)
+    nref = []
+    for p in np.unique(pid):
+        kk = np.flatnonzero(pid == p)
+        if mode == "median":
+            ref = kk
+        elif mode == "quiet":
+            ent = A[kk, AUX_IDX["ent"]]          # ★엔트로피 = 불규칙도. 낮을수록 규칙적
+            thr = float(np.quantile(ent, q))
+            ref = kk[ent <= thr]
+            if len(ref) < 3:                     # 창이 적은 환자 보호
+                ref = kk[np.argsort(ent)[:max(3, len(kk))]]
+        else:
+            o = kk[np.argsort(np.asarray(w["t0"])[kk])]
+            ref = o[:min(k, len(o))]
+        b = np.nanmedian(A[np.ix_(ref, atr)], axis=0)
+        b = np.where(np.isfinite(b), b, 0.0)
+        D[kk] = A[np.ix_(kk, atr)] - b
+        used[ref] = True
+        nref.append(len(ref))
+    w = dict(w)
+    w["n_atr"] = int(n)                          # 편차 열의 시작 위치
+    w["aux"] = np.concatenate([A, D], 1).astype("float32")
+    w["aux_names"] = (list(w.get("aux_names", [])) +
+                      [f"Δ{nm}" for nm in
+                       (list(w.get("aux_names", []))[nrr:n] or
+                        [str(i) for i in range(len(atr))])])
+    w["pers_mode"] = mode
+    if verbose:
+        print(f"\n[개인화 기준선] mode={mode}  aux {n} → {w['aux'].shape[1]}열 "
+              f"(심방 {len(atr)}열의 개인편차 추가)")
+        print(f"  기준선 창 수 중앙값 {int(np.median(nref))} / 환자 "
+              f"{len(np.unique(pid))}  (전체의 {100*used.sum()/len(A):.1f}%)")
+        print(f"  ★라벨(y)을 참조하지 않았다 — 테스트 환자의 정답을 보지 않는다")
+        if mode == "median":
+            print(f"  ⚠ 지속성 AF 환자는 '평소'가 AF 라 기준선이 AF 다 → "
+                  f"persistence_split() 로 층화해 볼 것")
+    return w
+
+
+def persistence_split(OUT, cls="AFIB", hi=0.8, none_thr=0.02):
+    """환자를 **실제 burden** 으로 정상 / 발작성 / 지속성 으로 나눈다.
+
+    ★개인화의 이론적 예측이 층마다 반대다: '자기 중앙값' 기준선은 발작성(대부분
+      정상 + 일부 AF)에서는 정상을 기준으로 잡지만 지속성(대부분 AF)에서는 AF 를
+      기준으로 잡아 **부호가 뒤집힌다.** 전체 평균만 보면 두 효과가 상쇄돼
+      '효과 없음' 으로 보인다 — 그래서 반드시 나눠서 본다.
+    """
+    W = OUT["w"]
+    ci = OUT["classes"].index(cls)
+    y, pid, dur = W["y"], W["pid"], W["dur"]
+    out = {}
+    for p in np.unique(pid):
+        m = (pid == p) & (y >= 0)
+        if not m.any():
+            continue
+        tot = float(dur[m].sum())
+        b = float(dur[m][y[m] == ci].sum()) / tot if tot > 0 else 0.0
+        out[int(p)] = ("정상" if b < none_thr else
+                       "지속성" if b >= hi else "발작성")
+    return out
+
+
+def report_strata(OUT, arms=None, cls="AFIB", hi=0.8):
+    """발작성 / 지속성 / 정상 층별 환자매크로 F1 — 개인화 판정의 필수 도구."""
+    grp = persistence_split(OUT, cls, hi=hi)
+    W = OUT["w"]
+    arms = arms or [a for a in OUT["res"] if not a.startswith("A0")]
+    order = ["정상", "발작성", "지속성"]
+    cnt = {g: sum(1 for v in grp.values() if v == g) for g in order}
+    print(f"\n=== 층별 환자매크로 F1  [{cls}]  (burden 기준: <2% 정상 / "
+          f"<{hi:.0%} 발작성 / 이상 지속성) ===")
+    print(f"  {'arm':<22}" + "".join(f"{g}(n={cnt[g]})".rjust(14) for g in order))
+    rows = {}
+    for a in arms:
+        r = OUT["res"][a]
+        m = r["mask"] & (W["y"] >= 0)
+        f = win_macro(r["pred"][m], W["y"][m], W["pid"][m], OUT["classes"],
+                      detail=True)[cls]
+        ids, vals = f[3], f[2]
+        line = f"  {a:<22}"
+        rows[a] = {}
+        for g in order:
+            sel = np.array([grp.get(int(i)) == g for i in ids])
+            v = float(np.mean(vals[sel])) if sel.any() else float("nan")
+            rows[a][g] = (v, int(sel.sum()))
+            line += (f"{v:.3f} ({int(sel.sum())})".rjust(14) if np.isfinite(v)
+                     else "—".rjust(14))
+        print(line)
+    print(f"  ※ '정상' 층은 그 리듬 창이 없으면 F1 이 정의되지 않아 대부분 빠진다.")
+    return rows
+
+
+def _arm_pers(w, tr, te, ncls, seed, epochs=20):
+    """A5. RSN + RR산포 + 심방 + **개인편차**. A4 와의 차이가 개인화의 순효과다."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="pers", epochs=epochs)
+
+
+def _arm_pers_only(w, tr, te, ncls, seed, epochs=20):
+    """A5c. 개인편차만(절대 심방값 제거) — 이득이 '편차' 에서 오는지 가르는 대조군."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=False, aux="dev", epochs=epochs)
+
+
+PERS_ARMS = {
+    "A5.RSN+개인편차": _arm_pers,
+    "A5c.개인편차만": _arm_pers_only,
+}
+for _f2, _s2, _a2 in ((_arm_pers, True, "pers"), (_arm_pers_only, False, "dev")):
+    _f2._use_seq, _f2._aux_mode = _s2, _a2
+del _f2, _s2, _a2
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증 — 합성 RR 로 wfdb/torch 없이 로직만 검증
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1540,6 +1898,88 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 개인화 기준선 ────────────────────────────────────────────────────────
+    wa2 = dict(w); wa2["n_rr"] = 10
+    rngp = np.random.RandomState(5)
+    wa2["aux"] = np.concatenate(
+        [w["aux"], rngp.randn(len(w["y"]), 21).astype("float32")], 1)
+    ok(AUX_IDX["ent"] == 4 and AUX_IDX["rate"] == 0,
+       "aux 열 이름표: 0=심박수, 4=ΔRR엔트로피 (0번을 산포로 쓰면 '느린 창'을 고른다)")
+    for md in ("median", "quiet", "calib"):
+        wp = personalize(wa2, mode=md, verbose=False)
+        ok(wp["aux"].shape[1] == 52 and wp["n_atr"] == 31,
+           f"personalize({md}): aux 31 → 52열, n_atr=31 기록")
+    wp = personalize(wa2, mode="median", verbose=False)
+    # median 기준선이면 각 환자 편차의 중앙값이 0 이어야 한다(정의상)
+    dv = wp["aux"][:, 31:]
+    z = max(float(np.abs(np.median(dv[wp["pid"] == p], axis=0)).max())
+            for p in np.unique(wp["pid"]))
+    ok(z < 1e-5, f"median 기준선: 환자별 편차의 중앙값이 0 (최대 {z:.2e})")
+    ok(len(_aux_cols(wp, "all")) == 31 and len(_aux_cols(wp, "pers")) == 52
+       and len(_aux_cols(wp, "dev")) == 21,
+       "aux 모드: all 31(편차 제외) / pers 52 / dev 21")
+    ok(len(_aux_cols(wp, "all")) != len(_aux_cols(wp, "pers")),
+       "★A4(all)와 A5(pers)가 다른 입력을 받는다 — 같으면 비교가 무의미")
+    try:
+        _aux_cols(wa2, "pers"); ok(False, "개인편차 없이 pers 요구 시 예외")
+    except RuntimeError:
+        ok(True, "개인편차 없이 A5 를 돌리면 예외 — 빈 입력으로 조용히 안 돈다")
+    # quiet 기준선이 실제로 '규칙적인' 창을 고르는지
+    wq = personalize(wa2, mode="quiet", q=0.25, verbose=False)
+    ent_all = wa2["aux"][:, AUX_IDX["ent"]]
+    p0 = int(np.unique(wa2["pid"])[0]); k0 = np.flatnonzero(wa2["pid"] == p0)
+    thr = np.quantile(ent_all[k0], 0.25)
+    ok((ent_all[k0] <= thr).sum() >= 1,
+       f"quiet: 엔트로피 하위 25% 창을 기준선으로 (문턱 {thr:.3f})")
+    # 층화
+    grp = persistence_split(mkout({"A1.RR산포": yv.copy()}), "AFIB")
+    ok(set(grp.values()) <= {"정상", "발작성", "지속성"} and len(grp) > 0,
+       f"persistence_split: 층 {sorted(set(grp.values()))}")
+
+    # ── 시간축 후처리 (파편화를 실제로 줄이는지) ─────────────────────────────
+    #  ★핵심 성질: 파편(단발 예측)을 만들어 놓고 최소 지속시간을 걸면 사라져야 한다.
+    sc = np.array([0.9, 0.1, 0.9, 0.1, 0.9, 0.9, 0.9, 0.9, 0.1, 0.9])
+    on = _smooth_one(sc, t_hi=0.5, t_lo=0.5, min_len=1, gap=0)
+    ok(list(on.astype(int)) == [1, 0, 1, 0, 1, 1, 1, 1, 0, 1],
+       "히스테리시스 t_hi=t_lo 면 단순 문턱과 같다")
+    on2 = _smooth_one(sc, t_hi=0.5, t_lo=0.5, min_len=2, gap=0)
+    ok(list(on2.astype(int)) == [0, 0, 0, 0, 1, 1, 1, 1, 0, 0],
+       "최소 2창: 단발 예측 3개가 사라지고 연속 4창만 남는다")
+    on3 = _smooth_one(sc, t_hi=0.5, t_lo=0.5, min_len=1, gap=1)
+    ok(int(on3.sum()) == 10, "간극 1창 메우기: 사이가 1창이면 하나로 이어진다")
+    on4 = _smooth_one(np.array([0.9, 0.4, 0.4, 0.4, 0.05]), 0.8, 0.2, 1, 0)
+    ok(list(on4.astype(int)) == [1, 1, 1, 1, 0],
+       "히스테리시스: 진입 0.8 뒤엔 0.2 아래로 떨어질 때까지 유지된다")
+    ok(_runs_bool(np.array([0, 1, 1, 0, 1], bool)) == [(1, 2), (4, 4)], "구간 추출")
+    # 파편 예측 vs 후처리: 에피소드 PPV 가 올라야 한다
+    npat, nw = 6, 40
+    yv2 = np.zeros(npat * nw, np.int64); pidv2 = np.repeat(np.arange(npat), nw)
+    t02 = np.tile(np.arange(nw, dtype="float32"), npat)
+    for p in range(npat):                       # 각 환자에 참 에피소드 1건(연속 10창)
+        yv2[p * nw + 10:p * nw + 20] = 1
+    S2 = np.zeros((len(yv2), 2), "float32")
+    S2[:, 1] = np.where(yv2 == 1, 0.9, 0.0)
+    rng3 = np.random.RandomState(1)
+    frag = (rng3.rand(len(yv2)) < 0.05) & (yv2 == 0)   # 단발 위양성 = 파편
+    S2[frag, 1] = 0.9
+    S2[:, 0] = 1 - S2[:, 1]
+    Osm = dict(classes=["N", "AFIB"], split="patient",
+               res={"A1.RR산포": dict(pred=(S2[:, 1] >= 0.5).astype(np.int64),
+                                     mask=np.ones(len(yv2), bool), score=S2)},
+               w=dict(y=yv2, pid=pidv2, db=np.array(["s"] * len(yv2)),
+                      dur=np.ones(len(yv2), "float32"),
+                      nov=np.ones(len(yv2), bool), t0=t02))
+    R = op_smooth(Osm, "A1.RR산포", "AFIB", grid=[(0.5, 0.5, 1, 0), (0.5, 0.5, 2, 0)],
+                  verbose=False)
+    ok(R["loo"]["ppv"] > R["base"]["ppv"],
+       f"후처리가 에피소드 PPV 를 올린다 ({R['base']['ppv']:.3f} → {R['loo']['ppv']:.3f})")
+    ok(R["loo"]["n_pred"] < R["base"]["n_pred"],
+       f"가짜 에피소드가 줄어든다 ({int(R['base']['n_pred'])} → {int(R['loo']['n_pred'])}건)")
+    ok(R["loo"]["se"] >= R["base"]["se"] - 1e-9,
+       "참 에피소드는 10창 연속이라 최소 2창 규칙으로 안 사라진다")
+    ok(R["loo"]["ppv"] <= R["oracle"]["ppv"] + 1e-9,
+       f"★LOO({R['loo']['ppv']:.3f}) ≤ 오라클({R['oracle']['ppv']:.3f}) — 선택 누수 없음")
 
     # ── 작동점 조정 (문턱 선택이 새는지) ─────────────────────────────────────
     #  ★핵심 성질: LOO 로 고른 문턱의 성능은 오라클(자기 포함)보다 **낮아야** 한다.
