@@ -280,7 +280,9 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
         dbs_all = [str(x) for x in dbu]
         nm2code = {str(nm): i for i, nm in enumerate(names)}
         print(f"\n  [창 생성 효율] 비트는 있는데 창이 안 생기는 리듬을 찾는다")
-        print(f"  {'리듬':<8}{'비트':>11}{'최대창':>8}{'실제창':>8}{'효율':>7}   DB별 비트")
+        cap_note = ("비트/(min_frac×W)" if prio is not None else "비트/W")
+        print(f"  {'리듬':<8}{'비트':>11}{'최대창':>8}{'실제창':>8}{'효율':>7}   "
+              f"(최대창 = {cap_note})   DB별 비트")
         for i, nm in enumerate(classes):
             code = nm2code.get(nm)
             if code is None:
@@ -289,13 +291,17 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
             nb = int(bm.sum())
             if not nb:
                 continue
-            cap = nb // W
+            # ★우선순위 라벨링에서는 창이 min_frac 만큼만 그 리듬이면 되므로
+            #   상한이 비트/W 가 아니라 비트/(min_frac×W) 다. 안 고치면 효율이
+            #   507% 로 찍히고 "창 정의가 버리고 있다"는 **정반대 조언**이 붙는다.
+            mf = float(prio_min.get(i, 1.0)) if prio_min else 1.0
+            cap = int(nb // max(mf * W, 1))
             got = int((w["y"] == i).sum())
             eff = got / cap if cap else float("nan")
             cnt_db = np.bincount(dbi[bm], minlength=len(dbu))
             per = "  ".join(f"{d}:{int(c):,}" for d, c in zip(dbs_all, cnt_db) if c)
             print(f"  {nm:<8}{nb:>11,}{cap:>8,}{got:>8,}{eff:>6.0%}   {per}")
-            if cap >= 20 and eff < 0.25:
+            if cap >= 20 and eff < 0.25 and prio is None:
                 print(f"    ✗ {nm}: 비트로는 창 {cap:,}개가 가능한데 {got:,}개만 생겼다"
                       f"({eff:.0%}).")
                 print(f"       이 리듬이 짧게 흩어져 있어 연속 {W}비트의 {purity:.0%}를"
@@ -645,20 +651,24 @@ def sigma_measured(OUT, verbose=True):
         #   맞히면 환자별 F1 이 전부 0 이라 표준편차도 0 이 되고, MDE 0.000 이
         #   찍힌다. 실제로 LODO 에서 AFL 이 그랬다. 이건 완벽한 검정력이 아니라
         #   **측정 자체가 안 된 것**이다.
-        if sg == 0.0 and mx == 0.0 and n:
+        # ★'정확히 0' 만 잡으면 부족하다. VT 에서 A1 의 F1 이 0.024 였는데 0 이
+        #   아니라 경고가 안 떴고, σ 0.077 → MDE 0.040 이 '검정력 충분' 처럼
+        #   보였다. 전 팔이 **거의** 실패하면 σ 가 작아지는 것은 정밀함이 아니라
+        #   전원 실패의 부작용이다.
+        if n and mx < 0.10:
             dead.add(c)
         out[c] = (sg, n, float(1.96 * sg / max(np.sqrt(n), 1)) if n else float("nan"))
     if verbose:
         print(f"\n  [검정력 갱신] 환자별 F1 의 **실측** σ (팔 중 최댓값 = 보수적)")
         print(f"  {'리듬':<8}{'환자':>6}{'σ(가정)':>10}{'σ(실측)':>10}{'MDE(실측)':>11}")
         for c, (sg, n, m) in out.items():
-            flag = "  ✗측정 불가" if c in dead else ""
+            flag = "  ✗측정 불가(전원 실패)" if c in dead else ""
             print(f"  {c:<8}{n:>6}{0.32:>10.3f}{sg:>10.3f}{m:>11.3f}{flag}")
         print(f"  ※ 실측 σ 가 가정보다 작으면 검정력이 생각보다 좋다는 뜻이다(반대면 나쁘다).")
         for c in sorted(dead):
-            print(f"  ✗ {c}: 모든 팔의 환자별 F1 이 **전부 0** → σ=0 은 검정력이 완벽하다는"
-                  f" 뜻이 아니라\n     그 리듬이 한 번도 검출되지 않았다는 뜻이다."
-                  f" MDE 0.000 을 신뢰하지 말 것.")
+            print(f"  ✗ {c}: 어느 팔도 F1 0.10 을 못 넘었다 → σ 가 작은 것은 정밀해서가"
+                  f" 아니라\n     **전원이 실패해 흩어질 여지가 없기** 때문이다."
+                  f" 이 MDE 를 신뢰하지 말 것.")
     return out
 
 
@@ -2254,6 +2264,26 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── σ 가드: '전원 거의 실패' 도 잡는지 (VT 사고) ──────────────────────────
+    #  ★실제 사고: 6클래스 실행에서 VT 의 전 팔 F1 이 0.000~0.024 였는데 σ 0.077 →
+    #    MDE 0.040 이 '검정력 충분' 처럼 찍혔다. σ 가 작은 것은 정밀해서가 아니라
+    #    전원이 실패해 흩어질 여지가 없기 때문이다. 가드가 '정확히 0' 만 봐서 놓쳤다.
+    ptiny = np.where(keep, 0, -1).astype(np.int64)      # 전부 클래스0 으로 예측
+    ptiny[np.flatnonzero(keep)[:3]] = 1                # 3창만 클래스1 (F1 ≈ 0.02)
+    Otiny = mkout({"A1.RR산포": ptiny, "A2.RSN": ptiny.copy()})
+    sg_t = sigma_measured(Otiny, verbose=False)
+    f_t = win_macro(ptiny[keep], yv[keep], pidv[keep], wf["classes"])
+    mx_t = max(f_t[c][0] for c in wf["classes"][1:] if np.isfinite(f_t[c][0]))
+    ok(mx_t < 0.10, f"합성: 소수 클래스 최고 F1 이 0.10 미만 ({mx_t:.4f})")
+    ok(any(np.isfinite(v[0]) for v in sg_t.values()), "σ 가 계산된다")
+    # 가드가 실제로 표시하는지 (출력에서 확인)
+    import io, contextlib
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        sigma_measured(Otiny, verbose=True)
+    ok("전원 실패" in buf.getvalue(),
+       "★전 팔이 거의 실패하면 '측정 불가(전원 실패)' 로 표시된다 — MDE 를 믿지 않게")
 
     # ── 우선순위 라벨링 + 동반 기록 ──────────────────────────────────────────
     #  ★검증 성질: AF 중 VT 연발이 있는 창은 (a) y=VT 로 라벨되고 (b) present 에는
