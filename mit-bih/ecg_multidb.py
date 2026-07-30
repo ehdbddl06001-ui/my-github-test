@@ -250,6 +250,10 @@ def rate_correct_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
             head += f"   N 창에서 추정한 α = {a_fit:.3f}"
         else:
             head += "   (N 창이 50개 미만이라 α 추정 불가)"
+        if tname.endswith("_cv"):
+            print(f"\n  ⚠ {tname} 는 이미 **무차원**(SD/평균)이다. RR^α 로 나누는 것은"
+                  f" 보정이 아니라\n     오히려 RR 의존을 **주입**하는 것이다 →"
+                  f" α=0 행만 의미가 있다.")
         print(head)
         print(f"    {'보정':<16}{'ρ|N':>7}{'전체 환자AUC':>24} |"
               f"{'★심박수 맞춘 AUC':>24}   판정")
@@ -284,7 +288,16 @@ def rate_correct_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
             #   '심박수를 맞춰도 갈린다'는 결론이 조용히 위조된다(합성 검증이 잡았다).
             mres = [_auc_matched(v, A, B) for A, B in PAIRS]
             aum = [r_[0] for r_ in mres]; nbins = [r_[1] for r_ in mres]
+            # ★비율은 **같은 쌍 안에서** 내야 한다. 예전엔 전체 au 의 최대와
+            #   맞춤 aum 의 최대를 나눴는데, 맞춤이 되는 쌍은 AFIB/N 하나뿐이고
+            #   전체 최대는 AFL 쌍에서 나오는 일이 많아 **다른 쌍을 나눴다**.
+            #   그래서 '160% 유지'(비율>1) 같은 있을 수 없는 값이 찍혔다.
             dmax = max((abs(u - 0.5) for u in au if np.isfinite(u)), default=float("nan"))
+            reds = [abs(m_ - 0.5) / abs(u_ - 0.5)
+                    for u_, m_ in zip(au, aum)
+                    # ★분모가 0.5 에 가까우면 비율이 폭발한다(실측에서 533% 가 나왔다).
+                    #   보정 후 전체 AUC 가 우연히 0.5 를 지나가는 α 가 있기 때문이다.
+                    if np.isfinite(u_) and np.isfinite(m_) and abs(u_ - 0.5) > 0.05]
             dmm = max((abs(u - 0.5) for u in aum if np.isfinite(u)), default=float("nan"))
             # ★보정으로 값이 상수가 되면 AUC 는 부동소수 잡음의 순위일 뿐이다.
             #   합성 검증에서 완전 보정된 특징(정보 0)이 AUC 0.667 로 찍혀
@@ -303,21 +316,28 @@ def rate_correct_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
                 verd = (f"판정 불가 — 심박수 맞춤 표본 부족(적격 구간 "
                         f"{max(nbins)}개)")
             else:
+                # ★주지표는 **맞춤 AUC 자체**다. 비율은 분모(보정 후 전체 AUC)가
+                #   0.5 를 지나가면 폭발해서 신뢰할 수 없다 — 실측에서 α 를 바꾸는
+                #   동안 rt_med 의 비율이 28%→533%→34% 로 튀었는데, 정작 맞춤 AUC 는
+                #   0.557~0.570 으로 거의 움직이지 않았다. 움직이지 않는 쪽이 답이다.
+                #   "심박수를 맞추면 얼마나 갈리는가" 가 우리가 물은 것이고,
+                #   그것을 그대로 읽는 것이 가장 정직하다.
+                red = float(np.median(reds)) if reds else float("nan")
                 # ★이진 판정을 하지 않는다. '심박수를 맞추면 판별력이 얼마나
                 #   줄어드는가' 를 비율로 보고한다. 구간 폭(0.06초) 안에 남는
                 #   잔여 심박수 기울기 때문에 순수 심박수 특징도 맞춤 AUC 가
                 #   정확히 0.5 가 되지는 않는다 — 그래서 어떤 고정 문턱으로
                 #   '독립' 을 선언해도 합성 검증에서 오판이 났다. 검증할 수 없는
                 #   문턱을 쓰는 대신 숫자를 내놓고 애매하면 애매하다고 말한다.
-                red = dmm / dmax if dmax > 0 else float("nan")
-                keep_pct = 100 * red
-                if red < 0.35:
-                    verd = f"✗판별력의 {100-keep_pct:.0f}% 가 심박수 — 형태 기여 미미"
-                elif red > 0.75:
-                    verd = f"★심박수 맞춰도 {keep_pct:.0f}% 유지 — 독립인 형태 정보"
+                red = float(np.median(reds))
+                rtxt = (f", 원래의 {100*red:.0f}%" if np.isfinite(red) and red <= 3
+                        else "")
+                if dmm < 0.05:
+                    verd = f"✗심박수 맞추면 못 가름(AUC {0.5+dmm:.2f}) — 판별력은 심박수였다"
+                elif dmm < 0.15:
+                    verd = f"△약함(맞춤 AUC {0.5+dmm:.2f}{rtxt})"
                 else:
-                    verd = (f"△부분적 — 심박수 맞추면 판별력 {100-keep_pct:.0f}% 감소"
-                            f"(해석 필요)")
+                    verd = f"★심박수 맞춰도 갈린다(맞춤 AUC {0.5+dmm:.2f}{rtxt})"
             print(f"    {tag:<16}{rho_n:>7.3f}" +
                   "".join(f"{u:>8.3f}" if np.isfinite(u) else f"{'—':>8}"
                           for u in au) + " |" +

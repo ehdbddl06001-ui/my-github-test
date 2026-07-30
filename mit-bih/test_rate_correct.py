@@ -75,8 +75,9 @@ print(f"        보정 전 판정: {r0['verdict']}")
 print(f"        보정 후 판정: {rf['verdict']}  "
       f"{'OK' if '소멸' in rf['verdict'] else '✗실패'}")
 print(f"검산 3b 보정 없는 rt_med(순수 심박수)는 '독립' 으로 선언되면 안 된다")
-print(f"        판정: {r0['verdict']}  {'OK' if '독립' not in r0['verdict'] else '✗실패'}")
+print(f"        판정: {r0['verdict']}  "
+      f"{'OK' if not r0['verdict'].startswith('★') else '✗실패'}")
 p0 = verd("pr_med", "보정 없음"); pf = verd("pr_med", "α=0.500")
 print(f"검산 4  pr_med 는 형태 정보만 있으므로 보정해도 판별력이 남아야 한다")
 print(f"        보정 전: {p0['verdict']}   보정 후(α=0.5): {pf['verdict']}  "
-      f"{'OK' if ('독립' in pf['verdict'] or '유지' in pf['verdict']) else '✗실패'}")
+      f"{'OK' if pf['verdict'].startswith('★') else '✗실패'}")
