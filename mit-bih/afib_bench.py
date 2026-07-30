@@ -1904,6 +1904,66 @@ def _arm_pers_model(w, tr, te, ncls, seed, epochs=20, q=0.25):
 _arm_pers_model._use_seq, _arm_pers_model._aux_mode = True, "pers"
 PERS_ARMS["A6.모집단→개인화(3단계)"] = _arm_pers_model
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  10. 1층에서 통했던 축의 2층 전이 (사용자 1층 이력에서 가져옴)
+#
+#  ★전이 가능성을 결정하는 것은 알고리즘이 아니라 **클래스 구조**다.
+#    1층: S ~2.5%, V ~7% — 환자 내에서도 드물다 → "그 환자는 대체로 정상" 이 참
+#    2층: AFIB 54.4%, 환자 내 최대 100% — **지속성 환자에서 그 가정이 거짓**
+#    환자 자신의 점수·특징 분포를 '정상 기준' 으로 쓰는 기법은 전부 그 가정에
+#    기대고 있다. 그래서 1층에서 +0.147 이던 psa_rel 이 2층에서는 A5/A6 로 미달했고,
+#    1층의 '무라벨 개인화 = 전부 0' 과 2층 결과가 **일치**한다(층을 넘은 재현).
+# ─────────────────────────────────────────────────────────────────────────────
+def pp_center(OUT, arm, cls="AFIB", mode="median", c=0.0, verbose=True):
+    """환자별 점수 중심화 후 결정 — 1층 `_pp_center2`(+5.3%, 임계무관)의 2층 이식.
+
+    결정 규칙: score − center_p ≥ c.  center_p 는 그 환자 점수 분포에서 온다.
+      "median" 중앙값   "q25" 하위 25% 분위   "trimmean" 10% 절삭평균
+
+    ★사전 예측: **2층에서는 실패해야 한다.** 지속성 AF 환자는 점수 중앙값이 높아
+      중심화가 그 사람의 AF 창을 전부 문턱 아래로 내린다. 1층에서 통한 이유는
+      S/V 가 드물어 중앙값이 곧 '정상 수준' 이었기 때문이다.
+      → 실패하면 그것은 알고리즘의 실패가 아니라 **가정의 불일치**이고, 층화
+        (지속성 vs 정상)에서 정확히 그 형태로 보여야 한다. 그 형태가 아니면
+        내 설명이 틀린 것이다(반증 가능하게 적어 둔다).
+    """
+    r = OUT["res"][arm]
+    if r.get("score") is None:
+        raise RuntimeError(f"{arm}: score 가 없습니다.")
+    ci = OUT["classes"].index(cls)
+    W = OUT["w"]
+    m = r["mask"] & (W["y"] >= 0)
+    loc = np.flatnonzero(m)
+    s = np.asarray(r["score"])[loc, ci]
+    pid = np.asarray(W["pid"])[loc]
+    pred = np.full(len(W["y"]), -2, np.int64)
+    for p in np.unique(pid):
+        k = np.flatnonzero(pid == p)
+        v = s[k]
+        cen = (np.median(v) if mode == "median" else
+               np.quantile(v, 0.25) if mode == "q25" else
+               float(np.mean(np.sort(v)[int(0.1 * len(v)):max(1, int(0.9 * len(v)))])))
+        pred[loc[k]] = np.where(v - cen >= c, ci, -2)
+    base = win_macro(r["pred"][m], W["y"][m], W["pid"][m], OUT["classes"])[cls][0]
+    new = win_macro(pred[m], W["y"][m], W["pid"][m], OUT["classes"])[cls][0]
+    if verbose:
+        print(f"\n  [환자별 점수 중심화]  {arm} / {cls}  mode={mode} c={c:+.2f}")
+        print(f"    창 F1  {base:.4f} → {new:.4f}  ({new-base:+.4f})")
+        grp = persistence_split(OUT, cls)
+        f0 = win_macro(r["pred"][m], W["y"][m], W["pid"][m], OUT["classes"],
+                       detail=True)[cls]
+        f1 = win_macro(pred[m], W["y"][m], W["pid"][m], OUT["classes"],
+                       detail=True)[cls]
+        print(f"    {'층':<8}{'n':>4}{'원본':>9}{'중심화':>9}{'Δ':>9}")
+        for g in ("정상", "발작성", "지속성"):
+            sel = np.array([grp.get(int(i)) == g for i in f0[3]])
+            if sel.any():
+                a_, b_ = float(np.mean(f0[2][sel])), float(np.mean(f1[2][sel]))
+                print(f"    {g:<8}{int(sel.sum()):>4}{a_:>9.3f}{b_:>9.3f}{b_-a_:>+9.3f}")
+        print(f"    ※ 지속성에서 크게 떨어지면 예측대로다(그 환자의 '중앙값'이 곧 AF).")
+    return dict(pred=pred, mask=m, f1_base=base, f1_new=new)
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증 — 합성 RR 로 wfdb/torch 없이 로직만 검증
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2064,6 +2124,36 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 환자별 점수 중심화 (1층 축의 2층 전이) ───────────────────────────────
+    #  ★검증 성질: **지속성**(AF 가 대부분인) 환자에서 중심화가 무너져야 한다.
+    #    그 환자의 점수 중앙값은 '정상 수준'이 아니라 'AF 수준'이므로, 중앙값을
+    #    빼면 AF 창의 절반이 문턱 아래로 떨어진다. 1층에서 통한 이유는 S/V 가
+    #    드물어 중앙값이 곧 정상 수준이었기 때문이고, 2층에는 그 전제가 없다.
+    #    (이산 점수로는 재현이 안 된다 — 중앙값이 두 값 사이에 떨어져 문턱이
+    #     우연히 맞는다. 실제처럼 **연속 점수**로 검증한다.)
+    rng4 = np.random.RandomState(11)
+    nw4 = 200
+    y4 = np.r_[(rng4.rand(nw4) < 0.95).astype(np.int64),        # 환자0 = 지속성 95%
+               (rng4.rand(nw4) < 0.10).astype(np.int64)]        # 환자1 = 발작성 10%
+    pid4 = np.r_[np.zeros(nw4, np.int64), np.ones(nw4, np.int64)]
+    S4 = np.zeros((len(y4), 2), "float32")
+    S4[:, 1] = np.clip(np.where(y4 == 1, 0.80, 0.20)
+                       + 0.10 * rng4.randn(len(y4)), 0.001, 0.999)
+    S4[:, 0] = 1 - S4[:, 1]
+    O4 = dict(classes=["N", "AFIB"], split="patient",
+              res={"A1.RR산포": dict(pred=(S4[:, 1] >= 0.5).astype(np.int64),
+                                    mask=np.ones(len(y4), bool), score=S4)},
+              w=dict(y=y4, pid=pid4, db=np.array(["s"] * len(y4)),
+                     dur=np.ones(len(y4), "float32"),
+                     nov=np.ones(len(y4), bool),
+                     t0=np.tile(np.arange(nw4, dtype="float32"), 2)))
+    R4 = pp_center(O4, "A1.RR산포", "AFIB", mode="median", c=0.0, verbose=False)
+    ok(R4["f1_base"] > 0.95, f"합성: 원본 점수가 거의 완벽 (창 F1 {R4['f1_base']:.3f})")
+    ok(R4["f1_new"] < R4["f1_base"] - 0.05,
+       f"★중심화가 좋은 점수를 망친다 ({R4['f1_base']:.3f} → {R4['f1_new']:.3f}) — "
+       f"지속성 환자의 점수 중앙값은 정상 수준이 아니다")
+    ok(set(np.unique(R4["pred"])) <= {1, -2}, "중심화 예측도 이진(지표 함수와 호환)")
 
     # ── 체크포인트 왕복: _meta 없이도 복구되는지 ─────────────────────────────
     #  ★실제 사고: bench_afib 은 팔별 체크포인트만 쓰고 _meta 는 save_afib 만 썼다.
