@@ -2,6 +2,80 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0129",
+  "topic": "Infectious Disease",
+  "subtopic": "",
+  "title": "Secondary Atrial Fibrillation in Critically Ill Sepsis Patients: Evaluating the Role of Early Oral Anticoagulants in a Retrospective Multi-Center Study",
+  "authors": [
+   "Qadeer Abdul",
+   "Fouad Michele",
+   "Bayomi Doaa",
+   "Gohar Najam",
+   "Khawar Muneeb",
+   "Muhammad Awon",
+   "Ghuman Shameer Iqbal",
+   "Khalid Marwah Bintay",
+   "et al."
+  ],
+  "journal": "Journal of intensive care medicine",
+  "doi": "10.1177/08850666261473208",
+  "pmid": "42530892",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42530892/",
+  "pubdate": "2026-07-30",
+  "date": "2026-07-30",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "BackgroundNew-onset atrial fibrillation (AF) is a common complication of sepsis, affecting 5-25% of patients, and is associated with increased mortality and ischemic stroke. With limited high-quality evidence, the net clinical benefit of early oral anticoagulant (OAC) initiation in this high-risk setting remains uncertain.MethodsAdults ≥18 hospitalized with sepsis who developed new-onset AF within 3 days were identified from the TriNetX database. Cohort one included patients who received at least three doses of OAC within 3 days after AF onset and was compared to those who did not receive OAC (cohort two). Propensity score matching (1:1; 90 covariates; caliper 0.1) was employed to balance the groups. The primary outcomes assessed were evaluated at 7, 14, and 30 days. Risk ratios and risk differences with 95% confidence intervals were estimated using intention-to-treat analysis.ResultsAmong 136,172 eligible patients, 10,773 were matched per group. Early OAC use was associated with significantly lower mortality at 7, 14, and 30 days (RR 0.19-0.35; all p < 0.001) and reduced ischemic stroke risk across the same intervals (RR 0.74-0.83; p ≤ 0.004). Major bleeding rates were also lower (RR 0.40-0.49; all p < 0.001). MACEs showed a modest reduction at 7 days (RR 0.92; p = 0.001) but not afterward. Thromboembolic events were similar beyond the first week. The need for thrombolytics (RR 0.55-0.59) and anti-hemorrhagic therapy (RR≈0.69) consistently remained lower with OACs (all p < 0.001). Falsification outcomes were neutral, except for a minimal late increase for osteoarthritis at 30 days (RR 1.16; p = 0.03).ConclusionIn sepsis-associated NOAF, early OAC initiation was associated with reduced short-term mortality and ischemic stroke without excess bleeding or thromboembolic risk. The large magnitude of mortality benefit and paradoxical reduction in bleeding likely reflect residual confounding by clinical stability and patient selection. Findings warrant cautious interpretation given the observational design; prospective trials are needed.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0128",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Dapagliflozin and Acute Kidney Injury Following Cardiac Surgery: A Randomized Clinical Trial",
+  "authors": [
+   "Oosterom-Eijmael Maartina J P",
+   "Hulst Abraham H",
+   "de Oliveira Nelson P Monteiro",
+   "Niesten Ed D",
+   "Wietsma Nicobert E",
+   "Gerritse Bastiaan M",
+   "Scohy Thierry V",
+   "Rettig Thijs C D",
+   "et al."
+  ],
+  "journal": "JAMA",
+  "doi": "10.1001/jama.2026.9268",
+  "pmid": "42530910",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42530910/",
+  "pubdate": "2026-07-30",
+  "date": "2026-07-30",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**IMPORTANCE:** Two percent to 50% of patients undergoing elective cardiac surgery experience acute kidney injury (AKI) postoperatively. Medications to prevent AKI after elective cardiac surgery have not been identified.\n\n**OBJECTIVE:** In patients undergoing elective cardiac surgery, to evaluate whether initiating dapagliflozin 1 day prior to surgery reduces the incidence of AKI at 7 days after cardiac surgery, compared with placebo.\n\n**DESIGN, SETTING, AND PARTICIPANTS:** Multicenter, double-blind, placebo-controlled randomized clinical trial conducted at 2 academic medical centers and 5 nonacademic hospitals in the Netherlands. Eligible participants were adults undergoing elective cardiac surgery. Enrollment occurred between June 8, 2023, and January 27, 2025. Final follow-up occurred May 16, 2025.\n\n**INTERVENTION:** Patients were randomized 1:1 to receive either dapagliflozin (10 mg orally; n = 392) or placebo once daily (n = 392), beginning on the day before surgery and continuing through the second postoperative day (total of 4 doses).\n\n**MAIN OUTCOME AND MEASURE:** The primary outcome was the between-group difference in AKI (defined as an increase in serum creatinine level by at least 0.3 mg/dL [26.5 µmol/L] within 48 hours after surgery, a 1.5-fold creatinine increase within 7 days of surgery, or urine output less than 0.5 mL/kg/h for 6 to 12 hours according to Kidney Disease: Improving Global Outcomes criteria) during the first 7 postoperative days.\n\n**RESULTS:** Of 784 participants enrolled, 778 (99%) completed follow-up testing (median age, 68 [61-74] years; 76% male; 97% White; median body mass index, 27 [IQR, 25-30]; and median estimated glomerular filtration rate, 80 [IQR, 67-89] mL/min/1.73 m2). Compared with placebo, dapagliflozin reduced the incidence of AKI (28% vs 52%; relative risk, 0.54 [95% CI, 0.45-0.65]; P < .001) over 7-day follow-up after surgery. Atrial fibrillation and reoperation were the most frequent adverse events. The incidence of atrial fibrillation was 45% (176/392) in the dapagliflozin group vs 45% (176/392) in the placebo group, and the incidence of reoperation was 11% (43/392) vs 10% (39/392), respectively.\n\n**CONCLUSIONS AND RELEVANCE:** In patients undergoing elective cardiac surgery, 4 doses of dapagliflozin, beginning the day before surgery, reduced the incidence of AKI during the 7-day postoperative period.\n\n**TRIAL REGISTRATION:** ClinicalTrials.gov Identifier: NCT05590143.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0127",
   "topic": "Surgery",
   "subtopic": "",
