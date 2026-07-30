@@ -2,6 +2,72 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0127",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Abstract: A Rare Surgical Complication of an Internal Hernia Secondary to Ureter Mobilization from an Ileal Conduit: A Case Report",
+  "authors": [
+   "Knoblich Cole",
+   "Brozik Michael"
+  ],
+  "journal": "South Dakota medicine : the journal of the South Dakota State Medical Association",
+  "doi": "",
+  "pmid": "42526005",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42526005/",
+  "pubdate": "2026-05",
+  "date": "2026-07-29",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**INTRODUCTION:** Internal hernias occur when abdominal viscera, such as small bowel loops, protrude through a peritoneal or mesenteric defect into the abdominal or pelvic cavity. The origin of these internal orifices can be congenital, or acquired by inflammation, trauma, or previous surgeries, like gastric bypass. Although internal hernias make up a small portion of small bowel obstructions, that number is slowly increasing due to higher volumes of bariatric surgeries. However, these surgeries are not the only ones that increase patient's risk for internal hernias. Here we present a patient with an internal hernia from ureter mobilization from an ileal conduit.\n\n**CASE REPORT:** We present a 46-year-old female with history of cervical cancer and ileal conduit for urinary diversion secondary to a vesicovaginal fistula who presented to our emergency department with acute onset of abdominal pain. An abdominal and pelvic CT showed thick-walled, inflamed, and dilated small bowel loops with concerns for a closed loop obstruction from an internal hernia. She became tachycardic and laboratory studies showed elevated white count and lactic acid. Emergent exploratory laparotomy was recommended. Immediately on inspection, ischemic small bowel with proximal dilation was identified. It became apparent that the patient had an internal hernia as a result of her left ureter being mobilized and anastomosed to her ileal conduit. The threatened bowel was reduced with little difficulty and was visually viable with peristalsis. There was no remaining bowel identified within any internal defects and the patient tolerated the procedure well.\n\n**CONCLUSION:** Ileal conduits have become a gold standard for urine diversion because of its ease and lower postoperative complications. Defects created often go unclosed which increases the risk for future internal hernias. General surgeons should have increased suspicion for internal hernias in the post-ileal conduit patient who presents with symptoms of bowel obstruction.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0126",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "SGLT2 Inhibitors as Modulators of Mitochondrial Ion Transport and ER-Mitochondria Crosstalk in Diabetic Cardiomyopathy",
+  "authors": [
+   "Flores Jessa",
+   "Garcia Maria Victoria Faith",
+   "Abedejos Prycelline",
+   "Hernandez Jed Allyn",
+   "Pham Trong Kha",
+   "Kim Hyoung Kyu",
+   "Marquez Jubert",
+   "Han Jin"
+  ],
+  "journal": "American journal of physiology. Cell physiology",
+  "doi": "10.1152/ajpcell.00230.2026",
+  "pmid": "42526021",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42526021/",
+  "pubdate": "2026-07-29",
+  "date": "2026-07-29",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Diabetic cardiomyopathy (DCM) is a major complication of type 2 diabetes mellitus and a leading contributor to heart failure. A central feature of DCM is the disruption of mitochondrial bioenergetics and calcium homeostasis, processes that are tightly regulated through mitochondria-associated endoplasmic reticulum membranes (MAMs). These ER-mitochondria contact sites coordinate mitochondrial ion transport systems, including the mitochondrial calcium uniporter (MCU), Na⁺/Ca²⁺ exchanger (NCLX), and potassium channels, which collectively govern mitochondrial metabolism, redox balance, and cell survival.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0125",
   "topic": "Surgery",
   "subtopic": "",
