@@ -38,6 +38,9 @@
 #
 #  자기검증: python afib_bench.py --selftest   (합성 RR 로 wfdb/torch 없이 검증)
 # =============================================================================
+import os
+import zlib
+
 import numpy as np
 
 _BASE = globals().get("_BASE", "/content/drive/MyDrive/mitbih")
@@ -758,7 +761,10 @@ def _cost(w, arms, folds, epochs):
     rf, d = 5, 1
     while rf < L and d <= 64:                  # _rsn 의 수용야 자동확장과 동일한 규칙
         d *= 2; mac += 64 * 64 * 3 * L; rf += 2 * d
-    nseq = sum(1 for a in arms if a.startswith(("A2", "A3")))
+    # ★팔 자신이 선언한 _use_seq 로 센다. 예전엔 이름이 "A2"/"A3" 로 시작하는지
+    #   봤는데, 그러면 **A4(시퀀스 팔)가 안 세어져** 추정이 25% 낮게 나왔다.
+    #   이름 규칙으로 성질을 추측하면 팔을 추가할 때마다 조용히 틀린다.
+    nseq = sum(1 for f in arms.values() if getattr(f, "_use_seq", False))
     ntr = sum(len(tr) for _, tr, _ in folds)
     tot = nseq * ntr * epochs * 3 * mac        # 순전파+역전파 ≈ 3배
     r = tot / 87e12
@@ -771,7 +777,75 @@ def _cost(w, arms, folds, epochs):
         print(f"    ⚠ 먼저 dbs=(\"afdb\",\"mitdb\") + k=3 으로 배관을 검증하고 늘릴 것.")
 
 
-def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=True):
+def _run_fp(w, folds, epochs, split, keep):
+    """이 실행의 지문. 체크포인트를 **다른 조건의 결과와 섞지 않기** 위해 쓴다.
+
+    창 수·라벨·환자·폴드 경계·에폭이 하나라도 다르면 지문이 달라지고, 그러면
+    옛 팔을 재사용하지 않는다. 지문 없이 팔별로 저장하면, 예컨대 k=3 으로 돌린
+    A1 과 k=5 로 돌린 A2 를 나란히 놓고 '짝지은' 검정을 하게 된다 — 짝이 아니다.
+    """
+    import hashlib
+    h = hashlib.sha1()
+    for a in (np.asarray(w["y"]), np.asarray(w["pid"]),
+              np.array([len(keep), int(w["W"]), int(w["stride"]), epochs]),
+              np.array([w["aux"].shape[1], int(w.get("n_rr", -1))])):
+        h.update(np.ascontiguousarray(a).tobytes())
+    # ★길이를 함께 넣어야 한다. 안 넣으면 (학습 0~9 / 테스트 10~19) 와
+    #   (학습 0~10 / 테스트 11~19) 가 **같은 바이트 스트림**(0..19)이 되어 지문이
+    #   같아진다 — 폴드가 다른데 같다고 판정해 짝지을 수 없는 결과를 재사용하게
+    #   된다. 자기검증이 이걸 잡았다(경계 구분자 없는 해시 연결의 고전적 함정).
+    h.update(np.array([len(folds)]).tobytes())
+    for nm, tr, te in folds:
+        h.update(nm.encode())
+        h.update(np.array([len(tr), len(te)]).tobytes())
+        h.update(np.ascontiguousarray(tr).tobytes())
+        h.update(np.ascontiguousarray(te).tobytes())
+    h.update(split.encode())
+    return h.hexdigest()[:16]
+
+
+def save_afib(OUT, tag, base=None):
+    """결과를 Drive 에 저장. 학습 0초로 report_afib 를 다시 돌릴 수 있다."""
+    d = f"{base or _BASE}/afib_runs/{tag}"
+    os.makedirs(d, exist_ok=True)
+    W = OUT["w"]
+    np.savez(f"{d}/_meta.npz", classes=np.array(OUT["classes"]), split=OUT["split"],
+             fp=OUT.get("fp", ""), **{k: W[k] for k in
+                                      ("y", "pid", "db", "dur", "nov", "t0")})
+    for nm, r in OUT["res"].items():
+        np.savez(f"{d}/{_safe(nm)}.npz", pred=r["pred"], mask=r["mask"],
+                 score=r["score"] if r["score"] is not None else np.zeros(0),
+                 name=nm)
+    print(f"  ✔ 저장 {d}  (팔 {len(OUT['res'])})")
+    return d
+
+
+def load_afib(tag, base=None, verbose=True):
+    """저장된 결과를 되살린다 — 런타임이 끊겨도 report 는 다시 볼 수 있다."""
+    d = f"{base or _BASE}/afib_runs/{tag}"
+    m = np.load(f"{d}/_meta.npz", allow_pickle=True)
+    OUT = {"classes": [str(x) for x in m["classes"]], "split": str(m["split"]),
+           "fp": str(m["fp"]), "res": {},
+           "w": {k: m[k] for k in ("y", "pid", "db", "dur", "nov", "t0")}}
+    for fn in sorted(os.listdir(d)):
+        if fn.startswith("_") or not fn.endswith(".npz"):
+            continue
+        a = np.load(f"{d}/{fn}", allow_pickle=True)
+        sc = a["score"]
+        OUT["res"][str(a["name"])] = dict(pred=a["pred"], mask=a["mask"],
+                                          score=sc if sc.size else None)
+    if verbose:
+        print(f"  ✔ 불러옴 {d}  팔 {len(OUT['res'])}: {list(OUT['res'])}")
+    return OUT
+
+
+def _safe(s):
+    """팔 이름을 파일명으로. 한글은 그대로 두고 경로 구분자만 없앤다."""
+    return "".join(c if c not in '/\\:*?"<>| ' else "_" for c in s)
+
+
+def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=True,
+               tag=None, resume=True):
     """창단위 2층 벤치.
 
     split="patient" : GroupKFold(환자)  — 같은 DB 안 일반화
@@ -804,8 +878,19 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
             gkf = GroupKFold(n_splits=k)
             for fi, (a, b) in enumerate(gkf.split(keep, y[keep], groups=pid[keep])):
                 folds.append((f"r{rep}f{fi}", keep[a], keep[b]))
+    fp = _run_fp(w, folds, epochs, split, keep)
+    ckdir = None
+    if tag:
+        ckdir = f"{_BASE}/afib_runs/{tag}"
+        os.makedirs(ckdir, exist_ok=True)
+    OUT["fp"] = fp
     print(f"\n=== 2층 벤치 [{split}]  팔 {len(arms)} × 폴드 {len(folds)} = "
           f"{len(arms)*len(folds)}회 학습 ===")
+    if ckdir:
+        print(f"    체크포인트 {ckdir}  지문 {fp}  (팔마다 저장 — 끊겨도 이어짐)")
+    else:
+        print(f"    ⚠ tag 를 주지 않았습니다 → 중간 저장 없음. 런타임이 끊기면 전부"
+              f" 잃습니다.\n      권장: bench_afib(w, tag=\"run1\") ")
     _cost(w, arms, folds, epochs)
     nrr = int(w.get("n_rr", w["aux"].shape[1])); nall = w["aux"].shape[1]
     print(f"    보조특징: RR {nrr}열" + (f" + 심방 {nall-nrr}열 = {nall}" if nall > nrr
@@ -816,15 +901,38 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
         print(f"      {a:<18} 시퀀스 {'O' if sq else 'X' if sq is False else '?'}  "
               f"보조 {md}({nc}열)")
     for nm, fn in arms.items():
+        # ── 팔 단위 체크포인트 ────────────────────────────────────────────────
+        #  ★런타임이 반복해서 끊기는 환경이다. 80,000창 × 5폴드 × 7팔은 2~3시간이라
+        #    한 세션에 안 끝날 수 있고, 예전 구현은 **끝까지 못 가면 전부 잃었다**
+        #    (심방특징에서 실제로 그렇게 두 시간을 날렸다). 팔 하나가 끝날 때마다
+        #    Drive 에 저장하고, 다시 부르면 지문이 같은 팔은 건너뛴다.
+        cp = f"{ckdir}/{_safe(nm)}.npz" if ckdir else None
+        if cp and resume and os.path.exists(cp):
+            a = np.load(cp, allow_pickle=True)
+            if str(a["fp"]) == fp:
+                sc = a["score"]
+                OUT["res"][nm] = dict(pred=a["pred"], mask=a["mask"],
+                                      score=sc if sc.size else None)
+                print(f"  ↻ {nm:<18} 이미 계산됨 — 건너뜀")
+                continue
+            print(f"  ⚠ {nm}: 저장된 결과의 조건이 다릅니다(지문 불일치) → 다시 학습")
         P = np.full(len(y), -1, np.int64)
         S = np.zeros((len(y), ncls), "float32")
         for fname, tr, te in folds:
-            pr = fn(w, tr, te, ncls, seed=abs(hash(fname)) % 10000, epochs=epochs)
+            # ★시드를 hash() 로 만들면 안 된다 — 파이썬 문자열 해시는 프로세스마다
+            #   랜덤(PYTHONHASHSEED)이라 같은 폴드가 실행마다 다른 시드를 받았다.
+            #   그러면 재실행이 재현되지 않고, 세션을 나눠 돌린 팔끼리 조건이 달라진다.
+            pr = fn(w, tr, te, ncls, seed=zlib.crc32(fname.encode()) % 10000,
+                    epochs=epochs)
             P[te] = pr.argmax(1); S[te] = pr
             if verbose:
-                print(f"  {nm:<18}{fname}  학습 {len(tr):,} / 테스트 {len(te):,}")
+                print(f"  {nm:<18}{fname}  학습 {len(tr):,} / 테스트 {len(te):,}",
+                      flush=True)
         m = P >= 0
         OUT["res"][nm] = dict(pred=P, score=S, mask=m)
+        if cp:
+            np.savez(cp, pred=P, score=S, mask=m, name=nm, fp=fp)
+            print(f"  ✔ {nm} 저장 ({ckdir})", flush=True)
     OUT["w"] = dict(y=y, pid=pid, db=dbv, dur=w["dur"], nov=w["nov"], t0=w["t0"])
     _check_distinct(OUT)
     return OUT
@@ -1124,6 +1232,30 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 저장/불러오기·지문 (체크포인트가 조건을 섞지 않는지) ─────────────────
+    import tempfile
+    tb = tempfile.mkdtemp()
+    Osave = mkout({"A1.RR산포": noisy(0.3), "A2.RSN": noisy(0.1)})
+    Osave["fp"] = "deadbeef"
+    save_afib(Osave, "t1", base=tb)
+    L = load_afib("t1", base=tb, verbose=False)
+    ok(set(L["res"]) == set(Osave["res"]) and L["split"] == Osave["split"],
+       "save_afib/load_afib 왕복 — 팔 이름·split 보존")
+    ok(all(np.array_equal(L["res"][a]["pred"], Osave["res"][a]["pred"])
+           for a in Osave["res"]), "예측 벡터가 비트 단위로 보존됨")
+    ok(np.array_equal(L["w"]["y"], Osave["w"]["y"]), "y/pid 등 창 메타 보존")
+    f0 = [("r0f0", np.arange(10), np.arange(10, 20))]
+    a1 = _run_fp(w, f0, 20, "patient", np.arange(len(w["y"])))
+    ok(a1 == _run_fp(w, f0, 20, "patient", np.arange(len(w["y"]))),
+       "지문은 같은 조건에서 같다(재현 가능)")
+    ok(a1 != _run_fp(w, f0, 30, "patient", np.arange(len(w["y"]))),
+       "에폭이 다르면 지문이 다르다 → 옛 팔을 재사용하지 않는다")
+    f1 = [("r0f0", np.arange(11), np.arange(11, 20))]
+    ok(a1 != _run_fp(w, f1, 20, "patient", np.arange(len(w["y"]))),
+       "폴드 경계가 다르면 지문이 다르다 → 짝지을 수 없는 결과를 섞지 않는다")
+    ok(zlib.crc32(b"r0f0") == zlib.crc32(b"r0f0"),
+       "시드는 crc32 로 결정론적(hash() 는 프로세스마다 달라 재현 불가였다)")
     print("=== 전 항목 통과 ===")
     return True
 
