@@ -156,7 +156,7 @@ def win_starts(n, W, stride):
 
 
 def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
-                 dbs=None, verbose=True):
+                 dbs=None, verbose=True, priority=None):
     """비트 코퍼스 → 창 데이터셋.
 
     ★dbs 로 DB 를 골라낼 수 있다. 심방활동 특징(2층-B)은 신호를 받은 DB 에만
@@ -188,6 +188,20 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
     # ★리듬코드 → 클래스인덱스 룩업표. 환자마다 파이썬 내포로 만들면
     #   157번 × 수만 개 객체가 된다(느리고 메모리를 튀게 한다).
     code2y = np.array([want.get(str(nm), -1) for nm in names], np.int64)
+    # ★우선순위 라벨링 준비. priority=None 이면 기존 순도 규칙 그대로다
+    #   (§17 결과의 재현성을 깨지 않기 위해 기본 동작을 바꾸지 않는다).
+    prio = prio_min = None
+    PRES = []; FRAC = []
+    if priority is not None:
+        tbl = dict(priority) if not isinstance(priority, dict) else dict(priority)
+        miss_p = [c for c in classes if c not in tbl]
+        if miss_p:
+            raise RuntimeError(f"priority 에 min_frac 이 없는 클래스: {miss_p}")
+        prio = [want[c] for c, _ in (priority if not isinstance(priority, dict)
+                                     else priority.items()) if c in want]
+        prio_min = {want[c]: float(f) for c, f in
+                    (priority if not isinstance(priority, dict) else priority.items())
+                    if c in want}
     SEQ = []; AUX = []; Y = []; PID = []; DB = []; DUR = []; NOV = []; T0 = []; PUR = []
     KEY = []                                   # (pid, 창 시작 비트인덱스) — 심방특징 결합키
     n_trans = 0
@@ -204,8 +218,23 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
             sl = slice(s, s + W)
             l = lab[sl]
             u, c = np.unique(l, return_counts=True)
-            j = int(np.argmax(c)); pu = c[j] / W
-            y = int(u[j]) if (pu >= purity and u[j] >= 0) else -1
+            if prio is None:
+                j = int(np.argmax(c)); pu = c[j] / W
+                y = int(u[j]) if (pu >= purity and u[j] >= 0) else -1
+            else:
+                # ★우선순위 라벨링: min_frac 를 넘긴 것 중 우선순위 최고.
+                #   동반 정보는 present/frac 에 남긴다(버리지 않는다).
+                fr = np.zeros(len(classes), "float32")
+                for uu, cc in zip(u, c):
+                    if uu >= 0:
+                        fr[uu] = cc / W
+                y, pu = -1, 0.0
+                for ci_ in prio:
+                    if fr[ci_] >= prio_min[ci_]:
+                        y, pu = ci_, float(fr[ci_]); break
+                PRES.append(fr >= np.array([prio_min[i] for i in range(len(classes))],
+                                           "float32"))
+                FRAC.append(fr)
             if y < 0:
                 n_trans += 1
             SEQ.append(C[:, sl]); AUX.append(_win_aux(rr[sl], valid[sl], med))
@@ -220,6 +249,11 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
              t0=np.array(T0, "float32"), pur=np.array(PUR, "float32"),
              key=np.array(KEY, np.int64), W=int(W), stride=int(stride),
              classes=list(classes))
+    if priority is not None:
+        w["present"] = np.stack(PRES)          # 다중핫: 그 창에 있었던 리듬들
+        w["frac"] = np.stack(FRAC)             # 비율(합이 1 이 아닐 수 있다: -1 비트)
+        w["priority"] = [c for c, _ in (priority if not isinstance(priority, dict)
+                                        else priority.items())]
     if verbose:
         keep = w["y"] >= 0
         gb = w["seq"].nbytes / 1e6
@@ -274,6 +308,58 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
     return w
 
 
+def cooccur_report(w, min_pat=5, top=15, verbose=True):
+    """★"함께 나온" 조합을 표로 — 우선순위 라벨이 가린 정보를 되살린다.
+
+    우선순위 라벨링은 창마다 **한 개**의 y 를 준다(모델·지표를 단일라벨로 유지하기
+    위해). 그러면 "AF 중 VT" 라는 사실은 y=VT 에 흡수돼 보이지 않는다.
+    present 다중핫으로 조합을 세어, **무엇이 무엇과 함께 나오는지**를 남긴다.
+
+    ★조합을 별도 클래스로 승격하지 않는다. 승격하면 표본이 쪼개져 전부 판정
+      불가가 된다(AFL n=11 에서 배운 것). **보고는 하고 판정은 단일라벨로 한다.**
+    """
+    if "present" not in w:
+        raise RuntimeError("present 가 없습니다 — make_windows(..., priority=...) 로 "
+                           "만든 w 가 필요합니다.")
+    cls = w["classes"]; P = w["present"]; pid = np.asarray(w["pid"])
+    keep = w["y"] >= 0
+    combo = {}
+    for i in np.flatnonzero(keep):
+        names = tuple(cls[j] for j in np.flatnonzero(P[i]))
+        if len(names) < 2:
+            continue
+        d = combo.setdefault(names, {"win": 0, "pat": set(), "y": {}})
+        d["win"] += 1; d["pat"].add(int(pid[i]))
+        d["y"][cls[w["y"][i]]] = d["y"].get(cls[w["y"][i]], 0) + 1
+    rows = sorted(combo.items(), key=lambda kv: -len(kv[1]["pat"]))
+    if verbose:
+        n_multi = sum(v["win"] for v in combo.values())
+        print(f"\n=== 동반 출현 (창 {int(keep.sum()):,} 중 2종 이상 = "
+              f"{n_multi:,} = {100*n_multi/max(int(keep.sum()),1):.1f}%) ===")
+        print(f"  {'조합':<26}{'창':>8}{'환자':>6}   우선순위 라벨 분포")
+        for nm, v in rows[:top]:
+            yd = ", ".join(f"{k} {n:,}" for k, n in
+                           sorted(v["y"].items(), key=lambda kv: -kv[1]))
+            print(f"  {'+'.join(nm):<26}{v['win']:>8,}{len(v['pat']):>6}   {yd}")
+        jud = [nm for nm, v in rows if len(v["pat"]) >= min_pat]
+        print(f"\n  환자 {min_pat}명 이상인 조합: {len(jud)}개")
+        print(f"  ※ 조합을 별도 클래스로 만들지 않는다 — 표본이 쪼개져 전부 판정")
+        print(f"     불가가 된다(AFL n=11 에서 배운 것). **보고는 하고 판정은 단일라벨.**")
+        # 임상적으로 가장 중요한 것: 다른 리듬과 섞였을 때 VT 가 라벨을 가져가는가
+        if "VT" in cls:
+            vt = cls.index("VT")
+            with_vt = [(nm, v) for nm, v in rows if "VT" in nm]
+            if with_vt:
+                tot = sum(v["win"] for _, v in with_vt)
+                got = sum(v["y"].get("VT", 0) for _, v in with_vt)
+                print(f"\n  ★VT 가 다른 리듬과 섞인 창 {tot:,} 중 {got:,}개"
+                      f"({100*got/max(tot,1):.1f}%)가 y=VT 로 라벨됐다.")
+                print(f"    100% 가 아니면 min_frac(VT)={dict(RHY_PRIORITY).get('VT')} "
+                      f"에 못 미친 짧은 VT 가 있다는 뜻이다 — 그 창은 다른 리듬으로")
+                print(f"    라벨되지만 present 에는 VT 가 남아 있다.")
+    return rows
+
+
 def win_label_scan(d, Ws=(16, 24, 32, 48, 64, 96, 128), purity=None, classes=None,
                    dbs=None, sigma=None, verbose=True):
     """★창 크기 W 를 바꾸면 리듬별 환자·창 수가 어떻게 변하는지 — **주석만** 쓴다.
@@ -304,6 +390,20 @@ def win_label_scan(d, Ws=(16, 24, 32, 48, 64, 96, 128), purity=None, classes=Non
                   f"환자 {len(np.unique(pid))}")
     want = {nm: i for i, nm in enumerate(classes)}
     code2y = np.array([want.get(str(nm), -1) for nm in names], np.int64)
+    # ★우선순위 라벨링 준비. priority=None 이면 기존 순도 규칙 그대로다
+    #   (§17 결과의 재현성을 깨지 않기 위해 기본 동작을 바꾸지 않는다).
+    prio = prio_min = None
+    PRES = []; FRAC = []
+    if priority is not None:
+        tbl = dict(priority) if not isinstance(priority, dict) else dict(priority)
+        miss_p = [c for c in classes if c not in tbl]
+        if miss_p:
+            raise RuntimeError(f"priority 에 min_frac 이 없는 클래스: {miss_p}")
+        prio = [want[c] for c, _ in (priority if not isinstance(priority, dict)
+                                     else priority.items()) if c in want]
+        prio_min = {want[c]: float(f) for c, f in
+                    (priority if not isinstance(priority, dict) else priority.items())
+                    if c in want}
     # 환자 경계를 한 번만 구한다(환자마다 전체 스캔하지 않는다)
     order = np.argsort(pid, kind="stable")
     ps = pid[order]
@@ -880,6 +980,36 @@ def _arm_rsn_dom(w, tr, te, ncls, seed, epochs=20):
 
 # ★A4 계열은 attach_atrial() 을 거친 w 에서만 의미가 있다. 기본 팔에 넣으면
 #   심방특징 없이 조용히 돌아 "심방축은 효과 없음" 이라는 가짜 결론을 만든다.
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  다중 리듬 창 라벨링 — 우선순위 + 동반 기록
+#
+#  ★리듬 주석은 비트마다 하나다(forward-fill). 따라서 "창 안에 AFIB 과 VT 가 함께"
+#    는 동시 발생이 아니라 **시간적 혼재**다 — AF 중에 VT 연발이 끼어든 것.
+#  ★그런데 순도 0.90 규칙은 그 창을 y=-1 로 버린다(3클래스 실행에서 7,267창 = 9.0%).
+#    임상적으로 가장 중요한 창(AF 중 VT)을 지우고 있었다.
+#
+#  규칙:
+#    ① 창 라벨 = min_frac 를 넘긴 리듬 중 **우선순위가 가장 높은** 것
+#    ② present(다중핫) 와 frac(비율)을 함께 저장 → "함께 나왔음" 을 잃지 않는다
+#    ③ 아무 리듬도 min_frac 를 못 넘기면 그때만 y=-1 (진짜 전이구간)
+#
+#  ★min_frac 는 클래스마다 다르다. VT 는 3초만 있어도 보고해야 하므로 낮고(0.05),
+#    서맥·정상처럼 지속으로 정의되는 리듬은 높다. **임상 판단이므로 사용자가
+#    확정할 값이다** — 아래는 초안이다.
+#  ★우선순위도 임상 판단이다. VT 최상위는 사용자와 합의됐다(치명적 부정맥).
+RHY_PRIORITY = [                      # (리듬, min_frac)  — 앞이 높은 우선순위
+    ("VT",   0.05),                   # 심실빈맥 — 짧아도 놓치면 안 된다
+    ("SBR",  0.30),                   # 서맥(arrest 계열) — 지속성으로 정의
+    ("AFIB", 0.20),                   # 심방세동
+    ("AFL",  0.20),                   # 심방조동
+    ("SVTA", 0.10),                   # 상심실성 빈맥 — 발작성이라 낮게
+    ("B",    0.30),                   # 이단맥
+    ("T",    0.30),                   # 삼단맥
+    ("AB",   0.30),                   # 심방 이단맥
+    ("N",    0.60),                   # 정상 — 가장 엄격(다른 것이 없어야 정상)
+]
 
 # ★사전등록 가설 선언표 — report_afib 가 이것을 그대로 돌린다.
 #   팔을 추가하고 여기에 안 적으면 "사전등록 검정이 없는 팔" 경고가 뜬다.
@@ -2124,6 +2254,46 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 우선순위 라벨링 + 동반 기록 ──────────────────────────────────────────
+    #  ★검증 성질: AF 중 VT 연발이 있는 창은 (a) y=VT 로 라벨되고 (b) present 에는
+    #    AFIB 과 VT 가 **둘 다** 남아야 한다. 지금 규칙(순도 0.90)은 그 창을 버린다.
+    dsyn = _synth_rr(n_pat=10, n_beat=1200, seed=2)
+    dsyn = dict(dsyn); names_s = list(dsyn["rhythm_names"])
+    if "VT" not in names_s:                     # 합성에 VT 를 심는다
+        names_s.append("VT"); dsyn["rhythm_names"] = np.array(names_s)
+    vt_code = names_s.index("VT")
+    af_code = names_s.index("AFIB")
+    rh = dsyn["rhythm"].copy()
+    p0 = np.unique(dsyn["pid"])[1]
+    idx0 = np.flatnonzero(dsyn["pid"] == p0)
+    rh[idx0[:400]] = af_code                    # 이 환자는 AF
+    rh[idx0[100:120]] = vt_code                 # AF 중 VT 연발 20비트 (창의 15.6%)
+    dsyn["rhythm"] = rh
+    CL = ("N", "AFIB", "VT")
+    w_old = make_windows(dsyn, W=128, classes=CL, verbose=False)
+    w_new = make_windows(dsyn, W=128, classes=CL, verbose=False,
+                         priority=[("VT", 0.05), ("AFIB", 0.20), ("N", 0.60)])
+    k0 = (w_new["pid"] == p0)
+    mix = k0 & (w_new["present"].sum(1) >= 2)
+    ok(mix.any(), f"AF 중 VT 창이 만들어졌다 ({int(mix.sum())}개)")
+    j0 = int(np.flatnonzero(mix)[0])
+    ok(w_new["y"][j0] == CL.index("VT"),
+       "혼재 창의 라벨이 우선순위대로 VT (짧아도 놓치지 않는다)")
+    pres = set(np.array(CL)[np.flatnonzero(w_new["present"][j0])])
+    ok({"AFIB", "VT"} <= pres,
+       f"present 에 AFIB·VT 가 **둘 다** 남는다 ({sorted(pres)}) — '함께 나왔음'")
+    ok(w_old["y"][j0] == -1,
+       "★기존 순도 0.90 규칙은 같은 창을 y=-1 로 버렸다(정보 손실 실증)")
+    ok(float(w_new["frac"][j0][CL.index("VT")]) > 0,
+       f"frac 에 VT 비율이 기록된다 ({float(w_new['frac'][j0][CL.index('VT')]):.3f})")
+    co = cooccur_report(w_new, verbose=False)
+    ok(any("VT" in nm and "AFIB" in nm for nm, _ in co),
+       "cooccur_report 가 AFIB+VT 조합을 집계한다")
+    try:
+        cooccur_report(w_old, verbose=False); ok(False, "present 없으면 예외")
+    except RuntimeError:
+        ok(True, "priority 없이 만든 w 로 동반 보고를 요구하면 예외")
 
     # ── 환자별 점수 중심화 (1층 축의 2층 전이) ───────────────────────────────
     #  ★검증 성질: **지속성**(AF 가 대부분인) 환자에서 중심화가 무너져야 한다.
