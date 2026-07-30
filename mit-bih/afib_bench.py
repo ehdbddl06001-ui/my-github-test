@@ -2197,9 +2197,25 @@ def attach_beat_feats(w, d=None, verbose=True):
       DB 신원 암기로 이어진다(위 주석 참조).
     """
     if d is None:
-        d = np.load(f"{_BASE}/afib_rr.npz", allow_pickle=True)
-    if "y5" not in d.files:
-        raise RuntimeError("코퍼스에 y5 가 없습니다 — build_rr_corpus 를 다시 돌리세요.")
+        d = load_rr(verbose=False)
+    # ★load_rr() 는 dict 를, np.load() 는 NpzFile 을 준다. 둘 다 받는다 —
+    #   d.files 를 가정해서 AttributeError 가 났다(실제 발생).
+    keys = set(d.files) if hasattr(d, "files") else set(d.keys())
+    if "y5" not in keys:
+        raise RuntimeError(
+            "코퍼스에 y5 가 없습니다.\n"
+            "  → build_rr_corpus(dbs=(\"ltafdb\",\"mitdb\",\"nsrdb\")) 로 다시 만드세요"
+            "(신호 0, ~10분).")
+    if "y5_aud" not in keys:
+        print("  ⚠ y5_aud 가 없는 옛 코퍼스입니다. y5 는 있으니 창특징은 만들 수 있지만,")
+        print("    감사 여부를 비트마다 구분할 수 없습니다 — 1층 학습에는 쓰지 마세요.")
+    # ★옛 코퍼스는 미감사 DB 의 y5 를 -1 로 지웠다. 그 상태로는 이소성이 전부 0 이
+    #   되어 조용히 무의미한 특징이 만들어진다 → 미리 잡는다.
+    _y5 = d["y5"]
+    if int(((_y5 == 1) | (_y5 == 2)).sum()) == 0:
+        raise RuntimeError(
+            "코퍼스의 y5 에 S/V 비트가 하나도 없습니다 — 미감사 DB 의 라벨을 -1 로\n"
+            "  지우던 옛 버전으로 만든 코퍼스입니다. build_rr_corpus 를 다시 돌리세요.")
     W = int(w["W"]); stride = int(w["stride"])
     pid_b, y5_b, pre_b, db_b = d["pid"], d["y5"], d["pre_rr"], d["db"]
     # 기호가 없는 DB 를 먼저 막는다
@@ -2445,6 +2461,31 @@ def selftest():
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
 
+    # ── attach_beat_feats 의 입력 계약 ───────────────────────────────────────
+    #  ★실제 사고: load_rr() 는 dict 를, np.load() 는 NpzFile 을 준다. d.files 를
+    #    가정해서 AttributeError 가 났다. 둘 다 받아야 한다.
+    wl = dict(w, db=np.array(["ltafdb"] * len(w["y"])))
+    npid = np.unique(w["pid"])
+    pid_l = np.concatenate([np.full(600, p) for p in npid])
+    y5_l = np.zeros(len(pid_l), np.int64); y5_l[1::7] = 2
+    dl = {"pid": pid_l, "y5": y5_l,
+          "pre_rr": np.full(len(pid_l), 300.0, "float32"),
+          "db": np.array(["ltafdb"] * len(pid_l)),
+          "y5_aud": np.zeros(len(pid_l), bool)}
+    w_d = attach_beat_feats(wl, dl, verbose=False)
+    ok(w_d["aux"].shape[1] == w["aux"].shape[1] + len(ECT_NAMES),
+       f"dict 코퍼스로 결합 (aux {w['aux'].shape[1]} → {w_d['aux'].shape[1]})")
+    import tempfile as _tf
+    _p = _tf.mkdtemp() + "/c.npz"; np.savez(_p, **dl)
+    w_n = attach_beat_feats(wl, np.load(_p, allow_pickle=True), verbose=False)
+    ok(np.allclose(w_d["aux"], w_n["aux"]),
+       "★NpzFile 코퍼스로도 같은 결과 — d.files 가정을 없앴다")
+    dl_old = dict(dl); dl_old["y5"] = np.full(len(pid_l), -1, np.int64)
+    try:
+        attach_beat_feats(wl, dl_old, verbose=False); ok(False, "옛 코퍼스에 예외")
+    except RuntimeError:
+        ok(True, "y5 가 전부 -1 인 옛 코퍼스면 예외 — 이소성 0 인 특징을 조용히 안 만든다")
+
     # ── 이소성 창특징 (1층↔2층 연결) ─────────────────────────────────────────
     #  ★검증: 이단맥 패턴(N-V-N-V)과 고립 이소성을 구분하는지, 그리고 기호가 없는
     #    DB 를 조용히 0 으로 채우지 않는지(그것이 DB 신원 암기로 이어진다).
@@ -2466,15 +2507,20 @@ def selftest():
     ok(fd_[nm_i["ect_frac"]] == 0 and fd_[nm_i["pause_r"]] == 1.0,
        "이소성 0 이면 비율 0, 휴지비 1(중립값)")
     ok(len(ECT_NAMES) == 8 and len(fb) == 8, "이소성 특징 8종")
-    # 기호 없는 DB 차단
-    wq5 = dict(w); wq5["n_rr"] = 10
-    class _D(dict):
-        files = ["pid", "y5", "pre_rr", "db"]
-    dd5 = _D(pid=w["pid"], y5=np.zeros(len(w["pid"]), np.int64),
-             pre_rr=np.full(len(w["pid"]), 300.0, "float32"),
-             db=np.array(["afdb"] * len(w["pid"])))
+    # 기호 없는 DB 차단 — ★코퍼스에는 S/V 가 있고 **그 DB 에만** 없는 상황이어야
+    #   afdb 전용 예외가 걸린다(전체가 0 이면 위의 옛-코퍼스 예외가 먼저 걸린다).
+    dl_mix = dict(dl)
+    dl_mix["db"] = np.array(["afdb"] * len(pid_l))
+    dl_mix["y5"] = np.zeros(len(pid_l), np.int64)          # afdb 는 전부 N
+    #   같은 코퍼스에 S/V 를 가진 ltafdb 비트를 덧붙인다
+    for k in ("pid", "y5", "pre_rr", "db", "y5_aud"):
+        extra = {"pid": np.full(600, 9999), "y5": np.tile([0, 2], 300),
+                 "pre_rr": np.full(600, 300.0, "float32"),
+                 "db": np.array(["ltafdb"] * 600),
+                 "y5_aud": np.zeros(600, bool)}[k]
+        dl_mix[k] = np.concatenate([dl_mix[k], extra])
     try:
-        attach_beat_feats(dict(w, db=np.array(["afdb"] * len(w["y"]))), dd5,
+        attach_beat_feats(dict(w, db=np.array(["afdb"] * len(w["y"]))), dl_mix,
                           verbose=False)
         ok(False, "기호 없는 DB 에 예외")
     except RuntimeError as e:
