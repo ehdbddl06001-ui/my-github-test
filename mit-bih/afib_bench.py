@@ -366,6 +366,61 @@ def cooccur_report(w, min_pat=5, top=15, verbose=True):
     return rows
 
 
+def ectopy_veto(OUT, w, arm="A1.RR산포", cls="AFIB", feat="s_frac", thr=0.0,
+                verbose=True):
+    """★H-AR: "AFIB 로 예측했는데 그 창에 PAC 이 있으면 예측을 철회한다" — 학습 0초.
+
+    왜 모델보다 이것을 먼저 하는가: H-AP 가 기전을 확인했으니(위양성 창 79.3% 에
+    PAC, 참양성 0.3%), **그 기전이 지표를 실제로 고치는지**는 신경망 없이 규칙
+    하나로 확인된다. 규칙이 안 되면 특징을 신경망에 넣어도 안 될 가능성이 크고,
+    되면 "왜 좋아졌는지" 를 아는 상태로 시작할 수 있다.
+
+    ★thr=0.0 은 **파라미터가 아니다** — "PAC 이 하나라도 있는가" 라는 자연 경계다.
+      문턱을 훑어 고르면 §18 의 선택 편향이 생기므로 훑지 않는다.
+    """
+    ci = OUT["classes"].index(cls)
+    Wd = OUT["w"]
+    r = OUT["res"][arm]
+    b = _blocks(w)
+    if "ect" not in b:
+        raise RuntimeError("이소성 블록이 없습니다 — attach_beat_feats(w) 를 먼저.")
+    j0, j1 = b["ect"]
+    if feat not in ECT_NAMES:
+        raise ValueError(f"{feat} 은 이소성 특징이 아닙니다: {ECT_NAMES}")
+    x = w["aux"][:, j0 + ECT_NAMES.index(feat)]
+    m = r["mask"] & (Wd["y"] >= 0)
+    veto = (r["pred"] == ci) & (x > thr) & m
+    new = np.where(veto, -2, r["pred"])
+    rows = []
+    for nm, pv in (("원본", r["pred"]), (f"{feat}>{thr:g} 철회", new)):
+        e = episode_metrics(pv[m], Wd["y"][m], Wd["pid"][m], Wd["t0"][m],
+                            Wd["nov"][m], ci, verbose=False)
+        bu = burden_metrics(pv[m], Wd["y"][m], Wd["pid"][m], Wd["dur"][m], ci,
+                            verbose=False)
+        f1 = win_macro(pv[m], Wd["y"][m], Wd["pid"][m], OUT["classes"])[cls][0]
+        rows.append((nm, e, bu, f1))
+    if verbose:
+        print(f"\n=== [H-AR] 이소성 거부 규칙  {arm} / {cls}  ({feat} > {thr:g}) ===")
+        print(f"  철회된 창 {int(veto.sum()):,} / 예측 {int(((r['pred']==ci)&m).sum()):,}")
+        print(f"  {'':<16}{'에피소드Se':>10}{'PPV':>8}{'예측건수':>9}"
+              f"{'짧은발작Se':>11}{'창F1':>8}{'burden r':>10}")
+        for nm, e, bu, f1 in rows:
+            print(f"  {nm:<16}{e['se']:>10.3f}{e['ppv']:>8.3f}{int(e['n_pred']):>9,}"
+                  f"{e.get('se_short', float('nan')):>11.3f}{f1:>8.3f}{bu['r']:>10.3f}")
+        d_ppv = rows[1][1]["ppv"] - rows[0][1]["ppv"]
+        d_se = rows[1][1]["se"] - rows[0][1]["se"]
+        print(f"  Δ  에피소드 PPV {d_ppv:+.3f}   Se {d_se:+.3f}   "
+              f"(참 에피소드 {int(rows[0][1]['n_true'])}건)")
+        print(f"\n  판정 기준(H-AR, §41): PPV +0.05 이상 **그리고** Se 손실 ≤ 0.03")
+        okk = d_ppv >= 0.05 and d_se >= -0.03
+        print(f"    → {'★H-AR 지지 — 기전이 지표를 실제로 고친다' if okk else '✗H-AR 미달'}")
+        if not okk and d_ppv >= 0.05:
+            print(f"      PPV 는 올랐지만 Se 를 {-d_se:.3f} 잃었다 — §27 후처리와 같은 교환이다.")
+    return dict(rows=rows, veto=veto, pred=new,
+                d_ppv=rows[1][1]["ppv"] - rows[0][1]["ppv"],
+                d_se=rows[1][1]["se"] - rows[0][1]["se"])
+
+
 def win_label_scan(d, Ws=(16, 24, 32, 48, 64, 96, 128), purity=None, classes=None,
                    dbs=None, sigma=None, verbose=True):
     """★창 크기 W 를 바꾸면 리듬별 환자·창 수가 어떻게 변하는지 — **주석만** 쓴다.
@@ -2517,6 +2572,44 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 이소성 거부 규칙 (H-AR) ──────────────────────────────────────────────
+    #  ★검증: 위양성 창에만 PAC 을 심으면 규칙이 그것만 지워야 한다(참양성 보존).
+    nw6 = 120
+    y6 = np.r_[np.ones(60, np.int64), np.zeros(60, np.int64)]
+    y6 = np.r_[y6, y6]
+    pid6 = np.r_[np.zeros(120, np.int64), np.ones(120, np.int64)]
+    pr6 = np.r_[np.ones(60, np.int64), np.zeros(20, np.int64),
+                np.ones(20, np.int64), np.zeros(20, np.int64)]      # 20창 위양성
+    pr6 = np.r_[pr6, pr6]
+    aux6 = np.zeros((240, 18), "float32")
+    aux6[(pr6 == 1) & (y6 == 0), 10 + ECT_NAMES.index("s_frac")] = 0.2   # 위양성에만 PAC
+    w6 = dict(y=y6, pid=pid6, aux=aux6, W=8, stride=8,
+              aux_blocks={"rr": (0, 10), "ect": (10, 18)},
+              classes=["N", "AFIB"], db=np.array(["s"] * 240),
+              dur=np.ones(240, "float32"), nov=np.ones(240, bool),
+              t0=np.tile(np.arange(120, dtype="float32"), 2))
+    O6 = dict(classes=["N", "AFIB"], split="patient",
+              res={"A1.RR산포": dict(pred=pr6, mask=np.ones(240, bool),
+                                    score=None)},
+              w={k: w6[k] for k in ("y", "pid", "db", "dur", "nov", "t0")})
+    R6 = ectopy_veto(O6, w6, "A1.RR산포", "AFIB", verbose=False)
+    ok(int(R6["veto"].sum()) == 40,
+       f"위양성 창 40개만 철회 (실제 {int(R6['veto'].sum())})")
+    ok(R6["d_ppv"] > 0 and R6["d_se"] == 0,
+       f"★PPV 만 오르고 Se 손실 0 (ΔPPV {R6['d_ppv']:+.3f}, ΔSe {R6['d_se']:+.3f})")
+    ok(R6["rows"][1][1]["ppv"] == 1.0, "위양성이 전부 지워지면 PPV 1.0")
+    try:
+        ectopy_veto(O6, w6, "A1.RR산포", "AFIB", feat="없는특징", verbose=False)
+        ok(False, "없는 특징에 예외")
+    except ValueError:
+        ok(True, "이소성 특징이 아닌 이름은 ValueError")
+    try:
+        ectopy_veto(O6, dict(w6, aux_blocks={"rr": (0, 10)}), "A1.RR산포", "AFIB",
+                    verbose=False)
+        ok(False, "이소성 블록 없으면 예외")
+    except RuntimeError:
+        ok(True, "이소성 블록이 없으면 예외 — 특징 없이 규칙을 돌리지 않는다")
 
     # ── attach_beat_feats 의 입력 계약 ───────────────────────────────────────
     #  ★실제 사고: load_rr() 는 dict 를, np.load() 는 NpzFile 을 준다. d.files 를
