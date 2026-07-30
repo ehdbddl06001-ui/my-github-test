@@ -226,6 +226,38 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
             print(f"  {nm:<8}{int(m.sum()):>10,}{len(np.unique(w['pid'][m])):>6}"
                   f"{100*m.mean():>7.2f}%")
         print(f"  전이구간(순도<{purity}) {n_trans:,} → 학습·평가 제외")
+
+        # ★비트는 있는데 창이 안 생긴 리듬을 드러낸다 ─────────────────────────
+        #  왜: ltafdb 를 넣어 AFL 비트가 13,093개(환자 11명) 생겼는데도 AFL 창은
+        #  89개/7명에서 **하나도 늘지 않았다**. ltafdb 의 AFL 은 짧게 흩어져 있어
+        #  연속 128비트의 90%를 채우는 창이 아예 안 만들어졌기 때문이다. 리듬 표만
+        #  보면 "AFL 데이터가 원래 없다"로 읽히지만, 사실은 **있는 데이터를 창 정의가
+        #  버리고 있는 것**이다. 원인이 다르면 대책도 다르므로(수집 vs W·purity 조정)
+        #  반드시 구분해서 보여 준다.
+        dbs_all = sorted(set(map(str, dbv)))
+        print(f"\n  [창 생성 효율] 비트는 있는데 창이 안 생기는 리듬을 찾는다")
+        print(f"  {'리듬':<8}{'비트':>11}{'최대창':>8}{'실제창':>8}{'효율':>7}   DB별 비트")
+        for i, nm in enumerate(classes):
+            bm = np.array([names[r] == nm for r in rhy])
+            nb = int(bm.sum())
+            if not nb:
+                continue
+            cap = nb // W
+            got = int((w["y"] == i).sum())
+            eff = got / cap if cap else float("nan")
+            per = "  ".join(f"{db}:{int((bm & (np.array(list(map(str, dbv))) == db)).sum()):,}"
+                            for db in dbs_all
+                            if (bm & (np.array(list(map(str, dbv))) == db)).any())
+            print(f"  {nm:<8}{nb:>11,}{cap:>8,}{got:>8,}{eff:>6.0%}   {per}")
+            if cap >= 20 and eff < 0.25:
+                print(f"    ✗ {nm}: 비트로는 창 {cap:,}개가 가능한데 {got:,}개만 생겼다"
+                      f"({eff:.0%}).")
+                print(f"       이 리듬이 짧게 흩어져 있어 연속 {W}비트의 {purity:.0%}를"
+                      f" 채우지 못한다.")
+                print(f"       → '데이터가 없다'가 아니라 **창 정의가 버리고 있다**."
+                      f" W 를 줄이거나(예: W=32)")
+                print(f"         purity 를 낮추는 것이 수집보다 먼저다"
+                      f"(단, 라벨 오염과의 교환).")
         _mde(w, verbose=True)
     return w
 
