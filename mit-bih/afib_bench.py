@@ -439,7 +439,7 @@ def ectopy_veto(OUT, w, arm="A1.RR산포", cls="AFIB", feat="s_frac", thr=0.0,
 
 def veto_noise_sweep(OUT, w, arm="A1.RR산포", cls="AFIB", W=None,
                      ses=(1.0, 0.9, 0.8, 0.7, 0.5, 0.3), fprs=(0.0, 0.001, 0.005, 0.02),
-                     seed=0, verbose=True):
+                     min_counts=(1,), seed=0, verbose=True):
     """★1층 모델을 만들기 **전에**: 비트 분류가 얼마나 정확해야 이 규칙이 살아남나.
 
     왜 이것부터 하는가: §44.5 의 규칙은 `s_frac` 이 **주석**에서 온다. 그것을 1층
@@ -472,35 +472,49 @@ def veto_noise_sweep(OUT, w, arm="A1.RR산포", cls="AFIB", W=None,
     for fpr in fprs:
         for se in ses:
             det = rng.binomial(nS, se) + (rng.binomial(nO, fpr) if fpr > 0 else 0)
-            pv = np.where((r["pred"] == ci) & (det > 0) & m, -2, r["pred"])
-            e = episode_metrics(pv[m], Wd["y"][m], Wd["pid"][m], Wd["t0"][m],
-                               Wd["nov"][m], ci, verbose=False)
-            f1 = win_macro(pv[m], Wd["y"][m], Wd["pid"][m], OUT["classes"])[cls][0]
-            rows.append(dict(se=se, fpr=fpr, ep_se=e["se"], ep_ppv=e["ppv"],
-                             n_pred=int(e["n_pred"]), f1=f1))
-            if se == 1.0 and fpr == 0.0:
-                base = rows[-1]
+            for kmin in min_counts:
+              # ★'S 가 하나라도' → 'k개 이상' — 잡음 모형에서 유도되는 수선이다.
+              #   위양성률 fpr 에서 창당 가짜 S 는 Poisson(λ=W·fpr) 이므로
+              #   k 를 올리면 가짜 철회 확률이 급감한다(fpr 0.005 에서 k=1 은 47%,
+              #   k=3 은 2.7%, k=5 는 0.06%). **결과를 보고 고르는 것이 아니라
+              #   창 크기와 fpr 로 계산하는 것**이므로 사전등록이 가능하다.
+              pv = np.where((r["pred"] == ci) & (det >= kmin) & m, -2, r["pred"])
+              e = episode_metrics(pv[m], Wd["y"][m], Wd["pid"][m], Wd["t0"][m],
+                                  Wd["nov"][m], ci, verbose=False)
+              f1 = win_macro(pv[m], Wd["y"][m], Wd["pid"][m], OUT["classes"])[cls][0]
+              rows.append(dict(se=se, fpr=fpr, kmin=kmin, ep_se=e["se"],
+                               ep_ppv=e["ppv"], n_pred=int(e["n_pred"]), f1=f1))
+              if se == 1.0 and fpr == 0.0 and kmin == 1:
+                  base = rows[-1]
     if verbose:
         e0 = episode_metrics(r["pred"][m], Wd["y"][m], Wd["pid"][m], Wd["t0"][m],
                             Wd["nov"][m], ci, verbose=False)
         print(f"\n=== 비트분류 정확도 감도분석  {arm} / {cls} (창 W={W}) ===")
         print(f"  규칙 없음: 에피소드 Se {e0['se']:.3f}  PPV {e0['ppv']:.3f}  "
               f"예측 {int(e0['n_pred']):,}건")
-        print(f"  {'S검출 Se':>9}{'S 위양성률':>11}{'에피Se':>8}{'에피PPV':>9}"
-              f"{'예측건수':>9}{'창F1':>8}   판정")
+        import math as _m
+        print(f"  {'S검출 Se':>9}{'S위양성률':>10}{'k':>4}{'가짜철회P':>10}"
+              f"{'에피Se':>8}{'에피PPV':>9}{'예측건수':>9}{'창F1':>8}   판정")
         for d in rows:
+            lam = W * d["fpr"]
+            pf = 1 - sum(_m.exp(-lam) * lam ** i / _m.factorial(i)
+                         for i in range(d["kmin"])) if lam > 0 else 0.0
             okk = (d["ep_ppv"] - e0["ppv"] >= 0.05 and d["ep_se"] - e0["se"] >= -0.03
                    and d["n_pred"] <= int(e0["n_pred"]))
-            print(f"  {d['se']:>9.2f}{d['fpr']:>11.3f}{d['ep_se']:>8.3f}"
-                  f"{d['ep_ppv']:>9.3f}{d['n_pred']:>9,}{d['f1']:>8.3f}"
-                  f"   {'★H-AR 통과' if okk else '미달'}")
+            print(f"  {d['se']:>9.2f}{d['fpr']:>10.3f}{d['kmin']:>4}{pf:>10.4f}"
+                  f"{d['ep_se']:>8.3f}{d['ep_ppv']:>9.3f}{d['n_pred']:>9,}"
+                  f"{d['f1']:>8.3f}   {'★H-AR 통과' if okk else '미달'}")
         pas = [d for d in rows if (d["ep_ppv"] - e0["ppv"] >= 0.05
                                   and d["ep_se"] - e0["se"] >= -0.03
                                   and d["n_pred"] <= int(e0["n_pred"]))]
         if pas:
             worst = min(pas, key=lambda d: d["se"])
             print(f"\n  ★필요 조건: S 비트 검출 Se ≥ {worst['se']:.2f} 에서도 통과한다"
-                  f" (위양성률 ≤ {max(d['fpr'] for d in pas):.3f})")
+                  f" (위양성률 ≤ {max(d['fpr'] for d in pas):.3f}, "
+                  f"k ≥ {min(d['kmin'] for d in pas)})")
+            print(f"    ★감도보다 **위양성률**이 결정적이다 — 창이 {W}비트라 위양성률"
+                  f" 0.001 만 되어도\n      창의 {100*(1-_m.exp(-W*0.001)):.0f}% 가"
+                  f" 가짜 S 를 갖고, 그 창은 대부분 참 AF 다.")
             print(f"    → 1층 비트분류기가 이 정도면 주석 없이도 규칙이 작동한다.")
             print(f"    사용자 1층 이력의 S 축 성적과 비교해 실현 가능성을 판단할 것.")
         else:
