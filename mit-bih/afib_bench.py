@@ -777,63 +777,84 @@ def _torch():
     return torch, torch.nn
 
 
-def _aux_cols(w, mode):
-    """팔이 쓸 보조특징 열을 고른다.
+# ─────────────────────────────────────────────────────────────────────────────
+#  aux 열 블록 등록 — ★같은 사고가 네 번 났다. 이번엔 구조를 바꾼다.
+#
+#  이력: §13 A2≡A4(attach_atrial 이 모든 팔의 aux 를 늘렸다) → §29 A5(pers/dev 를
+#        표시 목록에 안 넣어 -1열) → 이번 A1 이 이소성 8열을 받음(attach_beat_feats
+#        가 n_rr 을 기록하지 않아 'rr' 모드가 전체 열을 반환).
+#  공통 원인: **경계를 암시적으로** 관리했다(n_rr·n_atr·n_pre_ect 를 함수마다 따로).
+#  해결: 블록을 **이름과 구간으로 명시 등록**한다. 모드는 블록 이름의 조합이고,
+#        등록되지 않은 열은 어떤 모드에도 안 들어간다.
+# ─────────────────────────────────────────────────────────────────────────────
+AUX_MODES = {                       # 모드 → 포함할 블록 이름들
+    "none":   (),
+    "rr":     ("rr",),
+    "atrial": ("atrial",),
+    "all":    ("rr", "atrial"),
+    "pers":   ("rr", "atrial", "dev"),
+    "dev":    ("dev",),
+    "rr_ect": ("rr", "ect"),
+    "ect":    ("ect",),
+}
 
-    ★★이 함수가 없어서 실제로 사고가 났다 — attach_atrial(w) 가 w["aux"] 를
-      10 → 31 열로 늘리는데, 모든 팔이 w["aux"] 를 통째로 쓰고 있었다. 그 결과
-      'RR 산포 기준선(A1)'·'RSN(A2)' 까지 심방 특징을 받아 **팔의 정의가 조용히
-      바뀌었고**, A2 와 A4 는 비트 단위로 같은 예측을 냈다(= 비교가 무의미).
-      이제 팔마다 mode 를 선언해야 하고, 선언하지 않으면 열이 안 붙는다.
 
-      "none"   보조특징 없음 (시퀀스만)
-      "rr"     RR 산포 10종만        ← A1·A2·A2c·A3 의 정의
-      "atrial" 심방·P-QRS-T 특징만   ← A4c
-      "all"    둘 다                 ← A4
-    """
+def _blocks(w):
+    """w 의 aux 블록 경계. 옛 키(n_rr·n_atr·n_pre_ect)에서 복원해 하위호환한다."""
+    if "aux_blocks" in w:
+        return dict(w["aux_blocks"])
     n = w["aux"].shape[1]
-    nrr = int(w.get("n_rr", n))          # attach_atrial 이 없으면 전부 RR
-    if mode == "none":
-        return np.zeros(0, int)
-    if mode == "rr":
-        return np.arange(nrr)
-    if mode == "atrial":
-        if nrr >= n:
-            raise RuntimeError("심방특징이 없습니다 — attach_atrial(w) 를 먼저 하세요.")
-        return np.arange(nrr, n)
-    if mode == "all":
-        # ★개인편차 열까지 삼키면 A4 와 A5 가 같은 입력을 받는다(§13 배선 오류 재발)
-        return np.arange(_natr(w))
-    # ── 개인화 모드 ────────────────────────────────────────────────────────
-    #  natr = 개인편차가 붙기 전의 열 수. personalize() 가 w["n_atr"] 에 기록한다.
-    #  "all" 이 편차까지 삼키면 A4 와 A5 가 같아진다 → 배선 오류(§13 재발)이므로
-    #  "all" 은 natr 까지만 본다.
-    if mode == "pers":
-        _need_pers(w)
-        return np.arange(n)                      # RR + 심방 + 개인편차 전부
-    if mode == "dev":
-        _need_pers(w)
-        return np.arange(_natr(w), n)            # 개인편차만
-    if mode == "rr_ect":                         # RR 산포 + 이소성 창특징
-        if "n_pre_ect" not in w:
-            raise RuntimeError("이소성 특징이 없습니다 — attach_beat_feats(w) 먼저.")
-        nrr2 = int(w.get("n_rr", w["n_pre_ect"]))
-        return np.r_[np.arange(nrr2), np.arange(w["n_pre_ect"], n)]
-    if mode == "ect":                            # 이소성 창특징만
-        if "n_pre_ect" not in w:
-            raise RuntimeError("이소성 특징이 없습니다 — attach_beat_feats(w) 먼저.")
-        return np.arange(w["n_pre_ect"], n)
-    raise ValueError(f"알 수 없는 aux mode: {mode}")
+    b = {}
+    nrr = int(w.get("n_rr", n))
+    b["rr"] = (0, min(nrr, n))
+    # 심방 블록: n_rr 이후 ~ (개인편차 시작 | 이소성 시작 | 끝)
+    ends = [x for x in (w.get("n_atr"), w.get("n_pre_ect")) if x is not None]
+    atr_end = min([n] + [int(x) for x in ends])
+    if atr_end > nrr:
+        b["atrial"] = (nrr, atr_end)
+    if "n_atr" in w:
+        de = int(w.get("n_pre_ect", n))
+        if de > int(w["n_atr"]):
+            b["dev"] = (int(w["n_atr"]), de)
+    if "n_pre_ect" in w:
+        b["ect"] = (int(w["n_pre_ect"]), n)
+    return b
 
 
-def _natr(w):
-    """개인편차가 붙기 전의 aux 열 수(= RR + 심방)."""
-    return int(w.get("n_atr", w["aux"].shape[1]))
+def _aux_cols(w, mode):
+    """팔이 쓸 보조특징 열을 고른다 — 블록 이름의 조합으로.
+
+    ★모드가 요구한 블록이 **없으면 예외**다. 조용히 0열이나 전체열을 돌려주면
+      팔의 정의가 바뀐다(그렇게 네 번 사고가 났다).
+    """
+    if mode not in AUX_MODES:
+        raise ValueError(f"알 수 없는 aux mode: {mode} (가능: {sorted(AUX_MODES)})")
+    b = _blocks(w)
+    cols = []
+    for nm in AUX_MODES[mode]:
+        if nm not in b:
+            need = {"atrial": "attach_atrial(w)", "dev": "personalize(w)",
+                    "ect": "attach_beat_feats(w)"}.get(nm, "?")
+            raise RuntimeError(
+                f"aux mode '{mode}' 는 블록 '{nm}' 을 요구하는데 없습니다 — "
+                f"{need} 를 먼저 하세요.\n  현재 블록: "
+                f"{ {k: v for k, v in sorted(b.items())} }")
+        s_, e_ = b[nm]
+        cols.append(np.arange(s_, e_))
+    return np.concatenate(cols) if cols else np.zeros(0, int)
 
 
-def _need_pers(w):
-    if "n_atr" not in w:
-        raise RuntimeError("개인편차가 없습니다 — w = personalize(w) 를 먼저 하세요.")
+def aux_layout(w, verbose=True):
+    """지금 w 의 aux 가 어떤 블록으로 나뉘어 있는지 — 배선 감사용."""
+    b = _blocks(w)
+    if verbose:
+        print(f"\n  [aux 배치] 총 {w['aux'].shape[1]}열")
+        for nm, (s_, e_) in sorted(b.items(), key=lambda kv: kv[1][0]):
+            print(f"    {nm:<8}[{s_:>3},{e_:>3})  {e_-s_:>3}열")
+        print(f"    모드별 열 수: " + "  ".join(
+            f"{m}={len(_aux_cols(w, m))}" for m in sorted(AUX_MODES)
+            if all(x in b for x in AUX_MODES[m])))
+    return b
 
 
 def _fit_win(w, tr, te, ncls, seed, use_seq=True, aux="rr", n_domain=0,
@@ -966,8 +987,12 @@ def attach_atrial(w, path=None, verbose=True):
     med = np.where(np.isfinite(med), med, 0.0)
     M = np.where(np.isnan(M), med, M).astype("float32")
     w = dict(w)
-    w["n_rr"] = int(w["aux"].shape[1])      # ★RR/심방 경계 — 팔이 열을 고르는 기준
+    b = _blocks(w); n0 = int(w["aux"].shape[1])
+    w["n_rr"] = n0                          # (하위호환용 옛 키)
     w["aux"] = np.concatenate([w["aux"], M, miss.astype("float32")[:, None]], 1)
+    b.setdefault("rr", (0, n0)); b["rr"] = (0, n0)
+    b["atrial"] = (n0, int(w["aux"].shape[1]))
+    w["aux_blocks"] = b                     # ★블록 명시 등록
     w["aux_names"] = ([f"rr{i}" for i in range(w["n_rr"])] + names + ["atr_missing"])
     if verbose:
         print(f"\n[심방활동 결합] 창 {len(w['y']):,} 중 {hit:,} 결합 "
@@ -2064,8 +2089,11 @@ def _arm_pers_model(w, tr, te, ncls, seed, epochs=20, q=0.25):
     # ── 2단계: 개인 기준선 → 편차 ─────────────────────────────────────────
     D = _pers_from_score(w, pn, q=q)
     w2 = dict(w)
-    w2["n_atr"] = int(w["aux"].shape[1])
+    b2 = _blocks(w); n0 = int(w["aux"].shape[1])
+    w2["n_atr"] = n0
     w2["aux"] = np.concatenate([w["aux"], D], 1).astype("float32")
+    b2["dev"] = (n0, int(w2["aux"].shape[1]))
+    w2["aux_blocks"] = b2
     # ── 3단계: 절대값 + 편차로 재학습 ─────────────────────────────────────
     return _fit_win(w2, tr, te, ncls, seed + 1, use_seq=True, aux="pers", epochs=epochs)
 
@@ -2243,8 +2271,13 @@ def attach_beat_feats(w, d=None, verbose=True):
         sl = idx[int(s):int(s) + W]
         F[r] = _ect_win(y5_b[sl], np.asarray(pre_b[sl], "float64") / FS_RR)
     w = dict(w)
-    w["n_pre_ect"] = int(w["aux"].shape[1])
+    b = _blocks(w); n0 = int(w["aux"].shape[1])
+    w["n_pre_ect"] = n0                     # (하위호환용 옛 키)
     w["aux"] = np.concatenate([w["aux"], F], 1).astype("float32")
+    # ★이 한 줄이 없어서 A1 이 이소성 8열을 받았다. 블록을 명시 등록한다.
+    b.setdefault("rr", (0, n0)) if "rr" not in b else None
+    b["ect"] = (n0, int(w["aux"].shape[1]))
+    w["aux_blocks"] = b
     w["aux_names"] = list(w.get("aux_names", [])) + list(ECT_NAMES)
     if verbose:
         print(f"\n[이소성 창특징] aux {w['n_pre_ect']} → {w['aux'].shape[1]}열 "
@@ -2264,40 +2297,64 @@ def ectopy_audit(OUT, w, cls="AFIB", verbose=True):
     from scipy.stats import mannwhitneyu
     ci = OUT["classes"].index(cls)
     Wd = OUT["w"]
-    r = OUT["res"][list(OUT["res"])[0]] if "A1.RR산포" not in OUT["res"] \
-        else OUT["res"]["A1.RR산포"]
+    r = (OUT["res"]["A1.RR산포"] if "A1.RR산포" in OUT["res"]
+         else OUT["res"][list(OUT["res"])[0]])
     m = r["mask"] & (Wd["y"] >= 0)
     yt = (Wd["y"] == ci) & m
     yp = (r["pred"] == ci) & m
-    j0 = int(w.get("n_pre_ect", w["aux"].shape[1] - len(ECT_NAMES)))
-    E = w["aux"][:, j0:j0 + len(ECT_NAMES)]
+    b = _blocks(w)
+    if "ect" not in b:
+        raise RuntimeError("이소성 블록이 없습니다 — attach_beat_feats(w) 를 먼저.")
+    j0, j1 = b["ect"]
+    E = w["aux"][:, j0:j1]
     grp = {"위양성(FP)": yp & ~yt, "참양성(TP)": yp & yt,
            "위음성(FN)": yt & ~yp, "참음성(TN)": m & ~yt & ~yp}
     print(f"\n=== [H-AP] 이소성 기전 검증  ({cls}, 기준 A1) ===")
-    print(f"  {'특징':<10}" + "".join(f"{k:>13}" for k in grp) + f"{'FP vs TP':>11}")
+    print(f"  ★이소성은 대부분의 창에서 0 이라 **중앙값은 전부 0** 이 된다(정보 없음).")
+    print(f"    그래서 '이소성이 있는 창의 비율' 과 상위분위를 함께 본다.")
+    print(f"  {'특징':<10}" + "".join(f"{k[:6]+'>0%':>10}" for k in grp)
+          + f"{'FP p90':>9}{'TP p90':>9}{'p(FP>TP)':>10}")
     out = {}
     for i, nm in enumerate(ECT_NAMES):
-        med = {k: float(np.median(E[v, i])) if v.any() else float("nan")
-               for k, v in grp.items()}
-        a, b = E[grp["위양성(FP)"], i], E[grp["참양성(TP)"], i]
-        p = (float(mannwhitneyu(a, b, alternative="greater").pvalue)
-             if len(a) > 10 and len(b) > 10 else float("nan"))
-        out[nm] = dict(med=med, p_fp_gt_tp=p)
-        print(f"  {nm:<10}" + "".join(f"{med[k]:>13.4f}" for k in grp)
-              + (f"{p:>11.2g}" if np.isfinite(p) else f"{'—':>11}"))
+        pos = {k: (100 * float((E[v, i] > (1.0 if nm == "pause_r" else 0)).mean())
+                   if v.any() else float("nan")) for k, v in grp.items()}
+        a, bb = E[grp["위양성(FP)"], i], E[grp["참양성(TP)"], i]
+        p = (float(mannwhitneyu(a, bb, alternative="greater").pvalue)
+             if len(a) > 10 and len(bb) > 10 else float("nan"))
+        q_a = float(np.quantile(a, 0.90)) if len(a) else float("nan")
+        q_b = float(np.quantile(bb, 0.90)) if len(bb) else float("nan")
+        out[nm] = dict(frac_pos=pos, p_fp_gt_tp=p, p90_fp=q_a, p90_tp=q_b)
+        print(f"  {nm:<10}" + "".join(f"{pos[k]:>9.1f}%" for k in grp)
+              + f"{q_a:>9.4f}{q_b:>9.4f}"
+              + (f"{p:>10.2g}" if np.isfinite(p) else f"{'—':>10}"))
     n = {k: int(v.sum()) for k, v in grp.items()}
-    print(f"  {'(창 수)':<10}" + "".join(f"{n[k]:>13,}" for k in grp))
-    key = out.get("ect_frac", {})
-    if key:
-        fp, tp = key["med"]["위양성(FP)"], key["med"]["참양성(TP)"]
-        p = key["p_fp_gt_tp"]
-        ok_ = np.isfinite(p) and p < 0.05 and fp > tp
-        print(f"\n  판정: 위양성 창의 이소성 비율 {fp:.4f} vs 참양성 {tp:.4f}  "
-              f"(단측 p={p:.2g})")
-        print(f"    → {'★H-AP 지지 — 위경보의 원인이 이소성 박동일 수 있다' if ok_ else '✗H-AP 미달 — 위경보의 원인은 이소성이 아니다'}")
-        if not ok_:
-            print(f"    ★이 경우 이소성 특징으로 PPV 가 올라도 **원인을 모르는 것**이다.")
-            print(f"      H-AO 를 돌리기 전에 위경보의 실제 원인을 먼저 찾아야 한다.")
+    print(f"  {'(창 수)':<10}" + "".join(f"{n[k]:>10,}" for k in grp))
+
+    # ── 판정 ────────────────────────────────────────────────────────────────
+    #  ★판정 특징은 **s_frac**(심방 이소성)이다. ect_frac(S+V 합)으로 판정했더니
+    #    가짜 '미달' 이 나왔다: v_frac 은 위양성에서 더 **낮으므로**(AF 중에는 PVC 가
+    #    흔하다) 합치면 S 신호가 상쇄된다. 생리적으로도 AF 를 흉내 내는 것은
+    #    **PAC(심방 조기박)** 이고 PVC 가 아니다 — 처음부터 나눠 봐야 했다.
+    k = len(ECT_NAMES)
+    alpha = 0.05 / k                        # Bonferroni (특징 8종)
+    s_p = out["s_frac"]["p_fp_gt_tp"]
+    v_p = out["v_frac"]["p_fp_gt_tp"]
+    print(f"\n  판정 (Bonferroni α = 0.05/{k} = {alpha:.4f})")
+    print(f"    ★s_frac (심방 이소성 = PAC): p = {s_p:.2g}  "
+          f"{'★지지' if np.isfinite(s_p) and s_p < alpha else '미달'}")
+    print(f"      p90  위양성 {out['s_frac']['p90_fp']:.4f} vs 참양성 "
+          f"{out['s_frac']['p90_tp']:.4f}")
+    print(f"     v_frac (심실 이소성 = PVC): p = {v_p:.2g}  "
+          f"{'지지' if np.isfinite(v_p) and v_p < alpha else '미달(예상대로 — AF 중 PVC 는 흔하다)'}")
+    ok_ = np.isfinite(s_p) and s_p < alpha
+    print(f"\n  → {'★H-AP 지지 — AFIB 위경보의 원인에 **심방 이소성**이 있다' if ok_ else '✗H-AP 미달'}")
+    if ok_:
+        print(f"    즉 s_frac 이 A1 의 위양성을 걸러 낼 정보를 갖고 있다 → H-AO 로 간다.")
+        print(f"    ★단 v_frac 은 반대 방향이므로 **S 와 V 를 합쳐 쓰면 안 된다.**")
+    else:
+        print(f"    ★이소성 특징으로 PPV 가 올라도 원인을 모르는 것이다.")
+        print(f"      H-AO 를 돌리기 전에 위경보의 실제 원인을 먼저 찾아야 한다.")
+    out["_verdict"] = dict(supported=bool(ok_), alpha=alpha, s_p=s_p, v_p=v_p)
     return out
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2485,6 +2542,31 @@ def selftest():
         attach_beat_feats(wl, dl_old, verbose=False); ok(False, "옛 코퍼스에 예외")
     except RuntimeError:
         ok(True, "y5 가 전부 -1 인 옛 코퍼스면 예외 — 이소성 0 인 특징을 조용히 안 만든다")
+    # ── aux 블록 등록 (★네 번 재발한 사고의 구조적 차단) ─────────────────────
+    lay = aux_layout(w_d, verbose=False)
+    ok(lay["rr"] == (0, 10) and lay["ect"] == (10, 18),
+       f"블록 경계가 명시 등록됨 rr[0,10) ect[10,18)")
+    ok(len(_aux_cols(w_d, "rr")) == 10,
+       "★A1 의 'rr' 모드가 10열만 받는다 — 이소성 8열이 새지 않는다(4번째 재발 차단)")
+    ok(len(_aux_cols(w_d, "ect")) == 8 and len(_aux_cols(w_d, "rr_ect")) == 18,
+       "ect 8열 / rr_ect 18열")
+    try:
+        _aux_cols(w_d, "atrial"); ok(False, "없는 블록에 예외")
+    except RuntimeError as e:
+        ok("attach_atrial" in str(e),
+           "없는 블록을 요구하면 **무엇을 먼저 해야 하는지**까지 알려주는 예외")
+    try:
+        _aux_cols(w_d, "존재하지않음"); ok(False, "모르는 모드에 예외")
+    except ValueError:
+        ok(True, "모르는 aux 모드는 ValueError — 조용히 0열을 돌려주지 않는다")
+    ok(set(AUX_MODES) >= {"none", "rr", "atrial", "all", "pers", "dev",
+                          "rr_ect", "ect"}, f"모드 {len(AUX_MODES)}종 등록")
+    # 모든 팔의 선언 모드가 AUX_MODES 에 있는지
+    allarms = {**DEFAULT_ARMS, **ATRIAL_ARMS, **PERS_ARMS, **ECT_ARMS}
+    bad_m = [a for a, f in allarms.items()
+             if getattr(f, "_aux_mode", None) not in AUX_MODES]
+    ok(not bad_m, f"모든 팔의 aux 모드가 등록된 모드다 (불일치: {bad_m})")
+
 
     # ── 이소성 창특징 (1층↔2층 연결) ─────────────────────────────────────────
     #  ★검증: 이단맥 패턴(N-V-N-V)과 고립 이소성을 구분하는지, 그리고 기호가 없는
