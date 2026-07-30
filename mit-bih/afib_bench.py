@@ -880,6 +880,21 @@ def _arm_rsn_dom(w, tr, te, ncls, seed, epochs=20):
 
 # ★A4 계열은 attach_atrial() 을 거친 w 에서만 의미가 있다. 기본 팔에 넣으면
 #   심방특징 없이 조용히 돌아 "심방축은 효과 없음" 이라는 가짜 결론을 만든다.
+
+# ★사전등록 가설 선언표 — report_afib 가 이것을 그대로 돌린다.
+#   팔을 추가하고 여기에 안 적으면 "사전등록 검정이 없는 팔" 경고가 뜬다.
+#   (손으로 관리하는 검정 목록 때문에 A4·A5·A6 가 차례로 빠졌다 — §14.4·§29)
+HYPOTHESES = [
+    ("H-AA", "A5.RSN+개인편차", "A4.RSN+심방활동",
+     "개인화(quiet 기준선)의 순효과. 기준이 A1 이 아님에 주의"),
+    ("H-AD", "A5.RSN+개인편차", "A5c.개인편차만",
+     "절대값도 필요한가(편차만으로 충분한가)"),
+    ("H-AE", "A6.모집단→개인화(3단계)", "A4.RSN+심방활동",
+     "사용자 3단계 제안의 순효과"),
+    ("H-AF", "A6.모집단→개인화(3단계)", "A5.RSN+개인편차",
+     "모집단 모델 게이팅 > ΔRR 엔트로피 대리 인가"),
+]
+
 ATRIAL_ARMS = {
     "A4.RSN+심방활동": _arm_rsn_atrial,
     "A4c.심방활동만": _arm_atrial_only,
@@ -1064,7 +1079,10 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
                                         else " (심방특징 없음)"))
     for a, f in arms.items():                 # ★팔별 실제 입력 선언 — 배선 감사용
         md = getattr(f, "_aux_mode", "?"); sq = getattr(f, "_use_seq", None)
-        nc = len(_aux_cols(w, md)) if md in ("none", "rr", "atrial", "all") else -1
+        try:                                   # ★모드 목록을 손으로 적어 두면 새 모드를
+            nc = len(_aux_cols(w, md))         #   추가할 때마다 -1 이 찍힌다(실제로 A5 가
+        except Exception:                      #   pers(-1열) 로 나왔다). 직접 물어본다.
+            nc = -1
         print(f"      {a:<18} 시퀀스 {'O' if sq else 'X' if sq is False else '?'}  "
               f"보조 {md}({nc}열)")
     for nm, fn in arms.items():
@@ -1171,6 +1189,10 @@ def report_afib(OUT, base="A1.RR산포", show=True):
     #    아니다. 두 팔이 같은 환자를 보므로 짝지으면 훨씬 좁은 구간이 나온다.
     if base in rows:
         print(f"\n=== 사전등록 판정 (기준 {base}, 짝지은 부트스트랩 B=5000) ===")
+        # ★가설 목록을 HYPOTHESES 선언표에서 가져온다. 손으로 적어 두면 팔을 추가할
+        #   때마다 검정이 조용히 빠진다 — §14.4(A4)에 이어 A5·A6 에서도 똑같이
+        #   일어났다(팔은 돌고 F1 은 찍히는데 검정만 없었다). 세 번째 재발이라
+        #   목록을 없애고, 등록되지 않은 팔은 아래에서 **경고로 드러낸다.**
         cand = [a for a in ("A2.RSN", "A2c.RSN(스칼라X)", "A3.RSN+도메인") if a in rows]
         print(f"\n  [H-J] 창 F1 — 95% CI 가 0 을 배제해야 지지")
         for nm in cand:
@@ -1215,6 +1237,26 @@ def report_afib(OUT, base="A1.RR산포", show=True):
                 except Exception as e:
                     print(f"    [{c}] {a4} vs {a4c}: 검정 실패 {type(e).__name__}: {e}")
 
+        # ── HYPOTHESES 선언표에 따른 추가 검정 (A5·A6 등) ──────────────────
+        tested = {base, "A0.자명"} | set(cand) | {a2, a4, a4c}
+        for tag, new_, bas_, note in HYPOTHESES:
+            if new_ not in rows or bas_ not in rows:
+                continue
+            tested |= {new_, bas_}
+            print(f"\n  [{tag}] {new_} − {bas_}   {note}")
+            for c in cls:
+                if c == "N":
+                    continue
+                try:
+                    paired_win(OUT, new_, bas_, cls=c)
+                except Exception as e:
+                    print(f"    [{c}] 검정 실패 {type(e).__name__}: {e}")
+        miss = [a for a in rows if a not in tested]
+        if miss:
+            print(f"\n  ⚠ 사전등록 검정이 없는 팔: {miss}")
+            print(f"    → HYPOTHESES 에 (태그, 새팔, 기준팔, 설명) 을 추가하세요."
+                  f" 표에만 F1 이 찍히고 검정이 빠지면\n      눈으로 비교하고 넘어가게"
+                  f" 됩니다(§14.4 에서 실제로 그랬습니다).")
         print(f"\n  ※ Bonferroni: 위 비교가 k 개면 유의수준을 k 로 나눠야 한다."
               f" 95% CI 는 보정 전 값이므로,\n    경계에 걸친 결과는 지지로 읽지 않는다.")
         print(f"  ※ H-L(AFL 에서 A2−A1 ≤ 0)은 **영가설 방향의 예측**이다. AFL 은 환자 수가"
@@ -1970,6 +2012,20 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 사전등록 선언표 (검정이 조용히 빠지지 않는지) ────────────────────────
+    ok(all(len(h) == 4 for h in HYPOTHESES) and len(HYPOTHESES) >= 4,
+       f"HYPOTHESES 선언표 {len(HYPOTHESES)}건 (태그, 새팔, 기준팔, 설명)")
+    known = ({"A0.자명", "A1.RR산포"} | set(DEFAULT_ARMS) | set(ATRIAL_ARMS)
+             | set(PERS_ARMS))
+    bad_h = [h for h in HYPOTHESES if h[1] not in known or h[2] not in known]
+    ok(not bad_h, f"선언표의 팔 이름이 모두 실제 팔과 일치 (불일치 {len(bad_h)})")
+    # 대조군(A4c·A5c)은 '기준팔' 로만 등장한다 — 그것도 등록으로 인정한다.
+    declared = ({h[1] for h in HYPOTHESES} | {h[2] for h in HYPOTHESES}
+                | {"A2.RSN", "A2c.RSN(스칼라X)", "A3.RSN+도메인",
+                   "A4.RSN+심방활동", "A4c.심방활동만", "A0.자명", "A1.RR산포"})
+    un = [a for a in known if a not in declared]
+    ok(not un, f"모든 팔이 사전등록 검정에 등장한다 (빠진 팔: {un})")
 
     # ── A6: 모집단 모델 점수로 만든 개인 기준선 (사용자 3단계 제안) ──────────
     #  ★검증 성질: '정상' 점수가 높은 창을 기준선으로 잡으므로, 그 창들의 편차는
