@@ -2359,7 +2359,7 @@ def attach_beat_feats(w, d=None, verbose=True):
     return w
 
 
-def ectopy_audit(OUT, w, cls="AFIB", verbose=True):
+def ectopy_audit(OUT, w, cls="AFIB", dbs=None, verbose=True):
     """★H-AP: **위양성 창의 이소성 비율이 참양성보다 높은가** — 모델 이전의 기전 검증.
 
     이것이 안 나오면 AFIB 위경보의 원인은 이소성 박동이 아니고, 그러면 이소성
@@ -2371,6 +2371,13 @@ def ectopy_audit(OUT, w, cls="AFIB", verbose=True):
     r = (OUT["res"]["A1.RR산포"] if "A1.RR산포" in OUT["res"]
          else OUT["res"][list(OUT["res"])[0]])
     m = r["mask"] & (Wd["y"] >= 0)
+    if dbs is not None:
+        # ★H-AT: 감사된 라벨(mitdb)에서도 재현되는지 보려면 DB 로 잘라야 한다.
+        #   s_frac 이 ltafdb 자동 주석에서 왔으므로, 감사된 DB 에서 **더 강해야**
+        #   정상이다. 약해지면 자동 주석의 인공물을 본 것일 수 있다.
+        m = m & np.isin(np.array(list(map(str, Wd["db"]))), list(dbs))
+        if int(m.sum()) == 0:
+            raise RuntimeError(f"dbs={dbs} 에 해당하는 평가 창이 없습니다.")
     yt = (Wd["y"] == ci) & m
     yp = (r["pred"] == ci) & m
     b = _blocks(w)
@@ -2380,7 +2387,8 @@ def ectopy_audit(OUT, w, cls="AFIB", verbose=True):
     E = w["aux"][:, j0:j1]
     grp = {"위양성(FP)": yp & ~yt, "참양성(TP)": yp & yt,
            "위음성(FN)": yt & ~yp, "참음성(TN)": m & ~yt & ~yp}
-    print(f"\n=== [H-AP] 이소성 기전 검증  ({cls}, 기준 A1) ===")
+    print(f"\n=== [H-AP] 이소성 기전 검증  ({cls}, 기준 A1"
+          + (f", DB={list(dbs)}" if dbs else "") + f") ===")
     print(f"  ★이소성은 대부분의 창에서 0 이라 **중앙값은 전부 0** 이 된다(정보 없음).")
     print(f"    그래서 '이소성이 있는 창의 비율' 과 상위분위를 함께 본다.")
     print(f"  {'특징':<10}" + "".join(f"{k[:6]+'>0%':>10}" for k in grp)
@@ -2610,6 +2618,17 @@ def selftest():
                                     score=None)},
               w={k: w6[k] for k in ("y", "pid", "db", "dur", "nov", "t0")})
     R6 = ectopy_veto(O6, w6, "A1.RR산포", "AFIB", verbose=False)
+    # DB 필터 (H-AT 용)
+    O7b = dict(O6); O7b["w"] = dict(O6["w"])
+    O7b["w"]["db"] = np.array(["ltafdb"] * 120 + ["mitdb"] * 120)
+    a_lt = ectopy_audit(O7b, w6, "AFIB", dbs=("ltafdb",), verbose=False)
+    ok(isinstance(a_lt, dict) and "s_frac" in a_lt, "ectopy_audit 이 DB 로 잘린다")
+    try:
+        ectopy_audit(O7b, w6, "AFIB", dbs=("없는DB",), verbose=False)
+        ok(False, "없는 DB 에 예외")
+    except RuntimeError:
+        ok(True, "해당 DB 의 창이 없으면 예외 — 빈 표본으로 판정하지 않는다")
+
 
     # 파편화 인공물 검출: 참 에피소드 중간을 잘라 쪼개면 PPV 가 부풀려진다
     pr7 = np.r_[np.ones(60, np.int64), np.zeros(60, np.int64)]
