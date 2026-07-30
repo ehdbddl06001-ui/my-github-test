@@ -1019,9 +1019,13 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
         arms.update(ATRIAL_ARMS)
     if "n_atr" in w:                          # personalize(w) 를 거쳤을 때만
         arms.update(PERS_ARMS)
-    elif any(a.startswith("A5") for a in (only or ())):
-        raise RuntimeError("A5 계열은 개인편차가 필요합니다 — "
-                           "w = personalize(w) 를 먼저 하세요.")
+    elif w["aux"].shape[1] > 10:
+        # ★A6 은 스스로 기준선을 만든다(모집단 모델의 점수로) → personalize 불필요.
+        #   A5 계열만 미리 만들어 둔 편차를 요구한다.
+        arms["A6.모집단→개인화(3단계)"] = _arm_pers_model
+        if any(a.startswith("A5") for a in (only or ())):
+            raise RuntimeError("A5 계열은 개인편차가 필요합니다 — "
+                               "w = personalize(w) 를 먼저 하세요.")
     elif any(a.startswith("A4") for a in (only or ())):
         raise RuntimeError("A4 계열은 심방특징이 필요합니다 — "
                            "w = attach_atrial(w) 를 먼저 하세요.")
@@ -1738,6 +1742,74 @@ for _f2, _s2, _a2 in ((_arm_pers, True, "pers"), (_arm_pers_only, False, "dev"))
     _f2._use_seq, _f2._aux_mode = _s2, _a2
 del _f2, _s2, _a2
 
+
+def _pers_from_score(w, pn, q=0.25, min_ref=5):
+    """★사용자 제안 3단계 중 2단계: **모집단 모델이 정상이라고 본 창**을 기준선으로.
+
+    pn[i] = 창 i 가 정상(N)일 사후확률. 환자마다 상위 q 분위를 골라 심방 21열의
+    중앙값을 기준선으로 쓰고 편차를 만든다.
+
+    ★왜 이것이 quiet 모드보다 나은가
+      quiet 는 정상 대리로 **ΔRR 엔트로피 하나**를 썼다. 이건 심방 특징 21열을
+      전혀 안 보므로, RR 이 우연히 규칙적인 AF 구간(예: 2:1 고정 전도 AFL)을
+      '정상' 으로 잡을 수 있다. 모집단 모델은 31열을 전부 보고 판단하므로 더
+      정보가 많다. **사용자 제안(1단계 모집단 학습 → 2단계 개인화)의 핵심 이점이
+      바로 이 게이팅이다.**
+
+    ★누수는 없는가
+      pn 은 **그 환자를 학습에서 본 적 없는 모델**이 낸 점수여야 한다. 환자분리
+      교차검증에서 폴드 모델은 테스트 환자를 보지 않으므로 조건이 성립한다.
+      라벨 y 는 어디서도 참조하지 않는다.
+
+    ★위험: 오류 증폭(자기학습의 고전적 실패)
+      지속성 AF 환자에서 모집단 모델이 AF 창을 '정상' 으로 잘못 보면 기준선이
+      AF 가 되고 2단계가 그 오류를 고착시킨다. 그래서 report_strata 로 층화해
+      **지속성에서 손해가 나는지**를 반드시 확인한다(H-AB 와 같은 논리).
+    """
+    n = w["aux"].shape[1]
+    nrr = int(w.get("n_rr", n))
+    atr = np.arange(nrr, n)
+    A = w["aux"]
+    pid = np.asarray(w["pid"])
+    D = np.zeros((len(A), len(atr)), "float32")
+    for p in np.unique(pid):
+        kk = np.flatnonzero(pid == p)
+        thr = float(np.quantile(pn[kk], 1.0 - q))
+        ref = kk[pn[kk] >= thr]
+        if len(ref) < min_ref:
+            ref = kk[np.argsort(-pn[kk])[:min(min_ref, len(kk))]]
+        b = np.nanmedian(A[np.ix_(ref, atr)], axis=0)
+        D[kk] = A[np.ix_(kk, atr)] - np.where(np.isfinite(b), b, 0.0)
+    return D
+
+
+def _arm_pers_model(w, tr, te, ncls, seed, epochs=20, q=0.25):
+    """A6. ★사용자 제안 3단계 그대로.
+
+      1단계 모집단 학습 : tr 환자로 A4(RR+심방) 모델을 학습한다.
+      2단계 개인화      : 그 모델이 각 창을 정상으로 볼 확률로 **개인 기준선**을
+                          만든다(라벨 안 씀. 테스트 환자는 학습에서 본 적 없음).
+      3단계 변화 판단   : 절대값 + 개인편차를 함께 넣어 다시 학습·예측한다.
+
+    비용은 폴드당 학습 2회다(1단계 + 3단계). 추론은 값싸므로 대략 2배.
+    """
+    ni = w["classes"].index("N") if "N" in w["classes"] else 0
+    # ── 1단계: 모집단 모델 (개인화 없음) ──────────────────────────────────
+    all_idx = np.arange(len(w["y"]))
+    p1 = _fit_win(w, tr, all_idx, ncls, seed, use_seq=True, aux="all", epochs=epochs)
+    pn = p1[:, ni].astype("float64")            # 정상일 사후확률
+    # ── 2단계: 개인 기준선 → 편차 ─────────────────────────────────────────
+    D = _pers_from_score(w, pn, q=q)
+    w2 = dict(w)
+    w2["n_atr"] = int(w["aux"].shape[1])
+    w2["aux"] = np.concatenate([w["aux"], D], 1).astype("float32")
+    # ── 3단계: 절대값 + 편차로 재학습 ─────────────────────────────────────
+    return _fit_win(w2, tr, te, ncls, seed + 1, use_seq=True, aux="pers", epochs=epochs)
+
+
+_arm_pers_model._use_seq, _arm_pers_model._aux_mode = True, "pers"
+PERS_ARMS["A6.모집단→개인화(3단계)"] = _arm_pers_model
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증 — 합성 RR 로 wfdb/torch 없이 로직만 검증
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1898,6 +1970,41 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── A6: 모집단 모델 점수로 만든 개인 기준선 (사용자 3단계 제안) ──────────
+    #  ★검증 성질: '정상' 점수가 높은 창을 기준선으로 잡으므로, 그 창들의 편차는
+    #    0 근처여야 하고 비정상 창의 편차는 커야 한다.
+    npat3 = 8
+    wq3 = dict(w); wq3["n_rr"] = 10
+    base_atr = np.zeros((len(w["y"]), 21), "float32")
+    is_ab = (w["y"] == 1)                       # AFIB 창을 '비정상' 으로 둔다
+    base_atr[is_ab] += 3.0                      # 비정상 창은 심방특징이 3 만큼 다르다
+    wq3["aux"] = np.concatenate([w["aux"], base_atr], 1)
+    pn3 = np.where(is_ab, 0.1, 0.9)             # 모집단 모델이 잘 맞힌 경우
+    D3 = _pers_from_score(wq3, pn3, q=0.25)
+    ok(float(np.abs(D3[~is_ab]).mean()) < 0.1,
+       "정상 창의 개인편차는 0 근처 (기준선이 정상 구간에서 만들어졌다)")
+    ok(float(np.abs(D3[is_ab]).mean()) > 2.0,
+       f"비정상 창의 편차는 크다 (평균 {float(np.abs(D3[is_ab]).mean()):.2f})")
+    # ★오류 증폭: 모집단 모델이 뒤집혀 있으면 기준선이 AF 가 되어 부호가 뒤집힌다
+    D3b = _pers_from_score(wq3, 1.0 - pn3, q=0.25)
+    # ★두 리듬을 **모두 가진** 환자에서만 본다. 한 리듬만 있는 환자는 점수를 뒤집어도
+    #   고를 창이 그 리듬뿐이라 기준선이 안 바뀐다(전체 평균으로 보면 희석된다).
+    both = [p for p in np.unique(w["pid"])
+            if is_ab[w["pid"] == p].any() and (~is_ab)[w["pid"] == p].any()]
+    ok(len(both) > 0, f"두 리듬을 모두 가진 환자 {len(both)}명으로 검증")
+    mb = np.isin(w["pid"], both)
+    # 검증할 성질은 **순서의 역전**이다: 올바른 모델이면 AF 편차 > 정상 편차,
+    # 뒤집힌 모델이면 그 반대. (절대 크기는 환자의 AF 비율과 q 에 따라 희석된다.)
+    ga, gn = (float(np.abs(D3[mb & is_ab]).mean()),
+              float(np.abs(D3[mb & ~is_ab]).mean()))
+    ba, bn = (float(np.abs(D3b[mb & is_ab]).mean()),
+              float(np.abs(D3b[mb & ~is_ab]).mean()))
+    ok(ga > gn and ba < bn,
+       f"★오류 증폭 실재: 올바른 모델 AF{ga:.2f}>정상{gn:.2f} / "
+       f"뒤집힌 모델 AF{ba:.2f}<정상{bn:.2f} — 기준선이 AF 가 되면 부호가 역전된다")
+    ok("A6.모집단→개인화(3단계)" in PERS_ARMS and
+       getattr(_arm_pers_model, "_aux_mode") == "pers", "A6 등록·aux 모드 선언")
 
     # ── 개인화 기준선 ────────────────────────────────────────────────────────
     wa2 = dict(w); wa2["n_rr"] = 10
