@@ -107,6 +107,231 @@ def _cache_dir(db, ann_only, dldir=None):
     return f"{_BASE}/raw_ann/{db}" if ann_only else f"/content/{db}_raw"
 
 
+def rate_correct_audit(atrial=None, corpus=None, W=128, stride=None, min_win=5,
+                       exps=(1 / 3, 1 / 2, 2 / 3, 1.0), targets=("rt_med", "pr_med"),
+                       verbose=True):
+    """★심박수 보정 후에도 rt_med·pr_med 가 판별력을 갖는지 (§12.7 의 열린 고리).
+
+    ── 문제 ────────────────────────────────────────────────────────────────
+    rt_med(R→T 정점 시간)·pr_med 는 **절대 시간**이라 심박수가 빨라지면 그냥
+    짧아진다. 그런데 심박수는 이미 RR 축이 전부 갖고 있다. 그래서 보정 없이 쓰면
+    형태축의 기여가 아니라 **심박수를 두 번 세는 것**일 수 있다. §12.7 에서
+    `rt_med` 에 '⚠심박수 교란 — 점검 후 판단' 을 달고 미뤄 둔 검사가 이것이다.
+
+    ── 보정식 ──────────────────────────────────────────────────────────────
+    임상의 QT 보정과 같은 형태를 쓴다:  x_c = x / RR**α
+        α=1/2  Bazett      α=1/3  Fridericia      α=2/3  (더 강한 보정)
+        α=1.0  완전 비율화(심박 주기의 몇 %인가)
+    ★그런데 α 를 고르는 것 자체가 가정이다. 그래서 **데이터에서 추정한 α** 도 함께
+      본다: 정상동조율(N) 창에서 log(x) 를 log(RR) 에 회귀한 기울기가 곧 이 표본의
+      α 다(N 만 쓰는 이유: 부정맥 창에서는 RR 자체가 리듬의 신호라 기울기가 오염된다).
+      추정 α 로 보정하면 잔여 상관이 **정의상** 0 에 가까워야 하고, 그게 맞는지도 검산한다.
+
+    ── 판정 논리 (이게 요점) ───────────────────────────────────────────────
+    보정 뒤에 잔여 상관 |ρ| 는 내려가야 한다. 그 다음이 진짜 질문이다:
+      · 판별 AUC 가 **유지되면** → 그 특징에는 심박수와 **독립인 형태 정보**가 있다(채택)
+      · 판별 AUC 가 **사라지면** → 원래 판별력은 심박수였다(형태축 기여로 세지 말 것)
+    즉 보정은 특징을 '개선'하는 작업이 아니라 **정체를 밝히는 검사**다.
+    """
+    g = globals()
+    win_starts = g["win_starts"]
+    stride = int(stride or W)
+    a = np.load(atrial or f"{_BASE}/afib_atrial.npz", allow_pickle=True)
+    d = np.load(corpus or f"{_BASE}/afib_rr.npz", allow_pickle=True)
+    names = [str(x) for x in a["names"]]
+    K = {(int(p), int(s)): i for i, (p, s) in enumerate(a["key"])}
+    rn = [str(x) for x in d["rhythm_names"]]
+    pid, rhy, pre = d["pid"], d["rhythm"], d["pre_rr"]
+    lab, feat, who, rrw = [], [], [], []
+    for p in np.unique(pid):
+        idx = np.flatnonzero(pid == p)
+        for s in win_starts(len(idx), W, stride):
+            j = K.get((int(p), int(s)))
+            if j is None:
+                continue
+            wv = rhy[idx][s:s + W]
+            u, c = np.unique(wv, return_counts=True)
+            k = int(np.argmax(c))
+            if c[k] / W < 0.90:
+                continue
+            lab.append(rn[u[k]]); feat.append(a["feat"][j]); who.append(int(p))
+            rrw.append(float(np.median(pre[idx][s:s + W])) / 360.0)
+    lab = np.array(lab); feat = np.array(feat); who = np.array(who)
+    rrw = np.array(rrw)
+    from scipy.stats import spearmanr
+
+    print(f"\n=== 심박수 보정 감사  창 {len(lab):,} / 환자 {len(np.unique(who))} ===")
+    print(f"  보정식  x_c = x / RR^α   (RR = 창 중앙 RR, 초)")
+
+    def _pauc(v, A, B, band=None):
+        """환자단위 AUC — (환자,리듬) 중앙값을 표본 1개로 센다(창 많은 환자 방지).
+           band=(lo,hi) 를 주면 창 중앙 RR 이 그 구간인 창만 쓴다(심박수 맞춤)."""
+        xs, ys = [], []
+        for nm, pos in ((A, 1), (B, 0)):
+            for p in np.unique(who[lab == nm]):
+                m = (lab == nm) & (who == p)
+                if band is not None:
+                    m = m & (rrw >= band[0]) & (rrw <= band[1])
+                if m.sum() >= min_win and np.isfinite(v[m]).any():
+                    xs.append(float(np.nanmedian(v[m]))); ys.append(pos)
+        xs, ys = np.array(xs), np.array(ys, bool)
+        return _auc_rank(xs, ys), int(ys.sum()), int((~ys).sum())
+
+    def _auc_matched(v, A, B, bin_w=0.06, min_pat=3):
+        """★심박수를 **좁은 구간으로 층화**해 낸 AUC — 이 감사의 결정적 지표.
+
+        왜 층화인가: 'ρ 가 작다'로는 부족하다(Spearman 은 크기를 안 보므로 무한히
+        작은 의존도 ρ=1 을 낼 수 있다). 그리고 겹치는 구간을 10~90 퍼센타일처럼
+        넓게 잡으면 그 안에서도 두 리듬의 평균 심박수가 여전히 다르므로, **순수
+        심박수 특징이 통과해 버린다**(합성 검증에서 실제로 통과했다).
+        그래서 RR 을 {bin_w}초 폭 구간으로 잘라 **구간 안에서** AUC 를 내고, 양쪽
+        모두 환자 {min_pat}명 이상인 구간만 써서 가중평균한다. 구간 안에서는 심박수가
+        사실상 같으므로, 거기서도 갈린다면 그것은 심박수가 아니다.
+
+        판정 가능한 구간이 없으면 nan → '판정 불가'. 겹침이 없다는 사실 자체가
+        정직한 답이고, 비맞춤 AUC 로 되돌아가면 결론이 조용히 위조된다.
+        """
+        ra, rb = rrw[lab == A], rrw[lab == B]
+        if len(ra) < min_win or len(rb) < min_win:
+            return float("nan"), 0
+        lo = max(ra.min(), rb.min()); hi = min(ra.max(), rb.max())
+        if not (hi > lo):
+            return float("nan"), 0
+        edges = np.arange(lo, hi + bin_w, bin_w)
+        num = den = 0.0; nbin = 0
+        for i in range(len(edges) - 1):
+            b0, b1 = edges[i], edges[i + 1]
+            xs, ys = [], []
+            for nm, pos in ((A, 1), (B, 0)):
+                for p in np.unique(who[lab == nm]):
+                    m = (lab == nm) & (who == p) & (rrw >= b0) & (rrw < b1)
+                    if m.sum() >= 1 and np.isfinite(v[m]).any():
+                        xs.append(float(np.nanmedian(v[m]))); ys.append(pos)
+            xs, ys = np.array(xs), np.array(ys, bool)
+            na, nb = int(ys.sum()), int((~ys).sum())
+            if na < min_pat or nb < min_pat:
+                continue
+            a_ = _auc_rank(xs, ys)
+            if np.isfinite(a_):
+                wgt = min(na, nb)
+                num += wgt * a_; den += wgt; nbin += 1
+        # ★맞춤 표본이 너무 적으면 AUC 는 잡음이다. 구간 1개 × 환자 3명으로 나온
+        #   0.667 을 '판별력' 으로 읽으면 안 된다(합성 검증에서 그렇게 오판했다).
+        #   MDE 논리와 같다 — 표본이 없으면 '판정 불가' 라고 말한다.
+        if nbin < 2 or den < 12:
+            return float("nan"), nbin
+        return (num / den if den else float("nan")), nbin
+
+    out = {}
+    for tname in targets:
+        if tname not in names:
+            print(f"  · {tname}: 특징에 없음 — 건너뜀"); continue
+        x = feat[:, names.index(tname)].astype("float64")
+        okm = np.isfinite(x) & np.isfinite(rrw) & (rrw > 0)
+        # ★α 를 N 창에서 추정 (부정맥 창은 RR 자체가 리듬 신호라 제외)
+        nm_ = okm & (lab == "N") & (x > 0)
+        a_fit = float("nan")
+        if nm_.sum() >= 50:
+            a_fit = float(np.polyfit(np.log(rrw[nm_]), np.log(x[nm_]), 1)[0])
+        cand = list(exps) + ([a_fit] if np.isfinite(a_fit) else [])
+        tags = [f"α={e:.3f}" for e in exps] + ([f"α={a_fit:.3f}(추정)"]
+                                               if np.isfinite(a_fit) else [])
+        head = f"\n  ── {tname} ──"
+        if np.isfinite(a_fit):
+            head += f"   N 창에서 추정한 α = {a_fit:.3f}"
+        else:
+            head += "   (N 창이 50개 미만이라 α 추정 불가)"
+        print(head)
+        print(f"    {'보정':<16}{'ρ|N':>7}{'전체 환자AUC':>24} |"
+              f"{'★심박수 맞춘 AUC':>24}   판정")
+        print(f"    {'':<16}{'':>7}{'AFIB/N  AFL/AFIB   AFL/N':>24} |"
+              f"{'AFIB/N  AFL/AFIB   AFL/N':>24}")
+        print(f"    (★오른쪽 = 두 리듬의 창 중앙 RR 이 **겹치는 구간**의 창만 써서 낸 AUC."
+              f"\n     ρ 는 크기를 안 보므로 이것이 결정적 검사다.)")
+        rows = []
+        for tag, e in [("보정 없음(α=0)", 0.0)] + list(zip(tags, cand)):
+            v = np.where(okm, x / np.power(np.where(rrw > 0, rrw, 1.0), e), np.nan)
+            m2 = np.isfinite(v)
+            # ★교란 ρ 는 **리듬 안에서** 재야 한다 ─────────────────────────
+            #   리듬이 심박수를 정하므로(AFIB 빠름·N 느림), 리듬을 잘 가르는 특징은
+            #   무엇이든 RR 과 상관이 생긴다. 그래서 '주변(marginal) ρ' 로 교란을
+            #   판정하면 **좋은 판별자를 심박수 대리로 오판한다** — 합성 검증에서
+            #   판별 AUC 1.000 인 순수 형태 특징이 ρ=0.49 로 그렇게 오판됐다.
+            #   N 창 안에서는 심박수 변동이 리듬이 아니라 생리적 변동이므로,
+            #   N 안의 ρ 가 우리가 원하는 '심박수 의존성' 이다.
+            #   (§12.7 의 rt_med '⚠심박수 교란' 판정도 주변 ρ 로 내린 것이라
+            #    같은 결함을 갖는다 — 이 감사가 그것을 다시 판정한다.)
+            mn = m2 & (lab == "N")
+            rho_n = (spearmanr(v[mn], rrw[mn]).statistic if mn.sum() > 20
+                     else float("nan"))
+            rho_n = abs(float(rho_n)) if np.isfinite(rho_n) else float("nan")
+            rho_m = (spearmanr(v[m2], rrw[m2]).statistic if m2.sum() > 20
+                     else float("nan"))
+            rho_m = abs(float(rho_m)) if np.isfinite(rho_m) else float("nan")
+            PAIRS = (("AFIB", "N"), ("AFL", "AFIB"), ("AFL", "N"))
+            au = [_pauc(v, A, B)[0] for A, B in PAIRS]
+            # ★겹침이 없으면 nan 이어야 한다. band=None 을 그대로 넘기면
+            #   _pauc 가 '맞춤 안 함'으로 해석해 **비맞춤 AUC 를 돌려준다** —
+            #   '심박수를 맞춰도 갈린다'는 결론이 조용히 위조된다(합성 검증이 잡았다).
+            mres = [_auc_matched(v, A, B) for A, B in PAIRS]
+            aum = [r_[0] for r_ in mres]; nbins = [r_[1] for r_ in mres]
+            dmax = max((abs(u - 0.5) for u in au if np.isfinite(u)), default=float("nan"))
+            dmm = max((abs(u - 0.5) for u in aum if np.isfinite(u)), default=float("nan"))
+            # ★보정으로 값이 상수가 되면 AUC 는 부동소수 잡음의 순위일 뿐이다.
+            #   합성 검증에서 완전 보정된 특징(정보 0)이 AUC 0.667 로 찍혀
+            #   '형태 정보 있음' 이라는 반대 결론이 났다. 정보량을 먼저 본다.
+            fv = v[m2]
+            spread = (float(np.subtract(*np.percentile(fv, [75, 25])))
+                      / max(abs(float(np.median(fv))), 1e-12)) if len(fv) > 4 else 0.0
+            if spread < 1e-3:
+                verd = "✗정보 소멸 — 보정 후 상수(원래 판별력은 전부 심박수였다)"
+                au = aum = [float("nan")] * 3; dmax = dmm = float("nan")
+            elif not np.isfinite(dmax):
+                verd = "환자 부족"
+            elif dmax < 0.10:
+                verd = "✗판별력 없음"
+            elif not np.isfinite(dmm):
+                verd = (f"판정 불가 — 심박수 맞춤 표본 부족(적격 구간 "
+                        f"{max(nbins)}개)")
+            else:
+                # ★이진 판정을 하지 않는다. '심박수를 맞추면 판별력이 얼마나
+                #   줄어드는가' 를 비율로 보고한다. 구간 폭(0.06초) 안에 남는
+                #   잔여 심박수 기울기 때문에 순수 심박수 특징도 맞춤 AUC 가
+                #   정확히 0.5 가 되지는 않는다 — 그래서 어떤 고정 문턱으로
+                #   '독립' 을 선언해도 합성 검증에서 오판이 났다. 검증할 수 없는
+                #   문턱을 쓰는 대신 숫자를 내놓고 애매하면 애매하다고 말한다.
+                red = dmm / dmax if dmax > 0 else float("nan")
+                keep_pct = 100 * red
+                if red < 0.35:
+                    verd = f"✗판별력의 {100-keep_pct:.0f}% 가 심박수 — 형태 기여 미미"
+                elif red > 0.75:
+                    verd = f"★심박수 맞춰도 {keep_pct:.0f}% 유지 — 독립인 형태 정보"
+                else:
+                    verd = (f"△부분적 — 심박수 맞추면 판별력 {100-keep_pct:.0f}% 감소"
+                            f"(해석 필요)")
+            print(f"    {tag:<16}{rho_n:>7.3f}" +
+                  "".join(f"{u:>8.3f}" if np.isfinite(u) else f"{'—':>8}"
+                          for u in au) + " |" +
+                  "".join(f"{u:>8.3f}" if np.isfinite(u) else f"{'—':>8}"
+                          for u in aum) + f"   {verd}")
+            rows.append(dict(tag=tag, exp=e, rho=rho_n, rho_marg=rho_m, auc=au,
+                             auc_matched=aum, nbins=nbins, spread=spread,
+                             verdict=verd))
+        out[tname] = dict(a_fit=a_fit, rows=rows)
+        # 검산: 추정 α 로 보정하면 잔여 상관이 거의 0 이어야 한다
+        if np.isfinite(a_fit):
+            r_fit = [r for r in rows if "추정" in r["tag"]
+                     and "소멸" not in r["verdict"]]
+            if r_fit and r_fit[0]["rho"] > 0.25:
+                print(f"    ⚠ 추정 α 로 보정했는데 잔여 |ρ|={r_fit[0]['rho']:.3f} 다."
+                      f" 관계가 로그선형이 아니거나")
+                print(f"      N 창의 심박수 범위가 좁아 기울기가 불안정하다는 뜻이다.")
+    print(f"\n  ※ 보정은 특징을 '개선'하는 작업이 아니라 **정체를 밝히는 검사**다.")
+    print(f"    보정 뒤 판별력이 사라지면 그 특징의 원래 판별력은 심박수였고,")
+    print(f"    남으면 심박수와 독립인 형태 정보가 있다는 뜻이다.")
+    return out
+
+
 def cache_status(base=None, verbose=True):
     """지금 Drive 에 무엇이 이미 있는지 보여 준다 — "또 받아야 하나?" 에 대한 답.
 
