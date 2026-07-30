@@ -274,6 +274,99 @@ def make_windows(d, W=W_WIN, stride=None, purity=PURITY, classes=AF_CLASSES,
     return w
 
 
+def win_label_scan(d, Ws=(16, 24, 32, 48, 64, 96, 128), purity=None, classes=None,
+                   dbs=None, sigma=None, verbose=True):
+    """★창 크기 W 를 바꾸면 리듬별 환자·창 수가 어떻게 변하는지 — **주석만** 쓴다.
+
+    왜 이것부터 하는가: §17.7 에서 ltafdb 의 AFL 비트 13,093개(환자 11명)가
+    **창을 하나도 만들지 못했다**(연속 128비트의 90%를 채우는 구간이 없어서).
+    그래서 "W 를 줄이면 되찾을 수 있나" 가 다음 질문인데, 그걸 확인하려고 신호
+    3.6GB 를 다시 받고 특징을 다시 만드는 것은 순서가 틀렸다. **라벨만으로 답이
+    나온다** — 신호 없이, 몇 초로.
+
+    ★이 함수는 seq 텐서를 만들지 않는다. make_windows 를 W 마다 부르면 창 텐서를
+      7번 만들어(각 165MB) RAM 을 태운다. 여기서는 라벨·순도만 센다.
+
+    sigma: 리듬별 실측 σ(없으면 §22 까지의 실측값을 쓴다). MDE = 1.96σ/√n.
+    """
+    classes = list(classes or AF_CLASSES)
+    purity = PURITY if purity is None else purity
+    # §14.5·§17 실측 σ (가정 0.32 대신). 없으면 보수적으로 0.32.
+    sig = dict(N=0.259, AFIB=0.303, AFL=0.461)
+    sig.update(sigma or {})
+    names = d["rhythm_names"]
+    pid, rhy, dbv = d["pid"], d["rhythm"], d["db"]
+    if dbs is not None:
+        keep = np.isin(dbv, np.array(list(dbs), dtype=dbv.dtype))
+        pid, rhy = pid[keep], rhy[keep]
+        if verbose:
+            print(f"  [DB 필터] {list(dbs)} → 비트 {int(keep.sum()):,}  "
+                  f"환자 {len(np.unique(pid))}")
+    want = {nm: i for i, nm in enumerate(classes)}
+    code2y = np.array([want.get(str(nm), -1) for nm in names], np.int64)
+    # 환자 경계를 한 번만 구한다(환자마다 전체 스캔하지 않는다)
+    order = np.argsort(pid, kind="stable")
+    ps = pid[order]
+    bnd = np.flatnonzero(np.diff(ps)) + 1
+    groups = list(zip(np.r_[0, bnd], np.r_[bnd, len(ps)]))
+    lab_all = code2y[rhy]
+
+    print(f"\n=== 창 크기 주사 (주석만 — 신호 안 받음) ===")
+    print(f"  순도 기준 {purity:.0%} / 비중첩(stride=W)")
+    hdr = f"  {'W':>4}{'≈초':>6}"
+    for c in classes:
+        hdr += f"{c+'창':>9}{c+'환자':>8}{'MDE':>7}"
+    print(hdr + f"{'전이%':>7}")
+    out = {}
+    for W in Ws:
+        cnt = np.zeros(len(classes), np.int64)
+        pats = [set() for _ in classes]
+        ntr = ntot = 0
+        for g0, g1 in groups:
+            idx = order[g0:g1]
+            p = int(ps[g0])
+            lab = lab_all[idx]
+            n = len(lab)
+            if n < W:
+                continue
+            for s in range(0, n - W + 1, W):
+                seg = lab[s:s + W]
+                u, c = np.unique(seg, return_counts=True)
+                k = int(np.argmax(c))
+                ntot += 1
+                if c[k] / W < purity or u[k] < 0:
+                    ntr += 1
+                    continue
+                cnt[u[k]] += 1; pats[u[k]].add(p)
+        row = f"  {W:>4}{W*0.85:>6.0f}"
+        rec = {}
+        for i, c in enumerate(classes):
+            npat = len(pats[i])
+            mde = 1.96 * sig.get(c, 0.32) / np.sqrt(npat) if npat else float("nan")
+            row += f"{int(cnt[i]):>9,}{npat:>8}"
+            row += f"{mde:>7.3f}" if np.isfinite(mde) else f"{'—':>7}"
+            rec[c] = dict(win=int(cnt[i]), pat=npat, mde=float(mde))
+        row += f"{100*ntr/max(ntot,1):>6.1f}%"
+        print(row)
+        out[W] = rec
+    print(f"\n  ※ MDE 는 §14.5·§17 의 **실측** σ (N 0.259 / AFIB 0.303 / AFL 0.461) 기준.")
+    print(f"  ※ 창이 짧아지면 표본은 늘지만 (a) 스펙트럼 분해능 (b) 창 안 정보량이")
+    print(f"     줄고 전이구간 비율도 바뀐다. 표본만 보고 W 를 고르면 안 된다.")
+    # AFL 이 목표치에 닿는 W 가 있는지 명시
+    tgt = 30
+    hit = [W for W in Ws if out[W].get("AFL", {}).get("pat", 0) >= tgt]
+    print(f"\n  [사전등록 관문] AFL 환자 ≥{tgt} 인 W: "
+          f"{hit if hit else '없음'}")
+    if not hit:
+        best = max(Ws, key=lambda W: out[W].get("AFL", {}).get("pat", 0))
+        bp = out[best]["AFL"]["pat"]
+        print(f"    → 어떤 W 에서도 {tgt}명에 못 미친다(최대 W={best} 에서 {bp}명).")
+        print(f"       **신호를 다시 받지 않는다.** §10.2 의 약속대로 AFL 은 탐색적")
+        print(f"       보고로 남기고, 표본을 늘리려면 AFL 라벨이 있는 **다른 DB** 가")
+        print(f"       필요하다(창 정의로는 해결되지 않는다).")
+    return out
+
+
 def _mde(w, sigma=0.32, verbose=True):
     """클래스별 검정력. ★모델을 붙이기 전에 이 표를 먼저 볼 것."""
     out = {}
