@@ -814,6 +814,15 @@ def _aux_cols(w, mode):
     if mode == "dev":
         _need_pers(w)
         return np.arange(_natr(w), n)            # 개인편차만
+    if mode == "rr_ect":                         # RR 산포 + 이소성 창특징
+        if "n_pre_ect" not in w:
+            raise RuntimeError("이소성 특징이 없습니다 — attach_beat_feats(w) 먼저.")
+        nrr2 = int(w.get("n_rr", w["n_pre_ect"]))
+        return np.r_[np.arange(nrr2), np.arange(w["n_pre_ect"], n)]
+    if mode == "ect":                            # 이소성 창특징만
+        if "n_pre_ect" not in w:
+            raise RuntimeError("이소성 특징이 없습니다 — attach_beat_feats(w) 먼저.")
+        return np.arange(w["n_pre_ect"], n)
     raise ValueError(f"알 수 없는 aux mode: {mode}")
 
 
@@ -1025,6 +1034,10 @@ RHY_PRIORITY = [                      # (리듬, min_frac)  — 앞이 높은 �
 #   팔을 추가하고 여기에 안 적으면 "사전등록 검정이 없는 팔" 경고가 뜬다.
 #   (손으로 관리하는 검정 목록 때문에 A4·A5·A6 가 차례로 빠졌다 — §14.4·§29)
 HYPOTHESES = [
+    ("H-AO", "A7.RR산포+이소성", "A1.RR산포",
+     "★이소성 창특징의 순효과. 주 지표는 창 F1 이 아니라 **에피소드 PPV** 다"),
+    ("H-AQ", "A7.RR산포+이소성", "A7c.이소성만",
+     "RR 산포도 여전히 필요한가"),
     ("H-AA", "A5.RSN+개인편차", "A4.RSN+심방활동",
      "개인화(quiet 기준선)의 순효과. 기준이 A1 이 아님에 주의"),
     ("H-AD", "A5.RSN+개인편차", "A5c.개인편차만",
@@ -1217,6 +1230,8 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
     # 심방특징이 실제로 붙어 있을 때만 A4 계열을 켠다(가짜 음성 결론 방지)
     if w["aux"].shape[1] > 10:
         arms.update(ATRIAL_ARMS)
+    if "n_pre_ect" in w:                      # attach_beat_feats(w) 를 거쳤을 때만
+        arms.update(ECT_ARMS)
     if "n_atr" in w:                          # personalize(w) 를 거쳤을 때만
         arms.update(PERS_ARMS)
     elif w["aux"].shape[1] > 10:
@@ -1968,6 +1983,20 @@ def _arm_pers_only(w, tr, te, ncls, seed, epochs=20):
     return _fit_win(w, tr, te, ncls, seed, use_seq=False, aux="dev", epochs=epochs)
 
 
+def _arm_rr_ect(w, tr, te, ncls, seed, epochs=20):
+    """A7. A1(RR산포) + 이소성 창특징 — ★시퀀스 없음. A1 과의 차이가 순효과다."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=False, aux="rr_ect", epochs=epochs)
+
+
+def _arm_ect_only(w, tr, te, ncls, seed, epochs=20):
+    """A7c. 이소성 창특징만 — 이득이 정말 이소성에서 오는지 가르는 대조군."""
+    return _fit_win(w, tr, te, ncls, seed, use_seq=False, aux="ect", epochs=epochs)
+
+
+_arm_rr_ect._use_seq, _arm_rr_ect._aux_mode = False, "rr_ect"
+_arm_ect_only._use_seq, _arm_ect_only._aux_mode = False, "ect"
+ECT_ARMS = {"A7.RR산포+이소성": _arm_rr_ect, "A7c.이소성만": _arm_ect_only}
+
 PERS_ARMS = {
     "A5.RSN+개인편차": _arm_pers,
     "A5c.개인편차만": _arm_pers_only,
@@ -2103,6 +2132,157 @@ def pp_center(OUT, arm, cls="AFIB", mode="median", c=0.0, verbose=True):
                 print(f"    {g:<8}{int(sel.sum()):>4}{a_:>9.3f}{b_:>9.3f}{b_-a_:>+9.3f}")
         print(f"    ※ 지속성에서 크게 떨어지면 예측대로다(그 환자의 '중앙값'이 곧 AF).")
     return dict(pred=pred, mask=m, f1_base=base, f1_new=new)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  11. 1층↔2층 연결 — 이소성 박동 창특징 (§38)
+#
+#  표적은 **AFIB 에피소드 PPV 0.702** 다(위경보 30%). AF 검출기의 고전적 위양성
+#  원인이 빈발 이소성 박동(PAC/PVC)이 RR 불규칙을 만들어 AF 처럼 보이는 것이고,
+#  그 지표는 문턱 조정(§20)·후처리(§27)·개인화(§31)가 전부 못 고쳤다.
+#
+#  ★afdb 는 쓸 수 없다. .qrs 가 순수 QRS 검출기 출력이라 1,221,559 비트 전부 'N' 이다
+#    (beat_symbol_audit 실측). 그 창의 이소성 비율은 0 이 아니라 **결측**이고,
+#    afdb 는 거의 전부 AF 이므로 넣으면 모델이 "이소성 0 → AF" 를 배운다
+#    = **DB 신원 암기**. §15 에서 LODO 로 기각한 A3 와 정확히 같은 실패다.
+#    결측 표시 열을 붙여도 그 표시가 곧 DB 지시자라 마찬가지다.
+#    → dbs=("ltafdb","mitdb","nsrdb") 로 제한한다(AFIB 환자 116 → 약 93, MDE 충분).
+#
+#  ★AB/B/T/VT 는 이 특징으로 평가하지 않는다 — 그 리듬 라벨 자체가 비트 패턴을
+#    보고 붙인 것이라 동어반복이 된다(§38.1).
+# ─────────────────────────────────────────────────────────────────────────────
+ECT_NAMES = ["s_frac", "v_frac", "ect_frac", "v_run", "bigem", "couplet",
+             "iso_ect", "pause_r"]
+
+
+def _ect_win(y5w, rrw):
+    """창 하나의 이소성 특징 8종. y5w = 비트별 AAMI 코드, rrw = 비트별 RR(초)."""
+    W = len(y5w)
+    if W < 8:
+        return np.zeros(len(ECT_NAMES), "float32")
+    isS = (y5w == 1); isV = (y5w == 2)
+    ect = isS | isV
+    n_e = int(ect.sum())
+    # 최장 V 연발 (VT 의 기전이지만 여기서는 AF 와의 구분용 보조)
+    run = mx = 0
+    for b in isV:
+        run = run + 1 if b else 0
+        mx = max(mx, run)
+    # 이단맥 지수: 이소성 박동의 양 옆이 모두 정상인 '교대' 패턴 비율
+    big = iso = cpl = 0
+    for i in np.flatnonzero(ect):
+        prv = y5w[i - 1] if i > 0 else 0
+        nxt = y5w[i + 1] if i + 1 < W else 0
+        if prv == 0 and nxt == 0:
+            iso += 1
+            if i >= 2 and ect[i - 2]:      # N-E-N-E 교대
+                big += 1
+        if (i + 1 < W and ect[i + 1]) or (i > 0 and ect[i - 1]):
+            cpl += 1
+    # 보상성 휴지: 이소성 직후 RR / 직전 RR (정상은 1 근처, 이소성 뒤엔 >1)
+    pr = []
+    for i in np.flatnonzero(ect):
+        if 0 < i < W - 1 and rrw[i] > 0:
+            pr.append(rrw[i + 1] / max(rrw[i], 1e-6))
+    return np.array([
+        isS.mean(), isV.mean(), ect.mean(), mx / W,
+        big / max(n_e, 1), cpl / max(n_e, 1), iso / max(n_e, 1),
+        float(np.median(pr)) if pr else 1.0], "float32")
+
+
+def attach_beat_feats(w, d=None, verbose=True):
+    """창별 이소성 특징 8종을 w["aux"] 에 이어 붙인다. 코퍼스의 y5 를 쓴다(신호 불필요).
+
+    ★기호가 없는 DB(afdb)가 창에 섞여 있으면 **예외를 던진다.** 조용히 0 을 채우면
+      DB 신원 암기로 이어진다(위 주석 참조).
+    """
+    if d is None:
+        d = np.load(f"{_BASE}/afib_rr.npz", allow_pickle=True)
+    if "y5" not in d.files:
+        raise RuntimeError("코퍼스에 y5 가 없습니다 — build_rr_corpus 를 다시 돌리세요.")
+    W = int(w["W"]); stride = int(w["stride"])
+    pid_b, y5_b, pre_b, db_b = d["pid"], d["y5"], d["pre_rr"], d["db"]
+    # 기호가 없는 DB 를 먼저 막는다
+    dbs_w = sorted(set(map(str, w["db"])))
+    bad = []
+    for db in dbs_w:
+        m = np.array(list(map(str, db_b))) == db
+        if m.any() and int(((y5_b[m] == 1) | (y5_b[m] == 2)).sum()) == 0:
+            bad.append(db)
+    if bad:
+        raise RuntimeError(
+            f"이소성 기호가 없는 DB 가 창에 섞여 있습니다: {bad}\n"
+            f"  그 창의 이소성 비율은 0 이 아니라 **결측**이고, 넣으면 모델이\n"
+            f"  'DB 신원' 을 배웁니다(§15 의 A3 와 같은 실패).\n"
+            f"  → make_windows(..., dbs=('ltafdb','mitdb','nsrdb')) 로 다시 만드세요.")
+    order = np.argsort(pid_b, kind="stable")
+    ps = pid_b[order]
+    bnd = np.flatnonzero(np.diff(ps)) + 1
+    grp = {int(ps[a]): order[a:b] for a, b in zip(np.r_[0, bnd], np.r_[bnd, len(ps)])}
+    F = np.zeros((len(w["y"]), len(ECT_NAMES)), "float32")
+    for r, (p, s) in enumerate(w["key"]):
+        idx = grp.get(int(p))
+        if idx is None:
+            continue
+        sl = idx[int(s):int(s) + W]
+        F[r] = _ect_win(y5_b[sl], np.asarray(pre_b[sl], "float64") / FS_RR)
+    w = dict(w)
+    w["n_pre_ect"] = int(w["aux"].shape[1])
+    w["aux"] = np.concatenate([w["aux"], F], 1).astype("float32")
+    w["aux_names"] = list(w.get("aux_names", [])) + list(ECT_NAMES)
+    if verbose:
+        print(f"\n[이소성 창특징] aux {w['n_pre_ect']} → {w['aux'].shape[1]}열 "
+              f"({len(ECT_NAMES)}종)  DB {dbs_w}")
+        for i, nm in enumerate(ECT_NAMES):
+            print(f"    {nm:<10}중앙값 {float(np.median(F[:, i])):.4f}  "
+                  f"상위5% {float(np.quantile(F[:, i], 0.95)):.4f}")
+    return w
+
+
+def ectopy_audit(OUT, w, cls="AFIB", verbose=True):
+    """★H-AP: **위양성 창의 이소성 비율이 참양성보다 높은가** — 모델 이전의 기전 검증.
+
+    이것이 안 나오면 AFIB 위경보의 원인은 이소성 박동이 아니고, 그러면 이소성
+    특징으로 PPV 가 우연히 올라도 원인을 모르는 것이다(§10.2 의 순서: 기전 먼저).
+    """
+    from scipy.stats import mannwhitneyu
+    ci = OUT["classes"].index(cls)
+    Wd = OUT["w"]
+    r = OUT["res"][list(OUT["res"])[0]] if "A1.RR산포" not in OUT["res"] \
+        else OUT["res"]["A1.RR산포"]
+    m = r["mask"] & (Wd["y"] >= 0)
+    yt = (Wd["y"] == ci) & m
+    yp = (r["pred"] == ci) & m
+    j0 = int(w.get("n_pre_ect", w["aux"].shape[1] - len(ECT_NAMES)))
+    E = w["aux"][:, j0:j0 + len(ECT_NAMES)]
+    grp = {"위양성(FP)": yp & ~yt, "참양성(TP)": yp & yt,
+           "위음성(FN)": yt & ~yp, "참음성(TN)": m & ~yt & ~yp}
+    print(f"\n=== [H-AP] 이소성 기전 검증  ({cls}, 기준 A1) ===")
+    print(f"  {'특징':<10}" + "".join(f"{k:>13}" for k in grp) + f"{'FP vs TP':>11}")
+    out = {}
+    for i, nm in enumerate(ECT_NAMES):
+        med = {k: float(np.median(E[v, i])) if v.any() else float("nan")
+               for k, v in grp.items()}
+        a, b = E[grp["위양성(FP)"], i], E[grp["참양성(TP)"], i]
+        p = (float(mannwhitneyu(a, b, alternative="greater").pvalue)
+             if len(a) > 10 and len(b) > 10 else float("nan"))
+        out[nm] = dict(med=med, p_fp_gt_tp=p)
+        print(f"  {nm:<10}" + "".join(f"{med[k]:>13.4f}" for k in grp)
+              + (f"{p:>11.2g}" if np.isfinite(p) else f"{'—':>11}"))
+    n = {k: int(v.sum()) for k, v in grp.items()}
+    print(f"  {'(창 수)':<10}" + "".join(f"{n[k]:>13,}" for k in grp))
+    key = out.get("ect_frac", {})
+    if key:
+        fp, tp = key["med"]["위양성(FP)"], key["med"]["참양성(TP)"]
+        p = key["p_fp_gt_tp"]
+        ok_ = np.isfinite(p) and p < 0.05 and fp > tp
+        print(f"\n  판정: 위양성 창의 이소성 비율 {fp:.4f} vs 참양성 {tp:.4f}  "
+              f"(단측 p={p:.2g})")
+        print(f"    → {'★H-AP 지지 — 위경보의 원인이 이소성 박동일 수 있다' if ok_ else '✗H-AP 미달 — 위경보의 원인은 이소성이 아니다'}")
+        if not ok_:
+            print(f"    ★이 경우 이소성 특징으로 PPV 가 올라도 **원인을 모르는 것**이다.")
+            print(f"      H-AO 를 돌리기 전에 위경보의 실제 원인을 먼저 찾아야 한다.")
+    return out
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증 — 합성 RR 로 wfdb/torch 없이 로직만 검증
@@ -2265,6 +2445,42 @@ def selftest():
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
 
+    # ── 이소성 창특징 (1층↔2층 연결) ─────────────────────────────────────────
+    #  ★검증: 이단맥 패턴(N-V-N-V)과 고립 이소성을 구분하는지, 그리고 기호가 없는
+    #    DB 를 조용히 0 으로 채우지 않는지(그것이 DB 신원 암기로 이어진다).
+    y5b = np.zeros(64, np.int64); y5b[1::2] = 2          # 완전 이단맥 N-V-N-V
+    rrb = np.ones(64); rrb[2::2] = 1.4                   # 이소성 뒤 보상성 휴지
+    fb = _ect_win(y5b, rrb)
+    nm_i = {n: i for i, n in enumerate(ECT_NAMES)}
+    ok(abs(fb[nm_i["v_frac"]] - 0.5) < 1e-6, "이단맥: V 비율 0.5")
+    ok(fb[nm_i["bigem"]] > 0.9,
+       f"이단맥 지수가 높다 ({fb[nm_i['bigem']]:.2f}) — N-V 교대를 잡는다")
+    ok(fb[nm_i["couplet"]] < 0.1, "이단맥은 연발(couplet)이 아니다")
+    y5c = np.zeros(64, np.int64); y5c[10:13] = 2          # V 3연발
+    fc = _ect_win(y5c, np.ones(64))
+    ok(abs(fc[nm_i["v_run"]] - 3 / 64) < 1e-6, f"최장 V 연발 3 을 잡는다")
+    ok(fc[nm_i["couplet"]] > 0.6 and fc[nm_i["bigem"]] < 0.1,
+       "연발은 couplet 높고 이단맥 지수 낮다 — 두 패턴이 구분된다")
+    y5d = np.zeros(64, np.int64)                          # 이소성 없음
+    fd_ = _ect_win(y5d, np.ones(64))
+    ok(fd_[nm_i["ect_frac"]] == 0 and fd_[nm_i["pause_r"]] == 1.0,
+       "이소성 0 이면 비율 0, 휴지비 1(중립값)")
+    ok(len(ECT_NAMES) == 8 and len(fb) == 8, "이소성 특징 8종")
+    # 기호 없는 DB 차단
+    wq5 = dict(w); wq5["n_rr"] = 10
+    class _D(dict):
+        files = ["pid", "y5", "pre_rr", "db"]
+    dd5 = _D(pid=w["pid"], y5=np.zeros(len(w["pid"]), np.int64),
+             pre_rr=np.full(len(w["pid"]), 300.0, "float32"),
+             db=np.array(["afdb"] * len(w["pid"])))
+    try:
+        attach_beat_feats(dict(w, db=np.array(["afdb"] * len(w["y"]))), dd5,
+                          verbose=False)
+        ok(False, "기호 없는 DB 에 예외")
+    except RuntimeError as e:
+        ok("DB 신원" in str(e),
+           "★기호 없는 DB(afdb)를 조용히 0 으로 채우지 않고 예외 — DB 신원 암기 차단")
+
     # ── σ 가드: '전원 거의 실패' 도 잡는지 (VT 사고) ──────────────────────────
     #  ★실제 사고: 6클래스 실행에서 VT 의 전 팔 F1 이 0.000~0.024 였는데 σ 0.077 →
     #    MDE 0.040 이 '검정력 충분' 처럼 찍혔다. σ 가 작은 것은 정밀해서가 아니라
@@ -2383,7 +2599,7 @@ def selftest():
     ok(all(len(h) == 4 for h in HYPOTHESES) and len(HYPOTHESES) >= 4,
        f"HYPOTHESES 선언표 {len(HYPOTHESES)}건 (태그, 새팔, 기준팔, 설명)")
     known = ({"A0.자명", "A1.RR산포"} | set(DEFAULT_ARMS) | set(ATRIAL_ARMS)
-             | set(PERS_ARMS))
+             | set(PERS_ARMS) | set(ECT_ARMS))
     bad_h = [h for h in HYPOTHESES if h[1] not in known or h[2] not in known]
     ok(not bad_h, f"선언표의 팔 이름이 모두 실제 팔과 일치 (불일치 {len(bad_h)})")
     # 대조군(A4c·A5c)은 '기준팔' 로만 등장한다 — 그것도 등록으로 인정한다.

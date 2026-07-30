@@ -874,11 +874,16 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
       pid     전역 유일 환자 ID      — GroupKFold 가 DB 를 넘어 유효
       db      출처
       rhythm  리듬 id  / rhythm_names
-      y5      AAMI 비트 클래스(감사된 DB만, 나머지는 -1)
+      y5      AAMI 비트 클래스 (★모든 DB. 예전에는 미감사 DB 를 -1 로 지웠다)
+      y5_aud  그 비트의 라벨이 **감사된 것인가** (bool)
+              ★1층 학습은 반드시 y5_aud 로 걸러야 한다. 2층 창특징(이소성 비율)은
+                미감사 라벨도 쓴다 — 개별 비트 정확도보다 창 단위 비율이 중요하고,
+                오류가 무작위면 비율은 살아남는다.
     """
     AAMI5 = _need("AAMI5"); beat_only_rr = _need("beat_only_rr")
     warn_if_gpu("RR 코퍼스 생성")
     T = []; PRE = []; POST = []; EDGE = []; PID = []; DB = []; RHY = []; Y5 = []
+    Y5A = []                       # 비트별 '감사된 라벨인가' — 1층 오용 차단용
     rnames = {}
     p2rec = {}      # pid → "db:rec". ★2층-B(심방활동)가 신호를 다시 찾으려면 필수
     for db in dbs:
@@ -914,7 +919,13 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
                 T.append(t360[i] / _FS_DST); PRE.append(pre[i]); POST.append(post[i])
                 EDGE.append(edge[i]); PID.append(gpid); DB.append(db)
                 RHY.append(rnames[nm])
-                Y5.append(AAMI5.get(bsym[i], -1) if spec["beat_audited"] else -1)
+                # ★미감사 DB 도 AAMI 코드를 **저장한다**(예전엔 -1 로 지웠다).
+                #   지우면 2층 창특징(이소성 비율)을 만들 수 없는데, ltafdb 주석에는
+                #   A 152,332 / V 132,679 개가 실제로 들어 있다(beat_symbol_audit).
+                #   대신 y5_aud 로 감사 여부를 **비트마다** 표시해, 1층 학습이
+                #   미감사 라벨을 쓰지 못하게 한다(필터를 강제한다).
+                Y5.append(AAMI5.get(bsym[i], -1))
+                Y5A.append(bool(spec["beat_audited"]))
             if verbose and ((ri + 1) % 20 == 0 or ri == len(recs) - 1):
                 print(f"    {ri+1}/{len(recs)}  누적 {len(T):,}")
     if not T:
@@ -927,7 +938,7 @@ def build_rr_corpus(dbs=("afdb", "ltafdb", "nsrdb", "mitdb"), out=None,
              post_rr=np.array(POST, "float32"), rr_edge=np.array(EDGE, bool),
              pid=np.array(PID, np.int64), db=np.array(DB),
              rhythm=np.array(RHY, np.int64), rhythm_names=np.array(inv),
-             y5=np.array(Y5, np.int64),
+             y5=np.array(Y5, np.int64), y5_aud=np.array(Y5A, bool),
              pid_uniq=np.array(sorted(p2rec), np.int64),
              pid_rec=np.array([p2rec[k] for k in sorted(p2rec)]))
     mb = os.path.getsize(out) / 1e6
