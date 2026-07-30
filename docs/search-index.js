@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 516,
+  "total": 522,
   "byType": {
    "kmle": 331,
+   "usmle": 54,
    "paper": 120,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
@@ -18,9 +18,9 @@ window.MEDKOS_INDEX = {
    "Infectious Disease": 37,
    "Nephrology": 37,
    "Pediatrics": 36,
-   "Obstetrics & Gynecology": 24,
-   "Neurology": 23,
-   "Psychiatry": 23,
+   "Obstetrics & Gynecology": 25,
+   "Neurology": 24,
+   "Psychiatry": 24,
    "Endocrinology": 22,
    "Gastroenterology": 21,
    "Pulmonology": 21,
@@ -30,18 +30,18 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 20,
    "Rheumatology": 20,
    "Hematology": 19,
+   "Pathology": 18,
    "Surgery": 18,
-   "Pathology": 17,
    "Laboratory Medicine": 15,
    "Hematology-Oncology": 13,
-   "Physiology": 6,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,10 +51,10 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 390,
+   "high": 396,
    "medium": 126
   },
-  "tagCount": 1423
+  "tagCount": 1445
  },
  "docs": [
   {
@@ -664,6 +664,118 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0330.md",
    "snippet": "58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 ",
    "text": "Cardiology Atrial Flutter atrial-flutter narrow-qrs-tachycardia rate-control diltiazem palpitation KMLE 2026 / Claude Routine 58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 약 150회로 톱니파 양상을 보이는 심방조동이다. 혈역학적으로 안정하므로 즉각적 율동전환보다 방실결절 차단 약물로 심박수를 먼저 조절하는 것이 적절하다."
+  },
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome)",
+   "tags": [
+    "catatonia",
+    "lorazepam-challenge",
+    "NMS-differentiation",
+    "antipsychotic-induced"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · catatonia management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, ",
+   "text": "Psychiatry Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome) catatonia lorazepam-challenge NMS-differentiation antipsychotic-induced USMLE-style / MedKOS (psychiatry · catatonia management) A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, stares blankly, and has had markedly decreased oral intake. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Discontinue the antipsychotic and initiate a benzodiazepine (lorazepam) trial B. Administer dantrolene and bromocriptine while continuing the current antipsychotic C. Initiate electroconvulsive therapy before any medication trial D. Restart a different high potency antipsychotic at a lower dose E. Obtain an urgent MRI of the brain before initiating any treatment Mutism, waxy flexibility, and posturing without fever, rigidity, autonomic instability, or elevated CK point to catatonia rather than neuroleptic malignant syndrome; the antipsychotic should be discontinued and a lorazepam challenge (both diagnostic and often therapeutic) initiated first, reserving ECT for benzodiazepine refractory cases and avoiding further antipsychotic exposure, which can precipitate NMS."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage (Uterine Atony — Uterotonic Selection with Dual Contraindications)",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "misoprostol",
+    "contraindications"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 28 year old woman with chronic hypertension and asthma undergoes vaginal delivery of a 4.2 kg infant after a prolonged second stage. She now has heavy vaginal bleeding with a soft, boggy uterus palpable above the umbilicus. The placenta i",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage (Uterine Atony — Uterotonic Selection with Dual Contraindications) postpartum-hemorrhage uterine-atony uterotonics misoprostol contraindications USMLE-style / MedKOS (obstetrics · postpartum hemorrhage management) A 28 year old woman with chronic hypertension and asthma undergoes vaginal delivery of a 4.2 kg infant after a prolonged second stage. She now has heavy vaginal bleeding with a soft, boggy uterus palpable above the umbilicus. The placenta is intact and no lacerations are found on exam. Bleeding continues despite vigorous fundal massage and a first line intravenous oxytocin infusion at the maximum recommended rate. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Intramuscular carboprost tromethamine (15 methyl prostaglandin F2α) B. Intramuscular methylergonovine C. Sublingual or rectal misoprostol D. Repeating the intravenous oxytocin infusion at the same rate E. Uterine artery embolization as the immediate next step With uterine atony refractory to maximal oxytocin, the next uterotonic should avoid this patient's specific contraindications: carboprost is contraindicated in asthma (bronchospasm risk) and methylergonovine is contraindicated in hypertension (risk of severe hypertension/stroke), leaving misoprostol as the appropriate second line agent; repeating oxytocin at the same rate has already failed, and embolization is reserved for hemorrhage refractory to pharmacologic uterotonics."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Status Epilepticus (Benzodiazepine-Refractory Stepwise Management)",
+   "tags": [
+    "status-epilepticus",
+    "benzodiazepine-refractory",
+    "fosphenytoin",
+    "seizure-management"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · seizure emergency management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 34 year old woman is brought in by EMS after a witnessed generalized tonic clonic seizure that has now lasted more than 20 minutes without return to baseline. She has no history of epilepsy. EMS administered two doses of intravenous loraz",
+   "text": "Neurology Status Epilepticus (Benzodiazepine-Refractory Stepwise Management) status-epilepticus benzodiazepine-refractory fosphenytoin seizure-management USMLE-style / MedKOS (neurology · seizure emergency management) A 34 year old woman is brought in by EMS after a witnessed generalized tonic clonic seizure that has now lasted more than 20 minutes without return to baseline. She has no history of epilepsy. EMS administered two doses of intravenous lorazepam en route, 4 minutes apart, without effect. On arrival she continues to have rhythmic limb jerking. Vital signs and point of care studies are shown. Which of the following is the most appropriate next step in management? A. A third dose of intravenous lorazepam B. An intravenous loading dose of fosphenytoin C. Immediate induction of general anesthesia with continuous EEG monitoring D. Oral phenytoin administered via nasogastric tube E. Intravenous phenobarbital as the preferred initial second line agent This patient has benzodiazepine refractory status epilepticus after two adequate doses of a first line benzodiazepine; the next step is an intravenous second line agent — fosphenytoin, valproate, or levetiracetam — rather than a third benzodiazepine dose, oral therapy, or escalation straight to anesthetic infusion, which is reserved for seizures refractory to an adequate second line agent."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Complete (Third-Degree) AV Block — Escape Pacemaker Physiology",
+   "tags": [
+    "complete-heart-block",
+    "escape-rhythm",
+    "automaticity",
+    "ECG",
+    "conduction-system"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · cardiac conduction system)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 74 year old man presents with recurrent syncope. He takes no cardioactive medications. Vital signs are shown. An ECG (shown) reveals complete dissociation between P waves and QRS complexes, with atrial activity at a faster, regular rate a",
+   "text": "Physiology Complete (Third-Degree) AV Block — Escape Pacemaker Physiology complete-heart-block escape-rhythm automaticity ECG conduction-system USMLE-style / MedKOS (physiology · cardiac conduction system) A 74 year old man presents with recurrent syncope. He takes no cardioactive medications. Vital signs are shown. An ECG (shown) reveals complete dissociation between P waves and QRS complexes, with atrial activity at a faster, regular rate and a slower, regular wide complex ventricular rhythm. Serum electrolytes, troponin, and digoxin level are unremarkable, as shown. Which of the following mechanisms is most likely responsible for the ventricular rhythm seen on this patient's ECG? A. Spontaneous phase 4 diastolic depolarization in a subsidiary pacemaker distal to the site of block B. A re entrant circuit confined entirely within the AV node that bypasses the site of block C. Triggered activity from early afterdepolarizations in Purkinje fibers D. Retrograde conduction from the ventricles depolarizing the sinoatrial node E. Enhanced automaticity of the sinoatrial node overriding a structurally normal AV node In complete (third degree) AV block, no atrial impulses reach the ventricles, so a subsidiary pacemaker distal to the block — the AV junction or, when block is infranodal, the His Purkinje/ventricular myocardium — generates the ventricular rhythm via its own intrinsic phase 4 diastolic (pacemaker) depolarization; the slower, regular rate reflects the lower intrinsic firing rate of these distal pacemaker tissues compared with the SA node."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Multiple Myeloma (Cast Nephropathy Mechanism)",
+   "tags": [
+    "multiple-myeloma",
+    "cast-nephropathy",
+    "bence-jones-protein",
+    "rouleaux",
+    "hypercalcemia"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · plasma cell dyscrasia)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a m",
+   "text": "Pathology Multiple Myeloma (Cast Nephropathy Mechanism) multiple-myeloma cast-nephropathy bence-jones-protein rouleaux hypercalcemia USMLE-style / MedKOS (pathology · plasma cell dyscrasia) A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a monoclonal spike, and urine immunofixation confirms free kappa light chains. Which of the following mechanisms most likely accounts for this patient's renal dysfunction? A. Precipitation of free immunoglobulin light chains with Tamm–Horsfall protein forming obstructing casts in the distal tubules B. Diffuse deposition of AL amyloid fibrils in the glomerular basement membrane causing nephrotic range proteinuria C. Hypercalcemia induced nephrogenic diabetes insipidus with distal tubular resistance to antidiuretic hormone D. NSAID induced afferent arteriolar vasoconstriction reducing glomerular perfusion pressure E. Immune complex deposition activating complement in the glomerular mesangium Multiple myeloma most commonly causes acute kidney injury through myeloma cast nephropathy: filtered free light chains combine with Tamm–Horsfall protein secreted by the thick ascending limb/distal tubule to form obstructing intratubular casts, distinct from AL amyloidosis (which causes nephrotic range proteinuria via glomerular deposition rather than tubular obstruction) or the other listed mechanisms."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Methotrexate Toxicity (Leucovorin Rescue Mechanism)",
+   "tags": [
+    "methotrexate",
+    "dihydrofolate-reductase",
+    "leucovorin",
+    "folinic-acid",
+    "antimetabolite"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antimetabolite rescue)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are show",
+   "text": "Pharmacology Methotrexate Toxicity (Leucovorin Rescue Mechanism) methotrexate dihydrofolate-reductase leucovorin folinic-acid antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are shown; renal function remains normal. Which of the following best explains the mechanism by which the rescue therapy prevents further toxicity in this patient? A. It competitively displaces methotrexate from dihydrofolate reductase, restoring enzyme activity B. It provides a reduced folate cofactor that bypasses the blocked dihydrofolate reductase step, restoring one carbon transfer reactions C. It inhibits renal organic anion transporters, reducing tubular reabsorption of methotrexate D. It alkalinizes the urine, increasing methotrexate solubility and enhancing renal clearance E. It induces hepatic cytochrome enzymes that accelerate methotrexate metabolism to inactive metabolites Leucovorin (folinic acid) is a reduced folate that does not require dihydrofolate reductase for activation, so it restores tetrahydrofolate dependent one carbon transfer (thymidylate and purine synthesis) in normal proliferating cells even while methotrexate continues to inhibit the enzyme — this is a metabolic bypass, not competitive displacement or enhanced clearance."
   },
   {
    "id": "paper-2026-0120",
