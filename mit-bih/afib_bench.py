@@ -1104,6 +1104,177 @@ def report_afib(OUT, base="A1.RR산포", show=True):
     return rows
 
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  7. 작동점(operating point) 조정
+#
+#  왜 필요한가: 지금까지의 예측은 전부 **argmax** 다. 그건 "사후확률이 가장 큰
+#  클래스"이고, 임상적으로 원하는 점이 아니다. 선별검사는 놓치지 않는 것(Se)이
+#  중요하고 확진·항응고 결정은 헛경보를 줄이는 것(PPV)이 중요한데, argmax 는 그
+#  둘 중 어느 것도 목표로 삼지 않는다. §17 에서 AFIB 에피소드 PPV 가 0.64~0.83 에
+#  머문 것은 모델의 한계가 아니라 **작동점을 안 골랐기 때문**일 수 있다.
+#
+#  ★★가장 중요한 함정 — 문턱값을 고른 데이터로 성능을 재면 안 된다
+#    문턱값 200개를 훑어 가장 좋은 것을 고르고 그 점수를 보고하면, 그 값은
+#    "이 표본에서 운 좋은 문턱값"의 성능이라 반드시 부풀려진다. 200번의 선택은
+#    200번의 다중비교다. 그래서 여기서는 **환자 단위 leave-one-out** 으로 고른다:
+#    환자 p 의 문턱값은 **p 를 뺀 나머지 환자들**에서 고르고, p 는 그 값으로만
+#    평가한다. p 자신의 라벨은 선택에 관여하지 않는다.
+#    낙관 편향의 크기를 보이기 위해 '오라클'(자기 포함 선택) 값도 함께 찍는다.
+# ─────────────────────────────────────────────────────────────────────────────
+def _op_prep(OUT, arm, cls, ngrid=200):
+    """환자×문턱 F1 행렬과 부속 정보. 작동점 함수들이 공유한다."""
+    r = OUT["res"][arm]
+    if r.get("score") is None:
+        raise RuntimeError(f"{arm}: score 가 없습니다 — 작동점 조정은 확률이 필요합니다.")
+    ci = OUT["classes"].index(cls)
+    W = OUT["w"]
+    m = r["mask"] & (W["y"] >= 0)
+    s = np.asarray(r["score"])[m, ci]
+    y = np.asarray(W["y"])[m] == ci
+    pid = np.asarray(W["pid"])[m]
+    # 문턱 격자: 점수 분위수(치우친 분포에서도 촘촘하게)
+    q = np.unique(np.quantile(s, np.linspace(0.001, 0.999, ngrid)))
+    T = np.unique(np.concatenate([q, [0.5]]))          # argmax 대응점(0.5) 포함
+    ps = np.unique(pid)
+    has = np.array([bool(y[pid == p].any()) for p in ps])
+    F1 = np.full((len(ps), len(T)), np.nan)
+    TP = np.zeros((len(ps), len(T))); FP = np.zeros((len(ps), len(T)))
+    FN = np.zeros((len(ps), len(T)))
+    for i, p in enumerate(ps):
+        k = pid == p
+        D = s[k][:, None] >= T[None, :]                # (창, 문턱)
+        yt = y[k][:, None]
+        tp = (D & yt).sum(0); fp = (D & ~yt).sum(0); fn = ((~D) & yt).sum(0)
+        TP[i], FP[i], FN[i] = tp, fp, fn
+        if has[i]:
+            F1[i] = 2 * tp / np.maximum(2 * tp + fp + fn, 1e-9)
+    return dict(T=T, F1=F1, TP=TP, FP=FP, FN=FN, ps=ps, has=has, ci=ci,
+                s=s, y=y, pid=pid, mask=m)
+
+
+def _op_crit(P, criterion, min_ppv, idx=None):
+    """문턱별 기준값. idx 를 주면 그 환자들만 써서 계산한다(LOO 용)."""
+    sel = np.ones(len(P["ps"]), bool) if idx is None else idx
+    use = sel & P["has"]
+    if not use.any():
+        return np.zeros(len(P["T"]))
+    if criterion == "f1":
+        return np.nanmean(P["F1"][use], axis=0)
+    if criterion == "se_at_ppv":
+        # 환자 통합(pooled) Se/PPV — 제약은 집단 수준에서 걸어야 뜻이 있다
+        tp = P["TP"][sel].sum(0); fp = P["FP"][sel].sum(0); fn = P["FN"][sel].sum(0)
+        se = tp / np.maximum(tp + fn, 1e-9)
+        ppv = tp / np.maximum(tp + fp, 1e-9)
+        v = np.where(ppv >= min_ppv, se, -1.0)
+        return v
+    raise ValueError(f"알 수 없는 criterion: {criterion}")
+
+
+def op_curve(OUT, arm, cls="AFIB", ngrid=200, show=12):
+    """문턱값에 따른 Se/PPV/환자매크로F1 곡선 — **기술(descriptive)용**.
+
+    이 표에서 눈으로 좋은 점을 골라 그 값을 보고하면 안 된다(그게 낙관 편향의
+    출처다). 고르는 것은 op_point() 가 leave-one-out 으로 한다.
+    """
+    P = _op_prep(OUT, arm, cls, ngrid)
+    tp = P["TP"].sum(0); fp = P["FP"].sum(0); fn = P["FN"].sum(0)
+    se = tp / np.maximum(tp + fn, 1e-9); ppv = tp / np.maximum(tp + fp, 1e-9)
+    f1 = np.nanmean(P["F1"][P["has"]], axis=0)
+    print(f"\n=== 작동점 곡선  {arm} / {cls}  (창 {int(P['mask'].sum()):,}, "
+          f"환자 {int(P['has'].sum())}) ===")
+    if show:
+        print(f"  {'문턱':>7}{'Se':>8}{'PPV':>8}{'환자매크로F1':>13}")
+    step = max(1, len(P["T"]) // max(int(show), 1))
+    for j in (range(0, len(P["T"]), step) if show else ()):
+        star = "  ← argmax 대응(0.5)" if abs(P["T"][j] - 0.5) < 1e-9 else ""
+        print(f"  {P['T'][j]:>7.3f}{se[j]:>8.3f}{ppv[j]:>8.3f}{f1[j]:>13.3f}{star}")
+    return dict(T=P["T"], se=se, ppv=ppv, f1=f1)
+
+
+def op_point(OUT, arm, cls="AFIB", criterion="f1", min_ppv=0.80, ngrid=200,
+             verbose=True):
+    """★leave-one-out 으로 문턱값을 골라 **편향 없이** 평가한다.
+
+    criterion="f1"        환자매크로 F1 최대
+    criterion="se_at_ppv" PPV ≥ min_ppv 라는 제약 아래 Se 최대 (선별검사용)
+
+    반환에 pred(이진화된 예측)를 담아 주므로 episode_metrics·burden_metrics 를
+    그대로 다시 돌릴 수 있다.
+    """
+    P = _op_prep(OUT, arm, cls, ngrid)
+    ps, T = P["ps"], P["T"]
+    n = len(ps)
+    tsel = np.zeros(n); f1_loo = np.full(n, np.nan)
+    # 환자를 뺀 기준값 — F1 기준은 열합에서 자기 몫만 빼면 되므로 O(1)
+    for i in range(n):
+        keep = np.ones(n, bool); keep[i] = False
+        c = _op_crit(P, criterion, min_ppv, idx=keep)
+        j = int(np.argmax(c))
+        tsel[i] = T[j]
+        if P["has"][i]:
+            f1_loo[i] = P["F1"][i, j]
+    # 자기 포함 선택(오라클) — 낙관 편향의 크기를 보이기 위한 대조
+    j0 = int(np.argmax(_op_crit(P, criterion, min_ppv)))
+    f1_or = np.nanmean(P["F1"][P["has"], j0])
+    j5 = int(np.argmin(np.abs(T - 0.5)))
+    f1_05 = np.nanmean(P["F1"][P["has"], j5])
+
+    # 환자별 문턱을 적용한 이진 예측(전체 창 길이로 복원)
+    pred = np.full(len(OUT["w"]["y"]), -1, np.int64)
+    loc = np.flatnonzero(P["mask"])
+    thr = dict(zip(ps.tolist(), tsel.tolist()))
+    above = P["s"] >= np.array([thr[int(p)] for p in P["pid"]])
+    pred[loc] = np.where(above, P["ci"], -2)          # -2 = '그 리듬 아님'
+    out = dict(arm=arm, cls=cls, criterion=criterion, thr=thr, pred=pred,
+               mask=P["mask"], f1_loo=float(np.nanmean(f1_loo)),
+               f1_oracle=float(f1_or), f1_argmax=float(f1_05),
+               t_median=float(np.median(tsel)), ci=P["ci"])
+    if verbose:
+        nm = {"f1": "환자매크로 F1 최대",
+              "se_at_ppv": f"PPV ≥ {min_ppv:.2f} 제약 아래 Se 최대"}[criterion]
+        print(f"\n  [작동점] {arm} / {cls}  기준: {nm}")
+        print(f"    선택된 문턱 중앙값 {out['t_median']:.3f} "
+              f"(환자마다 LOO 로 따로 고름, 범위 {tsel.min():.3f}~{tsel.max():.3f})")
+        print(f"    argmax(0.5)           F1 {out['f1_argmax']:.4f}")
+        print(f"    ★LOO 작동점(정직한 값) F1 {out['f1_loo']:.4f}  "
+              f"(변화 {out['f1_loo']-out['f1_argmax']:+.4f})")
+        print(f"    오라클(자기 포함 선택)  F1 {out['f1_oracle']:.4f}  "
+              f"← 낙관 편향 {out['f1_oracle']-out['f1_loo']:+.4f}. "
+              f"이 값을 보고하면 부풀린 것이다")
+    return out
+
+
+def report_op(OUT, arms=None, cls="AFIB", criterion="f1", min_ppv=0.80):
+    """작동점 조정 후 창 F1·에피소드·burden 을 argmax 와 나란히 본다.
+
+    ★argmax 와의 비교가 요점이다. 작동점을 옮기면 어떤 지표는 오르고 어떤 것은
+      내려간다(Se↑ PPV↓). "좋아졌다"가 아니라 **무엇을 무엇과 바꿨는가**를 봐야 한다.
+    """
+    W = OUT["w"]
+    arms = arms or [a for a in OUT["res"] if not a.startswith("A0")]
+    ci = OUT["classes"].index(cls)
+    rows = []
+    for a in arms:
+        o = op_point(OUT, a, cls, criterion=criterion, min_ppv=min_ppv, verbose=False)
+        m = o["mask"]
+        print(f"\n  ── {a} / {cls} ──")
+        print(f"    문턱 중앙값 {o['t_median']:.3f}   "
+              f"F1  argmax {o['f1_argmax']:.4f} → LOO작동점 {o['f1_loo']:.4f} "
+              f"({o['f1_loo']-o['f1_argmax']:+.4f})   "
+              f"[오라클 {o['f1_oracle']:.4f}, 편향 {o['f1_oracle']-o['f1_loo']:+.4f}]")
+        base = OUT["res"][a]["pred"]
+        for tag, pv in (("argmax  ", base), ("작동점  ", o["pred"])):
+            e = episode_metrics(pv[m], W["y"][m], W["pid"][m], W["t0"][m],
+                                W["nov"][m], ci, verbose=False)
+            b = burden_metrics(pv[m], W["y"][m], W["pid"][m], W["dur"][m], ci,
+                               verbose=False)
+            print(f"      {tag} 에피소드 Se {e['se']:.3f} PPV {e['ppv']:.3f} "
+                  f"({e['n_pred']}건 예측)  |  burden r {b['r']:.3f} "
+                  f"LoA폭 {3.92*b['sd']:.1f}%p")      # LoA 폭 = 3.92×SD
+        rows.append(o)
+    return rows
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  6. 자기검증 — 합성 RR 로 wfdb/torch 없이 로직만 검증
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1264,6 +1435,45 @@ def selftest():
     dup = _check_distinct(mkout({"A1.RR산포": perfect.copy(), "A2.RSN": perfect.copy()}),
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
+
+    # ── 작동점 조정 (문턱 선택이 새는지) ─────────────────────────────────────
+    #  ★핵심 성질: LOO 로 고른 문턱의 성능은 오라클(자기 포함)보다 **낮아야** 한다.
+    #    LOO 가 오라클과 같거나 높으면 선택이 새고 있다는 뜻이다.
+    rng2 = np.random.RandomState(7)
+    Sc = np.zeros((len(wf["y"]), 3), "float32")
+    tgt = (yv == 1)
+    #  참 AFIB 창에 높은 점수를 주되 겹치게(완벽하지 않게) 만든다
+    Sc[:, 1] = np.clip(0.35 + 0.30 * tgt + 0.18 * rng2.randn(len(yv)), 0, 1)
+    Sc[:, 0] = 1 - Sc[:, 1]
+    Oop = dict(classes=wf["classes"], split="patient",
+               res={"A1.RR산포": dict(pred=np.where(keep, (Sc.argmax(1)), -1),
+                                     mask=keep.copy(), score=Sc)},
+               w=dict(y=yv, pid=pidv, db=wf["db"], dur=wf["dur"],
+                      nov=wf["nov"], t0=wf["t0"]))
+    cur = op_curve(Oop, "A1.RR산포", "AFIB", ngrid=60, show=0)
+    ok(np.all(np.diff(cur["se"]) <= 1e-12),
+       "문턱이 오르면 Se 는 단조 감소 (곡선 계산이 옳다)")
+    o = op_point(Oop, "A1.RR산포", "AFIB", ngrid=60, verbose=False)
+    ok(o["f1_loo"] <= o["f1_oracle"] + 1e-9,
+       f"★LOO({o['f1_loo']:.4f}) ≤ 오라클({o['f1_oracle']:.4f}) — 문턱 선택이 새지 않음")
+    ok(len(set(o["thr"].values())) >= 1 and o["mask"].sum() == int(keep.sum()),
+       "환자별 문턱이 부여되고 평가 창 수가 보존됨")
+    ok(set(np.unique(o["pred"][o["mask"]])) <= {1, -2},
+       "이진화 예측은 대상클래스(1) 또는 '아님'(-2) 만 가진다 → 지표 함수와 호환")
+    b = op_point(Oop, "A1.RR산포", "AFIB", criterion="se_at_ppv", min_ppv=0.95,
+                 ngrid=60, verbose=False)
+    P = _op_prep(Oop, "A1.RR산포", "AFIB", 60)
+    jb = int(np.argmin(np.abs(P["T"] - b["t_median"])))
+    tp = P["TP"].sum(0)[jb]; fp = P["FP"].sum(0)[jb]
+    ok(tp / max(tp + fp, 1) >= 0.90,
+       f"se_at_ppv 제약이 실제로 걸린다 (선택점 PPV {tp/max(tp+fp,1):.3f})")
+    try:
+        op_point(dict(classes=["N", "AFIB"], split="patient", w=Oop["w"],
+                      res={"x": dict(pred=None, mask=keep, score=None)}),
+                 "x", "AFIB", verbose=False)
+        ok(False, "score 없으면 예외")
+    except RuntimeError:
+        ok(True, "score 가 없으면 예외 — 확률 없이 작동점을 고르지 않는다")
 
     # ── 저장/불러오기·지문 (체크포인트가 조건을 섞지 않는지) ─────────────────
     import tempfile
