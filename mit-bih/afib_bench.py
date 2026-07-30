@@ -996,6 +996,20 @@ def save_afib(OUT, tag, base=None):
 def load_afib(tag, base=None, verbose=True):
     """저장된 결과를 되살린다 — 런타임이 끊겨도 report 는 다시 볼 수 있다."""
     d = f"{base or _BASE}/afib_runs/{tag}"
+    if not os.path.exists(f"{d}/_meta.npz"):
+        have = ([f for f in sorted(os.listdir(d)) if f.endswith(".npz")]
+                if os.path.isdir(d) else [])
+        print(f"  ✗ {d}/_meta.npz 가 없습니다.")
+        if have:
+            print(f"    그런데 팔별 예측은 {len(have)}개가 있습니다: {have[:6]}")
+            print(f"    → 옛 코드가 _meta 를 안 썼습니다. 둘 중 하나로 복구하세요:")
+            print(f"      (a) OUT 이 메모리에 남아 있으면:  save_afib(OUT, '{tag}')")
+            print(f"      (b) w 를 다시 만들 수 있으면:     repair_afib_meta('{tag}', w)")
+            print(f"          (w = make_windows(...) → attach_atrial → personalize,")
+            print(f"           학습은 필요 없습니다 — 팔은 체크포인트에서 재사용됩니다)")
+        else:
+            print(f"    이 tag 로 저장된 실행이 없습니다. bench_afib(..., tag='{tag}')")
+        raise FileNotFoundError(f"{d}/_meta.npz")
     m = np.load(f"{d}/_meta.npz", allow_pickle=True)
     OUT = {"classes": [str(x) for x in m["classes"]], "split": str(m["split"]),
            "fp": str(m["fp"]), "res": {},
@@ -1010,6 +1024,37 @@ def load_afib(tag, base=None, verbose=True):
     if verbose:
         print(f"  ✔ 불러옴 {d}  팔 {len(OUT['res'])}: {list(OUT['res'])}")
     return OUT
+
+
+def repair_afib_meta(tag, w, split="patient", base=None, verbose=True):
+    """★팔별 체크포인트는 있는데 _meta.npz 가 없는 실행을 되살린다.
+
+    옛 코드가 _meta 를 안 써서 생긴 상황을 위한 것이다. w(창 데이터)만 있으면
+    창 메타를 복원할 수 있다 — **학습은 필요 없다.**
+    ★지문(fp)은 복원하지 않는다(폴드 정보가 없으므로). 그래서 이 _meta 로 되살린
+      결과는 report 용이고, 이어서 새 팔을 학습할 때는 지문 불일치로 재학습된다.
+    """
+    d = f"{base or _BASE}/afib_runs/{tag}"
+    if not os.path.isdir(d):
+        raise FileNotFoundError(d)
+    arms = [f for f in sorted(os.listdir(d))
+            if f.endswith(".npz") and not f.startswith("_")]
+    if not arms:
+        raise RuntimeError(f"{d} 에 팔별 체크포인트가 없습니다.")
+    a0 = np.load(f"{d}/{arms[0]}", allow_pickle=True)
+    if len(a0["pred"]) != len(w["y"]):
+        raise RuntimeError(
+            f"창 수 불일치: 저장된 예측 {len(a0['pred']):,} vs 지금 w {len(w['y']):,}"
+            f" — 같은 인자로 만든 w 가 아닙니다(W·stride·dbs 를 확인하세요).")
+    np.savez(f"{d}/_meta.npz", classes=np.array(w["classes"]), split=split,
+             fp=str(a0["fp"]) if "fp" in a0.files else "",
+             y=w["y"], pid=w["pid"], db=np.array(list(map(str, w["db"]))),
+             dur=w["dur"], nov=w["nov"], t0=w["t0"])
+    if verbose:
+        print(f"  ✔ 복구 {d}/_meta.npz  (팔 {len(arms)}개: "
+              f"{[a[:-4] for a in arms]})")
+        print(f"    이제 load_afib('{tag}') 가 됩니다.")
+    return d
 
 
 def _safe(s):
@@ -1066,6 +1111,13 @@ def bench_afib(w, k=5, n_rep=1, split="patient", only=None, epochs=20, verbose=T
         ckdir = f"{_BASE}/afib_runs/{tag}"
         os.makedirs(ckdir, exist_ok=True)
     OUT["fp"] = fp
+    if ckdir:
+        # ★_meta 를 여기서 쓴다. 예전엔 save_afib() 만 썼는데, 팔별 체크포인트는
+        #   저장되고 _meta 는 없어서 **모든 예측이 디스크에 있는데 load_afib 이
+        #   FileNotFoundError 로 죽었다**(실제로 발생). 체크포인트가 반쪽이면
+        #   "끊겨도 이어짐" 이라는 약속이 지켜지지 않는다.
+        np.savez(f"{ckdir}/_meta.npz", classes=np.array(cls), split=split, fp=fp,
+                 y=y, pid=pid, db=dbv, dur=w["dur"], nov=w["nov"], t0=w["t0"])
     print(f"\n=== 2층 벤치 [{split}]  팔 {len(arms)} × 폴드 {len(folds)} = "
           f"{len(arms)*len(folds)}회 학습 ===")
     if ckdir:
@@ -2013,6 +2065,30 @@ def selftest():
                           verbose=False)
     ok(len(dup) == 1, "동일 예측 두 팔을 배선 오류로 검출")
 
+    # ── 체크포인트 왕복: _meta 없이도 복구되는지 ─────────────────────────────
+    #  ★실제 사고: bench_afib 은 팔별 체크포인트만 쓰고 _meta 는 save_afib 만 썼다.
+    #    그래서 예측 전부가 디스크에 있는데 load_afib 이 FileNotFoundError 로 죽었다.
+    import tempfile
+    tb2 = tempfile.mkdtemp()
+    dd2 = f"{tb2}/afib_runs/t2"
+    os.makedirs(dd2, exist_ok=True)
+    for nm_, pv_ in (("A1.RR산포", noisy(0.3)), ("A2.RSN", noisy(0.1))):
+        np.savez(f"{dd2}/{_safe(nm_)}.npz", pred=np.where(keep, pv_, -1),
+                 mask=keep.copy(), score=np.zeros(0), name=nm_, fp="zz")
+    try:
+        load_afib("t2", base=tb2, verbose=False); ok(False, "_meta 없으면 예외")
+    except FileNotFoundError:
+        ok(True, "_meta 가 없으면 FileNotFoundError + 복구 안내")
+    repair_afib_meta("t2", wf, base=tb2, verbose=False)
+    L2 = load_afib("t2", base=tb2, verbose=False)
+    ok(set(L2["res"]) == {"A1.RR산포", "A2.RSN"} and len(L2["w"]["y"]) == len(wf["y"]),
+       "repair_afib_meta 로 복구 → load_afib 성공(학습 없이 report 가능)")
+    try:                                       # 창 수가 다른 w 로 복구하면 막아야 한다
+        repair_afib_meta("t2", w, base=tb2, verbose=False)
+        ok(False, "창 수 불일치에 예외")
+    except RuntimeError:
+        ok(True, "창 수가 다른 w 로 복구하면 예외 — 남의 실행에 메타를 씌우지 않는다")
+
     # ── 사전등록 선언표 (검정이 조용히 빠지지 않는지) ────────────────────────
     ok(all(len(h) == 4 for h in HYPOTHESES) and len(HYPOTHESES) >= 4,
        f"HYPOTHESES 선언표 {len(HYPOTHESES)}건 (태그, 새팔, 기준팔, 설명)")
@@ -2184,7 +2260,6 @@ def selftest():
         ok(True, "score 가 없으면 예외 — 확률 없이 작동점을 고르지 않는다")
 
     # ── 저장/불러오기·지문 (체크포인트가 조건을 섞지 않는지) ─────────────────
-    import tempfile
     tb = tempfile.mkdtemp()
     Osave = mkout({"A1.RR산포": noisy(0.3), "A2.RSN": noisy(0.1)})
     Osave["fp"] = "deadbeef"
