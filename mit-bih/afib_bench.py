@@ -2418,22 +2418,39 @@ def ectopy_audit(OUT, w, cls="AFIB", dbs=None, verbose=True):
     alpha = 0.05 / k                        # Bonferroni (특징 8종)
     s_p = out["s_frac"]["p_fp_gt_tp"]
     v_p = out["v_frac"]["p_fp_gt_tp"]
+    # ★p 가 nan 인 것은 '미달' 이 아니라 **표본 부족**이다. 이 세션에서 반복해서
+    #   구분해 온 것인데 내 출력이 둘을 뭉갰다(mitdb 에서 FP 창이 8개라 검정이
+    #   성립하지 않았는데 '미달' 로 찍혔다). 판정과 측정 불가는 다르다.
+    n_fp = int(grp["위양성(FP)"].sum()); n_tp = int(grp["참양성(TP)"].sum())
+    short = n_fp <= 10 or n_tp <= 10
     print(f"\n  판정 (Bonferroni α = 0.05/{k} = {alpha:.4f})")
-    print(f"    ★s_frac (심방 이소성 = PAC): p = {s_p:.2g}  "
-          f"{'★지지' if np.isfinite(s_p) and s_p < alpha else '미달'}")
+    def _vd(p):
+        if short or not np.isfinite(p):
+            return f"✗판정 불가 — 표본 부족(FP {n_fp}창 / TP {n_tp}창, 각 >10 필요)"
+        return "★지지" if p < alpha else "미달"
+    print(f"    ★s_frac (심방 이소성 = PAC): p = {s_p:.2g}  {_vd(s_p)}")
     print(f"      p90  위양성 {out['s_frac']['p90_fp']:.4f} vs 참양성 "
-          f"{out['s_frac']['p90_tp']:.4f}")
+          f"{out['s_frac']['p90_tp']:.4f}"
+          + ("   (검정 불가이므로 방향 참고용)" if short else ""))
     print(f"     v_frac (심실 이소성 = PVC): p = {v_p:.2g}  "
-          f"{'지지' if np.isfinite(v_p) and v_p < alpha else '미달(예상대로 — AF 중 PVC 는 흔하다)'}")
-    ok_ = np.isfinite(s_p) and s_p < alpha
-    print(f"\n  → {'★H-AP 지지 — AFIB 위경보의 원인에 **심방 이소성**이 있다' if ok_ else '✗H-AP 미달'}")
+          + (_vd(v_p) if short or not np.isfinite(v_p) else
+             ("지지" if v_p < alpha else "미달(예상대로 — AF 중 PVC 는 흔하다)")))
+    ok_ = (not short) and np.isfinite(s_p) and s_p < alpha
+    if short:
+        print(f"\n  → ✗**판정 불가**(미달이 아니다) — 이 표본으로는 검정이 성립하지 않는다.")
+        print(f"     크기도 방향도 말하지 않는다. 표본을 늘리거나 다른 DB 로 봐야 한다.")
+    else:
+        print(f"\n  → {'★H-AP 지지 — AFIB 위경보의 원인에 **심방 이소성**이 있다' if ok_ else '✗H-AP 미달'}")
     if ok_:
         print(f"    즉 s_frac 이 A1 의 위양성을 걸러 낼 정보를 갖고 있다 → H-AO 로 간다.")
         print(f"    ★단 v_frac 은 반대 방향이므로 **S 와 V 를 합쳐 쓰면 안 된다.**")
+    elif short:
+        pass
     else:
         print(f"    ★이소성 특징으로 PPV 가 올라도 원인을 모르는 것이다.")
         print(f"      H-AO 를 돌리기 전에 위경보의 실제 원인을 먼저 찾아야 한다.")
-    out["_verdict"] = dict(supported=bool(ok_), alpha=alpha, s_p=s_p, v_p=v_p)
+    out["_verdict"] = dict(supported=bool(ok_), alpha=alpha, s_p=s_p, v_p=v_p,
+                           undecidable=bool(short), n_fp=n_fp, n_tp=n_tp)
     return out
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2621,6 +2638,14 @@ def selftest():
     # DB 필터 (H-AT 용)
     O7b = dict(O6); O7b["w"] = dict(O6["w"])
     O7b["w"]["db"] = np.array(["ltafdb"] * 120 + ["mitdb"] * 120)
+
+    # ★표본 부족을 '미달' 로 찍지 않는지 (mitdb 에서 FP 8창이었다)
+    O8 = dict(O6); O8["res"] = {"A1.RR산포": dict(
+        pred=np.r_[np.ones(5, np.int64), np.zeros(235, np.int64)],
+        mask=np.ones(240, bool), score=None)}
+    a8 = ectopy_audit(O8, w6, "AFIB", verbose=False)
+    ok(a8["_verdict"]["undecidable"] and not a8["_verdict"]["supported"],
+       f"★FP {a8['_verdict']['n_fp']}창이면 '판정 불가' — '미달' 과 구분한다")
     a_lt = ectopy_audit(O7b, w6, "AFIB", dbs=("ltafdb",), verbose=False)
     ok(isinstance(a_lt, dict) and "s_frac" in a_lt, "ectopy_audit 이 DB 로 잘린다")
     try:
