@@ -2,6 +2,74 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0131",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Number of Mohs Micrographic Surgery Stages Predicts Postoperative Complication Rates: A Retrospective Cohort Study",
+  "authors": [
+   "Weitzner Yael",
+   "Kann Rebecca",
+   "Yang Kevin",
+   "Ciocon David"
+  ],
+  "journal": "Dermatologic surgery : official publication for American Society for Dermatologic Surgery [et al.]",
+  "doi": "10.1097/DSS.0000000000005294",
+  "pmid": "42536407",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42536407/",
+  "pubdate": "2026-08-03",
+  "date": "2026-07-31",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0130",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Ejection fraction moderates the effect of motivational interviewing in improving heart failure self-care: a secondary analysis of the MOTIVATE-HF randomized controlled trial",
+  "authors": [
+   "Vellone Ercole",
+   "Iovino Paolo",
+   "Torreggiani Martina",
+   "Pucciarelli Gianluca",
+   "Zeffiro Valentina",
+   "Scerbo Francesco",
+   "Uchmanowicz Izabella",
+   "Micheluzzi Valentina"
+  ],
+  "journal": "European journal of cardiovascular nursing",
+  "doi": "10.1093/eurjcn/zvag161",
+  "pmid": "42536400",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42536400/",
+  "pubdate": "2026-07-31",
+  "date": "2026-07-31",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**AIMS:** To evaluate the effect of a motivational interviewing (MI)-based intervention on self-care maintenance, management, and confidence in patients with heart failure (HF), and to examine whether left ventricular ejection fraction (LVEF) moderates these effects.\n\n**METHODS AND RESULTS:** This was a secondary analysis of a randomized controlled trial comparing an MI intervention with usual care. Outcomes were assessed at baseline and at 3, 6, 9, and 12 months using the Self-Care of Heart Failure Index version 6.2 (SCHFI v.6.2). Generalized estimating equations with exchangeable correlation were used to model repeated measures, adjusting for baseline domain scores. LVEF was included as a continuous moderator, with margins estimated at 30%, 50%, and 70% to aid interpretation. Sensitivity analyses using LVEF categories yielded consistent results. A total of 510 participants were included (42% female; mean age 72.37 ± 12.28 years). MI was associated with significantly higher adjusted scores for self-care maintenance and confidence across follow-up compared with usual care, with larger effects at lower LVEF values. No consistent intervention effect was observed for self-care management.\n\n**CONCLUSION:** MI was associated with improvements in self-care maintenance and confidence in patients with HF, particularly among those with lower LVEF. These findings support further evaluation of phenotype-informed approaches to MI-based self-care interventions.\n\n**REGISTRATION:** ClinicalTrials.gov (NCT02894502).",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0129",
   "topic": "Infectious Disease",
   "subtopic": "",
