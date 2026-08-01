@@ -78,14 +78,20 @@ def find_existing(week: int, split: str, step: str = "") -> Path | None:
 def render_card(meta: dict) -> str:
     """로그 카드 Markdown 문자열. 본문은 사람이 읽는 짧은 요약 + 다음 액션."""
     t = topic_for_week(int(meta["week"]))
+    # 게이트는 '주차 커리큘럼'의 것이다. 퀘스트 실험은 커리큘럼과 직교하므로 주차
+    # 게이트를 붙이면 거짓말이 된다(예: macro_f1 0.70인데 "게이트 macro_auroc ≥ 0.85
+    # 통과"). 지표가 다를 때도 마찬가지다 — 둘 다 확인될 때만 게이트를 표기한다.
     gate = ""
-    if t.get("target") is not None:
+    if meta.get("quest"):
+        gate = " (판정 기준은 퀘스트 사전등록 — 아래 관찰 참조)"
+    elif t.get("target") is not None and t.get("metric") == meta.get("metric"):
         gate = f" (게이트 {t['metric']} ≥ {t['target']})"
     passed = "✅ 통과" if meta.get("passed") else "❌ 미달"
     split = meta.get("split", "")
     split_note = {
         "intra": "무작위 분할(같은 환자가 train/test에 섞임) — 파이프라인 통과용, 낙관적",
-        "inter": "DS1/DS2 환자 단위 분리 — 실전 벤치마크(보통 더 낮게 나옴)",
+        # DS1/DS2는 MIT-BIH 고유 명칭이라 다른 데이터셋 로그에서 거짓이 된다.
+        "inter": "환자 단위 분리(train/test에 같은 환자 없음) — 실전 벤치마크(보통 더 낮게 나옴)",
     }.get(split, "")
 
     step = meta.get("step", "")
