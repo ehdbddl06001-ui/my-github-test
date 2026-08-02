@@ -6,7 +6,7 @@
   A) 07-17 캐시에서 **레코드 232 가 통째로** 빠짐 → 레코드 소실이라고 말해야 한다
   B) data_mit.npz 없음 → 저장 지표만 회수, AUROC 생략, 죽지 않는다
   C) pkl 일부 없음 → 조기 skip, NameError 없이 끝난다
-  D) 【R10-b】 **길이는 정확히 맞는데 클래스 구성이 다르다** → 정렬을 거부해야 한다
+  D) 【R10-b】 **길이는 정확히 맞는데 학습쪽 지문이 다르다** → 정렬을 거부해야 한다
   E) 전 레코드에서 4% 씩 **분산 손실** → 레코드 통째 누락을 배제한다고 말해야 한다
 
 **A 와 E 가 이 픽스처의 핵심 대비다.** 겉보기 비트 수 차이는 비슷한데 A 는 레코드
@@ -16,8 +16,12 @@ DS2 는 한 레코드(#232)가 S 의 약 3/4 를 갖고 있어서, 그게 빠지
 독립 난수로 만들면 이 구조가 사라져 A 와 E 가 구분 불가능해진다(실제로 그렇게
 짰다가 이 픽스처에 걸렸다).
 
-07-17 배열은 4클래스(N/S/V/**F**)이고 `nsv` 는 N/S/V **셋만** 센다 — 실제 pkl 구조.
+07-17 배열은 4클래스(N/S/V/**F**)다 — `proba` 가 4열이고 `train_prior` 도 4개다.
 그래서 '부족(N/S/V) + 초과(F)' 가 상쇄돼 겉보기 길이 차이가 줄어든다.
+
+⚠️ 실제 pkl 의 `nsv` 는 **스칼라 0** 이었다(클래스 개수 배열이 아니다). 그래서 정렬의
+두 번째 증거는 **학습쪽 지문** — 캐시의 테스트 여집합이 갖는 (비트·환자·S) 가 pkl 의
+`n_train`·`n_pat_train`·`n_S_train` 과 맞는지 — 로 잡는다. 시나리오 D 가 이걸 검정한다.
 """
 import os, sys, json, pickle, shutil, tempfile
 import numpy as np
@@ -30,6 +34,7 @@ _c = [c for c in NB["cells"]
 assert len(_c) == 1, f"G1 셀을 {len(_c)}개 찾았다"
 SRC = "".join(_c[0]["source"])   # ★ 사본이 아니라 **노트북 자체**를 실행한다
 
+_DS1 = [101, 106]      # 가짜 DS1(학습부). CELL 3 이 분할 대조에 쓴다
 _DS2 = [100,103,105,111,113,117,121,123,200,202,210,212,213,214,219,221,222,228,231,232,233,234]
 PKL_NAMES = [f"{a}_{1000+i}.pkl" for a in ("mit_only", "mit_svdb") for i in range(5)]
 PER = 300          # 레코드당 비트(가짜)
@@ -55,7 +60,7 @@ class Run:
 
 def cur_arrays(rng):
     """현재 파이프라인 배열(3클래스). **#232 가 DS2 S 의 3/4 를 갖는다**."""
-    mpid = np.repeat(_DS2 + [101, 106], PER)          # 101·106 은 DS1(마스크 밖)
+    mpid = np.repeat(_DS2 + _DS1, PER)                # _DS1 은 테스트 마스크 밖
     my = rng.choice([0, 2], size=len(mpid), p=[.96, .04])
     n232 = int(S_TOT * S_232)
     my[rng.choice(np.where(mpid == 232)[0], n232, replace=False)] = 1
@@ -88,17 +93,29 @@ def make_old(mpid, my, mode, rng):
     return np.concatenate([zp, fp]), np.concatenate([zy, np.full(N_F, 3)])
 
 
-def build(root, mpid, my, mode, rng, with_labels=True, drop_pkl=False, trap_nsv=False):
+def build(root, mpid, my, mode, rng, with_labels=True, drop_pkl=False,
+          trap_nsv=False, real_nsv=False, trap_fp=False):
+    """real_nsv=False 면 nsv 를 **스칼라 0** 으로 둔다 — 실제 pkl 이 그랬다.
+    그러면 클래스 대조를 못 하므로 CELL 3 은 **학습쪽 지문**(비트·환자·S)을 쓴다."""
     runs = os.path.join(root, "ecg_out", "runs_s1p"); os.makedirs(runs)
     cache = os.path.join(root, "cache"); os.makedirs(cache)
     zp, zy = make_old(mpid, my, mode, rng)
-    if with_labels:
-        np.savez(os.path.join(cache, "data_mit.npz"), y=zy, pid=zp,
-                 beat=np.zeros((len(zy), 1), "float32"))
     n_test = len(zy)
-    nsv = [int((zy == k).sum()) for k in range(3)]     # ★ N/S/V 만. 합 < n_test
-    if trap_nsv:
+    if with_labels:                                    # 캐시 = 학습부 + 테스트부
+        ctr0 = ~np.isin(mpid, _DS2)
+        ay = np.concatenate([my[ctr0].astype(int), zy])
+        ap = np.concatenate([mpid[ctr0], zp])
+        np.savez(os.path.join(cache, "data_mit.npz"), y=ay, pid=ap,
+                 beat=np.zeros((len(ay), 1), "float32"))
+    nsv = [int((zy == k).sum()) for k in range(3)] if real_nsv else 0
+    if trap_nsv and real_nsv:
         nsv[0] += 1; nsv[1] -= 1                       # 합·길이 유지, **구성만** 어긋남
+    # 학습쪽 지문: 캐시의 '테스트 여집합' 과 pkl 메타가 맞아야 같은 실행이다
+    ctr = ~np.isin(mpid, _DS2)
+    n_train = int(ctr.sum()); n_pat = int(len(np.unique(mpid[ctr])))
+    n_S = int((my[ctr] == 1).sum())
+    if trap_fp:
+        n_S += 7                                        # 길이는 맞고 지문만 어긋남
     for n in (PKL_NAMES[:-1] if drop_pkl else PKL_NAMES):
         arm = "mit_only" if n.startswith("mit_only") else "mit_svdb"
         seed = int(n.split("_")[-1].split(".")[0])
@@ -111,10 +128,8 @@ def build(root, mpid, my, mode, rng, with_labels=True, drop_pkl=False, trap_nsv=
                      "pred": p.argmax(1).astype("int8"),
                      "f1": {"N": .95, "S": .40 - boost, "V": .88 + boost, "F": .20},
                      "macro4": float(.70 + rng.rand() * .01),
-                     "nsv": np.array(nsv),
-                     "n_train": 50576 + (8000 if arm == "mit_svdb" else 0),
-                     "n_S_train": 944 + (7452 if arm == "mit_svdb" else 0),
-                     "n_pat_train": 22 + (14 if arm == "mit_svdb" else 0),
+                     "nsv": (np.array(nsv) if real_nsv else 0),
+                     "n_train": n_train, "n_S_train": n_S, "n_pat_train": n_pat,
                      "mins": 12.3},
                     open(os.path.join(runs, n), "wb"))
     return n_test
@@ -129,7 +144,7 @@ def scenario(tag, mode="record", **kw):
         n_test = build(root, mpid, my, mode, rng, **kw)
         TE = np.isin(mpid, _DS2)
         g = {"os": os, "np": np, "pickle": pickle, "sys": sys,
-             "DRIVE_ROOT": root, "PKL_NAMES": PKL_NAMES, "_DS2": _DS2,
+             "DRIVE_ROOT": root, "PKL_NAMES": PKL_NAMES, "_DS1": _DS1, "_DS2": _DS2,
              "mpid": mpid, "my": my, "TE": TE, "t_ci": t_ci,
              "run": Run(), "CONFIG": {}}
         exec(compile(SRC, "exp22a_cell3", "exec"), g)
@@ -157,9 +172,9 @@ assert b.get("META"), "B 도 저장 지표는 회수해야 한다"
 c = scenario("C) pkl 9/10 개", mode="record", drop_pkl=True)
 assert c.get("G1") is None and c.get("META") is None, "C 는 조기 skip"
 
-d = scenario("D)【R10-b】길이 정확히 일치 · 클래스 구성만 다름", mode="trap", trap_nsv=True)
+d = scenario("D)【R10-b】길이 정확히 일치 · 학습쪽 지문만 다름", mode="trap", trap_fp=True)
 assert d.get("G1") is None, "D 는 길이가 맞아도 정렬을 **거부**해야 한다"
-assert note(d, "길이 일치·클래스 불일치"), "R10-b 가 잡았다고 기록해야 한다"
+assert note(d, "길이 일치·구성 불일치"), "R10-b 가 잡았다고 기록해야 한다"
 
 e = scenario("E) 전 레코드 4% 분산 손실 (검출기 가설)", mode="detector")
 assert e.get("G1"), "E 도 길이·클래스가 맞으면 AUROC 까지 가야 한다"
@@ -167,7 +182,8 @@ assert note(e, "분산 손실"), "E 는 레코드 통째 누락을 배제해야 
 assert note(e, "누락 레코드 []"), "E 에는 통째로 빠진 레코드가 없어야 한다"
 
 for _g, _t in ((a, "A"), (d, "D"), (e, "E")):
-    assert note(_g, "4클래스"), f"{_t}: nsv 합 < n_test 에서 제4클래스를 검출해야 한다"
+    assert note(_g, "4클래스"), f"{_t}: proba 4열에서 제4클래스를 검출해야 한다"
+    assert note(_g, "nsv 는 클래스 개수가 아님"), f"{_t}: 스칼라 nsv 를 걸러야 한다"
 
 print("\n전부 통과 ✅ — 다섯 경로 모두 예외 없이 끝나고, A/E 를 클래스 프로파일로 가른다")
 sys.exit(0)
