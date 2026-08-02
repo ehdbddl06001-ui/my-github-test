@@ -2,9 +2,10 @@
 
 노트북에서 셀 소스를 직접 읽으므로, 노트북이 바뀌면 이 테스트도 같이 따라간다.
 
-다섯 시나리오:
+여섯 시나리오:
   A) 07-17 캐시에서 **레코드 232 가 통째로** 빠짐 → 레코드 소실이라고 말해야 한다
   B) data_mit.npz 없음 → 저장 지표만 회수, AUROC 생략, 죽지 않는다
+  F) 그룹 ID 가 **레코드 번호가 아니라 0..N 인덱스** → 레코드별 비교를 거부해야 한다
   C) pkl 일부 없음 → 조기 skip, NameError 없이 끝난다
   D) 【R10-b】 **길이는 정확히 맞는데 학습쪽 지문이 다르다** → 정렬을 거부해야 한다
   E) 전 레코드에서 4% 씩 **분산 손실** → 레코드 통째 누락을 배제한다고 말해야 한다
@@ -15,6 +16,10 @@ DS2 는 한 레코드(#232)가 S 의 약 3/4 를 갖고 있어서, 그게 빠지
 (`mit-bih/PAPER.md` 관찰3). 그래서 가짜 07-17 배열은 **현재 배열에서 파생**시킨다.
 독립 난수로 만들면 이 구조가 사라져 A 와 E 가 구분 불가능해진다(실제로 그렇게
 짰다가 이 픽스처에 걸렸다).
+
+⚠️ 실제 캐시는 **이미 3분할**돼 있었다: `yp/gp`(학습) · `yv/gv`(검증) · `yt/gt`(테스트).
+`y`·`pid` 라는 이름은 없다 — 이름을 가정했다가 "라벨 없음" 으로 오판했다. 그래서 셀은
+`y*` 1차원 배열을 전부 후보로 잡고 **길이로** 테스트 분할을 고른다. 픽스처도 같은 레이아웃.
 
 07-17 배열은 4클래스(N/S/V/**F**)다 — `proba` 가 4열이고 `train_prior` 도 4개다.
 그래서 '부족(N/S/V) + 초과(F)' 가 상쇄돼 겉보기 길이 차이가 줄어든다.
@@ -94,24 +99,29 @@ def make_old(mpid, my, mode, rng):
 
 
 def build(root, mpid, my, mode, rng, with_labels=True, drop_pkl=False,
-          trap_nsv=False, real_nsv=False, trap_fp=False):
+          trap_nsv=False, real_nsv=False, trap_fp=False, idx_groups=False):
     """real_nsv=False 면 nsv 를 **스칼라 0** 으로 둔다 — 실제 pkl 이 그랬다.
     그러면 클래스 대조를 못 하므로 CELL 3 은 **학습쪽 지문**(비트·환자·S)을 쓴다."""
     runs = os.path.join(root, "ecg_out", "runs_s1p"); os.makedirs(runs)
     cache = os.path.join(root, "cache"); os.makedirs(cache)
     zp, zy = make_old(mpid, my, mode, rng)
     n_test = len(zy)
-    if with_labels:                                    # 캐시 = 학습부 + 테스트부
+    if with_labels:
+        # ★ 실제 캐시는 **이미 3분할** 돼 있었다: yp/gp(학습) · yv/gv(검증) · yt/gt(테스트).
+        #   'y'·'pid' 라는 이름은 없다. 그래서 픽스처도 같은 레이아웃으로 만든다.
         ctr0 = ~np.isin(mpid, _DS2)
-        ay = np.concatenate([my[ctr0].astype(int), zy])
-        ap = np.concatenate([mpid[ctr0], zp])
-        np.savez(os.path.join(cache, "data_mit.npz"), y=ay, pid=ap,
-                 beat=np.zeros((len(ay), 1), "float32"))
+        np.savez(os.path.join(cache, "data_mit.npz"),
+                 Xp=np.zeros((int(ctr0.sum()), 1), "float32"),
+                 yp=my[ctr0].astype(int), gp=mpid[ctr0],
+                 Xv=np.zeros((3, 1), "float32"),
+                 yv=np.zeros(3, int), gv=np.array([101, 101, 106]),
+                 Xt=np.zeros((len(zy), 1), "float32"), yt=zy,
+                 gt=(np.searchsorted(np.unique(zp), zp) if idx_groups else zp))
     nsv = [int((zy == k).sum()) for k in range(3)] if real_nsv else 0
     if trap_nsv and real_nsv:
         nsv[0] += 1; nsv[1] -= 1                       # 합·길이 유지, **구성만** 어긋남
     # 학습쪽 지문: 캐시의 '테스트 여집합' 과 pkl 메타가 맞아야 같은 실행이다
-    ctr = ~np.isin(mpid, _DS2)
+    ctr = ~np.isin(mpid, _DS2)     # 학습부 = yp/gp 분할
     n_train = int(ctr.sum()); n_pat = int(len(np.unique(mpid[ctr])))
     n_S = int((my[ctr] == 1).sum())
     if trap_fp:
@@ -161,7 +171,7 @@ def note(g, s):
 
 a = scenario("A) 레코드 232 가 통째로 빠짐", mode="record")
 assert a.get("G1"), "A 는 길이·클래스가 맞으므로 AUROC 까지 가야 한다"
-assert note(a, "누락 레코드 [232]"), "232 소실을 지목해야 한다"
+assert note(a, "07-17 테스트에 없는 DS2 레코드 [232]"), "232 소실을 지목해야 한다"
 assert not note(a, "분산 손실"), \
     "A 는 S 가 대량 소실되므로 '분산 손실' 이라고 말하면 안 된다"
 
@@ -185,5 +195,10 @@ for _g, _t in ((a, "A"), (d, "D"), (e, "E")):
     assert note(_g, "4클래스"), f"{_t}: proba 4열에서 제4클래스를 검출해야 한다"
     assert note(_g, "nsv 는 클래스 개수가 아님"), f"{_t}: 스칼라 nsv 를 걸러야 한다"
 
-print("\n전부 통과 ✅ — 다섯 경로 모두 예외 없이 끝나고, A/E 를 클래스 프로파일로 가른다")
+f = scenario("F) 그룹 ID 가 레코드 번호가 아님(0..N 인덱스)", mode="detector", idx_groups=True)
+assert note(f, "그룹 ID 가 레코드번호 아님"), \
+    "인덱스를 레코드 번호로 착각해 '전부 누락' 이라고 말하면 안 된다"
+assert not note(f, "누락 레코드"), "레코드별 진단을 아예 내지 말아야 한다"
+
+print("\n전부 통과 ✅ — 여섯 경로 모두 예외 없이 끝나고, A/E 를 클래스 프로파일로 가른다")
 sys.exit(0)
