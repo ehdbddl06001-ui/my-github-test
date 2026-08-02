@@ -12,6 +12,7 @@
   assert_label_vocab  — 요청한 라벨 이름이 실제 어휘에 있는지. 없으면 **즉시 실패**
   decide              — 사전등록 관문의 유일한 계약. 지지/기각/**미결** 3분
   collapse_report     — 붕괴 감시. 전체가 아니라 **단위별**로 판정
+  assert_arm_shape    — 저장된 arm 은 **겹 크기**다. 전역 인덱스로 자르면 안 된다
   assert_path_sample  — 긴 루프 전에 경로 몇 개를 실제로 확인
   boot_indices        — 메모리 안전 + 군 간 공유 축 부트스트랩 인덱스
 
@@ -99,6 +100,25 @@ def collapse_report(scores, floors, names, lift=1.2):
             "fatal_majority": len(dead) >= len(names) / 2 if names else True}
 
 
+def assert_arm_shape(arm, expected_rows, name="arm"):
+    """저장된 arm 의 행 수가 **겹 크기**인지 확인한다.
+
+    MedKOSRun.save_arm 은 그 겹의 예측만 저장한다(전체 길이가 아니다).
+    겹 순서는 `np.where(CV == k)[0]` 의 오름차순이므로,
+      OOF[np.where(CV == k)[0]] = load_arm(...)      ← 이렇게 **넣는다**
+      load_arm(...)[전역인덱스]                       ← 이렇게 자르면 IndexError
+    실험15d G0 에서 이 혼동으로 터졌다.
+    """
+    n = arm.shape[0]
+    if n != expected_rows:
+        raise ValueError(
+            f"{name} 행 수 {n} != 기대 {expected_rows}.\n"
+            "  → arm 은 **겹 크기**로 저장된다. 전역 인덱스로 자르지 말고 "
+            "OOF[np.where(CV==k)[0]] = arm 형태로 넣을 것."
+        )
+    return {"ok": True, "rows": n}
+
+
 def assert_path_sample(paths, k=5, exists=None):
     """긴 루프 **전에** 경로 몇 개가 실제로 존재하는지 본다.
 
@@ -166,6 +186,14 @@ def _selftest():
     check("하나 죽었다고 전멸 아님", r["fatal_majority"] is False)
     r2 = collapse_report({n: floors[n] for n in names}, floors, names)
     check("전부 무작위면 과반 플래그", r2["fatal_majority"] is True)
+
+    print("assert_arm_shape")
+    check("겹 크기면 통과", assert_arm_shape(np.zeros((4348, 7)), 4348)["ok"])
+    try:
+        assert_arm_shape(np.zeros((4348, 7)), 21799, name="12_f0")
+        check("전체 길이로 착각하면 잡는다", False)
+    except ValueError as e:
+        check("전체 길이로 착각하면 잡는다", "겹 크기" in str(e) and "12_f0" in str(e))
 
     print("assert_path_sample")
     fake = {"/a/rec1.dat", "/a/rec1.hea"}
