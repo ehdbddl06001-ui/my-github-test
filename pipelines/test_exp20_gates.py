@@ -22,26 +22,57 @@ def check(n, c):
 def norm_loc(s):
     return re.sub(r"[^a-z]", "", str(s).strip().lower())
 
-LOC_MAP = {"anterior": "AMI", "anteroseptal": "ASMI", "anteriorseptal": "ASMI",
-           "anterolateral": "ALMI", "anteriorlateral": "ALMI",
-           "anteroapicallateral": "ALMI", "anteroseptallateral": "ASMI",
-           "anteroseptolateral": "ASMI", "inferior": "IMI",
-           "inferolateral": "ILMI", "inferiorlateral": "ILMI",
-           "inferoposterolateral": "IPLMI", "inferoposterlateral": "IPLMI",
-           "inferiorposteriorlateral": "IPLMI", "lateral": "LMI"}
-LOC_DROP = {"no", "nein", "unknown", "", "none", "inferoposterior",
+def split_locs(s):
+    """통짜 정규화 — 구분자로 쪼개지 않는다('n/a' 가 'n'+'a' 로 갈라지는 것 방지)."""
+    return [norm_loc(s)]
+
+LOC_MAP = {"anterior": ["AMI"], "anteroseptal": ["ASMI"], "anteriorseptal": ["ASMI"],
+           "anterolateral": ["ALMI"], "anteriorlateral": ["ALMI"],
+           "anteroapicallateral": ["ALMI"], "anteroseptallateral": ["ASMI"],
+           "anteroseptolateral": ["ASMI"], "inferior": ["IMI"],
+           "inferolateral": ["ILMI"], "inferiorlateral": ["ILMI"],
+           "inferoposterolateral": ["IPLMI"], "inferoposterlateral": ["IPLMI"],
+           "inferiorposteriorlateral": ["IPLMI"], "lateral": ["LMI"],
+           # 2026-08-02 실제 PTBDB 헤더에서 게이트가 잡아낸 것들
+           "inferolatera": ["ILMI"], "anteriorinferior": ["AMI", "IMI"],
+           "anterioranterior": ["AMI"], "inferoposteriorinferior": ["IMI"]}
+LOC_DROP = {"no", "nein", "unknown", "", "none", "na", "inferoposterior",
             "inferiorposterior", "posterior", "posterolateral", "posteriorlateral"}
 
+def sites_of(v):
+    out = []
+    for k in split_locs(v):
+        out += LOC_MAP.get(k, [])
+    return sorted(set(out))
+
 print("① 국소화 문자열 매핑")
-for raw, want in [("infero-lateral", "ILMI"), ("Infero-Lateral ", "ILMI"),
-                  ("antero-septal", "ASMI"), ("infero-poster-lateral", "IPLMI"),
-                  ("anterior", "AMI"), ("inferior", "IMI"), ("lateral", "LMI")]:
-    check(f"'{raw}' → {want}", LOC_MAP.get(norm_loc(raw)) == want)
-for raw in ("no", "unknown", "", "posterior", "infero-posterior"):
-    check(f"'{raw or '(빈칸)'}' 명시적 제외", norm_loc(raw) in LOC_DROP)
-new = [k for k in ("antero-basal", "septal")
-       if norm_loc(k) not in LOC_MAP and norm_loc(k) not in LOC_DROP]
-check("모르는 문자열은 미매핑으로 잡힌다(추측 금지)", set(new) == {"antero-basal", "septal"})
+for raw, want in [("infero-lateral", ["ILMI"]), ("Infero-Lateral ", ["ILMI"]),
+                  ("antero-septal", ["ASMI"]), ("infero-poster-lateral", ["IPLMI"]),
+                  ("anterior", ["AMI"]), ("inferior", ["IMI"]), ("lateral", ["LMI"])]:
+    check(f"'{raw}' → {want}", sites_of(raw) == want)
+
+print("\n①-b 실제 헤더에서 나온 것들 (게이트가 잡아 명시한 5개)")
+check("'infero-latera'(원본 표기 누락) → ILMI", sites_of("infero-latera") == ["ILMI"])
+check("'anterior-inferior' → AMI+IMI (다중 부위)",
+      sites_of("anterior-inferior") == ["AMI", "IMI"])
+check("'anterior-anterior'(중복 기재) → AMI", sites_of("anterior-anterior") == ["AMI"])
+check("'infero-posterior-inferior' → IMI (후벽은 PTB-XL 제외 부위)",
+      sites_of("infero-posterior-inferior") == ["IMI"])
+check("'n/a' → 버림", norm_loc("n/a") in LOC_DROP and sites_of("n/a") == [])
+
+print("\n①-c 통짜 정규화 — 구분자로 쪼개지 않는다")
+check("'n/a' 가 'n'+'a' 로 갈라지지 않는다", split_locs("n/a") == ["na"])
+check("'infero-lateral' 이 갈라지지 않는다", split_locs("infero-lateral") == ["inferolateral"])
+# 'inferior, lateral' 은 통짜로 'inferiorlateral' 이 되어 이미 ILMI 로 매핑된다(의도된 동작)
+check("'inferior, lateral' → 통짜 정규화로 ILMI", sites_of("inferior, lateral") == ["ILMI"])
+check("정말 모르는 복합 형태는 미매핑으로 잡혀 게이트가 선다",
+      sites_of("septal, apical") == [] and norm_loc("septal, apical") not in LOC_DROP)
+
+for raw in ("no", "unknown", "", "posterior", "infero-posterior", "n/a"):
+    check(f"'{raw or '(빈칸)'}' 명시적 제외", all(k in LOC_DROP for k in split_locs(raw)))
+newk = [k for k in ("antero-basal", "septal")
+        if norm_loc(k) not in LOC_MAP and norm_loc(k) not in LOC_DROP]
+check("모르는 문자열은 미매핑으로 잡힌다(추측 금지)", set(newk) == {"antero-basal", "septal"})
 
 print("\n② 리샘플 후 유도 순서")
 rs = np.random.RandomState(0); n, T = 20, 11000
