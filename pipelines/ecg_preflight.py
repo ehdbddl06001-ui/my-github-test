@@ -13,6 +13,7 @@
   decide              — 사전등록 관문의 유일한 계약. 지지/기각/**미결** 3분
   collapse_report     — 붕괴 감시. 전체가 아니라 **단위별**로 판정
   assert_arm_shape    — 저장된 arm 은 **겹 크기**다. 전역 인덱스로 자르면 안 된다
+  assert_lead_order   — 12유도 채널 순서를 아인트호벤·골드버거 항등식으로 확인
   assert_path_sample  — 긴 루프 전에 경로 몇 개를 실제로 확인
   boot_indices        — 메모리 안전 + 군 간 공유 축 부트스트랩 인덱스
 
@@ -119,6 +120,49 @@ def assert_arm_shape(arm, expected_rows, name="arm"):
     return {"ok": True, "rows": n}
 
 
+FRONTAL_IDENTITIES = (
+    ("III", 2, lambda I, II: II - I),                 # 아인트호벤
+    ("aVR", 3, lambda I, II: -(I + II) / 2.0),        # 골드버거
+    ("aVL", 4, lambda I, II: I - II / 2.0),
+    ("aVF", 5, lambda I, II: II - I / 2.0),
+)
+
+
+def assert_lead_order(X, tol=0.02, sample=200, seed=0):
+    """12유도 캐시의 **채널 순서**를 신호 자체로 검증한다.
+
+    헤더의 유도 이름을 믿지 말고 아인트호벤·골드버거 항등식으로 확인한다:
+        III = II − I,  aVR = −(I+II)/2,  aVL = I − II/2,  aVF = II − I/2
+    넷이 모두 맞으면 0..5 = I,II,III,aVR,aVL,aVF 이고 표준 순서상 6..11 = V1..V6 이다.
+    → `{I,II}` = [0,1], `{II,V1}` = [1,6] 을 쓸 근거가 생긴다.
+
+    유도 순서를 틀리면 **예외 없이 조용히 다른 실험**이 된다. 그래서 잰다.
+    ※ 원신호(mV) 전제 — 채널별로 정규화한 배열에는 쓸 수 없다.
+    """
+    import numpy as np
+    if X.ndim != 3 or X.shape[2] != 12:
+        raise ValueError(f"X 는 (n, t, 12) 여야 한다 — 받은 모양 {X.shape}")
+    rs = np.random.RandomState(seed)
+    idx = rs.choice(len(X), size=min(sample, len(X)), replace=False)
+    S = X[idx].astype("float64")
+    I, II = S[:, :, 0], S[:, :, 1]
+    report, bad = {}, []
+    for name, j, f in FRONTAL_IDENTITIES:
+        want = f(I, II)
+        scale = np.abs(want).mean() + 1e-9
+        err = float(np.abs(S[:, :, j] - want).mean() / scale)
+        report[name] = err
+        if err > tol:
+            bad.append(f"{name}(ch{j}) 상대오차 {err:.3f}")
+    if bad:
+        raise ValueError(
+            "유도 순서가 표준(I,II,III,aVR,aVL,aVF,V1..V6)이 아니다: " + ", ".join(bad) + "\n"
+            "  → 항등식이 깨졌다는 것은 채널 배치가 다르거나 채널별 정규화가 걸렸다는 뜻이다.\n"
+            "  마스크 인덱스([0,1] 사지 · [1,6] II+V1)를 그대로 쓰면 조용히 다른 실험이 된다."
+        )
+    return {"ok": True, "n_checked": len(idx), "rel_err": report}
+
+
 def assert_path_sample(paths, k=5, exists=None):
     """긴 루프 **전에** 경로 몇 개가 실제로 존재하는지 본다.
 
@@ -194,6 +238,25 @@ def _selftest():
         check("전체 길이로 착각하면 잡는다", False)
     except ValueError as e:
         check("전체 길이로 착각하면 잡는다", "겹 크기" in str(e) and "12_f0" in str(e))
+
+    print("assert_lead_order")
+    rs = np.random.RandomState(0)
+    I = rs.randn(50, 200); II = rs.randn(50, 200)
+    good = np.stack([I, II, II - I, -(I + II) / 2, I - II / 2, II - I / 2]
+                    + [rs.randn(50, 200) for _ in range(6)], axis=2)
+    check("표준 순서면 통과", assert_lead_order(good)["ok"])
+    swapped = good[:, :, [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]]   # I↔II 뒤바뀜
+    try:
+        assert_lead_order(swapped)
+        check("I·II 가 뒤바뀌면 잡는다", False)
+    except ValueError as e:
+        check("I·II 가 뒤바뀌면 잡는다", "유도 순서" in str(e))
+    znorm = good / (good.std(axis=1, keepdims=True) + 1e-9)        # 채널별 정규화
+    try:
+        assert_lead_order(znorm)
+        check("채널별 정규화도 잡는다", False)
+    except ValueError:
+        check("채널별 정규화도 잡는다", True)
 
     print("assert_path_sample")
     fake = {"/a/rec1.dat", "/a/rec1.hea"}
