@@ -5,36 +5,36 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 593,
+  "total": 632,
   "byType": {
+   "kmle": 395,
+   "paper": 144,
    "ailab": 42,
-   "paper": 137,
-   "kmle": 363,
    "usmle": 48,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 58,
-   "Nephrology": 41,
-   "Infectious Disease": 40,
-   "Pediatrics": 39,
+   "Cardiology": 61,
+   "Nephrology": 44,
+   "Infectious Disease": 43,
+   "Pediatrics": 41,
    "Medical AI Lab": 28,
-   "Obstetrics & Gynecology": 26,
-   "Neurology": 25,
-   "Psychiatry": 25,
-   "Endocrinology": 24,
-   "Gastroenterology": 23,
-   "Pulmonology": 23,
-   "Dermatology": 22,
-   "General Surgery": 22,
-   "Ophthalmology": 22,
-   "Orthopedics": 22,
-   "Rheumatology": 22,
-   "Surgery": 22,
-   "Hematology": 21,
-   "Pathology": 19,
-   "Laboratory Medicine": 16,
-   "Hematology-Oncology": 14,
+   "Obstetrics & Gynecology": 28,
+   "Neurology": 27,
+   "Psychiatry": 27,
+   "Endocrinology": 26,
+   "Gastroenterology": 25,
+   "Pulmonology": 25,
+   "Dermatology": 24,
+   "General Surgery": 24,
+   "Ophthalmology": 24,
+   "Orthopedics": 24,
+   "Rheumatology": 24,
+   "Hematology": 23,
+   "Surgery": 23,
+   "Pathology": 20,
+   "Laboratory Medicine": 17,
+   "Hematology-Oncology": 15,
    "Medical Signal AI": 8,
    "Physiology": 6,
    "Microbiology": 4,
@@ -51,12 +51,699 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "medium": 146,
-   "high": 447
+   "high": 479,
+   "medium": 153
   },
-  "tagCount": 1574
+  "tagCount": 1625
  },
  "docs": [
+  {
+   "id": "kmle-2026-0425",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Dermatomyositis",
+   "tags": [
+    "dermatomyositis",
+    "proximal-weakness",
+    "malignancy-screen",
+    "myositis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0425.md",
+   "snippet": "54세 여자가 몇 주간 점점 심해진 근력 약화로 왔다. 머리를 감거나 계단을 오를 때 특히 힘들고, 눈꺼풀 주위의 보라색 홍반과 손가락 관절 폄쪽의 붉은 구진이 있다. 근효소가 크게 오르고 항핵항체는 양성이다. 활력징후·검사는 자료와 같다. 이 환자에서 반드시 함께 시행해야 할 것은? A. 관절 천자 B. 요산 측정 C. 혈액 배양 D. 갑상샘 초음파 E. 연령별 악성종양 선별검사 대칭성 근위부 근력약화, 눈꺼풀 보라색 홍반,",
+   "text": "Rheumatology Dermatomyositis dermatomyositis proximal-weakness malignancy-screen myositis KMLE 2026 / Claude Routine 54세 여자가 몇 주간 점점 심해진 근력 약화로 왔다. 머리를 감거나 계단을 오를 때 특히 힘들고, 눈꺼풀 주위의 보라색 홍반과 손가락 관절 폄쪽의 붉은 구진이 있다. 근효소가 크게 오르고 항핵항체는 양성이다. 활력징후·검사는 자료와 같다. 이 환자에서 반드시 함께 시행해야 할 것은? A. 관절 천자 B. 요산 측정 C. 혈액 배양 D. 갑상샘 초음파 E. 연령별 악성종양 선별검사 대칭성 근위부 근력약화, 눈꺼풀 보라색 홍반, 손가락 관절 폄쪽 홍반성 구진, 근효소 상승은 피부근염이다. 성인 피부근염은 잠복 악성종양과 강하게 연관되므로 연령별 악성종양 선별이 필수다."
+  },
+  {
+   "id": "kmle-2026-0424",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Ankylosing Spondylitis",
+   "tags": [
+    "ankylosing-spondylitis",
+    "inflammatory-back-pain",
+    "NSAID",
+    "HLA-B27"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0424.md",
+   "snippet": "24세 남자가 3개월 넘게 지속된 허리·엉치 통증으로 왔다. 통증은 새벽에 심하고 아침에 한 시간 넘게 뻣뻣하며 움직이면 오히려 나아진다. 허리를 앞으로 굽히면 척추 유연성이 떨어져 있다. 염증표지자는 오르고 류마티스인자는 음성이며, 영상에서 양쪽 엉치엉덩관절 염증이 보인다. 활력징후·검사는 자료와 같다. 가장 적절한 초기 치료는? A. 경구 스테로이드 고용량 B. 비스테로이드소염제 C. 알로퓨리놀 D. 항생제 6주 E. 요추",
+   "text": "Rheumatology Ankylosing Spondylitis ankylosing-spondylitis inflammatory-back-pain NSAID HLA-B27 KMLE 2026 / Claude Routine 24세 남자가 3개월 넘게 지속된 허리·엉치 통증으로 왔다. 통증은 새벽에 심하고 아침에 한 시간 넘게 뻣뻣하며 움직이면 오히려 나아진다. 허리를 앞으로 굽히면 척추 유연성이 떨어져 있다. 염증표지자는 오르고 류마티스인자는 음성이며, 영상에서 양쪽 엉치엉덩관절 염증이 보인다. 활력징후·검사는 자료와 같다. 가장 적절한 초기 치료는? A. 경구 스테로이드 고용량 B. 비스테로이드소염제 C. 알로퓨리놀 D. 항생제 6주 E. 요추 유합술 새벽 악화·아침 강직( 1시간)·운동 시 호전의 염증성 허리통증에 양측 엉치엉덩관절염, 염증표지자 상승, 류마티스인자 음성이면 강직척추염이다. 1차 치료는 비스테로이드소염제와 운동요법이며 불응 시 종양괴사인자 억제제를 쓴다."
+  },
+  {
+   "id": "kmle-2026-0423",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Obstructive Sleep Apnea",
+   "tags": [
+    "obstructive-sleep-apnea",
+    "polysomnography",
+    "daytime-somnolence",
+    "CPAP"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0423.md",
+   "snippet": "48세 남자가 낮에 참기 힘든 졸림과 아침 두통으로 왔다. 배우자에 따르면 밤에 코를 심하게 골다가 숨이 멎는 일이 반복된다고 한다. 비만하고 고혈압이 있으며 갑상샘기능은 정상이다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 수면다원검사 B. 폐기능검사 C. 흉부 CT D. 24시간 심전도 E. 갑상샘기능검사 비만·고혈압 남성의 심한 코골이와 목격된 무호흡, 주간 졸림·아침 두통은 폐쇄수면무호흡을 시사한다",
+   "text": "Pulmonology Obstructive Sleep Apnea obstructive-sleep-apnea polysomnography daytime-somnolence CPAP KMLE 2026 / Claude Routine 48세 남자가 낮에 참기 힘든 졸림과 아침 두통으로 왔다. 배우자에 따르면 밤에 코를 심하게 골다가 숨이 멎는 일이 반복된다고 한다. 비만하고 고혈압이 있으며 갑상샘기능은 정상이다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 수면다원검사 B. 폐기능검사 C. 흉부 CT D. 24시간 심전도 E. 갑상샘기능검사 비만·고혈압 남성의 심한 코골이와 목격된 무호흡, 주간 졸림·아침 두통은 폐쇄수면무호흡을 시사한다. 수면다원검사로 무호흡 저호흡지수를 측정해 확진하고 중증도를 정한다."
+  },
+  {
+   "id": "kmle-2026-0422",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Superior Vena Cava Syndrome",
+   "tags": [
+    "SVC-syndrome",
+    "lung-cancer",
+    "tissue-diagnosis",
+    "mediastinal-mass"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0422.md",
+   "snippet": "62세 남자가 몇 주간 진행한 얼굴·목의 부종과 숨참으로 왔다. 오랜 흡연자이며 아침에 눈두덩이 붓고 고개를 숙이면 심해진다. 목과 앞가슴 벽에 정맥이 확장되어 있고 흉부영상에서 우상부 종격동에 종괴가 있다. 기도는 안정적이다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 즉시 방사선치료 시작 B. 이뇨제 정맥 투여 C. 항응고제 시작 D. 조직 생검 시행 E. 경과 관찰 흡연자에서 얼굴·목 부종, 표재정맥 ",
+   "text": "Pulmonology Superior Vena Cava Syndrome SVC-syndrome lung-cancer tissue-diagnosis mediastinal-mass KMLE 2026 / Claude Routine 62세 남자가 몇 주간 진행한 얼굴·목의 부종과 숨참으로 왔다. 오랜 흡연자이며 아침에 눈두덩이 붓고 고개를 숙이면 심해진다. 목과 앞가슴 벽에 정맥이 확장되어 있고 흉부영상에서 우상부 종격동에 종괴가 있다. 기도는 안정적이다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 즉시 방사선치료 시작 B. 이뇨제 정맥 투여 C. 항응고제 시작 D. 조직 생검 시행 E. 경과 관찰 흡연자에서 얼굴·목 부종, 표재정맥 확장, 종격동 종괴는 악성종양(대개 폐암·림프종)에 의한 위대정맥증후군이다. 기도가 안정적이면 치료가 조직형에 따라 달라지므로 방사선·항암 전에 조직 생검으로 확진하는 것이 우선이다."
+  },
+  {
+   "id": "kmle-2026-0421",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Anorexia Nervosa (Refeeding Syndrome)",
+   "tags": [
+    "anorexia-nervosa",
+    "refeeding-syndrome",
+    "hypophosphatemia",
+    "eating-disorder"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0421.md",
+   "snippet": "18세 여자가 극단적 체중 감소로 왔다. 스스로 살쪘다고 여겨 음식을 강하게 제한했고 몇 달째 월경이 없다. 체질량지수가 매우 낮고 서맥·저체온·저혈압이 있다. 입원해 영양공급을 시작하려 한다. 활력징후·검사는 자료와 같다. 재영양 시작 후 가장 주의해야 할 대사이상은? A. 고칼슘혈증 B. 고나트륨혈증 C. 고혈당 D. 대사성 알칼리증 E. 저인산혈증 극단 저체중·무월경·서맥·저체온은 신경성 식욕부진이다. 굶던 사람에게 영양",
+   "text": "Psychiatry Anorexia Nervosa (Refeeding Syndrome) anorexia-nervosa refeeding-syndrome hypophosphatemia eating-disorder KMLE 2026 / Claude Routine 18세 여자가 극단적 체중 감소로 왔다. 스스로 살쪘다고 여겨 음식을 강하게 제한했고 몇 달째 월경이 없다. 체질량지수가 매우 낮고 서맥·저체온·저혈압이 있다. 입원해 영양공급을 시작하려 한다. 활력징후·검사는 자료와 같다. 재영양 시작 후 가장 주의해야 할 대사이상은? A. 고칼슘혈증 B. 고나트륨혈증 C. 고혈당 D. 대사성 알칼리증 E. 저인산혈증 극단 저체중·무월경·서맥·저체온은 신경성 식욕부진이다. 굶던 사람에게 영양(특히 탄수화물)을 재개하면 인슐린 분비로 인·칼륨·마그네슘이 세포 안으로 이동해 저인산혈증이 생기며, 이것이 재영양증후군의 핵심 위험이다."
+  },
+  {
+   "id": "kmle-2026-0420",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Panic Disorder",
+   "tags": [
+    "panic-disorder",
+    "SSRI",
+    "anticipatory-anxiety",
+    "first-line"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0420.md",
+   "snippet": "29세 여자가 몇 달간 예고 없이 반복되는 발작적 두근거림·숨막힘·죽을 것 같은 공포로 왔다. 발작은 10여 분에 절정에 이르렀다가 가라앉으며, 또 생길까 두려워 외출을 피한다. 갑상샘·심전도·전해질은 정상이다. 지금은 증상이 없고 활력징후·검사는 자료와 같다. 장기 관리를 위한 가장 적절한 치료는? A. 벤조디아제핀 장기 단독요법 B. 베타차단제 지속 투여 C. 항정신병약 투여 D. 갑상샘호르몬 투여 E. 선택세로토닌재흡수억",
+   "text": "Psychiatry Panic Disorder panic-disorder SSRI anticipatory-anxiety first-line KMLE 2026 / Claude Routine 29세 여자가 몇 달간 예고 없이 반복되는 발작적 두근거림·숨막힘·죽을 것 같은 공포로 왔다. 발작은 10여 분에 절정에 이르렀다가 가라앉으며, 또 생길까 두려워 외출을 피한다. 갑상샘·심전도·전해질은 정상이다. 지금은 증상이 없고 활력징후·검사는 자료와 같다. 장기 관리를 위한 가장 적절한 치료는? A. 벤조디아제핀 장기 단독요법 B. 베타차단제 지속 투여 C. 항정신병약 투여 D. 갑상샘호르몬 투여 E. 선택세로토닌재흡수억제제 예고 없는 반복 공황발작과 예기불안·회피가 있고 신체·내분비 원인이 배제되면 공황장애다. 장기 관리의 1차 약물은 선택세로토닌재흡수억제제이며 인지행동치료를 병행한다."
+  },
+  {
+   "id": "kmle-2026-0419",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Hirschsprung Disease",
+   "tags": [
+    "hirschsprung",
+    "delayed-meconium",
+    "rectal-biopsy",
+    "neonatal-obstruction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0419.md",
+   "snippet": "생후 3일 남아가 태어난 뒤 48시간이 지나도록 첫 태변을 보지 못했고 배가 부르며 담즙 섞인 토를 한다. 항문 진찰 뒤 손가락을 빼자 가스와 변이 뿜어져 나왔다. 복부촬영에서 대장이 확장되어 있다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 직장 생검 B. 복부 초음파 C. 상부위장관 조영 D. 대변 잠혈검사 E. 땀 염소 검사 48시간 넘게 태변이 지연되고 배부름·담즙성 구토, 직장 진찰 후 폭발성 배",
+   "text": "Pediatrics Hirschsprung Disease hirschsprung delayed-meconium rectal-biopsy neonatal-obstruction KMLE 2026 / Claude Routine 생후 3일 남아가 태어난 뒤 48시간이 지나도록 첫 태변을 보지 못했고 배가 부르며 담즙 섞인 토를 한다. 항문 진찰 뒤 손가락을 빼자 가스와 변이 뿜어져 나왔다. 복부촬영에서 대장이 확장되어 있다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 직장 생검 B. 복부 초음파 C. 상부위장관 조영 D. 대변 잠혈검사 E. 땀 염소 검사 48시간 넘게 태변이 지연되고 배부름·담즙성 구토, 직장 진찰 후 폭발성 배변은 원위 장의 신경절세포 결여(히르슈슈프룽병)를 시사한다. 직장 생검에서 신경절세포 부재를 확인하는 것이 확진 검사다."
+  },
+  {
+   "id": "kmle-2026-0418",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Acute Bronchiolitis",
+   "tags": [
+    "bronchiolitis",
+    "RSV",
+    "supportive-care",
+    "infant-wheeze"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0418.md",
+   "snippet": "생후 7개월 남아가 사흘간의 콧물·기침 뒤 숨을 빠르고 힘겹게 쉬어 왔다. 겨울철이고 어린이집에 다닌다. 진찰에서 양쪽 폐에 천명과 거품소리가 들리고 갈비뼈 사이가 함몰된다. 산소포화도는 약간 낮고 수유량이 준 상태다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 경험적 항생제 투여 B. 전신 스테로이드 투여 C. 정맥 면역글로불린 투여 D. 지지 요법(산소·수분) E. 흡입 항콜린제 투여 2세 미만에서 상기도감염",
+   "text": "Pediatrics Acute Bronchiolitis bronchiolitis RSV supportive-care infant-wheeze KMLE 2026 / Claude Routine 생후 7개월 남아가 사흘간의 콧물·기침 뒤 숨을 빠르고 힘겹게 쉬어 왔다. 겨울철이고 어린이집에 다닌다. 진찰에서 양쪽 폐에 천명과 거품소리가 들리고 갈비뼈 사이가 함몰된다. 산소포화도는 약간 낮고 수유량이 준 상태다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 경험적 항생제 투여 B. 전신 스테로이드 투여 C. 정맥 면역글로불린 투여 D. 지지 요법(산소·수분) E. 흡입 항콜린제 투여 2세 미만에서 상기도감염 뒤 천명·거품소리·함몰과 경도 저산소증은 대개 바이러스(RSV) 세기관지염이다. 특효약이 없어 산소·수분 공급 등 지지요법이 기본이며, 항생제·전신 스테로이드는 일상적으로 권장되지 않는다."
+  },
+  {
+   "id": "kmle-2026-0417",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Fat Embolism Syndrome",
+   "tags": [
+    "fat-embolism",
+    "long-bone-fracture",
+    "hypoxia",
+    "petechiae"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0417.md",
+   "snippet": "24세 남자가 이틀 전 넙다리뼈 골절로 입원해 수술을 기다리던 중 갑자기 숨차함과 혼동을 보인다. 가슴·겨드랑이·결막에 점상출혈이 새로 생겼고 산소포화도가 떨어졌다. 진찰에서 다리 부종이나 한쪽 종아리 압통은 뚜렷하지 않다. 활력징후·검사는 자료와 같다. 증상을 가장 잘 설명하는 것은? A. 폐혈전색전증 B. 지방색전증후군 C. 세균 폐렴 D. 자발 기흉 E. 급성 심근경색 장골 골절 후 24~72시간에 저산소증·의식변화·점상",
+   "text": "Orthopedics Fat Embolism Syndrome fat-embolism long-bone-fracture hypoxia petechiae KMLE 2026 / Claude Routine 24세 남자가 이틀 전 넙다리뼈 골절로 입원해 수술을 기다리던 중 갑자기 숨차함과 혼동을 보인다. 가슴·겨드랑이·결막에 점상출혈이 새로 생겼고 산소포화도가 떨어졌다. 진찰에서 다리 부종이나 한쪽 종아리 압통은 뚜렷하지 않다. 활력징후·검사는 자료와 같다. 증상을 가장 잘 설명하는 것은? A. 폐혈전색전증 B. 지방색전증후군 C. 세균 폐렴 D. 자발 기흉 E. 급성 심근경색 장골 골절 후 24~72시간에 저산소증·의식변화·점상출혈의 삼징이 나타나면 지방색전증후군이다. 골수 지방이 폐·전신 순환으로 유입되어 생기며 치료는 산소·호흡보조 등 지지요법이다."
+  },
+  {
+   "id": "kmle-2026-0416",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Slipped Capital Femoral Epiphysis",
+   "tags": [
+    "SCFE",
+    "adolescent-hip",
+    "in-situ-fixation",
+    "non-weight-bearing"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0416.md",
+   "snippet": "13세 남자가 몇 주간의 왼쪽 무릎·넓적다리 통증과 절뚝거림으로 왔다. 비만하며 외상은 없었다. 진찰에서 왼쪽 고관절을 굽히면 다리가 저절로 바깥으로 돌아가고 안쪽 돌림이 제한된다. 염증표지자는 정상이고 열은 없다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 물리치료 후 재평가 B. 체중부하 보행 격려 C. 제자리 나사 고정술 D. 견인 후 경과 관찰 E. 소염진통제만 투여 비만 청소년의 무릎·넓적다리 연관",
+   "text": "Orthopedics Slipped Capital Femoral Epiphysis SCFE adolescent-hip in-situ-fixation non-weight-bearing KMLE 2026 / Claude Routine 13세 남자가 몇 주간의 왼쪽 무릎·넓적다리 통증과 절뚝거림으로 왔다. 비만하며 외상은 없었다. 진찰에서 왼쪽 고관절을 굽히면 다리가 저절로 바깥으로 돌아가고 안쪽 돌림이 제한된다. 염증표지자는 정상이고 열은 없다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 물리치료 후 재평가 B. 체중부하 보행 격려 C. 제자리 나사 고정술 D. 견인 후 경과 관찰 E. 소염진통제만 투여 비만 청소년의 무릎·넓적다리 연관통, 절뚝거림, 굴곡 시 외회전과 내회전 제한은 대퇴골두골단분리증이다. 진행·괴사를 막기 위해 즉시 체중부하를 금하고 제자리 나사 고정술을 시행한다."
+  },
+  {
+   "id": "kmle-2026-0415",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Acute Anterior Uveitis",
+   "tags": [
+    "anterior-uveitis",
+    "ciliary-flush",
+    "topical-steroid",
+    "HLA-B27"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0415.md",
+   "snippet": "28세 남자가 며칠간의 왼눈 통증과 빛을 볼 때 눈부심, 눈물흘림으로 왔다. 각막 둘레를 따라 충혈이 뚜렷하고 동공이 작으며, 세극등에서 앞방에 세포와 혼탁이 보인다. 안압은 정상이고 허리 통증도 오래 있었다. 활력징후·검사는 자료와 같다. 가장 적절한 초기 치료는? A. 국소 항생제 안약 B. 국소 베타차단제 C. 레이저 홍채절개술 D. 항바이러스제 투여 E. 국소 스테로이드 안약 눈부심·눈물·각막주위 충혈·축동에 앞방 세포",
+   "text": "Ophthalmology Acute Anterior Uveitis anterior-uveitis ciliary-flush topical-steroid HLA-B27 KMLE 2026 / Claude Routine 28세 남자가 며칠간의 왼눈 통증과 빛을 볼 때 눈부심, 눈물흘림으로 왔다. 각막 둘레를 따라 충혈이 뚜렷하고 동공이 작으며, 세극등에서 앞방에 세포와 혼탁이 보인다. 안압은 정상이고 허리 통증도 오래 있었다. 활력징후·검사는 자료와 같다. 가장 적절한 초기 치료는? A. 국소 항생제 안약 B. 국소 베타차단제 C. 레이저 홍채절개술 D. 항바이러스제 투여 E. 국소 스테로이드 안약 눈부심·눈물·각막주위 충혈·축동에 앞방 세포·혼탁이 있으면 급성 앞포도막염이다. 국소 스테로이드로 염증을 억제하고 산동·조절마비제로 통증·유착을 예방한다. 오래된 허리 통증은 HLA B27 연관 척추관절염을 시사한다."
+  },
+  {
+   "id": "kmle-2026-0414",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Postoperative Endophthalmitis",
+   "tags": [
+    "endophthalmitis",
+    "post-cataract",
+    "intravitreal-antibiotics",
+    "hypopyon"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0414.md",
+   "snippet": "68세 남자가 사흘 전 백내장 수술을 받은 오른눈의 심한 통증과 급격한 시력저하로 왔다. 결막이 충혈되고 앞방에 고름층이 보이며 각막이 흐리다. 활력징후는 안정적이고 안압은 정상이다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 국소 항생제 안약만 B. 경구 스테로이드 투여 C. 유리체내 항생제 주입 D. 온찜질과 경과 관찰 E. 인공눈물 투여 백내장 수술 며칠 뒤의 심한 통증·급격한 시력저하·앞방 고름층은 ",
+   "text": "Ophthalmology Postoperative Endophthalmitis endophthalmitis post-cataract intravitreal-antibiotics hypopyon KMLE 2026 / Claude Routine 68세 남자가 사흘 전 백내장 수술을 받은 오른눈의 심한 통증과 급격한 시력저하로 왔다. 결막이 충혈되고 앞방에 고름층이 보이며 각막이 흐리다. 활력징후는 안정적이고 안압은 정상이다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 국소 항생제 안약만 B. 경구 스테로이드 투여 C. 유리체내 항생제 주입 D. 온찜질과 경과 관찰 E. 인공눈물 투여 백내장 수술 며칠 뒤의 심한 통증·급격한 시력저하·앞방 고름층은 수술후 안내염이다. 유리체 천자로 검체를 얻고 즉시 유리체내 항생제를 주입하는 것이 실명을 막는 핵심 처치다."
+  },
+  {
+   "id": "kmle-2026-0413",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Shoulder Dystocia",
+   "tags": [
+    "shoulder-dystocia",
+    "mcroberts",
+    "obstetric-emergency",
+    "delivery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0413.md",
+   "snippet": "32세 임신부가 질식분만 중 태아 머리가 나온 뒤 곧바로 회음부 쪽으로 다시 당겨 들어가고, 부드러운 견인에도 앞쪽 어깨가 치골 뒤에 걸려 몸통이 나오지 않는다. 산모 활력징후는 안정적이다. 활력징후·검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 맥로버츠 수기 B. 태아 머리 견인 강화 C. 즉시 흡입분만 시도 D. 즉시 제왕절개 전환 E. 옥시토신 증량 머리 만출 후 되당김과 앞어깨 감입은 어깨난산이다. 가장 먼저 산",
+   "text": "Obstetrics & Gynecology Shoulder Dystocia shoulder-dystocia mcroberts obstetric-emergency delivery KMLE 2026 / Claude Routine 32세 임신부가 질식분만 중 태아 머리가 나온 뒤 곧바로 회음부 쪽으로 다시 당겨 들어가고, 부드러운 견인에도 앞쪽 어깨가 치골 뒤에 걸려 몸통이 나오지 않는다. 산모 활력징후는 안정적이다. 활력징후·검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 맥로버츠 수기 B. 태아 머리 견인 강화 C. 즉시 흡입분만 시도 D. 즉시 제왕절개 전환 E. 옥시토신 증량 머리 만출 후 되당김과 앞어깨 감입은 어깨난산이다. 가장 먼저 산모의 넓적다리를 배 쪽으로 강하게 굽히는 맥로버츠 수기(±치골상부 압박)로 골반각을 바꿔 어깨를 빼낸다. 과도한 머리 견인은 상완신경총 손상을 유발하므로 피한다."
+  },
+  {
+   "id": "kmle-2026-0412",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ovarian Torsion",
+   "tags": [
+    "ovarian-torsion",
+    "adnexal-mass",
+    "laparoscopy",
+    "doppler"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0412.md",
+   "snippet": "26세 여자가 갑자기 시작된 한쪽 아랫배 심한 통증과 구역·구토로 왔다. 통증은 간헐적으로 악화되며 임신반응은 음성이다. 골반 초음파에서 한쪽에 커진 난소 종괴가 보이고 도플러에서 그쪽 난소로 가는 혈류가 뚜렷이 줄어 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 진통제 후 경과 관찰 B. 경구 피임약 투여 C. 응급 복강경수술 D. 항생제 정맥 투여 E. 자기공명영상 추적 갑작스런 편측 골반통·구토, ",
+   "text": "Obstetrics & Gynecology Ovarian Torsion ovarian-torsion adnexal-mass laparoscopy doppler KMLE 2026 / Claude Routine 26세 여자가 갑자기 시작된 한쪽 아랫배 심한 통증과 구역·구토로 왔다. 통증은 간헐적으로 악화되며 임신반응은 음성이다. 골반 초음파에서 한쪽에 커진 난소 종괴가 보이고 도플러에서 그쪽 난소로 가는 혈류가 뚜렷이 줄어 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 진통제 후 경과 관찰 B. 경구 피임약 투여 C. 응급 복강경수술 D. 항생제 정맥 투여 E. 자기공명영상 추적 갑작스런 편측 골반통·구토, 난소 종괴, 도플러상 혈류 감소는 난소꼬임이다. 난소 생존을 위해 지체 없이 응급 복강경으로 꼬임을 풀어(난소보존) 준다."
+  },
+  {
+   "id": "kmle-2026-0411",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Herpes Simplex Encephalitis",
+   "tags": [
+    "HSV-encephalitis",
+    "empiric-acyclovir",
+    "temporal-lobe",
+    "CSF"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0411.md",
+   "snippet": "43세 남자가 이틀간의 발열과 두통 뒤 이상행동과 말을 잘 못 알아듣는 증상으로 왔다. 진찰 중 오른팔에 국소 발작이 있었다. 뇌척수액에서 림프구가 늘고 단백이 오르며 포도당은 정상이고 적혈구가 섞여 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 광범위 항생제만 투여 B. 고용량 스테로이드 투여 C. 정맥 아시클로버 투여 D. 항결핵제 투여 E. 항진균제 투여 발열·의식변화·국소신경증상(언어장애·국소발작",
+   "text": "Neurology Herpes Simplex Encephalitis HSV-encephalitis empiric-acyclovir temporal-lobe CSF KMLE 2026 / Claude Routine 43세 남자가 이틀간의 발열과 두통 뒤 이상행동과 말을 잘 못 알아듣는 증상으로 왔다. 진찰 중 오른팔에 국소 발작이 있었다. 뇌척수액에서 림프구가 늘고 단백이 오르며 포도당은 정상이고 적혈구가 섞여 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 광범위 항생제만 투여 B. 고용량 스테로이드 투여 C. 정맥 아시클로버 투여 D. 항결핵제 투여 E. 항진균제 투여 발열·의식변화·국소신경증상(언어장애·국소발작)과 림프구성 뇌척수액에 적혈구가 섞이면 측두엽을 침범하는 단순포진뇌염을 시사한다. 예후가 지연치료에 좌우되므로 확진 전이라도 즉시 정맥 아시클로버를 시작한다."
+  },
+  {
+   "id": "kmle-2026-0410",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Wernicke Encephalopathy",
+   "tags": [
+    "wernicke-encephalopathy",
+    "thiamine",
+    "alcohol",
+    "before-glucose"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0410.md",
+   "snippet": "54세 남자가 며칠간 혼동과 걸음이 휘청거리는 증상으로 실려 왔다. 오랜 폭음으로 최근 거의 먹지 못했다. 진찰에서 양쪽 눈이 바깥쪽으로 잘 움직이지 않고 안진이 보이며 자세가 불안정하다. 활력징후·검사는 자료와 같고 혈당은 낮은 편이다. 가장 먼저 시행할 처치는? A. 정맥 티아민 투여 B. 50% 포도당 정맥 투여 C. 정맥 마그네슘 투여 D. 뇌 CT 촬영 E. 진단적 요추천자 만성 음주·영양결핍에서 안구운동장애·안진·보",
+   "text": "Neurology Wernicke Encephalopathy wernicke-encephalopathy thiamine alcohol before-glucose KMLE 2026 / Claude Routine 54세 남자가 며칠간 혼동과 걸음이 휘청거리는 증상으로 실려 왔다. 오랜 폭음으로 최근 거의 먹지 못했다. 진찰에서 양쪽 눈이 바깥쪽으로 잘 움직이지 않고 안진이 보이며 자세가 불안정하다. 활력징후·검사는 자료와 같고 혈당은 낮은 편이다. 가장 먼저 시행할 처치는? A. 정맥 티아민 투여 B. 50% 포도당 정맥 투여 C. 정맥 마그네슘 투여 D. 뇌 CT 촬영 E. 진단적 요추천자 만성 음주·영양결핍에서 안구운동장애·안진·보행실조·혼동은 티아민 결핍에 의한 베르니케뇌병증이다. 포도당을 먼저 주면 남은 티아민이 소모되어 악화되므로, 포도당보다 티아민을 먼저 정맥 투여한다."
+  },
+  {
+   "id": "kmle-2026-0409",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Membranous Nephropathy",
+   "tags": [
+    "membranous-nephropathy",
+    "nephrotic-syndrome",
+    "malignancy-screen",
+    "PLA2R"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0409.md",
+   "snippet": "63세 남자가 몇 주간 진행한 전신 부종으로 왔다. 대량 단백뇨와 저알부민혈증, 고지혈증이 있고 보체는 정상이다. 콩팥 생검에서 사구체 바닥막이 두꺼워지고 상피밑 침착이 관찰되었다. 활력징후·검사는 자료와 같다. 이 환자에서 동반 여부를 반드시 확인해야 할 것은? A. 갈색세포종 B. 잠복 악성종양 C. 원발알도스테론증 D. 쿠싱증후군 E. 말단비대증 고령에서 신증후군과 상피밑 침착·바닥막 비후를 보이는 막성콩팥병은 이차성 원",
+   "text": "Nephrology Membranous Nephropathy membranous-nephropathy nephrotic-syndrome malignancy-screen PLA2R KMLE 2026 / Claude Routine 63세 남자가 몇 주간 진행한 전신 부종으로 왔다. 대량 단백뇨와 저알부민혈증, 고지혈증이 있고 보체는 정상이다. 콩팥 생검에서 사구체 바닥막이 두꺼워지고 상피밑 침착이 관찰되었다. 활력징후·검사는 자료와 같다. 이 환자에서 동반 여부를 반드시 확인해야 할 것은? A. 갈색세포종 B. 잠복 악성종양 C. 원발알도스테론증 D. 쿠싱증후군 E. 말단비대증 고령에서 신증후군과 상피밑 침착·바닥막 비후를 보이는 막성콩팥병은 이차성 원인이 흔하며, 특히 고령에서는 잠복 고형암(폐·위장관 등)과 강하게 연관된다. 따라서 연령별 악성종양 선별이 필수다."
+  },
+  {
+   "id": "kmle-2026-0408",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "IgA Nephropathy",
+   "tags": [
+    "IgA-nephropathy",
+    "synpharyngitic-hematuria",
+    "renal-biopsy",
+    "normal-complement"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0408.md",
+   "snippet": "24세 남자가 감기 증상이 시작된 그날 콜라색 소변을 보고 왔다. 이전에도 상기도감염 때마다 비슷한 육안혈뇨가 있었다. 혈압은 약간 높고 부종은 없다. 소변에서 변형적혈구와 경도 단백뇨가 보이며 혈청 보체는 정상, 항사슬알균용해소도 정상이다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 항사슬알균용해소 검사 B. 혈청 보체 측정 반복 C. 소변 배양검사 D. 콩팥 생검 E. 콩팥 초음파 상기도감염과 동시에 ",
+   "text": "Nephrology IgA Nephropathy IgA-nephropathy synpharyngitic-hematuria renal-biopsy normal-complement KMLE 2026 / Claude Routine 24세 남자가 감기 증상이 시작된 그날 콜라색 소변을 보고 왔다. 이전에도 상기도감염 때마다 비슷한 육안혈뇨가 있었다. 혈압은 약간 높고 부종은 없다. 소변에서 변형적혈구와 경도 단백뇨가 보이며 혈청 보체는 정상, 항사슬알균용해소도 정상이다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 항사슬알균용해소 검사 B. 혈청 보체 측정 반복 C. 소변 배양검사 D. 콩팥 생검 E. 콩팥 초음파 상기도감염과 동시에 반복되는 육안혈뇨(잠복기 없음), 정상 보체, 정상 항사슬알균용해소는 IgA콩팥병을 시사한다. 확진은 콩팥 생검에서 메산지움 IgA 침착을 확인하는 것이다."
+  },
+  {
+   "id": "kmle-2026-0407",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Falciparum Malaria",
+   "tags": [
+    "falciparum-malaria",
+    "returning-traveler",
+    "blood-smear",
+    "thrombocytopenia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0407.md",
+   "snippet": "31세 남자가 아프리카 여행에서 돌아온 지 열흘 만에 시작된 오한을 동반한 고열로 왔다. 발열은 하루 걸러 심해지고 두통·근육통이 있다. 예방약은 복용하지 않았다. 검사에서 혈소판이 낮고 빈혈·간접빌리루빈·젖산탈수소효소가 올라 있다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 말초혈액도말 검사 B. 혈액 배양검사 C. 비달검사 D. 대변 검사 E. 흉부 X선촬영 말라리아 유행지 여행 후 주기적 발열, 혈소",
+   "text": "Infectious Disease Falciparum Malaria falciparum-malaria returning-traveler blood-smear thrombocytopenia KMLE 2026 / Claude Routine 31세 남자가 아프리카 여행에서 돌아온 지 열흘 만에 시작된 오한을 동반한 고열로 왔다. 발열은 하루 걸러 심해지고 두통·근육통이 있다. 예방약은 복용하지 않았다. 검사에서 혈소판이 낮고 빈혈·간접빌리루빈·젖산탈수소효소가 올라 있다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 말초혈액도말 검사 B. 혈액 배양검사 C. 비달검사 D. 대변 검사 E. 흉부 X선촬영 말라리아 유행지 여행 후 주기적 발열, 혈소판감소, 용혈성 빈혈은 말라리아를 시사한다. 두껍고 얇은 말초혈액도말에서 원충을 확인하고 원충혈증 정도를 정량하는 것이 진단의 기준이다."
+  },
+  {
+   "id": "kmle-2026-0406",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Vibrio vulnificus Septicemia",
+   "tags": [
+    "vibrio-vulnificus",
+    "necrotizing-soft-tissue",
+    "cirrhosis",
+    "doxycycline-ceftriaxone"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0406.md",
+   "snippet": "58세 남자가 이틀 전 회를 먹은 뒤 시작된 고열과 함께 양쪽 다리가 붓고 아프다며 왔다. 간경화 병력이 있다. 다리에 빠르게 번지는 붉은 반과 출혈성 물집이 생겼고 혈압이 낮다. 활력징후·검사는 자료와 같다. 가장 적절한 항생제 치료는? A. 반코마이신 단독 B. 아지트로마이신 단독 C. 메트로니다졸 단독 D. 아시클로버 정맥 E. 세프트리악손 독시사이클린 병용 간경화 환자가 날생선 섭취 후 급속 진행하는 출혈성 수포·연조직",
+   "text": "Infectious Disease Vibrio vulnificus Septicemia vibrio-vulnificus necrotizing-soft-tissue cirrhosis doxycycline-ceftriaxone KMLE 2026 / Claude Routine 58세 남자가 이틀 전 회를 먹은 뒤 시작된 고열과 함께 양쪽 다리가 붓고 아프다며 왔다. 간경화 병력이 있다. 다리에 빠르게 번지는 붉은 반과 출혈성 물집이 생겼고 혈압이 낮다. 활력징후·검사는 자료와 같다. 가장 적절한 항생제 치료는? A. 반코마이신 단독 B. 아지트로마이신 단독 C. 메트로니다졸 단독 D. 아시클로버 정맥 E. 세프트리악손 독시사이클린 병용 간경화 환자가 날생선 섭취 후 급속 진행하는 출혈성 수포·연조직감염과 패혈증을 보이면 비브리오 불니피쿠스 패혈증이다. 3세대 세팔로스포린과 독시사이클린 병용이 표준 항생제이며, 괴사조직 응급 절제를 병행한다."
+  },
+  {
+   "id": "kmle-2026-0405",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Hereditary Spherocytosis",
+   "tags": [
+    "hereditary-spherocytosis",
+    "hemolytic-anemia",
+    "osmotic-fragility",
+    "coombs-negative"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0405.md",
+   "snippet": "23세 남자가 오래된 빈혈과 간헐적 황달로 왔다. 비장이 만져지고 담석으로 최근 시술을 받았으며 아버지도 비슷한 빈혈이 있다. 말초혈액도말에서 중심창백이 없는 작고 둥근 적혈구가 보이고, 망상적혈구와 간접빌리루빈이 오른 반면 직접쿰스검사는 음성이다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 직접 쿰스검사 B. 삼투압 취약성 검사 C. 혈청 페리틴 측정 D. 헤모글로빈 전기영동 E. 골수 생검 가족력, 비",
+   "text": "Hematology Hereditary Spherocytosis hereditary-spherocytosis hemolytic-anemia osmotic-fragility coombs-negative KMLE 2026 / Claude Routine 23세 남자가 오래된 빈혈과 간헐적 황달로 왔다. 비장이 만져지고 담석으로 최근 시술을 받았으며 아버지도 비슷한 빈혈이 있다. 말초혈액도말에서 중심창백이 없는 작고 둥근 적혈구가 보이고, 망상적혈구와 간접빌리루빈이 오른 반면 직접쿰스검사는 음성이다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 직접 쿰스검사 B. 삼투압 취약성 검사 C. 혈청 페리틴 측정 D. 헤모글로빈 전기영동 E. 골수 생검 가족력, 비장비대, 담석, 구형적혈구, 망상적혈구·간접빌리루빈 상승에 직접쿰스 음성이면 유전구상적혈구증이다. 삼투압 취약성 검사(또는 EMA 결합검사)로 막결함을 확인한다."
+  },
+  {
+   "id": "kmle-2026-0404",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Immune Thrombocytopenic Purpura",
+   "tags": [
+    "immune-thrombocytopenia",
+    "isolated-thrombocytopenia",
+    "corticosteroid",
+    "petechiae"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0404.md",
+   "snippet": "27세 여자가 며칠 전부터 다리에 생긴 점상출혈과 잇몸출혈로 왔다. 최근 감염·약물 복용력은 없고 비장은 만져지지 않는다. 검사에서 혈소판만 매우 낮고 혈색소·백혈구·응고검사는 정상이며 말초혈액도말에서 파괴적혈구는 없다. 활력징후·검사는 자료와 같다. 가장 적절한 초기 치료는? A. 혈소판 수혈 B. 비장절제술 C. 항생제 투여 D. 부신피질호르몬 투여 E. 골수 이식 다른 계통은 정상인데 혈소판만 고립성으로 감소하고 파괴적혈",
+   "text": "Hematology Immune Thrombocytopenic Purpura immune-thrombocytopenia isolated-thrombocytopenia corticosteroid petechiae KMLE 2026 / Claude Routine 27세 여자가 며칠 전부터 다리에 생긴 점상출혈과 잇몸출혈로 왔다. 최근 감염·약물 복용력은 없고 비장은 만져지지 않는다. 검사에서 혈소판만 매우 낮고 혈색소·백혈구·응고검사는 정상이며 말초혈액도말에서 파괴적혈구는 없다. 활력징후·검사는 자료와 같다. 가장 적절한 초기 치료는? A. 혈소판 수혈 B. 비장절제술 C. 항생제 투여 D. 부신피질호르몬 투여 E. 골수 이식 다른 계통은 정상인데 혈소판만 고립성으로 감소하고 파괴적혈구가 없으며 비장비대·유발약물이 없으면 면역혈소판감소증이다. 출혈이 있고 혈소판이 매우 낮은 성인은 부신피질호르몬이 1차 치료다."
+  },
+  {
+   "id": "kmle-2026-0403",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Sigmoid Volvulus",
+   "tags": [
+    "sigmoid-volvulus",
+    "large-bowel-obstruction",
+    "endoscopic-decompression"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0403.md",
+   "snippet": "78세 남자가 며칠간 배가 몹시 불러오고 변과 가스가 나오지 않는다며 왔다. 오래 누워 지내고 만성 변비가 있다. 배는 크게 팽만하나 압통·반발통은 없고, 복부촬영에서 좌하복부에서 올라가 크게 휜 하나의 확장된 대장 고리가 보인다. 활력징후·검사는 자료와 같고 젖산은 정상이다. 가장 적절한 다음 처치는? A. 응급 개복 대장절제 B. 관장 후 경과 관찰 C. 에스결장경 감압 D. 비위관 감압만 E. 항생제 후 퇴원 만성 변비·",
+   "text": "General Surgery Sigmoid Volvulus sigmoid-volvulus large-bowel-obstruction endoscopic-decompression KMLE 2026 / Claude Routine 78세 남자가 며칠간 배가 몹시 불러오고 변과 가스가 나오지 않는다며 왔다. 오래 누워 지내고 만성 변비가 있다. 배는 크게 팽만하나 압통·반발통은 없고, 복부촬영에서 좌하복부에서 올라가 크게 휜 하나의 확장된 대장 고리가 보인다. 활력징후·검사는 자료와 같고 젖산은 정상이다. 가장 적절한 다음 처치는? A. 응급 개복 대장절제 B. 관장 후 경과 관찰 C. 에스결장경 감압 D. 비위관 감압만 E. 항생제 후 퇴원 만성 변비·와상 노인에서 뒤틀린 하나의 거대 대장 고리와 팽만은 에스결장꼬임이다. 복막자극징후·젖산 상승이 없어 장괴사가 없으므로, 먼저 에스결장경으로 꼬임을 풀고 감압한다."
+  },
+  {
+   "id": "kmle-2026-0402",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Ruptured Abdominal Aortic Aneurysm",
+   "tags": [
+    "ruptured-AAA",
+    "hypotension",
+    "emergency-surgery",
+    "pulsatile-mass"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0402.md",
+   "snippet": "72세 남자가 갑자기 시작된 심한 배·허리 통증으로 실려 왔다. 고혈압과 흡연력이 있고 2년 전 배대동맥이 늘어났다는 말을 들었다. 배꼽 주위에서 박동성 덩이가 만져지고 혈압이 낮으며 맥박이 빠르다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 복부 CT 조영술 시행 B. 응급 수술적 처치 C. 복부 초음파 추적 D. 혈압강하제 투여 E. 수혈하며 경과 관찰 박동성 복부 덩이 + 급성 배·허리 통증 + 저혈압",
+   "text": "General Surgery Ruptured Abdominal Aortic Aneurysm ruptured-AAA hypotension emergency-surgery pulsatile-mass KMLE 2026 / Claude Routine 72세 남자가 갑자기 시작된 심한 배·허리 통증으로 실려 왔다. 고혈압과 흡연력이 있고 2년 전 배대동맥이 늘어났다는 말을 들었다. 배꼽 주위에서 박동성 덩이가 만져지고 혈압이 낮으며 맥박이 빠르다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 복부 CT 조영술 시행 B. 응급 수술적 처치 C. 복부 초음파 추적 D. 혈압강하제 투여 E. 수혈하며 경과 관찰 박동성 복부 덩이 + 급성 배·허리 통증 + 저혈압은 배대동맥류 파열의 전형적 삼징이다. 혈역학이 불안정하면 영상검사로 지체하지 말고 즉시 수술적(개복 또는 혈관내) 치료로 넘어간다."
+  },
+  {
+   "id": "kmle-2026-0401",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Zollinger-Ellison Syndrome",
+   "tags": [
+    "zollinger-ellison",
+    "gastrinoma",
+    "refractory-ulcer",
+    "fasting-gastrin"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0401.md",
+   "snippet": "44세 남자가 여러 번 재발하는 소화성궤양과 만성 설사로 왔다. 궤양은 십이지장 첫부분을 지나 아래쪽에도 여러 개 있고, 강력한 위산억제제에도 잘 낫지 않는다. 헬리코박터는 음성이고 진통제 복용력도 없다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 공복 혈청 가스트린 측정 B. 헬리코박터 요소호기검사 C. 대변 지방 정량 D. 혈청 아밀라아제 측정 E. 복부 단순촬영 헬리코박터 음성·비스테로이드소염제 미복",
+   "text": "Gastroenterology Zollinger-Ellison Syndrome zollinger-ellison gastrinoma refractory-ulcer fasting-gastrin KMLE 2026 / Claude Routine 44세 남자가 여러 번 재발하는 소화성궤양과 만성 설사로 왔다. 궤양은 십이지장 첫부분을 지나 아래쪽에도 여러 개 있고, 강력한 위산억제제에도 잘 낫지 않는다. 헬리코박터는 음성이고 진통제 복용력도 없다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 공복 혈청 가스트린 측정 B. 헬리코박터 요소호기검사 C. 대변 지방 정량 D. 혈청 아밀라아제 측정 E. 복부 단순촬영 헬리코박터 음성·비스테로이드소염제 미복용인데 다발성·비전형 위치의 재발성 난치 궤양과 설사가 있으면 가스트린 과분비 종양을 의심한다. 공복 혈청 가스트린 상승으로 선별·진단한다."
+  },
+  {
+   "id": "kmle-2026-0400",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Acute Ascending Cholangitis",
+   "tags": [
+    "ascending-cholangitis",
+    "biliary-drainage",
+    "ERCP",
+    "sepsis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0400.md",
+   "snippet": "70세 남자가 오한을 동반한 고열과 오른쪽 윗배 통증, 황달로 왔다. 혈압이 낮고 맥박이 빠르다. 검사에서 담즙정체성 간효소와 백혈구가 크게 오르고 리파아제는 정상이며, 초음파에서 총담관이 늘어나 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 복부 초음파만 반복 B. 경피 담낭조루술 C. 항생제 단독 지속 D. 내시경역행담췌관조영 담도배액 E. 간이식 대기 발열·황달·오른쪽 윗배 통증에 저혈압·의식저하 ",
+   "text": "Gastroenterology Acute Ascending Cholangitis ascending-cholangitis biliary-drainage ERCP sepsis KMLE 2026 / Claude Routine 70세 남자가 오한을 동반한 고열과 오른쪽 윗배 통증, 황달로 왔다. 혈압이 낮고 맥박이 빠르다. 검사에서 담즙정체성 간효소와 백혈구가 크게 오르고 리파아제는 정상이며, 초음파에서 총담관이 늘어나 있다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 처치는? A. 복부 초음파만 반복 B. 경피 담낭조루술 C. 항생제 단독 지속 D. 내시경역행담췌관조영 담도배액 E. 간이식 대기 발열·황달·오른쪽 윗배 통증에 저혈압·의식저하 경향이 겹치는 급성 담관염이다. 수액·항생제로 소생하면서 폐색된 담도를 감압하는 것이 핵심이며, 내시경역행담췌관조영을 통한 담도배액이 1차 처치다."
+  },
+  {
+   "id": "kmle-2026-0399",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Primary Hyperparathyroidism",
+   "tags": [
+    "primary-hyperparathyroidism",
+    "hypercalcemia",
+    "nephrolithiasis",
+    "parathyroidectomy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0399.md",
+   "snippet": "52세 여자가 반복되는 콩팥돌로 왔다. 최근 피로와 변비, 다뇨가 있었고 손목 골밀도가 낮다. 혈청 칼슘이 높은데 부갑상샘호르몬은 억제되지 않고 오히려 올라 있으며, 24시간 소변 칼슘 배설도 증가해 있다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 티아지드 이뇨제 투여 B. 칼슘 보충제 투여 C. 비타민 D 대량 투여 D. 경과 관찰 E. 부갑상샘절제술 고칼슘혈증에서 PTH가 억제되지 않고 오히려 상승하며 인은",
+   "text": "Endocrinology Primary Hyperparathyroidism primary-hyperparathyroidism hypercalcemia nephrolithiasis parathyroidectomy KMLE 2026 / Claude Routine 52세 여자가 반복되는 콩팥돌로 왔다. 최근 피로와 변비, 다뇨가 있었고 손목 골밀도가 낮다. 혈청 칼슘이 높은데 부갑상샘호르몬은 억제되지 않고 오히려 올라 있으며, 24시간 소변 칼슘 배설도 증가해 있다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 티아지드 이뇨제 투여 B. 칼슘 보충제 투여 C. 비타민 D 대량 투여 D. 경과 관찰 E. 부갑상샘절제술 고칼슘혈증에서 PTH가 억제되지 않고 오히려 상승하며 인은 낮고 콩팥돌·골밀도 저하가 있으면 증상성 원발부갑상샘항진증이다. 증상(콩팥돌)·표적장기 손상이 있으므로 부갑상샘절제술이 근치적 치료다."
+  },
+  {
+   "id": "kmle-2026-0398",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Central Diabetes Insipidus",
+   "tags": [
+    "central-diabetes-insipidus",
+    "post-pituitary-surgery",
+    "hypernatremia",
+    "desmopressin"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0398.md",
+   "snippet": "38세 여자가 뇌하수체 종양 수술 이틀 뒤부터 갈증과 함께 하루 6 L가 넘는 맑은 소변을 본다. 소변은 매우 묽고 혈청 나트륨은 올라 있다. 혈당은 정상이다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 수분 제한 B. 생리식염수 대량 투여 C. 데스모프레신 투여 D. 고장성 식염수 투여 E. 푸로세미드 투여 뇌하수체 수술 후의 다뇨·고나트륨혈증·희석뇨(소변 삼투질농도가 혈청보다 낮음)는 항이뇨호르몬 분비 ",
+   "text": "Endocrinology Central Diabetes Insipidus central-diabetes-insipidus post-pituitary-surgery hypernatremia desmopressin KMLE 2026 / Claude Routine 38세 여자가 뇌하수체 종양 수술 이틀 뒤부터 갈증과 함께 하루 6 L가 넘는 맑은 소변을 본다. 소변은 매우 묽고 혈청 나트륨은 올라 있다. 혈당은 정상이다. 활력징후·검사는 자료와 같다. 가장 적절한 다음 조치는? A. 수분 제한 B. 생리식염수 대량 투여 C. 데스모프레신 투여 D. 고장성 식염수 투여 E. 푸로세미드 투여 뇌하수체 수술 후의 다뇨·고나트륨혈증·희석뇨(소변 삼투질농도가 혈청보다 낮음)는 항이뇨호르몬 분비 부족에 의한 중추요붕증이다. 데스모프레신 투여로 소변을 농축시키고 나트륨을 교정하며 진단도 확인한다."
+  },
+  {
+   "id": "kmle-2026-0397",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Porphyria Cutanea Tarda",
+   "tags": [
+    "porphyria-cutanea-tarda",
+    "photosensitivity",
+    "HCV",
+    "uroporphyrin"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0397.md",
+   "snippet": "47세 남자가 몇 달간 손등에 햇빛을 쬔 뒤 생기는 물집과 피부가 잘 벗겨지는 증상으로 왔다. 벗겨진 자리에 작은 좁쌀낭종과 색소침착, 뺨의 다모증이 동반된다. 음주력이 많고 간효소가 올라 있다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 피부 알레르기 단자검사 B. 직접면역형광검사 C. 옴 진드기 현미경검사 D. 소변 포르피린 정량 E. 세균 배양검사 햇빛 노출부(손등)의 수포·피부취약·좁쌀낭종·다모증에",
+   "text": "Dermatology Porphyria Cutanea Tarda porphyria-cutanea-tarda photosensitivity HCV uroporphyrin KMLE 2026 / Claude Routine 47세 남자가 몇 달간 손등에 햇빛을 쬔 뒤 생기는 물집과 피부가 잘 벗겨지는 증상으로 왔다. 벗겨진 자리에 작은 좁쌀낭종과 색소침착, 뺨의 다모증이 동반된다. 음주력이 많고 간효소가 올라 있다. 활력징후·검사는 자료와 같다. 진단에 가장 적절한 검사는? A. 피부 알레르기 단자검사 B. 직접면역형광검사 C. 옴 진드기 현미경검사 D. 소변 포르피린 정량 E. 세균 배양검사 햇빛 노출부(손등)의 수포·피부취약·좁쌀낭종·다모증에 음주·C형간염·철과다가 겹치면 만성피부포르피린증이다. 소변 유로포르피린 정량 상승으로 확진하며 우드등에서 분홍 적색 형광을 보인다."
+  },
+  {
+   "id": "kmle-2026-0396",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Sweet Syndrome (Acute Febrile Neutrophilic Dermatosis)",
+   "tags": [
+    "sweet-syndrome",
+    "neutrophilic-dermatosis",
+    "corticosteroid",
+    "paraneoplastic"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0396.md",
+   "snippet": "58세 여자가 3일간의 발열과 함께 얼굴·목·팔에 갑자기 생긴 붉고 통증이 심한 융기된 판으로 왔다. 병변은 눌러도 고름이 나오지 않고 물집처럼 보이나 표면은 건조하다. 최근 상기도감염을 앓았고, 피부 생검에서 진피 상부에 조밀한 호중구 침윤이 확인되었다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 전신 코르티코스테로이드 B. 광범위 정맥 항생제 C. 경구 항히스타민제 D. 국소 항진균제 E. 정맥 아시클로버 발",
+   "text": "Dermatology Sweet Syndrome (Acute Febrile Neutrophilic Dermatosis) sweet-syndrome neutrophilic-dermatosis corticosteroid paraneoplastic KMLE 2026 / Claude Routine 58세 여자가 3일간의 발열과 함께 얼굴·목·팔에 갑자기 생긴 붉고 통증이 심한 융기된 판으로 왔다. 병변은 눌러도 고름이 나오지 않고 물집처럼 보이나 표면은 건조하다. 최근 상기도감염을 앓았고, 피부 생검에서 진피 상부에 조밀한 호중구 침윤이 확인되었다. 활력징후·검사는 자료와 같다. 가장 적절한 치료는? A. 전신 코르티코스테로이드 B. 광범위 정맥 항생제 C. 경구 항히스타민제 D. 국소 항진균제 E. 정맥 아시클로버 발열·호중구증가·급성 통증성 홍반판·진피 호중구 침윤은 급성 열성 호중구피부증이다. 감염이 아니라 무균성 호중구 반응이며, 전신 코르티코스테로이드에 극적으로 반응한다."
+  },
+  {
+   "id": "kmle-2026-0395",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Hypertrophic Obstructive Cardiomyopathy",
+   "tags": [
+    "HOCM",
+    "LVOT-obstruction",
+    "exertional-syncope",
+    "contraindication"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0395.md",
+   "snippet": "22세 남자가 축구 경기 중 갑자기 정신을 잃고 쓰러졌다가 회복되어 왔다. 형이 급사한 가족력이 있다. 좌측 흉골연에서 수축기 잡음이 들리며, 앉았다 일어서거나 발살바법을 하면 잡음이 커진다. 활력징후·검사는 자료와 같다. 증상 조절과 급사 예방을 위해 피해야 할 것은? A. 베타차단제 B. 베라파밀 C. 디소피라미드 D. 나이트로글리세린 E. 아미오다론 운동 중 실신, 급사 가족력, 발살바·기립 시 커지는 수축기 잡음은 좌심",
+   "text": "Cardiology Hypertrophic Obstructive Cardiomyopathy HOCM LVOT-obstruction exertional-syncope contraindication KMLE 2026 / Claude Routine 22세 남자가 축구 경기 중 갑자기 정신을 잃고 쓰러졌다가 회복되어 왔다. 형이 급사한 가족력이 있다. 좌측 흉골연에서 수축기 잡음이 들리며, 앉았다 일어서거나 발살바법을 하면 잡음이 커진다. 활력징후·검사는 자료와 같다. 증상 조절과 급사 예방을 위해 피해야 할 것은? A. 베타차단제 B. 베라파밀 C. 디소피라미드 D. 나이트로글리세린 E. 아미오다론 운동 중 실신, 급사 가족력, 발살바·기립 시 커지는 수축기 잡음은 좌심실유출로 폐색을 동반한 비대심근병이다. 전부하를 줄이는 약제는 유출로 폐색을 악화시켜 금기이며, 나이트로글리세린이 대표적이다."
+  },
+  {
+   "id": "kmle-2026-0394",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Complete (Third-degree) Atrioventricular Block",
+   "tags": [
+    "complete-heart-block",
+    "bradyarrhythmia",
+    "temporary-pacing",
+    "syncope"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-03",
+   "path": "content/kmle/2026/kmle-2026-0394.md",
+   "snippet": "74세 남자가 반복되는 어지럼과 실신으로 왔다. 맥박은 느리고 규칙적이며 목의 정맥에서 이따금 강한 박동이 관찰된다. 심전도에서 P파와 QRS파가 서로 무관하게 각자의 규칙으로 나타난다. 활력징후·검사는 자료와 같고 심근효소는 정상이다. 가장 적절한 다음 처치는? A. 아트로핀 정맥 투여 B. 경정맥 임시 심박조율 C. 도부타민 지속 정맥 투여 D. 아데노신 정맥 투여 E. 동기화 전기율동전환 P파와 QRS파가 완전히 해리되고",
+   "text": "Cardiology Complete (Third-degree) Atrioventricular Block complete-heart-block bradyarrhythmia temporary-pacing syncope KMLE 2026 / Claude Routine 74세 남자가 반복되는 어지럼과 실신으로 왔다. 맥박은 느리고 규칙적이며 목의 정맥에서 이따금 강한 박동이 관찰된다. 심전도에서 P파와 QRS파가 서로 무관하게 각자의 규칙으로 나타난다. 활력징후·검사는 자료와 같고 심근효소는 정상이다. 가장 적절한 다음 처치는? A. 아트로핀 정맥 투여 B. 경정맥 임시 심박조율 C. 도부타민 지속 정맥 투여 D. 아데노신 정맥 투여 E. 동기화 전기율동전환 P파와 QRS파가 완전히 해리되고 목정맥에 대포파가 보이는 증상성 완전방실차단이다. 탈출리듬이 방실결절 아래에서 나오면 아트로핀 반응이 나쁘므로, 혈역학이 불안정한 증상성 완전방실차단은 즉시 임시 심박조율을 시행한다."
+  },
+  {
+   "id": "paper-2026-0144",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0144_transcatheter_edge_to_edge_repair_under_argatroban_in_iabp_s.md",
+   "snippet": "Title Transcatheter Edge to Edge Repair Under Argatroban in IABP Supported Acute Mitral Regurgitation With Suspected Heparin Induced Thrombocytopenia Authors Yoshikado Yurie, Sawada Takahiro, Shimoura Hiroyuki, Mukai Jun, Terao Yuya, Kadota",
+   "text": "Surgery scraped pubmed PubMed / JACC. Case reports Title Transcatheter Edge to Edge Repair Under Argatroban in IABP Supported Acute Mitral Regurgitation With Suspected Heparin Induced Thrombocytopenia Authors Yoshikado Yurie, Sawada Takahiro, Shimoura Hiroyuki, Mukai Jun, Terao Yuya, Kadotani Makoto, Onishi Yoshio, Hirata Ken Ichi Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.109579 · PMID: 42542981 https://pubmed.ncbi.nlm.nih.gov/42542981/ Abstract BACKGROUND: Heparin induced thrombocytopenia (HIT) is a prothrombotic immune mediated complication that complicates cardiac surgery because cardiopulmonary bypass requires systemic heparinization. We report a case of acute severe mitral regurgitation (MR) complicated by clinically suspected HIT, in which conventional surgical repair was not feasible. CASE SUMMARY: A 59 year old man presented with acute severe MR due to chordal rupture and developed cardiogenic shock requiring intra aortic balloon pump support. While awaiting surgery, his platelet count decreased from 262,000/μL to 23,000/μL. The 4Ts score was 6, and PF4/heparin antibody testing was positive, supporting clinically suspected HIT. Because cardiopulmonary bypass requiring systemic heparinization was considered prohibitively high risk, M TEER was performed under continuous argatroban infusion. Two PASCAL Ace implants were successfully deployed, reducing MR from severe to trivial without thrombotic or bleeding complications. The patient recovered rapidly with immediate IABP removal and early extubation. DISCUSSION: This case demonstrates that M TEER under argatroban anticoagulation can be a feasible alternative when conventional surgery is precluded by suspected HIT and the anticipated challenges of anticoagulation during cardiopulmonary bypass. TAKE HOME MESSAGE: M TEER under argatroban may serve as a rescue strategy for critically ill patients with acute severe MR and suspected HIT when surgical management is not feasible. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0143",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Singapore medical journal",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0143_diagnosis_and_analysis_of_plasma_phosphorylated_tau_217_in_a.md",
+   "snippet": "Title Diagnosis and analysis of plasma phosphorylated tau 217 in a memory clinic cohort: limitations of Generative Pre trained Transformer 5 Authors Shea Yat Fung, Wong Yi Ling, Wong Tsz King, Chan Pak Lam, Yam Ka Keung, Wong Felix Chi Kin,",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Singapore medical journal Title Diagnosis and analysis of plasma phosphorylated tau 217 in a memory clinic cohort: limitations of Generative Pre trained Transformer 5 Authors Shea Yat Fung, Wong Yi Ling, Wong Tsz King, Chan Pak Lam, Yam Ka Keung, Wong Felix Chi Kin, Chan King Pui Florence, Cheung Yi Wah Eva, et al. Journal / DOI Singapore medical journal · DOI: 10.4103/singaporemedj.SMJ 2025 289 · PMID: 42542938 https://pubmed.ncbi.nlm.nih.gov/42542938/ Abstract INTRODUCTION: No published studies have evaluated the application of Generative Pre trained Transformer 5 (GPT 5) in the analysis of memory clinic patient clinical notes or the interpretation of plasma phosphorylated tau (P tau) 217 values. We compared Alzheimer's disease (AD) probability estimates generated by GPT 5 before and after incorporating plasma P tau 217 with pre and posttest probabilities. METHODS: This was a retrospective study comprising 74 patients from a memory clinic in Queen Mary Hospital, Hong Kong. Final diagnoses were made by physicians, supported by medical history, physical examination, neuroimaging and amyloid positron emission tomography. Extracted clinical data included cognitive, functional and neuropsychiatric assessments. Pretest AD probabilities were derived from a published meta analysis, while posttest probabilities were calculated using a Bayesian approach. These values were compared with those estimated by GPT 5. The diagnostic performance of GPT 5 and physicians was assessed using accuracy and Kappa coefficient, with final diagnosis as reference. RESULTS: There were 40 amyloid positive (A+) and 34 amyloid negative (A ) patients. In A+ patients, Bayesian posttest probabilities were higher than GPT 5 estimates (median 97.0% vs. 80.0%, P = 0.003), while those of A patients were lower than GPT 5 estimates (median 3.0% vs. 27.5%, P < 0.001). With application of plasma P tau 217, physicians achieved higher diagnostic accuracy than GPT 5 (81.1% vs. 45.9%, P < 0.001), while GPT 5 suggested mixed aetiologies more frequently (23.0% vs. 8.1%, P = 0.04) and inappropriate anti amyloid therapy in 31% (11/36) of scenarios. CONCLUSION: Our findings show that GPT 5 has limitations in analysing clinical information of real life memory clinic patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0142",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0142_inflammatory_dermatoses_an_audit_of_histopathology_reporting.md",
+   "snippet": "Title Inflammatory Dermatoses: An Audit of Histopathology Reporting Quality and the Role of Clinicopathological Conference Authors Lall Talvinder S, Haroon Saroona Journal / DOI Cureus · DOI: 10.7759/cureus.113775 · PMID: 42542857 https://p",
+   "text": "Pathology scraped pubmed PubMed / Cureus Title Inflammatory Dermatoses: An Audit of Histopathology Reporting Quality and the Role of Clinicopathological Conference Authors Lall Talvinder S, Haroon Saroona Journal / DOI Cureus · DOI: 10.7759/cureus.113775 · PMID: 42542857 https://pubmed.ncbi.nlm.nih.gov/42542857/ Abstract BACKGROUND: Inflammatory dermatoses are a frequent indication for skin biopsy and present diagnostic challenges due to overlapping clinical and histopathological features. Accurate diagnosis relies on clinicopathological correlation, often supported by multidisciplinary team (MDT) discussion. The Royal College of Pathologists (RCPath) Tissue pathways for dermatopathology outline national standards for reporting skin biopsies in inflammatory dermatoses. This study aimed to evaluate local compliance with RCPath standards for inflammatory skin biopsy reporting among inflammatory dermatosis cases discussed at skin clinicopathological conference (CPC) meetings. METHODS: A retrospective audit was conducted of all cases discussed at monthly skin CPC meetings between December 2024 and December 2025 (n = 89). Cases with a final histological diagnosis of inflammatory dermatoses were included. Reports were assessed against RCPath derived standards, including adequacy of request form information, quality of microscopic descriptions, documentation of ancillary investigations and MDT discussion, and turnaround time. RESULTS: Of 89 skin biopsies discussed at skin CPC meetings between December 2024 and December 2025, 43/89 (48.3%) were identified as inflammatory dermatoses and included in the analysis. Microscopic descriptions met RCPath standards in 43/43 (100%) cases, and ancillary investigations were documented in 27/27 (100%) cases where performed. However, only 8/43 (18.6%) biopsy request forms contained adequate clinical information, defined as documentation of lesion morphology and duration. CPC discussion resulted in diagnostic amendment in 6/43 (14.0%) cases. Turnaround times were prolonged, with only 5/43 (11.6%) reports issued within the seven day target (mean 44.4 days; median 35 days). CONCLUSION: While histopathology report content met RCPath standards, the quality of clinical information provided and prolonged turnaround times represented key areas for service improvement. Improving the completeness of clinical information on biopsy request forms may support more accurate histopathological diagnosis. Skin CPC meetings provide an important forum for diagnostic refinement and clinician education. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0141",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0141_a_radiotherapy_related_fibrosis_gene_signature_based_risk_mo.md",
+   "snippet": "Title A radiotherapy related fibrosis gene signature based risk model for predicting prognosis and immunological features in lung adenocarcinoma Authors Qiu Yanyan, Lv Cui, Ding Shubo Journal / DOI Clinical & translational oncology : offici",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico Title A radiotherapy related fibrosis gene signature based risk model for predicting prognosis and immunological features in lung adenocarcinoma Authors Qiu Yanyan, Lv Cui, Ding Shubo Journal / DOI Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico · DOI: 10.1007/s12094 026 04525 z · PMID: 42542992 https://pubmed.ncbi.nlm.nih.gov/42542992/ Abstract BACKGROUND: Lung adenocarcinoma (LUAD) is marked by significant tumor heterogeneity and immune interactions that influence therapeutic response, while radiation induced fibrosis poses a critical clinical challenge by compromising pulmonary function and complicating post treatment surveillance. METHODS: A prognostic risk signature for lung adenocarcinoma was established by integrating transcriptomic data from The Cancer Genome Atlas (TCGA) and Gene Expression Omnibus (GEO) repositories. The methodology involved initial screening for differentially expressed radiotherapy related fibrosis genes, followed by least absolute shrinkage and selection operator (LASSO) regression coupled with multivariate Cox analysis to derive a compact risk model. Rigorous validation encompassing survival analysis, receiver operating characteristic (ROS) evaluation, and external cohort testing confirmed its predictive accuracy. Subsequent analyses delved into functional enrichment pathways, the tumor immune microenvironment, mutational characteristics, and potential chemotherapeutic responsiveness. RESULTS: Following construction and validation, a model based on six genes demonstrated high accuracy in predicting patient outcomes. Low risk patients exhibited \"hot\" immune phenotypes with favorable immunotherapy responses, while high risk patients showed elevated tumor mutational burden (TMB) and differential drug sensitivity. Three molecular subtypes were identified, with Group 3 representing a \"cold\" tumor phenotype associated with poorest prognosis. CONCLUSION: This study developed and validated a six gene fibrosis based prognostic model for LUAD. The model stratifies survival risk and correlates with immune features and drug sensitivity, but provides a preliminary framework requiring prospective clinical validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0140",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Orvosi hetilap",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0140_albuminuria_for_detection_of_chronic_kidney_disease_biomarke.md",
+   "snippet": "Title [Albuminuria for detection of chronic kidney disease: biomarker and therapeutic target] Authors Vásárhelyi Barna, Tislér András Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33622 · PMID: 42543015 https://pubmed.ncbi.nlm.nih.go",
+   "text": "Nephrology scraped pubmed PubMed / Orvosi hetilap Title [Albuminuria for detection of chronic kidney disease: biomarker and therapeutic target] Authors Vásárhelyi Barna, Tislér András Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33622 · PMID: 42543015 https://pubmed.ncbi.nlm.nih.gov/42543015/ Abstract Albuminuria is one of the most important biomarkers of chronic kidney disease and also a target that can be influenced by treatment. The amount of albumin excreted in the urine is an independent predictor of declining kidney function, cardiovascular events, and all cause mortality. It is most easily determined based on the albumin to creatinine ratio (ACR) measured in the first morning urine sample; in the vast majority of cases, 24 hour urine collection is not required. The pathophysiology of albuminuria centers on damage to the glomerular filtration barrier particularly podocytes hemodynamic hyperfiltration, inflammation associated with tubular protein reabsorption, and activation of the renin angiotensin aldosterone system (RAAS). Modern four pillar pharmacotherapy RAS inhibitors (ACE inhibitors/ARBs), SGLT2 inhibitors, non steroidal mineralocorticoid receptor antagonists (finerenone), and GLP1 receptor agonists in type 2 diabetes acts on these processes through complementary mechanisms. When tailored to the degree of albuminuria and eGFR, this treatment significantly slows the progression of chronic kidney disease and reduces cardiovascular risk. Measuring and monitoring albuminuria must therefore be an essential part of daily clinical practice. Orv Hetil. 2026; 167(31): 1231 1237. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0139",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Current microbiology",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0139_broad_spectrum_antibacterial_electrospun_pcl_silver_fibers_c.md",
+   "snippet": "Title Broad Spectrum Antibacterial Electrospun PCL Silver Fibers Coupled with Chromogenic Hydrogel for Infection Sensing Authors Mondal Partha Sarathi, Guha Baitali, Natarajan Vaishnavi, Ganesan Ramakrishnan, Ray Dutta Jayati Journal / DOI ",
+   "text": "Infectious Disease scraped pubmed PubMed / Current microbiology Title Broad Spectrum Antibacterial Electrospun PCL Silver Fibers Coupled with Chromogenic Hydrogel for Infection Sensing Authors Mondal Partha Sarathi, Guha Baitali, Natarajan Vaishnavi, Ganesan Ramakrishnan, Ray Dutta Jayati Journal / DOI Current microbiology · DOI: 10.1007/s00284 026 05090 y · PMID: 42543002 https://pubmed.ncbi.nlm.nih.gov/42543002/ Abstract Wound healing remains a significant clinical challenge due to susceptibility to bacterial infections, excessive oxidative stress and delayed cellular regeneration. The extensive and often indiscriminate use of antibiotics has further intensified the emergence of antimicrobial resistance. In this study, a multifunctional smart wound dressing is developed by integrating a chromogenic hydrogel with electrospun poly(ε caprolactone) (PCL) fibers functionalized with quaternary ammonium moieties anchoring ionic silver. The PCL fibers functionalized with ionic silver provide antibiotic free antibacterial properties, while the chromogenic hydrogel allows for real time colorimetric detection of metabolically active microorganisms. The colorimetric assessment of the dressing in both in vitro and ex vivo environments has shown a distinct, time dependent reaction to metabolically active bacterial populations. It has demonstrated outstanding cellular biocompatibility, increased cell viability in Vero cells, a notable decrease in oxidative stress, and enhanced cell migration in an in vitro scratch assay. This multifunctional dressing showcases a promising platform for advanced wound management applications by integrating antibacterial effects, real time infection detection, and pro regenerative cellular responses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0138",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Apoptosis : an international journal on programmed cell death",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0138_atp6ap2_ameliorates_inflammation_and_pyroptosis_in_heart_fai.md",
+   "snippet": "Title ATP6AP2 ameliorates inflammation and pyroptosis in heart failure by promoting lysosome dependent STING degradation Authors Zhao Xuan, Zhang Hui, Ding Xinyue, Wu Huimin, Li Min, Yin Nengpin, Gao Junqing, Xu Youlong, et al. Journal / DO",
+   "text": "Cardiology scraped pubmed PubMed / Apoptosis : an international journal on programmed cell death Title ATP6AP2 ameliorates inflammation and pyroptosis in heart failure by promoting lysosome dependent STING degradation Authors Zhao Xuan, Zhang Hui, Ding Xinyue, Wu Huimin, Li Min, Yin Nengpin, Gao Junqing, Xu Youlong, et al. Journal / DOI Apoptosis : an international journal on programmed cell death · DOI: 10.1007/s10495 026 02415 x · PMID: 42542988 https://pubmed.ncbi.nlm.nih.gov/42542988/ Abstract Inflammatory activation is involved in the pathogenesis of heart failure (HF). ATPase H+ Transporting Accessory Protein 2 (ATP6AP2) is an auxiliary subunit of the V ATPase, and its role in HF is not fully understood. To assess the role and regulatory mechanisms and therapeutic potential of ATP6AP2 in HF, we used a cardiac specific ATP6AP2 conditional knockout (CKO) mouse model and observed spontaneous cardiac dysfunction, myocardial fibrosis and cardiomyocyte apoptosis in mice. Further studies showed that ATP6AP2 promoted stimulator of interferon genes (STING) degradation through the lysosome dependent pathway. ATP6AP2 knockdown significantly upregulated STING protein levels, activated the STING TBK1 IRF3 signaling axis, and promoted pro inflammatory factor expression and cardiomyocyte apoptosis. In mice with myocardial infarction (MI), myocardial overexpression of ATP6AP2 or treatment with H 151 inhibited the activation of the STING signaling pathway, ameliorated cardiomyocyte apoptosis and inflammatory responses, thereby improving cardiac function. In addition, in macrophages treated with conditioned medium from hypoxia exposed cardiomyocytes, the levels of pyroptosis related proteins were markedly increased, whereas ATP6AP2 overexpression or STING inhibition reduced pyroptosis. ATP6AP2 likewise attenuates inflammation and pyroptosis caused by hypoxia in cardiac organoids. In conclusion, activating ATP6AP2 could serve as a promising therapeutic option in HF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "ailab-2026-0046",
    "type": "ailab",
