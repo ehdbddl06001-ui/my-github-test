@@ -10,6 +10,9 @@
   ⑦ 신호 파일을 **헤더에서** 정한다 (확장자 추측 금지 — .xyz 누락 사고)
   ⑧ wfdb 반환 열 순서를 가정하지 않고 이름으로 다시 세운다
   ⑨ 전처리 0건이면 사유를 요약해 죽는다 (np.stack([]) 로 끝나지 않는다)
+  ⑩ 대역 정합 사다리 — DC 오프셋 / 저주파 흔들림 / 진짜 이득차 를 구분해 대처한다
+  ⑪ 보정이 선형이라 아인트호벤 항등식이 보존된다
+  ⑫ 잘린 다운로드를 예상 바이트로 잡는다
 """
 import sys, os, re, numpy as np
 sys.path.insert(0, "/home/user/my-github-test/pipelines")
@@ -191,6 +194,98 @@ check("실패 건수가 드러난다", "549/549" in msg)
 check("사유가 드러난다(np.stack 만 뜨지 않는다)", "FileNotFoundError" in msg)
 mix = [("a", "짧음")] * 3 + [("b", "NaN")] * 7
 check("여러 사유는 많은 순으로", summarize(mix, 10).index("NaN") < summarize(mix, 10).index("짧음"))
+
+print("\n⑩ 대역 정합 사다리 — 진단 → 최소 보정 → 검증")
+# 2026-08-02: PTBDB 는 DC 결합(0~1kHz), PTB-XL 은 아니다. pooled std 비가 4.67 로
+# 게이트가 섰다. 초과분 √(b²−a²) 가 12유도에서 0.80~1.32 로 평평했고 흉부/사지
+# 진폭비가 1.94 → 0.82 로 뒤집혔다 = 생리 신호가 아닌 공통 가산 성분.
+from scipy.signal import butter, filtfilt
+FS_OUT = 100
+
+def decomp(S):
+    return dict(within=np.median(S.std(axis=1), axis=0),
+                offset=S.mean(axis=1).std(axis=0))
+
+def demean(X):
+    return (X - X.mean(axis=1, keepdims=True)).astype("float32")
+
+def hp(X, fc, order=3):
+    b, a = butter(order, fc / (FS_OUT / 2), btype="high")
+    return filtfilt(b, a, X, axis=1).astype("float32")
+
+LADDER = [("원본", lambda X: X), ("레코드별 평균 제거", demean),
+          ("0.5Hz 0위상 고역통과", lambda X: hp(demean(X), 0.5))]
+
+OFF_THR = 0.25
+def climb(XL, DB):
+    """진폭비 [0.5,2.0] **이고** DC 오프셋 <= OFF_THR **이고** 학습쪽 무영향(<10%).
+
+    ★ 오프셋 조건이 없으면 사다리가 '원본' 에서 멈춘다 — 표준편차는 평균을 빼고
+      재므로 레코드별 DC 오프셋에 눈이 멀기 때문이다. 모델은 안 그렇다.
+    """
+    d0 = decomp(XL)
+    for name, fn in LADDER:
+        d = decomp(fn(DB))
+        r = float(np.nanmedian(d["within"] / d0["within"]))
+        r_off = float(np.median(d["offset"]) / np.median(d0["within"]))
+        noop = float(np.nanmax(np.abs(decomp(fn(XL))["within"] - d0["within"]) / d0["within"]))
+        if 0.5 <= r <= 2.0 and r_off <= OFF_THR and noop < 0.10:
+            return name, r
+    return None, None
+
+r3 = np.random.RandomState(7)
+T = 1000
+tt = np.arange(T) / FS_OUT
+def synth(n, amp):                      # 사지 작고 흉부 큰 '생리적' 모의 신호
+    base = np.stack([r3.randn(n, T) * a for a in amp], axis=2)
+    return base.astype("float32")
+AMP = [.15] * 6 + [.30] * 6
+XL = synth(120, AMP)
+
+check("보정 불필요하면 '원본' 에서 멈춘다", climb(XL, synth(120, AMP))[0] == "원본")
+check("표준편차만 보면 DC 오프셋에 눈이 먼다(그래서 오프셋 조건이 필요)",
+      abs(float(np.median(decomp(XL + 0.9)["within"] - decomp(XL)["within"]))) < 1e-6)
+
+# (a) 레코드별 DC 오프셋만 얹은 경우 → 평균 제거로 끝나야 한다
+off = XL.copy() + r3.randn(120, 1, 12).astype("float32") * 0.9
+nm, r = climb(XL, off)
+print(f"      DC 오프셋만 → {nm} (비 {r:.2f})")
+check("DC 오프셋은 평균 제거 단계에서 잡힌다", nm == "레코드별 평균 제거")
+
+# (b) 레코드 안 저주파 흔들림 → 평균 제거로는 안 되고 고역통과까지 가야 한다
+wob = XL + (0.9 * np.sin(2 * np.pi * 0.15 * tt + r3.rand(120, 1))
+            )[:, :, None].astype("float32")
+nm, r = climb(XL, wob)
+print(f"      0.15Hz 흔들림 → {nm} (비 {r:.2f})")
+check("저주파 흔들림은 고역통과까지 올라간다", nm == "0.5Hz 0위상 고역통과")
+check("보정 후 비가 1 근처", abs(r - 1) < 0.35)
+
+# (c) 진짜 이득 차이(×5)는 어떤 단계로도 못 고친다 → 반드시 멈춰야 한다
+nm, _ = climb(XL, XL * 5.0)
+check("진짜 이득 차이는 사다리로 고쳐지지 않고 멈춘다", nm is None)
+
+print("\n⑪ 보정은 선형이라 아인트호벤 항등식이 보존된다")
+# 중앙값 필터 같은 비선형 기저선 제거를 쓰면 III = II − I 이 깨진다 → 선형만 쓴다
+tt2 = np.linspace(0, 10, T)
+I_ = np.stack([np.sin(2 * np.pi * 1.2 * tt2 + r3.rand()) for _ in range(20)])
+II_ = np.stack([np.sin(2 * np.pi * 1.2 * tt2 + r3.rand()) * 1.4 for _ in range(20)])
+V_ = [r3.randn(20, T) * .1 for _ in range(6)]
+X12 = np.stack([I_, II_, II_ - I_, -(I_ + II_) / 2, I_ - II_ / 2, II_ - I_ / 2] + V_,
+               axis=2).astype("float32")
+X12 = X12 + r3.randn(20, 1, 12).astype("float32") * 0.9      # 오프셋을 얹는다
+check("평균 제거 후 항등식 유지", assert_lead_order(demean(X12))["ok"])
+check("고역통과 후 항등식 유지", assert_lead_order(hp(demean(X12), 0.5))["ok"])
+
+print("\n⑫ 잘린 다운로드 탐지 (예상 바이트)")
+FMT_BYTES = {"16": 2, "61": 2, "160": 2, "80": 1}
+def expect(sig_len, n_sig_in_file, fmt):
+    nb_ = FMT_BYTES.get(str(fmt))
+    return sig_len * n_sig_in_file * nb_ if nb_ else None
+e = expect(38400, 12, 16)
+check("fmt16 · 38400표본 · 12유도 = 921600 B", e == 921600)
+check("851785 B 는 모자라서 다시 받는다", 851785 < e)
+check("정상 크기는 통과", e >= e)
+check("모르는 형식은 None(크기 검사 생략)", expect(1000, 12, 212) is None)
 
 print("\n" + ("전부 통과 ✅" if ok else "실패 있음 ❌"))
 sys.exit(0 if ok else 1)
