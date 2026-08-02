@@ -7,8 +7,11 @@
   ④ 환자 단위 집계(1인 다레코드)
   ⑤ 베이즈 PPV — 특이도가 유지되면 예측=관측, 무너지면 관측<예측
   ⑥ P-3 방향(진구성 − 급성)
+  ⑦ 신호 파일을 **헤더에서** 정한다 (확장자 추측 금지 — .xyz 누락 사고)
+  ⑧ wfdb 반환 열 순서를 가정하지 않고 이름으로 다시 세운다
+  ⑨ 전처리 0건이면 사유를 요약해 죽는다 (np.stack([]) 로 끝나지 않는다)
 """
-import sys, re, numpy as np
+import sys, os, re, numpy as np
 sys.path.insert(0, "/home/user/my-github-test/pipelines")
 from ecg_preflight import decide, assert_lead_order
 from scipy.signal import resample_poly
@@ -126,6 +129,68 @@ def t_ci(v):
     return m - h, m + h
 check("급성이 조금만 나쁘면 지지", decide(*t_ci([.02, .03, .01]), 0.10, "<") is True)
 check("급성이 크게 나쁘면 기각", decide(*t_ci([.25, .28, .22]), 0.10, "<") is False)
+
+print("\n⑦ 신호 파일 결정 — 확장자를 추측하지 않는다")
+# 2026-08-02 사고 재발 방지. PTBDB 한 레코드는 12유도와 Frank 3유도(vx·vy·vz)가
+# **다른 파일**에 있고 헤더가 둘 다 가리킨다. `.dat` 만 받으면 rdsamp 가 전 레코드
+# 실패 → X 가 비어 np.stack([]) 이 터졌다.
+ORDER = ["i", "ii", "iii", "avr", "avl", "avf", "v1", "v2", "v3", "v4", "v5", "v6"]
+
+class FakeHdr:
+    def __init__(self, sig_name, file_name):
+        self.sig_name, self.file_name = sig_name, file_name
+
+PTBDB_HDR = FakeHdr(
+    ORDER + ["vx", "vy", "vz"],
+    ["s0010_re.dat"] * 12 + ["s0010_re.xyz"] * 3)
+
+def rec_files(rec, hdr, all_files=False):
+    names = [s.lower() for s in hdr.sig_name]
+    miss = [nm for nm in ORDER if nm not in names]
+    if miss:
+        raise RuntimeError(f"{rec}: 12유도 중 {miss} 가 헤더에 없다")
+    want = sorted(set(hdr.file_name) if all_files
+                  else {hdr.file_name[names.index(nm)] for nm in ORDER})
+    d = os.path.dirname(rec)
+    return [(os.path.join(d, f) if d else f) for f in want]
+
+r12 = rec_files("patient001/s0010_re", PTBDB_HDR)
+rall = rec_files("patient001/s0010_re", PTBDB_HDR, all_files=True)
+print(f"      12유도분 {r12}")
+print(f"      헤더 전체 {rall}")
+check("12유도분은 .dat 하나", r12 == ["patient001/s0010_re.dat"])
+check("헤더 전체는 .xyz 도 포함(카나리아 2차 시도용)",
+      rall == ["patient001/s0010_re.dat", "patient001/s0010_re.xyz"])
+check("디렉터리가 붙는다(중첩 경로)", all(x.startswith("patient001/") for x in rall))
+# 12유도가 두 파일에 흩어진 가정 — 그래도 헤더가 시키는 대로 둘 다 받아야 한다
+SPLIT = FakeHdr(ORDER + ["vx"], ["a.dat"] * 6 + ["b.dat"] * 6 + ["c.xyz"])
+check("12유도가 두 파일에 나뉘면 둘 다 집는다",
+      rec_files("p/s", SPLIT) == ["p/a.dat", "p/b.dat"])
+try:
+    rec_files("p/s", FakeHdr(["i", "ii"], ["a.dat"] * 2)); check("유도 누락은 예외", False)
+except RuntimeError:
+    check("12유도가 헤더에 없으면 예외", True)
+
+print("\n⑧ 반환 열 순서를 가정하지 않는다")
+# wfdb 가 channels 를 어떤 순서로 돌려주든 **이름으로** 다시 세운다
+got = ["v1", "i", "avf", "ii", "iii", "avr", "avl", "v2", "v3", "v4", "v5", "v6"]
+sig = np.tile(np.arange(len(got), dtype="float32"), (5, 1))   # 열 j = 값 j
+out = sig[:, [got.index(nm) for nm in ORDER]]
+check("셔플된 반환을 ORDER 로 되돌린다",
+      [got[int(v)] for v in out[0]] == ORDER)
+
+print("\n⑨ 0건이면 사유를 요약해 죽는다")
+from collections import Counter
+def summarize(bad, n_rec):
+    cnt = Counter(w for _, w in bad)
+    return (f"전처리 결과가 0건이다 (실패 {len(bad)}/{n_rec}건). 사유 상위:\n"
+            + "\n".join(f"    {n:>5}건  {w}" for w, n in cnt.most_common(8)))
+msg = summarize([(f"r{i}", "FileNotFoundError: s0010_re.xyz") for i in range(549)], 549)
+print("      " + msg.replace("\n", "\n      "))
+check("실패 건수가 드러난다", "549/549" in msg)
+check("사유가 드러난다(np.stack 만 뜨지 않는다)", "FileNotFoundError" in msg)
+mix = [("a", "짧음")] * 3 + [("b", "NaN")] * 7
+check("여러 사유는 많은 순으로", summarize(mix, 10).index("NaN") < summarize(mix, 10).index("짧음"))
 
 print("\n" + ("전부 통과 ✅" if ok else "실패 있음 ❌"))
 sys.exit(0 if ok else 1)
