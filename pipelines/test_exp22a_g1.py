@@ -18,7 +18,7 @@ DS2 는 한 레코드(#232)가 S 의 약 3/4 를 갖고 있어서, 그게 빠지
 짰다가 이 픽스처에 걸렸다).
 
 ⚠️ 실제 캐시는 **이미 3분할**돼 있었다: `yp/gp`(학습) · `yv/gv`(검증) · `yt/gt`(테스트).
-`y`·`pid` 라는 이름은 없다 — 이름을 가정했다가 "라벨 없음" 으로 오판했다. 그래서 셀은
+`y`·`pid` 라는 이름은 없고 **그룹은 문자열**(`<U9`, 'mitdb_100' 꼴)이다 — 이름을 가정했다가 "라벨 없음" 으로 오판했다. 그래서 셀은
 `y*` 1차원 배열을 전부 후보로 잡고 **길이로** 테스트 분할을 고른다. 픽스처도 같은 레이아웃.
 
 07-17 배열은 4클래스(N/S/V/**F**)다 — `proba` 가 4열이고 `train_prior` 도 4개다.
@@ -112,11 +112,15 @@ def build(root, mpid, my, mode, rng, with_labels=True, drop_pkl=False,
         ctr0 = ~np.isin(mpid, _DS2)
         np.savez(os.path.join(cache, "data_mit.npz"),
                  Xp=np.zeros((int(ctr0.sum()), 1), "float32"),
-                 yp=my[ctr0].astype(int), gp=mpid[ctr0],
+                 yp=my[ctr0].astype(int),
+                 gp=np.array([f"mitdb_{q}" for q in mpid[ctr0]], dtype="<U9"),
                  Xv=np.zeros((3, 1), "float32"),
-                 yv=np.zeros(3, int), gv=np.array([101, 101, 106]),
+                 yv=np.zeros(3, int),
+                 gv=np.array(["mitdb_101", "mitdb_101", "mitdb_106"], dtype="<U9"),
                  Xt=np.zeros((len(zy), 1), "float32"), yt=zy,
-                 gt=(np.searchsorted(np.unique(zp), zp) if idx_groups else zp))
+                 gt=(np.array([f"idx{i}" for i in np.searchsorted(np.unique(zp), zp)],
+                              dtype="<U9") if idx_groups
+                     else np.array([f"mitdb_{q}" for q in zp], dtype="<U9")))
     nsv = [int((zy == k).sum()) for k in range(3)] if real_nsv else 0
     if trap_nsv and real_nsv:
         nsv[0] += 1; nsv[1] -= 1                       # 합·길이 유지, **구성만** 어긋남
