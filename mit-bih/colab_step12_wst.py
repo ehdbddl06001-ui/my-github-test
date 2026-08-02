@@ -32,6 +32,10 @@ def compute_wst_features(beats,J=6,Q=8,chunk=2048,log=True):
     try: importlib.import_module("kymatio")
     except ModuleNotFoundError:
         print("  kymatio 없음 → 자동설치(Colab 세션 초기화 대응)"); subprocess.run([sys.executable,"-m","pip","install","-q","kymatio"],check=True)
+        importlib.invalidate_caches()   # ★ 2026-08-02 추가. 이게 없으면 설치해도 아래 import 가
+                                        #   실패한다 — 같은 세션에서 한 번 실패한 import 는 파이썬이
+                                        #   음성 결과를 캐시하기 때문. colab_bootstrap.py::_ensure 는
+                                        #   원래 이걸 부르는데 여기만 빠져 있었다(실험22-A 에서 발견).
     import torch
     from kymatio.torch import Scattering1D
     dev="cuda" if torch.cuda.is_available() else "cpu"
