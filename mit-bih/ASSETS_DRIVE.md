@@ -124,3 +124,20 @@ PR-AUC 는 기저율에 붙어 있어 **코호트 간 직접 비교가 불가능
 4. ⚠️ **SVDB 홀드아웃은 반드시 레코드(환자) 단위 분할.** 아니면 within 기준선이
    부풀려져 낙폭이 **과대추정**된다. → `data_mitsvdb.npz` 에 **레코드 ID 배열이
    있는지 먼저 확인**하고, 없으면 여기서 중단한다(만들어내지 않는다).
+
+
+---
+
+## 2026-08-02 · 실험22-A 자산 (업로드 완료)
+
+| 파일 | Drive 위치 | 크기 | 상태 |
+|---|---|---:|---|
+| `colab_crossdb.py` | `MyDrive/mitbih/` (`1dZO4EB…`) | 11,573 B | 기존 · **repo 사본과 바이트 일치 확인** |
+| **`colab_crossdb_split.py`** | `MyDrive/mitbih/` (`1j6iHxV…`) | **7,735 B** | **신규 업로드** · repo 와 바이트 일치 |
+
+폴더: `mitbih` = `1AVfqzGajzPN46dUWkiiLtBNPLpatyurW`
+
+**원본을 덮어쓰지 않고 파일을 나눈 이유**: Drive 사본을 덮어쓰면 되돌릴 수 없고,
+같은 이름으로 새로 올리면 **중복 파일**이 생겨 `exec` 가 어느 쪽을 읽을지 불확실해진다.
+`colab_crossdb_split.py` 는 `colab_crossdb.py` 의 module-level 심볼에 의존하므로
+**반드시 그 다음에** `exec` 한다(노트북 CELL 4 가 순서와 심볼 존재를 검사한다).
