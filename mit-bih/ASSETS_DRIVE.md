@@ -134,8 +134,24 @@ PR-AUC 는 기저율에 붙어 있어 **코호트 간 직접 비교가 불가능
 |---|---|---:|---|
 | `colab_crossdb.py` | `MyDrive/mitbih/` (`1dZO4EB…`) | 11,573 B | 기존 · **repo 사본과 바이트 일치 확인** |
 | **`colab_crossdb_split.py`** | `MyDrive/mitbih/` (`1j6iHxV…`) | **7,735 B** | **신규 업로드** · repo 와 바이트 일치 |
+| **`colab_step12_wst.py`** | `MyDrive/mitbih/` (`1iq_qqB…`) | **4,522 B** | **교체 업로드**(md5 `4a00dc53938f0aa4b64bf5dd1826b7a7`) · repo 와 바이트 일치 |
+| `colab_step12_wst_OLD.py` | `MyDrive/mitbih/` (`11HvkGV…`) | 3,772 B | 구버전 보존용 · **`exec` 하지 말 것** |
 
 폴더: `mitbih` = `1AVfqzGajzPN46dUWkiiLtBNPLpatyurW`
+
+### `colab_step12_wst.py` 를 왜 교체했나 (2026-08-02)
+
+실험22-A CELL 4 가 `ModuleNotFoundError: No module named 'kymatio'` 로 멈췄다.
+이 파일은 kymatio 가 없으면 **자동으로 pip install 을 하는데**, 그 다음
+`importlib.invalidate_caches()` 를 부르지 않았다. 파이썬은 **한 번 실패한 import 의
+음성 결과를 캐시**하므로, 설치에 성공해도 바로 뒤의 `from kymatio.torch import
+Scattering1D` 가 같은 세션에서 계속 실패한다. `colab_bootstrap.py::_ensure` 는 원래
+이 한 줄을 부르는데 여기만 빠져 있었다.
+
+Drive MCP 에는 **삭제·갱신 도구가 없고 `create_file` 은 중복을 만든다.** 그래서
+사용자가 구파일을 `colab_step12_wst_OLD.py` 로 **먼저 rename** 한 뒤 같은 이름으로
+새로 올렸다. → `mitbih` 폴더에 `colab_step12_wst.py` 는 **정확히 하나**다(확인함).
+노트북은 CELL 1 에서 `!pip -q install kymatio` 도 미리 돌리므로 **이중 방어**다.
 
 **원본을 덮어쓰지 않고 파일을 나눈 이유**: Drive 사본을 덮어쓰면 되돌릴 수 없고,
 같은 이름으로 새로 올리면 **중복 파일**이 생겨 `exec` 가 어느 쪽을 읽을지 불확실해진다.
