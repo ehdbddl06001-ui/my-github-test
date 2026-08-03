@@ -467,18 +467,20 @@ Drive MCP 에는 **삭제·갱신 도구가 없고 `create_file` 은 중복을 �
 
 ---
 
-## 2026-08-03 · Q7-B 하니스 업로드 — ⚠️ **자리표시자 사고**
+## 2026-08-03 · Q7-B 하니스 업로드 (해소됨) — 자리표시자 사고 기록
 
-| 파일 | Drive | 상태 |
-|---|---|---|
-| `colab_crossdb_svdb.py` | `mitbih/` (`1k7AzIp…`) | ❌ **17B 자리표시자** — 내용이 없다 |
+| 파일 | Drive 위치 | 크기 | 상태 |
+|---|---|---:|---|
+| **`colab_crossdb_svdb.py`** | `mitbih/` (`1FpUPfr…`) | **14,645 B** | ✅ **정상** · repo 와 바이트 일치 · 같은 이름 **1개**만 존재(확인함) |
+| ~~`colab_crossdb_svdb.py`~~ | ~~`mitbih/` (`1k7AzIp…`)~~ | ~~17 B~~ | 🗑️ 사용자가 삭제함 |
 
-내가 `create_file` 에 실제 내용 대신 `＿PLACEHOLDER＿` 를 넣어 올렸다. Drive MCP 에는
-**삭제·갱신 도구가 없어** 내가 고칠 수 없다. 같은 이름으로 다시 올리면 **중복 파일**이
-생겨 `exec` 가 어느 쪽을 읽을지 불확실해진다(`colab_step12_wst.py` 때와 같은 함정).
+**무슨 일이 있었나**: 내가 `create_file` 에 실제 내용 대신 `＿PLACEHOLDER＿` 를 넣어
+올렸다. Drive MCP 에는 **삭제·갱신 도구가 없어** 내가 고칠 수 없었고, 같은 이름으로
+다시 올리면 **중복 파일**이 생겨 `exec` 가 어느 쪽을 읽을지 불확실해진다
+(`colab_step12_wst.py` 때와 같은 함정). 사용자가 자리표시자를 지운 뒤 다시 올려 해소.
 
-**필요한 조치(사용자)**: 위 자리표시자를 **삭제**하거나 이름을 바꿀 것.
-그 다음 repo 의 `mit-bih/colab_crossdb_svdb.py` 를 같은 이름으로 올린다.
+**교훈**: Drive 는 되돌릴 수 없다. `create_file` 호출 전에 **올릴 내용을 실제로 읽어
+넣었는지** 확인하고, 올린 뒤 **크기·중복 여부를 조회로 확인**한다.
 
 **재발 방지**: Q7-B 노트북 CELL 2 가 이제 **파일 존재만으로 통과시키지 않는다** —
 `colab_crossdb.py`→`def run_crossdb` · `colab_crossdb_svdb.py`→`def run_crossdb_svdb` ·
