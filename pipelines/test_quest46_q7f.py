@@ -21,6 +21,9 @@
   ⑧ 문턱이 CELL 1 상수이고 관문 셀에서 다시 안 고르는가
   ⑨ 결론 문장이 **관문 조합으로만** 만들어지는가 · 갈리면 갈렸다고 쓰는가(R18)
   ⑩ 그림 라벨이 ASCII 인가
+  ⑪-0 ★ 진단 셀(F-E)이 **관문을 재판정하지 않고**, 자산(`rhythm`·`sym`)이 없으면
+     **추측하지 않고 생략**하는가. 그리고 이 퀘스트가 못 다루는 리듬(AFIB·AFL·SVT·`J`)을
+     **이름으로** 짚는가 — 못 다룬다는 사실이 안 보이는 게 제일 나쁘다
 
 동적 검사 — 관문 셀을 **합성 코호트로 실제 실행**한다:
   ⑪ **null** (P 차이 없음 · RR 차이 없음) — 아무것도 안 나와야 한다
@@ -51,7 +54,8 @@ assert len(SRC_SET) == 1
 SRC_SET = "".join(SRC_SET[0]["source"])
 SRC_A, SRC_B = cell("【F-A】"), cell("【F-B】")
 SRC_C, SRC_D = cell("【F-C】"), cell("【F-D】")
-SRC_FIG = [c for c in CODE if "".join(c["source"]).startswith("# CELL 7")]
+SRC_E = cell("【F-E】")
+SRC_FIG = [c for c in CODE if "".join(c["source"]).startswith("# CELL 8")]
 assert len(SRC_FIG) == 1
 SRC_FIG = "".join(SRC_FIG[0]["source"])
 ALL_SRC = "".join("".join(c["source"]) for c in CODE)
@@ -163,6 +167,24 @@ bad = [t for t in re.findall(r'set_title\(f?"([^"]*)"', SRC_FIG)
 assert not bad, f"❌ 그림 라벨에 한글이 있다: {bad}"
 assert "한글이 없어" in SRC_FIG, "❌ 폰트 한계가 코드에 명시돼 있지 않다"
 print("  ✅ ⑩ 그림 라벨이 ASCII 다")
+
+# ── ⑪-0 진단 셀
+assert "관문 아님" in SRC_E and "관문을 다시 매기지 않는다" in SRC_E, \
+    "❌ 진단 셀이 관문과 구분돼 있지 않다"
+assert not re.search(r'^\s*g_\(', SRC_E, re.M) and not re.search(r'VERD\["F\d"\]\s*=', SRC_E), \
+    "❌ 진단 셀이 관문을 매긴다"
+for tok in ('"rhythm"', '"rhythm_names"', '"sym"'):
+    assert tok in SRC_E, f"❌ 진단 셀이 {tok} 를 읽지 않는다 (npz 에 있는데 지금까지 안 썼다)"
+assert "생략" in SRC_E and "추측하지 않" in SRC_E or "맞춰 넣지 않는다" in SRC_E, \
+    "❌ 자산이 없을 때 추측하지 않고 생략한다는 규약이 없다 (R16)"
+for rhy in ("AFIB", "AFL", "SVT"):
+    assert rhy in SRC_E or rhy in ALL_SRC, f"❌ {rhy} 를 이름으로 짚지 않는다"
+assert "역행성 P" in SRC_E and "F3 의 음성 대조" in SRC_E, \
+    "❌ `J`(접합부) 때문에 F3 대조가 깨진다는 경고가 없다"
+assert "고립" in SRC_E and "max_run" in SRC_E, "❌ 런 구조(고립 S · 최장 런) 진단이 없다"
+assert "AAMI **N 비율" in SRC_E, "❌ AF 구간 비트가 AAMI 로 무엇인지 실측하지 않는다"
+print("  ✅ ⑪-0 진단 셀(F-E)은 rhythm·sym 을 읽고, 못 다루는 리듬을 이름으로 짚으며,")
+print("        자산이 없으면 추측 없이 생략하고, 관문을 재판정하지 않는다")
 
 
 # ═══════════════════════════════════════════════════════════════════════
