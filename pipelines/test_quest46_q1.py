@@ -3,8 +3,10 @@
 노트북의 CELL 2~6 을 직접 읽어 돌린다(사본이 아니라 실물).
 
 검정하는 것:
-  ① Hanley–McNeil SE 가 **보수적**인가 — 부트스트랩 SE 이상이면서 2배 이내.
+  ① Hanley–McNeil SE 가 **보수적**인가 — 부트스트랩 SE 이상.
      헐거우면(비 < 1) GMIN 하한이 실제보다 낮게 잡혀 #213 같은 사고가 다시 난다.
+     ★ 1차 실행에서 비가 2.76 으로 **과도하게 보수적**이라 판정 근거에서 뺐다.
+       지금은 부트스트랩 SE(CELL 5)가 판정하고 Hanley 는 스윕 스크리닝만 한다.
   ② GMIN 스윕이 **단조**인가 — GMIN↑ → 채점 환자↓ · 커버리지↓ · 계단↓ · SE↓
   ③ 선택 규칙이 **최대 SE 조건**을 지키는가. 중앙값만 보면 SE 0.11 짜리가 섞인다
      (실험22-A #213 이 정확히 그 경우였다 → R11-b)
@@ -141,6 +143,9 @@ print(f">>> {va}")
 assert va["Q1-1"] == "✅ 지지", f"A: 채점 환자가 확보돼야 한다 — {va}"
 assert va["Q1-4"] == "✅ 지지", f"A: 지배 지분이 낮아야 한다 — {va}"
 assert va["Q1-5"] == "✅ 지지", "A: INCART 가 DS2 보다 환자가 많아야 한다"
+# ★ Q1-5 는 **선택 성공 여부와 무관**해야 한다. 1차에서 선택이 없다고 '0명 vs 0명' 으로
+#   기각했는데, 코호트 비교는 GMIN 별 환자 수만 있으면 성립한다.
+assert a["CONFIG"]["result"]["cohort_compare"], "A: 코호트 비교표가 있어야 한다"
 
 # ── 스윕 단조성 (②)
 #   ⚠️ `se_med` 는 **단조가 아니다** — GMIN 이 오르면 채점 집합이 바뀌는데, AUROC 가
@@ -156,7 +161,13 @@ for key, rows in a["SWEEP"].items():
     assert se[0] >= se[-1] - 1e-9, f"{key}: SE 가 전체적으로는 줄어야 한다 {se}"
 print("\n✅ ② 스윕 — 환자·커버리지·계단은 단조감소 · SE 는 전체 추세만(집합이 바뀐다)")
 
-# ── 선택 규칙이 최대 SE 를 지키는가 (③)
+# ── 선택 규칙이 최대 SE 를 지키는가 (③) — 판정 근거인 **부트 선택**을 본다
+for key, sel in a["PICK_B"].items():
+    if sel:
+        assert sel["se_max_boot"] <= 0.05 * 2.0 + 1e-9, \
+            f"{key}: 부트 최대 SE {sel['se_max_boot']:.4f} 초과인데 선택됐다"
+        assert sel["se_med_boot"] <= 0.05 + 1e-9, f"{key}: 부트 중앙 SE 초과"
+        assert sel["n_rec"] >= 20, f"{key}: 환자 수 미달"
 for key, sel in a["PICK"].items():
     if sel:
         assert sel["se_max"] <= 0.05 * 2.0 + 1e-9, \
@@ -167,12 +178,18 @@ print("✅ ③ 선택 규칙이 중앙·최대 SE 와 환자 수를 모두 지�
 
 # ── Hanley 가 보수적인가 (①)
 for key, ratio in a["RATIO"].items():
-    if np.isfinite(ratio):
+    if ratio is not None and np.isfinite(ratio):
         # 하한이 본질이다 — Hanley 가 실제보다 **작으면** GMIN 이 헐거워져 위험하다.
         # 상한은 '과도한 보수성 = 환자를 불필요하게 잃음' 이라 경고 대상이지 실패는 아니다.
         assert ratio >= 0.90, f"{key}: Hanley/부트 = {ratio:.2f} — 보수적이지 않다(위험)"
         if ratio > 2.0:
             print(f"  ⚠️ {key}: 비 {ratio:.2f} — 과도하게 보수적(AUROC 천장 효과)")
+# ★ 순환 의존 회귀 방지: Hanley 선택이 실패해도 **부트는 반드시 계산돼야 한다**.
+#   1차 설계는 CELL 5 가 CELL 4 의 선택에 의존해, 선택이 없으면 검증도 못 돌았다.
+for key in a["SWEEP"]:
+    assert key in a["BOOT"] and a["BOOT"][key], \
+        f"{key}: Hanley 선택 여부와 무관하게 부트 SE 를 재야 한다(순환 의존 회귀)"
+print("✅ ⑤ Hanley 선택이 없어도 부트 SE 는 계산된다 — 순환 의존 없음")
 print(f"✅ ① Hanley 가 부트스트랩 이상: "
       f"{ {k[1]: round(v, 2) for k, v in a['RATIO'].items() if np.isfinite(v)} }")
 
@@ -187,7 +204,7 @@ c = scenario("(C) 양성이 희박 — 조건을 만족하는 GMIN 이 없다", 
 vc = c["CONFIG"]["result"]["verdicts"]
 print(f">>> {vc}")
 assert vc["Q1-1"] == "❌ 기각", f"C: 환자 확보 실패로 기각돼야 한다 — {vc}"
-assert c["PICK"][("cross (INCART)", "S")] is None, "C: 선택된 GMIN 이 없어야 한다"
+assert c["PICK_B"][("cross (INCART)", "S")] is None, "C: 선택된 GMIN 이 없어야 한다"
 print("✅ ④ 조건 불만족 시 예외 없이 기각으로 끝난다")
 
 print("\n전부 통과 ✅ — Q1 은 '환자를 몇 명 확보할 수 있나' 를 정직하게 잰다")
