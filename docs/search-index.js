@@ -1,26 +1,26 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-02",
+ "generated": "2026-08-03",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 597,
+  "total": 610,
   "byType": {
+   "usmle": 54,
    "kmle": 395,
-   "paper": 137,
+   "paper": 144,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 60,
-   "Nephrology": 43,
-   "Infectious Disease": 42,
+   "Cardiology": 61,
+   "Nephrology": 44,
+   "Infectious Disease": 43,
    "Pediatrics": 41,
-   "Obstetrics & Gynecology": 28,
-   "Neurology": 27,
-   "Psychiatry": 27,
+   "Obstetrics & Gynecology": 29,
+   "Neurology": 28,
+   "Psychiatry": 28,
    "Endocrinology": 26,
    "Gastroenterology": 25,
    "Pulmonology": 25,
@@ -30,16 +30,16 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 24,
    "Rheumatology": 24,
    "Hematology": 23,
-   "Surgery": 22,
-   "Pathology": 19,
-   "Laboratory Medicine": 16,
-   "Hematology-Oncology": 14,
-   "Physiology": 6,
+   "Surgery": 23,
+   "Pathology": 21,
+   "Laboratory Medicine": 17,
+   "Hematology-Oncology": 15,
+   "Physiology": 7,
+   "Immunology": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
    "Biochemistry": 3,
-   "Immunology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
    "Allergy": 2,
@@ -51,12 +51,128 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 454,
-   "medium": 143
+   "high": 460,
+   "medium": 150
   },
-  "tagCount": 1567
+  "tagCount": 1583
  },
  "docs": [
+  {
+   "id": "usmle-2026-0055",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management",
+   "tags": [
+    "alcohol-withdrawal",
+    "delirium-tremens",
+    "benzodiazepine",
+    "CIWA-Ar",
+    "withdrawal-seizure"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0055.md",
+   "snippet": "A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, dia",
+   "text": "Psychiatry Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management alcohol-withdrawal delirium-tremens benzodiazepine CIWA-Ar withdrawal-seizure USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management) A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, diaphoretic, agitated, and reports seeing insects crawling on the wall; nursing staff witnessed a brief generalized tonic clonic seizure this morning. Vital signs and laboratory studies are shown; blood glucose and head CT are unremarkable. His CIWA Ar score is 22. Which of the following is the most appropriate next step in management? A. Haloperidol alone for agitation, without a benzodiazepine B. Phenytoin loading for ongoing seizure prophylaxis C. Benzodiazepine (e.g., lorazepam) dosed according to a symptom triggered CIWA Ar protocol D. Thiamine supplementation alone, withholding benzodiazepine treatment E. Physical restraints and continuous observation without pharmacologic treatment, pending psychiatry consultation This patient's history of heavy daily alcohol use, last drink the day before admission, and autonomic hyperactivity with hallucinations and a withdrawal seizure indicate severe alcohol withdrawal at risk for progression to delirium tremens; the appropriate next step is symptom triggered benzodiazepine dosing (e.g., via the CIWA Ar protocol), which treats the underlying GABA A receptor hypofunction driving both the autonomic instability and seizure risk."
+  },
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis",
+   "tags": [
+    "acute-ischemic-stroke",
+    "alteplase",
+    "tPA",
+    "blood-pressure-threshold",
+    "thrombolysis-eligibility"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute stroke thrombolysis eligibility)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 68 year old man is brought to the emergency department 2 hours and 10 minutes after the witnessed sudden onset of right sided weakness and difficulty speaking. He takes no anticoagulant or antiplatelet medication and has had no recent sur",
+   "text": "Neurology Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis acute-ischemic-stroke alteplase tPA blood-pressure-threshold thrombolysis-eligibility USMLE-style / MedKOS (neurology · acute stroke thrombolysis eligibility) A 68 year old man is brought to the emergency department 2 hours and 10 minutes after the witnessed sudden onset of right sided weakness and difficulty speaking. He takes no anticoagulant or antiplatelet medication and has had no recent surgery or bleeding. Vital signs and initial studies are shown; noncontrast CT of the head shows no hemorrhage and no early ischemic changes involving more than one third of the middle cerebral artery territory. Which of the following is the most appropriate next step in management? A. Administer intravenous alteplase immediately without addressing the blood pressure B. Lower blood pressure with intravenous labetalol to below 185/110 mmHg, then administer intravenous alteplase C. Give aspirin 325 mg orally now and defer thrombolytic therapy D. Proceed directly to mechanical thrombectomy without administering thrombolytic therapy E. Obtain CT angiography before making any treatment decision, delaying thrombolysis This patient is within the eligible time window for intravenous alteplase and has no exclusion criteria on labs or imaging, but his blood pressure (196/110 mmHg) exceeds the 185/110 mmHg threshold required before thrombolysis; the correct next step is to lower blood pressure with a rapid acting intravenous agent and then give alteplase promptly, without delaying treatment for additional imaging or substituting antiplatelet therapy."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ectopic Pregnancy — Methotrexate Eligibility in a Hemodynamically Stable Patient",
+   "tags": [
+    "ectopic-pregnancy",
+    "methotrexate",
+    "beta-hCG",
+    "adnexal-mass",
+    "hemodynamic-stability"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · early pregnancy management)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 27 year old woman, gravida 2 para 1, at 6 weeks' gestation by last menstrual period, comes to the office with mild, nonradiating lower abdominal discomfort and no vaginal bleeding. She is alert, comfortable, and hemodynamically stable, wi",
+   "text": "Obstetrics & Gynecology Ectopic Pregnancy — Methotrexate Eligibility in a Hemodynamically Stable Patient ectopic-pregnancy methotrexate beta-hCG adnexal-mass hemodynamic-stability USMLE-style / MedKOS (obstetrics · early pregnancy management) A 27 year old woman, gravida 2 para 1, at 6 weeks' gestation by last menstrual period, comes to the office with mild, nonradiating lower abdominal discomfort and no vaginal bleeding. She is alert, comfortable, and hemodynamically stable, with a soft abdomen and no peritoneal signs. Transvaginal ultrasound shows no intrauterine gestational sac, a 2.1 cm left adnexal mass without cardiac activity, and no free fluid in the pelvis. Serial beta hCG values are shown. Which of the following is the most appropriate next step in management? A. Emergency laparoscopic salpingectomy today B. Single dose intramuscular methotrexate with scheduled hCG monitoring C. Expectant management with hCG monitoring only, no pharmacologic or surgical treatment D. Dilation and curettage to evaluate for a failed intrauterine pregnancy E. Repeat transvaginal ultrasound in one week before making any treatment decision This patient is hemodynamically stable with an ectopic pregnancy (no intrauterine sac, adnexal mass, suboptimally rising hCG below the discriminatory zone), normal liver and renal function, and no contraindications noted — she meets criteria for single dose methotrexate, which avoids surgery while treating the ectopic pregnancy once confirmed and monitored appropriately."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width",
+   "tags": [
+    "complete-heart-block",
+    "escape-rhythm",
+    "AV-node",
+    "His-Purkinje",
+    "cardiac-conduction-physiology",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, ",
+   "text": "Physiology Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width complete-heart-block escape-rhythm AV-node His-Purkinje cardiac-conduction-physiology ECG USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization) A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, wide complex ventricular rhythm, with no fixed relationship between the P waves and the QRS complexes. Laboratory studies shown are unremarkable, and he takes no cardioactive medications. The slow rate and wide QRS morphology of this ventricular rhythm are most consistent with an escape pacemaker originating at which of the following sites? A. Distal Purkinje fibers within the ventricular myocardium (infra Hisian) B. The proximal bundle of His, just below the atrioventricular node C. The sinoatrial node, generating the observed atrial activity itself D. An ectopic atrial focus near the crista terminalis E. The coronary sinus ostium, producing a low atrial escape rhythm In complete AV block, the width and rate of the escape rhythm localize the level of the escape pacemaker: a narrower QRS at a relatively faster rate (~40–60/min) suggests a junctional/proximal His origin, whereas a wide QRS at a slower rate (~20–40/min), as seen here, indicates a more distal, infra Hisian ventricular myocardial escape focus with fewer intrinsic pacemaker cells and slower automaticity."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Immunology",
+   "subtopic": "Chronic Granulomatous Disease (NADPH oxidase respiratory burst defect)",
+   "tags": [
+    "chronic-granulomatous-disease",
+    "NADPH-oxidase",
+    "respiratory-burst",
+    "catalase-positive-organisms",
+    "NBT-test"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · phagocyte oxidative killing defect)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 4 year old boy has had recurrent skin abscesses caused by Staphylococcus aureus, suppurative lymphadenitis, and now presents with fever and a pulmonary infiltrate found on imaging to be caused by Aspergillus species. Vital signs and labor",
+   "text": "Immunology Chronic Granulomatous Disease (NADPH oxidase respiratory burst defect) chronic-granulomatous-disease NADPH-oxidase respiratory-burst catalase-positive-organisms NBT-test USMLE-style / MedKOS (immunology · phagocyte oxidative killing defect) A 4 year old boy has had recurrent skin abscesses caused by Staphylococcus aureus, suppurative lymphadenitis, and now presents with fever and a pulmonary infiltrate found on imaging to be caused by Aspergillus species. Vital signs and laboratory studies are shown; serum immunoglobulin levels and lymphocyte counts are normal. A dihydrorhodamine (DHR) flow cytometry assay shows markedly reduced oxidation compared with controls. The enzyme defect underlying this patient's recurrent infections most directly impairs which of the following processes? A. Complement mediated opsonization of encapsulated bacteria via the classical pathway B. CD40 CD40 ligand interaction required for immunoglobulin class switching C. MHC class II mediated antigen presentation to CD4+ helper T cells D. Microtubule dependent fusion of phagosomes with lysosomes E. NADPH oxidase mediated generation of superoxide during the phagocyte respiratory burst Recurrent infections with catalase positive organisms (S. aureus, Aspergillus), normal immunoglobulins and lymphocyte counts, and a markedly reduced DHR oxidation assay point to chronic granulomatous disease, caused by a defect in the phagocyte NADPH oxidase complex that normally generates superoxide for oxidative killing of ingested catalase positive microbes."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Renal AL Amyloidosis (light-chain fibril pathogenesis vs other amyloid subtypes)",
+   "tags": [
+    "amyloidosis",
+    "AL-amyloid",
+    "light-chain",
+    "Congo-red",
+    "nephrotic-syndrome",
+    "plasma-cell-dyscrasia"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · amyloidosis classification)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 64 year old man is evaluated for lower extremity edema and fatigue over the past 2 months. He has no history of rheumatoid arthritis, inflammatory bowel disease, chronic infection, or long term dialysis, and there is no family history of ",
+   "text": "Pathology Renal AL Amyloidosis (light-chain fibril pathogenesis vs other amyloid subtypes) amyloidosis AL-amyloid light-chain Congo-red nephrotic-syndrome plasma-cell-dyscrasia USMLE-style / MedKOS (pathology · amyloidosis classification) A 64 year old man is evaluated for lower extremity edema and fatigue over the past 2 months. He has no history of rheumatoid arthritis, inflammatory bowel disease, chronic infection, or long term dialysis, and there is no family history of similar illness. A renal biopsy shows amorphous eosinophilic material in the glomerular mesangium that exhibits apple green birefringence under polarized light after Congo red staining. Bone marrow biopsy reveals a clonal population of plasma cells. Which of the following best describes the pathogenesis of this patient's renal disease? A. Reactive systemic deposition of serum amyloid A protein driven by a chronic inflammatory disease B. Deposition of a hereditary mutant transthyretin variant produced by the liver C. Misfolded monoclonal immunoglobulin light chains from a clonal plasma cell population forming amyloid fibrils D. Deposition of wild type (non mutant) transthyretin associated with advanced age E. Accumulation of beta 2 microglobulin fibrils related to long term hemodialysis The absence of a chronic inflammatory disease (excludes AA amyloidosis), absence of dialysis history (excludes Aβ2M), and absence of a hereditary or advanced age transthyretin pattern, combined with a clonal plasma cell population and monoclonal lambda light chains, indicate AL amyloidosis: misfolded monoclonal light chains misassemble into beta pleated sheet fibrils that deposit in tissue and bind Congo red with apple green birefringence."
+  },
   {
    "id": "kmle-2026-0425",
    "type": "kmle",
@@ -631,6 +747,118 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0394.md",
    "snippet": "74세 남자가 반복되는 어지럼과 실신으로 왔다. 맥박은 느리고 규칙적이며 목의 정맥에서 이따금 강한 박동이 관찰된다. 심전도에서 P파와 QRS파가 서로 무관하게 각자의 규칙으로 나타난다. 활력징후·검사는 자료와 같고 심근효소는 정상이다. 가장 적절한 다음 처치는? A. 아트로핀 정맥 투여 B. 경정맥 임시 심박조율 C. 도부타민 지속 정맥 투여 D. 아데노신 정맥 투여 E. 동기화 전기율동전환 P파와 QRS파가 완전히 해리되고",
    "text": "Cardiology Complete (Third-degree) Atrioventricular Block complete-heart-block bradyarrhythmia temporary-pacing syncope KMLE 2026 / Claude Routine 74세 남자가 반복되는 어지럼과 실신으로 왔다. 맥박은 느리고 규칙적이며 목의 정맥에서 이따금 강한 박동이 관찰된다. 심전도에서 P파와 QRS파가 서로 무관하게 각자의 규칙으로 나타난다. 활력징후·검사는 자료와 같고 심근효소는 정상이다. 가장 적절한 다음 처치는? A. 아트로핀 정맥 투여 B. 경정맥 임시 심박조율 C. 도부타민 지속 정맥 투여 D. 아데노신 정맥 투여 E. 동기화 전기율동전환 P파와 QRS파가 완전히 해리되고 목정맥에 대포파가 보이는 증상성 완전방실차단이다. 탈출리듬이 방실결절 아래에서 나오면 아트로핀 반응이 나쁘므로, 혈역학이 불안정한 증상성 완전방실차단은 즉시 임시 심박조율을 시행한다."
+  },
+  {
+   "id": "paper-2026-0144",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0144_transcatheter_edge_to_edge_repair_under_argatroban_in_iabp_s.md",
+   "snippet": "Title Transcatheter Edge to Edge Repair Under Argatroban in IABP Supported Acute Mitral Regurgitation With Suspected Heparin Induced Thrombocytopenia Authors Yoshikado Yurie, Sawada Takahiro, Shimoura Hiroyuki, Mukai Jun, Terao Yuya, Kadota",
+   "text": "Surgery scraped pubmed PubMed / JACC. Case reports Title Transcatheter Edge to Edge Repair Under Argatroban in IABP Supported Acute Mitral Regurgitation With Suspected Heparin Induced Thrombocytopenia Authors Yoshikado Yurie, Sawada Takahiro, Shimoura Hiroyuki, Mukai Jun, Terao Yuya, Kadotani Makoto, Onishi Yoshio, Hirata Ken Ichi Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.109579 · PMID: 42542981 https://pubmed.ncbi.nlm.nih.gov/42542981/ Abstract BACKGROUND: Heparin induced thrombocytopenia (HIT) is a prothrombotic immune mediated complication that complicates cardiac surgery because cardiopulmonary bypass requires systemic heparinization. We report a case of acute severe mitral regurgitation (MR) complicated by clinically suspected HIT, in which conventional surgical repair was not feasible. CASE SUMMARY: A 59 year old man presented with acute severe MR due to chordal rupture and developed cardiogenic shock requiring intra aortic balloon pump support. While awaiting surgery, his platelet count decreased from 262,000/μL to 23,000/μL. The 4Ts score was 6, and PF4/heparin antibody testing was positive, supporting clinically suspected HIT. Because cardiopulmonary bypass requiring systemic heparinization was considered prohibitively high risk, M TEER was performed under continuous argatroban infusion. Two PASCAL Ace implants were successfully deployed, reducing MR from severe to trivial without thrombotic or bleeding complications. The patient recovered rapidly with immediate IABP removal and early extubation. DISCUSSION: This case demonstrates that M TEER under argatroban anticoagulation can be a feasible alternative when conventional surgery is precluded by suspected HIT and the anticipated challenges of anticoagulation during cardiopulmonary bypass. TAKE HOME MESSAGE: M TEER under argatroban may serve as a rescue strategy for critically ill patients with acute severe MR and suspected HIT when surgical management is not feasible. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0143",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Singapore medical journal",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0143_diagnosis_and_analysis_of_plasma_phosphorylated_tau_217_in_a.md",
+   "snippet": "Title Diagnosis and analysis of plasma phosphorylated tau 217 in a memory clinic cohort: limitations of Generative Pre trained Transformer 5 Authors Shea Yat Fung, Wong Yi Ling, Wong Tsz King, Chan Pak Lam, Yam Ka Keung, Wong Felix Chi Kin,",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Singapore medical journal Title Diagnosis and analysis of plasma phosphorylated tau 217 in a memory clinic cohort: limitations of Generative Pre trained Transformer 5 Authors Shea Yat Fung, Wong Yi Ling, Wong Tsz King, Chan Pak Lam, Yam Ka Keung, Wong Felix Chi Kin, Chan King Pui Florence, Cheung Yi Wah Eva, et al. Journal / DOI Singapore medical journal · DOI: 10.4103/singaporemedj.SMJ 2025 289 · PMID: 42542938 https://pubmed.ncbi.nlm.nih.gov/42542938/ Abstract INTRODUCTION: No published studies have evaluated the application of Generative Pre trained Transformer 5 (GPT 5) in the analysis of memory clinic patient clinical notes or the interpretation of plasma phosphorylated tau (P tau) 217 values. We compared Alzheimer's disease (AD) probability estimates generated by GPT 5 before and after incorporating plasma P tau 217 with pre and posttest probabilities. METHODS: This was a retrospective study comprising 74 patients from a memory clinic in Queen Mary Hospital, Hong Kong. Final diagnoses were made by physicians, supported by medical history, physical examination, neuroimaging and amyloid positron emission tomography. Extracted clinical data included cognitive, functional and neuropsychiatric assessments. Pretest AD probabilities were derived from a published meta analysis, while posttest probabilities were calculated using a Bayesian approach. These values were compared with those estimated by GPT 5. The diagnostic performance of GPT 5 and physicians was assessed using accuracy and Kappa coefficient, with final diagnosis as reference. RESULTS: There were 40 amyloid positive (A+) and 34 amyloid negative (A ) patients. In A+ patients, Bayesian posttest probabilities were higher than GPT 5 estimates (median 97.0% vs. 80.0%, P = 0.003), while those of A patients were lower than GPT 5 estimates (median 3.0% vs. 27.5%, P < 0.001). With application of plasma P tau 217, physicians achieved higher diagnostic accuracy than GPT 5 (81.1% vs. 45.9%, P < 0.001), while GPT 5 suggested mixed aetiologies more frequently (23.0% vs. 8.1%, P = 0.04) and inappropriate anti amyloid therapy in 31% (11/36) of scenarios. CONCLUSION: Our findings show that GPT 5 has limitations in analysing clinical information of real life memory clinic patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0142",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0142_inflammatory_dermatoses_an_audit_of_histopathology_reporting.md",
+   "snippet": "Title Inflammatory Dermatoses: An Audit of Histopathology Reporting Quality and the Role of Clinicopathological Conference Authors Lall Talvinder S, Haroon Saroona Journal / DOI Cureus · DOI: 10.7759/cureus.113775 · PMID: 42542857 https://p",
+   "text": "Pathology scraped pubmed PubMed / Cureus Title Inflammatory Dermatoses: An Audit of Histopathology Reporting Quality and the Role of Clinicopathological Conference Authors Lall Talvinder S, Haroon Saroona Journal / DOI Cureus · DOI: 10.7759/cureus.113775 · PMID: 42542857 https://pubmed.ncbi.nlm.nih.gov/42542857/ Abstract BACKGROUND: Inflammatory dermatoses are a frequent indication for skin biopsy and present diagnostic challenges due to overlapping clinical and histopathological features. Accurate diagnosis relies on clinicopathological correlation, often supported by multidisciplinary team (MDT) discussion. The Royal College of Pathologists (RCPath) Tissue pathways for dermatopathology outline national standards for reporting skin biopsies in inflammatory dermatoses. This study aimed to evaluate local compliance with RCPath standards for inflammatory skin biopsy reporting among inflammatory dermatosis cases discussed at skin clinicopathological conference (CPC) meetings. METHODS: A retrospective audit was conducted of all cases discussed at monthly skin CPC meetings between December 2024 and December 2025 (n = 89). Cases with a final histological diagnosis of inflammatory dermatoses were included. Reports were assessed against RCPath derived standards, including adequacy of request form information, quality of microscopic descriptions, documentation of ancillary investigations and MDT discussion, and turnaround time. RESULTS: Of 89 skin biopsies discussed at skin CPC meetings between December 2024 and December 2025, 43/89 (48.3%) were identified as inflammatory dermatoses and included in the analysis. Microscopic descriptions met RCPath standards in 43/43 (100%) cases, and ancillary investigations were documented in 27/27 (100%) cases where performed. However, only 8/43 (18.6%) biopsy request forms contained adequate clinical information, defined as documentation of lesion morphology and duration. CPC discussion resulted in diagnostic amendment in 6/43 (14.0%) cases. Turnaround times were prolonged, with only 5/43 (11.6%) reports issued within the seven day target (mean 44.4 days; median 35 days). CONCLUSION: While histopathology report content met RCPath standards, the quality of clinical information provided and prolonged turnaround times represented key areas for service improvement. Improving the completeness of clinical information on biopsy request forms may support more accurate histopathological diagnosis. Skin CPC meetings provide an important forum for diagnostic refinement and clinician education. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0141",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0141_a_radiotherapy_related_fibrosis_gene_signature_based_risk_mo.md",
+   "snippet": "Title A radiotherapy related fibrosis gene signature based risk model for predicting prognosis and immunological features in lung adenocarcinoma Authors Qiu Yanyan, Lv Cui, Ding Shubo Journal / DOI Clinical & translational oncology : offici",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico Title A radiotherapy related fibrosis gene signature based risk model for predicting prognosis and immunological features in lung adenocarcinoma Authors Qiu Yanyan, Lv Cui, Ding Shubo Journal / DOI Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico · DOI: 10.1007/s12094 026 04525 z · PMID: 42542992 https://pubmed.ncbi.nlm.nih.gov/42542992/ Abstract BACKGROUND: Lung adenocarcinoma (LUAD) is marked by significant tumor heterogeneity and immune interactions that influence therapeutic response, while radiation induced fibrosis poses a critical clinical challenge by compromising pulmonary function and complicating post treatment surveillance. METHODS: A prognostic risk signature for lung adenocarcinoma was established by integrating transcriptomic data from The Cancer Genome Atlas (TCGA) and Gene Expression Omnibus (GEO) repositories. The methodology involved initial screening for differentially expressed radiotherapy related fibrosis genes, followed by least absolute shrinkage and selection operator (LASSO) regression coupled with multivariate Cox analysis to derive a compact risk model. Rigorous validation encompassing survival analysis, receiver operating characteristic (ROS) evaluation, and external cohort testing confirmed its predictive accuracy. Subsequent analyses delved into functional enrichment pathways, the tumor immune microenvironment, mutational characteristics, and potential chemotherapeutic responsiveness. RESULTS: Following construction and validation, a model based on six genes demonstrated high accuracy in predicting patient outcomes. Low risk patients exhibited \"hot\" immune phenotypes with favorable immunotherapy responses, while high risk patients showed elevated tumor mutational burden (TMB) and differential drug sensitivity. Three molecular subtypes were identified, with Group 3 representing a \"cold\" tumor phenotype associated with poorest prognosis. CONCLUSION: This study developed and validated a six gene fibrosis based prognostic model for LUAD. The model stratifies survival risk and correlates with immune features and drug sensitivity, but provides a preliminary framework requiring prospective clinical validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0140",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Orvosi hetilap",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0140_albuminuria_for_detection_of_chronic_kidney_disease_biomarke.md",
+   "snippet": "Title [Albuminuria for detection of chronic kidney disease: biomarker and therapeutic target] Authors Vásárhelyi Barna, Tislér András Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33622 · PMID: 42543015 https://pubmed.ncbi.nlm.nih.go",
+   "text": "Nephrology scraped pubmed PubMed / Orvosi hetilap Title [Albuminuria for detection of chronic kidney disease: biomarker and therapeutic target] Authors Vásárhelyi Barna, Tislér András Journal / DOI Orvosi hetilap · DOI: 10.1556/650.2026.33622 · PMID: 42543015 https://pubmed.ncbi.nlm.nih.gov/42543015/ Abstract Albuminuria is one of the most important biomarkers of chronic kidney disease and also a target that can be influenced by treatment. The amount of albumin excreted in the urine is an independent predictor of declining kidney function, cardiovascular events, and all cause mortality. It is most easily determined based on the albumin to creatinine ratio (ACR) measured in the first morning urine sample; in the vast majority of cases, 24 hour urine collection is not required. The pathophysiology of albuminuria centers on damage to the glomerular filtration barrier particularly podocytes hemodynamic hyperfiltration, inflammation associated with tubular protein reabsorption, and activation of the renin angiotensin aldosterone system (RAAS). Modern four pillar pharmacotherapy RAS inhibitors (ACE inhibitors/ARBs), SGLT2 inhibitors, non steroidal mineralocorticoid receptor antagonists (finerenone), and GLP1 receptor agonists in type 2 diabetes acts on these processes through complementary mechanisms. When tailored to the degree of albuminuria and eGFR, this treatment significantly slows the progression of chronic kidney disease and reduces cardiovascular risk. Measuring and monitoring albuminuria must therefore be an essential part of daily clinical practice. Orv Hetil. 2026; 167(31): 1231 1237. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0139",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Current microbiology",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0139_broad_spectrum_antibacterial_electrospun_pcl_silver_fibers_c.md",
+   "snippet": "Title Broad Spectrum Antibacterial Electrospun PCL Silver Fibers Coupled with Chromogenic Hydrogel for Infection Sensing Authors Mondal Partha Sarathi, Guha Baitali, Natarajan Vaishnavi, Ganesan Ramakrishnan, Ray Dutta Jayati Journal / DOI ",
+   "text": "Infectious Disease scraped pubmed PubMed / Current microbiology Title Broad Spectrum Antibacterial Electrospun PCL Silver Fibers Coupled with Chromogenic Hydrogel for Infection Sensing Authors Mondal Partha Sarathi, Guha Baitali, Natarajan Vaishnavi, Ganesan Ramakrishnan, Ray Dutta Jayati Journal / DOI Current microbiology · DOI: 10.1007/s00284 026 05090 y · PMID: 42543002 https://pubmed.ncbi.nlm.nih.gov/42543002/ Abstract Wound healing remains a significant clinical challenge due to susceptibility to bacterial infections, excessive oxidative stress and delayed cellular regeneration. The extensive and often indiscriminate use of antibiotics has further intensified the emergence of antimicrobial resistance. In this study, a multifunctional smart wound dressing is developed by integrating a chromogenic hydrogel with electrospun poly(ε caprolactone) (PCL) fibers functionalized with quaternary ammonium moieties anchoring ionic silver. The PCL fibers functionalized with ionic silver provide antibiotic free antibacterial properties, while the chromogenic hydrogel allows for real time colorimetric detection of metabolically active microorganisms. The colorimetric assessment of the dressing in both in vitro and ex vivo environments has shown a distinct, time dependent reaction to metabolically active bacterial populations. It has demonstrated outstanding cellular biocompatibility, increased cell viability in Vero cells, a notable decrease in oxidative stress, and enhanced cell migration in an in vitro scratch assay. This multifunctional dressing showcases a promising platform for advanced wound management applications by integrating antibacterial effects, real time infection detection, and pro regenerative cellular responses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0138",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Apoptosis : an international journal on programmed cell death",
+   "confidence": "medium",
+   "date": "2026-08-02",
+   "path": "content/papers/2026/2026-08-02_paper-2026-0138_atp6ap2_ameliorates_inflammation_and_pyroptosis_in_heart_fai.md",
+   "snippet": "Title ATP6AP2 ameliorates inflammation and pyroptosis in heart failure by promoting lysosome dependent STING degradation Authors Zhao Xuan, Zhang Hui, Ding Xinyue, Wu Huimin, Li Min, Yin Nengpin, Gao Junqing, Xu Youlong, et al. Journal / DO",
+   "text": "Cardiology scraped pubmed PubMed / Apoptosis : an international journal on programmed cell death Title ATP6AP2 ameliorates inflammation and pyroptosis in heart failure by promoting lysosome dependent STING degradation Authors Zhao Xuan, Zhang Hui, Ding Xinyue, Wu Huimin, Li Min, Yin Nengpin, Gao Junqing, Xu Youlong, et al. Journal / DOI Apoptosis : an international journal on programmed cell death · DOI: 10.1007/s10495 026 02415 x · PMID: 42542988 https://pubmed.ncbi.nlm.nih.gov/42542988/ Abstract Inflammatory activation is involved in the pathogenesis of heart failure (HF). ATPase H+ Transporting Accessory Protein 2 (ATP6AP2) is an auxiliary subunit of the V ATPase, and its role in HF is not fully understood. To assess the role and regulatory mechanisms and therapeutic potential of ATP6AP2 in HF, we used a cardiac specific ATP6AP2 conditional knockout (CKO) mouse model and observed spontaneous cardiac dysfunction, myocardial fibrosis and cardiomyocyte apoptosis in mice. Further studies showed that ATP6AP2 promoted stimulator of interferon genes (STING) degradation through the lysosome dependent pathway. ATP6AP2 knockdown significantly upregulated STING protein levels, activated the STING TBK1 IRF3 signaling axis, and promoted pro inflammatory factor expression and cardiomyocyte apoptosis. In mice with myocardial infarction (MI), myocardial overexpression of ATP6AP2 or treatment with H 151 inhibited the activation of the STING signaling pathway, ameliorated cardiomyocyte apoptosis and inflammatory responses, thereby improving cardiac function. In addition, in macrophages treated with conditioned medium from hypoxia exposed cardiomyocytes, the levels of pyroptosis related proteins were markedly increased, whereas ATP6AP2 overexpression or STING inhibition reduced pyroptosis. ATP6AP2 likewise attenuates inflammation and pyroptosis caused by hypoxia in cardiac organoids. In conclusion, activating ATP6AP2 could serve as a promising therapeutic option in HF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0137",
