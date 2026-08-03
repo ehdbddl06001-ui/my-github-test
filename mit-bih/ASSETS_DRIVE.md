@@ -436,3 +436,31 @@ Drive MCP 에는 **삭제·갱신 도구가 없고 `create_file` 은 중복을 �
 같은 이름으로 새로 올리면 **중복 파일**이 생겨 `exec` 가 어느 쪽을 읽을지 불확실해진다.
 `colab_crossdb_split.py` 는 `colab_crossdb.py` 의 module-level 심볼에 의존하므로
 **반드시 그 다음에** `exec` 한다(노트북 CELL 4 가 순서와 심볼 존재를 검사한다).
+
+---
+
+## 2026-08-03 · 퀘스트46 Q7·Q8 실행 산출물 (R9 등록)
+
+두 실행 모두 **학습 0회**다. Colab 이 남긴 위치를 등록해 둔다 — 등록 안 된 수치는
+인용하지 않는다(R9).
+
+| 실행 | Drive 위치 | 로그 카드 | 노트북 |
+|---|---|---|---|
+| Q7 `svdb-cohort-check` | `MyDrive/MedKOS/ecg-model/runs/20260803T0102_quest46_q7_svdb/` | `ailab-2026-0049` | `notebooks/quest46_q7_svdb_cohort.ipynb` |
+| Q8 `weighted-macro` | `MyDrive/MedKOS/ecg-model/runs/20260803T0103_quest46_q8_wmacro/` | `ailab-2026-0050` | `notebooks/quest46_q8_weighted_macro.ipynb` |
+
+각 폴더에 `config.json`(관문 판정 + arm 별 값 + 레코드별 값 전량)이 들어 있다.
+
+### 재사용 가능한 캐시
+
+| 파일 | 위치 | 내용 |
+|---|---|---|
+| **`svdb_ann_counts.json`** | `MyDrive/MedKOS/ecg-model/data/` | SVDB 78레코드의 AAMI N/S/V 주석 카운트. Q7 노트북이 있으면 재다운로드를 건너뛴다 |
+| `exp22a_probs_s5_v1.npz` | `MyDrive/MedKOS/ecg-model/data/` | 실험22-A 예측 캐시. Q1·Q8 이 이것만 읽고 학습 0회로 돌았다 |
+
+⚠️ `svdb_ann_counts.json` 은 **주석 카운트일 뿐 신호가 아니다.** SVDB 신호(`.dat`)는
+아직 안 받았다 — Q7-B 에서 필요하다.
+
+⚠️ SVDB 는 **128Hz**, MIT-BIH 는 360Hz 다(`svdb_prep.py` F4). Q7-B 에서 zero-shot
+성능이 떨어지면 도메인 차이인지 샘플링레이트 차이인지 **리샘플링 대조군으로 분리**해야
+한다. 이 구분 없이 낙폭을 인용하지 않는다.
