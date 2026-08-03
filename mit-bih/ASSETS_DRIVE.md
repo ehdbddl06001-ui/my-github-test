@@ -517,3 +517,18 @@ Drive MCP 에는 **삭제·갱신 도구가 없고 `create_file` 은 중복을 �
 **교체 절차 메모**: Drive MCP 에는 삭제·갱신 도구가 없다. 사용자가 구파일을 **먼저
 삭제**한 뒤 같은 이름으로 새로 올린다. 같은 이름이 둘이면 `exec` 가 어느 쪽을 읽을지
 불확실해지므로, 업로드 후 반드시 **크기·중복을 조회로 확인**한다.
+
+### Q7-E 실행 산출물 (2026-08-03) — 전수 감사에 쓴 원본
+
+| 파일 | Drive id | 크기 | 용도 |
+|---|---|---:|---|
+| `runs/20260803T0551_quest46_q7e_anchor_sweep/` | `1XRLYdd…` | 폴더 | Q7-E 실행 디렉터리 |
+| └ `config.json` | **`1lHyYwH…`** | 68,741 B | **개체별 70건 전수** — `pipelines/audit_anchor.py` 입력 |
+| └ `log.txt` | `1-CQmFU…` | 8,232 B | 실행 로그 |
+| └ `result.json` | `17Bo2bg…` | 1,174 B | 관문 판정 + 매크로 |
+| └ `figures/q7e_anchor_sweep.png` | `14DI9Rr…` | 163,426 B | 3패널 그림 |
+
+`config.json` 의 `per_record` 가 이 퀘스트에서 처음으로 **개체별 전수 원자료**를
+repo 밖에 남긴 산출물이다(70개체 × 기준 4종 × AUROC·SE·CI + 군 통계). Colab 에 repo 가
+없으므로 감사는 **이 파일을 내려받아 로컬에서** `audit_anchor.py` 로 돌린다 —
+노트북 안에서 다시 계산하지 않는다(노트북은 동결).
