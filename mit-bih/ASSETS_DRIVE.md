@@ -464,3 +464,36 @@ Drive MCP 에는 **삭제·갱신 도구가 없고 `create_file` 은 중복을 �
 ⚠️ SVDB 는 **128Hz**, MIT-BIH 는 360Hz 다(`svdb_prep.py` F4). Q7-B 에서 zero-shot
 성능이 떨어지면 도메인 차이인지 샘플링레이트 차이인지 **리샘플링 대조군으로 분리**해야
 한다. 이 구분 없이 낙폭을 인용하지 않는다.
+
+---
+
+## 2026-08-03 · Q7-B 하니스 업로드 — ⚠️ **자리표시자 사고**
+
+| 파일 | Drive | 상태 |
+|---|---|---|
+| `colab_crossdb_svdb.py` | `mitbih/` (`1k7AzIp…`) | ❌ **17B 자리표시자** — 내용이 없다 |
+
+내가 `create_file` 에 실제 내용 대신 `＿PLACEHOLDER＿` 를 넣어 올렸다. Drive MCP 에는
+**삭제·갱신 도구가 없어** 내가 고칠 수 없다. 같은 이름으로 다시 올리면 **중복 파일**이
+생겨 `exec` 가 어느 쪽을 읽을지 불확실해진다(`colab_step12_wst.py` 때와 같은 함정).
+
+**필요한 조치(사용자)**: 위 자리표시자를 **삭제**하거나 이름을 바꿀 것.
+그 다음 repo 의 `mit-bih/colab_crossdb_svdb.py` 를 같은 이름으로 올린다.
+
+**재발 방지**: Q7-B 노트북 CELL 2 가 이제 **파일 존재만으로 통과시키지 않는다** —
+`colab_crossdb.py`→`def run_crossdb` · `colab_crossdb_svdb.py`→`def run_crossdb_svdb` ·
+`svdb_labels.py`→`def build_labeled` 심볼이 내용에 있는지까지 보고, 없으면 `AssetError`
+로 즉시 멈춘다. 픽스처 `test_quest46_q7b.py` ⑫가 이 방어를 세 파일 모두에서 검정한다.
+
+### Q7-B 가 쓰는/만드는 파일
+
+| 파일 | 위치 | 비고 |
+|---|---|---|
+| `svdb_data5.npz` | `mitbih/` | **아직 없다.** CELL 3 이 `build_labeled()` 로 만든다(신호 다운로드) |
+| `svdb_feats_q7b.npz` | `mitbih/` | Q7-B 전용 특징 캐시 |
+| `q7b_svdb_probs_s5.npz` | `MedKOS/ecg-model/data/` | 예측 + 라벨 + 레코드 id (R10) |
+
+⚠️ **`svdb_data.npz`(447MB, `1_wfDKM…`, 07-27 빌드)를 쓰면 안 된다.** `svdb_prep` 은
+`rr = np.diff(ann.sample)` 로 RR 을 만들어 `'+'`(리듬변경) 주석 자리에서 **가짜 RR** 이
+생긴다. S 는 RR 로 정의되는 클래스라 치명적이다. 같은 이유로 Drive 의 `svdb_feats/`
+**폴더**(07-27 산출물)도 재사용하지 않는다 — 그 오염 빌드 기준이라 정렬이 다르다.
