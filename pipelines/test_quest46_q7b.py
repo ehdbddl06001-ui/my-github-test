@@ -112,6 +112,8 @@ assert "매핑된 레코드 번호가 목록에 없다" in HARNESS, "매핑 자�
 assert "wfdb.get_record_list" in SRC_M and "except" not in SRC_M.split("recs = [int(r)")[0][-200:], \
     "❌ 매핑 검증 셀도 fallback 을 쓰면 안 된다"
 assert "recs[l - CONT[0]]" in SRC_M, "결정론적 복원식이 없다"
+assert "재라벨에서 레코드가 합쳐졌다" in SRC_M, "재라벨 단사성 검사가 없다"
+assert "재라벨 후 DEV/TEST 가 겹친다" in SRC_M, "재라벨 후 서로소 검사가 없다"
 print("  ✅ ②-d 연속번호 fallback 부재 — 목록을 못 받으면 터진다")
 
 # ③ 특징선택이 DS1 에서만 fit
