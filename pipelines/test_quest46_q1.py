@@ -30,6 +30,41 @@ def cell(tag):
 SRC = "\n".join(cell(t) for t in ("【Q1-A】", "【Q1-B】", "【Q1-C】", "【Q1 채점】"))
 
 
+def check_run_api():
+    """노트북이 부르는 `run.<메서드>` 가 **실제 MedKOSRun 에 있는지** 확인한다.
+
+    ★ 왜 필요한가: 이 픽스처는 CELL 2~6 만 exec 하므로 CELL 1(생성자)과 CELL 7(그림)의
+      오타를 못 잡는다. 실제로 `MedKOSRun(name, config=...)`(project 누락)과
+      `run.savefig(fig, name)`(실제는 `save_fig(name, fig)`)를 둘 다 틀렸고,
+      Colab 에 올린 뒤에야 TypeError 로 드러났다. 정적으로 대조해서 미리 막는다.
+    """
+    import re
+    lib = os.path.join(os.path.dirname(__file__), "..", "lib", "medkos_run.py")
+    if not os.path.exists(lib):
+        print("  (lib/medkos_run.py 없음 — API 검사 생략)"); return
+    src = open(lib).read()
+    have = set(re.findall(r"^\s{4}def (\w+)\(", src, re.M))
+    nb_src = "".join("".join(c["source"]) for c in CODE)
+    used = set(re.findall(r"\brun\.(\w+)\(", nb_src))
+    missing = sorted(used - have)
+    assert not missing, (f"노트북이 MedKOSRun 에 없는 메서드를 부른다: {missing}\n"
+                         f"  실제 API: {sorted(have)}")
+    # 생성자 인자도 대조
+    sig = re.search(r"def __init__\(self, ([^)]*)\)", src).group(1)
+    req = [a.strip() for a in sig.split(",") if "=" not in a]
+    call = re.search(r"MedKOSRun\(([^)]*)\)", nb_src)
+    assert call, "노트북에 MedKOSRun 호출이 없다"
+    args = call.group(1)
+    for a in req:
+        assert a in args or args.count(",") >= req.index(a), \
+            f"MedKOSRun 필수 인자 '{a}' 가 호출에 없다: MedKOSRun({args})"
+    print(f"  ✅ run.* API 정합 — 사용 {sorted(used)} ⊆ 실제 · 필수 인자 {req} 충족")
+
+
+print("### run.* API 정합성 (CELL 1·7 은 exec 하지 않으므로 정적으로 본다)")
+check_run_api()
+
+
 def t_ci(v, conf=.95):
     v = np.asarray([x for x in v if np.isfinite(x)], float); n = len(v)
     m = float(v.mean()) if n else float("nan")
