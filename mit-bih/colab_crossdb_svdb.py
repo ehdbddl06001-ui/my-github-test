@@ -63,7 +63,12 @@ def _svdb_load(path=None):
     #     번호**가 나온다 — SVDB 는 813~819·830~839 이 비어 있어서 인덱스 13 부터 어긋난다.
     #     실제로 그 사고가 났고(ailab-2026-0052), 라벨 800~877 중 17개가 존재하지 않는
     #     번호였다. 터지는 게 낫다 — 조용히 틀린 번호를 내면 그걸로 쓴 모든 문장이 틀린다.
-    import wfdb
+    try:
+        import wfdb
+    except ModuleNotFoundError:                      # 설치는 해준다(값 날조와 다르다)
+        import subprocess, sys, importlib
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "wfdb"], check=True)
+        importlib.invalidate_caches(); import wfdb
     recs = wfdb.get_record_list("svdb")
     if not recs:
         raise RuntimeError("wfdb.get_record_list('svdb') 가 비었다 — 네트워크 확인. "
