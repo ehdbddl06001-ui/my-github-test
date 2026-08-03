@@ -19,6 +19,12 @@
   ⑨ DEV 에서 통과 GMIN 이 없으면 **TEST 를 열지 않고** 종료하는가
   ⑩ 정상 코호트에서 관문이 서고, 개체가 모자라면 기각되는가
      — 관문이 무조건 통과기도, 무조건 기각기도 아님을 양쪽으로 보인다
+  ⑮ **탐색적 부지표** — PR-AUC 를 유병률과 함께 내는가(R4), 관문을 안 바꾸는가,
+     '최대기여' 두 정의가 서로 다른 개체를 가리킬 수 있는가(R11-c)
+  ⑬ **빌드 손실 감사** — Q7-A 주석 대비 레코드가 통째로 빠졌는지, 특히 **최상위
+     S 레코드**가 빠졌는지 잡는가(실제로 일어났다)
+  ⑭ **CI 폭 분해(R15)** — 매크로 CI 폭이 측정오차가 아니라 **개체 간 이질성**으로
+     설명된다는 것을 수치로 보이는가
   ⑫ **Drive 자산이 자리표시자면 잡는가** — Drive 는 갱신 도구가 없어 빈 파일·자리
      표시자가 올라갈 수 있다(실제로 그랬다). 존재만 보면 CELL 4 에서 NameError 로 죽는다
   ⑪ **대조군 V 가 실제로 채점되는가** — 조용히 비면 "V 도 떨어졌다" 를 못 읽는다
@@ -46,6 +52,8 @@ def cell(tag):
 SRC_SPLIT = cell("【G0】")
 SRC_DEV = cell("【Q7B-A】")
 SRC_TEST = cell("【Q7B-B】")
+SRC_LOSS = cell("【Q7B-L】")
+SRC_X = cell("【Q7B-X】")
 HARNESS = open(os.path.join(ROOT, "mit-bih", "colab_crossdb_svdb.py")).read()
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -77,6 +85,21 @@ assert not touched, (
     "   GMIN 을 TEST 를 보고 고르면 '검증이 선택에 의존' 하게 된다(R12).")
 assert "dev_have" in SRC_DEV, "CELL 5 가 DEV 를 안 쓴다 — 분할이 무의미하다"
 print(f"  ✅ ② GMIN 선택 셀이 TEST 를 참조하지 않는다 (금지어 {BANNED} 전부 부재)")
+
+# ②-b 손실 감사 셀은 GMIN 선택 **앞**에 오지만 예측을 만지면 안 된다.
+#     주석 카운트(SCOUNT)와 '어떤 레코드가 빌드됐나'(REC) 만 본다.
+for bad in ("v2_cross_raw", "SC_S", "SC_V", "per_record", "roc_auc_score", "auroc"):
+    assert bad not in SRC_LOSS, f"❌ 손실 감사 셀이 예측을 만진다: {bad}"
+assert "✅ 지지" not in SRC_LOSS, "❌ 손실 감사 셀이 '지지' 를 낼 수 있다"
+assert "SCOUNT" in SRC_LOSS and "REC" in SRC_LOSS, "손실 감사가 주석/빌드 대조를 안 한다"
+print("  ✅ ②-b 손실 감사 셀은 주석·레코드 존재만 본다 (예측 미사용)")
+
+# ②-c 부지표 셀은 **관문을 바꾸면 안 된다**(사후등록 금지)
+assert "✅ 지지" not in SRC_X and "VERD" not in SRC_X, "❌ 부지표 셀이 판정을 낸다"
+assert 'CONFIG["result"]["verdicts"] == _V0' in SRC_X, "❌ 관문 불변 확인이 없다"
+assert "average_precision_score" in SRC_X, "PR-AUC 를 안 잰다"
+assert "prev" in SRC_X and "lift" in SRC_X, "PR-AUC 를 유병률 없이 낸다 — R4 위반"
+print("  ✅ ②-c 부지표 셀은 관문을 바꾸지 않고, PR-AUC 를 유병률과 함께 낸다")
 
 # ③ 특징선택이 DS1 에서만 fit
 SRC_TRAIN = cell("【Q7B-T】")
@@ -291,6 +314,72 @@ assert VD["Q7B-3"] == "❌ 기각", f"D: 지배 지분 관문이 잡아야 한�
 assert "drop_rec" in RD["test_S"], "D: R11-b 최대기여 개체가 보고되지 않았다"
 print(f"  ✅ ⑩-c 지배 지분 {RD['test_S']['dom']:.1%} 를 R11-3 이 잡는다"
       f" · 최대기여 #{RD['test_S']['drop_rec']} 제외값 {RD['test_S']['drop_macro']:.4f}")
+
+# ── ⑬ 손실 감사가 '최상위 레코드 소실' 을 잡는가 (실제로 일어난 일)
+print("\n### ⑬ 빌드 손실 감사")
+def run_loss(scount, built):
+    g = {"np": np, "run": Run(), "CONFIG": {}, "SCOUNT": dict(scount),
+         "REC": np.array(sorted(built)),
+         "DEV_RECS": sorted(list(scount)[1::2]), "TEST_RECS": sorted(list(scount)[0::2])}
+    exec(compile(SRC_LOSS, "q7b_loss", "exec"), g)
+    return g
+
+full = run_loss(SC, list(SC))
+assert full["CONFIG"]["build_loss"]["lost"] == [], "손실 0 인데 손실을 보고했다"
+assert not any("최상위 레코드가 빠졌다" in l for l in full["run"].lines)
+print("  ✅ 손실 0 이면 조용하다")
+
+top = max(SC, key=SC.get)
+part = run_loss(SC, [r for r in SC if r != top])
+bl = part["CONFIG"]["build_loss"]
+assert bl["top_record_lost"] is True, f"최상위 소실을 못 잡았다 — {bl}"
+assert bl["lost"] == [top] and bl["lost_s"] == SC[top], bl
+assert any("최상위 레코드가 빠졌다" in l for l in part["run"].lines), "경고가 안 남았다"
+assert any("낙관적으로 보인다" in l for l in part["run"].lines), \
+    "지배 지분이 낙관적이라는 경고가 없다"
+print(f"  ✅ ⑬ 최상위 #{top}({SC[top]:,}) 소실을 잡고 '지배 지분이 낙관적' 을 경고한다")
+
+# ── ⑭ CI 폭 분해가 이질성 지배를 드러내는가 (실측 재현)
+print("\n### ⑭ CI 폭 분해 (R15)")
+gE = run_pipeline("(E) 개체 간 이질성이 큰 코호트 — CI 폭 분해",
+                  [(300 + i, 60, 0.85) for i in range(12)],
+                  [(400 + i, 60, auc) for i, auc in enumerate(
+                      [0.72, 0.99, 0.83, 0.97, 0.75, 0.995, 0.88, 0.93, 0.71, 0.99, 0.86, 0.96])],
+                  seed=5)
+dec = gE["CONFIG"].get("ciw_decomp")
+assert dec, "CI 폭 분해가 CONFIG 에 없다"
+print(f"    관측 {dec['observed']:.4f} · 이질성만 {dec['het_only']:.4f}"
+      f" · 측정오차만 {dec['err_only']:.4f} · 분산비 {dec['var_ratio']:.1f}배")
+assert dec["het_only"] > dec["err_only"], "이질성 큰 코호트인데 측정오차가 더 크게 나왔다"
+assert abs(dec["het_only"] - dec["observed"]) < 0.4 * dec["observed"], \
+    "이질성 근사가 관측 폭을 못 설명한다 — 분해가 잘못됐다"
+print("  ✅ ⑭ 매크로 CI 폭이 개체 간 이질성으로 설명된다는 것을 수치로 보인다")
+
+# ── ⑮ 부지표 셀이 관문을 안 바꾸고 PR-AUC 를 유병률과 함께 내는가
+print("\n### ⑮ 탐색적 부지표 (PR-AUC · 부담 층화)")
+#     ★ 두 '최대기여' 정의가 **다른 개체**를 가리키도록 만든다 — 실측 SVDB 가 그랬다
+#       (#843: AUROC 0.7167 · S 17 → 제거영향 최대 / #853: 0.7251 · S 454 → 부담 최대)
+gF = run_pipeline("(F) 부지표 — 부담 큰 실패군 + 부담 작은 극단 개체",
+                  [(300 + i, 60, 0.85) for i in range(12)],
+                  [(400, 400, 0.78), (401, 300, 0.82), (402, 200, 0.86),
+                   (403, 10, 0.55)] + [(410 + i, 25, 0.97) for i in range(8)], seed=6)
+V_before = dict(gF["CONFIG"]["result"]["verdicts"])
+exec(compile(SRC_X, "q7b_x", "exec"), gF)
+E = gF["CONFIG"]["exploratory"]
+assert gF["CONFIG"]["result"]["verdicts"] == V_before, "부지표가 관문을 바꿨다"
+print(f"    PR-AUC 매크로 {E['pr_auc_macro']:.4f} · 유병률 중앙 {E['prev_median']:.4f}"
+      f" · lift {E['lift_macro']:.1f}배")
+print(f"    단순 매크로 vs 양성수 가중 = {gF['CONFIG']['result']['test_S']['macro']:.4f}"
+      f" vs {E['auroc_weighted_by_pos']:.4f}")
+print(f"    스피어만 rho={E['spearman_pos_auroc'][0]:+.3f}")
+assert E["auroc_weighted_by_pos"] < gF["CONFIG"]["result"]["test_S"]["macro"], \
+    "부담 큰 쪽이 나쁜 코호트인데 가중값이 더 높게 나왔다"
+assert E["spearman_pos_auroc"][0] < 0, "양성수-성능 음의 상관을 못 잡았다"
+assert E["max_removal_rec"] != E["max_burden_rec"], \
+    "두 '최대기여' 정의가 같은 개체를 가리켰다 — 시나리오가 구분을 못 만든다"
+assert any("가중값으로 갈아타지 않는다" in l for l in gF["run"].lines), \
+    "집계 갈아타기 금지 경고가 없다"
+print(f"  ✅ ⑮ 제거영향 #{E['max_removal_rec']} ≠ 부담가중 #{E['max_burden_rec']} — 둘 다 보고한다")
 
 print("\n전부 통과 ✅ — Q7-B 는 TEST 를 열기 전에 스스로를 잠근다")
 sys.exit(0)
