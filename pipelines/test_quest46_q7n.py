@@ -133,13 +133,20 @@ print("  ✅ ⑦ 사전등록 규칙 체크리스트(R29 ③)")
 assert 'un_ = lambda k: VERD.get(k, "").startswith("⛔")' in SRC_FIG, "❌ 측정 불가 검사가 없다"
 assert 'if un_("N4")' in SRC_FIG, "❌ N4 결론 분기가 측정 불가를 먼저 안 거른다"
 assert 'for k in ("N2a", "N2b", "N3a", "N3b", "N4")' in SRC_FIG, "❌ 요약이 관문을 다 안 낸다"
+assert 'decide(d_["lo"], d_["hi"], 0.0, ">")' in SRC_FIG, \
+    "❌ 등가 미결을 **우월성 미결**로 읽고 있다 — 두 검정을 따로 판정해야 한다(R31 ①)"
+assert "어떤 표본으로도 등가 판정은 불가능" in SRC_FIG, "❌ 등가 프레임 오용 경고가 없다"
 assert re.search(r'elif\s+"[A-Z0-9]+"\s+in\s+VERD', ALL_SRC) is None, \
     "❌ `elif \"X\" in VERD` 패턴이 남아 있다 — Q7-M 의 버그(R29 ②)"
 print("  ✅ ⑧ 「측정 불가」가 어떤 결론 분기도 안 탄다(R29 ②)")
 
 # ── ⑨ max 바닥 · 교차적합 · Bonferroni
-for pat in ("np.nanmax(np.stack", "np.maximum(np.stack", "nanmax(np.stack", "FLOOR"):
+# R25 가 금하는 건 **개체별 max 로 부풀린 바닥을 문턱 0 과 비교**하는 것이다.
+# 팔별 매크로의 max 를 주장 값에서 **빼는** 것(보수적 차감)은 방향이 반대라 허용된다.
+for pat in ("np.nanmax(np.stack", "np.maximum(np.stack", "nanmax(np.stack"):
     assert pat not in ALL_SRC, f"❌ max 바닥(R25): {pat}"
+assert "LEAK_MAX" in SRC_D and "R25(개체별 max 바닥 금지)와 헷갈리지" in SRC_D, \
+    "❌ 보수적 누출 차감이 없거나 R25 와의 구분이 안 적혀 있다"
 assert "fold = rng.permutation(len(tt)) % K" in SRC_A, "❌ 교차적합(R22)이 아니다"
 assert "BONF3" in SRC_SET and SRC_D.count("BONF3 * 100") >= 2, "❌ 1차 가족 보정이 없다"
 assert "미보정" in SRC_D, "❌ 참고값을 미보정이라 안 적는다"
@@ -147,6 +154,8 @@ print("  ✅ ⑨ max 바닥 부재(R25) · 교차적합(R22) · 1차 가족만 B
 
 # ── ⑩ 층화 주의 · ASCII
 assert "비트 100%" in SRC_E and "개체 수준 문턱" in SRC_E, "❌ 층화의 한계를 잘못 적었다"
+assert "층별도 **폭 정합**" in SRC_E and "WIDTH_PAIRS" in SRC_E, \
+    "❌ 층별이 폭 불일치 팔을 쓴다 — 헤드라인의 층 분해가 안 된다(R27 ③)"
 bad = [t for t in re.findall(r'set_[xy]label\("([^"]*)"\)|label="([^"]*)"', SRC_FIG)
        for t in t if t and any(unicodedata.name(ch, "").startswith("HANGUL") for ch in t)]
 assert not bad, f"❌ 그림 라벨에 한글: {bad}"
