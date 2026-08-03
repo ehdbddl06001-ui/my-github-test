@@ -115,6 +115,21 @@ assert "obs = abs(aT.mean() - aD.mean())" in SRC_D, "관측 통계량이 TEST/DE
 assert "72개체 28/44" in SRC_D, "무효였던 이전 구성을 기록하지 않았다"
 print("  ✅ ⑨ P5 재구성 — 통계량과 귀무분포가 **같은 55개체**에서 나온다")
 
+# ⑩ 그림 셀이 격자 스키마와 어긋나지 않는가 — 실제로 KeyError 로 죽었다
+SRC_FIG = [c for c in CODE if "".join(c["source"]).startswith("# CELL 8")]
+assert len(SRC_FIG) == 1; SRC_FIG = "".join(SRC_FIG[0]["source"])
+assert 'g["oracle"]' not in SRC_FIG, \
+    "❌ 그림 셀이 없어진 'oracle' 키를 쓴다 — 격자는 'kind' 로 바뀌었다"
+grid_keys = set(re.findall(r'g\["(\w+)"\]', SRC_FIG))
+have_keys = {"axis", "ref", "kind", "auroc", "info", "signal", "inverted"}
+assert grid_keys <= have_keys, f"❌ 그림 셀이 격자에 없는 키를 쓴다: {grid_keys - have_keys}"
+assert "한글이 없어" in SRC_FIG, "❌ 그림 라벨의 폰트 한계가 코드에 명시돼 있지 않다"
+import unicodedata
+bad = [t for t in re.findall(r'set_title\(f?"([^"]*)"', SRC_FIG)
+       if any(unicodedata.name(ch, "").startswith("HANGUL") for ch in t)]
+assert not bad, f"❌ 그림 제목에 한글이 있다(□ 로 깨진다): {bad}"
+print("  ✅ ⑩ 그림 셀이 격자 스키마와 맞고 라벨이 ASCII 다")
+
 
 # ═══════════════════════════════════════════════════════════════════════
 class Run:
