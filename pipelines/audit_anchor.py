@@ -83,6 +83,8 @@ def audit(per_record):
         rows.append(dict(rec=int(k), prev=float(v["prev"]), sf=float(v["s_frac_anchor"]),
                          enr=e, maj=float(v["maj"]), anchor=float(v["anchor"]),
                          delta=float(v["anchor"]) - float(v["maj"]),
+                         oracle=float(v.get("oracle", float("nan"))),
+                         rr=float(v.get("rr", float("nan"))),
                          rr_sep=float(v.get("rr_sep", float("nan")))))
     rows.sort(key=lambda r: r["rec"])
     return rows, sorted(undef)
@@ -130,6 +132,23 @@ def report(rows, undef, out=print):
         out(f"    #{r['rec']}  유병률 {r['prev']:.3f} · 앵커군 S비율 {r['sf']:.3f}"
             f" · **농축비 {r['enr']:.2f}** · Δ {r['delta']:+.4f} · RR분리도 {r['rr_sep']:.3f}")
 
+    # ── 오라클(라벨 기준 상한) — 기준을 고쳐도 안 되는 개체를 이름으로 남긴다
+    orc = [r for r in rows if r["oracle"] == r["oracle"]]   # nan 제외
+    if orc:
+        out("\n  오라클(참 N 중앙 기준 = 상한) 하위 5 — **기준을 고쳐도 안 되는 개체**")
+        for r in sorted(orc, key=lambda r: r["oracle"])[:5]:
+            tag = " ⛔ 상한도 <0.5" if r["oracle"] < 0.5 else ""
+            out(f"    #{r['rec']}  오라클 {r['oracle']:.4f} · 다수결 {r['maj']:.4f}"
+                f" · 앵커 {r['anchor']:.4f} · RR위치형 {r['rr']:.4f}"
+                f" · 유병률 {r['prev']:.3f}{tag}")
+        low = [r["rec"] for r in orc if r["oracle"] < 0.5]
+        out(f"    오라클 < 0.5 인 개체: {low or '없음'}"
+            "   ← 여기 있는 개체는 **기준 문제가 아니라 특징 문제**다")
+        # 기준으로 회복 가능한 폭 vs 리듬 축
+        gap = [r["rr"] - r["oracle"] for r in orc]
+        out(f"    RR위치형 − 오라클 평균 {sum(gap)/len(gap):+.4f}"
+            "   ← 양수면 최선의 기준을 줘도 형태가 리듬에 못 미친다")
+
     out("\n  ⚠️ 이건 **사후 감사**다. 여기서 나온 문턱으로 Q7-E 관문을 다시 매기지 않는다 —")
     out("     후속 실험의 사전등록 재료다. 그리고 농축비는 **라벨을 쓴다**(유병률·S비율).")
     out("     배포 규칙으로 쓸 수 있는 건 라벨이 필요 없는 **RR 분리도** 쪽이다.")
@@ -144,7 +163,12 @@ def selftest():
     """합성으로 확인: 절대 문턱은 못 보고 농축비는 보는 상황을 만든다."""
     per = {
         # 유병률 높고 앵커가 S 를 빼냄 → 이득 (#865 형)
-        "865": dict(prev=0.576, s_frac_anchor=0.043, maj=0.2103, anchor=0.9666, rr_sep=0.40),
+        "865": dict(prev=0.576, s_frac_anchor=0.043, maj=0.2103, anchor=0.9666,
+                    oracle=0.9667, rr=0.9695, rr_sep=0.40),
+        # 실측 #822 — 오라클 0.6055 로 **방향은 돌아오지만** 상한이 낮다.
+        #   앵커군 S비율 0.4654 / 유병률 0.282 = 1.65배 농축, RR분리도 0.0443(최하위 층)
+        "822": dict(prev=0.282, s_frac_anchor=0.4654, maj=0.2291, anchor=0.2756,
+                    oracle=0.6055, rr=0.8788, rr_sep=0.0443),
         # 유병률 낮은데 앵커군에 S 가 몰림 → 손해. S비율 0.139 는 **0.5 밑**이다
         "888": dict(prev=0.029, s_frac_anchor=0.139, maj=0.934, anchor=0.711, rr_sep=0.02),
         "862": dict(prev=0.012, s_frac_anchor=0.031, maj=0.896, anchor=0.758, rr_sep=0.03),
@@ -161,9 +185,16 @@ def selftest():
         "자가검정 전제가 깨졌다 — 절대 문턱에 걸리는 개체가 있으면 안 된다"
     print("  ✅ ① 절대 문턱(S비율>0.5)은 **한 건도** 못 잡는다 — 그런데도 손해가 나 있다")
     enr = [r for r in rows if r["enr"] > 1.0]
-    assert len(enr) == 3 and {r["rec"] for r in enr} == {888, 862, 876}, \
+    assert {888, 862, 876, 822} <= {r["rec"] for r in enr}, \
         f"농축 개체 판정이 틀렸다: {[r['rec'] for r in enr]}"
-    print("  ✅ ② 농축비는 #888(4.79) · #862(2.58) · #876(1.30) 을 잡아낸다")
+    print("  ✅ ② 농축비는 #888(4.79) · #862(2.58) · #822(1.65) · #876(1.30) 을 잡아낸다")
+    r822 = next(r for r in rows if r["rec"] == 822)
+    assert r822["oracle"] > 0.5 > r822["anchor"], \
+        "#822 는 오라클로는 방향이 돌아오는데 앵커로는 안 돌아오는 개체여야 한다"
+    assert r822["rr"] - r822["oracle"] > 0.2, \
+        "#822 는 최선의 기준을 줘도 리듬 축에 한참 못 미치는 개체여야 한다"
+    print(f"  ✅ ②-b #822 — 오라클 {r822['oracle']:.4f}(방향 회복) · 앵커 {r822['anchor']:.4f}(실패)"
+          f" · RR {r822['rr']:.4f}. **부분적 기준 문제**로 분류된다")
     assert summ["mean_delta_enriched"] < 0 < summ["mean_delta_diluted"], \
         f"농축=손해 · 희석=이득 방향이 안 나온다: {summ}"
     print("  ✅ ③ 농축 개체는 평균 손해 · 희석 개체는 평균 이득 — 방향이 맞다")
