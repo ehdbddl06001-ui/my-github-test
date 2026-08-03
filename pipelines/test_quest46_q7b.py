@@ -54,6 +54,8 @@ SRC_DEV = cell("【Q7B-A】")
 SRC_TEST = cell("【Q7B-B】")
 SRC_LOSS = cell("【Q7B-L】")
 SRC_X = cell("【Q7B-X】")
+SRC_M = [c for c in CODE if "".join(c["source"]).startswith("# CELL 4c — 【Q7B-M】")]
+assert len(SRC_M) == 1; SRC_M = "".join(SRC_M[0]["source"])
 HARNESS = open(os.path.join(ROOT, "mit-bih", "colab_crossdb_svdb.py")).read()
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -100,6 +102,17 @@ assert 'CONFIG["result"]["verdicts"] == _V0' in SRC_X, "❌ 관문 불변 확인
 assert "average_precision_score" in SRC_X, "PR-AUC 를 안 잰다"
 assert "prev" in SRC_X and "lift" in SRC_X, "PR-AUC 를 유병률 없이 낸다 — R4 위반"
 print("  ✅ ②-c 부지표 셀은 관문을 바꾸지 않고, PR-AUC 를 유병률과 함께 낸다")
+
+# ②-d **조용한 fallback 금지** — 실제로 이 사고가 났다(ailab-2026-0052)
+#     `_svdb_load` 가 wfdb 목록을 못 받으면 [800..894] 연속 목록으로 넘어가고 있었다.
+#     SVDB 는 813~819·830~839 가 비어 있어 인덱스 13 부터 번호가 조용히 어긋난다.
+assert "range(800, 895)" not in HARNESS, \
+    "❌ 하니스에 연속번호 fallback 이 남아 있다 — 조용히 틀린 레코드 번호를 낸다"
+assert "매핑된 레코드 번호가 목록에 없다" in HARNESS, "매핑 자가검증이 없다"
+assert "wfdb.get_record_list" in SRC_M and "except" not in SRC_M.split("recs = [int(r)")[0][-200:], \
+    "❌ 매핑 검증 셀도 fallback 을 쓰면 안 된다"
+assert "recs[l - CONT[0]]" in SRC_M, "결정론적 복원식이 없다"
+print("  ✅ ②-d 연속번호 fallback 부재 — 목록을 못 받으면 터진다")
 
 # ③ 특징선택이 DS1 에서만 fit
 SRC_TRAIN = cell("【Q7B-T】")

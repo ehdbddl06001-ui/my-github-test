@@ -499,3 +499,15 @@ Drive MCP 에는 **삭제·갱신 도구가 없고 `create_file` 은 중복을 �
 `rr = np.diff(ann.sample)` 로 RR 을 만들어 `'+'`(리듬변경) 주석 자리에서 **가짜 RR** 이
 생긴다. S 는 RR 로 정의되는 클래스라 치명적이다. 같은 이유로 Drive 의 `svdb_feats/`
 **폴더**(07-27 산출물)도 재사용하지 않는다 — 그 오염 빌드 기준이라 정렬이 다르다.
+
+### ⚠️ `colab_crossdb_svdb.py` — Drive 사본 교체 필요 (Q7-B′ 전까지)
+
+repo 사본을 고쳤다: `_svdb_load` 의 **연속번호 fallback 제거** + 매핑 자가검증 추가
+(→ `SCORING_RULES.md` **R16**). Drive 사본(`1FpUPfr…`, 14,645 B)은 **아직 옛 버전**이다.
+
+**급하지 않다** — 현재 셀들(`【Q7B-L】`·`【Q7B-M】`·`【Q7B-X】`)은 캐시된 예측만 읽고
+매핑은 노트북 안에서 복원하므로 Drive 사본을 안 탄다. **Q7-B′ 에서 재빌드·재예측을
+할 때는 반드시 교체**할 것 — 안 그러면 같은 사고가 다시 난다.
+
+교체 절차(Drive MCP 에 삭제·갱신 도구가 없다): 사용자가 `1FpUPfr…` 를 **삭제** →
+repo 의 `mit-bih/colab_crossdb_svdb.py` 를 같은 이름으로 업로드 → 크기·중복 조회 확인.

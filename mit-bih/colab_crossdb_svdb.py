@@ -57,16 +57,25 @@ def _svdb_load(path=None):
     post = d["post_rr"][keep].astype("float32")
     edge = d["rr_edge"][keep] if "rr_edge" in d.files else np.zeros(len(y), bool)
 
-    # 레코드 인덱스 → 실제 레코드 번호(800~894). Q7 카운트와 같은 키를 쓴다.
-    try:
-        import wfdb
-        recs = wfdb.get_record_list("svdb")
-    except Exception:
-        recs = [str(i) for i in range(800, 895)]
+    # 레코드 인덱스 → 실제 레코드 번호. Q7 카운트와 같은 키를 쓴다.
+    #  ⛔ **fallback 금지.** 예전엔 여기서 실패 시 `[str(i) for i in range(800,895)]` 로
+    #     조용히 넘어갔다. 그러면 `recs[i] = 800+i` 가 되어 **그럴듯하지만 틀린 레코드
+    #     번호**가 나온다 — SVDB 는 813~819·830~839 이 비어 있어서 인덱스 13 부터 어긋난다.
+    #     실제로 그 사고가 났고(ailab-2026-0052), 라벨 800~877 중 17개가 존재하지 않는
+    #     번호였다. 터지는 게 낫다 — 조용히 틀린 번호를 내면 그걸로 쓴 모든 문장이 틀린다.
+    import wfdb
+    recs = wfdb.get_record_list("svdb")
+    if not recs:
+        raise RuntimeError("wfdb.get_record_list('svdb') 가 비었다 — 네트워크 확인. "
+                           "연속 번호로 대체하지 않는다(그러면 번호가 조용히 어긋난다)")
     if ridx.max() >= len(recs):
         raise RuntimeError(f"pid 인덱스 {ridx.max()} 가 레코드 목록 {len(recs)}개를 넘는다 — "
                            "build_labeled 가 다른 목록으로 돌았다")
     num = np.array([int(recs[i]) for i in ridx], np.int64)
+    # 매핑 자가검증: 라벨이 목록의 부분집합이어야 한다(연속 가정이 섞이면 깨진다)
+    bad = sorted(set(num.tolist()) - {int(r) for r in recs})
+    if bad:
+        raise RuntimeError(f"매핑된 레코드 번호가 목록에 없다: {bad[:8]} — 인덱스 기준이 어긋났다")
     print(f"  SVDB {len(y):,}비트 · 레코드 {len(np.unique(num))}개 "
           f"(N/S/V={int((y==0).sum()):,}/{int((y==1).sum()):,}/{int((y==2).sum()):,})")
     print(f"    RR 은 비트 주석만으로 계산됨(오염 없음) · 레코드 양끝 비트 {int(edge.sum())}개는 RR 이 이웃 복제")
