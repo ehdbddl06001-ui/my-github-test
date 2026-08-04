@@ -79,7 +79,14 @@ def static():
     ok("CI 와 함께만" in s,
        "④ 결정 숫자를 **CI 와 함께만** 인용한다(R36 ①)")
     ok("shuf5" in s and 'lambda a, b: float(b.mean() - a.mean())' in s,
-       "④ W1 이 `palign − shuf5` **짝지은 차**다")
+       "④ W1 이 `palign − shuf5` **짝지은 차**다(같은 레코드 → boot_pair)")
+    ok("def boot_two(" in s and "boot_two(PERa[LO], PERa[HI]" in s,
+       "④ ★★ **부분군 차는 독립 두 군 부트스트랩**이다 — 고/저 부담은 길이가 다르므로 "
+       "`boot_pair` 를 쓰면 브로드캐스트가 깨진다(1판이 11 vs 23 에서 죽었다)")
+    ok("각 군을 따로" in s and "boot_pair` 를 쓰면 길이가 달라" in s,
+       "④ 왜 따로 재표집하는지가 소스에 적혀 있다")
+    ok("저부담에선 못 잰다" in s,
+       "④ ★ AA2 미결을 「저부담엔 없다」로 읽지 말라고 못 박는다(R33 ①)")
 
     # ⑤ 종결 문장이 준비돼 있다
     ok("형태 갈래를 종결한다" in s and "ΔAUPRC ≤ +0.014" in s,
