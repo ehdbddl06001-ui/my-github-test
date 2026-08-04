@@ -65,26 +65,33 @@ def static():
     ok("V0 재현 실패" in s and s.count("raise AssetError") >= 2,
        "③ 재현 실패 시 **중단** — 다른 자를 감사하면 안 되므로(R35 ⑦)")
 
-    # ④ ★★ 누수 — BUT PDB 정답이 SVDB 특징에 닿으면 안 된다
-    #    (정답이 닿는 곳은 오차 **분포** 뿐이고, 그건 SVDB 라벨과 무관하다)
+    # ④ ★★ 누수 — SVDB **특징 구성**에 BUT PDB 가 닿으면 안 되고,
+    #    주입·수송은 **라벨을 보면 안 된다**(넘어오는 건 오차 분포뿐)
     cs = cells()
-    svdb_cells = [c for c in cs if "svdb_data5" in c or "score_beats" in c or "s3_of" in c]
-    ok(svdb_cells, "④ SVDB 를 다루는 셀을 찾았다")
-    joined = "\n".join(svdb_cells)
-    ok("BUT[" not in joined and "rdann" not in joined,
-       "④ ★ SVDB 셀에서 BUT PDB 주석을 **직접 읽지 않는다** — 넘어오는 건 오차 분포뿐")
-    ok("JIT" in joined and "WRO" in joined and "P_WRONG" in joined,
-       "④ 주입은 **실측 분포**(JIT·WRO·P_WRONG)로만 이뤄진다 — 합성 가정이 아니다")
-    # 주입 파라미터가 SVDB 라벨(TT/Y)에 의존하면 안 된다
-    m = re.search(r"def corrupt\(.*?\n(?=\n?def |\n?[A-Z_]+ =)", s, re.S)
-    body = m.group(0) if m else ""
-    ok(body and "TT" not in body and "Y[" not in body and "y3" not in body,
-       "④ ★★ `corrupt()` 가 **라벨을 보지 않는다**(무감독 주입 · R22)")
+    feat = [c for c in cs if "f2 = {" in c and "np.load(SV5" in c]
+    ok(len(feat) == 1, f"④ SVDB 특징 구성 셀을 하나로 특정했다({len(feat)})")
+    if feat:
+        # 로그 문구에는 BUT 가 나올 수 있다 — **코드 참조**만 본다
+        ok(not any(t in feat[0] for t in ("BUT[", "DET[", "rdann(", "pair_true_obs(",
+                                          "for rid in DET", "U1[")),
+           "④ ★ SVDB 특징 구성 셀이 BUT PDB 를 **코드로 건드리지 않는다**")
+        ok('D5["beat"]' not in feat[0] and "XB" not in feat[0],
+           "④ ★★ **파형을 읽지 않는다** — 1판은 비트 배열에서 점수를 다시 계산하려다 "
+           "죽었다(Q7-P0 는 연속 신호에서 창을 잡았고 비트 절단엔 왼쪽 문맥이 없다)")
+    ok("JIT" in s and "WRO" in s and "P_WRONG" in s and "E_Z" in s,
+       "④ 주입·수송이 **실측 분포**(JIT·WRO·P_WRONG·E_Z)로만 이뤄진다")
+    for fn in ("corrupt", "transport"):
+        m = re.search(rf"def {fn}\(.*?\n(?=\n?def |\n?[A-Z_]+ =)", s, re.S)
+        body = m.group(0) if m else ""
+        ok(body and "TT" not in body and "Y[" not in body and "y3" not in body,
+           f"④ ★★ `{fn}()` 가 **라벨을 보지 않는다**(무감독 · R22)")
 
     # ⑤ 영점이 있고, 주입을 **똑같이** 통과한다
-    ok("무정보" in s and "p_rand" in s and "corrupt(p_rand" in s,
-       "⑤ 영점 팔(무정보 위치)이 **같은 주입**을 통과한다(R34 ③)")
-    ok("주입이 인공 신호를 만든다" in s,
+    ok("무정보" in s and "sc_rand" in s and "corrupt(pidx0.copy(), sc_rand.copy()" in s,
+       "⑤ 영점 팔(무정보 점수)이 **같은 corrupt() 를 그대로** 통과한다(R34 ③)")
+    ok("rng0.permutation(psc0)" in s,
+       "⑤ 영점은 **주변분포를 보존하고 라벨 관계만 끊는다** — 순수 잡음이 아니다")
+    ok("수송 자체가 신호를 만든다" in s,
        "⑤ 영점이 깨지면 기울기를 해석하지 않는다고 박혀 있다")
 
     # ⑥ 두 경로가 어긋나면 둘 다 안 쓴다
@@ -107,11 +114,15 @@ def static():
     ok('DELIN   = "dwt"' in s and 'INPUT   = "raw"' in s and "FIRE_RATE = 1.0" in s,
        "⑨ 감사 대상 자가 Q7-U 승자(`dwt|raw` @1.00)로 고정돼 있다")
 
-    # ⑩ 벡터화 구현이 원본과 같은지 **런타임에** 확인한다
-    ok("점수 재계산 검증" in s and "corr" in s,
-       "⑩ 벡터화 `score_beats` 가 Q7-P0 자산과 맞는지 런타임 검사한다")
-    ok("score_beats 행 수 불일치" in s,
-       "⑩ 부분집합 인덱싱 실수를 런타임에 잡는다(스모크런이 IndexError 로 잡았던 자리)")
+    # ⑩ ★★ 수송이 **항등**임을 런타임에 구성적으로 증명한다
+    ok("수송 항등 검사" in s and "A_Z, E_Z = 1.0, np.zeros(1)" in s,
+       "⑩ ★ `a=1·e=0` 으로 두고 원값 복원을 **런타임에 확인**한다")
+    ok("수송 사상이 항등이 아니다" in s,
+       "⑩ 항등이 아니면 **중단**한다 — 1판이 여기서 |Δ| 1.29 로 잡혔다")
+    ok("out[m] = np.sort(x)[rp - 1]" in s and "r / (mm + 1.0)" in s,
+       "⑩ 순위→z→분위수 되돌리기가 **같은 m** 으로 짝이 맞는다(1판의 실패 원인)")
+    ok("집합 내부에서 자기완결" in s,
+       "⑩ 용량이 올라 발화 집합이 줄어도 어긋나지 않는 이유가 소스에 적혀 있다")
 
     # ⑪ 과잉 주장 금지
     for bad in ("아무도 안 했다", "최초로 증명", "확실히 입증"):
@@ -231,6 +242,38 @@ def dynamic():
     r0 = np.random.RandomState(5)
     ok(float((corrupt(p0, r0) >= 0).mean()) < 1.0,
        "ⓔ 주입이 **결측도 만든다**(Se<1 을 반영)")
+
+    # ── ⓕ2 ★★ 수송 사상 — a=1·e=0 이면 **정확히 항등**이고, a 를 낮추면 감쇠한다
+    def transport(sc, rid, r, a, e):
+        out = np.array(sc, float).copy()
+        for u in np.unique(rid):
+            mm_ = np.where(rid == u)[0]
+            x = out[mm_]; m2 = len(x)
+            if m2 < 5:
+                continue
+            rr_ = x.argsort().argsort().astype(float) + 1.0
+            from scipy.stats import norm
+            z = norm.ppf(rr_ / (m2 + 1.0))
+            zp = a * z + r.choice(e, m2)
+            rp = np.clip(np.round(norm.cdf(zp) * (m2 + 1.0)).astype(int), 1, m2)
+            out[mm_] = np.sort(x)[rp - 1]
+        return out
+
+    grp = rng.randint(0, 8, n)
+    val = rng.gamma(2.0, 1.5, n) + np.where(tt, 0.6, 0.0)
+    idv = transport(val, grp, np.random.RandomState(0), 1.0, np.zeros(1))
+    ok(float(np.max(np.abs(idv - val))) == 0.0,
+       "ⓕ2 ★ a=1·e=0 수송은 **정확히 항등**이다(최대 |Δ| 0)")
+    aucs = []
+    for a_ in (1.0, 0.6, 0.25):
+        v2_ = transport(val, grp, np.random.RandomState(3), a_, rng.normal(0, .9, 4000))
+        aucs.append(roc_auc_score(tt, v2_))
+    ok(all(b <= a + 1e-9 for a, b in zip(aucs, aucs[1:])),
+       f"ⓕ2 a 를 낮추면 판별력이 **단조 감소**한다 {[round(x, 4) for x in aucs]}")
+    ok(abs(aucs[-1] - 0.5) < abs(aucs[0] - 0.5),
+       "ⓕ2 감쇠가 0.5 쪽으로 민다 — 용량-반응의 방향이 옳다")
+    ok(set(np.round(np.sort(idv), 9)) == set(np.round(np.sort(val), 9)),
+       "ⓕ2 수송은 **값의 주변분포를 보존**한다(순위만 섞는다) — 눈금 인공물이 안 생긴다")
 
     # ── ⓕ k=0 은 손대지 않는다(항등의 근거)
     p_id = p0.copy()
