@@ -94,8 +94,18 @@ def static():
        "⑧ λ(Δ=0) 항등이 **구성으로** 보장되고 로그에 찍힌다(R35 ④)")
     ok("λ(Δ=0) 이 1.0 이 아니다" in s and "raise AssetError" in s,
        "⑧ 항등이 깨지면 **중단**")
-    ok("Z0 실패" in s and "corr" in s,
-       "⑨ ★ Z0 — 자산 대비 corr 0.71 을 재현 못 하면 **중단**")
+    # ⑨ ★★ Z0 은 **숫자 재현이 아니라 구성적 항등**이다
+    ok("FIT = FIRE & (pidx0 >= HW)" in s and "구성적 항등 증명" in s,
+       "⑨ ★ 창이 **온전히 들어가는** 비트를 따로 뽑아 항등을 증명한다")
+    ok("c_fit > c_all" in s,
+       "⑨ ★★ 불일치가 **잘린 비트에만** 있다는 것도 같이 요구한다"
+       "(온전한 비트 corr > 전체 corr)")
+    ok("asset_corr_v1bug" in s and "버그" in s and "앵커" in s,
+       "⑨ ★★★ **Q7-V 1판의 0.7122 를 기준으로 쓰지 않는다** — 그 값은 창 중심을 "
+       "`np.clip` 으로 옮기던 버그 코드의 출력이다. **버그 있는 코드의 출력에 재현 "
+       "기준을 앵커하면 안 된다**")
+    ok("Z0 실패" in s and "raise AssetError" in s,
+       "⑨ 항등이 안 서면 **중단**한다")
 
     # ⑩ 결론 검산표
     ok("CHECK = [" in s and "미검정" in s and "틀리면" in s,
@@ -241,6 +251,33 @@ def dynamic():
     ok(n_old > 126 and n_new < 126,
        "ⓔ ★ 그리고 그 차이가 **「풀 126 으로 도달 가능한가」의 답을 뒤집는다** — "
        "설명 없이 유리한 쪽을 고르면 안 되는 이유")
+
+    # ── ⓗ ★ 두 경계 규약이 **다른 값**을 낸다 — Q7-V 1판이 왜 0.71 이었나
+    xx = rng.normal(0, 1, 400)
+    W2 = 36
+    q_edge = 20                                   # 창 왼쪽이 배열 밖으로 나간다
+    #  (a) Q7-P0 규약 — **자르고 중심 유지**
+    a_, b_ = max(q_edge - W2, 0), min(q_edge + W2 + 1, len(xx))
+    seg_a = detrend(xx[a_:b_]); c_a = q_edge - a_
+    v_trunc = abs(seg_a[c_a]) / (float(np.median(np.abs(seg_a - np.median(seg_a)))) + 1e-12)
+    #  (b) Q7-V 1판 버그 — **중심을 옮긴다**
+    q_sh = int(np.clip(q_edge, W2, len(xx) - W2 - 1))
+    seg_b = detrend(xx[q_sh - W2:q_sh + W2 + 1])
+    v_clip = abs(seg_b[W2]) / (float(np.median(np.abs(seg_b - np.median(seg_b)))) + 1e-12)
+    ok(abs(v_trunc - v_clip) > 1e-6,
+       f"ⓗ ★★ 경계에서 **자르기 {v_trunc:.4f} ≠ 중심옮기기 {v_clip:.4f}** — "
+       "규약이 다르면 다른 통계량이다. Q7-V 1판의 corr 0.71 은 **옮기기** 값이었다")
+    #  창이 온전한 위치에서는 둘이 **같다**
+    q_in = 200
+    a2, b2 = q_in - W2, q_in + W2 + 1
+    seg_c = detrend(xx[a2:b2])
+    v_in = abs(seg_c[W2]) / (float(np.median(np.abs(seg_c - np.median(seg_c)))) + 1e-12)
+    q_sh2 = int(np.clip(q_in, W2, len(xx) - W2 - 1))
+    seg_d = detrend(xx[q_sh2 - W2:q_sh2 + W2 + 1])
+    v_in2 = abs(seg_d[W2]) / (float(np.median(np.abs(seg_d - np.median(seg_d)))) + 1e-12)
+    ok(abs(v_in - v_in2) < 1e-12,
+       "ⓗ ★ 창이 **온전한** 위치에서는 두 규약이 정확히 같다 — "
+       "그래서 거기서만 항등을 요구하는 게 옳다")
 
     # ── ⓖ 일시/영구 오류 분류가 옳은가 (재시도 대상 판별)
     TRANS = ("502", "503", "504", "Bad Gateway", "Service Unavailable",
