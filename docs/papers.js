@@ -2,6 +2,78 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0153",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Quality of Life in Patients With Vestibular Schwannoma Treated With the Retrolabyrinthine Approach",
+  "authors": [
+   "Wakabayashi Takeshi",
+   "Mokudai Yutaro",
+   "Shimanuki Marie N",
+   "Hosoya Makoto",
+   "Nishiyama Takanori",
+   "Ozawa Hiroyuki",
+   "Oishi Naoki"
+  ],
+  "journal": "Otology & neurotology : official publication of the American Otological Society, American Neurotology Society [and] European Academy of Otology and Neurotology",
+  "doi": "10.1097/MAO.0000000000005025",
+  "pmid": "42550582",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42550582/",
+  "pubdate": "2026-08-04",
+  "date": "2026-08-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**OBJECTIVE:** To investigate the factors affecting postoperative quality of life (QOL) and its longitudinal changes in patients undergoing vestibular schwannoma resection through the retrolabyrinthine approach (RLA).\n\n**STUDY DESIGN:** Retrospective case review.\n\n**SETTING:** Tertiary referral center.\n\n**PATIENTS:** Fifty-nine patients who underwent RLA for vestibular schwannoma between March 2016 and November 2022 and completed the Penn Acoustic Neuroma Quality of Life (PANQOL) questionnaire preoperatively and at least once at ≥6 months postoperatively. Patients were categorized into hearing preservation (n=37), hearing deterioration (n=19), and preoperative deafness (n=3) groups.\n\n**INTERVENTION:** Surgical resection of vestibular schwannoma through RLA with the intent of preserving hearing.\n\n**MAIN OUTCOME MEASURES:** Changes in PANQOL composite and subdomain scores over time.\n\n**RESULTS:** Total PANQOL scores remained stable postoperatively (mean scores: 69.7 preoperative, 72.3 at 6 mo, 76.4 at 1 y, and 75.1 at 2 y). Anxiety scores significantly improved after surgery. At 6 months postoperatively, hearing and balance scores were significantly lower in the hearing deterioration group compared with the hearing preservation group, though differences diminished by 1 and 2 years. Energy scores tended to be higher in the hearing preservation group.\n\n**CONCLUSIONS:** RLA contributes to maintaining or improving postoperative QOL. Hearing preservation supports not only auditory function but also emotional and social well-being.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0152",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Modeling Individual Patient Outcomes After Interatrial Shunt Treatment in Heart Failure With Reduced and Preserved Ejection Fraction: The RELIEVE-HF Trial",
+  "authors": [
+   "Stone Gregg W",
+   "Lindenfeld JoAnn",
+   "Zile Michael R",
+   "Anker Stefan D",
+   "Rodés-Cabau Josep",
+   "Snyder Clayton",
+   "Kar Saibal",
+   "Pfeiffer Michael P",
+   "et al."
+  ],
+  "journal": "Circulation. Heart failure",
+  "doi": "10.1161/CIRCHEARTFAILURE.125.014100",
+  "pmid": "42550570",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42550570/",
+  "pubdate": "2026-08-04",
+  "date": "2026-08-04",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Among 508 patients randomized to interatrial shunt implantation versus a placebo procedure in the RELIEVE-HF trial (Reducing Lung Congestion Symptoms Using the V-Wave Shunt in Advanced Heart Failure), 2-year clinical outcomes were improved in heart failure with reduced ejection fraction (HFrEF, n=206) and worsened in heart failure with preserved ejection fraction (HFpEF, n=302). However, randomized trials typically include therapeutic responders and nonresponders. We sought to determine the independent predictors of outcomes and model individual patient risk after atrial shunt implantation in HFrEF and HFpEF.\n\n**METHODS:** The primary outcome included all-cause death, cardiac transplantation or left ventricular assist device implantation, heart failure hospitalizations, and outpatient worsening heart failure events. From 37 baseline clinical, laboratory, echocardiographic, and hemodynamic covariates, the cumulative mean function of recurrent events during follow-up was modeled by the Lin-Wei-Yang-Ying method.\n\n**RESULTS:** Among control patients with HFrEF, independent baseline predictors of outcomes were atrial fibrillation, elevated troponin, lower left ventricular ejection fraction, and greater right atrial pressure. In contrast, independent predictors of outcomes in shunt-treated patients with HFrEF were lower systolic blood pressure and elevated right ventricular end-diastolic area index, pulmonary artery pressure, and pulmonary vascular resistance. Among control patients with HFpEF, independent predictors of outcomes were diabetes, higher heart rate and left ventricular end-systolic volume, and lower right ventricular fractional area change. Conversely, independent predictors in shunt-treated patients with HFpEF were hypertension, smoking, lower 6-minute walk distance, reduced estimated glomerular filtration rate, elevated troponin, and moderate or greater tricuspid regurgitation. Risk modeling estimated that 67.2% of patients with HFrEF might benefit from shunt placement compared with 21.4% of patients with HFpEF.\n\n**CONCLUSIONS:** In RELIEVE-HF, distinct baseline risk factors influenced cardiovascular outcomes before and after atrial shunt treatment in HFrEF and HFpEF. Despite markedly different group responses to atrial shunt treatment in the randomized HFrEF and HFpEF strata, given individual differences in patient risk factor profiles, most but not all patients with HFrEF may benefit, and some patients with HFpEF may also improve after shunt treatment.\n\n**REGISTRATION:** URL: https://www.clinicaltrials.gov; Unique identifier: NCT03499236.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0151",
   "topic": "Surgery",
   "subtopic": "",
