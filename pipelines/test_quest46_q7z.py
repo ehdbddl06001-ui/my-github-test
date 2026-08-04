@@ -115,6 +115,23 @@ def static():
     ok("위치 정보 자체가 무용지물" in s,
        "⑫ 팔 B ≈ 팔 A 의 함의(분절기 사슬 불필요)가 적혀 있다")
 
+    # ⑭ ★ 네트워크 견고성 — PhysioNet 502 로 런이 죽었다(실측)
+    ok("def net(" in s and "NET_TRIES" in s and "NET_BASE ** (i + 1)" in s,
+       "⑭ ★ 일시 오류를 **지수 백오프로 재시도**한다")
+    ok("if not _is_transient(e) or i == NET_TRIES - 1:" in s,
+       "⑭ 영구 오류(404 등)는 **즉시 올린다** — 무한 재시도하지 않는다")
+    m3 = re.search(r"def resolve_rid\(.*?\n(?=\n?_res)", s, re.S)
+    b3 = m3.group(0) if m3 else ""
+    ok(b3 and "if _is_transient(e):" in b3 and "raise" in b3,
+       "⑭ ★★ `resolve_rid` 가 일시 오류를 **삼키지 않는다** — 삼키면 "
+       "「그 이름이 아니다」로 오해해 **조용한 레코드 손실**이 된다")
+    ok("REC_FLOOR" in s and "바닥" in s and "AssetError" in s,
+       "⑭ 적재가 바닥 미만이면 **중단** — 코호트가 줄면 λ 를 앞선 런과 못 견준다")
+    ok("REC_EXPECT" in s and "코호트가 " in s,
+       "⑭ 기대 레코드 수와 다르면 **경고하고 기록**한다")
+    ok("skipped=[r for r, _ in SKIP]" in s and "name_fail=" in s,
+       "⑭ 못 받은 레코드를 **config 에 남긴다** — 나중에 코호트 차이를 추적할 수 있게")
+
     # ⑬ 과잉 주장 금지 · 한글 축라벨 금지
     for bad in ("아무도 안 했다", "최초로 증명", "확실히 입증"):
         ok(bad not in s, f"⑬ 금지 문구 없음 — 「{bad}」")
@@ -224,6 +241,22 @@ def dynamic():
     ok(n_old > 126 and n_new < 126,
        "ⓔ ★ 그리고 그 차이가 **「풀 126 으로 도달 가능한가」의 답을 뒤집는다** — "
        "설명 없이 유리한 쪽을 고르면 안 되는 이유")
+
+    # ── ⓖ 일시/영구 오류 분류가 옳은가 (재시도 대상 판별)
+    TRANS = ("502", "503", "504", "Bad Gateway", "Service Unavailable",
+             "Timeout", "timed out", "Connection", "Temporary")
+    def is_trans(msg):
+        return any(t in msg for t in TRANS)
+    ok(is_trans("NetFileError: 502 Error: Bad Gateway for url: .../21.qrs"),
+       "ⓖ ★ 실제로 런을 죽인 **502 Bad Gateway** 를 일시 오류로 분류한다")
+    ok(is_trans("NetFileError: 503 Error: Service Unavailable"),
+       "ⓖ 503 도 일시 오류다")
+    ok(not is_trans("NetFileNotFoundError: 404 Error: Not Found for url: .../1.hea"),
+       "ⓖ ★ **404 는 영구 오류**다 — 재시도하면 안 되고, `resolve_rid` 의 "
+       "「그 이름이 아니다」 분기가 여기서만 돌아야 한다")
+    ok(sum(2.0 ** (i + 1) for i in range(4)) == 30.0,
+       "ⓖ 백오프 총 대기 2+4+8+16 = 30초 — 일시 장애를 넘기기에 충분하고 "
+       "영구 장애로 런을 오래 붙잡지 않는다")
 
     # ── ⓕ 128Hz 라운딩이 Δ 를 뭉갠다 (샘플 단위로 바꾼 이유)
     def ms2s(ms, f):
