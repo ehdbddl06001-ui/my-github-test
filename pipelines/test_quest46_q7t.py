@@ -90,11 +90,24 @@ assert re.search(r"if len\(BUT_RECS\) < 10:\s*\n\s*raise AssetError", SRC_LOAD),
     "❌ 다운로드 실패 시 **중단**하지 않는다(R16)"
 assert not re.search(r"except[^\n]*:\s*\n[^\n]*(synth|합성|randn|normal\()", SRC_LOAD), \
     "❌ 다운로드 실패를 합성으로 대체하는 경로가 있다(R16)"
-# 주석 확장자 탐색은 '이름 확인'이지 대체가 아니다 — 다 못 찾으면 중단해야 한다
-fe = SRC_LOAD[SRC_LOAD.index("def find_ext("):SRC_LOAD.index("EXT_Q =")]
-assert "raise AssetError" in fe, "❌ 주석 확장자를 못 찾아도 안 멈춘다"
-assert "합성 대체가 아니라" in fe, "❌ 확장자 탐색이 R16 예외가 아니라는 근거가 없다"
-print("  ✅ ② 외부 정답 = BUT PDB 실물 · 실패 시 중단 · 합성 대체 없음(R16)")
+# ★ 주석 확장자를 **추측하지 않고 알아내는가** — 첫 판본은 ["qrs","atr","ari"] 를 찍어보다
+#   전부 실패해 멈췄다. 이름은 DB 가 알고 있다.
+le = SRC_LOAD[SRC_LOAD.index("def list_exts("):SRC_LOAD.index("_rid0 =")]
+assert "ANNOTATORS" in le, "❌ PhysioNet 표준 ANNOTATORS 파일을 안 읽는다"
+assert "디렉터리 목록" in le, "❌ ANNOTATORS 실패 시 디렉터리 목록 대안이 없다"
+assert re.search(r"EXT_P = next\(\(e for e, _, _ in PROBE", SRC_LOAD), \
+    "❌ P 주석을 **실제로 읽힌 것들 중에서** 안 고른다"
+assert "BEAT_SYM" in SRC_LOAD and "set(t[2]) & BEAT_SYM" in SRC_LOAD, \
+    "❌ QRS 주석을 **비트 기호**로 안 가린다 — 이름 추측으로 돌아간 것이다"
+assert re.search(r"if not PROBE:\s+raise AssetError", SRC_LOAD), \
+    "❌ 읽히는 주석이 없어도 안 멈춘다(R16)"
+assert re.search(r"if EXT_P is None or EXT_Q is None:\s+raise AssetError", SRC_LOAD), \
+    "❌ 주석 역할을 못 가려도 안 멈춘다(R16)"
+assert "하드코딩 아님" in SRC_LOAD, "❌ 확장자가 알아낸 값이라는 표기가 없다"
+assert '"ann_ext"' in SRC_LOAD, "❌ 알아낸 확장자를 config 에 안 남긴다 — 재현이 안 된다"
+assert "레코드 이름 예시" in SRC_LOAD, "❌ 실패 시 진단할 레코드 이름을 안 찍는다"
+print("  ✅ ② 외부 정답 = BUT PDB 실물 · **확장자는 DB 에게 물어 알아낸다** · "
+      "실패 시 중단 · 합성 대체 없음(R16)")
 
 # ── ③ ★★ 탐욕적 1:1 매칭 (R34 ①)
 assert "def match_1d(" in SRC_0, "❌ match_1d() 가 없다"
