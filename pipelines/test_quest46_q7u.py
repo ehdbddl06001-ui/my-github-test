@@ -31,11 +31,14 @@ phasor transform 축소판), **주 관문 U2 로 「소거 잔차가 원신호�
   ⑨ ★ 매칭 **탐욕적 1:1** · Se 분모 = **정답 전수**(벤치마크와 같게)
   ⑩ ★ 벤치마크 병기 · **종결 조건**(R34 ⑤) · 하드코딩 문턱 부재(R34 ④)
   ⑪ ★ `phasor`·`st` 가 **축소판**이라는 명시 · 이 런이 **SVEB 질문에 답하지 않음**
+  ⑩b ★★ **과잉주장 방지** — 「아무도 안 했다」 부재 · Diaz 2001·Shah 2004(PMID) 인용 ·
+       novelty 를 'not systematically established' 로 (사용자가 문헌으로 잡아낸 오류)
   ⑫ 「측정 불가」가 어떤 결론 분기도 안 타는가(R29 ②) · 그림 ASCII
 
 동적 검사 — 노트북 함수를 **그대로 꺼내** 돌린다:
   ⑬ ★★ `cancel_full("none")` 이 입력과 **비트 동일**한가(대조의 구성 보장)
   ⑭ ★★ `cancel_full` 이 **심실만** 지우고 P 는 남기는가 · `st` < `abs`
+  ⑭b ★★ `prev`/`prevfit` 이 **직전 비트 템플릿**인가(Shah 2004) · 단일 비트의 SNR 대가
   ⑮ ★★ Voronoi 조립에 **겹침·틈이 없는가**(각 샘플이 최근접 R 에 정확히 한 번)
   ⑯ ★★ `loro_score_thr` 이 **목표 발화율을 실제로** 만드는가
   ⑰ ★ `detect_phasor` — arctan 이 **작은 파형을 QRS 대비 증폭**하는가(방법의 요점)
@@ -184,6 +187,19 @@ bad = re.findall(r"if abs\([^)]*\) < 0\.0[0-9]+", ALL_SRC)
 assert not bad, f"❌ 하드코딩 분기 문턱: {bad}(R34 ④)"
 print(f"  ✅ ⑩ 벤치마크 {bse:.4f}(방법까지 병기) · 종결 조건 · 하드코딩 문턱 없음")
 
+# ── ⑩b ★★ 과잉주장 방지 (사용자가 문헌으로 잡아낸 오류의 회귀)
+for bad_claim in ("아무도 안 했다", "아무도 안 한", "누구도 하지 않았"):
+    assert bad_claim not in ALL_SRC and bad_claim not in MD_SRC, \
+        f"❌ 「{bad_claim}」 — Diaz 2001 · Shah 2004 가 이미 QRST 를 빼고 심방 활동을 봤다"
+assert "Diaz" in ALL_SRC and "Shah" in ALL_SRC, "❌ 선행연구를 인용하지 않는다"
+assert "15485519" in ALL_SRC, "❌ Shah 2004 의 PMID 가 없다 — 검증 가능해야 한다"
+assert "novelty_note" in SRC_SET, "❌ novelty 주장을 config 에 명시하지 않는다"
+assert "systematically established" in SRC_SET, \
+    "❌ novelty 를 **'체계적으로 확립되지 않았다'** 로 안 쓴다 — 그게 방어 가능한 표현이다"
+assert "안 된 건" in MD_SRC and "비교" in MD_SRC, "❌ 「발상이 아니라 비교」 위치가 없다"
+print("  ✅ ⑩b 「아무도 안 했다」 부재 · Diaz 2001·Shah 2004(PMID) 인용 · "
+      "novelty 는 'not systematically established'")
+
 # ── ⑪ ★ 축소판 명시 · 범위 한정
 for w in ("완전한 판본이 아니", "P 정점만"):
     assert w in MD_SRC or w in SRC_B or w in SRC_SET, f"❌ `phasor` 축소판 표기 '{w}' 가 없다"
@@ -270,6 +286,8 @@ print("  ✅ ⑬ `cancel_full('none')` 이 입력과 **비트 동일** — 대�
 pre = ms2s(BP, FS)
 vlo, vhi = ms2s(flo, FS), ms2s(fhi, FS)
 res = {m: cancel_full(SIG, RPOS, FS, m) for m in ("none", "abs", "st")}
+INP = eval(re.search(r"^INPUTS = (\([^)]*\))", SRC_SET, re.M).group(1))
+assert set(INP) >= {"raw", "none", "abs", "st", "prev", "prevfit"}, f"❌ 팔 {INP}"
 
 
 def vent_rms(x):
@@ -293,6 +311,24 @@ if len(gap):
         "❌ 첫 비트 이전 구간이 바뀌었다 — est 가 덮이지 않은 구간까지 샜다"
 print(f"  ✅ ⑭ 심실 RMS none {vr['none']:.4f} > abs {vr['abs']:.4f} > st {vr['st']:.4f} · "
       f"P 잔존 {pa['st']/pa['none']:.2f}배 · 비트 밖 보존")
+
+# ── ⑭b ★★ `prev`/`prevfit` — Shah 2004 의 직전-비트 템플릿
+assert "PREV[0] = T; PREV[1:] = B[:-1]" in cf, \
+    "❌ `prev` 템플릿이 **직전 비트**가 아니다(Shah 2004)"
+assert "Shah 2004" in cf and "가장 잘 맞는 템플릿" in cf, "❌ 근거가 안 적혀 있다"
+rp2 = cancel_full(SIG, RPOS, FS, "prev")
+rpf = cancel_full(SIG, RPOS, FS, "prevfit")
+# 직전 비트를 뺐으면 **연속한 두 비트가 닮을수록** 잔차가 작아야 한다
+assert vent_rms(rp2) < vent_rms(res["none"]), "❌ `prev` 가 심실을 못 지운다"
+assert vent_rms(rpf) <= vent_rms(rp2) * 1.05, "❌ `prevfit` 이 `prev` 보다 크게 나쁘다"
+# 첫 비트는 앞이 없으므로 중앙값 템플릿으로 — 그래도 유한해야 한다
+assert np.isfinite(rp2).all() and np.isfinite(rpf).all(), "❌ 첫 비트 처리에서 NaN"
+# ★ 단일 비트 템플릿은 **중앙값보다 잡음이 크다** — Shah 가 명시한 대가다
+assert vent_rms(rp2) > vent_rms(res["st"]), \
+    "❌ 합성이 SNR 대가를 재현 못 한다 — 실데이터에서 `prev` 가 진 이유를 못 설명한다"
+print(f"  ✅ ⑭b `prev` 템플릿 = **직전 비트**(Shah 2004) · 심실 RMS "
+      f"prev {vent_rms(rp2):.4f} · prevfit {vent_rms(rpf):.4f} vs st {vent_rms(res['st']):.4f} "
+      f"— 단일 비트의 **SNR 대가**가 보인다")
 
 # ── ⑮ ★★ Voronoi 조립에 겹침·틈이 없는가
 est = SIG[:, :2] - res["abs"]
@@ -366,4 +402,4 @@ nn = need_n(48, 0.63, 0.79, 0.7145 - 0.70, 0.05)
 assert nn is not None and np.isfinite(nn), "❌ 필요 표본을 못 낸다"
 print(f"  ✅ ⑱ 1:1 매칭 · Se {se:.3f}/PPV {pp:.3f} 분모 · F1 조화평균 · decide/mde/need_n")
 
-print("\n✅ Q7-U 픽스처 18/18 통과")
+print("\n✅ Q7-U 픽스처 20/20 통과")
