@@ -105,7 +105,16 @@ assert re.search(r"if EXT_P is None or EXT_Q is None:\s+raise AssetError", SRC_L
     "❌ 주석 역할을 못 가려도 안 멈춘다(R16)"
 assert "하드코딩 아님" in SRC_LOAD, "❌ 확장자가 알아낸 값이라는 표기가 없다"
 assert '"ann_ext"' in SRC_LOAD, "❌ 알아낸 확장자를 config 에 안 남긴다 — 재현이 안 된다"
-assert "레코드 이름 예시" in SRC_LOAD, "❌ 실패 시 진단할 레코드 이름을 안 찍는다"
+assert "RECORDS 이름 예시" in SRC_LOAD, "❌ 실패 시 진단할 레코드 이름을 안 찍는다"
+# ★ RECORDS 의 이름이 실제 파일명과 다를 수 있다(BUT PDB 1.0.0: RECORDS `1` vs 파일 `01.hea`)
+assert "def resolve_rid(" in SRC_LOAD, "❌ 레코드 이름을 실물로 확인하지 않는다"
+rr = SRC_LOAD[SRC_LOAD.index("def resolve_rid("):SRC_LOAD.index("run.log(f\"  RECORDS")]
+assert "rdheader" in rr, "❌ 헤더를 실제로 읽어 확인하지 않는다 — 또 추측이다"
+assert 'f"{int(r):0{w}d}"' in rr, "❌ 0 채움 변형을 안 시도한다(BUT PDB 1.0.0 의 실제 불일치)"
+assert re.search(r"if len\(BUT_RECS\) < 10:\s+raise AssetError\(f\"헤더가", SRC_LOAD), \
+    "❌ 이름 해석이 실패해도 안 멈춘다(R16)"
+assert "0 채움이 필요했다" in SRC_LOAD, "❌ 불일치를 몇 개 고쳤는지 안 찍는다"
+assert '"pad_fixed"' in SRC_LOAD or "pad_fixed=" in SRC_LOAD, "❌ config 에 안 남긴다"
 print("  ✅ ② 외부 정답 = BUT PDB 실물 · **확장자는 DB 에게 물어 알아낸다** · "
       "실패 시 중단 · 합성 대체 없음(R16)")
 
