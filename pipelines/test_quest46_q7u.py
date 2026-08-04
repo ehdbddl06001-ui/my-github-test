@@ -39,6 +39,8 @@ phasor transform 축소판), **주 관문 U2 로 「소거 잔차가 원신호�
   ⑬ ★★ `cancel_full("none")` 이 입력과 **비트 동일**한가(대조의 구성 보장)
   ⑭ ★★ `cancel_full` 이 **심실만** 지우고 P 는 남기는가 · `st` < `abs`
   ⑭b ★★ `prev`/`prevfit` 이 **직전 비트 템플릿**인가(Shah 2004) · 단일 비트의 SNR 대가
+  ⑭c ★★ **템플릿 적응성 축** — `blend`(w LORO) · `blendfit`(w 를 최소제곱으로) ·
+       `local`(자기 비트 제외). 양끝(abs·prev)을 별도 팔로 감싸는가(R33 ②)
   ⑮ ★★ Voronoi 조립에 **겹침·틈이 없는가**(각 샘플이 최근접 R 에 정확히 한 번)
   ⑯ ★★ `loro_score_thr` 이 **목표 발화율을 실제로** 만드는가
   ⑰ ★ `detect_phasor` — arctan 이 **작은 파형을 QRS 대비 증폭**하는가(방법의 요점)
@@ -137,8 +139,11 @@ print(f"  ✅ ⑤ 문턱 = **점수 분위수** · 격자 {rg} · 비교는 **�
 
 # ── ⑥ ★★ LORO 가 네 군데 전부
 assert "if r != rid_out" in lt, "❌ 문턱이 **자기 레코드**를 본다(R22)"
-assert re.search(r"best = max\(cand, key=lambda rv: np\.mean\(\s*\n?\s*\[per_rv\[rv\]\[o\]\[\"f1\"\]"
-                 r" for o in per_rv\[rv\] if o != rid\]", SRC_C), "❌ Rv 선택이 LORO 가 아니다"
+# ★ 하위 파라미터(Rv · blend 의 w · local 의 K)를 **한 곳에서** LORO 로 고른다
+assert re.search(r"best = max\(cand, key=lambda v: np\.mean\(\s*\n?\s*"
+                 r"\[per\[v\]\[o\]\[\"f1\"\] for o in per\[v\] if o != rid\]", SRC_C), \
+    "❌ 하위 파라미터(Rv·w·K) 선택이 LORO 가 아니다"
+assert "VARS = [(inp, prm, rv)" in SRC_C, "❌ 하위 파라미터를 한 곳에서 안 훑는다"
 assert "for o in COMMON if o != rid" in SRC_C, "❌ 팔×발화율 선택이 LORO 가 아니다"
 assert "for o in R2 if o != rid" in SRC_D, "❌ U2 의 팔 선택이 LORO 가 아니다"
 assert "선택 편의" in SRC_C, "❌ 선택 편의를 정량해 출력하지 않는다"
@@ -330,6 +335,43 @@ print(f"  ✅ ⑭b `prev` 템플릿 = **직전 비트**(Shah 2004) · 심실 RMS
       f"prev {vent_rms(rp2):.4f} · prevfit {vent_rms(rpf):.4f} vs st {vent_rms(res['st']):.4f} "
       f"— 단일 비트의 **SNR 대가**가 보인다")
 
+# ── ⑭c ★★ 템플릿 적응성 축 — blend / blendfit / local (사용자 제안)
+W = eval(re.search(r"^W_BLEND = (\([^)]*\))", SRC_SET, re.M).group(1))
+KL = eval(re.search(r"^K_LOCAL = (\([^)]*\))", SRC_SET, re.M).group(1))
+assert "def in_params(" in SRC_SET, "❌ 하위 파라미터 선택기가 없다"
+assert 0.0 < min(W) and max(W) < 1.0, \
+    f"❌ 혼합 격자 {W} 가 양끝을 포함한다 — w=1 은 `abs`, w=0 은 `prev` 로 이미 별도 팔이다"
+assert "abs" in INP and "prev" in INP, "❌ 양끝 팔(abs·prev)이 없으면 격자가 안 감싼다(R33 ②)"
+bad_w = re.findall(r"w\s*=\s*0\.[0-9]+(?!\s*\))", cf)
+assert not bad_w, f"❌ 혼합 가중치가 하드코딩됐다 {bad_w} — LORO 로 골라야 한다(R34 ④)"
+assert 'w = float(prm)' in cf, "❌ `blend` 의 w 가 파라미터로 안 들어온다"
+# blendfit — 정규방정식을 실제로 푸는가(가중치를 정하지 않는가)
+assert "dt = uu * vv - uv * uv" in cf and "a[:, None] * u + b[:, None] * v" in cf, \
+    "❌ `blendfit` 이 [중앙값, 직전] 2 회귀자 최소제곱이 아니다"
+assert "데이터가 w 를 정한다" in cf, "❌ blendfit 의 요점이 안 적혀 있다"
+# local — 자기 비트를 빼는가
+assert "if j != i" in cf, "❌ `local` 이 **자기 비트**를 템플릿에 넣는다 — 자기 P 를 지운다"
+assert "자기 비트는 뺀다" in cf or "자기 비트 제외" in cf, "❌ 근거가 안 적혀 있다"
+# 하위 파라미터가 팔 **안에서** LORO 로 선택되는가
+assert "VARS = [(inp, prm, rv) for prm in in_params(inp)" in SRC_C, \
+    "❌ 하위 파라미터를 팔 안에서 안 훑는다"
+assert 'for o in per[v] if o != rid' in SRC_C, "❌ 하위 파라미터 선택이 LORO 가 아니다"
+# 동적 — 혼합이 양끝으로 수렴하는가(보간이 맞는가)
+b1 = cancel_full(SIG, RPOS, FS, "blend", 1.0)
+b0 = cancel_full(SIG, RPOS, FS, "blend", 0.0)
+assert np.allclose(b1, res["abs"], atol=1e-9), "❌ blend(w=1) 이 `abs` 와 다르다 — 보간이 틀렸다"
+assert np.allclose(b0, rp2, atol=1e-9), "❌ blend(w=0) 이 `prev` 와 다르다 — 보간이 틀렸다"
+bmid = cancel_full(SIG, RPOS, FS, "blend", W[len(W) // 2])
+bf = cancel_full(SIG, RPOS, FS, "blendfit")
+lc = cancel_full(SIG, RPOS, FS, "local", KL[0])
+assert vent_rms(bmid) < vent_rms(res["none"]), "❌ `blend` 가 심실을 못 지운다"
+assert vent_rms(bf) <= vent_rms(res["abs"]) * 1.02, \
+    "❌ `blendfit`(최소제곱)이 `abs`(w 고정 1)보다 심실 잔차가 크다 — 적합이 안 됐다"
+assert vent_rms(lc) < vent_rms(res["none"]), "❌ `local` 이 심실을 못 지운다"
+assert np.isfinite(bf).all() and np.isfinite(lc).all(), "❌ NaN"
+print(f"  ✅ ⑭c 혼합 격자 {W}(양끝 미포함·별도 팔로 감쌈) · K {KL} · "
+      f"blend(w=1)≡abs · blend(w=0)≡prev · blendfit 최소제곱 · local 자기 비트 제외")
+
 # ── ⑮ ★★ Voronoi 조립에 겹침·틈이 없는가
 est = SIG[:, :2] - res["abs"]
 covered = np.abs(est).sum(1) > 0
@@ -402,4 +444,4 @@ nn = need_n(48, 0.63, 0.79, 0.7145 - 0.70, 0.05)
 assert nn is not None and np.isfinite(nn), "❌ 필요 표본을 못 낸다"
 print(f"  ✅ ⑱ 1:1 매칭 · Se {se:.3f}/PPV {pp:.3f} 분모 · F1 조화평균 · decide/mde/need_n")
 
-print("\n✅ Q7-U 픽스처 20/20 통과")
+print("\n✅ Q7-U 픽스처 21/21 통과")
