@@ -22,6 +22,8 @@ Q7-T 는 질문을 바꾸지 않고 **좌표계를 바꾼다**(P delineation + Q
   ⑤ ★★ 전문가 주석이 **평가에만** — `p_detect()` 가 정답을 안 본다(R22)
   ⑥ ★ 좌표 정합 — BUT PDB 를 **360Hz 로 리샘플**하고 **주석도 같은 배율**(R27 ③)
   ⑦ ★ 부재 문턱이 **BUT PDB 에서** — SVDB 라벨을 안 본다(순환 방지 · R22) · 전이 진단
+  ⑦c ★★ 소거 방식 선택도 **LORO** 인가 — 세 방식의 T1 점수 최대를 고르면 그건 평가
+       지표로 고른 것이라 보고값이 낙관 편향된다(선택 편의)
   ⑦b ★★ 검출기가 **기권하는가** — 기권이 없으면 PPV 상한이 P 유병률(~0.71)로 구조적으로
        고정돼 PPV 문턱이 검출기가 아니라 **유병률**을 잰다(스모크런이 잡았다)
   ⑧ ★ 벤치마크 병기(Saclova 2022) · **종결 조건**이 코드에 있는가(R34 ⑤)
@@ -167,6 +169,20 @@ assert "frac_with_p" in SRC_B, "❌ PPV 구조적 상한(P 유병률)을 출력�
 print("  ✅ ⑦b 검출기가 **기권한다**(LORO Youden · 자기 레코드 제외) — "
       "PPV 가 유병률이 아니라 검출기를 잰다")
 
+# ── ⑦c ★★ 소거 방식 선택도 LORO 인가 (선택 편의)
+assert "def loro_pick(" in SRC_B, "❌ 소거 방식을 LORO 로 안 고른다 — 지표로 고르면 선택 편의다"
+lp = SRC_B[SRC_B.index("def loro_pick("):SRC_B.index("T1TAB = {}")]
+assert "for o in RIDS if o != rid" in lp, "❌ 방식 선택이 **평가 대상 레코드**를 본다"
+assert 'PICK = {r: loro_pick(' in SRC_B, "❌ 레코드마다 LORO 선택을 안 한다"
+assert 'DIFF["T1"] = dict(cancel="loro"' in SRC_B, "❌ T1 판정이 LORO 선택 팔이 아니다"
+assert "선택 편의" in SRC_B, "❌ 선택 편의를 정량해 출력하지 않는다"
+assert "_omax" in SRC_B, "❌ 「최대를 고르면 얼마인지」 대조를 안 낸다"
+for tag, src in (("T2", SRC_C), ("T3", SRC_C)):
+    assert f'DIFF["{tag}"] = dict(cancel="loro"' in src, f"❌ {tag} 도 LORO 선택이어야 한다"
+assert 'if o != r] or [-np.inf]' in SRC_C, "❌ T2/T3 방식 선택이 평가 대상을 본다"
+assert re.search(r"^(?!.*def ).*= max\(T1TAB, key", SRC_B, re.M) is None,     "❌ 지표 최대로 방식을 고르는 코드가 남아 있다"
+print("  ✅ ⑦c 소거 방식 선택도 **LORO** — T1·T2·T3 판정 팔이 평가 대상 레코드를 안 본다")
+
 # ── ⑧ ★ 벤치마크 · 종결 조건 (R34 ⑤)
 bse = float(re.search(r"^BENCH_SE, BENCH_PP = ([\d.]+), ([\d.]+)", SRC_SET, re.M).group(1))
 assert abs(bse - 0.9307) < 1e-6, f"❌ 벤치마크 Se {bse} — Saclova 2022 는 0.9307"
@@ -233,7 +249,8 @@ TOL = int(round(tol_ms * FS / 1000))
 NS = dict(np=np)
 exec("import numpy as np\nfrom scipy.signal import resample_poly\nfrom math import gcd\n"
      "class AssetError(RuntimeError): pass\n", NS)
-NS.update(FS=FS, RPRE=RPRE, BEAT_LEN=BEAT_LEN, FIT_LO=fl, FIT_HI=fh,
+CANCEL = eval(re.search(r"^CANCEL = (\([^)]*\))", SRC_SET, re.M).group(1))
+NS.update(CANCEL=CANCEL, FS=FS, RPRE=RPRE, BEAT_LEN=BEAT_LEN, FIT_LO=fl, FIT_HI=fh,
           SHIFTS=SHIFTS, P_LO=pl, P_HI=ph, P_SMOOTH=P_SMOOTH,
           REF_LO=REF_LO, REF_HI=REF_HI)
 exec(SRC_0[SRC_0.index("def decide("):SRC_0.index("class AssetError")], NS)
@@ -405,4 +422,4 @@ except ValueError:
     pass
 print(f"  ✅ ⑱ `decide`·`mde`·`need_n` 건전성 (필요 표본 {nn:.0f})")
 
-print("\n✅ Q7-T 픽스처 19/19 통과")
+print("\n✅ Q7-T 픽스처 20/20 통과")
