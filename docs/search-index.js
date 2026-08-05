@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 643,
+  "total": 649,
   "byType": {
    "kmle": 427,
+   "usmle": 54,
    "paper": 151,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
@@ -18,9 +18,9 @@ window.MEDKOS_INDEX = {
    "Nephrology": 47,
    "Infectious Disease": 46,
    "Pediatrics": 43,
-   "Obstetrics & Gynecology": 30,
-   "Neurology": 29,
-   "Psychiatry": 29,
+   "Obstetrics & Gynecology": 31,
+   "Neurology": 30,
+   "Psychiatry": 30,
    "Endocrinology": 28,
    "Gastroenterology": 27,
    "Pulmonology": 27,
@@ -31,15 +31,15 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 26,
    "Hematology": 25,
    "Surgery": 24,
-   "Pathology": 21,
+   "Pathology": 22,
    "Laboratory Medicine": 18,
    "Hematology-Oncology": 16,
-   "Physiology": 6,
+   "Physiology": 7,
+   "Immunology": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
    "Biochemistry": 3,
-   "Immunology": 3,
    "Oncology": 3,
    "Pharmacology": 3,
    "Allergy": 2,
@@ -51,10 +51,10 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 486,
+   "high": 492,
    "medium": 157
   },
-  "tagCount": 1617
+  "tagCount": 1633
  },
  "docs": [
   {
@@ -632,6 +632,122 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0426.md",
    "snippet": "68세 남자가 2시간 전 갑자기 시작된 가슴 두근거림으로 응급실에 왔다. 어지럽지만 흉통·호흡곤란은 없다. 맥박은 빠르고 완전히 불규칙하며, 혈압은 안정적으로 유지된다. 심전도는 자료와 같다. 활력징후·검사는 자료와 같다. 이 환자에게 가장 적절한 처치는? A. 즉시 동시성 전기심장율동전환 B. 정맥 딜티아젬 투여 C. 정맥 아데노신 투여 D. 정맥 아트로핀 투여 E. 경구 이뇨제 투여 혈역학적으로 안정된 급성 심방세동 빠른 ",
    "text": "Cardiology Atrial Fibrillation with Rapid Ventricular Response atrial-fibrillation rate-control ecg palpitation KMLE 2026 / Claude Routine 68세 남자가 2시간 전 갑자기 시작된 가슴 두근거림으로 응급실에 왔다. 어지럽지만 흉통·호흡곤란은 없다. 맥박은 빠르고 완전히 불규칙하며, 혈압은 안정적으로 유지된다. 심전도는 자료와 같다. 활력징후·검사는 자료와 같다. 이 환자에게 가장 적절한 처치는? A. 즉시 동시성 전기심장율동전환 B. 정맥 딜티아젬 투여 C. 정맥 아데노신 투여 D. 정맥 아트로핀 투여 E. 경구 이뇨제 투여 혈역학적으로 안정된 급성 심방세동 빠른 심실반응에서는 방실결절 차단제(비 DHP 칼슘차단제 또는 베타차단제)로 심박수 조절이 우선이다."
+  },
+  {
+   "id": "usmle-2026-0055",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management",
+   "tags": [
+    "alcohol-withdrawal",
+    "delirium-tremens",
+    "benzodiazepine",
+    "CIWA-Ar",
+    "withdrawal-seizure"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0055.md",
+   "snippet": "A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, dia",
+   "text": "Psychiatry Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management alcohol-withdrawal delirium-tremens benzodiazepine CIWA-Ar withdrawal-seizure USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management) A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, diaphoretic, agitated, and reports seeing insects crawling on the wall; nursing staff witnessed a brief generalized tonic clonic seizure this morning. Vital signs and laboratory studies are shown; blood glucose and head CT are unremarkable. His CIWA Ar score is 22. Which of the following is the most appropriate next step in management? A. Haloperidol alone for agitation, without a benzodiazepine B. Phenytoin loading for ongoing seizure prophylaxis C. Benzodiazepine (e.g., lorazepam) dosed according to a symptom triggered CIWA Ar protocol D. Thiamine supplementation alone, withholding benzodiazepine treatment E. Physical restraints and continuous observation without pharmacologic treatment, pending psychiatry consultation This patient's history of heavy daily alcohol use, last drink the day before admission, and autonomic hyperactivity with hallucinations and a withdrawal seizure indicate severe alcohol withdrawal at risk for progression to delirium tremens; the appropriate next step is symptom triggered benzodiazepine dosing (e.g., via the CIWA Ar protocol), which treats the underlying GABA A receptor hypofunction driving both the autonomic instability and seizure risk."
+  },
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis",
+   "tags": [
+    "acute-ischemic-stroke",
+    "alteplase",
+    "tPA",
+    "blood-pressure-threshold",
+    "thrombolysis-eligibility"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute stroke thrombolysis eligibility)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 68 year old man is brought to the emergency department 2 hours and 10 minutes after the witnessed sudden onset of right sided weakness and difficulty speaking. He takes no anticoagulant or antiplatelet medication and has had no recent sur",
+   "text": "Neurology Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis acute-ischemic-stroke alteplase tPA blood-pressure-threshold thrombolysis-eligibility USMLE-style / MedKOS (neurology · acute stroke thrombolysis eligibility) A 68 year old man is brought to the emergency department 2 hours and 10 minutes after the witnessed sudden onset of right sided weakness and difficulty speaking. He takes no anticoagulant or antiplatelet medication and has had no recent surgery or bleeding. Vital signs and initial studies are shown; noncontrast CT of the head shows no hemorrhage and no early ischemic changes involving more than one third of the middle cerebral artery territory. Which of the following is the most appropriate next step in management? A. Administer intravenous alteplase immediately without addressing the blood pressure B. Lower blood pressure with intravenous labetalol to below 185/110 mmHg, then administer intravenous alteplase C. Give aspirin 325 mg orally now and defer thrombolytic therapy D. Proceed directly to mechanical thrombectomy without administering thrombolytic therapy E. Obtain CT angiography before making any treatment decision, delaying thrombolysis This patient is within the eligible time window for intravenous alteplase and has no exclusion criteria on labs or imaging, but his blood pressure (196/110 mmHg) exceeds the 185/110 mmHg threshold required before thrombolysis; the correct next step is to lower blood pressure with a rapid acting intravenous agent and then give alteplase promptly, without delaying treatment for additional imaging or substituting antiplatelet therapy."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ectopic Pregnancy — Methotrexate Eligibility in a Hemodynamically Stable Patient",
+   "tags": [
+    "ectopic-pregnancy",
+    "methotrexate",
+    "beta-hCG",
+    "adnexal-mass",
+    "hemodynamic-stability"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · early pregnancy management)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 27 year old woman, gravida 2 para 1, at 6 weeks' gestation by last menstrual period, comes to the office with mild, nonradiating lower abdominal discomfort and no vaginal bleeding. She is alert, comfortable, and hemodynamically stable, wi",
+   "text": "Obstetrics & Gynecology Ectopic Pregnancy — Methotrexate Eligibility in a Hemodynamically Stable Patient ectopic-pregnancy methotrexate beta-hCG adnexal-mass hemodynamic-stability USMLE-style / MedKOS (obstetrics · early pregnancy management) A 27 year old woman, gravida 2 para 1, at 6 weeks' gestation by last menstrual period, comes to the office with mild, nonradiating lower abdominal discomfort and no vaginal bleeding. She is alert, comfortable, and hemodynamically stable, with a soft abdomen and no peritoneal signs. Transvaginal ultrasound shows no intrauterine gestational sac, a 2.1 cm left adnexal mass without cardiac activity, and no free fluid in the pelvis. Serial beta hCG values are shown. Which of the following is the most appropriate next step in management? A. Emergency laparoscopic salpingectomy today B. Single dose intramuscular methotrexate with scheduled hCG monitoring C. Expectant management with hCG monitoring only, no pharmacologic or surgical treatment D. Dilation and curettage to evaluate for a failed intrauterine pregnancy E. Repeat transvaginal ultrasound in one week before making any treatment decision This patient is hemodynamically stable with an ectopic pregnancy (no intrauterine sac, adnexal mass, suboptimally rising hCG below the discriminatory zone), normal liver and renal function, and no contraindications noted — she meets criteria for single dose methotrexate, which avoids surgery while treating the ectopic pregnancy once confirmed and monitored appropriately."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width",
+   "tags": [
+    "complete-heart-block",
+    "escape-rhythm",
+    "AV-node",
+    "His-Purkinje",
+    "cardiac-conduction-physiology",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, ",
+   "text": "Physiology Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width complete-heart-block escape-rhythm AV-node His-Purkinje cardiac-conduction-physiology ECG USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization) A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, wide complex ventricular rhythm, with no fixed relationship between the P waves and the QRS complexes. Laboratory studies shown are unremarkable, and he takes no cardioactive medications. The slow rate and wide QRS morphology of this ventricular rhythm are most consistent with an escape pacemaker originating at which of the following sites? A. Distal Purkinje fibers within the ventricular myocardium (infra Hisian) B. The proximal bundle of His, just below the atrioventricular node C. The sinoatrial node, generating the observed atrial activity itself D. An ectopic atrial focus near the crista terminalis E. The coronary sinus ostium, producing a low atrial escape rhythm In complete AV block, the width and rate of the escape rhythm localize the level of the escape pacemaker: a narrower QRS at a relatively faster rate (~40–60/min) suggests a junctional/proximal His origin, whereas a wide QRS at a slower rate (~20–40/min), as seen here, indicates a more distal, infra Hisian ventricular myocardial escape focus with fewer intrinsic pacemaker cells and slower automaticity."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Immunology",
+   "subtopic": "Chronic Granulomatous Disease (NADPH oxidase respiratory burst defect)",
+   "tags": [
+    "chronic-granulomatous-disease",
+    "NADPH-oxidase",
+    "respiratory-burst",
+    "catalase-positive-organisms",
+    "NBT-test"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · phagocyte oxidative killing defect)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 4 year old boy has had recurrent skin abscesses caused by Staphylococcus aureus, suppurative lymphadenitis, and now presents with fever and a pulmonary infiltrate found on imaging to be caused by Aspergillus species. Vital signs and labor",
+   "text": "Immunology Chronic Granulomatous Disease (NADPH oxidase respiratory burst defect) chronic-granulomatous-disease NADPH-oxidase respiratory-burst catalase-positive-organisms NBT-test USMLE-style / MedKOS (immunology · phagocyte oxidative killing defect) A 4 year old boy has had recurrent skin abscesses caused by Staphylococcus aureus, suppurative lymphadenitis, and now presents with fever and a pulmonary infiltrate found on imaging to be caused by Aspergillus species. Vital signs and laboratory studies are shown; serum immunoglobulin levels and lymphocyte counts are normal. A dihydrorhodamine (DHR) flow cytometry assay shows markedly reduced oxidation compared with controls. The enzyme defect underlying this patient's recurrent infections most directly impairs which of the following processes? A. Complement mediated opsonization of encapsulated bacteria via the classical pathway B. CD40 CD40 ligand interaction required for immunoglobulin class switching C. MHC class II mediated antigen presentation to CD4+ helper T cells D. Microtubule dependent fusion of phagosomes with lysosomes E. NADPH oxidase mediated generation of superoxide during the phagocyte respiratory burst Recurrent infections with catalase positive organisms (S. aureus, Aspergillus), normal immunoglobulins and lymphocyte counts, and a markedly reduced DHR oxidation assay point to chronic granulomatous disease, caused by a defect in the phagocyte NADPH oxidase complex that normally generates superoxide for oxidative killing of ingested catalase positive microbes."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Renal AL Amyloidosis (light-chain fibril pathogenesis vs other amyloid subtypes)",
+   "tags": [
+    "amyloidosis",
+    "AL-amyloid",
+    "light-chain",
+    "Congo-red",
+    "nephrotic-syndrome",
+    "plasma-cell-dyscrasia"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · amyloidosis classification)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 64 year old man is evaluated for lower extremity edema and fatigue over the past 2 months. He has no history of rheumatoid arthritis, inflammatory bowel disease, chronic infection, or long term dialysis, and there is no family history of ",
+   "text": "Pathology Renal AL Amyloidosis (light-chain fibril pathogenesis vs other amyloid subtypes) amyloidosis AL-amyloid light-chain Congo-red nephrotic-syndrome plasma-cell-dyscrasia USMLE-style / MedKOS (pathology · amyloidosis classification) A 64 year old man is evaluated for lower extremity edema and fatigue over the past 2 months. He has no history of rheumatoid arthritis, inflammatory bowel disease, chronic infection, or long term dialysis, and there is no family history of similar illness. A renal biopsy shows amorphous eosinophilic material in the glomerular mesangium that exhibits apple green birefringence under polarized light after Congo red staining. Bone marrow biopsy reveals a clonal population of plasma cells. Which of the following best describes the pathogenesis of this patient's renal disease? A. Reactive systemic deposition of serum amyloid A protein driven by a chronic inflammatory disease B. Deposition of a hereditary mutant transthyretin variant produced by the liver C. Misfolded monoclonal immunoglobulin light chains from a clonal plasma cell population forming amyloid fibrils D. Deposition of wild type (non mutant) transthyretin associated with advanced age E. Accumulation of beta 2 microglobulin fibrils related to long term hemodialysis The absence of a chronic inflammatory disease (excludes AA amyloidosis), absence of dialysis history (excludes Aβ2M), and absence of a hereditary or advanced age transthyretin pattern, combined with a clonal plasma cell population and monoclonal lambda light chains, indicate AL amyloidosis: misfolded monoclonal light chains misassemble into beta pleated sheet fibrils that deposit in tissue and bind Congo red with apple green birefringence."
   },
   {
    "id": "paper-2026-0151",
