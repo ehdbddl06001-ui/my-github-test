@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 643,
+  "total": 649,
   "byType": {
    "kmle": 427,
    "paper": 151,
+   "usmle": 54,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
@@ -18,9 +18,9 @@ window.MEDKOS_INDEX = {
    "Nephrology": 47,
    "Infectious Disease": 46,
    "Pediatrics": 43,
-   "Obstetrics & Gynecology": 30,
-   "Neurology": 29,
-   "Psychiatry": 29,
+   "Obstetrics & Gynecology": 31,
+   "Neurology": 30,
+   "Psychiatry": 30,
    "Endocrinology": 28,
    "Gastroenterology": 27,
    "Pulmonology": 27,
@@ -31,17 +31,17 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 26,
    "Hematology": 25,
    "Surgery": 24,
-   "Pathology": 21,
+   "Pathology": 22,
    "Laboratory Medicine": 18,
    "Hematology-Oncology": 16,
-   "Physiology": 6,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,10 +51,10 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 486,
+   "high": 492,
    "medium": 157
   },
-  "tagCount": 1617
+  "tagCount": 1633
  },
  "docs": [
   {
@@ -2136,6 +2136,120 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0362.md",
    "snippet": "62세 남자가 1시간 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 3년 전 심근경색으로 스텐트 삽입을 받은 병력이 있다. 의식은 명료하고 흉통은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아미오다론을 투여한다 B. 정맥 아데노신을 빠르게 정주한다 C. 즉시 비동기 제세동을 시행한다 D. 경구 베라파밀을 투여한다 E. 미주신경자극수기를 반복 시행",
    "text": "Cardiology Sustained Monomorphic Ventricular Tachycardia ventricular-tachycardia wide-complex-tachycardia amiodarone post-MI ECG KMLE 2026 / Claude Routine 62세 남자가 1시간 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 3년 전 심근경색으로 스텐트 삽입을 받은 병력이 있다. 의식은 명료하고 흉통은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아미오다론을 투여한다 B. 정맥 아데노신을 빠르게 정주한다 C. 즉시 비동기 제세동을 시행한다 D. 경구 베라파밀을 투여한다 E. 미주신경자극수기를 반복 시행한다 허혈성 심질환 병력에 규칙적이고 넓은 QRS 빈맥이면 심실빈맥으로 간주한다. 혈압·의식·말초관류가 유지되는 안정 상태이므로 즉각 전기충격보다 항부정맥제(아미오다론 등)로 종료를 시도하는 것이 초기 처치이며, 방실결절차단제(베라파밀·아데노신)는 금기다."
+  },
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Alcohol Withdrawal Delirium (Delirium Tremens) — Symptom-Triggered Benzodiazepine Therapy",
+   "tags": [
+    "alcohol-withdrawal",
+    "delirium-tremens",
+    "benzodiazepine",
+    "ciwa-ar",
+    "autonomic-instability"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · substance withdrawal)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 48 year old man with a 20 year history of heavy daily alcohol use is hospitalized for pancreatitis. On hospital day 3, he becomes agitated and diaphoretic, with a coarse hand tremor, and reports seeing insects crawling on the walls. He is",
+   "text": "Psychiatry Alcohol Withdrawal Delirium (Delirium Tremens) — Symptom-Triggered Benzodiazepine Therapy alcohol-withdrawal delirium-tremens benzodiazepine ciwa-ar autonomic-instability USMLE-style / MedKOS (psychiatry · substance withdrawal) A 48 year old man with a 20 year history of heavy daily alcohol use is hospitalized for pancreatitis. On hospital day 3, he becomes agitated and diaphoretic, with a coarse hand tremor, and reports seeing insects crawling on the walls. He is disoriented to place and time. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Immediate physical restraints alone, pending psychiatric evaluation B. Scheduled fixed dose haloperidol as monotherapy for agitation C. Symptom triggered benzodiazepine dosing guided by a standardized withdrawal scale (e.g., CIWA Ar) D. Initiation of disulfiram to reduce further alcohol seeking behavior E. Naltrexone administration to blunt autonomic symptoms and craving 장기간 과도한 음주 후 입원 3일째 발생한 초조·발한·거친 진전·환시(벌레가 기어다니는 것을 봄)·지남력장애와 자율신경 항진(빈맥·고혈압·발열)은 알코올금단섬망(진전섬망)에 합당하다. 표준 처치는 CIWA Ar 같은 표준화 척도로 증상을 평가해 그에 따라 용량을 조절하는 벤조디아제핀 증상유도 투여이며, 경련·섬망으로의 진행을 예방한다."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Status Epilepticus — Stepwise Pharmacologic Management",
+   "tags": [
+    "status-epilepticus",
+    "benzodiazepine",
+    "fosphenytoin",
+    "levetiracetam",
+    "seizure-algorithm"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · seizure emergency)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 34 year old man is brought to the emergency department after his girlfriend witnessed 8 minutes of continuous generalized tonic clonic convulsions with no return to baseline between episodes. On arrival, convulsions are ongoing. IV access",
+   "text": "Neurology Status Epilepticus — Stepwise Pharmacologic Management status-epilepticus benzodiazepine fosphenytoin levetiracetam seizure-algorithm USMLE-style / MedKOS (neurology · seizure emergency) A 34 year old man is brought to the emergency department after his girlfriend witnessed 8 minutes of continuous generalized tonic clonic convulsions with no return to baseline between episodes. On arrival, convulsions are ongoing. IV access is obtained, and he receives 4 mg IV lorazepam, followed by a second 4 mg dose 5 minutes later. Convulsions continue. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Administer a third dose of IV lorazepam B. Obtain an emergent MRI of the brain before further pharmacologic treatment C. Load with an intravenous second line antiseizure agent such as fosphenytoin D. Administer intramuscular midazolam as an alternative benzodiazepine route E. Begin a continuous propofol infusion with endotracheal intubation 충분한 용량의 벤조디아제핀(2회) 투여에도 경련이 지속되면 '난치성' 단계로 넘어가기 전, 표준 알고리즘상 다음 단계는 정맥용 2차 항경련제(포스페니토인·레베티라세탐·발프로산 중 하나) 부하이며, 마취제(프로포폴 등) 지속주입은 2차 약물에도 반응하지 않는 '초난치성' 단계에서 고려한다."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage — Uterine Atony First-Line Management",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "bimanual-massage",
+    "oxytocin"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 29 year old woman, G3P3, undergoes vaginal delivery after a prolonged second stage augmented with oxytocin. Ten minutes after delivery of the placenta, she has brisk vaginal bleeding. On examination, the uterine fundus is difficult to pal",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage — Uterine Atony First-Line Management postpartum-hemorrhage uterine-atony uterotonics bimanual-massage oxytocin USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 29 year old woman, G3P3, undergoes vaginal delivery after a prolonged second stage augmented with oxytocin. Ten minutes after delivery of the placenta, she has brisk vaginal bleeding. On examination, the uterine fundus is difficult to palpate and feels soft above the umbilicus, with no evidence of vaginal or cervical laceration. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Emergent hysterectomy to secure hemostasis B. Administration of tranexamic acid alone, with close observation C. Placement of an intrauterine balloon tamponade device as the initial intervention D. Bimanual uterine massage and compression while initiating additional uterotonic therapy E. Immediate exploratory laparotomy for bilateral uterine artery ligation 부드럽고 만져지지 않는 자궁저(자궁이완)와 파열 소견이 없는 상태에서의 다량 출혈은 자궁근이완이 원인인 산후출혈이다. 1차 처치는 양손 자궁마사지·압박과 함께 추가 자궁수축제(옥시토신 증량, 메칠에르고노빈, 카보프로스트, 미소프로스톨 등) 투여이며, 이에 반응하지 않을 때 풍선탐폰·수술적 처치로 단계적으로 올라간다."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Analgesic Nephropathy — Renal Papillary Necrosis",
+   "tags": [
+    "renal-papillary-necrosis",
+    "analgesic-nephropathy",
+    "nsaid",
+    "prostaglandin",
+    "vasa-recta"
+   ],
+   "source": "USMLE-style / MedKOS (renal pathology · chronic analgesic use)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 52 year old woman with a 15 year history of daily combination analgesic tablets (acetaminophen aspirin caffeine) for chronic low back pain presents with sudden colicky flank pain and gross hematuria. Imaging shows a sloughed renal papilla",
+   "text": "Pathology Analgesic Nephropathy — Renal Papillary Necrosis renal-papillary-necrosis analgesic-nephropathy nsaid prostaglandin vasa-recta USMLE-style / MedKOS (renal pathology · chronic analgesic use) A 52 year old woman with a 15 year history of daily combination analgesic tablets (acetaminophen aspirin caffeine) for chronic low back pain presents with sudden colicky flank pain and gross hematuria. Imaging shows a sloughed renal papilla producing a 'ring sign' on the collecting system. Vital signs and laboratory studies are shown. The renal injury in this patient is best explained by which of the following underlying pathophysiologic mechanisms? A. Ischemic necrosis of the vasa recta from analgesic induced loss of vasodilatory prostaglandins in the renal medulla B. Immune complex deposition in the papillary interstitium triggering complement mediated necrosis C. Crystal induced obstruction of the collecting ducts by monosodium urate deposits D. Direct viral cytopathic injury to the papillary transitional epithelium E. Amyloid fibril deposition within the vasa recta causing progressive microvascular occlusion 복합진통제(아스피린+아세트아미노펜 등)를 오래 사용하면 아스피린이 프로스타글란딘 합성을 억제해 저산소 상태인 신수질 유두부의 혈관확장 보상기전을 없애 허혈을 유발하고, 아세트아미노펜 대사산물은 유두 세관세포에 직접 독성을 준다. 두 기전이 겹쳐 유두 허혈·괴사(신유두괴사)가 발생한다."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism)",
+   "tags": [
+    "atrial-fibrillation",
+    "atrial-kick",
+    "frank-starling",
+    "preload",
+    "ecg"
+   ],
+   "source": "USMLE-style / MedKOS (cardiac physiology · arrhythmia)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atr",
+   "text": "Physiology Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism) atrial-fibrillation atrial-kick frank-starling preload ecg USMLE-style / MedKOS (cardiac physiology · arrhythmia) A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atrial contraction in this rhythm most directly produces which of the following physiologic consequences? A. Increased ventricular preload from prolonged diastolic filling time B. Reduced left ventricular end diastolic volume from loss of coordinated atrial contraction ('atrial kick') C. Increased stroke volume via an enhanced Frank Starling response D. Decreased myocardial oxygen demand due to the irregular ventricular rate E. Increased coronary perfusion pressure from variable diastolic intervals 심방세동에서는 심방의 조직화된 수축이 소실되어(무질서한 전기활동) 심실 이완기 말 충만의 마지막 능동 성분인 '심방 수축(atrial kick)'이 사라진다. 특히 심실 이완기능이 저하된 환자(고령·좌심실비대)에서는 이 능동 충만분의 소실이 좌심실 이완기말 용적을 유의하게 줄여, Frank Starling 기전에 따라 일회박출량이 감소한다."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Methotrexate Toxicity — Leucovorin (Folinic Acid) Rescue Mechanism",
+   "tags": [
+    "methotrexate",
+    "leucovorin",
+    "folinic-acid",
+    "dihydrofolate-reductase",
+    "antimetabolite"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antimetabolite rescue)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 9 year old girl with high grade osteosarcoma is receiving high dose methotrexate as part of chemotherapy. On day 3, she develops oral mucositis. Vital signs and laboratory studies are shown. She is started on IV hydration, urinary alkalin",
+   "text": "Pharmacology Methotrexate Toxicity — Leucovorin (Folinic Acid) Rescue Mechanism methotrexate leucovorin folinic-acid dihydrofolate-reductase antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 9 year old girl with high grade osteosarcoma is receiving high dose methotrexate as part of chemotherapy. On day 3, she develops oral mucositis. Vital signs and laboratory studies are shown. She is started on IV hydration, urinary alkalinization, and leucovorin, dosed according to her serum methotrexate level. Leucovorin reduces methotrexate induced cytotoxicity by which of the following mechanisms? A. Bypassing dihydrofolate reductase blockade by supplying reduced folate for thymidylate and purine synthesis B. Competitively displacing methotrexate from renal tubular transporters to enhance urinary excretion C. Inhibiting hepatic cytochrome P450 metabolism of methotrexate to lower circulating active drug levels D. Chelating methotrexate in the plasma to form an inactive, renally excreted complex E. Directly inhibiting dihydrofolate reductase to prevent further methotrexate binding at the active site 메토트렉세이트는 디하이드로엽산환원효소(DHFR)를 억제해 테트라하이드로엽산 생성을 막고, 그 결과 티미딜산·퓨린 합성이 차단되어 급속 증식 세포(골수·구강점막)가 손상된다. 류코보린(폴린산)은 이미 환원된 엽산 형태로, DHFR 단계를 우회해 세포에 직접 환원엽산을 공급함으로써 티미딜산·퓨린 합성을 정상화시킨다."
   },
   {
    "id": "paper-2026-0129",
