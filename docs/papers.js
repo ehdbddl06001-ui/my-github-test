@@ -2,6 +2,72 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0155",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Seeing Beyond the Surgeon's Eye: Artificial Intelligence for Postoperative Monitoring of Free Vascularized Flaps: A Narrative Review",
+  "authors": [
+   "Ebrahimian Manoochehr",
+   "Kamali Reyhaneh"
+  ],
+  "journal": "Annals of plastic surgery",
+  "doi": "10.1097/SAP.0000000000004848",
+  "pmid": "42554452",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42554452/",
+  "pubdate": "2026-08-04",
+  "date": "2026-08-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Postoperative monitoring of free vascularized flaps (FVFs) is critical for early detection of ischemia and timely salvage. Although traditional monitoring relies heavily on clinical examination and adjunctive devices, these approaches are labor‑intensive, subjective, and resource‑dependent. Recent advances in artificial intelligence (AI), particularly machine learning and deep learning, have enabled automated, data‑driven approaches to postoperative free‑flap monitoring. However, the clinical readiness, methodological robustness, and translational challenges of these AI‑based systems remain incompletely understood.\n\n**OBJECTIVE:** This review examines recent studies on AI‑assisted postoperative free‑flap monitoring, focusing on technical methodologies, clinical applications, translational relevance, current limitations, and future research directions.\n\n**METHODS:** A systematic-narrative hybrid review was conducted by searching PubMed, Embase, Web of Science, and Google Scholar from January 2000 to February 2, 2026. Eligible studies reported clinically relevant outcomes, including flap viability, ischemia detection, venous congestion, thrombosis prevention, and salvage rates. Studies focused on preoperative prediction models, non‑AI monitoring techniques, editorials, and opinion articles were excluded. Two independent reviewers performed study selection and data extraction, with disagreements resolved by consensus.\n\n**RESULTS:** Nine studies met the inclusion criteria. Most studies used supervised machine‑learning models, primarily using visible‑light images, infrared imaging, photoplethysmography, hyperspectral imaging, or multimodal sensor data for flap surveillance. All but 1 study were retrospective, and no prospective human clinical trials were identified. AI‑based systems demonstrated promising performance in detecting arterial ischemia and venous congestion, often achieving diagnostic accuracies comparable to or exceeding those of traditional monitoring methods. Diagnostic accuracy across studies ranged from 82% to 98.4%. Key challenges included limited data sets, lack of external validation, heterogeneous methodologies, absence of standardized outcome metrics, and concerns about generalizability across diverse skin tones and clinical settings.\n\n**CONCLUSIONS:** AI‑assisted postoperative free‑flap monitoring is a rapidly evolving and promising adjunct to conventional surveillance. Although current evidence suggests benefits for early ischemia detection and workload reduction, significant barriers-particularly methodological heterogeneity, data scarcity, and limited prospective validation-must be addressed before widespread clinical implementation. Future progress will depend on standardized data sets, transparent model development, multicenter prospective studies, and ethically sound, interoperable AI frameworks that enable equitable and scalable precision microsurgical care.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0154",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Intracardiac versus Transesophageal Echocardiography in patients undergoing Ablation for Atrial fibrillation: A systematic review and meta-analysis",
+  "authors": [
+   "Dandamudi Mrunalini",
+   "Hakkeem Bezalel",
+   "Pinilla Juan",
+   "Samad Nathalia Schettino",
+   "de Lucena Larissa Araújo",
+   "Humayun Zainab",
+   "Khairallah Terezia Toni",
+   "Stabile Francesco"
+  ],
+  "journal": "European heart journal. Cardiovascular Imaging",
+  "doi": "10.1093/ehjci/jeag206",
+  "pmid": "42554588",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42554588/",
+  "pubdate": "2026-08-05",
+  "date": "2026-08-05",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Intracardiac echocardiography (ICE) is a valuable, real-time imaging tool in structural cardiology and electrophysiology, performed without general anesthesia. However, its safety compared to transesophageal echocardiography (TEE) remains unclear.\n\n**OBJECTIVE:** To conduct a meta-analysis evaluating outcomes of catheter ablation for atrial fibrillation (AF) with or without left atrial appendage closure (LAAC) guided by TEE versus ICE.\n\n**METHODS:** Databases were searched for studies comparing ICE with TEE guidance during AF ablation ± LAAC. Outcomes were pooled using the Inverse-Variance (IV) random-effects model in R, with risk ratios (RRs) for dichotomous variables and mean or standardized mean differences (MD or SMD) for continuous variables, and 95% confidence intervals (CIs) reported.\n\n**RESULTS:** We included 8 studies involving 7,671 patients, of whom 3,903 (50.9%) underwent procedures with ICE guidance. There were no significant differences between groups in cardiac tamponade risk (RR 0.86; 95% CI 0.44-1.66; p = 0.39), stroke or TIA (RR 1.00; 95% CI 0.39-2.55; p = 0.57), vascular complications (RR 0.80; 95% CI 0.51-1.25; p = 0.37). ICE was associated with lower pre-procedure LAA thrombus detection (RR 0.32; 95% CI 0.11-0.94; p = 0.04), radiation dose (SMD -0.47; 95% CI -0.90 to -0.04; p = 0.03), and fluoroscopy time (-4.25 mins; 95% CI -6.01 to -2.49; p < 0.01) but the procedure duration was significantly lower only in combined AF ablation + LAAC (MD -19.56 mins; 95% CI -24.15 to -14.97; p < 0.01).\n\n**CONCLUSION:** This meta-analysis indicates that ICE is a safe, effective, and non-inferior alternative to TEE for patients undergoing AF ablation ± LAAC. However, TEE remains an effective tool for detecting LAA thrombus.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0153",
   "topic": "Surgery",
   "subtopic": "",

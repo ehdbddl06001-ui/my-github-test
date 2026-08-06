@@ -5,22 +5,22 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 693,
+  "total": 701,
   "byType": {
+   "usmle": 54,
+   "paper": 155,
    "kmle": 427,
-   "paper": 153,
    "ailab": 62,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 65,
+   "Cardiology": 67,
    "Medical AI Lab": 48,
    "Nephrology": 47,
    "Infectious Disease": 46,
    "Pediatrics": 43,
-   "Obstetrics & Gynecology": 30,
-   "Neurology": 29,
+   "Obstetrics & Gynecology": 31,
+   "Neurology": 30,
    "Psychiatry": 29,
    "Endocrinology": 28,
    "Gastroenterology": 27,
@@ -32,16 +32,16 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 26,
    "Hematology": 25,
    "Surgery": 25,
-   "Pathology": 21,
-   "Laboratory Medicine": 18,
+   "Pathology": 22,
+   "Laboratory Medicine": 19,
    "Hematology-Oncology": 16,
    "Medical Signal AI": 8,
-   "Physiology": 6,
+   "Physiology": 7,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,12 +51,158 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 531,
-   "medium": 162
+   "high": 537,
+   "medium": 164
   },
-  "tagCount": 1696
+  "tagCount": 1709
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Magnesium Sulfate Toxicity in Preeclampsia — Recognition and Reversal",
+   "tags": [
+    "preeclampsia",
+    "magnesium-sulfate",
+    "toxicity",
+    "calcium-gluconate",
+    "eclampsia-prophylaxis"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · eclampsia prophylaxis, drug toxicity)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 29 year old woman at 34 weeks' gestation is receiving intravenous magnesium sulfate for seizure prophylaxis after being diagnosed with preeclampsia with severe features. Two hours into the infusion, the nurse notes that the patient's pate",
+   "text": "Obstetrics & Gynecology Magnesium Sulfate Toxicity in Preeclampsia — Recognition and Reversal preeclampsia magnesium-sulfate toxicity calcium-gluconate eclampsia-prophylaxis USMLE-style / MedKOS (obstetrics · eclampsia prophylaxis, drug toxicity) A 29 year old woman at 34 weeks' gestation is receiving intravenous magnesium sulfate for seizure prophylaxis after being diagnosed with preeclampsia with severe features. Two hours into the infusion, the nurse notes that the patient's patellar deep tendon reflexes are absent and her respiratory rate has decreased. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate step in management? A. Increase the magnesium sulfate infusion rate to ensure adequate seizure prophylaxis B. Discontinue the magnesium sulfate infusion and administer intravenous calcium gluconate C. Administer intravenous naloxone to reverse the respiratory depression D. Continue the current infusion rate and repeat the serum magnesium level in 6 hours E. Emergently intubate the patient without first addressing the underlying cause Absent deep tendon reflexes and respiratory depression with a markedly elevated serum magnesium level indicate magnesium toxicity; the standard immediate management is to stop the infusion and give intravenous calcium gluconate as the antidote while supporting ventilation as needed."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis",
+   "tags": [
+    "ischemic-stroke",
+    "tPA",
+    "alteplase",
+    "blood-pressure-management",
+    "thrombolysis"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · stroke thrombolysis eligibility)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 66 year old woman is brought to the emergency department by her husband because of sudden onset right sided weakness and slurred speech that began 90 minutes ago. Examination shows right hemiparesis and expressive aphasia. Noncontrast CT ",
+   "text": "Neurology Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis ischemic-stroke tPA alteplase blood-pressure-management thrombolysis USMLE-style / MedKOS (neurology · stroke thrombolysis eligibility) A 66 year old woman is brought to the emergency department by her husband because of sudden onset right sided weakness and slurred speech that began 90 minutes ago. Examination shows right hemiparesis and expressive aphasia. Noncontrast CT of the head shows no hemorrhage or early ischemic changes. She has no history of recent surgery, trauma, or anticoagulant use. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Withhold thrombolytic therapy permanently because of uncontrolled hypertension B. Give aspirin 325 mg immediately in place of thrombolytic therapy C. Administer intravenous alteplase immediately D. Proceed directly to mechanical thrombectomy without further blood pressure management E. Administer intravenous labetalol to lower blood pressure below 185/110 mmHg She is within the thrombolysis time window with no hemorrhage or coagulopathy, but her blood pressure exceeds the 185/110 mmHg threshold required before alteplase; the appropriate next step is controlled antihypertensive treatment to bring her below threshold, after which thrombolysis can be reassessed."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "New-Onset Atrial Fibrillation with RVR — Rate Control vs Cardioversion Decision",
+   "tags": [
+    "atrial-fibrillation",
+    "rate-control",
+    "anticoagulation",
+    "thromboembolism",
+    "RVR"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · arrhythmia management, ECG)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 71 year old man presents with 3 days of palpitations and mild exertional dyspnea. He has hypertension and takes no anticoagulant. He is alert, ambulatory, and has no chest pain. An ECG obtained on arrival is shown. He is unsure exactly wh",
+   "text": "Cardiology New-Onset Atrial Fibrillation with RVR — Rate Control vs Cardioversion Decision atrial-fibrillation rate-control anticoagulation thromboembolism RVR USMLE-style / MedKOS (cardiology · arrhythmia management, ECG) A 71 year old man presents with 3 days of palpitations and mild exertional dyspnea. He has hypertension and takes no anticoagulant. He is alert, ambulatory, and has no chest pain. An ECG obtained on arrival is shown. He is unsure exactly when his symptoms began but recalls feeling 'a little off' for about a week before today. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Immediate synchronized electrical cardioversion B. Immediate pharmacologic cardioversion with intravenous amiodarone C. Intravenous diltiazem for rate control and initiation of anticoagulation D. Intravenous adenosine to terminate the arrhythmia E. Anticoagulation alone, with reassessment in one week before considering further therapy The patient is hemodynamically stable but has an uncertain arrhythmia duration of roughly a week ( 48 hours), so cardioversion risks dislodging an atrial thrombus; the appropriate next step is rate control with a nondihydropyridine calcium channel blocker plus starting anticoagulation, deferring rhythm control."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Paradoxical Aciduria in Vomiting-Induced Metabolic Alkalosis",
+   "tags": [
+    "metabolic-alkalosis",
+    "paradoxical-aciduria",
+    "aldosterone",
+    "renal-physiology",
+    "acid-base"
+   ],
+   "source": "USMLE-style / MedKOS (renal physiology · acid-base regulation)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 24 year old woman with bulimia nervosa has had recurrent self induced vomiting for several weeks. She reports generalized weakness and muscle cramps. Vital signs and laboratory studies are shown. Despite her persistent systemic alkalemia,",
+   "text": "Physiology Paradoxical Aciduria in Vomiting-Induced Metabolic Alkalosis metabolic-alkalosis paradoxical-aciduria aldosterone renal-physiology acid-base USMLE-style / MedKOS (renal physiology · acid-base regulation) A 24 year old woman with bulimia nervosa has had recurrent self induced vomiting for several weeks. She reports generalized weakness and muscle cramps. Vital signs and laboratory studies are shown. Despite her persistent systemic alkalemia, her urine pH is found to be acidic ('paradoxical aciduria'). Which of the following best explains the renal mechanism responsible for this finding? A. Volume depletion–driven aldosterone secretion increases distal nephron hydrogen ion secretion despite alkalemia B. Decreased glomerular filtration rate reduces the filtered bicarbonate load C. Hypoventilation raises PCO2 to compensate for the metabolic alkalosis D. Direct loss of gastric hydrogen ions continues to acidify the urine E. Impaired renal carbonic anhydrase activity limits bicarbonate reabsorption Volume contraction from repeated vomiting activates the renin angiotensin aldosterone system; aldosterone drives distal Na+ reabsorption coupled to H+ secretion (with parallel K+ loss) in the collecting duct, so the kidney keeps excreting acidic urine and low urinary chloride even while the plasma remains alkalotic."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Membranous Nephropathy — Immune Complex Deposition Site",
+   "tags": [
+    "membranous-nephropathy",
+    "PLA2R",
+    "nephrotic-syndrome",
+    "immune-complex",
+    "glomerulopathy"
+   ],
+   "source": "USMLE-style / MedKOS (renal pathology · immune complex glomerulopathy)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 52 year old woman notes periorbital and lower extremity edema over the past month. She has no history of diabetes or hypertension. Urinalysis shows 4+ proteinuria with oval fat bodies, and a 24 hour urine collection shows 6.2 g of protein",
+   "text": "Pathology Membranous Nephropathy — Immune Complex Deposition Site membranous-nephropathy PLA2R nephrotic-syndrome immune-complex glomerulopathy USMLE-style / MedKOS (renal pathology · immune complex glomerulopathy) A 52 year old woman notes periorbital and lower extremity edema over the past month. She has no history of diabetes or hypertension. Urinalysis shows 4+ proteinuria with oval fat bodies, and a 24 hour urine collection shows 6.2 g of protein. Serum anti PLA2R antibody titer is markedly elevated. Vital signs and laboratory studies, including complement levels, are shown. A renal biopsy is performed. Electron microscopy of the glomeruli in this patient would most likely show electron dense deposits in which of the following locations? A. Mesangial matrix B. Subendothelial space C. Tubular basement membrane D. Subepithelial space (beneath the podocytes) E. Bowman capsule basement membrane Markedly elevated anti PLA2R antibody with nephrotic range proteinuria and normal complement levels indicates primary membranous nephropathy, which characteristically shows subepithelial immune complex deposits producing the 'spike and dome' pattern on silver stain."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Warfarin–Metronidazole Interaction (CYP2C9 Inhibition)",
+   "tags": [
+    "warfarin",
+    "metronidazole",
+    "CYP2C9",
+    "drug-interaction",
+    "anticoagulation"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · drug interaction mechanism)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 68 year old man with a mechanical mitral valve on long term warfarin therapy (stable INR around 2.5 for the past year) is started on metronidazole for diverticulitis. Ten days later he notices new gum bleeding and diffuse bruising on his ",
+   "text": "Pharmacology Warfarin–Metronidazole Interaction (CYP2C9 Inhibition) warfarin metronidazole CYP2C9 drug-interaction anticoagulation USMLE-style / MedKOS (pharmacology · drug interaction mechanism) A 68 year old man with a mechanical mitral valve on long term warfarin therapy (stable INR around 2.5 for the past year) is started on metronidazole for diverticulitis. Ten days later he notices new gum bleeding and diffuse bruising on his arms. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's current presentation? A. Increased hepatic synthesis of vitamin K–dependent clotting factors B. Inhibition of hepatic CYP2C9 mediated metabolism of S warfarin C. Induction of intestinal P glycoprotein reducing warfarin absorption D. Displacement of warfarin from plasma albumin binding sites E. Increased vitamin K production by antibiotic altered gut flora Metronidazole is a potent inhibitor of CYP2C9, the enzyme responsible for clearing the more potent S enantiomer of warfarin, so the effective anticoagulant dose rises sharply after a stable regimen and produces supratherapeutic INR with bleeding."
+  },
+  {
+   "id": "paper-2026-0155",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of plastic surgery",
+   "confidence": "medium",
+   "date": "2026-08-05",
+   "path": "content/papers/2026/2026-08-05_paper-2026-0155_seeing_beyond_the_surgeon_s_eye_artificial_intelligence_for_.md",
+   "snippet": "Title Seeing Beyond the Surgeon's Eye: Artificial Intelligence for Postoperative Monitoring of Free Vascularized Flaps: A Narrative Review Authors Ebrahimian Manoochehr, Kamali Reyhaneh Journal / DOI Annals of plastic surgery · DOI: 10.1097",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Annals of plastic surgery Title Seeing Beyond the Surgeon's Eye: Artificial Intelligence for Postoperative Monitoring of Free Vascularized Flaps: A Narrative Review Authors Ebrahimian Manoochehr, Kamali Reyhaneh Journal / DOI Annals of plastic surgery · DOI: 10.1097/SAP.0000000000004848 · PMID: 42554452 https://pubmed.ncbi.nlm.nih.gov/42554452/ Abstract BACKGROUND: Postoperative monitoring of free vascularized flaps (FVFs) is critical for early detection of ischemia and timely salvage. Although traditional monitoring relies heavily on clinical examination and adjunctive devices, these approaches are labor‑intensive, subjective, and resource‑dependent. Recent advances in artificial intelligence (AI), particularly machine learning and deep learning, have enabled automated, data‑driven approaches to postoperative free‑flap monitoring. However, the clinical readiness, methodological robustness, and translational challenges of these AI‑based systems remain incompletely understood. OBJECTIVE: This review examines recent studies on AI‑assisted postoperative free‑flap monitoring, focusing on technical methodologies, clinical applications, translational relevance, current limitations, and future research directions. METHODS: A systematic narrative hybrid review was conducted by searching PubMed, Embase, Web of Science, and Google Scholar from January 2000 to February 2, 2026. Eligible studies reported clinically relevant outcomes, including flap viability, ischemia detection, venous congestion, thrombosis prevention, and salvage rates. Studies focused on preoperative prediction models, non‑AI monitoring techniques, editorials, and opinion articles were excluded. Two independent reviewers performed study selection and data extraction, with disagreements resolved by consensus. RESULTS: Nine studies met the inclusion criteria. Most studies used supervised machine‑learning models, primarily using visible‑light images, infrared imaging, photoplethysmography, hyperspectral imaging, or multimodal sensor data for flap surveillance. All but 1 study were retrospective, and no prospective human clinical trials were identified. AI‑based systems demonstrated promising performance in detecting arterial ischemia and venous congestion, often achieving diagnostic accuracies comparable to or exceeding those of traditional monitoring methods. Diagnostic accuracy across studies ranged from 82% to 98.4%. Key challenges included limited data sets, lack of external validation, heterogeneous methodologies, absence of standardized outcome metrics, and concerns about generalizability across diverse skin tones and clinical settings. CONCLUSIONS: AI‑assisted postoperative free‑flap monitoring is a rapidly evolving and promising adjunct to conventional surveillance. Although current evidence suggests benefits for early ischemia detection and workload reduction, significant barriers particularly methodological heterogeneity, data scarcity, and limited prospective validation must be addressed before widespread clinical implementation. Future progress will depend on standardized data sets, transparent model development, multicenter prospective studies, and ethically sound, interoperable AI frameworks that enable equitable and scalable precision microsurgical care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0154",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal. Cardiovascular Imaging",
+   "confidence": "medium",
+   "date": "2026-08-05",
+   "path": "content/papers/2026/2026-08-05_paper-2026-0154_intracardiac_versus_transesophageal_echocardiography_in_pati.md",
+   "snippet": "Title Intracardiac versus Transesophageal Echocardiography in patients undergoing Ablation for Atrial fibrillation: A systematic review and meta analysis Authors Dandamudi Mrunalini, Hakkeem Bezalel, Pinilla Juan, Samad Nathalia Schettino, ",
+   "text": "Cardiology scraped pubmed PubMed / European heart journal. Cardiovascular Imaging Title Intracardiac versus Transesophageal Echocardiography in patients undergoing Ablation for Atrial fibrillation: A systematic review and meta analysis Authors Dandamudi Mrunalini, Hakkeem Bezalel, Pinilla Juan, Samad Nathalia Schettino, de Lucena Larissa Araújo, Humayun Zainab, Khairallah Terezia Toni, Stabile Francesco Journal / DOI European heart journal. Cardiovascular Imaging · DOI: 10.1093/ehjci/jeag206 · PMID: 42554588 https://pubmed.ncbi.nlm.nih.gov/42554588/ Abstract BACKGROUND: Intracardiac echocardiography (ICE) is a valuable, real time imaging tool in structural cardiology and electrophysiology, performed without general anesthesia. However, its safety compared to transesophageal echocardiography (TEE) remains unclear. OBJECTIVE: To conduct a meta analysis evaluating outcomes of catheter ablation for atrial fibrillation (AF) with or without left atrial appendage closure (LAAC) guided by TEE versus ICE. METHODS: Databases were searched for studies comparing ICE with TEE guidance during AF ablation ± LAAC. Outcomes were pooled using the Inverse Variance (IV) random effects model in R, with risk ratios (RRs) for dichotomous variables and mean or standardized mean differences (MD or SMD) for continuous variables, and 95% confidence intervals (CIs) reported. RESULTS: We included 8 studies involving 7,671 patients, of whom 3,903 (50.9%) underwent procedures with ICE guidance. There were no significant differences between groups in cardiac tamponade risk (RR 0.86; 95% CI 0.44 1.66; p = 0.39), stroke or TIA (RR 1.00; 95% CI 0.39 2.55; p = 0.57), vascular complications (RR 0.80; 95% CI 0.51 1.25; p = 0.37). ICE was associated with lower pre procedure LAA thrombus detection (RR 0.32; 95% CI 0.11 0.94; p = 0.04), radiation dose (SMD 0.47; 95% CI 0.90 to 0.04; p = 0.03), and fluoroscopy time ( 4.25 mins; 95% CI 6.01 to 2.49; p < 0.01) but the procedure duration was significantly lower only in combined AF ablation + LAAC (MD 19.56 mins; 95% CI 24.15 to 14.97; p < 0.01). CONCLUSION: This meta analysis indicates that ICE is a safe, effective, and non inferior alternative to TEE for patients undergoing AF ablation ± LAAC. However, TEE remains an effective tool for detecting LAA thrombus. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0457",
    "type": "kmle",
