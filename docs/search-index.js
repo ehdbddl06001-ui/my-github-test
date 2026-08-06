@@ -1,25 +1,25 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-04",
+ "generated": "2026-08-05",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 643,
+  "total": 651,
   "byType": {
+   "usmle": 54,
    "kmle": 427,
-   "paper": 151,
+   "paper": 153,
    "ailab": 14,
-   "usmle": 48,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 64,
+   "Cardiology": 66,
    "Nephrology": 47,
    "Infectious Disease": 46,
    "Pediatrics": 43,
-   "Obstetrics & Gynecology": 30,
-   "Neurology": 29,
+   "Obstetrics & Gynecology": 31,
+   "Neurology": 30,
    "Psychiatry": 29,
    "Endocrinology": 28,
    "Gastroenterology": 27,
@@ -30,18 +30,18 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 26,
    "Rheumatology": 26,
    "Hematology": 25,
-   "Surgery": 24,
-   "Pathology": 21,
+   "Surgery": 25,
+   "Pathology": 22,
    "Laboratory Medicine": 18,
    "Hematology-Oncology": 16,
-   "Physiology": 6,
+   "Physiology": 7,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Microbiology": 4,
+   "Pharmacology": 4,
    "Biochemistry": 3,
    "Immunology": 3,
    "Oncology": 3,
-   "Pharmacology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
@@ -51,12 +51,126 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 486,
-   "medium": 157
+   "high": 492,
+   "medium": 159
   },
-  "tagCount": 1617
+  "tagCount": 1630
  },
  "docs": [
+  {
+   "id": "usmle-2026-0054",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Magnesium Sulfate Toxicity in Preeclampsia — Recognition and Reversal",
+   "tags": [
+    "preeclampsia",
+    "magnesium-sulfate",
+    "toxicity",
+    "calcium-gluconate",
+    "eclampsia-prophylaxis"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · eclampsia prophylaxis, drug toxicity)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0054.md",
+   "snippet": "A 29 year old woman at 34 weeks' gestation is receiving intravenous magnesium sulfate for seizure prophylaxis after being diagnosed with preeclampsia with severe features. Two hours into the infusion, the nurse notes that the patient's pate",
+   "text": "Obstetrics & Gynecology Magnesium Sulfate Toxicity in Preeclampsia — Recognition and Reversal preeclampsia magnesium-sulfate toxicity calcium-gluconate eclampsia-prophylaxis USMLE-style / MedKOS (obstetrics · eclampsia prophylaxis, drug toxicity) A 29 year old woman at 34 weeks' gestation is receiving intravenous magnesium sulfate for seizure prophylaxis after being diagnosed with preeclampsia with severe features. Two hours into the infusion, the nurse notes that the patient's patellar deep tendon reflexes are absent and her respiratory rate has decreased. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate step in management? A. Increase the magnesium sulfate infusion rate to ensure adequate seizure prophylaxis B. Discontinue the magnesium sulfate infusion and administer intravenous calcium gluconate C. Administer intravenous naloxone to reverse the respiratory depression D. Continue the current infusion rate and repeat the serum magnesium level in 6 hours E. Emergently intubate the patient without first addressing the underlying cause Absent deep tendon reflexes and respiratory depression with a markedly elevated serum magnesium level indicate magnesium toxicity; the standard immediate management is to stop the infusion and give intravenous calcium gluconate as the antidote while supporting ventilation as needed."
+  },
+  {
+   "id": "usmle-2026-0053",
+   "type": "usmle",
+   "topic": "Neurology",
+   "subtopic": "Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis",
+   "tags": [
+    "ischemic-stroke",
+    "tPA",
+    "alteplase",
+    "blood-pressure-management",
+    "thrombolysis"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · stroke thrombolysis eligibility)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0053.md",
+   "snippet": "A 66 year old woman is brought to the emergency department by her husband because of sudden onset right sided weakness and slurred speech that began 90 minutes ago. Examination shows right hemiparesis and expressive aphasia. Noncontrast CT ",
+   "text": "Neurology Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis ischemic-stroke tPA alteplase blood-pressure-management thrombolysis USMLE-style / MedKOS (neurology · stroke thrombolysis eligibility) A 66 year old woman is brought to the emergency department by her husband because of sudden onset right sided weakness and slurred speech that began 90 minutes ago. Examination shows right hemiparesis and expressive aphasia. Noncontrast CT of the head shows no hemorrhage or early ischemic changes. She has no history of recent surgery, trauma, or anticoagulant use. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Withhold thrombolytic therapy permanently because of uncontrolled hypertension B. Give aspirin 325 mg immediately in place of thrombolytic therapy C. Administer intravenous alteplase immediately D. Proceed directly to mechanical thrombectomy without further blood pressure management E. Administer intravenous labetalol to lower blood pressure below 185/110 mmHg She is within the thrombolysis time window with no hemorrhage or coagulopathy, but her blood pressure exceeds the 185/110 mmHg threshold required before alteplase; the appropriate next step is controlled antihypertensive treatment to bring her below threshold, after which thrombolysis can be reassessed."
+  },
+  {
+   "id": "usmle-2026-0052",
+   "type": "usmle",
+   "topic": "Cardiology",
+   "subtopic": "New-Onset Atrial Fibrillation with RVR — Rate Control vs Cardioversion Decision",
+   "tags": [
+    "atrial-fibrillation",
+    "rate-control",
+    "anticoagulation",
+    "thromboembolism",
+    "RVR"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · arrhythmia management, ECG)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0052.md",
+   "snippet": "A 71 year old man presents with 3 days of palpitations and mild exertional dyspnea. He has hypertension and takes no anticoagulant. He is alert, ambulatory, and has no chest pain. An ECG obtained on arrival is shown. He is unsure exactly wh",
+   "text": "Cardiology New-Onset Atrial Fibrillation with RVR — Rate Control vs Cardioversion Decision atrial-fibrillation rate-control anticoagulation thromboembolism RVR USMLE-style / MedKOS (cardiology · arrhythmia management, ECG) A 71 year old man presents with 3 days of palpitations and mild exertional dyspnea. He has hypertension and takes no anticoagulant. He is alert, ambulatory, and has no chest pain. An ECG obtained on arrival is shown. He is unsure exactly when his symptoms began but recalls feeling 'a little off' for about a week before today. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Immediate synchronized electrical cardioversion B. Immediate pharmacologic cardioversion with intravenous amiodarone C. Intravenous diltiazem for rate control and initiation of anticoagulation D. Intravenous adenosine to terminate the arrhythmia E. Anticoagulation alone, with reassessment in one week before considering further therapy The patient is hemodynamically stable but has an uncertain arrhythmia duration of roughly a week ( 48 hours), so cardioversion risks dislodging an atrial thrombus; the appropriate next step is rate control with a nondihydropyridine calcium channel blocker plus starting anticoagulation, deferring rhythm control."
+  },
+  {
+   "id": "usmle-2026-0051",
+   "type": "usmle",
+   "topic": "Physiology",
+   "subtopic": "Paradoxical Aciduria in Vomiting-Induced Metabolic Alkalosis",
+   "tags": [
+    "metabolic-alkalosis",
+    "paradoxical-aciduria",
+    "aldosterone",
+    "renal-physiology",
+    "acid-base"
+   ],
+   "source": "USMLE-style / MedKOS (renal physiology · acid-base regulation)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0051.md",
+   "snippet": "A 24 year old woman with bulimia nervosa has had recurrent self induced vomiting for several weeks. She reports generalized weakness and muscle cramps. Vital signs and laboratory studies are shown. Despite her persistent systemic alkalemia,",
+   "text": "Physiology Paradoxical Aciduria in Vomiting-Induced Metabolic Alkalosis metabolic-alkalosis paradoxical-aciduria aldosterone renal-physiology acid-base USMLE-style / MedKOS (renal physiology · acid-base regulation) A 24 year old woman with bulimia nervosa has had recurrent self induced vomiting for several weeks. She reports generalized weakness and muscle cramps. Vital signs and laboratory studies are shown. Despite her persistent systemic alkalemia, her urine pH is found to be acidic ('paradoxical aciduria'). Which of the following best explains the renal mechanism responsible for this finding? A. Volume depletion–driven aldosterone secretion increases distal nephron hydrogen ion secretion despite alkalemia B. Decreased glomerular filtration rate reduces the filtered bicarbonate load C. Hypoventilation raises PCO2 to compensate for the metabolic alkalosis D. Direct loss of gastric hydrogen ions continues to acidify the urine E. Impaired renal carbonic anhydrase activity limits bicarbonate reabsorption Volume contraction from repeated vomiting activates the renin angiotensin aldosterone system; aldosterone drives distal Na+ reabsorption coupled to H+ secretion (with parallel K+ loss) in the collecting duct, so the kidney keeps excreting acidic urine and low urinary chloride even while the plasma remains alkalotic."
+  },
+  {
+   "id": "usmle-2026-0050",
+   "type": "usmle",
+   "topic": "Pathology",
+   "subtopic": "Membranous Nephropathy — Immune Complex Deposition Site",
+   "tags": [
+    "membranous-nephropathy",
+    "PLA2R",
+    "nephrotic-syndrome",
+    "immune-complex",
+    "glomerulopathy"
+   ],
+   "source": "USMLE-style / MedKOS (renal pathology · immune complex glomerulopathy)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0050.md",
+   "snippet": "A 52 year old woman notes periorbital and lower extremity edema over the past month. She has no history of diabetes or hypertension. Urinalysis shows 4+ proteinuria with oval fat bodies, and a 24 hour urine collection shows 6.2 g of protein",
+   "text": "Pathology Membranous Nephropathy — Immune Complex Deposition Site membranous-nephropathy PLA2R nephrotic-syndrome immune-complex glomerulopathy USMLE-style / MedKOS (renal pathology · immune complex glomerulopathy) A 52 year old woman notes periorbital and lower extremity edema over the past month. She has no history of diabetes or hypertension. Urinalysis shows 4+ proteinuria with oval fat bodies, and a 24 hour urine collection shows 6.2 g of protein. Serum anti PLA2R antibody titer is markedly elevated. Vital signs and laboratory studies, including complement levels, are shown. A renal biopsy is performed. Electron microscopy of the glomeruli in this patient would most likely show electron dense deposits in which of the following locations? A. Mesangial matrix B. Subendothelial space C. Tubular basement membrane D. Subepithelial space (beneath the podocytes) E. Bowman capsule basement membrane Markedly elevated anti PLA2R antibody with nephrotic range proteinuria and normal complement levels indicates primary membranous nephropathy, which characteristically shows subepithelial immune complex deposits producing the 'spike and dome' pattern on silver stain."
+  },
+  {
+   "id": "usmle-2026-0049",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Warfarin–Metronidazole Interaction (CYP2C9 Inhibition)",
+   "tags": [
+    "warfarin",
+    "metronidazole",
+    "CYP2C9",
+    "drug-interaction",
+    "anticoagulation"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · drug interaction mechanism)",
+   "confidence": "high",
+   "date": "2026-08-06",
+   "path": "content/usmle/usmle-2026-0049.md",
+   "snippet": "A 68 year old man with a mechanical mitral valve on long term warfarin therapy (stable INR around 2.5 for the past year) is started on metronidazole for diverticulitis. Ten days later he notices new gum bleeding and diffuse bruising on his ",
+   "text": "Pharmacology Warfarin–Metronidazole Interaction (CYP2C9 Inhibition) warfarin metronidazole CYP2C9 drug-interaction anticoagulation USMLE-style / MedKOS (pharmacology · drug interaction mechanism) A 68 year old man with a mechanical mitral valve on long term warfarin therapy (stable INR around 2.5 for the past year) is started on metronidazole for diverticulitis. Ten days later he notices new gum bleeding and diffuse bruising on his arms. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's current presentation? A. Increased hepatic synthesis of vitamin K–dependent clotting factors B. Inhibition of hepatic CYP2C9 mediated metabolism of S warfarin C. Induction of intestinal P glycoprotein reducing warfarin absorption D. Displacement of warfarin from plasma albumin binding sites E. Increased vitamin K production by antibiotic altered gut flora Metronidazole is a potent inhibitor of CYP2C9, the enzyme responsible for clearing the more potent S enantiomer of warfarin, so the effective anticoagulant dose rises sharply after a stable regimen and produces supratherapeutic INR with bleeding."
+  },
   {
    "id": "kmle-2026-0457",
    "type": "kmle",
@@ -632,6 +746,38 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0426.md",
    "snippet": "68세 남자가 2시간 전 갑자기 시작된 가슴 두근거림으로 응급실에 왔다. 어지럽지만 흉통·호흡곤란은 없다. 맥박은 빠르고 완전히 불규칙하며, 혈압은 안정적으로 유지된다. 심전도는 자료와 같다. 활력징후·검사는 자료와 같다. 이 환자에게 가장 적절한 처치는? A. 즉시 동시성 전기심장율동전환 B. 정맥 딜티아젬 투여 C. 정맥 아데노신 투여 D. 정맥 아트로핀 투여 E. 경구 이뇨제 투여 혈역학적으로 안정된 급성 심방세동 빠른 ",
    "text": "Cardiology Atrial Fibrillation with Rapid Ventricular Response atrial-fibrillation rate-control ecg palpitation KMLE 2026 / Claude Routine 68세 남자가 2시간 전 갑자기 시작된 가슴 두근거림으로 응급실에 왔다. 어지럽지만 흉통·호흡곤란은 없다. 맥박은 빠르고 완전히 불규칙하며, 혈압은 안정적으로 유지된다. 심전도는 자료와 같다. 활력징후·검사는 자료와 같다. 이 환자에게 가장 적절한 처치는? A. 즉시 동시성 전기심장율동전환 B. 정맥 딜티아젬 투여 C. 정맥 아데노신 투여 D. 정맥 아트로핀 투여 E. 경구 이뇨제 투여 혈역학적으로 안정된 급성 심방세동 빠른 심실반응에서는 방실결절 차단제(비 DHP 칼슘차단제 또는 베타차단제)로 심박수 조절이 우선이다."
+  },
+  {
+   "id": "paper-2026-0153",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Otology & neurotology : official publication of the American Otological Society, American Neurotology Society [and] European Academy of Otology and Neurotology",
+   "confidence": "medium",
+   "date": "2026-08-04",
+   "path": "content/papers/2026/2026-08-04_paper-2026-0153_quality_of_life_in_patients_with_vestibular_schwannoma_treat.md",
+   "snippet": "Title Quality of Life in Patients With Vestibular Schwannoma Treated With the Retrolabyrinthine Approach Authors Wakabayashi Takeshi, Mokudai Yutaro, Shimanuki Marie N, Hosoya Makoto, Nishiyama Takanori, Ozawa Hiroyuki, Oishi Naoki Journal ",
+   "text": "Surgery scraped pubmed PubMed / Otology & neurotology : official publication of the American Otological Society, American Neurotology Society [and] European Academy of Otology and Neurotology Title Quality of Life in Patients With Vestibular Schwannoma Treated With the Retrolabyrinthine Approach Authors Wakabayashi Takeshi, Mokudai Yutaro, Shimanuki Marie N, Hosoya Makoto, Nishiyama Takanori, Ozawa Hiroyuki, Oishi Naoki Journal / DOI Otology & neurotology : official publication of the American Otological Society, American Neurotology Society [and] European Academy of Otology and Neurotology · DOI: 10.1097/MAO.0000000000005025 · PMID: 42550582 https://pubmed.ncbi.nlm.nih.gov/42550582/ Abstract OBJECTIVE: To investigate the factors affecting postoperative quality of life (QOL) and its longitudinal changes in patients undergoing vestibular schwannoma resection through the retrolabyrinthine approach (RLA). STUDY DESIGN: Retrospective case review. SETTING: Tertiary referral center. PATIENTS: Fifty nine patients who underwent RLA for vestibular schwannoma between March 2016 and November 2022 and completed the Penn Acoustic Neuroma Quality of Life (PANQOL) questionnaire preoperatively and at least once at ≥6 months postoperatively. Patients were categorized into hearing preservation (n=37), hearing deterioration (n=19), and preoperative deafness (n=3) groups. INTERVENTION: Surgical resection of vestibular schwannoma through RLA with the intent of preserving hearing. MAIN OUTCOME MEASURES: Changes in PANQOL composite and subdomain scores over time. RESULTS: Total PANQOL scores remained stable postoperatively (mean scores: 69.7 preoperative, 72.3 at 6 mo, 76.4 at 1 y, and 75.1 at 2 y). Anxiety scores significantly improved after surgery. At 6 months postoperatively, hearing and balance scores were significantly lower in the hearing deterioration group compared with the hearing preservation group, though differences diminished by 1 and 2 years. Energy scores tended to be higher in the hearing preservation group. CONCLUSIONS: RLA contributes to maintaining or improving postoperative QOL. Hearing preservation supports not only auditory function but also emotional and social well being. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0152",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation. Heart failure",
+   "confidence": "medium",
+   "date": "2026-08-04",
+   "path": "content/papers/2026/2026-08-04_paper-2026-0152_modeling_individual_patient_outcomes_after_interatrial_shunt.md",
+   "snippet": "Title Modeling Individual Patient Outcomes After Interatrial Shunt Treatment in Heart Failure With Reduced and Preserved Ejection Fraction: The RELIEVE HF Trial Authors Stone Gregg W, Lindenfeld JoAnn, Zile Michael R, Anker Stefan D, Rodés ",
+   "text": "Cardiology scraped pubmed PubMed / Circulation. Heart failure Title Modeling Individual Patient Outcomes After Interatrial Shunt Treatment in Heart Failure With Reduced and Preserved Ejection Fraction: The RELIEVE HF Trial Authors Stone Gregg W, Lindenfeld JoAnn, Zile Michael R, Anker Stefan D, Rodés Cabau Josep, Snyder Clayton, Kar Saibal, Pfeiffer Michael P, et al. Journal / DOI Circulation. Heart failure · DOI: 10.1161/CIRCHEARTFAILURE.125.014100 · PMID: 42550570 https://pubmed.ncbi.nlm.nih.gov/42550570/ Abstract BACKGROUND: Among 508 patients randomized to interatrial shunt implantation versus a placebo procedure in the RELIEVE HF trial (Reducing Lung Congestion Symptoms Using the V Wave Shunt in Advanced Heart Failure), 2 year clinical outcomes were improved in heart failure with reduced ejection fraction (HFrEF, n=206) and worsened in heart failure with preserved ejection fraction (HFpEF, n=302). However, randomized trials typically include therapeutic responders and nonresponders. We sought to determine the independent predictors of outcomes and model individual patient risk after atrial shunt implantation in HFrEF and HFpEF. METHODS: The primary outcome included all cause death, cardiac transplantation or left ventricular assist device implantation, heart failure hospitalizations, and outpatient worsening heart failure events. From 37 baseline clinical, laboratory, echocardiographic, and hemodynamic covariates, the cumulative mean function of recurrent events during follow up was modeled by the Lin Wei Yang Ying method. RESULTS: Among control patients with HFrEF, independent baseline predictors of outcomes were atrial fibrillation, elevated troponin, lower left ventricular ejection fraction, and greater right atrial pressure. In contrast, independent predictors of outcomes in shunt treated patients with HFrEF were lower systolic blood pressure and elevated right ventricular end diastolic area index, pulmonary artery pressure, and pulmonary vascular resistance. Among control patients with HFpEF, independent predictors of outcomes were diabetes, higher heart rate and left ventricular end systolic volume, and lower right ventricular fractional area change. Conversely, independent predictors in shunt treated patients with HFpEF were hypertension, smoking, lower 6 minute walk distance, reduced estimated glomerular filtration rate, elevated troponin, and moderate or greater tricuspid regurgitation. Risk modeling estimated that 67.2% of patients with HFrEF might benefit from shunt placement compared with 21.4% of patients with HFpEF. CONCLUSIONS: In RELIEVE HF, distinct baseline risk factors influenced cardiovascular outcomes before and after atrial shunt treatment in HFrEF and HFpEF. Despite markedly different group responses to atrial shunt treatment in the randomized HFrEF and HFpEF strata, given individual differences in patient risk factor profiles, most but not all patients with HFrEF may benefit, and some patients with HFpEF may also improve after shunt treatment. REGISTRATION: URL: https://www.clinicaltrials.gov; Unique identifier: NCT03499236. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0151",
