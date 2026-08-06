@@ -69,8 +69,9 @@ RUN_SLUG = "q4o_leakage_free_residual_cnn"
 # kernel executes — and running the test script as a subprocess passes against the new
 # file while the kernel still runs the old one. The notebook asserts this value and
 # calls self_check() in-process so a stale import fails at cell 1, loudly.
-MODULE_VERSION = 2
-MODULE_BUILD = "2026-08-06 q4o.2 — OOF audit scoped to the scorable cohort"
+MODULE_VERSION = 3
+MODULE_BUILD = ("2026-08-06 q4o.3 — reporting layer (presentation only) "
+                "+ training history; q4o.2 scoped the OOF audit to the scorable cohort")
 
 SEED0 = 20260806
 IDX_S = 1                       # y3 == 1 is the S (SVEB) class
@@ -1135,28 +1136,59 @@ def _train_one_fold(net, X: np.ndarray, offset: Optional[np.ndarray],
     best_state = {k: v.detach().clone() for k, v in net.state_dict().items()}
     best_loss, bad, best_epoch = float("inf"), 0, -1
     rng = np.random.RandomState(seed)
+    history: List[dict] = []
 
     for ep in range(epochs):
         net.train()
         perm = rng.permutation(len(fit_idx))
+        train_tot, train_cnt = 0.0, 0
         for b0 in range(0, len(fit_idx), batch):
             bi = fit_idx[perm[b0:b0 + batch]]
             x, o = batch_tensors(bi)
             yy = torch.tensor(y[bi].astype("float32"), device=device)
             opt.zero_grad()
-            bce(net(x, o), yy).backward()
+            loss = bce(net(x, o), yy)
+            loss.backward()
             opt.step()
+            # Recorded from the loss that was already computed for the backward pass.
+            train_tot += float(loss.detach()) * len(bi)
+            train_cnt += len(bi)
 
         net.eval()
         with torch.no_grad():
             tot, cnt = 0.0, 0
+            dev_logits = np.empty(len(dev_idx), dtype=float)
             for b0 in range(0, len(dev_idx), 4096):
-                bi = dev_idx[b0:b0 + 4096]
+                sl = slice(b0, b0 + 4096)
+                bi = dev_idx[sl]
                 x, o = batch_tensors(bi)
                 yy = torch.tensor(y[bi].astype("float32"), device=device)
-                tot += float(bce(net(x, o), yy)) * len(bi)
+                out = net(x, o)
+                tot += float(bce(out, yy)) * len(bi)
                 cnt += len(bi)
+                dev_logits[sl] = out.detach().cpu().numpy()
             dev_loss = tot / max(1, cnt)
+
+        # Diagnostics only. dev PR-AUC is recorded for the learning curves and is
+        # NEVER used to select the checkpoint — selection stays on dev BCE loss below,
+        # exactly as before history recording existed.
+        dev_prauc = None
+        try:
+            from sklearn.metrics import average_precision_score
+            y_dev = y[dev_idx].astype(int)
+            if 0 < int(y_dev.sum()) < len(y_dev):
+                dev_prauc = float(average_precision_score(y_dev, dev_logits))
+        except Exception:
+            dev_prauc = None
+        history.append({
+            "epoch": int(ep),
+            "train_loss": float(train_tot / max(1, train_cnt)),
+            "dev_loss": float(dev_loss),
+            "dev_prauc": dev_prauc,
+            "alpha": (float(net.alpha.detach().cpu().numpy()[0])
+                      if hasattr(net, "alpha") else None),
+        })
+
         if dev_loss < best_loss - 1e-6:
             best_loss, best_epoch, bad = dev_loss, ep, 0
             best_state = {k: v.detach().clone() for k, v in net.state_dict().items()}
@@ -1175,7 +1207,7 @@ def _train_one_fold(net, X: np.ndarray, offset: Optional[np.ndarray],
             x, o = batch_tensors(bi)
             scores[sl] = net(x, o).detach().cpu().numpy()
     alpha = float(net.alpha.detach().cpu().numpy()[0]) if hasattr(net, "alpha") else float("nan")
-    return scores, alpha, best_epoch, float(best_loss)
+    return scores, alpha, best_epoch, float(best_loss), history
 
 
 def run_logistic_arm(X: np.ndarray, cohort: Cohort, fold_map: Dict[int, int],
@@ -1267,13 +1299,14 @@ def run_nn_arm(arm: str, X: np.ndarray, offsets: Optional[Dict[int, np.ndarray]]
         set_determinism(seed + 1009 * f)
         net = (build_plain_cnn(X.shape[1]) if offsets is None
                else build_residual_net(X.shape[1], init="normal"))
-        scores, alpha, best_ep, dev_loss = _train_one_fold(
+        scores, alpha, best_ep, dev_loss, hist = _train_one_fold(
             net, X, off, cohort.y, fit_idx, dev_idx, te_idx,
             seed + 1009 * f, device, epochs, batch, log)
         out[te_idx] = scores
         diags.append({"fold": f, "alpha": alpha, "best_epoch": best_ep,
                       "dev_loss": dev_loss, "n_fit": int(len(fit_idx)),
-                      "n_dev": int(len(dev_idx)), "n_test": int(len(te_idx))})
+                      "n_dev": int(len(dev_idx)), "n_test": int(len(te_idx)),
+                      "history": hist})
         if log:
             log(f"    {arm} seed {seed} fold {f}: alpha {alpha:+.4f} · "
                 f"best epoch {best_ep} · dev loss {dev_loss:.4f}")
@@ -1444,7 +1477,8 @@ def _json_safe(obj):
 def write_bundle(out_dir: str, config: dict, manifest: dict, result: dict,
                  fold_map: Dict[int, int], arm_probs: Dict[str, np.ndarray],
                  predictions: dict, log_text: str,
-                 figures: Optional[Dict[str, object]] = None) -> str:
+                 figures: Optional[Dict[str, object]] = None,
+                 training_history: Optional[list] = None) -> str:
     os.makedirs(out_dir, exist_ok=True)
     os.makedirs(os.path.join(out_dir, "figures"), exist_ok=True)
     for name, payload in (("config.json", config), ("manifest.json", manifest),
@@ -1463,6 +1497,10 @@ def write_bundle(out_dir: str, config: dict, manifest: dict, result: dict,
         os.makedirs(arm_dir, exist_ok=True)
         np.save(os.path.join(arm_dir, "probs.npy"), probs)
     np.savez_compressed(os.path.join(out_dir, "predictions.npz"), **predictions)
+    if training_history:
+        with open(os.path.join(out_dir, "training_history.json"), "w",
+                  encoding="utf-8") as fh:
+            json.dump(_json_safe(training_history), fh, ensure_ascii=False, indent=1)
     with open(os.path.join(out_dir, "log.txt"), "w", encoding="utf-8") as fh:
         fh.write(log_text)
     if figures:
@@ -1495,22 +1533,40 @@ def _write_figures(fig_dir: str, payload: Dict[str, object]) -> None:
         plt.close(fig)
     contrasts = payload.get("contrasts", {})
     if contrasts:
-        fig, ax = plt.subplots(figsize=(7, 3.2))
-        names = list(contrasts)
-        means = [contrasts[c]["mean"] for c in names]
-        lo = [contrasts[c]["mean"] - contrasts[c]["ci_low"] for c in names]
-        hi = [contrasts[c]["ci_high"] - contrasts[c]["mean"] for c in names]
-        ax.errorbar(means, np.arange(len(names)), xerr=[lo, hi], fmt="o", capsize=4)
-        ax.axvline(0.0, color="k", lw=0.8)
-        ax.axvline(GATE_MIN_GAIN, color="tab:red", lw=0.8, ls="--", label="gate +0.015")
-        ax.set_yticks(np.arange(len(names)))
-        ax.set_yticklabels(names, fontsize=7)
-        ax.set_xlabel("paired difference (k-sweep achievement)")
-        ax.legend(fontsize=7)
-        ax.grid(alpha=0.3, axis="x")
-        fig.tight_layout()
-        fig.savefig(os.path.join(fig_dir, "contrasts.png"), dpi=120)
-        plt.close(fig)
+        # Primary and reference contrasts go on SEPARATE axes. B - A is orders of
+        # magnitude larger than C - A; sharing one axis flattens every contrast the
+        # decision actually rests on into a single indistinguishable dot at zero.
+        groups = [("contrasts_primary.png", PRIMARY_CONTRASTS,
+                   "Primary contrasts (decision-relevant)"),
+                  ("contrasts_reference.png", REFERENCE_CONTRASTS,
+                   "Reference gaps (separate scale)")]
+        for fname, wanted, title in groups:
+            names = [n for n in wanted if n in contrasts]
+            if not names:
+                continue
+            fig, ax = plt.subplots(figsize=(8, 0.85 * len(names) + 2.0))
+            means = [contrasts[c]["mean"] for c in names]
+            lo = [contrasts[c]["mean"] - contrasts[c]["ci_low"] for c in names]
+            hi = [contrasts[c]["ci_high"] - contrasts[c]["mean"] for c in names]
+            ax.errorbar(means, np.arange(len(names)), xerr=[lo, hi], fmt="o",
+                        capsize=5, lw=2)
+            for i, c in enumerate(names):
+                ax.annotate(f"  {contrasts[c]['mean']:+.4f}",
+                            xy=(contrasts[c]["ci_high"], i), xytext=(5, 0),
+                            textcoords="offset points", va="center", fontsize=8)
+            ax.axvline(0.0, color="k", lw=1.0)
+            ax.axvline(GATE_MIN_GAIN, color="tab:red", lw=1.0, ls="--",
+                       label=f"gate +{GATE_MIN_GAIN}")
+            ax.set_yticks(np.arange(len(names)))
+            ax.set_yticklabels([n.replace("_minus_", " - ") for n in names], fontsize=8)
+            ax.set_ylim(-0.7, len(names) - 0.3)
+            ax.set_xlabel("paired difference (k-sweep achievement, 95% CI)")
+            ax.set_title(title, fontsize=10)
+            ax.legend(fontsize=7)
+            ax.grid(alpha=0.3, axis="x")
+            fig.tight_layout()
+            fig.savefig(os.path.join(fig_dir, fname), dpi=120)
+            plt.close(fig)
 
 
 def verify_bundle(out_dir: str, arms: Sequence[str] = ARMS) -> None:
@@ -1554,6 +1610,1039 @@ def append_registry(registry_path: str, record: dict) -> None:
     os.makedirs(os.path.dirname(os.path.abspath(registry_path)) or ".", exist_ok=True)
     with open(registry_path, "a", encoding="utf-8") as fh:
         fh.write(json.dumps(_json_safe(record), ensure_ascii=False) + "\n")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Reporting — PRESENTATION ONLY
+#
+# Everything in this section reads a finished run bundle and renders it. It never
+# trains, never changes an arm/fold/seed/metric/bootstrap/gate, and never writes to
+# config.json, manifest.json, result.json, fold_map.json, predictions.npz, or
+# arms/*/probs.npy. Measured quantities are read from result.json rather than
+# recomputed. Per-record values, which result.json stores only as summaries, are
+# recomputed from the stored logits using the same achievement_at() the run used —
+# and reconcile_report() checks that recomputation against result.json's summaries.
+#
+# Figure text is English on purpose: Colab has no CJK font by default, so Korean
+# axis labels render as tofu boxes. The prose report is Korean.
+# ─────────────────────────────────────────────────────────────────────────────
+IMMUTABLE_BUNDLE_FILES = ("config.json", "manifest.json", "result.json",
+                          "fold_map.json", "predictions.npz")
+
+PRIMARY_CONTRASTS = ("C_minus_A", "C_minus_D", "E_minus_combBaseline")
+REFERENCE_CONTRASTS = ("B_minus_A", "D_minus_A", "E_minus_A")
+COMB_BASELINE = "comb_baseline_diagnostic"
+
+ARM_SHORT = {ARM_A: "A", ARM_B: "B", ARM_C: "C", ARM_D: "D", ARM_E: "E",
+             COMB_BASELINE: "cleanComb"}
+ARM_KO = {
+    ARM_A: "A · morphology baseline (동결된 Q4-N 형태 특징, 로지스틱)",
+    ARM_B: "B · 현재 박동 raw CNN (2리드 파형만)",
+    ARM_C: "C · morphology + raw residual (주 비교군)",
+    ARM_D: "D · 파형 셔플 대조군 (음성 대조)",
+    ARM_E: "E · Q4-N boost_fix 구조 진단용 (누수 제거)",
+    COMB_BASELINE: "cleanComb · comb 로지스틱 (Q4-N cpu_comb 의 깨끗한 대응물)",
+}
+
+
+@dataclass
+class RunBundle:
+    """A read-only view of a finished run bundle."""
+
+    run_dir: str
+    config: dict
+    manifest: dict
+    result: dict
+    fold_map: Dict[int, int]
+    predictions: Dict[str, np.ndarray]
+    training_history: Optional[list]
+    seeds: List[int]
+    records: List[int]
+    idx_of: Dict[int, np.ndarray]
+    y: np.ndarray
+
+    @property
+    def figures_dir(self) -> str:
+        return os.path.join(self.run_dir, "figures")
+
+    def arm_names(self) -> List[str]:
+        known = [a for a in ARMS if a in self.result.get("arms", {})]
+        if COMB_BASELINE in self.result.get("arms", {}):
+            known.append(COMB_BASELINE)
+        return known
+
+    def logits(self, arm: str) -> np.ndarray:
+        """Stored logits as ``(n_seed, n_sample)``; 1-D entries are broadcast."""
+        key = f"logit_{arm}"
+        if key not in self.predictions:
+            raise Q4OError(f"predictions.npz has no '{key}'")
+        arr = np.asarray(self.predictions[key])
+        if arr.ndim == 1:                       # deterministic diagnostic arm
+            arr = np.repeat(arr[None, :], len(self.seeds), axis=0)
+        return arr
+
+
+def bundle_fingerprint(run_dir: str) -> Dict[str, str]:
+    """SHA256 of every file a report must never touch."""
+    out: Dict[str, str] = {}
+    for name in IMMUTABLE_BUNDLE_FILES:
+        p = os.path.join(run_dir, name)
+        if os.path.exists(p):
+            out[name] = sha256_file(p)
+    arms_dir = os.path.join(run_dir, "arms")
+    if os.path.isdir(arms_dir):
+        for arm in sorted(os.listdir(arms_dir)):
+            p = os.path.join(arms_dir, arm, "probs.npy")
+            if os.path.exists(p):
+                out[f"arms/{arm}/probs.npy"] = sha256_file(p)
+    return out
+
+
+def load_run_bundle(run_dir: str) -> RunBundle:
+    """Read a finished run bundle. Read-only — opens nothing for writing."""
+    if not os.path.isdir(run_dir):
+        raise Q4OError(f"run directory not found: {run_dir}")
+    for name in ("result.json", "manifest.json", "config.json", "predictions.npz"):
+        if not os.path.exists(os.path.join(run_dir, name)):
+            raise Q4OError(f"{run_dir} is not a complete run bundle — missing {name}")
+
+    def _json(name):
+        with open(os.path.join(run_dir, name), encoding="utf-8") as fh:
+            return json.load(fh)
+
+    result, manifest, config = _json("result.json"), _json("manifest.json"), _json("config.json")
+    fold_raw = (_json("fold_map.json")["record_to_fold"]
+                if os.path.exists(os.path.join(run_dir, "fold_map.json")) else {})
+    fold_map = {int(k): int(v) for k, v in fold_raw.items()}
+
+    with np.load(os.path.join(run_dir, "predictions.npz")) as npz:
+        predictions = {k: npz[k] for k in npz.files}
+
+    history_path = os.path.join(run_dir, "training_history.json")
+    training_history = None
+    if os.path.exists(history_path):
+        training_history = _json("training_history.json")
+
+    seeds = [int(s) for s in predictions["seeds"]]
+    rid = np.asarray(predictions["record_id"]).astype(int)
+    y = np.asarray(predictions["y_true"]).astype(bool)
+    records = sorted(fold_map) if fold_map else sorted(set(rid.tolist()))
+    idx_of = {int(r): np.where(rid == r)[0] for r in records}
+
+    return RunBundle(run_dir=run_dir, config=config, manifest=manifest, result=result,
+                     fold_map=fold_map, predictions=predictions,
+                     training_history=training_history, seeds=seeds,
+                     records=[int(r) for r in records], idx_of=idx_of, y=y)
+
+
+def per_record_ksw(bundle: RunBundle, arm: str) -> np.ndarray:
+    """``(n_seed, n_record)`` k-sweep achievement, recomputed from stored logits.
+
+    Uses the same ``achievement_at`` the run used, so it reproduces result.json's
+    summaries exactly rather than approximating them.
+    """
+    scores = bundle.logits(arm)
+    out = np.empty((scores.shape[0], len(bundle.records)), float)
+    for si in range(scores.shape[0]):
+        row = scores[si]
+        for ri, r in enumerate(bundle.records):
+            idx = bundle.idx_of[int(r)]
+            out[si, ri] = float(np.mean([achievement_at(row, idx, bundle.y, k)
+                                         for k in K_SWEEP]))
+    return out
+
+
+def reconcile_report(bundle: RunBundle, tol: float = 1e-9) -> Dict[str, object]:
+    """Check that the report's recomputation agrees with result.json.
+
+    If this disagrees, the report is not describing the run and must not be trusted.
+    """
+    rows = []
+    worst = 0.0
+    for arm in bundle.arm_names():
+        measured = bundle.result["arms"][arm]
+        recomputed = per_record_ksw(bundle, arm)
+        for si, per_seed in enumerate(measured["per_seed"]):
+            got = float(recomputed[si].mean())
+            want = float(per_seed["ksw"]["mean"])
+            worst = max(worst, abs(got - want))
+            rows.append({"arm": arm, "seed": int(per_seed["seed"]),
+                         "result_json": want, "recomputed": got,
+                         "abs_diff": abs(got - want)})
+    return {"max_abs_diff": worst, "within_tolerance": bool(worst <= tol),
+            "tolerance": tol, "n_checked": len(rows), "rows": rows}
+
+
+def _contrast(bundle: RunBundle, name: str) -> Optional[dict]:
+    return bundle.result.get("contrasts", {}).get(name)
+
+
+def _arm_summary(bundle: RunBundle, arm: str) -> dict:
+    """Seed-averaged headline numbers for one arm, read from result.json."""
+    m = bundle.result["arms"][arm]
+    per_seed = m["per_seed"]
+
+    def seed_mean(key: str) -> float:
+        return float(np.mean([s[key]["mean"] for s in per_seed]))
+
+    sa = m["seed_averaged_ksw"]
+    return {
+        "arm": arm,
+        "short": ARM_SHORT.get(arm, arm),
+        "ksw_mean": float(sa["mean"]),
+        "prauc": seed_mean("prauc"),
+        "auroc": seed_mean("auroc"),
+        "p10": float(sa["p10"]),
+        "worst": float(sa["worst"]),
+        "worst_record": int(sa["worst_record"]),
+        "seed_sd": float(m.get("ksw_seed_std", 0.0)),
+        "ach_by_k": {k: seed_mean(f"ach@{k}") for k in (30, 50, 100, 200, 300)
+                     if f"ach@{k}" in per_seed[0]},
+    }
+
+
+def arm_metrics_rows(bundle: RunBundle) -> List[dict]:
+    """One row per arm for arm_metrics.csv / arm_summary_table.png."""
+    contrast_for = {ARM_B: "B_minus_A", ARM_C: "C_minus_A",
+                    ARM_D: "D_minus_A", ARM_E: "E_minus_A"}
+    a_mean = _arm_summary(bundle, ARM_A)["ksw_mean"]
+    rows = []
+    for arm in bundle.arm_names():
+        s = _arm_summary(bundle, arm)
+        if arm == ARM_A:
+            s["delta_vs_A"], s["delta_source"] = 0.0, "baseline"
+        else:
+            c = _contrast(bundle, contrast_for.get(arm, ""))
+            if c is not None:
+                s["delta_vs_A"] = float(c["record_bootstrap"]["mean"])
+                s["delta_source"] = "paired_contrast"
+            else:
+                # No paired contrast was measured for this arm. Report the plain
+                # difference of means and say so, rather than passing it off as one.
+                s["delta_vs_A"] = s["ksw_mean"] - a_mean
+                s["delta_source"] = "mean_difference"
+        rows.append(s)
+    return rows
+
+
+def _fold_diag_matrix(bundle: RunBundle, arm: str,
+                      field: str) -> Tuple[np.ndarray, List[int], List[int]]:
+    """``(seed x fold)`` matrix of a per-fold training diagnostic from manifest.json."""
+    entries = (bundle.manifest.get("arm_alpha") or {}).get(arm)
+    if not entries:
+        return np.zeros((0, 0)), [], []
+    seeds = [int(e["seed"]) for e in entries]
+    folds = sorted({int(f["fold"]) for e in entries for f in e["folds"]})
+    mat = np.full((len(seeds), len(folds)), np.nan)
+    for si, e in enumerate(entries):
+        for f in e["folds"]:
+            mat[si, folds.index(int(f["fold"]))] = float(f.get(field, np.nan))
+    return mat, seeds, folds
+
+
+def training_stalled(bundle: RunBundle, arm: str = ARM_C) -> Dict[str, object]:
+    """Did early stopping keep epoch 0 everywhere? A real limit on what a NO-GO proves."""
+    mat, seeds, folds = _fold_diag_matrix(bundle, arm, "best_epoch")
+    if mat.size == 0:
+        return {"available": False}
+    total = int(np.isfinite(mat).sum())
+    zero = int((mat == 0).sum())
+    return {"available": True, "arm": arm, "n_total": total, "n_best_epoch_zero": zero,
+            "all_zero": bool(zero == total and total > 0),
+            "fraction": float(zero / max(1, total))}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Reporting — Korean executive summary
+# ─────────────────────────────────────────────────────────────────────────────
+def _fmt_ci(c: Optional[dict], digits: int = 4) -> str:
+    if c is None:
+        return "해당 대비 없음"
+    b = c["record_bootstrap"]
+    return (f"{b['mean']:+.{digits}f} "
+            f"[95% CI {b['ci_low']:+.{digits}f}, {b['ci_high']:+.{digits}f}]")
+
+
+def executive_summary_ko(bundle: RunBundle) -> str:
+    """The first thing a human should read. Every number comes from result.json."""
+    res = bundle.result
+    gates = res["gates"]
+    verdict = gates["verdict"]
+    a = _arm_summary(bundle, ARM_A)
+    c = _arm_summary(bundle, ARM_C)
+    ca, cd = _contrast(bundle, "C_minus_A"), _contrast(bundle, "C_minus_D")
+    ec = _contrast(bundle, "E_minus_combBaseline")
+    passed = [k for k, v in gates["checks"].items() if v]
+    failed = [k for k, v in gates["checks"].items() if not v]
+    stalled = training_stalled(bundle, ARM_C)
+    n_seed = len(bundle.seeds)
+
+    L: List[str] = []
+    L.append("=" * 78)
+    L.append(f"  {res['experiment_id']} / {res['arm_id']} — Executive Summary")
+    L.append(f"  run: {os.path.basename(bundle.run_dir)}")
+    L.append("=" * 78)
+    L.append("")
+    L.append(f"■ 최종 판정: {verdict}")
+    L.append(f"   사전 등록된 6개 gate 중 {len(passed)}개 통과 / {len(failed)}개 실패."
+             f"  (판정 기준은 실행 전에 고정되었고, 결과를 보고 바꾸지 않았다.)")
+    L.append("")
+    L.append("■ morphology baseline (Arm A) — 이번 실험이 지켜낸 기준선")
+    L.append(f"   k-sweep 달성률 평균  {a['ksw_mean']:.4f}   "
+             f"(record 매크로 PR-AUC {a['prauc']:.4f} · AUROC {a['auroc']:.4f})")
+    L.append(f"   하위꼬리 p10 {a['p10']:.4f} · 최악 레코드 {a['worst_record']} "
+             f"({a['worst']:.4f})")
+    L.append(f"   ※ 이 값은 누수 없는 5-fold record-grouped CV 에서 측정됐다. "
+             f"Q4-N 의 0.8445/0.8631/0.8492 와 같은 자리에 두고 비교하면 안 된다.")
+    L.append("")
+    L.append("■ 주 비교 — C(형태+원파형 잔차) − A(형태 단독)")
+    L.append(f"   {_fmt_ci(ca)}")
+    if ca is not None:
+        L.append(f"   seed {ca['positive_seed_count']}/{n_seed} 개에서 양(+) 방향 · "
+                 f"통과 기준은 평균 ≥ +{GATE_MIN_GAIN} 이고 CI 하한 > 0")
+    L.append("")
+    L.append("■ 음성 대조 — C − D(파형을 레코드 안에서 셔플한 동일 구조)")
+    L.append(f"   {_fmt_ci(cd)}")
+    L.append("   이 대비가 0 이면, C 가 얻은 것은 '박동 단위 파형 정보'가 아니다.")
+    L.append("")
+    if ec is not None:
+        L.append("■ 진단 — E − cleanComb (Q4-N boost_fix 구조에서 잔차만의 효과)")
+        L.append(f"   {_fmt_ci(ec)}")
+        L.append("")
+    L.append("■ 통과한 gate")
+    for k in passed:
+        L.append(f"   ✅ {k}")
+    L.append("■ 실패한 gate")
+    for k in failed:
+        L.append(f"   ❌ {k}")
+    L.append("")
+
+    L.append("■ 이 결과가 의미하는 것")
+    if verdict == "NO-GO":
+        L.append("   · 누수를 제거한 조건에서, 현재 박동의 원파형 잔차는 형태 baseline 위에")
+        L.append("     사전 등록한 크기(+0.015)의 이득을 주지 못했다.")
+        if cd is not None and abs(cd["record_bootstrap"]["mean"]) < GATE_MIN_GAIN:
+            L.append("   · C 가 파형 셔플 대조군 D 를 유의하게 이기지 못했다. 즉 C 의 점수는")
+            L.append("     박동 단위 파형 정보에서 온 것이라고 말할 근거가 없다.")
+        L.append("   · morphology baseline 은 유지된다. 이것이 현재까지 확립된 유일한 축이다.")
+        L.append("   · Q4-N 의 boost_fix=0.8631 이 '개선'이 아니었다는 것과 정합적이다 —")
+        L.append("     그 값은 80% 가 in-sample 인 offset 위에서 계산된 값이었다.")
+    else:
+        L.append("   · 사전 등록한 6개 기준을 모두 만족했다. 다만 이는 SVDB 한 데이터셋,")
+        L.append("     한 프로토콜에서의 결과다.")
+    L.append("")
+
+    L.append("■ 이 결과가 증명하지 않는 것")
+    L.append("   · '원파형에 S 판별 정보가 없다'는 것을 증명하지 않는다. 증명한 것은")
+    L.append("     '이 구조·이 학습 스케줄·이 offset 에서 추가 이득이 없었다'는 것뿐이다.")
+    if stalled.get("available") and stalled.get("all_zero"):
+        L.append(f"   · ★ 중요 — Arm C 는 {stalled['n_total']}개 (seed × fold) 전부에서")
+        L.append("     best_epoch = 0 이었다. 즉 dev BCE 손실 기준으로 1 epoch 이후 어떤")
+        L.append("     지점도 epoch 0 보다 낫지 않았고, 잔차 분기는 사실상 학습되기 전의")
+        L.append("     체크포인트로 되돌아갔다. 따라서 이 NO-GO 는 '잔차가 쓸모없다'가")
+        L.append("     아니라 '이 스케줄에서는 잔차가 켜지지 않았다'에 더 가깝다.")
+        L.append("     학습률·epoch 수·early stopping 기준은 다음 실험의 1순위 점검 대상이다.")
+    L.append("   · Transformer 나 더 큰 fusion 모델이 실패한다는 것을 증명하지 않는다.")
+    L.append("     동시에, 그것을 시도할 근거가 생겼다는 뜻도 전혀 아니다.")
+    L.append("   · MIT-BIH DS1→DS2 에서의 결과를 예측하지 않는다. 이 실험은 SVDB 다.")
+    L.append("")
+
+    L.append("■ 권장 다음 행동")
+    if verdict == "NO-GO":
+        L.append("   1. Transformer·대형 fusion 모델로 가지 않는다 (사전 등록된 중단 규칙).")
+        L.append("   2. morphology baseline 을 확정 기준선으로 고정하고 기록한다.")
+        if stalled.get("available") and stalled.get("all_zero"):
+            L.append("   3. 그 전에, 잔차 분기가 학습조차 안 된 것이 스케줄 문제인지 확인한다")
+            L.append("      (learning rate / epoch 수 / early stopping 기준). 이는 새 가설이")
+            L.append("      아니라 이번 실행의 타당성 점검이므로, 별도 spec 으로 사전 등록한다.")
+            L.append("   4. 그다음 실패 레코드·하위꼬리 분석으로 돌아간다"
+                     " (patient_delta_waterfall.png 참조).")
+        else:
+            L.append("   3. 실패 레코드·하위꼬리 분석으로 돌아간다"
+                     " (patient_delta_waterfall.png 참조).")
+    else:
+        L.append("   1. Transformer 로 가지 않는다. 같은 최소 잔차 구조를 MIT-BIH")
+        L.append("      DS1→DS2 · S PR-AUC 프로토콜로 이식한다.")
+    L.append("")
+    L.append(f"■ 재현 정보 — data sha256 "
+             f"{str(bundle.manifest.get('data', {}).get('sha256', 'n/a'))[:16]}… · "
+             f"git {str(bundle.manifest.get('git_commit_sha', 'n/a'))[:10]} · "
+             f"seeds {bundle.seeds}")
+    L.append("=" * 78)
+    return "\n".join(L)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Reporting — figures. All axis text is English (Colab has no CJK font by default).
+# ─────────────────────────────────────────────────────────────────────────────
+def _plt():
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    return plt
+
+
+def _save(fig, path: str) -> str:
+    fig.tight_layout()
+    fig.savefig(path, dpi=130, bbox_inches="tight")
+    _plt().close(fig)
+    return path
+
+
+def fig_arm_summary_table(bundle: RunBundle) -> List[str]:
+    """arm_summary_table.png + arm_metrics.csv"""
+    import csv
+    plt = _plt()
+    rows = arm_metrics_rows(bundle)
+    fig_dir = bundle.figures_dir
+    csv_path = os.path.join(fig_dir, "arm_metrics.csv")
+    cols = ["arm", "short", "ksw_mean", "delta_vs_A", "delta_source", "prauc",
+            "auroc", "p10", "worst", "worst_record", "seed_sd"]
+    with open(csv_path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")
+        w.writeheader()
+        for r in rows:
+            w.writerow(r)
+
+    header = ["arm", "k-sweep", "Δ vs A", "PR-AUC", "AUROC", "p10", "worst (rec)", "seed SD"]
+    body = []
+    for r in rows:
+        delta = "—" if r["delta_source"] == "baseline" else f"{r['delta_vs_A']:+.4f}"
+        if r["delta_source"] == "mean_difference":
+            delta += "*"
+        body.append([r["short"], f"{r['ksw_mean']:.4f}", delta, f"{r['prauc']:.4f}",
+                     f"{r['auroc']:.4f}", f"{r['p10']:.4f}",
+                     f"{r['worst']:.3f} (#{r['worst_record']})", f"{r['seed_sd']:.4f}"])
+
+    fig, ax = plt.subplots(figsize=(11, 0.55 * len(body) + 1.9))
+    ax.axis("off")
+    tbl = ax.table(cellText=body, colLabels=header, loc="center", cellLoc="center")
+    tbl.auto_set_font_size(False)
+    tbl.set_fontsize(9)
+    tbl.scale(1, 1.5)
+    for j in range(len(header)):
+        tbl[0, j].set_facecolor("#dfe6ee")
+        tbl[0, j].set_text_props(weight="bold")
+    for i, r in enumerate(rows, start=1):
+        if r["arm"] == ARM_C:
+            for j in range(len(header)):
+                tbl[i, j].set_facecolor("#fff3cd")
+        elif r["arm"] == ARM_A:
+            for j in range(len(header)):
+                tbl[i, j].set_facecolor("#e8f4ea")
+    ax.set_title(f"{EXPERIMENT_ID} / {ARM_ID} — arm summary "
+                 f"(seed-averaged over {len(bundle.seeds)} seeds)\n"
+                 f"A = morphology baseline (green), C = primary arm (yellow); "
+                 f"* = mean difference, not a paired contrast",
+                 fontsize=10, pad=14)
+    return [_save(fig, os.path.join(fig_dir, "arm_summary_table.png")), csv_path]
+
+
+def fig_primary_contrasts_zoom(bundle: RunBundle) -> List[str]:
+    """primary_contrasts_zoom.png — only the small, decision-relevant contrasts."""
+    plt = _plt()
+    gates = bundle.result["gates"]["checks"]
+    spec = [("C_minus_A", "C - A  (primary)",
+             bool(gates.get("1_mean_gain_ge_0.015") and gates.get("2_ci_lower_gt_0"))),
+            ("C_minus_D", "C - D  (negative control)",
+             bool(gates.get("3_beats_shuffle_control"))),
+            ("E_minus_combBaseline", "E - cleanComb  (diagnostic)", None)]
+    items = [(name, label, ok) for name, label, ok in spec
+             if _contrast(bundle, name) is not None]
+
+    fig, ax = plt.subplots(figsize=(10, 1.15 * len(items) + 2.4))
+    ys = np.arange(len(items))
+    for i, (name, label, gate_ok) in enumerate(items):
+        b = _contrast(bundle, name)["record_bootstrap"]
+        colour = "tab:gray" if gate_ok is None else ("tab:green" if gate_ok else "tab:red")
+        ax.errorbar(b["mean"], i,
+                    xerr=[[b["mean"] - b["ci_low"]], [b["ci_high"] - b["mean"]]],
+                    fmt="o", capsize=6, color=colour, markersize=9, lw=2)
+        tag = "DIAGNOSTIC" if gate_ok is None else ("PASS" if gate_ok else "FAIL")
+        ax.annotate(f"  {b['mean']:+.4f} [{b['ci_low']:+.4f}, {b['ci_high']:+.4f}]   {tag}",
+                    xy=(b["ci_high"], i), xytext=(6, 0), textcoords="offset points",
+                    va="center", fontsize=9,
+                    color=colour, fontweight="bold")
+    ax.axvline(0.0, color="k", lw=1.2, label="zero (no effect)")
+    ax.axvline(GATE_MIN_GAIN, color="tab:blue", ls="--", lw=1.2,
+               label=f"gate +{GATE_MIN_GAIN}")
+    ax.set_yticks(ys)
+    ax.set_yticklabels([label for _, label, _ in items], fontsize=9)
+    ax.set_ylim(-0.7, len(items) - 0.3)
+    ax.set_xlabel("paired difference in record-level k-sweep achievement "
+                  "(95% CI, record bootstrap)")
+    ax.set_title("Primary contrasts only — plotted on their own scale.\n"
+                 "Large reference gaps (e.g. B - A) are in reference_gap_separate.png "
+                 "so they cannot flatten this axis.", fontsize=10)
+    ax.legend(fontsize=8, loc="lower right")
+    ax.grid(alpha=0.3, axis="x")
+    lo = min(_contrast(bundle, n)["record_bootstrap"]["ci_low"] for n, _, _ in items)
+    hi = max(_contrast(bundle, n)["record_bootstrap"]["ci_high"] for n, _, _ in items)
+    pad = max((hi - lo) * 0.55, 0.01)
+    ax.set_xlim(min(lo, -0.005) - pad * 0.2, max(hi, GATE_MIN_GAIN) + pad)
+    return [_save(fig, os.path.join(bundle.figures_dir, "primary_contrasts_zoom.png"))]
+
+
+def fig_reference_gap_separate(bundle: RunBundle) -> List[str]:
+    """reference_gap_separate.png — the large gaps, on their own axis."""
+    plt = _plt()
+    items = [(n, n.replace("_minus_", " - ")) for n in REFERENCE_CONTRASTS
+             if _contrast(bundle, n) is not None]
+    if not items:
+        return []
+    fig, ax = plt.subplots(figsize=(10, 1.0 * len(items) + 2.2))
+    for i, (name, label) in enumerate(items):
+        b = _contrast(bundle, name)["record_bootstrap"]
+        ax.errorbar(b["mean"], i,
+                    xerr=[[b["mean"] - b["ci_low"]], [b["ci_high"] - b["mean"]]],
+                    fmt="s", capsize=6, color="tab:purple", markersize=8, lw=2)
+        ax.annotate(f"  {b['mean']:+.4f} [{b['ci_low']:+.4f}, {b['ci_high']:+.4f}]",
+                    xy=(b["mean"], i), xytext=(8, 10), textcoords="offset points",
+                    fontsize=9)
+    ax.axvline(0.0, color="k", lw=1.2)
+    ax.axvline(GATE_MIN_GAIN, color="tab:blue", ls="--", lw=1.0,
+               label=f"gate +{GATE_MIN_GAIN} (for scale)")
+    ax.set_yticks(np.arange(len(items)))
+    ax.set_yticklabels([lab for _, lab in items], fontsize=9)
+    ax.set_ylim(-0.7, len(items) - 0.3)
+    ax.set_xlabel("paired difference in record-level k-sweep achievement (95% CI)")
+    ax.set_title("Reference gaps — separate axis.\n"
+                 "B - A is orders of magnitude larger than the primary contrasts; "
+                 "sharing an axis would render those invisible.", fontsize=10)
+    ax.legend(fontsize=8)
+    ax.grid(alpha=0.3, axis="x")
+    return [_save(fig, os.path.join(bundle.figures_dir, "reference_gap_separate.png"))]
+
+
+def fig_achievement_by_k(bundle: RunBundle) -> List[str]:
+    """achievement_by_k.png — achievement@k per arm, plus a zoomed C - A panel."""
+    plt = _plt()
+    arms = [a for a in (ARM_A, ARM_C, ARM_D, ARM_E) if a in bundle.result["arms"]]
+    summaries = {a: _arm_summary(bundle, a) for a in arms}
+    ks = sorted(summaries[arms[0]]["ach_by_k"])
+    if not ks:
+        return []
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.4))
+    colours = {ARM_A: "tab:green", ARM_C: "tab:orange",
+               ARM_D: "tab:gray", ARM_E: "tab:blue"}
+    for a in arms:
+        axes[0].plot(ks, [summaries[a]["ach_by_k"][k] for k in ks], "o-",
+                     label=ARM_SHORT.get(a, a), color=colours.get(a), lw=2)
+    axes[0].set_xscale("log")
+    axes[0].set_xticks(ks)
+    axes[0].set_xticklabels([str(k) for k in ks])
+    axes[0].set_xlabel("k (top-k beats reviewed per record)")
+    axes[0].set_ylabel("achievement @ k")
+    axes[0].set_title("Achievement vs k — all arms", fontsize=10)
+    axes[0].legend(fontsize=8)
+    axes[0].grid(alpha=0.3)
+
+    if ARM_C in summaries:
+        d = [summaries[ARM_C]["ach_by_k"][k] - summaries[ARM_A]["ach_by_k"][k] for k in ks]
+        axes[1].axhline(0.0, color="k", lw=1.2)
+        axes[1].axhline(GATE_MIN_GAIN, color="tab:blue", ls="--", lw=1.0,
+                        label=f"gate +{GATE_MIN_GAIN}")
+        axes[1].plot(ks, d, "o-", color="tab:orange", lw=2, label="C - A")
+        axes[1].set_xscale("log")
+        axes[1].set_xticks(ks)
+        axes[1].set_xticklabels([str(k) for k in ks])
+        axes[1].set_xlabel("k")
+        axes[1].set_ylabel("C - A (achievement @ k)")
+        axes[1].set_title("Zoom: C - A at each k\n"
+                          "(difference of seed-averaged means, not a paired CI)",
+                          fontsize=10)
+        axes[1].legend(fontsize=8)
+        axes[1].grid(alpha=0.3)
+    return [_save(fig, os.path.join(bundle.figures_dir, "achievement_by_k.png"))]
+
+
+def fig_seed_effects(bundle: RunBundle) -> List[str]:
+    """seed_effects.png — per-seed C - A and C - D."""
+    plt = _plt()
+    ca, cd = _contrast(bundle, "C_minus_A"), _contrast(bundle, "C_minus_D")
+    if ca is None:
+        return []
+    seeds = bundle.seeds
+    x = np.arange(len(seeds))
+    fig, ax = plt.subplots(figsize=(10, 4.2))
+    w = 0.36
+    ax.bar(x - w / 2, ca["by_seed"], w, label="C - A",
+           color=["tab:green" if v > 0 else "tab:red" for v in ca["by_seed"]])
+    if cd is not None:
+        ax.bar(x + w / 2, cd["by_seed"], w, label="C - D",
+               color=["#7fb98a" if v > 0 else "#d99a9a" for v in cd["by_seed"]])
+    ax.axhline(0.0, color="k", lw=1.2)
+    ax.axhline(GATE_MIN_GAIN, color="tab:blue", ls="--", lw=1.2,
+               label=f"gate +{GATE_MIN_GAIN}")
+    ax.set_xticks(x)
+    ax.set_xticklabels([str(s) for s in seeds], fontsize=8)
+    ax.set_xlabel("training seed")
+    ax.set_ylabel("paired difference (k-sweep)")
+    pos = ca["positive_seed_count"]
+    ax.set_title(f"Per-seed direction — {pos} of {len(seeds)} seeds positive for C - A "
+                 f"(gate needs >= {GATE_MIN_SEED_AGREE})", fontsize=10)
+    ax.legend(fontsize=8)
+    ax.grid(alpha=0.3, axis="y")
+    return [_save(fig, os.path.join(bundle.figures_dir, "seed_effects.png"))]
+
+
+def fig_fold_training_diagnostics(bundle: RunBundle) -> List[str]:
+    """fold_training_diagnostics.png — seed x fold heatmaps of alpha/best_epoch/dev_loss."""
+    plt = _plt()
+    arms = [a for a in (ARM_C, ARM_D, ARM_E)
+            if (bundle.manifest.get("arm_alpha") or {}).get(a)]
+    if not arms:
+        return []
+    fields = [("alpha", "alpha (learned residual scale)", "viridis"),
+              ("best_epoch", "best_epoch (early-stopping pick)", "magma"),
+              ("dev_loss", "dev BCE loss at the chosen epoch", "cividis")]
+    fig, axes = plt.subplots(len(arms), len(fields),
+                             figsize=(4.3 * len(fields), 2.9 * len(arms)),
+                             squeeze=False)
+    for i, arm in enumerate(arms):
+        for j, (field, title, cmap) in enumerate(fields):
+            mat, seeds, folds = _fold_diag_matrix(bundle, arm, field)
+            ax = axes[i][j]
+            if mat.size == 0:
+                ax.axis("off")
+                continue
+            im = ax.imshow(mat, cmap=cmap, aspect="auto")
+            for r in range(mat.shape[0]):
+                for c in range(mat.shape[1]):
+                    v = mat[r, c]
+                    txt = "n/a" if not np.isfinite(v) else (
+                        f"{int(v)}" if field == "best_epoch" else f"{v:.3f}")
+                    ax.text(c, r, txt, ha="center", va="center", fontsize=7,
+                            color="w" if field != "alpha" else "k")
+            ax.set_xticks(np.arange(len(folds)))
+            ax.set_xticklabels([f"f{f}" for f in folds], fontsize=7)
+            ax.set_yticks(np.arange(len(seeds)))
+            ax.set_yticklabels([str(s)[-2:] for s in seeds], fontsize=7)
+            if j == 0:
+                ax.set_ylabel(f"{ARM_SHORT.get(arm, arm)}\nseed", fontsize=9)
+            if i == 0:
+                ax.set_title(title, fontsize=9)
+            fig.colorbar(im, ax=ax, fraction=0.046)
+
+    stalled = training_stalled(bundle, ARM_C)
+    if stalled.get("available") and stalled.get("all_zero"):
+        fig.suptitle(
+            f"WARNING — Arm C selected best_epoch = 0 in "
+            f"{stalled['n_best_epoch_zero']}/{stalled['n_total']} (seed x fold). "
+            f"No epoch after the first beat epoch 0 on dev BCE loss, so the residual "
+            f"branch reverted to its near-initial state.\n"
+            f"The NO-GO therefore reflects 'the residual never switched on under this "
+            f"schedule', not 'the raw waveform carries nothing'.",
+            fontsize=10, color="tab:red", y=1.02)
+    return [_save(fig, os.path.join(bundle.figures_dir,
+                                    "fold_training_diagnostics.png"))]
+
+
+def fig_patient_delta_waterfall(bundle: RunBundle) -> Tuple[List[str], List[dict]]:
+    """patient_delta_waterfall.png + patient_delta.csv — mean over ALL seeds."""
+    import csv
+    plt = _plt()
+    ksw_a = per_record_ksw(bundle, ARM_A)
+    ksw_c = per_record_ksw(bundle, ARM_C)
+    # Mean across every seed, not a single seed.
+    delta = (ksw_c - ksw_a).mean(axis=0)
+    a_mean, c_mean = ksw_a.mean(axis=0), ksw_c.mean(axis=0)
+    burden = bundle.manifest.get("record_burden", {})
+
+    rows = []
+    for ri, r in enumerate(bundle.records):
+        idx = bundle.idx_of[int(r)]
+        rows.append({
+            "record": int(r),
+            "fold": int(bundle.fold_map.get(int(r), -1)),
+            "n_beat": int(len(idx)),
+            "n_s": int(bundle.y[idx].sum()),
+            "s_burden": float(burden.get(str(int(r)), float(bundle.y[idx].mean()))),
+            "ksw_A": float(a_mean[ri]),
+            "ksw_C": float(c_mean[ri]),
+            "delta_C_minus_A": float(delta[ri]),
+            "n_seed_averaged": int(ksw_a.shape[0]),
+        })
+    rows.sort(key=lambda d: d["delta_C_minus_A"])
+    csv_path = os.path.join(bundle.figures_dir, "patient_delta.csv")
+    with open(csv_path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
+
+    d = np.array([r["delta_C_minus_A"] for r in rows])
+    fig, ax = plt.subplots(figsize=(max(10, 0.20 * len(rows)), 4.4))
+    ax.bar(np.arange(len(rows)), d,
+           color=["tab:red" if v < 0 else "tab:blue" for v in d])
+    ax.axhline(0.0, color="k", lw=1.0)
+    ax.axhline(GATE_MIN_GAIN, color="tab:green", ls="--", lw=1.0,
+               label=f"gate +{GATE_MIN_GAIN}")
+    ax.set_xticks(np.arange(len(rows)))
+    ax.set_xticklabels([str(r["record"]) for r in rows], rotation=90, fontsize=6)
+    ax.set_xlabel("record (sorted by delta)")
+    ax.set_ylabel("C - A (k-sweep)")
+    n_pos = int((d > 0).sum())
+    ax.set_title(f"Per-record C - A, averaged over all {ksw_a.shape[0]} seeds — "
+                 f"{n_pos}/{len(rows)} records improve", fontsize=10)
+    ax.legend(fontsize=8)
+    ax.grid(alpha=0.3, axis="y")
+    return [_save(fig, os.path.join(bundle.figures_dir,
+                                    "patient_delta_waterfall.png")), csv_path], rows
+
+
+def fig_metric_distribution(bundle: RunBundle) -> List[str]:
+    """metric_distribution.png — per-record k-sweep distribution for A / C / D."""
+    plt = _plt()
+    arms = [a for a in (ARM_A, ARM_C, ARM_D) if a in bundle.result["arms"]]
+    data = {a: per_record_ksw(bundle, a).mean(axis=0) for a in arms}
+
+    fig, ax = plt.subplots(figsize=(9, 5))
+    pos = np.arange(len(arms)) + 1
+    parts = ax.violinplot([data[a] for a in arms], positions=pos, showextrema=False,
+                          widths=0.75)
+    for pc in parts["bodies"]:
+        pc.set_facecolor("#b9cfe3")
+        pc.set_alpha(0.55)
+    ax.boxplot([data[a] for a in arms], positions=pos, widths=0.22, showfliers=False)
+    rng = np.random.RandomState(0)
+    for i, a in enumerate(arms):
+        v = data[a]
+        ax.scatter(pos[i] + rng.uniform(-0.13, 0.13, len(v)), v, s=13, alpha=0.65,
+                   color="tab:blue", zorder=3)
+        p10, med = float(np.percentile(v, 10)), float(np.median(v))
+        ax.hlines(p10, pos[i] - 0.4, pos[i] + 0.4, color="tab:red", lw=1.8,
+                  label="p10 (lower tail)" if i == 0 else None)
+        ax.hlines(med, pos[i] - 0.4, pos[i] + 0.4, color="tab:green", lw=1.8,
+                  label="median" if i == 0 else None)
+        ax.annotate(f"p10 {p10:.3f}\nmed {med:.3f}", xy=(pos[i] + 0.42, p10),
+                    fontsize=8, va="center")
+    ax.set_xticks(pos)
+    ax.set_xticklabels([ARM_SHORT.get(a, a) for a in arms])
+    ax.set_ylabel("per-record k-sweep achievement (seed-averaged)")
+    ax.set_title(f"Per-record distribution over {len(bundle.records)} records — "
+                 f"the mean hides the tail", fontsize=10)
+    ax.legend(fontsize=8, loc="lower left")
+    ax.grid(alpha=0.3, axis="y")
+    return [_save(fig, os.path.join(bundle.figures_dir, "metric_distribution.png"))]
+
+
+def fig_learning_curves(bundle: RunBundle) -> List[str]:
+    """learning_curves.png — only when the run actually recorded a training history.
+
+    Runs produced before history recording existed have none. Nothing is fabricated;
+    the report states the absence instead.
+    """
+    if not bundle.training_history:
+        return []
+    plt = _plt()
+    hist = bundle.training_history
+    arms = sorted({h["arm"] for h in hist})
+    fields = [("train_loss", "train BCE loss"), ("dev_loss", "dev BCE loss"),
+              ("dev_prauc", "dev PR-AUC"), ("alpha", "alpha")]
+    fig, axes = plt.subplots(len(arms), len(fields),
+                             figsize=(3.6 * len(fields), 2.7 * len(arms)), squeeze=False)
+    for i, arm in enumerate(arms):
+        for j, (field, title) in enumerate(fields):
+            ax = axes[i][j]
+            plotted = False
+            for h in hist:
+                if h["arm"] != arm:
+                    continue
+                ep = [e["epoch"] for e in h["epochs"]]
+                vals = [e.get(field) for e in h["epochs"]]
+                if any(v is None for v in vals):
+                    continue
+                ax.plot(ep, vals, lw=1.0, alpha=0.7)
+                plotted = True
+            if not plotted:
+                ax.text(0.5, 0.5, "not recorded", ha="center", va="center",
+                        fontsize=8, transform=ax.transAxes)
+            ax.set_xlabel("epoch", fontsize=8)
+            if j == 0:
+                ax.set_ylabel(f"{ARM_SHORT.get(arm, arm)}", fontsize=9)
+            if i == 0:
+                ax.set_title(title, fontsize=9)
+            ax.grid(alpha=0.3)
+    fig.suptitle("Learning curves — one line per (seed, fold). "
+                 "Checkpoint selection uses dev BCE loss only.", fontsize=10, y=1.01)
+    return [_save(fig, os.path.join(bundle.figures_dir, "learning_curves.png"))]
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Reporting — orchestration
+# ─────────────────────────────────────────────────────────────────────────────
+def _report_markdown(bundle: RunBundle, figures: List[str], patient_rows: List[dict],
+                     recon: Dict[str, object]) -> str:
+    res = bundle.result
+    gates = res["gates"]
+    a = _arm_summary(bundle, ARM_A)
+    ca, cd = _contrast(bundle, "C_minus_A"), _contrast(bundle, "C_minus_D")
+    ec = _contrast(bundle, "E_minus_combBaseline")
+    stalled = training_stalled(bundle, ARM_C)
+    rows = arm_metrics_rows(bundle)
+
+    L: List[str] = []
+    L.append(f"# {res['experiment_id']} / {res['arm_id']} — 결과 보고서")
+    L.append("")
+    L.append(f"- run: `{os.path.basename(bundle.run_dir)}`")
+    L.append(f"- 최종 판정: **{gates['verdict']}**")
+    L.append(f"- 주 지표: record 단위 k-sweep 달성률 평균 "
+             f"(k = {bundle.config.get('k_sweep')})")
+    L.append(f"- seed {len(bundle.seeds)}개 · record {len(bundle.records)}개 "
+             f"· fold {bundle.config.get('n_outer_folds')}개")
+    L.append(f"- data sha256 `{bundle.manifest.get('data', {}).get('sha256', 'n/a')}`")
+    L.append(f"- git commit `{bundle.manifest.get('git_commit_sha', 'n/a')}`")
+    L.append("")
+    L.append("> 이 문서는 **표현(presentation) 전용**이다. 측정값은 `result.json` 에서")
+    L.append("> 그대로 읽었고, arm·fold·seed·지표·bootstrap·gate 는 전혀 바꾸지 않았다.")
+    L.append("")
+
+    L.append("## 1. Executive Summary")
+    L.append("")
+    L.append("```text")
+    L.append(executive_summary_ko(bundle))
+    L.append("```")
+    L.append("")
+
+    L.append("## 2. baseline 정의")
+    L.append("")
+    L.append(f"**Arm A = morphology baseline** — Q4-N 의 `morph` arm 을 그대로 동결한 것"
+             f"(`F_BASE` RR 9열 ⊕ `MORPH` 형태 8열 = 17열), 로지스틱 회귀.")
+    L.append(f"모든 scaler 와 model 은 outer-train 에서만 적합하고, outer-test 예측은")
+    L.append(f"해당 test record 를 한 번도 보지 않은 모델이 만든다.")
+    L.append("")
+    L.append(f"- k-sweep 달성률 평균 **{a['ksw_mean']:.4f}**")
+    L.append(f"- record 매크로 PR-AUC {a['prauc']:.4f} · AUROC {a['auroc']:.4f}")
+    L.append(f"- 하위꼬리 p10 {a['p10']:.4f} · 최악 레코드 #{a['worst_record']} "
+             f"({a['worst']:.4f})")
+    port = bundle.manifest.get("morph_port_check", {})
+    if port.get("measured_loro_ksw") is not None:
+        L.append("")
+        L.append(f"이식 충실도 확인: 같은 특징을 Q4-N 의 LORO 프로토콜로 다시 채점하면 "
+                 f"**{port['measured_loro_ksw']:.4f}** 로, Q4-N 이 보고한 "
+                 f"`morph` {port['reference_q4n_morph_ksw_loro']:.4f} 와 "
+                 f"delta {port.get('delta', float('nan')):+.4f} 이다 "
+                 f"(허용치 {port.get('tolerance')}). 형태 특징 이식은 검증됐다.")
+    L.append("")
+
+    L.append("## 3. Q4-N 의 0.8631 을 baseline 에서 제외한 이유")
+    L.append("")
+    L.append("Q4-N 의 `cpu_fold()` 는 하나의 배열에 train 위치와 test 위치를 **둘 다** 썼고,")
+    L.append("5개 fold 가 순차 실행되므로 뒤 fold 가 앞 fold 의 값을 덮어썼다.")
+    L.append("")
+    L.append("```python")
+    L.append("sc[tr] = lr.decision_function((X[tr] - mu) / sd)   # in-sample, 덮어써짐")
+    L.append("sc[te] = lr.decision_function((X[te] - mu) / sd)")
+    L.append("```")
+    L.append("")
+    L.append("마지막 fold 이후 배열의 약 **80%** 가 in-sample 예측이다. 따라서")
+    L.append("`cpu_comb=0.8445`, `boost_fix=0.8631`, `boost_rank=0.8492` 는 baseline 도")
+    L.append("개선도 아니다. 잔차 CNN 은 학습 시 이미 그 박동들을 외운 offset 을 받았고,")
+    L.append("테스트 시에는 깨끗한 offset 을 받았다 — offset 의 통계적 성격이 train 과")
+    L.append("test 에서 서로 달랐다는 뜻이다. 이 값들은 Arm E 진단용 **오염된 참고값**")
+    L.append("으로만 남긴다.")
+    L.append("")
+    L.append("반대로 Q4-N 의 **CPU arm** (`morph − base = +0.1570` 등) 은 별도의 `loro()`")
+    L.append("경로를 썼고 이 버그의 영향을 받지 않는다.")
+    L.append("")
+
+    L.append("## 4. 구조 설명")
+    L.append("")
+    for arm in bundle.arm_names():
+        L.append(f"- **{ARM_KO.get(arm, arm)}**")
+    L.append("")
+    L.append("`final_logit = morph_offset + alpha * cnn_residual` 이며 `alpha` 는 정확히 0")
+    L.append("에서 출발한다(초기 상태가 baseline 과 동일 → 하한 보장). 잔차 head 는 xavier")
+    L.append("초기화한다 — `alpha` 와 head 를 동시에 0 으로 두면 서로의 기울기를 0 에 가두는")
+    L.append("Q4-N 의 초기화 데드락이 재현된다.")
+    L.append("")
+    L.append("offset 은 각 outer fold 안에서 **inner cross-fitting** 으로 만든다:")
+    L.append("outer-train 의 각 샘플은 자신을 학습에 쓰지 않은 inner 모델의 예측을 정확히")
+    L.append("한 번 받고, outer-test offset 은 outer-train 전체로 적합한 모델이 만든다.")
+    L.append("")
+
+    L.append("## 5. arm 요약")
+    L.append("")
+    L.append("| arm | k-sweep | Δ vs A | PR-AUC | AUROC | p10 | worst (record) | seed SD |")
+    L.append("|---|---|---|---|---|---|---|---|")
+    for r in rows:
+        delta = "—" if r["delta_source"] == "baseline" else f"{r['delta_vs_A']:+.4f}"
+        if r["delta_source"] == "mean_difference":
+            delta += " \\*"
+        L.append(f"| {r['short']} | {r['ksw_mean']:.4f} | {delta} | {r['prauc']:.4f} | "
+                 f"{r['auroc']:.4f} | {r['p10']:.4f} | {r['worst']:.3f} "
+                 f"(#{r['worst_record']}) | {r['seed_sd']:.4f} |")
+    L.append("")
+    L.append("\\* 짝지은 대비가 측정되지 않은 arm 은 평균의 차이로 표기했다.")
+    L.append("")
+
+    L.append("## 6. PASS / FAIL 근거")
+    L.append("")
+    L.append("| gate | 결과 | 측정값 |")
+    L.append("|---|---|---|")
+    ev = {
+        "1_mean_gain_ge_0.015": (f"mean(C−A) = {ca['record_bootstrap']['mean']:+.4f}"
+                                 f" vs 기준 +{GATE_MIN_GAIN}") if ca else "n/a",
+        "2_ci_lower_gt_0": (f"CI 하한 = {ca['record_bootstrap']['ci_low']:+.4f}"
+                            ) if ca else "n/a",
+        "3_beats_shuffle_control": (
+            f"mean(C−D) = {cd['record_bootstrap']['mean']:+.4f}, "
+            f"CI 하한 {cd['record_bootstrap']['ci_low']:+.4f}") if cd else "n/a",
+        "4_seed_direction_stable": (
+            f"{ca['positive_seed_count']}/{len(bundle.seeds)} seed 양수, "
+            f"기준 ≥ {GATE_MIN_SEED_AGREE}") if ca else "n/a",
+        "5_lower_tail_not_worse": (
+            f"p10 A {a['p10']:.4f} → C "
+            f"{_arm_summary(bundle, ARM_C)['p10']:.4f}, 허용 하락 "
+            f"{GATE_LOWER_TAIL_MAX_DROP}"),
+        "6_leakage_and_reproducibility": "모든 누수 assertion 통과 (실패 시 실행 자체가 중단)",
+    }
+    for k, v in gates["checks"].items():
+        L.append(f"| `{k}` | {'✅ PASS' if v else '❌ FAIL'} | {ev.get(k, '')} |")
+    L.append("")
+    L.append(f"**판정: {gates['verdict']}** — {gates['next_step']}")
+    L.append("")
+
+    L.append("## 7. 환자(레코드) 단위 결과")
+    L.append("")
+    improve = sorted(patient_rows, key=lambda d: -d["delta_C_minus_A"])[:10]
+    worsen = sorted(patient_rows, key=lambda d: d["delta_C_minus_A"])[:10]
+    for title, subset in (("개선 상위 10", improve), ("악화 상위 10", worsen)):
+        L.append(f"### {title}")
+        L.append("")
+        L.append("| record | S burden | n_S | A | C | Δ(C−A) |")
+        L.append("|---|---|---|---|---|---|")
+        for r in subset:
+            L.append(f"| {r['record']} | {r['s_burden']:.4f} | {r['n_s']} | "
+                     f"{r['ksw_A']:.4f} | {r['ksw_C']:.4f} | "
+                     f"{r['delta_C_minus_A']:+.4f} |")
+        L.append("")
+    L.append(f"전체 표: [`figures/patient_delta.csv`](figures/patient_delta.csv) "
+             f"(모든 값은 seed {len(bundle.seeds)}개 평균)")
+    L.append("")
+
+    L.append("## 8. 학습 진단")
+    L.append("")
+    if stalled.get("available"):
+        L.append(f"Arm C 의 early stopping 이 고른 epoch: "
+                 f"{stalled['n_best_epoch_zero']}/{stalled['n_total']} "
+                 f"(seed × fold) 에서 `best_epoch = 0`.")
+        if stalled.get("all_zero"):
+            L.append("")
+            L.append("> ⚠️ **전부 epoch 0 이다.** dev BCE 손실 기준으로 첫 epoch 이후 어떤")
+            L.append("> 지점도 epoch 0 보다 낫지 않았다는 뜻이고, 잔차 분기는 사실상 학습되기")
+            L.append("> 전 상태의 체크포인트로 되돌아갔다. 이 사실은 NO-GO 의 해석 범위를")
+            L.append("> 좁힌다 — 이번 결과는 '원파형에 정보가 없다'가 아니라 '이 학습")
+            L.append("> 스케줄에서 잔차가 켜지지 않았다'에 가깝다.")
+    else:
+        L.append("이 run 의 manifest 에 per-fold 학습 진단이 없다.")
+    L.append("")
+    if bundle.training_history:
+        L.append("epoch 단위 학습 곡선: `figures/learning_curves.png`")
+    else:
+        L.append("**이 run 에는 epoch 단위 training history 가 없다.** history 기록 기능은")
+        L.append("이번 개정에서 추가됐으므로 *이후* 실행부터 `training_history.json` 이")
+        L.append("생성된다. 없는 데이터를 만들어내지 않았고, 학습 곡선도 그리지 않았다.")
+    L.append("")
+
+    L.append("## 9. 한계와 다음 결정")
+    L.append("")
+    L.append("- 이 결과는 **SVDB · record-grouped 5-fold** 한 프로토콜의 결과다. "
+             "MIT-BIH DS1→DS2 를 예측하지 않는다.")
+    L.append("- 절대값은 Q4-N 의 LORO 수치와 직접 비교할 수 없다(분할이 다르다). "
+             "해석 대상은 Q4-O 내부의 짝지은 대비뿐이다.")
+    L.append("- NO-GO 는 Transformer 나 더 큰 fusion 모델을 시도할 근거가 아니다. "
+             "사전 등록된 중단 규칙이 이를 금지한다.")
+    if stalled.get("all_zero"):
+        L.append("- 다음 결정의 1순위는 **학습 스케줄 타당성 점검**이다"
+                 "(learning rate · epoch 수 · early stopping 기준). "
+                 "이는 새 과학적 가설이 아니라 이번 실행의 타당성 확인이므로, "
+                 "별도 spec 으로 사전 등록한 뒤 진행한다.")
+    L.append("- 그다음은 실패 레코드·하위꼬리 분석이다.")
+    L.append("")
+
+    L.append("## 10. 생성한 그림")
+    L.append("")
+    for p in figures:
+        rel = os.path.relpath(p, bundle.run_dir)
+        L.append(f"- [`{rel}`]({rel})")
+    L.append("")
+
+    L.append("## 11. 재현 확인")
+    L.append("")
+    L.append(f"보고서가 저장된 logit 에서 다시 계산한 arm별·seed별 k-sweep 평균과 "
+             f"`result.json` 의 값의 최대 절대 오차: "
+             f"**{recon['max_abs_diff']:.3e}** "
+             f"({recon['n_checked']}개 비교, 허용치 {recon['tolerance']:.0e}) → "
+             f"{'일치' if recon['within_tolerance'] else '불일치 — 보고서를 신뢰하지 말 것'}")
+    L.append("")
+    return "\n".join(L)
+
+
+def generate_report(run_dir: str, log: Optional[RunLog] = None) -> Dict[str, object]:
+    """Render a finished run bundle into figures, CSVs, and report_summary.md.
+
+    Read-only with respect to the run's measured artifacts: it verifies that
+    config/manifest/result/fold_map/predictions/probs are byte-identical before and
+    after, and raises if anything moved.
+    """
+    log = log or RunLog()
+    bundle = load_run_bundle(run_dir)
+    before = bundle_fingerprint(run_dir)
+    os.makedirs(bundle.figures_dir, exist_ok=True)
+
+    log(f"reporting on {os.path.basename(run_dir)} — verdict "
+        f"{bundle.result['gates']['verdict']}, {len(bundle.seeds)} seeds, "
+        f"{len(bundle.records)} records")
+
+    recon = reconcile_report(bundle)
+    if not recon["within_tolerance"]:
+        raise Q4OError(
+            f"report recomputation disagrees with result.json by "
+            f"{recon['max_abs_diff']:.3e} — the report would not be describing this run")
+    log(f"reconciled against result.json — max abs diff {recon['max_abs_diff']:.3e}")
+
+    figures: List[str] = []
+    figures += fig_arm_summary_table(bundle)
+    figures += fig_primary_contrasts_zoom(bundle)
+    figures += fig_reference_gap_separate(bundle)
+    figures += fig_achievement_by_k(bundle)
+    figures += fig_seed_effects(bundle)
+    figures += fig_fold_training_diagnostics(bundle)
+    waterfall, patient_rows = fig_patient_delta_waterfall(bundle)
+    figures += waterfall
+    figures += fig_metric_distribution(bundle)
+    curves = fig_learning_curves(bundle)
+    figures += curves
+    if not curves:
+        log("no training_history.json in this run — learning curves skipped, "
+            "nothing fabricated")
+
+    md_path = os.path.join(bundle.figures_dir, "report_summary.md")
+    with open(md_path, "w", encoding="utf-8") as fh:
+        fh.write(_report_markdown(bundle, figures, patient_rows, recon))
+    figures.append(md_path)
+    log(f"wrote {len(figures)} report artifacts to {bundle.figures_dir}")
+
+    after = bundle_fingerprint(run_dir)
+    changed = [k for k in before if before[k] != after.get(k)]
+    if changed:
+        raise Q4OError(f"reporting modified measured artifacts: {changed}")
+    log("verified — no measured artifact was modified by reporting")
+
+    return {
+        "run_dir": run_dir,
+        "verdict": bundle.result["gates"]["verdict"],
+        "executive_summary_ko": executive_summary_ko(bundle),
+        "figures": figures,
+        "report_markdown": md_path,
+        "patient_rows": patient_rows,
+        "reconciliation": {k: v for k, v in recon.items() if k != "rows"},
+        "training_history_present": bool(bundle.training_history),
+        "fingerprint_stable": True,
+        "n_seed": len(bundle.seeds),
+        "n_record": len(bundle.records),
+    }
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1956,8 +3045,23 @@ def run_experiment(cohort: Cohort, provenance: Dict[str, object], out_dir: str,
                       for a in list(ARMS) + ["comb_baseline_diagnostic"]},
         "contrasts": {k: v["record_bootstrap"] for k, v in contrasts.items()},
     }
+    # Per-epoch training history, for learning curves in later reports. Recording it
+    # changes neither the training computation nor the checkpoint selection — the
+    # selection below is still argmin of dev BCE loss.
+    training_history = []
+    for arm, seed_runs in arm_diag.items():
+        for entry in seed_runs or []:
+            for fold_diag in entry["folds"]:
+                training_history.append({
+                    "arm": arm, "seed": int(entry["seed"]),
+                    "fold": int(fold_diag["fold"]),
+                    "best_epoch": int(fold_diag["best_epoch"]),
+                    "epochs": fold_diag.get("history") or [],
+                })
+
     write_bundle(out_dir, config, manifest, result, fold_map, arm_probs,
-                 predictions, log.text(), figures)
+                 predictions, log.text(), figures,
+                 training_history=training_history)
     log(f"bundle written to {out_dir}")
     return result
 

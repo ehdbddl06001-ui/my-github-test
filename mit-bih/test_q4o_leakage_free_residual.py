@@ -203,7 +203,7 @@ def test_unscorable_records_present() -> None:
 
 def test_self_check_and_version() -> None:
     section("2c. module version stamp and in-process self-check")
-    ok(isinstance(Q.MODULE_VERSION, int) and Q.MODULE_VERSION >= 2,
+    ok(isinstance(Q.MODULE_VERSION, int) and Q.MODULE_VERSION >= 3,
        f"the module carries a version stamp ({Q.MODULE_VERSION}: {Q.MODULE_BUILD})")
 
     res = Q.self_check()
@@ -532,9 +532,11 @@ def test_residual_learning_path() -> None:
 
     Q.set_determinism(Q.SEED0)
     net = Q.build_residual_net(X.shape[1], init="normal")
-    scores, alpha, best_ep, dev_loss = Q._train_one_fold(
+    scores, alpha, best_ep, dev_loss, hist = Q._train_one_fold(
         net, X, offset, cohort.y, fit_idx, dev_idx, te_idx,
         Q.SEED0, "cpu", epochs=14, batch=256)
+    ok(len(hist) >= 1 and {"epoch", "train_loss", "dev_loss"} <= set(hist[0]),
+       f"the fold returns a per-epoch training history ({len(hist)} epochs)")
 
     ok(abs(alpha) > 0.01,
        f"alpha grows away from 0 when the residual has something to add "
@@ -552,7 +554,7 @@ def test_residual_learning_path() -> None:
     # The same run with a zero-initialised head must stay pinned at the offset.
     Q.set_determinism(Q.SEED0)
     dead_net = Q.build_residual_net(X.shape[1], init="zeros")
-    dead_scores, dead_alpha, _, _ = Q._train_one_fold(
+    dead_scores, dead_alpha, _, _, _ = Q._train_one_fold(
         dead_net, X, offset, cohort.y, fit_idx, dev_idx, te_idx,
         Q.SEED0, "cpu", epochs=14, batch=256)
     ok(dead_alpha == 0.0 and np.allclose(dead_scores, offset[te_idx]),
@@ -849,6 +851,219 @@ def test_cpu_smoke_run() -> None:
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+_BUNDLE_CACHE: dict = {}
+
+
+def _built_bundle(tmp: str):
+    """Build one real run bundle (via run_experiment) and reuse it across tests."""
+    if "dir" not in _BUNDLE_CACHE:
+        cohort = Q.synthetic_cohort(n_record=8, n_beat=110, seed=17, n_unscorable=3)
+        prov = {"abs_path": "<synthetic>", "file_name": "<synthetic>",
+                "sha256": "<synthetic>", "synthetic": True}
+        Q.run_experiment(cohort, prov, tmp, seeds=Q.TRAIN_SEEDS[:3], epochs=2,
+                         batch=256, n_boot=100, device="cpu", smoke=True,
+                         log=Q.RunLog(echo=False))
+        _BUNDLE_CACHE["dir"] = tmp
+        _BUNDLE_CACHE["cohort"] = cohort
+    return _BUNDLE_CACHE["dir"]
+
+
+def test_training_history_recording() -> None:
+    section("13. training history — recorded without changing checkpoint selection")
+    try:
+        import torch  # noqa: F401
+    except Exception as exc:
+        ok(False, f"torch unavailable: {exc}")
+        return
+    tmp = tempfile.mkdtemp(prefix="q4o_hist_")
+    try:
+        run_dir = _built_bundle(tmp)
+        hist_path = os.path.join(run_dir, "training_history.json")
+        ok(os.path.exists(hist_path), "a new run writes training_history.json")
+        hist = json.load(open(hist_path, encoding="utf-8"))
+        ok(len(hist) > 0, f"history has {len(hist)} (arm, seed, fold) entries")
+
+        fields = set(hist[0]["epochs"][0])
+        ok({"epoch", "train_loss", "dev_loss", "dev_prauc", "alpha"} <= fields,
+           f"each epoch records train loss, dev loss, dev PR-AUC and alpha ({sorted(fields)})")
+
+        # The decisive property: recording extra metrics must not have changed which
+        # checkpoint was selected. Selection is argmin of dev BCE loss, nothing else.
+        mismatches = []
+        for h in hist:
+            losses = [e["dev_loss"] for e in h["epochs"]]
+            if not losses:
+                continue
+            # argmin with the same strict-improvement rule the trainer uses
+            best, best_i = float("inf"), -1
+            for i, v in enumerate(losses):
+                if v < best - 1e-6:
+                    best, best_i = v, i
+            if best_i != h["best_epoch"]:
+                mismatches.append((h["arm"], h["seed"], h["fold"], best_i, h["best_epoch"]))
+        ok(not mismatches,
+           f"best_epoch is exactly argmin of the recorded dev BCE loss in all "
+           f"{len(hist)} entries — dev PR-AUC never influenced selection")
+
+        arms_with_alpha = {h["arm"] for h in hist
+                           if h["epochs"] and h["epochs"][0]["alpha"] is not None}
+        ok(Q.ARM_C in arms_with_alpha and Q.ARM_B not in arms_with_alpha,
+           "alpha is recorded for the residual arms and is null for the plain CNN")
+    finally:
+        pass  # bundle is reused by the reporting tests; cleaned up there
+
+
+def test_reporting() -> None:
+    section("14. reporting — presentation only, reproduces result.json")
+    try:
+        import torch  # noqa: F401
+    except Exception as exc:
+        ok(False, f"torch unavailable: {exc}")
+        return
+    tmp = _BUNDLE_CACHE.get("dir") or tempfile.mkdtemp(prefix="q4o_report_")
+    try:
+        run_dir = _built_bundle(tmp)
+
+        # (5) checksum stability — capture BEFORE any reporting runs
+        before = Q.bundle_fingerprint(run_dir)
+        ok(len(before) >= 6,
+           f"fingerprinted {len(before)} measured artifacts before reporting")
+
+        bundle = Q.load_run_bundle(run_dir)
+        report = Q.generate_report(run_dir, log=Q.RunLog(echo=False))
+        after = Q.bundle_fingerprint(run_dir)
+
+        ok(before == after,
+           "result.json, manifest.json, config.json, fold_map.json, predictions.npz "
+           "and every probs.npy are byte-identical before and after reporting")
+        ok(before.get("result.json") == after.get("result.json"),
+           f"result.json checksum unchanged ({str(before.get('result.json'))[:16]}…)")
+
+        # (1) reproduces result.json
+        recon = report["reconciliation"]
+        ok(recon["within_tolerance"] and recon["max_abs_diff"] <= 1e-9,
+           f"per-record recomputation matches result.json exactly "
+           f"(max abs diff {recon['max_abs_diff']:.2e} over {recon['n_checked']} checks)")
+
+        # (2) C-A / C-D values and CIs match the source
+        summary = report["executive_summary_ko"]
+        md = open(report["report_markdown"], encoding="utf-8").read()
+        for name in ("C_minus_A", "C_minus_D"):
+            b = bundle.result["contrasts"][name]["record_bootstrap"]
+            triple = (f"{b['mean']:+.4f}", f"{b['ci_low']:+.4f}", f"{b['ci_high']:+.4f}")
+            ok(all(t in summary for t in triple),
+               f"{name} mean and 95% CI appear verbatim in the executive summary "
+               f"{triple}")
+            ok(all(t in md for t in triple[:1]),
+               f"{name} mean appears in report_summary.md")
+
+        ok(bundle.result["gates"]["verdict"] in summary
+           and report["verdict"] == bundle.result["gates"]["verdict"],
+           f"the verdict is taken from result.json, not recomputed "
+           f"({report['verdict']})")
+
+        rows = Q.arm_metrics_rows(bundle)
+        by_arm = {r["arm"]: r for r in rows}
+        ok(abs(by_arm[Q.ARM_C]["delta_vs_A"]
+               - bundle.result["contrasts"]["C_minus_A"]["record_bootstrap"]["mean"]) < 1e-12,
+           "the arm table's Δ vs A is the paired contrast from result.json, not a re-estimate")
+        ok(by_arm[Q.COMB_BASELINE]["delta_source"] == "mean_difference",
+           "an arm with no paired contrast is labelled 'mean_difference', "
+           "not passed off as a paired result")
+
+        # (3) all seeds, not one
+        n_seed = len(bundle.seeds)
+        ok(n_seed >= 3, f"the bundle carries {n_seed} seeds")
+        ksw_b = Q.per_record_ksw(bundle, Q.ARM_B)
+        ok(ksw_b.shape == (n_seed, len(bundle.records)),
+           f"per_record_ksw returns every seed {ksw_b.shape}")
+        ok(not np.allclose(ksw_b[0], ksw_b.mean(axis=0)),
+           "the seed-averaged per-record values genuinely differ from seed 0 alone "
+           "— the waterfall is not a single-seed plot")
+        prow = report["patient_rows"]
+        ok(all(r["n_seed_averaged"] == n_seed for r in prow),
+           f"every patient_delta row is averaged over all {n_seed} seeds")
+        ok(len(prow) == len(bundle.records),
+           f"patient_delta covers all {len(bundle.records)} scorable records")
+        csv_text = open(os.path.join(bundle.figures_dir, "patient_delta.csv"),
+                        encoding="utf-8").read()
+        ok(all(c in csv_text.splitlines()[0]
+               for c in ("s_burden", "ksw_A", "ksw_C", "delta_C_minus_A")),
+           "patient_delta.csv carries S burden, baseline performance and C performance")
+
+        # required artifacts
+        for name in ("arm_summary_table.png", "arm_metrics.csv",
+                     "primary_contrasts_zoom.png", "reference_gap_separate.png",
+                     "achievement_by_k.png", "seed_effects.png",
+                     "fold_training_diagnostics.png", "patient_delta_waterfall.png",
+                     "patient_delta.csv", "metric_distribution.png",
+                     "report_summary.md"):
+            ok(os.path.exists(os.path.join(bundle.figures_dir, name)),
+               f"report produced figures/{name}")
+
+        ok(not os.path.exists(os.path.join(bundle.figures_dir, "contrasts.png")),
+           "the old mixed-axis contrasts.png is gone — primary and reference "
+           "contrasts are on separate axes")
+        for name in ("contrasts_primary.png", "contrasts_reference.png"):
+            ok(os.path.exists(os.path.join(bundle.figures_dir, name)),
+               f"the run itself writes the split {name}")
+
+        for token in ("Executive Summary", "0.8631", "baseline", "NO-GO", "PASS"):
+            ok(token in md, f"report_summary.md covers '{token}'")
+    finally:
+        pass
+
+
+def test_report_does_not_invent_history() -> None:
+    section("15. reporting — never fabricates a missing training history")
+    try:
+        import torch  # noqa: F401
+    except Exception as exc:
+        ok(False, f"torch unavailable: {exc}")
+        return
+    src = _BUNDLE_CACHE.get("dir")
+    if not src:
+        ok(False, "no bundle available")
+        return
+    tmp = tempfile.mkdtemp(prefix="q4o_nohist_")
+    try:
+        run_dir = os.path.join(tmp, "run")
+        shutil.copytree(src, run_dir)
+        # Simulate a run produced before history recording existed — exactly the case
+        # of the 20260806T0923 bundle.
+        os.remove(os.path.join(run_dir, "training_history.json"))
+        for f in os.listdir(os.path.join(run_dir, "figures")):
+            os.remove(os.path.join(run_dir, "figures", f))
+
+        bundle = Q.load_run_bundle(run_dir)
+        ok(bundle.training_history is None,
+           "a bundle without training_history.json reports it as absent, not as empty data")
+
+        report = Q.generate_report(run_dir, log=Q.RunLog(echo=False))
+        ok(report["training_history_present"] is False,
+           "the report states that no training history exists")
+        ok(not os.path.exists(os.path.join(run_dir, "figures", "learning_curves.png")),
+           "no learning_curves.png is drawn when there is no history to draw")
+        ok(not os.path.exists(os.path.join(run_dir, "training_history.json")),
+           "the report does not write a training_history.json of its own")
+
+        md = open(report["report_markdown"], encoding="utf-8").read()
+        ok("training history 가 없다" in md,
+           "report_summary.md says plainly that this run has no epoch-level history")
+        ok("만들어내지 않았고" in md,
+           "and states that nothing was fabricated to fill the gap")
+
+        # Everything else still works without a history.
+        ok(report["reconciliation"]["within_tolerance"],
+           "the rest of the report still reconciles against result.json")
+        ok(os.path.exists(os.path.join(run_dir, "figures", "report_summary.md")),
+           "the full report is still produced")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+        shutil.rmtree(_BUNDLE_CACHE.get("dir", ""), ignore_errors=True)
+        _BUNDLE_CACHE.clear()
+
+
 def main() -> int:
     print("=" * 78)
     print("EXP-2026-001 / Q4-O — leakage-free residual CNN")
@@ -867,7 +1082,10 @@ def main() -> int:
                test_gates,
                test_data_guard,
                test_artifact_schema,
-               test_cpu_smoke_run):
+               test_cpu_smoke_run,
+               test_training_history_recording,
+               test_reporting,
+               test_report_does_not_invent_history):
         try:
             fn()
         except Exception as exc:                                # noqa: BLE001

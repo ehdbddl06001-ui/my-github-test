@@ -561,6 +561,87 @@ python mit-bih/q4o_leakage_free_residual.py \
     --out  /content/drive/MyDrive/MedKOS/ecg-model/runs/<timestamp>_EXP-2026-001_q4o_leakage_free_residual_cnn
 ```
 
+## 2026-08-06 — Presentation-only revision: reporting layer added
+
+**This revision changes no scientific result.** No arm definition, fold map, seed,
+metric, bootstrap, gate, or NO-GO rule was touched, and no value in any existing
+`result.json` was recomputed or overwritten. What was added is a reporting layer that
+reads a finished run bundle and renders it for a human.
+
+Target run: `20260806T0923_EXP-2026-001_q4o_leakage_free_residual_cnn`.
+
+What was added:
+
+- `ANALYZE_EXISTING_RUN` mode in the notebook. Set the flag and a run directory, and
+  the notebook reads `result.json`, `manifest.json`, `predictions.npz`, and each
+  arm's `probs.npy` and produces the whole report with **no retraining**. The
+  cohort-loading, training, and registry-append cells are all skipped in this mode —
+  in particular the registry is never re-appended for a run that is already in it.
+- `generate_report()`: a Korean executive summary, ten figures/tables, and
+  `report_summary.md`, all written into the run's `figures/`.
+- Per-record values, which `result.json` stores only as summaries, are recomputed
+  from the stored logits with the same `achievement_at()` the run used.
+
+Two self-checks make the "presentation only" claim testable rather than asserted:
+
+1. **Reconciliation** — the recomputed per-arm, per-seed k-sweep means are compared
+   against `result.json`. Measured max absolute difference: **0.0**. If it ever
+   exceeds `1e-9`, `generate_report()` raises instead of emitting a report, because a
+   report that disagrees with the run is worse than no report.
+2. **Immutability** — `config.json`, `manifest.json`, `result.json`, `fold_map.json`,
+   `predictions.npz`, and every `arms/*/probs.npy` are SHA256-fingerprinted before and
+   after reporting, and any change raises. A test asserts the fingerprints are equal.
+
+Interpretive choices worth recording, because they shape how the run reads:
+
+- **The waterfall averages all five seeds**, not one. A single-seed waterfall would
+  be a different quantity, and the CSV records `n_seed_averaged` so this cannot be
+  misread later.
+- **Δ vs A** in the arm table is the *paired contrast* from `result.json` wherever one
+  was measured. For an arm with no paired contrast (`comb_baseline_diagnostic`) the
+  plain difference of means is reported and explicitly labelled `mean_difference`, so
+  it is never mistaken for a paired result.
+- **The report states what the NO-GO does not prove.** In this run Arm C selected
+  `best_epoch = 0` in every (seed × fold) combination, which means no epoch after the
+  first improved dev BCE loss and the residual branch reverted to a near-initial
+  checkpoint. The report says so, in the executive summary, on the diagnostics figure,
+  and in `report_summary.md`: this NO-GO is closer to "the residual never switched on
+  under this schedule" than to "the raw waveform carries nothing". That does **not**
+  license a Transformer — the pre-registered stopping rule still forbids it — but it
+  does make the training schedule the first thing a follow-up spec should check.
+
+## 2026-08-06 — Axis fix: primary and reference contrasts were sharing a scale
+
+`contrasts.png` plotted every contrast on one axis. `B − A` is roughly two orders of
+magnitude larger than `C − A`, so the primary contrast, the negative control, and the
+gate line all collapsed into one indistinguishable dot at zero — the figure was
+unreadable exactly where the decision is made.
+
+`_write_figures` now emits `contrasts_primary.png` and `contrasts_reference.png` on
+separate axes, and the report adds `primary_contrasts_zoom.png` (auto-scaled to the
+primary CIs, with the value and PASS/FAIL beside each point) and
+`reference_gap_separate.png`. Presentation only — no measured value changed.
+
+## 2026-08-06 — Training history recorded for future runs only
+
+`_train_one_fold` now returns a per-epoch history (train BCE loss, dev BCE loss, dev
+PR-AUC, `alpha`), written to `training_history.json`, and `learning_curves.png` is
+drawn from it.
+
+Constraints honoured:
+
+- **Checkpoint selection is unchanged.** It is still `argmin` of dev BCE loss. Dev
+  PR-AUC is recorded for the curves and never consulted for selection; a test asserts
+  `best_epoch == argmin(recorded dev_loss)` for every (arm, seed, fold).
+- **Training computation is unchanged.** Train loss is accumulated from the loss
+  already computed for the backward pass, and dev PR-AUC reuses the dev logits from
+  the forward pass that already runs for dev loss. No extra optimiser step, no extra
+  RNG draw.
+- **Nothing is back-filled.** The `20260806T0923` run predates this and has no
+  history. The report says so plainly, draws no learning curves, and writes no
+  history file of its own. A test copies a bundle, deletes its history, and asserts
+  exactly that.
+
 ## 2026-08-06 — Result status
 
 **No GPU run has been executed.** No arm value, no delta, and no PASS/NO-GO verdict
