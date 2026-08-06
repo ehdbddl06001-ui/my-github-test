@@ -201,6 +201,29 @@ def test_unscorable_records_present() -> None:
     ok(raised != "", f"a degenerate fold map is still rejected ({raised[:60]}…)")
 
 
+def test_self_check_and_version() -> None:
+    section("2c. module version stamp and in-process self-check")
+    ok(isinstance(Q.MODULE_VERSION, int) and Q.MODULE_VERSION >= 2,
+       f"the module carries a version stamp ({Q.MODULE_VERSION}: {Q.MODULE_BUILD})")
+
+    res = Q.self_check()
+    ok(res["ok"] is True and res["module_version"] == Q.MODULE_VERSION,
+       "self_check() completes in-process and reports the loaded version")
+    ok(res["n_scorable"] < res["n_record"] and res["n_unscored_beats"] > 0,
+       f"self_check exercises the path that used to fail — {res['n_scorable']} of "
+       f"{res['n_record']} records scorable, {res['n_unscored_beats']} beats unscored")
+    ok(os.path.abspath(Q.__file__) == res["module_file"],
+       "self_check reports the file the loaded module actually came from")
+
+    raised = ""
+    try:
+        Q.self_check(min_version=Q.MODULE_VERSION + 1)
+    except Q.Q4OError as exc:
+        raised = str(exc)
+    ok("stale" in raised.lower(),
+       "a too-old module is rejected with a message naming the stale-import cause")
+
+
 def test_detects_q4n_overwrite() -> None:
     section("3. regression — the Q4-N cpu_fold overwrite is detected")
     cohort = _fixture()
@@ -833,6 +856,7 @@ def main() -> int:
     for fn in (test_fold_map_and_record_leakage,
                test_true_oof_assignment,
                test_unscorable_records_present,
+               test_self_check_and_version,
                test_detects_q4n_overwrite,
                test_scaler_and_label_scope,
                test_arm_inputs_and_shapes,

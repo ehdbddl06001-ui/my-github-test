@@ -64,6 +64,14 @@ EXPERIMENT_ID = "EXP-2026-001"
 ARM_ID = "Q4-O"
 RUN_SLUG = "q4o_leakage_free_residual_cnn"
 
+# Bumped whenever a fix changes runtime behaviour. Colab keeps an imported module in
+# sys.modules across cell re-runs, so `git pull` alone does NOT update the code the
+# kernel executes — and running the test script as a subprocess passes against the new
+# file while the kernel still runs the old one. The notebook asserts this value and
+# calls self_check() in-process so a stale import fails at cell 1, loudly.
+MODULE_VERSION = 2
+MODULE_BUILD = "2026-08-06 q4o.2 — OOF audit scoped to the scorable cohort"
+
 SEED0 = 20260806
 IDX_S = 1                       # y3 == 1 is the S (SVEB) class
 FS = 360.0
@@ -1616,6 +1624,60 @@ def synthetic_cohort(n_record: int = 12, n_beat: int = 140, width: int = 300,
 # ─────────────────────────────────────────────────────────────────────────────
 # Orchestration
 # ─────────────────────────────────────────────────────────────────────────────
+def self_check(min_version: int = MODULE_VERSION) -> Dict[str, object]:
+    """Prove **in-process** that the loaded module is the fixed one. Fast (~1s).
+
+    Why this exists: in Colab, `import q4o_leakage_free_residual` is a no-op once the
+    module is in ``sys.modules``. A ``git pull`` updates the file on disk but not the
+    code the kernel is executing, and running the test script as a subprocess passes
+    against the new file while the kernel still runs the old one — so the stale import
+    stays invisible until the run dies minutes later.
+
+    This runs the exact path that used to fail (a cohort containing records below
+    MIN_S/MIN_N) inside the caller's interpreter, so a stale import raises here.
+    """
+    if MODULE_VERSION < min_version:
+        raise Q4OError(
+            f"loaded module is version {MODULE_VERSION} ({MODULE_BUILD}), but "
+            f"version {min_version} is required. The kernel is running stale code — "
+            f"re-import with importlib.reload(), or restart the runtime.")
+
+    cohort = synthetic_cohort(n_record=6, n_beat=120, seed=1, n_unscorable=2)
+    rec_ok = scorable_records(cohort)
+    if len(rec_ok) >= len(cohort.records):
+        raise Q4OError("self_check fixture produced no unscorable records")
+
+    burden = record_burden(cohort, rec_ok)
+    fold_map = make_fold_map(rec_ok, burden, n_folds=3)
+    X = build_base_features(cohort)
+    scored = samples_of(cohort, rec_ok)
+    unscored = np.setdiff1d(np.arange(cohort.n), scored)
+
+    # The old code raised here; completing at all is the proof.
+    offsets = cross_fitted_offsets(X, cohort, fold_map, n_inner=3, n_outer=3,
+                                   burden=burden)
+    for f, off in offsets.items():
+        if not np.all(np.isfinite(off[scored])):
+            raise Q4OError(f"self_check: fold {f} offset is not finite on scored beats")
+        if not np.all(np.isnan(off[unscored])):
+            raise Q4OError(f"self_check: fold {f} scored a beat outside the cohort")
+
+    a = run_logistic_arm(X, cohort, fold_map, n_outer=3)
+    if not (np.all(np.isfinite(a[scored])) and np.all(np.isnan(a[unscored]))):
+        raise Q4OError("self_check: Arm A coverage is wrong")
+
+    return {
+        "module_version": MODULE_VERSION,
+        "module_build": MODULE_BUILD,
+        "module_file": os.path.abspath(__file__),
+        "n_record": int(len(cohort.records)),
+        "n_scorable": int(len(rec_ok)),
+        "n_scored_beats": int(len(scored)),
+        "n_unscored_beats": int(len(unscored)),
+        "ok": True,
+    }
+
+
 def run_experiment(cohort: Cohort, provenance: Dict[str, object], out_dir: str,
                    seeds: Sequence[int] = TRAIN_SEEDS, epochs: int = DL_EPOCH,
                    batch: int = DL_BATCH, n_boot: int = NB_BOOT,

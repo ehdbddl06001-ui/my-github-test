@@ -496,6 +496,39 @@ Fixes:
 No scientific quantity is affected: the fold map, the arms, the metric, and the gates
 are unchanged. This was an assertion-scope bug, not a modelling one.
 
+## 2026-08-06 — Second GPU attempt failed on a stale import, not on the code
+
+The second attempt raised the *same* error after the fix was pushed. It was not a
+second bug — the kernel was executing the old module. Two tells in the traceback:
+
+- it displayed line 825 as `full = _fit_logit(X[tr], cohort.y[tr])`, which is that
+  line in the **fixed** file, while raising the **old** message
+  (`"This is exactly the Q4-N overwrite failure mode"`) that no longer exists on disk.
+  Tracebacks take line numbers from the loaded code object but read source text from
+  the current file, so new source rendered at old line numbers means a stale module.
+- the kernel id was `ipykernel_433` in both attempts — no restart between them.
+
+Cause: `import q4o_leakage_free_residual` is a no-op once the module is in
+`sys.modules`. `git reset --hard` updated the file, not the running kernel. The test
+cell made this worse rather than catching it: it runs the test script as a
+**subprocess**, which reads the new file and passes, while the kernel keeps running
+the old code.
+
+Fixes (in the code, not in the instructions):
+
+- `MODULE_VERSION` / `MODULE_BUILD` stamps in the module, bumped on behaviour changes;
+- `self_check()` runs the exact path that a stale import gets wrong — a cohort
+  containing records below `MIN_S`/`MIN_N` — **in the caller's interpreter**, and
+  raises naming the stale-import cause;
+- the notebook's import cell purges every `q4o_leakage_free_residual*` entry from
+  `sys.modules` and calls `importlib.invalidate_caches()` before importing, then
+  asserts the version and runs `self_check()`;
+- the test cell re-asserts the in-kernel version after the subprocess run, because a
+  passing subprocess says nothing about the loaded module.
+
+A stale import now fails at cell 1 in about a second, instead of surviving to minute
+one of the run.
+
 ## 2026-08-06 — Fit-split normalisation computed in chunks
 
 Found while auditing what lay downstream of the abort. `float(X[fit_idx].mean())`
