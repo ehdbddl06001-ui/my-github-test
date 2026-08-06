@@ -1,38 +1,38 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-05",
+ "generated": "2026-08-06",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 651,
+  "total": 685,
   "byType": {
+   "kmle": 459,
    "usmle": 54,
-   "kmle": 427,
-   "paper": 153,
+   "paper": 155,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 66,
-   "Nephrology": 47,
-   "Infectious Disease": 46,
-   "Pediatrics": 43,
-   "Obstetrics & Gynecology": 31,
-   "Neurology": 30,
-   "Psychiatry": 29,
-   "Endocrinology": 28,
-   "Gastroenterology": 27,
-   "Pulmonology": 27,
-   "Dermatology": 26,
-   "General Surgery": 26,
-   "Ophthalmology": 26,
-   "Orthopedics": 26,
-   "Rheumatology": 26,
-   "Hematology": 25,
+   "Cardiology": 69,
+   "Nephrology": 49,
+   "Infectious Disease": 48,
+   "Pediatrics": 45,
+   "Obstetrics & Gynecology": 33,
+   "Neurology": 32,
+   "Psychiatry": 31,
+   "Endocrinology": 30,
+   "Gastroenterology": 29,
+   "Pulmonology": 29,
+   "Dermatology": 28,
+   "General Surgery": 28,
+   "Ophthalmology": 28,
+   "Orthopedics": 28,
+   "Rheumatology": 28,
+   "Hematology": 27,
    "Surgery": 25,
    "Pathology": 22,
-   "Laboratory Medicine": 18,
+   "Laboratory Medicine": 19,
    "Hematology-Oncology": 16,
    "Physiology": 7,
    "Medical AI Lab": 4,
@@ -51,12 +51,586 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 492,
-   "medium": 159
+   "high": 524,
+   "medium": 161
   },
-  "tagCount": 1630
+  "tagCount": 1681
  },
  "docs": [
+  {
+   "id": "kmle-2026-0489",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Acute Generalized Exanthematous Pustulosis",
+   "tags": [
+    "AGEP",
+    "drug-eruption",
+    "sterile-pustules",
+    "drug-withdrawal"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0489.md",
+   "snippet": "34세 여자가 이틀 전 인후염으로 항생제를 먹기 시작한 뒤 고열과 함께 온몸에 붉은 발진과 좁쌀 같은 고름집이 돋아 왔다. 진찰에서 붉게 부은 피부 위로 물집이 아닌 작은 무균성 고름집이 수백 개 흩어져 있고 큰 물집이나 점막침범은 없다. 활력징후와 검사 소견은 자료와 같다. 조직검사에서 각질층밑 고름집과 진피 부종이 보인다. 가장 적절한 처치는? A. 원인으로 의심되는 약을 즉시 중단한다 B. 같은 항생제를 계속 쓰며 해열제",
+   "text": "Dermatology Acute Generalized Exanthematous Pustulosis AGEP drug-eruption sterile-pustules drug-withdrawal KMLE 2026 / Claude Routine 34세 여자가 이틀 전 인후염으로 항생제를 먹기 시작한 뒤 고열과 함께 온몸에 붉은 발진과 좁쌀 같은 고름집이 돋아 왔다. 진찰에서 붉게 부은 피부 위로 물집이 아닌 작은 무균성 고름집이 수백 개 흩어져 있고 큰 물집이나 점막침범은 없다. 활력징후와 검사 소견은 자료와 같다. 조직검사에서 각질층밑 고름집과 진피 부종이 보인다. 가장 적절한 처치는? A. 원인으로 의심되는 약을 즉시 중단한다 B. 같은 항생제를 계속 쓰며 해열제만 추가한다 C. 광범위 항진균제를 전신 투여한다 D. 고름집을 짜내고 국소 소독만 한다 E. 경구 아이소트레티노인을 시작한다 약물 시작 며칠 안에 발열과 함께 홍반 위로 수백 개의 무균성 좁쌀 고름집이 돋고 호중구증가·각질층밑 농포가 보이면 급성전신발진고름물집증(AGEP)이다. 대부분 원인약을 중단하면 1~2주에 낙설하며 낫는 자한성 경과이므로, 즉시 원인약 중단과 지지치료가 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0488",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Pemphigus Vulgaris",
+   "tags": [
+    "pemphigus-vulgaris",
+    "mucosal-erosion",
+    "acantholysis",
+    "systemic-steroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0488.md",
+   "snippet": "52세 여자가 두 달간 입안이 헐어 아파 먹지 못하다가, 최근 몸통에 물집과 벗겨진 상처가 늘어 왔다. 진찰에서 물집은 물렁하고 쉽게 터지며 정상으로 보이는 피부를 옆으로 밀면 표피가 밀려 벗겨진다. 활력징후와 검사 소견은 자료와 같다. 조직검사에서 표피내 수포와 각질형성세포 사이 결합소실이 보이고 면역형광에서 표피세포 사이에 그물모양 침착이 있다. 가장 적절한 치료는? A. 국소 스테로이드 연고만 바른다 B. 항히스타민제로 ",
+   "text": "Dermatology Pemphigus Vulgaris pemphigus-vulgaris mucosal-erosion acantholysis systemic-steroid KMLE 2026 / Claude Routine 52세 여자가 두 달간 입안이 헐어 아파 먹지 못하다가, 최근 몸통에 물집과 벗겨진 상처가 늘어 왔다. 진찰에서 물집은 물렁하고 쉽게 터지며 정상으로 보이는 피부를 옆으로 밀면 표피가 밀려 벗겨진다. 활력징후와 검사 소견은 자료와 같다. 조직검사에서 표피내 수포와 각질형성세포 사이 결합소실이 보이고 면역형광에서 표피세포 사이에 그물모양 침착이 있다. 가장 적절한 치료는? A. 국소 스테로이드 연고만 바른다 B. 항히스타민제로 가려움을 조절한다 C. 경구 항생제로 이차감염만 막는다 D. 전신 글루코코르티코이드로 치료를 시작한다 E. 자외선광선치료를 시행한다 만성 통증성 구강미란 + 물렁하고 쉽게 터지는 물집 + 표피가 옆으로 밀려 벗겨짐 + 표피내 수포·가시세포분리·표피세포간 그물모양 면역침착은 심상천포창이다. 진행하면 광범위 표피박리로 치명적이 될 수 있어 전신 글루코코르티코이드(흔히 리툭시맙 병용)로 치료한다."
+  },
+  {
+   "id": "kmle-2026-0487",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Calcium Pyrophosphate Deposition (Pseudogout)",
+   "tags": [
+    "pseudogout",
+    "CPPD",
+    "synovial-fluid",
+    "crystal-arthritis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0487.md",
+   "snippet": "74세 여자가 하루 전부터 오른 무릎이 갑자기 붓고 아파 못 걷겠다고 왔다. 최근 폐렴으로 입원 중이었다. 진찰에서 오른 무릎이 붓고 열감·발적이 있으며 조금만 움직여도 아프다. 활력징후와 검사 소견은 자료와 같다. 무릎 단순촬영에서 관절연골에 선상 석회화가 보인다. 진단을 확정하기 위해 가장 적절한 검사는? A. 혈청 요산을 반복 측정한다 B. 무릎 자기공명영상을 시행한다 C. 관절액을 뽑아 편광현미경으로 결정을 확인한다 D",
+   "text": "Rheumatology Calcium Pyrophosphate Deposition (Pseudogout) pseudogout CPPD synovial-fluid crystal-arthritis KMLE 2026 / Claude Routine 74세 여자가 하루 전부터 오른 무릎이 갑자기 붓고 아파 못 걷겠다고 왔다. 최근 폐렴으로 입원 중이었다. 진찰에서 오른 무릎이 붓고 열감·발적이 있으며 조금만 움직여도 아프다. 활력징후와 검사 소견은 자료와 같다. 무릎 단순촬영에서 관절연골에 선상 석회화가 보인다. 진단을 확정하기 위해 가장 적절한 검사는? A. 혈청 요산을 반복 측정한다 B. 무릎 자기공명영상을 시행한다 C. 관절액을 뽑아 편광현미경으로 결정을 확인한다 D. 류마티스인자와 항CCP항체를 검사한다 E. 뼈스캔으로 염증 부위를 확인한다 고령 + 급성 단관절염 + 연골석회화 소견은 칼슘피로인산결정관절병(가성통풍)을 시사하지만, 화농관절염·통풍과 겹치므로 관절천자로 결정과 배양을 함께 확인해야 한다. 편광현미경에서 약양성 복굴절의 마름모 결정이 보이면 확진된다."
+  },
+  {
+   "id": "kmle-2026-0486",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Giant Cell Arteritis",
+   "tags": [
+    "giant-cell-arteritis",
+    "jaw-claudication",
+    "vision-loss",
+    "high-dose-steroid"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0486.md",
+   "snippet": "72세 여자가 3주간의 새로운 오른쪽 관자놀이 두통과 씹을 때 턱이 아파 오래 못 씹는 증상으로 왔다. 오늘 아침 오른눈이 몇 분간 깜깜해졌다 돌아왔다. 진찰에서 오른쪽 관자동맥이 두껍고 눌러서 아프며 맥이 약하다. 활력징후와 검사 소견은 자료와 같다. 실명을 막기 위해 가장 먼저 해야 할 것은? A. 관자동맥 조직검사 결과가 나온 뒤 치료를 시작한다 B. 비스테로이드소염제로 두통을 조절하며 지켜본다 C. 뇌 자기공명영상을 먼",
+   "text": "Rheumatology Giant Cell Arteritis giant-cell-arteritis jaw-claudication vision-loss high-dose-steroid KMLE 2026 / Claude Routine 72세 여자가 3주간의 새로운 오른쪽 관자놀이 두통과 씹을 때 턱이 아파 오래 못 씹는 증상으로 왔다. 오늘 아침 오른눈이 몇 분간 깜깜해졌다 돌아왔다. 진찰에서 오른쪽 관자동맥이 두껍고 눌러서 아프며 맥이 약하다. 활력징후와 검사 소견은 자료와 같다. 실명을 막기 위해 가장 먼저 해야 할 것은? A. 관자동맥 조직검사 결과가 나온 뒤 치료를 시작한다 B. 비스테로이드소염제로 두통을 조절하며 지켜본다 C. 뇌 자기공명영상을 먼저 예약한다 D. 편두통약을 투여하고 외래로 보낸다 E. 고용량 글루코코르티코이드를 즉시 시작한다 고령 + 새 관자놀이 두통 + 턱파행 + 일과성 흑암시 + 관자동맥 압통·비후 + ESR·CRP 급등은 거대세포동맥염이다. 반대눈까지 실명이 번지기 전에, 조직검사를 기다리지 말고 고용량 글루코코르티코이드를 즉시 시작해야 한다."
+  },
+  {
+   "id": "kmle-2026-0485",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Scaphoid Fracture",
+   "tags": [
+    "scaphoid-fracture",
+    "snuffbox-tenderness",
+    "occult-fracture",
+    "immobilization"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0485.md",
+   "snippet": "22세 남자가 축구를 하다 손을 짚고 넘어진 뒤 손목 통증으로 왔다. 진찰에서 엄지 쪽 손목 오목한 부위를 누르면 아프고 엄지를 축으로 밀어넣을 때 통증이 심하다. 활력징후와 검사 소견은 자료와 같다. 손목 단순촬영에서는 골절선이 보이지 않는다. 가장 적절한 처치는? A. 통증이 있을 때만 진통제를 주고 귀가시킨다 B. 엄지를 포함한 부목으로 고정한 뒤 재평가한다 C. 손목을 감고 곧바로 운동을 허용한다 D. 즉시 금속판 내고",
+   "text": "Orthopedics Scaphoid Fracture scaphoid-fracture snuffbox-tenderness occult-fracture immobilization KMLE 2026 / Claude Routine 22세 남자가 축구를 하다 손을 짚고 넘어진 뒤 손목 통증으로 왔다. 진찰에서 엄지 쪽 손목 오목한 부위를 누르면 아프고 엄지를 축으로 밀어넣을 때 통증이 심하다. 활력징후와 검사 소견은 자료와 같다. 손목 단순촬영에서는 골절선이 보이지 않는다. 가장 적절한 처치는? A. 통증이 있을 때만 진통제를 주고 귀가시킨다 B. 엄지를 포함한 부목으로 고정한 뒤 재평가한다 C. 손목을 감고 곧바로 운동을 허용한다 D. 즉시 금속판 내고정술을 시행한다 E. 온찜질과 스트레칭을 처방한다 손을 짚고 넘어진 뒤의 해부학적 코담배갑 압통과 엄지 축성 압박통은 초기 X선이 정상이라도 손배뼈골절을 강하게 시사한다. 놓치면 무혈성괴사·불유합 위험이 커지므로, 엄지를 포함한 부목으로 고정하고 1~2주 뒤 재촬영이나 추가영상으로 확인한다."
+  },
+  {
+   "id": "kmle-2026-0484",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Cauda Equina Syndrome",
+   "tags": [
+    "cauda-equina",
+    "saddle-anesthesia",
+    "urinary-retention",
+    "emergency-decompression"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0484.md",
+   "snippet": "42세 남자가 이틀 전 무거운 것을 든 뒤 심해진 허리통증과 오늘부터의 소변 못 봄으로 왔다. 진찰에서 양쪽 넓적다리 안쪽과 회음부 감각이 둔하고 항문조임근 긴장이 약하며 두 다리 근력이 떨어진다. 활력징후와 검사 소견은 자료와 같다. 이 환자에게 가장 먼저 해야 할 것은? A. 응급 요추 자기공명영상을 시행한다 B. 침상안정과 소염제로 2주 경과를 본다 C. 허리 물리치료를 시작한다 D. 근이완제와 신경차단주사를 놓는다 E.",
+   "text": "Orthopedics Cauda Equina Syndrome cauda-equina saddle-anesthesia urinary-retention emergency-decompression KMLE 2026 / Claude Routine 42세 남자가 이틀 전 무거운 것을 든 뒤 심해진 허리통증과 오늘부터의 소변 못 봄으로 왔다. 진찰에서 양쪽 넓적다리 안쪽과 회음부 감각이 둔하고 항문조임근 긴장이 약하며 두 다리 근력이 떨어진다. 활력징후와 검사 소견은 자료와 같다. 이 환자에게 가장 먼저 해야 할 것은? A. 응급 요추 자기공명영상을 시행한다 B. 침상안정과 소염제로 2주 경과를 본다 C. 허리 물리치료를 시작한다 D. 근이완제와 신경차단주사를 놓는다 E. 요추 단순촬영만 하고 귀가시킨다 급성 요통 + 소변저류(잔뇨 증가) + 안장부 감각저하 + 항문긴장·하지근력 저하는 말총증후군이다. 시간이 지날수록 배뇨·배변·성기능 손상이 비가역이 되므로 즉시 응급 요추 MRI로 압박을 확인하고 조기 수술 감압으로 이어가야 한다."
+  },
+  {
+   "id": "kmle-2026-0483",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Thyroid Eye Disease with Compressive Optic Neuropathy",
+   "tags": [
+    "thyroid-eye-disease",
+    "compressive-optic-neuropathy",
+    "IV-steroid",
+    "proptosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0483.md",
+   "snippet": "46세 여자가 몇 주간 진행한 양눈 돌출과 오른눈의 침침함으로 왔다. 갑상샘항진증을 앓고 있다. 진찰에서 두 눈이 앞으로 튀어나오고 위를 볼 때 오른눈이 잘 따라오지 않으며, 오른눈 상대구심동공결손이 있고 색각이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 안와 컴퓨터단층촬영에서 눈바깥근육이 두꺼워져 안와끝에서 시각신경을 누르고 있다. 시력을 지키기 위해 가장 적절한 처치는? A. 윤활 안약과 냉찜질로 경과를 관찰한다 ",
+   "text": "Ophthalmology Thyroid Eye Disease with Compressive Optic Neuropathy thyroid-eye-disease compressive-optic-neuropathy IV-steroid proptosis KMLE 2026 / Claude Routine 46세 여자가 몇 주간 진행한 양눈 돌출과 오른눈의 침침함으로 왔다. 갑상샘항진증을 앓고 있다. 진찰에서 두 눈이 앞으로 튀어나오고 위를 볼 때 오른눈이 잘 따라오지 않으며, 오른눈 상대구심동공결손이 있고 색각이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 안와 컴퓨터단층촬영에서 눈바깥근육이 두꺼워져 안와끝에서 시각신경을 누르고 있다. 시력을 지키기 위해 가장 적절한 처치는? A. 윤활 안약과 냉찜질로 경과를 관찰한다 B. 안압하강 안약만 점안한다 C. 고용량 정맥 글루코코르티코이드를 투여한다 D. 항갑상샘제 용량 조절만으로 기다린다 E. 방사성아이오딘 치료를 즉시 시행한다 갑상샘눈병 + 안구돌출·운동제한 + 상대구심동공결손·색각저하·시력저하는 안와끝에서 부은 근육이 시각신경을 누르는 압박시각신경병증이다. 시력을 위협하는 응급이므로 고용량 정맥 글루코코르티코이드로 부종을 줄이고, 반응이 없으면 안와감압술을 한다."
+  },
+  {
+   "id": "kmle-2026-0482",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Rhegmatogenous Retinal Detachment",
+   "tags": [
+    "retinal-detachment",
+    "floaters",
+    "curtain-vision",
+    "urgent-referral"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0482.md",
+   "snippet": "58세 남자가 하루 전부터 오른눈에 갑자기 늘어난 날파리 같은 점과 번쩍이는 빛을 느꼈고, 오늘은 아래쪽에서 커튼이 올라오듯 시야가 가려진다고 왔다. 고도근시로 안경을 써왔고 통증은 없다. 활력징후와 검사 소견은 자료와 같다. 안저검사에서 위쪽 망막이 회백색으로 부풀어 주름져 있다. 가장 적절한 처치는? A. 항생제 안약을 주고 다음 날 외래로 오게 한다 B. 안압하강제를 점안하고 경과를 관찰한다 C. 인공눈물을 주고 눈을 쉬",
+   "text": "Ophthalmology Rhegmatogenous Retinal Detachment retinal-detachment floaters curtain-vision urgent-referral KMLE 2026 / Claude Routine 58세 남자가 하루 전부터 오른눈에 갑자기 늘어난 날파리 같은 점과 번쩍이는 빛을 느꼈고, 오늘은 아래쪽에서 커튼이 올라오듯 시야가 가려진다고 왔다. 고도근시로 안경을 써왔고 통증은 없다. 활력징후와 검사 소견은 자료와 같다. 안저검사에서 위쪽 망막이 회백색으로 부풀어 주름져 있다. 가장 적절한 처치는? A. 항생제 안약을 주고 다음 날 외래로 오게 한다 B. 안압하강제를 점안하고 경과를 관찰한다 C. 인공눈물을 주고 눈을 쉬게 한다 D. 망막수술이 가능한 안과로 응급 의뢰한다 E. 스테로이드 안약으로 염증을 가라앉힌다 고도근시 + 갑작스러운 날파리증·광시증 + 커튼처럼 올라오는 시야결손 + 안저의 부풀어 주름진 망막은 열공성 망막박리다. 황반이 침범되기 전에 시력을 지키려면 지체 없이 망막수술이 가능한 안과로 응급 의뢰해야 한다."
+  },
+  {
+   "id": "kmle-2026-0481",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Bipolar I Disorder — Acute Manic Episode",
+   "tags": [
+    "bipolar-disorder",
+    "mania",
+    "mood-stabilizer",
+    "antidepressant-caution"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0481.md",
+   "snippet": "24세 남자가 일주일간 잠을 두세 시간만 자도 지치지 않고 말이 많아졌으며 큰돈을 충동적으로 썼다. 가족은 그가 과대한 계획을 늘어놓고 쉽게 화를 낸다고 한다. 과거 2주 이상 지속된 우울삽화가 있었다. 진찰에서 말이 빠르고 주제가 자주 바뀌며 자신이 특별한 능력이 있다고 말한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 약물치료는? A. 세로토닌재흡수억제제를 단독으로 시작한다 B. 기분조절제 또는 비정형 항정신",
+   "text": "Psychiatry Bipolar I Disorder — Acute Manic Episode bipolar-disorder mania mood-stabilizer antidepressant-caution KMLE 2026 / Claude Routine 24세 남자가 일주일간 잠을 두세 시간만 자도 지치지 않고 말이 많아졌으며 큰돈을 충동적으로 썼다. 가족은 그가 과대한 계획을 늘어놓고 쉽게 화를 낸다고 한다. 과거 2주 이상 지속된 우울삽화가 있었다. 진찰에서 말이 빠르고 주제가 자주 바뀌며 자신이 특별한 능력이 있다고 말한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 약물치료는? A. 세로토닌재흡수억제제를 단독으로 시작한다 B. 기분조절제 또는 비정형 항정신병약을 시작한다 C. 자극제인 메틸페니데이트를 투여한다 D. 벤조디아제핀만으로 유지치료한다 E. 갑상샘호르몬을 보충한다 일주일 이상의 고양·과민 기분 + 수면요구 감소·다변·사고비약·과대성·충동적 소비 + 과거 우울삽화는 제1형 양극성장애의 급성 조증이다. 정상 갑상샘·음성 약물선별로 이차 원인을 배제했으므로, 기분조절제(리튬·발프로에이트)나 비정형 항정신병약이 일차치료다."
+  },
+  {
+   "id": "kmle-2026-0480",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Serotonin Syndrome",
+   "tags": [
+    "serotonin-syndrome",
+    "clonus",
+    "cyproheptadine",
+    "drug-interaction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0480.md",
+   "snippet": "29세 여자가 하루 사이 생긴 불안, 발한, 몸떨림으로 왔다. 우울증으로 세로토닌계 약을 먹던 중 며칠 전 편두통약을 추가했다. 진찰에서 눈이 저절로 흔들리고 아래다리에서 반복적인 근수축이 뚜렷하며 반사가 항진되어 있다. 활력징후와 검사 소견은 자료와 같다. 지지치료로 좋아지지 않을 때 사용할 수 있는 가장 적절한 약물은? A. 도파민차단제인 할로페리돌을 준다 B. 근이완을 위해 단트롤렌을 준다 C. 콜린분해효소억제제를 준다 ",
+   "text": "Psychiatry Serotonin Syndrome serotonin-syndrome clonus cyproheptadine drug-interaction KMLE 2026 / Claude Routine 29세 여자가 하루 사이 생긴 불안, 발한, 몸떨림으로 왔다. 우울증으로 세로토닌계 약을 먹던 중 며칠 전 편두통약을 추가했다. 진찰에서 눈이 저절로 흔들리고 아래다리에서 반복적인 근수축이 뚜렷하며 반사가 항진되어 있다. 활력징후와 검사 소견은 자료와 같다. 지지치료로 좋아지지 않을 때 사용할 수 있는 가장 적절한 약물은? A. 도파민차단제인 할로페리돌을 준다 B. 근이완을 위해 단트롤렌을 준다 C. 콜린분해효소억제제를 준다 D. 브로모크립틴을 준다 E. 세로토닌차단제인 사이프로헵타딘을 준다 세로토닌계 약 + 유발약 추가 후 급성 발현한 자율신경 항진·신경근 흥분(간대·반사항진, 특히 하지 우세)·정신상태 변화는 세로토닌증후군이다. 원인약 중단·냉각·벤조디아제핀으로 안정되지 않으면 세로토닌 길항제인 사이프로헵타딘을 쓴다."
+  },
+  {
+   "id": "kmle-2026-0479",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Acute Epiglottitis",
+   "tags": [
+    "epiglottitis",
+    "airway-emergency",
+    "controlled-intubation",
+    "Hib"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0479.md",
+   "snippet": "4세 남아가 몇 시간 사이 급격히 나빠진 고열과 침 흘림, 숨쉬기 힘듦으로 왔다. 예방접종을 제대로 받지 않았다. 진찰에서 아이는 앞으로 몸을 기울이고 턱을 내민 채 앉아 있고 목소리가 잠겨 있으며 삼키지 못해 침을 흘린다. 활력징후와 검사 소견은 자료와 같다. 이 환아에게 가장 먼저 해야 할 처치는? A. 수술실 등 통제된 환경에서 기도확보를 준비한다 B. 설압자로 목안을 눌러 인두를 관찰한다 C. 앙와위로 눕히고 정맥로부터",
+   "text": "Pediatrics Acute Epiglottitis epiglottitis airway-emergency controlled-intubation Hib KMLE 2026 / Claude Routine 4세 남아가 몇 시간 사이 급격히 나빠진 고열과 침 흘림, 숨쉬기 힘듦으로 왔다. 예방접종을 제대로 받지 않았다. 진찰에서 아이는 앞으로 몸을 기울이고 턱을 내민 채 앉아 있고 목소리가 잠겨 있으며 삼키지 못해 침을 흘린다. 활력징후와 검사 소견은 자료와 같다. 이 환아에게 가장 먼저 해야 할 처치는? A. 수술실 등 통제된 환경에서 기도확보를 준비한다 B. 설압자로 목안을 눌러 인두를 관찰한다 C. 앙와위로 눕히고 정맥로부터 확보한다 D. 분무 기관지확장제를 흡입시킨다 E. 경구 항생제를 먹이고 귀가시킨다 예방접종 미비 소아의 급성 고열 + 침흘림 + 삼세다리 자세(앞으로 기울여 턱 내밈) + 잠긴 목소리는 급성 후두덮개염으로, 완전 기도폐쇄가 임박한 응급이다. 아이를 자극하지 말고 수술실 등 통제된 환경에서 숙련된 팀이 기도확보를 준비하는 것이 최우선이다."
+  },
+  {
+   "id": "kmle-2026-0478",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Hypertrophic Pyloric Stenosis",
+   "tags": [
+    "pyloric-stenosis",
+    "projectile-vomiting",
+    "metabolic-alkalosis",
+    "fluid-correction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0478.md",
+   "snippet": "생후 4주 남아가 2주간 점점 심해진 구토로 왔다. 수유 직후 분수처럼 토하며 토한 뒤에도 계속 먹으려 한다. 진찰에서 눈이 움푹 들어가고 입안이 말라 있으며 윗배에서 올리브 모양의 덩이가 만져진다. 활력징후와 검사 소견은 자료와 같다. 초음파에서 날문근육이 두껍고 길어져 있다. 가장 먼저 해야 할 처치는? A. 즉시 수술실로 옮겨 날문근육을 절개한다 B. 구토억제제를 투여하고 수유를 계속한다 C. 수액으로 탈수와 전해질·산염",
+   "text": "Pediatrics Hypertrophic Pyloric Stenosis pyloric-stenosis projectile-vomiting metabolic-alkalosis fluid-correction KMLE 2026 / Claude Routine 생후 4주 남아가 2주간 점점 심해진 구토로 왔다. 수유 직후 분수처럼 토하며 토한 뒤에도 계속 먹으려 한다. 진찰에서 눈이 움푹 들어가고 입안이 말라 있으며 윗배에서 올리브 모양의 덩이가 만져진다. 활력징후와 검사 소견은 자료와 같다. 초음파에서 날문근육이 두껍고 길어져 있다. 가장 먼저 해야 할 처치는? A. 즉시 수술실로 옮겨 날문근육을 절개한다 B. 구토억제제를 투여하고 수유를 계속한다 C. 수액으로 탈수와 전해질·산염기를 교정한다 D. 코위관으로 위세척만 반복한다 E. 분유를 바꾸고 외래에서 경과를 본다 생후 3~6주 남아의 비담즙성 분출성 구토 + 올리브 덩이 + 저염소·저칼륨 대사알칼리증은 비후날문협착이다. 수술은 응급이 아니라 준응급이므로, 먼저 수액으로 탈수와 저염소·저칼륨 대사알칼리증을 교정한 뒤 안전하게 날문근육절개술을 한다."
+  },
+  {
+   "id": "kmle-2026-0477",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ruptured Ectopic Pregnancy",
+   "tags": [
+    "ectopic-pregnancy",
+    "rupture",
+    "hemoperitoneum",
+    "surgery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0477.md",
+   "snippet": "28세 여자가 갑작스러운 아랫배 통증과 어지럼으로 왔다. 마지막 월경은 7주 전이고 소량의 질출혈이 있었다. 진찰에서 얼굴이 창백하고 아랫배에 심한 압통과 반발통이 있으며 자궁경부를 움직일 때 통증이 심하다. 활력징후와 검사 소견은 자료와 같다. 경질초음파에서 자궁 안에 임신낭이 없고 골반에 많은 액체가 고여 있다. 가장 적절한 처치는? A. 메토트렉세이트를 근육주사하고 외래추적한다 B. 수액·수혈 소생과 함께 응급 수술을 시",
+   "text": "Obstetrics & Gynecology Ruptured Ectopic Pregnancy ectopic-pregnancy rupture hemoperitoneum surgery KMLE 2026 / Claude Routine 28세 여자가 갑작스러운 아랫배 통증과 어지럼으로 왔다. 마지막 월경은 7주 전이고 소량의 질출혈이 있었다. 진찰에서 얼굴이 창백하고 아랫배에 심한 압통과 반발통이 있으며 자궁경부를 움직일 때 통증이 심하다. 활력징후와 검사 소견은 자료와 같다. 경질초음파에서 자궁 안에 임신낭이 없고 골반에 많은 액체가 고여 있다. 가장 적절한 처치는? A. 메토트렉세이트를 근육주사하고 외래추적한다 B. 수액·수혈 소생과 함께 응급 수술을 시행한다 C. 이틀 뒤 호르몬 수치를 재검사한다 D. 진통제를 주고 통증이 가라앉는지 관찰한다 E. 자궁내막생검으로 원인을 확인한다 가임기 무월경 후 급성 복통·실신 + 저혈압·빈맥 + 자궁내 임신낭 없음 + 다량 골반 액체(혈복강)는 파열된 자궁외임신이다. 혈역학이 불안정하므로 수액·수혈 소생과 함께 지체 없이 응급 수술(대개 난관절제)을 해야 한다."
+  },
+  {
+   "id": "kmle-2026-0476",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Placental Abruption",
+   "tags": [
+    "placental-abruption",
+    "antepartum-hemorrhage",
+    "fetal-distress",
+    "delivery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0476.md",
+   "snippet": "34세 임신부(임신 34주)가 갑작스러운 배 통증과 질출혈로 왔다. 진찰에서 자궁이 단단하고 압통이 심하며 수축 사이에도 이완이 잘 되지 않는다. 활력징후와 검사 소견은 자료와 같다. 태아심박수 감시에서 반복적인 늦은 감속과 최소변이가 보인다. 자궁경부는 3 cm 열려 있다. 가장 적절한 처치는? A. 자궁수축억제제로 진통을 멈춘다 B. 스테로이드만 주고 48시간 분만을 미룬다 C. 질초음파로 자궁경부길이를 잰 뒤 결정한다 D",
+   "text": "Obstetrics & Gynecology Placental Abruption placental-abruption antepartum-hemorrhage fetal-distress delivery KMLE 2026 / Claude Routine 34세 임신부(임신 34주)가 갑작스러운 배 통증과 질출혈로 왔다. 진찰에서 자궁이 단단하고 압통이 심하며 수축 사이에도 이완이 잘 되지 않는다. 활력징후와 검사 소견은 자료와 같다. 태아심박수 감시에서 반복적인 늦은 감속과 최소변이가 보인다. 자궁경부는 3 cm 열려 있다. 가장 적절한 처치는? A. 자궁수축억제제로 진통을 멈춘다 B. 스테로이드만 주고 48시간 분만을 미룬다 C. 질초음파로 자궁경부길이를 잰 뒤 결정한다 D. 즉시 응급 제왕절개로 분만한다 E. 외래에서 안정하며 다음 날 재평가한다 임신 후반의 통증성 질출혈 + 단단하고 이완되지 않는 자궁 + 응고이상(피브리노겐·혈소판 감소) + 태아곤란(반복 늦은 감속)은 태반조기박리다. 산모·태아가 위태로우므로 소생과 함께 즉시 응급 제왕절개로 분만한다."
+  },
+  {
+   "id": "kmle-2026-0475",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Adhesive Small Bowel Obstruction",
+   "tags": [
+    "small-bowel-obstruction",
+    "adhesion",
+    "nasogastric-decompression",
+    "conservative"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0475.md",
+   "snippet": "62세 여자가 하루 동안의 배 팽만, 쥐어짜는 복통, 구토로 왔다. 몇 해 전 자궁절제술을 받았다. 진찰에서 배가 부풀고 금속성 장음이 들리며 압통은 있으나 복막자극징후는 없다. 활력징후와 검사 소견은 자료와 같다. 복부 컴퓨터단층촬영에서 확장된 작은창자와 허탈된 큰창자 사이에 이행부가 있고 창자 조영증강은 유지되어 있다. 가장 적절한 초기 처치는? A. 코위관 감압과 수액·전해질 교정 후 관찰한다 B. 즉시 개복해 창자를 절",
+   "text": "General Surgery Adhesive Small Bowel Obstruction small-bowel-obstruction adhesion nasogastric-decompression conservative KMLE 2026 / Claude Routine 62세 여자가 하루 동안의 배 팽만, 쥐어짜는 복통, 구토로 왔다. 몇 해 전 자궁절제술을 받았다. 진찰에서 배가 부풀고 금속성 장음이 들리며 압통은 있으나 복막자극징후는 없다. 활력징후와 검사 소견은 자료와 같다. 복부 컴퓨터단층촬영에서 확장된 작은창자와 허탈된 큰창자 사이에 이행부가 있고 창자 조영증강은 유지되어 있다. 가장 적절한 초기 처치는? A. 코위관 감압과 수액·전해질 교정 후 관찰한다 B. 즉시 개복해 창자를 절제한다 C. 완하제로 배변을 촉진한다 D. 대장내시경으로 폐색을 푼다 E. 지사제와 진경제로 증상만 조절한다 복부수술력 + 산통성 복통·팽만·구토 + CT의 이행부와 창자벽 조영 유지·복막징후 없음은 교액이 없는 유착성 작은창자막힘이다. 합병증 징후가 없으면 코위관 감압·수액·전해질 교정으로 보존치료하며, 악화·교액 징후가 나타나면 수술한다."
+  },
+  {
+   "id": "kmle-2026-0474",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Perforated Peptic Ulcer",
+   "tags": [
+    "perforated-ulcer",
+    "pneumoperitoneum",
+    "peritonitis",
+    "emergency-surgery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0474.md",
+   "snippet": "54세 남자가 한 시간 전 갑자기 시작된 극심한 윗배 통증으로 왔다. 진통제를 자주 복용해 왔다. 진찰에서 배 전체가 널빤지처럼 단단하고 손을 뗄 때 통증이 심해진다. 활력징후와 검사 소견은 자료와 같다. 가슴세움 단순촬영에서 오른쪽 가로막 아래로 공기가 보인다. 수액과 항생제, 코위관 삽입을 한 뒤 가장 적절한 처치는? A. 프로톤펌프억제제 정주만 하고 관찰한다 B. 상부위장관내시경으로 지혈한다 C. 대장내시경으로 감압한다 ",
+   "text": "General Surgery Perforated Peptic Ulcer perforated-ulcer pneumoperitoneum peritonitis emergency-surgery KMLE 2026 / Claude Routine 54세 남자가 한 시간 전 갑자기 시작된 극심한 윗배 통증으로 왔다. 진통제를 자주 복용해 왔다. 진찰에서 배 전체가 널빤지처럼 단단하고 손을 뗄 때 통증이 심해진다. 활력징후와 검사 소견은 자료와 같다. 가슴세움 단순촬영에서 오른쪽 가로막 아래로 공기가 보인다. 수액과 항생제, 코위관 삽입을 한 뒤 가장 적절한 처치는? A. 프로톤펌프억제제 정주만 하고 관찰한다 B. 상부위장관내시경으로 지혈한다 C. 대장내시경으로 감압한다 D. 복부 초음파를 반복하며 경과를 본다 E. 응급 수술로 천공을 봉합한다 진통제 상용 + 갑작스런 윗배 통증 + 판자배·반발통(범발복막염) + 가로막밑 공기(기복증)는 소화성궤양 천공이다. 소생·항생제와 함께 지체 없이 응급 수술로 천공을 봉합·세척하는 것이 원칙이다."
+  },
+  {
+   "id": "kmle-2026-0473",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Disseminated Intravascular Coagulation",
+   "tags": [
+    "DIC",
+    "sepsis",
+    "consumptive-coagulopathy",
+    "source-control"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0473.md",
+   "snippet": "70세 남자가 요로감염으로 입원 중 갑자기 혈압이 떨어지고 정맥주사 자리와 잇몸에서 피가 배어 나온다. 진찰에서 사지에 반상출혈이 늘고 소변줄에서도 혈뇨가 보인다. 활력징후와 검사 소견은 자료와 같다. 말초혈액도말에 조각적혈구가 일부 보인다. 이 응고장애의 치료로 가장 근본적인 것은? A. 항섬유소용해제로 출혈만 막는다 B. 예방적으로 헤파린을 고용량 투여한다 C. 유발 원인인 패혈증을 우선 치료한다 D. 혈소판 수혈을 금기로",
+   "text": "Hematology Disseminated Intravascular Coagulation DIC sepsis consumptive-coagulopathy source-control KMLE 2026 / Claude Routine 70세 남자가 요로감염으로 입원 중 갑자기 혈압이 떨어지고 정맥주사 자리와 잇몸에서 피가 배어 나온다. 진찰에서 사지에 반상출혈이 늘고 소변줄에서도 혈뇨가 보인다. 활력징후와 검사 소견은 자료와 같다. 말초혈액도말에 조각적혈구가 일부 보인다. 이 응고장애의 치료로 가장 근본적인 것은? A. 항섬유소용해제로 출혈만 막는다 B. 예방적으로 헤파린을 고용량 투여한다 C. 유발 원인인 패혈증을 우선 치료한다 D. 혈소판 수혈을 금기로 삼는다 E. 경구 비타민K만으로 교정한다 패혈증 상태에서 혈소판·피브리노겐 감소 + PT 연장 + D 이합체 급증 + 조각적혈구·전신 출혈은 소모응고병(DIC)이다. DIC는 증후군이므로 유발 원인인 패혈증을 치료하는 것이 근본이며, 활동 출혈에는 혈소판·신선냉동혈장·피브리노겐을 보충한다."
+  },
+  {
+   "id": "kmle-2026-0472",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Thrombotic Thrombocytopenic Purpura",
+   "tags": [
+    "TTP",
+    "plasma-exchange",
+    "ADAMTS13",
+    "thrombotic-microangiopathy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0472.md",
+   "snippet": "38세 여자가 이틀간의 두통과 혼동, 온몸의 멍으로 왔다. 진찰에서 결막이 창백하고 팔다리에 점상출혈이 있으며 지남력이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 말초혈액도말에서 조각적혈구가 뚜렷하고 응고검사(PT·aPTT)는 정상이다. 이 환자에게 가장 먼저 시행할 치료는? A. 혈소판을 즉시 대량 수혈한다 B. 치료적 혈장교환술을 시작한다 C. 헤파린으로 항응고를 시작한다 D. 경구 철분제를 보충한다 E. 광범위 ",
+   "text": "Hematology Thrombotic Thrombocytopenic Purpura TTP plasma-exchange ADAMTS13 thrombotic-microangiopathy KMLE 2026 / Claude Routine 38세 여자가 이틀간의 두통과 혼동, 온몸의 멍으로 왔다. 진찰에서 결막이 창백하고 팔다리에 점상출혈이 있으며 지남력이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 말초혈액도말에서 조각적혈구가 뚜렷하고 응고검사(PT·aPTT)는 정상이다. 이 환자에게 가장 먼저 시행할 치료는? A. 혈소판을 즉시 대량 수혈한다 B. 치료적 혈장교환술을 시작한다 C. 헤파린으로 항응고를 시작한다 D. 경구 철분제를 보충한다 E. 광범위 항생제를 경험적으로 투여한다 미세혈관병용혈빈혈(조각적혈구)·심한 혈소판감소·신경증상 + 정상 응고검사는 혈전혈소판감소자색반병에 합당하다. ADAMTS13 결핍에 의한 미세혈전이 원인이므로, 결과를 기다리지 말고 즉시 치료적 혈장교환을 시작하는 것이 생명을 살린다."
+  },
+  {
+   "id": "kmle-2026-0471",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Disseminated Gonococcal Infection",
+   "tags": [
+    "disseminated-gonococcus",
+    "arthritis-dermatitis",
+    "ceftriaxone"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0471.md",
+   "snippet": "24세 여자가 사흘간의 발열과 여러 관절의 통증, 오른손목의 붓기로 왔다. 최근 새 성 상대가 있었다. 진찰에서 손등과 팔에 통증을 동반한 고름물집이 몇 개 있고 손목을 폈다 굽힐 때 힘줄을 따라 통증이 심하다. 활력징후와 검사 소견은 자료와 같다. 관절액 그람염색에서 그람음성 쌍알균이 보인다. 가장 적절한 항생제는? A. 경구 독시사이클린을 투여한다 B. 경구 아지트로마이신을 투여한다 C. 반코마이신을 정주한다 D. 세프트리",
+   "text": "Infectious Disease Disseminated Gonococcal Infection disseminated-gonococcus arthritis-dermatitis ceftriaxone KMLE 2026 / Claude Routine 24세 여자가 사흘간의 발열과 여러 관절의 통증, 오른손목의 붓기로 왔다. 최근 새 성 상대가 있었다. 진찰에서 손등과 팔에 통증을 동반한 고름물집이 몇 개 있고 손목을 폈다 굽힐 때 힘줄을 따라 통증이 심하다. 활력징후와 검사 소견은 자료와 같다. 관절액 그람염색에서 그람음성 쌍알균이 보인다. 가장 적절한 항생제는? A. 경구 독시사이클린을 투여한다 B. 경구 아지트로마이신을 투여한다 C. 반코마이신을 정주한다 D. 세프트리악손을 정주한다 E. 메트로니다졸을 정주한다 발열 + 이동성 다발관절통·건활막염 + 통증성 농포성 피부병변 + 관절액 그람음성 쌍알균은 파종임균감염이다. 표준 치료는 세프트리악손 정주이며, 동반 클라미디아를 겨냥해 경구 약을 함께 준다."
+  },
+  {
+   "id": "kmle-2026-0470",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Miliary Tuberculosis",
+   "tags": [
+    "miliary-tuberculosis",
+    "disseminated-TB",
+    "antituberculous-therapy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0470.md",
+   "snippet": "34세 남자가 3주간의 미열, 식은땀, 체중감소, 마른기침으로 왔다. 최근 면역억제제를 복용해 왔다. 진찰에서 간과 지라가 만져지고 안저에서 노란 결절이 보인다. 활력징후와 검사 소견은 자료와 같다. 흉부 X선에서 양쪽 폐 전체에 좁쌀만한 결절이 고르게 퍼져 있다. 이 환자에게 가장 적절한 치료는? A. 항결핵제 네 가지 병합요법을 시작한다 B. 광범위 세균성폐렴 항생제를 투여한다 C. 고용량 스테로이드 단독으로 치료한다 D.",
+   "text": "Infectious Disease Miliary Tuberculosis miliary-tuberculosis disseminated-TB antituberculous-therapy KMLE 2026 / Claude Routine 34세 남자가 3주간의 미열, 식은땀, 체중감소, 마른기침으로 왔다. 최근 면역억제제를 복용해 왔다. 진찰에서 간과 지라가 만져지고 안저에서 노란 결절이 보인다. 활력징후와 검사 소견은 자료와 같다. 흉부 X선에서 양쪽 폐 전체에 좁쌀만한 결절이 고르게 퍼져 있다. 이 환자에게 가장 적절한 치료는? A. 항결핵제 네 가지 병합요법을 시작한다 B. 광범위 세균성폐렴 항생제를 투여한다 C. 고용량 스테로이드 단독으로 치료한다 D. 항진균제를 경험적으로 시작한다 E. 해열제만 주며 자연경과를 관찰한다 면역저하 + 아급성 전신증상 + 간비종대·맥락막결절 + 흉부 X선의 미만성 좁쌀결절은 좁쌀결핵(파종결핵)이다. 배양·분자검사를 확보한 뒤 지체 없이 표준 4제 항결핵요법을 시작한다."
+  },
+  {
+   "id": "kmle-2026-0469",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Malignant Spinal Cord Compression",
+   "tags": [
+    "cord-compression",
+    "metastasis",
+    "dexamethasone",
+    "emergency-MRI"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0469.md",
+   "snippet": "64세 남자가 2주간 점점 심해진 등 통증과 이틀 전부터의 양다리 힘빠짐으로 왔다. 전립샘암으로 치료받은 병력이 있다. 진찰에서 가슴 중간 높이 아래로 감각이 둔하고 두 다리 근력이 약하며 항문조임근 긴장이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 진단 확인 영상을 기다리는 동안 가장 먼저 시작할 처치는? A. 물리치료로 근력강화를 시작한다 B. 비스테로이드소염제로 통증만 조절한다 C. 정맥 글루코코르티코이드를 즉시",
+   "text": "Neurology Malignant Spinal Cord Compression cord-compression metastasis dexamethasone emergency-MRI KMLE 2026 / Claude Routine 64세 남자가 2주간 점점 심해진 등 통증과 이틀 전부터의 양다리 힘빠짐으로 왔다. 전립샘암으로 치료받은 병력이 있다. 진찰에서 가슴 중간 높이 아래로 감각이 둔하고 두 다리 근력이 약하며 항문조임근 긴장이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 진단 확인 영상을 기다리는 동안 가장 먼저 시작할 처치는? A. 물리치료로 근력강화를 시작한다 B. 비스테로이드소염제로 통증만 조절한다 C. 정맥 글루코코르티코이드를 즉시 투여한다 D. 골스캔 결과가 나온 뒤 치료를 정한다 E. 근이완제로 다리 경직을 완화한다 암 병력 + 진행성 등 통증 + 감각수준·하지 위약·항문긴장 저하는 전이성 척수압박이다. 신경학적 회복은 시간에 달려 있어, 확인 MRI를 기다리는 동안 정맥 글루코코르티코이드를 즉시 주어 부종을 줄이고 이어 방사선치료/수술 감압으로 연결한다."
+  },
+  {
+   "id": "kmle-2026-0468",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Myasthenic Crisis",
+   "tags": [
+    "myasthenic-crisis",
+    "respiratory-failure",
+    "plasma-exchange",
+    "forced-vital-capacity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0468.md",
+   "snippet": "48세 여자가 하루 사이 심해진 삼킴곤란, 복시, 팔다리 힘빠짐으로 왔다. 중증근무력증으로 약을 먹으며 사흘 전 호흡기 감염이 있었다. 진찰에서 말끝이 자꾸 끊기고 기침이 약하며 목을 들지 못한다. 활력징후와 검사 소견은 자료와 같다. 이 환자에게 가장 먼저 해야 할 처치는? A. 항콜린에스터분해효소제 용량을 크게 늘린다 B. 경구 스테로이드를 고용량으로 시작한다 C. 흉부 컴퓨터단층촬영으로 가슴샘을 평가한다 D. 근이완제를 ",
+   "text": "Neurology Myasthenic Crisis myasthenic-crisis respiratory-failure plasma-exchange forced-vital-capacity KMLE 2026 / Claude Routine 48세 여자가 하루 사이 심해진 삼킴곤란, 복시, 팔다리 힘빠짐으로 왔다. 중증근무력증으로 약을 먹으며 사흘 전 호흡기 감염이 있었다. 진찰에서 말끝이 자꾸 끊기고 기침이 약하며 목을 들지 못한다. 활력징후와 검사 소견은 자료와 같다. 이 환자에게 가장 먼저 해야 할 처치는? A. 항콜린에스터분해효소제 용량을 크게 늘린다 B. 경구 스테로이드를 고용량으로 시작한다 C. 흉부 컴퓨터단층촬영으로 가슴샘을 평가한다 D. 근이완제를 투여해 경련을 완화한다 E. 기도확보와 기계환기로 호흡을 지지한다 감염을 방아쇠로 급격히 진행한 연수·호흡근 약화 + 노력폐활량 저하 + 이산화탄소 저류는 절박한 호흡부전을 동반한 근무력위기다. 무엇보다 먼저 기도·환기를 확보해 호흡부전을 막는 것이 우선이며, 면역치료(혈장교환·정맥면역글로불린)를 이어 시작한다."
+  },
+  {
+   "id": "kmle-2026-0467",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Massive Hemoptysis",
+   "tags": [
+    "massive-hemoptysis",
+    "airway-protection",
+    "positioning",
+    "bronchial-artery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0467.md",
+   "snippet": "56세 남자가 한 시간 동안 컵으로 여러 번 선홍색 피를 기침과 함께 뱉어 왔다. 오래된 기관지확장증이 있다. 진찰에서 왼쪽 폐에서 거품소리가 크게 들리고 오른쪽은 깨끗하다. 활력징후와 검사 소견은 자료와 같다. 출혈은 왼쪽 폐에서 나오는 것으로 판단된다. 기도를 지키기 위해 가장 먼저 취할 조치는? A. 곧바로 흉부 컴퓨터단층촬영실로 옮긴다 B. 출혈 쪽인 왼쪽을 아래로 하여 옆으로 눕힌다 C. 진해제로 기침을 억제한다 D.",
+   "text": "Pulmonology Massive Hemoptysis massive-hemoptysis airway-protection positioning bronchial-artery KMLE 2026 / Claude Routine 56세 남자가 한 시간 동안 컵으로 여러 번 선홍색 피를 기침과 함께 뱉어 왔다. 오래된 기관지확장증이 있다. 진찰에서 왼쪽 폐에서 거품소리가 크게 들리고 오른쪽은 깨끗하다. 활력징후와 검사 소견은 자료와 같다. 출혈은 왼쪽 폐에서 나오는 것으로 판단된다. 기도를 지키기 위해 가장 먼저 취할 조치는? A. 곧바로 흉부 컴퓨터단층촬영실로 옮긴다 B. 출혈 쪽인 왼쪽을 아래로 하여 옆으로 눕힌다 C. 진해제로 기침을 억제한다 D. 폐활량계로 폐기능을 측정한다 E. 앙와위로 눕혀 안정시킨다 대량 객혈의 즉사 원인은 실혈이 아니라 반대편 폐로의 혈액 흡인에 의한 질식이다. 출혈측을 아래로 향하게 옆으로 눕히면 건강한 폐로의 혈액 유입을 막아 산소화를 지키고, 이어 기도확보·기관지동맥색전술로 이어진다."
+  },
+  {
+   "id": "kmle-2026-0466",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "High-risk Pulmonary Embolism with Shock",
+   "tags": [
+    "pulmonary-embolism",
+    "thrombolysis",
+    "obstructive-shock",
+    "right-heart-strain"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0466.md",
+   "snippet": "68세 여자가 갑작스러운 호흡곤란과 실신으로 왔다. 사흘 전 무릎수술 후 침상안정 중이었다. 진찰에서 목정맥이 늘어나 있고 오른쪽 종아리가 붓고 아프다. 활력징후와 검사 소견은 자료와 같다. 침상 심초음파에서 우심실이 확장되어 있고 컴퓨터단층폐혈관조영술에서 양쪽 주폐동맥에 큰 충만결손이 보인다. 출혈 금기는 없다. 가장 적절한 처치는? A. 경구 항응고제만 시작하고 관찰한다 B. 하대정맥 필터만 삽입한다 C. 광범위 항생제를 ",
+   "text": "Pulmonology High-risk Pulmonary Embolism with Shock pulmonary-embolism thrombolysis obstructive-shock right-heart-strain KMLE 2026 / Claude Routine 68세 여자가 갑작스러운 호흡곤란과 실신으로 왔다. 사흘 전 무릎수술 후 침상안정 중이었다. 진찰에서 목정맥이 늘어나 있고 오른쪽 종아리가 붓고 아프다. 활력징후와 검사 소견은 자료와 같다. 침상 심초음파에서 우심실이 확장되어 있고 컴퓨터단층폐혈관조영술에서 양쪽 주폐동맥에 큰 충만결손이 보인다. 출혈 금기는 없다. 가장 적절한 처치는? A. 경구 항응고제만 시작하고 관찰한다 B. 하대정맥 필터만 삽입한다 C. 광범위 항생제를 정주한다 D. 전신 혈전용해제를 투여한다 E. 이뇨제로 우심실 부하를 줄인다 수술 후 부동 + 급성 호흡곤란·실신 + 저혈압·빈맥·저산소 + 우심실 확장 + 양측 주폐동맥 충만결손은 쇼크를 동반한 고위험 폐색전이다. 지속적 저혈압을 보이는 대량 폐색전은 금기가 없으면 전신 혈전용해가 표준이다."
+  },
+  {
+   "id": "kmle-2026-0465",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Shiga toxin-associated Hemolytic Uremic Syndrome",
+   "tags": [
+    "HUS",
+    "STEC",
+    "thrombotic-microangiopathy",
+    "antibiotic-avoidance"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0465.md",
+   "snippet": "5세 남아가 사흘 전부터의 피 섞인 설사에 이어 소변량이 줄고 얼굴이 부어 왔다. 며칠 전 방문한 목장에서 덜 익힌 소고기를 먹었다. 진찰에서 결막이 창백하고 눈꺼풀이 부어 있다. 활력징후와 검사 소견은 자료와 같고 말초혈액도말에서 조각적혈구가 보인다. 이 환아의 치료로 가장 적절한 것은? A. 수분·전해질 관리와 지지요법을 한다 B. 경험적 항생제를 조기에 투여한다 C. 지사제로 설사를 멈춘다 D. 혈소판을 예방적으로 수혈한",
+   "text": "Nephrology Shiga toxin-associated Hemolytic Uremic Syndrome HUS STEC thrombotic-microangiopathy antibiotic-avoidance KMLE 2026 / Claude Routine 5세 남아가 사흘 전부터의 피 섞인 설사에 이어 소변량이 줄고 얼굴이 부어 왔다. 며칠 전 방문한 목장에서 덜 익힌 소고기를 먹었다. 진찰에서 결막이 창백하고 눈꺼풀이 부어 있다. 활력징후와 검사 소견은 자료와 같고 말초혈액도말에서 조각적혈구가 보인다. 이 환아의 치료로 가장 적절한 것은? A. 수분·전해질 관리와 지지요법을 한다 B. 경험적 항생제를 조기에 투여한다 C. 지사제로 설사를 멈춘다 D. 혈소판을 예방적으로 수혈한다 E. 고용량 스테로이드를 투여한다 혈성 설사 후 미세혈관병용혈빈혈(조각적혈구·LDH↑)·혈소판감소·급성콩팥손상 삼징은 시가독소 대장균과 연관된 용혈요독증후군이다. 치료의 축은 수분·전해질·혈압·투석 필요 여부를 관리하는 지지요법이며, 항생제·지사제·예방적 혈소판 수혈은 피한다."
+  },
+  {
+   "id": "kmle-2026-0464",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Rhabdomyolysis-induced Acute Kidney Injury",
+   "tags": [
+    "rhabdomyolysis",
+    "acute-kidney-injury",
+    "myoglobin",
+    "fluid-resuscitation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0464.md",
+   "snippet": "26세 남자가 만취 후 10시간을 한 자세로 쓰러져 있다가 발견되어 왔다. 오른쪽 넓적다리가 붓고 단단하며 소변이 진한 갈색이다. 소변검사에서 잠혈반응은 강양성이나 현미경에서 적혈구는 거의 없다. 활력징후와 검사 소견은 자료와 같다. 신장을 보호하기 위해 가장 먼저 시작할 처치는? A. 생리식염수를 충분히 정주해 소변량을 늘린다 B. 저용량 도파민을 지속 정주한다 C. 즉시 혈액투석을 시작한다 D. 칼슘글루콘산염을 예방적으로 ",
+   "text": "Nephrology Rhabdomyolysis-induced Acute Kidney Injury rhabdomyolysis acute-kidney-injury myoglobin fluid-resuscitation KMLE 2026 / Claude Routine 26세 남자가 만취 후 10시간을 한 자세로 쓰러져 있다가 발견되어 왔다. 오른쪽 넓적다리가 붓고 단단하며 소변이 진한 갈색이다. 소변검사에서 잠혈반응은 강양성이나 현미경에서 적혈구는 거의 없다. 활력징후와 검사 소견은 자료와 같다. 신장을 보호하기 위해 가장 먼저 시작할 처치는? A. 생리식염수를 충분히 정주해 소변량을 늘린다 B. 저용량 도파민을 지속 정주한다 C. 즉시 혈액투석을 시작한다 D. 칼슘글루콘산염을 예방적으로 반복 투여한다 E. 루프이뇨제로 강제이뇨를 유도한다 장시간 압박 후 근육 손상 + 매우 높은 CK + 갈색뇨 + 잠혈 강양성이나 적혈구 없음(미오글로빈뇨)은 횡문근융해증에 의한 급성콩팥손상이다. 초기 핵심은 조기·충분한 등장성 수액으로 콩팥 관류와 소변흐름을 확보해 미오글로빈 침착을 줄이는 것이다."
+  },
+  {
+   "id": "kmle-2026-0463",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Ectopic ACTH Syndrome",
+   "tags": [
+    "Cushing",
+    "ectopic-ACTH",
+    "dexamethasone-suppression",
+    "paraneoplastic"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0463.md",
+   "snippet": "60세 남자가 두 달간 빠르게 진행한 근위부 근력약화, 부종, 조절되지 않는 고혈압과 고혈당으로 왔다. 30갑년 흡연력이 있고 최근 체중이 줄었다. 진찰에서 피부가 검게 착색되어 있다. 활력징후와 검사 소견은 자료와 같다. 고용량 덱사메타손 억제검사에서도 코르티솔이 억제되지 않았다. 원인을 규명하기 위한 다음 단계로 가장 적절한 것은? A. 뇌하수체 자기공명영상만으로 확진한다 B. 흉부 컴퓨터단층촬영으로 잠복 종양을 찾는다 C",
+   "text": "Endocrinology Ectopic ACTH Syndrome Cushing ectopic-ACTH dexamethasone-suppression paraneoplastic KMLE 2026 / Claude Routine 60세 남자가 두 달간 빠르게 진행한 근위부 근력약화, 부종, 조절되지 않는 고혈압과 고혈당으로 왔다. 30갑년 흡연력이 있고 최근 체중이 줄었다. 진찰에서 피부가 검게 착색되어 있다. 활력징후와 검사 소견은 자료와 같다. 고용량 덱사메타손 억제검사에서도 코르티솔이 억제되지 않았다. 원인을 규명하기 위한 다음 단계로 가장 적절한 것은? A. 뇌하수체 자기공명영상만으로 확진한다 B. 흉부 컴퓨터단층촬영으로 잠복 종양을 찾는다 C. 하루 뒤 저용량 덱사메타손 검사를 반복한다 D. 즉시 양측 부신절제술을 시행한다 E. 갑상샘 초음파를 우선 시행한다 빠른 진행의 쿠싱 증후군 + 저칼륨혈증·고혈당·색소침착 + 매우 높은 ACTH + 고용량 덱사메타손 비억제는 이소성 ACTH 분비(흔히 소세포폐암·유암종)를 시사한다. 유발 종양을 찾기 위한 흉부 영상이 다음 단계다."
+  },
+  {
+   "id": "kmle-2026-0462",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Thyroid Storm",
+   "tags": [
+    "thyroid-storm",
+    "thionamide",
+    "iodine-timing",
+    "beta-blocker"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0462.md",
+   "snippet": "42세 여자가 하루 전부터 심한 두근거림, 고열, 안절부절못함으로 왔다. 수년간 갑상샘항진증을 앓았으나 최근 약을 끊었고 어제 폐렴으로 치료를 시작했다. 진찰에서 손떨림과 발한이 심하고 지남력이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 베타차단제와 프로필티오우라실, 해열·수액을 시작하려 한다. 처치 순서에서 반드시 피해야 할 것은? A. 프로필티오우라실을 먼저 투여한다 B. 베타차단제로 맥박수를 조절한다 C. 해열과",
+   "text": "Endocrinology Thyroid Storm thyroid-storm thionamide iodine-timing beta-blocker KMLE 2026 / Claude Routine 42세 여자가 하루 전부터 심한 두근거림, 고열, 안절부절못함으로 왔다. 수년간 갑상샘항진증을 앓았으나 최근 약을 끊었고 어제 폐렴으로 치료를 시작했다. 진찰에서 손떨림과 발한이 심하고 지남력이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 베타차단제와 프로필티오우라실, 해열·수액을 시작하려 한다. 처치 순서에서 반드시 피해야 할 것은? A. 프로필티오우라실을 먼저 투여한다 B. 베타차단제로 맥박수를 조절한다 C. 해열과 적극적 냉각을 병행한다 D. 글루코코르티코이드를 함께 준다 E. 항갑상샘제보다 아이오딘화칼륨을 먼저 준다 갑상샘중독발작에서 아이오딘은 새 호르몬 합성과 분비를 줄이지만, 항갑상샘제로 합성을 먼저 차단하지 않은 상태에서 아이오딘을 주면 기질로 쓰여 호르몬 생성을 오히려 늘릴 수 있다. 그래서 티오나마이드를 최소 1시간 앞서 투여한 뒤 아이오딘을 준다."
+  },
+  {
+   "id": "kmle-2026-0461",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Ischemic Colitis",
+   "tags": [
+    "ischemic-colitis",
+    "lower-GI-bleeding",
+    "watershed",
+    "supportive-care"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0461.md",
+   "snippet": "73세 여자가 갑작스러운 왼쪽 아랫배 통증에 이어 선홍색 혈변을 보고 왔다. 심방세동으로 약을 먹으며 최근 탈수 삽화가 있었다. 진찰에서 왼아랫배에 가벼운 압통이 있고 복막자극징후는 없다. 활력징후와 검사 소견은 자료와 같다. 조영증강 복부 컴퓨터단층촬영에서 하행결장벽이 분절성으로 두꺼워져 있다. 가장 적절한 초기 처치는? A. 응급 개복술로 침범 결장을 절제한다 B. 즉시 전신 항응고를 시작한다 C. 대장내시경으로 용종절제술",
+   "text": "Gastroenterology Ischemic Colitis ischemic-colitis lower-GI-bleeding watershed supportive-care KMLE 2026 / Claude Routine 73세 여자가 갑작스러운 왼쪽 아랫배 통증에 이어 선홍색 혈변을 보고 왔다. 심방세동으로 약을 먹으며 최근 탈수 삽화가 있었다. 진찰에서 왼아랫배에 가벼운 압통이 있고 복막자극징후는 없다. 활력징후와 검사 소견은 자료와 같다. 조영증강 복부 컴퓨터단층촬영에서 하행결장벽이 분절성으로 두꺼워져 있다. 가장 적절한 초기 처치는? A. 응급 개복술로 침범 결장을 절제한다 B. 즉시 전신 항응고를 시작한다 C. 대장내시경으로 용종절제술을 한다 D. 금식·수액과 지지요법을 하며 경과를 관찰한다 E. 지사제로 배변을 억제한다 고령·저관류 유발요인 + 급성 좌하복부 통증 후 혈변 + 복막징후 없음 + 분절성 결장벽 비후는 비폐색성 허혈결장염(대개 분수령 영역)에 합당하다. 복막염·괴사 징후가 없으면 대부분 금식·수액·지지요법으로 회복한다."
+  },
+  {
+   "id": "kmle-2026-0460",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Esophageal Variceal Hemorrhage",
+   "tags": [
+    "variceal-bleeding",
+    "cirrhosis",
+    "vasoactive",
+    "portal-hypertension"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0460.md",
+   "snippet": "55세 남자가 1시간 전 다량의 선홍색 피를 토하고 왔다. 오래된 알코올간경변으로 외래를 다닌다. 진찰에서 결막이 창백하고 복수가 만져진다. 활력징후와 검사 소견은 자료와 같다. 혈액을 확보하고 수액을 주는 것과 함께, 응급내시경 전에 우선 시작해야 할 약물치료는? A. 경구 프로톤펌프억제제를 복용시킨다 B. 신선냉동혈장을 정상화까지 대량 수혈한다 C. 혈관수축제인 소마토스타틴 유사체를 정주한다 D. 비선택 베타차단제를 즉시 ",
+   "text": "Gastroenterology Esophageal Variceal Hemorrhage variceal-bleeding cirrhosis vasoactive portal-hypertension KMLE 2026 / Claude Routine 55세 남자가 1시간 전 다량의 선홍색 피를 토하고 왔다. 오래된 알코올간경변으로 외래를 다닌다. 진찰에서 결막이 창백하고 복수가 만져진다. 활력징후와 검사 소견은 자료와 같다. 혈액을 확보하고 수액을 주는 것과 함께, 응급내시경 전에 우선 시작해야 할 약물치료는? A. 경구 프로톤펌프억제제를 복용시킨다 B. 신선냉동혈장을 정상화까지 대량 수혈한다 C. 혈관수축제인 소마토스타틴 유사체를 정주한다 D. 비선택 베타차단제를 즉시 투여한다 E. 저용량 도파민을 지속 정주한다 간경변 환자의 대량 토혈은 식도정맥류 출혈을 우선 의심한다. 소생과 함께 내장혈류를 줄여 문맥압을 낮추는 혈관수축제(소마토스타틴/옥트레오타이드, 테를리프레신)를 조기에 시작하면 출혈 조절률과 생존이 좋아진다."
+  },
+  {
+   "id": "kmle-2026-0459",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Acute Infective Endocarditis",
+   "tags": [
+    "infective-endocarditis",
+    "blood-culture",
+    "valvular-regurgitation",
+    "embolism"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0459.md",
+   "snippet": "34세 남자가 2주간의 발열과 오한, 전신쇠약으로 왔다. 정맥주사 약물사용력이 있다. 진찰에서 심첨부에 새로 들린 수축기 잡음이 있고 손발톱밑에 선상 출혈이 보인다. 활력징후와 검사 소견은 자료와 같다. 심초음파를 준비하는 사이 진단을 위해 항생제 투여 전에 가장 먼저 해야 할 것은? A. 서로 다른 부위에서 혈액배양 3쌍을 채취한다 B. 경험적 광범위 항생제를 즉시 정주한다 C. 비스테로이드소염제로 해열을 시도한다 D. 흉부",
+   "text": "Cardiology Acute Infective Endocarditis infective-endocarditis blood-culture valvular-regurgitation embolism KMLE 2026 / Claude Routine 34세 남자가 2주간의 발열과 오한, 전신쇠약으로 왔다. 정맥주사 약물사용력이 있다. 진찰에서 심첨부에 새로 들린 수축기 잡음이 있고 손발톱밑에 선상 출혈이 보인다. 활력징후와 검사 소견은 자료와 같다. 심초음파를 준비하는 사이 진단을 위해 항생제 투여 전에 가장 먼저 해야 할 것은? A. 서로 다른 부위에서 혈액배양 3쌍을 채취한다 B. 경험적 광범위 항생제를 즉시 정주한다 C. 비스테로이드소염제로 해열을 시도한다 D. 흉부 컴퓨터단층촬영을 먼저 시행한다 E. 와파린으로 항응고를 시작한다 지속발열 + 새 판막역류 잡음 + 색전 소견 + 정맥약물사용력은 감염심내막염을 강하게 시사한다. 원인균 확인과 표적치료를 위해 항생제 투여 전에 서로 다른 부위·시간의 혈액배양을 충분히 확보하는 것이 우선이다."
+  },
+  {
+   "id": "kmle-2026-0458",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Acute Anterior ST-Elevation Myocardial Infarction",
+   "tags": [
+    "STEMI",
+    "primary-PCI",
+    "reperfusion",
+    "acute-coronary-syndrome"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-07",
+   "path": "content/kmle/2026/kmle-2026-0458.md",
+   "snippet": "58세 남자가 1시간 전 갑자기 시작되어 지속되는 앞가슴 조임과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 안정을 취해도 가라앉지 않는다. 심전도와 활력징후, 검사 소견은 자료와 같다. 이 병원은 24시간 심장도관실을 운영한다. 증상 발생 90분 안에 시행할 수 있는 가장 적절한 처치는? A. 정맥 혈전용해제를 투여하고 경과를 관찰한다 B. 심장도관실로 옮겨 일차 경피관상동맥중재술을 한다 C. 이중항혈소판제 부하 후 운동",
+   "text": "Cardiology Acute Anterior ST-Elevation Myocardial Infarction STEMI primary-PCI reperfusion acute-coronary-syndrome KMLE 2026 / Claude Routine 58세 남자가 1시간 전 갑자기 시작되어 지속되는 앞가슴 조임과 식은땀으로 응급실에 왔다. 통증은 왼팔로 뻗치고 안정을 취해도 가라앉지 않는다. 심전도와 활력징후, 검사 소견은 자료와 같다. 이 병원은 24시간 심장도관실을 운영한다. 증상 발생 90분 안에 시행할 수 있는 가장 적절한 처치는? A. 정맥 혈전용해제를 투여하고 경과를 관찰한다 B. 심장도관실로 옮겨 일차 경피관상동맥중재술을 한다 C. 이중항혈소판제 부하 후 운동부하심전도를 예약한다 D. 관상동맥 컴퓨터단층혈관조영술을 먼저 시행한다 E. 고용량 스타틴을 투여하고 외래에서 추적한다 지속흉통 + 심전도의 인접 유도 ST분절 상승 + 트로포닌 상승은 급성 관상동맥 완전폐색을 뜻한다. 일차 PCI가 가능한 병원에서는 증상 발생 12시간 이내라면 재관류의 표준이 일차 경피관상동맥중재술이다."
+  },
   {
    "id": "usmle-2026-0054",
    "type": "usmle",
@@ -170,6 +744,38 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0049.md",
    "snippet": "A 68 year old man with a mechanical mitral valve on long term warfarin therapy (stable INR around 2.5 for the past year) is started on metronidazole for diverticulitis. Ten days later he notices new gum bleeding and diffuse bruising on his ",
    "text": "Pharmacology Warfarin–Metronidazole Interaction (CYP2C9 Inhibition) warfarin metronidazole CYP2C9 drug-interaction anticoagulation USMLE-style / MedKOS (pharmacology · drug interaction mechanism) A 68 year old man with a mechanical mitral valve on long term warfarin therapy (stable INR around 2.5 for the past year) is started on metronidazole for diverticulitis. Ten days later he notices new gum bleeding and diffuse bruising on his arms. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's current presentation? A. Increased hepatic synthesis of vitamin K–dependent clotting factors B. Inhibition of hepatic CYP2C9 mediated metabolism of S warfarin C. Induction of intestinal P glycoprotein reducing warfarin absorption D. Displacement of warfarin from plasma albumin binding sites E. Increased vitamin K production by antibiotic altered gut flora Metronidazole is a potent inhibitor of CYP2C9, the enzyme responsible for clearing the more potent S enantiomer of warfarin, so the effective anticoagulant dose rises sharply after a stable regimen and produces supratherapeutic INR with bleeding."
+  },
+  {
+   "id": "paper-2026-0155",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of plastic surgery",
+   "confidence": "medium",
+   "date": "2026-08-05",
+   "path": "content/papers/2026/2026-08-05_paper-2026-0155_seeing_beyond_the_surgeon_s_eye_artificial_intelligence_for_.md",
+   "snippet": "Title Seeing Beyond the Surgeon's Eye: Artificial Intelligence for Postoperative Monitoring of Free Vascularized Flaps: A Narrative Review Authors Ebrahimian Manoochehr, Kamali Reyhaneh Journal / DOI Annals of plastic surgery · DOI: 10.1097",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Annals of plastic surgery Title Seeing Beyond the Surgeon's Eye: Artificial Intelligence for Postoperative Monitoring of Free Vascularized Flaps: A Narrative Review Authors Ebrahimian Manoochehr, Kamali Reyhaneh Journal / DOI Annals of plastic surgery · DOI: 10.1097/SAP.0000000000004848 · PMID: 42554452 https://pubmed.ncbi.nlm.nih.gov/42554452/ Abstract BACKGROUND: Postoperative monitoring of free vascularized flaps (FVFs) is critical for early detection of ischemia and timely salvage. Although traditional monitoring relies heavily on clinical examination and adjunctive devices, these approaches are labor‑intensive, subjective, and resource‑dependent. Recent advances in artificial intelligence (AI), particularly machine learning and deep learning, have enabled automated, data‑driven approaches to postoperative free‑flap monitoring. However, the clinical readiness, methodological robustness, and translational challenges of these AI‑based systems remain incompletely understood. OBJECTIVE: This review examines recent studies on AI‑assisted postoperative free‑flap monitoring, focusing on technical methodologies, clinical applications, translational relevance, current limitations, and future research directions. METHODS: A systematic narrative hybrid review was conducted by searching PubMed, Embase, Web of Science, and Google Scholar from January 2000 to February 2, 2026. Eligible studies reported clinically relevant outcomes, including flap viability, ischemia detection, venous congestion, thrombosis prevention, and salvage rates. Studies focused on preoperative prediction models, non‑AI monitoring techniques, editorials, and opinion articles were excluded. Two independent reviewers performed study selection and data extraction, with disagreements resolved by consensus. RESULTS: Nine studies met the inclusion criteria. Most studies used supervised machine‑learning models, primarily using visible‑light images, infrared imaging, photoplethysmography, hyperspectral imaging, or multimodal sensor data for flap surveillance. All but 1 study were retrospective, and no prospective human clinical trials were identified. AI‑based systems demonstrated promising performance in detecting arterial ischemia and venous congestion, often achieving diagnostic accuracies comparable to or exceeding those of traditional monitoring methods. Diagnostic accuracy across studies ranged from 82% to 98.4%. Key challenges included limited data sets, lack of external validation, heterogeneous methodologies, absence of standardized outcome metrics, and concerns about generalizability across diverse skin tones and clinical settings. CONCLUSIONS: AI‑assisted postoperative free‑flap monitoring is a rapidly evolving and promising adjunct to conventional surveillance. Although current evidence suggests benefits for early ischemia detection and workload reduction, significant barriers particularly methodological heterogeneity, data scarcity, and limited prospective validation must be addressed before widespread clinical implementation. Future progress will depend on standardized data sets, transparent model development, multicenter prospective studies, and ethically sound, interoperable AI frameworks that enable equitable and scalable precision microsurgical care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0154",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal. Cardiovascular Imaging",
+   "confidence": "medium",
+   "date": "2026-08-05",
+   "path": "content/papers/2026/2026-08-05_paper-2026-0154_intracardiac_versus_transesophageal_echocardiography_in_pati.md",
+   "snippet": "Title Intracardiac versus Transesophageal Echocardiography in patients undergoing Ablation for Atrial fibrillation: A systematic review and meta analysis Authors Dandamudi Mrunalini, Hakkeem Bezalel, Pinilla Juan, Samad Nathalia Schettino, ",
+   "text": "Cardiology scraped pubmed PubMed / European heart journal. Cardiovascular Imaging Title Intracardiac versus Transesophageal Echocardiography in patients undergoing Ablation for Atrial fibrillation: A systematic review and meta analysis Authors Dandamudi Mrunalini, Hakkeem Bezalel, Pinilla Juan, Samad Nathalia Schettino, de Lucena Larissa Araújo, Humayun Zainab, Khairallah Terezia Toni, Stabile Francesco Journal / DOI European heart journal. Cardiovascular Imaging · DOI: 10.1093/ehjci/jeag206 · PMID: 42554588 https://pubmed.ncbi.nlm.nih.gov/42554588/ Abstract BACKGROUND: Intracardiac echocardiography (ICE) is a valuable, real time imaging tool in structural cardiology and electrophysiology, performed without general anesthesia. However, its safety compared to transesophageal echocardiography (TEE) remains unclear. OBJECTIVE: To conduct a meta analysis evaluating outcomes of catheter ablation for atrial fibrillation (AF) with or without left atrial appendage closure (LAAC) guided by TEE versus ICE. METHODS: Databases were searched for studies comparing ICE with TEE guidance during AF ablation ± LAAC. Outcomes were pooled using the Inverse Variance (IV) random effects model in R, with risk ratios (RRs) for dichotomous variables and mean or standardized mean differences (MD or SMD) for continuous variables, and 95% confidence intervals (CIs) reported. RESULTS: We included 8 studies involving 7,671 patients, of whom 3,903 (50.9%) underwent procedures with ICE guidance. There were no significant differences between groups in cardiac tamponade risk (RR 0.86; 95% CI 0.44 1.66; p = 0.39), stroke or TIA (RR 1.00; 95% CI 0.39 2.55; p = 0.57), vascular complications (RR 0.80; 95% CI 0.51 1.25; p = 0.37). ICE was associated with lower pre procedure LAA thrombus detection (RR 0.32; 95% CI 0.11 0.94; p = 0.04), radiation dose (SMD 0.47; 95% CI 0.90 to 0.04; p = 0.03), and fluoroscopy time ( 4.25 mins; 95% CI 6.01 to 2.49; p < 0.01) but the procedure duration was significantly lower only in combined AF ablation + LAAC (MD 19.56 mins; 95% CI 24.15 to 14.97; p < 0.01). CONCLUSION: This meta analysis indicates that ICE is a safe, effective, and non inferior alternative to TEE for patients undergoing AF ablation ± LAAC. However, TEE remains an effective tool for detecting LAA thrombus. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0457",
