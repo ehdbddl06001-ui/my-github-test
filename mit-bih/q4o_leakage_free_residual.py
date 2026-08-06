@@ -792,6 +792,12 @@ def cross_fitted_offsets(X: np.ndarray, cohort: Cohort, fold_map: Dict[int, int]
     burden = burden or record_burden(cohort, records)
     offsets: Dict[int, np.ndarray] = {}
 
+    # The cohort carries every beat, but only records that clear MIN_S/MIN_N are in the
+    # fold map and therefore scored. Beats outside it are legitimately left as NaN with
+    # an assignment count of 0, so the OOF audit runs over the scored subset.
+    scored = samples_of(cohort, records)
+    unscored = np.setdiff1d(np.arange(cohort.n), scored, assume_unique=False)
+
     for f in range(n_outer):
         te_recs = [r for r in records if fold_map[r] == f]
         tr_recs = [r for r in records if fold_map[r] != f]
@@ -820,14 +826,21 @@ def cross_fitted_offsets(X: np.ndarray, cohort: Cohort, fold_map: Dict[int, int]
         off[te] = full(X[te])
         assign[te] += 1
 
-        if not np.all(assign == 1):
-            bad = int((assign != 1).sum())
+        if not np.all(assign[scored] == 1):
+            n_multi = int((assign[scored] > 1).sum())
+            n_zero = int((assign[scored] == 0).sum())
             raise Q4OError(
-                f"outer fold {f}: {bad} samples have an OOF assignment count != 1 "
-                f"(min {assign.min()}, max {assign.max()}). This is exactly the "
-                f"Q4-N overwrite failure mode."
+                f"outer fold {f}: OOF assignment count != 1 for "
+                f"{n_multi + n_zero} of {len(scored)} scored samples "
+                f"({n_multi} scored more than once, {n_zero} never scored; "
+                f"max {int(assign[scored].max())}). Scoring a sample more than once is "
+                f"the Q4-N cpu_fold overwrite failure mode."
             )
-        assert_finite(off, f"cross-fitted offset for outer fold {f}")
+        if unscored.size and np.any(assign[unscored] != 0):
+            raise Q4OError(
+                f"outer fold {f}: {int((assign[unscored] != 0).sum())} beats outside "
+                f"the scorable cohort received an offset")
+        assert_finite(off[scored], f"cross-fitted offset for outer fold {f}")
         offsets[f] = off
         if log:
             log(f"    fold {f}: offset cross-fitted over {len(tr_recs)} train records "
@@ -1066,6 +1079,24 @@ def shuffle_waveforms_within_record(cohort: Cohort,
 # ─────────────────────────────────────────────────────────────────────────────
 # Training loop shared by arms B/C/D/E
 # ─────────────────────────────────────────────────────────────────────────────
+def _chunked_mean_std(X: np.ndarray, idx: np.ndarray,
+                      chunk: int = 8192) -> Tuple[float, float]:
+    """Scalar mean/std over ``X[idx]`` without materialising the whole slice."""
+    total = 0.0
+    total_sq = 0.0
+    count = 0
+    for b0 in range(0, len(idx), chunk):
+        block = X[idx[b0:b0 + chunk]].astype(np.float64, copy=False)
+        total += float(block.sum())
+        total_sq += float((block ** 2).sum())
+        count += block.size
+    if count == 0:
+        raise Q4OError("cannot normalise on an empty fit split")
+    mean = total / count
+    var = max(total_sq / count - mean * mean, 0.0)
+    return float(mean), float(np.sqrt(var)) + 1e-9
+
+
 def _train_one_fold(net, X: np.ndarray, offset: Optional[np.ndarray],
                     y: np.ndarray, fit_idx: np.ndarray, dev_idx: np.ndarray,
                     test_idx: np.ndarray, seed: int, device: str,
@@ -1082,9 +1113,10 @@ def _train_one_fold(net, X: np.ndarray, offset: Optional[np.ndarray],
     opt = torch.optim.Adam(net.parameters(), DL_LR, weight_decay=DL_WD)
     bce = nn.BCEWithLogitsLoss()
 
-    # Waveform normalisation is fit on the fit split only.
-    wmu = float(X[fit_idx].mean())
-    wsd = float(X[fit_idx].std()) + 1e-9
+    # Waveform normalisation is fit on the fit split only. Computed in chunks: on the
+    # real cohort a plain X[fit_idx].mean() materialises a ~1.4 GB temporary for Arm E's
+    # 8-channel input, and again for the std.
+    wmu, wsd = _chunked_mean_std(X, fit_idx)
 
     def batch_tensors(idx):
         x = torch.tensor((X[idx] - wmu) / wsd, device=device)
@@ -1490,11 +1522,18 @@ def verify_bundle(out_dir: str, arms: Sequence[str] = ARMS) -> None:
         if key not in pred.files:
             raise Q4OError(f"predictions.npz is missing '{key}'")
     n = len(pred["sample_id"])
+    mask = pred["scored_mask"].astype(bool) if "scored_mask" in pred.files else None
     for arm in arms:
         probs = np.load(os.path.join(out_dir, "arms", arm, "probs.npy"))
         if probs.ndim != 2 or probs.shape[1] != n:
             raise Q4OError(f"arms/{arm}/probs.npy has shape {probs.shape}; "
                            f"expected (n_seed, {n})")
+        # Beats in records that fail MIN_S/MIN_N are never scored and stay NaN by
+        # design. Every beat the run *claims* to have scored must be finite.
+        if mask is not None and not np.all(np.isfinite(probs[:, mask])):
+            bad = int((~np.isfinite(probs[:, mask])).sum())
+            raise Q4OError(f"arms/{arm}/probs.npy has {bad} non-finite values among "
+                           f"the scored beats")
 
 
 def append_registry(registry_path: str, record: dict) -> None:
@@ -1514,20 +1553,30 @@ def append_registry(registry_path: str, record: dict) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 def synthetic_cohort(n_record: int = 12, n_beat: int = 140, width: int = 300,
                      n_lead: int = 2, seed: int = 7,
-                     signal: float = 1.0) -> Cohort:
+                     signal: float = 1.0, n_unscorable: int = 0) -> Cohort:
     """Grouped synthetic beats with a record-varying S burden.
 
     Enough structure for leakage/shape/order tests and a CPU smoke run. It is not a
     physiological simulator and no result from it means anything scientifically.
+
+    ``n_unscorable`` appends records that carry too few S beats to clear ``MIN_S``.
+    Real SVDB has 22 such records out of 78, so their beats sit in the cohort while
+    being absent from the fold map — set it to exercise that path.
     """
     rng = np.random.RandomState(seed)
     beats, ys, pres, posts, rids = [], [], [], [], []
     t = np.arange(width)
-    for r in range(n_record):
-        burden = 0.10 + 0.30 * (r / max(1, n_record - 1))
-        y = rng.rand(n_beat) < burden
-        while int(y.sum()) < MIN_S or int((~y).sum()) < MIN_N:
-            y = rng.rand(n_beat) < max(0.25, burden)
+    for r in range(n_record + n_unscorable):
+        scorable = r < n_record
+        if scorable:
+            burden = 0.10 + 0.30 * (r / max(1, n_record - 1))
+            y = rng.rand(n_beat) < burden
+            while int(y.sum()) < MIN_S or int((~y).sum()) < MIN_N:
+                y = rng.rand(n_beat) < max(0.25, burden)
+        else:
+            # too few S beats to be scorable — mirrors SVDB's low-burden records
+            y = np.zeros(n_beat, bool)
+            y[rng.choice(n_beat, max(1, MIN_S // 5), replace=False)] = True
         qrs = np.exp(-0.5 * ((t - R_IDX) / 6.0) ** 2)
         pwave = np.exp(-0.5 * ((t - (R_IDX - 55)) / 9.0) ** 2)
         twave = np.exp(-0.5 * ((t - (R_IDX + 90)) / 18.0) ** 2)

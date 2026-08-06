@@ -445,6 +445,66 @@ The runner therefore also scores a plain cross-fitted `comb` logistic —
 arm: it gets no `arms/` directory, its logit goes into `predictions.npz`, and it
 enters no gate. The primary comparison `C − A` is untouched.
 
+## 2026-08-06 — Morphology port CONFIRMED against Q4-N on real SVDB
+
+The first GPU attempt reached the porting-fidelity check before failing (below), and
+it reported:
+
+```text
+measured LORO k-sweep 0.8361 vs Q4-N 0.8361 (delta -0.0000, within tolerance: True)
+```
+
+The ported morphology feature pipeline reproduces Q4-N's `morph` arm **to four decimal
+places** under Q4-N's own LORO protocol. The freeze is verified, not merely asserted.
+
+Cohort as loaded: 184,397 beats, 78 records, **56 scorable** under `MIN_S = MIN_N = 25`,
+138,898 scored beats. Feature dims `{base: 9, morph: 17, comb: 28}`, as expected.
+
+## 2026-08-06 — Bug in my own OOF audit (first GPU attempt aborted)
+
+The first GPU run aborted in `cross_fitted_offsets` with:
+
+```text
+Q4OError: outer fold 0: 45499 samples have an OOF assignment count != 1
+(min 0, max 1). This is exactly the Q4-N overwrite failure mode.
+```
+
+The message was wrong on both counts. `min 0, max 1` means **nothing was assigned
+twice** — the Q4-N failure mode is `max > 1`. And 45,499 is exactly
+184,397 − 138,898: the beats belonging to the 22 records that fall below
+`MIN_S`/`MIN_N`. Those records are correctly absent from the fold map and are
+legitimately never scored; my audit compared the assignment count over the **whole
+cohort** instead of over the **scored subset**, so it fired on beats that were never
+supposed to be scored at all.
+
+The all-scorable synthetic fixture could not catch this, which is the real lesson: the
+fixture did not have the same shape as the data.
+
+Fixes:
+
+- the OOF audit runs over the scored subset, and separately asserts that no beat
+  outside the scorable cohort received an offset;
+- the error message distinguishes "scored more than once" (the Q4-N mode) from
+  "never scored", instead of blaming both on the overwrite bug;
+- `assert_finite` on the offsets is likewise restricted to scored beats;
+- unscored beats are `NaN` in `probs.npy`, `fold = -1` and `scored_mask = False` in
+  `predictions.npz` — never a fabricated probability. `verify_bundle` now enforces
+  that every beat the run *claims* to have scored is finite;
+- `synthetic_cohort` gained `n_unscorable`, and both the unit tests and the end-to-end
+  smoke run now use a cohort containing unscorable records.
+
+No scientific quantity is affected: the fold map, the arms, the metric, and the gates
+are unchanged. This was an assertion-scope bug, not a modelling one.
+
+## 2026-08-06 — Fit-split normalisation computed in chunks
+
+Found while auditing what lay downstream of the abort. `float(X[fit_idx].mean())`
+materialises a ~1.4 GB temporary for Arm E's 8-channel 3-beat input, and again for the
+std, on top of ~2.7 GB of persistent waveform arrays. Replaced with a chunked
+accumulator that also accumulates in float64, so it matches the exact float64 mean/std
+and is *more* accurate than the float32 reduction it replaces. Verified in tests to be
+exact and independent of chunk size.
+
 ## 2026-08-06 — `requirements.txt` unchanged
 
 The runner needs `numpy`, `scipy`, `scikit-learn`, `pandas`, `torch`, and

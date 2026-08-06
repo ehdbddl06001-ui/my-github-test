@@ -150,6 +150,57 @@ def test_true_oof_assignment() -> None:
        "cross-fitted offsets differ from an in-sample refit (the cross-fit is real)")
 
 
+def test_unscorable_records_present() -> None:
+    section("2b. cohorts that contain unscorable records (SVDB has 22 of 78)")
+    # Regression: the OOF audit and the finiteness checks originally ran over the whole
+    # cohort, so on real SVDB they fired on the 45,499 beats belonging to records that
+    # fail MIN_S/MIN_N — beats that are legitimately never scored. The all-scorable
+    # fixture could not catch it.
+    cohort = Q.synthetic_cohort(n_record=10, n_beat=120, seed=3, n_unscorable=4)
+    rec_ok = Q.scorable_records(cohort)
+    ok(len(rec_ok) == 10 and len(cohort.records) == 14,
+       f"fixture has {len(cohort.records)} records, {len(rec_ok)} scorable "
+       f"— {len(cohort.records) - len(rec_ok)} fall below MIN_S/MIN_N")
+
+    burden = Q.record_burden(cohort, rec_ok)
+    fold_map = Q.make_fold_map(rec_ok, burden)
+    scored = Q.samples_of(cohort, rec_ok)
+    unscored = np.setdiff1d(np.arange(cohort.n), scored)
+    ok(len(unscored) > 0 and len(scored) + len(unscored) == cohort.n,
+       f"{len(scored)} scored beats and {len(unscored)} unscored beats "
+       f"partition the cohort")
+    ok(set(fold_map) == set(rec_ok),
+       "the fold map covers the scorable records only — unscorable ones are absent")
+
+    X = Q.build_base_features(cohort)
+
+    offsets = Q.cross_fitted_offsets(X, cohort, fold_map, burden=burden)
+    ok(all(np.all(np.isfinite(offsets[f][scored])) for f in offsets),
+       "cross_fitted_offsets completes and is finite on every scored beat")
+    ok(all(np.all(np.isnan(offsets[f][unscored])) for f in offsets),
+       "unscored beats stay NaN — they are not silently given an offset")
+
+    a = Q.run_logistic_arm(X, cohort, fold_map)
+    ok(np.all(np.isfinite(a[scored])) and np.all(np.isnan(a[unscored])),
+       "Arm A scores every scored beat and leaves the rest NaN")
+
+    pr = Q.per_record_metrics(a, cohort, rec_ok)
+    ok(len(pr["ksw"]) == len(rec_ok),
+       f"metrics are computed over the {len(rec_ok)} scorable records only")
+
+    # The audit must still reject a genuine double-assignment.
+    raised = ""
+    try:
+        Q.cross_fitted_offsets(X, cohort, {**fold_map, rec_ok[0]: 0, rec_ok[1]: 0,
+                                           rec_ok[2]: 0, rec_ok[3]: 0, rec_ok[4]: 0,
+                                           rec_ok[5]: 0, rec_ok[6]: 0, rec_ok[7]: 0,
+                                           rec_ok[8]: 0, rec_ok[9]: 0},
+                               burden=burden)
+    except Q.Q4OError as exc:
+        raised = str(exc)
+    ok(raised != "", f"a degenerate fold map is still rejected ({raised[:60]}…)")
+
+
 def test_detects_q4n_overwrite() -> None:
     section("3. regression — the Q4-N cpu_fold overwrite is detected")
     cohort = _fixture()
@@ -485,6 +536,20 @@ def test_residual_learning_path() -> None:
        "the Q4-N deadlocked initialisation stays pinned at the offset forever "
        "(alpha exactly 0, scores identical to the offset)")
 
+    # The fit-split normalisation is computed in chunks so Arm E's 8-channel input does
+    # not materialise a ~1.4 GB temporary on the real cohort. It must be exact.
+    rng = np.random.RandomState(0)
+    Xn = (rng.randn(3000, 8, 30) * 3 + 1.5).astype("float32")
+    idx = rng.choice(3000, 2111, replace=False)
+    m, s = Q._chunked_mean_std(Xn, idx, chunk=311)
+    exact_m = float(Xn[idx].astype(np.float64).mean())
+    exact_s = float(Xn[idx].astype(np.float64).std()) + 1e-9
+    ok(abs(m - exact_m) < 1e-9 and abs(s - exact_s) < 1e-9,
+       "chunked fit-split normalisation matches the exact float64 mean/std")
+    m2, s2 = Q._chunked_mean_std(Xn, idx, chunk=100000)
+    ok(abs(m2 - m) < 1e-12 and abs(s2 - s) < 1e-12,
+       "and it does not depend on the chunk size")
+
     ok(Q.DL_MIN_EPOCH >= 1 and Q.DL_PATIENCE >= 1,
        f"early stopping has a warmup of {Q.DL_MIN_EPOCH} epochs before patience "
        f"{Q.DL_PATIENCE} can fire, so alpha gets room to leave zero")
@@ -689,7 +754,10 @@ def test_cpu_smoke_run() -> None:
 
     tmp = tempfile.mkdtemp(prefix="q4o_smoke_")
     try:
-        cohort = Q.synthetic_cohort(n_record=8, n_beat=110, seed=17)
+        # Includes unscorable records, so the end-to-end path is exercised on the
+        # same cohort shape as real SVDB (56 scorable of 78).
+        cohort = Q.synthetic_cohort(n_record=8, n_beat=110, seed=17, n_unscorable=3)
+        rec_ok = Q.scorable_records(cohort)
         prov = {"abs_path": "<synthetic>", "file_name": "<synthetic>",
                 "sha256": "<synthetic>", "synthetic": True}
         log = Q.RunLog(echo=False)
@@ -709,12 +777,19 @@ def test_cpu_smoke_run() -> None:
            "the primary comparison and the negative control are both reported")
 
         n = cohort.n
+        pred = np.load(os.path.join(tmp, "predictions.npz"))
+        mask = pred["scored_mask"].astype(bool)
+        ok(int(mask.sum()) < n,
+           f"the run scored {int(mask.sum())} of {n} beats — "
+           f"{len(cohort.records) - len(rec_ok)} records were below MIN_S/MIN_N")
         for arm in Q.ARMS:
             p = np.load(os.path.join(tmp, "arms", arm, "probs.npy"))
-            ok(p.shape == (2, n) and np.all(np.isfinite(p)),
-               f"{arm}: probs.npy is {p.shape} and finite")
-
-        pred = np.load(os.path.join(tmp, "predictions.npz"))
+            ok(p.shape == (2, n) and np.all(np.isfinite(p[:, mask])),
+               f"{arm}: probs.npy is {p.shape} and finite on every scored beat")
+            ok(np.all(np.isnan(p[:, ~mask])),
+               f"{arm}: unscored beats are NaN, not a fabricated probability")
+        ok(np.all(pred["fold"][~mask] == -1),
+           "unscored beats carry fold = -1 so they cannot be mistaken for held-out data")
         ok(np.array_equal(pred["sample_id"], cohort.sample_id),
            "predictions.npz sample_id matches the cohort order exactly")
         ok(np.array_equal(pred["record_id"], cohort.rid),
@@ -722,7 +797,8 @@ def test_cpu_smoke_run() -> None:
 
         # Arm A is deterministic: its per-seed rows must be identical.
         pa = np.load(os.path.join(tmp, "arms", Q.ARM_A, "probs.npy"))
-        ok(np.allclose(pa[0], pa[1]), "Arm A is deterministic across seeds")
+        ok(np.allclose(pa[0][mask], pa[1][mask]),
+           "Arm A is deterministic across seeds")
 
         man = json.load(open(os.path.join(tmp, "manifest.json")))
         for key in ("data", "git_commit_sha", "packages", "gpu", "fold_records",
@@ -756,6 +832,7 @@ def main() -> int:
     print("=" * 78)
     for fn in (test_fold_map_and_record_leakage,
                test_true_oof_assignment,
+               test_unscorable_records_present,
                test_detects_q4n_overwrite,
                test_scaler_and_label_scope,
                test_arm_inputs_and_shapes,
