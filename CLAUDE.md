@@ -88,3 +88,13 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
 - `/ai-debug` : Colab/ML 에러를 원인·최소수정·재발방지로 설명하고, 반복 에러는 '디버그
   로그' 카드(`content/ailab/`)에 쌓아 개인 트러블슈팅 FAQ로 축적
 - `/index-db` : 색인 재빌드/검증
+
+
+## Codex ↔ Claude Code 협업
+- 공통 규칙은 `AGENTS.md`와 `docs/AI_COLLABORATION.md`를 먼저 읽는다.
+- 구현은 `experiments/specs/`의 명세가 `status: approved_for_implementation`일 때 시작한다.
+- 명세의 `implementation_owner`가 현재 작업 주체와 일치해야 한다.
+- Claude Code 브랜치는 `claude/<task>`, Codex 브랜치는 `codex/<task>`를 사용한다.
+- 두 에이전트가 같은 브랜치·같은 작업 파일을 동시에 수정하지 않는다.
+- Codex가 작성한 명세를 구현할 때 과학적 질문·split·지표·중단 조건을 임의로 바꾸지 말고, 필요한 변경은 Decision log에 남긴다.
+- Drive의 기존 ECG 자산은 정리 목적으로 이동하지 않는다. 먼저 `research/ASSETS.md`에 등록하고, 별도 migration spec 승인 후 이동한다.
