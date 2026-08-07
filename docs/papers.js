@@ -2,6 +2,76 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0157",
+  "topic": "Pediatrics",
+  "subtopic": "",
+  "title": "Accuracy of tympanometry cutoff points in children from Central-Western Brazil",
+  "authors": [
+   "Câmara Cláudia Cruvinel",
+   "Avelino Melissa Ameloti Gomes",
+   "Costa Paulo Sergio Sucasas da",
+   "Coelho Alexandre Siqueira Guedes",
+   "Hadler Maria Claret Costa Monteiro"
+  ],
+  "journal": "CoDAS",
+  "doi": "10.1590/2317-1782/e20250100en",
+  "pmid": "42561344",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42561344/",
+  "pubdate": "2026",
+  "date": "2026-08-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**PURPOSE:** This study evaluated tympanometric cutoff points (tympanometric peak pressure and static compliance) for transient evoked otoacoustic emissions (TEOAEs) and determined their diagnostic accuracy.\n\n**METHODS:** This analytical study, based on a randomized clinical trial, included 84 children (6-42 months; median 24 months) from public childcare centers in Brazil. Associations between cutoff points and TEOAEs were verified by Fisher's exact test and Chi-square. Kappa assessed agreement between ears, and the correlation between tympanometric peak pressure and static compliance was analyzed by Spearman. Diagnostic accuracy was determined using ROC (Receiver Operating Characteristic) curves and confirmed with EpiDat 3.1.\n\n**RESULTS:** In the 84 children, 66 right ears and 73 left ears were examined; however, 42 ears were randomly selected from each side for the final analysis. A significant correlation was found between peak pressure and static compliance. ROC analysis identified -180 daPa as the most accurate cutoff (AUC = 0.781; 95% CI: 0.656-0.905; p < 0.001). EpiDat indicated a specificity of 93.9%, a sensitivity of 55.6%, and an overall accuracy of 85.7%. Static compliance <0.2 mL showed comparable performance (specificity = 98.5%, sensitivity = 50.0%, accuracy = 88.1%).\n\n**CONCLUSION:** The cutoff point of -180 daPa combined with static compliance <0.2 mL improved screening accuracy and reduced unnecessary referrals. It provided the best balance between specificity, sensitivity, and accuracy, aligning more closely with TEOAEs results and supporting updating this tympanometric criterion in infant hearing screening.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0156",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "The Gulf Chronic Total Occlusion Registry: Short- and Long-Term Outcomes Across Management Strategies",
+  "authors": [
+   "Daoulah Amin",
+   "Kahin Mokhtar Abdirahman",
+   "Panduranga Prashanth",
+   "Almahmeed Wael",
+   "Abdulhabeeb Ibrahim A M",
+   "Alkindi Fahad",
+   "Lotfi Amir",
+   "Seraj Shaber",
+   "et al."
+  ],
+  "journal": "JACC. Advances",
+  "doi": "10.1016/j.jacadv.2026.103015",
+  "pmid": "42561488",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42561488/",
+  "pubdate": "2026-08-06",
+  "date": "2026-08-07",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Chronic total occlusion (CTO) is associated with increased ischemic burden, heart failure, and mortality. Comparative clinical outcomes associated with medical therapy, percutaneous coronary intervention (PCI), and coronary artery bypass grafting (CABG) remain uncertain.\n\n**OBJECTIVES:** To compare clinical outcomes associated with medical therapy, PCI, and CABG in patients with CTO.\n\n**METHODS:** We analyzed 741 patients with angiographically confirmed CTO enrolled across 7 tertiary centers in 4 Gulf countries between 2021 and 2023. Patients were managed with an initial strategy of medical therapy (n = 151), PCI (n = 441), or CABG (n = 149). The primary in-hospital endpoint was major adverse cardiovascular events. The long-term endpoint was major adverse cardiac and cerebrovascular events-free survival.\n\n**RESULTS:** Treatment allocation differed substantially by baseline clinical and angiographic risk. Medically managed patients had worse renal function, more severely reduced left ventricular ejection fraction, and more cardiogenic shock despite simpler CTO anatomy CABG patients had more extensive multivessel disease, whereas PCI patients had greater CTO lesion complexity. After adjustment, neither PCI nor CABG differed significantly from medical therapy for in-hospital major adverse cardiovascular events. At a median follow-up of 22 months, adjusted 36-month restricted mean survival time analyses showed no statistically significant difference in major adverse cardiac and cerebrovascular events-free survival between PCI, CABG, and medical therapy. Adjusted Canadian Cardiovascular Society class I at last follow-up was reached in 86.2% of medical therapy, 91.7% of PCI, and 98.0% of CABG patients; the adjusted difference vs medical therapy was significant for CABG (P < 0.001) but not for PCI P = 0.17).\n\n**CONCLUSIONS:** After adjustment, no treatment strategy demonstrated superiority for hard cardiovascular outcomes; revascularization, particularly CABG, was associated with a lower angina burden at follow-up.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0155",
   "topic": "Laboratory Medicine",
   "subtopic": "",
