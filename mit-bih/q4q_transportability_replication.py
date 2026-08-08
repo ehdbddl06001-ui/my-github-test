@@ -104,6 +104,13 @@ DS2_RECORDS: Tuple[int, ...] = (
     100, 103, 105, 111, 113, 117, 121, 123, 200, 202, 210,
     212, 213, 214, 219, 221, 222, 228, 231, 232, 233, 234)
 MIT_ALL_RECORDS = tuple(sorted(DS1_RECORDS + DS2_RECORDS))
+# The four paced records the de Chazal 44-record set excludes. ecg_multi.npz
+# keeps all 48 MIT records (measured 2026-08-08: 48 records / 109,446 beats vs
+# mamba's 44 / 99,871, with the S total identical at 2,781), so the
+# cross-check must corroborate through per-record profiles, not id equality.
+PACED_RECORDS: Tuple[int, ...] = (102, 104, 107, 217)
+MIT_48_RECORDS = tuple(sorted(MIT_ALL_RECORDS + PACED_RECORDS))
+CROSS_CHECK_BEAT_TOL = 0.02      # per-record beat-count tolerance (edge beats)
 
 # Confirmed facts about the frozen MIT asset (spec §2). A mismatch is a STOP
 # condition, not something to paper over.
@@ -248,6 +255,9 @@ def load_mit_cohort(npz_path: str,
         "class_counts": {str(c): int((y_raw == c).sum()) for c in range(5)},
         "ds1": list(DS1_RECORDS), "ds2": list(DS2_RECORDS),
         "records": rec_set,
+        "per_record": {str(r): {"n": int(len(cohort.idx_of[int(r)])),
+                                "s": int(cohort.y[cohort.idx_of[int(r)]].sum())}
+                       for r in rec_set},
     }
     log(f"MIT cohort: {n} beats, {len(rec_set)} records, "
         f"S={audit['n_s']} ({100 * cohort.y.mean():.2f}%)")
@@ -272,11 +282,67 @@ def mit_split(cohort: Cohort) -> Dict[str, List[int]]:
     return {"ds1": ds1, "ds2": ds2, "fit": sorted(fit), "dev": sorted(dev)}
 
 
+def _match_profiles(mamba_prof: Dict[int, Tuple[int, int]],
+                    multi_prof: Dict[int, Tuple[int, int]],
+                    beat_tol: float = CROSS_CHECK_BEAT_TOL
+                    ) -> Tuple[Dict[int, int], List[int]]:
+    """Deterministically match each mamba record to one multi record.
+
+    S counts must match EXACTLY (S beats are the scientific quantity); beat
+    counts may differ per record by <= ``beat_tol`` (edge-beat handling).
+    Within an S group, records are paired in sorted beat-count order.
+    Returns (mapping mamba_rid -> multi_rid, leftover multi rids).
+    Raises Q4QError when no valid matching exists.
+    """
+    by_s_multi: Dict[int, List[Tuple[int, int]]] = {}
+    for r, (n, s) in multi_prof.items():
+        by_s_multi.setdefault(s, []).append((n, r))
+    for s in by_s_multi:
+        by_s_multi[s].sort()
+    by_s_mamba: Dict[int, List[Tuple[int, int]]] = {}
+    for r, (n, s) in mamba_prof.items():
+        by_s_mamba.setdefault(s, []).append((n, r))
+    for s in by_s_mamba:
+        by_s_mamba[s].sort()
+
+    mapping: Dict[int, int] = {}
+    used: set = set()
+    for s, want in sorted(by_s_mamba.items()):
+        have = [t for t in by_s_multi.get(s, []) if t[1] not in used]
+        if len(have) < len(want):
+            raise Q4QError(
+                f"profile match failed: mamba has {len(want)} record(s) with "
+                f"S={s} but ecg_multi's MIT subset offers only {len(have)} — "
+                "unexplained mismatch, STOP (spec §10)")
+        for i, (n_m, r_m) in enumerate(want):
+            n_u, r_u = have[i]
+            if abs(n_u - n_m) > beat_tol * max(1, n_m):
+                raise Q4QError(
+                    f"profile match failed: mamba record {r_m} (n={n_m}, S={s})"
+                    f" vs closest multi candidate (n={n_u}) differ by more than"
+                    f" {beat_tol:.0%} — unexplained mismatch, STOP (spec §10)")
+            mapping[r_m] = r_u
+            used.add(r_u)
+    leftover = [r for r in multi_prof if r not in used]
+    return mapping, leftover
+
+
 def cross_check_mit_vs_multi(mit_audit: Dict[str, object],
                              multi_npz_path: str,
                              log: Optional[RunLog] = None) -> Dict[str, object]:
-    """Compare ecg_multi.npz's MIT subset against mamba_data.npz. Any
-    unexplained core count/split mismatch is a STOP condition (spec §10)."""
+    """Compare ecg_multi.npz's MIT subset against mamba_data.npz.
+
+    Corroboration is per-record: each of mamba's 44 records must find a multi
+    record with the EXACT same S count and a beat count within
+    ``CROSS_CHECK_BEAT_TOL``. Two legitimate, measured facts are handled
+    explicitly (2026-08-08 Colab PREP_DATA):
+      * ecg_multi keeps all 48 MIT records — the 4 paced records
+        (102/104/107/217) that the de Chazal 44-record set excludes must be
+        the ONLY leftovers and must carry zero S beats;
+      * ecg_multi's pid coding may be ordinal rather than record numbers, so
+        identity is established through profiles, never guessed from ids.
+    Anything outside these two facts is still a STOP condition (spec §10).
+    """
     log = log or RunLog()
     if not os.path.exists(multi_npz_path):
         raise Q4QError(f"ecg_multi.npz not found: {multi_npz_path}")
@@ -290,38 +356,72 @@ def cross_check_mit_vs_multi(mit_audit: Dict[str, object],
     if not mask.any():
         raise Q4QError(f"no MIT subset in ecg_multi.npz db values "
                        f"{sorted(set(db.tolist()))[:8]}")
-    pid = np.asarray(data["pid"]).astype(int)[mask]
-    multi_recs = sorted(set(pid.tolist()))
     y_key = next((k for k in ("y5", "y", "y3") if k in data.files), None)
-    n_s_multi = None
-    if y_key is not None:
-        yv = np.asarray(data[y_key]).astype(int)[mask]
-        n_s_multi = int((yv == MIT_S_INDEX).sum())
+    if y_key is None:
+        raise Q4QError("ecg_multi.npz has no label key (y5/y/y3) — cannot "
+                       "corroborate S counts, STOP")
+    pid = np.asarray(data["pid"]).astype(int)[mask]
+    yv = np.asarray(data[y_key]).astype(int)[mask]
+    multi_recs = sorted(set(pid.tolist()))
+    multi_prof = {int(r): (int((pid == r).sum()),
+                           int((yv[pid == r] == MIT_S_INDEX).sum()))
+                  for r in multi_recs}
+    mamba_prof = {int(r): (int(v["n"]), int(v["s"]))
+                  for r, v in mit_audit["per_record"].items()}
 
-    checks = {
-        "record_set_equal": multi_recs == list(mit_audit["records"]),
-        "n_record": {"mamba": mit_audit["n_record"], "multi": len(multi_recs)},
-        "n_beat": {"mamba": mit_audit["n_beat"], "multi": int(mask.sum())},
-        "n_s": {"mamba": mit_audit["n_s"], "multi": n_s_multi,
+    checks: Dict[str, object] = {
+        "n_record": {"mamba": len(mamba_prof), "multi": len(multi_recs)},
+        "n_beat": {"mamba": int(mit_audit["n_beat"]), "multi": int(mask.sum())},
+        "n_s": {"mamba": int(mit_audit["n_s"]),
+                "multi": int((yv == MIT_S_INDEX).sum()),
                 "multi_label_key": y_key},
-        "ds1_in_multi": all(r in multi_recs for r in DS1_RECORDS),
-        "ds2_in_multi": all(r in multi_recs for r in DS2_RECORDS),
+        "pid_coding": ("record_numbers"
+                       if set(multi_recs) <= set(MIT_48_RECORDS)
+                       else "ordinal_or_other"),
     }
-    core_ok = bool(checks["record_set_equal"] and checks["ds1_in_multi"]
-                   and checks["ds2_in_multi"])
-    # Beat counts may legitimately differ by a bounded margin (edge-beat
-    # handling differs between preps); the record IDENTITY may not.
-    beat_ratio = checks["n_beat"]["multi"] / max(1, checks["n_beat"]["mamba"])
-    checks["beat_count_ratio"] = float(beat_ratio)
-    checks["beat_count_comparable"] = bool(0.95 <= beat_ratio <= 1.05)
-    checks["pass"] = bool(core_ok and checks["beat_count_comparable"])
-    if not checks["pass"]:
+    if len(multi_recs) not in (44, 48):
         raise Q4QError(
-            "ecg_multi.npz MIT subset does not corroborate mamba_data.npz: "
-            f"{json.dumps({k: v for k, v in checks.items() if k != 'pass'}, default=str)} "
-            "— STOP condition (spec §10); explain the discrepancy before any full run.")
-    log(f"cross-check pass: {len(multi_recs)} records, "
-        f"beat ratio {beat_ratio:.4f}, label key {y_key}")
+            "ecg_multi MIT subset has neither 44 (de Chazal) nor 48 (all "
+            f"records incl. paced) records but {len(multi_recs)} — "
+            f"unexplained, STOP (spec §10). checks={json.dumps(checks)}")
+    if checks["n_s"]["mamba"] != checks["n_s"]["multi"]:
+        raise Q4QError(
+            "S totals differ between mamba_data and ecg_multi's MIT subset "
+            f"({checks['n_s']}) — the S beats ARE the scientific quantity; "
+            "unexplained, STOP (spec §10)")
+
+    mapping, leftover = _match_profiles(mamba_prof, multi_prof)
+    checks["matched_records"] = len(mapping)
+    checks["leftover_records"] = len(leftover)
+    if leftover:
+        if len(leftover) != len(PACED_RECORDS):
+            raise Q4QError(
+                f"{len(leftover)} unmatched multi records (expected exactly "
+                f"{len(PACED_RECORDS)} paced records or none) — unexplained, "
+                "STOP (spec §10)")
+        bad_s = [r for r in leftover if multi_prof[r][1] != 0]
+        if bad_s:
+            raise Q4QError(
+                f"leftover multi records {bad_s} carry S beats — they cannot "
+                "be the paced records (102/104/107/217); unexplained, STOP "
+                "(spec §10)")
+        if checks["pid_coding"] == "record_numbers" and \
+                sorted(leftover) != sorted(PACED_RECORDS):
+            raise Q4QError(
+                f"leftover record ids {sorted(leftover)} are not the paced "
+                f"set {sorted(PACED_RECORDS)} — unexplained, STOP (spec §10)")
+        checks["explanation"] = (
+            "ecg_multi keeps all 48 MIT records; the 4 unmatched, zero-S "
+            "records are the paced records the de Chazal 44-record set "
+            "excludes. Every mamba record found a multi record with the "
+            "exact same S count and matching beat count.")
+    else:
+        checks["explanation"] = ("ecg_multi's MIT subset matches mamba's 44 "
+                                 "records one-to-one by per-record profile.")
+    checks["pass"] = True
+    log(f"cross-check pass: {checks['matched_records']} matched, "
+        f"{checks['leftover_records']} paced leftovers, pid coding "
+        f"{checks['pid_coding']}, label key {y_key}")
     return checks
 
 
