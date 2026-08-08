@@ -675,10 +675,14 @@ def test_notebook_static():
           "identifies the experiment")
     check("OUT_DERIVED" in all_src and "v1" in all_src,
           "derived outputs go to a NEW versioned path")
-    check("importlib.reload" in all_src and "NEED_Q4Q" in all_src
+    check("sys.modules.pop" in all_src and "NEED_Q4Q" in all_src
           and "Restart runtime" in all_src,
-          "cell 2 reloads modules after git pull and asserts freshness "
-          "(stale-import guard)")
+          "cell 2 force-reimports modules after git pull and asserts "
+          "freshness (stale-import guard)")
+    check('REPO = "/content/my-github-test"' in all_src
+          and "rm" in all_src,
+          "cell 2 anchors the clone at an absolute path (no nested clones, "
+          "no cwd dependence)")
 
 
 def test_regression_suites_importable():
