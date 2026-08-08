@@ -2,7 +2,11 @@
 """EXP-2026-002 / Q4-P — why did Q4-O's Arm C select best_epoch = 0?
 
 Spec: ``experiments/specs/EXP-2026-002-q4p-best-epoch-zero-diagnostic.md``
-Status: EXPLORATORY DIAGNOSTIC / RESULT NOT RUN — nothing in this file is a result.
+Status: MEASURED — the full GPU run was executed 2026-08-08 on Colab T4 at the
+pre-registered design commit a4e24f4d662b3a93727f6a3413e594b51cc6205e. The measured
+bundle lives in Drive ``runs/20260808T1310_EXP-2026-002_q4p_best_epoch_zero_diagnostic``
+(verdict: B3_lr_or_alpha_overshoot, fired alone). Nothing in this *file* is a result —
+results live in that bundle and in the spec's result-acceptance section (§14).
 
 The one fixed question
 ----------------------
@@ -70,10 +74,13 @@ from q4o_leakage_free_residual import (  # noqa: E402
 EXPERIMENT_ID = "EXP-2026-002"
 ARM_ID = "Q4-P"
 RUN_SLUG = "q4p_best_epoch_zero_diagnostic"
-STATUS = "EXPLORATORY DIAGNOSTIC / RESULT NOT RUN"
+# STATUS labels smoke/self-check output only (a full measured run always writes
+# "MEASURED" instead — see build of `result` below). The measured full run is
+# 20260808T1310_EXP-2026-002_q4p_best_epoch_zero_diagnostic (2026-08-08, verdict B3).
+STATUS = "EXPLORATORY DIAGNOSTIC / SMOKE OR SELF-CHECK ONLY — NOT THE MEASURED RESULT"
 
-MODULE_VERSION = 1
-MODULE_BUILD = "2026-08-08 q4p.1 — design; no full run has been executed"
+MODULE_VERSION = 2
+MODULE_BUILD = "2026-08-08 q4p.2 — lifecycle prose updated after the measured 20260808T1310 run; computation unchanged"
 
 N_EPOCHS = 24                   # every schedule runs ALL 24 epochs; patience never
                                 # interrupts the optimizer (trajectories must be

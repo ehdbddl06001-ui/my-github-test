@@ -5,15 +5,21 @@ title: Cause separation for Q4-O's universal best_epoch=0 checkpoint selection
 status: approved_for_implementation
 implementation_owner: claude-code
 kind: exploratory_diagnostic
-result_status: DESIGN READY / FULL RESULT NOT RUN
+result_status: MEASURED
+run_id: 20260808T1310_EXP-2026-002_q4p_best_epoch_zero_diagnostic
+measured: 2026-08-08
+verdict: B3_lr_or_alpha_overshoot
 depends_on: EXP-2026-001
 created: 2026-08-08
 ---
 
 # EXP-2026-002 / Q4-P — `best_epoch = 0` 원인 분리 진단
 
-**상태: EXPLORATORY DIAGNOSTIC / RESULT NOT RUN.** 이 문서와 구현은 설계다.
-어떤 수치도 결과가 아니며, full GPU run은 아직 실행되지 않았다.
+**상태: MEASURED.** 사용자가 2026-08-08 Colab T4에서 full GPU run을 실행했고, 그
+결과를 §14(결과 인수)에 기록했다. §1–§13은 **사전 등록 본문 그대로**이며 가설·
+판정 기준·경계를 소급 수정하지 않았다 — 사전 등록과 사후 기록의 구분: §1–§13 및
+Decision log의 "설계 등록" 항목이 사전 등록이고, §14와 Decision log의 "결과 인수"
+항목만 측정 후 기록이다.
 
 ## 1. 배경 — Q4-O가 판정할 수 없었던 것
 
@@ -52,7 +58,7 @@ architecture나 ECG 입력은 업그레이드하지 않는다. Transformer, 더 
 | 모델 | 동일 CNN(`build_residual_net` import), BCE, batch 1024, weight decay 1e-4 |
 | 초기화/미니배치 | schedule 간 동일 (seed, fold) 초기 파라미터와 minibatch 순서 (paired) |
 | 평가 경계 | outer-test label/metric은 schedule·checkpoint 선택에 사용 금지 |
-| 실행 범위 | **이번 작업에서 full GPU run은 실행하지 않는다** — CPU unit + synthetic smoke만 |
+| 실행 범위 | **이번 작업에서 full GPU run은 실행하지 않는다** — CPU unit + synthetic smoke만 *(사전 등록 당시의 구현 작업 범위 문구; 이후 2026-08-08 사용자가 Colab에서 full run 실행 완료 — §14)* |
 
 구현은 `mit-bih/q4p_best_epoch_zero_diagnostic.py`가 Q4-O 모듈에서 데이터 로딩,
 feature, fold map, model builder, leakage assertion, metric, bootstrap을
@@ -145,7 +151,7 @@ patient-level paired record bootstrap + hierarchical bootstrap + five-seed 집�
 6. **B6 실제 waveform residual 후보**: C가 D보다 일관되게 우수 — C−D CI 하한
    > 0, seed 방향 안정(≥4/5), lower-tail(p10) 미악화가 동시 성립.
 
-## 10. 필수 산출물 계약 (향후 full run이 생성)
+## 10. 필수 산출물 계약 (full run이 생성; 2026-08-08 run에서 이행 확인 — §14)
 
 `config.json` · `manifest.json` · `result.json` · `fold_map.json` ·
 `predictions.npz`(arm×schedule×selector 확정 test logits + Arm A) ·
@@ -200,11 +206,85 @@ history가 없는 과거 run(Q4-O `20260806T0923` 포함)에 `training_history.j
   `mit-bih/test_q4p_best_epoch_zero_diagnostic.py`,
   `notebooks/quest48_q4p_best_epoch_zero_diagnostic.ipynb`.
 
+## 14. 결과 인수 (2026-08-08 — 사후 기록; 사전 등록 아님)
+
+이 섹션만 측정 후에 작성된 기록이다. §1–§13의 가설·판정 기준은 사전 등록
+그대로다.
+
+### run 식별 (Drive bundle의 manifest/result에서 그대로 인수)
+
+- Drive run folder: `runs/20260808T1310_EXP-2026-002_q4p_best_epoch_zero_diagnostic`
+  (<https://drive.google.com/drive/folders/1qS8JxwlARByoZrJLMb6wxSIktQypiRTF>)
+- 실행 코드 git SHA: `a4e24f4d662b3a93727f6a3413e594b51cc6205e` — **사전 등록 설계
+  커밋과 동일**이므로 결과의 코드 귀속이 보존된다.
+- data: `svdb_data5.npz` SHA256
+  `892f6ae9635db9bf715272c323a3c0e62e71693608bf66ca4dc9b66b69915a85`
+  (452,578,759 bytes), scorable 56 records
+- 규모: 3 schedules × {C, D} × 5 seeds × 5 folds, 24 epochs + epoch −1 후보,
+  Arm A는 paired 참조
+- 환경: Colab Tesla T4 (CUDA 12.8, torch 2.11.0+cu128, Python 3.12.13),
+  wall time 3963.8 s ≈ 66.1분
+- `result.json`: `status: MEASURED`, `smoke: false`, timestamp 2026-08-08T14:16:35Z.
+  §10의 산출물 계약 파일(전체 trajectory·checkpoint 표·그림 9종 포함)이 모두 존재.
+
+### 사전 등록 decision tree 판정 (`result.json` 그대로)
+
+- **발화: B3 (LR/alpha overshoot) 단독.** B1·B2·B4·B5는 미발화.
+- B3 세부: `S2_alpha_low`에서 `moved_later = true`(SEL1 mean best epoch 1.88 vs
+  S0 1.84), dev gain `+0.002681`, test C−D `+0.004823`이 S0의 `+0.001389`보다 개선.
+  S1은 `moved_later = false`로 미발화.
+- **B6 서술 주의**: 공식 B6 구현은 **S0의 C−D**를 검사한다(mean `+0.001389`,
+  CI `[−0.006088, +0.009303]` → `ci_low_gt_0 = false`, `seed_direction_stable =
+  false`, `lower_tail_improves = false`, 미발화). 따라서 "S2 CI가 0을 포함해서
+  B6 실패"가 아니라, **B3만 발화했고 B6는 공식 기준상 발화하지 않았다**가 정확한
+  서술이다.
+
+### 핵심 수치 (primary selector `SEL1_record_bce`; record paired bootstrap, n=56, n_boot=2000)
+
+| contrast | mean | 95% CI | by-seed |
+|---|---|---|---|
+| S2 C−D | `+0.004823` | `[−0.001940, +0.012379]` | 5/5 양수 |
+| S0 C−D | `+0.001389` | `[−0.006088, +0.009303]` | 2/5 양수 |
+| S2 C−A | `+0.002255` | `[−0.004688, +0.010040]` | 4/5 양수 |
+| S2 D−A | `−0.002568` | `[−0.004850, −0.000739]` | 4/5 음수, 1개 ≈ +0.0001 |
+
+- `P(best epoch = −1)`: BCE 계열 selector 기준 schedule별 약 60–72% — 과반
+  trajectory에서 학습 전 체크포인트가 dev 최적이었다.
+- 첫 epoch이 학습 전보다 dev를 개선한 비율 20%; train loss 감소는 100%(25/25).
+
+### 해석 경계 (사후 해석; 결과 승격 아님)
+
+- 학습은 실제로 수행되었으나(train loss 100% 감소) 초기 update는 dev 일반화에
+  대체로 해로웠다. alpha LR overshoot가 Q4-O의 epoch 0 집중에 기여했다.
+- **S2 C−D CI가 0을 포함하므로 waveform residual의 확증이 아니다.** S2의 5/5
+  seed 양수 방향은 차기 확증 실험의 근거이지 결과 승격이 아니다.
+- B3의 `moved_later`는 mean selected epoch의 아주 작은 이동(S2 1.88 vs S0 1.84)
+  에도 참이 되며 최소 효과크기나 interaction CI가 없다 — **B3는 기전 진단의
+  탐색적 증거**로 표현한다.
+- D−A는 전 schedule에서 CI 상한까지 음수: 파형–라벨 대응이 없으면 residual은
+  일관되게 소폭 유해(shuffled control이 의도대로 작동했다는 방증).
+
 ## Decision log
 
 ### 2026-08-08 — 설계 등록 (결과 없음)
 
 이 spec과 구현·테스트·notebook을 사전 등록한다. CPU unit + synthetic smoke
-테스트만 실행되었고(파이프라인 배관 검증), **full GPU run은 실행되지 않았다**.
+테스트만 실행되었고(파이프라인 배관 검증), **full GPU run은 실행되지 않았다**
+*(설계 등록 시점 기준의 기록 — 이후 실행됨, 아래 결과 인수 항목 참조)*.
 smoke의 어떤 수치도 과학적 의미가 없다. GO/NO-GO형 판정 자체가 없는 진단
 실험이며, 산출물은 원인 분리 decision tree의 발화 패턴이다.
+
+### 2026-08-08 — 결과 인수 (full run MEASURED; 사후 기록)
+
+사용자가 설계 커밋 `a4e24f4`와 동일한 코드로 Colab T4 full run을 실행했고, 저장
+bundle(`runs/20260808T1310_…`)을 **수정·재생성 없이** 인수했다(§14). 이 인수
+커밋이 수행한 것: (1) spec에 §14 결과 인수 추가와 lifecycle 문구 정정(사전 등록
+본문 §1–§13 보존), (2) 모듈 docstring·표시용 `STATUS`·`MODULE_BUILD`의 lifecycle
+표시 정정(`MODULE_VERSION` 1→2; 계산·selector·seed·schedule·metric·저장 형식
+무변경 — 실행 코드 SHA 귀속 보존), (3) 실행 notebook 첫 설명 markdown을 MEASURED
+요약으로 정정(10개 code cell·27개 output 그대로, 재실행 없음), (4) Colab이 만든
+중복 노트북 경로 `exp-2026-002-q4p-best-epoch-zero-diagnostic/notebooks/…ipynb`
+삭제(정식본과 21개 셀 source·execution count·output 전부 동일함을 기계 검증한
+복제본; badge 셀 1개만 추가였음). 테스트: Q4-P 87 pass / 0 fail, Q4-O 회귀
+218 pass / 0 fail (Linux CPU, `python mit-bih/test_q4p_best_epoch_zero_diagnostic.py`,
+`python mit-bih/test_q4o_leakage_free_residual.py`).
