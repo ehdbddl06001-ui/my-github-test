@@ -652,12 +652,27 @@ def test_notebook_static():
     src = ["".join(c["source"]) for c in cells]
     all_src = "\n".join(src)
     cfg = next((s for s in src if "MODE = " in s), "")
-    check('MODE = "DESIGN"' in cfg, "default mode is DESIGN (not a GPU run)")
     check("assert MODE in VALID_MODES" in cfg,
           "exactly-one-mode assertion present")
     first_md = "".join(cells[0]["source"])
-    check("RESULT NOT RUN" in first_md,
-          "front page declares RESULT NOT RUN before any full run")
+    measured = "MEASURED" in first_md.splitlines()[2] \
+        if len(first_md.splitlines()) > 2 else False
+    has_out = any(c.get("outputs") for c in cells if c["cell_type"] == "code")
+    if measured:
+        # executed FULL_RUN notebook: stored outputs are the evidence and the
+        # front page must carry the measured verdict, not a stale NOT RUN.
+        check(has_out, "measured notebook keeps its stored outputs")
+        check("run" in first_md and "result.json" in first_md,
+              "front page cites the run bundle and result.json")
+        check("RESULT NOT RUN" not in first_md.splitlines()[2],
+              "front page status line no longer claims RESULT NOT RUN")
+    else:
+        check('MODE = "DESIGN"' in cfg,
+              "default mode is DESIGN (not a GPU run)")
+        check("RESULT NOT RUN" in first_md,
+              "front page declares RESULT NOT RUN before any full run")
+        check(not has_out,
+              "design notebook committed without stored outputs")
     check("1p3HvC_bnbiQlEanFOVIvVdejy60W0tho" in all_src
           and "1qS8JxwlARByoZrJLMb6wxSIktQypiRTF" in all_src,
           "data/run Drive file IDs shown on the front page")
@@ -668,9 +683,6 @@ def test_notebook_static():
     stale = ("verdict B3 replicated" in all_src
              or "utility gate passed" in all_src)
     check(not stale, "no stale measured-result claims")
-    has_out = any(c.get("outputs") for c in cells
-                  if c["cell_type"] == "code")
-    check(not has_out, "design notebook committed without stored outputs")
     check("EXP-2026-003" in all_src and "transportability" in all_src,
           "identifies the experiment")
     check("OUT_DERIVED" in all_src and "v1" in all_src,

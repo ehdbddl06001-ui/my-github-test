@@ -5,16 +5,20 @@ title: Transportability replication of Q4-P's alpha-LR-overshoot mitigation (MIT
 status: approved_for_implementation
 implementation_owner: claude-code
 kind: preregistered_replication
-result_status: DESIGN READY / FULL RESULT NOT RUN
+result_status: MEASURED
+run_id: 20260808T1842_EXP-2026-003_q4q_transportability_replication
+measured: 2026-08-08
+verdict: mechanism_fail_and_utility_fail_stop_residual_cnn
 depends_on: EXP-2026-002
 created: 2026-08-08
 ---
 
 # EXP-2026-003 / Q4-Q — 전이(transportability) 재현 실험
 
-**상태: DESIGN / RESULT NOT RUN.** 이 문서 전체가 사전 등록이다. 어떤 수치도
-결과가 아니며, full GPU run·PREP_DATA gate·Q4-P 파생 분석 모두 아직 실행되지
-않았다.
+**상태: MEASURED.** 사용자가 2026-08-08 Colab에서 PREP_DATA gate·Q4-P 파생
+분석(ANALYZE)·full run(FULL)을 모두 실행했고, 결과를 §11(결과 인수)에
+기록했다. §0–§10은 사전 등록 본문 그대로이며(Decision log의 gate 구현
+deviation 3건 포함) 가설·판정 기준은 소급 수정하지 않았다.
 
 ## 0. 명칭 경계 (사전 등록)
 
@@ -224,7 +228,81 @@ Q4-O·Q4-P 소스와 과거 run bundle은 수정하지 않는다.
 - outer-test 정보로 설계를 조정하게 됨
 - 기존 artifact를 덮어써야만 진행 가능함
 
+## 11. 결과 인수 (2026-08-08 — 사후 기록; 사전 등록 아님)
+
+### run 식별 (Drive bundle의 manifest/result에서 그대로 인수)
+
+- run folder: `runs/20260808T1842_EXP-2026-003_q4q_transportability_replication`
+  (Drive id `1ZCAYZCl4T4eoZzdFfV_IzkB0Mgbcqlw4`)
+- 실행 코드 git SHA: `579fed7e72d1f4518a28fb2698249da1094cef3a` (main, 모듈 q4q.6)
+- data: `mamba_data.npz` SHA256
+  `b1c16106216522cb21291f990e7ab0e7f8dfd8135406db322f41cda3687f6c05`
+  (204,504,913 bytes), 99,871 beats · 44 records · S 2,781
+- 환경: Colab NVIDIA L4 (CUDA 12.8, torch 2.11.0+cu128), wall 237.7 s
+- `result.json`: `status: MEASURED`, `smoke: false`, 2026-08-08T18:47:10Z
+- split: DS1-fit 16 / DS1-dev 6 (101·106·122·201·208·223) / DS2 22 (한 번 평가);
+  endpoint records 16/22 (S가 전혀 없는 DS2 record 6개는 사전 등록 규칙대로 제외)
+
+### PREP_DATA gate (같은 세션에서 통과)
+
+- cross-check: **pass** — 44 matched, 4 paced leftovers(Q-지배 프로파일 확인),
+  **S disagreement 0 beat** (지문 매칭 후 record별 S 완전 일치), beat 결손
+  warning 2건: record 208 (−374, −12.7%) · 213 (−362, −11.1%) — mamba 전처리가
+  이 두 고잡음 record에서 beat를 더 걸러냄(감사표에 기록).
+- INCART: 75 records → **32 patients map 검증 통과**. adapter gate는 설계대로
+  `False`(INCART full run 금지 유지).
+- **프로토콜 순서 주석(정직 기록)**: 이 세션에서 FULL(execution count 4)이
+  완결된 PREP_DATA 감사 기록(execution count 7)보다 먼저 실행되었다. 단, MIT
+  데이터의 canonical 검증은 FULL 내부 로더가 동일하게 수행했고, 몇 분 뒤 같은
+  세션에서 완료된 감사가 통과했으므로 corroboration은 성립한다. DS2 정보는
+  어느 시점에도 설계에 피드백되지 않았다.
+
+### Q4-P 파생 분석 (ANALYZE; 사후 기전 분석)
+
+- 출력: `runs/20260808T1838_EXP-2026-002_q4p_derived_analysis_v1` — 원본 Q4-P
+  bundle fingerprint 전후 불변 확인.
+- DiD `(C−D)_S2 − (C−D)_S0` (SVDB, k-sweep): **+0.003434 [−0.000815, +0.008587]**
+  — 평균 양수이나 CI가 0을 포함. Q4-P의 사전 등록 판정(B3)을 바꾸지 않는
+  사후 지지 증거일 뿐이다.
+
+### 사전 등록 endpoint 판정 (`result.json` 그대로; record-macro S PR-AUC, n=16, n_boot=2000)
+
+| endpoint | mean | 95% CI | by-seed 양수 |
+|---|---|---|---|
+| 기전 DiD `(C−D)_S2−(C−D)_S0` | **−0.000441** | [−0.001360, +0.000115] | 1/5 |
+| waveform `C−D` (S2) | −0.000530 | [−0.001494, +0.000032] | 1/5 |
+| utility `C−A` (S2) | −0.000533 | [−0.001498, +0.000029] | 1/5 |
+| `C−D` (S0) | −0.000089 | [−0.000259, +0.000064] | 0/5 |
+
+- utility gate: mean gain(≥+0.015) fail · CI low>0 fail · seed 4/5 fail ·
+  p10 비열화만 pass (p10 C 0.00510 vs A 0.00508) → **fail**
+- **판정(사전 등록 규칙 그대로): mechanism fail + utility fail →
+  residual CNN 경로 중단** ("mechanism and utility both fail -> stop the
+  residual CNN path")
+
+### 해석 (사후; 과장 금지)
+
+- checkpoint 선택 수준에서는 S2가 best epoch를 뒤로 옮기는 **정성적 패턴이
+  재현**됐다(C: S0 [−1,0,−1,0,0] → S2 [2,2,1,2,1]). 그러나 metric 효과는
+  ~1e-4 수준으로 사실상 0이고 방향도 음수다 — MIT DS2에서 residual은 사실상
+  불활성(inert)이며 alpha LR 완화가 유의미한 개선으로 이어지지 않는다.
+- 이는 underpowered가 아니라 **부호까지 뒤집힌 명확한 비재현**이다(사전 등록
+  분류 기준: 평균 음수 + seed 1/5).
+- SVDB에서의 Q4-P B3(및 파생 DiD +0.0034)와 MIT의 비재현이 공존한다 — cohort
+  간 transport가 실패했다는 것이 이 실험의 측정 결론이며, 명칭 경계(§0)대로
+  이 실험은 untouched external confirmation이 아니었다.
+- INCART stage는 진행하지 않는다(사전 등록 규칙상 MIT pass가 전제 조건).
+
 ## Decision log
+
+### 2026-08-08 — 결과 인수 (PREP_DATA·ANALYZE·FULL MEASURED; 사후 기록)
+
+사용자가 Colab에서 세 단계를 모두 실행했고 저장 bundle 3개(§11)를 수정 없이
+인수했다. 이 커밋은 lifecycle 정정만 수행한다: spec §11 추가와 frontmatter
+MEASURED, 실행 notebook 첫 markdown의 MEASURED 요약 정정(저장된 출력 무변경),
+notebook 정적 테스트의 실행본 상태 수용, research 문서 갱신. 계산 코드 무변경
+— 실행 코드는 `579fed7`(당시 main)이다. 판정은 사전 등록 규칙의 자동 출력
+그대로 인수했다: **mechanism fail + utility fail → residual CNN 경로 중단**.
 
 ### 2026-08-08 — cross-check v4: 5-클래스 지문 매칭 + 전량 표 보고 (deviation 기록 3)
 
