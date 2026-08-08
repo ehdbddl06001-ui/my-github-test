@@ -72,8 +72,10 @@ ARM_ID = "Q4-Q"
 RUN_SLUG = "q4q_transportability_replication"
 STATUS = "PREREGISTERED REPLICATION / RESULT NOT RUN"
 
-MODULE_VERSION = 1
-MODULE_BUILD = "2026-08-08 q4q.1 — design; no full run has been executed"
+MODULE_VERSION = 2
+MODULE_BUILD = ("2026-08-08 q4q.2 — PREP_DATA cross-check corroborates the "
+                "48-record ecg_multi MIT subset by per-record profiles; "
+                "no full run has been executed")
 
 MODES = ("DESIGN", "SMOKE", "PREP_DATA", "FULL", "ANALYZE")
 
