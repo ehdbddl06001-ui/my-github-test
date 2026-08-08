@@ -122,30 +122,83 @@ def test_mit_loader():
 
 
 def test_cross_check():
-    print("mamba vs ecg_multi cross-check")
+    print("mamba vs ecg_multi cross-check (per-record profile corroboration)")
     tmp = tempfile.mkdtemp(prefix="q4q_multi_")
     try:
         good = os.path.join(tmp, "mamba.npz")
         n = _write_fake_mamba(good)
         exp = {"n_beat": n, "n_record": 44, "n_ds1": 22, "n_ds2": 22}
         _, _, audit = QQ.load_mit_cohort(good, expected=exp)
+        with np.load(good) as src:
+            pid_m = np.asarray(src["pid"]).astype(int)
+            y_m = np.asarray(src["y"]).astype(int)
+        db44 = np.array(["mitdb"] * len(pid_m))
 
-        multi = os.path.join(tmp, "multi.npz")
-        pid = np.repeat(np.array(QQ.MIT_ALL_RECORDS, int), 30)
-        db = np.array(["mitdb"] * len(pid))
-        y5 = np.zeros(len(pid), int)
-        np.savez(multi, pid=pid, db=db, y5=y5)
-        res = QQ.cross_check_mit_vs_multi(audit, multi)
-        check(res["pass"], "matching MIT subset passes")
+        # A) record-coded 44-record subset, profiles identical -> pass
+        multi_a = os.path.join(tmp, "multi_a.npz")
+        np.savez(multi_a, pid=pid_m, db=db44, y5=y_m)
+        res = QQ.cross_check_mit_vs_multi(audit, multi_a)
+        check(res["pass"] and res["leftover_records"] == 0,
+              "44-record identical subset passes (0 leftovers)")
 
-        bad = os.path.join(tmp, "bad.npz")
-        np.savez(bad, pid=pid[: len(pid) // 2], db=db[: len(pid) // 2],
-                 y5=y5[: len(pid) // 2])
-        expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, bad),
-                     "record-set mismatch is a STOP", QQ.Q4QError)
+        # B) ordinal pids + all 48 records (4 extra zero-S = paced) -> pass
+        ordinal = {r: i for i, r in enumerate(sorted(set(pid_m.tolist())))}
+        pid_b = np.array([ordinal[r] for r in pid_m], int)
+        extra_pid = np.repeat(np.arange(44, 48), 30)
+        pid_48 = np.concatenate([pid_b, extra_pid])
+        y_48 = np.concatenate([y_m, np.zeros(len(extra_pid), int)])
+        db48 = np.array(["mitdb"] * len(pid_48))
+        multi_b = os.path.join(tmp, "multi_b.npz")
+        np.savez(multi_b, pid=pid_48, db=db48, y5=y_48)
+        res_b = QQ.cross_check_mit_vs_multi(audit, multi_b)
+        check(res_b["pass"] and res_b["leftover_records"] == 4
+              and res_b["pid_coding"] == "ordinal_or_other"
+              and "paced" in res_b["explanation"],
+              "48-record ordinal-pid subset passes; 4 zero-S paced leftovers "
+              "explained (measured 2026-08-08 Colab case)")
+
+        # C) an 'extra' record carrying S beats cannot be paced -> STOP
+        y_bad = y_48.copy()
+        y_bad[len(y_m)] = QQ.MIT_S_INDEX
+        multi_c = os.path.join(tmp, "multi_c.npz")
+        np.savez(multi_c, pid=pid_48, db=db48, y5=y_bad)
+        expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_c),
+                     "leftover record with S beats is a STOP", QQ.Q4QError)
+
+        # D) S total mismatch -> STOP
+        y_tot = y_m.copy()
+        s_pos = np.where(y_tot == QQ.MIT_S_INDEX)[0]
+        y_tot[s_pos[0]] = 0
+        multi_d = os.path.join(tmp, "multi_d.npz")
+        np.savez(multi_d, pid=pid_m, db=db44, y5=y_tot)
+        expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_d),
+                     "S-total mismatch is a STOP", QQ.Q4QError)
+
+        # E) same S total but one S beat moved across records -> STOP
+        y_mv = y_m.copy()
+        recs = sorted(set(pid_m.tolist()))
+        r_from = next(r for r in recs
+                      if (y_mv[pid_m == r] == QQ.MIT_S_INDEX).sum() > 1)
+        r_to = next(r for r in recs if r != r_from)
+        i_from = np.where((pid_m == r_from) & (y_mv == QQ.MIT_S_INDEX))[0][0]
+        i_to = np.where((pid_m == r_to) & (y_mv != QQ.MIT_S_INDEX))[0][0]
+        y_mv[i_from] = 0
+        y_mv[i_to] = QQ.MIT_S_INDEX
+        multi_e = os.path.join(tmp, "multi_e.npz")
+        np.savez(multi_e, pid=pid_m, db=db44, y5=y_mv)
+        expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_e),
+                     "per-record S profile mismatch is a STOP even with equal "
+                     "totals", QQ.Q4QError)
+
+        # F) wrong record count (e.g. truncated subset) -> STOP
+        half = pid_m < np.median(pid_m)
+        multi_f = os.path.join(tmp, "multi_f.npz")
+        np.savez(multi_f, pid=pid_m[half], db=db44[half], y5=y_m[half])
+        expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_f),
+                     "neither 44 nor 48 records is a STOP", QQ.Q4QError)
 
         nodb = os.path.join(tmp, "nodb.npz")
-        np.savez(nodb, pid=pid)
+        np.savez(nodb, pid=pid_m)
         expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, nodb),
                      "missing db key rejected", QQ.Q4QError)
     finally:

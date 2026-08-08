@@ -226,6 +226,23 @@ Q4-O·Q4-P 소스와 과거 run bundle은 수정하지 않는다.
 
 ## Decision log
 
+### 2026-08-08 — PREP_DATA gate 실측 후 cross-check 로직 확장 (deviation 기록)
+
+사용자의 첫 Colab PREP_DATA 실행에서 gate가 설계대로 STOP했다. 실측:
+`mamba_data.npz` 44 records / 99,871 beats / **S 2,781** vs `ecg_multi.npz`
+MIT subset 48 records / 109,446 beats / **S 2,781**, 그리고
+`ds1_in_multi=false`. 해석: **ecg_multi는 paced 4개 record(102/104/107/217)를
+포함한 48-record 전체본이고 pid 코딩도 record 번호가 아닌 순번형**이다. S 총합
+정확 일치는 두 파일의 동일 원천·동일 beat 추출을 강하게 뒷받침하며, 추가 4개
+record의 S가 0임을 함의한다(paced와 부합). 이 설명을 결정론적 검증으로 구현:
+cross-check를 id 동일성 대신 **per-record (beat 수, S 수) profile 매칭**으로
+확장 — S 수는 record별 **정확 일치** 요구, beat 수는 ±2%(edge-beat 처리 차)
+허용, 남는 record는 정확히 4개·전부 S=0(paced)일 때만 corroboration으로
+인정한다. 그 외 모든 불일치는 여전히 STOP이다. 과학적 질문·split·지표·판정
+기준은 변경 없음(데이터 감사 인프라의 확장). 테스트에 실측 케이스(48-record
+순번 pid) 및 STOP 케이스(S 있는 leftover·S 총합 불일치·record 간 S 이동·잘린
+subset)를 fixture로 추가했다.
+
 ### 2026-08-08 — 설계 등록 (결과 없음)
 
 이 spec·구현·테스트·notebook을 사전 등록한다. CPU unit + synthetic smoke만
