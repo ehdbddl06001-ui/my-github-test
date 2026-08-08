@@ -72,8 +72,8 @@ ARM_ID = "Q4-Q"
 RUN_SLUG = "q4q_transportability_replication"
 STATUS = "PREREGISTERED REPLICATION / RESULT NOT RUN"
 
-MODULE_VERSION = 5
-MODULE_BUILD = ("2026-08-08 q4q.5 — cross-check identifies records by 5-class "
+MODULE_VERSION = 6
+MODULE_BUILD = ("2026-08-08 q4q.6 — audit persists before the INCART step; cross-check identifies records by 5-class "
                 "fingerprint assignment (beat counts drift several percent on "
                 "noisy records under mamba's stricter prep); S strictly "
                 "gated, all else reported; no full run has been executed")
@@ -1341,16 +1341,24 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         else:
             audit["cross_check"] = {"pass": False,
                                     "note": "NOT RUN — provide --multi"}
+        audit["incart_adapter_audit"] = incart_adapter_audit()
+
+        def _write_audit():
+            with open(os.path.join(args.out, "data_audit.json"), "w",
+                      encoding="utf-8") as fh:
+                json.dump(_json_safe(audit), fh, ensure_ascii=False, indent=1)
+
+        # Persist the MIT audit BEFORE the INCART step: a bad --incart-hea
+        # path must not destroy the cross-check table (measured 2026-08-08 —
+        # a path typo erased an otherwise-passing audit).
+        _write_audit()
         if args.incart_hea:
             mapping = parse_incart_patient_map(args.incart_hea, log=log)
             audit["incart_map"] = validate_incart_map(mapping)
             with open(os.path.join(args.out, "incart_patient_map.json"), "w",
                       encoding="utf-8") as fh:
                 json.dump(mapping, fh, indent=1, sort_keys=True)
-        audit["incart_adapter_audit"] = incart_adapter_audit()
-        with open(os.path.join(args.out, "data_audit.json"), "w",
-                  encoding="utf-8") as fh:
-            json.dump(_json_safe(audit), fh, ensure_ascii=False, indent=1)
+            _write_audit()
         log(f"PREP_DATA audit written to {args.out}")
         cc = audit["cross_check"]
         for row in cc.get("table", []):
