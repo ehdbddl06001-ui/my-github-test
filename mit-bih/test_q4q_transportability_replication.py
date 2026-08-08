@@ -148,16 +148,39 @@ def test_cross_check():
         mamba_prof = {230: (2255, 0), 231: (2500, 0), 100: (1800, 33)}
         multi_prof = {0: (2136, 0), 1: (2255, 0), 2: (2500, 0),
                       3: (2205, 0), 4: (2600, 0), 5: (1800, 33)}
-        mapping, leftover = QQ._match_profiles(mamba_prof, multi_prof)
+        mapping, leftover, sagree = QQ._match_profiles(mamba_prof, multi_prof)
         check(multi_prof[mapping[230]][0] == 2255
               and multi_prof[mapping[231]][0] == 2500
               and sorted(multi_prof[r][0] for r in leftover)
-              == [2136, 2205, 2600],
+              == [2136, 2205, 2600]
+              and sagree["total_abs_diff"] == 0,
               "skip-tolerant alignment resolves interleaved paced extras "
               "(measured record-230 case)")
         expect_raise(
             lambda: QQ._match_profiles({230: (2255, 0)}, {0: (2136, 0)}),
             "genuinely unmatched beat count still STOPs", QQ.Q4QError)
+
+        # B1) unit regression for the measured 2026-08-08 S=2-group STOP:
+        # per-record S counts disagree between preps (2579-beat record is
+        # S=2 in mamba, S=3 in multi; a 2953-beat record the other way
+        # round) while totals stay equal. Beat-count matching must pair the
+        # records and report the bounded S disagreement instead of STOPping.
+        mamba_s2 = {1: (2083, 2), 2: (2537, 2), 3: (2579, 2), 4: (2974, 2),
+                    5: (2950, 3)}
+        multi_s2 = {10: (2083, 2), 11: (2538, 2), 12: (2580, 3),
+                    13: (2979, 2), 14: (2953, 2)}
+        mapping2, leftover2, sagree2 = QQ._match_profiles(mamba_s2, multi_s2)
+        check(not leftover2
+              and multi_s2[mapping2[3]][0] == 2580
+              and multi_s2[mapping2[5]][0] == 2953
+              and sagree2["n_mismatched_records"] == 2
+              and sagree2["total_abs_diff"] == 2,
+              "cross-prep per-record S disagreement is matched by beat count "
+              "and reported within budget (measured S=2-group case)")
+        expect_raise(
+            lambda: QQ._match_profiles({1: (2000, 15)}, {9: (2001, 30)}),
+            "per-record S disagreement beyond the 10-beat budget STOPs",
+            QQ.Q4QError)
 
         # B) ordinal pids + all 48 records (4 extra zero-S = paced) -> pass;
         # extras get 29 beats so they interleave BELOW the genuine 30-beat
@@ -194,7 +217,8 @@ def test_cross_check():
         expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_d),
                      "S-total mismatch is a STOP", QQ.Q4QError)
 
-        # E) same S total but one S beat moved across records -> STOP
+        # E) same S total but one S beat moved across records -> matched by
+        # beat count, disagreement (2 beats) reported within budget -> pass
         y_mv = y_m.copy()
         recs = sorted(set(pid_m.tolist()))
         r_from = next(r for r in recs
@@ -206,9 +230,37 @@ def test_cross_check():
         y_mv[i_to] = QQ.MIT_S_INDEX
         multi_e = os.path.join(tmp, "multi_e.npz")
         np.savez(multi_e, pid=pid_m, db=db44, y5=y_mv)
-        expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_e),
-                     "per-record S profile mismatch is a STOP even with equal "
-                     "totals", QQ.Q4QError)
+        res_e = QQ.cross_check_mit_vs_multi(audit, multi_e)
+        check(res_e["pass"]
+              and res_e["s_agreement"]["n_mismatched_records"] == 2
+              and res_e["s_agreement"]["total_abs_diff"] == 2,
+              "small cross-prep S disagreement passes and is reported in "
+              "the audit")
+
+        # E2) total disagreement beyond the 20-beat budget -> STOP (each
+        # per-record move stays within the 10-beat per-record rule, which is
+        # unit-tested above). Move 3 S beats between 4 disjoint record pairs
+        # -> total |diff| = 24 > 20 with totals unchanged.
+        y_big = y_m.copy()
+        s_per = {r: int((y_big[pid_m == r] == QQ.MIT_S_INDEX).sum())
+                 for r in recs}
+        rich = [r for r in recs if s_per[r] >= 3][:4]
+        poor = [r for r in recs if r not in rich][:4]
+        if len(rich) == 4 and len(poor) == 4:
+            for r_src, r_dst in zip(rich, poor):
+                i_src = np.where((pid_m == r_src)
+                                 & (y_big == QQ.MIT_S_INDEX))[0][:3]
+                i_dst = np.where((pid_m == r_dst)
+                                 & (y_big != QQ.MIT_S_INDEX))[0][:3]
+                y_big[i_src] = 0
+                y_big[i_dst] = QQ.MIT_S_INDEX
+            multi_e2 = os.path.join(tmp, "multi_e2.npz")
+            np.savez(multi_e2, pid=pid_m, db=db44, y5=y_big)
+            expect_raise(lambda: QQ.cross_check_mit_vs_multi(audit, multi_e2),
+                         "total S disagreement beyond the 20-beat budget is "
+                         "a STOP", QQ.Q4QError)
+        else:
+            check(False, "fixture lacks records for the total-budget test")
 
         # F) wrong record count (e.g. truncated subset) -> STOP
         half = pid_m < np.median(pid_m)
