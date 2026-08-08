@@ -141,10 +141,30 @@ def test_cross_check():
         check(res["pass"] and res["leftover_records"] == 0,
               "44-record identical subset passes (0 leftovers)")
 
-        # B) ordinal pids + all 48 records (4 extra zero-S = paced) -> pass
+        # B0) unit regression for the measured 2026-08-08 misalignment: a
+        # paced extra (n=2136, S=0) sorts before mamba record 230 (n=2255,
+        # S=0); naive positional pairing STOPped at 5.3%, the skip-tolerant
+        # alignment must pair 2255<->2255 and leave the extras over.
+        mamba_prof = {230: (2255, 0), 231: (2500, 0), 100: (1800, 33)}
+        multi_prof = {0: (2136, 0), 1: (2255, 0), 2: (2500, 0),
+                      3: (2205, 0), 4: (2600, 0), 5: (1800, 33)}
+        mapping, leftover = QQ._match_profiles(mamba_prof, multi_prof)
+        check(multi_prof[mapping[230]][0] == 2255
+              and multi_prof[mapping[231]][0] == 2500
+              and sorted(multi_prof[r][0] for r in leftover)
+              == [2136, 2205, 2600],
+              "skip-tolerant alignment resolves interleaved paced extras "
+              "(measured record-230 case)")
+        expect_raise(
+            lambda: QQ._match_profiles({230: (2255, 0)}, {0: (2136, 0)}),
+            "genuinely unmatched beat count still STOPs", QQ.Q4QError)
+
+        # B) ordinal pids + all 48 records (4 extra zero-S = paced) -> pass;
+        # extras get 29 beats so they interleave BELOW the genuine 30-beat
+        # records in sorted order (e2e regression of the same flaw).
         ordinal = {r: i for i, r in enumerate(sorted(set(pid_m.tolist())))}
         pid_b = np.array([ordinal[r] for r in pid_m], int)
-        extra_pid = np.repeat(np.arange(44, 48), 30)
+        extra_pid = np.repeat(np.arange(44, 48), 29)
         pid_48 = np.concatenate([pid_b, extra_pid])
         y_48 = np.concatenate([y_m, np.zeros(len(extra_pid), int)])
         db48 = np.array(["mitdb"] * len(pid_48))

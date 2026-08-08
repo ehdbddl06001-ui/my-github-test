@@ -72,10 +72,10 @@ ARM_ID = "Q4-Q"
 RUN_SLUG = "q4q_transportability_replication"
 STATUS = "PREREGISTERED REPLICATION / RESULT NOT RUN"
 
-MODULE_VERSION = 2
-MODULE_BUILD = ("2026-08-08 q4q.2 — PREP_DATA cross-check corroborates the "
-                "48-record ecg_multi MIT subset by per-record profiles; "
-                "no full run has been executed")
+MODULE_VERSION = 3
+MODULE_BUILD = ("2026-08-08 q4q.3 — profile cross-check uses skip-tolerant "
+                "order-preserving alignment (paced extras interleave the S=0 "
+                "group); no full run has been executed")
 
 MODES = ("DESIGN", "SMOKE", "PREP_DATA", "FULL", "ANALYZE")
 
@@ -284,6 +284,49 @@ def mit_split(cohort: Cohort) -> Dict[str, List[int]]:
     return {"ds1": ds1, "ds2": ds2, "fit": sorted(fit), "dev": sorted(dev)}
 
 
+def _align_sorted(want: List[Tuple[int, int]], have: List[Tuple[int, int]],
+                  beat_tol: float) -> Optional[Dict[int, int]]:
+    """Order-preserving alignment of ``want`` (mamba (n, rid), sorted) into
+    ``have`` (multi (n, rid), sorted), allowing ``have`` entries to be skipped.
+
+    This is the key difference from naive index pairing: the paced extras sit
+    INSIDE the S=0 group, so their beat counts interleave with the genuine
+    records and shift a positional pairing (measured 2026-08-08: mamba record
+    230 n=2255 was compared against a n=2136 extra and STOPped at 5.3%).
+    A skip-tolerant alignment pairs 2255 with 2255 and leaves the extras over.
+    Returns {mamba_rid: multi_rid} or None when no full alignment exists.
+    """
+    la, lb = len(want), len(have)
+    if lb < la:
+        return None
+
+    def fits(i: int, j: int) -> bool:
+        n_m, n_u = want[i][0], have[j][0]
+        return abs(n_u - n_m) <= beat_tol * max(1, n_m)
+
+    # dp[i][j]: can want[:i] be matched within have[:j]
+    dp = [[False] * (lb + 1) for _ in range(la + 1)]
+    for j in range(lb + 1):
+        dp[0][j] = True
+    for i in range(1, la + 1):
+        for j in range(1, lb + 1):
+            dp[i][j] = dp[i][j - 1] or (dp[i - 1][j - 1] and fits(i - 1, j - 1))
+    if not dp[la][lb]:
+        return None
+    mapping: Dict[int, int] = {}
+    i, j = la, lb
+    while i > 0:
+        if dp[i - 1][j - 1] and fits(i - 1, j - 1) and not dp[i][j - 1]:
+            mapping[want[i - 1][1]] = have[j - 1][1]
+            i, j = i - 1, j - 1
+        elif dp[i][j - 1]:
+            j -= 1
+        else:
+            mapping[want[i - 1][1]] = have[j - 1][1]
+            i, j = i - 1, j - 1
+    return mapping
+
+
 def _match_profiles(mamba_prof: Dict[int, Tuple[int, int]],
                     multi_prof: Dict[int, Tuple[int, int]],
                     beat_tol: float = CROSS_CHECK_BEAT_TOL
@@ -292,39 +335,39 @@ def _match_profiles(mamba_prof: Dict[int, Tuple[int, int]],
 
     S counts must match EXACTLY (S beats are the scientific quantity); beat
     counts may differ per record by <= ``beat_tol`` (edge-beat handling).
-    Within an S group, records are paired in sorted beat-count order.
+    Within an S group the pairing is an order-preserving, skip-tolerant
+    alignment (see ``_align_sorted``) so that extra records — the paced ones
+    live in the S=0 group — cannot shift genuine pairs out of alignment.
     Returns (mapping mamba_rid -> multi_rid, leftover multi rids).
     Raises Q4QError when no valid matching exists.
     """
     by_s_multi: Dict[int, List[Tuple[int, int]]] = {}
     for r, (n, s) in multi_prof.items():
         by_s_multi.setdefault(s, []).append((n, r))
-    for s in by_s_multi:
-        by_s_multi[s].sort()
     by_s_mamba: Dict[int, List[Tuple[int, int]]] = {}
     for r, (n, s) in mamba_prof.items():
         by_s_mamba.setdefault(s, []).append((n, r))
-    for s in by_s_mamba:
-        by_s_mamba[s].sort()
 
     mapping: Dict[int, int] = {}
     used: set = set()
     for s, want in sorted(by_s_mamba.items()):
-        have = [t for t in by_s_multi.get(s, []) if t[1] not in used]
+        want = sorted(want)
+        have = sorted(t for t in by_s_multi.get(s, []) if t[1] not in used)
         if len(have) < len(want):
             raise Q4QError(
                 f"profile match failed: mamba has {len(want)} record(s) with "
                 f"S={s} but ecg_multi's MIT subset offers only {len(have)} — "
                 "unexplained mismatch, STOP (spec §10)")
-        for i, (n_m, r_m) in enumerate(want):
-            n_u, r_u = have[i]
-            if abs(n_u - n_m) > beat_tol * max(1, n_m):
-                raise Q4QError(
-                    f"profile match failed: mamba record {r_m} (n={n_m}, S={s})"
-                    f" vs closest multi candidate (n={n_u}) differ by more than"
-                    f" {beat_tol:.0%} — unexplained mismatch, STOP (spec §10)")
-            mapping[r_m] = r_u
-            used.add(r_u)
+        aligned = _align_sorted(want, have, beat_tol)
+        if aligned is None:
+            raise Q4QError(
+                "profile match failed for the S={} group even with the "
+                "skip-tolerant alignment (tolerance {:.0%}): mamba beat "
+                "counts {} vs multi candidates {} — unexplained mismatch, "
+                "STOP (spec §10)".format(
+                    s, beat_tol, [n for n, _ in want], [n for n, _ in have]))
+        mapping.update(aligned)
+        used.update(aligned.values())
     leftover = [r for r in multi_prof if r not in used]
     return mapping, leftover
 
