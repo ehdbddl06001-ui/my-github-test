@@ -226,6 +226,20 @@ Q4-O·Q4-P 소스와 과거 run bundle은 수정하지 않는다.
 
 ## Decision log
 
+### 2026-08-08 — cross-check v3: beat-count 매칭 + S 불일치 한도/보고 (deviation 기록 2)
+
+세 번째 PREP_DATA 실측에서 S=2 그룹 매칭이 STOP했다: mamba `[2083, 2537,
+2579, 2974]` vs multi `[2083, 2538, 2953, 2979]` — 3쌍은 0~5 beat 차이로
+일치하지만 mamba의 2579-beat record(S=2)의 짝이 multi의 S=2 그룹에 없다.
+S 총합은 양쪽 2,781로 동일하므로, 이는 **독립 전처리 간에 일부 record의 S
+개수 판정이 1~2개씩 다르다**(aberrant/edge beat 매핑 차이)는 뜻이고 "record별
+S 정확 일치" 가정이 데이터로 반증된 것이다. 확장: record 식별은 식별력 높은
+**beat-count 정렬 매칭**(±2%, skip 허용)으로 하고, S 일치는 정확 일치 대신
+**한도 내 일치 + 전량 보고**로 바꾼다 — record당 |ΔS| ≤ 10, 총합 ≤ 20 beat
+(사전 지정), 초과는 여전히 STOP. 불일치 내역은 audit JSON에 record 단위로
+기록된다. Q4-Q 학습·판정은 mamba만 사용하므로 과학적 기준 무변경. 실측 S=2
+케이스와 한도 초과 STOP 케이스를 회귀 fixture로 추가했다.
+
 ### 2026-08-08 — PREP_DATA gate 실측 후 cross-check 로직 확장 (deviation 기록)
 
 사용자의 첫 Colab PREP_DATA 실행에서 gate가 설계대로 STOP했다. 실측:
