@@ -679,10 +679,10 @@ def test_notebook_static():
           and "Restart runtime" in all_src,
           "cell 2 force-reimports modules after git pull and asserts "
           "freshness (stale-import guard)")
-    check('REPO = "/content/my-github-test"' in all_src
-          and "rm" in all_src,
-          "cell 2 anchors the clone at an absolute path (no nested clones, "
-          "no cwd dependence)")
+    check('"/content/my-github-test"' in all_src
+          and 'os.chdir("/content")' in all_src and "rm" in all_src,
+          "cell 2 chdirs to a valid cwd first and anchors the clone at an "
+          "absolute path (no nested clones, no deleted-cwd traps)")
 
 
 def test_regression_suites_importable():
