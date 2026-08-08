@@ -69,9 +69,11 @@ RUN_SLUG = "q4o_leakage_free_residual_cnn"
 # kernel executes — and running the test script as a subprocess passes against the new
 # file while the kernel still runs the old one. The notebook asserts this value and
 # calls self_check() in-process so a stale import fails at cell 1, loudly.
-MODULE_VERSION = 3
-MODULE_BUILD = ("2026-08-06 q4o.3 — reporting layer (presentation only) "
-                "+ training history; q4o.2 scoped the OOF audit to the scorable cohort")
+MODULE_VERSION = 4
+MODULE_BUILD = ("2026-08-08 q4o.4 — best_epoch=0 semantics corrected in all prose "
+                "(epoch 0 is post-update, not pre-training); training_history.json "
+                "joins the immutability fingerprint when present; q4o.3 added the "
+                "reporting layer")
 
 SEED0 = 20260806
 IDX_S = 1                       # y3 == 1 is the S (SVEB) class
@@ -111,11 +113,20 @@ DL_EPOCH = 12
 DL_LR = 1e-3
 DL_PATIENCE = 3                 # early stopping on outer-train dev records only
 DL_MIN_EPOCH = 4                # early stopping cannot fire before this epoch.
-                                # alpha starts at exactly 0, so epoch 0's dev loss is
-                                # the baseline's. Without a warmup the patience counter
-                                # can end training before alpha has left zero, which
-                                # would make the arm untestable rather than merely
-                                # unhelpful. Decided a priori, not from any result.
+                                # NOTE on epoch numbering: "epoch 0" is the checkpoint
+                                # taken AFTER the first full pass over the fit split —
+                                # roughly 77-79 optimizer steps at batch 1024 on the
+                                # real cohort — because dev loss is first computed after
+                                # the epoch's minibatch updates. The pre-training state
+                                # (0 optimizer steps, alpha exactly 0) is never
+                                # evaluated as a dev candidate: best_loss starts at inf,
+                                # so the epoch-0 checkpoint always replaces the initial
+                                # best_state. alpha = 0 at init gives initial *output*
+                                # equality with the offset only; it does not bound the
+                                # selected checkpoint's performance. DL_MIN_EPOCH only
+                                # guarantees a minimum number of epochs are run, not
+                                # that the best checkpoint is a later one. Decided a
+                                # priori, not from any result.
 NB_BOOT = 2000
 
 # ── Acceptance gates (pre-registered; never changed after seeing results) ────
@@ -921,10 +932,17 @@ def set_determinism(seed: int) -> List[str]:
 def build_residual_net(n_channel: int, init: str = "normal"):
     """``logit = offset + alpha * head(embed(conv(x)))``.
 
-    ``alpha`` starts at exactly 0 so the model begins at the offset (lower bound
-    guaranteed). The head is xavier-initialised: zero-initialising both ``alpha`` and
-    the head is the Q4-N gradient deadlock — ``dL/dalpha ∝ head(z) = 0`` and
-    ``dL/dhead_w ∝ alpha = 0`` trap each other at zero.
+    ``alpha`` starts at exactly 0 so the model's *initial output* equals the offset.
+    That is an initialisation property only — it does not guarantee that the selected
+    checkpoint, or the final model, performs at least as well as the offset. The head
+    is xavier-initialised: zero-initialising both ``alpha`` and the head is the Q4-N
+    gradient deadlock — ``dL/dalpha ∝ head(z) = 0`` and ``dL/dhead_w ∝ alpha = 0``
+    trap each other at zero.
+
+    The sign of ``alpha`` is not identifiable on its own: flipping the head's sign
+    and ``alpha``'s sign together leaves the model unchanged, so a negative ``alpha``
+    across seeds is not evidence of instability. Interpret ``alpha * residual(x)``
+    (the effective residual), not the sign of ``alpha``.
     """
     torch = _require_torch()
     import torch.nn as nn
@@ -992,7 +1010,7 @@ def residual_grad_is_alive(n_channel: int = 2, init: str = "normal",
         dL/dalpha = dL/dlogit * h(z)
         dL/dh_w   = dL/dlogit * alpha * z
 
-    Because Q4-O deliberately starts at ``alpha = 0`` (lower bound guaranteed), the
+    Because Q4-O deliberately starts at ``alpha = 0`` (initial output equality), the
     head's gradient is zero at step 0 *by construction* — that alone is not the bug.
     The Q4-N bug is that zeroing the head too makes ``dL/dalpha`` zero as well, so
     neither can ever move. With a xavier head, ``dL/dalpha != 0`` at step 0, ``alpha``
@@ -1627,7 +1645,12 @@ def append_registry(registry_path: str, record: dict) -> None:
 # axis labels render as tofu boxes. The prose report is Korean.
 # ─────────────────────────────────────────────────────────────────────────────
 IMMUTABLE_BUNDLE_FILES = ("config.json", "manifest.json", "result.json",
-                          "fold_map.json", "predictions.npz")
+                          "fold_map.json", "predictions.npz",
+                          # Present only in runs executed after history recording was
+                          # added (q4o.3). bundle_fingerprint() includes a file only if
+                          # it exists, so runs without one are unaffected — the file is
+                          # never created retroactively.
+                          "training_history.json")
 
 PRIMARY_CONTRASTS = ("C_minus_A", "C_minus_D", "E_minus_combBaseline")
 REFERENCE_CONTRASTS = ("B_minus_A", "D_minus_A", "E_minus_A")
@@ -1841,7 +1864,12 @@ def _fold_diag_matrix(bundle: RunBundle, arm: str,
 
 
 def training_stalled(bundle: RunBundle, arm: str = ARM_C) -> Dict[str, object]:
-    """Did early stopping keep epoch 0 everywhere? A real limit on what a NO-GO proves."""
+    """Was the first-completed-epoch checkpoint (epoch 0) selected everywhere?
+
+    ``best_epoch = 0`` means the checkpoint AFTER the first full training epoch — it
+    is a post-update state, not the pre-training initialisation, which was never a
+    dev candidate in this run. All-zero is still a real limit on what a NO-GO proves.
+    """
     mat, seeds, folds = _fold_diag_matrix(bundle, arm, "best_epoch")
     if mat.size == 0:
         return {"available": False}
@@ -1937,11 +1965,16 @@ def executive_summary_ko(bundle: RunBundle) -> str:
     L.append("     '이 구조·이 학습 스케줄·이 offset 에서 추가 이득이 없었다'는 것뿐이다.")
     if stalled.get("available") and stalled.get("all_zero"):
         L.append(f"   · ★ 중요 — Arm C 는 {stalled['n_total']}개 (seed × fold) 전부에서")
-        L.append("     best_epoch = 0 이었다. 즉 dev BCE 손실 기준으로 1 epoch 이후 어떤")
-        L.append("     지점도 epoch 0 보다 낫지 않았고, 잔차 분기는 사실상 학습되기 전의")
-        L.append("     체크포인트로 되돌아갔다. 따라서 이 NO-GO 는 '잔차가 쓸모없다'가")
-        L.append("     아니라 '이 스케줄에서는 잔차가 켜지지 않았다'에 더 가깝다.")
-        L.append("     학습률·epoch 수·early stopping 기준은 다음 실험의 1순위 점검 대상이다.")
+        L.append("     첫 번째 학습 epoch 완료 후의 체크포인트(best_epoch = 0)가 선택됐고,")
+        L.append("     이후 epoch 는 dev BCE 를 개선하지 못했다. epoch 0 은 학습 전 상태가")
+        L.append("     아니다 — 한 epoch 분량(약 77~79 optimizer step)의 업데이트를 거친")
+        L.append("     상태이며, 실제 선택된 체크포인트의 alpha 도 0 이 아니라 대체로")
+        L.append("     |0.078~0.101| 이다. 이 run 은 학습 전 체크포인트(epoch -1)를 dev")
+        L.append("     후보로 평가하지 않았으므로, epoch 0 이 정확한 morphology baseline")
+        L.append("     보다 개선됐는지는 이 데이터만으로는 판정할 수 없다.")
+        L.append("     학습률·epoch 수·checkpoint 선택 기준은 다음 실험의 1순위 점검 대상이다.")
+        L.append("     (alpha 의 부호는 head 부호와 함께 뒤집힐 수 있으므로 부호 자체를")
+        L.append("     seed 불안정성으로 읽지 말 것 — 해석 대상은 alpha × residual 출력이다.)")
     L.append("   · Transformer 나 더 큰 fusion 모델이 실패한다는 것을 증명하지 않는다.")
     L.append("     동시에, 그것을 시도할 근거가 생겼다는 뜻도 전혀 아니다.")
     L.append("   · MIT-BIH DS1→DS2 에서의 결과를 예측하지 않는다. 이 실험은 SVDB 다.")
@@ -1952,9 +1985,10 @@ def executive_summary_ko(bundle: RunBundle) -> str:
         L.append("   1. Transformer·대형 fusion 모델로 가지 않는다 (사전 등록된 중단 규칙).")
         L.append("   2. morphology baseline 을 확정 기준선으로 고정하고 기록한다.")
         if stalled.get("available") and stalled.get("all_zero"):
-            L.append("   3. 그 전에, 잔차 분기가 학습조차 안 된 것이 스케줄 문제인지 확인한다")
-            L.append("      (learning rate / epoch 수 / early stopping 기준). 이는 새 가설이")
-            L.append("      아니라 이번 실행의 타당성 점검이므로, 별도 spec 으로 사전 등록한다.")
+            L.append("   3. 그 전에, 모든 (seed × fold) 가 첫 epoch 체크포인트에서 멈춘 것이")
+            L.append("      스케줄 문제인지, 첫 epoch 이후 과적합인지, checkpoint 선택 기준")
+            L.append("      문제인지 분리한다. 이는 새 가설이 아니라 이번 실행의 타당성")
+            L.append("      점검이므로, 별도 spec 으로 사전 등록한다.")
             L.append("   4. 그다음 실패 레코드·하위꼬리 분석으로 돌아간다"
                      " (patient_delta_waterfall.png 참조).")
         else:
@@ -2227,12 +2261,14 @@ def fig_fold_training_diagnostics(bundle: RunBundle) -> List[str]:
     stalled = training_stalled(bundle, ARM_C)
     if stalled.get("available") and stalled.get("all_zero"):
         fig.suptitle(
-            f"WARNING — Arm C selected best_epoch = 0 in "
-            f"{stalled['n_best_epoch_zero']}/{stalled['n_total']} (seed x fold). "
-            f"No epoch after the first beat epoch 0 on dev BCE loss, so the residual "
-            f"branch reverted to its near-initial state.\n"
-            f"The NO-GO therefore reflects 'the residual never switched on under this "
-            f"schedule', not 'the raw waveform carries nothing'.",
+            f"WARNING - Arm C selected best_epoch = 0 in "
+            f"{stalled['n_best_epoch_zero']}/{stalled['n_total']} (seed x fold): the "
+            f"checkpoint after the FIRST completed training epoch (~77-79 optimizer "
+            f"steps), not the pre-training state. No later epoch improved dev BCE.\n"
+            f"The pre-training checkpoint (epoch -1) was never evaluated as a dev "
+            f"candidate, so whether epoch 0 improves on the exact morphology baseline "
+            f"is undecidable from this run. alpha sign can flip with the head's sign; "
+            f"interpret alpha x residual, not the sign of alpha.",
             fontsize=10, color="tab:red", y=1.02)
     return [_save(fig, os.path.join(bundle.figures_dir,
                                     "fold_training_diagnostics.png"))]
@@ -2452,7 +2488,8 @@ def _report_markdown(bundle: RunBundle, figures: List[str], patient_rows: List[d
         L.append(f"- **{ARM_KO.get(arm, arm)}**")
     L.append("")
     L.append("`final_logit = morph_offset + alpha * cnn_residual` 이며 `alpha` 는 정확히 0")
-    L.append("에서 출발한다(초기 상태가 baseline 과 동일 → 하한 보장). 잔차 head 는 xavier")
+    L.append("에서 출발한다(초기 *출력*이 baseline 과 동일하다는 뜻일 뿐, 학습 후 선택된")
+    L.append("체크포인트의 성능 하한을 보장하지는 않는다). 잔차 head 는 xavier")
     L.append("초기화한다 — `alpha` 와 head 를 동시에 0 으로 두면 서로의 기울기를 0 에 가두는")
     L.append("Q4-N 의 초기화 데드락이 재현된다.")
     L.append("")
@@ -2529,11 +2566,16 @@ def _report_markdown(bundle: RunBundle, figures: List[str], patient_rows: List[d
                  f"(seed × fold) 에서 `best_epoch = 0`.")
         if stalled.get("all_zero"):
             L.append("")
-            L.append("> ⚠️ **전부 epoch 0 이다.** dev BCE 손실 기준으로 첫 epoch 이후 어떤")
-            L.append("> 지점도 epoch 0 보다 낫지 않았다는 뜻이고, 잔차 분기는 사실상 학습되기")
-            L.append("> 전 상태의 체크포인트로 되돌아갔다. 이 사실은 NO-GO 의 해석 범위를")
-            L.append("> 좁힌다 — 이번 결과는 '원파형에 정보가 없다'가 아니라 '이 학습")
-            L.append("> 스케줄에서 잔차가 켜지지 않았다'에 가깝다.")
+            L.append("> ⚠️ **전부 epoch 0 이다.** 모든 (seed × fold) 에서 **첫 번째 학습")
+            L.append("> epoch 완료 후**의 체크포인트가 선택됐고, 이후 epoch 는 dev BCE 를")
+            L.append("> 개선하지 못했다는 뜻이다. epoch 0 은 학습 전 상태가 아니다 — 한")
+            L.append("> epoch 분량(약 77~79 optimizer step)의 업데이트를 거쳤고, 선택된")
+            L.append("> 체크포인트의 alpha 도 0 이 아니다(대체로 |0.078~0.101|). 이 run 은")
+            L.append("> 학습 전 체크포인트(epoch -1)를 dev 후보로 평가하지 않았으므로,")
+            L.append("> epoch 0 이 정확한 morphology baseline 보다 개선됐는지는 판정할 수")
+            L.append("> 없다. alpha 의 부호는 head 부호와 함께 뒤집힐 수 있으므로 부호를")
+            L.append("> seed 불안정성으로 해석하지 말 것 — 해석 대상은 alpha × residual")
+            L.append("> 출력이다.")
     else:
         L.append("이 run 의 manifest 에 per-fold 학습 진단이 없다.")
     L.append("")
@@ -2554,8 +2596,9 @@ def _report_markdown(bundle: RunBundle, figures: List[str], patient_rows: List[d
     L.append("- NO-GO 는 Transformer 나 더 큰 fusion 모델을 시도할 근거가 아니다. "
              "사전 등록된 중단 규칙이 이를 금지한다.")
     if stalled.get("all_zero"):
-        L.append("- 다음 결정의 1순위는 **학습 스케줄 타당성 점검**이다"
-                 "(learning rate · epoch 수 · early stopping 기준). "
+        L.append("- 다음 결정의 1순위는 **best_epoch = 0 의 원인 분리**다"
+                 "(learning rate · 첫 epoch 이후 과적합 · checkpoint 선택 기준, "
+                 "그리고 학습 전 상태(epoch -1)를 후보에 포함한 재평가). "
                  "이는 새 과학적 가설이 아니라 이번 실행의 타당성 확인이므로, "
                  "별도 spec 으로 사전 등록한 뒤 진행한다.")
     L.append("- 그다음은 실패 레코드·하위꼬리 분석이다.")

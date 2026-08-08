@@ -132,8 +132,10 @@ final_logit = morph_offset + alpha * cnn_residual
 - `morph_offset` is the **cross-fitted** Arm A logit (Section "Leakage-free
   stacking").
 - `cnn_residual` reads the current beat's two lead waveforms only.
-- `alpha` is initialised at exactly `0.0`, which guarantees the model starts at the
-  morphology baseline and therefore has a guaranteed lower bound at initialisation.
+- `alpha` is initialised at exactly `0.0`, so the model's *initial output* equals
+  the morphology baseline's. This is an initialisation property only — it does not
+  guarantee that the checkpoint selected after training performs at least as well as
+  the baseline (see the 2026-08-08 Decision-log entry on `best_epoch = 0` semantics).
 - The residual head's last linear layer is initialised **xavier-uniform**, not zeros.
   Initialising `alpha = 0` and the head weights `= 0` at the same time creates the
   gradient deadlock diagnosed in Q4-N (`∂L/∂alpha ∝ h(z) = 0` and
@@ -422,16 +424,26 @@ applied silently.
 
 ## 2026-08-06 — Early-stopping warmup (`DL_MIN_EPOCH = 4`)
 
-Found during the CPU smoke run. Because `alpha` starts at exactly `0`, epoch 0's dev
-loss *is* the morphology baseline's loss. With a bare patience counter, an arm whose
-residual is not immediately helpful stops at epoch 0, before `alpha` has left zero —
-which makes the arm **untestable** rather than merely unhelpful, and would let a real
-effect go unmeasured.
+Found during the CPU smoke run. `alpha` starts at exactly `0`, so the model's
+*initial output* equals the offset's. With a bare patience counter, an arm whose
+residual is not immediately helpful can end training after very few epochs, before
+`alpha` has moved far from zero — which risks leaving a real effect under-trained
+rather than measured.
 
-Fix: early stopping cannot fire before epoch `DL_MIN_EPOCH = 4`. Best-checkpoint
-selection is unchanged, so the guaranteed lower bound still holds — if the residual
-genuinely does not help, the restored checkpoint is still the near-baseline one.
-Decided a priori from the gradient structure, not from any measured contrast.
+Fix: early stopping cannot fire before epoch `DL_MIN_EPOCH = 4`, i.e. at least four
+full training epochs always run. Best-checkpoint selection is unchanged. Decided a
+priori from the gradient structure, not from any measured contrast.
+
+*Corrected 2026-08-08*: this entry originally claimed "epoch 0's dev loss *is* the
+morphology baseline's loss". That is wrong for this implementation — dev loss is
+first computed **after** the first epoch's minibatch updates (~77–79 optimizer steps
+at batch 1024 on the real cohort), so epoch 0 is a post-update checkpoint, and the
+pre-training state (epoch −1) is never a dev candidate (`best_loss` starts at `inf`,
+so the epoch-0 checkpoint always replaces the initial `best_state`). `DL_MIN_EPOCH`
+guarantees a minimum number of epochs are *run*; it does not prevent the best
+checkpoint from being epoch 0. Consequently there is no "guaranteed lower bound" on
+the selected checkpoint's performance; `alpha = 0` at init gives initial output
+equality only.
 
 ## 2026-08-06 — `comb_baseline_diagnostic` added so Arm E is interpretable
 
@@ -591,6 +603,10 @@ Two self-checks make the "presentation only" claim testable rather than asserted
 2. **Immutability** — `config.json`, `manifest.json`, `result.json`, `fold_map.json`,
    `predictions.npz`, and every `arms/*/probs.npy` are SHA256-fingerprinted before and
    after reporting, and any change raises. A test asserts the fingerprints are equal.
+   *(2026-08-08)* `training_history.json` is included in the fingerprint **when it
+   exists** — i.e. for runs executed after history recording was added. Runs without
+   one (such as `20260806T0923`) are unaffected; the file is never created
+   retroactively, and a test asserts both directions.
 
 Interpretive choices worth recording, because they shape how the run reads:
 
@@ -602,13 +618,19 @@ Interpretive choices worth recording, because they shape how the run reads:
   plain difference of means is reported and explicitly labelled `mean_difference`, so
   it is never mistaken for a paired result.
 - **The report states what the NO-GO does not prove.** In this run Arm C selected
-  `best_epoch = 0` in every (seed × fold) combination, which means no epoch after the
-  first improved dev BCE loss and the residual branch reverted to a near-initial
-  checkpoint. The report says so, in the executive summary, on the diagnostics figure,
-  and in `report_summary.md`: this NO-GO is closer to "the residual never switched on
-  under this schedule" than to "the raw waveform carries nothing". That does **not**
-  license a Transformer — the pre-registered stopping rule still forbids it — but it
-  does make the training schedule the first thing a follow-up spec should check.
+  `best_epoch = 0` in every (seed × fold) combination: the checkpoint after the
+  **first completed training epoch** (~77–79 optimizer steps at batch 1024) was
+  selected, and no later epoch improved dev BCE loss. Epoch 0 is a post-update
+  state, not the pre-training initialisation — the selected checkpoints' `alpha`
+  values are mostly `|0.078–0.101|`, not 0. Because the pre-training checkpoint
+  (epoch −1) was never evaluated as a dev candidate, this run cannot decide whether
+  epoch 0 improved on the exact morphology baseline. The report says so, in the
+  executive summary, on the diagnostics figure, and in `report_summary.md`. That
+  does **not** license a Transformer — the pre-registered stopping rule still
+  forbids it — but it makes the cause of `best_epoch = 0` (schedule, first-epoch
+  overfitting, or checkpoint-selector definition) the first thing a follow-up spec
+  should separate. `alpha`'s sign can flip together with the head's sign, so the
+  sign alone is not seed instability; interpret `alpha × residual` instead.
 
 ## 2026-08-06 — Axis fix: primary and reference contrasts were sharing a scale
 
@@ -642,9 +664,42 @@ Constraints honoured:
   history file of its own. A test copies a bundle, deletes its history, and asserts
   exactly that.
 
-## 2026-08-06 — Result status
+## 2026-08-08 — Presentation/semantics correction (no measured value changed)
 
-**No GPU run has been executed.** No arm value, no delta, and no PASS/NO-GO verdict
-exists yet. `registry.jsonl` append is implemented but only ever writes values that
-came out of an actual run. Nothing in this spec, in the code, or in the notebook may
-be read as a result.
+Phase A of the post-run review corrected the *description* of `best_epoch = 0`
+everywhere it appears (this spec, the module's report prose, the diagnostics-figure
+caption, the notebook): epoch 0 is the checkpoint after the first **completed**
+training epoch, not a reversion to the pre-training initialisation, and the run
+never evaluated the pre-training checkpoint (epoch −1) as a dev candidate. All
+"guaranteed lower bound"-type claims, pre-training-reversion claims, and
+"residual never turned on" phrasings were removed or replaced. The Q4-O training loop, checkpoint selection, and every measured
+artifact (`config.json`, `manifest.json`, `result.json`, `fold_map.json`,
+`predictions.npz`, `arms/*/probs.npy`) are unchanged — tests fingerprint them
+before/after reporting. The test runner also hardens stdout so Windows CP949
+consoles do not die on non-ASCII characters (em dashes, box-drawing rules) in test
+output.
+
+## 2026-08-06 — Result status *(superseded — see 2026-08-08 update below)*
+
+At the time this entry was written, no GPU run had been executed. `registry.jsonl`
+append is implemented but only ever writes values that came out of an actual run.
+
+## 2026-08-08 — Result status update: the GPU run has been executed — verdict NO-GO
+
+The pre-registered GPU run was executed on 2026-08-06 (Colab, Tesla T4) at repo
+commit `624e987b917ec021c9fc2130f37f6f35e720601c`. The run bundle is
+`runs/20260806T0923_EXP-2026-001_q4o_leakage_free_residual_cnn` on Drive
+(`MedKOS/ecg-model/runs/`). Measured values, read from that bundle's `result.json`
+(the authoritative record — nothing here re-measures anything):
+
+- Arm A (morph baseline) k-sweep mean `0.830955`; Arm C (primary) `0.831821`
+- `C − A` `+0.000866`, 95% CI `[-0.002083, +0.004206]`
+- `C − D` `+0.001302`, 95% CI `[-0.001642, +0.004600]`
+- `E − cleanComb` `+0.003743`, 95% CI `[-0.003532, +0.011847]`
+- Gates: 3/6 passed → final verdict **NO-GO**
+
+Arm C selected `best_epoch = 0` (the first-completed-epoch checkpoint — see the
+2026-08-08 semantics correction above) in all 25 seed×fold combinations. The run
+predates training-history recording, so it has no `training_history.json`, and none
+is created retroactively. Follow-up: EXP-2026-002 / Q4-P separates the candidate
+causes of `best_epoch = 0` without re-running or modifying this experiment.

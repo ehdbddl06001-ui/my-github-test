@@ -17,6 +17,7 @@ Run:  python mit-bih/test_q4o_leakage_free_residual.py
 """
 from __future__ import annotations
 
+import io
 import json
 import os
 import shutil
@@ -24,6 +25,35 @@ import sys
 import tempfile
 
 import numpy as np
+
+
+def _harden_stdout() -> None:
+    """Keep the runner alive on consoles that cannot encode non-ASCII output.
+
+    Windows CP949 (and other legacy codepages) raise UnicodeEncodeError on the em
+    dashes and box-drawing rules this runner prints. Printing a garbled character is
+    acceptable; dying before the first test is not.
+    """
+    for name in ("stdout", "stderr"):
+        stream = getattr(sys, name, None)
+        if stream is None:
+            continue
+        enc = getattr(stream, "encoding", None) or "utf-8"
+        try:
+            "—─".encode(enc)
+            continue                       # this console can print everything we emit
+        except (UnicodeEncodeError, LookupError):
+            pass
+        try:
+            stream.reconfigure(errors="replace")
+        except (AttributeError, ValueError):
+            buf = getattr(stream, "buffer", None)
+            if buf is not None:
+                setattr(sys, name, io.TextIOWrapper(
+                    buf, encoding=enc, errors="replace", line_buffering=True))
+
+
+_harden_stdout()
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -457,7 +487,7 @@ def test_residual_gradient_alive() -> None:
        f"the deadlock is broken")
     ok(good0["head_weight_grad"] == 0.0,
        "the head's step-0 gradient is 0 because alpha starts at 0 by design "
-       "(this is the guaranteed lower bound, not the bug)")
+       "(initial output equality with the offset, not the bug)")
 
     # After alpha leaves zero, the residual branch itself starts learning.
     good = Q.residual_grad_is_alive(n_channel=2, init="normal", warmup_steps=3)
@@ -477,7 +507,8 @@ def test_residual_gradient_alive() -> None:
     ok(dead_warm["alpha"] == 0.0 and dead_warm["alpha_grad"] == 0.0,
        "and the deadlocked variant is still frozen at alpha = 0 after 25 steps")
 
-    # alpha starts at exactly 0, so the model starts at the offset: lower bound held.
+    # alpha starts at exactly 0, so the model's INITIAL OUTPUT equals the offset.
+    # (An initialisation property only — nothing about the trained model follows.)
     net = Q.build_residual_net(2, init="normal")
     ok(float(net.alpha.detach().abs().sum()) == 0.0,
        "alpha is initialised to exactly 0 (the arm starts at the morphology baseline)")
@@ -1064,6 +1095,173 @@ def test_report_does_not_invent_history() -> None:
         _BUNDLE_CACHE.clear()
 
 
+def test_epoch_zero_is_post_update() -> None:
+    section("16. epoch 0 semantics — the first dev eval happens AFTER optimizer steps")
+    try:
+        import torch
+    except Exception as exc:
+        ok(False, f"torch unavailable: {exc}")
+        return
+
+    cohort = Q.synthetic_cohort(n_record=8, n_beat=110, seed=11)
+    rec_ok, burden, fold_map = _folds(cohort)
+    X = Q.current_beat_input(cohort)
+    offset = np.zeros(cohort.n, dtype=float)
+    te_recs = [r for r, g in fold_map.items() if g == 0]
+    tr_recs = [r for r, g in fold_map.items() if g != 0]
+    fit_recs, dv_recs = Q.dev_records(tr_recs, burden)
+    fit_idx = Q.samples_of(cohort, fit_recs)
+    dev_idx = Q.samples_of(cohort, dv_recs)
+    te_idx = Q.samples_of(cohort, te_recs)
+
+    Q.set_determinism(Q.SEED0)
+    net = Q.build_residual_net(X.shape[1], init="normal")
+    init_state = {k: v.detach().clone() for k, v in net.state_dict().items()}
+
+    # Count optimizer steps without touching the training loop itself.
+    calls = {"n": 0}
+    orig_adam = torch.optim.Adam
+
+    class CountingAdam(orig_adam):
+        def step(self, *a, **k):
+            calls["n"] += 1
+            return super().step(*a, **k)
+
+    torch.optim.Adam = CountingAdam
+    try:
+        batch = 256
+        scores, alpha, best_ep, dev_loss, hist = Q._train_one_fold(
+            net, X, offset, cohort.y, fit_idx, dev_idx, te_idx,
+            Q.SEED0, "cpu", epochs=1, batch=batch)
+    finally:
+        torch.optim.Adam = orig_adam
+
+    n_minibatch = int(np.ceil(len(fit_idx) / batch))
+    ok(calls["n"] == n_minibatch and calls["n"] >= 1,
+       f"one epoch ran {calls['n']} optimizer steps ({n_minibatch} minibatches) "
+       f"BEFORE the first dev evaluation — epoch 0 is a post-update checkpoint")
+    ok(best_ep == 0,
+       "with a single epoch the selected checkpoint is epoch 0 (best_loss starts at "
+       "inf, so the first evaluated epoch always replaces the initial best_state)")
+    ok(min(e["epoch"] for e in hist) == 0,
+       "the recorded history starts at epoch 0 — the pre-training state (epoch -1) "
+       "is never evaluated as a dev candidate in Q4-O")
+
+    # The selected checkpoint's weights differ from the initialisation, so
+    # 'best_epoch = 0' cannot mean 'reverted to the untrained state'.
+    moved = any(not torch.equal(init_state[k], v.detach().cpu())
+                for k, v in net.state_dict().items())
+    ok(moved, "the epoch-0 checkpoint's weights differ from the initialisation")
+
+    # Phase A must not have changed the selection rule: still argmin of dev BCE with
+    # the trainer's strict-improvement tie-break, over epochs >= 0 only.
+    losses = [e["dev_loss"] for e in hist]
+    best, best_i = float("inf"), -1
+    for i, l in enumerate(losses):
+        if l < best - 1e-6:
+            best, best_i = l, i
+    ok(best_i == best_ep,
+       "checkpoint selection is unchanged — best_epoch is still argmin of the "
+       "recorded dev BCE loss")
+
+
+def test_no_pretraining_restore_claims() -> None:
+    section("17. prose — no 'reverted to untrained' / 'guaranteed lower bound' claims")
+    root = os.path.dirname(os.path.abspath(__file__))
+    targets = {
+        "module": os.path.join(root, "q4o_leakage_free_residual.py"),
+        "spec": os.path.join(root, os.pardir, "experiments", "specs",
+                             "EXP-2026-001-q4o-leakage-free-residual-cnn.md"),
+        "notebook": os.path.join(root, os.pardir, "notebooks",
+                                 "quest47_q4o_leakage_free_residual_cnn.ipynb"),
+    }
+    # Affirmative-form phrasings only. Corrected text may QUOTE the old claim in
+    # negation ("this entry originally claimed ..."), so the patterns below are the
+    # exact assertive forms the correction removed.
+    forbidden = [
+        "학습되기 전",                    # "the pre-training checkpoint" (assertive)
+        "학습 전 상태로 되돌아갔다",       # "reverted to the untrained state"
+        "되돌아갔다",
+        "untrained state",
+        "never switched on",
+        "reverted to its near-initial",
+        "reverted to a near-initial",
+        "guaranteed lower bound at initialisation",
+        "guaranteed lower bound still holds",
+        "lower bound guaranteed",
+        "하한 보장",
+    ]
+    for name, path in targets.items():
+        if not os.path.exists(path):
+            ok(False, f"{name} not found at {path}")
+            continue
+        text = open(path, encoding="utf-8").read()
+        hits = [p for p in forbidden if p in text]
+        ok(not hits, f"{name} carries no pre-training-restore claim "
+                     f"({'clean' if not hits else 'found: ' + ', '.join(hits)})")
+
+
+def test_fingerprint_covers_history_when_present() -> None:
+    section("18. fingerprint — training_history.json included iff the run wrote one")
+    tmp = tempfile.mkdtemp(prefix="q4o_fp_")
+    try:
+        for name in ("config.json", "manifest.json", "result.json",
+                     "fold_map.json", "predictions.npz"):
+            with open(os.path.join(tmp, name), "wb") as fh:
+                fh.write(name.encode())
+        hist_path = os.path.join(tmp, "training_history.json")
+
+        fp = Q.bundle_fingerprint(tmp)
+        ok("training_history.json" not in fp,
+           "a run without training_history.json is fingerprinted without it")
+        ok(not os.path.exists(hist_path),
+           "fingerprinting a history-less run does not create the file")
+
+        with open(hist_path, "w", encoding="utf-8") as fh:
+            fh.write("[]")
+        fp2 = Q.bundle_fingerprint(tmp)
+        ok("training_history.json" in fp2,
+           "a run that wrote training_history.json gets it fingerprinted — reporting "
+           "can no longer alter it silently")
+        ok(set(fp) <= set(fp2) and all(fp[k] == fp2[k] for k in fp),
+           "adding the history changes nothing about the other artifacts' hashes")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_windows_console_survives() -> None:
+    section("19. Windows CP949 console — the runner does not die on em dashes")
+    # The guarded failure: a strict cp949 stream rejects an em dash.
+    strict = io.TextIOWrapper(io.BytesIO(), encoding="cp949", errors="strict")
+    try:
+        strict.write("—")
+        strict.flush()
+        raised = False
+    except UnicodeEncodeError:
+        raised = True
+    ok(raised, "a strict cp949 stream rejects an em dash (this is what is guarded)")
+
+    # Swap stdout for a strict cp949 stream, harden, and print what the runner prints.
+    old = sys.stdout
+    raw = io.BytesIO()
+    strict_out = io.TextIOWrapper(raw, encoding="cp949", errors="strict")
+    sys.stdout = strict_out
+    survived, captured = True, b""
+    try:
+        _harden_stdout()
+        print("— ─ EXP-2026-001 / Q4-O — test banner")
+        sys.stdout.flush()
+        captured = raw.getvalue()      # read before any wrapper can be GC-closed
+    except UnicodeEncodeError:
+        survived = False
+    finally:
+        sys.stdout = old
+    ok(survived,
+       "after _harden_stdout() the banner prints on a cp949 console without raising")
+    ok(b"EXP-2026-001" in captured,
+       "the output still reaches the console (characters replaced, not dropped)")
+
+
 def main() -> int:
     print("=" * 78)
     print("EXP-2026-001 / Q4-O — leakage-free residual CNN")
@@ -1085,7 +1283,11 @@ def main() -> int:
                test_cpu_smoke_run,
                test_training_history_recording,
                test_reporting,
-               test_report_does_not_invent_history):
+               test_report_does_not_invent_history,
+               test_epoch_zero_is_post_update,
+               test_no_pretraining_restore_claims,
+               test_fingerprint_covers_history_when_present,
+               test_windows_console_survives):
         try:
             fn()
         except Exception as exc:                                # noqa: BLE001
