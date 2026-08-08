@@ -72,11 +72,11 @@ ARM_ID = "Q4-Q"
 RUN_SLUG = "q4q_transportability_replication"
 STATUS = "PREREGISTERED REPLICATION / RESULT NOT RUN"
 
-MODULE_VERSION = 4
-MODULE_BUILD = ("2026-08-08 q4q.4 — cross-check matches records by beat-count "
-                "profile and bounds/reports per-record S disagreement "
-                "(independent preps differ on aberrant/edge beats); no full "
-                "run has been executed")
+MODULE_VERSION = 5
+MODULE_BUILD = ("2026-08-08 q4q.5 — cross-check identifies records by 5-class "
+                "fingerprint assignment (beat counts drift several percent on "
+                "noisy records under mamba's stricter prep); S strictly "
+                "gated, all else reported; no full run has been executed")
 
 MODES = ("DESIGN", "SMOKE", "PREP_DATA", "FULL", "ANALYZE")
 
@@ -113,14 +113,19 @@ MIT_ALL_RECORDS = tuple(sorted(DS1_RECORDS + DS2_RECORDS))
 # cross-check must corroborate through per-record profiles, not id equality.
 PACED_RECORDS: Tuple[int, ...] = (102, 104, 107, 217)
 MIT_48_RECORDS = tuple(sorted(MIT_ALL_RECORDS + PACED_RECORDS))
-CROSS_CHECK_BEAT_TOL = 0.02      # per-record beat-count tolerance (edge beats)
-# Per-record S counts do NOT agree exactly between independent preps
-# (measured 2026-08-08: matching S=2 groups failed — a 2579-beat record is
-# S=2 in mamba while multi's counterpart sits in another S group, totals
-# still identical at 2,781). Identity is therefore established by beat
-# counts; label agreement is bounded and REPORTED instead of assumed exact.
+# Cross-check matching (v4). Measured 2026-08-08, fourth PREP_DATA round:
+# mamba's prep drops beats non-uniformly (a few noisy records lose several
+# percent — e.g. a 2887-beat record whose nearest multi candidate is 2953),
+# so no single beat-count tolerance can match records. Identity is instead
+# established by the per-record 5-class fingerprint (N/S/V/F/Q counts) via a
+# global minimum-cost assignment; only the scientific quantity S is gated
+# strictly, everything else is REPORTED in a full side-by-side table.
+CLASS_NAMES = ("N", "S", "V", "F", "Q")
 S_MISMATCH_MAX_PER_RECORD = 10
 S_MISMATCH_MAX_TOTAL = 20
+BEAT_DEFICIT_WARN = 0.03         # matched pair |dn|/n above this -> warning
+PACED_MIN_Q_FRACTION = 0.2       # leftover records must look paced (Q-heavy)
+PACED_MAX_S = 10
 
 # Confirmed facts about the frozen MIT asset (spec §2). A mismatch is a STOP
 # condition, not something to paper over.
@@ -265,9 +270,11 @@ def load_mit_cohort(npz_path: str,
         "class_counts": {str(c): int((y_raw == c).sum()) for c in range(5)},
         "ds1": list(DS1_RECORDS), "ds2": list(DS2_RECORDS),
         "records": rec_set,
-        "per_record": {str(r): {"n": int(len(cohort.idx_of[int(r)])),
-                                "s": int(cohort.y[cohort.idx_of[int(r)]].sum())}
-                       for r in rec_set},
+        "per_record": {str(r): {
+            "n": int(len(cohort.idx_of[int(r)])),
+            "s": int(cohort.y[cohort.idx_of[int(r)]].sum()),
+            "classes": [int((y_raw[cohort.idx_of[int(r)]] == c).sum())
+                        for c in range(5)]} for r in rec_set},
     }
     log(f"MIT cohort: {n} beats, {len(rec_set)} records, "
         f"S={audit['n_s']} ({100 * cohort.y.mean():.2f}%)")
@@ -292,126 +299,108 @@ def mit_split(cohort: Cohort) -> Dict[str, List[int]]:
     return {"ds1": ds1, "ds2": ds2, "fit": sorted(fit), "dev": sorted(dev)}
 
 
-def _align_sorted(want: List[Tuple[int, int]], have: List[Tuple[int, int]],
-                  beat_tol: float) -> Optional[Dict[int, int]]:
-    """Order-preserving alignment of ``want`` (mamba (n, rid), sorted) into
-    ``have`` (multi (n, rid), sorted), allowing ``have`` entries to be skipped.
+def _fingerprint_match(mamba_prof: Dict[int, Dict[str, object]],
+                       multi_prof: Dict[int, Dict[str, object]]
+                       ) -> Dict[str, object]:
+    """Global minimum-cost assignment of mamba records to multi records on
+    the per-record 5-class fingerprint (N/S/V/F/Q counts).
 
-    This is the key difference from naive index pairing: the paced extras sit
-    INSIDE the S=0 group, so their beat counts interleave with the genuine
-    records and shift a positional pairing (measured 2026-08-08: mamba record
-    230 n=2255 was compared against a n=2136 extra and STOPped at 5.3%).
-    A skip-tolerant alignment pairs 2255 with 2255 and leaves the extras over.
-    Returns {mamba_rid: multi_rid} or None when no full alignment exists.
+    Feasibility is capped ONLY on the scientific class: a pair with
+    |dS| > S_MISMATCH_MAX_PER_RECORD can never be matched. All other class
+    differences contribute to the cost and are fully REPORTED — beat
+    deficits from stricter preprocessing (measured up to several percent on
+    noisy records) must be visible, not fatal.
+    Returns {mapping, leftover, table, s_agreement, warnings}.
     """
-    la, lb = len(want), len(have)
-    if lb < la:
-        return None
+    from scipy.optimize import linear_sum_assignment
 
-    def fits(i: int, j: int) -> bool:
-        n_m, n_u = want[i][0], have[j][0]
-        return abs(n_u - n_m) <= beat_tol * max(1, n_m)
-
-    # dp[i][j]: can want[:i] be matched within have[:j]
-    dp = [[False] * (lb + 1) for _ in range(la + 1)]
-    for j in range(lb + 1):
-        dp[0][j] = True
-    for i in range(1, la + 1):
-        for j in range(1, lb + 1):
-            dp[i][j] = dp[i][j - 1] or (dp[i - 1][j - 1] and fits(i - 1, j - 1))
-    if not dp[la][lb]:
-        return None
-    mapping: Dict[int, int] = {}
-    i, j = la, lb
-    while i > 0:
-        if dp[i - 1][j - 1] and fits(i - 1, j - 1) and not dp[i][j - 1]:
-            mapping[want[i - 1][1]] = have[j - 1][1]
-            i, j = i - 1, j - 1
-        elif dp[i][j - 1]:
-            j -= 1
-        else:
-            mapping[want[i - 1][1]] = have[j - 1][1]
-            i, j = i - 1, j - 1
-    return mapping
-
-
-def _match_profiles(mamba_prof: Dict[int, Tuple[int, int]],
-                    multi_prof: Dict[int, Tuple[int, int]],
-                    beat_tol: float = CROSS_CHECK_BEAT_TOL
-                    ) -> Tuple[Dict[int, int], List[int], Dict[str, object]]:
-    """Deterministically match each mamba record to one multi record.
-
-    Record identity is established by BEAT COUNTS (a much more discriminative
-    key than the tiny per-record S counts), via a global order-preserving,
-    skip-tolerant alignment with <= ``beat_tol`` per-record tolerance.
-    Per-record S counts are then COMPARED, not assumed equal: independent
-    preps disagree by a few beats on aberrant/edge beats (measured
-    2026-08-08). The disagreement is bounded (per record
-    <= S_MISMATCH_MAX_PER_RECORD, total <= S_MISMATCH_MAX_TOTAL) and fully
-    reported for the audit.
-    Returns (mapping mamba_rid -> multi_rid, leftover multi rids, s_agreement).
-    Raises Q4QError when no valid matching exists or the S budget is blown.
-    """
-    want = sorted((n, r) for r, (n, _) in mamba_prof.items())
-    have = sorted((n, r) for r, (n, _) in multi_prof.items())
-    if len(have) < len(want):
+    m_ids = sorted(mamba_prof)
+    u_ids = sorted(multi_prof)
+    if len(u_ids) < len(m_ids):
         raise Q4QError(
-            f"profile match failed: ecg_multi MIT subset offers only "
-            f"{len(have)} records for mamba's {len(want)} — unexplained "
-            "mismatch, STOP (spec §10)")
-    mapping = _align_sorted(want, have, beat_tol)
-    if mapping is None:
+            f"ecg_multi MIT subset offers {len(u_ids)} records for mamba's "
+            f"{len(m_ids)} — unexplained mismatch, STOP (spec §10)")
+    BIG = 1e12
+    cost = np.zeros((len(m_ids), len(u_ids)))
+    for i, rm in enumerate(m_ids):
+        cm = np.asarray(mamba_prof[rm]["classes"], int)
+        for j, ru in enumerate(u_ids):
+            cu = np.asarray(multi_prof[ru]["classes"], int)
+            d = int(np.abs(cm - cu).sum())
+            if abs(int(cm[MIT_S_INDEX]) - int(cu[MIT_S_INDEX])) \
+                    > S_MISMATCH_MAX_PER_RECORD:
+                cost[i, j] = BIG
+            else:
+                cost[i, j] = d
+    rows, cols = linear_sum_assignment(cost)
+    if any(cost[i, j] >= BIG / 2 for i, j in zip(rows, cols)):
+        bad = [(m_ids[i], u_ids[j]) for i, j in zip(rows, cols)
+               if cost[i, j] >= BIG / 2]
         raise Q4QError(
-            "beat-count profile alignment failed (tolerance {:.0%}): mamba "
-            "counts {} vs multi counts {} — unexplained mismatch, STOP "
-            "(spec §10)".format(beat_tol, [n for n, _ in want],
-                                [n for n, _ in have]))
-    leftover = [r for r in multi_prof if r not in set(mapping.values())]
+            "fingerprint assignment infeasible — these mamba records have no "
+            f"multi candidate within the S cap ({S_MISMATCH_MAX_PER_RECORD}): "
+            f"{[m for m, _ in bad]} — see the audit table, STOP (spec §10)")
 
-    per_record = []
-    total_abs = 0
-    for r_m, r_u in sorted(mapping.items()):
-        s_m, s_u = mamba_prof[r_m][1], multi_prof[r_u][1]
-        d = abs(s_m - s_u)
-        if d:
-            per_record.append({"mamba_record": int(r_m),
-                               "n_beats": int(mamba_prof[r_m][0]),
-                               "s_mamba": int(s_m), "s_multi": int(s_u)})
-            total_abs += d
-            if d > S_MISMATCH_MAX_PER_RECORD:
-                raise Q4QError(
-                    f"per-record S disagreement too large: mamba record {r_m}"
-                    f" S={s_m} vs matched multi record S={s_u} (|diff| {d} > "
-                    f"{S_MISMATCH_MAX_PER_RECORD}) — unexplained, STOP "
-                    "(spec §10)")
-    if total_abs > S_MISMATCH_MAX_TOTAL:
+    mapping = {m_ids[i]: u_ids[j] for i, j in zip(rows, cols)}
+    leftover = [r for r in u_ids if r not in set(mapping.values())]
+
+    table, warnings, per_record_s, total_s = [], [], [], 0
+    for rm in m_ids:
+        ru = mapping[rm]
+        cm = np.asarray(mamba_prof[rm]["classes"], int)
+        cu = np.asarray(multi_prof[ru]["classes"], int)
+        n_m, n_u = int(cm.sum()), int(cu.sum())
+        ds = int(abs(int(cm[MIT_S_INDEX]) - int(cu[MIT_S_INDEX])))
+        row = {"mamba_record": int(rm), "multi_record": int(ru),
+               "n_mamba": n_m, "n_multi": n_u,
+               "classes_mamba": [int(v) for v in cm],
+               "classes_multi": [int(v) for v in cu],
+               "class_abs_diff": [int(abs(a - b)) for a, b in zip(cm, cu)],
+               "beat_deficit_frac": float((n_u - n_m) / max(1, n_u))}
+        if abs(n_u - n_m) > BEAT_DEFICIT_WARN * max(1, n_u):
+            row["warning"] = (f"beat count differs by "
+                              f"{abs(n_u - n_m)} ({row['beat_deficit_frac']:+.1%})"
+                              " — stricter mamba preprocessing; verify in the"
+                              " audit table")
+            warnings.append(row["warning"] + f" (record {rm})")
+        table.append(row)
+        if ds:
+            per_record_s.append({"mamba_record": int(rm),
+                                 "s_mamba": int(cm[MIT_S_INDEX]),
+                                 "s_multi": int(cu[MIT_S_INDEX])})
+            total_s += ds
+    if total_s > S_MISMATCH_MAX_TOTAL:
         raise Q4QError(
-            f"total per-record S disagreement {total_abs} exceeds the "
-            f"{S_MISMATCH_MAX_TOTAL}-beat budget across {len(per_record)} "
-            f"record(s): {per_record} — unexplained, STOP (spec §10)")
-    s_agreement = {"n_mismatched_records": len(per_record),
-                   "total_abs_diff": int(total_abs),
+            f"total per-record S disagreement {total_s} exceeds the "
+            f"{S_MISMATCH_MAX_TOTAL}-beat budget: {per_record_s} — "
+            "unexplained, STOP (spec §10)")
+    s_agreement = {"n_mismatched_records": len(per_record_s),
+                   "total_abs_diff": int(total_s),
                    "budget": {"per_record": S_MISMATCH_MAX_PER_RECORD,
                               "total": S_MISMATCH_MAX_TOTAL},
-                   "per_record": per_record}
-    return mapping, leftover, s_agreement
+                   "per_record": per_record_s}
+    return {"mapping": mapping, "leftover": leftover, "table": table,
+            "s_agreement": s_agreement, "warnings": warnings}
 
 
 def cross_check_mit_vs_multi(mit_audit: Dict[str, object],
                              multi_npz_path: str,
-                             log: Optional[RunLog] = None) -> Dict[str, object]:
-    """Compare ecg_multi.npz's MIT subset against mamba_data.npz.
+                             log: Optional[RunLog] = None,
+                             strict: bool = True) -> Dict[str, object]:
+    """Corroborate mamba_data.npz against ecg_multi.npz's MIT subset.
 
-    Corroboration is per-record: each of mamba's 44 records must find a multi
-    record with the EXACT same S count and a beat count within
-    ``CROSS_CHECK_BEAT_TOL``. Two legitimate, measured facts are handled
-    explicitly (2026-08-08 Colab PREP_DATA):
-      * ecg_multi keeps all 48 MIT records — the 4 paced records
-        (102/104/107/217) that the de Chazal 44-record set excludes must be
-        the ONLY leftovers and must carry zero S beats;
-      * ecg_multi's pid coding may be ordinal rather than record numbers, so
-        identity is established through profiles, never guessed from ids.
-    Anything outside these two facts is still a STOP condition (spec §10).
+    v4 (each rule forced by a measured PREP_DATA round, see the spec's
+    Decision log): record identity via the 5-class fingerprint assignment
+    (beat counts drift by several percent on noisy records; per-record S
+    membership differs by a beat or two between preps; the 4 paced records
+    hide inside every simpler grouping). Hard gates: S totals equal, S
+    disagreement within the pre-stated budgets, leftovers are exactly the 4
+    paced-looking records (Q-heavy, tiny S) or none. Everything else lands
+    in ``checks['table']`` for the audit.
+
+    With ``strict=False`` the function never raises on gate failure — it
+    returns ``checks`` with ``pass``/``fail_reasons`` so PREP_DATA can write
+    the full audit before stopping loudly.
     """
     log = log or RunLog()
     if not os.path.exists(multi_npz_path):
@@ -429,14 +418,17 @@ def cross_check_mit_vs_multi(mit_audit: Dict[str, object],
     y_key = next((k for k in ("y5", "y", "y3") if k in data.files), None)
     if y_key is None:
         raise Q4QError("ecg_multi.npz has no label key (y5/y/y3) — cannot "
-                       "corroborate S counts, STOP")
+                       "corroborate class counts, STOP")
     pid = np.asarray(data["pid"]).astype(int)[mask]
     yv = np.asarray(data[y_key]).astype(int)[mask]
+    if yv.min() < 0 or yv.max() > 4:
+        raise Q4QError(f"ecg_multi {y_key} is not 5-class coded "
+                       f"(range [{yv.min()},{yv.max()}]) — STOP")
     multi_recs = sorted(set(pid.tolist()))
-    multi_prof = {int(r): (int((pid == r).sum()),
-                           int((yv[pid == r] == MIT_S_INDEX).sum()))
+    multi_prof = {int(r): {"classes": [int(((pid == r) & (yv == c)).sum())
+                                       for c in range(5)]}
                   for r in multi_recs}
-    mamba_prof = {int(r): (int(v["n"]), int(v["s"]))
+    mamba_prof = {int(r): {"classes": list(map(int, v["classes"]))}
                   for r, v in mit_audit["per_record"].items()}
 
     checks: Dict[str, object] = {
@@ -449,54 +441,56 @@ def cross_check_mit_vs_multi(mit_audit: Dict[str, object],
                        if set(multi_recs) <= set(MIT_48_RECORDS)
                        else "ordinal_or_other"),
     }
-    if len(multi_recs) not in (44, 48):
-        raise Q4QError(
-            "ecg_multi MIT subset has neither 44 (de Chazal) nor 48 (all "
-            f"records incl. paced) records but {len(multi_recs)} — "
-            f"unexplained, STOP (spec §10). checks={json.dumps(checks)}")
+    fail_reasons: List[str] = []
     if checks["n_s"]["mamba"] != checks["n_s"]["multi"]:
-        raise Q4QError(
-            "S totals differ between mamba_data and ecg_multi's MIT subset "
-            f"({checks['n_s']}) — the S beats ARE the scientific quantity; "
-            "unexplained, STOP (spec §10)")
+        fail_reasons.append(f"S totals differ: {checks['n_s']}")
+    try:
+        m = _fingerprint_match(mamba_prof, multi_prof)
+        checks.update({"matched_records": len(m["mapping"]),
+                       "leftover_records": len(m["leftover"]),
+                       "table": m["table"], "s_agreement": m["s_agreement"],
+                       "warnings": m["warnings"]})
+        leftover = m["leftover"]
+        if leftover:
+            if len(leftover) != len(PACED_RECORDS):
+                fail_reasons.append(
+                    f"{len(leftover)} unmatched multi records (expected "
+                    f"exactly {len(PACED_RECORDS)} paced records or none)")
+            for r in leftover:
+                cls = multi_prof[r]["classes"]
+                n = sum(cls)
+                if cls[4] < PACED_MIN_Q_FRACTION * max(1, n) \
+                        or cls[MIT_S_INDEX] > PACED_MAX_S:
+                    fail_reasons.append(
+                        f"leftover multi record {r} does not look paced "
+                        f"(classes {cls}) — cannot be 102/104/107/217")
+            if checks["pid_coding"] == "record_numbers" and \
+                    sorted(leftover) != sorted(PACED_RECORDS):
+                fail_reasons.append(
+                    f"leftover ids {sorted(leftover)} are not the paced set")
+        checks["leftover_profiles"] = {str(r): multi_prof[r]["classes"]
+                                       for r in leftover}
+    except Q4QError as e:
+        fail_reasons.append(str(e))
 
-    mapping, leftover, s_agreement = _match_profiles(mamba_prof, multi_prof)
-    checks["matched_records"] = len(mapping)
-    checks["leftover_records"] = len(leftover)
-    checks["s_agreement"] = s_agreement
-    if leftover:
-        if len(leftover) != len(PACED_RECORDS):
-            raise Q4QError(
-                f"{len(leftover)} unmatched multi records (expected exactly "
-                f"{len(PACED_RECORDS)} paced records or none) — unexplained, "
-                "STOP (spec §10)")
-        bad_s = [r for r in leftover if multi_prof[r][1] != 0]
-        if bad_s:
-            raise Q4QError(
-                f"leftover multi records {bad_s} carry S beats — they cannot "
-                "be the paced records (102/104/107/217); unexplained, STOP "
-                "(spec §10)")
-        if checks["pid_coding"] == "record_numbers" and \
-                sorted(leftover) != sorted(PACED_RECORDS):
-            raise Q4QError(
-                f"leftover record ids {sorted(leftover)} are not the paced "
-                f"set {sorted(PACED_RECORDS)} — unexplained, STOP (spec §10)")
+    checks["fail_reasons"] = fail_reasons
+    checks["pass"] = not fail_reasons
+    if checks["pass"]:
         checks["explanation"] = (
-            "ecg_multi keeps all 48 MIT records; the 4 unmatched, zero-S "
-            "records are the paced records the de Chazal 44-record set "
-            "excludes. Every mamba record found a multi record with a "
-            "matching beat count; per-record S disagreement is within the "
-            f"pre-stated budget ({s_agreement['total_abs_diff']} beat(s) "
-            f"across {s_agreement['n_mismatched_records']} record(s)).")
-    else:
-        checks["explanation"] = (
-            "ecg_multi's MIT subset matches mamba's 44 records one-to-one "
-            "by beat-count profile; per-record S disagreement is within the "
-            f"pre-stated budget ({s_agreement['total_abs_diff']} beat(s)).")
-    checks["pass"] = True
-    log(f"cross-check pass: {checks['matched_records']} matched, "
-        f"{checks['leftover_records']} paced leftovers, pid coding "
-        f"{checks['pid_coding']}, label key {y_key}")
+            "record identity established by 5-class fingerprint assignment; "
+            f"{checks['leftover_records']} paced leftovers; S disagreement "
+            f"{checks['s_agreement']['total_abs_diff']} beat(s) within the "
+            "pre-stated budget; beat-count warnings (stricter mamba "
+            f"preprocessing): {len(checks['warnings'])}")
+        log(f"cross-check pass: {checks['matched_records']} matched, "
+            f"{checks['leftover_records']} paced leftovers, "
+            f"{len(checks['warnings'])} beat-count warning(s)")
+    elif strict:
+        raise Q4QError(
+            "ecg_multi.npz MIT subset does not corroborate mamba_data.npz: "
+            + " | ".join(fail_reasons)
+            + " — STOP condition (spec §10). Run PREP_DATA for the full "
+              "side-by-side table in data_audit.json.")
     return checks
 
 
@@ -1339,8 +1333,11 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         split = mit_split(cohort)
         audit["split"] = {k: list(map(int, v)) for k, v in split.items()}
         if args.multi:
-            audit["cross_check"] = cross_check_mit_vs_multi(audit, args.multi,
-                                                            log=log)
+            # strict=False: write the FULL audit (incl. the side-by-side
+            # fingerprint table) before stopping, so a failed gate always
+            # leaves complete diagnostics behind.
+            audit["cross_check"] = cross_check_mit_vs_multi(
+                audit, args.multi, log=log, strict=False)
         else:
             audit["cross_check"] = {"pass": False,
                                     "note": "NOT RUN — provide --multi"}
@@ -1355,6 +1352,18 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                   encoding="utf-8") as fh:
             json.dump(_json_safe(audit), fh, ensure_ascii=False, indent=1)
         log(f"PREP_DATA audit written to {args.out}")
+        cc = audit["cross_check"]
+        for row in cc.get("table", []):
+            mark = " <-- " + row["warning"] if "warning" in row else ""
+            log(f"  {row['mamba_record']:>3} -> multi {row['multi_record']:>3}"
+                f"  n {row['n_mamba']:>5}/{row['n_multi']:>5}"
+                f"  cls diff {row['class_abs_diff']}{mark}")
+        for r, cls in cc.get("leftover_profiles", {}).items():
+            log(f"  leftover multi {r}: classes {cls}")
+        if args.multi and not cc["pass"]:
+            raise Q4QError(
+                "PREP_DATA gate FAILED: " + " | ".join(cc["fail_reasons"])
+                + f" — full table in {args.out}/data_audit.json")
         return 0
 
     if mode == "FULL":

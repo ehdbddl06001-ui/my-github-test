@@ -226,6 +226,22 @@ Q4-O·Q4-P 소스와 과거 run bundle은 수정하지 않는다.
 
 ## Decision log
 
+### 2026-08-08 — cross-check v4: 5-클래스 지문 매칭 + 전량 표 보고 (deviation 기록 3)
+
+네 번째 PREP_DATA 실측에서 beat-count 정렬 매칭이 STOP했고, 전체 목록이
+드러났다: 대부분 record는 0~5 beat 차이로 정합하지만 **mamba 전처리는 일부
+고잡음 record에서 beat를 수 %씩 더 걸러낸다**(예: mamba 2887 vs multi 최근접
+2953, −2.3%; multi 3249는 ±5% 내 상대 없음). record별 결손이 불균일하므로
+단일 beat 허용치로는 매칭이 원리적으로 불가능하다. 확장(v4): record 식별을
+**per-record 5-클래스(N/S/V/F/Q) 지문의 전역 최소비용 할당**(scipy Hungarian)
+으로 바꾼다 — V/F/Q 개수는 record별 사실상 고유 지문이라 beat 결손에 강건하다.
+하드 gate는 과학적 수량만: S 총합 동일, record당 |ΔS| ≤ 10·총 ≤ 20(기존
+사전 지정 유지), leftover는 정확히 4개의 paced형(Q 비율 ≥ 0.2, S ≤ 10) 또는
+0개. 그 외 모든 차이(beat 결손 포함, >3%는 warning 표시)는 **side-by-side
+표로 audit JSON에 전량 기록**된다. PREP_DATA는 gate 실패 시에도 표를 먼저
+저장·출력한 뒤 중단하므로, 어떤 STOP도 단일 쌍 에러가 아닌 완전한 진단을
+남긴다. 과학적 질문·split·지표·판정 기준 무변경.
+
 ### 2026-08-08 — cross-check v3: beat-count 매칭 + S 불일치 한도/보고 (deviation 기록 2)
 
 세 번째 PREP_DATA 실측에서 S=2 그룹 매칭이 STOP했다: mamba `[2083, 2537,
