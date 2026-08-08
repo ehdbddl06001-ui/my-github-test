@@ -2,6 +2,72 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0166",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Retracted: Enhancing diagnostic accuracy in breast cancer: integrating novel machine learning approaches with enhanced image preprocessing for improved mammography analysis",
+  "authors": [
+   "Mehrabi Mohsen",
+   "Salek Nafise"
+  ],
+  "journal": "Polish journal of radiology",
+  "doi": "10.5114/pjr/224658",
+  "pmid": "42569091",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42569091/",
+  "pubdate": "2026",
+  "date": "2026-08-08",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "[This retracts the article DOI: 10.5114/pjr/195523.].",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0165",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Retrospective implementation of BSE age-specific NT-proBNP criteria for triage of suspected heart failure",
+  "authors": [
+   "Madu Andrew Chisom",
+   "Li Brian",
+   "Toumazi Daniela",
+   "Asad Muhammad",
+   "Sabir Aryan",
+   "Coles Duncan",
+   "Dimarco Anthony",
+   "Savage Henry Oluwasefunmi"
+  ],
+  "journal": "The British journal of cardiology",
+  "doi": "10.5837/bjc.2026.024",
+  "pmid": "42568997",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42568997/",
+  "pubdate": "2026",
+  "date": "2026-08-08",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Measuring the N-terminal prohormone of brain natriuretic peptide (NT-proBNP) can help to triage patients with suspected acute heart failure (HF), towards confirmatory transthoracic echocardiography. It has a high negative-predictive value, however, it is not specific due to the influence on its levels by comorbidities. The British Society of Echocardiography (BSE) have published criteria for the triage of those with suspected HF, for inpatient echocardiography, using age-specific NT-proBNP cut-off values. This study aims to evaluate the diagnostic utility of these recommendations for triaging inpatient echocardiography requests to diagnose acute HF. We analysed data from consecutive inpatients who had an echocardiogram requested between 1 and 15 March 2024, at two secondary care hospitals in the East of England. NT-proBNP results were paired to these requests. Patients were then grouped into the three BSE NT-proBNP cut-off levels and compared. The main outcome of interest was the diagnostic yield for HF using these criteria. There were 159 patients included in the final analysis: 100 (62.9%) met the NT-proBNP BSE threshold; 65 (65.0%) of these had an inpatient echocardiogram, of which 39 (60.0%) were diagnosed with HF. There were 59 (37.1%) who did not meet the BSE threshold: 29 (49.2%), however, had an inpatient echocardiogram, with nine (31.0%) subsequently diagnosed with HF. Review of these nine patients revealed other valid reasons for echocardiography request: therefore, no cases were truly missed. Patients who had atrial fibrillation (AF) had a similar diagnostic yield for HF compared with those who did not (AF + HF diagnosis 54.0% vs. no AF + HF 67.9%; p=0.385). In conclusion, the BSE's age-related NT-proBNP criteria for inpatient echocardiography provides a safe and viable framework for triaging inpatient requests towards a diagnosis of HF. This approach could reduce the burden on stretched services, allowing resources to be directed more appropriately.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0164",
   "topic": "Surgery",
   "subtopic": "",
