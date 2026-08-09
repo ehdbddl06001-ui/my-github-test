@@ -53,7 +53,7 @@ import q4o_leakage_free_residual as Q4O         # noqa: E402
 EXPERIMENT_ID = "EXP-2026-006"
 ARM_ID = "Q5-C"
 RUN_SLUG = "q5c_shared_error_core"
-MODULE_VERSION = 1
+MODULE_VERSION = 2
 MODULE_BUILD = "2026-08-09"
 
 MODES = ("DESIGN", "ANALYZE", "REPORT")
@@ -219,14 +219,23 @@ def co_error_excess(m: CoreMembership, n_boot: int = NB_BOOT,
     """
     k = len(m.labels)
     chance = 0.5 ** k
-    obs = float(m.shared_hard.mean())
     records = np.unique(m.record)
+    # The reported estimate and its interval must be the SAME estimator. The
+    # bootstrap resamples records, so the point estimate is the mean over
+    # records of each record's shared-hard share — not the beat-pooled mean,
+    # which would put a large record's rate where a patient-level interval
+    # cannot follow it. Under independence both have expectation 0.5**k, so
+    # the chance baseline is unchanged either way; the pooled value is
+    # reported beside it rather than silently swapped in.
+    per_record = np.array([m.shared_hard[m.record == r].mean()
+                           for r in records], float)
+    obs = float(per_record.mean())
+    obs_micro = float(m.shared_hard.mean())
     rng = np.random.default_rng(seed)
     boot = []
     for _ in range(int(n_boot)):
-        pick = rng.choice(records, size=len(records), replace=True)
-        vals = [m.shared_hard[m.record == r].mean() for r in pick]
-        boot.append(float(np.mean(vals)))
+        pick = rng.choice(len(records), size=len(records), replace=True)
+        boot.append(float(per_record[pick].mean()))
     lo, hi = np.percentile(boot, [2.5, 97.5])
     pairs = {}
     for i in range(k):
@@ -236,13 +245,18 @@ def co_error_excess(m: CoreMembership, n_boot: int = NB_BOOT,
                 "both_hard": both, "chance": 0.25,
                 "excess": both / 0.25 if both else 0.0}
     return {"n_model": k, "chance": chance, "observed": obs,
+            "estimator": "record_macro",
+            "observed_micro": obs_micro,
             "excess": obs / chance if chance else None,
+            "excess_micro": obs_micro / chance if chance else None,
             "ci_low": float(lo / chance), "ci_high": float(hi / chance),
             "observed_ci": [float(lo), float(hi)],
             "by_pair": pairs, "n_beat": m.n,
             "n_record": int(len(records)),
             "definition": ("hard = worse half of this record's S beats under "
-                           "this model; chance = 0.5**n_model by construction")}
+                           "this model; chance = 0.5**n_model by construction; "
+                           "the reported rate is the mean over records, the "
+                           "unit the bootstrap resamples")}
 
 
 def core_concentration(m: CoreMembership) -> Dict[str, object]:
@@ -503,8 +517,9 @@ def run_core_analysis(cohort: QA.AtlasCohort, models: Dict[str, object],
 
     m = build_membership(cohort, models, rows, log=log)
     excess = co_error_excess(m, n_boot=n_boot)
-    log(f"co-hardness: observed {excess['observed']:.3f} vs chance "
-        f"{excess['chance']:.3f} -> {excess['excess']:.2f}x "
+    log(f"co-hardness: record-macro {excess['observed']:.4f} "
+        f"(beat-pooled {excess['observed_micro']:.4f}) vs chance "
+        f"{excess['chance']:.4f} -> {excess['excess']:.2f}x "
         f"[{excess['ci_low']:.2f}, {excess['ci_high']:.2f}]")
     conc = core_concentration(m)
     log(f"concentration: {conc['records_for_50pct']} record(s) hold half the "
@@ -585,8 +600,10 @@ def _write_summary(out_dir: str, result: Dict[str, object],
         f"- 정의: **record 안에서** 그 record S beat를 모델별로 나쁜 절반/좋은 "
         f"절반으로 가른다 → 우연히 {len(result['models'])}개 모델 모두에서 나쁜 "
         f"절반에 들 확률 = {ex['chance']:.4f}",
-        f"- 실측 공유율 **{ex['observed']:.4f}** → 우연 대비 **{ex['excess']:.2f}배** "
-        f"[{ex['ci_low']:.2f}, {ex['ci_high']:.2f}] (환자 bootstrap)",
+        f"- 실측 공유율(record 평균) **{ex['observed']:.4f}** → 우연 대비 "
+        f"**{ex['excess']:.2f}배** [{ex['ci_low']:.2f}, {ex['ci_high']:.2f}] "
+        f"(환자 bootstrap) · beat 통합값 {ex['observed_micro']:.4f} "
+        f"({ex['excess_micro']:.2f}배)",
         f"- 대상: S beat {result['n_s_beat']}박 · record {result['n_record']}개 "
         f"(S가 {result['min_s_per_record']}박 미만인 record는 제외)",
         f"- 집중도: 핵심의 절반을 {result['concentration']['records_for_50pct']}개 "
@@ -633,14 +650,15 @@ def _write_figures(out_dir: str, result: Dict[str, object],
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.bar(["chance", "observed"], [ex["chance"], ex["observed"]],
            color=["#999999", "#3b6ea5"])
-    ax.errorbar([1], [ex["observed"]],
-                yerr=[[ex["observed"] - ex["observed_ci"][0]],
-                      [ex["observed_ci"][1] - ex["observed"]]],
-                fmt="none", ecolor="black", capsize=4)
+    lo = max(0.0, ex["observed"] - ex["observed_ci"][0])
+    hi = max(0.0, ex["observed_ci"][1] - ex["observed"])
+    ax.errorbar([1], [ex["observed"]], yerr=[[lo], [hi]], fmt="none",
+                ecolor="black", capsize=4)
     ax.set_ylabel(f"fraction hard in all {ex['n_model']} models")
     ax.set_title(f"shared error core: {ex['excess']:.2f}x chance")
     QA._caption(ax, f"within-record median split · {ex['n_beat']} S beats · "
-                    f"{ex['n_record']} records · patient bootstrap")
+                    f"{ex['n_record']} records · record-macro rate with a "
+                    f"patient bootstrap (beat-pooled {ex['observed_micro']:.4f})")
     fig.tight_layout()
     fig.savefig(os.path.join(figdir, "co_error_excess.png"), dpi=110)
     plt.close(fig)
