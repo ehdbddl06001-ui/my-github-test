@@ -75,11 +75,14 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 1
-MODULE_BUILD = ("2026-08-08 q5a.1 — analysis-only failure atlas: inventory + "
-                "baseline freeze, stable-key beat matching, patient/subtype/RR/"
-                "atrial-proxy/quality maps, pre-registered branch decision; no "
-                "training, no run has been executed")
+MODULE_VERSION = 2
+MODULE_BUILD = ("2026-08-09 q5a.2 — legacy ablation adapter: prediction files "
+                "detected by KEY (ens.npz), tag folders are their own runs, "
+                "row correspondence VERIFIED against the frozen source before "
+                "any key is derived, paired control scoped to the primary's "
+                "run, absent historical baseline recorded as a result, "
+                "annotation symbols joined from raw_ann/mitdb; still "
+                "analysis-only and no run has been executed")
 
 MODES = ("DESIGN", "INVENTORY", "ANALYZE", "REPORT")
 DEFAULT_MODE = "DESIGN"

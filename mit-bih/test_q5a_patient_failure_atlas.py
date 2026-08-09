@@ -868,6 +868,14 @@ def test_notebook_static():
     check("sys.modules.pop" in all_src and "NEED_Q5A" in all_src
           and "Restart runtime" in all_src,
           "stale-import guard after git pull")
+    need = next((int(l.split("=")[1].split("#")[0])
+                 for l in all_src.splitlines() if l.startswith("NEED_Q5A =")), 0)
+    check(need == QA.MODULE_VERSION,
+          f"notebook pins the current module version (NEED_Q5A={need} vs "
+          f"MODULE_VERSION={QA.MODULE_VERSION}) — a stale checkout fails in "
+          "cell 2, not halfway through the run")
+    check("BRANCH" in all_src and "checkout" in all_src,
+          "cell 2 checks out an explicit branch instead of assuming main")
     check('"/content/my-github-test"' in all_src
           and 'os.chdir("/content")' in all_src,
           "repo bootstrap anchors an absolute clone path")
