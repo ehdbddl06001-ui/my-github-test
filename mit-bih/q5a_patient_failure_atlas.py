@@ -76,8 +76,8 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 6
-MODULE_BUILD = ("2026-08-09 q5a.6 — baseline targets match on the EXACT model name first and identical artifacts reachable by two paths collapse (confirmed by hash), so a package unzipped twice is not a false ambiguity; V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
+MODULE_VERSION = 7
+MODULE_BUILD = ("2026-08-09 q5a.7 — a true name clash is settled by the RECORDED seed plan (provenance, never a score); baseline targets match on the EXACT model name first and identical artifacts reachable by two paths collapse (confirmed by hash), so a package unzipped twice is not a false ambiguity; V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
                 "detected by KEY (ens.npz), tag folders are their own runs, "
                 "row correspondence VERIFIED against the frozen source before "
                 "any key is derived, paired control scoped to the primary's "
@@ -114,24 +114,28 @@ FIXED_PROBLEM = ("improve the per-patient lower tail and the failure patients "
 BASELINE_TARGETS: Dict[str, Dict[str, object]] = {
     "V10": {"name_tokens": ("pwave",), "role": "primary",
             "recorded_s_prauc": 0.660,
+            "require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
             "recorded_in": "research/PROJECT_STATE.md",
             "source_script": "v10pkg/v10_ECG.ipynb :: run(arms=['pwave'], seeds=1000..1004)",
             "note": ("the V10 P-wave arm. Its 0.660 is the MEAN OF PER-SEED "
                      "S PR-AUC over seeds 1000-1004 — not the PR-AUC of the "
                      "seed-ensembled probability (0.772 on the same file).")},
-    "V10_BASE": {"name_tokens": ("base",), "role": "paired_control",
+    "V10_BASE": {"require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+                 "name_tokens": ("base",), "role": "paired_control",
                  "same_parent_as": "V10", "recorded_s_prauc": 0.573,
                  "source_script": "v10pkg/v10_ECG.ipynb :: run(arms=['base'])",
                  "note": ("V10's own paired control: identical protocol and "
                           "seeds, the P-wave branch is the only difference")},
-    "V9": {"name_tokens": ("kink_noctx", "kink-noctx"), "role": "primary",
+    "V9": {"require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+                 "name_tokens": ("kink_noctx", "kink-noctx"), "role": "primary",
            "recorded_s_prauc": 0.597,
            "recorded_in": "research/PROJECT_STATE.md",
            "source_script": "v9pkg/v9_ECG.ipynb :: run(arms=['kink_noctx'])",
            "note": ("the best V9 arm (comparison branch + prototype bank, no "
                     "kink ctx). Same DS2 beat set as V10, so V9 and V10 are "
                     "directly comparable beat by beat.")},
-    "V9_BASE": {"name_tokens": ("v8base",), "role": "paired_control",
+    "V9_BASE": {"require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+                 "name_tokens": ("v8base",), "role": "paired_control",
                 "same_parent_as": "V9", "recorded_s_prauc": 0.576,
                 "source_script": "v9pkg/v9_ECG.ipynb :: run(arms=['v8base'])",
                 "note": "V9's own control: the restored v8 base, no add-ons"},
@@ -1222,9 +1226,10 @@ def freeze_baseline(inventory: Dict[str, object],
     selected: Dict[str, object] = {}
     reasons: List[str] = []
     absent: List[Dict[str, object]] = []
-    for d in duplicates:
-        reasons.append(f"duplicate artifact collapsed: {d['kept']} "
-                       f"(same files as {d['dropped']})")
+    # Informational, not a problem: kept out of `reasons` so the STOP text a
+    # human reads stays about actual blockers.
+    collapsed = [f"{d['kept']} (same files as {d['dropped']})"
+                 for d in duplicates]
     # primary first, so a paired control can be scoped to the primary's run
     order = sorted(targets, key=lambda k: (targets[k].get("role") != ROLE_PRIMARY,
                                            k))
@@ -1242,6 +1247,23 @@ def freeze_baseline(inventory: Dict[str, object],
                      if any(t in str(e.get("model_name", "")).lower()
                             for t in toks)
                      or any(t in str(e.get("run_id", "")).lower() for t in toks)]
+        # Recorded provenance narrows the field before any ambiguity call.
+        # The seed plan is part of the historical record (v9/v10_ECG.ipynb ran
+        # seeds 1000-1004 and saved one file per seed), so requiring it is a
+        # provenance filter — not a look at any performance number.
+        req = tgt.get("require") or {}
+        if req.get("seeds") and len(cands) > 1:
+            want = [int(s) for s in req["seeds"]]
+            narrowed = [c for c in cands
+                        if [int(s) for s in
+                            ((c.get("seed_family") or {}).get("seeds") or [])]
+                        == want]
+            if narrowed and len(narrowed) < len(cands):
+                reasons.append(
+                    f"{label}: narrowed to the run whose saved seed plan "
+                    f"matches the record {want} "
+                    f"({len(cands)} -> {len(narrowed)} candidate(s))")
+                cands = narrowed
         if role == ROLE_CONTROL and tgt.get("same_parent_as") in selected:
             # A control name like "base26" repeats across unrelated ablation
             # runs. Scope it to the primary's own run — a provenance rule, not
@@ -1327,7 +1349,7 @@ def freeze_baseline(inventory: Dict[str, object],
                     "comparison would not be like-for-like (spec §5)")
     freeze = {
         "status": status, "selected": selected, "reasons": reasons,
-        "absent_baselines": absent,
+        "collapsed_duplicates": collapsed, "absent_baselines": absent,
         "beat_level_models": sorted(k for k, v in selected.items()
                                     if v["comparison_role"] == "beat_level"),
         "aggregate_only_models": sorted(k for k, v in selected.items()

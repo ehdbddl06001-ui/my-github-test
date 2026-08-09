@@ -435,6 +435,27 @@ baseline 재동결(이후 run부터): primary **V10 = `pwave`** / **V9 = `kink_n
 
 `ablation_step9d/*`는 별개 계보로 남기며 baseline에서 제외한다.
 
+### 2026-08-09 — 진짜 이름 충돌은 기록된 seed 계획으로 가른다 (deviation 기록 5)
+
+병합·정확이름 수정 뒤에도 V10이 `AMBIGUOUS_BASELINE`으로 남았다. `ablation_step9d`
+의 tag 폴더 이름이 **정확히 `pwave`** 라서, 패키지의 `pwave` arm과 이름만으로는
+구분되지 않는다(내용이 다르므로 병합도 되지 않는다 — 올바른 동작이다).
+
+성능으로 고르는 것은 금지이므로 **기록된 provenance**로 가른다. 역사 기록
+(`v9_ECG.ipynb` / `v10_ECG.ipynb`의 `run(..., seeds=[1000..1004])`, 그리고
+provenance 문서의 "5 arm × 5 시드, 확률 원값 npz 저장")은 **저장된 seed 계획이
+1000–1004이고 시드별 파일이 남아 있어야 한다**고 말한다. 이를 target의
+`require: {"seeds": [...]}` 로 명시하고, 후보가 둘 이상일 때만 적용한다.
+
+- 이것은 **성능을 보지 않는다**. seed 계획은 실행 전에 기록된 사실이다.
+- `require`를 제거하면 같은 입력에서 다시 `AMBIGUOUS_BASELINE`으로 STOP한다는
+  회귀 테스트를 두어, 이 narrowing이 취향이 아니라 기록된 근거임을 고정했다.
+- `ablation_step9d/pwave`(단일 `ens.npz`, seed 미보존)는 이 요건을 만족하지 않아
+  자동으로 탈락한다.
+
+아울러 병합 내역을 `reasons`에서 분리해 `collapsed_duplicates`로 옮겼다 — 사람이
+읽는 STOP 메시지에는 실제 blocker만 남아야 한다.
+
 ### 2026-08-09 — 후보 매칭 정밀화: 정확 이름 우선 + 동일 산출물 병합 (deviation 기록 4)
 
 패키지를 올린 뒤 첫 `INVENTORY`가 `AMBIGUOUS_BASELINE`으로 STOP했다(실측:

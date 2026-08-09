@@ -334,10 +334,11 @@ def test_inventory_and_freeze():
         both = QA.scan_inventory([runs, os.path.join(tmp, "copy")],
                                  log=Q4O.RunLog(echo=False))
         fb = QA.freeze_baseline(both)
-        check(fb["status"] == "FROZEN"
-              and any(r.startswith("duplicate artifact collapsed")
-                      for r in fb["reasons"]),
+        check(fb["status"] == "FROZEN" and fb["collapsed_duplicates"],
               "a package unzipped twice collapses to one candidate, recorded")
+        check(not any("duplicate" in r for r in fb["reasons"]),
+              "the collapse note stays out of `reasons` so a STOP message "
+              "shows only real blockers")
         g = QA.evaluate_artifact_gates(dup, fa, None)
         check(not g["pass"] and g["branch"] == QA.BRANCH_INSUFFICIENT,
               "ambiguous baseline blocks the analysis at D0")
@@ -561,6 +562,50 @@ def test_float_time_column():
         audit = QA.match_beat_keys(c, mp, strict=False)
         check(audit["pass"] and audit["matched"] == len(rows),
               "the adapted legacy artifact matches the cohort exactly")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_provenance_narrows_a_true_name_clash():
+    print("a real name clash is settled by the RECORDED seed plan, not by score")
+    tmp = tempfile.mkdtemp(prefix="q5a_clash_")
+    try:
+        cohort = QA.synthetic_atlas(n_per_record=20)
+        split = QA.cohort_split(cohort)
+        rows = np.sort(cohort.rows_of(split["ds2"]))
+        root = os.path.join(tmp, "runs")
+        pkg = os.path.join(root, "v10pkg_results")
+        os.makedirs(pkg)
+        for seed in range(1000, 1005):
+            m = QA.synthetic_model(cohort, "V10", skill=4.0, seed=seed)
+            prob = np.zeros((len(rows), 3))
+            prob[:, QA.S_COLUMN] = m.score[rows]
+            prob[:, 0] = 1.0 - m.score[rows]
+            np.savez_compressed(os.path.join(pkg, f"pwave_s{seed}.npz"),
+                                prob=prob, y=cohort.y5[rows].astype(int),
+                                pid=cohort.record[rows].astype(int))
+        # an unrelated run that happens to use the very same tag name
+        rival = QA.synthetic_model(cohort, "RIVAL", skill=1.0, seed=77)
+        _write_legacy_run(os.path.join(root, "ablation_step9d", "pwave"),
+                          cohort, rival, rows)
+        inv = QA.scan_inventory([root], log=Q4O.RunLog(echo=False))
+        names = [e["model_name"] for e in inv["entries"]]
+        check(names.count("pwave") == 2,
+              "both same-named candidates are inventoried")
+        fz = QA.freeze_baseline(inv)
+        check(fz["selected"]["V10"]["run_dir"] == pkg,
+              "the run whose SAVED SEED PLAN matches the record is chosen")
+        check(any("seed plan matches the record" in r for r in fz["reasons"]),
+              "the provenance rule that settled it is recorded")
+
+        # remove the recorded seed plan -> the clash is unresolved again
+        loose = {k: dict(v) for k, v in QA.BASELINE_TARGETS.items()}
+        for v in loose.values():
+            v.pop("require", None)
+        fl = QA.freeze_baseline(inv, targets=loose)
+        check(fl["status"] == "AMBIGUOUS_BASELINE",
+              "without the provenance requirement the clash still STOPs — the "
+              "narrowing is a recorded fact, not a preference")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -1208,6 +1253,7 @@ def main() -> int:
                test_no_ds2_feedback, test_inventory_and_freeze,
                test_absent_historical_baseline, test_legacy_adapter,
                test_float_time_column, test_seed_family,
+               test_provenance_narrows_a_true_name_clash,
                test_rr_and_symbol_recovery,
                test_metrics_recomputation, test_subtype_and_audit_records,
                test_block_evidence, test_rank_outcome_is_threshold_free,
