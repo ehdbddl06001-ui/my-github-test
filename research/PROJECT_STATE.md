@@ -167,6 +167,24 @@ patient-CVaR pilot 강행 ② Q5-A가 남긴 **미해석 사실** 측정 ③ 종
   않았고**(D4 미발화), 지금 돌리면 트리가 안 고른 분기를 사람이 고르는 것이 된다.
   Q5-C 결과에 따라 그 전제가 살아나거나 죽는다.
 
+## EXP-2026-007 / Q5-D — PREP_DATA-A `ACQUIRE_ONLY` accepted (2026-08-09)
+
+- **PREP_DATA-A ACQUIRE_ONLY 인수 완료.** 판정 `PREP_DATA_ACQUIRED_VERIFIED`,
+  gate 12/12 PASS, `first_stopping_reason: null`. canonical run
+  `20260809T153151`; 최종 판정의 근거는 notebook 출력이 아니라 Drive audit bundle
+  `…/assets/EXP-2026-007_prep_data/audit/runs/20260809T153151/` 이다.
+  자산은 `research/ASSETS.md` 의 `data-mitdb-raw-100` · `data-pwave-raw-100` ·
+  `run-20260809-q5d-prep-data` 세 행에 등록했다.
+- **이것은 데이터 준비 성공일 뿐이고 EXP-2026-007 의 과학적 질문은 답해지지
+  않았다.** spec status 는 `approved_for_implementation` 그대로이며 `MEASURED`
+  가 아니다. 학습 · delineation · beat join · DS2 outcome 분석 · S PR-AUC ·
+  SHAM permutation 은 하나도 수행하지 않았다.
+- **다음에 올 수 있는 단계는 delineator qualification 하나뿐이다** (frozen
+  delineator 를 DS1 전문가 주석 record 에서 자격검증).
+- **아직 승인되지 않은 것**: 그 qualification 실행, DS2 label·V10 outcome 열람,
+  association analysis, 그리고 모든 학습. 승인은 별도 결정으로만 이루어지며 이
+  인수 기록은 승인이 아니다.
+
 ## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 
 residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 실패 지도**다.
