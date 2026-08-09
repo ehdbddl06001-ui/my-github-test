@@ -251,6 +251,12 @@ def test_shuffle_control():
     if out.get("applicable"):
         check(out["shuffled_mean"] < out["real_delta"],
               "shuffling membership inside the record destroys the signal")
+    ex = QC.explain_membership(blocks, m, n_boot=100,
+                               log=Q4O.RunLog(echo=False))
+    if not ex.get("underpowered"):
+        check("auroc_null" in ex and 0.3 <= ex["auroc_null"]["mean"] <= 0.7,
+              "the held-out AUROC gets its own shuffled-label null "
+              f"({ex.get('auroc_null', {}).get('mean')})")
     else:
         check(out["pass"] and "nothing to destroy" in out["verdict"],
               "with no signal the control says it does not apply")
@@ -265,8 +271,31 @@ def test_concentration_is_reported():
           "the concentration curve is monotone and bounded")
     check(sum(p["n_core"] for p in c["per_record"]) == c["n_core"],
           "the per-record table accounts for every core beat")
-    check("record story" in c["note"],
-          "the reading rule is stated: a one-record core is a record story")
+    check("rate_uniform" in c and "count_concentration" in c,
+          "count concentration and rate uniformity are reported separately")
+    check(c["excess_min"] <= c["excess_max"]
+          and all("excess_vs_chance" in p for p in c["per_record"]),
+          "each record carries its own excess over chance")
+    check("read the RATE row" in c["note"],
+          "the note says which row to read")
+
+    # a cohort where one record holds almost every S beat but the RATE is
+    # uniform must not be called a record story
+    rng = np.random.default_rng(2)
+    n_big, n_small = 800, 20
+    rec = np.concatenate([np.full(n_big, 1), np.repeat(np.arange(2, 8),
+                                                       n_small)])
+    hard = rng.random((len(rec), 4)) < 0.72   # same rate everywhere
+    mm = QC.CoreMembership(record=rec, hard=hard,
+                           badness=np.zeros((len(rec), 4)),
+                           labels=("a", "b", "c", "d"),
+                           rows=np.arange(len(rec)))
+    cc = QC.core_concentration(mm)
+    check(cc["count_concentration"] == "concentrated"
+          and cc["rate_uniform"] and cc["records_above_chance"] == 7,
+          "one record holding most S beats does NOT make a uniform rate a "
+          f"record story (counts {cc['count_concentration']}, rate uniform "
+          f"{cc['rate_uniform']})")
 
 
 def test_bundle_and_report():
@@ -310,7 +339,21 @@ def test_bundle_and_report():
 
 def test_underpowered_is_a_verdict():
     print("too few beats is reported, not papered over")
-    cohort, models, rows = _fixture(n_per=60, rho=0.9, seed=23)
+    # a cohort whose records are all too small to split: a clear stop, not a
+    # meaningless "worse half" of three beats
+    tiny_cohort, tiny_models, tiny_rows = _fixture(n_per=60, rho=0.9, seed=23)
+    expect_raise(lambda: QC.build_membership(tiny_cohort, tiny_models,
+                                             tiny_rows,
+                                             log=Q4O.RunLog(echo=False)),
+                 "a cohort with no splittable record stops with a reason",
+                 QC.Q5CError)
+    check(QC.core_concentration(
+        QC.CoreMembership(record=np.zeros(0, int), hard=np.zeros((0, 4), bool),
+                          badness=np.zeros((0, 4)), labels=("a", "b", "c", "d"),
+                          rows=np.zeros(0, int)))["note"].startswith("no record"),
+          "an empty membership concentrates into a stated 'nothing', not a crash")
+
+    cohort, models, rows = _fixture(n_per=200, rho=0.5, seed=23)
     m = QC.build_membership(cohort, models, rows, log=Q4O.RunLog(echo=False))
     blocks = QC.core_blocks(cohort, rows, m)
     ex = QC.explain_membership(blocks, m, n_boot=100,

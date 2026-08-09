@@ -53,7 +53,7 @@ import q4o_leakage_free_residual as Q4O         # noqa: E402
 EXPERIMENT_ID = "EXP-2026-006"
 ARM_ID = "Q5-C"
 RUN_SLUG = "q5c_shared_error_core"
-MODULE_VERSION = 2
+MODULE_VERSION = 3
 MODULE_BUILD = "2026-08-09"
 
 MODES = ("DESIGN", "ANALYZE", "REPORT")
@@ -198,6 +198,12 @@ def build_membership(cohort: QA.AtlasCohort, models: Dict[str, object],
             order = np.argsort(np.argsort(-v, kind="stable"), kind="stable")
             hard[sel[order < int(np.ceil(HARD_FRACTION * len(sel)))], j] = True
 
+    if not kept_records:
+        raise Q5CError(
+            f"no record has {CORE_MIN_S_PER_RECORD} or more S beats, so "
+            "'the worse half of this record's S beats' is undefined "
+            "everywhere — this cohort cannot answer the question. Report it "
+            "as INSUFFICIENT_ARTIFACTS rather than splitting 3 beats in two")
     keep = np.isin(rec, kept_records)
     m = CoreMembership(record=rec[keep], hard=hard[keep], badness=badness[keep],
                        labels=labels, rows=s_rows[keep])
@@ -260,26 +266,63 @@ def co_error_excess(m: CoreMembership, n_boot: int = NB_BOOT,
 
 
 def core_concentration(m: CoreMembership) -> Dict[str, object]:
-    """Is the shared core a few records, or is it everywhere?"""
+    """Is the shared core a few records, or is it everywhere?
+
+    Two different questions live here and the first version of this function
+    only answered one of them.
+
+    * **Count** concentration — how many records hold most of the core beats.
+      This tracks where the S beats are, not where the phenomenon is: if one
+      record carries most of a cohort's S beats it will carry most of anything
+      defined on S beats, core or not.
+    * **Rate** uniformity — whether each record's own share of core beats is
+      similar. This is the one that says whether the phenomenon is general.
+
+    Reading the count alone can call a perfectly uniform effect a "record
+    story". Both are reported, and the note says which to read.
+    """
     core = m.shared_hard
+    chance = 0.5 ** len(m.labels)
     per = []
     for r in np.unique(m.record):
         sel = m.record == r
         per.append({"record": int(r), "n_s": int(sel.sum()),
                     "n_core": int((sel & core).sum()),
-                    "core_fraction": float(core[sel].mean())})
+                    "core_fraction": float(core[sel].mean()),
+                    "excess_vs_chance": float(core[sel].mean() / chance)})
     per.sort(key=lambda d: -d["n_core"])
     total = max(1, int(core.sum()))
     cum = np.cumsum([p["n_core"] for p in per]) / total
     n50 = int(np.searchsorted(cum, 0.50) + 1)
     n80 = int(np.searchsorted(cum, 0.80) + 1)
+    rates = np.array([p["core_fraction"] for p in per], float)
+    if not len(rates):
+        return {"per_record": [], "n_core": 0, "records_for_50pct": 0,
+                "records_for_80pct": 0, "n_record": 0,
+                "count_concentration": "n/a", "rate_min": None,
+                "rate_max": None, "rate_median": None, "excess_min": None,
+                "excess_max": None, "records_above_chance": 0,
+                "rate_uniform": False, "share_of_s_in_largest": None,
+                "note": "no record qualified — nothing to concentrate"}
+    above = int((rates > chance).sum())
     return {"per_record": per, "n_core": int(core.sum()),
             "records_for_50pct": n50, "records_for_80pct": n80,
             "n_record": len(per),
-            "spread": ("concentrated" if n50 <= max(1, len(per) // 5)
-                       else "spread"),
-            "note": ("a core carried by one or two records is a record story, "
-                     "not a beat story")}
+            "count_concentration": ("concentrated"
+                                    if n50 <= max(1, len(per) // 5)
+                                    else "spread"),
+            "rate_min": float(rates.min()), "rate_max": float(rates.max()),
+            "rate_median": float(np.median(rates)),
+            "excess_min": float(rates.min() / chance),
+            "excess_max": float(rates.max() / chance),
+            "records_above_chance": above,
+            "rate_uniform": bool(rates.min() >= EXCESS_MIN * chance),
+            "share_of_s_in_largest": float(max(p["n_s"] for p in per)
+                                           / max(1, m.n)),
+            "note": ("read the RATE row, not the count row: one record holding "
+                     "most of the core usually just means it holds most of the "
+                     "S beats. A record story is one where the rate itself is "
+                     "confined to a record or two")}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -346,6 +389,23 @@ def explain_membership(blocks: Dict[str, Dict[str, np.ndarray]],
         out["joint"] = QA.block_incremental_value({}, joint, y, groups,
                                                   n_boot=n_boot,
                                                   mode="classification")
+        # A held-out AUROC needs its own null. Without one, 0.73 and 0.53 read
+        # the same on the page. Labels are shuffled INSIDE each record, so the
+        # null keeps every record's core rate intact.
+        rng = np.random.default_rng(0)
+        nulls = []
+        for _ in range(SHUFFLE_REPEATS):
+            sh = y.copy()
+            for r in np.unique(groups):
+                g = groups == r
+                sh[g] = rng.permutation(sh[g])
+            nulls.append(float(QA.block_incremental_value(
+                {}, joint, sh, groups, n_boot=50,
+                mode="classification").get("auroc_aug") or 0.5))
+        out["auroc_null"] = {"mean": float(np.mean(nulls)),
+                             "values": nulls, "repeats": SHUFFLE_REPEATS,
+                             "note": ("labels shuffled within record, so each "
+                                      "record keeps its own core rate")}
     return out
 
 
@@ -465,10 +525,21 @@ def evaluate_core_decision(excess: Dict[str, object],
     trace.append(f"shuffle control pass: {shuffle.get('pass')} "
                  f"(retained {shuffle.get('retained_fraction')})")
     if not structured:
+        why = []
+        if auroc < AUROC_MIN:
+            why.append(f"held-out AUROC {auroc:.3f} < {AUROC_MIN}")
+        else:
+            why.append(f"held-out AUROC is {auroc:.3f}, but ")
+        if d_low <= 0:
+            why.append(f"the held-out loss does not improve "
+                       f"(delta {delta:+.4f}, CI low {d_low:+.4f})")
+        if not shuffle.get("pass"):
+            why.append("the shuffle control did not pass")
         return {"branch": BRANCH_UNSTRUCTURED, "rule": "D-B",
                 "reason": ("the shared core is real (excess over chance) but "
-                           "Q5-A's registered features do not discriminate it "
-                           "out of patient"),
+                           "the pre-registered rule needs BOTH discrimination "
+                           "and a held-out loss improvement: "
+                           + "; ".join(why)),
                 "next_step": ("do NOT invent a feature to fit it. The core is "
                               "invisible to everything measured so far, so the "
                               "next step is a new measurement — not a new "
@@ -522,8 +593,13 @@ def run_core_analysis(cohort: QA.AtlasCohort, models: Dict[str, object],
         f"{excess['chance']:.4f} -> {excess['excess']:.2f}x "
         f"[{excess['ci_low']:.2f}, {excess['ci_high']:.2f}]")
     conc = core_concentration(m)
-    log(f"concentration: {conc['records_for_50pct']} record(s) hold half the "
-        f"core, {conc['records_for_80pct']} hold 80% ({conc['spread']})")
+    log(f"concentration: counts — {conc['records_for_50pct']} record(s) hold "
+        f"half the core ({conc['count_concentration']}; the largest record "
+        f"holds {conc['share_of_s_in_largest']:.1%} of the S beats). "
+        f"RATE — {conc['records_above_chance']}/{conc['n_record']} records "
+        f"above chance, per-record excess "
+        f"{conc['excess_min']:.2f}x–{conc['excess_max']:.2f}x "
+        f"(uniform: {conc['rate_uniform']})")
 
     blocks = core_blocks(cohort, rows, m)
     explain = explain_membership(blocks, m, n_boot=n_boot, log=log)
@@ -543,6 +619,7 @@ def run_core_analysis(cohort: QA.AtlasCohort, models: Dict[str, object],
         "min_s_per_record": CORE_MIN_S_PER_RECORD,
         "co_error": excess, "concentration": {k: v for k, v in conc.items()
                                               if k != "per_record"},
+        "concentration_per_record": conc["per_record"],
         "explain": explain, "shuffle_control": shuffle,
         "decision": decision, "blocks_used": list(CORE_BLOCKS),
         "elapsed_s": round(time.time() - t0, 2),
@@ -606,9 +683,17 @@ def _write_summary(out_dir: str, result: Dict[str, object],
         f"({ex['excess_micro']:.2f}배)",
         f"- 대상: S beat {result['n_s_beat']}박 · record {result['n_record']}개 "
         f"(S가 {result['min_s_per_record']}박 미만인 record는 제외)",
-        f"- 집중도: 핵심의 절반을 {result['concentration']['records_for_50pct']}개 "
-        f"record가, 80%를 {result['concentration']['records_for_80pct']}개가 "
-        f"차지 ({result['concentration']['spread']})",
+        f"- 집중도(**개수**): 핵심의 절반을 "
+        f"{result['concentration']['records_for_50pct']}개 record가 차지 "
+        f"({result['concentration']['count_concentration']}) — 가장 큰 record가 "
+        f"S beat의 {result['concentration']['share_of_s_in_largest']:.1%}를 갖고 "
+        "있으므로 이 줄만 읽으면 오독한다",
+        f"- 집중도(**비율 — 이쪽을 읽는다**): "
+        f"{result['concentration']['records_above_chance']}/"
+        f"{result['concentration']['n_record']} record가 우연 초과, record별 "
+        f"{result['concentration']['excess_min']:.2f}배–"
+        f"{result['concentration']['excess_max']:.2f}배 "
+        f"(균일: {result['concentration']['rate_uniform']})",
         f"- Q5-A 등록 특징으로 환자 밖 판별: AUROC "
         f"{joint.get('auroc_aug', 'n/a')} · Δ {joint.get('delta_logloss', 'n/a')}",
         f"- 셔플 대조군: {result['shuffle_control'].get('pass')} "
