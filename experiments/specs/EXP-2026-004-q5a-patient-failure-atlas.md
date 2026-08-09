@@ -435,6 +435,32 @@ baseline 재동결(이후 run부터): primary **V10 = `pwave`** / **V9 = `kink_n
 
 `ablation_step9d/*`는 별개 계보로 남기며 baseline에서 제외한다.
 
+### 2026-08-09 — 후보 매칭 정밀화: 정확 이름 우선 + 동일 산출물 병합 (deviation 기록 4)
+
+패키지를 올린 뒤 첫 `INVENTORY`가 `AMBIGUOUS_BASELINE`으로 STOP했다(실측:
+V10 후보 7개, V10_BASE 후보 22개). 원인 둘 다 **가짜 모호성**이었다.
+
+1. **같은 패키지가 두 경로에 존재** — 직접 올린 `mitbih/v10pkg_results`와
+   notebook이 푼 `mitbih/baseline_pkgs/v10pkg_results`. 같은 artifact인데 후보가
+   둘로 세어졌다.
+2. **토큰이 부분 문자열로 매칭** — `base`가 `base26`·`base_lf`·`base_clean`·
+   `v8base`·`cnn_base`·`baseline_pkgs`까지, `pwave`가 `pwave_noc`까지 끌어왔다.
+
+수정(사전등록 규칙 자체는 불변 — 여전히 성능으로 고르지 않는다):
+
+- **정확한 model name 우선**: 토큰과 정확히 일치하는 후보가 있으면 그것만 쓰고,
+  없을 때만 부분 문자열로 넓힌다.
+- **동일 산출물 병합**: (model name, 파일명, 행 수)가 같으면 후보로 세기 전에
+  **SHA256로 내용 동일성을 확인**하고 병합한다(해시는 충돌 시에만 계산). 이름과
+  모양이 같아도 **바이트가 다르면 병합하지 않는다** — 그건 진짜 경쟁 후보이므로
+  모호성 gate가 그대로 STOP한다. 병합 내역은 `reasons`에 남는다.
+- notebook은 패키지가 이미 풀려 있으면 **두 번째 사본을 만들지 않고** 기존 경로를
+  쓰며, 사본이 여러 곳에 있으면 경고를 출력한다.
+
+같은 실측에서 `BLOCKED_MEASURED` 결과에는 `split` 키가 없어 notebook 출력 셀이
+`KeyError`로 죽었다. 결과에 `ds2_analysis`·`ds2_excluded`를 담고, notebook은
+`.get()`으로 읽으며 STOP 사유를 함께 출력하도록 고쳤다.
+
 ### 2026-08-09 — 첫 ANALYZE 실측 후 primary outcome 개정 (deviation 기록 2)
 
 첫 `ANALYZE`(run `20260809T0808…`, `MEASURED`, 판정 `UNRESOLVED`)에서 §10의

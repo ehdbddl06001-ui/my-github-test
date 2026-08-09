@@ -305,10 +305,13 @@ def test_inventory_and_freeze():
         def _entry(d, name):
             return next(e for e in d["entries"] if e["model_name"] == name)
 
-        dup = json.loads(json.dumps(inv))
-        clone = json.loads(json.dumps(_entry(dup, "pwave")))
-        clone["run_id"] = "20260103T0000_v10_pwave_rerun"
-        dup["entries"].append(clone)          # same model name, second run
+        # a genuinely different run that carries the same model name, kept in
+        # its own root so it cannot leak into the later checks
+        amb = os.path.join(tmp, "amb")
+        other = QA.synthetic_model(_c, "V10b", skill=3.3, seed=99)
+        QA.write_synthetic_run(os.path.join(amb, "20260103T0000_pwave_rerun"),
+                               "pwave", _c, other, s_prauc=0.61)
+        dup = QA.scan_inventory([runs, amb], log=Q4O.RunLog(echo=False))
         fa = QA.freeze_baseline(dup)
         check(fa["status"] == "AMBIGUOUS_BASELINE",
               "two runs with the same model name -> AMBIGUOUS_BASELINE (STOP)")
@@ -317,11 +320,24 @@ def test_inventory_and_freeze():
         near = json.loads(json.dumps(inv))
         variant = json.loads(json.dumps(_entry(near, "pwave")))
         variant["run_id"] = "20260103T0000_v10_pwave_v2"
-        variant["model_name"] = "pwave_v2"
+        variant["model_name"] = "pwave_noc"
         near["entries"].append(variant)
         fn_ = QA.freeze_baseline(near)
         check(fn_["selected"]["V10"]["model_name"] == "pwave",
-              "an exact historical name beats a near-miss variant")
+              "an exact name beats a longer name containing the token "
+              "(pwave vs pwave_noc)")
+
+        # the same package reachable by two paths is ONE artifact, not two
+        import shutil as _sh
+        _sh.copytree(os.path.join(runs, "20260102T0100_pwave"),
+                     os.path.join(tmp, "copy", "20260102T0100_pwave"))
+        both = QA.scan_inventory([runs, os.path.join(tmp, "copy")],
+                                 log=Q4O.RunLog(echo=False))
+        fb = QA.freeze_baseline(both)
+        check(fb["status"] == "FROZEN"
+              and any(r.startswith("duplicate artifact collapsed")
+                      for r in fb["reasons"]),
+              "a package unzipped twice collapses to one candidate, recorded")
         g = QA.evaluate_artifact_gates(dup, fa, None)
         check(not g["pass"] and g["branch"] == QA.BRANCH_INSUFFICIENT,
               "ambiguous baseline blocks the analysis at D0")
@@ -397,8 +413,10 @@ def test_legacy_adapter():
         _write_legacy_run(os.path.join(step9d, "pwave"), cohort, prim, ds2_rows)
         _write_legacy_run(os.path.join(step9d, "base"), cohort, ctrl, ds2_rows)
         # a same-named control in an UNRELATED run must not be able to collide
+        # (different content, so it is a real rival — not a duplicate path)
+        other = QA.synthetic_model(cohort, "OTHER", skill=1.1, seed=21)
         _write_legacy_run(os.path.join(runs, "ablation_step11", "base"),
-                          cohort, ctrl, ds2_rows)
+                          cohort, other, ds2_rows)
 
         inv = QA.scan_inventory([runs], log=Q4O.RunLog(echo=False))
         names = sorted(e["model_name"] for e in inv["entries"])

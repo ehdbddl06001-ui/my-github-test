@@ -76,8 +76,8 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 5
-MODULE_BUILD = ("2026-08-09 q5a.5 — V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
+MODULE_VERSION = 6
+MODULE_BUILD = ("2026-08-09 q5a.6 — baseline targets match on the EXACT model name first and identical artifacts reachable by two paths collapse (confirmed by hash), so a package unzipped twice is not a false ambiguity; V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
                 "detected by KEY (ens.npz), tag folders are their own runs, "
                 "row correspondence VERIFIED against the frozen source before "
                 "any key is derived, paired control scoped to the primary's "
@@ -1141,6 +1141,69 @@ def _read_registry(path: str) -> Dict[str, object]:
             "append_only_ok": bool(not dup and not bad)}
 
 
+def artifact_signature(entry: Dict[str, object]) -> Tuple:
+    """Content signature of one inventory row.
+
+    Two rows with the same model name, the same file names and the same row
+    counts are the SAME artifact reachable by two paths (a package unzipped
+    twice, a folder copied). Collapsing them is not a choice between rival
+    candidates — there is only one artifact.
+    """
+    files = tuple(sorted((str(p.get("file")), p.get("n_rows"))
+                         for p in entry.get("prediction_files", [])))
+    return (str(entry.get("model_name")), files)
+
+
+def _same_content(a: Dict[str, object], b: Dict[str, object]) -> bool:
+    """Byte-level check, run ONLY when two rows already look alike.
+
+    A cheap signature can collide between genuinely different models, and
+    collapsing those would silently pick one. So the collapse is confirmed by
+    hashing — bounded work, because it only happens on a collision.
+    """
+    def hashes(e):
+        out = set()
+        for p in e.get("prediction_files", []):
+            path = str(p.get("path", ""))
+            if not os.path.exists(path):
+                return None
+            out.add(sha256_file(path))
+        return frozenset(out)
+    ha, hb = hashes(a), hashes(b)
+    return ha is not None and ha == hb
+
+
+def dedupe_identical_artifacts(entries: List[Dict[str, object]]
+                               ) -> Tuple[List[Dict[str, object]],
+                                          List[Dict[str, str]]]:
+    """Collapse rows that point at byte-identical prediction sets."""
+    kept: Dict[Tuple, Dict[str, object]] = {}
+    order: List[Tuple] = []
+    dropped: List[Dict[str, str]] = []
+    for e in entries:
+        if not e.get("prediction_files"):
+            sig = ("__no_predictions__", str(e.get("run_id")))
+        else:
+            sig = artifact_signature(e)
+        if sig in kept and _same_content(kept[sig], e):
+            # keep the shallowest path — it is the one a human would name
+            a, b = kept[sig], e
+            keep, drop = (a, b) if len(str(a["run_dir"])) <= len(str(b["run_dir"])) \
+                else (b, a)
+            kept[sig] = keep
+            dropped.append({"kept": str(keep["run_id"]),
+                            "dropped": str(drop["run_id"])})
+        elif sig in kept:
+            # same name and shape, DIFFERENT bytes: two real candidates. Keep
+            # both so the ambiguity gate can stop on them.
+            order.append(sig := (*sig, str(e.get("run_id"))))
+            kept[sig] = e
+        else:
+            kept[sig] = e
+            order.append(sig)
+    return [kept[s] for s in order], dropped
+
+
 def freeze_baseline(inventory: Dict[str, object],
                     targets: Optional[Dict[str, Dict[str, object]]] = None
                     ) -> Dict[str, object]:
@@ -1154,10 +1217,14 @@ def freeze_baseline(inventory: Dict[str, object],
       carried along only so the analysis can *check* it later.
     """
     targets = targets or BASELINE_TARGETS
-    entries = list(inventory.get("entries", []))
+    entries, duplicates = dedupe_identical_artifacts(
+        list(inventory.get("entries", [])))
     selected: Dict[str, object] = {}
     reasons: List[str] = []
     absent: List[Dict[str, object]] = []
+    for d in duplicates:
+        reasons.append(f"duplicate artifact collapsed: {d['kept']} "
+                       f"(same files as {d['dropped']})")
     # primary first, so a paired control can be scoped to the primary's run
     order = sorted(targets, key=lambda k: (targets[k].get("role") != ROLE_PRIMARY,
                                            k))
@@ -1165,9 +1232,16 @@ def freeze_baseline(inventory: Dict[str, object],
         tgt = targets[label]
         role = str(tgt.get("role", ROLE_PRIMARY))
         toks = tuple(t.lower() for t in tgt["name_tokens"])
+        # EXACT model name first. Substring matching alone pulls in `pwave_noc`
+        # for `pwave` and every `*base*` in the drive for `base`, which turns a
+        # well-identified target into a false ambiguity (measured 2026-08-09).
         cands = [e for e in entries
-                 if any(t in str(e.get("model_name", "")).lower() for t in toks)
-                 or any(t in str(e.get("run_id", "")).lower() for t in toks)]
+                 if str(e.get("model_name", "")).lower() in toks]
+        if not cands:
+            cands = [e for e in entries
+                     if any(t in str(e.get("model_name", "")).lower()
+                            for t in toks)
+                     or any(t in str(e.get("run_id", "")).lower() for t in toks)]
         if role == ROLE_CONTROL and tgt.get("same_parent_as") in selected:
             # A control name like "base26" repeats across unrelated ablation
             # runs. Scope it to the primary's own run — a provenance rule, not
@@ -3294,6 +3368,8 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
                    "fs": cohort.fs},
         "split": {"ds1": [int(r) for r in split["ds1"]],
                   "ds2": [int(r) for r in split["ds2"]],
+                  "ds2_analysis": [int(r) for r in split.get("ds2_analysis", [])],
+                  "ds2_excluded": [int(r) for r in split.get("ds2_excluded", [])],
                   "overlap": [], "note": split["note"]},
         "baseline_freeze": freeze, "gates": gates,
         "matching": {lab: {k: v for k, v in a.items() if k != "per_record"}
