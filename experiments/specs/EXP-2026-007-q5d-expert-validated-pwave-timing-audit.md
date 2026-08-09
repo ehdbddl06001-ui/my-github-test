@@ -185,6 +185,31 @@ run is not a scientific result and must not change this spec to `MEASURED`.
    unique join fails, emit `INPUT_ABSENT_OR_MISMATCH` and stop before scientific
    analysis.
 
+### PREP_DATA-A substage result — 2026-08-09, gate PASS
+
+This subsection records **only** that the PREP_DATA-A ACQUIRE_ONLY gate passed.
+It does not advance the experiment: the frontmatter `status` stays
+`approved_for_implementation`, and **EXP-2026-007 is not `MEASURED`.**
+
+- decision `PREP_DATA_ACQUIRED_VERIFIED` · gates **12/12 PASS** ·
+  `first_stopping_reason: null`.
+- canonical run `20260809T153151`.  Canonical evidence is the Drive audit
+  bundle, not the notebook output:
+  `MyDrive/MedKOS/ecg-model/assets/EXP-2026-007_prep_data/audit/runs/20260809T153151/`.
+- `mitdb 1.0.0`: 48/48 records, 147/147 publisher checksums VERIFIED, 93.9 MB.
+  `pwave 1.0.0`: 12/12 records, 39/39 publisher checksums VERIFIED, 23.5 MB.
+- `checksum_report.csv` 186 rows / 186 VERIFIED / missing 0 / `HASH_MISMATCH` 0 ·
+  `record_inventory.csv` 60 rows / 0 failures ·
+  `wfdb_open_report.csv` 60 rows / 60 VERIFIED at fs 360 Hz ·
+  pre-existing asset conflicts 0.
+- Item 3 of the gate list (the `atr` beat join) was **not** performed.  Neither
+  were delineation qualification, DS2 outcome analysis, S PR-AUC, SHAM
+  permutation, or training.  This is a data-preparation success, not a
+  scientific result.
+- The only stage this unlocks for consideration is **delineator qualification**,
+  and that stage is still unapproved — it needs a separate decision-log entry
+  before any code for it runs.
+
 ## Files allowed to change during implementation
 
 - `experiments/specs/EXP-2026-007-q5d-expert-validated-pwave-timing-audit.md`
@@ -393,3 +418,14 @@ separate explicit user approval before execution.
   run `PREP_DATA` first, acquiring and verifying the versioned PhysioNet inputs.
   Do not open the measurement-qualification or association-analysis stages until
   the acquisition bundle is reviewed and accepted.
+- 2026-08-09 — PREP_DATA-A ACQUIRE_ONLY accepted, canonical run
+  `20260809T153151`, 12/12 gates PASS.  Recorded in the subsection above and in
+  `research/ASSETS.md` / `research/PROJECT_STATE.md`.  **Experiment status is
+  unchanged** — the scientific question is unanswered and nothing after
+  PREP_DATA-A is approved.  Two provenance corrections were made during intake
+  rather than silently: (a) the acquisition module carried a NumPy truth-value
+  bug (`arr or []` on `wfdb` return values) that reported all 60 records as
+  `OPEN_FAILED` on the first attempt; the fixed module is v3 and the regression
+  test is `test_wfdb_array_returns`.  (b) The executed notebook was saved from a
+  mixed execution state, so only cell 5 (the `20260809T153151` acquisition run)
+  is kept as evidence and the other saved outputs were cleared, not rewritten.
