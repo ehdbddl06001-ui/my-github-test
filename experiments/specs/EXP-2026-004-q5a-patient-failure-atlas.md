@@ -438,6 +438,16 @@ sample index로 `.atr`의 `(sample → symbol)`을 정확 조인해 원 symbol�
 unavailable로 기록**한다(근사 금지). RR은 source에 없으면 `t`에서 결정론적으로
 계산한다(record 첫/마지막 beat는 미정의로 남긴다).
 
+**(7) source 시간 열은 float이고 단위를 단정하지 않는다.** 첫 `ANALYZE` 실행에서
+`mamba_data.npz`의 `t`가 **실수**(`0.0`)임이 드러났다(정수 sample index로 단정한
+파싱이 `ValueError`로 중단). 단위를 추측하는 대신 **초/샘플 두 해석을 모두 계산해
+중앙 beat 간격이 생리적 RR 범위(0.25–2.5 s)에 들어가는 쪽이 정확히 하나일 때만
+채택**하고, 0개거나 2개면 측정값을 붙여 STOP한다(`infer_time_unit`). RR 유도와
+`.atr` symbol 조인이 모두 이 검증된 단위를 쓴다. 아울러 키 생성 경로를
+`format_beat_keys` **하나로 통일**했다 — legacy adapter가 `t`를 `int64`로 캐스팅해
+`0.0`을 `0`으로 만들면 조인의 한쪽만 형식이 달라져 전량 불일치가 났을 것이다
+(회귀 테스트로 고정).
+
 과학적 질문·split·주 metric·decision tree·branch 기준은 **변경 없음**. 위는 전부
 데이터 감사/adapter 인프라의 확장이며, 여전히 결과는 없다(`RESULT NOT RUN`).
 
