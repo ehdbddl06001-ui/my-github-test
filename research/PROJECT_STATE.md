@@ -30,7 +30,32 @@ run `20260809T1033_EXP-2026-004_q5a_patient_failure_atlas` · 모듈 q5a v8 ·
   objective 하나만 바꾸는 DS1-only patient-CVaR pilot. 자세한 내용은 spec의
   「Q5-B design brief」.
 
-## EXP-2026-005 / Q5-B-0 — 사전 등록 완료, RESULT NOT RUN (2026-08-09 승인)
+## EXP-2026-005 / Q5-B-0 — MEASURED (2026-08-09), 판정 `NO_GO_SUBTYPE_CLOSED`
+
+run `20260809T1156_EXP-2026-005_q5b0_subtype_key_recovery` · 학습 없음.
+**`B_SUBTYPE`은 이 사전등록 아래에서 종결**이고, Q5-A의 `UNRESOLVED`(D5)는 4개
+블록 위에서 그대로 유지된다. symbols를 붙이지 않았고 재분석도 돌리지 않았다.
+
+- 실패한 검사: `s_match_fraction` **0.2593**(≥0.95) · `content_anchor_fraction`
+  **0.1981**(≥0.50) · record floor 18/32.
+- 통과한 검사가 더 많은 것을 말해준다: 매칭된 **721박의 symbol이 100% A/a/J/S**
+  (matcher가 볼 수 없는 값) · wrong-record 영가설 **0.48%** · 신호/영가설 **54배**
+  · 매칭 잔차 median **1.4 ms** · 순서 뒤섞기 불변 · record 동일성 44개 확립
+  (leftover 4개 = paced) · **per-record S 개수 불일치 0**.
+- 복구된 분포도 임상적으로 타당: **A 627 · a 32 · J 61 · S 1**.
+- 즉 **같은 S beat 집합인데 80%에서 RR이 5 ms 안에 안 들어온다.** 26%만 붙은 채
+  부분 사용하는 것은 하지 않는다 — 그 26%는 RR 일치를 조건으로 뽑힌 부분집합이라
+  선택 편향이다.
+- 가장 그럴듯한 기전(미확인): mamba 전처리가 beat를 버리므로(Q4-Q 실측 208
+  −12.7%, 213 −11.1%) 앞 beat가 버려진 beat는 파생 `pre_rr`이 구멍을 건너뛰어
+  한 박자만큼 커진다. 그렇다면 tolerance를 늘려도 소용없고, 비용을 두 좌표의
+  **평균**으로 잡은 내 키 설계가 한 좌표 오염에 취약한 것이 문제다.
+- 다음: v3 진단(최근접 후보 거리 분포 · ordinal 탐침)으로 **영구 종결인지 별도
+  재등록이 가능한지**를 데이터로 가른다. 재등록한다면 좌표별 키와 **그 키로 다시
+  계산한 wrong-record 영가설**을 함께 등록한다(느슨한 키는 영가설을 올리므로 같은
+  gate를 새로 통과해야 한다).
+
+### 사전 등록 원문 (2026-08-09 승인, 변경 없음)
 
 사용자가 Q5-B 진행을 승인해 **①(측정)** 을 사전 등록했다:
 `experiments/specs/EXP-2026-005-q5b0-subtype-key-recovery.md`.

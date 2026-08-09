@@ -54,7 +54,7 @@ EXPERIMENT_ID = "EXP-2026-005"
 ARM_ID = "Q5-B-0"
 RUN_SLUG = "q5b0_subtype_key_recovery"
 REANALYSIS_SLUG = "q5b0_subtype_reanalysis"
-MODULE_VERSION = 2
+MODULE_VERSION = 3
 MODULE_BUILD = "2026-08-09"
 
 MODES = ("DESIGN", "RECOVER", "REANALYZE", "REPORT")
@@ -523,6 +523,9 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
     per_record: List[Dict[str, object]] = []
     residuals: List[float] = []
     ordinal_seen: List[float] = []
+    ordinal_seen_used: List[float] = []
+    near_miss: List[float] = []
+    ordinal_probe: List[Dict[str, object]] = []
     total_s = total_matched = total_anchor = total_extended = 0
     for r in recs:
         idx = cohort.idx_of[int(r)]
@@ -583,6 +586,41 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
         total_extended += int(extended.sum())
         if ordinal is not None:
             ordinal_seen.append(ordinal)
+            if extended.any():
+                ordinal_seen_used.append(ordinal)
+
+        # ── diagnostics (no rule depends on these) ──────────────────────────
+        # How far away was the nearest candidate for the beats that did NOT
+        # match? Near misses and hopeless misses look identical in a match
+        # rate, and they mean completely different things about the artifact.
+        cost = _cost_matrix(fp_a[a_s], fp_b[b_s])
+        if cost.size:
+            nearest = np.min(np.where(np.isfinite(cost), cost, np.inf), axis=1)
+            miss = nearest[~anchor]
+            near_miss += [float(v) for v in miss[np.isfinite(miss)]]
+            row["nearest_cost_unmatched_p50"] = (float(np.median(miss))
+                                                 if len(miss) else None)
+        # Under the ordinal hypothesis (k-th S beat <-> k-th S beat), what is
+        # the RR discrepancy? A tight but non-zero cluster would mean the two
+        # files measure the same beats on different time bases; a diffuse one
+        # would mean they are simply not identifiable from RR.
+        if len(a_s) == len(b_s) and len(a_s):
+            d_pre = fp_b[b_s][:, 0] - fp_a[a_s][:, 0]
+            ratio = np.divide(fp_b[b_s][:, 0], fp_a[a_s][:, 0],
+                              out=np.full(len(a_s), np.nan),
+                              where=fp_a[a_s][:, 0] > 0)
+            ok = np.isfinite(d_pre)
+            if ok.any():
+                probe = {"record": int(r), "n": int(ok.sum()),
+                         "pre_rr_diff_median_s": float(np.median(d_pre[ok])),
+                         "pre_rr_diff_iqr_s": float(np.subtract(
+                             *np.percentile(d_pre[ok], [75, 25]))),
+                         "pre_rr_ratio_median": (float(np.nanmedian(ratio))
+                                                 if np.isfinite(ratio).any()
+                                                 else None)}
+                ordinal_probe.append(probe)
+                row.update({f"ordinal_probe_{k}": v for k, v in probe.items()
+                            if k != "record"})
         row.update({
             "status": "matched", "n_matched": int(hit.sum()),
             "match_fraction": float(hit.mean()),
@@ -620,6 +658,17 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
         "ordinal_consistency_min": (min(ordinal_seen) if ordinal_seen else None),
         "ordinal_consistency_mean": (float(np.mean(ordinal_seen))
                                      if ordinal_seen else None),
+        "ordinal_consistency_min_where_used": (min(ordinal_seen_used)
+                                               if ordinal_seen_used else None),
+        "nearest_cost_unmatched": {
+            "n": len(near_miss),
+            "p10": (float(np.percentile(near_miss, 10)) if near_miss else None),
+            "p50": (float(np.median(near_miss)) if near_miss else None),
+            "p90": (float(np.percentile(near_miss, 90)) if near_miss else None),
+            "within_2x_tolerance": (float(np.mean(np.array(near_miss)
+                                                  <= 2 * tolerance))
+                                    if near_miss else None)},
+        "ordinal_hypothesis_probe": ordinal_probe,
         "symbol_in_s_set_fraction": in_set,
         "rr_unit": unit,
         "median_residual_s": float(np.median(residuals)) if residuals else None,
@@ -653,6 +702,10 @@ def _empty_recovery(cohort: QA.AtlasCohort, mapping_report: Dict[str, object]
             "n_s": n_s, "n_matched": 0, "n_anchor": 0, "n_extended": 0,
             "match_fraction": 0.0, "anchor_fraction": 0.0,
             "ordinal_consistency_min": None, "ordinal_consistency_mean": None,
+            "ordinal_consistency_min_where_used": None,
+            "nearest_cost_unmatched": {"n": 0, "p10": None, "p50": None,
+                                       "p90": None, "within_2x_tolerance": None},
+            "ordinal_hypothesis_probe": [],
             "symbol_in_s_set_fraction": 0.0, "rr_unit": None,
             "median_residual_s": None, "p95_residual_s": None, "residuals": [],
             "subtype_counts": {t: 0 for t in S_SUBTYPES},
@@ -889,7 +942,13 @@ def evaluate_recovery_gate(recovery: Dict[str, object],
         "share of S beats identified by the RR key alone")
 
     n_ext = int(recovery.get("n_extended") or 0)
-    omin = recovery.get("ordinal_consistency_min")
+    # Judge the rule this check NAMES: ordinal consistency in the records where
+    # beats were actually filled. The min over every record also counts records
+    # where the fill correctly refused to fire, which is a different (stricter,
+    # and wrongly worded) test.
+    omin = recovery.get("ordinal_consistency_min_where_used")
+    if omin is None and n_ext:
+        omin = recovery.get("ordinal_consistency_min")
     add("ordinal_mapping_exact_where_used",
         n_ext == 0 or (omin is not None and float(omin) >= 1.0),
         ("not used" if n_ext == 0 else omin), "== 1.0 whenever beats were "
@@ -1014,6 +1073,28 @@ def write_recovery_bundle(out_dir: str, result: Dict[str, object],
     return result
 
 
+def _fmt_near(d: Optional[Dict[str, object]]) -> str:
+    if not d or not d.get("n"):
+        return "(없음 — 전부 매칭됨)"
+    return (f"n={d['n']} · p10 {d['p10']:.4f}s · p50 {d['p50']:.4f}s · "
+            f"p90 {d['p90']:.4f}s · 허용치의 2배 안 "
+            f"{float(d['within_2x_tolerance']):.1%}")
+
+
+def _fmt_probe(rows: Optional[Sequence[Dict[str, object]]]) -> str:
+    rows = [r for r in (rows or []) if r.get("n")]
+    if not rows:
+        return "(S 개수가 어긋나 탐침 불가)"
+    diff = np.array([r["pre_rr_diff_median_s"] for r in rows], float)
+    iqr = np.array([r["pre_rr_diff_iqr_s"] for r in rows], float)
+    ratio = np.array([r["pre_rr_ratio_median"] for r in rows
+                      if r.get("pre_rr_ratio_median") is not None], float)
+    return (f"record {len(rows)}개 · 차이 median {np.median(diff):+.4f}s "
+            f"(record간 IQR {np.subtract(*np.percentile(diff, [75, 25])):.4f}s) · "
+            f"record내 IQR median {np.median(iqr):.4f}s"
+            + (f" · 비율 median {np.median(ratio):.4f}" if len(ratio) else ""))
+
+
 def _write_recovery_summary(out_dir: str, result: Dict[str, object],
                             recovery: Dict[str, object],
                             controls: Dict[str, object],
@@ -1029,9 +1110,16 @@ def _write_recovery_summary(out_dir: str, result: Dict[str, object],
         f"- 매칭된 beat의 symbol이 AAMI S 집합(A/a/J/S)에 드는 비율: "
         f"{float(recovery.get('symbol_in_s_set_fraction') or 0):.1%} "
         "— matcher는 symbol을 보지 않으므로 이것은 **독립 검증**이다",
-        f"- RR 잔차: median {recovery.get('median_residual_s')} s · "
+        f"- RR 잔차(매칭된 것): median {recovery.get('median_residual_s')} s · "
         f"p95 {recovery.get('p95_residual_s')} s "
         f"(허용 {RR_TOLERANCE_S} s, margin {RR_MARGIN_S} s)",
+        f"- **못 붙인 beat의 최근접 후보 거리**: "
+        f"{_fmt_near(recovery.get('nearest_cost_unmatched'))} "
+        "— 아깝게 빗나간 것과 아예 못 찾은 것은 match rate에서 구별되지 않는다",
+        f"- **ordinal 가설 탐침**(k번째↔k번째일 때의 RR 차이): "
+        f"{_fmt_probe(recovery.get('ordinal_hypothesis_probe'))} "
+        "— 좁게 뭉친 0이 아닌 값이면 '같은 beat를 다른 시간축으로 잰 것', "
+        "흩어져 있으면 'RR로는 식별 불가'다",
         f"- 복구된 subtype 분포: "
         + " · ".join(f"{k} {v}" for k, v in counts.items()),
         "",
@@ -1083,15 +1171,20 @@ def _write_recovery_figures(out_dir: str, recovery: Dict[str, object],
                   caption=("S beats only; the matcher never sees a symbol, so "
                            "'symbol in AAMI S set' is an independent check"))
     res = [r for r in recovery.get("residuals", []) if np.isfinite(r)]
+    near = recovery.get("nearest_cost_unmatched") or {}
     fig, ax = plt.subplots(figsize=(7, 4))
     if res:
-        ax.hist(res, bins=40, color="#3b6ea5")
+        ax.hist(res, bins=40, color="#3b6ea5", label=f"matched (n={len(res)})")
+    if near.get("p50") is not None:
+        for q, style in (("p10", ":"), ("p50", "-"), ("p90", "--")):
+            ax.axvline(float(near[q]), color="#b06a00", ls=style, lw=1,
+                       label=f"unmatched {q} = {float(near[q]):.3f}s")
     ax.axvline(RR_TOLERANCE_S, color="crimson", ls="--",
                label=f"tolerance {RR_TOLERANCE_S}s")
     ax.set_xlabel("RR fingerprint residual (s)")
     ax.set_ylabel(f"matched S beats (n={len(res)})")
-    ax.set_title("join residuals")
-    ax.legend()
+    ax.set_title("join residuals (matched) vs nearest candidate (unmatched)")
+    ax.legend(fontsize=7)
     QA._caption(ax, "mean |diff| over pre/post/prev/next RR, seconds")
     fig.tight_layout()
     fig.savefig(os.path.join(figdir, "rr_residual_hist.png"), dpi=110)
@@ -1163,6 +1256,9 @@ def run_recovery(cohort: QA.AtlasCohort, symbol_npz: str, out_dir: str,
         "match_fraction": recovery["match_fraction"],
         "anchor_fraction": recovery["anchor_fraction"],
         "ordinal_consistency_min": recovery["ordinal_consistency_min"],
+        "ordinal_consistency_min_where_used":
+            recovery["ordinal_consistency_min_where_used"],
+        "nearest_cost_unmatched": recovery["nearest_cost_unmatched"],
         "chronology_min": recovery["chronology_min"],
         "symbol_in_s_set_fraction": recovery["symbol_in_s_set_fraction"],
         "subtype_counts": recovery["subtype_counts"],
