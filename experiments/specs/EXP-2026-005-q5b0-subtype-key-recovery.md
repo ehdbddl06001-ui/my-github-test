@@ -206,6 +206,31 @@ ground truth로 표현 · 관찰 연관성을 인과로 승격 · 두 가설을 
 
 ## Decision log
 
+### 2026-08-09 — record 동일성을 **가정에서 확립으로** (deviation 기록 1; 결과 없음)
+
+첫 `RECOVER` 실행이 `Q5B0Error: no mitdb rows for records (100, 101, 103, …)`
+로 중단됐다. 원인은 내 loader가 `ecg_multi.npz`의 `pid`를 MIT record 번호라고
+**가정**하고 100–234로 필터한 것이다. Q4-Q PREP_DATA는 이미 그 반대를 실측해
+뒀다 — 그 파일의 id는 ordinal일 수 있고, 그래서 Q4-Q는 id 동일성이 아니라
+**5-class 지문 배정**으로 record를 짝지었다. 나는 그 결론을 코드에 반영하지
+않았다.
+
+수정(측정 전):
+
+- db 필터만 적용하고 record 번호로는 거르지 않는다. id coding(`record_numbers` /
+  `ordinal_or_other`)을 실측해 로그와 result에 남긴다.
+- `resolve_record_mapping()`: ① id가 record 번호로 보이면 **먼저 검증한다** —
+  per-record S 개수가 Q4-Q와 같은 예산(≤10) 안에서 일치할 때만 identity를 받아
+  들인다. ② 아니면 Q4-Q의 `_fingerprint_match`(gate가 이미 통과한 그 코드)로
+  배정한다.
+- 매핑이 불가능하면 **예외가 아니라 NO-GO**다: 빈 recovery + 전체 bundle을 쓰고
+  `record_identity_resolved` gate 검사에서 떨어진다. 근거 없이 멈추지 않는다.
+- gate에 `record_identity_resolved` 항목을 추가했다(방법과 근거를 함께 기록).
+
+임계값·조인 규칙은 하나도 바꾸지 않았다. 바뀐 것은 "record가 서로 같다"는 것을
+**가정하지 않고 확립한다**는 점뿐이며, 이는 원 프롬프트의 "단순 array position /
+row order 매칭 금지"와 같은 원칙의 record 판이다. 모듈 v2.
+
 ### 2026-08-09 — 설계 등록 (결과 없음)
 
 Q5-A가 `UNRESOLVED`(D5)로 인수됐고, 사용자가 "Q5-B로 넘어간다"를 승인했다.

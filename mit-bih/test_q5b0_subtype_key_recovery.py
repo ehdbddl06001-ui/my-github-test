@@ -329,6 +329,68 @@ def test_ordinal_fill_needs_its_licence():
           "the content anchors still recover real S symbols after reversal")
 
 
+def test_record_identity_is_established_not_assumed():
+    print("record identity: ids may not be MIT record numbers")
+    tmp = tempfile.mkdtemp(prefix="q5b0_ids_")
+    try:
+        cohort, source, recs = _pair(n_per=60, drop=1)
+        ident = QB.resolve_record_mapping(cohort, source,
+                                          log=Q4O.RunLog(echo=False))
+        check(ident["ok"] and ident["method"] == "identity_verified",
+              "record numbers are accepted only after the S counts agree")
+
+        # the shape the real ecg_multi.npz is in: ordinal ids, no relation to
+        # MIT record numbers. Filtering on 100..234 would empty the file.
+        order = {int(r): i for i, r in enumerate(sorted(set(
+            source.record.tolist())))}
+        ordinal = QB.SymbolSource(
+            record=np.array([order[int(r)] for r in source.record], int),
+            sym=source.sym, y5=source.y5, pre_rr=source.pre_rr,
+            post_rr=source.post_rr,
+            records=np.array(sorted(order.values()), int))
+        ordinal.idx_of = {int(r): np.where(ordinal.record == r)[0]
+                          for r in ordinal.records}
+        rmap = QB.resolve_record_mapping(cohort, ordinal,
+                                         log=Q4O.RunLog(echo=False))
+        check(rmap["ok"] and rmap["method"] == "fingerprint_assignment",
+              "ordinal ids are paired by the 5-class profile instead")
+        check(rmap["source_id_coding"] == "ordinal_or_other",
+              "the id coding is reported, not silently assumed")
+        check(rmap["mapping"] == {int(r): order[int(r)] for r in order},
+              "the assignment recovers the true pairing")
+
+        npz = QB.write_symbol_npz(os.path.join(tmp, "ordinal.npz"), ordinal)
+        res = QB.run_recovery(cohort, npz, os.path.join(tmp, "run"),
+                              log=Q4O.RunLog(echo=False))
+        check(res["gate"] == QB.GATE_GO,
+              f"a file with ordinal ids still joins ({res['match_fraction']:.1%})")
+        check(res["record_mapping"]["method"] == "fingerprint_assignment",
+              "the result records how identity was established")
+
+        # a source that shares no record profile at all: NO-GO with a bundle,
+        # never a crash that leaves nothing behind
+        alien = QB.SymbolSource(
+            record=np.zeros(50, int), sym=np.full(50, "A", dtype="<U2"),
+            y5=np.zeros(50, int), pre_rr=np.full(50, 0.8),
+            post_rr=np.full(50, 0.8), records=np.array([0]))
+        alien.idx_of = {0: np.arange(50)}
+        bad = QB.resolve_record_mapping(cohort, alien,
+                                        log=Q4O.RunLog(echo=False))
+        check(bad["ok"] is False and bad.get("reason"),
+              "an unresolvable mapping is reported, not raised")
+        anpz = QB.write_symbol_npz(os.path.join(tmp, "alien.npz"), alien)
+        ares = QB.run_recovery(cohort, anpz, os.path.join(tmp, "alien"),
+                               log=Q4O.RunLog(echo=False))
+        check(ares["gate"] == QB.GATE_NOGO
+              and ares["status"] == QB.STATUS_MEASURED,
+              "no record correspondence -> measured NO-GO")
+        for f in QB.RECOVERY_BUNDLE_FILES:
+            check(os.path.exists(os.path.join(tmp, "alien", f)),
+                  f"the NO-GO-by-mapping bundle still has {f}")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_gate_blocks_attachment_and_reanalysis():
     print("NO-GO stops everything downstream")
     cohort, source, recs = _pair(n_per=60, scramble=True)
@@ -609,6 +671,7 @@ def main() -> int:
                test_gate_refuses_an_unrelated_source,
                test_symbols_never_drive_the_match, test_controls_can_fail,
                test_ordinal_fill_needs_its_licence,
+               test_record_identity_is_established_not_assumed,
                test_gate_blocks_attachment_and_reanalysis,
                test_recovery_bundle_and_report,
                test_reanalysis_adds_the_fifth_block,
