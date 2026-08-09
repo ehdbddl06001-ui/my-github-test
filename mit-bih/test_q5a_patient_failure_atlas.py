@@ -1278,13 +1278,20 @@ def test_spec_and_docs():
         check(b in text, f"spec documents branch {b}")
     check("Q5-B" in text and ("구현하지 않는다" in text or "만들지 않는다" in text),
           "spec states Q5-B is not implemented in this PR")
-    # the brief is a design brief, not an implementation: no Q5-B spec, module
-    # or training notebook may exist before the user approves the branch.
+    # The brief is a design brief. Q5-B-0 (EXP-2026-005) is its first item —
+    # the cheapest additional MEASUREMENT the D5 next_step called for — and the
+    # user approved it, so it may exist. What still may not exist is the
+    # INTERVENTION pilot: anything that would train a model.
     stray = [os.path.join(d, f)
              for sub in ("experiments/specs", "mit-bih", "notebooks")
              for d, _, fs in os.walk(os.path.join(root, sub)) for f in fs
-             if "q5b" in f.lower() or "q5-b" in f.lower()]
-    check(not stray, f"no Q5-B implementation file exists yet: {stray}")
+             if any(t in f.lower() for t in ("q5b1", "q5-b-1", "cvar",
+                                             "groupdro"))]
+    check(not stray, f"no Q5-B intervention file exists yet: {stray}")
+    q5b0 = os.path.join(root, "mit-bih", "q5b0_subtype_key_recovery.py")
+    if os.path.exists(q5b0):
+        check(QA.assert_analysis_only(q5b0)["analysis_only"],
+              "the approved Q5-B-0 measurement contains no training call")
 
 
 def test_regression_suites_importable():
