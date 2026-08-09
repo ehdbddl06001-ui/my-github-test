@@ -945,9 +945,21 @@ def test_notebook_contract():
                    "v10pkg", "mamba_data"):
         check(banned not in joined.lower(),
               f"no code cell performs '{banned}'")
-    check(all(len(c.get("outputs", [])) == 0 for c in nb["cells"]
-              if c["cell_type"] == "code"),
-          "the committed notebook carries no outputs (nothing has been run)")
+    # An executed notebook IS the expected end state (AGENTS.md: the executed
+    # notebook is committed after the Colab run).  What must never appear in
+    # those outputs is a claim this stage is not allowed to make.
+    outs = "\n".join("".join(o.get("text", []))
+                     for c in nb["cells"] if c["cell_type"] == "code"
+                     for o in c.get("outputs", []))
+    if outs.strip():
+        check("MEASURED" not in outs,
+              "executed outputs never claim a scientific MEASURED verdict")
+        check(any(code in outs for code in QD.DECISIONS),
+              "executed outputs carry a PREP_DATA decision code")
+        check(QD.DECISION_VERIFIED in outs or QD.DECISION_MISMATCH in outs,
+              "the acquisition decision is visible in the saved outputs")
+    else:
+        print("  (no outputs — the notebook has not been executed yet)")
     first_md = "".join(nb["cells"][0]["source"])
     for token in ("PREP_DATA-A", "NO TRAINING", "RESULT NOT RUN"):
         check(token in first_md, f"the first screen states '{token}'")
