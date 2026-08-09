@@ -75,8 +75,8 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 2
-MODULE_BUILD = ("2026-08-09 q5a.2 — legacy ablation adapter: prediction files "
+MODULE_VERSION = 3
+MODULE_BUILD = ("2026-08-09 q5a.3 — source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
                 "detected by KEY (ens.npz), tag folders are their own runs, "
                 "row correspondence VERIFIED against the frozen source before "
                 "any key is derived, paired control scoped to the primary's "
@@ -371,8 +371,7 @@ def build_beat_keys(fields: Dict[str, np.ndarray],
         samp = np.asarray(fields[samp_f])
         sym = (np.asarray(fields[sym_f]).astype(str) if sym_f
                else np.full(len(rec), "?", dtype="<U2"))
-        keys = np.array([f"{d}|{r}|{s}|{y}" for d, r, s, y
-                         in zip(db, rec, samp, sym)], dtype=object).astype(str)
+        keys = format_beat_keys(db, rec, samp, sym)
         assert_not_positional(np.asarray(fields[samp_f]))
         prov["mode"] = KEY_MODE_ANNOTATION
         return keys, KEY_MODE_ANNOTATION, prov
@@ -392,6 +391,70 @@ def build_beat_keys(fields: Dict[str, np.ndarray],
         "no annotation sample field and no waveform available — this artifact "
         "supports aggregate metrics only, never beat-level comparison "
         "(spec §5). Do not fall back to row order.")
+
+
+def format_beat_keys(db, record, sample, sym) -> np.ndarray:
+    """THE canonical beat key. Every code path must build keys through here.
+
+    The sample field keeps the source's own dtype and formatting — the atlas
+    cohort and an adapted legacy artifact read the same column of the same
+    file, so ``0.0`` must not become ``0`` on one side of the join.
+    """
+    return np.array([f"{d}|{r}|{s}|{y}" for d, r, s, y
+                     in zip(np.asarray(db), np.asarray(record),
+                            np.asarray(sample), np.asarray(sym))],
+                    dtype=object).astype(str)
+
+
+def key_sample_values(keys: np.ndarray) -> np.ndarray:
+    """The numeric sample/time field of each key (float — it may be seconds)."""
+    return np.array([float(str(k).split("|")[2]) for k in np.asarray(keys)])
+
+
+#: Physiological bounds used to VERIFY (not guess) the unit of the source's
+#: time column. A median RR outside this range means the interpretation is
+#: wrong, so the wrong one cannot silently win.
+RR_PLAUSIBLE_S = (0.25, 2.5)
+
+
+def infer_time_unit(keys: np.ndarray, record: np.ndarray,
+                    fs: float) -> Dict[str, object]:
+    """Decide whether the source time column is in SECONDS or in SAMPLES.
+
+    Measured 2026-08-09: ``mamba_data.npz``'s ``t`` is floating point, so the
+    unit cannot be assumed. Both interpretations are evaluated and exactly one
+    must put the median beat-to-beat interval inside the physiological range;
+    zero or two survivors is an error with the measured numbers attached.
+    """
+    t = key_sample_values(keys)
+    rec = np.asarray(record)
+    diffs = []
+    for r in np.unique(rec):
+        idx = np.where(rec == r)[0]
+        v = np.sort(t[idx])
+        d = np.diff(v)
+        d = d[d > 0]
+        if len(d):
+            diffs.append(np.median(d))
+    if not diffs:
+        raise Q5AError("the source time column has no positive intervals — "
+                       "its unit cannot be verified")
+    med = float(np.median(diffs))
+    cands = {"seconds": med, "samples": med / float(fs)}
+    ok = {k: v for k, v in cands.items()
+          if RR_PLAUSIBLE_S[0] <= v <= RR_PLAUSIBLE_S[1]}
+    if len(ok) != 1:
+        raise Q5AError(
+            f"cannot verify the unit of the source time column: median "
+            f"interval {med:.4f} reads as {cands['seconds']:.4f}s if seconds "
+            f"and {cands['samples']:.4f}s if samples; plausible range is "
+            f"{RR_PLAUSIBLE_S}. {len(ok)} interpretation(s) survive — STOP "
+            "instead of guessing")
+    unit = next(iter(ok))
+    return {"unit": unit, "median_interval_raw": med,
+            "median_rr_seconds": float(ok[unit]), "fs": float(fs),
+            "rule": ("verified against the physiological RR range; the other "
+                     "interpretation is off by orders of magnitude")}
 
 
 def _duplicate_keys(keys: np.ndarray) -> List[str]:
@@ -513,6 +576,17 @@ def find_annotation_dir(drive_root: str) -> Optional[str]:
     return None
 
 
+def annotation_sample_index(cohort: AtlasCohort,
+                            unit: Optional[Dict[str, object]] = None
+                            ) -> Tuple[np.ndarray, Dict[str, object]]:
+    """Integer annotation sample index for every beat, whatever unit the
+    source stored its time column in."""
+    unit = unit or infer_time_unit(cohort.key, cohort.record, cohort.fs)
+    t = key_sample_values(cohort.key)
+    idx = t if unit["unit"] == "samples" else t * float(cohort.fs)
+    return np.rint(idx).astype(np.int64), unit
+
+
 def attach_symbols_from_annotations(cohort: AtlasCohort, ann_dir: str,
                                     log: Optional[RunLog] = None
                                     ) -> Dict[str, object]:
@@ -532,7 +606,12 @@ def attach_symbols_from_annotations(cohort: AtlasCohort, ann_dir: str,
         report["reason"] = f"wfdb not installed ({exc})"
         return report
     import wfdb
-    samples = np.array([int(str(k).split("|")[2]) for k in cohort.key])
+    try:
+        samples, unit = annotation_sample_index(cohort)
+    except Q5AError as exc:
+        report["reason"] = f"time unit unverifiable ({exc})"
+        return report
+    report["time_unit"] = unit
     matched = 0
     sym = np.full(cohort.n, "?", dtype="<U2")
     per_record = {}
@@ -573,23 +652,30 @@ def attach_symbols_from_annotations(cohort: AtlasCohort, ann_dir: str,
     return report
 
 
-def rr_from_samples(cohort: AtlasCohort) -> None:
-    """Fill pre/post RR from the annotation sample index when the source
-    file does not store them. Deterministic, per record, seconds."""
+def rr_from_samples(cohort: AtlasCohort) -> Dict[str, object]:
+    """Fill pre/post RR (seconds) from the source time column when the file
+    does not store RR. The unit is verified, never assumed."""
     if np.isfinite(cohort.pre_rr).any():
-        return
-    samples = np.array([float(str(k).split("|")[2]) for k in cohort.key])
+        return {"derived": False, "reason": "source already carries RR"}
+    unit = infer_time_unit(cohort.key, cohort.record, cohort.fs)
+    raw = key_sample_values(cohort.key)
+    t_sec = raw if unit["unit"] == "seconds" else raw / float(cohort.fs)
     pre = np.full(cohort.n, np.nan)
     post = np.full(cohort.n, np.nan)
     for r in cohort.records:
         idx = cohort.idx_of[int(r)]
-        order = idx[np.argsort(samples[idx])]
-        t = samples[order] / cohort.fs
-        d = np.diff(t)
+        order = idx[np.argsort(t_sec[idx])]
+        d = np.diff(t_sec[order])
         pre[order[1:]] = d
         post[order[:-1]] = d
     cohort.pre_rr = pre
     cohort.post_rr = post
+    med = float(np.nanmedian(pre))
+    if not (RR_PLAUSIBLE_S[0] <= med <= RR_PLAUSIBLE_S[1]):
+        raise Q5AError(f"derived median RR {med:.3f}s is outside "
+                       f"{RR_PLAUSIBLE_S} — the time column is not what it "
+                       "appears to be; STOP")
+    return {"derived": True, "time_unit": unit, "median_pre_rr_s": med}
 
 
 def cohort_split(cohort: AtlasCohort) -> Dict[str, List[int]]:
@@ -745,8 +831,10 @@ def load_frozen_source_index(source_path: str,
         db_f = _first_key(files, BEAT_KEY_DB_FIELDS)
         out = {"record": np.asarray(z[rec_f]).astype(int),
                "y": np.asarray(z[y_f]).astype(int)}
-        out["sample"] = (np.asarray(z[t_f]).astype(np.int64) if t_f is not None
-                         else None)
+        # Keep the source's own dtype: the cohort formats its key from this
+        # very column, and casting a float `t` to int here would turn "0.0"
+        # into "0" on one side of the join only.
+        out["sample"] = np.asarray(z[t_f]) if t_f is not None else None
         # Carried so the derived key matches the atlas cohort's key exactly —
         # the cohort builds its key from the same fields of the same file.
         out["sym"] = (np.asarray(z[sym_f]).astype(str) if sym_f is not None
@@ -1216,8 +1304,7 @@ def load_model_predictions(run_dir: str, label: str,
             dbs = (np.asarray(source_index["db"])[rows]
                    if source_index.get("db") is not None
                    else np.full(len(rows), "mitdb"))
-            keys = np.array([f"{d}|{r}|{s}|{y}" for d, r, s, y
-                             in zip(dbs, rec, samples, syms)])
+            keys = format_beat_keys(dbs, rec, samples, syms)
             key_mode = KEY_MODE_SOURCE_VERIFIED
             log(f"{label}: row correspondence VERIFIED against the frozen "
                 f"source ({verification['subset']}, {verification['n']} rows, "
@@ -3240,7 +3327,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                                          "baseline_freeze.json")) \
             or freeze_baseline(inv)
         cohort, source_audit = load_atlas_source(args.data, log=log)
-        rr_from_samples(cohort)
+        source_audit["rr_derivation"] = rr_from_samples(cohort)
+        log(f"RR: {source_audit['rr_derivation']}")
         ann_report = {"usable": False, "reason": "no --ann-dir given"}
         if args.ann_dir:
             ann_report = attach_symbols_from_annotations(cohort, args.ann_dir,

@@ -453,6 +453,71 @@ def test_legacy_adapter():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def _float_time_cohort(unit: str, n_per: int = 30):
+    """A cohort whose source time column is FLOAT — measured 2026-08-09:
+    mamba_data.npz stores `t` as floating point, so `0.0` (not `0`)."""
+    c = QA.synthetic_atlas(n_per_record=n_per)
+    samples = QA.key_sample_values(c.key)
+    t = samples if unit == "samples" else samples / c.fs
+    c.key = QA.format_beat_keys(c.db, c.record, t.astype("float64"), c.sym)
+    c.pre_rr = np.full(c.n, np.nan)
+    c.post_rr = np.full(c.n, np.nan)
+    return c
+
+
+def test_float_time_column():
+    print("float time column: the unit is verified, never assumed")
+    for unit in ("samples", "seconds"):
+        c = _float_time_cohort(unit)
+        check("|0.0|" in "|".join(c.key[:1]) or ".0" in str(c.key[0]),
+              f"[{unit}] the key really carries a float sample field")
+        got = QA.infer_time_unit(c.key, c.record, c.fs)
+        check(got["unit"] == unit,
+              f"[{unit}] unit recovered from the data ("
+              f"median RR {got['median_rr_seconds']:.3f}s)")
+        idx, _u = QA.annotation_sample_index(c)
+        check(idx.dtype.kind == "i" and idx.min() >= 0,
+              f"[{unit}] an integer annotation sample index is derived")
+        rep = QA.rr_from_samples(c)
+        check(rep["derived"] and 0.25 <= rep["median_pre_rr_s"] <= 2.5,
+              f"[{unit}] RR comes out physiological ("
+              f"{rep['median_pre_rr_s']:.3f}s)")
+
+    # an unusable column must stop, not pick the least-bad reading
+    c = QA.synthetic_atlas(n_per_record=30)
+    weird = np.arange(c.n, dtype="float64") * 1e6
+    c.key = QA.format_beat_keys(c.db, c.record, weird, c.sym)
+    expect_raise(lambda: QA.infer_time_unit(c.key, c.record, c.fs),
+                 "an implausible interval stops instead of guessing a unit",
+                 QA.Q5AError)
+
+    # the float key must survive the legacy adapter round trip unchanged
+    tmp = tempfile.mkdtemp(prefix="q5a_float_")
+    try:
+        c = _float_time_cohort("seconds")
+        t = QA.key_sample_values(c.key)
+        src = os.path.join(tmp, "src.npz")
+        np.savez_compressed(src, beat=c.beat, y=c.y5.astype(int),
+                            pid=c.record.astype(int), t=t.astype("float64"),
+                            sym=c.sym.astype(str), db=c.db.astype(str))
+        split = QA.cohort_split(c)
+        rows = np.sort(c.rows_of(split["ds2"]))
+        m = QA.synthetic_model(c, "V10", skill=4.0, seed=4)
+        d = os.path.join(tmp, "runs", "ablation_step9d", "pwave")
+        _write_legacy_run(d, c, m, rows)
+        si = QA.load_frozen_source_index(src, log=Q4O.RunLog(echo=False))
+        mp = QA.load_model_predictions(d, "V10", source_index=si,
+                                       log=Q4O.RunLog(echo=False))
+        check(list(mp.key) == list(c.key[rows]),
+              "float `t` formats identically on both sides of the join "
+              "(no 0.0 -> 0 cast)")
+        audit = QA.match_beat_keys(c, mp, strict=False)
+        check(audit["pass"] and audit["matched"] == len(rows),
+              "the adapted legacy artifact matches the cohort exactly")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_rr_and_symbol_recovery():
     print("RR from the annotation index; symbols only when they really join")
     cohort = QA.synthetic_atlas(n_per_record=30)
@@ -929,7 +994,7 @@ def main() -> int:
                test_matching_hard_stops, test_split_and_inclusion,
                test_no_ds2_feedback, test_inventory_and_freeze,
                test_absent_historical_baseline, test_legacy_adapter,
-               test_rr_and_symbol_recovery,
+               test_float_time_column, test_rr_and_symbol_recovery,
                test_metrics_recomputation, test_subtype_and_audit_records,
                test_block_evidence, test_decision_tree_all_branches,
                test_branch_not_by_largest_mean, test_language_boundary,
