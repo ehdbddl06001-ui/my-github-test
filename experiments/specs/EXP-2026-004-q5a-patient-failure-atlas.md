@@ -121,6 +121,11 @@ Q4-Q run folder `1ZCAYZCl4T4eoZzdFfV_IzkB0Mgbcqlw4` ·
 `mamba_data.npz` `1p3HvC_bnbiQlEanFOVIvVdejy60W0tho` ·
 `ecg_multi.npz` `1aSj_1jvS_W2iruVnORIG6DTVuHobzNzq`.
 
+> **2026-08-09 실측 반영**: baseline 집합은 primary `V10 = ablation_step9d/pwave`,
+> paired control `BASE26 = ablation_step9d/base26`(같은 스크립트·seed, P파 특징만
+> 다름), historical `V9 = kink_noctx`(**ARTIFACT_ABSENT** — 0.597 검증 불가)로
+> 확정됐다. 상세 근거와 규칙은 Decision log 2026-08-09 참조.
+
 V9/V10은 **이름만으로 하나를 임의 선택하지 않는다**. 후보를 전량 표로 만들고
 각 행에 config/model name · git SHA 또는 notebook source · data SHA와 split ·
 저장된 prediction/logit/probability 파일 · y_true/record_id/beat key ·
@@ -379,6 +384,62 @@ P-wave proxy를 P-wave ground truth로 표현 · 관찰 연관성을 인과 원�
 full training 실행.
 
 ## Decision log
+
+### 2026-08-09 — INVENTORY 실측 후 adapter 확장 (deviation 기록 1; 결과 없음)
+
+사용자의 첫 Colab `INVENTORY` 실행에서 gate가 설계대로 **STOP**했다(185 후보 ·
+beat-level 0 · `AMBIGUOUS_BASELINE`). 실측으로 드러난 사실 셋과 그에 따른 확장:
+
+**(1) V9 `kink_noctx`는 존재하지 않는다 — 정식 결과.** Drive 전량 조회 결과
+run 폴더·tag 폴더(`A/B/C/D`, `base26/combined42`, `base26/wst`, `A_gss/A_sgkf`,
+`base_lf/film`, `base_clean/film_clean`, `base/temporal`, `base/dual`,
+`base26/pwave`)·파일명·색인된 본문 어디에도 `kink`/`noctx`가 없다(유일한 hit은
+이 실험이 오늘 만든 `baseline_freeze.json` 자신). repo 코드에도 없다. 따라서
+**`V9 = ARTIFACT_ABSENT`, 기록된 0.597은 `UNVERIFIED`** 로 기록한다. 한계 명시:
+Drive 색인은 `.npz` 내부를 읽지 않으므로 "다른 이름으로 저장된 V9"까지 배제하지는
+못한다(사용자 로컬 PC 또는 미저장 가능성). **재학습으로 메우지 않는다.**
+
+**(2) baseline 재정의.** primary는 `ablation_step9d/pwave`(= `colab_step9d_final.py`
+의 `run_final("pwave")`), 짝 대조군은 **같은 폴더의 `base26`**(같은 스크립트·같은
+seed(1000–1004)·같은 저울, `use_pw = tag=="pwave"` 한 줄만 다름)이다. `base26`이라는
+이름은 `ablation_step11`·`step13`에도 있으므로, **paired control은 primary와 같은
+parent run으로 범위를 좁혀서만** 선택한다(성능이 아니라 provenance 규칙). role 도입:
+`primary`(부재 시 STOP) · `paired_control` · `historical_unverified`(부재는 결과이지
+STOP이 아님). freeze 상태 `FROZEN_WITH_ABSENT_BASELINE` 추가 — gate는 통과시키되
+absent 목록을 결과에 남긴다.
+
+**(3) 예측 파일 인식은 파일명이 아니라 KEY로.** 2026-07/08 ablation 산출물은
+`<run>/<tag>/ens.npz`에 `prob`/`y`/`pid`를 담는다. 최초 구현은 파일명에 `prob`가
+들어간 것만 봤기 때문에 185개 run에서 beat-level 0이 나왔다(구현 결함). 확장:
+npz의 **키 조합**으로 판정하고, tag 폴더를 독립 inventory 행으로 올린다.
+`(n, n_class)` 확률 행렬 / `(n_seed, n)` 스택 / `(n,)` 점수를 `detect_score_layout`
+으로 구분하며, 해석 불가한 shape은 추측 없이 오류다(S 열은 `S_COLUMN = 1` 고정).
+
+**(4) 안정 키: 검증된 행 대응.** legacy 산출물에는 annotation index가 없다. 대신
+동결 source(`mamba_data.npz`, SHA 고정, `t` 보유)의 부분집합과 **`pid`·`y`가 모든
+행에서 일치하는지 전량 검증**하고(`verify_row_correspondence`), 통과한 경우에만
+source의 `t`로 키 `(db, record, sample, symbol)`를 부여한다. 한 행이라도 어긋나면
+STOP. 이는 금지된 "row order 매칭"이 아니라 **행 대응의 검증**이다 — 검증 실패 시
+어떤 fallback도 없다. source 없이 legacy 산출물을 읽으면 즉시 오류다.
+
+**(5) 모델 scope와 threshold.** legacy 산출물은 DS2만 채점한다. 따라서 (a) 매칭
+감사는 **모델 자신의 record scope 안에서만** 불일치를 판정하고 scope 밖 record는
+`records_not_covered`로 보고하며, (b) 분석 cohort는 모든 모델이 공통으로 덮는 DS2
+record로 제한하고 제외 목록을 남긴다. (c) DS1 행이 없으므로 threshold는 **atlas
+cohort의 DS1 주석에서 계산한 S prevalence**를 받아 DS2 score 분위수로 잠근다.
+DS1 prevalence가 주어지지 않고 DS1 행도 없으면 오류다 — DS2 label로 threshold를
+만드는 경로는 코드에 존재하지 않는다.
+
+**(6) `.atr` 주석 경로 정정 + symbol 복구.** MIT-BIH 주석 캐시는
+`mitbih/mitdb/`가 아니라 **`mitbih/raw_ann/mitdb/`**(folder id
+`151DJAcjCbDXCoy9ZIPudbtSuVziG1fnj`)에 있다(`research/ASSETS.md` 정정). 키의
+sample index로 `.atr`의 `(sample → symbol)`을 정확 조인해 원 symbol을 복구하고,
+조인율이 `ANN_SYMBOL_MIN_MATCH`(0.95) 미만이거나 `wfdb`가 없으면 **subtype 블록을
+unavailable로 기록**한다(근사 금지). RR은 source에 없으면 `t`에서 결정론적으로
+계산한다(record 첫/마지막 beat는 미정의로 남긴다).
+
+과학적 질문·split·주 metric·decision tree·branch 기준은 **변경 없음**. 위는 전부
+데이터 감사/adapter 인프라의 확장이며, 여전히 결과는 없다(`RESULT NOT RUN`).
 
 ### 2026-08-08 — 설계 등록 (결과 없음)
 

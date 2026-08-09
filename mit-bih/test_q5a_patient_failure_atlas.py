@@ -48,22 +48,49 @@ def expect_raise(fn, label: str, exc=Exception) -> None:
 
 
 def _fixture(tmp: str, n_per: int = 60, seed: int = 5,
-             skill9: float = 2.0, skill10: float = 4.0):
-    """Cohort + two discoverable fixture runs (V9-like and V10-like)."""
+             skill_control: float = 2.0, skill_primary: float = 4.0,
+             with_v9: bool = False):
+    """Cohort + discoverable fixture runs: V10 `pwave` and its `base26` pair."""
     cohort = QA.synthetic_atlas(n_per_record=n_per, seed=seed)
-    m9 = QA.synthetic_model(cohort, "V9", skill=skill9, seed=3)
-    m10 = QA.synthetic_model(cohort, "V10", skill=skill10, seed=4)
+    ctrl = QA.synthetic_model(cohort, "BASE26", skill=skill_control, seed=3)
+    prim = QA.synthetic_model(cohort, "V10", skill=skill_primary, seed=4)
     runs = os.path.join(tmp, "runs")
-    QA.write_synthetic_run(os.path.join(runs, "20260101T0000_v9_kink_noctx"),
-                           "kink_noctx", cohort, m9, s_prauc=0.597)
-    QA.write_synthetic_run(os.path.join(runs, "20260102T0000_v10_pwave"),
-                           "pwave", cohort, m10, s_prauc=0.660)
+    QA.write_synthetic_run(os.path.join(runs, "20260102T0000_base26"),
+                           "base26", cohort, ctrl, s_prauc=0.51)
+    QA.write_synthetic_run(os.path.join(runs, "20260102T0100_pwave"),
+                           "pwave", cohort, prim, s_prauc=0.660)
+    if with_v9:
+        v9 = QA.synthetic_model(cohort, "V9", skill=1.0, seed=6)
+        QA.write_synthetic_run(os.path.join(runs, "20260101T0000_kink_noctx"),
+                               "kink_noctx", cohort, v9, s_prauc=0.597)
     inv = QA.scan_inventory([runs], log=Q4O.RunLog(echo=False))
     freeze = QA.freeze_baseline(inv)
     models = {lab: QA.load_model_predictions(sel["run_dir"], lab,
                                              log=Q4O.RunLog(echo=False))
               for lab, sel in freeze["selected"].items()}
     return cohort, inv, freeze, models, runs
+
+
+def _write_legacy_run(dir_path: str, cohort, model, rows: np.ndarray) -> str:
+    """The 2026-07/08 ablation layout: <run>/<tag>/ens.npz with prob/y/pid
+    and NO annotation index."""
+    os.makedirs(dir_path, exist_ok=True)
+    prob = np.zeros((len(rows), 3), float)
+    prob[:, QA.S_COLUMN] = model.score[rows]
+    prob[:, 0] = 1.0 - model.score[rows]
+    np.savez_compressed(os.path.join(dir_path, "ens.npz"), prob=prob,
+                        y=cohort.y5[rows].astype(int),
+                        pid=cohort.record[rows].astype(int))
+    return dir_path
+
+
+def _write_frozen_source(path: str, cohort) -> str:
+    """A mamba_data-like frozen source: beat/y/pid plus the `t` sample index."""
+    samples = np.array([int(str(k).split("|")[2]) for k in cohort.key])
+    np.savez_compressed(path, beat=cohort.beat, y=cohort.y5.astype(int),
+                        pid=cohort.record.astype(int), t=samples,
+                        sym=cohort.sym.astype(str), db=cohort.db.astype(str))
+    return path
 
 
 def _dir_fingerprint(root: str) -> dict:
@@ -247,13 +274,16 @@ def test_inventory_and_freeze():
     print("inventory + baseline freeze (provenance only)")
     tmp = tempfile.mkdtemp(prefix="q5a_inv_")
     try:
-        _c, inv, freeze, _m, runs = _fixture(tmp, n_per=20)
-        check(inv["n_candidates"] == 2, "both fixture runs inventoried")
+        _c, inv, freeze, _m, runs = _fixture(tmp, n_per=20, with_v9=True)
+        check(inv["n_candidates"] == 3, "all fixture runs inventoried")
         check(all(e["beat_level_ready"] for e in inv["entries"]),
               "prediction probe finds scores + y_true + a stable key")
         check(freeze["status"] == "FROZEN", "clean fixture freezes cleanly")
-        check(set(freeze["beat_level_models"]) == {"V9", "V10"},
-              "both baselines enter the beat-level comparison")
+        check(set(freeze["beat_level_models"]) == {"V9", "V10", "BASE26"},
+              "primary, paired control and the historical baseline all enter")
+        check(freeze["selected"]["V10"]["role"] == QA.ROLE_PRIMARY
+              and freeze["selected"]["BASE26"]["role"] == QA.ROLE_CONTROL,
+              "roles are recorded on the frozen selection")
 
         # selection must not depend on the recorded performance number
         swapped = json.loads(json.dumps(inv))
@@ -265,15 +295,18 @@ def test_inventory_and_freeze():
               == {k: v["run_id"] for k, v in freeze["selected"].items()},
               "swapping the recorded S PR-AUC does not change the selection")
 
+        def _entry(d, name):
+            return next(e for e in d["entries"] if e["model_name"] == name)
+
         dup = json.loads(json.dumps(inv))
-        clone = json.loads(json.dumps(dup["entries"][1]))
+        clone = json.loads(json.dumps(_entry(dup, "pwave")))
         clone["run_id"] = "20260103T0000_v10_pwave_rerun"
         dup["entries"].append(clone)          # same model name, second run
         fa = QA.freeze_baseline(dup)
         check(fa["status"] == "AMBIGUOUS_BASELINE",
               "two runs with the same model name -> AMBIGUOUS_BASELINE (STOP)")
         near = json.loads(json.dumps(inv))
-        variant = json.loads(json.dumps(near["entries"][1]))
+        variant = json.loads(json.dumps(_entry(near, "pwave")))
         variant["run_id"] = "20260103T0000_v10_pwave_v2"
         variant["model_name"] = "pwave_v2"
         near["entries"].append(variant)
@@ -307,6 +340,146 @@ def test_inventory_and_freeze():
         check(empty["n_candidates"] == 0, "a missing root is recorded, not fatal")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_absent_historical_baseline():
+    print("a baseline recorded in prose but never saved is a RESULT")
+    tmp = tempfile.mkdtemp(prefix="q5a_absent_")
+    try:
+        _c, inv, freeze, _m, _runs = _fixture(tmp, n_per=20, with_v9=False)
+        check(freeze["status"] == "FROZEN_WITH_ABSENT_BASELINE",
+              "V9 absent -> FROZEN_WITH_ABSENT_BASELINE (not a hard stop)")
+        absent = {a["label"]: a for a in freeze["absent_baselines"]}
+        check("V9" in absent and absent["V9"]["status"] == "ARTIFACT_ABSENT",
+              "the missing baseline is recorded with its status")
+        check(absent["V9"]["recorded_s_prauc_claim"] == 0.597
+              and "UNVERIFIED" in absent["V9"]["consequence"],
+              "the 0.597 claim is carried and marked unverified")
+        check("does not retrain" in absent["V9"]["consequence"],
+              "absence never triggers retraining")
+        gates = QA.evaluate_artifact_gates(inv, freeze, None)
+        check(gates["pass"],
+              "the analysis proceeds on the artifacts that DO exist")
+
+        no_primary = json.loads(json.dumps(inv))
+        no_primary["entries"] = [e for e in no_primary["entries"]
+                                 if e["model_name"] != "pwave"]
+        fp = QA.freeze_baseline(no_primary)
+        check(fp["status"] == "MISSING_BASELINE",
+              "a missing PRIMARY baseline still stops the analysis")
+        check(not QA.evaluate_artifact_gates(no_primary, fp, None)["pass"],
+              "missing primary -> D0 gate STOP")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_legacy_adapter():
+    print("legacy ablation artifacts (prob/y/pid, no annotation index)")
+    tmp = tempfile.mkdtemp(prefix="q5a_legacy_")
+    try:
+        cohort = QA.synthetic_atlas(n_per_record=30)
+        src = _write_frozen_source(os.path.join(tmp, "mamba_like.npz"), cohort)
+        split = QA.cohort_split(cohort)
+        ds2_rows = np.sort(cohort.rows_of(split["ds2"]))
+        prim = QA.synthetic_model(cohort, "V10", skill=4.0, seed=4)
+        ctrl = QA.synthetic_model(cohort, "BASE26", skill=2.0, seed=3)
+        runs = os.path.join(tmp, "runs")
+        step9d = os.path.join(runs, "ablation_step9d")
+        _write_legacy_run(os.path.join(step9d, "pwave"), cohort, prim, ds2_rows)
+        _write_legacy_run(os.path.join(step9d, "base26"), cohort, ctrl, ds2_rows)
+        # a same-named control in an UNRELATED run must not be able to collide
+        _write_legacy_run(os.path.join(runs, "ablation_step11", "base26"),
+                          cohort, ctrl, ds2_rows)
+
+        inv = QA.scan_inventory([runs], log=Q4O.RunLog(echo=False))
+        names = sorted(e["model_name"] for e in inv["entries"])
+        check("pwave" in names and names.count("base26") == 2,
+              "tag folders become their own inventory rows (ens.npz found "
+              "by KEY, not by file name)")
+        tag_row = next(e for e in inv["entries"] if e["model_name"] == "pwave")
+        check(tag_row["beat_key_mode" if False else "beat_key_modes"]
+              == [QA.KEY_MODE_SOURCE_VERIFIED],
+              "legacy rows are flagged as needing source verification")
+        check(tag_row["beat_level_ready"] and tag_row["needs_source_verification"],
+              "legacy rows count as beat-level ONLY through verification")
+
+        freeze = QA.freeze_baseline(inv)
+        check(freeze["status"] in ("FROZEN", "FROZEN_WITH_ABSENT_BASELINE"),
+              "two same-named base26 runs do not make the freeze ambiguous")
+        check(os.path.basename(os.path.dirname(
+            freeze["selected"]["BASE26"]["run_dir"])) == "ablation_step9d",
+            "the paired control is scoped to the primary's own run")
+
+        src_index = QA.load_frozen_source_index(src, log=Q4O.RunLog(echo=False))
+        expect_raise(lambda: QA.load_model_predictions(
+            freeze["selected"]["V10"]["run_dir"], "V10"),
+            "no annotation index and no frozen source -> STOP (row order is "
+            "never a fallback)", QA.Q5AError)
+        m = QA.load_model_predictions(freeze["selected"]["V10"]["run_dir"],
+                                      "V10", source_index=src_index,
+                                      log=Q4O.RunLog(echo=False))
+        check(m.key_mode == QA.KEY_MODE_SOURCE_VERIFIED
+              and m.verification["verified"] and m.verification["subset"] == "ds2",
+              "row correspondence verified element-wise against the source")
+        check(len(m.score) == len(ds2_rows)
+              and np.allclose(m.score, prim.score[ds2_rows]),
+              "the S column of the stored class matrix is read, not a guess")
+        audit = QA.match_beat_keys(cohort, m, strict=False)
+        check(audit["pass"] and audit["matched"] == len(ds2_rows),
+              "verified keys join back to the atlas cohort exactly")
+
+        # corruption must be caught, not absorbed
+        bad_dir = os.path.join(tmp, "bad", "pwave")
+        os.makedirs(bad_dir, exist_ok=True)
+        with np.load(os.path.join(step9d, "pwave", "ens.npz")) as z:
+            pid = np.asarray(z["pid"]).copy()
+            pid[5] = 999
+            np.savez_compressed(os.path.join(bad_dir, "ens.npz"),
+                                prob=z["prob"], y=z["y"], pid=pid)
+        expect_raise(lambda: QA.load_model_predictions(
+            bad_dir, "V10", source_index=src_index),
+            "one altered record id rejects the whole correspondence",
+            QA.Q5AError)
+
+        layout = QA.detect_score_layout(np.zeros((10, 3)), 10)
+        check(layout["kind"] == "class_matrix" and layout["s_column"] == 1,
+              "(n,3) is read as a class matrix with S at column 1")
+        check(QA.detect_score_layout(np.zeros((5, 10)), 10)["kind"] == "per_seed",
+              "(n_seed,n) is read as a per-seed stack")
+        expect_raise(lambda: QA.detect_score_layout(np.zeros((7, 7)), 10),
+                     "an uninterpretable shape is an error, not a guess",
+                     QA.Q5AError)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_rr_and_symbol_recovery():
+    print("RR from the annotation index; symbols only when they really join")
+    cohort = QA.synthetic_atlas(n_per_record=30)
+    cohort.pre_rr = np.full(cohort.n, np.nan)
+    cohort.post_rr = np.full(cohort.n, np.nan)
+    QA.rr_from_samples(cohort)
+    check(np.isfinite(cohort.pre_rr).sum() >= cohort.n - len(cohort.records),
+          "pre-RR is derived from the annotation sample index")
+    r = cohort.idx_of[int(cohort.records[0])]
+    check(np.isnan(cohort.pre_rr[r][0]) and np.isnan(cohort.post_rr[r][-1]),
+          "the first/last beat of a record keep an undefined RR")
+
+    tmpd = tempfile.mkdtemp(prefix="q5a_ann_")
+    try:
+        rep = QA.attach_symbols_from_annotations(cohort, tmpd,
+                                                 log=Q4O.RunLog(echo=False))
+        check(rep["usable"] is False,
+              "an empty annotation dir leaves symbols unusable (no guessing)")
+        check(QA.find_annotation_dir(tmpd) is None,
+              "the .atr locator reports absence instead of inventing a path")
+        d = os.path.join(tmpd, "raw_ann", "mitdb")
+        os.makedirs(d)
+        open(os.path.join(d, "100.atr"), "wb").close()
+        check(QA.find_annotation_dir(tmpd) == d,
+              "the locator finds the measured raw_ann/mitdb layout")
+    finally:
+        shutil.rmtree(tmpd, ignore_errors=True)
 
 
 def test_metrics_recomputation():
@@ -695,6 +868,14 @@ def test_notebook_static():
     check("sys.modules.pop" in all_src and "NEED_Q5A" in all_src
           and "Restart runtime" in all_src,
           "stale-import guard after git pull")
+    need = next((int(l.split("=")[1].split("#")[0])
+                 for l in all_src.splitlines() if l.startswith("NEED_Q5A =")), 0)
+    check(need == QA.MODULE_VERSION,
+          f"notebook pins the current module version (NEED_Q5A={need} vs "
+          f"MODULE_VERSION={QA.MODULE_VERSION}) — a stale checkout fails in "
+          "cell 2, not halfway through the run")
+    check("BRANCH" in all_src and "checkout" in all_src,
+          "cell 2 checks out an explicit branch instead of assuming main")
     check('"/content/my-github-test"' in all_src
           and 'os.chdir("/content")' in all_src,
           "repo bootstrap anchors an absolute clone path")
@@ -747,6 +928,8 @@ def main() -> int:
     for fn in (test_import_is_inert, test_modes, test_beat_keys_and_positional_ban,
                test_matching_hard_stops, test_split_and_inclusion,
                test_no_ds2_feedback, test_inventory_and_freeze,
+               test_absent_historical_baseline, test_legacy_adapter,
+               test_rr_and_symbol_recovery,
                test_metrics_recomputation, test_subtype_and_audit_records,
                test_block_evidence, test_decision_tree_all_branches,
                test_branch_not_by_largest_mean, test_language_boundary,
