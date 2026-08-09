@@ -1607,6 +1607,19 @@ def baseline_claim_check(metrics: Dict[str, Dict[str, object]],
 # ─────────────────────────────────────────────────────────────────────────────
 # Failure maps: subtype, RR/timing, atrial proxies, quality (spec §8).
 # ─────────────────────────────────────────────────────────────────────────────
+def rank_fraction(score: np.ndarray, values: np.ndarray,
+                  inclusive: bool = False) -> np.ndarray:
+    """Fraction of ``score`` below (or at most) each of ``values``.
+
+    Vectorised equivalent of ``[(score < v).mean() for v in values]`` — the
+    loop form is O(n_S x n) and costs minutes on a full DS2 cohort.
+    """
+    s = np.sort(np.asarray(score, float), kind="mergesort")
+    side = "right" if inclusive else "left"
+    return np.searchsorted(s, np.asarray(values, float),
+                           side=side) / max(1, len(s))
+
+
 def subtype_of(sym: np.ndarray) -> np.ndarray:
     out = np.full(len(sym), "other", dtype="<U6")
     for s in S_SUBTYPES:
@@ -1632,7 +1645,7 @@ def subtype_metrics(cohort: AtlasCohort, rows: np.ndarray,
                 "median_score": float(np.median(score[m])),
                 "fn_rate": float(np.mean(score[m] < threshold)),
                 "mean_rank_pct": float(np.mean(
-                    [float((score <= v).mean()) for v in score[m]])),
+                    rank_fraction(score, score[m], inclusive=True))),
             })
         out.append(row)
     return out
@@ -1835,7 +1848,7 @@ def calibration_vs_ranking(cohort: AtlasCohort, rows: np.ndarray,
     s_idx = np.where(y)[0]
     if not len(s_idx):
         raise Q5AError("no S beats — calibration/ranking split is undefined")
-    ranks = np.array([float((score < v).mean()) for v in score[s_idx]])
+    ranks = rank_fraction(score, score[s_idx])
     fn = score[s_idx] < threshold
     high_rank_fn = fn & (ranks >= 0.90)      # ranked well, lost by the cut
     low_rank = ranks < 0.50
