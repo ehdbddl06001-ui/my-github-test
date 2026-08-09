@@ -58,6 +58,7 @@ import os
 import platform
 import posixpath
 import re
+import shutil
 import sys
 import time
 import urllib.error
@@ -69,7 +70,7 @@ EXPERIMENT_ID = "EXP-2026-007"
 ARM_ID = "Q5-D"
 SUBSTAGE = "PREP_DATA-A ACQUIRE_ONLY"
 RUN_SLUG = "q5d_prep_data"
-MODULE_VERSION = 1
+MODULE_VERSION = 2
 MODULE_BUILD = "2026-08-09"
 
 #: The banner every entry point prints.  It stays this way until a real
@@ -232,6 +233,8 @@ DUPLICATE_EXTENSIONS: Tuple[str, ...] = (".dat", ".hea")
 DRIVE_ASSET_REL = "MedKOS/ecg-model/assets/EXP-2026-007_prep_data"
 SOURCE_SUBDIR = "source"
 AUDIT_SUBDIR = "audit"
+#: One immutable copy of every acquisition lives in ``audit/runs/<timestamp>/``.
+RUNS_SUBDIR = "runs"
 STAGING_PREFIX = "staging_"
 
 AUDIT_FILES: Tuple[str, ...] = (
@@ -959,6 +962,21 @@ def _import_wfdb():
     return wfdb
 
 
+def _as_list(value) -> List:
+    """Sequence -> list without ever asking a sequence whether it is truthy.
+
+    ``wfdb`` hands back numpy arrays.  ``arr or []`` raises "truth value of an
+    array ... is ambiguous", and inside a try/except that misreports a perfectly
+    good annotation file as an unreadable one.  Convert, never test.
+    """
+    if value is None:
+        return []
+    try:
+        return list(value)
+    except TypeError:
+        return []
+
+
 def check_record(root: str, source: Source, record: str, wfdb_module=None,
                  sample_window: int = SAMPLE_WINDOW) -> Dict[str, object]:
     """Open one record: header, sampling frequency, a real ``.dat`` read, annotations.
@@ -987,7 +1005,7 @@ def check_record(root: str, source: Source, record: str, wfdb_module=None,
     fs = float(getattr(hdr, "fs", 0) or 0)
     n_sig = int(getattr(hdr, "n_sig", 0) or 0)
     sig_len = int(getattr(hdr, "sig_len", 0) or 0)
-    names = list(getattr(hdr, "sig_name", []) or [])
+    names = _as_list(getattr(hdr, "sig_name", None))
     out.update({"fs": fs, "fs_ok": fs == EXPECTED_FS, "n_sig": n_sig,
                 "sig_names": "|".join(str(n) for n in names),
                 "sig_len": sig_len})
@@ -1016,7 +1034,7 @@ def check_record(root: str, source: Source, record: str, wfdb_module=None,
 
     try:
         ann = wfdb.rdann(base, ann_ext)
-        samples = list(getattr(ann, "sample", []) or [])
+        samples = _as_list(getattr(ann, "sample", None))
     except Exception as exc:                          # noqa: BLE001
         out["detail"] = f"rdann({ann_ext!r}) failed: {exc}"
         return out
@@ -1393,15 +1411,17 @@ def run_prep_data_acquire(asset_root: str, timestamp: str,
         "elapsed_s": manifest["elapsed_s"],
     }
     _write_audit(audit_dir, inventories, wfdb_rows, duplicates, decision,
-                 manifest, result, log)
+                 manifest, result, log, timestamp)
     return {"decision": decision, "manifest": manifest, "result": result,
             "inventories": inventories, "wfdb": wfdb_rows,
             "duplicates": duplicates, "audit_dir": audit_dir,
+            "run_dir": os.path.join(audit_dir, RUNS_SUBDIR, timestamp),
             "staging_root": manifest["staging_root"]}
 
 
 def _write_audit(audit_dir: str, inventories, wfdb_rows, duplicates, decision,
-                 manifest, result, log: RunLog) -> None:
+                 manifest, result, log: RunLog,
+                 timestamp: str = "") -> None:
     _dump_json(os.path.join(audit_dir, "config.json"), build_config())
     _dump_json(os.path.join(audit_dir, "asset_manifest.json"), manifest)
     _dump_json(os.path.join(audit_dir, "decision.json"), decision)
@@ -1424,6 +1444,27 @@ def _write_audit(audit_dir: str, inventories, wfdb_rows, duplicates, decision,
                if not os.path.exists(os.path.join(audit_dir, f))]
     if missing:
         raise Q5DError(f"audit bundle incomplete: {missing}")
+    _archive_run(audit_dir, timestamp)
+
+
+def _archive_run(audit_dir: str, timestamp: str) -> Optional[str]:
+    """Keep one immutable copy of every acquisition under ``audit/runs/<ts>/``.
+
+    ``audit/`` is the latest bundle, which a re-run replaces.  A stopped run is
+    evidence — the file list and hashes that produced `INPUT_ABSENT_OR_MISMATCH`
+    have to survive the next attempt, or the record of why it stopped is gone.
+    """
+    if not timestamp:
+        return None
+    run_dir = os.path.join(audit_dir, RUNS_SUBDIR, str(timestamp))
+    if os.path.isdir(run_dir):        # never overwrite an archived run
+        return run_dir
+    os.makedirs(run_dir, exist_ok=True)
+    for name in AUDIT_FILES:
+        src = os.path.join(audit_dir, name)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join(run_dir, name))
+    return run_dir
 
 
 def record_inventory(inventories: Sequence[Dict[str, object]],
@@ -1557,6 +1598,9 @@ def report_bundle(asset_root: str) -> Dict[str, object]:
     missing = [f for f in AUDIT_FILES
                if not os.path.exists(os.path.join(audit_dir, f))]
     out["missing_audit_files"] = missing
+    runs_dir = os.path.join(audit_dir, RUNS_SUBDIR)
+    out["archived_runs"] = (sorted(os.listdir(runs_dir))
+                            if os.path.isdir(runs_dir) else [])
     if missing:
         out["decision"] = DECISION_NOT_RUN
         out["reason"] = f"incomplete bundle, missing {missing}"
