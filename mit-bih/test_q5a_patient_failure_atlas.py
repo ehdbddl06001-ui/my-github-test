@@ -1194,8 +1194,13 @@ def test_notebook_static():
               "front page status line no longer claims RESULT NOT RUN")
         check("runs/" in first_md and "UNRESOLVED" in first_md,
               "front page cites the run bundle and its verdict")
-        check("UNVERIFIED" in first_md or "재현되지 않" in first_md,
-              "front page records that the 0.660 claim was not reproduced")
+        check("0.6603" in first_md and "0.5969" in first_md
+              and "재현" in first_md,
+              "front page reports what the recorded claims recomputed to")
+        check("시드별 PR-AUC의 평균" in first_md and "0.7717" in first_md,
+              "front page pins the unit of 0.660 next to the ensemble value")
+        check("철회" in first_md,
+              "front page carries the retractions instead of the stale text")
         check(any(f'MODE = "{m}"' in cfg for m in QA.MODES),
               "executed notebook still pins exactly one valid mode")
     else:
@@ -1245,8 +1250,22 @@ def test_spec_and_docs():
         check(False, "Q5-A spec missing")
         return
     text = open(spec, encoding="utf-8").read()
-    check("result_status: RESULT_NOT_RUN" in text,
-          "spec frontmatter says RESULT_NOT_RUN")
+    measured = "result_status: MEASURED" in text
+    check(measured or "result_status: RESULT_NOT_RUN" in text,
+          "spec frontmatter carries a legal result_status")
+    if measured:
+        # a measured spec must name the run it is measured from and the
+        # pre-registered verdict; a verdict without a run id is a claim
+        # without evidence.
+        check("run_id: 20260809T1033" in text and "measured: 2026-08-09" in text,
+              "measured spec names the run bundle and the date")
+        for b in ("verdict: UNRESOLVED", "qualified (CI>0, adjusted CI>0, "
+                  "direction>=0.6, stable): `[]`"):
+            check(b in text, f"measured spec records the verdict verbatim: {b}")
+        check("Q5-B design brief" in text,
+              "measured spec carries the separate Q5-B design brief")
+        check("`ablation_step9d/pwave`" in text or "철회" in text,
+              "measured spec keeps the retractions visible")
     check("kind: preregistered_analysis_only" in text,
           "spec declares the analysis-only kind")
     for f in ("experiments/specs/EXP-2026-004-q5a-patient-failure-atlas.md",
@@ -1259,6 +1278,13 @@ def test_spec_and_docs():
         check(b in text, f"spec documents branch {b}")
     check("Q5-B" in text and ("구현하지 않는다" in text or "만들지 않는다" in text),
           "spec states Q5-B is not implemented in this PR")
+    # the brief is a design brief, not an implementation: no Q5-B spec, module
+    # or training notebook may exist before the user approves the branch.
+    stray = [os.path.join(d, f)
+             for sub in ("experiments/specs", "mit-bih", "notebooks")
+             for d, _, fs in os.walk(os.path.join(root, sub)) for f in fs
+             if "q5b" in f.lower() or "q5-b" in f.lower()]
+    check(not stray, f"no Q5-B implementation file exists yet: {stray}")
 
 
 def test_regression_suites_importable():

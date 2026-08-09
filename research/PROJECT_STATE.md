@@ -1,8 +1,38 @@
 # ECG research project state
 
-Updated: 2026-08-08
+Updated: 2026-08-09
 
-## 다음 단계 (EXP-2026-004 / Q5-A — DESIGN, RESULT NOT RUN)
+## EXP-2026-004 / Q5-A — MEASURED (2026-08-09), 판정 `UNRESOLVED` (D5)
+
+run `20260809T1033_EXP-2026-004_q5a_patient_failure_atlas` · 모듈 q5a v8 ·
+`training_performed: false`. 사전등록 decision tree에서 **자격을 얻은 block이
+하나도 없다**(`qualified: []`).
+
+- block 순위(primary = `within_record_rank`, 환자-grouped holdout, S beat 1,628 ·
+  환자 15): `B_PATIENT` **+0.0491** [−0.0097, +0.0952] (다른 block 보정 후
+  +0.1009 [**+0.0233**, +0.2195], 환자 방향 0.80, record 제거에 안정) ·
+  `B_QUALITY` +0.0173 · `B_RR` −0.0300 · `B_ATRIAL` −0.0955.
+  1위인 `B_PATIENT`도 **raw CI가 0을 포함**해 분기 자격 미달 → D5.
+- 환자 산포는 크지만(`p90−p10` 0.79–0.89) **worst quartile이 모델 간에 지속되지
+  않는다**(전 쌍 최소 overlap 0.333) → D4 미발화. 네 모델 모두의 worst quartile에
+  드는 record는 `219`·`231` 둘뿐이며 231은 어디서나 붕괴한다(S PR-AUC 0.001–0.002).
+  V10 대 V9_BASE는 S beat 1,628개 중 **710개(43.6%)를 둘 다 틀린다**.
+- `B_SUBTYPE`은 **측정 불가**: `.atr` 조인 성공률 1.9% = 우연 수준(최근접 주석까지
+  중앙 거리 0.222×RR). 동결 source의 `t`는 annotation sample index가 아니다.
+  없는 것을 추정으로 채우지 않았다.
+- 단변량으로는 `pre_rr`(0.836)·`coupling_ratio`(0.796)·
+  `atrial_window_energy_ratio`(0.724)가 오류와 강하게 연관되지만, **환자를 갈라
+  놓으면 증분가치가 남지 않는다** — 연관의 상당 부분이 환자 간 차이로 흡수된다.
+- 이것은 `원인`이 아니라 **실패 연관 요인**이다. 인과는 Q5-B에서 요인 하나만 바꾸는
+  개입 + 음성대조군으로만 검증한다.
+- **다음 단계(사전등록 D5 next_step: "가장 저비용의 추가 측정 또는 artifact 보강")**:
+  ① `B_SUBTYPE` 복구 측정(학습 없음 — `ecg_multi.npz`의 `sym`을 waveform
+  fingerprint로 대조), ② 그 뒤에도 자격 block이 없고 `B_PATIENT`가 1위면 objective
+  하나만 바꾸는 DS1-only patient-CVaR pilot. 자세한 내용은 spec의
+  「Q5-B design brief」. **Q5-B spec·코드·학습 notebook은 사용자 승인 전까지 만들지
+  않는다.**
+
+## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 
 residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 실패 지도**다.
 `EXP-2026-004 / Q5-A`(`experiments/specs/EXP-2026-004-q5a-patient-failure-atlas.md`)
@@ -18,11 +48,13 @@ residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 
   · `Q5B_HIERARCHICAL_RR_ATRIAL_MODEL` · `Q5B_PATIENT_ROBUST_OBJECTIVE_PILOT` ·
   `UNRESOLVED` · `INSUFFICIENT_ARTIFACTS` / `DATA_INTEGRITY_BLOCKED`.
   근거가 부족하면 억지로 다음 모델을 고르지 않는다.
-- 첫 임무는 아래 "Current benchmark"의 V9 0.597 / V10 0.660을 **실제 저장
-  산출물과 대조해 확정하거나, 확정할 수 없는 이유를 기록**하는 것이다.
-- 상태: **DESIGN READY / RESULT NOT RUN** — Colab `INVENTORY` → `ANALYZE` →
-  `REPORT`가 아직 실행되지 않았다. Q5-B spec·코드·notebook은 Q5-A가 MEASURED로
-  인수되고 사용자가 분기를 승인하기 전에는 만들지 않는다.
+- 첫 임무였던 "V9 0.597 / V10 0.660을 실제 저장 산출물과 대조해 확정"은 **완료**
+  됐다 — 네 arm 모두 artifact 자신의 cohort에서 `consistent`(아래 Current
+  benchmark 참조).
+- 분기 선택 규칙은 `largest mean` 단독이 아니라 raw CI · adjusted CI · 환자 방향
+  일관성(≥0.60) · 상위 2 record 제거 후 생존 · 차점 대비 1.25배 margin의 **AND**
+  다. 이번 실측에서 이 AND를 통과한 block은 없었고, 규칙을 결과에 맞춰 완화하지
+  않았다.
 
 ## Measured results (Q4-O / Q4-P) and the next step (Q4-Q)
 
@@ -70,6 +102,10 @@ residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 
     baseline에서 제외한다.
   - V9·V10의 DS2는 동일(49,289박)하고 atlas cohort와 19/22 record가 정확히
     일치한다 → V9↔V10 beat 수준 비교가 가능하며 seed variability도 복원된다.
+  - Q5-A run `20260809T1033`이 네 arm을 **artifact 자신의 cohort**에서 다시 확인
+    (`consistent`). 같은 run의 환자 하위 꼬리(19 record cohort, record-macro / p10):
+    V10 0.4209 / 0.0569 · V9 0.4112 / 0.0369 · V10_BASE 0.4081 / 0.0697 ·
+    V9_BASE 0.4208 / 0.0559 — **평균에서 앞선 V10이 p10에서는 앞서지 않는다.**
 
 ## Current scientific focus
 The next decision is driven by failure patients and lower-tail robustness, not a small mean-only gain.

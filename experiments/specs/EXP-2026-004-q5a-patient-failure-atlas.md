@@ -2,22 +2,25 @@
 experiment_id: EXP-2026-004
 stage_id: Q5-A
 title: Patient-level S-beat failure atlas and causal-branch selection
-status: approved_for_implementation
+status: measured_pending_acceptance
 implementation_owner: claude-code
 kind: preregistered_analysis_only
-result_status: RESULT_NOT_RUN
-run_id: null
-measured: null
-verdict: null
+result_status: MEASURED
+run_id: 20260809T1033_EXP-2026-004_q5a_patient_failure_atlas
+measured: 2026-08-09
+verdict: UNRESOLVED
 depends_on: EXP-2026-003
 created: 2026-08-08
 ---
 
 # EXP-2026-004 / Q5-A — 환자 수준 S-beat 실패 지도와 분기 선택
 
-**상태: DESIGN / RESULT NOT RUN.** 이 문서·코드·notebook은 사전 등록이며 어떤
-수치도 결과가 아니다. Colab에서 `INVENTORY` → `ANALYZE` → `REPORT`를 실행하기
-전까지 `result_status: RESULT_NOT_RUN`을 유지한다.
+**상태: MEASURED (2026-08-09).** 사전등록 decision tree 판정은 **`UNRESOLVED`
+(D5)** 이고 근거 bundle은
+`runs/20260809T1033_EXP-2026-004_q5a_patient_failure_atlas` 다. 아래 1~16절은
+**측정 전에 등록된 설계 원문**이며 결과를 보고 고치지 않았다. 실측 결과와 Q5-B
+design brief 는 「결과」·「Q5-B design brief」 절에 따로 적는다. Q5-B spec·코드·
+학습 notebook 은 **사용자 인수·분기 승인 전까지 구현하지 않는다.**
 
 ## 0. 언어 경계 (사전 등록 — 가장 중요)
 
@@ -383,7 +386,157 @@ P-wave proxy를 P-wave ground truth로 표현 · 관찰 연관성을 인과 원�
 결과가 없는데 spec/notebook을 MEASURED로 표시 · 사용자 승인 없이 Q5-B 구현 또는
 full training 실행.
 
+## 결과 (2026-08-09 실측 · MEASURED)
+
+run bundle: `MyDrive/MedKOS/ecg-model/runs/20260809T1033_EXP-2026-004_q5a_patient_failure_atlas`
+(inventory run `20260809T1030_…_q5a_inventory`) · 모듈 `q5a v8` ·
+`training_performed: false`.
+
+**1. 무엇을 물었나.** "새 환자에서 S-beat 성능의 환자별 하위 꼬리와 실패 환자를
+개선한다"는 고정된 문제에 대해, **재학습 없이** 저장된 예측만으로 어떤 요인이
+실패와 연관되는지 지도를 만들고 사전등록 decision tree로 **다음에 조작할 단 하나의
+변수**를 고른다. 방법(architecture)은 고정하지 않았다.
+
+**2. 입력 자산과 baseline freeze.** 후보 185→203개 artifact를 스캔해 4개를 동결했다.
+`FROZEN`: V10=`v10pkg_results/pwave_s{1000..1004}`, V10_BASE=`base_s*`(같은 부모
+run의 짝 대조군), V9=`v9pkg_results/kink_noctx_s*`, V9_BASE=`v8base_s*`. 이름 충돌
+(`pwave` 2건)은 **기록된 seed 계획**으로만 좁혔고, 같은 패키지가 두 번 풀려 생긴
+중복은 content hash로 병합했다.
+
+**3. 정합성 gate.** legacy 산출물에는 annotation index가 없으므로 동결 source
+(`mamba_data.npz`, SHA `b1c16106…`)와 `pid`·`y`를 **전량 대조**해 행 대응을
+검증했다(`per_record`, 42,123행, 모든 행에서 record id와 label 일치). 위치 기반
+매칭은 쓰지 않았다. 시간축은 초 단위로 **검증**됐다(median RR 0.7958 s, fs 360).
+
+**4. 분석 cohort.** 모든 모델이 공통으로 덮는 DS2 record **19개**
+(`100 103 113 117 121 123 200 202 210 212 213 214 219 221 228 231 232 233 234`),
+제외 3개(`105·111·222` — N beat만 −1/−1/−4). block 분석의 관측 단위는
+**S beat 1,628개 · 환자 15명**(S가 있는 record만; `123 212 214 221` 제외).
+
+**5. 기록된 주장 재현(claim check).** 4개 모두 **artifact 자신의 untrimmed
+cohort**(22 record · 49,289 beat)에서 재계산해 `consistent` 로 확인했다.
+
+| 모델 | artifact-native 시드별 평균 | 기록된 값 | (참고) 시드 앙상블 beat-micro | 분석 cohort beat-micro / record-macro / p10 |
+|---|---|---|---|---|
+| V10 (`pwave`) | **0.6603** | 0.660 | 0.7717 | 0.8651 / 0.4209 / 0.0569 |
+| V9 (`kink_noctx`) | **0.5969** | 0.597 | 0.7358 | 0.8250 / 0.4112 / 0.0369 |
+| V10_BASE (`base`) | 0.5732 | 0.573 | 0.7318 | 0.8202 / 0.4081 / 0.0697 |
+| V9_BASE (`v8base`) | 0.5762 | 0.576 | 0.7157 | 0.8036 / 0.4208 / 0.0559 |
+
+**단위 주의**: 0.660의 단위는 *시드별 PR-AUC의 평균*이다. 같은 확률을 시드
+앙상블하면 0.7717이고, cohort를 19 record로 줄이면 0.8651이 된다 — 셋은 서로 다른
+정의이며 섞어 쓰면 안 된다.
+
+**6. 환자 수준 실패 지도.** 환자 간 산포가 크다(`p90−p10`: V10 0.886 · V9 0.799 ·
+V10_BASE 0.786 · V9_BASE 0.815 → `heterogeneity_large: true`). 그러나 **worst
+quartile은 모델 간에 일치하지 않는다**: 전 쌍 overlap 최소 0.333(V10|V9_BASE,
+V9|V9_BASE), 최대 0.6 → `failure_persists_across_models: false`.
+네 모델 모두의 worst quartile에 든 record 는 **219·231 둘뿐**이고(233은 4개 중 3개),
+231은 어느 모델에서도 사실상 붕괴한다(S PR-AUC 0.0011–0.0024).
+V10 대 V9_BASE의 S beat 1,628개 중 **710개(43.6%)는 두 모델 모두 틀린다**
+(둘 다 맞음 581 · V10만 187 · V9_BASE만 150).
+
+**7. subtype block — 측정 불가(정직한 공백).** `.atr` 조인 성공률이 1.9%로
+**우연 수준과 같다**(최근접 주석까지의 중앙 거리 0.222×RR ≈ 무작위 기대 0.25×RR).
+즉 동결 source의 `t`는 annotation sample index가 아니다. A/a/J/S 하위분류를
+산출물에서 복구할 수 없으므로 `B_SUBTYPE`은 **평가하지 않았다**. 없는 것을 추정으로
+채우지 않았다.
+
+**8~10. block 증분가치(primary = `within_record_rank`, 환자-grouped holdout,
+환자 bootstrap, n=1,628 S beat / 15명).**
+
+| block | Δ | 95% CI | 다른 block 보정 후 Δ (adjusted CI) | 환자 방향 일관성 | 상위 2 record 제거 후 안정 | 자격 |
+|---|---|---|---|---|---|---|
+| `B_PATIENT` | **+0.0491** | [−0.0097, +0.0952] | +0.1009 [**+0.0233**, +0.2195] | 0.80 | ✔ | ✘ (raw CI가 0 포함) |
+| `B_QUALITY` | +0.0173 | [−0.0017, +0.0374] | +0.0145 [−0.0203, +0.0546] | 0.67 | ✔ | ✘ |
+| `B_RR` | −0.0300 | [−0.1602, +0.0639] | +0.0178 [−0.0679, +0.1016] | 0.67 | ✘ | ✘ |
+| `B_ATRIAL` | −0.0955 | [−0.2738, +0.0165] | −0.0551 [−0.1987, +0.0571] | 0.40 | ✘ | ✘ |
+
+secondary outcome(`fn_at_locked_threshold`)도 **순위가 같다**(B_PATIENT +0.108 ·
+B_QUALITY +0.045 · B_RR −0.361 · B_ATRIAL −0.942) — 자격을 얻는 block은 역시 없다.
+
+단변량 연관(증분가치가 아니라 **관측 연관**일 뿐이다): `pre_rr` 0.836 ·
+`coupling_ratio` 0.796 · `atrial_window_energy_ratio` 0.724 · `patient_s_burden`
+0.643 · `local_median_rr` 0.608, 반대 방향으로 `pre_qrs_peak_prominence` 0.288 ·
+`compensatory_pause_ratio` 0.300 · `p_window_morph_distance` 0.369(AUROC:
+오류 vs 특징). 품질 특징은 전부 0.42–0.56으로 거의 무정보다.
+**RR·atrial 특징은 단변량으로는 강하게 연관되지만, 환자를 갈라놓고 보면 증분가치가
+남지 않는다** — 즉 그 연관의 상당 부분은 환자 간 차이로 흡수된다.
+
+**11. 사전등록 decision tree 판정 — `UNRESOLVED` (D5).**
+`decision.json` 원문 그대로:
+
+- ranked by delta logloss: `B_PATIENT 0.04911` · `B_QUALITY 0.01734` ·
+  `B_RR −0.03003` · `B_ATRIAL −0.09545`
+- qualified (CI>0, adjusted CI>0, direction>=0.6, stable): `[]`
+- `no block qualifies and the diffuse-shift conditions are not met -> D5`
+- reason: *evidence is similar across blocks or the CIs are wide with unstable
+  direction* · next_step: *propose the cheapest additional measurement or
+  artifact recovery; do not combine two hypotheses in one model*
+- competing branches: 없음
+
+D1/D2/D3는 자격 block이 없어 발화하지 않았다. **D4는 heterogeneity는 크지만
+worst-patient 실패가 모델 간에 지속되지 않아(전 쌍 최소 overlap 0.333) 발화하지
+않는다.** `B_PATIENT`가 순위 1위이고 adjusted CI가 0을 넘지만, 사전등록 규칙은
+raw CI·adjusted CI·방향·record 안정성의 **AND**를 요구하므로 raw CI가 0을 포함하는
+한 분기로 승격하지 않는다. 규칙을 결과에 맞춰 완화하지 않았다.
+
+**12. 확인되지 않은 것 / 언어 경계 재확인.**
+- 확인되지 않음: P-wave ground truth(없음), **인과관계**, S 하위분류별 실패 구조,
+  DS2 밖의 일반화, 그리고 "어떤 block이 지배적인가"라는 질문 자체.
+- 이 결과는 **원인이 아니라 `실패 연관 요인`** 이다. 실제 원인 여부는 Q5-B에서
+  그 요인 **하나만** 바꾸는 개입과 음성대조군으로만 검증한다.
+- residual CNN 경로는 여전히 closed이며 이 분석에서 재개하지 않았다. INCART
+  rescue run도 하지 않았다. 새 모델 학습·확률 재생성 없음.
+- **다음 실험(Q5-B)은 아직 실행하지도, 구현하지도 않았다.**
+
+## Q5-B design brief (초안 — 미구현, 사용자 승인 대기)
+
+D5의 사전등록 next_step은 "가장 저비용의 추가 **측정** 또는 artifact 보강"이다.
+따라서 이 brief의 1순위는 **모델이 아니라 측정**이며, 모델 pilot은 2순위 조건부다.
+두 가설을 한 모델에 동시에 넣지 않는다.
+
+**Q5-B-0 (권고 1순위) — `B_SUBTYPE` 복구 측정 (학습 없음).**
+- 문제: 5개 block 중 1개(`B_SUBTYPE`)를 재보지 못한 채 D5가 났다. 지금의 D5는
+  "근거가 없다"가 아니라 **"근거가 한 칸 비어 있고 나머지는 서로 비슷하다"** 이다.
+- 개입 변수 **하나**: 동결 source 행 ↔ 원 annotation 의 **키 복구** 하나뿐.
+  경로는 `ecg_multi.npz`(`sym` 보유)와 `mamba_data.npz` 를 `pid`+waveform
+  fingerprint 로 대조하는 것 — `t`를 sample index로 **가정하지 않는다**.
+- 음성대조군: record 내 symbol 무작위 셔플(연관이 0으로 붕괴해야 함) ·
+  N beat만으로 만든 가짜 subtype label.
+- go/no-go: 조인 성공률 ≥ 95% 이고 record별 S 개수가 동결 source와 일치하면 GO.
+  1.9%대에 머물면 `B_SUBTYPE`을 **영구 미측정**으로 종결하고 Q5-B-1로 간다.
+- 비용: 분석 전용, GPU 불필요. 실패해도 잃는 것이 없다.
+
+**Q5-B-1 (조건부 2순위) — patient-robust objective pilot.**
+- 발동 조건: Q5-B-0 이후에도 자격 block이 없고 `B_PATIENT`가 계속 1위일 때만.
+- 개입 변수 **하나**: objective(ERM vs patient-CVaR)만. architecture·입력·전처리·
+  seed·epoch 예산은 V10 그대로 **동결**한다. GroupDRO를 미리 확정하지 않는다.
+- 음성대조군: 환자 그룹 라벨을 무작위로 섞은 CVaR(진짜 환자 구조가 필요하다는 것을
+  보이는 대조) · 같은 계산량의 ERM 재실행(seed 잡음 대조).
+- 설계·중단 결정은 **DS1 patient-grouped nested CV에서만** 한다. DS2/INCART는 설계
+  확정 전에 보지 않는다.
+- primary gate: patient-macro S PR-AUC 개선 + patient-bootstrap CI가 0 초과 +
+  **p10/worst-quartile 비열화** + seed 방향 일관성 + 개입 대 음성대조군 차이.
+- 위험: 15명 규모에서 CVaR은 분산이 크다 → 사전에 seed 수와 중단 조건을 등록하고,
+  실패하면 `NO-GO`로 기록한다(재시도 루프 금지).
+
+**명시적으로 제안하지 않는 것**: residual CNN 재개·변형, atrial+RR 동시 투입 모델,
+INCART rescue, 그리고 이번 결과를 근거로 한 어떤 인과 주장도 제안하지 않는다.
+
 ## Decision log
+
+### 2026-08-09 — 재측정 완료: 판정 `UNRESOLVED` (D5) 확정 (deviation 아님 · 결과 기록)
+
+모듈 v8(claim은 artifact-native cohort, D4 지속성은 전 쌍 최소 overlap)로 다시
+측정한 run `20260809T1033` 이 최종 결과다. 직전 run `20260809T1009` 의
+`Q5B_PATIENT_ROBUST_OBJECTIVE_PILOT` (D4) 판정은 **철회**한다 — 그 D4는 알파벳순
+앞 두 라벨(V10과 그 짝 대조군 V10_BASE, 서로 feature block 하나만 다른 near-twin)의
+overlap 0.6만 보고 발화했고, 전 쌍으로 계산하면 최소 overlap이 0.333이라 지속성
+조건을 만족하지 않는다. 규칙을 결과에 맞춰 바꾼 것이 아니라, 규칙이 의도대로
+계산되지 않던 것을 고친 뒤 다시 측정한 것이다(수정은 결과를 보기 전에 commit
+`c305e35` 로 등록됐다). 같은 run에서 기록된 주장 4건(0.660·0.597·0.573·0.576)은
+모두 artifact 자신의 cohort에서 `consistent` 로 확인됐다.
 
 ### 2026-08-09 — V9/V10 원 산출물 회수: 0.660·0.597 검증 완료 (deviation 기록 3)
 
