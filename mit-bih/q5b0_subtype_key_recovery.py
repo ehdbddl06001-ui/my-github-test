@@ -54,7 +54,7 @@ EXPERIMENT_ID = "EXP-2026-005"
 ARM_ID = "Q5-B-0"
 RUN_SLUG = "q5b0_subtype_key_recovery"
 REANALYSIS_SLUG = "q5b0_subtype_reanalysis"
-MODULE_VERSION = 1
+MODULE_VERSION = 2
 MODULE_BUILD = "2026-08-09"
 
 MODES = ("DESIGN", "RECOVER", "REANALYZE", "REPORT")
@@ -212,11 +212,19 @@ def load_symbol_source(npz_path: str, db: str = "mitdb",
     mask = (np.isin(np.asarray(data[db_f]).astype(str),
                     (db, "mit", "mit-bih", "mitdb")) if db_f
             else np.ones(len(rec_all), bool))
-    wanted = tuple(records) if records is not None else MIT_ALL_RECORDS
-    mask &= np.isin(rec_all, wanted)
     if not mask.any():
-        raise Q5B0Error(f"no {db} rows for records {wanted[:6]}... in "
-                        f"{os.path.basename(npz_path)}")
+        raise Q5B0Error(
+            f"no {db} rows in {os.path.basename(npz_path)} "
+            f"(db values seen: {sorted(set(np.asarray(data[db_f]).astype(str)))[:8] if db_f else 'no db key'})")
+    # The record ids in this file are NOT assumed to be MIT record numbers.
+    # Q4-Q measured that they can be ordinal, which is why record identity is
+    # established later by the 5-class profile (:func:`resolve_record_mapping`)
+    # instead of by id equality. Filtering on 100..234 here would silently
+    # empty the file.
+    if records is not None:
+        keep = np.isin(rec_all, tuple(records))
+        if keep.any():
+            mask &= keep
     y5 = np.asarray(data[y_f]).astype(int)[mask]
     if y5.min() < 0 or y5.max() > 4:
         raise Q5B0Error(f"{y_f} is not AAMI 5-class coded — STOP")
@@ -230,9 +238,97 @@ def load_symbol_source(npz_path: str, db: str = "mitdb",
         records=np.array(sorted(set(rec.tolist())), int),
         path=npz_path, sha256=QA.sha256_file(npz_path))
     src.idx_of = {int(r): np.where(rec == r)[0] for r in src.records}
-    log(f"symbol source: {src.n} beats, {len(src.records)} records, "
-        f"S={int((y5 == S_INDEX).sum())}, symbol key {sym_f!r}")
+    coding = ("record_numbers" if set(src.records.tolist()) <= set(QQ.MIT_48_RECORDS)
+              else "ordinal_or_other")
+    log(f"symbol source: {src.n} beats, {len(src.records)} records "
+        f"(id coding: {coding}), S={int((y5 == S_INDEX).sum())}, "
+        f"symbol key {sym_f!r}")
     return src
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Record identity — established, not assumed
+# ─────────────────────────────────────────────────────────────────────────────
+def _class_profile(record: np.ndarray, y5: np.ndarray) -> Dict[int, Dict]:
+    return {int(r): {"classes": [int(((record == r) & (y5 == c)).sum())
+                                 for c in range(5)]}
+            for r in sorted(set(record.tolist()))}
+
+
+def resolve_record_mapping(cohort: QA.AtlasCohort, source: SymbolSource,
+                           log: Optional[RunLog] = None) -> Dict[str, object]:
+    """Pair the source's record ids with the cohort's — by class profile.
+
+    Q4-Q measured that ``ecg_multi``'s ``pid`` is not necessarily an MIT record
+    number, so id equality is a guess, not a fact. Identity is therefore
+    *checked* first (per-record S counts must agree within the same budget
+    Q4-Q used) and only accepted when it holds; otherwise the records are
+    matched by their 5-class fingerprint with Q4-Q's own assignment code, the
+    one whose gate already passed on these two files.
+
+    Never raises: an unresolvable mapping is a NO-GO with evidence, not a
+    crash that leaves no bundle behind.
+    """
+    log = log or RunLog()
+    cohort_prof = _class_profile(cohort.record, cohort.y5)
+    source_prof = _class_profile(source.record, source.y5)
+    out: Dict[str, object] = {
+        "source_id_coding": ("record_numbers"
+                             if set(source_prof) <= set(QQ.MIT_48_RECORDS)
+                             else "ordinal_or_other"),
+        "n_cohort_records": len(cohort_prof),
+        "n_source_records": len(source_prof),
+    }
+
+    shared = [r for r in cohort_prof if r in source_prof]
+    if len(shared) == len(cohort_prof):
+        worst = max(abs(cohort_prof[r]["classes"][S_INDEX]
+                        - source_prof[r]["classes"][S_INDEX])
+                    for r in shared)
+        if worst <= MAX_S_COUNT_DIFF:
+            out.update({"ok": True, "method": "identity_verified",
+                        "mapping": {int(r): int(r) for r in shared},
+                        "worst_s_diff": int(worst), "leftover": [],
+                        "detail": ("the ids already are MIT record numbers and "
+                                   "the per-record S counts agree")})
+            log(f"record mapping: identity, verified (worst |dS| = {worst})")
+            return out
+        out["identity_rejected"] = (
+            f"ids look like record numbers but the per-record S counts "
+            f"disagree by up to {worst} beats (> {MAX_S_COUNT_DIFF})")
+
+    try:
+        m = QQ._fingerprint_match(cohort_prof, source_prof)
+    except Exception as exc:
+        out.update({"ok": False, "method": "fingerprint_assignment",
+                    "mapping": {}, "reason": str(exc)})
+        log(f"record mapping FAILED: {exc}")
+        return out
+    out.update({"ok": True, "method": "fingerprint_assignment",
+                "mapping": {int(k): int(v) for k, v in m["mapping"].items()},
+                "leftover": [int(r) for r in m["leftover"]],
+                "s_agreement": m["s_agreement"], "table": m["table"],
+                "warnings": m["warnings"],
+                "detail": ("record identity established by the 5-class profile "
+                           "(Q4-Q's assignment), not by id equality")})
+    log(f"record mapping: 5-class fingerprint assignment, "
+        f"{len(out['mapping'])} record(s) paired, "
+        f"{len(out['leftover'])} leftover")
+    return out
+
+
+def apply_record_mapping(source: SymbolSource, mapping: Dict[int, int]
+                         ) -> SymbolSource:
+    """Rewrite the source's ids into cohort record numbers; drop the rest."""
+    inv = {int(v): int(k) for k, v in mapping.items()}
+    keep = np.array([int(r) in inv for r in source.record], bool)
+    rec = np.array([inv[int(r)] for r in source.record[keep]], int)
+    out = SymbolSource(record=rec, sym=source.sym[keep], y5=source.y5[keep],
+                       pre_rr=source.pre_rr[keep], post_rr=source.post_rr[keep],
+                       records=np.array(sorted(set(rec.tolist())), int),
+                       path=source.path, sha256=source.sha256)
+    out.idx_of = {int(r): np.where(rec == r)[0] for r in out.records}
+    return out
 
 
 def rr_seconds_scale(pre_rr: np.ndarray, fs: float = 360.0) -> Dict[str, object]:
@@ -400,6 +496,7 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
                     records: Optional[Sequence[int]] = None,
                     tolerance: float = RR_TOLERANCE_S,
                     margin: float = RR_MARGIN_S,
+                    mapping_report: Optional[Dict[str, object]] = None,
                     log: Optional[RunLog] = None) -> Dict[str, object]:
     """Join S beats of the atlas cohort to the symbol source, per record.
 
@@ -511,6 +608,10 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
               for r in per_record if r.get("chronology_cohort") is not None]
     out = {
         "sym": sym_out, "sym_anchor": sym_anchor, "per_record": per_record,
+        "record_mapping": mapping_report or {
+            "ok": True, "method": "identity_assumed_by_caller",
+            "detail": ("the source was handed over with cohort record numbers "
+                       "already; run_recovery always resolves this explicitly")},
         "chronology_min": (min(chrono) if chrono else None),
         "n_s": int(total_s), "n_matched": int(total_matched),
         "n_anchor": int(total_anchor), "n_extended": int(total_extended),
@@ -536,6 +637,27 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
         f"ordinally after the anchor mapping tested exact); symbol in AAMI S "
         f"set {in_set:.1%}")
     return out
+
+
+def _empty_recovery(cohort: QA.AtlasCohort, mapping_report: Dict[str, object]
+                    ) -> Dict[str, object]:
+    """The shape :func:`recover_symbols` returns when no join was possible."""
+    n_s = int(cohort.y_s.sum())
+    return {"sym": np.full(cohort.n, "?", dtype="<U2"),
+            "sym_anchor": np.full(cohort.n, "?", dtype="<U2"),
+            "per_record": [{"record": int(r), "status": "no_record_mapping",
+                            "n_s_cohort": int(cohort.y_s[cohort.idx_of[int(r)]]
+                                              .sum()), "n_matched": 0}
+                           for r in cohort.records],
+            "record_mapping": mapping_report, "chronology_min": None,
+            "n_s": n_s, "n_matched": 0, "n_anchor": 0, "n_extended": 0,
+            "match_fraction": 0.0, "anchor_fraction": 0.0,
+            "ordinal_consistency_min": None, "ordinal_consistency_mean": None,
+            "symbol_in_s_set_fraction": 0.0, "rr_unit": None,
+            "median_residual_s": None, "p95_residual_s": None, "residuals": [],
+            "subtype_counts": {t: 0 for t in S_SUBTYPES},
+            "params": {"tolerance_s": RR_TOLERANCE_S, "margin_s": RR_MARGIN_S,
+                       "fields": list(FINGERPRINT_FIELDS)}}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -742,6 +864,11 @@ def evaluate_recovery_gate(recovery: Dict[str, object],
                        "threshold": threshold, "detail": detail})
         if not ok:
             reasons.append(f"{name}: {value} (needs {threshold}) {detail}".strip())
+
+    rmap = recovery.get("record_mapping") or {}
+    add("record_identity_resolved", bool(rmap.get("ok")),
+        rmap.get("method", "missing"), "identity verified or assigned",
+        str(rmap.get("reason") or rmap.get("detail") or "")[:160])
 
     frac = float(recovery.get("match_fraction") or 0.0)
     add("s_match_fraction", frac >= MIN_S_MATCH_FRACTION, round(frac, 4),
@@ -993,14 +1120,32 @@ def run_recovery(cohort: QA.AtlasCohort, symbol_npz: str, out_dir: str,
     log = log or RunLog()
     assert_analysis_only()
     t0 = time.time()
-    source = load_symbol_source(symbol_npz, records=records, log=log)
+    raw = load_symbol_source(symbol_npz, records=records, log=log)
     recs = [int(r) for r in (records if records is not None else cohort.records)]
-    recovery = recover_symbols(cohort, source, recs, log=log)
-    controls = {
-        "permutation_invariance": permutation_invariance(cohort, source, recs),
-        "shift_control": shift_control(cohort, source, recs),
-        "wrong_record_control": wrong_record_control(cohort, source, recs),
-    }
+    rmap = resolve_record_mapping(cohort, raw, log=log)
+    if not rmap.get("ok"):
+        # No record correspondence -> nothing to join. This is a measured
+        # NO-GO with a full bundle, not an exception.
+        recovery = _empty_recovery(cohort, rmap)
+        controls = {"permutation_invariance": {"identical": False,
+                                               "n_differing": None,
+                                               "scope": "not run",
+                                               "note": "record mapping failed"},
+                    "shift_control": {"match_fraction": 1.0,
+                                      "note": "not run"},
+                    "wrong_record_control": {"match_fraction": 1.0,
+                                             "note": "not run"}}
+        source = raw
+    else:
+        source = apply_record_mapping(raw, rmap["mapping"])
+        recovery = recover_symbols(cohort, source, recs, mapping_report=rmap,
+                                   log=log)
+        controls = {
+            "permutation_invariance": permutation_invariance(cohort, source,
+                                                             recs),
+            "shift_control": shift_control(cohort, source, recs),
+            "wrong_record_control": wrong_record_control(cohort, source, recs),
+        }
     log(f"controls: permutation identical="
         f"{controls['permutation_invariance']['identical']} · shift "
         f"{controls['shift_control']['match_fraction']:.3f} · wrong-record "
@@ -1024,9 +1169,10 @@ def run_recovery(cohort: QA.AtlasCohort, symbol_npz: str, out_dir: str,
         "median_residual_s": recovery["median_residual_s"],
         "p95_residual_s": recovery["p95_residual_s"],
         "rr_unit": recovery["rr_unit"],
-        "symbol_source": {"path": source.path, "sha256": source.sha256,
-                          "n_beat": source.n},
+        "symbol_source": {"path": raw.path, "sha256": raw.sha256,
+                          "n_beat": raw.n, "n_beat_mapped": source.n},
         "records": recs,
+        "record_mapping": {k: v for k, v in rmap.items() if k != "table"},
         "elapsed_s": round(time.time() - t0, 2),
     }
     prov = dict(provenance or {})
