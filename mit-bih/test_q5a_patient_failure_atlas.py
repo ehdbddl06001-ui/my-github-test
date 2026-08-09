@@ -566,6 +566,32 @@ def test_float_time_column():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def test_patient_persistence_uses_every_pair():
+    print("D4's persistence check is the MINIMUM over all model pairs")
+    def mk(per_record):
+        return {"per_record_s_prauc": {str(k): v for k, v in per_record.items()}}
+    # A and B are near-twins (same worst quartile); C fails on other patients.
+    a = mk({1: 0.1, 2: 0.2, 3: 0.8, 4: 0.9, 5: 0.95, 6: 0.99, 7: 0.5, 8: 0.6})
+    b = mk({1: 0.12, 2: 0.22, 3: 0.82, 4: 0.9, 5: 0.95, 6: 0.99, 7: 0.5, 8: 0.6})
+    c = mk({1: 0.9, 2: 0.95, 3: 0.1, 4: 0.15, 5: 0.5, 6: 0.6, 7: 0.8, 8: 0.99})
+    twins = QA.patient_heterogeneity({"A": a, "B": b})
+    check(twins["failure_persists_across_models"],
+          "two near-twins do agree on their worst patients")
+    trio = QA.patient_heterogeneity({"A": a, "B": b, "C": c})
+    check(not trio["failure_persists_across_models"],
+          "adding a model that fails on OTHER patients breaks persistence — "
+          "the twin pair can no longer carry the claim alone")
+    check(len(trio["worst_quartile_overlap_by_pair"]) == 3
+          and trio["worst_quartile_overlap"]
+          == min(trio["worst_quartile_overlap_by_pair"].values()),
+          "every pair is reported and the minimum is the one that counts")
+    gates = {"pass": True, "stops": [], "branch": None}
+    blocks = {"blocks": {"B_RR": _ev(0.01, -0.02, 0.04, direction=0.4)}}
+    d = QA.evaluate_branch_decision(gates, blocks, ATRIAL_WEAK, trio)
+    check(d["branch"] == QA.BRANCH_UNRESOLVED,
+          "without persistence across every pair, D4 does not fire")
+
+
 def test_provenance_narrows_a_true_name_clash():
     print("a real name clash is settled by the RECORDED seed plan, not by score")
     tmp = tempfile.mkdtemp(prefix="q5a_clash_")
@@ -1254,6 +1280,7 @@ def main() -> int:
                test_absent_historical_baseline, test_legacy_adapter,
                test_float_time_column, test_seed_family,
                test_provenance_narrows_a_true_name_clash,
+               test_patient_persistence_uses_every_pair,
                test_rr_and_symbol_recovery,
                test_metrics_recomputation, test_subtype_and_audit_records,
                test_block_evidence, test_rank_outcome_is_threshold_free,

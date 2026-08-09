@@ -76,8 +76,8 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 7
-MODULE_BUILD = ("2026-08-09 q5a.7 — a true name clash is settled by the RECORDED seed plan (provenance, never a score); baseline targets match on the EXACT model name first and identical artifacts reachable by two paths collapse (confirmed by hash), so a package unzipped twice is not a false ambiguity; V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
+MODULE_VERSION = 8
+MODULE_BUILD = ("2026-08-09 q5a.8 — a historical claim is checked on the ARTIFACT'S OWN cohort (trimming it first would compare a different population), and D4 persistence is the minimum over ALL model pairs; a true name clash is settled by the RECORDED seed plan (provenance, never a score); baseline targets match on the EXACT model name first and identical artifacts reachable by two paths collapse (confirmed by hash), so a package unzipped twice is not a false ambiguity; V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
                 "detected by KEY (ens.npz), tag folders are their own runs, "
                 "row correspondence VERIFIED against the frozen source before "
                 "any key is derived, paired control scoped to the primary's "
@@ -1406,6 +1406,10 @@ class ModelPredictions:
     key_mode: str = KEY_MODE_ANNOTATION
     verification: Dict[str, object] = field(default_factory=dict)
     seeds: List[int] = field(default_factory=list)
+    #: The artifact exactly as stored, BEFORE any cohort trimming. Verifying a
+    #: historical claim must use the cohort the claim was computed on, not the
+    #: subset where a beat-level feature join happens to be available.
+    artifact_full: Dict[str, object] = field(default_factory=dict)
 
 
 def _sigmoid(x: np.ndarray) -> np.ndarray:
@@ -1537,6 +1541,12 @@ def load_model_predictions(run_dir: str, label: str,
                     "so no stable beat key can be derived — aggregate only")
             rows = verification["rows"]
             pred_rows = np.asarray(verification["pred_rows"], int)
+            artifact_full = {
+                "score": score.copy(), "record": rec.copy(),
+                "y": (y_raw == S_INDEX) if y_raw.max() > 1 else y_raw.astype(bool),
+                "per_seed": None if per_seed is None else per_seed.copy(),
+                "n": int(len(score)),
+                "records": sorted(set(int(r) for r in rec.tolist()))}
             # keep only the rows the verification actually covers
             rec = rec[pred_rows]
             y_raw = y_raw[pred_rows]
@@ -1577,6 +1587,7 @@ def load_model_predictions(run_dir: str, label: str,
         label=label, key=keys, score=score, y_true=y, record=rec,
         score_kind=kind, per_seed=per_seed, source_dir=run_dir,
         seeds=[int(s) for s in seeds],
+        artifact_full=locals().get("artifact_full", {}),
         fingerprint={os.path.basename(p): sha256_file(p) for p in paths},
         key_mode=key_mode,
         verification={k: v for k, v in verification.items() if k != "rows"})
@@ -1911,9 +1922,49 @@ def model_metrics(model: ModelPredictions, cohort: AtlasCohort,
     }
 
 
+def artifact_native_metrics(model: ModelPredictions) -> Dict[str, object]:
+    """Metrics on the artifact's OWN cohort, before any trimming.
+
+    A historical claim was computed on the cohort the run itself produced. If
+    the atlas can only join a subset of records, trimming first would compare
+    the claim against a different population and call it "not reproduced" for
+    a reason that has nothing to do with the claim.
+    """
+    a = model.artifact_full
+    if not a:
+        return {"available": False,
+                "reason": "the artifact carried its own annotation key; "
+                          "no untrimmed copy was needed"}
+    y = np.asarray(a["y"], bool)
+    rec = np.asarray(a["record"], int)
+    recs = [int(r) for r in a["records"]]
+    out: Dict[str, object] = {
+        "available": True, "n_beat": int(a["n"]), "n_record": len(recs),
+        "n_s": int(y.sum()), "records": recs,
+        "beat_micro_s_prauc": beat_micro_prauc(y, np.asarray(a["score"], float)),
+    }
+    per_rec = per_record_prauc(y, np.asarray(a["score"], float), rec, recs)
+    out["record_macro_s_prauc"] = (float(np.mean(list(per_rec.values())))
+                                   if per_rec else None)
+    ps = a.get("per_seed")
+    if ps is not None and len(ps) > 1:
+        vals = [beat_micro_prauc(y, np.asarray(ps[i], float))
+                for i in range(len(ps))]
+        out["per_seed_beat_micro"] = [float(v) for v in vals]
+        out["per_seed_mean_s_prauc"] = float(np.mean(vals))
+        out["per_seed_sd"] = float(np.std(vals, ddof=1))
+    return out
+
+
 def baseline_claim_check(metrics: Dict[str, Dict[str, object]],
-                         freeze: Dict[str, object]) -> List[Dict[str, object]]:
-    """Compare the recorded 0.597 / 0.660 claims with the recomputed numbers."""
+                         freeze: Dict[str, object],
+                         native: Optional[Dict[str, Dict[str, object]]] = None
+                         ) -> List[Dict[str, object]]:
+    """Compare the recorded 0.597 / 0.660 claims with the recomputed numbers.
+
+    Uses the artifact's own cohort when one is available (``native``), so the
+    comparison is like-for-like with how the claim was originally computed.
+    """
     rows = []
     for label, sel in freeze.get("selected", {}).items():
         m = metrics.get(label)
@@ -1934,9 +1985,12 @@ def baseline_claim_check(metrics: Dict[str, Dict[str, object]],
                          "recomputed_record_macro": None,
                          "verdict": "NOT_RECOMPUTED (no beat-level artifact)"})
             continue
-        micro = m["beat_micro_s_prauc"]
-        macro = m["record_macro_s_prauc"]
-        pseed = m.get("per_seed_mean_s_prauc")
+        nat = (native or {}).get(label) or {}
+        use_native = bool(nat.get("available"))
+        src = nat if use_native else m
+        micro = src.get("beat_micro_s_prauc")
+        macro = src.get("record_macro_s_prauc")
+        pseed = src.get("per_seed_mean_s_prauc")
         cands = [(abs(micro - claim), "beat_micro"),
                  (abs(macro - claim), "record_macro")]
         if pseed is not None:
@@ -1946,6 +2000,9 @@ def baseline_claim_check(metrics: Dict[str, Dict[str, object]],
             "model": label, "recorded_claim": claim,
             "recomputed_beat_micro": micro, "recomputed_record_macro": macro,
             "recomputed_per_seed_mean": pseed,
+            "cohort": ("artifact-native (all its own records)" if use_native
+                       else "analysis cohort"),
+            "n_beat": src.get("n_beat"), "n_record": src.get("n_record"),
             "closest_unit": unit, "abs_gap": best,
             "verdict": ("consistent with the recorded claim under the "
                         f"{unit} definition" if best is not None and best <= 0.02
@@ -2559,12 +2616,23 @@ def patient_heterogeneity(metrics: Dict[str, Dict[str, object]]
         spreads[lab] = float(np.percentile(vals, 90) - np.percentile(vals, 10))
         q = np.percentile(vals, 25)
         worst[lab] = {r for r, v in pr.items() if v <= q}
-    overlap = None
-    if len(labels) >= 2:
-        a, b = worst[labels[0]], worst[labels[1]]
-        overlap = float(len(a & b) / max(1, len(a | b)))
+    # "persists across models" must hold for EVERY pair, not for whichever two
+    # labels happen to sort first — a model and its own paired control differ
+    # by one feature block and would agree almost by construction.
+    pairs: Dict[str, float] = {}
+    for i, a in enumerate(labels):
+        for b in labels[i + 1:]:
+            sa, sb = worst[a], worst[b]
+            pairs[f"{a}|{b}"] = float(len(sa & sb) / max(1, len(sa | sb)))
+    overlap = min(pairs.values()) if pairs else None
     return {"available": True, "p90_minus_p10": spreads,
+            "worst_quartile_overlap_by_pair": pairs,
             "worst_quartile_overlap": overlap,
+            "overlap_rule": ("minimum over ALL model pairs; a pair that shares "
+                             "everything but one feature block cannot carry "
+                             "this on its own"),
+            "worst_quartile_by_model": {k: sorted(int(r) for r in v)
+                                        for k, v in worst.items()},
             "heterogeneity_large": bool(max(spreads.values())
                                         >= PATIENT_HETEROGENEITY_MIN),
             "failure_persists_across_models": bool(
@@ -3192,12 +3260,29 @@ def _write_summary(out_dir: str, result: Dict[str, object],
              "secondary로 v1 이진 outcome도 함께 기록",
              f"- 확인된 것: {len(metrics)}개 모델의 지표를 동일 코드로 재계산",
              ]
+    native = result.get("artifact_native_metrics", {})
     for lab, m in metrics.items():
         ps = m.get("patient_summary", {})
         lines.append(
-            f"  - {lab}: beat-micro {m.get('beat_micro_s_prauc'):.4f} · "
-            f"record-macro {m.get('record_macro_s_prauc'):.4f} · "
-            f"p10 {ps.get('p10', float('nan')):.4f}")
+            f"  - {lab}: [분석 cohort] beat-micro "
+            f"{m.get('beat_micro_s_prauc'):.4f} · record-macro "
+            f"{m.get('record_macro_s_prauc'):.4f} · p10 "
+            f"{ps.get('p10', float('nan')):.4f}")
+        nat = native.get(lab) or {}
+        if nat.get("available"):
+            ms = nat.get("per_seed_mean_s_prauc")
+            lines.append(
+                f"      [artifact 자체 cohort · {nat['n_record']} record · "
+                f"{nat['n_beat']} beat] beat-micro "
+                f"{nat['beat_micro_s_prauc']:.4f}"
+                + (f" · 시드별 평균 {ms:.4f}" if ms is not None else "")
+                + "  <- 기록된 주장과 비교하는 값")
+    for row in result.get("baseline_claim_check", []):
+        if row.get("recorded_claim") is not None:
+            lines.append(
+                f"  - claim {row['model']} {row['recorded_claim']}: "
+                f"{row['verdict']} (단위 {row.get('closest_unit')}, "
+                f"cohort {row.get('cohort')})")
     lines += [
         "- 확인되지 않은 것: P-wave ground truth(없음), 인과관계, DS2 밖의 일반화",
         "- 이 결과는 **원인이 아니라 '실패 연관 요인'** 이다. 관찰적 사후 분석이며,",
@@ -3258,7 +3343,7 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
                 score_kind=m.score_kind, per_seed=per_seed_full,
                 source_dir=m.source_dir, fingerprint=m.fingerprint,
                 key_mode=m.key_mode, verification=m.verification,
-                seeds=m.seeds)
+                seeds=m.seeds, artifact_full=m.artifact_full)
     matching = {"pass": all(a["pass"] for a in matches.values()) and bool(matches),
                 "fail_reasons": [r for a in matches.values()
                                  for r in a["fail_reasons"]],
@@ -3294,7 +3379,8 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
             score_kind=m.score_kind,
             per_seed=None if m.per_seed is None else m.per_seed[:, sel],
             source_dir=m.source_dir, fingerprint=m.fingerprint,
-            key_mode=m.key_mode, verification=m.verification, seeds=m.seeds)
+            key_mode=m.key_mode, verification=m.verification, seeds=m.seeds,
+            artifact_full=m.artifact_full)
 
     ds1_rows_all = cohort.rows_of(split["ds1"])
     ds1_prev = (float(cohort.y_s[ds1_rows_all].mean()) if len(ds1_rows_all)
@@ -3302,6 +3388,7 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
     metrics = {lab: model_metrics(m, cohort, split, rows, n_boot=n_boot,
                                   ds1_prevalence=ds1_prev)
                for lab, m in aligned.items()}
+    native = {lab: artifact_native_metrics(m) for lab, m in aligned.items()}
     labels = sorted(aligned)
     ref = labels[-1]
     thr = metrics[ref]["threshold"]["threshold"]
@@ -3397,7 +3484,9 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
         "matching": {lab: {k: v for k, v in a.items() if k != "per_record"}
                      for lab, a in matches.items()},
         "model_metrics": metrics,
-        "baseline_claim_check": baseline_claim_check(metrics, freeze),
+        "artifact_native_metrics": native,
+        "baseline_claim_check": baseline_claim_check(metrics, freeze,
+                                                     native),
         "subtype_metrics": sub_tab,
         "calibration_vs_ranking": cal_rank,
         "model_disagreement": disagree,
