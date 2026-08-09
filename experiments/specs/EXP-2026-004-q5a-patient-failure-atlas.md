@@ -385,6 +385,40 @@ full training 실행.
 
 ## Decision log
 
+### 2026-08-09 — 첫 ANALYZE 실측 후 primary outcome 개정 (deviation 기록 2)
+
+첫 `ANALYZE`(run `20260809T0808…`, `MEASURED`, 판정 `UNRESOLVED`)에서 §10의
+outcome 정의가 **threshold에 갇혀 있음**이 드러났다. 산출물에 DS1 행이 없어
+threshold가 "DS1 S prevalence(≈1.9%)에 대응하는 DS2 score 분위수"로 잡히는데,
+DS2의 실제 S 비율은 3.7%(1,837/49,295)다. 즉 **정의상 S의 절반 이상이 자동으로
+FN**이 된다(실측 FN rate 0.686, 그런데 S beat의 평균 순위는 94.1 퍼센타일).
+이진 outcome이 이렇게 강제되면 block 비교의 신호가 희석된다 — 실제로 네 block
+모두 Δlogloss 음수·환자 방향 ≤0.56·상위 2 record 제거 시 붕괴였다.
+
+개정(사전 등록, 이후 run부터 적용):
+
+- **primary outcome = `within_record_rank`** — 각 S beat가 **자기 record 안에서**
+  얼마나 낮게 순위 매겨졌는지(1.0 = 그 record의 최하위). record 단위라 전역
+  operating point가 개입할 수 없고, record별 단조 재척도에도 불변이다(회귀
+  테스트로 고정). 평가는 patient-held-out **ridge 회귀의 MSE 개선**으로 하고,
+  CI·환자 방향 일관성·record 제거 안정성·1.25배 margin 등 **판정 규칙은 그대로**다.
+- **secondary = `fn_at_locked_threshold`(v1)** — 원 계약과의 비교 가능성을 위해
+  같은 번들에 계속 기록한다(`mechanism_evidence.csv`의 `outcome` 열, `is_primary`
+  플래그). 어느 것도 삭제하지 않는다.
+- atrial proxy 일치도 표는 임의 threshold 대신 **"자기 record 안에서 나쁜 절반"**
+  이진화를 쓴다.
+- 이 개정은 DS2 label을 새로 들여다보고 만든 것이 **아니다** — 근거는 DS1/DS2의
+  S prevalence 차이와 순위 분포라는 구조적 사실이다. 과학적 질문·split·주
+  metric(S PR-AUC)·decision tree·branch 기준은 변경 없다.
+
+같은 실측에서 `subtype_metrics.csv`가 A/a/J/S 전부 n=0으로 나왔다(1,837개가 전부
+`other`) — `.atr` symbol 조인이 실패한 것이다. 경로(`raw_ann/mitdb`)는 정상이었고
+원인은 `wfdb` 부재로 판단되어, notebook이 `wfdb`를 자동 설치하게 했다. 아울러
+source의 `t`가 **초**로 저장돼 있어 sample로 되돌릴 때 부동소수 왕복 오차가 생길
+수 있으므로, 조인에 **사전 선언한 ±2 sample(5.6 ms) 허용치**를 두고 record별
+정확 일치 수와 거리 중앙값을 함께 보고한다. 조인율 0.95 미만이면 여전히 subtype
+블록은 `unavailable`이다(근사 금지).
+
 ### 2026-08-09 — INVENTORY 실측 후 adapter 확장 (deviation 기록 1; 결과 없음)
 
 사용자의 첫 Colab `INVENTORY` 실행에서 gate가 설계대로 **STOP**했다(185 후보 ·

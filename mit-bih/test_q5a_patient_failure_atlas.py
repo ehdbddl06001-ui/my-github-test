@@ -641,6 +641,59 @@ def test_block_evidence():
     check(few["underpowered"] and not few["blocks"],
           f"fewer than {QA.BLOCK_MIN_EVENTS} error events -> underpowered")
 
+    # continuous (rank) outcome — the amended primary
+    yc = 0.7 * signal + 0.3 * rng.randn(len(groups))
+    good_r = QA.block_incremental_value({}, {"signal": signal}, yc, groups,
+                                        n_boot=200, mode="regression")
+    bad_r = QA.block_incremental_value({}, {"noise": noise}, yc, groups,
+                                       n_boot=200, mode="regression")
+    check(good_r["delta_logloss"] > bad_r["delta_logloss"]
+          and good_r["ci_low"] > 0,
+          "regression mode: an informative block beats noise with CI > 0")
+    check(good_r["mode"] == "regression"
+          and set(map(int, good_r["per_patient_delta"])) == set(range(12)),
+          "regression CI is still a patient bootstrap over per-patient loss")
+    thin = QA.evaluate_blocks({"B_RR": {"x": signal[:20]}}, yc[:20],
+                              groups[:20], n_boot=50, log=Q4O.RunLog(echo=False),
+                              outcome=QA.OUTCOME_RANK)
+    check(thin["underpowered"] and thin["mode"] == "regression",
+          f"fewer than {QA.BLOCK_MIN_OBS} S beats -> rank outcome underpowered")
+
+
+def test_rank_outcome_is_threshold_free():
+    print("within-record rank outcome (amended primary)")
+    check(QA.PRIMARY_OUTCOME == QA.OUTCOME_RANK
+          and QA.OUTCOME_MODES[QA.OUTCOME_RANK] == "regression",
+          "the primary outcome is the threshold-free within-record rank")
+    cohort = QA.synthetic_atlas(n_per_record=40)
+    rows = np.arange(cohort.n)
+    model = QA.synthetic_model(cohort, "V10", skill=4.0, seed=11)
+    s_mask = cohort.y_s[rows]
+    out = QA.within_record_rank_outcome(cohort, rows, model.score, s_mask)
+    y = out["y"]
+    check(len(y) == int(s_mask.sum()) and np.isfinite(y).all(),
+          "one finite rank per S beat")
+    check(y.min() >= 0.0 and y.max() <= 1.0, "the rank lives in [0, 1]")
+
+    # a beat that is the worst-scoring in its record must sit at the top
+    rec = cohort.record[rows]
+    score = model.score.copy()
+    victim = np.where(s_mask)[0][0]
+    score[victim] = score[rec == rec[victim]].min() - 1.0
+    y2 = QA.within_record_rank_outcome(cohort, rows, score, s_mask)["y"]
+    pos = int(np.sum(s_mask[:victim]))
+    check(y2[pos] == y2.max() and y2[pos] >= 0.99,
+          "the record's worst-ranked beat gets the maximum badness")
+
+    # scaling every score in a record must not move a within-record rank
+    score3 = model.score.copy()
+    r0 = rec == cohort.records[0]
+    score3[r0] = score3[r0] * 0.1
+    y3 = QA.within_record_rank_outcome(cohort, rows, score3, s_mask)["y"]
+    check(np.allclose(y, y3),
+          "a per-record monotone rescale leaves the outcome unchanged — no "
+          "global operating point can manufacture it")
+
 
 def _ev(mean, lo, hi, direction=0.8, stable=True, adj_lo=None):
     return {"delta_logloss": mean, "ci_low": lo, "ci_high": hi,
@@ -814,7 +867,7 @@ def test_analyze_bundle_and_immutability():
     print("ANALYZE bundle schema, source immutability, REPORT")
     tmp = tempfile.mkdtemp(prefix="q5a_run_")
     try:
-        cohort, inv, freeze, models, runs = _fixture(tmp, n_per=40)
+        cohort, inv, freeze, models, runs = _fixture(tmp, n_per=120)
         before = _dir_fingerprint(runs)
         out = os.path.join(tmp, "out")
         res = QA.run_atlas(cohort, models, inv, freeze,
@@ -844,6 +897,19 @@ def test_analyze_bundle_and_immutability():
                     encoding="utf-8").read()
         check("failure-ASSOCIATED, not causal" in mech,
               "the evidence CSV carries the interpretation boundary")
+        check(res["primary_outcome"]["name"] == QA.OUTCOME_RANK,
+              "the bundle records the amended primary outcome")
+        be = res["block_evidence"]
+        check(be["outcome"] == QA.OUTCOME_RANK and be["mode"] == "regression",
+              "block evidence is computed on the rank outcome")
+        sec = res["block_evidence_secondary_fn_outcome"]
+        check(sec["outcome"] == QA.OUTCOME_FN,
+              "the v1 binary outcome is still reported as secondary")
+        mech = open(os.path.join(out, "mechanism_evidence.csv"),
+                    encoding="utf-8").read()
+        check("outcome" in mech.splitlines()[0] and QA.OUTCOME_RANK in mech
+              and QA.OUTCOME_FN in mech,
+              "mechanism_evidence.csv carries both outcomes, primary flagged")
         check(res["split"]["ds1"] and res["split"]["ds2"]
               and not set(res["split"]["ds1"]) & set(res["split"]["ds2"]),
               "the bundle records a DS1/DS2 split with 0 overlap")
@@ -911,10 +977,28 @@ def test_notebook_static():
     cfg = next((s for s in src if "MODE = " in s), "")
     check("assert MODE in VALID_MODES" in cfg,
           "exactly-one-mode assertion present")
-    check('MODE = "DESIGN"' in cfg, "default mode is DESIGN")
     first_md = "".join(cells[0]["source"])
-    check("RESULT NOT RUN" in first_md,
-          "front page declares RESULT NOT RUN before any analysis")
+    status_line = first_md.splitlines()[2] if len(first_md.splitlines()) > 2 \
+        else ""
+    measured = "MEASURED" in status_line
+    has_out = any(c.get("outputs") for c in cells if c["cell_type"] == "code")
+    if measured:
+        # executed notebook: the stored outputs ARE the evidence, and the front
+        # page must carry the measured verdict instead of a stale NOT RUN.
+        check(has_out, "measured notebook keeps its stored outputs")
+        check("RESULT NOT RUN" not in status_line,
+              "front page status line no longer claims RESULT NOT RUN")
+        check("runs/" in first_md and "UNRESOLVED" in first_md,
+              "front page cites the run bundle and its verdict")
+        check("UNVERIFIED" in first_md or "재현되지 않" in first_md,
+              "front page records that the 0.660 claim was not reproduced")
+        check(any(f'MODE = "{m}"' in cfg for m in QA.MODES),
+              "executed notebook still pins exactly one valid mode")
+    else:
+        check("RESULT NOT RUN" in first_md,
+              "front page declares RESULT NOT RUN before any analysis")
+        check(not has_out, "design notebook committed without stored outputs")
+        check('MODE = "DESIGN"' in cfg, "un-executed notebook defaults to DESIGN")
     check("EXP-2026-004" in first_md and "Q5-A" in first_md,
           "front page identifies the experiment")
     check("ANALYSIS ONLY" in first_md and "NO TRAINING" in first_md,
@@ -924,8 +1008,6 @@ def test_notebook_static():
     check("residual CNN" in first_md and "INCART" in first_md,
           "front page repeats the closed directions")
     check(all(m in all_src for m in QA.MODES), "all four modes wired")
-    check(not any(c.get("outputs") for c in cells if c["cell_type"] == "code"),
-          "design notebook committed without stored outputs")
     check("1p3HvC_bnbiQlEanFOVIvVdejy60W0tho" in all_src
           and "1aSj_1jvS_W2iruVnORIG6DTVuHobzNzq" in all_src
           and "1ZCAYZCl4T4eoZzdFfV_IzkB0Mgbcqlw4" in all_src,
@@ -947,9 +1029,7 @@ def test_notebook_static():
     check("test_q4o" in all_src and "test_q4p" in all_src
           and "test_q4q" in all_src and "test_q5a" in all_src,
           "regression suites (Q4-O/Q4-P/Q4-Q) plus Q5-A run in the notebook")
-    stale = ("branch selected:" in all_src.lower()
-             or "MEASURED —" in all_src)
-    check(not stale, "no stale measured-result claims")
+    check("wfdb" in all_src, "cell 2 makes wfdb available (subtype recovery)")
 
 
 def test_spec_and_docs():
@@ -996,7 +1076,8 @@ def main() -> int:
                test_absent_historical_baseline, test_legacy_adapter,
                test_float_time_column, test_rr_and_symbol_recovery,
                test_metrics_recomputation, test_subtype_and_audit_records,
-               test_block_evidence, test_decision_tree_all_branches,
+               test_block_evidence, test_rank_outcome_is_threshold_free,
+               test_decision_tree_all_branches,
                test_branch_not_by_largest_mean, test_language_boundary,
                test_calibration_vs_ranking, test_analyze_bundle_and_immutability,
                test_blocked_bundle, test_notebook_static, test_spec_and_docs,
