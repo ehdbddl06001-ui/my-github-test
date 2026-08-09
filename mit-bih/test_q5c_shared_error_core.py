@@ -196,9 +196,9 @@ def test_decision_tree_reaches_every_branch():
                                    log=Q4O.RunLog(echo=False))
         check(res["decision"]["branch"] == QC.BRANCH_UNSTRUCTURED,
               "a core driven by a hidden variable -> SHARED_CORE_UNSTRUCTURED")
-        check("not a new model" in res["decision"]["next_step"]
-              and "invent" in res["decision"]["next_step"],
-              "and the next step forbids inventing a feature to fit it")
+        check("invent" in res["decision"]["next_step"]
+              and "widen" in res["decision"]["next_step"],
+              "and the next step forbids inventing or widening features")
 
         # D-A: real core the registered features can see
         cohort, models, rows = _fixture(rho=0.95, driver="pre_rr", seed=13)
@@ -239,6 +239,26 @@ def test_figures_survive_a_degenerate_interval():
                   f"{f} is still written when the interval is degenerate")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_db_next_step_matches_the_measurement():
+    print("D-B never claims 'invisible' when the AUROC says otherwise")
+    ex = {"excess": 4.0, "ci_low": 3.0, "ci_high": 5.0}
+    conc = {"n_record": 7}
+    seen = {"underpowered": False, "blocks": {},
+            "joint": {"auroc_aug": 0.73, "delta_logloss": -1.0,
+                      "ci_low": -1.6}}
+    d = QC.evaluate_core_decision(ex, seen, {"pass": True}, conc)
+    check(d["branch"] == QC.BRANCH_UNSTRUCTURED,
+          "discrimination without a loss improvement is still D-B by the rule")
+    check("invisible" not in d["next_step"] and "DO rank" in d["next_step"],
+          "but the next step states what actually happened, not a canned line")
+
+    blind = dict(seen, joint={"auroc_aug": 0.51, "delta_logloss": -0.1,
+                              "ci_low": -0.4})
+    d2 = QC.evaluate_core_decision(ex, blind, {"pass": True}, conc)
+    check("invisible" in d2["next_step"],
+          "and when the features really are blind it says exactly that")
 
 
 def test_shuffle_control():
@@ -460,7 +480,8 @@ def main() -> int:
                test_membership_is_a_within_record_median_split,
                test_excess_is_measured_against_chance,
                test_decision_tree_reaches_every_branch,
-               test_figures_survive_a_degenerate_interval, test_shuffle_control,
+               test_figures_survive_a_degenerate_interval,
+               test_db_next_step_matches_the_measurement, test_shuffle_control,
                test_concentration_is_reported, test_bundle_and_report,
                test_underpowered_is_a_verdict, test_language_boundary,
                test_spec_and_notebook, test_q5a_is_untouched):

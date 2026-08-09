@@ -53,7 +53,7 @@ import q4o_leakage_free_residual as Q4O         # noqa: E402
 EXPERIMENT_ID = "EXP-2026-006"
 ARM_ID = "Q5-C"
 RUN_SLUG = "q5c_shared_error_core"
-MODULE_VERSION = 3
+MODULE_VERSION = 4
 MODULE_BUILD = "2026-08-09"
 
 MODES = ("DESIGN", "ANALYZE", "REPORT")
@@ -540,11 +540,19 @@ def evaluate_core_decision(excess: Dict[str, object],
                            "the pre-registered rule needs BOTH discrimination "
                            "and a held-out loss improvement: "
                            + "; ".join(why)),
-                "next_step": ("do NOT invent a feature to fit it. The core is "
-                              "invisible to everything measured so far, so the "
-                              "next step is a new measurement — not a new "
-                              "model, and not a wider feature search on the "
-                              "same beats"),
+                "next_step": (
+                    ("the registered features DO rank the core out of patient "
+                     f"(AUROC {auroc:.3f}); what failed is the held-out loss, "
+                     "which a 19-feature fit over this few patient groups "
+                     "cannot be expected to improve. Read the descriptive "
+                     "contrast for what separates the core, treat it as "
+                     "descriptive, and do not promote it to a branch here"
+                     ) if auroc >= AUROC_MIN else
+                    ("the core is invisible to everything measured so far, so "
+                     "the next step is a new measurement")
+                ) + ". Do NOT invent a feature to fit it, do not widen the "
+                    "feature search on the same beats, and do not start an "
+                    "intervention from this branch",
                 "trace": trace,
                 "evidence": {"excess": excess, "explain": explain,
                              "shuffle": shuffle,
