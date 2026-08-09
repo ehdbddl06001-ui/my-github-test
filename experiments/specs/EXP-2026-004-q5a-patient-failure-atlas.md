@@ -385,6 +385,56 @@ full training 실행.
 
 ## Decision log
 
+### 2026-08-09 — V9/V10 원 산출물 회수: 0.660·0.597 검증 완료 (deviation 기록 3)
+
+사용자가 로컬에 보관 중이던 원 실행 패키지(`v9_results.zip`, `v10_results.zip`,
+`v10.zip`, `S_PRAUC_0660_provenance.md`)를 제출했다. **arm × seed 확률 npz가
+전부 보존돼 있었고, 재학습 없이 기록된 숫자를 전량 재현했다.**
+
+| 패키지 | arm | 재계산(5시드 평균) | 기록 |
+|---|---|---|---|
+| V9 | v8_noc | 0.4258 | 0.426 |
+| V9 | v8base | 0.5762 | 0.576 |
+| V9 | kink_noproto | 0.4595 | 0.460 |
+| V9 | **kink_noctx** | **0.5969 ± 0.0411** | **0.597 ± 0.041** |
+| V9 | kink | 0.5341 | 0.534 |
+| V10 | v8base | 0.5984 | 0.598 |
+| V10 | base | 0.5732 | 0.573 |
+| V10 | **pwave** | **0.6603** | **0.660** |
+| V10 | pwave_noc | 0.5619 | 0.562 |
+| V10 | full | 0.6541 | 0.654 |
+
+확정된 사실 넷:
+
+1. **0.660의 집계 단위는 "시드별 S PR-AUC의 평균"** 이다. 같은 확률을 시드
+   앙상블한 뒤 PR-AUC를 재면 0.7717이 나온다 — 인용 시 단위를 반드시 명시해야
+   한다. 이에 따라 `per_seed_mean_s_prauc`를 정식 metric 단위로 추가하고
+   claim check가 beat-micro/record-macro와 함께 비교한다.
+2. **`ablation_step9d/pwave`는 V10이 아니었다.** 또 다른 이름 충돌이며(앞선
+   `exp2_pwave`와 같은 함정), 1차 ANALYZE가 동결한 것은 이 별개 계보였다.
+   따라서 "저장 산출물에서 P파가 이득을 주지 않는다"는 1차 관찰은 **철회**한다 —
+   진짜 V10에서는 `base 0.573 → pwave 0.660`(Δ+0.087, 5/5 시드)이다.
+3. **V9는 존재한다 — `ARTIFACT_ABSENT` 판정 철회.** `kink_noctx`가 V9의 최고
+   arm이고 0.597이 검증됐다. Drive에 없었을 뿐 로컬에 보관돼 있었다(앞선 한계
+   기술 "다른 이름/로컬 보관 가능성"이 실제였다).
+4. **V9와 V10의 DS2가 동일**하다(49,289박, N/S/V 44,232/1,837/3,220). 그리고
+   atlas cohort와 **19/22 record가 (n, S, V)까지 정확히 일치**하며, 나머지 3개는
+   N beat만 다르다(105 −1, 111 −1, 222 −4). S는 22개 record 전부 일치.
+
+baseline 재동결(이후 run부터): primary **V10 = `pwave`** / **V9 = `kink_noctx`**,
+짝 대조군은 **각자의 같은 패키지 안** `base` · `v8base`. `v8base`는 두 패키지에
+모두 존재하므로 control은 **primary와 같은 디렉터리**로만 범위를 좁힌다(성능이
+아니라 provenance 규칙). 이에 맞춘 코드 확장:
+
+- **per-seed family**: `<arm>_s<seed>.npz` 묶음을 한 모델로 인식해 시드 축을
+  복원한다. seed 파일 하나라도 cohort(record/label)가 다르면 STOP. 이로써
+  그동안 "산출 불가"로 기록해온 **seed variability가 살아난다**.
+- **행 대응 검증을 record 단위로 확장**: 전체 부분집합이 맞지 않아도, record별로
+  beat 수와 **전체 label 벡터가 일치하면** 그 record만 검증 성립으로 인정하고,
+  맞지 않는 record는 사유와 함께 **제외**한다(재정렬·보정 금지).
+
+`ablation_step9d/*`는 별개 계보로 남기며 baseline에서 제외한다.
+
 ### 2026-08-09 — 첫 ANALYZE 실측 후 primary outcome 개정 (deviation 기록 2)
 
 첫 `ANALYZE`(run `20260809T0808…`, `MEASURED`, 판정 `UNRESOLVED`)에서 §10의
