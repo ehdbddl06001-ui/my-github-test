@@ -57,17 +57,19 @@ residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 
 - Required supporting views: patient-level lower tail, patient macro metrics, seed variability, patient bootstrap.
 - Historical path: V8 base CNN → V9 comparison/prototype → V10 explicit P-wave morphology.
 - Recorded reference: V9 `kink_noctx` S PR-AUC about 0.597; V10 `pwave` about 0.660.
-  **2026-08-09 실측 (Q5-A INVENTORY)**:
-  - **V10 = `MyDrive/mitbih/ablation_step9d/pwave/ens.npz`** (`colab_step9d_final.py`
-    의 `run_final("pwave")`). 산출물 존재 — 0.660의 재계산 검증은 `ANALYZE`에서 한다.
-    같은 폴더 `base26`이 **P파 특징만 다른 짝 대조군**이라 함께 동결한다.
-  - **V9 `kink_noctx` = ARTIFACT_ABSENT.** Drive의 run/tag 폴더명·파일명·색인 본문과
-    repo 전량에서 `kink`/`noctx`가 발견되지 않았다. 기록된 **0.597은 검증 불가**로
-    남기며, 이를 메우려고 재학습하지 않는다. (한계: Drive 색인은 `.npz` 내부를 읽지
-    않으므로 다른 이름으로 저장된 V9까지 배제하지는 못한다 — 로컬 PC 보관 또는
-    미저장 가능성.)
-  - 이 결론은 성능이 아니라 provenance로만 도출됐고, 후보가 식별 불가능하면
-    `AMBIGUOUS_BASELINE`으로 중단하는 규칙은 그대로다.
+  **2026-08-09 검증 완료** — 원 실행 패키지(`v9_results` / `v10_results`)의 arm×seed
+  확률 원값에서 재학습 없이 재현했다:
+  - **V10 `pwave` 0.6603** (기록 0.660), 짝 대조군 `base` 0.5732 (0.573) → 같은
+    실행 안에서 Δ+0.087, 5/5 시드
+  - **V9 `kink_noctx` 0.5969 ± 0.0411** (기록 0.597 ± 0.041), 짝 대조군 `v8base`
+    0.5762 (0.576)
+  - **0.660의 단위는 "시드별 PR-AUC의 평균"** 이다. 같은 확률을 시드 앙상블하면
+    0.7717이 나오므로 인용 시 단위를 반드시 붙인다.
+  - 앞서 `ARTIFACT_ABSENT`로 기록했던 V9는 **철회** — Drive에 없었을 뿐 로컬
+    보관본이 존재했다. `ablation_step9d/pwave`는 이름만 같은 **별개 계보**였고
+    baseline에서 제외한다.
+  - V9·V10의 DS2는 동일(49,289박)하고 atlas cohort와 19/22 record가 정확히
+    일치한다 → V9↔V10 beat 수준 비교가 가능하며 seed variability도 복원된다.
 
 ## Current scientific focus
 The next decision is driven by failure patients and lower-tail robustness, not a small mean-only gain.

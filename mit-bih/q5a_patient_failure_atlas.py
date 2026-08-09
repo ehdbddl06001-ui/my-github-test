@@ -50,6 +50,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 import time
 from dataclasses import dataclass, field
@@ -75,8 +76,8 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 4
-MODULE_BUILD = ("2026-08-09 q5a.4 — primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
+MODULE_VERSION = 8
+MODULE_BUILD = ("2026-08-09 q5a.8 — a historical claim is checked on the ARTIFACT'S OWN cohort (trimming it first would compare a different population), and D4 persistence is the minimum over ALL model pairs; a true name clash is settled by the RECORDED seed plan (provenance, never a score); baseline targets match on the EXACT model name first and identical artifacts reachable by two paths collapse (confirmed by hash), so a package unzipped twice is not a false ambiguity; V9/V10 packages recovered: per-seed families (<arm>_s<seed>.npz) load as one model, row correspondence verifies PER RECORD, mean-of-per-seed PR-AUC is a first-class metric unit; primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
                 "detected by KEY (ens.npz), tag folders are their own runs, "
                 "row correspondence VERIFIED against the frozen source before "
                 "any key is derived, paired control scoped to the primary's "
@@ -113,20 +114,31 @@ FIXED_PROBLEM = ("improve the per-patient lower tail and the failure patients "
 BASELINE_TARGETS: Dict[str, Dict[str, object]] = {
     "V10": {"name_tokens": ("pwave",), "role": "primary",
             "recorded_s_prauc": 0.660,
-            "recorded_in": "research/PROJECT_STATE.md (needs artifact check)",
-            "source_script": "mit-bih/colab_step9d_final.py :: run_final('pwave')"},
-    "BASE26": {"name_tokens": ("base26",), "role": "paired_control",
-               "same_parent_as": "V10", "recorded_s_prauc": None,
-               "source_script": "mit-bih/colab_step9d_final.py :: run_final('base26')",
-               "note": ("the paired control of V10: same script, same seeds, "
-                        "same weighing — only the P-wave feature block differs "
-                        "(use_pw = tag == 'pwave')")},
-    "V9": {"name_tokens": ("kink_noctx", "kink-noctx"),
-           "role": "historical_unverified", "recorded_s_prauc": 0.597,
-           "recorded_in": "research/PROJECT_STATE.md (needs artifact check)",
-           "note": ("measured 2026-08-09: no run folder, no tag folder and no "
-                    "Drive file carries this name. Recorded as ARTIFACT_ABSENT "
-                    "— the 0.597 claim stays unverified and is NOT retrained.")},
+            "require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+            "recorded_in": "research/PROJECT_STATE.md",
+            "source_script": "v10pkg/v10_ECG.ipynb :: run(arms=['pwave'], seeds=1000..1004)",
+            "note": ("the V10 P-wave arm. Its 0.660 is the MEAN OF PER-SEED "
+                     "S PR-AUC over seeds 1000-1004 — not the PR-AUC of the "
+                     "seed-ensembled probability (0.772 on the same file).")},
+    "V10_BASE": {"require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+                 "name_tokens": ("base",), "role": "paired_control",
+                 "same_parent_as": "V10", "recorded_s_prauc": 0.573,
+                 "source_script": "v10pkg/v10_ECG.ipynb :: run(arms=['base'])",
+                 "note": ("V10's own paired control: identical protocol and "
+                          "seeds, the P-wave branch is the only difference")},
+    "V9": {"require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+                 "name_tokens": ("kink_noctx", "kink-noctx"), "role": "primary",
+           "recorded_s_prauc": 0.597,
+           "recorded_in": "research/PROJECT_STATE.md",
+           "source_script": "v9pkg/v9_ECG.ipynb :: run(arms=['kink_noctx'])",
+           "note": ("the best V9 arm (comparison branch + prototype bank, no "
+                    "kink ctx). Same DS2 beat set as V10, so V9 and V10 are "
+                    "directly comparable beat by beat.")},
+    "V9_BASE": {"require": {"seeds": [1000, 1001, 1002, 1003, 1004]},
+                 "name_tokens": ("v8base",), "role": "paired_control",
+                "same_parent_as": "V9", "recorded_s_prauc": 0.576,
+                "source_script": "v9pkg/v9_ECG.ipynb :: run(arms=['v8base'])",
+                "note": "V9's own control: the restored v8 base, no add-ons"},
 }
 #: Optional third comparison arm: the Q4-Q morphology baseline (Arm A).
 Q4Q_BASELINE_KEY = "Q4Q_ARM_A"
@@ -726,6 +738,12 @@ SCORE_KEY_HINTS = ("prob", "probs", "probability", "score", "scores",
 PRED_FILE_HINTS = ("predictions.npz", "probs.npz", "preds.npz", "probs.npy")
 #: Directories that hold raw data or per-window features, never model
 #: predictions. Skipped so a Drive-wide scan stays minutes, not hours.
+#: The v9/v10 packages store one file per (arm, seed): ``<arm>_s<seed>.npz``.
+#: A group of them is ONE model with per-seed probabilities — which is also
+#: what makes seed variability and the historical "mean of per-seed PR-AUC"
+#: contract recoverable.
+SEED_FILE_RE = re.compile(r"^(?P<arm>.+)_s(?P<seed>\d+)\.npz$")
+SEED_FAMILY_MIN = 2
 SKIP_DIR_NAMES = ("raw_ann", "incart_raw", "incart", "mitdb", "incartdb",
                   "atrial_parts", "figs", "figures", "svdb_feats",
                   "synergy_feats", "__pycache__", ".ipynb_checkpoints")
@@ -801,6 +819,16 @@ def probe_prediction_file(path: str) -> Dict[str, object]:
     except Exception as exc:
         info["error"] = str(exc)
     return info
+
+
+def group_seed_families(filenames: Sequence[str]) -> Dict[str, List[Tuple[int, str]]]:
+    """Group ``<arm>_s<seed>.npz`` files into one entry per arm."""
+    fams: Dict[str, List[Tuple[int, str]]] = {}
+    for f in filenames:
+        m = SEED_FILE_RE.match(f)
+        if m:
+            fams.setdefault(m.group("arm"), []).append((int(m.group("seed")), f))
+    return {a: sorted(v) for a, v in fams.items() if len(v) >= SEED_FAMILY_MIN}
 
 
 def detect_score_layout(arr: np.ndarray, n_rows: int) -> Dict[str, object]:
@@ -911,12 +939,44 @@ def verify_row_correspondence(pred_record: np.ndarray, pred_y: np.ndarray,
                       else "row values differ"})
         if rec_ok and y_ok:
             return {"verified": True, "subset": name, "rows": rows,
+                    "pred_rows": np.arange(len(pred_record)),
                     "n": int(len(rows)), "attempts": tried,
+                    "excluded_records": [],
                     "rule": ("every record id and every label matches the "
                              "frozen source on this subset — row order alone "
                              "was never sufficient")}
-    return {"verified": False, "subset": None, "rows": None, "attempts": tried,
-            "rule": "no subset of the frozen source matches element-wise"}
+    # Per-record fallback. The v9/v10 packages drop a handful of edge beats in
+    # a few records, so the whole-subset check cannot pass — but a record whose
+    # count AND full label vector match is still verified on its own terms. A
+    # record that does not match is EXCLUDED with its reason, never patched.
+    pred_record = np.asarray(pred_record).astype(int)
+    pred_y = np.asarray(pred_y).astype(int)
+    keep_src, keep_pred, excluded = [], [], []
+    for r in sorted(set(pred_record.tolist())):
+        src_idx = np.where(rec_src == r)[0]
+        prd_idx = np.where(pred_record == r)[0]
+        if len(src_idx) == len(prd_idx) and len(src_idx) and \
+                np.array_equal(y_src[src_idx], pred_y[prd_idx]):
+            keep_src.append(src_idx)
+            keep_pred.append(prd_idx)
+        else:
+            excluded.append({"record": int(r), "n_source": int(len(src_idx)),
+                             "n_artifact": int(len(prd_idx)),
+                             "reason": ("beat count differs"
+                                        if len(src_idx) != len(prd_idx)
+                                        else "label vector differs")})
+    if keep_src:
+        rows = np.concatenate(keep_src)
+        return {"verified": True, "subset": "per_record",
+                "rows": rows, "pred_rows": np.concatenate(keep_pred),
+                "n": int(len(rows)), "attempts": tried,
+                "excluded_records": excluded,
+                "rule": ("per record: count and the FULL label vector match "
+                         "element-wise; records that do not match are excluded "
+                         "with a reason, never realigned")}
+    return {"verified": False, "subset": None, "rows": None, "pred_rows": None,
+            "attempts": tried, "excluded_records": excluded,
+            "rule": "no subset and no record of the frozen source matches"}
 
 
 def _model_name_from(cfg: Optional[dict], res: Optional[dict],
@@ -956,10 +1016,33 @@ def scan_inventory(roots: Sequence[str],
             man = _read_json(os.path.join(run_dir, "manifest.json"))
             if name in SKIP_DIR_NAMES:
                 continue
-            preds, tag_dirs = [], {}
+            preds, tag_dirs, fam_rows = [], {}, []
             for dirpath, dirnames, filenames in os.walk(run_dir):
                 dirnames[:] = [d for d in dirnames if d not in SKIP_DIR_NAMES]
+                # <arm>_s<seed>.npz families: one inventory row per ARM, with
+                # the seed files as its prediction set.
+                for a, members in sorted(group_seed_families(filenames).items()):
+                    probes = [probe_prediction_file(os.path.join(dirpath, f))
+                              for _s, f in members]
+                    if not all(p.get("score_fields") and p.get("has_y_true")
+                               for p in probes):
+                        continue
+                    rel = os.path.relpath(dirpath, run_dir)
+                    rid = name if rel == "." else f"{name}/{rel}"
+                    # The family's own directory IS its run for pairing
+                    # purposes: two packages may both contain a `v8base`, and
+                    # a control must never be paired across packages.
+                    fam_rows.append(_inventory_row(
+                        run_id=f"{rid}::{a}", run_dir=dirpath, model_name=a,
+                        cfg=cfg, res=res, man=man, preds=probes,
+                        parent_run_dir=dirpath))
+                    fam_rows[-1]["seed_family"] = {
+                        "arm": a, "n_seed": len(members),
+                        "seeds": [s for s, _f in members],
+                        "files": [f for _s, f in members]}
                 for f in sorted(filenames):
+                    if SEED_FILE_RE.match(f):
+                        continue
                     if not f.endswith(".npz"):
                         continue
                     p = probe_prediction_file(os.path.join(dirpath, f))
@@ -976,6 +1059,7 @@ def scan_inventory(roots: Sequence[str],
                     run_id=f"{name}/{tag}", run_dir=tdir, model_name=tag,
                     cfg=cfg, res=res, man=man, preds=tpreds,
                     parent_run_dir=run_dir))
+            entries.extend(fam_rows)
             entries.append(_inventory_row(
                 run_id=name, run_dir=run_dir,
                 model_name=_model_name_from(cfg, res, run_dir),
@@ -1061,6 +1145,69 @@ def _read_registry(path: str) -> Dict[str, object]:
             "append_only_ok": bool(not dup and not bad)}
 
 
+def artifact_signature(entry: Dict[str, object]) -> Tuple:
+    """Content signature of one inventory row.
+
+    Two rows with the same model name, the same file names and the same row
+    counts are the SAME artifact reachable by two paths (a package unzipped
+    twice, a folder copied). Collapsing them is not a choice between rival
+    candidates — there is only one artifact.
+    """
+    files = tuple(sorted((str(p.get("file")), p.get("n_rows"))
+                         for p in entry.get("prediction_files", [])))
+    return (str(entry.get("model_name")), files)
+
+
+def _same_content(a: Dict[str, object], b: Dict[str, object]) -> bool:
+    """Byte-level check, run ONLY when two rows already look alike.
+
+    A cheap signature can collide between genuinely different models, and
+    collapsing those would silently pick one. So the collapse is confirmed by
+    hashing — bounded work, because it only happens on a collision.
+    """
+    def hashes(e):
+        out = set()
+        for p in e.get("prediction_files", []):
+            path = str(p.get("path", ""))
+            if not os.path.exists(path):
+                return None
+            out.add(sha256_file(path))
+        return frozenset(out)
+    ha, hb = hashes(a), hashes(b)
+    return ha is not None and ha == hb
+
+
+def dedupe_identical_artifacts(entries: List[Dict[str, object]]
+                               ) -> Tuple[List[Dict[str, object]],
+                                          List[Dict[str, str]]]:
+    """Collapse rows that point at byte-identical prediction sets."""
+    kept: Dict[Tuple, Dict[str, object]] = {}
+    order: List[Tuple] = []
+    dropped: List[Dict[str, str]] = []
+    for e in entries:
+        if not e.get("prediction_files"):
+            sig = ("__no_predictions__", str(e.get("run_id")))
+        else:
+            sig = artifact_signature(e)
+        if sig in kept and _same_content(kept[sig], e):
+            # keep the shallowest path — it is the one a human would name
+            a, b = kept[sig], e
+            keep, drop = (a, b) if len(str(a["run_dir"])) <= len(str(b["run_dir"])) \
+                else (b, a)
+            kept[sig] = keep
+            dropped.append({"kept": str(keep["run_id"]),
+                            "dropped": str(drop["run_id"])})
+        elif sig in kept:
+            # same name and shape, DIFFERENT bytes: two real candidates. Keep
+            # both so the ambiguity gate can stop on them.
+            order.append(sig := (*sig, str(e.get("run_id"))))
+            kept[sig] = e
+        else:
+            kept[sig] = e
+            order.append(sig)
+    return [kept[s] for s in order], dropped
+
+
 def freeze_baseline(inventory: Dict[str, object],
                     targets: Optional[Dict[str, Dict[str, object]]] = None
                     ) -> Dict[str, object]:
@@ -1074,10 +1221,15 @@ def freeze_baseline(inventory: Dict[str, object],
       carried along only so the analysis can *check* it later.
     """
     targets = targets or BASELINE_TARGETS
-    entries = list(inventory.get("entries", []))
+    entries, duplicates = dedupe_identical_artifacts(
+        list(inventory.get("entries", [])))
     selected: Dict[str, object] = {}
     reasons: List[str] = []
     absent: List[Dict[str, object]] = []
+    # Informational, not a problem: kept out of `reasons` so the STOP text a
+    # human reads stays about actual blockers.
+    collapsed = [f"{d['kept']} (same files as {d['dropped']})"
+                 for d in duplicates]
     # primary first, so a paired control can be scoped to the primary's run
     order = sorted(targets, key=lambda k: (targets[k].get("role") != ROLE_PRIMARY,
                                            k))
@@ -1085,9 +1237,33 @@ def freeze_baseline(inventory: Dict[str, object],
         tgt = targets[label]
         role = str(tgt.get("role", ROLE_PRIMARY))
         toks = tuple(t.lower() for t in tgt["name_tokens"])
+        # EXACT model name first. Substring matching alone pulls in `pwave_noc`
+        # for `pwave` and every `*base*` in the drive for `base`, which turns a
+        # well-identified target into a false ambiguity (measured 2026-08-09).
         cands = [e for e in entries
-                 if any(t in str(e.get("model_name", "")).lower() for t in toks)
-                 or any(t in str(e.get("run_id", "")).lower() for t in toks)]
+                 if str(e.get("model_name", "")).lower() in toks]
+        if not cands:
+            cands = [e for e in entries
+                     if any(t in str(e.get("model_name", "")).lower()
+                            for t in toks)
+                     or any(t in str(e.get("run_id", "")).lower() for t in toks)]
+        # Recorded provenance narrows the field before any ambiguity call.
+        # The seed plan is part of the historical record (v9/v10_ECG.ipynb ran
+        # seeds 1000-1004 and saved one file per seed), so requiring it is a
+        # provenance filter — not a look at any performance number.
+        req = tgt.get("require") or {}
+        if req.get("seeds") and len(cands) > 1:
+            want = [int(s) for s in req["seeds"]]
+            narrowed = [c for c in cands
+                        if [int(s) for s in
+                            ((c.get("seed_family") or {}).get("seeds") or [])]
+                        == want]
+            if narrowed and len(narrowed) < len(cands):
+                reasons.append(
+                    f"{label}: narrowed to the run whose saved seed plan "
+                    f"matches the record {want} "
+                    f"({len(cands)} -> {len(narrowed)} candidate(s))")
+                cands = narrowed
         if role == ROLE_CONTROL and tgt.get("same_parent_as") in selected:
             # A control name like "base26" repeats across unrelated ablation
             # runs. Scope it to the primary's own run — a provenance rule, not
@@ -1173,7 +1349,7 @@ def freeze_baseline(inventory: Dict[str, object],
                     "comparison would not be like-for-like (spec §5)")
     freeze = {
         "status": status, "selected": selected, "reasons": reasons,
-        "absent_baselines": absent,
+        "collapsed_duplicates": collapsed, "absent_baselines": absent,
         "beat_level_models": sorted(k for k, v in selected.items()
                                     if v["comparison_role"] == "beat_level"),
         "aggregate_only_models": sorted(k for k, v in selected.items()
@@ -1229,6 +1405,11 @@ class ModelPredictions:
     fingerprint: Dict[str, str] = field(default_factory=dict)
     key_mode: str = KEY_MODE_ANNOTATION
     verification: Dict[str, object] = field(default_factory=dict)
+    seeds: List[int] = field(default_factory=list)
+    #: The artifact exactly as stored, BEFORE any cohort trimming. Verifying a
+    #: historical claim must use the cohort the claim was computed on, not the
+    #: subset where a beat-level feature join happens to be available.
+    artifact_full: Dict[str, object] = field(default_factory=dict)
 
 
 def _sigmoid(x: np.ndarray) -> np.ndarray:
@@ -1236,16 +1417,30 @@ def _sigmoid(x: np.ndarray) -> np.ndarray:
     return 1.0 / (1.0 + np.exp(-np.clip(x, -60, 60)))
 
 
-def find_prediction_file(run_dir: str) -> Optional[str]:
-    """The one prediction file in a run dir, found by CONTENT, not by name."""
+def find_prediction_file(run_dir: str, arm: Optional[str] = None
+                         ) -> Tuple[List[str], List[int]]:
+    """Locate one model's prediction file(s) by CONTENT, not by name.
+
+    Returns ``(paths, seeds)``. A ``<arm>_s<seed>.npz`` family returns one path
+    per seed; anything else returns a single path and an empty seed list.
+    """
+    files = sorted(os.listdir(run_dir)) if os.path.isdir(run_dir) else []
+    fams = group_seed_families(files)
+    if arm and arm in fams:
+        return ([os.path.join(run_dir, f) for _s, f in fams[arm]],
+                [s for s, _f in fams[arm]])
+    if len(fams) == 1 and arm is None:
+        only = next(iter(fams.values()))
+        return ([os.path.join(run_dir, f) for _s, f in only],
+                [s for s, _f in only])
     for cand in PRED_FILE_HINTS:
         p = os.path.join(run_dir, cand)
         if os.path.exists(p):
-            return p
+            return [p], []
     hits = []
-    for f in sorted(os.listdir(run_dir)) if os.path.isdir(run_dir) else []:
+    for f in files:
         p = os.path.join(run_dir, f)
-        if os.path.isfile(p) and f.endswith(".npz"):
+        if os.path.isfile(p) and f.endswith(".npz") and not SEED_FILE_RE.match(f):
             probe = probe_prediction_file(p)
             if probe.get("score_fields") and probe.get("has_y_true"):
                 hits.append(p)
@@ -1253,12 +1448,13 @@ def find_prediction_file(run_dir: str) -> Optional[str]:
         raise Q5AError(f"{run_dir} holds {len(hits)} prediction files "
                        f"{[os.path.basename(h) for h in hits]} — ambiguous, "
                        "name the one to use explicitly")
-    return hits[0] if hits else None
+    return (hits[:1], [])
 
 
 def load_model_predictions(run_dir: str, label: str,
                            score_field: Optional[str] = None,
                            source_index: Optional[Dict[str, np.ndarray]] = None,
+                           arm: Optional[str] = None,
                            log: Optional[RunLog] = None) -> ModelPredictions:
     """Read one stored prediction bundle read-only, with a stable key.
 
@@ -1273,10 +1469,11 @@ def load_model_predictions(run_dir: str, label: str,
     Nothing is recomputed and nothing is written.
     """
     log = log or RunLog()
-    pred_path = find_prediction_file(run_dir)
-    if pred_path is None:
+    paths, seeds = find_prediction_file(run_dir, arm=arm)
+    if not paths:
         raise Q5AError(f"no prediction file in {run_dir} — aggregate-only "
                        "artifact; retraining is forbidden")
+    pred_path = paths[0]
     probe = probe_prediction_file(pred_path)
     with np.load(pred_path, allow_pickle=True) as npz:
         files = list(npz.files)
@@ -1295,6 +1492,24 @@ def load_model_predictions(run_dir: str, label: str,
         rec = np.asarray(npz[rec_f]).astype(int)
         layout = detect_score_layout(raw, len(y_raw))
         score, per_seed = _score_vector(raw, layout)
+        if len(paths) > 1:
+            # A per-seed family: every file must agree on the cohort, then the
+            # S column of each seed is stacked. This is what restores seed
+            # variability and the historical mean-of-per-seed contract.
+            stack = []
+            for p in paths:
+                with np.load(p, allow_pickle=True) as zz:
+                    if not np.array_equal(np.asarray(zz[rec_f]).astype(int), rec) \
+                            or not np.array_equal(
+                                np.asarray(zz[y_field]).astype(int), y_raw):
+                        raise Q5AError(
+                            f"{os.path.basename(p)} does not share the cohort of "
+                            f"{os.path.basename(pred_path)} (record/label differ)"
+                            " — the seed family is not internally consistent")
+                    s_i, _ = _score_vector(np.asarray(zz[sf], float), layout)
+                    stack.append(s_i)
+            per_seed = np.stack(stack)
+            score = per_seed.mean(axis=0)
         has_index = probe.get("beat_key_mode") == KEY_MODE_ANNOTATION
         if has_index:
             fields = {f: np.asarray(npz[f]) for f in files
@@ -1325,6 +1540,19 @@ def load_model_predictions(run_dir: str, label: str,
                     "the frozen source has no annotation sample index (`t`), "
                     "so no stable beat key can be derived — aggregate only")
             rows = verification["rows"]
+            pred_rows = np.asarray(verification["pred_rows"], int)
+            artifact_full = {
+                "score": score.copy(), "record": rec.copy(),
+                "y": (y_raw == S_INDEX) if y_raw.max() > 1 else y_raw.astype(bool),
+                "per_seed": None if per_seed is None else per_seed.copy(),
+                "n": int(len(score)),
+                "records": sorted(set(int(r) for r in rec.tolist()))}
+            # keep only the rows the verification actually covers
+            rec = rec[pred_rows]
+            y_raw = y_raw[pred_rows]
+            score = score[pred_rows]
+            if per_seed is not None:
+                per_seed = per_seed[:, pred_rows]
             samples = np.asarray(source_index["sample"])[rows]
             syms = (np.asarray(source_index["sym"])[rows]
                     if source_index.get("sym") is not None
@@ -1336,7 +1564,10 @@ def load_model_predictions(run_dir: str, label: str,
             key_mode = KEY_MODE_SOURCE_VERIFIED
             log(f"{label}: row correspondence VERIFIED against the frozen "
                 f"source ({verification['subset']}, {verification['n']} rows, "
-                "record ids and labels equal on every row)")
+                "record ids and labels equal on every row"
+                + (f"; {len(verification['excluded_records'])} record(s) "
+                   "excluded" if verification.get("excluded_records") else "")
+                + ")")
     y = y_raw == S_INDEX if y_raw.max() > 1 else y_raw.astype(bool)
     kind = "probability"
     if "logit" in sf.lower():
@@ -1349,12 +1580,15 @@ def load_model_predictions(run_dir: str, label: str,
             f"{sf} is named like a probability but ranges "
             f"[{np.nanmin(score):.3f},{np.nanmax(score):.3f}] — refuse to "
             "guess the scale; fix the artifact adapter")
-    log(f"{label}: {len(score)} scores from {os.path.basename(pred_path)} "
-        f"({kind}, layout {layout['kind']}, key mode {key_mode})")
+    log(f"{label}: {len(score)} scores from {len(paths)} file(s) "
+        f"(e.g. {os.path.basename(pred_path)}; {kind}, layout "
+        f"{layout['kind']}, {len(seeds) or 1} seed(s), key mode {key_mode})")
     return ModelPredictions(
         label=label, key=keys, score=score, y_true=y, record=rec,
         score_kind=kind, per_seed=per_seed, source_dir=run_dir,
-        fingerprint={os.path.basename(pred_path): sha256_file(pred_path)},
+        seeds=[int(s) for s in seeds],
+        artifact_full=locals().get("artifact_full", {}),
+        fingerprint={os.path.basename(p): sha256_file(p) for p in paths},
         key_mode=key_mode,
         verification={k: v for k, v in verification.items() if k != "rows"})
 
@@ -1655,16 +1889,25 @@ def model_metrics(model: ModelPredictions, cohort: AtlasCohort,
     tm = threshold_metrics(y, score, thr["threshold"])
     cal = brier_and_calibration(y, score)
     seed_var = None
+    per_seed_micro = None
     if model.per_seed is not None and len(model.per_seed) > 1:
-        seed_vals = []
+        seed_vals, micro_vals = [], []
         for s_i in range(len(model.per_seed)):
             pr = per_record_prauc(y, model.per_seed[s_i], rec, ds2)
             seed_vals.append(float(np.mean(list(pr.values()))))
-        seed_var = {"by_seed": seed_vals, "std": float(np.std(seed_vals)),
-                    "n_seed": int(len(seed_vals))}
+            micro_vals.append(beat_micro_prauc(y, model.per_seed[s_i]))
+        seed_var = {"by_seed_record_macro": seed_vals,
+                    "by_seed_beat_micro": micro_vals,
+                    "std_record_macro": float(np.std(seed_vals)),
+                    "std_beat_micro": float(np.std(micro_vals, ddof=1)),
+                    "seeds": list(model.seeds), "n_seed": int(len(seed_vals))}
+        # The historical contract behind 0.660 / 0.597: the MEAN OF PER-SEED
+        # beat-micro S PR-AUC — not the PR-AUC of the averaged probability.
+        per_seed_micro = float(np.mean(micro_vals))
     return {
         "model": model.label,
         "beat_micro_s_prauc": beat_micro_prauc(y, score),
+        "per_seed_mean_s_prauc": per_seed_micro,
         "record_macro_s_prauc": float(np.mean(list(per_rec.values()))),
         "record_macro_ci": boot_ci(per_rec, n_boot=n_boot),
         "per_record_s_prauc": {str(k): v for k, v in per_rec.items()},
@@ -1679,9 +1922,49 @@ def model_metrics(model: ModelPredictions, cohort: AtlasCohort,
     }
 
 
+def artifact_native_metrics(model: ModelPredictions) -> Dict[str, object]:
+    """Metrics on the artifact's OWN cohort, before any trimming.
+
+    A historical claim was computed on the cohort the run itself produced. If
+    the atlas can only join a subset of records, trimming first would compare
+    the claim against a different population and call it "not reproduced" for
+    a reason that has nothing to do with the claim.
+    """
+    a = model.artifact_full
+    if not a:
+        return {"available": False,
+                "reason": "the artifact carried its own annotation key; "
+                          "no untrimmed copy was needed"}
+    y = np.asarray(a["y"], bool)
+    rec = np.asarray(a["record"], int)
+    recs = [int(r) for r in a["records"]]
+    out: Dict[str, object] = {
+        "available": True, "n_beat": int(a["n"]), "n_record": len(recs),
+        "n_s": int(y.sum()), "records": recs,
+        "beat_micro_s_prauc": beat_micro_prauc(y, np.asarray(a["score"], float)),
+    }
+    per_rec = per_record_prauc(y, np.asarray(a["score"], float), rec, recs)
+    out["record_macro_s_prauc"] = (float(np.mean(list(per_rec.values())))
+                                   if per_rec else None)
+    ps = a.get("per_seed")
+    if ps is not None and len(ps) > 1:
+        vals = [beat_micro_prauc(y, np.asarray(ps[i], float))
+                for i in range(len(ps))]
+        out["per_seed_beat_micro"] = [float(v) for v in vals]
+        out["per_seed_mean_s_prauc"] = float(np.mean(vals))
+        out["per_seed_sd"] = float(np.std(vals, ddof=1))
+    return out
+
+
 def baseline_claim_check(metrics: Dict[str, Dict[str, object]],
-                         freeze: Dict[str, object]) -> List[Dict[str, object]]:
-    """Compare the recorded 0.597 / 0.660 claims with the recomputed numbers."""
+                         freeze: Dict[str, object],
+                         native: Optional[Dict[str, Dict[str, object]]] = None
+                         ) -> List[Dict[str, object]]:
+    """Compare the recorded 0.597 / 0.660 claims with the recomputed numbers.
+
+    Uses the artifact's own cohort when one is available (``native``), so the
+    comparison is like-for-like with how the claim was originally computed.
+    """
     rows = []
     for label, sel in freeze.get("selected", {}).items():
         m = metrics.get(label)
@@ -1702,14 +1985,24 @@ def baseline_claim_check(metrics: Dict[str, Dict[str, object]],
                          "recomputed_record_macro": None,
                          "verdict": "NOT_RECOMPUTED (no beat-level artifact)"})
             continue
-        micro = m["beat_micro_s_prauc"]
-        macro = m["record_macro_s_prauc"]
-        best, unit = min(((abs(micro - claim), "beat_micro"),
-                          (abs(macro - claim), "record_macro")))\
-            if claim is not None else (None, None)
+        nat = (native or {}).get(label) or {}
+        use_native = bool(nat.get("available"))
+        src = nat if use_native else m
+        micro = src.get("beat_micro_s_prauc")
+        macro = src.get("record_macro_s_prauc")
+        pseed = src.get("per_seed_mean_s_prauc")
+        cands = [(abs(micro - claim), "beat_micro"),
+                 (abs(macro - claim), "record_macro")]
+        if pseed is not None:
+            cands.append((abs(pseed - claim), "per_seed_mean_beat_micro"))
+        best, unit = min(cands)
         rows.append({
             "model": label, "recorded_claim": claim,
             "recomputed_beat_micro": micro, "recomputed_record_macro": macro,
+            "recomputed_per_seed_mean": pseed,
+            "cohort": ("artifact-native (all its own records)" if use_native
+                       else "analysis cohort"),
+            "n_beat": src.get("n_beat"), "n_record": src.get("n_record"),
             "closest_unit": unit, "abs_gap": best,
             "verdict": ("consistent with the recorded claim under the "
                         f"{unit} definition" if best is not None and best <= 0.02
@@ -2323,12 +2616,23 @@ def patient_heterogeneity(metrics: Dict[str, Dict[str, object]]
         spreads[lab] = float(np.percentile(vals, 90) - np.percentile(vals, 10))
         q = np.percentile(vals, 25)
         worst[lab] = {r for r, v in pr.items() if v <= q}
-    overlap = None
-    if len(labels) >= 2:
-        a, b = worst[labels[0]], worst[labels[1]]
-        overlap = float(len(a & b) / max(1, len(a | b)))
+    # "persists across models" must hold for EVERY pair, not for whichever two
+    # labels happen to sort first — a model and its own paired control differ
+    # by one feature block and would agree almost by construction.
+    pairs: Dict[str, float] = {}
+    for i, a in enumerate(labels):
+        for b in labels[i + 1:]:
+            sa, sb = worst[a], worst[b]
+            pairs[f"{a}|{b}"] = float(len(sa & sb) / max(1, len(sa | sb)))
+    overlap = min(pairs.values()) if pairs else None
     return {"available": True, "p90_minus_p10": spreads,
+            "worst_quartile_overlap_by_pair": pairs,
             "worst_quartile_overlap": overlap,
+            "overlap_rule": ("minimum over ALL model pairs; a pair that shares "
+                             "everything but one feature block cannot carry "
+                             "this on its own"),
+            "worst_quartile_by_model": {k: sorted(int(r) for r in v)
+                                        for k, v in worst.items()},
             "heterogeneity_large": bool(max(spreads.values())
                                         >= PATIENT_HETEROGENEITY_MIN),
             "failure_persists_across_models": bool(
@@ -2956,12 +3260,29 @@ def _write_summary(out_dir: str, result: Dict[str, object],
              "secondary로 v1 이진 outcome도 함께 기록",
              f"- 확인된 것: {len(metrics)}개 모델의 지표를 동일 코드로 재계산",
              ]
+    native = result.get("artifact_native_metrics", {})
     for lab, m in metrics.items():
         ps = m.get("patient_summary", {})
         lines.append(
-            f"  - {lab}: beat-micro {m.get('beat_micro_s_prauc'):.4f} · "
-            f"record-macro {m.get('record_macro_s_prauc'):.4f} · "
-            f"p10 {ps.get('p10', float('nan')):.4f}")
+            f"  - {lab}: [분석 cohort] beat-micro "
+            f"{m.get('beat_micro_s_prauc'):.4f} · record-macro "
+            f"{m.get('record_macro_s_prauc'):.4f} · p10 "
+            f"{ps.get('p10', float('nan')):.4f}")
+        nat = native.get(lab) or {}
+        if nat.get("available"):
+            ms = nat.get("per_seed_mean_s_prauc")
+            lines.append(
+                f"      [artifact 자체 cohort · {nat['n_record']} record · "
+                f"{nat['n_beat']} beat] beat-micro "
+                f"{nat['beat_micro_s_prauc']:.4f}"
+                + (f" · 시드별 평균 {ms:.4f}" if ms is not None else "")
+                + "  <- 기록된 주장과 비교하는 값")
+    for row in result.get("baseline_claim_check", []):
+        if row.get("recorded_claim") is not None:
+            lines.append(
+                f"  - claim {row['model']} {row['recorded_claim']}: "
+                f"{row['verdict']} (단위 {row.get('closest_unit')}, "
+                f"cohort {row.get('cohort')})")
     lines += [
         "- 확인되지 않은 것: P-wave ground truth(없음), 인과관계, DS2 밖의 일반화",
         "- 이 결과는 **원인이 아니라 '실패 연관 요인'** 이다. 관찰적 사후 분석이며,",
@@ -3021,7 +3342,8 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
                 y_true=cohort.y_s.copy(), record=cohort.record.copy(),
                 score_kind=m.score_kind, per_seed=per_seed_full,
                 source_dir=m.source_dir, fingerprint=m.fingerprint,
-                key_mode=m.key_mode, verification=m.verification)
+                key_mode=m.key_mode, verification=m.verification,
+                seeds=m.seeds, artifact_full=m.artifact_full)
     matching = {"pass": all(a["pass"] for a in matches.values()) and bool(matches),
                 "fail_reasons": [r for a in matches.values()
                                  for r in a["fail_reasons"]],
@@ -3057,7 +3379,8 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
             score_kind=m.score_kind,
             per_seed=None if m.per_seed is None else m.per_seed[:, sel],
             source_dir=m.source_dir, fingerprint=m.fingerprint,
-            key_mode=m.key_mode, verification=m.verification)
+            key_mode=m.key_mode, verification=m.verification, seeds=m.seeds,
+            artifact_full=m.artifact_full)
 
     ds1_rows_all = cohort.rows_of(split["ds1"])
     ds1_prev = (float(cohort.y_s[ds1_rows_all].mean()) if len(ds1_rows_all)
@@ -3065,6 +3388,7 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
     metrics = {lab: model_metrics(m, cohort, split, rows, n_boot=n_boot,
                                   ds1_prevalence=ds1_prev)
                for lab, m in aligned.items()}
+    native = {lab: artifact_native_metrics(m) for lab, m in aligned.items()}
     labels = sorted(aligned)
     ref = labels[-1]
     thr = metrics[ref]["threshold"]["threshold"]
@@ -3153,12 +3477,16 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
                    "fs": cohort.fs},
         "split": {"ds1": [int(r) for r in split["ds1"]],
                   "ds2": [int(r) for r in split["ds2"]],
+                  "ds2_analysis": [int(r) for r in split.get("ds2_analysis", [])],
+                  "ds2_excluded": [int(r) for r in split.get("ds2_excluded", [])],
                   "overlap": [], "note": split["note"]},
         "baseline_freeze": freeze, "gates": gates,
         "matching": {lab: {k: v for k, v in a.items() if k != "per_record"}
                      for lab, a in matches.items()},
         "model_metrics": metrics,
-        "baseline_claim_check": baseline_claim_check(metrics, freeze),
+        "artifact_native_metrics": native,
+        "baseline_claim_check": baseline_claim_check(metrics, freeze,
+                                                     native),
         "subtype_metrics": sub_tab,
         "calibration_vs_ranking": cal_rank,
         "model_disagreement": disagree,
@@ -3481,7 +3809,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                     "beat-level comparison (spec §5)")
                 continue
             models[label] = load_model_predictions(
-                sel["run_dir"], label, source_index=source_index, log=log)
+                sel["run_dir"], label, source_index=source_index,
+                arm=sel.get("model_name"), log=log)
         if not models:
             gates = evaluate_artifact_gates(inv, freeze, None)
             gates["pass"] = False

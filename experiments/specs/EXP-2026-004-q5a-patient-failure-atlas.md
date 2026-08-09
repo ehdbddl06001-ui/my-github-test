@@ -385,6 +385,130 @@ full training 실행.
 
 ## Decision log
 
+### 2026-08-09 — V9/V10 원 산출물 회수: 0.660·0.597 검증 완료 (deviation 기록 3)
+
+사용자가 로컬에 보관 중이던 원 실행 패키지(`v9_results.zip`, `v10_results.zip`,
+`v10.zip`, `S_PRAUC_0660_provenance.md`)를 제출했다. **arm × seed 확률 npz가
+전부 보존돼 있었고, 재학습 없이 기록된 숫자를 전량 재현했다.**
+
+| 패키지 | arm | 재계산(5시드 평균) | 기록 |
+|---|---|---|---|
+| V9 | v8_noc | 0.4258 | 0.426 |
+| V9 | v8base | 0.5762 | 0.576 |
+| V9 | kink_noproto | 0.4595 | 0.460 |
+| V9 | **kink_noctx** | **0.5969 ± 0.0411** | **0.597 ± 0.041** |
+| V9 | kink | 0.5341 | 0.534 |
+| V10 | v8base | 0.5984 | 0.598 |
+| V10 | base | 0.5732 | 0.573 |
+| V10 | **pwave** | **0.6603** | **0.660** |
+| V10 | pwave_noc | 0.5619 | 0.562 |
+| V10 | full | 0.6541 | 0.654 |
+
+확정된 사실 넷:
+
+1. **0.660의 집계 단위는 "시드별 S PR-AUC의 평균"** 이다. 같은 확률을 시드
+   앙상블한 뒤 PR-AUC를 재면 0.7717이 나온다 — 인용 시 단위를 반드시 명시해야
+   한다. 이에 따라 `per_seed_mean_s_prauc`를 정식 metric 단위로 추가하고
+   claim check가 beat-micro/record-macro와 함께 비교한다.
+2. **`ablation_step9d/pwave`는 V10이 아니었다.** 또 다른 이름 충돌이며(앞선
+   `exp2_pwave`와 같은 함정), 1차 ANALYZE가 동결한 것은 이 별개 계보였다.
+   따라서 "저장 산출물에서 P파가 이득을 주지 않는다"는 1차 관찰은 **철회**한다 —
+   진짜 V10에서는 `base 0.573 → pwave 0.660`(Δ+0.087, 5/5 시드)이다.
+3. **V9는 존재한다 — `ARTIFACT_ABSENT` 판정 철회.** `kink_noctx`가 V9의 최고
+   arm이고 0.597이 검증됐다. Drive에 없었을 뿐 로컬에 보관돼 있었다(앞선 한계
+   기술 "다른 이름/로컬 보관 가능성"이 실제였다).
+4. **V9와 V10의 DS2가 동일**하다(49,289박, N/S/V 44,232/1,837/3,220). 그리고
+   atlas cohort와 **19/22 record가 (n, S, V)까지 정확히 일치**하며, 나머지 3개는
+   N beat만 다르다(105 −1, 111 −1, 222 −4). S는 22개 record 전부 일치.
+
+baseline 재동결(이후 run부터): primary **V10 = `pwave`** / **V9 = `kink_noctx`**,
+짝 대조군은 **각자의 같은 패키지 안** `base` · `v8base`. `v8base`는 두 패키지에
+모두 존재하므로 control은 **primary와 같은 디렉터리**로만 범위를 좁힌다(성능이
+아니라 provenance 규칙). 이에 맞춘 코드 확장:
+
+- **per-seed family**: `<arm>_s<seed>.npz` 묶음을 한 모델로 인식해 시드 축을
+  복원한다. seed 파일 하나라도 cohort(record/label)가 다르면 STOP. 이로써
+  그동안 "산출 불가"로 기록해온 **seed variability가 살아난다**.
+- **행 대응 검증을 record 단위로 확장**: 전체 부분집합이 맞지 않아도, record별로
+  beat 수와 **전체 label 벡터가 일치하면** 그 record만 검증 성립으로 인정하고,
+  맞지 않는 record는 사유와 함께 **제외**한다(재정렬·보정 금지).
+
+`ablation_step9d/*`는 별개 계보로 남기며 baseline에서 제외한다.
+
+### 2026-08-09 — claim 검증은 artifact 자체 cohort에서, D4 지속성은 전 쌍 최소값으로 (deviation 기록 6)
+
+첫 4-baseline `ANALYZE`(run `20260809T1009`, `MEASURED`, 판정 D4)에서 두 가지
+결함이 드러났다.
+
+**(1) 기록된 주장을 잘린 cohort와 비교하고 있었다.** 패키지와 mamba의 전처리가
+record 105·111·222에서 N beat 몇 개(−1/−1/−4)만큼 달라 그 세 record가 통째로
+제외됐는데, **222 하나에 S beat 209개(DS2 S의 11%)가 들어 있다.** 그 결과
+V10의 beat-micro가 0.8651로 나왔다 — 기록된 0.660과 애초에 **다른 모집단**이다.
+이대로면 claim check가 "재현 실패"로 찍히지만, 그건 주장이 틀려서가 아니라
+cohort를 잘랐기 때문이다.
+
+수정: **artifact 자체 cohort(자기 22 record 전량)에서 계산한 지표**를 따로 남기고
+(`artifact_native_metrics`), **기록된 주장은 그 값과 비교**한다. feature 결합이
+필요한 실패 지도만 검증된 19 record에서 계산한다. 두 수치를 같은 번들에 병기하고,
+claim check 행에 어느 cohort인지(`cohort`, `n_beat`, `n_record`)를 적는다.
+
+**(2) D4의 "모델 간 실패 환자 지속" 검사가 가장 약한 쌍만 봤다.** 라벨을 정렬해
+앞의 둘만 비교했는데 그게 V10과 **자기 짝 대조군** V10_BASE였다 — P파 브랜치
+하나만 다른 near-twin이라 거의 구조적으로 일치한다. 수정: **모든 모델 쌍의
+겹침을 계산하고 그 최솟값**을 기준으로 삼는다(쌍별 값과 모델별 최악 사분위
+명단도 함께 기록). 사전등록 임계값 0.50은 그대로다. 회귀 테스트로 near-twin 쌍이
+단독으로 D4를 발화시키지 못함을 고정했다.
+
+이 수정 전의 run `20260809T1009`의 D4 판정은 **(2) 때문에 재검토 대상**이다 —
+수정된 규칙으로 다시 측정해야 확정된다.
+
+### 2026-08-09 — 진짜 이름 충돌은 기록된 seed 계획으로 가른다 (deviation 기록 5)
+
+병합·정확이름 수정 뒤에도 V10이 `AMBIGUOUS_BASELINE`으로 남았다. `ablation_step9d`
+의 tag 폴더 이름이 **정확히 `pwave`** 라서, 패키지의 `pwave` arm과 이름만으로는
+구분되지 않는다(내용이 다르므로 병합도 되지 않는다 — 올바른 동작이다).
+
+성능으로 고르는 것은 금지이므로 **기록된 provenance**로 가른다. 역사 기록
+(`v9_ECG.ipynb` / `v10_ECG.ipynb`의 `run(..., seeds=[1000..1004])`, 그리고
+provenance 문서의 "5 arm × 5 시드, 확률 원값 npz 저장")은 **저장된 seed 계획이
+1000–1004이고 시드별 파일이 남아 있어야 한다**고 말한다. 이를 target의
+`require: {"seeds": [...]}` 로 명시하고, 후보가 둘 이상일 때만 적용한다.
+
+- 이것은 **성능을 보지 않는다**. seed 계획은 실행 전에 기록된 사실이다.
+- `require`를 제거하면 같은 입력에서 다시 `AMBIGUOUS_BASELINE`으로 STOP한다는
+  회귀 테스트를 두어, 이 narrowing이 취향이 아니라 기록된 근거임을 고정했다.
+- `ablation_step9d/pwave`(단일 `ens.npz`, seed 미보존)는 이 요건을 만족하지 않아
+  자동으로 탈락한다.
+
+아울러 병합 내역을 `reasons`에서 분리해 `collapsed_duplicates`로 옮겼다 — 사람이
+읽는 STOP 메시지에는 실제 blocker만 남아야 한다.
+
+### 2026-08-09 — 후보 매칭 정밀화: 정확 이름 우선 + 동일 산출물 병합 (deviation 기록 4)
+
+패키지를 올린 뒤 첫 `INVENTORY`가 `AMBIGUOUS_BASELINE`으로 STOP했다(실측:
+V10 후보 7개, V10_BASE 후보 22개). 원인 둘 다 **가짜 모호성**이었다.
+
+1. **같은 패키지가 두 경로에 존재** — 직접 올린 `mitbih/v10pkg_results`와
+   notebook이 푼 `mitbih/baseline_pkgs/v10pkg_results`. 같은 artifact인데 후보가
+   둘로 세어졌다.
+2. **토큰이 부분 문자열로 매칭** — `base`가 `base26`·`base_lf`·`base_clean`·
+   `v8base`·`cnn_base`·`baseline_pkgs`까지, `pwave`가 `pwave_noc`까지 끌어왔다.
+
+수정(사전등록 규칙 자체는 불변 — 여전히 성능으로 고르지 않는다):
+
+- **정확한 model name 우선**: 토큰과 정확히 일치하는 후보가 있으면 그것만 쓰고,
+  없을 때만 부분 문자열로 넓힌다.
+- **동일 산출물 병합**: (model name, 파일명, 행 수)가 같으면 후보로 세기 전에
+  **SHA256로 내용 동일성을 확인**하고 병합한다(해시는 충돌 시에만 계산). 이름과
+  모양이 같아도 **바이트가 다르면 병합하지 않는다** — 그건 진짜 경쟁 후보이므로
+  모호성 gate가 그대로 STOP한다. 병합 내역은 `reasons`에 남는다.
+- notebook은 패키지가 이미 풀려 있으면 **두 번째 사본을 만들지 않고** 기존 경로를
+  쓰며, 사본이 여러 곳에 있으면 경고를 출력한다.
+
+같은 실측에서 `BLOCKED_MEASURED` 결과에는 `split` 키가 없어 notebook 출력 셀이
+`KeyError`로 죽었다. 결과에 `ds2_analysis`·`ds2_excluded`를 담고, notebook은
+`.get()`으로 읽으며 STOP 사유를 함께 출력하도록 고쳤다.
+
 ### 2026-08-09 — 첫 ANALYZE 실측 후 primary outcome 개정 (deviation 기록 2)
 
 첫 `ANALYZE`(run `20260809T0808…`, `MEASURED`, 판정 `UNRESOLVED`)에서 §10의

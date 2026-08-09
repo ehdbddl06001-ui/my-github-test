@@ -49,20 +49,24 @@ def expect_raise(fn, label: str, exc=Exception) -> None:
 
 def _fixture(tmp: str, n_per: int = 60, seed: int = 5,
              skill_control: float = 2.0, skill_primary: float = 4.0,
-             with_v9: bool = False):
-    """Cohort + discoverable fixture runs: V10 `pwave` and its `base26` pair."""
+             with_v9: bool = True):
+    """Cohort + the four frozen baselines: V10 `pwave` / `base` and
+    V9 `kink_noctx` / `v8base`, each with its own paired control."""
     cohort = QA.synthetic_atlas(n_per_record=n_per, seed=seed)
-    ctrl = QA.synthetic_model(cohort, "BASE26", skill=skill_control, seed=3)
+    ctrl = QA.synthetic_model(cohort, "V10_BASE", skill=skill_control, seed=3)
     prim = QA.synthetic_model(cohort, "V10", skill=skill_primary, seed=4)
     runs = os.path.join(tmp, "runs")
-    QA.write_synthetic_run(os.path.join(runs, "20260102T0000_base26"),
-                           "base26", cohort, ctrl, s_prauc=0.51)
+    QA.write_synthetic_run(os.path.join(runs, "20260102T0000_base"),
+                           "base", cohort, ctrl, s_prauc=0.573)
     QA.write_synthetic_run(os.path.join(runs, "20260102T0100_pwave"),
                            "pwave", cohort, prim, s_prauc=0.660)
     if with_v9:
         v9 = QA.synthetic_model(cohort, "V9", skill=1.0, seed=6)
+        v9b = QA.synthetic_model(cohort, "V9_BASE", skill=0.8, seed=7)
         QA.write_synthetic_run(os.path.join(runs, "20260101T0000_kink_noctx"),
                                "kink_noctx", cohort, v9, s_prauc=0.597)
+        QA.write_synthetic_run(os.path.join(runs, "20260101T0100_v8base"),
+                               "v8base", cohort, v9b, s_prauc=0.576)
     inv = QA.scan_inventory([runs], log=Q4O.RunLog(echo=False))
     freeze = QA.freeze_baseline(inv)
     models = {lab: QA.load_model_predictions(sel["run_dir"], lab,
@@ -274,16 +278,19 @@ def test_inventory_and_freeze():
     print("inventory + baseline freeze (provenance only)")
     tmp = tempfile.mkdtemp(prefix="q5a_inv_")
     try:
-        _c, inv, freeze, _m, runs = _fixture(tmp, n_per=20, with_v9=True)
-        check(inv["n_candidates"] == 3, "all fixture runs inventoried")
+        _c, inv, freeze, _m, runs = _fixture(tmp, n_per=20)
+        check(inv["n_candidates"] == 4, "all fixture runs inventoried")
         check(all(e["beat_level_ready"] for e in inv["entries"]),
               "prediction probe finds scores + y_true + a stable key")
         check(freeze["status"] == "FROZEN", "clean fixture freezes cleanly")
-        check(set(freeze["beat_level_models"]) == {"V9", "V10", "BASE26"},
-              "primary, paired control and the historical baseline all enter")
+        check(set(freeze["beat_level_models"])
+              == {"V9", "V9_BASE", "V10", "V10_BASE"},
+              "both primaries and both paired controls enter")
         check(freeze["selected"]["V10"]["role"] == QA.ROLE_PRIMARY
-              and freeze["selected"]["BASE26"]["role"] == QA.ROLE_CONTROL,
+              and freeze["selected"]["V10_BASE"]["role"] == QA.ROLE_CONTROL,
               "roles are recorded on the frozen selection")
+        check(freeze["selected"]["V10_BASE"]["model_name"] == "base",
+              "the 'base' control is not confused with 'v8base'")
 
         # selection must not depend on the recorded performance number
         swapped = json.loads(json.dumps(inv))
@@ -298,21 +305,40 @@ def test_inventory_and_freeze():
         def _entry(d, name):
             return next(e for e in d["entries"] if e["model_name"] == name)
 
-        dup = json.loads(json.dumps(inv))
-        clone = json.loads(json.dumps(_entry(dup, "pwave")))
-        clone["run_id"] = "20260103T0000_v10_pwave_rerun"
-        dup["entries"].append(clone)          # same model name, second run
+        # a genuinely different run that carries the same model name, kept in
+        # its own root so it cannot leak into the later checks
+        amb = os.path.join(tmp, "amb")
+        other = QA.synthetic_model(_c, "V10b", skill=3.3, seed=99)
+        QA.write_synthetic_run(os.path.join(amb, "20260103T0000_pwave_rerun"),
+                               "pwave", _c, other, s_prauc=0.61)
+        dup = QA.scan_inventory([runs, amb], log=Q4O.RunLog(echo=False))
         fa = QA.freeze_baseline(dup)
         check(fa["status"] == "AMBIGUOUS_BASELINE",
               "two runs with the same model name -> AMBIGUOUS_BASELINE (STOP)")
+        check("pwave" in " ".join(fa["reasons"]),
+              "the ambiguous target is named in the reason")
         near = json.loads(json.dumps(inv))
         variant = json.loads(json.dumps(_entry(near, "pwave")))
         variant["run_id"] = "20260103T0000_v10_pwave_v2"
-        variant["model_name"] = "pwave_v2"
+        variant["model_name"] = "pwave_noc"
         near["entries"].append(variant)
         fn_ = QA.freeze_baseline(near)
         check(fn_["selected"]["V10"]["model_name"] == "pwave",
-              "an exact historical name beats a near-miss variant")
+              "an exact name beats a longer name containing the token "
+              "(pwave vs pwave_noc)")
+
+        # the same package reachable by two paths is ONE artifact, not two
+        import shutil as _sh
+        _sh.copytree(os.path.join(runs, "20260102T0100_pwave"),
+                     os.path.join(tmp, "copy", "20260102T0100_pwave"))
+        both = QA.scan_inventory([runs, os.path.join(tmp, "copy")],
+                                 log=Q4O.RunLog(echo=False))
+        fb = QA.freeze_baseline(both)
+        check(fb["status"] == "FROZEN" and fb["collapsed_duplicates"],
+              "a package unzipped twice collapses to one candidate, recorded")
+        check(not any("duplicate" in r for r in fb["reasons"]),
+              "the collapse note stays out of `reasons` so a STOP message "
+              "shows only real blockers")
         g = QA.evaluate_artifact_gates(dup, fa, None)
         check(not g["pass"] and g["branch"] == QA.BRANCH_INSUFFICIENT,
               "ambiguous baseline blocks the analysis at D0")
@@ -347,28 +373,28 @@ def test_absent_historical_baseline():
     tmp = tempfile.mkdtemp(prefix="q5a_absent_")
     try:
         _c, inv, freeze, _m, _runs = _fixture(tmp, n_per=20, with_v9=False)
-        check(freeze["status"] == "FROZEN_WITH_ABSENT_BASELINE",
-              "V9 absent -> FROZEN_WITH_ABSENT_BASELINE (not a hard stop)")
-        absent = {a["label"]: a for a in freeze["absent_baselines"]}
-        check("V9" in absent and absent["V9"]["status"] == "ARTIFACT_ABSENT",
-              "the missing baseline is recorded with its status")
-        check(absent["V9"]["recorded_s_prauc_claim"] == 0.597
-              and "UNVERIFIED" in absent["V9"]["consequence"],
-              "the 0.597 claim is carried and marked unverified")
-        check("does not retrain" in absent["V9"]["consequence"],
-              "absence never triggers retraining")
-        gates = QA.evaluate_artifact_gates(inv, freeze, None)
-        check(gates["pass"],
-              "the analysis proceeds on the artifacts that DO exist")
-
-        no_primary = json.loads(json.dumps(inv))
-        no_primary["entries"] = [e for e in no_primary["entries"]
-                                 if e["model_name"] != "pwave"]
-        fp = QA.freeze_baseline(no_primary)
-        check(fp["status"] == "MISSING_BASELINE",
-              "a missing PRIMARY baseline still stops the analysis")
-        check(not QA.evaluate_artifact_gates(no_primary, fp, None)["pass"],
+        check(freeze["status"] == "MISSING_BASELINE",
+              "a missing PRIMARY baseline (V9) stops the analysis")
+        check(not QA.evaluate_artifact_gates(inv, freeze, None)["pass"],
               "missing primary -> D0 gate STOP")
+
+        # a purely historical target that is absent must NOT block
+        tgt = {k: dict(v) for k, v in QA.BASELINE_TARGETS.items()}
+        tgt["GHOST"] = {"name_tokens": ("never_saved",),
+                        "role": QA.ROLE_HISTORICAL, "recorded_s_prauc": 0.5,
+                        "note": "fixture"}
+        full = _fixture(tmp + "2", n_per=20)[1]
+        fz = QA.freeze_baseline(full, targets=tgt)
+        check(fz["status"] == "FROZEN_WITH_ABSENT_BASELINE",
+              "an absent historical baseline is recorded, not a stop")
+        absent = {a["label"]: a for a in fz["absent_baselines"]}
+        check(absent["GHOST"]["status"] == "ARTIFACT_ABSENT"
+              and "UNVERIFIED" in absent["GHOST"]["consequence"],
+              "its claim is carried and marked unverified")
+        check("does not retrain" in absent["GHOST"]["consequence"],
+              "absence never triggers retraining")
+        check(QA.evaluate_artifact_gates(full, fz, None)["pass"],
+              "the analysis proceeds on the artifacts that DO exist")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -382,18 +408,20 @@ def test_legacy_adapter():
         split = QA.cohort_split(cohort)
         ds2_rows = np.sort(cohort.rows_of(split["ds2"]))
         prim = QA.synthetic_model(cohort, "V10", skill=4.0, seed=4)
-        ctrl = QA.synthetic_model(cohort, "BASE26", skill=2.0, seed=3)
+        ctrl = QA.synthetic_model(cohort, "V10_BASE", skill=2.0, seed=3)
         runs = os.path.join(tmp, "runs")
         step9d = os.path.join(runs, "ablation_step9d")
         _write_legacy_run(os.path.join(step9d, "pwave"), cohort, prim, ds2_rows)
-        _write_legacy_run(os.path.join(step9d, "base26"), cohort, ctrl, ds2_rows)
+        _write_legacy_run(os.path.join(step9d, "base"), cohort, ctrl, ds2_rows)
         # a same-named control in an UNRELATED run must not be able to collide
-        _write_legacy_run(os.path.join(runs, "ablation_step11", "base26"),
-                          cohort, ctrl, ds2_rows)
+        # (different content, so it is a real rival — not a duplicate path)
+        other = QA.synthetic_model(cohort, "OTHER", skill=1.1, seed=21)
+        _write_legacy_run(os.path.join(runs, "ablation_step11", "base"),
+                          cohort, other, ds2_rows)
 
         inv = QA.scan_inventory([runs], log=Q4O.RunLog(echo=False))
         names = sorted(e["model_name"] for e in inv["entries"])
-        check("pwave" in names and names.count("base26") == 2,
+        check("pwave" in names and names.count("base") == 2,
               "tag folders become their own inventory rows (ens.npz found "
               "by KEY, not by file name)")
         tag_row = next(e for e in inv["entries"] if e["model_name"] == "pwave")
@@ -403,11 +431,13 @@ def test_legacy_adapter():
         check(tag_row["beat_level_ready"] and tag_row["needs_source_verification"],
               "legacy rows count as beat-level ONLY through verification")
 
-        freeze = QA.freeze_baseline(inv)
-        check(freeze["status"] in ("FROZEN", "FROZEN_WITH_ABSENT_BASELINE"),
-              "two same-named base26 runs do not make the freeze ambiguous")
+        only_v10 = {k: v for k, v in QA.BASELINE_TARGETS.items()
+                    if k in ("V10", "V10_BASE")}
+        freeze = QA.freeze_baseline(inv, targets=only_v10)
+        check(freeze["status"] == "FROZEN",
+              "two same-named `base` runs do not make the freeze ambiguous")
         check(os.path.basename(os.path.dirname(
-            freeze["selected"]["BASE26"]["run_dir"])) == "ablation_step9d",
+            freeze["selected"]["V10_BASE"]["run_dir"])) == "ablation_step9d",
             "the paired control is scoped to the primary's own run")
 
         src_index = QA.load_frozen_source_index(src, log=Q4O.RunLog(echo=False))
@@ -436,9 +466,27 @@ def test_legacy_adapter():
             pid[5] = 999
             np.savez_compressed(os.path.join(bad_dir, "ens.npz"),
                                 prob=z["prob"], y=z["y"], pid=pid)
+        bad = QA.load_model_predictions(bad_dir, "V10",
+                                        source_index=src_index,
+                                        log=Q4O.RunLog(echo=False))
+        ex = bad.verification["excluded_records"]
+        bad_recs = {e["record"] for e in ex}
+        check(bad.verification["subset"] == "per_record"
+              and bad_recs == {100, 999},
+              "an altered record id excludes only the record it damaged (and "
+              "the phantom it invented); per-record verification keeps the rest")
+        check(len(bad.score) < len(ds2_rows) and ex[0]["reason"],
+              "the excluded record is dropped from the model and given a reason")
+
+        worse = os.path.join(tmp, "worse", "pwave")
+        os.makedirs(worse, exist_ok=True)
+        with np.load(os.path.join(step9d, "pwave", "ens.npz")) as z:
+            np.savez_compressed(os.path.join(worse, "ens.npz"),
+                                prob=z["prob"], y=1 - np.asarray(z["y"]),
+                                pid=z["pid"])
         expect_raise(lambda: QA.load_model_predictions(
-            bad_dir, "V10", source_index=src_index),
-            "one altered record id rejects the whole correspondence",
+            worse, "V10", source_index=src_index),
+            "if no record verifies, the artifact is rejected outright",
             QA.Q5AError)
 
         layout = QA.detect_score_layout(np.zeros((10, 3)), 10)
@@ -514,6 +562,162 @@ def test_float_time_column():
         audit = QA.match_beat_keys(c, mp, strict=False)
         check(audit["pass"] and audit["matched"] == len(rows),
               "the adapted legacy artifact matches the cohort exactly")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_patient_persistence_uses_every_pair():
+    print("D4's persistence check is the MINIMUM over all model pairs")
+    def mk(per_record):
+        return {"per_record_s_prauc": {str(k): v for k, v in per_record.items()}}
+    # A and B are near-twins (same worst quartile); C fails on other patients.
+    a = mk({1: 0.1, 2: 0.2, 3: 0.8, 4: 0.9, 5: 0.95, 6: 0.99, 7: 0.5, 8: 0.6})
+    b = mk({1: 0.12, 2: 0.22, 3: 0.82, 4: 0.9, 5: 0.95, 6: 0.99, 7: 0.5, 8: 0.6})
+    c = mk({1: 0.9, 2: 0.95, 3: 0.1, 4: 0.15, 5: 0.5, 6: 0.6, 7: 0.8, 8: 0.99})
+    twins = QA.patient_heterogeneity({"A": a, "B": b})
+    check(twins["failure_persists_across_models"],
+          "two near-twins do agree on their worst patients")
+    trio = QA.patient_heterogeneity({"A": a, "B": b, "C": c})
+    check(not trio["failure_persists_across_models"],
+          "adding a model that fails on OTHER patients breaks persistence — "
+          "the twin pair can no longer carry the claim alone")
+    check(len(trio["worst_quartile_overlap_by_pair"]) == 3
+          and trio["worst_quartile_overlap"]
+          == min(trio["worst_quartile_overlap_by_pair"].values()),
+          "every pair is reported and the minimum is the one that counts")
+    gates = {"pass": True, "stops": [], "branch": None}
+    blocks = {"blocks": {"B_RR": _ev(0.01, -0.02, 0.04, direction=0.4)}}
+    d = QA.evaluate_branch_decision(gates, blocks, ATRIAL_WEAK, trio)
+    check(d["branch"] == QA.BRANCH_UNRESOLVED,
+          "without persistence across every pair, D4 does not fire")
+
+
+def test_provenance_narrows_a_true_name_clash():
+    print("a real name clash is settled by the RECORDED seed plan, not by score")
+    tmp = tempfile.mkdtemp(prefix="q5a_clash_")
+    try:
+        cohort = QA.synthetic_atlas(n_per_record=20)
+        split = QA.cohort_split(cohort)
+        rows = np.sort(cohort.rows_of(split["ds2"]))
+        root = os.path.join(tmp, "runs")
+        pkg = os.path.join(root, "v10pkg_results")
+        os.makedirs(pkg)
+        for seed in range(1000, 1005):
+            m = QA.synthetic_model(cohort, "V10", skill=4.0, seed=seed)
+            prob = np.zeros((len(rows), 3))
+            prob[:, QA.S_COLUMN] = m.score[rows]
+            prob[:, 0] = 1.0 - m.score[rows]
+            np.savez_compressed(os.path.join(pkg, f"pwave_s{seed}.npz"),
+                                prob=prob, y=cohort.y5[rows].astype(int),
+                                pid=cohort.record[rows].astype(int))
+        # an unrelated run that happens to use the very same tag name
+        rival = QA.synthetic_model(cohort, "RIVAL", skill=1.0, seed=77)
+        _write_legacy_run(os.path.join(root, "ablation_step9d", "pwave"),
+                          cohort, rival, rows)
+        inv = QA.scan_inventory([root], log=Q4O.RunLog(echo=False))
+        names = [e["model_name"] for e in inv["entries"]]
+        check(names.count("pwave") == 2,
+              "both same-named candidates are inventoried")
+        fz = QA.freeze_baseline(inv)
+        check(fz["selected"]["V10"]["run_dir"] == pkg,
+              "the run whose SAVED SEED PLAN matches the record is chosen")
+        check(any("seed plan matches the record" in r for r in fz["reasons"]),
+              "the provenance rule that settled it is recorded")
+
+        # remove the recorded seed plan -> the clash is unresolved again
+        loose = {k: dict(v) for k, v in QA.BASELINE_TARGETS.items()}
+        for v in loose.values():
+            v.pop("require", None)
+        fl = QA.freeze_baseline(inv, targets=loose)
+        check(fl["status"] == "AMBIGUOUS_BASELINE",
+              "without the provenance requirement the clash still STOPs — the "
+              "narrowing is a recorded fact, not a preference")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_seed_family():
+    print("per-seed families (<arm>_s<seed>.npz) — one model, N seeds")
+    fams = QA.group_seed_families(["pwave_s1000.npz", "pwave_s1001.npz",
+                                   "base_s1000.npz", "base_s1001.npz",
+                                   "ens.npz", "notes.txt"])
+    check(set(fams) == {"pwave", "base"} and len(fams["pwave"]) == 2,
+          "files are grouped into one entry per arm")
+    check(QA.group_seed_families(["only_s1000.npz"]) == {},
+          f"a lone seed file is not a family (min {QA.SEED_FAMILY_MIN})")
+
+    tmp = tempfile.mkdtemp(prefix="q5a_fam_")
+    try:
+        cohort = QA.synthetic_atlas(n_per_record=40)
+        src = _write_frozen_source(os.path.join(tmp, "src.npz"), cohort)
+        split = QA.cohort_split(cohort)
+        rows = np.sort(cohort.rows_of(split["ds2"]))
+        run = os.path.join(tmp, "v10pkg_results")
+        os.makedirs(run)
+        per_seed = []
+        for i, seed in enumerate(range(1000, 1005)):
+            m = QA.synthetic_model(cohort, "V10", skill=3.0 + 0.2 * i,
+                                   seed=seed)
+            prob = np.zeros((len(rows), 3))
+            prob[:, QA.S_COLUMN] = m.score[rows]
+            prob[:, 0] = 1.0 - m.score[rows]
+            per_seed.append(m.score[rows])
+            np.savez_compressed(os.path.join(run, f"pwave_s{seed}.npz"),
+                                prob=prob, y=cohort.y5[rows].astype(int),
+                                pid=cohort.record[rows].astype(int))
+        paths, seeds = QA.find_prediction_file(run, arm="pwave")
+        check(len(paths) == 5 and seeds == [1000, 1001, 1002, 1003, 1004],
+              "the family is found with its seeds, not rejected as ambiguous")
+
+        inv = QA.scan_inventory([tmp], log=Q4O.RunLog(echo=False))
+        row = next((e for e in inv["entries"] if e["model_name"] == "pwave"),
+                   None)
+        check(row is not None and row["seed_family"]["n_seed"] == 5,
+              "inventory carries one row per arm with its seed count")
+
+        si = QA.load_frozen_source_index(src, log=Q4O.RunLog(echo=False))
+        m = QA.load_model_predictions(run, "V10", source_index=si,
+                                      arm="pwave", log=Q4O.RunLog(echo=False))
+        check(m.per_seed is not None and m.per_seed.shape[0] == 5
+              and m.seeds == [1000, 1001, 1002, 1003, 1004],
+              "all five seeds are stacked")
+        check(np.allclose(m.score, np.mean(per_seed, axis=0)),
+              "the point score is the seed mean of the S column")
+        metrics = QA.model_metrics(m, cohort, split, rows, n_boot=100,
+                                   ds1_prevalence=0.02)
+        expect = float(np.mean([QA.beat_micro_prauc(cohort.y_s[rows], p)
+                                for p in per_seed]))
+        check(abs(metrics["per_seed_mean_s_prauc"] - expect) < 1e-9,
+              "per_seed_mean_s_prauc is the MEAN OF PER-SEED PR-AUC "
+              "(the historical 0.660 / 0.597 contract)")
+        check(metrics["per_seed_mean_s_prauc"]
+              != metrics["beat_micro_s_prauc"],
+              "it is NOT the PR-AUC of the averaged probability")
+        check(metrics["seed_variability"]["n_seed"] == 5
+              and metrics["seed_variability"]["seeds"] == m.seeds,
+              "seed variability is recoverable again")
+
+        claim = QA.baseline_claim_check(
+            {"V10": metrics},
+            {"selected": {"V10": {"recorded_s_prauc_claim":
+                                  round(metrics["per_seed_mean_s_prauc"], 3),
+                                  "role": "primary"}}})
+        check(claim[0]["closest_unit"] == "per_seed_mean_beat_micro"
+              and "consistent" in claim[0]["verdict"],
+              "a claim recorded in the per-seed-mean unit is recognised as such")
+
+        odd = os.path.join(tmp, "odd")
+        os.makedirs(odd)
+        with np.load(os.path.join(run, "pwave_s1000.npz")) as z:
+            np.savez_compressed(os.path.join(odd, "pwave_s1000.npz"),
+                                prob=z["prob"], y=z["y"], pid=z["pid"])
+            np.savez_compressed(os.path.join(odd, "pwave_s1001.npz"),
+                                prob=z["prob"], y=1 - np.asarray(z["y"]),
+                                pid=z["pid"])
+        expect_raise(lambda: QA.load_model_predictions(
+            odd, "V10", source_index=si, arm="pwave"),
+            "a seed file that disagrees on the cohort is a STOP",
+            QA.Q5AError)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -1074,7 +1278,10 @@ def main() -> int:
                test_matching_hard_stops, test_split_and_inclusion,
                test_no_ds2_feedback, test_inventory_and_freeze,
                test_absent_historical_baseline, test_legacy_adapter,
-               test_float_time_column, test_rr_and_symbol_recovery,
+               test_float_time_column, test_seed_family,
+               test_provenance_narrows_a_true_name_clash,
+               test_patient_persistence_uses_every_pair,
+               test_rr_and_symbol_recovery,
                test_metrics_recomputation, test_subtype_and_audit_records,
                test_block_evidence, test_rank_outcome_is_threshold_free,
                test_decision_tree_all_branches,
