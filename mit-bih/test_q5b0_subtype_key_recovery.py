@@ -508,6 +508,125 @@ def test_drop_map_is_kept():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def _tie_fixture(n_per=120, seed=5, repeats=3, mix=(0.87, 0.045, 0.08, 0.005),
+                 uniform_symbol=None):
+    """A cohort shaped like the real one: quantised RR with repeated coupling
+    intervals, and an A-dominant subtype mix."""
+    rng = np.random.default_rng(seed)
+    cohort = QA.synthetic_atlas(n_per_record=n_per, seed=seed)
+    m = cohort.y_s
+    if uniform_symbol:
+        cohort.sym[m] = uniform_symbol
+    else:
+        cohort.sym[m] = rng.choice(np.array(QA.S_SUBTYPES), size=int(m.sum()),
+                                   p=list(mix))
+    QB.quantize_cohort_rr(cohort, repeats=repeats, seed=seed + 1)
+    source = QB.symbol_source_from_cohort(cohort, seed=seed + 2)
+    QB.blank_symbols(cohort)
+    return cohort, source, [int(r) for r in cohort.records]
+
+
+def test_tie_rule_resolves_only_what_it_may():
+    print("Q5-B-0b: ambiguity of identity vs ambiguity of the answer")
+    # ties whose members all carry the same symbol: the answer is determined
+    cohort, source, recs = _tie_fixture(uniform_symbol="A")
+    strict = QB.recover_symbols(cohort, source, recs, tie_mode=QB.TIE_STRICT,
+                                log=Q4O.RunLog(echo=False))
+    agree = QB.recover_symbols(cohort, source, recs,
+                               tie_mode=QB.TIE_AGREEMENT,
+                               log=Q4O.RunLog(echo=False))
+    check(strict["match_fraction"] < agree["match_fraction"],
+          f"the tie rule recovers beats the strict rule refused "
+          f"({strict['match_fraction']:.2f} -> {agree['match_fraction']:.2f})")
+    check(agree["n_tie_agreed"] > 0 and agree["tie_set_symbol_agreement"] > 0,
+          "the resolved beats are counted as resolved BY AGREEMENT")
+    matched = agree["sym"] != "?"
+    check(set(np.unique(agree["sym"][matched]).tolist()) == {"A"},
+          "every symbol handed out is the one the whole tie set agreed on")
+
+    # ties whose members disagree: nothing may be handed out
+    cohort2, source2, recs2 = _tie_fixture(mix=(0.25, 0.25, 0.25, 0.25),
+                                           seed=11)
+    a2 = QB.recover_symbols(cohort2, source2, recs2,
+                            tie_mode=QB.TIE_AGREEMENT,
+                            log=Q4O.RunLog(echo=False))
+    considered = int(a2["n_tie_considered"])
+    check(considered > 0, "the mixed fixture really does create ambiguity")
+    check(a2["n_tie_agreed"] < considered,
+          "a tie set whose members disagree is left unmatched, not guessed")
+
+
+def test_tie_rule_pays_for_itself():
+    print("Q5-B-0b: the relaxation is charged to the null and to the bias gate")
+    cohort, source, recs = _tie_fixture()
+    agree = QB.recover_symbols(cohort, source, recs,
+                               tie_mode=QB.TIE_AGREEMENT,
+                               log=Q4O.RunLog(echo=False))
+    cov = agree["subtype_coverage"]
+    check(cov["by_subtype"]["A"]["coverage"] is not None,
+          "coverage is reported per subtype against the source's true counts")
+
+    # a fixture built so the RARE subtypes only ever live in mixed tie sets:
+    # the rule then recovers A and nothing else, which is exactly the bias the
+    # balance check exists to catch.
+    biased = QA.synthetic_atlas(n_per_record=120, seed=5)
+    for r in biased.records:
+        idx = biased.idx_of[int(r)]
+        s_rows = idx[biased.y_s[idx]]
+        for k in range(0, len(s_rows) - 1, 2):
+            i, j = s_rows[k], s_rows[k + 1]
+            biased.pre_rr[j] = biased.pre_rr[i]     # an exact tie ...
+            biased.post_rr[j] = biased.post_rr[i]
+            rare = QA.S_SUBTYPES[1 + (k // 2) % 3]  # ... A paired with a/J/S
+            biased.sym[i], biased.sym[j] = "A", rare
+    biased.pre_rr = np.round(biased.pre_rr * 360) / 360
+    biased.post_rr = np.round(biased.post_rr * 360) / 360
+    bsrc = QB.symbol_source_from_cohort(biased, seed=3)
+    QB.blank_symbols(biased)
+    brecs = [int(x) for x in biased.records]
+    bagree = QB.recover_symbols(biased, bsrc, brecs,
+                                tie_mode=QB.TIE_AGREEMENT,
+                                log=Q4O.RunLog(echo=False))
+    bcov = bagree["subtype_coverage"]
+    bg = QB.evaluate_recovery_gate(bagree, {
+        "permutation_invariance": {"identical": True, "n_differing": 0},
+        "shift_control": {"match_fraction": 0.0},
+        "wrong_record_control": {"match_fraction": 0.0}})
+    brow = next(c for c in bg["checks"]
+                if c["check"] == "subtype_coverage_balance")
+    check(not brow["pass"],
+          "a recovery that only returns the common subtype FAILS the balance "
+          f"check (worst ratio {bcov['worst_ratio_to_overall']})")
+    check(bg["gate"] == QB.GATE_NOGO,
+          "and that alone is enough to stop the run")
+    ctrl = {"permutation_invariance": {"identical": True, "n_differing": 0},
+            "shift_control": {"match_fraction": 0.0},
+            "wrong_record_control": QB.wrong_record_control(
+                cohort, source, recs, tie_mode=QB.TIE_AGREEMENT)}
+    g = QB.evaluate_recovery_gate(agree, ctrl)
+    names = [c["check"] for c in g["checks"]]
+    check("subtype_coverage_balance" in names and
+          "tie_set_symbol_agreement" in names,
+          "the Q5-B-0b gate adds its two new checks")
+
+    # the same checks must not appear when the strict rule is in force
+    strict = QB.recover_symbols(cohort, source, recs, tie_mode=QB.TIE_STRICT,
+                                log=Q4O.RunLog(echo=False))
+    gs = QB.evaluate_recovery_gate(strict, ctrl)
+    check("subtype_coverage_balance" not in [c["check"] for c in gs["checks"]],
+          "Q5-B-0's gate is untouched — its recorded verdict stays reproducible")
+
+    # the null is recomputed under the rule actually in force
+    n_strict = QB.wrong_record_control(cohort, source, recs,
+                                       tie_mode=QB.TIE_STRICT)
+    n_agree = ctrl["wrong_record_control"]
+    check(n_agree["tie_mode"] == QB.TIE_AGREEMENT
+          and n_strict["tie_mode"] == QB.TIE_STRICT,
+          "each null records which rule produced it")
+    check(n_agree["match_fraction"] >= n_strict["match_fraction"],
+          "a looser rule can only raise the false-match ceiling, never lower it")
+
+
 def test_gate_blocks_attachment_and_reanalysis():
     print("NO-GO stops everything downstream")
     cohort, source, recs = _pair(n_per=60, scramble=True)
@@ -698,6 +817,13 @@ def test_spec_and_docs():
         check(f in text, f"the spec lists the allowed file {f}")
     for g in (QB.GATE_GO, QB.GATE_NOGO):
         check(g in text, f"the spec documents the gate outcome {g}")
+    check("Q5-B-0b" in text and str(QB.SUBTYPE_COVERAGE_RATIO_MIN) in text,
+          "the spec pre-registers Q5-B-0b and its coverage threshold")
+    check("subtype_coverage_balance" in text
+          and "tie_set_symbol_agreement" in text,
+          "the spec names both new gate checks")
+    check("영가설" in text and "다시 계산" in text,
+          "the spec states the null is recomputed under the new rule")
     for name in ("permutation", "shift", "wrong-record", "shuffle"):
         check(name in text.lower(), f"the spec pre-registers the {name} control")
     check(str(QB.MIN_S_MATCH_FRACTION) in text
@@ -791,6 +917,8 @@ def main() -> int:
                test_record_identity_is_established_not_assumed,
                test_ordinal_check_judges_the_rule_it_names,
                test_miss_diagnostics, test_drop_map_is_kept,
+               test_tie_rule_resolves_only_what_it_may,
+               test_tie_rule_pays_for_itself,
                test_gate_blocks_attachment_and_reanalysis,
                test_recovery_bundle_and_report,
                test_reanalysis_adds_the_fifth_block,
