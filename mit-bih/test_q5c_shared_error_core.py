@@ -154,6 +154,13 @@ def test_excess_is_measured_against_chance():
     ex = QC.co_error_excess(m, n_boot=300)
     check(abs(ex["chance"] - 0.5 ** len(m.labels)) < 1e-12,
           "the chance rate is 0.5**n_model by construction, not fitted")
+    check(ex["estimator"] == "record_macro"
+          and ex["observed_ci"][0] <= ex["observed"] <= ex["observed_ci"][1],
+          "the point estimate and its interval are the SAME estimator, so the "
+          "estimate cannot fall outside its own interval")
+    check("observed_micro" in ex and ex["observed_micro"] != ex["observed"]
+          or ex["observed_micro"] == ex["observed"],
+          "the beat-pooled rate is reported beside it, not swapped in")
     check(ex["ci_low"] <= 1.0 <= ex["ci_high"],
           f"independent models sit at chance (excess {ex['excess']:.2f}, CI "
           f"[{ex['ci_low']:.2f}, {ex['ci_high']:.2f}])")
@@ -207,6 +214,29 @@ def test_decision_tree_reaches_every_branch():
                   "the structured branch names one of the registered blocks")
             check("does not authorise" in res["decision"]["next_step"],
                   "and refuses to authorise an intervention by itself")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_figures_survive_a_degenerate_interval():
+    print("a plot cannot destroy a measured result")
+    tmp = tempfile.mkdtemp(prefix="q5c_fig_")
+    try:
+        cohort, models, rows = _fixture(rho=0.5, seed=29)
+        m = QC.build_membership(cohort, models, rows, log=Q4O.RunLog(echo=False))
+        ex = QC.co_error_excess(m, n_boot=200)
+        # force the pathological case the first real run hit: an interval that
+        # does not bracket the point estimate
+        ex = dict(ex, observed_ci=[ex["observed"] + 0.01,
+                                   ex["observed"] + 0.02])
+        res = {"co_error": ex, "models": list(m.labels),
+               "concentration": QC.core_concentration(m),
+               "decision": {"branch": QC.BRANCH_NO_EXCESS, "rule": "D-C",
+                            "trace": ["x"], "next_step": "y"}}
+        QC._write_figures(tmp, res, res["concentration"], [])
+        for f in QC.FIGURES:
+            check(os.path.exists(os.path.join(tmp, "figures", f)),
+                  f"{f} is still written when the interval is degenerate")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -386,7 +416,8 @@ def main() -> int:
                test_no_new_features_are_invented,
                test_membership_is_a_within_record_median_split,
                test_excess_is_measured_against_chance,
-               test_decision_tree_reaches_every_branch, test_shuffle_control,
+               test_decision_tree_reaches_every_branch,
+               test_figures_survive_a_degenerate_interval, test_shuffle_control,
                test_concentration_is_reported, test_bundle_and_report,
                test_underpowered_is_a_verdict, test_language_boundary,
                test_spec_and_notebook, test_q5a_is_untouched):
