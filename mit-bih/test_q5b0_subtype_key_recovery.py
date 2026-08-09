@@ -391,6 +391,123 @@ def test_record_identity_is_established_not_assumed():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def test_ordinal_check_judges_the_rule_it_names():
+    print("the ordinal gate check judges records where the fill actually fired")
+    base = {"match_fraction": 1.0, "anchor_fraction": 1.0,
+            "symbol_in_s_set_fraction": 1.0, "record_mapping": {"ok": True,
+                                                                "method": "x"},
+            "subtype_counts": {"A": 5}, "per_record": [
+                {"n_s_cohort": 10, "match_fraction": 1.0, "s_count_diff": 0}]}
+    ctrl = {"permutation_invariance": {"identical": True, "n_differing": 0},
+            "shift_control": {"match_fraction": 0.0},
+            "wrong_record_control": {"match_fraction": 0.0}}
+
+    # a record whose anchors are NOT ordinal, where the fill correctly refused
+    # to fire, must not fail a check about beats that were filled
+    ok = dict(base, n_extended=20, ordinal_consistency_min=0.88,
+              ordinal_consistency_min_where_used=1.0)
+    g = QB.evaluate_recovery_gate(ok, ctrl)
+    row = next(c for c in g["checks"]
+               if c["check"] == "ordinal_mapping_exact_where_used")
+    check(row["pass"], "a non-ordinal record that filled nothing does not fail")
+
+    bad = dict(base, n_extended=20, ordinal_consistency_min=1.0,
+               ordinal_consistency_min_where_used=0.9)
+    g = QB.evaluate_recovery_gate(bad, ctrl)
+    row = next(c for c in g["checks"]
+               if c["check"] == "ordinal_mapping_exact_where_used")
+    check(not row["pass"],
+          "filling beats where the mapping was not exactly ordinal fails")
+
+    none = dict(base, n_extended=0, ordinal_consistency_min=0.5,
+                ordinal_consistency_min_where_used=None)
+    g = QB.evaluate_recovery_gate(none, ctrl)
+    row = next(c for c in g["checks"]
+               if c["check"] == "ordinal_mapping_exact_where_used")
+    check(row["pass"] and row["value"] == "not used",
+          "no fill at all means the check does not apply")
+
+
+def test_miss_diagnostics():
+    print("diagnostics separate a near miss from a hopeless one")
+    cohort, source, recs = _pair(n_per=60, drop=1)
+    # the same beats measured on a time base offset by 30 ms: no match, but the
+    # misses should be tightly clustered at that offset
+    shifted = QB.SymbolSource(
+        record=source.record, sym=source.sym, y5=source.y5,
+        pre_rr=source.pre_rr + 0.030, post_rr=source.post_rr + 0.030,
+        records=source.records)
+    shifted.idx_of = dict(source.idx_of)
+    rec = QB.recover_symbols(cohort, shifted, recs, log=Q4O.RunLog(echo=False))
+    check(rec["match_fraction"] == 0.0, "a 30 ms offset defeats a 5 ms key")
+    near = rec["nearest_cost_unmatched"]
+    check(near["n"] > 0 and abs(near["p50"] - 0.030) < 0.005,
+          "the unmatched beats are reported as a NEAR miss at the true offset")
+    probe = [r for r in rec["ordinal_hypothesis_probe"] if r["n"]]
+    diffs = np.array([r["pre_rr_diff_median_s"] for r in probe])
+    check(len(probe) and abs(np.median(diffs) - 0.030) < 0.002,
+          "the ordinal probe recovers the systematic offset")
+    check(float(np.median([r["pre_rr_diff_iqr_s"] for r in probe])) < 0.005,
+          "and reports it as tight, i.e. same beats on a different time base")
+
+    diffuse = QB.SymbolSource(
+        record=source.record, sym=source.sym, y5=source.y5,
+        pre_rr=np.random.default_rng(0).uniform(0.4, 1.4, source.n),
+        post_rr=np.random.default_rng(1).uniform(0.4, 1.4, source.n),
+        records=source.records)
+    diffuse.idx_of = dict(source.idx_of)
+    rec2 = QB.recover_symbols(cohort, diffuse, recs, log=Q4O.RunLog(echo=False))
+    probe2 = [r for r in rec2["ordinal_hypothesis_probe"] if r["n"]]
+    check(float(np.median([r["pre_rr_diff_iqr_s"] for r in probe2])) > 0.05,
+          "an unrelated source is reported as diffuse, not as an offset")
+
+
+def test_drop_map_is_kept():
+    print("what the cohort's preprocessing removed is written down")
+    tmp = tempfile.mkdtemp(prefix="q5b0_drop_")
+    try:
+        cohort, source, recs = _pair(n_per=60)
+        # the source carries beats the cohort does not: 3 N beats per record,
+        # and no S beat anywhere
+        keep = np.ones(cohort.n, bool)
+        rng = np.random.default_rng(4)
+        for r in cohort.records:
+            idx = cohort.idx_of[int(r)]
+            n_only = idx[~cohort.y_s[idx]]
+            keep[rng.choice(n_only, size=3, replace=False)] = False
+        thin = QA.synthetic_atlas(n_per_record=60, seed=5)
+        QB.blank_symbols(thin)
+        for attr in ("key", "db", "record", "y5", "y_s", "sym", "pre_rr",
+                     "post_rr"):
+            setattr(thin, attr, getattr(thin, attr)[keep])
+        thin.beat = thin.beat[keep]
+        thin.idx_of = {int(r): np.where(thin.record == r)[0]
+                       for r in thin.records}
+        npz = QB.write_symbol_npz(os.path.join(tmp, "multi.npz"), source)
+        res = QB.run_recovery(thin, npz, os.path.join(tmp, "run"),
+                              log=Q4O.RunLog(echo=False))
+        d = res["drop_map"]
+        check(d["available"] and d["n_missing_from_cohort"] == 3 * len(recs),
+              "every beat the cohort lacks is counted")
+        check(d["missing_by_class"]["S"] == 0,
+              "the S line is reported separately — a dropped S beat would mean "
+              "the atlas scored a filtered S population")
+        by_class = d["missing_by_class"]
+        check(sum(by_class.values()) == d["n_missing_from_cohort"]
+              and by_class["N"] > 0,
+              "the drop is attributed to the classes it came from "
+              f"({by_class})")
+        check(abs(d["rr_corruption_upper_bound"]
+                  - 2 * d["n_missing_from_cohort"] / d["n_cohort"]) < 1e-9,
+              "the RR-corruption bound is twice the drop rate, stated as a bound")
+        rows = open(os.path.join(tmp, "run", "record_mapping.csv"),
+                    encoding="utf-8").read().splitlines()
+        check(len(rows) >= len(recs) and "S_missing" in rows[0],
+              "the per-record drop map is written to the bundle")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_gate_blocks_attachment_and_reanalysis():
     print("NO-GO stops everything downstream")
     cohort, source, recs = _pair(n_per=60, scramble=True)
@@ -672,6 +789,8 @@ def main() -> int:
                test_symbols_never_drive_the_match, test_controls_can_fail,
                test_ordinal_fill_needs_its_licence,
                test_record_identity_is_established_not_assumed,
+               test_ordinal_check_judges_the_rule_it_names,
+               test_miss_diagnostics, test_drop_map_is_kept,
                test_gate_blocks_attachment_and_reanalysis,
                test_recovery_bundle_and_report,
                test_reanalysis_adds_the_fifth_block,

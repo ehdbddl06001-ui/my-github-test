@@ -30,7 +30,38 @@ run `20260809T1033_EXP-2026-004_q5a_patient_failure_atlas` · 모듈 q5a v8 ·
   objective 하나만 바꾸는 DS1-only patient-CVaR pilot. 자세한 내용은 spec의
   「Q5-B design brief」.
 
-## EXP-2026-005 / Q5-B-0 — 사전 등록 완료, RESULT NOT RUN (2026-08-09 승인)
+## EXP-2026-005 / Q5-B-0 — MEASURED (2026-08-09), 판정 `NO_GO_SUBTYPE_CLOSED`
+
+run `20260809T1156_EXP-2026-005_q5b0_subtype_key_recovery` · 학습 없음.
+**`B_SUBTYPE`은 이 사전등록 아래에서 종결**이고, Q5-A의 `UNRESOLVED`(D5)는 4개
+블록 위에서 그대로 유지된다. symbols를 붙이지 않았고 재분석도 돌리지 않았다.
+
+- 실패한 검사: `s_match_fraction` **0.2593**(≥0.95) · `content_anchor_fraction`
+  **0.1981**(≥0.50) · record floor 18/32.
+- 통과한 검사가 더 많은 것을 말해준다: 매칭된 **721박의 symbol이 100% A/a/J/S**
+  (matcher가 볼 수 없는 값) · wrong-record 영가설 **0.48%** · 신호/영가설 **54배**
+  · 매칭 잔차 median **1.4 ms** · 순서 뒤섞기 불변 · record 동일성 44개 확립
+  (leftover 4개 = paced) · **per-record S 개수 불일치 0**.
+- 복구된 분포도 임상적으로 타당: **A 627 · a 32 · J 61 · S 1**.
+- 즉 **같은 S beat 집합인데 80%에서 RR이 5 ms 안에 안 들어온다.** 26%만 붙은 채
+  부분 사용하는 것은 하지 않는다 — 그 26%는 RR 일치를 조건으로 뽑힌 부분집합이라
+  선택 편향이다.
+- **"버려진 beat 때문"이라는 첫 설명은 철회했다** — 크기가 45배 안 맞는다.
+  cohort에 없는 beat는 818박(**0.81%**, 90%가 208·213)뿐이고, 이웃 소실로 RR이
+  오염될 수 있는 생존 beat는 상한이 **1.64%** 인데 실제 실패는 **74.1%** 다.
+- 대신 이 계산에서 확정된 것: **버려진 beat 중 S는 0박**(per-record S 불일치 0).
+  즉 **Q5-A는 걸러진 S 집단을 채점한 것이 아니다.** v4가 이 drop map을
+  record별·클래스별로 `record_mapping.csv`에 남긴다.
+- 남은 후보(미확인): ① `t`가 annotation이 아니라 **검출된 R-peak** 위치여서 RR이
+  beat마다 수~수십 ms 흩어짐(26%가 1.4 ms로 정확히 맞는 관측과 잘 맞음) ②
+  이웃 소실(208·213에 국한) ③ RR로 식별 불가. 판별 기준은 못 붙인 beat의
+  최근접 후보 거리: 0.005~0.05 s면 ①, 0.5~1.5 s면 ②, 균일하면 ③.
+- 다음: v3 진단(최근접 후보 거리 분포 · ordinal 탐침)으로 **영구 종결인지 별도
+  재등록이 가능한지**를 데이터로 가른다. 재등록한다면 좌표별 키와 **그 키로 다시
+  계산한 wrong-record 영가설**을 함께 등록한다(느슨한 키는 영가설을 올리므로 같은
+  gate를 새로 통과해야 한다).
+
+### 사전 등록 원문 (2026-08-09 승인, 변경 없음)
 
 사용자가 Q5-B 진행을 승인해 **①(측정)** 을 사전 등록했다:
 `experiments/specs/EXP-2026-005-q5b0-subtype-key-recovery.md`.

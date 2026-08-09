@@ -2,22 +2,24 @@
 experiment_id: EXP-2026-005
 stage_id: Q5-B-0
 title: S-subtype key recovery for the Q5-A failure atlas
-status: approved_for_implementation
+status: measured_pending_acceptance
 implementation_owner: claude-code
 kind: preregistered_analysis_only
-result_status: RESULT_NOT_RUN
-run_id: null
-measured: null
-verdict: null
+result_status: MEASURED
+run_id: 20260809T1156_EXP-2026-005_q5b0_subtype_key_recovery
+measured: 2026-08-09
+verdict: NO_GO_SUBTYPE_CLOSED
 depends_on: EXP-2026-004
 created: 2026-08-09
 ---
 
 # EXP-2026-005 / Q5-B-0 — S 하위분류 키 복구
 
-**상태: DESIGN / RESULT NOT RUN.** 이 문서·코드·notebook은 사전 등록이며 어떤
-수치도 결과가 아니다. Colab에서 `RECOVER`(→ 통과 시 `REANALYZE`)를 실행하기
-전까지 `result_status: RESULT_NOT_RUN`을 유지한다.
+**상태: MEASURED (2026-08-09).** 사전등록 gate 판정은 **`NO_GO_SUBTYPE_CLOSED`**
+이고 근거 bundle은 `runs/20260809T1156_EXP-2026-005_q5b0_subtype_key_recovery`
+다. 0~12절은 **측정 전에 등록된 설계 원문**이며 결과를 보고 고치지 않았다.
+실측 결과는 「결과」 절에 따로 적는다. `REANALYZE`는 실행하지 않았다(gate가
+막았고, 그것이 설계대로다).
 
 ## 0. 왜 이것이 다음 실험인가
 
@@ -204,7 +206,129 @@ ground truth로 표현 · 관찰 연관성을 인과로 승격 · 두 가설을 
 같은 계산량의 ERM 재실행). **그 spec·코드·학습 notebook은 이 브랜치에서 만들지
 않는다.** 사용자 인수와 분기 승인이 먼저다.
 
+## 결과 (2026-08-09 실측 · MEASURED)
+
+run `20260809T1156_EXP-2026-005_q5b0_subtype_key_recovery` · 모듈 q5b0 v2 ·
+`training_performed: false` · 31.4 s.
+
+### 판정: `NO_GO_SUBTYPE_CLOSED`
+
+| 검사 | 값 | 기준 | |
+|---|---|---|---|
+| `record_identity_resolved` | fingerprint_assignment | 확립될 것 | PASS |
+| `s_match_fraction` | **0.2593** | ≥ 0.95 | **FAIL** |
+| `records_at_or_above_record_floor` | 18/32 (0.56) | ≥ 0.90 | **FAIL** |
+| `content_anchor_fraction` | **0.1981** | ≥ 0.50 | **FAIL** |
+| `ordinal_mapping_exact_where_used` | 0.8846 | = 1.0 | **FAIL**(아래 정정) |
+| `symbol_in_aami_s_set` | **1.0000** | ≥ 0.99 | PASS |
+| `per_record_s_count_diff` | **0** | ≤ 10 | PASS |
+| `permutation_invariance` | 0 differing | 0 | PASS |
+| `shift_control` | 0.0426 | ≤ 0.20 | PASS |
+| `wrong_record_control` | 0.0048 | ≤ 0.05 | PASS |
+| `signal_to_null_ratio` | 54.42 | ≥ 5.0 | PASS |
+| `subtypes_present` | 721 | > 0 | PASS |
+
+따라서 **`B_SUBTYPE`은 이 사전등록 아래에서 종결**이고, Q5-A의 `UNRESOLVED`(D5)는
+4개 블록 위에서 그대로 유지된다. symbols를 붙이지 않았고 재분석도 돌리지 않았다.
+26%만 붙은 상태로 부분 사용하는 것도 하지 않는다 — 붙은 26%는 *RR이 일치한다는
+조건으로 선택된 부분집합*이라 그 자체가 선택 편향이다.
+
+### 붙은 것은 거의 확실히 옳다 — 그런데도 NO-GO다
+
+이 둘은 모순이 아니라 이 실험의 핵심 관찰이다.
+
+- 매칭된 721박의 symbol이 **100% A/a/J/S**(matcher가 볼 수 없는 값) ·
+  wrong-record 영가설 0.48% · 신호/영가설 **54배** · 매칭 잔차 median
+  **1.4 ms**, p95 4.2 ms.
+- 복구된 분포도 임상적으로 말이 된다: **A 627 · a 32 · J 61 · S 1**(APB 우세).
+- record 동일성은 5-class 지문 배정으로 44개 전부 확립됐고 leftover 4개는 paced
+  record(102·104·107·217)다. **per-record S 개수 불일치 0**, 즉 두 파일은
+  **같은 S beat 집합을 담고 있다**.
+- 두 파일 모두 RR 체인이 완전히 시간순이다(`chronology_min = 1.0`).
+- `ecg_multi`의 RR 단위는 **samples**(median 268 = 0.744 s)로 검증돼 초로 환산됐다.
+
+즉 "다른 파일이라 못 붙였다"가 아니다. 같은 beat 집합인데 **80%의 beat에서 RR
+값이 5 ms 안에 들어오지 않는다.**
+
+### 기전: 첫 가설은 **크기가 맞지 않아 철회**했다
+
+처음 세운 설명은 "mamba 전처리가 beat를 버려서, 앞 beat가 버려진 beat는 파생
+`pre_rr`이 구멍을 건너뛰어 한 박자만큼 커진다"였다. 산수를 해보면 성립하지
+않는다:
+
+| | |
+|---|---|
+| ecg_multi(44 record) | 100,689박 |
+| atlas cohort | 99,871박 |
+| cohort에 없는 beat | **818박 = 0.81%** (그중 90%가 208·213) |
+| 나머지 42 record 합계 | **82박** |
+| 이웃 소실로 RR이 오염될 수 있는 생존 beat **상한** (= 2×drop) | **1.64%** |
+| 실제 매칭 실패 | **74.1%** |
+
+1.6% 상한으로 74%를 설명할 수 없다 — **45배 차이다.** 이 가설은 철회한다.
+
+다만 이 계산에서 Q5-A에 중요한 사실 하나가 확정된다: **버려진 beat 중 S는
+0박이다**(per-record S 불일치 0). 즉 Q5-A는 걸러진 S 집단을 채점한 것이 아니다.
+v4는 이 drop map(record별·클래스별)을 `record_mapping.csv`로 bundle에 남긴다 —
+지금까지는 배정 표를 계산하고도 버리고 있었다.
+
+**남은 후보(미확인)** — v3/v4 진단이 가른다:
+
+1. **검출 위치 지터**: cohort의 `t`가 annotation 위치가 아니라 **검출된 R-peak**
+   위치라면(Q5-A가 `.atr` 조인 1.9%로 이미 `t` ≠ annotation sample을 보였다),
+   RR 차이는 beat마다 수~수십 ms로 흩어진다. 그러면 5 ms 안에 드는 것은 소수뿐이고
+   그 소수는 정확히 맞는다 — 관측(26%가 1.4 ms)과 잘 맞는다.
+2. **이웃 소실**: 위에서 철회됐지만 208·213에 국한해서는 여전히 유효할 수 있다.
+3. **RR로는 식별 불가**: 차이가 RR 전 범위에 균일.
+
+판별 기준(측정 전에 명시): 못 붙인 beat의 **최근접 후보 거리**가
+0.005~0.05 s 대에 퍼져 있으면 ①, 0.5~1.5 s 대(한 박자)면 ②, 균일하면 ③.
+**ordinal 탐침**의 record 내 IQR이 수십 ms면 ①, 0에 가까운 상수 편차면 시간축
+차이다.
+
+진단은 gate를 바꾸지 않는다 — 판정은 이미 NO-GO다.
+
+### 판정을 바꾸지 않는 결함 정정 1건
+
+`ordinal_mapping_exact_where_used`는 이름과 달리 **모든 record**의 ordinal
+일치도 최솟값으로 판정하고 있었다. 보충이 올바르게 발동하지 **않은** record까지
+세는 셈이라, 검사가 주장하는 규칙("보충한 곳에서")보다 엄격했다. v3에서 보충이
+실제로 일어난 record에 대해서만 판정하도록 고쳤다(`ordinal_consistency_min_
+where_used`).
+
+**이 정정으로 판정은 바뀌지 않는다**: `s_match_fraction` 0.2593과
+`content_anchor_fraction` 0.1981이 기준에 크게 못 미쳐 단독으로 NO-GO다. 결과를
+보고 유리하게 고친 것이 아님을 분명히 해 둔다.
+
+### 다음 (승인 필요 — 여기서 구현하지 않음)
+
+1. **v3로 `RECOVER` 1회 재실행** — 판정은 그대로 NO-GO로 두고, 위 두 진단만
+   얻는다. 비용은 30초.
+2. 진단이 **한 좌표 오염** 신호를 보이면 → **Q5-B-0b**를 별도 사전 등록: 좌표별
+   키(한 좌표는 엄격 일치, 다른 좌표는 결측 허용)와 **그 키로 다시 계산한
+   wrong-record 영가설**. 키를 느슨하게 하면 영가설이 올라가므로, 같은 gate를
+   새 키로 다시 통과해야 한다. 이것이 이 재등록을 "결과 보고 튜닝"과 가르는 선이다.
+3. 진단이 **흩어짐**을 보이면 → `B_SUBTYPE`은 **영구 종결**. 더 시도하지 않는다.
+
+어느 쪽이든 Q5-A의 판정은 4개 블록 위에서 유지되고, Q5-B-1(개입 pilot)은 여전히
+별도 승인 대상이다.
+
 ## Decision log
+
+### 2026-08-09 — NO-GO 인수 + 진단 추가 (deviation 기록 2; 판정 불변)
+
+gate가 `NO_GO_SUBTYPE_CLOSED`를 냈다. 판정은 그대로 기록한다. v3에서 한 일은
+두 가지뿐이고 **둘 다 판정을 바꾸지 않는다**:
+
+1. `ordinal_mapping_exact_where_used`가 이름이 말하는 규칙을 판정하도록 정정
+   (위 「결과」 참조). `s_match_fraction`·`content_anchor_fraction`이 단독으로
+   NO-GO라 판정 불변.
+2. **진단 추가(규칙 아님)**: 못 붙인 beat의 최근접 후보 거리 분포와 ordinal 가설
+   탐침(record별 RR 차이의 중앙값·IQR·비율). 어떤 gate도 이 값을 읽지 않는다.
+   목적은 "종결이 영구적인가, 아니면 별도 재등록이 가능한가"를 **데이터로**
+   가르는 것이다.
+
+임계값·조인 키·gate 기준은 하나도 바꾸지 않았다.
 
 ### 2026-08-09 — record 동일성을 **가정에서 확립으로** (deviation 기록 1; 결과 없음)
 
