@@ -75,8 +75,8 @@ ARM_ID = "Q5-A"
 RUN_SLUG = "q5a_patient_failure_atlas"
 STATUS = "PREREGISTERED ANALYSIS ONLY / RESULT NOT RUN"
 
-MODULE_VERSION = 3
-MODULE_BUILD = ("2026-08-09 q5a.3 — source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
+MODULE_VERSION = 4
+MODULE_BUILD = ("2026-08-09 q5a.4 — primary outcome amended to the threshold-free within-record rank (the v1 binary was forced by a prevalence-matched cut), annotation symbols joined with a declared 2-sample tolerance and a reported distance profile; source time column may be FLOAT: unit (seconds vs samples) is verified against the physiological RR range, one canonical key formatter for every path; legacy ablation adapter: prediction files "
                 "detected by KEY (ens.npz), tag folders are their own runs, "
                 "row correspondence VERIFIED against the frozen source before "
                 "any key is derived, paired control scoped to the primary's "
@@ -170,6 +170,11 @@ LEGACY_CLASS_WIDTHS = (2, 3, 5)
 #: under ``mitbih/mitdb`` as research/ASSETS.md used to say.
 ANN_DIR_CANDIDATES = ("raw_ann/mitdb", "mitdb", "raw_ann/mitdbdb")
 ANN_SYMBOL_MIN_MATCH = 0.95      # below this the symbols are declared unusable
+#: The source stores time in seconds, so a round trip through float can land a
+#: sample or two off the annotation. 2 samples at 360 Hz is 5.6 ms — far inside
+#: one beat, and the exact-hit count is reported alongside so the join quality
+#: is visible rather than assumed.
+ANN_SAMPLE_TOLERANCE = 2
 
 # S subtypes inside AAMI S (spec §8.3).
 S_SUBTYPES: Tuple[str, ...] = ("A", "a", "J", "S")
@@ -178,6 +183,20 @@ SUBTYPE_MIN_N = 20                 # below this a subtype row is descriptive onl
 # Feature blocks (spec §9) — fixed before looking at any result.
 BLOCKS: Tuple[str, ...] = ("B_ATRIAL", "B_RR", "B_QUALITY", "B_SUBTYPE",
                            "B_PATIENT")
+
+# Outcome definition for the block comparison (spec §10, amended 2026-08-09).
+#
+# v1 used "S beat below the DS1-locked threshold". Measured on the first run:
+# the DS1 S prevalence (~1.9%) is half the DS2 one (3.7%), so a
+# prevalence-matched cut labels ~2/3 of all S beats an error BY CONSTRUCTION
+# (measured FN rate 0.686 while the mean S rank was the 94th percentile).
+# The primary outcome is therefore the threshold-free WITHIN-RECORD rank; the
+# old binary stays as a reported secondary so nothing is lost.
+OUTCOME_RANK = "within_record_rank"          # continuous, 0 = best, 1 = worst
+OUTCOME_FN = "fn_at_locked_threshold"        # binary, v1
+PRIMARY_OUTCOME = OUTCOME_RANK
+OUTCOME_MODES = {OUTCOME_RANK: "regression", OUTCOME_FN: "classification"}
+BLOCK_MIN_OBS = 100          # S beats needed before the rank outcome is scored
 
 # Pre-registered branch labels (spec §10).
 BRANCH_INSUFFICIENT = "INSUFFICIENT_ARTIFACTS"
@@ -625,17 +644,26 @@ def attach_symbols_from_annotations(cohort: AtlasCohort, ann_dir: str,
         except Exception as exc:                        # pragma: no cover
             per_record[str(int(r))] = f"unreadable ({exc})"
             continue
-        table = dict(zip(np.asarray(ann.sample).astype(np.int64),
-                         np.asarray(ann.symbol).astype(str)))
+        ann_samp = np.sort(np.asarray(ann.sample).astype(np.int64))
+        order = np.argsort(np.asarray(ann.sample).astype(np.int64))
+        ann_sym = np.asarray(ann.symbol).astype(str)[order]
         idx = cohort.idx_of[int(r)]
-        hit = 0
-        for i in idx:
-            s = table.get(int(samples[i]))
-            if s is not None:
-                sym[i] = s
-                hit += 1
+        want = samples[idx]
+        # nearest annotation, then a pre-declared tolerance: an exact hit is
+        # preferred, and the distance distribution is reported either way so a
+        # bad join is diagnosable instead of silently "unavailable".
+        j = np.clip(np.searchsorted(ann_samp, want), 1, len(ann_samp) - 1)
+        left, right = ann_samp[j - 1], ann_samp[np.minimum(j, len(ann_samp) - 1)]
+        pick = np.where(np.abs(want - left) <= np.abs(want - right), j - 1, j)
+        dist = np.abs(want - ann_samp[pick])
+        ok = dist <= ANN_SAMPLE_TOLERANCE
+        sym[idx[ok]] = ann_sym[pick[ok]]
+        hit = int(ok.sum())
         matched += hit
-        per_record[str(int(r))] = {"n": int(len(idx)), "matched": int(hit)}
+        per_record[str(int(r))] = {
+            "n": int(len(idx)), "matched": hit,
+            "exact": int((dist == 0).sum()),
+            "median_distance_samples": float(np.median(dist)) if len(dist) else None}
     frac = float(matched) / max(1, cohort.n)
     report.update({"matched_fraction": frac, "n_matched": int(matched),
                    "per_record": per_record,
@@ -2065,26 +2093,76 @@ def grouped_holdout_logloss(X: np.ndarray, y: np.ndarray, groups: np.ndarray,
             "n_patient": int(len(uniq)), "n_obs": int(len(y))}
 
 
+def grouped_holdout_regression(X: np.ndarray, y: np.ndarray,
+                               groups: np.ndarray,
+                               seed: int = SEED0) -> Dict[str, object]:
+    """Patient-held-out ridge regression for the continuous rank outcome.
+
+    Same folding as :func:`grouped_holdout_logloss`; the per-patient loss is
+    the mean squared error, so the CI stays a patient bootstrap.
+    """
+    from sklearn.linear_model import Ridge
+    y = np.asarray(y, float)
+    groups = np.asarray(groups)
+    uniq = np.unique(groups)
+    if len(uniq) < 3:
+        raise Q5AError("patient-held-out evaluation needs >= 3 patients")
+    folds = [[g] for g in uniq] if len(uniq) <= 25 else \
+        [uniq[i::5] for i in range(5)]
+    pred = np.full(len(y), np.nan)
+    for hold in folds:
+        te = np.isin(groups, hold)
+        tr = ~te
+        if not te.any() or not tr.any():
+            continue
+        if X.size:
+            model = Ridge(alpha=1.0, random_state=seed)
+            model.fit(X[tr], y[tr])
+            pred[te] = model.predict(X[te])
+        else:
+            pred[te] = float(y[tr].mean())
+    pred = np.nan_to_num(pred, nan=float(np.mean(y)))
+    per_patient = {int(g): float(np.mean((y[groups == g] - pred[groups == g]) ** 2))
+                   for g in uniq}
+    var = float(np.var(y))
+    mse = float(np.mean((y - pred) ** 2))
+    return {"mse": mse, "r2": float(1.0 - mse / var) if var > 0 else float("nan"),
+            "per_patient_loss": per_patient, "n_patient": int(len(uniq)),
+            "n_obs": int(len(y))}
+
+
 def block_incremental_value(base: Dict[str, np.ndarray],
                             block: Dict[str, np.ndarray],
                             y: np.ndarray, groups: np.ndarray,
                             n_boot: int = NB_BOOT,
-                            seed: int = SEED0) -> Dict[str, object]:
-    """Held-out log-loss improvement from adding one block on top of ``base``.
+                            seed: int = SEED0,
+                            mode: str = "classification") -> Dict[str, object]:
+    """Held-out loss improvement from adding one block on top of ``base``.
 
-    Positive delta = the block explains error the base did not. The CI is a
-    patient bootstrap over per-patient held-out log-loss differences.
+    ``classification`` scores log loss on a binary outcome, ``regression``
+    scores MSE on the continuous within-record rank. Positive delta = the
+    block explains variation the base did not. The CI is always a patient
+    bootstrap over per-patient held-out losses.
     """
     Xb, base_names = _design(base)
     Xk, block_names = _design(block)
     Xb = _standardize(Xb) if Xb.size else np.zeros((len(y), 0))
     Xk = _standardize(Xk) if Xk.size else np.zeros((len(y), 0))
-    base_fit = grouped_holdout_logloss(Xb, y, groups, seed=seed)
+    fit = (grouped_holdout_regression if mode == "regression"
+           else grouped_holdout_logloss)
+    base_fit = fit(Xb, y, groups, seed=seed)
     aug = np.column_stack([Xb, Xk]) if Xb.size else Xk
-    aug_fit = grouped_holdout_logloss(aug, y, groups, seed=seed)
-    per_patient_delta = {g: base_fit["per_patient_logloss"][g]
-                         - aug_fit["per_patient_logloss"][g]
-                         for g in base_fit["per_patient_logloss"]}
+    aug_fit = fit(aug, y, groups, seed=seed)
+    loss_key = "per_patient_loss" if mode == "regression" \
+        else "per_patient_logloss"
+    base_fit["per_patient_logloss"] = base_fit[loss_key]
+    aug_fit["per_patient_logloss"] = aug_fit[loss_key]
+    base_fit.setdefault("logloss", base_fit.get("mse"))
+    aug_fit.setdefault("logloss", aug_fit.get("mse"))
+    base_fit.setdefault("auroc", base_fit.get("r2"))
+    aug_fit.setdefault("auroc", aug_fit.get("r2"))
+    per_patient_delta = {g: base_fit[loss_key][g] - aug_fit[loss_key][g]
+                         for g in base_fit[loss_key]}
     ci = boot_ci(per_patient_delta, n_boot=n_boot, seed=seed)
     direction = float(np.mean([v > 0 for v in per_patient_delta.values()]))
     influence = sorted(per_patient_delta, key=lambda g: -per_patient_delta[g])
@@ -2092,7 +2170,7 @@ def block_incremental_value(base: Dict[str, np.ndarray],
                if g not in influence[:DROP_RECORDS_FOR_STABILITY]}
     stable = bool(dropped and np.mean(list(dropped.values())) > 0)
     return {
-        "features": block_names, "base_features": base_names,
+        "features": block_names, "base_features": base_names, "mode": mode,
         "base_logloss": base_fit["logloss"], "aug_logloss": aug_fit["logloss"],
         "delta_logloss": float(ci["mean"]),
         "ci_low": float(ci["ci_low"]), "ci_high": float(ci["ci_high"]),
@@ -2128,33 +2206,73 @@ def univariate_associations(block: Dict[str, np.ndarray], y: np.ndarray
 
 def evaluate_blocks(blocks: Dict[str, Dict[str, np.ndarray]], y: np.ndarray,
                     groups: np.ndarray, n_boot: int = NB_BOOT,
-                    log: Optional[RunLog] = None) -> Dict[str, object]:
+                    log: Optional[RunLog] = None,
+                    outcome: str = OUTCOME_FN) -> Dict[str, object]:
     """Every block once on a shared base, then once adjusted for the others."""
     log = log or RunLog()
-    y = np.asarray(y, int)
-    if int(y.sum()) < BLOCK_MIN_EVENTS:
-        return {"underpowered": True, "n_events": int(y.sum()),
+    mode = OUTCOME_MODES[outcome]
+    y = np.asarray(y, float) if mode == "regression" else np.asarray(y, int)
+    if mode == "classification" and int(y.sum()) < BLOCK_MIN_EVENTS:
+        return {"underpowered": True, "outcome": outcome, "mode": mode,
+                "n_events": int(y.sum()),
                 "min_events": BLOCK_MIN_EVENTS, "blocks": {},
                 "reason": (f"only {int(y.sum())} error events among S beats "
                            f"(< {BLOCK_MIN_EVENTS}) — block comparison is not "
                            "informative; recorded as underpowered")}
+    if mode == "regression" and len(y) < BLOCK_MIN_OBS:
+        return {"underpowered": True, "outcome": outcome, "mode": mode,
+                "n_obs": int(len(y)), "min_obs": BLOCK_MIN_OBS, "blocks": {},
+                "reason": (f"only {len(y)} S beats (< {BLOCK_MIN_OBS}) — the "
+                           "rank outcome is not informative here")}
     base: Dict[str, np.ndarray] = {}
-    out: Dict[str, object] = {"underpowered": False, "n_events": int(y.sum()),
-                              "blocks": {}}
+    out: Dict[str, object] = {
+        "underpowered": False, "outcome": outcome, "mode": mode,
+        "n_events": int(y.sum()) if mode == "classification" else None,
+        "n_obs": int(len(y)), "blocks": {}}
     for name, blk in blocks.items():
-        ev = block_incremental_value(base, blk, y, groups, n_boot=n_boot)
+        ev = block_incremental_value(base, blk, y, groups, n_boot=n_boot,
+                                     mode=mode)
         others = {f"{o}__{k}": v for o, ob in blocks.items() if o != name
                   for k, v in ob.items()}
-        adj = block_incremental_value(others, blk, y, groups, n_boot=n_boot)
+        adj = block_incremental_value(others, blk, y, groups, n_boot=n_boot,
+                                      mode=mode)
         ev["adjusted_delta_logloss"] = adj["delta_logloss"]
         ev["adjusted_ci_low"] = adj["ci_low"]
         ev["adjusted_ci_high"] = adj["ci_high"]
-        ev["univariate"] = univariate_associations(blk, y)
+        ev["univariate"] = univariate_associations(
+            blk, (y >= np.median(y)).astype(int) if mode == "regression" else y)
         out["blocks"][name] = ev
-        log(f"  {name}: delta logloss {ev['delta_logloss']:+.4f} "
+        log(f"  [{outcome}] {name}: delta {ev['delta_logloss']:+.4f} "
             f"[{ev['ci_low']:+.4f}, {ev['ci_high']:+.4f}], "
             f"patient direction {ev['patient_direction_frac']:.2f}")
     return out
+
+
+def within_record_rank_outcome(cohort: AtlasCohort, rows: np.ndarray,
+                               score: np.ndarray,
+                               s_mask: np.ndarray) -> Dict[str, object]:
+    """How badly each S beat is ranked INSIDE its own record (spec amendment).
+
+    1.0 = the record's worst-ranked beat, 0.0 = the best. Being per record it
+    carries no global operating point, so it cannot be manufactured by a
+    prevalence-matched threshold the way the v1 binary outcome was.
+    """
+    rec = cohort.record[rows]
+    y = np.full(int(s_mask.sum()), np.nan)
+    pos = np.where(s_mask)[0]
+    for r in np.unique(rec):
+        in_rec = rec == r
+        ranks = rank_fraction(score[in_rec], score[in_rec], inclusive=False)
+        sel = np.where(in_rec[pos])[0]
+        y[sel] = 1.0 - ranks[np.isin(np.where(in_rec)[0], pos[sel])]
+    if not np.isfinite(y).all():
+        raise Q5AError("within-record rank outcome has gaps — a record has no "
+                       "scored beats; investigate the matching audit")
+    return {"y": y, "definition": (
+        "1 - (fraction of the record's beats scoring below this S beat); "
+        "higher = worse ranked inside its own record"),
+        "n": int(len(y)), "mean": float(np.mean(y)),
+        "median": float(np.median(y))}
 
 
 def atrial_support(atrial: Dict[str, np.ndarray], s_mask: np.ndarray,
@@ -2829,9 +2947,13 @@ def _write_summary(out_dir: str, result: Dict[str, object],
                    metrics: Dict[str, Dict[str, object]],
                    decision: Dict[str, object]) -> None:
     """Korean summary shown at the end of the notebook (spec §13)."""
+    be = result.get("block_evidence", {})
     lines = [f"# {EXPERIMENT_ID} / {ARM_ID} — 요약",
              "",
              f"- status: **{result['status']}** (ANALYSIS ONLY / NO TRAINING)",
+             f"- primary outcome: **{be.get('outcome', PRIMARY_OUTCOME)}** "
+             f"({be.get('mode')}), n={be.get('n_obs')} S beats · "
+             "secondary로 v1 이진 outcome도 함께 기록",
              f"- 확인된 것: {len(metrics)}개 모델의 지표를 동일 코드로 재계산",
              ]
     for lab, m in metrics.items():
@@ -2999,9 +3121,17 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
             metrics[labels[0]]["threshold"]["threshold"], thr)
 
     blocks = build_blocks(cohort, rows, rr, atrial, quality, s_mask)
-    block_ev = evaluate_blocks(blocks, error, rec[s_mask], n_boot=n_boot,
-                               log=log)
-    at_support = atrial_support(atrial, s_mask, error) if atrial else None
+    rank_out = within_record_rank_outcome(cohort, rows, aligned[ref].score,
+                                          s_mask)
+    # PRIMARY: threshold-free within-record rank. SECONDARY: the v1 binary,
+    # kept so the amendment can be audited against the original contract.
+    block_ev = evaluate_blocks(blocks, rank_out["y"], rec[s_mask],
+                               n_boot=n_boot, log=log, outcome=OUTCOME_RANK)
+    block_ev_secondary = evaluate_blocks(blocks, error, rec[s_mask],
+                                         n_boot=n_boot, log=log,
+                                         outcome=OUTCOME_FN)
+    worse_half = (rank_out["y"] >= np.median(rank_out["y"])).astype(int)
+    at_support = atrial_support(atrial, s_mask, worse_half) if atrial else None
     pat = patient_heterogeneity(metrics)
     decision = evaluate_branch_decision(gates, block_ev, at_support, pat)
     brief = q5b_design_brief(decision, block_ev, metrics)
@@ -3035,7 +3165,10 @@ def run_atlas(cohort: AtlasCohort, models: Dict[str, ModelPredictions],
         "record_audit_208_213": audit_rows,
         "atrial_support": at_support,
         "patient_heterogeneity": pat,
+        "primary_outcome": {"name": PRIMARY_OUTCOME, **{
+            k: v for k, v in rank_out.items() if k != "y"}},
         "block_evidence": block_ev,
+        "block_evidence_secondary_fn_outcome": block_ev_secondary,
         "decision": decision,
         "q5b_design_brief": brief,
         "source_fingerprint_before": fp_before,
@@ -3103,7 +3236,9 @@ def _write_atlas_bundle(out_dir, result, inventory, freeze, matches, tables,
               [result["model_disagreement"]] if result["model_disagreement"]
               else [{"note": "single beat-level model"}])
     _dump_csv(os.path.join(out_dir, "mechanism_evidence.csv"),
-              [{"block": b, "delta_logloss": ev["delta_logloss"],
+              [{"outcome": src.get("outcome"), "mode": src.get("mode"),
+                "is_primary": src.get("outcome") == PRIMARY_OUTCOME,
+                "block": b, "delta_logloss": ev["delta_logloss"],
                 "ci_low": ev["ci_low"], "ci_high": ev["ci_high"],
                 "adjusted_delta_logloss": ev["adjusted_delta_logloss"],
                 "adjusted_ci_low": ev["adjusted_ci_low"],
@@ -3112,7 +3247,10 @@ def _write_atlas_bundle(out_dir, result, inventory, freeze, matches, tables,
                 "top_influence_records": ev["top_influence_records"],
                 "n_patient": ev["n_patient"], "n_obs": ev["n_obs"],
                 "interpretation": "failure-ASSOCIATED, not causal"}
-               for b, ev in result["block_evidence"].get("blocks", {}).items()]
+               for src in (result["block_evidence"],
+                           result.get("block_evidence_secondary_fn_outcome")
+                           or {"blocks": {}})
+               for b, ev in src.get("blocks", {}).items()]
               or [{"block": "none", "interpretation": "underpowered"}])
     _dump_json(os.path.join(out_dir, "decision.json"), decision)
     with open(os.path.join(out_dir, "log.txt"), "w", encoding="utf-8") as fh:
