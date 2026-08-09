@@ -2,6 +2,171 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0171",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Feasibility of serial perioperative lung ultrasound to monitor fluid shifts during thulium laser prostate enucleation",
+  "authors": [
+   "Kuhn Philipp",
+   "Wieser Thomas",
+   "Welter JoEllen",
+   "Rechner Roman",
+   "Klein Jan T",
+   "Herrmann Thomas R W",
+   "Dullenkopf Alexander"
+  ],
+  "journal": "World journal of urology",
+  "doi": "10.1007/s00345-026-06600-0",
+  "pmid": "42571674",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42571674/",
+  "pubdate": "2026-08-09",
+  "date": "2026-08-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**PURPOSE:** Irrigation fluid absorption (IFA) during transurethral surgery of the prostate continues to pose a risk for fluid overload and electrolyte imbalance, yet reliable methods for quantifying absorption remain limited. Lung ultrasound (LU), increasingly used to detect pulmonary pathology, provides a noninvasive approach to assess fluid accumulation.\n\n**METHODS:** In this prospective single-center observational study, 36 patients aged ≥ 60 years undergoing elective urethral-sparing Thulium: YAG anatomical endoscopic enucleation of the prostate (AEEP; ThuLEP) were examined. LU was performed preoperatively and postoperatively by trained investigators, and a modified Lung Ultrasound Score (mLUS) was calculated. Perioperative data included body weight, fluid balance, biochemical parameters, and hemodynamic variables. Associations between mLUS and perioperative parameters were evaluated using Spearman correlation and linear regression analyses.\n\n**RESULTS:** Median postoperative mLUS values increased significantly from baseline (0 (IQR 0-1) vs. 7.5 (IQR 4.5-10.5), p < 0.0001). Overall fluid balance correlated with both postoperative mLUS (ρ = 0.51, p = 0.003) and change in mLUS (ρ = 0.40, p = 0.023). The change in body weight correlated with intraoperative fluid balance (ρ = 0.66, p < 0.001), overall fluid balance (ρ = 0.58, p < 0.001), and serum chloride increase (ρ = 0.53, p = 0.007). In a simple linear regression model, overall fluid balance was associated with the change in mLUS (β = 0.00073, 95% CI 0.00015-0.00131, p = 0.015). In a multivariable linear regression model, greater overall fluid balance (p = 0.015) and chloride increase (p = 0.001) were associated with larger increases in body weight. The median weight of removed prostate tissue was 61.5 g (IQR 42-88.5), with 0.92 g per minute.\n\n**CONCLUSION:** LU detected postoperative pulmonary fluid accumulation and correlated with perioperative fluid balance in elderly patients undergoing AEEP. Changes in serum chloride concentration and body weight were associated with systemic fluid uptake.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0170",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Artificial Intelligence for the Diagnosis and Management of Neurodegenerative Diseases: A Comprehensive Review With an Emphasis on Parkinson's and Alzheimer's Diseases",
+  "authors": [
+   "Pinnelli SriLakshmi Pravallika",
+   "T Surendra Babu",
+   "Ca Jayashankar",
+   "Pinnelli Venkata BharatKumar",
+   "Harikrishna Ganaraja V",
+   "Mudamanchu Vamsi Krishna",
+   "Sam Koshy T",
+   "Ms Divyadharshini",
+   "et al."
+  ],
+  "journal": "Cureus",
+  "doi": "10.7759/cureus.112325",
+  "pmid": "42571320",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42571320/",
+  "pubdate": "2026-07",
+  "date": "2026-08-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Artificial intelligence (AI) is rapidly transforming research in neurodegenerative diseases, yet its clinical translation remains limited. We conducted a structured literature search across Google Scholar, PubMed, Scopus, and Web of Science, screening studies published between 2015 and April 2026 that applied machine learning (ML), deep learning (DL), and multimodal data integration to neuroimaging, biomarkers, and digital phenotyping. Our analysis revealed that AI models demonstrate strong potential for differentiating disease subtypes, predicting progression, and enhancing diagnostic accuracy, with notable advances in neuroimaging interpretation, fluid biomarker analysis, and wearable sensor data. In Parkinson's disease (PD), digital phenotyping through gait, speech, and handwriting analysis has enabled sensitive monitoring, while in Alzheimer's disease (AD), AI applied to imaging and plasma biomarkers has improved risk stratification. Despite these advances, barriers such as dataset heterogeneity, label noise, lack of external validation, and ethical concerns regarding bias, transparency, and patient trust persist. We conclude that while AI holds promise to revolutionize the care of PD and AD, real-world adoption requires multicenter validation, standardized reporting frameworks, regulatory guidance, and interdisciplinary collaboration, alongside prospective trials that embed AI tools into clinical workflows to ensure safety, equity, and effectiveness.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0169",
+  "topic": "Pathology",
+  "subtopic": "",
+  "title": "Digital Pathology-Enabled Artificial Intelligence for Fibrosis Assessment in Metabolic Dysfunction-Associated Steatohepatitis: Needs, Current Progress, and Barriers",
+  "authors": [
+   "Rastogi Archana"
+  ],
+  "journal": "Journal of clinical and experimental hepatology",
+  "doi": "10.1016/j.jceh.2026.103608",
+  "pmid": "42571423",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42571423/",
+  "pubdate": "2026",
+  "date": "2026-08-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) is emerging as the most common chronic liver disorder worldwide. However, most of the candidate drugs, except resmetirom, have failed in the metabolic dysfunction-associated steatohepatitis (MASH) trials. The diagnosis of MASH relies on the assessment of key histological features: steatosis, ballooning, lobular inflammation, and fibrosis. Additionally, the current regulatory guidelines consider histological scores as the essential surrogate for the entry and efficacy endpoint decisions in phase IIb and phase III clinical drug trials. The reproducibility of histological scoring systems is increasingly being questioned in clinical trials. Inconsistencies in histopathological reporting, reflected by low inter-observer agreement, are largely attributable to the lack of standardized definitions, ordinal scoring structure with inadequate number of categories, use of variable criteria, ill-defined terminologies, and subjectivity in interpretation, which are further influenced by pre-analytical lab factors. These limitations result in high screen failure rates, poor risk stratification, increased placebo response, and reduced study power in drug trials, making this a serious concern. Liver pathologists are well aware of the urgent need to harmonize definitions and terminology and to transition from semi-quantitative to quantitative measurements using digital pathology (DP) integrated with computer vision and artificial intelligence (AI). Furthermore, standardized, objective, reproducible, and reliable histology-based ground truth is essential for the development and validation of non-invasive diagnostic tests for MASH. Several deep learning (DL) models and architectures, trained on stained or unstained digitized tissue slides using supervised and unsupervised approaches, have been developed, tested, and validated in MASH clinical studies. Liver fibrosis, the strongest primary prognostic determinant of clinical outcomes, has been the most extensively studied histologic feature in MASH. The AI models have demonstrated superior performance with respect to reproducibility and granularity, quantification of fibrosis progression and regression, improved confidence and concordance in Pathologists' scoring, standardization of consensus-based scoring systems, validation of AI-based tools to assist pathologists, and prediction of clinical outcomes. However, several challenges remain in the implementation of DP-enabled AI models in MASLD clinical practice and drug trials. These include ethical and legal considerations, model explainability, patient data privacy and confidentiality, financial investment, and regulatory approvals required for clinical adoption. Nevertheless, digital pathology-coupled DL models have the potential to augment current histopathological assessment in MASH.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0168",
+  "topic": "Nephrology",
+  "subtopic": "",
+  "title": "Antegrade percutaneous retrieval of a retained metallic ureteral stent embedded in subcutaneous tissue: A practical fluoroscopy-guided approach",
+  "authors": [
+   "Yiaw Yeong Huei"
+  ],
+  "journal": "Radiology case reports",
+  "doi": "10.1016/j.radcr.2026.06.161",
+  "pmid": "42571490",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42571490/",
+  "pubdate": "2026-10",
+  "date": "2026-08-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Metallic ureteral stents provide excellent resistance to extrinsic compression, allowing for prolonged indwelling times; however, their extraction can be complicated by tissue ingrowth and mechanical failure. We report a complex case of a 33-year-old male with a history of bladder exstrophy, a Mitrofanoff appendicovesicostomy, and chronic kidney disease who underwent an antegrade percutaneous exchange of a right 6Fr metallic ureteral stent. During extraction, a sub-optimal grasp along the stent's shaft caused the rigid device to fold over itself and become wedged within the 8Fr working sheath, severely bending the stent. After the sheath was withdrawn, the proximal portion of the stent became embedded extra-renally within the subcutaneous fat. Standard endourological graspers lacked sufficient mechanical strength for extraction. A practical soft-tissue foreign body retrieval technique was employed under continuous real-time fluoroscopy, utilizing a robust curved artery forceps to successfully grasp and extract the metallic stent completely. This case underscores the technical challenges associated with the unique design of metallic stents, the importance of accurate proximal tip grasping, the necessity of appropriately sized working sheaths, and the utility of real-time fluoroscopy in managing retained percutaneous foreign bodies.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0167",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Bidirectional links between heart failure and cancer: shared pathophysiology, clinical outcomes and collaborative management",
+  "authors": [
+   "Gill Ahmad",
+   "Li Tianhong",
+   "Jimenez Shirin",
+   "Cadeiras Martin",
+   "Fan Dali",
+   "Singh Swaiman",
+   "Ebong Imo A"
+  ],
+  "journal": "Heart (British Cardiac Society)",
+  "doi": "10.1136/heartjnl-2026-328221",
+  "pmid": "42571652",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42571652/",
+  "pubdate": "2026-08-03",
+  "date": "2026-08-09",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Heart failure (HF) and cancer are leading causes of global morbidity and mortality that share a significant bidirectional relationship. Epidemiologic studies reveal that cancer patients and survivors face a substantially elevated risk of HF, largely driven by cardiotoxic systemic therapies including chemotherapy, targeted therapy, immunotherapy and radiation therapy. Conversely, individuals with HF have a markedly increased incidence of cancer. This interconnection is underpinned by age and shared modifiable risk factors, including smoking, hypertension, diabetes and obesity, as well as common pathophysiological mechanisms such as chronic inflammation, neurohormonal activation, oxidative stress and dysregulated angiogenesis. Clonal haematopoiesis of indeterminate potential has emerged as a novel biological link, promoting both maladaptive cardiac remodelling and tumourigenesis. Clinically, the coexistence of HF and cancer creates complex management challenges, as each condition worsens the prognosis of the other and limits therapeutic options. In addition to providing a broad overview of the topic, this review incorporates three aspects that are underexplored in existing cardio-oncology literature-management of advanced metastatic cancer in patients with HF, use of advanced HF therapies in patients with cancer and disparities in cardio-oncology care and clinical trial representation. Effective management of patients with HF and cancer requires a multidisciplinary cardio-oncology approach that incorporates rigorous risk stratification, early detection using serial cardiac biomarkers and imaging and personalised management tailored to cancer treatment. Irrespective, cancer patients with HF have a poor prognosis. It is necessary to balance oncological efficacy with cardiovascular safety while providing a clear definition of the goals of care. Early integration of palliative and rehabilitative care can significantly improve patient quality of life and outcomes. Nevertheless, effective novel treatment strategies have significantly improved the overall survivorship for patients with cancer and/or HF.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0166",
   "topic": "Laboratory Medicine",
   "subtopic": "",
