@@ -56,11 +56,18 @@ residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 
 - Primary metric: S-beat PR-AUC.
 - Required supporting views: patient-level lower tail, patient macro metrics, seed variability, patient bootstrap.
 - Historical path: V8 base CNN → V9 comparison/prototype → V10 explicit P-wave morphology.
-- Recorded reference: V9 `kink_noctx` S PR-AUC about 0.597; V10 `pwave` about 0.660. Verify against ingested run artifacts before publication.
-  **아직 미검증** — 검증은 Q5-A(EXP-2026-004)의 첫 gate다. Q5-A는 provenance만으로
-  baseline을 freeze하며(성능으로 후보를 고르지 않는다), 후보가 식별 불가능하면
-  `AMBIGUOUS_BASELINE`으로 중단하고, beat-level 예측이 없는 모델은 aggregate만
-  기록한 뒤 beat-level 비교에서 제외한다(재학습 금지).
+- Recorded reference: V9 `kink_noctx` S PR-AUC about 0.597; V10 `pwave` about 0.660.
+  **2026-08-09 실측 (Q5-A INVENTORY)**:
+  - **V10 = `MyDrive/mitbih/ablation_step9d/pwave/ens.npz`** (`colab_step9d_final.py`
+    의 `run_final("pwave")`). 산출물 존재 — 0.660의 재계산 검증은 `ANALYZE`에서 한다.
+    같은 폴더 `base26`이 **P파 특징만 다른 짝 대조군**이라 함께 동결한다.
+  - **V9 `kink_noctx` = ARTIFACT_ABSENT.** Drive의 run/tag 폴더명·파일명·색인 본문과
+    repo 전량에서 `kink`/`noctx`가 발견되지 않았다. 기록된 **0.597은 검증 불가**로
+    남기며, 이를 메우려고 재학습하지 않는다. (한계: Drive 색인은 `.npz` 내부를 읽지
+    않으므로 다른 이름으로 저장된 V9까지 배제하지는 못한다 — 로컬 PC 보관 또는
+    미저장 가능성.)
+  - 이 결론은 성능이 아니라 provenance로만 도출됐고, 후보가 식별 불가능하면
+    `AMBIGUOUS_BASELINE`으로 중단하는 규칙은 그대로다.
 
 ## Current scientific focus
 The next decision is driven by failure patients and lower-tail robustness, not a small mean-only gain.
