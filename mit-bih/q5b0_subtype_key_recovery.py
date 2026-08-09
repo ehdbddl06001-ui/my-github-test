@@ -52,9 +52,11 @@ import q4q_transportability_replication as QQ   # noqa: E402
 
 EXPERIMENT_ID = "EXP-2026-005"
 ARM_ID = "Q5-B-0"
+ARM_ID_B = "Q5-B-0b"
 RUN_SLUG = "q5b0_subtype_key_recovery"
+RUN_SLUG_B = "q5b0b_subtype_key_recovery_tie"
 REANALYSIS_SLUG = "q5b0_subtype_reanalysis"
-MODULE_VERSION = 4
+MODULE_VERSION = 5
 MODULE_BUILD = "2026-08-09"
 
 MODES = ("DESIGN", "RECOVER", "REANALYZE", "REPORT")
@@ -80,6 +82,28 @@ FINGERPRINT_FIELDS = ("pre_rr", "post_rr")
 #: mapping is exactly ordinal, and only when the anchors are at least this
 #: share of the record's S beats. Below it, the ambiguous beats stay unmatched.
 ORDINAL_MIN_ANCHOR_FRACTION = 0.50
+
+# ── Q5-B-0b: the tie-agreement rule (pre-registered 2026-08-09, after the
+# Q5-B-0 diagnostic showed the misses are ambiguous, not distant) ────────────
+#
+# Q5-B-0 refused every beat whose runner-up sat inside the margin. The
+# diagnostic then measured that those beats DO have an essentially exact
+# partner (median nearest distance 0.10 ms; 93.8% inside twice the tolerance)
+# — they were refused because two candidates were equally good, not because
+# none was. Being unable to say WHICH beat is not the same as being unable to
+# say WHAT ITS SYMBOL IS: the true partner is inside the tie set, so if every
+# member of that set carries one symbol, the symbol is determined whichever
+# member is picked. That is an inference, not a guess.
+TIE_STRICT = "strict_identity"          # Q5-B-0: ambiguity -> unmatched
+TIE_AGREEMENT = "tie_symbol_agreement"  # Q5-B-0b: ambiguity -> ask the symbols
+TIE_MODES = (TIE_STRICT, TIE_AGREEMENT)
+#: Under the agreement rule a beat's identity is NOT asserted, only its symbol,
+#: so the one-to-one constraint does not apply to those beats. This is stated
+#: rather than hidden: two cohort beats may read the same source beat's symbol.
+#: Whether that distorts anything is what the coverage gate below measures.
+#: No subtype may be recovered much worse than the others — otherwise the
+#: block is built from the common subtype (A) and silently misses a/J.
+SUBTYPE_COVERAGE_RATIO_MIN = 0.80
 
 # ── pre-registered GO/NO-GO gate ────────────────────────────────────────────
 MIN_S_MATCH_FRACTION = 0.95        # of all S beats in the analysis cohort
@@ -474,10 +498,51 @@ def assign_one_to_one(cost: np.ndarray, tolerance: float = RR_TOLERANCE_S,
             continue
         match[i] = int(j)
         cst[i] = c
+    best_all = np.min(finite, axis=1)
+    tie_sets = [np.where(finite[i] <= best_all[i] + margin)[0]
+                for i in range(n)]
     out.update({"match": match, "cost": cst,
                 "n_matched": int((match >= 0).sum()),
-                "n_ambiguous": int(amb), "n_over_tolerance": int(over)})
+                "n_ambiguous": int(amb), "n_over_tolerance": int(over),
+                "best": best_all, "tie_sets": tie_sets})
     return out
+
+
+def resolve_by_tie_agreement(res: Dict[str, object], symbols: np.ndarray,
+                             tolerance: float = RR_TOLERANCE_S
+                             ) -> Dict[str, object]:
+    """Q5-B-0b: give a beat its symbol when every candidate agrees on it.
+
+    Only rows the strict rule left unmatched are considered. A row qualifies
+    when its best candidate is inside the tolerance AND every member of its
+    tie set carries the same symbol. The row's identity stays unknown — that
+    is the point — so nothing here claims a one-to-one correspondence.
+    """
+    match = np.asarray(res["match"]).copy()
+    ties = res["tie_sets"]
+    best = np.asarray(res["best"], float)
+    sym = np.asarray(symbols)
+    agreed = np.zeros(len(match), bool)
+    n_considered = n_agree = 0
+    for i in range(len(match)):
+        if match[i] >= 0 or best[i] > tolerance:
+            continue
+        members = ties[i]
+        if not len(members):
+            continue
+        n_considered += 1
+        if len(set(sym[members].tolist())) == 1:
+            match[i] = int(members[0])
+            agreed[i] = True
+            n_agree += 1
+    return {"match": match, "agreed": agreed, "n_agreed": int(n_agree),
+            "n_considered": int(n_considered),
+            "tie_set_symbol_agreement": (float(n_agree) / n_considered
+                                         if n_considered else None),
+            "tie_set_size_median": (float(np.median([len(ties[i])
+                                                     for i in range(len(match))
+                                                     if len(ties[i])]))
+                                    if len(match) else None)}
 
 
 def _greedy_assignment(cost: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
@@ -514,6 +579,7 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
                     records: Optional[Sequence[int]] = None,
                     tolerance: float = RR_TOLERANCE_S,
                     margin: float = RR_MARGIN_S,
+                    tie_mode: str = TIE_STRICT,
                     mapping_report: Optional[Dict[str, object]] = None,
                     log: Optional[RunLog] = None) -> Dict[str, object]:
     """Join S beats of the atlas cohort to the symbol source, per record.
@@ -540,8 +606,12 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
     sym_anchor = np.full(cohort.n, "?", dtype="<U2")
     per_record: List[Dict[str, object]] = []
     residuals: List[float] = []
+    if tie_mode not in TIE_MODES:
+        raise Q5B0Error(f"tie_mode must be one of {TIE_MODES}")
     ordinal_seen: List[float] = []
     ordinal_seen_used: List[float] = []
+    total_agreed = tie_considered = tie_agree = 0
+    tie_sizes: List[float] = []
     near_miss: List[float] = []
     ordinal_probe: List[Dict[str, object]] = []
     total_s = total_matched = total_anchor = total_extended = 0
@@ -578,6 +648,17 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
         anchor = res["match"] >= 0
         sym_anchor[idx[a_s[anchor]]] = source.sym[sidx[b_s[res["match"][anchor]]]]
         pair = res["match"].copy()
+        agreed = np.zeros(len(a_s), bool)
+        if tie_mode == TIE_AGREEMENT:
+            tie = resolve_by_tie_agreement(res, source.sym[sidx[b_s]],
+                                           tolerance=tolerance)
+            pair = tie["match"]
+            agreed = tie["agreed"]
+            total_agreed += tie["n_agreed"]
+            tie_considered += tie["n_considered"]
+            tie_agree += tie["n_agreed"]
+            if tie["tie_set_size_median"] is not None:
+                tie_sizes.append(tie["tie_set_size_median"])
 
         # Is the anchor mapping ordinal — the k-th S beat of one file to the
         # k-th of the other? This is TESTED on the beats the content already
@@ -590,7 +671,7 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
         extended = np.zeros(len(a_s), bool)
         if (ordinal == 1.0 and len(a_s) == len(b_s)
                 and int(anchor.sum()) >= ORDINAL_MIN_ANCHOR_FRACTION * len(a_s)):
-            extended = ~anchor
+            extended = (pair < 0)
             pair[extended] = np.where(extended)[0]
 
         hit = pair >= 0
@@ -643,6 +724,7 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
             "status": "matched", "n_matched": int(hit.sum()),
             "match_fraction": float(hit.mean()),
             "n_anchor": int(anchor.sum()), "n_extended": int(extended.sum()),
+            "n_tie_agreed": int(agreed.sum()),
             "ordinal_consistency": ordinal,
             "n_ambiguous": int(res["n_ambiguous"]),
             "n_over_tolerance": int(res["n_over_tolerance"]),
@@ -671,6 +753,13 @@ def recover_symbols(cohort: QA.AtlasCohort, source: SymbolSource,
         "chronology_min": (min(chrono) if chrono else None),
         "n_s": int(total_s), "n_matched": int(total_matched),
         "n_anchor": int(total_anchor), "n_extended": int(total_extended),
+        "n_tie_agreed": int(total_agreed), "tie_mode": tie_mode,
+        "tie_set_symbol_agreement": (float(tie_agree) / tie_considered
+                                     if tie_considered else None),
+        "n_tie_considered": int(tie_considered),
+        "tie_set_size_median": (float(np.median(tie_sizes)) if tie_sizes
+                                else None),
+        "subtype_coverage": _subtype_coverage(cohort, source, recs, sym_out),
         "match_fraction": frac,
         "anchor_fraction": float(total_anchor) / max(1, total_s),
         "ordinal_consistency_min": (min(ordinal_seen) if ordinal_seen else None),
@@ -737,6 +826,49 @@ def _drop_summary(rmap: Dict[str, object]) -> Dict[str, object]:
                      "spanning RR")}
 
 
+def _subtype_coverage(cohort: QA.AtlasCohort, source: SymbolSource,
+                      records: Sequence[int], recovered: np.ndarray
+                      ) -> Dict[str, object]:
+    """Per subtype: how many were recovered against how many actually exist.
+
+    The symbol source knows the true per-record A/a/J/S counts, so a recovery
+    that quietly returns only the common subtype is detectable here and not
+    anywhere else — an aggregate match rate cannot see it. A block built from
+    A alone would be biased in exactly the direction that matters.
+    """
+    truth = {t: 0 for t in S_SUBTYPES}
+    got = {t: 0 for t in S_SUBTYPES}
+    for r in records:
+        r = int(r)
+        if r in source.idx_of:
+            sidx = source.idx_of[r]
+            s_src = source.sym[sidx[source.y5[sidx] == S_INDEX]]
+            for t in S_SUBTYPES:
+                truth[t] += int((s_src == t).sum())
+        idx = cohort.idx_of[r]
+        rec_sym = recovered[idx[cohort.y_s[idx]]]
+        for t in S_SUBTYPES:
+            got[t] += int((rec_sym == t).sum())
+    total_truth = sum(truth.values())
+    total_got = sum(got.values())
+    overall = float(total_got) / max(1, total_truth)
+    per = {}
+    for t in S_SUBTYPES:
+        cov = (float(got[t]) / truth[t]) if truth[t] else None
+        per[t] = {"n_true": truth[t], "n_recovered": got[t], "coverage": cov,
+                  "ratio_to_overall": (cov / overall if cov is not None
+                                       and overall > 0 else None),
+                  "scored": bool(truth[t] >= QA.SUBTYPE_MIN_N)}
+    scored = [v["ratio_to_overall"] for v in per.values()
+              if v["scored"] and v["ratio_to_overall"] is not None]
+    return {"overall_coverage": overall, "n_true": total_truth,
+            "n_recovered": total_got, "by_subtype": per,
+            "worst_ratio_to_overall": (min(scored) if scored else None),
+            "min_ratio": SUBTYPE_COVERAGE_RATIO_MIN,
+            "note": ("a subtype recovered much worse than the others biases "
+                     "the block toward the common one")}
+
+
 def _empty_recovery(cohort: QA.AtlasCohort, mapping_report: Dict[str, object]
                     ) -> Dict[str, object]:
     """The shape :func:`recover_symbols` returns when no join was possible."""
@@ -752,6 +884,12 @@ def _empty_recovery(cohort: QA.AtlasCohort, mapping_report: Dict[str, object]
             "match_fraction": 0.0, "anchor_fraction": 0.0,
             "ordinal_consistency_min": None, "ordinal_consistency_mean": None,
             "ordinal_consistency_min_where_used": None,
+            "n_tie_agreed": 0, "tie_mode": TIE_STRICT,
+            "tie_set_symbol_agreement": None, "n_tie_considered": 0,
+            "tie_set_size_median": None,
+            "subtype_coverage": {"overall_coverage": 0.0, "by_subtype": {},
+                                 "worst_ratio_to_overall": None,
+                                 "min_ratio": SUBTYPE_COVERAGE_RATIO_MIN},
             "nearest_cost_unmatched": {"n": 0, "p10": None, "p50": None,
                                        "p90": None, "within_2x_tolerance": None},
             "ordinal_hypothesis_probe": [],
@@ -843,7 +981,8 @@ def shift_control(cohort: QA.AtlasCohort, source: SymbolSource,
 def wrong_record_control(cohort: QA.AtlasCohort, source: SymbolSource,
                          records: Sequence[int],
                          tolerance: float = RR_TOLERANCE_S,
-                         margin: float = RR_MARGIN_S) -> Dict[str, object]:
+                         margin: float = RR_MARGIN_S,
+                         tie_mode: str = TIE_STRICT) -> Dict[str, object]:
     """Search each record's beats in the NEXT record's pool: must not match."""
     unit = rr_seconds_scale(source.pre_rr)
     scale = float(unit["scale_to_seconds"])
@@ -864,11 +1003,20 @@ def wrong_record_control(cohort: QA.AtlasCohort, source: SymbolSource,
                              source.post_rr[sidx] * scale)[b_s]
         res = assign_one_to_one(_cost_matrix(fp_a, fp_b), tolerance=tolerance,
                                 margin=margin)
-        matched += res["n_matched"]
+        n_hit = res["n_matched"]
+        if tie_mode == TIE_AGREEMENT:
+            # The null has to be measured under the rule actually in force. A
+            # looser rule finds more false matches, and this is where that
+            # cost shows up — otherwise relaxing the rule would look free.
+            tie = resolve_by_tie_agreement(res, source.sym[sidx[b_s]],
+                                           tolerance=tolerance)
+            n_hit = int((np.asarray(tie["match"]) >= 0).sum())
+        matched += n_hit
         total += len(a_s)
     frac = float(matched) / max(1, total)
     return {"match_fraction": frac, "n_matched": int(matched),
             "n_total": int(total), "max_allowed": MAX_WRONG_RECORD,
+            "tie_mode": tie_mode,
             "note": ("every match here is false by construction, so this is "
                      "an upper bound on the join's false-match rate: in the "
                      "real join the true partner is present and wins the "
@@ -1032,6 +1180,26 @@ def evaluate_recovery_gate(recovery: Dict[str, object],
         (round(ratio, 2) if np.isfinite(ratio) else "inf"),
         f">= {MIN_SIGNAL_TO_NULL_RATIO}",
         "true match rate against the wrong-record null")
+
+    if recovery.get("tie_mode") == TIE_AGREEMENT:
+        # Q5-B-0b only. The agreement rule buys coverage by dropping the
+        # identity claim, so it has to pay for it in these two places.
+        agree = recovery.get("tie_set_symbol_agreement")
+        n_amb = int(recovery.get("n_tie_considered") or 0)
+        add("tie_set_symbol_agreement",
+            n_amb == 0 or (agree is not None and float(agree) > 0),
+            ("not needed" if n_amb == 0
+             else (round(float(agree), 4) if agree is not None else "n/a")),
+            "> 0 whenever there is ambiguity to resolve",
+            f"{recovery.get('n_tie_agreed')} of {n_amb} ambiguous beats "
+            "resolved by symbol agreement")
+        cov = recovery.get("subtype_coverage") or {}
+        worst = cov.get("worst_ratio_to_overall")
+        add("subtype_coverage_balance",
+            worst is not None and float(worst) >= SUBTYPE_COVERAGE_RATIO_MIN,
+            (round(float(worst), 4) if worst is not None else "n/a"),
+            f">= {SUBTYPE_COVERAGE_RATIO_MIN} of the overall coverage",
+            "no subtype may be recovered much worse than the others")
 
     n_sub = sum(int(v) for v in recovery.get("subtype_counts", {}).values())
     add("subtypes_present", n_sub > 0, n_sub, "> 0",
@@ -1299,6 +1467,7 @@ def _write_recovery_figures(out_dir: str, recovery: Dict[str, object],
 def run_recovery(cohort: QA.AtlasCohort, symbol_npz: str, out_dir: str,
                  provenance: Optional[Dict[str, object]] = None,
                  records: Optional[Sequence[int]] = None,
+                 tie_mode: str = TIE_STRICT,
                  log: Optional[RunLog] = None) -> Dict[str, object]:
     """RECOVER mode: join, control, gate, write the bundle. Never trains."""
     log = log or RunLog()
@@ -1322,13 +1491,14 @@ def run_recovery(cohort: QA.AtlasCohort, symbol_npz: str, out_dir: str,
         source = raw
     else:
         source = apply_record_mapping(raw, rmap["mapping"])
-        recovery = recover_symbols(cohort, source, recs, mapping_report=rmap,
-                                   log=log)
+        recovery = recover_symbols(cohort, source, recs, tie_mode=tie_mode,
+                                   mapping_report=rmap, log=log)
         controls = {
             "permutation_invariance": permutation_invariance(cohort, source,
                                                              recs),
             "shift_control": shift_control(cohort, source, recs),
-            "wrong_record_control": wrong_record_control(cohort, source, recs),
+            "wrong_record_control": wrong_record_control(cohort, source, recs,
+                                                         tie_mode=tie_mode),
         }
     log(f"controls: permutation identical="
         f"{controls['permutation_invariance']['identical']} · shift "
@@ -1342,6 +1512,11 @@ def run_recovery(cohort: QA.AtlasCohort, symbol_npz: str, out_dir: str,
         "status": STATUS_MEASURED, "training_performed": False,
         "module_version": MODULE_VERSION, "module_build": MODULE_BUILD,
         "gate": gate["gate"], "gate_pass": gate["pass"],
+        "arm_id": ARM_ID_B if tie_mode == TIE_AGREEMENT else ARM_ID,
+        "tie_mode": tie_mode,
+        "tie_set_symbol_agreement": recovery["tie_set_symbol_agreement"],
+        "n_tie_agreed": recovery["n_tie_agreed"],
+        "subtype_coverage": recovery["subtype_coverage"],
         "n_s": recovery["n_s"], "n_matched": recovery["n_matched"],
         "n_anchor": recovery["n_anchor"], "n_extended": recovery["n_extended"],
         "match_fraction": recovery["match_fraction"],
@@ -1591,6 +1766,29 @@ def synthetic_pair(n_record: int = 4, n_beat: int = 60, s_every: int = 7,
         records=np.array(records, int), path="<synthetic>", sha256="synthetic")
     source.idx_of = {int(r): np.where(source.record == r)[0] for r in records}
     return cohort, source
+
+
+def quantize_cohort_rr(cohort: QA.AtlasCohort, fs: float = 360.0,
+                       repeats: int = 3, seed: int = 0) -> QA.AtlasCohort:
+    """Make a fixture look like the real thing: sample-quantised, repeating RR.
+
+    MIT-BIH RR values are integer sample counts (2.78 ms at 360 Hz) and a
+    record's S beats reuse the same coupling intervals, which is exactly what
+    made the strict margin rule refuse them. A fixture with continuous random
+    RR has no ties and cannot test the tie rule at all.
+    """
+    rng = np.random.default_rng(seed)
+    for r in cohort.records:
+        idx = cohort.idx_of[int(r)]
+        s_rows = idx[cohort.y_s[idx]]
+        if len(s_rows) > repeats:
+            src = s_rows[: max(1, len(s_rows) // repeats)]
+            pick = rng.choice(src, size=len(s_rows))
+            cohort.pre_rr[s_rows] = cohort.pre_rr[pick]
+            cohort.post_rr[s_rows] = cohort.post_rr[pick]
+    cohort.pre_rr = np.round(cohort.pre_rr * fs) / fs
+    cohort.post_rr = np.round(cohort.post_rr * fs) / fs
+    return cohort
 
 
 def symbol_source_from_cohort(cohort: QA.AtlasCohort, drop: int = 0,
