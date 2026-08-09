@@ -776,6 +776,15 @@ def test_not_run_vs_verified():
         rep = QD.report_bundle(tmp)
         check(rep["decision"] == QD.DECISION_VERIFIED and not rep["recomputed"],
               "after a run the stored bundle reports VERIFIED without recomputing")
+        card = QD.render_gate_card(rep["decision_detail"])
+        check("0/0" not in card,
+              "the replayed card never prints a 0/0 count it did not measure")
+        check("48/48" in card and "12/12" in card,
+              "the replayed card carries the real per-source counts")
+        card_full = QD.render_gate_card(out["decision"], out["inventories"],
+                                        out["wfdb"])
+        check("WFDB open 48/48" in card_full,
+              "a live card still summarises the WFDB rows it was given")
         check(rep["summary"].strip().startswith("# EXP-2026-007"),
               "the stored summary is replayed as saved")
         os.remove(os.path.join(out["audit_dir"], "decision.json"))

@@ -70,7 +70,7 @@ EXPERIMENT_ID = "EXP-2026-007"
 ARM_ID = "Q5-D"
 SUBSTAGE = "PREP_DATA-A ACQUIRE_ONLY"
 RUN_SLUG = "q5d_prep_data"
-MODULE_VERSION = 2
+MODULE_VERSION = 3
 MODULE_BUILD = "2026-08-09"
 
 #: The banner every entry point prints.  It stays this way until a real
@@ -1665,10 +1665,17 @@ def render_gate_card(decision: Dict[str, object],
             f"verified · missing {inv['counts'].get(FILE_MISSING, 0)} · "
             f"hash-mismatch {inv['counts'].get(FILE_HASH_MISMATCH, 0)} · "
             f"{inv['observed_total_bytes'] / 1e6:.1f} MB")
+    # Only summarise what was actually handed in.  Printing "WFDB open 0/0"
+    # when the caller passed no rows (REPORT mode reads decision.json alone)
+    # reads as "nothing was checked" directly above a gate line saying 48/48.
     for src in SOURCES:
         rows = [r for r in wfdb_rows if r.get("database") == src.db]
+        if not rows:
+            continue
         ok = len([r for r in rows if r["status"] == FILE_VERIFIED])
         lines.append(f"  {src.db:<6} WFDB open {ok}/{len(rows)}")
+    if not inventories and not wfdb_rows:
+        lines.append("  (저장된 판정만 읽었다 — 집계는 아래 gate 표가 원본이다)")
     lines.append("-" * 72)
     for g in decision.get("gates", []):
         lines.append(f"  [{'PASS' if g['pass'] else 'FAIL'}] {g['gate']}: "
