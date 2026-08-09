@@ -2,6 +2,28 @@
 
 Updated: 2026-08-08
 
+## 다음 단계 (EXP-2026-004 / Q5-A — DESIGN, RESULT NOT RUN)
+
+residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 실패 지도**다.
+`EXP-2026-004 / Q5-A`(`experiments/specs/EXP-2026-004-q5a-patient-failure-atlas.md`)
+는 **재학습 없이** 저장된 예측만 읽어 어떤 환자·beat·상황에서 S-beat 분류가
+실패하는지 지도로 만들고, 다음 실험에서 검증할 **단 하나의** 개입 가설을
+사전등록 decision tree로 고른다.
+
+- kind `preregistered_analysis_only` · 학습 금지 · 원본 run bundle 변경 금지 ·
+  DS2 정보로 threshold/bin/proxy/branch rule 변경 금지.
+- 언어 경계: Q5-A가 말하는 것은 **failure-associated factor(실패 연관 요인)**
+  까지다. `원인`은 Q5-B에서 그 요인 하나만 바꾸는 개입 + 음성대조군으로 검증한다.
+- 판정 후보: `Q5B_QUALITY_GATE_OR_PREPROCESSING` · `Q5B_ATRIAL_EVIDENCE_BOTTLENECK`
+  · `Q5B_HIERARCHICAL_RR_ATRIAL_MODEL` · `Q5B_PATIENT_ROBUST_OBJECTIVE_PILOT` ·
+  `UNRESOLVED` · `INSUFFICIENT_ARTIFACTS` / `DATA_INTEGRITY_BLOCKED`.
+  근거가 부족하면 억지로 다음 모델을 고르지 않는다.
+- 첫 임무는 아래 "Current benchmark"의 V9 0.597 / V10 0.660을 **실제 저장
+  산출물과 대조해 확정하거나, 확정할 수 없는 이유를 기록**하는 것이다.
+- 상태: **DESIGN READY / RESULT NOT RUN** — Colab `INVENTORY` → `ANALYZE` →
+  `REPORT`가 아직 실행되지 않았다. Q5-B spec·코드·notebook은 Q5-A가 MEASURED로
+  인수되고 사용자가 분기를 승인하기 전에는 만들지 않는다.
+
 ## Measured results (Q4-O / Q4-P) and the next step (Q4-Q)
 
 - **EXP-2026-001 / Q4-O (MEASURED, NO-GO)** — SVDB leakage-free residual CNN.
@@ -35,6 +57,10 @@ Updated: 2026-08-08
 - Required supporting views: patient-level lower tail, patient macro metrics, seed variability, patient bootstrap.
 - Historical path: V8 base CNN → V9 comparison/prototype → V10 explicit P-wave morphology.
 - Recorded reference: V9 `kink_noctx` S PR-AUC about 0.597; V10 `pwave` about 0.660. Verify against ingested run artifacts before publication.
+  **아직 미검증** — 검증은 Q5-A(EXP-2026-004)의 첫 gate다. Q5-A는 provenance만으로
+  baseline을 freeze하며(성능으로 후보를 고르지 않는다), 후보가 식별 불가능하면
+  `AMBIGUOUS_BASELINE`으로 중단하고, beat-level 예측이 없는 모델은 aggregate만
+  기록한 뒤 beat-level 비교에서 제외한다(재학습 금지).
 
 ## Current scientific focus
 The next decision is driven by failure patients and lower-tail robustness, not a small mean-only gain.
@@ -58,6 +84,10 @@ A new spec must state why conditions differ before reopening one.
 - Notebook target: `notebooks/quest49_q4q_transportability_replication.ipynb` (실행본, MEASURED)
 - Next: residual CNN 경로 중단이 확정되었으므로 차기 방향은 새 spec으로 —
   기존 closed 목록을 재개하려면 조건 차이를 명시해야 한다.
+- 차기 spec은 `EXP-2026-004 / Q5-A`(분석 전용 실패 지도, DESIGN / RESULT NOT RUN).
+  Q5-A 결과 bundle 예정 경로:
+  `MyDrive/MedKOS/ecg-model/runs/<ts>_EXP-2026-004_q5a_patient_failure_atlas`
+  (아직 없음). notebook: `notebooks/quest50_q5a_patient_failure_atlas.ipynb`.
 
 ## Immediate intake work
 1. Inventory Drive assets without moving them.
