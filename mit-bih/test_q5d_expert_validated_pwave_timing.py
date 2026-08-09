@@ -166,6 +166,60 @@ class FakeWfdb:
         return type("A", (), {"sample": samples})()
 
 
+class _AmbiguousArray(list):
+    """A sequence that raises on truthiness — exactly what numpy arrays do.
+
+    Measured on Colab 2026-08-09: ``wfdb.rdann(...).sample`` is a numpy array,
+    so ``arr or []`` raised "truth value of an array ... is ambiguous" inside
+    the try/except and every one of the 60 records was misreported as
+    OPEN_FAILED while its bytes were perfectly fine.
+    """
+
+    def __bool__(self):
+        raise ValueError("The truth value of an array with more than one "
+                         "element is ambiguous. Use a.any() or a.all()")
+
+
+class ArrayWfdb(FakeWfdb):
+    """FakeWfdb that returns array-like objects instead of plain lists."""
+
+    def rdheader(self, base):
+        hdr = super().rdheader(base)
+        hdr.sig_name = _AmbiguousArray(hdr.sig_name)
+        return hdr
+
+    def rdann(self, base, ext):
+        ann = super().rdann(base, ext)
+        ann.sample = _AmbiguousArray(ann.sample)
+        return ann
+
+
+def _numpy_wfdb(**kw):
+    """The same fixture backed by real numpy arrays, when numpy is available."""
+    try:
+        import numpy as np
+    except ImportError:
+        return None
+
+    class NumpyWfdb(FakeWfdb):
+        def rdheader(self, base):
+            hdr = super().rdheader(base)
+            hdr.sig_name = np.array(hdr.sig_name)
+            return hdr
+
+        def rdrecord(self, base, sampfrom=0, sampto=None, channels=None):
+            rec = super().rdrecord(base, sampfrom, sampto, channels)
+            rec.p_signal = np.asarray(rec.p_signal)
+            return rec
+
+        def rdann(self, base, ext):
+            ann = super().rdann(base, ext)
+            ann.sample = np.asarray(ann.sample, dtype=int)
+            return ann
+
+    return NumpyWfdb(**kw)
+
+
 def _run(tmp, publisher=None, wfdb=None, timestamp="20260809T2000", **kw):
     pub = publisher or Publisher()
     return QD.run_prep_data_acquire(
@@ -552,6 +606,74 @@ def test_wfdb_open_failures():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def test_wfdb_array_returns():
+    print("array-typed wfdb returns are read, not misreported as OPEN_FAILED")
+    tmp = tempfile.mkdtemp()
+    try:
+        out = _run(tmp, wfdb=ArrayWfdb())
+        check(out["result"]["wfdb_records_ok"] == 60,
+              "60/60 records open when sample/sig_name raise on truthiness")
+        check(out["decision"]["decision"] == QD.DECISION_VERIFIED,
+              "decision is PREP_DATA_ACQUIRED_VERIFIED")
+        row = [r for r in out["wfdb"] if r["record"] == "100"
+               and r["database"] == "mitdb"][0]
+        check(row["ann_count"] > 0 and row["ann_in_range"],
+              "the annotation count and range come through as numbers")
+        check(row["sig_names"] and "|" in row["sig_names"],
+              "lead names survive the array round trip")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    npw = _numpy_wfdb()
+    if npw is None:
+        print("  (numpy unavailable — array-like fixture already covered it)")
+        return
+    tmp = tempfile.mkdtemp()
+    try:
+        out = _run(tmp, wfdb=npw)
+        check(out["result"]["wfdb_records_ok"] == 60,
+              "60/60 records open against real numpy arrays too")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    check(QD._as_list(None) == [] and QD._as_list((1, 2)) == [1, 2]
+          and QD._as_list(_AmbiguousArray([3])) == [3],
+          "_as_list converts without ever testing truthiness")
+
+
+def test_failed_run_is_archived():
+    print("every acquisition keeps an immutable copy, including a stopped one")
+    tmp = tempfile.mkdtemp()
+    try:
+        # The real recovery path: downloads all verified, the WFDB check stopped
+        # the run, and the fixed re-run reuses the complete asset from disk.
+        bad = _run(tmp, wfdb=FakeWfdb(bad_header={"212"}),
+                   timestamp="20260809T2000")
+        check(bad["decision"]["decision"] == QD.DECISION_MISMATCH,
+              "the first run stops with INPUT_ABSENT_OR_MISMATCH")
+        first = str(bad["run_dir"])
+        check(os.path.isdir(first),
+              "its bundle is archived under audit/runs/<timestamp>/")
+        with open(os.path.join(first, "decision.json"), encoding="utf-8") as fh:
+            archived = json.load(fh)
+        good = _run(tmp, timestamp="20260809T2100")
+        check(good["decision"]["decision"] == QD.DECISION_VERIFIED,
+              "the fixed re-run verifies without re-downloading anything")
+        check(all(f["action"].startswith("reused_existing")
+                  for i in good["inventories"] for f in i["files"]),
+              "every file of the re-run came from the existing asset")
+        with open(os.path.join(first, "decision.json"), encoding="utf-8") as fh:
+            still = json.load(fh)
+        check(still == archived and still["decision"] == QD.DECISION_MISMATCH,
+              "the stopped run's evidence survives the successful re-run")
+        rep = QD.report_bundle(tmp)
+        check(rep["archived_runs"] == ["20260809T2000", "20260809T2100"],
+              "the report lists both archived runs")
+        check(rep["decision"] == QD.DECISION_VERIFIED,
+              "audit/ itself holds the latest bundle")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_pwave_annotation_range():
     print("P-wave annotation samples must fall inside the record")
     tmp = tempfile.mkdtemp()
@@ -654,6 +776,15 @@ def test_not_run_vs_verified():
         rep = QD.report_bundle(tmp)
         check(rep["decision"] == QD.DECISION_VERIFIED and not rep["recomputed"],
               "after a run the stored bundle reports VERIFIED without recomputing")
+        card = QD.render_gate_card(rep["decision_detail"])
+        check("0/0" not in card,
+              "the replayed card never prints a 0/0 count it did not measure")
+        check("48/48" in card and "12/12" in card,
+              "the replayed card carries the real per-source counts")
+        card_full = QD.render_gate_card(out["decision"], out["inventories"],
+                                        out["wfdb"])
+        check("WFDB open 48/48" in card_full,
+              "a live card still summarises the WFDB rows it was given")
         check(rep["summary"].strip().startswith("# EXP-2026-007"),
               "the stored summary is replayed as saved")
         os.remove(os.path.join(out["audit_dir"], "decision.json"))
@@ -814,9 +945,21 @@ def test_notebook_contract():
                    "v10pkg", "mamba_data"):
         check(banned not in joined.lower(),
               f"no code cell performs '{banned}'")
-    check(all(len(c.get("outputs", [])) == 0 for c in nb["cells"]
-              if c["cell_type"] == "code"),
-          "the committed notebook carries no outputs (nothing has been run)")
+    # An executed notebook IS the expected end state (AGENTS.md: the executed
+    # notebook is committed after the Colab run).  What must never appear in
+    # those outputs is a claim this stage is not allowed to make.
+    outs = "\n".join("".join(o.get("text", []))
+                     for c in nb["cells"] if c["cell_type"] == "code"
+                     for o in c.get("outputs", []))
+    if outs.strip():
+        check("MEASURED" not in outs,
+              "executed outputs never claim a scientific MEASURED verdict")
+        check(any(code in outs for code in QD.DECISIONS),
+              "executed outputs carry a PREP_DATA decision code")
+        check(QD.DECISION_VERIFIED in outs or QD.DECISION_MISMATCH in outs,
+              "the acquisition decision is visible in the saved outputs")
+    else:
+        print("  (no outputs — the notebook has not been executed yet)")
     first_md = "".join(nb["cells"][0]["source"])
     for token in ("PREP_DATA-A", "NO TRAINING", "RESULT NOT RUN"):
         check(token in first_md, f"the first screen states '{token}'")
@@ -858,6 +1001,7 @@ def main() -> int:
                test_existing_conflicting_asset_stops,
                test_partial_existing_asset_goes_to_staging,
                test_record_list_mismatch_stops, test_wfdb_open_failures,
+               test_wfdb_array_returns, test_failed_run_is_archived,
                test_pwave_annotation_range,
                test_duplicate_waveform_reported_not_substituted,
                test_retry_budget, test_not_run_vs_verified, test_bundle_schema,
