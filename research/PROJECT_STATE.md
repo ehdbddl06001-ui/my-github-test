@@ -26,11 +26,30 @@ run `20260809T1033_EXP-2026-004_q5a_patient_failure_atlas` · 모듈 q5a v8 ·
 - 이것은 `원인`이 아니라 **실패 연관 요인**이다. 인과는 Q5-B에서 요인 하나만 바꾸는
   개입 + 음성대조군으로만 검증한다.
 - **다음 단계(사전등록 D5 next_step: "가장 저비용의 추가 측정 또는 artifact 보강")**:
-  ① `B_SUBTYPE` 복구 측정(학습 없음 — `ecg_multi.npz`의 `sym`을 waveform
-  fingerprint로 대조), ② 그 뒤에도 자격 block이 없고 `B_PATIENT`가 1위면 objective
-  하나만 바꾸는 DS1-only patient-CVaR pilot. 자세한 내용은 spec의
-  「Q5-B design brief」. **Q5-B spec·코드·학습 notebook은 사용자 승인 전까지 만들지
-  않는다.**
+  ① `B_SUBTYPE` 복구 측정, ② 그 뒤에도 자격 block이 없고 `B_PATIENT`가 1위면
+  objective 하나만 바꾸는 DS1-only patient-CVaR pilot. 자세한 내용은 spec의
+  「Q5-B design brief」.
+
+## EXP-2026-005 / Q5-B-0 — 사전 등록 완료, RESULT NOT RUN (2026-08-09 승인)
+
+사용자가 Q5-B 진행을 승인해 **①(측정)** 을 사전 등록했다:
+`experiments/specs/EXP-2026-005-q5b0-subtype-key-recovery.md`.
+
+- 하는 일: 동결 cohort(`mamba_data.npz`)의 **S beat**에 `ecg_multi.npz`의 원
+  annotation symbol을 되붙인다. 키는 `(pre_rr, post_rr)` 초 단위 — **beat 자신의
+  성질만** 쓴다(이웃 RR을 넣으면 행 순서에 의존해 "pool을 섞어도 같은 결과"를
+  증명할 수 없다). symbol은 매칭에 쓰지 않으므로 "매칭된 beat의 symbol이 A/a/J/S에
+  드는가"가 **독립 검증**이 된다.
+- 음성대조군 4종을 사전 등록: permutation(anchor 불변) · shift(대응이 한 칸
+  밀리면 tolerance 밖) · wrong-record(오매칭률 **상한**) · shuffle(복구 symbol을
+  record 안에서 섞으면 `B_SUBTYPE` 효과가 무너져야 한다).
+- gate 실패 = `NO_GO_SUBTYPE_CLOSED` → `B_SUBTYPE` **영구 종결**, Q5-A의
+  `UNRESOLVED`(D5)는 4개 블록 위에서 유지. 추정으로 채우지 않고 재학습하지 않는다.
+- GO면 Q5-A의 `run_atlas`를 **수정 없이** 다시 호출해 5개 블록으로 decision tree를
+  재평가한다. `B_SUBTYPE`은 Q5-A에서 이미 **개입 분기가 없는 서술 블록**이므로,
+  이겨도 자동으로 모델 실험이 되지 않는다(D5로 간다).
+- 학습·GPU 없음. 테스트 155개 통과(CPU). **Q5-B-1(개입 pilot)은 여전히 승인 전까지
+  만들지 않는다.**
 
 ## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 
