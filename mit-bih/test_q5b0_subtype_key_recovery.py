@@ -462,6 +462,52 @@ def test_miss_diagnostics():
           "an unrelated source is reported as diffuse, not as an offset")
 
 
+def test_drop_map_is_kept():
+    print("what the cohort's preprocessing removed is written down")
+    tmp = tempfile.mkdtemp(prefix="q5b0_drop_")
+    try:
+        cohort, source, recs = _pair(n_per=60)
+        # the source carries beats the cohort does not: 3 N beats per record,
+        # and no S beat anywhere
+        keep = np.ones(cohort.n, bool)
+        rng = np.random.default_rng(4)
+        for r in cohort.records:
+            idx = cohort.idx_of[int(r)]
+            n_only = idx[~cohort.y_s[idx]]
+            keep[rng.choice(n_only, size=3, replace=False)] = False
+        thin = QA.synthetic_atlas(n_per_record=60, seed=5)
+        QB.blank_symbols(thin)
+        for attr in ("key", "db", "record", "y5", "y_s", "sym", "pre_rr",
+                     "post_rr"):
+            setattr(thin, attr, getattr(thin, attr)[keep])
+        thin.beat = thin.beat[keep]
+        thin.idx_of = {int(r): np.where(thin.record == r)[0]
+                       for r in thin.records}
+        npz = QB.write_symbol_npz(os.path.join(tmp, "multi.npz"), source)
+        res = QB.run_recovery(thin, npz, os.path.join(tmp, "run"),
+                              log=Q4O.RunLog(echo=False))
+        d = res["drop_map"]
+        check(d["available"] and d["n_missing_from_cohort"] == 3 * len(recs),
+              "every beat the cohort lacks is counted")
+        check(d["missing_by_class"]["S"] == 0,
+              "the S line is reported separately — a dropped S beat would mean "
+              "the atlas scored a filtered S population")
+        by_class = d["missing_by_class"]
+        check(sum(by_class.values()) == d["n_missing_from_cohort"]
+              and by_class["N"] > 0,
+              "the drop is attributed to the classes it came from "
+              f"({by_class})")
+        check(abs(d["rr_corruption_upper_bound"]
+                  - 2 * d["n_missing_from_cohort"] / d["n_cohort"]) < 1e-9,
+              "the RR-corruption bound is twice the drop rate, stated as a bound")
+        rows = open(os.path.join(tmp, "run", "record_mapping.csv"),
+                    encoding="utf-8").read().splitlines()
+        check(len(rows) >= len(recs) and "S_missing" in rows[0],
+              "the per-record drop map is written to the bundle")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_gate_blocks_attachment_and_reanalysis():
     print("NO-GO stops everything downstream")
     cohort, source, recs = _pair(n_per=60, scramble=True)
@@ -744,7 +790,7 @@ def main() -> int:
                test_ordinal_fill_needs_its_licence,
                test_record_identity_is_established_not_assumed,
                test_ordinal_check_judges_the_rule_it_names,
-               test_miss_diagnostics,
+               test_miss_diagnostics, test_drop_map_is_kept,
                test_gate_blocks_attachment_and_reanalysis,
                test_recovery_bundle_and_report,
                test_reanalysis_adds_the_fifth_block,
