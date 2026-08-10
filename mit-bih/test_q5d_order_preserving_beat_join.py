@@ -1420,8 +1420,97 @@ def test_file_set_hashing_reads_content():
           "the cache set is meta.json + 44 record npz")
     check("meta.json" in BJ.cache_expected_files(),
           "meta.json is part of the hashed cache set")
-    check(len(BJ.mitdb_expected_files()) == 44 * 3,
-          "the MIT-BIH set is .dat/.hea/.atr for all 44 records")
+    check(len(BJ.mitdb_expected_files()) == 147,
+          "the MIT-BIH set is the published 48-record tree plus metadata")
+
+
+def test_mitdb_expected_set_is_the_published_tree():
+    """The 2026-08-10 preflight STOPped here; the tree was right, not the set.
+
+    `mitdb-1.0.0` is the publisher's complete MIT-BIH tree: 48 records, not
+    the 44 the join reads.  Expecting only 44 made records 102/104/107/217 —
+    the paced ones the de Chazal split excludes — plus the publisher metadata
+    look "unexpected", and a correct immutable directory failed.
+    """
+    print("MIT-BIH expected set: the published 48-record tree, not the 44")
+    records = BJ.mitdb_all_records()
+    check(len(records) == 48, f"48 published records, got {len(records)}")
+    for paced in ("102", "104", "107", "217"):
+        check(paced in records, f"paced record {paced} is in the published set")
+    ledger_records = {r.record for s in BJ.SPLITS
+                      for r in BJ.build_ledger()[s]}
+    check(len(ledger_records) == 44, "the join's ledger still uses 44 records")
+    check(set(BJ.MITDB_PACED_RECORDS) & ledger_records == set(),
+          "the paced records are NOT in the join ledger — they are only "
+          "expected to exist, never read")
+
+    names = BJ.mitdb_expected_files()
+    check(len(names) == BJ.MITDB_REGISTERED_FILE_COUNT == 147,
+          f"147 files = 48 x 3 + 3 metadata, got {len(names)}")
+    for meta in ("ANNOTATORS", "RECORDS", "SHA256SUMS.txt"):
+        check(meta in names, f"publisher metadata '{meta}' is expected")
+    for name in ("102.atr", "104.dat", "107.hea", "217.atr"):
+        check(name in names, f"'{name}' is expected, not 'unexpected'")
+    for name in ("101.atr", "232.dat"):
+        check(name in names, f"a join record's file '{name}' is still expected")
+
+    # The exact directory the run saw must now verify.
+    tmp = tempfile.mkdtemp(prefix="q5d-mitdb-")
+    try:
+        for name in names:
+            with open(os.path.join(tmp, name), "wb") as fh:
+                fh.write(name.encode())
+        report = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(report["ok"] and not report["extra"] and not report["missing"],
+              f"the published tree verifies with no extras ({report['extra']})")
+        check(report["n_files"] == 147, "all 147 files are hashed")
+        os.remove(os.path.join(tmp, "217.dat"))
+        gone = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not gone["ok"] and gone["missing"] == ["217.dat"],
+              "a genuinely missing published file is still caught")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_publisher_checksums_are_cross_checked():
+    print("MIT-BIH bytes are compared against the publisher's own SHA256SUMS")
+    tmp = tempfile.mkdtemp(prefix="q5d-sums-")
+    try:
+        payloads = {"101.atr": b"aaa", "101.dat": b"bbb", "101.hea": b"ccc"}
+        for name, blob in payloads.items():
+            with open(os.path.join(tmp, name), "wb") as fh:
+                fh.write(blob)
+        digests = {n: BJ.sha256_file(os.path.join(tmp, n)) for n in payloads}
+        sums = os.path.join(tmp, BJ.MITDB_CHECKSUM_FILE)
+        with open(sums, "w", encoding="utf-8") as fh:
+            for name, digest in digests.items():
+                fh.write(f"{digest}  {name}\n")
+
+        names = tuple(payloads) + (BJ.MITDB_CHECKSUM_FILE,)
+        file_set = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        good = BJ.verify_against_publisher_checksums(file_set, tmp)
+        check(good["available"] and good["ok"] and good["verified"] == 3,
+              "matching bytes verify against the publisher list")
+
+        parsed = BJ.parse_sha256sums(sums)
+        check(parsed["101.dat"] == digests["101.dat"],
+              "the checksum file parses to {name: sha256}")
+
+        with open(os.path.join(tmp, "101.dat"), "wb") as fh:
+            fh.write(b"TAMPERED")
+        tampered = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        bad = BJ.verify_against_publisher_checksums(tampered, tmp)
+        check(not bad["ok"] and any("101.dat" in p for p in bad["problems"]),
+              "a byte change is caught against the publisher list")
+
+        os.remove(sums)
+        absent = BJ.verify_against_publisher_checksums(file_set, tmp)
+        check(absent["available"] is False and absent["ok"],
+              "a tree without a checksum file reports unavailable, not passed")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def _fake_freeze(**overrides):
@@ -2029,6 +2118,152 @@ def test_notebook_contract():
           "the notebook loads its numbers from files")
 
 
+def test_notebook_cells_run_in_order():
+    """Run top-to-bottom, no cell may use a name an earlier cell has not set.
+
+    The first Colab run died here twice: a cell referenced ``BJ`` before the
+    import cell, and ``BRANCH`` named a branch that does not exist on origin.
+    Both are ordering/config errors a reader cannot see by skimming, so they
+    are checked mechanically.
+    """
+    print("notebook: cells are consistent top-to-bottom")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    code = [(i, "".join(c["source"])) for i, c in enumerate(nb["cells"])
+            if c["cell_type"] == "code"]
+
+    import_at = min((i for i, s in code
+                     if "import q5d_order_preserving_beat_join" in s),
+                    default=10 ** 6)
+    early = []
+    for index, source in code:
+        if index >= import_at:
+            continue
+        for line in source.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("#"):
+                continue
+            if "BJ." in stripped:
+                early.append((index, stripped))
+    check(not early,
+          f"no cell touches BJ before the import cell ({import_at}): {early}")
+
+    # Names a cell assigns at top level, in order, so later cells can use them.
+    import re
+    defined = set()
+    problems = []
+    watched = ("MODE", "BRANCH", "APPROVAL", "PREFLIGHT", "CANONICAL_MAMBA",
+               "DRIVE", "ASSET_MITDB", "ASSET_CACHE_V10", "ASSET_V10_RESULTS",
+               "ASSET_MAMBA_CANDIDATES", "RUN_DIR", "OPEN_REGISTERED_DATA",
+               "DS1_FROZEN_BUNDLE", "NEED_TESTS")
+    for index, source in code:
+        used = {w for w in watched
+                if re.search(rf"\b{w}\b", source)
+                and not re.search(rf"^\s*{w}\s*=", source, re.M)
+                and f'globals().get("{w}"' not in source}
+        for name in sorted(used - defined):
+            problems.append((index, name))
+        for name in watched:
+            if re.search(rf"^\s*{name}\s*=", source, re.M):
+                defined.add(name)
+    check(not problems,
+          f"every referenced setting is assigned by an earlier cell: "
+          f"{problems[:6]}")
+
+
+def test_notebook_refuses_a_stale_module():
+    """A fresh notebook against an old clone must fail loudly, not confusingly.
+
+    This happened: `main` did not yet carry the corrected MIT-BIH expected
+    set, so a new notebook printed the new message while the cached module
+    still returned the old file count, and the run STOPped for a reason that
+    looked like a data problem.  Two causes, both guarded here — a stale
+    checkout, and `import` returning the module already in `sys.modules`.
+    """
+    print("notebook: a stale module is refused before it can mislead")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    joined = "\n".join("".join(c["source"]) for c in nb["cells"]
+                       if c["cell_type"] == "code")
+    check("del sys.modules[" in joined,
+          "cell 2 purges the cached module before importing")
+    purge_at = min((i for i, c in enumerate(nb["cells"])
+                    if c["cell_type"] == "code"
+                    and "del sys.modules[" in "".join(c["source"])),
+                   default=10 ** 6)
+    import_at = min((i for i, c in enumerate(nb["cells"])
+                     if c["cell_type"] == "code"
+                     and "import q5d_order_preserving_beat_join" in
+                     "".join(c["source"])), default=-1)
+    check(purge_at <= import_at,
+          f"the purge ({purge_at}) happens before the import ({import_at})")
+    check("BJ.MODULE_VERSION >= NEED_MODULE_VERSION" in joined,
+          "the notebook asserts a minimum module version")
+    check("NEED_MODULE_VERSION = " in joined,
+          "the required version is set in the configuration cell")
+    import re
+    need = re.search(r"NEED_MODULE_VERSION = (\d+)", joined)
+    if check(need is not None, "the required version is a literal"):
+        check(int(need.group(1)) == BJ.MODULE_VERSION,
+              f"the notebook requires the current module version "
+              f"({BJ.MODULE_VERSION}), got {need.group(1)}")
+    check("BJ.__file__" in joined,
+          "the notebook prints which file it actually loaded")
+
+
+def test_module_version_tracks_the_contract():
+    print("module version: bumped when the input contract changes")
+    check(BJ.MODULE_VERSION >= 2,
+          "the MIT-BIH/publisher-checksum contract change bumped the version")
+    check(BJ.MITDB_REGISTERED_FILE_COUNT == 147,
+          "version 2 expects the 147-file published tree")
+    check("cache_ledger_contract" in BJ.PREFLIGHT_FREEZE_FIELDS,
+          "version 2 freezes the DS1 cache-ledger contract")
+    # The version is part of the fingerprint, so an old preflight freeze
+    # cannot be reused against the new contract.
+    stale = {"ok": True, "rule_fingerprint": "old" + "0" * 61,
+             "canonical_mamba": {}, "cache_aggregate": {},
+             "mitdb_aggregate": {}, "cache_ledger_contract": {"ok": True},
+             "result_contract": {"ok": True, "n_expected": 25,
+                                 "n_verified": 25, "pid_digest": "d" * 64}}
+    try:
+        BJ.verify_preflight_freeze(stale, "/m", "/c", "/d",
+                                   BJ.EXECUTION_APPROVAL_TOKEN, reverify=False)
+        check(False, "a freeze from the old contract must be refused")
+    except BJ.Q5DJoinError as exc:
+        check("frozen under rule" in str(exc),
+              "a preflight frozen under the old contract cannot be reused")
+
+
+def test_notebook_branch_is_real():
+    print("notebook: BRANCH names something that can actually be fetched")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    joined = "\n".join("".join(c["source"]) for c in nb["cells"]
+                       if c["cell_type"] == "code")
+    import re
+    found = re.search(r'^BRANCH = "([^"]+)"', joined, re.M)
+    if not check(found is not None, "the notebook assigns BRANCH"):
+        return
+    branch = found.group(1)
+    check(branch == "main",
+          f"BRANCH defaults to 'main' (merged code), got {branch!r}")
+    # A stale session-suffixed branch name is the exact failure that happened.
+    check(not re.search(r"-[a-z0-9]{6}$", branch),
+          f"BRANCH is not a session-suffixed working branch ({branch!r})")
+    check("ls-remote" in joined,
+          "a bad BRANCH lists the real branches instead of raising a "
+          "CalledProcessError")
+    check("checkout\", \"-B\"" in joined or '"-B", BRANCH' in joined,
+          "checkout uses -B so an existing local branch is not an error")
+
+
 def test_spec_contract():
     print("spec: approved for implementation, and its constants unchanged")
     if not check(os.path.exists(SPEC), "the join spec exists"):
@@ -2103,6 +2338,8 @@ def main() -> int:
         test_hash_preflight_stops_and_passes,
         test_canonical_mamba_is_resolved_by_bytes,
         test_file_set_hashing_reads_content,
+        test_mitdb_expected_set_is_the_published_tree,
+        test_publisher_checksums_are_cross_checked,
         test_result_grid_is_preregistered_not_globbed,
         test_ds1_does_not_demand_a_result_contract,
         test_all_25_result_files_are_checked,
@@ -2124,6 +2361,10 @@ def main() -> int:
         test_module_reaches_no_outcome,
         test_every_fixture_passes_with_zero_false_pairs,
         test_notebook_contract,
+        test_notebook_cells_run_in_order,
+        test_notebook_refuses_a_stale_module,
+        test_module_version_tracks_the_contract,
+        test_notebook_branch_is_real,
         test_spec_contract,
     ]
     print("=" * 72)
