@@ -7,6 +7,101 @@
 
 ---
 
+## 프롬프트 본문 (Codex 에 그대로 전달)
+
+```text
+너는 Codex 다. repo: ehdbddl06001-ui/my-github-test (MedKOS / ECG).
+
+[먼저 읽어라]
+1. CLAUDE.md, AGENTS.md, docs/AI_COLLABORATION.md
+2. research/PROJECT_STATE.md  (EXP-2026-007 절 · DRIVE_ASSET_PREFLIGHT 절)
+3. research/HANDOFF_2026-08-10_Q5D_preflight_result_to_codex.md   ← 이번 과제 지시서
+4. research/PREFLIGHT_2026-08-10_drive_asset_intake.md  (특히 §13 · §14)
+5. research/PROVENANCE_2026-08-10_mamba_data_lineage.md
+6. experiments/specs/EXP-2026-007-q5d-order-preserving-beat-join-gate.md  ← 개정 대상
+
+[과제]
+위 join 명세(status: draft, design_owner: codex, implementation_owner: claude)를
+개정하라. 설계만 한다. 구현·실행은 하지 않는다.
+
+[왜 개정하는가]
+직전 handoff 는 provenance 가 SOURCE_REPLAY_INCOMPLETE(B) 로 끝날 것을 전제로
+쓰였다. 실제 판정은 SOURCE_REPLAY_PROVEN(A) 로 나왔다. 전제가 깨졌다.
+
+[개정 항목 5건 — 상세는 지시서 §4]
+(1) JOIN_INPUT_ABSENT / B-조건부 조항을 A 기준으로 재정의하라. 삭제가 아니라
+    "A 하에서는 무엇이 남아 있어야 중단인가" 로 다시 쓴다.
+(2) 두 leg 을 분리해 기술하라. 증거의 성격이 다르다.
+    Leg1 (.atr → mamba 행): drop 규칙 3개가 원 .atr 만으로 결정론적 재계산된다.
+    Leg2 (mamba 행 ↔ V9/V10 확률 행): 검출기 의존이라 .atr 로 재계산되지 않는다.
+                                      대신 캐시가 행을 보존하고 record 경계가 확정됐다.
+    실패 양식이 다르므로 gate 를 따로 걸어라.
+(3) Leg2 를 record 단위로 재설계하라. 전역 order-preserving 정렬은 DS2 의
+    105 / 111 / 222 에서 반드시 어긋난다. 지시서 §3 의 44-record 행 대장으로
+    record 경계를 산술로 자르고, 일치 36개와 불일치 8개를 사전 등록으로 분리하라.
+(4) "replay" 의 의미를 명시하라. A 는 전처리 계보(행 선택·순서·입력)를 증명한
+    것이지 학습 산출 확률의 재현이 아니다 — train.py 가
+    keras.utils.enable_op_determinism() 을 호출하지 않아 GPU 학습은 비결정론적이다.
+(5) 첫·끝 비트 eligibility 전제를 고쳐라(직전 handoff 이월). 초안의 "the first or
+    last beat is ineligible when either pre-RR or post-RR is absent" 는 소스와
+    어긋난다 — 첫·끝 비트의 RR 은 없는 것이 아니라 복제된다.
+
+[판단을 너에게 맡긴 것 — 내가 확정하지 않았다]
+"v9/v10 행 ⊆ mamba 행" 이 성립할 개연성이 높고, 따라서 행 수가 같은 record 에서는
+집합도 같을 가능성이 크다. 그러나 개수 일치가 집합 일치를 함의하지 않는다
+(drop 1 + add 1 상쇄 가능). 경계컷 기준도 다르다 — mamba 는 주석 위치 pos 로,
+v9/v10 은 검출 위치 p 로 자른다. 이 가설을 채택할지, 채택한다면 어떤 반증 검사를
+붙일지는 네가 결정하라.
+
+[반드시 지킬 사실 — 틀리면 설계가 무너진다]
+- V9/V10 행 순서 = detect_r() 검출 순서다. .atr ordinal 이 아니다.
+- V9/V10 npz 는 prob·y·pid 만 저장한다. row key 가 없다. identity 는 위치뿐이다.
+- t 를 join key 로 쓸 수 없다. t = np.cumsum(pre) - pre[0] 이라 record 마다 0에서
+  재시작하고 필터링된 RR 누적이라 실제 시각에서 밀린다. 전역 고유성이 없다.
+  Q5-A 실측 조인 1.9%(우연 수준)가 이것으로 설명된다.
+- mamba 행과 V9/V10 행은 같은 집합이 아니다. 8 record 편차, 전체 -31
+  (DS1 -25 / DS2 -6).
+- 232 편중: DS2 S beat 1,837 중 record 232 가 1,382(75.2%). parent spec 의
+  "no single record contributes >50% of all eligible S beats" gate 와 충돌한다.
+
+[바꾸지 말 것]
+과학적 질문 · DS1→DS2 inter-patient split · primary metric(join_min_class_recall) ·
+parent primary(S_PR_AUC) · 중단 조건 · 성공 gate 구조 · 단일 사전등록 경로 원칙.
+필요한 변경은 임의로 하지 말고 명세의 Decision log 에 사유와 함께 남겨라.
+
+[절대 하지 말 것]
+- beat join 실행. 설계만이다. A 조항이 실행에 별도 승인을 요구한다.
+- DS2 per-beat class label 열람 · V10 probability 값 열람.
+- join 성능을 보고 provenance 경로나 join 규칙을 고르는 것.
+- 여러 join 규칙을 돌린 뒤 가장 좋은 것을 고르는 것.
+- 모델 학습·재학습.
+- Drive 파일 이동·삭제·덮어쓰기.
+- status 를 스스로 approved_for_implementation 으로 올리는 것.
+- 브랜치 claude/drive-asset-preflight-check-ayt9iy (PR #78) 를 건드리는 것.
+
+[산출 형식]
+- 최신 main 에서 시작해 브랜치 codex/<task> 에서 작업한다.
+- experiments/specs/EXP-2026-007-q5d-order-preserving-beat-join-gate.md 를 개정하고
+  변경 사유를 Decision log 에 적는다.
+- status 는 draft 로 둔 채 PR 을 올리고 사용자 승인을 기다린다.
+- 커밋 전 CLAUDE.md 의 필수 순서를 따른다
+  (git fetch origin main && git merge origin/main → indexer --check → indexer).
+
+[승인 경계]
+[1] 네가 draft 개정  ← 지금
+[2] 사용자 승인 → status: approved_for_implementation
+[3] Claude Code 가 구현 (implementation_owner: claude, 브랜치 claude/<task>)
+[4] beat join 실행에 대한 별도 사용자 승인   ← A 조항이 요구
+[5] 실행 → Drive run bundle → 노트북 커밋 → ingest_run.py 로그
+
+[2]와 [4]는 별개의 승인이다. [2]는 "이 설계로 코드를 짜도 된다", [4]는 "그 코드를
+실제 데이터에 돌려도 된다" 이다. 명세가 이 둘을 뭉뚱그리지 않게 하라.
+V10 확률과 association 분석은 join 이 자체 gate 를 통과하고 그에 대한 별도 승인을
+받을 때까지 봉인 상태다.
+```
+
+---
+
 ## 0. 한 줄 요약
 
 **`DRIVE_ASSET_PREFLIGHT` 판정이 `SOURCE_REPLAY_PROVEN`(A)로 나왔다.** 명세가 예상하던
