@@ -2500,6 +2500,40 @@ def test_missing_dependency_stops_before_the_stage():
           "the requirement table is restored")
 
 
+def test_leg2_stage_does_not_run_the_null():
+    """`LEG2_RECORD_JOIN` must mean the join, not the join plus a 14-hour null.
+
+    `run_join` runs the registered null whenever the split is DS1, so the
+    notebook selecting DS1 for `LEG2_RECORD_JOIN` turned "let me look at the
+    join" into a run that cannot finish in a Colab session.
+    """
+    print("LEG2_RECORD_JOIN is the join; the null belongs to DS1_GATE")
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    joined = "\n".join("".join(c["source"]) for c in nb["cells"]
+                        if c["cell_type"] == "code")
+    check('NULL_REPLICATES = 0 if MODE == "LEG2_RECORD_JOIN"' in joined,
+          "LEG2_RECORD_JOIN passes zero replicates")
+    check("null_replicates=NULL_REPLICATES" in joined,
+          "the choice is actually passed to run_join")
+    check("estimate_null_runtime" in joined,
+          "DS1_GATE prints the expected null cost before starting")
+
+    # The estimator itself, and the fact that it never suggests shrinking.
+    est = BJ.estimate_null_runtime(2.0)
+    check(est["joins"] == 3 * BJ.N_NULL_REPLICATES,
+          f"the null is 3 families x {BJ.N_NULL_REPLICATES} replicates")
+    check(abs(est["total_hours"] - 3 * BJ.N_NULL_REPLICATES * 2.0 / 3600) < 1e-9,
+          "the estimate is replicates x seconds, plainly")
+    check("registered" in est["note"] and "different rule" in est["note"],
+          "the estimator says a shorter null is a different rule")
+    small = BJ.estimate_null_runtime(2.0, 10)
+    check(small["joins"] == 30, "a planning estimate can use fewer, but the "
+                                "registered constant is unchanged")
+    check(BJ.N_NULL_REPLICATES == 10000,
+          "N_NULL_REPLICATES is still the registered 10,000")
+
+
 def test_module_version_tracks_the_contract():
     print("module version: bumped when the input contract changes")
     check(BJ.MODULE_VERSION >= 3,
@@ -2690,6 +2724,7 @@ def main() -> int:
         test_notebook_refuses_a_stale_module,
         test_every_stage_declares_its_dependencies,
         test_missing_dependency_stops_before_the_stage,
+        test_leg2_stage_does_not_run_the_null,
         test_module_version_tracks_the_contract,
         test_no_stage_can_skip_silently,
         test_notebook_branch_is_real,

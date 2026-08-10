@@ -1206,3 +1206,47 @@ Required outputs:
 
   No threshold, tolerance, gate, statistic, seed or stopping rule changed.
   650 assertions pass.
+- 2026-08-10 — **Leg 1 passes on DS1.  Null runtime measured and flagged.**
+
+  `LEG1_REPLAY_AUDIT` on DS1: **`ok=True`, replayed 50,576 / 50,576**, and the
+  mamba `pid` blocks match the ledger for every record.  Because
+  `audit_leg1_against_ledger` reported no problems, all four of its checks
+  held: per-record counts, `.atr` ordinal order, strictly increasing R samples
+  after filtering, and — with the stored mamba RR supplied at
+  `rr_atol_samples = 0` — **every pre- and post-RR value matching exactly** in
+  integer samples across all 50,576 rows.
+
+  This is the deterministic leg holding.  The three frozen rules and the RR
+  semantic read out of `v15b_local.py` (post-filter, seconds, duplicated
+  endpoints) are confirmed against the registered artifact rather than
+  assumed, and `JOIN_RULE_FALSIFIED` / `LEG1_SOURCE_REPLAY` did not fire.  It
+  says nothing yet about Leg 2 identifiability.
+
+  DS2 Leg 1 is deliberately not run yet: DS2 raw `.atr` symbols are available
+  "only after the join rule and code are frozen", which is after the DS1 gate.
+
+  **Feasibility finding, raised before it costs a run.**  A single complete
+  DS1 Leg 2 join over the 22 records measures at ~1.7 s (22 records, ~2,300
+  rows each, realistic RR density; ~317k candidate edges).  The registered
+  null is 3 families x 10,000 replicates, each rerunning the *complete* Leg 2
+  — 30,000 joins, about **14 hours**.  A profile puts 85% of that in
+  `match_record` (the prefix/suffix Fenwick DP, ~635k tree operations per
+  join); row construction and schema validation are only ~15%, so trimming
+  those does not change the picture.
+
+  `N_NULL_REPLICATES` is registered and enters the rule fingerprint, so a
+  shorter null is **a different rule, not a faster run**.  It has not been
+  touched.  The legitimate options are execution strategy — optimise the
+  matcher without changing what it computes, or checkpoint the null across
+  sessions — and the choice belongs to Codex, not to whoever is impatient at
+  the console.  `estimate_null_runtime()` reports the cost, and says so.
+
+  One defect fixed on the way: `run_join` runs the null whenever the split is
+  DS1, and the notebook selected DS1 for `LEG2_RECORD_JOIN` — so choosing
+  "look at the join" would have silently started the 14-hour null.  The stages
+  now mean what their names say: `LEG2_RECORD_JOIN` does the record-wise join
+  and coverage with no null (seconds); `DS1_GATE` runs the registered null and
+  prints its expected cost first.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  663 assertions pass.

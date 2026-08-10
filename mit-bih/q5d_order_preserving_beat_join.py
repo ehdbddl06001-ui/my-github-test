@@ -1503,6 +1503,26 @@ def load_cache_classes(cache_dir: str, split: str,
     return out
 
 
+def estimate_null_runtime(seconds_per_join: float,
+                          replicates: int = N_NULL_REPLICATES) -> Dict[str, object]:
+    """How long the registered null will take, from one measured join.
+
+    Each replicate reruns the **complete** Leg 2 for every record — that is
+    what makes the control a control, and it is why the cost is what it is.
+    The replicate count is registered and part of the rule fingerprint, so
+    this function exists to *plan* the run, never to justify shrinking it.
+    """
+    total = len(CONTROL_FAMILIES) * int(replicates)
+    seconds = total * float(seconds_per_join)
+    return {"joins": total, "families": len(CONTROL_FAMILIES),
+            "replicates_per_family": int(replicates),
+            "seconds_per_join": float(seconds_per_join),
+            "total_seconds": seconds, "total_hours": seconds / 3600.0,
+            "note": ("N_NULL_REPLICATES is registered and enters the rule "
+                     "fingerprint; a shorter null is a different rule, not a "
+                     "faster one.")}
+
+
 def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
              preflight: Mapping[str, object],
              approval: Optional[str] = None,
