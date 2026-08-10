@@ -1843,6 +1843,9 @@ def assert_runtime_ready(mode: str = MODE_DESIGN) -> Dict[str, object]:
             f"stage {report['mode']} needs {report['missing']}, which "
             f"cannot be imported.  Install the pinned runtime first:\n"
             f"    pip install -q {wanted} pyarrow\n"
+            f"In Colab a runtime restart wipes pip installs, so re-run the "
+            f"install cell after every restart — the notebook keeps it as a "
+            f"standalone cell near the top for exactly that reason.\n"
             f"Stopping before the stage starts, so nothing is read and no "
             f"partial run is produced.")
     return report

@@ -2384,6 +2384,27 @@ def test_notebook_refuses_a_stale_module():
           "the notebook prints which file it actually loaded")
     check("pip" in joined and "wfdb==4.3.1" in joined,
           "the notebook installs the pinned runtime before using it")
+    # A Colab restart wipes pip installs, so the install must be re-runnable
+    # on its own — not buried in a cell that also clones the repo.
+    install_cells = [i for i, c in enumerate(nb["cells"])
+                     if c["cell_type"] == "code"
+                     and "wfdb==4.3.1" in "".join(c["source"])]
+    check(len(install_cells) >= 1, "there is an install cell")
+    standalone = [i for i in install_cells
+                  if "git" not in "".join(nb["cells"][i]["source"])]
+    check(standalone, "at least one install cell is standalone (no git), so "
+                      "it can be re-run alone after a runtime restart")
+    check(min(standalone) < min(
+        (i for i, c in enumerate(nb["cells"])
+         if c["cell_type"] == "code"
+         and "import q5d_order_preserving_beat_join" in "".join(c["source"])),
+        default=10 ** 6),
+        "the standalone install runs before the module import")
+    first_install = "".join(nb["cells"][min(standalone)]["source"])
+    check("재시작" in first_install,
+          "the install cell tells the reader to re-run it after a restart")
+    check("assert _ok" in first_install or "assert" in first_install,
+          "the install cell verifies the imports actually work afterwards")
     check("check_runtime_dependencies" in joined
           and "assert_runtime_ready" in joined,
           "the notebook checks the stage's imports in the setup cell")
