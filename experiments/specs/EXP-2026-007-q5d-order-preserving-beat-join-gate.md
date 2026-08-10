@@ -1250,3 +1250,54 @@ Required outputs:
 
   No threshold, tolerance, gate, statistic, seed or stopping rule changed.
   663 assertions pass.
+- 2026-08-10 — **Null shard runner.  Science unchanged; execution scheduling
+  only.**
+
+  The registered null is 3 families x 10,000 replicates, each rerunning the
+  complete Leg 2 — measured at ~14 hours, longer than a Colab session.  Codex
+  directed that it be scheduled, not shortened: no reduction, no early stop,
+  no approximation, no omitted family.  This entry records that nothing
+  scientific moved.
+
+  **Unchanged and asserted by test**: `N_NULL_REPLICATES = 10000`, the three
+  `CONTROL_FAMILIES` in order, `MASTER_SEED = 2026017`,
+  `BOOTSTRAP_SEED = 2026018`, 2,000 bootstrap replicates, the matcher, the
+  candidate rule, the one-sample tolerance, the certification definition,
+  `J_null_max[b]` as the per-replicate maximum over the three families, every
+  gate and stopping rule, `rule_fingerprint`, `MODULE_VERSION = 3`, and the
+  preflight and Leg 1 contracts.  A test also asserts that changing the shard
+  size does **not** move `rule_fingerprint`: scheduling is not part of the
+  rule.
+
+  **What was added.**  Replicates are cut into *null shards* of 100, each
+  holding the same replicate range for **all three families**, so
+  `J_null_max` never straddles a boundary.  `apply_control` is already seeded
+  per `(family, replicate)`, so replicate `b` is the same value whoever
+  computes it and whenever — sharding decides only who computes it.  Shards
+  are immutable resume artifacts (never model checkpoints; no trained state
+  exists here) and an existing file is never overwritten.  A shard is reused
+  only after its own digest verifies *and* its identity matches: runner
+  version, split, families, master seed, rule fingerprint, code SHA-256 and a
+  preflight-derived input digest.  Each shard also records replicate range,
+  worker count and git commit; `worker_count` is deliberately outside the
+  digest so one worker and two produce byte-identical shards.  Execution uses
+  `ProcessPoolExecutor` with a default of two workers, and the final arrays
+  are assembled sorted by `(family, replicate)`, so neither completion order
+  nor worker count can reach the numbers.
+
+  `finalize_null_shards()` is the only route to the arrays and STOPs on a
+  missing, duplicated or overlapping replicate, a failed digest, a wrong
+  `j_null_max`, or any mixture of fingerprint, code hash or input digest.
+  **Nothing downstream — `null_summary`, the gate decision, the DS2 release —
+  can be built from an incomplete null.**
+
+  **Equivalence, all tested**: sharded equals serial bitwise on a fixed
+  replicate count; one worker equals two, with identical shard digests; shard
+  sizes 1/4/5/12/100 give the same arrays; shards completed in reverse order
+  give the same arrays; an interrupted run resumed gives exactly the
+  uninterrupted arrays; and corrupt, missing, duplicate, overlapping and
+  mixed-identity shards are all refused.  The existing fixtures and the
+  brute-force forced-edge oracle continue to pass.
+
+  Matcher optimisation was explicitly excluded from this work and none was
+  done.  763 assertions pass.  No registered data was executed.

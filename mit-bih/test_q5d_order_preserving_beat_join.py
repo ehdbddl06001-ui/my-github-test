@@ -2259,14 +2259,18 @@ def test_notebook_contract():
     check(joined.count("assert not os.path.exists(") >= 3,
           "every bundle writer refuses to overwrite an existing folder")
     # Leg 1 must not start on an unproven input contract.
-    leg1_cell = [c for c in nb["cells"] if c["cell_type"] == "code"
-                 and "replay_leg1_split" in "".join(c["source"])]
-    if check(len(leg1_cell) == 1, "there is exactly one Leg 1 cell"):
-        body = "".join(leg1_cell[0]["source"])
-        check('PREFLIGHT.get("ok")' in body,
-              "the Leg 1 cell asserts the preflight passed")
-        check("rule_fingerprint" in body,
-              "the Leg 1 cell checks the preflight was frozen under this rule")
+    leg1_cells = [c for c in nb["cells"] if c["cell_type"] == "code"
+                  and "replay_leg1_split" in "".join(c["source"])]
+    if check(leg1_cells, "at least one cell replays Leg 1"):
+        for cell in leg1_cells:
+            body = "".join(cell["source"])
+            check('PREFLIGHT.get("ok")' in body,
+                  "every cell that replays `.atr` asserts the preflight passed")
+        audit = [c for c in leg1_cells
+                 if "audit_leg1_against_ledger" in "".join(c["source"])]
+        if check(len(audit) == 1, "exactly one cell is the Leg 1 audit"):
+            check("rule_fingerprint" in "".join(audit[0]["source"]),
+                  "the audit checks the preflight was frozen under this rule")
     check("assert not os.path.exists(RUN_DIR)" in joined,
           "the notebook refuses to overwrite an existing run bundle")
 
@@ -2512,10 +2516,18 @@ def test_leg2_stage_does_not_run_the_null():
         nb = json.load(fh)
     joined = "\n".join("".join(c["source"]) for c in nb["cells"]
                         if c["cell_type"] == "code")
-    check('NULL_REPLICATES = 0 if MODE == "LEG2_RECORD_JOIN"' in joined,
-          "LEG2_RECORD_JOIN passes zero replicates")
-    check("null_replicates=NULL_REPLICATES" in joined,
-          "the choice is actually passed to run_join")
+    check("null_replicates=0" in joined,
+          "the join cell never runs the null inline")
+    check("run_null_shards" in joined,
+          "the null runs through the shard runner, in DS1_GATE")
+    check("finalize_null_shards" in joined,
+          "the notebook finalises rather than assembling shards by hand")
+    check('stage_should_run(("DS1_GATE",)' in joined,
+          "the shard cell is DS1_GATE only and announces itself")
+    check("SHARD_DIR" in joined and "timestamp" not in joined.split("SHARD_DIR")[1][:200],
+          "the shard directory is stable across sessions, so resume works")
+    check("DEFAULT_MAX_WORKERS" in joined,
+          "the notebook uses the registered default worker count")
     check("estimate_null_runtime" in joined,
           "DS1_GATE prints the expected null cost before starting")
 
@@ -2587,12 +2599,13 @@ def test_no_stage_can_skip_silently():
           "the skip message warns that the constants above are not results")
 
     # Every cell that opens registered data must be behind the helper.
-    for marker in ("replay_leg1_split", "BJ.run_join("):
+    for marker in ("replay_leg1_split", "BJ.run_join(", "run_null_shards"):
         owners = [c for c in cells if marker in "".join(c["source"])]
-        if check(len(owners) == 1, f"exactly one cell calls {marker}"):
-            body = "".join(owners[0]["source"])
-            check("stage_should_run(" in body,
-                  f"the {marker} cell is guarded by the announcing helper")
+        if check(owners, f"at least one cell calls {marker}"):
+            for cell in owners:
+                body = "".join(cell["source"])
+                check("stage_should_run(" in body,
+                      f"every {marker} cell is behind the announcing helper")
 
 
 def test_notebook_branch_is_real():
@@ -2651,6 +2664,431 @@ def test_spec_contract():
     check("mit-bih/q5d_qualify_*" in spec and "quest53_" in spec,
           "the qualification files are still marked do-not-touch")
 
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Null shard runner — execution scheduling only.  These tests exist to prove
+# that scheduling cannot reach the numbers.
+# ─────────────────────────────────────────────────────────────────────────────
+import contextlib
+
+
+@contextlib.contextmanager
+def _tiny_ledger(records=("901", "902", "903"), n=14, split="DS1"):
+    """Swap in a small registered ledger so shard tests run the real path.
+
+    `join_split` enforces the 44-record ledger's exact row counts — correctly,
+    and that guard is not weakened for tests.  Instead the ledger itself is
+    temporarily a small registered one, so the production code path (ledger
+    cut, per-record match, certification) is exercised end to end at a size a
+    test can afford.
+    """
+    saved = (BJ.CACHE_LEDGER, BJ.MAMBA_COUNT_DELTA)
+    try:
+        BJ.CACHE_LEDGER = {"DS1": (), "DS2": ()}
+        BJ.CACHE_LEDGER[split] = tuple((r, n) for r in records)
+        BJ.MAMBA_COUNT_DELTA = {}
+        yield
+    finally:
+        BJ.CACHE_LEDGER, BJ.MAMBA_COUNT_DELTA = saved
+
+
+def _null_context(records=("901", "902", "903"), n=14, split="DS1"):
+    """A small but real null context: real matcher, real controls."""
+    mamba, cache, processed, mamba_classes = {}, {}, {}, {}
+    for index, record in enumerate(records):
+        rng = random.Random(f"shard-fixture-{record}")
+        intervals = tuple(300 + rng.randrange(6) * 2 for _ in range(n - 1))
+        samples = [200 + s for s in BJ._walk(intervals)]
+        pre, post = BJ._rr_from_samples(samples)
+        mamba[record] = seq(record, "mamba", pre, post, split=split)
+        cache[record] = seq(record, "cache", pre, post, split=split)
+        for row in range(len(pre)):
+            cls = BJ.AAMI_CLASSES[(row + index) % len(BJ.AAMI_CLASSES)]
+            processed[(record, row)] = cls
+            mamba_classes[(record, row)] = cls
+    return BJ.NullContext(split, mamba, cache, processed, mamba_classes,
+                          input_digest="a" * 64, code_sha256="b" * 64,
+                          git_commit="deadbeef")
+
+
+def _serial_null(context, total):
+    """The reference: exactly what run_join's in-line loop does."""
+    out = {}
+    for family in BJ.CONTROL_FAMILIES:
+        values = []
+        for replicate in range(total):
+            transformed = BJ.apply_control(family, context.mamba_by_record,
+                                           replicate)
+            rows = BJ.join_split(transformed, context.cache_by_record,
+                                 context.split)["rows"]
+            values.append(BJ.j_min(rows, context.processed_classes,
+                                   context.mamba_classes))
+        out[family] = values
+    return out
+
+
+def test_shard_plan_covers_every_replicate_exactly_once():
+    print("shard plan: 0..9999 covered exactly once, nothing truncated")
+    plan = BJ.shard_plan()
+    check(len(plan) == 100, f"100 shards of {BJ.DEFAULT_SHARD_SIZE}")
+    check(plan[0] == (0, 100) and plan[-1] == (9900, 10000),
+          "the plan runs from 0 to the registered total")
+    covered = [b for s, e in plan for b in range(s, e)]
+    check(covered == list(range(BJ.N_NULL_REPLICATES)),
+          "every replicate appears exactly once, in order")
+    check(BJ.N_NULL_REPLICATES == 10000, "the registered total is untouched")
+    check(len(BJ.CONTROL_FAMILIES) == 3, "three families, untouched")
+    check(BJ.MASTER_SEED == 2026017, "the master seed is untouched")
+    ragged = BJ.shard_plan(10, 3)
+    check(ragged == ((0, 3), (3, 6), (6, 9), (9, 10)),
+          "a ragged last shard is exact, not padded or dropped")
+    for bad in ((0, 100), (100, 0), (-1, 5)):
+        try:
+            BJ.shard_plan(*bad)
+            check(False, f"shard_plan{bad} must be refused")
+        except BJ.NullShardError:
+            check(True, f"shard_plan{bad} is refused")
+
+
+def test_sharded_equals_serial_bitwise():
+    print("sharded == serial, bitwise, on a fixed small replicate count")
+    with _tiny_ledger():
+        total = 9
+        context = _null_context()
+        reference = _serial_null(context, total)
+        tmp = tempfile.mkdtemp(prefix="q5d-shard-")
+        try:
+            shards = BJ.run_null_shards(context, tmp, total=total, shard_size=3,
+                                        max_workers=1)
+            assembled = BJ.finalize_null_shards(shards, context, total=total)
+            for family in BJ.CONTROL_FAMILIES:
+                check(assembled[family] == reference[family],
+                      f"family {family}: sharded values are bitwise identical")
+            check(len(shards) == 3, "three shards were produced")
+            # J_null_max must be the per-replicate max across the three families.
+            for (start, end), payload in sorted(shards.items()):
+                for k in range(end - start):
+                    want = max(payload["j"][f][k] for f in BJ.CONTROL_FAMILIES)
+                    check(payload["j_null_max"][k] == want,
+                          f"j_null_max[{start + k}] is the family maximum") if k == 0 \
+                        else None
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_shard_size_does_not_change_the_result():
+    print("different shard sizes assemble the same arrays")
+    with _tiny_ledger():
+        total = 12
+        context = _null_context()
+        reference = _serial_null(context, total)
+        for size in (1, 4, 5, 12, 100):
+            tmp = tempfile.mkdtemp(prefix=f"q5d-size{size}-")
+            try:
+                shards = BJ.run_null_shards(context, tmp, total=total,
+                                            shard_size=size, max_workers=1)
+                assembled = BJ.finalize_null_shards(shards, context, total=total)
+                same = all(assembled[f] == reference[f]
+                           for f in BJ.CONTROL_FAMILIES)
+                check(same, f"shard_size={size} gives the reference arrays")
+            finally:
+                import shutil
+                shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_worker_count_does_not_change_the_result():
+    print("worker 1 vs 2: identical arrays and identical shard digests")
+    with _tiny_ledger():
+        total = 8
+        context = _null_context()
+        produced = {}
+        for workers in (1, 2):
+            tmp = tempfile.mkdtemp(prefix=f"q5d-w{workers}-")
+            try:
+                shards = BJ.run_null_shards(context, tmp, total=total,
+                                            shard_size=2, max_workers=workers)
+                produced[workers] = (
+                    BJ.finalize_null_shards(shards, context, total=total),
+                    {k: v["digest"] for k, v in shards.items()},
+                    {k: v["worker_count"] for k, v in shards.items()})
+            finally:
+                import shutil
+                shutil.rmtree(tmp, ignore_errors=True)
+        one, two = produced[1], produced[2]
+        for family in BJ.CONTROL_FAMILIES:
+            check(one[0][family] == two[0][family],
+                  f"family {family}: one worker equals two workers")
+        check(one[1] == two[1],
+              "shard digests match, so worker_count is excluded from the digest")
+        check(one[2] != two[2] or BJ.DEFAULT_MAX_WORKERS == 1,
+              "worker_count is still recorded, it simply does not enter the digest")
+
+
+def test_completion_order_does_not_change_the_result():
+    print("shards finished in reverse order assemble the same arrays")
+    with _tiny_ledger():
+        total = 9
+        context = _null_context()
+        reference = _serial_null(context, total)
+        tmp = tempfile.mkdtemp(prefix="q5d-order-")
+        try:
+            plan = list(BJ.shard_plan(total, 3))
+            shards = {}
+            for start, end in reversed(plan):          # deliberately backwards
+                payload = BJ.compute_null_shard(context, start, end, 1)
+                BJ.write_null_shard(tmp, payload)
+                shards[(start, end)] = payload
+            assembled = BJ.finalize_null_shards(shards, context, total=total)
+            for family in BJ.CONTROL_FAMILIES:
+                check(assembled[family] == reference[family],
+                      f"family {family}: reverse completion gives the same array")
+            reread = BJ.load_existing_shards(tmp, context)
+            rebuilt = BJ.finalize_null_shards(reread, context, total=total)
+            check(rebuilt == assembled,
+                  "re-reading from disk gives the same arrays again")
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_resume_equals_uninterrupted():
+    print("interrupted then resumed == uninterrupted")
+    with _tiny_ledger():
+        total = 12
+        context = _null_context()
+        reference = _serial_null(context, total)
+        tmp = tempfile.mkdtemp(prefix="q5d-resume-")
+        try:
+            # "Crash" after two shards.
+            plan = BJ.shard_plan(total, 3)
+            for start, end in plan[:2]:
+                BJ.write_null_shard(tmp, BJ.compute_null_shard(context, start,
+                                                               end, 1))
+            partial = BJ.load_existing_shards(tmp, context)
+            check(len(partial) == 2, "two shards survived the interruption")
+            try:
+                BJ.finalize_null_shards(partial, context, total=total)
+                check(False, "an incomplete null must not finalise")
+            except BJ.NullShardError as exc:
+                check("missing" in str(exc),
+                      "the incomplete null names the missing replicates")
+                check("may not be truncated" in str(exc),
+                      "and says the registered null may not be truncated")
+
+            shards = BJ.run_null_shards(context, tmp, total=total, shard_size=3,
+                                        max_workers=1)
+            check(len(shards) == 4, "the resumed run completed the plan")
+            assembled = BJ.finalize_null_shards(shards, context, total=total)
+            for family in BJ.CONTROL_FAMILIES:
+                check(assembled[family] == reference[family],
+                      f"family {family}: resumed equals uninterrupted")
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_shards_are_immutable():
+    print("a shard is never overwritten")
+    with _tiny_ledger():
+        context = _null_context()
+        tmp = tempfile.mkdtemp(prefix="q5d-immutable-")
+        try:
+            payload = BJ.compute_null_shard(context, 0, 3, 1)
+            path = BJ.write_null_shard(tmp, payload)
+            check(os.path.exists(path), "the shard was written")
+            try:
+                BJ.write_null_shard(tmp, payload)
+                check(False, "rewriting the same shard must be refused")
+            except BJ.NullShardError as exc:
+                check("immutable" in str(exc),
+                      "the refusal calls the shard an immutable resume artifact")
+                check("checkpoint" not in str(exc).lower(),
+                      "shards are resume artifacts, never called checkpoints")
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_corrupt_or_mixed_shards_are_rejected():
+    print("finalizer STOPs on corrupt, mixed, missing, duplicate or overlapping")
+    with _tiny_ledger():
+        total = 9
+        context = _null_context()
+        tmp = tempfile.mkdtemp(prefix="q5d-reject-")
+        try:
+            good = {}
+            for start, end in BJ.shard_plan(total, 3):
+                payload = BJ.compute_null_shard(context, start, end, 1)
+                good[(start, end)] = payload
+                BJ.write_null_shard(tmp, payload)
+            check(BJ.finalize_null_shards(good, context, total=total),
+                  "the clean set finalises")
+
+            # corrupt: an edited J value no longer matches the stored digest
+            corrupt = json.loads(json.dumps(good[(0, 3)]))
+            corrupt["j"][BJ.CONTROL_FAMILIES[0]][0] = 0.123456
+            path = os.path.join(tmp, BJ.shard_filename(0, 3))
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(corrupt, fh)
+            try:
+                BJ.read_null_shard(path)
+                check(False, "an edited shard must fail its digest")
+            except BJ.NullShardError as exc:
+                check("corrupt" in str(exc) or "digest" in str(exc),
+                      "the edited shard is rejected by digest")
+
+            # mixture: fingerprint / code hash / input digest
+            for field, value in (("rule_fingerprint", "0" * 64),
+                                 ("code_sha256", "c" * 64),
+                                 ("input_digest", "d" * 64),
+                                 ("master_seed", 1),
+                                 ("split", "DS2")):
+                mixed = {k: json.loads(json.dumps(v)) for k, v in good.items()}
+                mixed[(0, 3)][field] = value
+                mixed[(0, 3)]["digest"] = BJ.shard_digest(mixed[(0, 3)]) \
+                    if field in BJ.SHARD_DIGEST_FIELDS else mixed[(0, 3)]["digest"]
+                try:
+                    BJ.finalize_null_shards(mixed, context, total=total)
+                    check(False, f"a shard with a different {field} must be refused")
+                except BJ.NullShardError as exc:
+                    check(field in str(exc) or "digest" in str(exc),
+                          f"a different {field} is refused")
+
+            # duplicate / overlap
+            overlapping = dict(good)
+            overlapping[(2, 5)] = BJ.compute_null_shard(context, 2, 5, 1)
+            try:
+                BJ.finalize_null_shards(overlapping, context, total=total)
+                check(False, "overlapping shards must be refused")
+            except BJ.NullShardError as exc:
+                check("appears in both" in str(exc),
+                      "the overlap names the doubly-covered replicate")
+
+            # missing
+            incomplete = {k: v for k, v in good.items() if k != (3, 6)}
+            try:
+                BJ.finalize_null_shards(incomplete, context, total=total)
+                check(False, "a gap must be refused")
+            except BJ.NullShardError as exc:
+                check("missing" in str(exc), "the gap is named")
+
+            # a shard whose j_null_max is not the family maximum
+            tampered = {k: json.loads(json.dumps(v)) for k, v in good.items()}
+            tampered[(0, 3)]["j_null_max"][0] = -1.0
+            tampered[(0, 3)]["digest"] = BJ.shard_digest(tampered[(0, 3)])
+            try:
+                BJ.finalize_null_shards(tampered, context, total=total)
+                check(False, "a wrong j_null_max must be refused")
+            except BJ.NullShardError as exc:
+                check("family" in str(exc) and "maximum" in str(exc),
+                      "j_null_max is checked against the three families")
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_reused_shards_must_verify():
+    print("existing shards are reused only after digest and identity checks")
+    with _tiny_ledger():
+        context = _null_context()
+        other = BJ.NullContext(context.split, context.mamba_by_record,
+                               context.cache_by_record, context.processed_classes,
+                               context.mamba_classes, input_digest="z" * 64,
+                               code_sha256="b" * 64)
+        tmp = tempfile.mkdtemp(prefix="q5d-reuse-")
+        try:
+            BJ.write_null_shard(tmp, BJ.compute_null_shard(context, 0, 3, 1))
+            check(len(BJ.load_existing_shards(tmp, context)) == 1,
+                  "a matching shard is reusable")
+            try:
+                BJ.load_existing_shards(tmp, other)
+                check(False, "a shard from another input digest must be refused")
+            except BJ.NullShardError as exc:
+                check("input_digest" in str(exc),
+                      "the refusal names the differing field")
+            try:
+                BJ.run_null_shards(context, tmp, total=9, shard_size=4,
+                                   max_workers=1)
+                check(False, "shards from another plan must be refused")
+            except BJ.NullShardError as exc:
+                check("outside this plan" in str(exc),
+                      "a mismatched shard size is refused, not silently merged")
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_shard_metadata_is_complete():
+    print("every shard carries the metadata the run can be audited from")
+    with _tiny_ledger():
+        context = _null_context()
+        payload = BJ.compute_null_shard(context, 0, 3, 2)
+        for field in ("replicate_start", "replicate_end", "families",
+                      "master_seed", "rule_fingerprint", "input_digest",
+                      "code_sha256", "null_runner_version", "worker_count",
+                      "git_commit", "j", "j_null_max", "digest", "split"):
+            check(field in payload, f"the shard records '{field}'")
+        check(payload["families"] == list(BJ.CONTROL_FAMILIES),
+              "all three family names are recorded")
+        check(set(payload["j"]) == set(BJ.CONTROL_FAMILIES),
+              "one J array per family")
+        check(payload["master_seed"] == BJ.MASTER_SEED,
+              "the registered master seed is recorded")
+        check(payload["rule_fingerprint"] == BJ.rule_fingerprint(),
+              "the rule fingerprint is recorded")
+        check(payload["worker_count"] == 2, "the worker count is recorded")
+        check("worker_count" not in BJ.SHARD_DIGEST_FIELDS,
+              "but worker_count does not enter the digest")
+        check(payload["digest"] == BJ.shard_digest(payload),
+              "the digest is self-consistent")
+        json.dumps(payload)
+        check(True, "the shard is JSON-serialisable")
+
+
+def test_input_digest_comes_from_the_preflight():
+    print("the null is bound to the verified input contract")
+    freeze = _fake_freeze()
+    digest = BJ.preflight_input_digest(freeze)
+    check(len(digest) == 64, "the input digest is a sha256")
+    check(BJ.preflight_input_digest(freeze) == digest, "it is deterministic")
+    moved = _fake_freeze(cache_aggregate={"directory": "/c",
+                                          "aggregate": "z" * 64})
+    check(BJ.preflight_input_digest(moved) != digest,
+          "a different cache aggregate gives a different input digest")
+    for field in ("canonical_mamba", "cache_aggregate", "mitdb_aggregate",
+                  "result_contract"):
+        broken = {k: v for k, v in freeze.items() if k != field}
+        try:
+            BJ.preflight_input_digest(broken)
+            check(False, f"a freeze without {field} must be refused")
+        except BJ.NullShardError:
+            check(True, f"a freeze without {field} is refused")
+
+
+def test_null_science_constants_are_untouched():
+    print("this is scheduling: every registered scientific constant is fixed")
+    check(BJ.N_NULL_REPLICATES == 10000, "N_NULL_REPLICATES == 10000")
+    check(BJ.CONTROL_FAMILIES == ("wrong_record", "order_shuffle",
+                                  "circular_shift"),
+          "the three registered families, in order")
+    check(BJ.MASTER_SEED == 2026017, "MASTER_SEED == 2026017")
+    check(BJ.BOOTSTRAP_SEED == 2026018, "BOOTSTRAP_SEED == 2026018")
+    check(BJ.N_BOOTSTRAP_REPLICATES == 2000, "2,000 bootstrap replicates")
+    check(BJ.RR_TOLERANCE_SAMPLES == 1, "the candidate tolerance is one sample")
+    check(BJ.MODULE_VERSION == 3,
+          "MODULE_VERSION is unchanged — no scientific contract moved")
+    # The shard runner must not appear in the rule fingerprint: it is not part
+    # of the rule.
+    before = BJ.rule_fingerprint()
+    original = BJ.DEFAULT_SHARD_SIZE
+    try:
+        BJ.DEFAULT_SHARD_SIZE = 250
+        check(BJ.rule_fingerprint() == before,
+              "changing the shard size does not change the rule fingerprint")
+    finally:
+        BJ.DEFAULT_SHARD_SIZE = original
 
 def main() -> int:
     tests = [
@@ -2719,6 +3157,18 @@ def main() -> int:
         test_cli_refuses_data_modes_and_says_so,
         test_module_reaches_no_outcome,
         test_every_fixture_passes_with_zero_false_pairs,
+        test_shard_plan_covers_every_replicate_exactly_once,
+        test_sharded_equals_serial_bitwise,
+        test_shard_size_does_not_change_the_result,
+        test_worker_count_does_not_change_the_result,
+        test_completion_order_does_not_change_the_result,
+        test_resume_equals_uninterrupted,
+        test_shards_are_immutable,
+        test_corrupt_or_mixed_shards_are_rejected,
+        test_reused_shards_must_verify,
+        test_shard_metadata_is_complete,
+        test_input_digest_comes_from_the_preflight,
+        test_null_science_constants_are_untouched,
         test_notebook_contract,
         test_notebook_cells_run_in_order,
         test_notebook_refuses_a_stale_module,

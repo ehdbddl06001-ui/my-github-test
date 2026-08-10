@@ -1503,6 +1503,366 @@ def load_cache_classes(cache_dir: str, split: str,
     return out
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Null shard runner — execution scheduling only.  The science is unchanged.
+#
+# The registered null is 3 families x 10,000 replicates, each rerunning the
+# complete Leg 2.  That is ~14 hours, longer than a Colab session, so it is
+# split into *null shards*: independent units that can be produced in any
+# order, on any number of workers, and resumed after an interruption.
+#
+# Nothing here alters what is computed.  `apply_control` is already seeded per
+# `(family, replicate)` from `MASTER_SEED`, so replicate `b` has the same value
+# whoever computes it and whenever; sharding decides only *who* computes it.
+# The replicate count, the three families, the seed, the matcher, the
+# statistic, the bootstrap and every gate are untouched.  A shard is a
+# **resume artifact** — not a model checkpoint; no trained state exists here.
+# ─────────────────────────────────────────────────────────────────────────────
+NULL_RUNNER_VERSION = 1
+#: Replicates per shard.  100 shards of 100 covers 0..9999 exactly.
+DEFAULT_SHARD_SIZE = 100
+#: Colab gives a small CPU allowance; two workers is the registered default.
+DEFAULT_MAX_WORKERS = 2
+SHARD_FILENAME = "null_shard_{start:05d}_{end:05d}.json"
+
+#: What makes a shard scientifically what it is.  The digest covers exactly
+#: these.  `worker_count` and wall-clock provenance are recorded but
+#: deliberately excluded: a shard computed on one worker and the same shard
+#: computed on two must be identical where it matters.
+SHARD_DIGEST_FIELDS: Tuple[str, ...] = (
+    "null_runner_version", "split", "replicate_start", "replicate_end",
+    "families", "master_seed", "rule_fingerprint", "code_sha256",
+    "input_digest", "j", "j_null_max",
+)
+#: Fields every shard of one null must agree on.  A mixture is a corrupted
+#: null, not a mergeable one.
+SHARD_CONTEXT_FIELDS: Tuple[str, ...] = (
+    "null_runner_version", "split", "families", "master_seed",
+    "rule_fingerprint", "code_sha256", "input_digest",
+)
+
+
+class NullShardError(Q5DJoinError):
+    """A shard set that may not be finalised into a null."""
+
+
+class NullContext(object):
+    """Everything a shard needs, and the identity every shard must share."""
+
+    def __init__(self, split: str,
+                 mamba_by_record: Mapping[str, RecordSequence],
+                 cache_by_record: Mapping[str, RecordSequence],
+                 processed_classes: Mapping[Tuple[str, int], str],
+                 mamba_classes: Mapping[Tuple[str, int], str],
+                 input_digest: str, code_sha256: str,
+                 git_commit: Optional[str] = None) -> None:
+        self.split = _check_split(split)
+        self.mamba_by_record = dict(mamba_by_record)
+        self.cache_by_record = dict(cache_by_record)
+        self.processed_classes = dict(processed_classes)
+        self.mamba_classes = dict(mamba_classes)
+        self.input_digest = str(input_digest)
+        self.code_sha256 = str(code_sha256)
+        self.git_commit = git_commit
+        self.rule_fingerprint = rule_fingerprint()
+
+    def identity(self) -> Dict[str, object]:
+        return {"null_runner_version": NULL_RUNNER_VERSION,
+                "split": self.split, "families": list(CONTROL_FAMILIES),
+                "master_seed": MASTER_SEED,
+                "rule_fingerprint": self.rule_fingerprint,
+                "code_sha256": self.code_sha256,
+                "input_digest": self.input_digest}
+
+
+def preflight_input_digest(preflight: Mapping[str, object]) -> str:
+    """One digest standing for the whole verified input contract."""
+    for field in ("canonical_mamba", "cache_aggregate", "mitdb_aggregate",
+                  "result_contract"):
+        if field not in preflight:
+            raise NullShardError(
+                f"cannot derive an input digest: the preflight has no {field!r}")
+    payload = {
+        "mamba": dict(preflight["canonical_mamba"]).get("sha256"),
+        "cache": dict(preflight["cache_aggregate"]).get("aggregate"),
+        "mitdb": dict(preflight["mitdb_aggregate"]).get("aggregate"),
+        "result_pid": dict(preflight["result_contract"]).get("pid_digest"),
+    }
+    if not all(payload.values()):
+        raise NullShardError(
+            f"the preflight does not carry every input digest: {payload}")
+    return hashlib.sha256(_canonical_json(payload).encode("utf-8")).hexdigest()
+
+
+def shard_plan(total: int = N_NULL_REPLICATES,
+               shard_size: int = DEFAULT_SHARD_SIZE
+               ) -> Tuple[Tuple[int, int], ...]:
+    """Half-open `[start, end)` ranges covering `0..total-1` exactly once."""
+    if int(total) <= 0:
+        raise NullShardError(f"total replicates must be positive, got {total}")
+    if int(shard_size) <= 0:
+        raise NullShardError(f"shard size must be positive, got {shard_size}")
+    total, shard_size = int(total), int(shard_size)
+    return tuple((start, min(start + shard_size, total))
+                 for start in range(0, total, shard_size))
+
+
+def shard_filename(start: int, end: int) -> str:
+    return SHARD_FILENAME.format(start=int(start), end=int(end))
+
+
+def shard_digest(payload: Mapping[str, object]) -> str:
+    missing = [f for f in SHARD_DIGEST_FIELDS if f not in payload]
+    if missing:
+        raise NullShardError(f"shard is missing {missing}")
+    return hashlib.sha256(_canonical_json(
+        {f: payload[f] for f in SHARD_DIGEST_FIELDS}).encode("utf-8")
+    ).hexdigest()
+
+
+def compute_null_shard(context: NullContext, start: int, end: int,
+                       worker_count: int = 1) -> Dict[str, object]:
+    """Every family, for one replicate range.  Deterministic in `b` alone.
+
+    One shard holds the *same* replicate range for all three families, so
+    `J_null_max[b]` is computable inside a shard and never straddles a
+    boundary.
+    """
+    start, end = int(start), int(end)
+    if end <= start:
+        raise NullShardError(f"empty shard range [{start}, {end})")
+    per_family: Dict[str, List[float]] = {}
+    for family in CONTROL_FAMILIES:
+        values: List[float] = []
+        for replicate in range(start, end):
+            transformed = apply_control(family, context.mamba_by_record,
+                                        replicate)
+            rows = join_split(transformed, context.cache_by_record,
+                              context.split)["rows"]
+            values.append(j_min(rows, context.processed_classes,
+                                context.mamba_classes))
+        per_family[family] = values
+    payload: Dict[str, object] = dict(context.identity())
+    payload.update({
+        "replicate_start": start, "replicate_end": end,
+        # Sorted by family, replicate ascending inside each — neither
+        # execution order nor worker count can reach the arrays.
+        "j": {family: list(per_family[family])
+              for family in sorted(CONTROL_FAMILIES)},
+        "j_null_max": [max(per_family[f][k] for f in CONTROL_FAMILIES)
+                       for k in range(end - start)],
+        "worker_count": int(worker_count),
+        "git_commit": context.git_commit,
+    })
+    payload["digest"] = shard_digest(payload)
+    return payload
+
+
+def write_null_shard(directory: str, payload: Mapping[str, object]) -> str:
+    """Write one shard.  Immutable: an existing file is never overwritten."""
+    os.makedirs(directory, exist_ok=True)
+    path = os.path.join(directory, shard_filename(
+        int(payload["replicate_start"]), int(payload["replicate_end"])))
+    if os.path.exists(path):
+        raise NullShardError(
+            f"refusing to overwrite an existing null shard at {path!r}; "
+            f"shards are immutable resume artifacts")
+    with open(path, "w", encoding="utf-8") as handle:
+        json.dump(dict(payload), handle, sort_keys=True, ensure_ascii=False)
+    return path
+
+
+def read_null_shard(path: str) -> Dict[str, object]:
+    with open(path, encoding="utf-8") as handle:
+        payload = json.load(handle)
+    stored = payload.get("digest")
+    recomputed = shard_digest(payload)
+    if stored != recomputed:
+        raise NullShardError(
+            f"null shard {os.path.basename(path)} fails its own digest "
+            f"({str(stored)[:16]}... != {recomputed[:16]}...); it is corrupt "
+            f"or was edited, and may not be reused")
+    return payload
+
+
+def verify_null_shard(payload: Mapping[str, object],
+                      context: NullContext) -> List[str]:
+    """Problems that make this shard unusable for *this* null."""
+    problems: List[str] = []
+    identity = context.identity()
+    for field in SHARD_CONTEXT_FIELDS:
+        want, got = identity[field], payload.get(field)
+        if _canonical_json(want) != _canonical_json(got):
+            problems.append(f"{field}: shard has {got!r}, this run has {want!r}")
+    start, end = payload.get("replicate_start"), payload.get("replicate_end")
+    if not isinstance(start, int) or not isinstance(end, int) or end <= start:
+        problems.append(f"bad replicate range [{start}, {end})")
+        return problems
+    span = end - start
+    families = dict(payload.get("j") or {})
+    for family in CONTROL_FAMILIES:
+        values = families.get(family)
+        if values is None:
+            problems.append(f"no J array for family {family!r}")
+        elif len(values) != span:
+            problems.append(f"family {family!r} has {len(values)} values for a "
+                            f"{span}-replicate shard")
+    maxima = payload.get("j_null_max")
+    if maxima is None or len(maxima) != span:
+        problems.append(f"j_null_max has {maxima and len(maxima)} values for a "
+                        f"{span}-replicate shard")
+    elif all(f in families and len(families[f]) == span
+             for f in CONTROL_FAMILIES):
+        for k in range(span):
+            expected = max(families[f][k] for f in CONTROL_FAMILIES)
+            if maxima[k] != expected:
+                problems.append(
+                    f"j_null_max[{start + k}] is {maxima[k]!r}, not the family "
+                    f"maximum {expected!r}")
+                break
+    return problems
+
+
+def load_existing_shards(directory: str, context: NullContext
+                         ) -> Dict[Tuple[int, int], Dict[str, object]]:
+    """Reusable shards only: digest verified *and* identity matching."""
+    out: Dict[Tuple[int, int], Dict[str, object]] = {}
+    if not os.path.isdir(directory):
+        return out
+    for name in sorted(os.listdir(directory)):
+        if not (name.startswith("null_shard_") and name.endswith(".json")):
+            continue
+        payload = read_null_shard(os.path.join(directory, name))
+        problems = verify_null_shard(payload, context)
+        if problems:
+            raise NullShardError(
+                f"existing shard {name} may not be reused:\n  "
+                + "\n  ".join(problems))
+        out[(int(payload["replicate_start"]),
+             int(payload["replicate_end"]))] = payload
+    return out
+
+
+#: Set in each worker process by :func:`_init_null_worker`, so the inputs ship
+#: once per worker rather than once per shard.
+_NULL_WORKER_CONTEXT: List[NullContext] = []
+
+
+def _init_null_worker(context: NullContext) -> None:      # pragma: no cover
+    _NULL_WORKER_CONTEXT.clear()
+    _NULL_WORKER_CONTEXT.append(context)
+
+
+def _run_null_shard_in_worker(task: Tuple[int, int, int]
+                              ) -> Dict[str, object]:     # pragma: no cover
+    start, end, workers = task
+    return compute_null_shard(_NULL_WORKER_CONTEXT[0], start, end, workers)
+
+
+def run_null_shards(context: NullContext, resume_dir: str,
+                    total: int = N_NULL_REPLICATES,
+                    shard_size: int = DEFAULT_SHARD_SIZE,
+                    max_workers: int = DEFAULT_MAX_WORKERS,
+                    progress: Optional[object] = None
+                    ) -> Dict[Tuple[int, int], Dict[str, object]]:
+    """Produce every shard of the plan, reusing whatever is already on disk.
+
+    Interrupting this is safe: finished shards are on disk and re-verified on
+    the next call, so a resumed run recomputes only what is missing and
+    reaches the same arrays as an uninterrupted one.
+    """
+    plan = shard_plan(total, shard_size)
+    have = load_existing_shards(resume_dir, context)
+    unexpected = sorted(set(have) - set(plan))
+    if unexpected:
+        raise NullShardError(
+            f"{resume_dir} holds shards outside this plan: {unexpected}.  A "
+            f"different shard size is a different plan; finalise from one plan "
+            f"or start a fresh directory.")
+    todo = [(s, e) for (s, e) in plan if (s, e) not in have]
+    workers = max(1, int(max_workers))
+    if progress is not None:
+        progress(f"null shards: {len(have)}/{len(plan)} reusable, "
+                 f"{len(todo)} to compute, {workers} worker(s)")
+
+    if todo and workers > 1:
+        from concurrent.futures import ProcessPoolExecutor  # noqa: PLC0415
+        with ProcessPoolExecutor(max_workers=workers,
+                                 initializer=_init_null_worker,
+                                 initargs=(context,)) as pool:
+            for payload in pool.map(_run_null_shard_in_worker,
+                                    [(s, e, workers) for s, e in todo]):
+                have[(int(payload["replicate_start"]),
+                      int(payload["replicate_end"]))] = payload
+                write_null_shard(resume_dir, payload)
+                if progress is not None:
+                    progress(f"  shard {payload['replicate_start']}"
+                             f"..{payload['replicate_end']} done")
+    else:
+        for start, end in todo:
+            payload = compute_null_shard(context, start, end, workers)
+            have[(start, end)] = payload
+            write_null_shard(resume_dir, payload)
+            if progress is not None:
+                progress(f"  shard {start}..{end} done")
+    return have
+
+
+def finalize_null_shards(shards: Mapping[Tuple[int, int],
+                                         Mapping[str, object]],
+                         context: NullContext,
+                         total: int = N_NULL_REPLICATES
+                         ) -> Dict[str, List[float]]:
+    """Assemble the three complete J arrays, or STOP.
+
+    Refuses on a missing, duplicated or overlapping replicate, on a shard that
+    fails its digest or identity, and on any mixture of rule fingerprint, code
+    hash or input digest.  Nothing downstream — no `null_summary`, no gate
+    decision, no DS2 release — may be built from an incomplete null, and this
+    is the only way to obtain the arrays.
+    """
+    problems: List[str] = []
+    covered: Dict[int, Tuple[int, int]] = {}
+    for (start, end), payload in sorted(shards.items()):
+        problems.extend(f"shard [{start},{end}): {p}"
+                        for p in verify_null_shard(payload, context))
+        if payload.get("digest") != shard_digest(payload):
+            problems.append(f"shard [{start},{end}): digest mismatch")
+        for replicate in range(start, end):
+            if replicate in covered:
+                problems.append(
+                    f"replicate {replicate} appears in both "
+                    f"{covered[replicate]} and [{start},{end})")
+            else:
+                covered[replicate] = (start, end)
+    missing = [b for b in range(int(total)) if b not in covered]
+    if missing:
+        problems.append(
+            f"{len(missing)} replicates missing (first: {missing[:5]}); the "
+            f"registered null is {total} replicates x "
+            f"{len(CONTROL_FAMILIES)} families and may not be truncated")
+    extra = sorted(b for b in covered if b >= int(total))
+    if extra:
+        problems.append(f"{len(extra)} replicates beyond {total}: {extra[:5]}")
+    if problems:
+        raise NullShardError(
+            "the null shards do not form a complete, consistent null:\n  "
+            + "\n  ".join(problems[:20]))
+
+    out: Dict[str, List[float]] = {f: [] for f in sorted(CONTROL_FAMILIES)}
+    # Sorted by (family, replicate): execution order and worker count cannot
+    # reach the arrays.
+    for family in sorted(CONTROL_FAMILIES):
+        for (_start, _end), payload in sorted(shards.items()):
+            out[family].extend(dict(payload["j"])[family])
+    for family, values in out.items():
+        if len(values) != int(total):
+            raise NullShardError(
+                f"family {family!r} assembled {len(values)} values, expected "
+                f"{total}")
+    return out
+
+
 def estimate_null_runtime(seconds_per_join: float,
                           replicates: int = N_NULL_REPLICATES) -> Dict[str, object]:
     """How long the registered null will take, from one measured join.
