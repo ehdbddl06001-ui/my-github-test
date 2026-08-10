@@ -2503,6 +2503,43 @@ def test_module_version_tracks_the_contract():
               "a preflight frozen under the old contract cannot be reused")
 
 
+def test_no_stage_can_skip_silently():
+    """A skipped stage must never look like a passed stage.
+
+    The first Leg 1 attempt printed its constants and then did nothing,
+    because `MODE` was still `HASH_PREFLIGHT`.  The output was
+    indistinguishable from a clean run — the worst failure mode a pipeline
+    like this can have.
+    """
+    print("notebook: a skipped stage says so, and says how to run it")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    joined = "\n".join("".join(c["source"]) for c in cells)
+
+    check("def stage_should_run(" in joined,
+          "there is one helper that decides and announces stage execution")
+    check(joined.count("if stage_should_run(") >= 2,
+          "both data stages go through it")
+    check("and APPROVAL:" not in joined,
+          "no cell uses a bare `MODE in (...) and APPROVAL` guard, which "
+          "skips without saying anything")
+    check("SKIP —" in joined, "the skip path prints a SKIP marker")
+    check("RUN —" in joined, "the run path prints a RUN marker")
+    check("상수 출력일 뿐" in joined,
+          "the skip message warns that the constants above are not results")
+
+    # Every cell that opens registered data must be behind the helper.
+    for marker in ("replay_leg1_split", "BJ.run_join("):
+        owners = [c for c in cells if marker in "".join(c["source"])]
+        if check(len(owners) == 1, f"exactly one cell calls {marker}"):
+            body = "".join(owners[0]["source"])
+            check("stage_should_run(" in body,
+                  f"the {marker} cell is guarded by the announcing helper")
+
+
 def test_notebook_branch_is_real():
     print("notebook: BRANCH names something that can actually be fetched")
     if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
@@ -2633,6 +2670,7 @@ def main() -> int:
         test_every_stage_declares_its_dependencies,
         test_missing_dependency_stops_before_the_stage,
         test_module_version_tracks_the_contract,
+        test_no_stage_can_skip_silently,
         test_notebook_branch_is_real,
         test_spec_contract,
     ]
