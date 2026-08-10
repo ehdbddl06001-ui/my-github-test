@@ -788,6 +788,7 @@ def run_ds1_freeze(asset_root: str, timestamp: str, env_pin: Dict[str, object],
                  "mad_degenerate": table["mad_degenerate"],
                  "expert_annotated": rec in expert_records,
                  "sensitivity": float("nan"), "ppv": float("nan"),
+                 "ppv_ceiling": float("nan"),
                  "n_expert": 0, "n_matched": 0}
         if rec in expert_records:
             expert = read_expert_p(asset_root, rec, wfdb_module=wfdb_module)
@@ -799,7 +800,9 @@ def run_ds1_freeze(asset_root: str, timestamp: str, env_pin: Dict[str, object],
                 "sensitivity": (m["n_matched"] / m["n_reference"]
                                 if m["n_reference"] else float("nan")),
                 "ppv": (m["n_matched"] / m["n_detected"]
-                        if m["n_detected"] else float("nan"))})
+                        if m["n_detected"] else float("nan")),
+                "ppv_ceiling": ppv_ceiling(m["n_reference"],
+                                           m["n_detected"])})
         per_record.append(entry)
         log(f"  DS1 {rec:>4} {k:2d}/{len(ds1_records)} "
             f"beats {entry['n_beats']} · valid {entry['n_valid']}"
@@ -909,6 +912,12 @@ def run_ds2_gate(asset_root: str, timestamp: str, frozen: Dict[str, object],
                      "n_expert": m["n_reference"],
                      "n_matched": m["n_matched"],
                      "sensitivity": sens, "ppv": ppv,
+                     "ppv_ceiling": ppv_ceiling(m["n_reference"],
+                                                m["n_detected"]),
+                     "ppv_vs_ceiling": (
+                         ppv / ppv_ceiling(m["n_reference"], m["n_detected"])
+                         if ppv_ceiling(m["n_reference"], m["n_detected"])
+                         else float("nan")),
                      "cross_beat_joins": cross,
                      "many_to_one_joins": 0,
                      "chance_rate": chance["chance_rate"],
@@ -928,6 +937,22 @@ def run_ds2_gate(asset_root: str, timestamp: str, frozen: Dict[str, object],
         f"({decision['n_gate_pass']}/{decision['n_gate_total']} gates)")
     return {"decision": decision, "rows": rows, "chance_rows": chance_rows,
             "bootstrap": boot, "log": log, "timestamp": str(timestamp)}
+
+
+def ppv_ceiling(n_expert: int, n_detected: int) -> float:
+    """The largest PPV a perfect delineator could reach on this record.
+
+    A one-to-one match cannot produce more true positives than there are
+    expert annotations, so ``PPV <= n_expert / n_detected``.  The published
+    resource does not label every P wave, so on a record with more beats than
+    annotations this ceiling sits well below 1.0 and a detection on an
+    unlabelled beat is scored as a false positive no matter how correct it is.
+
+    Descriptive only — the gate is evaluated on the measured PPV, unchanged.
+    """
+    if not n_detected:
+        return float("nan")
+    return min(1.0, float(n_expert) / float(n_detected))
 
 
 def _macro(rows: Sequence[Dict[str, object]], key: str) -> float:
@@ -986,13 +1011,22 @@ def evaluate_gate(rows: Sequence[Dict[str, object]],
         "n_gate_pass": len(gates) - len(failed), "n_gate_total": len(gates),
         "first_stopping_reason": (failed[0]["gate"] if failed else None),
         "macro_sensitivity": macro_sens, "macro_ppv": macro_ppv,
+        "macro_ppv_ceiling": _macro(rows, "ppv_ceiling"),
+        "macro_ppv_vs_ceiling": _macro(rows, "ppv_vs_ceiling"),
         "chance_ratio": ratio, "chance_ci_low": ci_low,
         "chance_ci_high": float(boot.get("ci_high", float("nan"))),
         "n_records": len(rows),
         "limitation": (
             "The published resource does not guarantee that every P wave is "
             "labelled, so a missed match may be an unlabelled beat rather "
-            "than a delineator failure. Reported, not corrected for."),
+            "than a delineator failure. Where a record carries fewer "
+            "annotations than detections, PPV is capped at "
+            "n_expert/n_detected ('ppv_ceiling') however correct the "
+            "detections are; 'ppv_vs_ceiling' says how much of the reachable "
+            "PPV was actually reached. Reported, not corrected for: the gate "
+            "is evaluated on the measured PPV against the frozen 0.80 "
+            "threshold, which was set with this caveat already on record "
+            "(spec, qualification gate item 5)."),
         "permitted_next_step": (
             "report this qualification bundle and STOP. The beat join and the "
             "association analysis need a separate approval — nothing after "
@@ -1049,12 +1083,13 @@ def build_config(mode: str) -> Dict[str, object]:
 DS1_COLUMNS = ("record", "n_beats", "n_valid", "valid_fraction",
                "median_pr_ms", "mad_pr_ms", "mad_degenerate",
                "expert_annotated", "n_expert", "n_detected", "n_matched",
-               "sensitivity", "ppv")
+               "sensitivity", "ppv", "ppv_ceiling")
 PR_COLUMNS = ("record", "r_sample", "p_sample", "pr_ms", "valid",
               "pr_discordance")
 DS2_COLUMNS = ("record", "n_beats", "n_valid_pr", "n_detected", "n_expert",
-               "n_matched", "sensitivity", "ppv", "many_to_one_joins",
-               "cross_beat_joins", "true_rate", "chance_rate")
+               "n_matched", "sensitivity", "ppv", "ppv_ceiling",
+               "ppv_vs_ceiling", "many_to_one_joins", "cross_beat_joins",
+               "true_rate", "chance_rate")
 CHANCE_COLUMNS = ("record", "n_shift", "true_rate", "chance_rate")
 
 

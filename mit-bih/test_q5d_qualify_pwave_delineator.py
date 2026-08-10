@@ -688,6 +688,37 @@ def test_gate_fails_on_low_ppv():
           "sensitivity alone would have passed — PPV is what fails")
 
 
+def test_ppv_ceiling_is_reported_but_changes_no_gate():
+    print("the structural PPV ceiling is recorded, and the gate ignores it")
+    check(abs(QQ.ppv_ceiling(1500, 2022) - 0.7418) < 1e-3,
+          "a sparsely annotated record has a PPV ceiling below 0.80")
+    check(QQ.ppv_ceiling(2000, 1900) == 1.0,
+          "more annotations than detections cannot push the ceiling above 1")
+    check(math.isnan(QQ.ppv_ceiling(10, 0)), "no detections gives nan, not 0")
+
+    # 40 detections against 8 annotations: a perfect delineator still gets 0.2.
+    out = _gate(FakeNk(), n_expert=8, n_shift=20, n_boot=100)
+    row = out["rows"][0]
+    check(abs(row["ppv_ceiling"] - 0.2) < 1e-9,
+          "the ceiling is n_expert/n_detected")
+    check(abs(row["ppv_vs_ceiling"] - 1.0) < 1e-9,
+          "the delineator reached 100% of the reachable PPV")
+    d = out["decision"]
+    check(d["decision"] == QQ.DECISION_UNQUALIFIED,
+          "and the gate still fails, because the gate uses measured PPV")
+    check(abs(d["macro_ppv_ceiling"] - 0.2) < 1e-9,
+          "the decision records the macro ceiling as a diagnostic")
+    ppv_gate = [g for g in d["gates"] if g["gate"] == "ds2_macro_ppv"][0]
+    check(f"{QQ.PPV_MACRO_MIN}" in ppv_gate["detail"]
+          and "ceiling" not in ppv_gate["detail"],
+          "the PPV gate is still judged against the frozen 0.80, not the ceiling")
+    check("ppv_ceiling" in d["limitation"]
+          and "gate is evaluated on the measured PPV" in d["limitation"],
+          "the limitation explains the ceiling without excusing the failure")
+    check("ppv_ceiling" in QQ.DS2_COLUMNS and "ppv_ceiling" in QQ.DS1_COLUMNS,
+          "both tables carry the ceiling column")
+
+
 def test_gate_fails_when_only_chance():
     print("a detector no better than chance is refused")
     rows = [{"record": r, "sensitivity": 0.95, "ppv": 0.95,
@@ -925,6 +956,7 @@ def main() -> int:
              test_gate_passes_on_a_good_delineator,
              test_gate_never_reads_ds2_beat_classes,
              test_gate_fails_on_low_sensitivity, test_gate_fails_on_low_ppv,
+             test_ppv_ceiling_is_reported_but_changes_no_gate,
              test_gate_fails_when_only_chance, test_gate_fails_on_join_integrity,
              test_gate_fails_on_per_record_floor, test_gate_requires_the_freeze,
              test_gate_refuses_a_non_ds2_record, test_bundle_round_trip,
