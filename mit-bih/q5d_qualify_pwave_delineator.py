@@ -128,6 +128,24 @@ BOOTSTRAP_SEED = 2026008
 
 PINNED_PACKAGES: Tuple[str, ...] = ("neurokit2", "wfdb", "numpy", "scipy",
                                     "pandas")
+#: Exact versions to install in Colab.  Pinned so a re-run reproduces the pin
+#: instead of silently picking up whatever the index serves that day.
+PIP_INSTALL_SPEC: Tuple[str, ...] = ("neurokit2==0.2.13", "wfdb==4.3.1")
+#: The packages that *are* the frozen rule.  Drift in these stops the run.
+STRICT_PIN_PACKAGES: Tuple[str, ...] = ("neurokit2", "wfdb")
+#: Measured on Colab, QUALIFY-0 run 20260810T000629, before any waveform read.
+#: A mismatch means the environment moved under us — stop and report, do not
+#: quietly re-pin.
+EXPECTED_SOURCE_SHA256: Dict[str, str] = {
+    "neurokit2":
+        "aeebc91e527c8df42021f20c700c7127bc5fa8c9dff551107678b9e08d6752fd",
+    "wfdb":
+        "59d90b04498d884f7262302eaf5a30e41c5542781ab5369b9841d5e2fd482807",
+    "numpy":
+        "955935d8a6d2727780e2552d50422916ae1a41011c218abaeb1247d5eed2ceec",
+    "scipy":
+        "460b4ab1d9dc2a220686d947424d1e410ad03c6d0fa43b2ac70c7fb44c3d6a6b",
+}
 
 DRIVE_ASSET_REL = "MedKOS/ecg-model/assets/EXP-2026-007_prep_data"
 SOURCE_SUBDIR = "source"
@@ -305,11 +323,51 @@ def build_env_pin(timestamp: str,
 
 
 def env_pin_is_complete(pin: Dict[str, object]) -> Tuple[bool, List[str]]:
-    """The delineator's own version and hash must be present, or we stop."""
+    """The delineator's own version and hash must be present, or we stop.
+
+    Each missing entry carries *why* it is missing.  The first version of this
+    returned bare names, and a plain ``['neurokit2', 'wfdb']`` reads like a
+    module bug when the real cause is simply that Colab has not installed them
+    yet — the reason is already in the pin, so hand it back.
+    """
     pkgs = dict(pin.get("packages") or {})
-    missing = [n for n in ("neurokit2", "wfdb")
-               if not (pkgs.get(n) or {}).get("source_sha256")]
+    missing: List[str] = []
+    for name in ("neurokit2", "wfdb"):
+        entry = dict(pkgs.get(name) or {})
+        if entry.get("source_sha256"):
+            continue
+        why = entry.get("error") or "not recorded in this pin"
+        missing.append(f"{name}: {why}")
     return (not missing), missing
+
+
+def env_pin_drift(pin: Dict[str, object],
+                  expected: Optional[Dict[str, str]] = None
+                  ) -> List[Dict[str, object]]:
+    """Packages whose source hash differs from the recorded QUALIFY-0 pin.
+
+    Reported, never auto-corrected.  Only :data:`STRICT_PIN_PACKAGES` are
+    ``blocking``: those two are version-pinned by us and they *are* the frozen
+    rule, so a change there means the rule is not the one that was pinned.
+    numpy and scipy ride along with whatever Colab ships; a bump there is worth
+    recording, not worth refusing to start over.
+    """
+    expected = EXPECTED_SOURCE_SHA256 if expected is None else expected
+    pkgs = dict(pin.get("packages") or {})
+    drift: List[Dict[str, object]] = []
+    for name, want in expected.items():
+        got = (pkgs.get(name) or {}).get("source_sha256")
+        if got and str(got) != str(want):
+            drift.append({"package": name, "expected": want, "observed": got,
+                          "version": (pkgs.get(name) or {}).get("version"),
+                          "blocking": name in STRICT_PIN_PACKAGES})
+    return drift
+
+
+def blocking_drift(pin: Dict[str, object],
+                   expected: Optional[Dict[str, str]] = None
+                   ) -> List[Dict[str, object]]:
+    return [d for d in env_pin_drift(pin, expected) if d["blocking"]]
 
 
 # ─────────────────────────────────────────────────────────────────────────────

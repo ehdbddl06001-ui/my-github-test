@@ -446,6 +446,57 @@ def test_freeze_requires_env_pin():
     check(ok and not missing, "a complete pin passes the check")
 
 
+def test_missing_pin_says_why():
+    print("an uninstalled delineator explains itself instead of naming itself")
+    # Exactly the Colab failure: neither package is installed yet, so
+    # build_env_pin records the ImportError and the hash is None.
+    bare = {"packages": {
+        "neurokit2": {"version": None, "source_sha256": None,
+                      "error": "ModuleNotFoundError: No module named "
+                               "'neurokit2'"},
+        "wfdb": {"version": None, "source_sha256": None,
+                 "error": "ModuleNotFoundError: No module named 'wfdb'"}}}
+    ok, missing = QQ.env_pin_is_complete(bare)
+    check(not ok, "an uninstalled environment is refused")
+    check(all("ModuleNotFoundError" in m for m in missing),
+          "each missing entry carries the import error, not just the name")
+    check(any(m.startswith("neurokit2:") for m in missing),
+          "the entry is prefixed with the package it is about")
+    silent = {"packages": {"neurokit2": {}, "wfdb": {}}}
+    _, why = QQ.env_pin_is_complete(silent)
+    check(all("not recorded in this pin" in m for m in why),
+          "a pin that simply omits a package says so")
+    real = QQ.build_env_pin("t", packages=("neurokit2",))
+    entry = real["packages"]["neurokit2"]
+    check("source_sha256" in entry,
+          "build_env_pin always emits the key, installed or not")
+
+
+def test_pin_drift_blocks_only_the_frozen_rule():
+    print("drift stops on the delineator, is only noted for numpy/scipy")
+    good = {"packages": {n: {"version": "x", "source_sha256": h}
+                         for n, h in QQ.EXPECTED_SOURCE_SHA256.items()}}
+    check(QQ.env_pin_drift(good) == [], "the recorded pin shows no drift")
+    moved = json.loads(json.dumps(good))
+    moved["packages"]["numpy"]["source_sha256"] = "9" * 64
+    d = QQ.env_pin_drift(moved)
+    check(len(d) == 1 and d[0]["package"] == "numpy",
+          "a numpy bump is detected")
+    check(d[0]["blocking"] is False and QQ.blocking_drift(moved) == [],
+          "a numpy bump is reported but does not stop the run")
+    moved2 = json.loads(json.dumps(good))
+    moved2["packages"]["neurokit2"]["source_sha256"] = "9" * 64
+    check(len(QQ.blocking_drift(moved2)) == 1,
+          "a neurokit2 source change is blocking")
+    check(QQ.STRICT_PIN_PACKAGES == ("neurokit2", "wfdb"),
+          "only the two version-pinned packages are strict")
+    check(QQ.PIP_INSTALL_SPEC == ("neurokit2==0.2.13", "wfdb==4.3.1"),
+          "the install spec pins the exact versions that were measured")
+    absent = {"packages": {"neurokit2": {"source_sha256": None}}}
+    check(QQ.env_pin_drift(absent) == [],
+          "a missing hash is an incompleteness problem, not a drift problem")
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Stage B — the gate
 # ─────────────────────────────────────────────────────────────────────────────
@@ -706,6 +757,21 @@ def test_notebook_contract():
             if c["cell_type"] == "code"]
     joined = "\n".join(code)
     check('MODE = "DESIGN"' in joined, "the default mode assignment is DESIGN")
+    # The first run of this notebook died here: nothing installed the
+    # delineator, so the environment pin had no hash to record.
+    for spec in QQ.PIP_INSTALL_SPEC:
+        check(spec in joined, f"the notebook installs the pinned '{spec}'")
+    install_at = min((i for i, c in enumerate(nb["cells"])
+                      if c["cell_type"] == "code"
+                      and QQ.PIP_INSTALL_SPEC[0] in "".join(c["source"])),
+                     default=10**6)
+    pin_at = min((i for i, c in enumerate(nb["cells"])
+                  if c["cell_type"] == "code"
+                  and "build_env_pin" in "".join(c["source"])), default=-1)
+    check(install_at < pin_at,
+          f"the install cell ({install_at}) runs before the pin cell ({pin_at})")
+    check("env_pin_drift" in joined,
+          "the notebook compares the pin against the recorded QUALIFY-0 values")
     check('VALID_MODES = ("DESIGN", "QUALIFY_DS1_FREEZE", '
           '"QUALIFY_DS2_GATE", "QUALIFY_REPORT")' in joined,
           "the notebook allows only the four authorised modes")
@@ -758,6 +824,7 @@ def main() -> int:
              test_coupling_ratio_and_n_beats, test_match_is_one_to_one,
              test_cross_beat_detection, test_chance_and_bootstrap,
              test_ds1_freeze_produces_constants, test_freeze_requires_env_pin,
+             test_missing_pin_says_why, test_pin_drift_blocks_only_the_frozen_rule,
              test_gate_passes_on_a_good_delineator,
              test_gate_never_reads_ds2_beat_classes,
              test_gate_fails_on_low_sensitivity, test_gate_fails_on_low_ppv,
