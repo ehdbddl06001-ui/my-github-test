@@ -277,6 +277,41 @@ Q5-A 실측 조인 1.9%(우연 수준)가 완전히 설명된다. **join key로 
 `zipextractor.app` 추출본이며 **동일 크기 `mamba_data.npz` 사본이 3개** 있어 어느
 것을 풀었는지 구분되지 않는다. **과학적 사용 전 hash 대조가 필요하다.**
 
+### 2차 인수 (2026-08-10 08:00 업로드분) — 판정 B 유지, 근거는 크게 바뀜
+
+1차 스캔 종료 후 `MyDrive/mitbih/v9~v13/` 이 업로드됐고, 여기에 1차에서 "부재"로
+기록한 것들이 들어 있었다. 전문: `PREFLIGHT_2026-08-10_drive_asset_intake.md` §13.
+
+- **V10 소스 확보 → row lineage 결격 해소.** `v9~v13/v10pkg/kinkmap/` 의
+  `build_record()` 행 선택 로직이 v9와 **문자열 수준 동일**하고, v10이 더한 것은
+  `pw_all = PW.pwave_features(...)` 와 `"pw": pw_all[idx]` 뿐이다 — **같은 `idx`
+  재사용이라 행을 건드리지 않는 순수 add-on**. `ARMS` 대조도 맞는다(v10 `base` =
+  v9 `kink_noctx` 조합 → params 1,141,291 일치).
+- **v9·v10 캐시 실물 확보 + 44/44 독립 일치.** 두 `meta.json` 의 record별 `n`·`split`
+  이 전부 같다. **복사본이 아니라 독립 재빌드다** — `v10_ECG.ipynb` 셀 20이 캐시를
+  지우고 셀 21이 `prepare()` 로 다시 만든다. 셀 21 stdout·셀 23(`DS1: S 944/50551`)
+  이 이를 재확인 → **동일 row 집합에 대한 독립 증언 3개**.
+- **행 순서를 재계산할 필요가 없어졌다.** 캐시가 V9/V10 확률 행의 순서·행 수를
+  보존하고 있다. 1차에서 B의 근거였던 "검출기 재실행 불확실성"이 실무적으로 무력화된다.
+- **record별 행 대장 완성.** v9/v10 캐시 vs mamba 계보 전량 대조: 36/44 일치,
+  불일치 8개 — DS1 `108 −1 · 116 −14 · 203 −2 · 208 −7 · 223 −1`(합 −25),
+  DS2 `105 −1 · 111 −1 · 222 −4`(합 −6). DS2 쪽은 기록과 정확히 일치하고,
+  **DS1 −25 는 지금까지 문서화된 적 없던 값**이다. → `mamba_data.npz` 행과 V9/V10
+  확률 행의 **record별 구간이 산술로 결정된다**(join 명세의 `processed row index`
+  ledger 항목이 채워진다).
+- **환경 부분 확정.** 로컬 실행(`/home/user/work/v10`, Colab 아님) · Python 3.12.3 ·
+  venv `~/ecg` · tf 2.21.0 · keras 3.15.0 · GPU GTX 1650 Ti Max-Q(CC 7.5) ·
+  cuDNN 92400. **`numpy`·`scipy` 만 미상** — `pip freeze` 셀이 없다.
+
+**그래도 B를 유지한다.** A는 "exact source, environment, input, filtering, row-order 및
+V10 lineage가 **모두** 증명된 경우에만" 발화하도록 등록돼 있고, 환경 조건 하나가
+미충족이다. 캐시 확보로 replay가 실무적으로 불필요해졌지만 **gate 문구를 사후에
+재해석해 더 유리한 판정으로 옮기지 않는다** — 그것은 이 preflight가 금지하는
+"provenance 경로를 결과 편의로 고르는 행동"과 같은 종류다. 재해석 여부는 join spec의
+`design_owner`(Codex)와 사용자의 결정 사항이다.
+
+**A 로 가는 데 남은 것은 정확히 하나**: `~/ecg` venv 의 numpy·scipy 버전.
+
 **따라서 기존 order-preserving RR join 명세를 유지한다.** preflight는 provenance
 gate이고, RR join은 그 결과가 `SOURCE_REPLAY_INCOMPLETE` 일 때만 **별도 승인 후**
 진행하는 단일 사전등록 경로다 — 이번 인수검사에서 join은 설계·구현·실행 어느

@@ -1,6 +1,12 @@
 # DRIVE_ASSET_PREFLIGHT — 신규 Drive 자산 인수검사 (2026-08-10)
 
-**판정: `SOURCE_REPLAY_INCOMPLETE` (B)**
+**판정: `SOURCE_REPLAY_INCOMPLETE` (B)** — 2차 인수 후에도 유지. **단 근거가 크게 바뀌었다.**
+
+> **2026-08-10 2차 인수 (§13)**: 1차 스캔(04:00–07:00) 이후 **08:00에 `MyDrive/mitbih/v9~v13/`
+> 가 업로드**됐다. 여기에 1차에서 "부재"로 기록한 **V10 소스(`v10pkg/kinkmap/`)** 와
+> **v9·v10 캐시 실물**이 들어 있다. 그 결과 B의 두 결격 사유 중 **V10 row lineage는
+> 닫혔고**, 남은 것은 **numpy/scipy 버전 미상 하나뿐**이다. §2–§12는 1차 인수 시점의
+> 기록으로 보존하고, 변경된 사실은 §13에 모아 정정한다.
 
 이 문서는 **읽기 전용 인벤토리·provenance 판정**이다. EXP-2026-007의 과학적 분석이
 아니고, 어떤 실험의 판정도 바꾸지 않는다. beat join·association·학습은 실행하지
@@ -17,9 +23,9 @@ NPZ는 단 하나도 다운로드하지 않았다). join 규칙을 여러 개 �
 
 | 필수 질문 | 답 | 근거 |
 |---|---|---|
-| V9 확률 row의 record 내 순서·filtering을 결과를 보지 않고 완전히 재현 가능한가 | **아니오** | 행 순서가 `.atr` ordinal이 아니라 **런타임 R 검출기** 출력 순서다(§3) |
-| V9 소스의 정확한 버전·입력 hash·환경·cache lineage가 증명되는가 | **아니오** | 소스는 특정됐고 producer도 확증됐으나(§2), scipy/numpy가 **미고정**이고 입력 hash·환경 캡처·cache manifest가 **부재**(§4) |
-| V10이 V9와 동일한 처리 row를 썼다는 **producer-side** 증거가 있는가 | **아니오** | `v10pkg` 소스 패키지가 Drive에 **없다**. 유일한 대조 신호는 판별력이 없다(§5) |
+| V9 확률 row의 record 내 순서·filtering을 결과를 보지 않고 완전히 재현 가능한가 | **재현은 여전히 불가 · 그러나 재현할 필요가 없어졌다** | 행 순서가 `.atr` ordinal이 아니라 **런타임 R 검출기** 출력 순서다(§3). 다만 그 행이 **캐시로 보존**돼 있어 재계산 없이 확정된다(§13.2) |
+| V9 소스의 정확한 버전·입력 hash·환경·cache lineage가 증명되는가 | **부분** | 소스·producer 확증(§2). cache lineage는 **실물 확보**(§13.2). 환경은 Python 3.12.3·tf 2.21.0·keras 3.15.0·cuDNN 92400·GPU까지 확정됐으나 **numpy/scipy 버전만 끝내 미상**(§13.3) |
+| V10이 V9와 동일한 처리 row를 썼다는 **producer-side** 증거가 있는가 | **예 (2026-08-10 2차 인수)** | `v10pkg/kinkmap/data.py` 의 row 선택 로직이 v9와 동일하고 `pw` 는 순수 add-on이며, **독립 재빌드된 v10 캐시가 v9 캐시와 44/44 일치**(§13.1–13.2) |
 | `mamba_data/t.npy`의 의미·생성 규칙이 소스/manifest로 확인되는가 | **예** | `build_penult.py`의 `t = np.cumsum(pre) - pre[0]` — 소스로 확정(§6) |
 | 압축 해제된 mamba 배열이 등록 `mamba_data.npz`(hash `b1c16106…`)의 정확한 구성원인가 | **미확인(정합하나 미증명)** | 6개 배열 전부 정확히 99,871행으로 구조 정합. 그러나 hash 미계산 + 동일 크기 사본 3개 존재(§7) |
 | 중복·부분 실행 폴더와 canonical 최종 번들을 구분했는가 | **예** | §8 |
@@ -307,10 +313,153 @@ hash의 인용이며, `—`는 미계산을 뜻한다(대용량 + 도구가 chec
 - parent spec 또는 join spec 수정
 - 여러 join 규칙 시행 후 선택 (단 하나도 실행하지 않았다)
 
-## 12. 남은 공백
+## 12. 남은 공백 (→ §13에서 대부분 해소)
 
-- 압축 해제 mamba 배열의 **hash 대조 미실시**(§7). 등록 npz와의 구성원 관계는
-  구조 정합까지만 확인됐다.
-- `v10pkg` **소스 부재**(§5a). V10 row lineage는 현재 자산으로 닫히지 않는다.
-- V9를 낳은 실행의 **scipy/numpy 실제 버전 미상**(§4). 재실행으로 같은 row 집합이
-  나온다는 보장이 없다.
+- 압축 해제 mamba 배열의 **hash 대조 미실시**(§7). **[여전히 유효]**
+- ~~`v10pkg` 소스 부재(§5a)~~ → **§13.1에서 해소**
+- ~~V9를 낳은 실행의 scipy/numpy 실제 버전 미상(§4)~~ → **§13.3에서 부분 해소**
+  (Python·TF·Keras·cuDNN·GPU 확정, **numpy/scipy만 미상**)
+
+---
+
+# 13. 2차 인수 (2026-08-10 08:00 업로드분)
+
+1차 스캔 종료 후 `MyDrive/mitbih/v9~v13/` (folder id `18EC4UoOTV3pTW2ehyx5nI6nToBoMOK66`,
+생성 2026-08-10T08:00:31Z · `v9~v13.zip` `18MbILCkW2W48SeDaXy_JiEdZJzdKwilg` 1,343,598,610 B)
+가 업로드됐다. 구조: `v10pkg/`(소스) + `v9`·`v10`·`v11`·`v12`·`v13`(각 실행 산출물
+`cache/`·`results/`·`data/` + `v*_results.zip`).
+
+## 13.1 V10 소스 확보 — §5a 정정
+
+`v9~v13/v10pkg/kinkmap/` (folder id `1czXZdgSrGttrhOFlNvOHQ3l16ZfluOPX`):
+`data.py`(7,744 B) · `frontend.py`(8,434 B) · `model.py`(5,861 B) · **`pwave.py`(6,127 B)** ·
+`train.py`(4,697 B) · `evaluate.py`(6,898 B) · `__init__.py`(0 B). 상위에
+`v10_ECG.ipynb`(**118,721 B — 출력 보존본**) · `v9_ECG.ipynb`(46,182 B) ·
+`README.md`(1,453 B) · `requirements.txt`(84 B) · `data/`.
+
+**행 선택 로직이 v9와 동일하다.** `data.py::build_record()` 의 `detect_r()` 호출,
+`tol = int(0.15*fs)`, `used` 집합 greedy 최근접 매칭, 경계컷(`p−150 ≥ 0`, `p+150 ≤ len`),
+`valid`/`idx` 구성이 v9와 문자열 수준에서 같다. v10이 더한 것은 이것뿐이다:
+
+```python
+pw_all = PW.pwave_features(sig, peaks, normal_mask=None, fs=fs)   # (n_all, 5)
+...
+"pw": pw_all[idx].astype("float32"),
+```
+
+**같은 `idx` 를 재사용하므로 행을 추가·삭제·재정렬하지 않는 순수 add-on**이다.
+`model.py::ARMS` 도 확인됐다 — `base`=(compare,¬ctx,proto,¬pw) 는 v9 `kink_noctx`
+와 같은 조합이고(그래서 params 1,141,291 이 v9 `kink_noctx` 와 일치), `v8base`
+=(compare,¬ctx,¬proto,¬pw) 는 v9 `v8base` 와 같다(1,126,891 일치).
+
+## 13.2 캐시 실물 확보 + 44/44 독립 일치 — 결정적
+
+| 캐시 | folder id | 내용 | mtime |
+|---|---|---|---|
+| v9 | `1TXLX14RHA5u1dIUiYt36k2dcT5lpm5RY` | record npz 44 + `meta.json`(1,938 B, `1zWBzId_x71DK_VGdfHKg3z0DXF_F0km_`) | 2026-07-18T08:11–08:12 |
+| v10 | `1I6iugsrHwJjjpLVS8TVp-aDkVwpdmJxF` | record npz 44 + `meta.json`(1,938 B, `107_BY6HWEKjR5sSjPmUlhkopVmdvUwg_`) | 2026-07-18T11:55 |
+
+두 `meta.json` 의 **44개 record `n`·`split` 이 전부 동일**하다(파일 크기도 1,938 B로 같다).
+mtime은 각 실행 직전이다(v9 결과 08:22–10:19, v10 결과 12:04–15:15).
+
+**이것이 복사본이 아니라 독립 재현이라는 증거**: `v10_ECG.ipynb` 셀 20이
+`shutil.rmtree('cache', ignore_errors=True)` 로 캐시를 **지우고**, 셀 21이
+`prepare(CFG.DATA_DIR, CFG.CACHE_DIR, ...)` 로 **처음부터 다시 빌드**한다. 원본 입력은
+셀 19의 `wfdb.dl_database('mitdb', dl_dir=CFG.DATA_DIR, records=sorted(set(DS1+DS2)),
+annotators=['atr'])` 로 PhysioNet에서 받은 mitdb다.
+
+셀 21 stdout이 record별 beat 수를 그대로 출력하고 `meta.json` 과 일치하며, 셀 23이
+`실데이터 DS1: S 944/50551` 을 찍는다 — **DS1 50,551 이 독립 확인된다.**
+→ 동일 row 집합에 대한 **독립 증언 3개**(v9 캐시 meta · v10 캐시 meta · v10 노트북 stdout).
+
+### record별 행 대장 — v9/v10 캐시 vs mamba 계보
+
+`cache_v15b_meta.json`(커밋본) 전량 대조. **36/44 일치, 8개 불일치:**
+
+| record | split | v9/v10 | mamba | 차이 |
+|---|---|---|---|---|
+| 108 | DS1 | 1,759 | 1,760 | −1 |
+| 116 | DS1 | 2,397 | 2,411 | **−14** |
+| 203 | DS1 | 2,972 | 2,974 | −2 |
+| 208 | DS1 | 2,572 | 2,579 | −7 |
+| 223 | DS1 | 2,590 | 2,591 | −1 |
+| **105** | DS2 | 2,566 | 2,567 | **−1** |
+| **111** | DS2 | 2,123 | 2,124 | **−1** |
+| **222** | DS2 | 2,477 | 2,481 | **−4** |
+
+DS1 50,551 vs 50,576 (**−25**) · DS2 **49,289 vs 49,295 (−6)** · 전체 99,840 vs 99,871 (−31).
+
+DS2 쪽 −1/−1/−4 가 `ASSETS.md` 기록과 정확히 일치한다. **DS1 쪽 −25 는 지금까지
+문서화된 적이 없던 값이다.** §5c의 기전(검출기 vs 주석 ordinal)이 양쪽 split에서
+일관되게 확인된다.
+
+→ **`mamba_data.npz` 행과 V9/V10 확률 행의 record별 구간이 이제 산술로 결정된다**
+(DS2 리스트 순서 × 위 `n`). join 명세가 요구하던 `processed row index` ledger 항목이
+채워진다.
+
+## 13.3 환경 — 부분 해소, numpy/scipy만 미상
+
+`v10_ECG.ipynb` 출력에서 실측:
+
+| 항목 | 값 | 출처 |
+|---|---|---|
+| 실행 위치 | **로컬** `/home/user/work/v10` (Colab 아님) | 셀 2 stdout `환경: local` |
+| Python | **3.12.3** · venv `~/ecg` | notebook `language_info` · traceback 경로 `~/ecg/lib/python3.12/site-packages` |
+| TensorFlow | **2.21.0** | 셀 2 stdout — `requirements.txt` 핀과 일치 |
+| Keras | **3.15.0** | 동일 |
+| GPU | **NVIDIA GeForce GTX 1650 Ti with Max-Q**, CC 7.5, 2,242 MB | 셀 26 stdout |
+| cuDNN | **92400** | 셀 26 stdout |
+| **numpy / scipy** | **미상** | `pip freeze`·`__version__` 출력 셀이 **없다** |
+
+`kernelspec` 은 `Python (ecg)` 로, 재현 가능한 named venv다. **`~/ecg` 는 사용자 로컬
+머신에 아직 존재할 가능성이 높다** → `~/ecg/bin/pip freeze` 한 번이면 마지막 공백이 닫힌다.
+
+참고: 셀 26의 `KeyboardInterrupt` 는 GPU OOM(2.05 GiB 할당 실패)이 난 smoke 실행
+(`arms=['base'], seeds=[1000]`)을 수동 중단한 것이고, 본 실행은 셀 28
+(`arms=['base','pwave','v8base','pwave_noc','full']`, seeds 1000–1004)이다. 셀 28
+stdout의 시드별 수치가 `results/*_metrics.json` 과 일치한다 — **실패 이력이 아니다.**
+
+## 13.4 판정을 A로 올리지 않는 이유
+
+A(`SOURCE_REPLAY_PROVEN`)는 "exact source, environment, input, filtering, row-order 및
+V10 lineage가 **모두** 증명된 경우에만 발화한다"고 등록돼 있다. 현재 상태:
+
+| 조건 | 상태 |
+|---|---|
+| exact source | ✅ V9·V10 둘 다 확보, param 5/5 대조로 producer 확증 |
+| input | ✅ PhysioNet `mitdb` (`wfdb.dl_database`) — publisher SHA-256 검증본이 `data-mitdb-raw-100` 으로 등록돼 있음 |
+| filtering | ✅ 소스로 확정(§3) |
+| row-order | ✅ 캐시 2개 + 노트북 stdout 으로 **물질화** |
+| V10 lineage | ✅ 동일 코드 경로 + 독립 재빌드 44/44 일치 |
+| **environment** | ⚠️ **numpy/scipy 미상** |
+
+**환경 조건 하나가 미충족이므로 B를 유지한다.** 캐시가 행을 보존하고 있어 실무적으로는
+replay가 불필요해졌지만, **gate 문구를 사후에 재해석해 더 유리한 판정으로 옮기지
+않는다** — 그것이 이 preflight가 금지하는 행동(provenance 경로를 결과 편의로 고르는 것)과
+같은 종류이기 때문이다. 재해석 여부는 join spec의 `design_owner`(Codex)와 사용자의
+결정 사항이지 이 인수검사의 권한이 아니다.
+
+**A로 가는 데 남은 것은 정확히 하나**: V9/V10을 실행한 `~/ecg` venv의 numpy·scipy 버전.
+
+## 13.5 v9 → v13 실험 계보 (README 실측)
+
+| 버전 | 핵심 전환 | arm | 결과 |
+|---|---|---|---|
+| v8 | 검증된 base — comparison branch(본인 median 템플릿과의 latent 차이)가 S를 0.055 → 0.46 | — | 기준선 |
+| v1 (kinkmap) | v8 base를 통째로 제거 | — | **붕괴** S 0.13. "val 무가중 버그"도 이 부재의 증상 |
+| **v9** | v8 base 값까지 복원 + kink 좌표(d1=1차미분, κ=곡률) add-on | `v8base` `v8_noc` `kink` `kink_noctx` `kink_noproto` | `kink_noctx` **0.5969** 최고 · **ctx(개인 내 layer)는 해로움** |
+| **v10** | v9 `kink_noctx` 조합을 `base` 로 놓고 **P파 직접 포착 5특징**(`pwave.py`) 추가. 미분을 날것이 아니라 **정상 템플릿과의 residual**에만 사용 | `base` `pwave` `v8base` `pwave_noc` `full` | `pwave` **0.6603** 최고 (`pw` 5개 단독 DS2 S PR-AUC 0.110) |
+| **v11** | V10 실패를 환자별로 해부 → **222**(기준선 오염형: P진폭 1.22인데 RR변이 0.337로 median 템플릿 오염)와 **200**(P파 소실형: P진폭 0.394)을 **정반대 이유로** 겨냥. `rhythm.py`(PP-RR 불일치·short-long, 템플릿 없이 222 우회) + P부재 게이트 | `base` `pwave` `rhythm` `pw_rhythm` | 판정축 = 최악환자 **하방** |
+| **v12** | v11까지도 222가 0.11–0.14를 못 벗어남 → "특징이 아니라 **구조** 문제". 재검(recheck) 구조 + **이중게이트**(B가 경계선 N<0.85 AND D가 S 0.9+; 단일게이트는 precision 붕괴) | `b_only` `recheck_sl/pr/ib/pw` `recheck_all` | `prob_B`/`prob_D`/`prob_final` 3종 저장 |
+| **v13** | 미분 계열 전패(slope −0.038, idea B, ctx −0.117) → **적분**으로 전환 + **RR^(2/3) 정규화**(v8–v12에서 한 번도 안 한 것). 222 대비 detrend 필수 | `base` `integ` `integ_nonorm` `integ_full` `intg_only` | — |
+| v14 / v15b | mamba 계보(`v15b_local.py`). `psa`(P극성)·`psa_rel`(자기대비 상대화), v14 게이트 폐기 | — | `mamba_data.npz` 로 이어짐 |
+
+줄기: **미분 → (residual로서의) P파 → 환자별 표적 → 재검 구조 → 적분+RR 정규화.**
+**222·200이 v10부터 v13까지 계속 표적이었다는 점**이, Q5-A에서 `231`·`222` 가 붕괴
+record로 나온 것과 이어진다(`run-20260810-q5d-qualify` 주의 ③과 같은 record다).
+
+## 13.6 2차 인수에서도 하지 않은 것
+
+- 캐시 npz·확률 npz를 **열지 않았다**(`meta.json` 의 record별 행 수와 노트북 stdout만 읽었다)
+- DS2 per-beat class label 열람 없음 · V10 probability 값 열람 없음
+- beat join·association·학습 실행 없음 · Drive 변경 0건
