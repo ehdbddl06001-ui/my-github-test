@@ -109,31 +109,45 @@ MODULE_VERSION = 1
 MODULE_BUILD = "2026-08-10"
 
 NO_EXECUTION_BANNER = (
-    "EXP-2026-007 / Q5-D BEAT JOIN — IMPLEMENTED, NOT RUN ON REGISTERED DATA")
+    "EXP-2026-007 / Q5-D BEAT JOIN — JOIN ONLY, NO OUTCOME, NO TRAINING")
 
-#: What the user approved, spelled out so no reader has to infer it.
+#: Exactly which approvals exist, spelled out so no reader has to infer them.
+#:
+#: Both join approvals are now in hand: the design (spec «Status boundary»
+#: step 2) and the execution on registered data (step 4).  What is still
+#: sealed is everything downstream of the join — the V10 probability values
+#: and the association analysis — which need their own further approval, and
+#: the DS2 per-beat class labels, which open only after the DS1 rule, hashes,
+#: tests, environment, thresholds and DS1 report have frozen.
 APPROVAL_NOTE = (
-    "The user approved writing this implementation.  That approval does NOT "
-    "cover running the join on the registered MIT-BIH / mamba / V9 / V10 "
-    "artifacts.  Executing on registered data needs a second, explicit user "
-    "approval (join spec, «Status boundary» step 4).")
+    "Approved: writing this implementation (2026-08-10) AND executing the "
+    "join on the registered MIT-BIH / mamba / V9 / V10 artifacts "
+    "(2026-08-10).  Still sealed and NOT approved: V10 probability values, "
+    "the association analysis, S PR-AUC, and any model training.  DS2 "
+    "per-beat class labels open only under the separate post-freeze support "
+    "gate.  Execution stays an explicit opt-in so no stray run touches the "
+    "registered data by accident, and it must clear the hash preflight first.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Modes
 # ─────────────────────────────────────────────────────────────────────────────
 MODE_DESIGN = "DESIGN"
 MODE_FIXTURES = "SYNTHETIC_FIXTURES"
+MODE_PREFLIGHT = "HASH_PREFLIGHT"
 MODE_LEG1 = "LEG1_REPLAY_AUDIT"
 MODE_LEG2 = "LEG2_RECORD_JOIN"
 MODE_DS1 = "DS1_GATE"
 MODE_DS2 = "DS2_GATE"
 MODE_REPORT = "JOIN_REPORT"
 
-MODES: Tuple[str, ...] = (MODE_DESIGN, MODE_FIXTURES, MODE_LEG1, MODE_LEG2,
-                          MODE_DS1, MODE_DS2, MODE_REPORT)
+MODES: Tuple[str, ...] = (MODE_DESIGN, MODE_FIXTURES, MODE_PREFLIGHT,
+                          MODE_LEG1, MODE_LEG2, MODE_DS1, MODE_DS2,
+                          MODE_REPORT)
 #: Modes that reach a registered artifact.  Each needs the execution approval.
+#: ``HASH_PREFLIGHT`` is one of them: it opens the artifacts to hash them, and
+#: it is the STOP/PASS gate every later stage must clear first.
 MODES_NEEDING_EXECUTION_APPROVAL: Tuple[str, ...] = (
-    MODE_LEG1, MODE_LEG2, MODE_DS1, MODE_DS2)
+    MODE_PREFLIGHT, MODE_LEG1, MODE_LEG2, MODE_DS1, MODE_DS2)
 #: Modes that are safe without it, because they only touch synthetic data or
 #: an already-produced bundle.
 OFFLINE_MODES: Tuple[str, ...] = (MODE_DESIGN, MODE_FIXTURES, MODE_REPORT)
@@ -209,6 +223,79 @@ BANNED_JOIN_KEYS: Tuple[str, ...] = ("t", "time", "t_seconds", "cumsum_pre")
 RESULT_NPZ_READABLE: Tuple[str, ...] = ("pid",)
 RESULT_NPZ_DS1_AUDIT_KEYS: Tuple[str, ...] = ("pid", "y")
 RESULT_NPZ_SEALED: Tuple[str, ...] = ("prob",)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Registered artifact contract.  Every constant below is quoted from a source
+# file, not inferred from how well the join then works.  The spec requires both
+# RR semantics to be frozen from source and manifest *before* any match.
+# ─────────────────────────────────────────────────────────────────────────────
+#: `mamba_data.npz`, ASSETS.md row `data-mit-mamba`.
+MAMBA_SHA256 = ("b1c16106216522cb21291f990e7ab0e7f8dfd8135406db322f41cda3687"
+                "f6c05")
+MAMBA_BYTES = 204504913
+#: The registered copy's Drive id and path.  Two byte-identical duplicates
+#: exist (created 2026-08-10); when several copies verify, the registered one
+#: is preferred and the others are recorded as duplicates, not treated as an
+#: ambiguity.
+MAMBA_REGISTERED_DRIVE_ID = "1p3HvC_bnbiQlEanFOVIvVdejy60W0tho"
+MAMBA_REGISTERED_PATH = "mitbih/mamba_data.npz"
+MAMBA_TOTAL_ROWS = 99871
+MAMBA_KEYS: Tuple[str, ...] = ("beat", "ref", "feats", "y", "pid", "t")
+#: `Z(26D) = psa_rel(4) + rr(7) + pw(3) + rhy(5) + ptf2_rel(7)`
+#: (`mit-bih/lineage/build_penult.py :: FEATS`).  The `rr` block therefore
+#: starts at column 4, and `RR_PRE_COL = 0` inside that block.
+MAMBA_FEATS_DIM = 26
+MAMBA_RR_BLOCK_START = 4
+MAMBA_PRE_COLUMN = MAMBA_RR_BLOCK_START + 0
+MAMBA_POST_COLUMN = MAMBA_RR_BLOCK_START + 1
+#: `rr_all = np.diff(rpks) / FS` — seconds (`v15b_local.py:107`).
+MAMBA_RR_UNIT = UNIT_SECONDS
+#: mamba duplicates its endpoints: first pre-RR and last post-RR repeat their
+#: neighbour interval, so first and last beats are eligible.
+MAMBA_ENDPOINT_SEMANTIC = "duplicated"
+#: mamba computes RR **after** the symbol and boundary filters, on annotation
+#: positions (`v15b_local.py:101-109`).
+MAMBA_RR_STAGE = "after_symbol_and_boundary_filter"
+
+#: V9/V10 preprocessing cache, `kinkmap/data.py :: build_record` return dict.
+CACHE_KEYS: Tuple[str, ...] = ("beat", "ref", "rr", "sim", "pw", "ctx", "y")
+#: `N_RR = 7`; `rr_features` stacks
+#: `[pre, post, pre/local, post/local, pre/avg, post-pre, lvar]`
+#: (`kinkmap/frontend.py :: rr_features`).
+CACHE_RR_DIM = 7
+CACHE_PRE_COLUMN = 0
+CACHE_POST_COLUMN = 1
+#: `rr = np.diff(peaks) / fs` — seconds (`frontend.py :: rr_features`).
+CACHE_RR_UNIT = UNIT_SECONDS
+#: **This is where the two lineages genuinely differ.**  `rr_features` sets the
+#: first pre-RR and the last post-RR to `np.nan` and then `nan_to_num`s them to
+#: `0.0`.  It does *not* duplicate them the way mamba does.  A stored `0.0` is
+#: therefore a real value meaning "no neighbour", not a missing entry, and it
+#: will simply fail to form a candidate edge against mamba's duplicated
+#: endpoint.  That row stays UNMATCHED and counts against coverage — which is
+#: the honest outcome, not something to patch.
+CACHE_ENDPOINT_SEMANTIC = "nan_to_zero"
+#: V9/V10 computes `Fr = rr_features(peaks)` on the **full** matched-peak array
+#: and only then selects `Fr[idx]` with the boundary-valid rows, so a cache row
+#: can carry an RR whose neighbour was boundary-cut (`data.py :: build_record`).
+CACHE_RR_STAGE = "before_boundary_filter"
+#: V9/V10 drops a record below this many peaks; mamba's rule is five valid
+#: beats.  The two record rules are different and both are quoted, not merged.
+CACHE_MIN_PEAKS = 2
+#: The detector-to-annotation matching tolerance, `tol = int(0.15 * fs)`.
+CACHE_MATCH_TOL_SAMPLES = 54
+
+#: Why one sample of tolerance is the right size, and what it is absorbing.
+#:
+#: A cache RR is a difference of **detector** positions and a mamba RR is a
+#: difference of **annotation** positions.  Writing the detector position as
+#: `p_j = pos_j + e_j`, the two RRs differ by `e_j - e_{j-1}` — the *change* in
+#: detector offset between neighbouring beats, not the offset itself.  A stable
+#: detector has a nearly constant per-record offset, so that difference is
+#: small.  The frozen tolerance is one 360 Hz sample and is never widened; if
+#: the offsets turn out to move faster than that, coverage falls and the
+#: registered answer is `JOIN_UNRESOLVED`.
+RR_TOLERANCE_RATIONALE = "difference of detector offsets between neighbours"
 
 # ─── Negative controls, null and bootstrap ──────────────────────────────────
 CONTROL_WRONG_RECORD = "wrong_record"
@@ -314,7 +401,8 @@ BUNDLE_FILES: Tuple[str, ...] = (
 #: :func:`validate_join_map_row` rejects one if it ever appears.
 JOIN_MAP_FIELDS: Tuple[str, ...] = (
     "split", "record", "raw_atr_ordinal", "raw_r_sample", "mamba_record_row",
-    "mamba_global_row", "cache_record_row", "result_global_row", "status",
+    "mamba_global_row", "mamba_file_row", "cache_record_row",
+    "result_global_row", "status",
     "pre_rr_difference_samples", "post_rr_difference_samples", "failed_leg",
     "drop_or_unmatched_reason",
 )
@@ -372,11 +460,11 @@ def require_execution_approval(approval: Optional[str], what: str) -> None:
     """
     if approval != EXECUTION_APPROVAL_TOKEN:
         raise ExecutionNotApprovedError(
-            f"refusing to open {what}: this needs the separate user approval "
-            f"for executing the beat join on registered data.\n"
+            f"refusing to open {what}: reaching a registered artifact is an "
+            f"explicit opt-in, so that no stray call touches the data.\n"
             f"{APPROVAL_NOTE}\n"
             f"Pass {EXECUTION_APPROVAL_FLAG} (CLI) or the execution-approval "
-            f"token (API) only after that approval exists.")
+            f"token (API), and clear the hash preflight first.")
 
 
 def require_ds2_label_release(release: Optional[str], what: str) -> None:
@@ -446,6 +534,791 @@ def read_result_npz(path: str, split: str, keys: Sequence[str],
         for key in asked:
             out[key] = bundle[key]
     return out
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Hash preflight — the material-input contract, checked before any matching
+# ─────────────────────────────────────────────────────────────────────────────
+def resolve_canonical_mamba(candidates: Sequence[str],
+                            approval: Optional[str] = None,
+                            registered_path: Optional[str] = None
+                            ) -> Dict[str, object]:
+    """Pick the canonical `mamba_data.npz` among same-size Drive copies.
+
+    Three same-size copies exist and two were created after the lineage was
+    registered, so size proves nothing — only bytes do.
+
+    The rule, corrected after Codex review:
+
+    - **zero** candidates matching :data:`MAMBA_SHA256` -> `JOIN_INPUT_ABSENT`;
+    - **one or more** matches -> they are byte-identical to the registered
+      asset by definition, which is *not* an identity ambiguity.  Prefer the
+      copy at the registered path (Drive id :data:`MAMBA_REGISTERED_DRIVE_ID`)
+      when it is among them; otherwise take the first match in the given order
+      and record that the registered copy was absent, so the manifest says
+      which physical file was used;
+    - a same-size candidate whose hash differs is excluded and recorded.
+
+    An earlier version stopped when two candidates matched.  That was wrong:
+    two verified byte-identical copies carry the same content, and refusing
+    them would have blocked a run for a non-problem.
+    """
+    require_execution_approval(approval, "mamba_data.npz candidates")
+    registered = registered_path or MAMBA_REGISTERED_PATH
+    checked: List[Dict[str, object]] = []
+    matches: List[str] = []
+    for path in candidates:
+        row: Dict[str, object] = {"path": path, "exists": os.path.exists(path)}
+        if row["exists"]:
+            row["bytes"] = os.path.getsize(path)
+            row["sha256"] = sha256_file(path)
+            row["matches_registered"] = row["sha256"] == MAMBA_SHA256
+            row["same_size_different_hash"] = (
+                not row["matches_registered"] and row["bytes"] == MAMBA_BYTES)
+            if row["matches_registered"]:
+                matches.append(path)
+        checked.append(row)
+    if not matches:
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: no candidate matches the registered "
+            f"mamba SHA-256 {MAMBA_SHA256[:16]}….  Checked: {checked}.  A copy "
+            f"that cannot be linked byte-for-byte to the canonical asset is "
+            f"not a substitute.")
+    preferred = [p for p in matches if os.path.normpath(p).endswith(
+        os.path.normpath(registered).lstrip(os.sep))] if registered else []
+    canonical = preferred[0] if preferred else matches[0]
+    for row in checked:
+        if row.get("matches_registered"):
+            row["role"] = ("canonical" if row["path"] == canonical
+                           else "byte_identical_duplicate")
+        elif row.get("exists"):
+            row["role"] = ("excluded_same_size_different_hash"
+                           if row.get("same_size_different_hash")
+                           else "excluded_hash_mismatch")
+        else:
+            row["role"] = "absent"
+    return {
+        "canonical": canonical,
+        "canonical_sha256": MAMBA_SHA256,
+        "registered_copy_present": bool(preferred),
+        "registered_path": registered,
+        "byte_identical_duplicates": [p for p in matches if p != canonical],
+        "candidates": checked,
+    }
+
+
+def hash_file_set(directory: str, expected_names: Sequence[str],
+                  approval: Optional[str] = None) -> Dict[str, object]:
+    """SHA-256 every file in a registered directory, then aggregate them.
+
+    Hashing a directory *listing* proves nothing about content, so this hashes
+    each file's bytes and folds `(name, size, sha256)` for the sorted expected
+    set into one aggregate digest.  Extra and missing entries are reported
+    separately — an unexpected file in a registered directory is a contract
+    problem even when every expected file verifies.
+    """
+    require_execution_approval(approval, f"file set at {directory!r}")
+    if not os.path.isdir(directory):
+        return {"ok": False, "directory": directory, "files": [],
+                "missing": list(expected_names), "extra": [],
+                "aggregate": None, "problems": [f"not a directory: {directory}"]}
+    present = sorted(name for name in os.listdir(directory)
+                     if os.path.isfile(os.path.join(directory, name)))
+    expected = sorted(set(expected_names))
+    missing = [name for name in expected if name not in present]
+    extra = [name for name in present if name not in expected]
+    files: List[Dict[str, object]] = []
+    for name in expected:
+        if name in missing:
+            continue
+        path = os.path.join(directory, name)
+        files.append({"name": name, "bytes": os.path.getsize(path),
+                      "sha256": sha256_file(path)})
+    aggregate = hashlib.sha256(_canonical_json(
+        [[f["name"], f["bytes"], f["sha256"]] for f in files]
+    ).encode("utf-8")).hexdigest()
+    problems: List[str] = []
+    if missing:
+        problems.append(f"{directory}: missing {missing}")
+    if extra:
+        problems.append(f"{directory}: unexpected {extra}")
+    return {"ok": not problems, "directory": directory, "files": files,
+            "missing": missing, "extra": extra, "aggregate": aggregate,
+            "problems": problems, "n_files": len(files)}
+
+
+def cache_expected_files() -> Tuple[str, ...]:
+    """`meta.json` plus one npz per registered record — the whole cache."""
+    records = [row.record for split in SPLITS for row in build_ledger()[split]]
+    return ("meta.json",) + tuple(f"{r}.npz" for r in sorted(records))
+
+
+def mitdb_expected_files() -> Tuple[str, ...]:
+    """The `.dat/.hea/.atr` triple for every record the join touches."""
+    records = sorted(row.record for split in SPLITS
+                     for row in build_ledger()[split])
+    names: List[str] = []
+    for record in records:
+        names.extend([f"{record}.dat", f"{record}.hea", f"{record}.atr"])
+    return tuple(names)
+
+
+def hash_preflight(assets: Mapping[str, str],
+                   approval: Optional[str] = None,
+                   expected: Optional[Mapping[str, str]] = None
+                   ) -> Dict[str, object]:
+    """Hash every registered input and decide STOP / PASS before matching.
+
+    ``assets`` maps a label to a path.  ``expected`` gives the registered
+    SHA-256 for whichever labels have one; a label without a registered hash is
+    hashed and **recorded** so the run bundle pins it, but its absence is not
+    by itself a failure — the spec's `JOIN_INPUT_ABSENT` covers missing or
+    mismatched artifacts, not artifacts that were never hashed before.
+
+    Returns a report whose ``ok`` decides whether Leg 1 may start.  This is the
+    STOP/PASS gate the notebook runs first.
+    """
+    require_execution_approval(approval, "registered asset hash preflight")
+    expected = dict(expected or {})
+    rows: List[Dict[str, object]] = []
+    problems: List[str] = []
+    for label, path in sorted(assets.items()):
+        row: Dict[str, object] = {"asset": label, "path": path}
+        if not os.path.exists(path):
+            row["status"] = "MISSING"
+            problems.append(f"{label}: not found at {path}")
+            rows.append(row)
+            continue
+        if os.path.isdir(path):
+            names = sorted(os.listdir(path))
+            row["status"] = "DIRECTORY"
+            row["entries"] = len(names)
+            row["sha256"] = hashlib.sha256(
+                "\n".join(names).encode("utf-8")).hexdigest()
+            row["listing_hash_only"] = True
+        else:
+            row["bytes"] = os.path.getsize(path)
+            row["sha256"] = sha256_file(path)
+            want = expected.get(label)
+            if want is None:
+                row["status"] = "RECORDED_NO_REGISTERED_HASH"
+            elif row["sha256"] == want:
+                row["status"] = "VERIFIED"
+            else:
+                row["status"] = "HASH_MISMATCH"
+                problems.append(
+                    f"{label}: sha256 {row['sha256'][:16]}… != registered "
+                    f"{want[:16]}…")
+        rows.append(row)
+    return {
+        "ok": not problems,
+        "decision": None if not problems else DECISION_INPUT_ABSENT,
+        "problems": problems,
+        "assets": rows,
+        "rule_fingerprint": rule_fingerprint(),
+        "verified": sum(1 for r in rows if r.get("status") == "VERIFIED"),
+        "recorded": sum(1 for r in rows
+                        if r.get("status") == "RECORDED_NO_REGISTERED_HASH"),
+        "total": len(rows),
+    }
+
+
+def assert_preflight_passed(report: Mapping[str, object]) -> None:
+    """Leg 1 may not start on a failed preflight.  This is the hard stop."""
+    if not report.get("ok"):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: the material-input contract is not "
+            f"closed, so no matching may start.\n  "
+            + "\n  ".join(str(p) for p in report.get("problems", ())))
+
+
+#: Every field a preflight freeze must carry before any matching starts.
+PREFLIGHT_FREEZE_FIELDS: Tuple[str, ...] = (
+    "ok", "rule_fingerprint", "canonical_mamba", "cache_aggregate",
+    "mitdb_aggregate", "result_contract",
+)
+
+
+def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
+                    mitdb_dir: str, result_npz: Mapping[str, str],
+                    approval: Optional[str] = None) -> Dict[str, object]:
+    """Close the whole material-input contract, once, before any matching.
+
+    Produces the freeze that :func:`run_join` requires.  It covers everything
+    `JOIN_INPUT_ABSENT` is defined over: the canonical mamba asset resolved by
+    bytes, the V9/V10 cache as a per-file aggregate (not a listing), the raw
+    MIT-BIH source aggregate, and the cache-row -> result-row positional
+    contract proven from `pid` alone.
+    """
+    require_execution_approval(approval, "material-input preflight")
+    problems: List[str] = []
+
+    mamba = resolve_canonical_mamba(mamba_candidates, approval)
+    cache = hash_file_set(cache_dir, cache_expected_files(), approval)
+    problems.extend(cache["problems"])
+    mitdb = hash_file_set(mitdb_dir, mitdb_expected_files(), approval)
+    problems.extend(mitdb["problems"])
+
+    contract: Dict[str, object] = {}
+    for split in SPLITS:
+        path = result_npz.get(split)
+        if not path:
+            problems.append(f"{split}: no result NPZ given for the positional "
+                            f"contract")
+            continue
+        report = verify_result_positional_contract(path, split, approval)
+        contract[split] = {"path": path, "ok": report["ok"],
+                           "problems": report["problems"],
+                           "blocks": len(report["blocks"])}
+        problems.extend(report["problems"])
+
+    return {
+        "ok": not problems,
+        "problems": problems,
+        "decision": None if not problems else DECISION_INPUT_ABSENT,
+        "rule_fingerprint": rule_fingerprint(),
+        "canonical_mamba": {"path": mamba["canonical"],
+                            "sha256": mamba["canonical_sha256"],
+                            "registered_copy_present":
+                                mamba["registered_copy_present"],
+                            "byte_identical_duplicates":
+                                mamba["byte_identical_duplicates"],
+                            "candidates": mamba["candidates"]},
+        "cache_aggregate": {"directory": cache["directory"],
+                            "aggregate": cache["aggregate"],
+                            "n_files": cache["n_files"],
+                            "missing": cache["missing"], "extra": cache["extra"]},
+        "mitdb_aggregate": {"directory": mitdb["directory"],
+                            "aggregate": mitdb["aggregate"],
+                            "n_files": mitdb["n_files"],
+                            "missing": mitdb["missing"], "extra": mitdb["extra"]},
+        "result_contract": contract,
+    }
+
+
+def verify_preflight_freeze(freeze: Mapping[str, object], mamba_path: str,
+                            cache_dir: str, mitdb_dir: str,
+                            approval: Optional[str] = None,
+                            reverify: bool = True) -> Dict[str, object]:
+    """Re-check that the files on disk *now* are the ones the freeze pinned.
+
+    A freeze that merely travelled alongside the run proves nothing; this
+    recomputes the canonical mamba digest and the two aggregates and compares
+    them.  It also refuses a freeze made under a different rule fingerprint,
+    so a relaxed rule cannot inherit a preflight the way it cannot inherit a
+    null.
+    """
+    missing = [f for f in PREFLIGHT_FREEZE_FIELDS if f not in freeze]
+    if missing:
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: preflight freeze is missing {missing}; "
+            f"matching may not start without the complete input contract")
+    assert_preflight_passed(freeze)
+    if freeze.get("rule_fingerprint") != rule_fingerprint():
+        raise Q5DJoinError(
+            f"the preflight was frozen under rule "
+            f"{freeze.get('rule_fingerprint')!r} but the current rule is "
+            f"{rule_fingerprint()!r}; re-run the preflight under the rule you "
+            f"intend to execute")
+
+    contract = dict(freeze.get("result_contract") or {})
+    if not contract or not all(bool(v.get("ok")) for v in contract.values()):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: the cache-row to result-row positional "
+            f"contract is not proven in this freeze: {contract}")
+
+    checks: Dict[str, object] = {"reverified": bool(reverify)}
+    if not reverify:
+        return checks
+    require_execution_approval(approval, "preflight re-verification")
+    frozen_mamba = dict(freeze["canonical_mamba"])
+    now = sha256_file(mamba_path)
+    if now != frozen_mamba.get("sha256"):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: mamba at {mamba_path!r} now hashes to "
+            f"{now[:16]}… but the preflight froze "
+            f"{str(frozen_mamba.get('sha256'))[:16]}…")
+    checks["mamba_sha256"] = now
+    for label, directory, names, frozen in (
+            ("cache", cache_dir, cache_expected_files(),
+             freeze["cache_aggregate"]),
+            ("mitdb", mitdb_dir, mitdb_expected_files(),
+             freeze["mitdb_aggregate"])):
+        recomputed = hash_file_set(directory, names, approval)
+        want = dict(frozen).get("aggregate")
+        if not recomputed["ok"] or recomputed["aggregate"] != want:
+            raise Q5DJoinError(
+                f"{DECISION_INPUT_ABSENT}: {label} aggregate changed since the "
+                f"preflight ({str(recomputed['aggregate'])[:16]}… != "
+                f"{str(want)[:16]}…) or the file set moved: "
+                f"{recomputed['problems']}")
+        checks[f"{label}_aggregate"] = recomputed["aggregate"]
+    return checks
+
+
+def release_ds2_support_gate(ds1_bundle_dir: str,
+                             freeze: Mapping[str, object],
+                             approval: Optional[str] = None) -> str:
+    """Mint the DS2 label release only from a verified frozen DS1 bundle.
+
+    The spec allows DS2 support gates exactly once, *after* the DS1 rule,
+    hashes, tests, environment, thresholds and DS1 report have frozen.  This
+    refuses to hand out the release unless a real DS1 bundle exists and agrees
+    with the run about to happen: same rule fingerprint, same input hashes,
+    and a DS1 decision that actually carries its null under the registered
+    seed.  Without this, DS2 could be run standalone, which is precisely the
+    "DS2 selected the rule" failure the design forbids.
+    """
+    require_execution_approval(approval, "DS2 support-gate release")
+    decision_path = os.path.join(ds1_bundle_dir, "decision.json")
+    manifest_path = os.path.join(ds1_bundle_dir, "manifest.json")
+    null_path = os.path.join(ds1_bundle_dir, "null_summary.json")
+    for path in (decision_path, manifest_path, null_path):
+        if not os.path.exists(path):
+            raise Q5DJoinError(
+                f"DS2 release refused: the frozen DS1 bundle is incomplete — "
+                f"{os.path.basename(path)} is missing from {ds1_bundle_dir!r}")
+    with open(decision_path, encoding="utf-8") as handle:
+        decision = json.load(handle)
+    with open(manifest_path, encoding="utf-8") as handle:
+        manifest = json.load(handle)
+    with open(null_path, encoding="utf-8") as handle:
+        null = json.load(handle)
+
+    problems: List[str] = []
+    current = rule_fingerprint()
+    for label, value in (("decision", decision.get("rule_fingerprint")),
+                         ("manifest", manifest.get("rule_fingerprint")),
+                         ("null", null.get("rule_fingerprint")),
+                         ("freeze", freeze.get("rule_fingerprint"))):
+        if value != current:
+            problems.append(f"{label} rule_fingerprint {value!r} != {current!r}")
+    frozen_inputs = dict(manifest.get("preflight") or {})
+    for key in ("canonical_mamba", "cache_aggregate", "mitdb_aggregate"):
+        want = frozen_inputs.get(key)
+        got = freeze.get(key)
+        if want is None:
+            problems.append(f"DS1 manifest did not freeze {key}")
+        elif _canonical_json(want) != _canonical_json(got):
+            problems.append(f"{key} differs between the DS1 freeze and this run")
+    if null.get("master_seed") != MASTER_SEED:
+        problems.append(f"DS1 null seed {null.get('master_seed')!r} != "
+                        f"{MASTER_SEED}")
+    if not null.get("j_null_max"):
+        problems.append("DS1 null carries no replicates")
+    if decision.get("decision") not in (DECISION_IDENTIFIABLE,):
+        problems.append(
+            f"DS1 decision is {decision.get('decision')!r}; the DS2 support "
+            f"gate runs only after DS1 qualifies")
+    if not manifest.get("code", {}).get("sha256"):
+        problems.append("DS1 manifest did not record the code hash")
+    if problems:
+        raise Q5DJoinError(
+            "DS2 release refused — the DS1 freeze does not authorise it:\n  "
+            + "\n  ".join(problems))
+    return DS2_LABEL_RELEASE_TOKEN
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Loaders for the registered artifacts
+# ─────────────────────────────────────────────────────────────────────────────
+def _contiguous_blocks(values: Sequence[object]) -> List[Tuple[str, int, int]]:
+    """``[(label, start, length)]`` for a run-length-contiguous id array.
+
+    A record whose rows are *not* contiguous is a boundary violation, not
+    something to sort around, so the caller checks for repeats.
+    """
+    blocks: List[Tuple[str, int, int]] = []
+    start = 0
+    for index in range(1, len(values) + 1):
+        if index == len(values) or values[index] != values[start]:
+            blocks.append((str(values[start]), start, index - start))
+            start = index
+    return blocks
+
+
+def load_mamba_sequences(path: str, approval: Optional[str] = None
+                         ) -> Dict[str, object]:
+    """Read `mamba_data.npz` into one :class:`RecordSequence` per record.
+
+    Row order inside a record is `.atr` ordinal order, which is the source's
+    own construction (`v15b_local.py:101-102` appends in `wfdb.rdann` order and
+    nothing re-sorts afterwards).
+
+    Record *slices* are measured from the stored `pid` array rather than
+    assumed.  That matters: `build_penult.py` enumerates
+    `sorted(glob(cache/*.npz))` over **all 44 records at once**, so the global
+    row order is `100, 101, 103, 105, …` with DS1 and DS2 interleaved — not
+    DS1-block-then-DS2-block.  The spec's ledger builds `mamba_start` by
+    cumulative addition *within the frozen split order*, which is a different
+    enumeration.  Both are reported: `mamba_record_row` and the observed file
+    offset are facts about the artifact, and the ledger start is kept for the
+    registered audit.  Only the per-record **counts** are used as a gate, and
+    those the ledger does fix.
+    """
+    require_execution_approval(approval, f"mamba array at {path!r}")
+    import numpy                                        # noqa: PLC0415
+    with numpy.load(path, allow_pickle=False) as bundle:
+        present = tuple(bundle.files)
+        for key in ("feats", "pid"):
+            if key not in present:
+                raise Q5DJoinError(
+                    f"{DECISION_INPUT_ABSENT}: mamba array {path!r} has no "
+                    f"{key!r}; keys are {present}")
+        feats = numpy.asarray(bundle["feats"])
+        pid = numpy.asarray(bundle["pid"])
+    if feats.ndim != 2 or feats.shape[1] != MAMBA_FEATS_DIM:
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: mamba feats shape {feats.shape} is not "
+            f"(N, {MAMBA_FEATS_DIM}); the 26-D Z layout is what fixes the RR "
+            f"columns, so a different width invalidates the unit contract")
+    if feats.shape[0] != MAMBA_TOTAL_ROWS:
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: mamba array has {feats.shape[0]} rows, "
+            f"registered lineage has {MAMBA_TOTAL_ROWS}")
+
+    labels = [str(int(v)) for v in pid.tolist()]
+    blocks = _contiguous_blocks(labels)
+    seen = [b[0] for b in blocks]
+    if len(seen) != len(set(seen)):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: mamba `pid` is not contiguous per "
+            f"record; a record's rows appear in more than one block, so the "
+            f"record boundary is not well defined")
+
+    ledger = build_ledger()
+    expected = {row.record: row for split in SPLITS for row in ledger[split]}
+    sequences: Dict[str, RecordSequence] = {}
+    observed: List[Dict[str, object]] = []
+    for record, start, length in blocks:
+        led = expected.get(record)
+        if led is None:
+            raise Q5DJoinError(
+                f"{DECISION_INPUT_ABSENT}: mamba record {record!r} is not in "
+                f"the registered 44-record ledger")
+        pre = feats[start:start + length, MAMBA_PRE_COLUMN].tolist()
+        post = feats[start:start + length, MAMBA_POST_COLUMN].tolist()
+        check_declared_unit(MAMBA_RR_UNIT, pre)
+        sequences[record] = RecordSequence(
+            record, led.split, "mamba",
+            rr_to_samples(pre, MAMBA_RR_UNIT),
+            rr_to_samples(post, MAMBA_RR_UNIT),
+            [{"mamba_record_row": k, "mamba_file_row": start + k}
+             for k in range(length)])
+        observed.append({"record": record, "split": led.split,
+                         "file_start": start, "n": length,
+                         "ledger_n": led.mamba_n,
+                         "ledger_split_start": led.mamba_start,
+                         "ok": length == led.mamba_n})
+    bad = [o for o in observed if not o["ok"]]
+    return {"sequences": sequences, "blocks": observed,
+            "count_mismatches": bad, "ok": not bad,
+            "rows": int(feats.shape[0])}
+
+
+def load_cache_sequences(cache_dir: str, approval: Optional[str] = None
+                         ) -> Dict[str, object]:
+    """Read the registered V9/V10 preprocessing cache, record by record.
+
+    The cache preserves the materialised `detect_r()` row order, which is the
+    future result-NPZ position.  Its `meta.json` gives `{record: {split, n}}`
+    and is checked against the frozen ledger before anything is matched.
+    """
+    require_execution_approval(approval, f"V9/V10 cache at {cache_dir!r}")
+    import numpy                                        # noqa: PLC0415
+    meta_path = os.path.join(cache_dir, "meta.json")
+    if not os.path.exists(meta_path):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: cache meta.json missing at {meta_path!r}")
+    with open(meta_path, encoding="utf-8") as handle:
+        meta = json.load(handle)
+
+    observed: Dict[str, Dict[str, int]] = {"DS1": {}, "DS2": {}}
+    for record, entry in meta.items():
+        split = str(entry.get("split", "")).upper()
+        if split in observed:
+            observed[split][str(record)] = int(entry.get("n", -1))
+    boundary = verify_record_boundaries(observed)
+    if not boundary["ok"]:
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: cache meta.json does not match the "
+            f"registered 44-record ledger: {boundary['problems'][:6]}")
+
+    sequences: Dict[str, RecordSequence] = {}
+    for split in SPLITS:
+        for led in build_ledger()[split]:
+            path = os.path.join(cache_dir, f"{led.record}.npz")
+            if not os.path.exists(path):
+                raise Q5DJoinError(
+                    f"{DECISION_INPUT_ABSENT}: cache record npz missing at "
+                    f"{path!r}")
+            with numpy.load(path, allow_pickle=False) as bundle:
+                if "rr" not in bundle.files:
+                    raise Q5DJoinError(
+                        f"{DECISION_INPUT_ABSENT}: cache {led.record} has no "
+                        f"'rr'; keys are {tuple(bundle.files)}")
+                rr = numpy.asarray(bundle["rr"])
+            if rr.ndim != 2 or rr.shape[1] != CACHE_RR_DIM:
+                raise Q5DJoinError(
+                    f"{DECISION_INPUT_ABSENT}: cache {led.record} rr shape "
+                    f"{rr.shape} is not (n, {CACHE_RR_DIM})")
+            if rr.shape[0] != led.cache_n:
+                raise Q5DJoinError(
+                    f"{DECISION_INPUT_ABSENT}: cache {led.record} has "
+                    f"{rr.shape[0]} rows, ledger says {led.cache_n}")
+            pre = rr[:, CACHE_PRE_COLUMN].tolist()
+            post = rr[:, CACHE_POST_COLUMN].tolist()
+            # `rr_features` writes 0.0 where a neighbour does not exist, so the
+            # unit check runs on the non-zero mass; a genuine 0.0 endpoint is
+            # data, not a missing value, and is carried through unchanged.
+            check_declared_unit(CACHE_RR_UNIT, [v for v in pre if v != 0.0])
+            sequences[led.record] = RecordSequence(
+                led.record, split, "cache",
+                rr_to_samples(pre, CACHE_RR_UNIT),
+                rr_to_samples(post, CACHE_RR_UNIT),
+                [{"cache_record_row": k,
+                  "result_global_row": led.cache_start + k}
+                 for k in range(led.cache_n)])
+    return {"sequences": sequences, "meta": meta, "boundary": boundary}
+
+
+def load_cache_classes(cache_dir: str, split: str,
+                       approval: Optional[str] = None,
+                       ds2_label_release: Optional[str] = None
+                       ) -> Dict[Tuple[str, int], str]:
+    """``(record, cache_record_row) -> AAMI class`` from the cache's own `y`.
+
+    This is the *processed* class — the V9/V10 positional row's label, which
+    is the coverage denominator.  DS1 labels are allowed for audit; DS2 labels
+    are sealed until the post-freeze support gate releases them, and they may
+    never be used to select the join rule.
+    """
+    split = _check_split(split)
+    if split == "DS2":
+        require_ds2_label_release(ds2_label_release, "DS2 cache class labels")
+    require_execution_approval(approval, f"{split} cache classes")
+    import numpy                                        # noqa: PLC0415
+    out: Dict[Tuple[str, int], str] = {}
+    for led in build_ledger()[split]:
+        path = os.path.join(cache_dir, f"{led.record}.npz")
+        with numpy.load(path, allow_pickle=False) as bundle:
+            labels = numpy.asarray(bundle["y"]).ravel().tolist()
+        if len(labels) != led.cache_n:
+            raise Q5DJoinError(
+                f"{DECISION_INPUT_ABSENT}: cache {led.record} y has "
+                f"{len(labels)} rows, ledger says {led.cache_n}")
+        for row, value in enumerate(labels):
+            index = int(value)
+            if 0 <= index < len(AAMI_CLASSES):
+                out[(led.record, row)] = AAMI_CLASSES[index]
+    return out
+
+
+def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
+             preflight: Mapping[str, object],
+             approval: Optional[str] = None,
+             ds2_label_release: Optional[str] = None,
+             null_replicates: int = N_NULL_REPLICATES,
+             bootstrap_replicates: int = N_BOOTSTRAP_REPLICATES,
+             reverify: bool = True) -> Dict[str, object]:
+    """The whole frozen pipeline for one split, in the registered order.
+
+    ``preflight`` is **required**, not advisory: a PASSing freeze from
+    :func:`build_preflight` covering the canonical mamba hash, the V9/V10
+    cache aggregate, the raw MIT-BIH aggregate and the result positional
+    contract, produced under this same rule fingerprint.  It is re-verified
+    against the files on disk before anything is read, so passing the approval
+    token alone cannot get a run past the material-input contract.
+
+    Leg 1 must then pass its exact replay gate before Leg 2 starts; the
+    negative controls rerun the *complete* Leg 2 for every replicate.  Nothing
+    here chooses among rules, and no probability is opened at any point.
+    """
+    split = _check_split(split)
+    require_execution_approval(approval, f"{split} join pipeline")
+    # Cheap authorisation checks before the expensive re-hashing, so a run
+    # that was never allowed to start does not read a byte.
+    if split == "DS2" and ds2_label_release != DS2_LABEL_RELEASE_TOKEN:
+        raise ExecutionNotApprovedError(
+            "the DS2 support gate needs a release minted by "
+            "release_ds2_support_gate() from a verified frozen DS1 bundle; "
+            "DS2 may not be run standalone")
+    verified = verify_preflight_freeze(preflight, mamba_path, cache_dir,
+                                       mitdb_dir, approval, reverify)
+
+    leg1 = replay_leg1_split(mitdb_dir, split, approval)
+    mamba_loaded = load_mamba_sequences(mamba_path, approval)
+    mamba_all = mamba_loaded["sequences"]
+    stored_rr = {r: {"pre": list(s.pre_samples), "post": list(s.post_samples)}
+                 for r, s in mamba_all.items() if s.split == split}
+    leg1_report = audit_leg1_against_ledger(leg1, split, stored_rr,
+                                            UNIT_SAMPLES)
+
+    cache_loaded = load_cache_sequences(cache_dir, approval)
+    cache_all = cache_loaded["sequences"]
+    records = [row.record for row in build_ledger()[split]]
+    mamba = {r: attach_leg1_identity(mamba_all[r], leg1[r]) for r in records} \
+        if leg1_report["ok"] else {}
+    cache = {r: cache_all[r] for r in records}
+
+    if not leg1_report["ok"]:
+        ledger = DecisionLedger()
+        ledger.record("2a_leg1_source_replay", False, leg1_report["problems"],
+                      True, DECISION_RULE_FALSIFIED, LEG1)
+        return {"split": split, "leg1": leg1_report,
+                "decision": ledger.decide(), "rows": [], "results": [],
+                "preflight_verified": verified}
+
+    joined = join_split(mamba, cache, split)
+    rows, results = joined["rows"], joined["results"]
+
+    processed = load_cache_classes(cache_dir, split, approval,
+                                   ds2_label_release)
+    mamba_classes = {
+        (r, int(e["mamba_record_row"])): str(e["aami"])
+        for r in records for e in leg1[r].kept}
+    coverage = coverage_report(rows, processed, mamba_classes)
+    inflation = s_share_inflation(rows, processed)
+    j_true = j_min(rows, processed, mamba_classes)
+
+    null = bootstrap = None
+    if split == "DS1" and null_replicates:
+        families: Dict[str, List[float]] = {f: [] for f in CONTROL_FAMILIES}
+        for family in CONTROL_FAMILIES:
+            for replicate in range(int(null_replicates)):
+                shuffled = apply_control(family, mamba, replicate)
+                control_rows = join_split(shuffled, cache, split)["rows"]
+                families[family].append(
+                    j_min(control_rows, processed, mamba_classes))
+        null = null_summary(families[CONTROL_WRONG_RECORD],
+                            families[CONTROL_ORDER_SHUFFLE],
+                            families[CONTROL_CIRCULAR_SHIFT], j_true,
+                            coverage["overall_total"])
+        per_record = {}
+        for record in records:
+            hits = sum(1 for row in rows
+                       if row["record"] == record
+                       and row["status"] == STATUS_CERTIFIED)
+            per_record[record] = (hits, ledger_record(split, record).cache_n)
+        bootstrap = record_cluster_bootstrap(per_record, j_true, null["q95"],
+                                             bootstrap_replicates)
+
+    ambiguous = sum(1 for row in rows if row["status"] == STATUS_AMBIGUOUS)
+    ledger = evaluate_gates(
+        coverage, inflation, null, bootstrap,
+        fixtures_ok=fixtures_passed(run_synthetic_fixtures()),
+        leg1_ok=True,
+        leg2_boundaries_ok=cache_loaded["boundary"]["ok"],
+        ambiguous_fraction=_ratio(ambiguous, max(len(rows), 1)))
+    decision = ledger.decide()
+    decision["strata"] = stratum_report(results)
+    decision["j_min_true"] = j_true
+    return {"split": split, "leg1": leg1_report, "rows": rows,
+            "results": results, "coverage": coverage,
+            "s_share_inflation": inflation, "null": null,
+            "bootstrap": bootstrap, "decision": decision,
+            "mamba_blocks": mamba_loaded["blocks"],
+            "preflight_verified": verified}
+
+
+def replay_leg1_split(mitdb_dir: str, split: str,
+                      approval: Optional[str] = None
+                      ) -> Dict[str, Leg1Record]:
+    """Replay Leg 1 for every record of one split, from raw `.atr`."""
+    split = _check_split(split)
+    out: Dict[str, Leg1Record] = {}
+    for led in build_ledger()[split]:
+        raw = load_atr_record(mitdb_dir, led.record, approval)
+        out[led.record] = replay_leg1_record(led.record, split,
+                                             raw["annotations"],
+                                             raw["signal_length"])
+    return out
+
+
+def attach_leg1_identity(mamba: RecordSequence, leg1: Leg1Record
+                         ) -> RecordSequence:
+    """Carry the Leg 1 raw identity onto the mamba rows it produced.
+
+    Leg 1 and the stored mamba slice must already agree on length — that is
+    the Leg 1 gate — so this is a positional attach inside one record, which
+    is exactly the relationship Leg 1 proved.  It carries the raw `.atr`
+    ordinal, R sample and AAMI class used later for the audit; none of them
+    enters candidate construction.
+    """
+    if leg1.n != len(mamba):
+        raise Q5DJoinError(
+            f"record {mamba.record}: Leg 1 replayed {leg1.n} beats but the "
+            f"stored mamba slice has {len(mamba)}; Leg 1 must pass before "
+            f"Leg 2 starts")
+    rows = []
+    for index, entry in enumerate(leg1.kept):
+        merged = dict(mamba.rows[index]) if mamba.rows else {}
+        merged.update({"raw_atr_ordinal": entry["raw_atr_ordinal"],
+                       "raw_r_sample": entry["raw_r_sample"],
+                       "symbol": entry["symbol"], "aami": entry["aami"]})
+        rows.append(merged)
+    return RecordSequence(mamba.record, mamba.split, mamba.side,
+                          mamba.pre_samples, mamba.post_samples, rows)
+
+
+def load_atr_record(mitdb_dir: str, record: str,
+                    approval: Optional[str] = None) -> Dict[str, object]:
+    """Read one record's raw `.atr` annotations and its signal length.
+
+    Both are needed for Leg 1: the annotation `(pos, symbol)` stream in `.atr`
+    sample order, and `len(signal)` for the 150-sample boundary test.  Only
+    channel-independent header metadata is used for the length.
+    """
+    require_execution_approval(approval, f"raw .atr for record {record!r}")
+    import wfdb                                         # noqa: PLC0415
+    stem = os.path.join(mitdb_dir, str(record))
+    header = wfdb.rdheader(stem)
+    annotation = wfdb.rdann(stem, "atr")
+    return {
+        "record": str(record),
+        "signal_length": int(header.sig_len),
+        "fs": float(header.fs),
+        "annotations": list(zip([int(s) for s in annotation.sample],
+                                [str(s) for s in annotation.symbol])),
+    }
+
+
+def verify_result_positional_contract(result_npz: str, split: str,
+                                      approval: Optional[str] = None
+                                      ) -> Dict[str, object]:
+    """Prove cache row -> result row without reading a probability.
+
+    The result NPZ must be exactly as long as the split's registered cache
+    total, and its `pid` must form contiguous per-record blocks whose lengths
+    equal the registered `cache_n`, in the frozen order.  That is the whole
+    positional contract, and it is checkable from `pid` alone.
+    """
+    split = _check_split(split)
+    arrays = read_result_npz(result_npz, split, ("pid",), approval)
+    pid = arrays["pid"]
+    labels = [str(int(v)) for v in list(pid)]
+    blocks = _contiguous_blocks(labels)
+    rows = build_ledger()[split]
+    problems: List[str] = []
+    if len(labels) != REGISTERED_CACHE_TOTALS[split]:
+        problems.append(f"{split}: result NPZ has {len(labels)} rows, "
+                        f"registered {REGISTERED_CACHE_TOTALS[split]}")
+    if len(blocks) != len(rows):
+        problems.append(f"{split}: {len(blocks)} pid blocks, expected "
+                        f"{len(rows)}")
+    for led, block in zip(rows, blocks):
+        record, start, length = block
+        if record != led.record:
+            problems.append(f"{split}: block {start} is record {record}, "
+                            f"ledger order expects {led.record}")
+        if start != led.cache_start or length != led.cache_n:
+            problems.append(
+                f"{split} {record}: observed {length}@{start}, registered "
+                f"{led.cache_n}@{led.cache_start}")
+    return {"ok": not problems, "problems": problems, "split": split,
+            "blocks": [{"record": r, "start": s, "n": n}
+                       for r, s, n in blocks],
+            "decision": None if not problems else DECISION_INPUT_ABSENT}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -569,9 +1442,20 @@ def rule_fingerprint() -> str:
 class LedgerRecord(object):
     """One record's frozen slice in both lineages.
 
-    ``cache_start``/``mamba_start`` are cumulative sums inside the split, in
-    the frozen array order.  They are arithmetic consequences of the ledger —
-    never boundaries inferred from labels or from how well the join went.
+    ``cache_start`` is the registered start row of the record inside the
+    split's cache/result array, and it *is* the physical offset there because
+    ``data.py::load_split`` sorts within a split.
+
+    ``mamba_start`` is the **logical** split-local coordinate
+    (``mamba_split_start``), also a cumulative sum in the frozen split order.
+    It is deliberately *not* the physical offset inside ``mamba_data.npz``:
+    ``build_penult.py`` enumerates all 44 records at once, so the file
+    interleaves DS1 and DS2.  The physical offset is measured from ``pid`` by
+    :func:`load_mamba_sequences` and reported as ``mamba_file_row``.
+
+    Both are arithmetic or measured consequences — never boundaries inferred
+    from labels or from how well the join went.  The matcher uses neither; it
+    works on record-local rows.
     """
 
     __slots__ = ("split", "record", "index", "cache_n", "cache_start",
@@ -589,12 +1473,17 @@ class LedgerRecord(object):
         self.delta = cache_n - mamba_n
         self.stratum = STRATUM_EQUAL if self.delta == 0 else STRATUM_MISMATCH
 
+    @property
+    def mamba_split_start(self) -> int:
+        """The registered logical split-local coordinate (see the docstring)."""
+        return self.mamba_start
+
     def as_dict(self) -> Dict[str, object]:
         return {"split": self.split, "record": self.record,
                 "array_index": self.index, "cache_n": self.cache_n,
                 "cache_start": self.cache_start, "mamba_n": self.mamba_n,
-                "mamba_start": self.mamba_start, "count_difference": self.delta,
-                "stratum": self.stratum}
+                "mamba_split_start": self.mamba_start,
+                "count_difference": self.delta, "stratum": self.stratum}
 
     def __repr__(self) -> str:                          # pragma: no cover
         return (f"LedgerRecord({self.split} {self.record} "
@@ -1225,7 +2114,11 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
             "raw_atr_ordinal": audit.get("raw_atr_ordinal"),
             "raw_r_sample": audit.get("raw_r_sample"),
             "mamba_record_row": i,
+            # Two enumerations of the same row, kept apart on purpose:
+            # the ledger's logical split-local coordinate, and the physical
+            # offset measured from the stored `pid` array.
             "mamba_global_row": led.mamba_start + i,
+            "mamba_file_row": audit.get("mamba_file_row"),
             "cache_record_row": j,
             "result_global_row": None if j is None else led.cache_start + j,
             "status": status,
@@ -1253,7 +2146,7 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
             "split": cache.split, "record": cache.record,
             "raw_atr_ordinal": None, "raw_r_sample": None,
             "mamba_record_row": None, "mamba_global_row": None,
-            "cache_record_row": j,
+            "mamba_file_row": None, "cache_record_row": j,
             "result_global_row": led.cache_start + j,
             "status": status,
             "pre_rr_difference_samples": None,
@@ -2469,14 +3362,22 @@ def build_config(mode: str, timestamp: str,
     }
 
 
-def build_manifest(inputs: Mapping[str, str], timestamp: str
+def build_manifest(inputs: Mapping[str, str], timestamp: str,
+                   preflight: Optional[Mapping[str, object]] = None
                    ) -> Dict[str, object]:
-    """Code, input, unit and environment hashes for the run bundle."""
+    """Code, input, unit and environment hashes for the run bundle.
+
+    The preflight freeze is embedded, not merely referenced: a later DS2
+    support gate reads it back out of the DS1 manifest and refuses to release
+    the labels unless this run's inputs are the same ones.
+    """
     return {
         "timestamp": timestamp,
         "code": assert_implementation_only(),
         "rule_fingerprint": rule_fingerprint(),
         "ledger": verify_ledger(),
+        "preflight": {k: preflight.get(k) for k in PREFLIGHT_FREEZE_FIELDS}
+        if preflight else None,
         "declared_units": list(DECLARED_UNITS),
         "inputs": {name: {"path": path,
                           "sha256": sha256_file(path)
@@ -2510,9 +3411,12 @@ def design_card(mode: str = MODE_DESIGN,
         f"rule fingerprint: {ledger['rule_fingerprint'][:16]}…",
         "",
         "APPROVAL",
-        f"  implementation approved : yes",
-        f"  execution on registered data approved : "
-        f"{'yes' if execution_approved else 'NO — this run cannot open one'}",
+        "  implementation                : approved",
+        "  execution on registered data  : approved",
+        "  V10 probability / association : SEALED — needs a further approval",
+        "  DS2 per-beat class labels     : sealed until the DS1 freeze",
+        f"  this run opted in to opening data : "
+        f"{'yes' if execution_approved else 'no — it cannot open one'}",
         f"  {APPROVAL_NOTE}",
         "",
         "LEG 1 — `.atr` -> mamba (deterministic source replay)",
@@ -2624,6 +3528,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                         help="where SYNTHETIC_FIXTURES writes its CSV")
     parser.add_argument("--bundle-dir", default="",
                         help="an existing run bundle for JOIN_REPORT")
+    parser.add_argument("--asset-map", default="",
+                        help="JSON {label: path} for HASH_PREFLIGHT")
     parser.add_argument(EXECUTION_APPROVAL_FLAG, dest="execution_approval",
                         action="store_true",
                         help="assert the SEPARATE user approval to run on "
@@ -2650,13 +3556,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         # it stops before any registered path is opened.
         print(design_card(mode, execution_approved=False))
         print()
-        print(f"STOP — mode {mode} would open registered artifacts.")
+        print(f"STOP — mode {mode} opens registered artifacts and this run did "
+              f"not opt in.")
         print(APPROVAL_NOTE)
-        print(f"Nothing was read.  Re-run with {EXECUTION_APPROVAL_FLAG} only "
-              f"after that separate approval exists.")
-        print(json.dumps(not_run_decision(f"{mode} requires the separate "
-                                          f"execution approval"), indent=2,
-                         ensure_ascii=False))
+        print(f"Nothing was read.  Re-run with {EXECUTION_APPROVAL_FLAG}.")
+        print(json.dumps(not_run_decision(f"{mode} was not opted into with "
+                                          f"{EXECUTION_APPROVAL_FLAG}"),
+                         indent=2, ensure_ascii=False))
         return 2
 
     if mode == MODE_DESIGN:
@@ -2675,6 +3581,19 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                                        "synthetic_fixture_results.csv"))
             print(f"  wrote {path}")
         return 0 if fixtures_passed(outcomes) else 1
+
+    if mode == MODE_PREFLIGHT:
+        if not args.asset_map:
+            print("HASH_PREFLIGHT needs --asset-map <json>: {label: path}.")
+            print("Registered hash for mamba_data.npz:", MAMBA_SHA256)
+            return 2
+        with open(args.asset_map, encoding="utf-8") as handle:
+            assets = json.load(handle)
+        report = hash_preflight(assets, EXECUTION_APPROVAL_TOKEN,
+                                {"mamba": MAMBA_SHA256})
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        print("\nPREFLIGHT", "PASS" if report["ok"] else "STOP")
+        return 0 if report["ok"] else 1
 
     if mode == MODE_REPORT:
         if not args.bundle_dir:

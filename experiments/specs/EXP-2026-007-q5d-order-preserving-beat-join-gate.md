@@ -182,6 +182,21 @@ source:
 - a required artifact has been replaced by an unverified duplicate and cannot
   be linked byte-for-byte to the registered canonical asset.
 
+Two clarifications added 2026-08-10 after implementation review, neither of
+which widens the branch:
+
+- **Byte-identical duplicates are not an ambiguity.**  Several copies of
+  `mamba_data.npz` may match the registered SHA-256; being byte-identical to
+  the canonical asset is exactly what verification means.  The registered copy
+  is preferred, the others are recorded as `byte_identical_duplicate`, and the
+  manifest names the physical file used.  Only *zero* matches fire
+  `JOIN_INPUT_ABSENT`; a same-size copy whose hash differs is excluded.
+- **A missing Drive copy of `cache_v15b/mitdb/meta.json` does not, by itself,
+  stop the run.**  When the canonical mamba hash verifies and the stored `pid`
+  yields 44 contiguous blocks whose record counts match the committed lineage
+  meta in the repository, the separate Drive copy is redundant corroboration,
+  not an independent contract item.  Its absence is recorded, not escalated.
+
 The absence of a stored cross-lineage `beat_uid` is the identifiability question
 answered by the frozen matcher below; it is not, by itself, an A-era
 `JOIN_INPUT_ABSENT` condition.
@@ -233,9 +248,29 @@ The fixed cache ledger is:
 
 For the mamba slices, `n` equals the listed cache `n` in the 36 equal-count
 records.  The eight exceptions are fixed as `108:1760`, `116:2411`,
-`203:2974`, `208:2579`, `223:2591`, `105:2567`, `111:2124`, and `222:2481`;
-their mamba starts are recomputed only by cumulative addition in the same frozen
-split order.  No observed alignment may alter either ledger.
+`203:2974`, `208:2579`, `223:2591`, `105:2567`, `111:2124`, and `222:2481`.
+No observed alignment may alter either ledger.
+
+**Two mamba coordinates, kept apart** (corrected 2026-08-10 after
+implementation measured the artifact):
+
+- `mamba_split_start` — the registered *logical* split-local coordinate,
+  recomputed only by cumulative addition in the frozen split order.  It is an
+  audit coordinate and stays exactly as registered.
+- `mamba_file_start` — the *physical* global offset inside `mamba_data.npz`,
+  measured from the stored `pid` array.  `build_penult.py` and
+  `make_colab_data.py` both enumerate `sorted(glob(cache/*.npz))` over all 44
+  records at once, so the physical order is `100, 101, 103, 105, …` with DS1
+  and DS2 interleaved — it is *not* DS1-block-then-DS2-block.
+
+These two coordinates are different enumerations of the same rows and must not
+be conflated.  The V9/V10 cache and result starts are unaffected, because
+`data.py::load_split` sorts within a split, which is the ledger's order.
+
+**The matcher uses neither coordinate.**  It matches on record-local rows
+only, inside a record slice, so this distinction changes no scientific rule.
+Both coordinates are reported for audit; only the per-record mamba *counts*,
+which this ledger does fix, act as a gate.
 
 The tempting hypothesis `V9/V10 rows are a subset of mamba rows` is **not** an
 identity axiom.  Mamba applies its boundary rule at annotation position `pos`,
@@ -795,3 +830,130 @@ Required outputs:
   unexecuted, every output cell empty, no fabricated result).  Claude's
   qualification files (`mit-bih/q5d_qualify_*`, `notebooks/quest53_*`,
   `research/PLAN_2026-08-10_*`) were not touched.
+- 2026-08-10 — **Execution approval, artifact loaders and hash preflight**
+  (Claude Code).
+
+  *Approval.* The user gave «Status boundary» step 4: executing the join on
+  the registered data is approved, and asked that the Colab notebook run
+  **hash preflight → STOP/PASS → join** in that order.  Still **not** approved
+  and still sealed: V10 probability values, the association analysis, S PR-AUC
+  and any model training.  DS2 per-beat class labels remain behind the
+  separate post-freeze support-gate release.  Opening a registered artifact
+  stays an explicit opt-in in code (`OPEN_REGISTERED_DATA`, default `False`)
+  so no stray run touches the data, and `assert_preflight_passed()` blocks
+  matching until the material contract closes.
+
+  *Two RR semantics, frozen from source rather than assumed.*  The spec
+  requires both sides' units and semantics to be frozen from source before any
+  match.  `mit-bih/lineage/build_penult.py` fixes the mamba side:
+  `Z(26D) = psa_rel(4) + rr(7) + pw(3) + rhy(5) + ptf2_rel(7)` with
+  `RR_PRE_COL = 0`, so pre/post RR are Z columns **4 and 5**, in seconds.  The
+  V9/V10 side was **not** in this repository, so `kinkmap/data.py` and
+  `kinkmap/frontend.py` were read from the registered source package: the
+  cache stores `rr` as `rr_features(peaks)[idx]`, 7 columns,
+  `[pre, post, pre/local, post/local, pre/avg, post-pre, lvar]`, in seconds,
+  so pre/post are columns **0 and 1**.
+
+  Two differences between the lineages are now recorded as constants rather
+  than discovered later:
+
+  1. **Endpoint semantics differ.**  mamba *duplicates* the first pre-RR and
+     last post-RR (so first/last beats are eligible).  `rr_features` sets them
+     to `np.nan` and then `nan_to_num`s them to **`0.0`** — not duplicated.  A
+     stored `0.0` is therefore real data meaning "no neighbour", and such a
+     row simply forms no candidate edge and stays `UNMATCHED`.  That is the
+     honest outcome; nothing is imputed to close the gap.
+  2. **RR is computed at different stages.**  mamba computes RR *after* the
+     symbol and boundary filters, on annotation positions.  V9/V10 computes
+     `Fr = rr_features(peaks)` on the **full** matched-peak array and only
+     then selects `Fr[idx]` with the boundary-valid rows, so a cache row can
+     carry an RR whose neighbour was boundary-cut.  The record rules also
+     differ (`len(peaks) < 2` for the cache versus mamba's five valid beats).
+
+  This also makes explicit what the frozen one-sample tolerance absorbs: a
+  cache RR differs from a mamba RR by `e_j - e_{j-1}`, the *change* in
+  detector offset between neighbouring beats, not the offset itself.  The
+  tolerance is not widened on this basis; if the offsets move faster than one
+  sample, coverage falls and the registered answer is `JOIN_UNRESOLVED`.
+
+  *Deviation recorded — the ledger's `mamba_start` is a different enumeration.*
+  The spec builds `mamba_start` "by cumulative addition in the same frozen
+  split order".  `build_penult.py` and `make_colab_data.py` both enumerate
+  `sorted(glob(cache/*.npz))` over **all 44 records at once**, so the actual
+  global row order inside `mamba_data.npz` is `100, 101, 103, 105, …` with DS1
+  and DS2 **interleaved**, not DS1-block-then-DS2-block.  The cache and result
+  starts are unaffected — `data.py::load_split` sorts *within* a split, which
+  is exactly the registered ledger order.  So only the mamba audit offset is
+  involved.  The implementation therefore measures mamba record slices from
+  the stored `pid` array (contiguity is checked, non-contiguity is an error),
+  gates on the ledger's per-record **counts**, which the ledger does fix, and
+  reports both the observed file offset and the ledger's split-order start.
+  No scientific rule, tolerance, gate, statistic or stopping rule changed;
+  this is an audit-field discrepancy in the spec's ledger construction and is
+  flagged here for Codex.
+
+  *Three material-contract gaps the preflight now decides.*  `mamba_data.npz`
+  had never been compared against its registered SHA-256 `b1c16106…`, and
+  Drive holds **three same-size copies** (two created 2026-08-10), so size
+  proves nothing; `resolve_canonical_mamba()` accepts exactly one byte-match
+  and stops on zero or on ambiguity.  The V9/V10 cache hashes were never
+  computed, and the Drive copy of `cache_v15b/mitdb/meta.json` was never
+  confirmed.  All of this is `JOIN_INPUT_ABSENT` territory — a failed input
+  contract, never a disappointing join — and it is decided *before* matching.
+
+  *Verification.*  446 assertions pass with no registered artifact opened.
+  The 21 synthetic fixtures still produce zero false certified pairs, and the
+  brute-force forced-edge oracle still agrees on every random record.
+- 2026-08-10 — **Codex review of the preflight; five corrections before any
+  Colab run** (Codex review, implemented by Claude Code).
+
+  Codex accepted the three artifact findings (cache `0.0` endpoints left
+  `UNMATCHED`, the two RR computation stages preserved, mamba's physical order
+  measured from `pid`) and confirmed they change no scientific rule, because
+  the matcher is record-local.  It then found that **the preflight was weaker
+  than it was described as being**, and blocked execution until five things
+  were fixed.  All five are now implemented; the review was right on each.
+
+  1. **The directory hash did not hash content.**  `hash_file_set()` replaces
+     it: every expected file's bytes are SHA-256'd and folded, with size, into
+     one aggregate digest, and extra/missing entries fail the set.  The cache
+     set is `meta.json` + 44 record npz; the MIT-BIH set is `.dat/.hea/.atr`
+     for all 44 records.  A tampered file with an unchanged name now moves the
+     aggregate — the exact case a listing hash misses, and now a test.
+  2. **"Two matches -> STOP" was a logic error.**  Two files that both match
+     the registered SHA-256 are byte-identical verified copies, not an
+     identity ambiguity.  Corrected: zero matches -> `JOIN_INPUT_ABSENT`; one
+     or more -> prefer the registered copy, record the rest as
+     `byte_identical_duplicate`, and name the physical file used in the
+     manifest; a same-size copy whose hash differs is excluded.  The notebook
+     now compares all three Drive copies rather than only the registered path.
+  3. **The preflight was bypassable.**  `run_join()` took no freeze, so the
+     approval token alone could reach matching.  A PASSing freeze from
+     `build_preflight()` is now a **required** argument, and
+     `verify_preflight_freeze()` re-hashes the canonical mamba asset and both
+     aggregates against the files on disk, refuses a freeze made under a
+     different rule fingerprint, and refuses one whose result positional
+     contract is unproven.
+  4. **The result `pid` contract was never called.**
+     `verify_result_positional_contract()` is now part of `build_preflight()`
+     for both splits, so cache-row -> result-row is proven before Leg 1.
+  5. **DS2 could run standalone.**  The notebook minted the release from
+     `MODE`.  `release_ds2_support_gate()` now reads the frozen DS1 bundle and
+     mints the token only when the DS1 decision, manifest and null agree with
+     this run on rule fingerprint, input hashes, code hash and the registered
+     null seed, and only when DS1 actually qualified; `run_join()` refuses a
+     DS2 split without that token.
+
+  Also on Codex's reading: the absent Drive copy of `cache_v15b/mitdb/meta.json`
+  is redundant corroboration once the mamba hash verifies and `pid` yields 44
+  contiguous blocks matching the committed lineage meta, so it is recorded
+  rather than escalated.  The `JOIN_INPUT_ABSENT` section and the mamba
+  coordinate contract in the body were corrected accordingly —
+  `mamba_split_start` (registered, logical, split-local) and `mamba_file_start`
+  (measured, physical, global) are now named separately, with the matcher
+  explicitly using neither.  Both appear in the join map as
+  `mamba_global_row` and `mamba_file_row`.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  494 assertions pass, still with no registered artifact opened; the preflight
+  bundle is now preserved for a STOP as well as a PASS.
