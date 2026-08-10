@@ -1301,3 +1301,85 @@ Required outputs:
 
   Matcher optimisation was explicitly excluded from this work and none was
   done.  763 assertions pass.  No registered data was executed.
+- 2026-08-10 — **DS1_GATE production integration.  Science unchanged;
+  execution scheduling only.**
+
+  Codex directed that the three stages be separated and that production have
+  exactly one route to a DS1 decision.  Nothing scientific moved:
+  `rule_fingerprint` is byte-identical to the previous `main`, and so are
+  `MODULE_VERSION` (3), `N_NULL_REPLICATES` (10,000), the three families and
+  their order, both seeds, the tolerance, the matcher and every gate.
+
+  **The defect this closes.**  `evaluate_gates` skips gates 9-11 when the null
+  is absent, so the previous `LEG2_RECORD_JOIN` path evaluated **10 of 12**
+  gates and, with the coverage gates passing, returned `JOIN_IDENTIFIABLE` —
+  the terminal "the join qualifies" verdict — and wrote it into a Drive run
+  bundle as `decision.json` and `summary.md`.  A verdict reached without the
+  null, preserved in an immutable-by-convention artifact that could later be
+  cited.  Measured and confirmed before the stage was ever run on the
+  registered data.
+
+  **Three stages now.**
+  `run_true_join()` computes Leg 1, Leg 2, coverage, inflation and `J_min`
+  only.  It does not call `evaluate_gates`, does not touch `apply_control`,
+  has no `null_replicates` parameter, and reports `TRUE_JOIN_MEASURED` /
+  `DS1_GATE_NOT_RUN` instead of a decision.  `run_null_shards()` is unchanged
+  from the previous entry.  `finalize_ds1_gate()` verifies the three families
+  are complete at the registered size and then runs the registered order —
+  `null_summary` -> 2,000 record-cluster bootstrap -> `evaluate_gates` — and
+  is the only route to a DS1 decision.  `run_ds1_gate_sharded()` orchestrates
+  the three.
+
+  The in-line null loop is gone from the public path.  `run_join()` survives
+  only as a shim that **refuses** a non-zero `null_replicates` and names the
+  production route; the straight-line computation is kept privately as
+  `_serial_null_reference()` and is used solely as the test oracle the sharded
+  runner must reproduce.
+
+  **Artifacts.**  `LEG2_RECORD_JOIN` writes a diagnostic `true_join.json` and
+  the join map, explicitly *not* a canonical bundle and with no
+  `decision.json`.  Only `DS1_GATE`, after combining the TRUE result with a
+  complete null, creates the canonical timestamped run directory carrying
+  `decision.json`, `null_summary.json` and `bootstrap.json` together.  Shards
+  live in a stable, un-timestamped directory so resuming does not litter
+  provisional bundles.  `release_ds2_support_gate()` now additionally requires
+  exactly 10,000 null replicates and exactly 2,000 bootstrap replicates, so
+  only that canonical bundle can release DS2.
+
+  **Tested**: the serial oracle and the sharded production path agree on the
+  family arrays, the null summary and its quantiles, the bootstrap, and every
+  gate value of the final decision — not merely the verdict; an incomplete,
+  short or family-missing null cannot produce a decision or a DS2 release;
+  `LEG2_RECORD_JOIN` starts no null and claims no verdict; `run_join` cannot
+  start an in-line null; and the fixtures and brute-force oracle still pass.
+  823 assertions.  No registered data was executed.
+
+  One incidental robustness fix: `fixture_record_boundary_corruption` named
+  record `108` literally, so it depended on that record existing in whatever
+  ledger was registered.  It now corrupts the ledger's first record.  The
+  fixture's meaning — a corrupted boundary must fail — is unchanged.
+
+  *Short-null bypass closed (Codex review, before merge).*  `finalize_ds1_gate`
+  and `run_ds1_gate_sharded` no longer take a `total` argument: a public
+  production function that can be asked for a shorter null **is** a short-null
+  bypass, whatever its default.  Both now accept exactly
+  `N_NULL_REPLICATES = 10000` in each of the three families and refuse 9,999
+  and 10,001 alike.  The size-parameterised computation survives only as the
+  private `_finalize_ds1_gate_reference()`, used by the equivalence tests so
+  they can compare the serial oracle against the sharded runner at an
+  affordable size; production cannot reach it.  Tests assert that neither
+  public signature carries `total` or any other replicate-count knob.
+
+  Codex also confirmed the two design judgments raised at the previous FROZEN
+  point: `TRUE_JOIN_MEASURED` / `DS1_GATE_NOT_RUN` stay in `STAGE_STATUSES`
+  and out of the registered `DECISIONS`, and `run_join` stays as an explicit
+  refusing shim rather than being deleted.
+
+  *No-early-stop, restated.*  The implementer suggested deciding whether to
+  run the null after seeing the TRUE join's coverage.  That is a
+  result-dependent execution choice and is not permitted: the null runs to 3
+  families x 10,000 replicates regardless of what the TRUE join shows.  A weak
+  TRUE result is a reason to expect `JOIN_UNRESOLVED`, never a reason to skip
+  the control that would establish it.
+
+  834 assertions pass.  `rule_fingerprint` remains byte-identical to `main`.
