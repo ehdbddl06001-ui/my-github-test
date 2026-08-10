@@ -185,6 +185,44 @@ patient-CVaR pilot 강행 ② Q5-A가 남긴 **미해석 사실** 측정 ③ 종
   association analysis, 그리고 모든 학습. 승인은 별도 결정으로만 이루어지며 이
   인수 기록은 승인이 아니다.
 
+### QUALIFY (2026-08-10) — `MEASUREMENT_QUALIFIED`, gate 5/5
+
+canonical run `20260810T005802` (freeze `20260810T003933`). 측정도구 자격검증만
+통과했다. **EXP-2026-007의 과학적 질문은 여전히 답해지지 않았고** spec status는
+`approved_for_implementation` 그대로다. 학습·beat join·association·S PR-AUC·SHAM은
+하나도 수행하지 않았다(`training_performed`·`model_scored`·`ds2_outcome_opened`·
+`association_performed` 전부 false).
+
+- 고정 규칙: neurokit2 0.2.13 `ecg_delineate(method="dwt")` · channel 0 ·
+  R은 `.atr` 참조값(재검출 없음) · P 탐색 40–300 ms · 매칭 ±50 ms 1:1.
+  frozen `2a0a48cf243655e4…`. DS1 22 records에서 뽑은 상수: RR normal band
+  `[0.98268, 1.03043]`(N beats 45,845) · discordance threshold `2.000`
+  (valid 50,690 beats의 p75).
+- DS2 6 records(`100 103 117 214 222 231`) 실측: macro sensitivity **0.9476** ·
+  macro PPV **0.8860** · cross-beat 0 · many-to-one 0 ·
+  우연 대비 **8.283×** [7.460, 9.548]. 전 record cross-beat 0.
+- **통과했지만 여유가 없다 — per-record floor가 정확히 5/6**(필요 5). `222`가
+  PPV 0.4873으로 0.70 미달이다. record 하나만 더 흔들렸으면 떨어졌다.
+- **`222`의 낮은 PPV는 대부분 구조적이다**: 주석 1,257개 대 검출 2,477개라
+  PPV 상한이 **0.5075**이고 도달률은 0.9602다. 다만 **미주석 절반이 "라벨 안 된
+  P"인지 "P파가 없는 구간"인지 이 run으로는 판별되지 않는다.** 두 해석의 함의가
+  정반대다 — 전자면 delineator는 멀쩡하고, 후자면 P가 없는 자리에 P를 찍고 있다.
+  `222`의 `PR_discordance`를 association에서 쓰려면 **먼저 이걸 가려야 한다.**
+- **`231`은 sensitivity 최저(0.7859)인데, Q5-A에서 네 모델 모두의 worst quartile에
+  들고 S PR-AUC 0.001–0.002로 붕괴하는 바로 그 record다.** 측정 품질과 모델
+  실패가 같은 record에서 함께 나빠진다 → association이 "P 타이밍이 실패와
+  연관"을 찾더라도 일부는 측정 품질의 공변일 수 있다. **교란으로 사전 등록해야
+  한다.**
+- 전체 macro `ppv_vs_ceiling` 0.9834 — 라벨된 P에 한해서는 거의 다 찾았다.
+- 부수 관찰: discordance threshold p75가 정확히 `2.000`이다. record MAD가 대략
+  1 sample(2.78 ms)이라 discordance가 정수로 양자화됐다는 뜻이고, 임계값 근처에
+  질량이 몰린다. association에서 concordant/discordant를 가를 때 **경계 처리
+  규칙(≥ 인지 > 인지, 동률 처리)을 명시해야 한다.**
+- **다음 단계는 여전히 자동 실행되지 않는다.** beat join과 association은 설계
+  검토 + 별도 승인이 필요하고, beat join 자체가 Q5-A 실측(조인 1.9% = 우연
+  수준)으로 막혀 있다. Codex가 병렬로 설계 중이다
+  (`research/HANDOFF_2026-08-10_Q5D_beat_join_to_codex.md`).
+
 ## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 
 residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 실패 지도**다.
