@@ -26,8 +26,12 @@
    publisher checksum까지 검증해 Drive에 불변 자산으로 확보했다.
    등록: `research/ASSETS.md`의 `data-mitdb-raw-100` ·
    `data-pwave-raw-100` · `run-20260809-q5d-prep-data`.
-2. **measurement qualification 진행 중** (Claude). raw 파형 + `.atr` R 위치 +
-   전문가 P 주석만 쓴다. 결과는 아직 없다.
+2. **measurement qualification 통과** (canonical run `20260810T005802`,
+   `MEASUREMENT_QUALIFIED`, gate 5/5). raw 파형 + `.atr` R 위치 + 전문가 P
+   주석만 썼고, DS2 class label·V10 확률은 열지 않았다. DS2 record-macro
+   sensitivity 0.9476 · PPV 0.8860 · cross-beat 0 · 우연 대비 8.283×
+   [7.460, 9.548]. 등록: `research/ASSETS.md`의 `run-20260810-q5d-qualify`.
+   **즉 측정도구는 확보됐고, 이제 막힌 것은 조인 하나다.**
 3. **실험의 과학적 판정은 여전히 `NOT RUN`이다.** spec status는
    `approved_for_implementation` 그대로다.
 
@@ -143,6 +147,21 @@ Files allowed to change · Decision log.
   freeze `2a0a48cf243655e4…`): RR normal band `[0.9827, 1.0304]`
   (DS1 N beats 45,845개) · discordance threshold `2.000`
   (valid 50,690 beats의 p75).
+- **DS2 gate 실측 (canonical `20260810T005802`)**: macro sensitivity 0.9476 ·
+  macro PPV 0.8860 · many-to-one 0 · cross-beat 0 · 우연 대비 8.283×
+  [7.460, 9.548]. per-record: `100` 0.997/0.990 · `103` 0.993/0.995 ·
+  `117` 0.998/0.999 · `214` 0.952/0.847 · `222` 0.960/**0.487** ·
+  `231` **0.786**/0.997 (sens/PPV).
+- **자격검증이 통과하며 남긴 세 가지 — 조인·association 설계에 직접 걸린다:**
+  1. per-record floor 가 **정확히 최소 통과선 5/6**(여유 0). `222` 가 PPV
+     0.4873 으로 0.70 미달.
+  2. `222` 의 PPV 상한이 **0.5075**(주석 1,257 대 검출 2,477)이고 도달률
+     0.9602. **미주석 절반이 "라벨 안 된 P"인지 "P 가 없는 구간"인지 판별되지
+     않았다.** 조인 설계가 `222` 를 포함한다면 이 미결을 어떻게 다룰지 적어라.
+  3. **`231` 은 sensitivity 최저(0.7859)인데 Q5-A 에서 네 모델 모두의 worst
+     quartile 에 들고 S PR-AUC 0.001–0.002 로 붕괴하는 record 다.** 측정 품질과
+     모델 실패가 같은 record 에서 함께 나빠진다 → **association 이 찾는 연관의
+     일부가 측정 품질의 공변일 수 있다. 교란으로 사전 등록해야 한다.**
 - **DS1 dry report에서 나온 주의사항 둘** — Codex 설계에 영향을 줄 수 있다:
   1. **PPV에 구조적 상한이 있다.** `ppv/sens = n_expert/n_detected`이고,
      publisher가 모든 P를 라벨하지 않아 record 106은 상한 0.745에 0.742를
@@ -154,4 +173,3 @@ Files allowed to change · Decision log.
      concordant/discordant를 가르는 후속 분석은 경계 처리 규칙을 명시해야
      한다**(≥ 인지 > 인지, 동률을 어디로 보낼지). 조인 설계에서 직접 쓰지는
      않지만 association 단계에서 바로 걸린다.
-- DS2 gate는 아직 실행 전이다.
