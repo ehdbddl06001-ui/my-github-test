@@ -2537,8 +2537,18 @@ def test_leg2_stage_does_not_run_the_null():
           "the shard directory is stable across sessions, so resume works")
     check("DEFAULT_MAX_WORKERS" in joined,
           "the notebook uses the registered default worker count")
+    # Scheduling, not science: the shard runner may use the whole machine,
+    # because `worker_count` is excluded from the shard digest and one worker
+    # equals many (test_worker_count_does_not_change_the_result).  What it may
+    # not do is fall *below* the registered default.
+    check("max(BJ.DEFAULT_MAX_WORKERS, DETECTED_CPUS)" in joined,
+          "the worker count scales up to the machine, never below the default")
+    check("os.cpu_count()" in joined,
+          "the machine's core count is measured rather than assumed")
     check("estimate_null_runtime" in joined,
           "DS1_GATE prints the expected null cost before starting")
+    check("total_hours'] / MAX_WORKERS" in joined,
+          "and prints the wall-clock that worker count actually implies")
 
     # The estimator itself, and the fact that it never suggests shrinking.
     est = BJ.estimate_null_runtime(2.0)

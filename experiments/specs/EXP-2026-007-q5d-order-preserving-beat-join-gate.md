@@ -1452,3 +1452,39 @@ Required outputs:
   `rule_fingerprint` remains byte-identical to `main`.  849 assertions pass.
   **The registered null has not been run**: the first DS1_GATE attempt aborted
   on defect 1 before completing any shard.
+
+  *Worker count follows the machine (scheduling only).*
+
+  The second DS1_GATE attempt ran healthily but slowly.  Measured on the
+  runtime, not estimated: `nproc` 2, both worker processes in state `R` at
+  87.5% and 75% CPU, `%Cpu` idle 0.0, load average 3.11, per-worker RSS
+  0.46 GB, swap 0, and no shard file written after ~17 minutes.  Since a shard
+  is 100 replicates x 3 families = 300 joins and progress prints only on shard
+  completion, that silence is the expected signature of ~3.4 s per join — the
+  1.7 s measured during the TRUE join, halved in throughput by two workers
+  sharing two vCPUs.  Extrapolated wall-clock ~14 h, which exceeds the
+  session's lifetime and guarantees at least one resume.
+
+  The registered default `DEFAULT_MAX_WORKERS = 2` was chosen for a small
+  Colab CPU allowance.  The notebook now takes
+  `max(DEFAULT_MAX_WORKERS, os.cpu_count() or 1)` so a larger runtime is used
+  when one is present, and never fewer workers than the registered default.
+
+  This is scheduling, not science, and the design already says so: the shard
+  digest covers `SHARD_DIGEST_FIELDS`, from which `worker_count` is
+  deliberately excluded, precisely so that "a shard computed on one worker and
+  the same shard computed on two must be identical where it matters".
+  `test_worker_count_does_not_change_the_result` verifies that for 1 vs 2
+  workers on identical arrays and identical digests, and `worker_count` is
+  still recorded in the shard for provenance.  Nothing else moves: no
+  threshold, tolerance, gate, statistic, seed, family, replicate count or
+  stopping rule, and `rule_fingerprint` is unchanged from `main`.  The
+  module itself is untouched by this change; only the notebook cell and its
+  contract tests differ.
+
+  Timing is the reason, but timing may never shrink a null.  `N_NULL_REPLICATES`
+  stays 10,000 across all three families: a faster machine finishes the same
+  null sooner, whereas a shorter null would be a different rule.  Changing the
+  worker count at this moment is also the cheapest it will ever be — no shard
+  had completed, so the resume directory did not yet exist and no computed
+  artifact is discarded.
