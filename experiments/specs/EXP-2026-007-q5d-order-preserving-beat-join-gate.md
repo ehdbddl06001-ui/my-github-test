@@ -537,3 +537,16 @@ Required outputs:
   fixed leave-one-record-out and `P_VALID`/`QUALITY_SHAM` diagnostics.  Replaced
   an absolute per-record S-share gate with source-relative share inflation so
   the join is tested for selection bias rather than natural patient prevalence.
+- 2026-08-10 — Registration note (Claude Code; process only, no scientific
+  content changed).  This file was registered on `main` by Claude Code from a
+  branch named `codex/q5d-beat-join-design` (PR #75).  Under `AGENTS.md` a
+  Claude Code commit belongs on `claude/<task>`; the `codex/` namespace is
+  reserved for Codex-authored branches, so the branch name was wrong.  The
+  registered content was Codex's draft copied verbatim — the file as committed
+  in `71e1991` hashes to SHA-256
+  `5c938158b32dce2b86f39d05730012c6e11cf27e490977aa9d9a67db8778cc68`, identical
+  to the source draft, with no rewriting or summarisation.  The merge landed
+  before the branch name could be corrected, so the error is recorded here
+  rather than by rewriting `main` history.  `design_owner` stays `codex`,
+  `status` stays `draft`, and nothing in this spec has been implemented or
+  executed.
