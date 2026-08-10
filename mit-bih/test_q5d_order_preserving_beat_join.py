@@ -1891,6 +1891,14 @@ def test_run_join_requires_a_passing_preflight():
               "run_join stops on an incomplete freeze before reading anything")
     check("preflight" in BJ.run_join.__doc__,
           "run_join documents the freeze as required, not advisory")
+    # An unauthorised call must be refused as unauthorised, whatever the
+    # environment has installed — permission before capability.
+    try:
+        BJ.run_join("/a", "/b", "/c", "DS2", _fake_freeze(),
+                    BJ.EXECUTION_APPROVAL_TOKEN, None, reverify=False)
+        check(False, "DS2 without a release must stop")
+    except BJ.ExecutionNotApprovedError:
+        check(True, "the DS2 release is checked before any dependency check")
 
 
 def test_preflight_reverification_catches_drift():
@@ -2374,12 +2382,101 @@ def test_notebook_refuses_a_stale_module():
               f"({BJ.MODULE_VERSION}), got {need.group(1)}")
     check("BJ.__file__" in joined,
           "the notebook prints which file it actually loaded")
+    check("pip" in joined and "wfdb==4.3.1" in joined,
+          "the notebook installs the pinned runtime before using it")
+    check("check_runtime_dependencies" in joined
+          and "assert_runtime_ready" in joined,
+          "the notebook checks the stage's imports in the setup cell")
+    install_at = min((i for i, c in enumerate(nb["cells"])
+                      if c["cell_type"] == "code"
+                      and "wfdb==4.3.1" in "".join(c["source"])), default=10**6)
+    leg1_at = min((i for i, c in enumerate(nb["cells"])
+                   if c["cell_type"] == "code"
+                   and "replay_leg1_split" in "".join(c["source"])), default=-1)
+    check(install_at < leg1_at,
+          f"the install cell ({install_at}) runs before Leg 1 ({leg1_at})")
     check("NEED_ATTRS" in joined and "hasattr(BJ, a)" in joined,
           "the notebook checks the names it actually uses, so a forgotten "
           "version bump cannot let a stale module through")
     for name in ("describe_checksum_mismatch", "build_preflight", "run_join"):
         check(f'"{name}"' in joined,
               f"the capability guard names '{name}'")
+
+
+def test_every_stage_declares_its_dependencies():
+    """Leg 1 died on a missing `wfdb` mid-replay; `pyarrow` would have died
+    worse — at the end of a completed join, while writing the bundle."""
+    print("runtime dependencies: declared per stage, checked before the work")
+    check(set(BJ.STAGE_REQUIREMENTS) == set(BJ.MODES),
+          "every mode declares its requirements")
+    check(BJ.STAGE_REQUIREMENTS[BJ.MODE_DESIGN] == ()
+          and BJ.STAGE_REQUIREMENTS[BJ.MODE_FIXTURES] == (),
+          "the offline stages need nothing beyond the stdlib")
+    check("wfdb" in BJ.STAGE_REQUIREMENTS[BJ.MODE_LEG1],
+          "Leg 1 declares wfdb — it reads raw .atr")
+    check("wfdb" not in BJ.STAGE_REQUIREMENTS[BJ.MODE_PREFLIGHT],
+          "the preflight does not need wfdb, and does not demand it")
+    for mode in (BJ.MODE_LEG2, BJ.MODE_DS1, BJ.MODE_DS2):
+        check("pyarrow" in BJ.STAGE_REQUIREMENTS[mode],
+              f"{mode} declares pyarrow up front, not at bundle-writing time")
+    for name in ("numpy", "wfdb", "pyarrow"):
+        check(name in BJ.RUNTIME_DEPENDENCIES,
+              f"'{name}' has a recorded purpose and registered version")
+    check(BJ.RUNTIME_DEPENDENCIES["wfdb"][1] == "4.3.1",
+          "wfdb is pinned to the registered runtime version")
+    check("wfdb==4.3.1" in BJ.PIP_INSTALL_SPEC,
+          "the install spec pins that version")
+
+    # Every lazily-imported module in the file is declared somewhere.
+    import re
+    with open(BJ.__file__, encoding="utf-8") as fh:
+        body = fh.read()
+    lazy = set(re.findall(r"^\s+import (numpy|wfdb|pyarrow)\b", body, re.M))
+    check(lazy <= set(BJ.RUNTIME_DEPENDENCIES),
+          f"every lazy third-party import is declared ({sorted(lazy)})")
+
+    report = BJ.check_runtime_dependencies(BJ.MODE_DESIGN)
+    check(report["ok"] and report["dependencies"] == [],
+          "DESIGN needs nothing and reports nothing missing")
+    numpy_report = BJ.check_runtime_dependencies(BJ.MODE_PREFLIGHT)
+    check(numpy_report["dependencies"][0]["module"] == "numpy",
+          "the preflight reports numpy with its purpose")
+    check(numpy_report["dependencies"][0].get("purpose"),
+          "each dependency says what it is for")
+
+    pin = BJ.build_env_pin()
+    for name in ("python", "numpy", "wfdb", "pyarrow"):
+        check(name in pin, f"the env pin records '{name}'")
+    check(pin["numpy"]["registered_runtime"] == "2.5.1",
+          "the env pin carries the registered runtime version alongside")
+    json.dumps(pin)
+    check(True, "the env pin is JSON-serialisable for the manifest")
+    check(BJ.build_manifest({}, "20260810T000000")["env_pin"]["python"],
+          "the manifest embeds the env pin")
+
+
+def test_missing_dependency_stops_before_the_stage():
+    print("a missing dependency stops the stage before it reads anything")
+    original = dict(BJ.STAGE_REQUIREMENTS)
+    try:
+        BJ.STAGE_REQUIREMENTS[BJ.MODE_DESIGN] = ("a_module_that_is_not_there",)
+        report = BJ.check_runtime_dependencies(BJ.MODE_DESIGN)
+        check(not report["ok"], "an absent module is reported missing")
+        check(report["dependencies"][0]["available"] is False,
+              "the row says it is unavailable")
+        try:
+            BJ.assert_runtime_ready(BJ.MODE_DESIGN)
+            check(False, "the stage must refuse to start")
+        except BJ.Q5DJoinError as exc:
+            check("pip install" in str(exc),
+                  "the refusal gives the exact install command")
+            check("Stopping before the stage starts" in str(exc),
+                  "the refusal says nothing was read")
+    finally:
+        BJ.STAGE_REQUIREMENTS.clear()
+        BJ.STAGE_REQUIREMENTS.update(original)
+    check(BJ.check_runtime_dependencies(BJ.MODE_DESIGN)["ok"],
+          "the requirement table is restored")
 
 
 def test_module_version_tracks_the_contract():
@@ -2533,6 +2630,8 @@ def main() -> int:
         test_notebook_contract,
         test_notebook_cells_run_in_order,
         test_notebook_refuses_a_stale_module,
+        test_every_stage_declares_its_dependencies,
+        test_missing_dependency_stops_before_the_stage,
         test_module_version_tracks_the_contract,
         test_notebook_branch_is_real,
         test_spec_contract,

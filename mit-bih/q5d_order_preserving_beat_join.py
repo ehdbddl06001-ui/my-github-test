@@ -451,6 +451,37 @@ FORBIDDEN_TOKENS: Tuple[str, ...] = (
 )
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Runtime dependencies.  Checked per stage *before* the work, never discovered
+# in the middle of it.
+# ─────────────────────────────────────────────────────────────────────────────
+#: Install these in the run environment.  `wfdb` is pinned to the version in
+#: the registered runtime (`research/ASSETS.md :: env-v9v10-runtime`), which is
+#: also what the qualification stage pinned.
+PIP_INSTALL_SPEC: Tuple[str, ...] = ("wfdb==4.3.1",)
+
+#: `module -> (what it is for, version in the registered runtime or "")`.
+RUNTIME_DEPENDENCIES: Dict[str, Tuple[str, str]] = {
+    "numpy": ("reading the registered arrays and caches", "2.5.1"),
+    "wfdb": ("reading raw `.atr` annotations and headers (Leg 1)", "4.3.1"),
+    "pyarrow": ("writing `join_map.parquet` into the run bundle", ""),
+}
+
+#: What each stage actually needs.  `pyarrow` is listed for the join stages
+#: because the bundle is written at the *end* of a long run — discovering it
+#: is missing there would waste the whole run.
+STAGE_REQUIREMENTS: Dict[str, Tuple[str, ...]] = {
+    MODE_DESIGN: (),
+    MODE_FIXTURES: (),          # synthetic only — pure stdlib
+    MODE_REPORT: (),            # reads an existing bundle
+    MODE_PREFLIGHT: ("numpy",),
+    MODE_LEG1: ("numpy", "wfdb"),
+    MODE_LEG2: ("numpy", "wfdb", "pyarrow"),
+    MODE_DS1: ("numpy", "wfdb", "pyarrow"),
+    MODE_DS2: ("numpy", "wfdb", "pyarrow"),
+}
+
+
 class Q5DJoinError(RuntimeError):
     """Anything that must stop the substage rather than be worked around."""
 
@@ -1092,6 +1123,7 @@ def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
     ledger registers.
     """
     require_execution_approval(approval, "material-input preflight")
+    assert_runtime_ready(MODE_PREFLIGHT)
     problems: List[str] = []
 
     mamba = resolve_canonical_mamba(mamba_candidates, approval)
@@ -1493,13 +1525,20 @@ def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
     """
     split = _check_split(split)
     require_execution_approval(approval, f"{split} join pipeline")
-    # Cheap authorisation checks before the expensive re-hashing, so a run
-    # that was never allowed to start does not read a byte.
+    # Order matters.  Authorisation and contract come first, so a call that
+    # was never allowed is refused as unauthorised whatever the environment
+    # happens to have installed.  Then the runtime check — including the
+    # pyarrow used only at the very end to write the bundle, because finding
+    # that missing after a completed join would throw the run away.  Only
+    # then the expensive re-hashing.
     if split == "DS2" and ds2_label_release != DS2_LABEL_RELEASE_TOKEN:
         raise ExecutionNotApprovedError(
             "the DS2 support gate needs a release minted by "
             "release_ds2_support_gate() from a verified frozen DS1 bundle; "
             "DS2 may not be run standalone")
+    verify_preflight_freeze(preflight, mamba_path, cache_dir, mitdb_dir,
+                            approval, reverify=False)
+    assert_runtime_ready(MODE_DS1 if split == "DS1" else MODE_DS2)
     verified = verify_preflight_freeze(preflight, mamba_path, cache_dir,
                                        mitdb_dir, approval, reverify)
 
@@ -1583,6 +1622,10 @@ def replay_leg1_split(mitdb_dir: str, split: str,
                       ) -> Dict[str, Leg1Record]:
     """Replay Leg 1 for every record of one split, from raw `.atr`."""
     split = _check_split(split)
+    # Permission before capability: an unapproved call is refused as
+    # unapproved whatever the environment has installed.
+    require_execution_approval(approval, f"{split} raw `.atr` replay")
+    assert_runtime_ready(MODE_LEG1)
     out: Dict[str, Leg1Record] = {}
     for led in build_ledger()[split]:
         raw = load_atr_record(mitdb_dir, led.record, approval)
@@ -1748,6 +1791,75 @@ def assert_implementation_only(path: Optional[str] = None
     return {"file": os.path.basename(path), "lines": len(lines),
             "forbidden_tokens_checked": len(FORBIDDEN_TOKENS),
             "sha256": sha256_file(path), "clean": True}
+
+
+def check_runtime_dependencies(mode: str = MODE_DESIGN
+                               ) -> Dict[str, object]:
+    """Which imports this stage needs, and whether they are importable now.
+
+    Reports rather than raises, so a caller can print the whole picture.  The
+    version actually loaded is recorded next to the registered one; a
+    difference is a *fact for the manifest*, not a new stopping rule — this
+    stage may not invent stops the spec did not register.
+    """
+    mode = resolve_mode(mode)
+    needed = STAGE_REQUIREMENTS.get(mode, ())
+    rows: List[Dict[str, object]] = []
+    missing: List[str] = []
+    for name in needed:
+        purpose, registered = RUNTIME_DEPENDENCIES.get(name, ("", ""))
+        row: Dict[str, object] = {"module": name, "purpose": purpose,
+                                  "registered_version": registered or None}
+        try:
+            module = __import__(name)
+            row["available"] = True
+            row["version"] = getattr(module, "__version__", "unknown")
+            if registered:
+                row["matches_registered_runtime"] = (
+                    str(row["version"]) == registered)
+        except ImportError as exc:
+            row["available"] = False
+            row["error"] = str(exc)
+            missing.append(name)
+        rows.append(row)
+    return {"mode": mode, "ok": not missing, "missing": missing,
+            "dependencies": rows,
+            "pip_install": list(PIP_INSTALL_SPEC),
+            "python": sys.version.split()[0]}
+
+
+def assert_runtime_ready(mode: str = MODE_DESIGN) -> Dict[str, object]:
+    """Stop *before* the stage runs when something it needs is absent.
+
+    `wfdb` was missing on the first Leg 1 attempt and surfaced only when the
+    replay reached its first `.atr`; `pyarrow` would have surfaced worse, at
+    the end of a completed join while writing the bundle.  A stage now refuses
+    to start instead.
+    """
+    report = check_runtime_dependencies(mode)
+    if not report["ok"]:
+        wanted = " ".join(PIP_INSTALL_SPEC)
+        raise Q5DJoinError(
+            f"stage {report['mode']} needs {report['missing']}, which "
+            f"cannot be imported.  Install the pinned runtime first:\n"
+            f"    pip install -q {wanted} pyarrow\n"
+            f"Stopping before the stage starts, so nothing is read and no "
+            f"partial run is produced.")
+    return report
+
+
+def build_env_pin() -> Dict[str, object]:
+    """The versions actually loaded, for the run manifest."""
+    out: Dict[str, object] = {"python": sys.version.split()[0],
+                              "pip_install_spec": list(PIP_INSTALL_SPEC)}
+    for name, (_purpose, registered) in sorted(RUNTIME_DEPENDENCIES.items()):
+        try:
+            module = __import__(name)
+            version = getattr(module, "__version__", "unknown")
+        except ImportError:
+            version = None
+        out[name] = {"version": version, "registered_runtime": registered or None}
+    return out
 
 
 def sha256_file(path: str) -> str:
@@ -3745,6 +3857,7 @@ def build_manifest(inputs: Mapping[str, str], timestamp: str,
         "preflight": {k: preflight.get(k) for k in PREFLIGHT_FREEZE_FIELDS}
         if preflight else None,
         "declared_units": list(DECLARED_UNITS),
+        "env_pin": build_env_pin(),
         "inputs": {name: {"path": path,
                           "sha256": sha256_file(path)
                           if os.path.exists(path) else None}
