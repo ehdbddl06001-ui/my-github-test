@@ -299,9 +299,17 @@ Q5-A 실측 조인 1.9%(우연 수준)가 완전히 설명된다. **join key로 
   **DS1 −25 는 지금까지 문서화된 적 없던 값**이다. → `mamba_data.npz` 행과 V9/V10
   확률 행의 **record별 구간이 산술로 결정된다**(join 명세의 `processed row index`
   ledger 항목이 채워진다).
-- **환경 부분 확정.** 로컬 실행(`/home/user/work/v10`, Colab 아님) · Python 3.12.3 ·
-  venv `~/ecg` · tf 2.21.0 · keras 3.15.0 · GPU GTX 1650 Ti Max-Q(CC 7.5) ·
-  cuDNN 92400. **`numpy`·`scipy` 만 미상** — `pip freeze` 셀이 없다.
+- **환경 부분 확정 + 계열 균질성.** 계열 노트북 5개(v9·v10·v11·v12·v13)를 전부 받아
+  스캔했다. 다섯 다 `환경: local` · `/home/user/work/v{9..13}` · Python **3.12.3** ·
+  venv `~/ecg` · **tf 2.21.0 / keras 3.15.0** · GPU **GTX 1650 Ti Max-Q**(CC 7.5) ·
+  **cuDNN 92400** 로 동일하다 → **v9 와 V10 이 같은 기계·같은 venv 에서 돌았다는 것이
+  직접 확인된다**(종전에는 v10 만 확인, v9 는 추정이었다).
+  그러나 **`numpy`·`scipy` 는 다섯 노트북 어디에도 없다** — `pip`/`__version__` 셀이
+  하나도 없고, shell 셀·경고·traceback 경로까지 훑어도 나오지 않는다.
+  → **노트북 경로는 소진됐다. `~/ecg` venv 가 유일한 남은 출처다.**
+- **v9 노트북 stdout 이 v9 캐시와 44/44 일치(4번째 증언).** 셀 18의 캐시 빌드 출력을
+  파싱해 대조: 불일치 0 · 합계 99,840 · DS2 49,289. 동일 row 집합에 대한 독립 증언이
+  **4개**가 됐다(v9 캐시 meta · v9 노트북 stdout · v10 캐시 meta · v10 노트북 stdout).
 
 **그래도 B를 유지한다.** A는 "exact source, environment, input, filtering, row-order 및
 V10 lineage가 **모두** 증명된 경우에만" 발화하도록 등록돼 있고, 환경 조건 하나가

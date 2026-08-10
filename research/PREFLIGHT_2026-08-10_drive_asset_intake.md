@@ -413,6 +413,40 @@ DS2 쪽 −1/−1/−4 가 `ASSETS.md` 기록과 정확히 일치한다. **DS1 �
 
 `kernelspec` 은 `Python (ecg)` 로, 재현 가능한 named venv다. **`~/ecg` 는 사용자 로컬
 머신에 아직 존재할 가능성이 높다** → `~/ecg/bin/pip freeze` 한 번이면 마지막 공백이 닫힌다.
+경로가 POSIX(`~/ecg/lib/python3.12/site-packages`)이므로 Windows 사용자 기준으로는
+**WSL 쪽**이다(Windows 네이티브 venv 라면 `ecg\Lib\site-packages` 여야 한다).
+
+### 노트북 경로는 소진됐다 — v9·v11·v12·v13 전수 확인
+
+`numpy`/`scipy` 를 찾기 위해 계열 노트북 5개를 전부 받아 스캔했다:
+
+| 노트북 | Drive id | 크기 | `pip`·`__version__` 셀 | numpy/scipy |
+|---|---|---|---|---|
+| `v9_ECG.ipynb` (실행본) | `10WM6FuH20KXQ-Ik6-m9xGaCi_GT9J8Fe` | 81,324 B · 38 cells | **없음** | **없음** |
+| `v10_ECG.ipynb` (실행본) | `1W1OEXp_AjvKcjJlXSmimIG18jQ4dOo8h` | 118,721 B · 43 cells | **없음** | **없음** |
+| `v11_ECG.ipynb` (실행본) | `1SVL13QAmQzqZiPvEe2rVz9x-I13NrhCn` | 97,349 B · 39 cells | **없음** | **없음** |
+| `v12_ECG.ipynb` (실행본) | `1puD70YxTwABFI-hfiLBAptdve3yA4roO` | 95,375 B · 37 cells | **없음** | **없음** |
+| `v13_ECG.ipynb` | `1CGpQcL99QD1KbhCUBZ7gnPmjwJu_C-ln` | 71,977 B · 42 cells | **없음** | **없음** |
+
+버전을 흘릴 만한 다른 경로(shell `!`/`%` 셀, `pip list/freeze`, Deprecation·Future·
+User·RuntimeWarning, site-packages 경로가 찍힌 traceback)도 함께 훑었으나 **numpy/scipy
+버전은 어디에도 없다.** → **노트북으로는 더 얻을 것이 없다. `~/ecg` venv 가 유일한 남은 출처다.**
+
+### 부수 확인 ① — v9~v13 환경 균질성
+
+다섯 노트북 전부 동일하다: `환경: local` · 작업폴더 `/home/user/work/v{9,10,11,12,13}` ·
+Python **3.12.3** · kernel `ecg` · **tf 2.21.0 / keras 3.15.0** · GPU **GTX 1650 Ti Max-Q**
+(CC 7.5) · **cuDNN 92400**(v9·v10·v11 에서 확인). **v9 와 V10 이 같은 기계·같은 venv 에서
+돌았다는 것이 직접 확인된다** — 지금까지는 v10 만 확인돼 있었고 v9 는 추정이었다.
+
+### 부수 확인 ② — v9 노트북 stdout 이 캐시와 44/44 일치 (4번째 증언)
+
+`v9_ECG.ipynb` 셀 18의 캐시 빌드 stdout(`[nn/44] <rec> (DSx) beats=…`)을 파싱해
+v9 캐시 `meta.json` 과 대조: **44/44 전부 일치, 불일치 0**, 합계 **99,840**,
+DS2 **49,289**. §13.2의 증언 3개에 이것이 더해져 **동일 row 집합에 대한 독립 증언이 4개**가 된다:
+
+1. v9 캐시 `meta.json` · 2. **v9 노트북 stdout(셀 18)** · 3. v10 캐시 `meta.json`(독립 재빌드) ·
+4. v10 노트북 stdout(셀 21) + 셀 23 `DS1: S 944/50551`
 
 참고: 셀 26의 `KeyboardInterrupt` 는 GPU OOM(2.05 GiB 할당 실패)이 난 smoke 실행
 (`arms=['base'], seeds=[1000]`)을 수동 중단한 것이고, 본 실행은 셀 28
