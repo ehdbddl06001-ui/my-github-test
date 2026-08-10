@@ -2246,6 +2246,19 @@ def test_notebook_contract():
           "the notebook reports the DS1 cache-ledger contract separately")
     check("preflight.json" in joined,
           "the preflight result is preserved as a bundle, PASS or STOP")
+    check("leg1_audit.json" in joined,
+          "the Leg 1 audit is preserved as a bundle too")
+    check(joined.count("assert not os.path.exists(") >= 3,
+          "every bundle writer refuses to overwrite an existing folder")
+    # Leg 1 must not start on an unproven input contract.
+    leg1_cell = [c for c in nb["cells"] if c["cell_type"] == "code"
+                 and "replay_leg1_split" in "".join(c["source"])]
+    if check(len(leg1_cell) == 1, "there is exactly one Leg 1 cell"):
+        body = "".join(leg1_cell[0]["source"])
+        check('PREFLIGHT.get("ok")' in body,
+              "the Leg 1 cell asserts the preflight passed")
+        check("rule_fingerprint" in body,
+              "the Leg 1 cell checks the preflight was frozen under this rule")
     check("assert not os.path.exists(RUN_DIR)" in joined,
           "the notebook refuses to overwrite an existing run bundle")
 
