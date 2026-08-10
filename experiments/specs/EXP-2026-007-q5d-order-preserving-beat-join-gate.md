@@ -1116,3 +1116,31 @@ Required outputs:
   additionally asserts the **names it actually uses** (`NEED_ATTRS`), which
   cannot be defeated by forgetting a version number, and prints
   `BJ.__file__`.  `MODULE_VERSION` is 3.
+- 2026-08-10 — **`PREFLIGHT PASS`.  The material-input contract is closed.**
+
+  Run `20260810T122603_EXP-2026-007_q5d_beat_join_preflight`.  All five
+  contracts verified against the registered data, with nothing relaxed:
+
+  | contract | frozen identity |
+  |---|---|
+  | canonical mamba | `b1c16106…` (registered copy present; one byte-identical duplicate recorded) |
+  | V9/V10 cache aggregate | `82b9a593…` — 45 files, 0 missing, 0 extra |
+  | MIT-BIH tree aggregate | `0b46a411…` — 147 files, 0 missing, 0 extra, publisher checksums 146/146 |
+  | DS1/DS2 cache ledger | 22 / 22 records |
+  | DS2 result `pid` | `b8e45b6e…`, shared by all 25 registered files |
+
+  These four digests are the run's **input identity**.  `run_join()` re-checks
+  them against the files on disk before Leg 1, and a null or a DS2 release
+  generated under a different rule fingerprint cannot be inherited.
+
+  What this does and does not establish: the registered artifacts are the
+  ones the lineage says they are, and their row boundaries are internally
+  consistent.  It establishes **nothing** about whether the beat identity map
+  exists — that is Leg 1 and Leg 2, and `JOIN_UNRESOLVED` remains an entirely
+  possible and valid outcome.  No probability was opened, no DS2 label was
+  read, nothing was trained, and no registered asset was modified.
+
+  Leg 1 was additionally gated: the audit cell now asserts the preflight
+  passed under the current rule fingerprint before replaying any `.atr`, and
+  writes its own bundle whether it passes or emits `JOIN_RULE_FALSIFIED`.  607
+  assertions pass.
