@@ -223,6 +223,65 @@ canonical run `20260810T005802` (freeze `20260810T003933`). 측정도구 자격�
   수준)으로 막혀 있다. Codex가 병렬로 설계 중이다
   (`research/HANDOFF_2026-08-10_Q5D_beat_join_to_codex.md`).
 
+### DRIVE_ASSET_PREFLIGHT (2026-08-10) — 판정 `SOURCE_REPLAY_INCOMPLETE` (B)
+
+신규 Drive 자산(`v9pkg` 소스 · `v9pkg_results`/`v10pkg_results` · 압축 해제
+`mamba_data`)에 대한 **읽기 전용 provenance gate**. 과학적 결과가 아니다.
+전문: `research/PREFLIGHT_2026-08-10_drive_asset_intake.md`.
+
+**B를 발화한 근거 — V9 source는 있으나 exact environment와 V10 row lineage가 없다:**
+
+- **V9 source 확보·producer 확증.** `MyDrive/mitbih/v9pkg/kinkmap/` 가
+  `v9pkg_results` 를 낳았다는 것이 추정이 아니라 대조로 성립한다: 파일명 규약
+  (`{arm}_s{seed}.npz`), `metrics.json` 필드 스키마, 그리고 **arm별 param 5/5
+  정확 일치**(1,126,891 / 1,028,587 / 1,135,403 / 1,141,291 / 1,149,803).
+- **행 순서는 `.atr` ordinal이 아니라 검출기 순서다.** `data.py::build_record`가
+  `use_detected=True`로 `detect_r()`(5–15 Hz 대역통과 → 미분 → 제곱 → 0.12 s
+  이동적분 → `0.3×median` 임계 → `find_peaks`)를 돌리고, 그 출력을 주석에
+  **greedy 최근접 1:1**(허용 54 sample, `used` 집합)로 붙인 뒤 경계컷(±150)한다.
+  → **어느 비트가 남는지가 부동소수 필터 출력에 걸려 있어 `.atr` 만으로 재현되지
+  않는다.** mamba 계보(`v15b_local.py`, 주석 ordinal 직접 사용)와 근본적으로 다르다.
+- **환경 미증명.** `requirements.txt` 는 `tensorflow==2.21.0`·`keras==3.15.0` 만
+  고정하고 **정작 행 순서를 좌우하는 `numpy>=2.0`·`scipy>=1.13` 를 미고정**한다.
+  lockfile·env 캡처·입력 hash·cache manifest 전부 부재(두 results 폴더 모두
+  25 NPZ + 5 JSON 이 전부, config/manifest 0개). `train.py` 는
+  `enable_op_determinism()` 미호출 → 시드를 고정해도 GPU 학습은 비결정론적이다.
+- **V10 producer-side 증거 부재.** Drive에 `v10pkg` 소스 폴더가 **없다**.
+  `ASSETS.md` 가 인용하던 `v10pkg/v10_ECG.ipynb` 는 **실재하지 않는 경로**였고
+  (이번에 정정), 노트북은 `v11/v12/v13pkg` 안에 **중첩 사본 3개(mtime 2종)** 로만
+  있다. 어느 사본이 결과를 낳았는지 확정 불가.
+- **유일한 대조 신호는 판별력이 없다.** V9·V10 양쪽의 `v8base` arm은 params
+  (1,126,891)와 seed별 `train_S`/`val_S`(559/385 · 357/587 · 910/34 · 804/140 ·
+  935/9)가 **완전히 같은데 5개 시드 전부 `S_prauc`가 다르다**(평균 0.5762 vs
+  0.5984). op determinism이 꺼져 있으므로 이 차이는 *동일 row 위 GPU 비결정론*
+  과 *실제로 다른 row* 어느 쪽으로도 설명된다 → **identity 증거가 아니다.**
+  (`train_S`/`val_S` 일치는 label 개수 일치일 뿐이고, 규칙상 identity 증거로
+  인정하지 않는 부류다.)
+
+**부수 확정 — 오래 남아 있던 −6 beat 차이의 기전이 닫혔다.**
+mamba DS2 49,295 vs V9/V10 DS2 49,289, record 105/111/222에서 −1/−1/−4(전부 N).
+mamba는 주석 ordinal을, v9pkg는 검출기를 쓴다 → **검출기가 ±54 sample 안에서
+매칭하지 못한(또는 경계에서 잘린) 비트가 정확히 그 6개다.** 즉 `mamba_data.npz`
+의 행과 V9/V10 확률 행은 **같은 행 집합이 아니며**, 양쪽 어디에도 저장 row key가
+없다(`train.py` 는 `prob`·`y`·`pid` 만 저장). order-preserving join은 이 3개
+record에서 반드시 정렬이 깨진다.
+
+**`t` 의 정체 재확인(소스).** `build_penult.py` 의 `t = np.cumsum(pre) - pre[0]`
+— float32 **초**, record마다 0에서 재시작, 필터링된 RR의 누적이라 실제 시각에서
+밀린다. **`.atr` sample index도 beat_uid도 아니고 identity 정보가 없다** →
+Q5-A 실측 조인 1.9%(우연 수준)가 완전히 설명된다. **join key로 쓸 수 없다.**
+
+**압축 해제 mamba 배열: 정합하나 미증명.** 6개 `.npy` 전부 정확히 99,871행이고
+`beat` 폭 300×2가 `WIN 150+150`·2채널과 맞으며 `t` 는 4 B/행 = float32다. 그러나
+등록 hash `b1c16106…` 과 **대조하지 않았고**(읽기전용·대용량), 서드파티
+`zipextractor.app` 추출본이며 **동일 크기 `mamba_data.npz` 사본이 3개** 있어 어느
+것을 풀었는지 구분되지 않는다. **과학적 사용 전 hash 대조가 필요하다.**
+
+**따라서 기존 order-preserving RR join 명세를 유지한다.** preflight는 provenance
+gate이고, RR join은 그 결과가 `SOURCE_REPLAY_INCOMPLETE` 일 때만 **별도 승인 후**
+진행하는 단일 사전등록 경로다 — 이번 인수검사에서 join은 설계·구현·실행 어느
+것도 하지 않았다. Drive 변경 0건, 확률 NPZ 다운로드 0건, DS2 label 열람 0건.
+
 ## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 
 residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 실패 지도**다.
