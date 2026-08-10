@@ -3254,6 +3254,143 @@ def test_ds1_gate_requires_the_complete_null():
               "the bootstrap size is fixed at 2,000")
 
 
+def test_wrong_record_control_runs_on_the_real_ledger():
+    """The control that broke the first DS1_GATE attempt.
+
+    `wrong_record` pairs one record's raw sequence with another record's
+    processed rows, so its mamba slice is a *different* record's length.
+    `join_split` enforced the registered mamba count unconditionally, which
+    made the registered control impossible to execute:
+    `DS1 101: mamba slice 1613 != registered 1862`.  Small-ledger tests missed
+    it because every synthetic record had the same length.
+    """
+    print("wrong-record control runs against records of differing length")
+    check(BJ.CONTROL_PRESERVES_RECORD_LENGTH["wrong_record"] is False,
+          "the wrong-record control is registered as length-changing")
+    for family in ("order_shuffle", "circular_shift"):
+        check(BJ.CONTROL_PRESERVES_RECORD_LENGTH[family] is True,
+              f"{family} preserves record length and is still checked")
+
+    # Two records of deliberately different length, as in the real ledger.
+    saved = (BJ.CACHE_LEDGER, BJ.MAMBA_COUNT_DELTA)
+    try:
+        BJ.CACHE_LEDGER = {"DS1": (("901", 12), ("902", 9)), "DS2": ()}
+        BJ.MAMBA_COUNT_DELTA = {}
+        mamba, cache = {}, {}
+        for record, n in (("901", 12), ("902", 9)):
+            rng = random.Random(f"len-{record}")
+            samples = [200 + s for s in BJ._walk(
+                tuple(300 + rng.randrange(5) * 2 for _ in range(n - 1)))]
+            pre, post = BJ._rr_from_samples(samples)
+            rows = [{"mamba_record_row": k, "aami": "N"} for k in range(n)]
+            mamba[record] = seq(record, "mamba", pre, post, rows=rows)
+            cache[record] = seq(record, "cache", pre, post)
+
+        # The TRUE join still enforces the ledger on both sides.
+        wrong_size = dict(mamba)
+        wrong_size["901"] = seq("901", "mamba", mamba["902"].pre_samples,
+                                mamba["902"].post_samples)
+        try:
+            BJ.join_split(wrong_size, cache, "DS1")
+            check(False, "the TRUE join must still enforce the mamba ledger")
+        except BJ.Q5DJoinError as exc:
+            check("mamba slice" in str(exc),
+                  "the TRUE join refuses a wrong-sized mamba slice")
+
+        # The control may attach a different record's sequence.
+        transformed = BJ.apply_control(BJ.CONTROL_WRONG_RECORD, mamba, 0)
+        lengths = {r: len(v) for r, v in transformed.items()}
+        check(lengths != {r: len(v) for r, v in mamba.items()},
+              f"the derangement really changed the lengths ({lengths})")
+        out = BJ.join_split(
+            transformed, cache, "DS1",
+            enforce_mamba_ledger=BJ.CONTROL_PRESERVES_RECORD_LENGTH[
+                BJ.CONTROL_WRONG_RECORD])
+        check(out["rows"], "the wrong-record control produces a join")
+        check(out["cache_rows"] == 21,
+              "the cache side is still the registered 12 + 9 rows")
+
+        # And the cache side is still enforced even for a control.
+        bad_cache = dict(cache)
+        bad_cache["901"] = seq("901", "cache", [300] * 5, [300] * 5)
+        try:
+            BJ.join_split(transformed, bad_cache, "DS1",
+                          enforce_mamba_ledger=False)
+            check(False, "the cache ledger must be enforced for controls too")
+        except BJ.Q5DJoinError as exc:
+            check("cache slice" in str(exc),
+                  "a wrong cache slice is refused even in a control")
+    finally:
+        BJ.CACHE_LEDGER, BJ.MAMBA_COUNT_DELTA = saved
+
+
+def test_class_travels_with_the_beat_through_controls():
+    """A permuted sequence must be scored with the permuted beat's class.
+
+    `j_min` looked the class up as `mamba_classes[(record, position)]`, i.e.
+    the class of whatever beat *originally* sat at that position.  Under
+    order-shuffle, circular-shift and wrong-record the beat at a position is a
+    different beat, so agreement was scored against the wrong class and the
+    null came out **lower than it should** — anti-conservative, the direction
+    that makes TRUE easier to beat.
+    """
+    print("the Leg 1 class travels with the beat through every control")
+    samples = [200 + k for k in BJ._walk((300, 313, 292, 325, 285))]
+    pre, post = BJ._rr_from_samples(samples)
+    classes = ["N", "S", "V", "N", "S", "V"]
+    rows = [{"mamba_record_row": k, "raw_atr_ordinal": k,
+             "raw_r_sample": samples[k], "aami": classes[k]}
+            for k in range(len(pre))]
+    mamba = seq("101", "mamba", pre, post, rows=rows)
+    cache = seq("101", "cache", pre, post)
+    led = BJ.ledger_record("DS1", "101")
+
+    check("mamba_aami" in BJ.JOIN_MAP_FIELDS,
+          "the join map carries the carried Leg 1 class")
+    _r, true_rows = BJ.join_record(mamba, cache, led)
+    certified = [r for r in true_rows if r["status"] == BJ.STATUS_CERTIFIED]
+    check(all(r["mamba_aami"] == classes[r["mamba_record_row"]]
+              for r in certified),
+          "on the TRUE join the carried class matches the positional one")
+
+    shuffled = BJ.shuffle_within_record(mamba, 3)
+    order = [r["mamba_record_row"] for r in shuffled.rows]
+    check(order != list(range(len(pre))), f"the shuffle moved beats ({order})")
+    _r, sh_rows = BJ.join_record(shuffled, cache, led)
+    for row in sh_rows:
+        if row["mamba_record_row"] is not None and row["mamba_aami"]:
+            expected = shuffled.rows[row["mamba_record_row"]]["aami"]
+            check(row["mamba_aami"] == expected,
+                  "the shuffled beat carries its own class") if \
+                row["mamba_record_row"] == 0 else None
+
+    # The statistic must use the carried class, not the positional one.
+    # Constructed so the two answers are maximally different: every beat's
+    # carried class disagrees with the class that originally sat there.
+    processed = {("101", 0): "N", ("101", 1): "S", ("101", 2): "V"}
+    positional = {("101", 0): "N", ("101", 1): "S", ("101", 2): "V"}
+    permuted = ["S", "V", "N"]          # what actually sits there after a shuffle
+    made = []
+    for k in range(3):
+        row = {f: None for f in BJ.JOIN_MAP_FIELDS}
+        row.update({"split": "DS1", "record": "101", "mamba_record_row": k,
+                    "cache_record_row": k, "status": BJ.STATUS_CERTIFIED,
+                    "drop_or_unmatched_reason": BJ.REASON_NONE,
+                    "mamba_aami": permuted[k]})
+        made.append(row)
+    carried = BJ.j_min(made, processed, positional)
+    stripped = [dict(r, mamba_aami=None) for r in made]
+    fallback = BJ.j_min(stripped, processed, positional)
+    check(carried == 0.0,
+          f"with every carried class disagreeing, J_min is 0 ({carried})")
+    check(fallback == 1.0,
+          f"the positional lookup would have scored a perfect 1.0 ({fallback}) "
+          f"— that gap is the bug this closes")
+    cov = BJ.coverage_report(made, processed, positional)
+    check(cov["agreement_overall"] == 0.0,
+          "coverage_report also scores agreement on the carried class")
+
+
 def test_public_finalizer_has_no_short_null_bypass():
     """A public production function must not be askable for a shorter null."""
     print("public DS1 gate: exactly 10,000, no `total` to bypass it")
@@ -3501,6 +3638,8 @@ def main() -> int:
         test_true_join_stage_reaches_no_verdict,
         test_run_join_cannot_start_an_inline_null,
         test_ds1_gate_requires_the_complete_null,
+        test_wrong_record_control_runs_on_the_real_ledger,
+        test_class_travels_with_the_beat_through_controls,
         test_public_finalizer_has_no_short_null_bypass,
         test_ds2_release_requires_the_full_null_and_bootstrap,
         test_notebook_separates_the_three_stages,

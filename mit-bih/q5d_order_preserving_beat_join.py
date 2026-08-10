@@ -340,6 +340,17 @@ CONTROL_CIRCULAR_SHIFT = "circular_shift"
 CONTROL_FAMILIES: Tuple[str, ...] = (CONTROL_WRONG_RECORD,
                                      CONTROL_ORDER_SHUFFLE,
                                      CONTROL_CIRCULAR_SHIFT)
+#: Does a control preserve each record's own length?  The wrong-record
+#: derangement deliberately pairs one record's raw sequence with another
+#: record's processed rows, so its mamba slice is a *different* record's and
+#: cannot match this record's registered count.  That is the control, not a
+#: fault — so the mamba-side ledger check is relaxed for it alone.  The cache
+#: side is real processed data and is always checked.
+CONTROL_PRESERVES_RECORD_LENGTH: Dict[str, bool] = {
+    "wrong_record": False,
+    "order_shuffle": True,
+    "circular_shift": True,
+}
 MASTER_SEED = 2026017
 BOOTSTRAP_SEED = 2026018
 N_NULL_REPLICATES = 10000
@@ -436,9 +447,9 @@ BUNDLE_FILES: Tuple[str, ...] = (
 #: Minimum audit fields of ``join_map``.  A probability column is not here and
 #: :func:`validate_join_map_row` rejects one if it ever appears.
 JOIN_MAP_FIELDS: Tuple[str, ...] = (
-    "split", "record", "raw_atr_ordinal", "raw_r_sample", "mamba_record_row",
-    "mamba_global_row", "mamba_file_row", "cache_record_row",
-    "result_global_row", "status",
+    "split", "record", "raw_atr_ordinal", "raw_r_sample", "mamba_aami",
+    "mamba_record_row", "mamba_global_row", "mamba_file_row",
+    "cache_record_row", "result_global_row", "status",
     "pre_rr_difference_samples", "post_rr_difference_samples", "failed_leg",
     "drop_or_unmatched_reason",
 )
@@ -1658,8 +1669,10 @@ def compute_null_shard(context: NullContext, start: int, end: int,
         for replicate in range(start, end):
             transformed = apply_control(family, context.mamba_by_record,
                                         replicate)
-            rows = join_split(transformed, context.cache_by_record,
-                              context.split)["rows"]
+            rows = join_split(
+                transformed, context.cache_by_record, context.split,
+                enforce_mamba_ledger=CONTROL_PRESERVES_RECORD_LENGTH[family]
+            )["rows"]
             values.append(j_min(rows, context.processed_classes,
                                 context.mamba_classes))
         per_family[family] = values
@@ -2040,8 +2053,10 @@ def _serial_null_reference(context: NullContext, total: int
         for replicate in range(int(total)):
             transformed = apply_control(family, context.mamba_by_record,
                                         replicate)
-            rows = join_split(transformed, context.cache_by_record,
-                              context.split)["rows"]
+            rows = join_split(
+                transformed, context.cache_by_record, context.split,
+                enforce_mamba_ledger=CONTROL_PRESERVES_RECORD_LENGTH[family]
+            )["rows"]
             values.append(j_min(rows, context.processed_classes,
                                 context.mamba_classes))
         out[family] = values
@@ -3156,6 +3171,10 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
             "record": mamba.record,
             "raw_atr_ordinal": audit.get("raw_atr_ordinal"),
             "raw_r_sample": audit.get("raw_r_sample"),
+            # The Leg 1 class travels **with the beat**.  Under a control the
+            # sequence is permuted or replaced, so looking the class up by
+            # position in the original record would score a different beat.
+            "mamba_aami": audit.get("aami"),
             "mamba_record_row": i,
             # Two enumerations of the same row, kept apart on purpose:
             # the ledger's logical split-local coordinate, and the physical
@@ -3188,6 +3207,7 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
         rows.append({
             "split": cache.split, "record": cache.record,
             "raw_atr_ordinal": None, "raw_r_sample": None,
+            "mamba_aami": None,
             "mamba_record_row": None, "mamba_global_row": None,
             "mamba_file_row": None, "cache_record_row": j,
             "result_global_row": led.cache_start + j,
@@ -3203,12 +3223,18 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
 
 def join_split(mamba_by_record: Mapping[str, RecordSequence],
                cache_by_record: Mapping[str, RecordSequence],
-               split: str) -> Dict[str, object]:
+               split: str,
+               enforce_mamba_ledger: bool = True) -> Dict[str, object]:
     """Run Leg 2 over one split, record by record.
 
     Global order-preserving alignment is forbidden and structurally impossible
     here: each record is cut from the ledger and matched on its own, so a
     deficit in 105, 111 or 222 cannot shift any later record.
+
+    `enforce_mamba_ledger` is True for the TRUE join, where the mamba slice
+    must be exactly the record's registered count.  It is False only for the
+    wrong-record control, whose whole point is to attach a *different*
+    record's raw sequence; the cache side is checked either way.
     """
     split = _check_split(split)
     rows_out: List[Dict[str, object]] = []
@@ -3225,7 +3251,7 @@ def join_split(mamba_by_record: Mapping[str, RecordSequence],
                 f"{split} {led.record}: cache slice {len(cache)} != registered "
                 f"{led.cache_n}; record boundaries come from the ledger, not "
                 f"from the data")
-        if len(mamba) != led.mamba_n:
+        if enforce_mamba_ledger and len(mamba) != led.mamba_n:
             raise Q5DJoinError(
                 f"{split} {led.record}: mamba slice {len(mamba)} != registered "
                 f"{led.mamba_n}")
@@ -3297,7 +3323,9 @@ def coverage_report(rows: Sequence[Mapping[str, object]],
         bucket = per_record.setdefault(record, {"total": 0, "certified": 0})
         bucket["certified"] += 1
         if mamba_classes is not None and row["mamba_record_row"] is not None:
-            raw = mamba_classes.get((record, int(row["mamba_record_row"])))
+            raw = row.get("mamba_aami")
+            if raw is None:
+                raw = mamba_classes.get((record, int(row["mamba_record_row"])))
             if raw is not None and cls is not None:
                 agree_total += 1
                 if raw == cls:
@@ -3359,10 +3387,13 @@ def j_min(rows: Sequence[Mapping[str, object]],
         j, i = row["cache_record_row"], row["mamba_record_row"]
         if j is None or i is None:
             continue
-        key_processed = (str(row["record"]), int(j))
-        key_mamba = (str(row["record"]), int(i))
-        cls = processed_classes.get(key_processed)
-        raw = mamba_classes.get(key_mamba)
+        cls = processed_classes.get((str(row["record"]), int(j)))
+        # Prefer the class carried on the row: it travelled with the beat
+        # through whatever control transformed the sequence.  The positional
+        # lookup is the fallback for callers that supply no carried class.
+        raw = row.get("mamba_aami")
+        if raw is None:
+            raw = mamba_classes.get((str(row["record"]), int(i)))
         if cls in hits and raw == cls:
             hits[cls] += 1
     return min(_ratio(hits[c], totals[c]) for c in AAMI_CLASSES)
