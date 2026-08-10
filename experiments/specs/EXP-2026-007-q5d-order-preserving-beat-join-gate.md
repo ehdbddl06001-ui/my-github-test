@@ -1206,3 +1206,98 @@ Required outputs:
 
   No threshold, tolerance, gate, statistic, seed or stopping rule changed.
   650 assertions pass.
+- 2026-08-10 — **Leg 1 passes on DS1.  Null runtime measured and flagged.**
+
+  `LEG1_REPLAY_AUDIT` on DS1: **`ok=True`, replayed 50,576 / 50,576**, and the
+  mamba `pid` blocks match the ledger for every record.  Because
+  `audit_leg1_against_ledger` reported no problems, all four of its checks
+  held: per-record counts, `.atr` ordinal order, strictly increasing R samples
+  after filtering, and — with the stored mamba RR supplied at
+  `rr_atol_samples = 0` — **every pre- and post-RR value matching exactly** in
+  integer samples across all 50,576 rows.
+
+  This is the deterministic leg holding.  The three frozen rules and the RR
+  semantic read out of `v15b_local.py` (post-filter, seconds, duplicated
+  endpoints) are confirmed against the registered artifact rather than
+  assumed, and `JOIN_RULE_FALSIFIED` / `LEG1_SOURCE_REPLAY` did not fire.  It
+  says nothing yet about Leg 2 identifiability.
+
+  DS2 Leg 1 is deliberately not run yet: DS2 raw `.atr` symbols are available
+  "only after the join rule and code are frozen", which is after the DS1 gate.
+
+  **Feasibility finding, raised before it costs a run.**  A single complete
+  DS1 Leg 2 join over the 22 records measures at ~1.7 s (22 records, ~2,300
+  rows each, realistic RR density; ~317k candidate edges).  The registered
+  null is 3 families x 10,000 replicates, each rerunning the *complete* Leg 2
+  — 30,000 joins, about **14 hours**.  A profile puts 85% of that in
+  `match_record` (the prefix/suffix Fenwick DP, ~635k tree operations per
+  join); row construction and schema validation are only ~15%, so trimming
+  those does not change the picture.
+
+  `N_NULL_REPLICATES` is registered and enters the rule fingerprint, so a
+  shorter null is **a different rule, not a faster run**.  It has not been
+  touched.  The legitimate options are execution strategy — optimise the
+  matcher without changing what it computes, or checkpoint the null across
+  sessions — and the choice belongs to Codex, not to whoever is impatient at
+  the console.  `estimate_null_runtime()` reports the cost, and says so.
+
+  One defect fixed on the way: `run_join` runs the null whenever the split is
+  DS1, and the notebook selected DS1 for `LEG2_RECORD_JOIN` — so choosing
+  "look at the join" would have silently started the 14-hour null.  The stages
+  now mean what their names say: `LEG2_RECORD_JOIN` does the record-wise join
+  and coverage with no null (seconds); `DS1_GATE` runs the registered null and
+  prints its expected cost first.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  663 assertions pass.
+- 2026-08-10 — **Null shard runner.  Science unchanged; execution scheduling
+  only.**
+
+  The registered null is 3 families x 10,000 replicates, each rerunning the
+  complete Leg 2 — measured at ~14 hours, longer than a Colab session.  Codex
+  directed that it be scheduled, not shortened: no reduction, no early stop,
+  no approximation, no omitted family.  This entry records that nothing
+  scientific moved.
+
+  **Unchanged and asserted by test**: `N_NULL_REPLICATES = 10000`, the three
+  `CONTROL_FAMILIES` in order, `MASTER_SEED = 2026017`,
+  `BOOTSTRAP_SEED = 2026018`, 2,000 bootstrap replicates, the matcher, the
+  candidate rule, the one-sample tolerance, the certification definition,
+  `J_null_max[b]` as the per-replicate maximum over the three families, every
+  gate and stopping rule, `rule_fingerprint`, `MODULE_VERSION = 3`, and the
+  preflight and Leg 1 contracts.  A test also asserts that changing the shard
+  size does **not** move `rule_fingerprint`: scheduling is not part of the
+  rule.
+
+  **What was added.**  Replicates are cut into *null shards* of 100, each
+  holding the same replicate range for **all three families**, so
+  `J_null_max` never straddles a boundary.  `apply_control` is already seeded
+  per `(family, replicate)`, so replicate `b` is the same value whoever
+  computes it and whenever — sharding decides only who computes it.  Shards
+  are immutable resume artifacts (never model checkpoints; no trained state
+  exists here) and an existing file is never overwritten.  A shard is reused
+  only after its own digest verifies *and* its identity matches: runner
+  version, split, families, master seed, rule fingerprint, code SHA-256 and a
+  preflight-derived input digest.  Each shard also records replicate range,
+  worker count and git commit; `worker_count` is deliberately outside the
+  digest so one worker and two produce byte-identical shards.  Execution uses
+  `ProcessPoolExecutor` with a default of two workers, and the final arrays
+  are assembled sorted by `(family, replicate)`, so neither completion order
+  nor worker count can reach the numbers.
+
+  `finalize_null_shards()` is the only route to the arrays and STOPs on a
+  missing, duplicated or overlapping replicate, a failed digest, a wrong
+  `j_null_max`, or any mixture of fingerprint, code hash or input digest.
+  **Nothing downstream — `null_summary`, the gate decision, the DS2 release —
+  can be built from an incomplete null.**
+
+  **Equivalence, all tested**: sharded equals serial bitwise on a fixed
+  replicate count; one worker equals two, with identical shard digests; shard
+  sizes 1/4/5/12/100 give the same arrays; shards completed in reverse order
+  give the same arrays; an interrupted run resumed gives exactly the
+  uninterrupted arrays; and corrupt, missing, duplicate, overlapping and
+  mixed-identity shards are all refused.  The existing fixtures and the
+  brute-force forced-edge oracle continue to pass.
+
+  Matcher optimisation was explicitly excluded from this work and none was
+  done.  763 assertions pass.  No registered data was executed.
