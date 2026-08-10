@@ -1488,3 +1488,83 @@ Required outputs:
   worker count at this moment is also the cheapest it will ever be — no shard
   had completed, so the resume directory did not yet exist and no computed
   artifact is discarded.
+
+  *Gate 11 measured the wrong statistic; the first DS1 null is superseded.*
+
+  The registered null completed — 3 families x 10,000, all 100 shards — and
+  the decision was `JOIN_UNRESOLVED`, first stopping reason `3_overall_coverage`,
+  failed leg `LEG2_POSITIONAL_JOIN`, 6 of 13 gates passed.  Reading the
+  bootstrap line exposed a defect in gate 11.
+
+  `J_min_TRUE - q95` is `0.15751 - 0.1517 = 0.0058`, but the reported 95% CI
+  was `[0.48239, 0.71952]`.  **The point estimate lay outside its own
+  interval**, which a correctly specified bootstrap cannot produce.  Adding
+  `q95` back gives `[0.634, 0.871]`, an interval around overall coverage
+  `0.75949` — gate 3's value — rather than around `J_min`.
+
+  `record_cluster_bootstrap` resampled records and computed
+  `_ratio(hits, total)` from `per_record_certified`, a per-record
+  **certification rate**.  The spec registers the statistic as
+  `J_min_TRUE - q95(J_null_max)`, and `J_min` is the **minimum over the three
+  per-class correct recalls**.  Pooling is precisely what `J_min` exists to
+  defeat: it hides class-selective loss, so the interval was built on the one
+  quantity the statistic was designed not to be.  The direction is
+  anti-conservative — gate 11 passed on a quantity the spec never defines.
+
+  The decision does not move: gate 3 fails first and first-failure-wins, so
+  `JOIN_UNRESOLVED` stands whatever gate 11 says.  That does not make a false
+  pass acceptable in an immutable bundle.
+
+  Fixed by computing the registered statistic.  `per_record_class_recall`
+  emits `j_min`'s numerators and denominators split by record — pooling them
+  over all records reproduces `j_min` exactly, which is the property that makes
+  them a legitimate bootstrap input — and each replicate now recomputes the
+  three per-class recalls over the resampled records and takes their minimum.
+  The record draws are unchanged: same seed, same `randrange` order, so only
+  the statistic computed from each resample differs.  `finalize_ds1_gate`
+  refuses a true-join result that carries no per-record per-class recall, so
+  the pooled shape cannot reach gate 11 again.  `bootstrap.json` now records
+  `statistic`, so no reader has to infer the quantity from its interval.
+
+  *Why the existing test did not catch it.*  `test_bootstrap_is_reproducible`
+  passed `pooled` as `j_true` — it constructed the point estimate to match the
+  wrong statistic, so "the point lies inside the interval" was satisfied by
+  construction.  A test that adapts its expectation to the implementation
+  tests nothing.  The replacement is an **independent reference**: a
+  beat-level implementation written from the spec sentence, sharing no code
+  with the module beyond the seed, compared **per replicate** across all 200
+  replicates rather than at the interval.  An interval-level check cannot see
+  a wrong per-replicate statistic, which is exactly how this survived.  Two
+  further tests pin it: pooling the per-record per-class counts reproduces
+  `j_min` to 1e-12, and on a fixture where pooled coverage is 0.907 while
+  `J_min` is 0.158 — the DS1 shape — the whole interval must sit below the
+  value the defective implementation produced.
+
+  *What is not relaxed.*  `code_sha256` enters shard identity, so correcting
+  the module invalidates every completed shard and the null must be rerun in
+  full.  That cost is the provenance rule working, not a reason to weaken it,
+  and scoping the hash to "null-relevant code" after seeing results would be
+  the same relaxation-after-the-fact the design forbids.  `rule_fingerprint`
+  is deliberately **unchanged**: the frozen rule's constants did not move, and
+  `MODULE_VERSION` is not bumped for the same reason — the rule was right and
+  the implementation was wrong.  A stale clone is caught instead by the
+  notebook's `NEED_ATTRS` capability guard, extended with the new names.
+
+  *What is preserved.*  The superseded shard directory and run bundle are
+  **not deleted and not rewritten**.  `mark_superseded` adds one immutable
+  `SUPERSEDED.json` carrying `SUPERSEDED_GATE11_IMPLEMENTATION_DEFECT`, the
+  reason, and the producing module's hash
+  `4a3de5e861d9d371439247924a19e81acb3762e065017d6adb1f062a95e054d7`.  The
+  rerun writes to a shard directory keyed by the module hash, so shards from
+  two code versions can never mix.
+
+  *What the rerun must measure, not assume.*  The bootstrap is not on the null
+  generation path, so the family arrays and `J_null_max` **should** reproduce
+  bit for bit.  That is a hypothesis, and `compare_null_shard_sets` is the
+  measurement: per-family exact comparison plus digests and a first-difference
+  index.  If anything differs the result is not accepted and the cause is
+  investigated.  `compare_decisions` builds the before/after gate table from
+  the two stored `decision.json` files.  No expected CI, and no expected
+  decision, is recorded in advance — the decision tree is reapplied to the new
+  run and whatever it returns is the result.  DS2, V10 probabilities and any
+  association analysis remain sealed throughout.
