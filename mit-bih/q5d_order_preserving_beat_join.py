@@ -218,6 +218,24 @@ DECLARED_UNITS: Tuple[str, ...] = (UNIT_SECONDS, UNIT_SAMPLES)
 #: Fields that may never appear in an input offered as a join key.
 BANNED_JOIN_KEYS: Tuple[str, ...] = ("t", "time", "t_seconds", "cumsum_pre")
 
+#: The registered `arm × seed` grid of each results package.  The file set is
+#: **preregistered by name**, never discovered with a glob: a glob would let a
+#: missing or renamed file pass silently, and "whatever happens to be in the
+#: folder" is not a contract.
+V10_RESULT_ARMS: Tuple[str, ...] = ("base", "full", "pwave", "pwave_noc",
+                                    "v8base")
+V9_RESULT_ARMS: Tuple[str, ...] = ("kink", "kink_noctx", "kink_noproto",
+                                   "v8_noc", "v8base")
+RESULT_SEEDS: Tuple[int, ...] = (1000, 1001, 1002, 1003, 1004)
+
+
+def result_expected_files(arms: Sequence[str] = V10_RESULT_ARMS
+                          ) -> Tuple[str, ...]:
+    """`{arm}_s{seed}.npz` for the whole registered grid, in a fixed order."""
+    return tuple(f"{arm}_s{seed}.npz"
+                 for arm in sorted(arms) for seed in sorted(RESULT_SEEDS))
+
+
 #: Keys this module is allowed to pull out of a result NPZ.  The probability
 #: array is not one of them, in any stage.
 RESULT_NPZ_READABLE: Tuple[str, ...] = ("pid",)
@@ -735,20 +753,144 @@ def assert_preflight_passed(report: Mapping[str, object]) -> None:
 #: Every field a preflight freeze must carry before any matching starts.
 PREFLIGHT_FREEZE_FIELDS: Tuple[str, ...] = (
     "ok", "rule_fingerprint", "canonical_mamba", "cache_aggregate",
-    "mitdb_aggregate", "result_contract",
+    "mitdb_aggregate", "cache_ledger_contract", "result_contract",
 )
+
+#: The split whose rows a result NPZ actually holds.  V9/V10 result packages
+#: are DS2 prediction outputs, so a DS1 row contract must never be demanded of
+#: them — one `pid` array cannot satisfy both the DS1 50,551-row ledger and
+#: the DS2 49,289-row ledger, and asking it to would STOP a perfectly good
+#: asset.  DS1 is verified from the cache/ledger side instead.
+RESULT_NPZ_SPLIT = "DS2"
+
+
+def verify_cache_ledger_contract(cache_dir: str,
+                                 approval: Optional[str] = None
+                                 ) -> Dict[str, object]:
+    """DS1 and DS2 record boundaries, proven from the cache `meta.json`.
+
+    This is the DS1 side of the positional contract.  DS1 never gets a result
+    NPZ check because the result packages hold DS2 rows; its row order and
+    boundaries come from the cache, which is what the ledger registers.
+    """
+    require_execution_approval(approval, f"cache ledger at {cache_dir!r}")
+    meta_path = os.path.join(cache_dir, "meta.json")
+    if not os.path.exists(meta_path):
+        return {"ok": False, "problems": [f"cache meta.json missing at "
+                                          f"{meta_path}"], "observed": {}}
+    with open(meta_path, encoding="utf-8") as handle:
+        meta = json.load(handle)
+    observed: Dict[str, Dict[str, int]] = {"DS1": {}, "DS2": {}}
+    for record, entry in meta.items():
+        split = str(entry.get("split", "")).upper()
+        if split in observed:
+            observed[split][str(record)] = int(entry.get("n", -1))
+    boundary = verify_record_boundaries(observed)
+    return {"ok": boundary["ok"], "problems": list(boundary["problems"]),
+            "observed": {s: len(observed[s]) for s in SPLITS},
+            "meta_sha256": sha256_file(meta_path)}
+
+
+def _pid_digest(pid: Sequence[object]) -> str:
+    """Hash the `pid` *content*, independent of the stored dtype.
+
+    Two files holding the same row assignment must produce the same digest
+    even if one saved `int32` and the other `int64`, so the raw buffer is not
+    hashed.
+    """
+    return hashlib.sha256(
+        ",".join(str(int(v)) for v in pid).encode("utf-8")).hexdigest()
+
+
+def verify_result_set_positional_contract(
+        results_dir: str, arms: Sequence[str] = V10_RESULT_ARMS,
+        approval: Optional[str] = None,
+        split: str = RESULT_NPZ_SPLIT) -> Dict[str, object]:
+    """Check the `pid` contract of **every** file in the registered grid.
+
+    One representative file only shows that the producer was *written* to
+    store the same `pid`; it cannot detect a file that was mis-copied, mixed
+    in from another run, or truncated.  Reading `pid` opens no outcome, so
+    checking all 25 is cheap and is the right scope.
+
+    Every file must independently satisfy the registered ledger — total rows,
+    the 22 records in registered order, contiguous per-record blocks, and each
+    record's registered `n` and start — and all files' `pid` digests must be
+    identical.  A missing file, or any file that disagrees, is
+    `JOIN_INPUT_ABSENT` for the **whole set**: dropping the failures and
+    proceeding with the rest is explicitly forbidden, because that would be
+    selecting inputs on the basis of which ones happened to pass.
+    """
+    split = _check_split(split)
+    expected = result_expected_files(arms)
+    require_execution_approval(approval, f"result set at {results_dir!r}")
+
+    files: List[Dict[str, object]] = []
+    problems: List[str] = []
+    digests: Dict[str, List[str]] = {}
+    for name in expected:
+        path = os.path.join(results_dir, name)
+        row: Dict[str, object] = {"name": name, "path": path}
+        if not os.path.exists(path):
+            row["status"] = "MISSING"
+            problems.append(f"{name}: missing from {results_dir}")
+            files.append(row)
+            continue
+        report = verify_result_positional_contract(path, split, approval)
+        arrays = read_result_npz(path, split, ("pid",), approval)
+        digest = _pid_digest(list(arrays["pid"]))
+        row.update({"status": "VERIFIED" if report["ok"] else "CONTRACT_FAIL",
+                    "rows": sum(b["n"] for b in report["blocks"]),
+                    "blocks": len(report["blocks"]),
+                    "pid_sha256": digest})
+        digests.setdefault(digest, []).append(name)
+        if not report["ok"]:
+            problems.extend(f"{name}: {p}" for p in report["problems"])
+        files.append(row)
+
+    if len(digests) > 1:
+        groups = {d[:16]: sorted(names) for d, names in digests.items()}
+        problems.append(
+            f"the {len(expected)} result files do not share one `pid` "
+            f"assignment; digest groups: {groups}")
+
+    return {
+        "ok": not problems,
+        "decision": None if not problems else DECISION_INPUT_ABSENT,
+        "split": split,
+        "directory": results_dir,
+        "arms": sorted(arms),
+        "seeds": list(RESULT_SEEDS),
+        "expected_files": list(expected),
+        "n_expected": len(expected),
+        "n_verified": sum(1 for f in files if f.get("status") == "VERIFIED"),
+        "files": files,
+        "pid_digest": next(iter(digests)) if len(digests) == 1 else None,
+        "problems": problems,
+    }
 
 
 def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
-                    mitdb_dir: str, result_npz: Mapping[str, str],
-                    approval: Optional[str] = None) -> Dict[str, object]:
+                    mitdb_dir: str, results_dir: str,
+                    approval: Optional[str] = None,
+                    result_arms: Sequence[str] = V10_RESULT_ARMS
+                    ) -> Dict[str, object]:
     """Close the whole material-input contract, once, before any matching.
 
     Produces the freeze that :func:`run_join` requires.  It covers everything
-    `JOIN_INPUT_ABSENT` is defined over: the canonical mamba asset resolved by
-    bytes, the V9/V10 cache as a per-file aggregate (not a listing), the raw
-    MIT-BIH source aggregate, and the cache-row -> result-row positional
-    contract proven from `pid` alone.
+    `JOIN_INPUT_ABSENT` is defined over:
+
+    - the canonical mamba asset, resolved by bytes among the Drive copies;
+    - the V9/V10 cache as a per-file aggregate (content, not a listing);
+    - the raw MIT-BIH source aggregate;
+    - **DS1**: record boundaries from the cache `meta.json` against the ledger;
+    - **DS2**: the `pid` positional contract of **all** registered result
+      files, plus the requirement that they share one `pid` assignment.
+
+    The two splits are checked differently on purpose.  The result packages
+    hold DS2 rows, so demanding a DS1 row contract from them would STOP a
+    correct asset; DS1's row order lives in the cache, which is what the
+    ledger registers.
     """
     require_execution_approval(approval, "material-input preflight")
     problems: List[str] = []
@@ -759,18 +901,12 @@ def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
     mitdb = hash_file_set(mitdb_dir, mitdb_expected_files(), approval)
     problems.extend(mitdb["problems"])
 
-    contract: Dict[str, object] = {}
-    for split in SPLITS:
-        path = result_npz.get(split)
-        if not path:
-            problems.append(f"{split}: no result NPZ given for the positional "
-                            f"contract")
-            continue
-        report = verify_result_positional_contract(path, split, approval)
-        contract[split] = {"path": path, "ok": report["ok"],
-                           "problems": report["problems"],
-                           "blocks": len(report["blocks"])}
-        problems.extend(report["problems"])
+    ledger_contract = verify_cache_ledger_contract(cache_dir, approval)
+    problems.extend(ledger_contract["problems"])
+
+    results = verify_result_set_positional_contract(results_dir, result_arms,
+                                                    approval)
+    problems.extend(results["problems"])
 
     return {
         "ok": not problems,
@@ -792,7 +928,8 @@ def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
                             "aggregate": mitdb["aggregate"],
                             "n_files": mitdb["n_files"],
                             "missing": mitdb["missing"], "extra": mitdb["extra"]},
-        "result_contract": contract,
+        "cache_ledger_contract": ledger_contract,
+        "result_contract": results,
     }
 
 
@@ -821,11 +958,29 @@ def verify_preflight_freeze(freeze: Mapping[str, object], mamba_path: str,
             f"{rule_fingerprint()!r}; re-run the preflight under the rule you "
             f"intend to execute")
 
-    contract = dict(freeze.get("result_contract") or {})
-    if not contract or not all(bool(v.get("ok")) for v in contract.values()):
+    ledger_contract = dict(freeze.get("cache_ledger_contract") or {})
+    if not ledger_contract.get("ok"):
         raise Q5DJoinError(
-            f"{DECISION_INPUT_ABSENT}: the cache-row to result-row positional "
-            f"contract is not proven in this freeze: {contract}")
+            f"{DECISION_INPUT_ABSENT}: the DS1/DS2 cache record boundaries are "
+            f"not proven in this freeze: {ledger_contract.get('problems')}")
+
+    contract = dict(freeze.get("result_contract") or {})
+    if not contract.get("ok"):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: the DS2 result positional contract is "
+            f"not proven in this freeze: {contract.get('problems')}")
+    if contract.get("n_verified") != contract.get("n_expected") or \
+            not contract.get("n_expected"):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: the result contract verified "
+            f"{contract.get('n_verified')} of {contract.get('n_expected')} "
+            f"registered files.  Every file in the `arm x seed` grid must "
+            f"pass; using only the ones that happened to pass is forbidden.")
+    if not contract.get("pid_digest"):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: the registered result files do not "
+            f"share one `pid` assignment, so their row identity is not a "
+            f"single contract")
 
     checks: Dict[str, object] = {"reverified": bool(reverify)}
     if not reverify:

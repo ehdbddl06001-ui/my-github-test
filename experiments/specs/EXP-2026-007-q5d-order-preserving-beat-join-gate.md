@@ -957,3 +957,53 @@ Required outputs:
   No threshold, tolerance, gate, statistic, seed or stopping rule changed.
   494 assertions pass, still with no registered artifact opened; the preflight
   bundle is now preserved for a STOP as well as a PASS.
+- 2026-08-10 — **Result-NPZ contract corrected: DS1/DS2 separated, V10 grid
+  checked exhaustively** (Codex review, implemented by Claude Code).
+
+  *The bug.*  The previous preflight demanded a result-NPZ row contract for
+  **both** splits and the notebook pointed both at the same file.  One `pid`
+  array cannot satisfy the DS1 50,551-row ledger and the DS2 49,289-row ledger
+  at once, and V9/V10 result packages are DS2 prediction outputs, so a correct
+  asset would have been STOPped on the DS1 check.  Running the preflight in
+  that state would have produced a `JOIN_INPUT_ABSENT` that said nothing about
+  the data.  Corrected before any Colab run.
+
+  *The corrected contract.*
+
+  - **DS1** does not require a result NPZ at all.  Its record boundaries are
+    proven from the cache `meta.json` against the frozen ledger
+    (`verify_cache_ledger_contract`), which is where DS1's row order actually
+    lives.
+  - **DS2** requires the `pid` contract of **every** file in the registered
+    grid — `{arm}_s{seed}.npz` over the five V10 arms (`base`, `full`,
+    `pwave`, `pwave_noc`, `v8base`) and seeds 1000-1004, 25 files.  Each must
+    independently satisfy the registered ledger: 49,289 rows, the 22 records
+    in registered order, contiguous per-record blocks, and each record's
+    registered `n` and start.
+  - Only `pid` is read.  `prob` stays sealed and `y` is untouched here, so
+    this is a cheap material check that opens no outcome.
+  - Each file's `pid` digest is recorded, and **all 25 must be identical**.
+  - A missing file, a contract failure, or any disagreeing `pid` is
+    `JOIN_INPUT_ABSENT` for the **whole set**.  Proceeding with the files that
+    happened to pass is explicitly refused, in `verify_preflight_freeze` as
+    well as in the report — that would be selecting inputs on the basis of
+    which ones passed.
+  - The file set is **preregistered by name**, not discovered with a glob: a
+    glob cannot notice a file that is absent.
+
+  *Scope.*  V9 arms (`kink`, `kink_noctx`, `kink_noproto`, `v8_noc`,
+  `v8base`) are registered in the module so the same check is available, but
+  the join consumes V10 positional rows only, so the V10 grid is what the
+  preflight checks.  If a later stage consumes V9 results, that stage must run
+  the same 25-file check and additionally require the V9 and V10 `pid` digests
+  to agree; the scope is not widened pre-emptively here.
+
+  *Why exhaustive rather than representative.*  One representative file only
+  shows that the producer was *written* to store the same `pid`.  It cannot
+  detect a file mis-copied, mixed in from another run, or truncated — all
+  file-level accidents, not source-level ones.  A test now reproduces exactly
+  that case: 25 files where one carries a different `pid`, which a
+  representative check passes and the exhaustive check fails.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  531 assertions pass with no registered artifact opened.
