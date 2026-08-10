@@ -1182,3 +1182,27 @@ Required outputs:
 
   No threshold, tolerance, gate, statistic, seed or stopping rule changed.
   639 assertions pass.
+- 2026-08-10 — **A skipped stage may no longer look like a passed stage.**
+
+  The first Leg 1 attempt after the dependency fix printed the Leg 1 rule
+  table and then produced nothing further: `MODE` was still `HASH_PREFLIGHT`,
+  so `if MODE in ("LEG1_REPLAY_AUDIT",) and APPROVAL:` was false and the whole
+  block was skipped in silence.  The cell's output was **indistinguishable
+  from a clean run** — the constants printed, no error appeared.
+
+  That is the most dangerous failure mode this pipeline can have.  Every other
+  guard here is designed so a problem stops the run loudly; a stage that
+  quietly does nothing inverts that, and could be read as "Leg 1 ran and was
+  fine".  Nothing was executed and no wrong result was produced, but the
+  output invited a wrong conclusion.
+
+  Fixed: one `stage_should_run()` helper decides whether a stage runs and
+  **always announces the outcome** — `RUN` with the mode, or `SKIP` with the
+  reason, the exact setting to change, and an explicit warning that the
+  constants printed above it are not results.  Both data stages and the
+  preflight go through it; no cell uses a bare
+  `MODE in (...) and APPROVAL` guard any more.  A test asserts that every cell
+  which opens registered data is behind the announcing helper.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  650 assertions pass.
