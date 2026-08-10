@@ -1383,3 +1383,72 @@ Required outputs:
   the control that would establish it.
 
   834 assertions pass.  `rule_fingerprint` remains byte-identical to `main`.
+- 2026-08-10 — **TRUE join measured on DS1; two control defects found and
+  fixed before the null.**
+
+  *Measured TRUE join* (`20260810T142308_…_true_join_DS1`, stage
+  `TRUE_JOIN_MEASURED` / `DS1_GATE_NOT_RUN`, no verdict written):
+
+  | quantity | value | registered gate |
+  |---|---|---|
+  | overall coverage | 0.7595 | ≥ 0.95 — fails |
+  | N / S / V coverage | 0.8097 / 0.7341 / **0.1578** | each ≥ 0.90 — fails |
+  | `class_coverage_balance` | 0.2077 | ≥ 0.80 — fails |
+  | `record_coverage_balance` | 0.4238 | ≥ 0.80 — fails |
+  | class agreement | 0.99990 | ≥ 0.995 — passes |
+  | `J_min` TRUE | 0.1575 | — |
+  | ambiguous fraction | 0.0118 | — |
+
+  First failure is gate 3, whose registered decision is `JOIN_UNRESOLVED`.
+  The null enters only gates 9-11, so the decision does not depend on it.
+  This is recorded, and it does **not** license skipping the null: the run
+  goes to 3 x 10,000 regardless, because choosing on the strength of the TRUE
+  result is the result-dependent choice the design forbids.
+
+  The shape repeats Q5-B-0 exactly — high precision, insufficient and
+  class-selective recall.  Agreement of 0.99990 says what *is* certified is
+  almost certainly right; `class_coverage_balance` of 0.2077 says the
+  missingness is concentrated, which is what the Q5-B-0-derived gates exist to
+  catch.  V coverage of 0.1578 against N 0.8097 is structured, not noise.  A
+  mechanism consistent with it — not measured, and not acted on: the frozen
+  tolerance absorbs `e_j - e_{j-1}`, the change in detector offset between
+  neighbours, and a PVC's wide abnormal QRS shifts `detect_r()`'s position
+  relative to the annotation, moving both its pre- and post-RR and also
+  perturbing its neighbours' RR.  The tolerance is not widened; that would be
+  relaxation after seeing results.
+
+  *Two defects in the controls, found when DS1_GATE was started.*
+
+  1. **The wrong-record control could not execute at all.**  It deliberately
+     pairs one record's raw sequence with another record's processed rows, so
+     its mamba slice is a different record's length — but `join_split`
+     enforced the registered mamba count unconditionally and raised
+     `DS1 101: mamba slice 1613 != registered 1862`.  A registered control was
+     impossible to run.  Fixed by registering, per family, whether it
+     preserves record length (`CONTROL_PRESERVES_RECORD_LENGTH`) and relaxing
+     the **mamba-side** ledger check for the wrong-record family alone.  The
+     TRUE join still enforces both sides, and the **cache side is enforced
+     always**, including in controls.
+  2. **The Leg 1 class did not travel with the beat.**  `j_min` and
+     `coverage_report` resolved the carried class as
+     `mamba_classes[(record, position)]` — the class of whatever beat
+     *originally* occupied that position.  Under order-shuffle,
+     circular-shift and wrong-record the beat at a position is a different
+     beat, so agreement was scored against the wrong class.  The spec requires
+     the audit symbols to travel with the permuted RR pairs.  The error made
+     the null **lower than it should be** — anti-conservative, the direction
+     that makes TRUE easier to beat.  Fixed by carrying `mamba_aami` on each
+     join-map row (added to the minimum audit fields, so the run bundle now
+     records it) and scoring on the carried class, with the positional lookup
+     kept only as a fallback for callers that supply none.
+
+  Both were invisible to the existing tests because every synthetic record had
+  the same length and the same class profile.  Regression tests now use
+  records of differing length and a permutation whose carried classes all
+  disagree with the positional ones — the second test would score 1.0 under
+  the old code and 0.0 under the corrected one.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed;
+  `rule_fingerprint` remains byte-identical to `main`.  849 assertions pass.
+  **The registered null has not been run**: the first DS1_GATE attempt aborted
+  on defect 1 before completing any shard.
