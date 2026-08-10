@@ -1140,8 +1140,8 @@ def test_execution_barrier_blocks_registered_inputs():
         BJ.open_registered_input(existing, None, "mamba_data")
         check(False, "an existing file must still be refused without approval")
     except BJ.ExecutionNotApprovedError as exc:
-        check("separate user approval" in str(exc),
-              "the refusal names the missing separate approval")
+        check("explicit opt-in" in str(exc),
+              "the refusal names the missing opt-in")
 
     try:
         BJ.open_registered_input(existing, "please", "mamba_data")
@@ -1233,6 +1233,183 @@ def test_cli_refuses_data_modes_and_says_so():
           "the honest decision is JOIN_RESULT_NOT_RUN")
 
 
+def test_frozen_artifact_contract_matches_source():
+    print("artifact contract: quoted from source, not inferred")
+    # mamba: Z(26D) = psa_rel(4)+rr(7)+pw(3)+rhy(5)+ptf2_rel(7), RR_PRE_COL=0
+    check(BJ.MAMBA_FEATS_DIM == 26, "mamba feats is 26-D")
+    check(BJ.MAMBA_RR_BLOCK_START == 4,
+          "the rr block starts after psa_rel(4)")
+    check(BJ.MAMBA_PRE_COLUMN == 4 and BJ.MAMBA_POST_COLUMN == 5,
+          "mamba pre/post RR are Z columns 4 and 5")
+    check(BJ.MAMBA_RR_UNIT == BJ.UNIT_SECONDS,
+          "mamba RR is seconds (np.diff(rpks)/FS)")
+    check(BJ.MAMBA_TOTAL_ROWS == 99871, "mamba has 99,871 rows")
+    check(BJ.MAMBA_ENDPOINT_SEMANTIC == "duplicated",
+          "mamba duplicates its endpoint RR")
+    # cache: rr_features -> [pre, post, pre/local, post/local, pre/avg, ...]
+    check(BJ.CACHE_RR_DIM == 7, "cache rr is 7-D")
+    check(BJ.CACHE_PRE_COLUMN == 0 and BJ.CACHE_POST_COLUMN == 1,
+          "cache pre/post RR are rr columns 0 and 1")
+    check(BJ.CACHE_RR_UNIT == BJ.UNIT_SECONDS,
+          "cache RR is seconds (np.diff(peaks)/fs)")
+    check(BJ.CACHE_ENDPOINT_SEMANTIC == "nan_to_zero",
+          "the cache zeroes its endpoint RR instead of duplicating it")
+    check(BJ.CACHE_ENDPOINT_SEMANTIC != BJ.MAMBA_ENDPOINT_SEMANTIC,
+          "the two endpoint semantics genuinely differ, and are not merged")
+    check(BJ.CACHE_RR_STAGE == "before_boundary_filter"
+          and BJ.MAMBA_RR_STAGE == "after_symbol_and_boundary_filter",
+          "the two RR computation stages differ, and both are recorded")
+    check(BJ.CACHE_MIN_PEAKS == 2 and BJ.MIN_VALID_BEATS == 5,
+          "the two record rules differ (cache 2 peaks, mamba 5 valid beats)")
+    check(BJ.CACHE_MATCH_TOL_SAMPLES == 54,
+          "the detector-to-annotation tolerance is int(0.15*360) = 54")
+    check(BJ.MAMBA_SHA256.startswith("b1c16106"),
+          "the registered mamba SHA-256 is pinned in the module")
+
+
+def test_hash_preflight_stops_and_passes():
+    print("hash preflight: STOP on mismatch, PASS on a clean contract")
+    tmp = tempfile.mkdtemp(prefix="q5d-preflight-")
+    try:
+        good = os.path.join(tmp, "good.bin")
+        with open(good, "wb") as fh:
+            fh.write(b"canonical")
+        digest = BJ.sha256_file(good)
+
+        try:
+            BJ.hash_preflight({"a": good}, None)
+            check(False, "the preflight itself must need the opt-in")
+        except BJ.ExecutionNotApprovedError:
+            check(True, "the preflight needs the execution opt-in")
+
+        ok = BJ.hash_preflight({"a": good}, BJ.EXECUTION_APPROVAL_TOKEN,
+                               {"a": digest})
+        check(ok["ok"] and ok["verified"] == 1, "a matching hash PASSes")
+        BJ.assert_preflight_passed(ok)
+
+        bad = BJ.hash_preflight({"a": good}, BJ.EXECUTION_APPROVAL_TOKEN,
+                                {"a": "0" * 64})
+        check(not bad["ok"], "a mismatching hash STOPs")
+        check(bad["decision"] == BJ.DECISION_INPUT_ABSENT,
+              "the STOP is JOIN_INPUT_ABSENT, not a performance result")
+        try:
+            BJ.assert_preflight_passed(bad)
+            check(False, "a failed preflight must block matching")
+        except BJ.Q5DJoinError as exc:
+            check("no matching may start" in str(exc),
+                  "the failed preflight says matching may not start")
+
+        missing = BJ.hash_preflight({"a": os.path.join(tmp, "nope")},
+                                    BJ.EXECUTION_APPROVAL_TOKEN, {})
+        check(not missing["ok"], "a missing asset STOPs")
+        unregistered = BJ.hash_preflight({"a": good},
+                                         BJ.EXECUTION_APPROVAL_TOKEN, {})
+        check(unregistered["ok"] and unregistered["recorded"] == 1,
+              "an asset with no registered hash is recorded, not failed")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_canonical_mamba_is_resolved_by_bytes():
+    print("three same-size copies: only bytes may pick the canonical one")
+    tmp = tempfile.mkdtemp(prefix="q5d-mamba-")
+    try:
+        copies = []
+        for index in range(3):
+            path = os.path.join(tmp, f"copy{index}.npz")
+            with open(path, "wb") as fh:
+                fh.write(b"same-size-payload-" + str(index).encode())
+            copies.append(path)
+        try:
+            BJ.resolve_canonical_mamba(copies, BJ.EXECUTION_APPROVAL_TOKEN)
+            check(False, "no copy matches the registered hash -> must stop")
+        except BJ.Q5DJoinError as exc:
+            check(BJ.DECISION_INPUT_ABSENT in str(exc),
+                  "zero matches is JOIN_INPUT_ABSENT")
+            check("byte-for-byte" in str(exc),
+                  "the refusal names the byte link")
+
+        original = BJ.MAMBA_SHA256
+        BJ.MAMBA_SHA256 = BJ.sha256_file(copies[1])
+        try:
+            resolved = BJ.resolve_canonical_mamba(
+                copies, BJ.EXECUTION_APPROVAL_TOKEN)
+            check(resolved["canonical"] == copies[1],
+                  "exactly the byte-matching copy is chosen")
+            check(len(resolved["candidates"]) == 3,
+                  "every candidate is reported, not just the winner")
+            duplicated = copies + [copies[1]]
+            try:
+                BJ.resolve_canonical_mamba(duplicated,
+                                           BJ.EXECUTION_APPROVAL_TOKEN)
+                check(False, "two matches must also stop")
+            except BJ.Q5DJoinError:
+                check(True, "an ambiguous match stops instead of picking one")
+        finally:
+            BJ.MAMBA_SHA256 = original
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_loaders_need_the_optin_and_the_ds2_release():
+    print("loaders: opt-in required, DS2 classes double-gated")
+    for call in (
+        lambda: BJ.load_mamba_sequences("/nope.npz"),
+        lambda: BJ.load_cache_sequences("/nope"),
+        lambda: BJ.load_atr_record("/nope", "101"),
+        lambda: BJ.load_cache_classes("/nope", "DS1"),
+        lambda: BJ.run_join("/a", "/b", "/c", "DS1"),
+        lambda: BJ.replay_leg1_split("/nope", "DS1"),
+    ):
+        try:
+            call()
+            check(False, "a loader must not run without the opt-in")
+        except BJ.ExecutionNotApprovedError:
+            check(True, "loader refuses without the opt-in")
+    try:
+        BJ.load_cache_classes("/nope", "DS2", BJ.EXECUTION_APPROVAL_TOKEN)
+        check(False, "DS2 classes need their own release")
+    except BJ.ExecutionNotApprovedError as exc:
+        check("select the join rule" in str(exc),
+              "DS2 classes stay sealed until the DS1 freeze")
+
+
+def test_contiguous_blocks_and_positional_contract():
+    print("pid blocks: contiguous per record, matched against the ledger")
+    blocks = BJ._contiguous_blocks(["100", "100", "103", "103", "103", "105"])
+    check(blocks == [("100", 0, 2), ("103", 2, 3), ("105", 5, 1)],
+          "run-length blocks are (label, start, length)")
+    split_blocks = BJ._contiguous_blocks(["100", "103", "100"])
+    labels = [b[0] for b in split_blocks]
+    check(len(labels) != len(set(labels)),
+          "a record split across two blocks is detectable, not silently sorted")
+
+
+def test_attach_leg1_identity_requires_leg1_to_pass():
+    print("Leg 1 identity attaches only when Leg 1 already agrees on length")
+    samples = [200 + 300 * k for k in range(6)]
+    leg1 = BJ.replay_leg1_record("101", "DS1",
+                                 [(p, "N") for p in samples], samples[-1] + 400)
+    mamba = seq("101", "mamba", leg1.pre_samples, leg1.post_samples)
+    merged = BJ.attach_leg1_identity(mamba, leg1)
+    check(all(r["raw_r_sample"] == samples[i]
+              for i, r in enumerate(merged.rows)),
+          "each mamba row carries its raw R sample")
+    check(all("aami" in r for r in merged.rows),
+          "the AAMI class rides along for the audit")
+    check(merged.pre_samples == mamba.pre_samples,
+          "attaching identity does not touch the RR the matcher sees")
+    short = seq("101", "mamba", leg1.pre_samples[:-1], leg1.post_samples[:-1])
+    try:
+        BJ.attach_leg1_identity(short, leg1)
+        check(False, "a length disagreement must stop")
+    except BJ.Q5DJoinError as exc:
+        check("Leg 1 must pass before Leg 2" in str(exc),
+              "the refusal says Leg 1 must pass first")
+
+
 def test_module_reaches_no_outcome():
     print("textual guard: this module cannot reach a probability or a fit")
     report = BJ.assert_implementation_only()
@@ -1303,7 +1480,7 @@ def test_notebook_contract():
           "the first screen says IMPLEMENTED — FULL RESULT NOT RUN")
     check("실제 실행 승인" in head or "execution approval" in head.lower(),
           "the first screen separates implementation from execution approval")
-    check("결과가 없다" in head or "no actual result" in head.lower(),
+    check("미실행 상태로 커밋" in head or "not run" in head.lower(),
           "the first screen says this notebook holds no result")
 
     check('MODE = "DESIGN"' in joined, "the default mode assignment is DESIGN")
@@ -1314,9 +1491,25 @@ def test_notebook_contract():
     for token in BJ.FORBIDDEN_TOKENS:
         check(token.lower() not in joined.lower(),
               f"no code cell reaches '{token}'")
-    check(BJ.EXECUTION_APPROVAL_FLAG not in joined
-          and BJ.EXECUTION_APPROVAL_TOKEN not in joined,
-          "the notebook does not use the execution-approval token")
+    check(BJ.EXECUTION_APPROVAL_TOKEN not in joined,
+          "the notebook never hard-codes the approval token literal")
+    check("OPEN_REGISTERED_DATA = False" in joined,
+          "opening registered data is an explicit opt-in, defaulted to False")
+    # The preflight must gate the join, not merely precede it in the text.
+    preflight_at = min((i for i, c in enumerate(cells)
+                        if c["cell_type"] == "code"
+                        and "assert_preflight_passed" in "".join(c["source"])),
+                       default=10 ** 6)
+    join_at = min((i for i, c in enumerate(cells)
+                   if c["cell_type"] == "code"
+                   and "run_join" in "".join(c["source"])), default=-1)
+    check(preflight_at < join_at,
+          f"the hash preflight cell ({preflight_at}) runs before the join "
+          f"cell ({join_at})")
+    check("resolve_canonical_mamba" in joined,
+          "the notebook resolves the canonical mamba copy by bytes")
+    check("assert not os.path.exists(RUN_DIR)" in joined,
+          "the notebook refuses to overwrite an existing run bundle")
 
     sections = "\n".join(markdown)
     for heading in ("환경 및 승인 gate", "입력 asset/hash 확인",
@@ -1405,6 +1598,12 @@ def main() -> int:
         test_stratum_report_covers_both_strata,
         test_join_map_schema_seals_the_probability,
         test_bundle_contract_and_serialisers,
+        test_frozen_artifact_contract_matches_source,
+        test_hash_preflight_stops_and_passes,
+        test_canonical_mamba_is_resolved_by_bytes,
+        test_loaders_need_the_optin_and_the_ds2_release,
+        test_contiguous_blocks_and_positional_contract,
+        test_attach_leg1_identity_requires_leg1_to_pass,
         test_execution_barrier_blocks_registered_inputs,
         test_probability_is_sealed_in_every_stage,
         test_ds2_labels_need_the_frozen_release,

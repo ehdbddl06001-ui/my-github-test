@@ -795,3 +795,77 @@ Required outputs:
   unexecuted, every output cell empty, no fabricated result).  Claude's
   qualification files (`mit-bih/q5d_qualify_*`, `notebooks/quest53_*`,
   `research/PLAN_2026-08-10_*`) were not touched.
+- 2026-08-10 — **Execution approval, artifact loaders and hash preflight**
+  (Claude Code).
+
+  *Approval.* The user gave «Status boundary» step 4: executing the join on
+  the registered data is approved, and asked that the Colab notebook run
+  **hash preflight → STOP/PASS → join** in that order.  Still **not** approved
+  and still sealed: V10 probability values, the association analysis, S PR-AUC
+  and any model training.  DS2 per-beat class labels remain behind the
+  separate post-freeze support-gate release.  Opening a registered artifact
+  stays an explicit opt-in in code (`OPEN_REGISTERED_DATA`, default `False`)
+  so no stray run touches the data, and `assert_preflight_passed()` blocks
+  matching until the material contract closes.
+
+  *Two RR semantics, frozen from source rather than assumed.*  The spec
+  requires both sides' units and semantics to be frozen from source before any
+  match.  `mit-bih/lineage/build_penult.py` fixes the mamba side:
+  `Z(26D) = psa_rel(4) + rr(7) + pw(3) + rhy(5) + ptf2_rel(7)` with
+  `RR_PRE_COL = 0`, so pre/post RR are Z columns **4 and 5**, in seconds.  The
+  V9/V10 side was **not** in this repository, so `kinkmap/data.py` and
+  `kinkmap/frontend.py` were read from the registered source package: the
+  cache stores `rr` as `rr_features(peaks)[idx]`, 7 columns,
+  `[pre, post, pre/local, post/local, pre/avg, post-pre, lvar]`, in seconds,
+  so pre/post are columns **0 and 1**.
+
+  Two differences between the lineages are now recorded as constants rather
+  than discovered later:
+
+  1. **Endpoint semantics differ.**  mamba *duplicates* the first pre-RR and
+     last post-RR (so first/last beats are eligible).  `rr_features` sets them
+     to `np.nan` and then `nan_to_num`s them to **`0.0`** — not duplicated.  A
+     stored `0.0` is therefore real data meaning "no neighbour", and such a
+     row simply forms no candidate edge and stays `UNMATCHED`.  That is the
+     honest outcome; nothing is imputed to close the gap.
+  2. **RR is computed at different stages.**  mamba computes RR *after* the
+     symbol and boundary filters, on annotation positions.  V9/V10 computes
+     `Fr = rr_features(peaks)` on the **full** matched-peak array and only
+     then selects `Fr[idx]` with the boundary-valid rows, so a cache row can
+     carry an RR whose neighbour was boundary-cut.  The record rules also
+     differ (`len(peaks) < 2` for the cache versus mamba's five valid beats).
+
+  This also makes explicit what the frozen one-sample tolerance absorbs: a
+  cache RR differs from a mamba RR by `e_j - e_{j-1}`, the *change* in
+  detector offset between neighbouring beats, not the offset itself.  The
+  tolerance is not widened on this basis; if the offsets move faster than one
+  sample, coverage falls and the registered answer is `JOIN_UNRESOLVED`.
+
+  *Deviation recorded — the ledger's `mamba_start` is a different enumeration.*
+  The spec builds `mamba_start` "by cumulative addition in the same frozen
+  split order".  `build_penult.py` and `make_colab_data.py` both enumerate
+  `sorted(glob(cache/*.npz))` over **all 44 records at once**, so the actual
+  global row order inside `mamba_data.npz` is `100, 101, 103, 105, …` with DS1
+  and DS2 **interleaved**, not DS1-block-then-DS2-block.  The cache and result
+  starts are unaffected — `data.py::load_split` sorts *within* a split, which
+  is exactly the registered ledger order.  So only the mamba audit offset is
+  involved.  The implementation therefore measures mamba record slices from
+  the stored `pid` array (contiguity is checked, non-contiguity is an error),
+  gates on the ledger's per-record **counts**, which the ledger does fix, and
+  reports both the observed file offset and the ledger's split-order start.
+  No scientific rule, tolerance, gate, statistic or stopping rule changed;
+  this is an audit-field discrepancy in the spec's ledger construction and is
+  flagged here for Codex.
+
+  *Three material-contract gaps the preflight now decides.*  `mamba_data.npz`
+  had never been compared against its registered SHA-256 `b1c16106…`, and
+  Drive holds **three same-size copies** (two created 2026-08-10), so size
+  proves nothing; `resolve_canonical_mamba()` accepts exactly one byte-match
+  and stops on zero or on ambiguity.  The V9/V10 cache hashes were never
+  computed, and the Drive copy of `cache_v15b/mitdb/meta.json` was never
+  confirmed.  All of this is `JOIN_INPUT_ABSENT` territory — a failed input
+  contract, never a disappointing join — and it is decided *before* matching.
+
+  *Verification.*  446 assertions pass with no registered artifact opened.
+  The 21 synthetic fixtures still produce zero false certified pairs, and the
+  brute-force forced-edge oracle still agrees on every random record.
