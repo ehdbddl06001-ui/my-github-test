@@ -1312,17 +1312,17 @@ def test_hash_preflight_stops_and_passes():
 
 
 def test_canonical_mamba_is_resolved_by_bytes():
-    print("three same-size copies: only bytes may pick the canonical one")
+    print("three copies: bytes decide, and duplicates are not an ambiguity")
     tmp = tempfile.mkdtemp(prefix="q5d-mamba-")
     try:
-        copies = []
+        distinct = []
         for index in range(3):
             path = os.path.join(tmp, f"copy{index}.npz")
             with open(path, "wb") as fh:
-                fh.write(b"same-size-payload-" + str(index).encode())
-            copies.append(path)
+                fh.write(b"payload-" + str(index).encode())
+            distinct.append(path)
         try:
-            BJ.resolve_canonical_mamba(copies, BJ.EXECUTION_APPROVAL_TOKEN)
+            BJ.resolve_canonical_mamba(distinct, BJ.EXECUTION_APPROVAL_TOKEN)
             check(False, "no copy matches the registered hash -> must stop")
         except BJ.Q5DJoinError as exc:
             check(BJ.DECISION_INPUT_ABSENT in str(exc),
@@ -1330,27 +1330,328 @@ def test_canonical_mamba_is_resolved_by_bytes():
             check("byte-for-byte" in str(exc),
                   "the refusal names the byte link")
 
+        # Two byte-identical copies plus one different: the registered path
+        # wins and the other verified copy is recorded, not rejected.
+        registered = os.path.join(tmp, "mitbih", "mamba_data.npz")
+        os.makedirs(os.path.dirname(registered), exist_ok=True)
+        duplicate = os.path.join(tmp, "elsewhere.npz")
+        for path in (registered, duplicate):
+            with open(path, "wb") as fh:
+                fh.write(b"the-canonical-bytes")
         original = BJ.MAMBA_SHA256
-        BJ.MAMBA_SHA256 = BJ.sha256_file(copies[1])
+        BJ.MAMBA_SHA256 = BJ.sha256_file(registered)
         try:
             resolved = BJ.resolve_canonical_mamba(
-                copies, BJ.EXECUTION_APPROVAL_TOKEN)
-            check(resolved["canonical"] == copies[1],
-                  "exactly the byte-matching copy is chosen")
-            check(len(resolved["candidates"]) == 3,
-                  "every candidate is reported, not just the winner")
-            duplicated = copies + [copies[1]]
-            try:
-                BJ.resolve_canonical_mamba(duplicated,
-                                           BJ.EXECUTION_APPROVAL_TOKEN)
-                check(False, "two matches must also stop")
-            except BJ.Q5DJoinError:
-                check(True, "an ambiguous match stops instead of picking one")
+                [duplicate, registered, distinct[0]],
+                BJ.EXECUTION_APPROVAL_TOKEN)
+            check(resolved["canonical"] == registered,
+                  "the registered copy is preferred among verified matches")
+            check(resolved["registered_copy_present"],
+                  "the report says the registered copy was present")
+            check(resolved["byte_identical_duplicates"] == [duplicate],
+                  "the other verified copy is a byte_identical_duplicate")
+            roles = {r["path"]: r.get("role") for r in resolved["candidates"]}
+            check(roles[registered] == "canonical", "roles name the canonical")
+            check(roles[duplicate] == "byte_identical_duplicate",
+                  "roles name the duplicate rather than failing on it")
+            check(roles[distinct[0]].startswith("excluded"),
+                  "a non-matching copy is excluded and recorded")
+
+            # No registered copy, only a verified duplicate: still usable,
+            # but the manifest must say the registered one was absent.
+            fallback = BJ.resolve_canonical_mamba(
+                [duplicate], BJ.EXECUTION_APPROVAL_TOKEN)
+            check(fallback["canonical"] == duplicate,
+                  "a verified duplicate is usable when the registered copy "
+                  "is absent")
+            check(not fallback["registered_copy_present"],
+                  "and that absence is recorded in the report")
         finally:
             BJ.MAMBA_SHA256 = original
     finally:
         import shutil
         shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_file_set_hashing_reads_content():
+    print("cache hashing: file bytes, not a filename listing")
+    tmp = tempfile.mkdtemp(prefix="q5d-fileset-")
+    try:
+        names = ("meta.json", "101.npz")
+        for name in names:
+            with open(os.path.join(tmp, name), "wb") as fh:
+                fh.write(b"original-" + name.encode())
+        first = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(first["ok"] and first["n_files"] == 2, "a complete set verifies")
+        check(all(f["sha256"] for f in first["files"]),
+              "every file gets its own SHA-256")
+
+        # Same names, different content -> the aggregate must move.  This is
+        # the exact failure a listing hash would miss.
+        with open(os.path.join(tmp, "101.npz"), "wb") as fh:
+            fh.write(b"TAMPERED")
+        second = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(second["aggregate"] != first["aggregate"],
+              "changing a file's content changes the aggregate")
+        check(sorted(f["name"] for f in second["files"]) ==
+              sorted(f["name"] for f in first["files"]),
+              "…even though the filename listing is identical")
+
+        with open(os.path.join(tmp, "surprise.npz"), "wb") as fh:
+            fh.write(b"x")
+        third = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not third["ok"] and third["extra"] == ["surprise.npz"],
+              "an unexpected file in a registered directory fails the set")
+        os.remove(os.path.join(tmp, "surprise.npz"))
+        os.remove(os.path.join(tmp, "101.npz"))
+        fourth = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not fourth["ok"] and fourth["missing"] == ["101.npz"],
+              "a missing expected file fails the set")
+        try:
+            BJ.hash_file_set(tmp, names, None)
+            check(False, "file-set hashing needs the opt-in")
+        except BJ.ExecutionNotApprovedError:
+            check(True, "file-set hashing needs the opt-in")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    check(len(BJ.cache_expected_files()) == 45,
+          "the cache set is meta.json + 44 record npz")
+    check("meta.json" in BJ.cache_expected_files(),
+          "meta.json is part of the hashed cache set")
+    check(len(BJ.mitdb_expected_files()) == 44 * 3,
+          "the MIT-BIH set is .dat/.hea/.atr for all 44 records")
+
+
+def _fake_freeze(**overrides):
+    freeze = {
+        "ok": True,
+        "problems": [],
+        "rule_fingerprint": BJ.rule_fingerprint(),
+        "canonical_mamba": {"path": "/m.npz", "sha256": "a" * 64},
+        "cache_aggregate": {"directory": "/c", "aggregate": "b" * 64},
+        "mitdb_aggregate": {"directory": "/d", "aggregate": "c" * 64},
+        "result_contract": {"DS1": {"ok": True}, "DS2": {"ok": True}},
+    }
+    freeze.update(overrides)
+    return freeze
+
+
+def test_run_join_requires_a_passing_preflight():
+    print("run_join cannot be reached with the token alone")
+    for label, freeze in (
+        ("missing fields", {"ok": True}),
+        ("failed preflight", _fake_freeze(ok=False,
+                                          problems=["cache aggregate"])),
+        ("foreign rule", _fake_freeze(rule_fingerprint="0" * 64)),
+        ("unproven result contract",
+         _fake_freeze(result_contract={"DS1": {"ok": False}})),
+        ("empty result contract", _fake_freeze(result_contract={})),
+    ):
+        try:
+            BJ.verify_preflight_freeze(freeze, "/m.npz", "/c", "/d",
+                                       BJ.EXECUTION_APPROVAL_TOKEN,
+                                       reverify=False)
+            check(False, f"{label} must be refused")
+        except BJ.Q5DJoinError:
+            check(True, f"{label} is refused")
+    ok = BJ.verify_preflight_freeze(_fake_freeze(), "/m.npz", "/c", "/d",
+                                    BJ.EXECUTION_APPROVAL_TOKEN,
+                                    reverify=False)
+    check(ok["reverified"] is False, "skipping re-verification is explicit")
+
+    # The whole point: a valid token plus no freeze must not run.
+    try:
+        BJ.run_join("/a", "/b", "/c", "DS1", {},
+                    BJ.EXECUTION_APPROVAL_TOKEN, reverify=False)
+        check(False, "run_join with an empty freeze must stop")
+    except BJ.Q5DJoinError as exc:
+        check("preflight freeze is missing" in str(exc),
+              "run_join stops on an incomplete freeze before reading anything")
+    check("preflight" in BJ.run_join.__doc__,
+          "run_join documents the freeze as required, not advisory")
+
+
+def test_preflight_reverification_catches_drift():
+    print("re-verification compares the freeze against the files on disk now")
+    tmp = tempfile.mkdtemp(prefix="q5d-drift-")
+    try:
+        mamba = os.path.join(tmp, "m.npz")
+        with open(mamba, "wb") as fh:
+            fh.write(b"mamba-bytes")
+        cache = os.path.join(tmp, "cache")
+        mitdb = os.path.join(tmp, "mitdb")
+        for directory, names in ((cache, BJ.cache_expected_files()),
+                                 (mitdb, BJ.mitdb_expected_files())):
+            os.makedirs(directory, exist_ok=True)
+            for name in names:
+                with open(os.path.join(directory, name), "wb") as fh:
+                    fh.write(name.encode())
+        freeze = _fake_freeze(
+            canonical_mamba={"path": mamba, "sha256": BJ.sha256_file(mamba)},
+            cache_aggregate=BJ.hash_file_set(cache, BJ.cache_expected_files(),
+                                             BJ.EXECUTION_APPROVAL_TOKEN),
+            mitdb_aggregate=BJ.hash_file_set(mitdb, BJ.mitdb_expected_files(),
+                                             BJ.EXECUTION_APPROVAL_TOKEN))
+        out = BJ.verify_preflight_freeze(freeze, mamba, cache, mitdb,
+                                         BJ.EXECUTION_APPROVAL_TOKEN)
+        check(out["reverified"] and out["mamba_sha256"],
+              "an unchanged tree re-verifies")
+
+        with open(os.path.join(cache, "101.npz"), "wb") as fh:
+            fh.write(b"CHANGED")
+        try:
+            BJ.verify_preflight_freeze(freeze, mamba, cache, mitdb,
+                                       BJ.EXECUTION_APPROVAL_TOKEN)
+            check(False, "a changed cache file must stop the run")
+        except BJ.Q5DJoinError as exc:
+            check("aggregate changed" in str(exc),
+                  "the drift is named as an aggregate change")
+
+        with open(os.path.join(cache, "101.npz"), "wb") as fh:
+            fh.write(b"101.npz")
+        with open(mamba, "wb") as fh:
+            fh.write(b"swapped")
+        try:
+            BJ.verify_preflight_freeze(freeze, mamba, cache, mitdb,
+                                       BJ.EXECUTION_APPROVAL_TOKEN)
+            check(False, "a swapped mamba file must stop the run")
+        except BJ.Q5DJoinError as exc:
+            check("now hashes to" in str(exc),
+                  "the swapped canonical asset is caught by hash")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_ds2_release_needs_a_verified_ds1_freeze():
+    print("DS2 labels open only from a verified frozen DS1 bundle")
+    tmp = tempfile.mkdtemp(prefix="q5d-ds2-")
+    try:
+        freeze = _fake_freeze()
+        try:
+            BJ.release_ds2_support_gate(tmp, freeze,
+                                        BJ.EXECUTION_APPROVAL_TOKEN)
+            check(False, "an empty bundle must not release DS2")
+        except BJ.Q5DJoinError as exc:
+            check("incomplete" in str(exc),
+                  "a bundle without decision/manifest/null is refused")
+
+        def write(decision=None, manifest=None, null=None):
+            payloads = {
+                "decision.json": decision if decision is not None else {
+                    "decision": BJ.DECISION_IDENTIFIABLE,
+                    "rule_fingerprint": BJ.rule_fingerprint()},
+                "manifest.json": manifest if manifest is not None else {
+                    "rule_fingerprint": BJ.rule_fingerprint(),
+                    "code": {"sha256": "d" * 64},
+                    "preflight": {k: freeze[k] for k in
+                                  BJ.PREFLIGHT_FREEZE_FIELDS}},
+                "null_summary.json": null if null is not None else {
+                    "rule_fingerprint": BJ.rule_fingerprint(),
+                    "master_seed": BJ.MASTER_SEED,
+                    "j_null_max": [0.1, 0.2]},
+            }
+            for name, payload in payloads.items():
+                with open(os.path.join(tmp, name), "w", encoding="utf-8") as fh:
+                    json.dump(payload, fh)
+
+        write()
+        token = BJ.release_ds2_support_gate(tmp, freeze,
+                                            BJ.EXECUTION_APPROVAL_TOKEN)
+        check(token == BJ.DS2_LABEL_RELEASE_TOKEN,
+              "a complete, agreeing DS1 freeze releases DS2")
+
+        for label, kwargs in (
+            ("a DS1 run that did not qualify",
+             {"decision": {"decision": BJ.DECISION_UNRESOLVED,
+                           "rule_fingerprint": BJ.rule_fingerprint()}}),
+            ("a foreign rule fingerprint",
+             {"decision": {"decision": BJ.DECISION_IDENTIFIABLE,
+                           "rule_fingerprint": "0" * 64}}),
+            ("a null under the wrong seed",
+             {"null": {"rule_fingerprint": BJ.rule_fingerprint(),
+                       "master_seed": 1, "j_null_max": [0.1]}}),
+            ("a null with no replicates",
+             {"null": {"rule_fingerprint": BJ.rule_fingerprint(),
+                       "master_seed": BJ.MASTER_SEED, "j_null_max": []}}),
+            ("a manifest that froze no inputs",
+             {"manifest": {"rule_fingerprint": BJ.rule_fingerprint(),
+                           "code": {"sha256": "d" * 64}}}),
+            ("a manifest with no code hash",
+             {"manifest": {"rule_fingerprint": BJ.rule_fingerprint(),
+                           "code": {},
+                           "preflight": {k: freeze[k] for k in
+                                         BJ.PREFLIGHT_FREEZE_FIELDS}}}),
+        ):
+            write(**kwargs)
+            try:
+                BJ.release_ds2_support_gate(tmp, freeze,
+                                            BJ.EXECUTION_APPROVAL_TOKEN)
+                check(False, f"{label} must not release DS2")
+            except BJ.Q5DJoinError:
+                check(True, f"{label} does not release DS2")
+
+        # Different inputs between the DS1 freeze and this run.
+        write()
+        drifted = _fake_freeze(cache_aggregate={"directory": "/c",
+                                                "aggregate": "z" * 64})
+        try:
+            BJ.release_ds2_support_gate(tmp, drifted,
+                                        BJ.EXECUTION_APPROVAL_TOKEN)
+            check(False, "different inputs must not release DS2")
+        except BJ.Q5DJoinError as exc:
+            check("differs between the DS1 freeze" in str(exc),
+                  "input drift between DS1 and DS2 blocks the release")
+
+        write()
+        try:
+            BJ.release_ds2_support_gate(tmp, freeze, None)
+            check(False, "the release itself needs the opt-in")
+        except BJ.ExecutionNotApprovedError:
+            check(True, "the release needs the opt-in")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_ds2_cannot_run_standalone():
+    print("DS2 may not be joined without a minted release")
+    try:
+        BJ.run_join("/a", "/b", "/c", "DS2", _fake_freeze(),
+                    BJ.EXECUTION_APPROVAL_TOKEN, None)
+        check(False, "DS2 without a release must stop")
+    except BJ.ExecutionNotApprovedError as exc:
+        check("standalone" in str(exc),
+              "the refusal says DS2 may not be run standalone")
+
+
+def test_both_mamba_coordinates_are_reported():
+    print("mamba_split_start vs mamba_file_row: two enumerations, kept apart")
+    check("mamba_file_row" in BJ.JOIN_MAP_FIELDS,
+          "the join map carries the measured physical offset")
+    check("mamba_global_row" in BJ.JOIN_MAP_FIELDS,
+          "the join map still carries the ledger's logical coordinate")
+    led = BJ.ledger_record("DS1", "101")
+    check(led.mamba_split_start == led.mamba_start,
+          "mamba_split_start names the registered logical coordinate")
+    check("mamba_split_start" in led.as_dict(),
+          "the ledger dict reports the logical coordinate under its own name")
+    samples = [200 + k for k in BJ._walk((300, 313, 292, 325, 285))]
+    pre, post = BJ._rr_from_samples(samples)
+    mamba = seq("101", "mamba", pre, post,
+                rows=[{"mamba_record_row": k, "mamba_file_row": 5000 + k}
+                      for k in range(len(pre))])
+    cache = seq("101", "cache", pre, post)
+    _r, rows = BJ.join_record(mamba, cache, led)
+    certified = [r for r in rows if r["status"] == BJ.STATUS_CERTIFIED]
+    check(all(r["mamba_file_row"] == 5000 + r["mamba_record_row"]
+              for r in certified),
+          "the measured file offset survives into the join map")
+    check(all(r["mamba_global_row"] == led.mamba_start + r["mamba_record_row"]
+              for r in certified),
+          "the ledger coordinate is reported alongside, not instead")
 
 
 def test_loaders_need_the_optin_and_the_ds2_release():
@@ -1360,7 +1661,7 @@ def test_loaders_need_the_optin_and_the_ds2_release():
         lambda: BJ.load_cache_sequences("/nope"),
         lambda: BJ.load_atr_record("/nope", "101"),
         lambda: BJ.load_cache_classes("/nope", "DS1"),
-        lambda: BJ.run_join("/a", "/b", "/c", "DS1"),
+        lambda: BJ.run_join("/a", "/b", "/c", "DS1", _fake_freeze()),
         lambda: BJ.replay_leg1_split("/nope", "DS1"),
     ):
         try:
@@ -1506,8 +1807,18 @@ def test_notebook_contract():
     check(preflight_at < join_at,
           f"the hash preflight cell ({preflight_at}) runs before the join "
           f"cell ({join_at})")
-    check("resolve_canonical_mamba" in joined,
-          "the notebook resolves the canonical mamba copy by bytes")
+    check("build_preflight" in joined,
+          "the notebook closes the whole input contract in one freeze")
+    check(joined.count("mamba_data.npz") >= 3,
+          "the notebook compares all three mamba copies, not just one")
+    check("release_ds2_support_gate" in joined,
+          "the DS2 release is minted from a frozen DS1 bundle, not from MODE")
+    check("DS1_FROZEN_BUNDLE" in joined,
+          "the notebook names the DS1 frozen bundle DS2 must agree with")
+    check("PREFLIGHT, APPROVAL" in joined,
+          "the join receives the preflight freeze as a required input")
+    check("preflight.json" in joined,
+          "the preflight result is preserved as a bundle, PASS or STOP")
     check("assert not os.path.exists(RUN_DIR)" in joined,
           "the notebook refuses to overwrite an existing run bundle")
 
@@ -1601,6 +1912,12 @@ def main() -> int:
         test_frozen_artifact_contract_matches_source,
         test_hash_preflight_stops_and_passes,
         test_canonical_mamba_is_resolved_by_bytes,
+        test_file_set_hashing_reads_content,
+        test_run_join_requires_a_passing_preflight,
+        test_preflight_reverification_catches_drift,
+        test_ds2_release_needs_a_verified_ds1_freeze,
+        test_ds2_cannot_run_standalone,
+        test_both_mamba_coordinates_are_reported,
         test_loaders_need_the_optin_and_the_ds2_release,
         test_contiguous_blocks_and_positional_contract,
         test_attach_leg1_identity_requires_leg1_to_pass,

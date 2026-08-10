@@ -233,6 +233,12 @@ RESULT_NPZ_SEALED: Tuple[str, ...] = ("prob",)
 MAMBA_SHA256 = ("b1c16106216522cb21291f990e7ab0e7f8dfd8135406db322f41cda3687"
                 "f6c05")
 MAMBA_BYTES = 204504913
+#: The registered copy's Drive id and path.  Two byte-identical duplicates
+#: exist (created 2026-08-10); when several copies verify, the registered one
+#: is preferred and the others are recorded as duplicates, not treated as an
+#: ambiguity.
+MAMBA_REGISTERED_DRIVE_ID = "1p3HvC_bnbiQlEanFOVIvVdejy60W0tho"
+MAMBA_REGISTERED_PATH = "mitbih/mamba_data.npz"
 MAMBA_TOTAL_ROWS = 99871
 MAMBA_KEYS: Tuple[str, ...] = ("beat", "ref", "feats", "y", "pid", "t")
 #: `Z(26D) = psa_rel(4) + rr(7) + pw(3) + rhy(5) + ptf2_rel(7)`
@@ -395,7 +401,8 @@ BUNDLE_FILES: Tuple[str, ...] = (
 #: :func:`validate_join_map_row` rejects one if it ever appears.
 JOIN_MAP_FIELDS: Tuple[str, ...] = (
     "split", "record", "raw_atr_ordinal", "raw_r_sample", "mamba_record_row",
-    "mamba_global_row", "cache_record_row", "result_global_row", "status",
+    "mamba_global_row", "mamba_file_row", "cache_record_row",
+    "result_global_row", "status",
     "pre_rr_difference_samples", "post_rr_difference_samples", "failed_leg",
     "drop_or_unmatched_reason",
 )
@@ -533,34 +540,127 @@ def read_result_npz(path: str, split: str, keys: Sequence[str],
 # Hash preflight — the material-input contract, checked before any matching
 # ─────────────────────────────────────────────────────────────────────────────
 def resolve_canonical_mamba(candidates: Sequence[str],
-                            approval: Optional[str] = None) -> Dict[str, object]:
-    """Pick the one `mamba_data.npz` whose bytes match the registered hash.
+                            approval: Optional[str] = None,
+                            registered_path: Optional[str] = None
+                            ) -> Dict[str, object]:
+    """Pick the canonical `mamba_data.npz` among same-size Drive copies.
 
-    Three same-size copies exist in Drive and two of them were created after
-    the lineage was registered, so "same size" proves nothing.  This hashes
-    each candidate and accepts only an exact match to :data:`MAMBA_SHA256`.
-    Ambiguity is resolved by bytes or not at all — never by picking whichever
-    copy is convenient or produces a better join.
+    Three same-size copies exist and two were created after the lineage was
+    registered, so size proves nothing — only bytes do.
+
+    The rule, corrected after Codex review:
+
+    - **zero** candidates matching :data:`MAMBA_SHA256` -> `JOIN_INPUT_ABSENT`;
+    - **one or more** matches -> they are byte-identical to the registered
+      asset by definition, which is *not* an identity ambiguity.  Prefer the
+      copy at the registered path (Drive id :data:`MAMBA_REGISTERED_DRIVE_ID`)
+      when it is among them; otherwise take the first match in the given order
+      and record that the registered copy was absent, so the manifest says
+      which physical file was used;
+    - a same-size candidate whose hash differs is excluded and recorded.
+
+    An earlier version stopped when two candidates matched.  That was wrong:
+    two verified byte-identical copies carry the same content, and refusing
+    them would have blocked a run for a non-problem.
     """
     require_execution_approval(approval, "mamba_data.npz candidates")
+    registered = registered_path or MAMBA_REGISTERED_PATH
     checked: List[Dict[str, object]] = []
-    winners: List[str] = []
+    matches: List[str] = []
     for path in candidates:
         row: Dict[str, object] = {"path": path, "exists": os.path.exists(path)}
         if row["exists"]:
             row["bytes"] = os.path.getsize(path)
             row["sha256"] = sha256_file(path)
             row["matches_registered"] = row["sha256"] == MAMBA_SHA256
+            row["same_size_different_hash"] = (
+                not row["matches_registered"] and row["bytes"] == MAMBA_BYTES)
             if row["matches_registered"]:
-                winners.append(path)
+                matches.append(path)
         checked.append(row)
-    if len(winners) != 1:
+    if not matches:
         raise Q5DJoinError(
-            f"{DECISION_INPUT_ABSENT}: expected exactly one candidate matching "
-            f"the registered mamba SHA-256 {MAMBA_SHA256[:16]}…, found "
-            f"{len(winners)}.  Checked: {checked}.  A duplicate that cannot be "
-            f"linked byte-for-byte to the canonical asset is not a substitute.")
-    return {"canonical": winners[0], "candidates": checked}
+            f"{DECISION_INPUT_ABSENT}: no candidate matches the registered "
+            f"mamba SHA-256 {MAMBA_SHA256[:16]}….  Checked: {checked}.  A copy "
+            f"that cannot be linked byte-for-byte to the canonical asset is "
+            f"not a substitute.")
+    preferred = [p for p in matches if os.path.normpath(p).endswith(
+        os.path.normpath(registered).lstrip(os.sep))] if registered else []
+    canonical = preferred[0] if preferred else matches[0]
+    for row in checked:
+        if row.get("matches_registered"):
+            row["role"] = ("canonical" if row["path"] == canonical
+                           else "byte_identical_duplicate")
+        elif row.get("exists"):
+            row["role"] = ("excluded_same_size_different_hash"
+                           if row.get("same_size_different_hash")
+                           else "excluded_hash_mismatch")
+        else:
+            row["role"] = "absent"
+    return {
+        "canonical": canonical,
+        "canonical_sha256": MAMBA_SHA256,
+        "registered_copy_present": bool(preferred),
+        "registered_path": registered,
+        "byte_identical_duplicates": [p for p in matches if p != canonical],
+        "candidates": checked,
+    }
+
+
+def hash_file_set(directory: str, expected_names: Sequence[str],
+                  approval: Optional[str] = None) -> Dict[str, object]:
+    """SHA-256 every file in a registered directory, then aggregate them.
+
+    Hashing a directory *listing* proves nothing about content, so this hashes
+    each file's bytes and folds `(name, size, sha256)` for the sorted expected
+    set into one aggregate digest.  Extra and missing entries are reported
+    separately — an unexpected file in a registered directory is a contract
+    problem even when every expected file verifies.
+    """
+    require_execution_approval(approval, f"file set at {directory!r}")
+    if not os.path.isdir(directory):
+        return {"ok": False, "directory": directory, "files": [],
+                "missing": list(expected_names), "extra": [],
+                "aggregate": None, "problems": [f"not a directory: {directory}"]}
+    present = sorted(name for name in os.listdir(directory)
+                     if os.path.isfile(os.path.join(directory, name)))
+    expected = sorted(set(expected_names))
+    missing = [name for name in expected if name not in present]
+    extra = [name for name in present if name not in expected]
+    files: List[Dict[str, object]] = []
+    for name in expected:
+        if name in missing:
+            continue
+        path = os.path.join(directory, name)
+        files.append({"name": name, "bytes": os.path.getsize(path),
+                      "sha256": sha256_file(path)})
+    aggregate = hashlib.sha256(_canonical_json(
+        [[f["name"], f["bytes"], f["sha256"]] for f in files]
+    ).encode("utf-8")).hexdigest()
+    problems: List[str] = []
+    if missing:
+        problems.append(f"{directory}: missing {missing}")
+    if extra:
+        problems.append(f"{directory}: unexpected {extra}")
+    return {"ok": not problems, "directory": directory, "files": files,
+            "missing": missing, "extra": extra, "aggregate": aggregate,
+            "problems": problems, "n_files": len(files)}
+
+
+def cache_expected_files() -> Tuple[str, ...]:
+    """`meta.json` plus one npz per registered record — the whole cache."""
+    records = [row.record for split in SPLITS for row in build_ledger()[split]]
+    return ("meta.json",) + tuple(f"{r}.npz" for r in sorted(records))
+
+
+def mitdb_expected_files() -> Tuple[str, ...]:
+    """The `.dat/.hea/.atr` triple for every record the join touches."""
+    records = sorted(row.record for split in SPLITS
+                     for row in build_ledger()[split])
+    names: List[str] = []
+    for record in records:
+        names.extend([f"{record}.dat", f"{record}.hea", f"{record}.atr"])
+    return tuple(names)
 
 
 def hash_preflight(assets: Mapping[str, str],
@@ -630,6 +730,193 @@ def assert_preflight_passed(report: Mapping[str, object]) -> None:
             f"{DECISION_INPUT_ABSENT}: the material-input contract is not "
             f"closed, so no matching may start.\n  "
             + "\n  ".join(str(p) for p in report.get("problems", ())))
+
+
+#: Every field a preflight freeze must carry before any matching starts.
+PREFLIGHT_FREEZE_FIELDS: Tuple[str, ...] = (
+    "ok", "rule_fingerprint", "canonical_mamba", "cache_aggregate",
+    "mitdb_aggregate", "result_contract",
+)
+
+
+def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
+                    mitdb_dir: str, result_npz: Mapping[str, str],
+                    approval: Optional[str] = None) -> Dict[str, object]:
+    """Close the whole material-input contract, once, before any matching.
+
+    Produces the freeze that :func:`run_join` requires.  It covers everything
+    `JOIN_INPUT_ABSENT` is defined over: the canonical mamba asset resolved by
+    bytes, the V9/V10 cache as a per-file aggregate (not a listing), the raw
+    MIT-BIH source aggregate, and the cache-row -> result-row positional
+    contract proven from `pid` alone.
+    """
+    require_execution_approval(approval, "material-input preflight")
+    problems: List[str] = []
+
+    mamba = resolve_canonical_mamba(mamba_candidates, approval)
+    cache = hash_file_set(cache_dir, cache_expected_files(), approval)
+    problems.extend(cache["problems"])
+    mitdb = hash_file_set(mitdb_dir, mitdb_expected_files(), approval)
+    problems.extend(mitdb["problems"])
+
+    contract: Dict[str, object] = {}
+    for split in SPLITS:
+        path = result_npz.get(split)
+        if not path:
+            problems.append(f"{split}: no result NPZ given for the positional "
+                            f"contract")
+            continue
+        report = verify_result_positional_contract(path, split, approval)
+        contract[split] = {"path": path, "ok": report["ok"],
+                           "problems": report["problems"],
+                           "blocks": len(report["blocks"])}
+        problems.extend(report["problems"])
+
+    return {
+        "ok": not problems,
+        "problems": problems,
+        "decision": None if not problems else DECISION_INPUT_ABSENT,
+        "rule_fingerprint": rule_fingerprint(),
+        "canonical_mamba": {"path": mamba["canonical"],
+                            "sha256": mamba["canonical_sha256"],
+                            "registered_copy_present":
+                                mamba["registered_copy_present"],
+                            "byte_identical_duplicates":
+                                mamba["byte_identical_duplicates"],
+                            "candidates": mamba["candidates"]},
+        "cache_aggregate": {"directory": cache["directory"],
+                            "aggregate": cache["aggregate"],
+                            "n_files": cache["n_files"],
+                            "missing": cache["missing"], "extra": cache["extra"]},
+        "mitdb_aggregate": {"directory": mitdb["directory"],
+                            "aggregate": mitdb["aggregate"],
+                            "n_files": mitdb["n_files"],
+                            "missing": mitdb["missing"], "extra": mitdb["extra"]},
+        "result_contract": contract,
+    }
+
+
+def verify_preflight_freeze(freeze: Mapping[str, object], mamba_path: str,
+                            cache_dir: str, mitdb_dir: str,
+                            approval: Optional[str] = None,
+                            reverify: bool = True) -> Dict[str, object]:
+    """Re-check that the files on disk *now* are the ones the freeze pinned.
+
+    A freeze that merely travelled alongside the run proves nothing; this
+    recomputes the canonical mamba digest and the two aggregates and compares
+    them.  It also refuses a freeze made under a different rule fingerprint,
+    so a relaxed rule cannot inherit a preflight the way it cannot inherit a
+    null.
+    """
+    missing = [f for f in PREFLIGHT_FREEZE_FIELDS if f not in freeze]
+    if missing:
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: preflight freeze is missing {missing}; "
+            f"matching may not start without the complete input contract")
+    assert_preflight_passed(freeze)
+    if freeze.get("rule_fingerprint") != rule_fingerprint():
+        raise Q5DJoinError(
+            f"the preflight was frozen under rule "
+            f"{freeze.get('rule_fingerprint')!r} but the current rule is "
+            f"{rule_fingerprint()!r}; re-run the preflight under the rule you "
+            f"intend to execute")
+
+    contract = dict(freeze.get("result_contract") or {})
+    if not contract or not all(bool(v.get("ok")) for v in contract.values()):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: the cache-row to result-row positional "
+            f"contract is not proven in this freeze: {contract}")
+
+    checks: Dict[str, object] = {"reverified": bool(reverify)}
+    if not reverify:
+        return checks
+    require_execution_approval(approval, "preflight re-verification")
+    frozen_mamba = dict(freeze["canonical_mamba"])
+    now = sha256_file(mamba_path)
+    if now != frozen_mamba.get("sha256"):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: mamba at {mamba_path!r} now hashes to "
+            f"{now[:16]}… but the preflight froze "
+            f"{str(frozen_mamba.get('sha256'))[:16]}…")
+    checks["mamba_sha256"] = now
+    for label, directory, names, frozen in (
+            ("cache", cache_dir, cache_expected_files(),
+             freeze["cache_aggregate"]),
+            ("mitdb", mitdb_dir, mitdb_expected_files(),
+             freeze["mitdb_aggregate"])):
+        recomputed = hash_file_set(directory, names, approval)
+        want = dict(frozen).get("aggregate")
+        if not recomputed["ok"] or recomputed["aggregate"] != want:
+            raise Q5DJoinError(
+                f"{DECISION_INPUT_ABSENT}: {label} aggregate changed since the "
+                f"preflight ({str(recomputed['aggregate'])[:16]}… != "
+                f"{str(want)[:16]}…) or the file set moved: "
+                f"{recomputed['problems']}")
+        checks[f"{label}_aggregate"] = recomputed["aggregate"]
+    return checks
+
+
+def release_ds2_support_gate(ds1_bundle_dir: str,
+                             freeze: Mapping[str, object],
+                             approval: Optional[str] = None) -> str:
+    """Mint the DS2 label release only from a verified frozen DS1 bundle.
+
+    The spec allows DS2 support gates exactly once, *after* the DS1 rule,
+    hashes, tests, environment, thresholds and DS1 report have frozen.  This
+    refuses to hand out the release unless a real DS1 bundle exists and agrees
+    with the run about to happen: same rule fingerprint, same input hashes,
+    and a DS1 decision that actually carries its null under the registered
+    seed.  Without this, DS2 could be run standalone, which is precisely the
+    "DS2 selected the rule" failure the design forbids.
+    """
+    require_execution_approval(approval, "DS2 support-gate release")
+    decision_path = os.path.join(ds1_bundle_dir, "decision.json")
+    manifest_path = os.path.join(ds1_bundle_dir, "manifest.json")
+    null_path = os.path.join(ds1_bundle_dir, "null_summary.json")
+    for path in (decision_path, manifest_path, null_path):
+        if not os.path.exists(path):
+            raise Q5DJoinError(
+                f"DS2 release refused: the frozen DS1 bundle is incomplete — "
+                f"{os.path.basename(path)} is missing from {ds1_bundle_dir!r}")
+    with open(decision_path, encoding="utf-8") as handle:
+        decision = json.load(handle)
+    with open(manifest_path, encoding="utf-8") as handle:
+        manifest = json.load(handle)
+    with open(null_path, encoding="utf-8") as handle:
+        null = json.load(handle)
+
+    problems: List[str] = []
+    current = rule_fingerprint()
+    for label, value in (("decision", decision.get("rule_fingerprint")),
+                         ("manifest", manifest.get("rule_fingerprint")),
+                         ("null", null.get("rule_fingerprint")),
+                         ("freeze", freeze.get("rule_fingerprint"))):
+        if value != current:
+            problems.append(f"{label} rule_fingerprint {value!r} != {current!r}")
+    frozen_inputs = dict(manifest.get("preflight") or {})
+    for key in ("canonical_mamba", "cache_aggregate", "mitdb_aggregate"):
+        want = frozen_inputs.get(key)
+        got = freeze.get(key)
+        if want is None:
+            problems.append(f"DS1 manifest did not freeze {key}")
+        elif _canonical_json(want) != _canonical_json(got):
+            problems.append(f"{key} differs between the DS1 freeze and this run")
+    if null.get("master_seed") != MASTER_SEED:
+        problems.append(f"DS1 null seed {null.get('master_seed')!r} != "
+                        f"{MASTER_SEED}")
+    if not null.get("j_null_max"):
+        problems.append("DS1 null carries no replicates")
+    if decision.get("decision") not in (DECISION_IDENTIFIABLE,):
+        problems.append(
+            f"DS1 decision is {decision.get('decision')!r}; the DS2 support "
+            f"gate runs only after DS1 qualifies")
+    if not manifest.get("code", {}).get("sha256"):
+        problems.append("DS1 manifest did not record the code hash")
+    if problems:
+        raise Q5DJoinError(
+            "DS2 release refused — the DS1 freeze does not authorise it:\n  "
+            + "\n  ".join(problems))
+    return DS2_LABEL_RELEASE_TOKEN
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -828,19 +1115,36 @@ def load_cache_classes(cache_dir: str, split: str,
 
 
 def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
+             preflight: Mapping[str, object],
              approval: Optional[str] = None,
              ds2_label_release: Optional[str] = None,
              null_replicates: int = N_NULL_REPLICATES,
-             bootstrap_replicates: int = N_BOOTSTRAP_REPLICATES
-             ) -> Dict[str, object]:
+             bootstrap_replicates: int = N_BOOTSTRAP_REPLICATES,
+             reverify: bool = True) -> Dict[str, object]:
     """The whole frozen pipeline for one split, in the registered order.
 
-    Leg 1 must pass its exact replay gate before Leg 2 starts; the negative
-    controls then rerun the *complete* Leg 2 for every replicate.  Nothing
+    ``preflight`` is **required**, not advisory: a PASSing freeze from
+    :func:`build_preflight` covering the canonical mamba hash, the V9/V10
+    cache aggregate, the raw MIT-BIH aggregate and the result positional
+    contract, produced under this same rule fingerprint.  It is re-verified
+    against the files on disk before anything is read, so passing the approval
+    token alone cannot get a run past the material-input contract.
+
+    Leg 1 must then pass its exact replay gate before Leg 2 starts; the
+    negative controls rerun the *complete* Leg 2 for every replicate.  Nothing
     here chooses among rules, and no probability is opened at any point.
     """
     split = _check_split(split)
     require_execution_approval(approval, f"{split} join pipeline")
+    # Cheap authorisation checks before the expensive re-hashing, so a run
+    # that was never allowed to start does not read a byte.
+    if split == "DS2" and ds2_label_release != DS2_LABEL_RELEASE_TOKEN:
+        raise ExecutionNotApprovedError(
+            "the DS2 support gate needs a release minted by "
+            "release_ds2_support_gate() from a verified frozen DS1 bundle; "
+            "DS2 may not be run standalone")
+    verified = verify_preflight_freeze(preflight, mamba_path, cache_dir,
+                                       mitdb_dir, approval, reverify)
 
     leg1 = replay_leg1_split(mitdb_dir, split, approval)
     mamba_loaded = load_mamba_sequences(mamba_path, approval)
@@ -862,7 +1166,8 @@ def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
         ledger.record("2a_leg1_source_replay", False, leg1_report["problems"],
                       True, DECISION_RULE_FALSIFIED, LEG1)
         return {"split": split, "leg1": leg1_report,
-                "decision": ledger.decide(), "rows": [], "results": []}
+                "decision": ledger.decide(), "rows": [], "results": [],
+                "preflight_verified": verified}
 
     joined = join_split(mamba, cache, split)
     rows, results = joined["rows"], joined["results"]
@@ -912,7 +1217,8 @@ def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
             "results": results, "coverage": coverage,
             "s_share_inflation": inflation, "null": null,
             "bootstrap": bootstrap, "decision": decision,
-            "mamba_blocks": mamba_loaded["blocks"]}
+            "mamba_blocks": mamba_loaded["blocks"],
+            "preflight_verified": verified}
 
 
 def replay_leg1_split(mitdb_dir: str, split: str,
@@ -1136,9 +1442,20 @@ def rule_fingerprint() -> str:
 class LedgerRecord(object):
     """One record's frozen slice in both lineages.
 
-    ``cache_start``/``mamba_start`` are cumulative sums inside the split, in
-    the frozen array order.  They are arithmetic consequences of the ledger —
-    never boundaries inferred from labels or from how well the join went.
+    ``cache_start`` is the registered start row of the record inside the
+    split's cache/result array, and it *is* the physical offset there because
+    ``data.py::load_split`` sorts within a split.
+
+    ``mamba_start`` is the **logical** split-local coordinate
+    (``mamba_split_start``), also a cumulative sum in the frozen split order.
+    It is deliberately *not* the physical offset inside ``mamba_data.npz``:
+    ``build_penult.py`` enumerates all 44 records at once, so the file
+    interleaves DS1 and DS2.  The physical offset is measured from ``pid`` by
+    :func:`load_mamba_sequences` and reported as ``mamba_file_row``.
+
+    Both are arithmetic or measured consequences — never boundaries inferred
+    from labels or from how well the join went.  The matcher uses neither; it
+    works on record-local rows.
     """
 
     __slots__ = ("split", "record", "index", "cache_n", "cache_start",
@@ -1156,12 +1473,17 @@ class LedgerRecord(object):
         self.delta = cache_n - mamba_n
         self.stratum = STRATUM_EQUAL if self.delta == 0 else STRATUM_MISMATCH
 
+    @property
+    def mamba_split_start(self) -> int:
+        """The registered logical split-local coordinate (see the docstring)."""
+        return self.mamba_start
+
     def as_dict(self) -> Dict[str, object]:
         return {"split": self.split, "record": self.record,
                 "array_index": self.index, "cache_n": self.cache_n,
                 "cache_start": self.cache_start, "mamba_n": self.mamba_n,
-                "mamba_start": self.mamba_start, "count_difference": self.delta,
-                "stratum": self.stratum}
+                "mamba_split_start": self.mamba_start,
+                "count_difference": self.delta, "stratum": self.stratum}
 
     def __repr__(self) -> str:                          # pragma: no cover
         return (f"LedgerRecord({self.split} {self.record} "
@@ -1792,7 +2114,11 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
             "raw_atr_ordinal": audit.get("raw_atr_ordinal"),
             "raw_r_sample": audit.get("raw_r_sample"),
             "mamba_record_row": i,
+            # Two enumerations of the same row, kept apart on purpose:
+            # the ledger's logical split-local coordinate, and the physical
+            # offset measured from the stored `pid` array.
             "mamba_global_row": led.mamba_start + i,
+            "mamba_file_row": audit.get("mamba_file_row"),
             "cache_record_row": j,
             "result_global_row": None if j is None else led.cache_start + j,
             "status": status,
@@ -1820,7 +2146,7 @@ def join_record(mamba: RecordSequence, cache: RecordSequence,
             "split": cache.split, "record": cache.record,
             "raw_atr_ordinal": None, "raw_r_sample": None,
             "mamba_record_row": None, "mamba_global_row": None,
-            "cache_record_row": j,
+            "mamba_file_row": None, "cache_record_row": j,
             "result_global_row": led.cache_start + j,
             "status": status,
             "pre_rr_difference_samples": None,
@@ -3036,14 +3362,22 @@ def build_config(mode: str, timestamp: str,
     }
 
 
-def build_manifest(inputs: Mapping[str, str], timestamp: str
+def build_manifest(inputs: Mapping[str, str], timestamp: str,
+                   preflight: Optional[Mapping[str, object]] = None
                    ) -> Dict[str, object]:
-    """Code, input, unit and environment hashes for the run bundle."""
+    """Code, input, unit and environment hashes for the run bundle.
+
+    The preflight freeze is embedded, not merely referenced: a later DS2
+    support gate reads it back out of the DS1 manifest and refuses to release
+    the labels unless this run's inputs are the same ones.
+    """
     return {
         "timestamp": timestamp,
         "code": assert_implementation_only(),
         "rule_fingerprint": rule_fingerprint(),
         "ledger": verify_ledger(),
+        "preflight": {k: preflight.get(k) for k in PREFLIGHT_FREEZE_FIELDS}
+        if preflight else None,
         "declared_units": list(DECLARED_UNITS),
         "inputs": {name: {"path": path,
                           "sha256": sha256_file(path)
