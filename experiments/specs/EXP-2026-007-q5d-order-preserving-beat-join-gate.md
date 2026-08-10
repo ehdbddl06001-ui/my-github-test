@@ -1007,3 +1007,53 @@ Required outputs:
 
   No threshold, tolerance, gate, statistic, seed or stopping rule changed.
   531 assertions pass with no registered artifact opened.
+- 2026-08-10 — **First preflight executed on the registered data.  Three
+  contract gaps closed; one false STOP found and fixed.**
+
+  Run `20260810T114347_EXP-2026-007_q5d_beat_join_preflight`.  This is the
+  first stage of Q5-D that opened registered artifacts, under the user's
+  execution approval.  It hashed only; no join ran, no probability was opened,
+  no DS2 label was read, nothing was trained, and no existing Drive asset was
+  modified (the run wrote one new timestamped preflight folder).
+
+  **Closed — the three gaps recorded above are now settled by measurement:**
+
+  1. `mamba_data.npz` verifies against the registered SHA-256
+     `b1c16106…`, and the **registered copy** is the one present.  One
+     byte-identical duplicate was found at
+     `mitbih/v9pkg/kinkmap/v13pkg/mamba_data.npz` and recorded as such; a
+     third candidate path did not exist, which is not a failure under the
+     corrected rule (only *zero* matches are).  The long-standing
+     "hash never compared" gap is closed.
+  2. The V9/V10 cache aggregate is `82b9a593…` over 45 files with no missing
+     and no unexpected entries.  Its hash had never been computed before.
+  3. The DS1/DS2 cache-ledger contract passes 22/22, and the DS2 result
+     contract passes **25/25 files sharing one `pid` digest** `b8e45b6e…` —
+     the exhaustive check Codex required, on its first real run.
+
+  **The single STOP was an error in this spec's implementation, not in the
+  data.**  `mitdb-1.0.0` is the publisher's complete MIT-BIH tree — **48**
+  records — while the expected set had been built from the **44** the join
+  reads.  Records `102`, `104`, `107`, `217` (the paced records the de Chazal
+  split excludes) and the publisher metadata `ANNOTATORS`, `RECORDS`,
+  `SHA256SUMS.txt` were therefore reported as "unexpected", and a correct,
+  immutable, publisher-checksum-verified directory failed.  `ASSETS.md`
+  (`data-mitdb-raw-100`) had it right all along: 48 x 3 + 3 = **147** files.
+
+  Corrected: `mitdb_expected_files()` now expects the published tree.  This
+  changes the *integrity contract over the directory*; it does not change
+  which records the join reads, which is decided by the 44-record ledger and
+  by nothing else.  The paced records are expected to **exist** and are never
+  opened.
+
+  The correction was also used to strengthen the contract rather than merely
+  loosen it: because `SHA256SUMS.txt` ships inside the tree, the preflight now
+  cross-checks every hashed file against the **publisher's own digests**
+  (`verify_against_publisher_checksums`), reusing the digests already computed
+  so it costs no extra I/O.  "These are the bytes that were there" became
+  "these are the published bytes".
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  564 assertions pass.  Both failure directions stay covered: a genuinely
+  missing published file and a tampered byte are still caught, and the STOP
+  that occurred is now a regression test.

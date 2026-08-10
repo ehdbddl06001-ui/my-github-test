@@ -1420,8 +1420,97 @@ def test_file_set_hashing_reads_content():
           "the cache set is meta.json + 44 record npz")
     check("meta.json" in BJ.cache_expected_files(),
           "meta.json is part of the hashed cache set")
-    check(len(BJ.mitdb_expected_files()) == 44 * 3,
-          "the MIT-BIH set is .dat/.hea/.atr for all 44 records")
+    check(len(BJ.mitdb_expected_files()) == 147,
+          "the MIT-BIH set is the published 48-record tree plus metadata")
+
+
+def test_mitdb_expected_set_is_the_published_tree():
+    """The 2026-08-10 preflight STOPped here; the tree was right, not the set.
+
+    `mitdb-1.0.0` is the publisher's complete MIT-BIH tree: 48 records, not
+    the 44 the join reads.  Expecting only 44 made records 102/104/107/217 —
+    the paced ones the de Chazal split excludes — plus the publisher metadata
+    look "unexpected", and a correct immutable directory failed.
+    """
+    print("MIT-BIH expected set: the published 48-record tree, not the 44")
+    records = BJ.mitdb_all_records()
+    check(len(records) == 48, f"48 published records, got {len(records)}")
+    for paced in ("102", "104", "107", "217"):
+        check(paced in records, f"paced record {paced} is in the published set")
+    ledger_records = {r.record for s in BJ.SPLITS
+                      for r in BJ.build_ledger()[s]}
+    check(len(ledger_records) == 44, "the join's ledger still uses 44 records")
+    check(set(BJ.MITDB_PACED_RECORDS) & ledger_records == set(),
+          "the paced records are NOT in the join ledger — they are only "
+          "expected to exist, never read")
+
+    names = BJ.mitdb_expected_files()
+    check(len(names) == BJ.MITDB_REGISTERED_FILE_COUNT == 147,
+          f"147 files = 48 x 3 + 3 metadata, got {len(names)}")
+    for meta in ("ANNOTATORS", "RECORDS", "SHA256SUMS.txt"):
+        check(meta in names, f"publisher metadata '{meta}' is expected")
+    for name in ("102.atr", "104.dat", "107.hea", "217.atr"):
+        check(name in names, f"'{name}' is expected, not 'unexpected'")
+    for name in ("101.atr", "232.dat"):
+        check(name in names, f"a join record's file '{name}' is still expected")
+
+    # The exact directory the run saw must now verify.
+    tmp = tempfile.mkdtemp(prefix="q5d-mitdb-")
+    try:
+        for name in names:
+            with open(os.path.join(tmp, name), "wb") as fh:
+                fh.write(name.encode())
+        report = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(report["ok"] and not report["extra"] and not report["missing"],
+              f"the published tree verifies with no extras ({report['extra']})")
+        check(report["n_files"] == 147, "all 147 files are hashed")
+        os.remove(os.path.join(tmp, "217.dat"))
+        gone = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not gone["ok"] and gone["missing"] == ["217.dat"],
+              "a genuinely missing published file is still caught")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_publisher_checksums_are_cross_checked():
+    print("MIT-BIH bytes are compared against the publisher's own SHA256SUMS")
+    tmp = tempfile.mkdtemp(prefix="q5d-sums-")
+    try:
+        payloads = {"101.atr": b"aaa", "101.dat": b"bbb", "101.hea": b"ccc"}
+        for name, blob in payloads.items():
+            with open(os.path.join(tmp, name), "wb") as fh:
+                fh.write(blob)
+        digests = {n: BJ.sha256_file(os.path.join(tmp, n)) for n in payloads}
+        sums = os.path.join(tmp, BJ.MITDB_CHECKSUM_FILE)
+        with open(sums, "w", encoding="utf-8") as fh:
+            for name, digest in digests.items():
+                fh.write(f"{digest}  {name}\n")
+
+        names = tuple(payloads) + (BJ.MITDB_CHECKSUM_FILE,)
+        file_set = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        good = BJ.verify_against_publisher_checksums(file_set, tmp)
+        check(good["available"] and good["ok"] and good["verified"] == 3,
+              "matching bytes verify against the publisher list")
+
+        parsed = BJ.parse_sha256sums(sums)
+        check(parsed["101.dat"] == digests["101.dat"],
+              "the checksum file parses to {name: sha256}")
+
+        with open(os.path.join(tmp, "101.dat"), "wb") as fh:
+            fh.write(b"TAMPERED")
+        tampered = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        bad = BJ.verify_against_publisher_checksums(tampered, tmp)
+        check(not bad["ok"] and any("101.dat" in p for p in bad["problems"]),
+              "a byte change is caught against the publisher list")
+
+        os.remove(sums)
+        absent = BJ.verify_against_publisher_checksums(file_set, tmp)
+        check(absent["available"] is False and absent["ok"],
+              "a tree without a checksum file reports unavailable, not passed")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def _fake_freeze(**overrides):
@@ -2183,6 +2272,8 @@ def main() -> int:
         test_hash_preflight_stops_and_passes,
         test_canonical_mamba_is_resolved_by_bytes,
         test_file_set_hashing_reads_content,
+        test_mitdb_expected_set_is_the_published_tree,
+        test_publisher_checksums_are_cross_checked,
         test_result_grid_is_preregistered_not_globbed,
         test_ds1_does_not_demand_a_result_contract,
         test_all_25_result_files_are_checked,

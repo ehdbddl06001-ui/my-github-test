@@ -671,14 +671,86 @@ def cache_expected_files() -> Tuple[str, ...]:
     return ("meta.json",) + tuple(f"{r}.npz" for r in sorted(records))
 
 
+#: The four paced records.  MIT-BIH publishes 48 records; the de Chazal
+#: inter-patient split uses 44 and excludes these, so the join never reads
+#: them — but they are part of the **published tree**, and an integrity
+#: contract over that tree must expect them.  Treating them as "unexpected"
+#: was an error: it made a correct, immutable publisher directory fail.
+MITDB_PACED_RECORDS: Tuple[str, ...] = ("102", "104", "107", "217")
+#: Publisher metadata shipped alongside the waveforms.
+MITDB_METADATA_FILES: Tuple[str, ...] = ("ANNOTATORS", "RECORDS",
+                                         "SHA256SUMS.txt")
+MITDB_CHECKSUM_FILE = "SHA256SUMS.txt"
+#: `research/ASSETS.md :: data-mitdb-raw-100` — 48 records x 3 + 3 metadata.
+MITDB_REGISTERED_FILE_COUNT = 48 * 3 + 3
+
+
+def mitdb_all_records() -> Tuple[str, ...]:
+    """All 48 published records: the 44 the join uses, plus the 4 paced."""
+    used = {row.record for split in SPLITS for row in build_ledger()[split]}
+    return tuple(sorted(used | set(MITDB_PACED_RECORDS)))
+
+
 def mitdb_expected_files() -> Tuple[str, ...]:
-    """The `.dat/.hea/.atr` triple for every record the join touches."""
-    records = sorted(row.record for split in SPLITS
-                     for row in build_ledger()[split])
+    """The published MIT-BIH tree: 48 records x `.dat/.hea/.atr`, plus metadata.
+
+    This is the *integrity* contract over an immutable publisher directory,
+    not the list of files the join opens.  Which records the join reads is
+    decided by the 44-record ledger and by nothing else; expecting the whole
+    published tree here only means a missing or added file is noticed.
+    """
     names: List[str] = []
-    for record in records:
-        names.extend([f"{record}.dat", f"{record}.hea", f"{record}.atr"])
-    return tuple(names)
+    for record in mitdb_all_records():
+        names.extend([f"{record}.atr", f"{record}.dat", f"{record}.hea"])
+    return tuple(sorted(names) + sorted(MITDB_METADATA_FILES))
+
+
+def parse_sha256sums(path: str) -> Dict[str, str]:
+    """Parse a publisher `SHA256SUMS.txt` into `{filename: sha256}`."""
+    out: Dict[str, str] = {}
+    with open(path, encoding="utf-8", errors="replace") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = line.split(None, 1)
+            if len(parts) != 2:
+                continue
+            digest, name = parts[0].strip(), parts[1].strip()
+            name = name.lstrip("*").lstrip("./")
+            if len(digest) == 64:
+                out[os.path.basename(name)] = digest.lower()
+    return out
+
+
+def verify_against_publisher_checksums(file_set: Mapping[str, object],
+                                       directory: str) -> Dict[str, object]:
+    """Compare an already-hashed file set against the publisher's own list.
+
+    Stronger than an aggregate over "whatever was there": it says the bytes
+    are the *published* bytes.  Re-uses the digests computed by
+    :func:`hash_file_set`, so this costs no extra I/O.  If the tree ships no
+    checksum file the result is reported as unavailable rather than passed.
+    """
+    checksum_path = os.path.join(directory, MITDB_CHECKSUM_FILE)
+    if not os.path.exists(checksum_path):
+        return {"available": False, "ok": True, "problems": [],
+                "note": f"{MITDB_CHECKSUM_FILE} not present in {directory}"}
+    published = parse_sha256sums(checksum_path)
+    problems: List[str] = []
+    checked = 0
+    for entry in file_set.get("files", ()):                 # type: ignore[union-attr]
+        name = str(entry["name"])
+        if name == MITDB_CHECKSUM_FILE:
+            continue                    # a checksum file cannot list itself
+        want = published.get(name)
+        if want is None:
+            continue                    # publisher does not list it
+        checked += 1
+        if str(entry["sha256"]).lower() != want:
+            problems.append(f"{name}: sha256 differs from the publisher list")
+    return {"available": True, "ok": not problems, "problems": problems,
+            "verified": checked, "published_entries": len(published)}
 
 
 def hash_preflight(assets: Mapping[str, str],
@@ -903,6 +975,8 @@ def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
     problems.extend(cache["problems"])
     mitdb = hash_file_set(mitdb_dir, mitdb_expected_files(), approval)
     problems.extend(mitdb["problems"])
+    publisher = verify_against_publisher_checksums(mitdb, mitdb_dir)
+    problems.extend(publisher["problems"])
 
     ledger_contract = verify_cache_ledger_contract(cache_dir, approval)
     problems.extend(ledger_contract["problems"])
@@ -930,7 +1004,8 @@ def build_preflight(mamba_candidates: Sequence[str], cache_dir: str,
         "mitdb_aggregate": {"directory": mitdb["directory"],
                             "aggregate": mitdb["aggregate"],
                             "n_files": mitdb["n_files"],
-                            "missing": mitdb["missing"], "extra": mitdb["extra"]},
+                            "missing": mitdb["missing"], "extra": mitdb["extra"],
+                            "publisher_checksums": publisher},
         "cache_ledger_contract": ledger_contract,
         "result_contract": results,
     }
