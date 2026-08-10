@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 733,
+  "total": 739,
   "byType": {
+   "usmle": 60,
    "kmle": 491,
    "paper": 171,
-   "usmle": 54,
    "ailab": 14,
    "basic": 3
   },
@@ -17,10 +17,10 @@ window.MEDKOS_INDEX = {
    "Cardiology": 75,
    "Nephrology": 53,
    "Infectious Disease": 51,
-   "Pediatrics": 48,
+   "Pediatrics": 49,
    "Obstetrics & Gynecology": 35,
    "Neurology": 34,
-   "Psychiatry": 33,
+   "Psychiatry": 34,
    "Endocrinology": 32,
    "Gastroenterology": 31,
    "Pulmonology": 31,
@@ -30,17 +30,17 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 30,
    "Rheumatology": 30,
    "Hematology": 29,
-   "Surgery": 27,
+   "Surgery": 28,
    "Pathology": 24,
    "Laboratory Medicine": 22,
    "Hematology-Oncology": 17,
    "Physiology": 7,
+   "Microbiology": 5,
+   "Biochemistry": 4,
+   "Immunology": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "Microbiology": 4,
    "Pharmacology": 4,
-   "Biochemistry": 3,
-   "Immunology": 3,
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
@@ -51,12 +51,126 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 556,
+   "high": 562,
    "medium": 177
   },
-  "tagCount": 1728
+  "tagCount": 1745
  },
  "docs": [
+  {
+   "id": "usmle-2026-0060",
+   "type": "usmle",
+   "topic": "Psychiatry",
+   "subtopic": "Catatonia — Recognition and the Lorazepam Challenge",
+   "tags": [
+    "catatonia",
+    "lorazepam-challenge",
+    "waxy-flexibility",
+    "echolalia",
+    "neuroleptic-malignant-syndrome"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · catatonia vs neuroleptic malignant syndrome)",
+   "confidence": "high",
+   "date": "2026-08-11",
+   "path": "content/usmle/usmle-2026-0060.md",
+   "snippet": "A 26 year old woman with a history of major depressive disorder is brought to the emergency department by her family because she has not eaten, spoken, or moved from a fixed position for the past 2 days. On examination she maintains an awkw",
+   "text": "Psychiatry Catatonia — Recognition and the Lorazepam Challenge catatonia lorazepam-challenge waxy-flexibility echolalia neuroleptic-malignant-syndrome USMLE-style / MedKOS (psychiatry · catatonia vs neuroleptic malignant syndrome) A 26 year old woman with a history of major depressive disorder is brought to the emergency department by her family because she has not eaten, spoken, or moved from a fixed position for the past 2 days. On examination she maintains an awkward posture when her arm is passively raised and holds it there for several minutes. She does not respond to questions but repeats the examiner's last phrase. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Initiate a second generation antipsychotic immediately B. Begin bromocriptine and supportive cooling measures C. Administer a benzodiazepine (e.g., lorazepam) challenge D. Start electroconvulsive therapy without a medication trial E. Obtain an emergent MRI of the brain before any pharmacologic treatment Immobility, mutism, waxy flexibility, and echolalia are classic signs of catatonia, and the near normal temperature and only mildly elevated CK argue against neuroleptic malignant syndrome; the appropriate first step is a diagnostic and often therapeutic benzodiazepine (lorazepam) challenge."
+  },
+  {
+   "id": "usmle-2026-0059",
+   "type": "usmle",
+   "topic": "Pediatrics",
+   "subtopic": "Congenital Complete Heart Block — Neonatal Lupus (Maternal Anti-Ro/SSA Antibody)",
+   "tags": [
+    "congenital-complete-heart-block",
+    "neonatal-lupus",
+    "anti-Ro-SSA",
+    "ECG",
+    "AV-block"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: synthetic rhythm strip (complete AV block)",
+   "confidence": "high",
+   "date": "2026-08-11",
+   "path": "content/usmle/usmle-2026-0059.md",
+   "snippet": "A newborn girl is noted to have a persistently slow heart rate on routine examination. She was born at 38 weeks via uncomplicated vaginal delivery to a mother with a history of joint pain and a photosensitive facial rash who has not been fo",
+   "text": "Pediatrics Congenital Complete Heart Block — Neonatal Lupus (Maternal Anti-Ro/SSA Antibody) congenital-complete-heart-block neonatal-lupus anti-Ro-SSA ECG AV-block USMLE-style / MedKOS · ECG: synthetic rhythm strip (complete AV block) A newborn girl is noted to have a persistently slow heart rate on routine examination. She was born at 38 weeks via uncomplicated vaginal delivery to a mother with a history of joint pain and a photosensitive facial rash who has not been formally diagnosed with a rheumatologic condition. The infant is vigorous and feeding well. An ECG rhythm strip is shown. Vital signs and studies are shown. Which of the following is the most likely underlying mechanism for this infant's arrhythmia? A. A structural malformation of the atrioventricular septum obstructing electrical conduction B. An accessory conduction pathway causing pre excitation of the ventricles C. Perinatal hypoxic injury to the sinoatrial node during delivery D. Transplacental passage of maternal anti Ro/SSA antibodies causing inflammatory injury to the fetal cardiac conduction system E. An autosomal recessive mutation in a cardiac sodium channel gene causing conduction system dysfunction A structurally normal neonatal heart with complete AV dissociation on ECG, born to a mother with features suggestive of undiagnosed Sjögren/SLE and positive anti Ro/SSA and anti La/SSB antibodies, indicates congenital complete heart block from transplacental antibody mediated injury to the fetal conduction system (neonatal lupus)."
+  },
+  {
+   "id": "usmle-2026-0058",
+   "type": "usmle",
+   "topic": "Surgery",
+   "subtopic": "Necrotizing Fasciitis — Recognition as a Surgical Emergency vs Cellulitis",
+   "tags": [
+    "necrotizing-fasciitis",
+    "surgical-emergency",
+    "debridement",
+    "source-control",
+    "soft-tissue-infection"
+   ],
+   "source": "USMLE-style / MedKOS (surgery · necrotizing soft tissue infection)",
+   "confidence": "high",
+   "date": "2026-08-11",
+   "path": "content/usmle/usmle-2026-0058.md",
+   "snippet": "A 58 year old man with type 2 diabetes presents with rapidly worsening left leg pain that began 18 hours ago after a minor abrasion. The pain is disproportionate to the visible skin findings. Examination reveals bullae with dusky discolorat",
+   "text": "Surgery Necrotizing Fasciitis — Recognition as a Surgical Emergency vs Cellulitis necrotizing-fasciitis surgical-emergency debridement source-control soft-tissue-infection USMLE-style / MedKOS (surgery · necrotizing soft tissue infection) A 58 year old man with type 2 diabetes presents with rapidly worsening left leg pain that began 18 hours ago after a minor abrasion. The pain is disproportionate to the visible skin findings. Examination reveals bullae with dusky discoloration, crepitus on palpation, and diminished sensation over skin extending beyond the visible erythema. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Broad spectrum intravenous antibiotics alone with close monitoring B. Emergent surgical exploration and debridement C. Hyperbaric oxygen therapy as the initial definitive treatment D. Incision and drainage at the bedside without operative exploration E. MRI of the extremity to confirm the diagnosis before treatment Pain out of proportion, bullae, crepitus, and skin anesthesia extending beyond the erythema border in a septic patient indicate necrotizing fasciitis, a clinical diagnosis and surgical emergency; the most appropriate next step is immediate operative exploration and debridement rather than antibiotics alone, bedside drainage, hyperbaric oxygen, or imaging."
+  },
+  {
+   "id": "usmle-2026-0057",
+   "type": "usmle",
+   "topic": "Microbiology",
+   "subtopic": "Corynebacterium diphtheriae — Toxin Mechanism vs Other Bacterial Exotoxins",
+   "tags": [
+    "diphtheria",
+    "exotoxin",
+    "ADP-ribosylation",
+    "elongation-factor-2",
+    "toxin-differentiation"
+   ],
+   "source": "USMLE-style / MedKOS (microbiology · bacterial exotoxin mechanisms)",
+   "confidence": "high",
+   "date": "2026-08-11",
+   "path": "content/usmle/usmle-2026-0057.md",
+   "snippet": "A 6 year old unvaccinated child presents with a grayish pseudomembrane over the tonsils and pharynx, tender bilateral cervical lymphadenopathy with neck swelling, and new onset hoarseness. Vital signs and studies are shown. Which of the fol",
+   "text": "Microbiology Corynebacterium diphtheriae — Toxin Mechanism vs Other Bacterial Exotoxins diphtheria exotoxin ADP-ribosylation elongation-factor-2 toxin-differentiation USMLE-style / MedKOS (microbiology · bacterial exotoxin mechanisms) A 6 year old unvaccinated child presents with a grayish pseudomembrane over the tonsils and pharynx, tender bilateral cervical lymphadenopathy with neck swelling, and new onset hoarseness. Vital signs and studies are shown. Which of the following best describes the mechanism by which this organism's toxin can later produce complications such as myocarditis and demyelinating peripheral neuropathy? A. Cleavage of SNARE proteins, blocking presynaptic acetylcholine release B. Proteolysis of synaptobrevin, blocking release of inhibitory neurotransmitters C. Irreversible activation of the Gi protein regulatory subunit of adenylate cyclase, increasing intracellular cAMP D. Superantigen mediated nonspecific activation of T cells, causing massive cytokine release E. ADP ribosylation of elongation factor 2, halting host cell protein synthesis The gray pseudomembrane, bull neck lymphadenopathy, and gram positive club shaped rods on tellurite agar indicate Corynebacterium diphtheriae; its exotoxin ADP ribosylates elongation factor 2, halting protein synthesis in cardiac myocytes and Schwann cells and producing delayed myocarditis and demyelinating neuropathy."
+  },
+  {
+   "id": "usmle-2026-0056",
+   "type": "usmle",
+   "topic": "Biochemistry",
+   "subtopic": "Homocystinuria — Cystathionine Beta-Synthase Deficiency as a Marfan Mimicker",
+   "tags": [
+    "homocystinuria",
+    "cystathionine-beta-synthase",
+    "methionine-metabolism",
+    "marfanoid-habitus",
+    "thromboembolism"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · methionine metabolism disorders)",
+   "confidence": "high",
+   "date": "2026-08-11",
+   "path": "content/usmle/usmle-2026-0056.md",
+   "snippet": "A 14 year old boy is evaluated for tall stature and long, thin fingers. He has mild intellectual disability and a history of a stroke at age 12. Slit lamp examination reveals inferior lens subluxation. Transthoracic echocardiography shows n",
+   "text": "Biochemistry Homocystinuria — Cystathionine Beta-Synthase Deficiency as a Marfan Mimicker homocystinuria cystathionine-beta-synthase methionine-metabolism marfanoid-habitus thromboembolism USMLE-style / MedKOS (biochemistry · methionine metabolism disorders) A 14 year old boy is evaluated for tall stature and long, thin fingers. He has mild intellectual disability and a history of a stroke at age 12. Slit lamp examination reveals inferior lens subluxation. Transthoracic echocardiography shows no aortic root dilation. Laboratory studies are shown. Which of the following enzyme deficiencies best explains this presentation? A. Cystathionine beta synthase deficiency B. Methionine synthase (cobalamin dependent) deficiency C. Methylmalonyl CoA mutase deficiency D. Branched chain alpha ketoacid dehydrogenase deficiency E. Phenylalanine hydroxylase deficiency Marfanoid habitus with downward lens subluxation, intellectual disability, premature thromboembolism, a structurally normal aortic root, and markedly elevated plasma homocysteine and methionine with normal B12/folate point to cystathionine beta synthase deficiency (classic homocystinuria) rather than Marfan syndrome or a remethylation defect."
+  },
+  {
+   "id": "usmle-2026-0055",
+   "type": "usmle",
+   "topic": "Immunology",
+   "subtopic": "Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility",
+   "tags": [
+    "chronic-granulomatous-disease",
+    "NADPH-oxidase",
+    "oxidative-burst",
+    "catalase-positive-organisms",
+    "primary-immunodeficiency"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · phagocyte oxidative burst defects)",
+   "confidence": "high",
+   "date": "2026-08-11",
+   "path": "content/usmle/usmle-2026-0055.md",
+   "snippet": "A 4 year old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examinati",
+   "text": "Immunology Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility chronic-granulomatous-disease NADPH-oxidase oxidative-burst catalase-positive-organisms primary-immunodeficiency USMLE-style / MedKOS (immunology · phagocyte oxidative burst defects) A 4 year old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examination reveals hepatosplenomegaly and residual scarring from prior skin abscesses. Vital signs and laboratory studies are shown. Which of the following is the most likely explanation for this patient's recurrent infections? A. Absence of functional B lymphocytes leading to failure of opsonizing antibody production B. Deficient complement mediated membrane attack complex formation C. Failure of neutrophils to generate reactive oxygen species via NADPH oxidase D. Impaired T cell mediated killing of intracellular pathogens due to IL 12 receptor deficiency E. Failure of neutrophils to fuse phagosomes with lysosomes containing myeloperoxidase Recurrent infections with catalase positive organisms, abscess formation, and a markedly reduced DHR oxidative burst signal indicate failure of the NADPH oxidase complex to generate reactive oxygen species — the defect underlying chronic granulomatous disease."
+  },
   {
    "id": "kmle-2026-0521",
    "type": "kmle",
