@@ -1,21 +1,21 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-09",
+ "generated": "2026-08-10",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 728,
+  "total": 733,
   "byType": {
    "kmle": 491,
-   "paper": 166,
+   "paper": 171,
    "usmle": 54,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 74,
-   "Nephrology": 52,
+   "Cardiology": 75,
+   "Nephrology": 53,
    "Infectious Disease": 51,
    "Pediatrics": 48,
    "Obstetrics & Gynecology": 35,
@@ -30,9 +30,9 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 30,
    "Rheumatology": 30,
    "Hematology": 29,
-   "Surgery": 26,
-   "Pathology": 23,
-   "Laboratory Medicine": 21,
+   "Surgery": 27,
+   "Pathology": 24,
+   "Laboratory Medicine": 22,
    "Hematology-Oncology": 17,
    "Physiology": 7,
    "Medical AI Lab": 4,
@@ -52,7 +52,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 556,
-   "medium": 172
+   "medium": 177
   },
   "tagCount": 1728
  },
@@ -654,6 +654,86 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0490.md",
    "snippet": "58세 남자가 2시간 전 갑자기 시작된 가슴 통증과 식은땀으로 응급실에 왔다. 통증은 명치 쪽으로도 뻗치고 메스꺼움이 동반되었다. 앉은 자세에서도 목의 정맥이 뚜렷하게 부풀어 있고, 양쪽 폐 청진음은 깨끗하다. 심전도는 자료와 같으며, 오른쪽 가슴유도(V3R~V4R)에서도 ST분절 상승이 관찰되었다. 활력징후와 검사 소견은 자료와 같다. 다음 처치 중 이 환자에게 금기인 것은? A. 생리식염수를 정맥으로 빠르게 투여한다 B. ",
    "text": "Cardiology Inferior Wall STEMI with Right Ventricular Involvement inferior-STEMI RV-infarction preload-dependent contraindication KMLE 2026 / Claude Routine 58세 남자가 2시간 전 갑자기 시작된 가슴 통증과 식은땀으로 응급실에 왔다. 통증은 명치 쪽으로도 뻗치고 메스꺼움이 동반되었다. 앉은 자세에서도 목의 정맥이 뚜렷하게 부풀어 있고, 양쪽 폐 청진음은 깨끗하다. 심전도는 자료와 같으며, 오른쪽 가슴유도(V3R~V4R)에서도 ST분절 상승이 관찰되었다. 활력징후와 검사 소견은 자료와 같다. 다음 처치 중 이 환자에게 금기인 것은? A. 생리식염수를 정맥으로 빠르게 투여한다 B. 설하 니트로글리세린을 투여한다 C. 아스피린을 씹어서 복용시킨다 D. 재관류를 위해 관상동맥중재술을 준비한다 E. 산소를 주며 지속 심전도 감시를 한다 하벽유도 ST분절 상승에 더해 오른쪽 가슴유도 ST분절 상승, 저혈압, 목정맥 확장, 깨끗한 폐는 우심실경색을 동반한 하벽 심근경색이다. 우심실경색은 심박출이 전부하에 절대적으로 의존하므로 전부하를 떨어뜨리는 처치(니트로글리세린·이뇨제)는 심한 저혈압을 유발해 금기다."
+  },
+  {
+   "id": "paper-2026-0171",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / World journal of urology",
+   "confidence": "medium",
+   "date": "2026-08-09",
+   "path": "content/papers/2026/2026-08-09_paper-2026-0171_feasibility_of_serial_perioperative_lung_ultrasound_to_monit.md",
+   "snippet": "Title Feasibility of serial perioperative lung ultrasound to monitor fluid shifts during thulium laser prostate enucleation Authors Kuhn Philipp, Wieser Thomas, Welter JoEllen, Rechner Roman, Klein Jan T, Herrmann Thomas R W, Dullenkopf Ale",
+   "text": "Surgery scraped pubmed PubMed / World journal of urology Title Feasibility of serial perioperative lung ultrasound to monitor fluid shifts during thulium laser prostate enucleation Authors Kuhn Philipp, Wieser Thomas, Welter JoEllen, Rechner Roman, Klein Jan T, Herrmann Thomas R W, Dullenkopf Alexander Journal / DOI World journal of urology · DOI: 10.1007/s00345 026 06600 0 · PMID: 42571674 https://pubmed.ncbi.nlm.nih.gov/42571674/ Abstract PURPOSE: Irrigation fluid absorption (IFA) during transurethral surgery of the prostate continues to pose a risk for fluid overload and electrolyte imbalance, yet reliable methods for quantifying absorption remain limited. Lung ultrasound (LU), increasingly used to detect pulmonary pathology, provides a noninvasive approach to assess fluid accumulation. METHODS: In this prospective single center observational study, 36 patients aged ≥ 60 years undergoing elective urethral sparing Thulium: YAG anatomical endoscopic enucleation of the prostate (AEEP; ThuLEP) were examined. LU was performed preoperatively and postoperatively by trained investigators, and a modified Lung Ultrasound Score (mLUS) was calculated. Perioperative data included body weight, fluid balance, biochemical parameters, and hemodynamic variables. Associations between mLUS and perioperative parameters were evaluated using Spearman correlation and linear regression analyses. RESULTS: Median postoperative mLUS values increased significantly from baseline (0 (IQR 0 1) vs. 7.5 (IQR 4.5 10.5), p < 0.0001). Overall fluid balance correlated with both postoperative mLUS (ρ = 0.51, p = 0.003) and change in mLUS (ρ = 0.40, p = 0.023). The change in body weight correlated with intraoperative fluid balance (ρ = 0.66, p < 0.001), overall fluid balance (ρ = 0.58, p < 0.001), and serum chloride increase (ρ = 0.53, p = 0.007). In a simple linear regression model, overall fluid balance was associated with the change in mLUS (β = 0.00073, 95% CI 0.00015 0.00131, p = 0.015). In a multivariable linear regression model, greater overall fluid balance (p = 0.015) and chloride increase (p = 0.001) were associated with larger increases in body weight. The median weight of removed prostate tissue was 61.5 g (IQR 42 88.5), with 0.92 g per minute. CONCLUSION: LU detected postoperative pulmonary fluid accumulation and correlated with perioperative fluid balance in elderly patients undergoing AEEP. Changes in serum chloride concentration and body weight were associated with systemic fluid uptake. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0170",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cureus",
+   "confidence": "medium",
+   "date": "2026-08-09",
+   "path": "content/papers/2026/2026-08-09_paper-2026-0170_artificial_intelligence_for_the_diagnosis_and_management_of_.md",
+   "snippet": "Title Artificial Intelligence for the Diagnosis and Management of Neurodegenerative Diseases: A Comprehensive Review With an Emphasis on Parkinson's and Alzheimer's Diseases Authors Pinnelli SriLakshmi Pravallika, T Surendra Babu, Ca Jayash",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Cureus Title Artificial Intelligence for the Diagnosis and Management of Neurodegenerative Diseases: A Comprehensive Review With an Emphasis on Parkinson's and Alzheimer's Diseases Authors Pinnelli SriLakshmi Pravallika, T Surendra Babu, Ca Jayashankar, Pinnelli Venkata BharatKumar, Harikrishna Ganaraja V, Mudamanchu Vamsi Krishna, Sam Koshy T, Ms Divyadharshini, et al. Journal / DOI Cureus · DOI: 10.7759/cureus.112325 · PMID: 42571320 https://pubmed.ncbi.nlm.nih.gov/42571320/ Abstract Artificial intelligence (AI) is rapidly transforming research in neurodegenerative diseases, yet its clinical translation remains limited. We conducted a structured literature search across Google Scholar, PubMed, Scopus, and Web of Science, screening studies published between 2015 and April 2026 that applied machine learning (ML), deep learning (DL), and multimodal data integration to neuroimaging, biomarkers, and digital phenotyping. Our analysis revealed that AI models demonstrate strong potential for differentiating disease subtypes, predicting progression, and enhancing diagnostic accuracy, with notable advances in neuroimaging interpretation, fluid biomarker analysis, and wearable sensor data. In Parkinson's disease (PD), digital phenotyping through gait, speech, and handwriting analysis has enabled sensitive monitoring, while in Alzheimer's disease (AD), AI applied to imaging and plasma biomarkers has improved risk stratification. Despite these advances, barriers such as dataset heterogeneity, label noise, lack of external validation, and ethical concerns regarding bias, transparency, and patient trust persist. We conclude that while AI holds promise to revolutionize the care of PD and AD, real world adoption requires multicenter validation, standardized reporting frameworks, regulatory guidance, and interdisciplinary collaboration, alongside prospective trials that embed AI tools into clinical workflows to ensure safety, equity, and effectiveness. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0169",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical and experimental hepatology",
+   "confidence": "medium",
+   "date": "2026-08-09",
+   "path": "content/papers/2026/2026-08-09_paper-2026-0169_digital_pathology_enabled_artificial_intelligence_for_fibros.md",
+   "snippet": "Title Digital Pathology Enabled Artificial Intelligence for Fibrosis Assessment in Metabolic Dysfunction Associated Steatohepatitis: Needs, Current Progress, and Barriers Authors Rastogi Archana Journal / DOI Journal of clinical and experim",
+   "text": "Pathology scraped pubmed PubMed / Journal of clinical and experimental hepatology Title Digital Pathology Enabled Artificial Intelligence for Fibrosis Assessment in Metabolic Dysfunction Associated Steatohepatitis: Needs, Current Progress, and Barriers Authors Rastogi Archana Journal / DOI Journal of clinical and experimental hepatology · DOI: 10.1016/j.jceh.2026.103608 · PMID: 42571423 https://pubmed.ncbi.nlm.nih.gov/42571423/ Abstract Metabolic dysfunction associated steatotic liver disease (MASLD) is emerging as the most common chronic liver disorder worldwide. However, most of the candidate drugs, except resmetirom, have failed in the metabolic dysfunction associated steatohepatitis (MASH) trials. The diagnosis of MASH relies on the assessment of key histological features: steatosis, ballooning, lobular inflammation, and fibrosis. Additionally, the current regulatory guidelines consider histological scores as the essential surrogate for the entry and efficacy endpoint decisions in phase IIb and phase III clinical drug trials. The reproducibility of histological scoring systems is increasingly being questioned in clinical trials. Inconsistencies in histopathological reporting, reflected by low inter observer agreement, are largely attributable to the lack of standardized definitions, ordinal scoring structure with inadequate number of categories, use of variable criteria, ill defined terminologies, and subjectivity in interpretation, which are further influenced by pre analytical lab factors. These limitations result in high screen failure rates, poor risk stratification, increased placebo response, and reduced study power in drug trials, making this a serious concern. Liver pathologists are well aware of the urgent need to harmonize definitions and terminology and to transition from semi quantitative to quantitative measurements using digital pathology (DP) integrated with computer vision and artificial intelligence (AI). Furthermore, standardized, objective, reproducible, and reliable histology based ground truth is essential for the development and validation of non invasive diagnostic tests for MASH. Several deep learning (DL) models and architectures, trained on stained or unstained digitized tissue slides using supervised and unsupervised approaches, have been developed, tested, and validated in MASH clinical studies. Liver fibrosis, the strongest primary prognostic determinant of clinical outcomes, has been the most extensively studied histologic feature in MASH. The AI models have demonstrated superior performance with respect to reproducibility and granularity, quantification of fibrosis progression and regression, improved confidence and concordance in Pathologists' scoring, standardization of consensus based scoring systems, validation of AI based tools to assist pathologists, and prediction of clinical outcomes. However, several challenges remain in the implementation of DP enabled AI models in MASLD clinical practice and drug trials. These include ethical and legal considerations, model explainability, patient data privacy and confidentiality, financial investment, and regulatory approvals required for clinical adoption. Nevertheless, digital pathology coupled DL models have the potential to augment current histopathological assessment in MASH. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0168",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Radiology case reports",
+   "confidence": "medium",
+   "date": "2026-08-09",
+   "path": "content/papers/2026/2026-08-09_paper-2026-0168_antegrade_percutaneous_retrieval_of_a_retained_metallic_uret.md",
+   "snippet": "Title Antegrade percutaneous retrieval of a retained metallic ureteral stent embedded in subcutaneous tissue: A practical fluoroscopy guided approach Authors Yiaw Yeong Huei Journal / DOI Radiology case reports · DOI: 10.1016/j.radcr.2026.0",
+   "text": "Nephrology scraped pubmed PubMed / Radiology case reports Title Antegrade percutaneous retrieval of a retained metallic ureteral stent embedded in subcutaneous tissue: A practical fluoroscopy guided approach Authors Yiaw Yeong Huei Journal / DOI Radiology case reports · DOI: 10.1016/j.radcr.2026.06.161 · PMID: 42571490 https://pubmed.ncbi.nlm.nih.gov/42571490/ Abstract Metallic ureteral stents provide excellent resistance to extrinsic compression, allowing for prolonged indwelling times; however, their extraction can be complicated by tissue ingrowth and mechanical failure. We report a complex case of a 33 year old male with a history of bladder exstrophy, a Mitrofanoff appendicovesicostomy, and chronic kidney disease who underwent an antegrade percutaneous exchange of a right 6Fr metallic ureteral stent. During extraction, a sub optimal grasp along the stent's shaft caused the rigid device to fold over itself and become wedged within the 8Fr working sheath, severely bending the stent. After the sheath was withdrawn, the proximal portion of the stent became embedded extra renally within the subcutaneous fat. Standard endourological graspers lacked sufficient mechanical strength for extraction. A practical soft tissue foreign body retrieval technique was employed under continuous real time fluoroscopy, utilizing a robust curved artery forceps to successfully grasp and extract the metallic stent completely. This case underscores the technical challenges associated with the unique design of metallic stents, the importance of accurate proximal tip grasping, the necessity of appropriately sized working sheaths, and the utility of real time fluoroscopy in managing retained percutaneous foreign bodies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0167",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Heart (British Cardiac Society)",
+   "confidence": "medium",
+   "date": "2026-08-09",
+   "path": "content/papers/2026/2026-08-09_paper-2026-0167_bidirectional_links_between_heart_failure_and_cancer_shared_.md",
+   "snippet": "Title Bidirectional links between heart failure and cancer: shared pathophysiology, clinical outcomes and collaborative management Authors Gill Ahmad, Li Tianhong, Jimenez Shirin, Cadeiras Martin, Fan Dali, Singh Swaiman, Ebong Imo A Journa",
+   "text": "Cardiology scraped pubmed PubMed / Heart (British Cardiac Society) Title Bidirectional links between heart failure and cancer: shared pathophysiology, clinical outcomes and collaborative management Authors Gill Ahmad, Li Tianhong, Jimenez Shirin, Cadeiras Martin, Fan Dali, Singh Swaiman, Ebong Imo A Journal / DOI Heart (British Cardiac Society) · DOI: 10.1136/heartjnl 2026 328221 · PMID: 42571652 https://pubmed.ncbi.nlm.nih.gov/42571652/ Abstract Heart failure (HF) and cancer are leading causes of global morbidity and mortality that share a significant bidirectional relationship. Epidemiologic studies reveal that cancer patients and survivors face a substantially elevated risk of HF, largely driven by cardiotoxic systemic therapies including chemotherapy, targeted therapy, immunotherapy and radiation therapy. Conversely, individuals with HF have a markedly increased incidence of cancer. This interconnection is underpinned by age and shared modifiable risk factors, including smoking, hypertension, diabetes and obesity, as well as common pathophysiological mechanisms such as chronic inflammation, neurohormonal activation, oxidative stress and dysregulated angiogenesis. Clonal haematopoiesis of indeterminate potential has emerged as a novel biological link, promoting both maladaptive cardiac remodelling and tumourigenesis. Clinically, the coexistence of HF and cancer creates complex management challenges, as each condition worsens the prognosis of the other and limits therapeutic options. In addition to providing a broad overview of the topic, this review incorporates three aspects that are underexplored in existing cardio oncology literature management of advanced metastatic cancer in patients with HF, use of advanced HF therapies in patients with cancer and disparities in cardio oncology care and clinical trial representation. Effective management of patients with HF and cancer requires a multidisciplinary cardio oncology approach that incorporates rigorous risk stratification, early detection using serial cardiac biomarkers and imaging and personalised management tailored to cancer treatment. Irrespective, cancer patients with HF have a poor prognosis. It is necessary to balance oncological efficacy with cardiovascular safety while providing a clear definition of the goals of care. Early integration of palliative and rehabilitative care can significantly improve patient quality of life and outcomes. Nevertheless, effective novel treatment strategies have significantly improved the overall survivorship for patients with cancer and/or HF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0166",
