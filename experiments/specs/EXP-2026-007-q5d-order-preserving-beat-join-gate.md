@@ -26,11 +26,20 @@ result establishes only that the frozen measurement tool passed its registered
 gate.  It does not authorize the join or association.
 
 1. Codex may finish this `draft` join design without reading DS2 outcomes.
-2. The join still requires design review, explicit user approval, and promotion
-   of this file to `approved_for_implementation` before implementation or
-   execution.
-3. V10 probabilities and the association analysis remain sealed until the
-   frozen join passes its own gates and receive their own explicit approval.
+2. The user may separately approve the design and promote this file to
+   `approved_for_implementation`; that approval means only that Claude may write
+   the implementation.
+3. Claude may implement the frozen design on a `claude/<task>` branch without
+   running it on the registered data.
+4. The user must give a second, explicit approval before the implemented beat
+   join is executed on the registered data.
+5. Only after execution, preservation of the Drive run bundle, notebook commit,
+   and run ingestion may the measured join decision be reviewed.
+
+Design approval in step 2 and data-execution approval in step 4 are independent.
+Neither one authorizes opening V10 probability values or running the association.
+Those remain sealed until the join passes its own gates and the user gives a
+further explicit association approval.
 
 # Fixed question
 
@@ -68,8 +77,10 @@ gate.
   N 1, S 0, V 0, F 802, Q 15; 92% occur in records 208 and 213.  Therefore a
   valid rule must allow deletions but must not silently accept class-selective
   recovery.
-- Raw MIT-BIH and expert P-wave assets now exist and passed PREP_DATA-A, but a
-  stable raw-to-processed beat UID has not been demonstrated.
+- Raw MIT-BIH and expert P-wave assets now exist and passed PREP_DATA-A.  The
+  subsequent preflight established `SOURCE_REPLAY_PROVEN` for the V9/V10
+  preprocessing lineage, but no stable cross-lineage mamba-to-V9/V10 beat UID is
+  stored.
 - The frozen measurement qualification passed at the exact preregistered
   per-record floor: 5 of 6 reference records passed, leaving zero record-level
   margin.  DS2 record-macro sensitivity was 0.9476, macro PPV 0.8860,
@@ -98,6 +109,12 @@ identifiable one-to-one identity for the already-fixed parent analysis.
 - Processed-array RR provenance, but only if its units and conversion contract
   are explicitly documented.  Unit scale must never be estimated by choosing
   the value that creates the most matches.
+- The registered V9 and V10 cache `meta.json` ledgers and the fixed 44-record
+  counts.  The cache row order is `detect_r()` detection order, not `.atr`
+  ordinal order.
+- The registered canonical `mamba_data.npz` and its committed lineage metadata.
+  An unzipped derivative is not substituted unless it is first hash-linked to
+  the canonical asset.
 
 ## Available only after the join rule and code are frozen and execution is approved
 
@@ -116,59 +133,137 @@ record exclusions, or thresholds.  If a DS2 gate fails, the rule is not revised.
   checkpoint access.
 - Downloads, Drive mutation, or overwriting any existing run bundle.
 
-## Missing or unverified at design time
+## Provenance fixed before implementation
 
-- A processed-row `beat_uid` linked to the source `.atr` ordinal and R sample.
-- A demonstrated contract that processed rows preserve chronological order
-  within each record after every filter and concatenation.
-- A per-beat keep/drop ledger with the exact source ordinal and drop reason.
-- A saved row-permutation map from preprocessing output back to raw input.
+The preflight decision is `SOURCE_REPLAY_PROVEN` (A).  It proves the V9/V10
+preprocessing lineage: exact source, environment, MIT-BIH 1.0.0 input,
+filtering, row selection, and within-record row order.  V9 and V10 independently
+rebuilt caches have identical `n` and split metadata for all 44 records.  Their
+rows are materialized, so this design consumes the registered caches rather than
+rerunning `detect_r()`.
 
-The first implementation gate is a provenance-only audit of these items.  If
-chronological row order cannot be proven from frozen source code, manifests, or
-an already-saved row map, do not infer it from favorable DS1 matching.  Emit
-`JOIN_INPUT_ABSENT`.
+Here, **replay** means deterministic reconstruction or verification of
+preprocessing lineage only.  It does not mean regenerating model probabilities.
+`train.py` does not call `keras.utils.enable_op_determinism()`, so GPU learning is
+nondeterministic even in the pinned environment.  No model is trained or
+retrained in this substage, and no newly generated probability may replace a
+registered result.
+
+A does not prove that mamba and V9/V10 contain the same beats.  Eight record
+counts differ, by -31 V9/V10 rows in total (DS1 -25; DS2 -6).  It also does not
+create a cross-lineage per-beat key: V9/V10 result NPZs store only `prob`, `y`,
+and `pid`, so identity remains positional.  The stored `t` is explicitly
+ineligible as a key because it restarts at zero per record and accumulates
+filtered RR rather than absolute sample time; the observed 1.9% Q5-A join is
+consistent with that failure mode.
+
+Under A, `JOIN_INPUT_ABSENT` remains available only for a failed material-input
+contract, not for disappointing join performance.  It fires before matching if
+any of the following cannot be verified against the registered manifest and
+source:
+
+- the canonical mamba asset or its source/meta hashes, 44-record order, counts,
+  units, or deterministic drop semantics do not match the registered lineage;
+- either V9 or V10 cache/meta asset, its 44 record boundaries, detection-order
+  contract, or equality of the V9 and V10 cache ledgers is missing or fails hash
+  verification;
+- the producer-side positional contract from cache row to result-NPZ row cannot
+  be proven, or a result NPZ length/contiguous `pid` block does not equal its
+  registered cache boundary, without inspecting probability values; or
+- a required artifact has been replaced by an unverified duplicate and cannot
+  be linked byte-for-byte to the registered canonical asset.
+
+The absence of a stored cross-lineage `beat_uid` is the identifiability question
+answered by the frozen matcher below; it is not, by itself, an A-era
+`JOIN_INPUT_ABSENT` condition.
 
 # One fixed join rule
 
-## 1. Record and order contract
+## Leg 1: raw `.atr` to mamba rows
 
-Use only the existing frozen record fingerprint map.  Do not remap records from
-DS2 outcomes.  Within each mapped record:
+Leg 1 is a deterministic source-replay gate, not a statistical join.  For every
+record, order raw annotations by `.atr` sample and replay the three frozen mamba
+rules exactly: retain only symbols mapped into the registered N/S/V set; apply
+the 150-sample window boundary test using annotation position `pos`; and drop a
+whole record only under the source's fewer-than-five-valid-beats rule.  Assign
+the resulting kept sequence, in order, to the canonical mamba record slice from
+the committed lineage ledger.
 
-- raw beats are ordered by `.atr` R sample;
-- processed beats are ordered by their documented, stable within-record row
-  order;
-- the first or last beat is ineligible when either pre-RR or post-RR is absent;
-- gaps are permitted only on the raw side, representing raw beats removed by
-  preprocessing;
-- a processed beat may never be mapped twice, and a raw beat may never be mapped
-  twice;
-- mappings must be strictly monotone in both sequences.
+After filtering, recompute mamba RR exactly as the source does.  The first
+pre-RR is a duplicate of the first available interval, and the last post-RR is a
+duplicate of the last available interval; first and last beats are therefore
+eligible.  Leg 1 must reproduce every per-record count, split total (DS1 50,576;
+DS2 49,295), ordinal order, and stored RR value within the declared numeric
+serialization tolerance.  Any mismatch emits `JOIN_RULE_FALSIFIED` with
+`failed_leg = LEG1_SOURCE_REPLAY` and stops before Leg 2.  A missing or
+hash-inconsistent input instead emits `JOIN_INPUT_ABSENT` as defined above.
 
-If a processed-side gap is required, stop for that record.  The registered
-processed cohort is supposed to be derived from raw beats, so inventing an
-unobserved raw source is not allowed.
+## Leg 2: mamba rows to V9/V10 positional rows
 
-## 2. Unit conversion and candidate edges
+Leg 2 is detector-dependent and is not reconstructed from `.atr`.  It consumes
+the registered V9/V10 cache rows in their materialized `detect_r()` order and
+uses the cache row position as the future result-NPZ position.  It never treats
+that position as an `.atr` ordinal and never opens a V10 probability value.
 
-Convert both raw and processed pre/post RR values to integer samples at 360 Hz
+Matching is performed independently inside each frozen record slice.  Global
+order-preserving alignment is forbidden: the DS2 deficits in 105, 111, and 222
+would shift every later record.  Record boundaries are arithmetic consequences
+of the registered ledger, not boundaries inferred from labels or join quality.
+The prespecified count strata are:
+
+- equal-count: 36 records;
+- mismatched DS1: 108 (-1), 116 (-14), 203 (-2), 208 (-7), 223 (-1);
+- mismatched DS2: 105 (-1), 111 (-1), 222 (-4).
+
+The fixed cache ledger is:
+
+| split | V9/V10 records in array order (`record:n@start`) |
+|---|---|
+| DS1 | `101:1862@0`, `106:2027@1862`, `108:1759@3889`, `109:2528@5648`, `112:2537@8176`, `114:1875@10713`, `115:1952@12588`, `116:2397@14540`, `118:2277@16937`, `119:1987@19214`, `122:2474@21201`, `124:1613@23675`, `201:1961@25288`, `203:2972@27249`, `205:2644@30221`, `207:1859@32865`, `208:2572@34724`, `209:3004@37296`, `215:3360@40300`, `220:2046@43660`, `223:2590@45706`, `230:2255@48296` |
+| DS2 | `100:2271@0`, `103:2083@2271`, `105:2566@4354`, `111:2123@6920`, `113:1794@9043`, `117:1534@10837`, `121:1862@12371`, `123:1517@14233`, `200:2598@15750`, `202:2134@18348`, `210:2638@20482`, `212:2747@23120`, `213:2887@25867`, `214:2257@28754`, `219:2153@31011`, `221:2427@33164`, `222:2477@35591`, `228:2053@38068`, `231:1570@40121`, `232:1780@41691`, `233:3066@43471`, `234:2752@46537` |
+
+For the mamba slices, `n` equals the listed cache `n` in the 36 equal-count
+records.  The eight exceptions are fixed as `108:1760`, `116:2411`,
+`203:2974`, `208:2579`, `223:2591`, `105:2567`, `111:2124`, and `222:2481`;
+their mamba starts are recomputed only by cumulative addition in the same frozen
+split order.  No observed alignment may alter either ledger.
+
+The tempting hypothesis `V9/V10 rows are a subset of mamba rows` is **not** an
+identity axiom.  Mamba applies its boundary rule at annotation position `pos`,
+whereas V9/V10 applies it at detector position `p`; an unmatched mamba row and
+an unmatched detector row can cancel in the count.  Consequently equal-count
+records are not zipped by position or automatically certified.  All 44 records,
+including the 36 equal-count records, pass through the same matcher.  A
+drop-one/add-one cancellation is falsified whenever the fixed candidate graph
+does not uniquely certify the positional mapping; the affected edges remain
+`AMBIGUOUS` and the existing coverage, agreement, and selection gates decide the
+result.
+
+Within each record, gaps are permitted on either sequence while finding the
+maximum-cardinality monotone matching because the two boundary definitions do
+not prove set inclusion.  No gap is imputed: every unmatched V9/V10 row remains
+unmapped and counts against coverage, while unmatched mamba rows are reported
+with their Leg 1 identity.  Each row may be mapped at most once, and certified
+mappings must be strictly monotone in both record-local sequences.
+
+### Unit conversion and candidate edges
+
+Convert both mamba and cache pre/post RR values to integer samples at 360 Hz
 using only the declared artifact units and round-half-to-even.  No fitted scale
 or record-specific scale search is permitted.
 
-Before conversion, freeze from preprocessing source and manifest whether stored
-processed RR was computed before beat filtering or recomputed after filtering.
-Reproduce exactly that one semantic on the raw side.  Do not try both and retain
-the one with higher coverage.  If the stored semantic cannot be established, or
-if reproducing a post-filter RR requires an unavailable per-beat keep/drop
-ledger, emit `JOIN_INPUT_ABSENT`.
+The mamba side uses the Leg 1 source-replayed, post-filter RR with its endpoint
+duplication semantics.  The V9/V10 side uses the registered cache RR semantic.
+Both semantics and units are frozen from source and manifest before any match.
+Do not try alternate RR definitions and retain the one with higher coverage.
 
-A raw beat `i` and processed beat `j` form a candidate edge iff both conditions
+A mamba beat `i` and V9/V10 cache row `j` in the same record form a candidate
+edge iff both conditions
 hold:
 
 ```text
-abs(raw_pre_samples[i]  - processed_pre_samples[j])  <= 1
-abs(raw_post_samples[i] - processed_post_samples[j]) <= 1
+abs(mamba_pre_samples[i]  - cache_pre_samples[j])  <= 1
+abs(mamba_post_samples[i] - cache_post_samples[j]) <= 1
 ```
 
 The one-sample tolerance is fixed because both artifacts ultimately refer to a
@@ -177,10 +272,10 @@ widened when RR patterns repeat.
 
 Beat symbols and labels do not enter candidate construction.
 
-## 3. Maximum-cardinality monotone matching
+### Maximum-cardinality monotone matching
 
 Among candidate edges, find a strictly monotone one-to-one matching with the
-maximum number of matched processed beats.  There is no secondary score, margin,
+maximum number of matched V9/V10 rows.  There is no secondary score, margin,
 distance preference, label preference, or record-specific penalty.
 
 An edge is **certified** only when it appears in every maximum-cardinality
@@ -189,9 +284,11 @@ prefix/suffix dynamic-programming counts; it must not select one arbitrary
 optimal path.  Edges that change across equally optimal paths are `AMBIGUOUS`
 and remain unmatched.
 
-This is the complete primary rule.  Q5-B-0's aggregate drop map is used to
-audit the resulting gaps and to construct synthetic fixtures, not to choose
-among ambiguous pairings.
+This two-leg chain is the complete primary rule.  Q5-B-0's aggregate drop map is
+used to audit the resulting gaps and to construct synthetic fixtures, not to
+choose among ambiguous pairings.  Leg 1 is fixed by provenance and Leg 2 has one
+record-wise matcher; the equal/mismatched count strata are reporting strata, not
+alternative rules.
 
 # Synthetic fixtures
 
@@ -199,25 +296,33 @@ All fixtures are fixed before DS1 audit and have known true identities.  The
 rule must recover 100% of identifiable true pairs, create zero false pairs, and
 mark every deliberately non-identifiable repeated segment `AMBIGUOUS` in:
 
-1. identity/no-drop sequence;
-2. one isolated raw deletion;
-3. consecutive deletions;
-4. Q5-B-0-like F/Q deletion counts, including concentration in two records;
-5. repeated coupling intervals with one unique flanking context;
-6. a perfectly repeated segment with two equally optimal alignments;
-7. +/-1-sample quantization on either RR component;
-8. a declared seconds-to-samples conversion;
-9. an intentionally wrong unit declaration, which must stop rather than fit a
-   scale;
-10. row-order corruption, which must fail the monotonicity/provenance gate.
+1. Leg 1 identity/no-drop replay, including duplicated endpoint RR and eligible
+   first/last beats;
+2. Leg 1 isolated and consecutive deterministic drops;
+3. Leg 1 Q5-B-0-like F/Q deletion counts, including concentration in two
+   records;
+4. Leg 2 identity/no-drop sequence;
+5. one isolated mamba-only or cache-only row and consecutive gaps on either
+   side;
+6. an equal-count drop-one/add-one cancellation, which must not be positionally
+   zipped;
+7. repeated coupling intervals with one unique flanking context;
+8. a perfectly repeated segment with two equally optimal alignments;
+9. +/-1-sample quantization on either RR component;
+10. a declared seconds-to-samples conversion;
+11. an intentionally wrong unit declaration, which must stop rather than fit a
+    scale;
+12. record-boundary corruption and within-record row-order corruption, each of
+    which must fail without allowing a cross-record match.
 
 Any synthetic false match terminates the rule as `JOIN_RULE_FALSIFIED` before
 DS1 is inspected.
 
 # Negative controls
 
-Each control reruns the full candidate construction, maximum matching,
-certification, and all audit statistics.  Nothing except
+Leg 1 remains fixed and must already have passed its exact replay gate.  Each
+control then reruns the complete Leg 2 candidate construction, record-wise
+maximum matching, certification, and all audit statistics.  Nothing except
 `SEQUENCE_RELATIONSHIP` changes.
 
 1. **Wrong record:** derange raw records among processed records within frozen
@@ -238,8 +343,10 @@ is possible.  Records are never dropped to improve a control.
 
 # Primary validation statistic and empirical null
 
-On DS1, after matching, map raw symbols to the frozen parent AAMI classes.  For
-each processed class `c in {N, S, V}` define:
+On DS1, after matching, carry Leg 1 raw symbols through mamba identity to the
+frozen parent AAMI classes.  In the definitions below, `processed` means the
+V9/V10 positional row that would index a result NPZ; it never means a mamba row.
+For each processed class `c in {N, S, V}` define:
 
 ```text
 correct_recall_c = certified pairs with agreeing class c /
@@ -274,8 +381,10 @@ license to retune the rule.
 The DS1 rule qualifies only if every gate passes:
 
 1. synthetic exact recovery and ambiguity fixtures pass with zero false pairs;
-2. record/order provenance is documented, and all mappings are monotone and
-   one-to-one;
+2. the two provenance gates both pass: (a) Leg 1 exactly reproduces the frozen
+   source/meta count, order, and RR ledger; and (b) Leg 2 verifies all 44 cache
+   and result-position record boundaries, with every certified map record-local,
+   monotone, and one-to-one;
 3. overall certified coverage is at least 0.95;
 4. certified S-beat coverage is at least 0.95;
 5. each of N, S, and V certified coverage is at least 0.90;
@@ -303,6 +412,11 @@ frozen, the same support gates 2-8 and 12 apply once to DS2.  DS2 does not rerun
 the null and cannot change any constant.  If a DS2 gate fails, emit
 `JOIN_SELECTION_BIASED` and stop before opening V10 probabilities.
 
+Report all gates for the prespecified 36 equal-count and 8 mismatched-count
+strata in addition to the pooled report.  These are diagnostic strata only:
+neither stratum can be excluded, assigned a different matcher, or used to rescue
+a failed primary gate.
+
 # Rule relaxation and multiplicity
 
 There is no confirmatory relaxation path inside this substage.  In particular,
@@ -319,12 +433,15 @@ lower cutoff and may not rescue EXP-2026-007 without a new approved spec.
 
 # Decision tree
 
-1. **`JOIN_INPUT_ABSENT`**: stable processed row order, unit provenance, record
-   identity, or another required identity artifact is missing.  Stop: the
-   mapping is not presently answerable.
-2. **`JOIN_RULE_FALSIFIED`**: any synthetic false match occurs, TRUE fails to
-   exceed the max-null, or the signal/null gates fail.  Stop; ordinary RR
-   repetition can explain the apparent mapping.
+1. **`JOIN_INPUT_ABSENT`**: an A-era material-input contract listed above fails
+   before matching (canonical hash/source/meta, 44-record cache ledger,
+   detection-order contract, or cache-to-result positional contract).  Stop:
+   the registered inputs do not support the specified mapping.  Low coverage or
+   a missing cross-lineage UID does not enter this branch.
+2. **`JOIN_RULE_FALSIFIED`**: Leg 1 fails exact deterministic source replay, any
+   synthetic false match occurs, TRUE fails to exceed the max-null, or the
+   signal/null gates fail.  Stop; either the lineage contract is contradicted or
+   ordinary RR repetition can explain the apparent Leg 2 mapping.
 3. **`JOIN_SELECTION_BIASED`**: pooled recovery looks high but a class, record,
    concentration, or agreement gate fails.  Stop; do not analyze the selected
    subset.
@@ -357,9 +474,11 @@ ledger row per raw beat with:
 
 The same `beat_uid` should have been carried into every per-seed probability
 file.  If `JOIN_INPUT_ABSENT` or `JOIN_UNRESOLVED` fires, acquiring or
-reconstructing this ledger from a verified historical preprocessing replay is
-the only valid next route.  Guessing a UID from `t`, RR rank, class, or model
-score is not.
+recovering this cross-lineage ledger from the original materialized V9/V10 cache
+build is the only valid next route.  A fresh detector run or GPU training run is
+not an identity-equivalent substitute, and A's deterministic mamba source replay
+alone cannot reconstruct detector-dependent V9/V10 identities.  Guessing a UID
+from `t`, RR rank, class, or model score is not.
 
 # Parallel-work contract
 
@@ -367,7 +486,7 @@ score is not.
 |---|---|---|---|
 | Q: measurement qualification | Claude | Complete: `MEASUREMENT_QUALIFIED`, run `20260810T005802` | Reinterpret qualification as join or association approval; change the frozen gates |
 | J: beat-join design | Codex | Maintain this draft; specify rule, controls, null, and stops | Write/run join code; inspect DS2 labels/probabilities |
-| J implementation | Claude, only after approval | Implement exactly the approved join spec | Touch qualification files or revise scientific rules silently |
+| J implementation | Claude, only after design approval | Implement exactly the approved join spec without executing it | Touch qualification files, run on registered data without the separate execution approval, or revise scientific rules silently |
 | Association | none yet | Nothing | Open V10 outcomes or calculate S PR-AUC |
 
 Qualification passed with exactly 5 of 6 reference records above the
@@ -410,6 +529,22 @@ The beat join for 222 is judged only by raw-to-processed identity.  Its low
 expert-reference PPV must not be allowed to make a correct beat join fail, and a
 good beat join must not be used to resolve the biological meaning of its
 unannotated P detections.
+
+## Record 232: known source concentration and parent-gate conflict
+
+Before this join, record 232 already supplies 1,382 of 1,837 DS2 S beats
+(75.2%).  This exceeds the parent spec's fixed rule that no single record may
+contribute more than 50% of all eligible S beats.  The concentration is present
+in the source cohort and therefore cannot be repaired by selecting a favorable
+join subset.
+
+Join gate 12 remains source-relative: it tests whether certification inflates a
+record's existing S share by more than 1.25.  It does not replace, relax, or
+reinterpret the parent's absolute 50% rule.  Thus a successful identity join may
+still leave the parent association blocked by its own preregistered gate.  Any
+resolution requires a separate parent-spec amendment, frozen without viewing
+V10 probabilities or DS2 association outcomes; this join design makes no such
+amendment.
 
 ## Record 231: measurement-quality/model-failure covariance
 
@@ -468,7 +603,9 @@ choice may be made after viewing DS2 outcomes.
 ## GitHub inputs
 
 - `experiments/specs/EXP-2026-007-q5d-expert-validated-pwave-timing-audit.md`
-- `research/HANDOFF_2026-08-10_Q5D_beat_join_to_codex.md`
+- `research/HANDOFF_2026-08-10_Q5D_preflight_result_to_codex.md`
+- `research/PREFLIGHT_2026-08-10_drive_asset_intake.md`
+- `research/PROVENANCE_2026-08-10_mamba_data_lineage.md`
 - the approved qualification freeze manifest and decision only;
 - Q5-B-0 `record_mapping.csv` registered through `research/ASSETS.md`.
 
@@ -510,6 +647,8 @@ Required outputs:
 # Implementation checklist
 
 - [ ] User approves this draft and status changes to `approved_for_implementation`
+- [ ] Claude implements the approved spec without executing it
+- [ ] User separately approves execution on the registered data
 - [ ] Qualification passes before any join execution
 - [ ] Provenance/order audit passes before DS1 matching
 - [ ] Synthetic fixtures run before DS1 audit
@@ -550,3 +689,18 @@ Required outputs:
   rather than by rewriting `main` history.  `design_owner` stays `codex`,
   `status` stays `draft`, and nothing in this spec has been implemented or
   executed.
+- 2026-08-10 — Revised after the preflight reached
+  `SOURCE_REPLAY_PROVEN` (A), contrary to the earlier B-conditional assumption.
+  Redefined `JOIN_INPUT_ABSENT` as a material-contract failure under A and split
+  the single join into deterministic Leg 1 (`.atr` to mamba) and
+  detector-dependent, record-wise Leg 2 (mamba to V9/V10 positional rows).
+  Registered the 44-record boundary ledger, the 36 equal-count and 8
+  mismatched-count strata, and separate leg failures.  Rejected count equality
+  and the plausible V9/V10-subset relation as identity axioms because the `pos`
+  versus `p` boundary rules permit drop/add cancellation; all records therefore
+  use the same forced-edge matcher.  Clarified that replay proves preprocessing
+  lineage, not nondeterministic GPU probability regeneration; corrected endpoint
+  RR to duplicated-and-eligible semantics; separated design approval from data
+  execution approval; and documented the pre-existing record-232/parent-50%
+  conflict without changing the parent gate.  Status remains `draft`; no join,
+  label/probability inspection, training, download, or Drive mutation occurred.
