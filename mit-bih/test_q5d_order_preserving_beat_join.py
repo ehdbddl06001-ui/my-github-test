@@ -1432,10 +1432,194 @@ def _fake_freeze(**overrides):
         "canonical_mamba": {"path": "/m.npz", "sha256": "a" * 64},
         "cache_aggregate": {"directory": "/c", "aggregate": "b" * 64},
         "mitdb_aggregate": {"directory": "/d", "aggregate": "c" * 64},
-        "result_contract": {"DS1": {"ok": True}, "DS2": {"ok": True}},
+        "cache_ledger_contract": {"ok": True, "problems": [],
+                                  "observed": {"DS1": 22, "DS2": 22}},
+        "result_contract": {"ok": True, "split": "DS2", "problems": [],
+                            "n_expected": 25, "n_verified": 25,
+                            "pid_digest": "d" * 64},
     }
     freeze.update(overrides)
     return freeze
+
+
+def _write_result_npz(path, pid):
+    import numpy
+    numpy.savez(path, pid=numpy.asarray(pid, dtype="int64"),
+                y=numpy.zeros(len(pid), dtype="int8"),
+                prob=numpy.zeros((len(pid), 3), dtype="float32"))
+
+
+def _ds2_pid():
+    """A `pid` array that satisfies the registered DS2 ledger exactly."""
+    out = []
+    for led in BJ.build_ledger()["DS2"]:
+        out.extend([int(led.record)] * led.cache_n)
+    return out
+
+
+def test_result_grid_is_preregistered_not_globbed():
+    print("result file set: fixed arm x seed names, not a glob")
+    names = BJ.result_expected_files(BJ.V10_RESULT_ARMS)
+    check(len(names) == 25, "V10 grid is 5 arms x 5 seeds = 25 files")
+    check(BJ.RESULT_SEEDS == (1000, 1001, 1002, 1003, 1004),
+          "seeds 1000-1004 are registered")
+    check(set(BJ.V10_RESULT_ARMS) == {"base", "full", "pwave", "pwave_noc",
+                                      "v8base"},
+          "the V10 arms are the registered five")
+    check(set(BJ.V9_RESULT_ARMS) == {"kink", "kink_noctx", "kink_noproto",
+                                     "v8_noc", "v8base"},
+          "the V9 arms are registered too, for when they are needed")
+    check("base_s1000.npz" in names and "v8base_s1004.npz" in names,
+          "names follow the {arm}_s{seed}.npz convention")
+    check(len(BJ.result_expected_files(BJ.V9_RESULT_ARMS)) == 25,
+          "the V9 grid is also 25 files")
+
+
+def test_ds1_does_not_demand_a_result_contract():
+    print("DS1 is verified from the cache ledger, not from a DS2 result NPZ")
+    check(BJ.RESULT_NPZ_SPLIT == "DS2",
+          "result packages are declared to hold DS2 rows")
+    ds1_rows = BJ.REGISTERED_CACHE_TOTALS["DS1"]
+    ds2_rows = BJ.REGISTERED_CACHE_TOTALS["DS2"]
+    check(ds1_rows != ds2_rows,
+          f"one pid array cannot satisfy both ledgers ({ds1_rows} vs "
+          f"{ds2_rows}) — so demanding both of one file always STOPs")
+    check("cache_ledger_contract" in BJ.PREFLIGHT_FREEZE_FIELDS,
+          "the freeze carries a separate DS1/DS2 cache-ledger contract")
+    source = BJ.build_preflight.__doc__ or ""
+    check("DS1" in source and "cache `meta.json`" in source,
+          "build_preflight documents that DS1 uses the cache side")
+
+    tmp = tempfile.mkdtemp(prefix="q5d-ledger-")
+    try:
+        meta = {}
+        for split in BJ.SPLITS:
+            for led in BJ.build_ledger()[split]:
+                meta[led.record] = {"split": split, "n": led.cache_n}
+        with open(os.path.join(tmp, "meta.json"), "w", encoding="utf-8") as fh:
+            json.dump(meta, fh)
+        report = BJ.verify_cache_ledger_contract(tmp,
+                                                 BJ.EXECUTION_APPROVAL_TOKEN)
+        check(report["ok"] and report["observed"] == {"DS1": 22, "DS2": 22},
+              "a correct meta.json proves both splits' boundaries")
+        check(report["meta_sha256"], "the meta.json hash is recorded")
+        meta["222"]["n"] += 1
+        with open(os.path.join(tmp, "meta.json"), "w", encoding="utf-8") as fh:
+            json.dump(meta, fh)
+        broken = BJ.verify_cache_ledger_contract(tmp,
+                                                 BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not broken["ok"], "a wrong record count fails the ledger contract")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_all_25_result_files_are_checked():
+    print("every registered result file is checked, and they must agree")
+    try:
+        import numpy                                    # noqa: F401
+    except ImportError:                                 # pragma: no cover
+        check(True, "numpy absent — result-set test skipped")
+        return
+    tmp = tempfile.mkdtemp(prefix="q5d-results-")
+    try:
+        good = _ds2_pid()
+        check(len(good) == BJ.REGISTERED_CACHE_TOTALS["DS2"],
+              f"the fixture pid has the registered {len(good)} DS2 rows")
+        names = BJ.result_expected_files(BJ.V10_RESULT_ARMS)
+        for name in names:
+            _write_result_npz(os.path.join(tmp, name), good)
+
+        report = BJ.verify_result_set_positional_contract(
+            tmp, BJ.V10_RESULT_ARMS, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(report["ok"], f"a clean grid verifies ({report['problems'][:2]})")
+        check(report["n_verified"] == 25, "all 25 files were checked")
+        check(report["pid_digest"], "the shared pid digest is recorded")
+        check(all(f["pid_sha256"] == report["pid_digest"]
+                  for f in report["files"]),
+              "every file's own pid digest is recorded and matches")
+
+        # One file mixed in from another run: the representative-file check
+        # would have missed this entirely.
+        odd = list(good)
+        odd[-1] = int(BJ.build_ledger()["DS2"][0].record)
+        _write_result_npz(os.path.join(tmp, "pwave_s1002.npz"), odd)
+        mixed = BJ.verify_result_set_positional_contract(
+            tmp, BJ.V10_RESULT_ARMS, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not mixed["ok"], "one mismatched file fails the whole set")
+        check(mixed["pid_digest"] is None,
+              "a split pid assignment leaves no shared digest")
+        check(any("do not share one `pid`" in p for p in mixed["problems"]),
+              "the disagreement is reported as a pid-assignment split")
+        check(mixed["decision"] == BJ.DECISION_INPUT_ABSENT,
+              "the failure is JOIN_INPUT_ABSENT")
+        _write_result_npz(os.path.join(tmp, "pwave_s1002.npz"), good)
+
+        # A truncated file.
+        _write_result_npz(os.path.join(tmp, "full_s1001.npz"), good[:-10])
+        short = BJ.verify_result_set_positional_contract(
+            tmp, BJ.V10_RESULT_ARMS, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not short["ok"], "a truncated file fails the set")
+        _write_result_npz(os.path.join(tmp, "full_s1001.npz"), good)
+
+        # A missing file: a glob would simply not see it.
+        os.remove(os.path.join(tmp, "v8base_s1004.npz"))
+        missing = BJ.verify_result_set_positional_contract(
+            tmp, BJ.V10_RESULT_ARMS, BJ.EXECUTION_APPROVAL_TOKEN)
+        check(not missing["ok"], "a missing registered file fails the set")
+        check(any("missing" in p for p in missing["problems"]),
+              "the missing file is named, not silently skipped")
+        check(missing["n_verified"] == 24,
+              "24 files passing does not rescue the set")
+        try:
+            BJ.verify_result_set_positional_contract(tmp, BJ.V10_RESULT_ARMS,
+                                                     None)
+            check(False, "the result-set check needs the opt-in")
+        except BJ.ExecutionNotApprovedError:
+            check(True, "the result-set check needs the opt-in")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_partial_result_set_cannot_be_used():
+    print("a partially verified result set may not proceed")
+    for label, contract in (
+        ("24 of 25 verified", {"ok": True, "n_expected": 25, "n_verified": 24,
+                               "pid_digest": "d" * 64, "problems": []}),
+        ("no shared pid digest", {"ok": True, "n_expected": 25,
+                                  "n_verified": 25, "pid_digest": None,
+                                  "problems": []}),
+        ("empty grid", {"ok": True, "n_expected": 0, "n_verified": 0,
+                        "pid_digest": "d" * 64, "problems": []}),
+        ("failed contract", {"ok": False, "n_expected": 25, "n_verified": 25,
+                             "pid_digest": "d" * 64, "problems": ["x"]}),
+    ):
+        try:
+            BJ.verify_preflight_freeze(_fake_freeze(result_contract=contract),
+                                       "/m", "/c", "/d",
+                                       BJ.EXECUTION_APPROVAL_TOKEN,
+                                       reverify=False)
+            check(False, f"{label} must be refused")
+        except BJ.Q5DJoinError:
+            check(True, f"{label} is refused")
+    try:
+        BJ.verify_preflight_freeze(
+            _fake_freeze(cache_ledger_contract={"ok": False,
+                                                "problems": ["boundary"]}),
+            "/m", "/c", "/d", BJ.EXECUTION_APPROVAL_TOKEN, reverify=False)
+        check(False, "an unproven cache ledger must be refused")
+    except BJ.Q5DJoinError as exc:
+        check("cache record boundaries" in str(exc),
+              "the DS1 side is refused on its own terms")
+
+
+def test_pid_digest_ignores_dtype():
+    print("pid digests compare content, not the stored dtype")
+    check(BJ._pid_digest([100, 100, 103]) == BJ._pid_digest([100.0, 100, 103]),
+          "int and float spellings of the same assignment agree")
+    check(BJ._pid_digest([100, 103]) != BJ._pid_digest([103, 100]),
+          "a different assignment gives a different digest")
 
 
 def test_run_join_requires_a_passing_preflight():
@@ -1817,6 +2001,12 @@ def test_notebook_contract():
           "the notebook names the DS1 frozen bundle DS2 must agree with")
     check("PREFLIGHT, APPROVAL" in joined,
           "the join receives the preflight freeze as a required input")
+    check("ASSET_RESULT_NPZ" not in joined,
+          "the notebook no longer applies one result NPZ to both splits")
+    check("V10_RESULT_ARMS" in joined,
+          "the notebook checks the registered arm x seed grid")
+    check("cache_ledger_contract" in joined,
+          "the notebook reports the DS1 cache-ledger contract separately")
     check("preflight.json" in joined,
           "the preflight result is preserved as a bundle, PASS or STOP")
     check("assert not os.path.exists(RUN_DIR)" in joined,
@@ -1913,6 +2103,11 @@ def main() -> int:
         test_hash_preflight_stops_and_passes,
         test_canonical_mamba_is_resolved_by_bytes,
         test_file_set_hashing_reads_content,
+        test_result_grid_is_preregistered_not_globbed,
+        test_ds1_does_not_demand_a_result_contract,
+        test_all_25_result_files_are_checked,
+        test_partial_result_set_cannot_be_used,
+        test_pid_digest_ignores_dtype,
         test_run_join_requires_a_passing_preflight,
         test_preflight_reverification_catches_drift,
         test_ds2_release_needs_a_verified_ds1_freeze,
