@@ -105,7 +105,14 @@ EXPERIMENT_ID = "EXP-2026-007"
 ARM_ID = "Q5-D"
 SUBSTAGE = "Q5D_BEAT_JOIN_IDENTIFIABILITY_GATE"
 RUN_SLUG = "q5d_beat_join"
-MODULE_VERSION = 1
+#: Bump whenever the *input contract* changes in a way a notebook must not
+#: silently run against.  The notebook asserts a minimum, so a stale clone
+#: fails loudly instead of producing a confusing STOP.
+#:   1 — first implementation
+#:   2 — MIT-BIH expected set = the published 48-record tree (147 files) and
+#:       publisher-checksum cross-check; preflight freeze gained
+#:       `cache_ledger_contract`; result contract is DS2-only and exhaustive.
+MODULE_VERSION = 2
 MODULE_BUILD = "2026-08-10"
 
 NO_EXECUTION_BANNER = (

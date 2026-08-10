@@ -2173,6 +2173,72 @@ def test_notebook_cells_run_in_order():
           f"{problems[:6]}")
 
 
+def test_notebook_refuses_a_stale_module():
+    """A fresh notebook against an old clone must fail loudly, not confusingly.
+
+    This happened: `main` did not yet carry the corrected MIT-BIH expected
+    set, so a new notebook printed the new message while the cached module
+    still returned the old file count, and the run STOPped for a reason that
+    looked like a data problem.  Two causes, both guarded here — a stale
+    checkout, and `import` returning the module already in `sys.modules`.
+    """
+    print("notebook: a stale module is refused before it can mislead")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    joined = "\n".join("".join(c["source"]) for c in nb["cells"]
+                       if c["cell_type"] == "code")
+    check("del sys.modules[" in joined,
+          "cell 2 purges the cached module before importing")
+    purge_at = min((i for i, c in enumerate(nb["cells"])
+                    if c["cell_type"] == "code"
+                    and "del sys.modules[" in "".join(c["source"])),
+                   default=10 ** 6)
+    import_at = min((i for i, c in enumerate(nb["cells"])
+                     if c["cell_type"] == "code"
+                     and "import q5d_order_preserving_beat_join" in
+                     "".join(c["source"])), default=-1)
+    check(purge_at <= import_at,
+          f"the purge ({purge_at}) happens before the import ({import_at})")
+    check("BJ.MODULE_VERSION >= NEED_MODULE_VERSION" in joined,
+          "the notebook asserts a minimum module version")
+    check("NEED_MODULE_VERSION = " in joined,
+          "the required version is set in the configuration cell")
+    import re
+    need = re.search(r"NEED_MODULE_VERSION = (\d+)", joined)
+    if check(need is not None, "the required version is a literal"):
+        check(int(need.group(1)) == BJ.MODULE_VERSION,
+              f"the notebook requires the current module version "
+              f"({BJ.MODULE_VERSION}), got {need.group(1)}")
+    check("BJ.__file__" in joined,
+          "the notebook prints which file it actually loaded")
+
+
+def test_module_version_tracks_the_contract():
+    print("module version: bumped when the input contract changes")
+    check(BJ.MODULE_VERSION >= 2,
+          "the MIT-BIH/publisher-checksum contract change bumped the version")
+    check(BJ.MITDB_REGISTERED_FILE_COUNT == 147,
+          "version 2 expects the 147-file published tree")
+    check("cache_ledger_contract" in BJ.PREFLIGHT_FREEZE_FIELDS,
+          "version 2 freezes the DS1 cache-ledger contract")
+    # The version is part of the fingerprint, so an old preflight freeze
+    # cannot be reused against the new contract.
+    stale = {"ok": True, "rule_fingerprint": "old" + "0" * 61,
+             "canonical_mamba": {}, "cache_aggregate": {},
+             "mitdb_aggregate": {}, "cache_ledger_contract": {"ok": True},
+             "result_contract": {"ok": True, "n_expected": 25,
+                                 "n_verified": 25, "pid_digest": "d" * 64}}
+    try:
+        BJ.verify_preflight_freeze(stale, "/m", "/c", "/d",
+                                   BJ.EXECUTION_APPROVAL_TOKEN, reverify=False)
+        check(False, "a freeze from the old contract must be refused")
+    except BJ.Q5DJoinError as exc:
+        check("frozen under rule" in str(exc),
+              "a preflight frozen under the old contract cannot be reused")
+
+
 def test_notebook_branch_is_real():
     print("notebook: BRANCH names something that can actually be fetched")
     if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
@@ -2296,6 +2362,8 @@ def main() -> int:
         test_every_fixture_passes_with_zero_false_pairs,
         test_notebook_contract,
         test_notebook_cells_run_in_order,
+        test_notebook_refuses_a_stale_module,
+        test_module_version_tracks_the_contract,
         test_notebook_branch_is_real,
         test_spec_contract,
     ]
