@@ -2029,6 +2029,86 @@ def test_notebook_contract():
           "the notebook loads its numbers from files")
 
 
+def test_notebook_cells_run_in_order():
+    """Run top-to-bottom, no cell may use a name an earlier cell has not set.
+
+    The first Colab run died here twice: a cell referenced ``BJ`` before the
+    import cell, and ``BRANCH`` named a branch that does not exist on origin.
+    Both are ordering/config errors a reader cannot see by skimming, so they
+    are checked mechanically.
+    """
+    print("notebook: cells are consistent top-to-bottom")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    code = [(i, "".join(c["source"])) for i, c in enumerate(nb["cells"])
+            if c["cell_type"] == "code"]
+
+    import_at = min((i for i, s in code
+                     if "import q5d_order_preserving_beat_join" in s),
+                    default=10 ** 6)
+    early = []
+    for index, source in code:
+        if index >= import_at:
+            continue
+        for line in source.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("#"):
+                continue
+            if "BJ." in stripped:
+                early.append((index, stripped))
+    check(not early,
+          f"no cell touches BJ before the import cell ({import_at}): {early}")
+
+    # Names a cell assigns at top level, in order, so later cells can use them.
+    import re
+    defined = set()
+    problems = []
+    watched = ("MODE", "BRANCH", "APPROVAL", "PREFLIGHT", "CANONICAL_MAMBA",
+               "DRIVE", "ASSET_MITDB", "ASSET_CACHE_V10", "ASSET_V10_RESULTS",
+               "ASSET_MAMBA_CANDIDATES", "RUN_DIR", "OPEN_REGISTERED_DATA",
+               "DS1_FROZEN_BUNDLE", "NEED_TESTS")
+    for index, source in code:
+        used = {w for w in watched
+                if re.search(rf"\b{w}\b", source)
+                and not re.search(rf"^\s*{w}\s*=", source, re.M)
+                and f'globals().get("{w}"' not in source}
+        for name in sorted(used - defined):
+            problems.append((index, name))
+        for name in watched:
+            if re.search(rf"^\s*{name}\s*=", source, re.M):
+                defined.add(name)
+    check(not problems,
+          f"every referenced setting is assigned by an earlier cell: "
+          f"{problems[:6]}")
+
+
+def test_notebook_branch_is_real():
+    print("notebook: BRANCH names something that can actually be fetched")
+    if not check(os.path.exists(NOTEBOOK), "the quest54 notebook exists"):
+        return
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    joined = "\n".join("".join(c["source"]) for c in nb["cells"]
+                       if c["cell_type"] == "code")
+    import re
+    found = re.search(r'^BRANCH = "([^"]+)"', joined, re.M)
+    if not check(found is not None, "the notebook assigns BRANCH"):
+        return
+    branch = found.group(1)
+    check(branch == "main",
+          f"BRANCH defaults to 'main' (merged code), got {branch!r}")
+    # A stale session-suffixed branch name is the exact failure that happened.
+    check(not re.search(r"-[a-z0-9]{6}$", branch),
+          f"BRANCH is not a session-suffixed working branch ({branch!r})")
+    check("ls-remote" in joined,
+          "a bad BRANCH lists the real branches instead of raising a "
+          "CalledProcessError")
+    check("checkout\", \"-B\"" in joined or '"-B", BRANCH' in joined,
+          "checkout uses -B so an existing local branch is not an error")
+
+
 def test_spec_contract():
     print("spec: approved for implementation, and its constants unchanged")
     if not check(os.path.exists(SPEC), "the join spec exists"):
@@ -2124,6 +2204,8 @@ def main() -> int:
         test_module_reaches_no_outcome,
         test_every_fixture_passes_with_zero_false_pairs,
         test_notebook_contract,
+        test_notebook_cells_run_in_order,
+        test_notebook_branch_is_real,
         test_spec_contract,
     ]
     print("=" * 72)
