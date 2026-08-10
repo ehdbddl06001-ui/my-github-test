@@ -1358,3 +1358,28 @@ Required outputs:
   record `108` literally, so it depended on that record existing in whatever
   ledger was registered.  It now corrupts the ledger's first record.  The
   fixture's meaning — a corrupted boundary must fail — is unchanged.
+
+  *Short-null bypass closed (Codex review, before merge).*  `finalize_ds1_gate`
+  and `run_ds1_gate_sharded` no longer take a `total` argument: a public
+  production function that can be asked for a shorter null **is** a short-null
+  bypass, whatever its default.  Both now accept exactly
+  `N_NULL_REPLICATES = 10000` in each of the three families and refuse 9,999
+  and 10,001 alike.  The size-parameterised computation survives only as the
+  private `_finalize_ds1_gate_reference()`, used by the equivalence tests so
+  they can compare the serial oracle against the sharded runner at an
+  affordable size; production cannot reach it.  Tests assert that neither
+  public signature carries `total` or any other replicate-count knob.
+
+  Codex also confirmed the two design judgments raised at the previous FROZEN
+  point: `TRUE_JOIN_MEASURED` / `DS1_GATE_NOT_RUN` stay in `STAGE_STATUSES`
+  and out of the registered `DECISIONS`, and `run_join` stays as an explicit
+  refusing shim rather than being deleted.
+
+  *No-early-stop, restated.*  The implementer suggested deciding whether to
+  run the null after seeing the TRUE join's coverage.  That is a
+  result-dependent execution choice and is not permitted: the null runs to 3
+  families x 10,000 replicates regardless of what the TRUE join shows.  A weak
+  TRUE result is a reason to expect `JOIN_UNRESOLVED`, never a reason to skip
+  the control that would establish it.
+
+  834 assertions pass.  `rule_fingerprint` remains byte-identical to `main`.

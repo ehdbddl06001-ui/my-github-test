@@ -3132,11 +3132,13 @@ def test_serial_reference_equals_sharded_end_to_end():
                 "ambiguous_fraction": 0.01, "leg2_boundaries_ok": True,
                 "leg1": {"ok": True}, "results": [],
             }
+            # Small-scale comparison uses the private reference finalizer;
+            # the public one accepts only the registered 10,000.
             both = []
             for families in (reference, produced):
-                both.append(BJ.finalize_ds1_gate(
-                    true_result, families, total=total,
-                    bootstrap_replicates=BJ.N_BOOTSTRAP_REPLICATES))
+                both.append(BJ._finalize_ds1_gate_reference(
+                    true_result, families, total,
+                    BJ.N_BOOTSTRAP_REPLICATES))
             check(both[0]["null"]["j_null_max"] == both[1]["null"]["j_null_max"],
                   "null summaries agree")
             check(both[0]["null"]["q95"] == both[1]["null"]["q95"]
@@ -3220,33 +3222,85 @@ def test_ds1_gate_requires_the_complete_null():
         "ambiguous_fraction": 0.0, "leg2_boundaries_ok": True,
         "leg1": {"ok": True}, "results": [],
     }
+    # The private reference takes a size, so a test can afford to run it.
     full = {f: [0.1] * 5 for f in BJ.CONTROL_FAMILIES}
-    gate = BJ.finalize_ds1_gate(true_result, full, total=5)
+    gate = BJ._finalize_ds1_gate_reference(true_result, full, 5,
+                                           BJ.N_BOOTSTRAP_REPLICATES)
     check(gate["decision"]["null_replicates"] == 5,
-          "a complete (small) null finalises and records its size")
+          "the reference finalises a small complete null")
     check(gate["decision"]["bootstrap_replicates"] == BJ.N_BOOTSTRAP_REPLICATES,
           "the registered bootstrap size is recorded")
 
     short = {f: [0.1] * 4 for f in BJ.CONTROL_FAMILIES}
     try:
-        BJ.finalize_ds1_gate(true_result, short, total=5)
+        BJ._finalize_ds1_gate_reference(true_result, short, 5,
+                                        BJ.N_BOOTSTRAP_REPLICATES)
         check(False, "a short family must be refused")
     except BJ.NullShardError as exc:
         check("registered null is" in str(exc),
               "the refusal names the registered size")
     missing = {f: [0.1] * 5 for f in BJ.CONTROL_FAMILIES[:2]}
     try:
-        BJ.finalize_ds1_gate(true_result, missing, total=5)
+        BJ._finalize_ds1_gate_reference(true_result, missing, 5,
+                                        BJ.N_BOOTSTRAP_REPLICATES)
         check(False, "a missing family must be refused")
     except BJ.NullShardError as exc:
         check("absent" in str(exc), "the missing family is named")
     try:
-        BJ.finalize_ds1_gate(true_result, full, total=5,
-                             bootstrap_replicates=100)
+        BJ._finalize_ds1_gate_reference(true_result, full, 5, 100)
         check(False, "a non-registered bootstrap size must be refused")
     except BJ.Q5DJoinError as exc:
         check("registered bootstrap" in str(exc),
               "the bootstrap size is fixed at 2,000")
+
+
+def test_public_finalizer_has_no_short_null_bypass():
+    """A public production function must not be askable for a shorter null."""
+    print("public DS1 gate: exactly 10,000, no `total` to bypass it")
+    import inspect
+    for fn in (BJ.finalize_ds1_gate, BJ.run_ds1_gate_sharded):
+        params = inspect.signature(fn).parameters
+        check("total" not in params,
+              f"{fn.__name__}() has no `total` parameter")
+        check("n_null" not in params and "replicates" not in params,
+              f"{fn.__name__}() has no other replicate-count knob")
+    check("total" in inspect.signature(BJ._finalize_ds1_gate_reference)
+          .parameters,
+          "the private reference still takes a size, for tests only")
+
+    true_result = {
+        "split": "DS1", "j_min_true": 0.9, "n_processed": 1000,
+        "coverage": {"overall_coverage": 0.97,
+                     "class_coverage": {"N": .97, "S": .96, "V": .95},
+                     "class_coverage_balance": 0.95,
+                     "record_coverage": {"101": 0.96},
+                     "record_coverage_balance": 0.98,
+                     "agreement_overall": 0.999,
+                     "agreement_by_class": {"N": .999, "S": .99, "V": .99}},
+        "s_share_inflation": {"232": 1.0},
+        "per_record_certified": {"101": (90, 100)},
+        "ambiguous_fraction": 0.0, "leg2_boundaries_ok": True,
+        "leg1": {"ok": True}, "results": [],
+    }
+    for label, size in (("one short of the registered null",
+                         BJ.N_NULL_REPLICATES - 1),
+                        ("one over the registered null",
+                         BJ.N_NULL_REPLICATES + 1),
+                        ("a tiny null", 5),
+                        ("an empty null", 0)):
+        families = {f: [0.1] * size for f in BJ.CONTROL_FAMILIES}
+        try:
+            BJ.finalize_ds1_gate(true_result, families)
+            check(False, f"{label} ({size}) must not produce a decision")
+        except BJ.NullShardError as exc:
+            check(str(BJ.N_NULL_REPLICATES) in str(exc),
+                  f"{label} ({size}) is refused against the registered size")
+    exact = {f: [0.1] * BJ.N_NULL_REPLICATES for f in BJ.CONTROL_FAMILIES}
+    gate = BJ.finalize_ds1_gate(true_result, exact)
+    check(gate["decision"]["null_replicates"] == BJ.N_NULL_REPLICATES,
+          "exactly 10,000 in all three families is accepted")
+    check(gate["decision"]["bootstrap_replicates"] == 2000,
+          "and the bootstrap is the registered 2,000")
 
 
 def test_ds2_release_requires_the_full_null_and_bootstrap():
@@ -3447,6 +3501,7 @@ def main() -> int:
         test_true_join_stage_reaches_no_verdict,
         test_run_join_cannot_start_an_inline_null,
         test_ds1_gate_requires_the_complete_null,
+        test_public_finalizer_has_no_short_null_bypass,
         test_ds2_release_requires_the_full_null_and_bootstrap,
         test_notebook_separates_the_three_stages,
         test_ds1_integration_changed_no_science,

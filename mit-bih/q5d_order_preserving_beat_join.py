@@ -2050,15 +2050,36 @@ def _serial_null_reference(context: NullContext, total: int
 
 def finalize_ds1_gate(true_result: Mapping[str, object],
                       families: Mapping[str, Sequence[float]],
-                      total: int = N_NULL_REPLICATES,
                       bootstrap_replicates: int = N_BOOTSTRAP_REPLICATES
                       ) -> Dict[str, object]:
-    """Combine the TRUE join with a complete null and reach the verdict.
+    """Combine the TRUE join with the registered null and reach the verdict.
 
-    The registered order, and the only route to a DS1 decision: verify the
-    three families are complete, then `null_summary` -> record-cluster
-    bootstrap -> `evaluate_gates`.  An incomplete null cannot reach this
-    function's end, so no decision can be built from one.
+    The only route to a DS1 decision, and it accepts **exactly**
+    :data:`N_NULL_REPLICATES` replicates in each of the three families.  There
+    is deliberately no `total` parameter: a public function that could be
+    asked for a shorter null is a short-null bypass, and the registered null
+    has no short form.  Tests that need a small null use the private
+    reference finalizer, which cannot be reached from production.
+
+    Registered order: verify the three families are complete, then
+    `null_summary` -> record-cluster bootstrap -> `evaluate_gates`.
+    """
+    return _finalize_ds1_gate_reference(true_result, families,
+                                        N_NULL_REPLICATES,
+                                        bootstrap_replicates)
+
+
+def _finalize_ds1_gate_reference(true_result: Mapping[str, object],
+                                 families: Mapping[str, Sequence[float]],
+                                 total: int,
+                                 bootstrap_replicates: int
+                                 ) -> Dict[str, object]:
+    """The gate computation, with the null size as a parameter.
+
+    Private, and used only so the equivalence tests can compare the serial
+    oracle against the sharded runner at a size a test can afford.  Production
+    reaches this only through :func:`finalize_ds1_gate`, which pins the size
+    to the registered constant.
     """
     problems: List[str] = []
     for family in CONTROL_FAMILIES:
@@ -2108,11 +2129,17 @@ def run_ds1_gate_sharded(mitdb_dir: str, mamba_path: str, cache_dir: str,
                          approval: Optional[str] = None,
                          shard_size: int = DEFAULT_SHARD_SIZE,
                          max_workers: int = DEFAULT_MAX_WORKERS,
-                         total: int = N_NULL_REPLICATES,
                          git_commit: Optional[str] = None,
                          progress: Optional[object] = None
                          ) -> Dict[str, object]:
-    """The one production route to a DS1 decision: TRUE -> shards -> gate."""
+    """The one production route to a DS1 decision: TRUE -> shards -> gate.
+
+    Like :func:`finalize_ds1_gate` this takes no `total`: the registered null
+    is 3 x :data:`N_NULL_REPLICATES` and production has no shorter form.
+    `shard_size` and `max_workers` are scheduling knobs and change nothing
+    about what is computed.
+    """
+    total = N_NULL_REPLICATES
     true_result = run_true_join(mitdb_dir, mamba_path, cache_dir, "DS1",
                                 preflight, approval)
     context = null_context_from_true_join(true_result, preflight, approval,
@@ -2122,7 +2149,7 @@ def run_ds1_gate_sharded(mitdb_dir: str, mamba_path: str, cache_dir: str,
                              shard_size=shard_size, max_workers=max_workers,
                              progress=progress)
     families = finalize_null_shards(shards, context, total=total)
-    gate = finalize_ds1_gate(true_result, families, total=total)
+    gate = finalize_ds1_gate(true_result, families)
     return {"true": true_result, "shards": len(shards), "families": families,
             **gate}
 
