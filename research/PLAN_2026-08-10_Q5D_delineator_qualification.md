@@ -51,14 +51,44 @@ pwave 1.0.0 의 12 record 를 repo 의 de Chazal split(`colab_crossdb.py:24-25`)
 freeze 를 실행 경계로 삼아 세 run 으로 쪼갠다. **QUALIFY-B 는 QUALIFY-A 가 상수를
 저장한 뒤에만 돌 수 있고, 한 번만 돈다.**
 
-### QUALIFY-0 — environment pin (파형 읽기 전)
+### QUALIFY-0 — environment pin (파형 읽기 전) — **실행 완료**
 
 spec: *"Pin and record the exact package version and source hash **before reading any
 DS1 waveform**."* 그래서 별도 run 으로 앞에 뺀다.
 
-- 기록: Python·OS·`neurokit2` 버전과 **소스 트리 SHA-256**·`wfdb` 버전·`numpy`/`scipy` 버전.
-- 산출: `audit/runs/<ts>/env_pin.json`
-- 이 파일이 없으면 QUALIFY-A 가 시작을 거부한다.
+- 기록: Python·OS·`neurokit2` 버전과 **소스 트리 SHA-256**·`wfdb`·`numpy`·`scipy`·`pandas`.
+- 산출: `qualify/runs/<ts>/env_pin.json`
+- 이 파일이 없으면 QUALIFY-A 가 시작을 거부한다(`env_pin_is_complete`).
+
+**실측 (run `20260810T000629`, Colab, 파형 읽기 전)**
+
+| package | version | .py files |
+|---|---|---|
+| `neurokit2` | 0.2.13 | 313 |
+| `wfdb` | 4.3.1 | 28 |
+| `numpy` | 2.0.2 | 400 |
+| `scipy` | 1.16.3 | 961 |
+
+**이 run 의 source SHA-256 값은 폐기했다 (2026-08-10 정정).** 그 값들은 임시
+인라인 셀이 `os.walk` **순회 순서**로 해시한 것이고, 모듈의 `hash_source_tree` 는
+**상대경로 정렬 순서**로 해시한다. 같은 파일·같은 내용이라도 두 순서는 다른 digest 를
+내므로(로컬 재현: `numpy` walk `74ccf630…` vs sorted `ad55d46e…`) 두 값은 애초에
+비교 대상이 아니었다. 그 값을 baseline 으로 박아둔 탓에 두 번째 실행이
+`wfdb`·`numpy`·`scipy` 에서 DRIFT 를 보고했는데, **환경은 전혀 바뀌지 않았다** —
+하위 디렉터리가 없는 패키지만 두 순서가 우연히 일치하고(`neurokit2` 가 그래서 통과),
+나머지는 전부 어긋난 것이다.
+
+고친 방식: **repo 에 hash 를 박지 않는다.** hash 를 박으면 그 hash 를 만든 알고리즘까지
+박는 셈이다. 대신 첫 실행이 Drive 에 `qualify/env_pin_baseline.json` 을 쓰고, 이후
+실행이 그 파일과 대조한다. pin 은 `hash_algo_version` 을 함께 들고 다니며, 버전이
+다르면 "드리프트" 라고 말하지 않고 **비교 불가로 거부**한다.
+
+**정정 — `pandas` 가 pin 목록에서 빠져 있었다.** 그 실행에서 `neurokit2` 설치가
+`pandas` 를 2.2.2 → 2.3.3 으로 올렸고(`google-colab 1.0.0 requires pandas==2.2.2`
+경고), `ecg_delineate` 는 pandas 를 거쳐 결과를 돌려주므로 버전이 결과에 닿을 수
+있다. 모듈의 `PINNED_PACKAGES` 에 `pandas` 를 넣었으니, **셀 5를 한 번 더 돌려
+pandas 까지 포함된 pin 을 만든 뒤 QUALIFY-A 로 넘어간다.** 위 네 값은 그때 다시
+찍히며 동일해야 한다(다르면 환경이 바뀐 것이므로 멈추고 보고).
 
 ### QUALIFY-A — DS1 dry report + 상수 freeze
 
@@ -218,6 +248,10 @@ qualification 을 구현하려면 둘 중 하나가 필요하고, **어느 쪽�
   테스트 + `notebooks/quest53_q5d_qualify_pwave_delineator.ipynb`) 하고 spec 의 허용
   목록에 세 파일을 더한다. ACQUIRE 모듈은 잠긴 채로 남는다. **권장.**
 
-이 개정은 Codex 소유(design_owner)이므로, 구현 착수 전에 허용 목록 확대를 결정 사항으로
-올린다. 그 전까지 §9 의 0번(환경 pin)만 진행한다 — 0번은 어떤 repo 파일도 바꾸지 않고
-Colab 셀에서 Drive 에 JSON 하나를 쓸 뿐이다.
+**2026-08-10 확정: B 를 택했다.** 사용자 승인으로 세 파일을 추가하고 spec 의 허용
+목록에 등재했다. ACQUIRE 모듈은 손대지 않았다 — `assert_acquire_only` 와
+`FORBIDDEN_TOKENS` 가 그대로 남아 있고, 그 모듈의 220 checks 도 그대로 통과한다.
+
+새 모듈도 같은 방식으로 자신을 잠근다: `assert_qualify_only` 가 소스에서
+`v10pkg`·`mamba_data`·`ecg_multi`·`core_membership`·PR-AUC 계열·학습 호출을 텍스트로
+금지한다. 즉 **자격검증 모듈은 outcome 에 닿는 코드를 가질 수 없다.**

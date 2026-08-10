@@ -216,6 +216,14 @@ It does not advance the experiment: the frontmatter `status` stays
 - `mit-bih/q5d_expert_validated_pwave_timing.py`
 - `mit-bih/test_q5d_expert_validated_pwave_timing.py`
 - `notebooks/quest47_q5d_expert_validated_pwave_timing.ipynb`
+- `mit-bih/q5d_qualify_pwave_delineator.py`
+- `mit-bih/test_q5d_qualify_pwave_delineator.py`
+- `notebooks/quest53_q5d_qualify_pwave_delineator.ipynb`
+
+The three `qualify` files were added on 2026-08-10 for the measurement
+qualification substage.  The acquisition module stays locked as it is: it
+forbids `ecg_delineate`/`neurokit` in its own source, so qualification cannot
+be implemented by extending it without weakening the acquisition guarantee.
 
 Result intake into `research/ASSETS.md` and `research/PROJECT_STATE.md` is a
 separate, reviewable commit after the full run; it must not alter notebook
@@ -251,6 +259,54 @@ outputs.
 6. If any item fails, emit `MEASUREMENT_UNQUALIFIED` and stop.  Do not continue
    with a broadened window, another delineator, a better-looking lead, or manual
    exclusions inside this experiment.
+
+### QUALIFY substage result — 2026-08-10, gate PASS 5/5
+
+This subsection records **only** that the measurement qualification gate
+passed.  The frontmatter `status` stays `approved_for_implementation`, and
+**EXP-2026-007 is not `MEASURED`** — no model was scored and no association was
+computed.
+
+- decision `MEASUREMENT_QUALIFIED` · 5/5 gates · `first_stopping_reason: null`.
+- canonical run `20260810T005802`; the Drive bundle is the evidence, not the
+  notebook output:
+  `MyDrive/MedKOS/ecg-model/assets/EXP-2026-007_prep_data/qualify/runs/20260810T005802/`.
+- Frozen rule (hash `2a0a48cf243655e4…`, frozen at run `20260810T003933` before
+  any DS2 record was opened): neurokit2 0.2.13 `ecg_delineate(method="dwt")`,
+  channel 0, reference `.atr` R peaks, P search 40-300 ms, match +-50 ms
+  one-to-one.  DS1-derived constants over all 22 DS1 records: RR normal band
+  `[0.98268, 1.03043]` from 45,845 N beats; discordance threshold `2.000` as
+  the 75th percentile of 50,690 valid DS1 beats.
+- DS2 (`100 103 117 214 222 231`): record-macro sensitivity 0.9476,
+  record-macro PPV 0.8860, 0 many-to-one and 0 cross-beat joins, true/chance
+  match rate 8.283x with record-bootstrap 95% CI [7.460, 9.548].
+
+**Three caveats that the association stage must carry, all recorded before any
+outcome is opened:**
+
+1. **The per-record floor passed at exactly the minimum, 5/6.**  Record `222`
+   fails it with PPV 0.4873.  There is no margin on this criterion.
+2. **`222`'s PPV is ceiling-bound but the reason is unresolved.**  It carries
+   1,257 annotations against 2,477 detections, so PPV cannot exceed 0.5075, and
+   0.4873 is 96% of that.  Whether the unannotated half means *unlabelled P
+   waves* or *intervals with no P wave at all* is not determined by this run,
+   and the two readings have opposite implications for the instrument.  Resolve
+   this before using `222`'s `PR_discordance`.
+3. **`231` is the weakest measurement and the worst model record at once.**  Its
+   sensitivity 0.7859 is the lowest of the six, and Q5-A found it in all four
+   models' worst quartile with S PR-AUC 0.001-0.002.  Measurement quality and
+   model failure covary on the same record, so a P-timing/failure association
+   could partly be a measurement-quality artefact.  **Pre-register this as a
+   confounder** before the association analysis, not after.
+
+Also noted: the frozen discordance threshold is exactly `2.000` because record
+MAD is about one sample (2.78 ms at 360 Hz), so `PR_discordance` is quantised to
+integers and mass piles up on the threshold.  The association stage must state
+its boundary rule (`>=` versus `>`, and where ties go) explicitly.
+
+Item 3 of the PREP_DATA gate list (the `atr` beat join) is **still not
+performed**, and Q5-A measured that join at 1.9% — chance level.  Qualification
+passing does not unblock it.
 
 # Evaluation
 
@@ -419,13 +475,27 @@ separate explicit user approval before execution.
   Do not open the measurement-qualification or association-analysis stages until
   the acquisition bundle is reviewed and accepted.
 - 2026-08-09 — PREP_DATA-A ACQUIRE_ONLY accepted, canonical run
-  `20260809T153151`, 12/12 gates PASS.  Recorded in the subsection above and in
-  `research/ASSETS.md` / `research/PROJECT_STATE.md`.  **Experiment status is
-  unchanged** — the scientific question is unanswered and nothing after
-  PREP_DATA-A is approved.  Two provenance corrections were made during intake
+  `20260809T153151`, 12/12 gates PASS.  Recorded in the PREP_DATA subsection
+  above and in `research/ASSETS.md` / `research/PROJECT_STATE.md`.
+  **Experiment status is unchanged** — the scientific question is unanswered
+  and nothing after PREP_DATA-A is approved.  Two provenance corrections were
+  made during intake
   rather than silently: (a) the acquisition module carried a NumPy truth-value
   bug (`arr or []` on `wfdb` return values) that reported all 60 records as
   `OPEN_FAILED` on the first attempt; the fixed module is v3 and the regression
   test is `test_wfdb_array_returns`.  (b) The executed notebook was saved from a
   mixed execution state, so only cell 5 (the `20260809T153151` acquisition run)
   is kept as evidence and the other saved outputs were cleared, not rewritten.
+- 2026-08-10 — Measurement qualification run and accepted:
+  `MEASUREMENT_QUALIFIED`, 5/5, canonical run `20260810T005802`.  Recorded in
+  the subsection above and in `research/ASSETS.md` /
+  `research/PROJECT_STATE.md`.  **Experiment status unchanged** — the
+  scientific question is unanswered and the beat join and association stages
+  remain unapproved.  Three deviations-from-nothing worth logging: the
+  constants scope was set to all 22 DS1 records (the spec said "DS1 75th
+  percentile" without naming a record set; user decision); three new files were
+  added to the allowed list because the acquisition module forbids
+  `ecg_delineate` in its own source and extending it would weaken the
+  acquisition guarantee; and the DS1 dry report predicted a macro PPV of 0.754,
+  below the 0.80 gate, **which was recorded before the DS2 run and used to
+  change nothing** — the gate ran once on the frozen rule and returned 0.8860.
