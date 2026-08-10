@@ -216,6 +216,14 @@ It does not advance the experiment: the frontmatter `status` stays
 - `mit-bih/q5d_expert_validated_pwave_timing.py`
 - `mit-bih/test_q5d_expert_validated_pwave_timing.py`
 - `notebooks/quest47_q5d_expert_validated_pwave_timing.ipynb`
+- `mit-bih/q5d_qualify_pwave_delineator.py`
+- `mit-bih/test_q5d_qualify_pwave_delineator.py`
+- `notebooks/quest53_q5d_qualify_pwave_delineator.ipynb`
+
+The three `qualify` files were added on 2026-08-10 for the measurement
+qualification substage.  The acquisition module stays locked as it is: it
+forbids `ecg_delineate`/`neurokit` in its own source, so qualification cannot
+be implemented by extending it without weakening the acquisition guarantee.
 
 Result intake into `research/ASSETS.md` and `research/PROJECT_STATE.md` is a
 separate, reviewable commit after the full run; it must not alter notebook

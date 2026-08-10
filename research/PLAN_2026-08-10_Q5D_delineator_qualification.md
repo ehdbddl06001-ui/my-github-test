@@ -51,14 +51,30 @@ pwave 1.0.0 의 12 record 를 repo 의 de Chazal split(`colab_crossdb.py:24-25`)
 freeze 를 실행 경계로 삼아 세 run 으로 쪼갠다. **QUALIFY-B 는 QUALIFY-A 가 상수를
 저장한 뒤에만 돌 수 있고, 한 번만 돈다.**
 
-### QUALIFY-0 — environment pin (파형 읽기 전)
+### QUALIFY-0 — environment pin (파형 읽기 전) — **실행 완료**
 
 spec: *"Pin and record the exact package version and source hash **before reading any
 DS1 waveform**."* 그래서 별도 run 으로 앞에 뺀다.
 
-- 기록: Python·OS·`neurokit2` 버전과 **소스 트리 SHA-256**·`wfdb` 버전·`numpy`/`scipy` 버전.
-- 산출: `audit/runs/<ts>/env_pin.json`
-- 이 파일이 없으면 QUALIFY-A 가 시작을 거부한다.
+- 기록: Python·OS·`neurokit2` 버전과 **소스 트리 SHA-256**·`wfdb`·`numpy`·`scipy`·`pandas`.
+- 산출: `qualify/runs/<ts>/env_pin.json`
+- 이 파일이 없으면 QUALIFY-A 가 시작을 거부한다(`env_pin_is_complete`).
+
+**실측 (run `20260810T000629`, Colab, 파형 읽기 전)**
+
+| package | version | source SHA-256 | .py files |
+|---|---|---|---|
+| `neurokit2` | 0.2.13 | `aeebc91e527c8df42021f20c700c7127bc5fa8c9dff551107678b9e08d6752fd` | 313 |
+| `wfdb` | 4.3.1 | `59d90b04498d884f7262302eaf5a30e41c5542781ab5369b9841d5e2fd482807` | 28 |
+| `numpy` | 2.0.2 | `955935d8a6d2727780e2552d50422916ae1a41011c218abaeb1247d5eed2ceec` | 400 |
+| `scipy` | 1.16.3 | `460b4ab1d9dc2a220686d947424d1e410ad03c6d0fa43b2ac70c7fb44c3d6a6b` | 961 |
+
+**정정 — `pandas` 가 pin 목록에서 빠져 있었다.** 그 실행에서 `neurokit2` 설치가
+`pandas` 를 2.2.2 → 2.3.3 으로 올렸고(`google-colab 1.0.0 requires pandas==2.2.2`
+경고), `ecg_delineate` 는 pandas 를 거쳐 결과를 돌려주므로 버전이 결과에 닿을 수
+있다. 모듈의 `PINNED_PACKAGES` 에 `pandas` 를 넣었으니, **셀 5를 한 번 더 돌려
+pandas 까지 포함된 pin 을 만든 뒤 QUALIFY-A 로 넘어간다.** 위 네 값은 그때 다시
+찍히며 동일해야 한다(다르면 환경이 바뀐 것이므로 멈추고 보고).
 
 ### QUALIFY-A — DS1 dry report + 상수 freeze
 
@@ -218,6 +234,10 @@ qualification 을 구현하려면 둘 중 하나가 필요하고, **어느 쪽�
   테스트 + `notebooks/quest53_q5d_qualify_pwave_delineator.ipynb`) 하고 spec 의 허용
   목록에 세 파일을 더한다. ACQUIRE 모듈은 잠긴 채로 남는다. **권장.**
 
-이 개정은 Codex 소유(design_owner)이므로, 구현 착수 전에 허용 목록 확대를 결정 사항으로
-올린다. 그 전까지 §9 의 0번(환경 pin)만 진행한다 — 0번은 어떤 repo 파일도 바꾸지 않고
-Colab 셀에서 Drive 에 JSON 하나를 쓸 뿐이다.
+**2026-08-10 확정: B 를 택했다.** 사용자 승인으로 세 파일을 추가하고 spec 의 허용
+목록에 등재했다. ACQUIRE 모듈은 손대지 않았다 — `assert_acquire_only` 와
+`FORBIDDEN_TOKENS` 가 그대로 남아 있고, 그 모듈의 220 checks 도 그대로 통과한다.
+
+새 모듈도 같은 방식으로 자신을 잠근다: `assert_qualify_only` 가 소스에서
+`v10pkg`·`mamba_data`·`ecg_multi`·`core_membership`·PR-AUC 계열·학습 호출을 텍스트로
+금지한다. 즉 **자격검증 모듈은 outcome 에 닿는 코드를 가질 수 없다.**
