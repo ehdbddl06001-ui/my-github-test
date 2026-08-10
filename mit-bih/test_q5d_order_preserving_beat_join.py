@@ -1473,6 +1473,63 @@ def test_mitdb_expected_set_is_the_published_tree():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def test_checksum_mismatch_is_diagnosable():
+    """A hash mismatch must say enough to tell a rewrite from a corruption."""
+    print("checksum mismatch: benign rewrites are identified, not assumed")
+    tmp = tempfile.mkdtemp(prefix="q5d-diag-")
+    try:
+        original = "100\n101\n102\n"
+        path = os.path.join(tmp, "RECORDS")
+        published = __import__("hashlib").sha256(
+            original.encode("utf-8")).hexdigest()
+
+        # Same content, trailing newline stripped — a benign rewrite.
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            fh.write(original.rstrip("\n"))
+        observed = BJ.sha256_file(path)
+        detail = BJ.describe_checksum_mismatch(tmp, "RECORDS", published,
+                                               observed,
+                                               size=os.path.getsize(path))
+        check(detail["benign_explanation"] ==
+              "sha256_with_single_trailing_newline",
+              f"a stripped trailing newline is identified as such "
+              f"({detail.get('benign_explanation')})")
+        check(detail["non_empty_lines"] == 3, "the line count is reported")
+        check(detail["read_by_the_join"] is False,
+              "RECORDS is correctly reported as never read by the join")
+
+        # CRLF rewrite — also benign, also identified.
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            fh.write(original.replace("\n", "\r\n"))
+        crlf = BJ.describe_checksum_mismatch(
+            tmp, "RECORDS", published, BJ.sha256_file(path))
+        check(crlf["has_crlf"] and
+              crlf["benign_explanation"] == "sha256_lf_normalised",
+              "a CRLF rewrite is identified as such")
+
+        # Genuinely different content — no benign explanation offered.
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            fh.write("100\n101\n")
+        real = BJ.describe_checksum_mismatch(
+            tmp, "RECORDS", published, BJ.sha256_file(path))
+        check("benign_explanation" not in real,
+              "a real content change is NOT explained away")
+        check(real["non_empty_lines"] == 2,
+              "the actual line count exposes the difference")
+
+        # A file the join does read is flagged differently.
+        atr = BJ.describe_checksum_mismatch(tmp, "101.atr", "a" * 64, "b" * 64)
+        check(atr["read_by_the_join"] is True,
+              "a ledger record's .atr is reported as read by the join")
+        paced = BJ.describe_checksum_mismatch(tmp, "102.atr", "a" * 64,
+                                              "b" * 64)
+        check(paced["read_by_the_join"] is False,
+              "a paced record's .atr is present but never read")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_publisher_checksums_are_cross_checked():
     print("MIT-BIH bytes are compared against the publisher's own SHA256SUMS")
     tmp = tempfile.mkdtemp(prefix="q5d-sums-")
@@ -1490,7 +1547,8 @@ def test_publisher_checksums_are_cross_checked():
         names = tuple(payloads) + (BJ.MITDB_CHECKSUM_FILE,)
         file_set = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
         good = BJ.verify_against_publisher_checksums(file_set, tmp)
-        check(good["available"] and good["ok"] and good["verified"] == 3,
+        check(good["available"] and good["ok"] and good["matched"] == 3
+              and good["checked"] == 3,
               "matching bytes verify against the publisher list")
 
         parsed = BJ.parse_sha256sums(sums)
@@ -1503,6 +1561,15 @@ def test_publisher_checksums_are_cross_checked():
         bad = BJ.verify_against_publisher_checksums(tampered, tmp)
         check(not bad["ok"] and any("101.dat" in p for p in bad["problems"]),
               "a byte change is caught against the publisher list")
+        check(bad["matched"] == 2 and bad["checked"] == 3,
+              "matched and checked are reported separately, so 'checked' "
+              "can never read as 'everything passed'")
+        detail = bad["mismatched"][0]
+        check(detail["name"] == "101.dat", "the mismatching file is named")
+        check(detail["published_sha256"] != detail["observed_sha256"],
+              "both digests are reported for comparison")
+        check("read_by_the_join" in detail,
+              "the report says whether the join ever opens that file")
 
         os.remove(sums)
         absent = BJ.verify_against_publisher_checksums(file_set, tmp)
@@ -2340,6 +2407,7 @@ def main() -> int:
         test_file_set_hashing_reads_content,
         test_mitdb_expected_set_is_the_published_tree,
         test_publisher_checksums_are_cross_checked,
+        test_checksum_mismatch_is_diagnosable,
         test_result_grid_is_preregistered_not_globbed,
         test_ds1_does_not_demand_a_result_contract,
         test_all_25_result_files_are_checked,

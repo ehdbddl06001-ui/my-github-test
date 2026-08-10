@@ -745,19 +745,104 @@ def verify_against_publisher_checksums(file_set: Mapping[str, object],
                 "note": f"{MITDB_CHECKSUM_FILE} not present in {directory}"}
     published = parse_sha256sums(checksum_path)
     problems: List[str] = []
-    checked = 0
+    checked = matched = 0
+    mismatched: List[Dict[str, object]] = []
+    unlisted: List[str] = []
     for entry in file_set.get("files", ()):                 # type: ignore[union-attr]
         name = str(entry["name"])
         if name == MITDB_CHECKSUM_FILE:
             continue                    # a checksum file cannot list itself
         want = published.get(name)
         if want is None:
-            continue                    # publisher does not list it
+            unlisted.append(name)       # publisher does not list it
+            continue
         checked += 1
-        if str(entry["sha256"]).lower() != want:
+        observed = str(entry["sha256"]).lower()
+        if observed == want:
+            matched += 1
+        else:
             problems.append(f"{name}: sha256 differs from the publisher list")
+            mismatched.append(describe_checksum_mismatch(
+                directory, name, published=want, observed=observed,
+                size=entry.get("bytes")))
     return {"available": True, "ok": not problems, "problems": problems,
-            "verified": checked, "published_entries": len(published)}
+            # `checked` is how many had a published entry; `matched` is how
+            # many agreed.  An earlier version reported only the former under
+            # the name "verified", which read as though everything passed.
+            "checked": checked, "matched": matched,
+            "mismatched": mismatched, "unlisted": sorted(unlisted),
+            "published_entries": len(published),
+            "read_by_the_join": sorted(
+                n for n in (m["name"] for m in mismatched)
+                if _is_read_by_the_join(n))}
+
+
+#: Extensions the join actually opens.  `wfdb` reads `{record}.hea` and
+#: `{record}.atr` for each ledger record; nothing else in the tree is touched.
+JOIN_READ_EXTENSIONS: Tuple[str, ...] = (".hea", ".atr")
+
+
+def _is_read_by_the_join(name: str) -> bool:
+    """Does the join ever open this file?  Publisher indexes: no."""
+    stem, ext = os.path.splitext(name)
+    if ext.lower() not in JOIN_READ_EXTENSIONS:
+        return False
+    return stem in {row.record for split in SPLITS
+                    for row in build_ledger()[split]}
+
+
+def describe_checksum_mismatch(directory: str, name: str, published: str,
+                               observed: str,
+                               size: Optional[object] = None
+                               ) -> Dict[str, object]:
+    """Enough detail to tell a benign rewrite from a real corruption.
+
+    A hash mismatch on its own says "different bytes" and nothing more.  For a
+    small publisher index file the difference is usually visible immediately —
+    a changed line ending, a stripped trailing newline, a BOM, or a genuinely
+    different record list.  This reports those without changing any gate.
+    """
+    path = os.path.join(directory, name)
+    out: Dict[str, object] = {
+        "name": name, "published_sha256": published,
+        "observed_sha256": observed, "bytes": size,
+        "read_by_the_join": _is_read_by_the_join(name),
+    }
+    try:
+        with open(path, "rb") as handle:
+            blob = handle.read(65536)
+    except OSError as exc:                              # pragma: no cover
+        out["error"] = str(exc)
+        return out
+    out["bytes_read"] = len(blob)
+    out["starts_with_bom"] = blob.startswith(b"\xef\xbb\xbf")
+    out["has_crlf"] = b"\r\n" in blob
+    out["ends_with_newline"] = blob.endswith(b"\n")
+    if len(blob) <= 8192:
+        try:
+            text = blob.decode("utf-8")
+        except UnicodeDecodeError:                      # pragma: no cover
+            out["binary"] = True
+            return out
+        lines = [ln for ln in text.splitlines() if ln.strip()]
+        out["non_empty_lines"] = len(lines)
+        out["first_lines"] = lines[:5]
+        out["last_lines"] = lines[-5:]
+        # The two cheapest benign explanations, checked explicitly.
+        stripped = text.rstrip("\n")
+        out["sha256_without_trailing_newlines"] = hashlib.sha256(
+            stripped.encode("utf-8")).hexdigest()
+        out["sha256_with_single_trailing_newline"] = hashlib.sha256(
+            (stripped + "\n").encode("utf-8")).hexdigest()
+        out["sha256_lf_normalised"] = hashlib.sha256(
+            text.replace("\r\n", "\n").encode("utf-8")).hexdigest()
+        for label in ("sha256_without_trailing_newlines",
+                      "sha256_with_single_trailing_newline",
+                      "sha256_lf_normalised"):
+            if out[label] == published:
+                out["benign_explanation"] = label
+                break
+    return out
 
 
 def hash_preflight(assets: Mapping[str, str],
