@@ -1889,8 +1889,8 @@ def test_run_join_requires_a_passing_preflight():
     except BJ.Q5DJoinError as exc:
         check("preflight freeze is missing" in str(exc),
               "run_join stops on an incomplete freeze before reading anything")
-    check("preflight" in BJ.run_join.__doc__,
-          "run_join documents the freeze as required, not advisory")
+    check("preflight" in (BJ.run_true_join.__doc__ or ""),
+          "run_true_join documents the freeze as required, not advisory")
     # An unauthorised call must be refused as unauthorised, whatever the
     # environment has installed — permission before capability.
     try:
@@ -1979,7 +1979,9 @@ def test_ds2_release_needs_a_verified_ds1_freeze():
                 "null_summary.json": null if null is not None else {
                     "rule_fingerprint": BJ.rule_fingerprint(),
                     "master_seed": BJ.MASTER_SEED,
-                    "j_null_max": [0.1, 0.2]},
+                    # the registered null size — a shorter one is refused
+                    "j_null_max": [0.1] * BJ.N_NULL_REPLICATES},
+                "bootstrap.json": {"replicates": BJ.N_BOOTSTRAP_REPLICATES},
             }
             for name, payload in payloads.items():
                 with open(os.path.join(tmp, name), "w", encoding="utf-8") as fh:
@@ -2000,10 +2002,15 @@ def test_ds2_release_needs_a_verified_ds1_freeze():
                            "rule_fingerprint": "0" * 64}}),
             ("a null under the wrong seed",
              {"null": {"rule_fingerprint": BJ.rule_fingerprint(),
-                       "master_seed": 1, "j_null_max": [0.1]}}),
+                       "master_seed": 1,
+                       "j_null_max": [0.1] * BJ.N_NULL_REPLICATES}}),
             ("a null with no replicates",
              {"null": {"rule_fingerprint": BJ.rule_fingerprint(),
                        "master_seed": BJ.MASTER_SEED, "j_null_max": []}}),
+            ("a truncated null",
+             {"null": {"rule_fingerprint": BJ.rule_fingerprint(),
+                       "master_seed": BJ.MASTER_SEED,
+                       "j_null_max": [0.1] * 9999}}),
             ("a manifest that froze no inputs",
              {"manifest": {"rule_fingerprint": BJ.rule_fingerprint(),
                            "code": {"sha256": "d" * 64}}}),
@@ -2231,7 +2238,7 @@ def test_notebook_contract():
                        default=10 ** 6)
     join_at = min((i for i, c in enumerate(cells)
                    if c["cell_type"] == "code"
-                   and "BJ.run_join(" in "".join(c["source"])), default=-1)
+                   and "BJ.run_true_join(" in "".join(c["source"])), default=-1)
     check(preflight_at < join_at,
           f"the hash preflight cell ({preflight_at}) runs before the join "
           f"cell ({join_at})")
@@ -2243,7 +2250,10 @@ def test_notebook_contract():
           "the DS2 release is minted from a frozen DS1 bundle, not from MODE")
     check("DS1_FROZEN_BUNDLE" in joined,
           "the notebook names the DS1 frozen bundle DS2 must agree with")
-    check("BJ.run_join(" in joined, "the notebook actually calls run_join")
+    check("BJ.run_true_join(" in joined,
+          "the notebook calls the TRUE-join stage")
+    check("BJ.run_join(" not in joined,
+          "the notebook does not use the compatibility shim")
     check("PREFLIGHT, APPROVAL" in joined,
           "the join receives the preflight freeze as a required input")
     check("ASSET_RESULT_NPZ" not in joined,
@@ -2423,7 +2433,8 @@ def test_notebook_refuses_a_stale_module():
     check("NEED_ATTRS" in joined and "hasattr(BJ, a)" in joined,
           "the notebook checks the names it actually uses, so a forgotten "
           "version bump cannot let a stale module through")
-    for name in ("describe_checksum_mismatch", "build_preflight", "run_join"):
+    for name in ("describe_checksum_mismatch", "build_preflight",
+                 "run_true_join", "finalize_ds1_gate"):
         check(f'"{name}"' in joined,
               f"the capability guard names '{name}'")
 
@@ -2516,9 +2527,7 @@ def test_leg2_stage_does_not_run_the_null():
         nb = json.load(fh)
     joined = "\n".join("".join(c["source"]) for c in nb["cells"]
                         if c["cell_type"] == "code")
-    check("null_replicates=0" in joined,
-          "the join cell never runs the null inline")
-    check("run_null_shards" in joined,
+    check("run_ds1_gate_sharded" in joined,
           "the null runs through the shard runner, in DS1_GATE")
     check("finalize_null_shards" in joined,
           "the notebook finalises rather than assembling shards by hand")
@@ -2599,7 +2608,8 @@ def test_no_stage_can_skip_silently():
           "the skip message warns that the constants above are not results")
 
     # Every cell that opens registered data must be behind the helper.
-    for marker in ("replay_leg1_split", "BJ.run_join(", "run_null_shards"):
+    for marker in ("replay_leg1_split", "BJ.run_true_join(",
+                   "run_ds1_gate_sharded"):
         owners = [c for c in cells if marker in "".join(c["source"])]
         if check(owners, f"at least one cell calls {marker}"):
             for cell in owners:
@@ -3090,6 +3100,270 @@ def test_null_science_constants_are_untouched():
     finally:
         BJ.DEFAULT_SHARD_SIZE = original
 
+
+def test_serial_reference_equals_sharded_end_to_end():
+    """The whole DS1 gate, both ways, must agree — arrays, summary, gate."""
+    print("serial reference == sharded production, end to end")
+    total = 9
+    with _tiny_ledger():
+        context = _null_context()
+        reference = BJ._serial_null_reference(context, total)
+        tmp = tempfile.mkdtemp(prefix="q5d-e2e-")
+        try:
+            shards = BJ.run_null_shards(context, tmp, total=total,
+                                        shard_size=2, max_workers=2)
+            produced = BJ.finalize_null_shards(shards, context, total=total)
+            for family in BJ.CONTROL_FAMILIES:
+                check(produced[family] == reference[family],
+                      f"family {family}: production equals the oracle")
+
+            true_result = {
+                "split": "DS1", "j_min_true": 0.97, "n_processed": 5000,
+                "coverage": {"overall_coverage": 0.97,
+                             "class_coverage": {"N": .97, "S": .96, "V": .95},
+                             "class_coverage_balance": 0.95,
+                             "record_coverage": {"901": 0.96},
+                             "record_coverage_balance": 0.98,
+                             "agreement_overall": 0.999,
+                             "agreement_by_class": {"N": .999, "S": .99,
+                                                    "V": .99}},
+                "s_share_inflation": {"232": 1.0},
+                "per_record_certified": {"901": (96, 100), "902": (95, 100)},
+                "ambiguous_fraction": 0.01, "leg2_boundaries_ok": True,
+                "leg1": {"ok": True}, "results": [],
+            }
+            both = []
+            for families in (reference, produced):
+                both.append(BJ.finalize_ds1_gate(
+                    true_result, families, total=total,
+                    bootstrap_replicates=BJ.N_BOOTSTRAP_REPLICATES))
+            check(both[0]["null"]["j_null_max"] == both[1]["null"]["j_null_max"],
+                  "null summaries agree")
+            check(both[0]["null"]["q95"] == both[1]["null"]["q95"]
+                  and both[0]["null"]["q99"] == both[1]["null"]["q99"],
+                  "null quantiles agree")
+            check(both[0]["bootstrap"] == both[1]["bootstrap"],
+                  "record-cluster bootstraps agree")
+            check(both[0]["decision"]["decision"] ==
+                  both[1]["decision"]["decision"],
+                  f"final gate decisions agree "
+                  f"({both[0]['decision']['decision']})")
+            check(both[0]["decision"]["gates"] == both[1]["decision"]["gates"],
+                  "every gate value agrees, not only the verdict")
+        finally:
+            import shutil
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_true_join_stage_reaches_no_verdict():
+    print("the TRUE join stage measures; it does not judge")
+    doc = BJ.run_true_join.__doc__ or ""
+    check("no null" in doc and "no verdict" in doc,
+          "run_true_join documents that it reaches no verdict")
+    check(BJ.STATUS_TRUE_JOIN_MEASURED == "TRUE_JOIN_MEASURED"
+          and BJ.STATUS_DS1_GATE_NOT_RUN == "DS1_GATE_NOT_RUN",
+          "the two stage statuses exist under the names Codex fixed")
+    # Stage statuses must NOT have been added to the registered decision set.
+    check(BJ.STATUS_TRUE_JOIN_MEASURED not in BJ.DECISIONS
+          and BJ.STATUS_DS1_GATE_NOT_RUN not in BJ.DECISIONS,
+          "stage statuses are not decisions; the decision tree is unchanged")
+    check(BJ.DECISIONS == ("JOIN_INPUT_ABSENT", "JOIN_RULE_FALSIFIED",
+                           "JOIN_SELECTION_BIASED", "JOIN_UNRESOLVED",
+                           "JOIN_IDENTIFIABLE", "JOIN_RESULT_NOT_RUN"),
+          "the registered decisions are exactly as before")
+    import inspect
+    sig = inspect.signature(BJ.run_true_join)
+    check("null_replicates" not in sig.parameters,
+          "run_true_join cannot be asked for a null at all")
+    src = inspect.getsource(BJ.run_true_join)
+    check("evaluate_gates" not in src,
+          "the TRUE join stage does not evaluate the gates")
+    check("apply_control" not in src,
+          "the TRUE join stage does not touch the control families")
+
+
+def test_run_join_cannot_start_an_inline_null():
+    print("run_join can no longer start a 10,000-replicate inline null")
+    try:
+        BJ.run_join("/a", "/b", "/c", "DS1", _fake_freeze(),
+                    null_replicates=BJ.N_NULL_REPLICATES)
+        check(False, "an inline null request must be refused")
+    except BJ.Q5DJoinError as exc:
+        check("will not compute a null in-process" in str(exc),
+              "the refusal is explicit")
+        check("run_null_shards" in str(exc) and "finalize_ds1_gate" in str(exc),
+              "and points at the production route")
+    import inspect
+    src = inspect.getsource(BJ.run_join)
+    check("for replicate in range" not in src,
+          "no replicate loop survives in the public wrapper")
+    # The oracle still exists, privately.
+    check(BJ._serial_null_reference.__name__.startswith("_"),
+          "the inline computation is private")
+    check("test oracle" in (BJ._serial_null_reference.__doc__ or ""),
+          "and is documented as a test oracle")
+
+
+def test_ds1_gate_requires_the_complete_null():
+    print("no decision from an incomplete or wrong-sized null")
+    true_result = {
+        "split": "DS1", "j_min_true": 0.9, "n_processed": 1000,
+        "coverage": {"overall_coverage": 0.97,
+                     "class_coverage": {"N": .97, "S": .96, "V": .95},
+                     "class_coverage_balance": 0.95,
+                     "record_coverage": {"101": 0.96},
+                     "record_coverage_balance": 0.98,
+                     "agreement_overall": 0.999,
+                     "agreement_by_class": {"N": .999, "S": .99, "V": .99}},
+        "s_share_inflation": {"232": 1.0},
+        "per_record_certified": {"101": (90, 100)},
+        "ambiguous_fraction": 0.0, "leg2_boundaries_ok": True,
+        "leg1": {"ok": True}, "results": [],
+    }
+    full = {f: [0.1] * 5 for f in BJ.CONTROL_FAMILIES}
+    gate = BJ.finalize_ds1_gate(true_result, full, total=5)
+    check(gate["decision"]["null_replicates"] == 5,
+          "a complete (small) null finalises and records its size")
+    check(gate["decision"]["bootstrap_replicates"] == BJ.N_BOOTSTRAP_REPLICATES,
+          "the registered bootstrap size is recorded")
+
+    short = {f: [0.1] * 4 for f in BJ.CONTROL_FAMILIES}
+    try:
+        BJ.finalize_ds1_gate(true_result, short, total=5)
+        check(False, "a short family must be refused")
+    except BJ.NullShardError as exc:
+        check("registered null is" in str(exc),
+              "the refusal names the registered size")
+    missing = {f: [0.1] * 5 for f in BJ.CONTROL_FAMILIES[:2]}
+    try:
+        BJ.finalize_ds1_gate(true_result, missing, total=5)
+        check(False, "a missing family must be refused")
+    except BJ.NullShardError as exc:
+        check("absent" in str(exc), "the missing family is named")
+    try:
+        BJ.finalize_ds1_gate(true_result, full, total=5,
+                             bootstrap_replicates=100)
+        check(False, "a non-registered bootstrap size must be refused")
+    except BJ.Q5DJoinError as exc:
+        check("registered bootstrap" in str(exc),
+              "the bootstrap size is fixed at 2,000")
+
+
+def test_ds2_release_requires_the_full_null_and_bootstrap():
+    print("DS2 release accepts only a canonical, complete DS1 bundle")
+    tmp = tempfile.mkdtemp(prefix="q5d-ds2bundle-")
+    try:
+        freeze = _fake_freeze()
+
+        def write(null_n=BJ.N_NULL_REPLICATES,
+                  boot_n=BJ.N_BOOTSTRAP_REPLICATES, with_boot=True):
+            payloads = {
+                "decision.json": {"decision": BJ.DECISION_IDENTIFIABLE,
+                                  "rule_fingerprint": BJ.rule_fingerprint()},
+                "manifest.json": {"rule_fingerprint": BJ.rule_fingerprint(),
+                                  "code": {"sha256": "d" * 64},
+                                  "preflight": {k: freeze[k] for k in
+                                                BJ.PREFLIGHT_FREEZE_FIELDS}},
+                "null_summary.json": {"rule_fingerprint": BJ.rule_fingerprint(),
+                                      "master_seed": BJ.MASTER_SEED,
+                                      "j_null_max": [0.1] * null_n},
+            }
+            if with_boot:
+                payloads["bootstrap.json"] = {"replicates": boot_n}
+            for name in ("decision.json", "manifest.json", "null_summary.json",
+                         "bootstrap.json"):
+                path = os.path.join(tmp, name)
+                if name in payloads:
+                    with open(path, "w", encoding="utf-8") as fh:
+                        json.dump(payloads[name], fh)
+                elif os.path.exists(path):
+                    os.remove(path)
+
+        write()
+        check(BJ.release_ds2_support_gate(tmp, freeze,
+                                          BJ.EXECUTION_APPROVAL_TOKEN)
+              == BJ.DS2_LABEL_RELEASE_TOKEN,
+              "a complete canonical bundle releases DS2")
+
+        for label, kwargs in (("a truncated null", {"null_n": 9999}),
+                              ("an oversized null", {"null_n": 10001}),
+                              ("a short bootstrap", {"boot_n": 500}),
+                              ("no bootstrap.json", {"with_boot": False})):
+            write(**kwargs)
+            try:
+                BJ.release_ds2_support_gate(tmp, freeze,
+                                            BJ.EXECUTION_APPROVAL_TOKEN)
+                check(False, f"{label} must not release DS2")
+            except BJ.Q5DJoinError:
+                check(True, f"{label} does not release DS2")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_notebook_separates_the_three_stages():
+    print("notebook: TRUE join, shard null, and gate are three stages")
+    with open(NOTEBOOK, encoding="utf-8") as fh:
+        nb = json.load(fh)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    joined = "\n".join("".join(c["source"]) for c in cells)
+
+    true_cells = [c for c in cells if "BJ.run_true_join(" in "".join(c["source"])]
+    gate_cells = [c for c in cells
+                  if "run_ds1_gate_sharded" in "".join(c["source"])]
+    if check(len(true_cells) == 1, "one TRUE join cell"):
+        body = "".join(true_cells[0]["source"])
+        check('stage_should_run(("LEG2_RECORD_JOIN",)' in body,
+              "the TRUE join cell is LEG2_RECORD_JOIN only")
+        executable = "\n".join(ln for ln in body.splitlines()
+                               if not ln.strip().startswith("#"))
+        check("decision.json" not in executable,
+              "the TRUE join cell writes no decision.json (comments may "
+              "explain why it must not)")
+        check("run_null_shards" not in body and "apply_control" not in body,
+              "the TRUE join cell starts no null")
+        check("stage_status" in body and "gate_status" in body,
+              "it reports TRUE_JOIN_MEASURED / DS1_GATE_NOT_RUN")
+        check("canonical" in body,
+              "it says it is not the canonical bundle")
+    if check(len(gate_cells) == 1, "one DS1_GATE cell"):
+        body = "".join(gate_cells[0]["source"])
+        check('stage_should_run(("DS1_GATE",)' in body,
+              "the gate cell is DS1_GATE only")
+        for name in ("decision.json", "null_summary.json", "bootstrap.json"):
+            check(name in body, f"the canonical bundle carries {name}")
+        check("_DS1_GATE" in body,
+              "the canonical run directory is named for the gate")
+        check("null_shards_DS1" in body and "time.strftime" in body,
+              "shards live in a stable directory while the bundle is stamped")
+        # The shard directory must not be timestamped, or resume breaks.
+        shard_line = [ln for ln in body.splitlines() if "SHARD_DIR =" in ln][0]
+        check("ts" not in shard_line.split("=")[1],
+              "the shard directory carries no timestamp, so resume works")
+
+    for name in ("NullContext", "run_null_shards", "finalize_null_shards",
+                 "finalize_ds1_gate", "NULL_RUNNER_VERSION"):
+        check(f'"{name}"' in joined or f"BJ.{name}" in joined,
+              f"the capability guard or a cell names '{name}'")
+    check("run_true_join" in joined and '"run_true_join"' in joined,
+          "NEED_ATTRS requires run_true_join")
+
+
+def test_ds1_integration_changed_no_science():
+    print("integration: every registered constant and the fingerprint hold")
+    check(BJ.MODULE_VERSION == 3, "MODULE_VERSION unchanged")
+    check(BJ.N_NULL_REPLICATES == 10000 and BJ.N_BOOTSTRAP_REPLICATES == 2000,
+          "null and bootstrap sizes unchanged")
+    check(BJ.MASTER_SEED == 2026017 and BJ.BOOTSTRAP_SEED == 2026018,
+          "seeds unchanged")
+    check(BJ.RR_TOLERANCE_SAMPLES == 1, "tolerance unchanged")
+    check(BJ.CONTROL_FAMILIES == ("wrong_record", "order_shuffle",
+                                  "circular_shift"), "families unchanged")
+    check(len(BJ.rule_fingerprint()) == 64, "the fingerprint still computes")
+    for name in ("GATE_COVERAGE_MIN", "GATE_S_COVERAGE_MIN",
+                 "GATE_SIGNAL_TO_NULL_MIN", "GATE_S_SHARE_INFLATION_MAX"):
+        check(hasattr(BJ, name), f"{name} still registered")
+
 def main() -> int:
     tests = [
         test_ledger_matches_the_registered_numbers,
@@ -3169,6 +3443,13 @@ def main() -> int:
         test_shard_metadata_is_complete,
         test_input_digest_comes_from_the_preflight,
         test_null_science_constants_are_untouched,
+        test_serial_reference_equals_sharded_end_to_end,
+        test_true_join_stage_reaches_no_verdict,
+        test_run_join_cannot_start_an_inline_null,
+        test_ds1_gate_requires_the_complete_null,
+        test_ds2_release_requires_the_full_null_and_bootstrap,
+        test_notebook_separates_the_three_stages,
+        test_ds1_integration_changed_no_science,
         test_notebook_contract,
         test_notebook_cells_run_in_order,
         test_notebook_refuses_a_stale_module,

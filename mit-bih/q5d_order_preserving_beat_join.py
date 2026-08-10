@@ -178,6 +178,14 @@ DECISIONS: Tuple[str, ...] = (
     DECISION_INPUT_ABSENT, DECISION_RULE_FALSIFIED, DECISION_SELECTION_BIASED,
     DECISION_UNRESOLVED, DECISION_IDENTIFIABLE, DECISION_NOT_RUN)
 
+#: Stage statuses.  These are *not* decisions — the registered decision tree
+#: is unchanged — they label what a stage produced so an intermediate result
+#: can never be read as a verdict.
+STATUS_TRUE_JOIN_MEASURED = "TRUE_JOIN_MEASURED"
+STATUS_DS1_GATE_NOT_RUN = "DS1_GATE_NOT_RUN"
+STAGE_STATUSES: Tuple[str, ...] = (STATUS_TRUE_JOIN_MEASURED,
+                                   STATUS_DS1_GATE_NOT_RUN)
+
 LEG1 = "LEG1_SOURCE_REPLAY"
 LEG2 = "LEG2_POSITIONAL_JOIN"
 LEGS: Tuple[str, ...] = (LEG1, LEG2)
@@ -1293,8 +1301,21 @@ def release_ds2_support_gate(ds1_bundle_dir: str,
     if null.get("master_seed") != MASTER_SEED:
         problems.append(f"DS1 null seed {null.get('master_seed')!r} != "
                         f"{MASTER_SEED}")
-    if not null.get("j_null_max"):
-        problems.append("DS1 null carries no replicates")
+    replicates = null.get("j_null_max") or []
+    if len(replicates) != N_NULL_REPLICATES:
+        problems.append(
+            f"DS1 null has {len(replicates)} replicates, the registered null "
+            f"is {N_NULL_REPLICATES} x {len(CONTROL_FAMILIES)} families")
+    boot_path = os.path.join(ds1_bundle_dir, "bootstrap.json")
+    if not os.path.exists(boot_path):
+        problems.append("DS1 bundle has no bootstrap.json")
+    else:
+        with open(boot_path, encoding="utf-8") as handle:
+            boot = json.load(handle)
+        if boot.get("replicates") != N_BOOTSTRAP_REPLICATES:
+            problems.append(
+                f"DS1 bootstrap has {boot.get('replicates')} replicates, the "
+                f"registered bootstrap is {N_BOOTSTRAP_REPLICATES}")
     if decision.get("decision") not in (DECISION_IDENTIFIABLE,):
         problems.append(
             f"DS1 decision is {decision.get('decision')!r}; the DS2 support "
@@ -1883,14 +1904,19 @@ def estimate_null_runtime(seconds_per_join: float,
                      "faster one.")}
 
 
-def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
-             preflight: Mapping[str, object],
-             approval: Optional[str] = None,
-             ds2_label_release: Optional[str] = None,
-             null_replicates: int = N_NULL_REPLICATES,
-             bootstrap_replicates: int = N_BOOTSTRAP_REPLICATES,
-             reverify: bool = True) -> Dict[str, object]:
-    """The whole frozen pipeline for one split, in the registered order.
+def run_true_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
+                  preflight: Mapping[str, object],
+                  approval: Optional[str] = None,
+                  ds2_label_release: Optional[str] = None,
+                  reverify: bool = True) -> Dict[str, object]:
+    """The TRUE join for one split: Leg 1, Leg 2, coverage, inflation, J_min.
+
+    **This stage computes no null and reaches no verdict.**  It reports
+    `TRUE_JOIN_MEASURED` / `DS1_GATE_NOT_RUN`, because the registered decision
+    needs gates 9-11, which need the 3 x 10,000 null that only the shard
+    runner produces.  Running the twelve gates here would return
+    `JOIN_IDENTIFIABLE` from ten of them — a verdict with the null missing —
+    so the gates are not evaluated at this stage at all.
 
     ``preflight`` is **required**, not advisory: a PASSing freeze from
     :func:`build_preflight` covering the canonical mamba hash, the V9/V10
@@ -1957,44 +1983,173 @@ def run_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
     inflation = s_share_inflation(rows, processed)
     j_true = j_min(rows, processed, mamba_classes)
 
-    null = bootstrap = None
-    if split == "DS1" and null_replicates:
-        families: Dict[str, List[float]] = {f: [] for f in CONTROL_FAMILIES}
-        for family in CONTROL_FAMILIES:
-            for replicate in range(int(null_replicates)):
-                shuffled = apply_control(family, mamba, replicate)
-                control_rows = join_split(shuffled, cache, split)["rows"]
-                families[family].append(
-                    j_min(control_rows, processed, mamba_classes))
-        null = null_summary(families[CONTROL_WRONG_RECORD],
-                            families[CONTROL_ORDER_SHUFFLE],
-                            families[CONTROL_CIRCULAR_SHIFT], j_true,
-                            coverage["overall_total"])
-        per_record = {}
-        for record in records:
-            hits = sum(1 for row in rows
-                       if row["record"] == record
-                       and row["status"] == STATUS_CERTIFIED)
-            per_record[record] = (hits, ledger_record(split, record).cache_n)
-        bootstrap = record_cluster_bootstrap(per_record, j_true, null["q95"],
-                                             bootstrap_replicates)
-
     ambiguous = sum(1 for row in rows if row["status"] == STATUS_AMBIGUOUS)
+    per_record_certified = {
+        record: (sum(1 for row in rows if row["record"] == record
+                     and row["status"] == STATUS_CERTIFIED),
+                 ledger_record(split, record).cache_n)
+        for record in records}
+    return {
+        "split": split, "leg1": leg1_report, "rows": rows,
+        "results": results, "coverage": coverage,
+        "s_share_inflation": inflation, "j_min_true": j_true,
+        "ambiguous_fraction": _ratio(ambiguous, max(len(rows), 1)),
+        "per_record_certified": per_record_certified,
+        "n_processed": coverage["overall_total"],
+        "leg2_boundaries_ok": cache_loaded["boundary"]["ok"],
+        "mamba_blocks": mamba_loaded["blocks"],
+        "preflight_verified": verified,
+        # Deliberately not a decision.  The gates are not evaluated here.
+        "stage_status": STATUS_TRUE_JOIN_MEASURED,
+        "gate_status": STATUS_DS1_GATE_NOT_RUN,
+        "null": None, "bootstrap": None, "decision": None,
+    }
+
+
+def run_join(*args: object, null_replicates: int = 0,
+             **kwargs: object) -> Dict[str, object]:
+    """Compatibility shim.  The inline null is gone from the public path.
+
+    Production DS1_GATE has exactly one route to a null — the shard runner —
+    so this refuses loudly rather than quietly starting a 14-hour in-process
+    loop that no session can finish and no resume can recover.
+    """
+    if int(null_replicates):
+        raise Q5DJoinError(
+            f"run_join() will not compute a null in-process "
+            f"(null_replicates={null_replicates}).  The registered null is "
+            f"{len(CONTROL_FAMILIES)} x {N_NULL_REPLICATES} complete Leg 2 "
+            f"reruns; production produces it with run_null_shards() and "
+            f"combines it with finalize_ds1_gate().  Call run_true_join() for "
+            f"the TRUE join.")
+    return run_true_join(*args, **kwargs)      # type: ignore[arg-type]
+
+
+def _serial_null_reference(context: NullContext, total: int
+                           ) -> Dict[str, List[float]]:
+    """The in-line null, kept **only** as a test oracle.
+
+    This is the straight-line computation the sharded runner must reproduce
+    exactly.  It is private and is never on a production path: at the
+    registered 10,000 replicates it cannot finish inside a session, which is
+    why sharding exists.
+    """
+    out: Dict[str, List[float]] = {}
+    for family in CONTROL_FAMILIES:
+        values: List[float] = []
+        for replicate in range(int(total)):
+            transformed = apply_control(family, context.mamba_by_record,
+                                        replicate)
+            rows = join_split(transformed, context.cache_by_record,
+                              context.split)["rows"]
+            values.append(j_min(rows, context.processed_classes,
+                                context.mamba_classes))
+        out[family] = values
+    return out
+
+
+def finalize_ds1_gate(true_result: Mapping[str, object],
+                      families: Mapping[str, Sequence[float]],
+                      total: int = N_NULL_REPLICATES,
+                      bootstrap_replicates: int = N_BOOTSTRAP_REPLICATES
+                      ) -> Dict[str, object]:
+    """Combine the TRUE join with a complete null and reach the verdict.
+
+    The registered order, and the only route to a DS1 decision: verify the
+    three families are complete, then `null_summary` -> record-cluster
+    bootstrap -> `evaluate_gates`.  An incomplete null cannot reach this
+    function's end, so no decision can be built from one.
+    """
+    problems: List[str] = []
+    for family in CONTROL_FAMILIES:
+        values = families.get(family)
+        if values is None:
+            problems.append(f"family {family!r} is absent")
+        elif len(values) != int(total):
+            problems.append(
+                f"family {family!r} has {len(values)} replicates, the "
+                f"registered null is {total}")
+    if problems:
+        raise NullShardError(
+            "the DS1 gate needs the complete registered null:\n  "
+            + "\n  ".join(problems))
+    if int(bootstrap_replicates) != N_BOOTSTRAP_REPLICATES:
+        raise Q5DJoinError(
+            f"the registered bootstrap is {N_BOOTSTRAP_REPLICATES} "
+            f"record-cluster replicates, got {bootstrap_replicates}")
+
+    j_true = float(true_result["j_min_true"])
+    null = null_summary(list(families[CONTROL_WRONG_RECORD]),
+                        list(families[CONTROL_ORDER_SHUFFLE]),
+                        list(families[CONTROL_CIRCULAR_SHIFT]),
+                        j_true, int(true_result["n_processed"]))
+    bootstrap = record_cluster_bootstrap(
+        {r: tuple(v) for r, v in
+         dict(true_result["per_record_certified"]).items()},
+        j_true, float(null["q95"]), int(bootstrap_replicates))
     ledger = evaluate_gates(
-        coverage, inflation, null, bootstrap,
+        dict(true_result["coverage"]), dict(true_result["s_share_inflation"]),
+        null, bootstrap,
         fixtures_ok=fixtures_passed(run_synthetic_fixtures()),
-        leg1_ok=True,
-        leg2_boundaries_ok=cache_loaded["boundary"]["ok"],
-        ambiguous_fraction=_ratio(ambiguous, max(len(rows), 1)))
+        leg1_ok=bool(dict(true_result["leg1"])["ok"]),
+        leg2_boundaries_ok=bool(true_result["leg2_boundaries_ok"]),
+        ambiguous_fraction=float(true_result["ambiguous_fraction"]))
     decision = ledger.decide()
-    decision["strata"] = stratum_report(results)
+    decision["strata"] = stratum_report(list(true_result["results"]))
     decision["j_min_true"] = j_true
-    return {"split": split, "leg1": leg1_report, "rows": rows,
-            "results": results, "coverage": coverage,
-            "s_share_inflation": inflation, "null": null,
-            "bootstrap": bootstrap, "decision": decision,
-            "mamba_blocks": mamba_loaded["blocks"],
-            "preflight_verified": verified}
+    decision["null_replicates"] = int(total)
+    decision["bootstrap_replicates"] = int(bootstrap_replicates)
+    return {"decision": decision, "null": null, "bootstrap": bootstrap,
+            "split": true_result["split"]}
+
+
+def run_ds1_gate_sharded(mitdb_dir: str, mamba_path: str, cache_dir: str,
+                         preflight: Mapping[str, object], resume_dir: str,
+                         approval: Optional[str] = None,
+                         shard_size: int = DEFAULT_SHARD_SIZE,
+                         max_workers: int = DEFAULT_MAX_WORKERS,
+                         total: int = N_NULL_REPLICATES,
+                         git_commit: Optional[str] = None,
+                         progress: Optional[object] = None
+                         ) -> Dict[str, object]:
+    """The one production route to a DS1 decision: TRUE -> shards -> gate."""
+    true_result = run_true_join(mitdb_dir, mamba_path, cache_dir, "DS1",
+                                preflight, approval)
+    context = null_context_from_true_join(true_result, preflight, approval,
+                                          mitdb_dir, mamba_path, cache_dir,
+                                          git_commit)
+    shards = run_null_shards(context, resume_dir, total=total,
+                             shard_size=shard_size, max_workers=max_workers,
+                             progress=progress)
+    families = finalize_null_shards(shards, context, total=total)
+    gate = finalize_ds1_gate(true_result, families, total=total)
+    return {"true": true_result, "shards": len(shards), "families": families,
+            **gate}
+
+
+def null_context_from_true_join(true_result: Mapping[str, object],
+                                preflight: Mapping[str, object],
+                                approval: Optional[str],
+                                mitdb_dir: str, mamba_path: str,
+                                cache_dir: str,
+                                git_commit: Optional[str] = None
+                                ) -> NullContext:
+    """Bind the null to the same inputs and the same rule as the TRUE join."""
+    split = _check_split(str(true_result["split"]))
+    leg1 = replay_leg1_split(mitdb_dir, split, approval)
+    mamba_all = load_mamba_sequences(mamba_path, approval)["sequences"]
+    cache_all = load_cache_sequences(cache_dir, approval)["sequences"]
+    records = [row.record for row in build_ledger()[split]]
+    return NullContext(
+        split,
+        {r: attach_leg1_identity(mamba_all[r], leg1[r]) for r in records},
+        {r: cache_all[r] for r in records},
+        load_cache_classes(cache_dir, split, approval),
+        {(r, int(e["mamba_record_row"])): str(e["aami"])
+         for r in records for e in leg1[r].kept},
+        input_digest=preflight_input_digest(preflight),
+        code_sha256=assert_implementation_only()["sha256"],
+        git_commit=git_commit)
 
 
 def replay_leg1_split(mitdb_dir: str, split: str,
@@ -3993,7 +4148,11 @@ def fixture_record_boundary_corruption() -> FixtureOutcome:
     observed = {"DS1": {r: n for r, n in CACHE_LEDGER["DS1"]},
                 "DS2": {r: n for r, n in CACHE_LEDGER["DS2"]}}
     clean = verify_record_boundaries(observed)
-    observed["DS1"]["108"] = observed["DS1"]["108"] + 1
+    # Corrupt whichever record the registered ledger starts with, rather than
+    # naming one: the fixture is about boundary corruption, not about 108.
+    split = "DS1" if observed["DS1"] else "DS2"
+    victim = sorted(observed[split])[0]
+    observed[split][victim] = observed[split][victim] + 1
     corrupted = verify_record_boundaries(observed)
     return FixtureOutcome("ledger_record_boundary_corruption",
                           bool(clean["ok"]) and not corrupted["ok"], 0,
