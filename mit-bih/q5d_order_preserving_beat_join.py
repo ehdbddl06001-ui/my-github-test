@@ -112,7 +112,10 @@ RUN_SLUG = "q5d_beat_join"
 #:   2 — MIT-BIH expected set = the published 48-record tree (147 files) and
 #:       publisher-checksum cross-check; preflight freeze gained
 #:       `cache_ledger_contract`; result contract is DS2-only and exhaustive.
-MODULE_VERSION = 2
+#:   3 — publisher checksums are matched on the listed path, not a collapsed
+#:       basename (a nested `x_mitdb/RECORDS` was answering for `RECORDS`);
+#:       mismatch diagnostics; `checked`/`matched` reported separately.
+MODULE_VERSION = 3
 MODULE_BUILD = "2026-08-10"
 
 NO_EXECUTION_BANNER = (
@@ -713,7 +716,21 @@ def mitdb_expected_files() -> Tuple[str, ...]:
 
 
 def parse_sha256sums(path: str) -> Dict[str, str]:
-    """Parse a publisher `SHA256SUMS.txt` into `{filename: sha256}`."""
+    """Parse a publisher `SHA256SUMS.txt` into `{relative path: sha256}`.
+
+    The key is the path **exactly as listed**.  Collapsing it to a basename
+    looks harmless and is not: the MIT-BIH list covers a wider tree than the
+    directory we verify, and it contains both
+
+        fcdca7ea…  RECORDS
+        215c6f70…  x_mitdb/RECORDS
+
+    Under basename collapsing the second entry overwrites the first, so the
+    top-level `RECORDS` gets compared against a *different file's* digest and
+    a pristine tree fails.  `ANNOTATORS` has the same shape but identical
+    digests, so it passed silently — the bug only showed where the two files
+    genuinely differ.  Keep the paths.
+    """
     out: Dict[str, str] = {}
     with open(path, encoding="utf-8", errors="replace") as handle:
         for line in handle:
@@ -724,9 +741,11 @@ def parse_sha256sums(path: str) -> Dict[str, str]:
             if len(parts) != 2:
                 continue
             digest, name = parts[0].strip(), parts[1].strip()
-            name = name.lstrip("*").lstrip("./")
+            name = name.lstrip("*")
+            if name.startswith("./"):
+                name = name[2:]
             if len(digest) == 64:
-                out[os.path.basename(name)] = digest.lower()
+                out[name] = digest.lower()
     return out
 
 
@@ -752,9 +771,12 @@ def verify_against_publisher_checksums(file_set: Mapping[str, object],
         name = str(entry["name"])
         if name == MITDB_CHECKSUM_FILE:
             continue                    # a checksum file cannot list itself
+        # Exact top-level key only.  The files we hash are the top level of
+        # this directory, so a nested entry like `x_mitdb/RECORDS` must never
+        # answer for `RECORDS`.
         want = published.get(name)
         if want is None:
-            unlisted.append(name)       # publisher does not list it
+            unlisted.append(name)       # publisher does not list it here
             continue
         checked += 1
         observed = str(entry["sha256"]).lower()
@@ -765,11 +787,21 @@ def verify_against_publisher_checksums(file_set: Mapping[str, object],
             mismatched.append(describe_checksum_mismatch(
                 directory, name, published=want, observed=observed,
                 size=entry.get("bytes")))
+    # If the publisher lists everything under a prefix we do not use, nothing
+    # would be checked and the result would read as a pass.  Silence is not
+    # verification, so say so.
+    considered = sum(1 for e in file_set.get("files", ())      # type: ignore[union-attr]
+                     if str(e["name"]) != MITDB_CHECKSUM_FILE)
+    if considered and not checked:
+        problems.append(
+            f"the publisher list has {len(published)} entries but none of the "
+            f"{considered} files in {directory} matched a top-level name; "
+            f"nothing was actually verified")
     return {"available": True, "ok": not problems, "problems": problems,
             # `checked` is how many had a published entry; `matched` is how
             # many agreed.  An earlier version reported only the former under
             # the name "verified", which read as though everything passed.
-            "checked": checked, "matched": matched,
+            "checked": checked, "matched": matched, "considered": considered,
             "mismatched": mismatched, "unlisted": sorted(unlisted),
             "published_entries": len(published),
             "read_by_the_join": sorted(

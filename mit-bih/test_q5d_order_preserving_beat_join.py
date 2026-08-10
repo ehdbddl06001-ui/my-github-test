@@ -1530,6 +1530,86 @@ def test_checksum_mismatch_is_diagnosable():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def test_nested_checksum_entry_cannot_hijack_a_top_level_file():
+    """The 2026-08-10 STOP: `x_mitdb/RECORDS` answered for `RECORDS`.
+
+    The MIT-BIH publisher list covers a wider tree than the directory we
+    verify and contains both a top-level `RECORDS` and a nested
+    `x_mitdb/RECORDS` with a *different* digest.  Collapsing keys to a
+    basename let the nested entry overwrite the top-level one, so a pristine
+    tree failed.  `ANNOTATORS` has the same shape with identical digests,
+    which is why only one file showed the bug.
+    """
+    print("publisher list: a nested entry may not answer for a top-level file")
+    tmp = tempfile.mkdtemp(prefix="q5d-nested-")
+    try:
+        content = b"100\n101\n102\n"
+        with open(os.path.join(tmp, "RECORDS"), "wb") as fh:
+            fh.write(content)
+        with open(os.path.join(tmp, "ANNOTATORS"), "wb") as fh:
+            fh.write(b"atr\n")
+        top_records = BJ.sha256_file(os.path.join(tmp, "RECORDS"))
+        top_annot = BJ.sha256_file(os.path.join(tmp, "ANNOTATORS"))
+        nested_records = "2" * 64          # deliberately different
+        sums = os.path.join(tmp, BJ.MITDB_CHECKSUM_FILE)
+        with open(sums, "w", encoding="utf-8") as fh:
+            fh.write(f"{top_records}  RECORDS\n")
+            fh.write(f"{nested_records}  x_mitdb/RECORDS\n")
+            fh.write(f"{top_annot}  ANNOTATORS\n")
+            fh.write(f"{top_annot}  x_mitdb/ANNOTATORS\n")
+
+        published = BJ.parse_sha256sums(sums)
+        check(published.get("RECORDS") == top_records,
+              "the top-level RECORDS keeps its own digest")
+        check(published.get("x_mitdb/RECORDS") == nested_records,
+              "the nested entry is kept under its full path, not collapsed")
+        check(len(published) == 4, "all four entries survive parsing")
+
+        names = ("RECORDS", "ANNOTATORS", BJ.MITDB_CHECKSUM_FILE)
+        file_set = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        report = BJ.verify_against_publisher_checksums(file_set, tmp)
+        check(report["ok"],
+              f"a pristine tree passes despite the nested entry "
+              f"({report['problems']})")
+        check(report["matched"] == 2 and report["checked"] == 2,
+              "both top-level files verified against their own digests")
+
+        # And a genuine change is still caught.
+        with open(os.path.join(tmp, "RECORDS"), "wb") as fh:
+            fh.write(b"100\n101\n")
+        changed = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        caught = BJ.verify_against_publisher_checksums(changed, tmp)
+        check(not caught["ok"],
+              "a real change to the top-level file is still caught")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_unverifiable_checksum_list_is_not_a_pass():
+    print("nothing matched != everything passed")
+    tmp = tempfile.mkdtemp(prefix="q5d-nomatch-")
+    try:
+        with open(os.path.join(tmp, "100.atr"), "wb") as fh:
+            fh.write(b"x")
+        sums = os.path.join(tmp, BJ.MITDB_CHECKSUM_FILE)
+        # Publisher lists everything under a prefix we do not use.
+        with open(sums, "w", encoding="utf-8") as fh:
+            fh.write(f"{'a' * 64}  mitdb/1.0.0/100.atr\n")
+        names = ("100.atr", BJ.MITDB_CHECKSUM_FILE)
+        file_set = BJ.hash_file_set(tmp, names, BJ.EXECUTION_APPROVAL_TOKEN)
+        report = BJ.verify_against_publisher_checksums(file_set, tmp)
+        check(not report["ok"] and report["checked"] == 0,
+              "zero matches is reported as a failure, not a silent pass")
+        check(any("nothing was actually verified" in p
+                  for p in report["problems"]),
+              "the message says nothing was verified")
+        check(report["considered"] == 1, "the considered count is reported")
+    finally:
+        import shutil
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def test_publisher_checksums_are_cross_checked():
     print("MIT-BIH bytes are compared against the publisher's own SHA256SUMS")
     tmp = tempfile.mkdtemp(prefix="q5d-sums-")
@@ -2143,7 +2223,7 @@ def test_notebook_contract():
                        default=10 ** 6)
     join_at = min((i for i, c in enumerate(cells)
                    if c["cell_type"] == "code"
-                   and "run_join" in "".join(c["source"])), default=-1)
+                   and "BJ.run_join(" in "".join(c["source"])), default=-1)
     check(preflight_at < join_at,
           f"the hash preflight cell ({preflight_at}) runs before the join "
           f"cell ({join_at})")
@@ -2155,6 +2235,7 @@ def test_notebook_contract():
           "the DS2 release is minted from a frozen DS1 bundle, not from MODE")
     check("DS1_FROZEN_BUNDLE" in joined,
           "the notebook names the DS1 frozen bundle DS2 must agree with")
+    check("BJ.run_join(" in joined, "the notebook actually calls run_join")
     check("PREFLIGHT, APPROVAL" in joined,
           "the join receives the preflight freeze as a required input")
     check("ASSET_RESULT_NPZ" not in joined,
@@ -2280,12 +2361,18 @@ def test_notebook_refuses_a_stale_module():
               f"({BJ.MODULE_VERSION}), got {need.group(1)}")
     check("BJ.__file__" in joined,
           "the notebook prints which file it actually loaded")
+    check("NEED_ATTRS" in joined and "hasattr(BJ, a)" in joined,
+          "the notebook checks the names it actually uses, so a forgotten "
+          "version bump cannot let a stale module through")
+    for name in ("describe_checksum_mismatch", "build_preflight", "run_join"):
+        check(f'"{name}"' in joined,
+              f"the capability guard names '{name}'")
 
 
 def test_module_version_tracks_the_contract():
     print("module version: bumped when the input contract changes")
-    check(BJ.MODULE_VERSION >= 2,
-          "the MIT-BIH/publisher-checksum contract change bumped the version")
+    check(BJ.MODULE_VERSION >= 3,
+          "the checksum-path fix bumped the version")
     check(BJ.MITDB_REGISTERED_FILE_COUNT == 147,
           "version 2 expects the 147-file published tree")
     check("cache_ledger_contract" in BJ.PREFLIGHT_FREEZE_FIELDS,
@@ -2406,6 +2493,8 @@ def main() -> int:
         test_canonical_mamba_is_resolved_by_bytes,
         test_file_set_hashing_reads_content,
         test_mitdb_expected_set_is_the_published_tree,
+        test_nested_checksum_entry_cannot_hijack_a_top_level_file,
+        test_unverifiable_checksum_list_is_not_a_pass,
         test_publisher_checksums_are_cross_checked,
         test_checksum_mismatch_is_diagnosable,
         test_result_grid_is_preregistered_not_globbed,

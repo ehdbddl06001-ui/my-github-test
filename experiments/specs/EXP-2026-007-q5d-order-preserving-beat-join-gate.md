@@ -1057,3 +1057,62 @@ Required outputs:
   564 assertions pass.  Both failure directions stay covered: a genuinely
   missing published file and a tampered byte are still caught, and the STOP
   that occurred is now a regression test.
+- 2026-08-10 — **`RECORDS` checksum STOP resolved: the data was pristine, the
+  parser was wrong.**
+
+  The third preflight reached the publisher-checksum stage with everything
+  else green — mamba verified, cache aggregate clean, DS1/DS2 ledger 22/22,
+  DS2 result 25/25 sharing one `pid` digest, MIT-BIH 147 files with no
+  missing and no extra — and STOPped on a single line: `RECORDS: sha256
+  differs from the publisher list`.
+
+  Diagnosed by reading both artifacts directly.  The registered `RECORDS` is
+  192 bytes, 48 lines, LF, terminated with a newline, containing all 48
+  published records including the four paced ones, and hashing to
+  `fcdca7ea…`.  It is intact.
+
+  The MIT-BIH `SHA256SUMS.txt` (704 entries, itself hashing to the registered
+  `b61158a9…`) covers a **wider tree** than the directory being verified, and
+  lists two different files whose names collide once paths are stripped:
+
+  ```text
+  fcdca7ead9fc93f6…  RECORDS
+  215c6f7042da70f9…  x_mitdb/RECORDS
+  ```
+
+  `parse_sha256sums` keyed the map on `os.path.basename(name)`, so the nested
+  entry overwrote the top-level one and the pristine `RECORDS` was compared
+  against a different file's digest.  `ANNOTATORS` has the same collision but
+  identical digests on both sides, which is why exactly one file failed and
+  the bug looked like a data problem.
+
+  Fixed: the checksum map is keyed on the path **as listed**, and lookup uses
+  the exact top-level name, so a nested entry can never answer for a
+  top-level file.  A regression test reproduces the precise shape — top-level
+  and nested `RECORDS` with different digests, plus the identical-digest
+  `ANNOTATORS` case that hid it.
+
+  Two related weaknesses fixed at the same time, both found by looking rather
+  than by failing:
+
+  - "nothing matched" could read as "everything passed".  If the publisher
+    listed every file under a prefix this directory does not use, `checked`
+    would be zero and the stage would report `ok`.  Zero matches against a
+    non-empty file set is now a failure that says nothing was verified.
+  - the counter reported as `verified` actually counted *files with a
+    published entry*, not files that agreed — the run that printed
+    `verified=146` was really 145 matched and 1 mismatched.  `checked`,
+    `matched`, `mismatched`, `considered` are now separate.
+
+  Nothing about the gate was relaxed to make this pass.  The publisher
+  cross-check still fails on a changed byte, a missing published file, and an
+  unverifiable list.  No threshold, tolerance, gate, statistic, seed or
+  stopping rule changed.  602 assertions pass.
+
+  *Process note.*  Three Colab runs were consumed by stale modules: the
+  notebook was newer than the clone twice (fixes pushed after a merge, and
+  `import` returning the `sys.modules` cache).  A version assertion was added
+  and then defeated by the author forgetting to bump it.  The notebook now
+  additionally asserts the **names it actually uses** (`NEED_ATTRS`), which
+  cannot be defeated by forgetting a version number, and prints
+  `BJ.__file__`.  `MODULE_VERSION` is 3.
