@@ -1144,3 +1144,41 @@ Required outputs:
   passed under the current rule fingerprint before replaying any `.atr`, and
   writes its own bundle whether it passes or emits `JOIN_RULE_FALSIFIED`.  607
   assertions pass.
+- 2026-08-10 — **Runtime dependencies declared per stage and checked before
+  the work.**
+
+  The first Leg 1 attempt died on `ModuleNotFoundError: wfdb` — the run
+  environment never installed it — and it surfaced only once the replay
+  reached its first `.atr`.  The same class of failure was waiting in a worse
+  place: `pyarrow` is imported only when `join_map.parquet` is written, at the
+  *end* of a completed join, so a missing `pyarrow` would have discarded a
+  full DS1 run including its 10,000-replicate null.
+
+  Fixed structurally rather than by adding one import:
+
+  - `RUNTIME_DEPENDENCIES` records each third-party module, what it is for,
+    and its version in the registered runtime (`numpy` 2.5.1, `wfdb` 4.3.1).
+  - `STAGE_REQUIREMENTS` maps every mode to what it actually needs.  The
+    offline stages need nothing; the preflight needs `numpy`; Leg 1 adds
+    `wfdb`; the join stages add `pyarrow` **up front**, not at bundle-writing
+    time.
+  - `assert_runtime_ready()` refuses to start a stage whose imports are
+    absent, naming the exact `pip install` line, before anything is read.
+    Each entry point calls it.
+  - `build_env_pin()` records the versions actually loaded alongside the
+    registered ones, and `build_manifest()` embeds it, so a run says which
+    environment produced it.  A version difference is a recorded fact, not a
+    new stopping rule — this stage does not invent stops the spec did not
+    register.
+  - The notebook installs `wfdb==4.3.1` and `pyarrow` in its setup cell and
+    prints the per-stage dependency table there.
+
+  One ordering rule was made explicit while doing this: **permission before
+  capability**.  A call that was never authorised is refused as unauthorised
+  whatever the environment happens to have installed, so
+  `require_execution_approval` and the DS2 release check precede the runtime
+  check in all three entry points; the expensive freeze re-hashing comes last.
+  A test pins that order.
+
+  No threshold, tolerance, gate, statistic, seed or stopping rule changed.
+  639 assertions pass.
