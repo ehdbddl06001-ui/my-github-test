@@ -223,7 +223,16 @@ canonical run `20260810T005802` (freeze `20260810T003933`). 측정도구 자격�
   수준)으로 막혀 있다. Codex가 병렬로 설계 중이다
   (`research/HANDOFF_2026-08-10_Q5D_beat_join_to_codex.md`).
 
-### DRIVE_ASSET_PREFLIGHT (2026-08-10) — 판정 `SOURCE_REPLAY_INCOMPLETE` (B)
+### DRIVE_ASSET_PREFLIGHT (2026-08-10) — **최종 판정 `SOURCE_REPLAY_PROVEN` (A)**
+
+> **판정 이력**: 1차 `B`(V10 소스 부재 + 환경 미고정) → 2차 `B`(V10 lineage 해소) →
+> **3차 `A`**(환경·입력 해소). 아래 1차·2차 서술은 기록으로 보존하고, 최종 확정은
+> 이 절 끝의 "3차 인수" 항에 있다. 전문: `PREFLIGHT_2026-08-10_drive_asset_intake.md` §14.
+>
+> **A 판정에서도 beat join 실행은 별도 승인을 받는다.** join 은 설계·구현·실행 어느
+> 것도 하지 않았다.
+
+#### 1차 인수 (기록)
 
 신규 Drive 자산(`v9pkg` 소스 · `v9pkg_results`/`v10pkg_results` · 압축 해제
 `mamba_data`)에 대한 **읽기 전용 provenance gate**. 과학적 결과가 아니다.
@@ -276,6 +285,79 @@ Q5-A 실측 조인 1.9%(우연 수준)가 완전히 설명된다. **join key로 
 등록 hash `b1c16106…` 과 **대조하지 않았고**(읽기전용·대용량), 서드파티
 `zipextractor.app` 추출본이며 **동일 크기 `mamba_data.npz` 사본이 3개** 있어 어느
 것을 풀었는지 구분되지 않는다. **과학적 사용 전 hash 대조가 필요하다.**
+
+### 2차 인수 (2026-08-10 08:00 업로드분) — 판정 B 유지, 근거는 크게 바뀜
+
+1차 스캔 종료 후 `MyDrive/mitbih/v9~v13/` 이 업로드됐고, 여기에 1차에서 "부재"로
+기록한 것들이 들어 있었다. 전문: `PREFLIGHT_2026-08-10_drive_asset_intake.md` §13.
+
+- **V10 소스 확보 → row lineage 결격 해소.** `v9~v13/v10pkg/kinkmap/` 의
+  `build_record()` 행 선택 로직이 v9와 **문자열 수준 동일**하고, v10이 더한 것은
+  `pw_all = PW.pwave_features(...)` 와 `"pw": pw_all[idx]` 뿐이다 — **같은 `idx`
+  재사용이라 행을 건드리지 않는 순수 add-on**. `ARMS` 대조도 맞는다(v10 `base` =
+  v9 `kink_noctx` 조합 → params 1,141,291 일치).
+- **v9·v10 캐시 실물 확보 + 44/44 독립 일치.** 두 `meta.json` 의 record별 `n`·`split`
+  이 전부 같다. **복사본이 아니라 독립 재빌드다** — `v10_ECG.ipynb` 셀 20이 캐시를
+  지우고 셀 21이 `prepare()` 로 다시 만든다. 셀 21 stdout·셀 23(`DS1: S 944/50551`)
+  이 이를 재확인 → **동일 row 집합에 대한 독립 증언 3개**.
+- **행 순서를 재계산할 필요가 없어졌다.** 캐시가 V9/V10 확률 행의 순서·행 수를
+  보존하고 있다. 1차에서 B의 근거였던 "검출기 재실행 불확실성"이 실무적으로 무력화된다.
+- **record별 행 대장 완성.** v9/v10 캐시 vs mamba 계보 전량 대조: 36/44 일치,
+  불일치 8개 — DS1 `108 −1 · 116 −14 · 203 −2 · 208 −7 · 223 −1`(합 −25),
+  DS2 `105 −1 · 111 −1 · 222 −4`(합 −6). DS2 쪽은 기록과 정확히 일치하고,
+  **DS1 −25 는 지금까지 문서화된 적 없던 값**이다. → `mamba_data.npz` 행과 V9/V10
+  확률 행의 **record별 구간이 산술로 결정된다**(join 명세의 `processed row index`
+  ledger 항목이 채워진다).
+- **환경 부분 확정 + 계열 균질성.** 계열 노트북 5개(v9·v10·v11·v12·v13)를 전부 받아
+  스캔했다. 다섯 다 `환경: local` · `/home/user/work/v{9..13}` · Python **3.12.3** ·
+  venv `~/ecg` · **tf 2.21.0 / keras 3.15.0** · GPU **GTX 1650 Ti Max-Q**(CC 7.5) ·
+  **cuDNN 92400** 로 동일하다 → **v9 와 V10 이 같은 기계·같은 venv 에서 돌았다는 것이
+  직접 확인된다**(종전에는 v10 만 확인, v9 는 추정이었다).
+  그러나 **`numpy`·`scipy` 는 다섯 노트북 어디에도 없다** — `pip`/`__version__` 셀이
+  하나도 없고, shell 셀·경고·traceback 경로까지 훑어도 나오지 않는다.
+  → **노트북 경로는 소진됐다. `~/ecg` venv 가 유일한 남은 출처다.**
+- **v9 노트북 stdout 이 v9 캐시와 44/44 일치(4번째 증언).** 셀 18의 캐시 빌드 출력을
+  파싱해 대조: 불일치 0 · 합계 99,840 · DS2 49,289. 동일 row 집합에 대한 독립 증언이
+  **4개**가 됐다(v9 캐시 meta · v9 노트북 stdout · v10 캐시 meta · v10 노트북 stdout).
+
+**2차 시점에서는 B를 유지했다.** A는 environment를 명시적으로 요구하는데 그 조건
+하나가 미충족이었다. 캐시 확보로 replay가 실무적으로 불필요해졌지만 **gate 문구를
+사후에 재해석해 더 유리한 판정으로 옮기지 않았다** — 그것은 이 preflight가 금지하는
+"provenance 경로를 결과 편의로 고르는 행동"과 같은 종류이기 때문이다. 남은 것은
+`~/ecg` venv 의 numpy·scipy 버전 하나였고, **3차 인수에서 그것이 확보됐다.**
+
+### 3차 인수 (2026-08-10) — 환경·입력 해소, **`SOURCE_REPLAY_PROVEN` (A) 확정**
+
+- **환경 전 패키지 확정.** 사용자가 로컬 `~/ecg/lib/python3.12/site-packages` 를 직접
+  확인해 제공: **`numpy 2.5.1` · `scipy 1.18.0` · `scikit-learn 1.9.0` · `wfdb 4.3.1` ·
+  `tensorflow 2.21.0` · `keras 3.15.0`**. TF/Keras 는 `requirements.txt` 핀과 정확히
+  일치하고 나머지는 `>=` 제약을 충족한다. 플랫폼은
+  `_cffi_backend.cpython-312-x86_64-linux-gnu.so` 로 **CPython 3.12 · x86_64 Linux** 확정.
+- **교차검증 2건**: ① venv 의 tf/keras 버전이 v9–v13 노트북 5개의 런타임 출력과 일치
+  → 다른 venv 를 본 것이 아니다. ② `lib/python3.12` 가 노트북 traceback 경로와 일치.
+- **단일 설치 트랜잭션.** 전 패키지 `.dist-info` mtime 이 2026-07-18 10:59–11:00 한
+  시점이고 v9 캐시 빌드(07-18 08:11Z)보다 앞선다 → **numpy/scipy 가 V9·V10 양쪽에
+  동일하게 적용됐음이 파일 시각으로 뒷받침된다.**
+- **입력 대조.** v9 실행 시점 사본 `v9~v13/v9/data/mitdb/`(셀 19 `wfdb.dl_database`
+  산출물, mtime 08:02–08:09Z → 캐시 빌드 08:11Z 직전)를 publisher SHA-256 검증본
+  `data-mitdb-raw-100`(147/147)과 대조: `100`·`105`·`222` 의 `.dat/.hea/.atr`
+  **9/9 바이트 크기 일치**(`.atr` 4,558 · 5,638 · 6,230 — 주석 내용에 따라 달라지는
+  판별력 있는 값). 원천은 불변 버전 데이터셋 `mitdb 1.0.0`(DOI `10.13026/C2F305`).
+  **전수 hash 는 하지 않았다** — 잔여 불확실성 제거를 원하면 그 폴더 SHA-256 을 돌리면 된다.
+
+**여섯 조건(exact source · environment · input · filtering · row-order · V10 lineage)이
+모두 충족되어 `SOURCE_REPLAY_PROVEN` 으로 확정한다.**
+
+**A가 뜻하지 않는 것 (반드시 함께 읽을 것):**
+1. **beat join 실행 승인이 아니다.** A 조항 자체가 별도 승인을 요구한다.
+2. **학습 결과의 비트 재현이 아니다.** `train.py` 가 `enable_op_determinism()` 을
+   호출하지 않으므로 GPU 학습은 여전히 비결정론적이다. A가 보장하는 것은 **전처리
+   계보(행 선택·순서·입력)** 이지 확률값 재산출이 아니다. → V9/V10 `v8base` 의 시드별
+   `S_prauc` 차이는 이제 **동일 row 위 GPU 비결정론**으로 보는 것이 자연스럽다
+   (캐시 44/44 일치로 "다른 row" 가설이 배제됐다).
+3. **mamba 계보와 V9/V10 이 같은 행이라는 뜻이 아니다.** 둘은 여전히 다른 행 집합이고
+   (8 record 편차, 전체 −31), 그 대응은 join 명세가 다룰 문제로 남는다.
+4. 압축 해제 mamba 배열의 **hash 대조는 여전히 미실시**.
 
 **따라서 기존 order-preserving RR join 명세를 유지한다.** preflight는 provenance
 gate이고, RR join은 그 결과가 `SOURCE_REPLAY_INCOMPLETE` 일 때만 **별도 승인 후**
