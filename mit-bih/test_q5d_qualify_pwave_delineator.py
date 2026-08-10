@@ -11,6 +11,7 @@ Run: ``python3 mit-bih/test_q5d_qualify_pwave_delineator.py``
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import os
@@ -472,29 +473,123 @@ def test_missing_pin_says_why():
           "build_env_pin always emits the key, installed or not")
 
 
+def _pin_of(**pkgs):
+    return {"timestamp": "20260810T0000", "packages": {
+        n: {"version": v, "source_sha256": h, "py_files": f,
+            "hash_algo_version": QQ.HASH_ALGO_VERSION}
+        for n, (v, h, f) in pkgs.items()}}
+
+
 def test_pin_drift_blocks_only_the_frozen_rule():
     print("drift stops on the delineator, is only noted for numpy/scipy")
-    good = {"packages": {n: {"version": "x", "source_sha256": h}
-                         for n, h in QQ.EXPECTED_SOURCE_SHA256.items()}}
-    check(QQ.env_pin_drift(good) == [], "the recorded pin shows no drift")
-    moved = json.loads(json.dumps(good))
+    base = _pin_of(neurokit2=("0.2.13", "a" * 64, 313),
+                   wfdb=("4.3.1", "b" * 64, 28),
+                   numpy=("2.0.2", "c" * 64, 400))
+    check(QQ.env_pin_drift(base, base) == [], "a pin never drifts from itself")
+    moved = json.loads(json.dumps(base))
     moved["packages"]["numpy"]["source_sha256"] = "9" * 64
-    d = QQ.env_pin_drift(moved)
-    check(len(d) == 1 and d[0]["package"] == "numpy",
-          "a numpy bump is detected")
-    check(d[0]["blocking"] is False and QQ.blocking_drift(moved) == [],
+    d = QQ.env_pin_drift(moved, base)
+    check(len(d) == 1 and d[0]["package"] == "numpy", "a numpy bump is detected")
+    check(d[0]["blocking"] is False and QQ.blocking_drift(moved, base) == [],
           "a numpy bump is reported but does not stop the run")
-    moved2 = json.loads(json.dumps(good))
+    moved2 = json.loads(json.dumps(base))
     moved2["packages"]["neurokit2"]["source_sha256"] = "9" * 64
-    check(len(QQ.blocking_drift(moved2)) == 1,
+    check(len(QQ.blocking_drift(moved2, base)) == 1,
           "a neurokit2 source change is blocking")
     check(QQ.STRICT_PIN_PACKAGES == ("neurokit2", "wfdb"),
           "only the two version-pinned packages are strict")
     check(QQ.PIP_INSTALL_SPEC == ("neurokit2==0.2.13", "wfdb==4.3.1"),
           "the install spec pins the exact versions that were measured")
     absent = {"packages": {"neurokit2": {"source_sha256": None}}}
-    check(QQ.env_pin_drift(absent) == [],
+    check(QQ.env_pin_drift(absent, base) == [],
           "a missing hash is an incompleteness problem, not a drift problem")
+
+
+def test_incomparable_hash_versions_are_refused():
+    print("a baseline from another hash algorithm is refused, not called drift")
+    base = _pin_of(wfdb=("4.3.1", "b" * 64, 28))
+    base["packages"]["wfdb"]["hash_algo_version"] = 0     # the old walk order
+    now = _pin_of(wfdb=("4.3.1", "z" * 64, 28))
+    try:
+        QQ.env_pin_drift(now, base)
+        check(False, "an incomparable baseline raises instead of reporting drift")
+    except QQ.Q5DQualifyError as exc:
+        check("not comparable" in str(exc),
+              "an incomparable baseline raises instead of reporting drift")
+        check("Re-establish the baseline" in str(exc),
+              "the error says what to do about it")
+
+
+def test_hash_is_traversal_order_independent():
+    print("the source hash is pinned to relative-path order, not walk order")
+    tmp = tempfile.mkdtemp()
+    try:
+        root = os.path.join(tmp, "pkg")
+        # A root-level .py that sorts *after* a subdirectory is exactly the
+        # shape that made walk-order and path-order disagree.
+        os.makedirs(os.path.join(root, "aaa"))
+        for rel, body in (("__init__.py", "x = 1\n"),
+                          ("zzz.py", "y = 2\n"),
+                          ("aaa/mod.py", "z = 3\n")):
+            with open(os.path.join(root, rel), "w", encoding="utf-8") as fh:
+                fh.write(body)
+        os.makedirs(os.path.join(root, "__pycache__"))
+        with open(os.path.join(root, "__pycache__", "junk.py"), "w") as fh:
+            fh.write("ignored = True\n")
+
+        got = QQ.hash_source_tree(root)
+        check(got["py_files"] == 3, "__pycache__ is excluded from the count")
+        check(got["hash_algo_version"] == QQ.HASH_ALGO_VERSION,
+              "the digest carries the algorithm version that made it")
+        # Golden value: if this changes, HASH_ALGO_VERSION must change with it.
+        expect = hashlib.sha256()
+        for rel in ("__init__.py", "aaa/mod.py", "zzz.py"):
+            expect.update(rel.encode())
+            expect.update(open(os.path.join(root, rel), "rb").read())
+        check(got["source_sha256"] == expect.hexdigest(),
+              "the digest is exactly relative-path order over the .py files")
+
+        walk = hashlib.sha256()
+        for dp, dn, fn in os.walk(root):
+            dn[:] = sorted(d for d in dn if d != "__pycache__")
+            for f in sorted(fn):
+                if f.endswith(".py"):
+                    p = os.path.join(dp, f)
+                    walk.update(os.path.relpath(p, root)
+                                .replace(os.sep, "/").encode())
+                    walk.update(open(p, "rb").read())
+        check(walk.hexdigest() != got["source_sha256"],
+              "walk order really does give a different digest for the same files")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def test_baseline_round_trip():
+    print("the first run writes the baseline, later runs compare to it")
+    tmp = tempfile.mkdtemp()
+    try:
+        pin = _pin_of(neurokit2=("0.2.13", "a" * 64, 313),
+                      wfdb=("4.3.1", "b" * 64, 28))
+        first = QQ.establish_or_check_baseline(tmp, pin)
+        check(first["created"] and os.path.exists(first["path"]),
+              "the first run creates env_pin_baseline.json")
+        check(first["drift"] == [] and first["blocking"] == [],
+              "a freshly created baseline reports no drift")
+        again = QQ.establish_or_check_baseline(tmp, pin)
+        check(not again["created"] and again["drift"] == [],
+              "an unchanged environment shows no drift on the second run")
+        bumped = json.loads(json.dumps(pin))
+        bumped["packages"]["wfdb"]["source_sha256"] = "9" * 64
+        third = QQ.establish_or_check_baseline(tmp, bumped)
+        check(len(third["blocking"]) == 1
+              and third["blocking"][0]["package"] == "wfdb",
+              "a changed wfdb source is blocking on a later run")
+        with open(first["path"], encoding="utf-8") as fh:
+            stored = json.load(fh)
+        check(stored["packages"]["wfdb"]["source_sha256"] == "b" * 64,
+              "the baseline file is not rewritten by a drifting run")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -770,8 +865,8 @@ def test_notebook_contract():
                   and "build_env_pin" in "".join(c["source"])), default=-1)
     check(install_at < pin_at,
           f"the install cell ({install_at}) runs before the pin cell ({pin_at})")
-    check("env_pin_drift" in joined,
-          "the notebook compares the pin against the recorded QUALIFY-0 values")
+    check("establish_or_check_baseline" in joined,
+          "the notebook compares the pin against the Drive baseline")
     check('VALID_MODES = ("DESIGN", "QUALIFY_DS1_FREEZE", '
           '"QUALIFY_DS2_GATE", "QUALIFY_REPORT")' in joined,
           "the notebook allows only the four authorised modes")
@@ -825,6 +920,8 @@ def main() -> int:
              test_cross_beat_detection, test_chance_and_bootstrap,
              test_ds1_freeze_produces_constants, test_freeze_requires_env_pin,
              test_missing_pin_says_why, test_pin_drift_blocks_only_the_frozen_rule,
+             test_incomparable_hash_versions_are_refused,
+             test_hash_is_traversal_order_independent, test_baseline_round_trip,
              test_gate_passes_on_a_good_delineator,
              test_gate_never_reads_ds2_beat_classes,
              test_gate_fails_on_low_sensitivity, test_gate_fails_on_low_ppv,

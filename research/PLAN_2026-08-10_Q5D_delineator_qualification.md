@@ -62,12 +62,26 @@ DS1 waveform**."* 그래서 별도 run 으로 앞에 뺀다.
 
 **실측 (run `20260810T000629`, Colab, 파형 읽기 전)**
 
-| package | version | source SHA-256 | .py files |
-|---|---|---|---|
-| `neurokit2` | 0.2.13 | `aeebc91e527c8df42021f20c700c7127bc5fa8c9dff551107678b9e08d6752fd` | 313 |
-| `wfdb` | 4.3.1 | `59d90b04498d884f7262302eaf5a30e41c5542781ab5369b9841d5e2fd482807` | 28 |
-| `numpy` | 2.0.2 | `955935d8a6d2727780e2552d50422916ae1a41011c218abaeb1247d5eed2ceec` | 400 |
-| `scipy` | 1.16.3 | `460b4ab1d9dc2a220686d947424d1e410ad03c6d0fa43b2ac70c7fb44c3d6a6b` | 961 |
+| package | version | .py files |
+|---|---|---|
+| `neurokit2` | 0.2.13 | 313 |
+| `wfdb` | 4.3.1 | 28 |
+| `numpy` | 2.0.2 | 400 |
+| `scipy` | 1.16.3 | 961 |
+
+**이 run 의 source SHA-256 값은 폐기했다 (2026-08-10 정정).** 그 값들은 임시
+인라인 셀이 `os.walk` **순회 순서**로 해시한 것이고, 모듈의 `hash_source_tree` 는
+**상대경로 정렬 순서**로 해시한다. 같은 파일·같은 내용이라도 두 순서는 다른 digest 를
+내므로(로컬 재현: `numpy` walk `74ccf630…` vs sorted `ad55d46e…`) 두 값은 애초에
+비교 대상이 아니었다. 그 값을 baseline 으로 박아둔 탓에 두 번째 실행이
+`wfdb`·`numpy`·`scipy` 에서 DRIFT 를 보고했는데, **환경은 전혀 바뀌지 않았다** —
+하위 디렉터리가 없는 패키지만 두 순서가 우연히 일치하고(`neurokit2` 가 그래서 통과),
+나머지는 전부 어긋난 것이다.
+
+고친 방식: **repo 에 hash 를 박지 않는다.** hash 를 박으면 그 hash 를 만든 알고리즘까지
+박는 셈이다. 대신 첫 실행이 Drive 에 `qualify/env_pin_baseline.json` 을 쓰고, 이후
+실행이 그 파일과 대조한다. pin 은 `hash_algo_version` 을 함께 들고 다니며, 버전이
+다르면 "드리프트" 라고 말하지 않고 **비교 불가로 거부**한다.
 
 **정정 — `pandas` 가 pin 목록에서 빠져 있었다.** 그 실행에서 `neurokit2` 설치가
 `pandas` 를 2.2.2 → 2.3.3 으로 올렸고(`google-colab 1.0.0 requires pandas==2.2.2`

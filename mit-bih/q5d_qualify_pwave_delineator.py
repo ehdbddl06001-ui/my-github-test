@@ -133,19 +133,15 @@ PINNED_PACKAGES: Tuple[str, ...] = ("neurokit2", "wfdb", "numpy", "scipy",
 PIP_INSTALL_SPEC: Tuple[str, ...] = ("neurokit2==0.2.13", "wfdb==4.3.1")
 #: The packages that *are* the frozen rule.  Drift in these stops the run.
 STRICT_PIN_PACKAGES: Tuple[str, ...] = ("neurokit2", "wfdb")
-#: Measured on Colab, QUALIFY-0 run 20260810T000629, before any waveform read.
-#: A mismatch means the environment moved under us — stop and report, do not
-#: quietly re-pin.
-EXPECTED_SOURCE_SHA256: Dict[str, str] = {
-    "neurokit2":
-        "aeebc91e527c8df42021f20c700c7127bc5fa8c9dff551107678b9e08d6752fd",
-    "wfdb":
-        "59d90b04498d884f7262302eaf5a30e41c5542781ab5369b9841d5e2fd482807",
-    "numpy":
-        "955935d8a6d2727780e2552d50422916ae1a41011c218abaeb1247d5eed2ceec",
-    "scipy":
-        "460b4ab1d9dc2a220686d947424d1e410ad03c6d0fa43b2ac70c7fb44c3d6a6b",
-}
+#: The pin baseline lives next to the run, in Drive — not hard-coded here.
+#:
+#: An earlier version of this module carried literal hashes measured in Colab
+#: on 2026-08-10.  They were produced by a *different* traversal order than
+#: :func:`hash_source_tree` uses, so every later run reported drift on wfdb,
+#: numpy and scipy while the environment had not moved at all.  Hard-coding a
+#: hash means hard-coding the algorithm that made it; the first run now writes
+#: the baseline and later runs compare against that file.
+BASELINE_FILE = "env_pin_baseline.json"
 
 DRIVE_ASSET_REL = "MedKOS/ecg-model/assets/EXP-2026-007_prep_data"
 SOURCE_SUBDIR = "source"
@@ -288,23 +284,42 @@ class _Rng:
 # ─────────────────────────────────────────────────────────────────────────────
 # Environment pin — recorded before any waveform is read
 # ─────────────────────────────────────────────────────────────────────────────
-def package_pin(name: str) -> Dict[str, object]:
-    """Version plus a deterministic SHA-256 over the package's ``.py`` tree."""
-    mod = importlib.import_module(name)
-    root = os.path.dirname(os.path.abspath(mod.__file__))
-    digest = hashlib.sha256()
+#: Bump when :func:`hash_source_tree` changes.  A hash is only comparable to
+#: another hash made by the same algorithm, so the pin carries its version and
+#: a comparison across versions is refused rather than reported as drift.
+HASH_ALGO_VERSION = 1
+
+
+def hash_source_tree(root: str) -> Dict[str, object]:
+    """SHA-256 over every ``.py`` under ``root``, in relative-path order.
+
+    Order matters and is fixed here on purpose: hashing in ``os.walk`` order
+    instead gives a different digest for the very same files, which is exactly
+    how the first baseline ended up incomparable with later runs.
+    """
     paths: List[str] = []
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = sorted(d for d in dirnames if d != "__pycache__")
         for fn in sorted(filenames):
             if fn.endswith(".py"):
                 paths.append(os.path.join(dirpath, fn))
-    for p in sorted(paths):
-        digest.update(os.path.relpath(p, root).replace(os.sep, "/").encode())
-        with open(p, "rb") as fh:
+    rels = sorted(os.path.relpath(p, root).replace(os.sep, "/") for p in paths)
+    digest = hashlib.sha256()
+    for rel in rels:
+        digest.update(rel.encode("utf-8"))
+        with open(os.path.join(root, rel), "rb") as fh:
             digest.update(fh.read())
-    return {"version": str(getattr(mod, "__version__", "?")),
-            "source_sha256": digest.hexdigest(), "py_files": len(paths)}
+    return {"source_sha256": digest.hexdigest(), "py_files": len(rels),
+            "hash_algo_version": HASH_ALGO_VERSION}
+
+
+def package_pin(name: str) -> Dict[str, object]:
+    """Version plus a deterministic SHA-256 over the package's ``.py`` tree."""
+    mod = importlib.import_module(name)
+    root = os.path.dirname(os.path.abspath(mod.__file__))
+    out: Dict[str, object] = {"version": str(getattr(mod, "__version__", "?"))}
+    out.update(hash_source_tree(root))
+    return out
 
 
 def build_env_pin(timestamp: str,
@@ -342,32 +357,66 @@ def env_pin_is_complete(pin: Dict[str, object]) -> Tuple[bool, List[str]]:
 
 
 def env_pin_drift(pin: Dict[str, object],
-                  expected: Optional[Dict[str, str]] = None
-                  ) -> List[Dict[str, object]]:
-    """Packages whose source hash differs from the recorded QUALIFY-0 pin.
+                  baseline: Dict[str, object]) -> List[Dict[str, object]]:
+    """Packages whose source hash differs from the baseline pin.
 
     Reported, never auto-corrected.  Only :data:`STRICT_PIN_PACKAGES` are
     ``blocking``: those two are version-pinned by us and they *are* the frozen
     rule, so a change there means the rule is not the one that was pinned.
     numpy and scipy ride along with whatever Colab ships; a bump there is worth
     recording, not worth refusing to start over.
+
+    A pin made by a different :data:`HASH_ALGO_VERSION` is not comparable, and
+    saying "drift" about it would be a lie about the environment.
     """
-    expected = EXPECTED_SOURCE_SHA256 if expected is None else expected
-    pkgs = dict(pin.get("packages") or {})
+    now = dict(pin.get("packages") or {})
+    was = dict(baseline.get("packages") or {})
     drift: List[Dict[str, object]] = []
-    for name, want in expected.items():
-        got = (pkgs.get(name) or {}).get("source_sha256")
-        if got and str(got) != str(want):
-            drift.append({"package": name, "expected": want, "observed": got,
-                          "version": (pkgs.get(name) or {}).get("version"),
-                          "blocking": name in STRICT_PIN_PACKAGES})
+    for name, old in was.items():
+        old = dict(old or {})
+        new = dict(now.get(name) or {})
+        want, got = old.get("source_sha256"), new.get("source_sha256")
+        if not want or not got or str(want) == str(got):
+            continue
+        if int(old.get("hash_algo_version") or 0) != \
+                int(new.get("hash_algo_version") or 0):
+            raise Q5DQualifyError(
+                f"baseline for {name} was hashed by algorithm version "
+                f"{old.get('hash_algo_version')} but this run uses "
+                f"{new.get('hash_algo_version')} — the two digests are not "
+                f"comparable. Re-establish the baseline instead of reading "
+                f"this as environment drift.")
+        drift.append({"package": name, "expected": want, "observed": got,
+                      "version": new.get("version"),
+                      "baseline_version": old.get("version"),
+                      "py_files": new.get("py_files"),
+                      "baseline_py_files": old.get("py_files"),
+                      "blocking": name in STRICT_PIN_PACKAGES})
     return drift
 
 
 def blocking_drift(pin: Dict[str, object],
-                   expected: Optional[Dict[str, str]] = None
-                   ) -> List[Dict[str, object]]:
-    return [d for d in env_pin_drift(pin, expected) if d["blocking"]]
+                   baseline: Dict[str, object]) -> List[Dict[str, object]]:
+    return [d for d in env_pin_drift(pin, baseline) if d["blocking"]]
+
+
+def baseline_path(asset_root: str) -> str:
+    return os.path.join(qualify_dir(asset_root), BASELINE_FILE)
+
+
+def establish_or_check_baseline(asset_root: str, pin: Dict[str, object]
+                                ) -> Dict[str, object]:
+    """First run writes the baseline; later runs are compared against it."""
+    path = baseline_path(asset_root)
+    if not os.path.exists(path):
+        _dump_json(path, pin)
+        return {"created": True, "path": path, "drift": [], "blocking": []}
+    with open(path, encoding="utf-8") as fh:
+        base = json.load(fh)
+    drift = env_pin_drift(pin, base)
+    return {"created": False, "path": path, "drift": drift,
+            "baseline_timestamp": base.get("timestamp"),
+            "blocking": [d for d in drift if d["blocking"]]}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
