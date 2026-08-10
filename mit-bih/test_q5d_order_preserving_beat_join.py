@@ -21,6 +21,7 @@ from __future__ import annotations
 import json
 import os
 import random
+import shutil
 import sys
 import tempfile
 
@@ -746,25 +747,290 @@ def test_null_summary_and_reuse_guard():
           "widening the tolerance invalidates the stored null")
 
 
+def _class_selective_fixture():
+    """Rows whose pooled certification rate and `J_min` are far apart.
+
+    Deliberately shaped like the DS1 result that exposed the defect: N is
+    plentiful and almost fully recovered, V is scarce and mostly lost.  Any
+    statistic that pools classes reads this as healthy; `J_min` does not.
+    Returns the join rows, the processed and Leg 1 class maps, and a
+    beat-level view for the independent reference.
+    """
+    rows = []
+    processed = {}
+    mamba_classes = {}
+    beats_by_record = {}
+    plan = [("101", 40, 6, 3, 0.95, 0.5, 0.10),
+            ("102", 25, 9, 2, 0.90, 0.4, 0.00),
+            ("103", 60, 3, 8, 0.98, 1.0, 0.25),
+            ("104", 12, 0, 5, 0.75, 0.0, 0.40),
+            ("105", 33, 7, 1, 0.85, 0.6, 1.00)]
+    rng = random.Random("q5d-class-selective")
+    for record, n_n, n_s, n_v, keep_n, keep_s, keep_v in plan:
+        beats = ([("N", keep_n)] * n_n + [("S", keep_s)] * n_s
+                 + [("V", keep_v)] * n_v)
+        rng.shuffle(beats)
+        beats_by_record[record] = []
+        for index, (cls, keep) in enumerate(beats):
+            processed[(record, index)] = cls
+            mamba_classes[(record, index)] = cls
+            correct = rng.random() < keep
+            beats_by_record[record].append((cls, correct))
+            if not correct:
+                # Half the misses are never certified, half are certified but
+                # carry a disagreeing class.  Both must count as a miss.
+                if rng.random() < 0.5:
+                    rows.append({"record": record, "status": BJ.STATUS_UNMATCHED,
+                                 "cache_record_row": index,
+                                 "mamba_record_row": None, "mamba_aami": None})
+                    continue
+                carried = "S" if cls != "S" else "V"
+            else:
+                carried = cls
+            rows.append({"record": record, "status": BJ.STATUS_CERTIFIED,
+                         "cache_record_row": index, "mamba_record_row": index,
+                         "mamba_aami": carried})
+    return rows, processed, mamba_classes, beats_by_record
+
+
+def _reference_bootstrap_deltas(beats_by_record, q95, replicates):
+    """An independent statistic, computed from beats rather than aggregates.
+
+    Written to the spec sentence directly — resample records with replacement,
+    recompute each class's correct recall over the resampled beats, take the
+    minimum, subtract the fixed q95 — and sharing no code with the module
+    beyond the seed and the draw order.
+    """
+    records = sorted(beats_by_record)
+    rng = random.Random(f"{BJ.BOOTSTRAP_SEED}|record_cluster")
+    out = []
+    for _replicate in range(replicates):
+        drawn = [records[rng.randrange(len(records))]
+                 for _k in range(len(records))]
+        recalls = []
+        for cls in BJ.AAMI_CLASSES:
+            total = correct = 0
+            for record in drawn:
+                for beat_class, was_correct in beats_by_record[record]:
+                    if beat_class != cls:
+                        continue
+                    total += 1
+                    if was_correct:
+                        correct += 1
+            recalls.append((correct / total) if total else 0.0)
+        out.append(min(recalls) - q95)
+    return out
+
+
+def test_bootstrap_matches_an_independent_reference():
+    print("bootstrap: every replicate equals an independent reference")
+    rows, processed, mamba_classes, beats = _class_selective_fixture()
+    per_record = BJ.per_record_class_recall(rows, processed, mamba_classes)
+    q95 = 0.07
+    mine = BJ._bootstrap_replicate_deltas(per_record, q95, 200)
+    theirs = _reference_bootstrap_deltas(beats, q95, 200)
+    check(len(mine) == 200 and len(theirs) == 200,
+          "both produce one statistic per replicate")
+    mismatches = [k for k in range(200) if mine[k] != theirs[k]]
+    check(not mismatches,
+          f"all 200 replicate statistics agree exactly "
+          f"(first mismatch: {mismatches[:1]})")
+    # An interval-level check alone cannot see a wrong per-replicate
+    # statistic, which is how the pooled-rate defect survived.
+    check(len(set(mine)) > 1, "the replicates actually vary, so this is a test")
+
+
+def test_bootstrap_pooling_reproduces_j_min():
+    print("per-record per-class recall pools back to exactly j_min")
+    rows, processed, mamba_classes, _beats = _class_selective_fixture()
+    per_record = BJ.per_record_class_recall(rows, processed, mamba_classes)
+    hits = {c: 0 for c in BJ.AAMI_CLASSES}
+    totals = {c: 0 for c in BJ.AAMI_CLASSES}
+    for counts in per_record.values():
+        for cls in BJ.AAMI_CLASSES:
+            hits[cls] += counts[cls][0]
+            totals[cls] += counts[cls][1]
+    pooled_min = min((hits[c] / totals[c]) if totals[c] else 0.0
+                     for c in BJ.AAMI_CLASSES)
+    check(abs(pooled_min - BJ.j_min(rows, processed, mamba_classes)) < 1e-12,
+          "the bootstrap's input is the same quantity the point estimate is")
+    check(set(per_record) == {r for r, _i in processed},
+          "every processed record is resampleable, including scoreless ones")
+
+
+def test_bootstrap_refuses_the_pooled_certification_rate():
+    print("bootstrap: the interval is around J_min, not around coverage")
+    rows, processed, mamba_classes, _beats = _class_selective_fixture()
+    per_record = BJ.per_record_class_recall(rows, processed, mamba_classes)
+    j_true = BJ.j_min(rows, processed, mamba_classes)
+    certified = sum(1 for r in rows if r["status"] == BJ.STATUS_CERTIFIED)
+    pooled_rate = certified / len(processed)
+    q95 = 0.07
+    out = BJ.record_cluster_bootstrap(per_record, j_true, q95, replicates=400)
+    check(pooled_rate - j_true > 0.3,
+          f"the fixture separates the two statistics "
+          f"(pooled {pooled_rate:.3f} vs J_min {j_true:.3f})")
+    # This is the regression that pins the defect: the old implementation
+    # resampled `certified / cache_n`, so its interval sat around the pooled
+    # rate and gate 11 passed on a quantity the spec never defined.
+    check(out["ci_high"] < pooled_rate - q95,
+          "the whole interval lies below the pooled-rate value the defect gave")
+    check(out["ci_low"] <= out["point"] <= out["ci_high"],
+          "and the registered point estimate lies inside its own interval")
+    check(out["statistic"] == BJ.BOOTSTRAP_STATISTIC,
+          "the bundle records which statistic this interval is around")
+
+
 def test_bootstrap_is_reproducible():
     print("record-cluster bootstrap: records travel whole, seed reproduces")
-    per_record = {str(100 + k): (90 - k, 100) for k in range(12)}
-    # J_min_TRUE must be the statistic these clusters actually produce,
-    # otherwise the interval is around a different quantity than the point.
-    pooled = (sum(c for c, _t in per_record.values()) /
-              sum(t for _c, t in per_record.values()))
-    first = BJ.record_cluster_bootstrap(per_record, pooled, 0.2,
+    rows, processed, mamba_classes, _beats = _class_selective_fixture()
+    per_record = BJ.per_record_class_recall(rows, processed, mamba_classes)
+    j_true = BJ.j_min(rows, processed, mamba_classes)
+    first = BJ.record_cluster_bootstrap(per_record, j_true, 0.07,
                                         replicates=200)
-    second = BJ.record_cluster_bootstrap(per_record, pooled, 0.2,
+    second = BJ.record_cluster_bootstrap(per_record, j_true, 0.07,
                                          replicates=200)
     check(first["ci_low"] == second["ci_low"]
           and first["ci_high"] == second["ci_high"],
           "the same seed gives the same interval")
-    check(first["ci_low"] <= first["point"] <= first["ci_high"],
-          "the point estimate lies inside the interval")
     check(first["seed"] == BJ.BOOTSTRAP_SEED, "the registered seed is used")
     check(first["rule_fingerprint"] == BJ.rule_fingerprint(),
           "the bootstrap records its rule too")
+
+
+def test_gate11_cannot_be_fed_a_pooled_rate():
+    print("finalize refuses a true-join result that carries no class recall")
+    # Deliberately carries only the pooled certification rate — the shape
+    # the defective implementation resampled.
+    true_result = {"j_min_true": 0.2, "n_processed": 100,
+                   "per_record_certified": {"101": (90, 100)},
+                   "coverage": {}, "s_share_inflation": {}, "results": [],
+                   "leg1": {"ok": True}, "leg2_boundaries_ok": True,
+                   "ambiguous_fraction": 0.0, "split": BJ.SPLITS[0]}
+    families = {f: [0.1] * 10 for f in BJ.CONTROL_FAMILIES}
+    refused = False
+    try:
+        BJ._finalize_ds1_gate_reference(true_result, families, 10,
+                                        BJ.N_BOOTSTRAP_REPLICATES)
+    except BJ.Q5DJoinError as exc:
+        refused = "pooled certification rate" in str(exc)
+    check(refused,
+          "a result predating the corrected bootstrap cannot reach gate 11")
+
+
+def _write_fake_shards(directory, flip=None):
+    """Two shards of a plausible null, optionally with one float changed."""
+    os.makedirs(directory, exist_ok=True)
+    for start in (0, 4):
+        families = {}
+        for offset, family in enumerate(sorted(BJ.CONTROL_FAMILIES)):
+            families[family] = [round(0.05 * (start + k) + 0.01 * offset, 6)
+                                for k in range(4)]
+        maxima = [max(families[f][k] for f in BJ.CONTROL_FAMILIES)
+                  for k in range(4)]
+        if flip is not None and flip[0] == start:
+            family, index, value = flip[1], flip[2], flip[3]
+            families[family][index] = value
+            maxima = [max(families[f][k] for f in BJ.CONTROL_FAMILIES)
+                      for k in range(4)]
+        payload = {"null_runner_version": BJ.NULL_RUNNER_VERSION,
+                   "split": BJ.SPLITS[0], "families": list(BJ.CONTROL_FAMILIES),
+                   "master_seed": BJ.MASTER_SEED,
+                   "rule_fingerprint": BJ.rule_fingerprint(),
+                   "code_sha256": "deadbeef", "input_digest": "cafe",
+                   "replicate_start": start, "replicate_end": start + 4,
+                   "j": families, "j_null_max": maxima,
+                   "worker_count": 1, "git_commit": None}
+        payload["digest"] = BJ.shard_digest(payload)
+        BJ.write_null_shard(directory, payload)
+
+
+def test_compare_null_shard_sets_detects_one_flipped_value():
+    print("shard comparison is bitwise and locates a single changed float")
+    root = tempfile.mkdtemp(prefix="q5d-cmp-")
+    try:
+        a, b, c = (os.path.join(root, n) for n in ("a", "b", "c"))
+        _write_fake_shards(a)
+        _write_fake_shards(b)
+        _write_fake_shards(c, flip=(4, "order_shuffle", 2, 0.499999))
+        same = BJ.compare_null_shard_sets(a, b)
+        check(same["identical"], "two identical shard sets compare identical")
+        check(same["shards_a"] == 2 and same["same_ranges"],
+              "and cover the same replicate ranges")
+        for name, entry in dict(same["arrays"]).items():
+            check(entry["sha256_a"] == entry["sha256_b"],
+                  f"array {name}: digests match")
+
+        differ = BJ.compare_null_shard_sets(a, c)
+        check(not differ["identical"], "one changed float breaks identity")
+        shuffled = dict(differ["arrays"])["order_shuffle"]
+        check(not shuffled["identical"], "the changed family is named")
+        check(dict(shuffled["first_difference"])["index"] == 6,
+              "the first differing index is reported in concatenated order")
+        check(dict(differ["arrays"])["wrong_record"]["identical"],
+              "an untouched family still compares identical")
+        check(not dict(differ["arrays"])["j_null_max"]["identical"],
+              "and j_null_max moves with it")
+    finally:
+        shutil.rmtree(root, ignore_errors=True)
+
+
+def test_compare_decisions_reports_gate_by_gate():
+    print("before/after gate table is built from stored decisions, not memory")
+    old = {"decision": "JOIN_UNRESOLVED",
+           "first_stopping_reason": "3_overall_coverage", "gates_passed": 6,
+           "gates": [{"gate": "3_overall_coverage", "passed": False,
+                      "value": 0.7594904156198691},
+                     {"gate": "11_bootstrap_ci_lower", "passed": True,
+                      "value": 0.48239100367683824}]}
+    new = {"decision": "JOIN_UNRESOLVED",
+           "first_stopping_reason": "3_overall_coverage", "gates_passed": 5,
+           "gates": [{"gate": "3_overall_coverage", "passed": False,
+                      "value": 0.7594904156198691},
+                     {"gate": "11_bootstrap_ci_lower", "passed": False,
+                      "value": -0.02}]}
+    out = BJ.compare_decisions(old, new)
+    check(out["changed_gates"] == ["11_bootstrap_ci_lower"],
+          "only the gate that moved is flagged")
+    check(not out["decision_changed"],
+          "a changed gate need not change the decision, and that is reported")
+    check(out["gates_passed_old"] == 6 and out["gates_passed_new"] == 5,
+          "both pass counts are carried")
+    row = [r for r in out["gates"] if r["gate"] == "3_overall_coverage"][0]
+    check(not row["changed"] and row["old_value"] == row["new_value"],
+          "an unchanged gate keeps its value on both sides")
+
+
+def test_mark_superseded_preserves_and_refuses_relabel():
+    print("superseded is a label, never a delete and never a rewrite")
+    root = tempfile.mkdtemp(prefix="q5d-sup-")
+    try:
+        with open(os.path.join(root, "decision.json"), "w",
+                  encoding="utf-8") as fh:
+            fh.write('{"decision": "JOIN_UNRESOLVED"}')
+        path = BJ.mark_superseded(root, BJ.SUPERSEDED_GATE11,
+                                  "gate 11 resampled a pooled rate",
+                                  "old-code-sha", replaced_by="run-2")
+        with open(os.path.join(root, "decision.json"), encoding="utf-8") as fh:
+            check(fh.read() == '{"decision": "JOIN_UNRESOLVED"}',
+                  "the superseded artifact's contents are untouched")
+        with open(path, encoding="utf-8") as fh:
+            marker = json.load(fh)
+        check(marker["status"] == BJ.SUPERSEDED_GATE11,
+              "the marker carries the registered status string")
+        check(marker["code_sha256_of_producing_module"] == "old-code-sha",
+              "and the code hash the superseded numbers were produced under")
+        check(marker["code_sha256_now"] != "old-code-sha"
+              and len(marker["code_sha256_now"]) == 64,
+              "next to the hash of the module writing the marker")
+        again = False
+        try:
+            BJ.mark_superseded(root, BJ.SUPERSEDED_GATE11, "again", "x")
+        except BJ.Q5DJoinError:
+            again = True
+        check(again, "a marker is written once; relabelling is refused")
+    finally:
+        shutil.rmtree(root, ignore_errors=True)
 
 
 def test_percentile_matches_numpy():
@@ -2340,7 +2606,8 @@ def test_notebook_cells_run_in_order():
     watched = ("MODE", "BRANCH", "APPROVAL", "PREFLIGHT", "CANONICAL_MAMBA",
                "DRIVE", "ASSET_MITDB", "ASSET_CACHE_V10", "ASSET_V10_RESULTS",
                "ASSET_MAMBA_CANDIDATES", "RUN_DIR", "OPEN_REGISTERED_DATA",
-               "DS1_FROZEN_BUNDLE", "NEED_TESTS")
+               "DS1_FROZEN_BUNDLE", "NEED_TESTS", "SHARD_DIR",
+               "PRIOR_SHARD_DIR", "PRIOR_BUNDLE", "PRIOR_CODE_SHA")
     for index, source in code:
         used = {w for w in watched
                 if re.search(rf"\b{w}\b", source)
@@ -2549,6 +2816,26 @@ def test_leg2_stage_does_not_run_the_null():
           "DS1_GATE prints the expected null cost before starting")
     check("total_hours'] / MAX_WORKERS" in joined,
           "and prints the wall-clock that worker count actually implies")
+    # A shard is only valid under the code that produced it, so the directory
+    # is keyed by the module hash and two code versions cannot share one.
+    check('assert_implementation_only()["sha256"][:12]' in joined
+          and "_null_shards_DS1_{CODE_TAG}" in joined,
+          "the shard directory is separated by the module's code hash")
+    # Superseded artifacts are labelled, never removed.
+    check("mark_superseded" in joined and "SUPERSEDED_GATE11" in joined,
+          "the notebook labels the prior null and bundle as superseded")
+    for banned in ("shutil.rmtree", "os.remove", "os.unlink", "os.rmdir"):
+        check(banned not in joined,
+              f"the notebook never deletes an artifact ({banned})")
+    # The rerun is compared to the prior one rather than assumed to match.
+    check("compare_null_shard_sets" in joined,
+          "the rerun's J arrays are compared bitwise against the prior null")
+    check("compare_decisions" in joined,
+          "and the gate table is compared before/after from stored decisions")
+    check('print("bootstrap statistic:", boot.get("statistic"))' in joined,
+          "the null cell names the statistic its interval is around")
+    check('boot["ci_low"] <= boot["point"] <= boot["ci_high"]' in joined,
+          "and checks the point estimate lies inside its own interval")
 
     # The estimator itself, and the fact that it never suggests shrinking.
     est = BJ.estimate_null_runtime(2.0)
@@ -3139,6 +3426,9 @@ def test_serial_reference_equals_sharded_end_to_end():
                                                     "V": .99}},
                 "s_share_inflation": {"232": 1.0},
                 "per_record_certified": {"901": (96, 100), "902": (95, 100)},
+                "per_record_class_recall": {
+                    "901": {"N": (78, 80), "S": (10, 10), "V": (8, 10)},
+                    "902": {"N": (77, 80), "S": (9, 10), "V": (9, 10)}},
                 "ambiguous_fraction": 0.01, "leg2_boundaries_ok": True,
                 "leg1": {"ok": True}, "results": [],
             }
@@ -3229,6 +3519,8 @@ def test_ds1_gate_requires_the_complete_null():
                      "agreement_by_class": {"N": .999, "S": .99, "V": .99}},
         "s_share_inflation": {"232": 1.0},
         "per_record_certified": {"101": (90, 100)},
+        "per_record_class_recall": {
+            "101": {"N": (70, 75), "S": (10, 12), "V": (10, 13)}},
         "ambiguous_fraction": 0.0, "leg2_boundaries_ok": True,
         "leg1": {"ok": True}, "results": [],
     }
@@ -3426,6 +3718,8 @@ def test_public_finalizer_has_no_short_null_bypass():
                      "agreement_by_class": {"N": .999, "S": .99, "V": .99}},
         "s_share_inflation": {"232": 1.0},
         "per_record_certified": {"101": (90, 100)},
+        "per_record_class_recall": {
+            "101": {"N": (70, 75), "S": (10, 12), "V": (10, 13)}},
         "ambiguous_fraction": 0.0, "leg2_boundaries_ok": True,
         "leg1": {"ok": True}, "results": [],
     }
@@ -3592,7 +3886,14 @@ def main() -> int:
         test_shuffle_and_shift_controls,
         test_controls_rerun_the_whole_matcher,
         test_null_summary_and_reuse_guard,
+        test_bootstrap_matches_an_independent_reference,
+        test_bootstrap_pooling_reproduces_j_min,
+        test_bootstrap_refuses_the_pooled_certification_rate,
         test_bootstrap_is_reproducible,
+        test_gate11_cannot_be_fed_a_pooled_rate,
+        test_compare_null_shard_sets_detects_one_flipped_value,
+        test_compare_decisions_reports_gate_by_gate,
+        test_mark_superseded_preserves_and_refuses_relabel,
         test_percentile_matches_numpy,
         test_coverage_and_jmin,
         test_s_share_inflation_is_source_relative,

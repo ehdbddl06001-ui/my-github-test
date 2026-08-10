@@ -355,6 +355,13 @@ MASTER_SEED = 2026017
 BOOTSTRAP_SEED = 2026018
 N_NULL_REPLICATES = 10000
 N_BOOTSTRAP_REPLICATES = 2000
+#: What the bootstrap resamples and what it computes, recorded in
+#: `bootstrap.json` so a reader never has to infer the statistic from its
+#: interval.  Deliberately *not* part of `rule_fingerprint`: the frozen rule's
+#: constants are fixed, and this is a label for an already-registered
+#: statistic, not a new degree of freedom.
+BOOTSTRAP_STATISTIC = ("min over N/S/V of certified correct recall, over "
+                       "record-cluster resamples, minus q95(J_null_max)")
 WRONG_RECORD_QUINTILES = 5
 
 # ─── Acceptance gates (spec «Fixed acceptance and stopping gates») ──────────
@@ -1897,6 +1904,169 @@ def finalize_null_shards(shards: Mapping[Tuple[int, int],
     return out
 
 
+def load_null_shard_arrays(directory: str) -> Dict[Tuple[int, int],
+                                                   Dict[str, object]]:
+    """Every shard's arrays and recorded identity, without verifying them.
+
+    Reading an **archived** null must not require rebuilding the run that
+    produced it, so this deliberately skips the context checks
+    :func:`load_existing_shards` applies.  It exists for comparison only; its
+    output may not be finalised into a null, and
+    :func:`finalize_null_shards` is still the sole path to the arrays a gate
+    may use.
+    """
+    out: Dict[Tuple[int, int], Dict[str, object]] = {}
+    if not os.path.isdir(directory):
+        return out
+    for name in sorted(os.listdir(directory)):
+        if not (name.startswith("null_shard_") and name.endswith(".json")):
+            continue
+        payload = read_null_shard(os.path.join(directory, name))
+        key = (int(payload["replicate_start"]), int(payload["replicate_end"]))
+        out[key] = payload
+    return out
+
+
+def compare_null_shard_sets(directory_a: str, directory_b: str
+                            ) -> Dict[str, object]:
+    """Are two shard sets' J arrays the same numbers?  Measured, not assumed.
+
+    Concatenates each side in the finaliser's canonical order and compares per
+    family plus `j_null_max`, by exact value and by digest, reporting the first
+    differing index when they part.  It asserts no expectation: a rerun whose
+    module changed outside the null path *should* reproduce the arrays
+    bit for bit, but "should" is the hypothesis this measures, and a mismatch
+    is a reason to stop and investigate rather than a result to explain away.
+    """
+    def assemble(directory: str) -> Dict[str, object]:
+        shards = load_null_shard_arrays(directory)
+        arrays: Dict[str, List[float]] = {}
+        for family in sorted(CONTROL_FAMILIES):
+            values: List[float] = []
+            for _key, payload in sorted(shards.items()):
+                values.extend(dict(payload.get("j") or {}).get(family, []))
+            arrays[family] = values
+        maxima: List[float] = []
+        for _key, payload in sorted(shards.items()):
+            maxima.extend(payload.get("j_null_max") or [])
+        arrays["j_null_max"] = maxima
+        identities = sorted({str(p.get("code_sha256")) for p in shards.values()})
+        fingerprints = sorted({str(p.get("rule_fingerprint"))
+                               for p in shards.values()})
+        return {"arrays": arrays, "shards": len(shards),
+                "ranges": sorted(shards),
+                "code_sha256": identities, "rule_fingerprint": fingerprints}
+
+    left, right = assemble(directory_a), assemble(directory_b)
+    per_array: Dict[str, Dict[str, object]] = {}
+    for name in sorted(set(left["arrays"]) | set(right["arrays"])):
+        a = list(dict(left["arrays"]).get(name, []))
+        b = list(dict(right["arrays"]).get(name, []))
+        digest_a = hashlib.sha256(_canonical_json(a).encode("utf-8")).hexdigest()
+        digest_b = hashlib.sha256(_canonical_json(b).encode("utf-8")).hexdigest()
+        first = None
+        if a != b:
+            for index in range(min(len(a), len(b))):
+                if a[index] != b[index]:
+                    first = {"index": index, "a": a[index], "b": b[index]}
+                    break
+            if first is None:
+                first = {"index": min(len(a), len(b)),
+                         "a": len(a), "b": len(b), "detail": "length differs"}
+        per_array[name] = {"identical": a == b, "n_a": len(a), "n_b": len(b),
+                           "sha256_a": digest_a, "sha256_b": digest_b,
+                           "first_difference": first}
+    return {
+        "identical": all(v["identical"] for v in per_array.values())
+                     and left["ranges"] == right["ranges"],
+        "arrays": per_array,
+        "shards_a": left["shards"], "shards_b": right["shards"],
+        "same_ranges": left["ranges"] == right["ranges"],
+        "code_sha256_a": left["code_sha256"],
+        "code_sha256_b": right["code_sha256"],
+        "rule_fingerprint_a": left["rule_fingerprint"],
+        "rule_fingerprint_b": right["rule_fingerprint"],
+    }
+
+
+def compare_decisions(old: Mapping[str, object], new: Mapping[str, object]
+                      ) -> Dict[str, object]:
+    """Gate-by-gate before/after, so a rerun's effect is visible, not narrated.
+
+    Reports each gate's pass flag and value on both sides and flags the ones
+    that moved, alongside the decision and first stopping reason.  Both sides
+    come from stored `decision.json` files; nothing here recomputes a gate.
+    """
+    old_gates = {str(g["gate"]): g for g in list(old.get("gates") or [])}
+    new_gates = {str(g["gate"]): g for g in list(new.get("gates") or [])}
+    rows: List[Dict[str, object]] = []
+    for name in sorted(set(old_gates) | set(new_gates)):
+        before, after = old_gates.get(name), new_gates.get(name)
+        rows.append({
+            "gate": name,
+            "old_passed": None if before is None else bool(before["passed"]),
+            "new_passed": None if after is None else bool(after["passed"]),
+            "old_value": None if before is None else before.get("value"),
+            "new_value": None if after is None else after.get("value"),
+            "changed": (before is None or after is None
+                        or _canonical_json(before.get("value"))
+                        != _canonical_json(after.get("value"))
+                        or bool(before["passed"]) != bool(after["passed"])),
+        })
+    return {
+        "gates": rows,
+        "changed_gates": [r["gate"] for r in rows if r["changed"]],
+        "decision_old": old.get("decision"),
+        "decision_new": new.get("decision"),
+        "decision_changed": old.get("decision") != new.get("decision"),
+        "first_stopping_reason_old": old.get("first_stopping_reason"),
+        "first_stopping_reason_new": new.get("first_stopping_reason"),
+        "gates_passed_old": old.get("gates_passed"),
+        "gates_passed_new": new.get("gates_passed"),
+    }
+
+
+#: Why the first DS1 null and its bundle are retained but no longer current.
+SUPERSEDED_GATE11 = "SUPERSEDED_GATE11_IMPLEMENTATION_DEFECT"
+SUPERSEDED_FILENAME = "SUPERSEDED.json"
+
+
+def mark_superseded(directory: str, status: str, reason: str,
+                    code_sha256: str, replaced_by: str = "",
+                    stamp: str = "") -> str:
+    """Label a run artifact as superseded **without touching its contents**.
+
+    Superseded is not deleted.  A result that was computed and reported is
+    evidence about what the pipeline did, including when the pipeline was
+    wrong, so the directory stays exactly as it was and gains one file saying
+    why it is no longer current and under which code hash it was produced.
+    The marker is itself immutable: relabelling an artifact after the fact is
+    the same class of edit as overwriting it.
+    """
+    if not os.path.isdir(directory):
+        raise Q5DJoinError(f"nothing to mark superseded at {directory!r}")
+    path = os.path.join(directory, SUPERSEDED_FILENAME)
+    if os.path.exists(path):
+        raise Q5DJoinError(
+            f"refusing to overwrite an existing marker at {path!r}; a "
+            f"supersede marker is written once")
+    payload = {
+        "status": str(status),
+        "reason": str(reason),
+        "code_sha256_of_producing_module": str(code_sha256),
+        "code_sha256_now": assert_implementation_only()["sha256"],
+        "rule_fingerprint_now": rule_fingerprint(),
+        "replaced_by": str(replaced_by),
+        "stamp": str(stamp),
+        "note": ("The contents of this directory are unchanged.  This marker "
+                 "records that a later run supersedes them; it makes no claim "
+                 "about which numbers inside were affected."),
+    }
+    with open(path, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=1, ensure_ascii=False, sort_keys=True)
+    return path
+
+
 def estimate_null_runtime(seconds_per_join: float,
                           replicates: int = N_NULL_REPLICATES) -> Dict[str, object]:
     """How long the registered null will take, from one measured join.
@@ -2008,6 +2178,11 @@ def run_true_join(mitdb_dir: str, mamba_path: str, cache_dir: str, split: str,
         "s_share_inflation": inflation, "j_min_true": j_true,
         "ambiguous_fraction": _ratio(ambiguous, max(len(rows), 1)),
         "per_record_certified": per_record_certified,
+        # The bootstrap's input.  `per_record_certified` above is a
+        # certification *rate* and is kept for provenance only; it is not the
+        # registered statistic and must never be resampled in its place.
+        "per_record_class_recall": per_record_class_recall(
+            rows, processed, mamba_classes),
         "n_processed": coverage["overall_total"],
         "leg2_boundaries_ok": cache_loaded["boundary"]["ok"],
         "mamba_blocks": mamba_loaded["blocks"],
@@ -2119,9 +2294,13 @@ def _finalize_ds1_gate_reference(true_result: Mapping[str, object],
                         list(families[CONTROL_ORDER_SHUFFLE]),
                         list(families[CONTROL_CIRCULAR_SHIFT]),
                         j_true, int(true_result["n_processed"]))
+    if "per_record_class_recall" not in true_result:
+        raise Q5DJoinError(
+            "this true-join result predates the corrected bootstrap and "
+            "carries no per-record per-class recall; gate 11 may not be "
+            "evaluated from a pooled certification rate")
     bootstrap = record_cluster_bootstrap(
-        {r: tuple(v) for r, v in
-         dict(true_result["per_record_certified"]).items()},
+        dict(true_result["per_record_class_recall"]),
         j_true, float(null["q95"]), int(bootstrap_replicates))
     ledger = evaluate_gates(
         dict(true_result["coverage"]), dict(true_result["s_share_inflation"]),
@@ -3659,33 +3838,110 @@ def assert_null_matches_rule(summary: Mapping[str, object]) -> None:
             f"rule's cutoff.")
 
 
-def record_cluster_bootstrap(per_record: Mapping[str, Tuple[int, int]],
+def per_record_class_recall(rows: Sequence[Mapping[str, object]],
+                            processed_classes: Mapping[Tuple[str, int], str],
+                            mamba_classes: Mapping[Tuple[str, int], str]
+                            ) -> Dict[str, Dict[str, Tuple[int, int]]]:
+    """``j_min``'s numerators and denominators, split by record.
+
+    Pooling these over every record reproduces :func:`j_min` exactly, and that
+    identity is what makes them a legitimate input to the record-cluster
+    bootstrap: a record is the unit of dependence, a class is the axis the
+    statistic minimises over, so the bootstrap needs *both* and cannot be
+    computed from a pooled certification rate.
+
+    Every record present in ``processed_classes`` gets an entry even when it
+    contributes no beat of any AAMI class, so the set of records the bootstrap
+    resamples is the real one rather than the subset that happened to score.
+    """
+    per_record: Dict[str, Dict[str, List[int]]] = {}
+
+    def bucket(record: object) -> Dict[str, List[int]]:
+        return per_record.setdefault(
+            str(record), {c: [0, 0] for c in AAMI_CLASSES})
+
+    for (record, _row), cls in processed_classes.items():
+        entry = bucket(record)
+        if cls in entry:
+            entry[cls][1] += 1
+    for row in rows:
+        if row["status"] != STATUS_CERTIFIED:
+            continue
+        j, i = row["cache_record_row"], row["mamba_record_row"]
+        if j is None or i is None:
+            continue
+        record = str(row["record"])
+        cls = processed_classes.get((record, int(j)))
+        # The carried Leg 1 class, exactly as `j_min` resolves it.
+        raw = row.get("mamba_aami")
+        if raw is None:
+            raw = mamba_classes.get((record, int(i)))
+        entry = bucket(record)
+        if cls in entry and raw == cls:
+            entry[cls][0] += 1
+    return {record: {c: (counts[c][0], counts[c][1]) for c in AAMI_CLASSES}
+            for record, counts in per_record.items()}
+
+
+def _bootstrap_replicate_deltas(per_record_class: Mapping[
+                                    str, Mapping[str, Sequence[int]]],
+                                null_q95: float, replicates: int
+                                ) -> List[float]:
+    """One ``J_min* - q95`` per replicate, in replicate order.
+
+    Split out so a test can compare every replicate against an independent
+    reference rather than only the interval the replicates summarise — an
+    interval can look healthy while the per-replicate statistic is the wrong
+    quantity entirely.
+    """
+    records = sorted(per_record_class)
+    rng = random.Random(f"{BOOTSTRAP_SEED}|record_cluster")
+    deltas: List[float] = []
+    for _b in range(int(replicates)):
+        hits = {c: 0 for c in AAMI_CLASSES}
+        totals = {c: 0 for c in AAMI_CLASSES}
+        for _k in range(len(records)):
+            counts = per_record_class[records[rng.randrange(len(records))]]
+            for cls in AAMI_CLASSES:
+                hit, total = counts[cls]
+                hits[cls] += int(hit)
+                totals[cls] += int(total)
+        # `J_min*`: the minimum over the three per-class correct recalls, the
+        # same statistic as `j_min`, including its empty-class convention.
+        deltas.append(min(_ratio(hits[c], totals[c]) for c in AAMI_CLASSES)
+                      - float(null_q95))
+    return deltas
+
+
+def record_cluster_bootstrap(per_record_class: Mapping[
+                                 str, Mapping[str, Sequence[int]]],
                              j_true: float, null_q95: float,
                              replicates: int = N_BOOTSTRAP_REPLICATES
                              ) -> Dict[str, object]:
     """Record-cluster bootstrap of ``J_min_TRUE - q95(J_null_max)``.
 
     All beats of a sampled record travel together, because records are the
-    unit of dependence here.  The null is generated once under the frozen
-    rule; this interval quantifies the true record sample and is not a licence
-    to retune anything.
+    unit of dependence here.  Each replicate recomputes the per-class correct
+    recalls over the resampled records and takes their **minimum** — the
+    registered statistic.  A pooled certification rate is a different quantity
+    and may not stand in for it: pooling hides exactly the class-selective
+    loss `J_min` exists to expose, and an interval built on it can pass gate 11
+    while the registered statistic is nowhere near the interval.
+
+    The null is generated once under the frozen rule; this interval quantifies
+    the true record sample and is not a licence to retune anything.
     """
-    records = sorted(per_record)
+    records = sorted(per_record_class)
     if not records:
         return {"replicates": 0, "ci_low": 0.0, "ci_high": 0.0,
-                "point": j_true - null_q95, "seed": BOOTSTRAP_SEED}
-    rng = random.Random(f"{BOOTSTRAP_SEED}|record_cluster")
-    deltas: List[float] = []
-    for _b in range(int(replicates)):
-        hits = total = 0
-        for _k in range(len(records)):
-            record = records[rng.randrange(len(records))]
-            certified, denominator = per_record[record]
-            hits += certified
-            total += denominator
-        deltas.append(_ratio(hits, total) - null_q95)
+                "point": float(j_true) - float(null_q95),
+                "seed": BOOTSTRAP_SEED, "statistic": BOOTSTRAP_STATISTIC,
+                "rule_fingerprint": rule_fingerprint()}
+    deltas = _bootstrap_replicate_deltas(per_record_class, null_q95,
+                                         int(replicates))
     return {
         "replicates": int(replicates), "seed": BOOTSTRAP_SEED,
+        "statistic": BOOTSTRAP_STATISTIC,
         "point": float(j_true) - float(null_q95),
         "ci_low": percentile(deltas, 2.5), "ci_high": percentile(deltas, 97.5),
         "rule_fingerprint": rule_fingerprint(),
