@@ -2,7 +2,7 @@
 experiment_id: EXP-2026-007
 substage: Q5D_BEAT_JOIN_IDENTIFIABILITY_GATE
 title: Q5-D deletion-aware order-preserving beat identity join gate
-status: draft
+status: approved_for_implementation
 design_owner: codex
 implementation_owner: claude
 dataset: MIT-BIH
@@ -18,6 +18,15 @@ This document specifies one beat-identity join and its falsification gates.  It
 does not authorize implementation or execution.  EXP-2026-007 remains
 scientifically **NOT RUN**, and its parent spec remains
 `approved_for_implementation` only for the separately authorized stages.
+
+> **2026-08-10 status note (process only; no scientific content changed).** The
+> user has since taken step 2 below: the design is approved and `status` is now
+> `approved_for_implementation`.  The paragraph above is Codex's draft-era text
+> and is kept verbatim as the record of what was registered.  Read it with this
+> correction: **implementation is now authorized; execution is not.**  Step 4 —
+> a second, explicit user approval before the implemented join is run on the
+> registered data — is still outstanding, and so is the further association
+> approval.  EXP-2026-007 remains scientifically **NOT RUN**.
 
 The measurement-qualification track and this design track were separated
 because they used different files and evidence.  Qualification has now finished
@@ -646,8 +655,8 @@ Required outputs:
 
 # Implementation checklist
 
-- [ ] User approves this draft and status changes to `approved_for_implementation`
-- [ ] Claude implements the approved spec without executing it
+- [x] User approves this draft and status changes to `approved_for_implementation`
+- [x] Claude implements the approved spec without executing it
 - [ ] User separately approves execution on the registered data
 - [ ] Qualification passes before any join execution
 - [ ] Provenance/order audit passes before DS1 matching
@@ -704,3 +713,85 @@ Required outputs:
   execution approval; and documented the pre-existing record-232/parent-50%
   conflict without changing the parent gate.  Status remains `draft`; no join,
   label/probability inspection, training, download, or Drive mutation occurred.
+- 2026-08-10 — **Implementation approval and implementation** (Claude Code).
+
+  *What the user approved.* The user approved implementing this frozen design.
+  **That approval is for writing code only.**  It is explicitly **not** approval
+  to run the beat join on the registered data.  This PR therefore does not
+  execute the join: no MIT-BIH `.atr`, `mamba_data.npz`, V9/V10 cache or result
+  NPZ was opened, no DS1 or DS2 join performance was computed, no DS2 per-beat
+  class label was read, no V10 probability was opened, no association was run,
+  no model was trained, and no Drive file was created, moved or overwritten.
+  **Executing on the registered data requires a second, explicit user
+  approval** («Status boundary» step 4), which does not exist yet.
+
+  *The barrier is code, not a promise.*  `MODES_NEEDING_EXECUTION_APPROVAL`
+  (`LEG1_REPLAY_AUDIT`, `LEG2_RECORD_JOIN`, `DS1_GATE`, `DS2_GATE`) refuse to
+  start without an explicit approval token; `open_registered_input()` checks the
+  token *before* calling `open()`, so an unapproved run cannot even learn
+  whether an artifact exists.  `read_result_npz()` refuses the `prob` key in
+  every stage, with or without approval, and gates DS2 `y` behind a second
+  post-freeze release token.  The token appears nowhere in this repository
+  outside its own definition and the tests that prove the refusal.  Default CLI
+  mode is `DESIGN`; the data modes exit 2 with `JOIN_RESULT_NOT_RUN`.
+
+  *Implemented as specified.*  Leg 1 replays the three frozen mamba rules from
+  raw `.atr` (registered N/S/V map, 150-sample boundary test on `pos`, the
+  fewer-than-five-valid-beats record rule), preserves `.atr` sample order,
+  recomputes post-filter RR with the first pre-RR and last post-RR duplicated so
+  first and last beats are eligible, and audits count/order/RR against the
+  committed ledger — failing as `JOIN_RULE_FALSIFIED` / `LEG1_SOURCE_REPLAY`,
+  distinct from the material-contract `JOIN_INPUT_ABSENT`.  Leg 2 matches
+  strictly inside each ledger-cut record slice on the single fixed candidate
+  rule (`|Δpre| ≤ 1` and `|Δpost| ≤ 1` integer samples at 360 Hz,
+  round-half-to-even), with no secondary score, distance/label preference or
+  record-specific penalty.  The 44-record ledger, the 36/8 strata and the eight
+  registered deltas (`108 −1`, `116 −14`, `203 −2`, `208 −7`, `223 −1`,
+  `105 −1`, `111 −1`, `222 −4`) are constants verified against the registered
+  starts and totals, never recomputed from join performance.  `t` is refused as
+  a join key.  Equal count is a reporting stratum only, and `V9/V10 ⊆ mamba` is
+  not used as an identity axiom.
+
+  *Forced edges without enumeration.*  `CERTIFIED` means "in every
+  maximum-cardinality monotone matching".  The implementation uses prefix/suffix
+  chain-length DP: an edge lies in some maximum matching iff `L(e)+R(e)−1 = M`,
+  its rank inside any such matching is forced to `L(e)`, so an edge is in
+  *every* maximum matching iff no other usable edge shares its rank.  Singleton
+  rank class → `CERTIFIED`; otherwise `AMBIGUOUS`, left unmatched.  Nothing is
+  imputed and no arbitrary optimal path is promoted.  This equivalence is
+  checked in `test_forced_edges_match_brute_force`, which enumerates *all*
+  maximum matchings on 220 random small records (72 of them with multiple
+  optima) and agrees with the fast path on every one.
+
+  *Deviation worth recording.*  §«Negative controls» says the wrong-record
+  control is skipped for a length bin with fewer than two records.  The first
+  implementation mapped such a record to itself, which would have put a copy of
+  TRUE into the null; a test caught it.  `derange_within_bins()` now omits those
+  records, `wrong_record_skipped()` reports them, and building the control for a
+  split where no derangement exists raises rather than degrading to identity.
+  No threshold, tolerance, gate, statistic or stopping rule was changed.
+
+  *Null reuse.*  `rule_fingerprint()` hashes the tolerance, symbol map, ledger,
+  matcher description, seeds and all gate constants.  `null_summary()` stores
+  it and `assert_null_matches_rule()` refuses a null generated under a different
+  rule, so a relaxed rule structurally cannot inherit the primary rule's cutoff.
+
+  *Verification.*  357 assertions pass with no registered artifact opened; the
+  21 synthetic fixtures produce **zero false certified pairs**.  The 10,000-
+  replicate null and 2,000-replicate bootstrap were **not** run — only small
+  synthetic replicates, to test reproducibility and format.
+
+  *Record 232, unchanged.*  Record 232's 1,382/1,837 (75.2%) DS2 S share is
+  carried as a source-cohort constant.  Gate 12 remains source-relative
+  (inflation ≤ 1.25) and does not relax or replace the parent spec's absolute
+  50% ceiling, so a successful identity join may still leave the parent
+  association blocked by the parent's own preregistered gate.  This spec makes
+  no parent amendment.
+
+  *Files changed.*  Only the four this spec allows: this file's `status`,
+  checklist and Decision log; `mit-bih/q5d_order_preserving_beat_join.py`;
+  `mit-bih/test_q5d_order_preserving_beat_join.py`; and
+  `notebooks/quest54_q5d_order_preserving_beat_join.ipynb` (committed
+  unexecuted, every output cell empty, no fabricated result).  Claude's
+  qualification files (`mit-bih/q5d_qualify_*`, `notebooks/quest53_*`,
+  `research/PLAN_2026-08-10_*`) were not touched.

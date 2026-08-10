@@ -1,0 +1,2697 @@
+"""EXP-2026-007 / Q5-D — deletion-aware order-preserving beat identity join.
+
+IMPLEMENTATION ONLY.  NO TRAINING / NO ASSOCIATION / NOT RUN ON REGISTERED DATA.
+
+This module implements the frozen join specified in
+``experiments/specs/EXP-2026-007-q5d-order-preserving-beat-join-gate.md``.
+Writing the code and running it on the registered data are **two separate
+approvals**.  The user approved the first one.  The second one has not been
+given, so every entry point that would open a registered artifact refuses to
+run unless an explicit execution-approval token is handed to it, and the
+token is not used anywhere in this repository yet.
+
+The question
+------------
+Does one fixed, deletion-aware, order-preserving alignment of raw MIT-BIH
+``.atr`` R-beat order to the registered processed-beat row order recover a
+unique, one-to-one, class-balanced beat identity map?  This is an
+*identifiability* question.  It is not the parent association question, and a
+successful join does not authorise opening a V10 probability.
+
+Two legs, two kinds of evidence
+-------------------------------
+``Leg 1`` — ``.atr`` -> mamba rows.  Deterministic **source replay**.  The
+three frozen mamba rules (registered N/S/V symbol map, the 150-sample boundary
+test on annotation position ``pos``, and the fewer-than-five-valid-beats
+record rule) are recomputed from the raw annotations alone; no detector is
+involved.  Post-filter RR is recomputed exactly as the source does, with the
+first pre-RR duplicating the first interval and the last post-RR duplicating
+the last interval — so first and last beats are **eligible**, not excluded.
+Any deviation from the committed lineage ledger is ``JOIN_RULE_FALSIFIED``
+with ``failed_leg = LEG1_SOURCE_REPLAY``.  A missing or hash-inconsistent
+input is instead ``JOIN_INPUT_ABSENT``.
+
+``Leg 2`` — mamba rows -> V9/V10 positional rows.  Detector-dependent, so it
+is **not** reconstructed from ``.atr``.  It consumes the registered cache rows
+in their materialised ``detect_r()`` order.  Facts this module encodes
+structurally rather than in prose:
+
+- V9/V10 row order is detection order, **not** ``.atr`` ordinal order.
+- The result NPZ stores only ``prob``, ``y`` and ``pid``; row identity is
+  positional and nothing else.
+- ``t`` is never a join key.  :func:`reject_t_as_join_key` refuses any input
+  that offers one.
+- Global alignment is forbidden.  Matching happens strictly inside one record
+  slice cut arithmetically from the 44-record ledger.
+- The 36 equal-count and 8 mismatched-count records are *preregistered audit
+  strata*.  Both strata run the same matcher; equal count is never treated as
+  positional identity, and ``V9/V10 subset-of mamba`` is never an axiom.
+  Mamba cuts at annotation position ``pos`` while V9/V10 cuts at detector
+  position ``p``, so a drop-one/add-one cancellation is possible.
+- Gaps are permitted on both sequences; no row is ever imputed.
+- Every certified mapping is record-local, one-to-one and strictly monotone.
+
+The matcher
+-----------
+One fixed rule and nothing else.  A candidate edge exists iff both integer
+360 Hz sample differences are within one sample::
+
+    abs(mamba_pre_samples[i]  - cache_pre_samples[j])  <= 1
+    abs(mamba_post_samples[i] - cache_post_samples[j]) <= 1
+
+Among candidate edges the matcher takes a strictly monotone one-to-one
+matching of maximum cardinality.  There is no secondary score, distance
+preference, label preference or record-specific penalty.  An edge is
+``CERTIFIED`` only when it appears in **every** maximum-cardinality monotone
+matching; edges that vary across equally optimal paths are ``AMBIGUOUS`` and
+stay unmatched.  Forced edges are found with prefix/suffix dynamic
+programming (:func:`match_record`) — optimal matchings are never enumerated
+and one arbitrary optimal path is never promoted.
+
+Stages
+------
+``DESIGN``              — print the frozen rule; read nothing.
+``SYNTHETIC_FIXTURES``  — run the fixture battery; synthetic data only.
+``LEG1_REPLAY_AUDIT``   — replay ``.atr`` and compare to the mamba ledger.
+``LEG2_RECORD_JOIN``    — record-wise matching against the registered caches.
+``DS1_GATE``            — the DS1 audit, null and bootstrap.
+``DS2_GATE``            — the frozen support gates, once, after DS1 freezes.
+``JOIN_REPORT``         — replay a saved bundle; recompute nothing.
+
+``DESIGN``, ``SYNTHETIC_FIXTURES`` and ``JOIN_REPORT`` never open a registered
+artifact.  The other four do, and therefore refuse to start without the
+separate execution approval.
+
+Decisions: ``JOIN_INPUT_ABSENT`` | ``JOIN_RULE_FALSIFIED`` |
+``JOIN_SELECTION_BIASED`` | ``JOIN_UNRESOLVED`` | ``JOIN_IDENTIFIABLE``, plus
+``JOIN_RESULT_NOT_RUN`` for the state this repository is actually in.
+First-failure-wins picks the single primary decision; every gate's number and
+pass/fail is still recorded separately.
+
+Run the tests: ``python3 mit-bih/test_q5d_order_preserving_beat_join.py``
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import random
+import sys
+from typing import (Dict, Iterable, List, Mapping, Optional, Sequence, Tuple)
+
+EXPERIMENT_ID = "EXP-2026-007"
+ARM_ID = "Q5-D"
+SUBSTAGE = "Q5D_BEAT_JOIN_IDENTIFIABILITY_GATE"
+RUN_SLUG = "q5d_beat_join"
+MODULE_VERSION = 1
+MODULE_BUILD = "2026-08-10"
+
+NO_EXECUTION_BANNER = (
+    "EXP-2026-007 / Q5-D BEAT JOIN — IMPLEMENTED, NOT RUN ON REGISTERED DATA")
+
+#: What the user approved, spelled out so no reader has to infer it.
+APPROVAL_NOTE = (
+    "The user approved writing this implementation.  That approval does NOT "
+    "cover running the join on the registered MIT-BIH / mamba / V9 / V10 "
+    "artifacts.  Executing on registered data needs a second, explicit user "
+    "approval (join spec, «Status boundary» step 4).")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Modes
+# ─────────────────────────────────────────────────────────────────────────────
+MODE_DESIGN = "DESIGN"
+MODE_FIXTURES = "SYNTHETIC_FIXTURES"
+MODE_LEG1 = "LEG1_REPLAY_AUDIT"
+MODE_LEG2 = "LEG2_RECORD_JOIN"
+MODE_DS1 = "DS1_GATE"
+MODE_DS2 = "DS2_GATE"
+MODE_REPORT = "JOIN_REPORT"
+
+MODES: Tuple[str, ...] = (MODE_DESIGN, MODE_FIXTURES, MODE_LEG1, MODE_LEG2,
+                          MODE_DS1, MODE_DS2, MODE_REPORT)
+#: Modes that reach a registered artifact.  Each needs the execution approval.
+MODES_NEEDING_EXECUTION_APPROVAL: Tuple[str, ...] = (
+    MODE_LEG1, MODE_LEG2, MODE_DS1, MODE_DS2)
+#: Modes that are safe without it, because they only touch synthetic data or
+#: an already-produced bundle.
+OFFLINE_MODES: Tuple[str, ...] = (MODE_DESIGN, MODE_FIXTURES, MODE_REPORT)
+#: Stage names that belong to a substage nobody has authorised.
+FORBIDDEN_MODES: Tuple[str, ...] = (
+    "ASSOCIATION", "ANALYZE", "TRAIN", "RETRAIN", "CALIBRATE", "SHAM")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Decisions
+# ─────────────────────────────────────────────────────────────────────────────
+DECISION_INPUT_ABSENT = "JOIN_INPUT_ABSENT"
+DECISION_RULE_FALSIFIED = "JOIN_RULE_FALSIFIED"
+DECISION_SELECTION_BIASED = "JOIN_SELECTION_BIASED"
+DECISION_UNRESOLVED = "JOIN_UNRESOLVED"
+DECISION_IDENTIFIABLE = "JOIN_IDENTIFIABLE"
+DECISION_NOT_RUN = "JOIN_RESULT_NOT_RUN"
+DECISIONS: Tuple[str, ...] = (
+    DECISION_INPUT_ABSENT, DECISION_RULE_FALSIFIED, DECISION_SELECTION_BIASED,
+    DECISION_UNRESOLVED, DECISION_IDENTIFIABLE, DECISION_NOT_RUN)
+
+LEG1 = "LEG1_SOURCE_REPLAY"
+LEG2 = "LEG2_POSITIONAL_JOIN"
+LEGS: Tuple[str, ...] = (LEG1, LEG2)
+
+STATUS_CERTIFIED = "CERTIFIED"
+STATUS_AMBIGUOUS = "AMBIGUOUS"
+STATUS_UNMATCHED = "UNMATCHED"
+STATUSES: Tuple[str, ...] = (STATUS_CERTIFIED, STATUS_AMBIGUOUS,
+                             STATUS_UNMATCHED)
+
+# Why a row is not certified.  These are audit categories, never inputs.
+REASON_NONE = ""
+REASON_SYMBOL = "LEG1_SYMBOL_NOT_IN_AAMI"
+REASON_BOUNDARY = "LEG1_BOUNDARY_150_SAMPLES"
+REASON_TOO_FEW = "LEG1_RECORD_UNDER_FIVE_VALID_BEATS"
+REASON_NO_EDGE = "LEG2_NO_CANDIDATE_EDGE"
+REASON_NOT_OPTIMAL = "LEG2_EDGE_IN_NO_MAXIMUM_MATCHING"
+REASON_AMBIGUOUS = "LEG2_AMBIGUOUS_RANK_CLASS"
+REASONS: Tuple[str, ...] = (REASON_NONE, REASON_SYMBOL, REASON_BOUNDARY,
+                            REASON_TOO_FEW, REASON_NO_EDGE,
+                            REASON_NOT_OPTIMAL, REASON_AMBIGUOUS)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Frozen rule constants.  None of these may move after DS1 or DS2 is seen.
+# ─────────────────────────────────────────────────────────────────────────────
+FS = 360.0
+#: mamba boundary rule (`mit-bih/lineage/v15b_local.py`: WIN_BEFORE/WIN_AFTER).
+WIN_BEFORE = 150
+WIN_AFTER = 150
+#: mamba record rule: a record with fewer than this many valid beats is dropped.
+MIN_VALID_BEATS = 5
+#: The registered mamba symbol map.  `F` and `Q` are absent on purpose — that
+#: single omission is the whole of the 818-beat Q5-B-0 drop map.
+AAMI_SYMBOL_MAP: Dict[str, str] = {
+    "N": "N", "L": "N", "R": "N", "e": "N", "j": "N",
+    "A": "S", "a": "S", "J": "S", "S": "S",
+    "V": "V", "E": "V",
+}
+AAMI_CLASSES: Tuple[str, ...] = ("N", "S", "V")
+
+#: The one fixed candidate-edge tolerance, in integer 360 Hz samples.
+RR_TOLERANCE_SAMPLES = 1
+
+UNIT_SECONDS = "seconds"
+UNIT_SAMPLES = "samples"
+DECLARED_UNITS: Tuple[str, ...] = (UNIT_SECONDS, UNIT_SAMPLES)
+
+#: Fields that may never appear in an input offered as a join key.
+BANNED_JOIN_KEYS: Tuple[str, ...] = ("t", "time", "t_seconds", "cumsum_pre")
+
+#: Keys this module is allowed to pull out of a result NPZ.  The probability
+#: array is not one of them, in any stage.
+RESULT_NPZ_READABLE: Tuple[str, ...] = ("pid",)
+RESULT_NPZ_DS1_AUDIT_KEYS: Tuple[str, ...] = ("pid", "y")
+RESULT_NPZ_SEALED: Tuple[str, ...] = ("prob",)
+
+# ─── Negative controls, null and bootstrap ──────────────────────────────────
+CONTROL_WRONG_RECORD = "wrong_record"
+CONTROL_ORDER_SHUFFLE = "order_shuffle"
+CONTROL_CIRCULAR_SHIFT = "circular_shift"
+CONTROL_FAMILIES: Tuple[str, ...] = (CONTROL_WRONG_RECORD,
+                                     CONTROL_ORDER_SHUFFLE,
+                                     CONTROL_CIRCULAR_SHIFT)
+MASTER_SEED = 2026017
+BOOTSTRAP_SEED = 2026018
+N_NULL_REPLICATES = 10000
+N_BOOTSTRAP_REPLICATES = 2000
+WRONG_RECORD_QUINTILES = 5
+
+# ─── Acceptance gates (spec «Fixed acceptance and stopping gates») ──────────
+GATE_COVERAGE_MIN = 0.95
+GATE_S_COVERAGE_MIN = 0.95
+GATE_PER_CLASS_COVERAGE_MIN = 0.90
+GATE_CLASS_BALANCE_MIN = 0.80
+GATE_RECORD_COVERAGE_MIN = 0.80
+GATE_RECORD_BALANCE_MIN = 0.80
+GATE_AGREEMENT_OVERALL_MIN = 0.995
+GATE_AGREEMENT_PER_CLASS_MIN = 0.98
+GATE_SIGNAL_TO_NULL_MIN = 5.0
+GATE_S_SHARE_INFLATION_MAX = 1.25
+
+#: Source-cohort facts about record 232, kept next to the gate that uses them.
+#: This concentration exists **before** the join and cannot be repaired by
+#: choosing a favourable join subset.  Gate 12 is source-relative: it asks
+#: whether certification *inflated* the share.  It neither replaces nor relaxes
+#: the parent spec's absolute 50% ceiling, so a clean join can still leave the
+#: parent association blocked by the parent's own preregistered gate.
+DS2_S_BEATS_TOTAL = 1837
+RECORD_232_S_BEATS = 1382
+RECORD_232_S_SHARE = RECORD_232_S_BEATS / DS2_S_BEATS_TOTAL      # 0.7523...
+PARENT_ABSOLUTE_RECORD_S_SHARE_CEILING = 0.50
+
+# ─────────────────────────────────────────────────────────────────────────────
+# The 44-record ledger.  Registered, never recomputed from join performance.
+# ─────────────────────────────────────────────────────────────────────────────
+#: ``(record, cache_n)`` in V9/V10 array order, per split.  Source:
+#: `research/HANDOFF_2026-08-10_Q5D_preflight_result_to_codex.md` §3, which is
+#: the common value of the V9 and V10 cache ``meta.json`` ledgers.
+CACHE_LEDGER: Dict[str, Tuple[Tuple[str, int], ...]] = {
+    "DS1": (("101", 1862), ("106", 2027), ("108", 1759), ("109", 2528),
+            ("112", 2537), ("114", 1875), ("115", 1952), ("116", 2397),
+            ("118", 2277), ("119", 1987), ("122", 2474), ("124", 1613),
+            ("201", 1961), ("203", 2972), ("205", 2644), ("207", 1859),
+            ("208", 2572), ("209", 3004), ("215", 3360), ("220", 2046),
+            ("223", 2590), ("230", 2255)),
+    "DS2": (("100", 2271), ("103", 2083), ("105", 2566), ("111", 2123),
+            ("113", 1794), ("117", 1534), ("121", 1862), ("123", 1517),
+            ("200", 2598), ("202", 2134), ("210", 2638), ("212", 2747),
+            ("213", 2887), ("214", 2257), ("219", 2153), ("221", 2427),
+            ("222", 2477), ("228", 2053), ("231", 1570), ("232", 1780),
+            ("233", 3066), ("234", 2752)),
+}
+SPLITS: Tuple[str, ...] = ("DS1", "DS2")
+
+#: Registered cache start rows, kept separately so :func:`verify_ledger` can
+#: check the arithmetic instead of trusting it.
+REGISTERED_CACHE_STARTS: Dict[str, Tuple[int, ...]] = {
+    "DS1": (0, 1862, 3889, 5648, 8176, 10713, 12588, 14540, 16937, 19214,
+            21201, 23675, 25288, 27249, 30221, 32865, 34724, 37296, 40300,
+            43660, 45706, 48296),
+    "DS2": (0, 2271, 4354, 6920, 9043, 10837, 12371, 14233, 15750, 18348,
+            20482, 23120, 25867, 28754, 31011, 33164, 35591, 38068, 40121,
+            41691, 43471, 46537),
+}
+
+#: ``cache_n - mamba_n`` for the eight preregistered mismatched records.
+#: Every other record is an equal-count record.  Registered, not discovered.
+MAMBA_COUNT_DELTA: Dict[str, int] = {
+    "108": -1, "116": -14, "203": -2, "208": -7, "223": -1,     # DS1, sum -25
+    "105": -1, "111": -1, "222": -4,                            # DS2, sum  -6
+}
+REGISTERED_CACHE_TOTALS: Dict[str, int] = {"DS1": 50551, "DS2": 49289}
+REGISTERED_MAMBA_TOTALS: Dict[str, int] = {"DS1": 50576, "DS2": 49295}
+REGISTERED_COUNT_DIFFERENCE: Dict[str, int] = {"DS1": -25, "DS2": -6}
+REGISTERED_EQUAL_COUNT_RECORDS = 36
+REGISTERED_MISMATCHED_RECORDS = 8
+REGISTERED_TOTAL_RECORDS = 44
+
+STRATUM_EQUAL = "equal_count"
+STRATUM_MISMATCH = "mismatched_count"
+STRATA: Tuple[str, ...] = (STRATUM_EQUAL, STRATUM_MISMATCH)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Run-bundle contract
+# ─────────────────────────────────────────────────────────────────────────────
+DRIVE_RUN_REL = "MedKOS/ecg-model/runs"
+RUN_DIR_SUFFIX = "EXP-2026-007_q5d_beat_join"
+
+BUNDLE_FILES: Tuple[str, ...] = (
+    "config.json", "manifest.json", "decision.json",
+    "synthetic_fixture_results.csv", "join_map.parquet",
+    "unmatched_and_ambiguous.csv", "record_class_coverage.csv",
+    "negative_control_null.npz", "null_summary.json", "bootstrap.json",
+    "log.txt", "summary.md",
+)
+
+#: Minimum audit fields of ``join_map``.  A probability column is not here and
+#: :func:`validate_join_map_row` rejects one if it ever appears.
+JOIN_MAP_FIELDS: Tuple[str, ...] = (
+    "split", "record", "raw_atr_ordinal", "raw_r_sample", "mamba_record_row",
+    "mamba_global_row", "cache_record_row", "result_global_row", "status",
+    "pre_rr_difference_samples", "post_rr_difference_samples", "failed_leg",
+    "drop_or_unmatched_reason",
+)
+#: Column names that must never reach a join map, whatever the caller says.
+JOIN_MAP_BANNED_FIELDS: Tuple[str, ...] = (
+    "prob", "probability", "p_hat", "score", "logit", "v10_prob", "y_prob",
+)
+
+#: Textual evidence that this file cannot reach an outcome.  Tokens are split
+#: so the table itself does not match.  Checked by
+#: :func:`assert_implementation_only`, the cheapest artifact a reviewer can
+#: re-run.
+FORBIDDEN_TOKENS: Tuple[str, ...] = (
+    '["pro' + 'b"]', "['pro" + "b']", ".f" + "it(", ".back" + "ward(",
+    "average_" + "precision", "precision_recall_" + "curve",
+    "roc_auc_" + "score", "pr_" + "auc(", "torch." + "optim",
+    "state_" + "dict", "model." + "predict(", "keras." + "Model",
+)
+
+
+class Q5DJoinError(RuntimeError):
+    """Anything that must stop the substage rather than be worked around."""
+
+
+class ExecutionNotApprovedError(Q5DJoinError):
+    """Raised before a registered artifact is opened without approval."""
+
+
+class NullReuseError(Q5DJoinError):
+    """Raised when a stored null is offered to a rule it was not built for."""
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Approval barrier
+# ─────────────────────────────────────────────────────────────────────────────
+#: The exact token a caller must pass to reach registered data.  It is long and
+#: unpleasant on purpose: nobody types it by accident, and grepping the repo
+#: for it shows immediately that nothing here uses it.
+EXECUTION_APPROVAL_TOKEN = (
+    "USER-APPROVED-EXP-2026-007-Q5D-BEAT-JOIN-EXECUTION-ON-REGISTERED-DATA")
+EXECUTION_APPROVAL_FLAG = "--i-have-separate-execution-approval"
+
+#: The extra token for the one stage that is allowed to see DS2 class labels,
+#: and only after the DS1 rule, hashes, tests and thresholds have frozen.
+DS2_LABEL_RELEASE_TOKEN = (
+    "USER-APPROVED-EXP-2026-007-Q5D-DS2-SUPPORT-GATE-AFTER-DS1-FREEZE")
+DS2_LABEL_RELEASE_FLAG = "--ds2-support-gate-released"
+
+
+def require_execution_approval(approval: Optional[str], what: str) -> None:
+    """Gate every path that would open a registered artifact.
+
+    Called *before* the file is opened, not after, so a refusal leaves no
+    trace of having touched the data.
+    """
+    if approval != EXECUTION_APPROVAL_TOKEN:
+        raise ExecutionNotApprovedError(
+            f"refusing to open {what}: this needs the separate user approval "
+            f"for executing the beat join on registered data.\n"
+            f"{APPROVAL_NOTE}\n"
+            f"Pass {EXECUTION_APPROVAL_FLAG} (CLI) or the execution-approval "
+            f"token (API) only after that approval exists.")
+
+
+def require_ds2_label_release(release: Optional[str], what: str) -> None:
+    """DS2 class labels stay sealed until the DS1 rule has frozen."""
+    if release != DS2_LABEL_RELEASE_TOKEN:
+        raise ExecutionNotApprovedError(
+            f"refusing to read {what}: DS2 per-beat class labels are sealed "
+            f"until the DS1 rule, source hash, tests, environment, thresholds "
+            f"and DS1 report are frozen and the DS2 support gate is released. "
+            f"They may never be used to select the join rule.")
+
+
+def execution_is_approved(approval: Optional[str]) -> bool:
+    """Non-raising probe, for cards and notebooks that report their own state."""
+    return approval == EXECUTION_APPROVAL_TOKEN
+
+
+def open_registered_input(path: str, approval: Optional[str], what: str):
+    """The single door to a registered file.  Checks approval, then existence.
+
+    Order matters: without approval this never calls :func:`open`, so an
+    unapproved run cannot even learn whether the artifact is present.
+    """
+    require_execution_approval(approval, what)
+    if not os.path.exists(path):
+        raise Q5DJoinError(
+            f"{DECISION_INPUT_ABSENT}: {what} not found at {path!r}")
+    return open(path, "rb")
+
+
+def read_result_npz(path: str, split: str, keys: Sequence[str],
+                    approval: Optional[str] = None,
+                    ds2_label_release: Optional[str] = None
+                    ) -> Dict[str, object]:
+    """Read the *positional* fields of a result NPZ.  Never the probability.
+
+    ``pid`` proves the contiguous per-record block; ``y`` is the processed
+    class, allowed on DS1 for audit and on DS2 only under the released support
+    gate.  The sealed keys are refused whatever the caller asks for, so there
+    is no argument that reaches a probability value.
+    """
+    split = _check_split(split)
+    asked = tuple(str(k) for k in keys)
+    for key in asked:
+        if key in RESULT_NPZ_SEALED:
+            raise Q5DJoinError(
+                f"refusing to read {key!r} from a result NPZ: V10 probability "
+                f"values stay sealed for the whole of this substage, pass or "
+                f"fail.  Readable keys: {RESULT_NPZ_DS1_AUDIT_KEYS}")
+        if key not in RESULT_NPZ_DS1_AUDIT_KEYS:
+            raise Q5DJoinError(
+                f"unknown result-NPZ key {key!r}; this join reads only "
+                f"{RESULT_NPZ_DS1_AUDIT_KEYS}")
+        if key == "y" and split == "DS2":
+            require_ds2_label_release(ds2_label_release,
+                                      f"DS2 result-NPZ key {key!r}")
+    require_execution_approval(approval, f"result NPZ for {split} at {path!r}")
+    import numpy                                        # noqa: PLC0415
+    out: Dict[str, object] = {}
+    with numpy.load(path) as bundle:                    # pragma: no cover
+        present = tuple(bundle.files)
+        missing = [k for k in asked if k not in present]
+        if missing:
+            raise Q5DJoinError(
+                f"{DECISION_INPUT_ABSENT}: result NPZ {path!r} is missing "
+                f"{missing}; its positional contract cannot be proven")
+        for key in asked:
+            out[key] = bundle[key]
+    return out
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Small guards
+# ─────────────────────────────────────────────────────────────────────────────
+def resolve_mode(mode: str) -> str:
+    """Exactly one of :data:`MODES`; a later stage names itself when refused."""
+    m = str(mode).strip().upper()
+    if m in FORBIDDEN_MODES:
+        raise Q5DJoinError(
+            f"mode {m!r} belongs to a stage that is NOT authorised: the "
+            f"approved substage is {SUBSTAGE}.  The association analysis and "
+            f"any model training need their own approval.")
+    if m not in MODES:
+        raise Q5DJoinError(f"mode must be one of {MODES}, got {mode!r}")
+    return m
+
+
+def _check_split(split: str) -> str:
+    s = str(split).strip().upper()
+    if s not in SPLITS:
+        raise Q5DJoinError(f"split must be one of {SPLITS}, got {split!r}")
+    return s
+
+
+def reject_t_as_join_key(payload: Mapping[str, object]) -> None:
+    """``t`` is not a join key and offering one is an error, not a warning.
+
+    ``t = np.cumsum(pre) - pre[0]`` restarts at zero per record and accumulates
+    *filtered* RR, so it carries no identity.  Q5-A measured the consequence:
+    a 1.9% join, chance level.  Anything that hands this module a ``t`` has
+    misunderstood the input contract, so it stops rather than quietly ignoring
+    the field.
+    """
+    if not isinstance(payload, Mapping):
+        raise Q5DJoinError("join-key payload must be a mapping")
+    declared = payload.get("join_key")
+    offered = [k for k in payload if str(k).lower() in BANNED_JOIN_KEYS]
+    if declared is not None and str(declared).lower() in BANNED_JOIN_KEYS:
+        offered.append(str(declared))
+    if offered:
+        raise Q5DJoinError(
+            f"{sorted(set(offered))} offered as a join key: `t` and its "
+            f"aliases are explicitly ineligible.  It restarts at zero per "
+            f"record and accumulates filtered RR, so it is not a sample "
+            f"index and holds no beat identity.  Row identity here is "
+            f"positional, inside a record slice, and nothing else.")
+
+
+def assert_implementation_only(path: Optional[str] = None
+                               ) -> Dict[str, object]:
+    """Evidence that this file trains nothing and opens no probability."""
+    path = path or os.path.abspath(__file__)
+    with open(path, encoding="utf-8") as fh:
+        lines = fh.readlines()
+    body = "\n".join(ln for ln in lines if not ln.strip().startswith("#"))
+    hits = sorted({tok for tok in FORBIDDEN_TOKENS if tok in body})
+    if hits:
+        raise Q5DJoinError(
+            f"forbidden tokens present in {os.path.basename(path)}: {hits}")
+    return {"file": os.path.basename(path), "lines": len(lines),
+            "forbidden_tokens_checked": len(FORBIDDEN_TOKENS),
+            "sha256": sha256_file(path), "clean": True}
+
+
+def sha256_file(path: str) -> str:
+    digest = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 16), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _canonical_json(obj: object) -> str:
+    return json.dumps(obj, sort_keys=True, separators=(",", ":"),
+                      ensure_ascii=False)
+
+
+def rule_fingerprint() -> str:
+    """A hash of every constant that defines the frozen rule.
+
+    A null distribution generated under one fingerprint may not be reused
+    under another.  That is the whole point: relaxing the tolerance, changing
+    the ledger or touching a gate must invalidate the null rather than inherit
+    its cutoff.
+    """
+    payload = {
+        "module_version": MODULE_VERSION,
+        "fs": FS,
+        "win_before": WIN_BEFORE,
+        "win_after": WIN_AFTER,
+        "min_valid_beats": MIN_VALID_BEATS,
+        "aami_symbol_map": AAMI_SYMBOL_MAP,
+        "rr_tolerance_samples": RR_TOLERANCE_SAMPLES,
+        "matcher": "maximum_cardinality_monotone_forced_edges_only",
+        "secondary_score": None,
+        "cache_ledger": {s: list(CACHE_LEDGER[s]) for s in SPLITS},
+        "mamba_count_delta": MAMBA_COUNT_DELTA,
+        "controls": list(CONTROL_FAMILIES),
+        "master_seed": MASTER_SEED,
+        "bootstrap_seed": BOOTSTRAP_SEED,
+        "gates": {
+            "coverage_min": GATE_COVERAGE_MIN,
+            "s_coverage_min": GATE_S_COVERAGE_MIN,
+            "per_class_coverage_min": GATE_PER_CLASS_COVERAGE_MIN,
+            "class_balance_min": GATE_CLASS_BALANCE_MIN,
+            "record_coverage_min": GATE_RECORD_COVERAGE_MIN,
+            "record_balance_min": GATE_RECORD_BALANCE_MIN,
+            "agreement_overall_min": GATE_AGREEMENT_OVERALL_MIN,
+            "agreement_per_class_min": GATE_AGREEMENT_PER_CLASS_MIN,
+            "signal_to_null_min": GATE_SIGNAL_TO_NULL_MIN,
+            "s_share_inflation_max": GATE_S_SHARE_INFLATION_MAX,
+        },
+    }
+    return hashlib.sha256(_canonical_json(payload).encode("utf-8")).hexdigest()
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Ledger
+# ─────────────────────────────────────────────────────────────────────────────
+class LedgerRecord(object):
+    """One record's frozen slice in both lineages.
+
+    ``cache_start``/``mamba_start`` are cumulative sums inside the split, in
+    the frozen array order.  They are arithmetic consequences of the ledger —
+    never boundaries inferred from labels or from how well the join went.
+    """
+
+    __slots__ = ("split", "record", "index", "cache_n", "cache_start",
+                 "mamba_n", "mamba_start", "delta", "stratum")
+
+    def __init__(self, split: str, record: str, index: int, cache_n: int,
+                 cache_start: int, mamba_n: int, mamba_start: int) -> None:
+        self.split = split
+        self.record = record
+        self.index = index
+        self.cache_n = cache_n
+        self.cache_start = cache_start
+        self.mamba_n = mamba_n
+        self.mamba_start = mamba_start
+        self.delta = cache_n - mamba_n
+        self.stratum = STRATUM_EQUAL if self.delta == 0 else STRATUM_MISMATCH
+
+    def as_dict(self) -> Dict[str, object]:
+        return {"split": self.split, "record": self.record,
+                "array_index": self.index, "cache_n": self.cache_n,
+                "cache_start": self.cache_start, "mamba_n": self.mamba_n,
+                "mamba_start": self.mamba_start, "count_difference": self.delta,
+                "stratum": self.stratum}
+
+    def __repr__(self) -> str:                          # pragma: no cover
+        return (f"LedgerRecord({self.split} {self.record} "
+                f"cache {self.cache_n}@{self.cache_start} "
+                f"mamba {self.mamba_n}@{self.mamba_start} d={self.delta})")
+
+
+def build_ledger() -> Dict[str, Tuple[LedgerRecord, ...]]:
+    """Materialise the 44-record ledger from the registered constants."""
+    out: Dict[str, Tuple[LedgerRecord, ...]] = {}
+    for split in SPLITS:
+        rows: List[LedgerRecord] = []
+        cache_start = 0
+        mamba_start = 0
+        for index, (record, cache_n) in enumerate(CACHE_LEDGER[split]):
+            mamba_n = cache_n - MAMBA_COUNT_DELTA.get(record, 0)
+            rows.append(LedgerRecord(split, record, index, cache_n,
+                                     cache_start, mamba_n, mamba_start))
+            cache_start += cache_n
+            mamba_start += mamba_n
+        out[split] = tuple(rows)
+    return out
+
+
+def ledger_record(split: str, record: str) -> LedgerRecord:
+    split = _check_split(split)
+    for row in build_ledger()[split]:
+        if row.record == str(record):
+            return row
+    raise Q5DJoinError(f"record {record!r} is not in the {split} ledger")
+
+
+def verify_ledger() -> Dict[str, object]:
+    """Check the ledger against every registered total before matching.
+
+    A failure here is :data:`DECISION_INPUT_ABSENT`: the registered inputs do
+    not support the specified mapping.  It is never a performance result.
+    """
+    ledger = build_ledger()
+    problems: List[str] = []
+    equal = mismatch = 0
+    for split in SPLITS:
+        rows = ledger[split]
+        if len(rows) != len(REGISTERED_CACHE_STARTS[split]):
+            problems.append(f"{split}: record count {len(rows)}")
+        for row, registered in zip(rows, REGISTERED_CACHE_STARTS[split]):
+            if row.cache_start != registered:
+                problems.append(
+                    f"{split} {row.record}: cache start {row.cache_start} != "
+                    f"registered {registered}")
+        cache_total = sum(r.cache_n for r in rows)
+        mamba_total = sum(r.mamba_n for r in rows)
+        if cache_total != REGISTERED_CACHE_TOTALS[split]:
+            problems.append(f"{split}: cache total {cache_total} != "
+                            f"{REGISTERED_CACHE_TOTALS[split]}")
+        if mamba_total != REGISTERED_MAMBA_TOTALS[split]:
+            problems.append(f"{split}: mamba total {mamba_total} != "
+                            f"{REGISTERED_MAMBA_TOTALS[split]}")
+        if cache_total - mamba_total != REGISTERED_COUNT_DIFFERENCE[split]:
+            problems.append(f"{split}: difference {cache_total - mamba_total} "
+                            f"!= {REGISTERED_COUNT_DIFFERENCE[split]}")
+        equal += sum(1 for r in rows if r.stratum == STRATUM_EQUAL)
+        mismatch += sum(1 for r in rows if r.stratum == STRATUM_MISMATCH)
+    if equal != REGISTERED_EQUAL_COUNT_RECORDS:
+        problems.append(f"equal-count records {equal} != "
+                        f"{REGISTERED_EQUAL_COUNT_RECORDS}")
+    if mismatch != REGISTERED_MISMATCHED_RECORDS:
+        problems.append(f"mismatched records {mismatch} != "
+                        f"{REGISTERED_MISMATCHED_RECORDS}")
+    known = set(MAMBA_COUNT_DELTA)
+    listed = {r.record for split in SPLITS for r in ledger[split]
+              if r.stratum == STRATUM_MISMATCH}
+    if known != listed:
+        problems.append(f"mismatch set {sorted(listed)} != "
+                        f"registered {sorted(known)}")
+    return {
+        "ok": not problems, "problems": problems,
+        "records": equal + mismatch,
+        "equal_count_records": equal, "mismatched_records": mismatch,
+        "cache_total": sum(REGISTERED_CACHE_TOTALS.values()),
+        "mamba_total": sum(REGISTERED_MAMBA_TOTALS.values()),
+        "total_difference": sum(REGISTERED_COUNT_DIFFERENCE.values()),
+        "rule_fingerprint": rule_fingerprint(),
+    }
+
+
+def verify_record_boundaries(observed: Mapping[str, Mapping[str, int]]
+                             ) -> Dict[str, object]:
+    """Compare observed cache/result boundaries against the frozen ledger.
+
+    ``observed`` maps ``split -> {record: n}``.  This is how a real run proves
+    the 44 cache and result-position record boundaries without inspecting a
+    probability: the contiguous ``pid`` block length must equal the registered
+    ``cache_n``.
+    """
+    ledger = build_ledger()
+    problems: List[str] = []
+    for split in SPLITS:
+        rows = ledger[split]
+        seen = observed.get(split, {})
+        for row in rows:
+            got = seen.get(row.record)
+            if got is None:
+                problems.append(f"{split} {row.record}: boundary not observed")
+            elif int(got) != row.cache_n:
+                problems.append(f"{split} {row.record}: observed {got} != "
+                                f"registered {row.cache_n}")
+        extra = sorted(set(seen) - {r.record for r in rows})
+        if extra:
+            problems.append(f"{split}: unregistered records {extra}")
+    return {"ok": not problems, "problems": problems}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Units
+# ─────────────────────────────────────────────────────────────────────────────
+def to_samples(value: float, unit: str) -> int:
+    """Convert one declared RR value to integer 360 Hz samples.
+
+    Round-half-to-even, which is what Python's :func:`round` already does for
+    floats.  The unit comes from the artifact's declaration and nowhere else:
+    there is no fitted scale, no record-specific scale search, and no
+    "try both and keep the one with more matches".
+    """
+    u = str(unit).strip().lower()
+    if u == UNIT_SAMPLES:
+        scaled = float(value)
+    elif u == UNIT_SECONDS:
+        scaled = float(value) * FS
+    else:
+        raise Q5DJoinError(
+            f"undeclared or unknown RR unit {unit!r}; declare one of "
+            f"{DECLARED_UNITS}.  A unit scale is never estimated by picking "
+            f"the value that creates the most matches.")
+    return int(round(scaled))
+
+
+def rr_to_samples(values: Sequence[float], unit: str) -> Tuple[int, ...]:
+    return tuple(to_samples(v, unit) for v in values)
+
+
+def check_declared_unit(unit: str, values: Sequence[float]) -> str:
+    """Accept the declaration; refuse a declaration that cannot be true.
+
+    This is deliberately *not* unit inference.  It only catches an
+    unambiguously wrong declaration — RR in seconds is physiological around
+    0.2-3.0 s, so a "seconds" array whose median is in the hundreds is a
+    mislabelled samples array.  The response is to stop, never to rescale.
+    """
+    u = str(unit).strip().lower()
+    if u not in DECLARED_UNITS:
+        raise Q5DJoinError(
+            f"undeclared or unknown RR unit {unit!r}; declare one of "
+            f"{DECLARED_UNITS}")
+    if not values:
+        return u
+    ordered = sorted(float(v) for v in values)
+    median = ordered[len(ordered) // 2]
+    if u == UNIT_SECONDS and not (0.05 <= median <= 10.0):
+        raise Q5DJoinError(
+            f"RR declared in {UNIT_SECONDS!r} but the median is {median:g}: "
+            f"the declaration contradicts the artifact.  Stopping — a scale "
+            f"is never fitted to make the join work.")
+    if u == UNIT_SAMPLES and median < 18.0:
+        raise Q5DJoinError(
+            f"RR declared in {UNIT_SAMPLES!r} but the median is {median:g} "
+            f"(< 0.05 s at {FS:g} Hz): the declaration contradicts the "
+            f"artifact.  Stopping — a scale is never fitted.")
+    return u
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Leg 1 — deterministic `.atr` -> mamba source replay
+# ─────────────────────────────────────────────────────────────────────────────
+class Leg1Record(object):
+    """The replayed mamba slice for one record, plus its full drop audit."""
+
+    __slots__ = ("record", "split", "kept", "dropped", "record_dropped",
+                 "pre_seconds", "post_seconds", "pre_samples", "post_samples")
+
+    def __init__(self, record: str, split: str) -> None:
+        self.record = record
+        self.split = split
+        self.kept: List[Dict[str, object]] = []
+        self.dropped: List[Dict[str, object]] = []
+        self.record_dropped = False
+        self.pre_seconds: Tuple[float, ...] = ()
+        self.post_seconds: Tuple[float, ...] = ()
+        self.pre_samples: Tuple[int, ...] = ()
+        self.post_samples: Tuple[int, ...] = ()
+
+    @property
+    def n(self) -> int:
+        return len(self.kept)
+
+    def as_dict(self) -> Dict[str, object]:
+        return {"record": self.record, "split": self.split, "n": self.n,
+                "record_dropped": self.record_dropped,
+                "dropped_beats": len(self.dropped)}
+
+
+def replay_leg1_record(record: str, split: str,
+                       annotations: Sequence[Tuple[int, str]],
+                       signal_length: int) -> Leg1Record:
+    """Replay the three frozen mamba rules from raw ``.atr`` annotations.
+
+    ``annotations`` is ``(pos, symbol)`` in ``.atr`` sample order; ``.atr``
+    order is preserved and nothing is re-sorted, re-ranked or permuted.
+
+    The rules, in the source's own order
+    (`mit-bih/lineage/v15b_local.py` :101-109):
+
+    1. keep only symbols in the registered N/S/V map — ``F`` and ``Q`` are not
+       in it, which is the entire 818-beat Q5-B-0 drop map;
+    2. keep only ``WIN_BEFORE <= pos < signal_length - WIN_AFTER``, the
+       150-sample boundary test **on annotation position** ``pos``;
+    3. drop the whole record if fewer than :data:`MIN_VALID_BEATS` survive.
+
+    RR is then recomputed *after* filtering, in seconds, with the endpoints
+    duplicated::
+
+        d    = diff(kept_r_samples) / FS
+        pre  = [d[0]] + d              # pre[0] duplicates the first interval
+        post = pre[1:] + [pre[-1]]     # post[-1] duplicates the last interval
+
+    So the first and last beats have RR on both sides and are **eligible**.
+    An earlier draft assumed they were ineligible; the source says otherwise.
+    """
+    split = _check_split(split)
+    out = Leg1Record(str(record), split)
+    positions: List[int] = []
+    last_pos: Optional[int] = None
+    for ordinal, (pos, symbol) in enumerate(annotations):
+        pos = int(pos)
+        if last_pos is not None and pos < last_pos:
+            raise Q5DJoinError(
+                f"record {record}: annotation {ordinal} at sample {pos} is "
+                f"before annotation {ordinal - 1} at {last_pos}; `.atr` "
+                f"sample order must be preserved, not re-sorted")
+        last_pos = pos
+        entry = {"raw_atr_ordinal": ordinal, "raw_r_sample": pos,
+                 "symbol": str(symbol),
+                 "aami": AAMI_SYMBOL_MAP.get(str(symbol), "")}
+        if str(symbol) not in AAMI_SYMBOL_MAP:
+            entry["reason"] = REASON_SYMBOL
+            out.dropped.append(entry)
+            continue
+        if not (WIN_BEFORE <= pos < int(signal_length) - WIN_AFTER):
+            entry["reason"] = REASON_BOUNDARY
+            out.dropped.append(entry)
+            continue
+        entry["reason"] = REASON_NONE
+        out.kept.append(entry)
+        positions.append(pos)
+
+    if len(out.kept) < MIN_VALID_BEATS:
+        for entry in out.kept:
+            entry["reason"] = REASON_TOO_FEW
+        out.dropped.extend(out.kept)
+        out.kept = []
+        out.record_dropped = True
+        return out
+
+    diffs = [(positions[i + 1] - positions[i]) / FS
+             for i in range(len(positions) - 1)]
+    pre = [diffs[0]] + diffs                      # length n
+    post = pre[1:] + [pre[-1]]                    # length n
+    out.pre_seconds = tuple(pre)
+    out.post_seconds = tuple(post)
+    out.pre_samples = rr_to_samples(pre, UNIT_SECONDS)
+    out.post_samples = rr_to_samples(post, UNIT_SECONDS)
+    for row, (entry, pre_s, post_s) in enumerate(
+            zip(out.kept, out.pre_samples, out.post_samples)):
+        entry["mamba_record_row"] = row
+        entry["pre_samples"] = pre_s
+        entry["post_samples"] = post_s
+    return out
+
+
+def audit_leg1_against_ledger(replayed: Mapping[str, Leg1Record],
+                              split: str,
+                              stored_rr: Optional[Mapping[str, Mapping[
+                                  str, Sequence[float]]]] = None,
+                              rr_unit: str = UNIT_SECONDS,
+                              rr_atol_samples: int = 0) -> Dict[str, object]:
+    """Compare a Leg 1 replay against the committed mamba ledger.
+
+    Checks per-record count, split total, ordinal order and — when the stored
+    RR is supplied — every stored RR value within the declared serialization
+    tolerance.  Any mismatch is :data:`DECISION_RULE_FALSIFIED` with
+    ``failed_leg = LEG1_SOURCE_REPLAY``, and Leg 2 must not start.
+    """
+    split = _check_split(split)
+    rows = build_ledger()[split]
+    problems: List[str] = []
+    per_record: List[Dict[str, object]] = []
+    total = 0
+    for row in rows:
+        got = replayed.get(row.record)
+        if got is None:
+            problems.append(f"{split} {row.record}: not replayed")
+            per_record.append({"record": row.record, "expected": row.mamba_n,
+                               "observed": None, "ok": False})
+            continue
+        total += got.n
+        ok = got.n == row.mamba_n
+        if not ok:
+            problems.append(f"{split} {row.record}: replayed {got.n} beats != "
+                            f"ledger {row.mamba_n}")
+        ordinals = [int(e["raw_atr_ordinal"]) for e in got.kept]
+        if ordinals != sorted(ordinals):
+            ok = False
+            problems.append(f"{split} {row.record}: `.atr` ordinal order lost")
+        samples = [int(e["raw_r_sample"]) for e in got.kept]
+        if any(b <= a for a, b in zip(samples, samples[1:])):
+            ok = False
+            problems.append(f"{split} {row.record}: R samples not strictly "
+                            f"increasing after filtering")
+        rr_problems = 0
+        if stored_rr is not None and row.record in stored_rr:
+            stored = stored_rr[row.record]
+            check_declared_unit(rr_unit, list(stored.get("pre", ())))
+            for name, replayed_samples in (("pre", got.pre_samples),
+                                           ("post", got.post_samples)):
+                values = stored.get(name)
+                if values is None:
+                    problems.append(f"{split} {row.record}: stored {name}-RR "
+                                    f"absent")
+                    ok = False
+                    continue
+                stored_samples = rr_to_samples(values, rr_unit)
+                if len(stored_samples) != len(replayed_samples):
+                    problems.append(
+                        f"{split} {row.record}: stored {name}-RR length "
+                        f"{len(stored_samples)} != replayed "
+                        f"{len(replayed_samples)}")
+                    ok = False
+                    continue
+                bad = sum(1 for a, b in zip(stored_samples, replayed_samples)
+                          if abs(a - b) > rr_atol_samples)
+                rr_problems += bad
+                if bad:
+                    ok = False
+                    problems.append(f"{split} {row.record}: {bad} {name}-RR "
+                                    f"values outside the declared tolerance")
+        per_record.append({"record": row.record, "expected": row.mamba_n,
+                           "observed": got.n, "dropped": len(got.dropped),
+                           "record_dropped": got.record_dropped,
+                           "rr_mismatches": rr_problems, "ok": ok})
+    if total != REGISTERED_MAMBA_TOTALS[split]:
+        problems.append(f"{split}: replayed total {total} != ledger "
+                        f"{REGISTERED_MAMBA_TOTALS[split]}")
+    return {"ok": not problems, "split": split, "problems": problems,
+            "per_record": per_record, "replayed_total": total,
+            "expected_total": REGISTERED_MAMBA_TOTALS[split],
+            "failed_leg": None if not problems else LEG1,
+            "decision": None if not problems else DECISION_RULE_FALSIFIED}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Leg 2 — record-wise maximum-cardinality monotone matching
+# ─────────────────────────────────────────────────────────────────────────────
+class RecordSequence(object):
+    """One record's RR pairs, already in integer samples, in row order.
+
+    ``rows`` carries whatever audit payload the caller wants to keep beside
+    each row (raw ordinal, symbol, class).  The matcher never looks at it —
+    beat symbols and labels do not enter candidate construction.
+    """
+
+    __slots__ = ("record", "split", "side", "pre_samples", "post_samples",
+                 "rows")
+
+    def __init__(self, record: str, split: str, side: str,
+                 pre_samples: Sequence[int], post_samples: Sequence[int],
+                 rows: Optional[Sequence[Mapping[str, object]]] = None) -> None:
+        if len(pre_samples) != len(post_samples):
+            raise Q5DJoinError(
+                f"{side} {record}: pre/post length mismatch "
+                f"{len(pre_samples)} vs {len(post_samples)}")
+        self.record = str(record)
+        self.split = _check_split(split)
+        self.side = str(side)
+        self.pre_samples = tuple(int(v) for v in pre_samples)
+        self.post_samples = tuple(int(v) for v in post_samples)
+        self.rows = tuple(dict(r) for r in (rows or ()))
+        if self.rows and len(self.rows) != len(self.pre_samples):
+            raise Q5DJoinError(
+                f"{side} {record}: {len(self.rows)} audit rows for "
+                f"{len(self.pre_samples)} beats")
+
+    def __len__(self) -> int:
+        return len(self.pre_samples)
+
+
+class _PrefixMax(object):
+    """Fenwick tree over 1..size holding a prefix maximum.
+
+    This is the machinery behind the forced-edge test: it turns the
+    prefix/suffix chain-length DP into O(E log E) instead of enumerating
+    optimal matchings, which the spec forbids and which is exponential anyway.
+    """
+
+    __slots__ = ("size", "tree")
+
+    def __init__(self, size: int) -> None:
+        self.size = size
+        self.tree = [0] * (size + 1)
+
+    def update(self, index: int, value: int) -> None:
+        i = index
+        while i <= self.size:
+            if self.tree[i] < value:
+                self.tree[i] = value
+            i += i & (-i)
+
+    def query(self, index: int) -> int:
+        best = 0
+        i = index
+        while i > 0:
+            if self.tree[i] > best:
+                best = self.tree[i]
+            i -= i & (-i)
+        return best
+
+
+def candidate_edges(mamba: RecordSequence, cache: RecordSequence
+                    ) -> Tuple[Tuple[int, int], ...]:
+    """Every ``(i, j)`` satisfying the one fixed candidate rule.
+
+    Both differences must be within :data:`RR_TOLERANCE_SAMPLES` integer 360 Hz
+    samples.  One sample is the tolerance because both artifacts ultimately
+    refer to the same discrete signal; it is not widened when RR patterns
+    repeat, and there is no local-margin rule.
+    """
+    if mamba.record != cache.record or mamba.split != cache.split:
+        raise Q5DJoinError(
+            f"cross-record matching is not permitted: mamba "
+            f"{mamba.split}/{mamba.record} vs cache "
+            f"{cache.split}/{cache.record}.  Every mapping is record-local.")
+    tol = RR_TOLERANCE_SAMPLES
+    index: Dict[Tuple[int, int], List[int]] = {}
+    for j, (pre, post) in enumerate(zip(cache.pre_samples,
+                                        cache.post_samples)):
+        index.setdefault((pre, post), []).append(j)
+    edges: List[Tuple[int, int]] = []
+    for i, (pre, post) in enumerate(zip(mamba.pre_samples,
+                                        mamba.post_samples)):
+        found: List[int] = []
+        for dp in range(-tol, tol + 1):
+            for dq in range(-tol, tol + 1):
+                found.extend(index.get((pre + dp, post + dq), ()))
+        for j in sorted(set(found)):
+            edges.append((i, j))
+    edges.sort()
+    return tuple(edges)
+
+
+class MatchResult(object):
+    """The outcome of one record's matcher run."""
+
+    __slots__ = ("record", "split", "n_mamba", "n_cache", "max_cardinality",
+                 "certified", "ambiguous", "edges", "rank_class_sizes")
+
+    def __init__(self, record: str, split: str, n_mamba: int, n_cache: int,
+                 max_cardinality: int,
+                 certified: Sequence[Tuple[int, int]],
+                 ambiguous: Sequence[Tuple[int, int]],
+                 edges: Sequence[Tuple[int, int]],
+                 rank_class_sizes: Mapping[int, int]) -> None:
+        self.record = record
+        self.split = split
+        self.n_mamba = n_mamba
+        self.n_cache = n_cache
+        self.max_cardinality = max_cardinality
+        self.certified = tuple(certified)
+        self.ambiguous = tuple(ambiguous)
+        self.edges = tuple(edges)
+        self.rank_class_sizes = dict(rank_class_sizes)
+
+    @property
+    def certified_count(self) -> int:
+        return len(self.certified)
+
+    def as_dict(self) -> Dict[str, object]:
+        return {"record": self.record, "split": self.split,
+                "n_mamba": self.n_mamba, "n_cache": self.n_cache,
+                "candidate_edges": len(self.edges),
+                "max_cardinality": self.max_cardinality,
+                "certified": self.certified_count,
+                "ambiguous": len(self.ambiguous)}
+
+
+def match_record(mamba: RecordSequence, cache: RecordSequence) -> MatchResult:
+    """Certify only the edges common to *every* maximum monotone matching.
+
+    How the forced-edge test works, without enumerating anything:
+
+    ``L(e)`` is the longest strictly-increasing chain of candidate edges
+    ending at ``e``; ``R(e)`` is the longest chain starting at ``e``.  The
+    maximum cardinality is ``M = max L``.  An edge lies in **some** maximum
+    matching iff ``L(e) + R(e) - 1 == M``.
+
+    For such an edge, its position inside any maximum matching containing it
+    is forced to be ``L(e)``: a maximum matching through ``e`` at position
+    ``k`` has ``k - 1 <= L(e) - 1`` edges before it and ``M - k <= R(e) - 1``
+    after it, and those two inequalities sum to ``M - 1 <= M - 1``, so both
+    are tight.  Every maximum matching therefore holds exactly one edge of
+    each rank ``1..M``.
+
+    Hence ``e`` is in **every** maximum matching iff no other usable edge
+    shares its rank.  Singleton rank class -> ``CERTIFIED``; a rank class with
+    two or more members -> all of them ``AMBIGUOUS``, and they stay unmatched.
+    No arbitrary optimal path is ever promoted, and there is no secondary
+    score, distance preference, label preference or record-specific penalty to
+    break the tie with.
+    """
+    edges = candidate_edges(mamba, cache)
+    n_mamba, n_cache = len(mamba), len(cache)
+    if not edges:
+        return MatchResult(mamba.record, mamba.split, n_mamba, n_cache,
+                           0, (), (), (), {})
+
+    # L(e): longest chain ending at e.  Process i ascending; the tree holds
+    # only edges with a strictly smaller i, so monotonicity is enforced on
+    # both coordinates at once.
+    forward = _PrefixMax(n_cache + 1)
+    chain_end: Dict[Tuple[int, int], int] = {}
+    pos = 0
+    while pos < len(edges):
+        row = edges[pos][0]
+        group = []
+        while pos < len(edges) and edges[pos][0] == row:
+            group.append(edges[pos])
+            pos += 1
+        for edge in group:
+            chain_end[edge] = forward.query(edge[1]) + 1
+        for edge in group:
+            forward.update(edge[1] + 1, chain_end[edge])
+
+    # R(e): longest chain starting at e.  Same walk, mirrored.
+    backward = _PrefixMax(n_cache + 1)
+    chain_start: Dict[Tuple[int, int], int] = {}
+    pos = len(edges) - 1
+    while pos >= 0:
+        row = edges[pos][0]
+        group = []
+        while pos >= 0 and edges[pos][0] == row:
+            group.append(edges[pos])
+            pos -= 1
+        for edge in group:
+            mirrored = n_cache - edge[1]          # 1..n_cache, order reversed
+            chain_start[edge] = backward.query(mirrored - 1) + 1
+        for edge in group:
+            backward.update(n_cache - edge[1], chain_start[edge])
+
+    max_cardinality = max(chain_end.values())
+    by_rank: Dict[int, List[Tuple[int, int]]] = {}
+    for edge in edges:
+        if chain_end[edge] + chain_start[edge] - 1 != max_cardinality:
+            continue                                # in no maximum matching
+        by_rank.setdefault(chain_end[edge], []).append(edge)
+
+    certified: List[Tuple[int, int]] = []
+    ambiguous: List[Tuple[int, int]] = []
+    for rank in sorted(by_rank):
+        members = by_rank[rank]
+        if len(members) == 1:
+            certified.append(members[0])
+        else:
+            ambiguous.extend(members)
+    certified.sort()
+    ambiguous.sort()
+    _assert_monotone_one_to_one(certified, mamba.record)
+    return MatchResult(mamba.record, mamba.split, n_mamba, n_cache,
+                       max_cardinality, certified, ambiguous, edges,
+                       {r: len(v) for r, v in by_rank.items()})
+
+
+def _assert_monotone_one_to_one(edges: Sequence[Tuple[int, int]],
+                                record: str) -> None:
+    """Certified maps are strictly monotone and one-to-one, or nothing ships."""
+    for (i0, j0), (i1, j1) in zip(edges, edges[1:]):
+        if not (i1 > i0 and j1 > j0):
+            raise Q5DJoinError(
+                f"record {record}: certified edges ({i0},{j0}) and ({i1},{j1}) "
+                f"are not strictly monotone in both sequences")
+    if len({i for i, _ in edges}) != len(edges) or \
+            len({j for _, j in edges}) != len(edges):
+        raise Q5DJoinError(f"record {record}: certified map is not one-to-one")
+
+
+def join_record(mamba: RecordSequence, cache: RecordSequence,
+                ledger: Optional[LedgerRecord] = None
+                ) -> Tuple[MatchResult, List[Dict[str, object]]]:
+    """Match one record and emit its join-map rows.
+
+    Every row of both sequences appears exactly once in the output: certified
+    pairs, ambiguous rows, and unmatched rows with the reason they are
+    unmatched.  Nothing is imputed — an unmatched V9/V10 row stays unmapped
+    and counts against coverage, and an unmatched mamba row is reported with
+    its Leg 1 identity.
+    """
+    result = match_record(mamba, cache)
+    led = ledger or ledger_record(mamba.split, mamba.record)
+    certified_by_i = {i: j for i, j in result.certified}
+    certified_by_j = {j: i for i, j in result.certified}
+    ambiguous_i = {i for i, _ in result.ambiguous}
+    ambiguous_j = {j for _, j in result.ambiguous}
+    with_edge_i = {i for i, _ in result.edges}
+    with_edge_j = {j for _, j in result.edges}
+
+    rows: List[Dict[str, object]] = []
+    for i in range(len(mamba)):
+        audit = dict(mamba.rows[i]) if mamba.rows else {}
+        j = certified_by_i.get(i)
+        if j is not None:
+            status, reason = STATUS_CERTIFIED, REASON_NONE
+        elif i in ambiguous_i:
+            status, reason = STATUS_AMBIGUOUS, REASON_AMBIGUOUS
+        elif i in with_edge_i:
+            status, reason = STATUS_UNMATCHED, REASON_NOT_OPTIMAL
+        else:
+            status, reason = STATUS_UNMATCHED, REASON_NO_EDGE
+        rows.append({
+            "split": mamba.split,
+            "record": mamba.record,
+            "raw_atr_ordinal": audit.get("raw_atr_ordinal"),
+            "raw_r_sample": audit.get("raw_r_sample"),
+            "mamba_record_row": i,
+            "mamba_global_row": led.mamba_start + i,
+            "cache_record_row": j,
+            "result_global_row": None if j is None else led.cache_start + j,
+            "status": status,
+            "pre_rr_difference_samples": (
+                None if j is None
+                else mamba.pre_samples[i] - cache.pre_samples[j]),
+            "post_rr_difference_samples": (
+                None if j is None
+                else mamba.post_samples[i] - cache.post_samples[j]),
+            "failed_leg": None if status == STATUS_CERTIFIED else LEG2,
+            "drop_or_unmatched_reason": reason,
+        })
+    # V9/V10 rows with no certified partner.  These are the coverage
+    # denominator's misses, so they are reported, never imputed.
+    for j in range(len(cache)):
+        if j in certified_by_j:
+            continue
+        if j in ambiguous_j:
+            status, reason = STATUS_AMBIGUOUS, REASON_AMBIGUOUS
+        elif j in with_edge_j:
+            status, reason = STATUS_UNMATCHED, REASON_NOT_OPTIMAL
+        else:
+            status, reason = STATUS_UNMATCHED, REASON_NO_EDGE
+        rows.append({
+            "split": cache.split, "record": cache.record,
+            "raw_atr_ordinal": None, "raw_r_sample": None,
+            "mamba_record_row": None, "mamba_global_row": None,
+            "cache_record_row": j,
+            "result_global_row": led.cache_start + j,
+            "status": status,
+            "pre_rr_difference_samples": None,
+            "post_rr_difference_samples": None,
+            "failed_leg": LEG2, "drop_or_unmatched_reason": reason,
+        })
+    for row in rows:
+        validate_join_map_row(row)
+    return result, rows
+
+
+def join_split(mamba_by_record: Mapping[str, RecordSequence],
+               cache_by_record: Mapping[str, RecordSequence],
+               split: str) -> Dict[str, object]:
+    """Run Leg 2 over one split, record by record.
+
+    Global order-preserving alignment is forbidden and structurally impossible
+    here: each record is cut from the ledger and matched on its own, so a
+    deficit in 105, 111 or 222 cannot shift any later record.
+    """
+    split = _check_split(split)
+    rows_out: List[Dict[str, object]] = []
+    results: List[MatchResult] = []
+    for led in build_ledger()[split]:
+        mamba = mamba_by_record.get(led.record)
+        cache = cache_by_record.get(led.record)
+        if mamba is None or cache is None:
+            raise Q5DJoinError(
+                f"{DECISION_INPUT_ABSENT}: {split} {led.record} missing from "
+                f"{'mamba' if mamba is None else 'cache'} input")
+        if len(cache) != led.cache_n:
+            raise Q5DJoinError(
+                f"{split} {led.record}: cache slice {len(cache)} != registered "
+                f"{led.cache_n}; record boundaries come from the ledger, not "
+                f"from the data")
+        if len(mamba) != led.mamba_n:
+            raise Q5DJoinError(
+                f"{split} {led.record}: mamba slice {len(mamba)} != registered "
+                f"{led.mamba_n}")
+        result, rows = join_record(mamba, cache, led)
+        results.append(result)
+        rows_out.extend(rows)
+    return {"split": split, "results": results, "rows": rows_out,
+            "certified": sum(r.certified_count for r in results),
+            "cache_rows": sum(r.n_cache for r in results)}
+
+
+def validate_join_map_row(row: Mapping[str, object]) -> None:
+    """Schema check.  A probability column never reaches a join map."""
+    missing = [f for f in JOIN_MAP_FIELDS if f not in row]
+    if missing:
+        raise Q5DJoinError(f"join-map row missing fields {missing}")
+    banned = sorted({k for k in row
+                     if str(k).lower() in JOIN_MAP_BANNED_FIELDS})
+    if banned:
+        raise Q5DJoinError(
+            f"join-map row carries {banned}: the join map holds stable IDs "
+            f"and audit fields only.  V10 probability values are sealed.")
+    if row["status"] not in STATUSES:
+        raise Q5DJoinError(f"unknown join status {row['status']!r}")
+    if row["drop_or_unmatched_reason"] not in REASONS:
+        raise Q5DJoinError(
+            f"unknown reason {row['drop_or_unmatched_reason']!r}")
+    if row["failed_leg"] not in (None,) + LEGS:
+        raise Q5DJoinError(f"unknown failed_leg {row['failed_leg']!r}")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Coverage, agreement and the primary statistic
+# ─────────────────────────────────────────────────────────────────────────────
+def coverage_report(rows: Sequence[Mapping[str, object]],
+                    processed_classes: Mapping[Tuple[str, int], str],
+                    mamba_classes: Optional[Mapping[Tuple[str, int], str]] = None
+                    ) -> Dict[str, object]:
+    """Per-class and per-record certified coverage, plus class agreement.
+
+    ``processed_classes`` maps ``(record, cache_record_row) -> class`` — the
+    V9/V10 positional row's class, which is the denominator.  ``processed``
+    here never means a mamba row.  ``mamba_classes`` maps
+    ``(record, mamba_record_row) -> class`` and is used only to audit agreement
+    among certified pairs; class agreement never enters the join.
+    """
+    per_class_total = {c: 0 for c in AAMI_CLASSES}
+    per_class_certified = {c: 0 for c in AAMI_CLASSES}
+    per_class_agree = {c: 0 for c in AAMI_CLASSES}
+    per_record: Dict[str, Dict[str, int]] = {}
+
+    for (record, _row), cls in processed_classes.items():
+        if cls in per_class_total:
+            per_class_total[cls] += 1
+        bucket = per_record.setdefault(record, {"total": 0, "certified": 0})
+        bucket["total"] += 1
+
+    agree_total = agree_hits = 0
+    for row in rows:
+        if row["status"] != STATUS_CERTIFIED:
+            continue
+        record = str(row["record"])
+        j = row["cache_record_row"]
+        if j is None:
+            continue
+        cls = processed_classes.get((record, int(j)))
+        if cls in per_class_certified:
+            per_class_certified[cls] += 1
+        bucket = per_record.setdefault(record, {"total": 0, "certified": 0})
+        bucket["certified"] += 1
+        if mamba_classes is not None and row["mamba_record_row"] is not None:
+            raw = mamba_classes.get((record, int(row["mamba_record_row"])))
+            if raw is not None and cls is not None:
+                agree_total += 1
+                if raw == cls:
+                    agree_hits += 1
+                    if cls in per_class_agree:
+                        per_class_agree[cls] += 1
+
+    overall_total = sum(per_class_total.values())
+    overall_certified = sum(per_class_certified.values())
+    class_coverage = {c: _ratio(per_class_certified[c], per_class_total[c])
+                      for c in AAMI_CLASSES}
+    overall_coverage = _ratio(overall_certified, overall_total)
+    record_coverage = {r: _ratio(v["certified"], v["total"])
+                       for r, v in per_record.items()}
+    covered = [record_coverage[r] for r in sorted(record_coverage)
+               if per_record[r]["total"] > 0]
+    class_agreement = {
+        c: _ratio(per_class_agree[c], per_class_certified[c])
+        for c in AAMI_CLASSES}
+    return {
+        "class_total": per_class_total,
+        "class_certified": per_class_certified,
+        "class_coverage": class_coverage,
+        "overall_total": overall_total,
+        "overall_certified": overall_certified,
+        "overall_coverage": overall_coverage,
+        "class_coverage_balance": _ratio(min(class_coverage.values()),
+                                         overall_coverage)
+        if overall_coverage else 0.0,
+        "record_coverage": record_coverage,
+        "record_macro_coverage": _mean(covered),
+        "record_p10_coverage": percentile(covered, 10.0),
+        "record_coverage_balance": _ratio(percentile(covered, 10.0),
+                                          _mean(covered)) if covered else 0.0,
+        "agreement_overall": _ratio(agree_hits, agree_total),
+        "agreement_by_class": class_agreement,
+        "agreement_pairs": agree_total,
+    }
+
+
+def j_min(rows: Sequence[Mapping[str, object]],
+          processed_classes: Mapping[Tuple[str, int], str],
+          mamba_classes: Mapping[Tuple[str, int], str]) -> float:
+    """``min`` over the three per-class correct recalls.
+
+    ``correct_recall_c`` counts certified pairs whose carried Leg 1 class
+    *agrees* with the processed class ``c``, over all processed beats of class
+    ``c``.  The minimum is taken so a dominant N class cannot hide the loss of
+    S or V beats — the Q5-B-0 lesson, kept.
+    """
+    totals = {c: 0 for c in AAMI_CLASSES}
+    hits = {c: 0 for c in AAMI_CLASSES}
+    for (_record, _row), cls in processed_classes.items():
+        if cls in totals:
+            totals[cls] += 1
+    for row in rows:
+        if row["status"] != STATUS_CERTIFIED:
+            continue
+        j, i = row["cache_record_row"], row["mamba_record_row"]
+        if j is None or i is None:
+            continue
+        key_processed = (str(row["record"]), int(j))
+        key_mamba = (str(row["record"]), int(i))
+        cls = processed_classes.get(key_processed)
+        raw = mamba_classes.get(key_mamba)
+        if cls in hits and raw == cls:
+            hits[cls] += 1
+    return min(_ratio(hits[c], totals[c]) for c in AAMI_CLASSES)
+
+
+def s_share_inflation(rows: Sequence[Mapping[str, object]],
+                      processed_classes: Mapping[Tuple[str, int], str]
+                      ) -> Dict[str, float]:
+    """Gate 12, source-relative.
+
+    ``(record share of certified S) / (record share of all processed S)``.
+    It asks whether certification *concentrated* S beats further — not whether
+    a patient genuinely has many of them.  Record 232 already supplies 75.2% of
+    DS2 S beats before any join; that is source concentration, and this gate
+    neither repairs it nor substitutes for the parent's absolute 50% ceiling.
+    """
+    source: Dict[str, int] = {}
+    certified: Dict[str, int] = {}
+    for (record, _row), cls in processed_classes.items():
+        if cls == "S":
+            source[record] = source.get(record, 0) + 1
+    for row in rows:
+        if row["status"] != STATUS_CERTIFIED or row["cache_record_row"] is None:
+            continue
+        record = str(row["record"])
+        if processed_classes.get((record, int(row["cache_record_row"]))) == "S":
+            certified[record] = certified.get(record, 0) + 1
+    source_total = sum(source.values())
+    certified_total = sum(certified.values())
+    out: Dict[str, float] = {}
+    for record, count in sorted(source.items()):
+        source_share = _ratio(count, source_total)
+        certified_share = _ratio(certified.get(record, 0), certified_total)
+        out[record] = _ratio(certified_share, source_share)
+    return out
+
+
+def _ratio(numerator: float, denominator: float) -> float:
+    return float(numerator) / float(denominator) if denominator else 0.0
+
+
+def _mean(values: Sequence[float]) -> float:
+    return sum(values) / len(values) if values else 0.0
+
+
+def percentile(values: Sequence[float], pct: float) -> float:
+    """Linear-interpolation percentile, matching ``numpy.percentile`` default.
+
+    Written out so the statistic does not depend on numpy being importable in
+    whatever environment reads a bundle.
+    """
+    if not values:
+        return 0.0
+    ordered = sorted(float(v) for v in values)
+    if len(ordered) == 1:
+        return ordered[0]
+    position = (len(ordered) - 1) * (float(pct) / 100.0)
+    low = int(position)
+    high = min(low + 1, len(ordered) - 1)
+    weight = position - low
+    return ordered[low] * (1.0 - weight) + ordered[high] * weight
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Negative controls and the empirical null
+# ─────────────────────────────────────────────────────────────────────────────
+def _rng(family: str, replicate: int) -> random.Random:
+    """Deterministic per-replicate stream, seeded from a stable string.
+
+    :meth:`random.Random.seed` hashes a string with SHA-512, so this is stable
+    across processes and unaffected by ``PYTHONHASHSEED`` — which matters when
+    the null has to be reproducible from a seed written into a manifest.
+    """
+    return random.Random(f"{MASTER_SEED}|{family}|{int(replicate)}")
+
+
+def length_quintiles(records: Sequence[Tuple[str, int]]
+                     ) -> List[List[str]]:
+    """Frozen record-length bins for the wrong-record control.
+
+    Bins are coarsened deterministically until every bin can be deranged; a
+    bin with fewer than two records is merged with its neighbour rather than
+    dropped.  Records are never dropped to make a control work.
+    """
+    ordered = sorted(records, key=lambda rc: (rc[1], rc[0]))
+    if not ordered:
+        return []
+    bins = max(1, min(WRONG_RECORD_QUINTILES, len(ordered)))
+    while bins > 1:
+        grouped: List[List[str]] = [[] for _ in range(bins)]
+        for position, (record, _n) in enumerate(ordered):
+            grouped[min(position * bins // len(ordered), bins - 1)].append(
+                record)
+        grouped = [g for g in grouped if g]
+        if all(len(g) >= 2 for g in grouped):
+            return grouped
+        bins -= 1
+    return [[r for r, _n in ordered]]
+
+
+def derange_within_bins(bins: Sequence[Sequence[str]], replicate: int
+                        ) -> Dict[str, str]:
+    """Wrong-record control: no record keeps its own partner.
+
+    Falsifies the possibility that a common RR distribution alone makes the
+    join look successful.
+
+    A record in a bin of fewer than two records is **omitted** from the
+    mapping, not mapped to itself.  `length_quintiles` coarsens the binning
+    first, so this only happens when a whole split has one record — and there
+    the spec says the control is *skipped*.  Mapping such a record to itself
+    would quietly feed a copy of TRUE into the null, which is exactly the kind
+    of contaminated control this design exists to prevent.  Use
+    :func:`wrong_record_skipped` to report what was left out.
+    """
+    rng = _rng(CONTROL_WRONG_RECORD, replicate)
+    mapping: Dict[str, str] = {}
+    for group in bins:
+        members = list(group)
+        if len(members) < 2:
+            continue
+        shuffled = list(members)
+        for _attempt in range(64):
+            rng.shuffle(shuffled)
+            if all(a != b for a, b in zip(members, shuffled)):
+                break
+        else:                                          # pragma: no cover
+            shuffled = members[1:] + members[:1]
+        mapping.update(dict(zip(members, shuffled)))
+    return mapping
+
+
+def wrong_record_skipped(bins: Sequence[Sequence[str]]) -> List[str]:
+    """Records the wrong-record control cannot cover, reported not hidden."""
+    return sorted(r for group in bins if len(group) < 2 for r in group)
+
+
+def shuffle_within_record(sequence: RecordSequence, replicate: int
+                          ) -> RecordSequence:
+    """Order-shuffle control: permute complete RR *pairs* inside the record.
+
+    The pair travels with its audit payload, so the multiset of RR pairs is
+    preserved exactly and only chronology is destroyed.  Falsifies a join that
+    the multiset alone could explain.
+    """
+    rng = _rng(CONTROL_ORDER_SHUFFLE, replicate)
+    order = list(range(len(sequence)))
+    rng.shuffle(order)
+    return _reindex(sequence, order)
+
+
+def circular_shift_within_record(sequence: RecordSequence, replicate: int
+                                 ) -> RecordSequence:
+    """Circular-shift control: a non-zero within-record rotation.
+
+    Offsets are drawn uniformly from ``1..n-1``, so the shift is never the
+    identity.  This preserves local autocorrelation far better than a full
+    shuffle and falsifies a join driven by repetitive rhythm rather than by
+    exact beat position.
+    """
+    n = len(sequence)
+    if n < 2:
+        return _reindex(sequence, list(range(n)))
+    rng = _rng(CONTROL_CIRCULAR_SHIFT, replicate)
+    offset = rng.randrange(1, n)
+    order = [(k + offset) % n for k in range(n)]
+    return _reindex(sequence, order)
+
+
+def _reindex(sequence: RecordSequence, order: Sequence[int]) -> RecordSequence:
+    return RecordSequence(
+        sequence.record, sequence.split, sequence.side,
+        [sequence.pre_samples[k] for k in order],
+        [sequence.post_samples[k] for k in order],
+        [sequence.rows[k] for k in order] if sequence.rows else None)
+
+
+def apply_control(family: str, mamba_by_record: Mapping[str, RecordSequence],
+                  replicate: int) -> Dict[str, RecordSequence]:
+    """Transform the raw side only.  Leg 1 stays fixed and already passed.
+
+    Nothing but ``SEQUENCE_RELATIONSHIP`` changes: each control then reruns the
+    *complete* Leg 2 candidate construction, matching, certification and audit
+    statistics.  There is no shortcut that reuses the true matching.
+    """
+    if family not in CONTROL_FAMILIES:
+        raise Q5DJoinError(f"unknown control family {family!r}; registered "
+                           f"families are {CONTROL_FAMILIES}")
+    if family == CONTROL_ORDER_SHUFFLE:
+        return {r: shuffle_within_record(s, replicate)
+                for r, s in mamba_by_record.items()}
+    if family == CONTROL_CIRCULAR_SHIFT:
+        return {r: circular_shift_within_record(s, replicate)
+                for r, s in mamba_by_record.items()}
+    bins = length_quintiles([(r, len(s)) for r, s in mamba_by_record.items()])
+    mapping = derange_within_bins(bins, replicate)
+    skipped = wrong_record_skipped(bins)
+    if skipped and len(skipped) == len(mamba_by_record):
+        raise Q5DJoinError(
+            f"the wrong-record control cannot be built: every record "
+            f"({skipped}) sits alone in its length bin, so no derangement "
+            f"exists.  The control is skipped and reported — it is never run "
+            f"as an identity mapping, which would put a copy of TRUE into "
+            f"the null.")
+    out: Dict[str, RecordSequence] = {}
+    for record, target in mapping.items():
+        donor = mamba_by_record[target]
+        out[record] = RecordSequence(record, donor.split, donor.side,
+                                     donor.pre_samples, donor.post_samples,
+                                     donor.rows)
+    return out
+
+
+def null_summary(j_wrong: Sequence[float], j_shuffle: Sequence[float],
+                 j_shift: Sequence[float], j_true: float,
+                 n_processed: int) -> Dict[str, object]:
+    """The family-wise max-null and the signal ratio.
+
+    ``J_null_max[b] = max(J_wrong[b], J_shuffle[b], J_shift[b])`` — one max
+    per replicate across all three families, so passing means beating the best
+    of them, not the average.  The ``1 / n_processed`` floor stops a zero null
+    from manufacturing an infinite ratio.
+    """
+    lengths = {len(j_wrong), len(j_shuffle), len(j_shift)}
+    if len(lengths) != 1:
+        raise Q5DJoinError(
+            f"the three control families must have equal replicate counts, "
+            f"got {sorted(lengths)}")
+    maxima = [max(a, b, c) for a, b, c in zip(j_wrong, j_shuffle, j_shift)]
+    floor = 1.0 / float(n_processed) if n_processed else 1.0
+    q95 = percentile(maxima, 95.0)
+    q99 = percentile(maxima, 99.0)
+    return {
+        "replicates": len(maxima),
+        "families": list(CONTROL_FAMILIES),
+        "master_seed": MASTER_SEED,
+        "rule_fingerprint": rule_fingerprint(),
+        "j_true": float(j_true),
+        "median": percentile(maxima, 50.0),
+        "q95": q95, "q99": q99,
+        "max": max(maxima) if maxima else 0.0,
+        "finite_sample_floor": floor,
+        "signal_to_null": _ratio(j_true, max(q95, floor)),
+        "j_null_max": list(maxima),
+    }
+
+
+def assert_null_matches_rule(summary: Mapping[str, object]) -> None:
+    """A null may not be inherited by a relaxed rule.
+
+    If the tolerance, ledger, matcher or any gate constant moves, the
+    fingerprint moves with it and the stored null becomes unusable.  That is
+    the structural reason a relaxation cannot quietly borrow the primary
+    rule's cutoff.
+    """
+    stored = summary.get("rule_fingerprint")
+    current = rule_fingerprint()
+    if stored != current:
+        raise NullReuseError(
+            f"this null was generated under rule {stored!r} but the current "
+            f"rule is {current!r}.  A relaxed or altered rule must regenerate "
+            f"all three control families; it may not inherit the primary "
+            f"rule's cutoff.")
+
+
+def record_cluster_bootstrap(per_record: Mapping[str, Tuple[int, int]],
+                             j_true: float, null_q95: float,
+                             replicates: int = N_BOOTSTRAP_REPLICATES
+                             ) -> Dict[str, object]:
+    """Record-cluster bootstrap of ``J_min_TRUE - q95(J_null_max)``.
+
+    All beats of a sampled record travel together, because records are the
+    unit of dependence here.  The null is generated once under the frozen
+    rule; this interval quantifies the true record sample and is not a licence
+    to retune anything.
+    """
+    records = sorted(per_record)
+    if not records:
+        return {"replicates": 0, "ci_low": 0.0, "ci_high": 0.0,
+                "point": j_true - null_q95, "seed": BOOTSTRAP_SEED}
+    rng = random.Random(f"{BOOTSTRAP_SEED}|record_cluster")
+    deltas: List[float] = []
+    for _b in range(int(replicates)):
+        hits = total = 0
+        for _k in range(len(records)):
+            record = records[rng.randrange(len(records))]
+            certified, denominator = per_record[record]
+            hits += certified
+            total += denominator
+        deltas.append(_ratio(hits, total) - null_q95)
+    return {
+        "replicates": int(replicates), "seed": BOOTSTRAP_SEED,
+        "point": float(j_true) - float(null_q95),
+        "ci_low": percentile(deltas, 2.5), "ci_high": percentile(deltas, 97.5),
+        "rule_fingerprint": rule_fingerprint(),
+    }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Gates and the decision
+# ─────────────────────────────────────────────────────────────────────────────
+class DecisionLedger(object):
+    """First-failure-wins for the primary decision; every gate still recorded.
+
+    The spec allows exactly one primary stopping reason, but a reviewer needs
+    the whole gate table — including the gates that passed after the first
+    failure — so both are kept and neither is derived from the other.
+    """
+
+    __slots__ = ("gates", "_primary", "_primary_leg", "_primary_gate")
+
+    def __init__(self) -> None:
+        self.gates: List[Dict[str, object]] = []
+        self._primary: Optional[str] = None
+        self._primary_leg: Optional[str] = None
+        self._primary_gate: Optional[str] = None
+
+    def record(self, name: str, passed: bool, value: object = None,
+               threshold: object = None, decision: Optional[str] = None,
+               failed_leg: Optional[str] = None,
+               detail: str = "") -> bool:
+        if decision is not None and decision not in DECISIONS:
+            raise Q5DJoinError(f"unknown decision {decision!r}")
+        if failed_leg is not None and failed_leg not in LEGS:
+            raise Q5DJoinError(f"unknown leg {failed_leg!r}")
+        self.gates.append({"gate": name, "passed": bool(passed),
+                           "value": value, "threshold": threshold,
+                           "decision_if_failed": decision,
+                           "failed_leg": failed_leg, "detail": detail})
+        if not passed and self._primary is None:
+            self._primary = decision or DECISION_RULE_FALSIFIED
+            self._primary_leg = failed_leg
+            self._primary_gate = name
+        return bool(passed)
+
+    @property
+    def primary_decision(self) -> Optional[str]:
+        return self._primary
+
+    def decide(self, all_inputs_present: bool = True) -> Dict[str, object]:
+        if not all_inputs_present and self._primary is None:
+            self._primary = DECISION_INPUT_ABSENT
+        decision = self._primary or DECISION_IDENTIFIABLE
+        return {
+            "decision": decision,
+            "first_stopping_reason": self._primary_gate,
+            "failed_leg": self._primary_leg,
+            "gates": list(self.gates),
+            "gates_passed": sum(1 for g in self.gates if g["passed"]),
+            "gates_total": len(self.gates),
+            "rule_fingerprint": rule_fingerprint(),
+            "training_performed": False,
+            "model_scored": False,
+            "v10_probability_opened": False,
+            "association_performed": False,
+        }
+
+
+def evaluate_gates(coverage: Mapping[str, object],
+                   inflation: Mapping[str, float],
+                   null: Optional[Mapping[str, object]] = None,
+                   bootstrap: Optional[Mapping[str, object]] = None,
+                   fixtures_ok: bool = True,
+                   leg1_ok: bool = True,
+                   leg2_boundaries_ok: bool = True,
+                   ambiguous_fraction: float = 0.0) -> DecisionLedger:
+    """The twelve frozen DS1 gates, in the spec's order.
+
+    Nothing here is recomputed from results: the thresholds are module
+    constants and the ledger only compares against them.
+    """
+    led = DecisionLedger()
+    led.record("1_synthetic_fixtures", fixtures_ok, fixtures_ok, True,
+               DECISION_RULE_FALSIFIED, LEG2,
+               "zero false pairs and every non-identifiable segment AMBIGUOUS")
+    led.record("2a_leg1_source_replay", leg1_ok, leg1_ok, True,
+               DECISION_RULE_FALSIFIED, LEG1,
+               "count, order and RR ledger reproduced exactly")
+    led.record("2b_leg2_record_boundaries", leg2_boundaries_ok,
+               leg2_boundaries_ok, True, DECISION_INPUT_ABSENT, LEG2,
+               "all 44 cache and result-position boundaries verified")
+
+    overall = float(coverage.get("overall_coverage", 0.0))
+    class_cov = dict(coverage.get("class_coverage", {}))
+    led.record("3_overall_coverage", overall >= GATE_COVERAGE_MIN, overall,
+               GATE_COVERAGE_MIN, DECISION_UNRESOLVED, LEG2)
+    s_cov = float(class_cov.get("S", 0.0))
+    led.record("4_s_coverage", s_cov >= GATE_S_COVERAGE_MIN, s_cov,
+               GATE_S_COVERAGE_MIN, DECISION_SELECTION_BIASED, LEG2)
+    worst_class = min(class_cov.values()) if class_cov else 0.0
+    led.record("5_per_class_coverage",
+               worst_class >= GATE_PER_CLASS_COVERAGE_MIN, worst_class,
+               GATE_PER_CLASS_COVERAGE_MIN, DECISION_SELECTION_BIASED, LEG2)
+    balance = float(coverage.get("class_coverage_balance", 0.0))
+    led.record("6_class_coverage_balance", balance >= GATE_CLASS_BALANCE_MIN,
+               balance, GATE_CLASS_BALANCE_MIN, DECISION_SELECTION_BIASED, LEG2)
+
+    record_cov = dict(coverage.get("record_coverage", {}))
+    worst_record = min(record_cov.values()) if record_cov else 0.0
+    record_balance = float(coverage.get("record_coverage_balance", 0.0))
+    led.record("7_record_coverage",
+               worst_record >= GATE_RECORD_COVERAGE_MIN
+               and record_balance >= GATE_RECORD_BALANCE_MIN,
+               {"worst_record": worst_record, "balance": record_balance},
+               {"min": GATE_RECORD_COVERAGE_MIN,
+                "balance_min": GATE_RECORD_BALANCE_MIN},
+               DECISION_SELECTION_BIASED, LEG2)
+
+    agree = float(coverage.get("agreement_overall", 0.0))
+    by_class = dict(coverage.get("agreement_by_class", {}))
+    worst_agree = min(by_class.values()) if by_class else 0.0
+    led.record("8_class_agreement",
+               agree >= GATE_AGREEMENT_OVERALL_MIN
+               and worst_agree >= GATE_AGREEMENT_PER_CLASS_MIN,
+               {"overall": agree, "worst_class": worst_agree},
+               {"overall_min": GATE_AGREEMENT_OVERALL_MIN,
+                "class_min": GATE_AGREEMENT_PER_CLASS_MIN},
+               DECISION_SELECTION_BIASED, LEG2)
+
+    if null is not None:
+        assert_null_matches_rule(null)
+        j_true = float(null.get("j_true", 0.0))
+        led.record("9_true_exceeds_q99", j_true > float(null.get("q99", 1.0)),
+                   {"j_true": j_true, "q99": null.get("q99")}, "j_true > q99",
+                   DECISION_RULE_FALSIFIED, LEG2)
+        ratio = float(null.get("signal_to_null", 0.0))
+        led.record("10_signal_to_null", ratio >= GATE_SIGNAL_TO_NULL_MIN,
+                   ratio, GATE_SIGNAL_TO_NULL_MIN, DECISION_RULE_FALSIFIED,
+                   LEG2)
+    if bootstrap is not None:
+        low = float(bootstrap.get("ci_low", 0.0))
+        led.record("11_bootstrap_ci_lower", low > 0.0, low, "> 0",
+                   DECISION_RULE_FALSIFIED, LEG2)
+
+    worst_inflation = max(inflation.values()) if inflation else 0.0
+    offenders = sorted(r for r, v in inflation.items()
+                       if v > GATE_S_SHARE_INFLATION_MAX)
+    led.record("12_s_share_inflation",
+               worst_inflation <= GATE_S_SHARE_INFLATION_MAX, worst_inflation,
+               GATE_S_SHARE_INFLATION_MAX, DECISION_SELECTION_BIASED, LEG2,
+               f"records over the ceiling: {offenders}" if offenders else
+               "source-relative; the parent's absolute 50% S ceiling is "
+               "separate and unchanged")
+
+    if led.primary_decision is None and ambiguous_fraction > 0.0:
+        led.record("13_ambiguity_reported", True, ambiguous_fraction, None,
+                   DECISION_UNRESOLVED, LEG2,
+                   "ambiguous pairs remain unmatched by construction")
+    return led
+
+
+def stratum_report(results: Sequence[MatchResult]) -> Dict[str, object]:
+    """Split the same numbers by the two preregistered count strata.
+
+    Diagnostic only: neither stratum may be excluded, given a different
+    matcher, or used to rescue a failed primary gate.
+    """
+    out: Dict[str, Dict[str, int]] = {
+        s: {"records": 0, "cache_rows": 0, "certified": 0, "ambiguous": 0}
+        for s in STRATA}
+    for result in results:
+        led = ledger_record(result.split, result.record)
+        bucket = out[led.stratum]
+        bucket["records"] += 1
+        bucket["cache_rows"] += result.n_cache
+        bucket["certified"] += result.certified_count
+        bucket["ambiguous"] += len(result.ambiguous)
+    for bucket in out.values():
+        bucket["coverage"] = _ratio(bucket["certified"], bucket["cache_rows"])
+    return out
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Synthetic fixtures
+# ─────────────────────────────────────────────────────────────────────────────
+def _seq(record: str, side: str, pre: Sequence[int], post: Sequence[int],
+         split: str = "DS1",
+         rows: Optional[Sequence[Mapping[str, object]]] = None
+         ) -> RecordSequence:
+    return RecordSequence(record, split, side, pre, post, rows)
+
+
+def _rr_from_samples(samples: Sequence[int]) -> Tuple[List[int], List[int]]:
+    """Mirror the frozen RR semantic on a synthetic R-sample sequence."""
+    diffs = [samples[i + 1] - samples[i] for i in range(len(samples) - 1)]
+    pre = [diffs[0]] + diffs
+    post = pre[1:] + [pre[-1]]
+    return pre, post
+
+
+class FixtureOutcome(object):
+    __slots__ = ("name", "passed", "false_certified", "detail")
+
+    def __init__(self, name: str, passed: bool, false_certified: int,
+                 detail: str) -> None:
+        self.name = name
+        self.passed = passed
+        self.false_certified = false_certified
+        self.detail = detail
+
+    def as_dict(self) -> Dict[str, object]:
+        return {"fixture": self.name, "passed": self.passed,
+                "false_certified_pairs": self.false_certified,
+                "detail": self.detail}
+
+
+def _check_against_truth(name: str, mamba: RecordSequence,
+                         cache: RecordSequence,
+                         truth: Mapping[int, int],
+                         must_be_ambiguous: Iterable[int] = ()
+                         ) -> FixtureOutcome:
+    """Certified pairs must be a subset of the known truth, with no exceptions.
+
+    A fixture passes only when every certified pair is true (``false_certified
+    == 0``) and every deliberately non-identifiable row is *not* certified.
+    """
+    result = match_record(mamba, cache)
+    certified = dict(result.certified)
+    false_pairs = sum(1 for i, j in certified.items() if truth.get(i) != j)
+    ambiguous_ok = all(i not in certified for i in must_be_ambiguous)
+    recovered = sum(1 for i, j in truth.items() if certified.get(i) == j)
+    detail = (f"certified {len(certified)} · true {len(truth)} · "
+              f"recovered {recovered} · ambiguous {len(result.ambiguous)}")
+    return FixtureOutcome(name, false_pairs == 0 and ambiguous_ok,
+                          false_pairs, detail)
+
+
+def fixture_leg1_identity() -> FixtureOutcome:
+    """Leg 1 with no drops: duplicated endpoint RR, first/last beat eligible."""
+    samples = [200 + 300 * k for k in range(8)]
+    annotations = [(p, "N") for p in samples]
+    replayed = replay_leg1_record("901", "DS1", annotations, samples[-1] + 400)
+    ok = (replayed.n == len(samples)
+          and not replayed.record_dropped
+          and replayed.pre_samples[0] == replayed.pre_samples[1]
+          and replayed.post_samples[-1] == replayed.post_samples[-2]
+          and replayed.pre_samples[0] > 0
+          and replayed.post_samples[-1] > 0)
+    return FixtureOutcome("leg1_identity_endpoint_duplication", ok, 0,
+                          f"n={replayed.n} pre0={replayed.pre_samples[0]} "
+                          f"postN={replayed.post_samples[-1]}")
+
+
+def fixture_leg1_isolated_drop() -> FixtureOutcome:
+    """One isolated deterministic drop, plus the 150-sample boundary rule.
+
+    The dropped beat's neighbours must inherit a *recomputed* RR — the source
+    computes RR after filtering, so the survivors either side of a gap carry a
+    wider interval than the raw ``.atr`` would give.
+    """
+    samples = [50] + [200 + 300 * k for k in range(8)]
+    symbols = ["N", "N", "N", "F", "N", "N", "N", "N", "N"]
+    annotations = list(zip(samples, symbols))
+    replayed = replay_leg1_record("902", "DS1", annotations, samples[-1] + 400)
+    reasons = [d["reason"] for d in replayed.dropped]
+    kept_samples = [e["raw_r_sample"] for e in replayed.kept]
+    # The gap sits between the two survivors that flanked the dropped F beat.
+    spans_gap = 600 in [b - a for a, b in zip(kept_samples, kept_samples[1:])]
+    ok = (replayed.n == 7
+          and reasons.count(REASON_BOUNDARY) == 1
+          and reasons.count(REASON_SYMBOL) == 1
+          and 50 not in kept_samples
+          and spans_gap
+          and to_samples(0.0 + max(replayed.pre_seconds), UNIT_SECONDS) == 600)
+    return FixtureOutcome("leg1_isolated_deterministic_drop", ok, 0,
+                          f"kept {replayed.n} · dropped {len(replayed.dropped)}"
+                          f" · rr recomputed across the gap={spans_gap}")
+
+
+def fixture_leg1_consecutive_drops() -> FixtureOutcome:
+    """Two adjacent deterministic drops collapse into one wider interval."""
+    samples = [200 + 300 * k for k in range(9)]
+    symbols = ["N", "N", "N", "Q", "F", "N", "N", "N", "N"]
+    annotations = list(zip(samples, symbols))
+    replayed = replay_leg1_record("903", "DS1", annotations, samples[-1] + 400)
+    kept_samples = [e["raw_r_sample"] for e in replayed.kept]
+    gaps = [b - a for a, b in zip(kept_samples, kept_samples[1:])]
+    ok = (replayed.n == 7
+          and len(replayed.dropped) == 2
+          and all(d["reason"] == REASON_SYMBOL for d in replayed.dropped)
+          and 900 in gaps)
+    return FixtureOutcome("leg1_consecutive_deterministic_drops", ok, 0,
+                          f"kept {replayed.n} · gaps {sorted(set(gaps))}")
+
+
+def fixture_leg1_fq_deletion_concentration() -> FixtureOutcome:
+    """The Q5-B-0 drop shape: F/Q only, concentrated in two records.
+
+    Q5-B-0 measured 818 absent beats — N 1, S 0, V 0, F 802, Q 15 — with 92%
+    in records 208 and 213.  The fixture reproduces that *shape*: the class
+    profile of a Leg 1 drop is F/Q-dominated, and no S beat is ever dropped by
+    the symbol rule, because ``A a J S`` are all in the registered map.
+    """
+    dropped_by_record: Dict[str, List[str]] = {}
+    kept_total = 0
+    for record, f_count in (("208", 12), ("213", 10), ("101", 1)):
+        symbols = ["N"] * 8 + ["F"] * f_count + ["Q"] + ["A", "a", "J", "S",
+                                                         "V", "E"]
+        samples = [200 + 300 * k for k in range(len(symbols))]
+        replayed = replay_leg1_record(record, "DS1", list(zip(samples,
+                                                              symbols)),
+                                      samples[-1] + 400)
+        kept_total += replayed.n
+        dropped_by_record[record] = [str(d["symbol"]) for d in replayed.dropped]
+    every_drop = [s for v in dropped_by_record.values() for s in v]
+    concentrated = (len(dropped_by_record["208"])
+                    + len(dropped_by_record["213"])) / len(every_drop)
+    ok = (all(s in ("F", "Q") for s in every_drop)
+          and concentrated > 0.9
+          and kept_total == 3 * (8 + 6))
+    return FixtureOutcome("leg1_fq_deletion_concentration", ok, 0,
+                          f"dropped symbols {sorted(set(every_drop))} · "
+                          f"two-record concentration {concentrated:.3f}")
+
+
+def fixture_leg1_record_too_few() -> FixtureOutcome:
+    """The fewer-than-five-valid-beats record rule drops the whole record."""
+    annotations = [(200 + 300 * k, "N") for k in range(3)]
+    replayed = replay_leg1_record("905", "DS1", annotations, 2000)
+    ok = (replayed.record_dropped and replayed.n == 0
+          and all(d["reason"] == REASON_TOO_FEW for d in replayed.dropped))
+    return FixtureOutcome("leg1_record_under_five_valid_beats", ok, 0,
+                          f"record_dropped={replayed.record_dropped}")
+
+
+def fixture_leg2_identity() -> FixtureOutcome:
+    """Leg 2 with identical sequences: every row certified, none ambiguous."""
+    samples = [200 + k for k in _walk((300, 310, 295, 320, 288, 305, 299))]
+    pre, post = _rr_from_samples(samples)
+    mamba = _seq("904", "mamba", pre, post)
+    cache = _seq("904", "cache", pre, post)
+    truth = {i: i for i in range(len(pre))}
+    return _check_against_truth("leg2_identity", mamba, cache, truth)
+
+
+def fixture_leg2_cache_only_row() -> FixtureOutcome:
+    """One cache row has no mamba partner; nothing is imputed for it."""
+    samples = [200 + k for k in _walk((300, 311, 294, 322, 287, 306, 298, 315))]
+    pre, post = _rr_from_samples(samples)
+    keep = [0, 1, 2, 4, 5, 6, 7, 8]                 # mamba is missing row 3
+    mamba = _seq("906", "mamba", [pre[k] for k in keep],
+                 [post[k] for k in keep])
+    cache = _seq("906", "cache", pre, post)
+    truth = {i: k for i, k in enumerate(keep)}
+    return _check_against_truth("leg2_cache_only_row_gap", mamba, cache, truth)
+
+
+def fixture_leg2_mamba_only_row() -> FixtureOutcome:
+    """One mamba row has no cache partner; it stays unmatched, not guessed."""
+    samples = [200 + k for k in _walk((301, 312, 293, 324, 286, 307, 297, 316))]
+    pre, post = _rr_from_samples(samples)
+    keep = [0, 1, 3, 4, 5, 6, 7, 8]                 # cache is missing row 2
+    mamba = _seq("907", "mamba", pre, post)
+    cache = _seq("907", "cache", [pre[k] for k in keep],
+                 [post[k] for k in keep])
+    truth = {k: i for i, k in enumerate(keep)}
+    return _check_against_truth("leg2_mamba_only_row_gap", mamba, cache, truth)
+
+
+def fixture_leg2_consecutive_gaps() -> FixtureOutcome:
+    """Consecutive gaps on both sides at once."""
+    samples = [200 + k for k in _walk(
+        (300, 313, 292, 325, 285, 308, 296, 317, 331, 279))]
+    pre, post = _rr_from_samples(samples)
+    mamba_keep = [0, 1, 2, 5, 6, 7, 8, 9, 10]       # dropped 3, 4
+    cache_keep = [0, 1, 2, 3, 4, 5, 8, 9, 10]       # dropped 6, 7
+    mamba = _seq("907", "mamba", [pre[k] for k in mamba_keep],
+                 [post[k] for k in mamba_keep])
+    cache = _seq("907", "cache", [pre[k] for k in cache_keep],
+                 [post[k] for k in cache_keep])
+    shared = [k for k in mamba_keep if k in cache_keep]
+    truth = {mamba_keep.index(k): cache_keep.index(k) for k in shared}
+    return _check_against_truth("leg2_consecutive_gaps", mamba, cache, truth)
+
+
+def fixture_equal_count_cancellation() -> FixtureOutcome:
+    """A drop-one/add-one cancellation must not be positionally zipped.
+
+    Both sides hold the same number of rows, but they are not the same rows —
+    exactly the ``pos`` versus ``p`` boundary difference the spec warns about.
+    Certifying by position here would be a silent false map, so the fixture
+    demands that every certified pair still be *true*, not merely aligned.
+    """
+    samples = [200 + k for k in _walk(
+        (300, 314, 291, 326, 284, 309, 295, 318, 330))]
+    pre, post = _rr_from_samples(samples)
+    mamba_keep = [0, 1, 2, 3, 4, 5, 6, 7, 8]        # drops row 9
+    cache_keep = [1, 2, 3, 4, 5, 6, 7, 8, 9]        # drops row 0
+    mamba = _seq("908", "mamba", [pre[k] for k in mamba_keep],
+                 [post[k] for k in mamba_keep])
+    cache = _seq("908", "cache", [pre[k] for k in cache_keep],
+                 [post[k] for k in cache_keep])
+    shared = [k for k in mamba_keep if k in cache_keep]
+    truth = {mamba_keep.index(k): cache_keep.index(k) for k in shared}
+    outcome = _check_against_truth("leg2_equal_count_cancellation", mamba,
+                                   cache, truth)
+    # The zip hypothesis would map row 0 to row 0; that pair is false.
+    result = match_record(mamba, cache)
+    zipped = dict(result.certified).get(0) == 0
+    if zipped:
+        return FixtureOutcome(outcome.name, False, outcome.false_certified + 1,
+                              "equal counts were zipped by position")
+    return outcome
+
+
+def fixture_repeated_rr_unique_context() -> FixtureOutcome:
+    """A repeated coupling interval that one unique flank still resolves."""
+    intervals = (300, 300, 300, 341, 300, 300, 300)
+    samples = [200 + k for k in _walk(intervals)]
+    pre, post = _rr_from_samples(samples)
+    mamba = _seq("909", "mamba", pre, post)
+    cache = _seq("909", "cache", pre, post)
+    result = match_record(mamba, cache)
+    certified = dict(result.certified)
+    anchored = [i for i, (a, b) in enumerate(zip(pre, post))
+                if 341 in (a, b)]
+    ok = all(certified.get(i) == i for i in anchored) and \
+        all(certified.get(i, i) == i for i in certified)
+    return FixtureOutcome("leg2_repeated_rr_unique_flank", ok, 0,
+                          f"certified {len(certified)} of {len(pre)} · "
+                          f"anchored rows {anchored}")
+
+
+def fixture_perfect_repeat_is_ambiguous() -> FixtureOutcome:
+    """A perfectly repeated segment has two equally optimal alignments.
+
+    Certifying either one would be promoting an arbitrary optimal path, so
+    every interior row of the repeat must come back ``AMBIGUOUS`` and stay
+    unmatched.  This is the ``JOIN_UNRESOLVED`` shape in miniature.
+    """
+    pre = [300] * 6
+    post = [300] * 6
+    mamba = _seq("910", "mamba", pre, post)
+    cache = _seq("910", "cache", pre[:-1], post[:-1])   # one row shorter
+    result = match_record(mamba, cache)
+    ok = (not result.certified
+          and result.max_cardinality == 5
+          and len(result.ambiguous) > 0)
+    return FixtureOutcome("leg2_perfect_repeat_stays_ambiguous", ok,
+                          len(result.certified),
+                          f"certified {len(result.certified)} · ambiguous "
+                          f"{len(result.ambiguous)} · M={result.max_cardinality}")
+
+
+def fixture_quantization_one_sample() -> FixtureOutcome:
+    """A +/-1 sample wobble on either RR component still matches."""
+    samples = [200 + k for k in _walk((300, 316, 289, 327, 283, 311, 294))]
+    pre, post = _rr_from_samples(samples)
+    jitter_pre = [v + (1 if k % 2 == 0 else -1) for k, v in enumerate(pre)]
+    jitter_post = [v + (-1 if k % 3 == 0 else 1) for k, v in enumerate(post)]
+    mamba = _seq("911", "mamba", pre, post)
+    cache = _seq("911", "cache", jitter_pre, jitter_post)
+    truth = {i: i for i in range(len(pre))}
+    return _check_against_truth("leg2_plus_minus_one_sample", mamba, cache,
+                                truth)
+
+
+def fixture_two_sample_rejected() -> FixtureOutcome:
+    """A 2-sample offset is outside the fixed tolerance and is not matched.
+
+    The tolerance is never widened because a record's RR pattern repeats.
+    """
+    samples = [200 + k for k in _walk((300, 318, 288, 329, 282, 313, 292))]
+    pre, post = _rr_from_samples(samples)
+    shifted_pre = [v + 2 for v in pre]
+    shifted_post = [v + 2 for v in post]
+    mamba = _seq("912", "mamba", pre, post)
+    cache = _seq("912", "cache", shifted_pre, shifted_post)
+    result = match_record(mamba, cache)
+    ok = not result.certified and not result.edges
+    return FixtureOutcome("leg2_two_sample_offset_rejected", ok,
+                          len(result.certified),
+                          f"candidate edges {len(result.edges)}")
+
+
+def fixture_seconds_conversion() -> FixtureOutcome:
+    """A declared seconds artifact converts to the same integer samples."""
+    samples = [200 + k for k in _walk((300, 315, 290, 324, 285, 312, 297))]
+    pre, post = _rr_from_samples(samples)
+    seconds_pre = [v / FS for v in pre]
+    seconds_post = [v / FS for v in post]
+    check_declared_unit(UNIT_SECONDS, seconds_pre)
+    converted_pre = rr_to_samples(seconds_pre, UNIT_SECONDS)
+    converted_post = rr_to_samples(seconds_post, UNIT_SECONDS)
+    ok = (list(converted_pre) == pre and list(converted_post) == post)
+    return FixtureOutcome("units_seconds_to_samples", ok, 0,
+                          f"round-half-to-even at {FS:g} Hz")
+
+
+def fixture_wrong_unit_stops() -> FixtureOutcome:
+    """A wrong unit declaration stops the run instead of fitting a scale."""
+    in_samples = [300, 305, 298, 311, 296]
+    stopped_wrong = stopped_unknown = False
+    try:
+        check_declared_unit(UNIT_SECONDS, in_samples)
+    except Q5DJoinError:
+        stopped_wrong = True
+    try:
+        to_samples(0.83, "milliseconds")
+    except Q5DJoinError:
+        stopped_unknown = True
+    return FixtureOutcome("units_wrong_declaration_stops",
+                          stopped_wrong and stopped_unknown, 0,
+                          f"wrong-scale stop={stopped_wrong} · "
+                          f"unknown-unit stop={stopped_unknown}")
+
+
+def fixture_record_boundary_corruption() -> FixtureOutcome:
+    """A corrupted record boundary fails; it never becomes a cross-record map."""
+    observed = {"DS1": {r: n for r, n in CACHE_LEDGER["DS1"]},
+                "DS2": {r: n for r, n in CACHE_LEDGER["DS2"]}}
+    clean = verify_record_boundaries(observed)
+    observed["DS1"]["108"] = observed["DS1"]["108"] + 1
+    corrupted = verify_record_boundaries(observed)
+    return FixtureOutcome("ledger_record_boundary_corruption",
+                          bool(clean["ok"]) and not corrupted["ok"], 0,
+                          f"clean={clean['ok']} corrupted={corrupted['ok']}")
+
+
+def fixture_row_order_corruption() -> FixtureOutcome:
+    """Within-record row-order corruption must not certify a false pair."""
+    samples = [200 + k for k in _walk((300, 317, 287, 328, 281, 314, 293))]
+    pre, post = _rr_from_samples(samples)
+    order = [0, 1, 2, 3, 4, 5, 6]
+    corrupted = [0, 1, 4, 3, 2, 5, 6]               # rows 2 and 4 swapped
+    mamba = _seq("914", "mamba", pre, post)
+    cache = _seq("914", "cache", [pre[k] for k in corrupted],
+                 [post[k] for k in corrupted])
+    result = match_record(mamba, cache)
+    truth = {i: corrupted.index(i) for i in order}
+    false_pairs = sum(1 for i, j in result.certified if truth.get(i) != j)
+    # The swapped rows cannot be recovered monotonically, and must not be
+    # replaced by a plausible-looking wrong pair: they simply drop out.
+    swapped_certified = [i for i, _j in result.certified if i in (2, 4)]
+    ok = (false_pairs == 0 and not swapped_certified
+          and len(result.certified) < len(order))
+    return FixtureOutcome("leg2_row_order_corruption", ok, false_pairs,
+                          f"certified {len(result.certified)}/{len(order)} · "
+                          f"false {false_pairs} · swapped rows certified "
+                          f"{swapped_certified}")
+
+
+def fixture_cross_record_refused() -> FixtureOutcome:
+    """A mapping may never cross a record boundary, in either direction."""
+    pre, post = [300] * 5, [300] * 5
+    left = _seq("914", "mamba", pre, post)
+    right = _seq("915", "cache", pre, post)
+    refused = False
+    try:
+        match_record(left, right)
+    except Q5DJoinError:
+        refused = True
+    split_refused = False
+    try:
+        match_record(left, _seq("914", "cache", pre, post, split="DS2"))
+    except Q5DJoinError:
+        split_refused = True
+    return FixtureOutcome("leg2_cross_record_refused",
+                          refused and split_refused, 0,
+                          f"record={refused} split={split_refused}")
+
+
+def fixture_t_is_rejected() -> FixtureOutcome:
+    """Offering ``t`` as a join key is an error, not a silently ignored field."""
+    stopped_field = stopped_declared = False
+    try:
+        reject_t_as_join_key({"record": "100", "t": [0.0, 0.8, 1.6]})
+    except Q5DJoinError:
+        stopped_field = True
+    try:
+        reject_t_as_join_key({"record": "100", "join_key": "t"})
+    except Q5DJoinError:
+        stopped_declared = True
+    reject_t_as_join_key({"record": "100", "join_key": "positional"})
+    return FixtureOutcome("input_t_rejected_as_join_key",
+                          stopped_field and stopped_declared, 0,
+                          f"field={stopped_field} declared={stopped_declared}")
+
+
+def fixture_no_arbitrary_optimal_path() -> FixtureOutcome:
+    """Two optimal alignments coexist; only the invariant part is certified.
+
+    A short repeat sits between two unique anchors and one of the repeated
+    mamba rows has no cache partner.  Two maximum matchings therefore exist —
+    the surviving cache row can pair with either repeated mamba row — so those
+    two edges must come back ``AMBIGUOUS`` while the anchors, which every
+    maximum matching contains, are ``CERTIFIED``.
+
+    This is the fixture that would catch a matcher which walks one optimal
+    path and certifies whatever it happened to touch.
+    """
+    mamba_pre = [250, 300, 300, 300, 400]
+    mamba_post = [300, 300, 300, 400, 320]
+    cache_keep = [0, 1, 3, 4]                       # one repeat row is missing
+    cache_pre = [mamba_pre[k] for k in cache_keep]
+    cache_post = [mamba_post[k] for k in cache_keep]
+    mamba = _seq("915", "mamba", mamba_pre, mamba_post)
+    cache = _seq("915", "cache", cache_pre, cache_post)
+    result = match_record(mamba, cache)
+    certified = dict(result.certified)
+    ambiguous = set(result.ambiguous)
+    anchors_certified = (certified.get(0) == 0 and certified.get(3) == 2
+                         and certified.get(4) == 3)
+    # Rows 1 and 2 are interchangeable, so neither may be certified.
+    repeat_left_open = (1 not in certified and 2 not in certified
+                        and {(1, 1), (2, 1)} <= ambiguous)
+    false_pairs = sum(1 for i, j in certified.items()
+                      if (i, j) not in ((0, 0), (3, 2), (4, 3)))
+    ok = (anchors_certified and repeat_left_open and false_pairs == 0
+          and result.max_cardinality == 4)
+    return FixtureOutcome("leg2_no_arbitrary_optimal_path", ok, false_pairs,
+                          f"M={result.max_cardinality} · certified "
+                          f"{sorted(certified.items())} · ambiguous "
+                          f"{sorted(ambiguous)}")
+
+
+def _walk(intervals: Sequence[int]) -> List[int]:
+    """Cumulative R positions from a list of RR intervals."""
+    out = [0]
+    for step in intervals:
+        out.append(out[-1] + int(step))
+    return out
+
+
+FIXTURES: Tuple = (
+    fixture_leg1_identity,
+    fixture_leg1_isolated_drop,
+    fixture_leg1_consecutive_drops,
+    fixture_leg1_fq_deletion_concentration,
+    fixture_leg1_record_too_few,
+    fixture_leg2_identity,
+    fixture_leg2_cache_only_row,
+    fixture_leg2_mamba_only_row,
+    fixture_leg2_consecutive_gaps,
+    fixture_equal_count_cancellation,
+    fixture_repeated_rr_unique_context,
+    fixture_perfect_repeat_is_ambiguous,
+    fixture_quantization_one_sample,
+    fixture_two_sample_rejected,
+    fixture_seconds_conversion,
+    fixture_wrong_unit_stops,
+    fixture_record_boundary_corruption,
+    fixture_row_order_corruption,
+    fixture_cross_record_refused,
+    fixture_t_is_rejected,
+    fixture_no_arbitrary_optimal_path,
+)
+
+
+def run_synthetic_fixtures() -> List[FixtureOutcome]:
+    """Run every fixture.  Synthetic data only — nothing registered is opened."""
+    return [fixture() for fixture in FIXTURES]
+
+
+def fixtures_passed(outcomes: Sequence[FixtureOutcome]) -> bool:
+    """Zero false certified pairs, and every fixture green."""
+    return all(o.passed for o in outcomes) and \
+        sum(o.false_certified for o in outcomes) == 0
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Serialisers.  Schema now; the bundle itself only on an approved run.
+# ─────────────────────────────────────────────────────────────────────────────
+def write_csv(path: str, fields: Sequence[str],
+              rows: Iterable[Mapping[str, object]]) -> str:
+    import csv                                          # noqa: PLC0415
+    with open(path, "w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=list(fields),
+                                extrasaction="ignore")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({k: ("" if row.get(k) is None else row.get(k))
+                             for k in fields})
+    return path
+
+
+def write_synthetic_fixture_results(outcomes: Sequence[FixtureOutcome],
+                                    path: str) -> str:
+    return write_csv(path,
+                     ("fixture", "passed", "false_certified_pairs", "detail"),
+                     [o.as_dict() for o in outcomes])
+
+
+def write_join_map(rows: Sequence[Mapping[str, object]], path: str) -> str:
+    """Parquet when pyarrow is present; the schema is validated either way.
+
+    No probability column can reach this file: every row goes through
+    :func:`validate_join_map_row` first, and the banned-field list is checked
+    against the frozen schema, not against whatever the caller passed.
+    """
+    for row in rows:
+        validate_join_map_row(row)
+    if path.endswith(".csv"):
+        return write_csv(path, JOIN_MAP_FIELDS, rows)
+    try:
+        import pyarrow                                  # noqa: PLC0415
+        import pyarrow.parquet as pq                    # noqa: PLC0415
+    except ImportError as exc:                          # pragma: no cover
+        raise Q5DJoinError(
+            f"join_map.parquet needs pyarrow ({exc}); install it in the run "
+            f"environment or write the .csv shadow instead") from exc
+    columns = {f: [row.get(f) for row in rows] for f in JOIN_MAP_FIELDS}
+    pq.write_table(pyarrow.table(columns), path)        # pragma: no cover
+    return path
+
+
+def write_unmatched_and_ambiguous(rows: Sequence[Mapping[str, object]],
+                                  path: str) -> str:
+    subset = [r for r in rows if r["status"] != STATUS_CERTIFIED]
+    return write_csv(path, JOIN_MAP_FIELDS, subset)
+
+
+def write_record_class_coverage(coverage: Mapping[str, object], path: str
+                                ) -> str:
+    record_coverage = dict(coverage.get("record_coverage", {}))
+    rows = [{"record": record, "certified_coverage": value}
+            for record, value in sorted(record_coverage.items())]
+    for cls in AAMI_CLASSES:
+        rows.append({"record": f"__class_{cls}",
+                     "certified_coverage":
+                         dict(coverage.get("class_coverage", {})).get(cls, 0.0)})
+    return write_csv(path, ("record", "certified_coverage"), rows)
+
+
+def build_config(mode: str, timestamp: str,
+                 execution_approved: bool = False) -> Dict[str, object]:
+    return {
+        "experiment_id": EXPERIMENT_ID, "arm": ARM_ID, "substage": SUBSTAGE,
+        "run_slug": RUN_SLUG, "module_version": MODULE_VERSION,
+        "module_build": MODULE_BUILD, "mode": resolve_mode(mode),
+        "timestamp": timestamp,
+        "rule_fingerprint": rule_fingerprint(),
+        "rr_tolerance_samples": RR_TOLERANCE_SAMPLES,
+        "fs": FS, "master_seed": MASTER_SEED,
+        "bootstrap_seed": BOOTSTRAP_SEED,
+        "n_null_replicates": N_NULL_REPLICATES,
+        "n_bootstrap_replicates": N_BOOTSTRAP_REPLICATES,
+        "execution_on_registered_data_approved": bool(execution_approved),
+        "approval_note": APPROVAL_NOTE,
+    }
+
+
+def build_manifest(inputs: Mapping[str, str], timestamp: str
+                   ) -> Dict[str, object]:
+    """Code, input, unit and environment hashes for the run bundle."""
+    return {
+        "timestamp": timestamp,
+        "code": assert_implementation_only(),
+        "rule_fingerprint": rule_fingerprint(),
+        "ledger": verify_ledger(),
+        "declared_units": list(DECLARED_UNITS),
+        "inputs": {name: {"path": path,
+                          "sha256": sha256_file(path)
+                          if os.path.exists(path) else None}
+                   for name, path in sorted(inputs.items())},
+        "python": sys.version.split()[0],
+        "bundle_files": list(BUNDLE_FILES),
+    }
+
+
+def bundle_is_complete(directory: str) -> Tuple[bool, List[str]]:
+    missing = [name for name in BUNDLE_FILES
+               if not os.path.exists(os.path.join(directory, name))]
+    return (not missing), missing
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Cards
+# ─────────────────────────────────────────────────────────────────────────────
+def design_card(mode: str = MODE_DESIGN,
+                execution_approved: bool = False) -> str:
+    """The frozen rule in one screen.  Reads nothing."""
+    ledger = verify_ledger()
+    lines = [
+        "=" * 74,
+        NO_EXECUTION_BANNER,
+        "=" * 74,
+        f"experiment      : {EXPERIMENT_ID} / {ARM_ID}",
+        f"substage        : {SUBSTAGE}",
+        f"mode            : {resolve_mode(mode)}",
+        f"rule fingerprint: {ledger['rule_fingerprint'][:16]}…",
+        "",
+        "APPROVAL",
+        f"  implementation approved : yes",
+        f"  execution on registered data approved : "
+        f"{'yes' if execution_approved else 'NO — this run cannot open one'}",
+        f"  {APPROVAL_NOTE}",
+        "",
+        "LEG 1 — `.atr` -> mamba (deterministic source replay)",
+        f"  symbol map      : {sorted(set(AAMI_SYMBOL_MAP))} -> N/S/V "
+        f"(F and Q are not mapped)",
+        f"  boundary rule   : {WIN_BEFORE} <= pos < len(signal) - {WIN_AFTER}",
+        f"  record rule     : drop the record below {MIN_VALID_BEATS} valid "
+        f"beats",
+        "  RR              : recomputed after filtering; first pre-RR and last",
+        "                    post-RR duplicate their neighbour interval, so",
+        "                    the first and last beats are ELIGIBLE",
+        f"  failure         : {DECISION_RULE_FALSIFIED} / {LEG1}",
+        "",
+        "LEG 2 — mamba -> V9/V10 positional rows (detector-dependent)",
+        "  row order       : detect_r() detection order, NOT `.atr` ordinal",
+        "  identity        : positional only (result NPZ stores prob, y, pid)",
+        "  `t`             : refused as a join key",
+        "  scope           : record-local; global alignment is forbidden",
+        f"  candidate edge  : |dpre| <= {RR_TOLERANCE_SAMPLES} and "
+        f"|dpost| <= {RR_TOLERANCE_SAMPLES} integer samples at {FS:g} Hz",
+        "  matcher         : maximum-cardinality monotone one-to-one;",
+        "                    CERTIFIED = in every maximum matching;",
+        "                    otherwise AMBIGUOUS and left unmatched",
+        "",
+        "44-RECORD LEDGER",
+        f"  records         : {ledger['records']} "
+        f"({ledger['equal_count_records']} equal-count, "
+        f"{ledger['mismatched_records']} mismatched)",
+        f"  cache / mamba   : {ledger['cache_total']} / {ledger['mamba_total']}"
+        f"  (difference {ledger['total_difference']})",
+        f"  verified        : {ledger['ok']}",
+        "  equal count is a reporting stratum, NOT positional identity;",
+        "  `V9/V10 subset-of mamba` is not an axiom (pos vs p boundary rules",
+        "  allow a drop-one/add-one cancellation)",
+        "",
+        "CONTROLS / NULL",
+        f"  families        : {list(CONTROL_FAMILIES)}",
+        f"  master seed     : {MASTER_SEED} · bootstrap seed {BOOTSTRAP_SEED}",
+        f"  replicates      : null {N_NULL_REPLICATES} · bootstrap "
+        f"{N_BOOTSTRAP_REPLICATES}",
+        "  J_null_max[b]   = max(J_wrong[b], J_shuffle[b], J_shift[b])",
+        "",
+        "RECORD 232 (source concentration, carried not repaired)",
+        f"  record 232 supplies {RECORD_232_S_BEATS}/{DS2_S_BEATS_TOTAL} "
+        f"DS2 S beats ({RECORD_232_S_SHARE * 100:.1f}%) BEFORE any join.",
+        f"  gate 12 tests share INFLATION (<= {GATE_S_SHARE_INFLATION_MAX}); it",
+        f"  does not relax the parent's absolute "
+        f"{PARENT_ABSOLUTE_RECORD_S_SHARE_CEILING:.0%} ceiling.  A successful",
+        "  join can still leave the parent association blocked.",
+        "",
+        f"DECISIONS        : {list(DECISIONS)}",
+        "=" * 74,
+    ]
+    return "\n".join(lines)
+
+
+def ledger_table() -> str:
+    """The 44-record ledger as a readable table."""
+    lines = [f"{'split':<5} {'rec':>4} {'cache_n':>8} {'cache@':>8} "
+             f"{'mamba_n':>8} {'mamba@':>8} {'diff':>5}  stratum"]
+    for split in SPLITS:
+        for row in build_ledger()[split]:
+            lines.append(
+                f"{split:<5} {row.record:>4} {row.cache_n:>8} "
+                f"{row.cache_start:>8} {row.mamba_n:>8} {row.mamba_start:>8} "
+                f"{row.delta:>5}  {row.stratum}")
+    return "\n".join(lines)
+
+
+def fixture_card(outcomes: Sequence[FixtureOutcome]) -> str:
+    lines = ["synthetic fixtures (no registered artifact opened)", "-" * 74]
+    for outcome in outcomes:
+        flag = "PASS" if outcome.passed else "FAIL"
+        lines.append(f"  {flag}  {outcome.name:<44} {outcome.detail}")
+    false_pairs = sum(o.false_certified for o in outcomes)
+    lines.append("-" * 74)
+    lines.append(f"  fixtures {sum(1 for o in outcomes if o.passed)}/"
+                 f"{len(outcomes)} · false certified pairs {false_pairs} "
+                 f"(must be 0)")
+    return "\n".join(lines)
+
+
+def not_run_decision(reason: str = "implementation only") -> Dict[str, object]:
+    """The decision this repository is honestly in: implemented, not run."""
+    return {
+        "decision": DECISION_NOT_RUN,
+        "reason": reason,
+        "first_stopping_reason": None,
+        "failed_leg": None,
+        "rule_fingerprint": rule_fingerprint(),
+        "execution_on_registered_data_approved": False,
+        "training_performed": False,
+        "model_scored": False,
+        "ds2_outcome_opened": False,
+        "v10_probability_opened": False,
+        "association_performed": False,
+        "drive_mutated": False,
+    }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CLI
+# ─────────────────────────────────────────────────────────────────────────────
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    parser = argparse.ArgumentParser(description=NO_EXECUTION_BANNER)
+    parser.add_argument("--mode", default=MODE_DESIGN,
+                        help=f"one of {MODES} (default {MODE_DESIGN})")
+    parser.add_argument("--out-dir", default="",
+                        help="where SYNTHETIC_FIXTURES writes its CSV")
+    parser.add_argument("--bundle-dir", default="",
+                        help="an existing run bundle for JOIN_REPORT")
+    parser.add_argument(EXECUTION_APPROVAL_FLAG, dest="execution_approval",
+                        action="store_true",
+                        help="assert the SEPARATE user approval to run on "
+                             "registered data; unused in this repository")
+    parser.add_argument(DS2_LABEL_RELEASE_FLAG, dest="ds2_released",
+                        action="store_true",
+                        help="release the DS2 support gate, only after the "
+                             "DS1 rule has frozen")
+    parser.add_argument("--self-check", action="store_true",
+                        help="verify the ledger and the no-outcome guard")
+    args = parser.parse_args(argv)
+
+    mode = resolve_mode(args.mode)
+    approved = bool(args.execution_approval)
+
+    if args.self_check:
+        print(json.dumps({"guard": assert_implementation_only(),
+                          "ledger": verify_ledger()},
+                         indent=2, ensure_ascii=False))
+        return 0
+
+    if mode in MODES_NEEDING_EXECUTION_APPROVAL and not approved:
+        # The barrier, exercised: this is where an unapproved run stops, and
+        # it stops before any registered path is opened.
+        print(design_card(mode, execution_approved=False))
+        print()
+        print(f"STOP — mode {mode} would open registered artifacts.")
+        print(APPROVAL_NOTE)
+        print(f"Nothing was read.  Re-run with {EXECUTION_APPROVAL_FLAG} only "
+              f"after that separate approval exists.")
+        print(json.dumps(not_run_decision(f"{mode} requires the separate "
+                                          f"execution approval"), indent=2,
+                         ensure_ascii=False))
+        return 2
+
+    if mode == MODE_DESIGN:
+        print(design_card(mode, execution_approved=approved))
+        print()
+        print(ledger_table())
+        return 0
+
+    if mode == MODE_FIXTURES:
+        outcomes = run_synthetic_fixtures()
+        print(fixture_card(outcomes))
+        if args.out_dir:
+            os.makedirs(args.out_dir, exist_ok=True)
+            path = write_synthetic_fixture_results(
+                outcomes, os.path.join(args.out_dir,
+                                       "synthetic_fixture_results.csv"))
+            print(f"  wrote {path}")
+        return 0 if fixtures_passed(outcomes) else 1
+
+    if mode == MODE_REPORT:
+        if not args.bundle_dir:
+            print("JOIN_REPORT replays a saved bundle; pass --bundle-dir")
+            return 2
+        complete, missing = bundle_is_complete(args.bundle_dir)
+        print(json.dumps({"bundle": args.bundle_dir, "complete": complete,
+                          "missing": missing}, indent=2, ensure_ascii=False))
+        return 0 if complete else 1
+
+    # Reachable only with the execution approval, which nothing here grants.
+    print(design_card(mode, execution_approved=True))
+    print(f"\n{mode}: execution approval asserted.  This stage reads the "
+          f"registered artifacts through open_registered_input() and "
+          f"read_result_npz(); wire the asset paths in the notebook.")
+    return 0
+
+
+if __name__ == "__main__":                              # pragma: no cover
+    raise SystemExit(main())
