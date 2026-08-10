@@ -5,8 +5,8 @@
 
 - 요청 주체: 사용자 · 작성: Claude Code · 날짜 2026-08-10
 - `design_owner: codex` · `implementation_owner: claude`
-- Claude는 병렬로 measurement qualification을 실행 중이다. **두 작업은 파일도
-  브랜치도 겹치지 않는다.** Codex 브랜치는 `codex/<task>`.
+- Claude는 measurement qualification을 끝냈다(`MEASUREMENT_QUALIFIED`, 5/5).
+  **두 작업은 파일도 브랜치도 겹치지 않는다.** Codex 브랜치는 `codex/<task>`.
 - 산출물은 **설계 문서 하나**다. 코드도, 실행도, 데이터 열람도 하지 않는다.
 
 ---
@@ -132,10 +132,10 @@ Files allowed to change · Decision log.
 ### 승인 경계 (중요)
 
 이 설계가 나와도 **조인 실행은 자동으로 시작되지 않는다.** 설계 검토 + 사용자
-별도 승인이 있어야 한다. 그리고 앞단의 measurement qualification이
-`MEASUREMENT_UNQUALIFIED`로 끝나면 **과학 실험은 거기서 종료되고 이 조인은
-실행되지 않는다** — 그 경우에도 이 설계 문서는 "무엇이 있었다면 가능했는가"의
-기록으로 남는다.
+별도 승인이 있어야 한다. 앞단의 measurement qualification은 통과했지만
+(`MEASUREMENT_QUALIFIED`, 5/5), 그것은 **측정도구가 쓸 만하다**는 뜻일 뿐이고
+EXP-2026-007의 과학적 판정은 여전히 `NOT RUN`이다. 자격 통과가 조인이나
+association의 승인이 아니다.
 
 ---
 
