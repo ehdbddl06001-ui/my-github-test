@@ -836,8 +836,11 @@ def verify_result_set_positional_contract(
             problems.append(f"{name}: missing from {results_dir}")
             files.append(row)
             continue
-        report = verify_result_positional_contract(path, split, approval)
+        # Read `pid` once per file.  Over a Drive mount the second read is
+        # not free, and 25 files is 25 reads, not 50.
         arrays = read_result_npz(path, split, ("pid",), approval)
+        labels = [str(int(v)) for v in list(arrays["pid"])]
+        report = check_pid_blocks(labels, split)
         digest = _pid_digest(list(arrays["pid"]))
         row.update({"status": "VERIFIED" if report["ok"] else "CONTRACT_FAIL",
                     "rows": sum(b["n"] for b in report["blocks"]),
@@ -1450,8 +1453,17 @@ def verify_result_positional_contract(result_npz: str, split: str,
     """
     split = _check_split(split)
     arrays = read_result_npz(result_npz, split, ("pid",), approval)
-    pid = arrays["pid"]
-    labels = [str(int(v)) for v in list(pid)]
+    labels = [str(int(v)) for v in list(arrays["pid"])]
+    return check_pid_blocks(labels, split)
+
+
+def check_pid_blocks(labels: Sequence[str], split: str) -> Dict[str, object]:
+    """The positional contract, on an already-read `pid` array.
+
+    Split out from :func:`verify_result_positional_contract` so a caller that
+    has the array in hand does not read the file a second time.
+    """
+    split = _check_split(split)
     blocks = _contiguous_blocks(labels)
     rows = build_ledger()[split]
     problems: List[str] = []
