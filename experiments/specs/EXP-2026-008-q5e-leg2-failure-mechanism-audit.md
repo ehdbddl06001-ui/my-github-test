@@ -1050,9 +1050,10 @@ detector execution.  After the PR, **STOP** and wait for the user.
 # Implementation checklist
 
 - [x] Codex resolves the five open design questions (Q1-Q5)
-- [ ] User approves the read-only `PREP_M4_ASSET_FREEZE` scope
-- [ ] `PREP_M4_ASSET_FREEZE` uniquely freezes source/cache identities and
+- [x] User approves the read-only `PREP_M4_ASSET_FREEZE` scope
+- [x] `PREP_M4_ASSET_FREEZE` uniquely freezes source/cache identities and
       verifies all 44 cache `rr` shape/meta counts in each version before status promotion
+      — **`PREP_M4_ASSET_FREEZE_PASS`, 2026-08-11** (Decision log below)
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
@@ -1255,3 +1256,239 @@ detector execution.  After the PR, **STOP** and wait for the user.
   population reading, and `local_rr_sd` over clipped `[row-10,row+10]` are
   accepted.  The latter is now explicit population SD (`ddof=0`) in integer
   samples, with SD 0 for a one-row window.
+
+- 2026-08-11 — **`PREP_M4_ASSET_FREEZE_PASS`.  Read-only asset freeze; no
+  detector replay, no M0-M4 aggregation, no implementation.**
+
+  *Scope and authority.*  The user approved the read-only
+  `PREP_M4_ASSET_FREEZE` scope only.  This entry records measured identities.
+  It is **not** implementation approval and **not** M0-M4 execution approval;
+  `status` stays `draft`.
+
+  *Preflight run.*  Branch `claude/q5e-m4-asset-freeze`.  Gate checked first:
+  PR #101 merged to `main` at `7964270`, and the required §"Resolved design
+  decisions", §"PREP_M4_ASSET_FREEZE", `mamba_record_row` primary and
+  `raw_atr_ordinal` non-decisional text all present before any measurement.
+
+  *Where the numbers come from — stated plainly.*  Drive file/folder IDs, file
+  counts, per-file byte sizes and mtimes were measured **by Claude Code through
+  the Drive connector in this session**.  The SHA-256 values, tree digests and
+  `rr` shapes were computed **by the user in Colab with Drive mounted**, because
+  this container cannot stream the 334,932,996 B of cache bytes (the connector
+  returns file content into the model context; the smallest npz is 2,543,011 B).
+  A first attempt therefore ended `PREP_ENVIRONMENT_BLOCKED` with no repository
+  change.  The two sources are bound together by measurement, not by assertion:
+  **all 90 cache file byte sizes agree exactly between the connector listing and
+  the mounted filesystem (90/90)**, so the registered Drive IDs and the hashed
+  bytes are the same files.  Every reported aggregate was independently
+  recomputed here from its own `(name, bytes, sha256)` triples through
+  `hash_file_set()`'s canonical-JSON fold and matched, 4/4.
+
+  *Digest contract.*  `PREP_DIGEST_CONTRACT_UNRESOLVED` did not fire.  The
+  registered convention `q5d_order_preserving_beat_join.hash_file_set()` was
+  reused unchanged, with `cache_expected_files()` (= `meta.json` + 44 record
+  npz = 45 names) as the cache expected set.  No new digest algorithm was
+  invented.
+
+  *Frozen identities.*
+
+  | asset | Drive ID | files | bytes | aggregate / tree SHA-256 |
+  |---|---|---|---|---|
+  | V9 source `kinkmap/` | `1oYHJi38hir2JqZl9s_SyuSxq3Hxw25sK` (pkg root) | 7 `.py` | 79,329 | `ffb5679cdfd6b9cc5d46a1071f1fac374d0bb428c360d9a2be80edb111bfb296` |
+  | V10 source `kinkmap/` | `1czXZdgSrGttrhOFlNvOHQ3l16ZfluOPX` (pkg root `18Zb55_VUYfuSwjTPpVMUGvTG1L7snOB_`) | 7 `.py` | 39,761 | `1a0c66c8116745bf83f836fd267931b83f0179cc5e62fd1ba5b055ec236452ce` |
+  | V9 cache | `1TXLX14RHA5u1dIUiYt36k2dcT5lpm5RY` | 45 | 167,064,378 | `25cd7952329fc6f04273046c80d5b0d7b3ee74baf10d2dba4036f9ea7f94fbe8` |
+  | V10 cache | `1I6iugsrHwJjjpLVS8TVp-aDkVwpdmJxF` | 45 | 167,868,618 | `82b9a593dcf23fa4ffc60b44c2fe7da02313dfe7d69dfbe64d85c38b4aa78b14` |
+
+  *Cache structure, both versions.*  45/45 files, **missing 0, unexpected 0**.
+  All 44 records: `rr.shape[0] == meta.json[n]`, `rr` is `(n, 7) float32`, and
+  `cache_n`/`split` match the frozen ledger 44/44.  **Shape mismatches: 0.**
+  Split totals **DS1 50,551 · DS2 49,289 · total 99,840** in each version, equal
+  to the registered values.  V9 and V10 agree on all 44 record counts.
+
+  *Three findings worth more than the freeze itself.*
+
+  1. **The V10 cache tree digest is `82b9a593dcf2…`, which equals the input
+     identity the canonical `EXP-2026-007` DS1_GATE run registered
+     (`82b9a593…`).**  The cache frozen here is byte-for-byte the cache that
+     produced `JOIN_UNRESOLVED` — established by digest, not by path or
+     filename.  The V9 cache digest `25cd7952…` differs, which is the correct
+     result: Leg 2 consumes V10 positional rows.
+  2. **`frontend.py` is byte-identical across V9 and V10** (`d2635e05…`,
+     8,434 B), as are `evaluate.py`, `train.py` and `__init__.py`.  `detect_r()`
+     and `rr_features()` live in `frontend.py`, so the detector and the RR
+     producer are now proven to be the *same file* in both lineages at hash
+     level, not merely "identical at string level" as previously argued.
+     `data.py` differs (6,972 -> 7,744 B) and `pwave.py` is V10-only, exactly
+     the shape the `pw` add-on predicts.  The artifacts agree independently:
+     every V10 cache npz carries members `beat ref rr sim pw ctx y` against V9's
+     `beat ref rr sim ctx y` — one added key, same row counts, same `rr` shape.
+  3. **`v15b_local.py` on Drive hashes to `cd4320e5…`, identical to the
+     committed `mit-bih/lineage/v15b_local.py` and to the value recorded in
+     `research/PROVENANCE_2026-08-10_mamba_data_lineage.md`.**  That document's
+     open gap — "no means to confirm the committed copy is byte-identical to the
+     original" — is now closed for this path.  Note it is the **mamba (Leg 1)**
+     producer and lives only on the V9 side; it is not the V9/V10 cache
+     producer.
+
+  *Seals.*  `y` was never read — only NPZ member *names* were listed, and only
+  `rr` was materialised.  No DS2 per-beat class label, no V10 probability, no
+  association, no S PR-AUC, no training.  `detector_replay_performed: false`,
+  `training_performed: false`, `association_performed: false`.  No Drive file
+  was modified, moved, deleted or overwritten; the run only read.
+
+  *Three residuals, recorded rather than papered over.*
+
+  1. **The source expected-set was discovered, then registered.**  The Colab
+     step passed a `*.py` glob as `hash_file_set`'s expected names, so its
+     aggregate was a snapshot, not a contract — and a glob cannot notice an
+     absent file, the exact failure this spec already rejects for the V10 result
+     grid.  Closed by **registering the name lists now**: V9 =
+     `{__init__, data, evaluate, frontend, model, train, v15b_local}.py`, V10 =
+     `{__init__, data, evaluate, frontend, model, pwave, train}.py`.  Future
+     verification recomputes over these fixed names, so a deletion is
+     detectable.  The five archives present in the V9 folder
+     (`cache_v15b.zip`, `v11.zip`, `v12.zip`, `v13.zip`, `v13pkg.zip`) are
+     recorded as present and **outside the frozen contract**; bringing them
+     under contract needs a separate decision.
+  2. **The rule-to-file mapping is carried, not re-measured.**  Which file holds
+     `detect_r()`, `tol = int(0.15 * fs)`, the greedy `used`-set matching, the
+     +/-150 boundary cut, the AAMI filter, `rr_features` and the `nan -> 0.0`
+     endpoint is recorded in the `EXP-2026-007` Decision log and in
+     `research/ASSETS.md :: baseline-v10-source` from an earlier reading of these
+     same files.  Those readings were not hash-pinned at the time.  The hashes
+     above pin the bytes from now on, and M4 must confirm the mapping against
+     these frozen digests before using any anchor.
+  3. **The measurement environment is not the registered runtime.**  The freeze
+     ran on Colab `python 3.12.13 / numpy 2.0.2`; the registered runtime is
+     `CPython 3.12.3 / numpy 2.5.1 / scipy 1.18.0 / wfdb 4.3.1 /
+     tensorflow 2.21.0 / keras 3.15.0`.  This is irrelevant to SHA-256 and to
+     reading a stored `rr` shape, and the registered runtime is recorded and
+     linked to these identities as §E requires.  It is **not** evidence that the
+     registered runtime is reproducible here.
+
+  *What this PASS does and does not unblock.*  M4.0 condition 3 (source,
+  cache and hashes equal to the frozen identities) is now satisfiable, and
+  condition 1's source is identified and pinned.  **Condition 2 is not
+  satisfied**: detector peak positions are stored in neither lineage, so M4
+  still requires re-running `detect_r()` under the registered runtime and
+  showing it reproduces the registered per-record counts for all 22 DS1 records.
+  Nothing here performed that.
+
+  **PREP 통과는 EXP-2026-008 구현 승인 또는 M0-M4 실행 승인이 아니다.**
+
+  *Freeze manifest — per-file SHA-256 (the record a tree digest alone cannot
+  replace: it says something changed, not what).*
+
+```text
+# sources/v9  files=7  bytes=79329  aggregate=ffb5679cdfd6b9cc5d46a1071f1fac374d0bb428c360d9a2be80edb111bfb296
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855          0  __init__.py
+e178c51ebf1e526e3296d5e81476652cadf4f4b87a25526ef6ac199f52f3632c       6972  data.py
+62910d3b16d1834743c91509f69051d9b03e0ce46a1684347eb8a29c5f071bd2       6898  evaluate.py
+d2635e05c2e0b26f68ae022c0997970c5d3a3d0828e3e943c7c78b260a78a217       8434  frontend.py
+feae1eef46976928f9fde3be872929074f22a7ea14cd3f8585b33fb08f8370ac       5133  model.py
+57c336a9668465ee8eb0a832a4af78ec8383137db6150822b9d0f1e36e220eae       4697  train.py
+cd4320e50068a93f460238ff28a2c22f80da42b0002b1a192d79ea2e17721421      47195  v15b_local.py
+
+# sources/v10  files=7  bytes=39761  aggregate=1a0c66c8116745bf83f836fd267931b83f0179cc5e62fd1ba5b055ec236452ce
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855          0  __init__.py
+20cde66b01d1172926aa1b84cbb70b70ea28bb20c2e958a2c26bd01d03497ada       7744  data.py
+62910d3b16d1834743c91509f69051d9b03e0ce46a1684347eb8a29c5f071bd2       6898  evaluate.py
+d2635e05c2e0b26f68ae022c0997970c5d3a3d0828e3e943c7c78b260a78a217       8434  frontend.py
+10c80659f48f9f81809f7d6a1a82748ce4380f74b7bd38404aef35af659bf156       5861  model.py
+addfecb0613f19a12d22c9d73e22da0be2b3bd1f9da0188a20e4bb9e7878aee8       6127  pwave.py
+57c336a9668465ee8eb0a832a4af78ec8383137db6150822b9d0f1e36e220eae       4697  train.py
+
+# caches/v9  files=45  bytes=167064378  aggregate=25cd7952329fc6f04273046c80d5b0d7b3ee74baf10d2dba4036f9ea7f94fbe8
+efa2233881409e739d5245d4ca7fab9f1b0cb46fc6b2541b9e03c30e577af1a7    3659122  100.npz
+c782e16309b4c5bc672e92a031cd06270af67bb8f4afb0fcd48ff3a0603c92ec    3055976  101.npz
+5973995c6ac5f610150b9b7e0c66461c444fa9faf468d6b3aa4a52264c657c46    3432247  103.npz
+b209ba0c1abc205327909bea38d240326b301659dbc310ce83d64417872203eb    4291133  105.npz
+ad2befe31948c8e5a4f4fbd220ba099b35cb0187d364b6b2c57d2efb3391a333    3466362  106.npz
+fb406dab622c318527d39454fcff4139675fb54b7890a9ff50dea0a7b20d8397    2962708  108.npz
+4f7c37e9a8e6a8d94509699e26fda966c0935a62960e73d8d42097141a0fbbda    4231247  109.npz
+c9bd518420a3f7fc8e7a55257637c681e27ad2fe2394b487b7ae590d6051a2d8    3555970  111.npz
+550295e085c4e8c2fcf38536dcc99c8a4b90a548cc3dddb2ddbc7ded420dd2f0    4134230  112.npz
+a6ff5e97edf63ae8f4a410a505feb5dc2ddffb931d73fc0aa84e7ee9472dea14    3043636  113.npz
+6cb43a4c63e39315840b5ea6e288b1cedd803d6d0a22d59516d8e56d0e9c922f    3130543  114.npz
+94819731680cb6c905969130deb7f470b305f202da41dc2a4f54e3993195b905    3238333  115.npz
+65892707d076941ef92598b874eba8baefbac9c1da1fbb3df243ba700f5cd55b    4094120  116.npz
+8724803d033a629d094cf7adf9241ac8ed931a47198847a10e93276c4e7c5a88    2556519  117.npz
+bc388644034ba3c34b7750e53e6fb6ad1459cb1e3767790a0a307c8f8d71349d    3881323  118.npz
+16b2b4315dd5d6acd5d3966d331089088fcdf4ddf973c1432298eebb611a2fb4    3416313  119.npz
+f4386222753458c9f42a1d2d66dd887b49f8c8d4f7e3da9174b11c55a214011f    3056954  121.npz
+556447e09ff9716902497099d5976d590e8640bdca282b263221250176467c27    4078204  122.npz
+ea1cef353b75b27ef2c7c8a52cfa438ce616231c1e1e2319c49bc4e59fb354a4    2543011  123.npz
+2f516f41d15a698d35f31f8ca1b1f323698aeb1a1b8c36b78a7ffc51511589ff    2724033  124.npz
+4ac8588158957995e215c266e6153e611b8db61c4894450b4d4b166819f1de33    4417055  200.npz
+ef2ac06a64eeb4f24667008d08c1d17d6a12f643cb7e85c7fb6dc7f50d8609c2    3189711  201.npz
+4a777d5c9575b7e84359167f1d1a3b1fd135eac1c0950a398a659cb957895910    3525271  202.npz
+79edcd36bba17e53b0d77098f68ba01ba24cde43f47cee362ed28c6f9149aafa    5124065  203.npz
+2bf3552bc8238c50f957976b69ed44464a240cc3ebb9bcf693698dd3511da640    4212661  205.npz
+67acaaf79f4f1e3fc3791871280bebeb7d6e0eabaf78170c84a9f33cdd9c2526    3107920  207.npz
+21d7a1043b2a155a35bbd4d10c4db7b16070e0520bde0a5fb10c5fc8049caa5d    4400900  208.npz
+dd11a422ae430fbf3e18aea54e0fe1eb427bd39c8e56472ca5b7cd9accf2ce40    4995349  209.npz
+8193546a1f53bce60417cca11c0fb753215b0e2fa142a69d028c5e783a638791    4331033  210.npz
+746b2c699e8f69342ddaf4b33c9dee15bb00078d6703a95ea42d48e62265a298    4639359  212.npz
+dbb57412e8bd2129affe41cb9d048516322d423dbeb28f74094ffefed08dc7ec    5073180  213.npz
+195c576f92fdec550c64fd1fe33dd1a75f754a090463242f185d7878662940f6    3815925  214.npz
+51fa489a6cf6d50ff2c23ec569069f6ff9e2fbf7d03c6e65003fbbc812de9474    5597947  215.npz
+b3587a607d29ede7e9c82c8f1e0b75c557a77a5dc5f08c9dc404674d30e6f3a5    3686848  219.npz
+952040a63b4bb6c7abfad7e956ccf5ba89641255d500ed5ae519a70158305178    3372982  220.npz
+e12a8f388bb00222a115d23a6011e195ad33c199245abc5e72a73f23faec72e3    4044528  221.npz
+0a30471d24dd89aab71a385bfb97a78e0e20707e73c0ef6e32dce2a955e841fd    4089083  222.npz
+b9bc3297f03645ae4350bbf7fff90869a1b18d6b56305449f85dd00b0a1889b0    4296026  223.npz
+073ef63c9c383023c6b31ad255cf354bb86698c519394b91ab10cd37c0307513    3494566  228.npz
+76d88f060be18a75dd4ce94a32a1c8dd14a6c616dc74cd718e5a4253bc5709f2    3778217  230.npz
+cb43c8dc76ed830dfec79bcc253d7b67c39ef923425832878ca4f5b89422019f    2613271  231.npz
+c72eebc2e3ac4423b1dd24be27bed6c21c64fa94b9488a3fccf21697671e5c95    2909866  232.npz
+07574ef78aed9d2ab5be411bfeb9c9fdf51e7d24aee7d89130c781cdd2e1f4fc    5283071  233.npz
+89c35bc501acfa88e058f393310f6411a68a9a44f1bdebb3084069104b4ab932    4511622  234.npz
+ec5efe7ba37aebe3c0772dd22ef9c101cbf3607db27aa2a56654c255b80021e3       1938  meta.json
+
+# caches/v10  files=45  bytes=167868618  aggregate=82b9a593dcf23fa4ffc60b44c2fe7da02313dfe7d69dfbe64d85c38b4aa78b14
+a9676b8d1ce997854363db63fb7e570581ea4fbbcfafc697b405a5284d4bbe63    3676956  100.npz
+12a919051498a5f060c93d15640e64eedbc3d0a47b6d05f8dc5546d528d50150    3070898  101.npz
+3e7da1c8fa2315d5cd45d0bdbebbb9239142fb548f1beb6ffbd093aaf068735e    3449110  103.npz
+c6372d5392294a9d7bf4f1734108f0571dd3aceb5523e9c00bf18aea2484414e    4311976  105.npz
+ad8fb7695f7a87a67b0e5fe0d3a04ca6b4f423cbd276ac4dfe73b29bdac2eb60    3483268  106.npz
+73fa45dfea19d935443a20d13d5b0bd2320ce4199aa9c4426d5a4646a84bc427    2977421  108.npz
+3221a9f2f56513e88e84c20cbc5a85ddcc54e8e3b9356d0f51da9fe32684ace8    4251100  109.npz
+c88cd18ada5edfe76896ad39290d2425bf5fa917d362123ad67a43de0726e4ec    3572783  111.npz
+31a49adcdb6c667a27a052ebd85527b4df792496adabd08623e5fdb515bfed98    4154372  112.npz
+5e619970acd484e73d96aee64364f53cbe3f5f9328dc61a205d51035c1a26e9e    3058268  113.npz
+b1ee3d902b083a348cb587e6f5d6a3704bf7834d0dff99b87c252f2a36b103ab    3145532  114.npz
+ae30735f157c8a31ccaa3d4cd5b763529fed097d7a8a069e1b73c43d4e33a718    3254111  115.npz
+3f9e34fe6d98070681ac5afc64f631d07ca331b707e746c2bf9418b6b29e3d29    4113767  116.npz
+09f04dd02a75dc5cb29ebc9c86b2fe44e97cb63afb966eeffb2757b1fbc8752a    2569082  117.npz
+b5d58f61b49287bd473d20f4947425f5ab6fb9dab92a164473906895c218c2e2    3899949  118.npz
+9d899113f9a37ac58357867f6e6b91e555367e8f4c6b55cc45b1059b5b0fff73    3432480  119.npz
+0ced156d4ba5e844ee53526cae814f5e40e1889627d793e238ad7e900f0683bd    3072018  121.npz
+ec346e6bcd3a01807783a1b3a5452bf72e766766350b06902f1d625a0dbafeff    4098285  122.npz
+2ad4d9311461aaa662da8abb38c146a6bb72eed04782daf3e26f9d5b79d7f474    2554996  123.npz
+de1268a4da38c48de5e52b3d3a4045d7993d5df0b1db01f92cc7e2e85fb3fc64    2737560  124.npz
+601bf56d31e4ee04b833f502c334346343dcaa9e648144c7182b2065ea2de3fd    4438800  200.npz
+a67a5dd0a13647bb05b7c426aaceaa808bafa97869524bf76c5aa54c5438e75a    3205220  201.npz
+80b04c41e2458625ce45af0355dccf43b673a04ded9657a58aa4a52ceaed8c82    3541585  202.npz
+f0c1a8957071fa00dd031a3e8a46de42690dbfdc86c7720de390778942e60843    5148723  203.npz
+86096346a94045c0475b73e86a86c55b3a88b4e412597af5b9ece07e739f8e5b    4232454  205.npz
+073dc5c3e562ed47439f8d181e6b36d5d02f681a6d23b4197924d4945c165c43    3123019  207.npz
+0e5e6fe4796aeec86afee5699835424bc84324704ffe50d5ce107e763fc113ac    4422372  208.npz
+22ad2689795462998b2ed8fc92b287e05f04250c66e3bdd18146d0758c67705b    5019006  209.npz
+4302fd3268343e99ef7bf330b8b072d2b0933ef501e704bf0df4ef4cebaa40e5    4351950  210.npz
+23c5c9e120f434825f599d150362cd42b615bf26e548d63940567e78ee335f47    4661337  212.npz
+a89cb8e2be7afb4d3042828d0c7e06a9369cba9fe8103b21f607c840b5f46218    5096012  213.npz
+d2d3fd5da9df201d98f8c0a4ed4990059e091292106f3cbdacea8c5484fab485    3834828  214.npz
+606e961abf277c19184400910c5a22f8d6febfa05e3f35533f7babf59576a334    5625169  215.npz
+1300d3402afcd69898fcb75ca7f3746a6471f49001fa8fdce6802a2abc91d43a    3704351  219.npz
+3fcd3fd8d93f680b52e6a073bd2262f727765f957733bf53da37b06edb568a06    3389237  220.npz
+f68de04ed657ce2261510b1ad72a139784da464b19a7ddd411ff47faea03817a    4063829  221.npz
+4c86f0e7ef382a6b5b5c0b2f651cecff4c512bcde55e479efdde21014b59c677    4109349  222.npz
+eff617ddebd604a543d9b8097ce82560eb2c4886deee5b8dcc5b3fb71d1c0d11    4317024  223.npz
+9493d7081634819bb5621778e877aad6d0797868c0e8f2ea0924b723ffe925e1    3511600  228.npz
+a4c683cbf7228f7cd76149d561626f3326b8223f66e156a96877b2364ae6bd07    3796600  230.npz
+0b4a4e19aa87b61558282b342d1a53682ff3a43cb1d0349d862a16dc2a22e8e8    2625937  231.npz
+2c47316dd2f822d3deefc6564440f454944c4c4e2ac001a27110f162e1a10a36    2923934  232.npz
+abe0b62d097aa8824d55d904d5eb79e828d6410ee56796d6626a0e653bf8b9dd    5308309  233.npz
+dfc6ecd29ceeab19800d3bc5ce49eb9d4820c18a5841c9b9560175693574bda5    4532103  234.npz
+ec5efe7ba37aebe3c0772dd22ef9c101cbf3607db27aa2a56654c255b80021e3       1938  meta.json
+```
