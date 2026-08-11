@@ -452,6 +452,16 @@ Per row (both sides, reported separately):
 Compared across the four groups `CERTIFIED`, `NO_EDGE`, `NOT_OPTIMAL`,
 `AMBIGUOUS`.  Report median, p25, p75, and the full ECDF per group.
 
+**Both sides are reported; the cache side is H4-decisional.**  Confirmed by
+Codex on 2026-08-12, before any execution: H4 registers one family-level
+statistic and one p-value, so its side is fixed in advance rather than chosen
+from results.  Every mamba-side quantity here is descriptive and carries
+`decisional: false`; it never enters an H4 p-value, a `q99` comparison, an
+effect gate, the Holm adjustment, an association flag or the decision tree.  It
+is retained so the candidate graph keeps its symmetric diagnostic picture.
+Pooling the two sides, taking a max or min of the two contrasts, choosing the
+more favourable side, or emitting a per-side p-value are all forbidden.
+
 On the cache side, construct `CERTIFIED` from the non-null `cache_record_row` on
 each certified mamba row.  Create exactly one cache-side row per certified pair,
 attach class only from the frozen DS1 processed-class map, and assert uniqueness
@@ -900,7 +910,7 @@ Four hypothesis families, one family-level p-value each:
 | H1 | share of `2-5` sample `d_inf` among uncensored failed V / `NO_EDGE` rows, relative to the same share in non-V | Control A |
 | H2 | share of `NO_EDGE` failures positionally explained by replay-confirmed counterpart absence | Control C |
 | H3 | share of failures within 10 beats after a replay-confirmed anchor | Control C |
-| H4 | `median(candidate_degree \| NOT_OPTIMAL + AMBIGUOUS) - median(candidate_degree \| CERTIFIED)` | Control B |
+| H4 | **cache-side** `median(candidate_degree \| NOT_OPTIMAL + AMBIGUOUS) - median(candidate_degree \| CERTIFIED)`; the mamba-side contrast is reported but non-decisional | Control B, permuted within `record x cache-side` |
 
 **Holm** correction across exactly these four, at `alpha = 0.05`: sort the four
 p-values ascending and require `p_(k) <= 0.05 / (4 - k + 1)`, stopping at the
@@ -944,13 +954,16 @@ Each flag is evaluated **independently**.  All conditions of a flag must hold.
   samples;
 - Holm-adjusted H3 p-value significant.
 
-**`H4_ASSOCIATED`** — all of:
-- among `NOT_OPTIMAL` and `AMBIGUOUS` rows, the share with
+**`H4_ASSOCIATED`** — all of, **evaluated on cache-side rows only**:
+- among **cache-side** `NOT_OPTIMAL` and `AMBIGUOUS` rows, the share with
   `candidate_degree >= 2` is `>= 0.50`;
-- the candidate-degree effect versus certified rows exceeds Control B's `q99`;
-- the direction of `rr_pair_multiplicity` (higher in failed rows) **or**
-  `local_rr_sd` (lower in failed rows) agrees;
-- Holm-adjusted H4 p-value significant.
+- the **cache-side** candidate-degree effect versus **cache-side** certified
+  rows exceeds Control B's `q99`;
+- the direction of **cache-side** `rr_pair_multiplicity` (higher in failed
+  rows) **or** **cache-side** `local_rr_sd` (lower in failed rows) agrees;
+- Holm-adjusted H4 p-value significant, computed from the cache-side statistic.
+
+No mamba-side quantity may enter any of these four conditions.
 
 # Decision tree
 
@@ -1053,7 +1066,7 @@ no Korean, no typographic dashes, no unit glyphs.
 | 3 | record 208 failure raster | primary x = `mamba_record_row`, one row per class, mark = failed beat; raw-ordinal sensitivity shown separately |
 | 4 | run-length distribution | primary mamba-row histogram over buckets `1`, `2`, `3-9`, `>=10`, plus median/p90/max; raw-ordinal sensitivity overlaid or panelled |
 | 5 | nearest-distance histogram | fixed bins `0-1`, `2-5`, `6-20`, `21-100`, `>100`; censored and `CACHE_ENDPOINT_ZERO` rows in separate descriptive bars |
-| 6 | candidate-degree violin + ECDF | groups CERTIFIED / NO_EDGE / NOT_OPTIMAL / AMBIGUOUS |
+| 6 | candidate-degree violin + ECDF | groups CERTIFIED / NO_EDGE / NOT_OPTIMAL / AMBIGUOUS, one panel per side; the cache panel is labelled `H4 decisional` and the mamba panel `descriptive, non-decisional` |
 | 7 | anchor-aligned failure probability curve | x = beat offset `-10 … +10` from anchor, y = failure share, with the Control C band |
 
 Figure 7 is produced only when M4.0 passes; otherwise the bundle records its
@@ -1090,7 +1103,9 @@ absence and the reason.
   "m2": {"adjacency_primary": "mamba_record_row",
          "runs": {}, "raw_ordinal_sensitivity": {},
          "v_neighbourhood_pm1": {}, "v_neighbourhood_pm10": {}},
-  "m3": {"by_group": {}},
+  "m3": {"by_group": {}, "h4_decisional_side": "cache",
+         "non_decisional_sides": ["mamba"]},
+  "h4_decisional_side": "cache",
   "m4": {"status": "OK | DIAGNOSTIC_INPUT_ABSENT", "feasibility": {},
          "anchors": 0, "offset_curve": {}},
   "m5": {"strata_present": ["class", "reason", "record",
@@ -1114,7 +1129,7 @@ names:
 - `m0_record_class.csv` — `record, stratum, class, side, denominator, failures, rate`
 - `m0_runs.csv` — `record, adjacency_definition, run_start, run_length, classes, reasons, decisional`
 - `m1_distance.csv` — `record, cache_record_row, processed_class, reason, d_inf, bin, censored, cache_endpoint_zero, included_in_distance_gate`
-- `m3_graph.csv` — `record, side, row, group, candidate_degree, usable_edges, has_forced_rank, rr_pair_multiplicity, local_rr_sd`
+- `m3_graph.csv` — `record, side, row, group, decisional, candidate_degree, usable_edges, has_forced_rank, rr_pair_multiplicity, local_rr_sd`; `decisional` is true only on the cache side
 - `m4_anchors.csv` — `record, anchor_ordinal, anchor_sample, anchor_kind, adjacency_definition, offset, mapped_mamba_record_row, failed, decisional` (absent when M4 stops)
 - `null_summary.json` — per control, per statistic: full quantiles, `q95`, `q99`, seed, replicate count
 
@@ -1186,7 +1201,8 @@ no raw ECG or detector execution.  After this PR, **STOP** and wait for merge.
       M4.0 condition 2 remains an execution-stage feasibility gate
 - [x] User approves this draft; `status` becomes `approved_for_implementation`
       — **explicit user approval, 2026-08-12, after PR #108 merged**
-- [ ] Claude implements the frozen design without executing it
+- [x] Claude implements the frozen design without executing it
+      — **implementation PR, 2026-08-12; never executed** (Decision log below)
 - [ ] User separately approves execution on the registered artifacts
 - [ ] Bundle file IDs, byte sizes and SHA-256 recorded before any measurement
 - [ ] QA reproduction targets all match, or `DIAGNOSTIC_INPUT_MISMATCH`
@@ -1929,3 +1945,133 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
   branch, input identity, or output schema changed in this promotion.  The next
   step is a separately reviewed Claude implementation PR; scientific execution
   still requires a later and separate user approval.
+
+- 2026-08-12 — **Implementation (Claude Code).  The frozen design is coded and
+  has never been executed.**
+
+  *Scope.*  The user approved implementing the frozen design.  **That approval
+  is for writing code only.**  Running M0-M4 on the registered artifacts needs
+  a separate approval that does not exist.  No registered artifact was opened,
+  no aggregation was computed, `detect_r()` was never called, the beat join was
+  not re-run, no DS2 per-beat label or V10 probability was read, nothing was
+  trained, and no Drive file was created, moved or overwritten.  `status`
+  stays `approved_for_implementation`.
+
+  *Files.*  Exactly the four this spec allows: this file's checklist and
+  Decision log; `mit-bih/q5e_leg2_failure_mechanism_audit.py`;
+  `mit-bih/test_q5e_leg2_failure_mechanism_audit.py`; and
+  `notebooks/quest55_q5e_leg2_failure_mechanism_audit.ipynb`, committed
+  unexecuted with every output cell empty and no execution count.
+  `research/ASSETS.md`, `research/PROJECT_STATE.md` and every existing run
+  artifact were not touched.
+
+  *The barrier is code, not a promise.*  `OPEN_REGISTERED_DATA` defaults to
+  `False` and `run_audit()` refuses on it before anything else; then
+  `require_execution_approval()` refuses without the token; and
+  `open_registered_input()` checks the token *before* calling `open()`, so an
+  unapproved run cannot even learn whether an artifact exists.  Permission is
+  checked before capability, so an unauthorised call is refused as
+  unauthorised whatever the environment has installed.  `run_audit()`
+  additionally ends in an explicit terminal guard naming the missing approval,
+  which the execution-approval change removes — not an implementer in a hurry.
+  Default CLI mode is `DESIGN`; `--mode AUDIT` exits 2.
+
+  *Implemented as specified.*  M0.1-M0.6, M1, M2, M3 and M4.0/M4.1 follow the
+  registered definitions, denominators, windows and exclusions.
+  `mamba_record_row` is the primary adjacency everywhere it is registered as
+  such and `raw_atr_ordinal` is carried only as the non-decisional sensitivity
+  audit, tagged `decisional: false` in every table it reaches.  `W = 15` is a
+  constant, and the rank-proportional centre reuses the frozen module's
+  `to_samples()` so the round-half-to-even rule is single-sourced rather than
+  re-implemented.  `CENSORED_AT_WINDOW_BOUNDARY` and `CACHE_ENDPOINT_ZERO` are
+  excluded through one function, `distance_gate_rows()`, which is the only
+  population any H1/H3 distance statistic or null may use — the observed
+  statistic and every replicate therefore share the exclusion by construction,
+  not by two matching code paths.  Cache-side `CERTIFIED` is derived one-to-one
+  from certified mamba rows with the registered uniqueness, collision,
+  omission and count assertions, each raising `DiagnosticInputMismatch`.
+
+  *Controls and multiplicity.*  Three families at 10,000 replicates under
+  master seed `2026019`, seeded per `(family, replicate)` from a stable string
+  so replicate `b` is the same value on any machine, in any order, on any
+  worker count.  Control B is one **joint** categorical permutation of the
+  status vector within each `record x side`, so per-reason counts are preserved
+  and two reasons cannot land on the same row.  Holm runs across exactly four
+  families; an `UNEVALUABLE` family enters at p=1.0 **only** inside that
+  calculation, and the reported field is `p_holm_4family`.  A test asserts that
+  an unevaluable family carries no significance verdict at all, so the
+  placeholder cannot leak out as evidence of no association.
+
+  *M4.0 condition 2, ordered.*  `m4_feasibility_gate()` evaluates the sub-gates
+  in the registered order — exact runtime, then the static source map against
+  the two frozen V10 hashes, then input identity, and only then the detector
+  replay, the 22/22 per-record counts and exact frozen-RR equality.  Each
+  failure returns `DIAGNOSTIC_INPUT_ABSENT` with its own reason
+  (`M4_SOURCE_MAP_UNVERIFIED`, `M4_REGISTERED_RUNTIME_UNAVAILABLE`,
+  `M4_DETECTOR_COUNT_MISMATCH`, `M4_FROZEN_RR_MISMATCH`,
+  `M4_INPUT_IDENTITY_MISMATCH`).  There is no fallback runtime, no approximate
+  count match, no partial-record pass and no post-hoc repair.  `m4_anchors()`
+  raises if called with a gate that did not return `OK`, so the ordering is
+  enforced at the anchor as well as at the caller.  The detector call is
+  injected, which is how the whole gate is tested here without `detect_r()`
+  ever running.  Source-map verification checks each registered token **inside
+  the named function body**, since the spec says keyword presence alone is
+  insufficient.
+
+  *Verification.*  38 test functions, 233 assertions, all synthetic: no test
+  opens a registered artifact, reaches Drive or the network, or copies a
+  measured value into a fixture.  Every decision-tree terminal branch is
+  reached by a test, including `NO_REGISTERED_MECHANISM_ASSOCIATED`, which is
+  asserted reachable rather than merely present.  The frozen Q5-D module is
+  unchanged: `git diff` is empty for it, its own 881 assertions still pass, and
+  its file hashes to `6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226`
+  — the registered producing-code SHA-256.
+
+  *One under-specification, raised and now closed — **Codex confirmed,
+  2026-08-12**.*  The Multiplicity table states H4 as a single median contrast,
+  while M3 measures `candidate_degree` **per side**, and the spec did not name
+  the decisional side.  Codex fixed `H4_DECISIONAL_SIDE = cache` as a
+  pre-execution clarification: no result had been produced, no new statistic
+  was introduced, and no side was chosen from two computed outcomes.
+
+  The registered grounds are:
+
+  - H4 registers exactly one family-level statistic and one p-value, so its
+    side has to be fixed before the run;
+  - in Q5-E's positional failure audit the cache is the detector-row side;
+  - Q4 defines cache-side `CERTIFIED` one-to-one and requires the four
+    cache-side groups to form a disjoint, exhaustive partition;
+  - fixing it in advance removes any possibility of preferring whichever of two
+    contrasts turns out more favourable;
+  - the mamba side is still reported, to preserve the symmetric diagnostic
+    picture of the candidate graph, but never decides.
+
+  An earlier draft of this entry justified the choice as "every other
+  decisional population here is cache-side".  **That was inaccurate and is
+  withdrawn**: M2 and H3 are decisional on `mamba_record_row`.  The reason is
+  specific to H4, and is the list above.
+
+  Implementation consequence: the observed contrast, the Control B null, the
+  raw p-value, the `q99` comparison, the H4 p-value entering `p_holm_4family`,
+  the `candidate_degree >= 2` share and the `rr_pair_multiplicity` /
+  `local_rr_sd` direction conditions are **all** cache-side and all read the
+  same constant.  `stat_h4()` takes no `side` argument at all, so a production
+  caller cannot move it; the other side is reachable only through the private
+  descriptive helper.  Mamba-side rows serialise `decisional: false` in
+  `m3_graph.csv` and in the result JSON.  There is no pooled, max/min or
+  best-side path, and a test asserts none exists by name.
+
+  *Engineering closures carried over from Q5-D.*  Per-stage dependency
+  declaration with `pyarrow` up front rather than at bundle-write time;
+  `stage_should_run()` announcing `RUN`/`SKIP` with a reason so a skipped stage
+  never looks like a passed one; capability assertions on **both** modules plus
+  printed `__file__` paths against a stale clone; canonicity by
+  `SUPERSEDED.json` absence and `manifest.json` code hash rather than by path;
+  a refusal to write into a non-empty bundle directory; and
+  `assert_implementation_only()`, which fails on any token that could reach a
+  sealed outcome.  All seven figures carry ASCII titles and axes, checked by
+  `assert_ascii_labels()`, and figure 7 is emitted only when the M4 gate
+  passes, with its absence and reason recorded otherwise.
+
+  *Not done, deliberately.*  No M0-M4 aggregation, no Drive bundle, no
+  executed notebook, and no result numbers anywhere in this file.
