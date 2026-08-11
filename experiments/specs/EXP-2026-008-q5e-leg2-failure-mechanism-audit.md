@@ -1186,7 +1186,8 @@ no raw ECG or detector execution.  After this PR, **STOP** and wait for merge.
       M4.0 condition 2 remains an execution-stage feasibility gate
 - [x] User approves this draft; `status` becomes `approved_for_implementation`
       — **explicit user approval, 2026-08-12, after PR #108 merged**
-- [ ] Claude implements the frozen design without executing it
+- [x] Claude implements the frozen design without executing it
+      — **implementation PR, 2026-08-12; never executed** (Decision log below)
 - [ ] User separately approves execution on the registered artifacts
 - [ ] Bundle file IDs, byte sizes and SHA-256 recorded before any measurement
 - [ ] QA reproduction targets all match, or `DIAGNOSTIC_INPUT_MISMATCH`
@@ -1929,3 +1930,111 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
   branch, input identity, or output schema changed in this promotion.  The next
   step is a separately reviewed Claude implementation PR; scientific execution
   still requires a later and separate user approval.
+
+- 2026-08-12 — **Implementation (Claude Code).  The frozen design is coded and
+  has never been executed.**
+
+  *Scope.*  The user approved implementing the frozen design.  **That approval
+  is for writing code only.**  Running M0-M4 on the registered artifacts needs
+  a separate approval that does not exist.  No registered artifact was opened,
+  no aggregation was computed, `detect_r()` was never called, the beat join was
+  not re-run, no DS2 per-beat label or V10 probability was read, nothing was
+  trained, and no Drive file was created, moved or overwritten.  `status`
+  stays `approved_for_implementation`.
+
+  *Files.*  Exactly the four this spec allows: this file's checklist and
+  Decision log; `mit-bih/q5e_leg2_failure_mechanism_audit.py`;
+  `mit-bih/test_q5e_leg2_failure_mechanism_audit.py`; and
+  `notebooks/quest55_q5e_leg2_failure_mechanism_audit.ipynb`, committed
+  unexecuted with every output cell empty and no execution count.
+  `research/ASSETS.md`, `research/PROJECT_STATE.md` and every existing run
+  artifact were not touched.
+
+  *The barrier is code, not a promise.*  `OPEN_REGISTERED_DATA` defaults to
+  `False` and `run_audit()` refuses on it before anything else; then
+  `require_execution_approval()` refuses without the token; and
+  `open_registered_input()` checks the token *before* calling `open()`, so an
+  unapproved run cannot even learn whether an artifact exists.  Permission is
+  checked before capability, so an unauthorised call is refused as
+  unauthorised whatever the environment has installed.  `run_audit()`
+  additionally ends in an explicit terminal guard naming the missing approval,
+  which the execution-approval change removes — not an implementer in a hurry.
+  Default CLI mode is `DESIGN`; `--mode AUDIT` exits 2.
+
+  *Implemented as specified.*  M0.1-M0.6, M1, M2, M3 and M4.0/M4.1 follow the
+  registered definitions, denominators, windows and exclusions.
+  `mamba_record_row` is the primary adjacency everywhere it is registered as
+  such and `raw_atr_ordinal` is carried only as the non-decisional sensitivity
+  audit, tagged `decisional: false` in every table it reaches.  `W = 15` is a
+  constant, and the rank-proportional centre reuses the frozen module's
+  `to_samples()` so the round-half-to-even rule is single-sourced rather than
+  re-implemented.  `CENSORED_AT_WINDOW_BOUNDARY` and `CACHE_ENDPOINT_ZERO` are
+  excluded through one function, `distance_gate_rows()`, which is the only
+  population any H1/H3 distance statistic or null may use — the observed
+  statistic and every replicate therefore share the exclusion by construction,
+  not by two matching code paths.  Cache-side `CERTIFIED` is derived one-to-one
+  from certified mamba rows with the registered uniqueness, collision,
+  omission and count assertions, each raising `DiagnosticInputMismatch`.
+
+  *Controls and multiplicity.*  Three families at 10,000 replicates under
+  master seed `2026019`, seeded per `(family, replicate)` from a stable string
+  so replicate `b` is the same value on any machine, in any order, on any
+  worker count.  Control B is one **joint** categorical permutation of the
+  status vector within each `record x side`, so per-reason counts are preserved
+  and two reasons cannot land on the same row.  Holm runs across exactly four
+  families; an `UNEVALUABLE` family enters at p=1.0 **only** inside that
+  calculation, and the reported field is `p_holm_4family`.  A test asserts that
+  an unevaluable family carries no significance verdict at all, so the
+  placeholder cannot leak out as evidence of no association.
+
+  *M4.0 condition 2, ordered.*  `m4_feasibility_gate()` evaluates the sub-gates
+  in the registered order — exact runtime, then the static source map against
+  the two frozen V10 hashes, then input identity, and only then the detector
+  replay, the 22/22 per-record counts and exact frozen-RR equality.  Each
+  failure returns `DIAGNOSTIC_INPUT_ABSENT` with its own reason
+  (`M4_SOURCE_MAP_UNVERIFIED`, `M4_REGISTERED_RUNTIME_UNAVAILABLE`,
+  `M4_DETECTOR_COUNT_MISMATCH`, `M4_FROZEN_RR_MISMATCH`,
+  `M4_INPUT_IDENTITY_MISMATCH`).  There is no fallback runtime, no approximate
+  count match, no partial-record pass and no post-hoc repair.  `m4_anchors()`
+  raises if called with a gate that did not return `OK`, so the ordering is
+  enforced at the anchor as well as at the caller.  The detector call is
+  injected, which is how the whole gate is tested here without `detect_r()`
+  ever running.  Source-map verification checks each registered token **inside
+  the named function body**, since the spec says keyword presence alone is
+  insufficient.
+
+  *Verification.*  38 test functions, 233 assertions, all synthetic: no test
+  opens a registered artifact, reaches Drive or the network, or copies a
+  measured value into a fixture.  Every decision-tree terminal branch is
+  reached by a test, including `NO_REGISTERED_MECHANISM_ASSOCIATED`, which is
+  asserted reachable rather than merely present.  The frozen Q5-D module is
+  unchanged: `git diff` is empty for it, its own 881 assertions still pass, and
+  its file hashes to `6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226`
+  — the registered producing-code SHA-256.
+
+  *One under-specification, resolved narrowly and flagged for Codex.*  The
+  Multiplicity table states H4 as a single median contrast, while M3 measures
+  `candidate_degree` **per side**.  The spec does not name the decisional side.
+  Both sides are computed and reported; `H4_DECISIONAL_SIDE` is registered as
+  the **cache** side, on the narrowest reading consistent with the rest of the
+  document: every other decisional population here is cache-side (M1's
+  population and H1's gate population are stated as such), and Q4 exists only
+  to make the cache-side `CERTIFIED` group well defined for this comparison.
+  This is an implementation registration, not a design change, and it is the
+  one item Codex should confirm before execution approval — no unconfirmed
+  choice can reach a result, because execution is a separate approval.
+
+  *Engineering closures carried over from Q5-D.*  Per-stage dependency
+  declaration with `pyarrow` up front rather than at bundle-write time;
+  `stage_should_run()` announcing `RUN`/`SKIP` with a reason so a skipped stage
+  never looks like a passed one; capability assertions on **both** modules plus
+  printed `__file__` paths against a stale clone; canonicity by
+  `SUPERSEDED.json` absence and `manifest.json` code hash rather than by path;
+  a refusal to write into a non-empty bundle directory; and
+  `assert_implementation_only()`, which fails on any token that could reach a
+  sealed outcome.  All seven figures carry ASCII titles and axes, checked by
+  `assert_ascii_labels()`, and figure 7 is emitted only when the M4 gate
+  passes, with its absence and reason recorded otherwise.
+
+  *Not done, deliberately.*  No M0-M4 aggregation, no Drive bundle, no
+  executed notebook, and no result numbers anywhere in this file.
