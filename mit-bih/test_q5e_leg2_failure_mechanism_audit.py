@@ -459,6 +459,133 @@ def test_m3_graph_on_synthetic_records():
           "a one-row window has SD 0")
 
 
+def _h4_rows(cache_degrees, mamba_degrees):
+    """M3 rows with independent control of each side's degrees and groups."""
+    rows = []
+    groups = [Q5E.GROUP_CERTIFIED, Q5E.GROUP_NOT_OPTIMAL, Q5E.GROUP_AMBIGUOUS,
+              Q5E.GROUP_CERTIFIED]
+    for index, degree in enumerate(cache_degrees):
+        rows.append({"record": "101", "side": Q5E.SIDE_CACHE, "row": index,
+                     "group": groups[index % len(groups)],
+                     "decisional": True,
+                     "candidate_degree": degree, "usable_edges": 1,
+                     "has_forced_rank": True,
+                     "rr_pair_multiplicity": 1 + index, "local_rr_sd": 5.0})
+    for index, (degree, group) in enumerate(mamba_degrees):
+        rows.append({"record": "101", "side": Q5E.SIDE_MAMBA, "row": index,
+                     "group": group, "decisional": False,
+                     "candidate_degree": degree, "usable_edges": 9,
+                     "has_forced_rank": False,
+                     "rr_pair_multiplicity": 999, "local_rr_sd": 0.0})
+    return rows
+
+
+def test_h4_is_invariant_to_the_mamba_side():
+    """Cache rows fixed: nothing about H4 may move when the mamba side does."""
+    cache = [1, 4, 6, 2]
+    calm = _h4_rows(cache, [(1, Q5E.GROUP_CERTIFIED),
+                            (2, Q5E.GROUP_NOT_OPTIMAL)])
+    wild = _h4_rows(cache, [(9999, Q5E.GROUP_NOT_OPTIMAL),
+                            (0, Q5E.GROUP_CERTIFIED),
+                            (12345, Q5E.GROUP_AMBIGUOUS),
+                            (7, Q5E.GROUP_CERTIFIED)])
+    a = Q5E.h4_evaluate(calm, replicates=64)
+    b = Q5E.h4_evaluate(wild, replicates=64)
+    check(a["statistic"] == b["statistic"], "H4 observed statistic invariant")
+    check(a["null_summary"] == b["null_summary"], "H4 null invariant")
+    check(a["p"] == b["p"], "H4 p-value invariant")
+    check(a["q99"] == b["q99"], "Control B q99 invariant")
+    check(a["effect_gates"] == b["effect_gates"], "H4 effect gates invariant")
+    holm_a = Q5E.holm_4family({"H1": 0.2, "H2": None, "H3": None,
+                               "H4": a["p"]})
+    holm_b = Q5E.holm_4family({"H1": 0.2, "H2": None, "H3": None,
+                               "H4": b["p"]})
+    check(holm_a["p_holm_4family"]["H4"] == holm_b["p_holm_4family"]["H4"],
+          "H4 Holm value invariant")
+    flag_a = Q5E.evaluate_flags({"H4": {"effect_gates": a["effect_gates"]}},
+                                holm_a)["H4"]["flag"]
+    flag_b = Q5E.evaluate_flags({"H4": {"effect_gates": b["effect_gates"]}},
+                                holm_b)["H4"]["flag"]
+    check(flag_a == flag_b, "H4_ASSOCIATED flag invariant to the mamba side")
+    check(a["by_side_descriptive"][Q5E.SIDE_MAMBA]["median_contrast"] !=
+          b["by_side_descriptive"][Q5E.SIDE_MAMBA]["median_contrast"],
+          "the mamba side did change, so the invariance is not vacuous")
+
+
+def test_h4_moves_when_the_cache_side_moves():
+    mamba = [(1, Q5E.GROUP_CERTIFIED)]
+    low = Q5E.h4_evaluate(_h4_rows([1, 2, 2, 1], mamba), replicates=32)
+    high = Q5E.h4_evaluate(_h4_rows([1, 40, 60, 1], mamba), replicates=32)
+    check(high["statistic"] > low["statistic"],
+          "raising cache-side failed degrees raises the H4 contrast")
+    check(high["effect_gates"]["share_degree_ge_2_at_least_half"] is True,
+          "the cache-side degree>=2 share responds to cache rows")
+
+
+def test_h4_has_no_side_argument_and_no_best_side_path():
+    import inspect
+    params = list(inspect.signature(Q5E.stat_h4).parameters)
+    check("side" not in params,
+          "stat_h4 exposes no side argument to a production caller")
+    for name in ("h4_evaluate", "h4_null_statistic", "h4_effect_gates"):
+        check("side" not in inspect.signature(getattr(Q5E, name)).parameters,
+              f"{name} exposes no side argument")
+    source = open(Q5E.__file__, encoding="utf-8").read()
+    for banned in ("max(contrast", "best_side", "pooled_side",
+                   "side_pvalue", "per_side_p"):
+        check(banned not in source, f"no {banned} path exists")
+
+
+def test_control_b_h4_null_permutes_cache_side_only():
+    rows = _h4_rows([1, 4, 6, 2], [(9999, Q5E.GROUP_NOT_OPTIMAL),
+                                   (0, Q5E.GROUP_CERTIFIED)])
+    first = Q5E.h4_null_statistic(rows, 5)
+    again = Q5E.h4_null_statistic(rows, 5)
+    check(first == again, "the H4 null replicate is reproducible")
+    mamba_degrees = sorted(float(r["candidate_degree"]) for r in rows
+                           if r["side"] == Q5E.SIDE_MAMBA)
+    check(mamba_degrees == [0.0, 9999.0],
+          "the null never touches mamba-side degrees")
+    values = {Q5E.h4_null_statistic(rows, b) for b in range(40)}
+    check(len(values) >= 2, "the cache-side permutation actually varies")
+
+
+def test_h4_decisional_side_is_serialised():
+    result = Q5E.build_result(
+        qa={"ok": True}, m0={}, m1={}, m2={}, m3={"by_group": {}},
+        m4={"status": Q5E.M4_INPUT_ABSENT}, nulls={}, tests={},
+        decision={"decision": Q5E.DECISION_UNRESOLVED,
+                  "first_stopping_reason": Q5E.M4_INPUT_ABSENT})
+    check(result["h4_decisional_side"] == "cache",
+          "result records h4_decisional_side == cache")
+    check(result["m3"]["h4_decisional_side"] == "cache",
+          "the m3 block records it too")
+    check(result["m3"]["non_decisional_sides"] == [Q5E.SIDE_MAMBA],
+          "the mamba side is named as non-decisional")
+    config = Q5E.build_config(Q5E.MODE_DESIGN, "T")
+    check(config["h4_decisional_side"] == "cache",
+          "config records h4_decisional_side == cache")
+    check("decisional" in Q5E.CSV_SCHEMAS["m3_graph.csv"],
+          "m3_graph.csv serialises the decisional tag per row")
+
+
+def test_mamba_side_rows_are_tagged_non_decisional():
+    pre = (300, 300, 800)
+    post = (300, 800, 800)
+    mamba = BJ.RecordSequence("101", "DS1", "mamba", pre, post)
+    cache = BJ.RecordSequence("101", "DS1", "cache", pre, post)
+    rows = [row("101", mamba_row=i, cache_row=i, aami="N") for i in range(3)]
+    graph = Q5E.m3_graph(rows, {"101": mamba}, {"101": cache})
+    mamba_rows = [r for r in graph["rows"] if r["side"] == Q5E.SIDE_MAMBA]
+    cache_rows = [r for r in graph["rows"] if r["side"] == Q5E.SIDE_CACHE]
+    check(mamba_rows and all(r["decisional"] is False for r in mamba_rows),
+          "every mamba-side row serialises decisional == False")
+    check(cache_rows and all(r["decisional"] is True for r in cache_rows),
+          "every cache-side row serialises decisional == True")
+    check(graph["h4_decisional_side"] == Q5E.SIDE_CACHE,
+          "the graph report names the decisional side")
+
+
 def test_h4_statistic_and_decisional_side():
     rows = [
         {"record": "101", "side": Q5E.SIDE_CACHE, "row": 0,
@@ -472,9 +599,12 @@ def test_h4_statistic_and_decisional_side():
     ]
     check(abs(Q5E.stat_h4(rows) - 4.0) < 1e-12, "H4 median contrast")
     check(Q5E.H4_DECISIONAL_SIDE == Q5E.SIDE_CACHE,
-          "the registered decisional side is the cache side")
-    check(abs(Q5E.stat_h4(rows, side=Q5E.SIDE_MAMBA)) >= 0.0,
-          "the other side is measurable and reported")
+          "the registered decisional side is the cache side (Codex, 2026-08-12)")
+    by_side = Q5E.h4_descriptive_by_side(rows)
+    check(by_side[Q5E.SIDE_MAMBA]["decisional"] is False,
+          "the mamba contrast is reported but non-decisional")
+    check(by_side[Q5E.SIDE_CACHE]["decisional"] is True,
+          "the cache contrast is the decisional one")
     swapped = Q5E.stat_h4(rows, group_of={("101", 0): Q5E.GROUP_NOT_OPTIMAL,
                                           ("101", 1): Q5E.GROUP_CERTIFIED,
                                           ("101", 2): Q5E.GROUP_CERTIFIED})

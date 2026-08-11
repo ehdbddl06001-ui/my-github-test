@@ -452,6 +452,16 @@ Per row (both sides, reported separately):
 Compared across the four groups `CERTIFIED`, `NO_EDGE`, `NOT_OPTIMAL`,
 `AMBIGUOUS`.  Report median, p25, p75, and the full ECDF per group.
 
+**Both sides are reported; the cache side is H4-decisional.**  Confirmed by
+Codex on 2026-08-12, before any execution: H4 registers one family-level
+statistic and one p-value, so its side is fixed in advance rather than chosen
+from results.  Every mamba-side quantity here is descriptive and carries
+`decisional: false`; it never enters an H4 p-value, a `q99` comparison, an
+effect gate, the Holm adjustment, an association flag or the decision tree.  It
+is retained so the candidate graph keeps its symmetric diagnostic picture.
+Pooling the two sides, taking a max or min of the two contrasts, choosing the
+more favourable side, or emitting a per-side p-value are all forbidden.
+
 On the cache side, construct `CERTIFIED` from the non-null `cache_record_row` on
 each certified mamba row.  Create exactly one cache-side row per certified pair,
 attach class only from the frozen DS1 processed-class map, and assert uniqueness
@@ -900,7 +910,7 @@ Four hypothesis families, one family-level p-value each:
 | H1 | share of `2-5` sample `d_inf` among uncensored failed V / `NO_EDGE` rows, relative to the same share in non-V | Control A |
 | H2 | share of `NO_EDGE` failures positionally explained by replay-confirmed counterpart absence | Control C |
 | H3 | share of failures within 10 beats after a replay-confirmed anchor | Control C |
-| H4 | `median(candidate_degree \| NOT_OPTIMAL + AMBIGUOUS) - median(candidate_degree \| CERTIFIED)` | Control B |
+| H4 | **cache-side** `median(candidate_degree \| NOT_OPTIMAL + AMBIGUOUS) - median(candidate_degree \| CERTIFIED)`; the mamba-side contrast is reported but non-decisional | Control B, permuted within `record x cache-side` |
 
 **Holm** correction across exactly these four, at `alpha = 0.05`: sort the four
 p-values ascending and require `p_(k) <= 0.05 / (4 - k + 1)`, stopping at the
@@ -944,13 +954,16 @@ Each flag is evaluated **independently**.  All conditions of a flag must hold.
   samples;
 - Holm-adjusted H3 p-value significant.
 
-**`H4_ASSOCIATED`** — all of:
-- among `NOT_OPTIMAL` and `AMBIGUOUS` rows, the share with
+**`H4_ASSOCIATED`** — all of, **evaluated on cache-side rows only**:
+- among **cache-side** `NOT_OPTIMAL` and `AMBIGUOUS` rows, the share with
   `candidate_degree >= 2` is `>= 0.50`;
-- the candidate-degree effect versus certified rows exceeds Control B's `q99`;
-- the direction of `rr_pair_multiplicity` (higher in failed rows) **or**
-  `local_rr_sd` (lower in failed rows) agrees;
-- Holm-adjusted H4 p-value significant.
+- the **cache-side** candidate-degree effect versus **cache-side** certified
+  rows exceeds Control B's `q99`;
+- the direction of **cache-side** `rr_pair_multiplicity` (higher in failed
+  rows) **or** **cache-side** `local_rr_sd` (lower in failed rows) agrees;
+- Holm-adjusted H4 p-value significant, computed from the cache-side statistic.
+
+No mamba-side quantity may enter any of these four conditions.
 
 # Decision tree
 
@@ -1053,7 +1066,7 @@ no Korean, no typographic dashes, no unit glyphs.
 | 3 | record 208 failure raster | primary x = `mamba_record_row`, one row per class, mark = failed beat; raw-ordinal sensitivity shown separately |
 | 4 | run-length distribution | primary mamba-row histogram over buckets `1`, `2`, `3-9`, `>=10`, plus median/p90/max; raw-ordinal sensitivity overlaid or panelled |
 | 5 | nearest-distance histogram | fixed bins `0-1`, `2-5`, `6-20`, `21-100`, `>100`; censored and `CACHE_ENDPOINT_ZERO` rows in separate descriptive bars |
-| 6 | candidate-degree violin + ECDF | groups CERTIFIED / NO_EDGE / NOT_OPTIMAL / AMBIGUOUS |
+| 6 | candidate-degree violin + ECDF | groups CERTIFIED / NO_EDGE / NOT_OPTIMAL / AMBIGUOUS, one panel per side; the cache panel is labelled `H4 decisional` and the mamba panel `descriptive, non-decisional` |
 | 7 | anchor-aligned failure probability curve | x = beat offset `-10 … +10` from anchor, y = failure share, with the Control C band |
 
 Figure 7 is produced only when M4.0 passes; otherwise the bundle records its
@@ -1090,7 +1103,9 @@ absence and the reason.
   "m2": {"adjacency_primary": "mamba_record_row",
          "runs": {}, "raw_ordinal_sensitivity": {},
          "v_neighbourhood_pm1": {}, "v_neighbourhood_pm10": {}},
-  "m3": {"by_group": {}},
+  "m3": {"by_group": {}, "h4_decisional_side": "cache",
+         "non_decisional_sides": ["mamba"]},
+  "h4_decisional_side": "cache",
   "m4": {"status": "OK | DIAGNOSTIC_INPUT_ABSENT", "feasibility": {},
          "anchors": 0, "offset_curve": {}},
   "m5": {"strata_present": ["class", "reason", "record",
@@ -1114,7 +1129,7 @@ names:
 - `m0_record_class.csv` — `record, stratum, class, side, denominator, failures, rate`
 - `m0_runs.csv` — `record, adjacency_definition, run_start, run_length, classes, reasons, decisional`
 - `m1_distance.csv` — `record, cache_record_row, processed_class, reason, d_inf, bin, censored, cache_endpoint_zero, included_in_distance_gate`
-- `m3_graph.csv` — `record, side, row, group, candidate_degree, usable_edges, has_forced_rank, rr_pair_multiplicity, local_rr_sd`
+- `m3_graph.csv` — `record, side, row, group, decisional, candidate_degree, usable_edges, has_forced_rank, rr_pair_multiplicity, local_rr_sd`; `decisional` is true only on the cache side
 - `m4_anchors.csv` — `record, anchor_ordinal, anchor_sample, anchor_kind, adjacency_definition, offset, mapped_mamba_record_row, failed, decisional` (absent when M4 stops)
 - `null_summary.json` — per control, per statistic: full quantiles, `q95`, `q99`, seed, replicate count
 
@@ -2012,17 +2027,39 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
   its file hashes to `6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226`
   — the registered producing-code SHA-256.
 
-  *One under-specification, resolved narrowly and flagged for Codex.*  The
-  Multiplicity table states H4 as a single median contrast, while M3 measures
-  `candidate_degree` **per side**.  The spec does not name the decisional side.
-  Both sides are computed and reported; `H4_DECISIONAL_SIDE` is registered as
-  the **cache** side, on the narrowest reading consistent with the rest of the
-  document: every other decisional population here is cache-side (M1's
-  population and H1's gate population are stated as such), and Q4 exists only
-  to make the cache-side `CERTIFIED` group well defined for this comparison.
-  This is an implementation registration, not a design change, and it is the
-  one item Codex should confirm before execution approval — no unconfirmed
-  choice can reach a result, because execution is a separate approval.
+  *One under-specification, raised and now closed — **Codex confirmed,
+  2026-08-12**.*  The Multiplicity table states H4 as a single median contrast,
+  while M3 measures `candidate_degree` **per side**, and the spec did not name
+  the decisional side.  Codex fixed `H4_DECISIONAL_SIDE = cache` as a
+  pre-execution clarification: no result had been produced, no new statistic
+  was introduced, and no side was chosen from two computed outcomes.
+
+  The registered grounds are:
+
+  - H4 registers exactly one family-level statistic and one p-value, so its
+    side has to be fixed before the run;
+  - in Q5-E's positional failure audit the cache is the detector-row side;
+  - Q4 defines cache-side `CERTIFIED` one-to-one and requires the four
+    cache-side groups to form a disjoint, exhaustive partition;
+  - fixing it in advance removes any possibility of preferring whichever of two
+    contrasts turns out more favourable;
+  - the mamba side is still reported, to preserve the symmetric diagnostic
+    picture of the candidate graph, but never decides.
+
+  An earlier draft of this entry justified the choice as "every other
+  decisional population here is cache-side".  **That was inaccurate and is
+  withdrawn**: M2 and H3 are decisional on `mamba_record_row`.  The reason is
+  specific to H4, and is the list above.
+
+  Implementation consequence: the observed contrast, the Control B null, the
+  raw p-value, the `q99` comparison, the H4 p-value entering `p_holm_4family`,
+  the `candidate_degree >= 2` share and the `rr_pair_multiplicity` /
+  `local_rr_sd` direction conditions are **all** cache-side and all read the
+  same constant.  `stat_h4()` takes no `side` argument at all, so a production
+  caller cannot move it; the other side is reachable only through the private
+  descriptive helper.  Mamba-side rows serialise `decisional: false` in
+  `m3_graph.csv` and in the result JSON.  There is no pooled, max/min or
+  best-side path, and a test asserts none exists by name.
 
   *Engineering closures carried over from Q5-D.*  Per-stage dependency
   declaration with `pyarrow` up front rather than at bundle-write time;

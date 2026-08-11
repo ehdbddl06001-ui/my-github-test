@@ -199,14 +199,20 @@ REASON_TO_GROUP: Dict[str, str] = {
 }
 H4_DEGREE_MIN = 2
 
-#: **Registered by the implementation, flagged for Codex confirmation.**  The
-#: Multiplicity table states H4 as a single median contrast but M3 computes
-#: `candidate_degree` per side.  The narrowest reading consistent with the rest
-#: of the spec is the cache side: every other decisional population here is
-#: cache-side (M1's population and H1's gate population are stated as such),
-#: and Q4 exists *only* to make the cache-side `CERTIFIED` group well defined
-#: for this comparison.  Both sides are measured and reported; only this one is
-#: decisional.  See the module docstring of :func:`stat_h4`.
+#: **Confirmed by Codex, 2026-08-12, before any execution.**  H4 registers one
+#: family-level statistic and one p-value, so the side has to be fixed before
+#: the run rather than chosen from results.  It is the **cache** side because:
+#: in Q5-E's positional failure audit the cache is the detector-row side; Q4
+#: defines cache-side `CERTIFIED` one-to-one and requires the four cache-side
+#: groups to form a disjoint, exhaustive partition; and fixing it in advance
+#: removes any possibility of picking the more favourable of two contrasts
+#: after the fact.  The mamba side is still measured and reported, to preserve
+#: the symmetric diagnostic picture of the candidate graph, but it is
+#: descriptive and never enters a p-value, a q99 comparison, an effect gate,
+#: Holm, an association flag or the decision tree.
+#:
+#: Note this is *not* "every decisional population is cache-side": M2 and H3
+#: are decisional on `mamba_record_row`.  The reason is specific to H4.
 H4_DECISIONAL_SIDE = SIDE_CACHE
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -433,7 +439,8 @@ def module_capabilities() -> Tuple[str, ...]:
     """
     return ("run_audit", "verify_qa_targets", "m0_report", "m1_distances",
             "m2_report", "m3_graph", "m4_feasibility_gate", "m4_anchors",
-            "run_null_family", "holm_4family", "evaluate_flags", "decide",
+            "run_null_family", "h4_evaluate", "h4_descriptive_by_side",
+            "holm_4family", "evaluate_flags", "decide",
             "build_result", "write_bundle", "assert_implementation_only",
             "stage_should_run", "EXECUTION_APPROVAL_TOKEN")
 
@@ -1156,7 +1163,12 @@ def m3_graph(rows: Sequence[Mapping[str, object]],
                 if group is None:
                     continue
                 per_row.append({"record": record, "side": side, "row": index,
-                                "group": group, **values})
+                                "group": group,
+                                # The mamba side is descriptive: it never
+                                # reaches an H4 p-value, q99, effect gate,
+                                # Holm value, flag or the decision tree.
+                                "decisional": side == H4_DECISIONAL_SIDE,
+                                **values})
     by_group = {
         side: {group: _summarise_group(
             [r for r in per_row if r["side"] == side and r["group"] == group])
@@ -1164,7 +1176,9 @@ def m3_graph(rows: Sequence[Mapping[str, object]],
         for side in SIDES}
     return {"rows": per_row, "by_group": by_group,
             "partition_ok": partition_ok, "problems": problems,
-            "decisional_side": H4_DECISIONAL_SIDE}
+            "h4_decisional_side": H4_DECISIONAL_SIDE,
+            "non_decisional_sides": [s for s in SIDES
+                                     if s != H4_DECISIONAL_SIDE]}
 
 
 def _summarise_group(entries: Sequence[Mapping[str, object]]
@@ -1604,28 +1618,124 @@ def stat_h3(failures_after_anchor: Sequence[Tuple[str, int]],
                   len(set(all_failures)))
 
 
-def stat_h4(rows: Sequence[Mapping[str, object]],
-            side: str = H4_DECISIONAL_SIDE,
-            group_of: Optional[Mapping[Tuple[str, int], str]] = None) -> float:
-    """H4 — `median(degree | NOT_OPTIMAL + AMBIGUOUS) - median(degree | CERTIFIED)`.
+def _degree_median_contrast(
+        rows: Sequence[Mapping[str, object]], side: str,
+        group_of: Optional[Mapping[Tuple[str, int], str]] = None) -> float:
+    """`median(degree | NOT_OPTIMAL + AMBIGUOUS) - median(degree | CERTIFIED)`.
 
-    ``side`` defaults to the registered decisional side.  The spec states H4 as
-    one median contrast while M3 measures `candidate_degree` per side; the
-    narrowest consistent reading is the cache side, and both sides are reported
-    so the difference is visible rather than hidden.  ``group_of`` is injected
-    so Control B can move the status label without touching the degree.
+    Private.  Production never selects the side here: :func:`stat_h4` is the
+    only decisional caller and it hard-wires :data:`H4_DECISIONAL_SIDE`.  The
+    ``side`` parameter exists so the other side can be *reported*, never so a
+    caller can choose which contrast decides.
     """
     selected = [r for r in rows if str(r["side"]) == side]
+
     def _group(entry: Mapping[str, object]) -> str:
         if group_of is None:
             return str(entry["group"])
         return group_of.get((str(entry["record"]), int(entry["row"])),
                             str(entry["group"]))
+
     failed = [float(r["candidate_degree"]) for r in selected
               if _group(r) in (GROUP_NOT_OPTIMAL, GROUP_AMBIGUOUS)]
     certified = [float(r["candidate_degree"]) for r in selected
                  if _group(r) == GROUP_CERTIFIED]
     return median(failed) - median(certified)
+
+
+def stat_h4(rows: Sequence[Mapping[str, object]],
+            group_of: Optional[Mapping[Tuple[str, int], str]] = None) -> float:
+    """H4 — the registered cache-side median contrast.
+
+    **There is no ``side`` argument by design.**  H4 registers one
+    family-level statistic and one p-value, and Codex fixed the side to
+    :data:`H4_DECISIONAL_SIDE` before any execution, so a production caller
+    must not be able to move it.  ``group_of`` is injected so Control B can
+    move the status label without ever touching the degree.
+    """
+    return _degree_median_contrast(rows, H4_DECISIONAL_SIDE, group_of)
+
+
+def h4_descriptive_by_side(rows: Sequence[Mapping[str, object]]
+                           ) -> Dict[str, Dict[str, object]]:
+    """Both sides' contrasts, each explicitly tagged with its decisional status.
+
+    The mamba side is reported to preserve the symmetric diagnostic picture of
+    the candidate graph.  It is `decisional: false` and never reaches a
+    p-value, a q99 comparison, an effect gate, Holm, a flag or the tree.
+    """
+    return {side: {"median_contrast": _degree_median_contrast(rows, side),
+                   "decisional": side == H4_DECISIONAL_SIDE}
+            for side in SIDES}
+
+
+def h4_effect_gates(rows: Sequence[Mapping[str, object]],
+                    q99: float, observed: Optional[float] = None
+                    ) -> Dict[str, bool]:
+    """The registered `H4_ASSOCIATED` effect conditions, cache-side only."""
+    selected = [r for r in rows if str(r["side"]) == H4_DECISIONAL_SIDE]
+    failed = [r for r in selected
+              if str(r["group"]) in (GROUP_NOT_OPTIMAL, GROUP_AMBIGUOUS)]
+    certified = [r for r in selected if str(r["group"]) == GROUP_CERTIFIED]
+    share = _ratio(sum(1 for r in failed
+                       if float(r["candidate_degree"]) >= H4_DEGREE_MIN),
+                   len(failed))
+    value = stat_h4(rows) if observed is None else float(observed)
+    mult_up = (median([float(r["rr_pair_multiplicity"]) for r in failed]) >
+               median([float(r["rr_pair_multiplicity"]) for r in certified]))
+    sd_down = (median([float(r["local_rr_sd"]) for r in failed]) <
+               median([float(r["local_rr_sd"]) for r in certified]))
+    return {
+        "share_degree_ge_2_at_least_half": bool(share >= EFFECT_SHARE_MIN),
+        "exceeds_control_b_q99": bool(value > float(q99)),
+        "direction_multiplicity_or_variability": bool(mult_up or sd_down),
+    }
+
+
+def h4_null_statistic(rows: Sequence[Mapping[str, object]], replicate: int
+                      ) -> float:
+    """One Control B replicate for H4, permuted on the cache side only.
+
+    Control B is registered per ``record x side``; H4 is decided on the cache
+    side, so its null permutes the status vector within each
+    ``record x cache-side`` block and leaves every degree where it is.
+    """
+    blocks: Dict[Tuple[str, str], List[str]] = {}
+    order: Dict[Tuple[str, str], List[Tuple[str, int]]] = {}
+    for entry in rows:
+        if str(entry["side"]) != H4_DECISIONAL_SIDE:
+            continue
+        key = (str(entry["record"]), H4_DECISIONAL_SIDE)
+        blocks.setdefault(key, []).append(str(entry["group"]))
+        order.setdefault(key, []).append(
+            (str(entry["record"]), int(entry["row"])))
+    permuted = control_b_status_permutation(blocks, replicate)
+    group_of: Dict[Tuple[str, int], str] = {}
+    for key, labels in permuted.items():
+        for position, label in zip(order[key], labels):
+            group_of[position] = label
+    return stat_h4(rows, group_of=group_of)
+
+
+def h4_evaluate(rows: Sequence[Mapping[str, object]],
+                replicates: int = N_NULL_REPLICATES) -> Dict[str, object]:
+    """The complete H4 family: observed, null, p, q99 and effect gates.
+
+    One function so the decisional side has exactly one source.  Every value
+    here is cache-side; the mamba-side contrast is reported alongside as
+    `decisional: false` and is not an input to any of it.
+    """
+    observed = stat_h4(rows)
+    null = run_null_family(CONTROL_B, lambda b: h4_null_statistic(rows, b),
+                           replicates=replicates)
+    summary = null_summary(null)
+    gates = h4_effect_gates(rows, summary["q99"], observed)
+    return {"decisional_side": H4_DECISIONAL_SIDE,
+            "statistic": observed,
+            "p": permutation_p(observed, null),
+            "q99": summary["q99"], "null_summary": summary,
+            "effect_gates": gates,
+            "by_side_descriptive": h4_descriptive_by_side(rows)}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1771,7 +1881,10 @@ def build_result(qa: Mapping[str, object], m0: Mapping[str, object],
         "m2": dict(m2),
         "m3": {"by_group": m3.get("by_group", {}),
                "partition_ok": m3.get("partition_ok"),
-               "decisional_side": m3.get("decisional_side")},
+               "h4_decisional_side": H4_DECISIONAL_SIDE,
+               "non_decisional_sides": [s for s in SIDES
+                                        if s != H4_DECISIONAL_SIDE]},
+        "h4_decisional_side": H4_DECISIONAL_SIDE,
         "m4": dict(m4),
         "m5": {"strata_present": ["class", "reason", "record", "count_stratum",
                                   "record_116", "record_208", "pooled"]},
@@ -1806,9 +1919,9 @@ CSV_SCHEMAS: Dict[str, Tuple[str, ...]] = {
     "m1_distance.csv": ("record", "cache_record_row", "processed_class",
                         "reason", "d_inf", "bin", "censored",
                         "cache_endpoint_zero", "included_in_distance_gate"),
-    "m3_graph.csv": ("record", "side", "row", "group", "candidate_degree",
-                     "usable_edges", "has_forced_rank", "rr_pair_multiplicity",
-                     "local_rr_sd"),
+    "m3_graph.csv": ("record", "side", "row", "group", "decisional",
+                     "candidate_degree", "usable_edges", "has_forced_rank",
+                     "rr_pair_multiplicity", "local_rr_sd"),
     "m4_anchors.csv": ("record", "anchor_ordinal", "anchor_sample",
                        "anchor_kind", "adjacency_definition", "offset",
                        "mapped_mamba_record_row", "failed", "decisional"),
