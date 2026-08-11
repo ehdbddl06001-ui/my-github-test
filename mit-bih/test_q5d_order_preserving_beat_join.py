@@ -2600,6 +2600,9 @@ def test_notebook_cells_run_in_order():
           f"no cell touches BJ before the import cell ({import_at}): {early}")
 
     # Names a cell assigns at top level, in order, so later cells can use them.
+    # Helper *functions* are watched too: cell 4 defines `stage_should_run`,
+    # and a run that reaches a stage cell without it dies on a NameError that
+    # reads like a broken notebook rather than a skipped cell.
     import re
     defined = set()
     problems = []
@@ -2607,20 +2610,56 @@ def test_notebook_cells_run_in_order():
                "DRIVE", "ASSET_MITDB", "ASSET_CACHE_V10", "ASSET_V10_RESULTS",
                "ASSET_MAMBA_CANDIDATES", "RUN_DIR", "OPEN_REGISTERED_DATA",
                "DS1_FROZEN_BUNDLE", "NEED_TESTS", "SHARD_DIR",
-               "PRIOR_SHARD_DIR", "PRIOR_BUNDLE", "PRIOR_CODE_SHA")
+               "PRIOR_SHARD_DIR", "PRIOR_BUNDLE", "PRIOR_CODE_SHA",
+               "stage_should_run", "need_results", "have_results",
+               "load_json", "load_csv", "bundle_path")
+
+    helpers = {"stage_should_run", "need_results", "have_results",
+               "load_json", "load_csv", "bundle_path"}
+
+    def assigns(name, source):
+        return bool(re.search(rf"^\s*{name}\s*=", source, re.M)
+                    or re.search(rf"^\s*def\s+{name}\s*\(", source, re.M))
+
+    def uses(name, source):
+        # A helper counts as used only when it is *called*.  Naming one inside
+        # a printed instruction is not a use, and must not be mistaken for one.
+        pattern = rf"\b{name}\s*\(" if name in helpers else rf"\b{name}\b"
+        return bool(re.search(pattern, source))
+
     for index, source in code:
         used = {w for w in watched
-                if re.search(rf"\b{w}\b", source)
-                and not re.search(rf"^\s*{w}\s*=", source, re.M)
+                if uses(w, source)
+                and not assigns(w, source)
                 and f'globals().get("{w}"' not in source}
         for name in sorted(used - defined):
             problems.append((index, name))
         for name in watched:
-            if re.search(rf"^\s*{name}\s*=", source, re.M):
+            if assigns(name, source):
                 defined.add(name)
     check(not problems,
-          f"every referenced setting is assigned by an earlier cell: "
+          f"every referenced setting and helper is defined by an earlier cell: "
           f"{problems[:6]}")
+
+    # The order itself is printed, because a skipped cell is invisible
+    # otherwise.  This is the one that actually bit: cell 4 was left out of a
+    # hand-written run order and the next stage died on a NameError.
+    joined = "\n".join(s for _i, s in code)
+    check("CELL_ORDER" in joined and '"DS1_GATE":' in joined
+          and "CELL_ORDER.get(MODE" in joined,
+          "the config cell prints the cell order for the selected MODE")
+    check("셀 4 는 stage_should_run" in joined,
+          "and names the cell that defines the stage helper")
+
+    # Matplotlib in Colab has no Hangul glyphs, so axis text stays ASCII;
+    # prose `print` output is unaffected and stays Korean.
+    axis_text = re.compile(
+        r'(set_title|set_xlabel|set_ylabel|suptitle|label\s*=)\s*\(?\s*'
+        r'[fr]?["\'][^"\']*[가-힣]')
+    korean_axes = [ln.strip() for _i, s in code for ln in s.splitlines()
+                   if axis_text.search(ln)]
+    check(not korean_axes,
+          f"no Hangul reaches a matplotlib label: {korean_axes[:3]}")
 
 
 def test_notebook_refuses_a_stale_module():

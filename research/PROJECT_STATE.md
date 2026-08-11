@@ -364,6 +364,40 @@ gate이고, RR join은 그 결과가 `SOURCE_REPLAY_INCOMPLETE` 일 때만 **별
 진행하는 단일 사전등록 경로다 — 이번 인수검사에서 join은 설계·구현·실행 어느
 것도 하지 않았다. Drive 변경 0건, 확률 NPZ 다운로드 0건, DS2 label 열람 0건.
 
+### DS1_GATE (2026-08-11) — **판정 `JOIN_UNRESOLVED`, gate 5/13**
+
+beat join 이 실측으로 끝났다. first stopping reason `3_overall_coverage`,
+failed leg `LEG2_POSITIONAL_JOIN`. null 은 3 family × 10,000 완주했고 서로 다른
+code sha 사이에서 **bitwise 재현**됐다(세 family + `J_null_max`, 각 10000/10000).
+**규칙은 반증되지도 자격을 얻지도 못했다.** `training_performed` ·
+`model_scored` · `v10_probability_opened` · `association_performed` 전부 false.
+
+- overall coverage **0.7595**(≥0.95 미달) · N/S/V **0.8097 / 0.7341 / 0.1578**
+  (각 ≥0.90 미달) · class balance 0.2077 · record balance 0.4238.
+- **정밀도는 거의 완벽하다** — class agreement 0.99990(최악 class 0.99832).
+  틀린 짝을 만드는 게 아니라 **못 잇는다**.
+- **null 을 향한 세 gate 가 한 방향이다.** gate 9(`J_min` 0.15751 > q99
+  0.15618) 통과, gate 10 `signal_to_null` **1.0383**(≥5.0 미달), gate 11
+  bootstrap 95% CI **[-0.0526, 0.1323]** 로 0 을 걸침. gate 9 의 유의성은 DS1 을
+  이루는 22개 record 표본 불확실성을 넣으면 남지 않는다.
+- **gate 11 은 처음에 구현 결함으로 통과했었다.** `record_cluster_bootstrap` 이
+  `J_min` 이 아니라 pooled certification rate 를 재표집해 `[0.4824, 0.7195]` 를
+  보고했고, 그 값은 gate 9 를 **뒷받침했다**. 수정 후 결론이 뒤집혔다. 첫 실행의
+  shard 와 bundle 은 삭제하지 않고 `SUPERSEDED.json`
+  (`SUPERSEDED_GATE11_IMPLEMENTATION_DEFECT` + 생산 code sha `4a3de5e8…`)을
+  달아 보존했다.
+- **실패는 한 종류가 아니다**: `NO_CANDIDATE_EDGE` 13,716(56.4%) ·
+  `EDGE_IN_NO_MAXIMUM_MATCHING` 9,887(40.6%) · `AMBIGUOUS_RANK_CLASS` 738(3.0%).
+  지배적 실패는 모호성이 아니라 **후보 간선의 부재**다.
+- 사전 등록한 층이 갈라졌다: equal_count 17 record **0.8560** 대
+  mismatched_count 5 record **0.4591**. **다만 equal-count 층도 0.95 에
+  미달이므로 불일치 record 를 빼도 규칙은 구제되지 않는다.**
+- **기전은 아직 모른다.** Decision log 의 PVC 가설은 산술적으로 불충분하다 —
+  record 208 은 84.3% 가 실패했는데 V 가 84% 인 record 는 없고, 개수 결손
+  −25 행에 비해 실패는 6,648 행(266배)이다. 경쟁 가설 4개와 진단 설계 요청을
+  `research/HANDOFF_2026-08-11_Q5D_v_class_join_failure_to_codex.md` 로 Codex 에
+  넘겼다. **tolerance 는 넓히지 않았다** — 결과를 본 뒤의 완화다.
+
 ## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 
 residual CNN 경로가 닫힌 뒤의 다음 단계는 **새 모델이 아니라 실패 지도**다.
