@@ -1568,3 +1568,106 @@ Required outputs:
   decision, is recorded in advance — the decision tree is reapplied to the new
   run and whatever it returns is the result.  DS2, V10 probabilities and any
   association analysis remain sealed throughout.
+
+  *DS1 gate, rerun under the corrected module — measured result.*
+
+  The null was regenerated in full under code
+  `6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226`, in a
+  shard directory keyed by that hash, with the superseded run left in place
+  and labelled.  3 families x 10,000 replicates, 100 shards, plus the 2,000
+  record-cluster bootstrap.
+
+  **Deterministic reproduction is measured, not assumed.**  The prior and new
+  shard sets cover the same replicate ranges and every array is bitwise
+  identical across the two code hashes:
+
+  | array | identical | n |
+  |---|---|---|
+  | `wrong_record` | True | 10000 / 10000 |
+  | `order_shuffle` | True | 10000 / 10000 |
+  | `circular_shift` | True | 10000 / 10000 |
+  | `j_null_max` | True | 10000 / 10000 |
+
+  That is the expected consequence of the bootstrap sitting off the null
+  generation path, and it was checked rather than argued.
+
+  **Gate 11, corrected.**  Statistic recorded in the bundle as "min over N/S/V
+  of certified correct recall, over record-cluster resamples, minus
+  q95(J_null_max)".
+
+  | | value |
+  |---|---|
+  | point (`J_min_TRUE - q95`) | 0.005813953488372103 |
+  | 95% CI | [-0.05260925120498404, 0.13225229746939302] |
+  | point inside its own interval | True |
+  | gate 11 | **FAIL** — the interval contains 0 |
+
+  The defective implementation reported `[0.48239100367683824,
+  0.7195216751797353]`.  The correction does not merely tidy a number: the
+  old interval sat far above zero and so **corroborated gate 9**, while the
+  registered statistic does not.  This was a bug that argued for the rule.
+
+  **Only gate 11 moved.**  Every other gate's value is unchanged, and the
+  before/after table was built from the two stored `decision.json` files
+  rather than from memory: `changed_gates = ['11_bootstrap_ci_lower']`,
+  `gates_passed 6 -> 5`, decision `JOIN_UNRESOLVED -> JOIN_UNRESOLVED`, first
+  stopping reason `3_overall_coverage -> 3_overall_coverage`.
+
+  **Registered decision, from reapplying the decision tree:**
+
+  - `decision`: `JOIN_UNRESOLVED`
+  - `first_stopping_reason`: `3_overall_coverage`
+  - `failed_leg`: `LEG2_POSITIONAL_JOIN`
+  - gates: 5 of 13
+  - `training_performed`, `model_scored`, `v10_probability_opened`,
+    `association_performed`: all False
+
+  **The three null-facing gates now agree.**  Gate 9 (`J_min_TRUE > q99`)
+  passes, treating the null quantile as fixed and TRUE as a point.  Gate 10
+  fails at `signal_to_null = 1.0383`.  Gate 11 fails with an interval
+  straddling zero.  Read together: the apparent significance in gate 9 does
+  not survive accounting for which 22 records happen to constitute DS1.  Gates
+  10 and 11 exist for exactly that reason, and the pair of them is what the
+  defective bootstrap had been hiding.
+
+  **What the failure is made of.**  All 24,341 unmatched or dropped beats
+  failed in `LEG2_POSITIONAL_JOIN`:
+
+  | reason | count | share |
+  |---|---|---|
+  | `LEG2_NO_CANDIDATE_EDGE` | 13716 | 56.4% |
+  | `LEG2_EDGE_IN_NO_MAXIMUM_MATCHING` | 9887 | 40.6% |
+  | `LEG2_AMBIGUOUS_RANK_CLASS` | 738 | 3.0% |
+
+  The dominant failure is **no candidate edge at all** — no mamba beat within
+  the registered tolerance on both RR coordinates — not ambiguity.  Genuine
+  ambiguity is 3.0%.  The forced-edge certification rule's conservatism is
+  therefore not the binding constraint; candidate generation is.
+
+  **The pre-registered strata separate cleanly**, which is what stratifying
+  was for:
+
+  | stratum | records | cache rows | certified | ambiguous | coverage |
+  |---|---|---|---|---|---|
+  | equal_count | 17 | 38261 | 32751 | 157 | 0.8559891273097933 |
+  | mismatched_count | 5 | 12290 | 5642 | 305 | 0.4590724165988609 |
+
+  The five count-mismatched records recover roughly half as well as the
+  seventeen equal-count ones.  Note the equal-count stratum is still 0.856
+  against a 0.95 gate: excluding the mismatched records would not rescue the
+  rule, so this is not a defect confined to the ledger's known discrepancies.
+
+  Worst records: 208 at 0.15746500777604977 and 116 at 0.5473508552357113,
+  both count-mismatched.  Record 208's coverage and the V-class coverage of
+  0.15776955602537 are close, and the records at the bottom of the per-record
+  chart are PVC-rich ones.  That is consistent with the mechanism hypothesis
+  already recorded — and it remains a hypothesis: it was not measured, no
+  per-class detector-offset analysis was run, and **the tolerance was not
+  widened**.  Widening it now would be relaxation after seeing results.
+
+  The superseded artifacts remain on Drive, unmodified, each carrying a
+  `SUPERSEDED.json` naming
+  `SUPERSEDED_GATE11_IMPLEMENTATION_DEFECT` and the producing code hash
+  `4a3de5e861d9d371439247924a19e81acb3762e065017d6adb1f062a95e054d7`.  DS2
+  per-beat labels, V10 probabilities and association analysis were not opened
+  at any point in either run.
