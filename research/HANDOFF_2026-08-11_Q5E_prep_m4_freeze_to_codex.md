@@ -124,7 +124,31 @@ M4.0 세 조건의 현재 상태:
       MECHANISM_UNRESOLVED_INPUT_ABSENT 분기를 기본 경로로 재작성해야 한다.
   (c) 다른 안.
 
-(b) 를 고를 경우 Control C 와 H2/H3 관련 절 전체가 정리 대상이라는 점을 유의하라.
+C-1. 판단 전에 네가 #101 에서 확정한 Q3 를 다시 읽어라.
+     Q3 원문은 "The family is always H1-H4 … This conservative convention prevents
+     the multiplicity family from changing conditionally after M4 feasibility is
+     known" 이다. 그런데 PREP 가 방금 M4 feasibility 를 부분적으로 알렸다 —
+     조건 2 미충족. 이 시점에 H2·H3 를 설계에서 들어내는 (b) 는 **Q3 가 막으려던
+     "feasibility 를 안 뒤 multiplicity family 를 바꾸는 것"과 구조적으로 같다.**
+     (b) 를 고르려면 "M0~M4 수치를 하나도 보지 않았으므로 사후 조정이 아니라 측정 전
+     사전등록 개정"이라는 논증을 Decision log 에 **명시**하라. 조용히 넘어가면
+     자기 결정을 뒤집는 것이 된다.
+     반대로 (a) 는 Q3 가 이미 실패 경로를 정의해 뒀다 — M4 가 런타임에 불가로
+     판명되면 H2/H3 는 UNEVALUABLE, Holm 안에서만 p=1.0, 구조 변경 0.
+     이 비대칭을 근거에 포함해서 판단하라.
+
+C-2. (b) 를 고를 경우 개정 대상은 다음 전부다(명세 grep 실측, 18개 절):
+       Fixed question · Competing hypotheses 표 · M0 · M1(censoring 이 H3 판정에
+       걸린다) · M2 · M4 절 전체(PREP_M4_ASSET_FREEZE · M4.0 · M4.1) ·
+       Negative controls(Control C) · Multiplicity 표 ·
+       Preregistered association flags(H2_ASSOCIATED · H3_ASSOCIATED) ·
+       Decision tree(분기 2~4) · Visualization plan(figure 7 anchor-aligned curve) ·
+       Machine-readable result schema(m4 블록 · tests.H2 · tests.H3) ·
+       Implementation checklist · Decision log
+     그리고 **이미 확정된 네 결정 중 Q1 · Q3 · Q5 가 H3/anchor 를 참조하므로 네
+     자신의 결정 세 개도 연쇄 개정 대상이다.** 한 군데라도 남으면 실행 시점에
+     정의 없는 값이 튀어나온다. 이 사실 자체가 (b) 가 깔끔한 절단이 아니라는
+     신호이므로 판단 근거에 포함하라.
 
 ──────────────────────────────────────────────────────────────────────
 D — 동결 상수를 명세 본문으로 승격할 것인가
@@ -154,6 +178,11 @@ E — 추가 측정 제안 하나 (승인 필요, 아직 하지 않았다)
 주의: 이번 PREP 의 허용 열람은 rr 의 shape·dtype 까지였다. rr 의 **값** 비교는
 허용 범위 밖이므로 하지 않았다. y · DS2 label · 확률은 어차피 봉인이고 이 비교는
 그것들을 건드리지 않는다.
+실무 참고: 이 비교는 **등록 runtime 이 필요 없다.** 이미 저장된 배열을 읽을 뿐이라
+numpy 버전과 무관하고, record 당 n×7 float32(약 70 KB)라 44 record 가 초 단위다.
+따라서 M4 를 유지하든 포기하든 붙일 수 있는 저비용 보강이며, C 결정과 독립적으로
+승인 여부를 정해도 된다.
+
 → 이 비교를 승인할지, 승인한다면 별도 preflight 로 할지 M4 구현에 포함할지 정하라.
 
 ──────────────────────────────────────────────────────────────────────
@@ -339,6 +368,45 @@ DS1 22 record 의 등록 개수를 재현해 보여야 하고, 이번 preflight 
 어느 쪽이든 명세 본문 수술이 따라온다. A·B·D 는 절차 정리에 가깝지만 **C 는 진단의
 범위를 정한다.**
 
+### 4.1 (b) 안은 Codex 자신의 Q3 결정과 부딪힌다 — 판단 전에 읽어야 한다
+
+`#101` 에서 확정된 Q3 원문:
+
+> The family is always H1-H4.  When M4 is unavailable, H2 and H3 remain explicitly
+> `UNEVALUABLE`; assign each p=1.0 only inside the Holm calculation. …
+> **This conservative convention prevents the multiplicity family from changing
+> conditionally after M4 feasibility is known.**
+
+그런데 `PREP_M4_ASSET_FREEZE` 가 방금 **M4 feasibility 를 부분적으로 알렸다** —
+조건 2 미충족. 이 시점에 H2·H3 를 설계에서 들어내는 **(b) 는 Q3 가 막으려던
+"feasibility 를 안 뒤 multiplicity family 를 조건부로 바꾸는 것"과 구조적으로 같다.**
+
+반론 여지는 있다. M0~M4 수치는 하나도 열지 않았고 봉인이 온전하므로, (b) 를
+"사후 조정이 아니라 **측정 전 사전등록 개정**"으로 규정할 수 있다. 다만 그
+논증은 Decision log 에 **명시적으로** 남겨야 한다 — 조용히 넘어가면 자기 결정을
+뒤집는 것이 된다.
+
+반대로 **(a) 는 Q3 가 이미 실패 경로를 정의해 뒀다.** M4 가 런타임에 불가로
+판명되면 H2/H3 는 `UNEVALUABLE`, Holm 안에서만 p=1.0 이고 **구조 변경이 0** 이다.
+이 비대칭은 (a) 쪽 실질 논거이므로 판단 근거에 포함되어야 한다.
+
+### 4.2 (b) 의 연쇄 범위 — 명세 grep 실측 18개 절
+
+인계 초안은 "Control C 와 H2/H3 관련 절"이라고만 적었으나, `H2`·`H3`·`Control C`·
+`anchor` 참조를 절 단위로 세면 범위가 훨씬 넓다:
+
+| 구분 | 개정 대상 |
+|---|---|
+| 질문·가설 | Fixed question · Competing hypotheses 표 |
+| 측정 | M0 · M1(censoring 이 H3 판정에 걸린다) · M2 · M4 절 전체(`PREP_M4_ASSET_FREEZE` · M4.0 · M4.1) |
+| 통계 | Negative controls(Control C) · Multiplicity 표 · Preregistered association flags(`H2_ASSOCIATED` · `H3_ASSOCIATED`) |
+| 판정·산출 | Decision tree(분기 2~4) · Visualization plan(figure 7 anchor-aligned curve) · Machine-readable result schema(`m4` 블록 · `tests.H2` · `tests.H3`) |
+| 기록 | Implementation checklist · Decision log |
+| **확정된 결정** | **Q1 · Q3 · Q5 가 H3/anchor 를 참조 → Codex 자신의 결정 세 개도 연쇄 개정 대상** |
+
+마지막 행이 신호다. **(b) 는 깔끔한 절단이 아니다.** 한 군데라도 남으면 실행 시점에
+정의 없는 값이 튀어나온다.
+
 ---
 
 ## 5. D — 무엇이 입력 계약이고 무엇이 보강 증거인가
@@ -377,10 +445,17 @@ constants 로 올라가야 한다.**
 **하지 않은 이유**: 이번 PREP 의 허용 열람은 `rr` 의 shape·dtype 까지였다. 값 비교는
 범위 밖이다. `y`·DS2 label·확률은 어차피 봉인이고 이 비교는 그것들을 건드리지 않는다.
 
+**비용**: 이 비교는 **등록 runtime 이 필요 없다.** 이미 저장된 배열을 읽을 뿐이라
+numpy 버전과 무관하고, record 당 `n×7 float32`(약 70 KB)라 44 record 가 초 단위다.
+M4 를 유지하든 포기하든 붙일 수 있는 저비용 보강이므로 **C 결정과 독립적으로**
+승인 여부를 정해도 된다.
+
 ---
 
 ## 7. 우선순위 제안
 
+0. **C 를 판단하기 전에 §4.1 을 읽어라.** (b) 안이 Codex 자신의 Q3 결정과 충돌하는
+   구조라, 이 전제를 놓친 채 C 를 고르면 결정끼리 어긋난다.
 1. **C 먼저.** 진단의 범위를 정하므로 나머지 결정의 맥락이 된다.
 2. **D 는 C 에 종속.** M4 를 포기하면 M4 입력 계약 구분이 무의미해진다.
 3. **A·B 는 병렬 처리 가능.** 절차 유효성 판정이라 C 와 독립이다.
