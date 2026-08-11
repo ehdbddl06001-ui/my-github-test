@@ -2,7 +2,7 @@
 experiment_id: EXP-2026-008
 substage: Q5E_LEG2_FAILURE_MECHANISM_AUDIT
 title: Q5-E Leg 2 join failure mechanism audit
-status: draft
+status: approved_for_implementation
 design_owner: codex
 implementation_owner: claude
 analysis_only: true
@@ -18,9 +18,9 @@ created: 2026-08-11
 
 # Status boundary
 
-This document is a **diagnostic design**.  It authorizes nothing.  It does not
-change EXP-2026-007, does not change the frozen Q5-D join rule, and does not
-reopen the parent association.
+This document is an **approved diagnostic design**.  It authorizes implementation
+without execution.  It does not change EXP-2026-007, does not change the frozen
+Q5-D join rule, and does not reopen the parent association.
 
 Q5-D finished as `JOIN_UNRESOLVED`: the registered join rule was neither
 falsified nor qualified.  This diagnostic asks what the failure is *associated
@@ -34,9 +34,10 @@ The registered approval chain for this substage is:
 2. Codex accepted that preflight and fixed decisions A-E.
 3. The user separately approved `PREP_M4_RR_EQUIVALENCE`; Claude completed that
    read-only value-identity preflight as `RR_VALUE_IDENTICAL_44_OF_44`.
-4. Codex accepts that result and fixes decisions D1-D4; the user then separately
-   approves the completed design and `status` becomes
-   `approved_for_implementation`.  **This step stops before user approval.**
+4. Codex accepted that result and fixed decisions D1-D4; after PR #108 was
+   merged, the user separately approved the completed design on 2026-08-12 and
+   `status` became `approved_for_implementation`.  **This authorizes
+   implementation only, not execution.**
 5. Claude implements the frozen design on `claude/<task>` **without executing
    it**.
 6. The user separately approves execution on the registered artifacts.
@@ -1117,13 +1118,12 @@ names:
 - `m4_anchors.csv` — `record, anchor_ordinal, anchor_sample, anchor_kind, adjacency_definition, offset, mapped_mamba_record_row, failed, decisional` (absent when M4 stops)
 - `null_summary.json` — per control, per statistic: full quantiles, `q95`, `q99`, seed, replicate count
 
-# Inputs and outputs contract for a future approved implementation
+# Inputs and outputs contract for the approved implementation
 
 ## Files allowed to change
 
-During the current design task, this file; a factual correction to the already
-updated cache rows in `research/ASSETS.md` is also allowed.  No analysis code or
-output is added.
+During this status-promotion task, only this file may change.  No analysis code,
+notebook, asset register, or output is added.
 
 After the completed design approval (step 4), implementation is limited to:
 
@@ -1152,22 +1152,20 @@ CSVs above, `null_summary.json`, the seven figures, `log.txt`, `summary.md`.
 
 # Approval boundary
 
-**This step:** accept the RR-equivalence result, resolve D1-D4, update this spec
-and open the PR.  `status` stays `draft`.  No code, no notebook, no Drive
-per-beat analysis, no M0 aggregation, no raw ECG or detector execution.  After
-the PR, **STOP** and wait for the user.
+**This step:** record the user's explicit 2026-08-12 implementation approval and
+promote `status` to `approved_for_implementation` in a separately reviewed
+change.  No code, no notebook, no Drive per-beat analysis, no M0 aggregation,
+no raw ECG or detector execution.  After this PR, **STOP** and wait for merge.
 
 **Everything after is separate and sequential:**
 
-1. user approves the completed spec;
-2. `status` becomes `approved_for_implementation` in a separately reviewed
-   change;
-3. Claude Code opens an implementation PR (code only, not executed);
-4. user separately approves execution;
-5. M0-M4 run, with M4.0 condition 2 evaluated before any anchor;
-6. a new timestamped Drive bundle is written;
-7. the executed notebook is committed and the run ingested;
-8. Codex performs result acceptance.
+1. this status-promotion PR is reviewed and merged;
+2. Claude Code opens an implementation PR (code only, not executed);
+3. user separately approves execution;
+4. M0-M4 run, with M4.0 condition 2 evaluated before any anchor;
+5. a new timestamped Drive bundle is written;
+6. the executed notebook is committed and the run ingested;
+7. Codex performs result acceptance.
 
 # Implementation checklist
 
@@ -1186,7 +1184,8 @@ the PR, **STOP** and wait for the user.
       executing any diagnostic measurement
 - [x] All pre-implementation scientific and provenance blockers are closed;
       M4.0 condition 2 remains an execution-stage feasibility gate
-- [ ] User approves this draft; `status` becomes `approved_for_implementation`
+- [x] User approves this draft; `status` becomes `approved_for_implementation`
+      — **explicit user approval, 2026-08-12, after PR #108 merged**
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
 - [ ] Bundle file IDs, byte sizes and SHA-256 recorded before any measurement
@@ -1917,3 +1916,16 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
   execution.  M0-M4 execution still requires a later, separate user approval,
   and every DS2-label, V10-probability, association, S-PR-AUC and training seal
   remains closed.
+
+- 2026-08-12 — **User approval and implementation-status promotion.**  PR #108
+  was merged, after which the user explicitly approved promotion of the
+  completed Q5-E design.  The frontmatter status is therefore changed from
+  `draft` to `approved_for_implementation`.  This approval licenses Claude to
+  implement only the frozen design and allowed files listed in this spec.  It
+  does **not** license notebook/data execution, M0-M4 aggregation, raw ECG or
+  detector execution, Drive writes, DS2 per-beat labels, V10 probabilities, the
+  parent association, S PR-AUC, or training.  No scientific question,
+  hypothesis, comparison, null, multiplicity family, gate, threshold, decision
+  branch, input identity, or output schema changed in this promotion.  The next
+  step is a separately reviewed Claude implementation PR; scientific execution
+  still requires a later and separate user approval.
