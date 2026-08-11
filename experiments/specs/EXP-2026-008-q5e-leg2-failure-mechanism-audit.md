@@ -29,16 +29,19 @@ can license a new join rule.
 
 The registered approval chain for this substage is:
 
-1. Codex fixes this design; Claude transcribes it into this file and opens a PR.
-   **← this step.**
-2. The user approves the design; `status` becomes `approved_for_implementation`.
-3. Claude implements the frozen design on `claude/<task>` **without executing
+1. Codex fixes this design in this file and opens a PR.  **This step.**
+2. The user approves the read-only `PREP_M4_ASSET_FREEZE` scope; Claude runs
+   only that preflight and records its identities, with no M0-M4 aggregation.
+3. Codex accepts the preflight; the user approves the completed design and
+   `status` becomes `approved_for_implementation`.
+4. Claude implements the frozen design on `claude/<task>` **without executing
    it**.
-4. The user separately approves execution on the registered artifacts.
-5. Only then may M0-M4 run, write a new timestamped Drive bundle, and be
+5. The user separately approves execution on the registered artifacts.
+6. Only then may M0-M4 run, write a new timestamped Drive bundle, and be
    reviewed.
 
-Steps 2 and 4 are independent approvals.  Neither authorizes DS2 per-beat
+Steps 2, 3 and 5 are separate approvals: asset-freeze preflight, implementation
+design, and scientific execution respectively.  None authorizes DS2 per-beat
 labels, V10 probabilities, the association analysis, or any training.  Those
 seals are unchanged by this document.
 
@@ -48,7 +51,7 @@ project's principal benchmark: `AGENTS.md`'s DS1 -> DS2 inter-patient evaluation
 and the parent's `S_PR_AUC` primary remain exactly as registered.
 
 **No aggregation of `unmatched_and_ambiguous.csv` or `join_map.parquet` may be
-computed before step 4** — including the zero-execution-cost M0.  A diagnostic
+computed before step 6** — including the zero-execution-cost M0.  A diagnostic
 whose measurement plan is fixed after its cheapest measurement is seen is not a
 preregistered diagnostic.
 
@@ -229,9 +232,10 @@ bundle and which require a deterministic replay under execution approval.
    `raw_atr_ordinal`, `raw_r_sample`, `mamba_aami`, `mamba_record_row`,
    `mamba_global_row`, `mamba_file_row` are all `None` **by construction**, not
    by data loss.  Consequences, both binding:
-   - M2's run construction over `raw_atr_ordinal` is a **mamba-side**
-     measurement.  Cache-side rows are excluded and are **never** imputed into a
-     run by time adjacency or by neighbour class.
+   - M2's primary `mamba_record_row` runs and secondary `raw_atr_ordinal`
+     sensitivity runs are both **mamba-side** measurements.  Cache-side rows are
+     excluded and are **never** imputed into a run by time adjacency or by
+     neighbour class.
    - cache-side class may be supplied **only** from the canonical DS1
      processed-class map (`load_cache_classes()`, cache `y`, DS1 audit use is
      already permitted by the parent spec).  A `mamba_aami` of `None` is never
@@ -301,29 +305,36 @@ on the cache side (denominator = processed rows of that class; cache `n` =
 `research/HANDOFF_2026-08-11_Q5D_v_class_join_failure_to_codex.md` §2(a) with a
 direct measurement.
 
-**M0.4 — consecutive failure runs over `raw_atr_ordinal`.**
-Mamba side only (§What the bundle contains, item 2).  A run is a maximal set of
-mamba-side failed rows whose `raw_atr_ordinal` values are **exactly
-consecutive integers** within one record.  Report:
+**M0.4 — consecutive failure runs over the processed mamba sequence.**
+Mamba side only (§What the bundle contains, item 2).  The registered **primary**
+adjacency is `mamba_record_row + 1` within one record: a run is a maximal set of
+failed rows with exactly consecutive `mamba_record_row` values.  This is the
+literal sequence presented to Leg 2, not inferred time adjacency.  Report:
 
 - counts in run-length buckets `1`, `2`, `3-9`, `>=10`;
 - median, p90 and maximum run length;
 - `share_in_long_runs = (failed rows in runs of length >= 3) / (all mamba-side
   failed rows)`.
 
-Runs never cross a record boundary.  A gap in `raw_atr_ordinal` ends the run;
-missing ordinals are never bridged by time adjacency.
+Runs never cross a record boundary.  Repeat the same table using exactly
+consecutive `raw_atr_ordinal` as the registered **secondary sensitivity audit**.
+A raw-ordinal gap ends that secondary run and is never bridged by time
+adjacency.  Only the mamba-row primary enters H1/H3 flags; the raw-ordinal
+sensitivity result cannot rescue, veto, or replace a primary flag.  The
+difference between the two is reported per record, including record 208.
 
 **M0.5 — conditional failure after a failed V beat.**
 ```text
-numerator   = mamba-side rows where the beat at raw_atr_ordinal + 1 in the same
-              record exists and is failed, given the row at raw_atr_ordinal is
-              failed and has mamba_aami == V
+numerator   = mamba-side rows where the beat at mamba_record_row + 1 in the same
+              record exists and is failed, given the current row is failed and
+              has mamba_aami == V
 denominator = mamba-side failed rows with mamba_aami == V whose
-              raw_atr_ordinal + 1 exists in the same record
+              mamba_record_row + 1 exists in the same record
 ```
 Report the same quantity for N and S as the comparison, and the unconditional
-mamba-side failure rate as the reference level.
+mamba-side failure rate as the reference level.  Repeat using
+`raw_atr_ordinal + 1` only as the same non-decisional secondary sensitivity
+audit registered in M0.4.
 
 **M0.6 — strata always separated.**
 Every M0 table is reported for the 17 equal-count DS1 records and the 5
@@ -337,7 +348,9 @@ Inputs: frozen mamba RR (Leg 1 replay under the frozen module) and frozen cache
 RR, both converted by the frozen integer-sample contract.  **No new RR
 representation is introduced.**
 
-Population: **non-certified cache rows**, DS1.
+Population: **non-certified cache rows**, DS1.  The H1 gate population is fixed
+more narrowly as cache-side `LEG2_NO_CANDIDATE_EDGE` rows whose processed class
+from the canonical DS1 map is V; no symmetric mamba-side distance is substituted.
 
 For cache row `j` in record `r` with `n_m` mamba rows and `n_c` cache rows,
 the rank-proportional mamba centre is
@@ -373,6 +386,14 @@ A row whose minimising `i` lies at `abs(i - c(j)) == W` is flagged
 every H1 and H3 determination**.  Censored rows are never treated as if the
 window had been wide enough.
 
+A cache row with `pre == 0` or `post == 0` under the frozen cache contract is
+flagged `CACHE_ENDPOINT_ZERO`.  It remains in QA, class/reason denominators and
+descriptive tables, but is excluded from the M1 distance distribution used by
+every H1/H3 null, p-value and effect gate.  The identical exclusion is applied
+inside every replicate.  Its count and failure rate are additionally reported
+as `H3_ENDPOINT_COMPONENT`; this descriptive component cannot by itself fire H3
+and is never folded into the `>100`-sample evidence gate.
+
 **M1 is not a tolerance experiment.**  It is forbidden to report, or to compute,
 coverage or match counts under any tolerance other than the frozen 1 sample.
 
@@ -380,8 +401,8 @@ coverage or match counts under any tolerance other than the frozen 1 sample.
 
 Inputs: `unmatched_and_ambiguous.csv` and `join_map.parquet`, mamba side.
 
-- adjacency is defined **only** on exactly consecutive `raw_atr_ordinal` within
-  one record (same definition as M0.4);
+- primary adjacency is exactly consecutive `mamba_record_row` within one record
+  (same definition as M0.4);
 - runs never cross a record boundary;
 - rows with a missing ordinal — which is every cache-side row — are excluded,
   never repaired by time adjacency;
@@ -389,6 +410,11 @@ Inputs: `unmatched_and_ambiguous.csv` and `join_map.parquet`, mamba side.
   `+/-1 beat` neighbourhood and of the `+/-10 beat` neighbourhood: number of
   neighbours present, number failed, failure share, and the same three for N and
   S as comparison.
+
+Cache-side rows are excluded from runs and are never repaired by time adjacency.
+Repeat M2 with raw-ordinal adjacency as a secondary sensitivity audit.  Only the
+mamba-row primary contributes to H1/H3 effect gates.  Disagreement is itself
+reported per record and does not permit choosing the more favourable result.
 
 ## M3 — frozen candidate graph
 
@@ -406,10 +432,18 @@ Per row (both sides, reported separately):
 | `usable_edges` | edges incident to the row with `L(e) + R(e) - 1 == M` (i.e. lying in **some** maximum monotone matching) |
 | `has_forced_rank` | whether any incident usable edge is the sole member of its rank class |
 | `rr_pair_multiplicity` | within the record and the same side, `#{k : (pre[k], post[k]) == (pre[row], post[row])}`, integer samples |
-| `local_rr_sd` | population standard deviation of `pre` over rows `[row-10, row+10]` clipped to the record, in integer samples at 360 Hz |
+| `local_rr_sd` | population standard deviation (`ddof = 0`) of `pre` over rows `[row-10, row+10]` clipped to the record, in integer samples at 360 Hz; a one-row window has SD 0 |
 
 Compared across the four groups `CERTIFIED`, `NO_EDGE`, `NOT_OPTIMAL`,
 `AMBIGUOUS`.  Report median, p25, p75, and the full ECDF per group.
+
+On the cache side, construct `CERTIFIED` from the non-null `cache_record_row` on
+each certified mamba row.  Create exactly one cache-side row per certified pair,
+attach class only from the frozen DS1 processed-class map, and assert uniqueness
+of `(record, cache_record_row)` plus equality with the certified-pair count.
+Together, the four cache-side groups must form a disjoint, exhaustive partition
+of cache rows.  Any collision, duplicate, omission or count mismatch is
+`DIAGNOSTIC_INPUT_MISMATCH`.
 
 **Nothing is selected.**  No new matching is chosen, no arbitrary maximum path
 is promoted to truth, no edge is re-certified.  This measurement observes the
@@ -418,6 +452,28 @@ graph the frozen rule already built.
 ## M4 — detector / source discordance anchors
 
 Inputs: the registered DS1 raw MIT-BIH tree and the frozen lineage source only.
+
+### PREP_M4_ASSET_FREEZE — approval blocker, not a measurement
+
+M4 is retained because omitting it would make H2 and H3 structurally
+unevaluable and prevent a complete four-hypothesis verdict.  Before this spec
+may be promoted from `draft`, a separate read-only preflight must:
+
+1. uniquely identify the canonical V9/V10 source packages and cache trees by
+   Drive file/folder ID, path, byte size and SHA-256 (tree digest for a folder);
+2. freeze the exact `detect_r()` producer, annotation-matching source and runtime;
+3. verify, without detector replay, that `rr.shape[0]` and `meta.json[n]` equal
+   the registered row count for every one of the 44 cache records in both V9
+   and V10 (44/44 per version), reading neither `y` nor any probability array;
+   without opening V10 probability values or DS2 per-beat class labels; and
+4. record the resulting identities in `research/ASSETS.md` and this Decision log
+   before implementation approval.
+
+If the canonical producer cannot be identified uniquely, a required hash is
+unverifiable, or the cache-shape/meta ledger does not verify all 44 counts, the
+preflight ends `M4_INPUT_FREEZE_FAILED`.  The spec stays `draft`; no detector,
+version, tolerance or source is substituted.  This preflight performs no M0-M4
+aggregation and does not itself authorize implementation or execution.
 
 ### M4.0 — feasibility gate, evaluated first
 
@@ -431,13 +487,11 @@ All three must hold:
    note that neither lineage stores them (§What the bundle contains, item 6), so
    this requires re-running the detector under the registered runtime
    (`numpy 2.5.1`, `scipy 1.18.0`, `wfdb 4.3.1`, CPython 3.12.3), whose output
-   must be shown to reproduce the registered per-record cache counts before any
-   anchor is used;
-3. the source version and hash are frozen.  **As registered today they are
-   not**: `research/ASSETS.md :: baseline-v10-source` and `baseline-v9-source`
-   both record "hash 미계산", and the cache record NPZs likewise have no
-   computed hash.  Freezing them is a prerequisite of M4, and computing those
-   hashes is itself part of the implementation, not a result-dependent choice.
+   must be shown to reproduce the registered per-record cache counts for all 22
+   DS1 records before any anchor is used;
+3. the source version, cache tree and hashes equal the identities frozen by
+   `PREP_M4_ASSET_FREEZE`.  A path or filename without its registered digest is
+   insufficient.
 
 If any of the three fails:
 
@@ -456,10 +510,21 @@ detector-annotation **discordance anchors**: annotation positions with no
 matched detector peak within the source's own `+/-54 sample` tolerance, and
 detector peaks matched to no annotation, each in the source's own order.
 
-For each anchor, measure the failure topology of the 10 beats before and the 10
-beats after, on the mamba side over `raw_atr_ordinal`.  Report failure share per
-offset `-10 … +10`, and the share of all failures that lie within 10 beats after
-some anchor.
+For H2 positional explanation, an annotation-without-peak anchor maps to its
+exact kept mamba row when the frozen Leg 1 replay kept that annotation; a
+detector-without-annotation anchor maps to its exact cache row when the frozen
+cache selection kept that peak.  An anchor whose counterpart-side row was not
+kept is reported but contributes nothing to the H2 explanatory numerator.
+
+For H3 topology, place each anchor at its unique sample-ordered boundary in the
+kept mamba sequence.  An exact kept annotation is offset 0; otherwise offset +1
+is the first kept row strictly after the anchor and offset -1 is the last kept
+row strictly before it.  Measure 10 kept beats on either side over
+`mamba_record_row`.  Report failure share per offset `-10 … +10` (offset 0 is NA
+for an inter-row anchor), and the share of all failures within 10 kept beats
+after an anchor.  A non-unique placement is reported and excluded, never
+imputed.  Repeat raw-ordinal topology as a secondary sensitivity audit, but only
+the mamba-row primary enters H2/H3 gates.
 
 **No new detector, no new peak-matching tolerance, and no manual anchor may be
 introduced.**  If the original rule cannot be reproduced, the answer is
@@ -560,15 +625,17 @@ One new timestamped directory.  Nothing existing is written to, moved or
 removed, and a failed or stopped run still preserves its bundle so a STOP is as
 inspectable as a PASS.
 
-# Open design questions for Codex — unresolved, blocking approval
+# Resolved design decisions — Codex, 2026-08-11
 
-These are surfaced by the transcriber, **not decided by it**.  Each is a point
-where the transferred design is silent or where the registered definition
-interacts with a measured property of the artifacts in a way that changes what
-the measurement means.  Codex resolves them before `status` becomes
-`approved_for_implementation`; Claude implements whatever Codex decides.
+These decisions are frozen before any M0-M4 aggregation.  They resolve every
+implementation-dependent denominator or statistic surfaced in PR #100.
 
-## Q1 — `raw_atr_ordinal` adjacency fragments runs, record-dependently
+## Q1 — processed-sequence adjacency is primary
+
+**Decision.**  Use `mamba_record_row` adjacency as primary for M0.4, M0.5, M2
+and every H1/H3 run-related gate.  Use `raw_atr_ordinal` only as a registered,
+non-decisional secondary sensitivity audit.  Both are reported, but the
+secondary cannot rescue, veto or replace a primary flag.
 
 **The fact.**  `replay_leg1_record()` assigns `raw_atr_ordinal` by enumerating
 **all** `.atr` annotations, including the ones the three frozen rules then drop.
@@ -577,9 +644,9 @@ ordinals only when no annotation was dropped between them.  F and Q symbols are
 never in the AAMI map — that is the entire 818-beat Q5-B-0 drop map, `F 802`,
 92% of it concentrated in records **208** and 213.
 
-**The consequence.**  M0.4 and M2 define a run as *exactly consecutive
-`raw_atr_ordinal`*, so every dropped F beat between two failed beats **splits a
-run in two**.  The suppression is multiplicative in run length and differs by
+**The consequence of the rejected definition.**  If a run is defined as
+exactly consecutive `raw_atr_ordinal`, every dropped F beat between two failed
+beats **splits a run in two**.  The suppression is multiplicative in run length and differs by
 record: with a drop rate `d` between neighbours, the surviving mass of a
 length-`L` run falls as roughly `(1-d)^(L-1)`.  Record 208's raw stream is
 F-dense, while a record such as 101 is nearly F-free — so long runs are
@@ -594,9 +661,9 @@ same direction: **toward H1 and away from H3**, strongest in record 208.  A
 differential, hypothesis-aligned bias in a registered gate input is not an
 acceptable unknown.
 
-**Proposal, for Codex to accept or reject.**  Keep raw-ordinal adjacency as the
-registered primary — it is what the transfer message registered — and add
-`mamba_record_row` adjacency as a **registered secondary** reported beside it.
+**Rejected alternative.**  Keeping raw-ordinal adjacency primary and adding
+`mamba_record_row` only as secondary would retain a known hypothesis-aligned
+bias in the decisive statistic.  `mamba_record_row` is reported as the primary.
 `mamba_record_row` is already carried in `join_map` and gives exact
 processed-sequence adjacency with no gaps.  Note that this is **not** the
 forbidden repair: the ban is on treating a missing ordinal as adjacent *in
@@ -606,40 +673,50 @@ about — H1's `e_j - e_{j-1}` and H3's endpoint/filter semantics both act betwe
 **consecutive kept beats**, not between consecutive annotations.  Reporting both
 makes the size of the artifact measurable instead of invisible.
 
-Until Codex rules, the registered definition stands unchanged.
+## Q2 — Control B is one joint categorical permutation
 
-## Q2 — Control B's permutation must be declared joint, not per-reason
+**Decision.**  Within each `record x side`, jointly permute one categorical
+label vector with the exact multiset `{NO_EDGE x a, NOT_OPTIMAL x b, AMBIGUOUS
+x c, CERTIFIED x rest}`.  Never permute failure reasons independently.
 
 Control B preserves failure counts per `record x side x failure-reason` and
 permutes positions.  Applying an independent permutation per reason lets two
-reasons land on the same row.  The intended construction is presumably a
-**single joint permutation** of the position pool within `record x side`, to
+reasons land on the same row.  The registered construction is a **single joint
+permutation** of the position pool within `record x side`, to
 which the multiset of labels (`NO_EDGE` x a, `NOT_OPTIMAL` x b, `AMBIGUOUS` x c,
 `CERTIFIED` x rest) is then assigned — which preserves every per-reason count
 and cannot collide.  This must be stated, not inferred: it is the difference
 between a valid null and an ill-defined one, and an implementer forced to guess
 is an implementer contaminating the design.
 
-## Q3 — Holm's scope when M4 is unavailable
+## Q3 — Holm remains a four-family procedure when M4 is unavailable
 
-Holm is registered across exactly four families.  Under branch 2
-(`MECHANISM_UNRESOLVED_INPUT_ABSENT`), H2 and H3 have no p-value at all.
-Correcting H1 and H4 across four families when two were never computed is
-over-conservative; correcting across two silently changes the registered
-multiplicity.  Codex must register which applies.  The partial results are not
-promoted to a verdict either way, but they are reported, so the number attached
-to them has to be defined in advance.
+**Decision.**  The family is always H1-H4.  When M4 is unavailable, H2 and H3
+remain explicitly `UNEVALUABLE`; assign each p=1.0 only inside the Holm
+calculation.  Report raw H1/H4 p-values and `p_holm_4family`, never a two-family
+adjusted p-value.  The placeholders are not evidence of no association.
 
-## Q4 — how the cache-side `CERTIFIED` group is constructed
+This conservative convention prevents the multiplicity family from changing
+conditionally after M4 feasibility is known.  Partial results are not promoted
+to a verdict, regardless of their adjusted values.
+
+## Q4 — cache-side `CERTIFIED` is derived one-to-one
+
+**Decision.**  Derive exactly one cache-side certified row from each certified
+mamba row's non-null `cache_record_row`, subject to the uniqueness, class and
+partition assertions in M3.
 
 A certified pair appears in `join_map` **once**, as the mamba row.  There is
 therefore no cache-side row carrying `status = CERTIFIED`.  M3 compares four
 groups per side, and Control B strata are `record x side`, so the cache-side
-certified group has to be derived from `cache_record_row` on certified mamba
-rows.  That derivation is obvious but unstated, and leaving it unstated is how
-two implementations end up with different denominators.
+certified group is derived from `cache_record_row` on certified mamba rows under
+the exact assertions registered in M3.
 
-## Q5 — cache rows whose endpoint RR is a stored `0.0`
+## Q5 — stored zero endpoints are descriptive, not distance evidence
+
+**Decision.**  Flag them `CACHE_ENDPOINT_ZERO`, retain them in QA and ordinary
+denominators, report them as `H3_ENDPOINT_COMPONENT`, and exclude them from all
+observed and null H1/H3 distance statistics and effect gates.
 
 `rr_features` writes `nan -> 0.0` at record endpoints, so the first and last
 cache row of every record carries a real stored `0.0` — data meaning "no
@@ -647,9 +724,25 @@ neighbour", not a missing value.  Their `d_inf` is necessarily on the order of a
 full RR interval, which lands them in the `>100 samples` bin: the exact bin H3's
 distance condition reads.  The population is small (2 rows x 22 DS1 records = 44
 of 12,158 non-certified cache rows, and fewer after certification), so this is
-hygiene rather than a threat — but they should be flagged
+hygiene rather than a threat — they are flagged
 `CACHE_ENDPOINT_ZERO`, counted separately, and excluded from the H3 distance
 condition, for the same reason censored rows are.
+
+## Additional resolution — M4 retained with a pre-approval asset freeze
+
+Do not intentionally collapse the experiment to H1/H4.  Complete the read-only
+`PREP_M4_ASSET_FREEZE` before promoting this spec.  Failure to uniquely freeze
+the original producer/cache lineage and verify all 44 cache record counts from
+`rr` shape and metadata in each version is
+`M4_INPUT_FREEZE_FAILED`; the spec stays `draft` and no substitute source or
+relaxed rule is allowed.  If an approved implementation later fails exact peak
+replay, decision-tree branch 2 remains the registered result.
+
+The proposed null seed **`2026019`** is accepted.  The proposed `local_rr_sd`
+formula is accepted with `ddof = 0`, clipped record boundaries and SD 0 for a
+one-row window.  The H1 distance population reading is accepted: non-certified
+cache-side `NO_EDGE` rows, V from the frozen DS1 processed-class map, subject to
+the registered censoring and endpoint exclusions.
 
 # Negative controls and null computation
 
@@ -662,7 +755,7 @@ family is omitted.
 | control | what is permuted | what is preserved | what it falsifies |
 |---|---|---|---|
 | **A** — within-record class circular shift | the per-record class sequence is circularly shifted by a non-zero offset drawn uniformly from `1 … n-1` | per-record class composition, per-record failure count, the entire failure run structure | "the V association is only record composition plus record 208's weight" |
-| **B** — within-record failure-position permutation | the ordinal positions of failures are permuted within `record x side x failure-reason` | per-record, per-side, per-reason failure counts | "the observed long runs arose by chance within the same record" |
+| **B** — within-record joint status permutation | one joint categorical vector `{NO_EDGE, NOT_OPTIMAL, AMBIGUOUS, CERTIFIED}` is permuted within each `record x side`; exactly one status is assigned per row | per-record, per-side and per-reason counts, with no collisions | "the observed long runs and graph-group contrasts arose by chance within the same record and side" |
 | **C** — discordance-anchor circular shift | anchor positions are circularly shifted within record | per-record anchor count and the whole failure topology | "post-anchor failure propagation is chance positional overlap" |
 
 Control C is available **only** when M4.0 passes.  When it does not, every
@@ -692,7 +785,9 @@ Four hypothesis families, one family-level p-value each:
 
 **Holm** correction across exactly these four, at `alpha = 0.05`: sort the four
 p-values ascending and require `p_(k) <= 0.05 / (4 - k + 1)`, stopping at the
-first failure.
+first failure.  If M4 is unavailable, H2/H3 are labelled `UNEVALUABLE` and each
+is assigned p=1.0 only for this four-family adjustment.  Report the field as
+`p_holm_4family`; a two-family adjustment is forbidden.
 
 A p-value alone never promotes a mechanism.  A flag fires only when its
 Holm-adjusted family p-value is significant **and** every effect-size condition
@@ -703,10 +798,11 @@ below holds.
 Each flag is evaluated **independently**.  All conditions of a flag must hold.
 
 **`H1_ASSOCIATED`** — all of:
-- among uncensored failed V rows with reason `NO_EDGE`, the share with
+- among uncensored, non-`CACHE_ENDPOINT_ZERO`, cache-side failed V rows with
+  reason `NO_EDGE`, the share with
   `d_inf` in `2-5` samples is `>= 0.50`;
 - the V-by-distance-bucket association exceeds Control A's `q99`;
-- the majority of the relevant run-length mass is at length `<= 2`;
+- the majority of the primary mamba-row run-length mass is at length `<= 2`;
 - the M4 propagation gate (H3's post-anchor condition) is **not** met;
 - Holm-adjusted H1 p-value significant.
 
@@ -722,9 +818,11 @@ Each flag is evaluated **independently**.  All conditions of a flag must hold.
 **`H3_ASSOCIATED`** — all of:
 - failure concentration within 10 beats after a replay-confirmed discordance
   anchor exceeds Control C's `q99`;
-- `>= 0.50` of the explained failures lie in runs of length `>= 3`;
-- the distance distribution places more mass in `21-100` or `>100` samples than
-  in `2-5` samples;
+- `>= 0.50` of the explained failures lie in primary mamba-row runs of length
+  `>= 3`;
+- after excluding censored and `CACHE_ENDPOINT_ZERO` rows, the distance
+  distribution places more mass in `21-100` or `>100` samples than in `2-5`
+  samples;
 - Holm-adjusted H3 p-value significant.
 
 **`H4_ASSOCIATED`** — all of:
@@ -739,13 +837,16 @@ Each flag is evaluated **independently**.  All conditions of a flag must hold.
 
 Evaluated in order; exactly one branch is reached.
 
-1. **`DIAGNOSTIC_INPUT_MISMATCH`** — any QA reproduction target in §QA fails, or
-   canonical and superseded bundles cannot be told apart, or an input hash is
-   unknown.  **STOP.**  No measurement is reported.
+1. **`DIAGNOSTIC_INPUT_MISMATCH`** — any QA reproduction target in §QA fails,
+   canonical and superseded bundles cannot be told apart, or any registered
+   canonical-bundle/M0-M3 input hash is unknown.  **STOP.**  No measurement is
+   reported.  M4-specific assets are governed first by the pre-approval freeze
+   and then by branch 2, not silently reclassified here.
 2. **`MECHANISM_UNRESOLVED_INPUT_ABSENT`** — QA passes but M4.0 fails, so H2 and
    H3 cannot be evaluated.  M0-M3 are reported as **diagnostic partial results**;
    `H1_ASSOCIATED` and `H4_ASSOCIATED` may be computed and reported but are
-   **not** promoted to a terminal mechanism verdict.
+   **not** promoted to a terminal mechanism verdict.  Their reported adjustment
+   is the registered four-family Holm value with H2/H3 p=1 placeholders.
 3. **`MULTI_MECHANISM_ASSOCIATED`** — all four flags evaluable and **two or more**
    fire.  Report every flag that fired, with its statistics; do not rank them.
 4. **`H1_ASSOCIATED` / `H2_ASSOCIATED` / `H3_ASSOCIATED` / `H4_ASSOCIATED`** —
@@ -784,7 +885,7 @@ Any single mismatch: `DIAGNOSTIC_INPUT_MISMATCH`, **STOP**.
 ## Further stopping conditions
 
 - canonical and superseded run bundles cannot be distinguished;
-- a source hash is unknown or unverifiable;
+- a registered canonical-bundle or M0-M3 source hash is unknown or unverifiable;
 - M4 detector replay is impossible (`DIAGNOSTIC_INPUT_ABSENT`; the diagnostic
   continues into branch 2, it does not guess drop positions);
 - progress would require opening DS2 labels or V10 probabilities — **STOP**, the
@@ -827,9 +928,9 @@ no Korean, no typographic dashes, no unit glyphs.
 |---|---|---|
 | 1 | class x failure reason, stacked bar | x = class (N, S, V), stack = reason; one panel per side |
 | 2 | per-record class failure-rate heatmap | rows = 22 DS1 records, columns = N/S/V, cell = failure rate; strata annotated |
-| 3 | record 208 failure raster | x = `raw_atr_ordinal`, one row per class, mark = failed beat |
-| 4 | run-length distribution | histogram over buckets `1`, `2`, `3-9`, `>=10`, plus median/p90/max |
-| 5 | nearest-distance histogram | fixed bins `0-1`, `2-5`, `6-20`, `21-100`, `>100`; censored rows in their own bar |
+| 3 | record 208 failure raster | primary x = `mamba_record_row`, one row per class, mark = failed beat; raw-ordinal sensitivity shown separately |
+| 4 | run-length distribution | primary mamba-row histogram over buckets `1`, `2`, `3-9`, `>=10`, plus median/p90/max; raw-ordinal sensitivity overlaid or panelled |
+| 5 | nearest-distance histogram | fixed bins `0-1`, `2-5`, `6-20`, `21-100`, `>100`; censored and `CACHE_ENDPOINT_ZERO` rows in separate descriptive bars |
 | 6 | candidate-degree violin + ECDF | groups CERTIFIED / NO_EDGE / NOT_OPTIMAL / AMBIGUOUS |
 | 7 | anchor-aligned failure probability curve | x = beat offset `-10 … +10` from anchor, y = failure share, with the Control C band |
 
@@ -860,9 +961,13 @@ absence and the reason.
   "qa": {"targets": {"": {"expected": 0, "observed": 0, "ok": true}},
          "graph_partition_reproduced": true, "ok": true},
   "m0": {"class_failure_rate": {}, "class_by_reason": {},
-         "record_208": {}, "runs": {}, "post_v_failure": {}, "strata": {}},
-  "m1": {"bins": {}, "censored": 0, "window_half_width": 15},
-  "m2": {"runs": {}, "v_neighbourhood_pm1": {}, "v_neighbourhood_pm10": {}},
+         "record_208": {}, "runs_primary_mamba_row": {},
+         "runs_secondary_raw_ordinal": {}, "post_v_failure": {}, "strata": {}},
+  "m1": {"bins": {}, "censored": 0, "cache_endpoint_zero": 0,
+         "h3_endpoint_component": {}, "window_half_width": 15},
+  "m2": {"adjacency_primary": "mamba_record_row",
+         "runs": {}, "raw_ordinal_sensitivity": {},
+         "v_neighbourhood_pm1": {}, "v_neighbourhood_pm10": {}},
   "m3": {"by_group": {}},
   "m4": {"status": "OK | DIAGNOSTIC_INPUT_ABSENT", "feasibility": {},
          "anchors": 0, "offset_curve": {}},
@@ -871,7 +976,7 @@ absence and the reason.
                             "pooled"]},
   "null": {"replicates": 10000, "master_seed": 2026019,
            "controls": {"A": {}, "B": {}, "C": {}}},
-  "tests": {"H1": {"statistic": 0.0, "p": 0.0, "p_holm": 0.0, "q99": 0.0,
+  "tests": {"H1": {"statistic": 0.0, "p": 0.0, "p_holm_4family": 0.0, "q99": 0.0,
                    "effect_gates": {}, "flag": false},
             "H2": {}, "H3": {}, "H4": {}},
   "decision": "H1_ASSOCIATED | H2_ASSOCIATED | H3_ASSOCIATED | H4_ASSOCIATED | MULTI_MECHANISM_ASSOCIATED | NO_REGISTERED_MECHANISM_ASSOCIATED | MECHANISM_UNRESOLVED_INPUT_ABSENT | DIAGNOSTIC_INPUT_MISMATCH",
@@ -885,19 +990,21 @@ names:
 
 - `m0_class_by_reason.csv` — `side, class, reason, count, denominator, rate`
 - `m0_record_class.csv` — `record, stratum, class, side, denominator, failures, rate`
-- `m0_runs.csv` — `record, run_start_ordinal, run_length, classes, reasons`
-- `m1_distance.csv` — `record, cache_record_row, processed_class, reason, d_inf, bin, censored`
+- `m0_runs.csv` — `record, adjacency_definition, run_start, run_length, classes, reasons, decisional`
+- `m1_distance.csv` — `record, cache_record_row, processed_class, reason, d_inf, bin, censored, cache_endpoint_zero, included_in_distance_gate`
 - `m3_graph.csv` — `record, side, row, group, candidate_degree, usable_edges, has_forced_rank, rr_pair_multiplicity, local_rr_sd`
-- `m4_anchors.csv` — `record, anchor_ordinal, anchor_kind, offset, failed` (absent when M4 stops)
+- `m4_anchors.csv` — `record, anchor_ordinal, anchor_sample, anchor_kind, adjacency_definition, offset, mapped_mamba_record_row, failed, decisional` (absent when M4 stops)
 - `null_summary.json` — per control, per statistic: full quantiles, `q95`, `q99`, seed, replicate count
 
 # Inputs and outputs contract for a future approved implementation
 
 ## Files allowed to change
 
-During the current design task, **only this file**.
+During the current design task, **only this file**.  A later, separately
+approved `PREP_M4_ASSET_FREEZE` intake may change only `research/ASSETS.md` and
+this spec's checklist/Decision log; it may not add analysis code or outputs.
 
-After the design approval (step 2), implementation is limited to:
+After the completed design approval (step 3), implementation is limited to:
 
 - this spec's `status`, checklist and Decision log;
 - `mit-bih/q5e_leg2_failure_mechanism_audit.py`;
@@ -930,17 +1037,22 @@ detector execution.  After the PR, **STOP** and wait for the user.
 
 **Everything after is separate and sequential:**
 
-1. user approves the spec;
-2. Claude Code opens an implementation PR (code only, not executed);
-3. user approves execution;
-4. M0-M4 run;
-5. a new timestamped Drive bundle is written;
-6. the executed notebook is committed and the run ingested;
-7. Codex performs result acceptance.
+1. user approves the read-only M4 asset-freeze preflight;
+2. Claude performs only that preflight and records its identities;
+3. Codex accepts the preflight and the user approves the completed spec;
+4. Claude Code opens an implementation PR (code only, not executed);
+5. user separately approves execution;
+6. M0-M4 run;
+7. a new timestamped Drive bundle is written;
+8. the executed notebook is committed and the run ingested;
+9. Codex performs result acceptance.
 
 # Implementation checklist
 
-- [ ] Codex resolves the five open design questions (Q1-Q5)
+- [x] Codex resolves the five open design questions (Q1-Q5)
+- [ ] User approves the read-only `PREP_M4_ASSET_FREEZE` scope
+- [ ] `PREP_M4_ASSET_FREEZE` uniquely freezes source/cache identities and
+      verifies all 44 cache `rr` shape/meta counts in each version before status promotion
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
@@ -950,7 +1062,13 @@ detector execution.  After the PR, **STOP** and wait for the user.
 - [ ] M4 feasibility gate evaluated before any anchor is used
 - [ ] The complete M0-M4 plan is unchanged from this document at run time
 - [ ] All three controls run at 10,000 replicates under seed `2026019`
-- [ ] Holm correction applied across exactly the four families
+- [ ] Control B uses one joint categorical permutation per `record x side`
+- [ ] Holm correction applied across exactly four families; unavailable H2/H3
+      use p=1 only inside `p_holm_4family`
+- [ ] Primary runs/neighbourhoods use `mamba_record_row`; raw ordinal is
+      non-decisional sensitivity only
+- [ ] `CACHE_ENDPOINT_ZERO` excluded identically from observed/null distance gates
+- [ ] Cache-side `CERTIFIED` partition assertions pass exactly
 - [ ] `NO_REGISTERED_MECHANISM_ASSOCIATED` reachable and tested
 - [ ] No DS2 label, V10 probability, association, or training at any point
 - [ ] No existing Drive bundle or null shard modified
@@ -1057,7 +1175,8 @@ detector execution.  After the PR, **STOP** and wait for the user.
   be amended at all; the run STOPs and returns to Codex.  There is no in-flight
   repair path.
 
-  *Five open design questions (§Open design questions for Codex).*  Raised, not
+  *Five design questions, as originally raised; resolved in the later Codex
+  entry and §Resolved design decisions.*  At this historical step they were not
   decided.  Q1 is the substantive one: `raw_atr_ordinal` enumerates **all**
   `.atr` annotations including dropped ones, so every dropped F beat splits a
   run, the suppression is multiplicative in run length, and F beats are
@@ -1096,3 +1215,43 @@ detector execution.  After the PR, **STOP** and wait for the user.
   emits 13 — gate 2 splits into `2a_leg1_source_replay` / `2b_leg2_record_
   boundaries`, plus `13_ambiguity_reported`.  The figure is right and is now
   annotated so no one "fixes" it.
+
+- 2026-08-11 — **Codex resolution of PR #100's five open design questions and
+  M4 feasibility decision.  Design only; status remains `draft`.**
+
+  **Q1.**  `mamba_record_row` is primary for every run/neighbourhood statistic
+  and H1/H3 gate; `raw_atr_ordinal` is a non-decisional secondary sensitivity
+  audit.  Raw ordinal was rejected as primary because dropped F/Q annotations
+  fragment runs record-dependently, most strongly in record 208, biasing the
+  registered gate inputs toward H1 and away from H3.  Processed-row adjacency is
+  the literal Leg 2 sequence and introduces neither time imputation nor a new
+  join rule.
+
+  **Q2.**  Control B is one joint categorical permutation within each
+  `record x side`, preserving all four group counts without collisions.
+
+  **Q3.**  Holm remains four-family in every branch.  When M4 is absent, H2/H3
+  are `UNEVALUABLE` and contribute p=1 only to `p_holm_4family`; no conditional
+  two-family correction is allowed and H1/H4 partial flags remain nonterminal.
+
+  **Q4.**  Cache-side certified rows are derived one-to-one from certified
+  mamba rows' `cache_record_row`, with uniqueness, count-equality, class-lineage
+  and exhaustive-partition assertions.
+
+  **Q5.**  `CACHE_ENDPOINT_ZERO` rows remain visible in QA and descriptive
+  denominators but are excluded identically from observed and null H1/H3
+  distance gates.  Their separate `H3_ENDPOINT_COMPONENT` is descriptive and
+  cannot fire H3.
+
+  **M4.**  M4 is retained because intentionally omitting it makes H2/H3
+  unevaluable.  A separate read-only `PREP_M4_ASSET_FREEZE` is now a blocker to
+  status promotion: it must uniquely hash/freeze the canonical V9/V10 producer
+  and cache lineage and verify all 44 cache `rr` shape/meta counts in each version.
+  Failure leaves
+  the spec draft as `M4_INPUT_FREEZE_FAILED`; it does not license a substitute
+  detector, version, tolerance or source.
+
+  **Transferred values.**  Null seed `2026019`, the cache-side V/`NO_EDGE` H1
+  population reading, and `local_rr_sd` over clipped `[row-10,row+10]` are
+  accepted.  The latter is now explicit population SD (`ddof=0`) in integer
+  samples, with SD 0 for a one-row window.
