@@ -42,6 +42,11 @@ Steps 2 and 4 are independent approvals.  Neither authorizes DS2 per-beat
 labels, V10 probabilities, the association analysis, or any training.  Those
 seals are unchanged by this document.
 
+The frontmatter `split` reads `DS1_only_diagnostic`.  That is the **scope of
+this diagnostic**, forced by the DS2 seal, and it is not a change to the
+project's principal benchmark: `AGENTS.md`'s DS1 -> DS2 inter-patient evaluation
+and the parent's `S_PR_AUC` primary remain exactly as registered.
+
 **No aggregation of `unmatched_and_ambiguous.csv` or `join_map.parquet` may be
 computed before step 4** — including the zero-execution-cost M0.  A diagnostic
 whose measurement plan is fixed after its cheapest measurement is seen is not a
@@ -96,6 +101,7 @@ from superseded is a stopping condition (§QA).
 | `first_stopping_reason` | `3_overall_coverage` |
 | `failed_leg` | `LEG2_POSITIONAL_JOIN` |
 | gates passed | 5 of 13 |
+| gate count reconciliation | the spec body lists 12 numbered gates; `evaluate_gates()` records **13** because gate 2 is emitted as `2a_leg1_source_replay` + `2b_leg2_record_boundaries` and `13_ambiguity_reported` is recorded as well.  `5 of 13` is correct and must not be "corrected" to 12 |
 | `training_performed` / `model_scored` / `v10_probability_opened` / `association_performed` | all False |
 
 ## Coverage and the null-facing gates
@@ -161,9 +167,12 @@ fires on one process makes no claim about the other.
    controls, thresholds, and the decision tree — is fixed by this document
    **before any of it runs**.
 2. Seeing M0 may **not** change the definition, window size, bin edges, or
-   interpretation rule of M1-M4.  If a definition proves unimplementable, the
-   spec is amended and re-approved through the Decision log, in the open, before
-   the affected measurement runs — never adjusted after its own result.
+   interpretation rule of M1-M4.  Once any M0 result has been observed, an
+   M1-M4 definition may not be amended at all: if one then proves
+   unimplementable, the run **STOPs** and returns to Codex for a new
+   preregistration.  An amendment is possible only *before* the first
+   measurement of the run produces a number, and only through the Decision log
+   in the open.  There is no in-flight repair path.
 3. M0's zero execution cost is not an exemption.  §Status boundary forbids
    aggregating the bundle before the execution approval.
 4. No measurement in this spec selects, tunes, or tests a tolerance.  It is
@@ -471,6 +480,177 @@ Every M0-M4 result is reported simultaneously by:
 exists so a stratified claim can be compared against it, not so it can stand
 alone.
 
+# Runtime and execution-environment contract
+
+Engineering only.  Nothing in this section changes a scientific rule; every
+item exists because Q5-D lost runs to exactly these failure modes and closed
+them in its own module.  A Q5-E implementation reproduces the same closures
+rather than rediscovering them.
+
+## Stage dependencies, declared before the work
+
+Follow `RUNTIME_DEPENDENCIES` / `STAGE_REQUIREMENTS` /
+`assert_runtime_ready()` in the frozen module.  A stage refuses to start when
+its imports are absent, naming the exact `pip install` line, **before** anything
+is read.
+
+| stage | needs | why |
+|---|---|---|
+| M0 (bundle only) | `numpy`, `pyarrow` | `join_map.parquet` |
+| M0 (cache-side class) | + registered cache access | `load_cache_classes()` on DS1 `y` |
+| M1, M3 | + `wfdb` | Leg 1 replay from raw `.atr` |
+| M4 | + `scipy` at the registered version | `detect_r()` reproduction |
+
+`pyarrow` is declared **up front**, not at write time.  Q5-D recorded the same
+rule after finding that a missing `pyarrow` would have discarded a completed
+run at the bundle-writing step.
+
+## Registered-input access is opt-in and re-verified
+
+- A Q5-E run opens no registered artifact without an explicit execution
+  approval flag, default off, mirroring Q5-D's `OPEN_REGISTERED_DATA` and
+  `require_execution_approval()`.
+- Before M1, M3 or M4 opens `mamba_data.npz`, the V9/V10 cache or the MIT-BIH
+  tree, the run re-verifies their identity by reusing the frozen module's
+  `build_preflight()` and `verify_preflight_freeze()` against the registered
+  digests (`b1c16106…`, `82b9a593…`, `0b46a411…`).  Analysing a different copy
+  of an artifact than the canonical run consumed is a contamination path, and
+  a preflight already exists to close it.
+- The canonical bundle is additionally checked for the **absence** of
+  `SUPERSEDED.json` and for `manifest.json` carrying code SHA-256
+  `6b098c67…`.  Path alone never establishes canonicity.
+
+## Staleness and silent-skip guards
+
+- The notebook asserts the **capabilities it actually uses** on both modules
+  (the Q5-E module and the frozen Q5-D module) and prints both `__file__`
+  paths.  A version integer alone is defeated by forgetting to bump it; Q5-D
+  lost three Colab runs to a stale clone and to `import` returning the
+  `sys.modules` cache.
+- Every stage announces `RUN` or `SKIP` with its reason through a single
+  helper, as in Q5-D's `stage_should_run()`.  A stage that quietly does nothing
+  must never be indistinguishable from a stage that passed.
+
+## Cost profile
+
+The controls here permute an already-measured 24,341-row failure table; they do
+**not** rerun the matcher.  Expected costs, from the frozen module's measured
+behaviour:
+
+| stage | expected cost |
+|---|---|
+| M0 | seconds |
+| M1 | seconds — at most 31 candidates per non-certified cache row |
+| M3 | ~2 s for the whole DS1 graph replay (one complete Leg 2 join measured at ~1.7 s) |
+| M4 | minutes, dominated by re-running `detect_r()` over 22 records |
+| controls A/B/C, 3 x 10,000 | minutes |
+
+Peak memory stays small: `load_mamba_sequences()` reads only `feats` (26 columns)
+and `pid` from the 204 MB npz, never `beat` or `ref`.
+
+**Therefore no null sharding, no resume directory and no cross-session
+checkpointing are required.**  Q5-D needed them because each of its 30,000
+replicates reran a complete Leg 2 join; Q5-E's do not.  If an implementation
+finds itself rerunning the matcher inside a replicate loop, that is a defect in
+the implementation, not a reason to shard.
+
+## Output writing
+
+One new timestamped directory.  Nothing existing is written to, moved or
+removed, and a failed or stopped run still preserves its bundle so a STOP is as
+inspectable as a PASS.
+
+# Open design questions for Codex — unresolved, blocking approval
+
+These are surfaced by the transcriber, **not decided by it**.  Each is a point
+where the transferred design is silent or where the registered definition
+interacts with a measured property of the artifacts in a way that changes what
+the measurement means.  Codex resolves them before `status` becomes
+`approved_for_implementation`; Claude implements whatever Codex decides.
+
+## Q1 — `raw_atr_ordinal` adjacency fragments runs, record-dependently
+
+**The fact.**  `replay_leg1_record()` assigns `raw_atr_ordinal` by enumerating
+**all** `.atr` annotations, including the ones the three frozen rules then drop.
+So two beats that are *adjacent in the processed sequence* have consecutive raw
+ordinals only when no annotation was dropped between them.  F and Q symbols are
+never in the AAMI map — that is the entire 818-beat Q5-B-0 drop map, `F 802`,
+92% of it concentrated in records **208** and 213.
+
+**The consequence.**  M0.4 and M2 define a run as *exactly consecutive
+`raw_atr_ordinal`*, so every dropped F beat between two failed beats **splits a
+run in two**.  The suppression is multiplicative in run length and differs by
+record: with a drop rate `d` between neighbours, the surviving mass of a
+length-`L` run falls as roughly `(1-d)^(L-1)`.  Record 208's raw stream is
+F-dense, while a record such as 101 is nearly F-free — so long runs are
+suppressed hardest **in the one DS1 record whose 84.3% collapse motivates the
+whole diagnostic**, and barely at all elsewhere.
+
+**Why it matters for the verdict, not just for tidiness.**  `share_in_long_runs`
+and "the majority of run mass is at length <= 2" are literal inputs to
+`H1_ASSOCIATED`, and "`>= 0.50` of explained failures lie in runs of length
+`>= 3`" is a literal input to `H3_ASSOCIATED`.  The artifact pushes both in the
+same direction: **toward H1 and away from H3**, strongest in record 208.  A
+differential, hypothesis-aligned bias in a registered gate input is not an
+acceptable unknown.
+
+**Proposal, for Codex to accept or reject.**  Keep raw-ordinal adjacency as the
+registered primary — it is what the transfer message registered — and add
+`mamba_record_row` adjacency as a **registered secondary** reported beside it.
+`mamba_record_row` is already carried in `join_map` and gives exact
+processed-sequence adjacency with no gaps.  Note that this is **not** the
+forbidden repair: the ban is on treating a missing ordinal as adjacent *in
+time*, whereas `mamba_record_row + 1` is the literal next row of the sequence
+the join operates on.  It is also arguably the adjacency the hypotheses are
+about — H1's `e_j - e_{j-1}` and H3's endpoint/filter semantics both act between
+**consecutive kept beats**, not between consecutive annotations.  Reporting both
+makes the size of the artifact measurable instead of invisible.
+
+Until Codex rules, the registered definition stands unchanged.
+
+## Q2 — Control B's permutation must be declared joint, not per-reason
+
+Control B preserves failure counts per `record x side x failure-reason` and
+permutes positions.  Applying an independent permutation per reason lets two
+reasons land on the same row.  The intended construction is presumably a
+**single joint permutation** of the position pool within `record x side`, to
+which the multiset of labels (`NO_EDGE` x a, `NOT_OPTIMAL` x b, `AMBIGUOUS` x c,
+`CERTIFIED` x rest) is then assigned — which preserves every per-reason count
+and cannot collide.  This must be stated, not inferred: it is the difference
+between a valid null and an ill-defined one, and an implementer forced to guess
+is an implementer contaminating the design.
+
+## Q3 — Holm's scope when M4 is unavailable
+
+Holm is registered across exactly four families.  Under branch 2
+(`MECHANISM_UNRESOLVED_INPUT_ABSENT`), H2 and H3 have no p-value at all.
+Correcting H1 and H4 across four families when two were never computed is
+over-conservative; correcting across two silently changes the registered
+multiplicity.  Codex must register which applies.  The partial results are not
+promoted to a verdict either way, but they are reported, so the number attached
+to them has to be defined in advance.
+
+## Q4 — how the cache-side `CERTIFIED` group is constructed
+
+A certified pair appears in `join_map` **once**, as the mamba row.  There is
+therefore no cache-side row carrying `status = CERTIFIED`.  M3 compares four
+groups per side, and Control B strata are `record x side`, so the cache-side
+certified group has to be derived from `cache_record_row` on certified mamba
+rows.  That derivation is obvious but unstated, and leaving it unstated is how
+two implementations end up with different denominators.
+
+## Q5 — cache rows whose endpoint RR is a stored `0.0`
+
+`rr_features` writes `nan -> 0.0` at record endpoints, so the first and last
+cache row of every record carries a real stored `0.0` — data meaning "no
+neighbour", not a missing value.  Their `d_inf` is necessarily on the order of a
+full RR interval, which lands them in the `>100 samples` bin: the exact bin H3's
+distance condition reads.  The population is small (2 rows x 22 DS1 records = 44
+of 12,158 non-certified cache rows, and fewer after certification), so this is
+hygiene rather than a threat — but they should be flagged
+`CACHE_ENDPOINT_ZERO`, counted separately, and excluded from the H3 distance
+condition, for the same reason censored rows are.
+
 # Negative controls and null computation
 
 Three controls, each **10,000 replicates**, master seed **`2026019`**, drawn per
@@ -760,6 +940,7 @@ detector execution.  After the PR, **STOP** and wait for the user.
 
 # Implementation checklist
 
+- [ ] Codex resolves the five open design questions (Q1-Q5)
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
@@ -861,3 +1042,57 @@ detector execution.  After the PR, **STOP** and wait for the user.
   probability was opened, no association or training occurred, and no join rule
   constant was changed.  `mit-bih/q5d_order_preserving_beat_join.py` was read
   and not modified.  The change set is this one new file.
+
+- 2026-08-11 — **Pre-merge review of the transcription (Claude Code).  Five
+  open questions raised for Codex; one self-inflicted loophole closed; the
+  execution contract registered.**  Still no code, no notebook, no execution,
+  no Drive read, no rule change.
+
+  *A loophole in the transcription's own wording, closed.*  §Preregistration
+  principle previously allowed a definition to be "amended and re-approved
+  through the Decision log ... before the affected measurement runs".  Read
+  literally that permits amending M1-M4 **after** M0 has been seen, as long as
+  M1 has not started — which is exactly what the transfer message forbids.
+  Corrected: once any M0 result has been observed, an M1-M4 definition may not
+  be amended at all; the run STOPs and returns to Codex.  There is no in-flight
+  repair path.
+
+  *Five open design questions (§Open design questions for Codex).*  Raised, not
+  decided.  Q1 is the substantive one: `raw_atr_ordinal` enumerates **all**
+  `.atr` annotations including dropped ones, so every dropped F beat splits a
+  run, the suppression is multiplicative in run length, and F beats are
+  concentrated in record **208** — biasing `share_in_long_runs` and the
+  run-length gate **toward H1 and away from H3**, hardest in the record that
+  motivates the diagnostic.  A proposal is recorded (keep raw-ordinal adjacency
+  primary, add `mamba_record_row` adjacency as a registered secondary, which is
+  sequence adjacency and not the forbidden time-based repair), but the
+  registered definition stands unchanged until Codex rules.  Q2-Q5 are
+  under-specifications that would otherwise force implementer choices: Control
+  B's permutation must be declared joint rather than per-reason; Holm's scope
+  when M4 is absent; the derivation of the cache-side `CERTIFIED` group, which
+  has no row of its own in `join_map`; and the `CACHE_ENDPOINT_ZERO` rows whose
+  stored `0.0` endpoints land them in the very distance bin H3 reads.
+
+  *Execution contract registered (§Runtime and execution-environment
+  contract).*  Engineering only, no scientific rule touched.  Per-stage
+  dependencies declared up front (`pyarrow` before the run, not at bundle-write
+  time); registered-input access opt-in and re-verified through the frozen
+  module's own `build_preflight()` / `verify_preflight_freeze()`; the canonical
+  bundle checked for the absence of `SUPERSEDED.json` and for code SHA-256
+  `6b098c67…` rather than trusted by path; capability assertions and `__file__`
+  printing on **both** modules; every stage announcing `RUN`/`SKIP`.  Each of
+  these closes a failure mode Q5-D actually hit.
+
+  *Cost, measured rather than assumed.*  Q5-E's controls permute an
+  already-measured 24,341-row table instead of rerunning the matcher, so the
+  whole diagnostic is minutes, not the ~14 hours that forced Q5-D to shard.
+  `load_mamba_sequences()` reads only `feats` and `pid`, never `beat`/`ref`, so
+  peak memory is small.  No sharding, resume directory or cross-session
+  checkpointing is registered; an implementation that needs them has a defect,
+  not a scheduling problem.
+
+  *One inherited number confirmed, not corrected.*  `5 of 13` looked
+  inconsistent with the parent spec's 12 numbered gates.  `evaluate_gates()`
+  emits 13 — gate 2 splits into `2a_leg1_source_replay` / `2b_leg2_record_
+  boundaries`, plus `13_ambiguity_reported`.  The figure is right and is now
+  annotated so no one "fixes" it.
