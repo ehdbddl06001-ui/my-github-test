@@ -3361,5 +3361,515 @@ window.USMLE_QUESTIONS = [
   ],
   "appendix": null,
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0055",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility",
+  "type": "Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility",
+  "difficulty": 4,
+  "created": "2026-08-11",
+  "vignette": "A 4-year-old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examination reveals hepatosplenomegaly and residual scarring from prior skin abscesses. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most likely explanation for this patient's recurrent infections?",
+  "options": [
+   "Absence of functional B lymphocytes leading to failure of opsonizing antibody production",
+   "Deficient complement-mediated membrane attack complex formation",
+   "Failure of neutrophils to generate reactive oxygen species via NADPH oxidase",
+   "Impaired T-cell mediated killing of intracellular pathogens due to IL-12 receptor deficiency",
+   "Failure of neutrophils to fuse phagosomes with lysosomes containing myeloperoxidase"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 카탈라아제 양성균(S. aureus 등)에 의한 반복 감염, 농양 형성, 그리고 대조군 대비 현저히 감소한 DHR 산화폭발 신호는 NADPH oxidase 복합체가 활성산소종(ROS)을 만들지 못함을 시사한다. 카탈라아제 양성균은 자신이 만든 소량의 과산화수소마저 분해해버리므로, 식세포가 균을 삼켜도(phagocytosis) 죽이지 못해(killing 실패) 만성 육아종병(chronic granulomatous disease)의 전형적 임상상이 나타난다.\n- 오답감별:\n  - (A) B세포 결핍(예: Bruton agammaglobulinemia)은 저감마글로불린혈증·피막형성균 반복감염을 보이지만, 이 환아는 면역글로불린이 정상이며 농양형 감염 양상과 맞지 않는다.\n  - (B) 말단보체(C5-9) 결핍은 주로 Neisseria 감염 재발과 연관되며, 이 환아의 임상상과 일치하지 않는다.\n  - (D) IL-12 수용체 결핍(Th1 경로 결함)은 주로 마이코박테리아·비장티푸스성 살모넬라 감염을 유발하며, 산화폭발 검사 이상을 설명하지 못한다.\n  - (E) 골수과산화효소(MPO) 결핍도 살균능 저하를 일으키지만 대개 무증상이거나 경미하며, MPO는 NADPH oxidase 하위 단계라 DHR 검사(NADPH oxidase 의존 ROS 측정)는 오히려 정상이거나 과장된 우측 이동을 보인다 — 이 환아의 뚜렷한 DHR 감소와 맞지 않는다.\n- 임상핵심: 카탈라아제 양성균(S. aureus, Aspergillus, Serratia, Burkholderia cepacia 등)에 의한 반복 감염·농양 + DHR/NBT 검사 이상 → 만성 육아종병을 의심하고 유전자검사로 확진, 예방적 항생제·항진균제 ± 인터페론감마로 관리한다.\n- 출처: Harrison's Principles of Internal Medicine; Robbins Basic Pathology — Primary Immunodeficiency Diseases.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "카탈라아제 양성균(S. aureus 등)에 의한 반복 감염, 농양 형성, 그리고 대조군 대비 현저히 감소한 DHR 산화폭발 신호는 NADPH oxidase 복합체가 활성산소종(ROS)을 만들지 못함을 시사한다. 카탈라아제 양성균은 자신이 만든 소량의 과산화수소마저 분해해버리므로, 식세포가 균을 삼켜도(phagocytosis) 죽이지 못해(killing 실패) 만성 육아종병(chronic granulomatous disease)의 전형적 임상상이 나타난다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) B세포 결핍(예: Bruton agammaglobulinemia)은 저감마글로불린혈증·피막형성균 반복감염을 보이지만, 이 환아는 면역글로불린이 정상이며 농양형 감염 양상과 맞지 않는다.\n(B) 말단보체(C5-9) 결핍은 주로 Neisseria 감염 재발과 연관되며, 이 환아의 임상상과 일치하지 않는다.\n(D) IL-12 수용체 결핍(Th1 경로 결함)은 주로 마이코박테리아·비장티푸스성 살모넬라 감염을 유발하며, 산화폭발 검사 이상을 설명하지 못한다.\n(E) 골수과산화효소(MPO) 결핍도 살균능 저하를 일으키지만 대개 무증상이거나 경미하며, MPO는 NADPH oxidase 하위 단계라 DHR 검사(NADPH oxidase 의존 ROS 측정)는 오히려 정상이거나 과장된 우측 이동을 보인다 — 이 환아의 뚜렷한 DHR 감소와 맞지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "카탈라아제 양성균(S. aureus, Aspergillus, Serratia, Burkholderia cepacia 등)에 의한 반복 감염·농양 + DHR/NBT 검사 이상 → 만성 육아종병을 의심하고 유전자검사로 확진, 예방적 항생제·항진균제 ± 인터페론감마로 관리한다."
+   },
+   {
+    "k": "출처",
+    "v": "Harrison's Principles of Internal Medicine; Robbins Basic Pathology — Primary Immunodeficiency Diseases."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (immunology · phagocyte oxidative burst defects)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "96/60 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "108회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "24회/분"
+   },
+   {
+    "name": "체온",
+    "value": "38.7 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "백혈구",
+    "value": "16,200 /mm³",
+    "ref": "5,000–15,500(연령별)"
+   },
+   {
+    "name": "호중구 절대수",
+    "value": "9,800 /mm³",
+    "ref": "1,500–8,500(연령별)"
+   },
+   {
+    "name": "혈청 면역글로불린(IgG/IgA/IgM)",
+    "value": "연령별 정상범위",
+    "ref": "정상"
+   },
+   {
+    "name": "DHR(dihydrorhodamine) 산화폭발 검사",
+    "value": "대조군 대비 형광전이 현저히 감소",
+    "ref": "정상: 대조군 대비 뚜렷한 우측 이동"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0056",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "Homocystinuria — Cystathionine Beta-Synthase Deficiency as a Marfan Mimicker",
+  "type": "Homocystinuria — Cystathionine Beta-Synthase Deficiency as a Marfan Mimicker",
+  "difficulty": 4,
+  "created": "2026-08-11",
+  "vignette": "A 14-year-old boy is evaluated for tall stature and long, thin fingers. He has mild intellectual disability and a history of a stroke at age 12. Slit-lamp examination reveals inferior lens subluxation. Transthoracic echocardiography shows no aortic root dilation. Laboratory studies are shown.",
+  "question": "Which of the following enzyme deficiencies best explains this presentation?",
+  "options": [
+   "Cystathionine beta-synthase deficiency",
+   "Methionine synthase (cobalamin-dependent) deficiency",
+   "Methylmalonyl-CoA mutase deficiency",
+   "Branched-chain alpha-ketoacid dehydrogenase deficiency",
+   "Phenylalanine hydroxylase deficiency"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 마르판양 체형(marfanoid habitus) + 하방 수정체 탈구(Marfan의 상방 탈구와 반대) + 지적장애 + 조기 혈전색전증(뇌졸중) + 대동맥근부 확장 없음(구조적 결합조직병 아님을 시사) + 현저히 상승한 혈장 호모시스테인·메티오닌(비타민 B12·엽산은 정상, 재메틸화 경로 결함 아님)은 전형적 고전형 호모시스틴뇨증(classic homocystinuria), 즉 시스타치오닌 베타-신테아제(CBS) 결핍을 시사한다.\n- 오답감별:\n  - (B) 메티오닌 합성효소(재메틸화 경로) 결핍은 호모시스테인은 상승하지만 메티오닌은 오히려 감소하며, 거대적혈모구빈혈을 동반한다 — 이 환자의 메티오닌 상승과 맞지 않는다.\n  - (C) 메틸말로닐-CoA 뮤타아제 결핍은 메틸말론산혈증을 일으켜 영아기 대사성산증으로 발현하며, 마르판양 체형이나 수정체 탈구를 설명하지 못한다.\n  - (D) 분지쇄 알파케토산탈수소효소 결핍(단풍시럽뇨병)은 신생아기 뇌병증과 특유의 단내 소변으로 발현하며 이 임상상과 다르다.\n  - (E) 페닐알라닌 수산화효소 결핍(PKU)은 지적장애를 일으키지만 쥐오줌 냄새와 색소감소가 특징이며, 호모시스테인·메티오닌 상승이나 혈전색전증·수정체 탈구를 설명하지 못한다.\n- 임상핵심: 마르판양 체형 + 하방 수정체 탈구 + 조기 혈전색전증 + 지적장애 + 호모시스테인 상승 → 고전형 호모시스틴뇨증(CBS 결핍)을 의심한다. 마르판 증후군은 상방 수정체 탈구·대동맥근부 확장이 특징이라는 점으로 감별한다.\n- 출처: First Aid for the USMLE Step 1; Harper's Illustrated Biochemistry — Amino Acid Metabolism Disorders.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "마르판양 체형(marfanoid habitus) + 하방 수정체 탈구(Marfan의 상방 탈구와 반대) + 지적장애 + 조기 혈전색전증(뇌졸중) + 대동맥근부 확장 없음(구조적 결합조직병 아님을 시사) + 현저히 상승한 혈장 호모시스테인·메티오닌(비타민 B12·엽산은 정상, 재메틸화 경로 결함 아님)은 전형적 고전형 호모시스틴뇨증(classic homocystinuria), 즉 시스타치오닌 베타-신테아제(CBS) 결핍을 시사한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) 메티오닌 합성효소(재메틸화 경로) 결핍은 호모시스테인은 상승하지만 메티오닌은 오히려 감소하며, 거대적혈모구빈혈을 동반한다 — 이 환자의 메티오닌 상승과 맞지 않는다.\n(C) 메틸말로닐-CoA 뮤타아제 결핍은 메틸말론산혈증을 일으켜 영아기 대사성산증으로 발현하며, 마르판양 체형이나 수정체 탈구를 설명하지 못한다.\n(D) 분지쇄 알파케토산탈수소효소 결핍(단풍시럽뇨병)은 신생아기 뇌병증과 특유의 단내 소변으로 발현하며 이 임상상과 다르다.\n(E) 페닐알라닌 수산화효소 결핍(PKU)은 지적장애를 일으키지만 쥐오줌 냄새와 색소감소가 특징이며, 호모시스테인·메티오닌 상승이나 혈전색전증·수정체 탈구를 설명하지 못한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "마르판양 체형 + 하방 수정체 탈구 + 조기 혈전색전증 + 지적장애 + 호모시스테인 상승 → 고전형 호모시스틴뇨증(CBS 결핍)을 의심한다. 마르판 증후군은 상방 수정체 탈구·대동맥근부 확장이 특징이라는 점으로 감별한다."
+   },
+   {
+    "k": "출처",
+    "v": "First Aid for the USMLE Step 1; Harper's Illustrated Biochemistry — Amino Acid Metabolism Disorders."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (biochemistry · methionine metabolism disorders)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "118/76 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "84회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "16회/분"
+   },
+   {
+    "name": "체온",
+    "value": "36.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈장 총호모시스테인",
+    "value": "210 µmol/L",
+    "ref": "< 15"
+   },
+   {
+    "name": "혈청 메티오닌",
+    "value": "정상 상한 초과",
+    "ref": "정상범위 이내"
+   },
+   {
+    "name": "혈청 비타민 B12",
+    "value": "410 pg/mL",
+    "ref": "200–900"
+   },
+   {
+    "name": "혈청 엽산",
+    "value": "9.2 ng/mL",
+    "ref": "3.0–17.0"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0057",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Microbiology",
+  "subject_file": "Microbiology",
+  "subtopic": "Corynebacterium diphtheriae — Toxin Mechanism vs Other Bacterial Exotoxins",
+  "type": "Corynebacterium diphtheriae — Toxin Mechanism vs Other Bacterial Exotoxins",
+  "difficulty": 5,
+  "created": "2026-08-11",
+  "vignette": "A 6-year-old unvaccinated child presents with a grayish pseudomembrane over the tonsils and pharynx, tender bilateral cervical lymphadenopathy with neck swelling, and new-onset hoarseness. Vital signs and studies are shown.",
+  "question": "Which of the following best describes the mechanism by which this organism's toxin can later produce complications such as myocarditis and demyelinating peripheral neuropathy?",
+  "options": [
+   "Cleavage of SNARE proteins, blocking presynaptic acetylcholine release",
+   "Proteolysis of synaptobrevin, blocking release of inhibitory neurotransmitters",
+   "Irreversible activation of the Gi protein regulatory subunit of adenylate cyclase, increasing intracellular cAMP",
+   "Superantigen-mediated nonspecific activation of T cells, causing massive cytokine release",
+   "ADP-ribosylation of elongation factor 2, halting host cell protein synthesis"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 회백색 위막(pseudomembrane), 양측 경부 림프절종대를 동반한 'bull neck', 그리고 텔루라이트 한천에서 자란 그람양성 club-shaped 간균은 Corynebacterium diphtheriae를 시사한다. 디프테리아 독소는 NAD⁺를 이용해 신장인자-2(EF-2)를 ADP-리보실화하여 숙주세포의 단백질 합성을 정지시키며, 이 독성 효과가 심근세포와 슈반세포에 작용해 수 주 뒤 지연성 심근염과 탈수초성 말초신경병증을 일으킨다.\n- 오답감별:\n  - (A) SNARE 단백질 절단을 통한 아세틸콜린 분비 차단은 보툴리눔독소(Clostridium botulinum)의 기전으로, 이완성 마비를 일으키며 위막성 인두염과는 무관하다.\n  - (B) 시냅토브레빈 분해를 통한 억제성 신경전달물질 분비 차단은 파상풍독소(Clostridium tetani)의 기전으로, 경직성 마비(아관긴급)를 일으켜 이 임상상과 반대된다.\n  - (C) Gi 단백질 조절소단위 불활성화(정확히는 ADP-리보실화로 Gi를 불활성화해 cAMP를 올림)는 백일해독소(Bordetella pertussis)의 기전이며, 발작성 기침을 특징으로 하는 백일해에서 나타나지 이번 위막성 인두염과 다르다.\n  - (D) 초항원에 의한 비특이적 T세포 활성화는 독성쇼크증후군독소(TSST-1, Staphylococcus aureus)의 기전으로, 발열·발진·저혈압의 독성쇼크증후군을 일으키며 위막 형성과는 무관하다.\n- 임상핵심: 위막 + bull neck + 텔루라이트/뢰플러 배지에서 그람양성 club-shaped 간균 → 디프테리아. 독소는 (Pseudomonas 외독소 A와 공유하는 기전인) EF-2의 ADP-리보실화로 단백질 합성을 차단하며, 항독소+항생제로 치료하고 DTaP로 예방한다.\n- 출처: Sherris Medical Microbiology; First Aid for the USMLE Step 1 — Bacterial Exotoxins.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "회백색 위막(pseudomembrane), 양측 경부 림프절종대를 동반한 'bull neck', 그리고 텔루라이트 한천에서 자란 그람양성 club-shaped 간균은 Corynebacterium diphtheriae를 시사한다. 디프테리아 독소는 NAD⁺를 이용해 신장인자-2(EF-2)를 ADP-리보실화하여 숙주세포의 단백질 합성을 정지시키며, 이 독성 효과가 심근세포와 슈반세포에 작용해 수 주 뒤 지연성 심근염과 탈수초성 말초신경병증을 일으킨다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) SNARE 단백질 절단을 통한 아세틸콜린 분비 차단은 보툴리눔독소(Clostridium botulinum)의 기전으로, 이완성 마비를 일으키며 위막성 인두염과는 무관하다.\n(B) 시냅토브레빈 분해를 통한 억제성 신경전달물질 분비 차단은 파상풍독소(Clostridium tetani)의 기전으로, 경직성 마비(아관긴급)를 일으켜 이 임상상과 반대된다.\n(C) Gi 단백질 조절소단위 불활성화(정확히는 ADP-리보실화로 Gi를 불활성화해 cAMP를 올림)는 백일해독소(Bordetella pertussis)의 기전이며, 발작성 기침을 특징으로 하는 백일해에서 나타나지 이번 위막성 인두염과 다르다.\n(D) 초항원에 의한 비특이적 T세포 활성화는 독성쇼크증후군독소(TSST-1, Staphylococcus aureus)의 기전으로, 발열·발진·저혈압의 독성쇼크증후군을 일으키며 위막 형성과는 무관하다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "위막 + bull neck + 텔루라이트/뢰플러 배지에서 그람양성 club-shaped 간균 → 디프테리아. 독소는 (Pseudomonas 외독소 A와 공유하는 기전인) EF-2의 ADP-리보실화로 단백질 합성을 차단하며, 항독소+항생제로 치료하고 DTaP로 예방한다."
+   },
+   {
+    "k": "출처",
+    "v": "Sherris Medical Microbiology; First Aid for the USMLE Step 1 — Bacterial Exotoxins."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (microbiology · bacterial exotoxin mechanisms)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "100/64 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "118회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "24회/분"
+   },
+   {
+    "name": "체온",
+    "value": "38.1 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "인후 배양(텔루라이트 한천)",
+    "value": "그람양성 club-shaped 간균 성장",
+    "ref": "정상: 성장 없음"
+   },
+   {
+    "name": "백혈구",
+    "value": "13,800 /mm³",
+    "ref": "5,000–15,500(연령별)"
+   },
+   {
+    "name": "CRP",
+    "value": "42 mg/L",
+    "ref": "< 10"
+   },
+   {
+    "name": "심전도(율동)",
+    "value": "정상 동율동, PR간격 정상",
+    "ref": "정상"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0058",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Surgery",
+  "subject_file": "Surgery",
+  "subtopic": "Necrotizing Fasciitis — Recognition as a Surgical Emergency vs Cellulitis",
+  "type": "Necrotizing Fasciitis — Recognition as a Surgical Emergency vs Cellulitis",
+  "difficulty": 4,
+  "created": "2026-08-11",
+  "vignette": "A 58-year-old man with type 2 diabetes presents with rapidly worsening left leg pain that began 18 hours ago after a minor abrasion. The pain is disproportionate to the visible skin findings. Examination reveals bullae with dusky discoloration, crepitus on palpation, and diminished sensation over skin extending beyond the visible erythema. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Broad-spectrum intravenous antibiotics alone with close monitoring",
+   "Emergent surgical exploration and debridement",
+   "Hyperbaric oxygen therapy as the initial definitive treatment",
+   "Incision and drainage at the bedside without operative exploration",
+   "MRI of the extremity to confirm the diagnosis before treatment"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 소견에 비례하지 않는 통증, 수포와 암갈색 변색, 촉진상 염발음, 발적 경계를 넘어서는 감각저하에 패혈증 소견(저혈압·빈맥·발열)과 검사소견(백혈구증가·저나트륨혈증·젖산 상승)이 겹치면 괴사성근막염을 강하게 시사한다. 이는 임상적으로 진단하는 외과적 응급질환이며, 확진 자체가 수술장에서 이루어진다. 가장 적절한 다음 단계는 즉시 수술적 탐색과 괴사조직 절제이며, 광범위 항생제는 보조 수단이다.\n- 오답감별:\n  - (A) 항생제만으로는 괴사·감염된 조직(패혈증의 근원)을 제거하지 못해 감염원 조절(source control) 없이 사망률이 계속 높게 유지된다.\n  - (C) 고압산소요법은 일부 사례에서 보조적으로 쓰일 수 있으나 결코 초기 확정 치료가 될 수 없으며, 이를 위해 수술을 지연시켜서는 안 된다.\n  - (D) 침상 곁 절개배농은 근막면까지 충분히 탐색·절제하지 못해 부적절하며, 괴사성근막염은 마취 하 광범위 수술적 탐색(흔히 반복 절제)이 필요하다.\n  - (E) 영상검사를 먼저 시행하면 임상적으로 이미 진단 가능한 상황에서 생명을 구할 수술이 지연되며, 지연되는 매 시간이 사망률을 높인다.\n- 임상핵심: 통증이 소견에 비례하지 않음 + 수포/염발음/경계 너머 감각저하 + 전신독성 소견 → 괴사성근막염은 임상진단이자 외과적 응급이다. 영상 확인을 기다리지 말고 즉시 수술장으로 보내 광범위 항생제와 함께 절제한다.\n- 출처: Sabiston Textbook of Surgery; Surviving Sepsis Campaign — Necrotizing Skin/Soft Tissue Infection Source Control.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "소견에 비례하지 않는 통증, 수포와 암갈색 변색, 촉진상 염발음, 발적 경계를 넘어서는 감각저하에 패혈증 소견(저혈압·빈맥·발열)과 검사소견(백혈구증가·저나트륨혈증·젖산 상승)이 겹치면 괴사성근막염을 강하게 시사한다. 이는 임상적으로 진단하는 외과적 응급질환이며, 확진 자체가 수술장에서 이루어진다. 가장 적절한 다음 단계는 즉시 수술적 탐색과 괴사조직 절제이며, 광범위 항생제는 보조 수단이다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 항생제만으로는 괴사·감염된 조직(패혈증의 근원)을 제거하지 못해 감염원 조절(source control) 없이 사망률이 계속 높게 유지된다.\n(C) 고압산소요법은 일부 사례에서 보조적으로 쓰일 수 있으나 결코 초기 확정 치료가 될 수 없으며, 이를 위해 수술을 지연시켜서는 안 된다.\n(D) 침상 곁 절개배농은 근막면까지 충분히 탐색·절제하지 못해 부적절하며, 괴사성근막염은 마취 하 광범위 수술적 탐색(흔히 반복 절제)이 필요하다.\n(E) 영상검사를 먼저 시행하면 임상적으로 이미 진단 가능한 상황에서 생명을 구할 수술이 지연되며, 지연되는 매 시간이 사망률을 높인다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "통증이 소견에 비례하지 않음 + 수포/염발음/경계 너머 감각저하 + 전신독성 소견 → 괴사성근막염은 임상진단이자 외과적 응급이다. 영상 확인을 기다리지 말고 즉시 수술장으로 보내 광범위 항생제와 함께 절제한다."
+   },
+   {
+    "k": "출처",
+    "v": "Sabiston Textbook of Surgery; Surviving Sepsis Campaign — Necrotizing Skin/Soft Tissue Infection Source Control."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (surgery · necrotizing soft tissue infection)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "92/58 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "128회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "26회/분"
+   },
+   {
+    "name": "체온",
+    "value": "39.4 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "백혈구",
+    "value": "24,000 /mm³",
+    "ref": "4,000–11,000"
+   },
+   {
+    "name": "혈청 나트륨",
+    "value": "129 mEq/L",
+    "ref": "135–145"
+   },
+   {
+    "name": "혈청 크레아티닌",
+    "value": "1.8 mg/dL",
+    "ref": "0.7–1.3"
+   },
+   {
+    "name": "혈중 젖산",
+    "value": "4.2 mmol/L",
+    "ref": "0.5–2.2"
+   },
+   {
+    "name": "혈소판",
+    "value": "210,000 /mm³",
+    "ref": "150,000–400,000"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "소견 조합 → 감별 및 관리\n- 국소 발적·경계 뚜렷·통증이 소견에 비례·전신독성 없음 → 단순 봉와직염 → 경구/정맥 항생제, 외래 추적\n- 통증이 소견에 비례하지 않음 + 수포/암갈색 변색 + 촉진상 염발음(crepitus) + 발적 경계 너머 감각저하 + 패혈증 vitals → 괴사성근막염 의심 → **즉시 수술적 탐색·괴사조직 절제**(진단 확정 목적이 아니라 치료 목적), 광범위 항생제는 보조\n- 수술 소견(회백색 근막, 출혈 없는 절개, '손가락 검사' 양성 — 근막이 둔박리로 쉽게 벌어짐)이 확진의 핵심이며 영상검사로 대체하지 않는다\n",
+   "최신지견": "LRINEC 점수는 보조적 선별도구일 뿐이며 임상적으로 강하게 의심되면 점수와 무관하게 즉시 수술한다.",
+   "참고문헌": [
+    "Sabiston Textbook of Surgery, 21st ed.",
+    "Surviving Sepsis Campaign — Source Control in Necrotizing Skin and Soft Tissue Infections"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0059",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Congenital Complete Heart Block — Neonatal Lupus (Maternal Anti-Ro/SSA Antibody)",
+  "type": "Congenital Complete Heart Block — Neonatal Lupus (Maternal Anti-Ro/SSA Antibody)",
+  "difficulty": 4,
+  "created": "2026-08-11",
+  "vignette": "A newborn girl is noted to have a persistently slow heart rate on routine examination. She was born at 38 weeks via uncomplicated vaginal delivery to a mother with a history of joint pain and a photosensitive facial rash who has not been formally diagnosed with a rheumatologic condition. The infant is vigorous and feeding well. An ECG rhythm strip is shown. Vital signs and studies are shown.",
+  "question": "Which of the following is the most likely underlying mechanism for this infant's arrhythmia?",
+  "options": [
+   "A structural malformation of the atrioventricular septum obstructing electrical conduction",
+   "An accessory conduction pathway causing pre-excitation of the ventricles",
+   "Perinatal hypoxic injury to the sinoatrial node during delivery",
+   "Transplacental passage of maternal anti-Ro/SSA antibodies causing inflammatory injury to the fetal cardiac conduction system",
+   "An autosomal recessive mutation in a cardiac sodium channel gene causing conduction system dysfunction"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 광과민성 안면 발진과 관절통 병력이 있는(미진단) 어머니에서 항Ro/SSA·항La/SSB 항체가 양성이며, 신생아는 구조적으로 정상인 심장에서 완전 방실차단(ECG상 P파와 QRS의 완전한 해리, 느리고 규칙적인 이탈 리듬)을 보인다. 이는 모체 항체가 태반을 통과해 태아 방실결절에 면역매개성 섬유화·염증 손상을 일으키는 선천성 완전방실차단(신생아 루푸스)의 전형적 기전이다. 구조적으로 정상인 심초음파는 해부학적 원인이 아니라 후천적(면역매개) 전도장애임을 뒷받침한다.\n- 오답감별:\n  - (A) 방실중격의 구조적 기형(복잡 선천심질환의 일부)도 방실차단을 동반할 수 있으나, 이 환아는 심초음파상 구조적으로 정상이므로 배제된다.\n  - (B) 부전도로에 의한 조기흥분(WPW 등)은 서맥이 아니라 빈맥·조기흥분을 일으키므로 이 임상상과 반대다.\n  - (C) 분만 중 저산소성 동방결절 손상은 대개 고립된 완전방실해리를 일으키지 않으며, 구조적·대사적(트로포닌 정상)으로 정상인 심장과 강한 모체 혈청학적 소견이 있는 이 사례에서는 면역기전이 훨씬 부합한다.\n  - (E) 유전성 나트륨채널병증에 의한 전도장애도 가능은 하나, 이 모체 병력(항Ro/SSA·항La/SSB 양성)에서는 고전적 항체매개 기전이 압도적으로 더 흔하고 부합한다.\n- 임상핵심: 신생아 완전방실차단 + 어머니의 항Ro/SSA(±항La/SSB) 양성 → 선천성(신생아 루푸스 연관) 완전방실차단을 의심한다. 어머니는 기저 류마티스 질환 평가가 필요하며, 신생아는 영구형박동기 필요성을 추적 관찰한다.\n- 출처: Nelson Textbook of Pediatrics; ACC/AHA — Neonatal Lupus and Congenital Heart Block.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "광과민성 안면 발진과 관절통 병력이 있는(미진단) 어머니에서 항Ro/SSA·항La/SSB 항체가 양성이며, 신생아는 구조적으로 정상인 심장에서 완전 방실차단(ECG상 P파와 QRS의 완전한 해리, 느리고 규칙적인 이탈 리듬)을 보인다. 이는 모체 항체가 태반을 통과해 태아 방실결절에 면역매개성 섬유화·염증 손상을 일으키는 선천성 완전방실차단(신생아 루푸스)의 전형적 기전이다. 구조적으로 정상인 심초음파는 해부학적 원인이 아니라 후천적(면역매개) 전도장애임을 뒷받침한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 방실중격의 구조적 기형(복잡 선천심질환의 일부)도 방실차단을 동반할 수 있으나, 이 환아는 심초음파상 구조적으로 정상이므로 배제된다.\n(B) 부전도로에 의한 조기흥분(WPW 등)은 서맥이 아니라 빈맥·조기흥분을 일으키므로 이 임상상과 반대다.\n(C) 분만 중 저산소성 동방결절 손상은 대개 고립된 완전방실해리를 일으키지 않으며, 구조적·대사적(트로포닌 정상)으로 정상인 심장과 강한 모체 혈청학적 소견이 있는 이 사례에서는 면역기전이 훨씬 부합한다.\n(E) 유전성 나트륨채널병증에 의한 전도장애도 가능은 하나, 이 모체 병력(항Ro/SSA·항La/SSB 양성)에서는 고전적 항체매개 기전이 압도적으로 더 흔하고 부합한다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "신생아 완전방실차단 + 어머니의 항Ro/SSA(±항La/SSB) 양성 → 선천성(신생아 루푸스 연관) 완전방실차단을 의심한다. 어머니는 기저 류마티스 질환 평가가 필요하며, 신생아는 영구형박동기 필요성을 추적 관찰한다."
+   },
+   {
+    "k": "출처",
+    "v": "Nelson Textbook of Pediatrics; ACC/AHA — Neonatal Lupus and Congenital Heart Block."
+   }
+  ],
+  "source": "USMLE-style / MedKOS · ECG: synthetic rhythm strip (complete AV block)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "68/40 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "54회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "42회/분"
+   },
+   {
+    "name": "체온",
+    "value": "36.9 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "모체 항Ro/SSA 항체",
+    "value": "양성",
+    "ref": "음성"
+   },
+   {
+    "name": "모체 항La/SSB 항체",
+    "value": "양성",
+    "ref": "음성"
+   },
+   {
+    "name": "신생아 심초음파(구조)",
+    "value": "구조적 이상 없음",
+    "ref": "정상"
+   },
+   {
+    "name": "트로포닌",
+    "value": "0.01 ng/mL",
+    "ref": "< 0.04"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG cavb · 55 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,90.0 0.6,90.0 1.2,90.0 1.8,90.0 2.4,90.0 3.0,90.0 3.6,90.0 4.2,90.0 4.8,90.0 5.4,90.0 6.0,90.0 6.6,90.0 7.2,90.0 7.8,90.0 8.4,90.0 9.0,90.0 9.6,90.0 10.2,90.0 10.8,90.0 11.4,90.0 12.0,90.0 12.6,90.0 13.2,90.0 13.8,90.0 14.4,90.0 15.0,90.0 15.6,90.0 16.2,90.0 16.8,90.0 17.4,90.0 18.0,90.0 18.6,90.0 19.2,90.0 19.8,90.0 20.4,90.0 21.0,90.0 21.6,90.0 22.2,90.0 22.8,90.0 23.4,90.0 24.0,90.0 24.6,89.9 25.2,89.9 25.8,89.9 26.4,89.8 27.0,89.7 27.6,89.6 28.2,89.4 28.8,89.2 29.4,88.9 30.0,88.5 30.6,88.1 31.2,87.7 31.8,87.1 32.4,86.6 33.0,85.9 33.6,85.3 34.2,84.7 34.8,84.1 35.4,83.6 36.0,83.2 36.6,83.0 37.2,82.8 37.8,82.8 38.4,83.0 39.0,83.2 39.6,83.6 40.2,84.1 40.8,84.7 41.4,85.3 42.0,85.9 42.6,86.6 43.2,87.1 43.8,87.7 44.4,88.1 45.0,88.5 45.6,88.9 46.2,89.2 46.8,89.4 47.4,89.6 48.0,89.7 48.6,89.8 49.2,89.9 49.8,89.9 50.4,89.9 51.0,90.0 51.6,90.0 52.2,90.0 52.8,90.0 53.4,90.0 54.0,90.0 54.6,90.0 55.2,90.0 55.8,90.0 56.4,90.0 57.0,90.0 57.6,90.0 58.2,90.0 58.8,90.0 59.4,90.0 60.0,89.9 60.6,89.9 61.2,89.9 61.8,89.8 62.4,89.8 63.0,89.7 63.6,89.6 64.2,89.4 64.8,89.2 65.4,89.0 66.0,88.6 66.6,88.2 67.2,87.7 67.8,87.0 68.4,86.2 69.0,85.2 69.6,84.1 70.2,82.7 70.8,81.0 71.4,79.2 72.0,77.0 72.6,74.6 73.2,72.0 73.8,69.0 74.4,65.9 75.0,62.5 75.6,59.0 76.2,55.5 76.8,51.8 77.4,48.2 78.0,44.8 78.6,41.5 79.2,38.5 79.8,35.9 80.4,33.7 81.0,32.0 81.6,30.8 82.2,30.3 82.8,30.3 83.4,30.9 84.0,32.1 84.6,33.9 85.2,36.2 85.8,38.9 86.4,42.0 87.0,45.4 87.6,49.0 88.2,52.7 88.8,56.5 89.4,60.3 90.0,63.9 90.6,67.5 91.2,70.9 91.8,74.1 92.4,77.0 93.0,79.7 93.6,82.2 94.2,84.5 94.8,86.5 95.4,88.4 96.0,90.0 96.6,91.6 97.2,92.9 97.8,94.2 98.4,95.4 99.0,96.5 99.6,97.5 100.2,98.6 100.8,99.6 101.4,100.5 102.0,101.5 102.6,102.5 103.2,103.4 103.8,104.4 104.4,105.4 105.0,106.3 105.6,107.3 106.2,108.2 106.8,109.1 107.4,110.0 108.0,110.9 108.6,111.8 109.2,112.5 109.8,113.3 110.4,114.0 111.0,114.6 111.6,115.2 112.2,115.7 112.8,116.1 113.4,116.5 114.0,116.7 114.6,116.9 115.2,117.0 115.8,117.0 116.4,116.9 117.0,116.7 117.6,116.5 118.2,116.1 118.8,115.7 119.4,115.2 120.0,114.6 120.6,114.0 121.2,113.3 121.8,112.5 122.4,111.7 123.0,110.9 123.6,110.0 124.2,109.1 124.8,108.2 125.4,107.2 126.0,106.2 126.6,105.2 127.2,104.2 127.8,103.1 128.4,102.0 129.0,100.9 129.6,99.7 130.2,98.5 130.8,97.3 131.4,96.1 132.0,94.8 132.6,93.5 133.2,92.3 133.8,91.0 134.4,89.9 135.0,88.8 135.6,87.8 136.2,87.0 136.8,86.3 137.4,85.9 138.0,85.6 138.6,85.4 139.2,85.5 139.8,85.7 140.4,85.9 141.0,86.3 141.6,86.8 142.2,87.2 142.8,87.7 143.4,88.1 144.0,88.5 144.6,88.9 145.2,89.2 145.8,89.4 146.4,89.6 147.0,89.7 147.6,89.9 148.2,89.9 148.8,90.0 149.4,90.0 150.0,90.0 150.6,89.9 151.2,90.0 151.8,90.0 152.4,90.0 153.0,90.0 153.6,90.0 154.2,90.0 154.8,90.0 155.4,90.0 156.0,90.0 156.6,90.0 157.2,90.0 157.8,90.0 158.4,90.0 159.0,90.0 159.6,90.0 160.2,90.0 160.8,90.0 161.4,90.0 162.0,90.0 162.6,90.0 163.2,90.0 163.8,90.0 164.4,90.0 165.0,90.0 165.6,90.0 166.2,90.0 166.8,90.0 167.4,90.0 168.0,90.0 168.6,90.0 169.2,90.0 169.8,90.0 170.4,90.0 171.0,90.0 171.6,90.0 172.2,90.0 172.8,90.0 173.4,90.0 174.0,90.0 174.6,90.0 175.2,90.0 175.8,90.0 176.4,90.0 177.0,90.0 177.6,90.0 178.2,90.0 178.8,90.0 179.4,90.0 180.0,90.0 180.6,90.0 181.2,90.0 181.8,90.0 182.4,90.0 183.0,90.0 183.6,90.0 184.2,90.0 184.8,90.0 185.4,90.0 186.0,90.0 186.6,90.0 187.2,90.0 187.8,90.0 188.4,90.0 189.0,90.0 189.6,90.0 190.2,90.0 190.8,90.0 191.4,90.0 192.0,90.0 192.6,90.0 193.2,90.0 193.8,90.0 194.4,90.0 195.0,90.0 195.6,90.0 196.2,90.0 196.8,90.0 197.4,90.0 198.0,90.0 198.6,90.0 199.2,90.0 199.8,90.0 200.4,90.0 201.0,90.0 201.6,90.0 202.2,90.0 202.8,90.0 203.4,90.0 204.0,90.0 204.6,90.0 205.2,90.0 205.8,90.0 206.4,90.0 207.0,90.0 207.6,90.0 208.2,90.0 208.8,90.0 209.4,90.0 210.0,90.0 210.6,90.0 211.2,90.0 211.8,90.0 212.4,90.0 213.0,90.0 213.6,90.0 214.2,90.0 214.8,90.0 215.4,90.0 216.0,90.0 216.6,90.0 217.2,90.0 217.8,90.0 218.4,90.0 219.0,90.0 219.6,90.0 220.2,90.0 220.8,90.0 221.4,90.0 222.0,90.0 222.6,90.0 223.2,89.9 223.8,89.9 224.4,89.9 225.0,89.8 225.6,89.7 226.2,89.6 226.8,89.4 227.4,89.1 228.0,88.8 228.6,88.4 229.2,87.9 229.8,87.2 230.4,86.4 231.0,85.3 231.6,84.1 232.2,82.7 232.8,81.1 233.4,79.2 234.0,77.2 234.6,74.9 235.2,72.4 235.8,69.8 236.4,67.0 237.0,64.0 237.6,61.0 238.2,57.9 238.8,54.7 239.4,51.6 240.0,48.4 240.6,45.4 241.2,42.4 241.8,39.6 242.4,37.0 243.0,34.7 243.6,32.7 244.2,31.1 244.8,30.0 245.4,29.4 246.0,29.3 246.6,29.7 247.2,30.7 247.8,32.2 248.4,34.2 249.0,36.7 249.6,39.6 250.2,42.8 250.8,46.3 251.4,50.0 252.0,53.7 252.6,57.5 253.2,61.3 253.8,64.9 254.4,68.4 255.0,71.8 255.6,74.9 256.2,77.8 256.8,80.4 257.4,82.9 258.0,85.1 258.6,87.1 259.2,88.8 259.8,90.5 260.4,91.9 261.0,93.3 261.6,94.5 262.2,95.7 262.8,96.8 263.4,97.8 264.0,98.8 264.6,99.8 265.2,100.8 265.8,101.8 266.4,102.7 267.0,103.7 267.6,104.7 268.2,105.6 268.8,106.6 269.4,107.5 270.0,108.5 270.6,109.4 271.2,110.3 271.8,111.1 272.4,112.0 273.0,112.8 273.6,113.5 274.2,114.2 274.8,114.8 275.4,115.3 276.0,115.8 276.6,116.2 277.2,116.5 277.8,116.8 278.4,116.9 279.0,117.0 279.6,117.0 280.2,116.9 280.8,116.7 281.4,116.4 282.0,116.0 282.6,115.6 283.2,115.1 283.8,114.5 284.4,113.8 285.0,113.1 285.6,112.3 286.2,111.5 286.8,110.7 287.4,109.8 288.0,108.9 288.6,108.0 289.2,107.1 289.8,106.1 290.4,105.2 291.0,104.3 291.6,103.3 292.2,102.5 292.8,101.6 293.4,100.7 294.0,99.9 294.6,99.1 295.2,98.4 295.8,97.7 296.4,97.0 297.0,96.4 297.6,95.8 298.2,95.2 298.8,94.7 299.4,94.2 300.0,93.7 300.6,93.3 301.2,93.0 301.8,92.6 302.4,92.3 303.0,92.0 303.6,91.8 304.2,91.6 304.8,91.4 305.4,91.2 306.0,91.0 306.6,90.9 307.2,90.8 307.8,90.7 308.4,90.6 309.0,90.5 309.6,90.4 310.2,90.3 310.8,90.3 311.4,90.2 312.0,90.2 312.6,90.2 313.2,90.1 313.8,90.0 314.4,90.0 315.0,90.0 315.6,90.0 316.2,90.0 316.8,90.0 317.4,90.0 318.0,90.0 318.6,90.0 319.2,90.0 319.8,90.0 320.4,90.0 321.0,90.0 321.6,90.0 322.2,90.0 322.8,90.0 323.4,90.0 324.0,90.0 324.6,89.9 325.2,89.9 325.8,89.9 326.4,89.8 327.0,89.7 327.6,89.6 328.2,89.4 328.8,89.2 329.4,88.9 330.0,88.5 330.6,88.1 331.2,87.7 331.8,87.1 332.4,86.6 333.0,85.9 333.6,85.3 334.2,84.7 334.8,84.1 335.4,83.6 336.0,83.2 336.6,83.0 337.2,82.8 337.8,82.8 338.4,83.0 339.0,83.2 339.6,83.6 340.2,84.1 340.8,84.7 341.4,85.3 342.0,85.9 342.6,86.6 343.2,87.1 343.8,87.7 344.4,88.1 345.0,88.5 345.6,88.9 346.2,89.2 346.8,89.4 347.4,89.6 348.0,89.7 348.6,89.8 349.2,89.9 349.8,89.9 350.4,89.9 351.0,90.0 351.6,90.0 352.2,90.0 352.8,90.0 353.4,90.0 354.0,90.0 354.6,90.0 355.2,90.0 355.8,90.0 356.4,90.0 357.0,90.0 357.6,90.0 358.2,90.0 358.8,90.0 359.4,90.0 360.0,90.0 360.6,90.0 361.2,90.0 361.8,90.0 362.4,90.0 363.0,90.0 363.6,90.0 364.2,90.0 364.8,90.0 365.4,90.0 366.0,90.0 366.6,90.0 367.2,90.0 367.8,90.0 368.4,90.0 369.0,90.0 369.6,90.0 370.2,90.0 370.8,90.0 371.4,90.0 372.0,90.0 372.6,90.0 373.2,90.0 373.8,90.0 374.4,90.0 375.0,90.0 375.6,90.0 376.2,90.0 376.8,90.0 377.4,90.0 378.0,90.0 378.6,90.0 379.2,90.0 379.8,90.0 380.4,90.0 381.0,90.0 381.6,90.0 382.2,90.0 382.8,90.0 383.4,90.0 384.0,90.0 384.6,90.0 385.2,90.0 385.8,90.0 386.4,90.0 387.0,90.0 387.6,89.9 388.2,89.9 388.8,89.9 389.4,89.8 390.0,89.7 390.6,89.6 391.2,89.5 391.8,89.3 392.4,89.1 393.0,88.8 393.6,88.4 394.2,87.9 394.8,87.3 395.4,86.6 396.0,85.7 396.6,84.6 397.2,83.3 397.8,81.8 398.4,80.0 399.0,78.0 399.6,75.8 400.2,73.2 400.8,70.4 401.4,67.3 402.0,64.1 402.6,60.7 403.2,57.1 403.8,53.5 404.4,49.9 405.0,46.3 405.6,42.9 406.2,39.8 406.8,37.0 407.4,34.6 408.0,32.7 408.6,31.3 409.2,30.4 409.8,30.2 410.4,30.6 411.0,31.5 411.6,33.0 412.2,35.1 412.8,37.6 413.4,40.6 414.0,43.8 414.6,47.3 415.2,51.0 415.8,54.8 416.4,58.6 417.0,62.3 417.6,65.9 418.2,69.4 418.8,72.6 419.4,75.7 420.0,78.5 420.6,81.1 421.2,83.5 421.8,85.6 422.4,87.5 423.0,89.3 423.6,90.9 424.2,92.3 424.8,93.6 425.4,94.7 426.0,95.8 426.6,96.8 427.2,97.7 427.8,98.6 428.4,99.4 429.0,100.1 429.6,100.8 430.2,101.4 430.8,101.9 431.4,102.4 432.0,102.8 432.6,103.2 433.2,103.5 433.8,103.8 434.4,104.2 435.0,104.5 435.6,104.9 436.2,105.3 436.8,105.9 437.4,106.5 438.0,107.2 438.6,108.0 439.2,108.8 439.8,109.7 440.4,110.6 441.0,111.5 441.6,112.4 442.2,113.1 442.8,113.8 443.4,114.3 444.0,114.6 444.6,114.9 445.2,114.9 445.8,114.9 446.4,114.7 447.0,114.3 447.6,113.9 448.2,113.3 448.8,112.7 449.4,112.0 450.0,111.2 450.6,110.4 451.2,109.5 451.8,108.6 452.4,107.7 453.0,106.8 453.6,105.9 454.2,104.9 454.8,104.0 455.4,103.1 456.0,102.2 456.6,101.3 457.2,100.5 457.8,99.7 458.4,98.9 459.0,98.2 459.6,97.5 460.2,96.8 460.8,96.2 461.4,95.6 462.0,95.0 462.6,94.5 463.2,94.1 463.8,93.6 464.4,93.2 465.0,92.9 465.6,92.5 466.2,92.2 466.8,92.0 467.4,91.7 468.0,91.5 468.6,91.3 469.2,91.1 469.8,91.0 470.4,90.8 471.0,90.7 471.6,90.6 472.2,90.5 472.8,90.5 473.4,90.4 474.0,90.3 474.6,90.3 475.2,90.2 475.8,90.2 476.4,90.2 477.0,90.1 477.6,90.0 478.2,90.0 478.8,90.0 479.4,90.0 480.0,90.0 480.6,90.0 481.2,90.0 481.8,90.0 482.4,90.0 483.0,90.0 483.6,90.0 484.2,90.0 484.8,90.0 485.4,90.0 486.0,90.0 486.6,90.0 487.2,90.0 487.8,90.0 488.4,90.0 489.0,90.0 489.6,90.0 490.2,90.0 490.8,90.0 491.4,90.0 492.0,90.0 492.6,90.0 493.2,90.0 493.8,90.0 494.4,90.0 495.0,90.0 495.6,90.0 496.2,90.0 496.8,90.0 497.4,90.0 498.0,90.0 498.6,90.0 499.2,90.0 499.8,90.0 500.4,90.0 501.0,90.0 501.6,90.0 502.2,90.0 502.8,90.0 503.4,90.0 504.0,90.0 504.6,90.0 505.2,90.0 505.8,90.0 506.4,90.0 507.0,90.0 507.6,90.0 508.2,90.0 508.8,90.0 509.4,90.0 510.0,90.0 510.6,90.0 511.2,90.0 511.8,90.0 512.4,90.0 513.0,90.0 513.6,90.0 514.2,90.0 514.8,90.0 515.4,90.0 516.0,90.0 516.6,90.0 517.2,90.0 517.8,90.0 518.4,90.0 519.0,90.0 519.6,90.0 520.2,90.0 520.8,90.0 521.4,90.0 522.0,90.0 522.6,90.0 523.2,90.0 523.8,90.0 524.4,89.9 525.0,89.9 525.6,89.9 526.2,89.8 526.8,89.7 527.4,89.6 528.0,89.4 528.6,89.2 529.2,89.0 529.8,88.7 530.4,88.3 531.0,87.8 531.6,87.3 532.2,86.8 532.8,86.2 533.4,85.5 534.0,84.9 534.6,84.3 535.2,83.8 535.8,83.4 536.4,83.0 537.0,82.9 537.6,82.8 538.2,82.9 538.8,83.1 539.4,83.5 540.0,84.0 540.6,84.5 541.2,85.1 541.8,85.7 542.4,86.4 543.0,86.9 543.6,87.5 544.2,88.0 544.8,88.4 545.4,88.8 546.0,89.1 546.6,89.3 547.2,89.5 547.8,89.6 548.4,89.7 549.0,89.8 549.6,89.9 550.2,89.9 550.8,89.9 551.4,89.9 552.0,89.9 552.6,89.8 553.2,89.8 553.8,89.7 554.4,89.6 555.0,89.5 555.6,89.3 556.2,89.0 556.8,88.7 557.4,88.3 558.0,87.8 558.6,87.1 559.2,86.4 559.8,85.4 560.4,84.3 561.0,82.9 561.6,81.4 562.2,79.5 562.8,77.4 563.4,75.1 564.0,72.5 564.6,69.6 565.2,66.5 565.8,63.2 566.4,59.7 567.0,56.1 567.6,52.5 568.2,48.9 568.8,45.4 569.4,42.1 570.0,39.0 570.6,36.3 571.2,34.0 571.8,32.2 572.4,31.0 573.0,30.3 573.6,30.2 574.2,30.8 574.8,31.9 575.4,33.6 576.0,35.7 576.6,38.4 577.2,41.4 577.8,44.8 578.4,48.3 579.0,52.0 579.6,55.8 580.2,59.6 580.8,63.3 581.4,66.9 582.0,70.3 582.6,73.5 583.2,76.5 583.8,79.3 584.4,81.8 585.0,84.1 585.6,86.2 586.2,88.1 586.8,89.7 587.4,91.3 588.0,92.7 588.6,94.0 589.2,95.2 589.8,96.3 590.4,97.4 591.0,98.4 591.6,99.4 592.2,100.4 592.8,101.3 593.4,102.3 594.0,103.3 594.6,104.2 595.2,105.2 595.8,106.1 596.4,107.1 597.0,108.0 597.6,109.0 598.2,109.9 598.8,110.8 599.4,111.6 600.0,112.4 600.6,113.2 601.2,113.9 601.8,114.5 602.4,115.1 603.0,115.6 603.6,116.1 604.2,116.4 604.8,116.7 605.4,116.9 606.0,117.0 606.6,117.0 607.2,116.9 607.8,116.8 608.4,116.5 609.0,116.2 609.6,115.8 610.2,115.3 610.8,114.7 611.4,114.1 612.0,113.4 612.6,112.7 613.2,111.9 613.8,111.1 614.4,110.2 615.0,109.3 615.6,108.4 616.2,107.5 616.8,106.5 617.4,105.6 618.0,104.7 618.6,103.8 619.2,102.9 619.8,102.0 620.4,101.1 621.0,100.3 621.6,99.5 622.2,98.7 622.8,98.0 623.4,97.3 624.0,96.6 624.6,96.0 625.2,95.3 625.8,94.8 626.4,94.2 627.0,93.6 627.6,93.1 628.2,92.5 628.8,91.9 629.4,91.3 630.0,90.7 630.6,90.0 631.2,89.3 631.8,88.6 632.4,87.8 633.0,87.0 633.6,86.3 634.2,85.5 634.8,84.8 635.4,84.2 636.0,83.8 636.6,83.4 637.2,83.2 637.8,83.1 638.4,83.2 639.0,83.5 639.6,83.8 640.2,84.3 640.8,84.8 641.4,85.3 642.0,85.9 642.6,86.6 643.2,87.1 643.8,87.7 644.4,88.1 645.0,88.5 645.6,88.9 646.2,89.2 646.8,89.4 647.4,89.6 648.0,89.7 648.6,89.8 649.2,89.9 649.8,89.9 650.4,89.9 651.0,90.0 651.6,90.0 652.2,90.0 652.8,90.0 653.4,90.0 654.0,90.0 654.6,90.0 655.2,90.0 655.8,90.0 656.4,90.0 657.0,90.0 657.6,90.0 658.2,90.0 658.8,90.0 659.4,90.0 660.0,90.0 660.6,90.0 661.2,90.0 661.8,90.0 662.4,90.0 663.0,90.0 663.6,90.0 664.2,90.0 664.8,90.0 665.4,90.0 666.0,90.0 666.6,90.0 667.2,90.0 667.8,90.0 668.4,90.0 669.0,90.0 669.6,90.0 670.2,90.0 670.8,90.0 671.4,90.0 672.0,90.0 672.6,90.0 673.2,90.0 673.8,90.0 674.4,90.0 675.0,90.0 675.6,90.0 676.2,90.0 676.8,90.0 677.4,90.0 678.0,90.0 678.6,90.0 679.2,90.0 679.8,90.0 680.4,90.0 681.0,90.0 681.6,90.0 682.2,90.0 682.8,90.0 683.4,90.0 684.0,90.0 684.6,90.0 685.2,90.0 685.8,90.0 686.4,90.0 687.0,90.0 687.6,90.0 688.2,90.0 688.8,90.0 689.4,90.0 690.0,90.0 690.6,90.0 691.2,90.0 691.8,90.0 692.4,90.0 693.0,90.0 693.6,90.0 694.2,90.0 694.8,90.0 695.4,90.0 696.0,90.0 696.6,90.0 697.2,90.0 697.8,90.0 698.4,90.0 699.0,90.0 699.6,90.0 700.2,90.0 700.8,90.0 701.4,90.0 702.0,90.0 702.6,90.0 703.2,90.0 703.8,90.0 704.4,90.0 705.0,90.0 705.6,90.0 706.2,90.0 706.8,90.0 707.4,90.0 708.0,90.0 708.6,90.0 709.2,90.0 709.8,90.0 710.4,90.0 711.0,90.0 711.6,90.0 712.2,90.0 712.8,90.0 713.4,90.0 714.0,90.0 714.6,89.9 715.2,89.9 715.8,89.9 716.4,89.8 717.0,89.8 717.6,89.7 718.2,89.6 718.8,89.4 719.4,89.2 720.0,88.9 720.6,88.6 721.2,88.2 721.8,87.6 722.4,86.9 723.0,86.1 723.6,85.1 724.2,83.9 724.8,82.5 725.4,80.8 726.0,78.8 726.6,76.6 727.2,74.0 727.8,71.2 728.4,68.1 729.0,64.7 729.6,61.0 730.2,57.1 730.8,53.1 731.4,49.0 732.0,44.9 732.6,40.8 733.2,36.9 733.8,33.4 734.4,30.2 735.0,27.5 735.6,25.3 736.2,23.9 736.8,23.1 737.4,23.1 738.0,23.9 738.6,25.3 739.2,27.5 739.8,30.2 740.4,33.5 741.0,37.2 741.6,41.2 742.2,45.5 742.8,49.8 743.4,54.2 744.0,58.4 744.6,62.5 745.2,66.5 745.8,70.2 746.4,73.6 747.0,76.7 747.6,79.6 748.2,82.2 748.8,84.5 749.4,86.6 750.0,88.4 750.6,90.1 751.2,91.6 751.8,93.0 752.4,94.3 753.0,95.5 753.6,96.6 754.2,97.6 754.8,98.7 755.4,99.6 756.0,100.6 756.6,101.6 757.2,102.6 757.8,103.5 758.4,104.5 759.0,105.5 759.6,106.4 760.2,107.4 760.8,108.3 761.4,109.2 762.0,110.1 762.6,111.0 763.2,111.8 763.8,112.6 764.4,113.4 765.0,114.1 765.6,114.7 766.2,115.2 766.8,115.7 767.4,116.2 768.0,116.5 768.6,116.7 769.2,116.9 769.8,117.0 770.4,117.0 771.0,116.9 771.6,116.7 772.2,116.4 772.8,116.1 773.4,115.7 774.0,115.2 774.6,114.6 775.2,113.9 775.8,113.2 776.4,112.5 777.0,111.7 777.6,110.8 778.2,110.0 778.8,109.1 779.4,108.2 780.0,107.2 780.6,106.3 781.2,105.4 781.8,104.4 782.4,103.5 783.0,102.6 783.6,101.7 784.2,100.9 784.8,100.1 785.4,99.3 786.0,98.5 786.6,97.8 787.2,97.1 787.8,96.5 788.4,95.9 789.0,95.3 789.6,94.8 790.2,94.3 790.8,93.8 791.4,93.4 792.0,93.0 792.6,92.7 793.2,92.4 793.8,92.1 794.4,91.8 795.0,91.6 795.6,91.4 796.2,91.2 796.8,91.1 797.4,90.9 798.0,90.8 798.6,90.7 799.2,90.6 799.8,90.5 800.4,90.4 801.0,90.4 801.6,90.3 802.2,90.2 802.8,90.2 803.4,90.2 804.0,90.1 804.6,90.0 805.2,90.0 805.8,90.0 806.4,90.0 807.0,90.0 807.6,90.0 808.2,90.0 808.8,90.0 809.4,90.0 810.0,90.0 810.6,90.0 811.2,90.0 811.8,90.0 812.4,90.0 813.0,90.0 813.6,90.0 814.2,90.0 814.8,90.0 815.4,90.0 816.0,90.0 816.6,90.0 817.2,90.0 817.8,90.0 818.4,90.0 819.0,90.0 819.6,90.0 820.2,90.0 820.8,90.0 821.4,90.0 822.0,90.0 822.6,90.0 823.2,90.0 823.8,90.0 824.4,89.9 825.0,89.9 825.6,89.9 826.2,89.8 826.8,89.7 827.4,89.6 828.0,89.4 828.6,89.2 829.2,89.0 829.8,88.7 830.4,88.3 831.0,87.8 831.6,87.3 832.2,86.8 832.8,86.2 833.4,85.5 834.0,84.9 834.6,84.3 835.2,83.8 835.8,83.4 836.4,83.0 837.0,82.9 837.6,82.8 838.2,82.9 838.8,83.1 839.4,83.5 840.0,84.0 840.6,84.5 841.2,85.1 841.8,85.7 842.4,86.4 843.0,86.9 843.6,87.5 844.2,88.0 844.8,88.4 845.4,88.8 846.0,89.1 846.6,89.3 847.2,89.5 847.8,89.6 848.4,89.8 849.0,89.8 849.6,89.9 850.2,89.9 850.8,90.0 851.4,90.0 852.0,90.0 852.6,90.0 853.2,90.0 853.8,90.0 854.4,90.0 855.0,90.0 855.6,90.0 856.2,90.0 856.8,90.0 857.4,90.0 858.0,90.0 858.6,90.0 859.2,90.0 859.8,90.0 860.4,90.0 861.0,90.0 861.6,90.0 862.2,90.0 862.8,90.0 863.4,90.0 864.0,90.0 864.6,90.0 865.2,90.0 865.8,90.0 866.4,90.0 867.0,90.0 867.6,90.0 868.2,90.0 868.8,90.0 869.4,90.0 870.0,90.0 870.6,90.0 871.2,90.0 871.8,90.0 872.4,90.0 873.0,90.0 873.6,90.0 874.2,90.0 874.8,90.0 875.4,90.0 876.0,90.0 876.6,90.0 877.2,90.0 877.8,90.0 878.4,90.0 879.0,90.0 879.6,90.0 880.2,90.0 880.8,90.0 881.4,90.0 882.0,90.0 882.6,90.0 883.2,90.0 883.8,90.0 884.4,90.0 885.0,90.0 885.6,90.0 886.2,90.0 886.8,90.0 887.4,90.0 888.0,90.0 888.6,90.0 889.2,90.0 889.8,90.0 890.4,90.0 891.0,90.0 891.6,90.0 892.2,90.0 892.8,90.0 893.4,90.0 894.0,90.0 894.6,90.0 895.2,90.0 895.8,90.0 896.4,90.0 897.0,90.0 897.6,90.0 898.2,90.0 898.8,90.0 899.4,90.0 900.0,90.0\"/><text class=\"cap\" x=\"4\" y=\"193\">cavb · 55 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0060",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Psychiatry",
+  "subject_file": "Psychiatry",
+  "subtopic": "Catatonia — Recognition and the Lorazepam Challenge",
+  "type": "Catatonia — Recognition and the Lorazepam Challenge",
+  "difficulty": 4,
+  "created": "2026-08-11",
+  "vignette": "A 26-year-old woman with a history of major depressive disorder is brought to the emergency department by her family because she has not eaten, spoken, or moved from a fixed position for the past 2 days. On examination she maintains an awkward posture when her arm is passively raised and holds it there for several minutes. She does not respond to questions but repeats the examiner's last phrase. Vital signs and laboratory studies are shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Initiate a second-generation antipsychotic immediately",
+   "Begin bromocriptine and supportive cooling measures",
+   "Administer a benzodiazepine (e.g., lorazepam) challenge",
+   "Start electroconvulsive therapy without a medication trial",
+   "Obtain an emergent MRI of the brain before any pharmacologic treatment"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 부동·함구증과 함께 검진자가 팔을 수동적으로 들어 올렸을 때 그 자세를 수 분간 유지하는 밀랍굴곡성(waxy flexibility), 그리고 검진자의 마지막 말을 그대로 따라하는 반향언어(echolalia)는 긴장증(catatonia)의 전형적 소견이다. 체온이 정상에 가깝고 CK가 경미하게만 상승한 점은 신경이완제악성증후군(NMS)과 배치된다. 진단적이면서 흔히 치료적이기도 한 벤조디아제핀(로라제팜) 챌린지가 가장 적절한 다음 단계다.\n- 오답감별:\n  - (A) 항정신병약은 긴장증을 악화시키거나 악성 긴장증/NMS 유사 소견을 유발할 위험이 있어, 긴장증이 치료되거나 배제되기 전까지는 피한다.\n  - (B) 브로모크립틴과 냉각요법은 NMS의 치료이며, 이 환자의 정상에 가까운 체온과 경미한 CK 상승은 NMS보다 긴장증에 부합한다.\n  - (D) 전기경련요법은 벤조디아제핀에 반응하지 않는 불응성 긴장증에 매우 효과적이지만, 신속하고 침습도가 낮은 로라제팜 챌린지를 먼저 시도하지 않고 곧바로 시행하는 것은 순서가 틀렸다.\n  - (E) 비정형적이거나 진행성 소견이 있으면 기질적 원인 배제를 위해 영상검사를 고려할 수 있으나, 전형적 긴장증 소견에서 신속·저위험인 로라제팜 챌린지를 미루면서까지 우선할 필요는 없다.\n- 임상핵심: 밀랍굴곡성 + 함구증 + 반향언어/반향동작 → 긴장증을 의심한다. 첫 단계는 벤조디아제핀(로라제팜) 챌린지(진단적이며 흔히 치료적)이며, 불응성일 때 전기경련요법을 고려한다.\n- 출처: DSM-5-TR; Kaplan & Sadock's Synopsis of Psychiatry — Catatonia.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "부동·함구증과 함께 검진자가 팔을 수동적으로 들어 올렸을 때 그 자세를 수 분간 유지하는 밀랍굴곡성(waxy flexibility), 그리고 검진자의 마지막 말을 그대로 따라하는 반향언어(echolalia)는 긴장증(catatonia)의 전형적 소견이다. 체온이 정상에 가깝고 CK가 경미하게만 상승한 점은 신경이완제악성증후군(NMS)과 배치된다. 진단적이면서 흔히 치료적이기도 한 벤조디아제핀(로라제팜) 챌린지가 가장 적절한 다음 단계다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 항정신병약은 긴장증을 악화시키거나 악성 긴장증/NMS 유사 소견을 유발할 위험이 있어, 긴장증이 치료되거나 배제되기 전까지는 피한다.\n(B) 브로모크립틴과 냉각요법은 NMS의 치료이며, 이 환자의 정상에 가까운 체온과 경미한 CK 상승은 NMS보다 긴장증에 부합한다.\n(D) 전기경련요법은 벤조디아제핀에 반응하지 않는 불응성 긴장증에 매우 효과적이지만, 신속하고 침습도가 낮은 로라제팜 챌린지를 먼저 시도하지 않고 곧바로 시행하는 것은 순서가 틀렸다.\n(E) 비정형적이거나 진행성 소견이 있으면 기질적 원인 배제를 위해 영상검사를 고려할 수 있으나, 전형적 긴장증 소견에서 신속·저위험인 로라제팜 챌린지를 미루면서까지 우선할 필요는 없다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "밀랍굴곡성 + 함구증 + 반향언어/반향동작 → 긴장증을 의심한다. 첫 단계는 벤조디아제핀(로라제팜) 챌린지(진단적이며 흔히 치료적)이며, 불응성일 때 전기경련요법을 고려한다."
+   },
+   {
+    "k": "출처",
+    "v": "DSM-5-TR; Kaplan & Sadock's Synopsis of Psychiatry — Catatonia."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (psychiatry · catatonia vs neuroleptic malignant syndrome)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "108/70 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "92회/분"
+   },
+   {
+    "name": "호흡",
+    "value": "16회/분"
+   },
+   {
+    "name": "체온",
+    "value": "37.1 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "크레아틴키나아제(CK)",
+    "value": "220 U/L",
+    "ref": "30–200"
+   },
+   {
+    "name": "백혈구",
+    "value": "7,200 /mm³",
+    "ref": "4,000–11,000"
+   },
+   {
+    "name": "갑상선자극호르몬(TSH)",
+    "value": "2.1 mIU/L",
+    "ref": "0.4–4.0"
+   },
+   {
+    "name": "소변 독성검사",
+    "value": "음성",
+    "ref": "음성"
+   }
+  ],
+  "appendix": null,
+  "figureSvg": ""
  }
 ];
