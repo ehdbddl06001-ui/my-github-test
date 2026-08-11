@@ -29,19 +29,22 @@ can license a new join rule.
 
 The registered approval chain for this substage is:
 
-1. Codex fixes this design in this file and opens a PR.  **This step.**
-2. The user approves the read-only `PREP_M4_ASSET_FREEZE` scope; Claude runs
-   only that preflight and records its identities, with no M0-M4 aggregation.
-3. Codex accepts the preflight; the user approves the completed design and
+1. The user approved `PREP_M4_ASSET_FREEZE`; Claude completed it read-only and
+   recorded `PREP_M4_ASSET_FREEZE_PASS`, with no M0-M4 aggregation.
+2. Codex accepts that preflight, fixes decisions A-E in this file and opens a
+   PR.  **This step.**
+3. The user separately approves `PREP_M4_RR_EQUIVALENCE`; Claude runs only that
+   read-only value-identity preflight and records its result.
+4. Codex accepts that result; the user approves the completed design and
    `status` becomes `approved_for_implementation`.
-4. Claude implements the frozen design on `claude/<task>` **without executing
+5. Claude implements the frozen design on `claude/<task>` **without executing
    it**.
-5. The user separately approves execution on the registered artifacts.
-6. Only then may M0-M4 run, write a new timestamped Drive bundle, and be
+6. The user separately approves execution on the registered artifacts.
+7. Only then may M0-M4 run, write a new timestamped Drive bundle, and be
    reviewed.
 
-Steps 2, 3 and 5 are separate approvals: asset-freeze preflight, implementation
-design, and scientific execution respectively.  None authorizes DS2 per-beat
+Steps 1, 3, 4 and 6 are separate approvals: asset freeze, RR value-equivalence
+preflight, implementation design, and scientific execution respectively.  None authorizes DS2 per-beat
 labels, V10 probabilities, the association analysis, or any training.  Those
 seals are unchanged by this document.
 
@@ -51,7 +54,7 @@ project's principal benchmark: `AGENTS.md`'s DS1 -> DS2 inter-patient evaluation
 and the parent's `S_PR_AUC` primary remain exactly as registered.
 
 **No aggregation of `unmatched_and_ambiguous.csv` or `join_map.parquet` may be
-computed before step 6** — including the zero-execution-cost M0.  A diagnostic
+computed before step 7** — including the zero-execution-cost M0.  A diagnostic
 whose measurement plan is fixed after its cheapest measurement is seen is not a
 preregistered diagnostic.
 
@@ -202,7 +205,9 @@ identity and are written into its own manifest.
 
 - registered canonical `mamba_data.npz`, SHA-256
   `b1c16106216522cb21291f990e7ab0e7f8dfd8135406db322f41cda3687f6c05`;
-- registered V9/V10 preprocessing cache, aggregate `82b9a593…` over 45 files;
+- registered **V10** preprocessing cache, aggregate `82b9a593…` over 45
+  files, as the M4/Leg 2 input; the V9 cache aggregate `25cd7952…` is a
+  corroborating rebuild and is not a substitute input;
 - registered MIT-BIH `mitdb-1.0.0` publisher tree, aggregate `0b46a411…`, 147
   files, publisher checksums verified;
 - the frozen module `mit-bih/q5d_order_preserving_beat_join.py` at code SHA-256
@@ -475,23 +480,86 @@ preflight ends `M4_INPUT_FREEZE_FAILED`.  The spec stays `draft`; no detector,
 version, tolerance or source is substituted.  This preflight performs no M0-M4
 aggregation and does not itself authorize implementation or execution.
 
+`PREP_M4_ASSET_FREEZE_PASS` was accepted by Codex on 2026-08-12.  The
+connector/mounted-filesystem split is valid identity evidence because all 90
+cache file sizes bound the two views 90/90 and the four reported aggregates
+were independently reproduced from their `(name, bytes, sha256)` triples 4/4.
+This establishes byte identity, not runtime reproducibility or detector-output
+reproducibility.
+
+### Frozen M4 identity constants
+
+These constants are in the operative body rather than only the Decision log so
+an implementation cannot choose an identity by path, filename or whichever
+copy happens to be available.
+
+| role | asset | Drive ID | files / bytes | registered aggregate SHA-256 |
+|---|---|---|---|---|
+| **M4 input contract** | V10 source `kinkmap/` | `1czXZdgSrGttrhOFlNvOHQ3l16ZfluOPX` | 7 `.py` / 39,761 B | `1a0c66c8116745bf83f836fd267931b83f0179cc5e62fd1ba5b055ec236452ce` |
+| **M4 input contract** | V10 cache | `1I6iugsrHwJjjpLVS8TVp-aDkVwpdmJxF` | 45 / 167,868,618 B | `82b9a593dcf23fa4ffc60b44c2fe7da02313dfe7d69dfbe64d85c38b4aa78b14` |
+| corroborating rebuild | V9 source `kinkmap/` | `1oYHJi38hir2JqZl9s_SyuSxq3Hxw25sK` | 7 `.py` / 79,329 B | `ffb5679cdfd6b9cc5d46a1071f1fac374d0bb428c360d9a2be80edb111bfb296` |
+| corroborating rebuild | V9 cache | `1TXLX14RHA5u1dIUiYt36k2dcT5lpm5RY` | 45 / 167,064,378 B | `25cd7952329fc6f04273046c80d5b0d7b3ee74baf10d2dba4036f9ea7f94fbe8` |
+
+The V10 source expected set is fixed as
+`{__init__,data,evaluate,frontend,model,pwave,train}.py`; the V9 corroborating
+set is `{__init__,data,evaluate,frontend,model,train,v15b_local}.py`.  Future
+verification uses these exact names and fails on either a missing or an extra
+file.  The five V9 zip archives are recorded historical neighbours, not loaded
+producer inputs, and remain outside this contract.  They become inputs only if
+a later, separately preregistered procedure reads them.
+
+The decisive source-map files are V10 `frontend.py`, SHA-256
+`d2635e05c2e0b26f68ae022c0997970c5d3a3d0828e3e943c7c78b260a78a217`,
+and V10 `data.py`, SHA-256
+`20cde66b01d1172926aa1b84cbb70b70ea28bb20c2e958a2c26bd01d03497ada`.
+The former is byte-identical in V9 and V10.  `v15b_local.py` belongs to the
+mamba/Leg 1 lineage and must never be treated as the V10 cache producer.
+
+The V9 constants are corroborating evidence only for M4.  Their mismatch may
+not be silently ignored, but it is reported as `CORROBORATION_MISMATCH` rather
+than repaired by substituting V9 for V10.  The separate RR-equivalence preflight
+below uses both cache trees as its own inputs.
+
+### PREP_M4_RR_EQUIVALENCE — separate approval blocker
+
+Before implementation approval, and only after separate user approval, compare
+the stored V9 and V10 `rr` arrays for all 44 records.  This is a read-only asset
+preflight, not part of M4 implementation and not an M0-M4 measurement.  It must:
+
+1. re-verify the two cache constants above, including their exact expected sets;
+2. open only the `rr` member with `allow_pickle=False`, never `y`, probabilities
+   or DS2 per-beat labels;
+3. require identical record names, `(n, 7)` shapes and `float32` dtypes; and
+4. require value identity for every element, treating paired NaNs as equal, and
+   report `RR_VALUE_IDENTICAL_44_OF_44` only when all 44 records pass.
+
+On any mismatch it reports `V9_V10_RR_LINEAGE_DIVERGED`, preserves the mismatch
+record/row/column and value pair for audit, leaves this spec `draft`, and returns
+to Codex.  It does not average, tolerate, repair or select a lineage.  A PASS
+strengthens the same-row-set premise at value level; it is not evidence that
+detector peaks or the registered runtime have been reproduced.
+
 ### M4.0 — feasibility gate, evaluated first
 
 All three must hold:
 
-1. a source exists that reproduces the original run's `detect_r()` and its
-   annotation matching **exactly** (the `v10pkg`/`v9pkg` `kinkmap` package: the
-   `detect_r()` call, `tol = int(0.15 * fs)`, the greedy nearest `used`-set
-   matching, and the `p-150 >= 0` / `p+150 <= len` boundary cut);
+1. a read-only static source-map verification, performed against the two exact
+   V10 file hashes above before any detector call, confirms the original run's
+   `detect_r()`/`rr_features()` producer in `frontend.py` and the annotation
+   matching, AAMI selection, reused `idx`, and boundary selection in `data.py`:
+   `tol = int(0.15 * fs)`, greedy nearest `used`-set matching, and the
+   `p-150 >= 0` / `p+150 <= len` cut.  Keyword presence alone is insufficient;
+   the checklist records function and call-site mappings.  A mismatch yields
+   `M4_SOURCE_MAP_UNVERIFIED` and condition 1 fails;
 2. the required detector peak positions are obtainable **deterministically** —
    note that neither lineage stores them (§What the bundle contains, item 6), so
    this requires re-running the detector under the registered runtime
    (`numpy 2.5.1`, `scipy 1.18.0`, `wfdb 4.3.1`, CPython 3.12.3), whose output
    must be shown to reproduce the registered per-record cache counts for all 22
    DS1 records before any anchor is used;
-3. the source version, cache tree and hashes equal the identities frozen by
-   `PREP_M4_ASSET_FREEZE`.  A path or filename without its registered digest is
-   insufficient.
+3. the V10 source and V10 cache equal the two **M4 input-contract** identities
+   above and `PREP_M4_RR_EQUIVALENCE` has passed.  A path or filename without
+   its registered digest is insufficient.  V9 is never substituted for V10.
 
 If any of the three fails:
 
@@ -584,6 +652,27 @@ run at the bundle-writing step.
 - The canonical bundle is additionally checked for the **absence** of
   `SUPERSEDED.json` and for `manifest.json` carrying code SHA-256
   `6b098c67…`.  Path alone never establishes canonicity.
+
+## Dual-attestation identity standard
+
+When a registered Drive asset is too large for the connector to stream, a
+connector listing and a user-mounted read-only hash run may jointly establish
+byte identity only when all of the following are recorded and pass: canonical
+Drive IDs; an exact preregistered expected-name set; connector and mounted-view
+byte sizes agreeing for every file; mounted-view per-file SHA-256; and an
+independent recomputation of the registered canonical-JSON aggregate from every
+`(name, bytes, sha256)` triple.  Each later verification re-enumerates the
+registered folder ID and repeats the full name/size crosswalk; an old listing,
+mtime or path alone is never inherited as proof.  Any missing, extra, size or
+digest mismatch stops the consuming stage.
+
+This protocol attests file identity only.  `PREP_M4_ASSET_FREEZE` links the
+registered runtime identity to the frozen generation lineage, so its PASS is
+accepted despite the hash run using Colab CPython 3.12.13 / numpy 2.0.2.  It
+does **not** establish that the registered CPython 3.12.3 / numpy 2.5.1 / scipy
+1.18.0 / wfdb 4.3.1 runtime can be installed or will reproduce detector peaks.
+That separate claim is tested only by M4.0 condition 2, with no fallback
+runtime or approximate count match.
 
 ## Staleness and silent-skip guards
 
@@ -842,8 +931,10 @@ Evaluated in order; exactly one branch is reached.
    canonical-bundle/M0-M3 input hash is unknown.  **STOP.**  No measurement is
    reported.  M4-specific assets are governed first by the pre-approval freeze
    and then by branch 2, not silently reclassified here.
-2. **`MECHANISM_UNRESOLVED_INPUT_ABSENT`** — QA passes but M4.0 fails, so H2 and
-   H3 cannot be evaluated.  M0-M3 are reported as **diagnostic partial results**;
+2. **`MECHANISM_UNRESOLVED_INPUT_ABSENT`** — QA passes but M4.0 fails, including
+   `M4_SOURCE_MAP_UNVERIFIED`, an unavailable exact registered runtime, or a
+   22/22 detector-count reproduction failure, so H2 and H3 cannot be evaluated.
+   M0-M3 are reported as **diagnostic partial results**;
    `H1_ASSOCIATED` and `H4_ASSOCIATED` may be computed and reported but are
    **not** promoted to a terminal mechanism verdict.  Their reported adjustment
    is the registered four-family Holm value with H2/H3 p=1 placeholders.
@@ -1037,15 +1128,16 @@ detector execution.  After the PR, **STOP** and wait for the user.
 
 **Everything after is separate and sequential:**
 
-1. user approves the read-only M4 asset-freeze preflight;
-2. Claude performs only that preflight and records its identities;
-3. Codex accepts the preflight and the user approves the completed spec;
-4. Claude Code opens an implementation PR (code only, not executed);
-5. user separately approves execution;
-6. M0-M4 run;
-7. a new timestamped Drive bundle is written;
-8. the executed notebook is committed and the run ingested;
-9. Codex performs result acceptance.
+1. user approves the read-only `PREP_M4_RR_EQUIVALENCE` preflight;
+2. Claude performs only that preflight and records its result;
+3. Codex accepts the result and the user approves the completed spec;
+4. `status` becomes `approved_for_implementation`;
+5. Claude Code opens an implementation PR (code only, not executed);
+6. user separately approves execution;
+7. M0-M4 run;
+8. a new timestamped Drive bundle is written;
+9. the executed notebook is committed and the run ingested;
+10. Codex performs result acceptance.
 
 # Implementation checklist
 
@@ -1054,12 +1146,19 @@ detector execution.  After the PR, **STOP** and wait for the user.
 - [x] `PREP_M4_ASSET_FREEZE` uniquely freezes source/cache identities and
       verifies all 44 cache `rr` shape/meta counts in each version before status promotion
       — **`PREP_M4_ASSET_FREEZE_PASS`, 2026-08-11** (Decision log below)
+- [x] Codex accepts `PREP_M4_ASSET_FREEZE` and resolves A-E without executing
+      any diagnostic measurement
+- [ ] User separately approves `PREP_M4_RR_EQUIVALENCE`
+- [ ] The value-level RR preflight returns `RR_VALUE_IDENTICAL_44_OF_44`, or
+      `V9_V10_RR_LINEAGE_DIVERGED` returns the draft to Codex
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
 - [ ] Bundle file IDs, byte sizes and SHA-256 recorded before any measurement
 - [ ] QA reproduction targets all match, or `DIAGNOSTIC_INPUT_MISMATCH`
 - [ ] M3 graph reconstruction reproduces the bundle partition exactly
+- [ ] Static source-map verification passes against the frozen V10
+      `frontend.py` and `data.py` hashes before any detector call
 - [ ] M4 feasibility gate evaluated before any anchor is used
 - [ ] The complete M0-M4 plan is unchanged from this document at run time
 - [ ] All three controls run at 10,000 replicates under seed `2026019`
@@ -1492,3 +1591,88 @@ abe0b62d097aa8824d55d904d5eb79e828d6410ee56796d6626a0e653bf8b9dd    5308309  233
 dfc6ecd29ceeab19800d3bc5ce49eb9d4820c18a5841c9b9560175693574bda5    4532103  234.npz
 ec5efe7ba37aebe3c0772dd22ef9c101cbf3607db27aa2a56654c255b80021e3       1938  meta.json
 ```
+
+- 2026-08-12 — **Codex acceptance of `PREP_M4_ASSET_FREEZE_PASS` and decisions
+  A-E.  Design only; no M0-M4 aggregation, detector replay, join replay or
+  sealed-value access.  Status remains `draft`.**
+
+  **Acceptance.**  The frozen result is accepted.  Its four aggregates, 104
+  per-file hashes and 44/44 shape/count checks are inherited unchanged.  This
+  acceptance says that the named bytes and stored structure are identified; it
+  does not say that detector peaks, the generation runtime or M4 are already
+  reproducible.
+
+  **A — accept dual-source identity evidence, with a strict reusable
+  protocol.**  The connector and mounted filesystem are adequately bound here
+  by the complete 90/90 size crosswalk plus 4/4 independent aggregate
+  recomputations.  The runtime contract now registers the only circumstances
+  under which this split-source method may be reused: exact folder ID and
+  expected set, fresh full re-enumeration, complete size crosswalk, per-file
+  SHA-256 and independent canonical fold.  It is an identity attestation only;
+  it cannot attest runtime or semantic reproducibility.
+
+  **B1 — accept this source snapshot once, but do not treat measurement-after-
+  registration as the future standard.**  No M0-M4 result had been opened when
+  the names were frozen, so the exact seven-name lists may serve as the
+  historical snapshot's contract.  This differs from the corrected MIT-BIH
+  expected set: publisher `RECORDS` supplied an external authority there,
+  whereas directory contents supplied the source names here.  Consequently all
+  future checks use today's exact name lists prospectively and fail on missing
+  or extra files.  The five V9 zip archives remain outside the active producer
+  contract because no registered step imports or reads them; presence is
+  recorded, and use would require a new explicit contract rather than silent
+  expansion.
+
+  **B2 — source identification is hash-complete but semantic mapping still
+  receives a static pre-execution check.**  Before `detect_r()` is called, the
+  implementation must verify the registered function/call-site map against the
+  exact frozen V10 `frontend.py` and `data.py` hashes.  This is read-only source
+  inspection, not detector execution.  Failure is
+  `M4_SOURCE_MAP_UNVERIFIED`, makes M4.0 condition 1 false and reaches the
+  already-registered input-absent branch; no source is substituted.
+
+  **B3 — accept the runtime lineage link, not runtime reproducibility.**
+  SHA-256 and stored shape reads do not depend on the Colab numpy version, so
+  using CPython 3.12.13 / numpy 2.0.2 for the freeze does not invalidate its
+  PASS.  The historical identity link to the registered runtime is sufficient
+  for the asset-freeze gate.  Whether CPython 3.12.3 / numpy 2.5.1 / scipy
+  1.18.0 / wfdb 4.3.1 can stand and reproduce all 22 DS1 counts remains M4.0
+  condition 2 and has not passed.
+
+  **C — retain M4 (option a).**  Missing stored peaks make detector replay
+  necessary; they do not establish that replay is impossible.  More
+  importantly, Q3 fixed Holm at H1-H4 precisely to prevent the family from
+  changing after M4 feasibility became known.  Removing H2/H3 now would be the
+  structurally conditional change Q3 forbids and would require a cascading
+  rewrite of the question, three earlier Codex decisions, controls, gates,
+  schema and decision tree.  The registered design already has the honest
+  failure path: exact-runtime installation and 22/22 count reproduction are an
+  implementation-stage feasibility gate; failure makes H2/H3 `UNEVALUABLE`,
+  assigns p=1 only inside four-family Holm and terminates as
+  `MECHANISM_UNRESOLVED_INPUT_ABSENT`.  No hypothesis, gate or multiplicity
+  family changes.
+
+  **D — promote and classify the constants.**  V10 source `1a0c66c8…` and V10
+  cache `82b9a593…` are the M4 input contract because Leg 2 consumes the V10
+  positional rows.  V9 source `ffb5679c…` and cache `25cd7952…` are
+  corroborating rebuild evidence, not substitute inputs.  The operative M4
+  body now carries full digests, Drive IDs, counts/bytes, fixed source-name sets
+  and the exact V10 `frontend.py`/`data.py` hashes.  `v15b_local.py` remains a
+  Leg 1 producer only.
+
+  **E — approve a separate `PREP_M4_RR_EQUIVALENCE`, not M4 implementation.**
+  After its own user approval and before implementation approval, a read-only
+  preflight will compare only the stored V9/V10 `rr` values for all 44 records,
+  after both cache identities reverify.  It never opens `y`, DS2 per-beat
+  labels or probabilities.  Exact value equality (paired NaNs equal) must pass
+  44/44.  `V9_V10_RR_LINEAGE_DIVERGED` leaves the spec draft and returns to
+  Codex; there is no tolerance, averaging or preferred-lineage selection.
+  Keeping this independent prevents an additional lineage measurement from
+  being hidden inside M4 implementation and closes the count-only inference at
+  negligible cost.
+
+  **Next step.**  Merge this design PR only after review.  Then obtain separate
+  user approval for `PREP_M4_RR_EQUIVALENCE`; Claude runs and records only that
+  preflight.  Codex accepts its result before the user may promote this spec.
+  Implementation approval, M0-M4 execution approval and every sealed analysis
+  remain later, separate decisions.
