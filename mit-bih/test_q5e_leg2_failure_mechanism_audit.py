@@ -97,6 +97,18 @@ PROCESSED = {("101", 0): "N", ("101", 1): "N", ("101", 2): "N", ("101", 3): "N",
 CACHE_N = {"101": 4, "208": 4}
 
 
+def _verified(paths):
+    """A synthetic input set carrying the discovery stamp.
+
+    Only tests build one of these by hand; production gets it from
+    `discover_registered_inputs()`, which is the point of the stamp.
+    """
+    complete = {key: paths.get(key, f"/synthetic/{key}")
+                for key in Q5E.DISCOVERED_PATH_KEYS}
+    complete["identity_verified"] = Q5E.DISCOVERY_VERIFIED
+    return complete
+
+
 def tiny_partition(rows=None):
     """Synthetic cache partition.  `cache_n` is injected, never read from the
     registered ledger — that is the fixture boundary."""
@@ -751,7 +763,7 @@ def test_execution_approval_is_required():
             check(True, "canonicity check is gated too")
 
     try:
-        Q5E.run_audit("b", "m", "c", "d", "o", approval=None)
+        Q5E.run_audit(_verified({"bundle_dir": "b"}), "o", approval=None)
         raise AssertionError("run_audit ran without approval")
     except Q5E.ExecutionNotApprovedError:
         check(True, "the production entry point refuses immediately")
@@ -760,7 +772,8 @@ def test_execution_approval_is_required():
 def test_run_audit_is_implemented_but_never_executed():
     with tempfile.TemporaryDirectory() as tmp:
         try:
-            Q5E.run_audit(tmp, "m", "c", "d", os.path.join(tmp, "out"),
+            Q5E.run_audit(_verified({"bundle_dir": tmp}),
+                          os.path.join(tmp, "out"),
                           approval=Q5E.EXECUTION_APPROVAL_TOKEN,
                           open_registered_data=True, emit=lambda *a: None)
             raise AssertionError("run_audit produced a result")
@@ -842,20 +855,29 @@ def test_result_schema_and_bundle_write():
           "language boundary recorded")
     check(result["null"]["master_seed"] == 2026019, "seed in the result")
 
+    stopped_tables = {name: rows for name, rows in _full_tables().items()
+                      if name != "m4_anchors.csv"}
     with tempfile.TemporaryDirectory() as tmp:
         out = os.path.join(tmp, "run")
         written = Q5E.write_bundle(
             out, result, Q5E.build_config(Q5E.MODE_DESIGN, "T"),
-            {"m": 1}, {"m1_distance.csv": []}, {}, ["line"],
+            {"m": 1}, stopped_tables, {}, ["line"],
             Q5E.summary_markdown(result))
         check("q5e_result.json" in written["written"], "result written")
         check("m4_anchors.csv" not in written["written"],
               "m4_anchors.csv is absent when M4 stops")
         try:
-            Q5E.write_bundle(out, result, {}, {}, {}, {}, [], "x")
+            Q5E.write_bundle(out, result, {}, {}, stopped_tables, {}, [], "x")
             raise AssertionError("overwrote an existing bundle")
         except Q5E.Q5EError:
             check(True, "an existing bundle is never overwritten")
+        try:
+            Q5E.write_bundle(os.path.join(tmp, "extra"), result, {}, {},
+                             _full_tables(), {}, [], "x")
+            raise AssertionError("an unregistered table was accepted")
+        except Q5E.Q5EError as error:
+            check("not registered outputs" in str(error),
+                  "an M4-only table cannot be written on a STOP branch")
 
 
 def test_summary_has_no_causal_language():
@@ -1127,7 +1149,7 @@ def test_m5_strata_are_materialised_and_pooled_alone_cannot_fire():
           "the same evidence fires once it is stratified")
 
 
-def _stub_png(path, spec, tables):
+def _stub_png(path, spec, tables, data=None):
     """A real, valid 1x1 PNG using only the standard library."""
     import struct
     import zlib
@@ -1163,8 +1185,12 @@ def test_required_outputs_and_incomplete_bundle_is_refused():
                              require_complete=True)
             raise AssertionError("incomplete bundle written")
         except Q5E.Q5EError as exc:
-            check("incomplete bundle" in str(exc),
-                  "a missing required CSV refuses the bundle")
+            check("Nothing has been created on disk" in str(exc),
+                  "the completeness check runs before anything is created")
+        check(not os.path.exists(out),
+              "the refused bundle path was never created")
+        check(os.listdir(tmp) == [],
+              "no staging directory was left behind either")
 
 
 def test_figure_rendering_writes_real_files():
@@ -1221,19 +1247,73 @@ E2E_RR = {
     #   row 4   / cache 4     -> no candidate edge at all
     "208": {"mamba": [100, 200, 100, 700, 900],
             "cache": [100, 200, 700, 700, 950]},
+    # A record where the detector missed one annotation the Leg 1 replay kept:
+    # mamba has five rows, the cache four.  This is the H2 story, and it is
+    # what produces an annotation_without_peak anchor whose counterpart row
+    # *was* kept.
+    "116": {"mamba": [100, 200, 300, 400, 500],
+            "cache": [100, 200, 300, 400]},
 }
+#: Class per row.  Indexed by mamba row for the join map and by cache row for
+#: the processed-class map, so it is as long as the longer of the two.
 E2E_CLASSES = {"101": ["N", "N", "N", "N"],
-               "208": ["N", "V", "V", "N", "S"]}
+               "208": ["N", "V", "V", "N", "S"],
+               "116": ["N", "V", "N", "S", "N"]}
+#: Raw `.atr` sample positions of the kept mamba rows, per record.  Distinct
+#: bases so no two records share a kept-sample tuple.
+E2E_SAMPLES = {
+    "101": [1000, 1200, 1400, 1600],
+    "208": [2000, 2200, 2400, 2600, 2800],
+    "116": [3000, 3200, 3400, 3600, 3800],
+}
+#: Detector peaks per record.  101 and 208 gain one peak with no annotation;
+#: 116 is missing the peak for its last annotation.
+E2E_PEAKS = {
+    "101": [1000, 1200, 1400, 1600, 8000],
+    "208": [2000, 2200, 2400, 2600, 2800, 9000],
+    "116": [3000, 3200, 3400, 3600],
+}
+E2E_SIGNAL_LENGTH = 20000
 
 
 def _e2e_sequences():
+    """Mamba sequences carry the Leg 1 identity, as production's do."""
     mamba, cache = {}, {}
     for record, rr in E2E_RR.items():
-        mamba[record] = BJ.RecordSequence(record, "DS1", "mamba",
-                                          rr["mamba"], rr["mamba"])
+        mamba[record] = BJ.RecordSequence(
+            record, "DS1", "mamba", rr["mamba"], rr["mamba"],
+            [{"raw_atr_ordinal": i, "raw_r_sample": s}
+             for i, s in enumerate(E2E_SAMPLES[record])])
         cache[record] = BJ.RecordSequence(record, "DS1", "cache",
                                           rr["cache"], rr["cache"])
     return mamba, cache
+
+
+class _FakeProducer(object):
+    """The registered producer, injected.  `detect_r` is never the real one."""
+
+    def __init__(self, cache_by_record):
+        self.rr_by_kept = {}
+        self.calls = []
+        for record, sequence in cache_by_record.items():
+            peaks = _kept_peaks(record)
+            self.rr_by_kept[tuple(peaks)] = [
+                [pre / BJ.FS, post / BJ.FS, 0, 0, 0, 0, 0]
+                for pre, post in zip(sequence.pre_samples,
+                                     sequence.post_samples)]
+
+    def detect_r(self, signal):
+        record = str(signal)
+        self.calls.append(record)
+        return list(E2E_PEAKS[record])
+
+    def rr_features(self, kept):
+        return self.rr_by_kept[tuple(int(k) for k in kept)]
+
+
+def _kept_peaks(record):
+    """Peaks that survive annotation matching and the boundary cut."""
+    return [p for p in E2E_PEAKS[record] if p in set(E2E_SAMPLES[record])]
 
 
 def _e2e_rows(mamba, cache):
@@ -1273,24 +1353,26 @@ def _e2e_rows(mamba, cache):
 def _e2e_inputs():
     """A `ProductionInputs` built entirely from fake readers.
 
-    Every field that production fills by opening a registered artifact is
-    injected here instead, including the M4 replay — so the detector never
-    runs and no `open()` is reached.
+    Every field production fills by opening a registered artifact is injected,
+    but the *code path* is production's: the real `build_detector_replay()`
+    runs, the real annotation matching places the anchors, and the real
+    `load_frozen_rr()` supplies the arrays the gate compares.  Only the
+    producer and the two readers are fakes.
     """
     mamba, cache = _e2e_sequences()
     rows = _e2e_rows(mamba, cache)
     cache_n = {r: len(c) for r, c in cache.items()}
     processed = {(r, j): E2E_CLASSES[r][j]
                  for r in cache for j in range(cache_n[r])}
-    counts = {r: len(m) for r, m in mamba.items()}
-    frozen_rr = {r: [list(mamba[r].pre_samples), list(mamba[r].post_samples)]
-                 for r in mamba}
-
-    def replay():
-        """The injected M4 replay.  `detect_r()` is not called anywhere."""
-        return dict(counts), {k: [list(v[0]), list(v[1])]
-                              for k, v in frozen_rr.items()}
-
+    producer = _FakeProducer(cache)
+    replay = Q5E.build_detector_replay(
+        "/synthetic/v10", "/synthetic/mitdb", sorted(mamba),
+        Q5E.EXECUTION_APPROVAL_TOKEN, producer=producer,
+        atr_reader=lambda r: {
+            "annotations": [(s, E2E_CLASSES[r][min(i, len(E2E_CLASSES[r]) - 1)])
+                            for i, s in enumerate(E2E_SAMPLES[r])],
+            "signal_length": E2E_SIGNAL_LENGTH},
+        signal_reader=lambda r: r)
     texts = {
         "frontend.py": ("def detect_r(s):\n    pass\n\n"
                         "def rr_features(p):\n    pass\n"),
@@ -1298,14 +1380,6 @@ def _e2e_inputs():
                     "    tol = int(0.15 * fs)\n    used = set()\n"
                     "    ok = p - 150 >= 0\n    Fr = rr_features(peaks)\n"),
     }
-    anchors = {"208": [{"anchor_ordinal": 0, "anchor_sample": 700,
-                        "anchor_kind": "annotation_without_peak",
-                        "counterpart_kept": True,
-                        "mapped_mamba_record_row": 4},
-                       {"anchor_ordinal": 1, "anchor_sample": 800,
-                        "anchor_kind": "peak_without_annotation",
-                        "counterpart_kept": False,
-                        "mapped_mamba_record_row": None}]}
     return Q5E.ProductionInputs(
         rows=rows, decision={"rule_fingerprint": BJ.rule_fingerprint()},
         manifest={"code_sha256": Q5E.PRODUCING_CODE_SHA256},
@@ -1316,8 +1390,11 @@ def _e2e_inputs():
         m4_identity={
             "v10_source": Q5E.M4_INPUT_CONTRACT["v10_source"]["aggregate"],
             "v10_cache": Q5E.M4_INPUT_CONTRACT["v10_cache"]["aggregate"]},
-        m4_registered_counts=counts, m4_frozen_rr=frozen_rr,
-        m4_replay=replay, m4_anchors=anchors, source_files=[])
+        m4_registered_counts={r: len(c) for r, c in cache.items()},
+        m4_frozen_rr=Q5E.load_frozen_rr(cache),
+        m4_replay=replay,
+        m4_anchors=lambda: replay.anchors_by_record(mamba),
+        source_files=[])
 
 
 def _e2e_qa_fixture(rows):
@@ -1363,6 +1440,20 @@ def test_synthetic_end_to_end_production_path():
     check([g["gate"] for g in outcome["m4"]["gates"]] ==
           list(Q5E.M4_GATE_ORDER), "M4 ran the registered gate order")
     check("anchors_report" in outcome["m4"], "M4.1 anchors were computed")
+    # The production M4 really ran: the detector replay was invoked once per
+    # record, reproduced all three counts, and the anchors came out of its own
+    # annotation matching rather than from a hand-written table.
+    check(inputs.m4_replay.ran is True,
+          "the detector replay callback actually executed")
+    check(sorted(inputs.m4_replay.producer.calls) == sorted(E2E_RR),
+          "the registered detector ran once for every record")
+    anchors = outcome["m4"]["anchors_report"]
+    check(anchors["anchors"] > 0, "anchors were placed")
+    kinds = {str(r["anchor_kind"]) for r in anchors["rows"]}
+    check("annotation_without_peak" in kinds,
+          "record 116 produced an annotation-without-peak anchor")
+    check(anchors["explained_positions"],
+          "and it maps to a kept mamba row, so H2 has a numerator")
     for control in (Q5E.CONTROL_A, Q5E.CONTROL_B, Q5E.CONTROL_C):
         check(control in outcome["nulls"], f"{control} produced a null")
     check(set(outcome["nulls"][Q5E.CONTROL_C]) == {"H2", "H3"},
@@ -1372,10 +1463,22 @@ def test_synthetic_end_to_end_production_path():
         check(entry["p"] is not None, f"{name} has a permutation p")
         check(entry["p_holm_4family"] is not None,
               f"{name} carries a 4-family Holm value")
+        check("stratified_evidence" in entry,
+              f"{name} records whether it has stratified evidence")
     check(outcome["holm"]["family_size"] == 4, "Holm used exactly 4 families")
     check(set(outcome["flags"]) == set(Q5E.HYPOTHESES), "every flag evaluated")
     check(outcome["decision"]["decision"] in Q5E.DECISIONS,
           "the decision tree chose a registered branch")
+    # M5 reached the hypothesis statistics, not just the M0 counts.
+    for name in Q5E.HYPOTHESES:
+        reported = outcome["flags"][name].get("strata_reported") or []
+        check(Q5E.POOLED in reported or not reported,
+              f"{name} reports pooled among its materialised strata")
+    h1_strata = outcome["flags"]["H1"]["strata_reported"]
+    check([s for s in h1_strata if s != Q5E.POOLED],
+          "H1 materialised at least one non-pooled stratum")
+    check("record_116" in h1_strata or "record_208" in h1_strata,
+          "the individually registered records are materialised for H1")
 
     # ---- the bundle is written complete, with real PNG files ---------------
     result = Q5E.build_result(
@@ -1582,27 +1685,460 @@ def test_mount_route_is_the_notebook_route_and_is_still_guarded():
               "an approved mount run still cannot reach registered data here")
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Second acceptance review (I1 round 2) regressions
+# ─────────────────────────────────────────────────────────────────────────────
+def _full_tables():
+    """Non-empty tables for every registered CSV, so a bundle can complete."""
+    return {
+        "m0_class_by_reason.csv": [
+            {"side": "mamba", "class": "V", "reason": BJ.REASON_NO_EDGE,
+             "count": 2, "denominator": 4, "rate": 0.5},
+            {"side": "cache", "class": "N", "reason": BJ.REASON_AMBIGUOUS,
+             "count": 1, "denominator": 4, "rate": 0.25}],
+        "m0_record_class.csv": [
+            {"record": "208", "stratum": BJ.STRATUM_MISMATCH, "class": "V",
+             "side": "cache", "denominator": 2, "failures": 1, "rate": 0.5}],
+        "m0_runs.csv": [
+            {"record": "208", "adjacency_definition": Q5E.ADJ_PRIMARY,
+             "run_start": "1", "run_length": 3, "classes": "", "reasons": "",
+             "decisional": True},
+            {"record": "208", "adjacency_definition": Q5E.ADJ_SECONDARY,
+             "run_start": "1", "run_length": 2, "classes": "", "reasons": "",
+             "decisional": False}],
+        "m1_distance.csv": [
+            {"record": "208", "cache_record_row": 0, "processed_class": "V",
+             "reason": BJ.REASON_NO_EDGE, "d_inf": 3, "bin": "2-5",
+             "censored": False, "cache_endpoint_zero": False,
+             "included_in_distance_gate": True}],
+        "m3_graph.csv": [
+            {"record": "208", "side": "cache", "row": 0,
+             "group": Q5E.GROUP_NO_EDGE, "decisional": True,
+             "candidate_degree": 0, "usable_edges": 0, "has_forced_rank": False,
+             "rr_pair_multiplicity": 1, "local_rr_sd": 0.0},
+            {"record": "208", "side": "mamba", "row": 0,
+             "group": Q5E.GROUP_CERTIFIED, "decisional": False,
+             "candidate_degree": 2, "usable_edges": 1, "has_forced_rank": True,
+             "rr_pair_multiplicity": 1, "local_rr_sd": 0.5}],
+        "m4_anchors.csv": [
+            {"record": "208", "anchor_ordinal": 0, "anchor_sample": 700,
+             "anchor_kind": "annotation_without_peak",
+             "adjacency_definition": Q5E.ADJ_PRIMARY, "offset": 1,
+             "mapped_mamba_record_row": 4, "failed": True,
+             "decisional": True}],
+    }
+
+
+def test_bundle_publish_is_atomic():
+    """3 — a failure never leaves an incomplete bundle at the final path."""
+    result = {"decision": Q5E.DECISION_NONE, "m4": {"status": Q5E.M4_OK}}
+    tables = _full_tables()
+
+    def exploding(path, spec, tables_, data=None):
+        if str(spec["file"]) == Q5E.FIGURES[3]:
+            raise RuntimeError("renderer failed midway")
+        _stub_png(path, spec, tables_, data)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        out = os.path.join(tmp, "run")
+        try:
+            Q5E.write_bundle(out, result, {}, {}, tables, {}, ["x"], "s",
+                             figures=True, figure_backend=exploding,
+                             require_complete=True)
+            raise AssertionError("a failed run published a bundle")
+        except RuntimeError:
+            check(True, "the renderer failure propagated")
+        check(not os.path.exists(out),
+              "the final path holds nothing after a mid-write failure")
+        check(os.listdir(tmp) == [],
+              "the staging directory was removed, not left as debris")
+
+        written = Q5E.write_bundle(out, result, {}, {}, tables, {}, ["x"], "s",
+                                   figures=True, figure_backend=_stub_png,
+                                   require_complete=True)
+        check(written["published"] is True, "a complete bundle publishes")
+        check(os.path.isdir(out), "the final path now exists")
+        for name in written["required"]:
+            check(os.path.exists(os.path.join(out, name)),
+                  f"{name} is present in the published bundle")
+        check(not [n for n in os.listdir(tmp) if n.startswith(".")],
+              "no staging directory survives a successful publish")
+
+
+def test_every_figure_shows_a_different_measurement():
+    """4 — figures 4 and 5 must not render the same series."""
+    tables = _full_tables()
+    kinds = [str(s["kind"]) for s in Q5E.figure_specs(m4_ok=True)]
+    check(len(set(kinds)) == 7, "all seven figures have distinct kinds")
+    payloads = [Q5E.figure_data(k, tables, {Q5E.CONTROL_C: {
+        "H2": {"q99": 0.5}, "H3": {"q99": 0.25}}}) for k in kinds]
+    rendered = [json.dumps(p, sort_keys=True, default=str) for p in payloads]
+    check(len(set(rendered)) == 7, "no two figures render identical data")
+
+    run_length = Q5E.figure_data(Q5E.FIG_RUN_LENGTH_HIST, tables)
+    distance = Q5E.figure_data(Q5E.FIG_DISTANCE_HIST, tables)
+    check(set(run_length["buckets"]) != set(distance["counts"]),
+          "the run-length figure no longer renders the distance bins")
+    check(run_length["adjacency"] == Q5E.ADJ_PRIMARY,
+          "the run-length figure uses the decisional adjacency only")
+    check(distance["bins"] == [n for n, _lo, _hi in Q5E.M1_BINS],
+          "the distance figure uses the registered fixed bins in order")
+    check(set(distance["descriptive_exclusions"]) ==
+          {Q5E.CENSORED_FLAG, Q5E.ENDPOINT_ZERO_FLAG},
+          "censor and endpoint bars sit beside the histogram")
+
+    heatmap = Q5E.figure_data(Q5E.FIG_RECORD_CLASS_HEATMAP, tables)
+    check(heatmap["columns"] == list(Q5E.AAMI_CLASSES) and
+          heatmap["shape"][1] == 3, "the heatmap is records x 3 classes")
+    raster = Q5E.figure_data(Q5E.FIG_RECORD_208_RASTER, tables)
+    check(raster["raster"] and Q5E.ADJ_SECONDARY in
+          raster["raw_ordinal_sensitivity"],
+          "record 208 shows beat-level rows and the raw-ordinal sensitivity")
+    degree = Q5E.figure_data(Q5E.FIG_DEGREE_VIOLIN_ECDF, tables)
+    for side in Q5E.SIDES:
+        panel = degree["panels"][side]
+        check(panel["decisional"] == (side == Q5E.H4_DECISIONAL_SIDE),
+              f"the {side} panel states its decisional status")
+        check("ecdf" in panel and "violin" in panel,
+              f"the {side} panel carries both a violin and an ECDF")
+    anchor = Q5E.figure_data(Q5E.FIG_ANCHOR_CURVE, tables,
+                             {Q5E.CONTROL_C: {"H2": {"q99": 0.5}}})
+    check(anchor["control_c_band"], "the anchor curve carries a Control C band")
+
+
+def test_render_refuses_two_figures_with_identical_data():
+    with tempfile.TemporaryDirectory() as tmp:
+        real = Q5E.figure_data
+        Q5E.figure_data = lambda kind, tables, nulls=None: {"same": 1}
+        try:
+            Q5E.render_figures(tmp, {}, m4_ok=False, backend=_stub_png)
+            raise AssertionError("duplicate figures accepted")
+        except Q5E.Q5EError as error:
+            check("same data" in str(error),
+                  "two figures rendering the same data are refused")
+        finally:
+            Q5E.figure_data = real
+
+
+def test_m5_stratification_is_computed_not_named():
+    """2 — a stratum counts only when it carries a real number."""
+    items = [{"record": "208", "class": "V", "reason": BJ.REASON_NO_EDGE,
+              "bin": "2-5"},
+             {"record": "208", "class": "N", "reason": BJ.REASON_NO_EDGE,
+              "bin": "6-20"},
+             {"record": "116", "class": "V", "reason": BJ.REASON_AMBIGUOUS,
+              "bin": "2-5"}]
+    report = Q5E.stratified_statistic(
+        items, lambda subset: Q5E._ratio(
+            sum(1 for e in subset if e["bin"] == "2-5"), len(subset)))
+    check(report["class"]["levels"]["V"]["n"] == 2,
+          "the class stratum carries per-level counts")
+    check(report["class"]["levels"]["V"]["statistic"] == 1.0,
+          "and a real per-level statistic")
+    check(report["record_208"]["materialised"] is True,
+          "record 208 is materialised when it has rows")
+    check(report["record"]["levels"]["116"]["statistic"] == 1.0,
+          "each record level is computed separately")
+    check(Q5E.has_stratified_evidence(report),
+          "this report carries non-pooled evidence")
+
+    pooled_only = Q5E.stratified_statistic(
+        [{"record": "", "class": "", "reason": ""}],
+        lambda subset: 1.0)
+    check(pooled_only[Q5E.POOLED]["materialised"] is True,
+          "the pooled value is still computed")
+    check(not Q5E.has_stratified_evidence(pooled_only),
+          "an item with no stratum keys yields pooled-only evidence")
+    check(Q5E.materialised_strata(pooled_only) == [Q5E.POOLED],
+          "and only pooled is reported as materialised")
+
+
+def test_flag_needs_a_real_stratified_statistic():
+    """2 — stratum names can no longer stand in for stratified evidence."""
+    holm = {"significant": {h: True for h in Q5E.HYPOTHESES},
+            "unevaluable": [],
+            "p_holm_4family": {h: 0.001 for h in Q5E.HYPOTHESES}}
+    named_only = {name: {"levels": {}, "materialised": False,
+                         "status": Q5E.NOT_APPLICABLE}
+                  for name in Q5E.M5_STRATA}
+    named_only[Q5E.POOLED] = {"levels": {"pooled": {"n": 4, "statistic": 0.9,
+                                                    "status": "OK"}},
+                              "materialised": True, "status": "OK"}
+    blocked = Q5E.evaluate_flags(
+        {"H1": {"strata": named_only, "strata_reported": list(Q5E.M5_STRATA),
+                "effect_gates": {"g": True}}}, holm)
+    check(blocked["H1"]["flag"] is False,
+          "declaring every stratum name does not unlock the flag")
+    check(blocked["H1"]["pooled_only_blocked"] is True,
+          "it is recorded as pooled-only")
+    check(blocked["H1"]["strata_reported"] == [Q5E.POOLED],
+          "only the stratum that carries a number is reported")
+
+    real = dict(named_only)
+    real["class"] = {"levels": {"V": {"n": 3, "statistic": 0.8,
+                                      "status": "OK"}},
+                     "materialised": True, "status": "OK"}
+    allowed = Q5E.evaluate_flags(
+        {"H1": {"strata": real, "effect_gates": {"g": True}}}, holm)
+    check(allowed["H1"]["flag"] is True,
+          "one real non-pooled stratum is enough to allow the flag")
+    check(allowed["H1"]["stratified_evidence"] is True,
+          "and it is recorded as stratified evidence")
+
+
+def test_m4_replay_reruns_the_detector_and_feeds_the_anchors():
+    """1 — production M4 is complete, exercised by synthetic injection only."""
+    annotations = [(200, "N"), (600, "V"), (1000, "N"), (1400, "N")]
+
+    class FakeProducer(object):
+        calls = []
+
+        @staticmethod
+        def detect_r(signal):
+            FakeProducer.calls.append("detect_r")
+            return [200, 601, 1000, 1400, 5000]   # 5000 has no annotation
+
+        @staticmethod
+        def rr_features(peaks):
+            out = []
+            for index in range(len(peaks)):
+                pre = 1.0 if index == 0 else (peaks[index] -
+                                              peaks[index - 1]) / BJ.FS
+                post = (pre if index == len(peaks) - 1
+                        else (peaks[index + 1] - peaks[index]) / BJ.FS)
+                out.append([pre, post, 0, 0, 0, 0, 0])
+            return out
+
+    replay = Q5E.build_detector_replay(
+        "/synthetic/v10", "/synthetic/mitdb", ["208"],
+        Q5E.EXECUTION_APPROVAL_TOKEN, producer=FakeProducer,
+        atr_reader=lambda r: {"annotations": annotations,
+                              "signal_length": 10000},
+        signal_reader=lambda r: [0.0])
+    try:
+        replay.anchors_by_record({})
+        raise AssertionError("anchors were built before the replay ran")
+    except Q5E.Q5EError as error:
+        check("before the M4.0 detector replay ran" in str(error),
+              "no anchor may be computed before the gate's replay")
+
+    counts, replayed = replay()
+    check(FakeProducer.calls == ["detect_r"],
+          "the registered detector ran exactly once per record")
+    check(counts["208"] == 4,
+          "the boundary cut and AAMI selection drop the unannotated peak")
+    check(len(replayed["208"]) == 2 and len(replayed["208"][0]) == 4,
+          "the replay returns pre and post arrays in samples")
+
+    mamba = BJ.RecordSequence(
+        "208", "DS1", "mamba", [100, 200, 300, 400], [200, 300, 400, 400],
+        [{"raw_r_sample": s} for s in (200, 600, 1000, 1400)])
+    anchors = replay.anchors_by_record({"208": mamba})
+    kinds = {a["anchor_kind"] for a in anchors["208"]}
+    check("peak_without_annotation" in kinds,
+          "a detector peak matched to no annotation is an anchor")
+    placed = [a for a in anchors["208"]
+              if a["mapped_mamba_record_row"] is not None]
+    check(all(0 <= int(a["mapped_mamba_record_row"]) < len(mamba)
+              for a in placed),
+          "every placed anchor lands on a real kept mamba row")
+    unplaceable = [a for a in anchors["208"]
+                   if a["mapped_mamba_record_row"] is None]
+    check(all(not a["counterpart_kept"] for a in unplaceable),
+          "an anchor with no unique placement is reported, never imputed")
+
+
+def test_m4_peak_matching_uses_the_sources_own_tolerance():
+    """1 — no new detector, tolerance or manual anchor is introduced."""
+    check(Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES == 54,
+          "the tolerance is the source's own int(0.15 * fs)")
+    annotations = [(1000, "N"), (2000, "N")]
+    near = Q5E.match_peaks_to_annotations([1054], annotations, 10000)
+    check(not near["peaks_without_annotation"],
+          "a peak exactly at the tolerance still matches")
+    far = Q5E.match_peaks_to_annotations([1055], annotations, 10000)
+    check(len(far["peaks_without_annotation"]) == 1,
+          "one sample beyond the tolerance does not match")
+    check(len(far["annotations_without_peak"]) == 2,
+          "and both annotations are then unmatched")
+
+    twice = Q5E.match_peaks_to_annotations([1000, 1001], annotations, 10000)
+    check(len(twice["kept_rows"]) == 1,
+          "the used set stops one annotation answering for two peaks")
+    check(len(twice["peaks_without_annotation"]) == 1,
+          "the second peak becomes an anchor rather than a duplicate match")
+    check(len({r["raw_atr_ordinal"] for r in twice["kept_rows"]}) == 1,
+          "each kept row maps to a distinct annotation")
+
+    edge = Q5E.match_peaks_to_annotations([100], [(100, "N")], 10000)
+    check(not edge["kept_rows"],
+          "the p-150>=0 boundary cut drops a peak too close to the start")
+    late = Q5E.match_peaks_to_annotations([9950], [(9950, "N")], 10000)
+    check(not late["kept_rows"],
+          "and the p+150<=len cut drops one too close to the end")
+
+
+def test_m4_identity_is_observed_not_substituted():
+    """6 — the identity sub-gate may never compare a constant with itself."""
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        body = handle.read().split("def load_all_inputs(", 1)[1]
+        body = body.split("\ndef ", 1)[0]
+    check("observed_m4_identity(" in body,
+          "load_all_inputs observes the mounted aggregates")
+    check('M4_INPUT_CONTRACT["v10_cache"]' not in body,
+          "it never passes the registered constant as the observed value")
+    mismatch = Q5E.verify_m4_input_identity(
+        {"v10_source": "deadbeef", "v10_cache": "deadbeef"},
+        Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT)
+    check(not mismatch["ok"], "a wrong observed aggregate fails the sub-gate")
+
+
+def test_run_audit_requires_a_verified_input_set():
+    """6 — hand-typed paths cannot bypass identity verification."""
+    try:
+        Q5E.run_audit({"bundle_dir": "/typed/by/hand"}, "/out",
+                      approval=Q5E.EXECUTION_APPROVAL_TOKEN,
+                      open_registered_data=True)
+        raise AssertionError("an unverified path set was accepted")
+    except Q5E.DiagnosticInputMismatch as error:
+        check("did not come from" in str(error),
+              "run_audit refuses inputs that skipped discovery")
+    try:
+        Q5E.assert_discovered_identity(
+            {"identity_verified": Q5E.DISCOVERY_VERIFIED,
+             "bundle_dir": "b"})
+        raise AssertionError("an incomplete verified set was accepted")
+    except Q5E.DiagnosticInputMismatch as error:
+        check("missing" in str(error), "every registered path must be present")
+    complete = Q5E.assert_discovered_identity(_verified({}))
+    check(set(complete) == set(Q5E.DISCOVERED_PATH_KEYS),
+          "a complete verified set resolves to exactly the registered paths")
+
+
+def test_mitdb_is_verified_against_publisher_checksums():
+    """6 — file-name completeness alone is not identity."""
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        body = handle.read().split("def discover_registered_inputs(", 1)[1]
+        body = body.split("\ndef ", 1)[0]
+    check("verify_against_publisher_checksums" in body,
+          "discovery verifies the publisher checksum list")
+    check("MITDB_CHECKSUM_FILE" in body,
+          "a tree without SHA256SUMS.txt is not accepted")
+    check("M4_V10_SOURCE_FILES" in body,
+          "the V10 source is matched on its full registered expected set")
+    check(set(Q5E.M4_V10_SOURCE_FILES) != set(Q5E.M4_V9_SOURCE_FILES),
+          "the V9 and V10 expected sets are distinguishable")
+    check("pwave.py" in Q5E.M4_V10_SOURCE_FILES and
+          "v15b_local.py" not in Q5E.M4_V10_SOURCE_FILES,
+          "the V10 set is the registered one, not the V9 one")
+
+
+def test_synthetic_bundle_is_marked_everywhere():
+    """5 — a fixture bundle is machine-readably not an ingest candidate."""
+    config = Q5E.build_config(Q5E.MODE_AUDIT, "T",
+                              qa_target_set=Q5E.QA_TARGETS_FIXTURE)
+    manifest = Q5E.build_manifest({}, "T",
+                                  qa_target_set=Q5E.QA_TARGETS_FIXTURE)
+    for name, payload in (("config", config), ("manifest", manifest)):
+        check(payload["synthetic_fixture"] is True,
+              f"the {name} is stamped synthetic")
+        check(payload["ingestable"] is False,
+              f"the {name} says it is not an ingest candidate")
+    clean = Q5E.build_config(Q5E.MODE_AUDIT, "T")
+    check(clean["synthetic_fixture"] is False and clean["ingestable"] is True,
+          "a registered run is not stamped synthetic")
+
+    result = {"decision": Q5E.DECISION_NONE, "m4": {"status": Q5E.M4_OK},
+              "synthetic_fixture": True,
+              "qa_target_set": Q5E.QA_TARGETS_FIXTURE}
+    with tempfile.TemporaryDirectory() as tmp:
+        out = os.path.join(tmp, "run")
+        written = Q5E.write_bundle(out, result, config, manifest,
+                                   _full_tables(), {}, ["x"],
+                                   Q5E.summary_markdown(result),
+                                   figures=True, figure_backend=_stub_png)
+        check(Q5E.SYNTHETIC_MARKER in written["written"],
+              "the marker file is written into the bundle")
+        with open(os.path.join(out, Q5E.SYNTHETIC_MARKER),
+                  encoding="utf-8") as handle:
+            marker = json.load(handle)
+        check(marker["ingestable"] is False,
+              "the marker is machine-readable, not prose")
+
+
+def test_production_refuses_to_publish_a_fixture_verdict():
+    """5 — qa_fixture is only ever an explicit synthetic input."""
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        body = handle.read().split("def run_audit(", 1)[1].split("\ndef ", 1)[0]
+    check("qa_fixture" not in body, "run_audit never passes a QA fixture")
+    check("refusing to publish" in body,
+          "and refuses to publish anything but a REGISTERED verdict")
+    check("QA_TARGETS_REGISTERED" in body,
+          "the check names the registered target set explicitly")
+
+
+def declared_tests() -> List[str]:
+    """Top-level `test_*` functions, by AST rather than by line prefix.
+
+    A prefix scan counts a `def test_` inside a string or a nested scope and
+    misses one written with unusual spacing; parsing the module answers the
+    question actually being asked — which top-level tests exist.
+    """
+    import ast
+    with open(os.path.abspath(__file__), encoding="utf-8") as handle:
+        tree = ast.parse(handle.read())
+    return sorted(node.name for node in tree.body
+                  if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+                  and node.name.startswith("test_"))
+
+
 def run_all() -> int:
     """Run every test, and refuse to under-report.
 
-    The collected count is compared against the `def test_` lines in this file:
-    a test appended after this function used to be defined too late to run and
-    the suite still printed a pass.  A silent skip is a failure here.
+    Two ways a suite can lie about itself are closed here.  A test defined
+    after this function used to be collected too late to run while the suite
+    still printed a pass, so the collected set is compared against the AST.
+    And a test that runs but asserts nothing is indistinguishable from a
+    passing one, so every test must raise the assertion counter.
+
+    The assertion total is reported as a plain count of what actually ran; it
+    is not a fixed number, because the optional matplotlib path contributes
+    assertions only where that library is installed.
     """
-    tests = [value for name, value in sorted(globals().items())
-             if name.startswith("test_") and callable(value)]
-    with open(os.path.abspath(__file__), encoding="utf-8") as handle:
-        declared = sum(1 for line in handle
-                       if line.startswith("def test_"))
-    if len(tests) != declared:
+    global PASSED
+    collected = {name: value for name, value in globals().items()
+                 if name.startswith("test_") and callable(value)}
+    declared = declared_tests()
+    missing = [name for name in declared if name not in collected]
+    extra = [name for name in sorted(collected) if name not in declared]
+    if missing or extra:
         raise AssertionError(
-            f"{declared} tests are declared in this file but only "
-            f"{len(tests)} were collected: something is defined after the "
-            f"runner and never runs")
-    for test in tests:
-        test()
-    print(f"{len(tests)} test functions, {PASSED} assertions passed")
+            f"the runner did not collect what this file declares: "
+            f"missing={missing} unexpected={extra}.  A test defined after the "
+            f"runner never executes, and a silent skip is a failure.")
+
+    silent: List[str] = []
+    for name in declared:
+        before = PASSED
+        collected[name]()
+        if PASSED == before:
+            silent.append(name)
+    if silent:
+        raise AssertionError(
+            f"these tests ran without asserting anything: {silent}.  A test "
+            f"that raises no assertion cannot fail, so it is not a test.")
+    optional = "with" if _matplotlib_present() else "without"
+    print(f"{len(declared)} test functions, {PASSED} assertions passed "
+          f"({optional} the optional matplotlib renderer)")
     return 0
+
+
+def _matplotlib_present() -> bool:
+    try:
+        import matplotlib                                  # noqa: F401
+        return True
+    except ImportError:
+        return False
 
 
 if __name__ == "__main__":

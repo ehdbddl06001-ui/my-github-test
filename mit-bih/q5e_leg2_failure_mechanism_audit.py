@@ -97,6 +97,12 @@ QA_TARGETS: Dict[str, int] = {
 #: self-test bundle and is carried into the result JSON and the summary.
 QA_TARGETS_REGISTERED = "REGISTERED"
 QA_TARGETS_FIXTURE = "FIXTURE"
+#: Written into a synthetic bundle so an ingester can refuse it without
+#: parsing prose.  Its presence is the machine-readable "do not ingest".
+SYNTHETIC_MARKER = "SYNTHETIC_FIXTURE.json"
+SYNTHETIC_NOTE = ("Produced against injected fixture QA targets by the "
+                  "synthetic self-test. Not a Q5-E result and not an ingest "
+                  "candidate.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Frozen M4 identity constants (spec §"Frozen M4 identity constants").
@@ -117,6 +123,17 @@ M4_INPUT_CONTRACT: Dict[str, Dict[str, object]] = {
                       "dfe7d69dfbe64d85c38b4aa78b14"),
     },
 }
+#: The registered V10 source expected set (spec §"Frozen M4 identity
+#: constants").  Verification fails on either a missing or an extra file, so
+#: this is a fixed set and never a glob over whatever the folder holds.
+M4_V10_SOURCE_FILES: Tuple[str, ...] = (
+    "__init__.py", "data.py", "evaluate.py", "frontend.py", "model.py",
+    "pwave.py", "train.py")
+#: The V9 corroborating set.  Recorded so a V9 folder cannot be mistaken for
+#: the V10 one by file count alone; V9 is never an M4 input.
+M4_V9_SOURCE_FILES: Tuple[str, ...] = (
+    "__init__.py", "data.py", "evaluate.py", "frontend.py", "model.py",
+    "train.py", "v15b_local.py")
 M4_CORROBORATING: Dict[str, Dict[str, object]] = {
     "v9_source": {
         "drive_id": "1oYHJi38hir2JqZl9s_SyuSxq3Hxw25sK",
@@ -162,6 +179,16 @@ M4_RUNTIME_REQUIRED: Tuple[str, ...] = ("python", "numpy", "scipy", "wfdb")
 #: The detector's own matching tolerance, in samples, from the frozen source.
 M4_PEAK_MATCH_TOLERANCE_SAMPLES = 54
 M4_ANCHOR_HALF_WINDOW = 10
+#: One kind per registered figure.  Distinct by construction: two figures
+#: sharing a kind is what let the run-length figure silently render the
+#: distance series.
+FIG_CLASS_REASON = "m0_class_reason_stacked_with_side_panels"
+FIG_RECORD_CLASS_HEATMAP = "m0_record_class_heatmap"
+FIG_RECORD_208_RASTER = "m0_record_208_raster_with_raw_ordinal_sensitivity"
+FIG_RUN_LENGTH_HIST = "m0_run_length_histogram_with_summary"
+FIG_DISTANCE_HIST = "m1_fixed_bin_distance_histogram_with_exclusions"
+FIG_DEGREE_VIOLIN_ECDF = "m3_candidate_degree_violin_and_ecdf_by_side"
+FIG_ANCHOR_CURVE = "m4_anchor_curve_with_control_c_band"
 PREP_M4_RR_EQUIVALENCE_VERDICT = "RR_VALUE_IDENTICAL_44_OF_44"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -448,6 +475,11 @@ def module_capabilities() -> Tuple[str, ...]:
     is defeated only by actually lacking the capability.
     """
     return ("run_audit", "run_audit_from_mount", "discover_registered_inputs",
+            "assert_discovered_identity", "build_detector_replay",
+            "match_peaks_to_annotations", "load_frozen_rr", "build_m4_anchors",
+            "hypothesis_strata", "stratified_statistic",
+            "has_stratified_evidence", "figure_data",
+            "assert_bundle_inputs_complete",
             "verify_qa_targets", "m0_report", "m1_distances",
             "m2_report", "m3_graph", "m4_feasibility_gate", "m4_anchors",
             "run_null_family", "h4_evaluate", "h4_descriptive_by_side",
@@ -1135,6 +1167,94 @@ def strata_reported(report: Mapping[str, object]) -> List[str]:
             continue
         out.append(name)
     return out
+
+
+def stratum_levels(items: Sequence[Mapping[str, object]], stratum: str
+                   ) -> Dict[str, List[Mapping[str, object]]]:
+    """Split ``items`` into the levels of one registered stratum.
+
+    Each item states its own `record`, and optionally `class` and `reason`.
+    A stratum an item cannot answer for simply has no level for it — this
+    never invents a class or a reason to keep a cell populated.
+    """
+    levels: Dict[str, List[Mapping[str, object]]] = {}
+    for item in items:
+        record = str(item.get("record") or "")
+        if stratum == POOLED:
+            keys: List[str] = [POOLED]
+        elif stratum == "class":
+            value = str(item.get("class") or "")
+            keys = [value] if value in AAMI_CLASSES else []
+        elif stratum == "reason":
+            value = str(item.get("reason") or "")
+            keys = [value] if value in REASON_TO_GROUP else []
+        elif stratum == "record":
+            keys = [record] if record else []
+        elif stratum == "count_stratum":
+            keys = [record_stratum(record)] if record else []
+        elif stratum in ("record_116", "record_208"):
+            keys = [record] if record == stratum.split("_")[1] else []
+        else:                                            # pragma: no cover
+            raise Q5EError(f"unknown stratum {stratum!r}")
+        for key in keys:
+            levels.setdefault(key, []).append(item)
+    return levels
+
+
+def stratified_statistic(items: Sequence[Mapping[str, object]],
+                         statistic, minimum: int = 1
+                         ) -> Dict[str, Dict[str, object]]:
+    """Evaluate one hypothesis statistic inside every registered stratum.
+
+    A level with fewer than ``minimum`` items, or whose statistic is not
+    computable, is recorded as `NOT_APPLICABLE`.  A stratum counts as
+    *materialised* only when at least one of its levels produced a real
+    number — which is the whole point: a stratum name in the result JSON is
+    not stratified evidence, and this is what makes the difference checkable.
+    """
+    out: Dict[str, Dict[str, object]] = {}
+    for stratum in M5_STRATA:
+        levels = stratum_levels(items, stratum)
+        entries: Dict[str, object] = {}
+        materialised = False
+        for level, subset in sorted(levels.items()):
+            if len(subset) < minimum:
+                entries[level] = {"n": len(subset), "statistic": None,
+                                  "status": NOT_APPLICABLE}
+                continue
+            try:
+                value = statistic(subset)
+            except (ZeroDivisionError, ValueError, statistics.StatisticsError):
+                value = None
+            if value is None:
+                entries[level] = {"n": len(subset), "statistic": None,
+                                  "status": NOT_APPLICABLE}
+                continue
+            entries[level] = {"n": len(subset), "statistic": float(value),
+                              "status": "OK"}
+            materialised = True
+        out[stratum] = {"levels": entries, "materialised": bool(materialised),
+                        "status": "OK" if materialised else NOT_APPLICABLE}
+    return out
+
+
+def materialised_strata(report: Mapping[str, Mapping[str, object]]
+                        ) -> List[str]:
+    """The strata of one hypothesis that actually carry a number."""
+    return [name for name in M5_STRATA
+            if dict(report.get(name, {})).get("materialised")]
+
+
+def has_stratified_evidence(report: Mapping[str, Mapping[str, object]]
+                            ) -> bool:
+    """True only when some **non-pooled** stratum carries a real number.
+
+    `A mechanism is never declared from the pooled value alone.`  Enforcing
+    that on the presence of stratum *names* was the defect: names are always
+    present.  This asks whether a stratified statistic was actually computed.
+    """
+    return bool([name for name in materialised_strata(report)
+                 if name != POOLED])
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2124,14 +2244,22 @@ def evaluate_flags(evidence: Mapping[str, Mapping[str, object]],
                          "p_holm_4family": holm["p_holm_4family"][name]}
             continue
         gates_ok = bool(conditions) and all(bool(v) for v in conditions.values())
-        reported = list(evidence.get(name, {}).get("strata_reported", ()))
-        pooled_only = not [x for x in reported if x != POOLED]
+        # Stratified evidence means a stratified *statistic*, not a stratum
+        # name.  `strata` carries the per-level numbers this hypothesis
+        # actually produced; a hypothesis that only has a pooled number cannot
+        # fire however significant it is.
+        strata = dict(evidence.get(name, {}).get("strata", {}))
+        reported = (materialised_strata(strata) if strata
+                    else list(evidence.get(name, {}).get("strata_reported", ())))
+        stratified = (has_stratified_evidence(strata) if strata
+                      else bool([x for x in reported if x != POOLED]))
         out[name] = {
-            "flag": bool(gates_ok and significant[name] and not pooled_only),
+            "flag": bool(gates_ok and significant[name] and stratified),
             "evaluable": True, "status": "EVALUATED",
             "effect_gates": conditions,
             "strata_reported": reported,
-            "pooled_only_blocked": bool(pooled_only),
+            "stratified_evidence": bool(stratified),
+            "pooled_only_blocked": not bool(stratified),
             "holm_significant": bool(significant[name]),
             "p_holm_4family": holm["p_holm_4family"][name]}
     return out
@@ -2170,12 +2298,18 @@ def decide(qa_ok: bool, m4_status: str,
 # Result assembly and bundle writing
 # ─────────────────────────────────────────────────────────────────────────────
 def build_config(mode: str, timestamp: str,
-                 execution_approved: bool = False) -> Dict[str, object]:
+                 execution_approved: bool = False,
+                 qa_target_set: str = QA_TARGETS_REGISTERED
+                 ) -> Dict[str, object]:
+    synthetic = qa_target_set != QA_TARGETS_REGISTERED
     return {
         "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
         "run_slug": RUN_SLUG, "module_version": MODULE_VERSION,
         "mode": resolve_mode(mode), "timestamp": timestamp,
         "spec": SPEC_PATH,
+        "qa_target_set": qa_target_set,
+        "synthetic_fixture": synthetic,
+        "ingestable": not synthetic,
         "master_seed": MASTER_SEED, "n_null_replicates": N_NULL_REPLICATES,
         "window_half_width": M1_WINDOW_HALF_WIDTH,
         "adjacency_primary": ADJ_PRIMARY,
@@ -2186,11 +2320,16 @@ def build_config(mode: str, timestamp: str,
     }
 
 
-def build_manifest(inputs: Mapping[str, object], timestamp: str
+def build_manifest(inputs: Mapping[str, object], timestamp: str,
+                   qa_target_set: str = QA_TARGETS_REGISTERED
                    ) -> Dict[str, object]:
+    synthetic = qa_target_set != QA_TARGETS_REGISTERED
     return {
         "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
         "timestamp": timestamp,
+        "qa_target_set": qa_target_set,
+        "synthetic_fixture": synthetic,
+        "ingestable": not synthetic,
         "module_sha256": sha256_file(os.path.abspath(__file__)),
         "frozen_module_sha256": sha256_file(os.path.abspath(BJ.__file__)),
         "source_bundle": {
@@ -2293,8 +2432,14 @@ def required_outputs(decision: str, m4_ok: bool) -> List[str]:
 
 def render_figures(directory: str,
                    tables: Mapping[str, Sequence[Mapping[str, object]]],
-                   m4_ok: bool, backend=None) -> List[str]:
+                   m4_ok: bool, backend=None,
+                   nulls: Optional[Mapping[str, object]] = None) -> List[str]:
     """Render the registered figures as real PNG files.
+
+    Each figure gets its own data through :func:`figure_data`; two figures
+    never share a series because their `kind` happens to be similar.  That was
+    a real defect: the run-length figure and the distance figure both rendered
+    the distance bins, so one of them was silently a duplicate of the other.
 
     ``backend`` is injectable so a synthetic end-to-end test can exercise the
     complete bundle contract without depending on a plotting library.  The
@@ -2305,86 +2450,321 @@ def render_figures(directory: str,
     assert_ascii_labels(specs)
     writer = backend or _matplotlib_backend
     written: List[str] = []
+    seen: Dict[str, str] = {}
     for spec in specs:
         path = os.path.join(directory, str(spec["file"]))
         if os.path.exists(path):
             raise Q5EError(f"refusing to overwrite an existing figure {path!r}")
-        writer(path, spec, tables)
+        data = figure_data(str(spec["kind"]), tables, nulls)
+        fingerprint = _canonical_json(data)
+        clash = seen.get(fingerprint)
+        if clash is not None:
+            raise Q5EError(
+                f"figures {clash!r} and {spec['file']!r} would render exactly "
+                f"the same data.  Each registered figure shows a different "
+                f"measurement; a duplicate is a rendering bug, not a figure.")
+        seen[fingerprint] = str(spec["file"])
+        writer(path, spec, tables, data)
         written.append(str(spec["file"]))
     return sorted(written)
 
 
+def figure_data(kind: str,
+                tables: Mapping[str, Sequence[Mapping[str, object]]],
+                nulls: Optional[Mapping[str, object]] = None
+                ) -> Dict[str, object]:
+    """The panels of one registered figure, built from the written tables.
+
+    Returned as data so a test can assert what each figure *shows* without
+    importing matplotlib or reading pixels.
+    """
+    if kind == FIG_CLASS_REASON:
+        # Stacked bar of reason within class, one panel per side.
+        panels: Dict[str, object] = {}
+        for side in SIDES:
+            stacks: Dict[str, Dict[str, float]] = {}
+            for row in tables.get("m0_class_by_reason.csv", []):
+                if str(row.get("side")) != side:
+                    continue
+                stacks.setdefault(str(row.get("class")), {})[
+                    str(row.get("reason"))] = float(row.get("count") or 0)
+            panels[side] = {"categories": sorted(stacks),
+                            "stacks": {k: stacks[k] for k in sorted(stacks)}}
+        return {"kind": kind, "panels": panels}
+
+    if kind == FIG_RECORD_CLASS_HEATMAP:
+        # records x the three AAMI classes, as a real matrix of rates.
+        rows = tables.get("m0_record_class.csv", [])
+        records = sorted({str(r.get("record")) for r in rows})
+        cells: Dict[str, Dict[str, object]] = {}
+        for record in records:
+            per_class: Dict[str, object] = {}
+            for cls in AAMI_CLASSES:
+                selected = [r for r in rows if str(r.get("record")) == record
+                            and str(r.get("class")) == cls]
+                denominator = sum(int(r.get("denominator") or 0)
+                                  for r in selected)
+                failures = sum(int(r.get("failures") or 0) for r in selected)
+                per_class[cls] = (_ratio(failures, denominator)
+                                  if denominator else None)
+            cells[record] = per_class
+        return {"kind": kind, "rows": records, "columns": list(AAMI_CLASSES),
+                "cells": cells, "shape": [len(records), len(AAMI_CLASSES)]}
+
+    if kind == FIG_RECORD_208_RASTER:
+        # Beat-level state for record 208, plus the raw-ordinal sensitivity
+        # that shows the same failures split into different runs.
+        graph = [r for r in tables.get("m3_graph.csv", [])
+                 if str(r.get("record")) == "208"
+                 and str(r.get("side")) == SIDE_MAMBA]
+        raster = [{"row": int(r.get("row") or 0),
+                   "group": str(r.get("group")),
+                   "failed": str(r.get("group")) != GROUP_CERTIFIED}
+                  for r in sorted(graph, key=lambda r: int(r.get("row") or 0))]
+        sensitivity: Dict[str, Dict[str, float]] = {}
+        for row in tables.get("m0_runs.csv", []):
+            if str(row.get("record")) != "208":
+                continue
+            adjacency = str(row.get("adjacency_definition"))
+            sensitivity.setdefault(adjacency, {})[str(row.get("run_start"))] = \
+                float(row.get("run_length") or 0)
+        return {"kind": kind, "raster": raster,
+                "raw_ordinal_sensitivity": sensitivity,
+                "decisional_adjacency": ADJ_PRIMARY}
+
+    if kind == FIG_RUN_LENGTH_HIST:
+        # Run lengths, decisional adjacency only, plus summary statistics.
+        buckets: Dict[str, float] = {}
+        values: List[float] = []
+        for row in tables.get("m0_runs.csv", []):
+            if str(row.get("adjacency_definition")) != ADJ_PRIMARY:
+                continue
+            bucket = str(row.get("run_start"))
+            count = float(row.get("run_length") or 0)
+            buckets[bucket] = buckets.get(bucket, 0.0) + count
+            values.append(count)
+        summary = {"n_buckets": len(buckets), "total": sum(values),
+                   "median": median(values) if values else None,
+                   "max": max(values) if values else None}
+        return {"kind": kind, "buckets": {k: buckets[k] for k in sorted(buckets)},
+                "summary": summary, "adjacency": ADJ_PRIMARY}
+
+    if kind == FIG_DISTANCE_HIST:
+        # The registered fixed bins, in registered order, plus the two
+        # descriptive exclusion counts beside them.
+        rows = tables.get("m1_distance.csv", [])
+        order = [name for name, _lo, _hi in M1_BINS]
+        counts = {name: 0 for name in order}
+        for row in rows:
+            key = str(row.get("bin"))
+            if key in counts:
+                counts[key] += 1
+        descriptive = {
+            CENSORED_FLAG: sum(
+                1 for r in rows if r.get("censored")),
+            ENDPOINT_ZERO_FLAG: sum(
+                1 for r in rows if r.get("cache_endpoint_zero"))}
+        return {"kind": kind, "bins": order, "counts": counts,
+                "descriptive_exclusions": descriptive}
+
+    if kind == FIG_DEGREE_VIOLIN_ECDF:
+        # Candidate degree per side, with each side labelled decisional or not.
+        rows = tables.get("m3_graph.csv", [])
+        panels = {}
+        for side in SIDES:
+            by_group: Dict[str, List[float]] = {}
+            for row in rows:
+                if str(row.get("side")) != side:
+                    continue
+                by_group.setdefault(str(row.get("group")), []).append(
+                    float(row.get("candidate_degree") or 0))
+            panels[side] = {
+                "decisional": side == H4_DECISIONAL_SIDE,
+                "label": ("H4 decisional" if side == H4_DECISIONAL_SIDE
+                          else "descriptive, non-decisional"),
+                "violin": {k: sorted(by_group[k]) for k in sorted(by_group)},
+                "ecdf": {k: ecdf(by_group[k]) for k in sorted(by_group)}}
+        return {"kind": kind, "panels": panels}
+
+    if kind == FIG_ANCHOR_CURVE:
+        rows = tables.get("m4_anchors.csv", [])
+        by_offset: Dict[int, List[float]] = {}
+        for row in rows:
+            by_offset.setdefault(int(row.get("offset") or 0), []).append(
+                1.0 if row.get("failed") else 0.0)
+        offsets = sorted(by_offset)
+        curve = [_ratio(sum(by_offset[k]), len(by_offset[k])) for k in offsets]
+        control = dict((nulls or {}).get(CONTROL_C) or {})
+        band = {}
+        for name in ("H2", "H3"):
+            entry = dict(control.get(name) or {})
+            if entry:
+                band[name] = {"q99": entry.get("q99"),
+                              "mean": entry.get("mean"),
+                              "min": entry.get("min"), "max": entry.get("max")}
+        return {"kind": kind, "offsets": offsets, "curve": curve,
+                "control_c_band": band}
+
+    raise Q5EError(f"unknown figure kind {kind!r}")   # pragma: no cover
+
+
 def _matplotlib_backend(path: str, spec: Mapping[str, object],
-                        tables: Mapping[str, Sequence[Mapping[str, object]]]
+                        tables: Mapping[str, Sequence[Mapping[str, object]]],
+                        data: Mapping[str, object]
                         ) -> None:                          # pragma: no cover
-    """Default renderer.  ASCII labels only; no glyph can go missing."""
+    """Default renderer.  ASCII labels only; no glyph can go missing.
+
+    One branch per registered figure: the panel layout follows the figure's
+    own meaning rather than a shared fallback.
+    """
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    figure, axes = plt.subplots(figsize=(7.0, 4.0))
     kind = str(spec.get("kind"))
-    series = _figure_series(kind, tables)
-    if series["x"]:
-        if kind in ("stacked_bar", "hist", "raster"):
-            axes.bar(range(len(series["x"])), series["y"])
-        else:
-            axes.plot(range(len(series["x"])), series["y"], marker="o")
-        axes.set_xticks(range(len(series["x"])))
-        axes.set_xticklabels([str(v) for v in series["x"]], rotation=45,
-                             ha="right")
-    axes.set_title(str(spec["title"]))
-    axes.set_xlabel(str(spec["xlabel"]))
-    axes.set_ylabel(str(spec["ylabel"]))
+    panels = list(spec.get("panels") or ("main",))
+    figure, axes = plt.subplots(1, len(panels),
+                                figsize=(4.2 * len(panels), 4.0),
+                                squeeze=False)
+    row = axes[0]
+
+    if kind == FIG_CLASS_REASON:
+        for index, side in enumerate(SIDES):
+            panel = dict(dict(data["panels"])[side])
+            categories = list(panel["categories"])
+            bottom = [0.0] * len(categories)
+            stacks = dict(panel["stacks"])
+            reasons = sorted({r for v in stacks.values() for r in v})
+            for reason in reasons:
+                heights = [float(dict(stacks[c]).get(reason, 0.0))
+                           for c in categories]
+                row[index].bar(range(len(categories)), heights, bottom=bottom,
+                               label=reason)
+                bottom = [b + h for b, h in zip(bottom, heights)]
+            row[index].set_xticks(range(len(categories)))
+            row[index].set_xticklabels(categories)
+            row[index].set_title(f"{side} side")
+            if reasons:
+                row[index].legend(fontsize=6)
+    elif kind == FIG_RECORD_CLASS_HEATMAP:
+        records = list(data["rows"])
+        columns = list(data["columns"])
+        cells = dict(data["cells"])
+        matrix = [[(dict(cells[r]).get(c) or 0.0) for c in columns]
+                  for r in records]
+        if matrix:
+            image = row[0].imshow(matrix, aspect="auto", cmap="viridis")
+            figure.colorbar(image, ax=row[0], label="failure rate")
+        row[0].set_yticks(range(len(records)))
+        row[0].set_yticklabels(records, fontsize=6)
+        row[0].set_xticks(range(len(columns)))
+        row[0].set_xticklabels(columns)
+    elif kind == FIG_RECORD_208_RASTER:
+        raster = list(data["raster"])
+        row[0].bar([int(e["row"]) for e in raster],
+                   [1.0 if e["failed"] else 0.0 for e in raster], width=1.0)
+        row[0].set_title("record 208, decisional adjacency")
+        sensitivity = dict(data["raw_ordinal_sensitivity"])
+        for adjacency in sorted(sensitivity):
+            entry = dict(sensitivity[adjacency])
+            keys = sorted(entry)
+            row[1].plot(range(len(keys)), [entry[k] for k in keys],
+                        marker="o", label=adjacency)
+            row[1].set_xticks(range(len(keys)))
+            row[1].set_xticklabels(keys, rotation=45, ha="right", fontsize=6)
+        row[1].set_title("raw-ordinal sensitivity (non-decisional)")
+        if sensitivity:
+            row[1].legend(fontsize=6)
+    elif kind == FIG_RUN_LENGTH_HIST:
+        buckets = dict(data["buckets"])
+        keys = list(buckets)
+        row[0].bar(range(len(keys)), [buckets[k] for k in keys])
+        row[0].set_xticks(range(len(keys)))
+        row[0].set_xticklabels(keys, rotation=45, ha="right", fontsize=7)
+        summary = dict(data["summary"])
+        row[1].axis("off")
+        row[1].text(0.02, 0.95, "\n".join(
+            f"{k}: {v}" for k, v in sorted(summary.items())),
+            va="top", family="monospace", fontsize=8)
+        row[1].set_title("summary")
+    elif kind == FIG_DISTANCE_HIST:
+        bins = list(data["bins"])
+        counts = dict(data["counts"])
+        row[0].bar(range(len(bins)), [counts[b] for b in bins])
+        row[0].set_xticks(range(len(bins)))
+        row[0].set_xticklabels(bins, rotation=45, ha="right", fontsize=7)
+        descriptive = dict(data["descriptive_exclusions"])
+        keys = sorted(descriptive)
+        row[1].bar(range(len(keys)), [descriptive[k] for k in keys])
+        row[1].set_xticks(range(len(keys)))
+        row[1].set_xticklabels(keys, rotation=45, ha="right", fontsize=6)
+        row[1].set_title("descriptive exclusions")
+    elif kind == FIG_DEGREE_VIOLIN_ECDF:
+        panel_data = dict(data["panels"])
+        for index, side in enumerate(SIDES):
+            panel = dict(panel_data[side])
+            violin = dict(panel["violin"])
+            groups = list(violin)
+            series = [list(violin[g]) or [0.0] for g in groups]
+            if series:
+                row[0].violinplot(series, positions=range(len(series)),
+                                  showmedians=True)
+            for group in groups:
+                points = list(dict(panel["ecdf"])[group])
+                row[1].plot([p[0] for p in points], [p[1] for p in points],
+                            label=f"{side}/{group}")
+            row[0].set_title(f"{SIDES[0]} vs {SIDES[1]} degree")
+            row[1].set_title("ECDF")
+            del index
+        labels = [f"{s}: {dict(panel_data[s])['label']}" for s in SIDES]
+        row[0].set_xlabel(" | ".join(labels), fontsize=6)
+        row[1].legend(fontsize=5)
+    elif kind == FIG_ANCHOR_CURVE:
+        offsets = list(data["offsets"])
+        row[0].plot(offsets, list(data["curve"]), marker="o")
+        row[0].set_title("failure share by offset")
+        band = dict(data["control_c_band"])
+        names = sorted(band)
+        row[1].bar(range(len(names)),
+                   [float(dict(band[n]).get("q99") or 0.0) for n in names])
+        row[1].set_xticks(range(len(names)))
+        row[1].set_xticklabels(names)
+        row[1].set_title("Control C q99 band")
+
+    row[0].set_xlabel(str(spec["xlabel"]))
+    row[0].set_ylabel(str(spec["ylabel"]))
+    figure.suptitle(str(spec["title"]))
     figure.tight_layout()
     figure.savefig(path, dpi=110)
     plt.close(figure)
 
 
-def _figure_series(kind: str,
-                   tables: Mapping[str, Sequence[Mapping[str, object]]]
-                   ) -> Dict[str, List[object]]:
-    """Plain (x, y) series per registered figure, from the written tables."""
-    rows: Sequence[Mapping[str, object]]
-    if kind == "stacked_bar":
-        rows = tables.get("m0_class_by_reason.csv", [])
-        return {"x": [f"{r.get('class')}/{r.get('side')}" for r in rows],
-                "y": [float(r.get("count") or 0) for r in rows]}
-    if kind == "heatmap":
-        rows = tables.get("m0_record_class.csv", [])
-        return {"x": [f"{r.get('record')}/{r.get('class')}" for r in rows],
-                "y": [float(r.get("rate") or 0.0) for r in rows]}
-    if kind == "raster":
-        rows = [r for r in tables.get("m0_runs.csv", [])
-                if str(r.get("record")) == "208"]
-        return {"x": [r.get("run_start") for r in rows],
-                "y": [float(r.get("run_length") or 0) for r in rows]}
-    if kind == "hist":
-        rows = tables.get("m1_distance.csv", [])
-        buckets: Dict[str, int] = {}
-        for r in rows:
-            buckets[str(r.get("bin"))] = buckets.get(str(r.get("bin")), 0) + 1
-        if not buckets:
-            rows = tables.get("m0_runs.csv", [])
-            for r in rows:
-                key = str(r.get("run_length"))
-                buckets[key] = buckets.get(key, 0) + 1
-        return {"x": sorted(buckets), "y": [buckets[k] for k in sorted(buckets)]}
-    if kind == "violin_ecdf":
-        rows = tables.get("m3_graph.csv", [])
-        by_group: Dict[str, List[float]] = {}
-        for r in rows:
-            by_group.setdefault(str(r.get("group")), []).append(
-                float(r.get("candidate_degree") or 0))
-        return {"x": sorted(by_group),
-                "y": [median(by_group[k]) for k in sorted(by_group)]}
-    rows = tables.get("m4_anchors.csv", [])
-    by_offset: Dict[int, List[float]] = {}
-    for r in rows:
-        by_offset.setdefault(int(r.get("offset") or 0), []).append(
-            1.0 if r.get("failed") else 0.0)
-    return {"x": sorted(by_offset),
-            "y": [_ratio(sum(by_offset[k]), len(by_offset[k]))
-                  for k in sorted(by_offset)]}
+def assert_bundle_inputs_complete(result: Mapping[str, object],
+                                  tables: Mapping[str, Sequence[Mapping[
+                                      str, object]]]) -> List[str]:
+    """Check the bundle can be completed **before** anything is created.
+
+    Discovering a missing table after `os.makedirs` has already run leaves a
+    half-written directory behind that reads like a run.  So the required
+    output list and the tables backing it are validated first, and the
+    filesystem is not touched until they agree.
+    """
+    m4_ok = str((result.get("m4") or {}).get("status")) == M4_OK
+    needed = required_outputs(str(result.get("decision") or ""), m4_ok)
+    missing = [name for name in needed
+               if name in CSV_SCHEMAS and tables.get(name) is None]
+    if missing:
+        raise Q5EError(
+            f"refusing to start a bundle: {missing} are required for decision "
+            f"{result.get('decision')!r} (M4 ok={m4_ok}) but no table was "
+            f"produced for them.  Nothing has been created on disk.")
+    unexpected = [name for name in tables
+                  if name in CSV_SCHEMAS and name not in needed]
+    if unexpected:
+        raise Q5EError(
+            f"refusing to start a bundle: {unexpected} were produced but are "
+            f"not registered outputs for this branch.  Nothing has been "
+            f"created on disk.")
+    return needed
 
 
 def write_bundle(directory: str, result: Mapping[str, object],
@@ -2394,16 +2774,59 @@ def write_bundle(directory: str, result: Mapping[str, object],
                  summary: str, figures: Optional[bool] = None,
                  figure_backend=None,
                  require_complete: bool = False) -> Dict[str, object]:
-    """Write one new bundle directory.  Nothing existing is touched.
+    """Write one new bundle **atomically**.  Nothing existing is touched.
 
-    A stopped run still writes its bundle, so a STOP is as inspectable as a
-    PASS.
+    Everything is written and verified inside a sibling staging directory and
+    only then renamed into place, so the final path either does not exist or
+    holds a complete bundle.  A partially written run is the one artifact that
+    could be mistaken for a finished one, and this makes that state
+    unreachable.  A stopped run still publishes its bundle, so a STOP is as
+    inspectable as a PASS.
     """
     if os.path.exists(directory) and os.listdir(directory):
         raise Q5EError(
             f"refusing to write into a non-empty directory {directory!r}: "
             f"a run bundle is new, never an overwrite")
-    os.makedirs(directory, exist_ok=True)
+    needed = assert_bundle_inputs_complete(result, tables)
+    m4_ok = str((result.get("m4") or {}).get("status")) == M4_OK
+
+    parent = os.path.dirname(os.path.abspath(directory)) or "."
+    os.makedirs(parent, exist_ok=True)
+    staging = os.path.join(
+        parent, f".{os.path.basename(os.path.abspath(directory))}.staging")
+    if os.path.exists(staging):
+        import shutil                                    # noqa: PLC0415
+        shutil.rmtree(staging)
+    os.makedirs(staging)
+    try:
+        written = _write_bundle_files(staging, result, config, manifest,
+                                      tables, nulls, log_lines, summary,
+                                      figures, figure_backend, m4_ok)
+        if require_complete:
+            missing = [name for name in needed
+                       if not os.path.exists(os.path.join(staging, name))]
+            if missing:
+                raise Q5EError(
+                    f"incomplete bundle: {missing} were required for decision "
+                    f"{result.get('decision')!r} (M4 ok={m4_ok}) but were not "
+                    f"written.  A bundle is complete or it is not published "
+                    f"at all; the only registered absences are the M4-only "
+                    f"artefacts when M4 stops.")
+        if os.path.isdir(directory):
+            os.rmdir(directory)            # empty by the check above
+        os.rename(staging, directory)      # the publish step, atomic
+    except BaseException:
+        import shutil                                    # noqa: PLC0415
+        shutil.rmtree(staging, ignore_errors=True)
+        raise
+    return {"directory": directory, "written": sorted(set(written)),
+            "required": needed, "published": True}
+
+
+def _write_bundle_files(directory: str, result, config, manifest, tables,
+                        nulls, log_lines, summary, figures, figure_backend,
+                        m4_ok: bool) -> List[str]:
+    """Write every bundle file into ``directory``.  Used only for staging."""
     written: List[str] = []
     for name, payload in (("q5e_result.json", result), ("config.json", config),
                           ("manifest.json", manifest),
@@ -2423,25 +2846,19 @@ def write_bundle(directory: str, result: Mapping[str, object],
               encoding="utf-8") as fh:
         fh.write(summary)
     written.extend(["log.txt", "summary.md"])
-
-    m4_ok = str((result.get("m4") or {}).get("status")) == M4_OK
+    if result.get("synthetic_fixture"):
+        # Machine-readable, in the bundle itself: an ingester never has to
+        # parse prose to know this is not a registered result.
+        with open(os.path.join(directory, SYNTHETIC_MARKER), "w",
+                  encoding="utf-8") as fh:
+            json.dump({"synthetic_fixture": True, "ingestable": False,
+                       "qa_target_set": result.get("qa_target_set"),
+                       "reason": SYNTHETIC_NOTE}, fh, indent=1, sort_keys=True)
+        written.append(SYNTHETIC_MARKER)
     if figures is not None:
         written.extend(render_figures(directory, tables, m4_ok,
-                                      backend=figure_backend))
-    if require_complete:
-        needed = required_outputs(str(result.get("decision") or ""), m4_ok)
-        missing = [name for name in needed
-                   if not os.path.exists(os.path.join(directory, name))]
-        if missing:
-            raise Q5EError(
-                f"incomplete bundle: {missing} were required for decision "
-                f"{result.get('decision')!r} (M4 ok={m4_ok}) but were not "
-                f"written.  A bundle is complete or it is not written at all; "
-                f"the only registered absences are the M4-only artefacts when "
-                f"M4 stops.")
-    return {"directory": directory, "written": sorted(set(written)),
-            "required": required_outputs(str(result.get("decision") or ""),
-                                         m4_ok)}
+                                      backend=figure_backend, nulls=nulls))
+    return written
 
 
 def summary_markdown(result: Mapping[str, object]) -> str:
@@ -2483,23 +2900,33 @@ def figure_specs(m4_ok: bool) -> List[Dict[str, object]]:
     """
     specs = [
         {"file": FIGURES[0], "title": "Class by failure reason",
-         "xlabel": "class", "ylabel": "count", "kind": "stacked_bar"},
+         "xlabel": "class", "ylabel": "count",
+         "kind": FIG_CLASS_REASON, "panels": ("mamba", "cache")},
         {"file": FIGURES[1], "title": "Per-record class failure rate",
-         "xlabel": "class", "ylabel": "record", "kind": "heatmap"},
+         "xlabel": "class", "ylabel": "record",
+         "kind": FIG_RECORD_CLASS_HEATMAP, "panels": ("heatmap",)},
         {"file": FIGURES[2], "title": "Record 208 failure raster",
-         "xlabel": "mamba_record_row", "ylabel": "class", "kind": "raster"},
+         "xlabel": "mamba_record_row", "ylabel": "row state",
+         "kind": FIG_RECORD_208_RASTER,
+         "panels": ("raster", "raw_ordinal_sensitivity")},
         {"file": FIGURES[3], "title": "Run length distribution",
-         "xlabel": "run length bucket", "ylabel": "count", "kind": "hist"},
+         "xlabel": "run length bucket", "ylabel": "count",
+         "kind": FIG_RUN_LENGTH_HIST, "panels": ("histogram", "summary")},
         {"file": FIGURES[4], "title": "Nearest distance histogram",
-         "xlabel": "d_inf bin (samples)", "ylabel": "count", "kind": "hist"},
-        {"file": FIGURES[5], "title": "Candidate degree by group",
-         "xlabel": "group", "ylabel": "candidate degree", "kind": "violin_ecdf"},
+         "xlabel": "d_inf bin (samples)", "ylabel": "count",
+         "kind": FIG_DISTANCE_HIST,
+         "panels": ("fixed_bin_histogram", "censor_and_endpoint")},
+        {"file": FIGURES[5], "title": "Candidate degree by group and side",
+         "xlabel": "group", "ylabel": "candidate degree",
+         "kind": FIG_DEGREE_VIOLIN_ECDF, "panels": ("violin", "ecdf")},
     ]
     if m4_ok:
         specs.append({"file": FIGURE_M4_ONLY,
                       "title": "Anchor aligned failure probability",
                       "xlabel": "beat offset from anchor",
-                      "ylabel": "failure share", "kind": "curve"})
+                      "ylabel": "failure share",
+                      "kind": FIG_ANCHOR_CURVE,
+                      "panels": ("curve", "control_c_band")})
     return specs
 
 
@@ -2549,8 +2976,20 @@ class ProductionInputs(object):
         self.m4_registered_counts = dict(m4_registered_counts or {})
         self.m4_frozen_rr = dict(m4_frozen_rr or {})
         self.m4_replay = m4_replay
-        self.m4_anchors = dict(m4_anchors or {})
+        # Either a mapping or a zero-argument builder.  Production passes a
+        # builder, because the anchors do not exist until the replay has run.
+        self.m4_anchors = (m4_anchors if callable(m4_anchors)
+                           else dict(m4_anchors or {}))
         self.source_files = list(source_files)
+
+    def resolve_anchors(self) -> Dict[str, List[Dict[str, object]]]:
+        """The anchors, built now if they are still a builder.
+
+        Called only after M4.0 has passed, so a builder that refuses until the
+        replay ran is exactly the intended behaviour.
+        """
+        value = self.m4_anchors
+        return dict(value() if callable(value) else value)
 
 
 def load_join_map(bundle_dir: str, approval: Optional[str]
@@ -2585,14 +3024,28 @@ def load_processed_classes(cache_dir: str, approval: Optional[str]
     return BJ.load_cache_classes(cache_dir, SPLIT, approval=approval)
 
 
-def load_sequences(mamba_path: str, cache_dir: str, approval: Optional[str]
-                   ) -> Tuple[Dict[str, object], Dict[str, object]]:
+def load_sequences(mamba_path: str, cache_dir: str, approval: Optional[str],
+                   mitdb_dir: str = "") -> Tuple[Dict[str, object],
+                                                 Dict[str, object]]:
+    """The frozen mamba and cache sequences for DS1.
+
+    When ``mitdb_dir`` is given, the frozen Leg 1 replay is attached to the
+    mamba rows so each carries its raw `.atr` ordinal and R sample.  M4.1
+    places anchors against those samples, so without the attach the anchors
+    would have nothing to be placed on — and inferring a position from a row
+    count is exactly what the spec forbids.
+    """
     require_execution_approval(approval, "frozen mamba and cache sequences")
     mamba = BJ.load_mamba_sequences(mamba_path, approval=approval)
     cache = BJ.load_cache_sequences(cache_dir, approval=approval)
     ds1 = [row.record for row in BJ.build_ledger()[SPLIT]]
-    return ({r: mamba["sequences"][r] for r in ds1},
-            {r: cache["sequences"][r] for r in ds1})
+    mamba_by_record = {r: mamba["sequences"][r] for r in ds1}
+    if mitdb_dir:
+        leg1 = BJ.replay_leg1_split(mitdb_dir, SPLIT, approval=approval)
+        mamba_by_record = {r: BJ.attach_leg1_identity(mamba_by_record[r],
+                                                      leg1[r])
+                           for r in ds1}
+    return mamba_by_record, {r: cache["sequences"][r] for r in ds1}
 
 
 def load_m4_source_map(source_dir: str, approval: Optional[str]
@@ -2621,6 +3074,11 @@ def load_m4_source_map(source_dir: str, approval: Optional[str]
 # not find exactly one match refuses rather than guessing.
 # ─────────────────────────────────────────────────────────────────────────────
 DISCOVERY_MAX_DEPTH = 6
+#: Stamped onto a verified input set.  `run_audit` refuses without it, so a
+#: hand-typed path set cannot skip the identity checks.
+DISCOVERY_VERIFIED = "DIGEST_VERIFIED"
+DISCOVERED_PATH_KEYS: Tuple[str, ...] = (
+    "bundle_dir", "mamba_path", "cache_dir", "v10_source_dir", "mitdb_dir")
 
 
 def _candidate_dirs(root: str, max_depth: int = DISCOVERY_MAX_DEPTH):
@@ -2695,23 +3153,380 @@ def discover_registered_inputs(search_root: str, approval: Optional[str]
             caches.append(directory)
     found["cache_dir"] = _only(caches, "V10 preprocessing cache", search_root)
 
+    # The full registered expected set and aggregate, not just the two
+    # decisive files: `frontend.py` is byte-identical in V9 and V10, so
+    # matching on it alone would accept the V9 source folder.
+    source_want = str(M4_INPUT_CONTRACT["v10_source"]["aggregate"])
     sources: List[str] = []
     for directory in _candidate_dirs(search_root):
-        if all(os.path.isfile(os.path.join(directory, name))
-               and sha256_file(os.path.join(directory, name)) == want
-               for name, want in M4_SOURCE_MAP_HASHES.items()):
+        if not os.path.isfile(os.path.join(directory, "frontend.py")):
+            continue
+        digest = BJ.hash_file_set(directory, M4_V10_SOURCE_FILES,
+                                  approval=approval)
+        if digest.get("ok") and digest.get("aggregate") == source_want:
             sources.append(directory)
-    found["v10_source_dir"] = _only(sources, "V10 source map", search_root)
+    found["v10_source_dir"] = _only(sources, "V10 source package",
+                                    search_root)
 
-    # The MIT-BIH publisher tree is recorded in the manifest for provenance;
-    # Q5-E never opens it.  This spec pins its aggregate only in truncated
-    # form, so it is matched on completeness of the registered file set rather
-    # than on a digest that is not written down here in full.
-    trees = [d for d in _candidate_dirs(search_root)
-             if all(os.path.isfile(os.path.join(d, name))
-                    for name in BJ.mitdb_expected_files())]
-    found["mitdb_dir"] = _only(trees, "MIT-BIH publisher tree", search_root)
+    # The MIT-BIH tree is a real M4 input: the detector replay reads its
+    # signals and its `.atr` annotations.  File-name completeness alone would
+    # accept a tree with the right names and wrong bytes, so the publisher's
+    # own `SHA256SUMS.txt` is verified through the frozen module's
+    # `verify_against_publisher_checksums`, and a tree that ships no checksum
+    # file is refused rather than passed as "unavailable".
+    trees: List[str] = []
+    for directory in _candidate_dirs(search_root):
+        names = BJ.mitdb_expected_files()
+        if not all(os.path.isfile(os.path.join(directory, name))
+                   for name in names):
+            continue
+        if not os.path.isfile(os.path.join(directory,
+                                           BJ.MITDB_CHECKSUM_FILE)):
+            continue
+        file_set = BJ.hash_file_set(
+            directory, tuple(names) + (BJ.MITDB_CHECKSUM_FILE,),
+            approval=approval)
+        checked = BJ.verify_against_publisher_checksums(file_set, directory)
+        if file_set.get("ok") and checked.get("available") and checked["ok"]:
+            trees.append(directory)
+    found["mitdb_dir"] = _only(trees, "MIT-BIH publisher tree verified "
+                               "against its own SHA256SUMS.txt", search_root)
+    found["identity_verified"] = DISCOVERY_VERIFIED
     return found
+
+
+def assert_discovered_identity(paths: Mapping[str, object]) -> Dict[str, str]:
+    """Refuse any input set that did not come through digest verification.
+
+    `run_audit` accepts explicit paths so a reviewer can point it at a staged
+    copy, and that is exactly the hole this closes: without this check a caller
+    could hand it five hand-typed paths and skip every identity test that
+    :func:`discover_registered_inputs` performs.
+    """
+    if str(paths.get("identity_verified") or "") != DISCOVERY_VERIFIED:
+        raise DiagnosticInputMismatch(
+            f"{DECISION_MISMATCH}: these inputs did not come from "
+            f"discover_registered_inputs().  Identity is established by "
+            f"digest, so the audit does not accept paths that were never "
+            f"verified.  Call run_audit_from_mount(), or pass the mapping "
+            f"discover_registered_inputs() returned.")
+    missing = [key for key in DISCOVERED_PATH_KEYS if not paths.get(key)]
+    if missing:
+        raise DiagnosticInputMismatch(
+            f"{DECISION_MISMATCH}: the verified input set is missing "
+            f"{missing}")
+    return {key: str(paths[key]) for key in DISCOVERED_PATH_KEYS}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Production M4.
+#
+# M4.0 condition 2 is not a version probe: it requires the registered runtime
+# to stand, `detect_r()` to be re-run on all 22 DS1 records, every registered
+# per-record cache count to be reproduced 22/22, and the frozen V10 `rr`
+# arrays to be reproduced exactly.  M4.1 then needs the source's *own*
+# annotation matching to place discordance anchors.  All of that is built here,
+# so the execution-approval change has only to remove the terminal guard.
+#
+# Nothing in this section runs at import time, and every entry point is behind
+# the approval check.  The replay is returned as a *callback* so
+# `m4_feasibility_gate()` keeps its registered order: the detector cannot be
+# called until runtime, source map and input identity have each passed.
+# ─────────────────────────────────────────────────────────────────────────────
+def load_frozen_rr(cache_by_record: Mapping[str, "BJ.RecordSequence"]
+                   ) -> Dict[str, List[List[int]]]:
+    """The frozen V10 RR arrays, in integer samples, per DS1 record.
+
+    Taken from the already-loaded registered V10 cache rather than re-read, so
+    the arrays compared in the `rr_equality` sub-gate are the same bytes the
+    join consumed.  `[pre, post]` in `mamba_record_row`-independent cache row
+    order, which is what `verify_rr_equality` compares element by element.
+    """
+    return {record: [list(seq.pre_samples), list(seq.post_samples)]
+            for record, seq in sorted(cache_by_record.items())}
+
+
+def load_v10_producer(v10_source_dir: str, approval: Optional[str]):
+    """Import the registered V10 `frontend.py` as the detector producer.
+
+    The digest of this exact file is verified by the `source_map` sub-gate
+    *before* the replay callback is ever invoked, so this loads the file whose
+    identity M4.0 condition 1 has already established — never an arbitrary
+    `frontend.py` found on `sys.path`.
+    """
+    require_execution_approval(approval, f"V10 producer in {v10_source_dir!r}")
+    import importlib.util                                # noqa: PLC0415
+    path = os.path.join(v10_source_dir, "frontend.py")
+    observed = sha256_file(path)
+    want = M4_SOURCE_MAP_HASHES["frontend.py"]
+    if observed != want:
+        raise DiagnosticInputMismatch(
+            f"{M4_SOURCE_MAP_UNVERIFIED}: frontend.py at {path!r} has sha256 "
+            f"{observed!r}, registered {want!r}.  The producer is identified "
+            f"by digest, never by path.")
+    spec = importlib.util.spec_from_file_location(
+        "q5e_frozen_v10_frontend", path)
+    if spec is None or spec.loader is None:              # pragma: no cover
+        raise Q5EError(f"cannot load the registered producer at {path!r}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    for name in ("detect_r", "rr_features"):
+        if not hasattr(module, name):
+            raise DiagnosticInputMismatch(
+                f"{M4_SOURCE_MAP_UNVERIFIED}: the registered producer has no "
+                f"{name}(); the static source map and the loaded module "
+                f"disagree.")
+    return module
+
+
+def match_peaks_to_annotations(peaks: Sequence[int],
+                               annotations: Sequence[Tuple[int, str]],
+                               signal_length: int,
+                               tolerance: int = M4_PEAK_MATCH_TOLERANCE_SAMPLES
+                               ) -> Dict[str, object]:
+    """Reproduce the source's own annotation matching.  No new rule is added.
+
+    From the registered `data.py :: build_record` contract, in its own order:
+    greedy nearest matching within `tol = int(0.15 * fs)` samples against a
+    `used` set so no annotation is consumed twice, AAMI selection, and the
+    `p - 150 >= 0` / `p + 150 <= len` boundary cut.  The tolerance, the
+    greediness, the `used` set and the cut are the source's; this function
+    introduces no detector, no second tolerance and no manual anchor.
+
+    Returns the kept cache rows in detector order plus the two discordance
+    anchor kinds M4.1 defines.
+    """
+    order = sorted(range(len(annotations)),
+                   key=lambda k: int(annotations[k][0]))
+    positions = [int(annotations[k][0]) for k in order]
+    used: set = set()
+    matched_annotation: Dict[int, int] = {}      # peak index -> annotation idx
+    for index, peak in enumerate(peaks):
+        peak = int(peak)
+        best = None
+        best_distance = tolerance + 1
+        # Greedy nearest, scanning the annotation stream in its own order.
+        for rank, pos in enumerate(positions):
+            if rank in used:
+                continue
+            distance = abs(pos - peak)
+            if distance < best_distance:
+                best, best_distance = rank, distance
+        if best is not None and best_distance <= tolerance:
+            used.add(best)
+            matched_annotation[index] = order[best]
+
+    kept_rows: List[Dict[str, object]] = []
+    peaks_without_annotation: List[Dict[str, object]] = []
+    for index, peak in enumerate(peaks):
+        peak = int(peak)
+        annotation_index = matched_annotation.get(index)
+        if annotation_index is None:
+            peaks_without_annotation.append(
+                {"anchor_kind": "peak_without_annotation",
+                 "anchor_ordinal": index, "anchor_sample": peak})
+            continue
+        symbol = str(annotations[annotation_index][1])
+        aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")
+        if not aami:
+            continue                       # AAMI selection, the source's own
+        if not (peak - BJ.WIN_BEFORE >= 0 and
+                peak + BJ.WIN_AFTER <= int(signal_length)):
+            continue                       # the registered boundary cut
+        kept_rows.append({"peak_index": index, "r_sample": peak,
+                          "raw_atr_ordinal": annotation_index,
+                          "symbol": symbol, "aami": aami})
+
+    unmatched = set(range(len(annotations))) - {
+        order[rank] for rank in used}
+    annotations_without_peak = [
+        {"anchor_kind": "annotation_without_peak",
+         "anchor_ordinal": index,
+         "anchor_sample": int(annotations[index][0])}
+        for index in sorted(unmatched)]
+    return {"kept_rows": kept_rows,
+            "annotations_without_peak": annotations_without_peak,
+            "peaks_without_annotation": peaks_without_annotation,
+            "tolerance": int(tolerance)}
+
+
+class DetectorReplay(object):
+    """M4.0 condition 2 as a callback, plus the detail M4.1 needs afterwards.
+
+    Two things come out of one detector pass — the counts/RR the feasibility
+    gate compares, and the per-record annotation matching the anchors are
+    placed from.  Keeping them on one object makes the dependency explicit:
+    the anchors cannot be built before the replay has actually run, and
+    :meth:`anchors_by_record` says so rather than silently returning nothing.
+    """
+
+    __slots__ = ("v10_source_dir", "mitdb_dir", "records", "approval",
+                 "producer", "atr_reader", "signal_reader", "detail", "ran")
+
+    def __init__(self, v10_source_dir: str, mitdb_dir: str,
+                 records: Sequence[str], approval: Optional[str],
+                 producer=None, atr_reader=None, signal_reader=None) -> None:
+        self.v10_source_dir = v10_source_dir
+        self.mitdb_dir = mitdb_dir
+        self.records = sorted(records)
+        self.approval = approval
+        self.producer = producer
+        self.atr_reader = atr_reader
+        self.signal_reader = signal_reader
+        self.detail: Dict[str, Dict[str, object]] = {}
+        self.ran = False
+
+    def _raw(self, record: str) -> Dict[str, object]:
+        if self.atr_reader:
+            return self.atr_reader(record)
+        return BJ.load_atr_record(self.mitdb_dir, record, self.approval)
+
+    def __call__(self) -> Tuple[Dict[str, int], Dict[str, List[List[int]]]]:
+        """Re-run the registered detector on all 22 DS1 records."""
+        module = self.producer or load_v10_producer(self.v10_source_dir,
+                                                    self.approval)
+        counts: Dict[str, int] = {}
+        replayed: Dict[str, List[List[int]]] = {}
+        for record in self.records:
+            raw = self._raw(record)
+            signal = (self.signal_reader(record) if self.signal_reader
+                      else _read_signal(self.mitdb_dir, record, self.approval))
+            peaks = [int(p) for p in module.detect_r(signal)]
+            match = match_peaks_to_annotations(
+                peaks, raw["annotations"], int(raw["signal_length"]))
+            self.detail[record] = match
+            kept = match["kept_rows"]
+            counts[record] = len(kept)
+            features = module.rr_features([row["r_sample"] for row in kept])
+            pre, post = _rr_columns(features)
+            replayed[record] = [
+                list(BJ.rr_to_samples(pre, BJ.CACHE_RR_UNIT)),
+                list(BJ.rr_to_samples(post, BJ.CACHE_RR_UNIT))]
+        self.ran = True
+        return counts, replayed
+
+    def anchors_by_record(self, mamba_by_record: Mapping[str, object]
+                          ) -> Dict[str, List[Dict[str, object]]]:
+        """M4.1 anchors from the matching this replay actually produced."""
+        if not self.ran:
+            raise Q5EError(
+                "M4.1 anchors were requested before the M4.0 detector replay "
+                "ran; no anchor may be computed before the gate passes")
+        return build_m4_anchors(self.mitdb_dir, self.records, mamba_by_record,
+                                self.approval, replay_detail=self.detail)
+
+
+def build_detector_replay(v10_source_dir: str, mitdb_dir: str,
+                          records: Sequence[str], approval: Optional[str],
+                          producer=None, atr_reader=None, signal_reader=None
+                          ) -> "DetectorReplay":
+    """The M4.0 condition 2 replay callback.
+
+    ``producer``, ``atr_reader`` and ``signal_reader`` are injection points for
+    the synthetic tests.  Production passes none of them and therefore loads
+    the digest-verified registered producer and reads the registered tree.
+    """
+    require_execution_approval(approval, f"detector replay over {mitdb_dir!r}")
+    return DetectorReplay(v10_source_dir, mitdb_dir, records, approval,
+                          producer=producer, atr_reader=atr_reader,
+                          signal_reader=signal_reader)
+
+
+def _read_signal(mitdb_dir: str, record: str, approval: Optional[str]):
+    """One record's signal, for the detector.  No label is read."""
+    require_execution_approval(approval, f"signal for record {record!r}")
+    import wfdb                                          # noqa: PLC0415
+    signal, _fields = wfdb.rdsamp(os.path.join(mitdb_dir, str(record)))
+    return signal
+
+
+def _rr_columns(features) -> Tuple[List[float], List[float]]:
+    """`pre`/`post` out of whatever shape `rr_features()` returned.
+
+    The registered cache stores `(n, 7)` with `pre` at column 0 and `post` at
+    column 1, so the same two columns are taken here.  A different width is a
+    contract failure, not something to reshape around.
+    """
+    rows = [list(row) for row in features]
+    if not rows:
+        return [], []
+    width = len(rows[0])
+    if width != BJ.CACHE_RR_DIM:
+        raise DiagnosticInputMismatch(
+            f"{M4_RR_MISMATCH}: the replayed rr_features() produced width "
+            f"{width}, registered {BJ.CACHE_RR_DIM}.  The audit does not "
+            f"reshape, pad or select columns to make a replay fit.")
+    return ([float(row[BJ.CACHE_PRE_COLUMN]) for row in rows],
+            [float(row[BJ.CACHE_POST_COLUMN]) for row in rows])
+
+
+def build_m4_anchors(mitdb_dir: str, records: Sequence[str],
+                     mamba_by_record: Mapping[str, "BJ.RecordSequence"],
+                     approval: Optional[str], replay_detail=None,
+                     atr_reader=None) -> Dict[str, List[Dict[str, object]]]:
+    """M4.1 anchors, placed at their unique sample-ordered boundary.
+
+    An exact kept annotation is offset 0.  Otherwise the anchor sits between
+    kept rows and is placed at the first kept row strictly after it; an anchor
+    with no unique placement is reported with `mapped_mamba_record_row = None`
+    and is excluded from the numerator rather than imputed.
+    """
+    require_execution_approval(approval, f"M4.1 anchors over {mitdb_dir!r}")
+    detail = dict(replay_detail or {})
+    out: Dict[str, List[Dict[str, object]]] = {}
+    for record in sorted(records):
+        mamba = mamba_by_record[record]
+        kept_samples = [int(row.get("raw_r_sample"))
+                        for row in mamba.rows
+                        if row.get("raw_r_sample") is not None]
+        if len(kept_samples) != len(mamba):
+            raise DiagnosticInputMismatch(
+                f"{DECISION_MISMATCH}: record {record} carries "
+                f"{len(kept_samples)} raw R samples for {len(mamba)} kept "
+                f"mamba rows.  Anchor placement needs the Leg 1 identity on "
+                f"every row; it is never inferred from a row count.")
+        exact = {sample: index for index, sample in enumerate(kept_samples)}
+        match = detail.get(record)
+        if match is None:
+            raise Q5EError(
+                f"no detector-replay detail for record {record}; M4.1 anchors "
+                f"are placed from the replay's own matching and are never "
+                f"recomputed under a second rule")
+        anchors: List[Dict[str, object]] = []
+        for anchor in (list(match.get("annotations_without_peak", ())) +
+                       list(match.get("peaks_without_annotation", ()))):
+            sample = int(anchor["anchor_sample"])
+            placement: Optional[int] = exact.get(sample)
+            counterpart_kept = placement is not None
+            if placement is None:
+                after = [i for i, s in enumerate(kept_samples) if s > sample]
+                placement = after[0] if after else None
+            anchors.append({**anchor,
+                            "record": record,
+                            "mapped_mamba_record_row": placement,
+                            "counterpart_kept": bool(counterpart_kept)})
+        out[record] = anchors
+    return out
+
+
+def observed_m4_identity(v10_source_dir: str, cache_dir: str,
+                         approval: Optional[str]) -> Dict[str, str]:
+    """Aggregate digests of what is **actually mounted**, freshly computed.
+
+    `verify_m4_input_identity` compares these against the registered
+    constants.  Substituting the constants here — which an earlier revision
+    did — turns that comparison into a tautology, so the aggregates are
+    recomputed from the bytes on disk every time and never carried over.
+    """
+    require_execution_approval(approval, "M4 input identity")
+    source_names = tuple(sorted(M4_V10_SOURCE_FILES))
+    source = BJ.hash_file_set(v10_source_dir, source_names, approval=approval)
+    cache = BJ.hash_file_set(cache_dir, BJ.cache_expected_files(),
+                             approval=approval)
+    return {"v10_source": str(source.get("aggregate") or ""),
+            "v10_cache": str(cache.get("aggregate") or ""),
+            "v10_source_problems": list(source.get("problems", ())),
+            "v10_cache_problems": list(cache.get("problems", ()))}
 
 
 def observed_runtime() -> Dict[str, str]:
@@ -2733,21 +3548,30 @@ def load_all_inputs(bundle_dir: str, mamba_path: str, cache_dir: str,
     rows = load_join_map(bundle_dir, approval)
     decision, manifest = load_decision_and_manifest(bundle_dir, approval)
     processed = load_processed_classes(cache_dir, approval)
-    mamba, cache = load_sequences(mamba_path, cache_dir, approval)
+    mamba, cache = load_sequences(mamba_path, cache_dir, approval,
+                                  mitdb_dir=mitdb_dir)
     hashes, texts = load_m4_source_map(v10_source_dir, approval)
     records = sorted(mamba)
+    # M4.0 condition 2 is fully constructed here.  `replay` is a callback, so
+    # the detector still cannot run before the gate's three pre-replay
+    # sub-gates pass; `m4_anchors` is the same object's anchor builder, so
+    # M4.1 can only draw on a replay that actually happened.
+    replay = build_detector_replay(v10_source_dir, mitdb_dir, records,
+                                   approval)
     return ProductionInputs(
         rows=rows, decision=decision, manifest=manifest,
         processed_classes=processed, mamba_by_record=mamba,
         cache_by_record=cache, cache_n={r: len(cache[r]) for r in records},
         m4_runtime=observed_runtime(), m4_sources=hashes, m4_texts=texts,
-        m4_identity={"v10_source": str(M4_INPUT_CONTRACT["v10_source"]
-                                       ["aggregate"]),
-                     "v10_cache": str(M4_INPUT_CONTRACT["v10_cache"]
-                                      ["aggregate"])},
+        # Observed, not registered.  Passing the registered constant here
+        # would make the identity sub-gate compare it against itself and pass
+        # unconditionally, which is the opposite of verifying identity.
+        m4_identity=observed_m4_identity(v10_source_dir, cache_dir, approval),
         m4_registered_counts={r: BJ.ledger_record(SPLIT, r).cache_n
                               for r in records},
-        m4_frozen_rr={}, m4_replay=None, m4_anchors={},
+        m4_frozen_rr=load_frozen_rr(cache),
+        m4_replay=replay,
+        m4_anchors=lambda: replay.anchors_by_record(mamba),
         source_files=[])
 
 
@@ -2803,7 +3627,8 @@ def run_pipeline(inputs: "ProductionInputs",
         input_identity=inputs.m4_identity,
         rr_verdict=PREP_M4_RR_EQUIVALENCE_VERDICT, replay=inputs.m4_replay)
     m4_ok = str(m4["status"]) == M4_OK
-    anchors = (m4_anchors(m4, inputs.m4_anchors, rows) if m4_ok else None)
+    anchors_by_record = inputs.resolve_anchors() if m4_ok else {}
+    anchors = (m4_anchors(m4, anchors_by_record, rows) if m4_ok else None)
 
     # ---- controls, statistics, multiplicity -------------------------------
     class_vectors = build_control_a_class_vectors(
@@ -2840,7 +3665,7 @@ def run_pipeline(inputs: "ProductionInputs",
         anchor_positions = {r: [int(a["mapped_mamba_record_row"])
                                 for a in v
                                 if a.get("mapped_mamba_record_row") is not None]
-                            for r, v in inputs.m4_anchors.items()}
+                            for r, v in anchors_by_record.items()}
 
         def c_replicate(b: int, observed_kind: str) -> float:
             shifted = control_c_anchor_shift(anchor_positions, record_lengths, b)
@@ -2867,12 +3692,17 @@ def run_pipeline(inputs: "ProductionInputs",
 
     holm = holm_4family({"H1": h1["p"], "H2": h2["p"], "H3": h3["p"],
                          "H4": h4["p"]})
-    m5_report = m0.get("m5", {})
-    reported = strata_reported(m5_report)
     long_run_share = m0["runs_primary_mamba_row"]["share_in_long_runs"]
     gate_bins = m1["bins_in_distance_gate"]
+    # M5 applied to the hypothesis statistics themselves, not only to the M0
+    # failure counts.  Each hypothesis reports the strata *it* materialised.
+    strata = hypothesis_strata(distances=distances, gate_rows=gate_rows,
+                               m3_rows=m3["rows"], partition=partition,
+                               anchors=anchors, rows=rows, m4_ok=m4_ok)
     evidence = {
-        "H1": {"strata_reported": reported, "effect_gates": {
+        "H1": {"strata": strata["H1"],
+               "strata_reported": materialised_strata(strata["H1"]),
+               "effect_gates": {
             "share_2_5_at_least_half": bool(
                 _ratio(sum(1 for e in gate_rows
                            if str(e["reason"]) == BJ.REASON_NO_EDGE
@@ -2886,22 +3716,29 @@ def run_pipeline(inputs: "ProductionInputs",
                 h1["statistic"] > h1["null_summary"]["q99"]),
             "run_mass_mostly_short": bool(long_run_share < EFFECT_SHARE_MIN),
             "m4_propagation_gate_not_met": not m4_ok}},
-        "H4": {"strata_reported": reported,
+        "H4": {"strata": strata["H4"],
+               "strata_reported": materialised_strata(strata["H4"]),
                "effect_gates": h4["effect_gates"]},
     }
     if m4_ok:
-        evidence["H2"] = {"strata_reported": reported, "effect_gates": {
-            "explains_at_least_half": bool(
-                h2["statistic"] >= EFFECT_SHARE_MIN),
-            "exceeds_control_c_q99": bool(
-                h2["statistic"] > h2["null_summary"]["q99"])}}
-        evidence["H3"] = {"strata_reported": reported, "effect_gates": {
-            "exceeds_control_c_q99": bool(
-                h3["statistic"] > h3["null_summary"]["q99"]),
-            "half_in_long_runs": bool(long_run_share >= EFFECT_SHARE_MIN),
-            "distance_mass_far": bool(
-                sum(gate_bins[b] for b in M1_H3_FAR_BINS)
-                > gate_bins[M1_GATE_BIN])}}
+        evidence["H2"] = {
+            "strata": strata["H2"],
+            "strata_reported": materialised_strata(strata["H2"]),
+            "effect_gates": {
+                "explains_at_least_half": bool(
+                    h2["statistic"] >= EFFECT_SHARE_MIN),
+                "exceeds_control_c_q99": bool(
+                    h2["statistic"] > h2["null_summary"]["q99"])}}
+        evidence["H3"] = {
+            "strata": strata["H3"],
+            "strata_reported": materialised_strata(strata["H3"]),
+            "effect_gates": {
+                "exceeds_control_c_q99": bool(
+                    h3["statistic"] > h3["null_summary"]["q99"]),
+                "half_in_long_runs": bool(long_run_share >= EFFECT_SHARE_MIN),
+                "distance_mass_far": bool(
+                    sum(gate_bins[b] for b in M1_H3_FAR_BINS)
+                    > gate_bins[M1_GATE_BIN])}}
 
     flags = evaluate_flags(evidence, holm)
     decision = decide(qa["ok"], str(m4["status"]), flags,
@@ -2924,6 +3761,86 @@ def run_pipeline(inputs: "ProductionInputs",
             "m4": {**m4, **({"anchors_report": anchors} if anchors else {})},
             "nulls": nulls, "tests": tests, "holm": holm, "flags": flags,
             "decision": decision, "tables": tables, "stopped": False}
+
+
+def hypothesis_strata(distances: Sequence[Mapping[str, object]],
+                      gate_rows: Sequence[Mapping[str, object]],
+                      m3_rows: Sequence[Mapping[str, object]],
+                      partition: Sequence[Mapping[str, object]],
+                      anchors: Optional[Mapping[str, object]],
+                      rows: Sequence[Mapping[str, object]],
+                      m4_ok: bool) -> Dict[str, Dict[str, object]]:
+    """M5 applied to H1-H4, each with the population that hypothesis measures.
+
+    The registered strata are the same for all four, but the *unit* differs —
+    H1 strata over distance rows, H4 over cache-side graph rows, H2/H3 over
+    mamba failure positions — so each is stratified over its own items rather
+    than over one shared table that would not answer for any of them.
+    """
+    out: Dict[str, Dict[str, object]] = {}
+
+    # H1 — distance concentration, over the rows inside the distance gate.
+    h1_items = [{"record": e["record"], "class": e["processed_class"],
+                 "reason": e["reason"], "bin": e["bin"]} for e in gate_rows]
+    out["H1"] = stratified_statistic(
+        h1_items,
+        lambda subset: _ratio(sum(1 for e in subset
+                                  if str(e["bin"]) == M1_GATE_BIN),
+                              len(subset)))
+
+    # H4 — the cache-side degree contrast, over the decisional graph rows.
+    class_of = {(str(e["record"]), int(e["cache_record_row"])): str(e["class"])
+                for e in partition}
+    h4_items = [{"record": str(r["record"]),
+                 "class": class_of.get((str(r["record"]), int(r["row"])), ""),
+                 "reason": {v: k for k, v in REASON_TO_GROUP.items()}.get(
+                     str(r["group"]), ""),
+                 "group": str(r["group"]),
+                 "candidate_degree": float(r["candidate_degree"])}
+                for r in m3_rows if str(r["side"]) == H4_DECISIONAL_SIDE]
+    out["H4"] = stratified_statistic(
+        h4_items,
+        lambda subset: _degree_median_contrast(
+            [{"record": e["record"], "side": H4_DECISIONAL_SIDE,
+              "group": e["group"], "candidate_degree": e["candidate_degree"]}
+             for e in subset], H4_DECISIONAL_SIDE),
+        minimum=2)
+
+    # H2 / H3 — only when M4.0 passed; otherwise the family is UNEVALUABLE and
+    # a stratified table for it would be an invitation to read it anyway.
+    if m4_ok and anchors is not None:
+        explained = {tuple(x) for x in anchors["explained_positions"]}
+        after: set = set()
+        for entry in anchors["rows"]:
+            base = int(entry["mapped_mamba_record_row"])
+            for offset in range(1, M4_ANCHOR_HALF_WINDOW + 1):
+                after.add((str(entry["record"]), base + offset))
+        failures = [{"record": str(r["record"]),
+                     "class": str(r.get("mamba_aami") or ""),
+                     "reason": str(r["drop_or_unmatched_reason"]),
+                     "position": int(r["mamba_record_row"])}
+                    for r in rows if is_mamba_side(r) and is_failed(r)]
+        no_edge = [e for e in failures
+                   if e["reason"] == BJ.REASON_NO_EDGE]
+        out["H2"] = stratified_statistic(
+            no_edge,
+            lambda subset: _ratio(
+                sum(1 for e in subset
+                    if (e["record"], e["position"]) in explained),
+                len(subset)))
+        out["H3"] = stratified_statistic(
+            failures,
+            lambda subset: _ratio(
+                sum(1 for e in subset
+                    if (e["record"], e["position"]) in after),
+                len(subset)))
+    else:
+        absent = {name: {"levels": {}, "materialised": False,
+                         "status": NOT_APPLICABLE}
+                  for name in M5_STRATA}
+        out["H2"] = dict(absent)
+        out["H3"] = dict(absent)
+    return out
 
 
 def build_tables(m0: Mapping[str, object],
@@ -2989,30 +3906,30 @@ def run_audit_from_mount(search_root: str, out_dir: str,
     paths = discover_registered_inputs(search_root, approval)
     emit(f"Q5-E: resolved every registered input by digest under "
          f"{search_root!r}.")
-    return run_audit(paths["bundle_dir"], paths["mamba_path"],
-                     paths["cache_dir"], paths["mitdb_dir"], out_dir,
-                     v10_source_dir=paths["v10_source_dir"],
-                     approval=approval,
+    return run_audit(paths, out_dir, approval=approval,
                      open_registered_data=open_registered_data, emit=emit)
 
 
-def run_audit(bundle_dir: str, mamba_path: str, cache_dir: str,
-              mitdb_dir: str, out_dir: str,
-              v10_source_dir: str = "",
+def run_audit(verified_inputs: Mapping[str, object], out_dir: str,
               approval: Optional[str] = None,
               open_registered_data: bool = OPEN_REGISTERED_DATA,
               emit=print) -> Dict[str, object]:
     """The single production route to a Q5-E decision.
 
-    Refuses immediately without a separate execution approval.  Permission is
-    checked before capability, so an unauthorised call is refused as
-    unauthorised whatever the environment happens to have installed.
+    Takes only the mapping :func:`discover_registered_inputs` returned, so
+    there is no path argument a caller could fill in by hand and thereby skip
+    identity verification.  Refuses immediately without a separate execution
+    approval; permission is checked before capability, so an unauthorised call
+    is refused as unauthorised whatever the environment happens to have
+    installed.
     """
     if not open_registered_data:
         raise ExecutionNotApprovedError(
             "OPEN_REGISTERED_DATA is False.  This is the default: a stray "
             "import or notebook run cannot reach registered data.  "
             f"{APPROVAL_NOTE}")
+    paths = assert_discovered_identity(verified_inputs)
+    bundle_dir = paths["bundle_dir"]
     require_execution_approval(approval, f"Q5-E audit over {bundle_dir!r}")
     assert_runtime_ready(MODE_AUDIT)
     canonical = verify_bundle_is_canonical(bundle_dir, approval)
@@ -3027,9 +3944,21 @@ def run_audit(bundle_dir: str, mamba_path: str, cache_dir: str,
     # Removing the guard above is the *only* change the execution-approval PR
     # makes here: it must expose a finished route, never introduce scientific
     # analysis for the first time.
-    inputs = load_all_inputs(bundle_dir, mamba_path, cache_dir, mitdb_dir,
-                             v10_source_dir, approval)
+    inputs = load_all_inputs(bundle_dir, paths["mamba_path"],
+                             paths["cache_dir"], paths["mitdb_dir"],
+                             paths["v10_source_dir"], approval)
     outcome = run_pipeline(inputs, emit=emit)
+    qa_target_set = str(outcome["qa"].get("target_set")
+                        or QA_TARGETS_REGISTERED)
+    if qa_target_set != QA_TARGETS_REGISTERED:
+        # Unreachable from here — production passes no fixture — and checked
+        # anyway, because the one thing a fixture must never do is leave a
+        # bundle in the production output directory.
+        raise Q5EError(
+            f"refusing to publish: the production route produced a "
+            f"{qa_target_set} QA verdict.  A run measured against anything "
+            f"other than the registered targets is not a Q5-E result and is "
+            f"not written to {out_dir!r}.")
     timestamp = run_timestamp()
     result = build_result(
         qa=outcome["qa"], m0=outcome["m0"], m1=outcome["m1"],
@@ -3038,10 +3967,11 @@ def run_audit(bundle_dir: str, mamba_path: str, cache_dir: str,
         decision=outcome["decision"], source_files=canonical["files"])
     directory = os.path.join(out_dir, f"{timestamp}_{RUN_SLUG}")
     write_bundle(directory, result,
-                 build_config(MODE_AUDIT, timestamp, execution_approved=True),
-                 build_manifest({"bundle": bundle_dir, "cache": cache_dir,
-                                 "mamba": mamba_path, "mitdb": mitdb_dir},
-                                timestamp),
+                 build_config(MODE_AUDIT, timestamp, execution_approved=True,
+                              qa_target_set=qa_target_set),
+                 build_manifest({key: paths[key] for key in
+                                 DISCOVERED_PATH_KEYS}, timestamp,
+                                qa_target_set=qa_target_set),
                  outcome["tables"], outcome["nulls"],
                  [f"decision={result['decision']}"],
                  summary_markdown(result),

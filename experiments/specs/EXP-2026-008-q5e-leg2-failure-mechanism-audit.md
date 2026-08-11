@@ -2218,3 +2218,68 @@ The terminal execution guard is untouched, and the frozen module
 `mit-bih/q5d_order_preserving_beat_join.py` is unchanged at code SHA-256
 `6b098c67…`.  Execution approval still waits on a second Codex acceptance
 review.
+
+## 2026-08-12 — second corrective implementation (I1 round 2); never executed
+
+The seven blockers of the second Codex implementation-acceptance review are
+corrected.  No registered artifact was opened, no M0-M4 aggregation ran,
+`detect_r()` was not called, no beat join was re-run, the terminal execution
+guard is untouched, and this spec's `status` remains
+`approved_for_implementation`.  No result number enters this document.
+
+1. **Production M4 is complete.**  `load_all_inputs()` no longer hands the gate
+   an empty frozen-RR map, a `None` replay and empty anchors.  The frozen V10
+   RR arrays come from the registered cache through `load_frozen_rr()`;
+   `build_detector_replay()` returns a callback that loads the
+   digest-verified V10 `frontend.py` as the producer, re-runs `detect_r()` on
+   all 22 DS1 records, applies the source's own annotation matching, AAMI
+   selection and `p±150` boundary cut, and reproduces the per-record counts and
+   RR arrays.  `mitdb_dir` is therefore a real M4 input: its signals and `.atr`
+   annotations are what the replay consumes, and the frozen Leg 1 replay is
+   attached to the mamba rows so M4.1 anchors have a kept sample to be placed
+   on rather than a position inferred from a row count.  The anchors are built
+   by the same object that ran the replay and refuse to exist before it, so
+   the ordering is structural.  Exercised only by synthetic injection.
+2. **M5 reaches the hypothesis statistics.**  `stratified_statistic()`
+   evaluates each of H1-H4 inside every registered stratum over that
+   hypothesis's own population, and a stratum counts as materialised only when
+   a level actually produced a number.  The pooled-only gate now asks
+   `has_stratified_evidence()` rather than inspecting stratum names, which
+   were always present and so never blocked anything.
+3. **Bundle writing is precheck plus atomic publish.**  Required outputs and
+   the tables backing them are validated before `os.makedirs`; everything is
+   written and verified in a staging directory and renamed into place; any
+   failure removes the staging directory and leaves the final path untouched.
+4. **The seven figures are distinct.**  Each has its own kind, panels and data
+   builder — stacked bar with side panels; records × 3 class heatmap; record
+   208 beat-level raster with the raw-ordinal sensitivity beside it; run-length
+   histogram with summary statistics; fixed-bin distance histogram with the
+   censor and endpoint bars; per-side candidate-degree violin and ECDF each
+   labelled with its decisional status; anchor curve with the Control C band.
+   `render_figures()` refuses to write two figures whose data is identical,
+   which is what previously let figures 4 and 5 share the distance series.
+5. **The fixture seam is fixed.**  `qa_fixture` is accepted only from an
+   explicit synthetic input; the production route refuses to publish anything
+   whose QA verdict is not `REGISTERED`; result, config, manifest and summary
+   all carry the stamp; and a synthetic bundle additionally contains
+   `SYNTHETIC_FIXTURE.json` with `ingestable: false`, so an ingester never has
+   to read prose to reject it.
+6. **Digest discovery is hardened.**  The MIT-BIH tree is verified against the
+   publisher's own `SHA256SUMS.txt` through the frozen module's
+   `verify_against_publisher_checksums`, not merely on file-name completeness,
+   and a tree without a checksum file is refused.  The V10 source is matched on
+   its full registered 7-file expected set and aggregate, because `frontend.py`
+   is byte-identical in V9 and V10 and matching on it alone would accept the V9
+   package.  `run_audit()` now takes only the mapping discovery returned and
+   refuses an unstamped one, so hand-typed paths cannot bypass identity.  A
+   real defect is closed here: `load_all_inputs()` had been passing the
+   *registered* aggregate constants as the *observed* identity, so the identity
+   sub-gate compared each constant with itself and could not fail; the
+   aggregates are now recomputed from the mounted bytes every run.
+7. **The test runner is stronger.**  Declared and collected tests are compared
+   by AST rather than by line prefix, every test must raise the assertion
+   counter at least once, and the reported assertion total is stated as what
+   actually ran together with whether the optional matplotlib renderer was
+   present, rather than as a fixed number.
+
+Execution approval still waits on a third Codex acceptance review.
