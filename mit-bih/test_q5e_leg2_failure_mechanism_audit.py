@@ -97,6 +97,13 @@ PROCESSED = {("101", 0): "N", ("101", 1): "N", ("101", 2): "N", ("101", 3): "N",
 CACHE_N = {"101": 4, "208": 4}
 
 
+def tiny_partition(rows=None):
+    """Synthetic cache partition.  `cache_n` is injected, never read from the
+    registered ledger — that is the fixture boundary."""
+    return Q5E.cache_partition(rows if rows is not None else tiny_bundle(),
+                               PROCESSED, CACHE_N)
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 def test_row_model_and_validation():
     rows = tiny_bundle()
@@ -128,13 +135,14 @@ def test_m0_oracles():
     check(rates["N"]["denominator"] == 7 and rates["N"]["failures"] == 1,
           "M0.1 N denominator over both records")
 
-    table = Q5E.m0_class_by_reason(rows, PROCESSED)
+    part = tiny_partition(rows)
+    table = Q5E.m0_class_by_reason(rows, PROCESSED, part)
     check(table[Q5E.SIDE_MAMBA]["V"][BJ.REASON_NO_EDGE]["count"] == 2,
           "M0.2 mamba V NO_EDGE count")
     check(table[Q5E.SIDE_CACHE]["V"][BJ.REASON_NO_EDGE]["count"] == 1,
           "M0.2 cache V NO_EDGE count uses the processed-class map")
 
-    r208 = Q5E.m0_record_class(rows, PROCESSED, "208")
+    r208 = Q5E.m0_record_class(rows, PROCESSED, "208", part)
     check(r208[Q5E.SIDE_MAMBA]["V"]["failures"] == 2, "M0.3 record 208 V")
     check(r208[Q5E.SIDE_CACHE]["V"]["denominator"] == 2,
           "M0.3 record 208 cache-side V denominator")
@@ -330,8 +338,10 @@ def test_unevaluable_p_is_confined_to_holm():
     check(holm["family_size"] == 4,
           "family stays four when M4 is unavailable; two-family is forbidden")
     flags = Q5E.evaluate_flags(
-        {"H1": {"effect_gates": {"a": True}},
-         "H4": {"effect_gates": {"a": True}}}, holm)
+        {"H1": {"strata_reported": ["class", "pooled"],
+                "effect_gates": {"a": True}},
+         "H4": {"strata_reported": ["class", "pooled"],
+                "effect_gates": {"a": True}}}, holm)
     check(flags["H2"]["status"] == Q5E.UNEVALUABLE, "H2 marked UNEVALUABLE")
     check(flags["H2"]["flag"] is False, "unevaluable family cannot fire")
     check("holm_significant" not in flags["H2"],
@@ -341,11 +351,14 @@ def test_unevaluable_p_is_confined_to_holm():
 def test_flags_require_gates_and_significance():
     holm = Q5E.holm_4family({"H1": 0.001, "H2": 0.001, "H3": 0.001,
                              "H4": 0.9})
+    strata = ["class", "record", "pooled"]
     flags = Q5E.evaluate_flags(
-        {"H1": {"effect_gates": {"share": True, "q99": True}},
-         "H2": {"effect_gates": {"share": False}},
-         "H3": {"effect_gates": {"share": True}},
-         "H4": {"effect_gates": {"share": True}}}, holm)
+        {"H1": {"strata_reported": strata,
+                "effect_gates": {"share": True, "q99": True}},
+         "H2": {"strata_reported": strata, "effect_gates": {"share": False}},
+         "H3": {"strata_reported": strata, "effect_gates": {"share": True}},
+         "H4": {"strata_reported": strata,
+                "effect_gates": {"share": True}}}, holm)
     check(flags["H1"]["flag"] is True, "all gates plus significance fires")
     check(flags["H2"]["flag"] is False, "a failed effect gate blocks the flag")
     check(flags["H4"]["flag"] is False,
@@ -502,9 +515,12 @@ def test_h4_is_invariant_to_the_mamba_side():
                                "H4": b["p"]})
     check(holm_a["p_holm_4family"]["H4"] == holm_b["p_holm_4family"]["H4"],
           "H4 Holm value invariant")
-    flag_a = Q5E.evaluate_flags({"H4": {"effect_gates": a["effect_gates"]}},
+    strata = ["class", "record", "pooled"]
+    flag_a = Q5E.evaluate_flags({"H4": {"strata_reported": strata,
+                                        "effect_gates": a["effect_gates"]}},
                                 holm_a)["H4"]["flag"]
-    flag_b = Q5E.evaluate_flags({"H4": {"effect_gates": b["effect_gates"]}},
+    flag_b = Q5E.evaluate_flags({"H4": {"strata_reported": strata,
+                                        "effect_gates": b["effect_gates"]}},
                                 holm_b)["H4"]["flag"]
     check(flag_a == flag_b, "H4_ASSOCIATED flag invariant to the mamba side")
     check(a["by_side_descriptive"][Q5E.SIDE_MAMBA]["median_contrast"] !=
@@ -921,9 +937,668 @@ def test_notebook_definition_before_use():
                       f"{token} is defined before cell {index} uses it")
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# I1 corrective-implementation regressions (Codex acceptance review, #112)
+# ─────────────────────────────────────────────────────────────────────────────
+def test_cache_side_denominator_includes_certified_rows():
+    """I1.2 — a certified cache beat exists only as a certified mamba row."""
+    part = tiny_partition()
+    Q5E.assert_cache_partition(part, CACHE_N)
+    for record, n in CACHE_N.items():
+        rows_r = [e for e in part if e["record"] == record]
+        check(len(rows_r) == n, f"{record}: partition covers all {n} cache rows")
+    rows = tiny_bundle()
+    r208 = Q5E.m0_record_class(rows, PROCESSED, "208", part)
+    total = sum(v["denominator"] for v in r208[Q5E.SIDE_CACHE].values())
+    check(total == CACHE_N["208"],
+          "cache-side class denominators sum to cache_n, certified included")
+    # The old is_cache_side() view would have counted only the explicit rows.
+    explicit = sum(1 for r in rows if Q5E.is_cache_side(r)
+                   and r["record"] == "208")
+    check(explicit < CACHE_N["208"],
+          "the explicit cache-only rows really are fewer, so this is not vacuous")
+    certified = [e for e in part if e["record"] == "208"
+                 and e["group"] == Q5E.GROUP_CERTIFIED]
+    check(len(certified) == 2, "certified cache rows recovered from mamba rows")
+    check(all(e["class"] == PROCESSED[(e["record"], e["cache_record_row"])]
+              for e in part),
+          "cache class comes only from the processed-class map")
+
+
+def test_cache_partition_rejects_duplicate_and_omission():
+    rows = tiny_bundle()
+    try:
+        Q5E.cache_partition(rows, PROCESSED, {"101": 4, "208": 5})
+        raise AssertionError("omission accepted")
+    except Q5E.DiagnosticInputMismatch:
+        check(True, "an uncovered cache row is DIAGNOSTIC_INPUT_MISMATCH")
+    doubled = list(tiny_partition()) + [tiny_partition()[0]]
+    try:
+        Q5E.assert_cache_partition(doubled, CACHE_N)
+        raise AssertionError("duplicate accepted")
+    except Q5E.DiagnosticInputMismatch:
+        check(True, "a duplicated cache row is DIAGNOSTIC_INPUT_MISMATCH")
+
+
+def test_m3_exact_partition_qa():
+    """I1.3 — row identity and reason assignment, not just a certified count."""
+    pre = (300, 300, 800)
+    post = (300, 800, 800)
+    mamba = BJ.RecordSequence("101", "DS1", "mamba", pre, post)
+    cache = BJ.RecordSequence("101", "DS1", "cache", pre, post)
+    result = BJ.match_record(mamba, cache)
+    rebuilt = Q5E.reconstructed_groups(result, len(mamba), len(cache))
+    check(set(rebuilt) == {Q5E.SIDE_MAMBA, Q5E.SIDE_CACHE}, "both sides rebuilt")
+    check(len(rebuilt[Q5E.SIDE_MAMBA]) == 3, "every mamba row assigned")
+
+    rows = [row("101", mamba_row=i, cache_row=i, aami="N") for i in range(3)]
+    graph = Q5E.m3_graph(rows, {"101": mamba}, {"101": cache})
+    check(graph["partition_ok"] is True, "a consistent bundle reproduces")
+    Q5E.assert_m3_partition(graph)
+    check(True, "assert_m3_partition passes on agreement")
+
+    wrong = [row("101", mamba_row=0, cache_row=0, aami="N"),
+             row("101", mamba_row=1, cache_row=1, aami="N"),
+             row("101", mamba_row=2, status=BJ.STATUS_UNMATCHED,
+                 reason=BJ.REASON_NO_EDGE, aami="N"),
+             row("101", cache_row=2, status=BJ.STATUS_UNMATCHED,
+                 reason=BJ.REASON_NO_EDGE)]
+    bad = Q5E.m3_graph(wrong, {"101": mamba}, {"101": cache})
+    check(bad["partition_ok"] is False,
+          "a disagreeing row assignment is detected")
+    try:
+        Q5E.assert_m3_partition(bad)
+        raise AssertionError("mismatch accepted")
+    except Q5E.DiagnosticInputMismatch:
+        check(True, "one row mismatch is DIAGNOSTIC_INPUT_MISMATCH")
+    try:
+        Q5E.assert_m3_partition(graph, {BJ.REASON_NO_EDGE: 99})
+        raise AssertionError("wrong reason count accepted")
+    except Q5E.DiagnosticInputMismatch:
+        check(True, "a reason-count mismatch stops M3")
+
+
+def test_m4_gate_order_includes_input_identity():
+    """I1.4 — the machine-readable order, the emitted gates and tests agree."""
+    check(Q5E.M4_GATE_ORDER == ("runtime", "source_map", "input_identity",
+                                "detector_replay", "record_counts",
+                                "rr_equality"),
+          "M4_GATE_ORDER is the registered order")
+    check(Q5E.M4_GATES_BEFORE_REPLAY ==
+          ("runtime", "source_map", "input_identity"),
+          "three sub-gates precede any detector call")
+    calls = []
+    good = {"frontend.py": "def detect_r(s):\n    pass\n\n"
+                           "def rr_features(p):\n    pass\n",
+            "data.py": "def build_record(r):\n    peaks = detect_r(sig)\n"
+                       "    tol = int(0.15 * fs)\n    used = set()\n"
+                       "    ok = p - 150 >= 0\n    Fr = rr_features(peaks)\n"}
+
+    def replay():
+        calls.append("detector")
+        return {"101": 1}, {"101": [[1.0]]}
+
+    gate = Q5E.m4_feasibility_gate(
+        runtime=Q5E.M4_REGISTERED_RUNTIME, sources=Q5E.M4_SOURCE_MAP_HASHES,
+        texts=good, detector_counts=None, registered_counts={"101": 1},
+        replayed_rr=None, frozen_rr={"101": [[1.0]]},
+        input_identity={"v10_source": "wrong", "v10_cache": "wrong"},
+        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT, replay=replay)
+    check(gate["status"] == Q5E.M4_INPUT_ABSENT, "identity failure stops M4")
+    check(gate["first_failure"] == Q5E.M4_IDENTITY_MISMATCH, "identity reason")
+    check([g["gate"] for g in gate["gates"]] ==
+          ["runtime", "source_map", "input_identity"],
+          "identity is emitted in its registered position")
+    check(calls == [],
+          "the detector is not called until identity has passed")
+
+    ok = Q5E.m4_feasibility_gate(
+        runtime=Q5E.M4_REGISTERED_RUNTIME, sources=Q5E.M4_SOURCE_MAP_HASHES,
+        texts=good, detector_counts=None, registered_counts={"101": 1},
+        replayed_rr=None, frozen_rr={"101": [[1.0]]},
+        input_identity={
+            "v10_source": Q5E.M4_INPUT_CONTRACT["v10_source"]["aggregate"],
+            "v10_cache": Q5E.M4_INPUT_CONTRACT["v10_cache"]["aggregate"]},
+        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT, replay=replay)
+    check(ok["status"] == Q5E.M4_OK, "a complete gate passes")
+    check([g["gate"] for g in ok["gates"]] == list(Q5E.M4_GATE_ORDER),
+          "the emitted gate list equals M4_GATE_ORDER exactly")
+    check(calls == ["detector"], "the detector ran exactly once, and last")
+
+
+def test_control_a_class_lineage_is_cache_side_only():
+    """I1.5 — mamba class can never reach Control A's input."""
+    rows = tiny_bundle()
+    part = tiny_partition(rows)
+    vectors = Q5E.build_control_a_class_vectors(part, PROCESSED, CACHE_N)
+    check(vectors["208"] == ["N", "N", "V", "V"],
+          "the vector is the processed class in cache_record_row order")
+    Q5E.assert_control_a_input(vectors, PROCESSED, CACHE_N)
+
+    mutated = [dict(r) for r in rows]
+    for r in mutated:
+        if r["mamba_aami"]:
+            r["mamba_aami"] = "S"
+    same = Q5E.build_control_a_class_vectors(
+        Q5E.cache_partition(mutated, PROCESSED, CACHE_N), PROCESSED, CACHE_N)
+    check(same == vectors, "changing mamba class leaves Control A untouched")
+
+    moved = dict(PROCESSED); moved[("208", 2)] = "S"
+    changed = Q5E.build_control_a_class_vectors(
+        Q5E.cache_partition(rows, moved, CACHE_N), moved, CACHE_N)
+    check(changed != vectors, "changing the processed class does change it")
+
+    try:
+        Q5E.assert_control_a_input({"208": ["N", "N", "N", "N"]},
+                                   PROCESSED, CACHE_N)
+        raise AssertionError("ad-hoc vector accepted")
+    except Q5E.DiagnosticInputMismatch:
+        check(True, "an ad-hoc class vector is refused")
+
+
+def test_m5_strata_are_materialised_and_pooled_alone_cannot_fire():
+    """I1.6 — stratum names in JSON are not stratification."""
+    rows = tiny_bundle()
+    report = Q5E.m5_stratified_failure_report(rows, tiny_partition(rows))
+    for name in ("class", "reason", "record", "count_stratum", "pooled"):
+        check(name in report and report[name], f"stratum {name} materialised")
+    check(report["record_208"][Q5E.SIDE_CACHE]["denominator"] == 4,
+          "record 208 reported on its own")
+    check(report["record_116"]["status"] == Q5E.NOT_APPLICABLE,
+          "an absent record is NOT_APPLICABLE, never a silent zero")
+    empty = Q5E._rate_entry(0, 0)
+    check(empty["rate"] is None and empty["status"] == Q5E.NOT_APPLICABLE,
+          "an empty denominator is not written as a zero rate")
+    reported = Q5E.strata_reported(report)
+    check("pooled" in reported and len(reported) > 1, "several strata present")
+
+    holm = Q5E.holm_4family({"H1": 0.0001, "H2": None, "H3": None, "H4": 0.5})
+    pooled_only = Q5E.evaluate_flags(
+        {"H1": {"strata_reported": ["pooled"],
+                "effect_gates": {"a": True, "b": True}}}, holm)
+    check(pooled_only["H1"]["flag"] is False,
+          "a pooled-only mechanism claim cannot fire")
+    check(pooled_only["H1"]["pooled_only_blocked"] is True,
+          "and the block is reported, not silent")
+    stratified = Q5E.evaluate_flags(
+        {"H1": {"strata_reported": ["class", "pooled"],
+                "effect_gates": {"a": True, "b": True}}}, holm)
+    check(stratified["H1"]["flag"] is True,
+          "the same evidence fires once it is stratified")
+
+
+def _stub_png(path, spec, tables):
+    """A real, valid 1x1 PNG using only the standard library."""
+    import struct
+    import zlib
+    raw = b"\x00\xff\xff\xff"
+    def chunk(tag, payload):
+        return (struct.pack(">I", len(payload)) + tag + payload
+                + struct.pack(">I", zlib.crc32(tag + payload) & 0xFFFFFFFF))
+    png = (b"\x89PNG\r\n\x1a\n"
+           + chunk(b"IHDR", struct.pack(">IIBBBBB", 1, 1, 8, 2, 0, 0, 0))
+           + chunk(b"IDAT", zlib.compress(raw))
+           + chunk(b"IEND", b""))
+    with open(path, "wb") as handle:
+        handle.write(png)
+
+
+def test_required_outputs_and_incomplete_bundle_is_refused():
+    """I1.7 — a bundle is complete or it is not written at all."""
+    absent = Q5E.required_outputs(Q5E.DECISION_UNRESOLVED, m4_ok=False)
+    present = Q5E.required_outputs(Q5E.DECISION_NONE, m4_ok=True)
+    check("m4_anchors.csv" not in absent, "M4-only CSV absent when M4 stops")
+    check(Q5E.FIGURE_M4_ONLY not in absent, "M4-only figure absent too")
+    check("m4_anchors.csv" in present and Q5E.FIGURE_M4_ONLY in present,
+          "both present when M4 passes")
+    check(len(present) - len(absent) == 2,
+          "exactly the two registered M4 exceptions differ")
+
+    result = {"decision": Q5E.DECISION_NONE, "m4": {"status": Q5E.M4_OK}}
+    with tempfile.TemporaryDirectory() as tmp:
+        out = os.path.join(tmp, "incomplete")
+        try:
+            Q5E.write_bundle(out, result, {}, {}, {}, {}, ["x"], "s",
+                             figures=True, figure_backend=_stub_png,
+                             require_complete=True)
+            raise AssertionError("incomplete bundle written")
+        except Q5E.Q5EError as exc:
+            check("incomplete bundle" in str(exc),
+                  "a missing required CSV refuses the bundle")
+
+
+def test_figure_rendering_writes_real_files():
+    with tempfile.TemporaryDirectory() as tmp:
+        written = Q5E.render_figures(tmp, {}, m4_ok=False, backend=_stub_png)
+        check(len(written) == 6, "six figures when M4 stops")
+        for name in written:
+            path = os.path.join(tmp, name)
+            check(os.path.getsize(path) > 0, f"{name} is a real file")
+            with open(path, "rb") as handle:
+                check(handle.read(8) == b"\x89PNG\r\n\x1a\n",
+                      f"{name} is a PNG")
+        try:
+            Q5E.render_figures(tmp, {}, m4_ok=False, backend=_stub_png)
+            raise AssertionError("overwrote a figure")
+        except Q5E.Q5EError:
+            check(True, "an existing figure is never overwritten")
+
+
+def test_default_matplotlib_backend_when_available():
+    try:
+        import matplotlib                                  # noqa: F401
+    except ImportError:
+        check(True, "matplotlib absent: default renderer not exercised here")
+        return
+    with tempfile.TemporaryDirectory() as tmp:
+        written = Q5E.render_figures(
+            tmp, {"m0_class_by_reason.csv": [
+                {"class": "V", "side": "cache", "count": 3}]},
+            m4_ok=False)
+        check(len(written) == 6, "the default backend renders every figure")
+        with open(os.path.join(tmp, written[0]), "rb") as handle:
+            check(handle.read(8) == b"\x89PNG\r\n\x1a\n",
+                  "matplotlib produced a PNG")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Mandatory synthetic end-to-end production-path test.
+#
+# The whole route — QA, M0, M1, M2, M3, M4, controls A/B/C, Holm, flags, the
+# decision tree and a complete CSV/JSON/PNG bundle — on injected fake readers
+# and an injected M4 replay.  Nothing registered is opened, `detect_r()` is
+# never called, and every number below is generated by the frozen matcher from
+# synthetic RR values rather than copied out of the real bundle.
+# ─────────────────────────────────────────────────────────────────────────────
+E2E_RR = {
+    # A clean record: mamba and cache agree beat for beat.
+    "101": {"mamba": [100, 200, 300, 400], "cache": [100, 200, 300, 400]},
+    # A record carrying one motif per M3 group.  Values are >1 sample apart
+    # (RR_TOLERANCE_SAMPLES is 1), so every edge below is deliberate:
+    #   rows 0,1 / cache 0,1  -> CERTIFIED
+    #   row 2   (repeat of 100) -> an edge that is in no maximum matching
+    #   row 3   / cache 2,3   -> a rank class of size two -> AMBIGUOUS
+    #   row 4   / cache 4     -> no candidate edge at all
+    "208": {"mamba": [100, 200, 100, 700, 900],
+            "cache": [100, 200, 700, 700, 950]},
+}
+E2E_CLASSES = {"101": ["N", "N", "N", "N"],
+               "208": ["N", "V", "V", "N", "S"]}
+
+
+def _e2e_sequences():
+    mamba, cache = {}, {}
+    for record, rr in E2E_RR.items():
+        mamba[record] = BJ.RecordSequence(record, "DS1", "mamba",
+                                          rr["mamba"], rr["mamba"])
+        cache[record] = BJ.RecordSequence(record, "DS1", "cache",
+                                          rr["cache"], rr["cache"])
+    return mamba, cache
+
+
+def _e2e_rows(mamba, cache):
+    """Join-map rows *derived from the frozen matcher*, never hand-asserted.
+
+    Building the fixture from `match_record()` is what keeps this test honest:
+    it cannot pass by memorising a group assignment, because the groups are
+    whatever the frozen rule produces on these RR values.
+    """
+    group_reason = {v: k for k, v in Q5E.REASON_TO_GROUP.items()}
+    status_for = {Q5E.GROUP_AMBIGUOUS: BJ.STATUS_AMBIGUOUS,
+                  Q5E.GROUP_NOT_OPTIMAL: BJ.STATUS_UNMATCHED,
+                  Q5E.GROUP_NO_EDGE: BJ.STATUS_UNMATCHED}
+    rows = []
+    for record in sorted(mamba):
+        result = BJ.match_record(mamba[record], cache[record])
+        groups = Q5E.reconstructed_groups(result, len(mamba[record]),
+                                          len(cache[record]))
+        partner = {i: j for i, j in result.certified}
+        for i, group in sorted(groups[Q5E.SIDE_MAMBA].items()):
+            certified = group == Q5E.GROUP_CERTIFIED
+            rows.append(row(
+                record, mamba_row=i,
+                cache_row=partner[i] if certified else None,
+                aami=E2E_CLASSES[record][i],
+                status=BJ.STATUS_CERTIFIED if certified else status_for[group],
+                reason=BJ.REASON_NONE if certified else group_reason[group],
+                ordinal=i, r_sample=1000 * (int(record) % 100) + i))
+        for j, group in sorted(groups[Q5E.SIDE_CACHE].items()):
+            if group == Q5E.GROUP_CERTIFIED:
+                continue                # emitted as the certified mamba row
+            rows.append(row(record, cache_row=j, status=status_for[group],
+                            reason=group_reason[group]))
+    return rows
+
+
+def _e2e_inputs():
+    """A `ProductionInputs` built entirely from fake readers.
+
+    Every field that production fills by opening a registered artifact is
+    injected here instead, including the M4 replay — so the detector never
+    runs and no `open()` is reached.
+    """
+    mamba, cache = _e2e_sequences()
+    rows = _e2e_rows(mamba, cache)
+    cache_n = {r: len(c) for r, c in cache.items()}
+    processed = {(r, j): E2E_CLASSES[r][j]
+                 for r in cache for j in range(cache_n[r])}
+    counts = {r: len(m) for r, m in mamba.items()}
+    frozen_rr = {r: [list(mamba[r].pre_samples), list(mamba[r].post_samples)]
+                 for r in mamba}
+
+    def replay():
+        """The injected M4 replay.  `detect_r()` is not called anywhere."""
+        return dict(counts), {k: [list(v[0]), list(v[1])]
+                              for k, v in frozen_rr.items()}
+
+    texts = {
+        "frontend.py": ("def detect_r(s):\n    pass\n\n"
+                        "def rr_features(p):\n    pass\n"),
+        "data.py": ("def build_record(r):\n    peaks = detect_r(sig)\n"
+                    "    tol = int(0.15 * fs)\n    used = set()\n"
+                    "    ok = p - 150 >= 0\n    Fr = rr_features(peaks)\n"),
+    }
+    anchors = {"208": [{"anchor_ordinal": 0, "anchor_sample": 700,
+                        "anchor_kind": "annotation_without_peak",
+                        "counterpart_kept": True,
+                        "mapped_mamba_record_row": 4},
+                       {"anchor_ordinal": 1, "anchor_sample": 800,
+                        "anchor_kind": "peak_without_annotation",
+                        "counterpart_kept": False,
+                        "mapped_mamba_record_row": None}]}
+    return Q5E.ProductionInputs(
+        rows=rows, decision={"rule_fingerprint": BJ.rule_fingerprint()},
+        manifest={"code_sha256": Q5E.PRODUCING_CODE_SHA256},
+        processed_classes=processed, mamba_by_record=mamba,
+        cache_by_record=cache, cache_n=cache_n,
+        m4_runtime=Q5E.M4_REGISTERED_RUNTIME,
+        m4_sources=Q5E.M4_SOURCE_MAP_HASHES, m4_texts=texts,
+        m4_identity={
+            "v10_source": Q5E.M4_INPUT_CONTRACT["v10_source"]["aggregate"],
+            "v10_cache": Q5E.M4_INPUT_CONTRACT["v10_cache"]["aggregate"]},
+        m4_registered_counts=counts, m4_frozen_rr=frozen_rr,
+        m4_replay=replay, m4_anchors=anchors, source_files=[])
+
+
+def _e2e_qa_fixture(rows):
+    """Fixture QA targets, computed from the fixture itself.
+
+    Not the registered numbers, and never presented as them: the resulting
+    bundle is stamped FIXTURE end to end.
+    """
+    return {"targets": Q5E.observed_qa_counts(rows),
+            "rule_fingerprint": BJ.rule_fingerprint(),
+            "producing_code_sha256": Q5E.PRODUCING_CODE_SHA256}
+
+
+def test_synthetic_end_to_end_production_path():
+    opened = []
+    real_open = Q5E.open_registered_input
+
+    def tripwire(path, approval, what):        # pragma: no cover - must not run
+        opened.append(path)
+        raise AssertionError(f"the synthetic route opened {path!r}")
+
+    Q5E.open_registered_input = tripwire
+    try:
+        inputs = _e2e_inputs()
+        fixture = _e2e_qa_fixture(inputs.rows)
+        # Replicates are reduced only through this fixture-only argument; the
+        # registered count is untouched and production never passes either.
+        outcome = Q5E.run_pipeline(inputs, replicates=25, emit=lambda *a: None,
+                                   qa_fixture=fixture)
+    finally:
+        Q5E.open_registered_input = real_open
+    check(not opened, "no registered artifact was opened")
+
+    # ---- every stage is present and actually ran ---------------------------
+    check(outcome["qa"]["ok"] and not outcome["stopped"],
+          "QA passed on the fixture and the pipeline continued")
+    check(outcome["qa"]["target_set"] == Q5E.QA_TARGETS_FIXTURE,
+          "the QA verdict records that it used fixture targets")
+    for stage in ("m0", "m1", "m2", "m3", "m4"):
+        check(bool(outcome[stage]), f"{stage} produced a result")
+    check(outcome["m4"]["status"] == Q5E.M4_OK,
+          "the injected replay carried M4.0 through every sub-gate")
+    check([g["gate"] for g in outcome["m4"]["gates"]] ==
+          list(Q5E.M4_GATE_ORDER), "M4 ran the registered gate order")
+    check("anchors_report" in outcome["m4"], "M4.1 anchors were computed")
+    for control in (Q5E.CONTROL_A, Q5E.CONTROL_B, Q5E.CONTROL_C):
+        check(control in outcome["nulls"], f"{control} produced a null")
+    check(set(outcome["nulls"][Q5E.CONTROL_C]) == {"H2", "H3"},
+          "Control C fed both H2 and H3")
+    for name in Q5E.HYPOTHESES:
+        entry = outcome["tests"][name]
+        check(entry["p"] is not None, f"{name} has a permutation p")
+        check(entry["p_holm_4family"] is not None,
+              f"{name} carries a 4-family Holm value")
+    check(outcome["holm"]["family_size"] == 4, "Holm used exactly 4 families")
+    check(set(outcome["flags"]) == set(Q5E.HYPOTHESES), "every flag evaluated")
+    check(outcome["decision"]["decision"] in Q5E.DECISIONS,
+          "the decision tree chose a registered branch")
+
+    # ---- the bundle is written complete, with real PNG files ---------------
+    result = Q5E.build_result(
+        qa=outcome["qa"], m0=outcome["m0"], m1=outcome["m1"],
+        m2=outcome["m2"], m3=outcome["m3"], m4=outcome["m4"],
+        nulls=outcome["nulls"], tests=outcome["tests"],
+        decision=outcome["decision"], source_files=[])
+    check(result["synthetic_fixture"] is True,
+          "the result marks itself a synthetic fixture")
+    check(result["qa_target_set"] == Q5E.QA_TARGETS_FIXTURE,
+          "the result carries the fixture target set")
+    summary = Q5E.summary_markdown(result)
+    check("SYNTHETIC FIXTURE - NOT A Q5-E RESULT" in summary,
+          "the summary says plainly that this is not a Q5-E result")
+    check("cause" not in summary.lower(), "no causal language in the summary")
+
+    try:
+        import matplotlib                                  # noqa: F401
+        backend = None
+    except ImportError:
+        backend = _stub_png
+    with tempfile.TemporaryDirectory() as tmp:
+        directory = os.path.join(tmp, "run")
+        written = Q5E.write_bundle(
+            directory, result,
+            Q5E.build_config(Q5E.MODE_AUDIT, "20260812T000000Z"),
+            Q5E.build_manifest({"fixture": True}, "20260812T000000Z"),
+            outcome["tables"], outcome["nulls"], ["synthetic end-to-end"],
+            summary, figures=True, figure_backend=backend,
+            require_complete=True)
+        for name in written["required"]:
+            path = os.path.join(directory, name)
+            check(os.path.exists(path), f"{name} was written")
+            check(os.path.getsize(path) > 0, f"{name} is not empty")
+        check("m4_anchors.csv" in written["required"],
+              "an M4-OK branch must write the anchor table")
+        pngs = [n for n in written["required"] if n.endswith(".png")]
+        check(len(pngs) == 7, "an M4-OK branch writes all seven figures")
+        for name in pngs:
+            with open(os.path.join(directory, name), "rb") as handle:
+                check(handle.read(8) == b"\x89PNG\r\n\x1a\n",
+                      f"{name} is a real PNG")
+        with open(os.path.join(directory, "q5e_result.json"),
+                  encoding="utf-8") as handle:
+            stored = json.load(handle)
+        check(stored["synthetic_fixture"] is True,
+              "the written result keeps the fixture stamp")
+        check(stored["training_performed"] is False and
+              stored["ds2_labels_opened"] is False and
+              stored["v10_probability_opened"] is False,
+              "the written result keeps every execution seal")
+
+
+def test_production_route_never_injects_a_qa_fixture():
+    """The fixture seam is test-only: production measures against the
+    registered targets, and nothing in `run_audit` can change that."""
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    body = text.split("def run_audit(", 1)[1].split("\ndef ", 1)[0]
+    check("qa_fixture" not in body,
+          "run_audit never passes a QA fixture")
+    check("run_pipeline(inputs, emit=emit)" in body,
+          "run_audit calls the pipeline with the registered defaults")
+    default = Q5E.verify_qa_targets(
+        [], {"rule_fingerprint": BJ.rule_fingerprint()},
+        {"code_sha256": Q5E.PRODUCING_CODE_SHA256})
+    check(default["target_set"] == Q5E.QA_TARGETS_REGISTERED,
+          "the default target set is the registered one")
+    check(default["targets"]["total_failure_rows"]["expected"] ==
+          Q5E.QA_TARGETS["total_failure_rows"],
+          "the registered targets are still what an unparameterised call uses")
+    check(not default["ok"], "empty rows do not reproduce the registered QA")
+
+
+def _fake_mount(tmp, *, superseded=False, duplicate=False):
+    """A mount tree with one canonical bundle and one look-alike decoy.
+
+    The decoy carries the same file names and a different `code_sha256`, which
+    is exactly the failure mode path-typing produces: two plausible folders,
+    one of them wrong.
+    """
+    import shutil
+    def bundle(directory, code):
+        os.makedirs(directory, exist_ok=True)
+        for name in Q5E.BUNDLE_INPUT_FILES:
+            with open(os.path.join(directory, name), "w",
+                      encoding="utf-8") as handle:
+                handle.write("{}" if name.endswith(".json") else "x\n")
+        with open(os.path.join(directory, "manifest.json"), "w",
+                  encoding="utf-8") as handle:
+            json.dump({"code_sha256": code}, handle)
+        return directory
+
+    root = os.path.join(tmp, "MyDrive")
+    good = bundle(os.path.join(root, "runs", "20260811T035108_real"),
+                  Q5E.PRODUCING_CODE_SHA256)
+    bundle(os.path.join(root, "runs", "20260810T000000_old"), "0" * 64)
+    if superseded:
+        with open(os.path.join(good, Q5E.SUPERSEDED_MARKER), "w",
+                  encoding="utf-8") as handle:
+            handle.write("{}")
+    if duplicate:
+        shutil.copytree(good, os.path.join(root, "backup", "copy_of_run"))
+    return root, good
+
+
+def test_input_discovery_is_by_digest_not_by_path():
+    """No Drive path is typed by hand: identity selects the artifact."""
+    with tempfile.TemporaryDirectory() as tmp:
+        root, good = _fake_mount(tmp)
+        # Discovery of the bundle alone is what this test pins; the cache and
+        # publisher trees are absent, so the call must refuse rather than
+        # silently return a partial answer.
+        try:
+            Q5E.discover_registered_inputs(root, Q5E.EXECUTION_APPROVAL_TOKEN)
+            raise AssertionError("a partial mount was accepted")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("no " in str(error), "a missing input refuses, never guesses")
+
+        found = []
+        for directory in Q5E._candidate_dirs(root):
+            manifest = os.path.join(directory, "manifest.json")
+            if not os.path.exists(manifest):
+                continue
+            with open(manifest, encoding="utf-8") as handle:
+                if json.load(handle).get("code_sha256") == \
+                        Q5E.PRODUCING_CODE_SHA256:
+                    found.append(directory)
+        check(found == [good],
+              "the decoy bundle with a different code_sha256 is not selected")
+
+
+def test_discovery_refuses_a_superseded_or_duplicated_bundle():
+    with tempfile.TemporaryDirectory() as tmp:
+        root, _ = _fake_mount(tmp, superseded=True)
+        try:
+            Q5E.discover_registered_inputs(root, Q5E.EXECUTION_APPROVAL_TOKEN)
+            raise AssertionError("a superseded bundle was selected")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("canonical bundle" in str(error),
+                  "a SUPERSEDED bundle is not a match")
+    with tempfile.TemporaryDirectory() as tmp:
+        root, _ = _fake_mount(tmp, duplicate=True)
+        try:
+            Q5E.discover_registered_inputs(root, Q5E.EXECUTION_APPROVAL_TOKEN)
+            raise AssertionError("an ambiguous mount was accepted")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("unique" in str(error),
+                  "two identical copies refuse rather than picking one")
+
+
+def test_discovery_and_mount_route_require_approval_before_open():
+    opened = []
+    real = Q5E.sha256_file
+
+    def tripwire(path):                    # pragma: no cover - must not run
+        opened.append(path)
+        return real(path)
+
+    Q5E.sha256_file = tripwire
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            root, _ = _fake_mount(tmp)
+            try:
+                Q5E.discover_registered_inputs(root, None)
+                raise AssertionError("discovery ran without approval")
+            except Q5E.ExecutionNotApprovedError:
+                check(True, "discovery refuses without an approval token")
+            try:
+                Q5E.run_audit_from_mount(root, tmp, approval=None,
+                                         open_registered_data=True)
+                raise AssertionError("the mount route ran without approval")
+            except Q5E.ExecutionNotApprovedError:
+                check(True, "run_audit_from_mount refuses without approval")
+            try:
+                Q5E.run_audit_from_mount(
+                    root, tmp, approval=Q5E.EXECUTION_APPROVAL_TOKEN,
+                    open_registered_data=False)
+                raise AssertionError("the mount route ignored the switch")
+            except Q5E.ExecutionNotApprovedError:
+                check(True, "OPEN_REGISTERED_DATA=False refuses on its own")
+    finally:
+        Q5E.sha256_file = real
+    check(not opened, "no file was hashed before approval was checked")
+
+
+def test_mount_route_is_the_notebook_route_and_is_still_guarded():
+    check("run_audit_from_mount" in Q5E.module_capabilities(),
+          "the mount route is a declared capability")
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        text = handle.read()
+    check("run_audit_from_mount" in text,
+          "the notebook uses the digest-resolved route")
+    for typed in ("BUNDLE_DIR = ", "MAMBA_PATH = ", "CACHE_DIR = "):
+        check(typed not in text,
+              f"the notebook no longer asks for a typed {typed.split()[0]}")
+    try:
+        Q5E.run_audit_from_mount("/nonexistent", "/tmp",
+                                 approval=Q5E.EXECUTION_APPROVAL_TOKEN,
+                                 open_registered_data=True)
+        raise AssertionError("the terminal guard was bypassed")
+    except (Q5E.Q5EError, OSError) as error:
+        check(not isinstance(error, AssertionError),
+              "an approved mount run still cannot reach registered data here")
+
+
 def run_all() -> int:
+    """Run every test, and refuse to under-report.
+
+    The collected count is compared against the `def test_` lines in this file:
+    a test appended after this function used to be defined too late to run and
+    the suite still printed a pass.  A silent skip is a failure here.
+    """
     tests = [value for name, value in sorted(globals().items())
              if name.startswith("test_") and callable(value)]
+    with open(os.path.abspath(__file__), encoding="utf-8") as handle:
+        declared = sum(1 for line in handle
+                       if line.startswith("def test_"))
+    if len(tests) != declared:
+        raise AssertionError(
+            f"{declared} tests are declared in this file but only "
+            f"{len(tests)} were collected: something is defined after the "
+            f"runner and never runs")
     for test in tests:
         test()
     print(f"{len(tests)} test functions, {PASSED} assertions passed")

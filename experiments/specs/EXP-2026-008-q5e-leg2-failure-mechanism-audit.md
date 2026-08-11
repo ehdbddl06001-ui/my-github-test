@@ -2167,3 +2167,54 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
   relaxation is allowed.  This I4 choice is **not execution approval**.  User
   execution approval waits until the corrective implementation passes a second
   Codex acceptance review.
+
+## 2026-08-12 — corrective implementation of the I1 blockers; never executed
+
+The seven blockers raised in the Codex implementation-acceptance review (I1) are
+corrected in `mit-bih/q5e_leg2_failure_mechanism_audit.py` and its synthetic
+test file.  No registered artifact was opened, no aggregation was run, the
+detector was not called, no beat join was re-run, and this spec's `status`
+remains `approved_for_implementation`.  No result number enters this document.
+
+- **I1.1 — production orchestration.**  The loaders, `ProductionInputs`,
+  `run_pipeline()` and `build_tables()` complete the route, and `run_audit()`
+  reaches them only after the approval checks, the runtime check, the canonical
+  bundle check and the terminal execution guard, in that order.
+- **I1.2 / I1.5 — cache-side population.**  Every cache-side denominator, class
+  lookup and Control A input is built from one asserted `cache_partition()`,
+  so certified cache beats — which exist in the join map only as certified
+  *mamba* rows — are no longer dropped, and no mamba class can reach Control A.
+- **I1.3 — M3 QA.**  The reconstruction is compared row by row on both sides
+  and by reason count, not by totals alone.
+- **I1.4 — M4 gate order.**  `input_identity` is emitted in its registered
+  position, and no detector call may precede the three pre-replay sub-gates.
+- **I1.6 — M5.**  The registered strata are materialised, and evidence reported
+  only as `pooled` cannot fire a flag however significant it is.
+- **I1.7 — outputs.**  The registered figures are rendered as real files and an
+  incomplete bundle is refused rather than written.
+
+Two design-level consequences are recorded rather than left implicit:
+
+1. **Input identity resolves by digest, not by path.**  `run_audit_from_mount()`
+   and `discover_registered_inputs()` locate the canonical bundle, the canonical
+   `mamba_data.npz`, the V10 cache and the V10 source map under one mount root
+   by their already-registered digests.  Zero matches, two matches, or a
+   `SUPERSEDED.json` marker all refuse.  This closes a real contamination
+   route — the V9 cache sits beside the V10 one and a typed path cannot tell
+   them apart — and it introduces no new registered constant: the MIT-BIH
+   publisher tree, whose aggregate this spec pins only in truncated form and
+   which Q5-E never opens, is matched on completeness of the registered file
+   set instead.
+2. **Fixture QA targets are marked, never silent.**  The mandatory synthetic
+   end-to-end test traverses QA → M0 → M1 → M2 → M3 → M4 → Controls A/B/C →
+   Holm → flags → decision → a complete CSV/JSON/PNG bundle using injected fake
+   readers and an injected M4 replay.  To do that it supplies fixture QA
+   targets, so any result produced that way carries `qa_target_set = FIXTURE`
+   and `synthetic_fixture = true` into `q5e_result.json` and a refusal banner
+   into `summary.md`.  Production passes no fixture and is measured against the
+   registered targets; a regression test pins that.
+
+The terminal execution guard is untouched, and the frozen module
+`mit-bih/q5d_order_preserving_beat_join.py` is unchanged at code SHA-256
+`6b098c67…`.  Execution approval still waits on a second Codex acceptance
+review.

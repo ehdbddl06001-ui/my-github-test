@@ -92,6 +92,12 @@ QA_TARGETS: Dict[str, int] = {
     "ds1_records": 22,
 }
 
+#: Which target set a QA verdict was produced against.  A result is only a
+#: Q5-E finding when this is `REGISTERED`; `FIXTURE` marks a synthetic
+#: self-test bundle and is carried into the result JSON and the summary.
+QA_TARGETS_REGISTERED = "REGISTERED"
+QA_TARGETS_FIXTURE = "FIXTURE"
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Frozen M4 identity constants (spec §"Frozen M4 identity constants").
 # ─────────────────────────────────────────────────────────────────────────────
@@ -263,7 +269,11 @@ M4_IDENTITY_MISMATCH = "M4_INPUT_IDENTITY_MISMATCH"
 #: The ordered M4.0 condition-2 sub-gates.  Order is itself registered: no
 #: anchor may be computed before every one of these has passed.
 M4_GATE_ORDER: Tuple[str, ...] = (
-    "runtime", "source_map", "detector_replay", "record_counts", "rr_equality")
+    "runtime", "source_map", "input_identity", "detector_replay",
+    "record_counts", "rr_equality")
+#: The sub-gates that must all pass **before** the detector may be called.
+M4_GATES_BEFORE_REPLAY: Tuple[str, ...] = (
+    "runtime", "source_map", "input_identity")
 
 LANGUAGE_BOUNDARY = "association_only_no_causal_claim"
 
@@ -437,10 +447,13 @@ def module_capabilities() -> Tuple[str, ...]:
     A version integer is defeated by forgetting to bump it; a capability list
     is defeated only by actually lacking the capability.
     """
-    return ("run_audit", "verify_qa_targets", "m0_report", "m1_distances",
+    return ("run_audit", "run_audit_from_mount", "discover_registered_inputs",
+            "verify_qa_targets", "m0_report", "m1_distances",
             "m2_report", "m3_graph", "m4_feasibility_gate", "m4_anchors",
             "run_null_family", "h4_evaluate", "h4_descriptive_by_side",
-            "holm_4family", "evaluate_flags", "decide",
+            "holm_4family", "evaluate_flags", "decide", "run_pipeline",
+            "load_all_inputs", "cache_partition", "build_control_a_class_vectors",
+            "assert_m3_partition", "render_figures", "required_outputs",
             "build_result", "write_bundle", "assert_implementation_only",
             "stage_should_run", "EXECUTION_APPROVAL_TOKEN")
 
@@ -571,6 +584,122 @@ def record_stratum(record: str) -> str:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Cache-side partition (Q4).  A certified cache beat exists in the Q5-D join
+# map only as a certified *mamba* row carrying `cache_record_row`, so
+# `is_cache_side()` alone would silently drop every certified cache row from a
+# cache-side denominator.  Every cache-side denominator, class lookup and
+# Control A input is built from this one partition instead.
+# ─────────────────────────────────────────────────────────────────────────────
+def registered_cache_n(records: Iterable[str], split: str = SPLIT
+                       ) -> Dict[str, int]:
+    """Per-record cache row counts, from the frozen ledger and nowhere else."""
+    return {str(r): BJ.ledger_record(split, str(r)).cache_n for r in records}
+
+
+def cache_partition(rows: Sequence[Mapping[str, object]],
+                    processed_classes: Mapping[Tuple[str, int], str],
+                    cache_n: Optional[Mapping[str, int]] = None
+                    ) -> List[Dict[str, object]]:
+    """One entry per cache row: certified plus the three failure groups.
+
+    The group assignment reuses :func:`derive_cache_side_groups`, so the
+    disjoint/exhaustive contract and its `DIAGNOSTIC_INPUT_MISMATCH` failures
+    are shared rather than re-implemented.  Class comes **only** from the
+    canonical DS1 processed-class map; `mamba_aami` is never copied, filled or
+    estimated into a cache row.
+    """
+    records = sorted({str(r["record"]) for r in rows})
+    counts = dict(cache_n) if cache_n is not None else registered_cache_n(records)
+    groups = derive_cache_side_groups(rows, counts)
+    out: List[Dict[str, object]] = []
+    for (record, index), group in sorted(groups.items()):
+        out.append({
+            "record": record, "cache_record_row": int(index), "group": group,
+            "class": processed_classes.get((record, int(index)), ""),
+            "reason": (BJ.REASON_NONE if group == GROUP_CERTIFIED
+                       else {v: k for k, v in REASON_TO_GROUP.items()}[group]),
+            "failed": group != GROUP_CERTIFIED,
+            "stratum": record_stratum(record),
+        })
+    return out
+
+
+def assert_cache_partition(partition: Sequence[Mapping[str, object]],
+                           cache_n: Mapping[str, int]) -> None:
+    """Disjoint, exhaustive, exactly `cache_n` rows per record."""
+    seen: Dict[str, set] = {}
+    for entry in partition:
+        record = str(entry["record"])
+        index = int(entry["cache_record_row"])
+        bucket = seen.setdefault(record, set())
+        if index in bucket:
+            raise DiagnosticInputMismatch(
+                f"{record}: cache row {index} appears twice in the partition")
+        bucket.add(index)
+    for record, n in cache_n.items():
+        got = len(seen.get(record, ()))
+        if got != int(n):
+            raise DiagnosticInputMismatch(
+                f"{record}: cache partition has {got} rows, ledger says {n}")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Control A input (I1.5).  The class vector Control A shifts is the cache-side
+# processed-class sequence in `cache_record_row` order, over the *whole* cache
+# population.  A production caller cannot supply `mamba_aami`, mamba ordering
+# or an ad-hoc vector: this builder is the only accepted route and it asserts
+# its own provenance.
+# ─────────────────────────────────────────────────────────────────────────────
+CONTROL_A_CLASS_SOURCE = "canonical_ds1_processed_class_map"
+
+
+def build_control_a_class_vectors(partition: Sequence[Mapping[str, object]],
+                                  processed_classes: Mapping[
+                                      Tuple[str, int], str],
+                                  cache_n: Mapping[str, int]
+                                  ) -> Dict[str, List[str]]:
+    """Per-record cache-side class vectors, ordered by `cache_record_row`."""
+    assert_cache_partition(partition, cache_n)
+    by_record: Dict[str, Dict[int, str]] = {}
+    for entry in partition:
+        by_record.setdefault(str(entry["record"]), {})[
+            int(entry["cache_record_row"])] = str(entry["class"])
+    out: Dict[str, List[str]] = {}
+    for record, mapping in sorted(by_record.items()):
+        n = int(cache_n[record])
+        if sorted(mapping) != list(range(n)):
+            raise DiagnosticInputMismatch(
+                f"{record}: cache rows are not exactly 0..{n - 1}")
+        vector = [mapping[i] for i in range(n)]
+        for i, value in enumerate(vector):
+            if value != processed_classes.get((record, i), ""):
+                raise DiagnosticInputMismatch(
+                    f"{record}: cache row {i} class does not come from the "
+                    f"canonical DS1 processed-class map")
+        out[record] = vector
+    return out
+
+
+def assert_control_a_input(vectors: Mapping[str, Sequence[str]],
+                           processed_classes: Mapping[Tuple[str, int], str],
+                           cache_n: Mapping[str, int]) -> Dict[str, object]:
+    """Refuse any Control A input that did not come from the cache-side map."""
+    for record, vector in vectors.items():
+        n = int(cache_n.get(record, -1))
+        if len(vector) != n:
+            raise DiagnosticInputMismatch(
+                f"{record}: Control A vector has {len(vector)} entries, "
+                f"ledger says {n}")
+        for i, value in enumerate(vector):
+            if value != processed_classes.get((record, i), ""):
+                raise DiagnosticInputMismatch(
+                    f"{record}: Control A entry {i} is not the canonical "
+                    f"processed class; `mamba_aami` may never be substituted")
+    return {"source": CONTROL_A_CLASS_SOURCE, "records": len(vectors),
+            "ok": True}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # QA — reproduction targets, checked before any measurement
 # ─────────────────────────────────────────────────────────────────────────────
 def observed_qa_counts(rows: Sequence[Mapping[str, object]]) -> Dict[str, int]:
@@ -591,26 +720,43 @@ def observed_qa_counts(rows: Sequence[Mapping[str, object]]) -> Dict[str, int]:
 
 def verify_qa_targets(rows: Sequence[Mapping[str, object]],
                       decision: Mapping[str, object],
-                      manifest: Mapping[str, object]) -> Dict[str, object]:
-    """Reproduce every registered QA target.  One mismatch stops the audit."""
+                      manifest: Mapping[str, object],
+                      qa_fixture: Optional[Mapping[str, object]] = None
+                      ) -> Dict[str, object]:
+    """Reproduce every registered QA target.  One mismatch stops the audit.
+
+    ``qa_fixture`` exists so a **synthetic** end-to-end test can traverse the
+    whole route without a registered artifact.  It never relaxes anything: the
+    registered targets are the default, production never passes it (see
+    :func:`run_audit`), and every result derived from a fixture carries
+    ``target_set = FIXTURE`` all the way into `q5e_result.json` and
+    `summary.md`, so a synthetic bundle can never be read as a Q5-E finding.
+    """
     validate_rows(rows)
     observed = observed_qa_counts(rows)
+    fixture = dict(qa_fixture or {})
+    target_set = QA_TARGETS_FIXTURE if fixture else QA_TARGETS_REGISTERED
+    expected_counts = dict(fixture.get("targets") or QA_TARGETS)
+    expected_fp = str(fixture.get("rule_fingerprint")
+                      or REGISTERED_RULE_FINGERPRINT)
+    expected_code = str(fixture.get("producing_code_sha256")
+                        or PRODUCING_CODE_SHA256)
     targets: Dict[str, Dict[str, object]] = {}
-    for name, expected in QA_TARGETS.items():
+    for name, expected in expected_counts.items():
         got = observed.get(name)
         targets[name] = {"expected": expected, "observed": got,
                          "ok": got == expected}
     fingerprint = str(decision.get("rule_fingerprint")
                       or manifest.get("rule_fingerprint") or "")
     targets["rule_fingerprint"] = {
-        "expected": REGISTERED_RULE_FINGERPRINT, "observed": fingerprint,
-        "ok": fingerprint == REGISTERED_RULE_FINGERPRINT}
+        "expected": expected_fp, "observed": fingerprint,
+        "ok": fingerprint == expected_fp}
     code = str(manifest.get("code_sha256") or "")
     targets["producing_code_sha256"] = {
-        "expected": PRODUCING_CODE_SHA256, "observed": code,
-        "ok": code == PRODUCING_CODE_SHA256}
+        "expected": expected_code, "observed": code,
+        "ok": code == expected_code}
     ok = all(entry["ok"] for entry in targets.values())
-    return {"targets": targets, "ok": ok,
+    return {"targets": targets, "ok": ok, "target_set": target_set,
             "first_failure": None if ok else
             sorted(k for k, v in targets.items() if not v["ok"])[0]}
 
@@ -661,23 +807,37 @@ def m0_class_failure_rate(rows: Sequence[Mapping[str, object]]
 
 
 def m0_class_by_reason(rows: Sequence[Mapping[str, object]],
-                       processed_classes: Mapping[Tuple[str, int], str]
+                       processed_classes: Mapping[Tuple[str, int], str],
+                       partition: Optional[Sequence[Mapping[str, object]]] = None
                        ) -> Dict[str, Dict[str, Dict[str, object]]]:
-    """M0.2 — class x failure-reason contingency, per side, never summed."""
+    """M0.2 — class x failure-reason contingency, per side, never summed.
+
+    The cache side is taken from the disjoint, exhaustive
+    :func:`cache_partition`, so its `_rows` denominator counts **every** cache
+    row of that class — certified included — not only the explicit cache-only
+    failure rows.
+    """
+    if partition is None:
+        partition = cache_partition(rows, processed_classes)
     out: Dict[str, Dict[str, Dict[str, object]]] = {
         side: {cls: {} for cls in AAMI_CLASSES} for side in SIDES}
-    for side in SIDES:
-        for cls in AAMI_CLASSES:
-            selected = [r for r in rows
-                        if (is_mamba_side(r) if side == SIDE_MAMBA
-                            else is_cache_side(r))
-                        and row_class(r, side, processed_classes) == cls]
-            failed = [r for r in selected if is_failed(r)]
+    for cls in AAMI_CLASSES:
+        mamba_rows = [r for r in rows if is_mamba_side(r)
+                      and str(r.get("mamba_aami") or "") == cls]
+        cache_rows = [e for e in partition if str(e["class"]) == cls]
+        for side, selected, failed in (
+                (SIDE_MAMBA, mamba_rows,
+                 [r for r in mamba_rows if is_failed(r)]),
+                (SIDE_CACHE, cache_rows,
+                 [e for e in cache_rows if e["failed"]])):
             denominator = len(failed)
             for reason in (BJ.REASON_NO_EDGE, BJ.REASON_NOT_OPTIMAL,
                            BJ.REASON_AMBIGUOUS):
-                count = sum(1 for r in failed
-                            if str(r["drop_or_unmatched_reason"]) == reason)
+                if side == SIDE_MAMBA:
+                    count = sum(1 for r in failed
+                                if str(r["drop_or_unmatched_reason"]) == reason)
+                else:
+                    count = sum(1 for e in failed if str(e["reason"]) == reason)
                 out[side][cls][reason] = {
                     "count": count, "denominator": denominator,
                     "share": _ratio(count, denominator)}
@@ -813,21 +973,34 @@ def m0_post_v_failure(rows: Sequence[Mapping[str, object]],
 
 def m0_record_class(rows: Sequence[Mapping[str, object]],
                     processed_classes: Mapping[Tuple[str, int], str],
-                    record: str) -> Dict[str, Dict[str, Dict[str, float]]]:
-    """M0.3 — one record, per class, on both sides."""
+                    record: str,
+                    partition: Optional[Sequence[Mapping[str, object]]] = None
+                    ) -> Dict[str, Dict[str, Dict[str, float]]]:
+    """M0.3 — one record, per class, on both sides.
+
+    The cache-side denominator is the record's **whole** cache population from
+    :func:`cache_partition`, so the per-class denominators sum to `cache_n`.
+    """
+    if partition is None:
+        partition = cache_partition(rows, processed_classes)
+    record = str(record)
     out: Dict[str, Dict[str, Dict[str, float]]] = {}
-    subset = [r for r in rows if str(r["record"]) == str(record)]
-    for side in SIDES:
-        out[side] = {}
-        for cls in AAMI_CLASSES:
-            selected = [r for r in subset
-                        if (is_mamba_side(r) if side == SIDE_MAMBA
-                            else is_cache_side(r))
-                        and row_class(r, side, processed_classes) == cls]
-            failures = sum(1 for r in selected if is_failed(r))
-            out[side][cls] = {"denominator": len(selected),
-                              "failures": failures,
-                              "rate": _ratio(failures, len(selected))}
+    subset = [r for r in rows if str(r["record"]) == record]
+    cache_rows = [e for e in partition if str(e["record"]) == record]
+    for cls in AAMI_CLASSES:
+        mamba_sel = [r for r in subset if is_mamba_side(r)
+                     and str(r.get("mamba_aami") or "") == cls]
+        cache_sel = [e for e in cache_rows if str(e["class"]) == cls]
+        out.setdefault(SIDE_MAMBA, {})[cls] = {
+            "denominator": len(mamba_sel),
+            "failures": sum(1 for r in mamba_sel if is_failed(r)),
+            "rate": _ratio(sum(1 for r in mamba_sel if is_failed(r)),
+                           len(mamba_sel))}
+        out.setdefault(SIDE_CACHE, {})[cls] = {
+            "denominator": len(cache_sel),
+            "failures": sum(1 for e in cache_sel if e["failed"]),
+            "rate": _ratio(sum(1 for e in cache_sel if e["failed"]),
+                           len(cache_sel))}
     return out
 
 
@@ -854,22 +1027,114 @@ def m0_strata(rows: Sequence[Mapping[str, object]]) -> Dict[str, object]:
 
 
 def m0_report(rows: Sequence[Mapping[str, object]],
-              processed_classes: Mapping[Tuple[str, int], str]
+              processed_classes: Mapping[Tuple[str, int], str],
+              partition: Optional[Sequence[Mapping[str, object]]] = None
               ) -> Dict[str, object]:
     """The complete M0 block, in the registered schema field names."""
+    if partition is None:
+        partition = cache_partition(rows, processed_classes)
     runs = m0_runs(rows)
     return {
         "class_failure_rate": m0_class_failure_rate(rows),
-        "class_by_reason": m0_class_by_reason(rows, processed_classes),
-        "record_208": m0_record_class(rows, processed_classes, "208"),
-        "record_116": m0_record_class(rows, processed_classes, "116"),
+        "class_by_reason": m0_class_by_reason(rows, processed_classes,
+                                              partition),
+        "record_208": m0_record_class(rows, processed_classes, "208",
+                                      partition),
+        "record_116": m0_record_class(rows, processed_classes, "116",
+                                      partition),
         "runs_primary_mamba_row": runs[ADJ_PRIMARY],
         "runs_secondary_raw_ordinal": runs[ADJ_SECONDARY],
         "post_v_failure": {
             ADJ_PRIMARY: m0_post_v_failure(rows, ADJ_PRIMARY),
             ADJ_SECONDARY: m0_post_v_failure(rows, ADJ_SECONDARY)},
         "strata": m0_strata(rows),
+        "m5": m5_stratified_failure_report(rows, partition),
     }
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# M5 — the registered strata, materialised.  Declaring stratum names in the
+# result JSON is not stratification; every applicable result is reported across
+# these strata simultaneously, and a combination that does not apply is marked
+# `NOT_APPLICABLE` rather than silently written as zero.
+# ─────────────────────────────────────────────────────────────────────────────
+M5_STRATA: Tuple[str, ...] = ("class", "reason", "record", "count_stratum",
+                              "record_116", "record_208", "pooled")
+NOT_APPLICABLE = "NOT_APPLICABLE"
+POOLED = "pooled"
+
+
+def _rate_entry(failures: int, denominator: int) -> Dict[str, object]:
+    if denominator == 0:
+        return {"failures": failures, "denominator": 0, "rate": None,
+                "status": NOT_APPLICABLE}
+    return {"failures": failures, "denominator": denominator,
+            "rate": _ratio(failures, denominator), "status": "OK"}
+
+
+def m5_stratified_failure_report(rows: Sequence[Mapping[str, object]],
+                                 partition: Sequence[Mapping[str, object]]
+                                 ) -> Dict[str, object]:
+    """Failure counts and rates across every registered stratum, both sides."""
+    mamba = [r for r in rows if is_mamba_side(r)]
+    out: Dict[str, object] = {"strata_materialised": list(M5_STRATA)}
+
+    def side_pair(m_sel, c_sel):
+        return {
+            SIDE_MAMBA: _rate_entry(sum(1 for r in m_sel if is_failed(r)),
+                                    len(m_sel)),
+            SIDE_CACHE: _rate_entry(sum(1 for e in c_sel if e["failed"]),
+                                    len(c_sel))}
+
+    out["class"] = {
+        cls: side_pair([r for r in mamba
+                        if str(r.get("mamba_aami") or "") == cls],
+                       [e for e in partition if str(e["class"]) == cls])
+        for cls in AAMI_CLASSES}
+    out["reason"] = {
+        reason: {
+            SIDE_MAMBA: {"count": sum(
+                1 for r in mamba if is_failed(r)
+                and str(r["drop_or_unmatched_reason"]) == reason)},
+            SIDE_CACHE: {"count": sum(
+                1 for e in partition if e["failed"]
+                and str(e["reason"]) == reason)}}
+        for reason in (BJ.REASON_NO_EDGE, BJ.REASON_NOT_OPTIMAL,
+                       BJ.REASON_AMBIGUOUS)}
+    records = sorted({str(r["record"]) for r in rows})
+    out["record"] = {
+        record: side_pair([r for r in mamba if str(r["record"]) == record],
+                          [e for e in partition
+                           if str(e["record"]) == record])
+        for record in records}
+    out["count_stratum"] = {
+        stratum: side_pair(
+            [r for r in mamba if record_stratum(str(r["record"])) == stratum],
+            [e for e in partition if str(e["stratum"]) == stratum])
+        for stratum in (BJ.STRATUM_EQUAL, BJ.STRATUM_MISMATCH)}
+    for record in ("116", "208"):
+        key = f"record_{record}"
+        out[key] = (side_pair([r for r in mamba if str(r["record"]) == record],
+                              [e for e in partition
+                               if str(e["record"]) == record])
+                    if record in records
+                    else {"status": NOT_APPLICABLE,
+                          "reason": f"record {record} not present in inputs"})
+    out[POOLED] = side_pair(mamba, list(partition))
+    return out
+
+
+def strata_reported(report: Mapping[str, object]) -> List[str]:
+    """Which registered strata this report actually materialised."""
+    out = []
+    for name in M5_STRATA:
+        value = report.get(name)
+        if not isinstance(value, dict) or not value:
+            continue
+        if value.get("status") == NOT_APPLICABLE:
+            continue
+        out.append(name)
+    return out
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1080,6 +1345,55 @@ def graph_metrics_for_record(mamba: "BJ.RecordSequence",
     }
 
 
+def reconstructed_groups(result: "BJ.MatchResult", n_mamba: int, n_cache: int
+                         ) -> Dict[str, Dict[int, str]]:
+    """Group per row from the frozen matcher, assigned exactly as `join_record`.
+
+    Certified, then ambiguous, then "had a candidate edge but is in no maximum
+    matching", then "no candidate edge at all".  The matcher, tolerance,
+    candidate-edge rule and certification definition are the frozen module's
+    and are not touched here.
+    """
+    certified_i = {i for i, _ in result.certified}
+    certified_j = {j for _, j in result.certified}
+    ambiguous_i = {i for i, _ in result.ambiguous}
+    ambiguous_j = {j for _, j in result.ambiguous}
+    edge_i = {i for i, _ in result.edges}
+    edge_j = {j for _, j in result.edges}
+
+    def assign(index, cert, amb, edge):
+        if index in cert:
+            return GROUP_CERTIFIED
+        if index in amb:
+            return GROUP_AMBIGUOUS
+        return GROUP_NOT_OPTIMAL if index in edge else GROUP_NO_EDGE
+
+    return {
+        SIDE_MAMBA: {i: assign(i, certified_i, ambiguous_i, edge_i)
+                     for i in range(n_mamba)},
+        SIDE_CACHE: {j: assign(j, certified_j, ambiguous_j, edge_j)
+                     for j in range(n_cache)},
+    }
+
+
+def assert_m3_partition(graph: Mapping[str, object],
+                        qa_reason_counts: Optional[Mapping[str, int]] = None
+                        ) -> None:
+    """One mismatch is `DIAGNOSTIC_INPUT_MISMATCH`; M3 may not be used after it."""
+    if not graph.get("partition_ok"):
+        raise DiagnosticInputMismatch(
+            f"{DECISION_MISMATCH}: M3 does not reproduce the bundle partition: "
+            f"{list(graph.get('problems', []))[:6]}")
+    if qa_reason_counts:
+        observed = dict(graph.get("reason_counts", {}))
+        bad = {k: (observed.get(k), v) for k, v in qa_reason_counts.items()
+               if observed.get(k) != v}
+        if bad:
+            raise DiagnosticInputMismatch(
+                f"{DECISION_MISMATCH}: reconstructed reason counts differ "
+                f"from the registered targets: {bad}")
+
+
 def derive_cache_side_groups(rows: Sequence[Mapping[str, object]],
                              cache_n: Mapping[str, int]
                              ) -> Dict[Tuple[str, int], str]:
@@ -1140,21 +1454,40 @@ def m3_graph(rows: Sequence[Mapping[str, object]],
     cache_groups = derive_cache_side_groups(
         rows, {r: len(c) for r, c in cache_by_record.items()})
 
+    reason_counts = {BJ.REASON_NO_EDGE: 0, BJ.REASON_NOT_OPTIMAL: 0,
+                     BJ.REASON_AMBIGUOUS: 0}
     for record in sorted(mamba_by_record):
         metrics = graph_metrics_for_record(
             mamba_by_record[record], cache_by_record[record])
         result = metrics["result"]
-        observed = {
-            GROUP_CERTIFIED: len(result.certified),
-            GROUP_AMBIGUOUS: len(result.ambiguous)}
-        expected_certified = sum(
-            1 for (r, _), g in cache_groups.items()
-            if r == record and g == GROUP_CERTIFIED)
-        if observed[GROUP_CERTIFIED] != expected_certified:
-            partition_ok = False
-            problems.append(
-                f"{record}: reconstructed certified {observed[GROUP_CERTIFIED]}"
-                f" != bundle {expected_certified}")
+        rebuilt = reconstructed_groups(result, len(mamba_by_record[record]),
+                                       len(cache_by_record[record]))
+        # Row identity, not just counts: every mamba and cache row's group must
+        # equal the bundle's, and the three reason counts must agree exactly.
+        for side, expected in ((SIDE_MAMBA, mamba_groups),
+                               (SIDE_CACHE, cache_groups)):
+            for index, group in sorted(rebuilt[side].items()):
+                bundle_group = expected.get((record, index))
+                if bundle_group is None:
+                    partition_ok = False
+                    problems.append(
+                        f"{record}/{side}/{index}: reconstructed {group} but "
+                        f"the bundle has no such row")
+                elif bundle_group != group:
+                    partition_ok = False
+                    problems.append(
+                        f"{record}/{side}/{index}: reconstructed {group} != "
+                        f"bundle {bundle_group}")
+            for (rec, index) in expected:
+                if rec == record and index not in rebuilt[side]:
+                    partition_ok = False
+                    problems.append(
+                        f"{record}/{side}/{index}: in the bundle but not in "
+                        f"the reconstructed graph")
+            for group in rebuilt[side].values():
+                if group != GROUP_CERTIFIED:
+                    reason_counts[{v: k for k, v in
+                                   REASON_TO_GROUP.items()}[group]] += 1
         for side, table in ((SIDE_MAMBA, metrics[SIDE_MAMBA]),
                             (SIDE_CACHE, metrics[SIDE_CACHE])):
             for index, values in table.items():
@@ -1176,6 +1509,7 @@ def m3_graph(rows: Sequence[Mapping[str, object]],
         for side in SIDES}
     return {"rows": per_row, "by_group": by_group,
             "partition_ok": partition_ok, "problems": problems,
+            "reason_counts": reason_counts,
             "h4_decisional_side": H4_DECISIONAL_SIDE,
             "non_decisional_sides": [s for s in SIDES
                                      if s != H4_DECISIONAL_SIDE]}
@@ -1374,12 +1708,15 @@ def m4_feasibility_gate(runtime: Mapping[str, str],
     if not step["ok"]:
         return _m4_absent(gates, identity, step["reason"])
 
+    gates.append(identity)
     if not identity["ok"]:
-        gates.append(identity)
         return _m4_absent(gates, identity, identity["reason"])
 
-    # Only now may the detector run.  `replay` is injected so the gate is
-    # testable without ever calling `detect_r()` in this PR.
+    # Only now may the detector run.  Every sub-gate in
+    # `M4_GATES_BEFORE_REPLAY` has passed and is already recorded, in the
+    # registered order.  `replay` is injected so the gate is testable without
+    # ever calling `detect_r()`.
+    assert [g["gate"] for g in gates] == list(M4_GATES_BEFORE_REPLAY)
     if detector_counts is None and replay is not None:
         detector_counts, replayed_rr = replay()
     if detector_counts is None:
@@ -1769,7 +2106,13 @@ def holm_4family(p_values: Mapping[str, Optional[float]],
 
 def evaluate_flags(evidence: Mapping[str, Mapping[str, object]],
                    holm: Mapping[str, object]) -> Dict[str, Dict[str, object]]:
-    """Each flag independently; every condition of a flag must hold."""
+    """Each flag independently; every condition of a flag must hold.
+
+    A mechanism is never declared from the pooled value alone (M5), so
+    evidence whose `strata_reported` contains nothing but `pooled` cannot fire
+    a flag however significant it is.  That rule lives here, in the structure,
+    rather than in a reviewer's attention.
+    """
     significant = dict(holm["significant"])
     unevaluable = set(holm["unevaluable"])
     out: Dict[str, Dict[str, object]] = {}
@@ -1781,10 +2124,14 @@ def evaluate_flags(evidence: Mapping[str, Mapping[str, object]],
                          "p_holm_4family": holm["p_holm_4family"][name]}
             continue
         gates_ok = bool(conditions) and all(bool(v) for v in conditions.values())
+        reported = list(evidence.get(name, {}).get("strata_reported", ()))
+        pooled_only = not [x for x in reported if x != POOLED]
         out[name] = {
-            "flag": bool(gates_ok and significant[name]),
+            "flag": bool(gates_ok and significant[name] and not pooled_only),
             "evaluable": True, "status": "EVALUATED",
             "effect_gates": conditions,
+            "strata_reported": reported,
+            "pooled_only_blocked": bool(pooled_only),
             "holm_significant": bool(significant[name]),
             "p_holm_4family": holm["p_holm_4family"][name]}
     return out
@@ -1864,8 +2211,11 @@ def build_result(qa: Mapping[str, object], m0: Mapping[str, object],
                  source_files: Sequence[Mapping[str, object]] = ()
                  ) -> Dict[str, object]:
     """Assemble `q5e_result.json` in exactly the registered schema."""
+    target_set = str(qa.get("target_set") or QA_TARGETS_REGISTERED)
     return {
         "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
+        "qa_target_set": target_set,
+        "synthetic_fixture": target_set != QA_TARGETS_REGISTERED,
         "analysis_only": True, "training_performed": False,
         "model_scored": False, "v10_probability_opened": False,
         "ds2_labels_opened": False, "association_performed": False,
@@ -1928,11 +2278,122 @@ CSV_SCHEMAS: Dict[str, Tuple[str, ...]] = {
 }
 
 
+def required_outputs(decision: str, m4_ok: bool) -> List[str]:
+    """Every file this branch must produce.  Computed **before** writing.
+
+    The only registered absences are the M4-only artefacts when M4 stops; a
+    bundle missing anything else is refused rather than written incomplete.
+    """
+    names = [f for f in BUNDLE_FILES if f != "m4_anchors.csv"]
+    figures = [spec["file"] for spec in figure_specs(m4_ok)]
+    if m4_ok:
+        names.append("m4_anchors.csv")
+    return sorted(names + figures)
+
+
+def render_figures(directory: str,
+                   tables: Mapping[str, Sequence[Mapping[str, object]]],
+                   m4_ok: bool, backend=None) -> List[str]:
+    """Render the registered figures as real PNG files.
+
+    ``backend`` is injectable so a synthetic end-to-end test can exercise the
+    complete bundle contract without depending on a plotting library.  The
+    default backend is matplotlib with the non-interactive Agg canvas.  All
+    titles, axis labels, tick labels and legends are ASCII.
+    """
+    specs = figure_specs(m4_ok)
+    assert_ascii_labels(specs)
+    writer = backend or _matplotlib_backend
+    written: List[str] = []
+    for spec in specs:
+        path = os.path.join(directory, str(spec["file"]))
+        if os.path.exists(path):
+            raise Q5EError(f"refusing to overwrite an existing figure {path!r}")
+        writer(path, spec, tables)
+        written.append(str(spec["file"]))
+    return sorted(written)
+
+
+def _matplotlib_backend(path: str, spec: Mapping[str, object],
+                        tables: Mapping[str, Sequence[Mapping[str, object]]]
+                        ) -> None:                          # pragma: no cover
+    """Default renderer.  ASCII labels only; no glyph can go missing."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    figure, axes = plt.subplots(figsize=(7.0, 4.0))
+    kind = str(spec.get("kind"))
+    series = _figure_series(kind, tables)
+    if series["x"]:
+        if kind in ("stacked_bar", "hist", "raster"):
+            axes.bar(range(len(series["x"])), series["y"])
+        else:
+            axes.plot(range(len(series["x"])), series["y"], marker="o")
+        axes.set_xticks(range(len(series["x"])))
+        axes.set_xticklabels([str(v) for v in series["x"]], rotation=45,
+                             ha="right")
+    axes.set_title(str(spec["title"]))
+    axes.set_xlabel(str(spec["xlabel"]))
+    axes.set_ylabel(str(spec["ylabel"]))
+    figure.tight_layout()
+    figure.savefig(path, dpi=110)
+    plt.close(figure)
+
+
+def _figure_series(kind: str,
+                   tables: Mapping[str, Sequence[Mapping[str, object]]]
+                   ) -> Dict[str, List[object]]:
+    """Plain (x, y) series per registered figure, from the written tables."""
+    rows: Sequence[Mapping[str, object]]
+    if kind == "stacked_bar":
+        rows = tables.get("m0_class_by_reason.csv", [])
+        return {"x": [f"{r.get('class')}/{r.get('side')}" for r in rows],
+                "y": [float(r.get("count") or 0) for r in rows]}
+    if kind == "heatmap":
+        rows = tables.get("m0_record_class.csv", [])
+        return {"x": [f"{r.get('record')}/{r.get('class')}" for r in rows],
+                "y": [float(r.get("rate") or 0.0) for r in rows]}
+    if kind == "raster":
+        rows = [r for r in tables.get("m0_runs.csv", [])
+                if str(r.get("record")) == "208"]
+        return {"x": [r.get("run_start") for r in rows],
+                "y": [float(r.get("run_length") or 0) for r in rows]}
+    if kind == "hist":
+        rows = tables.get("m1_distance.csv", [])
+        buckets: Dict[str, int] = {}
+        for r in rows:
+            buckets[str(r.get("bin"))] = buckets.get(str(r.get("bin")), 0) + 1
+        if not buckets:
+            rows = tables.get("m0_runs.csv", [])
+            for r in rows:
+                key = str(r.get("run_length"))
+                buckets[key] = buckets.get(key, 0) + 1
+        return {"x": sorted(buckets), "y": [buckets[k] for k in sorted(buckets)]}
+    if kind == "violin_ecdf":
+        rows = tables.get("m3_graph.csv", [])
+        by_group: Dict[str, List[float]] = {}
+        for r in rows:
+            by_group.setdefault(str(r.get("group")), []).append(
+                float(r.get("candidate_degree") or 0))
+        return {"x": sorted(by_group),
+                "y": [median(by_group[k]) for k in sorted(by_group)]}
+    rows = tables.get("m4_anchors.csv", [])
+    by_offset: Dict[int, List[float]] = {}
+    for r in rows:
+        by_offset.setdefault(int(r.get("offset") or 0), []).append(
+            1.0 if r.get("failed") else 0.0)
+    return {"x": sorted(by_offset),
+            "y": [_ratio(sum(by_offset[k]), len(by_offset[k]))
+                  for k in sorted(by_offset)]}
+
+
 def write_bundle(directory: str, result: Mapping[str, object],
                  config: Mapping[str, object], manifest: Mapping[str, object],
                  tables: Mapping[str, Sequence[Mapping[str, object]]],
                  nulls: Mapping[str, object], log_lines: Sequence[str],
-                 summary: str) -> Dict[str, object]:
+                 summary: str, figures: Optional[bool] = None,
+                 figure_backend=None,
+                 require_complete: bool = False) -> Dict[str, object]:
     """Write one new bundle directory.  Nothing existing is touched.
 
     A stopped run still writes its bundle, so a STOP is as inspectable as a
@@ -1962,7 +2423,25 @@ def write_bundle(directory: str, result: Mapping[str, object],
               encoding="utf-8") as fh:
         fh.write(summary)
     written.extend(["log.txt", "summary.md"])
-    return {"directory": directory, "written": sorted(written)}
+
+    m4_ok = str((result.get("m4") or {}).get("status")) == M4_OK
+    if figures is not None:
+        written.extend(render_figures(directory, tables, m4_ok,
+                                      backend=figure_backend))
+    if require_complete:
+        needed = required_outputs(str(result.get("decision") or ""), m4_ok)
+        missing = [name for name in needed
+                   if not os.path.exists(os.path.join(directory, name))]
+        if missing:
+            raise Q5EError(
+                f"incomplete bundle: {missing} were required for decision "
+                f"{result.get('decision')!r} (M4 ok={m4_ok}) but were not "
+                f"written.  A bundle is complete or it is not written at all; "
+                f"the only registered absences are the M4-only artefacts when "
+                f"M4 stops.")
+    return {"directory": directory, "written": sorted(set(written)),
+            "required": required_outputs(str(result.get("decision") or ""),
+                                         m4_ok)}
 
 
 def summary_markdown(result: Mapping[str, object]) -> str:
@@ -1971,6 +2450,17 @@ def summary_markdown(result: Mapping[str, object]) -> str:
     lines = [
         f"# {EXPERIMENT_ID} / Q5-E - Leg 2 failure mechanism audit",
         "",
+    ]
+    if result.get("synthetic_fixture"):
+        lines += [
+            "> **SYNTHETIC FIXTURE - NOT A Q5-E RESULT.**  This bundle was",
+            "> produced against injected fixture QA targets, not the",
+            "> registered ones.  Nothing in it may be read, cited or",
+            "> registered as a finding.",
+            "",
+        ]
+    lines += [
+        f"- QA target set: `{result.get('qa_target_set')}`",
         f"- decision: `{result.get('decision')}`",
         f"- first stopping reason: `{result.get('first_stopping_reason')}`",
         f"- M4 status: `{m4.get('status')}`",
@@ -2025,8 +2515,490 @@ def assert_ascii_labels(specs: Sequence[Mapping[str, object]]) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 # Production entry point
 # ─────────────────────────────────────────────────────────────────────────────
+class ProductionInputs(object):
+    """Everything the pipeline needs, already loaded.
+
+    Separating loading from computation is what makes the whole audit testable
+    without a registered artifact: a synthetic test injects this object, and
+    production fills it through :func:`load_all_inputs`.
+    """
+
+    __slots__ = ("rows", "decision", "manifest", "processed_classes",
+                 "mamba_by_record", "cache_by_record", "cache_n",
+                 "m4_runtime", "m4_sources", "m4_texts", "m4_identity",
+                 "m4_registered_counts", "m4_frozen_rr", "m4_replay",
+                 "m4_anchors", "source_files")
+
+    def __init__(self, rows, decision, manifest, processed_classes,
+                 mamba_by_record, cache_by_record, cache_n,
+                 m4_runtime=None, m4_sources=None, m4_texts=None,
+                 m4_identity=None, m4_registered_counts=None,
+                 m4_frozen_rr=None, m4_replay=None, m4_anchors=None,
+                 source_files=()):
+        self.rows = list(rows)
+        self.decision = dict(decision)
+        self.manifest = dict(manifest)
+        self.processed_classes = dict(processed_classes)
+        self.mamba_by_record = dict(mamba_by_record)
+        self.cache_by_record = dict(cache_by_record)
+        self.cache_n = dict(cache_n)
+        self.m4_runtime = dict(m4_runtime or {})
+        self.m4_sources = dict(m4_sources or {})
+        self.m4_texts = dict(m4_texts or {})
+        self.m4_identity = dict(m4_identity or {})
+        self.m4_registered_counts = dict(m4_registered_counts or {})
+        self.m4_frozen_rr = dict(m4_frozen_rr or {})
+        self.m4_replay = m4_replay
+        self.m4_anchors = dict(m4_anchors or {})
+        self.source_files = list(source_files)
+
+
+def load_join_map(bundle_dir: str, approval: Optional[str]
+                  ) -> List[Dict[str, object]]:
+    """Read `join_map.parquet`.  Approval is checked before `open()`."""
+    require_execution_approval(approval, f"join map in {bundle_dir!r}")
+    import pyarrow.parquet as pq                          # noqa: PLC0415
+    path = os.path.join(bundle_dir, "join_map.parquet")
+    if not os.path.exists(path):
+        raise Q5EError(f"{DECISION_MISMATCH}: join_map.parquet not found")
+    table = pq.read_table(path, columns=list(BJ.JOIN_MAP_FIELDS))
+    rows = table.to_pylist()
+    validate_rows(rows)
+    return [r for r in rows if str(r["split"]) == SPLIT]
+
+
+def load_decision_and_manifest(bundle_dir: str, approval: Optional[str]
+                               ) -> Tuple[Dict[str, object],
+                                          Dict[str, object]]:
+    out = []
+    for name in ("decision.json", "manifest.json"):
+        with open_registered_input(os.path.join(bundle_dir, name), approval,
+                                   name) as handle:
+            out.append(json.loads(handle.read().decode("utf-8")))
+    return out[0], out[1]
+
+
+def load_processed_classes(cache_dir: str, approval: Optional[str]
+                           ) -> Dict[Tuple[str, int], str]:
+    """Canonical DS1 processed-class map.  DS2 labels stay sealed."""
+    require_execution_approval(approval, "canonical DS1 processed-class map")
+    return BJ.load_cache_classes(cache_dir, SPLIT, approval=approval)
+
+
+def load_sequences(mamba_path: str, cache_dir: str, approval: Optional[str]
+                   ) -> Tuple[Dict[str, object], Dict[str, object]]:
+    require_execution_approval(approval, "frozen mamba and cache sequences")
+    mamba = BJ.load_mamba_sequences(mamba_path, approval=approval)
+    cache = BJ.load_cache_sequences(cache_dir, approval=approval)
+    ds1 = [row.record for row in BJ.build_ledger()[SPLIT]]
+    return ({r: mamba["sequences"][r] for r in ds1},
+            {r: cache["sequences"][r] for r in ds1})
+
+
+def load_m4_source_map(source_dir: str, approval: Optional[str]
+                       ) -> Tuple[Dict[str, str], Dict[str, str]]:
+    """Digest and text of the two decisive V10 source-map files."""
+    require_execution_approval(approval, f"V10 source map in {source_dir!r}")
+    hashes, texts = {}, {}
+    for name in M4_SOURCE_MAP_HASHES:
+        path = os.path.join(source_dir, name)
+        if not os.path.exists(path):
+            raise Q5EError(f"{DECISION_MISMATCH}: V10 source {name} not found")
+        hashes[name] = sha256_file(path)
+        with open(path, encoding="utf-8", errors="replace") as handle:
+            texts[name] = handle.read()
+    return hashes, texts
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Deterministic input resolution.
+#
+# The spec establishes identity **by digest, never by path**.  A notebook that
+# asks a human to paste five Drive paths contradicts that: a typo silently
+# selects the wrong artifact, and the V9 cache sits one directory away from the
+# V10 one.  So the paths are not typed at all — every registered input is
+# *found* by its registered digest under one mount root, and a search that does
+# not find exactly one match refuses rather than guessing.
+# ─────────────────────────────────────────────────────────────────────────────
+DISCOVERY_MAX_DEPTH = 6
+
+
+def _candidate_dirs(root: str, max_depth: int = DISCOVERY_MAX_DEPTH):
+    """Directories under ``root``, breadth-limited so a mount cannot hang it."""
+    root = os.path.abspath(root)
+    base = root.rstrip(os.sep).count(os.sep)
+    for current, subdirs, _files in os.walk(root):
+        if current.rstrip(os.sep).count(os.sep) - base >= max_depth:
+            subdirs[:] = []
+        subdirs[:] = [d for d in sorted(subdirs) if not d.startswith(".")]
+        yield current
+
+
+def _only(matches: Sequence[str], what: str, root: str) -> str:
+    if len(matches) == 1:
+        return matches[0]
+    if not matches:
+        raise DiagnosticInputMismatch(
+            f"{DECISION_MISMATCH}: no {what} with the registered identity was "
+            f"found under {root!r}.  The audit does not fall back to a "
+            f"path-named guess: mount the registered artifact and re-run.")
+    raise DiagnosticInputMismatch(
+        f"{DECISION_MISMATCH}: {len(matches)} directories under {root!r} match "
+        f"the registered {what} ({matches[:4]}).  Identity must be unique; "
+        f"remove the duplicate copy rather than choosing one here.")
+
+
+def discover_registered_inputs(search_root: str, approval: Optional[str]
+                               ) -> Dict[str, str]:
+    """Locate every registered input under one mount, **by digest**.
+
+    Returns the five paths :func:`run_audit` needs.  Nothing is matched on a
+    folder name, so a renamed copy is still found and a look-alike is still
+    refused.  In particular the V9 cache can never be selected in place of the
+    V10 one: only the registered V10 aggregate matches.
+    """
+    require_execution_approval(approval, f"input discovery under {search_root!r}")
+    found: Dict[str, str] = {}
+
+    bundles: List[str] = []
+    for directory in _candidate_dirs(search_root):
+        if not all(os.path.exists(os.path.join(directory, name))
+                   for name in BUNDLE_INPUT_FILES):
+            continue
+        if os.path.exists(os.path.join(directory, SUPERSEDED_MARKER)):
+            continue                       # a superseded bundle is not a match
+        try:
+            with open(os.path.join(directory, "manifest.json"),
+                      encoding="utf-8") as handle:
+                code = str(json.load(handle).get("code_sha256") or "")
+        except (OSError, ValueError):
+            continue
+        if code == PRODUCING_CODE_SHA256:
+            bundles.append(directory)
+    found["bundle_dir"] = _only(bundles, "canonical bundle", search_root)
+
+    mamba: List[str] = []
+    for directory in _candidate_dirs(search_root):
+        path = os.path.join(directory, "mamba_data.npz")
+        if os.path.isfile(path) and sha256_file(path) == BJ.MAMBA_SHA256:
+            mamba.append(path)
+    found["mamba_path"] = _only(mamba, "mamba_data.npz", search_root)
+
+    cache_names = BJ.cache_expected_files()
+    cache_want = str(M4_INPUT_CONTRACT["v10_cache"]["aggregate"])
+    caches: List[str] = []
+    for directory in _candidate_dirs(search_root):
+        if not os.path.isfile(os.path.join(directory, cache_names[0])):
+            continue
+        digest = BJ.hash_file_set(directory, cache_names, approval=approval)
+        if digest.get("aggregate") == cache_want:
+            caches.append(directory)
+    found["cache_dir"] = _only(caches, "V10 preprocessing cache", search_root)
+
+    sources: List[str] = []
+    for directory in _candidate_dirs(search_root):
+        if all(os.path.isfile(os.path.join(directory, name))
+               and sha256_file(os.path.join(directory, name)) == want
+               for name, want in M4_SOURCE_MAP_HASHES.items()):
+            sources.append(directory)
+    found["v10_source_dir"] = _only(sources, "V10 source map", search_root)
+
+    # The MIT-BIH publisher tree is recorded in the manifest for provenance;
+    # Q5-E never opens it.  This spec pins its aggregate only in truncated
+    # form, so it is matched on completeness of the registered file set rather
+    # than on a digest that is not written down here in full.
+    trees = [d for d in _candidate_dirs(search_root)
+             if all(os.path.isfile(os.path.join(d, name))
+                    for name in BJ.mitdb_expected_files())]
+    found["mitdb_dir"] = _only(trees, "MIT-BIH publisher tree", search_root)
+    return found
+
+
+def observed_runtime() -> Dict[str, str]:
+    """The runtime actually loaded.  Reported, never negotiated."""
+    import platform                                       # noqa: PLC0415
+    out = {"python": platform.python_version()}
+    for name in ("numpy", "scipy", "wfdb"):
+        try:
+            out[name] = getattr(__import__(name), "__version__", "")
+        except ImportError:
+            out[name] = ""
+    return out
+
+
+def load_all_inputs(bundle_dir: str, mamba_path: str, cache_dir: str,
+                    mitdb_dir: str, v10_source_dir: str,
+                    approval: Optional[str]) -> ProductionInputs:
+    """Every registered read, behind one approval-checked door."""
+    rows = load_join_map(bundle_dir, approval)
+    decision, manifest = load_decision_and_manifest(bundle_dir, approval)
+    processed = load_processed_classes(cache_dir, approval)
+    mamba, cache = load_sequences(mamba_path, cache_dir, approval)
+    hashes, texts = load_m4_source_map(v10_source_dir, approval)
+    records = sorted(mamba)
+    return ProductionInputs(
+        rows=rows, decision=decision, manifest=manifest,
+        processed_classes=processed, mamba_by_record=mamba,
+        cache_by_record=cache, cache_n={r: len(cache[r]) for r in records},
+        m4_runtime=observed_runtime(), m4_sources=hashes, m4_texts=texts,
+        m4_identity={"v10_source": str(M4_INPUT_CONTRACT["v10_source"]
+                                       ["aggregate"]),
+                     "v10_cache": str(M4_INPUT_CONTRACT["v10_cache"]
+                                      ["aggregate"])},
+        m4_registered_counts={r: BJ.ledger_record(SPLIT, r).cache_n
+                              for r in records},
+        m4_frozen_rr={}, m4_replay=None, m4_anchors={},
+        source_files=[])
+
+
+def run_pipeline(inputs: "ProductionInputs",
+                 replicates: int = N_NULL_REPLICATES,
+                 emit=print,
+                 qa_fixture: Optional[Mapping[str, object]] = None
+                 ) -> Dict[str, object]:
+    """QA -> M0-M4 -> controls -> Holm -> flags -> decision, on loaded inputs.
+
+    This is the complete audit.  It performs no I/O and opens nothing, so the
+    execution-approval change has only to remove the terminal guard in
+    :func:`run_audit` to reach an already finished route — it never introduces
+    scientific logic for the first time.
+
+    ``replicates`` and ``qa_fixture`` are the only fixture-facing arguments.
+    Production passes neither, so the registered replicate count and the
+    registered QA targets are what a real run is measured against.
+    """
+    rows = inputs.rows
+    qa = verify_qa_targets(rows, inputs.decision, inputs.manifest, qa_fixture)
+    partition = cache_partition(rows, inputs.processed_classes, inputs.cache_n)
+    assert_cache_partition(partition, inputs.cache_n)
+
+    if not qa["ok"]:
+        decision = decide(False, M4_INPUT_ABSENT, {}, qa.get("first_failure"))
+        return {"qa": qa, "decision": decision, "stopped": True,
+                "m0": {}, "m1": {}, "m2": {}, "m3": {}, "m4": {},
+                "nulls": {}, "tests": {}, "tables": {}}
+
+    expected_counts = dict((qa_fixture or {}).get("targets") or QA_TARGETS)
+
+    emit("QA targets reproduced; measurement may begin.")
+    m0 = m0_report(rows, inputs.processed_classes, partition)
+    mamba_rr = {r: (seq.pre_samples, seq.post_samples)
+                for r, seq in inputs.mamba_by_record.items()}
+    cache_rr = {r: (seq.pre_samples, seq.post_samples)
+                for r, seq in inputs.cache_by_record.items()}
+    distances = m1_distances(rows, mamba_rr, cache_rr,
+                             inputs.processed_classes)
+    m1 = m1_summary(distances)
+    m2 = m2_report(rows)
+    m3 = m3_graph(rows, inputs.mamba_by_record, inputs.cache_by_record)
+    assert_m3_partition(m3, {k: expected_counts[k] for k in
+                             (BJ.REASON_NO_EDGE, BJ.REASON_NOT_OPTIMAL,
+                              BJ.REASON_AMBIGUOUS) if k in expected_counts})
+
+    m4 = m4_feasibility_gate(
+        runtime=inputs.m4_runtime, sources=inputs.m4_sources,
+        texts=inputs.m4_texts, detector_counts=None,
+        registered_counts=inputs.m4_registered_counts,
+        replayed_rr=None, frozen_rr=inputs.m4_frozen_rr,
+        input_identity=inputs.m4_identity,
+        rr_verdict=PREP_M4_RR_EQUIVALENCE_VERDICT, replay=inputs.m4_replay)
+    m4_ok = str(m4["status"]) == M4_OK
+    anchors = (m4_anchors(m4, inputs.m4_anchors, rows) if m4_ok else None)
+
+    # ---- controls, statistics, multiplicity -------------------------------
+    class_vectors = build_control_a_class_vectors(
+        partition, inputs.processed_classes, inputs.cache_n)
+    assert_control_a_input(class_vectors, inputs.processed_classes,
+                           inputs.cache_n)
+    gate_rows = distance_gate_rows(distances)
+    h1_observed = stat_h1(distances)
+
+    def h1_replicate(b: int) -> float:
+        shifted = control_a_class_shift(class_vectors, b)
+        class_of = {(record, i): value
+                    for record, vector in shifted.items()
+                    for i, value in enumerate(vector)}
+        return stat_h1(distances, class_of=class_of)
+
+    null_a = run_null_family(CONTROL_A, h1_replicate, replicates=replicates)
+    h1 = {"statistic": h1_observed, "p": permutation_p(h1_observed, null_a),
+          "null_summary": null_summary(null_a)}
+    h4 = h4_evaluate(m3["rows"], replicates=replicates)
+
+    if m4_ok and anchors is not None:
+        no_edge_positions = [(str(r["record"]), int(r["mamba_record_row"]))
+                             for r in rows if is_mamba_side(r) and is_failed(r)
+                             and str(r["drop_or_unmatched_reason"]) ==
+                             BJ.REASON_NO_EDGE]
+        all_failures = [(str(r["record"]), int(r["mamba_record_row"]))
+                        for r in rows if is_mamba_side(r) and is_failed(r)]
+        explained = [tuple(x) for x in anchors["explained_positions"]]
+        h2_observed = stat_h2(explained, no_edge_positions)
+        h3_observed = anchors["share_failures_within_10_after"]
+        record_lengths = {r: len(seq) for r, seq in
+                          inputs.mamba_by_record.items()}
+        anchor_positions = {r: [int(a["mapped_mamba_record_row"])
+                                for a in v
+                                if a.get("mapped_mamba_record_row") is not None]
+                            for r, v in inputs.m4_anchors.items()}
+
+        def c_replicate(b: int, observed_kind: str) -> float:
+            shifted = control_c_anchor_shift(anchor_positions, record_lengths, b)
+            moved = {(r, p) for r, ps in shifted.items() for p in ps}
+            if observed_kind == "H2":
+                return stat_h2(sorted(moved), no_edge_positions)
+            after = {(r, p + o) for r, p in moved
+                     for o in range(1, M4_ANCHOR_HALF_WINDOW + 1)}
+            return stat_h3(sorted(after), all_failures)
+
+        null_c2 = run_null_family(CONTROL_C, lambda b: c_replicate(b, "H2"),
+                                  replicates=replicates)
+        null_c3 = run_null_family(CONTROL_C, lambda b: c_replicate(b, "H3"),
+                                  replicates=replicates)
+        h2 = {"statistic": h2_observed,
+              "p": permutation_p(h2_observed, null_c2),
+              "null_summary": null_summary(null_c2)}
+        h3 = {"statistic": h3_observed,
+              "p": permutation_p(h3_observed, null_c3),
+              "null_summary": null_summary(null_c3)}
+    else:
+        h2 = {"statistic": None, "p": None, "status": UNEVALUABLE}
+        h3 = {"statistic": None, "p": None, "status": UNEVALUABLE}
+
+    holm = holm_4family({"H1": h1["p"], "H2": h2["p"], "H3": h3["p"],
+                         "H4": h4["p"]})
+    m5_report = m0.get("m5", {})
+    reported = strata_reported(m5_report)
+    long_run_share = m0["runs_primary_mamba_row"]["share_in_long_runs"]
+    gate_bins = m1["bins_in_distance_gate"]
+    evidence = {
+        "H1": {"strata_reported": reported, "effect_gates": {
+            "share_2_5_at_least_half": bool(
+                _ratio(sum(1 for e in gate_rows
+                           if str(e["reason"]) == BJ.REASON_NO_EDGE
+                           and str(e["processed_class"]) == "V"
+                           and str(e["bin"]) == M1_GATE_BIN),
+                       sum(1 for e in gate_rows
+                           if str(e["reason"]) == BJ.REASON_NO_EDGE
+                           and str(e["processed_class"]) == "V"))
+                >= EFFECT_SHARE_MIN),
+            "exceeds_control_a_q99": bool(
+                h1["statistic"] > h1["null_summary"]["q99"]),
+            "run_mass_mostly_short": bool(long_run_share < EFFECT_SHARE_MIN),
+            "m4_propagation_gate_not_met": not m4_ok}},
+        "H4": {"strata_reported": reported,
+               "effect_gates": h4["effect_gates"]},
+    }
+    if m4_ok:
+        evidence["H2"] = {"strata_reported": reported, "effect_gates": {
+            "explains_at_least_half": bool(
+                h2["statistic"] >= EFFECT_SHARE_MIN),
+            "exceeds_control_c_q99": bool(
+                h2["statistic"] > h2["null_summary"]["q99"])}}
+        evidence["H3"] = {"strata_reported": reported, "effect_gates": {
+            "exceeds_control_c_q99": bool(
+                h3["statistic"] > h3["null_summary"]["q99"]),
+            "half_in_long_runs": bool(long_run_share >= EFFECT_SHARE_MIN),
+            "distance_mass_far": bool(
+                sum(gate_bins[b] for b in M1_H3_FAR_BINS)
+                > gate_bins[M1_GATE_BIN])}}
+
+    flags = evaluate_flags(evidence, holm)
+    decision = decide(qa["ok"], str(m4["status"]), flags,
+                      qa.get("first_failure"))
+    tests = {name: {**{"statistic": value.get("statistic"),
+                       "p": value.get("p"),
+                       "p_holm_4family": holm["p_holm_4family"][name],
+                       "q99": (value.get("null_summary") or {}).get("q99")},
+                    **flags[name]}
+             for name, value in (("H1", h1), ("H2", h2), ("H3", h3),
+                                 ("H4", h4))}
+    tables = build_tables(m0, distances, m3, anchors, partition)
+    nulls = {CONTROL_A: h1.get("null_summary", {}),
+             CONTROL_B: h4.get("null_summary", {}),
+             CONTROL_C: ({"H2": h2.get("null_summary", {}),
+                          "H3": h3.get("null_summary", {})} if m4_ok
+                         else {"status": UNEVALUABLE,
+                               "reason": "M4.0 did not pass"})}
+    return {"qa": qa, "m0": m0, "m1": m1, "m2": m2, "m3": m3,
+            "m4": {**m4, **({"anchors_report": anchors} if anchors else {})},
+            "nulls": nulls, "tests": tests, "holm": holm, "flags": flags,
+            "decision": decision, "tables": tables, "stopped": False}
+
+
+def build_tables(m0: Mapping[str, object],
+                 distances: Sequence[Mapping[str, object]],
+                 m3: Mapping[str, object],
+                 anchors: Optional[Mapping[str, object]],
+                 partition: Sequence[Mapping[str, object]]
+                 ) -> Dict[str, List[Dict[str, object]]]:
+    """The registered CSV tables, in their registered column order."""
+    class_rows: List[Dict[str, object]] = []
+    for side, per_class in dict(m0.get("class_by_reason", {})).items():
+        for cls, reasons in per_class.items():
+            for reason, values in reasons.items():
+                if reason.startswith("_"):
+                    continue
+                class_rows.append({"side": side, "class": cls,
+                                   "reason": reason, **values,
+                                   "rate": values.get("share")})
+    record_rows = [
+        {"record": entry["record"], "stratum": entry["stratum"],
+         "class": entry["class"], "side": SIDE_CACHE,
+         "denominator": 1, "failures": 1 if entry["failed"] else 0,
+         "rate": 1.0 if entry["failed"] else 0.0}
+        for entry in partition]
+    run_rows: List[Dict[str, object]] = []
+    for adjacency in ADJACENCIES:
+        key = ("runs_primary_mamba_row" if adjacency == ADJ_PRIMARY
+               else "runs_secondary_raw_ordinal")
+        summary = dict(m0.get(key, {}))
+        for record, value in dict(summary.get("per_record", {})).items():
+            for bucket, count in dict(value.get("buckets", {})).items():
+                run_rows.append({
+                    "record": record, "adjacency_definition": adjacency,
+                    "run_start": bucket, "run_length": count,
+                    "classes": "", "reasons": "",
+                    "decisional": adjacency == ADJ_PRIMARY})
+    tables = {
+        "m0_class_by_reason.csv": class_rows,
+        "m0_record_class.csv": record_rows,
+        "m0_runs.csv": run_rows,
+        "m1_distance.csv": list(distances),
+        "m3_graph.csv": list(m3.get("rows", [])),
+    }
+    if anchors is not None:
+        tables["m4_anchors.csv"] = list(anchors.get("rows", []))
+    return tables
+
+
+def run_audit_from_mount(search_root: str, out_dir: str,
+                         approval: Optional[str] = None,
+                         open_registered_data: bool = OPEN_REGISTERED_DATA,
+                         emit=print) -> Dict[str, object]:
+    """:func:`run_audit` with every input path resolved by digest.
+
+    This is the route the notebook uses, so no Drive path is ever typed by
+    hand.  The approval and `open_registered_data` switches are checked here
+    first, before discovery opens anything.
+    """
+    if not open_registered_data:
+        raise ExecutionNotApprovedError(
+            f"OPEN_REGISTERED_DATA is False.  {APPROVAL_NOTE}")
+    require_execution_approval(approval, f"input discovery under {search_root!r}")
+    paths = discover_registered_inputs(search_root, approval)
+    emit(f"Q5-E: resolved every registered input by digest under "
+         f"{search_root!r}.")
+    return run_audit(paths["bundle_dir"], paths["mamba_path"],
+                     paths["cache_dir"], paths["mitdb_dir"], out_dir,
+                     v10_source_dir=paths["v10_source_dir"],
+                     approval=approval,
+                     open_registered_data=open_registered_data, emit=emit)
+
+
 def run_audit(bundle_dir: str, mamba_path: str, cache_dir: str,
               mitdb_dir: str, out_dir: str,
+              v10_source_dir: str = "",
               approval: Optional[str] = None,
               open_registered_data: bool = OPEN_REGISTERED_DATA,
               emit=print) -> Dict[str, object]:
@@ -2047,13 +3019,56 @@ def run_audit(bundle_dir: str, mamba_path: str, cache_dir: str,
     if not canonical["ok"]:
         raise DiagnosticInputMismatch(
             f"{DECISION_MISMATCH}: {canonical['problems']}")
-    emit("Q5-E: canonical bundle verified; measurement may begin.")
+    emit("Q5-E: canonical bundle verified.")
+
+    _terminal_execution_guard()
+
+    # ---- Everything below is the complete, already-implemented audit. ------
+    # Removing the guard above is the *only* change the execution-approval PR
+    # makes here: it must expose a finished route, never introduce scientific
+    # analysis for the first time.
+    inputs = load_all_inputs(bundle_dir, mamba_path, cache_dir, mitdb_dir,
+                             v10_source_dir, approval)
+    outcome = run_pipeline(inputs, emit=emit)
+    timestamp = run_timestamp()
+    result = build_result(
+        qa=outcome["qa"], m0=outcome["m0"], m1=outcome["m1"],
+        m2=outcome["m2"], m3=outcome["m3"], m4=outcome["m4"],
+        nulls=outcome["nulls"], tests=outcome["tests"],
+        decision=outcome["decision"], source_files=canonical["files"])
+    directory = os.path.join(out_dir, f"{timestamp}_{RUN_SLUG}")
+    write_bundle(directory, result,
+                 build_config(MODE_AUDIT, timestamp, execution_approved=True),
+                 build_manifest({"bundle": bundle_dir, "cache": cache_dir,
+                                 "mamba": mamba_path, "mitdb": mitdb_dir},
+                                timestamp),
+                 outcome["tables"], outcome["nulls"],
+                 [f"decision={result['decision']}"],
+                 summary_markdown(result),
+                 figures=True, require_complete=True)
+    emit(f"Q5-E: decision {result['decision']}")
+    return result
+
+
+def _terminal_execution_guard() -> None:
+    """The one line the execution-approval change removes.
+
+    It sits *after* every check and *before* the first registered read, so an
+    approved run reaches a complete pipeline and an unapproved one reaches
+    nothing.
+    """
     raise Q5EError(
         "run_audit is implemented but has never been executed: the separate "
         "user approval for running M0-M4 on the registered artifacts does not "
-        "exist yet.  This line is the deliberate terminal guard for the "
-        "implementation-only PR and is removed by the execution-approval "
-        "change, not by an implementer in a hurry.")
+        "exist yet.  This is the deliberate terminal guard; the "
+        "execution-approval change removes it and nothing else.")
+
+
+def run_timestamp() -> str:
+    """UTC stamp for a new bundle directory name."""
+    import datetime                                       # noqa: PLC0415
+    return datetime.datetime.now(datetime.timezone.utc).strftime(
+        "%Y%m%dT%H%M%S")
 
 
 def design_card() -> str:
