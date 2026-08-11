@@ -31,12 +31,12 @@ The registered approval chain for this substage is:
 
 1. The user approved `PREP_M4_ASSET_FREEZE`; Claude completed it read-only and
    recorded `PREP_M4_ASSET_FREEZE_PASS`, with no M0-M4 aggregation.
-2. Codex accepts that preflight, fixes decisions A-E in this file and opens a
-   PR.  **This step.**
-3. The user separately approves `PREP_M4_RR_EQUIVALENCE`; Claude runs only that
-   read-only value-identity preflight and records its result.
-4. Codex accepts that result; the user approves the completed design and
-   `status` becomes `approved_for_implementation`.
+2. Codex accepted that preflight and fixed decisions A-E.
+3. The user separately approved `PREP_M4_RR_EQUIVALENCE`; Claude completed that
+   read-only value-identity preflight as `RR_VALUE_IDENTICAL_44_OF_44`.
+4. Codex accepts that result and fixes decisions D1-D4; the user then separately
+   approves the completed design and `status` becomes
+   `approved_for_implementation`.  **This step stops before user approval.**
 5. Claude implements the frozen design on `claude/<task>` **without executing
    it**.
 6. The user separately approves execution on the registered artifacts.
@@ -273,6 +273,15 @@ bundle and which require a deterministic replay under execution approval.
    `rr[:,1]`, seconds, computed on the full matched-peak array before row
    selection, endpoints `nan -> 0.0`.  M1 and M3 use exactly this contract and
    no other.
+8. **V9/V10 RR equivalence is measured, but is not a peak-position key.**  After
+   fresh identity re-verification, the independently rebuilt V9 and V10 caches
+   carried value- and byte-identical `(n, 7) float32` `rr` arrays in all 44
+   records: 99,840 rows total (DS1 50,551; DS2 49,289), with no NaNs.  This
+   strengthens the shared-row-selection / pure-`pw`-add-on lineage claim at RR
+   value level.  It does **not** make V9 an M4 input, materialise peak positions,
+   prove absolute peak equality, or prove that the registered runtime can be
+   rebuilt now: RR contains peak differences, so a record-wise constant peak
+   translation is not formally excluded by RR equality alone.
 
 # Measurements
 
@@ -518,13 +527,16 @@ mamba/Leg 1 lineage and must never be treated as the V10 cache producer.
 The V9 constants are corroborating evidence only for M4.  Their mismatch may
 not be silently ignored, but it is reported as `CORROBORATION_MISMATCH` rather
 than repaired by substituting V9 for V10.  The separate RR-equivalence preflight
-below uses both cache trees as its own inputs.
+below used both cache trees as its own inputs.  Its 44/44 value- and byte-level
+PASS makes V9 **stronger corroboration**, but does not change this role: the
+canonical Q5-D run and M4 consume V10 positional rows, so V9 is neither an M4
+input contract nor a permitted substitute.
 
-### PREP_M4_RR_EQUIVALENCE — separate approval blocker
+### PREP_M4_RR_EQUIVALENCE — completed read-only preflight
 
-Before implementation approval, and only after separate user approval, compare
-the stored V9 and V10 `rr` arrays for all 44 records.  This is a read-only asset
-preflight, not part of M4 implementation and not an M0-M4 measurement.  It must:
+Under separate user approval, the stored V9 and V10 `rr` arrays were compared
+for all 44 records on 2026-08-12.  This was a read-only asset preflight, not part
+of M4 implementation and not an M0-M4 measurement.  Its registered rules were:
 
 1. re-verify the two cache constants above, including their exact expected sets;
 2. open only the `rr` member with `allow_pickle=False`, never `y`, probabilities
@@ -539,6 +551,16 @@ to Codex.  It does not average, tolerate, repair or select a lineage.  A PASS
 strengthens the same-row-set premise at value level; it is not evidence that
 detector peaks or the registered runtime have been reproduced.
 
+Measured verdict: **`RR_VALUE_IDENTICAL_44_OF_44`**, accepted by Codex on
+2026-08-12.  Both cache expected sets and registered aggregates passed after a
+fresh connector enumeration and 90/90 byte crosswalk; all 44 `rr` arrays were
+value-identical and byte-identical.  The aggregate equality is accepted under
+the registered SHA-256 collision-resistance contract as an attestation that the
+canonical serialization of all `(name, bytes, sha256)` triples is unchanged.
+It does not remove the standard's requirement for a fresh expected-set and
+name/size enumeration, which this preflight performed; it only makes a second
+90-row digest table in this entry redundant.
+
 ### M4.0 — feasibility gate, evaluated first
 
 All three must hold:
@@ -551,15 +573,22 @@ All three must hold:
    `p-150 >= 0` / `p+150 <= len` cut.  Keyword presence alone is insufficient;
    the checklist records function and call-site mappings.  A mismatch yields
    `M4_SOURCE_MAP_UNVERIFIED` and condition 1 fails;
-2. the required detector peak positions are obtainable **deterministically** —
-   note that neither lineage stores them (§What the bundle contains, item 6), so
-   this requires re-running the detector under the registered runtime
-   (`numpy 2.5.1`, `scipy 1.18.0`, `wfdb 4.3.1`, CPython 3.12.3), whose output
-   must be shown to reproduce the registered per-record cache counts for all 22
-   DS1 records before any anchor is used;
+2. the required detector peak positions are obtainable **under a current,
+   exact reconstruction of the registered runtime**.  The two independently
+   rebuilt historical caches produced bit-identical RR content, which is strong
+   evidence that `detect_r()` was repeatable within that historical environment
+   at the level of retained consecutive peak differences.  It is not evidence
+   that the environment can be reconstructed now, and RR equality alone does
+   not prove absolute peak equality.  Therefore neither lineage substitutes for
+   a replay: before any anchor is used, the execution must establish CPython
+   3.12.3 / numpy 2.5.1 / scipy 1.18.0 / wfdb 4.3.1 with no fallback, re-run the
+   detector on all 22 DS1 records, reproduce every registered per-record cache
+   count 22/22, and reproduce the frozen V10 `rr` arrays exactly under the
+   registered value rule.  Any failure makes condition 2 false;
 3. the V10 source and V10 cache equal the two **M4 input-contract** identities
-   above and `PREP_M4_RR_EQUIVALENCE` has passed.  A path or filename without
-   its registered digest is insufficient.  V9 is never substituted for V10.
+   above and the accepted `PREP_M4_RR_EQUIVALENCE` verdict is
+   `RR_VALUE_IDENTICAL_44_OF_44`.  A path or filename without its registered
+   digest is insufficient.  V9 is never substituted for V10.
 
 If any of the three fails:
 
@@ -933,7 +962,8 @@ Evaluated in order; exactly one branch is reached.
    and then by branch 2, not silently reclassified here.
 2. **`MECHANISM_UNRESOLVED_INPUT_ABSENT`** — QA passes but M4.0 fails, including
    `M4_SOURCE_MAP_UNVERIFIED`, an unavailable exact registered runtime, or a
-   22/22 detector-count reproduction failure, so H2 and H3 cannot be evaluated.
+   22/22 detector-count or frozen-V10-RR reproduction failure, so H2 and H3
+   cannot be evaluated.
    M0-M3 are reported as **diagnostic partial results**;
    `H1_ASSOCIATED` and `H4_ASSOCIATED` may be computed and reported but are
    **not** promoted to a terminal mechanism verdict.  Their reported adjustment
@@ -1091,11 +1121,11 @@ names:
 
 ## Files allowed to change
 
-During the current design task, **only this file**.  A later, separately
-approved `PREP_M4_ASSET_FREEZE` intake may change only `research/ASSETS.md` and
-this spec's checklist/Decision log; it may not add analysis code or outputs.
+During the current design task, this file; a factual correction to the already
+updated cache rows in `research/ASSETS.md` is also allowed.  No analysis code or
+output is added.
 
-After the completed design approval (step 3), implementation is limited to:
+After the completed design approval (step 4), implementation is limited to:
 
 - this spec's `status`, checklist and Decision log;
 - `mit-bih/q5e_leg2_failure_mechanism_audit.py`;
@@ -1122,22 +1152,22 @@ CSVs above, `null_summary.json`, the seven figures, `log.txt`, `summary.md`.
 
 # Approval boundary
 
-**This step:** write this spec and open the PR.  `status` stays `draft`.  No
-code, no notebook, no Drive per-beat analysis, no M0 aggregation, no raw ECG or
-detector execution.  After the PR, **STOP** and wait for the user.
+**This step:** accept the RR-equivalence result, resolve D1-D4, update this spec
+and open the PR.  `status` stays `draft`.  No code, no notebook, no Drive
+per-beat analysis, no M0 aggregation, no raw ECG or detector execution.  After
+the PR, **STOP** and wait for the user.
 
 **Everything after is separate and sequential:**
 
-1. user approves the read-only `PREP_M4_RR_EQUIVALENCE` preflight;
-2. Claude performs only that preflight and records its result;
-3. Codex accepts the result and the user approves the completed spec;
-4. `status` becomes `approved_for_implementation`;
-5. Claude Code opens an implementation PR (code only, not executed);
-6. user separately approves execution;
-7. M0-M4 run;
-8. a new timestamped Drive bundle is written;
-9. the executed notebook is committed and the run ingested;
-10. Codex performs result acceptance.
+1. user approves the completed spec;
+2. `status` becomes `approved_for_implementation` in a separately reviewed
+   change;
+3. Claude Code opens an implementation PR (code only, not executed);
+4. user separately approves execution;
+5. M0-M4 run, with M4.0 condition 2 evaluated before any anchor;
+6. a new timestamped Drive bundle is written;
+7. the executed notebook is committed and the run ingested;
+8. Codex performs result acceptance.
 
 # Implementation checklist
 
@@ -1152,6 +1182,10 @@ detector execution.  After the PR, **STOP** and wait for the user.
 - [x] The value-level RR preflight returns `RR_VALUE_IDENTICAL_44_OF_44`, or
       `V9_V10_RR_LINEAGE_DIVERGED` returns the draft to Codex
       — **`RR_VALUE_IDENTICAL_44_OF_44`, 2026-08-12** (Decision log below)
+- [x] Codex accepts `RR_VALUE_IDENTICAL_44_OF_44` and resolves D1-D4 without
+      executing any diagnostic measurement
+- [x] All pre-implementation scientific and provenance blockers are closed;
+      M4.0 condition 2 remains an execution-stage feasibility gate
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
@@ -1160,7 +1194,8 @@ detector execution.  After the PR, **STOP** and wait for the user.
 - [ ] M3 graph reconstruction reproduces the bundle partition exactly
 - [ ] Static source-map verification passes against the frozen V10
       `frontend.py` and `data.py` hashes before any detector call
-- [ ] M4 feasibility gate evaluated before any anchor is used
+- [ ] M4 feasibility gate evaluates exact runtime, 22/22 counts and frozen V10
+      RR equality before any anchor is used
 - [ ] The complete M0-M4 plan is unchanged from this document at run time
 - [ ] All three controls run at 10,000 replicates under seed `2026019`
 - [ ] Control B uses one joint categorical permutation per `record x side`
@@ -1809,3 +1844,76 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
 
 44/44 value_identical · 44/44 byte_identical · NaN 0 · DS1 50,551 · DS2 49,289 · total 99,840
 ```
+
+- 2026-08-12 — **Codex acceptance of `RR_VALUE_IDENTICAL_44_OF_44` and
+  decisions D1-D4.  Design only; no M0-M4 aggregation, detector replay, join
+  replay or sealed-value access.  Status remains `draft`.**
+
+  **D1 — accept the preflight.**  The dual-attestation contract was followed:
+  both registered folder IDs and exact 45-file expected sets were freshly
+  enumerated on 2026-08-12, the connector and mounted views agreed on byte size
+  90/90, and both mounted per-file triple sets independently reproduced their
+  registered aggregates.  The exact comparison rule was the preregistered
+  `(a == b) | (isnan(a) & isnan(b))`; no tolerance, rounding, averaging,
+  repair or lineage selection occurred.  Under the registered SHA-256
+  collision-resistance contract, aggregate equality is accepted as identity of
+  the canonical serialization of every `(name, bytes, sha256)` triple.  A
+  second 90-row digest table is unnecessary, but fresh expected-set and
+  name/size enumeration remains mandatory and was performed; aggregate equality
+  cannot replace that part of the dual-attestation standard.
+
+  **D2 — promote the value-level evidence without promoting V9 to an input.**
+  §"What the canonical bundle does and does not contain" now records the
+  44/44, 99,840-row value- and byte-level RR equality, split totals, dtype and
+  NaN result.  The frozen-constants section records that this makes V9 stronger
+  corroborating rebuild evidence.  V9 remains non-decisional corroboration:
+  Q5-D and M4 consume V10 positional rows, and V9 may never substitute for the
+  V10 input contract.
+
+  **Interpretation correction required by the registered limit.**  The earlier
+  preflight entry says bit-identical RR is "what a divergent [row selection]
+  could not produce."  Read literally, that is too strong.  RR stores peak
+  differences; a record-wise constant translation leaves it invariant, and
+  repeated RR patterns can make different absolute peak assignments
+  observationally equivalent in RR space.  Counts and boundary retention make
+  such alternatives less plausible but do not formally prove absolute peak
+  equality.  The accepted claim is therefore strong evidence for shared row
+  selection and historical repeatability at retained RR-difference level, not
+  proof of absolute detector positions.
+
+  **D3 — option (c), operationally the implementation path of (a); no fourth
+  preflight.**  Condition 2 is clarified, not closed.  The two independent
+  historical rebuilds show that the detector/preprocessing lineage was
+  repeatable in its original environment at RR-difference level.  They do not
+  show that the exact runtime can be installed now.  Implementation may be
+  approved without another probe because M4.0 already provides a terminal,
+  non-repairing failure path and the full replay costs minutes.  An
+  install-only probe would not test peak reproduction; a one-record detector
+  probe would consume another approval while failing to establish the required
+  22-record contract.  At separately approved execution, condition 2 therefore
+  requires the exact registered runtime, detector replay over all 22 DS1
+  records, count equality 22/22 and exact reproduction of the frozen V10 RR
+  arrays before any anchor.  Failure is `DIAGNOSTIC_INPUT_ABSENT`, leaves H2/H3
+  `UNEVALUABLE` and reaches `MECHANISM_UNRESOLVED_INPUT_ABSENT`; no fallback
+  runtime, approximate match or post-hoc repair is allowed.
+
+  **D4 — no additional scientific or provenance blocker remains before user
+  implementation approval.**  The full-body audit found Q1 reflected in M0.4,
+  M0.5, M2, M4.1, the H1/H3 flags, visualization and result schema; Q2 in the
+  joint Control B definition; Q3 in four-family Holm and the partial-result
+  branch; Q4 in the cache-side certified partition; and Q5 in both observed and
+  null distance exclusions.  The four frozen aggregates, 104 per-file hashes,
+  44/44 shape/meta result and 44/44 RR result are consistent between the body,
+  checklist and Decision log.  The decision tree remains mutually exhaustive:
+  input mismatch; M4 unavailable; two-or-more, exactly-one, or zero associated
+  mechanisms.  The mandatory `NO_REGISTERED_MECHANISM_ASSOCIATED` branch is
+  intact.  Two documentary residuals were closed in this PR: the approval chain
+  no longer asks to repeat the completed RR preflight, and `ASSETS.md` no longer
+  ends the V9 cache row with the stale claim that no NPZ was opened.
+
+  **Next step.**  Merge this PR after review.  The user may then approve the
+  completed draft; only a separate reviewed change may set
+  `status: approved_for_implementation`.  Claude may then implement without
+  execution.  M0-M4 execution still requires a later, separate user approval,
+  and every DS2-label, V10-probability, association, S-PR-AUC and training seal
+  remains closed.
