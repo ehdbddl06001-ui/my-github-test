@@ -1148,9 +1148,10 @@ detector execution.  After the PR, **STOP** and wait for the user.
       — **`PREP_M4_ASSET_FREEZE_PASS`, 2026-08-11** (Decision log below)
 - [x] Codex accepts `PREP_M4_ASSET_FREEZE` and resolves A-E without executing
       any diagnostic measurement
-- [ ] User separately approves `PREP_M4_RR_EQUIVALENCE`
-- [ ] The value-level RR preflight returns `RR_VALUE_IDENTICAL_44_OF_44`, or
+- [x] User separately approves `PREP_M4_RR_EQUIVALENCE`
+- [x] The value-level RR preflight returns `RR_VALUE_IDENTICAL_44_OF_44`, or
       `V9_V10_RR_LINEAGE_DIVERGED` returns the draft to Codex
+      — **`RR_VALUE_IDENTICAL_44_OF_44`, 2026-08-12** (Decision log below)
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
@@ -1676,3 +1677,135 @@ ec5efe7ba37aebe3c0772dd22ef9c101cbf3607db27aa2a56654c255b80021e3       1938  met
   preflight.  Codex accepts its result before the user may promote this spec.
   Implementation approval, M0-M4 execution approval and every sealed analysis
   remain later, separate decisions.
+
+- 2026-08-12 — **`RR_VALUE_IDENTICAL_44_OF_44`.  Read-only value-level RR
+  equivalence; no detector replay, no M0-M4 aggregation, no implementation.**
+
+  *Scope and authority.*  The user separately approved the read-only
+  `PREP_M4_RR_EQUIVALENCE` scope only.  This is not implementation approval and
+  not M0-M4 execution approval; `status` stays `draft`.  Gate checked first:
+  PR #105 merged to `main` at `7c664ab`, carrying the frozen M4 identity
+  constants, the `PREP_M4_RR_EQUIVALENCE` section and the dual-attestation
+  standard this run follows.
+
+  *Measurement split, per the registered dual-attestation standard.*  Drive
+  folder IDs, expected-set membership and per-file byte sizes were **re-enumerated
+  fresh** by Claude Code through the connector on 2026-08-12; the 2026-08-11
+  listing was **not** inherited, as the standard requires.  Per-file SHA-256,
+  aggregates and the `rr` arrays were read by the user in Colab with Drive
+  mounted, because this container still cannot stream 334,932,996 B.  The two
+  halves are bound by measurement: **45/45 byte sizes agree in each cache
+  (90/90 overall)**, and both aggregates were **independently recomputed here**
+  from their own `(name, bytes, sha256)` triples through `hash_file_set()`'s
+  canonical fold.
+
+  *Gate 1 — cache identity, re-verified before any array was read.*
+
+  | cache | Drive ID | files | missing / extra | bytes | aggregate |
+  |---|---|---|---|---|---|
+  | V9 | `1TXLX14RHA5u1dIUiYt36k2dcT5lpm5RY` | 45/45 | 0 / 0 | 167,064,378 | `25cd7952…` **= registered** |
+  | V10 | `1I6iugsrHwJjjpLVS8TVp-aDkVwpdmJxF` | 45/45 | 0 / 0 | 167,868,618 | `82b9a593…` **= registered** |
+
+  Both equal the constants in §"Frozen M4 identity constants".  Because the
+  aggregate is a canonical fold over **every** `(name, bytes, sha256)` triple,
+  this equality also proves that **all 90 per-file digests are unchanged since
+  the 2026-08-11 freeze manifest** — no file needed re-listing to establish it.
+
+  *Gate 2 — `rr` value comparison, 44 records.*  Each record NPZ was opened with
+  `allow_pickle=False` and **only the `rr` member was materialised**; `y` was
+  never indexed.  Record name sets are identical, every array is `(n, 7)`
+  `float32`, and every `n` equals both `meta.json[n]` and the frozen ledger's
+  `cache_n`.  Value comparison was exact — `(a == b) | (isnan(a) & isnan(b))` —
+  with no tolerance, rounding, averaging, repair or lineage selection anywhere.
+
+  **Result: 44 of 44 records value-identical.  `first_mismatch` is null.**
+  Split totals from the compared records reproduce DS1 50,551 · DS2 49,289 ·
+  total 99,840.
+
+  *Two facts stronger than the registered criterion, recorded but not used to
+  decide.*
+
+  1. **All 44 records are byte-identical at the `rr` array level**, not merely
+     value-identical.  The registered verdict rests on value identity; byte
+     identity is reported as a strictly stronger observation.
+  2. **No NaN appears in any `rr` array in either lineage** (0/0 in all 44
+     records), so the paired-NaN clause never fired.  This is consistent with
+     `rr_features` applying `nan_to_num`: the endpoint "no neighbour" marker is
+     a stored literal `0.0`, not a NaN — the same reading already registered in
+     §"What the canonical bundle does and does not contain" item 7 and in Q5.
+
+  *What this establishes.*  The lineage claim that V10 is a pure `pw` add-on
+  over V9's row selection is now supported **at value level**, not only by
+  counts and structure.  Previously the evidence was byte-identical `meta.json`,
+  44/44 `rr.shape`, a single added NPZ member, and a byte-identical
+  `frontend.py`.  Two independently rebuilt caches now carry bit-for-bit
+  identical RR content for all 99,840 rows, which is what a shared row selection
+  predicts and what a divergent one could not produce.
+
+  *What it does not establish.*  It is not evidence that detector peaks were
+  reproduced, that the registered runtime can be installed, or that M4 is
+  feasible.  **M4.0 condition 2 remains unsatisfied** and is untouched by this
+  preflight.  The measurement environment was Colab `python 3.12.13 /
+  numpy 2.0.2`, again **not** the registered `CPython 3.12.3 / numpy 2.5.1 /
+  scipy 1.18.0 / wfdb 4.3.1`; that is irrelevant to SHA-256 and to reading
+  stored arrays, and the runtime contract already says so.
+
+  *Seals.*  `y` never read, DS2 per-beat labels never opened, no V10
+  probability, no association, no S PR-AUC, no training, `detect_r()` not
+  called, beat join not re-run, no Drive file created, modified, moved or
+  deleted, and `mit-bih/q5d_order_preserving_beat_join.py` imported read-only
+  and unmodified.
+
+  **PREP 통과는 EXP-2026-008 구현 승인 또는 M0-M4 실행 승인이 아니다.**
+
+  *Per-record result (44/44).*
+
+```text
+record  split     n  shape      dtype     value_identical  byte_identical  nan
+   100  DS2   2271  (n, 7)     float32   True             True            0/0
+   101  DS1   1862  (n, 7)     float32   True             True            0/0
+   103  DS2   2083  (n, 7)     float32   True             True            0/0
+   105  DS2   2566  (n, 7)     float32   True             True            0/0
+   106  DS1   2027  (n, 7)     float32   True             True            0/0
+   108  DS1   1759  (n, 7)     float32   True             True            0/0
+   109  DS1   2528  (n, 7)     float32   True             True            0/0
+   111  DS2   2123  (n, 7)     float32   True             True            0/0
+   112  DS1   2537  (n, 7)     float32   True             True            0/0
+   113  DS2   1794  (n, 7)     float32   True             True            0/0
+   114  DS1   1875  (n, 7)     float32   True             True            0/0
+   115  DS1   1952  (n, 7)     float32   True             True            0/0
+   116  DS1   2397  (n, 7)     float32   True             True            0/0
+   117  DS2   1534  (n, 7)     float32   True             True            0/0
+   118  DS1   2277  (n, 7)     float32   True             True            0/0
+   119  DS1   1987  (n, 7)     float32   True             True            0/0
+   121  DS2   1862  (n, 7)     float32   True             True            0/0
+   122  DS1   2474  (n, 7)     float32   True             True            0/0
+   123  DS2   1517  (n, 7)     float32   True             True            0/0
+   124  DS1   1613  (n, 7)     float32   True             True            0/0
+   200  DS2   2598  (n, 7)     float32   True             True            0/0
+   201  DS1   1961  (n, 7)     float32   True             True            0/0
+   202  DS2   2134  (n, 7)     float32   True             True            0/0
+   203  DS1   2972  (n, 7)     float32   True             True            0/0
+   205  DS1   2644  (n, 7)     float32   True             True            0/0
+   207  DS1   1859  (n, 7)     float32   True             True            0/0
+   208  DS1   2572  (n, 7)     float32   True             True            0/0
+   209  DS1   3004  (n, 7)     float32   True             True            0/0
+   210  DS2   2638  (n, 7)     float32   True             True            0/0
+   212  DS2   2747  (n, 7)     float32   True             True            0/0
+   213  DS2   2887  (n, 7)     float32   True             True            0/0
+   214  DS2   2257  (n, 7)     float32   True             True            0/0
+   215  DS1   3360  (n, 7)     float32   True             True            0/0
+   219  DS2   2153  (n, 7)     float32   True             True            0/0
+   220  DS1   2046  (n, 7)     float32   True             True            0/0
+   221  DS2   2427  (n, 7)     float32   True             True            0/0
+   222  DS2   2477  (n, 7)     float32   True             True            0/0
+   223  DS1   2590  (n, 7)     float32   True             True            0/0
+   228  DS2   2053  (n, 7)     float32   True             True            0/0
+   230  DS1   2255  (n, 7)     float32   True             True            0/0
+   231  DS2   1570  (n, 7)     float32   True             True            0/0
+   232  DS2   1780  (n, 7)     float32   True             True            0/0
+   233  DS2   3066  (n, 7)     float32   True             True            0/0
+   234  DS2   2752  (n, 7)     float32   True             True            0/0
+
+44/44 value_identical · 44/44 byte_identical · NaN 0 · DS1 50,551 · DS2 49,289 · total 99,840
+```
