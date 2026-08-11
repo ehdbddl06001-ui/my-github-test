@@ -1,39 +1,39 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-10",
+ "generated": "2026-08-11",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 739,
+  "total": 779,
   "byType": {
+   "kmle": 523,
    "usmle": 60,
-   "kmle": 491,
-   "paper": 171,
+   "paper": 179,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 75,
-   "Nephrology": 53,
-   "Infectious Disease": 51,
-   "Pediatrics": 49,
-   "Obstetrics & Gynecology": 35,
-   "Neurology": 34,
-   "Psychiatry": 34,
-   "Endocrinology": 32,
-   "Gastroenterology": 31,
-   "Pulmonology": 31,
-   "Dermatology": 30,
-   "General Surgery": 30,
-   "Ophthalmology": 30,
-   "Orthopedics": 30,
-   "Rheumatology": 30,
-   "Hematology": 29,
-   "Surgery": 28,
-   "Pathology": 24,
-   "Laboratory Medicine": 22,
-   "Hematology-Oncology": 17,
+   "Cardiology": 78,
+   "Nephrology": 56,
+   "Infectious Disease": 54,
+   "Pediatrics": 52,
+   "Obstetrics & Gynecology": 37,
+   "Neurology": 36,
+   "Psychiatry": 36,
+   "Endocrinology": 34,
+   "Gastroenterology": 33,
+   "Pulmonology": 33,
+   "Dermatology": 32,
+   "General Surgery": 32,
+   "Ophthalmology": 32,
+   "Orthopedics": 32,
+   "Rheumatology": 32,
+   "Hematology": 31,
+   "Surgery": 29,
+   "Pathology": 25,
+   "Laboratory Medicine": 23,
+   "Hematology-Oncology": 18,
    "Physiology": 7,
    "Microbiology": 5,
    "Biochemistry": 4,
@@ -51,12 +51,584 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 562,
-   "medium": 177
+   "high": 594,
+   "medium": 185
   },
-  "tagCount": 1745
+  "tagCount": 1822
  },
  "docs": [
+  {
+   "id": "kmle-2026-0553",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Eosinophilic Granulomatosis with Polyangiitis",
+   "tags": [
+    "EGPA",
+    "churg-strauss",
+    "asthma",
+    "mononeuritis-multiplex",
+    "eosinophilia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0553.md",
+   "snippet": "48세 남자가 몇 달째 발열·체중감소와 함께 한쪽 발이 처지고 손발이 저려 왔다. 수년 전부터 성인에 생긴 천식과 알레르기비염으로 치료 중이다. 진찰에서 손과 발의 서로 다른 신경 지배 영역에 운동·감각장애가 흩어져 있다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 결절다발동맥염 B. 호산구육아종증다발혈관염 C. 육아종증다발혈관염 D. 현미경다발혈관염 E. 만성 호산구폐렴 성인 발병 천식·알레르기 배경",
+   "text": "Rheumatology Eosinophilic Granulomatosis with Polyangiitis EGPA churg-strauss asthma mononeuritis-multiplex eosinophilia KMLE 2026 / Claude Routine 48세 남자가 몇 달째 발열·체중감소와 함께 한쪽 발이 처지고 손발이 저려 왔다. 수년 전부터 성인에 생긴 천식과 알레르기비염으로 치료 중이다. 진찰에서 손과 발의 서로 다른 신경 지배 영역에 운동·감각장애가 흩어져 있다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 결절다발동맥염 B. 호산구육아종증다발혈관염 C. 육아종증다발혈관염 D. 현미경다발혈관염 E. 만성 호산구폐렴 성인 발병 천식·알레르기 배경에 현저한 말초 호산구증가, 다발단신경병증, 이동성 폐침윤이 함께 있으면 호산구육아종증다발혈관염(처그 스트라우스)이다. 절반 정도에서 p ANCA가 양성이다."
+  },
+  {
+   "id": "kmle-2026-0552",
+   "type": "kmle",
+   "topic": "Rheumatology",
+   "subtopic": "Takayasu Arteritis",
+   "tags": [
+    "takayasu-arteritis",
+    "large-vessel-vasculitis",
+    "pulseless-disease",
+    "bruit"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0552.md",
+   "snippet": "29세 여자가 몇 달째 팔을 쓰면 무겁고 저리며 어지럽다고 왔다. 미열과 체중감소도 있었다. 진찰에서 한쪽 팔의 맥박이 약하고 양팔 혈압 차이가 크며 쇄골 부위에서 잡음이 들린다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 거대세포동맥염 B. 결절다발동맥염 C. 폐색혈전혈관염 D. 섬유근형성이상 E. 다카야스동맥염 젊은 여성의 팔 파행·어지럼에 양팔 혈압 차이·한쪽 맥박 약화·쇄골밑 잡음과 염증표지자 ",
+   "text": "Rheumatology Takayasu Arteritis takayasu-arteritis large-vessel-vasculitis pulseless-disease bruit KMLE 2026 / Claude Routine 29세 여자가 몇 달째 팔을 쓰면 무겁고 저리며 어지럽다고 왔다. 미열과 체중감소도 있었다. 진찰에서 한쪽 팔의 맥박이 약하고 양팔 혈압 차이가 크며 쇄골 부위에서 잡음이 들린다. 활력징후·검사 소견은 자료와 같다. 가장 가능성 높은 진단은? A. 거대세포동맥염 B. 결절다발동맥염 C. 폐색혈전혈관염 D. 섬유근형성이상 E. 다카야스동맥염 젊은 여성의 팔 파행·어지럼에 양팔 혈압 차이·한쪽 맥박 약화·쇄골밑 잡음과 염증표지자 상승이 동반되면 대동맥과 그 큰 분지를 침범하는 다카야스동맥염이다. '맥 없는 병'으로도 불린다."
+  },
+  {
+   "id": "kmle-2026-0551",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Lung Abscess",
+   "tags": [
+    "lung-abscess",
+    "aspiration",
+    "anaerobes",
+    "cavitary-lesion"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0551.md",
+   "snippet": "54세 남자가 3주에 걸쳐 서서히 심해진 발열·기침과 체중감소로 왔다. 알코올 의존으로 술에 취해 의식을 잃은 적이 잦고, 최근 냄새가 심한 가래를 뱉는다. 진찰에서 치아 상태가 나쁘고 한쪽 폐에서 거친 소리가 들린다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경험적 항결핵제를 시작한다 B. 항진균제를 투여한다 C. 흉관을 삽입한다 D. 혐기균을 포함한 항생제를 투여한다 E. 즉시 폐엽절제술을 시행한다 흡",
+   "text": "Pulmonology Lung Abscess lung-abscess aspiration anaerobes cavitary-lesion KMLE 2026 / Claude Routine 54세 남자가 3주에 걸쳐 서서히 심해진 발열·기침과 체중감소로 왔다. 알코올 의존으로 술에 취해 의식을 잃은 적이 잦고, 최근 냄새가 심한 가래를 뱉는다. 진찰에서 치아 상태가 나쁘고 한쪽 폐에서 거친 소리가 들린다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경험적 항결핵제를 시작한다 B. 항진균제를 투여한다 C. 흉관을 삽입한다 D. 혐기균을 포함한 항생제를 투여한다 E. 즉시 폐엽절제술을 시행한다 흡인 위험(알코올·의식소실)에 아급성 발열·악취 가래·공기 액체층 공동은 혐기균이 흔한 원인인 폐농양이다. 대부분 혐기균을 포함한 장기 항생제(예: 앰피실린 설박탐, 클린다마이신)로 치료되며 수술은 반응이 없을 때 고려한다."
+  },
+  {
+   "id": "kmle-2026-0550",
+   "type": "kmle",
+   "topic": "Pulmonology",
+   "subtopic": "Carbon Monoxide Poisoning",
+   "tags": [
+    "carbon-monoxide",
+    "carboxyhemoglobin",
+    "oxygen-therapy",
+    "pulse-oximetry-pitfall"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0550.md",
+   "snippet": "42세 남자가 한겨울 밀폐된 방에서 난방기를 켜고 잔 뒤 두통·어지럼·구역과 함께 처지는 의식으로 왔다. 같은 방에 있던 가족도 비슷한 증상을 호소한다. 맥박산소포화도는 정상으로 나온다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경험적 항생제를 투여한다 B. 실내 공기로 경과를 관찰한다 C. 100% 산소를 투여한다 D. 기관지확장제를 흡입시킨다 E. 이뇨제를 정맥 투여한다 밀폐공간 난방·동반 발병·두통·",
+   "text": "Pulmonology Carbon Monoxide Poisoning carbon-monoxide carboxyhemoglobin oxygen-therapy pulse-oximetry-pitfall KMLE 2026 / Claude Routine 42세 남자가 한겨울 밀폐된 방에서 난방기를 켜고 잔 뒤 두통·어지럼·구역과 함께 처지는 의식으로 왔다. 같은 방에 있던 가족도 비슷한 증상을 호소한다. 맥박산소포화도는 정상으로 나온다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경험적 항생제를 투여한다 B. 실내 공기로 경과를 관찰한다 C. 100% 산소를 투여한다 D. 기관지확장제를 흡입시킨다 E. 이뇨제를 정맥 투여한다 밀폐공간 난방·동반 발병·두통·의식저하에 맥박산소포화도는 정상인데 일산화탄소혈색소가 높으면 일산화탄소 중독이다. 일산화탄소의 반감기를 줄이기 위해 즉시 비재호흡마스크로 100% 산소를 투여하고, 의식소실·심근허혈·임신 등에서는 고압산소를 고려한다."
+  },
+  {
+   "id": "kmle-2026-0549",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Catatonia",
+   "tags": [
+    "catatonia",
+    "lorazepam-challenge",
+    "mutism",
+    "waxy-flexibility"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0549.md",
+   "snippet": "28세 여자가 며칠째 말을 하지 않고 먹지도 않으며 같은 자세로 굳어 있어 실려 왔다. 진찰에서 팔을 들어 올려 놓으면 그 자세를 오래 유지하고, 지시에 반응하지 않으며 저항한다. 발열은 없다. 활력징후·검사 소견은 자료와 같다. 진단과 치료를 겸해 가장 먼저 시도할 처치는? A. 로라제팜을 투여한다 B. 할로페리돌을 투여한다 C. 리튬을 투여한다 D. 경험적 항생제를 투여한다 E. 정신자극제를 투여한다 함구·강직·자세유지(납",
+   "text": "Psychiatry Catatonia catatonia lorazepam-challenge mutism waxy-flexibility KMLE 2026 / Claude Routine 28세 여자가 며칠째 말을 하지 않고 먹지도 않으며 같은 자세로 굳어 있어 실려 왔다. 진찰에서 팔을 들어 올려 놓으면 그 자세를 오래 유지하고, 지시에 반응하지 않으며 저항한다. 발열은 없다. 활력징후·검사 소견은 자료와 같다. 진단과 치료를 겸해 가장 먼저 시도할 처치는? A. 로라제팜을 투여한다 B. 할로페리돌을 투여한다 C. 리튬을 투여한다 D. 경험적 항생제를 투여한다 E. 정신자극제를 투여한다 함구·강직·자세유지(납굴증)·거부증에 발열이 없으면 긴장증이다. 벤조디아제핀(로라제팜)이 진단적이자 치료적 1차 시도로, 투여 후 증상이 풀리면 진단을 확인하고 치료를 이어간다. 반응이 없으면 전기경련요법을 고려한다."
+  },
+  {
+   "id": "kmle-2026-0548",
+   "type": "kmle",
+   "topic": "Psychiatry",
+   "subtopic": "Acute Dystonic Reaction",
+   "tags": [
+    "acute-dystonia",
+    "extrapyramidal",
+    "anticholinergic",
+    "antipsychotic"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0548.md",
+   "snippet": "22세 남자가 조현병으로 항정신병약을 시작하고 이틀 뒤 목이 한쪽으로 뒤틀리고 눈이 위로 돌아가며 혀가 뻣뻣해져 응급실에 왔다. 의식은 또렷하고 발열은 없다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 체온을 낮추는 냉각요법을 한다 B. 항콜린제를 투여한다 C. 항정신병약을 증량한다 D. 벤조디아제핀을 정맥 투여한다 E. 단트롤렌을 투여한다 항정신병약 시작 며칠 안에 발열 없이 명료한 의식으로 목·눈·혀의 ",
+   "text": "Psychiatry Acute Dystonic Reaction acute-dystonia extrapyramidal anticholinergic antipsychotic KMLE 2026 / Claude Routine 22세 남자가 조현병으로 항정신병약을 시작하고 이틀 뒤 목이 한쪽으로 뒤틀리고 눈이 위로 돌아가며 혀가 뻣뻣해져 응급실에 왔다. 의식은 또렷하고 발열은 없다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 체온을 낮추는 냉각요법을 한다 B. 항콜린제를 투여한다 C. 항정신병약을 증량한다 D. 벤조디아제핀을 정맥 투여한다 E. 단트롤렌을 투여한다 항정신병약 시작 며칠 안에 발열 없이 명료한 의식으로 목·눈·혀의 지속적 근긴장이상이 나타나면 급성 근긴장이상반응이다. 도파민 아세틸콜린 균형이 깨진 것이므로, 항콜린제(벤즈트로핀)나 항히스타민(디펜히드라민)으로 빠르게 호전시킨다."
+  },
+  {
+   "id": "kmle-2026-0547",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Reye Syndrome",
+   "tags": [
+    "reye-syndrome",
+    "aspirin",
+    "hyperammonemia",
+    "encephalopathy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0547.md",
+   "snippet": "6세 남자아이가 최근 수두를 앓는 동안 열 때문에 약을 먹었고, 회복될 무렵부터 반복 구토와 점점 처지는 의식으로 왔다. 진찰에서 간이 커져 있으나 황달은 없다. 활력징후·검사 소견은 자료와 같다. 이 상황의 원인으로 가장 관련 깊은 것은? A. 아세트아미노펜 복용 B. 항생제 알레르기 C. 세균성 뇌수막염 D. 선천 요소회로 대사이상 E. 아스피린 복용 수두·인플루엔자 같은 바이러스 감염 회복기에 반복 구토·급성 뇌병증·간효",
+   "text": "Pediatrics Reye Syndrome reye-syndrome aspirin hyperammonemia encephalopathy KMLE 2026 / Claude Routine 6세 남자아이가 최근 수두를 앓는 동안 열 때문에 약을 먹었고, 회복될 무렵부터 반복 구토와 점점 처지는 의식으로 왔다. 진찰에서 간이 커져 있으나 황달은 없다. 활력징후·검사 소견은 자료와 같다. 이 상황의 원인으로 가장 관련 깊은 것은? A. 아세트아미노펜 복용 B. 항생제 알레르기 C. 세균성 뇌수막염 D. 선천 요소회로 대사이상 E. 아스피린 복용 수두·인플루엔자 같은 바이러스 감염 회복기에 반복 구토·급성 뇌병증·간효소 상승·고암모니아혈증이 있는데 황달이 없으면 라이증후군이다. 소아에서 살리실산(아스피린) 사용이 대표적 유발 인자로, 미토콘드리아 기능장애를 통해 간·뇌를 침범한다."
+  },
+  {
+   "id": "kmle-2026-0546",
+   "type": "kmle",
+   "topic": "Pediatrics",
+   "subtopic": "Testicular Torsion",
+   "tags": [
+    "testicular-torsion",
+    "acute-scrotum",
+    "surgical-exploration",
+    "adolescent"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0546.md",
+   "snippet": "14세 남자아이가 두 시간 전 갑자기 시작된 한쪽 음낭의 심한 통증과 구토로 왔다. 진찰에서 해당 고환이 위로 올라가 있고 몹시 붓고 압통이 심하며 들어 올려도 통증이 줄지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 음낭 초음파 결과를 기다린다 B. 진통제를 주고 귀가시킨다 C. 온찜질 후 다음 날 재평가한다 D. 응급 수술적 탐색을 시행한다 E. 항생제를 투여하고 관찰한다 청소년의 갑작스런 심한 ",
+   "text": "Pediatrics Testicular Torsion testicular-torsion acute-scrotum surgical-exploration adolescent KMLE 2026 / Claude Routine 14세 남자아이가 두 시간 전 갑자기 시작된 한쪽 음낭의 심한 통증과 구토로 왔다. 진찰에서 해당 고환이 위로 올라가 있고 몹시 붓고 압통이 심하며 들어 올려도 통증이 줄지 않는다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 음낭 초음파 결과를 기다린다 B. 진통제를 주고 귀가시킨다 C. 온찜질 후 다음 날 재평가한다 D. 응급 수술적 탐색을 시행한다 E. 항생제를 투여하고 관찰한다 청소년의 갑작스런 심한 음낭통·구토에 고환 거상·거상반사 소실이 있으면 고환꼬임이다. 6시간을 넘기면 고환 생존율이 급락하므로, 전형적이면 영상 확인을 기다리지 말고 즉시 응급 수술로 풀고 양측을 고정한다."
+  },
+  {
+   "id": "kmle-2026-0545",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Supracondylar Humeral Fracture",
+   "tags": [
+    "supracondylar-fracture",
+    "brachial-artery",
+    "pediatric",
+    "emergency-reduction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0545.md",
+   "snippet": "7세 남자아이가 놀이터에서 팔을 편 채로 넘어진 뒤 팔꿈치 통증과 부종으로 왔다. 진찰에서 팔꿈치가 심하게 붓고 손목의 맥박이 약하며 손끝이 창백하고 손가락 감각이 둔하다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 물리치료를 바로 시작한다 B. 진통제만 주고 귀가시킨다 C. 응급 도수정복과 고정을 시행한다 D. 단순 팔걸이로 경과를 관찰한다 E. 온찜질 후 다음 날 재평가한다 소아가 팔을 편 채 넘어진 뒤",
+   "text": "Orthopedics Supracondylar Humeral Fracture supracondylar-fracture brachial-artery pediatric emergency-reduction KMLE 2026 / Claude Routine 7세 남자아이가 놀이터에서 팔을 편 채로 넘어진 뒤 팔꿈치 통증과 부종으로 왔다. 진찰에서 팔꿈치가 심하게 붓고 손목의 맥박이 약하며 손끝이 창백하고 손가락 감각이 둔하다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 물리치료를 바로 시작한다 B. 진통제만 주고 귀가시킨다 C. 응급 도수정복과 고정을 시행한다 D. 단순 팔걸이로 경과를 관찰한다 E. 온찜질 후 다음 날 재평가한다 소아가 팔을 편 채 넘어진 뒤의 팔꿈치 골절에 약한 노동맥박동·지연된 모세혈관재충혈·정중신경 감각저하가 동반되면 혈관·신경 손상을 동반한 상완골 과상부 골절이다. 팔꿈치를 위협하는 응급이므로 즉시 정복·고정으로 신경혈관 압박을 풀어야 한다."
+  },
+  {
+   "id": "kmle-2026-0544",
+   "type": "kmle",
+   "topic": "Orthopedics",
+   "subtopic": "Unstable Pelvic Ring Fracture",
+   "tags": [
+    "pelvic-fracture",
+    "hemorrhagic-shock",
+    "pelvic-binder",
+    "trauma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0544.md",
+   "snippet": "28세 남자가 오토바이 고속 충돌 후 이송되었다. 골반을 앞뒤로 눌렀을 때 불안정하게 벌어지고 회음부에 멍이 있다. 진찰에서 저혈압과 빈맥이 뚜렷하다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시행할 처치는? A. 역행 방광조영술을 먼저 한다 B. 골반 결속대로 즉시 고정한다 C. 하지 견인을 먼저 시행한다 D. 골반 CT를 먼저 촬영한다 E. 관혈적 정복술을 즉시 시행한다 고에너지 외상에서 불안정 골반과 출혈성 쇼크가 ",
+   "text": "Orthopedics Unstable Pelvic Ring Fracture pelvic-fracture hemorrhagic-shock pelvic-binder trauma KMLE 2026 / Claude Routine 28세 남자가 오토바이 고속 충돌 후 이송되었다. 골반을 앞뒤로 눌렀을 때 불안정하게 벌어지고 회음부에 멍이 있다. 진찰에서 저혈압과 빈맥이 뚜렷하다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시행할 처치는? A. 역행 방광조영술을 먼저 한다 B. 골반 결속대로 즉시 고정한다 C. 하지 견인을 먼저 시행한다 D. 골반 CT를 먼저 촬영한다 E. 관혈적 정복술을 즉시 시행한다 고에너지 외상에서 불안정 골반과 출혈성 쇼크가 함께 있으면 골반환 골절에 의한 대량 출혈이다. 응급실에서 가장 먼저 골반 결속대로 골반 용적을 줄여 정맥·골 출혈을 눌러 지혈하며 소생하고, 이후 혈관색전술이나 수술을 결정한다."
+  },
+  {
+   "id": "kmle-2026-0543",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Methanol Toxic Optic Neuropathy",
+   "tags": [
+    "methanol-poisoning",
+    "toxic-optic-neuropathy",
+    "fomepizole",
+    "anion-gap-acidosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0543.md",
+   "snippet": "46세 남자가 출처 불명의 술을 마신 다음 날 아침부터 눈앞이 눈보라처럼 흐려 보이고 거의 안 보인다며 왔다. 숨을 깊고 빠르게 쉬며 배가 아프다. 진찰에서 동공반응이 둔하고 안저가 부어 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 포메피졸을 투여한다 B. 활성탄을 투여한다 C. 아세틸시스테인을 투여한다 D. 고압산소치료를 한다 E. 아트로핀을 투여한다 밀조주 섭취 후 시야가 뿌옇게 흐려지고 음이온차",
+   "text": "Ophthalmology Methanol Toxic Optic Neuropathy methanol-poisoning toxic-optic-neuropathy fomepizole anion-gap-acidosis KMLE 2026 / Claude Routine 46세 남자가 출처 불명의 술을 마신 다음 날 아침부터 눈앞이 눈보라처럼 흐려 보이고 거의 안 보인다며 왔다. 숨을 깊고 빠르게 쉬며 배가 아프다. 진찰에서 동공반응이 둔하고 안저가 부어 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 포메피졸을 투여한다 B. 활성탄을 투여한다 C. 아세틸시스테인을 투여한다 D. 고압산소치료를 한다 E. 아트로핀을 투여한다 밀조주 섭취 후 시야가 뿌옇게 흐려지고 음이온차·삼투질농도차가 벌어진 대사성 산증은 메탄올 중독이다. 독성 대사물(포름산)이 시신경을 손상시키므로, 알코올탈수소효소를 차단하는 포메피졸(또는 에탄올)로 대사를 막고 필요 시 투석한다."
+  },
+  {
+   "id": "kmle-2026-0542",
+   "type": "kmle",
+   "topic": "Ophthalmology",
+   "subtopic": "Open Globe Injury",
+   "tags": [
+    "open-globe",
+    "ruptured-globe",
+    "eye-shield",
+    "ocular-trauma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0542.md",
+   "snippet": "35세 남자가 보안경 없이 망치질을 하다 금속 파편이 눈에 튄 뒤 심한 통증과 시력저하로 왔다. 진찰에서 각막 열상과 함께 동공이 한쪽으로 일그러져 있고 안구 내용물이 비쳐 보인다. 활력징후·검사 소견은 자료와 같다. 응급실에서 가장 적절한 처치는? A. 안압을 측정하고 안약을 점안한다 B. 눈을 세척한 뒤 거즈로 압박한다 C. 박힌 이물을 즉시 제거한다 D. 항생제 연고를 두껍게 도포한다 E. 보호용 안대를 대고 응급 안과에",
+   "text": "Ophthalmology Open Globe Injury open-globe ruptured-globe eye-shield ocular-trauma KMLE 2026 / Claude Routine 35세 남자가 보안경 없이 망치질을 하다 금속 파편이 눈에 튄 뒤 심한 통증과 시력저하로 왔다. 진찰에서 각막 열상과 함께 동공이 한쪽으로 일그러져 있고 안구 내용물이 비쳐 보인다. 활력징후·검사 소견은 자료와 같다. 응급실에서 가장 적절한 처치는? A. 안압을 측정하고 안약을 점안한다 B. 눈을 세척한 뒤 거즈로 압박한다 C. 박힌 이물을 즉시 제거한다 D. 항생제 연고를 두껍게 도포한다 E. 보호용 안대를 대고 응급 안과에 의뢰한다 고속 금속 파편 후 각막 열상·눈물방울 동공·안구내용 탈출은 개방성 안구손상(안구파열)이다. 안구를 누르거나 조작하면 내용물이 더 빠져나가므로, 딱딱한 보호막(안대)만 대고 압박·점안·이물 제거를 하지 말고 즉시 안과에 응급 의뢰한다."
+  },
+  {
+   "id": "kmle-2026-0541",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Vasa Previa",
+   "tags": [
+    "vasa-previa",
+    "fetal-bradycardia",
+    "emergency-cesarean",
+    "antepartum-hemorrhage"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0541.md",
+   "snippet": "임신 37주 임신부가 진통 중 양막이 터진 직후 통증 없는 선홍색 질출혈이 시작되었다. 곧이어 태아심박수가 급격히 떨어졌다. 산전초음파에서 태아 혈관이 자궁경부 위를 지나는 것이 확인된 바 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 자궁수축억제제를 투여한다 B. 경과를 관찰하며 재평가한다 C. 질식분만을 그대로 진행한다 D. 즉시 응급 제왕절개를 한다 E. 옥시토신으로 유도분만을 한다 양막파수 직후의",
+   "text": "Obstetrics & Gynecology Vasa Previa vasa-previa fetal-bradycardia emergency-cesarean antepartum-hemorrhage KMLE 2026 / Claude Routine 임신 37주 임신부가 진통 중 양막이 터진 직후 통증 없는 선홍색 질출혈이 시작되었다. 곧이어 태아심박수가 급격히 떨어졌다. 산전초음파에서 태아 혈관이 자궁경부 위를 지나는 것이 확인된 바 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 자궁수축억제제를 투여한다 B. 경과를 관찰하며 재평가한다 C. 질식분만을 그대로 진행한다 D. 즉시 응급 제왕절개를 한다 E. 옥시토신으로 유도분만을 한다 양막파수 직후의 무통성 질출혈과 즉각적 태아서맥에, 태아혈관이 자궁경부 위를 주행하는 소견이 있으면 전치혈관 파열이다. 출혈은 태아 혈액이므로 몇 분 내 태아가 사망할 수 있어, 즉시 응급 제왕절개로 분만하는 것이 유일한 구명책이다."
+  },
+  {
+   "id": "kmle-2026-0540",
+   "type": "kmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Severe Preeclampsia",
+   "tags": [
+    "severe-preeclampsia",
+    "magnesium-sulfate",
+    "seizure-prophylaxis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0540.md",
+   "snippet": "임신 34주 임신부가 심한 두통과 눈앞이 번쩍이는 증상, 명치 통증으로 왔다. 진찰에서 혈압이 크게 오르고 깊은힘줄반사가 항진되어 있으며 발목 간대가 관찰된다. 활력징후·검사 소견은 자료와 같다. 경련을 예방하기 위해 가장 적절한 처치는? A. 즉시 응급 제왕절개를 한다 B. 저용량 아스피린을 시작한다 C. 황산마그네슘을 투여한다 D. 푸로세미드를 투여한다 E. 페니토인을 투여한다 심한 고혈압·단백뇨에 두통·시야증상·상복부통·",
+   "text": "Obstetrics & Gynecology Severe Preeclampsia severe-preeclampsia magnesium-sulfate seizure-prophylaxis KMLE 2026 / Claude Routine 임신 34주 임신부가 심한 두통과 눈앞이 번쩍이는 증상, 명치 통증으로 왔다. 진찰에서 혈압이 크게 오르고 깊은힘줄반사가 항진되어 있으며 발목 간대가 관찰된다. 활력징후·검사 소견은 자료와 같다. 경련을 예방하기 위해 가장 적절한 처치는? A. 즉시 응급 제왕절개를 한다 B. 저용량 아스피린을 시작한다 C. 황산마그네슘을 투여한다 D. 푸로세미드를 투여한다 E. 페니토인을 투여한다 심한 고혈압·단백뇨에 두통·시야증상·상복부통·반사항진이 겹친 중증 전자간증에서 자간증(경련) 예방의 표준은 황산마그네슘이다. 혈압 조절과 병행하며, 최종 치료인 분만은 산모·태아 상태를 보아 결정한다."
+  },
+  {
+   "id": "kmle-2026-0539",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Lambert-Eaton Myasthenic Syndrome",
+   "tags": [
+    "lambert-eaton",
+    "small-cell-lung-cancer",
+    "paraneoplastic",
+    "VGCC"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0539.md",
+   "snippet": "62세 남자가 몇 달째 계단 오르기가 힘든 근위부 다리 위약과 입마름을 호소한다. 40년간 하루 한 갑 이상 담배를 피웠다. 진찰에서 처음에는 약하던 힘이 반복해서 힘을 주면 잠시 좋아지고, 무릎반사가 약하다. 활력징후·검사 소견은 자료와 같다. 이 질환과 가장 관련 깊은 기저 질환은? A. 길랑 바레증후군 B. 소세포폐암 C. 가슴샘종 D. 갑상샘항진증 E. 다발경화증 반복 수축으로 잠시 호전되는 근위부 위약, 심부건반사 감",
+   "text": "Neurology Lambert-Eaton Myasthenic Syndrome lambert-eaton small-cell-lung-cancer paraneoplastic VGCC KMLE 2026 / Claude Routine 62세 남자가 몇 달째 계단 오르기가 힘든 근위부 다리 위약과 입마름을 호소한다. 40년간 하루 한 갑 이상 담배를 피웠다. 진찰에서 처음에는 약하던 힘이 반복해서 힘을 주면 잠시 좋아지고, 무릎반사가 약하다. 활력징후·검사 소견은 자료와 같다. 이 질환과 가장 관련 깊은 기저 질환은? A. 길랑 바레증후군 B. 소세포폐암 C. 가슴샘종 D. 갑상샘항진증 E. 다발경화증 반복 수축으로 잠시 호전되는 근위부 위약, 심부건반사 감소, 자율신경증상(입마름), 고빈도 반복자극에서 진폭 증가는 시냅스전 전압작동칼슘통로 항체에 의한 램버트 이튼근무력증후군이다. 절반 이상이 소세포폐암에 동반된 부신생물증후군이다."
+  },
+  {
+   "id": "kmle-2026-0538",
+   "type": "kmle",
+   "topic": "Neurology",
+   "subtopic": "Osmotic Demyelination Syndrome",
+   "tags": [
+    "central-pontine-myelinolysis",
+    "hyponatremia",
+    "sodium-correction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0538.md",
+   "snippet": "52세 남자가 만성 알코올 사용과 영양불량으로 심한 저나트륨혈증이 확인되어 교정을 받았다. 사나흘 뒤부터 말이 어눌해지고 사지가 뻣뻣하게 약해지며 삼킴이 힘들어졌다. 활력징후·검사 소견은 자료와 같다. 이 합병증을 예방하기 위한 나트륨 교정 원칙으로 옳은 것은? A. 고장성 식염수로 빠르게 정상화한다 B. 수분제한 대신 수액을 늘린다 C. 즉시 정상 나트륨까지 교정한다 D. 이뇨제로 배설을 촉진한다 E. 하루 혈청나트륨 상승폭",
+   "text": "Neurology Osmotic Demyelination Syndrome central-pontine-myelinolysis hyponatremia sodium-correction KMLE 2026 / Claude Routine 52세 남자가 만성 알코올 사용과 영양불량으로 심한 저나트륨혈증이 확인되어 교정을 받았다. 사나흘 뒤부터 말이 어눌해지고 사지가 뻣뻣하게 약해지며 삼킴이 힘들어졌다. 활력징후·검사 소견은 자료와 같다. 이 합병증을 예방하기 위한 나트륨 교정 원칙으로 옳은 것은? A. 고장성 식염수로 빠르게 정상화한다 B. 수분제한 대신 수액을 늘린다 C. 즉시 정상 나트륨까지 교정한다 D. 이뇨제로 배설을 촉진한다 E. 하루 혈청나트륨 상승폭을 제한한다 심한 만성 저나트륨혈증을 하루 8~10 mmol/L를 넘겨 급속 교정하면 삼투성 탈수초(중심교뇌수초용해)가 며칠 뒤 나타난다. 알코올·영양불량은 위험을 높인다. 예방의 핵심은 교정 속도를 제한(24시간 8 mmol/L 이내)해 서서히 올리는 것이다."
+  },
+  {
+   "id": "kmle-2026-0537",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Cholesterol Atheroembolism",
+   "tags": [
+    "cholesterol-embolism",
+    "blue-toe",
+    "eosinophilia",
+    "post-angiography"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0537.md",
+   "snippet": "72세 남자가 관상동맥조영술을 받고 열흘 뒤부터 발가락 몇 개가 파랗게 변하고 콩팥기능이 나빠져 왔다. 진찰에서 양쪽 다리에 그물 모양의 붉은 얼룩이 보이고 발등동맥은 잘 만져진다. 활력징후·검사 소견은 자료와 같다. 콩팥기능 악화의 가장 가능성 높은 원인은? A. 약물 유발 급성 사이질신염 B. 신후성 폐색성 신병증 C. 콜레스테롤 결정 색전 D. 조영제 유발 급성 세뇨관괴사 E. 급성 세균성 신우신염 혈관조영술 뒤 수 일∼",
+   "text": "Nephrology Cholesterol Atheroembolism cholesterol-embolism blue-toe eosinophilia post-angiography KMLE 2026 / Claude Routine 72세 남자가 관상동맥조영술을 받고 열흘 뒤부터 발가락 몇 개가 파랗게 변하고 콩팥기능이 나빠져 왔다. 진찰에서 양쪽 다리에 그물 모양의 붉은 얼룩이 보이고 발등동맥은 잘 만져진다. 활력징후·검사 소견은 자료와 같다. 콩팥기능 악화의 가장 가능성 높은 원인은? A. 약물 유발 급성 사이질신염 B. 신후성 폐색성 신병증 C. 콜레스테롤 결정 색전 D. 조영제 유발 급성 세뇨관괴사 E. 급성 세균성 신우신염 혈관조영술 뒤 수 일∼수 주에 걸쳐 진행하는 콩팥기능 저하에 청색발가락·그물울혈반·호산구증가·저보체가 동반되면 콜레스테롤 결정 색전이다. 도관 조작으로 죽상판에서 떨어진 콜레스테롤 결정이 말초 소동맥을 막아 생긴다."
+  },
+  {
+   "id": "kmle-2026-0536",
+   "type": "kmle",
+   "topic": "Nephrology",
+   "subtopic": "Lupus Nephritis",
+   "tags": [
+    "lupus-nephritis",
+    "SLE",
+    "renal-biopsy",
+    "complement"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0536.md",
+   "snippet": "27세 여자가 몇 주째 심해진 얼굴·다리 부종과 거품뇨로 왔다. 광과민성 발진과 관절통으로 전신홍반루푸스 진단을 받은 적이 있다. 진찰에서 고혈압과 부종이 있고 검사에서 콩팥기능 저하와 활동성 요침사가 보인다. 활력징후·검사 소견은 자료와 같다. 치료 방침을 정하기 위해 가장 적절한 다음 검사는? A. 콩팥생검을 시행한다 B. 콩팥 도플러초음파를 시행한다 C. 항호중구세포질항체를 검사한다 D. 경험적 항생제를 시작한다 E. 2",
+   "text": "Nephrology Lupus Nephritis lupus-nephritis SLE renal-biopsy complement KMLE 2026 / Claude Routine 27세 여자가 몇 주째 심해진 얼굴·다리 부종과 거품뇨로 왔다. 광과민성 발진과 관절통으로 전신홍반루푸스 진단을 받은 적이 있다. 진찰에서 고혈압과 부종이 있고 검사에서 콩팥기능 저하와 활동성 요침사가 보인다. 활력징후·검사 소견은 자료와 같다. 치료 방침을 정하기 위해 가장 적절한 다음 검사는? A. 콩팥생검을 시행한다 B. 콩팥 도플러초음파를 시행한다 C. 항호중구세포질항체를 검사한다 D. 경험적 항생제를 시작한다 E. 24시간 소변배양을 시행한다 전신홍반루푸스 환자에서 활동성 신염(적혈구원주·단백뇨)·콩팥기능 저하·저보체·항dsDNA 상승은 루푸스신염이다. 조직학적 병기(class)에 따라 치료 강도가 크게 달라지므로, 면역억제 방침을 정하려면 콩팥생검이 다음 단계로 필수다."
+  },
+  {
+   "id": "kmle-2026-0535",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Enteric (Typhoid) Fever",
+   "tags": [
+    "typhoid-fever",
+    "salmonella-typhi",
+    "relative-bradycardia",
+    "ceftriaxone"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0535.md",
+   "snippet": "24세 남자가 인도 여행에서 돌아온 뒤 한 주에 걸쳐 계단식으로 오르는 발열과 복통·두통으로 왔다. 처음에는 변비가 있다가 이제 무른 변을 본다. 진찰에서 고열에 비해 맥박이 느리고 몸통에 옅은 분홍 반점이 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 세프트리악손을 투여한다 B. 경구 반코마이신을 투여한다 C. 메트로니다졸을 투여한다 D. 아시클로버를 투여한다 E. 아목시실린 클라불란산을 투여한다 유",
+   "text": "Infectious Disease Enteric (Typhoid) Fever typhoid-fever salmonella-typhi relative-bradycardia ceftriaxone KMLE 2026 / Claude Routine 24세 남자가 인도 여행에서 돌아온 뒤 한 주에 걸쳐 계단식으로 오르는 발열과 복통·두통으로 왔다. 처음에는 변비가 있다가 이제 무른 변을 본다. 진찰에서 고열에 비해 맥박이 느리고 몸통에 옅은 분홍 반점이 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 세프트리악손을 투여한다 B. 경구 반코마이신을 투여한다 C. 메트로니다졸을 투여한다 D. 아시클로버를 투여한다 E. 아목시실린 클라불란산을 투여한다 유행지역 여행 후 계단식 발열·상대적 서맥·장미진·백혈구감소·간효소 상승은 장티푸스(장열)다. 다제내성이 흔하므로 3세대 세팔로스포린(세프트리악손) 또는 플루오로퀴놀론이 경험적 1차 치료다."
+  },
+  {
+   "id": "kmle-2026-0534",
+   "type": "kmle",
+   "topic": "Infectious Disease",
+   "subtopic": "Dengue Shock Syndrome",
+   "tags": [
+    "dengue",
+    "plasma-leakage",
+    "fluid-resuscitation",
+    "hemoconcentration"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0534.md",
+   "snippet": "26세 남자가 동남아 여행에서 돌아온 뒤 닷새간 고열·심한 근육통·발진이 있었다. 열이 떨어지면서 오히려 축 늘어지고 손발이 차가워졌으며 맥압이 좁아졌다. 진찰에서 복수와 점상출혈이 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 경험적 스테로이드를 투여한다 B. 아스피린으로 해열한다 C. 헤파린으로 항응고한다 D. 등장성 정질액으로 수액 소생을 한다 E. 예방적으로 혈소판을 수혈한다 동남아 여행 후 해",
+   "text": "Infectious Disease Dengue Shock Syndrome dengue plasma-leakage fluid-resuscitation hemoconcentration KMLE 2026 / Claude Routine 26세 남자가 동남아 여행에서 돌아온 뒤 닷새간 고열·심한 근육통·발진이 있었다. 열이 떨어지면서 오히려 축 늘어지고 손발이 차가워졌으며 맥압이 좁아졌다. 진찰에서 복수와 점상출혈이 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 경험적 스테로이드를 투여한다 B. 아스피린으로 해열한다 C. 헤파린으로 항응고한다 D. 등장성 정질액으로 수액 소생을 한다 E. 예방적으로 혈소판을 수혈한다 동남아 여행 후 해열기(위험기)에 혈장누출로 인한 저혈압·좁은 맥압·혈액농축(적혈구용적률 상승)·혈소판감소는 뎅기쇼크증후군이다. 핵심 처치는 등장성 정질액으로 신속히 혈관내 용적을 회복하는 것이며, 혈소판 수혈은 출혈이 없는 한 하지 않는다."
+  },
+  {
+   "id": "kmle-2026-0533",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Severe Aplastic Anemia",
+   "tags": [
+    "aplastic-anemia",
+    "pancytopenia",
+    "hematopoietic-stem-cell-transplant"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0533.md",
+   "snippet": "19세 남자가 일주일째 발열과 잇몸 출혈, 심한 피로로 왔다. 진찰에서 창백하고 피부에 점상출혈이 있으며 비장은 만져지지 않는다. 골수검사에서 세포충실도가 매우 낮다. 형제 중 조직적합성이 일치하는 공여자가 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 근치적 치료는? A. 정기 수혈만 유지한다 B. 경구 철분제를 보충한다 C. 적혈구생성인자를 투여한다 D. 비장절제술을 시행한다 E. 동종 조혈모세포이식을 시행한다 범",
+   "text": "Hematology Severe Aplastic Anemia aplastic-anemia pancytopenia hematopoietic-stem-cell-transplant KMLE 2026 / Claude Routine 19세 남자가 일주일째 발열과 잇몸 출혈, 심한 피로로 왔다. 진찰에서 창백하고 피부에 점상출혈이 있으며 비장은 만져지지 않는다. 골수검사에서 세포충실도가 매우 낮다. 형제 중 조직적합성이 일치하는 공여자가 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 근치적 치료는? A. 정기 수혈만 유지한다 B. 경구 철분제를 보충한다 C. 적혈구생성인자를 투여한다 D. 비장절제술을 시행한다 E. 동종 조혈모세포이식을 시행한다 범혈구감소에 망상적혈구 감소·저세포성 골수·비장비대 없음은 중증 재생불량빈혈이다. 젊고 조직적합성이 일치하는 형제 공여자가 있는 중증 환자의 근치적 치료는 동종 조혈모세포이식이다."
+  },
+  {
+   "id": "kmle-2026-0532",
+   "type": "kmle",
+   "topic": "Hematology",
+   "subtopic": "Paroxysmal Nocturnal Hemoglobinuria",
+   "tags": [
+    "PNH",
+    "intravascular-hemolysis",
+    "flow-cytometry",
+    "CD55-CD59"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0532.md",
+   "snippet": "29세 남자가 몇 달째 반복되는 피로와 아침 첫 소변이 검붉게 나오는 증상으로 왔다. 최근 원인 불명의 복부 정맥혈전으로 치료받은 병력이 있다. 진찰에서 창백하고 경도 황달이 있다. 활력징후·검사 소견은 자료와 같다. 진단을 확인하기 위해 가장 적절한 검사는? A. 혈색소 전기영동을 시행한다 B. 적혈구 삼투취약성검사를 한다 C. 유세포검사로 CD55·CD59를 확인한다 D. 직접쿰스검사를 다시 시행한다 E. 골수 철염색을 시",
+   "text": "Hematology Paroxysmal Nocturnal Hemoglobinuria PNH intravascular-hemolysis flow-cytometry CD55-CD59 KMLE 2026 / Claude Routine 29세 남자가 몇 달째 반복되는 피로와 아침 첫 소변이 검붉게 나오는 증상으로 왔다. 최근 원인 불명의 복부 정맥혈전으로 치료받은 병력이 있다. 진찰에서 창백하고 경도 황달이 있다. 활력징후·검사 소견은 자료와 같다. 진단을 확인하기 위해 가장 적절한 검사는? A. 혈색소 전기영동을 시행한다 B. 적혈구 삼투취약성검사를 한다 C. 유세포검사로 CD55·CD59를 확인한다 D. 직접쿰스검사를 다시 시행한다 E. 골수 철염색을 시행한다 쿰스 음성 혈관내 용혈(LDH 상승·합토글로빈 감소·아침 혈색소뇨)에 원인 불명의 정맥혈전이 겹치면 발작야간혈색소뇨증이다. GPI 고정단백 결손을 유세포검사로 CD55·CD59 소실로 확인하는 것이 진단검사다."
+  },
+  {
+   "id": "kmle-2026-0531",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Abdominal Compartment Syndrome",
+   "tags": [
+    "abdominal-compartment-syndrome",
+    "intra-abdominal-pressure",
+    "decompressive-laparotomy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0531.md",
+   "snippet": "48세 남자가 중증 췌장염으로 대량 수액을 받은 뒤 배가 팽팽하게 부풀고 소변량이 급격히 줄었다. 인공호흡 중 기도압이 오르고 혈압이 떨어진다. 방광내압 측정과 함께 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 신대체요법을 시작한다 B. 응급 감압 개복술을 시행한다 C. 이뇨제를 정맥 투여한다 D. 수액을 추가로 대량 투여한다 E. 복부 CT를 먼저 촬영한다 대량 수액 후 복부팽만·기도압 상승·핍뇨·저혈압에 ",
+   "text": "General Surgery Abdominal Compartment Syndrome abdominal-compartment-syndrome intra-abdominal-pressure decompressive-laparotomy KMLE 2026 / Claude Routine 48세 남자가 중증 췌장염으로 대량 수액을 받은 뒤 배가 팽팽하게 부풀고 소변량이 급격히 줄었다. 인공호흡 중 기도압이 오르고 혈압이 떨어진다. 방광내압 측정과 함께 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 신대체요법을 시작한다 B. 응급 감압 개복술을 시행한다 C. 이뇨제를 정맥 투여한다 D. 수액을 추가로 대량 투여한다 E. 복부 CT를 먼저 촬영한다 대량 수액 후 복부팽만·기도압 상승·핍뇨·저혈압에 방광내압(대리 복강내압) 20 mmHg 초과와 장기부전이 겹치면 복부구획증후군이다. 내과적 감압이 실패한 장기부전 상태에서는 응급 감압 개복술로 복강내압을 즉시 낮추는 것이 근본 치료다."
+  },
+  {
+   "id": "kmle-2026-0530",
+   "type": "kmle",
+   "topic": "General Surgery",
+   "subtopic": "Fournier Gangrene",
+   "tags": [
+    "fournier-gangrene",
+    "necrotizing-fasciitis",
+    "debridement",
+    "diabetes"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0530.md",
+   "snippet": "60세 남자가 이틀 사이 급격히 심해진 회음부 통증과 부종으로 왔다. 당뇨병으로 조절이 불량하며, 진찰에서 회음부 피부가 검게 변하고 악취가 나며 눌렀을 때 사각거리는 느낌이 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 국소 드레싱 후 지연 수술을 한다 B. 고압산소치료를 우선 시행한다 C. 절개배농만 시행한다 D. 응급 광범위 외과적 변연절제를 한다 E. 정맥 항생제만으로 경과를 관찰한다 당뇨 환자에",
+   "text": "General Surgery Fournier Gangrene fournier-gangrene necrotizing-fasciitis debridement diabetes KMLE 2026 / Claude Routine 60세 남자가 이틀 사이 급격히 심해진 회음부 통증과 부종으로 왔다. 당뇨병으로 조절이 불량하며, 진찰에서 회음부 피부가 검게 변하고 악취가 나며 눌렀을 때 사각거리는 느낌이 있다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 처치는? A. 국소 드레싱 후 지연 수술을 한다 B. 고압산소치료를 우선 시행한다 C. 절개배농만 시행한다 D. 응급 광범위 외과적 변연절제를 한다 E. 정맥 항생제만으로 경과를 관찰한다 당뇨 환자에서 회음부의 급속한 통증·괴사·피하기종·패혈증은 푸르니에괴저(회음부 괴사근막염)다. 예후를 결정하는 것은 즉각적이고 광범위한 외과적 변연절제로, 항생제·소생술과 함께 지체 없이 시행한다. 수술 지연은 사망률을 크게 높인다."
+  },
+  {
+   "id": "kmle-2026-0529",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Primary Sclerosing Cholangitis",
+   "tags": [
+    "primary-sclerosing-cholangitis",
+    "ulcerative-colitis",
+    "MRCP",
+    "cholestasis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0529.md",
+   "snippet": "38세 남자가 몇 달간의 피로·가려움과 간헐적 황달로 왔다. 3년 전 궤양대장염으로 진단받아 치료 중이다. 진찰에서 공막이 약간 노랗고 간이 만져지지 않는다. 활력징후·검사 소견은 자료와 같다. 진단을 확인하기 위해 가장 적절한 검사는? A. 항미토콘드리아항체를 다시 측정한다 B. 복부 초음파만 반복한다 C. 혈청 IgG4를 측정한다 D. 우선 간생검을 시행한다 E. 자기공명 담췌관조영술을 시행한다 궤양대장염 병력에 담즙정체성",
+   "text": "Gastroenterology Primary Sclerosing Cholangitis primary-sclerosing-cholangitis ulcerative-colitis MRCP cholestasis KMLE 2026 / Claude Routine 38세 남자가 몇 달간의 피로·가려움과 간헐적 황달로 왔다. 3년 전 궤양대장염으로 진단받아 치료 중이다. 진찰에서 공막이 약간 노랗고 간이 만져지지 않는다. 활력징후·검사 소견은 자료와 같다. 진단을 확인하기 위해 가장 적절한 검사는? A. 항미토콘드리아항체를 다시 측정한다 B. 복부 초음파만 반복한다 C. 혈청 IgG4를 측정한다 D. 우선 간생검을 시행한다 E. 자기공명 담췌관조영술을 시행한다 궤양대장염 병력에 담즙정체성 간효소(ALP·GGT) 상승·가려움은 원발경화쓸개관염을 시사한다. 진단은 담관의 다발성 협착·확장('염주 모양')을 보이는 자기공명 담췌관조영술로 확인한다. 항미토콘드리아항체는 원발쓸개관경화증(PBC)의 표지자로 여기서는 음성이 예상된다."
+  },
+  {
+   "id": "kmle-2026-0528",
+   "type": "kmle",
+   "topic": "Gastroenterology",
+   "subtopic": "Wilson Disease",
+   "tags": [
+    "wilson-disease",
+    "copper",
+    "ceruloplasmin",
+    "chelation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0528.md",
+   "snippet": "22세 남자가 몇 달째 진행한 황달과 손떨림·성격 변화로 왔다. 최근 용혈성 빈혈이 확인되었고 세극등검사에서 각막 가장자리에 갈색 고리가 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고용량 스테로이드를 투여한다 B. 철분 킬레이트제를 투여한다 C. 구리 킬레이트제를 투여한다 D. 반복 사혈로 저장철을 줄인다 E. 우르소데옥시콜산을 투여한다 젊은 나이의 간질환 + 신경정신 증상 + 쿰스 음성 용혈 + ",
+   "text": "Gastroenterology Wilson Disease wilson-disease copper ceruloplasmin chelation KMLE 2026 / Claude Routine 22세 남자가 몇 달째 진행한 황달과 손떨림·성격 변화로 왔다. 최근 용혈성 빈혈이 확인되었고 세극등검사에서 각막 가장자리에 갈색 고리가 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고용량 스테로이드를 투여한다 B. 철분 킬레이트제를 투여한다 C. 구리 킬레이트제를 투여한다 D. 반복 사혈로 저장철을 줄인다 E. 우르소데옥시콜산을 투여한다 젊은 나이의 간질환 + 신경정신 증상 + 쿰스 음성 용혈 + 각막 색소고리 + 낮은 세룰로플라스민·높은 소변구리는 윌슨병이다. 조직에 축적된 구리를 제거하는 구리 킬레이트(페니실라민·트리엔틴)가 근본 치료이며, 아연으로 흡수를 줄여 보조한다."
+  },
+  {
+   "id": "kmle-2026-0527",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Sheehan Syndrome",
+   "tags": [
+    "sheehan-syndrome",
+    "hypopituitarism",
+    "glucocorticoid",
+    "hyponatremia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0527.md",
+   "snippet": "34세 여자가 만성 피로·식욕부진과 어지럼으로 왔다. 8개월 전 분만 중 대량 출혈이 있었고, 이후 젖이 나오지 않고 월경도 회복되지 않았다. 진찰에서 저혈압과 처진 의식이 관찰된다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시작할 치료는? A. 히드로코르티손을 투여한다 B. 레보티록신을 우선 투여한다 C. 고장성 식염수를 투여한다 D. 에스트로겐 보충을 시작한다 E. 성장호르몬 보충을 시작한다 분만 후 대량 출혈에 뒤이",
+   "text": "Endocrinology Sheehan Syndrome sheehan-syndrome hypopituitarism glucocorticoid hyponatremia KMLE 2026 / Claude Routine 34세 여자가 만성 피로·식욕부진과 어지럼으로 왔다. 8개월 전 분만 중 대량 출혈이 있었고, 이후 젖이 나오지 않고 월경도 회복되지 않았다. 진찰에서 저혈압과 처진 의식이 관찰된다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시작할 치료는? A. 히드로코르티손을 투여한다 B. 레보티록신을 우선 투여한다 C. 고장성 식염수를 투여한다 D. 에스트로겐 보충을 시작한다 E. 성장호르몬 보충을 시작한다 분만 후 대량 출혈에 뒤이은 수유 불능·무월경·범뇌하수체저하(낮은 코르티솔·낮은 갑상샘호르몬에 부적절하게 낮은 TSH)는 시한증후군이다. 부신위기를 막기 위해 반드시 글루코코르티코이드를 먼저 보충하고, 그 다음 갑상샘호르몬을 시작한다. 순서를 바꾸면 부신위기를 유발한다."
+  },
+  {
+   "id": "kmle-2026-0526",
+   "type": "kmle",
+   "topic": "Endocrinology",
+   "subtopic": "Hypercalcemia of Malignancy",
+   "tags": [
+    "hypercalcemia",
+    "malignancy",
+    "saline-hydration",
+    "PTHrP"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0526.md",
+   "snippet": "66세 남자가 며칠째 심해진 무기력·변비·다뇨와 함께 처지는 모습으로 왔다. 편평상피 폐암으로 치료 중이다. 진찰에서 탈수 소견이 있고 의식이 처져 있다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시작할 치료는? A. 칼시토닌을 단독으로 투여한다 B. 등장성 생리식염수를 정맥 투여한다 C. 정맥 비스포스포네이트를 투여한다 D. 경구 인산염을 보충한다 E. 티아지드 이뇨제를 투여한다 폐 편평상피암에서 PTH가 낮은 심한 고",
+   "text": "Endocrinology Hypercalcemia of Malignancy hypercalcemia malignancy saline-hydration PTHrP KMLE 2026 / Claude Routine 66세 남자가 며칠째 심해진 무기력·변비·다뇨와 함께 처지는 모습으로 왔다. 편평상피 폐암으로 치료 중이다. 진찰에서 탈수 소견이 있고 의식이 처져 있다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 시작할 치료는? A. 칼시토닌을 단독으로 투여한다 B. 등장성 생리식염수를 정맥 투여한다 C. 정맥 비스포스포네이트를 투여한다 D. 경구 인산염을 보충한다 E. 티아지드 이뇨제를 투여한다 폐 편평상피암에서 PTH가 낮은 심한 고칼슘혈증은 PTHrP 매개 악성 고칼슘혈증이다. 탈수와 콩팥저관류를 동반하므로 가장 먼저 대량 등장성 식염수로 용적을 회복해 칼슘 배설을 늘린다. 비스포스포네이트는 효과가 늦어 수액과 함께·이후에 쓴다."
+  },
+  {
+   "id": "kmle-2026-0525",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Ramsay Hunt Syndrome",
+   "tags": [
+    "ramsay-hunt",
+    "herpes-zoster-oticus",
+    "facial-palsy",
+    "antiviral"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0525.md",
+   "snippet": "58세 남자가 사흘째 한쪽 귀의 심한 통증과 얼굴이 비뚤어지는 증상으로 왔다. 같은 쪽 외이도와 귓바퀴에 통증을 동반한 물집이 무리지어 있고, 어지럼과 이명도 있다. 활력징후·검사 소견은 자료와 같다. 예후를 위해 가장 중요한 치료는? A. 스테로이드를 단독으로 투여한다 B. 정맥 항생제를 투여한다 C. 수술적 안면신경 감압을 한다 D. 경과관찰 후 재평가한다 E. 조기 항바이러스제를 투여한다 귀 통증 + 외이도·귓바퀴 대상포",
+   "text": "Dermatology Ramsay Hunt Syndrome ramsay-hunt herpes-zoster-oticus facial-palsy antiviral KMLE 2026 / Claude Routine 58세 남자가 사흘째 한쪽 귀의 심한 통증과 얼굴이 비뚤어지는 증상으로 왔다. 같은 쪽 외이도와 귓바퀴에 통증을 동반한 물집이 무리지어 있고, 어지럼과 이명도 있다. 활력징후·검사 소견은 자료와 같다. 예후를 위해 가장 중요한 치료는? A. 스테로이드를 단독으로 투여한다 B. 정맥 항생제를 투여한다 C. 수술적 안면신경 감압을 한다 D. 경과관찰 후 재평가한다 E. 조기 항바이러스제를 투여한다 귀 통증 + 외이도·귓바퀴 대상포진 물집 + 같은 쪽 안면마비·어지럼은 램지헌트증후군(대상포진 귓병)이다. 안면신경 회복을 좌우하는 가장 중요한 치료는 발병 초기의 항바이러스제 투여이며, 스테로이드는 보조로 병용한다."
+  },
+  {
+   "id": "kmle-2026-0524",
+   "type": "kmle",
+   "topic": "Dermatology",
+   "subtopic": "Toxic Epidermal Necrolysis",
+   "tags": [
+    "toxic-epidermal-necrolysis",
+    "drug-eruption",
+    "epidermal-detachment"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0524.md",
+   "snippet": "45세 여자가 사흘 전 새 항경련제를 시작한 뒤 발열과 함께 전신에 붉은 반점이 번지고 피부가 광범위하게 벗겨져 왔다. 얼굴과 몸통을 문지르면 표피가 밀려 벗겨지고 입술·눈에도 짓무름이 있다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 해야 할 조치는? A. 경험적 정맥 항생제를 시작한다 B. 경구 사이클로스포린을 시작한다 C. 정맥 면역글로불린을 투여한다 D. 원인 약물을 즉시 중단한다 E. 전신 고용량 스테로이드를 시작",
+   "text": "Dermatology Toxic Epidermal Necrolysis toxic-epidermal-necrolysis drug-eruption epidermal-detachment KMLE 2026 / Claude Routine 45세 여자가 사흘 전 새 항경련제를 시작한 뒤 발열과 함께 전신에 붉은 반점이 번지고 피부가 광범위하게 벗겨져 왔다. 얼굴과 몸통을 문지르면 표피가 밀려 벗겨지고 입술·눈에도 짓무름이 있다. 활력징후·검사 소견은 자료와 같다. 가장 먼저 해야 할 조치는? A. 경험적 정맥 항생제를 시작한다 B. 경구 사이클로스포린을 시작한다 C. 정맥 면역글로불린을 투여한다 D. 원인 약물을 즉시 중단한다 E. 전신 고용량 스테로이드를 시작한다 새 약물 후 발열·광범위 표피박리(체표 30% 초과)·점막 침범은 독성표피괴사용해다. 사망률을 좌우하는 가장 중요한 첫 조치는 원인 약물의 즉각 중단이며, 이어 화상 준하는 지지치료와 전원을 준비한다. 면역조절제는 그 다음 고려사항이다."
+  },
+  {
+   "id": "kmle-2026-0523",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Digoxin Toxicity",
+   "tags": [
+    "digoxin-toxicity",
+    "hyperkalemia",
+    "Fab",
+    "bradyarrhythmia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0523.md",
+   "snippet": "74세 여자가 이틀간의 오심·식욕부진과 사물이 노랗게 보이는 증상으로 왔다. 심방세동으로 디곡신을 복용 중이며 최근 탈수로 콩팥기능이 나빠졌다. 진찰에서 느린 맥박이 만져지고 심전도에서 서맥성 부정맥이 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 응급 혈액투석을 시행한다 B. 경정맥 칼슘글루콘산염을 투여한다 C. 디곡신 특이 항체분획을 투여한다 D. 경정맥 리도카인을 지속 투여한다 E. 경피 심박조율",
+   "text": "Cardiology Digoxin Toxicity digoxin-toxicity hyperkalemia Fab bradyarrhythmia KMLE 2026 / Claude Routine 74세 여자가 이틀간의 오심·식욕부진과 사물이 노랗게 보이는 증상으로 왔다. 심방세동으로 디곡신을 복용 중이며 최근 탈수로 콩팥기능이 나빠졌다. 진찰에서 느린 맥박이 만져지고 심전도에서 서맥성 부정맥이 보인다. 활력징후·검사 소견은 자료와 같다. 가장 적절한 치료는? A. 응급 혈액투석을 시행한다 B. 경정맥 칼슘글루콘산염을 투여한다 C. 디곡신 특이 항체분획을 투여한다 D. 경정맥 리도카인을 지속 투여한다 E. 경피 심박조율만 시행한다 오심·황시증·서맥성 부정맥·고칼륨혈증에 디곡신농도 상승이면 급성 디곡신 중독이다. 생명을 위협하는 부정맥·고칼륨혈증에는 디곡신 특이 항체분획(Fab)이 근본 치료다. 칼슘 투여는 디곡신 중독의 고칼륨혈증에서 이론적 위험이 있어 피한다."
+  },
+  {
+   "id": "kmle-2026-0522",
+   "type": "kmle",
+   "topic": "Cardiology",
+   "subtopic": "Paroxysmal Supraventricular Tachycardia",
+   "tags": [
+    "PSVT",
+    "AVNRT",
+    "narrow-complex-tachycardia",
+    "vagal-maneuver"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/kmle/2026/kmle-2026-0522.md",
+   "snippet": "24세 여자가 20분 전 갑자기 시작된 두근거림으로 응급실에 왔다. 실신이나 흉통은 없다. 이전에도 비슷한 증상이 저절로 멎은 적이 있다. 진찰에서 규칙적인 빠른 맥박이 만져지고 혈압은 유지된다. 활력징후·검사 소견과 심전도는 자료와 같다. 가장 먼저 시도할 처치는? A. 경정맥 미주신경 자극을 먼저 시도한다 B. 정맥 아미오다론을 투여한다 C. 즉시 동기화 심장율동전환을 한다 D. 정맥 딜티아젬을 우선 투여한다 E. 경구 베",
+   "text": "Cardiology Paroxysmal Supraventricular Tachycardia PSVT AVNRT narrow-complex-tachycardia vagal-maneuver KMLE 2026 / Claude Routine 24세 여자가 20분 전 갑자기 시작된 두근거림으로 응급실에 왔다. 실신이나 흉통은 없다. 이전에도 비슷한 증상이 저절로 멎은 적이 있다. 진찰에서 규칙적인 빠른 맥박이 만져지고 혈압은 유지된다. 활력징후·검사 소견과 심전도는 자료와 같다. 가장 먼저 시도할 처치는? A. 경정맥 미주신경 자극을 먼저 시도한다 B. 정맥 아미오다론을 투여한다 C. 즉시 동기화 심장율동전환을 한다 D. 정맥 딜티아젬을 우선 투여한다 E. 경구 베타차단제를 투여한다 혈역학이 안정된 규칙적 좁은 QRS 빈맥(발작성 상심실빈맥)에서는 방실결절 전도를 늦추는 미주신경 자극(발살바·변형 발살바)을 가장 먼저 시도한다. 실패하면 아데노신, 그다음 칼슘·베타차단제 순으로 넘어간다."
+  },
   {
    "id": "usmle-2026-0060",
    "type": "usmle",
@@ -170,6 +742,134 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0055.md",
    "snippet": "A 4 year old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examinati",
    "text": "Immunology Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility chronic-granulomatous-disease NADPH-oxidase oxidative-burst catalase-positive-organisms primary-immunodeficiency USMLE-style / MedKOS (immunology · phagocyte oxidative burst defects) A 4 year old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examination reveals hepatosplenomegaly and residual scarring from prior skin abscesses. Vital signs and laboratory studies are shown. Which of the following is the most likely explanation for this patient's recurrent infections? A. Absence of functional B lymphocytes leading to failure of opsonizing antibody production B. Deficient complement mediated membrane attack complex formation C. Failure of neutrophils to generate reactive oxygen species via NADPH oxidase D. Impaired T cell mediated killing of intracellular pathogens due to IL 12 receptor deficiency E. Failure of neutrophils to fuse phagosomes with lysosomes containing myeloperoxidase Recurrent infections with catalase positive organisms, abscess formation, and a markedly reduced DHR oxidative burst signal indicate failure of the NADPH oxidase complex to generate reactive oxygen species — the defect underlying chronic granulomatous disease."
+  },
+  {
+   "id": "paper-2026-0179",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advances in therapy",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0179_clinical_and_economic_burden_of_autologous_skin_grafting_for.md",
+   "snippet": "Title Clinical and Economic Burden of Autologous Skin Grafting for Nonthermal Full Thickness Wounds Across Care Settings: A US Retrospective Claims Study Authors Do Lauren A, Samnaliev Mihail, Sussman Matthew, Crombie Roselle E, Gould Lisa ",
+   "text": "Surgery scraped pubmed PubMed / Advances in therapy Title Clinical and Economic Burden of Autologous Skin Grafting for Nonthermal Full Thickness Wounds Across Care Settings: A US Retrospective Claims Study Authors Do Lauren A, Samnaliev Mihail, Sussman Matthew, Crombie Roselle E, Gould Lisa J Journal / DOI Advances in therapy · DOI: 10.1007/s12325 026 03747 5 · PMID: 42573953 https://pubmed.ncbi.nlm.nih.gov/42573953/ Abstract INTRODUCTION: The clinical and economic burden among patients with non thermal full thickness wounds (NFTW) resulting from trauma or surgery and undergoing autologous skin grafts is not well characterized. Assessing burden of care can inform treatment choice, evaluation of emerging wound therapies, and payer coverage decisions. METHODS: Clarivate's Real world Data Repository® national claims database between 01/01/2019 and 08/31/2024 was used to select patients aged ≥ 15 years with a primary NFTW diagnosis who underwent an autologous skin graft procedure (index). Separate cohorts were analyzed according to the site of care where the index procedure was performed (inpatient, outpatient hospital, office/clinic). Kaplan Meier estimates of the 90 day post index adverse outcome rates, select adjunct procedures, and select medication use were generated. All cause 12 month healthcare resource utilization (HRU) and costs [in 2024 United States (US) dollars] were also estimated. RESULTS: Of the 26,117 patients with a NFTW, the mean age was 59.3 years and 43.3% were female. During the 12 month pre index period 41.2% were smokers, 32.0% were obese, 31.8% had diabetes or diabetes related comorbidities, and 21.5% were malnourished. Drug or alcohol abuse (15.6%), frailty (13.6%), and autoimmune diseases/immunodeficiency (10.4%) were also common. Traumatic wounds accounted for 56.1% and surgical wounds for 29.7% of all cases. Within 90 days, regrafting and graft failure occurred in 7.6% and 4.9% of the inpatient cohort, 3.4% and 3.1% of the outpatient hospital cohort, and 3.5% and 0.1% of the office/clinic cohort, respectively. Total mean annual costs were $266,231 (standard deviation (SD) = $458,484] per patient in the inpatient, $62,619 (SD = $132,510) in the outpatient hospital, and $14,261 (SD = $36,894) in the office/clinic cohorts with an average all cohort cost of $128,959 (SD = $306,485). CONCLUSION: Patients receiving autologous skin grafts for NFTW are medically complex with high rates of complications and significant costs, highlighting the need for novel interventions or adjunct therapies to reduce the associated clinical and economic burden. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0178",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical oral investigations",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0178_clinical_comparison_of_cad_cam_nanohybrid_composite_and_hybr.md",
+   "snippet": "Title Clinical comparison of CAD/CAM nanohybrid composite and hybrid ceramic overlays in children with molar incisor hypomineralisation: a split mouth prospective randomized clinical trial Authors Akça Alp, Eren Figen, Kargül Betül Journal ",
+   "text": "Pediatrics scraped pubmed PubMed / Clinical oral investigations Title Clinical comparison of CAD/CAM nanohybrid composite and hybrid ceramic overlays in children with molar incisor hypomineralisation: a split mouth prospective randomized clinical trial Authors Akça Alp, Eren Figen, Kargül Betül Journal / DOI Clinical oral investigations · DOI: 10.1007/s00784 026 07067 4 · PMID: 42565852 https://pubmed.ncbi.nlm.nih.gov/42565852/ Abstract OBJECTIVES: This prospective, randomized, split mouth clinical study aimed to compare the clinical performance and survival rates of CAD/CAM fabricated nanohybrid composite overlays (NCOs) and hybrid ceramic overlays (HCOs) produced using a digital workflow in first permanent molars (FPMs) affected by molar incisor hypomineralisation (MIH). Clinical performance was assessed using the modified USPHS criteria, while tooth hypersensitivity was evaluated as a secondary outcome using the Schiff cold air sensitivity scale. MATERIALS AND METHODS: Twenty children (40 MIH affected FPMs) aged 8 13 years with MIH TNI scores of 2b, 2c, 4b, or 4c were included. Using a randomized split mouth design, one molar received an NCO (Grandio blocs, VOCO, Cuxhaven, Germany) and the contralateral molar an HCO (ENAMIC, VITA Zahnfabrik, Essen, Germany). All restorations were fabricated through digital impressions, CAD/CAM design and milling, and adhesively cemented using a universal dual cure resin cement. Clinical performance was evaluated by two blinded examiners according to the modified United States Public Health Service (USPHS) criteria at baseline and at the 6 month, 12 month, and preliminary 18 month follow ups. Tooth hypersensitivity was assessed using the Schiff cold air sensitivity test. Statistical analyses were performed using Mann Whitney U, Fisher's Exact, Fisher Freeman Halton, Wilcoxon signed rank, and Stuart Maxwell tests (IBM SPSS v31; p < 0.05). RESULTS: Baseline demographic characteristics and MIH TNI distributions were comparable between the groups (p 0.05). Most modified USPHS parameters demonstrated clinically acceptable outcomes in both groups throughout the follow up. No significant differences were observed between groups at baseline or at the 6 month follow up regarding surface/marginal staining and postoperative hypersensitivity/tooth vitality according to the modified USPHS criteria (p 0.05). At the 12 month follow up, one HCO restoration was rated as Score 2 (Explorer catches slightly, without a visible gap) for marginal adaptation, and no statistically significant difference was observed between the groups for postoperative hypersensitivity (p = 0.050). All restorations were available for evaluation at the 6 month and 12 month follow ups. Both materials demonstrated favorable short term clinical outcomes according to the modified USPHS criteria. Preliminary 18 month data were available for 7 patients, among whom one restoration fracture was observed in the HCO group. Tooth hypersensitivity scores significantly decreased in both groups by the 6 month follow up (p ≤ 0.001), and all treated teeth reached a Schiff score of 0 at the 12 month follow up (p < 0.001). CONCLUSIONS: CAD/CAM fabricated NCOs and HCOs showed favorable short term clinical performance in selected MIH affected FPMs up to the 12 month follow up. Preliminary 18 month findings should be interpreted with caution, and longer term follow up of the complete cohort is required to determine comparative durability. CLINICAL RELEVANCE: Both materials may represent clinically feasible restorative options for selected pediatric patients; however, longer term clinical follow up is required. CLINICAL TRIALS: Clinical trial registration number: NCT06987448. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0177",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical autonomic research : official journal of the Clinical Autonomic Research Society",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0177_diagnostic_strategies_test_accuracy_and_misdiagnosis_of_pots.md",
+   "snippet": "Title Diagnostic strategies, test accuracy, and misdiagnosis of POTS: a narrative review of diagnostic criteria, tests, and diagnostic delay Authors Tiotsop Maurice, Roger Douni, Sama Renguh, Ande Eesha, Salabei Joshua Journal / DOI Clinica",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Clinical autonomic research : official journal of the Clinical Autonomic Research Society Title Diagnostic strategies, test accuracy, and misdiagnosis of POTS: a narrative review of diagnostic criteria, tests, and diagnostic delay Authors Tiotsop Maurice, Roger Douni, Sama Renguh, Ande Eesha, Salabei Joshua Journal / DOI Clinical autonomic research : official journal of the Clinical Autonomic Research Society · DOI: 10.1007/s10286 026 01233 0 · PMID: 42573959 https://pubmed.ncbi.nlm.nih.gov/42573959/ Abstract PURPOSE: Postural orthostatic tachycardia syndrome is defined by a sustained heart rate increment upon upright posture without orthostatic hypotension. Despite established criteria, the condition remains frequently underdiagnosed. This narrative review evaluates diagnostic strategies, test accuracy, diagnostic delay, and misdiagnosis patterns. METHODS: Following prospective registration in PROSPERO (CRD 1248964), 7 databases were searched without date restriction. Eligible studies enrolled individuals aged 12 years or older undergoing evaluation for postural orthostatic tachycardia syndrome and reported diagnostic accuracy, criteria performance, or delay and misdiagnosis data. Dual reviewer screening and standardized data extraction were performed. Risk of bias was assessed using QUADAS 2 and ROBINS I. Narrative synthesis followed PRISMA 2020 guidelines. RESULTS: In total, 26 studies met inclusion criteria, enrolling more than 30,000 participants across multiple countries. Diagnostic criteria varied in heart rate thresholds, tilt angle, and test duration. Abbreviated 2 min tilt testing missed 55% of confirmed cases (95% confidence interval 48 63%). Active standing tests achieved areas under the curve of 0.855 0.925 with time of day standardized thresholds. Tachycardia mimicking the syndrome occurred in 26 44% of vasovagal syncope patients during tilt. Two large surveys (n = 13,754) documented a median diagnostic delay of 24 months; approximately 75 76% reported prior misdiagnosis, most frequently attributed to psychological or psychiatric conditions. CONCLUSIONS: Postural orthostatic tachycardia syndrome diagnosis is compromised by protocol heterogeneity, abbreviated testing, physiological mimicry, and a pattern of psychiatric misattribution. Standardization of tilt and standing test protocols, clinician education, and structured diagnostic pathways are warranted. TRIAL REGISTRATION: PROSPERO Registration: CRD1248964. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0176",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Tissue engineering and regenerative medicine",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0176_a_pilot_study_for_establishing_dss_induced_colitis_model_in_.md",
+   "snippet": "Title A Pilot Study for Establishing DSS Induced Colitis Model in Minipigs Authors Park Hye Won, Lee Woon Kyu Journal / DOI Tissue engineering and regenerative medicine · DOI: 10.1007/s13770 026 00832 2 · PMID: 42573889 https://pubmed.ncbi.",
+   "text": "Pathology scraped pubmed PubMed / Tissue engineering and regenerative medicine Title A Pilot Study for Establishing DSS Induced Colitis Model in Minipigs Authors Park Hye Won, Lee Woon Kyu Journal / DOI Tissue engineering and regenerative medicine · DOI: 10.1007/s13770 026 00832 2 · PMID: 42573889 https://pubmed.ncbi.nlm.nih.gov/42573889/ Abstract BACKGROUND: Ulcerative colitis (UC) is a chronic inflammatory bowel disease characterized by relapsing and remitting colonic mucosal inflammation. Rodent dextran sodium sulfate (DSS) induced colitis models are widely used but have limited translational relevance due to anatomical and physiological differences. As a pilot feasibility study, this work aimed to explore whether graded DSS administration could induce reproducible colitis like features in minipigs. METHODS: We developed a pilot large animal UC model using Sus scrofa minipigs. Eight male Micropigs® were divided into four groups, with three groups receiving DSS at 0.2, 0.4, or 0.8 g/kg/day for 7 days. Clinical signs, body weight, colon length, endoscopic evaluation, and histopathology were assessed. RESULTS: DSS administration induced dose dependent UC features. Group 4 minipigs (0.8 g/kg/day) showed the most severe clinical manifestations, including diarrhea, anorexia, and lethargy. Colon length was reduced by 34% in Group 4 compared to controls. Endoscopy revealed progressive mucosal edema, hemorrhage, and erosions. Histopathological scoring confirmed severe inflammation, crypt loss, and ulceration in higher dose groups. Dose dependent trends were consistently observed across clinical signs, endoscopic findings, and histopathological features. CONCLUSION: This DSS induced minipig colitis model replicates clinical, endoscopic, and histological hallmarks of human UC. As an exploratory pilot study, it provides proof of concept for minipigs as a translational platform for inflammatory bowel disease (IBD) research and therapeutic evaluation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0175",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Chinese journal of integrative medicine",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0175_effect_of_polyphenols_derived_from_medicinal_plants_on_multi.md",
+   "snippet": "Title Effect of Polyphenols Derived from Medicinal Plants on Multiple Myeloma via Modulating Bone Marrow Microenvironment Authors Wang Hao Yue, Xu Ya Jing, Yan Li Xiang, Lu Xiao Tong, Wang Yi Fan, Deng Chao Ya, Shi Zhe Xin Journal / DOI Chi",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Chinese journal of integrative medicine Title Effect of Polyphenols Derived from Medicinal Plants on Multiple Myeloma via Modulating Bone Marrow Microenvironment Authors Wang Hao Yue, Xu Ya Jing, Yan Li Xiang, Lu Xiao Tong, Wang Yi Fan, Deng Chao Ya, Shi Zhe Xin Journal / DOI Chinese journal of integrative medicine · DOI: 10.1007/s11655 026 4046 7 · PMID: 42573911 https://pubmed.ncbi.nlm.nih.gov/42573911/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0174",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical and experimental nephrology",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0174_gallstones_and_acute_cholecystitis_in_ckd_and_dialysis_an_un.md",
+   "snippet": "Title Gallstones and acute cholecystitis in CKD and dialysis: an underrecognized biliary burden in nephrology Authors Furuto Yoshitaka, Yoshino Daiki, Namikawa Akio, Sato Dai, Shibuya Yuko Journal / DOI Clinical and experimental nephrology ",
+   "text": "Nephrology scraped pubmed PubMed / Clinical and experimental nephrology Title Gallstones and acute cholecystitis in CKD and dialysis: an underrecognized biliary burden in nephrology Authors Furuto Yoshitaka, Yoshino Daiki, Namikawa Akio, Sato Dai, Shibuya Yuko Journal / DOI Clinical and experimental nephrology · DOI: 10.1007/s10157 026 02933 7 · PMID: 42573957 https://pubmed.ncbi.nlm.nih.gov/42573957/ Abstract Gallstones and acute cholecystitis are not usually regarded as core nephrology problems, yet accumulating observational evidence suggests that their burden is increased in chronic kidney disease (CKD), particularly in advanced predialysis CKD and end stage kidney disease (ESKD). Plausible contributors include impaired gallbladder motility related to uremia associated autonomic dysfunction, shared metabolic risk clustering, and, in selected patients, hemodynamic vulnerability related to intradialytic hypotension or low output states. The central clinical issue may be underrecognition. In CKD and dialysis, abdominal complaints are often nonspecific and may overlap with uremic or intercurrent illness related symptoms. In addition, uncomplicated acute cholecystitis may present early with absent or only mild hepatobiliary enzyme abnormalities, whereas marked bilirubin elevation or a cholestatic pattern should prompt evaluation for choledocholithiasis or cholangitis. Ceftriaxone associated pseudolithiasis and glucagon like peptide 1 receptor agonist exposure may further complicate the diagnostic picture. Although evidence linking CKD itself to primary acute cholangitis is less robust than that linking CKD to gallstones and acute cholecystitis, biliary obstruction and endoscopic intervention remain relevant because advanced CKD and ESKD may increase procedure related morbidity. Emerging data also caution against reflexive therapeutic nihilism: source control should not be deferred solely because a patient has advanced CKD or dialysis dependence, and gallbladder drainage may serve as a planned bridge or alternative in selected high risk patients. This focused review summarizes the epidemiologic links, plausible mechanisms, diagnostic pitfalls, and practical management implications of gallstones and acute cholecystitis in CKD and dialysis, and highlights why biliary disease should be recognized as an underappreciated comorbidity in nephrology care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0173",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International urology and nephrology",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0173_characterizing_the_role_of_the_urobiome_in_the_pathogenesis_.md",
+   "snippet": "Title Characterizing the role of the urobiome in the pathogenesis of recurrent urinary tract infections (rUTIs): a systematic review Authors Sheiber Jeremy, Duque Alejandra, Ranjan Adishi, Diokno Ananias C, Swana Hubert Journal / DOI Intern",
+   "text": "Infectious Disease scraped pubmed PubMed / International urology and nephrology Title Characterizing the role of the urobiome in the pathogenesis of recurrent urinary tract infections (rUTIs): a systematic review Authors Sheiber Jeremy, Duque Alejandra, Ranjan Adishi, Diokno Ananias C, Swana Hubert Journal / DOI International urology and nephrology · DOI: 10.1007/s11255 026 05317 8 · PMID: 42573928 https://pubmed.ncbi.nlm.nih.gov/42573928/ Abstract PURPOSE: Recurrent urinary tract infections (rUTIs) are associated with substantial morbidity, repeated antibiotic exposure, and increasing antimicrobial resistance. Emerging evidence suggests that alterations in the urinary microbiome (urobiome) may contribute to rUTI pathogenesis. This systematic review evaluated the role of the urobiome in the development and recurrence of rUTIs. METHODS: This systematic review was conducted in accordance with the PRISMA 2020 guidelines. Literature searches were conducted and managed using Covidence systematic review software (Veritas Health Innovation, Melbourne, Australia). Searches included Web of Science, MEDLINE, PubMed, and CINAHL and covered studies published from 2014 through 2026. The final search was conducted on February 1, 2026. The search incorporated terms related to 'urobiome,' 'urinary microbiome,' 'urinary tract infection,' and 'recurrent urinary tract infection.' Searches were restricted to English language studies and human participants. After deduplication, 213 unique records underwent title and abstract screening, and 62 articles were assessed in full text. 21 studies that directly evaluated recurrent or chronic UTI populations, or reported an rUTI specific subgroup, were included in the qualitative synthesis. Data extraction included study design, patient population characteristics, definitions of rUTI, urine collection methods, microbiome assessment methodology (including 16S rRNA sequencing and enhanced quantitative urine culture), reported microbial diversity measures, taxonomic findings, and associations between microbiome characteristics and rUTI outcomes. Given heterogeneity in study design, sequencing platforms, urine collection techniques, and definitions of rUTI across studies, a quantitative meta analysis was not performed. Findings were synthesized descriptively, with emphasis on recurring microbial patterns, diversity measures, and clinically relevant urobiome alterations associated with recurrent infection. RESULTS: 21 studies met inclusion criteria. Recurrent urinary tract infection was associated with altered urinary microbial ecology although the direction of diversity changes varied across studies. Commonly reported differences included altered Lactobacillus abundance and enrichment of taxa, such as Gardnerella, Prevotella, and Enterobacterales. Mechanistic studies implicated intracellular bacterial persistence, biofilm formation, ecological shifts, and metabolite microbiome interactions. Hormonal status and antibiotic exposure also influenced urobiome composition. Substantial methodological heterogeneity remained across studies. CONCLUSION: Current evidence supports a potential role for the urobiome in rUTI pathogenesis. Altered microbial diversity, loss of protective organisms, and persistent bacterial reservoirs may contribute to recurrence. Further standardized longitudinal and mechanistic studies are needed to clarify causality and guide microbiome targeted therapeutic strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0172",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetes care",
+   "confidence": "medium",
+   "date": "2026-08-10",
+   "path": "content/papers/2026/2026-08-10_paper-2026-0172_early_weight_loss_in_impaired_glucose_tolerance_is_associate.md",
+   "snippet": "Title Early Weight Loss in Impaired Glucose Tolerance Is Associated With Reduced Long term Mortality and Cardiovascular Risk: The Da Qing Diabetes Prevention Outcome Study Authors He Siyao, Yu Liping, Wang Jinping, Qian Xin, Yang Zhiwei, Fe",
+   "text": "Cardiology scraped pubmed PubMed / Diabetes care Title Early Weight Loss in Impaired Glucose Tolerance Is Associated With Reduced Long term Mortality and Cardiovascular Risk: The Da Qing Diabetes Prevention Outcome Study Authors He Siyao, Yu Liping, Wang Jinping, Qian Xin, Yang Zhiwei, Feng Xinxing, Shen Xiaoxia, Zhang Nianrong, et al. Journal / DOI Diabetes care · DOI: 10.2337/dc26 0689 · PMID: 42574058 https://pubmed.ncbi.nlm.nih.gov/42574058/ Abstract OBJECTIVE: To determine whether weight loss during the initial years following diagnosis of impaired glucose tolerance (IGT) is independently associated with reduced long term mortality and cardiovascular risk. RESEARCH DESIGN AND METHODS: In the Da Qing Diabetes Prevention Study, 540 adults with IGT were categorized into three groups based on their weight change from baseline to the end of a 6 year lifestyle intervention trial: non weight loss (n = 200), low weight loss (<5%, n = 163), and high weight loss (≥5%, n = 177). Participants were followed for 34 years to assess all cause mortality, cardiovascular disease (CVD) mortality, and CVD events. Cox models were used to assess associations. RESULTS: Weight loss during the initial 6 years following IGT diagnosis was associated with reduced long term risks of CVD events and mortality (P = 0.007 0.015). Compared with participants without weight loss, those with weight loss ≥5% had significantly lower risks of CVD death (hazard ratio [HR] 0.56, 95% CI 0.35 0.89), CVD events (HR 0.71, 95% CI 0.52 0.99), hospitalized heart failure (HR 0.48, 95% CI 0.26 0.88), and all cause death (HR 0.67, 95% CI 0.48 0.95) after adjusting for age, sex, baseline weight, and other covariates. Furthermore, the high weight loss group showed delays in the median time to all cause mortality and CVD mortality of 2.1 years and 6.5 years, respectively. CONCLUSIONS: Weight loss achieved in the early years after diagnosis of IGT in Chinese adults is associated with substantially lower long term risks of CVD events and mortality, suggesting the critical importance of early weight management in individuals with prediabetes for improving long term survival and cardiovascular health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0521",
