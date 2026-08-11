@@ -462,14 +462,15 @@ may be promoted from `draft`, a separate read-only preflight must:
 1. uniquely identify the canonical V9/V10 source packages and cache trees by
    Drive file/folder ID, path, byte size and SHA-256 (tree digest for a folder);
 2. freeze the exact `detect_r()` producer, annotation-matching source and runtime;
-3. reproduce the registered row count for every one of the 44 cache records in
-   both V9 and V10 (44/44 per version),
+3. verify, without detector replay, that `rr.shape[0]` and `meta.json[n]` equal
+   the registered row count for every one of the 44 cache records in both V9
+   and V10 (44/44 per version), reading neither `y` nor any probability array;
    without opening V10 probability values or DS2 per-beat class labels; and
 4. record the resulting identities in `research/ASSETS.md` and this Decision log
    before implementation approval.
 
 If the canonical producer cannot be identified uniquely, a required hash is
-unverifiable, or deterministic replay does not reproduce all 44 counts, the
+unverifiable, or the cache-shape/meta ledger does not verify all 44 counts, the
 preflight ends `M4_INPUT_FREEZE_FAILED`.  The spec stays `draft`; no detector,
 version, tolerance or source is substituted.  This preflight performs no M0-M4
 aggregation and does not itself authorize implementation or execution.
@@ -486,8 +487,8 @@ All three must hold:
    note that neither lineage stores them (§What the bundle contains, item 6), so
    this requires re-running the detector under the registered runtime
    (`numpy 2.5.1`, `scipy 1.18.0`, `wfdb 4.3.1`, CPython 3.12.3), whose output
-   must be shown to reproduce the registered per-record cache counts before any
-   anchor is used;
+   must be shown to reproduce the registered per-record cache counts for all 22
+   DS1 records before any anchor is used;
 3. the source version, cache tree and hashes equal the identities frozen by
    `PREP_M4_ASSET_FREEZE`.  A path or filename without its registered digest is
    insufficient.
@@ -731,8 +732,8 @@ condition, for the same reason censored rows are.
 
 Do not intentionally collapse the experiment to H1/H4.  Complete the read-only
 `PREP_M4_ASSET_FREEZE` before promoting this spec.  Failure to uniquely freeze
-the original producer/cache lineage and reproduce all 44 cache record counts in
-each version is
+the original producer/cache lineage and verify all 44 cache record counts from
+`rr` shape and metadata in each version is
 `M4_INPUT_FREEZE_FAILED`; the spec stays `draft` and no substitute source or
 relaxed rule is allowed.  If an approved implementation later fails exact peak
 replay, decision-tree branch 2 remains the registered result.
@@ -1051,7 +1052,7 @@ detector execution.  After the PR, **STOP** and wait for the user.
 - [x] Codex resolves the five open design questions (Q1-Q5)
 - [ ] User approves the read-only `PREP_M4_ASSET_FREEZE` scope
 - [ ] `PREP_M4_ASSET_FREEZE` uniquely freezes source/cache identities and
-      reproduces all 44 cache record counts in each version before status promotion
+      verifies all 44 cache `rr` shape/meta counts in each version before status promotion
 - [ ] User approves this draft; `status` becomes `approved_for_implementation`
 - [ ] Claude implements the frozen design without executing it
 - [ ] User separately approves execution on the registered artifacts
@@ -1245,7 +1246,7 @@ detector execution.  After the PR, **STOP** and wait for the user.
   **M4.**  M4 is retained because intentionally omitting it makes H2/H3
   unevaluable.  A separate read-only `PREP_M4_ASSET_FREEZE` is now a blocker to
   status promotion: it must uniquely hash/freeze the canonical V9/V10 producer
-  and cache lineage and reproduce all 44 cache record counts in each version.
+  and cache lineage and verify all 44 cache `rr` shape/meta counts in each version.
   Failure leaves
   the spec draft as `M4_INPUT_FREEZE_FAILED`; it does not license a substitute
   detector, version, tolerance or source.
