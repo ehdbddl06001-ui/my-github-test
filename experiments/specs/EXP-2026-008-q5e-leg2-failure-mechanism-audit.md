@@ -2075,3 +2075,95 @@ record  split     n  shape      dtype     value_identical  byte_identical  nan
 
   *Not done, deliberately.*  No M0-M4 aggregation, no Drive bundle, no
   executed notebook, and no result numbers anywhere in this file.
+
+- 2026-08-12 — **Codex implementation acceptance review (I1-I4): correction
+  required before execution approval.**  This was a source-only review.  No
+  registered artifact was opened, no M0-M4 aggregate was computed,
+  `detect_r()` and the beat join were not run, and no result or scientific
+  decision was produced.  `status` remains `approved_for_implementation`.
+
+  **I1 — not accepted as a complete implementation.**  The reviewed pure
+  measurement functions preserve several important parts of the frozen
+  design: `rank_proportional_centre()` reuses the frozen
+  `to_samples(..., UNIT_SAMPLES)` round-half-to-even path; observed and null
+  distance populations share `distance_gate_rows()`; the frozen matcher is
+  called without changing its edge or certification rule; the three controls,
+  finite permutation p-value, four-family Holm calculation, effect gates and
+  exhaustive decision tree are present.  Those agreements do not make the
+  implementation executable.  The following blockers must be closed without
+  changing a scientific constant or opening registered data:
+
+  1. `run_audit()` verifies canonicity and then reaches its terminal guard.  No
+     code behind that guard loads the registered join map, decision/manifest,
+     mamba and cache sequences, processed cache classes or M4 source inputs;
+     wires M0-M4 and Controls A-C; evaluates flags and the decision tree; or
+     writes the complete bundle.  The notebook likewise supplies five empty
+     paths and only calls this incomplete route.  Removing the guard alone
+     would therefore not run the registered audit.
+  2. Cache-side certified beats exist in the Q5-D join map only as certified
+     mamba rows carrying `cache_record_row`.  `m0_record_class()` currently
+     defines cache-side rows as the explicit cache-only rows, so its cache-side
+     denominator omits every certified cache row.  Build the disjoint,
+     exhaustive cache-side partition first and use it for every cache-side
+     M0 denominator and class lookup; do not fill class from `mamba_aami`.
+  3. M3 currently checks only the reconstructed certified count.  Before M3 is
+     used, it must also reproduce the bundle's `AMBIGUOUS` and `UNMATCHED`
+     assignments and each of the three registered reason counts exactly, as
+     required by the QA STOP rule.
+  4. `M4_GATE_ORDER` omits `input_identity`, although the registered and stated
+     order is `runtime -> source_map -> input_identity -> detector_replay ->
+     record_counts -> rr_equality`.  The machine-readable order, emitted gate
+     list and regression tests must agree exactly.
+  5. Control A's production input must be constructed explicitly from the
+     canonical DS1 processed-class map in cache-record-row order.  The generic
+     circular-shift helper is acceptable, but no production caller may supply
+     `mamba_aami` or choose a class vector ad hoc.
+  6. Declaring M5 stratum names in result JSON is not the registered
+     simultaneous stratification.  The production tables/statistics must
+     materialise class, reason, record, count stratum, records 116/208 and
+     pooled reporting wherever defined, with pooled values never standing
+     alone for a mechanism flag.
+  7. `figure_specs()` specifies labels but renders no figure, and
+     `write_bundle()` silently accepts missing required CSV tables.  The one
+     production route must render the applicable registered figures and
+     require every output for that branch (with only the preregistered M4-absent
+     exceptions), refusing an incomplete bundle.
+
+  The corrective implementation stays within the four already allowed files.
+  It must add a synthetic end-to-end production-path test with injected fake
+  readers and an injected M4 replay: the test must traverse QA, M0-M4, all
+  controls, Holm, flags, decision and complete bundle/figure writing while
+  opening no registered artifact.  Separate focused tests must catch each
+  blocker above.  The terminal approval guard remains in place during that
+  correction.
+
+  **I2 — the pre-open barriers are accepted, but the terminal guard stays.**
+  `OPEN_REGISTERED_DATA = False`, approval-before-capability and
+  approval-before-`open()`, the default `DESIGN` mode, announced `RUN`/`SKIP`,
+  sealed-token scan and non-empty-output refusal are an adequate unauthorised
+  access boundary for the implemented readers.  They are not evidence that the
+  absent production orchestration is complete.  The terminal guard may be
+  removed only after the correction above is reviewed and the user separately
+  approves execution.  That later approval change must expose an already
+  complete route, not introduce or wire scientific analysis for the first
+  time.
+
+  **I3 — accepted.**  `H4_DECISIONAL_SIDE = cache` is the single source for the
+  observed contrast, Control B null, raw p, q99, Holm H4 input, degree-share
+  gate and multiplicity/variability direction gate.  Mamba-side values remain
+  descriptive and non-decisional.  The pre-execution addition of the
+  `decisional` column to `m3_graph.csv` is approved because it serialises that
+  fixed contract and supplies no alternative p-value or side-selection path.
+
+  **I4 — retain D3: no fourth runtime probe.**  Option (a) is selected for the
+  eventual, separately approved execution, after I1 is corrected.  An
+  import/version-only probe would not establish the 22-record detector replay;
+  a one-record detector call would already be a partial M4 execution; and the
+  registered design intentionally makes exact runtime, all-record counts and
+  exact frozen-RR replay one ordered terminal feasibility gate.  Therefore the
+  full condition 2 is evaluated once inside the approved run.  Failure remains
+  the valid registered outcome `DIAGNOSTIC_INPUT_ABSENT` leading to
+  `MECHANISM_UNRESOLVED_INPUT_ABSENT`; no fallback runtime, partial pass or rule
+  relaxation is allowed.  This I4 choice is **not execution approval**.  User
+  execution approval waits until the corrective implementation passes a second
+  Codex acceptance review.
