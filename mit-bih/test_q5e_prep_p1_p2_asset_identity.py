@@ -3237,6 +3237,93 @@ def test_the_execution_approval_opens_only_what_it_names():
           "SOURCE_MATCH_ORACLE_RECORD is still unregistered")
 
 
+def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
+    """A path that exists is not a repository.
+
+    The first version fell back to `os.getcwd() + '/..'` when `/content/repo`
+    was absent.  In Colab the cwd is `/content`, so that resolves to `/`, and
+    `sys.path` got `/mit-bih` — which does not exist, so the very first import
+    died with ModuleNotFoundError.  The fallback was confidently wrong: it
+    produced a path rather than admitting it had not found one.
+
+    So the environment cell now accepts a candidate only when the three
+    modules are actually in its `mit-bih/`, and it raises with instructions
+    rather than handing a bad path to `sys.path`.
+    """
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    env = [c for c in cells if "sys.path" in "".join(c["source"])]
+    check(len(env) == 1, "one cell sets up the import path")
+    body = "".join(env[0]["source"])
+
+    check("os.path.join(os.getcwd(), '..')" not in body
+          and 'os.path.join(os.getcwd(), "..")' not in body,
+          "the guessing parent-directory fallback is gone")
+    check("_is_repo" in body,
+          "a candidate is judged by whether it holds the modules")
+    for name in ("q5d_order_preserving_beat_join.py",
+                 "q5e_leg2_failure_mechanism_audit.py",
+                 "q5e_prep_p1_p2_asset_identity.py"):
+        check(name in body, f"{name} is one of the files it looks for")
+    check("raise RuntimeError" in body,
+          "and it raises rather than continuing with a path it invented")
+
+    # Run the discovery half for real, against layouts that matter. Everything
+    # below the import is cut off; the clone fallback is pointed at a dead URL
+    # so nothing is fetched, and its target is redirected into the test's own
+    # temp directory so a failed attempt cannot leave a stray /content/repo.
+    check("CLONE_TO" in body,
+          "the clone target is a named variable, so it can be redirected")
+    head = body.split("import q5d_order_preserving_beat_join")[0].replace(
+        "https://github.com/ehdbddl06001-ui/my-github-test.git",
+        "file:///nonexistent-so-nothing-is-fetched")
+
+    def discover(cwd, clone_to):
+        namespace = {}
+        previous = os.getcwd()
+        try:
+            os.chdir(cwd)
+            exec(compile(head.replace("CLONE_TO = '/content/repo'",
+                                      f"CLONE_TO = {clone_to!r}"),
+                         "environment_cell", "exec"), namespace)
+            return namespace.get("FOUND")
+        except RuntimeError as error:
+            return f"REFUSED: {error}"
+        finally:
+            os.chdir(previous)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        sink = os.path.join(tmp, "never-created")
+        check(discover(os.path.join(ROOT, "notebooks"), sink) == ROOT,
+              "a cwd inside the repository finds the repository")
+        check(discover(ROOT, sink) == ROOT,
+              "and so does the repository root itself")
+        check(not os.path.exists(sink),
+              "neither of those reached the clone fallback at all")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        holder = os.path.join(tmp, "content")
+        os.makedirs(holder)
+        os.symlink(ROOT, os.path.join(holder, "my-github-test"))
+        check(discover(holder, os.path.join(tmp, "sink"))
+              == os.path.join(holder, "my-github-test"),
+              "a clone one level below the cwd is found by name-independent "
+              "content, not by a hardcoded directory name")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        empty = os.path.join(tmp, "content")
+        os.makedirs(empty)
+        verdict = discover(empty, os.path.join(tmp, "sink"))
+        check(str(verdict).startswith("REFUSED"),
+              f"with nothing to find, it refuses instead of guessing: "
+              f"{verdict}")
+        check("git clone" in str(verdict),
+              "and the refusal tells the user exactly how to fix it")
+        check("토큰을" in str(verdict),
+              "while warning against pasting a token into a saved notebook")
+
+
 def declared_tests():
     """Top-level `test_*` functions, by AST rather than by line prefix."""
     import ast
