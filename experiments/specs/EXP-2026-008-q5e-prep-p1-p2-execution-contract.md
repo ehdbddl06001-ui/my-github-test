@@ -1,0 +1,707 @@
+---
+experiment_id: EXP-2026-008
+substage: Q5E_PREP_P1_P2_ASSET_IDENTITY
+title: Q5-E PREP P1+P2 asset identity execution contract
+status: approved_for_implementation
+design_owner: codex
+implementation_owner: claude
+analysis_only: true
+training_required: false
+dataset: MIT-BIH
+split: none_asset_identity_only
+parent_experiment: EXP-2026-008
+parent_spec: experiments/specs/EXP-2026-008-q5e-leg2-failure-mechanism-audit.md
+primary_metric: none_asset_identity_only
+parent_primary_metric: none_diagnostic_association_only
+created: 2026-08-12
+---
+
+# Status boundary
+
+This document is the **execution contract** for two read-only asset-identity
+preflights, P1 and P2.  It is not a scientific design and produces no
+scientific result: nothing here measures anything about ECG data, and no
+outcome of a P1/P2 run may be cited as a Q5-E finding.
+
+The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`) and has
+**never been executed**.  Running it against the registered assets needs a
+separate read-only user approval that does not exist yet.  A terminal guard in
+`run_prep()` sits after every check and before the first registered read; this
+implementation PR does not remove it.
+
+P3 — the source-matching differential — is **not** in scope here.
+
+# Why these two preflights exist
+
+Two of the three items that stop a Q5-E run are asset identities that were
+never frozen:
+
+| | Item | Current state | Q5-E stop |
+|---|---|---|---|
+| **P1** | MIT-BIH publisher tree aggregate | recorded only as `0b46a411…` | `INPUT_IDENTITY_REGISTRATION_REQUIRED` |
+| **P2** | canonical Q5-D bundle input digests | not recorded anywhere | `SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` |
+
+A truncated digest is not an execution contract: it cannot be recomputed from,
+and it must not be expanded or guessed.  A bundle whose contents are unpinned
+is not identified either — file presence plus a `code_sha256` string in
+`manifest.json` would still accept a bundle whose CSVs had been edited.
+
+# Independence
+
+P1 and P2 are scientifically independent gates.
+
+- Neither overwrites the other's verdict.
+- Each keeps its own status and its own first failing gate.
+- The combined verdict is `PREP_P1_P2_PASS` **only** when both pass.
+- If either fails, nothing becomes eligible for registration.  The passing
+  gate's **observation is still reported** — erasing measured evidence makes a
+  run harder to diagnose, not safer — but its
+  `eligible_for_registration` is false.
+- A failure is never resolved by relaxing a rule.
+
+# P1 — MIT-BIH publisher tree identity
+
+Gates, in order.  Each must pass before the next runs, and the aggregate is
+computed **only** after the first three have passed, so a failing tree never
+produces a number that could be mistaken for a registration candidate.
+
+1. **`expected_file_set`** — exactly `BJ.mitdb_expected_files()`, which is 147
+   names and already contains `SHA256SUMS.txt`.  `missing = 0` and
+   `unexpected = 0`, or `P1_MITDB_FILE_SET_MISMATCH`.
+2. **`checksum_file_digest`** — the SHA-256 of `SHA256SUMS.txt` itself against
+   the value registered in `research/ASSETS.md :: data-mitdb-raw-100`.  On
+   failure, `P1_MITDB_CHECKSUM_FILE_MISMATCH`; the publisher list is **not**
+   consulted, because nothing verified by a list that is not the registered
+   list would count.
+3. **`publisher_checksums`** — the publisher list over the other 146 files:
+   `checked = 146`, `matched = 146`, no mismatch, no unlisted entry, or
+   `P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH`.
+
+**One read of `SHA256SUMS.txt`, not two.**  Gate 2's digest and gate 3's parsed
+list come from the *same* byte snapshot.  Verifying the file through one read
+and then re-opening the registered path to parse it leaves a window in which
+the file changes between the two — the run would then verify one state and act
+on another, which makes the verification decorative.  Gate 3 therefore never
+re-opens the path; the list is parsed from the verified bytes by a PREP-local
+parser held to `BJ.parse_sha256sums`'s conventions (whitespace forms, blank and
+comment lines, `*name`, `./name`, nested paths kept whole, 64-character digests
+only, lowercased) by differential tests over the same inputs.  The frozen
+module is not modified.
+4. **`tree_aggregate`** — the 147-file fold, using the frozen
+   `(name, bytes, sha256)` canonical-JSON convention and no other.  If the
+   observed full digest does not extend the registered prefix `0b46a411`,
+   `MITDB_IDENTITY_DIVERGED`.
+
+**"147/147" means 146 + 1.**  A checksum file cannot appear in its own list,
+and the frozen verifier explicitly skips it.  Stating that the publisher list
+verified all 147 would be false; the contract is 146 publisher-listed files
+plus the separately registered digest of the list itself.
+
+# P2 — canonical Q5-D bundle identity
+
+Target: run `20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE`, Drive folder
+id `1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd`.
+
+**The bundle is chosen by folder id, never by folder name.**  A folder that
+merely has the right name is not evidence, and that substitution is easy to
+make and impossible to notice afterwards.  `run_prep()` refuses any folder id
+other than the registered one.
+
+Gates, in order:
+
+1. **`folder_id_inventory`** — direct children of the registered folder id,
+   read-only, recording file id, name, bytes, modified time, provider checksum
+   and trashed state.
+2. **`inventory_unambiguous`** — no duplicate name, no subfolder, no shortcut,
+   no trashed item, no nameless child, or `P2_INVENTORY_AMBIGUOUS`.
+3. **`directory_contract`** — exactly the frozen `BJ.BUNDLE_FILES` twelve, with
+   `missing = 0` and `unexpected = 0`, or `P2_DIRECTORY_CONTRACT_FAILED`.
+4. **`superseded_absent`** — `SUPERSEDED.json` present is
+   `P2_SUPERSEDED_BUNDLE`.
+5. **`canonical_bytes_bridge`** — bytes come from the folder id.  Streaming by
+   **file id** needs no bridge at all.  Either way the fetched bytes are
+   re-checked against the inventory: length always, `sha256Checksum` when the
+   provider supplies one, `md5Checksum` when it supplies one — and both when
+   both exist. A checksum the provider did not supply is recorded as
+   unavailable, never guessed, and its absence alone does not fail a direct
+   stream, because the file id already ties the bytes to the folder. MD5 is a
+   provider **transfer cross-check**, not a security identity. A mount is
+   accepted only when tied to the inventory by exact name, size and every
+   available provider checksum; a matching folder name is never accepted.  Otherwise
+   `P2_FOLDER_ID_BRIDGE_UNRESOLVED`.
+6. **`manifest_identity`** — `code_sha256` = `6b098c67…` and
+   `rule_fingerprint` = `31c4be9f…`, or `P2_MANIFEST_IDENTITY_MISMATCH`.
+7. **`input_identity`** — the five files Q5-E reads: individual SHA-256 plus
+   the subset fold.
+
+**Two contracts, kept separate.**  The directory contract is the whole
+twelve-file bundle; the scientific input identity is the five files Q5-E
+actually reads.  The other seven are part of the directory contract and are
+**not** unexpected in the input identity — conflating the two previously
+rejected every genuine bundle.
+
+QA count agreement is never used as identity evidence.  Files are hashed at
+byte level only; parquet is not parsed and no content is aggregated.
+
+# Preserved observations
+
+A gate that fails after doing work keeps what it measured.  Blanking it would
+destroy the only evidence that explains the failure, and it protects nothing:
+what has to be withheld is *eligibility*, not the observation.
+
+**One read is the observation.**  A file's authoritative
+`(name, bytes, sha256)` is whatever P1's single read produced, and nothing may
+revise it.  Explaining *why* a digest differs needs the bytes themselves, and
+re-reading is a different moment — on a live tree the file may have changed —
+so anything derived from a later read is reported under
+`second_read_non_authoritative` and never merged into the observation.  Its
+content-derived fields (line endings, BOM, excerpts) appear **only** when the
+second read hashes to the same value as the first; when the two disagree, that
+instability is the finding and no excerpt is offered, because it would describe
+bytes the gate never judged.
+
+- A `P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH` keeps all 147 per-file
+  `(name, bytes, sha256)` observations and the mismatched/unlisted detail, with
+  `tree_aggregate: null`, `gate_passed: false`,
+  `eligible_for_registration: false`, `observation_only: true` and
+  `blocked_by: P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH`.  The aggregate is
+  withheld because folding an unverified tree produces a number indistinguishable
+  in form from a registration candidate.
+- A gate that stops before anything is hashed reports an empty `per_file`,
+  because nothing was measured.  An empty observation and a withheld one are
+  different claims and are not conflated.
+- A P2 failure after `canonical_bytes_bridge` keeps the bridge and its per-file
+  cross-checks, with `input_identity: null` — that gate was never reached.
+
+# Authentication and scope
+
+Authentication is part of the guarded route, not of the notebook.  A notebook
+cell that built an adapter would mint a credential the terminal guard never
+saw, which is the guard defeated by convenience.  `run_prep()` therefore runs
+in exactly this order, and the notebook calls it with `adapter=None`:
+
+1. `OPEN_REGISTERED_DATA` switch
+2. PREP execution approval token
+3. registered folder id
+4. **terminal execution guard**  ← the one line an execution-approval PR removes
+5. runtime dependency check
+6. credential acquisition and read-only scope proof
+7. Drive v3 service and adapter construction
+8. P1/P2 readers and Drive API calls
+
+The credential is requested with exactly
+`https://www.googleapis.com/auth/drive.readonly` and is passed explicitly to
+the client; the adapter never constructs a default client, because a default
+client silently adopts an ambient credential whose scope nobody checked.  The
+run records a machine-readable audit — `requested_scopes`, `observed_scopes`,
+`exact_readonly_scope_proven`, `credential_type`, `service_api`/`service_version`,
+`no_write_adapter_methods` — and never a token, credential or authorization
+header.
+
+A credential whose scopes cannot be observed, or which carries anything beyond
+the read-only scope, stops the run with `P2_READONLY_SCOPE_UNPROVEN`.  A
+broader credential is **not** accepted merely because it includes the scope we
+need: "read-only" would then be a claim the code cannot support.  Having no
+write method on the adapter bounds the *adapter*, not the credential, and is
+reported separately rather than offered as the proof.  If the platform cannot
+produce an exactly read-only credential, that is reported and production
+execution is blocked rather than described loosely.
+
+# Runtime identity
+
+Each bundle's `config.json` and `manifest.json` record the environment the run
+happened in: Python version, platform, the `google-auth`,
+`google-api-python-client` and `google-colab` versions, the requested Drive
+scope and whether it was proven, and the SHA-256 of the PREP module, the Q5-E
+module and the frozen Q5-D module.  A digest is only as interpretable as the
+run that produced it, and this cannot be reconstructed afterwards.
+
+Nothing is installed or upgraded to make the record tidier: a version that
+cannot be determined is written as `unavailable`, never as `latest` and never
+guessed.  No credential, token or local path is recorded.
+
+# What a run may not do
+
+Open a DS2 per-beat label or a V10 probability, run `detect_r()`, aggregate
+M0-M4, re-run the beat join, compute an association or S PR-AUC, train
+anything, or modify, move, delete or overwrite any Drive artifact.  Credentials
+and local paths never enter a bundle.
+
+# Bundle and identity
+
+A production run writes exactly:
+
+`config.json` · `decision.json` · `log.txt` · `registration_candidates.json` ·
+`source_inventory.json` · `summary.md` · `manifest.json` · `COMMITTED.json`
+
+The payload set is **P1/P2-specific** (`P1_P2_PREP_PAYLOAD_FILES`) and is not
+inherited from P3's list: the oracle harness and fixture-result files belong to
+the differential and have no business in an asset-identity bundle, not even as
+sealed placeholders.  Only the fold algorithm and the canonical-JSON
+convention are shared with Q5-E.
+
+A synthetic run additionally writes `SYNTHETIC_FIXTURE.json`, and that marker
+is **inside** the payload fold — deleting or editing it breaks the recomputed
+digest, which is what "no file outside the payload identity" has to mean.
+`manifest.payload_files` records the actual fold target for the run's kind, so
+a reader never has to guess which set was folded.
+
+**Non-self-referential identity.**  `prep_payload_sha256` folds every payload
+file and **excludes `manifest.json`**, which is the file that records it — a
+manifest containing its own digest is circular by construction.  The
+manifest's own SHA-256 is returned by the writer for freezing **outside** the
+bundle and is deliberately absent from every file inside it.  The primary
+external record is the saved notebook output of the final report cell, which
+prints the full 64-hex value together with `prep_payload_sha256`; the result
+acceptance PR copies both into this document's Decision log and the
+registration record.  No sidecar file is introduced — an extra artifact would
+need its own location, atomicity and identity contract before it could carry
+evidence.
+
+# Publication: a commit marker, not an atomic rename
+
+**The atomic-directory-publication claim is withdrawn.**  An earlier version
+staged the bundle elsewhere and published it with `rmdir(directory)` followed
+by `rename(staging, directory)`.  Those are two operations, and a directory
+that appears at the target between them is *replaced* by POSIX `rename` — the
+kernel does this silently as long as the directory is empty, which a regression
+test pins as a platform fact.  Claiming the name with `mkdir` closed the
+earlier `lexists`-then-rename window but not this one, because the claim was
+given back immediately before the rename took it.
+
+Linux offers `renameat2(RENAME_NOREPLACE)`, which genuinely is atomic and
+no-replace, and it works on this container's filesystem.  It is **not** used:
+the production output path is a Google Drive FUSE mount, where the flag is not
+dependable, and a fallback that quietly degrades to plain `rename` would be the
+same defect wearing a safer name.
+
+So the directory is written in place and its **completeness** is what is made
+indivisible instead:
+
+1. `os.mkdir(directory)` — one operation that either creates the name or
+   fails.  It never replaces and never follows: an existing file, empty
+   directory, non-empty directory, symlink or junction all raise, and the run
+   stops.  A symlinked or reparse-point parent is refused for the same reason.
+2. every payload file, then `manifest.json`, written inside the claim — each
+   one an **exclusive create** (`O_CREAT | O_EXCL | O_BINARY`), never
+   `open(..., "w")`.  Claiming the directory says nothing about the names
+   inside it: a writer that got to `config.json` first must keep its bytes,
+   and a truncating write would replace them silently and commit on top.
+   `O_BINARY` (absent, and therefore 0, on POSIX) is what keeps the file equal
+   to the bytes handed in: a Windows text-mode descriptor rewrites every `\n`
+   as `\r\n` on the way out, so the digest the writer records — taken from
+   what it passed — would describe bytes that never reached the disk, and a
+   normal run would fail its own consumer check.  The write loop retries a
+   short `os.write`, because a partial write leaves a truncated file that
+   still hashes to something, and refuses a write that returns 0 rather than
+   spinning forever.
+3. `COMMITTED.json` created last, the same way, recording the bundle file set,
+   the payload file list and `prep_payload_sha256`.
+
+**A directory without `COMMITTED.json` is not a bundle.**  It is an incomplete
+or failed write, and `verify_published_bundle()` refuses it.  This is stronger
+than atomic appearance, not weaker: it survives a crash, and it also catches
+truncation and post-hoc editing, which a rename never could.
+
+`COMMITTED.json` deliberately does **not** record its own digest or the
+manifest's.  The manifest's SHA-256 stays outside the bundle exactly as before
+— a digest stored inside the artifact it describes is rewritten by whoever
+edits that artifact, so it would look like a freeze record without being one.
+
+**Consumer validation: the marker is checked, not trusted.**  Any reader of a
+PREP bundle — including the run itself, immediately after writing, so a run
+that cannot validate its own output fails rather than reporting success — must
+call `verify_published_bundle(directory, expected_manifest_sha256=...)`.
+
+Taking the file list and the fold *out of the marker* would make the marker
+self-certifying: editing a payload file and rewriting the marker's own fold
+would produce a bundle that verifies.  So every set and every duplicated field
+is checked against the **fixed code contract** and cross-checked between the
+two records the run writes:
+
+- the directory's file set equals `bundle_files(synthetic)` — the code
+  contract, not the marker's `bundle_files`
+- `payload_files` in *both* the marker and the manifest equals
+  `payload_files(synthetic)`
+- the payload fold is **recomputed** over the contracted payload list and must
+  equal the marker's *and* the manifest's recorded value, and those two must
+  equal each other
+- `experiment_id` and `substage` match the module constants in both records;
+  `timestamp` matches between them
+- `synthetic_fixture` agrees between the two records and `ingestable` is its
+  negation in each.  Which contract applies follows from that agreed flag, so
+  relabelling a synthetic bundle as ingestable fails on the file set — the
+  synthetic marker file is part of the fixed set for one value and absent from
+  it for the other.
+
+**Types are checked, not coerced.**  Every contract flag is written as a real
+JSON boolean, and the verifier requires exactly that:
+
+- `committed` must be `True` by identity.  It is the claim the marker exists
+  to make, so a marker that says `false`, omits the field, or carries `"true"`
+  or `1` is a record of a write that did not finish — and no manifest digest,
+  however correct, can make that claim on its behalf.
+- `synthetic_fixture` and `ingestable` must each be of type `bool` in both
+  records, and `ingestable` must be `not synthetic_fixture`.
+- `timestamp` must be a string in both records and identical between them.
+
+Truthiness is not accepted anywhere here, because `bool("false")` is `True`:
+under coercion, a value that reads as a denial would have been taken as an
+assertion, and the more alarming the value looked the more certainly it would
+have passed.  A violation is recorded in `problems` with `structure_ok: false`
+and `acceptance_eligible: false` — never raised.
+
+A malformed or truncated `COMMITTED.json` or `manifest.json` is a **finding**,
+returned as `ok: false` with a problem list.  It never raises: a parse error
+escaping to the caller would turn the thing this verifier exists to detect into
+a crash.
+
+**Structure is not acceptance, and a digest is not provenance.**
+`manifest.json` is outside the payload fold, so nothing inside the bundle can
+vouch for it.  The caller therefore supplies both the digest **and where it
+came from**, as `manifest_anchor_source`, drawn from a fixed enum:
+
+| source | meaning | external? |
+|---|---|---|
+| `same_run_self_check` | the value this run just computed | no |
+| `saved_notebook_output` | the saved output of the report cell | **yes** |
+| `registered_record` | the value in this Decision log / registration | **yes** |
+| `none` | no digest supplied | no |
+
+*Matching* and *being anchored* are different facts and are reported
+separately, as `manifest_digest_matches_expected` and
+`manifest_anchored_externally`.  A run comparing the manifest against the
+digest it computed seconds earlier has confirmed that its own two lines of code
+agree — worth doing, and not evidence that the file has not been edited since,
+because there is no "since" yet.  Only an external source can make a bundle
+`acceptance_eligible`.
+
+An unrecognised, empty or missing source is **refused**, not quietly treated as
+external; naming a source without supplying a digest is refused too.  Passing a
+string is not provenance.
+
+Accordingly, a run's own immediate self-check returns `structure_ok: true`,
+`manifest_digest_matches_expected: true`,
+`manifest_anchor_source: same_run_self_check`,
+`manifest_anchored_externally: false` and `acceptance_eligible: false` — and
+its printed lines say the same thing.  A machine verdict that contradicts its
+own prose is worse than either alone.
+
+**Nothing is deleted, ever** — not a pre-existing path, and not the writer's
+own directory.  A failed run leaves its partial, uncommitted directory exactly
+where it is, at a reported path, because that is where a diagnosis will look
+for it.
+
+# Registration
+
+A run produces **candidates**, not registrations.  `registration_candidates.json`
+records the observed `MITDB_TREE_AGGREGATE` and the five
+`SOURCE_BUNDLE_FILE_SHA256` values with `applied_automatically: false`.
+
+**Observations are preserved; only eligibility is withheld.**  When one gate
+fails, the other gate's measurement is still reported — erasing it would
+destroy audit evidence and make the run harder to diagnose, not safer.  Each
+entry carries `observed`, its own `gate_passed`, the shared
+`combined_registration_allowed`, and `eligible_for_registration`, which is true
+only when both hold.  A value that was never computed, because its gate stopped
+earlier, stays `None` because there is nothing to report.  The aggregate
+preserved on `MITDB_IDENTITY_DIVERGED` is marked `observation_only` — a
+diagnostic observation from a failed gate, explicitly not a candidate.
+
+Nothing in `mit-bih/q5e_leg2_failure_mechanism_audit.py` or in the Q5-E spec is
+edited by a run.  The values enter the codebase only through a **separate
+result-acceptance PR** after Codex reviews the run, and both must be written
+into the spec and the module together.
+
+# Result acceptance criteria
+
+Fixed **before** any measurement exists, so a result review cannot be argued
+into a looser standard afterwards.  A run is accepted only when every item
+below is present and correct in the bundle.
+
+**P1**
+
+- gate order as emitted, matching `P1_GATE_ORDER`
+- expected file count 147, `missing = 0`, `unexpected = 0`
+- `SHA256SUMS.txt` self digest equal to the registered value
+- publisher `checked = 146`, `matched = 146`
+- `mismatch = 0`, `unlisted = 0`
+- full aggregate present, 64-hex, prefix matching `0b46a411`
+- a **call audit** showing the aggregate was computed only after gates 1–3
+  passed, and that a checksum-file failure would have read no other file
+
+**P2**
+
+- evidence of a direct **folder id** query, not a name search
+- the exact child set the folder id returned
+- every ambiguity category zero: duplicate name, duplicate file id, missing
+  file id, nameless, subfolder, shortcut, trashed, Google-native, sizeless
+- twelve-file directory contract, `missing = 0`, `unexpected = 0`
+- `SUPERSEDED.json` absent
+- per-file cross-check: file id, inventory size vs observed size, provider
+  sha256 and md5 where available, and the download method used
+- `code_sha256` and `rule_fingerprint` both matching the registered values
+- the five Q5-E input files with name, bytes and SHA-256
+- the five-file subset fold
+- confirmation that the other seven files are not reported as input-unexpected
+
+**Bundle**
+
+- `COMMITTED.json` present with `committed: true` as a JSON boolean — without
+  it the directory is not a bundle and the run is not accepted
+- `synthetic_fixture`, `ingestable` booleans and a string `timestamp`,
+  agreeing across both records
+- the actual file set, equal to the contracted set for that run kind and to the
+  set recorded in the marker
+- `manifest.payload_files` equal to the fold target actually used
+- payload fold recomputes to the recorded `prep_payload_sha256`
+- the manifest does not contain its own digest, and neither does the marker
+- `verify_published_bundle()` returns `acceptance_eligible: true` when given
+  the frozen manifest digest **and** an external
+  `manifest_anchor_source` (`saved_notebook_output` or `registered_record`).
+  `structure_ok` alone is not sufficient, and neither is a digest whose origin
+  is the run itself — the run's own self-check is expected to report
+  `acceptance_eligible: false`.
+- the manifest's SHA-256 present in the notebook output or ingest log as the
+  external freeze record
+- `synthetic_fixture: false` and `ingestable: true` for a production run
+- no credential field and no local path anywhere in the bundle
+- P1 and P2 verdicts and `first_failure` values recorded independently
+- observations preserved even where the other gate failed
+- `eligible_for_registration` per candidate, and `applied_automatically: false`
+- `config.runtime` present with a real Python version, platform, and a version
+  or the literal `unavailable` for each recorded distribution — never `latest`
+- `config.drive_authentication.exact_readonly_scope_proven` true for a
+  production run, with `observed_scopes` equal to the single read-only scope
+- no token, credential or authorization field anywhere in the bundle
+
+**Notebook output** (the saved report cell, which is also the external freeze
+record):
+
+- P1 and P2 status and `first_failure`
+- a per-gate PASS / STOP table for both legs, with unreached gates shown as
+  unreached rather than as passes
+- P1's 146 + 1 result, spelled out
+- P2's inventory method (folder id, not name search) and bridge method
+- the scope proof result
+- provider checksum availability and match per file
+- preserved observations, `gate_passed`, `eligible_for_registration` and
+  `blocked_by`
+- the full 64-hex `prep_payload_sha256` and `manifest_sha256_freeze_externally`
+- the commit and consumer-validation result: `COMMITTED.json` present,
+  `structure_ok`, the recomputed payload fold,
+  `manifest_digest_matches_expected`, `manifest_anchor_source`,
+  `manifest_anchored_externally`, `acceptance_eligible` with its stated
+  reason, and the directory path if the run did not commit
+- the next action
+
+# Order
+
+1. Codex implementation acceptance of this PREP
+2. user merge judgement
+3. separate user **read-only execution** approval
+4. P1 + P2 run, bundle preserved
+5. Codex result acceptance
+6. separate registration PR writes the two values
+7. P3 approval, implementation, execution, acceptance
+8. only then is a Q5-E execution approval considered
+
+# Decision log
+
+## 2026-08-12 — P1/P2 implemented; never executed
+
+The implementation lands with both gates complete, the Drive access confined to
+one read-only adapter seam, and the terminal guard in place.  No registered
+asset was opened, no Drive API was called, no digest was computed against real
+bytes, and no value was registered.  Every test is synthetic: the publisher
+list in the P1 fixture is generated from the fixture's own bytes rather than
+copied from the real tree, so no test can pass by memorising a real digest.
+
+The file name `q5e_prep_p1_p2_asset_identity.py` follows the existing
+`mit-bih/q5e_*` convention; the notebook follows `notebooks/questNN_*`.  This
+document is a separate execution contract rather than a section of the Q5-E
+spec because its status, scope and approval boundary are its own — it is an
+asset-identity preflight, not part of the frozen diagnostic design.
+
+The manifest self-digest freeze slot is deliberately empty: it is filled in
+this Decision log when a real run is accepted, and never from inside a bundle.
+
+## 2026-08-12 — second acceptance round: guard, scope, snapshot, observations
+
+Five corrections, all to the implementation and none to the science.  The
+scientific question, split, metrics and stopping conditions are unchanged.
+
+**The notebook was authenticating above the guard.**  Cell 5 built the Drive
+adapter itself and handed it to `run_prep()`, so a credential was minted before
+the terminal guard was ever reached — the guard was intact and irrelevant.
+Authentication now lives inside `run_prep()`, below the guard; the notebook
+passes `adapter=None` and its preflight cell reports the folder id, the
+dependency list and the scope contract while making zero auth, service and API
+calls.  A spy test makes every one of those seams raise if touched, and runs
+the approved route with the guard alive to show the count really is zero rather
+than "refused".
+
+**The read-only scope was declared but not applied.**  A constant nobody passes
+to a call proves nothing.  The credential is now acquired explicitly, requested
+with exactly the read-only scope, audited, and passed to the client; anything
+short of exactly that scope stops with `P2_READONLY_SCOPE_UNPROVEN`, including
+a broader credential that happens to include it.  The production adapter no
+longer builds a default client, which was the remaining path to an unaudited
+ambient credential.
+
+**`SHA256SUMS.txt` was read twice.**  Gate 2 hashed it and gate 3 re-opened it
+through the frozen verifier, so a file swapped in between would be verified in
+one state and parsed in another.  Both steps now work from one byte snapshot,
+with a PREP-local parser held to the frozen parser's conventions by
+differential tests across eighteen list dialects.  A reader that rewrites the
+file the moment it has been read leaves the verdict unchanged; before the fix
+the same fixture changed which list the 146 files were checked against.
+
+**Failing gates were discarding what they had measured.**  A publisher-checksum
+failure now keeps all 147 per-file digests and the mismatch detail with the
+aggregate withheld, and a P2 manifest failure keeps the bridge cross-checks
+with `input_identity` null.  This is the same principle already applied to the
+passing leg's observation: withhold eligibility, never evidence.
+
+**The runtime was unrecorded.**  Interpreter, platform, client library
+versions, requested scope and the three module digests now go into
+`config.json` and `manifest.json`.  Nothing is installed to fill a gap — an
+undeterminable version is written as `unavailable`.
+
+Also hardened, following the same reasoning as the earlier publish work: the
+final path is claimed atomically with `mkdir` instead of being tested and
+renamed onto later, and symlink and reparse-point targets and parents are
+refused.  Every one of these fixes was checked by reverting it and watching the
+new test fail.
+
+Still true, and still deliberately so: nothing has been executed, no registered
+asset has been opened, no digest computed against real bytes, no value
+registered, and the terminal guard is untouched.
+
+## 2026-08-12 — the publish was still test-then-act; atomicity claim withdrawn
+
+Codex was right, and the claim I made in the previous entry was wrong. Claiming
+the name with `mkdir` closed the `lexists`-then-rename window, but the publish
+then did `rmdir(directory)` and `rename(staging, directory)` — two operations
+again, with the claim given back before the rename took it. A regression test
+now pins the platform fact that made this unsafe: POSIX `rename` replaces a
+pre-existing *empty* directory, so a directory created in that window would
+have been destroyed without a trace.
+
+`renameat2(RENAME_NOREPLACE)` was measured and does work on this container's
+filesystem, but the production output path is a Drive FUSE mount where the flag
+is not dependable, and a silent fallback to plain `rename` would reproduce the
+defect under a safer-sounding name. So rather than keep a claim that only holds
+on some filesystems, the atomic-directory-publication claim is withdrawn and
+the design changed: the bundle is written in place inside the `mkdir` claim and
+committed with a `COMMITTED.json` marker created last under `O_CREAT | O_EXCL`.
+There is now no rename, no `rmdir`, and no deletion of any kind in the writer —
+a test asserts that by AST rather than by comment.
+
+What replaces atomic appearance is a consumer contract, and it is stronger:
+`verify_published_bundle()` refuses a directory without the marker, checks the
+file set against the committed set, and recomputes the payload fold. It catches
+truncation and post-hoc editing, which a rename never could. The run calls it
+on its own output before reporting success. The manifest is not in the payload
+fold and its digest deliberately stays outside the bundle, so it is anchored by
+passing the externally frozen value in — a digest stored inside the artifact it
+describes is rewritten by whoever edits that artifact.
+
+Second correction: the publisher-mismatch detail re-read the registered file to
+explain the difference, which mixes bytes from a second moment into a finding
+about the first. The authoritative `(name, bytes, sha256)` now comes only from
+the single read, and the explanatory material sits under
+`second_read_non_authoritative` — with its content-derived fields suppressed
+entirely when the second read disagrees with the first, since they would
+describe bytes no gate ever judged.
+
+Both fixes were checked by reverting them and watching the new tests fail.
+
+## 2026-08-12 — the claim covered the directory but not the files in it
+
+Two more real defects, both measured before being fixed, and both cases of the
+same mistake: treating an earlier check as if it covered a later action.
+
+**The directory claim did not extend to the file names inside it.**  Having
+`mkdir`ed the directory, the writer filled it with `open(..., "w")`, which
+truncates.  A writer that reached `config.json` first had its bytes replaced by
+ours and the run committed on top — reproduced with the race hook before the
+fix.  Every file the writer produces is now an exclusive create, so whoever got
+to a name first keeps it and the run refuses to commit; the write loop also
+handles a short `os.write`, which would otherwise leave a truncated file that
+still hashes to something. Fixtures cover an intruder creating `config.json`,
+`log.txt`, `summary.md`, `manifest.json` and the synthetic marker: each keeps
+its bytes and the directory is left with no `COMMITTED.json`.
+
+**The verifier trusted the marker it was verifying.**  It read the payload list
+and the fold out of `COMMITTED.json`, so editing `summary.md` and rewriting the
+marker's fold produced a bundle that returned `ok: true` with
+`manifest_anchored_externally: true` even when the correct manifest digest was
+supplied — the manifest was hashed but never parsed, so its own record of the
+fold went unread. Now both records are parsed, every set and duplicated field
+is checked against the fixed code contract, and the recomputed fold must equal
+both recorded folds and they each other. Malformed or truncated JSON returns a
+structured verdict instead of raising.
+
+## 2026-08-12 — text-mode newlines, and flags read by truthiness
+
+Two more, both measured. Neither changes any gate, threshold or metric.
+
+**The writer's descriptor was not binary.** `os.open` without `O_BINARY` opens
+in text mode on Windows and rewrites every `\n` on the way out, so the file on
+disk is not the buffer the caller hashed. The recorded manifest digest would
+describe bytes that never existed, and a perfectly good synthetic run would
+fail its own consumer check with what looks like corruption. Simulating the
+translation reproduces exactly that — `manifest digest … != the externally
+frozen …` — and the fix is one flag, which `getattr` makes a no-op on POSIX.
+The invariant is now held directly by a test: what `_write_new_file` was handed
+and what a reader gets back are byte-identical, across unix newlines, CRLF
+already present, a lone carriage return, embedded nulls and high bytes, and an
+empty file. A write returning 0 is refused rather than retried, since a silent
+hang is worse than a named failure; short writes are still retried to the end.
+
+**The verifier read contract flags by truthiness.** `bool("false")` is `True`,
+so a marker whose `synthetic_fixture` said `"false"` was read as saying yes —
+the more alarming the value, the more certainly it passed. And `committed` was
+never checked at all, so a marker that recorded an unfinished write became
+`acceptance_eligible` as soon as a correct manifest digest was supplied. Both
+are now checked by identity and by type: `committed is True`,
+`synthetic_fixture` and `ingestable` of type `bool` with the latter the
+negation of the former, `timestamp` a string and equal across both records.
+Violations are problems, not exceptions. Missing, `null`, `0`, `1`, `"true"`
+and `"false"` are all covered by fixtures.
+
+## 2026-08-12 — a digest handed over is not a digest held elsewhere
+
+Codex's final review found the machine verdict contradicting the code's own
+prose, and it was right. `execute_prep()` passed `verify_published_bundle()`
+the digest `write_bundle()` had returned seconds earlier, and the verifier —
+seeing *a* digest — reported `manifest_anchored_externally: true` and
+`acceptance_eligible: true`, while the very next line printed that the saved
+notebook output was still needed. Whichever a reader believed, they were
+misled.
+
+The mistake was treating the presence of a digest as provenance. Matching a
+value the run computed itself confirms that its own two lines of code agree; it
+is not evidence the file has not been edited since, because there is no "since"
+yet. So the two facts are now separate — `manifest_digest_matches_expected` and
+`manifest_anchored_externally` — and the caller must declare where its value
+came from, as one of `same_run_self_check`, `saved_notebook_output`,
+`registered_record` or `none`. Only the middle two are external, and only they
+can carry `acceptance_eligible`. An unrecognised, empty or missing source is
+refused rather than assumed external, and naming a source without a value is
+refused too.
+
+The run's own check now reports `acceptance_eligible: false` with
+`manifest_anchor_source: same_run_self_check`, which is exactly what its
+printed lines say. A regression test asserts the returned dict and the emitted
+words agree, because the failure here was not a wrong flag but a disagreement
+between two things the same function said.
+
+Related, and worth stating rather than leaving implicit: structural validity is
+now reported separately from `acceptance_eligible`. `manifest.json` sits
+outside the payload fold, so a bundle whose manifest was never anchored against
+the external freeze value cannot be promoted to an acceptance pass, and the
+verifier says so in words rather than only in a flag. The run's own call checks
+self-consistency against the digest it just computed; the external anchor
+remains the saved notebook output.
