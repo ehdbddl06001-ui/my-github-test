@@ -152,6 +152,11 @@ P1_P2_PREP_PAYLOAD_FILES: Tuple[str, ...] = (
     "config.json", "decision.json", "log.txt",
     "registration_candidates.json", "source_inventory.json", "summary.md")
 PREP_MANIFEST_FILE = "manifest.json"
+#: Written last, with `O_EXCL`.  Its presence is what makes a directory a
+#: bundle; publication is not a rename, so nothing else can say so.  Excluded
+#: from the payload fold for the same reason as the manifest: it records the
+#: fold, so folding it in would be circular.
+COMMIT_MARKER = "COMMITTED.json"
 
 
 def payload_files(synthetic: bool) -> Tuple[str, ...]:
@@ -168,8 +173,9 @@ def payload_files(synthetic: bool) -> Tuple[str, ...]:
 
 
 def bundle_files(synthetic: bool) -> Tuple[str, ...]:
-    """Exactly what a run writes: the payload plus the manifest."""
-    return tuple(sorted(set(payload_files(synthetic)) | {PREP_MANIFEST_FILE}))
+    """Exactly what a committed run holds: payload, manifest, commit marker."""
+    return tuple(sorted(set(payload_files(synthetic))
+                        | {PREP_MANIFEST_FILE, COMMIT_MARKER}))
 
 
 SYNTHETIC_MARKER = "SYNTHETIC_FIXTURE.json"
@@ -610,14 +616,47 @@ def parse_sha256sums_text(text: str) -> Dict[str, str]:
     return out
 
 
-def _benign_difference_report(body: bytes) -> Dict[str, object]:
-    """Cheap explanations for a digest mismatch, from bytes already in hand."""
+def _second_read_detail(reader: "LocalTreeReader", directory: str, name: str,
+                        authoritative_sha256: str) -> Dict[str, object]:
+    """Cheap explanations for a digest mismatch, from a **second** read.
+
+    The authoritative observation of a file is the `(name, bytes, sha256)`
+    taken by the single read in P1's gate 3.  Explaining *why* a digest
+    differs needs the bytes themselves, and re-reading is a different moment:
+    on a live tree the file may have changed in between, so anything derived
+    from the second read describes a state the gate never judged.
+
+    So it is reported under its own key, never merged into the observation,
+    and the content-derived fields appear **only** when the second read hashes
+    to the same value as the first.  When it does not, that instability is
+    itself the finding, and no line counts or excerpts are offered — they would
+    describe bytes that were never the ones measured.
+    """
     out: Dict[str, object] = {
+        "why": ("a second read taken to explain the mismatch; the "
+                "authoritative observation is the single read in gate 3 and "
+                "is not affected by anything here"),
+        "authoritative": False,
+    }
+    try:
+        body = reader.read_bytes(directory, name)
+    except OSError as error:                              # pragma: no cover
+        out["error"] = str(error)
+        return out
+    second = _sha256_bytes(body)
+    out["sha256"] = second
+    out["stable"] = second == authoritative_sha256
+    if not out["stable"]:
+        out["note"] = ("the file changed between the authoritative read and "
+                       "this one; no content-derived detail is reported, "
+                       "because it would describe bytes the gate never judged")
+        return out
+    out.update({
         "bytes_read": len(body),
         "starts_with_bom": body.startswith(b"\xef\xbb\xbf"),
         "has_crlf": b"\r\n" in body,
         "ends_with_newline": body.endswith(b"\n"),
-    }
+    })
     if len(body) > 8192:
         return out
     try:
@@ -665,16 +704,16 @@ def compare_against_publisher_list(files: Sequence[Mapping[str, object]],
             matched += 1
             continue
         problems.append(f"{name}: sha256 differs from the publisher list")
+        # Authoritative: straight from the single read this gate already took.
         detail: Dict[str, object] = {
             "name": name, "published_sha256": want,
             "observed_sha256": observed, "bytes": entry.get("bytes"),
             "read_by_the_join": BJ._is_read_by_the_join(name),
+            "observation_from_single_read": True,
+            # Kept strictly beside the observation, never merged into it.
+            "second_read_non_authoritative": _second_read_detail(
+                reader, directory, name, observed),
         }
-        try:
-            detail.update(_benign_difference_report(
-                reader.read_bytes(directory, name, limit=65536)))
-        except OSError as error:                          # pragma: no cover
-            detail["error"] = str(error)
         mismatched.append(detail)
     considered = sum(1 for e in files
                      if str(e["name"]) != BJ.MITDB_CHECKSUM_FILE)
@@ -1277,10 +1316,10 @@ def registration_candidates(p1: Mapping[str, object], p2: Mapping[str, object],
 # ─────────────────────────────────────────────────────────────────────────────
 # Bundle
 # ─────────────────────────────────────────────────────────────────────────────
-#: Test seam.  Called once after staging is complete and immediately before the
-#: publish, which is the exact window a check-then-rename design leaves open.
-#: Production never sets it; it exists so the race can be reproduced rather
-#: than argued about.
+#: Test seam.  Called once between claiming the directory and filling it —
+#: the only window the publish still has, and one in which the name cannot be
+#: taken, only written into.  Production never sets it; it exists so the
+#: remaining window can be exercised rather than argued about.
 _PUBLISH_RACE_HOOK = None
 
 
@@ -1372,24 +1411,38 @@ def write_bundle(directory: str, config: Mapping[str, object],
                  p1: Mapping[str, object], p2: Mapping[str, object],
                  combined: Mapping[str, object], log_lines: Sequence[str],
                  synthetic: bool = False) -> Dict[str, object]:
-    """Write the PREP bundle, then publish it by rename.
+    """Claim the output directory, write into it, and commit it with a marker.
 
-    Deliberately conservative about deletion.  An earlier draft removed a
-    pre-existing staging directory and an empty final directory, and caught
-    `BaseException` to clean up — all three could destroy someone else's files
-    or a previous run's evidence.  Now: the staging directory is unique to this
-    call, an existing final path is refused rather than removed, nothing
-    pre-existing is deleted, and a failed run's partial staging is **kept** at
-    a reported `.failed` path so it can be inspected.
+    **There is no rename here, and the atomic-directory-publication claim an
+    earlier version made is withdrawn.**  That version staged elsewhere and
+    published with `rmdir(directory)` followed by `rename(staging, directory)`.
+    Those are two operations, and between them a new directory can appear at
+    the target — POSIX `rename` then *replaces* it, silently, as long as it is
+    empty.  Claiming the name with `mkdir` closed the earlier `lexists`-then-
+    rename window but not this one: the claim was given back before the rename
+    took it.  Linux offers `renameat2(RENAME_NOREPLACE)`, which really is
+    atomic, but the production output path is a Drive FUSE mount where that
+    flag is not dependable, and a fallback that silently degrades to plain
+    `rename` would be the same defect wearing a safer name.
 
-    The final path is **claimed** with `os.mkdir` before any staging work
-    rather than merely tested with `lexists`.  A test followed later by a
-    rename leaves a window in which something else can take the name, and
-    POSIX `rename` will happily replace an empty directory — so the test-then-
-    act version could destroy a directory that appeared in between.  `mkdir`
-    is a single atomic operation that fails if *anything* is already at the
-    path (file, empty directory, non-empty directory, symlink or junction), so
-    from the claim onward the name is ours and no one else can create it.
+    So the directory is published in place and its **completeness** is what is
+    made atomic instead:
+
+    1. `os.mkdir(directory)` — one operation that creates the name or fails.
+       It never replaces or follows anything: a file, an empty directory, a
+       non-empty directory, a symlink or a junction all raise.
+    2. every payload file, then `manifest.json`, written inside the claim.
+    3. `COMMITTED.json` created last with `O_CREAT | O_EXCL`.
+
+    A directory without that marker is **not a bundle** — it is an incomplete
+    or failed write, and :func:`verify_published_bundle` refuses it.  That is
+    the consumer's contract, and it is stronger than atomic appearance: it
+    survives a crash, and it also catches truncation and later editing, which
+    an atomic rename never could.
+
+    Nothing pre-existing is ever deleted or replaced, and nothing is deleted at
+    all — a failed run leaves its partial, uncommitted directory exactly where
+    it is, because that is where a diagnosis will look for it.
     """
     payload_names = payload_files(synthetic)
     candidates = registration_candidates(p1, p2, combined)
@@ -1426,41 +1479,41 @@ def write_bundle(directory: str, config: Mapping[str, object],
             f"function does not delete or replace anything that already "
             f"exists — not a file, not an empty directory, not a symlink."
         ) from error
-    claimed = True
-
-    import tempfile                                        # noqa: PLC0415
-    staging = tempfile.mkdtemp(
-        prefix=f".{os.path.basename(os.path.abspath(directory))}.staging.",
-        dir=parent)
     try:
+        if _PUBLISH_RACE_HOOK is not None:
+            # The only window left: between claiming the name and filling it.
+            # Nothing here can take the name away, but something *can* write
+            # into it, and the file-set check below is what catches that.
+            _PUBLISH_RACE_HOOK(directory)
+
         for name, value in payload.items():
-            with open(os.path.join(staging, name), "w",
+            with open(os.path.join(directory, name), "w",
                       encoding="utf-8") as handle:
                 json.dump(value, handle, indent=1, sort_keys=True)
-        with open(os.path.join(staging, "log.txt"), "w",
+        with open(os.path.join(directory, "log.txt"), "w",
                   encoding="utf-8") as handle:
             handle.write("\n".join(str(line) for line in log_lines) + "\n")
         summary = summary_markdown(combined, p1, p2, synthetic)
-        with open(os.path.join(staging, "summary.md"), "w",
+        with open(os.path.join(directory, "summary.md"), "w",
                   encoding="utf-8") as handle:
             handle.write(summary)
         if synthetic:
-            with open(os.path.join(staging, SYNTHETIC_MARKER), "w",
+            with open(os.path.join(directory, SYNTHETIC_MARKER), "w",
                       encoding="utf-8") as handle:
                 json.dump({"synthetic_fixture": True, "ingestable": False,
                            "reason": SYNTHETIC_NOTE}, handle, indent=1,
                           sort_keys=True)
 
-        written = sorted(os.listdir(staging))
+        written = sorted(os.listdir(directory))
         if written != sorted(payload_names):
             raise PrepError(
-                f"refusing to publish: the staged file set {written} is not "
+                f"refusing to commit: the written file set {written} is not "
                 f"the contracted set {sorted(payload_names)}.  A file outside "
                 f"the payload identity would be unaccounted for.")
 
         triples = []
         for name in written:
-            path = os.path.join(staging, name)
+            path = os.path.join(directory, name)
             with open(path, "rb") as handle:
                 body = handle.read()
             triples.append({"name": name, "bytes": len(body),
@@ -1489,56 +1542,156 @@ def write_bundle(directory: str, config: Mapping[str, object],
                      "record"),
         }
         assert_no_credentials(manifest, PREP_MANIFEST_FILE)
-        with open(os.path.join(staging, PREP_MANIFEST_FILE), "w",
+        with open(os.path.join(directory, PREP_MANIFEST_FILE), "w",
                   encoding="utf-8") as handle:
             json.dump(manifest, handle, indent=1, sort_keys=True)
-
-        final_set = sorted(os.listdir(staging))
-        if final_set != sorted(bundle_files(synthetic)):
-            raise PrepError(
-                f"refusing to publish: final file set {final_set} != "
-                f"{sorted(bundle_files(synthetic))}")
-        with open(os.path.join(staging, PREP_MANIFEST_FILE), "rb") as handle:
+        with open(os.path.join(directory, PREP_MANIFEST_FILE), "rb") as handle:
             manifest_digest = _sha256_bytes(handle.read())
 
-        if _PUBLISH_RACE_HOOK is not None:
-            _PUBLISH_RACE_HOOK(directory, staging)
+        before_commit = sorted(os.listdir(directory))
+        expected_before = sorted(set(bundle_files(synthetic)) - {COMMIT_MARKER})
+        if before_commit != expected_before:
+            raise PrepError(
+                f"refusing to commit: file set {before_commit} != "
+                f"{expected_before}")
 
-        # Release our own claim and rename into it.  `rmdir` removes only an
-        # empty directory, and the only empty directory that can be here is
-        # the one this call created moments ago — so if anything found its way
-        # inside, this raises and the bundle is not published rather than
-        # something else being destroyed.
-        os.rmdir(directory)
-        claimed = False
-        # Same-parent rename: same filesystem, so the publish is atomic.
-        os.rename(staging, directory)
-    except Exception as error:
-        # Keep the evidence.  A failed run's partial staging is more useful
-        # than a clean directory, and deleting it is how a diagnosis gets
-        # lost.  Only this call's own directories are ever touched.
-        failed = f"{staging}.failed"
+        # The commit.  `O_EXCL` means this either creates the marker or fails;
+        # it can never overwrite one, so a directory cannot be committed twice
+        # or have its commit record rewritten by a second run.
+        marker = {
+            "committed": True,
+            "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
+            "timestamp": config.get("timestamp"),
+            "bundle_files": sorted(bundle_files(synthetic)),
+            "payload_files": list(payload_names),
+            "prep_payload_sha256": fold,
+            # The manifest's own SHA-256 is deliberately NOT here.  It stays
+            # outside the bundle entirely, exactly as before; a consumer
+            # anchors the manifest by passing the externally frozen value to
+            # verify_published_bundle().  A digest recorded inside the artifact
+            # it describes is rewritten by whoever edits that artifact, so it
+            # would look like a freeze record without being one.
+            "manifest_sha256_recorded_here": False,
+            "manifest_sha256_frozen_externally": True,
+            "synthetic_fixture": bool(synthetic),
+            "ingestable": not synthetic,
+            "note": ("a bundle directory without this marker is an incomplete "
+                     "or failed write, not a bundle; verify_published_bundle() "
+                     "refuses it.  This replaces an atomic-rename publish, "
+                     "which could not be made no-replace on the Drive FUSE "
+                     "mount this writes to"),
+        }
+        assert_no_credentials(marker, COMMIT_MARKER)
+        body = json.dumps(marker, indent=1, sort_keys=True).encode("utf-8")
+        handle = os.open(os.path.join(directory, COMMIT_MARKER),
+                         os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
         try:
-            os.rename(staging, failed)
-        except OSError:                                    # pragma: no cover
-            failed = staging
-        if claimed:
-            # Give the name back, but only if our claim is still empty: a
-            # non-empty directory here belongs to whatever put files in it.
-            try:
-                os.rmdir(directory)
-            except OSError:
-                pass
+            os.write(handle, body)
+        finally:
+            os.close(handle)
+
+        final_set = sorted(os.listdir(directory))
+        if final_set != sorted(bundle_files(synthetic)):   # pragma: no cover
+            raise PrepError(
+                f"refusing to report a publish: final file set {final_set} != "
+                f"{sorted(bundle_files(synthetic))}")
+    except Exception as error:
+        # Keep the evidence exactly where it is.  The directory stays,
+        # uncommitted, which is precisely what marks it as a failed write —
+        # and deleting it is how a diagnosis gets lost.  Nothing is removed.
         raise PrepError(
-            f"PREP bundle was not published: {error}.  The partial staging "
-            f"directory is preserved at {failed!r} for inspection; nothing "
-            f"pre-existing was deleted.") from error
+            f"PREP bundle was not committed: {error}.  The partial directory "
+            f"is preserved at {directory!r} for inspection.  It carries no "
+            f"{COMMIT_MARKER}, so it is not a bundle and no consumer will "
+            f"accept it.  Nothing was deleted or replaced.") from error
     return {"directory": directory, "written": final_set,
             "payload_files": list(payload_names),
             "prep_payload_sha256": fold,
-            # Returned for external freezing; deliberately NOT inside the file.
+            # Returned for external freezing; deliberately NOT inside the
+            # manifest.  `COMMITTED.json` records it too, which is not a
+            # self-reference — the marker does not record its own digest — and
+            # is a completeness check, not the external freeze record.
             "manifest_sha256_freeze_externally": manifest_digest,
+            "committed": True,
             "registration_allowed": bool(combined.get("registration_allowed"))}
+
+
+def verify_published_bundle(directory: str,
+                            expected_manifest_sha256: Optional[str] = None
+                            ) -> Dict[str, object]:
+    """The consumer's contract: is this directory a committed PREP bundle?
+
+    Called by the run itself immediately after writing, so a run that cannot
+    validate its own output fails loudly rather than reporting a success.  It
+    is also what any later reader must use: since publication is no longer a
+    rename, "the directory exists" says nothing, and only the marker plus a
+    recomputed fold does.
+
+    `manifest.json` is not in the payload fold, so the fold alone cannot detect
+    an edited manifest.  Its digest is deliberately absent from the bundle —
+    a digest stored inside the artifact it describes is rewritten by whoever
+    edits that artifact — so the anchor is external: pass the frozen value from
+    the notebook output or the registration record as
+    `expected_manifest_sha256` and it is checked.  Without it the observed
+    digest is reported, and the result says plainly that it was not anchored.
+    """
+    problems: List[str] = []
+    marker_path = os.path.join(directory, COMMIT_MARKER)
+    if not os.path.isfile(marker_path):
+        return {"ok": False, "committed": False, "directory": directory,
+                "problems": [
+                    f"{COMMIT_MARKER} is absent: this is an incomplete or "
+                    f"failed write, not a bundle.  It is not accepted, and it "
+                    f"is not deleted either."]}
+    with open(marker_path, encoding="utf-8") as handle:
+        marker = json.load(handle)
+
+    observed = sorted(os.listdir(directory))
+    declared = sorted(str(n) for n in marker.get("bundle_files") or ())
+    if observed != declared:
+        problems.append(f"file set {observed} != committed {declared}")
+
+    triples = []
+    for name in sorted(str(n) for n in marker.get("payload_files") or ()):
+        path = os.path.join(directory, name)
+        if not os.path.isfile(path):
+            problems.append(f"payload file {name!r} is missing")
+            continue
+        with open(path, "rb") as handle:
+            body = handle.read()
+        triples.append({"name": name, "bytes": len(body),
+                        "sha256": _sha256_bytes(body)})
+    fold = fold_file_triples(triples) if triples else None
+    if fold != marker.get("prep_payload_sha256"):
+        problems.append(
+            f"recomputed payload fold {fold} != committed "
+            f"{marker.get('prep_payload_sha256')}")
+
+    manifest_path = os.path.join(directory, PREP_MANIFEST_FILE)
+    manifest_digest = None
+    if os.path.isfile(manifest_path):
+        with open(manifest_path, "rb") as handle:
+            manifest_digest = _sha256_bytes(handle.read())
+        if (expected_manifest_sha256
+                and manifest_digest != expected_manifest_sha256):
+            problems.append(
+                f"manifest digest {manifest_digest} != the externally frozen "
+                f"{expected_manifest_sha256}")
+    else:
+        problems.append(f"{PREP_MANIFEST_FILE} is missing")
+
+    return {"ok": not problems, "committed": True, "directory": directory,
+            "problems": problems,
+            "prep_payload_sha256": fold,
+            "manifest_sha256": manifest_digest,
+            "manifest_anchored_externally": bool(expected_manifest_sha256),
+            "manifest_note": (
+                "checked against the externally frozen value"
+                if expected_manifest_sha256 else
+                "observed only: no external freeze value was supplied, so the "
+                "manifest is reported rather than anchored"),
+            "synthetic_fixture": bool(marker.get("synthetic_fixture")),
+            "ingestable": bool(marker.get("ingestable"))}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1628,13 +1781,29 @@ def execute_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     written = write_bundle(
         directory, build_config(timestamp, synthetic, auth_audit),
         p1, p2, combined, log, synthetic=synthetic)
-    return {"p1": p1, "p2": p2, "combined": combined, "bundle": written}
+
+    # Validate the bundle the same way any later consumer must.  A run that
+    # cannot verify its own output must not report a success: publication is
+    # no longer an atomic rename, so "the directory is there" is not evidence
+    # that it is complete.
+    verified = verify_published_bundle(
+        written["directory"],
+        expected_manifest_sha256=written["manifest_sha256_freeze_externally"])
+    if not verified["ok"]:
+        raise PrepError(
+            f"the bundle at {written['directory']!r} does not pass the "
+            f"consumer contract: {verified['problems']}.  It is left in place "
+            f"for inspection and nothing was deleted.")
+    emit(f"bundle committed and verified: {verified['prep_payload_sha256']}")
+    return {"p1": p1, "p2": p2, "combined": combined, "bundle": written,
+            "verified": verified}
 
 
 def module_capabilities() -> Tuple[str, ...]:
     """Names a notebook asserts before use, so a stale clone cannot masquerade."""
     return ("run_prep", "execute_prep", "run_p1", "run_p2", "combine",
-            "registration_candidates", "write_bundle", "fold_file_triples",
+            "registration_candidates", "write_bundle",
+            "verify_published_bundle", "COMMIT_MARKER", "fold_file_triples",
             "DriveFolderAdapter", "GoogleDriveFolderAdapter",
             "LocalTreeReader", "normalise_child", "assert_no_credentials",
             "authenticate_drive_readonly", "build_drive_adapter",

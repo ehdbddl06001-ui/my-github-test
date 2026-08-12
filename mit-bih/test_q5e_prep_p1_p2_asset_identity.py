@@ -777,14 +777,17 @@ def test_bundle_refuses_an_unexpected_output_file():
             check("contracted set" in str(error),
                   "a file set that is not the contract is refused")
             check("preserved at" in str(error),
-                  "and the partial staging is preserved, not deleted")
+                  "and the partial directory is preserved, not deleted")
         finally:
             P.P1_P2_PREP_PAYLOAD_FILES = real
-        check(not os.path.exists(out),
-              "the final path was never created")
-        failed = [n for n in os.listdir(tmp) if n.endswith(".failed")]
-        check(len(failed) == 1,
-              "the failed staging directory is kept for inspection")
+        # The directory stays exactly where it is.  What makes it "not a
+        # bundle" is the missing commit marker, not its absence from disk.
+        check(os.path.isdir(out), "the partial directory is kept on disk")
+        check(not os.path.exists(os.path.join(out, P.COMMIT_MARKER)),
+              "uncommitted, so no consumer will accept it")
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False and verdict["committed"] is False,
+              "and the consumer contract refuses it explicitly")
 
 
 def test_bundle_never_carries_a_credential():
@@ -1180,30 +1183,89 @@ def test_g5_publish_never_deletes_anything_pre_existing():
                       "with its contents untouched")
 
         source = open(P.__file__, encoding="utf-8").read()
-        writer = source.split("def write_bundle(", 1)[1].split("\ndef ", 1)[0]
-        check("rmtree" not in writer,
-              "the writer never calls a recursive delete")
-        check("os.remove" not in writer and "os.unlink" not in writer,
-              "and never deletes a file")
-        # `os.rmdir` appears twice and both are the writer's own claim: it
-        # removes only an *empty* directory, and the only empty directory that
-        # can be at that path is the one this call created moments earlier.
-        check(writer.count("os.rmdir") == 2,
-              "the only deletion is rmdir, releasing the writer's own claim")
+        writer = source.split("def write_bundle(", 1)[1].split(
+            "\ndef verify_published_bundle", 1)[0]
+        for forbidden in ("rmtree", "os.remove", "os.unlink", "os.rmdir",
+                          "os.removedirs"):
+            check(forbidden not in writer,
+                  f"the writer never calls {forbidden}: it deletes nothing at "
+                  f"all, not even its own directory")
+        # No rename means no test-then-act window. There is nothing left to
+        # get wrong between two operations, because there is only one.
+        for forbidden in ("os.rename", "os.replace", "shutil.move"):
+            check(forbidden not in writer,
+                  f"and never calls {forbidden}: publication is a commit "
+                  f"marker, not a rename")
         check("except BaseException" not in writer,
               "and does not catch BaseException")
         check("except Exception as error" in writer,
               "it catches only ordinary exceptions, and names them")
 
 
-def test_g5_the_final_path_is_claimed_before_anything_is_staged():
-    """A path that appears between check and rename cannot be clobbered.
+def test_posix_rename_really_replaces_an_empty_directory():
+    """Why the rename-based publish was withdrawn, pinned as a platform fact.
 
-    The old shape was `lexists()` then, much later, `rename()`.  POSIX
-    `rename` replaces an empty directory, so anything that took the name in
-    between would have been destroyed.  The claim is now a single atomic
-    `mkdir`, so this reproduces the race in the exact window and shows the
-    publish refuses rather than overwrites.
+    The previous design released its claim with `rmdir` and then renamed the
+    staging directory into place.  Those are two operations, and this is what
+    the kernel does to a directory that appears between them.  If this ever
+    stops being true the reasoning in `write_bundle` should be revisited — but
+    it is true on Linux, which is what Colab runs.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        source = os.path.join(tmp, "staging")
+        target = os.path.join(tmp, "target")
+        os.mkdir(source)
+        with open(os.path.join(source, "payload"), "w",
+                  encoding="utf-8") as handle:
+            handle.write("mine")
+        os.mkdir(target)                    # the racing writer's directory
+        replaced = False
+        try:
+            os.rename(source, target)
+            replaced = True
+        except OSError:
+            pass
+        if os.name == "posix":
+            check(replaced,
+                  "POSIX rename replaces a pre-existing empty directory, so "
+                  "rmdir-then-rename could destroy one that appeared in "
+                  "between")
+            check(os.listdir(target) == ["payload"],
+                  "the racing writer's directory is simply gone")
+        else:                                            # pragma: no cover
+            check(True, "not POSIX; the publish makes no rename either way")
+
+    # And the shipped writer therefore has no such sequence to exploit.
+    source = open(P.__file__, encoding="utf-8").read()
+    writer = source.split("def write_bundle(", 1)[1].split(
+        "\ndef verify_published_bundle", 1)[0]
+    import ast
+    tree = ast.parse(open(P.__file__, encoding="utf-8").read())
+    body = [n for n in ast.walk(tree)
+            if isinstance(n, ast.FunctionDef) and n.name == "write_bundle"][0]
+    creators = [n.func.attr for n in ast.walk(body)
+                if isinstance(n, ast.Call)
+                and isinstance(n.func, ast.Attribute)
+                and n.func.attr in ("mkdir", "makedirs", "mkdtemp", "rename",
+                                    "replace", "rmdir", "move")]
+    check(creators.count("mkdir") == 1,
+          f"exactly one mkdir claims the directory: {creators}")
+    check("mkdtemp" not in creators,
+          "there is no staging directory left to publish from")
+    check(not ({"rename", "replace", "rmdir", "move"} & set(creators)),
+          f"and no rename, replace or removal anywhere: {creators}")
+    check(creators.count("makedirs") == 1,
+          "the only other call creates the parent, which is not the claim")
+
+
+def test_g5_a_writer_racing_into_the_claim_is_detected_not_overwritten():
+    """The only window left is "between claiming the name and filling it".
+
+    Nothing can take the name there — `mkdir` already succeeded — but
+    something can write *into* it, and that must be caught rather than
+    committed over.  The file-set check is what catches it, and the result is
+    an uncommitted directory holding both parties' files, which is exactly
+    what a diagnosis needs.
     """
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
@@ -1211,23 +1273,21 @@ def test_g5_the_final_path_is_claimed_before_anything_is_staged():
         combined = P.combine(p1, p2)
         target = os.path.join(tmp, "racy")
 
-        def intruder(directory, staging):
-            # Something lands inside the claimed name in the window that used
-            # to be unguarded.
+        def intruder(directory):
             with open(os.path.join(directory, "intruder.txt"), "w",
                       encoding="utf-8") as handle:
-                handle.write("arrived between check and rename")
+                handle.write("arrived after the claim")
 
         P._PUBLISH_RACE_HOOK = intruder
         try:
             P.write_bundle(target, P.build_config("T", True), p1, p2,
                            combined, ["x"], synthetic=True)
-            raise AssertionError("the publish overwrote the racing writer")
+            raise AssertionError("the publish committed over the racing file")
         except P.PrepError as error:
-            check("not published" in str(error),
-                  "the publish refuses rather than overwriting")
-            check("nothing pre-existing was deleted" in str(error),
-                  "and says so")
+            check("not committed" in str(error),
+                  "the publish refuses to commit")
+            check("Nothing was deleted or replaced" in str(error),
+                  "and says nothing was destroyed")
         finally:
             P._PUBLISH_RACE_HOOK = None
 
@@ -1235,15 +1295,89 @@ def test_g5_the_final_path_is_claimed_before_anything_is_staged():
               "the racing writer's file survives")
         with open(os.path.join(target, "intruder.txt"),
                   encoding="utf-8") as handle:
-            check("between check and rename" in handle.read(),
+            check("after the claim" in handle.read(),
                   "with its contents intact")
+        check(not os.path.exists(os.path.join(target, P.COMMIT_MARKER)),
+              "and the directory is left uncommitted")
+        check(P.verify_published_bundle(target)["ok"] is False,
+              "so the consumer contract refuses it")
 
-        failed = [n for n in os.listdir(tmp) if n.endswith(".failed")]
-        check(len(failed) == 1,
-              "and the failed staging directory is preserved for inspection")
-        staged = os.listdir(os.path.join(tmp, failed[0]))
-        check(sorted(staged) == sorted(P.bundle_files(True)),
-              "with the whole staged bundle still in it")
+
+def test_g5_only_a_committed_directory_is_a_bundle():
+    """Publication is the marker, so every consumer check hangs off it."""
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+        out = os.path.join(tmp, "run")
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 combined, ["x"], synthetic=True)
+
+        verdict = P.verify_published_bundle(
+            out, expected_manifest_sha256=written[
+                "manifest_sha256_freeze_externally"])
+        check(verdict["ok"] is True, "a committed bundle validates")
+        check(verdict["committed"] is True, "and is reported as committed")
+        check(verdict["prep_payload_sha256"] == written["prep_payload_sha256"],
+              "with the payload fold recomputed, not copied")
+        check(verdict["manifest_anchored_externally"] is True,
+              "and the manifest anchored against the external freeze value")
+
+        loose = P.verify_published_bundle(out)
+        check(loose["ok"] is True, "without the freeze value it still passes")
+        check(loose["manifest_anchored_externally"] is False,
+              "but says plainly that the manifest was not anchored")
+
+        # The manifest is outside the payload fold, so the external freeze
+        # value is the only thing that can catch an edited manifest. It has to
+        # actually be compared, not just carried.
+        wrong = P.verify_published_bundle(
+            out, expected_manifest_sha256="f" * 64)
+        check(wrong["ok"] is False,
+              "a manifest that disagrees with the frozen value is refused")
+        check(any("externally frozen" in p for p in wrong["problems"]),
+              "and the external anchor is what reports it")
+        with open(os.path.join(out, P.PREP_MANIFEST_FILE), "a",
+                  encoding="utf-8") as handle:
+            handle.write("\n")
+        edited = P.verify_published_bundle(
+            out, expected_manifest_sha256=written[
+                "manifest_sha256_freeze_externally"])
+        check(edited["ok"] is False,
+              "editing the manifest after the commit fails the anchor")
+        check(P.verify_published_bundle(out)["ok"] is True,
+              "which nothing but the external value could have caught: the "
+              "payload fold does not cover the manifest")
+
+        # The commit marker cannot be written twice, so a committed directory
+        # cannot be re-committed with a different record.
+        try:
+            P.write_bundle(out, P.build_config("T", True), p1, p2, combined,
+                           ["x"], synthetic=True)
+            raise AssertionError("a committed bundle was written over")
+        except P.PrepError as error:
+            check("already there" in str(error),
+                  "a second run refuses the same path outright")
+
+        # Tampering after the fact is what the fold catches — an atomic
+        # rename never could have.
+        with open(os.path.join(out, "summary.md"), "a",
+                  encoding="utf-8") as handle:
+            handle.write("\nedited after the commit\n")
+        after = P.verify_published_bundle(out)
+        check(after["ok"] is False, "an edited payload file fails validation")
+        check(any("payload fold" in p for p in after["problems"]),
+              "and the recomputed fold is what reports it")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        bare = os.path.join(tmp, "not-a-bundle")
+        os.mkdir(bare)
+        verdict = P.verify_published_bundle(bare)
+        check(verdict["ok"] is False and verdict["committed"] is False,
+              "a directory with no marker is not a bundle")
+        check("not deleted" in " ".join(verdict["problems"]),
+              "and refusing it does not mean removing it")
+        check(os.path.isdir(bare), "it is still there afterwards")
 
 
 def test_g5_publish_refuses_a_symlinked_parent_or_target():
@@ -1710,10 +1844,29 @@ def test_b7_claims_match_the_code():
           "the contract states that observations are preserved")
     check("only eligibility is withheld" in flat,
           "and that only eligibility is withheld")
-    check("nothing pre-existing is deleted" in flat,
-          "the atomic-publish claim is scoped to no-delete behaviour")
+    check("nothing is deleted, ever" in flat,
+          "the contract states that nothing is deleted")
     check("not even the passing gate's observation" not in flat,
           "the old blanket-withholding sentence is gone")
+
+    # The publish claim has to match what the code actually guarantees. The
+    # code no longer renames, so the contract must not promise atomicity.
+    check("atomic-directory-publication claim is withdrawn" in flat,
+          "the withdrawn atomicity claim is stated as withdrawn")
+    check("published by a same-parent rename" not in flat,
+          "and the old rename sentence is gone")
+    check("so the publish is atomic" not in text,
+          "the module makes no atomic-publish claim either")
+    check("a directory without `committed.json` is not a bundle" in flat,
+          "the contract states what publication now means")
+    check("verify_published_bundle" in flat,
+          "and names the consumer validation a reader must call")
+
+    # And the one-read rule, which is the other thing the code enforces.
+    check("one read is the observation" in flat,
+          "the contract states that the observation comes from one read")
+    check("second_read_non_authoritative" in flat,
+          "and names where anything from a later read is fenced off")
 
 
 def test_f2_patched_registration_restores_on_exception():
@@ -1900,8 +2053,15 @@ def test_c4_a_publisher_failure_keeps_every_digest_it_computed():
     check(detail["name"] == "RECORDS", "and it is named")
     check(detail["published_sha256"] != detail["observed_sha256"],
           "with both digests recorded so the difference can be inspected")
-    check("has_crlf" in detail and "starts_with_bom" in detail,
-          "and the cheap benign explanations are reported too")
+    check(detail["observation_from_single_read"] is True,
+          "the authoritative observation came from one read")
+    second = detail["second_read_non_authoritative"]
+    check(second["authoritative"] is False,
+          "the explanatory detail is kept separate and marked non-authoritative")
+    check(second["stable"] is True,
+          "here the file did not change, so the second read agrees")
+    check("has_crlf" in second and "starts_with_bom" in second,
+          "and the cheap benign explanations are reported under it")
 
     candidates = P.registration_candidates(
         result, P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN),
@@ -2082,10 +2242,163 @@ def test_the_report_cell_shows_everything_a_result_review_needs():
           and "_gate_table(p2, P.P2_GATE_ORDER)" in body,
           "both legs are tabulated in their registered gate order")
 
-    # The failure path has to name where the evidence was kept, and the writer
-    # is what produces that path.
-    check(".failed" in open(P.__file__, encoding="utf-8").read(),
-          "a failed publish reports its preserved staging path")
+    # A failed publish has to say where the evidence is and why the directory
+    # it left behind is not a bundle.
+    source = open(P.__file__, encoding="utf-8").read()
+    check("is preserved at {directory!r} for inspection" in source,
+          "a failed publish names the preserved directory")
+    check("COMMIT_MARKER" in body,
+          "and the report distinguishes a committed bundle from a bare "
+          "directory")
+
+
+def test_the_mismatch_observation_comes_from_the_authoritative_read_alone():
+    """A second read is a different moment, so it may not colour the finding.
+
+    The explanatory detail needs the bytes, and re-reading a live tree can
+    return something the gate never judged.  So the authoritative
+    `(name, bytes, sha256)` stays exactly as the single read left it, and
+    anything derived from a later read is fenced off — and dropped entirely
+    when the two reads disagree, because it would describe the wrong bytes.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"),
+                                 corrupt="RECORDS")
+        with _PatchedRegistration(tree):
+            reads = []
+
+            class DriftingReader(P.LocalTreeReader):
+                """Returns different bytes on every read after the first."""
+
+                def read_bytes(self, directory, name, limit=None):
+                    reads.append(name)
+                    if name == "RECORDS" and reads.count("RECORDS") > 0:
+                        return b"completely different bytes\n"
+                    return super().read_bytes(directory, name, limit=limit)
+
+            drifted = P.run_p1(tree, TOKEN, reader=DriftingReader(TOKEN))
+            honest = P.run_p1(tree, TOKEN)
+
+    check(drifted["status"] == P.P1_PUBLISHER_MISMATCH,
+          "the corrupted tree still stops at the publisher gate")
+
+    def records(result):
+        return [f for f in result["per_file"] if f["name"] == "RECORDS"][0]
+
+    check(records(drifted) == records(honest),
+          "the authoritative observation is byte-identical to the run where "
+          "nothing drifted: the second read did not touch it")
+
+    gate = [g for g in drifted["gates"]
+            if g["gate"] == "publisher_checksums"][0]
+    detail = [m for m in gate["mismatched"] if m["name"] == "RECORDS"][0]
+    check(detail["observed_sha256"] == records(honest)["sha256"],
+          "and the mismatch record reports that same digest")
+    check(detail["observation_from_single_read"] is True,
+          "labelled as coming from the single authoritative read")
+
+    second = detail["second_read_non_authoritative"]
+    check(second["authoritative"] is False,
+          "the second read is fenced off under its own key")
+    check(second["stable"] is False,
+          "it noticed the file had changed underneath it")
+    for content_field in ("has_crlf", "starts_with_bom", "non_empty_lines",
+                          "first_lines", "sha256_without_trailing_newlines"):
+        check(content_field not in second,
+              f"and reports no {content_field}, which would describe bytes "
+              f"the gate never judged")
+    check("never judged" in second["note"], "saying exactly that")
+
+    # The whole detail block is nested, so no key of it can be mistaken for
+    # part of the observation.
+    check(set(detail) == {"name", "published_sha256", "observed_sha256",
+                          "bytes", "read_by_the_join",
+                          "observation_from_single_read",
+                          "second_read_non_authoritative"},
+          f"the mismatch record has no loose content-derived keys: "
+          f"{sorted(detail)}")
+
+
+def test_the_commit_marker_can_only_ever_be_created_once():
+    """`O_EXCL` is the commit. A marker that can be overwritten commits twice.
+
+    The file-set check happens to reject a stray marker before this matters,
+    but the commit itself must not depend on an earlier check for its
+    exclusivity — that is the same test-then-act shape the rename design was
+    withdrawn for.
+    """
+    import ast
+    tree = ast.parse(open(P.__file__, encoding="utf-8").read())
+    body = [n for n in ast.walk(tree)
+            if isinstance(n, ast.FunctionDef) and n.name == "write_bundle"][0]
+    opens = [n for n in ast.walk(body)
+             if isinstance(n, ast.Call)
+             and isinstance(n.func, ast.Attribute) and n.func.attr == "open"
+             and isinstance(n.func.value, ast.Name) and n.func.value.id == "os"]
+    check(len(opens) == 1, "there is exactly one low-level open in the writer")
+    flags = {n.attr for n in ast.walk(opens[0]) if isinstance(n, ast.Attribute)}
+    check("O_EXCL" in flags, f"and it carries O_EXCL: {sorted(flags)}")
+    check("O_CREAT" in flags, "together with O_CREAT")
+    check("O_TRUNC" not in flags,
+          "and never O_TRUNC, which would overwrite an existing commit")
+
+    # And the flag really behaves that way here, rather than being a constant
+    # that looks right.
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, P.COMMIT_MARKER)
+        handle = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+        os.close(handle)
+        try:
+            os.close(os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644))
+            raise AssertionError("O_EXCL allowed a second create")
+        except FileExistsError:
+            check(True, "a second exclusive create fails on this platform")
+
+
+def test_a_run_validates_its_own_bundle_before_reporting_success():
+    """Publication is no longer atomic, so "it is there" is not evidence."""
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
+        out = os.path.join(tmp, "out")
+        with _PatchedRegistration(tree):
+            result = P.execute_prep(
+                tree, P.SOURCE_BUNDLE_FOLDER_ID, out, _adapter(),
+                approval=TOKEN, timestamp="T", emit=lambda *a: None,
+                synthetic=True)
+        check(result["verified"]["ok"] is True,
+              "a successful run carries its own verification result")
+        check(result["verified"]["committed"] is True,
+              "showing the bundle was committed")
+        check(result["verified"]["manifest_anchored_externally"] is True,
+              "with the manifest anchored against the digest it just froze")
+
+        # If the bundle would not pass the consumer contract, the run must
+        # fail rather than hand back a directory nobody will accept.
+        calls = []
+        real = P.verify_published_bundle
+
+        def failing(directory, **kwargs):
+            calls.append(directory)
+            return {"ok": False, "committed": True, "directory": directory,
+                    "problems": ["injected: the fold does not recompute"]}
+
+        P.verify_published_bundle = failing
+        try:
+            with _PatchedRegistration(tree):
+                P.execute_prep(
+                    tree, P.SOURCE_BUNDLE_FOLDER_ID,
+                    os.path.join(tmp, "out2"), _adapter(), approval=TOKEN,
+                    timestamp="T", emit=lambda *a: None, synthetic=True)
+            raise AssertionError("a run reported success without validating")
+        except P.PrepError as error:
+            check("consumer contract" in str(error),
+                  "the run refuses when its own bundle fails validation")
+            check("nothing was deleted" in str(error),
+                  "and leaves the evidence in place")
+        finally:
+            P.verify_published_bundle = real
+        check(len(calls) == 1,
+              "the validation really was called on the written directory")
 
 
 def declared_tests():

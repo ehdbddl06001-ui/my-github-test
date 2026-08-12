@@ -149,6 +149,17 @@ A gate that fails after doing work keeps what it measured.  Blanking it would
 destroy the only evidence that explains the failure, and it protects nothing:
 what has to be withheld is *eligibility*, not the observation.
 
+**One read is the observation.**  A file's authoritative
+`(name, bytes, sha256)` is whatever P1's single read produced, and nothing may
+revise it.  Explaining *why* a digest differs needs the bytes themselves, and
+re-reading is a different moment — on a live tree the file may have changed —
+so anything derived from a later read is reported under
+`second_read_non_authoritative` and never merged into the observation.  Its
+content-derived fields (line endings, BOM, excerpts) appear **only** when the
+second read hashes to the same value as the first; when the two disagree, that
+instability is the finding and no excerpt is offered, because it would describe
+bytes the gate never judged.
+
 - A `P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH` keeps all 147 per-file
   `(name, bytes, sha256)` observations and the mismatched/unlisted detail, with
   `tree_aggregate: null`, `gate_passed: false`,
@@ -221,7 +232,7 @@ and local paths never enter a bundle.
 A production run writes exactly:
 
 `config.json` · `decision.json` · `log.txt` · `registration_candidates.json` ·
-`source_inventory.json` · `summary.md` · `manifest.json`
+`source_inventory.json` · `summary.md` · `manifest.json` · `COMMITTED.json`
 
 The payload set is **P1/P2-specific** (`P1_P2_PREP_PAYLOAD_FILES`) and is not
 inherited from P3's list: the oracle harness and fixture-result files belong to
@@ -247,25 +258,58 @@ registration record.  No sidecar file is introduced — an extra artifact would
 need its own location, atomicity and identity contract before it could carry
 evidence.
 
-The bundle is staged in a directory unique to the call, verified against the
-exact expected file set, and only then published by a same-parent rename, so
-the output path never holds a partial run.  **Nothing pre-existing is
-deleted**: an existing final path is refused rather than removed, no earlier
-staging directory is cleaned up, and a failed run's partial staging is
-preserved at a reported `.failed` path rather than discarded — a diagnosis is
-worth more than a tidy directory.
+# Publication: a commit marker, not an atomic rename
 
-The final path is **claimed** with a single `mkdir` before any staging work,
-rather than tested with `lexists` and renamed onto much later.  POSIX `rename`
-replaces an empty directory, so the test-then-act form could destroy a
-directory that appeared in the window between the two; `mkdir` is atomic and
-fails if anything at all is at the path — a file, an empty directory, a
-non-empty directory, a symlink or a junction — so from the claim onward the
-name is ours.  Publishing releases that claim with `rmdir`, which removes only
-an empty directory and therefore only ever the writer's own claim; if anything
-found its way inside, the run refuses to publish and preserves its staging
-instead.  A symlinked or reparse-point parent is refused outright, because
-writing through a link lands somewhere other than where the path says.
+**The atomic-directory-publication claim is withdrawn.**  An earlier version
+staged the bundle elsewhere and published it with `rmdir(directory)` followed
+by `rename(staging, directory)`.  Those are two operations, and a directory
+that appears at the target between them is *replaced* by POSIX `rename` — the
+kernel does this silently as long as the directory is empty, which a regression
+test pins as a platform fact.  Claiming the name with `mkdir` closed the
+earlier `lexists`-then-rename window but not this one, because the claim was
+given back immediately before the rename took it.
+
+Linux offers `renameat2(RENAME_NOREPLACE)`, which genuinely is atomic and
+no-replace, and it works on this container's filesystem.  It is **not** used:
+the production output path is a Google Drive FUSE mount, where the flag is not
+dependable, and a fallback that quietly degrades to plain `rename` would be the
+same defect wearing a safer name.
+
+So the directory is written in place and its **completeness** is what is made
+indivisible instead:
+
+1. `os.mkdir(directory)` — one operation that either creates the name or
+   fails.  It never replaces and never follows: an existing file, empty
+   directory, non-empty directory, symlink or junction all raise, and the run
+   stops.  A symlinked or reparse-point parent is refused for the same reason.
+2. every payload file, then `manifest.json`, written inside the claim.
+3. `COMMITTED.json` created last with `O_CREAT | O_EXCL`, recording the
+   bundle file set, the payload file list and `prep_payload_sha256`.
+
+**A directory without `COMMITTED.json` is not a bundle.**  It is an incomplete
+or failed write, and `verify_published_bundle()` refuses it.  This is stronger
+than atomic appearance, not weaker: it survives a crash, and it also catches
+truncation and post-hoc editing, which a rename never could.
+
+`COMMITTED.json` deliberately does **not** record its own digest or the
+manifest's.  The manifest's SHA-256 stays outside the bundle exactly as before
+— a digest stored inside the artifact it describes is rewritten by whoever
+edits that artifact, so it would look like a freeze record without being one.
+
+**Consumer validation.**  Any reader of a PREP bundle — including the run
+itself, immediately after writing, so a run that cannot validate its own output
+fails rather than reporting success — must call
+`verify_published_bundle(directory, expected_manifest_sha256=...)`, which
+checks that the marker is present, that the file set equals the committed set,
+that the payload fold recomputes to the committed `prep_payload_sha256`, and,
+when the externally frozen value is supplied, that the manifest still hashes to
+it.  Without that value the manifest digest is reported and the result says
+plainly that it was not anchored.
+
+**Nothing is deleted, ever** — not a pre-existing path, and not the writer's
+own directory.  A failed run leaves its partial, uncommitted directory exactly
+where it is, at a reported path, because that is where a diagnosis will look
+for it.
 
 # Registration
 
@@ -322,10 +366,15 @@ below is present and correct in the bundle.
 
 **Bundle**
 
-- the actual file set, equal to the contracted set for that run kind
+- `COMMITTED.json` present — without it the directory is not a bundle and the
+  run is not accepted
+- the actual file set, equal to the contracted set for that run kind and to the
+  set recorded in the marker
 - `manifest.payload_files` equal to the fold target actually used
 - payload fold recomputes to the recorded `prep_payload_sha256`
-- the manifest does not contain its own digest
+- the manifest does not contain its own digest, and neither does the marker
+- `verify_published_bundle()` passes with the externally frozen manifest digest
+  supplied
 - the manifest's SHA-256 present in the notebook output or ingest log as the
   external freeze record
 - `synthetic_fixture: false` and `ingestable: true` for a production run
@@ -352,7 +401,9 @@ record):
 - preserved observations, `gate_passed`, `eligible_for_registration` and
   `blocked_by`
 - the full 64-hex `prep_payload_sha256` and `manifest_sha256_freeze_externally`
-- the `.failed` staging path if the publish did not complete
+- the commit and consumer-validation result: `COMMITTED.json` present, the
+  recomputed payload fold, whether the manifest was anchored externally, and
+  the directory path if the run did not commit
 - the next action
 
 # Order
@@ -437,3 +488,42 @@ new test fail.
 Still true, and still deliberately so: nothing has been executed, no registered
 asset has been opened, no digest computed against real bytes, no value
 registered, and the terminal guard is untouched.
+
+## 2026-08-12 — the publish was still test-then-act; atomicity claim withdrawn
+
+Codex was right, and the claim I made in the previous entry was wrong. Claiming
+the name with `mkdir` closed the `lexists`-then-rename window, but the publish
+then did `rmdir(directory)` and `rename(staging, directory)` — two operations
+again, with the claim given back before the rename took it. A regression test
+now pins the platform fact that made this unsafe: POSIX `rename` replaces a
+pre-existing *empty* directory, so a directory created in that window would
+have been destroyed without a trace.
+
+`renameat2(RENAME_NOREPLACE)` was measured and does work on this container's
+filesystem, but the production output path is a Drive FUSE mount where the flag
+is not dependable, and a silent fallback to plain `rename` would reproduce the
+defect under a safer-sounding name. So rather than keep a claim that only holds
+on some filesystems, the atomic-directory-publication claim is withdrawn and
+the design changed: the bundle is written in place inside the `mkdir` claim and
+committed with a `COMMITTED.json` marker created last under `O_CREAT | O_EXCL`.
+There is now no rename, no `rmdir`, and no deletion of any kind in the writer —
+a test asserts that by AST rather than by comment.
+
+What replaces atomic appearance is a consumer contract, and it is stronger:
+`verify_published_bundle()` refuses a directory without the marker, checks the
+file set against the committed set, and recomputes the payload fold. It catches
+truncation and post-hoc editing, which a rename never could. The run calls it
+on its own output before reporting success. The manifest is not in the payload
+fold and its digest deliberately stays outside the bundle, so it is anchored by
+passing the externally frozen value in — a digest stored inside the artifact it
+describes is rewritten by whoever edits that artifact.
+
+Second correction: the publisher-mismatch detail re-read the registered file to
+explain the difference, which mixes bytes from a second moment into a finding
+about the first. The authoritative `(name, bytes, sha256)` now comes only from
+the single read, and the explanatory material sits under
+`second_read_non_authoritative` — with its content-derived fields suppressed
+entirely when the second read disagrees with the first, since they would
+describe bytes no gate ever judged.
+
+Both fixes were checked by reverting them and watching the new tests fail.
