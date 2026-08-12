@@ -40,6 +40,16 @@ python pipelines/anatomy_mask.py --source-id a2-s14 --contact-sheet
   (`.private/anatomy/review/`)로 가고 공개되지 않는다.
 - `anatomy_mask.py`는 마스크 밖에 정답 문자열이 남으면 `leak`으로 표시하고
   종료 코드 1을 낸다 — leak 상태는 절대 공개 금지.
+- **자연 패치(기본, 2026-08-12~)**: 가림은 중립색 박스 대신 주변 배경색을
+  샘플링(중앙값)한 불투명 패치 + 결정론 번호핀(위→아래·왼→오른 순 1..N)으로
+  렌더된다(`--style box`로 과거 방식 선택 가능). 채움은 항상 완전 불투명이라
+  정답이 비칠 수 없고, leak 검증은 종전과 동일하게 텍스트 레이어로 수행한다.
+- **재작화(redraw) lane**: 가린 면적이 페이지의 8%를 넘거나 라벨이 12개를
+  넘으면 mask JSON에 `redraw_recommended: true`가 붙는다(패치로도 어색함이
+  남는 경우). 이때는 원본 이미지를 게시하지 말고 **클로드가 원본을 보고 자체
+  제작 SVG로 재작화**한다 — `asset_origin: claude-drawn-svg`, 원본 페이지를
+  `source_refs`에 남기고, 스킬 4b 렌더 QA 루프를 반드시 통과시킨다. 사람이
+  contact sheet 검수에서 "어색하다"고 판단한 페이지도 같은 lane으로 보낸다.
 
 ## 2b. 그림 자료 — 가능/불가능 실측표 (2026-08-12)
 

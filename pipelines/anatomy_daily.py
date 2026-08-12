@@ -158,6 +158,22 @@ def build_plan(d: date) -> dict:
     }
 
 
+def missing_dates(today: date, limit: int | None = None) -> list[date]:
+    """START_DATE~어제 중 daily_plan 카드가 없는 날짜(밀린 날)를 오래된 순으로.
+
+    주간 이용 한도 초과 등으로 루틴이 못 돈 날을 결정론적으로 찾는다.
+    completed 구간(2026-10-20~)은 제외. limit이 있으면 앞에서부터 그만큼만.
+    """
+    out: list[date] = []
+    d = sched.START_DATE
+    while d < today:
+        if sched.phase_for(d) != "completed" \
+                and not (ANAT / "daily" / f"{d.isoformat()}.md").exists():
+            out.append(d)
+        d += timedelta(days=1)
+    return out[:limit] if limit is not None else out
+
+
 def write_plan(plan: dict, dry: bool) -> Path | None:
     if plan.get("phase") == "completed":
         print(json.dumps(plan, ensure_ascii=False))
@@ -179,6 +195,9 @@ def write_plan(plan: dict, dry: bool) -> Path | None:
         "review": plan["review"], "est_minutes": plan["est_minutes"],
         "publishable": True,  # 계획 자체는 id 목록뿐(민감 자산 없음)
     }
+    if plan.get("made_up_on"):  # 밀린 날을 나중에 따라잡아 만든 계획
+        meta["made_up"] = True
+        meta["generated_on"] = plan["made_up_on"]
     nxt = plan.get("next_session") or {}
     body = (
         f"## 오늘의 학습 ({d} · {plan['phase']})\n\n"
@@ -206,8 +225,30 @@ def main() -> int:
     ap.add_argument("--date", help="YYYY-MM-DD (기본: KST 오늘)")
     ap.add_argument("--plan", action="store_true", help="JSON 출력만(쓰기 없음)")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--backlog", action="store_true",
+                    help="밀린 날짜(daily_plan 없는 과거 날짜) 목록만 JSON 출력")
+    ap.add_argument("--catch-up", nargs="?", const=3, type=int, metavar="N",
+                    help="밀린 날짜를 오래된 순으로 최대 N개(기본 3) 따라잡아 계획 생성")
     a = ap.parse_args()
     d = date.fromisoformat(a.date) if a.date else sched.kst_today()
+
+    if a.backlog:
+        print(json.dumps({"today": d.isoformat(),
+                          "missing": [x.isoformat() for x in missing_dates(d)]},
+                         ensure_ascii=False))
+        return 0
+
+    if a.catch_up:
+        made = []
+        for md in missing_dates(d, limit=max(0, a.catch_up)):
+            plan = build_plan(md)
+            plan["made_up_on"] = d.isoformat()
+            write_plan(plan, a.dry_run)
+            made.append(md.isoformat())
+        remaining = [x.isoformat() for x in missing_dates(d)]
+        print(f"catch-up: {len(made)}개 생성 {made} · 남은 밀린 날 "
+              f"{len(remaining)}개{' (dry-run이라 미반영)' if a.dry_run else ''}")
+
     plan = build_plan(d)
     if a.plan:
         print(json.dumps(plan, ensure_ascii=False, indent=1))

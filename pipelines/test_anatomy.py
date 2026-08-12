@@ -219,6 +219,44 @@ def test_export_bundle_has_no_private_material() -> None:
             assert "source_file_id" not in r
 
 
+def test_missing_dates_backlog() -> None:
+    """이용 한도 초과로 밀린 날을 결정론적으로 찾는다: START~어제 중 daily 카드 없는 날."""
+    today = date(2026, 8, 20)
+    miss = anatomy_daily.missing_dates(today)
+    assert all(m < today for m in miss)
+    assert date(2026, 8, 13) not in miss  # 계획 카드가 이미 존재하는 날은 제외
+    assert miss == sorted(miss)           # 오래된 순
+    assert anatomy_daily.missing_dates(today, limit=2) == miss[:2]
+    # completed 구간은 아예 대상이 아니다
+    assert anatomy_daily.missing_dates(date(2026, 12, 1)) == \
+        [m for m in anatomy_daily.missing_dates(date(2026, 12, 1))
+         if sched.phase_for(m) != "completed"]
+
+
+def test_mask_patch_pins_and_redraw_flag() -> None:
+    """자연 패치 모드: 번호핀 결정론 배번 + 대면적 마스크는 재작화 권고."""
+    rec = _fake_extract()
+    rec["terms"].append({"ko": "노동맥", "en": "radial artery", "bbox": [30, 10, 120, 24]})
+    m = anatomy_mask.build_masks(rec)
+    pins = [x["pin"] for x in sorted(m["masks"], key=lambda x: x["pin"])]
+    assert pins == list(range(1, len(m["masks"]) + 1))  # 1..N 빠짐없이
+    # 위→아래 순서: y가 더 작은 라벨이 앞 번호
+    top = min(m["masks"], key=lambda x: x["polygon"][0][1])
+    assert top["pin"] == 1
+    assert not m.get("redraw_recommended")
+    # 페이지의 큰 면적을 가리면 재작화 권고
+    big = _fake_extract()
+    big["width"], big["height"] = 100, 100
+    big["terms"] = [{"ko": "가", "en": "aa", "bbox": [5, 5, 95, 60]}]
+    assert anatomy_mask.build_masks(big).get("redraw_recommended") is True
+    # 배경 샘플링은 항상 불투명 RGB(정답이 비칠 수 없음), 띠가 없으면 NEUTRAL 폴백
+    from PIL import Image
+    img = Image.new("RGB", (50, 50), (200, 190, 180))
+    c = anatomy_mask._sample_bg(img, [10, 10, 40, 40])
+    assert c == (200, 190, 180)
+    assert anatomy_mask._sample_bg(img, [0, 0, 50, 50]) == anatomy_mask.NEUTRAL
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":
