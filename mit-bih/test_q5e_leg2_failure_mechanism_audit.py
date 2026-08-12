@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import tempfile
 
@@ -25,6 +26,9 @@ sys.path.insert(0, HERE)
 import q5d_order_preserving_beat_join as BJ          # noqa: E402
 import q5e_leg2_failure_mechanism_audit as Q5E       # noqa: E402
 
+SPEC = os.path.join(
+    ROOT, "experiments", "specs",
+    "EXP-2026-008-q5e-leg2-failure-mechanism-audit.md")
 NOTEBOOK = os.path.join(
     ROOT, "notebooks", "quest55_q5e_leg2_failure_mechanism_audit.ipynb")
 
@@ -106,6 +110,26 @@ def _verified(paths):
     """
     return {key: paths.get(key, f"/synthetic/{key}")
             for key in Q5E.DISCOVERED_PATH_KEYS}
+
+
+def _oracle_pass(**overrides):
+    """A synthetic differential-PREP record.
+
+    Fixture-only. It still has to satisfy every structural check, including
+    the *current* adapter fingerprint, so editing the adapter invalidates it
+    exactly as a real stale PASS would be invalidated.
+    """
+    record = {
+        "verdict": Q5E.SOURCE_MATCH_ORACLE_PASS,
+        "registered_file_sha256": Q5E.M4_SOURCE_MAP_HASHES["data.py"],
+        "adapter_fingerprint": Q5E.source_match_adapter_fingerprint(),
+        "prep_bundle_sha256": "0" * 64,
+        "fixtures": ["nearest_used", "tie", "non_aami", "boundary",
+                     "annotation_order", "peak_order"],
+        "fixtures_passed": 6,
+    }
+    record.update(overrides)
+    return record
 
 
 def tiny_partition(rows=None):
@@ -1042,12 +1066,13 @@ def test_m3_exact_partition_qa():
 def test_m4_gate_order_includes_input_identity():
     """I1.4 — the machine-readable order, the emitted gates and tests agree."""
     check(Q5E.M4_GATE_ORDER == ("runtime", "source_map", "input_identity",
-                                "detector_replay", "record_counts",
-                                "rr_equality"),
+                                "source_match_equivalence", "detector_replay",
+                                "record_counts", "rr_equality"),
           "M4_GATE_ORDER is the registered order")
     check(Q5E.M4_GATES_BEFORE_REPLAY ==
-          ("runtime", "source_map", "input_identity"),
-          "three sub-gates precede any detector call")
+          ("runtime", "source_map", "input_identity",
+           "source_match_equivalence"),
+          "four sub-gates precede any detector call")
     calls = []
     good = {"frontend.py": "def detect_r(s):\n    pass\n\n"
                            "def rr_features(p):\n    pass\n",
@@ -1064,7 +1089,8 @@ def test_m4_gate_order_includes_input_identity():
         texts=good, detector_counts=None, registered_counts={"101": 1},
         replayed_rr=None, frozen_rr={"101": [[1.0]]},
         input_identity={"v10_source": "wrong", "v10_cache": "wrong"},
-        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT, replay=replay)
+        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT, replay=replay,
+        source_match_oracle=_oracle_pass())
     check(gate["status"] == Q5E.M4_INPUT_ABSENT, "identity failure stops M4")
     check(gate["first_failure"] == Q5E.M4_IDENTITY_MISMATCH, "identity reason")
     check([g["gate"] for g in gate["gates"]] ==
@@ -1080,7 +1106,8 @@ def test_m4_gate_order_includes_input_identity():
         input_identity={
             "v10_source": Q5E.M4_INPUT_CONTRACT["v10_source"]["aggregate"],
             "v10_cache": Q5E.M4_INPUT_CONTRACT["v10_cache"]["aggregate"]},
-        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT, replay=replay)
+        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT, replay=replay,
+        source_match_oracle=_oracle_pass())
     check(ok["status"] == Q5E.M4_OK, "a complete gate passes")
     check([g["gate"] for g in ok["gates"]] == list(Q5E.M4_GATE_ORDER),
           "the emitted gate list equals M4_GATE_ORDER exactly")
@@ -1393,6 +1420,9 @@ def _e2e_inputs():
         m4_frozen_rr=Q5E.load_frozen_rr(cache),
         m4_replay=replay,
         m4_anchors=lambda: replay.anchors_by_record(mamba),
+        # Fixture-only: production leaves this None and M4 stops before the
+        # detector. The record still has to satisfy every structural check.
+        m4_source_match_oracle=_oracle_pass(),
         source_files=[])
 
 
@@ -2342,6 +2372,178 @@ def test_rr_features_shape_is_validated_exactly():
     except Q5E.DiagnosticInputMismatch as error:
         check("row-count mismatch" in str(error) or "rows for" in str(error),
               "a row count that disagrees with the kept peaks is refused")
+
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Fourth acceptance review: source equivalence must be a real gate.
+# ─────────────────────────────────────────────────────────────────────────────
+def _all_gates_pass_except_equivalence(oracle, spy):
+    """Every other M4 sub-gate injected as PASS; only equivalence varies."""
+    texts = {"frontend.py": ("def detect_r(s):\n    pass\n\n"
+                             "def rr_features(p):\n    pass\n"),
+             "data.py": ("def build_record(r):\n    peaks = detect_r(sig)\n"
+                         "    tol = int(0.15 * fs)\n    used = set()\n"
+                         "    ok = p - 150 >= 0\n    Fr = rr_features(peaks)\n")}
+    return Q5E.m4_feasibility_gate(
+        runtime=Q5E.M4_REGISTERED_RUNTIME,
+        sources=Q5E.M4_SOURCE_MAP_HASHES, texts=texts,
+        detector_counts=None, registered_counts={"101": 1},
+        replayed_rr=None, frozen_rr={"101": [[1.0]]},
+        input_identity={
+            "v10_source": Q5E.M4_INPUT_CONTRACT["v10_source"]["aggregate"],
+            "v10_cache": Q5E.M4_INPUT_CONTRACT["v10_cache"]["aggregate"]},
+        rr_verdict=Q5E.PREP_M4_RR_EQUIVALENCE_VERDICT,
+        replay=spy, source_match_oracle=oracle)
+
+
+def test_source_equivalence_stops_m4_before_the_detector_runs():
+    """The core fourth-review blocker: this must be a gate, not a report."""
+    calls = []
+
+    def spy():                             # pragma: no cover - must not run
+        calls.append("detect_r")
+        return {"101": 1}, {"101": [[1.0]]}
+
+    gate = _all_gates_pass_except_equivalence(None, spy)
+    check(gate["status"] == Q5E.M4_INPUT_ABSENT,
+          "M4 stops when source equivalence has not been established")
+    check(gate["first_failure"] == Q5E.SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+          "and it stops for exactly that reason")
+    check(calls == [],
+          "the detector callback was never invoked: call count is 0")
+    emitted = [g["gate"] for g in gate["gates"]]
+    check(emitted == list(Q5E.M4_GATES_BEFORE_REPLAY),
+          "every pre-replay sub-gate ran and equivalence was the last of them")
+    check("detector_replay" not in emitted,
+          "the replay sub-gate was never even recorded")
+
+    passing = _all_gates_pass_except_equivalence(_oracle_pass(), spy)
+    check(passing["status"] == Q5E.M4_OK,
+          "with a recorded differential PASS the gate completes")
+    check(calls == ["detect_r"],
+          "and only then does the detector run, exactly once")
+    check([g["gate"] for g in passing["gates"]] == list(Q5E.M4_GATE_ORDER),
+          "the emitted order equals M4_GATE_ORDER")
+
+
+def test_source_equivalence_pass_is_invalidated_by_either_side_moving():
+    """A verdict string alone must never be enough."""
+    check(Q5E.verify_source_match_equivalence(_oracle_pass())["ok"] is True,
+          "a complete record passes")
+    stale_adapter = _oracle_pass(adapter_fingerprint="0" * 64)
+    result = Q5E.verify_source_match_equivalence(stale_adapter)
+    check(result["ok"] is False, "an old adapter fingerprint invalidates it")
+    check(any("adapter has changed" in p for p in result["problems"]),
+          "and says the differential must be re-run")
+    moved_source = _oracle_pass(registered_file_sha256="f" * 64)
+    result = Q5E.verify_source_match_equivalence(moved_source)
+    check(result["ok"] is False,
+          "a different registered data.py invalidates it")
+    check(any("different `data.py`" in p for p in result["problems"]),
+          "a PASS is not reused across a change of the registered source")
+    for bad, why in (
+            ({"verdict": "LOOKS_FINE"}, "a bare wrong verdict"),
+            (_oracle_pass(verdict="PASS"), "an unregistered verdict string"),
+            (_oracle_pass(prep_bundle_sha256=""), "a missing PREP identity"),
+            (_oracle_pass(fixtures=[]), "no fixtures"),
+            (_oracle_pass(fixtures_passed=5), "a partial differential")):
+        check(Q5E.verify_source_match_equivalence(bad)["ok"] is False,
+              f"{why} is refused")
+    bare = Q5E.verify_source_match_equivalence({"verdict":
+                                                Q5E.SOURCE_MATCH_ORACLE_PASS})
+    check(bare["ok"] is False,
+          "the registered PASS string alone does not open the gate")
+
+
+def test_production_never_injects_a_source_match_oracle():
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    body = text.split("def load_all_inputs(", 1)[1].split("\ndef ", 1)[0]
+    check("m4_source_match_oracle=SOURCE_MATCH_ORACLE_RECORD" in body,
+          "production passes the module record, never a fabricated one")
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "and that record is empty: no PASS value is invented here")
+    status = Q5E.source_match_equivalence_status()
+    check(status["status"] == Q5E.SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+          "so the reported status is the open item")
+
+
+def test_source_equivalence_gate_survives_removing_the_terminal_guard():
+    """Static proof the gate is not merely sequenced behind the guard."""
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    gate_body = text.split("def m4_feasibility_gate(", 1)[1]
+    gate_body = gate_body.split("\ndef ", 1)[0]
+    equivalence = gate_body.index("verify_source_match_equivalence(")
+    replay_call = gate_body.index("detector_counts, replayed_rr = replay()")
+    check(equivalence < replay_call,
+          "the equivalence check precedes the detector call in source order")
+    check("_terminal_execution_guard" not in gate_body,
+          "the gate does not depend on the terminal guard to hold")
+
+
+def test_language_does_not_claim_source_equivalence():
+    """Expression boundary: nothing may imply the adapter is proven."""
+    doc = Q5E.match_peaks_to_annotations.__doc__ or ""
+    for banned in ("Reproduce the registered",
+                   "the source's own rule",
+                   "reproduces the registered"):
+        check(banned not in doc,
+              f"the adapter docstring does not claim {banned!r}")
+    check("candidate" in doc.lower(),
+          "it describes itself as a candidate adapter")
+    check("unverified" in doc.lower() or "not been verified" in doc.lower(),
+          "and says it is unverified against the registered source")
+    card = Q5E.design_card()
+    check("SOURCE_MATCH_EQUIVALENCE_REQUIRED" in card,
+          "the design card names the open equivalence item")
+    with open(SPEC, encoding="utf-8") as handle:
+        spec = handle.read()
+    tail = spec.split("## 2026-08-12 — fourth-review", 1)[-1]
+    check("candidate" in tail,
+          "the Decision log calls the adapter a candidate")
+
+
+def test_frozen_module_approval_scope_is_pinned():
+    """The translation covers only Q5-D's no-outcome readers."""
+    check(Q5E.frozen_module_approval(Q5E.EXECUTION_APPROVAL_TOKEN, "x") ==
+          BJ.EXECUTION_APPROVAL_TOKEN,
+          "an approved Q5-E call reaches the frozen readers")
+    for bad in (None, "", "guessed", BJ.EXECUTION_APPROVAL_TOKEN):
+        try:
+            Q5E.frozen_module_approval(bad, "x")
+            raise AssertionError(f"{bad!r} was accepted")
+        except Q5E.ExecutionNotApprovedError:
+            check(True, f"{bad!r} does not yield the frozen token")
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    # The production call sites are pinned, so a newly added BJ reader cannot
+    # inherit the translation without a reviewer noticing.
+    allowed = {"load_cache_classes", "load_mamba_sequences",
+               "load_cache_sequences", "replay_leg1_split", "load_atr_record",
+               "hash_file_set"}
+    called = set(re.findall(r"BJ\.([a-z_]+)\([^)]*_bj\(|"
+                            r"BJ\.([a-z_]+)\([^)]*approval=bj", text))
+    flat = {name for pair in called for name in pair if name}
+    check(flat <= allowed,
+          f"only the pinned frozen readers receive the translated token: "
+          f"{sorted(flat)}")
+    for sealed in ("ds2_label_release", "load_probabilities",
+                   "association", "train"):
+        check(f"BJ.{sealed}" not in text,
+              f"the translation never reaches BJ.{sealed}")
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        notebook = handle.read()
+    check(BJ.EXECUTION_APPROVAL_TOKEN not in notebook,
+          "the notebook never asks the user for the Q5-D token")
+    check(BJ.EXECUTION_APPROVAL_TOKEN not in
+          text.replace("BJ.EXECUTION_APPROVAL_TOKEN", ""),
+          "the Q5-D token is never written as a literal in this module")
+    check(Q5E.EXECUTION_APPROVAL_FLAG.startswith("--"),
+          "the only CLI option is Q5-E's own approval flag")
+    check(text.count("BJ.EXECUTION_APPROVAL_TOKEN") == 1,
+          "the frozen token is produced in exactly one place")
 
 
 

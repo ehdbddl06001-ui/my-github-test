@@ -2366,3 +2366,49 @@ nothing; it makes the already-approved path reachable.
 Execution approval remains unrequested.  Two registration items and the source
 equivalence PREP are open, and each is a deliberate stop rather than a weaker
 check.
+
+## 2026-08-12 — fourth-review correction: source equivalence is a real gate
+
+The fourth Codex acceptance review found that
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED` was reported but never enforced: it was
+read once, in `build_result(... identity_audit=...)`, after the pipeline had
+already run.  The previous entry's claim that the three open items were each a
+deliberate stop was therefore **wrong for this one** — once the two digest
+registrations were filled in, the detector replay and M0–M4 would have run
+through an annotation-matching adapter that had never been compared against the
+registered source.  The correction:
+
+- `source_match_equivalence` is now an M4.0 sub-gate, registered in
+  `M4_GATE_ORDER` and in `M4_GATES_BEFORE_REPLAY` as the last check before the
+  detector.  The adapter is what the replay's counts are produced *through*, so
+  running the detector first would yield numbers whose meaning depends on an
+  unverified reimplementation.  A failure is `DIAGNOSTIC_INPUT_ABSENT` by the
+  existing rule; the detector callback is never reached.
+- A PASS is a structured record, not a verdict string.  It must carry the
+  registered `data.py` SHA-256 it was established against, the adapter
+  fingerprint it tested, the identity of the PREP bundle that produced it, and
+  the fixture list with the number that passed.  Changing the adapter or the
+  registered source invalidates it automatically, a partial differential is not
+  a PASS, and the registered PASS string on its own opens nothing.
+
+**Expression boundary.**  The adapter is described everywhere as a *candidate*
+source-matching adapter built from a *text-derived candidate contract* and
+*unverified against the registered `data.py`*.  The requirement in M4.1 that
+the source's own rule be reproduced stands as the scientific goal; no statement
+that the current implementation has achieved it is permitted, and none is made.
+
+**Approval-token translation.**  `frozen_module_approval()` is retained under
+the review's conditions and pinned by test: Q5-E's own approval is required
+before the Q5-D token is produced, a wrong or absent token yields Q5-E's own
+refusal, the translated token reaches only the frozen no-outcome readers
+enumerated in that test, the Q5-D token appears in no CLI option and in no
+notebook cell, and a newly added frozen reader cannot inherit the translation
+without failing that test.
+
+Three registration items remain open, and each is now a terminal stop:
+`INPUT_IDENTITY_REGISTRATION_REQUIRED` (P1),
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` (P2) and
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED` (P3).  Their read-only PREP designs are
+drafted in `research/HANDOFF_2026-08-12_Q5E_prep_p1p2p3_to_codex.md`; none was
+executed here, no Drive asset was opened, and no digest or verdict value was
+computed or written.

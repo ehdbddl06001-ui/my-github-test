@@ -296,11 +296,15 @@ M4_IDENTITY_MISMATCH = "M4_INPUT_IDENTITY_MISMATCH"
 #: The ordered M4.0 condition-2 sub-gates.  Order is itself registered: no
 #: anchor may be computed before every one of these has passed.
 M4_GATE_ORDER: Tuple[str, ...] = (
-    "runtime", "source_map", "input_identity", "detector_replay",
-    "record_counts", "rr_equality")
+    "runtime", "source_map", "input_identity", "source_match_equivalence",
+    "detector_replay", "record_counts", "rr_equality")
 #: The sub-gates that must all pass **before** the detector may be called.
+#: `source_match_equivalence` sits last among them: the annotation-matching
+#: adapter is the thing the replay's counts are produced *through*, so running
+#: the detector before that adapter has been shown equivalent to the
+#: registered source would produce numbers no one can interpret.
 M4_GATES_BEFORE_REPLAY: Tuple[str, ...] = (
-    "runtime", "source_map", "input_identity")
+    "runtime", "source_map", "input_identity", "source_match_equivalence")
 
 LANGUAGE_BOUNDARY = "association_only_no_causal_claim"
 
@@ -497,7 +501,8 @@ def module_capabilities() -> Tuple[str, ...]:
     return ("run_audit", "run_audit_from_mount", "discover_registered_inputs",
             "reverify_registered_inputs", "verify_mitdb_identity",
             "verify_bundle_content_identity", "resolve_identical_candidates",
-            "source_match_equivalence_status", "build_detector_replay",
+            "source_match_equivalence_status",
+            "verify_source_match_equivalence", "build_detector_replay",
             "match_peaks_to_annotations", "load_frozen_rr", "build_m4_anchors",
             "hypothesis_strata", "stratified_statistic",
             "has_stratified_evidence", "figure_data",
@@ -1828,7 +1833,9 @@ def m4_feasibility_gate(runtime: Mapping[str, str],
                         frozen_rr: Mapping[str, object],
                         input_identity: Mapping[str, str],
                         rr_verdict: str,
-                        replay: Optional[object] = None) -> Dict[str, object]:
+                        replay: Optional[object] = None,
+                        source_match_oracle: Optional[Mapping[str, object]]
+                        = None) -> Dict[str, object]:
     """Evaluate M4.0 **in the registered order**, stopping at the first failure.
 
     The order is itself part of the contract: the runtime and the static source
@@ -1853,6 +1860,16 @@ def m4_feasibility_gate(runtime: Mapping[str, str],
     gates.append(identity)
     if not identity["ok"]:
         return _m4_absent(gates, identity, identity["reason"])
+
+    # The annotation-matching adapter is what the replay's counts are produced
+    # *through*, so it must be shown equivalent to the registered source
+    # before the detector runs at all — otherwise the counts depend on an
+    # unverified reimplementation and mean nothing.  This is a terminal stop,
+    # not a warning attached to the result afterwards.
+    step = verify_source_match_equivalence(source_match_oracle)
+    gates.append(step)
+    if not step["ok"]:
+        return _m4_absent(gates, identity, step["reason"])
 
     # Only now may the detector run.  Every sub-gate in
     # `M4_GATES_BEFORE_REPLAY` has passed and is already recorded, in the
@@ -2980,14 +2997,14 @@ class ProductionInputs(object):
                  "mamba_by_record", "cache_by_record", "cache_n",
                  "m4_runtime", "m4_sources", "m4_texts", "m4_identity",
                  "m4_registered_counts", "m4_frozen_rr", "m4_replay",
-                 "m4_anchors", "source_files")
+                 "m4_anchors", "m4_source_match_oracle", "source_files")
 
     def __init__(self, rows, decision, manifest, processed_classes,
                  mamba_by_record, cache_by_record, cache_n,
                  m4_runtime=None, m4_sources=None, m4_texts=None,
                  m4_identity=None, m4_registered_counts=None,
                  m4_frozen_rr=None, m4_replay=None, m4_anchors=None,
-                 source_files=()):
+                 m4_source_match_oracle=None, source_files=()):
         self.rows = list(rows)
         self.decision = dict(decision)
         self.manifest = dict(manifest)
@@ -3002,6 +3019,9 @@ class ProductionInputs(object):
         self.m4_registered_counts = dict(m4_registered_counts or {})
         self.m4_frozen_rr = dict(m4_frozen_rr or {})
         self.m4_replay = m4_replay
+        # The differential-PREP record.  Production leaves it None, so the
+        # equivalence sub-gate stops M4 before the detector runs.
+        self.m4_source_match_oracle = m4_source_match_oracle
         # Either a mapping or a zero-argument builder.  Production passes a
         # builder, because the anchors do not exist until the replay has run.
         self.m4_anchors = (m4_anchors if callable(m4_anchors)
@@ -3535,11 +3555,13 @@ def load_v10_producer(v10_source_dir: str, approval: Optional[str]):
     return module
 
 
-#: The exact control-flow decisions this adapter makes, each one a place where
-#: a re-reading of the prose "greedy nearest with a used set" could differ from
-#: the registered `data.py`.  They are named here so a reviewer compares
-#: decisions rather than paragraphs, and so `SOURCE_MATCH_ADAPTER_FINGERPRINT`
-#: changes if any of them is edited.
+#: The control-flow decisions this **candidate** adapter makes.  Each is a
+#: place where a different reading of the prose "greedy nearest with a used
+#: set" would produce a different answer, so they are named here as a
+#: text-derived candidate contract: a reviewer compares decisions rather than
+#: paragraphs, and the adapter fingerprint changes if any of them is edited.
+#: None of this is evidence that the registered `data.py` makes the same
+#: choices — that is what P3 exists to establish.
 SOURCE_MATCH_CONTRACT: Dict[str, str] = {
     "traversal": "peaks in detector order; annotations in ascending sample "
                  "order, ties broken by their `.atr` ordinal",
@@ -3557,24 +3579,29 @@ SOURCE_MATCH_CONTRACT: Dict[str, str] = {
                         "boundary cut; a peak cut by `p-150`/`p+150` does not "
                         "release its annotation",
 }
-#: Registered digest of the file this adapter reproduces.  Pinned so a reviewer
-#: can tell which bytes the contract above was written against.
+#: The registered file this candidate adapter is written *against*.  Pinned so
+#: a reviewer can tell which bytes the contract above was read from.
 SOURCE_MATCH_REGISTERED_FILE = "data.py"
 SOURCE_MATCH_REGISTERED_FUNCTION = "build_record"
-#: Set once a separately approved read-only PREP has compared this adapter
-#: against the registered `data.py` control flow.  Until then it is None and
-#: `source_match_equivalence_status()` reports the open item rather than
-#: implying the adapter has been proven equivalent.
-SOURCE_MATCH_ORACLE_VERDICT: Optional[str] = None
 SOURCE_MATCH_EQUIVALENCE_REQUIRED = "SOURCE_MATCH_EQUIVALENCE_REQUIRED"
+SOURCE_MATCH_ORACLE_PASS = "SOURCE_MATCH_EQUIVALENT_TO_REGISTERED_SOURCE"
+#: Every field a differential PREP must record before the adapter may be used.
+#: A bare verdict string is not enough: a PASS has to say *what* was compared,
+#: so that changing either side invalidates it automatically.
+SOURCE_MATCH_ORACLE_FIELDS: Tuple[str, ...] = (
+    "verdict", "registered_file_sha256", "adapter_fingerprint",
+    "prep_bundle_sha256", "fixtures", "fixtures_passed")
+#: Filled only by a separately approved read-only PREP (P3).  While it is
+#: `None` the equivalence sub-gate stops M4 **before the detector runs**.
+SOURCE_MATCH_ORACLE_RECORD: Optional[Dict[str, object]] = None
 
 
 def source_match_adapter_fingerprint() -> str:
-    """Digest of this adapter's source plus its declared control flow.
+    """Digest of this adapter's source plus its declared candidate contract.
 
     Editing the matching loop or any decision in `SOURCE_MATCH_CONTRACT`
-    changes this value, so a silent divergence from the reviewed behaviour is
-    visible rather than buried in a diff.
+    changes this value, so a differential PASS recorded against an older
+    adapter cannot silently be reused for a newer one.
     """
     import inspect                                        # noqa: PLC0415
     body = inspect.getsource(match_peaks_to_annotations)
@@ -3586,28 +3613,96 @@ def source_match_adapter_fingerprint() -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
-def source_match_equivalence_status() -> Dict[str, object]:
-    """Whether this adapter has been proven equivalent to the registered source.
+def verify_source_match_equivalence(
+        oracle: Optional[Mapping[str, object]] = None) -> Dict[str, object]:
+    """M4.0 sub-gate: has this adapter been compared against the source?
 
-    It has not, and saying so is the point.  Reproducing 22/22 counts is a
-    necessary condition, not a proof of source equivalence, and the registered
-    `data.py` is a Drive asset this implementation may not open.  Until a
-    separately approved read-only PREP runs the differential comparison, the
-    status is the open item, not a pass.
+    The annotation matching is the thing the replay's counts are produced
+    *through*.  Running the detector before the adapter has been shown
+    equivalent to the registered `data.py` yields numbers whose meaning
+    depends on an unverified reimplementation, so this stops M4 **before**
+    the detector callback is reached.
+
+    A PASS is not a string.  It must name the registered `data.py` digest it
+    was established against, the adapter fingerprint it tested, the PREP
+    bundle that produced it, and the fixtures it compared — so that editing
+    the adapter, or the registered file moving, invalidates it automatically
+    rather than leaving a stale approval in place.
     """
+    record = dict(oracle if oracle is not None
+                  else (SOURCE_MATCH_ORACLE_RECORD or {}))
+    fingerprint = source_match_adapter_fingerprint()
+    registered = M4_SOURCE_MAP_HASHES[SOURCE_MATCH_REGISTERED_FILE]
+    base = {"gate": "source_match_equivalence",
+            "adapter_fingerprint": fingerprint,
+            "registered_file": SOURCE_MATCH_REGISTERED_FILE,
+            "registered_file_sha256": registered,
+            "registered_function": SOURCE_MATCH_REGISTERED_FUNCTION,
+            "contract": dict(SOURCE_MATCH_CONTRACT),
+            "oracle": record}
+    if not record:
+        return {**base, "ok": False,
+                "reason": SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+                "problems": [
+                    "no differential comparison against the registered "
+                    "`data.py` has been recorded.  The adapter is a "
+                    "text-derived candidate and is unverified against the "
+                    "registered source; reproducing the registered per-record "
+                    "counts is a necessary condition, not a proof, and may "
+                    "not be used to choose between candidate implementations."]}
+    problems: List[str] = []
+    missing = [f for f in SOURCE_MATCH_ORACLE_FIELDS if f not in record]
+    if missing:
+        problems.append(f"the oracle record is missing {missing}")
+    if str(record.get("verdict") or "") != SOURCE_MATCH_ORACLE_PASS:
+        problems.append(
+            f"verdict {record.get('verdict')!r} is not "
+            f"{SOURCE_MATCH_ORACLE_PASS!r}")
+    if str(record.get("registered_file_sha256") or "") != registered:
+        problems.append(
+            "the PREP was run against a different `data.py`; a PASS is not "
+            "reused across a change of the registered source")
+    if str(record.get("adapter_fingerprint") or "") != fingerprint:
+        problems.append(
+            "the adapter has changed since the PREP; the differential must be "
+            "re-run against the current fingerprint")
+    if not str(record.get("prep_bundle_sha256") or ""):
+        problems.append("the PREP bundle identity is not recorded")
+    fixtures = list(record.get("fixtures") or ())
+    try:
+        passed = int(record.get("fixtures_passed"))
+    except (TypeError, ValueError):
+        passed = -1
+    if not fixtures:
+        problems.append("no oracle fixtures are listed")
+    elif passed != len(fixtures):
+        problems.append(
+            f"{passed} of {len(fixtures)} oracle fixtures passed; a partial "
+            f"differential is not a PASS")
+    return {**base, "ok": not problems,
+            "reason": None if not problems
+            else SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+            "fixtures": fixtures, "fixtures_passed": passed,
+            "problems": problems}
+
+
+def source_match_equivalence_status(
+        oracle: Optional[Mapping[str, object]] = None) -> Dict[str, object]:
+    """Reporting view of the equivalence sub-gate, for the result bundle."""
+    gate = verify_source_match_equivalence(oracle)
     return {
-        "status": (SOURCE_MATCH_ORACLE_VERDICT
-                   or SOURCE_MATCH_EQUIVALENCE_REQUIRED),
-        "adapter_fingerprint": source_match_adapter_fingerprint(),
-        "registered_file": SOURCE_MATCH_REGISTERED_FILE,
-        "registered_file_sha256": M4_SOURCE_MAP_HASHES[
-            SOURCE_MATCH_REGISTERED_FILE],
-        "registered_function": SOURCE_MATCH_REGISTERED_FUNCTION,
-        "contract": dict(SOURCE_MATCH_CONTRACT),
-        "note": ("Count reproduction is a necessary condition only.  This "
-                 "adapter is written against the registered digest above and "
-                 "has not been differentially tested against the source "
-                 "itself; that needs a separately approved read-only PREP."),
+        "status": (SOURCE_MATCH_ORACLE_PASS if gate["ok"]
+                   else SOURCE_MATCH_EQUIVALENCE_REQUIRED),
+        "adapter_fingerprint": gate["adapter_fingerprint"],
+        "registered_file": gate["registered_file"],
+        "registered_file_sha256": gate["registered_file_sha256"],
+        "registered_function": gate["registered_function"],
+        "contract": gate["contract"],
+        "problems": list(gate.get("problems", ())),
+        "note": ("This adapter is a text-derived candidate and is unverified "
+                 "against the registered `data.py` until a differential PREP "
+                 "records a PASS.  Reproducing the registered per-record "
+                 "counts is a necessary condition only."),
     }
 
 
@@ -3616,7 +3711,14 @@ def match_peaks_to_annotations(peaks: Sequence[int],
                                signal_length: int,
                                tolerance: int = M4_PEAK_MATCH_TOLERANCE_SAMPLES
                                ) -> Dict[str, object]:
-    """Reproduce the registered `data.py :: build_record` annotation matching.
+    """**Candidate** source-matching adapter for `data.py :: build_record`.
+
+    This is a *text-derived candidate contract*, **unverified against the
+    registered `data.py`**.  EXP-2026-008 requires M4.1 to reproduce the
+    source's own rule; this function does not yet establish that it does, and
+    nothing here may be read as evidence that it does.  The equivalence
+    sub-gate stops M4 before the detector runs until a differential PREP (P3)
+    records a PASS.
 
     Every control-flow decision is fixed in :data:`SOURCE_MATCH_CONTRACT` and
     summarised here, because "greedy nearest with a `used` set" is prose that
@@ -3632,10 +3734,12 @@ def match_peaks_to_annotations(peaks: Sequence[int],
       **before** both AAMI selection and the boundary cut — a peak later
       dropped by either does not release its annotation back into the pool.
 
-    The tolerance, the greediness, the `used` set and the cut are the
-    source's; no detector, second tolerance or manual anchor is introduced
-    here.  Returns the kept cache rows in detector order plus the two
-    discordance anchor kinds M4.1 defines.
+    The tolerance, the greediness, the `used` set and the cut are all read
+    from the registered source map rather than chosen here: no detector,
+    second tolerance or manual anchor is introduced.  Whether these decisions
+    match the registered implementation is exactly what remains unverified.
+    Returns the kept cache rows in detector order plus the two discordance
+    anchor kinds M4.1 defines.
     """
     order = sorted(range(len(annotations)),
                    key=lambda k: (int(annotations[k][0]), k))
@@ -3941,6 +4045,8 @@ def load_all_inputs(bundle_dir: str, mamba_path: str, cache_dir: str,
         m4_frozen_rr=load_frozen_rr(cache),
         m4_replay=replay,
         m4_anchors=lambda: replay.anchors_by_record(mamba),
+        # Explicitly the module-level record: production never injects a PASS.
+        m4_source_match_oracle=SOURCE_MATCH_ORACLE_RECORD,
         source_files=[])
 
 
@@ -3994,7 +4100,8 @@ def run_pipeline(inputs: "ProductionInputs",
         registered_counts=inputs.m4_registered_counts,
         replayed_rr=None, frozen_rr=inputs.m4_frozen_rr,
         input_identity=inputs.m4_identity,
-        rr_verdict=PREP_M4_RR_EQUIVALENCE_VERDICT, replay=inputs.m4_replay)
+        rr_verdict=PREP_M4_RR_EQUIVALENCE_VERDICT, replay=inputs.m4_replay,
+        source_match_oracle=inputs.m4_source_match_oracle)
     m4_ok = str(m4["status"]) == M4_OK
     anchors_by_record = inputs.resolve_anchors() if m4_ok else {}
     anchors = (m4_anchors(m4, anchors_by_record, rows) if m4_ok else None)
@@ -4386,6 +4493,18 @@ def design_card() -> str:
         f"  Holm family size     : {HOLM_FAMILY_SIZE}",
         f"  H4 decisional side   : {H4_DECISIONAL_SIDE}",
         f"  execution approved   : {execution_is_approved(None)}",
+        "",
+        "  Open registration items - each is a terminal stop, not a warning:",
+        f"    MIT-BIH tree aggregate     : "
+        f"{MITDB_TREE_AGGREGATE or INPUT_IDENTITY_REGISTRATION_REQUIRED}",
+        f"    canonical bundle digests   : "
+        f"{SOURCE_BUNDLE_FILE_SHA256 or SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED}",
+        f"    source-matching adapter    : "
+        f"{source_match_equivalence_status()['status']}",
+        "  The adapter is a text-derived candidate, unverified against the",
+        "  registered data.py; M4 stops before the detector until a",
+        "  differential PREP records a PASS.",
+        "",
         f"  {APPROVAL_NOTE}",
     ]
     return "\n".join(lines)
