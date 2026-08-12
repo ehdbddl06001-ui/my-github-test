@@ -23,11 +23,17 @@ preflights, P1 and P2.  It is not a scientific design and produces no
 scientific result: nothing here measures anything about ECG data, and no
 outcome of a P1/P2 run may be cited as a Q5-E finding.
 
-The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`) and has
-**never been executed**.  Running it against the registered assets needs a
-separate read-only user approval that does not exist yet.  A terminal guard in
-`run_prep()` sits after every check and before the first registered read; this
-implementation PR does not remove it.
+The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`), passed
+Codex implementation acceptance on 2026-08-12, and has **still not been
+executed**.  The user granted a separate **read-only execution approval** on
+2026-08-12; the terminal stop in `run_prep()` is now open, and it opens by
+consulting `EXECUTION_APPROVAL_RECORD` rather than by having been deleted.  Its
+position is unchanged: still after the switch, the token and the folder id, and
+still before authentication, the Drive service and every reader.
+
+**No run has happened.**  Enabling execution and executing are different
+things: this contract is not `MEASURED`, `PASS` or `COMPLETE`, and no observed
+value exists.
 
 P3 — the source-matching differential — is **not** in scope here.
 
@@ -705,3 +711,52 @@ the external freeze value cannot be promoted to an acceptance pass, and the
 verifier says so in words rather than only in a flag. The run's own call checks
 self-consistency against the digest it just computed; the external anchor
 remains the saved notebook output.
+
+## 2026-08-12 — separate user read-only execution approval (recorded)
+
+The user granted a **separate read-only execution approval** for EXP-2026-008
+Q5-E PREP P1 and P2, distinct from the implementation approval and distinct
+from any Q5-E audit approval.
+
+**Approved**
+
+- P1 byte-identity over the registered MIT-BIH publisher tree
+  (`research/ASSETS.md :: data-mitdb-raw-100`)
+- P2 byte-identity over the canonical Q5-D bundle at the registered folder id
+  `1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd`
+- Drive API reads under exactly the `drive.readonly` scope
+- writing the P1/P2 result bundle, and saving the notebook with its outputs
+
+**Not approved**
+
+P3 implementation or execution · `detect_r()` · re-running the beat join ·
+M0-M4 aggregation · DS2 per-beat labels · V10 probabilities · association or
+S PR-AUC · model training or retraining · moving, deleting or overwriting any
+Drive file · automatic registration of any observed value.
+
+**What changed in the code.**  One thing.  `_terminal_execution_guard()` used
+to raise unconditionally; it now raises unless `EXECUTION_APPROVAL_RECORD`
+says the approval was granted, and returns that record when it was.  The
+approval is written down rather than implied by a deleted line: an absent
+check reads the same whether the approval happened or someone removed an
+inconvenience, and a record keeps who approved what, when, and what was
+withheld. Setting `granted: False` restores the previous refusal exactly, with
+no other edit anywhere — a regression test asserts precisely that.
+
+Everything else is untouched: the gates, their order, the registered folder id,
+the digest rules, the 147/147 definition, the fold convention, the publish
+contract and the anchor-provenance rules are all unchanged. Authentication
+still happens inside `run_prep()` **below** where the stop sits, so the
+notebook still calls `run_prep(..., adapter=None)` and holds no credential
+logic of its own.
+
+The notebook's two opt-in switches are now on (`APPROVAL =
+P.EXECUTION_APPROVAL_TOKEN`, `OPEN_REGISTERED_DATA = True`) and its mount paths
+point at the registered asset rather than a blank to be filled in. The module
+constant `OPEN_REGISTERED_DATA` stays `False`, so opting in remains something a
+call site does explicitly and a stray import still reaches nothing.
+
+**Nothing was executed in this PR.** No authentication was performed, no Drive
+API call was made, no registered asset was opened, and no digest was computed
+against real bytes. This change makes a run possible; it does not make one
+happen, and the three Q5-E stops remain closed.
