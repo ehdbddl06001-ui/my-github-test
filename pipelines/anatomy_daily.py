@@ -153,9 +153,37 @@ def build_plan(d: date) -> dict:
         "question_ids": qsel,
         "review": review,
         "gaps": gaps,
+        "preview_exams": preview_exams(d),
         "est_minutes": min(35, max(20, 2 * sum(len(v) for v in picked_concepts.values())
                                    + 2 * len(qsel) + 5)),
     }
+
+
+def preview_exams(d: date) -> list[dict]:
+    """예습시험 신호(결정론): 앞으로 0~2일 내 수업 회차 목록.
+
+    예습시험은 수업당 10문제, 그날 회차 범위에서 출제된다(사용자 실측).
+    phase 의미 — prepare(D-2): 그 회차 범위 문항 생성 시작 /
+    finalize(D-1): **이 실행이 마감** — 수업 전날 아침까지 세트 완성 /
+    class-day(D-0): 아침 복습만. 루틴은 주말 포함 매일 돌므로
+    월요일 수업의 마감은 일요일 아침 실행이 담당한다.
+    """
+    out = []
+    for i, s in enumerate(sched.SCHEDULE_2026):
+        if s.get("exam"):
+            continue
+        du = (s["date"] - d).days
+        if 0 <= du <= 2:
+            out.append({
+                "session_no": i + 1,
+                "class_date": s["date"].isoformat(),
+                "due": (s["date"] - timedelta(days=1)).isoformat(),
+                "days_until": du,
+                "phase": {0: "class-day", 1: "finalize", 2: "prepare"}[du],
+                "topics": s["topics"],
+                "regions": s.get("regions", []),
+            })
+    return out
 
 
 def missing_dates(today: date, limit: int | None = None) -> list[date]:

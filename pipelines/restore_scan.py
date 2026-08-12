@@ -92,17 +92,21 @@ def _donor_blend(img, mask, donor_path: Path, cfg: dict):
         return img, mask  # 정렬 실패 → donor 사용 안 함
     don = cv2.warpAffine(don, warp, (w, h),
                          flags=cv2.INTER_LINEAR + cv2.WARP_INVERSE_MAP)
-    # donor 오염 제외: donor 자신의 필기(민감 임계값) + 지정 박스 + 프레임 차이 큰 곳
+    # donor 오염 제외: donor 자신의 필기 + 지정 박스 + 프레임 차이 큰 곳.
+    # 주의: 밝은 흰 근막(스페큘러)은 b가 높아 파란 필기로 오검출되기 쉬움 —
+    # 무채색·고휘도 픽셀은 제외해야 donor의 진짜 질감이 살아남는다(2026-08-12 실측).
     b, g, r = cv2.split(don.astype(np.int16))
-    bad = (((r > 120) & (g < 85) & (b < 85)) | (((b - r) > 12) & (b > 75))
-           | ((r > 105) & (g > 95) & (b < 70))).astype(np.uint8) * 255
+    bright_neutral = (r + g + b) > 560
+    bad = ((((r > 120) & (g < 85) & (b < 85))
+            | (((b - r) > 22) & (b > 85) & ~bright_neutral)
+            | ((r > 105) & (g > 95) & (b < 70))).astype(np.uint8) * 255)
     bad = cv2.dilate(bad, np.ones((13, 13), np.uint8))
     for x0, y0, x1, y1 in cfg.get("donor_bad_boxes", []):
         bad[y0:y1, x0:x1] = 255
     diff = cv2.absdiff(cv2.GaussianBlur(g1, (21, 21), 0),
                        cv2.GaussianBlur(cv2.cvtColor(don, cv2.COLOR_BGR2GRAY),
                                         (21, 21), 0))
-    bad[diff > int(cfg.get("donor_diff_thresh", 45))] = 255
+    bad[diff > int(cfg.get("donor_diff_thresh", 60))] = 255
     use = cv2.bitwise_and(mask, cv2.bitwise_not(bad))
     # 광도 매칭: 마스크 밖 공통 영역 기준으로 donor 밝기를 타깃에 맞춘다
     ok = (mask == 0) & (bad == 0)
