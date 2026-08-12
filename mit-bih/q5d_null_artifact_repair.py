@@ -71,7 +71,7 @@ EXECUTION_APPROVAL_TOKEN = "q5d-null-artifact-repair-execution-approved-by-user"
 #: implementation is named here, in the enable PR, pointing *backwards*; the
 #: notebook measures the actual `HEAD` it is running and the two are checked
 #: against each other.
-APPROVED_IMPLEMENTATION_COMMIT = None
+APPROVED_IMPLEMENTATION_COMMIT = "5191a92353b5bb067a01b174cfcc70d722ef013c"
 
 #: LF-normalised digests of what the review actually covered.  The repair
 #: module is **not** in this table: a record inside a file cannot certify that
@@ -79,25 +79,29 @@ APPROVED_IMPLEMENTATION_COMMIT = None
 #: this approval block removed — so an enable PR that only flips the guard
 #: leaves it unchanged and a science change is visible.
 APPROVED_ARTIFACT_DIGESTS = {
-    "spec_lf_sha256": None,
-    "notebook_lf_sha256": None,
-    "frozen_q5d_lf_sha256": None,
-    "module_science_lf_sha256": None,
+    "spec_lf_sha256":
+        "156343efafaa0b54e2cccd42e1c071c4e2a91248f59c8e37f4e6e00f35df57d6",
+    "notebook_lf_sha256":
+        "d16368faf757b93b926d1f9956b70d23f816b97a27d81b6b6583377126c6c2f4",
+    "frozen_q5d_lf_sha256":
+        "6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226",
+    "module_science_lf_sha256":
+        "89f1a8274bdeaec7c2d1bfe2656d4d7dc2d1bb5272010ff5012c61ff5aa15584",
 }
 
-#: Closed.  The record is written down rather than implied by an absent check:
-#: a deleted guard reads identically whether an approval happened or someone
-#: removed an inconvenience.  Flipping `granted` to True, with the rest filled
-#: in, is the whole of what an execution-approval PR does here.
+#: Open, as of 2026-08-12.  The record is written down rather than implied by a
+#: deleted check: an absent guard reads identically whether an approval
+#: happened or someone removed an inconvenience.  Setting `granted` back to
+#: False restores the previous refusal exactly, with no other edit anywhere.
 EXECUTION_APPROVAL_RECORD = {
-    "granted": False,
-    "granted_on": None,
-    "granted_by": None,
-    "pinned_commit": None,
+    "granted": True,
+    "granted_on": "2026-08-12",
+    "granted_by": "user",
+    "pinned_commit": "5191a92353b5bb067a01b174cfcc70d722ef013c",
     "kind": ("reconstruct negative_control_null.npz from the existing "
              "EXP-2026-007 null shards and assemble a new corrective bundle "
              "folder"),
-    "would_approve": (
+    "approved": (
         "reading the 100 existing null shards, read-only",
         "reading the existing canonical Q5-D bundle's eleven files, read-only",
         "read-only Drive folder-id inventories of the registered folder ids",
