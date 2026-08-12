@@ -3290,12 +3290,23 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
         literal — the candidates and the clone target alike — into a sandbox
         makes the outcome depend only on the layout under test.
         """
+        import contextlib
+        import io
+
         namespace = {}
         previous = os.getcwd()
         sandboxed = head.replace("'/content", f"'{sandbox}/content")
+        # The cell prints git's complaint when its clone fallback fails, which
+        # is the point of the "nothing to find" case.  Captured rather than
+        # let through: this cell's saved output is part of the freeze record,
+        # and a reviewer should not have to work out that a `fatal:` line came
+        # from a test exercising a refusal on purpose.
+        noise = io.StringIO()
         try:
             os.chdir(cwd)
-            exec(compile(sandboxed, "environment_cell", "exec"), namespace)
+            with contextlib.redirect_stdout(noise), \
+                    contextlib.redirect_stderr(noise):
+                exec(compile(sandboxed, "environment_cell", "exec"), namespace)
             return namespace.get("FOUND")
         except RuntimeError as error:
             return f"REFUSED: {error}"
