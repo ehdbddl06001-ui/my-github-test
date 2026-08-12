@@ -27,6 +27,8 @@ sys.path.insert(0, HERE)
 import q5d_order_preserving_beat_join as BJ          # noqa: E402
 import q5e_leg2_failure_mechanism_audit as Q5E       # noqa: E402
 
+HANDOFF_PREP = os.path.join(
+    ROOT, "research", "HANDOFF_2026-08-12_Q5E_prep_p1p2p3_to_codex.md")
 SPEC = os.path.join(
     ROOT, "experiments", "specs",
     "EXP-2026-008-q5e-leg2-failure-mechanism-audit.md")
@@ -792,10 +794,15 @@ def test_execution_approval_is_required():
         except Q5E.ExecutionNotApprovedError:
             check(True, "approval is checked before existence is revealed")
         try:
-            Q5E.verify_bundle_is_canonical(tmp, None)
-            raise AssertionError("unapproved canonicity check succeeded")
+            Q5E.verify_bundle_directory_contract(tmp, None)
+            raise AssertionError("unapproved directory contract succeeded")
         except Q5E.ExecutionNotApprovedError:
-            check(True, "canonicity check is gated too")
+            check(True, "the directory contract is gated too")
+        try:
+            Q5E.verify_bundle_content_identity(tmp, None)
+            raise AssertionError("unapproved content identity succeeded")
+        except Q5E.ExecutionNotApprovedError:
+            check(True, "and so is the content identity check")
 
     try:
         Q5E.run_audit(_verified({"bundle_dir": "b"}), "o", approval=None)
@@ -1797,10 +1804,11 @@ def test_byte_identical_bundle_duplicate_is_allowed_and_audited():
                  d, Q5E.BUNDLE_INPUT_FILES, token)["aggregate"]}
             for d in found]
         resolved = Q5E.resolve_identical_candidates(
-            candidates, "canonical bundle", root)
+            candidates, "canonical bundle", root,
+            duplicate_label=Q5E.DUPLICATE_LABEL_INPUT_SUBSET)
         check(resolved["n_candidates"] == 2,
               "the duplicate is counted, not treated as an error")
-        check(len(resolved["byte_identical_duplicates"]) == 1,
+        check(len(resolved[Q5E.DUPLICATE_LABEL_INPUT_SUBSET]) == 1,
               "and the other path is recorded in the audit")
         check(resolved["path"] in found,
               "one of the real copies is chosen deterministically")
@@ -1813,7 +1821,9 @@ def test_byte_identical_duplicates_are_resolved_not_refused():
     resolved = Q5E.resolve_identical_candidates(candidates, "mamba", "/drive")
     check(resolved["path"] == "/drive/a/mamba_data.npz",
           "one copy is chosen deterministically, by sorted path")
-    check(resolved["byte_identical_duplicates"] ==
+    check(resolved["duplicate_label"] == Q5E.DUPLICATE_LABEL_FULL_BYTES,
+          "a whole-file digest may be called byte-identical")
+    check(resolved[Q5E.DUPLICATE_LABEL_FULL_BYTES] ==
           ["/drive/b/mamba_data.npz"],
           "every duplicate path is recorded in the audit")
     check(resolved["n_candidates"] == 2, "the candidate count is preserved")
@@ -2796,6 +2806,353 @@ def test_oracle_record_requires_the_comparison_to_have_happened():
 
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
           "and no real PASS is registered in this PR")
+
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Sixth acceptance review: A1-A6
+# ─────────────────────────────────────────────────────────────────────────────
+def test_a1_only_two_authoritative_bundle_checks_remain():
+    """A1: the weaker legacy path is gone, not merely unused."""
+    check(not hasattr(Q5E, "verify_bundle_is_canonical"),
+          "the legacy canonicity function is removed")
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    check("verify_bundle_is_canonical" not in text,
+          "and no reference to it survives, not even in a docstring")
+    body = text.split("def reverify_registered_inputs(", 1)[1]
+    body = body.split("\ndef ", 1)[0]
+    check("bundle_present" not in body,
+          "the legacy bundle_present gate is gone from re-verification")
+    check(body.count("verify_bundle_directory_contract(") == 1,
+          "the directory contract has exactly one authoritative call")
+    check(body.count("verify_bundle_content_identity(") == 1,
+          "and so does the input identity")
+    check("subset_file_fold(" in body,
+          "source_files come from the files that were actually verified")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        good = _write_bundle_dir(os.path.join(tmp, "run"))
+        paths = {key: tmp for key in Q5E.DISCOVERED_PATH_KEYS}
+        paths["bundle_dir"] = good
+        paths["mamba_path"] = os.path.join(tmp, "mamba_data.npz")
+        with open(paths["mamba_path"], "wb") as handle:
+            handle.write(b"x")
+        try:
+            Q5E.reverify_registered_inputs(paths,
+                                           Q5E.EXECUTION_APPROVAL_TOKEN)
+            raise AssertionError("re-verification passed on a stub mount")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("re-verification failed" in str(error),
+                  "re-verification still refuses an unregistered mount")
+
+
+def test_a2_bundle_copies_are_not_called_byte_identical():
+    """A2: the audit label must match what the digest actually covers."""
+    with tempfile.TemporaryDirectory() as tmp:
+        token = Q5E.EXECUTION_APPROVAL_TOKEN
+        a = _write_bundle_dir(os.path.join(tmp, "a"))
+        b = _write_bundle_dir(os.path.join(tmp, "b"), mutate="log.txt")
+        fold_a = Q5E.subset_file_fold(a, Q5E.BUNDLE_INPUT_FILES, token)
+        fold_b = Q5E.subset_file_fold(b, Q5E.BUNDLE_INPUT_FILES, token)
+        check(fold_a["aggregate"] == fold_b["aggregate"],
+              "the two copies share the five-file input identity")
+        full_a = Q5E.verify_bundle_directory_contract(a, token)
+        full_b = Q5E.verify_bundle_directory_contract(b, token)
+        check(full_a["full_aggregate"] != full_b["full_aggregate"],
+              "but their twelve-file aggregates differ")
+
+        resolved = Q5E.resolve_identical_candidates(
+            [{"path": a, "digest": fold_a["aggregate"],
+              "full_aggregate": full_a["full_aggregate"]},
+             {"path": b, "digest": fold_b["aggregate"],
+              "full_aggregate": full_b["full_aggregate"]}],
+            "canonical bundle", tmp,
+            duplicate_label=Q5E.DUPLICATE_LABEL_INPUT_SUBSET)
+        check(Q5E.DUPLICATE_LABEL_FULL_BYTES not in resolved,
+              "they are NOT recorded as byte-identical duplicates")
+        check(resolved[Q5E.DUPLICATE_LABEL_INPUT_SUBSET],
+              "they are recorded as input-identical copies instead")
+        check("NOT asserted to be byte-identical" in str(resolved["note"]),
+              "and the audit says so explicitly")
+        folds = {c["full_aggregate"] for c in resolved["candidates"]}
+        check(len(folds) == 2,
+              "both full aggregates are preserved in the audit")
+
+
+def test_a2_registered_bundle_digests_must_be_complete():
+    """A2: a half-filled registration is not a registration."""
+    state = Q5E.registered_bundle_digests_complete()
+    check(state["registered"] is False,
+          "nothing is registered in this PR")
+    check(state["reason"] == Q5E.SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+          "and the open item is reported")
+
+    real = Q5E.SOURCE_BUNDLE_FILE_SHA256
+    try:
+        full = {name: chr(ord("a") + i) * 64
+                for i, name in enumerate(Q5E.BUNDLE_INPUT_FILES)}
+        Q5E.SOURCE_BUNDLE_FILE_SHA256 = dict(full)
+        check(Q5E.registered_bundle_digests_complete()["complete"] is True,
+              "a complete well-formed registration is accepted")
+
+        partial = dict(full)
+        partial.pop(Q5E.BUNDLE_INPUT_FILES[0])
+        Q5E.SOURCE_BUNDLE_FILE_SHA256 = partial
+        result = Q5E.registered_bundle_digests_complete()
+        check(result["complete"] is False, "a missing key is refused")
+        check(any("missing keys" in p for p in result["problems"]),
+              "and named")
+
+        extra = dict(full)
+        extra["not_an_input.csv"] = "f" * 64
+        Q5E.SOURCE_BUNDLE_FILE_SHA256 = extra
+        result = Q5E.registered_bundle_digests_complete()
+        check(result["complete"] is False, "an extra key is refused")
+        check(any("unregistered keys" in p for p in result["problems"]),
+              "and named")
+
+        malformed = dict(full)
+        malformed[Q5E.BUNDLE_INPUT_FILES[1]] = "NOTAHASH"
+        Q5E.SOURCE_BUNDLE_FILE_SHA256 = malformed
+        check(Q5E.registered_bundle_digests_complete()["complete"] is False,
+              "a value that is not lowercase 64-hex is refused")
+    finally:
+        Q5E.SOURCE_BUNDLE_FILE_SHA256 = real
+
+
+def test_a3_mitdb_contract_is_146_listed_plus_the_list_itself():
+    """A3: SHA256SUMS.txt cannot verify itself."""
+    check(len(BJ.mitdb_expected_files()) == 147,
+          "the expected set already contains the checksum file")
+    check(BJ.MITDB_CHECKSUM_FILE in BJ.mitdb_expected_files(),
+          "explicitly")
+    check(Q5E.MITDB_PUBLISHER_LISTED_FILES == 146,
+          "the publisher list can cover only the other 146")
+    check(Q5E.MITDB_PUBLISHER_LISTED_FILES + 1 == 147,
+          "146 listed plus the list itself is 147/147")
+    check(Q5E.MITDB_CHECKSUM_FILE_SHA256 ==
+          "b61158a96d5f2ca80edfb354a9a66a6324836c390a84e1966dcee2b907d6be43",
+          "the registered checksum-file digest is the ASSETS.md value")
+
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        body = handle.read().split("def verify_mitdb_identity(", 1)[1]
+        body = body.split("\ndef ", 1)[0]
+    check("tuple(names) + (BJ.MITDB_CHECKSUM_FILE,)" not in body,
+          "the checksum file is not appended to a set that already has it")
+    check("BJ.hash_file_set(directory, names," in body,
+          "exactly mitdb_expected_files() is passed through")
+    check("MITDB_CHECKSUM_FILE_SHA256" in body,
+          "the checksum file's own digest is verified separately")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        result = Q5E.verify_mitdb_identity(tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(result["ok"] is False, "an empty directory is not a tree")
+        integrity = result["integrity"]
+        check(integrity["n_expected_files"] == 147,
+              "the gate reports the 147-file expected set")
+        check(integrity["publisher_listed"]["expected_checked"] == 146,
+              "and the 146-file publisher expectation separately")
+        check(integrity["checksum_file"]["ok"] is False,
+              "a missing checksum file fails its own digest check")
+        check(integrity["published_tree_integrity_ok"] is False,
+              "so published-tree integrity is not claimed")
+        check(any(BJ.MITDB_CHECKSUM_FILE in p for p in result["problems"]),
+              "and the checksum file is named in the problems")
+
+
+def test_a5_m4_first_failure_reaches_the_result():
+    """A5: the real reason must survive into q5e_result.json."""
+    flags = {h: {"flag": False} for h in Q5E.HYPOTHESES}
+    for reason in (Q5E.SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+                   Q5E.M4_COUNT_MISMATCH, Q5E.M4_RR_MISMATCH,
+                   Q5E.M4_RUNTIME_UNAVAILABLE, Q5E.M4_SOURCE_MAP_UNVERIFIED,
+                   Q5E.M4_IDENTITY_MISMATCH):
+        decision = Q5E.decide(True, Q5E.M4_INPUT_ABSENT, flags,
+                              m4_first_failure=reason)
+        check(decision["decision"] == Q5E.DECISION_UNRESOLVED,
+              f"{reason} still yields the registered terminal branch")
+        check(decision["first_stopping_reason"] == reason,
+              f"and {reason} is preserved as the first stopping reason")
+        check(decision["m4_status"] == Q5E.M4_INPUT_ABSENT,
+              "the umbrella status is kept alongside, not lost")
+        result = Q5E.build_result(
+            qa={"ok": True}, m0={}, m1={}, m2={}, m3={},
+            m4={"status": Q5E.M4_INPUT_ABSENT, "first_failure": reason},
+            nulls={}, tests={}, decision=decision)
+        check(result["first_stopping_reason"] == reason,
+              f"{reason} reaches the result JSON")
+
+    fallback = Q5E.decide(True, Q5E.M4_INPUT_ABSENT, flags,
+                          m4_first_failure=None)
+    check(fallback["first_stopping_reason"] == Q5E.M4_INPUT_ABSENT,
+          "with no recorded sub-gate the status is the fallback")
+    partial = Q5E.decide(True, Q5E.M4_INPUT_ABSENT,
+                         {"H1": {"flag": True}, "H4": {"flag": True}},
+                         m4_first_failure=Q5E.M4_RR_MISMATCH)
+    check(len(partial["partial_flags"]) == 2 and partial["fired"] == [],
+          "H1/H4 partial handling is unchanged")
+
+
+def test_a6_detector_replay_performed_is_the_execution_fact():
+    """A6: running the detector and passing M4 are different questions."""
+    stopped_early = {"status": Q5E.M4_INPUT_ABSENT, "gates": [
+        {"gate": "runtime", "ok": True},
+        {"gate": "source_map", "ok": True},
+        {"gate": "input_identity", "ok": True},
+        {"gate": "source_match_equivalence", "ok": False}]}
+    check(Q5E.detector_replay_performed(stopped_early) is False,
+          "stopping at the equivalence gate means the detector never ran")
+
+    ran_then_failed = {"status": Q5E.M4_INPUT_ABSENT, "gates": [
+        {"gate": "detector_replay", "ok": True},
+        {"gate": "record_counts", "ok": False}]}
+    check(Q5E.detector_replay_performed(ran_then_failed) is True,
+          "a replay that ran and then failed the count gate did run")
+
+    passed = {"status": Q5E.M4_OK, "gates": [
+        {"gate": "detector_replay", "ok": True},
+        {"gate": "record_counts", "ok": True},
+        {"gate": "rr_equality", "ok": True}]}
+    check(Q5E.detector_replay_performed(passed) is True,
+          "and a complete M4 obviously did")
+
+    for m4, expected in ((stopped_early, False), (ran_then_failed, True),
+                         (passed, True)):
+        result = Q5E.build_result(
+            qa={"ok": True}, m0={}, m1={}, m2={}, m3={}, m4=m4,
+            nulls={}, tests={},
+            decision={"decision": Q5E.DECISION_NONE,
+                      "first_stopping_reason": None})
+        check(result["detector_replay_performed"] is expected,
+              f"the result seal records execution as {expected}")
+        check(result["m4_status"] == m4["status"],
+              "and keeps the M4 status as a separate field")
+
+
+def test_a6_rr_shape_violation_becomes_a_registered_m4_failure():
+    """A6: the typed replay error must not destroy the run."""
+    calls = []
+
+    def ragged():
+        calls.append("detect_r")
+        raise Q5E.ReplayContractError(
+            f"{Q5E.M4_RR_MISMATCH}: rr_features() returned ragged rows")
+
+    gate = _all_gates_pass_except_equivalence(_oracle_pass(), ragged)
+    check(calls == ["detect_r"], "the detector did run")
+    check(gate["status"] == Q5E.M4_INPUT_ABSENT,
+          "and the shape violation is a registered M4 failure, not a crash")
+    check(gate["first_failure"] == Q5E.M4_RR_MISMATCH,
+          "reported as the RR mismatch")
+    check(Q5E.detector_replay_performed(gate) is True,
+          "the seal records that the detector executed")
+    emitted = [g["gate"] for g in gate["gates"]]
+    check("detector_replay" in emitted and "rr_equality" in emitted,
+          "both the replay and the failing sub-gate are recorded")
+
+    decision = Q5E.decide(True, str(gate["status"]),
+                          {h: {"flag": False} for h in Q5E.HYPOTHESES},
+                          m4_first_failure=gate["first_failure"])
+    check(decision["decision"] == Q5E.DECISION_UNRESOLVED,
+          "the registered decision branch is preserved")
+    check(decision["first_stopping_reason"] == Q5E.M4_RR_MISMATCH,
+          "with the real reason")
+
+    # Only the typed error is converted; a programmer error still propagates.
+    def bug():
+        raise KeyError("a genuine programmer error")
+
+    try:
+        _all_gates_pass_except_equivalence(_oracle_pass(), bug)
+        raise AssertionError("an unexpected exception was swallowed")
+    except KeyError:
+        check(True, "an unrelated exception is not caught by the gate")
+
+
+def test_a6_rr_shape_violation_preserves_m0_to_m3():
+    """A6: M0-M3 partial results must survive an RR contract failure."""
+    inputs = _e2e_inputs()
+    original = inputs.m4_replay
+
+    class Ragged(object):
+        ran = False
+        producer = original.producer
+
+        def __call__(self):
+            Ragged.ran = True
+            raise Q5E.ReplayContractError(
+                f"{Q5E.M4_RR_MISMATCH}: ragged rr_features() output")
+
+    inputs.m4_replay = Ragged()
+    outcome = Q5E.run_pipeline(inputs, replicates=25, emit=lambda *a: None,
+                               qa_fixture=_e2e_qa_fixture(inputs.rows))
+    check(outcome["stopped"] is False, "the pipeline completed")
+    for stage in ("m0", "m1", "m2", "m3"):
+        check(bool(outcome[stage]), f"{stage} survived as a partial result")
+    check(outcome["m4"]["status"] == Q5E.M4_INPUT_ABSENT,
+          "M4 is DIAGNOSTIC_INPUT_ABSENT")
+    check(outcome["m4"]["first_failure"] == Q5E.M4_RR_MISMATCH,
+          "for the RR contract reason")
+    check(outcome["decision"]["decision"] == Q5E.DECISION_UNRESOLVED,
+          "and the registered decision branch is reached")
+    check(outcome["decision"]["first_stopping_reason"] == Q5E.M4_RR_MISMATCH,
+          "carrying the real first failure")
+    check(outcome["tests"]["H2"]["status"] == Q5E.UNEVALUABLE,
+          "H2 is UNEVALUABLE without M4")
+    result = Q5E.build_result(
+        qa=outcome["qa"], m0=outcome["m0"], m1=outcome["m1"],
+        m2=outcome["m2"], m3=outcome["m3"], m4=outcome["m4"],
+        nulls=outcome["nulls"], tests=outcome["tests"],
+        decision=outcome["decision"])
+    check(result["detector_replay_performed"] is True,
+          "the detector ran, and the result says so")
+    check(result["first_stopping_reason"] == Q5E.M4_RR_MISMATCH,
+          "the real reason reaches q5e_result.json")
+
+
+
+def test_a4_prep_payload_fold_cannot_reference_itself():
+    """A4: a manifest carrying its own digest is a circular contract."""
+    files = [{"name": n, "bytes": 10 + i, "sha256": chr(ord("a") + i) * 64}
+             for i, n in enumerate(Q5E.PREP_PAYLOAD_FILES)]
+    fold = Q5E.prep_payload_fold(files)
+    check(fold["complete"] is True, "a full payload folds")
+    check(Q5E.PREP_MANIFEST_FILE not in fold["included"],
+          "the manifest is not part of the fold it records")
+    check(fold["manifest_digest_frozen_externally"] is True,
+          "its own digest is frozen outside the bundle")
+    check(len(fold["prep_payload_sha256"]) == 64,
+          "the fold is a sha256")
+
+    again = Q5E.prep_payload_fold(list(reversed(files)))
+    check(again["prep_payload_sha256"] == fold["prep_payload_sha256"],
+          "the same input always yields the same digest, order-independent")
+
+    with_manifest = files + [{"name": Q5E.PREP_MANIFEST_FILE, "bytes": 1,
+                              "sha256": "f" * 64}]
+    including = Q5E.prep_payload_fold(with_manifest)
+    check(including["prep_payload_sha256"] == fold["prep_payload_sha256"],
+          "adding the manifest does not change the payload fold")
+    check(Q5E.PREP_MANIFEST_FILE in including["excluded"],
+          "and it is recorded as excluded, not silently dropped")
+
+    changed = [dict(f) for f in files]
+    changed[0]["sha256"] = "0" * 64
+    check(Q5E.prep_payload_fold(changed)["prep_payload_sha256"] !=
+          fold["prep_payload_sha256"],
+          "changing a payload file does change the fold")
+
+    short = Q5E.prep_payload_fold(files[:-1])
+    check(short["complete"] is False and short["missing"],
+          "a missing payload file is reported, not folded over silently")
+
+    with open(HANDOFF_PREP, encoding="utf-8") as handle:
+        design = handle.read()
+    check("prep_payload_sha256" in design,
+          "the PREP design names the payload fold field")
+    check(Q5E.PREP_MANIFEST_FILE in design,
+          "and states which file is excluded from it")
 
 
 

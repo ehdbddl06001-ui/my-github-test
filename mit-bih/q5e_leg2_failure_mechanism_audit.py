@@ -386,6 +386,17 @@ class DiagnosticInputMismatch(Q5EError):
     """QA reproduction or partition assertion failed.  No measurement stands."""
 
 
+class ReplayContractError(DiagnosticInputMismatch):
+    """The detector replay returned something outside its registered contract.
+
+    Narrow on purpose.  This is the *only* exception `m4_feasibility_gate`
+    converts into a registered `M4` failure, so a shape violation becomes
+    `DIAGNOSTIC_INPUT_ABSENT` — the branch the spec already defines — instead
+    of killing the run and losing the M0-M3 partial results with it.  A
+    programmer error must keep propagating, so nothing broader is caught.
+    """
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Guards
 # ─────────────────────────────────────────────────────────────────────────────
@@ -500,6 +511,9 @@ def module_capabilities() -> Tuple[str, ...]:
     """
     return ("run_audit", "run_audit_from_mount", "discover_registered_inputs",
             "reverify_registered_inputs", "verify_mitdb_identity",
+            "verify_bundle_directory_contract", "subset_file_fold",
+            "registered_bundle_digests_complete", "prep_payload_fold",
+            "detector_replay_performed",
             "verify_bundle_content_identity", "resolve_identical_candidates",
             "source_match_equivalence_status",
             "verify_source_match_equivalence", "build_detector_replay",
@@ -818,35 +832,6 @@ def verify_qa_targets(rows: Sequence[Mapping[str, object]],
     return {"targets": targets, "ok": ok, "target_set": target_set,
             "first_failure": None if ok else
             sorted(k for k, v in targets.items() if not v["ok"])[0]}
-
-
-def verify_bundle_is_canonical(directory: str, approval: Optional[str]
-                               ) -> Dict[str, object]:
-    """Canonicity is established by digest and marker absence, never by path."""
-    require_execution_approval(approval, f"canonical bundle at {directory!r}")
-    superseded = os.path.join(directory, SUPERSEDED_MARKER)
-    problems: List[str] = []
-    if os.path.exists(superseded):
-        problems.append(
-            f"{SUPERSEDED_MARKER} present: this is a superseded bundle")
-    files: List[Dict[str, object]] = []
-    for name in BUNDLE_INPUT_FILES:
-        path = os.path.join(directory, name)
-        if not os.path.exists(path):
-            problems.append(f"missing registered input {name}")
-            continue
-        files.append({"name": name, "bytes": os.path.getsize(path),
-                      "sha256": sha256_file(path)})
-    manifest_path = os.path.join(directory, "manifest.json")
-    code = ""
-    if os.path.exists(manifest_path):
-        with open(manifest_path, encoding="utf-8") as handle:
-            code = str(json.load(handle).get("code_sha256") or "")
-        if code != PRODUCING_CODE_SHA256:
-            problems.append(
-                f"manifest code_sha256 {code!r} != {PRODUCING_CODE_SHA256}")
-    return {"directory": directory, "files": files, "code_sha256": code,
-            "problems": problems, "ok": not problems}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1877,7 +1862,21 @@ def m4_feasibility_gate(runtime: Mapping[str, str],
     # ever calling `detect_r()`.
     assert [g["gate"] for g in gates] == list(M4_GATES_BEFORE_REPLAY)
     if detector_counts is None and replay is not None:
-        detector_counts, replayed_rr = replay()
+        try:
+            detector_counts, replayed_rr = replay()
+        except ReplayContractError as error:
+            # The detector *did* run; its output violated the registered
+            # replay contract.  That is a registered M4 outcome, so it becomes
+            # DIAGNOSTIC_INPUT_ABSENT and the M0-M3 partial results survive,
+            # rather than an exception that destroys the whole run.  Only this
+            # typed error is converted: a programmer error still propagates.
+            gates.append({"gate": "detector_replay", "ok": True,
+                          "reason": None,
+                          "note": "the detector ran; its output was rejected"})
+            gates.append({"gate": "rr_equality", "ok": False,
+                          "reason": M4_RR_MISMATCH,
+                          "problems": [str(error)]})
+            return _m4_absent(gates, identity, M4_RR_MISMATCH)
     if detector_counts is None:
         gates.append({"gate": "detector_replay", "ok": False,
                       "reason": M4_COUNT_MISMATCH,
@@ -2306,8 +2305,17 @@ def evaluate_flags(evidence: Mapping[str, Mapping[str, object]],
 
 def decide(qa_ok: bool, m4_status: str,
            flags: Mapping[str, Mapping[str, object]],
-           qa_first_failure: Optional[str] = None) -> Dict[str, object]:
-    """The registered decision tree, evaluated in order; exactly one branch."""
+           qa_first_failure: Optional[str] = None,
+           m4_first_failure: Optional[str] = None) -> Dict[str, object]:
+    """The registered decision tree, evaluated in order; exactly one branch.
+
+    ``m4_first_failure`` carries M4's own first failing sub-gate into the
+    result.  The terminal decision and the multiplicity family are unchanged;
+    what changes is that a reader of `q5e_result.json` can tell
+    `SOURCE_MATCH_EQUIVALENCE_REQUIRED` from `M4_COUNT_MISMATCH` from
+    `M4_FROZEN_RR_MISMATCH`, instead of seeing only the umbrella status they
+    all collapse into.
+    """
     if not qa_ok:
         return {"decision": DECISION_MISMATCH,
                 "first_stopping_reason": qa_first_failure or "qa_targets",
@@ -2316,7 +2324,8 @@ def decide(qa_ok: bool, m4_status: str,
         fired = [HYPOTHESIS_FLAG[h] for h in ("H1", "H4")
                  if flags.get(h, {}).get("flag")]
         return {"decision": DECISION_UNRESOLVED,
-                "first_stopping_reason": m4_status,
+                "first_stopping_reason": m4_first_failure or m4_status,
+                "m4_status": m4_status,
                 "partial_flags": fired,
                 "note": ("M0-M3 are diagnostic partial results; H1/H4 are not "
                          "promoted to a terminal mechanism verdict"),
@@ -2381,6 +2390,21 @@ def build_manifest(inputs: Mapping[str, object], timestamp: str,
     }
 
 
+def detector_replay_performed(m4: Mapping[str, object]) -> bool:
+    """Did the registered detector actually run?
+
+    Not the same question as "did M4 pass".  A replay that ran and then failed
+    the record-count or RR sub-gate *did* execute the detector, and a seal that
+    reported `false` there would be untrue.  Conversely a run stopped at the
+    source-equivalence sub-gate never reached the detector at all.  So this
+    reads the gate list rather than the overall status.
+    """
+    for gate in m4.get("gates", ()) or ():
+        if str(gate.get("gate")) == "detector_replay":
+            return bool(gate.get("ok"))
+    return False
+
+
 def build_result(qa: Mapping[str, object], m0: Mapping[str, object],
                  m1: Mapping[str, object], m2: Mapping[str, object],
                  m3: Mapping[str, object], m4: Mapping[str, object],
@@ -2401,7 +2425,11 @@ def build_result(qa: Mapping[str, object], m0: Mapping[str, object],
         "analysis_only": True, "training_performed": False,
         "model_scored": False, "v10_probability_opened": False,
         "ds2_labels_opened": False, "association_performed": False,
-        "detector_replay_performed": str(m4.get("status")) == M4_OK,
+        # Whether the detector actually ran, which is not the same question as
+        # whether M4 passed: a replay that ran and then failed the count or RR
+        # sub-gate did happen, and the seal must say so.
+        "detector_replay_performed": detector_replay_performed(m4),
+        "m4_status": str(m4.get("status") or ""),
         "source_bundle": {
             "run": SOURCE_BUNDLE_RUN, "folder_id": SOURCE_BUNDLE_FOLDER_ID,
             "producing_code_sha256": PRODUCING_CODE_SHA256,
@@ -3134,6 +3162,13 @@ DISCOVERED_PATH_KEYS: Tuple[str, ...] = (
 #: and :func:`verify_mitdb_identity` reports the open item instead of passing.
 MITDB_TREE_AGGREGATE: Optional[str] = None
 INPUT_IDENTITY_REGISTRATION_REQUIRED = "INPUT_IDENTITY_REGISTRATION_REQUIRED"
+#: `SHA256SUMS.txt` cannot appear in its own list, so the frozen verifier skips
+#: it and covers the other 146 files.  Its own digest is registered separately
+#: (`research/ASSETS.md :: data-mitdb-raw-100`), and the two together — 146
+#: publisher-listed plus the list itself — are what "147/147" means.
+MITDB_CHECKSUM_FILE_SHA256 = (
+    "b61158a96d5f2ca80edfb354a9a66a6324836c390a84e1966dcee2b907d6be43")
+MITDB_PUBLISHER_LISTED_FILES = 146
 
 #: Per-file SHA-256 of the five canonical Q5-D bundle files Q5-E actually
 #: reads.  Verifying only that the files exist and that `manifest.json` names
@@ -3238,8 +3273,95 @@ def verify_bundle_directory_contract(directory: str, approval: Optional[str]
             "problems": problems}
 
 
+#: How to describe several accepted copies, per asset.  The distinction is not
+#: cosmetic: `byte_identical_duplicates` is only true when the digest that
+#: matched covers *every* byte compared.  For the Q5-D bundle the digest is the
+#: five-file subset fold, so two copies can share it while differing in, say,
+#: `log.txt` — calling those byte-identical would be a false audit record.
+DUPLICATE_LABEL_FULL_BYTES = "byte_identical_duplicates"
+DUPLICATE_LABEL_INPUT_SUBSET = "q5e_input_identical_copies"
+
+
+#: The PREP bundle file that *records* the payload fold.  It is excluded from
+#: the fold it records, because a manifest containing its own digest is a
+#: circular contract that can never be satisfied.
+PREP_MANIFEST_FILE = "manifest.json"
+#: Files folded into `prep_payload_sha256`, by name.  Fixed rather than
+#: globbed so "what was hashed" is answerable without the directory.
+PREP_PAYLOAD_FILES: Tuple[str, ...] = (
+    "config.json", "source_inventory.json", "oracle_harness_identity.json",
+    "fixture_results.json", "decision.json", "log.txt", "summary.md")
+
+
+def prep_payload_fold(files: Sequence[Mapping[str, object]]) -> Dict[str, object]:
+    """Fold a PREP bundle's payload, excluding the manifest that records it.
+
+    The self-reference this removes is real: if `manifest.json` carried a
+    digest computed over a set that included `manifest.json`, writing the
+    digest would change the file and invalidate the digest.  So the payload
+    fold covers :data:`PREP_PAYLOAD_FILES` only, the manifest records it, and
+    the manifest's *own* SHA-256 is frozen outside the bundle — in the
+    Decision log and the registration record — where nothing it contains can
+    change it.
+
+    ``files`` is `(name, bytes, sha256)` triples; the same input always yields
+    the same digest, using the same canonical convention as everywhere else.
+    """
+    payload = sorted(
+        (dict(f) for f in files if str(f.get("name")) in PREP_PAYLOAD_FILES),
+        key=lambda f: str(f["name"]))
+    excluded = sorted({str(f.get("name")) for f in files}
+                      - {str(f["name"]) for f in payload})
+    if PREP_MANIFEST_FILE in {str(f["name"]) for f in payload}:
+        raise Q5EError(
+            f"{PREP_MANIFEST_FILE} cannot be part of the payload fold it "
+            f"records; that contract is circular by construction")
+    missing = [n for n in PREP_PAYLOAD_FILES
+               if n not in {str(f["name"]) for f in payload}]
+    digest = hashlib.sha256(_canonical_json(
+        [[f["name"], f["bytes"], f["sha256"]] for f in payload]
+    ).encode("utf-8")).hexdigest()
+    return {"prep_payload_sha256": digest,
+            "included": [str(f["name"]) for f in payload],
+            "excluded": excluded, "missing": missing,
+            "manifest_file": PREP_MANIFEST_FILE,
+            "manifest_digest_frozen_externally": True,
+            "complete": not missing}
+
+
+def registered_bundle_digests_complete() -> Dict[str, object]:
+    """Is `SOURCE_BUNDLE_FILE_SHA256` a complete, well-formed registration?
+
+    A half-filled map is not a registration: it would silently verify some
+    inputs and skip others.  The key set must be exactly the five files Q5-E
+    reads — no missing key, no extra key — and every value a lowercase 64-hex
+    digest.
+    """
+    registered = dict(SOURCE_BUNDLE_FILE_SHA256)
+    if not registered:
+        return {"registered": False, "complete": False,
+                "reason": SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED, "problems": []}
+    problems: List[str] = []
+    expected = set(BUNDLE_INPUT_FILES)
+    observed = set(registered)
+    if observed - expected:
+        problems.append(f"unregistered keys: {sorted(observed - expected)}")
+    if expected - observed:
+        problems.append(f"missing keys: {sorted(expected - observed)}")
+    for name, value in sorted(registered.items()):
+        if not _is_sha256(value):
+            problems.append(f"{name}: not a lowercase 64-hex SHA-256")
+    return {"registered": True, "complete": not problems,
+            "reason": None if not problems
+            else SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+            "problems": problems}
+
+
 def resolve_identical_candidates(matches: Sequence[Mapping[str, object]],
-                                 what: str, root: str) -> Dict[str, object]:
+                                 what: str, root: str,
+                                 duplicate_label: str =
+                                 DUPLICATE_LABEL_FULL_BYTES
+                                 ) -> Dict[str, object]:
     """Choose one of several **byte-identical** copies, deterministically.
 
     Byte-identical duplicates are not a scientific ambiguity — being identical
@@ -3263,14 +3385,25 @@ def resolve_identical_candidates(matches: Sequence[Mapping[str, object]],
         raise DiagnosticInputMismatch(
             f"{DECISION_MISMATCH}: {len(digests)} different digests under "
             f"{root!r} were each accepted as the {what} "
-            f"({sorted(d[:12] for d in digests)}).  Copies that are not "
-            f"byte-identical are not one identity and are never merged.")
+            f"({sorted(d[:12] for d in digests)}).  Copies whose compared "
+            f"digests differ are not one identity and are never merged.")
     ordered = sorted(matches, key=lambda m: str(m["path"]))
     chosen = ordered[0]
-    return {"path": str(chosen["path"]),
-            "digest": str(chosen["digest"]),
-            "byte_identical_duplicates": [str(m["path"]) for m in ordered[1:]],
-            "n_candidates": len(ordered)}
+    others = [str(m["path"]) for m in ordered[1:]]
+    out: Dict[str, object] = {
+        "path": str(chosen["path"]),
+        "digest": str(chosen["digest"]),
+        "duplicate_label": duplicate_label,
+        duplicate_label: others,
+        "n_candidates": len(ordered),
+        "candidates": [dict(m) for m in ordered],
+    }
+    if duplicate_label != DUPLICATE_LABEL_FULL_BYTES:
+        out["note"] = (
+            "these copies share the compared digest, which covers only part "
+            "of the directory; they are NOT asserted to be byte-identical "
+            "overall")
+    return out
 
 
 def verify_mitdb_identity(directory: str, approval: Optional[str]
@@ -3284,10 +3417,11 @@ def verify_mitdb_identity(directory: str, approval: Optional[str]
     checksums alone.
     """
     require_execution_approval(approval, f"MIT-BIH tree at {directory!r}")
+    # `mitdb_expected_files()` already contains SHA256SUMS.txt, so it is passed
+    # exactly as-is.  Appending the checksum file again would be a false
+    # statement of the contract even where set semantics hide the effect.
     names = BJ.mitdb_expected_files()
-    file_set = BJ.hash_file_set(directory,
-                                tuple(names) + (BJ.MITDB_CHECKSUM_FILE,),
-                                approval=_bj(approval))
+    file_set = BJ.hash_file_set(directory, names, approval=_bj(approval))
     published = BJ.verify_against_publisher_checksums(file_set, directory)
     problems = list(file_set.get("problems", ()))
     problems.extend(published.get("problems", ()))
@@ -3295,13 +3429,50 @@ def verify_mitdb_identity(directory: str, approval: Optional[str]
         problems.append(
             f"{BJ.MITDB_CHECKSUM_FILE} is absent: the publisher list is the "
             f"independent check and its absence is not a pass")
+
+    # Published-tree integrity has two parts, because a checksum file cannot
+    # verify itself and the frozen verifier explicitly skips it:
+    #   1. the files the publisher list covers, and
+    #   2. the digest of SHA256SUMS.txt itself, registered separately.
+    # Together they are 147/147.  Neither alone is.
+    checksum_digest = ""
+    checksum_path = os.path.join(directory, BJ.MITDB_CHECKSUM_FILE)
+    if os.path.isfile(checksum_path):
+        checksum_digest = sha256_file(checksum_path)
+    checksum_ok = checksum_digest == MITDB_CHECKSUM_FILE_SHA256
+    if not checksum_ok:
+        problems.append(
+            f"{BJ.MITDB_CHECKSUM_FILE} sha256 {checksum_digest!r} != "
+            f"registered {MITDB_CHECKSUM_FILE_SHA256!r}; the publisher list "
+            f"itself is not the registered one, so nothing it verifies counts")
+    listed = {"checked": published.get("checked"),
+              "matched": published.get("matched"),
+              "expected_checked": MITDB_PUBLISHER_LISTED_FILES}
+    if published.get("available") and \
+            published.get("checked") != MITDB_PUBLISHER_LISTED_FILES:
+        problems.append(
+            f"the publisher list covered {published.get('checked')} files, "
+            f"registered {MITDB_PUBLISHER_LISTED_FILES} "
+            f"({BJ.MITDB_CHECKSUM_FILE} cannot verify itself)")
+    integrity = {
+        "publisher_listed": listed,
+        "checksum_file": {"observed": checksum_digest,
+                          "registered": MITDB_CHECKSUM_FILE_SHA256,
+                          "ok": checksum_ok},
+        "n_expected_files": len(names),
+        "published_tree_integrity_ok": bool(
+            checksum_ok and published.get("available")
+            and not published.get("problems")
+            and published.get("checked") == MITDB_PUBLISHER_LISTED_FILES),
+    }
+
     observed = str(file_set.get("aggregate") or "")
+    base = {"gate": "mitdb_identity", "observed_aggregate": observed,
+            "publisher_checksums": published, "integrity": integrity}
     if MITDB_TREE_AGGREGATE is None:
-        return {"gate": "mitdb_identity", "ok": False,
+        return {**base, "ok": False,
                 "reason": INPUT_IDENTITY_REGISTRATION_REQUIRED,
-                "observed_aggregate": observed,
                 "registered_aggregate": None,
-                "publisher_checksums": published,
                 "problems": problems + [
                     "the MIT-BIH tree aggregate is registered only in "
                     "truncated form; a truncated digest is not an execution "
@@ -3310,23 +3481,24 @@ def verify_mitdb_identity(directory: str, approval: Optional[str]
     if observed != MITDB_TREE_AGGREGATE:
         problems.append(
             f"aggregate {observed!r} != registered {MITDB_TREE_AGGREGATE!r}")
-    return {"gate": "mitdb_identity", "ok": not problems,
+    return {**base, "ok": not problems,
             "reason": None if not problems else DECISION_MISMATCH,
-            "observed_aggregate": observed,
             "registered_aggregate": MITDB_TREE_AGGREGATE,
-            "publisher_checksums": published, "problems": problems}
+            "problems": problems}
 
 
 def verify_bundle_content_identity(directory: str, approval: Optional[str]
                                    ) -> Dict[str, object]:
-    """Per-file content identity of the five canonical bundle files.
+    """Per-file content identity of the five files Q5-E reads.
 
-    `verify_bundle_is_canonical` establishes that the files are present and
-    that `manifest.json` names the registered producing code.  Neither pins
-    the *contents*: editing `join_map.parquet` while leaving the `code_sha256`
-    string alone would still look canonical, and "the QA counts match" is not
-    an identity check either.  This compares each file's bytes against its
-    registered digest, and stops when those digests have never been frozen.
+    The companion check, :func:`verify_bundle_directory_contract`, establishes
+    that the whole twelve-file run bundle is present and that `manifest.json`
+    names the registered producing code and rule fingerprint.  Neither of
+    those pins the *contents* of the inputs: editing `join_map.parquet` while
+    leaving the `code_sha256` string alone would still satisfy the directory
+    contract, and "the QA counts match" is not an identity check either.  This
+    is the one authoritative check of those five files' bytes, and it stops
+    when their digests have never been frozen.
     """
     require_execution_approval(approval, f"bundle contents at {directory!r}")
     subset = subset_file_fold(directory, BUNDLE_INPUT_FILES, approval)
@@ -3396,15 +3568,38 @@ def discover_registered_inputs(search_root: str, approval: Optional[str]
         subset = subset_file_fold(directory, BUNDLE_INPUT_FILES, approval)
         if not subset["ok"]:
             continue
-        if SOURCE_BUNDLE_FILE_SHA256:
+        registration = registered_bundle_digests_complete()
+        if registration["registered"]:
+            if not registration["complete"]:
+                raise DiagnosticInputMismatch(
+                    f"{SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED}: the registered "
+                    f"bundle digests are incomplete or malformed "
+                    f"({registration['problems']}).  A partial registration "
+                    f"would verify some inputs and silently skip others.")
             observed = {f["name"]: f["sha256"] for f in subset["files"]}
             if any(observed.get(name) != want for name, want
                    in SOURCE_BUNDLE_FILE_SHA256.items()):
                 continue          # P2 registered: contents must match exactly
-        bundles.append({"path": directory,
-                        "digest": str(subset.get("aggregate") or "")})
-    resolved = resolve_identical_candidates(bundles, "canonical bundle",
-                                            search_root)
+        bundles.append({
+            "path": directory,
+            # The identity used for matching is the five-file subset fold.
+            "digest": str(subset.get("aggregate") or ""),
+            "subset_fold": str(subset.get("aggregate") or ""),
+            # Recorded beside it so a reader can see that two accepted copies
+            # may still differ in the seven files Q5-E does not read.
+            "full_aggregate": str(contract.get("full_aggregate") or "")})
+    resolved = resolve_identical_candidates(
+        bundles, "canonical bundle", search_root,
+        duplicate_label=DUPLICATE_LABEL_INPUT_SUBSET)
+    resolved["canonical_provenance"] = {
+        "registered_run": SOURCE_BUNDLE_RUN,
+        "registered_folder_id": SOURCE_BUNDLE_FOLDER_ID,
+        "folder_id_bridge": SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+        "note": ("the registered run and folder id are the canonical "
+                 "provenance; the path below is the mounted copy that was "
+                 "selected, and the two are only linked once P2 establishes "
+                 "the folder-id bridge"),
+        "selected_mount_path": resolved["path"]}
     found["bundle_dir"] = resolved["path"]
     audit["bundle_dir"] = resolved
 
@@ -3511,15 +3706,14 @@ def reverify_registered_inputs(paths: Mapping[str, object],
 
     checks: List[Dict[str, object]] = []
 
-    canonical = verify_bundle_is_canonical(resolved["bundle_dir"], approval)
-    checks.append({"gate": "bundle_present", "ok": bool(canonical["ok"]),
-                   "problems": list(canonical["problems"])})
-    # The whole twelve-file directory contract, then the five-file scientific
-    # input identity.  Separate questions, checked separately.
+    # Exactly two authoritative bundle checks: the whole twelve-file directory
+    # contract, then the five-file scientific input identity.  There is no
+    # third, weaker "is it canonical" path — a second source of truth for the
+    # same question is a place for the two answers to drift apart.
     checks.append(verify_bundle_directory_contract(resolved["bundle_dir"],
                                                    approval))
-    checks.append(verify_bundle_content_identity(resolved["bundle_dir"],
-                                                 approval))
+    content = verify_bundle_content_identity(resolved["bundle_dir"], approval)
+    checks.append(content)
 
     observed_mamba = (sha256_file(resolved["mamba_path"])
                       if os.path.isfile(resolved["mamba_path"]) else "")
@@ -3561,7 +3755,13 @@ def reverify_registered_inputs(paths: Mapping[str, object],
             + "; ".join(f"{c['gate']}: {list(c.get('problems') or [])[:2]}"
                         for c in failed))
     return {"paths": resolved, "checks": checks,
-            "source_files": list(canonical["files"])}
+            # The provenance record is the five files that were actually
+            # verified, taken from the content-identity check itself.
+            "source_files": [dict(f) for f in
+                             subset_file_fold(resolved["bundle_dir"],
+                                              BUNDLE_INPUT_FILES,
+                                              approval)["files"]],
+            "bundle_subset_fold": content.get("subset_fold")}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -4041,33 +4241,33 @@ def _rr_columns(features, expected_rows: Optional[int] = None
     raise `IndexError` deep in the caller or silently select a wrong column.
     """
     if isinstance(features, (str, bytes)):
-        raise DiagnosticInputMismatch(
+        raise ReplayContractError(
             f"{M4_RR_MISMATCH}: rr_features() returned {type(features).__name__}, "
             f"not a two-dimensional array of rows")
     try:
         rows = [list(row) for row in features]
     except TypeError:
-        raise DiagnosticInputMismatch(
+        raise ReplayContractError(
             f"{M4_RR_MISMATCH}: rr_features() did not return an iterable of "
             f"rows; the replay is not reshaped to fit")
     for index, row in enumerate(rows):
         if isinstance(row, (str, bytes)) or not hasattr(row, "__len__"):
-            raise DiagnosticInputMismatch(
+            raise ReplayContractError(
                 f"{M4_RR_MISMATCH}: rr_features() row {index} is not a "
                 f"sequence; the result is not two-dimensional")
     widths = {len(row) for row in rows}
     if len(widths) > 1:
-        raise DiagnosticInputMismatch(
+        raise ReplayContractError(
             f"{M4_RR_MISMATCH}: rr_features() returned ragged rows with widths "
             f"{sorted(widths)}; registered width is {BJ.CACHE_RR_DIM} for every "
             f"row.  The audit does not pad or truncate a replay to fit.")
     if widths and widths != {BJ.CACHE_RR_DIM}:
-        raise DiagnosticInputMismatch(
+        raise ReplayContractError(
             f"{M4_RR_MISMATCH}: the replayed rr_features() produced width "
             f"{widths.pop()}, registered {BJ.CACHE_RR_DIM}.  The audit does "
             f"not reshape, pad or select columns to make a replay fit.")
     if expected_rows is not None and len(rows) != int(expected_rows):
-        raise DiagnosticInputMismatch(
+        raise ReplayContractError(
             f"{M4_RR_MISMATCH}: rr_features() returned {len(rows)} rows for "
             f"{expected_rows} kept peaks.  A row-count mismatch is a failed "
             f"replay, not something to align.")
@@ -4361,7 +4561,8 @@ def run_pipeline(inputs: "ProductionInputs",
 
     flags = evaluate_flags(evidence, holm)
     decision = decide(qa["ok"], str(m4["status"]), flags,
-                      qa.get("first_failure"))
+                      qa.get("first_failure"),
+                      m4_first_failure=m4.get("first_failure"))
     tests = {name: {**{"statistic": value.get("statistic"),
                        "p": value.get("p"),
                        "p_holm_4family": holm["p_holm_4family"][name],
@@ -4553,7 +4754,6 @@ def run_audit(verified_inputs: Mapping[str, object], out_dir: str,
     verified = reverify_registered_inputs(verified_inputs, approval)
     paths = verified["paths"]
     bundle_dir = paths["bundle_dir"]
-    canonical = {"files": verified["source_files"]}
     emit("Q5-E: every registered input re-verified from its bytes.")
 
     _terminal_execution_guard()
@@ -4582,7 +4782,8 @@ def run_audit(verified_inputs: Mapping[str, object], out_dir: str,
         qa=outcome["qa"], m0=outcome["m0"], m1=outcome["m1"],
         m2=outcome["m2"], m3=outcome["m3"], m4=outcome["m4"],
         nulls=outcome["nulls"], tests=outcome["tests"],
-        decision=outcome["decision"], source_files=canonical["files"],
+        decision=outcome["decision"],
+        source_files=verified["source_files"],
         identity_audit={"checks": verified["checks"],
                         "discovery": verified_inputs.get("discovery_audit"),
                         "source_match": source_match_equivalence_status()})

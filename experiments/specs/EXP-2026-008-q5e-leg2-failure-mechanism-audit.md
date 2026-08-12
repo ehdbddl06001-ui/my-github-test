@@ -2467,3 +2467,69 @@ matching folder name is not evidence; and P3 requires the digest-verified
 original `build_record` to be executed under dependency injection rather than
 compared against a second reimplementation, which could repeat the same
 misreading twice and call it agreement.
+
+## 2026-08-12 — sixth-review corrections (A1–A6); never executed
+
+Nothing was executed, no registered asset was opened, no digest or verdict was
+computed or written, and `status` remains `approved_for_implementation`.
+
+**A1 — one authoritative path per contract.**  `verify_bundle_is_canonical()`
+is removed rather than kept as a wrapper: it checked only the five input files'
+presence plus the producing code, which is strictly weaker than the two
+contracts that replaced it, and a second answer to the same question is a place
+for the two to drift.  The legacy `bundle_present` gate is gone from
+re-verification, which now calls the directory contract and the content
+identity exactly once each; `source_files` is taken from the five files the
+content check actually verified.
+
+**A2 — the duplicate label now matches what the digest covers.**  A bundle
+candidate is matched on the five-file subset fold, so two accepted copies may
+differ in the seven files Q5-E does not read; recording those as
+`byte_identical_duplicates` was a false audit statement.  Bundles are recorded
+as `q5e_input_identical_copies`, with a note that byte-identity is not asserted,
+and every candidate carries both its twelve-file `full_aggregate` and its
+five-file `subset_fold`.  Assets whose digest covers all compared bytes —
+mamba, cache, V10 source — keep the byte-identical label.  The canonical
+provenance (registered run and folder id) is recorded separately from the
+selected mount path, the two being linked only once P2 establishes the
+folder-id bridge.  `registered_bundle_digests_complete()` requires the
+registered key set to be exactly the five input files with lowercase 64-hex
+values, so a partial registration cannot verify some inputs and silently skip
+others.
+
+**A3 — the 147-file contract is stated correctly.**  Exactly
+`BJ.mitdb_expected_files()` is passed to `hash_file_set`; the checksum file is
+no longer appended to a set that already contains it.  Published-tree integrity
+is reported as two separate fields — the 146 files the publisher list can cover,
+and the separately registered digest of `SHA256SUMS.txt` itself, since a
+checksum file cannot verify itself and the frozen verifier skips it.  A wrong
+checksum-file digest fails the gate regardless of what the aggregate happens to
+equal.
+
+**A4 — PREP bundle digests are non-self-referential.**  `prep_payload_fold()`
+folds a fixed, named payload set and excludes the `manifest.json` that records
+it; the manifest's own SHA-256 is frozen outside the bundle.  P3's
+`prep_bundle_sha256` carries the payload fold, not the manifest digest.
+
+**A5 — M4's real first failure survives into the result.**  `decide()` receives
+`m4["first_failure"]` and falls back to the status only when none was recorded,
+so `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, `M4_COUNT_MISMATCH` and
+`M4_FROZEN_RR_MISMATCH` are each distinguishable in `q5e_result.json`.  The
+terminal decision, the decision tree, the multiplicity family and the H1/H4
+partial handling are unchanged.
+
+**A6 — execution fact separated from gate outcome.**
+`detector_replay_performed` is now read from the `detector_replay` sub-gate
+rather than from the M4 status: a run stopped at the equivalence sub-gate
+records `false`, and a replay that ran and then failed the count or RR sub-gate
+records `true`.  The M4 status is kept alongside as its own field.
+
+Reproduced before fixing: an `rr_features()` shape violation escaped
+`m4_feasibility_gate()` as an exception and destroyed the run, losing the M0–M3
+partial results the registered decision tree preserves.  A dedicated
+`ReplayContractError` is now raised by the replay contract checks and is the
+only exception the gate converts — into the registered `M4_FROZEN_RR_MISMATCH`
+→ `DIAGNOSTIC_INPUT_ABSENT` path.  Nothing broader is caught, so a programmer
+error still propagates.
+
+The three registration items remain open and are unchanged as terminal stops.

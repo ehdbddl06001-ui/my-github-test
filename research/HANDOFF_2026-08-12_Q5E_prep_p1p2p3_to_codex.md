@@ -191,6 +191,37 @@ DS2 label · V10 probability · association · S PR-AUC 미접근, 학습 없음
 
 ---
 
+## 모든 PREP 공통 — bundle digest 자기참조 금지
+
+`prep_bundle_sha256` 와 "manifest 자체 SHA-256" 을 같은 것으로 두면 순환 계약이
+된다. manifest 안에 자기 digest 를 적는 순간 파일이 바뀌어 그 digest 가 무효가
+되기 때문이다. 세 PREP 모두 아래 규칙을 따른다.
+
+**payload fold — `prep_payload_sha256`**
+
+- 대상(정확히 이 이름들만):
+  `config.json` · `source_inventory.json` · `oracle_harness_identity.json` ·
+  `fixture_results.json` · `decision.json` · `log.txt` · `summary.md`
+- **제외:** `manifest.json` — 자기가 기록하는 fold 에 자신은 들어가지 않는다.
+- 계산: 위 파일들의 `(name, bytes, sha256)` 을 이름순 정렬해 기존 canonical-JSON
+  convention 으로 fold. 새 convention 을 만들지 않는다.
+- 구현·회귀 테스트는 `Q5E.prep_payload_fold()` 와
+  `test_a4_prep_payload_fold_cannot_reference_itself` 가 고정한다. 같은 입력은
+  항상 같은 digest 를 내고, manifest 를 넣어도 fold 가 변하지 않으며,
+  manifest 를 payload 에 포함하려는 시도는 거부된다.
+
+**manifest 와 그 바깥**
+
+- `manifest.json` 에는 `prep_payload_sha256` 을 **기록만** 한다.
+- `manifest.json` **자체의 SHA-256** 은 bundle 밖 — 명세 Decision log 와 등록
+  기록 — 에서 별도로 동결한다. bundle 안의 어떤 파일도 이 값을 바꿀 수 없다.
+- P3 의 `prep_bundle_sha256` 필드에는 **payload fold** 를 넣는다. manifest 자체
+  digest 를 넣지 않는다.
+- P1 · P2 의 산출물 identity 도 같은 규칙을 따른다. P2 의 folder-id inventory
+  manifest 역시 자기 digest 를 자기 안에 적지 않는다.
+
+---
+
 ## 실행 순서 (Codex 5차 판정)
 
 1. PR #115 blocker 수정  ← **지금 여기**
