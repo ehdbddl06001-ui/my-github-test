@@ -145,7 +145,7 @@ MedKOS에서 그대로 보인다.
 ## 해부학(`anatomy`) 계약 — spec: `experiments/specs/anatomy-3q-2026.md`
 
 2026-2학기 임상해부학술기(3Q) 학습 영역. 공통 필수 필드(`id/type/topic/date/confidence`)
-위에 `kind` 별 계약이 얹힌다. 저장 위치: `content/anatomy/{sources,pages,concepts,questions,daily,answers}/`.
+위에 `kind` 별 계약이 얹힌다. 저장 위치: `content/anatomy/{sources,pages,concepts,questions,daily,answers,notes}/`.
 검증은 `pipelines/frontmatter.py::_validate_anatomy`.
 
 | `kind` | 역할 | 추가 필수 |
@@ -156,6 +156,7 @@ MedKOS에서 그대로 보인다.
 | `question` | 태깅·순서·관계·분지·경로 문항 | `source_refs`, `stem`, `answer`, `answer_separated: true`, `question_style` |
 | `daily_plan` | 그날의 학습 큐(`anatomy_daily.py` 결정론 선택 결과) | — |
 | `answer_list` | 답만 있는 자료(`tagging 2차.pdf`) 파싱 결과 | `source_file_id` |
+| `study_guide` | 회차 범위 **전체**를 다루는 종합 학습 정리(근육표·혈관·신경·관계도·임상 포인트). `content/anatomy/notes/`. PDF 조판·Drive Docs 업로드의 원본 | `source_refs` |
 
 주요 선택 필드 (분류 축은 §7.3 프롬프트 규격과 동일):
 
