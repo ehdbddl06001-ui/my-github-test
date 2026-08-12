@@ -241,6 +241,21 @@ read-only retry** — list calls and a wait, nothing else. If it never resolves:
   listing and every digest. It writes nothing and edits nothing, and it refuses
   to resolve an output that no longer matches what was written.
 
+**The failure record is self-sufficient.** The stop carries a
+`reconciliation_context` holding everything a later, colder process needs: the
+preserved directory and its basename, the eleven source digests, the verified
+NPZ SHA-256, the expected twelve-file listing, the registered runs-parent folder
+id, and the observation that output verification had already passed. It carries
+no credential, no token and no source or shard mount path.
+
+That matters because the run which would have held a live snapshot is precisely
+the run that stopped. An earlier draft expected the operator to still have a
+`DECISION` object and a live snapshot variable; with `DECISION` unset the
+notebook passed an **empty** NPZ digest, so reconciliation could only ever fail.
+An empty or malformed digest, or a short digest table, is now refused up front
+and named as the cause. `reconcile_output_folder_id()` takes the context and
+nothing else, so it works from a JSON file in a fresh kernel.
+
 Result acceptance is impossible until that resolution succeeds.
 
 # The NPZ contract
@@ -459,16 +474,69 @@ and after, and different the moment any logic moves. "The approval only flipped 
 flag" therefore becomes a checked claim rather than a promise in a commit
 message.
 
-**Execution head.** The notebook measures the actual `HEAD` from git after a
-detached checkout, refuses a dirty working tree, and passes it in as
-`execution_head`. The decision's `pinned_commit` is that measured value — not a
-module constant that would read `None`.
+**Execution head.** The notebook checks out detached and passes what it saw,
+but the module does not take its word for it: `verify_execution_identity()`
+runs `git -C <repo> rev-parse HEAD` and `git -C <repo> status --porcelain`
+**itself**, and refuses when the measured head differs from the value passed in
+or when the tree is dirty. A caller may pass any 40-hex string it likes; the run
+stops before any registered asset is opened. A git command that cannot run, or
+fails, is `REPAIR_EXECUTION_IDENTITY_UNVERIFIED` rather than a traceback.
 
-Before any registered asset is opened, `verify_execution_identity()` requires
-the approved record to exist, the execution head to be a 40-hex value measured
-from git, and every digest on disk to equal the approved one. Anything else is
-`REPAIR_EXECUTION_IDENTITY_UNVERIFIED`. With nothing approved — the state this
-PR ships in — a production run cannot start.
+**Three proofs, kept separate.** A digest table nobody compares against the
+commit it names is just four more strings, so all three are established:
+
+1. **the approved commit exists** — `git cat-file -e <commit>^{commit}`;
+2. **the approved digests come from that commit** — each blob is read with
+   `git show <commit>:<path>` and re-hashed, the repair module's blob through
+   the same science-digest rule, and the result must equal
+   `APPROVED_ARTIFACT_DIGESTS`;
+3. **the files about to run match that identity** — the same four digests are
+   measured on disk at the execution head and must equal the approved record.
+
+Anything else is `REPAIR_EXECUTION_IDENTITY_UNVERIFIED`. With nothing approved —
+the state this PR ships in — a production run cannot start.
+
+## The approval block is metadata, proven by AST
+
+The fence is only worth something if nothing executable can hide inside it, and
+"the block does not contain the text `def run_repair`" is not a check:
+`x = os.system(...)` is an assignment, contains no `def`, and runs a command. So
+the fenced region is parsed and every statement must be an assignment of a
+whitelisted name to a literal:
+
+- **allowed**: `Assign` / `AnnAssign` binding `EXECUTION_APPROVAL_TOKEN`,
+  `APPROVED_IMPLEMENTATION_COMMIT`, `APPROVED_ARTIFACT_DIGESTS` or
+  `EXECUTION_APPROVAL_RECORD`; values that are constants or literal
+  tuple/list/dict containers; a bare `Name` reference to `SPEC_PATH`;
+- **refused**: `Call` anywhere (including nested inside a container or an
+  annotation), `Import`/`ImportFrom`, `FunctionDef`/`ClassDef`/`Lambda`,
+  `If`/`For`/`While`/`Try`/`With`, comprehensions, f-strings, attribute access,
+  subscript targets, any other bound name, and duplicated, nested, moved or
+  missing markers.
+
+`module_science_digest()` performs this check *before* it will produce a digest,
+so a block with a call in it has **no** science digest at all rather than a
+science digest that quietly excludes a call. A mutation test inserts a call into
+the block and asserts the identity check fails.
+
+## Dependencies before credentials
+
+`build_drive_adapter()` checks the Drive client libraries **before** an
+authenticator exists, let alone is called: minting a credential and only then
+discovering the client cannot be built would already have taken the access this
+check exists to bound. A missing library is `REPAIR_DEPENDENCY_MISSING`, with
+zero credential, service-factory and API calls, and nothing is installed to fill
+the gap.
+
+`ColabReadOnlyAuthenticator` asks `google.auth.default(scopes=[…readonly])` and,
+when the returned credential reports `requires_scopes` and offers
+`with_scopes`, narrows it — then hands it to `audit_credential_scopes()`, which
+is what decides. A credential that merely *claims* to have been down-scoped is
+not a proof, so the authenticator never judges its own output. `None`,
+unobservable, or broader scopes all still stop the run at
+`REPAIR_READONLY_SCOPE_UNPROVEN`. This reuses the exact-scope principle proven in
+`mit-bih/q5e_prep_p1_p2_asset_identity.py` and reuses **none** of its approval
+token.
 
 # Stop reasons
 
@@ -481,6 +549,7 @@ accepted.
 | `REPAIR_FROZEN_MODULE_MOVED` | the imported Q5-D module or rule fingerprint is not the registered one |
 | `REPAIR_EXECUTION_IDENTITY_UNVERIFIED` | the running code is not verifiably the approved implementation |
 | `REPAIR_READONLY_SCOPE_UNPROVEN` | the credential does not carry exactly the read-only scope |
+| `REPAIR_DEPENDENCY_MISSING` | a Drive client library is absent, checked before any credential is requested |
 | `REPAIR_BYTES_MOVED_AFTER_BRIDGE` | a file changed between being tied to its folder id and being judged |
 | `REPAIR_UNDEFINED_NEWLINE` | a lone CR, which has no defined registered identity |
 | `REPAIR_INPUT_UNQUALIFIED` | the folder-id bridge or the shards failed any clause above |

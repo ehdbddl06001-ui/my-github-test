@@ -246,6 +246,7 @@ NOT_APPROVED = "REPAIR_NOT_APPROVED"
 FROZEN_MODULE_MOVED = "REPAIR_FROZEN_MODULE_MOVED"
 EXECUTION_IDENTITY_UNVERIFIED = "REPAIR_EXECUTION_IDENTITY_UNVERIFIED"
 READONLY_SCOPE_UNPROVEN = "REPAIR_READONLY_SCOPE_UNPROVEN"
+DEPENDENCY_MISSING = "REPAIR_DEPENDENCY_MISSING"
 BYTES_MOVED_AFTER_BRIDGE = "REPAIR_BYTES_MOVED_AFTER_BRIDGE"
 OUTPUT_FOLDER_ID_UNRESOLVED = "REPAIR_OUTPUT_FOLDER_ID_UNRESOLVED"
 UNDEFINED_NEWLINE = "REPAIR_UNDEFINED_NEWLINE"
@@ -265,7 +266,8 @@ INCOMPLETE_PRESERVED = "REPAIR_INCOMPLETE_TARGET_PRESERVED"
 
 STOP_REASONS: Tuple[str, ...] = (
     NOT_APPROVED, FROZEN_MODULE_MOVED, EXECUTION_IDENTITY_UNVERIFIED,
-    READONLY_SCOPE_UNPROVEN, UNDEFINED_NEWLINE, INPUT_UNQUALIFIED,
+    READONLY_SCOPE_UNPROVEN, DEPENDENCY_MISSING, UNDEFINED_NEWLINE,
+    INPUT_UNQUALIFIED,
     BYTES_MOVED_AFTER_BRIDGE, SUMMARY_DISAGREES, NPZ_CONTRACT_FAILED,
     NUMPY_UNAVAILABLE, SOURCE_BUNDLE_UNEXPECTED, SOURCE_CHANGED_DURING_RUN,
     TARGET_EXISTS, TARGET_UNSAFE, COPY_NOT_BYTE_IDENTICAL,
@@ -304,27 +306,69 @@ class RepairError(RuntimeError):
 
     def __init__(self, reason: str, message: str,
                  incomplete_directory: Optional[str] = None,
-                 listing: Sequence[str] = ()) -> None:
+                 listing: Sequence[str] = (),
+                 reconciliation_context: Optional[Mapping[str, object]] = None
+                 ) -> None:
         super().__init__(f"{reason}: {message}")
         self.reason = reason
         self.incomplete_directory = incomplete_directory
         self.listing = tuple(listing)
         self.target_state = (INCOMPLETE_PRESERVED if incomplete_directory
                              else None)
+        self.reconciliation_context = (dict(reconciliation_context)
+                                       if reconciliation_context else None)
 
     def as_record(self) -> Dict[str, object]:
-        """What the notebook prints and a Decision log copies."""
+        """What the notebook prints and a Decision log copies.
+
+        For an unresolved output folder id this carries a complete
+        `reconciliation_context`: everything `reconcile_output_folder_id()`
+        needs, and nothing else.  The earlier design expected the caller to
+        still hold a live snapshot and a decision object — but the run that
+        produced them is exactly the run that stopped, and a kernel that has
+        been restarted has neither.  A record that cannot be acted on after a
+        restart is not a record of a recoverable state.
+        """
         return {
             "first_stopping_reason": self.reason,
             "message": str(self),
             "target_state": self.target_state,
             "incomplete_directory": self.incomplete_directory,
             "incomplete_listing": list(self.listing),
+            "reconciliation_context": (dict(self.reconciliation_context)
+                                       if self.reconciliation_context
+                                       else None),
             "committed": False,
             "accepted": False,
             "registered_anything": False,
             "retry_guidance": FAILURE_PUBLICATION_CONTRACT,
         }
+
+
+def build_reconciliation_context(target_dir: str,
+                                 source_digests: Mapping[str, str],
+                                 npz_sha256: str,
+                                 output_verified: bool) -> Dict[str, object]:
+    """Everything a later, colder process needs to re-resolve the folder id.
+
+    Deliberately self-contained and deliberately narrow.  It carries the
+    output's own path and basename, the eleven source digests, the verified
+    NPZ digest, the expected twelve-file listing and the registered parent
+    folder id — and no credential, no token, and no source or shard mount
+    path, because none of those is needed to re-list a folder and re-hash the
+    files already written.
+    """
+    return {
+        "preserved_directory": target_dir,
+        "target_basename": os.path.basename(os.path.normpath(target_dir)),
+        "runs_parent_folder_id": RUNS_PARENT_FOLDER_ID,
+        "source_digests": {str(k): str(v) for k, v in source_digests.items()},
+        "npz_sha256": str(npz_sha256),
+        "expected_listing": sorted(BUNDLE_FILES),
+        "output_verification_passed": bool(output_verified),
+        "contains_no_credentials": True,
+        "contains_no_input_paths": True,
+    }
 
 
 class RepairNotApprovedError(RepairError):
@@ -446,44 +490,253 @@ def assert_frozen_q5d_unchanged() -> Dict[str, object]:
 
 APPROVAL_BLOCK_START = "# ─── APPROVAL BLOCK START"
 APPROVAL_BLOCK_END = "# ─── APPROVAL BLOCK END"
+#: The only names the fenced block may bind.  Anything else — including a name
+#: that merely looks harmless — is refused, because the whole value of the
+#: fence is that a reader knows what can be in there without reading it.
+APPROVAL_BLOCK_NAMES: Tuple[str, ...] = (
+    "EXECUTION_APPROVAL_TOKEN", "APPROVED_IMPLEMENTATION_COMMIT",
+    "APPROVED_ARTIFACT_DIGESTS", "EXECUTION_APPROVAL_RECORD",
+)
+#: Names the block may *reference* on the right-hand side.  A reference is not
+#: a call and cannot run anything.
+APPROVAL_BLOCK_READABLE_NAMES: Tuple[str, ...] = ("SPEC_PATH",)
 
 
-def module_science_digest(path: Optional[str] = None) -> Dict[str, object]:
-    """This module's digest with the approval block removed.
+def _approval_block_lines(text: bytes) -> Tuple[List[bytes], List[bytes]]:
+    """Split LF-normalised source into (kept, fenced) lines, or refuse.
 
-    A record inside a file cannot certify that file — so the approval metadata
-    is fenced off and everything *else* is hashed.  An execution-enable PR may
-    change the fenced block and nothing more, and this digest proves it: it is
-    identical before and after such a PR, and it moves the moment any logic
-    changes.  That is what lets "the approval only flipped a flag" be a checked
-    claim rather than a promise in a commit message.
+    Duplicated, missing, nested or reordered markers all fail here: the fence
+    only means something if there is exactly one of it.
     """
-    with open(path or os.path.abspath(__file__), "rb") as handle:
-        text = normalise_newlines(handle.read(), "repair module")
     lines = text.split(b"\n")
     kept: List[bytes] = []
+    fenced: List[bytes] = []
     inside = False
     starts = ends = 0
     for line in lines:
         if line.startswith(APPROVAL_BLOCK_START.encode("utf-8")):
+            if inside:
+                raise RepairError(
+                    EXECUTION_IDENTITY_UNVERIFIED,
+                    "a nested approval-block start marker")
             inside, starts = True, starts + 1
             continue
         if line.startswith(APPROVAL_BLOCK_END.encode("utf-8")):
+            if not inside:
+                raise RepairError(
+                    EXECUTION_IDENTITY_UNVERIFIED,
+                    "an approval-block end marker with no start")
             inside, ends = False, ends + 1
             continue
-        if not inside:
-            kept.append(line)
+        (fenced if inside else kept).append(line)
     if starts != 1 or ends != 1:
         raise RepairError(
             EXECUTION_IDENTITY_UNVERIFIED,
             f"the approval block is not delimited exactly once "
             f"({starts} start, {ends} end markers); the science digest would "
             f"not mean what it claims")
+    return kept, fenced
+
+
+def _assert_literal(node, where: str) -> None:
+    """A value expression that cannot execute anything.
+
+    Constants and literal containers only.  A `Call` is the obvious way to
+    smuggle execution past a fence, but it is not the only one — an attribute
+    access can trigger a descriptor, a comprehension runs a loop, and a lambda
+    is a function by another name.  So this is a whitelist, not a blacklist.
+    """
+    import ast
+    if isinstance(node, ast.Constant):
+        return
+    if isinstance(node, (ast.Tuple, ast.List, ast.Set)):
+        for element in node.elts:
+            _assert_literal(element, where)
+        return
+    if isinstance(node, ast.Dict):
+        for key, value in zip(node.keys, node.values):
+            if key is None:
+                raise RepairError(EXECUTION_IDENTITY_UNVERIFIED,
+                                  f"{where}: dict unpacking is not a literal")
+            _assert_literal(key, where)
+            _assert_literal(value, where)
+        return
+    if isinstance(node, ast.Name):
+        if node.id in APPROVAL_BLOCK_READABLE_NAMES:
+            return
+        raise RepairError(
+            EXECUTION_IDENTITY_UNVERIFIED,
+            f"{where}: reference to {node.id!r}; only "
+            f"{list(APPROVAL_BLOCK_READABLE_NAMES)} may be referenced")
+    raise RepairError(
+        EXECUTION_IDENTITY_UNVERIFIED,
+        f"{where}: {type(node).__name__} is not a literal.  The approval "
+        f"block may hold metadata assignments and nothing that can run.")
+
+
+def assert_approval_block_is_metadata_only(fenced_source: str
+                                           ) -> Dict[str, object]:
+    """The fenced block is metadata, proven by AST rather than by grep.
+
+    Checking that the block does not contain the *text* `def run_repair` is not
+    a check: `x = os.system(...)` is an assignment, contains no `def`, and runs
+    a command.  So the block is parsed and every statement must be an
+    assignment of a whitelisted name to a literal.
+    """
+    import ast
+    try:
+        tree = ast.parse(fenced_source)
+    except SyntaxError as error:
+        raise RepairError(
+            EXECUTION_IDENTITY_UNVERIFIED,
+            f"the approval block does not parse on its own ({error}); it must "
+            f"be self-contained metadata")
+    bound: List[str] = []
+    for statement in tree.body:
+        if isinstance(statement, ast.Expr) and isinstance(
+                statement.value, ast.Constant):
+            continue                                     # a bare docstring
+        if isinstance(statement, ast.AnnAssign):
+            targets = [statement.target]
+            value = statement.value
+            annotation = statement.annotation
+            for node in ast.walk(annotation):
+                if isinstance(node, (ast.Call, ast.Lambda)):
+                    raise RepairError(
+                        EXECUTION_IDENTITY_UNVERIFIED,
+                        "an annotation in the approval block calls something")
+        elif isinstance(statement, ast.Assign):
+            targets = list(statement.targets)
+            value = statement.value
+        else:
+            raise RepairError(
+                EXECUTION_IDENTITY_UNVERIFIED,
+                f"the approval block holds a "
+                f"{type(statement).__name__}; only metadata assignments are "
+                f"allowed there")
+        for target in targets:
+            if not isinstance(target, ast.Name):
+                raise RepairError(
+                    EXECUTION_IDENTITY_UNVERIFIED,
+                    f"the approval block assigns to a "
+                    f"{type(target).__name__}, not a plain name")
+            if target.id not in APPROVAL_BLOCK_NAMES:
+                raise RepairError(
+                    EXECUTION_IDENTITY_UNVERIFIED,
+                    f"the approval block assigns {target.id!r}; only "
+                    f"{list(APPROVAL_BLOCK_NAMES)} may be bound there")
+            bound.append(target.id)
+        if value is not None:
+            _assert_literal(value, f"{bound[-1]}")
+    return {"statements": len(tree.body), "bound_names": sorted(set(bound)),
+            "whitelist": list(APPROVAL_BLOCK_NAMES),
+            "metadata_only": True}
+
+
+def module_science_digest(path: Optional[str] = None,
+                          source: Optional[bytes] = None
+                          ) -> Dict[str, object]:
+    """This module's digest with the approval block removed.
+
+    A record inside a file cannot certify that file — so the approval metadata
+    is fenced off and everything *else* is hashed.  An execution-enable PR may
+    change the fenced block and nothing more, and this digest proves it: it is
+    identical before and after such a PR, and it moves the moment any logic
+    changes.
+
+    The fence is only worth anything if nothing executable can hide inside it,
+    so the block is AST-checked here.  Computing the digest at all therefore
+    depends on the block being metadata: a block with a call in it has no
+    science digest, rather than a science digest that quietly excludes a call.
+
+    `source` lets a caller digest bytes that are not on disk — a blob read out
+    of a commit, for instance.
+    """
+    if source is None:
+        with open(path or os.path.abspath(__file__), "rb") as handle:
+            source = handle.read()
+    text = normalise_newlines(source, "repair module")
+    kept, fenced = _approval_block_lines(text)
+    audit = assert_approval_block_is_metadata_only(
+        b"\n".join(fenced).decode("utf-8"))
     return {"module_science_lf_sha256": _sha256(b"\n".join(kept)),
-             "excluded_lines": len(lines) - len(kept),
-             "convention": ("LF-normalised digest of the module with the "
-                            "approval block excluded, so an enable PR that "
-                            "touches only approval metadata leaves it equal")}
+            "excluded_lines": len(fenced),
+            "approval_block": audit,
+            "convention": ("LF-normalised digest of the module with the "
+                           "approval block excluded, so an enable PR that "
+                           "touches only approval metadata leaves it equal")}
+
+
+FROZEN_Q5D_PATH = "mit-bih/q5d_order_preserving_beat_join.py"
+#: Which approved digest comes from which path in the approved commit.
+APPROVED_DIGEST_PATHS: Dict[str, str] = {
+    "spec_lf_sha256": SPEC_PATH,
+    "notebook_lf_sha256": NOTEBOOK_PATH,
+    "frozen_q5d_lf_sha256": FROZEN_Q5D_PATH,
+    "module_science_lf_sha256": MODULE_PATH,
+}
+
+
+def _git(repo_root: str, *args: str, binary: bool = False):
+    """One git command, with failure as a stop rather than an exception.
+
+    Every git call this module makes is a read: `rev-parse`, `status`,
+    `cat-file`, `show`.  None of them writes, checks out or fetches.
+    """
+    import subprocess
+    try:
+        result = subprocess.run(["git", "-C", repo_root, *args],
+                                capture_output=True)
+    except OSError as error:
+        raise RepairError(
+            EXECUTION_IDENTITY_UNVERIFIED,
+            f"git could not be run in {repo_root!r} ({error}); the execution "
+            f"head cannot be measured and so cannot be believed")
+    if result.returncode != 0:
+        detail = (result.stderr or b"").decode("utf-8", "replace").strip()
+        raise RepairError(
+            EXECUTION_IDENTITY_UNVERIFIED,
+            f"git {' '.join(args)} failed in {repo_root!r} "
+            f"(exit {result.returncode}): {detail[:200]}")
+    return result.stdout if binary else result.stdout.decode(
+        "utf-8", "replace").strip()
+
+
+def measure_execution_head(repo_root: str) -> Dict[str, object]:
+    """The commit actually checked out, and whether the tree is clean.
+
+    Measured here rather than accepted from the caller.  A notebook that
+    reports its own `HEAD` is reporting what it chose to report; a caller that
+    passes a 40-hex string is making an assertion.  The module runs the same
+    two commands itself and compares, so a wrong or invented value is caught
+    before any registered asset is opened.
+    """
+    head = _git(repo_root, "rev-parse", "HEAD")
+    dirty = _git(repo_root, "status", "--porcelain")
+    return {"measured_head": head,
+            "dirty_entries": [l for l in dirty.split("\n") if l.strip()],
+            "clean": not dirty.strip()}
+
+
+def digests_from_commit(repo_root: str, commit: str) -> Dict[str, str]:
+    """The approved digests, recomputed from that commit's blobs.
+
+    This is what makes the approved record checkable rather than declarative:
+    a digest table that nobody ever compares against the commit it claims to
+    describe is just four more strings.  Each blob is read with
+    `git show <commit>:<path>`, and the repair module's blob goes through the
+    same science-digest rule as the file on disk.
+    """
+    _git(repo_root, "cat-file", "-e", f"{commit}^{{commit}}")
+    out: Dict[str, str] = {}
+    for field, path in APPROVED_DIGEST_PATHS.items():
+        blob = _git(repo_root, "show", f"{commit}:{path}", binary=True)
+        if field == "module_science_lf_sha256":
+            out[field] = str(module_science_digest(
+                source=blob)["module_science_lf_sha256"])
+        else:
+            out[field] = _sha256(normalise_newlines(blob, path))
+    return out
 
 
 def verify_execution_identity(repo_root: str, execution_head: Optional[str],
@@ -518,9 +771,37 @@ def verify_execution_identity(repo_root: str, execution_head: Optional[str],
     if not (isinstance(execution_head, str) and len(execution_head) == 40
             and all(c in _HEX for c in execution_head)):
         problems.append(
-            f"execution_head {execution_head!r} is not a 40-hex sha measured "
-            f"from git; the module carries no commit of its own to fall back on")
+            f"execution_head {execution_head!r} is not a 40-hex sha; the "
+            f"module carries no commit of its own to fall back on")
 
+    # (a) the head the caller claims, measured independently.
+    measured_head = measure_execution_head(repo_root)
+    if measured_head["measured_head"] != execution_head:
+        problems.append(
+            f"execution_head {execution_head!r} is not the checked-out commit "
+            f"{measured_head['measured_head']!r}; a caller's 40-hex string is "
+            f"an assertion, and this is the measurement")
+    if not measured_head["clean"]:
+        problems.append(
+            f"the working tree has {len(measured_head['dirty_entries'])} "
+            f"uncommitted change(s) (first: "
+            f"{measured_head['dirty_entries'][:3]}); a commit pin says nothing "
+            f"about edits the commit cannot see")
+
+    # (b) the approved digests, recomputed from the approved commit's blobs.
+    from_commit: Dict[str, str] = {}
+    if APPROVED_IMPLEMENTATION_COMMIT and not problems[:1]:
+        from_commit = digests_from_commit(repo_root,
+                                          APPROVED_IMPLEMENTATION_COMMIT)
+        for field, recorded in APPROVED_ARTIFACT_DIGESTS.items():
+            if recorded and from_commit.get(field) != recorded:
+                problems.append(
+                    f"{field}: the approved record says {recorded}, but "
+                    f"commit {APPROVED_IMPLEMENTATION_COMMIT[:12]} holds "
+                    f"{from_commit.get(field)} — the record does not describe "
+                    f"the commit it names")
+
+    # (c) the files actually about to run.
     observed = artifact_identities(repo_root)
     science = module_science_digest(os.path.join(repo_root, MODULE_PATH))
     measured = {
@@ -543,11 +824,21 @@ def verify_execution_identity(repo_root: str, execution_head: Optional[str],
             "  " + "\n  ".join(problems))
     return {
         "approved_implementation_commit": APPROVED_IMPLEMENTATION_COMMIT,
+        "approved_commit_exists": True,
         "execution_head": execution_head,
+        "measured_head": measured_head["measured_head"],
+        "head_measured_by": "git -C <repo> rev-parse HEAD",
+        "working_tree_clean": measured_head["clean"],
         "head_equals_approved_commit": (
             execution_head == APPROVED_IMPLEMENTATION_COMMIT),
         "approved_artifact_digests": dict(APPROVED_ARTIFACT_DIGESTS),
+        "digests_recomputed_from_approved_commit": from_commit,
         "measured_artifact_digests": measured,
+        "three_proofs": {
+            "approved_commit_exists": True,
+            "approved_digests_come_from_that_commit": True,
+            "execution_files_match_approved_identity": True,
+        },
         "artifact_identities": observed,
         "module_science_digest": science,
         "self_referential": False,
@@ -632,21 +923,25 @@ def check_runtime_dependencies() -> Dict[str, object]:
     be determined is written as `unavailable`, never guessed.
     """
     import importlib
-    out: Dict[str, object] = {}
+    packages: Dict[str, object] = {}
+    missing: List[str] = []
     for module_name, distribution in RUNTIME_DEPENDENCIES.items():
         try:
             importlib.import_module(module_name)
             present = True
-        except Exception:                                # pragma: no cover
+        except Exception:
             present = False
+            missing.append(distribution)
         version = "unavailable"
-        try:                                             # pragma: no cover
+        try:
             from importlib import metadata
             version = metadata.version(distribution)
         except Exception:
             pass
-        out[distribution] = {"importable": present, "version": version}
-    return out
+        packages[distribution] = {"importable": present, "version": version,
+                                  "module": module_name}
+    return {"packages": packages, "missing": sorted(missing),
+            "satisfied": not missing}
 
 
 class DriveAuthenticator(object):
@@ -669,6 +964,13 @@ class ColabReadOnlyAuthenticator(DriveAuthenticator):    # pragma: no cover
         import google.auth
         colab_auth.authenticate_user()
         credential, _project = google.auth.default(scopes=list(scopes))
+        # Colab's ambient credential often arrives unscoped or broader than
+        # asked.  Where the library can narrow it, narrow it — and then let
+        # `audit_credential_scopes()` judge the result, because a credential
+        # that *claims* to have been down-scoped is not a proof either.
+        if getattr(credential, "requires_scopes", False) and hasattr(
+                credential, "with_scopes"):
+            credential = credential.with_scopes(list(scopes))
         return credential
 
 
@@ -724,6 +1026,15 @@ def build_drive_adapter(approval: Optional[str],
     require_execution_approval(approval, "a Drive credential")
     _terminal_execution_guard()
     dependencies = check_runtime_dependencies()
+    if not dependencies["satisfied"]:
+        # Before the authenticator exists, let alone is called: minting a
+        # credential and then discovering the client cannot be built would
+        # have taken the access this check exists to avoid.
+        raise RepairError(
+            DEPENDENCY_MISSING,
+            f"missing runtime dependencies {dependencies['missing']}; nothing "
+            f"is installed to fill the gap and no credential is requested "
+            f"until the client libraries are present")
     authenticator = authenticator or ColabReadOnlyAuthenticator()
     factory = service_factory or default_service_factory
 
@@ -1114,25 +1425,48 @@ def resolve_output_folder_id(adapter: FolderInventoryAdapter,
 
 
 def reconcile_output_folder_id(adapter: FolderInventoryAdapter,
-                               target_dir: str, snapshot_digests:
-                               Mapping[str, str], npz_sha256: str,
+                               context: Mapping[str, object],
                                approval: Optional[str],
-                               parent_folder_id: str = "",
                                attempts: int = 5, sleeper=None
                                ) -> Dict[str, object]:
     """Re-resolve a preserved output's folder id, read-only, changing nothing.
 
-    For the case `resolve_output_folder_id()` gave up on.  It re-checks the
-    parent folder id, the exact folder name, the exact twelve-file listing and
-    every digest before returning an id, because an id attached to a folder
-    nobody re-verified would be worse than no id at all.  It never writes,
-    never creates a second folder, and never edits the existing one.
+    Takes **only** the failure record's `reconciliation_context`, so it works
+    from a saved JSON file in a fresh process: the run that would have held a
+    live snapshot is the run that stopped.  It re-checks the parent folder id,
+    the exact folder name, the exact twelve-file listing and every digest
+    before returning an id, because an id attached to a folder nobody
+    re-verified would be worse than no id at all.  It never writes, never
+    creates a second folder, and never edits the existing one.
     """
-    require_execution_approval(approval, f"reconciling {target_dir!r}")
+    require_execution_approval(approval, "reconciling a preserved output")
     _terminal_execution_guard()
+    target_dir = str(context.get("preserved_directory") or "")
+    npz_sha256 = str(context.get("npz_sha256") or "")
+    snapshot_digests = dict(context.get("source_digests") or {})
+    parent_folder_id = str(context.get("runs_parent_folder_id") or "")
+    problems: List[str] = []
+    if not target_dir:
+        problems.append("the context carries no preserved directory")
+    if not is_hex64(npz_sha256):
+        problems.append(
+            f"the context carries no verified NPZ digest ({npz_sha256!r}); "
+            f"reconciling against an empty digest would compare a file to "
+            f"nothing and always fail")
+    if len(snapshot_digests) != len(SOURCE_BUNDLE_FILES):
+        problems.append(
+            f"the context carries {len(snapshot_digests)} source digests, "
+            f"expected {len(SOURCE_BUNDLE_FILES)}")
+    if problems:
+        raise RepairError(
+            OUTPUT_FOLDER_ID_UNRESOLVED,
+            "the reconciliation context is incomplete:\n  "
+            + "\n  ".join(problems),
+            incomplete_directory=target_dir or None,
+            listing=_listing(target_dir) if target_dir else ())
+
     name = os.path.basename(os.path.normpath(target_dir))
     listing = _listing(target_dir)
-    problems: List[str] = []
     if listing != sorted(BUNDLE_FILES):
         problems.append(f"listing {listing} != the twelve "
                         f"{sorted(BUNDLE_FILES)}")
@@ -1159,9 +1493,10 @@ def reconcile_output_folder_id(adapter: FolderInventoryAdapter,
         adapter, parent_folder_id or RUNS_PARENT_FOLDER_ID, name, approval,
         attempts=attempts, sleeper=sleeper)
     return {"reconciled": True, "folder_id": resolved["folder_id"],
-            "name": name, "listing": listing, "observed": observed,
+            "name": name, "parent_folder_id": resolved["parent_folder_id"],
+            "listing": listing, "observed": observed,
             "attempts": resolved["attempts"],
-            "wrote_nothing": True}
+            "wrote_nothing": True, "from_context_only": True}
 
 
 def confirm_folder_id_of_child(adapter: FolderInventoryAdapter,
@@ -2272,15 +2607,29 @@ def _route(shard_dir: str, source_dir: str, target_dir: str,
 
         folder = None
         if adapter is not None:
-            folder = resolve_output_folder_id(
-                adapter, RUNS_PARENT_FOLDER_ID,
-                os.path.basename(os.path.normpath(target_dir)), approval,
-                attempts=resolve_attempts, sleeper=sleeper)
+            try:
+                folder = resolve_output_folder_id(
+                    adapter, RUNS_PARENT_FOLDER_ID,
+                    os.path.basename(os.path.normpath(target_dir)), approval,
+                    attempts=resolve_attempts, sleeper=sleeper)
+            except RepairError as error:
+                # The one failure that is recoverable without redoing any
+                # work, so it carries everything a later, colder process needs.
+                raise RepairError(
+                    error.reason, str(error).split(": ", 1)[-1],
+                    incomplete_directory=target_dir,
+                    listing=_listing(target_dir),
+                    reconciliation_context=build_reconciliation_context(
+                        target_dir,
+                        {n: snapshot.digest(n) for n in snapshot.names()},
+                        contract["sha256"], bool(verified.get("ok")))
+                ) from error
     except RepairError as error:
         raise RepairError(error.reason, str(error).split(": ", 1)[-1],
                           incomplete_directory=(error.incomplete_directory
                                                 or target_dir),
-                          listing=(error.listing or _listing(target_dir))
+                          listing=(error.listing or _listing(target_dir)),
+                          reconciliation_context=error.reconciliation_context
                           ) from error
 
     if mode == MODE_PRODUCTION and not (folder and folder.get("folder_id")):
@@ -2515,6 +2864,9 @@ def module_capabilities() -> Tuple[str, ...]:
             "run_repair_synthetic_fixture", "bridge_runs_parent",
             "resolve_output_folder_id", "reconcile_output_folder_id",
             "assert_bytes_unmoved_since_bridge", "build_drive_adapter",
+            "build_reconciliation_context", "measure_execution_head",
+            "digests_from_commit", "assert_approval_block_is_metadata_only",
+            "APPROVAL_BLOCK_NAMES", "APPROVED_DIGEST_PATHS",
             "DriveAuthenticator", "ColabReadOnlyAuthenticator",
             "audit_credential_scopes", "check_runtime_dependencies",
             "verify_execution_identity", "module_science_digest",
