@@ -58,10 +58,23 @@ def build_masks(extract_rec: dict, pad: float = PAD) -> dict:
             "polygon": [[x0 - pad, y0 - pad], [x1 + pad, y0 - pad],
                         [x1 + pad, y1 + pad], [x0 - pad, y1 + pad]],
         })
-    return {"source_id": extract_rec.get("source_id"),
-            "page": extract_rec.get("page"),
-            "status": "masked" if masks else "no_labels",
-            "masks": masks}
+    # 번호핀: 위→아래, 왼→오른 순으로 결정론 배번(문항이 ①②…로 참조)
+    for i, m in enumerate(sorted(masks, key=lambda m: (m["polygon"][0][1],
+                                                       m["polygon"][0][0])), 1):
+        m["pin"] = i
+    rec = {"source_id": extract_rec.get("source_id"),
+           "page": extract_rec.get("page"),
+           "status": "masked" if masks else "no_labels",
+           "masks": masks}
+    # 재작화 권고 휴리스틱: 가린 면적이 크거나 라벨이 너무 많으면 패치로도
+    # 어색함이 남는다 → 원본 게시 대신 클로드 자체 제작 SVG 재작화를 권고.
+    w = extract_rec.get("width") or 595
+    h = extract_rec.get("height") or 842
+    area = sum((m["polygon"][2][0] - m["polygon"][0][0])
+               * (m["polygon"][2][1] - m["polygon"][0][1]) for m in masks)
+    if masks and (area / (w * h) > 0.08 or len(masks) > 12):
+        rec["redraw_recommended"] = True
+    return rec
 
 
 def _inside(bbox: list[float], polygon: list[list[float]]) -> bool:
@@ -93,9 +106,41 @@ def verify_leakage(extract_rec: dict, mask_rec: dict) -> dict:
     return {"ok": not leaks, "leaks": leaks}
 
 
+def _sample_bg(img, box: list[float], margin: int = 6) -> tuple[int, int, int]:
+    """마스크 사각형 바로 바깥 띠에서 채널별 중앙값 색을 뽑는다(자연 패치용).
+
+    결정론(중앙값)이고, 결과는 항상 불투명 단색이라 정답이 비칠 수 없다.
+    띠를 못 만들면(이미지 가장자리 등) NEUTRAL로 폴백.
+    """
+    x0, y0, x1, y1 = (int(v) for v in box)
+    ox0, oy0 = max(0, x0 - margin), max(0, y0 - margin)
+    ox1, oy1 = min(img.width, x1 + margin), min(img.height, y1 + margin)
+    px = img.load()
+    samples = []
+    for x in range(ox0, ox1):
+        for y in list(range(oy0, min(y0, oy1))) + list(range(max(y1, oy0), oy1)):
+            samples.append(px[x, y])
+    for y in range(max(oy0, y0), min(oy1, y1)):
+        for x in list(range(ox0, min(x0, ox1))) + list(range(max(x1, ox0), ox1)):
+            samples.append(px[x, y])
+    if not samples:
+        return NEUTRAL
+    med = tuple(sorted(s[c] for s in samples)[len(samples) // 2] for c in range(3))
+    return med
+
+
+PIN_FILL = (234, 179, 8)     # 번호핀 원
+PIN_TEXT = (14, 24, 38)      # 번호 숫자
+
+
 def render_quiz(page_png: Path, mask_rec: dict, page_size: tuple[float, float],
-                out_png: Path) -> None:
-    """원본 PNG는 그대로 두고, 마스크를 덮은 문제용 PNG를 별도로 만든다."""
+                out_png: Path, style: str = "patch") -> None:
+    """원본 PNG는 그대로 두고, 마스크를 덮은 문제용 PNG를 별도로 만든다.
+
+    style="patch"(기본): 주변 배경색을 샘플링해 메워 어색한 구멍을 줄이고,
+    각 자리에 번호핀(①②… 대응 숫자)을 찍는다. style="box": 과거의 중립색 박스.
+    어느 쪽이든 채움은 완전 불투명 — 정답 텍스트는 절대 비치지 않는다.
+    """
     from PIL import Image, ImageDraw
 
     img = Image.open(page_png).convert("RGB")
@@ -105,7 +150,15 @@ def render_quiz(page_png: Path, mask_rec: dict, page_size: tuple[float, float],
     for m in mask_rec.get("masks", []):
         xs = [p[0] * sx for p in m["polygon"]]
         ys = [p[1] * sy for p in m["polygon"]]
-        draw.rectangle([min(xs), min(ys), max(xs), max(ys)], fill=NEUTRAL)
+        box = [min(xs), min(ys), max(xs), max(ys)]
+        fill = _sample_bg(img, box) if style == "patch" else NEUTRAL
+        draw.rectangle(box, fill=fill)
+        if style == "patch" and m.get("pin"):
+            cx = (box[0] + box[2]) / 2
+            cy = (box[1] + box[3]) / 2
+            r = max(9, min(14, int((box[3] - box[1]) / 2)))
+            draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=PIN_FILL)
+            draw.text((cx, cy), str(m["pin"]), fill=PIN_TEXT, anchor="mm")
     out_png.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_png)
 
@@ -134,14 +187,15 @@ def contact_sheet(page_png: Path, quiz_png: Path, mask_rec: dict,
     sheet.save(out_png)
 
 
-def run(private: Path, sid: str, only_page: int | None, dry: bool, sheet: bool) -> int:
+def run(private: Path, sid: str, only_page: int | None, dry: bool, sheet: bool,
+        style: str = "patch") -> int:
     extract_dir = private / "extract" / sid
     revs = sorted(extract_dir.glob("rev-*"))
     if not revs:
         print(f"[INFO] extract 산출물 없음: {extract_dir} — anatomy_extract.py 먼저")
         return 0
     rev = revs[-1]
-    review, ok_pages, leaks = [], 0, 0
+    review, ok_pages, leaks, redraws = [], 0, 0, []
     for ej in sorted(rev.glob("page-*.json")):
         rec = json.loads(ej.read_text(encoding="utf-8"))
         pno = rec["page"]
@@ -155,6 +209,8 @@ def run(private: Path, sid: str, only_page: int | None, dry: bool, sheet: bool) 
             leaks += 1
         if mask_rec["status"] in {"needs_review", "leak"}:
             review.append({"page": pno, "status": mask_rec["status"]})
+        if mask_rec.get("redraw_recommended"):
+            redraws.append(pno)
         out = private / "masks" / sid / f"page-{pno:04d}.mask.json"
         if not dry:
             out.parent.mkdir(parents=True, exist_ok=True)
@@ -164,7 +220,7 @@ def run(private: Path, sid: str, only_page: int | None, dry: bool, sheet: bool) 
         if mask_rec["status"] == "masked" and page_png.exists() and not dry:
             size = (rec.get("width") or 595, rec.get("height") or 842)
             quiz_png = private / "render" / sid / f"page-{pno:04d}.quiz.png"
-            render_quiz(page_png, mask_rec, size, quiz_png)
+            render_quiz(page_png, mask_rec, size, quiz_png, style=style)
             if sheet:
                 contact_sheet(page_png, quiz_png, mask_rec, size,
                               private / "qa" / sid / f"page-{pno:04d}.sheet.png")
@@ -175,7 +231,11 @@ def run(private: Path, sid: str, only_page: int | None, dry: bool, sheet: bool) 
         rq.parent.mkdir(parents=True, exist_ok=True)
         rq.write_text(json.dumps(review, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"mask: 렌더 {ok_pages} · review 대기 {len(review)} · leak {leaks}"
+          f" · 재작화 권고 {len(redraws)}{'p' + str(redraws) if redraws else ''}"
           f"{' (dry-run)' if dry else ''}")
+    if redraws:
+        print("  → 가린 면적이 커서 패치로도 어색함 — 해당 페이지는 원본 게시 대신"
+              " 클로드 자체 제작 SVG 재작화(4b QA 루프)로 문항화할 것.")
     return 1 if leaks else 0
 
 
@@ -185,12 +245,14 @@ def main() -> int:
     ap.add_argument("--page", type=int)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--contact-sheet", action="store_true")
+    ap.add_argument("--style", choices=["patch", "box"], default="patch",
+                    help="patch(기본): 주변색 자연 패치+번호핀 / box: 중립색 박스")
     ap.add_argument("--private-assets-dir", default=str(DEFAULT_PRIVATE))
     a = ap.parse_args()
     private = Path(a.private_assets_dir)
     if not private.is_absolute():
         private = ROOT / private
-    return run(private, a.source_id, a.page, a.dry_run, a.contact_sheet)
+    return run(private, a.source_id, a.page, a.dry_run, a.contact_sheet, a.style)
 
 
 if __name__ == "__main__":

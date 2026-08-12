@@ -38,11 +38,20 @@ python pipelines/anatomy_schedule.py             # phase·D-day 확인
   (바이너리 PDF는 이 컨테이너에서 못 받는다 — spec D1. 페이지 번호를 지어내지 말 것.)
 - Drive 접근 실패 시: 기존 자료를 지우지 말고 "Drive 미접근"으로 보고만.
 
-## 3. 오늘 큐 계산 (결정론)
+## 3. 오늘 큐 계산 (결정론) + 밀린 날 따라잡기
 
 ```
+python pipelines/anatomy_daily.py --date <KST 오늘> --backlog   # 밀린 날 확인
 python pipelines/anatomy_daily.py --date <KST 오늘> --plan
 ```
+
+- **backlog가 비어 있지 않으면**(주간 이용 한도 초과 등으로 루틴이 못 돈 날):
+  `python pipelines/anatomy_daily.py --date <KST 오늘> --catch-up 3` 으로
+  **오래된 날부터 최대 3일치**를 먼저 따라잡는다(계획 카드에 `made_up: true`
+  자동 표기). 3일을 넘게 밀렸으면 다음 실행이 이어서 따라잡는다 — 한 번에 다
+  만들려고 이용량을 태우지 않는다. 따라잡은 날짜와 남은 backlog를 보고에 포함.
+- 따라잡기 계획에서 나온 `gaps`도 오늘 것과 합쳐 4단계에서 생성하되, 생성
+  총량이 과하면(문항 20개+) 오늘 것 우선, 나머지는 다음 실행으로 미룬다.
 
 `gaps`가 비어 있지 않으면 그 슬롯만큼 카드/문항을 **생성**한다(4단계).
 
@@ -61,6 +70,30 @@ python pipelines/anatomy_daily.py --date <KST 오늘> --plan
 - 분지·주행 개념 카드에는 `tree:` frontmatter(웹이 트리로 렌더)를 넣는다.
 - 과거 학기 날짜(파일명·수업계획서)를 2026 일정으로 쓰지 않는다 —
   일정은 `anatomy_schedule.py`가 유일 기준.
+
+## 4b. SVG 도해 자체 QA 루프 (필수 — 모델 불문)
+
+`docs/assets/anatomy/*.svg`를 새로 만들거나 수정했으면 **커밋 전에 반드시**
+렌더링해서 눈으로 검사하고, 어색한 부분을 고친 뒤 재렌더한다(최소 1회 왕복):
+
+```
+/opt/pw-browsers/chromium --headless --disable-gpu --no-sandbox \
+  --screenshot=/tmp/qa.png --window-size=880,660 --hide-scrollbars \
+  file://$PWD/docs/assets/anatomy/<파일>.svg
+```
+
+체크리스트: ① 라벨-선 겹침(후광 `<style>text{paint-order:stroke;...}</style>` 유지)
+② 텍스트가 상자·캔버스 밖으로 넘침 ③ 번호핀 숫자 가독(원문자 글리프 ①② 금지 —
+원 도형 + 일반 숫자) ④ 해부학적 위치관계가 카드 본문 설명과 모순 없는지
+⑤ 좌우대칭 도해는 미러(`<use>`) 깨짐. 스크린샷 확인 없이 SVG를 커밋하지 않는다.
+퀴즈판 번호 배정은 대응 문항 카드의 정답 순서와 1:1 — 임의 변경 금지.
+
+**마스킹 어색함 자동 복구(재작화 lane)**: binary lane 마스킹은 기본이 자연
+패치(주변색 메움+번호핀)지만, `anatomy_mask.py`가 `redraw_recommended`를
+보고하거나 contact sheet에서 가림 자국이 어색하면 그 페이지는 원본 게시 대신
+**원본을 보고 자체 제작 SVG로 재작화**해 문항·자료를 만든다(위 QA 루프 적용,
+`asset_origin: claude-drawn-svg`, 원본 페이지를 `source_refs`로). 원본 래스터를
+직접 수정("그림 위에 덧그리기")하지 않는다 — 원본 불변 원칙(spec §8-1).
 
 ## 5. 계획 확정 + 검증
 

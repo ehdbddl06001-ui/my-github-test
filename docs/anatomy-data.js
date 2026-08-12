@@ -625,7 +625,7 @@ window.MEDKOS_ANATOMY = {
    "stem": "골반 안 동맥 모식도에서 번호 ①~⑤가 가리키는 동맥의 이름을 각각 말하시오. (①방광 쪽 첫 가지 ②엉치뼈 앞면·보통 2개 ③큰궁둥구멍 윗부분으로 나감 ④큰궁둥구멍 아랫부분·궁둥뼈가시 바로 위 ⑤폐쇄관으로 신경과 동행)",
    "choices": null,
    "answer": "① 배꼽동맥(→위방광동맥) ② 가쪽엉치동맥 ③ 위볼기동맥 ④ 속음부동맥 ⑤ 폐쇄동맥",
-   "explanation": "행선지로 묶으면: 배꼽동맥은 위방광동맥을 내고, 가쪽엉치동맥은 엉치뼈 앞면을 보통 2개로 내려가며(tagging 답 후보 275), 위볼기동맥은 큰궁둥구멍 윗부분·아래볼기동맥과 속음부동맥은 아랫부분으로 나간다(속음부동맥은 궁둥뼈가시 바로 위). 폐쇄동맥(답 후보 276)은 폐쇄신경 아래쪽에서 함께 폐쇄관으로 들어간다. 도해는 강의 내용을 관계 중심으로 재구성한 자체 제작 모식도이며 실제 비율이 아니다.",
+   "explanation": "행선지로 묶으면: 배꼽동맥은 위방광동맥을 내고, 가쪽엉치동맥은 엉치뼈 앞면을 보통 2개로 내려가며(tagging 답 후보 275), 위볼기동맥은 큰궁둥구멍 윗부분·아래볼기동맥과 속음부동맥은 아랫부분으로 나간다(속음부동맥은 궁둥뼈가시 바로 위). 폐쇄동맥(답 후보 276)은 폐쇄신경 아래쪽에서 함께 폐쇄관으로 들어간다. 도해는 강의 내용을 교과서식 구도(오른반골반 안쪽면)로 재구성한 자체 제작 그림이며, 라벨판은 전체 한·영 병기다.",
    "confidence": "medium",
    "answerOnlyBacked": true,
    "image": "assets/anatomy/diag-internal-iliac-quiz.svg",
@@ -652,7 +652,7 @@ window.MEDKOS_ANATOMY = {
    "stem": "위에서 본 골반가로막 모식도에서 번호 ①~⑤가 가리키는 구조의 이름을 각각 말하시오. (①항문관을 감싸는 가장 앞안쪽 근육 ②그 사이 틈새 ③궁둥뼈가시-폐쇄관을 잇는 노란 점선 ④힘줄활에서 일어나는 가장 가쪽 항문올림근 ⑤궁둥뼈가시에서 꼬리뼈로 가는 근육)",
    "choices": null,
    "answer": "① 두덩곧창자근 ② 비뇨생식구멍 ③ 항문올림근힘줄활 ④ 엉덩꼬리근 ⑤ 꼬리근",
-   "explanation": "항문올림근(tagging 답 후보 277)은 안→가쪽으로 두덩곧창자근·두덩꼬리근·엉덩꼬리근이고, 꼬리근은 그 가쪽에서 궁둥뼈가시→꼬리뼈·엉치뼈로 간다. 항문올림근힘줄활은 속폐쇄근막이 선 모양으로 두꺼워진 것(근육이 아닌 근막 구조물)으로 궁둥뼈가시에서 폐쇄관까지 거의 수평하게 뻗고, 엉덩꼬리근이 여기서 일어난다. 두덩곧창자근 양쪽 사이 틈새가 비뇨생식구멍이다. 도해는 자체 제작 모식도.",
+   "explanation": "항문올림근(tagging 답 후보 277)은 안→가쪽으로 두덩곧창자근·두덩꼬리근·엉덩꼬리근이고, 꼬리근은 그 가쪽에서 궁둥뼈가시→꼬리뼈·엉치뼈로 간다. 항문올림근힘줄활은 속폐쇄근막이 선 모양으로 두꺼워진 것(근육이 아닌 근막 구조물)으로 궁둥뼈가시에서 폐쇄관까지 거의 수평하게 뻗고, 엉덩꼬리근이 여기서 일어난다. 두덩곧창자근 양쪽 사이 틈새가 비뇨생식구멍이다. 도해는 교과서식 구도(위에서 본 모습, 좌우대칭·근섬유 결 표현)의 자체 제작 그림이며, 라벨판은 전체 한·영 병기다.",
    "confidence": "medium",
    "answerOnlyBacked": true,
    "image": "assets/anatomy/diag-pelvic-diaphragm-quiz.svg",
@@ -765,10 +765,24 @@ window.MEDKOS_ANATOMY = {
  ],
  "glossary": [
   {
-   "ko": "가로막면",
-   "en": "diaphragmatic surface",
-   "region": "abdomen",
-   "priority": "normal"
+   "ko": "가로막 대동맥구멍지나 배로 들어오면서 형성\n\n자율신경얼기",
+   "en": "autonomic plexus",
+   "region": "abdomen"
+  },
+  {
+   "ko": "가로막대동맥구멍",
+   "en": "aortic hiatus",
+   "region": "abdomen"
+  },
+  {
+   "ko": "가로잘록창자",
+   "en": "transverse colon",
+   "region": "abdomen"
+  },
+  {
+   "ko": "가로잘록창자간막",
+   "en": "transverse mesocolon",
+   "region": "abdomen"
   },
   {
    "ko": "가로창자",
@@ -783,40 +797,54 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "가슴림프관팽대",
+   "en": "cisterna chyli",
+   "region": "abdomen"
+  },
+  {
+   "ko": "가슴배벽정맥",
+   "en": "thoracoepigastric vein",
+   "region": "abdomen"
+  },
+  {
    "ko": "가슴배신경",
    "en": "thoracoabdominal nerve",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "가쪽고샅오목",
    "en": "lateral inguinal fossa",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "가쪽넙다리피부신경",
    "en": "lateral cutaneous nerve of thigh",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "가쪽눈꺼풀인대",
+   "en": "lateral palpebral ligament",
+   "region": "abdomen"
   },
   {
    "ko": "가쪽다리",
    "en": "lateral crus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "가쪽배꼽주름",
    "en": "lateral umbilical fold",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "가쪽활꼴인대",
    "en": "lateral arcuate ligament",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "간 아랫면에서 위작은굽이까지 잇는 간위인대",
+   "en": "hepatogastric ligament",
+   "region": "abdomen"
   },
   {
    "ko": "간동맥",
@@ -827,8 +855,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "간문",
    "en": "porta hepatis",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "간문맥",
@@ -845,8 +872,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "간세동이",
    "en": "portal triad",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "간원인대",
@@ -863,8 +889,42 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "갈고리돌기",
    "en": "uncinate process",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "갈비밑신경",
+   "en": "subcostal nerve",
+   "region": "abdomen"
+  },
+  {
+   "ko": "갈비부분",
+   "en": "costal part",
+   "region": "abdomen"
+  },
+  {
+   "ko": "검정색으로 보이는 막이 맥락막",
+   "en": "choroid",
+   "region": "abdomen"
+  },
+  {
+   "ko": "겉질",
+   "en": "cortex",
+   "region": "abdomen"
+  },
+  {
+   "ko": "결합힘줄",
+   "en": "conjoint tendon",
+   "region": "abdomen"
+  },
+  {
+   "ko": "경우에 따라 덧콩팥동맥",
+   "en": "accessory renal artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "고샅낫힘줄",
+   "en": "inguinal falx",
+   "region": "abdomen"
   },
   {
    "ko": "고샅인대",
@@ -875,8 +935,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "고유간동맥",
    "en": "proper hepatic artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "고환",
@@ -885,16 +944,15 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
-   "ko": "고환날세관",
-   "en": "efferent ductule of testis",
-   "region": "abdomen",
-   "priority": "normal"
-  },
-  {
    "ko": "고환동맥",
    "en": "testicular artery",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "고환동맥은 깊은고샅구멍",
+   "en": "deep inguinal ring",
+   "region": "abdomen"
   },
   {
    "ko": "고환사이막",
@@ -915,22 +973,46 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
+   "ko": "고환올림근막",
+   "en": "cremasteric fascia",
+   "region": "abdomen"
+  },
+  {
    "ko": "고환정맥",
    "en": "testicular vein",
    "region": "abdomen",
    "priority": "normal"
   },
   {
-   "ko": "고환집막",
-   "en": "tunica vaginalis",
-   "region": "abdomen",
-   "priority": "normal"
+   "ko": "곧은동맥",
+   "en": "vasa recta",
+   "region": "abdomen"
   },
   {
    "ko": "곧창자",
    "en": "rectum",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "과 내장복막",
+   "en": "visceral peritoneum",
+   "region": "abdomen"
+  },
+  {
+   "ko": "과 배곧은근집",
+   "en": "rectus sheath",
+   "region": "abdomen"
+  },
+  {
+   "ko": "과 위이자샘창자동맥",
+   "en": "superior pancreaticoduodenal artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "관상면",
+   "en": "coronal plane",
+   "region": "abdomen"
   },
   {
    "ko": "관상인대",
@@ -943,6 +1025,16 @@ window.MEDKOS_ANATOMY = {
    "en": "sympathetic trunk",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "구불잘록창자가지",
+   "en": "sigmoid branch",
+   "region": "abdomen"
+  },
+  {
+   "ko": "구불잘록창자간막",
+   "en": "sigmoid mesocolon",
+   "region": "abdomen"
   },
   {
    "ko": "구불창자",
@@ -963,10 +1055,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "그 안에 간원인 대",
+   "en": "round ligament of liver",
+   "region": "abdomen"
+  },
+  {
+   "ko": "그 주변은 관상인대",
+   "en": "coronary ligament",
+   "region": "abdomen"
+  },
+  {
    "ko": "그물막구멍",
    "en": "omental foramen",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "그물막주머니",
@@ -975,10 +1076,24 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근",
+   "en": "external abdominal oblique muscle",
+   "region": "abdomen"
+  },
+  {
+   "ko": "근처에서 얕은근막으로 나옴\n\n앞배벽아랫부분에서 얕은근막",
+   "en": "superficial investing fascia",
+   "region": "abdomen"
+  },
+  {
    "ko": "깊은고샅구멍",
    "en": "deep inguinal ring",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "깊은엉덩휘돌이동맥",
+   "en": "deep circumflex iliac artery",
+   "region": "abdomen"
   },
   {
    "ko": "꼬리엽",
@@ -1013,14 +1128,18 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "날문부분",
    "en": "pyloric part",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "날문조임근",
    "en": "pyloric sphincter muscle",
    "region": "abdomen",
    "priority": "high"
+  },
+  {
+   "ko": "남자에서 두덩뼈결절 안쪽에서 아래쪽으로 음낭근육층",
+   "en": "dartos tunic",
+   "region": "abdomen"
   },
   {
    "ko": "낫인대",
@@ -1037,38 +1156,58 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "내장면",
    "en": "visceral surface",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "내장면 뒤쪽에서 정맥관인대",
+   "en": "ligamentum venosum",
+   "region": "abdomen"
   },
   {
    "ko": "넙다리신경",
    "en": "femoral nerve",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "네모엽",
    "en": "quadrate lobe",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "눈물샘",
+   "en": "lacrimal gland",
+   "region": "abdomen"
+  },
+  {
+   "ko": "눈물주머니",
+   "en": "lacrimal sac",
+   "region": "abdomen"
   },
   {
    "ko": "다리사이섬유",
-   "en": "intercrural fibers",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "intercrural fiber",
+   "region": "abdomen"
+  },
+  {
+   "ko": "다소 노란색을 띠는 황반",
+   "en": "macula",
+   "region": "abdomen"
   },
   {
    "ko": "대동맥구멍",
    "en": "aortic hiatus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "대정맥구멍",
    "en": "caval opening",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "더 아래로 내려가 오른위그물 막동맥",
+   "en": "right gastroomental artery",
+   "region": "abdomen"
   },
   {
    "ko": "덧이자관",
@@ -1079,14 +1218,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "덩굴정맥얼기",
    "en": "pampiniform plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막",
+   "en": "tunica vaginalis",
+   "region": "abdomen"
   },
   {
    "ko": "돌림주름",
-   "en": "circular folds",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "circular fold",
+   "region": "abdomen"
   },
   {
    "ko": "돌막창자입술",
@@ -1095,10 +1237,14 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "돌막창자판막",
+   "en": "ileocecal recess valve",
+   "region": "abdomen"
+  },
+  {
    "ko": "돌잘록창자동맥",
    "en": "ileocolic artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "돌잘록창자입술",
@@ -1115,26 +1261,52 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "돌창자구멍",
    "en": "ileal orifice",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "돌창자동맥",
-   "en": "ileal arteries",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "ileal artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "되도록 복막과 복막바깥근막",
+   "en": "extraperitoneal fascia",
+   "region": "abdomen"
+  },
+  {
+   "ko": "두덩결합에서 배꼽까지 정중선에 있는 복막주름",
+   "en": "peritoneal fold",
+   "region": "abdomen"
+  },
+  {
+   "ko": "두덩부위",
+   "en": "public region",
+   "region": "abdomen"
+  },
+  {
+   "ko": "드러남 젖히고보면 얕은고샅구멍",
+   "en": "superficial inguinal ring",
+   "region": "abdomen"
   },
   {
    "ko": "들문부분",
    "en": "cardial part",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "뚫고나옴 가쪽배피부가지는 중간겨드랑선",
+   "en": "midaxillary line",
+   "region": "abdomen"
   },
   {
    "ko": "막창자",
    "en": "cecum",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "막창자간막",
+   "en": "mesocecum",
+   "region": "abdomen"
   },
   {
    "ko": "막창자꼬리",
@@ -1145,14 +1317,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "막창자꼬리간막",
    "en": "mesoappendix",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "막창자꼬리구멍",
+   "en": "orifice of vermiform appendix",
+   "region": "abdomen"
   },
   {
    "ko": "막창자꼬리동맥",
    "en": "appendicular artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "막층",
@@ -1161,34 +1336,44 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임\n\n간문맥",
+   "en": "hepatic portal vein",
+   "region": "abdomen"
+  },
+  {
+   "ko": "명치부위",
+   "en": "epigastric region",
+   "region": "abdomen"
+  },
+  {
    "ko": "무장막구역",
    "en": "bare area",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "바깥엉덩동맥",
    "en": "external iliac artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "바깥정삭근막",
    "en": "external spermatic fascia",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "반달선",
    "en": "linea semilunaris",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "방광위오목",
    "en": "supravesical fossa",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "방사선영상",
+   "en": "ERCP",
+   "region": "abdomen"
   },
   {
    "ko": "배가로근",
@@ -1199,8 +1384,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "배가로근막",
    "en": "transversalis fascia",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "배곧은근",
@@ -1209,16 +1393,35 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "배곧은근 나눔힘줄",
+   "en": "tendinous intersection",
+   "region": "abdomen"
+  },
+  {
    "ko": "배곧은근집",
    "en": "rectus sheath",
    "region": "abdomen",
    "priority": "high"
   },
   {
+   "ko": "배꼽부위",
+   "en": "umbilical region",
+   "region": "abdomen"
+  },
+  {
+   "ko": "배꼽옆정맥",
+   "en": "paraumbilical vein",
+   "region": "abdomen"
+  },
+  {
+   "ko": "배대동맥",
+   "en": "abdominal aorta",
+   "region": "abdomen"
+  },
+  {
    "ko": "배대동맥신경얼기",
    "en": "abdominal aortic plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "배바깥빗근",
@@ -1229,8 +1432,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "배세모근",
    "en": "pyramidalis muscle",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "배속빗근",
@@ -1239,34 +1441,49 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "백색막",
-   "en": "tunica albuginea",
-   "region": "abdomen",
-   "priority": "normal"
+   "ko": "배속빗근 널힘줄과 합쳐져 고샅낫힘줄",
+   "en": "inguinal falx",
+   "region": "abdomen"
   },
   {
    "ko": "백색선",
    "en": "linea alba",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "복강동맥",
    "en": "celiac trunk",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "복강신경얼기",
    "en": "celiac plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "복막뒤기관",
+   "en": "retroperitoneal organ",
+   "region": "abdomen"
+  },
+  {
+   "ko": "복막속기관",
+   "en": "intraperitoneal organ",
+   "region": "abdomen"
+  },
+  {
+   "ko": "복막인대",
+   "en": "peritoneal ligament",
+   "region": "abdomen"
   },
   {
    "ko": "복막주렁",
-   "en": "omental appendices",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "omental appendice",
+   "region": "abdomen"
+  },
+  {
+   "ko": "복장부분",
+   "en": "sternal part",
+   "region": "abdomen"
   },
   {
    "ko": "부고환",
@@ -1287,10 +1504,34 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근",
+   "en": "suspensory muscle of duodenum",
+   "region": "abdomen"
+  },
+  {
    "ko": "빈창자동맥",
-   "en": "jejunal arteries",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "jejunal artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리",
+   "en": "root of mesentery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "빈창자와 만나는 샘빈창자굽이",
+   "en": "duodenojejunal flexure",
+   "region": "abdomen"
+  },
+  {
+   "ko": "빗장뼈 중간 지나는 양쪽빗장중간선",
+   "en": "midclavicular line",
+   "region": "abdomen"
+  },
+  {
+   "ko": "상이 맺히지 않으므로 맹점",
+   "en": "blind spot",
+   "region": "abdomen"
   },
   {
    "ko": "샘빈창자굽이",
@@ -1323,28 +1564,50 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "세모인대",
-   "en": "triangular ligament",
-   "region": "abdomen",
-   "priority": "normal"
+   "ko": "섬모체에 둘러 싸인 부분은 섬모체가장자리",
+   "en": "ciliary margin",
+   "region": "abdomen"
+  },
+  {
+   "ko": "섬유피막",
+   "en": "fibrous capsule",
+   "region": "abdomen"
   },
   {
    "ko": "속정삭근막",
    "en": "internal spermatic fascia",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "속질",
+   "en": "medulla",
+   "region": "abdomen"
+  },
+  {
+   "ko": "시각신경원반",
+   "en": "optic disc",
+   "region": "abdomen"
   },
   {
    "ko": "식도구멍",
    "en": "esophageal hiatus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "쓸개",
    "en": "gall bladder",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "쓸개 속면 싸는 막은 나선주름",
+   "en": "spiral fold",
+   "region": "abdomen"
+  },
+  {
+   "ko": "쓸개동맥",
+   "en": "cystic artery",
+   "region": "abdomen"
   },
   {
    "ko": "쓸개바닥",
@@ -1355,20 +1618,23 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "쓸개주머니관",
    "en": "cystic duct",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "아래가로막동맥",
    "en": "inferior phrenic artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "아래대정맥",
    "en": "inferior vena cava",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "아래로 내려가 코눈물관",
+   "en": "nasolacrimal duct",
+   "region": "abdomen"
   },
   {
    "ko": "아래배벽동맥",
@@ -1379,38 +1645,62 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "아래부신동맥",
    "en": "inferior suprarenal artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "아래아랫배신경얼기",
    "en": "inferior hypogastric plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "아래이자샘창자동맥",
    "en": "inferior pancreaticoduodenal artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "아래창자간막동맥",
    "en": "inferior mesenteric artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "아래창자간막신경얼기",
    "en": "inferior mesenteric plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "아래창자간막정맥",
+   "en": "inferior mesenteric vein",
+   "region": "abdomen"
+  },
+  {
+   "ko": "안구 가장 속에 있는 망막",
+   "en": "retina",
+   "region": "abdomen"
+  },
+  {
+   "ko": "안구뒤방",
+   "en": "posterior chamber",
+   "region": "abdomen"
+  },
+  {
+   "ko": "안구섬유층",
+   "en": "fibrous layer of eyeball",
+   "region": "abdomen"
+  },
+  {
+   "ko": "안구앞방",
+   "en": "anterior chamber",
+   "region": "abdomen"
   },
   {
    "ko": "안쪽고샅오목",
    "en": "medial inguinal fossa",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "안쪽눈꺼풀인대",
+   "en": "medial palpebral ligament",
+   "region": "abdomen"
   },
   {
    "ko": "안쪽다리",
@@ -1421,20 +1711,47 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "안쪽배꼽주름",
    "en": "medial umbilical fold",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "안쪽활꼴인대",
    "en": "medial arcuate ligament",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "앞서 보았던 두 관이 합쳐져 쓸개이자관팽대",
+   "en": "hepatopancreatic ampulla",
+   "region": "abdomen"
+  },
+  {
+   "ko": "앞에서 세로로 잘라열어 돌창자구멍",
+   "en": "ileal orifice",
+   "region": "abdomen"
+  },
+  {
+   "ko": "앞쪽에 홍채에 둘러싸여있는 빈부분이 동공",
+   "en": "pupil",
+   "region": "abdomen"
+  },
+  {
+   "ko": "양쪽 열째갈비연골 아랫면 연결하는 갈비밑면",
+   "en": "subcostal plane",
+   "region": "abdomen"
+  },
+  {
+   "ko": "양쪽엉덩뼈결절 사이 연결하는 결절사이면",
+   "en": "intertubercular plane",
+   "region": "abdomen"
   },
   {
    "ko": "얕은고샅구멍",
    "en": "superficial inguinal ring",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "얕은근막 자르고 아래가쪽 고샅인대방향 젖히면 배바깥빗근",
+   "en": "external abdominal oblique muscle",
+   "region": "abdomen"
   },
   {
    "ko": "얕은배벽동맥",
@@ -1443,22 +1760,66 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "얕은배벽정맥",
+   "en": "superficial epigastric vein",
+   "region": "abdomen"
+  },
+  {
    "ko": "얕은엉덩휘돌이동맥",
    "en": "superficial circumflex iliac artery",
    "region": "abdomen",
    "priority": "normal"
   },
   {
+   "ko": "얕은엉덩휘돌이정맥",
+   "en": "superifcial circumflex iliac vein",
+   "region": "abdomen"
+  },
+  {
+   "ko": "엄지맞섬근",
+   "en": "opponens pollicis muscle",
+   "region": "abdomen"
+  },
+  {
    "ko": "엉덩고샅신경",
    "en": "ilioinguinal nerve",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "엉덩아랫배신경",
    "en": "iliohypogastric nerve",
    "region": "abdomen",
    "priority": "high"
+  },
+  {
+   "ko": "에 돌잘록창자입술",
+   "en": "ileocolic lip",
+   "region": "abdomen"
+  },
+  {
+   "ko": "에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관",
+   "en": "inguinal canal",
+   "region": "abdomen"
+  },
+  {
+   "ko": "에는 근막 덮여있지 않음\n\n배벽아래부분에서 엉덩아랫배신경",
+   "en": "iliohypogastric nerve",
+   "region": "abdomen"
+  },
+  {
+   "ko": "에서 지라콩팥인대",
+   "en": "splenorenal ligament",
+   "region": "abdomen"
+  },
+  {
+   "ko": "여기로 덧이자관",
+   "en": "accessory pancreatic duct",
+   "region": "abdomen"
+  },
+  {
+   "ko": "여러 개의 콩팥피라밋",
+   "en": "renal pyramid",
+   "region": "abdomen"
   },
   {
    "ko": "오른간관",
@@ -1473,22 +1834,45 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "오른갈비밑부위",
+   "en": "right hypochondrium",
+   "region": "abdomen"
+  },
+  {
+   "ko": "오른고샅부위",
+   "en": "right inguinal region",
+   "region": "abdomen"
+  },
+  {
    "ko": "오른다리",
-   "en": "right crus",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "right crust",
+   "region": "abdomen"
+  },
+  {
+   "ko": "오른아래가로막동맥",
+   "en": "right inferior phrenic artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "오른옆구리부위",
+   "en": "right flank",
+   "region": "abdomen"
   },
   {
    "ko": "오른위그물막동맥",
    "en": "right gastroomental artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "오른위동맥",
    "en": "right gastric artery",
    "region": "abdomen",
    "priority": "high"
+  },
+  {
+   "ko": "오른잘록창자동맥",
+   "en": "right colic artery",
+   "region": "abdomen"
   },
   {
    "ko": "오른창자동맥",
@@ -1503,10 +1887,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "오름허리정맥",
+   "en": "ascending lumbar vein",
+   "region": "abdomen"
+  },
+  {
+   "ko": "온간관",
+   "en": "common hepatic duct",
+   "region": "abdomen"
+  },
+  {
    "ko": "온간동맥",
    "en": "common hepatic artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "온쓸개관",
@@ -1517,8 +1910,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "온엉덩동맥",
    "en": "common iliac artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "온엉덩정맥",
@@ -1527,10 +1919,40 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "와 가로잘록창자간막",
+   "en": "transverse mesocolon",
+   "region": "abdomen"
+  },
+  {
+   "ko": "와 간아 랫면에서 샘창자",
+   "en": "duodenum",
+   "region": "abdomen"
+  },
+  {
+   "ko": "와 세모인대",
+   "en": "triangular ligament",
+   "region": "abdomen"
+  },
+  {
+   "ko": "와 얕은음경근막",
+   "en": "superficial fascia of penis",
+   "region": "abdomen"
+  },
+  {
+   "ko": "와 위지라인대",
+   "en": "gastrosplenic ligament",
+   "region": "abdomen"
+  },
+  {
    "ko": "왼간관",
    "en": "left hepatic duct",
    "region": "abdomen",
    "priority": "normal"
+  },
+  {
+   "ko": "왼간동맥",
+   "en": "hepatic artery",
+   "region": "abdomen"
   },
   {
    "ko": "왼간엽",
@@ -1539,16 +1961,34 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "왼갈비밑부위",
+   "en": "left hypochondrium",
+   "region": "abdomen"
+  },
+  {
+   "ko": "왼고샅부위",
+   "en": "left inguinal region",
+   "region": "abdomen"
+  },
+  {
    "ko": "왼다리",
-   "en": "left crus",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "left crust",
+   "region": "abdomen"
+  },
+  {
+   "ko": "왼아래가로막동맥",
+   "en": "left inferior phrenic artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "왼옆구리부위",
+   "en": "left flank",
+   "region": "abdomen"
   },
   {
    "ko": "왼위그물막동맥",
    "en": "left gastroomental artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "왼위동맥",
@@ -1563,16 +2003,25 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "왼잘록창자동맥",
+   "en": "left colic artery",
+   "region": "abdomen"
+  },
+  {
    "ko": "왼창자동맥",
    "en": "left colic artery",
    "region": "abdomen",
    "priority": "normal"
   },
   {
+   "ko": "왼콩팥정맥",
+   "en": "left renal vein",
+   "region": "abdomen"
+  },
+  {
    "ko": "위가로막인대",
    "en": "gastrophrenic ligament",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위곧창자정맥",
@@ -1583,20 +2032,22 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "위몸통",
    "en": "body of stomach",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위바닥",
    "en": "fundus of stomach",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위배벽동맥",
    "en": "superior epigastric artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "위부분 사이 잇는 간샘창자인대",
+   "en": "hepatoduodenal ligament",
+   "region": "abdomen"
   },
   {
    "ko": "위부신동맥",
@@ -1613,14 +2064,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "위아랫배신경얼기",
    "en": "superior hypogastric plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위이자샘창자동맥",
    "en": "superior pancreaticoduodenal artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위점막주름",
@@ -1631,20 +2080,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "위지라인대",
    "en": "gastrosplenic ligament",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위창자간막동맥",
    "en": "superior mesenteric artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위창자간막신경얼기",
    "en": "superior mesenteric plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "위창자간막정맥",
@@ -1653,16 +2099,44 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "음낭사이막",
-   "en": "septum of scrotum",
-   "region": "abdomen",
-   "priority": "normal"
+   "ko": "유리체",
+   "en": "vitreous body",
+   "region": "abdomen"
+  },
+  {
+   "ko": "으로 들 어가고 여자의 난소동맥은 온엉덩동맥",
+   "en": "common iliac artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "음낭",
+   "en": "scrotum",
+   "region": "abdomen"
+  },
+  {
+   "ko": "음낭근육층",
+   "en": "dartos muscle layer",
+   "region": "abdomen"
   },
   {
    "ko": "음부넙다리신경",
    "en": "genitofemoral nerve",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "이 부위에서 치밀한 자율신경얼기",
+   "en": "autonomic plexus",
+   "region": "abdomen"
+  },
+  {
+   "ko": "이 섬유들이 두덩뼈빗",
+   "en": "pecten pubis",
+   "region": "abdomen"
+  },
+  {
+   "ko": "이들 구조물이 간샘창자인대",
+   "en": "hepatoduodenal ligament",
+   "region": "abdomen"
   },
   {
    "ko": "이자관",
@@ -1689,6 +2163,31 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "인 위입술과 돌막창자입술",
+   "en": "ileocecal lip",
+   "region": "abdomen"
+  },
+  {
+   "ko": "인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음\n\n정관",
+   "en": "ductus deferens",
+   "region": "abdomen"
+  },
+  {
+   "ko": "인대와 창자간막은 벽복막",
+   "en": "parietal peritoneum",
+   "region": "abdomen"
+  },
+  {
+   "ko": "일곱째에서 열한째갈비신경과 갈비밑신경",
+   "en": "subcostal nerve",
+   "region": "abdomen"
+  },
+  {
+   "ko": "자궁원인대",
+   "en": "round ligament of uterus",
+   "region": "abdomen"
+  },
+  {
    "ko": "작은굽이",
    "en": "lesser curvature",
    "region": "abdomen",
@@ -1697,38 +2196,57 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "작은그물막",
    "en": "lesser omentum",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "작은그물막 또는 그 부분인 간샘창자인대",
+   "en": "hepatoduodenal ligament",
+   "region": "abdomen"
   },
   {
    "ko": "작은샘창자유두",
    "en": "minor duodenal papilla",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "작은콩팥잔",
    "en": "minor calices",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "작은허리근",
    "en": "psoas minor muscle",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "잘록창자띠",
-   "en": "teniae coli",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "tenia coli",
+   "region": "abdomen"
   },
   {
    "ko": "잘록창자팽대",
    "en": "haustra of colon",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "잘보존된 망막에서는 중심오목",
+   "en": "fovea centralis",
+   "region": "abdomen"
+  },
+  {
+   "ko": "정관",
+   "en": "ductus deferens",
+   "region": "abdomen"
+  },
+  {
+   "ko": "정도 되는 곳에서 위에서 아래로 연속적으로 배곧은근집",
+   "en": "rectus sheath",
+   "region": "abdomen"
+  },
+  {
+   "ko": "정맥",
+   "en": "testicular artery",
+   "region": "abdomen"
   },
   {
    "ko": "정맥관인대",
@@ -1743,28 +2261,39 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
-   "ko": "정세관",
-   "en": "seminiferous tubule",
-   "region": "abdomen",
-   "priority": "normal"
-  },
-  {
    "ko": "정중배꼽주름",
    "en": "median umbilical fold",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "정중엉치동맥",
-   "en": "",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "medial sacral artery",
+   "region": "abdomen"
+  },
+  {
+   "ko": "좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경",
+   "en": "intercostal nerve",
+   "region": "abdomen"
+  },
+  {
+   "ko": "주변 근육부분과 이들 근육이 부착하는 가운데 중심널힘줄",
+   "en": "central tendon",
+   "region": "abdomen"
+  },
+  {
+   "ko": "줄과 만나 서로 합쳐져 백색선 되는 것 확인\n\n배곧은근집",
+   "en": "rectus sheath",
+   "region": "abdomen"
   },
   {
    "ko": "중간부신동맥",
    "en": "middle suprarenal artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "중간잘록창자동맥",
+   "en": "middle colic artery",
+   "region": "abdomen"
   },
   {
    "ko": "중간창자동맥",
@@ -1779,22 +2308,24 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "지라 가로막면",
+   "en": "diaphragmatic surface",
+   "region": "abdomen"
+  },
+  {
    "ko": "지라동맥",
    "en": "splenic artery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "지라문",
    "en": "splenic hilum",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "지라정맥",
    "en": "splenic vein",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "지방층",
@@ -1803,16 +2334,24 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "짧은엄지벌림근",
+   "en": "abductor pollicis brevis muscle",
+   "region": "abdomen"
+  },
+  {
    "ko": "짧은위동맥",
-   "en": "short gastric arteries",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "short gastric artery",
+   "region": "abdomen"
   },
   {
    "ko": "창자간막",
    "en": "mesentery",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "창자간막 부착된 맞은편 벽에 위치\n\n막창자",
+   "en": "cecum",
+   "region": "abdomen"
   },
   {
    "ko": "창자간막뿌리",
@@ -1821,16 +2360,30 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "창자동맥",
+   "en": "intestinal artery",
+   "region": "abdomen"
+  },
+  {
    "ko": "콩팥겉질",
    "en": "renal cortex",
    "region": "abdomen",
    "priority": "normal"
   },
   {
+   "ko": "콩팥굴",
+   "en": "renal sinus",
+   "region": "abdomen"
+  },
+  {
    "ko": "콩팥근막",
    "en": "renal fascia",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "콩팥기둥",
+   "en": "renal column",
+   "region": "abdomen"
   },
   {
    "ko": "콩팥깔때기",
@@ -1847,8 +2400,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "콩팥문",
    "en": "hilum of kidney",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "콩팥속질",
@@ -1859,14 +2411,23 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "콩팥유두",
    "en": "renal papilla",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "콩팥정맥",
-   "en": "renal veins",
+   "en": "renal vein",
    "region": "abdomen",
    "priority": "high"
+  },
+  {
+   "ko": "콩팥주위지방체",
+   "en": "pararenal fat body",
+   "region": "abdomen"
+  },
+  {
+   "ko": "콩팥주위지방피막",
+   "en": "perirenal fat capsule",
+   "region": "abdomen"
   },
   {
    "ko": "콩팥피라밋",
@@ -1895,20 +2456,27 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "큰샘창자유두",
    "en": "major duodenal papilla",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "큰콩팥잔",
    "en": "major calices",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
   },
   {
    "ko": "큰허리근",
    "en": "psoas major muscle",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "통과하여 아래콧길",
+   "en": "inferior nasal meatus",
+   "region": "abdomen"
+  },
+  {
+   "ko": "표면 덮고 계속되며 음경에서는 음경고리인대",
+   "en": "fundiform ligament of penis",
+   "region": "abdomen"
   },
   {
    "ko": "허리네모근",
@@ -1918,27 +2486,143 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "허리동맥",
-   "en": "lumbar arteries",
-   "region": "abdomen",
-   "priority": "normal"
+   "en": "lumbar artery",
+   "region": "abdomen"
   },
   {
-   "ko": "허리신경얼기",
-   "en": "lumbar plexus",
-   "region": "abdomen",
-   "priority": "normal"
+   "ko": "허리부분",
+   "en": "lumbar part",
+   "region": "abdomen"
   },
   {
    "ko": "허리정맥",
    "en": "lumbar vein",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "홍채 합해서 포도막",
+   "en": "uvea",
+   "region": "abdomen"
   },
   {
    "ko": "활꼴선",
    "en": "arcuate line",
-   "region": "abdomen",
-   "priority": "normal"
+   "region": "abdomen"
+  },
+  {
+   "ko": "가능한 고리판 가쪽에서 고리판절제술",
+   "en": "laminectomy",
+   "region": "back"
+  },
+  {
+   "ko": "가시끝인대",
+   "en": "supraspinous ligament",
+   "region": "back"
+  },
+  {
+   "ko": "가시사이인대",
+   "en": "interspinous ligaments",
+   "region": "back"
+  },
+  {
+   "ko": "경막밑공간",
+   "en": "subdural space",
+   "region": "back"
+  },
+  {
+   "ko": "경막바깥공간",
+   "en": "epidural space",
+   "region": "back"
+  },
+  {
+   "ko": "과 가시돌기",
+   "en": "spinous process",
+   "region": "back"
+  },
+  {
+   "ko": "뒤세로인대",
+   "en": "posterior longitudinal ligament",
+   "region": "back"
+  },
+  {
+   "ko": "말총",
+   "en": "cauda equina",
+   "region": "back"
+  },
+  {
+   "ko": "속척주정맥얼기",
+   "en": "internal vertebral venous plexus",
+   "region": "back"
+  },
+  {
+   "ko": "와 가시끝인대",
+   "en": "supraspinous ligament",
+   "region": "back"
+  },
+  {
+   "ko": "종말끈",
+   "en": "filum terminale",
+   "region": "back"
+  },
+  {
+   "ko": "척수경막",
+   "en": "spinal dura mater",
+   "region": "back"
+  },
+  {
+   "ko": "척수신경뿌리",
+   "en": "spinal nerve root",
+   "region": "back"
+  },
+  {
+   "ko": "척수신경절",
+   "en": "spinal ganglion",
+   "region": "back"
+  },
+  {
+   "ko": "척수신경줄기",
+   "en": "trunk of spinal nerve",
+   "region": "back"
+  },
+  {
+   "ko": "척수연막",
+   "en": "spinal pia mater",
+   "region": "back"
+  },
+  {
+   "ko": "척수원뿔",
+   "en": "conus medullaris",
+   "region": "back"
+  },
+  {
+   "ko": "척추뼈고리판",
+   "en": "lamina of vertebral arch",
+   "region": "back"
+  },
+  {
+   "ko": "척추사이구멍",
+   "en": "intervertebral foramen",
+   "region": "back"
+  },
+  {
+   "ko": "척추사이원반",
+   "en": "intervertebral disc",
+   "region": "back"
+  },
+  {
+   "ko": "치아인대",
+   "en": "denticulate ligament",
+   "region": "back"
+  },
+  {
+   "ko": "황색인대",
+   "en": "ligamenta flava",
+   "region": "back"
+  },
+  {
+   "ko": "가로정맥굴",
+   "en": "transverse sinus",
+   "region": "head"
   },
   {
    "ko": "가슴천자",
@@ -1948,20 +2632,27 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "가쪽곧은근",
    "en": "lateral rectus muscle",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
-   "ko": "가쪽눈꺼풀인대",
-   "en": "lateral palpebral ligament",
-   "region": "head",
-   "priority": "normal"
+   "ko": "가쪽눈구석",
+   "en": "lateral angle of eye",
+   "region": "head"
+  },
+  {
+   "ko": "가쪽눈꺼풀연결",
+   "en": "lateral palpebral commisure",
+   "region": "head"
+  },
+  {
+   "ko": "가쪽정맥주머니",
+   "en": "lateral lacunae",
+   "region": "head"
   },
   {
    "ko": "각막",
    "en": "cornea",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "갈비뼈",
@@ -1971,14 +2662,43 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "갓돌림신경",
    "en": "abducens nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "개 정 맥굴이 하나로 합쳐져 속뒤통수뼈융기에서 정맥굴합류",
+   "en": "confluence of sinuses",
+   "region": "head"
+  },
+  {
+   "ko": "거미막",
+   "en": "arachnoid mater",
+   "region": "head"
+  },
+  {
+   "ko": "거미막과립",
+   "en": "arachnoid granulation",
+   "region": "head"
+  },
+  {
+   "ko": "거미막밑공간",
+   "en": "subarachnoid space",
+   "region": "head"
   },
   {
    "ko": "결막",
    "en": "conjunctiva",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "경막",
+   "en": "dura mater",
+   "region": "head"
+  },
+  {
+   "ko": "경막정맥굴",
+   "en": "dural venous sinus",
+   "region": "head"
   },
   {
    "ko": "고막",
@@ -1993,10 +2713,30 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "고실",
+   "en": "tympanic cavity",
+   "region": "head"
+  },
+  {
+   "ko": "고실끈신경",
+   "en": "chorda tympani",
+   "region": "head"
+  },
+  {
    "ko": "고실천장",
    "en": "tegmental wall",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "고유고실",
+   "en": "tympanic cavity proper",
+   "region": "head"
+  },
+  {
+   "ko": "곧은정맥굴",
+   "en": "straight sinus",
+   "region": "head"
   },
   {
    "ko": "공막",
@@ -2005,8 +2745,28 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
+   "ko": "과 고실위쪽 고실위오목",
+   "en": "epitympanic recess",
+   "region": "head"
+  },
+  {
+   "ko": "과 보다 안쪽으로 주행하는 도르래위신경",
+   "en": "supratrochlear nerve",
+   "region": "head"
+  },
+  {
+   "ko": "관상봉합",
+   "en": "coronal suture",
+   "region": "head"
+  },
+  {
    "ko": "관자뼈 광대풀기",
    "en": "aygomaatic process of temparal bone",
+   "region": "head"
+  },
+  {
+   "ko": "구불정맥굴",
+   "en": "sigmoid sinus",
    "region": "head"
   },
   {
@@ -2028,10 +2788,34 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "귓속뼈",
+   "en": "auditory ossicles",
+   "region": "head"
+  },
+  {
+   "ko": "그 뒤 눈돌림신경",
+   "en": "oculomotor nerve",
+   "region": "head"
+  },
+  {
+   "ko": "그 뒤 정중면에 위치한 뇌하수체줄기",
+   "en": "hypophyseal stalk",
+   "region": "head"
+  },
+  {
+   "ko": "그사이 눈꺼풀틈새",
+   "en": "palpebral fissure",
+   "region": "head"
+  },
+  {
+   "ko": "그어진 선 따라 머리뼈 바깥판",
+   "en": "outer table",
+   "region": "head"
+  },
+  {
    "ko": "긴섬모체신경",
    "en": "long ciliary nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "꼭지방어귀",
@@ -2042,8 +2826,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "나비굴",
    "en": "sphenoidal sinus",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "나비굴구멍",
+   "en": "aperture of sphenoidal sinus",
+   "region": "head"
   },
   {
    "ko": "날개관신경",
@@ -2070,46 +2858,65 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "눈꺼풀결막",
+   "en": "palpebral conjuctiva",
+   "region": "head"
+  },
+  {
+   "ko": "눈꺼풀의 눈꺼풀판",
+   "en": "tarsus",
+   "region": "head"
+  },
+  {
    "ko": "눈꺼풀판",
-   "en": "tarsal plate",
-   "region": "head",
-   "priority": "normal"
+   "en": "tarsus",
+   "region": "head"
   },
   {
    "ko": "눈돌림신경",
    "en": "oculomotor nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "눈동맥",
    "en": "ophthalmic artery",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "눈둘레근",
-   "en": "",
-   "region": "head",
-   "priority": "normal"
+   "en": "orbicularis oculi muscle",
+   "region": "head"
   },
   {
-   "ko": "눈물샘",
-   "en": "lacrimal gland",
-   "region": "head",
-   "priority": "normal"
+   "ko": "눈물못",
+   "en": "lacrimal lake",
+   "region": "head"
   },
   {
    "ko": "눈물샘신경",
    "en": "lacrimal nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "눈물소관",
    "en": "lacrimal canaliculus",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "눈물언덕",
+   "en": "lacrimal caruncle",
+   "region": "head"
+  },
+  {
+   "ko": "눈물유두",
+   "en": "lacrimal papilla",
+   "region": "head"
+  },
+  {
+   "ko": "눈물점",
+   "en": "lacrimal punctum",
+   "region": "head"
   },
   {
    "ko": "눈살금",
@@ -2119,20 +2926,48 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "눈확뼈막",
    "en": "periorbita",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "눈확사이막",
    "en": "orbital septum",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "눈확위구멍",
+   "en": "supraorbital foramen",
+   "region": "head"
   },
   {
    "ko": "눈확위신경",
    "en": "supraorbital nerve",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "눈확위패임",
+   "en": "supraorbital notch",
+   "region": "head"
+  },
+  {
+   "ko": "눈확천장",
+   "en": "obital roof",
+   "region": "head"
+  },
+  {
+   "ko": "대뇌낫",
+   "en": "falx cerebri",
+   "region": "head"
+  },
+  {
+   "ko": "대뇌정맥",
+   "en": "cerebral vein",
+   "region": "head"
+  },
+  {
+   "ko": "더듬자 사용하여 볏돌기 양 옆 벌집뼈체판",
+   "en": "ethmoid cribriform plate",
+   "region": "head"
   },
   {
    "ko": "도르래",
@@ -2143,14 +2978,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "도르래신경",
    "en": "trochlear nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "도르래아래신경",
    "en": "infratrochlear nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "도르래위신경",
@@ -2161,8 +2994,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "동공",
    "en": "pupil",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "뒤교통동맥",
@@ -2177,10 +3009,14 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "뒤머리뼈우묵",
+   "en": "posterior cranial fossa",
+   "region": "head"
+  },
+  {
    "ko": "뒤벌집신경",
    "en": "posterior ethmoidal nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "뒤아래소뇌동맥",
@@ -2189,16 +3025,25 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "뒤쪽으로는 꼭지방어귀",
+   "en": "aditus to mastoid antrum",
+   "region": "head"
+  },
+  {
    "ko": "뒤콧구멍",
    "en": "choana",
    "region": "head",
    "priority": "normal"
   },
   {
+   "ko": "뒤통수정맥굴",
+   "en": "occipital sinus",
+   "region": "head"
+  },
+  {
    "ko": "등자뼈",
    "en": "stapes",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "망막",
@@ -2215,8 +3060,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "망치뼈",
    "en": "malleus",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "맥락막",
@@ -2225,10 +3069,29 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "머리덮개널힘줄",
+   "en": "epicranial aponeurosis",
+   "region": "head"
+  },
+  {
+   "ko": "머리덮개뼈 위뒤방향으로 당겨 뇌경막",
+   "en": "cranial dura mater",
+   "region": "head"
+  },
+  {
+   "ko": "머리뼈 관자놀이점",
+   "en": "pterion",
+   "region": "head"
+  },
+  {
+   "ko": "머리뼈 속면 덮는 실제적 뼈막인 뼈막층",
+   "en": "periosteal layer",
+   "region": "head"
+  },
+  {
    "ko": "모루뼈",
    "en": "incus",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "목가지",
@@ -2247,12 +3110,6 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "목구멍편도",
-   "en": "palatine tonsil",
-   "region": "head",
-   "priority": "normal"
-  },
-  {
    "ko": "목동맥관",
    "en": "carotid canal",
    "region": "head",
@@ -2267,14 +3124,23 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "목정맥구멍",
    "en": "jugular foramen",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "목정맥오목",
    "en": "jugular fossa",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "무 깊이 자르는 경우 뇌막 과 뇌 손상가능하므로 판사이층",
+   "en": "diploe",
+   "region": "head"
+  },
+  {
+   "ko": "무릎신경절",
+   "en": "geniculate ganglion",
+   "region": "head"
   },
   {
    "ko": "미로동맥",
@@ -2289,10 +3155,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "반달틈새",
-   "en": "semilunar hiatus",
-   "region": "head",
-   "priority": "normal"
+   "ko": "벌집뼈수직판",
+   "en": "perpendicular plate",
+   "region": "head"
+  },
+  {
+   "ko": "볏돌기",
+   "en": "crista galli",
+   "region": "head"
+  },
+  {
+   "ko": "보습뼈",
+   "en": "vomer",
+   "region": "head"
   },
   {
    "ko": "복장뼈각",
@@ -2310,16 +3185,25 @@ window.MEDKOS_ANATOMY = {
    "region": "head"
   },
   {
+   "ko": "부교감신경섬유",
+   "en": "parasympathetic fiber",
+   "region": "head"
+  },
+  {
+   "ko": "부분에서 머리마루점",
+   "en": "vertex",
+   "region": "head"
+  },
+  {
    "ko": "분계고랑",
    "en": "terminal sulcus",
    "region": "head",
    "priority": "normal"
   },
   {
-   "ko": "붓혀근",
-   "en": "styloglossus muscle",
-   "region": "head",
-   "priority": "normal"
+   "ko": "삼차신경",
+   "en": "trigeminal nerve",
+   "region": "head"
   },
   {
    "ko": "섬모체",
@@ -2330,14 +3214,33 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "섬모체신경절",
    "en": "ciliary ganglion",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "성곽유두",
    "en": "vallate papilla",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "셋째큰어금니",
+   "en": "third molar tooth",
+   "region": "head"
+  },
+  {
+   "ko": "소뇌낫",
+   "en": "falx cerebelli",
+   "region": "head"
+  },
+  {
+   "ko": "소뇌천막",
+   "en": "tentorium cerebelli",
+   "region": "head"
+  },
+  {
+   "ko": "속귀 뼈미로",
+   "en": "bony labyrinth",
+   "region": "head"
   },
   {
    "ko": "속귀신경",
@@ -2354,14 +3257,18 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "속목동맥",
    "en": "internal carotid artery",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "속목정맥",
    "en": "internal jugular vein",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "수막층",
+   "en": "meningeal layer",
+   "region": "head"
   },
   {
    "ko": "수정체",
@@ -2376,22 +3283,49 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
-   "ko": "시각신경원반",
-   "en": "optic disc",
-   "region": "head",
-   "priority": "normal"
+   "ko": "시각신경관",
+   "en": "optic canal",
+   "region": "head"
+  },
+  {
+   "ko": "시상봉합",
+   "en": "sagittal suture",
+   "region": "head"
+  },
+  {
+   "ko": "시옷봉합",
+   "en": "lambdoid suture",
+   "region": "head"
+  },
+  {
+   "ko": "시옷점",
+   "en": "lambda",
+   "region": "head"
+  },
+  {
+   "ko": "아래결막구석",
+   "en": "inferior conjuctival fornix",
+   "region": "head"
   },
   {
    "ko": "아래곧은근",
    "en": "inferior rectus muscle",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "아래눈꺼풀",
+   "en": "lower eyelid",
+   "region": "head"
   },
   {
    "ko": "아래빗근",
    "en": "inferior oblique muscle",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "아래시상정맥굴",
+   "en": "inferior sagittal sinus",
+   "region": "head"
   },
   {
    "ko": "아래입술내림",
@@ -2402,18 +3336,6 @@ window.MEDKOS_ANATOMY = {
    "ko": "아래입술내림근",
    "en": "depressor labii inferioris muscle",
    "region": "head"
-  },
-  {
-   "ko": "아래코선반",
-   "en": "inferior nasal concha",
-   "region": "head",
-   "priority": "normal"
-  },
-  {
-   "ko": "아래콧길",
-   "en": "inferior nasal meatus",
-   "region": "head",
-   "priority": "normal"
   },
   {
    "ko": "아래턱뼈 관철들기 관대팝",
@@ -2427,22 +3349,40 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "안쪽곧은근",
-   "en": "medial rectus muscle",
-   "region": "head",
-   "priority": "normal"
+   "ko": "안 장가로막",
+   "en": "diaphragma sellae",
+   "region": "head"
   },
   {
-   "ko": "안쪽눈꺼풀인대",
-   "en": "medial palpebral ligament",
-   "region": "head",
-   "priority": "normal"
+   "ko": "안구결막",
+   "en": "bulbar conjuctiva",
+   "region": "head"
+  },
+  {
+   "ko": "안쪽곧은근",
+   "en": "medial rectus muscle",
+   "region": "head"
+  },
+  {
+   "ko": "안쪽눈구석",
+   "en": "medial angle of eye",
+   "region": "head"
+  },
+  {
+   "ko": "안쪽눈꺼풀연결",
+   "en": "medial palpebral commissure",
+   "region": "head"
   },
   {
    "ko": "앞교통동맥",
    "en": "anterior communicating artery",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "앞니관",
+   "en": "incisive canal",
+   "region": "head"
   },
   {
    "ko": "앞대뇌동맥",
@@ -2459,8 +3399,22 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "앞벌집신경",
    "en": "anterior ethmoidal nerve",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "앞쪽 볏돌기",
+   "en": "crista galli",
+   "region": "head"
+  },
+  {
+   "ko": "앞쪽으로 벌집뼈",
+   "en": "ethmoid bone",
+   "region": "head"
+  },
+  {
+   "ko": "앞쪽으로 추적하면 계속 똑바로 주행하는 더 큰 눈확위신경",
+   "en": "supraorbital nerve",
+   "region": "head"
   },
   {
    "ko": "얼굴동맥",
@@ -2484,16 +3438,34 @@ window.MEDKOS_ANATOMY = {
    "region": "head"
   },
   {
+   "ko": "연막",
+   "en": "pia mater",
+   "region": "head"
+  },
+  {
    "ko": "온힘줄고리",
    "en": "common tendinous ring",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "위 턱뼈 코능선",
+   "en": "nasal crest",
+   "region": "head"
+  },
+  {
+   "ko": "위결막구석",
+   "en": "superior conjuctival fornix",
+   "region": "head"
   },
   {
    "ko": "위곧은근",
    "en": "superior rectus muscle",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "위눈꺼풀",
+   "en": "upper eyelid",
+   "region": "head"
   },
   {
    "ko": "위눈꺼풀올림근",
@@ -2504,8 +3476,22 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "위눈정맥",
    "en": "superior ophthalmic vein",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "위눈확틈새",
+   "en": "superior orbital fissure",
+   "region": "head"
+  },
+  {
+   "ko": "위목정맥팽대",
+   "en": "superior bulb of jugular vein",
+   "region": "head"
+  },
+  {
+   "ko": "위바위정맥굴",
+   "en": "superior petrosal sinus",
+   "region": "head"
   },
   {
    "ko": "위빗근",
@@ -2518,6 +3504,16 @@ window.MEDKOS_ANATOMY = {
    "en": "superior cerebellar artery",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "위시상정맥굴",
+   "en": "superior sagittal sinus",
+   "region": "head"
+  },
+  {
+   "ko": "위에 놓인 후각망울",
+   "en": "olfactory bulb",
+   "region": "head"
   },
   {
    "ko": "위입술올림근",
@@ -2548,14 +3544,23 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "유리체",
-   "en": "vitreous body",
-   "region": "head",
-   "priority": "normal"
+   "ko": "이 시신에서는 머 리덮개의 뼈막",
+   "en": "periost",
+   "region": "head"
+  },
+  {
+   "ko": "이 신경들 손상하지 않으면서 지방 제거하여 위눈꺼풀올림근",
+   "en": "levator palpebrae superioris muscle",
+   "region": "head"
   },
   {
    "ko": "이것은 눈썹주름근",
    "en": "corrugator supercilii muscle",
+   "region": "head"
+  },
+  {
+   "ko": "이를 통해 눈확안 주행하는 이마신경",
+   "en": "frontal nerve",
    "region": "head"
   },
   {
@@ -2568,6 +3573,11 @@ window.MEDKOS_ANATOMY = {
    "en": "ethmoidal cells",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "이마뼈",
+   "en": "frontal bone",
+   "region": "head"
   },
   {
    "ko": "이마신경",
@@ -2598,38 +3608,13 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "입천장긴장근",
-   "en": "tensor veli palatini muscle",
-   "region": "head",
-   "priority": "normal"
+   "ko": "입천장뼈",
+   "en": "palatine bone",
+   "region": "head"
   },
   {
    "ko": "입천장올림근",
    "en": "levator veli palatini muscle",
-   "region": "head",
-   "priority": "normal"
-  },
-  {
-   "ko": "입천장인두근",
-   "en": "palatopharyngeus muscle",
-   "region": "head",
-   "priority": "normal"
-  },
-  {
-   "ko": "입천장인두활",
-   "en": "palatopharyngeal arch",
-   "region": "head",
-   "priority": "normal"
-  },
-  {
-   "ko": "입천장혀근",
-   "en": "palatoglossus muscle",
-   "region": "head",
-   "priority": "high"
-  },
-  {
-   "ko": "입천장혀활",
-   "en": "palatoglossal arch",
    "region": "head",
    "priority": "normal"
   },
@@ -2640,15 +3625,8 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "정수리점",
-   "en": "",
-   "region": "head",
-   "priority": "normal"
-  },
-  {
-   "ko": "조롱박오목",
-   "en": "piriform fossa",
-   "region": "head",
-   "priority": "normal"
+   "en": "bregma",
+   "region": "head"
   },
   {
    "ko": "주행방향\n얼굴동맥",
@@ -2658,8 +3636,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "중간뇌막동맥",
    "en": "middle meningeal artery",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "중간대뇌동맥",
@@ -2692,10 +3669,29 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "코눈물관",
-   "en": "nasolacrimal duct",
-   "region": "head",
-   "priority": "normal"
+   "ko": "즉 바닥이 달팽이의 타원창",
+   "en": "vestibular window",
+   "region": "head"
+  },
+  {
+   "ko": "지나 바깥뒤통수뼈융기",
+   "en": "external occipital protuberance",
+   "region": "head"
+  },
+  {
+   "ko": "짧은섬모체신경",
+   "en": "short ciliary nerve",
+   "region": "head"
+  },
+  {
+   "ko": "천막패임",
+   "en": "tentorial notch",
+   "region": "head"
+  },
+  {
+   "ko": "체판",
+   "en": "cribriform plate",
+   "region": "head"
   },
   {
    "ko": "코뼈",
@@ -2703,16 +3699,14 @@ window.MEDKOS_ANATOMY = {
    "region": "head"
   },
   {
-   "ko": "코섬모체신경",
-   "en": "nasociliary nerve",
-   "region": "head",
-   "priority": "normal"
+   "ko": "코뿌리점",
+   "en": "nasion",
+   "region": "head"
   },
   {
-   "ko": "코인두",
-   "en": "Nasopharynx",
-   "region": "head",
-   "priority": "normal"
+   "ko": "코섬모체신경",
+   "en": "nasociliary nerve",
+   "region": "head"
   },
   {
    "ko": "코중격",
@@ -2734,6 +3728,16 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "콧등",
    "en": "dorsum of nose",
+   "region": "head"
+  },
+  {
+   "ko": "큰구멍",
+   "en": "foramen magnum",
+   "region": "head"
+  },
+  {
+   "ko": "큰바위신경",
+   "en": "greater petrosal nerve",
    "region": "head"
   },
   {
@@ -2783,8 +3787,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "턱밑신경절",
    "en": "submandibular ganglion",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "턱뼈패임\n아래턱뼈 근육들기",
@@ -2792,10 +3795,19 @@ window.MEDKOS_ANATOMY = {
    "region": "head"
   },
   {
+   "ko": "피부밑조직",
+   "en": "subcutaneous tissue",
+   "region": "head"
+  },
+  {
    "ko": "해면정맥굴",
    "en": "cavernous sinus",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "해부 전 결막주머니",
+   "en": "conjuctival sac",
+   "region": "head"
   },
   {
    "ko": "혀등",
@@ -2818,8 +3830,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "혀밑신경관",
    "en": "hypoglossal canal",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
   },
   {
    "ko": "혀밑언덕",
@@ -2846,10 +3857,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "혹은 미간",
+   "en": "glabella",
+   "region": "head"
+  },
+  {
    "ko": "홍채",
    "en": "iris",
-   "region": "head",
-   "priority": "normal"
+   "region": "head"
+  },
+  {
+   "ko": "확 속 사이 나누는 막으로 눈확모서리에 부착하여 눈확뼈막",
+   "en": "periobita",
+   "region": "head"
   },
   {
    "ko": "황반",
@@ -2864,16 +3884,20 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "후두어귀",
-   "en": "laryngeal inlet",
-   "region": "head",
-   "priority": "normal"
+   "ko": "후각신경섬유",
+   "en": "olfactory nerve fiber",
+   "region": "head"
   },
   {
    "ko": "후두인두",
    "en": "Laryngopharynx",
    "region": "head",
    "priority": "normal"
+  },
+  {
+   "ko": "가쪽무릎지지띠",
+   "en": "lateral patellar retinaculum",
+   "region": "lower-limb"
   },
   {
    "ko": "가쪽발바닥신경",
@@ -2901,6 +3925,11 @@ window.MEDKOS_ANATOMY = {
    "region": "lower-limb"
   },
   {
+   "ko": "교통가지",
+   "en": "rami communicantes",
+   "region": "lower-limb"
+  },
+  {
    "ko": "굽힘근지지띠 열어젖히고 그 안에서 힘줄들이 힘줄윤활집",
    "en": "synovial tendon sheath",
    "region": "lower-limb"
@@ -2908,6 +3937,11 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "굽힘근지지띠 전후로 긴발가락굽힘근",
    "en": "flexor digitorum longus muscle",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "궁둥넙다리인대",
+   "en": "ischiofemoral ligament",
    "region": "lower-limb"
   },
   {
@@ -2942,6 +3976,16 @@ window.MEDKOS_ANATOMY = {
    "region": "lower-limb"
   },
   {
+   "ko": "깊은부분은 반달",
+   "en": "meniscus",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "두덩넙다리인대",
+   "en": "pubofemoral ligament",
+   "region": "lower-limb"
+  },
+  {
    "ko": "두종아리근 힘줄이 온힘줄집",
    "en": "common tendinous sheath",
    "region": "lower-limb"
@@ -2952,13 +3996,38 @@ window.MEDKOS_ANATOMY = {
    "region": "lower-limb"
   },
   {
+   "ko": "뒤십자인대",
+   "en": "posterior cruciate ligament",
+   "region": "lower-limb"
+  },
+  {
    "ko": "뒤정강근",
    "en": "tibialis posterior muscle",
    "region": "lower-limb"
   },
   {
+   "ko": "무릎가로인대",
+   "en": "transverse ligament of knee",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "무릎위주머니",
+   "en": "suprapatellar bursa",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "바깥폐쇄근",
+   "en": "obturator externus muscle",
+   "region": "lower-limb"
+  },
+  {
    "ko": "바닥쪽 뼈사이근",
    "en": "dorsal and palmar interossei muscle",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "반달",
+   "en": "meniscus",
    "region": "lower-limb"
   },
   {
@@ -2992,6 +4061,21 @@ window.MEDKOS_ANATOMY = {
    "region": "lower-limb"
   },
   {
+   "ko": "빗오금인대",
+   "en": "oblique popliteal ligament",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "세모인대",
+   "en": "triangular ligament",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "십자인대",
+   "en": "cruciate ligament",
+   "region": "lower-limb"
+  },
+  {
    "ko": "아래종아리근지지띠",
    "en": "inferior fibular retinaculum",
    "region": "lower-limb"
@@ -2999,6 +4083,16 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "아래쪽에서 발꿈치뼈 가쪽면에 있는 종아리근도르래",
    "en": "fibular trochlea",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "안쪽무릎지지띠",
+   "en": "medial patellar retinaculum",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "앞십자인대",
+   "en": "anterior cruciate ligament",
    "region": "lower-limb"
   },
   {
@@ -3017,13 +4111,43 @@ window.MEDKOS_ANATOMY = {
    "region": "lower-limb"
   },
   {
+   "ko": "엉덩넙다리인대",
+   "en": "iliofemoral ligament",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "위오목",
+   "en": "superior recess",
+   "region": "lower-limb"
+  },
+  {
    "ko": "위종아리근지지띠",
    "en": "superior fibular retinaculum",
    "region": "lower-limb"
   },
   {
+   "ko": "음부가지",
+   "en": "genital branch",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "음핵몸통",
+   "en": "body of clitoris",
+   "region": "lower-limb"
+  },
+  {
    "ko": "의 가로갈래",
    "en": "transverse head",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "절구가로인대",
+   "en": "transverse acetabular ligament",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "절구테두리",
+   "en": "acetabular labrum",
    "region": "lower-limb"
   },
   {
@@ -3057,15 +4181,39 @@ window.MEDKOS_ANATOMY = {
    "region": "lower-limb"
   },
   {
+   "ko": "큰허리근주머니",
+   "en": "psoas bursa",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "폐쇄막",
+   "en": "obturator membrane",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "폐쇄신경",
+   "en": "obturator nerve",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "허리신경얼기",
+   "en": "lumbar plexus",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "허리신경절",
+   "en": "lumbar ganglia",
+   "region": "lower-limb"
+  },
+  {
+   "ko": "활꼴오금인대",
+   "en": "arcuate popliteal ligament",
+   "region": "lower-limb"
+  },
+  {
    "ko": "대동맥환",
    "en": "aortic arch",
    "region": "multi"
-  },
-  {
-   "ko": "뒤세로인대",
-   "en": "",
-   "region": "multi",
-   "priority": "normal"
   },
   {
    "ko": "위대정맥",
@@ -3100,6 +4248,16 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "가쪽방패목뿔인대",
+   "en": "lateral thyrohyoid ligament",
+   "region": "neck"
+  },
+  {
+   "ko": "각각의 콧길이 코인두길과 뒤콧구멍",
+   "en": "choanae",
+   "region": "neck"
+  },
+  {
    "ko": "갑상목동맥",
    "en": "thyrocervical trunk",
    "region": "neck"
@@ -3111,6 +4269,11 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "과 그보다 깊이 가로로 주행하는 가로모뿔근",
+   "en": "transverse arytenoid muscle",
+   "region": "neck"
+  },
+  {
    "ko": "과 뒤로넘어가는 맨위갈비사이동맥",
    "en": "supreme intercostal artery",
    "region": "neck"
@@ -3118,8 +4281,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "귀관인두근",
    "en": "salpingopharyngeus muscle",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "귀관인두주름",
@@ -3154,15 +4316,24 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "나비벌집오목",
+   "en": "sphenoethmoidal recess",
+   "region": "neck"
+  },
+  {
    "ko": "나와서 위깊은곳으로 진행하는 깊은목동맥",
    "en": "deep cervical artery",
    "region": "neck"
   },
   {
+   "ko": "날개갈고리",
+   "en": "pterygoid hamulus",
+   "region": "neck"
+  },
+  {
    "ko": "날개아래턱솔기",
    "en": "pterygomandibular raphe",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "더부신경",
@@ -3180,15 +4351,19 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "두꼐는 입천장샘",
+   "en": "palatine gland",
+   "region": "neck"
+  },
+  {
    "ko": "뒤목갈비근",
    "en": "scalenus posterior muscle",
    "region": "neck"
   },
   {
    "ko": "뒤반지모뿔근",
-   "en": "posterior cricoarytenoid muscle",
-   "region": "neck",
-   "priority": "normal"
+   "en": "posterior cricoarythenoid muscle",
+   "region": "neck"
   },
   {
    "ko": "등쪽어깨동맥",
@@ -3196,16 +4371,29 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "막벽",
+   "en": "membranous wall",
+   "region": "neck"
+  },
+  {
+   "ko": "맨위코선반",
+   "en": "supreme nasal concha",
+   "region": "neck"
+  },
+  {
+   "ko": "모뿔근",
+   "en": "arytenoid muscle",
+   "region": "neck"
+  },
+  {
    "ko": "모뿔덮개근",
    "en": "aryepiglottic muscle",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "모뿔덮개주름",
    "en": "aryepiglottic fold",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "모뿔연골",
@@ -3224,15 +4412,49 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "목구멍편도",
+   "en": "palatine tonsil",
+   "region": "neck"
+  },
+  {
+   "ko": "목젖",
+   "en": "uvula",
+   "region": "neck"
+  },
+  {
+   "ko": "물렁입천장 위쪽공간\n\n입인두",
+   "en": "oropharynx",
+   "region": "neck"
+  },
+  {
    "ko": "미주신경",
    "en": "vagus nerve",
    "region": "neck"
   },
   {
+   "ko": "밀알연골",
+   "en": "triticeal cartilage",
+   "region": "neck"
+  },
+  {
+   "ko": "반달틈새",
+   "en": "semilunar hiatus",
+   "region": "neck"
+  },
+  {
+   "ko": "반지방패관절",
+   "en": "cricothyroid joint",
+   "region": "neck"
+  },
+  {
    "ko": "반지방패근",
    "en": "cricothyroid muscle",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
+  },
+  {
+   "ko": "반지방패인대",
+   "en": "cricothyroid ligament",
+   "region": "neck"
   },
   {
    "ko": "반지연골",
@@ -3243,8 +4465,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "방패모뿔근",
    "en": "thyroarytenoid muscle",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
+  },
+  {
+   "ko": "방패목뿔막",
+   "en": "thyrohyoid membrane",
+   "region": "neck"
   },
   {
    "ko": "방패연골",
@@ -3253,8 +4479,28 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "벌집뼈융기",
+   "en": "ethmoidal bulla",
+   "region": "neck"
+  },
+  {
+   "ko": "부위에 있는 입천장널힘줄",
+   "en": "palatine aponeurosis",
+   "region": "neck"
+  },
+  {
    "ko": "붓인두근",
    "en": "stylopharyngeus muscle",
+   "region": "neck"
+  },
+  {
+   "ko": "붓혀근",
+   "en": "styloglossus muscle",
+   "region": "neck"
+  },
+  {
+   "ko": "비스듬하게 엑스자모양으로 교차하는 빗모뿔근",
+   "en": "oblique arytenoid muscle",
    "region": "neck"
   },
   {
@@ -3294,10 +4540,14 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "성대근",
+   "en": "vocalis muscle",
+   "region": "neck"
+  },
+  {
    "ko": "성대문아래공간",
    "en": "infraglottic cavity",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "성대문틈새",
@@ -3308,14 +4558,23 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "성대인대",
    "en": "vocal ligament",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "성대주름",
    "en": "vocal fold",
    "region": "neck",
    "priority": "high"
+  },
+  {
+   "ko": "성대틈새",
+   "en": "rima glottidis",
+   "region": "neck"
+  },
+  {
+   "ko": "속후두신경",
+   "en": "internal laryngeal nerve",
+   "region": "neck"
   },
   {
    "ko": "쐐기연골",
@@ -3344,16 +4603,29 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "아래코선반",
+   "en": "nasal concha",
+   "region": "neck"
+  },
+  {
+   "ko": "아래콧길",
+   "en": "nasal meatus",
+   "region": "neck"
+  },
+  {
    "ko": "아래후두신경",
    "en": "inferior laryngeal nerve",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "안뜰주름",
    "en": "vestibular fold",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
+  },
+  {
+   "ko": "앞교차",
+   "en": "anterior commisure",
+   "region": "neck"
   },
   {
    "ko": "앞목갈비근",
@@ -3368,6 +4640,11 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "어깨위신경",
    "en": "suprascapular nerve",
+   "region": "neck"
+  },
+  {
+   "ko": "연골벽",
+   "en": "cartilaginous wall",
    "region": "neck"
   },
   {
@@ -3406,8 +4683,18 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "위후두동맥",
+   "en": "superior laryngeal artery",
+   "region": "neck"
+  },
+  {
    "ko": "위후두신경",
    "en": "superior laryngeal nerve",
+   "region": "neck"
+  },
+  {
+   "ko": "인두결절근막",
+   "en": "pharyngobasilar fascia",
    "region": "neck"
   },
   {
@@ -3432,6 +4719,37 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "입인두 뒤쪽에서 혀 뒷부분 일부 관찰\n\n후두인두",
+   "en": "laryngopharynx",
+   "region": "neck"
+  },
+  {
+   "ko": "입천장긴장근",
+   "en": "tensor veli palatini muscle",
+   "region": "neck"
+  },
+  {
+   "ko": "입천장인두근",
+   "en": "palatopharyngeus muscle",
+   "region": "neck"
+  },
+  {
+   "ko": "입천장인두활",
+   "en": "palatopharyngeal arch",
+   "region": "neck"
+  },
+  {
+   "ko": "입천장혀근",
+   "en": "palatoglossus muscle",
+   "region": "neck",
+   "priority": "high"
+  },
+  {
+   "ko": "입천장혀활",
+   "en": "palatoglossal arch",
+   "region": "neck"
+  },
+  {
    "ko": "잔뿔연골",
    "en": "corniculate cartilage",
    "region": "neck",
@@ -3440,6 +4758,11 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "점막",
    "en": "mucosa",
+   "region": "neck"
+  },
+  {
+   "ko": "조롱박오목",
+   "en": "piriform fossa",
    "region": "neck"
   },
   {
@@ -3474,6 +4797,21 @@ window.MEDKOS_ANATOMY = {
    "region": "neck"
   },
   {
+   "ko": "코눈물관",
+   "en": "nasolacrimal duct",
+   "region": "neck"
+  },
+  {
+   "ko": "코인두",
+   "en": "nasopharynx",
+   "region": "neck"
+  },
+  {
+   "ko": "탄력원뿔",
+   "en": "conus elasticus",
+   "region": "neck"
+  },
+  {
    "ko": "팔신경얼기",
    "en": "brachial plexus",
    "region": "neck"
@@ -3502,14 +4840,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "후두실",
    "en": "laryngeal ventricle",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
   },
   {
    "ko": "후두안뜰",
    "en": "laryngeal vestibule",
-   "region": "neck",
-   "priority": "normal"
+   "region": "neck"
+  },
+  {
+   "ko": "후두어귀",
+   "en": "laryngeal inlet",
+   "region": "neck"
   },
   {
    "ko": "lumbosacral trunk",
@@ -3524,10 +4865,40 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
+   "ko": "개의 뒤음순신경",
+   "en": "posterior labial nerve",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "경우에 따라 처녀막",
+   "en": "hymen",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "고유난소인대",
    "en": "ligament of ovary",
    "region": "pelvis-perineum",
    "priority": "high"
+  },
+  {
+   "ko": "고환날세관",
+   "en": "efferent ductule of testis",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "고환집막",
+   "en": "tunica vaginalis",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막",
+   "en": "fibrous capsule",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "고환집막공간",
+   "en": "cavum of tunica vaginalis",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "곧창자가로주름",
@@ -3561,6 +4932,11 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "골반가로막",
+   "en": "pelvic diaphragm",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "과 꼬리근",
    "en": "coccygeus muscle",
    "region": "pelvis-perineum"
@@ -3579,14 +4955,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "궁둥해면체근",
    "en": "ischiocavernosus muscle",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "근육섬유로 된 두꺼운 고리모양으로 샅중심체",
+   "en": "perineal body",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "깊은샅가로근",
    "en": "deep transverse perineal muscle",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "깊은샅공간",
@@ -3612,6 +4991,11 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "꼬리뼈",
+   "en": "coccyx",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "난소",
    "en": "ovary",
    "region": "pelvis-perineum"
@@ -3632,6 +5016,11 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "남자요도막부분",
+   "en": "membranous urethra",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "낭 안쪽모서리 따라 아래안쪽으로 달리다가 넓어져 정관팽대",
    "en": "ampulla of ductus deferens",
    "region": "pelvis-perineum"
@@ -3641,6 +5030,16 @@ window.MEDKOS_ANATOMY = {
    "en": "labia majora",
    "region": "pelvis-perineum",
    "priority": "normal"
+  },
+  {
+   "ko": "대음순틈새",
+   "en": "pudendal cleft",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "두덩결합",
+   "en": "pubic symphysis",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "두덩곧창자근",
@@ -3693,9 +5092,8 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "뒤음순연결",
-   "en": "posterior labial commissure",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "en": "posterior commisure",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "막요도",
@@ -3722,15 +5120,13 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "바깥요도조임근",
-   "en": "external urethral sphincter",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "en": "external urethral sphincter muscle",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "바깥항문조임근",
    "en": "external anal sphincter muscle",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "방광",
@@ -3778,14 +5174,23 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "백색막",
+   "en": "tunica albuginea",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "불두덩",
    "en": "mons pubis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "비뇨생식구멍",
    "en": "urogenital hiatus",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "비뇨생식부위",
+   "en": "urogenital triangle",
    "region": "pelvis-perineum"
   },
   {
@@ -3805,6 +5210,16 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "샅",
+   "en": "perineum",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "샅가로인대",
+   "en": "transverse perineal ligament",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "샅동맥",
    "en": "perineal artery",
    "region": "pelvis-perineum",
@@ -3813,14 +5228,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "샅막",
    "en": "perineal membrane",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "샅신경",
    "en": "perineal nerve",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "샅중심체",
@@ -3829,8 +5242,13 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "샅중심체에서 바깥항문조임근",
+   "en": "external anal sphincter muscle",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "소음순",
-   "en": "labia minora",
+   "en": "labium minus",
    "region": "pelvis-perineum",
    "priority": "high"
   },
@@ -3880,16 +5298,29 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "수 있음\n\n남자비뇨생식부위에 위치한 바깥생식기관인 음낭",
+   "en": "scrotum",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "아래곧창자동맥",
-   "en": "inferior rectal artery",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "en": "inferior anal artery",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "아래곧창자신경",
-   "en": "inferior rectal nerve",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "en": "inferior anal nerve",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "아래곧창자혈관",
+   "en": "inferior rectal vessel",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "아래두덩인대",
+   "en": "inferior pubic ligament",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "아래방광동맥",
@@ -3907,6 +5338,16 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "아래쪽에서 음경망울",
+   "en": "bulb of penis",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "안쪽면 따라 소음순",
+   "en": "labium minus",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "안쪽배꼽인대",
    "en": "medial umbilical ligament",
    "region": "pelvis-perineum"
@@ -3917,10 +5358,24 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "양쪽 궁둥두덩가지",
+   "en": "ischiopubic ramus",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "양쪽 궁둥뼈결절",
+   "en": "ischial tuberosity",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "양쪽대음순",
+   "en": "labium majus",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "얕은샅가로근",
    "en": "superficial transverse perineal muscle",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "얕은샅공간",
@@ -3931,8 +5386,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "얕은음경등정맥",
    "en": "superficial dorsal veins of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "엉덩근가지",
@@ -3950,16 +5404,30 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "엉치가시인대",
+   "en": "sacrospinous ligament",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "엉치결절인대",
-   "en": "",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "en": "sacrotuberous ligament",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "엉치신경얼기",
    "en": "sacral plexus",
    "region": "pelvis-perineum",
    "priority": "normal"
+  },
+  {
+   "ko": "여자에서는 대음순",
+   "en": "labium majus",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "와 더 깊이있는 음경등신경",
+   "en": "dorsal nerve of penis",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "요관",
@@ -3982,8 +5450,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "요도",
    "en": "urethra",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "요도 막부분",
@@ -4046,14 +5513,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "음경걸이인대",
    "en": "suspensory ligament of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경고리인대",
    "en": "fundiform ligament of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경귀두",
@@ -4064,38 +5529,37 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "음경꺼풀",
    "en": "prepuce",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경꺼풀주름띠",
    "en": "frenulum of prepuce",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경다리",
    "en": "crus of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경등동맥",
    "en": "dorsal artery of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경등신경",
    "en": "dorsal nerve of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경망울",
    "en": "bulb of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "음경망울동맥",
+   "en": "artery of bulb of penis",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음경몸통",
@@ -4104,10 +5568,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "음경뿌리 이루는 음경해면체",
+   "en": "corpus cavernosum of penis",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "음경해면체",
    "en": "corpus cavernosum of penis",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "음낭사이막",
+   "en": "septum of scrotum",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음부신경",
@@ -4118,20 +5591,27 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "음핵귀두",
    "en": "glans of clitoris",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음핵꺼풀",
    "en": "prepuce of clitoris",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "음핵등신경",
+   "en": "dorsal nerve of clitoris",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "음핵주름띠",
    "en": "frenulum of clitoris",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "의 가지들로 음부신경관",
+   "en": "pudendal canal",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "자궁",
@@ -4230,11 +5710,6 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
-   "ko": "자궁원인대",
-   "en": "round ligament of uterus",
-   "region": "pelvis-perineum"
-  },
-  {
    "ko": "자궁잘록",
    "en": "isthmus of uterus",
    "region": "pelvis-perineum"
@@ -4273,11 +5748,6 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
-   "ko": "정관",
-   "en": "ductus deferens",
-   "region": "pelvis-perineum"
-  },
-  {
    "ko": "정관팽대",
    "en": "ampulla of ductus deferens",
    "region": "pelvis-perineum",
@@ -4288,6 +5758,11 @@ window.MEDKOS_ANATOMY = {
    "en": "seminal vesicle",
    "region": "pelvis-perineum",
    "priority": "high"
+  },
+  {
+   "ko": "정세관",
+   "en": "seminiferous tubule",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "정중배꼽인대",
@@ -4313,14 +5788,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "질구멍",
    "en": "vaginal orifice",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "질어귀",
-   "en": "vestibule of vagina",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "en": "vestibule",
+   "region": "pelvis-perineum"
   },
   {
    "ko": "질어귀망울",
@@ -4344,6 +5817,11 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "큰볼기근",
+   "en": "gluteus maximus muscle",
+   "region": "pelvis-perineum"
+  },
+  {
    "ko": "큰질어귀샘",
    "en": "greater vestibular gland",
    "region": "pelvis-perineum",
@@ -4352,8 +5830,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "큰질어귀샘관",
    "en": "duct of greater vestibular gland",
-   "region": "pelvis-perineum",
-   "priority": "normal"
+   "region": "pelvis-perineum"
   },
   {
    "ko": "폐쇄관",
@@ -4367,13 +5844,13 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
-   "ko": "폐쇄신경",
-   "en": "obturator nerve",
+   "ko": "항문곧창자연결",
+   "en": "anorectal junction",
    "region": "pelvis-perineum"
   },
   {
-   "ko": "항문곧창자연결",
-   "en": "anorectal junction",
+   "ko": "항문과 궁둥뼈결절 중간부위에서 칼을 궁둥항문오목지방덩이",
+   "en": "fat body of ischioanal fossa",
    "region": "pelvis-perineum"
   },
   {
@@ -4385,6 +5862,11 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "항문기둥",
    "en": "anal columns",
+   "region": "pelvis-perineum"
+  },
+  {
+   "ko": "항문부위",
+   "en": "anal triangle",
    "region": "pelvis-perineum"
   },
   {
@@ -4416,8 +5898,169 @@ window.MEDKOS_ANATOMY = {
    "region": "pelvis-perineum"
   },
   {
+   "ko": "가끔 가장 아래쪽 목교감신경절과 합쳐져 큰별신경절",
+   "en": "greater stellate ganglion",
+   "region": "thorax"
+  },
+  {
+   "ko": "가로막면",
+   "en": "diaphragmatic surface",
+   "region": "thorax"
+  },
+  {
+   "ko": "가슴대동맥",
+   "en": "thoracic aorta",
+   "region": "thorax"
+  },
+  {
+   "ko": "가슴대동맥 앞쪽으로 당겨서 쌍으로 된 뒤갈비사이동맥",
+   "en": "posterior intercostal artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "가슴등동맥",
+   "en": "thoracodorsal artery",
+   "region": "thorax"
+  },
+  {
    "ko": "가슴막안",
    "en": "plenral cavity",
+   "region": "thorax"
+  },
+  {
+   "ko": "가슴봉우리동맥",
+   "en": "thoracoacromial artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "가쪽가슴동맥",
+   "en": "lateral thoracic artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "각 허파에는 갈비면",
+   "en": "costal surface",
+   "region": "thorax"
+  },
+  {
+   "ko": "각각의 갈비사이공간",
+   "en": "intercostal space",
+   "region": "thorax"
+  },
+  {
+   "ko": "고 가슴벽에 붙어있는 나머지 벽가슴막 제거하기 섬유심장막",
+   "en": "fibrous pericardium",
+   "region": "thorax"
+  },
+  {
+   "ko": "과해 내려감 각각의 가슴교감신경절은 이웃하는 갈비사이신경",
+   "en": "intercostal nerve",
+   "region": "thorax"
+  },
+  {
+   "ko": "구역기관지",
+   "en": "segmental bronchus",
+   "region": "thorax"
+  },
+  {
+   "ko": "기관 내려오면서 기관용골",
+   "en": "carina of trachea",
+   "region": "thorax"
+  },
+  {
+   "ko": "기관갈림",
+   "en": "tracheal bifurcation",
+   "region": "thorax"
+  },
+  {
+   "ko": "기관지나무",
+   "en": "bronchial tree",
+   "region": "thorax"
+  },
+  {
+   "ko": "기관지동맥",
+   "en": "bronchial artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "내림대동맥고랑",
+   "en": "groove for descending aorta",
+   "region": "thorax"
+  },
+  {
+   "ko": "높이 각각의 기관지는 아래가쪽으로 달려 각각의 허파뿌리",
+   "en": "root of lung",
+   "region": "thorax"
+  },
+  {
+   "ko": "대동맥활고랑",
+   "en": "groove for aortic arch",
+   "region": "thorax"
+  },
+  {
+   "ko": "대동맥활에서 동맥관인대",
+   "en": "ligamentum arteriosum",
+   "region": "thorax"
+  },
+  {
+   "ko": "덧반홀정맥",
+   "en": "accessory hemiazygos vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "뒤갈비사이동맥",
+   "en": "posterior intercostal artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "뒤미주신경줄기",
+   "en": "posterior vagal trunk",
+   "region": "thorax"
+  },
+  {
+   "ko": "뒤에 위치 위로 올라와 목의 뿌리 부분에서 왼빗장밑정맥",
+   "en": "left subclavian vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "뒤위팔휘돌이동맥",
+   "en": "posterior circumflex humeral artery",
+   "region": "thorax",
+   "priority": "high"
+  },
+  {
+   "ko": "뒷벽에서 빗심장막굴",
+   "en": "oblique pericardial sinus",
+   "region": "thorax"
+  },
+  {
+   "ko": "반홀정맥",
+   "en": "semiazygos vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "배오른쪽 오름허리정맥",
+   "en": "ascending lumbar vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "보통 맨위갈비사이동맥",
+   "en": "supreme intercostal artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "빗장밑동맥고랑",
+   "en": "groove for subclavian artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "세로칸면",
+   "en": "mediastinal surface",
+   "region": "thorax"
+  },
+  {
+   "ko": "세모근가지 나오면서 위로갈라져 봉우리로 간 봉우리가지",
+   "en": "acromial branch",
    "region": "thorax"
   },
   {
@@ -4426,8 +6069,153 @@ window.MEDKOS_ANATOMY = {
    "region": "thorax"
   },
   {
+   "ko": "식 도고랑",
+   "en": "groove for esophagus",
+   "region": "thorax"
+  },
+  {
+   "ko": "식도 고랑",
+   "en": "groove for esophagus",
+   "region": "thorax"
+  },
+  {
+   "ko": "식도에서는 여러가지로 나뉘어 신경식도얼기",
+   "en": "esophageal plexus",
+   "region": "thorax"
+  },
+  {
    "ko": "심방귀",
    "en": "auricde",
+   "region": "thorax"
+  },
+  {
+   "ko": "심장자국",
+   "en": "cardiac impression",
+   "region": "thorax"
+  },
+  {
+   "ko": "싸는 가슴막은 아래쪽으로 뻗어 허파인대 이룸\n\n기관지동맥",
+   "en": "bronchial artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "아래엽기관지",
+   "en": "lobar bronchus",
+   "region": "thorax"
+  },
+  {
+   "ko": "어감 왼기관지 앞에서 허파동맥이 왼허파동맥과 오른허파동맥",
+   "en": "pulmonary artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "어깨밑동맥",
+   "en": "subscapular artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "어깨세모근 젖히면서 자른 세모근가지",
+   "en": "deltoid branch",
+   "region": "thorax"
+  },
+  {
+   "ko": "어깨휘돌이동맥",
+   "en": "circumflex scapular artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "에서 왼기관지와 오른기관지",
+   "en": "main bronchus",
+   "region": "thorax"
+  },
+  {
+   "ko": "에서 이차기관지",
+   "en": "secondary bronchus",
+   "region": "thorax"
+  },
+  {
+   "ko": "열째등뼈높이에서 가로막 근육부분에 있는 식도구멍",
+   "en": "esophageal hiatus",
+   "region": "thorax"
+  },
+  {
+   "ko": "오른허파는 10개의 기관지허파구역",
+   "en": "bronchopulmonary segment",
+   "region": "thorax"
+  },
+  {
+   "ko": "와 백색교통가지",
+   "en": "white ramus communicans",
+   "region": "thorax"
+  },
+  {
+   "ko": "왼오름허리정맥",
+   "en": "left ascending lumbar vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "왼허파혀",
+   "en": "lingula of left lung",
+   "region": "thorax"
+  },
+  {
+   "ko": "위가슴동맥",
+   "en": "superior thoracic artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "위대정맥고랑",
+   "en": "groove for superior vena cava",
+   "region": "thorax"
+  },
+  {
+   "ko": "위팔휘돌이동맥",
+   "en": "circumflex humeral artery",
+   "region": "thorax"
+  },
+  {
+   "ko": "위팔휘돌이동맥과 가쪽으로 달리면서 위팔뼈 외과목",
+   "en": "surgical neck of humerus",
+   "region": "thorax"
+  },
+  {
+   "ko": "으로 2개의 연결 가지는데 이들 작은 가지를 회색교통가지",
+   "en": "gray ramus communicans",
+   "region": "thorax"
+  },
+  {
+   "ko": "이나 왼속목정맥",
+   "en": "left internal jugular vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "일차기관지",
+   "en": "primary bronchus",
+   "region": "thorax"
+  },
+  {
+   "ko": "작고 빗장밑근으로 가서 분포하는 빗장가지",
+   "en": "clavicular branch",
+   "region": "thorax"
+  },
+  {
+   "ko": "작은내장신경",
+   "en": "lesser splanchnic nerve",
+   "region": "thorax"
+  },
+  {
+   "ko": "작은세로칸가지",
+   "en": "small mediastinal branch",
+   "region": "thorax"
+  },
+  {
+   "ko": "작은식도가지",
+   "en": "small esophageal branch",
+   "region": "thorax"
+  },
+  {
+   "ko": "전체길이가 뒤세로칸 따라 내려가다 가 가로막 대동맥구멍",
+   "en": "aortic hiatus of diaphragm",
    "region": "thorax"
   },
   {
@@ -4451,27 +6239,54 @@ window.MEDKOS_ANATOMY = {
    "region": "thorax"
   },
   {
+   "ko": "큰가슴근과 작은가슴근에 분포하는 가슴근가지",
+   "en": "pectoral branch",
+   "region": "thorax"
+  },
+  {
+   "ko": "큰내장신경",
+   "en": "greater splanchnic nerve",
+   "region": "thorax"
+  },
+  {
+   "ko": "큰심장자국",
+   "en": "cardiac impression",
+   "region": "thorax"
+  },
+  {
+   "ko": "팔신경얼기의 긴가슴신경",
+   "en": "long thoracic nerve",
+   "region": "thorax"
+  },
+  {
    "ko": "허파쪽 가슴막",
    "en": "risceral pleura",
    "region": "thorax"
   },
   {
-   "ko": "가슴등동맥",
-   "en": "thoracodorsal artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "ko": "형성하며 허파문",
+   "en": "hilum of lung",
+   "region": "thorax"
+  },
+  {
+   "ko": "홀정맥",
+   "en": "azygos vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "홀정맥고랑",
+   "en": "groove for azygos vein",
+   "region": "thorax"
+  },
+  {
+   "ko": "가로섬유",
+   "en": "transverse fiber",
+   "region": "upper-limb"
   },
   {
    "ko": "가슴등신경",
    "en": "thoracodorsal nerve",
-   "region": "upper-limb",
-   "priority": "normal"
-  },
-  {
-   "ko": "가슴봉우리동맥",
-   "en": "thoracoacromial artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "가시아래근",
@@ -4486,14 +6301,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "가쪽가슴근신경",
    "en": "lateral pectoral nerve",
-   "region": "upper-limb",
-   "priority": "normal"
-  },
-  {
-   "ko": "가쪽가슴동맥",
-   "en": "lateral thoracic artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "가쪽곁인대",
@@ -4521,8 +6329,32 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "가쪽아래팔피부신경",
    "en": "lateral cutaneous nerve of forearm",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
+  },
+  {
+   "ko": "각각 손등정맥그물",
+   "en": "dorsal venous network of hand",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "갈고리뼈",
+   "en": "hamate",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "갈고리뼈갈고리",
+   "en": "hook of hamate",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "갈비근과 중간목갈비근 사이 관찰 잘 하기위해서 부리위팔근",
+   "en": "coracobrachialis muscle",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "갈비사이위팔피부신경",
+   "en": "intrercostobrachial cutaneous nerve",
+   "region": "upper-limb"
   },
   {
    "ko": "겨드랑꼭대기",
@@ -4563,14 +6395,27 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "겨드랑집",
    "en": "axillary sheath",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
+  },
+  {
+   "ko": "결절사이고랑",
+   "en": "intertubercular groove",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "고리부분",
+   "en": "anular part",
+   "region": "upper-limb"
   },
   {
    "ko": "고유바닥쪽손가락동맥",
-   "en": "proper palmar digital arteries",
-   "region": "upper-limb",
-   "priority": "normal"
+   "en": "prper palmar digital artery",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "과 함꼐 위팔뼈 노신경고랑",
+   "en": "groove for radial nerve",
+   "region": "upper-limb"
   },
   {
    "ko": "관절원반",
@@ -4592,14 +6437,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "긴가슴신경",
    "en": "long thoracic nerve",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
+  },
+  {
+   "ko": "긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근",
+   "en": "teres major muscle",
+   "region": "upper-limb"
   },
   {
    "ko": "긴노쪽손목폄근",
    "en": "extensor carpi radialis longus muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "긴손바닥근",
@@ -4616,20 +6464,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "긴엄지폄근",
    "en": "extensor pollicis longus muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "깊은손가락굽힘근",
    "en": "flexor digitorum profundus muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "깊은손바닥동맥활",
    "en": "deep palmar arch",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "깊은위팔동맥",
@@ -4640,8 +6485,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "네모엎침근",
    "en": "pronator quadratus muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "노동맥",
@@ -4652,6 +6496,11 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "노뼈머리띠인대",
    "en": "anular ligament of radius",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "노뼈몸통앞선의 빗선에서 일어나는 노갈래",
+   "en": "radial head",
    "region": "upper-limb"
   },
   {
@@ -4673,16 +6522,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
+   "ko": "노신경깊은가지",
+   "en": "deep branch of radial nerve",
+   "region": "upper-limb"
+  },
+  {
    "ko": "노쪽되돌이동맥",
    "en": "radial recurrent artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "노쪽손목굽힘근",
    "en": "flexor carpi radialis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "노쪽피부정맥",
@@ -4693,6 +6545,16 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "돌림근띠",
    "en": "rotator cuff",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "동반정맥",
+   "en": "vena comitans",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "되돌이가지",
+   "en": "recurrent branch",
    "region": "upper-limb"
   },
   {
@@ -4715,21 +6577,18 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "뒤뼈사이신경",
-   "en": "posterior interosseous nerve",
-   "region": "upper-limb",
-   "priority": "normal"
+   "en": "posterior interossoeus nerve",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "뒤아래팔피부신경",
+   "en": "posterior cutaneous nerve of forearm",
+   "region": "upper-limb"
   },
   {
    "ko": "뒤위팔피부신경",
    "en": "posterior cutaneous nerve of arm",
-   "region": "upper-limb",
-   "priority": "normal"
-  },
-  {
-   "ko": "뒤위팔휘돌이동맥",
-   "en": "posterior circumflex humeral artery",
-   "region": "upper-limb",
-   "priority": "high"
+   "region": "upper-limb"
   },
   {
    "ko": "뒷벽",
@@ -4739,13 +6598,28 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "등쪽뼈사이근",
-   "en": "dorsal interossei muscles",
+   "en": "dorsal interossei muscle",
    "region": "upper-limb",
    "priority": "high"
   },
   {
+   "ko": "뚫고 지나가는 근육피부신경",
+   "en": "musculocutaneous nerve",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근",
+   "en": "flexor digitorum profundus muscle",
+   "region": "upper-limb"
+  },
+  {
    "ko": "마름인대",
    "en": "trapezoid ligament",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "목겨드랑관",
+   "en": "cervicoaxillary canal",
    "region": "upper-limb"
   },
   {
@@ -4755,9 +6629,13 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "바닥쪽뼈사이근",
-   "en": "palmar interossei muscles",
-   "region": "upper-limb",
-   "priority": "normal"
+   "en": "palmar interossei muscle",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "바닥쪽손목인대",
+   "en": "palmar carpal ligament",
+   "region": "upper-limb"
   },
   {
    "ko": "반달뼈",
@@ -4783,8 +6661,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "부리위팔근",
    "en": "coracobrachialis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "부리위팔인대",
@@ -4792,10 +6669,14 @@ window.MEDKOS_ANATOMY = {
    "region": "upper-limb"
   },
   {
+   "ko": "부에서 각각의 손가락끝으로 가는 선\n\n손바닥에서 엄지두덩",
+   "en": "thenar eminence",
+   "region": "upper-limb"
+  },
+  {
    "ko": "빗장밑근",
    "en": "subclavius muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "빗장뼈 봉우리끝",
@@ -4811,20 +6692,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "새끼맞섬근",
    "en": "opponens digiti minimi muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "새끼벌림근",
    "en": "abductor digiti minimi muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "새끼폄근",
    "en": "extensor digiti minimi muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "세모뼈",
@@ -4838,16 +6716,19 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "손가락굽힘근온힘줄집",
+   "en": "common flexor sheat",
+   "region": "upper-limb"
+  },
+  {
    "ko": "손가락섬유집",
    "en": "fibrous sheaths of digits of hand",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "손가락폄근",
    "en": "extensor digitorum muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "손뒤침근",
@@ -4858,8 +6739,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "손등정맥그물",
    "en": "dorsal venous network of hand",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "손목굴",
@@ -4868,8 +6748,28 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활",
+   "en": "deep palmar arch",
+   "region": "upper-limb"
+  },
+  {
    "ko": "손배뼈",
    "en": "scaphoid",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "십자부분",
+   "en": "cruciform part",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "십자섬유",
+   "en": "cruciate fiber",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "아 겨드랑동맥",
+   "en": "axillary artery",
    "region": "upper-limb"
   },
   {
@@ -4881,14 +6781,18 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "아래어깨밑신경",
    "en": "inferior subscapular nerve",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "아래자쪽곁동맥",
    "en": "inferior ulnar collateral artery",
    "region": "upper-limb",
    "priority": "normal"
+  },
+  {
+   "ko": "아래팔 먼쪽 절반에서 자쪽손목굽힘근",
+   "en": "flexor carpi ulnaris muscle",
+   "region": "upper-limb"
   },
   {
    "ko": "안쪽가슴근신경",
@@ -4914,6 +6818,11 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "안쪽두갈래근고랑",
+   "en": "medial bicipital groove",
+   "region": "upper-limb"
+  },
+  {
    "ko": "안쪽벽",
    "en": "medial wall",
    "region": "upper-limb",
@@ -4922,14 +6831,17 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "안쪽아래팔피부신경",
    "en": "medial cutaneous nerve of forearm",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "안쪽위팔피부신경",
    "en": "medial cutaneous nerve of arm",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
+  },
+  {
+   "ko": "안쪽으로 주행하여 새끼두덩근육들",
+   "en": "hypothenar muscle",
+   "region": "upper-limb"
   },
   {
    "ko": "앞겨드랑주름",
@@ -4964,14 +6876,12 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "앞톱니근",
    "en": "serratus anterior muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "얕은손가락굽힘근",
    "en": "flexor digitorum superficialis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "얕은손바닥가지",
@@ -4986,6 +6896,11 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
+   "ko": "어 일어남\n\n위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리",
+   "en": "olecranon",
+   "region": "upper-limb"
+  },
+  {
    "ko": "어깨밑근",
    "en": "subscapularis muscle",
    "region": "upper-limb",
@@ -4997,34 +6912,49 @@ window.MEDKOS_ANATOMY = {
    "region": "upper-limb"
   },
   {
-   "ko": "어깨밑동맥",
-   "en": "subscapular artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "ko": "어깨밑신경",
+   "en": "subscapular nerve",
+   "region": "upper-limb"
   },
   {
-   "ko": "어깨휘돌이동맥",
-   "en": "circumflex scapular artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "ko": "어깨뼈밑오목",
+   "en": "subscapular fossa",
+   "region": "upper-limb"
   },
   {
-   "ko": "엄지맞섬근",
-   "en": "opponens pollicis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "ko": "엄지두덩근막",
+   "en": "thenar fascia",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "에 붙어있는 널힘줄에서 일 어나 콩알뼈",
+   "en": "pisiform",
+   "region": "upper-limb"
   },
   {
    "ko": "온바닥쪽손가락동맥",
-   "en": "common palmar digital arteries",
-   "region": "upper-limb",
-   "priority": "normal"
+   "en": "common palmar digital artery",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "온바닥쪽손가락신경",
+   "en": "common palmar digital nerve",
+   "region": "upper-limb"
   },
   {
    "ko": "온뼈사이동맥",
    "en": "common interosseous artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
+  },
+  {
+   "ko": "와 새끼두덩",
+   "en": "hypothenar eminence",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "와 안쪽깊은곳의 자동맥",
+   "en": "ulnar artery",
+   "region": "upper-limb"
   },
   {
    "ko": "원뿔인대",
@@ -5034,26 +6964,22 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "원엎침근",
    "en": "pronator teres muscle",
-   "region": "upper-limb",
-   "priority": "normal"
-  },
-  {
-   "ko": "위가슴동맥",
-   "en": "superior thoracic artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "위가쪽위팔피부신경",
    "en": "superior lateral cutaneous nerve of arm",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "위어깨밑신경",
-   "en": "superior subscapular nerves",
-   "region": "upper-limb",
-   "priority": "normal"
+   "en": "superior subscapular nerve",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "위에 서 내려오는 자쪽곁동맥",
+   "en": "ulnar collateral artery",
+   "region": "upper-limb"
   },
   {
    "ko": "위자쪽곁동맥",
@@ -5080,7 +7006,7 @@ window.MEDKOS_ANATOMY = {
   },
   {
    "ko": "위팔노근",
-   "en": "brachioradialis muscle",
+   "en": "brachiradialis muscle",
    "region": "upper-limb",
    "priority": "high"
   },
@@ -5109,10 +7035,25 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "위팔두갈래근널힘줄",
+   "en": "bicipital aponeurosis",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 위팔자갈래",
+   "en": "humeroulnar head",
+   "region": "upper-limb"
+  },
+  {
    "ko": "위팔세갈래근",
    "en": "triceps brachii muscle",
    "region": "upper-limb",
    "priority": "normal"
+  },
+  {
+   "ko": "이를 연결하는 힘줄사이연결",
+   "en": "intertendinous connection",
+   "region": "upper-limb"
   },
   {
    "ko": "자동맥",
@@ -5133,6 +7074,11 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "자뼈 뒤침근능선",
+   "en": "supinator crest",
+   "region": "upper-limb"
+  },
+  {
    "ko": "자신경",
    "en": "ulnar nerve",
    "region": "upper-limb",
@@ -5151,28 +7097,34 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "자신경굴",
+   "en": "ulnar canal",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "자쪽곁동맥",
+   "en": "ulnar collateral artery",
+   "region": "upper-limb"
+  },
+  {
    "ko": "자쪽되돌이동맥",
    "en": "ulnar recurrent artery",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "자쪽손목굽힘근",
    "en": "flexor carpi ulnaris muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "자쪽손목폄근",
    "en": "extensor carpi ulnaris muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "자쪽피부정맥",
    "en": "basilic vein",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "작은원근",
@@ -5202,6 +7154,11 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "지나 위로올라가 접시위결절",
+   "en": "supraglenoid tubercle",
+   "region": "upper-limb"
+  },
+  {
    "ko": "집게폄근",
    "en": "extensor indicis muscle",
    "region": "upper-limb",
@@ -5210,26 +7167,27 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "짧은노쪽손목폄근",
    "en": "extensor carpi radialis brevis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "짧은손바닥근",
    "en": "palmaris brevis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
-  },
-  {
-   "ko": "짧은엄지벌림근",
-   "en": "abductor pollicis brevis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "짧은엄지폄근",
    "en": "extensor pollicis brevis muscle",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
+  },
+  {
+   "ko": "콩알뼈",
+   "en": "pisiform",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "큰마름뼈",
+   "en": "trapezium",
+   "region": "upper-limb"
   },
   {
    "ko": "팔꿈치근",
@@ -5238,10 +7196,29 @@ window.MEDKOS_ANATOMY = {
    "priority": "high"
   },
   {
+   "ko": "팔신경얼기 신경다발",
+   "en": "cords of brachial plexus",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "팔오금까지 추적 위팔동맥",
+   "en": "brachial artery",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "팔오금에서 가쪽 노동맥",
+   "en": "radial artery",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면",
+   "en": "radial tuberosity",
+   "region": "upper-limb"
+  },
+  {
    "ko": "팔오금중간정맥",
    "en": "median cubital vein",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "폄근널힘줄",
@@ -5252,8 +7229,7 @@ window.MEDKOS_ANATOMY = {
   {
    "ko": "폄근지지띠",
    "en": "extensor retinaculum",
-   "region": "upper-limb",
-   "priority": "normal"
+   "region": "upper-limb"
   },
   {
    "ko": "해부학코담배갑",
@@ -5262,10 +7238,24 @@ window.MEDKOS_ANATOMY = {
    "priority": "normal"
   },
   {
+   "ko": "확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절",
+   "en": "infraglenoid tubercle",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "힘줄끈",
+   "en": "vincula tendinum",
+   "region": "upper-limb"
+  },
+  {
    "ko": "힘줄사이연결",
-   "en": "intertendinous connections",
-   "region": "upper-limb",
-   "priority": "normal"
+   "en": "intertendinous connection",
+   "region": "upper-limb"
+  },
+  {
+   "ko": "힘줄윤활집",
+   "en": "synovial tendon sheath",
+   "region": "upper-limb"
   }
  ],
  "answersStats": {
@@ -5333,35 +7323,35 @@ window.MEDKOS_ANATOMY = {
   {
    "name": "9차시(0911) 김홍태pf.pdf",
    "folder": "해부2",
-   "status": "listed",
+   "status": "text_ingested",
    "pages": null,
    "session": 9
   },
   {
    "name": "10차시(0918) 허미선pf.pdf",
    "folder": "해부2",
-   "status": "listed",
+   "status": "text_ingested",
    "pages": null,
    "session": 10
   },
   {
    "name": "11차시(0922) 허미선pf.pdf",
    "folder": "해부2",
-   "status": "listed",
+   "status": "text_ingested",
    "pages": null,
    "session": 11
   },
   {
    "name": "12차시(0925) 문용석pf.pdf",
    "folder": "해부2",
-   "status": "listed",
+   "status": "text_ingested",
    "pages": null,
    "session": 12
   },
   {
    "name": "13차시(0929) 김홍태pf.pdf",
    "folder": "해부2",
-   "status": "listed",
+   "status": "text_ingested",
    "pages": null,
    "session": 13
   },
@@ -5375,7 +7365,7 @@ window.MEDKOS_ANATOMY = {
   {
    "name": "15차시(1013) 허미선pf.pdf",
    "folder": "해부2",
-   "status": "listed",
+   "status": "text_ingested",
    "pages": null,
    "session": 15
   },
