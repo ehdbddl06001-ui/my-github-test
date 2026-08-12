@@ -3452,6 +3452,41 @@ def test_the_fixture_cell_cannot_turn_a_failure_into_silence():
     check(fallbacks, "and empty stdout is still labelled as something")
 
 
+def test_the_executed_run_record_is_kept_beside_the_template():
+    """The committed notebook and the run record are different artifacts.
+
+    The template must stay unexecuted so a reader cannot mistake stale output
+    for a result; the executed copy must keep its output, because that saved
+    output *is* the external freeze record for the manifest digest. Colab
+    pushes the executed file over the template by default, which would satisfy
+    neither, so they live at separate paths.
+    """
+    executed_dir = os.path.join(ROOT, "notebooks", "executed")
+    if not os.path.isdir(executed_dir):
+        check(True, "no run has been recorded yet, which is a valid state")
+        return
+
+    records = sorted(n for n in os.listdir(executed_dir)
+                     if n.endswith(".ipynb"))
+    check(records, "the executed directory holds at least one run record")
+    for name in records:
+        with open(os.path.join(executed_dir, name), encoding="utf-8") as handle:
+            nb = json.load(handle)
+        outputs = sum(len(c.get("outputs") or ()) for c in nb["cells"])
+        check(outputs > 0,
+              f"{name} keeps its output — an executed record without output "
+              f"is not evidence of anything")
+        check(name != os.path.basename(NOTEBOOK),
+              f"{name} does not overwrite the unexecuted template")
+
+    # The template itself is checked for the opposite property elsewhere; this
+    # pins that the two really are distinct files.
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        template = json.load(handle)
+    check(sum(len(c.get("outputs") or ()) for c in template["cells"]) == 0,
+          "and the template beside them is still unexecuted")
+
+
 def declared_tests():
     """Top-level `test_*` functions, by AST rather than by line prefix."""
     import ast

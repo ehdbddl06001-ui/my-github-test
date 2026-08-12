@@ -876,3 +876,19 @@ above from the saved notebook output.
 The saved report cell did not print `missing`/`unexpected`, so the whole point
 of the stop had to be recovered from `decision.json` afterwards.  The cell now
 prints them; that gap was in the report, not in the bundle.
+
+### The run record and the template are separate files
+
+Colab pushes an executed notebook over the file it was opened from.  That would
+overwrite the unexecuted template, and the two must both exist: the template so
+a reader cannot mistake stale output for a result, the executed copy because
+its saved output **is** the external freeze record for the manifest digest.
+
+- `notebooks/quest56_q5e_prep_p1_p2_asset_identity.ipynb` — template, always
+  committed with zero outputs and null `execution_count`.
+- `notebooks/executed/quest56_q5e_prep_p1_p2_asset_identity_<timestamp>.ipynb`
+  — the run record, committed **with** its output.
+
+The first record is `…_20260812T123035.ipynb`.  Its output carries both
+digests, the P1 aggregate, the P2 stop and the missing filename.  A test
+asserts each side of the split.
