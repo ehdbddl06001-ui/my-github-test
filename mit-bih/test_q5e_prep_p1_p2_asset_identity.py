@@ -2329,18 +2329,37 @@ def test_the_commit_marker_can_only_ever_be_created_once():
     """
     import ast
     tree = ast.parse(open(P.__file__, encoding="utf-8").read())
-    body = [n for n in ast.walk(tree)
-            if isinstance(n, ast.FunctionDef) and n.name == "write_bundle"][0]
-    opens = [n for n in ast.walk(body)
+    helper = [n for n in ast.walk(tree)
+              if isinstance(n, ast.FunctionDef) and n.name == "_write_new_file"]
+    check(len(helper) == 1, "one helper creates every file the writer writes")
+    opens = [n for n in ast.walk(helper[0])
              if isinstance(n, ast.Call)
              and isinstance(n.func, ast.Attribute) and n.func.attr == "open"
              and isinstance(n.func.value, ast.Name) and n.func.value.id == "os"]
-    check(len(opens) == 1, "there is exactly one low-level open in the writer")
+    check(len(opens) == 1, "with exactly one low-level open in it")
     flags = {n.attr for n in ast.walk(opens[0]) if isinstance(n, ast.Attribute)}
-    check("O_EXCL" in flags, f"and it carries O_EXCL: {sorted(flags)}")
+    check("O_EXCL" in flags, f"carrying O_EXCL: {sorted(flags)}")
     check("O_CREAT" in flags, "together with O_CREAT")
     check("O_TRUNC" not in flags,
-          "and never O_TRUNC, which would overwrite an existing commit")
+          "and never O_TRUNC, which would overwrite an existing file")
+
+    # And the writer creates files *only* through it: a stray open(..., "w")
+    # anywhere in the writer would truncate whatever is at that name.
+    body = [n for n in ast.walk(tree)
+            if isinstance(n, ast.FunctionDef) and n.name == "write_bundle"][0]
+    writing_opens = []
+    for node in ast.walk(body):
+        if not (isinstance(node, ast.Call)
+                and getattr(node.func, "id", None) == "open"):
+            continue
+        modes = [a.value for a in node.args[1:]
+                 if isinstance(a, ast.Constant)]
+        modes += [k.value.value for k in node.keywords
+                  if k.arg == "mode" and isinstance(k.value, ast.Constant)]
+        if any(set(str(m)) & set("wxa+") for m in modes):
+            writing_opens.append(ast.dump(node)[:60])
+    check(not writing_opens,
+          f"the writer opens nothing for writing directly: {writing_opens}")
 
     # And the flag really behaves that way here, rather than being a constant
     # that looks right.
@@ -2399,6 +2418,281 @@ def test_a_run_validates_its_own_bundle_before_reporting_success():
             P.verify_published_bundle = real
         check(len(calls) == 1,
               "the validation really was called on the written directory")
+
+
+def test_a_racing_writer_owns_any_name_it_got_to_first():
+    """Claiming the directory is not enough; each file must claim its own name.
+
+    The writer used to fill the claim with `open(..., "w")`, which truncates.
+    A racing writer that created `config.json` first had its bytes replaced
+    with ours and the run committed on top — the directory claim said nothing
+    about the files inside it.  Every file is now an exclusive create, so
+    whoever got there first keeps their bytes and the run does not commit.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+
+        # One per kind of file the writer produces: canonical JSON, the plain
+        # text log, the markdown summary, and the manifest written last.
+        for victim in ("config.json", "log.txt", "summary.md", "manifest.json",
+                       P.SYNTHETIC_MARKER):
+            target = os.path.join(tmp, f"racy-{victim}")
+            theirs = f"bytes belonging to whoever created {victim} first"
+
+            def intruder(directory, name=victim, text=theirs):
+                with open(os.path.join(directory, name), "w",
+                          encoding="utf-8") as handle:
+                    handle.write(text)
+
+            P._PUBLISH_RACE_HOOK = intruder
+            try:
+                P.write_bundle(target, P.build_config("T", True), p1, p2,
+                               combined, ["x"], synthetic=True)
+                raise AssertionError(f"{victim} was overwritten and committed")
+            except P.PrepError as error:
+                check("not committed" in str(error),
+                      f"a pre-existing {victim} stops the run")
+            finally:
+                P._PUBLISH_RACE_HOOK = None
+
+            with open(os.path.join(target, victim), encoding="utf-8") as fh:
+                check(fh.read() == theirs,
+                      f"{victim}: the racing writer's bytes are untouched")
+            check(not os.path.exists(os.path.join(target, P.COMMIT_MARKER)),
+                  f"{victim}: no {P.COMMIT_MARKER}, so it is not a bundle")
+            check(P.verify_published_bundle(target)["ok"] is False,
+                  f"{victim}: and the consumer contract refuses it")
+
+
+def test_a_short_write_cannot_produce_a_committed_truncated_file():
+    """`os.write` may write fewer bytes than it was given."""
+    real = os.write
+    chunks = []
+
+    def stingy(fd, data):
+        # Write one byte at a time: the loop has to keep going or every file
+        # in the bundle ends up a single character long and still committed.
+        chunks.append(len(data))
+        return real(fd, data[:1])
+
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, "payload.json")
+        body = json.dumps({"a": list(range(50))}).encode("utf-8")
+        os.write = stingy
+        try:
+            P._write_new_file(path, body)
+        finally:
+            os.write = real
+        with open(path, "rb") as handle:
+            check(handle.read() == body,
+                  "every byte is written even when os.write is stingy")
+        check(len(chunks) == len(body),
+              f"and it really did take {len(body)} short writes")
+
+
+def test_the_verifier_checks_the_marker_instead_of_trusting_it():
+    """A self-certifying marker is not evidence.
+
+    Every one of these is a bundle that the previous verifier accepted or
+    would have accepted, because it read the file list and the fold out of the
+    marker it was supposed to be checking.
+    """
+    def fresh(tmp, name):
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        out = os.path.join(tmp, name)
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 P.combine(p1, p2), ["x"], synthetic=True)
+        return out, written
+
+    def rewrite(path, mutate):
+        with open(path, encoding="utf-8") as handle:
+            value = json.load(handle)
+        mutate(value)
+        os.remove(path)                 # the test may replace its own fixture
+        with open(path, "w", encoding="utf-8") as handle:
+            json.dump(value, handle, indent=1, sort_keys=True)
+
+    def refold(out, marker_path):
+        """Recompute the marker's fold over its own (shrunk) payload list."""
+        with open(marker_path, encoding="utf-8") as handle:
+            marker = json.load(handle)
+        triples = []
+        for name in sorted(marker["payload_files"]):
+            with open(os.path.join(out, name), "rb") as handle:
+                body = handle.read()
+            triples.append({"name": name, "bytes": len(body),
+                            "sha256": hashlib.sha256(body).hexdigest()})
+        rewrite(marker_path,
+                lambda m: m.update(prep_payload_sha256=
+                                   P.fold_file_triples(triples)))
+
+    with tempfile.TemporaryDirectory() as tmp:
+        # 1. edit a payload file and rewrite only the marker's fold
+        out, written = fresh(tmp, "refolded")
+        with open(os.path.join(out, "summary.md"), "a",
+                  encoding="utf-8") as handle:
+            handle.write("\nquietly edited\n")
+        refold(out, os.path.join(out, P.COMMIT_MARKER))
+        verdict = P.verify_published_bundle(
+            out, expected_manifest_sha256=written[
+                "manifest_sha256_freeze_externally"])
+        check(verdict["ok"] is False,
+              "a rewritten marker fold does not launder an edited payload")
+        check(any("manifest.json's" in p for p in verdict["problems"]),
+              "the manifest's own record of the fold is what catches it")
+        check(verdict["acceptance_eligible"] is False,
+              "and it is not acceptance-eligible")
+
+        # 2. shrink the marker's payload list so the edited file falls outside
+        out, written = fresh(tmp, "shrunk")
+        with open(os.path.join(out, "summary.md"), "a",
+                  encoding="utf-8") as handle:
+            handle.write("\nquietly edited\n")
+        marker_path = os.path.join(out, P.COMMIT_MARKER)
+        rewrite(marker_path,
+                lambda m: m.update(payload_files=[
+                    n for n in m["payload_files"] if n != "summary.md"]))
+        refold(out, marker_path)
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False,
+              "a shrunk payload list is checked against the code contract")
+        check(any("the contracted" in p for p in verdict["problems"]),
+              "and the fixed contract is what reports it")
+        # The fold is recomputed over the *contracted* list too, not the
+        # marker's. If it followed the marker it would fold the shrunk list,
+        # match the rewritten value, and report no fold problem at all — so
+        # this assertion is what stops the fold following the marker.
+        check(any(f"!= {P.COMMIT_MARKER}'s" in p for p in verdict["problems"]),
+              "the fold is taken over the contracted list, so the edited file "
+              "is still inside it and disagrees with the marker's own value — "
+              "a fold that followed the marker would have matched it")
+
+        # 2b. `ingestable` alone, which is the field that decides whether a
+        #     bundle may ever be ingested. Nothing else here would notice: the
+        #     file set is untouched and both records still agree on synthetic.
+        out, written = fresh(tmp, "ingestable-only")
+        rewrite(os.path.join(out, P.COMMIT_MARKER),
+                lambda v: v.update(ingestable=True))
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False,
+              "a synthetic bundle claiming ingestable=true is refused")
+        check(any("is not the negation of synthetic_fixture" in p
+                  for p in verdict["problems"]),
+              "caught by the negation rule, not by any file-set check")
+        check(not any("contracted set" in p for p in verdict["problems"]),
+              "and the file set really is untouched, so nothing else saw it")
+
+        # 3. flip synthetic → ingestable, which is the field that decides
+        #    whether this bundle may ever be ingested
+        out, written = fresh(tmp, "promoted")
+        for name in (P.COMMIT_MARKER, P.PREP_MANIFEST_FILE):
+            rewrite(os.path.join(out, name),
+                    lambda v: v.update(synthetic_fixture=False,
+                                       ingestable=True))
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False,
+              "a synthetic bundle cannot relabel itself as ingestable")
+        check(any("contracted set" in p for p in verdict["problems"]),
+              "the synthetic marker file is part of the fixed file set, so "
+              "the lie fails on the file set")
+
+        # 4. flip it in the marker only
+        out, written = fresh(tmp, "half-promoted")
+        rewrite(os.path.join(out, P.COMMIT_MARKER),
+                lambda v: v.update(synthetic_fixture=False, ingestable=True))
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False, "and disagreeing records are refused")
+        check(any("synthetic_fixture disagrees" in p
+                  for p in verdict["problems"]),
+              "with the disagreement named")
+
+        # 5. contract identity fields
+        out, written = fresh(tmp, "renamed")
+        rewrite(os.path.join(out, P.PREP_MANIFEST_FILE),
+                lambda v: v.update(experiment_id="EXP-9999-999"))
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False, "a wrong experiment_id is refused")
+        check(any("experiment_id" in p for p in verdict["problems"]),
+              "and named")
+
+        # 6. timestamps that disagree between the two records
+        out, written = fresh(tmp, "restamped")
+        rewrite(os.path.join(out, P.COMMIT_MARKER),
+                lambda v: v.update(timestamp="somewhen-else"))
+        verdict = P.verify_published_bundle(out)
+        check(verdict["ok"] is False, "disagreeing timestamps are refused")
+
+
+def test_a_malformed_marker_or_manifest_is_a_verdict_not_a_crash():
+    """A truncated bundle file is a finding; raising would hide it."""
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+
+        for index, (victim, body) in enumerate((
+                (P.COMMIT_MARKER, '{"committed": true, "payl'),
+                (P.COMMIT_MARKER, ""),
+                (P.COMMIT_MARKER, "[1, 2, 3]"),
+                (P.PREP_MANIFEST_FILE, '{"prep_payload_sha256":'),
+                (P.PREP_MANIFEST_FILE, "not json at all"))):
+            out = os.path.join(tmp, f"broken-{index}")
+            P.write_bundle(out, P.build_config("T", True), p1, p2, combined,
+                           ["x"], synthetic=True)
+            os.remove(os.path.join(out, victim))
+            with open(os.path.join(out, victim), "w",
+                      encoding="utf-8") as handle:
+                handle.write(body)
+            verdict = P.verify_published_bundle(out)     # must not raise
+            check(verdict["ok"] is False,
+                  f"a truncated {victim} is refused")
+            check(verdict["problems"],
+                  "with a structured problem list rather than a traceback")
+            check(verdict["acceptance_eligible"] is False,
+                  "and it is never acceptance-eligible")
+
+
+def test_structural_validity_is_not_an_acceptance_pass():
+    """An unanchored manifest is the one file the fold cannot cover."""
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        out = os.path.join(tmp, "run")
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 P.combine(p1, p2), ["x"], synthetic=True)
+
+        loose = P.verify_published_bundle(out)
+        check(loose["structure_ok"] is True, "the bundle is structurally sound")
+        check(loose["ok"] is True, "so the structural verdict passes")
+        check(loose["manifest_anchored_externally"] is False,
+              "but the manifest was not anchored")
+        check(loose["acceptance_eligible"] is False,
+              "so this is explicitly NOT an acceptance pass")
+        check("NOT an acceptance pass" in loose["acceptance_note"],
+              "and the note says so in words, not just a flag")
+
+        anchored = P.verify_published_bundle(
+            out, expected_manifest_sha256=written[
+                "manifest_sha256_freeze_externally"])
+        check(anchored["acceptance_eligible"] is True,
+              "supplying the frozen digest is what makes it eligible")
+
+        wrong = P.verify_published_bundle(out, expected_manifest_sha256="f" * 64)
+        check(wrong["ok"] is False and wrong["acceptance_eligible"] is False,
+              "and a digest that disagrees fails both")
+
+        # Structural failure never yields eligibility, whatever is supplied.
+        os.remove(os.path.join(out, P.COMMIT_MARKER))
+        gone = P.verify_published_bundle(
+            out, expected_manifest_sha256=written[
+                "manifest_sha256_freeze_externally"])
+        check(gone["acceptance_eligible"] is False,
+              "an uncommitted directory is not eligible even with the digest")
+        check(gone["manifest_anchored_externally"] is False,
+              "and is not reported as anchored")
 
 
 def declared_tests():

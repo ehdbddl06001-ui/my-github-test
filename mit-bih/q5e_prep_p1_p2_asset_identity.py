@@ -1323,6 +1323,44 @@ def registration_candidates(p1: Mapping[str, object], p2: Mapping[str, object],
 _PUBLISH_RACE_HOOK = None
 
 
+def _write_new_file(path: str, body: bytes) -> None:
+    """Create a file that must not already exist, and write all of it.
+
+    `open(path, "w")` truncates whatever is there.  Inside a directory this
+    call just claimed, another writer's file should be impossible — but
+    "should be impossible" is exactly what the withdrawn atomicity claim
+    asserted and got wrong, and a truncating write turns someone else's bytes
+    into ours with no error and no trace.  `O_EXCL` makes the creation itself
+    the check, so there is no window between deciding the name is free and
+    taking it.
+
+    The write loop is not decoration: `os.write` is allowed to write fewer
+    bytes than it was handed, and a short write would produce a truncated file
+    that still hashes to *something* and would be committed as a bundle.
+    """
+    try:
+        handle = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+    except FileExistsError as error:
+        raise PrepError(
+            f"refusing to write {os.path.basename(path)!r}: it already exists "
+            f"in this run's own directory.  Something else created it after "
+            f"the directory was claimed; its bytes are left untouched and "
+            f"this bundle is not committed.") from error
+    try:
+        written = 0
+        while written < len(body):
+            written += os.write(handle, body[written:])
+    finally:
+        os.close(handle)
+
+
+def _write_new_json(path: str, value: object) -> bytes:
+    """Exclusive-create a canonical JSON file and return the bytes written."""
+    body = json.dumps(value, indent=1, sort_keys=True).encode("utf-8")
+    _write_new_file(path, body)
+    return body
+
+
 def _is_link_like(path: str) -> bool:
     """Symlink, or a Windows junction / reparse point where detectable.
 
@@ -1486,23 +1524,22 @@ def write_bundle(directory: str, config: Mapping[str, object],
             # into it, and the file-set check below is what catches that.
             _PUBLISH_RACE_HOOK(directory)
 
+        # Every file below is created exclusively.  Not one of them may
+        # replace something that is already at its name.
         for name, value in payload.items():
-            with open(os.path.join(directory, name), "w",
-                      encoding="utf-8") as handle:
-                json.dump(value, handle, indent=1, sort_keys=True)
-        with open(os.path.join(directory, "log.txt"), "w",
-                  encoding="utf-8") as handle:
-            handle.write("\n".join(str(line) for line in log_lines) + "\n")
+            _write_new_json(os.path.join(directory, name), value)
+        _write_new_file(
+            os.path.join(directory, "log.txt"),
+            ("\n".join(str(line) for line in log_lines) + "\n")
+            .encode("utf-8"))
         summary = summary_markdown(combined, p1, p2, synthetic)
-        with open(os.path.join(directory, "summary.md"), "w",
-                  encoding="utf-8") as handle:
-            handle.write(summary)
+        _write_new_file(os.path.join(directory, "summary.md"),
+                        summary.encode("utf-8"))
         if synthetic:
-            with open(os.path.join(directory, SYNTHETIC_MARKER), "w",
-                      encoding="utf-8") as handle:
-                json.dump({"synthetic_fixture": True, "ingestable": False,
-                           "reason": SYNTHETIC_NOTE}, handle, indent=1,
-                          sort_keys=True)
+            _write_new_json(
+                os.path.join(directory, SYNTHETIC_MARKER),
+                {"synthetic_fixture": True, "ingestable": False,
+                 "reason": SYNTHETIC_NOTE})
 
         written = sorted(os.listdir(directory))
         if written != sorted(payload_names):
@@ -1542,11 +1579,8 @@ def write_bundle(directory: str, config: Mapping[str, object],
                      "record"),
         }
         assert_no_credentials(manifest, PREP_MANIFEST_FILE)
-        with open(os.path.join(directory, PREP_MANIFEST_FILE), "w",
-                  encoding="utf-8") as handle:
-            json.dump(manifest, handle, indent=1, sort_keys=True)
-        with open(os.path.join(directory, PREP_MANIFEST_FILE), "rb") as handle:
-            manifest_digest = _sha256_bytes(handle.read())
+        manifest_digest = _sha256_bytes(_write_new_json(
+            os.path.join(directory, PREP_MANIFEST_FILE), manifest))
 
         before_commit = sorted(os.listdir(directory))
         expected_before = sorted(set(bundle_files(synthetic)) - {COMMIT_MARKER})
@@ -1582,13 +1616,7 @@ def write_bundle(directory: str, config: Mapping[str, object],
                      "mount this writes to"),
         }
         assert_no_credentials(marker, COMMIT_MARKER)
-        body = json.dumps(marker, indent=1, sort_keys=True).encode("utf-8")
-        handle = os.open(os.path.join(directory, COMMIT_MARKER),
-                         os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
-        try:
-            os.write(handle, body)
-        finally:
-            os.close(handle)
+        _write_new_json(os.path.join(directory, COMMIT_MARKER), marker)
 
         final_set = sorted(os.listdir(directory))
         if final_set != sorted(bundle_files(synthetic)):   # pragma: no cover
@@ -1616,6 +1644,28 @@ def write_bundle(directory: str, config: Mapping[str, object],
             "registration_allowed": bool(combined.get("registration_allowed"))}
 
 
+def _load_json(path: str, label: str) -> Tuple[object, Optional[str]]:
+    """Read a JSON file without ever letting a parse error escape.
+
+    A truncated or hand-edited bundle file is one of the things this verifier
+    exists to detect, so raising `JSONDecodeError` at the caller would turn a
+    finding into a crash — and a crash is not a verdict a reviewer can act on.
+    """
+    try:
+        with open(path, "rb") as handle:
+            body = handle.read()
+    except OSError as error:
+        return None, f"{label} could not be read: {error}"
+    try:
+        value = json.loads(body.decode("utf-8"))
+    except (UnicodeDecodeError, ValueError) as error:
+        return None, (f"{label} is not readable JSON ({error}); a truncated or "
+                      f"edited file is not a bundle member")
+    if not isinstance(value, dict):
+        return None, f"{label} is a {type(value).__name__}, not an object"
+    return value, None
+
+
 def verify_published_bundle(directory: str,
                             expected_manifest_sha256: Optional[str] = None
                             ) -> Dict[str, object]:
@@ -1624,35 +1674,145 @@ def verify_published_bundle(directory: str,
     Called by the run itself immediately after writing, so a run that cannot
     validate its own output fails loudly rather than reporting a success.  It
     is also what any later reader must use: since publication is no longer a
-    rename, "the directory exists" says nothing, and only the marker plus a
-    recomputed fold does.
+    rename, "the directory exists" says nothing.
 
-    `manifest.json` is not in the payload fold, so the fold alone cannot detect
-    an edited manifest.  Its digest is deliberately absent from the bundle —
-    a digest stored inside the artifact it describes is rewritten by whoever
-    edits that artifact — so the anchor is external: pass the frozen value from
-    the notebook output or the registration record as
-    `expected_manifest_sha256` and it is checked.  Without it the observed
-    digest is reported, and the result says plainly that it was not anchored.
+    **The marker is checked, not trusted.**  An earlier version took the file
+    list and the fold straight out of `COMMITTED.json`, which made the marker
+    self-certifying: editing a payload file and rewriting the marker's fold
+    produced a bundle that verified.  Every set and every duplicated field is
+    therefore checked against the **fixed code contract** — `payload_files()`,
+    `bundle_files()`, `EXPERIMENT_ID`, `SUBSTAGE` — and cross-checked between
+    the marker and the manifest, which are written from the same run and must
+    agree.  Only the recomputed fold counts, and it must equal both recorded
+    folds.
+
+    `manifest.json` is outside the payload fold, so the fold cannot detect an
+    edited manifest, and its digest is deliberately absent from the bundle — a
+    digest stored inside the artifact it describes is rewritten by whoever
+    edits that artifact.  The anchor is external: pass the frozen value from
+    the notebook output or the registration record as `expected_manifest_sha256`.
+    Structural validity and **acceptance eligibility** are reported separately,
+    so a bundle whose manifest was never anchored is never promoted to an
+    acceptance pass.
     """
     problems: List[str] = []
+
+    def verdict(**extra) -> Dict[str, object]:
+        structure_ok = not problems
+        anchored = bool(expected_manifest_sha256) and structure_ok
+        out: Dict[str, object] = {
+            "directory": directory,
+            "problems": problems,
+            # Structural validity: is this a complete, self-consistent bundle?
+            "ok": structure_ok,
+            "structure_ok": structure_ok,
+            "manifest_anchored_externally": anchored,
+            # Acceptance is a stricter question than structure, and an
+            # unanchored manifest can never answer it: the one file the fold
+            # does not cover would be unchecked.
+            "acceptance_eligible": structure_ok and anchored,
+            "acceptance_note": (
+                "structurally valid and the manifest matches the externally "
+                "frozen digest" if structure_ok and anchored else
+                "structurally valid, but no external manifest digest was "
+                "supplied: manifest.json is outside the payload fold, so it "
+                "is unchecked and this is NOT an acceptance pass"
+                if structure_ok else
+                "not structurally valid; acceptance is not in question"),
+        }
+        out.update(extra)
+        return out
+
     marker_path = os.path.join(directory, COMMIT_MARKER)
     if not os.path.isfile(marker_path):
-        return {"ok": False, "committed": False, "directory": directory,
-                "problems": [
-                    f"{COMMIT_MARKER} is absent: this is an incomplete or "
-                    f"failed write, not a bundle.  It is not accepted, and it "
-                    f"is not deleted either."]}
-    with open(marker_path, encoding="utf-8") as handle:
-        marker = json.load(handle)
+        problems.append(
+            f"{COMMIT_MARKER} is absent: this is an incomplete or failed "
+            f"write, not a bundle.  It is not accepted, and it is not deleted "
+            f"either.")
+        return verdict(committed=False, prep_payload_sha256=None,
+                       manifest_sha256=None, synthetic_fixture=None,
+                       ingestable=None)
 
+    marker, error = _load_json(marker_path, COMMIT_MARKER)
+    if error:
+        problems.append(error)
+        return verdict(committed=False, prep_payload_sha256=None,
+                       manifest_sha256=None, synthetic_fixture=None,
+                       ingestable=None)
+
+    manifest_path = os.path.join(directory, PREP_MANIFEST_FILE)
+    manifest, error = _load_json(manifest_path, PREP_MANIFEST_FILE)
+    if error:
+        problems.append(error)
+        manifest = {}
+
+    manifest_digest = None
+    if os.path.isfile(manifest_path):
+        with open(manifest_path, "rb") as handle:
+            manifest_digest = _sha256_bytes(handle.read())
+    else:
+        problems.append(f"{PREP_MANIFEST_FILE} is missing")
+
+    # ---- which contract applies -------------------------------------------
+    # `synthetic` decides the expected file sets, so it cannot be taken from
+    # one file's say-so.  Both records must agree, and `ingestable` must be
+    # its negation; flipping the flag then fails the file-set check, because
+    # the synthetic marker file is part of the fixed contract for one value
+    # and absent from it for the other.
+    marker_synth = marker.get("synthetic_fixture")
+    manifest_synth = manifest.get("synthetic_fixture")
+    if marker_synth != manifest_synth:
+        problems.append(
+            f"synthetic_fixture disagrees: {COMMIT_MARKER} says "
+            f"{marker_synth!r}, {PREP_MANIFEST_FILE} says {manifest_synth!r}")
+    synthetic = bool(marker_synth)
+    for label, record in ((COMMIT_MARKER, marker),
+                          (PREP_MANIFEST_FILE, manifest)):
+        if record.get("ingestable") != (not bool(record.get(
+                "synthetic_fixture"))):
+            problems.append(
+                f"{label}: ingestable {record.get('ingestable')!r} is not the "
+                f"negation of synthetic_fixture "
+                f"{record.get('synthetic_fixture')!r}")
+
+    expected_bundle = sorted(bundle_files(synthetic))
+    expected_payload = sorted(payload_files(synthetic))
+
+    # ---- the fixed code contract, not the marker's word --------------------
     observed = sorted(os.listdir(directory))
-    declared = sorted(str(n) for n in marker.get("bundle_files") or ())
-    if observed != declared:
-        problems.append(f"file set {observed} != committed {declared}")
+    if observed != expected_bundle:
+        problems.append(
+            f"file set {observed} != the contracted set {expected_bundle}")
+    for label, record in ((COMMIT_MARKER, marker),
+                          (PREP_MANIFEST_FILE, manifest)):
+        declared = sorted(str(n) for n in record.get("payload_files") or ())
+        if declared != expected_payload:
+            problems.append(
+                f"{label}: payload_files {declared} != the contracted "
+                f"{expected_payload}")
+    marker_bundle = sorted(str(n) for n in marker.get("bundle_files") or ())
+    if marker_bundle != expected_bundle:
+        problems.append(
+            f"{COMMIT_MARKER}: bundle_files {marker_bundle} != the contracted "
+            f"{expected_bundle}")
 
+    # ---- fields both records carry, and the constants they came from -------
+    for field, constant in (("experiment_id", EXPERIMENT_ID),
+                            ("substage", SUBSTAGE)):
+        for label, record in ((COMMIT_MARKER, marker),
+                              (PREP_MANIFEST_FILE, manifest)):
+            if record.get(field) != constant:
+                problems.append(
+                    f"{label}: {field} {record.get(field)!r} != {constant!r}")
+    if marker.get("timestamp") != manifest.get("timestamp"):
+        problems.append(
+            f"timestamp disagrees: {COMMIT_MARKER} says "
+            f"{marker.get('timestamp')!r}, {PREP_MANIFEST_FILE} says "
+            f"{manifest.get('timestamp')!r}")
+
+    # ---- the only digest that counts is the recomputed one -----------------
     triples = []
-    for name in sorted(str(n) for n in marker.get("payload_files") or ()):
+    for name in expected_payload:
         path = os.path.join(directory, name)
         if not os.path.isfile(path):
             problems.append(f"payload file {name!r} is missing")
@@ -1662,36 +1822,32 @@ def verify_published_bundle(directory: str,
         triples.append({"name": name, "bytes": len(body),
                         "sha256": _sha256_bytes(body)})
     fold = fold_file_triples(triples) if triples else None
-    if fold != marker.get("prep_payload_sha256"):
-        problems.append(
-            f"recomputed payload fold {fold} != committed "
-            f"{marker.get('prep_payload_sha256')}")
-
-    manifest_path = os.path.join(directory, PREP_MANIFEST_FILE)
-    manifest_digest = None
-    if os.path.isfile(manifest_path):
-        with open(manifest_path, "rb") as handle:
-            manifest_digest = _sha256_bytes(handle.read())
-        if (expected_manifest_sha256
-                and manifest_digest != expected_manifest_sha256):
+    for label, record in ((COMMIT_MARKER, marker),
+                          (PREP_MANIFEST_FILE, manifest)):
+        recorded = record.get("prep_payload_sha256")
+        if fold != recorded:
             problems.append(
-                f"manifest digest {manifest_digest} != the externally frozen "
-                f"{expected_manifest_sha256}")
-    else:
-        problems.append(f"{PREP_MANIFEST_FILE} is missing")
+                f"recomputed payload fold {fold} != {label}'s {recorded}")
+    if (marker.get("prep_payload_sha256")
+            != manifest.get("prep_payload_sha256")):
+        problems.append(
+            f"{COMMIT_MARKER} and {PREP_MANIFEST_FILE} record different "
+            f"payload folds; one of them was rewritten")
 
-    return {"ok": not problems, "committed": True, "directory": directory,
-            "problems": problems,
-            "prep_payload_sha256": fold,
-            "manifest_sha256": manifest_digest,
-            "manifest_anchored_externally": bool(expected_manifest_sha256),
-            "manifest_note": (
-                "checked against the externally frozen value"
-                if expected_manifest_sha256 else
-                "observed only: no external freeze value was supplied, so the "
-                "manifest is reported rather than anchored"),
-            "synthetic_fixture": bool(marker.get("synthetic_fixture")),
-            "ingestable": bool(marker.get("ingestable"))}
+    if PREP_MANIFEST_FILE in expected_payload:              # pragma: no cover
+        problems.append(
+            f"{PREP_MANIFEST_FILE} must not be inside the fold it records")
+
+    if (expected_manifest_sha256 and manifest_digest
+            and manifest_digest != expected_manifest_sha256):
+        problems.append(
+            f"manifest digest {manifest_digest} != the externally frozen "
+            f"{expected_manifest_sha256}")
+
+    return verdict(committed=True, prep_payload_sha256=fold,
+                   manifest_sha256=manifest_digest,
+                   synthetic_fixture=synthetic,
+                   ingestable=bool(marker.get("ingestable")))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1794,7 +1950,13 @@ def execute_prep(mitdb_dir: str, folder_id: str, out_dir: str,
             f"the bundle at {written['directory']!r} does not pass the "
             f"consumer contract: {verified['problems']}.  It is left in place "
             f"for inspection and nothing was deleted.")
-    emit(f"bundle committed and verified: {verified['prep_payload_sha256']}")
+    # The digest handed in above is the one this run just computed, so what
+    # was checked here is self-consistency.  The *external* anchor is the
+    # saved notebook output; a later reader supplies that frozen value.
+    emit(f"bundle committed, structure verified: "
+         f"{verified['prep_payload_sha256']}")
+    emit("acceptance still needs the externally frozen manifest digest from "
+         "the saved report cell.")
     return {"p1": p1, "p2": p2, "combined": combined, "bundle": written,
             "verified": verified}
 

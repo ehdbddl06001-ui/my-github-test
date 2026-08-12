@@ -282,9 +282,15 @@ indivisible instead:
    fails.  It never replaces and never follows: an existing file, empty
    directory, non-empty directory, symlink or junction all raise, and the run
    stops.  A symlinked or reparse-point parent is refused for the same reason.
-2. every payload file, then `manifest.json`, written inside the claim.
-3. `COMMITTED.json` created last with `O_CREAT | O_EXCL`, recording the
-   bundle file set, the payload file list and `prep_payload_sha256`.
+2. every payload file, then `manifest.json`, written inside the claim — each
+   one an **exclusive create** (`O_CREAT | O_EXCL`), never `open(..., "w")`.
+   Claiming the directory says nothing about the names inside it: a writer
+   that got to `config.json` first must keep its bytes, and a truncating
+   write would replace them silently and commit on top.  The write loop
+   handles a short `os.write`, because a partial write would leave a
+   truncated file that still hashes to something.
+3. `COMMITTED.json` created last, the same way, recording the bundle file set,
+   the payload file list and `prep_payload_sha256`.
 
 **A directory without `COMMITTED.json` is not a bundle.**  It is an incomplete
 or failed write, and `verify_published_bundle()` refuses it.  This is stronger
@@ -296,15 +302,45 @@ manifest's.  The manifest's SHA-256 stays outside the bundle exactly as before
 — a digest stored inside the artifact it describes is rewritten by whoever
 edits that artifact, so it would look like a freeze record without being one.
 
-**Consumer validation.**  Any reader of a PREP bundle — including the run
-itself, immediately after writing, so a run that cannot validate its own output
-fails rather than reporting success — must call
-`verify_published_bundle(directory, expected_manifest_sha256=...)`, which
-checks that the marker is present, that the file set equals the committed set,
-that the payload fold recomputes to the committed `prep_payload_sha256`, and,
-when the externally frozen value is supplied, that the manifest still hashes to
-it.  Without that value the manifest digest is reported and the result says
-plainly that it was not anchored.
+**Consumer validation: the marker is checked, not trusted.**  Any reader of a
+PREP bundle — including the run itself, immediately after writing, so a run
+that cannot validate its own output fails rather than reporting success — must
+call `verify_published_bundle(directory, expected_manifest_sha256=...)`.
+
+Taking the file list and the fold *out of the marker* would make the marker
+self-certifying: editing a payload file and rewriting the marker's own fold
+would produce a bundle that verifies.  So every set and every duplicated field
+is checked against the **fixed code contract** and cross-checked between the
+two records the run writes:
+
+- the directory's file set equals `bundle_files(synthetic)` — the code
+  contract, not the marker's `bundle_files`
+- `payload_files` in *both* the marker and the manifest equals
+  `payload_files(synthetic)`
+- the payload fold is **recomputed** over the contracted payload list and must
+  equal the marker's *and* the manifest's recorded value, and those two must
+  equal each other
+- `experiment_id` and `substage` match the module constants in both records;
+  `timestamp` matches between them
+- `synthetic_fixture` agrees between the two records and `ingestable` is its
+  negation in each.  Which contract applies follows from that agreed flag, so
+  relabelling a synthetic bundle as ingestable fails on the file set — the
+  synthetic marker file is part of the fixed set for one value and absent from
+  it for the other.
+
+A malformed or truncated `COMMITTED.json` or `manifest.json` is a **finding**,
+returned as `ok: false` with a problem list.  It never raises: a parse error
+escaping to the caller would turn the thing this verifier exists to detect into
+a crash.
+
+**Structure is not acceptance.**  `manifest.json` is outside the payload fold,
+so nothing inside the bundle can vouch for it.  The result therefore reports
+`structure_ok` and `acceptance_eligible` separately: a structurally valid
+bundle whose manifest was never anchored against the externally frozen digest
+is **not** an acceptance pass, and the returned note says so in words.  The
+run's own call supplies the digest it has just computed, which is a
+self-consistency check; the external anchor is the saved notebook output, and a
+reviewer supplies that value.
 
 **Nothing is deleted, ever** — not a pre-existing path, and not the writer's
 own directory.  A failed run leaves its partial, uncommitted directory exactly
@@ -373,8 +409,9 @@ below is present and correct in the bundle.
 - `manifest.payload_files` equal to the fold target actually used
 - payload fold recomputes to the recorded `prep_payload_sha256`
 - the manifest does not contain its own digest, and neither does the marker
-- `verify_published_bundle()` passes with the externally frozen manifest digest
-  supplied
+- `verify_published_bundle()` returns `acceptance_eligible: true` with the
+  externally frozen manifest digest supplied.  `structure_ok` alone is not
+  sufficient and is not accepted as a result pass.
 - the manifest's SHA-256 present in the notebook output or ingest log as the
   external freeze record
 - `synthetic_fixture: false` and `ingestable: true` for a production run
@@ -401,9 +438,10 @@ record):
 - preserved observations, `gate_passed`, `eligible_for_registration` and
   `blocked_by`
 - the full 64-hex `prep_payload_sha256` and `manifest_sha256_freeze_externally`
-- the commit and consumer-validation result: `COMMITTED.json` present, the
-  recomputed payload fold, whether the manifest was anchored externally, and
-  the directory path if the run did not commit
+- the commit and consumer-validation result: `COMMITTED.json` present,
+  `structure_ok`, the recomputed payload fold, whether the manifest was
+  anchored externally, `acceptance_eligible` with its stated reason, and the
+  directory path if the run did not commit
 - the next action
 
 # Order
@@ -527,3 +565,37 @@ entirely when the second read disagrees with the first, since they would
 describe bytes no gate ever judged.
 
 Both fixes were checked by reverting them and watching the new tests fail.
+
+## 2026-08-12 — the claim covered the directory but not the files in it
+
+Two more real defects, both measured before being fixed, and both cases of the
+same mistake: treating an earlier check as if it covered a later action.
+
+**The directory claim did not extend to the file names inside it.**  Having
+`mkdir`ed the directory, the writer filled it with `open(..., "w")`, which
+truncates.  A writer that reached `config.json` first had its bytes replaced by
+ours and the run committed on top — reproduced with the race hook before the
+fix.  Every file the writer produces is now an exclusive create, so whoever got
+to a name first keeps it and the run refuses to commit; the write loop also
+handles a short `os.write`, which would otherwise leave a truncated file that
+still hashes to something. Fixtures cover an intruder creating `config.json`,
+`log.txt`, `summary.md`, `manifest.json` and the synthetic marker: each keeps
+its bytes and the directory is left with no `COMMITTED.json`.
+
+**The verifier trusted the marker it was verifying.**  It read the payload list
+and the fold out of `COMMITTED.json`, so editing `summary.md` and rewriting the
+marker's fold produced a bundle that returned `ok: true` with
+`manifest_anchored_externally: true` even when the correct manifest digest was
+supplied — the manifest was hashed but never parsed, so its own record of the
+fold went unread. Now both records are parsed, every set and duplicated field
+is checked against the fixed code contract, and the recomputed fold must equal
+both recorded folds and they each other. Malformed or truncated JSON returns a
+structured verdict instead of raising.
+
+Related, and worth stating rather than leaving implicit: structural validity is
+now reported separately from `acceptance_eligible`. `manifest.json` sits
+outside the payload fold, so a bundle whose manifest was never anchored against
+the external freeze value cannot be promoted to an acceptance pass, and the
+verifier says so in words rather than only in a flag. The run's own call checks
+self-consistency against the digest it just computed; the external anchor
+remains the saved notebook output.
