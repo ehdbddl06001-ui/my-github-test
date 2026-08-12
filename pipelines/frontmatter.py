@@ -39,6 +39,7 @@ ANATOMY_KINDS = {
     "question",      # 태깅·순서·관계·분지·경로 문항
     "daily_plan",    # 그날의 학습 큐(결정론 선택 결과)
     "answer_list",   # 답만 있는 자료(tagging 2차)의 파싱 결과
+    "study_guide",   # 회차 범위 전체를 다루는 종합 학습 정리(근육표·관계도·임상 포인트)
 }
 ANATOMY_REGIONS = {
     "back", "thorax", "upper-limb", "lower-limb", "head", "neck",
@@ -82,7 +83,7 @@ def _validate_anatomy(meta: dict[str, Any], errors: list[str]) -> None:
         if page is None and not meta.get("section"):
             errors.append("anatomy source_page(text-lane): section 필수")
 
-    if kind in {"concept", "question"}:
+    if kind in {"concept", "question", "study_guide"}:
         refs = meta.get("source_refs")
         if not refs or not isinstance(refs, list):
             errors.append(f"anatomy {kind} 필수 필드 누락: source_refs (리스트)")

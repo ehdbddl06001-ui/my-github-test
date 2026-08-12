@@ -158,6 +158,173 @@ class Builder:
         self.y += h
 
 
+def _strip_inline(s: str) -> str:
+    """PDF 조판용 인라인 마크다운 제거(**굵게**·`코드`)."""
+    return s.replace("**", "").replace("`", "")
+
+
+class StudyBuilder(Builder):
+    """study_guide 카드 본문(마크다운-라이트)을 조판한다.
+
+    지원: ##/### 제목, | 표 |, ``` 코드블록(관계도), - 불릿, 1. 번호, 일반 문단.
+    """
+
+    def code_block(self, lines: list[str], size: float = 8.6):
+        lh = size * 1.42
+        pad = 8
+        # 가장 긴 줄이 넘치면 폰트 축소(줄바꿈하면 트리가 깨진다)
+        while size > 6 and any(self.font.text_length(ln, size) > BODY_W - 2 * pad
+                               for ln in lines):
+            size -= 0.4
+            lh = size * 1.42
+        h = len(lines) * lh + 2 * pad
+        self._ensure(min(h, PAGE_H - 2 * MARGIN))
+        y0 = self.y
+        rect = pymupdf.Rect(MARGIN, y0, PAGE_W - MARGIN, y0 + h)
+        self.page.draw_rect(rect, color=RULE, fill=(0.96, 0.97, 0.985), width=0.8)
+        y = y0 + pad
+        for ln in lines:
+            self.page.insert_text((MARGIN + pad, y + size), ln,
+                                  fontname=FONT_NAME, fontsize=size, color=INK)
+            y += lh
+        self.y = y0 + h + 10
+
+    def table(self, rows: list[list[str]], size: float = 8.8):
+        if not rows:
+            return
+        ncol = max(len(r) for r in rows)
+        rows = [r + [""] * (ncol - len(r)) for r in rows]
+        # 열 폭: 내용 최대폭 비례 배분(최소폭 보장)
+        raw = [max(self.font.text_length(r[c], size) for r in rows) + 10
+               for c in range(ncol)]
+        total = sum(raw)
+        widths = [max(BODY_W * w / total, 46) for w in raw]
+        scale = BODY_W / sum(widths)
+        widths = [w * scale for w in widths]
+        lh = size * 1.4
+        for ri, row in enumerate(rows):
+            cells = [self._wrap(cell, size, widths[c] - 8) for c, cell in enumerate(row)]
+            rh = max(len(cl) for cl in cells) * lh + 7
+            self._ensure(rh)
+            x = MARGIN
+            header = ri == 0
+            for c, cl in enumerate(cells):
+                rect = pymupdf.Rect(x, self.y, x + widths[c], self.y + rh)
+                self.page.draw_rect(rect, color=RULE, width=0.6,
+                                    fill=(0.92, 0.95, 0.97) if header else None)
+                ty = self.y + 5
+                for ln in cl:
+                    self.page.insert_text((x + 4, ty + size), ln, fontname=FONT_NAME,
+                                          fontsize=size,
+                                          color=ACCENT if header else INK)
+                    ty += lh
+                x += widths[c]
+            self.y += rh
+        self.y += 10
+
+    def markdown(self, body: str):
+        lines = body.split("\n")
+        i = 0
+        table_buf: list[list[str]] = []
+        para_buf: list[str] = []
+
+        def flush_table():
+            nonlocal table_buf
+            if table_buf:
+                self.table(table_buf)
+                table_buf = []
+
+        def flush_para():
+            nonlocal para_buf
+            if para_buf:
+                self.text(_strip_inline(" ".join(para_buf)), size=9.8, gap=3)
+                para_buf = []
+
+        while i < len(lines):
+            ln = lines[i]
+            s = ln.strip()
+            if s.startswith("|"):
+                flush_para()
+                cells = [_strip_inline(c.strip()) for c in s.strip("|").split("|")]
+                if not all(set(c) <= {"-", ":", ""} for c in cells):  # 구분행은 버림
+                    table_buf.append(cells)
+                i += 1
+                continue
+            flush_table()
+            if s.startswith("```"):
+                block = []
+                i += 1
+                while i < len(lines) and not lines[i].strip().startswith("```"):
+                    block.append(lines[i])
+                    i += 1
+                i += 1
+                flush_para()
+                self.code_block(block)
+                continue
+            if s.startswith("## "):
+                flush_para()
+                self.heading(_strip_inline(s[3:]), size=15)
+            elif s.startswith("### "):
+                flush_para()
+                self.heading(_strip_inline(s[4:]), size=12, color=INK, rule=False)
+            elif s.startswith("- "):
+                flush_para()
+                # 들여쓴 연속줄까지 한 불릿으로
+                item = [s[2:]]
+                while i + 1 < len(lines) and lines[i + 1].startswith("  ") and lines[i + 1].strip():
+                    nxt = lines[i + 1].strip()
+                    if nxt.startswith(("- ", "|", "```", "#")):
+                        break
+                    item.append(nxt)
+                    i += 1
+                self.text("•  " + _strip_inline(" ".join(item)), size=9.8, indent=8, gap=2)
+            elif s[:3].rstrip(". ").isdigit() and ". " in s[:4]:
+                flush_para()
+                self.text(_strip_inline(s), size=9.8, indent=8, gap=2)
+            elif s:
+                para_buf.append(s)
+            else:
+                flush_para()
+                self.spacer(4)
+            i += 1
+        flush_para()
+        flush_table()
+
+
+def build_study_pdf(card_path: Path, output: str, root: Path = ROOT) -> Path:
+    """study_guide 카드 1장 → 종합 정리 PDF (텍스트 전용)."""
+    out = root / output
+    priv = (root / ".private").resolve()
+    if priv not in out.resolve().parents:
+        raise ValueError(f"출력은 .private/ 아래여야 한다: {out}")
+    out.parent.mkdir(parents=True, exist_ok=True)
+
+    text = card_path.read_text(encoding="utf-8")
+    meta = _load_card(card_path)
+    body = text.split("---", 2)[2]
+
+    doc = pymupdf.open()
+    b = StudyBuilder(doc, _font_buffer())
+    b.new_page()
+    b.text("MedKOS · 임상해부학술기 3Q · 종합 학습 정리", size=11, color=MUTED, gap=2)
+    b.text(_strip_inline(meta.get("subtopic", meta.get("id", ""))), size=18,
+           leading=26, gap=6)
+    sched = ", ".join(str(d) for d in meta.get("scheduled_dates", []))
+    b.text(f"수업일 {sched}  ·  {meta.get('session_no', '?')}회차  ·  생성 {meta.get('date', '')}",
+           size=10, color=ACCENT, gap=10)
+    b.page.draw_line((MARGIN, b.y), (PAGE_W - MARGIN, b.y), color=RULE, width=1.2)
+    b.y += 14
+    b.markdown(body)
+
+    for n, page in enumerate(doc, 1):
+        page.insert_font(fontname=FONT_NAME, fontbuffer=b.fontbuf)
+        page.insert_text((PAGE_W / 2 - 8, PAGE_H - 24), f"- {n} -",
+                         fontname=FONT_NAME, fontsize=9, color=MUTED)
+    doc.save(str(out), deflate=True, garbage=3)
+    doc.close()
+    return out
+
+
 def build_pdf(manifest: dict, root: Path = ROOT) -> Path:
     out = root / manifest["output"]
     priv = (root / ".private").resolve()
@@ -270,12 +437,22 @@ def selftest() -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest")
+    ap.add_argument("--study", help="study_guide 카드(.md) 경로 → 종합 정리 PDF")
+    ap.add_argument("--output", help="--study 출력 경로(.private/ 아래 필수)")
     ap.add_argument("--selftest", action="store_true")
     args = ap.parse_args()
     if args.selftest:
         return selftest()
+    if args.study:
+        if not args.output:
+            ap.error("--study 에는 --output 필요")
+        out = build_study_pdf(ROOT / args.study, args.output)
+        print(json.dumps({"output": str(out.relative_to(ROOT)),
+                          "pages": pymupdf.open(str(out)).page_count},
+                         ensure_ascii=False))
+        return 0
     if not args.manifest:
-        ap.error("--manifest 또는 --selftest 필요")
+        ap.error("--manifest / --study / --selftest 중 하나 필요")
     manifest = json.loads(Path(args.manifest).read_text(encoding="utf-8"))
     out = build_pdf(manifest)
     print(json.dumps({"output": str(out.relative_to(ROOT)),

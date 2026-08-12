@@ -144,6 +144,20 @@ python pipelines/anatomy_daily.py --date <KST 오늘> --plan
   태우는 것을 실측(2026-08-12). 이미지는 채팅 파일 전송으로 전달하고
   사용자가 보관/Drive 저장.
 
+### 답안 표기 규정 (확정본 학습평가 시트 — 문항 answer 필드에 적용)
+
+`pipelines/anatomy_schedule.py::ANSWER_RULES` 참조. 요약: 공인 한글용어 또는
+원어 중 하나(인정 교재 5종), 근육은 **~근 / ~ muscle(또는 m.)**, 허용 약자
+a. v. n. m. lig. sup. inf. ant. post. med. lat.(마침표 필수). 문항 카드의
+`answer`는 "한글용어 (원어)" 병기 형식을 유지하면 자동으로 이 규정을 만족한다.
+
+### 회차 상세(확정본) 활용
+
+`SESSION_DETAILS[회차]`에 담당교수·실습지침 페이지·**e-Anatomy 영상 구간**·
+응용과제가 있다(2026-08-12 확정본 실측). 업로드 스캔의 회차 매핑이 애매하면
+스캔 속 영상 제목·구간을 이 표와 대조해 결정한다. 응용과제는 study_guide의
+임상 포인트·관계형 문항 소재로 우선 사용한다.
+
 ## 4d. 학습자료 PDF (다운로드 산출물)
 
 회차 단위로 [표지 → 학습 개요 → 문제(퀴즈판) → 정답·해설(복원판)] PDF를
@@ -170,6 +184,29 @@ python pipelines/anatomy_pdf.py --manifest .private/anatomy/pdf/sNN_manifest.jso
   쌓였을 때 갱신.
 - 렌더 QA: 생성 후 표지·개요·문제 1·정답 마지막 페이지를 72dpi로 렌더해
   눈으로 확인(4b와 동일한 원칙 — 텍스트 잘림·이미지 고아 블록 없어야 함).
+
+## 4e. 종합 학습 정리 (study_guide — 사용자 1순위 산출물)
+
+사용자 요구(2026-08-12): 문항보다 **회차 범위 전체의 해부학적 내용 정리**가
+우선이다. 회차마다 `kind: study_guide` 카드(`content/anatomy/notes/`)를 만든다.
+
+- **내용 구성**: 범위 전체의 ① 근육표(이는곳·닿는곳·신경·작용, 한·영 병기)
+  ② 혈관·신경 분지/주행 ③ 관계도(코드블록 ASCII 트리) ④ 임상·태깅 포인트
+  (SESSION_DETAILS 응용과제 반영) ⑤ 예습시험 체크리스트 10개.
+- **전달 3경로(자동)**:
+  1. repo 커밋(Source of Truth, `publishable: true` 가능 — 텍스트 지식 정리는
+     카데바 파생물이 아님),
+  2. `anatomy_pdf.py --study <카드> --output .private/anatomy/pdf/...` 로 PDF
+     조판(마크다운→표·트리 렌더) 후 채팅 전송,
+  3. **Drive 업로드**: 카드 본문을 `text/markdown`으로 `MedKOS-해부-복원자료`
+     폴더에 create_file → Google Docs 자동 변환(표·제목 유지). 이미지가 없는
+     텍스트라 토큰 부담 없음. 429(quota) 나면 다음 실행에서 재시도.
+- **범위 표기는 `–`(en dash)** — `C7–T12`, `0:00–11:08`. `~`는 Docs 변환에서
+  **취소선으로 오해석**되므로 study_guide 카드·Drive 업로드 본문에 금지
+  (2026-08-12 실측: "C7~T3 … 2~5" 구간이 취소선으로 렌더됨).
+- **생성 시점**: 예습시험 `prepare`(D-2)에 초안, `finalize`(D-1)에 완성판.
+  실사 문항 세트와 같은 마감(수업 전날 아침)을 공유한다.
+- 문항 lane(4c)은 계속 돌리되, 이 study_guide가 회차 산출물의 1순위다.
 
 ## 5. 계획 확정 + 검증
 

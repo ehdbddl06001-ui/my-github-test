@@ -271,6 +271,21 @@ def test_preview_exam_signal() -> None:
     assert any(x["phase"] == "finalize" and x["class_date"] == "2026-08-24" for x in sun)
 
 
+def test_session_details_match_confirmed_plan() -> None:
+    """확정본(2026 수업계획서 실습계획표) 상세: 16회차 전부, 시험 회차 표시, 답안 규정."""
+    from anatomy_schedule import ANSWER_RULES, SCHEDULE_2026, SESSION_DETAILS, session_detail
+    assert set(SESSION_DETAILS) == set(range(1, len(SCHEDULE_2026) + 1))
+    assert SESSION_DETAILS[8].get("exam") == "tagging-1"
+    assert SESSION_DETAILS[16].get("exam") == "tagging-2"
+    # 수업 회차는 e-Anatomy 구간·담당교수를 가진다(스캔 회차 매핑 근거)
+    for no, d in SESSION_DETAILS.items():
+        assert d.get("professor"), f"{no}회차 교수 누락"
+        if not d.get("exam"):
+            assert d.get("eanatomy"), f"{no}회차 e-Anatomy 구간 누락"
+    assert "m." in ANSWER_RULES["abbreviations"]
+    assert session_detail(99) == {}
+
+
 def test_pdf_builder_selftest() -> None:
     """학습자료 PDF: 조판·frontmatter 파싱·.private 출력 가드 회귀 (anatomy_pdf --selftest)."""
     import subprocess
