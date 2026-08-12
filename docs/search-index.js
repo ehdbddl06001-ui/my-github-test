@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 997,
+  "total": 1001,
   "byType": {
-   "anatomy": 210,
+   "anatomy": 214,
    "kmle": 523,
    "usmle": 60,
    "paper": 187,
@@ -15,7 +15,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 210,
+   "Anatomy": 214,
    "Cardiology": 79,
    "Nephrology": 57,
    "Infectious Disease": 55,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 614,
+   "high": 618,
    "medium": 334,
    "low": 49
   },
-  "tagCount": 1863
+  "tagCount": 1865
  },
  "docs": [
   {
@@ -3153,6 +3153,78 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/answers/a2-tagging2.md",
    "snippet": "Answer only 자료 파싱 결과 총 713개 구조물, 번호 항목(과거 태깅 답 후보) 82개. 부위 분포: abdomen 216, head 140, multi 1, neck 50, pelvis perineum 163, upper limb 143 번호 항목은 answer only candidate: true / priority: high 로만 기록한다. 원래 질문·핀 위치·사진을 복원한 것처럼 가장하지 않는다. 새 문항은 ",
    "text": "Anatomy Tagging 2 answer-only material tagging 2차.pdf Answer only 자료 파싱 결과 총 713개 구조물, 번호 항목(과거 태깅 답 후보) 82개. 부위 분포: abdomen 216, head 140, multi 1, neck 50, pelvis perineum 163, upper limb 143 번호 항목은 answer only candidate: true / priority: high 로만 기록한다. 원래 질문·핀 위치·사진을 복원한 것처럼 가장하지 않는다. 새 문항은 강의 PDF에서 같은 구조가 확인될 때만 생성한다(아니면 needs review 격리)."
+  },
+  {
+   "id": "anatomy-2026-0020",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "큰뒤머리곧은근 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0020.md",
+   "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
+   "text": "Anatomy 큰뒤머리곧은근 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+  },
+  {
+   "id": "anatomy-2026-0019",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "큰뒤통수신경 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0019.md",
+   "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
+   "text": "Anatomy 큰뒤통수신경 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+  },
+  {
+   "id": "anatomy-2026-0018",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "온종아리신경 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0018.md",
+   "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
+   "text": "Anatomy 온종아리신경 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+  },
+  {
+   "id": "anatomy-2026-0017",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "오금동맥 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0017.md",
+   "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
+   "text": "Anatomy 오금동맥 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0016",
