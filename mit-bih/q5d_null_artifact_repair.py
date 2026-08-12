@@ -71,14 +71,14 @@ EXECUTION_APPROVAL_TOKEN = "q5d-null-artifact-repair-execution-approved-by-user"
 #: implementation is named here, in the enable PR, pointing *backwards*; the
 #: notebook measures the actual `HEAD` it is running and the two are checked
 #: against each other.
-APPROVED_IMPLEMENTATION_COMMIT: Optional[str] = None
+APPROVED_IMPLEMENTATION_COMMIT = None
 
 #: LF-normalised digests of what the review actually covered.  The repair
 #: module is **not** in this table: a record inside a file cannot certify that
 #: file.  What covers the module is `module_science_digest()` — the module with
 #: this approval block removed — so an enable PR that only flips the guard
 #: leaves it unchanged and a science change is visible.
-APPROVED_ARTIFACT_DIGESTS: Dict[str, Optional[str]] = {
+APPROVED_ARTIFACT_DIGESTS = {
     "spec_lf_sha256": None,
     "notebook_lf_sha256": None,
     "frozen_q5d_lf_sha256": None,
@@ -89,7 +89,7 @@ APPROVED_ARTIFACT_DIGESTS: Dict[str, Optional[str]] = {
 #: a deleted guard reads identically whether an approval happened or someone
 #: removed an inconvenience.  Flipping `granted` to True, with the rest filled
 #: in, is the whole of what an execution-approval PR does here.
-EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
+EXECUTION_APPROVAL_RECORD = {
     "granted": False,
     "granted_on": None,
     "granted_by": None,
@@ -597,15 +597,19 @@ def assert_approval_block_is_metadata_only(fenced_source: str
                 statement.value, ast.Constant):
             continue                                     # a bare docstring
         if isinstance(statement, ast.AnnAssign):
-            targets = [statement.target]
-            value = statement.value
-            annotation = statement.annotation
-            for node in ast.walk(annotation):
-                if isinstance(node, (ast.Call, ast.Lambda)):
-                    raise RepairError(
-                        EXECUTION_IDENTITY_UNVERIFIED,
-                        "an annotation in the approval block calls something")
-        elif isinstance(statement, ast.Assign):
+            # Annotated assignment is refused outright rather than filtered.
+            # An annotation is an ordinary expression: `SPEC_PATH.__class__`
+            # and `SPEC_PATH[0]` both *run* something, and both look like a
+            # type to a reader skimming the block.  Rejecting `Call` and
+            # `Lambda` inside annotations left exactly those open, so the block
+            # uses plain assignments and this rejects the whole form — a rule
+            # with no surface to get wrong.
+            raise RepairError(
+                EXECUTION_IDENTITY_UNVERIFIED,
+                "the approval block holds an annotated assignment; an "
+                "annotation is an expression that can run (attribute access, "
+                "subscript), so only plain assignments are allowed there")
+        if isinstance(statement, ast.Assign):
             targets = list(statement.targets)
             value = statement.value
         else:
@@ -1445,6 +1449,14 @@ def reconcile_output_folder_id(adapter: FolderInventoryAdapter,
     npz_sha256 = str(context.get("npz_sha256") or "")
     snapshot_digests = dict(context.get("source_digests") or {})
     parent_folder_id = str(context.get("runs_parent_folder_id") or "")
+    expected_listing = list(context.get("expected_listing") or [])
+    target_basename = str(context.get("target_basename") or "")
+    verification_flag = context.get("output_verification_passed")
+
+    # Every field is checked against the **registered contract**, not against
+    # itself.  A count is not an identity: eleven digests under eleven keys
+    # would pass a length check while naming a file the bundle does not
+    # contain — and the real file would then never be compared to anything.
     problems: List[str] = []
     if not target_dir:
         problems.append("the context carries no preserved directory")
@@ -1453,15 +1465,42 @@ def reconcile_output_folder_id(adapter: FolderInventoryAdapter,
             f"the context carries no verified NPZ digest ({npz_sha256!r}); "
             f"reconciling against an empty digest would compare a file to "
             f"nothing and always fail")
-    if len(snapshot_digests) != len(SOURCE_BUNDLE_FILES):
+    missing_keys = sorted(set(SOURCE_BUNDLE_FILES) - set(snapshot_digests))
+    unexpected_keys = sorted(set(snapshot_digests) - set(SOURCE_BUNDLE_FILES))
+    if missing_keys or unexpected_keys:
         problems.append(
-            f"the context carries {len(snapshot_digests)} source digests, "
-            f"expected {len(SOURCE_BUNDLE_FILES)}")
+            f"the source digests are not the registered eleven: "
+            f"missing={missing_keys} unexpected={unexpected_keys}")
+    bad_digests = sorted(name for name, digest in snapshot_digests.items()
+                         if not is_hex64(digest))
+    if bad_digests:
+        problems.append(
+            f"these source digests are not lowercase 64-hex: {bad_digests}")
+    if parent_folder_id != RUNS_PARENT_FOLDER_ID:
+        problems.append(
+            f"the context's runs parent {parent_folder_id!r} is not the "
+            f"registered {RUNS_PARENT_FOLDER_ID!r}")
+    if expected_listing != sorted(BUNDLE_FILES):
+        problems.append(
+            f"the context's expected listing is not the registered twelve: "
+            f"{expected_listing}")
+    if verification_flag is not True:
+        # By identity, not truthiness: `bool("false")` is True, so a value that
+        # reads as a denial would have been taken as an assertion.
+        problems.append(
+            f"output_verification_passed is {verification_flag!r}, not the "
+            f"JSON boolean true; only a run that verified its output may be "
+            f"reconciled")
+    if target_dir and target_basename != os.path.basename(
+            os.path.normpath(target_dir)):
+        problems.append(
+            f"target_basename {target_basename!r} is not the basename of "
+            f"{target_dir!r}")
     if problems:
         raise RepairError(
             OUTPUT_FOLDER_ID_UNRESOLVED,
-            "the reconciliation context is incomplete:\n  "
-            + "\n  ".join(problems),
+            "the reconciliation context is incomplete or does not match the "
+            "registered contract:\n  " + "\n  ".join(problems),
             incomplete_directory=target_dir or None,
             listing=_listing(target_dir) if target_dir else ())
 
@@ -1473,14 +1512,19 @@ def reconcile_output_folder_id(adapter: FolderInventoryAdapter,
     expected = dict(snapshot_digests)
     expected[MISSING_ARTIFACT] = npz_sha256
     observed: Dict[str, str] = {}
-    for entry in listing:
+    # Iterate the **contract**, not the directory: iterating what is on disk
+    # and skipping anything not in `expected` means a file the contract names
+    # can go uncompared simply by being absent from the table.  Every one of
+    # the twelve is opened and compared, and a missing one is a problem.
+    for entry in sorted(BUNDLE_FILES):
+        path = os.path.join(target_dir, entry)
         try:
-            with open(os.path.join(target_dir, entry), "rb") as handle:
+            with open(path, "rb") as handle:
                 observed[entry] = _sha256(handle.read())
-        except OSError as error:                         # pragma: no cover
+        except OSError as error:
             problems.append(f"{entry}: unreadable ({error})")
             continue
-        if entry in expected and observed[entry] != expected[entry]:
+        if observed[entry] != expected[entry]:
             problems.append(f"{entry}: {observed[entry]} != expected "
                             f"{expected[entry]}")
     if problems:

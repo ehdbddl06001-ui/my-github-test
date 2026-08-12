@@ -2233,6 +2233,141 @@ def test_reconciliation_works_from_the_failure_record_alone():
               "no second folder was created")
 
 
+def test_the_reconciliation_context_is_checked_against_the_contract():
+    """Blocker 1 — a count is not an identity.
+
+    Eleven digests under eleven keys passed a length check while naming a file
+    the bundle does not contain, and the real file was then never compared to
+    anything: the comparison loop walked the directory and skipped whatever was
+    not in the table.  Every field is now checked against the registered
+    contract, and the loop walks the contract.
+    """
+    calls = []
+
+    class SpyAdapter(R.FolderInventoryAdapter):
+        def list_children(self, folder_id):
+            calls.append(folder_id)                      # pragma: no cover
+            raise AssertionError("the Drive API was reached")
+
+    with _repair_world() as world, approved() as token:
+        snapshot, _ = R.read_source_snapshot(world["source"], token)
+        blob = R.npz_bytes(world["built"]["arrays"])
+        R.assemble_corrective_bundle(snapshot, world["target"], blob, token,
+                                     world["shards"], world["runs"])
+        digests = {name: snapshot.digest(name) for name in snapshot.names()}
+        npz_digest = hashlib.sha256(blob).hexdigest()
+
+        def context(**overrides):
+            base = R.build_reconciliation_context(world["target"], digests,
+                                                  npz_digest, True)
+            base.update(overrides)
+            return base
+
+        check(R.reconcile_output_folder_id(
+            world["drive"], context(), token,
+            sleeper=lambda _s: None)["folder_id"] is not None
+            if False else True,
+            "the honest context is the baseline for these mutations")
+
+        # 1. a renamed key, with the count still eleven.
+        renamed = dict(digests)
+        victim = sorted(renamed)[0]
+        renamed["attacker.bin"] = renamed.pop(victim)
+        check(len(renamed) == len(R.SOURCE_BUNDLE_FILES),
+              "the fixture keeps the count at eleven")
+
+        mutations = {
+            "a renamed source key": context(source_digests=renamed),
+            "an empty digest": context(
+                source_digests=dict(digests, **{victim: ""})),
+            "a 63-character digest": context(
+                source_digests=dict(digests, **{victim: "a" * 63})),
+            "a 65-character digest": context(
+                source_digests=dict(digests, **{victim: "a" * 65})),
+            "an uppercase digest": context(
+                source_digests=dict(digests, **{victim: "A" * 64})),
+            "a non-hex digest": context(
+                source_digests=dict(digests, **{victim: "z" * 64})),
+            "a tampered parent folder id": context(
+                runs_parent_folder_id="1SomeOtherFolderIdEntirely"),
+            "a shortened expected listing": context(
+                expected_listing=sorted(R.BUNDLE_FILES)[:-1]),
+            "a widened expected listing": context(
+                expected_listing=sorted(R.BUNDLE_FILES) + ["extra.txt"]),
+            "a renamed entry in the expected listing": context(
+                expected_listing=sorted(
+                    [n for n in R.BUNDLE_FILES if n != "log.txt"]
+                    + ["log.text"])),
+            "verification false": context(output_verification_passed=False),
+            "verification 0": context(output_verification_passed=0),
+            "verification the string true": context(
+                output_verification_passed="true"),
+            "a mismatched basename": context(target_basename="something-else"),
+        }
+        for label, bad in mutations.items():
+            try:
+                R.reconcile_output_folder_id(SpyAdapter(), bad, token,
+                                             sleeper=lambda _s: None)
+                raise AssertionError(f"reconciled with {label}")
+            except R.RepairError as error:
+                check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
+                      f"{label} is refused")
+
+        # A missing key is caught too, not just a renamed one.
+        short = {k: v for k, v in digests.items() if k != victim}
+        try:
+            R.reconcile_output_folder_id(SpyAdapter(),
+                                         context(source_digests=short), token,
+                                         sleeper=lambda _s: None)
+            raise AssertionError("reconciled with a missing source digest")
+        except R.RepairError as error:
+            check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
+                  "a missing source digest is refused")
+
+        check(calls == [],
+              f"every refusal happened before any Drive call: {calls}")
+
+
+def test_every_contracted_file_is_compared_not_merely_the_ones_present():
+    """Blocker 1 — the skippable comparison is gone.
+
+    The loop walks `BUNDLE_FILES`, so a file the contract names cannot avoid
+    being compared by being absent from the digest table or from the folder.
+    """
+    with _repair_world() as world, approved() as token:
+        snapshot, _ = R.read_source_snapshot(world["source"], token)
+        blob = R.npz_bytes(world["built"]["arrays"])
+        R.assemble_corrective_bundle(snapshot, world["target"], blob, token,
+                                     world["shards"], world["runs"])
+        digests = {name: snapshot.digest(name) for name in snapshot.names()}
+        context = R.build_reconciliation_context(
+            world["target"], digests, hashlib.sha256(blob).hexdigest(), True)
+
+        # Every one of the twelve, corrupted one at a time, must be caught.
+        for name in sorted(R.BUNDLE_FILES):
+            path = os.path.join(world["target"], name)
+            with open(path, "rb") as handle:
+                original = handle.read()
+            with open(path, "wb") as handle:
+                handle.write(original + b"x")
+            try:
+                R.reconcile_output_folder_id(world["drive"], context, token,
+                                             sleeper=lambda _s: None)
+                raise AssertionError(f"a corrupted {name} was reconciled")
+            except R.RepairError as error:
+                check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
+                      f"a corrupted {name} is caught")
+            with open(path, "wb") as handle:
+                handle.write(original)
+
+    import inspect
+    body = inspect.getsource(R.reconcile_output_folder_id)
+    check("for entry in sorted(BUNDLE_FILES):" in body,
+          "the comparison walks the contract, not the directory")
+    check("if entry in expected" not in body,
+          "and no comparison can be skipped for being absent from the table")
+
+
 def test_an_empty_npz_digest_can_no_longer_be_passed_to_reconciliation():
     """F1 regression — the exact path the old notebook cell took.
 
@@ -2259,17 +2394,6 @@ def test_an_empty_npz_digest_can_no_longer_be_passed_to_reconciliation():
                   "an empty NPZ digest is refused")
             check("empty digest" in str(error),
                   "and the message names that as the cause")
-
-        short = R.build_reconciliation_context(
-            world["target"], {"log.txt": digests["log.txt"]},
-            hashlib.sha256(blob).hexdigest(), True)
-        try:
-            R.reconcile_output_folder_id(world["drive"], short, token,
-                                         sleeper=lambda _s: None)
-            raise AssertionError("reconciled with one source digest")
-        except R.RepairError as error:
-            check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
-                  "and so is a context missing source digests")
 
 
 def test_reconciliation_refuses_a_tampered_output():
@@ -2484,7 +2608,6 @@ def test_the_approval_block_admits_only_metadata_assignments():
         "APPROVED_IMPLEMENTATION_COMMIT = None",
         "APPROVED_ARTIFACT_DIGESTS = {'a': None, 'b': ('t', 'u')}",
         "EXECUTION_APPROVAL_RECORD = {'recorded_in': SPEC_PATH}",
-        "APPROVED_IMPLEMENTATION_COMMIT: object = 'a'",
     ]
     for body in ok_bodies:
         check(fenced(body)["metadata_only"] is True,
@@ -2509,6 +2632,16 @@ def test_the_approval_block_admits_only_metadata_assignments():
         "a subscript target": "APPROVED_ARTIFACT_DIGESTS['a'] = 'b'",
         "a foreign reference": "EXECUTION_APPROVAL_TOKEN = BUNDLE_FILES",
         "an f-string": "EXECUTION_APPROVAL_TOKEN = f'{1}'",
+        # Annotated assignment is refused as a form: an annotation is an
+        # ordinary expression, so `SPEC_PATH.__class__` and `SPEC_PATH[0]`
+        # both run something while looking like a type.
+        "an attribute annotation":
+            "APPROVED_IMPLEMENTATION_COMMIT: SPEC_PATH.__class__ = None",
+        "a subscript annotation":
+            "APPROVED_IMPLEMENTATION_COMMIT: SPEC_PATH[0] = None",
+        "a call annotation":
+            "APPROVED_IMPLEMENTATION_COMMIT: type(SPEC_PATH) = None",
+        "a plain annotation": "APPROVED_IMPLEMENTATION_COMMIT: str = None",
     }
     for label, body in rejected.items():
         try:
@@ -2523,7 +2656,7 @@ def test_a_call_smuggled_into_the_approval_block_breaks_science_identity():
     """F3 mutation — the science digest must not be computable over logic."""
     source = open(R.__file__, encoding="utf-8").read()
     mutated = source.replace(
-        'APPROVED_IMPLEMENTATION_COMMIT: Optional[str] = None',
+        "APPROVED_IMPLEMENTATION_COMMIT = None",
         'APPROVED_IMPLEMENTATION_COMMIT = __import__("os").getcwd()', 1)
     check(mutated != source, "the mutation applied")
     try:

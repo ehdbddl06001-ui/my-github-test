@@ -252,9 +252,28 @@ That matters because the run which would have held a live snapshot is precisely
 the run that stopped. An earlier draft expected the operator to still have a
 `DECISION` object and a live snapshot variable; with `DECISION` unset the
 notebook passed an **empty** NPZ digest, so reconciliation could only ever fail.
-An empty or malformed digest, or a short digest table, is now refused up front
-and named as the cause. `reconcile_output_folder_id()` takes the context and
-nothing else, so it works from a JSON file in a fresh kernel.
+`reconcile_output_folder_id()` takes the context and nothing else, so it works
+from a JSON file in a fresh kernel.
+
+**Every field is checked against the registered contract, not against itself.**
+A count is not an identity: eleven digests under eleven keys would satisfy a
+length check while naming a file the bundle does not contain, and the real file
+would then never be compared to anything. Before any Drive call, the context
+must satisfy all of:
+
+- `set(source_digests) == set(SOURCE_BUNDLE_FILES)` exactly;
+- every source digest a lowercase 64-hex string;
+- `runs_parent_folder_id == RUNS_PARENT_FOLDER_ID`;
+- `expected_listing == sorted(BUNDLE_FILES)`;
+- `output_verification_passed is True` — by identity, not truthiness, because
+  `bool("false")` is `True`;
+- `target_basename == basename(normpath(preserved_directory))`;
+- a real NPZ digest, not an empty or malformed one.
+
+The comparison loop then walks **`BUNDLE_FILES`**, not the directory. Iterating
+what happens to be on disk and skipping anything absent from the digest table
+let a contracted file go uncompared simply by not appearing in it; every one of
+the twelve is now opened and compared, and an unreadable one is a problem.
 
 Result acceptance is impossible until that resolution succeeds.
 
@@ -504,15 +523,22 @@ The fence is only worth something if nothing executable can hide inside it, and
 the fenced region is parsed and every statement must be an assignment of a
 whitelisted name to a literal:
 
-- **allowed**: `Assign` / `AnnAssign` binding `EXECUTION_APPROVAL_TOKEN`,
+- **allowed**: plain `Assign` binding `EXECUTION_APPROVAL_TOKEN`,
   `APPROVED_IMPLEMENTATION_COMMIT`, `APPROVED_ARTIFACT_DIGESTS` or
   `EXECUTION_APPROVAL_RECORD`; values that are constants or literal
   tuple/list/dict containers; a bare `Name` reference to `SPEC_PATH`;
-- **refused**: `Call` anywhere (including nested inside a container or an
-  annotation), `Import`/`ImportFrom`, `FunctionDef`/`ClassDef`/`Lambda`,
-  `If`/`For`/`While`/`Try`/`With`, comprehensions, f-strings, attribute access,
-  subscript targets, any other bound name, and duplicated, nested, moved or
-  missing markers.
+- **refused**: annotated assignment (`AnnAssign`) **as a form**, `Call`
+  anywhere including nested inside a container, `Import`/`ImportFrom`,
+  `FunctionDef`/`ClassDef`/`Lambda`, `If`/`For`/`While`/`Try`/`With`,
+  comprehensions, f-strings, attribute access, subscript targets, any other
+  bound name, and duplicated, nested, moved or missing markers.
+
+Annotated assignment is rejected as a whole rather than filtered. An annotation
+is an ordinary expression, so `SPEC_PATH.__class__` and `SPEC_PATH[0]` both run
+something while looking like a type to anyone skimming the block — rejecting
+only `Call` and `Lambda` inside annotations left exactly those open. The block
+therefore uses plain assignments, and the rule has no surface left to get
+wrong.
 
 `module_science_digest()` performs this check *before* it will produce a digest,
 so a block with a call in it has **no** science digest at all rather than a
