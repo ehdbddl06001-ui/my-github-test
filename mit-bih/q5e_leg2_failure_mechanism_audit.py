@@ -404,6 +404,26 @@ def execution_is_approved(approval: Optional[str]) -> bool:
     return approval == EXECUTION_APPROVAL_TOKEN
 
 
+def frozen_module_approval(approval: Optional[str], what: str) -> str:
+    """Translate a Q5-E execution approval into the frozen module's token.
+
+    The two modules use different approval tokens, so handing Q5-E's token to
+    a `BJ.*` reader is refused by the frozen module — every registered read on
+    the production path would have failed at execution time, and only then.
+    The translation is deliberate and narrow: Q5-E's own approval is required
+    **first**, and only then is Q5-D's token produced, for the same registered
+    assets Q5-D already reads.  It grants nothing Q5-E was not approved for,
+    and an unapproved caller gets Q5-E's own refusal rather than Q5-D's.
+    """
+    require_execution_approval(approval, what)
+    return BJ.EXECUTION_APPROVAL_TOKEN
+
+
+def _bj(approval: Optional[str]) -> str:
+    """Short alias for :func:`frozen_module_approval` at call sites."""
+    return frozen_module_approval(approval, "a frozen Q5-D reader")
+
+
 def open_registered_input(path: str, approval: Optional[str], what: str):
     """The single door to a registered file: approval first, existence second."""
     require_execution_approval(approval, what)
@@ -475,7 +495,9 @@ def module_capabilities() -> Tuple[str, ...]:
     is defeated only by actually lacking the capability.
     """
     return ("run_audit", "run_audit_from_mount", "discover_registered_inputs",
-            "assert_discovered_identity", "build_detector_replay",
+            "reverify_registered_inputs", "verify_mitdb_identity",
+            "verify_bundle_content_identity", "resolve_identical_candidates",
+            "source_match_equivalence_status", "build_detector_replay",
             "match_peaks_to_annotations", "load_frozen_rr", "build_m4_anchors",
             "hypothesis_strata", "stratified_statistic",
             "has_stratified_evidence", "figure_data",
@@ -2347,12 +2369,16 @@ def build_result(qa: Mapping[str, object], m0: Mapping[str, object],
                  m3: Mapping[str, object], m4: Mapping[str, object],
                  nulls: Mapping[str, object], tests: Mapping[str, object],
                  decision: Mapping[str, object],
-                 source_files: Sequence[Mapping[str, object]] = ()
+                 source_files: Sequence[Mapping[str, object]] = (),
+                 identity_audit: Optional[Mapping[str, object]] = None
                  ) -> Dict[str, object]:
     """Assemble `q5e_result.json` in exactly the registered schema."""
     target_set = str(qa.get("target_set") or QA_TARGETS_REGISTERED)
     return {
         "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
+        # Every identity check and its problem list, kept in the result so a
+        # reader can see what was verified rather than trusting that it was.
+        "identity_audit": dict(identity_audit or {}),
         "qa_target_set": target_set,
         "synthetic_fixture": target_set != QA_TARGETS_REGISTERED,
         "analysis_only": True, "training_performed": False,
@@ -3021,7 +3047,8 @@ def load_processed_classes(cache_dir: str, approval: Optional[str]
                            ) -> Dict[Tuple[str, int], str]:
     """Canonical DS1 processed-class map.  DS2 labels stay sealed."""
     require_execution_approval(approval, "canonical DS1 processed-class map")
-    return BJ.load_cache_classes(cache_dir, SPLIT, approval=approval)
+    return BJ.load_cache_classes(cache_dir, SPLIT, approval=frozen_module_approval(
+        approval, "canonical DS1 processed-class map"))
 
 
 def load_sequences(mamba_path: str, cache_dir: str, approval: Optional[str],
@@ -3036,12 +3063,13 @@ def load_sequences(mamba_path: str, cache_dir: str, approval: Optional[str],
     count is exactly what the spec forbids.
     """
     require_execution_approval(approval, "frozen mamba and cache sequences")
-    mamba = BJ.load_mamba_sequences(mamba_path, approval=approval)
-    cache = BJ.load_cache_sequences(cache_dir, approval=approval)
+    bj = frozen_module_approval(approval, "frozen mamba and cache sequences")
+    mamba = BJ.load_mamba_sequences(mamba_path, approval=bj)
+    cache = BJ.load_cache_sequences(cache_dir, approval=bj)
     ds1 = [row.record for row in BJ.build_ledger()[SPLIT]]
     mamba_by_record = {r: mamba["sequences"][r] for r in ds1}
     if mitdb_dir:
-        leg1 = BJ.replay_leg1_split(mitdb_dir, SPLIT, approval=approval)
+        leg1 = BJ.replay_leg1_split(mitdb_dir, SPLIT, approval=bj)
         mamba_by_record = {r: BJ.attach_leg1_identity(mamba_by_record[r],
                                                       leg1[r])
                            for r in ds1}
@@ -3074,11 +3102,29 @@ def load_m4_source_map(source_dir: str, approval: Optional[str]
 # not find exactly one match refuses rather than guessing.
 # ─────────────────────────────────────────────────────────────────────────────
 DISCOVERY_MAX_DEPTH = 6
-#: Stamped onto a verified input set.  `run_audit` refuses without it, so a
-#: hand-typed path set cannot skip the identity checks.
-DISCOVERY_VERIFIED = "DIGEST_VERIFIED"
 DISCOVERED_PATH_KEYS: Tuple[str, ...] = (
     "bundle_dir", "mamba_path", "cache_dir", "v10_source_dir", "mitdb_dir")
+
+#: The MIT-BIH publisher tree aggregate, as a **full** 64-hex digest.
+#:
+#: The spec records it only truncated (`0b46a411…`), and a truncated digest is
+#: not an execution contract: it cannot be recomputed from, and must not be
+#: guessed at or reconstructed.  Until a separately approved read-only PREP
+#: registers the full value in the spec and here together, this stays `None`
+#: and :func:`verify_mitdb_identity` reports the open item instead of passing.
+MITDB_TREE_AGGREGATE: Optional[str] = None
+INPUT_IDENTITY_REGISTRATION_REQUIRED = "INPUT_IDENTITY_REGISTRATION_REQUIRED"
+
+#: Per-file SHA-256 of the five canonical Q5-D bundle files Q5-E actually
+#: reads.  Verifying only that the files exist and that `manifest.json` names
+#: the right producing code leaves the contents unpinned: a bundle whose CSVs
+#: were edited but whose `code_sha256` string was preserved would still be
+#: accepted as canonical.  These digests are not in any existing repository
+#: record, and this implementation may not open Drive to compute them, so the
+#: map stays empty and :func:`verify_bundle_content_identity` stops with
+#: `SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`.
+SOURCE_BUNDLE_FILE_SHA256: Dict[str, str] = {}
+SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED = "SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED"
 
 
 def _candidate_dirs(root: str, max_depth: int = DISCOVERY_MAX_DEPTH):
@@ -3106,19 +3152,148 @@ def _only(matches: Sequence[str], what: str, root: str) -> str:
         f"remove the duplicate copy rather than choosing one here.")
 
 
+def resolve_identical_candidates(matches: Sequence[Mapping[str, object]],
+                                 what: str, root: str) -> Dict[str, object]:
+    """Choose one of several **byte-identical** copies, deterministically.
+
+    Byte-identical duplicates are not a scientific ambiguity — being identical
+    to the canonical asset is what verification means, and Drive already holds
+    duplicates of `mamba_data.npz`.  Demanding they be deleted would both stall
+    discovery and conflict with the standing rule that no Drive file is moved
+    or removed.  So: zero matches fail; several copies of the *same* digest
+    resolve to the lexicographically first path and record the rest; and
+    candidates whose digests *differ* are never merged into one identity.
+
+    This mirrors `BJ.resolve_canonical_mamba`, which settled the same question
+    for Q5-D.
+    """
+    if not matches:
+        raise DiagnosticInputMismatch(
+            f"{DECISION_MISMATCH}: no {what} with the registered identity was "
+            f"found under {root!r}.  The audit does not fall back to a "
+            f"path-named guess: mount the registered artifact and re-run.")
+    digests = {str(m["digest"]) for m in matches}
+    if len(digests) > 1:
+        raise DiagnosticInputMismatch(
+            f"{DECISION_MISMATCH}: {len(digests)} different digests under "
+            f"{root!r} were each accepted as the {what} "
+            f"({sorted(d[:12] for d in digests)}).  Copies that are not "
+            f"byte-identical are not one identity and are never merged.")
+    ordered = sorted(matches, key=lambda m: str(m["path"]))
+    chosen = ordered[0]
+    return {"path": str(chosen["path"]),
+            "digest": str(chosen["digest"]),
+            "byte_identical_duplicates": [str(m["path"]) for m in ordered[1:]],
+            "n_candidates": len(ordered)}
+
+
+def verify_mitdb_identity(directory: str, approval: Optional[str]
+                          ) -> Dict[str, object]:
+    """MIT-BIH identity: publisher checksums **and** the registered aggregate.
+
+    The publisher list proves the bytes are the published bytes; the registered
+    aggregate proves this is the tree the experiment froze.  They answer
+    different questions, so both are required — and while the full aggregate is
+    unregistered this reports the open item rather than passing on the
+    checksums alone.
+    """
+    require_execution_approval(approval, f"MIT-BIH tree at {directory!r}")
+    names = BJ.mitdb_expected_files()
+    file_set = BJ.hash_file_set(directory,
+                                tuple(names) + (BJ.MITDB_CHECKSUM_FILE,),
+                                approval=_bj(approval))
+    published = BJ.verify_against_publisher_checksums(file_set, directory)
+    problems = list(file_set.get("problems", ()))
+    problems.extend(published.get("problems", ()))
+    if not published.get("available"):
+        problems.append(
+            f"{BJ.MITDB_CHECKSUM_FILE} is absent: the publisher list is the "
+            f"independent check and its absence is not a pass")
+    observed = str(file_set.get("aggregate") or "")
+    if MITDB_TREE_AGGREGATE is None:
+        return {"gate": "mitdb_identity", "ok": False,
+                "reason": INPUT_IDENTITY_REGISTRATION_REQUIRED,
+                "observed_aggregate": observed,
+                "registered_aggregate": None,
+                "publisher_checksums": published,
+                "problems": problems + [
+                    "the MIT-BIH tree aggregate is registered only in "
+                    "truncated form; a truncated digest is not an execution "
+                    "contract and this implementation does not reconstruct or "
+                    "guess the full value"]}
+    if observed != MITDB_TREE_AGGREGATE:
+        problems.append(
+            f"aggregate {observed!r} != registered {MITDB_TREE_AGGREGATE!r}")
+    return {"gate": "mitdb_identity", "ok": not problems,
+            "reason": None if not problems else DECISION_MISMATCH,
+            "observed_aggregate": observed,
+            "registered_aggregate": MITDB_TREE_AGGREGATE,
+            "publisher_checksums": published, "problems": problems}
+
+
+def verify_bundle_content_identity(directory: str, approval: Optional[str]
+                                   ) -> Dict[str, object]:
+    """Per-file content identity of the five canonical bundle files.
+
+    `verify_bundle_is_canonical` establishes that the files are present and
+    that `manifest.json` names the registered producing code.  Neither pins
+    the *contents*: editing `join_map.parquet` while leaving the `code_sha256`
+    string alone would still look canonical, and "the QA counts match" is not
+    an identity check either.  This compares each file's bytes against its
+    registered digest, and stops when those digests have never been frozen.
+    """
+    require_execution_approval(approval, f"bundle contents at {directory!r}")
+    observed = {name: sha256_file(os.path.join(directory, name))
+                for name in BUNDLE_INPUT_FILES
+                if os.path.exists(os.path.join(directory, name))}
+    if not SOURCE_BUNDLE_FILE_SHA256:
+        return {"gate": "bundle_content_identity", "ok": False,
+                "reason": SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+                "observed": observed, "registered": {},
+                "problems": [
+                    "no per-file SHA-256 is registered for the canonical "
+                    "Q5-D bundle, so its contents cannot be verified.  The "
+                    "digests must be frozen by a separately approved "
+                    "read-only PREP and recorded in the spec and here "
+                    "together; they are not invented, and matching QA counts "
+                    "is not a substitute."]}
+    problems = []
+    for name in BUNDLE_INPUT_FILES:
+        want = SOURCE_BUNDLE_FILE_SHA256.get(name)
+        got = observed.get(name)
+        if want is None:
+            problems.append(f"{name}: no registered digest")
+        elif got is None:
+            problems.append(f"{name}: absent")
+        elif got != want:
+            problems.append(f"{name}: sha256 {got!r} != registered {want!r}")
+    return {"gate": "bundle_content_identity", "ok": not problems,
+            "reason": None if not problems else DECISION_MISMATCH,
+            "observed": observed,
+            "registered": dict(SOURCE_BUNDLE_FILE_SHA256),
+            "problems": problems}
+
+
 def discover_registered_inputs(search_root: str, approval: Optional[str]
-                               ) -> Dict[str, str]:
+                               ) -> Dict[str, object]:
     """Locate every registered input under one mount, **by digest**.
 
-    Returns the five paths :func:`run_audit` needs.  Nothing is matched on a
-    folder name, so a renamed copy is still found and a look-alike is still
-    refused.  In particular the V9 cache can never be selected in place of the
-    V10 one: only the registered V10 aggregate matches.
+    Nothing is matched on a folder name, so a renamed copy is still found and
+    a look-alike is still refused; the V9 cache can never stand in for the V10
+    one because only the registered V10 aggregate matches.  Several
+    byte-identical copies of the same asset are resolved deterministically and
+    audited rather than treated as an ambiguity — Drive already holds
+    duplicates, and no Drive file is deleted or moved to satisfy this.
+
+    The returned mapping carries the observed digests, but it is a *record*,
+    not a credential: :func:`run_audit` re-verifies every input from bytes
+    before it runs.
     """
     require_execution_approval(approval, f"input discovery under {search_root!r}")
-    found: Dict[str, str] = {}
+    found: Dict[str, object] = {}
+    audit: Dict[str, object] = {}
 
-    bundles: List[str] = []
+    bundles: List[Dict[str, object]] = []
     for directory in _candidate_dirs(search_root):
         if not all(os.path.exists(os.path.join(directory, name))
                    for name in BUNDLE_INPUT_FILES):
@@ -3131,91 +3306,172 @@ def discover_registered_inputs(search_root: str, approval: Optional[str]
                 code = str(json.load(handle).get("code_sha256") or "")
         except (OSError, ValueError):
             continue
-        if code == PRODUCING_CODE_SHA256:
-            bundles.append(directory)
-    found["bundle_dir"] = _only(bundles, "canonical bundle", search_root)
+        if code != PRODUCING_CODE_SHA256:
+            continue
+        # Two bundles with the same producing code are only the same bundle
+        # when their contents agree, so the identity here is the fold over the
+        # five files Q5-E reads, not the manifest string.
+        digest = BJ.hash_file_set(directory, BUNDLE_INPUT_FILES,
+                                  approval=_bj(approval))
+        if not digest.get("ok"):
+            continue
+        bundles.append({"path": directory,
+                        "digest": str(digest.get("aggregate") or "")})
+    resolved = resolve_identical_candidates(bundles, "canonical bundle",
+                                            search_root)
+    found["bundle_dir"] = resolved["path"]
+    audit["bundle_dir"] = resolved
 
-    mamba: List[str] = []
+    mamba: List[Dict[str, object]] = []
     for directory in _candidate_dirs(search_root):
         path = os.path.join(directory, "mamba_data.npz")
         if os.path.isfile(path) and sha256_file(path) == BJ.MAMBA_SHA256:
-            mamba.append(path)
-    found["mamba_path"] = _only(mamba, "mamba_data.npz", search_root)
+            mamba.append({"path": path, "digest": BJ.MAMBA_SHA256})
+    resolved = resolve_identical_candidates(mamba, "mamba_data.npz",
+                                            search_root)
+    found["mamba_path"] = resolved["path"]
+    audit["mamba_path"] = resolved
 
     cache_names = BJ.cache_expected_files()
     cache_want = str(M4_INPUT_CONTRACT["v10_cache"]["aggregate"])
-    caches: List[str] = []
+    caches: List[Dict[str, object]] = []
     for directory in _candidate_dirs(search_root):
         if not os.path.isfile(os.path.join(directory, cache_names[0])):
             continue
-        digest = BJ.hash_file_set(directory, cache_names, approval=approval)
-        if digest.get("aggregate") == cache_want:
-            caches.append(directory)
-    found["cache_dir"] = _only(caches, "V10 preprocessing cache", search_root)
+        digest = BJ.hash_file_set(directory, cache_names, approval=_bj(approval))
+        # `ok` as well as the aggregate: a directory can fold to the registered
+        # aggregate over the expected set and still carry an unexpected file,
+        # which is a contract problem rather than a match.
+        if digest.get("ok") and digest.get("aggregate") == cache_want:
+            caches.append({"path": directory, "digest": cache_want})
+    resolved = resolve_identical_candidates(caches, "V10 preprocessing cache",
+                                            search_root)
+    found["cache_dir"] = resolved["path"]
+    audit["cache_dir"] = resolved
 
     # The full registered expected set and aggregate, not just the two
     # decisive files: `frontend.py` is byte-identical in V9 and V10, so
     # matching on it alone would accept the V9 source folder.
     source_want = str(M4_INPUT_CONTRACT["v10_source"]["aggregate"])
-    sources: List[str] = []
+    sources: List[Dict[str, object]] = []
     for directory in _candidate_dirs(search_root):
         if not os.path.isfile(os.path.join(directory, "frontend.py")):
             continue
         digest = BJ.hash_file_set(directory, M4_V10_SOURCE_FILES,
-                                  approval=approval)
+                                  approval=_bj(approval))
         if digest.get("ok") and digest.get("aggregate") == source_want:
-            sources.append(directory)
-    found["v10_source_dir"] = _only(sources, "V10 source package",
-                                    search_root)
+            sources.append({"path": directory, "digest": source_want})
+    resolved = resolve_identical_candidates(sources, "V10 source package",
+                                            search_root)
+    found["v10_source_dir"] = resolved["path"]
+    audit["v10_source_dir"] = resolved
 
     # The MIT-BIH tree is a real M4 input: the detector replay reads its
-    # signals and its `.atr` annotations.  File-name completeness alone would
-    # accept a tree with the right names and wrong bytes, so the publisher's
-    # own `SHA256SUMS.txt` is verified through the frozen module's
-    # `verify_against_publisher_checksums`, and a tree that ships no checksum
-    # file is refused rather than passed as "unavailable".
-    trees: List[str] = []
+    # signals and its `.atr` annotations.
+    trees: List[Dict[str, object]] = []
     for directory in _candidate_dirs(search_root):
         names = BJ.mitdb_expected_files()
         if not all(os.path.isfile(os.path.join(directory, name))
                    for name in names):
             continue
-        if not os.path.isfile(os.path.join(directory,
-                                           BJ.MITDB_CHECKSUM_FILE)):
-            continue
-        file_set = BJ.hash_file_set(
-            directory, tuple(names) + (BJ.MITDB_CHECKSUM_FILE,),
-            approval=approval)
-        checked = BJ.verify_against_publisher_checksums(file_set, directory)
-        if file_set.get("ok") and checked.get("available") and checked["ok"]:
-            trees.append(directory)
-    found["mitdb_dir"] = _only(trees, "MIT-BIH publisher tree verified "
-                               "against its own SHA256SUMS.txt", search_root)
-    found["identity_verified"] = DISCOVERY_VERIFIED
+        checked = verify_mitdb_identity(directory, approval)
+        if checked["ok"]:
+            trees.append({"path": directory,
+                          "digest": str(checked["observed_aggregate"])})
+        elif checked["reason"] == INPUT_IDENTITY_REGISTRATION_REQUIRED:
+            raise DiagnosticInputMismatch(
+                f"{INPUT_IDENTITY_REGISTRATION_REQUIRED}: a MIT-BIH tree was "
+                f"found at {directory!r} and its publisher checksums were "
+                f"read, but the registered tree aggregate exists only in "
+                f"truncated form.  Register the full 64-hex digest through a "
+                f"separately approved read-only PREP before running.")
+    resolved = resolve_identical_candidates(
+        trees, "MIT-BIH publisher tree verified against its own "
+        f"{BJ.MITDB_CHECKSUM_FILE}", search_root)
+    found["mitdb_dir"] = resolved["path"]
+    audit["mitdb_dir"] = resolved
+
+    found["discovery_audit"] = audit
     return found
 
 
-def assert_discovered_identity(paths: Mapping[str, object]) -> Dict[str, str]:
-    """Refuse any input set that did not come through digest verification.
+def reverify_registered_inputs(paths: Mapping[str, object],
+                               approval: Optional[str]) -> Dict[str, object]:
+    """Re-verify every input **from its bytes**, immediately before the run.
 
-    `run_audit` accepts explicit paths so a reviewer can point it at a staged
-    copy, and that is exactly the hole this closes: without this check a caller
-    could hand it five hand-typed paths and skip every identity test that
-    :func:`discover_registered_inputs` performs.
+    A stamp saying "these were verified" proves nothing: any caller can write
+    the same string next to five paths of their choosing.  Provenance — which
+    function produced the mapping — is not evidence either, because a mapping
+    is just a dict.  So nothing is trusted here except digests recomputed now:
+
+    * the canonical bundle: expected files present, no `SUPERSEDED.json`,
+      `manifest.json` naming the registered producing code, **and** each of the
+      five files matching its registered per-file digest;
+    * `mamba_data.npz` against `BJ.MAMBA_SHA256`;
+    * the V10 cache and V10 source against their registered aggregates, with
+      `hash_file_set` problems treated as failures rather than ignored;
+    * the MIT-BIH tree against the publisher checksum list and the registered
+      tree aggregate.
+
+    Any failure raises; there is no partial pass and no "verified earlier".
     """
-    if str(paths.get("identity_verified") or "") != DISCOVERY_VERIFIED:
-        raise DiagnosticInputMismatch(
-            f"{DECISION_MISMATCH}: these inputs did not come from "
-            f"discover_registered_inputs().  Identity is established by "
-            f"digest, so the audit does not accept paths that were never "
-            f"verified.  Call run_audit_from_mount(), or pass the mapping "
-            f"discover_registered_inputs() returned.")
     missing = [key for key in DISCOVERED_PATH_KEYS if not paths.get(key)]
     if missing:
         raise DiagnosticInputMismatch(
-            f"{DECISION_MISMATCH}: the verified input set is missing "
-            f"{missing}")
-    return {key: str(paths[key]) for key in DISCOVERED_PATH_KEYS}
+            f"{DECISION_MISMATCH}: the input set is missing {missing}")
+    resolved = {key: str(paths[key]) for key in DISCOVERED_PATH_KEYS}
+    require_execution_approval(
+        approval, f"re-verification of {resolved['bundle_dir']!r}")
+
+    checks: List[Dict[str, object]] = []
+
+    canonical = verify_bundle_is_canonical(resolved["bundle_dir"], approval)
+    checks.append({"gate": "bundle_present", "ok": bool(canonical["ok"]),
+                   "problems": list(canonical["problems"])})
+    checks.append(verify_bundle_content_identity(resolved["bundle_dir"],
+                                                 approval))
+
+    observed_mamba = (sha256_file(resolved["mamba_path"])
+                      if os.path.isfile(resolved["mamba_path"]) else "")
+    checks.append({
+        "gate": "mamba_identity",
+        "ok": observed_mamba == BJ.MAMBA_SHA256,
+        "observed": observed_mamba, "registered": BJ.MAMBA_SHA256,
+        "problems": ([] if observed_mamba == BJ.MAMBA_SHA256 else
+                     [f"{resolved['mamba_path']}: sha256 "
+                      f"{observed_mamba!r} != registered"])})
+
+    for key, names, want, label in (
+            ("cache_dir", BJ.cache_expected_files(),
+             str(M4_INPUT_CONTRACT["v10_cache"]["aggregate"]), "V10 cache"),
+            ("v10_source_dir", M4_V10_SOURCE_FILES,
+             str(M4_INPUT_CONTRACT["v10_source"]["aggregate"]),
+             "V10 source")):
+        digest = BJ.hash_file_set(resolved[key], names, approval=_bj(approval))
+        problems = list(digest.get("problems", ()))
+        if digest.get("aggregate") != want:
+            problems.append(
+                f"{label}: aggregate {digest.get('aggregate')!r} != "
+                f"registered {want!r}")
+        checks.append({"gate": f"{key}_identity", "ok": not problems,
+                       "observed": digest.get("aggregate"),
+                       "registered": want,
+                       "missing": list(digest.get("missing", ())),
+                       "unexpected": list(digest.get("extra", ())),
+                       "problems": problems})
+
+    checks.append(verify_mitdb_identity(resolved["mitdb_dir"], approval))
+
+    failed = [c for c in checks if not c.get("ok")]
+    if failed:
+        reasons = [str(c.get("reason") or DECISION_MISMATCH) for c in failed]
+        raise DiagnosticInputMismatch(
+            f"{reasons[0]}: input re-verification failed immediately before "
+            f"the run.  "
+            + "; ".join(f"{c['gate']}: {list(c.get('problems') or [])[:2]}"
+                        for c in failed))
+    return {"paths": resolved, "checks": checks,
+            "source_files": list(canonical["files"])}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -3279,25 +3535,110 @@ def load_v10_producer(v10_source_dir: str, approval: Optional[str]):
     return module
 
 
+#: The exact control-flow decisions this adapter makes, each one a place where
+#: a re-reading of the prose "greedy nearest with a used set" could differ from
+#: the registered `data.py`.  They are named here so a reviewer compares
+#: decisions rather than paragraphs, and so `SOURCE_MATCH_ADAPTER_FINGERPRINT`
+#: changes if any of them is edited.
+SOURCE_MATCH_CONTRACT: Dict[str, str] = {
+    "traversal": "peaks in detector order; annotations in ascending sample "
+                 "order, ties broken by their `.atr` ordinal",
+    "distance_tie": "the smaller annotation sample wins; if two candidates "
+                    "share a sample, the smaller `.atr` ordinal wins",
+    "nearest_already_used": "the peak takes the next-nearest unused candidate "
+                            "inside the tolerance; it is NOT dropped merely "
+                            "because its nearest neighbour is taken",
+    "used_added": "when the match is accepted, before the next peak is "
+                  "considered",
+    "used_vs_aami": "`used` is consumed during matching, BEFORE AAMI "
+                    "selection; a non-AAMI annotation still consumes its match "
+                    "and its peak is then dropped, not rematched",
+    "used_vs_boundary": "`used` is consumed during matching, BEFORE the "
+                        "boundary cut; a peak cut by `p-150`/`p+150` does not "
+                        "release its annotation",
+}
+#: Registered digest of the file this adapter reproduces.  Pinned so a reviewer
+#: can tell which bytes the contract above was written against.
+SOURCE_MATCH_REGISTERED_FILE = "data.py"
+SOURCE_MATCH_REGISTERED_FUNCTION = "build_record"
+#: Set once a separately approved read-only PREP has compared this adapter
+#: against the registered `data.py` control flow.  Until then it is None and
+#: `source_match_equivalence_status()` reports the open item rather than
+#: implying the adapter has been proven equivalent.
+SOURCE_MATCH_ORACLE_VERDICT: Optional[str] = None
+SOURCE_MATCH_EQUIVALENCE_REQUIRED = "SOURCE_MATCH_EQUIVALENCE_REQUIRED"
+
+
+def source_match_adapter_fingerprint() -> str:
+    """Digest of this adapter's source plus its declared control flow.
+
+    Editing the matching loop or any decision in `SOURCE_MATCH_CONTRACT`
+    changes this value, so a silent divergence from the reviewed behaviour is
+    visible rather than buried in a diff.
+    """
+    import inspect                                        # noqa: PLC0415
+    body = inspect.getsource(match_peaks_to_annotations)
+    payload = _canonical_json({"source": body,
+                               "contract": SOURCE_MATCH_CONTRACT,
+                               "tolerance": M4_PEAK_MATCH_TOLERANCE_SAMPLES,
+                               "win_before": BJ.WIN_BEFORE,
+                               "win_after": BJ.WIN_AFTER})
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def source_match_equivalence_status() -> Dict[str, object]:
+    """Whether this adapter has been proven equivalent to the registered source.
+
+    It has not, and saying so is the point.  Reproducing 22/22 counts is a
+    necessary condition, not a proof of source equivalence, and the registered
+    `data.py` is a Drive asset this implementation may not open.  Until a
+    separately approved read-only PREP runs the differential comparison, the
+    status is the open item, not a pass.
+    """
+    return {
+        "status": (SOURCE_MATCH_ORACLE_VERDICT
+                   or SOURCE_MATCH_EQUIVALENCE_REQUIRED),
+        "adapter_fingerprint": source_match_adapter_fingerprint(),
+        "registered_file": SOURCE_MATCH_REGISTERED_FILE,
+        "registered_file_sha256": M4_SOURCE_MAP_HASHES[
+            SOURCE_MATCH_REGISTERED_FILE],
+        "registered_function": SOURCE_MATCH_REGISTERED_FUNCTION,
+        "contract": dict(SOURCE_MATCH_CONTRACT),
+        "note": ("Count reproduction is a necessary condition only.  This "
+                 "adapter is written against the registered digest above and "
+                 "has not been differentially tested against the source "
+                 "itself; that needs a separately approved read-only PREP."),
+    }
+
+
 def match_peaks_to_annotations(peaks: Sequence[int],
                                annotations: Sequence[Tuple[int, str]],
                                signal_length: int,
                                tolerance: int = M4_PEAK_MATCH_TOLERANCE_SAMPLES
                                ) -> Dict[str, object]:
-    """Reproduce the source's own annotation matching.  No new rule is added.
+    """Reproduce the registered `data.py :: build_record` annotation matching.
 
-    From the registered `data.py :: build_record` contract, in its own order:
-    greedy nearest matching within `tol = int(0.15 * fs)` samples against a
-    `used` set so no annotation is consumed twice, AAMI selection, and the
-    `p - 150 >= 0` / `p + 150 <= len` boundary cut.  The tolerance, the
-    greediness, the `used` set and the cut are the source's; this function
-    introduces no detector, no second tolerance and no manual anchor.
+    Every control-flow decision is fixed in :data:`SOURCE_MATCH_CONTRACT` and
+    summarised here, because "greedy nearest with a `used` set" is prose that
+    admits several inequivalent implementations:
 
-    Returns the kept cache rows in detector order plus the two discordance
-    anchor kinds M4.1 defines.
+    * peaks are traversed in detector order; annotations in ascending sample
+      order, ties broken by `.atr` ordinal;
+    * the nearest **unused** candidate within the tolerance wins, so a peak
+      whose nearest annotation is already taken falls through to the
+      next-nearest rather than being dropped;
+    * distance ties go to the smaller sample, then the smaller ordinal;
+    * `used` is updated at the moment a match is accepted, and therefore
+      **before** both AAMI selection and the boundary cut — a peak later
+      dropped by either does not release its annotation back into the pool.
+
+    The tolerance, the greediness, the `used` set and the cut are the
+    source's; no detector, second tolerance or manual anchor is introduced
+    here.  Returns the kept cache rows in detector order plus the two
+    discordance anchor kinds M4.1 defines.
     """
     order = sorted(range(len(annotations)),
-                   key=lambda k: int(annotations[k][0]))
+                   key=lambda k: (int(annotations[k][0]), k))
     positions = [int(annotations[k][0]) for k in order]
     used: set = set()
     matched_annotation: Dict[int, int] = {}      # peak index -> annotation idx
@@ -3305,7 +3646,8 @@ def match_peaks_to_annotations(peaks: Sequence[int],
         peak = int(peak)
         best = None
         best_distance = tolerance + 1
-        # Greedy nearest, scanning the annotation stream in its own order.
+        # Nearest *unused* candidate.  `rank` ascends with sample then ordinal,
+        # and the comparison is strict, so a tie keeps the earlier one.
         for rank, pos in enumerate(positions):
             if rank in used:
                 continue
@@ -3313,7 +3655,7 @@ def match_peaks_to_annotations(peaks: Sequence[int],
             if distance < best_distance:
                 best, best_distance = rank, distance
         if best is not None and best_distance <= tolerance:
-            used.add(best)
+            used.add(best)                 # consumed here: before AAMI and cut
             matched_annotation[index] = order[best]
 
     kept_rows: List[Dict[str, object]] = []
@@ -3329,10 +3671,10 @@ def match_peaks_to_annotations(peaks: Sequence[int],
         symbol = str(annotations[annotation_index][1])
         aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")
         if not aami:
-            continue                       # AAMI selection, the source's own
+            continue          # AAMI selection; the annotation stays consumed
         if not (peak - BJ.WIN_BEFORE >= 0 and
                 peak + BJ.WIN_AFTER <= int(signal_length)):
-            continue                       # the registered boundary cut
+            continue          # boundary cut; the annotation stays consumed
         kept_rows.append({"peak_index": index, "r_sample": peak,
                           "raw_atr_ordinal": annotation_index,
                           "symbol": symbol, "aami": aami})
@@ -3379,7 +3721,8 @@ class DetectorReplay(object):
     def _raw(self, record: str) -> Dict[str, object]:
         if self.atr_reader:
             return self.atr_reader(record)
-        return BJ.load_atr_record(self.mitdb_dir, record, self.approval)
+        return BJ.load_atr_record(self.mitdb_dir, record,
+                                  _bj(self.approval))
 
     def __call__(self) -> Tuple[Dict[str, int], Dict[str, List[List[int]]]]:
         """Re-run the registered detector on all 22 DS1 records."""
@@ -3398,7 +3741,7 @@ class DetectorReplay(object):
             kept = match["kept_rows"]
             counts[record] = len(kept)
             features = module.rr_features([row["r_sample"] for row in kept])
-            pre, post = _rr_columns(features)
+            pre, post = _rr_columns(features, expected_rows=len(kept))
             replayed[record] = [
                 list(BJ.rr_to_samples(pre, BJ.CACHE_RR_UNIT)),
                 list(BJ.rr_to_samples(post, BJ.CACHE_RR_UNIT))]
@@ -3440,22 +3783,47 @@ def _read_signal(mitdb_dir: str, record: str, approval: Optional[str]):
     return signal
 
 
-def _rr_columns(features) -> Tuple[List[float], List[float]]:
-    """`pre`/`post` out of whatever shape `rr_features()` returned.
+def _rr_columns(features, expected_rows: Optional[int] = None
+                ) -> Tuple[List[float], List[float]]:
+    """`pre`/`post` from a replayed `rr_features()` of **exactly** `(n, 7)`.
 
     The registered cache stores `(n, 7)` with `pre` at column 0 and `post` at
-    column 1, so the same two columns are taken here.  A different width is a
-    contract failure, not something to reshape around.
+    column 1.  Anything else is a contract failure and is refused: no reshape,
+    no pad, no truncation, no column guessing.  Checking only the first row's
+    width was not enough — a ragged result would pass that and then either
+    raise `IndexError` deep in the caller or silently select a wrong column.
     """
-    rows = [list(row) for row in features]
-    if not rows:
-        return [], []
-    width = len(rows[0])
-    if width != BJ.CACHE_RR_DIM:
+    if isinstance(features, (str, bytes)):
+        raise DiagnosticInputMismatch(
+            f"{M4_RR_MISMATCH}: rr_features() returned {type(features).__name__}, "
+            f"not a two-dimensional array of rows")
+    try:
+        rows = [list(row) for row in features]
+    except TypeError:
+        raise DiagnosticInputMismatch(
+            f"{M4_RR_MISMATCH}: rr_features() did not return an iterable of "
+            f"rows; the replay is not reshaped to fit")
+    for index, row in enumerate(rows):
+        if isinstance(row, (str, bytes)) or not hasattr(row, "__len__"):
+            raise DiagnosticInputMismatch(
+                f"{M4_RR_MISMATCH}: rr_features() row {index} is not a "
+                f"sequence; the result is not two-dimensional")
+    widths = {len(row) for row in rows}
+    if len(widths) > 1:
+        raise DiagnosticInputMismatch(
+            f"{M4_RR_MISMATCH}: rr_features() returned ragged rows with widths "
+            f"{sorted(widths)}; registered width is {BJ.CACHE_RR_DIM} for every "
+            f"row.  The audit does not pad or truncate a replay to fit.")
+    if widths and widths != {BJ.CACHE_RR_DIM}:
         raise DiagnosticInputMismatch(
             f"{M4_RR_MISMATCH}: the replayed rr_features() produced width "
-            f"{width}, registered {BJ.CACHE_RR_DIM}.  The audit does not "
-            f"reshape, pad or select columns to make a replay fit.")
+            f"{widths.pop()}, registered {BJ.CACHE_RR_DIM}.  The audit does "
+            f"not reshape, pad or select columns to make a replay fit.")
+    if expected_rows is not None and len(rows) != int(expected_rows):
+        raise DiagnosticInputMismatch(
+            f"{M4_RR_MISMATCH}: rr_features() returned {len(rows)} rows for "
+            f"{expected_rows} kept peaks.  A row-count mismatch is a failed "
+            f"replay, not something to align.")
     return ([float(row[BJ.CACHE_PRE_COLUMN]) for row in rows],
             [float(row[BJ.CACHE_POST_COLUMN]) for row in rows])
 
@@ -3520,9 +3888,10 @@ def observed_m4_identity(v10_source_dir: str, cache_dir: str,
     """
     require_execution_approval(approval, "M4 input identity")
     source_names = tuple(sorted(M4_V10_SOURCE_FILES))
-    source = BJ.hash_file_set(v10_source_dir, source_names, approval=approval)
+    source = BJ.hash_file_set(v10_source_dir, source_names,
+                              approval=_bj(approval))
     cache = BJ.hash_file_set(cache_dir, BJ.cache_expected_files(),
-                             approval=approval)
+                             approval=_bj(approval))
     return {"v10_source": str(source.get("aggregate") or ""),
             "v10_cache": str(cache.get("aggregate") or ""),
             "v10_source_problems": list(source.get("problems", ())),
@@ -3916,27 +4285,26 @@ def run_audit(verified_inputs: Mapping[str, object], out_dir: str,
               emit=print) -> Dict[str, object]:
     """The single production route to a Q5-E decision.
 
-    Takes only the mapping :func:`discover_registered_inputs` returned, so
-    there is no path argument a caller could fill in by hand and thereby skip
-    identity verification.  Refuses immediately without a separate execution
-    approval; permission is checked before capability, so an unauthorised call
-    is refused as unauthorised whatever the environment happens to have
-    installed.
+    Every input is re-verified **from its bytes** here, immediately before the
+    run.  Nothing is taken on the word of an earlier step: not a stamp, not
+    which function produced the mapping, not a check performed a moment ago.
+    Refuses immediately without a separate execution approval; permission is
+    checked before capability, so an unauthorised call is refused as
+    unauthorised whatever the environment happens to have installed.
     """
     if not open_registered_data:
         raise ExecutionNotApprovedError(
             "OPEN_REGISTERED_DATA is False.  This is the default: a stray "
             "import or notebook run cannot reach registered data.  "
             f"{APPROVAL_NOTE}")
-    paths = assert_discovered_identity(verified_inputs)
-    bundle_dir = paths["bundle_dir"]
+    bundle_dir = str(verified_inputs.get("bundle_dir") or "")
     require_execution_approval(approval, f"Q5-E audit over {bundle_dir!r}")
     assert_runtime_ready(MODE_AUDIT)
-    canonical = verify_bundle_is_canonical(bundle_dir, approval)
-    if not canonical["ok"]:
-        raise DiagnosticInputMismatch(
-            f"{DECISION_MISMATCH}: {canonical['problems']}")
-    emit("Q5-E: canonical bundle verified.")
+    verified = reverify_registered_inputs(verified_inputs, approval)
+    paths = verified["paths"]
+    bundle_dir = paths["bundle_dir"]
+    canonical = {"files": verified["source_files"]}
+    emit("Q5-E: every registered input re-verified from its bytes.")
 
     _terminal_execution_guard()
 
@@ -3964,7 +4332,10 @@ def run_audit(verified_inputs: Mapping[str, object], out_dir: str,
         qa=outcome["qa"], m0=outcome["m0"], m1=outcome["m1"],
         m2=outcome["m2"], m3=outcome["m3"], m4=outcome["m4"],
         nulls=outcome["nulls"], tests=outcome["tests"],
-        decision=outcome["decision"], source_files=canonical["files"])
+        decision=outcome["decision"], source_files=canonical["files"],
+        identity_audit={"checks": verified["checks"],
+                        "discovery": verified_inputs.get("discovery_audit"),
+                        "source_match": source_match_equivalence_status()})
     directory = os.path.join(out_dir, f"{timestamp}_{RUN_SLUG}")
     write_bundle(directory, result,
                  build_config(MODE_AUDIT, timestamp, execution_approved=True,

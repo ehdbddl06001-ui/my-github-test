@@ -2283,3 +2283,86 @@ guard is untouched, and this spec's `status` remains
    present, rather than as a fixed number.
 
 Execution approval still waits on a third Codex acceptance review.
+
+## 2026-08-12 — third-review corrections (identity and source matching); never executed
+
+The third Codex acceptance review returned `IMPLEMENTATION_BLOCKED` with A1
+`PARTIAL` and A6 `NOT_CLOSED`.  Its design rulings are applied below.  Nothing
+was executed, no registered artifact was opened, no digest was computed against
+Drive, and this spec's `status` remains `approved_for_implementation`.
+
+**B1 — source matching.**  The independent pure adapter is retained; the
+registered `data.py :: build_record` is not called wholesale, because it also
+performs feature computation, file access and side effects that are not part of
+the matching contract.  Every control-flow decision the prose left open is now
+fixed explicitly in `SOURCE_MATCH_CONTRACT`: traversal order on both sides, the
+distance-tie rule, whether a peak whose nearest annotation is already consumed
+falls through to the next-nearest (it does), the moment `used` is updated, and
+that `used` is consumed **before** both AAMI selection and the boundary cut, so
+neither releases an annotation back into the pool.  Six adversarial fixtures pin
+exactly these decisions.  Equivalence to the registered source is **not**
+claimed: `source_match_equivalence_status()` reports
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED`, pins the adapter fingerprint and the
+registered `data.py` digest, and records that reproducing 22/22 counts is a
+necessary condition only.  Differential testing against the source itself needs
+a separately approved read-only PREP, because `data.py` is a registered Drive
+asset this implementation may not open, and the count comparison must never be
+used to choose between two candidate implementations after the fact.
+
+**B2 — `rr_features` shape.**  Strict refusal is retained and widened.  The
+result must be two-dimensional, every row exactly `CACHE_RR_DIM` wide, and the
+row count exactly the kept-peak count; ragged rows, one-dimensional output,
+`(n, 6)`, `(n, 8)` and row-count mismatch each raise `M4_RR_MISMATCH` rather
+than reaching an `IndexError` or an implicit column choice.  No reshape, pad,
+truncation or column guess.
+
+**B3 — MIT-BIH identity.**  The tree aggregate must be registered as a full
+64-hex digest; the truncated `0b46a411…` is not an execution contract.  The full
+value is **not** present in this repository, any handoff, or any preflight
+record, so it is not reconstructed or guessed: `MITDB_TREE_AGGREGATE` is `None`
+and the gate reports `INPUT_IDENTITY_REGISTRATION_REQUIRED`.  Registering it
+needs a separately approved read-only PREP that writes the value into this spec
+and the module together.  Publisher-checksum verification over the full expected
+file set is retained as the independent check and is not a substitute.
+
+**Discovery stamp.**  A string field saying "verified" is not evidence — any
+caller could write it beside paths of their choosing — and neither is the
+provenance of a mapping.  The stamp and its checker are removed.  Every input is
+now re-verified from its bytes at the production entry, immediately before the
+run: bundle presence and per-file contents, the mamba digest, the V10 cache and
+source aggregates, and the MIT-BIH tree.
+
+**File-set problems.**  `hash_file_set` reports missing and unexpected entries;
+those were computed and then ignored.  A directory that folds to the registered
+aggregate over the expected set while carrying an unexpected file is now a
+failure, in discovery and in re-verification alike, and every problem list is
+preserved in the result's identity audit.
+
+**Canonical bundle content identity.**  File presence plus a `code_sha256`
+string in `manifest.json` does not pin contents: a bundle whose CSVs were edited
+while that string was preserved would still have been accepted, and "the QA
+counts match" is not an identity check.  Per-file SHA-256 verification of the
+five files Q5-E reads is now required.  Those digests exist in no repository
+record, so `SOURCE_BUNDLE_FILE_SHA256` is empty and the gate stops with
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`, pending a separately approved read-only
+PREP.
+
+**Byte-identical duplicates.**  Requiring a unique path conflicted with both the
+existing Drive duplicates of `mamba_data.npz` and the standing rule that no
+Drive file is moved or deleted.  Following the EXP-2026-007 precedent: zero
+matches fail; several copies of the same digest resolve deterministically and
+every duplicate path is recorded in the audit; candidates whose digests differ
+are never merged into one identity.
+
+**A latent production defect found while applying the above.**  Q5-E and Q5-D
+use different execution-approval tokens, and Q5-E was passing its own token to
+the frozen module's readers.  Every registered read on the production path —
+mamba, cache, classes, `.atr`, every `hash_file_set` — would have been refused
+by the frozen module, and only at execution time.  `frozen_module_approval()`
+now performs the translation explicitly: Q5-E's own approval is required first,
+and an unapproved caller is refused by Q5-E rather than by Q5-D.  It widens
+nothing; it makes the already-approved path reachable.
+
+Execution approval remains unrequested.  Two registration items and the source
+equivalence PREP are open, and each is a deliberate stop rather than a weaker
+check.

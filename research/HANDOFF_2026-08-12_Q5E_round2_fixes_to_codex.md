@@ -158,3 +158,60 @@ C3. q5d 모듈이 code SHA-256
 - 노트북 미실행: code cell 10개, outputs 전부 빈 값, `execution_count` 전부 null
 - `q5d_order_preserving_beat_join.py` code SHA-256 불변
 - `run_audit()` 내 terminal guard 가 loader·pipeline 양쪽보다 앞섬을 확인
+
+
+---
+
+# 3차 검토 대응 (2026-08-12, PR #115 갱신)
+
+3차 판정 `IMPLEMENTATION_BLOCKED` (A1 PARTIAL · A6 NOT_CLOSED) 의 지시를 적용했다.
+아래는 Codex 4차 검토용 요약이며, 프롬포트는 위 본문을 그대로 재사용하되
+다음 항목을 추가로 확인하면 된다.
+
+## 적용한 설계 판정
+
+- **B1** — 독립 adapter 유지(등록 `build_record` 전체 호출 안 함). 산문이 열어두던
+  제어흐름 결정을 `SOURCE_MATCH_CONTRACT` 에 전부 고정: 양쪽 순회 순서, 거리 동률
+  규칙, 최근접이 이미 used 일 때 **차순위로 내려감**, used 추가 시점, used 가 AAMI
+  선택·boundary cut **보다 먼저** 소비됨. 반례 fixture 6종 추가.
+  등가성은 주장하지 않는다 — `source_match_equivalence_status()` 가
+  `SOURCE_MATCH_EQUIVALENCE_REQUIRED` 를 보고하고 adapter fingerprint 와 등록
+  `data.py` digest 를 고정한다. **22/22 count 재현은 필요조건일 뿐**이라고 코드가
+  스스로 기록한다.
+- **B2** — 2차원 여부, 모든 행 폭 7, 행 수 = kept peak 수를 전부 검증.
+  ragged / 1-D / (n,6) / (n,8) / row-count mismatch 각각 `M4_RR_MISMATCH` 로 거부.
+- **B3** — 전체 64-hex 값이 repo·인계문·preflight 어디에도 **없다.**
+  추측·복원하지 않고 `MITDB_TREE_AGGREGATE = None` 으로 두고 gate 가
+  `INPUT_IDENTITY_REGISTRATION_REQUIRED` 를 보고한다.
+
+## 추가 blocker 대응
+
+- **1 (stamp)** — `DISCOVERY_VERIFIED` 상수와 `assert_discovered_identity()` 를
+  **삭제**했다. `run_audit` 이 실행 직전 모든 입력을 바이트에서 재검증한다.
+  위조 mapping 거부 회귀 테스트 추가.
+- **2 (problems)** — `hash_file_set` 의 missing/unexpected 를 identity gate 와
+  discovery 양쪽에서 실패로 취급. aggregate 는 맞지만 unexpected file 이 있는
+  fixture 가 실패하는 테스트 추가. problem 목록은 result 의 identity audit 에 보존.
+- **3 (bundle 내용 신원)** — 5개 파일 per-file SHA-256 검증 도입. 등록값이 없으므로
+  `SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` 로 중단. 1-byte 변경이 검증을 깨는 회귀
+  테스트 포함(등록값을 지어내지 않고 주입으로 비교 로직만 시험).
+- **4 (duplicate)** — EXP-2026-007 선례를 따라 0건 실패 / 동일 digest 사본은
+  deterministic 선택 + audit 기록 / 서로 다른 digest 는 병합 금지.
+  Drive 파일 삭제·이동을 요구하지 않는다.
+
+## 이번 라운드에서 발견한 잠재 결함 (보고)
+
+Q5-E 와 Q5-D 의 **execution approval token 이 서로 다른데**, Q5-E 가 자기 토큰을
+frozen module 의 reader 들에 그대로 넘기고 있었다. 실행 승인 후 production 의 모든
+등록 read(mamba·cache·classes·`.atr`·`hash_file_set`)가 frozen module 에서 거부됐을
+것이고, 그 사실은 **실행 시점에야** 드러났을 것이다. `frozen_module_approval()` 로
+명시적 번역을 넣었다(Q5-E 승인 선행 필수, 미승인 호출자는 Q5-E 쪽 거부를 받음).
+
+## 남은 open item (실행 전 반드시 해소)
+
+1. `INPUT_IDENTITY_REGISTRATION_REQUIRED` — MIT-BIH tree 전체 aggregate 등록
+2. `SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` — canonical Q5-D bundle 5파일 digest 동결
+3. `SOURCE_MATCH_EQUIVALENCE_REQUIRED` — adapter ↔ 등록 `data.py` differential
+
+셋 다 **별도 사용자 승인을 받은 read-only PREP** 이 필요하다. 지금 Drive 를 열어
+계산하지 않았다.

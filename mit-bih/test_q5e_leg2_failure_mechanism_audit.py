@@ -98,15 +98,14 @@ CACHE_N = {"101": 4, "208": 4}
 
 
 def _verified(paths):
-    """A synthetic input set carrying the discovery stamp.
+    """A hand-made input set, exactly as an attacker or a mistake would make it.
 
-    Only tests build one of these by hand; production gets it from
-    `discover_registered_inputs()`, which is the point of the stamp.
+    It is *not* a credential and must not behave like one: `run_audit`
+    re-verifies every input from its bytes, so a mapping like this is expected
+    to be refused however plausible it looks.
     """
-    complete = {key: paths.get(key, f"/synthetic/{key}")
-                for key in Q5E.DISCOVERED_PATH_KEYS}
-    complete["identity_verified"] = Q5E.DISCOVERY_VERIFIED
-    return complete
+    return {key: paths.get(key, f"/synthetic/{key}")
+            for key in Q5E.DISCOVERED_PATH_KEYS}
 
 
 def tiny_partition(rows=None):
@@ -1589,9 +1588,8 @@ def test_input_discovery_is_by_digest_not_by_path():
     """No Drive path is typed by hand: identity selects the artifact."""
     with tempfile.TemporaryDirectory() as tmp:
         root, good = _fake_mount(tmp)
-        # Discovery of the bundle alone is what this test pins; the cache and
-        # publisher trees are absent, so the call must refuse rather than
-        # silently return a partial answer.
+        # The cache, source and publisher trees are absent, so the call must
+        # refuse rather than silently return a partial answer.
         try:
             Q5E.discover_registered_inputs(root, Q5E.EXECUTION_APPROVAL_TOKEN)
             raise AssertionError("a partial mount was accepted")
@@ -1611,7 +1609,7 @@ def test_input_discovery_is_by_digest_not_by_path():
               "the decoy bundle with a different code_sha256 is not selected")
 
 
-def test_discovery_refuses_a_superseded_or_duplicated_bundle():
+def test_discovery_refuses_a_superseded_bundle():
     with tempfile.TemporaryDirectory() as tmp:
         root, _ = _fake_mount(tmp, superseded=True)
         try:
@@ -1620,49 +1618,84 @@ def test_discovery_refuses_a_superseded_or_duplicated_bundle():
         except Q5E.DiagnosticInputMismatch as error:
             check("canonical bundle" in str(error),
                   "a SUPERSEDED bundle is not a match")
-    with tempfile.TemporaryDirectory() as tmp:
-        root, _ = _fake_mount(tmp, duplicate=True)
-        try:
-            Q5E.discover_registered_inputs(root, Q5E.EXECUTION_APPROVAL_TOKEN)
-            raise AssertionError("an ambiguous mount was accepted")
-        except Q5E.DiagnosticInputMismatch as error:
-            check("unique" in str(error),
-                  "two identical copies refuse rather than picking one")
 
 
-def test_discovery_and_mount_route_require_approval_before_open():
-    opened = []
-    real = Q5E.sha256_file
+def test_byte_identical_duplicates_are_resolved_not_refused():
+    """Blocker 4 — Drive holds identical copies and none may be deleted."""
+    candidates = [{"path": "/drive/b/mamba_data.npz", "digest": "aa" * 32},
+                  {"path": "/drive/a/mamba_data.npz", "digest": "aa" * 32}]
+    resolved = Q5E.resolve_identical_candidates(candidates, "mamba", "/drive")
+    check(resolved["path"] == "/drive/a/mamba_data.npz",
+          "one copy is chosen deterministically, by sorted path")
+    check(resolved["byte_identical_duplicates"] ==
+          ["/drive/b/mamba_data.npz"],
+          "every duplicate path is recorded in the audit")
+    check(resolved["n_candidates"] == 2, "the candidate count is preserved")
+    again = Q5E.resolve_identical_candidates(list(reversed(candidates)),
+                                             "mamba", "/drive")
+    check(again["path"] == resolved["path"],
+          "resolution does not depend on discovery order")
 
-    def tripwire(path):                    # pragma: no cover - must not run
-        opened.append(path)
-        return real(path)
-
-    Q5E.sha256_file = tripwire
     try:
-        with tempfile.TemporaryDirectory() as tmp:
-            root, _ = _fake_mount(tmp)
-            try:
-                Q5E.discover_registered_inputs(root, None)
-                raise AssertionError("discovery ran without approval")
-            except Q5E.ExecutionNotApprovedError:
-                check(True, "discovery refuses without an approval token")
-            try:
-                Q5E.run_audit_from_mount(root, tmp, approval=None,
-                                         open_registered_data=True)
-                raise AssertionError("the mount route ran without approval")
-            except Q5E.ExecutionNotApprovedError:
-                check(True, "run_audit_from_mount refuses without approval")
-            try:
-                Q5E.run_audit_from_mount(
-                    root, tmp, approval=Q5E.EXECUTION_APPROVAL_TOKEN,
-                    open_registered_data=False)
-                raise AssertionError("the mount route ignored the switch")
-            except Q5E.ExecutionNotApprovedError:
-                check(True, "OPEN_REGISTERED_DATA=False refuses on its own")
-    finally:
-        Q5E.sha256_file = real
-    check(not opened, "no file was hashed before approval was checked")
+        Q5E.resolve_identical_candidates([], "mamba", "/drive")
+        raise AssertionError("zero matches accepted")
+    except Q5E.DiagnosticInputMismatch as error:
+        check("no mamba" in str(error), "zero matches still fail")
+
+    try:
+        Q5E.resolve_identical_candidates(
+            [{"path": "/drive/a", "digest": "aa" * 32},
+             {"path": "/drive/b", "digest": "bb" * 32}], "mamba", "/drive")
+        raise AssertionError("different digests were merged")
+    except Q5E.DiagnosticInputMismatch as error:
+        check("never merged" in str(error),
+              "copies that are not byte-identical are not one identity")
+
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    for banned in ("os.remove(", "shutil.move(", "os.unlink("):
+        check(banned not in text.split("def write_bundle", 1)[0],
+              f"discovery never calls {banned} on a registered asset")
+
+
+def test_discovery_requires_a_clean_file_set_not_only_an_aggregate():
+    """Blocker 2 — an unexpected file is a contract problem, not a match."""
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        body = handle.read().split("def discover_registered_inputs(", 1)[1]
+        body = body.split("\ndef ", 1)[0]
+    check(body.count('digest.get("ok")') >= 3,
+          "cache, source and bundle discovery all require a clean file set")
+    problems = Q5E.verify_mitdb_identity.__doc__ or ""
+    check("publisher" in problems,
+          "the MIT-BIH gate documents its independent publisher check")
+
+
+def test_identity_gate_fails_on_file_set_problems():
+    """Blocker 2 — problems must not be computed and then ignored."""
+    import q5d_order_preserving_beat_join as _BJ
+    real = _BJ.hash_file_set
+
+    def unexpected(directory, names, approval=None):
+        out = dict(real(directory, names, approval=approval))
+        out.update({"ok": False, "extra": ["stowaway.npz"],
+                    "problems": [f"{directory}: unexpected ['stowaway.npz']"]})
+        return out
+
+    with tempfile.TemporaryDirectory() as tmp:
+        paths = {key: tmp for key in Q5E.DISCOVERED_PATH_KEYS}
+        paths["mamba_path"] = os.path.join(tmp, "mamba_data.npz")
+        with open(paths["mamba_path"], "wb") as handle:
+            handle.write(b"x")
+        _BJ.hash_file_set = unexpected
+        try:
+            Q5E.reverify_registered_inputs(paths,
+                                           Q5E.EXECUTION_APPROVAL_TOKEN)
+            raise AssertionError("a set with an unexpected file was accepted")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("re-verification failed" in str(error),
+                  "an aggregate match with an unexpected file still fails")
+        finally:
+            _BJ.hash_file_set = real
 
 
 def test_mount_route_is_the_notebook_route_and_is_still_guarded():
@@ -1993,37 +2026,135 @@ def test_m4_identity_is_observed_not_substituted():
     check(not mismatch["ok"], "a wrong observed aggregate fails the sub-gate")
 
 
-def test_run_audit_requires_a_verified_input_set():
-    """6 — hand-typed paths cannot bypass identity verification."""
+def test_run_audit_reverifies_and_never_trusts_a_stamp():
+    """Blocker 1 — a hand-made mapping is not evidence of identity.
+
+    The old design accepted any mapping carrying the string
+    "DIGEST_VERIFIED", which any caller could write beside five paths of their
+    choosing.  Provenance is not evidence either; only recomputed digests are.
+    """
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    check(not hasattr(Q5E, "DISCOVERY_VERIFIED"),
+          "the stamp constant is gone, not merely unused")
+    check("assert_discovered_identity" not in text,
+          "and so is the function that checked it")
+    body = text.split("def run_audit(", 1)[1].split("\ndef ", 1)[0]
+    check("reverify_registered_inputs(" in body,
+          "run_audit re-verifies every input from its bytes")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        forged = _verified({"bundle_dir": tmp})
+        forged["identity_verified"] = "DIGEST_VERIFIED"
+        try:
+            Q5E.reverify_registered_inputs(forged,
+                                           Q5E.EXECUTION_APPROVAL_TOKEN)
+            raise AssertionError("a forged mapping was accepted")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("re-verification failed" in str(error),
+                  "a hand-made mapping with the old stamp is refused")
     try:
-        Q5E.run_audit({"bundle_dir": "/typed/by/hand"}, "/out",
-                      approval=Q5E.EXECUTION_APPROVAL_TOKEN,
-                      open_registered_data=True)
-        raise AssertionError("an unverified path set was accepted")
-    except Q5E.DiagnosticInputMismatch as error:
-        check("did not come from" in str(error),
-              "run_audit refuses inputs that skipped discovery")
-    try:
-        Q5E.assert_discovered_identity(
-            {"identity_verified": Q5E.DISCOVERY_VERIFIED,
-             "bundle_dir": "b"})
-        raise AssertionError("an incomplete verified set was accepted")
+        Q5E.reverify_registered_inputs({"bundle_dir": "b"},
+                                       Q5E.EXECUTION_APPROVAL_TOKEN)
+        raise AssertionError("an incomplete set was accepted")
     except Q5E.DiagnosticInputMismatch as error:
         check("missing" in str(error), "every registered path must be present")
-    complete = Q5E.assert_discovered_identity(_verified({}))
-    check(set(complete) == set(Q5E.DISCOVERED_PATH_KEYS),
-          "a complete verified set resolves to exactly the registered paths")
+    try:
+        Q5E.reverify_registered_inputs(_verified({}), None)
+        raise AssertionError("re-verification ran without approval")
+    except Q5E.ExecutionNotApprovedError:
+        check(True, "re-verification is itself approval-gated")
+
+
+def test_bundle_content_identity_is_required_and_unregistered():
+    """Blocker 3 — file presence plus a manifest string is not identity."""
+    with tempfile.TemporaryDirectory() as tmp:
+        for name in Q5E.BUNDLE_INPUT_FILES:
+            with open(os.path.join(tmp, name), "w", encoding="utf-8") as fh:
+                fh.write("{}" if name.endswith(".json") else "x\n")
+        checked = Q5E.verify_bundle_content_identity(
+            tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(checked["ok"] is False,
+              "content identity does not pass while unregistered")
+        check(checked["reason"] == Q5E.SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+              "it reports the freeze as the open item")
+        check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
+              "no per-file digest is invented")
+        check(set(checked["observed"]) == set(Q5E.BUNDLE_INPUT_FILES),
+              "every file Q5-E reads is hashed and reported")
+
+        # Once digests are registered, a one-byte change must fail. This
+        # exercises the comparison itself without inventing a real digest.
+        frozen = dict(checked["observed"])
+        real = Q5E.SOURCE_BUNDLE_FILE_SHA256
+        try:
+            Q5E.SOURCE_BUNDLE_FILE_SHA256 = frozen
+            ok = Q5E.verify_bundle_content_identity(
+                tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+            check(ok["ok"] is True, "matching contents verify")
+            with open(os.path.join(tmp, "decision.json"), "a",
+                      encoding="utf-8") as fh:
+                fh.write(" ")
+            mutated = Q5E.verify_bundle_content_identity(
+                tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+            check(mutated["ok"] is False,
+                  "a one-byte change fails canonical verification")
+            check(any("decision.json" in p for p in mutated["problems"]),
+                  "and the mutated file is named")
+        finally:
+            Q5E.SOURCE_BUNDLE_FILE_SHA256 = real
+
+
+def test_mitdb_aggregate_registration_is_an_open_item():
+    """B3 — a truncated digest is not an execution contract."""
+    check(Q5E.MITDB_TREE_AGGREGATE is None,
+          "the full MIT-BIH aggregate is not invented or reconstructed")
+    with tempfile.TemporaryDirectory() as tmp:
+        checked = Q5E.verify_mitdb_identity(tmp,
+                                            Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(checked["ok"] is False, "the gate does not pass while it is None")
+        check(checked["reason"] == Q5E.INPUT_IDENTITY_REGISTRATION_REQUIRED,
+              "it reports the registration as the open item")
+        check(any("truncated" in p for p in checked["problems"]),
+              "and says why: the registered value is truncated")
+
+
+def test_frozen_module_approval_is_translated_not_reused():
+    """The two modules use different tokens; production would have failed."""
+    check(Q5E.EXECUTION_APPROVAL_TOKEN != BJ.EXECUTION_APPROVAL_TOKEN,
+          "the two approval tokens genuinely differ")
+    check(Q5E.frozen_module_approval(Q5E.EXECUTION_APPROVAL_TOKEN, "x") ==
+          BJ.EXECUTION_APPROVAL_TOKEN,
+          "an approved Q5-E call can reach the frozen readers")
+    try:
+        Q5E.frozen_module_approval(None, "x")
+        raise AssertionError("the bridge granted access without approval")
+    except Q5E.ExecutionNotApprovedError:
+        check(True, "an unapproved caller gets Q5-E's own refusal")
+    try:
+        Q5E.frozen_module_approval("guessed-token", "x")
+        raise AssertionError("a wrong token was accepted")
+    except Q5E.ExecutionNotApprovedError:
+        check(True, "a wrong token does not reach the frozen module")
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    check("approval=approval)" not in text.split("def run_audit_from_mount", 1)[0],
+          "no frozen reader is called with the untranslated Q5-E token")
 
 
 def test_mitdb_is_verified_against_publisher_checksums():
     """6 — file-name completeness alone is not identity."""
     with open(Q5E.__file__, encoding="utf-8") as handle:
-        body = handle.read().split("def discover_registered_inputs(", 1)[1]
-        body = body.split("\ndef ", 1)[0]
-    check("verify_against_publisher_checksums" in body,
-          "discovery verifies the publisher checksum list")
-    check("MITDB_CHECKSUM_FILE" in body,
+        text = handle.read()
+    gate = text.split("def verify_mitdb_identity(", 1)[1].split("\ndef ", 1)[0]
+    body = text.split("def discover_registered_inputs(", 1)[1]
+    body = body.split("\ndef ", 1)[0]
+    check("verify_against_publisher_checksums" in gate,
+          "the MIT-BIH gate verifies the publisher checksum list")
+    check("MITDB_CHECKSUM_FILE" in gate,
           "a tree without SHA256SUMS.txt is not accepted")
+    check("verify_mitdb_identity(" in body,
+          "discovery routes the MIT-BIH tree through that gate")
     check("M4_V10_SOURCE_FILES" in body,
           "the V10 source is matched on its full registered expected set")
     check(set(Q5E.M4_V10_SOURCE_FILES) != set(Q5E.M4_V9_SOURCE_FILES),
@@ -2075,6 +2206,143 @@ def test_production_refuses_to_publish_a_fixture_verdict():
           "and refuses to publish anything but a REGISTERED verdict")
     check("QA_TARGETS_REGISTERED" in body,
           "the check names the registered target set explicitly")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# B1 — adversarial source-matching fixtures.
+#
+# Each one is a place where a different reading of "greedy nearest with a used
+# set" produces a different answer.  They pin THIS adapter's behaviour so a
+# later differential test against the registered `data.py` compares decisions
+# rather than paragraphs.  No registered asset is opened.
+# ─────────────────────────────────────────────────────────────────────────────
+def test_source_match_nearest_already_used_falls_through():
+    """Counterexample 1: nearest is taken, next-nearest is inside tolerance."""
+    annotations = [(1000, "N"), (1040, "N")]
+    result = Q5E.match_peaks_to_annotations([1000, 1010], annotations, 20000)
+    kept = {r["peak_index"]: r["raw_atr_ordinal"] for r in result["kept_rows"]}
+    check(kept == {0: 0, 1: 1},
+          "the second peak takes the next-nearest unused annotation")
+    check(not result["peaks_without_annotation"],
+          "it is not dropped merely because its nearest was consumed")
+    check(not result["annotations_without_peak"],
+          "and no annotation is left unmatched")
+    check(Q5E.SOURCE_MATCH_CONTRACT["nearest_already_used"].startswith(
+        "the peak takes the next-nearest"),
+        "the contract states this decision explicitly")
+
+
+def test_source_match_distance_tie_goes_to_the_earlier_annotation():
+    """Counterexample 2: two candidates at exactly the same distance."""
+    annotations = [(960, "N"), (1040, "N")]
+    result = Q5E.match_peaks_to_annotations([1000], annotations, 20000)
+    check(len(result["kept_rows"]) == 1, "one peak matches one annotation")
+    check(result["kept_rows"][0]["raw_atr_ordinal"] == 0,
+          "the tie goes to the smaller annotation sample")
+    check(result["annotations_without_peak"][0]["anchor_ordinal"] == 1,
+          "the loser becomes an annotation-without-peak anchor")
+
+
+def test_source_match_non_aami_symbol_consumes_its_match():
+    """Counterexample 3: nearest annotation is a non-AAMI symbol."""
+    annotations = [(1000, "F"), (1040, "N")]
+    result = Q5E.match_peaks_to_annotations([1000], annotations, 20000)
+    check(not result["kept_rows"],
+          "a peak matched to a non-AAMI annotation is dropped")
+    check([a["anchor_ordinal"] for a in result["annotations_without_peak"]]
+          == [1],
+          "the non-AAMI annotation stays consumed and is not an anchor")
+    check(not result["peaks_without_annotation"],
+          "the peak matched, so it is not a peak-without-annotation anchor")
+    check("BEFORE AAMI" in Q5E.SOURCE_MATCH_CONTRACT["used_vs_aami"],
+          "the contract fixes used-before-AAMI explicitly")
+
+
+def test_source_match_boundary_cut_consumes_its_match():
+    """Counterexample 4: the matched peak is cut by the boundary rule."""
+    annotations = [(100, "N"), (140, "N")]
+    result = Q5E.match_peaks_to_annotations([100], annotations, 20000)
+    check(not result["kept_rows"], "the peak is cut by p-150 >= 0")
+    check([a["anchor_ordinal"] for a in result["annotations_without_peak"]]
+          == [1],
+          "its annotation stays consumed rather than being rematched")
+    check("BEFORE the" in Q5E.SOURCE_MATCH_CONTRACT["used_vs_boundary"],
+          "the contract fixes used-before-boundary explicitly")
+
+
+def test_source_match_annotation_order_differing_from_sample_order():
+    """Counterexample 5: `.atr` ordinals are not in ascending sample order."""
+    annotations = [(2000, "N"), (1000, "N")]
+    result = Q5E.match_peaks_to_annotations([1000, 2000], annotations, 20000)
+    kept = {r["peak_index"]: r["raw_atr_ordinal"] for r in result["kept_rows"]}
+    check(kept == {0: 1, 1: 0},
+          "each peak matches its own annotation, by sample not by ordinal")
+    check(all(r["r_sample"] != 0 for r in result["kept_rows"]),
+          "the raw sample travels with the kept row")
+
+
+def test_source_match_peak_order_change_is_visible():
+    """Counterexample 6: reordering peaks changes which peak wins a tie."""
+    annotations = [(1000, "N")]
+    first = Q5E.match_peaks_to_annotations([1000, 1020], annotations, 20000)
+    second = Q5E.match_peaks_to_annotations([1020, 1000], annotations, 20000)
+    check(first["kept_rows"][0]["peak_index"] == 0 and
+          len(first["kept_rows"]) == 1,
+          "the first peak in detector order consumes the annotation")
+    check(second["kept_rows"][0]["r_sample"] == 1020,
+          "reordering the peaks changes which one matches")
+    check(len(second["peaks_without_annotation"]) == 1,
+          "and the other becomes an anchor")
+    check(Q5E.SOURCE_MATCH_CONTRACT["traversal"].startswith(
+        "peaks in detector order"),
+        "the contract fixes the traversal order this depends on")
+
+
+def test_source_equivalence_is_declared_unproven():
+    """B1 — count reproduction is necessary, not a proof of equivalence."""
+    status = Q5E.source_match_equivalence_status()
+    check(status["status"] == Q5E.SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+          "the adapter does not claim to be proven source-equivalent")
+    check(status["registered_file_sha256"] ==
+          Q5E.M4_SOURCE_MAP_HASHES["data.py"],
+          "it pins the digest of the file it was written against")
+    check(set(status["contract"]) == set(Q5E.SOURCE_MATCH_CONTRACT),
+          "and carries every fixed control-flow decision")
+    check("necessary condition only" in status["note"],
+          "the note says count reproduction does not settle equivalence")
+    fingerprint = Q5E.source_match_adapter_fingerprint()
+    check(len(fingerprint) == 64 and
+          fingerprint == Q5E.source_match_adapter_fingerprint(),
+          "the adapter fingerprint is a stable sha256")
+
+
+def test_rr_features_shape_is_validated_exactly():
+    """B2 — ragged, 1-D, wrong width and wrong row count are all refused."""
+    good = [[1.0, 2.0, 0, 0, 0, 0, 0], [1.0, 2.0, 0, 0, 0, 0, 0]]
+    pre, post = Q5E._rr_columns(good, expected_rows=2)
+    check(pre == [1.0, 1.0] and post == [2.0, 2.0],
+          "a correct (n, 7) result yields the registered two columns")
+    bad = {
+        "ragged": [[1.0] * 7, [1.0] * 6],
+        "one_dimensional": [1.0, 2.0, 3.0],
+        "too_narrow": [[1.0] * 6],
+        "too_wide": [[1.0] * 8],
+        "a_string": "1234567",
+    }
+    for label, value in bad.items():
+        try:
+            Q5E._rr_columns(value, expected_rows=len(good))
+            raise AssertionError(f"{label} was accepted")
+        except Q5E.DiagnosticInputMismatch as error:
+            check(Q5E.M4_RR_MISMATCH in str(error),
+                  f"{label} is refused as {Q5E.M4_RR_MISMATCH}")
+    try:
+        Q5E._rr_columns(good, expected_rows=3)
+        raise AssertionError("a row-count mismatch was accepted")
+    except Q5E.DiagnosticInputMismatch as error:
+        check("row-count mismatch" in str(error) or "rows for" in str(error),
+              "a row count that disagrees with the kept peaks is refused")
+
 
 
 def declared_tests() -> List[str]:
