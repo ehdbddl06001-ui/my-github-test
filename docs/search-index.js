@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 995,
+  "total": 997,
   "byType": {
-   "anatomy": 208,
+   "anatomy": 210,
    "kmle": 523,
    "usmle": 60,
    "paper": 187,
@@ -15,7 +15,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 208,
+   "Anatomy": 210,
    "Cardiology": 79,
    "Nephrology": 57,
    "Infectious Disease": 55,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 612,
+   "high": 614,
    "medium": 334,
    "low": 49
   },
-  "tagCount": 1856
+  "tagCount": 1863
  },
  "docs": [
   {
@@ -3153,6 +3153,44 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/answers/a2-tagging2.md",
    "snippet": "Answer only 자료 파싱 결과 총 713개 구조물, 번호 항목(과거 태깅 답 후보) 82개. 부위 분포: abdomen 216, head 140, multi 1, neck 50, pelvis perineum 163, upper limb 143 번호 항목은 answer only candidate: true / priority: high 로만 기록한다. 원래 질문·핀 위치·사진을 복원한 것처럼 가장하지 않는다. 새 문항은 ",
    "text": "Anatomy Tagging 2 answer-only material tagging 2차.pdf Answer only 자료 파싱 결과 총 713개 구조물, 번호 항목(과거 태깅 답 후보) 82개. 부위 분포: abdomen 216, head 140, multi 1, neck 50, pelvis perineum 163, upper limb 143 번호 항목은 answer only candidate: true / priority: high 로만 기록한다. 원래 질문·핀 위치·사진을 복원한 것처럼 가장하지 않는다. 새 문항은 강의 PDF에서 같은 구조가 확인될 때만 생성한다(아니면 needs review 격리)."
+  },
+  {
+   "id": "anatomy-2026-0016",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "등세모근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "등세모근",
+    "trapezius",
+    "등 얕은층",
+    "spotter",
+    "복원"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p1 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0016.md",
+   "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기가 그림 위에 많던 어려운 케이스의 복원 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p",
+   "text": "Anatomy 등세모근 실사 spotter (필기 제거·복원본) 등세모근 trapezius 등 얕은층 spotter 복원 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p1 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기가 그림 위에 많던 어려운 케이스의 복원 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf1 clean.png ."
+  },
+  {
+   "id": "anatomy-2026-0015",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "위볼기동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "위볼기동맥",
+    "superior gluteal artery",
+    "볼기",
+    "spotter",
+    "복원"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p1 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0015.md",
+   "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf2 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기 제거·복원 파이프라인 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf",
+   "text": "Anatomy 위볼기동맥 실사 spotter (필기 제거·복원본) 위볼기동맥 superior gluteal artery 볼기 spotter 복원 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p1 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf2 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기 제거·복원 파이프라인 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf2 clean.png ."
   },
   {
    "id": "anatomy-2026-0014",
