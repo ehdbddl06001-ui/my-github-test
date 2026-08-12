@@ -2220,7 +2220,8 @@ def design_card() -> str:
     """A constants card that opens nothing.  Safe to print anywhere."""
     return "\n".join([
         f"{EXPERIMENT_ID} / {SUBSTAGE} - read-only preflight, not a result",
-        f"  spec                 : {SPEC_PATH}",
+        f"  parent spec          : {SPEC_PATH}",
+        f"  execution contract   : {CONTRACT_PATH}",
         f"  scope                : P1 + P2 (P3 is NOT in scope)",
         f"  P1 expected files    : {len(BJ.mitdb_expected_files())}",
         f"  P1 publisher-listed  : {MITDB_PUBLISHER_LISTED_FILES} "
