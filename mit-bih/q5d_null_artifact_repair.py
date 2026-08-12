@@ -45,14 +45,45 @@ MODULE_VERSION = 2
 SPEC_PATH = "experiments/specs/EXP-2026-009-q5d-null-artifact-repair.md"
 NOTEBOOK_PATH = "notebooks/quest57_q5d_null_artifact_repair.ipynb"
 MODULE_PATH = "mit-bih/q5d_null_artifact_repair.py"
+#: Where the repository root is, when a caller did not say.  A run should pass
+#: `repo_root` explicitly; this is only so the identity check has something to
+#: fail against rather than crashing on `None`.
+ROOT_GUESS = os.path.dirname(HERE)
 ORIGINATING_DECISION = ("experiments/specs/"
                         "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md")
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Approval.  Its own token: approving this repair is not approving the Q5-E
-# PREP, the Q5-E audit, or a P1/P2 re-run, and none of those approves this.
+# ─── APPROVAL BLOCK START ────────────────────────────────────────────────────
+# Everything between these markers is approval metadata and the guard.  It is
+# excluded from `module_science_digest()`, which is what makes an
+# execution-enable PR verifiable: that PR may change this block and nothing
+# else, and the science digest proves it.  Do not put logic here.
+#
+# Its own token: approving this repair is not approving the Q5-E PREP, the
+# Q5-E audit, or a P1/P2 re-run, and none of those approves this.  The Q5-E
+# PREP token is never translated or reused.
 # ─────────────────────────────────────────────────────────────────────────────
 EXECUTION_APPROVAL_TOKEN = "q5d-null-artifact-repair-execution-approved-by-user"
+
+#: The commit Codex reviewed, recorded **by a later commit**.  This is how the
+#: pin avoids being self-referential: a commit SHA written into the very commit
+#: it names cannot exist, and a 40-hex string typed into a notebook is not an
+#: approval — it is an assertion by whoever typed it.  So the approved
+#: implementation is named here, in the enable PR, pointing *backwards*; the
+#: notebook measures the actual `HEAD` it is running and the two are checked
+#: against each other.
+APPROVED_IMPLEMENTATION_COMMIT: Optional[str] = None
+
+#: LF-normalised digests of what the review actually covered.  The repair
+#: module is **not** in this table: a record inside a file cannot certify that
+#: file.  What covers the module is `module_science_digest()` — the module with
+#: this approval block removed — so an enable PR that only flips the guard
+#: leaves it unchanged and a science change is visible.
+APPROVED_ARTIFACT_DIGESTS: Dict[str, Optional[str]] = {
+    "spec_lf_sha256": None,
+    "notebook_lf_sha256": None,
+    "frozen_q5d_lf_sha256": None,
+    "module_science_lf_sha256": None,
+}
 
 #: Closed.  The record is written down rather than implied by an absent check:
 #: a deleted guard reads identically whether an approval happened or someone
@@ -89,6 +120,7 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     ),
     "recorded_in": SPEC_PATH,
 }
+# ─── APPROVAL BLOCK END ──────────────────────────────────────────────────────
 APPROVAL_NOTE = (
     "This repair is implemented but NOT approved for execution.  An approval "
     "would cover: reading the existing shards and the existing eleven bundle "
@@ -162,32 +194,36 @@ NPZ_ARRAYS: Tuple[str, ...] = tuple(
     sorted(MEMBER_NAME_BY_FAMILY[f] for f in REGISTERED_FAMILIES)
 ) + (MAX_MEMBER_NAME,)
 
-#: Codex's 2026-08-12 review named four different members —
-#: `j_null_max`, `j_null_cross_record`, `j_null_within_record`,
-#: `j_null_rr_mismatch`.  Three of them appear **nowhere** in the frozen module
-#: or anywhere in this repository, and which frozen family each one denotes is
-#: not derivable from anything here.  Adopting them would mean guessing a
-#: mapping between named null families, which is a scientific labelling
-#: decision and not the implementer's to make: guessing wrong would mislabel a
-#: published artifact in a way no later check could detect, because every
-#: structural clause would still pass.
+#: **Resolved (N1, 2026-08-12).**  The native frozen family names are retained
+#: and the proposed aliases are rejected — not deferred.  The reason is
+#: substantive rather than procedural: `order_shuffle` and `circular_shift` are
+#: *both* within-record manipulations, so no bijection exists between the three
+#: families and the proposed
+#: `j_null_cross_record` / `j_null_within_record` / `j_null_rr_mismatch`, and
+#: nothing uniquely corresponds to `rr_mismatch`.  Any mapping would be a
+#: guess, and a wrong one would mislabel a published artifact while passing
+#: every structural clause.
 #:
-#: So the proposal is recorded here, unresolved, and adopting it is a one-table
-#: edit to `MEMBER_NAME_BY_FAMILY` once the design owner supplies the mapping.
-#: The earlier D3 decision — recorded in the merged EXP-2026-008 Decision log —
-#: named the frozen families plus `j_null_max`, which is what is active.
-PROPOSED_MEMBER_NAMES: Tuple[str, ...] = (
-    "j_null_max", "j_null_cross_record", "j_null_within_record",
-    "j_null_rr_mismatch")
-MEMBER_NAMING_UNRESOLVED = True
+#: Kept as an audit trail only.  Nothing reads it.
+REJECTED_PROPOSAL: Dict[str, object] = {
+    "proposed_names": ("j_null_max", "j_null_cross_record",
+                       "j_null_within_record", "j_null_rr_mismatch"),
+    "decision": "rejected",
+    "decided_on": "2026-08-12",
+    "reason": ("no bijective semantic mapping exists: order_shuffle and "
+               "circular_shift are both within-record manipulations and "
+               "nothing uniquely corresponds to rr_mismatch"),
+    "recorded_in": SPEC_PATH,
+}
+MEMBER_NAMING_UNRESOLVED = False
 MEMBER_NAMING_NOTE = (
-    "The active NPZ member names are the frozen control families plus "
-    "j_null_max, as fixed by D3 in the merged EXP-2026-008 Decision log.  The "
-    "2026-08-12 review proposed j_null_cross_record / j_null_within_record / "
-    "j_null_rr_mismatch instead; those names appear nowhere in the frozen "
-    "module or this repository and no family-to-name mapping is recorded, so "
-    "they are NOT adopted by guesswork.  Supply the mapping and "
-    "MEMBER_NAME_BY_FAMILY is the single edit.")
+    "The NPZ member names are the native frozen control family names plus "
+    "j_null_max, as fixed by D3 and confirmed by N1.  The proposed aliases "
+    "j_null_cross_record / j_null_within_record / j_null_rr_mismatch were "
+    "rejected because no bijective semantic mapping exists — order_shuffle and "
+    "circular_shift are both within-record manipulations and nothing uniquely "
+    "corresponds to rr_mismatch.  Computed values and array order are "
+    "unchanged by this decision.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Newline convention
@@ -208,6 +244,10 @@ NEWLINE_CONVENTION = (
 # ─────────────────────────────────────────────────────────────────────────────
 NOT_APPROVED = "REPAIR_NOT_APPROVED"
 FROZEN_MODULE_MOVED = "REPAIR_FROZEN_MODULE_MOVED"
+EXECUTION_IDENTITY_UNVERIFIED = "REPAIR_EXECUTION_IDENTITY_UNVERIFIED"
+READONLY_SCOPE_UNPROVEN = "REPAIR_READONLY_SCOPE_UNPROVEN"
+BYTES_MOVED_AFTER_BRIDGE = "REPAIR_BYTES_MOVED_AFTER_BRIDGE"
+OUTPUT_FOLDER_ID_UNRESOLVED = "REPAIR_OUTPUT_FOLDER_ID_UNRESOLVED"
 UNDEFINED_NEWLINE = "REPAIR_UNDEFINED_NEWLINE"
 INPUT_UNQUALIFIED = "REPAIR_INPUT_UNQUALIFIED"
 SUMMARY_DISAGREES = "REPAIR_SUMMARY_DISAGREES"
@@ -224,11 +264,25 @@ REPAIR_COMPLETE = "REPAIR_COMPLETE"
 INCOMPLETE_PRESERVED = "REPAIR_INCOMPLETE_TARGET_PRESERVED"
 
 STOP_REASONS: Tuple[str, ...] = (
-    NOT_APPROVED, FROZEN_MODULE_MOVED, UNDEFINED_NEWLINE, INPUT_UNQUALIFIED,
-    SUMMARY_DISAGREES, NPZ_CONTRACT_FAILED, NUMPY_UNAVAILABLE,
-    SOURCE_BUNDLE_UNEXPECTED, SOURCE_CHANGED_DURING_RUN, TARGET_EXISTS,
-    TARGET_UNSAFE, COPY_NOT_BYTE_IDENTICAL,
+    NOT_APPROVED, FROZEN_MODULE_MOVED, EXECUTION_IDENTITY_UNVERIFIED,
+    READONLY_SCOPE_UNPROVEN, UNDEFINED_NEWLINE, INPUT_UNQUALIFIED,
+    BYTES_MOVED_AFTER_BRIDGE, SUMMARY_DISAGREES, NPZ_CONTRACT_FAILED,
+    NUMPY_UNAVAILABLE, SOURCE_BUNDLE_UNEXPECTED, SOURCE_CHANGED_DURING_RUN,
+    TARGET_EXISTS, TARGET_UNSAFE, COPY_NOT_BYTE_IDENTICAL,
+    OUTPUT_FOLDER_ID_UNRESOLVED,
 )
+
+#: The one seam a synthetic fixture may use to skip Drive.  Production never
+#: accepts it: `run_repair()` requires a real adapter route, and the
+#: synthetic-only entry point requires this marker explicitly, so "no adapter"
+#: can never be reached by forgetting an argument.
+SYNTHETIC_FIXTURE_MARKER = "q5d-null-repair-synthetic-fixture-not-a-result"
+MODE_PRODUCTION = "production"
+MODE_SYNTHETIC = "synthetic_fixture"
+#: A synthetic run's terminal status.  Deliberately not `REPAIR_COMPLETE`: a
+#: fixture result must not be mistakable for a publishable one, and this is what
+#: makes "REPAIR_COMPLETE with no resolved folder id" structurally impossible.
+SYNTHETIC_COMPLETE = "REPAIR_COMPLETE_SYNTHETIC_FIXTURE"
 
 FAILURE_PUBLICATION_CONTRACT = (
     "A stop before the target directory is created leaves no directory at all. "
@@ -390,6 +444,116 @@ def assert_frozen_q5d_unchanged() -> Dict[str, object]:
                 newline_convention=NEWLINE_CONVENTION)
 
 
+APPROVAL_BLOCK_START = "# ─── APPROVAL BLOCK START"
+APPROVAL_BLOCK_END = "# ─── APPROVAL BLOCK END"
+
+
+def module_science_digest(path: Optional[str] = None) -> Dict[str, object]:
+    """This module's digest with the approval block removed.
+
+    A record inside a file cannot certify that file — so the approval metadata
+    is fenced off and everything *else* is hashed.  An execution-enable PR may
+    change the fenced block and nothing more, and this digest proves it: it is
+    identical before and after such a PR, and it moves the moment any logic
+    changes.  That is what lets "the approval only flipped a flag" be a checked
+    claim rather than a promise in a commit message.
+    """
+    with open(path or os.path.abspath(__file__), "rb") as handle:
+        text = normalise_newlines(handle.read(), "repair module")
+    lines = text.split(b"\n")
+    kept: List[bytes] = []
+    inside = False
+    starts = ends = 0
+    for line in lines:
+        if line.startswith(APPROVAL_BLOCK_START.encode("utf-8")):
+            inside, starts = True, starts + 1
+            continue
+        if line.startswith(APPROVAL_BLOCK_END.encode("utf-8")):
+            inside, ends = False, ends + 1
+            continue
+        if not inside:
+            kept.append(line)
+    if starts != 1 or ends != 1:
+        raise RepairError(
+            EXECUTION_IDENTITY_UNVERIFIED,
+            f"the approval block is not delimited exactly once "
+            f"({starts} start, {ends} end markers); the science digest would "
+            f"not mean what it claims")
+    return {"module_science_lf_sha256": _sha256(b"\n".join(kept)),
+             "excluded_lines": len(lines) - len(kept),
+             "convention": ("LF-normalised digest of the module with the "
+                            "approval block excluded, so an enable PR that "
+                            "touches only approval metadata leaves it equal")}
+
+
+def verify_execution_identity(repo_root: str, execution_head: Optional[str],
+                             ) -> Dict[str, object]:
+    """Is the code on disk the implementation that was approved, and which
+    commit is actually running?
+
+    Two separate facts, deliberately not collapsed:
+
+    * **approved implementation** — named by `APPROVED_IMPLEMENTATION_COMMIT`
+      and `APPROVED_ARTIFACT_DIGESTS`, both written by a *later* enable PR so
+      the record points backwards and is never self-referential;
+    * **execution head** — the commit actually checked out, measured from git by
+      the notebook and passed in.  A 40-hex string typed into a cell is an
+      assertion by whoever typed it, so it is recorded as an observation and
+      then checked against the approved digests rather than believed.
+
+    Every clause must hold before any registered asset is opened.
+    """
+    problems: List[str] = []
+    if not APPROVED_IMPLEMENTATION_COMMIT:
+        problems.append(
+            "no approved implementation commit is recorded; an execution "
+            "approval PR records the reviewed commit before a run is possible")
+    elif not (isinstance(APPROVED_IMPLEMENTATION_COMMIT, str)
+              and len(APPROVED_IMPLEMENTATION_COMMIT) == 40
+              and all(c in _HEX for c in APPROVED_IMPLEMENTATION_COMMIT)):
+        problems.append(
+            f"the approved implementation commit "
+            f"{APPROVED_IMPLEMENTATION_COMMIT!r} is not a 40-hex sha")
+
+    if not (isinstance(execution_head, str) and len(execution_head) == 40
+            and all(c in _HEX for c in execution_head)):
+        problems.append(
+            f"execution_head {execution_head!r} is not a 40-hex sha measured "
+            f"from git; the module carries no commit of its own to fall back on")
+
+    observed = artifact_identities(repo_root)
+    science = module_science_digest(os.path.join(repo_root, MODULE_PATH))
+    measured = {
+        "spec_lf_sha256": observed["spec"]["lf_normalized_sha256"],
+        "notebook_lf_sha256": observed["notebook"]["lf_normalized_sha256"],
+        "frozen_q5d_lf_sha256": frozen_q5d_digests()["lf_normalized_sha256"],
+        "module_science_lf_sha256": science["module_science_lf_sha256"],
+    }
+    for field, expected in APPROVED_ARTIFACT_DIGESTS.items():
+        if not expected:
+            problems.append(f"{field} is not recorded in the approved "
+                            f"implementation")
+        elif measured.get(field) != expected:
+            problems.append(f"{field}: on disk {measured.get(field)} != "
+                            f"approved {expected}")
+    if problems:
+        raise RepairError(
+            EXECUTION_IDENTITY_UNVERIFIED,
+            "the running code is not verifiably the approved implementation:\n"
+            "  " + "\n  ".join(problems))
+    return {
+        "approved_implementation_commit": APPROVED_IMPLEMENTATION_COMMIT,
+        "execution_head": execution_head,
+        "head_equals_approved_commit": (
+            execution_head == APPROVED_IMPLEMENTATION_COMMIT),
+        "approved_artifact_digests": dict(APPROVED_ARTIFACT_DIGESTS),
+        "measured_artifact_digests": measured,
+        "artifact_identities": observed,
+        "module_science_digest": science,
+        "self_referential": False,
+    }
+
+
 def artifact_identities(repo_root: str) -> Dict[str, object]:
     """LF-normalised and raw digests of the module, spec and notebook.
 
@@ -447,6 +611,142 @@ class FolderInventoryAdapter(object):
     def list_children(self, folder_id: str
                       ) -> Sequence[Mapping[str, object]]:  # pragma: no cover
         raise NotImplementedError
+
+
+#: Exactly one scope.  A broader credential is not accepted merely because it
+#: includes this one: "read-only" would then be a claim the code cannot support.
+DRIVE_READONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
+#: What the adapter can do, recorded so a reviewer does not have to read it to
+#: find out.  `files.list` is the whole surface.
+ADAPTER_OPERATIONS: Tuple[str, ...] = ("files.list",)
+RUNTIME_DEPENDENCIES: Dict[str, str] = {
+    "googleapiclient": "google-api-python-client",
+    "google.auth": "google-auth",
+}
+
+
+def check_runtime_dependencies() -> Dict[str, object]:
+    """What is importable, before a credential is minted.
+
+    Nothing is installed or upgraded to tidy the record: a version that cannot
+    be determined is written as `unavailable`, never guessed.
+    """
+    import importlib
+    out: Dict[str, object] = {}
+    for module_name, distribution in RUNTIME_DEPENDENCIES.items():
+        try:
+            importlib.import_module(module_name)
+            present = True
+        except Exception:                                # pragma: no cover
+            present = False
+        version = "unavailable"
+        try:                                             # pragma: no cover
+            from importlib import metadata
+            version = metadata.version(distribution)
+        except Exception:
+            pass
+        out[distribution] = {"importable": present, "version": version}
+    return out
+
+
+class DriveAuthenticator(object):
+    """The one seam a credential comes from.
+
+    Authentication lives here rather than in a notebook cell: a cell that built
+    its own service would mint a credential the terminal guard never saw, which
+    is the guard defeated by convenience.
+    """
+
+    def credential(self, scopes: Sequence[str]):         # pragma: no cover
+        raise NotImplementedError
+
+
+class ColabReadOnlyAuthenticator(DriveAuthenticator):    # pragma: no cover
+    """Colab's user credential, requested with exactly the read-only scope."""
+
+    def credential(self, scopes: Sequence[str]):
+        from google.colab import auth as colab_auth
+        import google.auth
+        colab_auth.authenticate_user()
+        credential, _project = google.auth.default(scopes=list(scopes))
+        return credential
+
+
+def default_service_factory(credential):                 # pragma: no cover
+    """A Drive v3 client built on an explicit credential.
+
+    Never a default client: a default client silently adopts an ambient
+    credential whose scope nobody checked.
+    """
+    from googleapiclient.discovery import build
+    return build("drive", "v3", credentials=credential,
+                 cache_discovery=False)
+
+
+def audit_credential_scopes(credential) -> Dict[str, object]:
+    """What was asked for, what came back, and whether that is exactly one scope.
+
+    A credential whose scopes cannot be observed is not accepted as read-only:
+    "read-only" would be an unverifiable claim.  Nothing here records a token,
+    a credential body or an authorization header.
+    """
+    observed = getattr(credential, "scopes", None)
+    if observed is None:
+        observed_list: List[str] = []
+        observable = False
+    else:
+        observed_list = sorted(str(s) for s in observed)
+        observable = True
+    return {
+        "requested_scopes": [DRIVE_READONLY_SCOPE],
+        "observed_scopes": observed_list,
+        "scopes_observable": observable,
+        "exact_readonly_scope_proven": (observable
+                                        and observed_list
+                                        == [DRIVE_READONLY_SCOPE]),
+        "credential_type": type(credential).__name__,
+        "credential_recorded": False,
+    }
+
+
+def build_drive_adapter(approval: Optional[str],
+                        authenticator: Optional[DriveAuthenticator] = None,
+                        service_factory=None) -> Tuple[FolderInventoryAdapter,
+                                                       Dict[str, object]]:
+    """Mint a credential, prove its scope, then build the read-only adapter.
+
+    Called **below** the terminal guard and after the dependency check, so an
+    unapproved run never reaches an authenticator, a service factory or the
+    Drive API.  Order inside is the same principle: the scope is proven before
+    a service exists, because a service built on an unaudited credential has
+    already had the access this check exists to bound.
+    """
+    require_execution_approval(approval, "a Drive credential")
+    _terminal_execution_guard()
+    dependencies = check_runtime_dependencies()
+    authenticator = authenticator or ColabReadOnlyAuthenticator()
+    factory = service_factory or default_service_factory
+
+    credential = authenticator.credential([DRIVE_READONLY_SCOPE])
+    audit = audit_credential_scopes(credential)
+    if not audit["exact_readonly_scope_proven"]:
+        raise RepairError(
+            READONLY_SCOPE_UNPROVEN,
+            f"the credential does not carry exactly "
+            f"{DRIVE_READONLY_SCOPE!r}: observed {audit['observed_scopes']} "
+            f"(observable: {audit['scopes_observable']}).  A broader "
+            f"credential is not accepted merely because it includes the scope "
+            f"this repair needs.")
+    service = factory(credential)
+    adapter = GoogleDriveFolderInventory(service)
+    audit.update({
+        "service_api": "drive", "service_version": "v3",
+        "adapter_operations": list(ADAPTER_OPERATIONS),
+        "no_write_adapter_methods": True,
+        "runtime_dependencies": dependencies,
+        "authenticated_below_terminal_guard": True,
+    })
+    return adapter, audit
 
 
 class GoogleDriveFolderInventory(FolderInventoryAdapter):   # pragma: no cover
@@ -564,6 +864,11 @@ def bridge_mount_to_folder_id(adapter: FolderInventoryAdapter, folder_id: str,
     by_name = {str(c["name"]): c for c in inventory["children"]}
     rows: List[Dict[str, object]] = []
     problems: List[str] = []
+    #: The bytes the bridge itself read.  Everything downstream judges *these*
+    #: — a later read is a different moment, and on a Drive mount that is not
+    #: hypothetical.  A re-read still happens, to detect the substitution
+    #: rather than merely avoid it.
+    bridged_bytes: Dict[str, bytes] = {}
     for name in expected_names:
         row: Dict[str, object] = {"name": name}
         child = by_name.get(name)
@@ -612,6 +917,8 @@ def bridge_mount_to_folder_id(adapter: FolderInventoryAdapter, folder_id: str,
         row["matched_on"] = matched_on
         rows.append(row)
 
+        bridged_bytes[name] = body
+
     unexpected = sorted(set(by_name) - set(expected_names))
     if unexpected:
         problems.append(
@@ -642,7 +949,219 @@ def bridge_mount_to_folder_id(adapter: FolderInventoryAdapter, folder_id: str,
                 if set(r.get("matched_on") or []) == {"name", "size"}),
         },
         "bridged": True,
+        "bytes_captured": len(bridged_bytes),
+    }, bridged_bytes
+
+
+def assert_bytes_unmoved_since_bridge(mount_dir: str, names: Sequence[str],
+                                      bridged: Mapping[str, bytes]
+                                      ) -> Dict[str, object]:
+    """Re-read and compare against what the bridge captured.
+
+    Using the bridged bytes downstream already prevents judging one file and
+    publishing another.  This *detects* the substitution as well, because a
+    file that changed between the folder-id bridge and the judgement is a
+    finding — a same-size replacement would otherwise pass silently, and
+    silence is exactly what makes it dangerous.
+    """
+    problems: List[str] = []
+    for name in names:
+        path = os.path.join(mount_dir, name)
+        try:
+            with open(path, "rb") as handle:
+                now = handle.read()
+        except OSError as error:
+            problems.append(f"{name}: unreadable after the bridge ({error})")
+            continue
+        if _sha256(now) != _sha256(bridged[name]):
+            problems.append(
+                f"{name}: {_sha256(now)} now, {_sha256(bridged[name])} when "
+                f"the folder id was bridged "
+                f"({len(now)} B vs {len(bridged[name])} B)")
+    if problems:
+        raise RepairError(
+            BYTES_MOVED_AFTER_BRIDGE,
+            f"bytes under {mount_dir!r} changed after they were tied to their "
+            f"folder id:\n  " + "\n  ".join(problems[:10]))
+    return {"checked": len(names), "ok": True}
+
+
+def bridge_runs_parent(adapter: FolderInventoryAdapter, runs_parent_dir: str,
+                       source_dir: str, target_dir: str,
+                       approval: Optional[str],
+                       parent_folder_id: str = "",
+                       source_folder_id: str = "") -> Dict[str, object]:
+    """Prove the write destination is the registered parent, before any mkdir.
+
+    A mount path is a name, and a name is exactly what this module refuses to
+    treat as identity everywhere else — so the parent gets the same treatment
+    as the inputs.  The link between the two worlds is the source bundle: it
+    has a registered folder id *and* a mount path, so if the registered source
+    id is a direct child of the registered parent id, and the source mount's
+    parent directory is the runs-parent mount, then the runs-parent mount is
+    the registered parent's mount.  Injecting some other directory under the
+    same `RUNS_PARENT_DIR` string breaks the second half.
+    """
+    require_execution_approval(approval, f"runs parent {runs_parent_dir!r}")
+    _terminal_execution_guard()
+    parent_folder_id = parent_folder_id or RUNS_PARENT_FOLDER_ID
+    source_folder_id = source_folder_id or SOURCE_BUNDLE_FOLDER_ID
+
+    problems: List[str] = []
+    inventory = inventory_folder(adapter, parent_folder_id)
+    children = [c for c in inventory["children"]
+                if str(c["file_id"]) == source_folder_id]
+    if len(children) != 1:
+        problems.append(
+            f"the registered source folder id {source_folder_id} is not a "
+            f"single direct child of the registered parent id "
+            f"{parent_folder_id} (found {len(children)})")
+    elif not children[0]["is_folder"] or children[0]["trashed"] \
+            or children[0]["is_shortcut"]:
+        problems.append(
+            f"the source child of {parent_folder_id} is not a live folder "
+            f"(folder={children[0]['is_folder']} "
+            f"trashed={children[0]['trashed']} "
+            f"shortcut={children[0]['is_shortcut']})")
+
+    if not runs_parent_dir or not os.path.isdir(runs_parent_dir):
+        problems.append(f"the runs parent mount {runs_parent_dir!r} is not a "
+                        f"directory")
+    else:
+        source_parent = os.path.dirname(_real(os.path.normpath(source_dir)))
+        if source_parent != _real(runs_parent_dir):
+            problems.append(
+                f"the source bundle's mount parent {source_parent!r} is not "
+                f"the runs parent mount {_real(runs_parent_dir)!r}; the path "
+                f"given cannot be the registered parent id's mount")
+        target_parent = os.path.dirname(_real(os.path.normpath(target_dir)))
+        if target_parent != _real(runs_parent_dir):
+            problems.append(
+                f"the target's parent {target_parent!r} is not the runs "
+                f"parent mount")
+        walk = os.path.normpath(runs_parent_dir)
+        while True:
+            if os.path.lexists(walk) and _is_link_like(walk):
+                problems.append(f"{walk!r} is a symlink or reparse point")
+            nxt = os.path.dirname(walk)
+            if nxt == walk:
+                break
+            walk = nxt
+
+    if problems:
+        raise RepairError(
+            TARGET_UNSAFE,
+            "the runs parent could not be tied to its registered folder id:\n"
+            "  " + "\n  ".join(problems))
+    return {
+        "parent_folder_id": parent_folder_id,
+        "source_folder_id": source_folder_id,
+        "source_is_direct_child": True,
+        "runs_parent_mount": os.path.basename(
+            os.path.normpath(runs_parent_dir)),
+        "source_mount_parent_matches": True,
+        "target_parent_matches": True,
+        "link_like_component": False,
     }
+
+
+def resolve_output_folder_id(adapter: FolderInventoryAdapter,
+                             parent_folder_id: str, name: str,
+                             approval: Optional[str],
+                             attempts: int = 5, sleeper=None,
+                             delay_seconds: float = 2.0) -> Dict[str, object]:
+    """The new folder's own Drive id, with a bounded read-only retry.
+
+    Drive is eventually consistent: a folder that exists on the mount can be
+    briefly invisible to `files.list`.  That is not a reason to give the run a
+    pass, and it is not a reason to create a second folder either — so this
+    retries a few times, read-only, and then stops.
+
+    Every attempt is a list call and nothing else.  Nothing is created, renamed
+    or deleted here under any outcome.
+    """
+    require_execution_approval(approval, f"folder id {parent_folder_id}")
+    _terminal_execution_guard()
+    import time
+    sleeper = sleeper or time.sleep
+    seen: List[Dict[str, object]] = []
+    for attempt in range(1, max(1, int(attempts)) + 1):
+        inventory = inventory_folder(adapter, parent_folder_id)
+        matches = [c for c in inventory["children"]
+                   if str(c["name"]) == name and c["is_folder"]
+                   and not c["trashed"] and not c["is_shortcut"]]
+        seen.append({"attempt": attempt, "matches": len(matches)})
+        if len(matches) == 1:
+            return {"folder_id": matches[0]["file_id"], "name": name,
+                    "parent_folder_id": parent_folder_id,
+                    "attempts": attempt, "history": seen,
+                    "method": inventory["method"], "resolved": True}
+        if len(matches) > 1:
+            raise RepairError(
+                OUTPUT_FOLDER_ID_UNRESOLVED,
+                f"{len(matches)} folders named {name!r} under parent id "
+                f"{parent_folder_id}; a result that cannot be named by one id "
+                f"cannot be accepted")
+        if attempt < max(1, int(attempts)):
+            sleeper(delay_seconds)
+    raise RepairError(
+        OUTPUT_FOLDER_ID_UNRESOLVED,
+        f"the corrective folder {name!r} was written and verified but its "
+        f"Drive folder id did not become visible under parent id "
+        f"{parent_folder_id} within {attempts} read-only attempts.  The output "
+        f"is preserved and unregistered; re-resolve it with "
+        f"reconcile_output_folder_id() rather than writing another folder.")
+
+
+def reconcile_output_folder_id(adapter: FolderInventoryAdapter,
+                               target_dir: str, snapshot_digests:
+                               Mapping[str, str], npz_sha256: str,
+                               approval: Optional[str],
+                               parent_folder_id: str = "",
+                               attempts: int = 5, sleeper=None
+                               ) -> Dict[str, object]:
+    """Re-resolve a preserved output's folder id, read-only, changing nothing.
+
+    For the case `resolve_output_folder_id()` gave up on.  It re-checks the
+    parent folder id, the exact folder name, the exact twelve-file listing and
+    every digest before returning an id, because an id attached to a folder
+    nobody re-verified would be worse than no id at all.  It never writes,
+    never creates a second folder, and never edits the existing one.
+    """
+    require_execution_approval(approval, f"reconciling {target_dir!r}")
+    _terminal_execution_guard()
+    name = os.path.basename(os.path.normpath(target_dir))
+    listing = _listing(target_dir)
+    problems: List[str] = []
+    if listing != sorted(BUNDLE_FILES):
+        problems.append(f"listing {listing} != the twelve "
+                        f"{sorted(BUNDLE_FILES)}")
+    expected = dict(snapshot_digests)
+    expected[MISSING_ARTIFACT] = npz_sha256
+    observed: Dict[str, str] = {}
+    for entry in listing:
+        try:
+            with open(os.path.join(target_dir, entry), "rb") as handle:
+                observed[entry] = _sha256(handle.read())
+        except OSError as error:                         # pragma: no cover
+            problems.append(f"{entry}: unreadable ({error})")
+            continue
+        if entry in expected and observed[entry] != expected[entry]:
+            problems.append(f"{entry}: {observed[entry]} != expected "
+                            f"{expected[entry]}")
+    if problems:
+        raise RepairError(
+            OUTPUT_FOLDER_ID_UNRESOLVED,
+            "the preserved output no longer matches what was written, so its "
+            "folder id may not be resolved:\n  " + "\n  ".join(problems[:10]),
+            incomplete_directory=target_dir, listing=listing)
+    resolved = resolve_output_folder_id(
+        adapter, parent_folder_id or RUNS_PARENT_FOLDER_ID, name, approval,
+        attempts=attempts, sleeper=sleeper)
+    return {"reconciled": True, "folder_id": resolved["folder_id"],
+            "name": name, "listing": listing, "observed": observed,
+            "attempts": resolved["attempts"],
+            "wrote_nothing": True}
 
 
 def confirm_folder_id_of_child(adapter: FolderInventoryAdapter,
@@ -927,9 +1446,13 @@ def qualify_shards(shard_dir: str, manifest: Mapping[str, object],
     wanted = dict(expected if expected is not None else expected_shard_set())
 
     bridge: Optional[Dict[str, object]] = None
+    bridged: Dict[str, bytes] = {}
     if adapter is not None:
-        bridge = bridge_mount_to_folder_id(adapter, folder_id, shard_dir,
-                                           sorted(wanted), approval)
+        bridge, bridged = bridge_mount_to_folder_id(
+            adapter, folder_id, shard_dir, sorted(wanted), approval)
+        # Detect a substitution as well as avoid it: the judgement below reads
+        # the bridged bytes, and this proves nothing moved underneath them.
+        assert_bytes_unmoved_since_bridge(shard_dir, sorted(wanted), bridged)
 
     if not os.path.isdir(shard_dir):
         raise RepairError(INPUT_UNQUALIFIED,
@@ -961,8 +1484,14 @@ def qualify_shards(shard_dir: str, manifest: Mapping[str, object],
         path = os.path.join(shard_dir, name)
         expected_range = wanted[name]
         try:
-            with open(path, encoding="utf-8") as handle:
-                raw = json.load(handle)
+            if name in bridged:
+                # The bridged bytes are the authoritative ones; parsing them
+                # rather than re-opening keeps judgement and folder-id identity
+                # over the same snapshot.
+                raw = json.loads(bridged[name].decode("utf-8"))
+            else:
+                with open(path, encoding="utf-8") as handle:
+                    raw = json.load(handle)
         except (ValueError, UnicodeDecodeError, OSError) as error:
             problems.append(f"{name}: unreadable or malformed JSON ({error})")
             per_shard.append({"file": name, "readable": False})
@@ -1436,16 +1965,23 @@ def read_source_snapshot(source_dir: str, approval: Optional[str],
             f"unexpected={unexpected} subdirectories={subdirs}")
 
     bridge: Optional[Dict[str, object]] = None
-    if adapter is not None:
-        bridge = bridge_mount_to_folder_id(adapter, folder_id, source_dir,
-                                          SOURCE_BUNDLE_FILES, approval)
-
     blobs: Dict[str, bytes] = {}
-    for name in SOURCE_BUNDLE_FILES:
-        with open(os.path.join(source_dir, name), "rb") as handle:
-            blobs[name] = handle.read()
+    if adapter is not None:
+        bridge, blobs = bridge_mount_to_folder_id(
+            adapter, folder_id, source_dir, SOURCE_BUNDLE_FILES, approval)
+        # The snapshot *is* the bridged bytes — one read, tied to the folder
+        # id — and the re-read below turns a substitution into a finding
+        # instead of something that merely could not take effect.
+        assert_bytes_unmoved_since_bridge(source_dir, SOURCE_BUNDLE_FILES,
+                                          blobs)
+    else:
+        for name in SOURCE_BUNDLE_FILES:
+            with open(os.path.join(source_dir, name), "rb") as handle:
+                blobs[name] = handle.read()
     snapshot = SourceSnapshot(source_dir, blobs)
     return snapshot, {"folder_id": folder_id, "folder_id_bridge": bridge,
+                      "bytes_from": ("folder-id bridge" if adapter is not None
+                                     else "mount (synthetic fixture only)"),
                       **snapshot.inventory()}
 
 
@@ -1664,25 +2200,30 @@ def verify_corrective_bundle(target_dir: str, snapshot: SourceSnapshot,
 # ─────────────────────────────────────────────────────────────────────────────
 # The whole route
 # ─────────────────────────────────────────────────────────────────────────────
-def run_repair(shard_dir: str, source_dir: str, target_dir: str,
-               approval: Optional[str] = None,
-               adapter: Optional[FolderInventoryAdapter] = None,
-               runs_parent_dir: str = "",
-               total: int = N_REPLICATES,
-               expected_shards: Optional[Mapping[str, Tuple[int, int]]] = None,
-               require_numpy: bool = True,
-               repo_root: Optional[str] = None) -> Dict[str, object]:
-    """Qualify, reconstruct, cross-check, assemble, verify — or stop.
+def _route(shard_dir: str, source_dir: str, target_dir: str,
+           approval: Optional[str], adapter: Optional[FolderInventoryAdapter],
+           runs_parent_dir: str, total: int,
+           expected_shards: Optional[Mapping[str, Tuple[int, int]]],
+           require_numpy: bool, repo_root: Optional[str], mode: str,
+           auth_audit: Optional[Dict[str, object]],
+           execution_identity: Optional[Dict[str, object]],
+           resolve_attempts: int, sleeper) -> Dict[str, object]:
+    """The shared body.  Callers decide production or synthetic, never this.
 
     Order is the safety: nothing is created on disk until the shards have
     qualified, the arrays have been reconstructed, the summary has agreed and
-    the NPZ bytes have passed their contract under **both** readers.  A stop
-    before the claim leaves no directory; a stop after it preserves the partial
-    one and says so.
+    the NPZ bytes have passed their contract under both readers.  A stop before
+    the claim leaves no directory; **every** stop after it preserves the
+    partial one and reports its path and listing — which is why the tail of
+    this function runs inside one boundary rather than each step remembering to
+    attach that detail.
     """
-    require_execution_approval(approval, "the repair route")
     frozen = assert_frozen_q5d_unchanged()
-    _terminal_execution_guard()
+
+    parent_bridge = None
+    if adapter is not None:
+        parent_bridge = bridge_runs_parent(adapter, runs_parent_dir,
+                                           source_dir, target_dir, approval)
 
     snapshot, source = read_source_snapshot(source_dir, approval, adapter)
     manifest = snapshot.json(MANIFEST_FILE)
@@ -1712,37 +2253,61 @@ def run_repair(shard_dir: str, source_dir: str, target_dir: str,
     assembled = assemble_corrective_bundle(snapshot, target_dir, blob,
                                            approval, shard_dir,
                                            runs_parent_dir)
-    verified = verify_corrective_bundle(target_dir, snapshot,
-                                        contract["sha256"])
-    if not verified["ok"]:
-        raise RepairError(COPY_NOT_BYTE_IDENTICAL,
-                          "; ".join(str(p) for p in verified["problems"]),
-                          incomplete_directory=target_dir,
-                          listing=_listing(target_dir))
+    # ── Everything below has a directory on disk.  One boundary attaches the
+    #    preserved path and listing to whatever comes out, so no later step can
+    #    forget to and leave a reader unable to find the folder.
+    try:
+        verified = verify_corrective_bundle(target_dir, snapshot,
+                                            contract["sha256"])
+        if not verified["ok"]:
+            raise RepairError(COPY_NOT_BYTE_IDENTICAL,
+                              "; ".join(str(p) for p in verified["problems"]))
 
-    recheck = snapshot.recheck()
-    if not recheck["ok"]:
-        raise RepairError(
-            SOURCE_CHANGED_DURING_RUN,
-            f"the source bundle changed while the repair ran: "
-            f"{recheck['problems']}",
-            incomplete_directory=target_dir, listing=_listing(target_dir))
+        recheck = snapshot.recheck()
+        if not recheck["ok"]:
+            raise RepairError(
+                SOURCE_CHANGED_DURING_RUN,
+                f"the source bundle changed while the repair ran: "
+                f"{recheck['problems']}")
 
-    folder = None
-    if adapter is not None:
-        folder = confirm_folder_id_of_child(
-            adapter, RUNS_PARENT_FOLDER_ID,
-            os.path.basename(os.path.normpath(target_dir)), approval)
+        folder = None
+        if adapter is not None:
+            folder = resolve_output_folder_id(
+                adapter, RUNS_PARENT_FOLDER_ID,
+                os.path.basename(os.path.normpath(target_dir)), approval,
+                attempts=resolve_attempts, sleeper=sleeper)
+    except RepairError as error:
+        raise RepairError(error.reason, str(error).split(": ", 1)[-1],
+                          incomplete_directory=(error.incomplete_directory
+                                                or target_dir),
+                          listing=(error.listing or _listing(target_dir))
+                          ) from error
+
+    if mode == MODE_PRODUCTION and not (folder and folder.get("folder_id")):
+        # Unreachable by construction — production always has an adapter and
+        # `resolve_output_folder_id` either returns an id or raises — and
+        # asserted here so it stays that way.
+        raise RepairError(                               # pragma: no cover
+            OUTPUT_FOLDER_ID_UNRESOLVED,
+            "a production run may not complete without a resolved corrective "
+            "folder id", incomplete_directory=target_dir,
+            listing=_listing(target_dir))
 
     return {
         "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
         "module_version": MODULE_VERSION, "spec": SPEC_PATH,
-        "status": REPAIR_COMPLETE,
+        "mode": mode,
+        "status": (REPAIR_COMPLETE if mode == MODE_PRODUCTION
+                   else SYNTHETIC_COMPLETE),
+        "ingestable": mode == MODE_PRODUCTION,
         "first_stopping_reason": None,
         "frozen_q5d": frozen,
+        "execution_identity": execution_identity,
+        "drive_authentication": auth_audit,
+        "runs_parent_bridge": parent_bridge,
         "artifact_identities": (artifact_identities(repo_root)
                                 if repo_root else None),
-        "pinned_commit": EXECUTION_APPROVAL_RECORD.get("pinned_commit"),
+        "pinned_commit": (execution_identity or {}).get("execution_head"),
         "member_naming_unresolved": MEMBER_NAMING_UNRESOLVED,
         "member_naming_note": MEMBER_NAMING_NOTE,
         "qualification": qualified["report"],
@@ -1760,6 +2325,101 @@ def run_repair(shard_dir: str, source_dir: str, target_dir: str,
         "v10_probability_opened": False,
         "registered_anything": False,
     }
+
+
+def run_repair(shard_dir: str, source_dir: str, target_dir: str,
+               approval: Optional[str] = None,
+               authenticator: Optional[DriveAuthenticator] = None,
+               service_factory=None,
+               runs_parent_dir: str = "",
+               execution_head: Optional[str] = None,
+               repo_root: Optional[str] = None,
+               total: int = N_REPLICATES,
+               expected_shards: Optional[Mapping[str, Tuple[int, int]]] = None,
+               resolve_attempts: int = 5, sleeper=None) -> Dict[str, object]:
+    """The production route.  Drive access is mandatory and built here.
+
+    In order, and the order is the contract:
+
+    1. the approval token
+    2. `EXECUTION_APPROVAL_RECORD.granted`
+    3. the approved implementation identity, against the code on disk
+    4. the exact registered folder ids
+    5. the terminal execution guard
+    6. the dependency check
+    7. credential acquisition
+    8. proof of exactly the read-only scope
+    9. the Drive service and the adapter
+    10. folder-id inventories, including the runs parent
+    11. the first byte read, and only then any byte written
+
+    There is no `adapter` parameter and no way to pass `None` through: a
+    production run that could skip Drive would be a run whose provenance rests
+    on a typed path.  A fixture that needs to skip it uses
+    :func:`run_repair_synthetic_fixture`, which cannot produce a
+    `REPAIR_COMPLETE`.
+    """
+    require_execution_approval(approval, "the repair route")
+    if not EXECUTION_APPROVAL_RECORD.get("granted"):
+        _terminal_execution_guard()                      # raises
+    identity = verify_execution_identity(repo_root or ROOT_GUESS,
+                                         execution_head)
+    for folder_id in (SOURCE_BUNDLE_FOLDER_ID, SHARD_FOLDER_ID,
+                      RUNS_PARENT_FOLDER_ID):
+        if not folder_id:                                # pragma: no cover
+            raise RepairError(INPUT_UNQUALIFIED,
+                              "a registered folder id is missing")
+    _terminal_execution_guard()
+
+    adapter, auth_audit = build_drive_adapter(approval, authenticator,
+                                              service_factory)
+    if adapter is None:                                  # pragma: no cover
+        raise RepairError(
+            INPUT_UNQUALIFIED,
+            "the production route requires a Drive adapter; without one the "
+            "registered folder ids cannot be checked and identity would rest "
+            "on a typed path")
+    return _route(shard_dir, source_dir, target_dir, approval, adapter,
+                  runs_parent_dir, total, expected_shards, True,
+                  repo_root, MODE_PRODUCTION, auth_audit, identity,
+                  resolve_attempts, sleeper)
+
+
+def run_repair_synthetic_fixture(shard_dir: str, source_dir: str,
+                                 target_dir: str,
+                                 approval: Optional[str] = None,
+                                 synthetic_marker: Optional[str] = None,
+                                 adapter: Optional[FolderInventoryAdapter]
+                                 = None,
+                                 runs_parent_dir: str = "",
+                                 total: int = N_REPLICATES,
+                                 expected_shards: Optional[
+                                     Mapping[str, Tuple[int, int]]] = None,
+                                 require_numpy: bool = False,
+                                 repo_root: Optional[str] = None,
+                                 resolve_attempts: int = 1,
+                                 sleeper=None) -> Dict[str, object]:
+    """The synthetic-only seam.  It cannot produce a publishable result.
+
+    It exists because lower-level fixtures need to exercise the route without
+    Drive, and because the alternative — letting the production entry point
+    accept `adapter=None` — would make "no provenance" reachable by omitting an
+    argument.  Here it takes an explicit marker, and the terminal status is
+    `REPAIR_COMPLETE_SYNTHETIC_FIXTURE`, which nothing downstream accepts.
+
+    The notebook never calls this; a test asserts that.
+    """
+    if synthetic_marker != SYNTHETIC_FIXTURE_MARKER:
+        raise RepairError(
+            INPUT_UNQUALIFIED,
+            "the synthetic fixture seam requires its explicit marker; "
+            "production runs go through run_repair(), which requires Drive")
+    require_execution_approval(approval, "the synthetic repair route")
+    _terminal_execution_guard()
+    return _route(shard_dir, source_dir, target_dir, approval, adapter,
+                  runs_parent_dir, total, expected_shards, require_numpy,
+                  repo_root, MODE_SYNTHETIC, None, None, resolve_attempts,
+                  sleeper)
 
 
 def report_markdown(decision: Mapping[str, object]) -> str:
@@ -1852,6 +2512,14 @@ def module_capabilities() -> Tuple[str, ...]:
             "read_npz_bytes", "npz_member_names", "verify_npz_contract",
             "numpy_verify_npz", "read_source_snapshot", "SourceSnapshot",
             "assemble_corrective_bundle", "verify_corrective_bundle",
+            "run_repair_synthetic_fixture", "bridge_runs_parent",
+            "resolve_output_folder_id", "reconcile_output_folder_id",
+            "assert_bytes_unmoved_since_bridge", "build_drive_adapter",
+            "DriveAuthenticator", "ColabReadOnlyAuthenticator",
+            "audit_credential_scopes", "check_runtime_dependencies",
+            "verify_execution_identity", "module_science_digest",
+            "SYNTHETIC_FIXTURE_MARKER", "DRIVE_READONLY_SCOPE",
+            "ADAPTER_OPERATIONS", "REJECTED_PROPOSAL",
             "assert_target_safe", "identity_from_manifest",
             "identity_only_context", "coverage_report",
             "assert_frozen_q5d_unchanged", "frozen_q5d_digests",

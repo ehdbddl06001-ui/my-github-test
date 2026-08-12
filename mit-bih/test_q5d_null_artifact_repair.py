@@ -187,6 +187,153 @@ class FakeDrive(R.FolderInventoryAdapter):
         return list(self.folders.get(folder_id, []))
 
 
+class FakeDriveService(object):
+    """Just enough of a Drive v3 client for `GoogleDriveFolderInventory`.
+
+    Production builds its adapter from a credential and a service, so a test
+    that wants to exercise the real production route has to supply those two
+    rather than an already-built adapter — which is the point of R1.
+    """
+
+    class _Request(object):
+        def __init__(self, files):
+            self._files = files
+
+        def execute(self):
+            return {"files": list(self._files)}
+
+    class _Files(object):
+        def __init__(self, owner):
+            self._owner = owner
+
+        def list(self, q="", **_kwargs):
+            folder_id = q.split("'")[1] if "'" in q else ""
+            self._owner.calls.append(folder_id)
+            return FakeDriveService._Request(
+                self._owner.folders.get(folder_id, []))
+
+    def __init__(self, drive):
+        self.folders = dict(drive.folders)
+        self.calls = []
+
+    def files(self):
+        return FakeDriveService._Files(self)
+
+
+class FakeCredential(object):
+    """A credential object whose scopes can be observed, as the audit needs."""
+
+    def __init__(self, scopes=None):
+        self.scopes = list(scopes) if scopes is not None else None
+
+
+class FakeAuthenticator(R.DriveAuthenticator):
+    def __init__(self, scopes=None, calls=None):
+        self._scopes = scopes
+        self.calls = calls if calls is not None else []
+
+    def credential(self, scopes):
+        self.calls.append(list(scopes))
+        return FakeCredential(self._scopes if self._scopes is not None
+                              else list(scopes))
+
+
+class _StubArray(object):
+    def __init__(self, values):
+        self._values = list(values)
+        self.dtype = "float64"
+        self.shape = (len(self._values),)
+
+    def tolist(self):
+        return list(self._values)
+
+
+class _StubNumpy(object):
+    """Enough numpy for the production path, and it records how it was called.
+
+    Production **requires** numpy before it will publish, which is right and
+    which this container cannot satisfy — it has none.  Rather than give the
+    production route a bypass flag, the tests inject this and assert the call
+    was made with `allow_pickle=False`.  Where real numpy exists,
+    `test_numpy_verification_is_a_call_not_a_declared_constant` runs the
+    genuine cross-check instead; this stub only keeps the *route* reachable.
+    """
+
+    __version__ = "stub-0"
+
+    def __init__(self, calls):
+        self.calls = calls
+
+    class _Loaded(object):
+        def __init__(self, members):
+            self._members = members
+            self.files = sorted(members)
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+        def __getitem__(self, name):
+            return _StubArray(self._members[name][2])
+
+    def load(self, handle, allow_pickle=True):
+        self.calls.append({"allow_pickle": allow_pickle})
+        return _StubNumpy._Loaded(R.read_npz_bytes(handle.read()))
+
+    def isfinite(self, array):
+        values = array.tolist()
+
+        class _All(object):
+            def all(self_inner):
+                return all(v == v and v not in (float("inf"), float("-inf"))
+                           for v in values)
+        return _All()
+
+
+@contextlib.contextmanager
+def stub_numpy():
+    """Inject the stub for the length of one test, then remove it."""
+    calls = []
+    previous = sys.modules.get("numpy")
+    sys.modules["numpy"] = _StubNumpy(calls)
+    try:
+        yield calls
+    finally:
+        if previous is None:
+            sys.modules.pop("numpy", None)
+        else:                                            # pragma: no cover
+            sys.modules["numpy"] = previous
+
+
+@contextlib.contextmanager
+def approved_implementation():
+    """Record the implementation identity an enable PR would record.
+
+    Deliberately measured from the files on disk rather than typed: the point
+    of R6 is that the record names something checkable, and a test that
+    hard-coded a digest would stop checking the moment the file changed.
+    """
+    science = R.module_science_digest(os.path.join(ROOT, R.MODULE_PATH))
+    observed = R.artifact_identities(ROOT)
+    before_commit = R.APPROVED_IMPLEMENTATION_COMMIT
+    before_digests = dict(R.APPROVED_ARTIFACT_DIGESTS)
+    R.APPROVED_IMPLEMENTATION_COMMIT = "a" * 40
+    R.APPROVED_ARTIFACT_DIGESTS.update({
+        "spec_lf_sha256": observed["spec"]["lf_normalized_sha256"],
+        "notebook_lf_sha256": observed["notebook"]["lf_normalized_sha256"],
+        "frozen_q5d_lf_sha256": R.FROZEN_Q5D_SHA256_LF,
+        "module_science_lf_sha256": science["module_science_lf_sha256"],
+    })
+    try:
+        yield {"commit": "a" * 40, "head": "b" * 40}
+    finally:
+        R.APPROVED_IMPLEMENTATION_COMMIT = before_commit
+        R.APPROVED_ARTIFACT_DIGESTS.clear()
+        R.APPROVED_ARTIFACT_DIGESTS.update(before_digests)
+
+
 @contextlib.contextmanager
 def approved():
     """Open the terminal guard for one test, then close it again.
@@ -221,7 +368,12 @@ def _repair_world(identity=None, provider_sha=True, bridge=True, **kwargs):
                                     provider_sha=provider_sha)
                      .add_directory(R.SOURCE_BUNDLE_FOLDER_ID, source,
                                     provider_sha=provider_sha))
-            drive.folders[R.RUNS_PARENT_FOLDER_ID] = []
+            # The runs parent must hold the registered source folder id as a
+            # direct child, which is what ties the mount path to the parent id.
+            drive.folders[R.RUNS_PARENT_FOLDER_ID] = [
+                {"id": R.SOURCE_BUNDLE_FOLDER_ID,
+                 "name": os.path.basename(source),
+                 "mimeType": R.DRIVE_FOLDER_MIME, "trashed": False}]
         yield {"tmp": tmp, "runs": runs, "shards": shard_dir,
                "source": source, "target": target, "drive": drive,
                "identity": identity, "built": built}
@@ -251,6 +403,14 @@ def test_the_module_ships_unapproved_and_refuses_everything():
                                                  R.EXECUTION_APPROVAL_TOKEN),
             lambda: R.run_repair(tmp, tmp, os.path.join(tmp, "out"),
                                  R.EXECUTION_APPROVAL_TOKEN),
+            lambda: R.run_repair_synthetic_fixture(
+                tmp, tmp, os.path.join(tmp, "out"),
+                R.EXECUTION_APPROVAL_TOKEN, R.SYNTHETIC_FIXTURE_MARKER),
+            lambda: R.build_drive_adapter(R.EXECUTION_APPROVAL_TOKEN),
+            lambda: R.bridge_runs_parent(FakeDrive(), tmp, tmp, tmp,
+                                         R.EXECUTION_APPROVAL_TOKEN),
+            lambda: R.resolve_output_folder_id(FakeDrive(), "x", "y",
+                                               R.EXECUTION_APPROVAL_TOKEN),
         ):
             try:
                 call()
@@ -360,9 +520,12 @@ def test_artifact_identities_cover_module_spec_and_notebook():
 # ─────────────────────────────────────────────────────────────────────────────
 def test_the_bridge_ties_a_mount_to_a_folder_id_by_content():
     with _repair_world() as world, approved() as token:
-        bridge = R.bridge_mount_to_folder_id(
+        bridge, blobs = R.bridge_mount_to_folder_id(
             world["drive"], R.SOURCE_BUNDLE_FOLDER_ID, world["source"],
             R.SOURCE_BUNDLE_FILES, token)
+        check(sorted(blobs) == sorted(R.SOURCE_BUNDLE_FILES),
+              "the bridge hands back the bytes it read, for the judgement to "
+              "use")
         check(bridge["bridged"] is True, "the mount is tied to the folder id")
         check(bridge["folder_id"] == R.SOURCE_BUNDLE_FOLDER_ID,
               "by id, not by name")
@@ -379,6 +542,8 @@ def test_the_bridge_ties_a_mount_to_a_folder_id_by_content():
               "and the coverage is reported rather than assumed")
         check(world["drive"].calls == [R.SOURCE_BUNDLE_FOLDER_ID],
               "exactly one folder-id query was made")
+        check(bridge["bytes_captured"] == len(R.SOURCE_BUNDLE_FILES),
+              "and captured one snapshot per expected file")
 
 
 def test_a_same_named_folder_is_never_accepted_as_a_substitute():
@@ -449,7 +614,7 @@ def test_a_provider_checksum_mismatch_stops_the_bridge():
 
 def test_an_absent_provider_checksum_is_recorded_not_invented():
     with _repair_world(provider_sha=False) as world, approved() as token:
-        bridge = R.bridge_mount_to_folder_id(
+        bridge, _ = R.bridge_mount_to_folder_id(
             world["drive"], R.SOURCE_BUNDLE_FOLDER_ID, world["source"],
             R.SOURCE_BUNDLE_FILES, token)
         check(all(row["provider_sha256"] == "unavailable"
@@ -760,33 +925,38 @@ def test_reconstruction_returns_the_four_arrays_in_canonical_order():
           "the fixture is not degenerate: the winning family varies")
 
 
-def test_the_member_naming_conflict_is_recorded_and_not_guessed():
-    """Codex's review named members that exist nowhere in the frozen module.
+def test_the_member_names_are_the_native_families_and_the_aliases_rejected():
+    """N1 — resolved, not deferred.
 
-    Which frozen family each proposed name denotes is not recorded anywhere, so
-    adopting them would mean guessing a scientific label — and a wrong guess
-    would pass every structural clause while mislabelling a published artifact.
-    The proposal is therefore carried unresolved, and the mapping is one table.
+    The proposal is rejected on substance: `order_shuffle` and `circular_shift`
+    are both within-record manipulations, so there is no bijection onto
+    cross-record / within-record / rr-mismatch and nothing uniquely
+    corresponds to `rr_mismatch`.  A mapping would have been a guess.
     """
-    check(R.MEMBER_NAMING_UNRESOLVED is True,
-          "the conflict is flagged in the module, not silently resolved")
-    check(sorted(R.MEMBER_NAME_BY_FAMILY) == sorted(R.REGISTERED_FAMILIES),
-          "the mapping covers exactly the frozen families")
+    check(R.MEMBER_NAMING_UNRESOLVED is False,
+          "the naming question is closed")
+    check(not hasattr(R, "PROPOSED_MEMBER_NAMES"),
+          "the live proposal constant is gone")
+    check(R.REJECTED_PROPOSAL["decision"] == "rejected",
+          "and what remains is an audit record of a rejection")
+    check("bijective" in str(R.REJECTED_PROPOSAL["reason"])
+          or "bijection" in str(R.REJECTED_PROPOSAL["reason"]),
+          "which states why no mapping was possible")
+    for alias in ("j_null_cross_record", "j_null_within_record",
+                  "j_null_rr_mismatch"):
+        check(alias in R.REJECTED_PROPOSAL["proposed_names"],
+              f"{alias} is recorded as proposed")
+        check(alias not in R.NPZ_ARRAYS,
+              f"and {alias} is not an active member name")
+
+    check(sorted(R.NPZ_ARRAYS) == sorted(list(R.REGISTERED_FAMILIES)
+                                         + [R.MAX_MEMBER_NAME]),
+          "the active members are the native families plus j_null_max")
+    check(R.MEMBER_NAME_BY_FAMILY == {f: f for f in R.REGISTERED_FAMILIES},
+          "the mapping is the identity mapping")
     check(len(set(R.MEMBER_NAME_BY_FAMILY.values()))
           == len(R.REGISTERED_FAMILIES),
-          "and is a bijection, so two families cannot share a member name")
-    check(R.MAX_MEMBER_NAME not in R.MEMBER_NAME_BY_FAMILY.values(),
-          "the maximum's name is not also a family's name")
-    for proposed in R.PROPOSED_MEMBER_NAMES:
-        check(isinstance(proposed, str) and proposed,
-              f"the proposed name {proposed!r} is recorded verbatim")
-    unmapped = [n for n in R.PROPOSED_MEMBER_NAMES
-                if n != R.MAX_MEMBER_NAME
-                and n not in R.MEMBER_NAME_BY_FAMILY.values()]
-    check(len(unmapped) == 3,
-          "three of the four proposed names have no family mapping yet")
-    check("guess" in R.MEMBER_NAMING_NOTE and "mapping" in R.MEMBER_NAMING_NOTE,
-          "and the note says what is needed to resolve it")
+          "and remains a bijection over the frozen families")
 
 
 def test_the_summary_cross_check_is_exact_and_locates_the_first_difference():
@@ -1159,9 +1329,10 @@ def test_a_stop_before_the_claim_leaves_no_directory():
     with _repair_world(identity, skip=((15, 20),)) as world, \
             approved() as token:
         try:
-            R.run_repair(world["shards"], world["source"], world["target"],
-                         token, world["drive"], world["runs"], total=TOTAL,
-                         expected_shards=EXPECTED, require_numpy=False)
+            R.run_repair_synthetic_fixture(
+                world["shards"], world["source"], world["target"], token,
+                R.SYNTHETIC_FIXTURE_MARKER, world["drive"], world["runs"],
+                total=TOTAL, expected_shards=EXPECTED)
             raise AssertionError("published from an incomplete null")
         except R.RepairError as error:
             check(error.reason == R.INPUT_UNQUALIFIED,
@@ -1259,17 +1430,35 @@ def test_the_spec_and_notebook_state_the_same_failure_contract():
 # ─────────────────────────────────────────────────────────────────────────────
 # The whole route
 # ─────────────────────────────────────────────────────────────────────────────
-def test_the_route_completes_on_a_clean_synthetic_repair():
-    with _repair_world() as world, approved() as token:
+def test_the_production_route_completes_through_real_drive_seams():
+    """The whole route, built the way production builds it.
+
+    No pre-made adapter: an authenticator and a service factory go in, the
+    credential is minted below the guard, its scope is proven, and the adapter
+    is constructed from the service — so this exercises R1 and R2 rather than
+    asserting them.
+    """
+    with _repair_world() as world, approved() as token, \
+            approved_implementation() as pin, stub_numpy() as numpy_calls:
         world["drive"].folders[R.RUNS_PARENT_FOLDER_ID] = [
+            {"id": R.SOURCE_BUNDLE_FOLDER_ID,
+             "name": os.path.basename(world["source"]),
+             "mimeType": R.DRIVE_FOLDER_MIME, "trashed": False},
             {"id": "corrective-folder-id",
              "name": os.path.basename(world["target"]),
              "mimeType": R.DRIVE_FOLDER_MIME, "trashed": False}]
+        service = FakeDriveService(world["drive"])
+        auth = FakeAuthenticator()
+
         decision = R.run_repair(
             world["shards"], world["source"], world["target"], token,
-            world["drive"], world["runs"], total=TOTAL,
-            expected_shards=EXPECTED, require_numpy=False, repo_root=ROOT)
+            authenticator=auth, service_factory=lambda c: service,
+            runs_parent_dir=world["runs"], execution_head=pin["head"],
+            repo_root=ROOT, total=TOTAL, expected_shards=EXPECTED)
+
         check(decision["status"] == R.REPAIR_COMPLETE, "the route completes")
+        check(decision["mode"] == R.MODE_PRODUCTION and decision["ingestable"],
+              "as a production run")
         check(decision["first_stopping_reason"] is None, "with no stop")
         check(decision["qualification"]["qualified"] is True,
               "the shards qualified")
@@ -1282,13 +1471,40 @@ def test_the_route_completes_on_a_clean_synthetic_repair():
               "and the source was unchanged at the end")
         check(decision["corrective_folder_id"]["folder_id"]
               == "corrective-folder-id",
-              "the new folder's Drive id was read back")
+              "the new folder's Drive id was resolved")
+
+        audit = decision["drive_authentication"]
+        check(auth.calls == [[R.DRIVE_READONLY_SCOPE]],
+              "the credential was requested with exactly the read-only scope")
+        check(audit["observed_scopes"] == [R.DRIVE_READONLY_SCOPE]
+              and audit["exact_readonly_scope_proven"] is True,
+              "and observed as exactly that one scope")
+        check(audit["credential_type"] == "FakeCredential"
+              and audit["credential_recorded"] is False,
+              "the credential type is recorded and the credential is not")
+        check(audit["service_api"] == "drive"
+              and audit["service_version"] == "v3",
+              "the Drive API and version are recorded")
+        check(audit["adapter_operations"] == ["files.list"],
+              "and the adapter's whole surface is files.list")
+        check(audit["authenticated_below_terminal_guard"] is True,
+              "authentication happened below the guard")
+        check(numpy_calls == [{"allow_pickle": False}],
+              "numpy.load was called exactly once, with pickling off")
+        check(decision["npz"]["numpy_verification"]["ran"] is True,
+              "and the mandatory verification really ran")
+
+        check(decision["runs_parent_bridge"]["source_is_direct_child"] is True,
+              "the runs parent was tied to its folder id")
+        check(decision["execution_identity"]["execution_head"] == pin["head"],
+              "the pin is the head the caller measured")
+        check(decision["pinned_commit"] == pin["head"],
+              "and the result's pinned_commit is that, not a module constant")
+        check(decision["execution_identity"]["self_referential"] is False,
+              "the pin does not certify itself")
         check(decision["frozen_q5d"]["lf_normalized_sha256"]
               == R.FROZEN_Q5D_SHA256_LF,
               "the frozen module identity is in the record")
-        check(decision["artifact_identities"]["module"]["path"]
-              == R.MODULE_PATH,
-              "and so are the module, spec and notebook identities")
         for flag in ("training_performed", "join_rerun", "null_recomputed",
                      "ds2_outcome_opened", "v10_probability_opened",
                      "registered_anything"):
@@ -1296,14 +1512,127 @@ def test_the_route_completes_on_a_clean_synthetic_repair():
         check(sorted(os.listdir(world["target"])) == sorted(R.BUNDLE_FILES),
               "twelve files on disk")
         check(decision["corrective_bundle"]["committed_marker_written"]
-              is False,
-              "and no COMMITTED marker was written")
+              is False, "and no COMMITTED marker was written")
 
         report = R.report_markdown(decision)
         for fragment in (R.REPAIR_COMPLETE, decision["npz"]["sha256"],
                          "corrective-folder-id", R.FROZEN_Q5D_SHA256_LF,
                          "No J value was computed"):
             check(fragment in report, f"the report carries {fragment[:24]}")
+
+
+def test_production_refuses_every_route_that_skips_drive():
+    """R1 — `adapter=None` is not reachable, and a fixture cannot pose as one."""
+    import inspect
+    check("adapter" not in inspect.signature(R.run_repair).parameters,
+          "run_repair takes no adapter parameter at all")
+    check("synthetic_marker" in
+          inspect.signature(R.run_repair_synthetic_fixture).parameters,
+          "and the synthetic seam demands its marker")
+
+    with _repair_world() as world, approved() as token, \
+            approved_implementation() as pin:
+        try:
+            R.run_repair_synthetic_fixture(
+                world["shards"], world["source"], world["target"], token,
+                None, world["drive"], world["runs"], total=TOTAL,
+                expected_shards=EXPECTED)
+            raise AssertionError("the synthetic seam ran without its marker")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  "a missing synthetic marker is refused")
+        check(not os.path.exists(world["target"]),
+              "and nothing was created")
+
+        # A synthetic run can never be mistaken for a publishable one.  This
+        # is the seam's actual purpose: no Drive at all.
+        decision = R.run_repair_synthetic_fixture(
+            world["shards"], world["source"], world["target"], token,
+            R.SYNTHETIC_FIXTURE_MARKER, None, world["runs"],
+            total=TOTAL, expected_shards=EXPECTED)
+        check(decision["status"] == R.SYNTHETIC_COMPLETE
+              and decision["status"] != R.REPAIR_COMPLETE,
+              "a synthetic run's status is not REPAIR_COMPLETE")
+        check(decision["ingestable"] is False and decision["mode"]
+              == R.MODE_SYNTHETIC, "and it is not ingestable")
+
+
+def test_a_production_run_without_a_credential_never_touches_a_file():
+    """R1 — the refusal lands before any target is created."""
+    with _repair_world() as world, approved() as token, \
+            approved_implementation() as pin:
+        class RefusingAuthenticator(R.DriveAuthenticator):
+            def credential(self, scopes):
+                raise AssertionError("should not be reached")
+
+        try:
+            R.run_repair(world["shards"], world["source"], world["target"],
+                         token, authenticator=FakeAuthenticator(scopes=[]),
+                         service_factory=lambda c: FakeDriveService(
+                             world["drive"]),
+                         runs_parent_dir=world["runs"],
+                         execution_head=pin["head"], repo_root=ROOT,
+                         total=TOTAL, expected_shards=EXPECTED)
+            raise AssertionError("ran with an unprovable scope")
+        except R.RepairError as error:
+            check(error.reason == R.READONLY_SCOPE_UNPROVEN,
+                  "a credential whose scope is not exactly read-only stops it")
+        check(not os.path.exists(world["target"]),
+              "before any target directory exists")
+
+
+def test_guard_closed_means_zero_auth_service_and_api_calls():
+    """R2 — proven by spies, not by reading the call order."""
+    calls = {"credential": 0, "service": 0, "api": 0}
+
+    class SpyAuthenticator(R.DriveAuthenticator):
+        def credential(self, scopes):
+            calls["credential"] += 1
+            raise AssertionError("a credential was minted")
+
+    def spy_factory(credential):
+        calls["service"] += 1
+        raise AssertionError("a Drive service was built")
+
+    class SpyAdapter(R.FolderInventoryAdapter):
+        def list_children(self, folder_id):
+            calls["api"] += 1
+            raise AssertionError("the Drive API was called")
+
+    with _repair_world() as world:
+        attempts = [
+            # guard closed, valid token
+            lambda: R.run_repair(world["shards"], world["source"],
+                                 world["target"],
+                                 R.EXECUTION_APPROVAL_TOKEN,
+                                 authenticator=SpyAuthenticator(),
+                                 service_factory=spy_factory,
+                                 runs_parent_dir=world["runs"],
+                                 execution_head="b" * 40, repo_root=ROOT),
+            lambda: R.build_drive_adapter(R.EXECUTION_APPROVAL_TOKEN,
+                                          SpyAuthenticator(), spy_factory),
+            lambda: R.bridge_mount_to_folder_id(
+                SpyAdapter(), R.SOURCE_BUNDLE_FOLDER_ID, world["source"],
+                R.SOURCE_BUNDLE_FILES, R.EXECUTION_APPROVAL_TOKEN),
+        ]
+        for attempt in attempts:
+            try:
+                attempt()
+                raise AssertionError("ran with the guard closed")
+            except R.RepairNotApprovedError:
+                check(True, "the terminal guard refused")
+
+        # wrong token, guard open
+        with approved():
+            try:
+                R.build_drive_adapter("not-the-token", SpyAuthenticator(),
+                                      spy_factory)
+                raise AssertionError("a wrong token minted a credential")
+            except R.RepairNotApprovedError:
+                check(True, "a wrong token is refused before authentication")
+
+    check(calls == {"credential": 0, "service": 0, "api": 0},
+          f"no credential, service or API call happened: {calls}")
 
 
 def test_a_disagreeing_summary_stops_before_anything_is_written():
@@ -1317,9 +1646,10 @@ def test_a_disagreeing_summary_stops_before_anything_is_written():
             "rule_fingerprint": R.REGISTERED_RULE_FINGERPRINT,
             "j_null_max": drifted})
         try:
-            R.run_repair(world["shards"], world["source"], world["target"],
-                         token, None, world["runs"], total=TOTAL,
-                         expected_shards=EXPECTED, require_numpy=False)
+            R.run_repair_synthetic_fixture(
+                world["shards"], world["source"], world["target"], token,
+                R.SYNTHETIC_FIXTURE_MARKER, None, world["runs"],
+                total=TOTAL, expected_shards=EXPECTED)
             raise AssertionError("published despite a disagreeing summary")
         except R.RepairError as error:
             check(error.reason == R.SUMMARY_DISAGREES,
@@ -1385,18 +1715,70 @@ def test_the_notebook_is_committed_unexecuted():
     check(not missing, f"every advertised capability exists: {missing}")
 
 
-def test_the_notebook_pins_a_commit_and_rechecks_the_files():
-    """H — a moving branch is not a pin, and a commit is not a working tree."""
+def test_the_notebook_pin_is_measured_and_not_self_asserted():
+    """R6 — a branch is not a pin, and a typed hex string is not an approval."""
     nb = json.load(open(NOTEBOOK, encoding="utf-8"))
     body = "\n".join("".join(c["source"]) for c in nb["cells"]
                      if c["cell_type"] == "code")
-    check("PINNED_COMMIT" in body, "the notebook takes an exact commit")
-    check("git checkout" in body or "--branch" not in body,
-          "and checks that commit out rather than tracking a branch")
-    check("artifact_identities" in body,
-          "then re-checks the module, spec and notebook digests on disk")
-    check("REPO_BRANCH = 'main'" not in body,
-          "it does not silently follow main")
+    check("CHECKOUT_COMMIT" in body, "the notebook checks out an exact commit")
+    check("checkout" in body and "--detach" in body,
+          "detached, rather than tracking a branch")
+    check("rev-parse" in body and "EXECUTION_HEAD" in body,
+          "and measures the resulting HEAD from git rather than assuming it")
+    check("status" in body and "porcelain" in body,
+          "a dirty tree is refused, since a commit pin cannot see edits")
+    check("execution_head=EXECUTION_HEAD" in body,
+          "the measured head is what is passed to the run")
+    check("APPROVED_IMPLEMENTATION_COMMIT" in body
+          and "APPROVED_ARTIFACT_DIGESTS" in body,
+          "and the approved implementation identity is shown beside it")
+    check("module_science_digest" in body,
+          "including the science digest, which is what covers the module")
+    check("REPO_BRANCH" not in body, "no branch is followed")
+
+
+def test_the_notebook_never_authenticates_or_builds_a_service_itself():
+    """R2 — a cell that minted a credential would defeat the guard."""
+    nb = json.load(open(NOTEBOOK, encoding="utf-8"))
+    code_body = "\n".join("".join(c["source"]) for c in nb["cells"]
+                          if c["cell_type"] == "code")
+    for forbidden in ("auth.authenticate_user(", "authenticate_user(",
+                      "build('drive'", 'build("drive"',
+                      "googleapiclient.discovery"):
+        check(forbidden not in code_body,
+              f"the notebook never calls {forbidden!r}")
+    check("authenticator=R.ColabReadOnlyAuthenticator()" in code_body,
+          "it hands the authenticator seam to run_repair instead")
+    check("service_factory=R.default_service_factory" in code_body,
+          "and the service factory, so both run below the guard")
+
+
+def test_the_notebook_never_calls_the_synthetic_seam():
+    """R1 — the fixture-only path must not be reachable from a real run."""
+    nb = json.load(open(NOTEBOOK, encoding="utf-8"))
+    code_body = "\n".join("".join(c["source"]) for c in nb["cells"]
+                          if c["cell_type"] == "code")
+    # Code cells only: the prose deliberately *names* the seam to say it is
+    # not used, and a check that forbade the word would forbid saying so.
+    check("run_repair_synthetic_fixture" not in code_body,
+          "no code cell calls the synthetic seam")
+    check(R.SYNTHETIC_FIXTURE_MARKER not in code_body,
+          "and none carries its marker")
+    check("R.run_repair(" in code_body, "it calls the production route")
+
+
+def test_the_notebook_carries_the_reconciliation_path():
+    """R5 — the unresolved-folder-id case needs a way out that writes nothing."""
+    nb = json.load(open(NOTEBOOK, encoding="utf-8"))
+    code_body = "\n".join("".join(c["source"]) for c in nb["cells"]
+                          if c["cell_type"] == "code")
+    check("reconcile_output_folder_id" in code_body,
+          "a read-only reconciliation cell exists")
+    check("OUTPUT_FOLDER_ID_UNRESOLVED" in code_body,
+          "gated on the stop it is for")
+    body = "\n".join("".join(c["source"]) for c in nb["cells"])
+    check("두 번째 폴더도 만들지 않는다" in body or "second folder" in body.lower(),
+          "and it says no second folder is created")
 
 
 def test_the_notebook_uses_folder_ids_and_holds_no_approval_of_its_own():
@@ -1408,13 +1790,14 @@ def test_the_notebook_uses_folder_ids_and_holds_no_approval_of_its_own():
           "the notebook never flips the approval record")
     check(R.EXECUTION_APPROVAL_TOKEN not in body,
           "and does not carry the token as a literal")
-    for folder_id in (R.SOURCE_BUNDLE_FOLDER_ID, R.SHARD_FOLDER_ID,
-                      R.RUNS_PARENT_FOLDER_ID):
-        check(folder_id in body,
-              f"the notebook names folder id {folder_id[:12]}…")
-    check("GoogleDriveFolderInventory" in body,
-          "and builds a read-only folder-id inventory rather than trusting "
-          "a path name")
+    # The notebook references the registered constants rather than retyping
+    # the ids: a second copy of an id is a second thing that can drift.
+    for constant in ("SOURCE_BUNDLE_FOLDER_ID", "SHARD_FOLDER_ID",
+                     "RUNS_PARENT_FOLDER_ID"):
+        check(f"R.{constant}" in body,
+              f"the notebook uses the registered {constant}")
+    check("RUNS_PARENT_DIR" in body,
+          "and declares the runs parent mount that gets bridged to its id")
 
 
 def test_the_spec_fixes_the_contract_this_module_implements():
@@ -1448,6 +1831,381 @@ def test_nothing_in_this_file_left_the_guard_open():
           "execution is still not approved")
     check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None,
           "and no commit was pinned by a test")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# R3 — the bridge bytes and the judged bytes are the same bytes
+# ─────────────────────────────────────────────────────────────────────────────
+def test_a_same_size_substitution_between_bridge_and_judgement_is_caught():
+    """R3 — the dangerous case is the one that changes nothing observable.
+
+    A replacement of equal length would leave the inventory's size check happy,
+    so avoidance alone is not enough: the substitution has to be *detected*.
+    """
+    with _repair_world() as world, approved() as token:
+        bridge, blobs = R.bridge_mount_to_folder_id(
+            world["drive"], R.SOURCE_BUNDLE_FOLDER_ID, world["source"],
+            R.SOURCE_BUNDLE_FILES, token)
+        victim = os.path.join(world["source"], "summary.md")
+        original = open(victim, "rb").read()
+        swapped = bytes(bytearray(b ^ 0x01 for b in original))
+        check(len(swapped) == len(original) and swapped != original,
+              "the fixture swaps in different bytes of identical length")
+        with open(victim, "wb") as handle:
+            handle.write(swapped)
+        try:
+            R.assert_bytes_unmoved_since_bridge(
+                world["source"], R.SOURCE_BUNDLE_FILES, blobs)
+            raise AssertionError("a same-size substitution went unnoticed")
+        except R.RepairError as error:
+            check(error.reason == R.BYTES_MOVED_AFTER_BRIDGE,
+                  "it is caught as bytes moving after the bridge")
+            check("summary.md" in str(error), "and the file is named")
+
+
+def test_the_snapshot_and_qualification_judge_the_bridged_bytes():
+    """R3 — one set of bytes carries the folder-id tie and the judgement."""
+    with _repair_world() as world, approved() as token:
+        snapshot, inventory = R.read_source_snapshot(
+            world["source"], token, world["drive"])
+        check(inventory["bytes_from"] == "folder-id bridge",
+              "the snapshot says where its bytes came from")
+        bridge_rows = {row["name"]: row["mount_sha256"]
+                       for row in inventory["folder_id_bridge"]["files"]}
+        for name in R.SOURCE_BUNDLE_FILES:
+            check(snapshot.digest(name) == bridge_rows[name],
+                  f"{name}: the snapshot digest is the bridged digest")
+
+        out = R.qualify_shards(world["shards"], world["identity"], token,
+                               world["drive"], R.SHARD_FOLDER_ID,
+                               total=TOTAL, expected=EXPECTED)
+        rows = {row["name"]: row["mount_sha256"]
+                for row in out["report"]["folder_id_bridge"]["files"]}
+        check(sorted(rows) == sorted(EXPECTED),
+              "every shard was bridged before being parsed")
+
+
+def test_a_substituted_shard_between_bridge_and_parse_is_caught():
+    """R3 applies to the 100 shards, not only to the eleven source files."""
+    with _repair_world() as world, approved() as token:
+        bridge, blobs = R.bridge_mount_to_folder_id(
+            world["drive"], R.SHARD_FOLDER_ID, world["shards"],
+            sorted(EXPECTED), token)
+        check(sorted(blobs) == sorted(EXPECTED),
+              "every shard's bytes were captured at the bridge")
+
+        victim = os.path.join(world["shards"], sorted(EXPECTED)[0])
+        original = open(victim, "rb").read()
+        swapped = original[:-1] + b" "                   # same length, valid
+        check(len(swapped) == len(original) and swapped != original,
+              "the fixture swaps equal-length bytes")
+        with open(victim, "wb") as handle:
+            handle.write(swapped)
+        try:
+            R.assert_bytes_unmoved_since_bridge(
+                world["shards"], sorted(EXPECTED), blobs)
+            raise AssertionError("a swapped shard went unnoticed")
+        except R.RepairError as error:
+            check(error.reason == R.BYTES_MOVED_AFTER_BRIDGE,
+                  "a shard rewritten after the bridge is caught")
+            check(sorted(EXPECTED)[0] in str(error),
+                  "and the shard is named")
+
+    # And the check is wired into qualification, not merely available.
+    import inspect
+    body = inspect.getsource(R.qualify_shards)
+    check("assert_bytes_unmoved_since_bridge" in body,
+          "qualify_shards runs the check itself")
+    check("bridged[name]" in body,
+          "and parses the bridged bytes rather than re-opening the file")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# R4 — the runs parent is bridged too
+# ─────────────────────────────────────────────────────────────────────────────
+def test_the_runs_parent_is_tied_to_its_folder_id_before_any_write():
+    with _repair_world() as world, approved() as token:
+        bridge = R.bridge_runs_parent(world["drive"], world["runs"],
+                                      world["source"], world["target"], token)
+        check(bridge["source_is_direct_child"] is True,
+              "the registered source id is a direct child of the parent id")
+        check(bridge["source_mount_parent_matches"] is True
+              and bridge["target_parent_matches"] is True,
+              "and both mounts sit directly under the runs parent")
+
+
+def test_another_directory_cannot_pose_as_the_runs_parent():
+    """R4 — the injection the string comparison alone would have allowed."""
+    with _repair_world() as world, approved() as token:
+        impostor = os.path.join(world["tmp"], "not_really_runs")
+        os.makedirs(impostor)
+        try:
+            R.bridge_runs_parent(world["drive"], impostor, world["source"],
+                                 os.path.join(impostor, "t"), token)
+            raise AssertionError("an unrelated directory posed as the parent")
+        except R.RepairError as error:
+            check(error.reason == R.TARGET_UNSAFE,
+                  "a directory the source does not live under is refused")
+
+        world["drive"].folders[R.RUNS_PARENT_FOLDER_ID] = []
+        try:
+            R.bridge_runs_parent(world["drive"], world["runs"],
+                                 world["source"], world["target"], token)
+            raise AssertionError("a parent id that does not hold the source "
+                                 "was accepted")
+        except R.RepairError as error:
+            check(error.reason == R.TARGET_UNSAFE,
+                  "and so is a parent id the source is not a child of")
+
+
+def test_a_failed_parent_bridge_means_no_mkdir():
+    """R4 — the whole point is that it happens before anything is created."""
+    with _repair_world() as world, approved() as token, \
+            approved_implementation() as pin:
+        world["drive"].folders[R.RUNS_PARENT_FOLDER_ID] = []
+        created = []
+        original_mkdir = os.mkdir
+
+        def spy_mkdir(path, *args, **kwargs):
+            created.append(path)
+            return original_mkdir(path, *args, **kwargs)
+
+        os.mkdir = spy_mkdir
+        try:
+            R.run_repair(world["shards"], world["source"], world["target"],
+                         token, authenticator=FakeAuthenticator(),
+                         service_factory=lambda c: FakeDriveService(
+                             world["drive"]),
+                         runs_parent_dir=world["runs"],
+                         execution_head=pin["head"], repo_root=ROOT,
+                         total=TOTAL, expected_shards=EXPECTED)
+            raise AssertionError("ran with an unbridged runs parent")
+        except R.RepairError as error:
+            check(error.reason == R.TARGET_UNSAFE,
+                  "the parent bridge fails the run")
+        finally:
+            os.mkdir = original_mkdir
+        check(created == [], f"and os.mkdir was never called: {created}")
+        check(not os.path.exists(world["target"]), "no target exists")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# R5 — post-write folder-id resolution
+# ─────────────────────────────────────────────────────────────────────────────
+def test_folder_id_resolution_retries_read_only_and_then_stops():
+    with _repair_world() as world, approved() as token:
+        slept = []
+        appearing = {"n": 0}
+        target_name = os.path.basename(world["target"])
+
+        class EventuallyConsistent(R.FolderInventoryAdapter):
+            def list_children(self, folder_id):
+                appearing["n"] += 1
+                if appearing["n"] < 3:
+                    return []
+                return [{"id": "late-folder-id", "name": target_name,
+                         "mimeType": R.DRIVE_FOLDER_MIME, "trashed": False}]
+
+        resolved = R.resolve_output_folder_id(
+            EventuallyConsistent(), R.RUNS_PARENT_FOLDER_ID, target_name,
+            token, attempts=5, sleeper=slept.append)
+        check(resolved["folder_id"] == "late-folder-id",
+              "a folder that appears late is still resolved")
+        check(resolved["attempts"] == 3, "after the attempts it needed")
+        check(len(slept) == 2 and all(d > 0 for d in slept),
+              "with a bounded wait between read-only attempts")
+
+        try:
+            R.resolve_output_folder_id(FakeDrive(), R.RUNS_PARENT_FOLDER_ID,
+                                       target_name, token, attempts=3,
+                                       sleeper=slept.append)
+            raise AssertionError("an invisible folder resolved anyway")
+        except R.RepairError as error:
+            check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
+                  "and one that never appears is a stop, not a pass")
+            check("rather than writing another folder" in str(error),
+                  "with the instruction not to create a second folder")
+
+
+def test_an_unresolved_output_folder_id_preserves_and_never_completes():
+    with _repair_world() as world, approved() as token, \
+            approved_implementation() as pin, stub_numpy():
+        # The parent holds the source (so the bridge passes) but never the
+        # corrective folder, so resolution runs out of attempts.
+        try:
+            R.run_repair(world["shards"], world["source"], world["target"],
+                         token, authenticator=FakeAuthenticator(),
+                         service_factory=lambda c: FakeDriveService(
+                             world["drive"]),
+                         runs_parent_dir=world["runs"],
+                         execution_head=pin["head"], repo_root=ROOT,
+                         total=TOTAL, expected_shards=EXPECTED,
+                         resolve_attempts=2, sleeper=lambda _s: None)
+            raise AssertionError("completed without a resolved folder id")
+        except R.RepairError as error:
+            check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
+                  "an unresolvable folder id is a stop")
+            record = error.as_record()
+            check(record["incomplete_directory"] == world["target"],
+                  "the written output is reported by path")
+            check(sorted(record["incomplete_listing"])
+                  == sorted(R.BUNDLE_FILES),
+                  "with its real listing — all twelve files")
+            check(record["committed"] is False and record["accepted"] is False
+                  and record["registered_anything"] is False,
+                  "and it is neither committed, accepted nor registered")
+        check(len(os.listdir(world["runs"])) == 2,
+              "no second corrective folder was created")
+
+
+def test_reconciliation_reresolves_read_only_and_changes_nothing():
+    with _repair_world() as world, approved() as token:
+        snapshot, _ = R.read_source_snapshot(world["source"], token)
+        blob = R.npz_bytes(world["built"]["arrays"])
+        R.assemble_corrective_bundle(snapshot, world["target"], blob, token,
+                                     world["shards"], world["runs"])
+        digests = {name: snapshot.digest(name) for name in snapshot.names()}
+        before = {n: hashlib.sha256(
+            open(os.path.join(world["target"], n), "rb").read()).hexdigest()
+            for n in sorted(os.listdir(world["target"]))}
+        name = os.path.basename(world["target"])
+        world["drive"].folders[R.RUNS_PARENT_FOLDER_ID].append(
+            {"id": "reconciled-id", "name": name,
+             "mimeType": R.DRIVE_FOLDER_MIME, "trashed": False})
+
+        out = R.reconcile_output_folder_id(
+            world["drive"], world["target"], digests,
+            hashlib.sha256(blob).hexdigest(), token, sleeper=lambda _s: None)
+        check(out["folder_id"] == "reconciled-id", "the id is re-resolved")
+        check(out["wrote_nothing"] is True, "and nothing was written")
+        check(sorted(out["listing"]) == sorted(R.BUNDLE_FILES),
+              "after re-checking the exact twelve-file listing")
+        after = {n: hashlib.sha256(
+            open(os.path.join(world["target"], n), "rb").read()).hexdigest()
+            for n in sorted(os.listdir(world["target"]))}
+        check(after == before, "the output is byte-identical afterwards")
+
+        with open(os.path.join(world["target"], "summary.md"), "ab") as handle:
+            handle.write(b"tampered\n")
+        try:
+            R.reconcile_output_folder_id(
+                world["drive"], world["target"], digests,
+                hashlib.sha256(blob).hexdigest(), token,
+                sleeper=lambda _s: None)
+            raise AssertionError("reconciled a tampered output")
+        except R.RepairError as error:
+            check(error.reason == R.OUTPUT_FOLDER_ID_UNRESOLVED,
+                  "an output that no longer matches may not be reconciled")
+            check(error.incomplete_directory == world["target"],
+                  "and it is reported as preserved")
+
+
+def test_every_post_write_failure_preserves_the_path_and_listing():
+    """R5 — one boundary, so no later step can forget to report the folder."""
+    failures = []
+    with _repair_world() as world, approved() as token:
+        snapshot, _ = R.read_source_snapshot(world["source"], token)
+        blob = R.npz_bytes(world["built"]["arrays"])
+        R.assemble_corrective_bundle(snapshot, world["target"], blob, token,
+                                     world["shards"], world["runs"])
+
+        # Each of these is a post-write failure mode reached through _route's
+        # boundary; every one must carry the same preserved detail.
+        for reason, breaker in (
+            (R.COPY_NOT_BYTE_IDENTICAL,
+             lambda: R.verify_corrective_bundle(world["target"], snapshot,
+                                                "0" * 64)),
+        ):
+            verdict = breaker()
+            check(verdict["ok"] is False, f"{reason} is detectable")
+            failures.append(reason)
+
+        try:
+            R._route(world["shards"], world["source"], world["target"], token,
+                     None, world["runs"], TOTAL, EXPECTED, False, ROOT,
+                     R.MODE_SYNTHETIC, None, None, 1, lambda _s: None)
+            raise AssertionError("re-ran into an existing target")
+        except R.RepairError as error:
+            check(error.reason == R.TARGET_EXISTS,
+                  "a second run into the same name is refused")
+    check(failures == [R.COPY_NOT_BYTE_IDENTICAL],
+          "the post-write failure modes were exercised")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# R6 — the execution pin does not certify itself
+# ─────────────────────────────────────────────────────────────────────────────
+def test_the_module_science_digest_excludes_only_the_approval_block():
+    science = R.module_science_digest()
+    check(len(str(science["module_science_lf_sha256"])) == 64,
+          "the science digest is a sha256")
+    check(science["excluded_lines"] > 0,
+          "and something was excluded")
+    source = open(R.__file__, encoding="utf-8").read()
+    # Count line *starts*, which is what the digest matches on — the constants
+    # that hold the markers also contain the text and are not markers.
+    lines = source.split("\n")
+    check(sum(1 for l in lines if l.startswith(R.APPROVAL_BLOCK_START)) == 1
+          and sum(1 for l in lines
+                  if l.startswith(R.APPROVAL_BLOCK_END)) == 1,
+          "the approval block is delimited exactly once")
+    check(R.EXECUTION_APPROVAL_TOKEN in source.split(R.APPROVAL_BLOCK_START)[1]
+          .split(R.APPROVAL_BLOCK_END)[0],
+          "the token lives inside the fenced block")
+    check("def run_repair(" not in
+          source.split(R.APPROVAL_BLOCK_START)[1].split(R.APPROVAL_BLOCK_END)[0],
+          "and no logic does")
+
+
+def test_an_unapproved_or_mismatched_implementation_stops_before_assets():
+    with tempfile.TemporaryDirectory() as tmp:
+        try:
+            R.verify_execution_identity(ROOT, "b" * 40)
+            raise AssertionError("verified with nothing recorded")
+        except R.RepairError as error:
+            check(error.reason == R.EXECUTION_IDENTITY_UNVERIFIED,
+                  "with no approved implementation recorded, it refuses")
+            check("no approved implementation commit" in str(error),
+                  "and says so")
+
+    with approved_implementation() as pin:
+        record = R.verify_execution_identity(ROOT, pin["head"])
+        check(record["execution_head"] == pin["head"],
+              "the execution head is the measured one")
+        check(record["approved_implementation_commit"] == pin["commit"],
+              "and the approved commit is the recorded one")
+        check(record["head_equals_approved_commit"] is False,
+              "the two are separate facts and may differ")
+        check(record["self_referential"] is False,
+              "neither certifies itself")
+
+        for bad in (None, "", "not-hex", "a" * 39):
+            try:
+                R.verify_execution_identity(ROOT, bad)
+                raise AssertionError(f"accepted execution_head={bad!r}")
+            except R.RepairError as error:
+                check(error.reason == R.EXECUTION_IDENTITY_UNVERIFIED,
+                      f"execution_head {bad!r} is refused")
+
+        original = R.APPROVED_ARTIFACT_DIGESTS["spec_lf_sha256"]
+        R.APPROVED_ARTIFACT_DIGESTS["spec_lf_sha256"] = "c" * 64
+        try:
+            R.verify_execution_identity(ROOT, pin["head"])
+            raise AssertionError("a changed spec was accepted")
+        except R.RepairError as error:
+            check(error.reason == R.EXECUTION_IDENTITY_UNVERIFIED,
+                  "code that is not the approved implementation is refused")
+        finally:
+            R.APPROVED_ARTIFACT_DIGESTS["spec_lf_sha256"] = original
+
+
+def test_the_pin_ships_unset_so_no_production_run_is_possible():
+    check(R.APPROVED_IMPLEMENTATION_COMMIT is None,
+          "no implementation commit is approved yet")
+    check(all(v is None for v in R.APPROVED_ARTIFACT_DIGESTS.values()),
+          "and no artifact digests are recorded")
+    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None,
+          "the approval record carries no pinned commit either")
 
 
 def declared_tests():

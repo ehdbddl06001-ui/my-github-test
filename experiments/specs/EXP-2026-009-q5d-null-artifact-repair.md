@@ -114,6 +114,61 @@ it would let two genuinely different files share one registered identity, and
 no artifact in this repository uses CR line endings — so the safe reading of an
 unexpected CR is "something is wrong".
 
+# Drive access is mandatory, and authentication lives below the guard
+
+**There is no production route that skips Drive.** `run_repair()` takes no
+`adapter` parameter at all: it takes an authenticator and a service factory and
+builds the adapter itself, so a run whose provenance rested on a typed mount
+path is not reachable by omitting an argument. The source bridge, the shard
+bridge, the runs-parent bridge and the output folder-id resolution are all
+required, and a `REPAIR_COMPLETE` with no resolved corrective folder id is
+structurally impossible — the only other terminal status a route can reach is
+the synthetic one below.
+
+A fixture that must run without Drive uses `run_repair_synthetic_fixture()`,
+which is explicit about what it is:
+
+- it demands `SYNTHETIC_FIXTURE_MARKER` and refuses without it;
+- production is the default and needs no marker;
+- its terminal status is `REPAIR_COMPLETE_SYNTHETIC_FIXTURE`, never
+  `REPAIR_COMPLETE`, and it reports `ingestable: false`;
+- the notebook never calls it, which a test asserts.
+
+**Authentication is part of the guarded route, not of the notebook.** A cell
+that built its own service would mint a credential the terminal guard never
+saw. The order is:
+
+1. the approval token
+2. `EXECUTION_APPROVAL_RECORD.granted`
+3. the approved implementation identity, against the code on disk
+4. the exact registered folder ids
+5. the terminal execution guard
+6. the dependency check
+7. credential acquisition
+8. proof of exactly `https://www.googleapis.com/auth/drive.readonly`
+9. the Drive service and the adapter
+10. folder-id inventories, including the runs parent
+11. the first byte read, and only then any byte written
+
+The credential is requested with exactly one scope and passed explicitly to the
+client; the adapter never constructs a default client, because a default client
+silently adopts an ambient credential whose scope nobody checked. A broader
+credential is **not** accepted merely because it includes the scope we need,
+and a credential whose scopes cannot be observed is not accepted either —
+"read-only" would be an unverifiable claim. Failure is
+`REPAIR_READONLY_SCOPE_UNPROVEN`.
+
+The run records `requested_scopes`, `observed_scopes`,
+`exact_readonly_scope_proven`, `credential_type`, the Drive API and version, and
+that the adapter's entire surface is `files.list` — and never a token,
+credential or authorization header. This reuses the exact-scope principle from
+`mit-bih/q5e_prep_p1_p2_asset_identity.py`; it does **not** reuse or translate
+that module's approval token, which belongs to a different decision.
+
+With no approval, a wrong token, or the guard closed, the authenticator, the
+service factory and the Drive API are called **zero** times — proven by spies
+rather than by reading the call order.
+
 # The Drive folder-id bridge
 
 **A folder is chosen by id and never by name.**  A folder that merely has the
@@ -137,9 +192,56 @@ registered folder id:
    matched on a provider checksum and how many on name and size alone;
 5. anything unresolved or ambiguous is `REPAIR_INPUT_UNQUALIFIED`.
 
+**The bridged bytes are the judged bytes.** The bridge returns the bytes it
+read, and the source snapshot and the shard parser use exactly those — a later
+read is a different moment, and on a Drive mount that is not hypothetical. The
+files are then re-read and compared against the bridge's digests, so a
+substitution is *detected* rather than merely rendered ineffective:
+`REPAIR_BYTES_MOVED_AFTER_BRIDGE`. This applies to the eleven source files and
+to all 100 shards, and a same-length replacement — the case a size check would
+miss — is what the regression fixture uses.
+
+## The runs parent is bridged too
+
+A mount path is a name, and a name is what this module refuses to treat as
+identity everywhere else, so the write destination gets the same treatment.
+Before any `mkdir`:
+
+- the registered source folder id `1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd` must be a
+  single live direct child of the registered parent id
+  `1YbNX4IeWUph3VFwgpCHGFiibzihF6gXh`, by API inventory;
+- `dirname(realpath(SOURCE_DIR))` must equal `realpath(RUNS_PARENT_DIR)`;
+- the target's parent must equal `RUNS_PARENT_DIR`;
+- no component may be a symlink, junction or reparse point.
+
+The source bundle is what links the two worlds: it has both a registered folder
+id and a mount path, so if the id is a child of the parent id and the mount
+lives directly under the runs-parent mount, the runs-parent mount is the
+registered parent's mount. Injecting a different directory under the same
+`RUNS_PARENT_DIR` string breaks the second half and is refused. **A failed
+parent bridge means `os.mkdir` is called zero times**, which a spy asserts.
+
+## Output folder-id resolution
+
 On success the new corrective folder's **own** Drive folder id is read back
 read-only from the registered runs parent and recorded, so the result is
 identifiable by id afterwards rather than by picking a folder name later.
+
+Drive is eventually consistent, so a folder that exists on the mount can be
+briefly invisible to `files.list`. That is handled with a **short, bounded,
+read-only retry** — list calls and a wait, nothing else. If it never resolves:
+
+- the run stops with `REPAIR_OUTPUT_FOLDER_ID_UNRESOLVED`;
+- the written output is reported by exact path and real listing and preserved;
+- it is **not** `REPAIR_COMPLETE`, not accepted and not registered;
+- **no second corrective folder is created** — that would turn a visibility
+  problem into two artifacts;
+- `reconcile_output_folder_id()` re-resolves it later, read-only, after
+  re-checking the parent folder id, the exact folder name, the exact twelve-file
+  listing and every digest. It writes nothing and edits nothing, and it refuses
+  to resolve an output that no longer matches what was written.
+
+Result acceptance is impossible until that resolution succeeds.
 
 # The NPZ contract
 
@@ -170,28 +272,23 @@ nothing is published.
 - The three family arrays are in `finalize_null_shards()`'s canonical order —
   family name sorted, replicate ascending within each.
 
-## Unresolved: the member names
+## Member names — resolved (N1)
 
-The 2026-08-12 review named the four members `j_null_max`,
-`j_null_cross_record`, `j_null_within_record` and `j_null_rr_mismatch`.
+The members are the **native frozen control family names** plus `j_null_max`:
+`wrong_record`, `order_shuffle`, `circular_shift`, `j_null_max`.
 
-Three of those appear **nowhere** in the frozen module or anywhere in this
-repository — the frozen control families are `wrong_record`, `order_shuffle`
-and `circular_shift` — and **which frozen family each proposed name denotes is
-not recorded anywhere**.  Adopting them would mean guessing a mapping between
-named null families.  A wrong guess would pass every structural clause above
-while mislabelling a published artifact, and no later check could detect it, so
-this is a scientific labelling decision for the design owner and not an
-implementation detail.
+The proposed aliases `j_null_cross_record`, `j_null_within_record` and
+`j_null_rr_mismatch` are **rejected**, not deferred, and the reason is
+substantive rather than procedural: `order_shuffle` and `circular_shift` are
+*both* within-record manipulations, so there is no bijection from the three
+frozen families onto the proposed triple, and nothing uniquely corresponds to
+`rr_mismatch`. Any mapping would be a guess, and a wrong guess would pass every
+structural clause above while mislabelling a published artifact.
 
-The names therefore stay as D3 fixed them in the merged `EXP-2026-008` Decision
-log, the proposal is carried in the module as `PROPOSED_MEMBER_NAMES` with
-`MEMBER_NAMING_UNRESOLVED = True`, and adopting it is a one-table edit to
-`MEMBER_NAME_BY_FAMILY`.  The maximum is computed over **families** and then
-written under whichever member name that table gives, so a rename cannot
-silently change which numbers the relation is computed from.
-
-**This is the one blocker that cannot be closed without the mapping.**
+`MEMBER_NAME_BY_FAMILY` stays the identity mapping, `MEMBER_NAMING_UNRESOLVED`
+is `False`, and the proposal survives only as `REJECTED_PROPOSAL`, an audit
+record nothing reads. Computed values and array order are unchanged by this
+decision.
 
 ## Qualification of the repair input
 
@@ -342,18 +439,36 @@ carries the path and listing, the notebook prints them, and tests assert both
 halves.  No `COMMITTED` marker is written by this repair in any case — the
 marker is not one of the twelve `BUNDLE_FILES`.
 
-# Notebook pinning
+# Execution pinning, without self-reference
 
-A repair run is pinned to the **exact commit SHA** approved for execution, not
-to a moving branch: a branch name resolves to whatever was pushed most recently,
-which is not what an approval covered.  The notebook refuses to proceed without
-a 40-hex `PINNED_COMMIT`, checks the commit out detached, confirms `HEAD` equals
-it, and refuses a dirty working tree — a commit pin says nothing about
-uncommitted edits.
+A 40-hex string typed into a notebook is not an approval — it is an assertion by
+whoever typed it — and a commit SHA cannot be written into the commit it names.
+So the pin is two separate facts, and they are never collapsed:
 
-After checkout it **re-measures** the module, spec and notebook digests on disk
-(LF-normalised and raw), because knowing the commit is not the same as knowing
-the three files are the ones that commit contains.
+**Approved implementation.** `APPROVED_IMPLEMENTATION_COMMIT` names the commit
+Codex reviewed, and `APPROVED_ARTIFACT_DIGESTS` records the LF-normalised
+digests of the spec, the notebook, the frozen Q5-D module, and the repair
+module's **science digest**. Both are written by a *later* execution-enable PR,
+so the record points backwards and never certifies itself.
+
+The repair module is deliberately absent from that digest table: a record inside
+a file cannot certify that file. What covers it is `module_science_digest()` —
+the module hashed with the fenced approval block removed. An enable PR may change
+that block and nothing else, and the science digest proves it: identical before
+and after, and different the moment any logic moves. "The approval only flipped a
+flag" therefore becomes a checked claim rather than a promise in a commit
+message.
+
+**Execution head.** The notebook measures the actual `HEAD` from git after a
+detached checkout, refuses a dirty working tree, and passes it in as
+`execution_head`. The decision's `pinned_commit` is that measured value — not a
+module constant that would read `None`.
+
+Before any registered asset is opened, `verify_execution_identity()` requires
+the approved record to exist, the execution head to be a 40-hex value measured
+from git, and every digest on disk to equal the approved one. Anything else is
+`REPAIR_EXECUTION_IDENTITY_UNVERIFIED`. With nothing approved — the state this
+PR ships in — a production run cannot start.
 
 # Stop reasons
 
@@ -364,6 +479,9 @@ accepted.
 |---|---|
 | `REPAIR_NOT_APPROVED` | reached without the separate execution approval |
 | `REPAIR_FROZEN_MODULE_MOVED` | the imported Q5-D module or rule fingerprint is not the registered one |
+| `REPAIR_EXECUTION_IDENTITY_UNVERIFIED` | the running code is not verifiably the approved implementation |
+| `REPAIR_READONLY_SCOPE_UNPROVEN` | the credential does not carry exactly the read-only scope |
+| `REPAIR_BYTES_MOVED_AFTER_BRIDGE` | a file changed between being tied to its folder id and being judged |
 | `REPAIR_UNDEFINED_NEWLINE` | a lone CR, which has no defined registered identity |
 | `REPAIR_INPUT_UNQUALIFIED` | the folder-id bridge or the shards failed any clause above |
 | `REPAIR_SUMMARY_DISAGREES` | reconstructed `j_null_max` ≠ `null_summary.json`'s |
@@ -374,6 +492,7 @@ accepted.
 | `REPAIR_TARGET_EXISTS` | the corrective folder name is already taken |
 | `REPAIR_TARGET_UNSAFE` | the target is inside an input, outside the approved parent, or reached through a link |
 | `REPAIR_COPY_NOT_BYTE_IDENTICAL` | a copied file's digest moved |
+| `REPAIR_OUTPUT_FOLDER_ID_UNRESOLVED` | the written output's Drive folder id did not resolve |
 
 `REPAIR_INCOMPLETE_TARGET_PRESERVED` is **not** a stop reason — it is the state
 of a directory a stop left behind.
@@ -382,8 +501,14 @@ of a directory a stop left behind.
 
 Fixed before any measurement exists.
 
-- the pinned commit, and the module / spec / notebook digests re-measured after
-  checkout, both LF-normalised and raw
+- the approved implementation commit and digests, the measured `execution_head`,
+  and the module / spec / notebook digests re-measured after checkout, both
+  LF-normalised and raw
+- the credential audit: `requested_scopes`, `observed_scopes`,
+  `exact_readonly_scope_proven`, `credential_type`, Drive API and version, and
+  that the adapter exposes only `files.list`
+- the runs-parent bridge, showing the registered source id as a direct child of
+  the registered parent id
 - the frozen Q5-D LF-normalised **and** raw SHA-256, and the live rule
   fingerprint
 - the three registered folder ids, the inventory method (folder id, not name
@@ -483,18 +608,41 @@ missing numpy is `REPAIR_NUMPY_UNAVAILABLE`.  The previous hard-coded
 | G | Independent NPZ verification | Exactly four members with no duplicate names, float64 `(10000,)`, finite, elementwise maximum and `null_summary.json` equality, verified by an independent parser **and** by a real `numpy.load(..., allow_pickle=False)`; production stops without numpy. **The member *names* remain unresolved — see below.** |
 | H | Notebook pinning and result identity | Execution is pinned to an exact commit SHA, `HEAD` and a clean tree are confirmed, module/spec/notebook digests are re-measured after checkout, and the new corrective folder's Drive id is read back read-only and recorded. |
 
-### The one blocker that is not closed
+### N1 — member names, resolved
 
-G's member names.  The review named `j_null_cross_record`,
-`j_null_within_record` and `j_null_rr_mismatch`; the frozen families are
-`wrong_record`, `order_shuffle` and `circular_shift`, and **no mapping between
-the two sets exists anywhere in this repository**.  Renaming would mean guessing
-which family is which — a guess that would satisfy every structural clause while
-mislabelling a published artifact, undetectably.  The active names are the ones
-D3 fixed in the merged `EXP-2026-008` Decision log; the proposal is recorded in
-the module and here; supplying the mapping makes it a one-table edit.
+The proposed aliases are **rejected**, not deferred: `order_shuffle` and
+`circular_shift` are both within-record manipulations, so no bijective semantic
+mapping onto cross-record / within-record / rr-mismatch exists and nothing
+uniquely corresponds to `rr_mismatch`.  Native frozen family names are retained;
+`MEMBER_NAMING_UNRESOLVED` is `False`; `PROPOSED_MEMBER_NAMES` is gone and only
+`REJECTED_PROPOSAL` remains, as an audit record nothing reads.  Computed values
+and array order are unchanged.
+
+## 2026-08-12 — the second review round: N1 and R1-R6
+
+Codex accepted the A-H work and confirmed the Windows result (54 functions /
+331 assertions there).  The blockers below were all about the **production**
+route's provenance and approval, and none of them changed a gate, a null value,
+a seed, a family or the replicate count.
+
+| | Blocker | Resolution |
+|---|---|---|
+| N1 | member names | native frozen family names retained; proposed aliases rejected because no bijective semantic mapping exists |
+| R1 | adapter mandatory | `run_repair()` has no `adapter` parameter; it takes an authenticator and a service factory and builds the adapter below the guard.  Drive-free fixtures use `run_repair_synthetic_fixture()`, which requires an explicit marker and can only reach `REPAIR_COMPLETE_SYNTHETIC_FIXTURE`, so `REPAIR_COMPLETE` without a resolved folder id is structurally unreachable |
+| R2 | auth below the guard | the notebook calls no authenticator and builds no service; the module mints the credential below the guard, proves exactly `drive.readonly`, and records the audit.  Guard closed or token wrong → zero credential, service and API calls, proven by spies |
+| R3 | bridge bytes are judged bytes | the bridge returns its bytes, the snapshot and the shard parser use them, and a re-read against the bridge digests turns a same-length substitution into `REPAIR_BYTES_MOVED_AFTER_BRIDGE` |
+| R4 | runs parent bridged | the registered source id must be a live direct child of the registered parent id, and the source mount must sit directly under the runs-parent mount; a failed bridge means `os.mkdir` is never called |
+| R5 | post-write folder id | bounded read-only retry; unresolved → `REPAIR_OUTPUT_FOLDER_ID_UNRESOLVED` with the output preserved, never accepted, no second folder, and a read-only `reconcile_output_folder_id()` that re-checks everything and writes nothing.  One boundary in `_route()` attaches the preserved path and listing to **every** post-write failure |
+| R6 | non-self-referential pin | approved implementation (commit + spec/notebook/frozen/science digests, recorded by a later PR) and execution head (measured from git by the notebook) are separate; the module's own coverage is `module_science_digest()`, which an approval-only edit leaves unchanged |
 
 Two design decisions still worth weighing rather than inheriting: the
 identity-only context, and the explicit writer instead of `numpy.savez`.  Both
 are argued above with what they buy and what they cost, and both are
 substitutable without touching the contract.
+
+One limitation stated plainly: **production requires numpy and this
+repository's test container has none**, so the production-route tests inject a
+stub that asserts `numpy.load` was called with `allow_pickle=False`.  Where real
+numpy exists the genuine cross-check runs instead.  The stub keeps the route
+reachable in CI; it is not evidence that numpy can read the file, and it is not
+used by any production path.
