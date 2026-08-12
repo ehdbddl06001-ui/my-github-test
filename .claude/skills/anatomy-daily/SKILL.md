@@ -144,6 +144,33 @@ python pipelines/anatomy_daily.py --date <KST 오늘> --plan
   태우는 것을 실측(2026-08-12). 이미지는 채팅 파일 전송으로 전달하고
   사용자가 보관/Drive 저장.
 
+## 4d. 학습자료 PDF (다운로드 산출물)
+
+회차 단위로 [표지 → 학습 개요 → 문제(퀴즈판) → 정답·해설(복원판)] PDF를
+`pipelines/anatomy_pdf.py`로 만든다(레이아웃·조판은 전부 결정론, LLM은
+manifest의 개요 본문과 문항 목록만 작성).
+
+```
+python pipelines/anatomy_pdf.py --manifest .private/anatomy/pdf/sNN_manifest.json
+```
+
+- **출력·manifest 모두 `.private/anatomy/pdf/` 아래에만** 둔다. 카데바·
+  e-Anatomy 파생 이미지가 들어가므로 **PDF는 절대 repo 커밋·웹 게시 금지**
+  (스크립트가 `.private` 밖 출력을 거부한다). Drive MCP 업로드도 금지
+  (base64 토큰 폭탄) — **채팅 파일 전송으로 전달**하고 사용자가 Drive
+  `MedKOS-해부-복원자료`에 보관.
+- manifest의 `questions[*].card`는 기존 문항 카드(.md)를 가리키고 stem/
+  answer/explanation은 frontmatter에서 읽는다 — PDF 본문을 따로 쓰지 않는다
+  (Source of Truth 유지). `quiz_image`/`clean_image`는 `.private` 렌더 산출물.
+- **개요(overview) 본문에는 정답 노출 주의가 없다**(문제 섹션과 분리된
+  학습자료이므로 구조·신경지배·임상 포인트를 정상 서술). 단, 문제 페이지
+  stem에는 정답 단서를 넣지 않는 기존 규칙 유지.
+- 생성 시점: 예습시험 `finalize`(D-1) 실행에서 그 회차 세트가 완성되면
+  함께 생성해 전달. 평시에는 사용자가 요청할 때 또는 회차 문항이 4개 이상
+  쌓였을 때 갱신.
+- 렌더 QA: 생성 후 표지·개요·문제 1·정답 마지막 페이지를 72dpi로 렌더해
+  눈으로 확인(4b와 동일한 원칙 — 텍스트 잘림·이미지 고아 블록 없어야 함).
+
 ## 5. 계획 확정 + 검증
 
 ```

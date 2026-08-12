@@ -271,6 +271,14 @@ def test_preview_exam_signal() -> None:
     assert any(x["phase"] == "finalize" and x["class_date"] == "2026-08-24" for x in sun)
 
 
+def test_pdf_builder_selftest() -> None:
+    """학습자료 PDF: 조판·frontmatter 파싱·.private 출력 가드 회귀 (anatomy_pdf --selftest)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "anatomy_pdf.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"anatomy_pdf selftest 실패: {r.stdout}{r.stderr}"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":
