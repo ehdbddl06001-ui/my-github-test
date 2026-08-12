@@ -201,6 +201,9 @@ python pipelines/anatomy_pdf.py --manifest .private/anatomy/pdf/sNN_manifest.jso
   3. **Drive 업로드**: 카드 본문을 `text/markdown`으로 `MedKOS-해부-복원자료`
      폴더에 create_file → Google Docs 자동 변환(표·제목 유지). 이미지가 없는
      텍스트라 토큰 부담 없음. 429(quota) 나면 다음 실행에서 재시도.
+- **범위 표기는 `–`(en dash)** — `C7–T12`, `0:00–11:08`. `~`는 Docs 변환에서
+  **취소선으로 오해석**되므로 study_guide 카드·Drive 업로드 본문에 금지
+  (2026-08-12 실측: "C7~T3 … 2~5" 구간이 취소선으로 렌더됨).
 - **생성 시점**: 예습시험 `prepare`(D-2)에 초안, `finalize`(D-1)에 완성판.
   실사 문항 세트와 같은 마감(수업 전날 아침)을 공유한다.
 - 문항 lane(4c)은 계속 돌리되, 이 study_guide가 회차 산출물의 1순위다.
