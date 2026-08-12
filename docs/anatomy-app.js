@@ -264,6 +264,13 @@
       + esc(c.title) + "</span><span class='tag'>" + esc(REGION_LABEL[c.region] || c.region)
       + "</span>" + (c.conceptStyle ? '<span class="pill">' + esc(STYLE_LABEL[c.conceptStyle] || c.conceptStyle) + "</span>" : "")
       + confBadge(c.confidence) + "</div>";
+    if (c.image) {
+      h += '<div class="anat-imgbox"><img src="' + esc(c.image) + '" alt="'
+        + esc(c.title) + ' 도해' + (c.imageOrigin === "claude-drawn-svg" ? " (자체 제작 모식도)" : "") + '">'
+        + (c.imageOrigin === "claude-drawn-svg"
+          ? '<div class="muted" style="font-size:.78rem;margin-top:4px">자체 제작 모식도 — 실제 비율이 아니라 관계·행선지를 보여주는 도식</div>' : "")
+        + "</div>";
+    }
     if (c.tree) h += '<nav class="anat-tree" aria-label="분지 트리"><ul>' + treeHtml(c.tree, 0) + "</ul></nav>";
     if (withBody || !c.tree) h += '<div class="ibody">' + esc(c.body).slice(0, 2400) + "</div>";
     h += refsHtml(c.refs) + "</article>";

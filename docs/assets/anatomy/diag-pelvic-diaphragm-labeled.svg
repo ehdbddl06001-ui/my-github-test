@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="골반가로막 위에서 본 모식도 — 클로드 자체 제작, 강의 14차시 근거">
+  <!-- 자체 제작 모식도(위에서 본 배치). 근거: 14차시 강의 §골반가로막 -->
+  <rect width="760" height="560" fill="#0e1826"/>
+  <text x="20" y="30" fill="#e6edf3" font-size="17" font-weight="700">골반가로막(pelvic diaphragm) — 위에서 본 배치(모식도)</text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">항문올림근★ + 꼬리근 + 근막 · 안(앞)→가쪽(뒤) 순서 · 근거: 14차시 강의 §골반가로막</text>
+
+  <!-- 골반 테두리 -->
+  <ellipse cx="380" cy="300" rx="300" ry="210" fill="none" stroke="#2b3a4d" stroke-width="3"/>
+  <text x="352" y="82" fill="#9cc3ff" font-size="12" font-weight="700">두덩결합(앞)</text>
+  <text x="356" y="536" fill="#9cc3ff" font-size="12" font-weight="700">꼬리뼈(뒤)</text>
+  <circle cx="380" cy="510" r="6" fill="#2f4a72"/>
+
+  <!-- 속폐쇄근(가쪽벽) -->
+  <path d="M 105 240 A 290 200 0 0 0 130 400" stroke="#3d5166" stroke-width="26" fill="none"/>
+  <text x="40" y="230" fill="#93a4b7" font-size="12">속폐쇄근 + 속폐쇄근막</text>
+  <text x="40" y="246" fill="#93a4b7" font-size="12">(가쪽벽)</text>
+  <path d="M 655 240 A 290 200 0 0 1 630 400" stroke="#3d5166" stroke-width="26" fill="none"/>
+
+  <!-- 항문올림근힘줄활: 궁둥뼈가시→폐쇄관 -->
+  <circle cx="170" cy="420" r="7" fill="#eab308"/>
+  <text x="90" y="446" fill="#eab308" font-size="12">궁둥뼈가시</text>
+  <circle cx="200" cy="170" r="7" fill="#eab308"/>
+  <text x="120" y="160" fill="#eab308" font-size="12">폐쇄관</text>
+  <path d="M 170 420 L 200 170" stroke="#eab308" stroke-width="3" stroke-dasharray="8 5" fill="none"/>
+  <text x="205" y="300" fill="#eab308" font-size="12" font-weight="700">항문올림근힘줄활</text>
+  <text x="205" y="316" fill="#93a4b7" font-size="10">(속폐쇄근막이 두꺼워진 선)</text>
+
+  <!-- 두덩곧창자근: 항문관을 감싸는 U -->
+  <path d="M 350 120 C 320 260 320 330 380 360 C 440 330 440 260 410 120" stroke="#7fb3f6" stroke-width="14" fill="none"/>
+  <text x="392" y="395" fill="#7fb3f6" font-size="13" font-weight="700">두덩곧창자근</text>
+  <text x="392" y="411" fill="#93a4b7" font-size="10">항문관을 감싸 뒤에서 연결(가장 앞·안쪽)</text>
+  <!-- 비뇨생식구멍 -->
+  <ellipse cx="380" cy="190" rx="24" ry="46" fill="none" stroke="#c9bcff" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <text x="410" y="180" fill="#c9bcff" font-size="12">비뇨생식구멍</text>
+  <text x="410" y="196" fill="#93a4b7" font-size="10">(요도·질 통과)</text>
+  <circle cx="380" cy="330" r="16" fill="#182534" stroke="#2f4a72"/>
+  <text x="362" y="360" fill="#9cc3ff" font-size="11">항문관</text>
+
+  <!-- 두덩꼬리근 -->
+  <path d="M 320 125 C 300 280 330 420 378 470" stroke="#5f8fd6" stroke-width="11" fill="none"/>
+  <path d="M 440 125 C 460 280 430 420 382 470" stroke="#5f8fd6" stroke-width="11" fill="none"/>
+  <text x="452" y="450" fill="#5f8fd6" font-size="13" font-weight="700">두덩꼬리근</text>
+  <text x="452" y="466" fill="#93a4b7" font-size="10">두덩뼈몸통 → 꼬리뼈</text>
+
+  <!-- 엉덩꼬리근: 힘줄활에서 기시 -->
+  <path d="M 190 300 C 260 400 330 460 376 492" stroke="#41729f" stroke-width="11" fill="none"/>
+  <path d="M 570 300 C 500 400 430 460 384 492" stroke="#41729f" stroke-width="11" fill="none"/>
+  <text x="540" y="350" fill="#6f9fce" font-size="13" font-weight="700">엉덩꼬리근</text>
+  <text x="540" y="366" fill="#93a4b7" font-size="10">힘줄활에서 → 꼬리뼈(가장 가쪽)</text>
+
+  <!-- 꼬리근 -->
+  <path d="M 172 424 C 260 470 330 495 374 505" stroke="#31567d" stroke-width="10" fill="none"/>
+  <path d="M 588 424 C 500 470 430 495 386 505" stroke="#31567d" stroke-width="10" fill="none"/>
+  <text x="560" y="480" fill="#5b87ae" font-size="13" font-weight="700">꼬리근</text>
+  <text x="536" y="496" fill="#93a4b7" font-size="10">궁둥뼈가시 → 꼬리뼈·엉치뼈</text>
+
+  <text x="20" y="540" fill="#93a4b7" font-size="11">그릇처럼 가쪽벽에서 아래안쪽으로 처져 있다 → 아래면이 궁둥항문오목의 안쪽벽. 궁둥구멍근은 골반가로막이 아니다.</text>
+</svg>

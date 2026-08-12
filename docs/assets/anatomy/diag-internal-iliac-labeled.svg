@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="속엉덩동맥 분지 도해(모식도) — 클로드 자체 제작, 강의 14차시 근거">
+  <!-- 자체 제작 모식도(claude-drawn). 실제 해부 비율이 아니라 관계·행선지를 보여주는 도식이다.
+       근거: 14차시(0930) 강의 '속엉덩동맥' 절 + tagging 2차 [골반 동맥] 목록 -->
+  <rect width="760" height="560" fill="#0e1826"/>
+  <text x="20" y="30" fill="#e6edf3" font-size="17" font-weight="700">속엉덩동맥(internal iliac artery) 분지 — 행선지로 묶기</text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">모식도(자체 제작) · 근거: 14차시 강의 §속엉덩동맥 · ★ = tagging 답 후보(번호 항목)</text>
+
+  <!-- 줄기 -->
+  <path d="M 300 80 L 300 120" stroke="#ef6a6a" stroke-width="10" fill="none"/>
+  <text x="310" y="95" fill="#ffb4b4" font-size="13">온엉덩동맥</text>
+  <path d="M 300 120 L 200 170" stroke="#c96a6a" stroke-width="7" fill="none"/>
+  <text x="120" y="160" fill="#d39b9b" font-size="12">바깥엉덩동맥</text>
+  <path d="M 300 120 L 340 200 L 340 430" stroke="#ef6a6a" stroke-width="8" fill="none"/>
+  <text x="348" y="230" fill="#ffb4b4" font-size="14" font-weight="700">속엉덩동맥 ★</text>
+
+  <!-- 앞·내장 가지 (왼쪽으로) -->
+  <path d="M 340 260 L 210 250 L 130 250" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="150" y="242" fill="#e6edf3" font-size="12">배꼽동맥 → 위방광동맥</text>
+  <path d="M 340 300 L 150 300" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="152" y="292" fill="#e6edf3" font-size="12">아래방광동맥</text>
+  <path d="M 340 340 L 150 350" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="152" y="368" fill="#e6edf3" font-size="12">중간곧창자동맥</text>
+  <rect x="40" y="235" width="88" height="80" rx="8" fill="#182534" stroke="#2b3a4d"/>
+  <text x="58" y="272" fill="#9cc3ff" font-size="13">방광</text>
+  <text x="58" y="290" fill="#93a4b7" font-size="10">(아랫부분+전립샘)</text>
+  <rect x="40" y="330" width="88" height="46" rx="8" fill="#182534" stroke="#2b3a4d"/>
+  <text x="55" y="357" fill="#9cc3ff" font-size="13">곧창자 벽</text>
+
+  <!-- 뒤·벽 가지 (오른쪽 위로) -->
+  <path d="M 340 210 L 480 160 L 600 140" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="470" y="150" fill="#e6edf3" font-size="12">엉덩허리동맥(엉덩근·허리 가지)</text>
+  <path d="M 340 240 L 520 230 L 620 250" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="470" y="222" fill="#e6edf3" font-size="12">가쪽엉치동맥(보통 2개) ★</text>
+  <text x="622" y="254" fill="#93a4b7" font-size="10">엉치뼈 앞면</text>
+
+  <!-- 큰궁둥구멍으로 나가는 셋 -->
+  <rect x="540" y="300" width="200" height="110" rx="10" fill="#182534" stroke="#4a3d7a"/>
+  <text x="556" y="322" fill="#c9bcff" font-size="12" font-weight="700">큰궁둥구멍 (greater sciatic foramen)</text>
+  <path d="M 340 320 L 470 320 L 545 335" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="560" y="345" fill="#e6edf3" font-size="12">윗부분: 위볼기동맥</text>
+  <path d="M 340 360 L 470 365 L 545 370" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="560" y="373" fill="#e6edf3" font-size="12">아랫부분: 아래볼기동맥</text>
+  <path d="M 340 390 L 470 395 L 545 396" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="560" y="399" fill="#e6edf3" font-size="12">아랫부분: 속음부동맥</text>
+  <text x="560" y="425" fill="#93a4b7" font-size="10">속음부동맥은 궁둥뼈가시 바로 위에서 나간다</text>
+
+  <!-- 폐쇄관 -->
+  <rect x="120" y="440" width="180" height="60" rx="10" fill="#182534" stroke="#2f4a72"/>
+  <text x="136" y="463" fill="#9cc3ff" font-size="12" font-weight="700">폐쇄관 (obturator canal)</text>
+  <path d="M 340 430 L 305 465" stroke="#ef8f8f" stroke-width="4" fill="none"/>
+  <text x="200" y="483" fill="#e6edf3" font-size="12">폐쇄동맥 ★ (폐쇄신경이 위)</text>
+  <path d="M 355 455 L 310 478" stroke="#eab308" stroke-width="2.5" stroke-dasharray="5 3" fill="none"/>
+  <text x="360" y="462" fill="#eab308" font-size="11">폐쇄신경</text>
+
+  <text x="20" y="540" fill="#93a4b7" font-size="11">혼동 주의: 위곧창자동맥은 속엉덩동맥이 아니라 아래창자간막동맥의 가지(중간곧창자동맥과 문합).</text>
+</svg>
