@@ -76,6 +76,17 @@ produces a number that could be mistaken for a registration candidate.
 3. **`publisher_checksums`** — the publisher list over the other 146 files:
    `checked = 146`, `matched = 146`, no mismatch, no unlisted entry, or
    `P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH`.
+
+**One read of `SHA256SUMS.txt`, not two.**  Gate 2's digest and gate 3's parsed
+list come from the *same* byte snapshot.  Verifying the file through one read
+and then re-opening the registered path to parse it leaves a window in which
+the file changes between the two — the run would then verify one state and act
+on another, which makes the verification decorative.  Gate 3 therefore never
+re-opens the path; the list is parsed from the verified bytes by a PREP-local
+parser held to `BJ.parse_sha256sums`'s conventions (whitespace forms, blank and
+comment lines, `*name`, `./name`, nested paths kept whole, 64-character digests
+only, lowercased) by differential tests over the same inputs.  The frozen
+module is not modified.
 4. **`tree_aggregate`** — the 147-file fold, using the frozen
    `(name, bytes, sha256)` canonical-JSON convention and no other.  If the
    observed full digest does not extend the registered prefix `0b46a411`,
@@ -132,6 +143,72 @@ rejected every genuine bundle.
 QA count agreement is never used as identity evidence.  Files are hashed at
 byte level only; parquet is not parsed and no content is aggregated.
 
+# Preserved observations
+
+A gate that fails after doing work keeps what it measured.  Blanking it would
+destroy the only evidence that explains the failure, and it protects nothing:
+what has to be withheld is *eligibility*, not the observation.
+
+- A `P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH` keeps all 147 per-file
+  `(name, bytes, sha256)` observations and the mismatched/unlisted detail, with
+  `tree_aggregate: null`, `gate_passed: false`,
+  `eligible_for_registration: false`, `observation_only: true` and
+  `blocked_by: P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH`.  The aggregate is
+  withheld because folding an unverified tree produces a number indistinguishable
+  in form from a registration candidate.
+- A gate that stops before anything is hashed reports an empty `per_file`,
+  because nothing was measured.  An empty observation and a withheld one are
+  different claims and are not conflated.
+- A P2 failure after `canonical_bytes_bridge` keeps the bridge and its per-file
+  cross-checks, with `input_identity: null` — that gate was never reached.
+
+# Authentication and scope
+
+Authentication is part of the guarded route, not of the notebook.  A notebook
+cell that built an adapter would mint a credential the terminal guard never
+saw, which is the guard defeated by convenience.  `run_prep()` therefore runs
+in exactly this order, and the notebook calls it with `adapter=None`:
+
+1. `OPEN_REGISTERED_DATA` switch
+2. PREP execution approval token
+3. registered folder id
+4. **terminal execution guard**  ← the one line an execution-approval PR removes
+5. runtime dependency check
+6. credential acquisition and read-only scope proof
+7. Drive v3 service and adapter construction
+8. P1/P2 readers and Drive API calls
+
+The credential is requested with exactly
+`https://www.googleapis.com/auth/drive.readonly` and is passed explicitly to
+the client; the adapter never constructs a default client, because a default
+client silently adopts an ambient credential whose scope nobody checked.  The
+run records a machine-readable audit — `requested_scopes`, `observed_scopes`,
+`exact_readonly_scope_proven`, `credential_type`, `service_api`/`service_version`,
+`no_write_adapter_methods` — and never a token, credential or authorization
+header.
+
+A credential whose scopes cannot be observed, or which carries anything beyond
+the read-only scope, stops the run with `P2_READONLY_SCOPE_UNPROVEN`.  A
+broader credential is **not** accepted merely because it includes the scope we
+need: "read-only" would then be a claim the code cannot support.  Having no
+write method on the adapter bounds the *adapter*, not the credential, and is
+reported separately rather than offered as the proof.  If the platform cannot
+produce an exactly read-only credential, that is reported and production
+execution is blocked rather than described loosely.
+
+# Runtime identity
+
+Each bundle's `config.json` and `manifest.json` record the environment the run
+happened in: Python version, platform, the `google-auth`,
+`google-api-python-client` and `google-colab` versions, the requested Drive
+scope and whether it was proven, and the SHA-256 of the PREP module, the Q5-E
+module and the frozen Q5-D module.  A digest is only as interpretable as the
+run that produced it, and this cannot be reconstructed afterwards.
+
+Nothing is installed or upgraded to make the record tidier: a version that
+cannot be determined is written as `unavailable`, never as `latest` and never
+guessed.  No credential, token or local path is recorded.
+
 # What a run may not do
 
 Open a DS2 per-beat label or a V10 probability, run `detect_r()`, aggregate
@@ -177,6 +254,18 @@ deleted**: an existing final path is refused rather than removed, no earlier
 staging directory is cleaned up, and a failed run's partial staging is
 preserved at a reported `.failed` path rather than discarded — a diagnosis is
 worth more than a tidy directory.
+
+The final path is **claimed** with a single `mkdir` before any staging work,
+rather than tested with `lexists` and renamed onto much later.  POSIX `rename`
+replaces an empty directory, so the test-then-act form could destroy a
+directory that appeared in the window between the two; `mkdir` is atomic and
+fails if anything at all is at the path — a file, an empty directory, a
+non-empty directory, a symlink or a junction — so from the claim onward the
+name is ours.  Publishing releases that claim with `rmdir`, which removes only
+an empty directory and therefore only ever the writer's own claim; if anything
+found its way inside, the run refuses to publish and preserves its staging
+instead.  A symlinked or reparse-point parent is refused outright, because
+writing through a link lands somewhere other than where the path says.
 
 # Registration
 
@@ -244,6 +333,27 @@ below is present and correct in the bundle.
 - P1 and P2 verdicts and `first_failure` values recorded independently
 - observations preserved even where the other gate failed
 - `eligible_for_registration` per candidate, and `applied_automatically: false`
+- `config.runtime` present with a real Python version, platform, and a version
+  or the literal `unavailable` for each recorded distribution — never `latest`
+- `config.drive_authentication.exact_readonly_scope_proven` true for a
+  production run, with `observed_scopes` equal to the single read-only scope
+- no token, credential or authorization field anywhere in the bundle
+
+**Notebook output** (the saved report cell, which is also the external freeze
+record):
+
+- P1 and P2 status and `first_failure`
+- a per-gate PASS / STOP table for both legs, with unreached gates shown as
+  unreached rather than as passes
+- P1's 146 + 1 result, spelled out
+- P2's inventory method (folder id, not name search) and bridge method
+- the scope proof result
+- provider checksum availability and match per file
+- preserved observations, `gate_passed`, `eligible_for_registration` and
+  `blocked_by`
+- the full 64-hex `prep_payload_sha256` and `manifest_sha256_freeze_externally`
+- the `.failed` staging path if the publish did not complete
+- the next action
 
 # Order
 
@@ -275,3 +385,55 @@ asset-identity preflight, not part of the frozen diagnostic design.
 
 The manifest self-digest freeze slot is deliberately empty: it is filled in
 this Decision log when a real run is accepted, and never from inside a bundle.
+
+## 2026-08-12 — second acceptance round: guard, scope, snapshot, observations
+
+Five corrections, all to the implementation and none to the science.  The
+scientific question, split, metrics and stopping conditions are unchanged.
+
+**The notebook was authenticating above the guard.**  Cell 5 built the Drive
+adapter itself and handed it to `run_prep()`, so a credential was minted before
+the terminal guard was ever reached — the guard was intact and irrelevant.
+Authentication now lives inside `run_prep()`, below the guard; the notebook
+passes `adapter=None` and its preflight cell reports the folder id, the
+dependency list and the scope contract while making zero auth, service and API
+calls.  A spy test makes every one of those seams raise if touched, and runs
+the approved route with the guard alive to show the count really is zero rather
+than "refused".
+
+**The read-only scope was declared but not applied.**  A constant nobody passes
+to a call proves nothing.  The credential is now acquired explicitly, requested
+with exactly the read-only scope, audited, and passed to the client; anything
+short of exactly that scope stops with `P2_READONLY_SCOPE_UNPROVEN`, including
+a broader credential that happens to include it.  The production adapter no
+longer builds a default client, which was the remaining path to an unaudited
+ambient credential.
+
+**`SHA256SUMS.txt` was read twice.**  Gate 2 hashed it and gate 3 re-opened it
+through the frozen verifier, so a file swapped in between would be verified in
+one state and parsed in another.  Both steps now work from one byte snapshot,
+with a PREP-local parser held to the frozen parser's conventions by
+differential tests across eighteen list dialects.  A reader that rewrites the
+file the moment it has been read leaves the verdict unchanged; before the fix
+the same fixture changed which list the 146 files were checked against.
+
+**Failing gates were discarding what they had measured.**  A publisher-checksum
+failure now keeps all 147 per-file digests and the mismatch detail with the
+aggregate withheld, and a P2 manifest failure keeps the bridge cross-checks
+with `input_identity` null.  This is the same principle already applied to the
+passing leg's observation: withhold eligibility, never evidence.
+
+**The runtime was unrecorded.**  Interpreter, platform, client library
+versions, requested scope and the three module digests now go into
+`config.json` and `manifest.json`.  Nothing is installed to fill a gap — an
+undeterminable version is written as `unavailable`.
+
+Also hardened, following the same reasoning as the earlier publish work: the
+final path is claimed atomically with `mkdir` instead of being tested and
+renamed onto later, and symlink and reparse-point targets and parents are
+refused.  Every one of these fixes was checked by reverting it and watching the
+new test fail.
+
+Still true, and still deliberately so: nothing has been executed, no registered
+asset has been opened, no digest computed against real bytes, no value
+registered, and the terminal guard is untouched.

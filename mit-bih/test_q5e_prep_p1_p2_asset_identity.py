@@ -13,6 +13,7 @@ Run with::
 
 from __future__ import annotations
 
+import builtins
 import hashlib
 import json
 import os
@@ -939,6 +940,47 @@ class CountingReader(P.LocalTreeReader):
         self.read.append(name)
         return super().stat_and_hash(directory, name)
 
+    def read_bytes(self, directory, name, limit=None):
+        self.read.append(name)
+        return super().read_bytes(directory, name, limit=limit)
+
+
+class OpenSpy(object):
+    """Records every real `open()` under a directory.
+
+    A reader-level counter proves what *this module's seam* did; it says
+    nothing about a frozen helper that opens a path directly.  This watches the
+    builtin, so a second read of the registered checksum file shows up no
+    matter who performs it.
+    """
+
+    def __init__(self, directory):
+        self.directory = os.path.abspath(directory)
+        self.opened = []
+        self._real = builtins.open
+
+    def __enter__(self):
+        spy = self
+
+        def watched(file, *args, **kwargs):
+            try:
+                path = os.path.abspath(os.fspath(file))
+            except TypeError:                       # a file descriptor
+                path = None
+            if path and path.startswith(spy.directory + os.sep):
+                spy.opened.append(os.path.relpath(path, spy.directory))
+            return spy._real(file, *args, **kwargs)
+
+        builtins.open = watched
+        return self
+
+    def __exit__(self, *exc):
+        builtins.open = self._real
+        return False
+
+    def count(self, name):
+        return self.opened.count(name)
+
 
 def test_b1_checksum_failure_reads_nothing_else():
     """B1: the I/O follows the gate order, not just the report."""
@@ -950,13 +992,14 @@ def test_b1_checksum_failure_reads_nothing_else():
                                         bad_checksum_file=True)
             reader = CountingReader(TOKEN)
             calls = []
-            real_verifier = BJ.verify_against_publisher_checksums
-            BJ.verify_against_publisher_checksums = (
-                lambda *a, **k: calls.append("verify") or real_verifier(*a, **k))
+            real_parser = P.parse_sha256sums_text
+            P.parse_sha256sums_text = (
+                lambda *a, **k: calls.append("parse") or real_parser(*a, **k))
             try:
-                result = P.run_p1(drifted, TOKEN, reader=reader)
+                with OpenSpy(drifted) as spy:
+                    result = P.run_p1(drifted, TOKEN, reader=reader)
             finally:
-                BJ.verify_against_publisher_checksums = real_verifier
+                P.parse_sha256sums_text = real_parser
 
     check(result["status"] == P.P1_CHECKSUM_FILE_MISMATCH,
           "a drifted checksum file stops P1")
@@ -964,7 +1007,9 @@ def test_b1_checksum_failure_reads_nothing_else():
           "exactly one file was read: the checksum file itself")
     check(len(reader.read) == 1,
           "the other 146 files were never read")
-    check(calls == [], "the publisher verifier was never called")
+    check(spy.opened == [BJ.MITDB_CHECKSUM_FILE],
+          "and the real open() spy agrees: one file, opened once")
+    check(calls == [], "the publisher list was never even parsed")
     check(result["tree_aggregate"] is None, "no aggregate was computed")
     check(result["per_file"] == [], "and no per-file digests were produced")
 
@@ -1104,7 +1149,7 @@ def test_g5_publish_never_deletes_anything_pre_existing():
                            ["x"], synthetic=True)
             raise AssertionError("an existing directory was overwritten")
         except P.PrepError as error:
-            check("already exists" in str(error),
+            check("already there" in str(error),
                   "an existing final path is refused")
         check(os.path.exists(os.path.join(out, "someone_elses_file.txt")),
               "and the file that was already there survives")
@@ -1119,15 +1164,136 @@ def test_g5_publish_never_deletes_anything_pre_existing():
             check(os.path.isdir(empty),
                   "even an empty existing directory is left alone")
 
+        # A plain file at the final path is a third case: `rename` onto a file
+        # would fail anyway, but only after the whole bundle had been staged.
+        occupied = os.path.join(tmp, "occupied")
+        with open(occupied, "w", encoding="utf-8") as handle:
+            handle.write("not a bundle")
+        try:
+            P.write_bundle(occupied, P.build_config("T", True), p1, p2,
+                           combined, ["x"], synthetic=True)
+            raise AssertionError("an existing file was overwritten")
+        except P.PrepError:
+            check(os.path.isfile(occupied), "an existing file survives")
+            with open(occupied, encoding="utf-8") as handle:
+                check(handle.read() == "not a bundle",
+                      "with its contents untouched")
+
         source = open(P.__file__, encoding="utf-8").read()
         writer = source.split("def write_bundle(", 1)[1].split("\ndef ", 1)[0]
         check("rmtree" not in writer,
               "the writer never calls a recursive delete")
-        check("os.rmdir" not in writer, "nor removes the final directory")
+        check("os.remove" not in writer and "os.unlink" not in writer,
+              "and never deletes a file")
+        # `os.rmdir` appears twice and both are the writer's own claim: it
+        # removes only an *empty* directory, and the only empty directory that
+        # can be at that path is the one this call created moments earlier.
+        check(writer.count("os.rmdir") == 2,
+              "the only deletion is rmdir, releasing the writer's own claim")
         check("except BaseException" not in writer,
               "and does not catch BaseException")
         check("except Exception as error" in writer,
               "it catches only ordinary exceptions, and names them")
+
+
+def test_g5_the_final_path_is_claimed_before_anything_is_staged():
+    """A path that appears between check and rename cannot be clobbered.
+
+    The old shape was `lexists()` then, much later, `rename()`.  POSIX
+    `rename` replaces an empty directory, so anything that took the name in
+    between would have been destroyed.  The claim is now a single atomic
+    `mkdir`, so this reproduces the race in the exact window and shows the
+    publish refuses rather than overwrites.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+        target = os.path.join(tmp, "racy")
+
+        def intruder(directory, staging):
+            # Something lands inside the claimed name in the window that used
+            # to be unguarded.
+            with open(os.path.join(directory, "intruder.txt"), "w",
+                      encoding="utf-8") as handle:
+                handle.write("arrived between check and rename")
+
+        P._PUBLISH_RACE_HOOK = intruder
+        try:
+            P.write_bundle(target, P.build_config("T", True), p1, p2,
+                           combined, ["x"], synthetic=True)
+            raise AssertionError("the publish overwrote the racing writer")
+        except P.PrepError as error:
+            check("not published" in str(error),
+                  "the publish refuses rather than overwriting")
+            check("nothing pre-existing was deleted" in str(error),
+                  "and says so")
+        finally:
+            P._PUBLISH_RACE_HOOK = None
+
+        check(os.path.isfile(os.path.join(target, "intruder.txt")),
+              "the racing writer's file survives")
+        with open(os.path.join(target, "intruder.txt"),
+                  encoding="utf-8") as handle:
+            check("between check and rename" in handle.read(),
+                  "with its contents intact")
+
+        failed = [n for n in os.listdir(tmp) if n.endswith(".failed")]
+        check(len(failed) == 1,
+              "and the failed staging directory is preserved for inspection")
+        staged = os.listdir(os.path.join(tmp, failed[0]))
+        check(sorted(staged) == sorted(P.bundle_files(True)),
+              "with the whole staged bundle still in it")
+
+
+def test_g5_publish_refuses_a_symlinked_parent_or_target():
+    """A link at either end sends the write somewhere the path does not say."""
+    if not hasattr(os, "symlink"):                       # pragma: no cover
+        return
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+
+        real = os.path.join(tmp, "real")
+        os.makedirs(real)
+        with open(os.path.join(real, "precious.txt"), "w",
+                  encoding="utf-8") as handle:
+            handle.write("keep me")
+
+        # A symlink sitting *at* the final path.
+        link = os.path.join(tmp, "link_target")
+        os.symlink(real, link)
+        try:
+            P.write_bundle(link, P.build_config("T", True), p1, p2, combined,
+                           ["x"], synthetic=True)
+            raise AssertionError("published through a symlink")
+        except P.PrepError as error:
+            check("already there" in str(error),
+                  "a symlink at the final path is refused, not followed")
+        check(os.path.islink(link), "the link itself is left in place")
+        check(os.path.isfile(os.path.join(real, "precious.txt")),
+              "and what it points at is untouched")
+
+        # A symlinked parent directory.
+        parent_link = os.path.join(tmp, "link_parent")
+        os.symlink(real, parent_link)
+        try:
+            P.write_bundle(os.path.join(parent_link, "bundle"),
+                           P.build_config("T", True), p1, p2, combined,
+                           ["x"], synthetic=True)
+            raise AssertionError("published under a symlinked parent")
+        except P.PrepError as error:
+            check("symlink or reparse point" in str(error),
+                  "a symlinked parent is refused")
+        check(sorted(os.listdir(real)) == ["precious.txt"],
+              "and nothing was written through it")
+
+        check(P._is_link_like(link) is True, "the link check sees a symlink")
+        check(P._is_link_like(real) is False,
+              "and a real directory is not mistaken for one")
+        check("isjunction" in open(P.__file__, encoding="utf-8").read(),
+              "the same check covers a Windows junction where detectable")
 
 
 def test_g5_staging_is_unique_per_call():
@@ -1204,71 +1370,286 @@ def test_e3_e4_payload_is_p1_p2_specific_and_covers_the_marker():
               "editing the synthetic marker breaks the payload fold")
 
 
+class _Credential(object):
+    """The only thing the audit reads off a credential is its scopes."""
+
+    def __init__(self, scopes):
+        self.scopes = scopes
+
+
+def _scope_seams(scopes, calls):
+    """A credential provider and service factory that record every call."""
+
+    def credential_provider():
+        calls.append("credential")
+        return _Credential(scopes)
+
+    def service_factory(credentials):
+        calls.append(("service", tuple(credentials.scopes or ())))
+        return object()
+
+    return credential_provider, service_factory
+
+
 def test_b4_authentication_happens_only_on_the_approved_path():
     """B4: an unapproved run performs zero authentication calls."""
     calls = []
-
-    def authenticator():
-        calls.append("auth")
-
-    def service_factory():
-        calls.append("service")
-        return object()
+    provider, factory = _scope_seams([P.DRIVE_READONLY_SCOPE], calls)
 
     for approval, label in ((None, "no approval"),
                             ("wrong-token", "a wrong token")):
         try:
             P.authenticate_drive_readonly(approval,
-                                          authenticator=authenticator,
-                                          service_factory=service_factory)
+                                          credential_provider=provider,
+                                          service_factory=factory)
             raise AssertionError(f"{label} authenticated")
         except P.PrepNotApprovedError:
             check(True, f"{label} is refused before authenticating")
     check(calls == [], "and zero authentication calls were made")
 
-    service = P.authenticate_drive_readonly(
-        TOKEN, authenticator=authenticator, service_factory=service_factory)
-    check(calls == ["auth", "service"],
-          "an approved call authenticates first, then builds the service")
+    service, audit = P.authenticate_drive_readonly(
+        TOKEN, credential_provider=provider, service_factory=factory)
+    check(calls == ["credential",
+                    ("service", (P.DRIVE_READONLY_SCOPE,))],
+          "an approved call acquires a credential first, then builds the "
+          "service from that credential")
     check(service is not None, "and returns a service object")
+    check(audit["exact_readonly_scope_proven"] is True,
+          "the audit records that the read-only scope was proven")
+    check(audit["requested_scopes"] == [P.DRIVE_READONLY_SCOPE],
+          "and which scope was requested")
+    check(audit["credential_recorded"] is False,
+          "the credential object itself is never recorded")
 
-    adapter = P.build_drive_adapter(TOKEN, authenticator=authenticator,
-                                    service_factory=service_factory)
+    adapter, adapter_audit = P.build_drive_adapter(
+        TOKEN, credential_provider=provider, service_factory=factory)
     check(isinstance(adapter, P.GoogleDriveFolderAdapter),
           "build_drive_adapter injects the service into the adapter")
     check(adapter._service is not None, "the adapter holds the service")
+    check(adapter_audit["exact_readonly_scope_proven"] is True,
+          "and hands the scope audit back with it")
 
-    with open(P.__file__, encoding="utf-8") as handle:
-        text = handle.read()
-    check("drive.readonly" in text, "the read-only scope is declared")
     installers = _module_calls(P.__file__) & {
         "check_call", "check_output", "call", "run", "Popen", "system"}
     check(not installers,
           f"no subprocess/installer call exists: {sorted(installers)}")
-    check("!pip" not in text, "and no notebook-magic install either")
+    with open(P.__file__, encoding="utf-8") as handle:
+        check("!pip" not in handle.read(),
+              "and no notebook-magic install either")
     report = P.check_runtime_dependencies()
     check(set(report["required"]) == set(P.RUNTIME_DEPENDENCIES),
           "the dependency requirement is reported explicitly")
 
 
+def test_c2_the_requested_scope_reaches_the_real_credential_request():
+    """C2: the scope is requested, not merely declared in a constant.
+
+    A module-level constant nobody passes anywhere proves nothing, so this
+    reads the production credential provider's AST and checks the constant is
+    actually handed to `google.auth.default` and to `with_scopes`.
+    """
+    import ast
+    tree = ast.parse(open(P.__file__, encoding="utf-8").read())
+    provider = [n for n in ast.walk(tree)
+                if isinstance(n, ast.FunctionDef)
+                and n.name == "_colab_readonly_credential"]
+    check(len(provider) == 1, "the production credential provider exists")
+    scoped = []
+    for node in ast.walk(provider[0]):
+        if not isinstance(node, ast.Call):
+            continue
+        names = [a.id for a in ast.walk(node)
+                 if isinstance(a, ast.Name)]
+        if "DRIVE_READONLY_SCOPE" in names:
+            target = node.func
+            scoped.append(target.attr if isinstance(target, ast.Attribute)
+                          else getattr(target, "id", "?"))
+    check("default" in scoped,
+          f"the read-only scope is passed to google.auth.default: {scoped}")
+    check("with_scopes" in scoped,
+          f"and to with_scopes when the credential allows it: {scoped}")
+
+    # And the injected route really passes the credential object through to
+    # the service factory, rather than letting the client pick up an ambient
+    # default whose scope nobody checked.
+    seen = {}
+
+    def factory(credentials):
+        seen["credentials"] = credentials
+        return object()
+
+    credential = _Credential([P.DRIVE_READONLY_SCOPE])
+    P.authenticate_drive_readonly(TOKEN,
+                                  credential_provider=lambda: credential,
+                                  service_factory=factory)
+    check(seen["credentials"] is credential,
+          "the proven credential is the one the service is built from")
+
+
+def test_c2_scope_fixtures_pass_exactly_one_case_and_stop_the_rest():
+    """C2: exact scope passes; absent, broader and extra scopes all stop."""
+    cases = {
+        "no scopes at all": None,
+        "an empty scope list": [],
+        "a broader scope that merely includes read-only": [
+            "https://www.googleapis.com/auth/drive"],
+        "read-only plus something else": [
+            P.DRIVE_READONLY_SCOPE,
+            "https://www.googleapis.com/auth/drive.file"],
+    }
+    for label, scopes in cases.items():
+        calls = []
+        provider, factory = _scope_seams(scopes, calls)
+        try:
+            P.authenticate_drive_readonly(TOKEN,
+                                          credential_provider=provider,
+                                          service_factory=factory)
+            raise AssertionError(f"{label} was accepted as read-only")
+        except P.PrepError as error:
+            check(P.READONLY_SCOPE_UNPROVEN in str(error),
+                  f"{label} stops with {P.READONLY_SCOPE_UNPROVEN}")
+        check(calls == ["credential"],
+              f"{label} never reaches the service factory")
+        audit = P.audit_credential_scopes(_Credential(scopes))
+        check(audit["exact_readonly_scope_proven"] is False,
+              f"{label} is not recorded as proven")
+        check(audit["reason"], f"{label} records why it could not be proven")
+
+    audit = P.audit_credential_scopes(
+        _Credential([P.DRIVE_READONLY_SCOPE]))
+    check(audit["exact_readonly_scope_proven"] is True,
+          "exactly the read-only scope is the one case that proves it")
+    check(audit["reason"] is None, "and it has nothing to explain away")
+    check(audit["no_write_adapter_methods"] is True,
+          "the adapter's lack of write methods is reported separately")
+
+
+def test_c2_the_adapter_never_builds_its_own_default_client():
+    """C2: no service means no adapter — never an ambient default."""
+    try:
+        P.GoogleDriveFolderAdapter(TOKEN)
+        raise AssertionError("the adapter built itself a default client")
+    except P.PrepError as error:
+        check("never constructs its own client" in str(error),
+              "an adapter without a service refuses to exist")
+
+    import ast
+    tree = ast.parse(open(P.__file__, encoding="utf-8").read())
+    adapter = [n for n in ast.walk(tree)
+               if isinstance(n, ast.ClassDef)
+               and n.name == "GoogleDriveFolderAdapter"]
+    check(len(adapter) == 1, "the production adapter exists")
+    builds = [n for n in ast.walk(adapter[0])
+              if isinstance(n, ast.Call)
+              and getattr(n.func, "id", None) == "build"]
+    check(not builds,
+          "and its body contains no discovery build() call at all")
+
+
+def test_c1_no_authentication_happens_while_the_guard_is_alive():
+    """C1: with the guard in place, the approved route calls nothing.
+
+    Not "fails to authenticate" — makes zero calls.  Every seam that could
+    touch a credential, the API or a registered byte is a spy here, and the
+    run is set up so that the *only* thing standing between it and a real
+    Drive call is the terminal guard.
+    """
+    calls = []
+
+    def spy(label):
+        def recorded(*args, **kwargs):
+            calls.append(label)
+            raise AssertionError(f"{label} was called behind the guard")
+        return recorded
+
+    saved = {name: getattr(P, name)
+             for name in ("build_drive_adapter", "authenticate_drive_readonly",
+                          "_colab_readonly_credential", "execute_prep",
+                          "run_p1", "run_p2", "GoogleDriveFolderAdapter")}
+    for name in saved:
+        setattr(P, name, spy(name))
+    try:
+        P.run_prep("/nonexistent/mitdb", P.SOURCE_BUNDLE_FOLDER_ID,
+                   "/nonexistent/out", adapter=None, approval=TOKEN,
+                   open_registered_data=True, timestamp="20260812T000000Z",
+                   emit=lambda *a, **k: None)
+        raise AssertionError("the terminal guard did not stop the run")
+    except P.PrepError as error:
+        check("never been executed" in str(error),
+              "the terminal guard is what stopped it")
+    finally:
+        for name, value in saved.items():
+            setattr(P, name, value)
+
+    check(calls == [],
+          f"zero auth, adapter, API and reader calls were made: {calls}")
+
+
+def test_c1_the_guard_sits_after_every_check_and_before_every_capability():
+    """C1: the production order is a property of the code, not a comment."""
+    import ast
+    tree = ast.parse(open(P.__file__, encoding="utf-8").read())
+    body = [n for n in ast.walk(tree)
+            if isinstance(n, ast.FunctionDef) and n.name == "run_prep"][0]
+
+    order = []
+    for node in ast.walk(body):
+        if isinstance(node, ast.Name) and node.id == "open_registered_data":
+            order.append(("switch", node.lineno))
+        elif isinstance(node, ast.Call):
+            name = (node.func.attr if isinstance(node.func, ast.Attribute)
+                    else getattr(node.func, "id", ""))
+            if name in ("require_execution_approval", "_terminal_execution_guard",
+                        "build_drive_adapter", "execute_prep"):
+                order.append((name, node.lineno))
+        elif isinstance(node, ast.Name) and node.id == "SOURCE_BUNDLE_FOLDER_ID":
+            order.append(("folder_id", node.lineno))
+    first = {}
+    for label, line in order:
+        first.setdefault(label, line)
+        first[label] = min(first[label], line)
+
+    guard = first["_terminal_execution_guard"]
+    check(first["switch"] < guard, "the switch is checked before the guard")
+    check(first["require_execution_approval"] < guard,
+          "the approval is checked before the guard")
+    check(first["folder_id"] < guard,
+          "the folder id is checked before the guard")
+    check(guard < first["build_drive_adapter"],
+          "and the guard sits before any credential is acquired")
+    check(first["build_drive_adapter"] < first["execute_prep"],
+          "which in turn sits before any P1/P2 reader or API call")
+
+
 def test_b4_notebook_authenticates_only_behind_both_switches():
     with open(NOTEBOOK, encoding="utf-8") as handle:
         nb = json.load(handle)
-    source = "\n".join("".join(c["source"]) for c in nb["cells"]
-                        if c["cell_type"] == "code")
-    check("authenticate_drive_readonly" in source
-          or "build_drive_adapter" in source,
-          "the notebook performs the real authentication")
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    source = "\n".join("".join(c["source"]) for c in cells)
+
+    # C1: the notebook has no authentication path of its own.  Auth lives
+    # below the terminal guard inside run_prep(), so a notebook that builds an
+    # adapter itself would be reaching a credential the guard never saw.
+    for name in ("build_drive_adapter", "authenticate_drive_readonly",
+                 "GoogleDriveFolderAdapter", "_colab_readonly_credential"):
+        called = [c for c in cells if f"{name}(" in "".join(c["source"])]
+        check(not called,
+              f"the notebook never calls {name}(): auth belongs behind the "
+              f"terminal guard, not in a cell")
     check("check_runtime_dependencies" in source,
-          "and reports the dependency requirement before doing so")
-    auth_cell = [c for c in nb["cells"]
-                 if c["cell_type"] == "code"
-                 and ("build_drive_adapter" in "".join(c["source"])
-                      or "authenticate_drive_readonly" in "".join(c["source"]))]
-    check(auth_cell, "the auth cell exists")
-    body = "".join(auth_cell[0]["source"])
+          "it reports the dependency requirement without authenticating")
+    check("DRIVE_READONLY_SCOPE" in source,
+          "and states the scope contract it will run under")
+    check("SOURCE_BUNDLE_FOLDER_ID" in source,
+          "and shows the registered folder id it would use")
+
+    run_cells = [c for c in cells if "P.run_prep(" in "".join(c["source"])]
+    check(len(run_cells) == 1, "exactly one cell calls run_prep()")
+    body = "".join(run_cells[0]["source"])
+    check("adapter=None" in body,
+          "and it passes adapter=None, leaving auth to the guarded route")
     check("OPEN_REGISTERED_DATA" in body and "APPROVAL" in body,
-          "and is guarded by both switches")
+          "guarded by both switches")
     check("pip install" not in source and "!pip" not in source,
           "the notebook never installs a package silently")
 
@@ -1355,6 +1736,356 @@ def test_f2_patched_registration_restores_on_exception():
     check("registered_override" not in text and "override=" not in text,
           "production takes no registration-override argument")
 
+
+
+#: Every shape the frozen parser's conventions have to survive.  Each of these
+#: is a decision `BJ.parse_sha256sums` makes, and a PREP-local parser that
+#: quietly differed on any one of them would verify a different list than the
+#: one the frozen join verifies.
+SHA256SUMS_DIALECTS = {
+    "two spaces": "{d}  RECORDS\n",
+    "single space": "{d} RECORDS\n",
+    "tab separated": "{d}\tRECORDS\n",
+    "leading whitespace": "   {d}  RECORDS\n",
+    "trailing whitespace": "{d}  RECORDS   \n",
+    "binary marker": "{d} *RECORDS\n",
+    "dot slash prefix": "{d}  ./RECORDS\n",
+    "nested path kept whole": "{d}  x_mitdb/RECORDS\n",
+    "uppercase digest": "{D}  RECORDS\n",
+    "blank lines": "\n\n{d}  RECORDS\n\n",
+    "comment lines": "# a comment\n{d}  RECORDS\n#another\n",
+    "malformed: digest only": "{d}\n{d}  RECORDS\n",
+    "malformed: short digest": "abc  RECORDS\n{d}  RECORDS\n",
+    "malformed: no digest": "  RECORDS\n{d}  RECORDS\n",
+    "duplicate key, last wins": "{d}  RECORDS\n{e}  RECORDS\n",
+    "crlf line endings": "{d}  RECORDS\r\n{e}  ANNOTATORS\r\n",
+    "empty file": "",
+    "only comments": "# nothing here\n",
+}
+
+
+def test_c3_the_prep_parser_agrees_with_the_frozen_one_everywhere():
+    """C3: reading a snapshot instead of a path must change nothing else."""
+    digest = hashlib.sha256(b"one").hexdigest()
+    other = hashlib.sha256(b"two").hexdigest()
+    with tempfile.TemporaryDirectory() as tmp:
+        for label, template in SHA256SUMS_DIALECTS.items():
+            text = template.format(d=digest, D=digest.upper(), e=other)
+            path = os.path.join(tmp, "SHA256SUMS.txt")
+            with open(path, "w", encoding="utf-8", newline="") as handle:
+                handle.write(text)
+            frozen = BJ.parse_sha256sums(path)
+            local = P.parse_sha256sums_text(text)
+            check(local == frozen,
+                  f"the two parsers agree on {label}: {local} != {frozen}")
+
+    # And the conventions themselves are the ones that matter, spelled out so
+    # a future edit to either parser has to break a named expectation.
+    parsed = P.parse_sha256sums_text(
+        f"{digest.upper()} *./RECORDS\n{other}  x_mitdb/RECORDS\n")
+    check(parsed["RECORDS"] == digest,
+          "a binary marker and a ./ prefix are both stripped")
+    check(parsed["RECORDS"] == parsed["RECORDS"].lower(),
+          "and the digest is lowercased")
+    check(parsed["x_mitdb/RECORDS"] == other,
+          "a nested path keeps its whole key and never answers for the "
+          "top-level file of the same basename")
+
+
+def test_c3_the_checksum_file_is_read_exactly_once():
+    """C3: one snapshot serves both the self-digest and the parsed list.
+
+    Two reads leave a window: the file is verified in one state and parsed in
+    another, which makes the verification decorative.  The reader counter alone
+    would not catch a frozen helper opening the path itself, so this watches
+    the real builtin.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
+        with _PatchedRegistration(tree):
+            reader = CountingReader(TOKEN)
+            with OpenSpy(tree) as spy:
+                result = P.run_p1(tree, TOKEN, reader=reader)
+
+    check(result["ok"] is True, "the pristine tree still passes")
+    check(spy.count(BJ.MITDB_CHECKSUM_FILE) == 1,
+          f"the checksum file was opened exactly once, not "
+          f"{spy.count(BJ.MITDB_CHECKSUM_FILE)}")
+    check(len(spy.opened) == 147,
+          f"147 opens in total, one per file: {len(spy.opened)}")
+    check(reader.read.count(BJ.MITDB_CHECKSUM_FILE) == 1,
+          "and the reader seam agrees")
+    gate = [g for g in result["gates"]
+            if g["gate"] == "checksum_file_digest"][0]
+    check(gate["reads_of_checksum_file"] == 1,
+          "the gate record says so too")
+
+
+def test_c3_a_swap_between_the_two_uses_cannot_change_the_verdict():
+    """C3: mutate the file in the old window and nothing downstream shifts.
+
+    A parser that re-opened the path would pick up the swapped list — and the
+    swapped list, being a valid list of the tree's real digests, would make a
+    tree pass that the *registered* list does not describe.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
+        with _PatchedRegistration(tree):
+            path = os.path.join(tree, BJ.MITDB_CHECKSUM_FILE)
+            with open(path, "rb") as handle:
+                original = handle.read()
+
+            swaps = []
+
+            class SwappingReader(P.LocalTreeReader):
+                """Rewrites the checksum file the moment it has been read."""
+
+                def read_bytes(self, directory, name, limit=None):
+                    body = super().read_bytes(directory, name, limit=limit)
+                    if name == BJ.MITDB_CHECKSUM_FILE:
+                        with open(os.path.join(directory, name), "wb") as fh:
+                            fh.write(b"# swapped after the digest was taken\n")
+                        swaps.append(name)
+                    return body
+
+            result = P.run_p1(tree, TOKEN, reader=SwappingReader(TOKEN))
+            pristine = P.run_p1(
+                _write_mitdb_tree(os.path.join(tmp, "again")), TOKEN)
+
+    check(swaps == [BJ.MITDB_CHECKSUM_FILE],
+          "the file really was rewritten in the old window")
+    check(result["ok"] is True,
+          "the run still passes: it used the bytes it verified")
+    check(result["tree_aggregate"] == pristine["tree_aggregate"],
+          "and reached exactly the aggregate the unswapped tree reaches")
+    publisher = [g for g in result["gates"]
+                 if g["gate"] == "publisher_checksums"][0]
+    check(publisher["checked"] == P.MITDB_PUBLISHER_LISTED_FILES,
+          "the 146 publisher-listed files were checked against the verified "
+          "list, not against the swapped one")
+
+
+def test_c4_a_publisher_failure_keeps_every_digest_it_computed():
+    """C4: measured observations survive the gate that rejected them."""
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"),
+                                 corrupt="RECORDS")
+        with _PatchedRegistration(tree):
+            result = P.run_p1(tree, TOKEN)
+
+    check(result["status"] == P.P1_PUBLISHER_MISMATCH,
+          "a corrupted file stops at the publisher gate")
+    check(result["status"] == "P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH",
+          "under exactly that name")
+    check(len(result["per_file"]) == P.MITDB_PUBLISHER_LISTED_FILES + 1,
+          f"all 146 + 1 per-file observations are kept, not "
+          f"{len(result['per_file'])}")
+    for entry in result["per_file"]:
+        check(set(entry) == {"name", "bytes", "sha256"},
+              "each carries name, bytes and SHA-256")
+    check(result["tree_aggregate"] is None,
+          "but no aggregate was folded from an unverified tree")
+    check(result["gate_passed"] is False, "the gate did not pass")
+    check(result["eligible_for_registration"] is False,
+          "so nothing here is eligible for registration")
+    check(result["observation_only"] is True,
+          "and what is kept is marked as observation only")
+    check(result["blocked_by"] == "P1_MITDB_PUBLISHER_CHECKSUM_MISMATCH",
+          "with the blocking reason named")
+
+    gate = [g for g in result["gates"]
+            if g["gate"] == "publisher_checksums"][0]
+    check(gate["n_mismatched"] == 1, "one file mismatched")
+    detail = gate["mismatched"][0]
+    check(detail["name"] == "RECORDS", "and it is named")
+    check(detail["published_sha256"] != detail["observed_sha256"],
+          "with both digests recorded so the difference can be inspected")
+    check("has_crlf" in detail and "starts_with_bom" in detail,
+          "and the cheap benign explanations are reported too")
+
+    candidates = P.registration_candidates(
+        result, P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN),
+        P.combine(result,
+                  P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)))
+    entry = candidates["MITDB_TREE_AGGREGATE"]
+    check(entry["observed"] is None,
+          "the aggregate target itself was never measured")
+    check(entry["per_file_observations"] == 147,
+          "while the 147 per-file observations behind it are counted")
+    check(entry["eligible_for_registration"] is False,
+          "and the target is not eligible")
+
+
+def test_c4_an_early_p1_failure_still_reports_nothing_it_did_not_measure():
+    with tempfile.TemporaryDirectory() as tmp:
+        short = _write_mitdb_tree(os.path.join(tmp, "short"), drop="RECORDS")
+        with _PatchedRegistration(short):
+            early = P.run_p1(short, TOKEN)
+        drifted = _write_mitdb_tree(os.path.join(tmp, "drift"))
+        with _PatchedRegistration(drifted, checksum="0" * 64):
+            checksum_stop = P.run_p1(drifted, TOKEN)
+
+    for result, label in ((early, "the file-set gate"),
+                          (checksum_stop, "the checksum-file gate")):
+        check(result["per_file"] == [],
+              f"{label} stops before anything is hashed, so per_file is empty")
+        check(result["tree_aggregate"] is None,
+              f"{label} produces no aggregate")
+        check(result["observation_only"] is False,
+              f"{label} has no observation to qualify")
+        check(result["eligible_for_registration"] is False,
+              f"{label} registers nothing")
+
+
+def test_c4_p2_keeps_the_bridge_it_proved_when_a_later_gate_fails():
+    """C4: the cross-checks really happened; a manifest failure is not a reason
+    to forget them.  `input_identity` stays None because that gate was never
+    reached — an absent identity and a hidden one are different claims."""
+    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+                      _adapter(code='0' * 64), TOKEN)
+
+    check(result["status"] == P.P2_MANIFEST_MISMATCH,
+          "the manifest gate is what failed")
+    check(result["input_identity"] is None,
+          "the input identity was never computed, so it is None")
+    check(result["bridge"]["ok"] is True,
+          "but the bridge that did pass is preserved")
+    check(result["bridge"]["method"] == "drive_file_id_stream",
+          "with the method it used")
+    check(len(result["bridge"]["cross_check"]) == len(BJ.BUNDLE_FILES),
+          "and every file's cross-check record")
+    check(result["manifest_identity"]["problems"],
+          "the manifest problems are reported rather than summarised away")
+    check(result["observation_only"] is True,
+          "what survives is marked as observation only")
+    check(result["eligible_for_registration"] is False,
+          "and none of it is eligible for registration")
+    check(result["blocked_by"] == P.P2_MANIFEST_MISMATCH,
+          "with the blocking reason named")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+    candidates = P.registration_candidates(
+        p1, result, P.combine(p1, result))
+    entry = candidates["SOURCE_BUNDLE_FILE_SHA256"]
+    check(entry["observed"] is None, "no input identity is offered")
+    check(entry["bridge_cross_checks"] == len(BJ.BUNDLE_FILES),
+          "while the bridge observations behind it are counted")
+    check(entry["bridge_method"] == "drive_file_id_stream",
+          "and the method is preserved")
+    # G3, restated: the *passing* leg's observation is still reported.
+    passing = candidates["MITDB_TREE_AGGREGATE"]
+    check(passing["observed"] == p1["tree_aggregate"],
+          "P1's aggregate is still reported even though P2 failed")
+    check(passing["gate_passed"] is True, "its own gate passed")
+    check(passing["eligible_for_registration"] is False,
+          "but the combined gate withholds eligibility, not the observation")
+
+
+def test_c5_the_run_records_the_environment_it_happened_in():
+    """C5: a digest is only as interpretable as the runtime that produced it."""
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+        out = os.path.join(tmp, "bundle")
+        P.write_bundle(out, P.build_config("T", True), p1, p2, combined,
+                       ["x"], synthetic=True)
+        with open(os.path.join(out, "config.json"), encoding="utf-8") as fh:
+            config = json.load(fh)
+        with open(os.path.join(out, "manifest.json"), encoding="utf-8") as fh:
+            manifest = json.load(fh)
+
+    runtime = config["runtime"]
+    check(runtime["python_version"] == __import__("platform").python_version(),
+          "the interpreter version is recorded")
+    check(runtime["platform"], "and the platform")
+    for dist in P.RUNTIME_DISTRIBUTIONS:
+        check(dist in runtime["distributions"],
+              f"{dist}'s version is recorded")
+        value = runtime["distributions"][dist]
+        check(value == "unavailable" or value[0].isdigit(),
+              f"{dist} is a real version or the word 'unavailable', never a "
+              f"guess or 'latest': {value!r}")
+    check("latest" not in json.dumps(runtime),
+          "nothing is recorded as 'latest'")
+    check(runtime["requested_drive_scope"] == P.DRIVE_READONLY_SCOPE,
+          "the scope this run would request is recorded")
+    for key in ("prep_module_sha256", "q5e_module_sha256",
+                "frozen_q5d_module_sha256"):
+        check(len(runtime[key]) == 64, f"{key} is a full digest")
+    check(manifest["runtime"] == runtime,
+          "and the manifest carries the same record")
+
+    auth = config["drive_authentication"]
+    check(auth["performed"] is False,
+          "a synthetic run records that it never authenticated")
+    check(auth["exact_readonly_scope_proven"] is False,
+          "and claims no scope proof it did not make")
+
+    signed = P.build_config("T", False, P.audit_credential_scopes(
+        _Credential([P.DRIVE_READONLY_SCOPE])))
+    check(signed["drive_authentication"]["exact_readonly_scope_proven"] is True,
+          "an authenticated run records the proof it did make")
+    check(signed["drive_authentication"]["credential_recorded"] is False,
+          "without recording the credential itself")
+    text = json.dumps(signed).lower()
+    for secret in ("access_token", "refresh_token", "authorization",
+                   "client_secret", "private_key"):
+        check(secret not in text,
+              f"and no {secret} reaches the config")
+    P.assert_no_credentials(signed, "config.json")
+    check(True, "the credential guard accepts the recorded audit")
+
+
+def test_the_report_cell_shows_everything_a_result_review_needs():
+    """The saved report is the external freeze record, so it has to be complete.
+
+    Each item below is something a reviewer cannot recover from the bundle
+    alone or would have to go hunting for.  Digests are printed whole: a
+    truncated one is exactly the situation P1 exists to fix.
+    """
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    report = [c for c in cells if "def report(" in "".join(c["source"])]
+    check(len(report) == 1, "there is exactly one report cell")
+    body = "".join(report[0]["source"])
+
+    required = {
+        "P1/P2 status": "p1['status']",
+        "first failure": "p1['first_failure']",
+        "a per-gate table": "_gate_table",
+        "unreached gates named as such": "(미도달)",
+        "the 146 + 1 result": "publisher['checked']",
+        "the mismatch detail": "published_sha256",
+        "P2's folder-id inventory": "p2.get('folder_id')",
+        "the bridge method": "bridge.get('method')",
+        "provider checksum availability": "sha256_available",
+        "provider checksum match": "sha256_match",
+        "the scope proof": "exact_readonly_scope_proven",
+        "the runtime record": "cfg['runtime']",
+        "preserved observations": "observation_only",
+        "the blocking reason": "blocked_by",
+        "gate_passed per candidate": "gate_passed",
+        "eligibility per candidate": "eligible_for_registration",
+        "the payload fold": "prep_payload_sha256",
+        "the manifest freeze digest": "manifest_sha256_freeze_externally",
+        "the next action": "다음 행동",
+    }
+    for label, needle in required.items():
+        check(needle in body, f"the report prints {label}")
+
+    check("[:8]" not in body and "[:16]" not in body,
+          "and never truncates a digest for display")
+    check("_gate_table(p1, P.P1_GATE_ORDER)" in body
+          and "_gate_table(p2, P.P2_GATE_ORDER)" in body,
+          "both legs are tabulated in their registered gate order")
+
+    # The failure path has to name where the evidence was kept, and the writer
+    # is what produces that path.
+    check(".failed" in open(P.__file__, encoding="utf-8").read(),
+          "a failed publish reports its preserved staging path")
 
 
 def declared_tests():

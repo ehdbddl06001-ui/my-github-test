@@ -273,6 +273,20 @@ class LocalTreeReader(object):
         return {"name": name, "bytes": os.path.getsize(path),
                 "sha256": digest.hexdigest()}
 
+    def read_bytes(self, directory: str, name: str,
+                   limit: Optional[int] = None) -> bytes:
+        """One read, returning the bytes themselves.
+
+        P1 needs the checksum file's digest *and* its contents.  Reading it
+        twice would leave a window in which the file changes between the two
+        reads, so the caller takes a single snapshot through here and works
+        from that.
+        """
+        path = os.path.join(directory, name)
+        require_execution_approval(self.approval, f"reading {path!r}")
+        with open(path, "rb") as handle:
+            return handle.read() if limit is None else handle.read(limit)
+
     def read_text(self, directory: str, name: str) -> str:
         path = os.path.join(directory, name)
         require_execution_approval(self.approval, f"reading {path!r}")
@@ -301,23 +315,31 @@ class DriveFolderAdapter(object):
 class GoogleDriveFolderAdapter(DriveFolderAdapter):     # pragma: no cover
     """Production adapter.  Never constructed by a test, never at import.
 
-    The client is built lazily inside the call, so importing this module
-    reaches no network and needs no credentials.  The credential object is
-    held here and is never written into a result.
+    The service is **injected**, never built here.  An earlier draft fell back
+    to ``build("drive", "v3")`` when none was supplied, which quietly picks up
+    whatever ambient default credential the runtime happens to hold — a
+    credential whose scope nobody checked and which may well be able to write.
+    That is exactly the thing :func:`audit_credential_scopes` exists to
+    prevent, so the fallback is gone: no service means no adapter.
     """
 
     __slots__ = ("approval", "_service")
 
     def __init__(self, approval: Optional[str], service=None) -> None:
         require_execution_approval(approval, "the Google Drive API")
+        if service is None:
+            raise PrepError(
+                "refusing to build a Drive adapter without a service: this "
+                "adapter never constructs its own client, because a default "
+                "client silently adopts an ambient credential whose scope has "
+                "not been proven read-only.  Use build_drive_adapter(), which "
+                "acquires a credential scoped to "
+                f"{DRIVE_READONLY_SCOPE} and proves it before this point.")
         self.approval = approval
         self._service = service
 
     def _client(self):
-        if self._service is None:
-            require_execution_approval(self.approval, "the Google Drive API")
-            from googleapiclient.discovery import build   # noqa: PLC0415
-            self._service = build("drive", "v3")
+        require_execution_approval(self.approval, "the Google Drive API")
         return self._service
 
     def list_children(self, folder_id: str) -> List[Dict[str, object]]:
@@ -351,10 +373,15 @@ class GoogleDriveFolderAdapter(DriveFolderAdapter):     # pragma: no cover
 RUNTIME_DEPENDENCIES: Dict[str, str] = {
     "google.colab": "Colab read-only Drive authentication",
     "googleapiclient": "Drive v3 client (google-api-python-client)",
+    "google.auth": "credential objects and scope inspection",
 }
-#: Drive scope.  Read-only by contract: this preflight must be unable to
-#: modify, move or delete anything even if a call were miswritten.
+#: Distributions whose versions are pinned into the result for provenance.
+RUNTIME_DISTRIBUTIONS: Tuple[str, ...] = (
+    "google-auth", "google-api-python-client", "google-colab")
+#: The only scope this preflight may hold.  Declared *and* requested *and*
+#: verified — a constant nobody passes to an API call proves nothing.
 DRIVE_READONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
+READONLY_SCOPE_UNPROVEN = "P2_READONLY_SCOPE_UNPROVEN"
 
 
 def check_runtime_dependencies() -> Dict[str, object]:
@@ -373,47 +400,144 @@ def check_runtime_dependencies() -> Dict[str, object]:
                      "check")}
 
 
+def runtime_identity() -> Dict[str, object]:
+    """The environment this run actually happened in.
+
+    Provenance, not behaviour: the digest algorithm does not change with the
+    interpreter, but "which environment produced this identity" has to be
+    answerable later.  A version that cannot be determined is reported as
+    `unavailable` rather than guessed.
+    """
+    import platform                                       # noqa: PLC0415
+    versions: Dict[str, str] = {}
+    for dist in RUNTIME_DISTRIBUTIONS:
+        try:
+            from importlib import metadata               # noqa: PLC0415
+            versions[dist] = metadata.version(dist)
+        except Exception:                    # noqa: BLE001 - absence is data
+            versions[dist] = "unavailable"
+    return {
+        "python_version": platform.python_version(),
+        "platform": platform.platform(),
+        "distributions": versions,
+        "requested_drive_scope": DRIVE_READONLY_SCOPE,
+        "prep_module_sha256": Q5E.sha256_file(os.path.abspath(__file__)),
+        "q5e_module_sha256": Q5E.sha256_file(os.path.abspath(Q5E.__file__)),
+        "frozen_q5d_module_sha256": Q5E.sha256_file(
+            os.path.abspath(BJ.__file__)),
+        "note": ("no package was installed by this run; an unavailable "
+                 "version is reported as such and never inferred"),
+    }
+
+
+def audit_credential_scopes(credential) -> Dict[str, object]:
+    """Prove the credential is read-only, or refuse to claim that it is.
+
+    Having no write method on the adapter shows the *adapter* cannot write.
+    It says nothing about the credential, which is what actually bounds what
+    the API will do.  So the scopes are inspected: exactly the read-only scope
+    proves it; a broader scope does not, even though it "includes" what we
+    need; and scopes that cannot be observed at all prove nothing either.
+    """
+    scopes = getattr(credential, "scopes", None)
+    observed = sorted(str(s) for s in scopes) if scopes else []
+    exact = observed == [DRIVE_READONLY_SCOPE]
+    if not observed:
+        reason = ("the credential exposes no scopes, so read-only cannot be "
+                  "proven; it is not assumed")
+    elif not exact:
+        reason = ("the credential carries scopes beyond the read-only one; a "
+                  "broader credential is not accepted merely because it "
+                  "includes what is needed")
+    else:
+        reason = None
+    return {
+        "requested_scopes": [DRIVE_READONLY_SCOPE],
+        "observed_scopes": observed,
+        "exact_readonly_scope_proven": exact,
+        "credential_type": type(credential).__name__,
+        "service_api": "drive", "service_version": "v3",
+        "no_write_adapter_methods": True,
+        "reason": reason,
+        # The credential object itself is never recorded — only these facts.
+        "credential_recorded": False,
+    }
+
+
 def authenticate_drive_readonly(approval: Optional[str],
-                                authenticator=None, service_factory=None):
-    """Authenticate and build a **read-only** Drive v3 service.
+                                credential_provider=None,
+                                service_factory=None
+                                ) -> Tuple[object, Dict[str, object]]:
+    """Acquire a read-only credential and build the Drive v3 service from it.
 
-    Approval is checked before either step, so an unapproved notebook run
-    performs zero authentication calls — not a failed one, none.  Both steps
-    are injectable so the notebook path is testable without a real credential;
-    production passes neither and gets Colab auth plus a real client.
+    Returns `(service, auth_audit)`.  Approval is checked before either step,
+    so an unapproved run performs **zero** authentication calls — not a failed
+    one, none at all.  Both seams are injectable so the path is testable
+    without a real credential; production passes neither.
 
-    The returned service is handed to :class:`GoogleDriveFolderAdapter` and is
-    never written into a result.
+    If the credential cannot be shown to hold exactly the read-only scope, this
+    raises rather than proceeding.  Calling a broader credential "read-only"
+    because it happens to include the scope we want would be a claim the code
+    cannot support.
     """
     require_execution_approval(approval, "Google Drive authentication")
     report = check_runtime_dependencies()
-    if authenticator is None and service_factory is None and report["missing"]:
+    if credential_provider is None and report["missing"]:
         raise PrepError(
             f"refusing to authenticate: {report['missing']} are not "
             f"importable.  {report['note']}")
-    if authenticator is None:                            # pragma: no cover
-        from google.colab import auth                    # noqa: PLC0415
-        authenticator = auth.authenticate_user
-    authenticator()
+    if credential_provider is None:                      # pragma: no cover
+        credential_provider = _colab_readonly_credential
+    credential = credential_provider()
+    audit = audit_credential_scopes(credential)
+    if not audit["exact_readonly_scope_proven"]:
+        raise PrepError(
+            f"{READONLY_SCOPE_UNPROVEN}: {audit['reason']}.  observed="
+            f"{audit['observed_scopes']}.  This preflight does not run under a "
+            f"credential whose read-only bound it cannot demonstrate.")
     if service_factory is None:                          # pragma: no cover
         from googleapiclient.discovery import build      # noqa: PLC0415
 
-        def service_factory():
-            return build("drive", "v3")
-    return service_factory()
+        def service_factory(credentials):
+            return build("drive", "v3", credentials=credentials)
+    # The credential is passed explicitly; the client never picks up an
+    # ambient default whose scope nobody checked.
+    return service_factory(credential), audit
 
 
-def build_drive_adapter(approval: Optional[str], authenticator=None,
-                        service_factory=None) -> "GoogleDriveFolderAdapter":
-    """Authenticate, then hand the service to the adapter.
+def _colab_readonly_credential():                        # pragma: no cover
+    """Colab auth, down-scoped to read-only where the platform allows it.
 
-    This is the whole production auth path, complete now.  The execution
-    approval PR removes the terminal guard and nothing else: it does not have
-    to write authentication logic for the first time.
+    Colab's `authenticate_user()` mints a broad user credential.  Where the
+    credential supports `with_scopes`, it is narrowed to the read-only scope
+    here; where it does not, `audit_credential_scopes` will refuse rather than
+    let a broad credential be described as read-only.
     """
-    service = authenticate_drive_readonly(
-        approval, authenticator=authenticator, service_factory=service_factory)
-    return GoogleDriveFolderAdapter(approval, service=service)
+    from google.colab import auth                        # noqa: PLC0415
+    auth.authenticate_user()
+    import google.auth                                   # noqa: PLC0415
+    credential, _project = google.auth.default(
+        scopes=[DRIVE_READONLY_SCOPE])
+    if hasattr(credential, "with_scopes") and \
+            getattr(credential, "requires_scopes", False):
+        credential = credential.with_scopes([DRIVE_READONLY_SCOPE])
+    return credential
+
+
+def build_drive_adapter(approval: Optional[str], credential_provider=None,
+                        service_factory=None
+                        ) -> Tuple["GoogleDriveFolderAdapter",
+                                   Dict[str, object]]:
+    """Authenticate, prove the scope, then hand the service to the adapter.
+
+    This is the whole production auth path, complete here.  The execution
+    approval PR removes the terminal guard and changes the notebook switches;
+    it does not write authentication logic for the first time.
+    """
+    service, audit = authenticate_drive_readonly(
+        approval, credential_provider=credential_provider,
+        service_factory=service_factory)
+    return GoogleDriveFolderAdapter(approval, service=service), audit
 
 
 def normalise_child(child: Mapping[str, object]) -> Dict[str, object]:
@@ -450,6 +574,125 @@ def assert_no_credentials(payload: object, where: str = "bundle") -> None:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# The publisher checksum list, parsed from a byte snapshot
+#
+# `BJ.parse_sha256sums` takes a *path* and opens it.  P1 has to verify the
+# checksum file's own digest before trusting its contents, so using the frozen
+# function for the second step would mean opening the same registered path
+# twice — and a file that changes between those two reads would be verified in
+# one state and parsed in another.  The parse is therefore done here, from the
+# same immutable bytes the digest was taken over.  The frozen module is not
+# modified; the conventions below are held to `BJ.parse_sha256sums` by
+# differential equivalence tests over the same inputs.
+# ─────────────────────────────────────────────────────────────────────────────
+def parse_sha256sums_text(text: str) -> Dict[str, str]:
+    """`BJ.parse_sha256sums`, reading a string instead of a path.
+
+    Same conventions, deliberately line for line: strip, skip blank and `#`
+    lines, split on the first run of whitespace, drop a leading `*` (binary
+    marker) and a leading `./`, keep the listed path rather than collapsing it
+    to a basename, accept only 64-character digests, and lowercase them.
+    """
+    out: Dict[str, str] = {}
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split(None, 1)
+        if len(parts) != 2:
+            continue
+        digest, name = parts[0].strip(), parts[1].strip()
+        name = name.lstrip("*")
+        if name.startswith("./"):
+            name = name[2:]
+        if len(digest) == 64:
+            out[name] = digest.lower()
+    return out
+
+
+def _benign_difference_report(body: bytes) -> Dict[str, object]:
+    """Cheap explanations for a digest mismatch, from bytes already in hand."""
+    out: Dict[str, object] = {
+        "bytes_read": len(body),
+        "starts_with_bom": body.startswith(b"\xef\xbb\xbf"),
+        "has_crlf": b"\r\n" in body,
+        "ends_with_newline": body.endswith(b"\n"),
+    }
+    if len(body) > 8192:
+        return out
+    try:
+        text = body.decode("utf-8")
+    except UnicodeDecodeError:
+        out["binary"] = True
+        return out
+    lines = [ln for ln in text.splitlines() if ln.strip()]
+    out["non_empty_lines"] = len(lines)
+    out["first_lines"] = lines[:5]
+    out["last_lines"] = lines[-5:]
+    out["sha256_without_trailing_newlines"] = _sha256_bytes(
+        text.rstrip("\n").encode("utf-8"))
+    return out
+
+
+def compare_against_publisher_list(files: Sequence[Mapping[str, object]],
+                                   checksum_text: str,
+                                   reader: "LocalTreeReader",
+                                   directory: str) -> Dict[str, object]:
+    """`BJ.verify_against_publisher_checksums` over a snapshot, not a path.
+
+    Same comparison and the same reported fields, with two differences that
+    matter here: the publisher list comes from bytes already verified rather
+    than from a fresh `open()`, and the mismatch detail is read back through
+    the approval-checked reader instead of by opening the registered path
+    directly.
+    """
+    published = parse_sha256sums_text(checksum_text)
+    problems: List[str] = []
+    checked = matched = 0
+    mismatched: List[Dict[str, object]] = []
+    unlisted: List[str] = []
+    for entry in files:
+        name = str(entry["name"])
+        if name == BJ.MITDB_CHECKSUM_FILE:
+            continue                    # a checksum file cannot list itself
+        want = published.get(name)      # exact listed key, never a basename
+        if want is None:
+            unlisted.append(name)
+            continue
+        checked += 1
+        observed = str(entry["sha256"]).lower()
+        if observed == want:
+            matched += 1
+            continue
+        problems.append(f"{name}: sha256 differs from the publisher list")
+        detail: Dict[str, object] = {
+            "name": name, "published_sha256": want,
+            "observed_sha256": observed, "bytes": entry.get("bytes"),
+            "read_by_the_join": BJ._is_read_by_the_join(name),
+        }
+        try:
+            detail.update(_benign_difference_report(
+                reader.read_bytes(directory, name, limit=65536)))
+        except OSError as error:                          # pragma: no cover
+            detail["error"] = str(error)
+        mismatched.append(detail)
+    considered = sum(1 for e in files
+                     if str(e["name"]) != BJ.MITDB_CHECKSUM_FILE)
+    if considered and not checked:
+        problems.append(
+            f"the publisher list has {len(published)} entries but none of the "
+            f"{considered} files in {directory} matched a top-level name; "
+            f"nothing was actually verified")
+    return {"available": True, "ok": not problems, "problems": problems,
+            "checked": checked, "matched": matched, "considered": considered,
+            "mismatched": mismatched, "unlisted": sorted(unlisted),
+            "published_entries": len(published),
+            "read_by_the_join": sorted(
+                n for n in (m["name"] for m in mismatched)
+                if BJ._is_read_by_the_join(str(n)))}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # P1 — MIT-BIH publisher tree identity
 # ─────────────────────────────────────────────────────────────────────────────
 def run_p1(mitdb_dir: str, approval: Optional[str],
@@ -468,10 +711,15 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
     gates: List[Dict[str, object]] = []
 
     def stop(reason: str, **extra) -> Dict[str, object]:
+        # `per_file` empty means "not measured yet", not "measured and hidden".
+        # Gates that stop before anything is hashed leave it empty; gates that
+        # stop after the tree was hashed pass the observations back in.
         out = {"prep": "P1", "ok": False, "status": reason,
                "first_failure": reason, "gates": gates,
                "gate_order": list(P1_GATE_ORDER),
                "tree_aggregate": None, "per_file": [],
+               "gate_passed": False, "eligible_for_registration": False,
+               "observation_only": False, "blocked_by": reason,
                "seals": _p1_seals()}
         out.update(extra)
         return out
@@ -488,14 +736,25 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
         return stop(P1_FILE_SET_MISMATCH)
 
     # ---- gate 2: the checksum file's own digest, reading ONLY that file ---
-    checksum_entry = reader.stat_and_hash(mitdb_dir, BJ.MITDB_CHECKSUM_FILE)
+    # One read.  The digest below and the publisher list parsed at gate 3 come
+    # from the *same* bytes, so there is no window in which the file could be
+    # replaced between "this is the registered list" and "here is what the
+    # list says".  Verifying one state and then parsing another would make the
+    # verification decorative.
+    checksum_blob = reader.read_bytes(mitdb_dir, BJ.MITDB_CHECKSUM_FILE)
+    checksum_entry = {"name": BJ.MITDB_CHECKSUM_FILE,
+                      "bytes": len(checksum_blob),
+                      "sha256": _sha256_bytes(checksum_blob)}
     observed_checksum = str(checksum_entry["sha256"])
     checksum_ok = observed_checksum == MITDB_CHECKSUM_FILE_SHA256
     gates.append({"gate": "checksum_file_digest", "ok": checksum_ok,
                   "file": BJ.MITDB_CHECKSUM_FILE,
                   "observed": observed_checksum,
                   "registered": MITDB_CHECKSUM_FILE_SHA256,
-                  "files_read_so_far": 1})
+                  "files_read_so_far": 1,
+                  "reads_of_checksum_file": 1,
+                  "snapshot_note": ("the digest and the parsed list come from "
+                                    "one immutable read of this file")})
     if not checksum_ok:
         # Nothing else is read.  A list that is not the registered list
         # verifies nothing, so hashing the other 146 files would be work done
@@ -506,8 +765,8 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
     others = [reader.stat_and_hash(mitdb_dir, name) for name in expected
               if name != BJ.MITDB_CHECKSUM_FILE]
     files = sorted([checksum_entry] + others, key=lambda f: str(f["name"]))
-    published = BJ.verify_against_publisher_checksums(
-        {"files": files}, mitdb_dir)
+    published = compare_against_publisher_list(
+        files, checksum_blob.decode("utf-8", "replace"), reader, mitdb_dir)
     checked = int(published.get("checked") or 0)
     matched = int(published.get("matched") or 0)
     mismatched = list(published.get("mismatched") or ())
@@ -523,9 +782,24 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
                   "expected_checked": MITDB_PUBLISHER_LISTED_FILES,
                   "n_mismatched": len(mismatched),
                   "n_unlisted": len(unlisted),
+                  "mismatched": mismatched, "unlisted": unlisted,
+                  "published_entries": published.get("published_entries"),
                   "problems": list(published.get("problems", ()))})
     if not publisher_ok:
-        return stop(P1_PUBLISHER_MISMATCH)
+        # The 147 per-file digests were genuinely computed before this gate
+        # could be decided, and they are the whole diagnostic value of a
+        # failing tree — which files differ, and by how much.  Blanking them
+        # would discard measured evidence.  What is withheld is the
+        # *aggregate*, because folding an unverified tree produces a number
+        # that looks exactly like a registration candidate.
+        return stop(P1_PUBLISHER_MISMATCH,
+                    per_file=files, tree_aggregate=None,
+                    publisher=published,
+                    observation_only=True,
+                    observation_note=(
+                        "per-file observations from a FAILED gate: they "
+                        "describe what was measured and are not a "
+                        "registration candidate.  No aggregate was folded."))
 
     # ---- gate 4: the full 147-file aggregate ------------------------------
     aggregate = fold_file_triples(files)
@@ -565,6 +839,7 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
         "tree_aggregate": aggregate,
         "registered_prefix_matches": True,
         "per_file": files,
+        "gate_passed": True, "observation_only": False, "blocked_by": None,
         "seals": _p1_seals(),
     }
 
@@ -599,6 +874,8 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
                "gate_order": list(P2_GATE_ORDER),
                "folder_id": folder_id, "registered_run": SOURCE_BUNDLE_RUN,
                "inventory": inventory, "input_identity": None,
+               "gate_passed": False, "eligible_for_registration": False,
+               "observation_only": False, "blocked_by": reason,
                "seals": _p2_seals()}
         out.update(extra)
         return out
@@ -675,13 +952,24 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
     if not bridge["ok"]:
         return stop(P2_FOLDER_ID_BRIDGE_UNRESOLVED, bridge=bridge)
 
+    # The bridge really did cross-check every file against the inventory, and
+    # that observation stands on its own: it is what a later manifest failure
+    # gets diagnosed against.  It is preserved on every stop from here on, and
+    # it is explicitly not an identity — `input_identity` stays None because
+    # that gate was never reached.
+    bridged = {"bridge": bridge, "observation_only": True,
+               "observation_note": (
+                   "the canonical-bytes bridge passed and its cross-checks are "
+                   "preserved as observations; they are not an input identity, "
+                   "which is only produced by the final P2 gate")}
+
     # ---- gate 6: manifest identity ----------------------------------------
     try:
         manifest = json.loads(bytes_by_name["manifest.json"].decode("utf-8"))
     except (KeyError, UnicodeDecodeError, ValueError) as error:
         gates.append({"gate": "manifest_identity", "ok": False,
                       "problems": [f"manifest.json unreadable: {error}"]})
-        return stop(P2_MANIFEST_MISMATCH)
+        return stop(P2_MANIFEST_MISMATCH, **bridged)
     code = str(manifest.get("code_sha256") or "")
     fingerprint = str(manifest.get("rule_fingerprint") or "")
     problems = []
@@ -693,7 +981,11 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
                   "code_sha256": code, "rule_fingerprint": fingerprint,
                   "problems": problems})
     if problems:
-        return stop(P2_MANIFEST_MISMATCH)
+        return stop(P2_MANIFEST_MISMATCH,
+                    manifest_identity={"code_sha256": code,
+                                       "rule_fingerprint": fingerprint,
+                                       "problems": problems},
+                    **bridged)
 
     # ---- gate 7: the five-file scientific input identity ------------------
     # Only the files Q5-E reads.  The other seven are part of the directory
@@ -724,6 +1016,7 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
                               "rule_fingerprint": fingerprint},
         "input_identity": {"files": input_files, "subset_fold": subset_fold},
         "bridge": bridge,
+        "gate_passed": True, "observation_only": False, "blocked_by": None,
         "seals": _p2_seals(),
     }
 
@@ -937,7 +1230,13 @@ def registration_candidates(p1: Mapping[str, object], p2: Mapping[str, object],
     p1_entry = entry(
         "q5e_leg2_failure_mechanism_audit.MITDB_TREE_AGGREGATE",
         p1_observed, p1,
-        observation_only=bool(p1.get("observation_only")),
+        # True only when this *target* was actually measured under a failed
+        # gate.  A publisher-checksum failure preserves 147 per-file digests
+        # but folds no aggregate, so the target is genuinely absent while the
+        # observations it would have been folded from are not.
+        observation_only=bool(p1.get("observation_only")
+                              and p1_observed is not None),
+        per_file_observations=len(p1.get("per_file") or ()),
         observation_note=(
             p1.get("observation_note")
             or ("computed after every P1 gate passed" if p1.get("ok")
@@ -950,9 +1249,16 @@ def registration_candidates(p1: Mapping[str, object], p2: Mapping[str, object],
         "q5e_leg2_failure_mechanism_audit.SOURCE_BUNDLE_FILE_SHA256",
         p2_observed, p2,
         subset_fold=identity.get("subset_fold"),
+        # Preserved even when a later gate failed: the bridge really did
+        # cross-check these files, and that is diagnostic evidence.
+        bridge_cross_checks=len(
+            (p2.get("bridge") or {}).get("cross_check") or ()),
+        bridge_method=(p2.get("bridge") or {}).get("method"),
         observation_note=(
             "computed after every P2 gate passed" if p2.get("ok")
-            else "not computed: P2 stopped before the input-identity gate"))
+            else str(p2.get("observation_note")
+                     or "not computed: P2 stopped before the input-identity "
+                        "gate")))
 
     return {
         "registration_allowed": both,
@@ -971,11 +1277,58 @@ def registration_candidates(p1: Mapping[str, object], p2: Mapping[str, object],
 # ─────────────────────────────────────────────────────────────────────────────
 # Bundle
 # ─────────────────────────────────────────────────────────────────────────────
-def build_config(timestamp: str, synthetic: bool) -> Dict[str, object]:
+#: Test seam.  Called once after staging is complete and immediately before the
+#: publish, which is the exact window a check-then-rename design leaves open.
+#: Production never sets it; it exists so the race can be reproduced rather
+#: than argued about.
+_PUBLISH_RACE_HOOK = None
+
+
+def _is_link_like(path: str) -> bool:
+    """Symlink, or a Windows junction / reparse point where detectable.
+
+    A junction is not a symlink as far as `os.path.islink` is concerned on
+    older interpreters, and writing through one lands somewhere other than
+    where the path says.  `os.path.isjunction` exists from 3.12; where it does
+    not, this reports what it can rather than claiming a check it did not make.
+    """
+    if os.path.islink(path):
+        return True
+    isjunction = getattr(os.path, "isjunction", None)
+    if isjunction is not None:
+        try:
+            return bool(isjunction(path))
+        except OSError:                                    # pragma: no cover
+            return False
+    return False
+def build_config(timestamp: str, synthetic: bool,
+                 auth_audit: Optional[Mapping[str, object]] = None
+                 ) -> Dict[str, object]:
+    """The run's own description, including the environment it happened in.
+
+    A digest is only as interpretable as the run that produced it: "which
+    interpreter, which client library version, under which Drive scope" has to
+    be answerable months later, and it cannot be reconstructed after the fact.
+    Versions that cannot be determined are reported as `unavailable` rather
+    than guessed, and nothing here is installed or upgraded to make the record
+    look tidier.
+    """
     return {"experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
             "run_slug": RUN_SLUG, "module_version": MODULE_VERSION,
             "timestamp": timestamp, "spec": SPEC_PATH,
             "contract": CONTRACT_PATH,
+            "runtime": runtime_identity(),
+            "dependencies": check_runtime_dependencies(),
+            # Present only on a route that authenticated.  A synthetic run
+            # never authenticates, so it records that plainly rather than
+            # leaving the field ambiguous.
+            "drive_authentication": (dict(auth_audit) if auth_audit else {
+                "performed": False,
+                "requested_scopes": [DRIVE_READONLY_SCOPE],
+                "exact_readonly_scope_proven": False,
+                "reason": ("no Drive authentication was performed on this "
+                           "route; nothing was proven and nothing is claimed"),
+            }),
             "scope": ["P1", "P2"], "p3_in_scope": False,
             "synthetic_fixture": bool(synthetic),
             "ingestable": not synthetic,
@@ -1028,12 +1381,16 @@ def write_bundle(directory: str, config: Mapping[str, object],
     call, an existing final path is refused rather than removed, nothing
     pre-existing is deleted, and a failed run's partial staging is **kept** at
     a reported `.failed` path so it can be inspected.
+
+    The final path is **claimed** with `os.mkdir` before any staging work
+    rather than merely tested with `lexists`.  A test followed later by a
+    rename leaves a window in which something else can take the name, and
+    POSIX `rename` will happily replace an empty directory — so the test-then-
+    act version could destroy a directory that appeared in between.  `mkdir`
+    is a single atomic operation that fails if *anything* is already at the
+    path (file, empty directory, non-empty directory, symlink or junction), so
+    from the claim onward the name is ours and no one else can create it.
     """
-    if os.path.lexists(directory):
-        raise PrepError(
-            f"refusing to publish to {directory!r}: it already exists.  A PREP "
-            f"bundle is new, never an overwrite, and this function does not "
-            f"delete anything that is already there.")
     payload_names = payload_files(synthetic)
     candidates = registration_candidates(p1, p2, combined)
     payload: Dict[str, object] = {
@@ -1050,10 +1407,27 @@ def write_bundle(directory: str, config: Mapping[str, object],
 
     parent = os.path.dirname(os.path.abspath(directory)) or "."
     os.makedirs(parent, exist_ok=True)
-    if os.path.islink(parent):
+    if _is_link_like(parent):
         raise PrepError(
-            f"refusing to publish under {parent!r}: it is a symlink, and this "
-            f"function does not follow links when writing or renaming")
+            f"refusing to publish under {parent!r}: it is a symlink or "
+            f"reparse point, and this function does not follow links when "
+            f"writing or renaming")
+
+    # Claim the name atomically.  `mkdir` fails if anything at all is there,
+    # and it does not follow a symlink sitting at the path, so an existing
+    # file, empty directory, non-empty directory, symlink or junction is
+    # preserved untouched rather than overwritten.
+    try:
+        os.mkdir(directory)
+    except FileExistsError as error:
+        raise PrepError(
+            f"refusing to publish to {directory!r}: something is already "
+            f"there.  A PREP bundle is new, never an overwrite, and this "
+            f"function does not delete or replace anything that already "
+            f"exists — not a file, not an empty directory, not a symlink."
+        ) from error
+    claimed = True
+
     import tempfile                                        # noqa: PLC0415
     staging = tempfile.mkdtemp(
         prefix=f".{os.path.basename(os.path.abspath(directory))}.staging.",
@@ -1106,6 +1480,9 @@ def write_bundle(directory: str, config: Mapping[str, object],
             "module_sha256": Q5E.sha256_file(os.path.abspath(__file__)),
             "frozen_module_sha256": Q5E.sha256_file(
                 os.path.abspath(BJ.__file__)),
+            # Which environment produced this identity, and under which scope.
+            "runtime": config.get("runtime"),
+            "drive_authentication": config.get("drive_authentication"),
             "note": ("manifest.json is excluded from the fold it records; its "
                      "own SHA-256 is frozen outside this bundle, in the "
                      "execution-contract Decision log and the registration "
@@ -1124,21 +1501,38 @@ def write_bundle(directory: str, config: Mapping[str, object],
         with open(os.path.join(staging, PREP_MANIFEST_FILE), "rb") as handle:
             manifest_digest = _sha256_bytes(handle.read())
 
+        if _PUBLISH_RACE_HOOK is not None:
+            _PUBLISH_RACE_HOOK(directory, staging)
+
+        # Release our own claim and rename into it.  `rmdir` removes only an
+        # empty directory, and the only empty directory that can be here is
+        # the one this call created moments ago — so if anything found its way
+        # inside, this raises and the bundle is not published rather than
+        # something else being destroyed.
+        os.rmdir(directory)
+        claimed = False
         # Same-parent rename: same filesystem, so the publish is atomic.
         os.rename(staging, directory)
     except Exception as error:
         # Keep the evidence.  A failed run's partial staging is more useful
         # than a clean directory, and deleting it is how a diagnosis gets
-        # lost.  Only this call's own directory is ever touched.
+        # lost.  Only this call's own directories are ever touched.
         failed = f"{staging}.failed"
         try:
             os.rename(staging, failed)
         except OSError:                                    # pragma: no cover
             failed = staging
+        if claimed:
+            # Give the name back, but only if our claim is still empty: a
+            # non-empty directory here belongs to whatever put files in it.
+            try:
+                os.rmdir(directory)
+            except OSError:
+                pass
         raise PrepError(
             f"PREP bundle was not published: {error}.  The partial staging "
             f"directory is preserved at {failed!r} for inspection; nothing "
-            f"was deleted.") from error
+            f"pre-existing was deleted.") from error
     return {"directory": directory, "written": final_set,
             "payload_files": list(payload_names),
             "prep_payload_sha256": fold,
@@ -1163,9 +1557,13 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     an unauthorised call is refused as unauthorised whatever happens to be
     installed and whatever credentials happen to exist.
 
-    When no adapter is supplied, the approved route authenticates and builds a
-    read-only Drive service itself — the auth path is complete here, so the
-    execution-approval PR removes the guard and nothing else.
+    The order is fixed and it is the point of the function: switch, approval,
+    folder id, **terminal guard**, then — and only then — dependencies,
+    credential, Drive service, and finally any reader or API call.  Everything
+    that could touch a credential or a registered byte sits below the guard, so
+    an unapproved call performs zero authentication attempts rather than a
+    failed one.  The notebook therefore has no auth code of its own to run: it
+    calls this with ``adapter=None``.
     """
     if not open_registered_data:
         raise PrepNotApprovedError(
@@ -1186,18 +1584,23 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     # ---- Everything below is the complete, already-implemented preflight. --
     # Removing the guard above is the *only* change a separately approved
     # execution PR makes here.
+    auth_audit = None                                   # pragma: no cover
+    if adapter is None:                                 # pragma: no cover
+        adapter, auth_audit = build_drive_adapter(approval)
+        emit(f"Drive scope proven read-only: "
+             f"{auth_audit['exact_readonly_scope_proven']}")
     return execute_prep(                                # pragma: no cover
-        mitdb_dir, folder_id, out_dir,
-        adapter or build_drive_adapter(approval),
+        mitdb_dir, folder_id, out_dir, adapter,
         mount_dir=mount_dir, approval=approval, timestamp=timestamp,
-        emit=emit, synthetic=False)
+        emit=emit, synthetic=False, auth_audit=auth_audit)
 
 
 def execute_prep(mitdb_dir: str, folder_id: str, out_dir: str,
                  adapter: DriveFolderAdapter, mount_dir: Optional[str] = None,
                  approval: Optional[str] = None, timestamp: str = "",
                  emit=print, synthetic: bool = False,
-                 reader: Optional[LocalTreeReader] = None
+                 reader: Optional[LocalTreeReader] = None,
+                 auth_audit: Optional[Mapping[str, object]] = None
                  ) -> Dict[str, object]:
     """Run both gates and write the bundle.  Shared by production and fixtures.
 
@@ -1222,8 +1625,9 @@ def execute_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     emit(f"combined: {combined['status']}")
 
     directory = os.path.join(out_dir, f"{timestamp}_{RUN_SLUG}")
-    written = write_bundle(directory, build_config(timestamp, synthetic),
-                           p1, p2, combined, log, synthetic=synthetic)
+    written = write_bundle(
+        directory, build_config(timestamp, synthetic, auth_audit),
+        p1, p2, combined, log, synthetic=synthetic)
     return {"p1": p1, "p2": p2, "combined": combined, "bundle": written}
 
 
@@ -1234,8 +1638,10 @@ def module_capabilities() -> Tuple[str, ...]:
             "DriveFolderAdapter", "GoogleDriveFolderAdapter",
             "LocalTreeReader", "normalise_child", "assert_no_credentials",
             "authenticate_drive_readonly", "build_drive_adapter",
-            "check_runtime_dependencies", "payload_files", "bundle_files",
-            "design_card", "EXECUTION_APPROVAL_TOKEN")
+            "audit_credential_scopes", "runtime_identity",
+            "check_runtime_dependencies", "parse_sha256sums_text",
+            "compare_against_publisher_list", "payload_files", "bundle_files",
+            "design_card", "EXECUTION_APPROVAL_TOKEN", "DRIVE_READONLY_SCOPE")
 
 
 def design_card() -> str:
