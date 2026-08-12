@@ -64,6 +64,80 @@ def _color_mask(img, colors: dict, protect: list, olive_region: list | None):
     return mask
 
 
+def _donor_blend(img, mask, donor_path: Path, cfg: dict):
+    """인접 페이지(같은 영상의 이웃 프레임)에서 마스크 영역을 가져와 복원.
+
+    확산 인페인팅의 '블라인드(뭉개짐)' 현상을 없애는 1순위 경로: 같은 카메라
+    구도의 donor 프레임을 ECC로 정렬해 진짜 조직 질감을 복사한다.
+    donor 자체의 필기·자막·손 위치 차이는 제외하고(그 부분은 인페인팅 폴백),
+    경계는 feather 블렌드로 잇는다. 반환: (부분 복원 이미지, 남은 마스크).
+    """
+    import cv2
+    import numpy as np
+
+    don = cv2.imread(str(donor_path))
+    if don is None:
+        return img, mask
+    h, w = img.shape[:2]
+    g1 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    g2 = cv2.cvtColor(don, cv2.COLOR_BGR2GRAY)
+    warp = np.eye(2, 3, dtype=np.float32)
+    try:
+        cv2.findTransformECC(
+            g1[h // 3:h * 5 // 6, w // 4:w * 4 // 5],
+            g2[h // 3:h * 5 // 6, w // 4:w * 4 // 5], warp,
+            cv2.MOTION_EUCLIDEAN,
+            (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 100, 1e-5))
+    except cv2.error:
+        return img, mask  # 정렬 실패 → donor 사용 안 함
+    don = cv2.warpAffine(don, warp, (w, h),
+                         flags=cv2.INTER_LINEAR + cv2.WARP_INVERSE_MAP)
+    # donor 오염 제외: donor 자신의 필기(민감 임계값) + 지정 박스 + 프레임 차이 큰 곳
+    b, g, r = cv2.split(don.astype(np.int16))
+    bad = (((r > 120) & (g < 85) & (b < 85)) | (((b - r) > 12) & (b > 75))
+           | ((r > 105) & (g > 95) & (b < 70))).astype(np.uint8) * 255
+    bad = cv2.dilate(bad, np.ones((13, 13), np.uint8))
+    for x0, y0, x1, y1 in cfg.get("donor_bad_boxes", []):
+        bad[y0:y1, x0:x1] = 255
+    diff = cv2.absdiff(cv2.GaussianBlur(g1, (21, 21), 0),
+                       cv2.GaussianBlur(cv2.cvtColor(don, cv2.COLOR_BGR2GRAY),
+                                        (21, 21), 0))
+    bad[diff > int(cfg.get("donor_diff_thresh", 45))] = 255
+    use = cv2.bitwise_and(mask, cv2.bitwise_not(bad))
+    # 광도 매칭: 마스크 밖 공통 영역 기준으로 donor 밝기를 타깃에 맞춘다
+    ok = (mask == 0) & (bad == 0)
+    if ok.any():
+        t = img[ok].astype(np.float32); d = don[ok].astype(np.float32)
+        gain = (t.std(axis=0) + 1e-3) / (d.std(axis=0) + 1e-3)
+        gain = np.clip(gain, 0.7, 1.4)
+        don = np.clip((don.astype(np.float32) - d.mean(axis=0)) * gain
+                      + t.mean(axis=0), 0, 255).astype(np.uint8)
+    # 마스크 내부는 donor 100%, feather는 마스크 '바깥'으로만 —
+    # 안쪽으로 feather하면 지워야 할 필기가 반투명하게 비친다(고스트).
+    alpha = cv2.GaussianBlur(cv2.dilate(use, np.ones((9, 9), np.uint8)),
+                             (15, 15), 0).astype(np.float32)
+    alpha = np.maximum(alpha, use.astype(np.float32))[..., None] / 255.0
+    out = (img.astype(np.float32) * (1 - alpha)
+           + don.astype(np.float32) * alpha).astype(np.uint8)
+    return out, cv2.bitwise_and(mask, bad)
+
+
+def _match_grain(img, filled_mask):
+    """인페인팅 영역에 주변 질감 수준의 고주파 노이즈를 입혀 '너무 매끈함'을 줄인다."""
+    import cv2
+    import numpy as np
+
+    ring = cv2.dilate(filled_mask, np.ones((25, 25), np.uint8)) & ~filled_mask
+    if not ring.any():
+        return img
+    high = img.astype(np.float32) - cv2.GaussianBlur(img, (0, 0), 2).astype(np.float32)
+    std = float(np.clip(high[ring > 0].std(), 1.0, 12.0))
+    rng = np.random.default_rng(0)  # 결정론(재현 가능)
+    noise = cv2.GaussianBlur(rng.normal(0, std, img.shape).astype(np.float32), (0, 0), 0.8)
+    m = (filled_mask > 0)[..., None]
+    return np.clip(img.astype(np.float32) + noise * m, 0, 255).astype(np.uint8)
+
+
 def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> dict:
     import cv2
     import numpy as np
@@ -76,7 +150,13 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
     mask = cv2.dilate(mask, np.ones((9, 9), np.uint8))
     for x0, y0, x1, y1 in cfg.get("erase_boxes", []):
         mask[y0:y1, x0:x1] = 255
-    clean = cv2.inpaint(img, mask, 9, cv2.INPAINT_TELEA)
+    remaining = mask
+    clean = img
+    if cfg.get("donor"):  # 1순위: 인접 프레임에서 진짜 질감 복사
+        clean, remaining = _donor_blend(img, mask, Path(cfg["donor"]), cfg)
+    if remaining.any():   # 폴백: 확산 인페인팅 + 질감 매칭
+        clean = cv2.inpaint(clean, remaining, 9, cv2.INPAINT_TELEA)
+        clean = _match_grain(clean, remaining)
     out_clean.parent.mkdir(parents=True, exist_ok=True)
     cv2.imwrite(str(out_clean), clean)
     stats = {"mask_px": int(mask.sum() / 255), "quiz": None}
