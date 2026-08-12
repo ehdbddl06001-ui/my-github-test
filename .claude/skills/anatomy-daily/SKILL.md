@@ -62,6 +62,23 @@ python pipelines/anatomy_daily.py --date <KST 오늘> --plan
 - 과거 학기 날짜(파일명·수업계획서)를 2026 일정으로 쓰지 않는다 —
   일정은 `anatomy_schedule.py`가 유일 기준.
 
+## 4b. SVG 도해 자체 QA 루프 (필수 — 모델 불문)
+
+`docs/assets/anatomy/*.svg`를 새로 만들거나 수정했으면 **커밋 전에 반드시**
+렌더링해서 눈으로 검사하고, 어색한 부분을 고친 뒤 재렌더한다(최소 1회 왕복):
+
+```
+/opt/pw-browsers/chromium --headless --disable-gpu --no-sandbox \
+  --screenshot=/tmp/qa.png --window-size=880,660 --hide-scrollbars \
+  file://$PWD/docs/assets/anatomy/<파일>.svg
+```
+
+체크리스트: ① 라벨-선 겹침(후광 `<style>text{paint-order:stroke;...}</style>` 유지)
+② 텍스트가 상자·캔버스 밖으로 넘침 ③ 번호핀 숫자 가독(원문자 글리프 ①② 금지 —
+원 도형 + 일반 숫자) ④ 해부학적 위치관계가 카드 본문 설명과 모순 없는지
+⑤ 좌우대칭 도해는 미러(`<use>`) 깨짐. 스크린샷 확인 없이 SVG를 커밋하지 않는다.
+퀴즈판 번호 배정은 대응 문항 카드의 정답 순서와 1:1 — 임의 변경 금지.
+
 ## 5. 계획 확정 + 검증
 
 ```
