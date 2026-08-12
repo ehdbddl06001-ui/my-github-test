@@ -2,7 +2,7 @@
 experiment_id: EXP-2026-009
 substage: Q5D_NULL_ARTIFACT_REPAIR
 title: Q5-D negative-control null artifact repair
-status: draft_awaiting_approval
+status: approved_for_implementation
 design_owner: codex
 implementation_owner: claude
 analysis_only: true
@@ -25,12 +25,16 @@ cited as a Q5-D or Q5-E finding.  Nothing here re-runs the beat join, the
 value.  Every number it emits already exists in an artifact that has been
 sitting on Drive since 2026-08-11 — this moves bytes and checks them.
 
-`status` is `draft_awaiting_approval`.  The design direction has been
-**conditionally accepted**; implementation acceptance and execution have not.
-The implementation lands **unexecuted** behind a terminal guard, exactly as the
-P1/P2 PREP did: `granted: False` in `EXECUTION_APPROVAL_RECORD`, so an import,
-a notebook run or a stray call reaches nothing.  Opening it is a separate user
-decision and a separate PR.
+`status` is `approved_for_implementation` as of 2026-08-12: Codex accepted the
+design, the N1 naming decision and the implementation.
+
+**That is not an execution approval, and the two are not adjacent.**  The
+implementation sits **unexecuted** behind a terminal guard, exactly as the P1/P2
+PREP did: `granted: False` in `EXECUTION_APPROVAL_RECORD`, and
+`APPROVED_IMPLEMENTATION_COMMIT` and `APPROVED_ARTIFACT_DIGESTS` all still
+`None`, so an import, a notebook run or a stray call reaches nothing.  Filling
+those in and opening the guard is a separate user decision and a separate
+execution-enable PR.
 
 # Why this exists
 
@@ -741,3 +745,39 @@ stub that asserts `numpy.load` was called with `allow_pickle=False`.  Where real
 numpy exists the genuine cross-check runs instead.  The stub keeps the route
 reachable in CI; it is not evidence that numpy can read the file, and it is not
 used by any production path.
+
+## 2026-08-12 — Codex implementation acceptance (implementation only)
+
+    IMPLEMENTATION_ACCEPTED
+    EXECUTION_APPROVAL_NOT_GRANTED
+
+Reviewed tip: `489bf0f54f38aedad4df7c998d14728618f3e8ec`.
+
+Both remaining blockers are **CLOSED**:
+
+- **Reconciliation context identity.** The context was checked by count, so
+  eleven digests under eleven keys passed while naming a file the bundle does
+  not contain — and the real file then went uncompared, because the comparison
+  loop walked the directory and skipped whatever was absent from the table.
+  Every field is now checked against the registered contract before any Drive
+  call, and the loop walks `BUNDLE_FILES`, so all twelve are opened and
+  compared.
+- **Approval-block annotations.** Rejecting only `Call` and `Lambda` inside an
+  annotation left `SPEC_PATH.__class__` and `SPEC_PATH[0]`, both of which run
+  something while looking like a type.  Annotated assignment is refused as a
+  form, and the block's four values are plain assignments.
+
+`status` moves to `approved_for_implementation`.  **Nothing else moves.**  No
+scientific rule, gate, threshold, null value, family, seed, replicate count,
+member naming or NPZ contract changed; no code, test or notebook changed in
+this entry; `EXECUTION_APPROVAL_RECORD.granted` stays `False`; and
+`APPROVED_IMPLEMENTATION_COMMIT` and `APPROVED_ARTIFACT_DIGESTS` stay unset —
+filling them is the execution-enable PR's job, and it must name **this**
+acceptance commit rather than the reviewed tip, because the acceptance record
+itself changes the spec blob.
+
+What is still required before a repair may run, in order: an execution-enable
+PR that records the approved implementation commit and its four digests and
+flips `granted` to `True`; a separate user execution approval; and only then a
+run, whose output is preserved-but-unregistered until a further registration PR
+fixes the new folder id, the NPZ digest and the lineage.

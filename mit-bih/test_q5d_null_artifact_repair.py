@@ -1877,8 +1877,10 @@ def test_the_notebook_uses_folder_ids_and_holds_no_approval_of_its_own():
 
 def test_the_spec_fixes_the_contract_this_module_implements():
     spec = open(os.path.join(ROOT, R.SPEC_PATH), encoding="utf-8").read()
-    check("status: draft_awaiting_approval" in spec,
-          "the spec is not yet approved for implementation")
+    check("status: approved_for_implementation" in spec,
+          "the spec records Codex's implementation acceptance")
+    check("EXECUTION_APPROVAL_NOT_GRANTED" in spec,
+          "while stating just as plainly that execution is not approved")
     for name in R.NPZ_ARRAYS:
         check(f"`{name}`" in spec, f"the spec names {name}")
     check("allow_pickle=False" in spec, "and fixes the pickle clause")
