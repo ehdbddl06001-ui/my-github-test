@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1003,
+  "total": 1009,
   "byType": {
+   "usmle": 66,
    "anatomy": 216,
    "kmle": 523,
-   "usmle": 60,
    "paper": 187,
    "ailab": 14,
    "basic": 3
@@ -20,7 +20,7 @@ window.MEDKOS_INDEX = {
    "Nephrology": 57,
    "Infectious Disease": 55,
    "Pediatrics": 53,
-   "Obstetrics & Gynecology": 37,
+   "Obstetrics & Gynecology": 38,
    "Neurology": 36,
    "Psychiatry": 36,
    "Endocrinology": 34,
@@ -32,34 +32,148 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 32,
    "Rheumatology": 32,
    "Hematology": 31,
-   "Surgery": 30,
+   "Surgery": 31,
    "Pathology": 26,
    "Laboratory Medicine": 24,
    "Hematology-Oncology": 19,
    "Physiology": 7,
-   "Microbiology": 5,
-   "Biochemistry": 4,
+   "Microbiology": 6,
+   "Biochemistry": 5,
+   "Pharmacology": 5,
    "Immunology": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "Pharmacology": 4,
    "Oncology": 3,
    "Allergy": 2,
+   "Internal Medicine": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
-   "Internal Medicine": 1,
    "ML Debugging": 1,
    "ML Engineering": 1,
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 620,
+   "high": 626,
    "medium": 334,
    "low": 49
   },
-  "tagCount": 1868
+  "tagCount": 1879
  },
  "docs": [
+  {
+   "id": "usmle-2026-0066",
+   "type": "usmle",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage from Uterine Atony — Uterotonic Contraindicated in Hypertension",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "methylergonovine",
+    "hypertension",
+    "uterotonic"
+   ],
+   "source": "USMLE-style / MedKOS",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/usmle/usmle-2026-0066.md",
+   "snippet": "A 31 year old woman with chronic hypertension has heavy vaginal bleeding 10 minutes after a vaginal delivery. On examination the fundus is boggy and poorly contracted, and no lacerations or retained products are found. Uterine massage and i",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage from Uterine Atony — Uterotonic Contraindicated in Hypertension postpartum-hemorrhage uterine-atony methylergonovine hypertension uterotonic USMLE-style / MedKOS A 31 year old woman with chronic hypertension has heavy vaginal bleeding 10 minutes after a vaginal delivery. On examination the fundus is boggy and poorly contracted, and no lacerations or retained products are found. Uterine massage and intravenous oxytocin are begun. Given her medical history, which of the following additional uterotonic agents is contraindicated in this patient? A. Carboprost (15 methyl prostaglandin F2 alpha) B. Methylergonovine C. Misoprostol D. Tranexamic acid E. Additional intravenous oxytocin infusion The boggy, poorly contracted fundus indicates uterine atony. Methylergonovine, an ergot alkaloid, causes generalized vasoconstriction and can precipitate a hypertensive crisis, so it is contraindicated in a patient with hypertension."
+  },
+  {
+   "id": "usmle-2026-0065",
+   "type": "usmle",
+   "topic": "Surgery",
+   "subtopic": "Acute Mesenteric Ischemia — Pain Out of Proportion and the Diagnostic Next Step",
+   "tags": [
+    "acute-mesenteric-ischemia",
+    "embolism",
+    "CT-angiography",
+    "atrial-fibrillation",
+    "acute-abdomen"
+   ],
+   "source": "USMLE-style / MedKOS",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/usmle/usmle-2026-0065.md",
+   "snippet": "A 72 year old man with atrial fibrillation who is not taking anticoagulation presents with the sudden onset of severe, diffuse abdominal pain for 3 hours. He is in obvious distress, yet his abdomen is soft with only mild tenderness and no g",
+   "text": "Surgery Acute Mesenteric Ischemia — Pain Out of Proportion and the Diagnostic Next Step acute-mesenteric-ischemia embolism CT-angiography atrial-fibrillation acute-abdomen USMLE-style / MedKOS A 72 year old man with atrial fibrillation who is not taking anticoagulation presents with the sudden onset of severe, diffuse abdominal pain for 3 hours. He is in obvious distress, yet his abdomen is soft with only mild tenderness and no guarding on palpation. Vital signs and laboratory studies are shown. After fluid resuscitation and analgesia, which of the following is the most appropriate next step to establish the diagnosis? A. Abdominal ultrasonography with Doppler of the portal vein B. Upper gastrointestinal endoscopy C. CT angiography of the abdomen and pelvis D. Colonoscopy with mucosal biopsy E. Supine and upright plain abdominal radiographs Sudden severe pain out of proportion to a benign abdominal exam, with an embolic source (untreated atrial fibrillation) and elevated lactate, points to acute mesenteric ischemia; CT angiography is the diagnostic test of choice to visualize the occluded mesenteric vessel."
+  },
+  {
+   "id": "usmle-2026-0064",
+   "type": "usmle",
+   "topic": "Internal Medicine",
+   "subtopic": "Stable Monomorphic Ventricular Tachycardia — Next Step in the Hemodynamically Stable Patient",
+   "tags": [
+    "ventricular-tachycardia",
+    "wide-complex",
+    "amiodarone",
+    "ECG",
+    "ACLS"
+   ],
+   "source": "USMLE-style / MedKOS · ECG: synthetic rhythm strip (monomorphic VT)",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/usmle/usmle-2026-0064.md",
+   "snippet": "A 64 year old man with a prior anterior myocardial infarction presents with 30 minutes of palpitations and mild light headedness. He is alert and conversant, with no chest pain and no signs of hypoperfusion. His rhythm strip is shown and re",
+   "text": "Internal Medicine Stable Monomorphic Ventricular Tachycardia — Next Step in the Hemodynamically Stable Patient ventricular-tachycardia wide-complex amiodarone ECG ACLS USMLE-style / MedKOS · ECG: synthetic rhythm strip (monomorphic VT) A 64 year old man with a prior anterior myocardial infarction presents with 30 minutes of palpitations and mild light headedness. He is alert and conversant, with no chest pain and no signs of hypoperfusion. His rhythm strip is shown and reveals a regular wide complex tachycardia; vital signs and labs are shown. Which of the following is the most appropriate next step in management? A. Administer intravenous adenosine by rapid push B. Perform carotid sinus massage C. Give intravenous verapamil D. Perform immediate unsynchronized defibrillation E. Administer intravenous antiarrhythmic (amiodarone or procainamide) A regular wide complex tachycardia in a patient with prior MI who remains hemodynamically stable is treated as monomorphic ventricular tachycardia with IV antiarrhythmic therapy (amiodarone or procainamide); synchronized cardioversion is reserved for instability."
+  },
+  {
+   "id": "usmle-2026-0063",
+   "type": "usmle",
+   "topic": "Microbiology",
+   "subtopic": "Listeria monocytogenes — Actin-Based Intracellular Motility and Cell-to-Cell Spread",
+   "tags": [
+    "Listeria",
+    "actin-motility",
+    "intracellular",
+    "neonatal-meningitis",
+    "virulence"
+   ],
+   "source": "USMLE-style / MedKOS",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/usmle/usmle-2026-0063.md",
+   "snippet": "A 6 day old neonate presents with fever, lethargy, and poor feeding. The mother recalls a flu like illness after eating unpasteurized soft cheese in the third trimester. CSF studies and Gram stain are shown; the isolate is a facultative int",
+   "text": "Microbiology Listeria monocytogenes — Actin-Based Intracellular Motility and Cell-to-Cell Spread Listeria actin-motility intracellular neonatal-meningitis virulence USMLE-style / MedKOS A 6 day old neonate presents with fever, lethargy, and poor feeding. The mother recalls a flu like illness after eating unpasteurized soft cheese in the third trimester. CSF studies and Gram stain are shown; the isolate is a facultative intracellular gram positive rod that multiplies even at refrigerator temperature and shows tumbling motility. Which of the following mechanisms best explains how this organism spreads directly between host cells while evading circulating antibody? A. Polymerization of host actin filaments that propel the organism into adjacent cells B. A polysaccharide capsule that resists opsonization by complement C. IgA protease that cleaves secretory antibody at mucosal surfaces D. Antigenic variation of surface pili between successive generations E. Production of a superantigen that nonspecifically activates T cells Listeria monocytogenes escapes the phagosome (listeriolysin O) and hijacks host actin via ActA, forming 'actin rockets' that push it directly into neighboring cells — spreading cell to cell without entering the extracellular space where antibody would act."
+  },
+  {
+   "id": "usmle-2026-0062",
+   "type": "usmle",
+   "topic": "Biochemistry",
+   "subtopic": "Ornithine Transcarbamylase Deficiency — Hyperammonemia with Elevated Orotic Acid",
+   "tags": [
+    "urea-cycle",
+    "OTC-deficiency",
+    "orotic-acid",
+    "hyperammonemia",
+    "X-linked"
+   ],
+   "source": "USMLE-style / MedKOS",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/usmle/usmle-2026-0062.md",
+   "snippet": "A 4 day old boy, well at birth, develops progressive lethargy, poor feeding, and rapid breathing after breastfeeding was established. He is hypotonic and irritable. Arterial blood gas shows a respiratory alkalosis. Laboratory studies are sh",
+   "text": "Biochemistry Ornithine Transcarbamylase Deficiency — Hyperammonemia with Elevated Orotic Acid urea-cycle OTC-deficiency orotic-acid hyperammonemia X-linked USMLE-style / MedKOS A 4 day old boy, well at birth, develops progressive lethargy, poor feeding, and rapid breathing after breastfeeding was established. He is hypotonic and irritable. Arterial blood gas shows a respiratory alkalosis. Laboratory studies are shown; there is no anemia. A defect in a single enzyme is suspected. Which of the following enzymatic deficiencies best accounts for this metabolic picture? A. Carbamoyl phosphate synthetase I B. Argininosuccinate synthetase C. Arginase D. Ornithine transcarbamylase E. UMP synthase Hyperammonemia with LOW BUN, low citrulline, and markedly ELEVATED orotic acid (without megaloblastic anemia) localizes the block to ornithine transcarbamylase: accumulated carbamoyl phosphate spills into the pyrimidine pathway, generating orotic acid."
+  },
+  {
+   "id": "usmle-2026-0061",
+   "type": "usmle",
+   "topic": "Pharmacology",
+   "subtopic": "Digoxin Toxicity Potentiated by Hypokalemia — Na+/K+-ATPase Binding",
+   "tags": [
+    "digoxin",
+    "hypokalemia",
+    "Na-K-ATPase",
+    "drug-toxicity",
+    "thiazide"
+   ],
+   "source": "USMLE-style / MedKOS",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/usmle/usmle-2026-0061.md",
+   "snippet": "A 74 year old woman treated with a cardiac glycoside for chronic heart failure and rate control is brought in with nausea, anorexia, and complaints that lights appear to have yellow green halos. A thiazide diuretic was added two weeks ago f",
+   "text": "Pharmacology Digoxin Toxicity Potentiated by Hypokalemia — Na+/K+-ATPase Binding digoxin hypokalemia Na-K-ATPase drug-toxicity thiazide USMLE-style / MedKOS A 74 year old woman treated with a cardiac glycoside for chronic heart failure and rate control is brought in with nausea, anorexia, and complaints that lights appear to have yellow green halos. A thiazide diuretic was added two weeks ago for hypertension. Her serum drug concentration is within the usual therapeutic range. Vital signs and laboratory studies are shown. Which of the following best explains why this patient is at increased risk of drug toxicity despite a therapeutic serum drug level? A. Reduced renal tubular secretion of the drug prolongs its elimination half life B. Low extracellular potassium reduces competition at the Na+/K+ ATPase, increasing drug binding to the pump C. Increased plasma protein binding raises the total but not the free drug concentration D. Induction of hepatic cytochrome P450 accelerates conversion to an active metabolite E. Alkalosis shifts the drug into its non ionized form, enhancing tissue penetration Cardiac glycosides bind the same site on Na+/K+ ATPase that potassium occupies; hypokalemia (here precipitated by a thiazide) removes competing potassium, increasing drug binding and effect even when the measured serum level is 'therapeutic'."
+  },
   {
    "id": "anatomy-daily-2026-08-13",
    "type": "anatomy",
