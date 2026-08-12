@@ -822,16 +822,63 @@ def test_bundle_refuses_an_unexpected_output_file():
 
 
 def test_bundle_never_carries_a_credential():
-    for payload in ({"access_token": "secret"}, {"client_secret": "x"},
-                    {"nested": {"refresh_token": "y"}}):
+    for payload, label in (
+            ({"access_token": "secret"}, "a top-level token"),
+            ({"client_secret": "x"}, "a client secret"),
+            ({"nested": {"refresh_token": "y"}}, "one nested in a mapping"),
+            ({"rows": [{"ok": 1}, {"authorization": "Bearer x"}]},
+             "one inside a list"),
+            ({"credentials": {}}, "an actual credentials field"),
+            ({"PASSWORD": "x"}, "one whose key is uppercase")):
         try:
             P.assert_no_credentials(payload, "test")
-            raise AssertionError(f"{payload} was accepted")
+            raise AssertionError(f"{label} was accepted")
         except P.PrepError as error:
             check("Credentials are not evidence" in str(error),
-                  "a credential-shaped field is refused")
+                  f"{label} is refused")
+            check("field at" in str(error),
+                  f"{label} is reported with the path to the field")
     P.assert_no_credentials({"file_id": "abc", "sha256": "d" * 64}, "test")
     check(True, "an ordinary inventory row is accepted")
+
+
+def test_the_credential_guard_reads_fields_not_prose():
+    """It fires on the thing, not on the word.
+
+    The guard used to scan the serialised JSON, so it could not tell a field
+    from a value. `credential_type` — which the execution contract requires
+    the auth audit to record — holds the credential's class name, and in Colab
+    that is `Credentials`. The scan read the value as a `"credentials"` field
+    and refused to write a run that had already passed both gates. The
+    measurements were lost to a guard firing on a word.
+    """
+    class Credentials(object):                    # Colab's real class name
+        scopes = [P.DRIVE_READONLY_SCOPE]
+
+    audit = P.audit_credential_scopes(Credentials())
+    check(audit["credential_type"] == "Credentials",
+          "the audit records the credential's class name, as contracted")
+    check(audit["credential_recorded"] is False,
+          "while the credential object itself is not recorded")
+
+    config = P.build_config("T", False, audit)
+    P.assert_no_credentials(config, "config.json")
+    check(True, "a production config carrying that audit is accepted")
+
+    for benign in ({"credential_type": "Credentials"},
+                   {"note": "no password is stored here"},
+                   {"drive_authentication": {"credential_recorded": False}},
+                   {"text": 'a field named "access_token" is refused'}):
+        P.assert_no_credentials(benign, "test")
+    check(True, "and neither a class name nor prose about secrets is a field")
+
+    # The distinction is exactly one character of key, so pin both sides.
+    P.assert_no_credentials({"credential_type": "x"}, "test")
+    try:
+        P.assert_no_credentials({"credentials": "x"}, "test")
+        raise AssertionError("a credentials field was accepted")
+    except P.PrepError:
+        check(True, "'credential_type' passes and 'credentials' does not")
 
     inventory = P.normalise_child(
         {"id": "f1", "name": "x", "size": "3", "mimeType": "text/plain",

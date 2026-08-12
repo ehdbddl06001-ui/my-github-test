@@ -23,17 +23,23 @@ preflights, P1 and P2.  It is not a scientific design and produces no
 scientific result: nothing here measures anything about ECG data, and no
 outcome of a P1/P2 run may be cited as a Q5-E finding.
 
-The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`), passed
-Codex implementation acceptance on 2026-08-12, and has **still not been
-executed**.  The user granted a separate **read-only execution approval** on
-2026-08-12; the terminal stop in `run_prep()` is now open, and it opens by
-consulting `EXECUTION_APPROVAL_RECORD` rather than by having been deleted.  Its
-position is unchanged: still after the switch, the token and the folder id, and
-still before authentication, the Drive service and every reader.
+The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`) and
+passed Codex implementation acceptance on 2026-08-12.  The user granted a
+separate **read-only execution approval** on 2026-08-12; the terminal stop in
+`run_prep()` is now open, and it opens by consulting
+`EXECUTION_APPROVAL_RECORD` rather than by having been deleted.  Its position
+is unchanged: still after the switch, the token and the folder id, and still
+before authentication, the Drive service and every reader.
 
-**No run has happened.**  Enabling execution and executing are different
-things: this contract is not `MEASURED`, `PASS` or `COMPLETE`, and no observed
-value exists.
+**One execution has been attempted (2026-08-12) and produced no bundle.**  It
+authenticated with the scope proven read-only, measured
+`P1_MITDB_IDENTITY_PASS` and `P2_DIRECTORY_CONTRACT_FAILED`, and then failed to
+write because of a defect in the credential guard — see the Decision log.  No
+bundle exists, no value has been registered, and the attempt's P2 detail was
+lost with it.
+
+This contract is **not** `MEASURED`, `PASS` or `COMPLETE`.  A measured result
+requires a completed run whose bundle was written and verified.
 
 P3 — the source-matching differential — is **not** in scope here.
 
@@ -760,3 +766,36 @@ call site does explicitly and a stray import still reaches nothing.
 API call was made, no registered asset was opened, and no digest was computed
 against real bytes. This change makes a run possible; it does not make one
 happen, and the three Q5-E stops remain closed.
+
+## 2026-08-12 — first execution attempt: P1 passed, P2 stopped, bundle refused
+
+The first real run under the read-only approval reached both gates and then
+failed to write, for a reason that was a defect in this code rather than
+anything about the assets.
+
+**What was measured.** Authentication succeeded with the scope proven exactly
+read-only. P1 returned `P1_MITDB_IDENTITY_PASS` — the registered MIT-BIH
+publisher tree is byte-identical to its registration. P2 returned
+`P2_DIRECTORY_CONTRACT_FAILED`: the folder at the registered id did not hold
+exactly the twelve contracted files. That is a real stop and is **not** to be
+resolved by relaxing the directory contract; which files are missing or
+unexpected is recorded by the run, and this attempt lost that detail to the
+defect below.
+
+**The defect.** `assert_no_credentials()` scanned the serialised JSON text for
+`"credentials"`. The auth audit records `credential_type`, as this contract
+requires, and its value in Colab is the class name `Credentials` — so the scan
+read a value as a field and refused to write a run that had already completed
+both gates. The guard fired on the word rather than the thing, and the cost was
+an entire execution.
+
+It now walks the structure and matches **keys** exactly, at any depth,
+including inside lists. `credential_type` is accepted; `credentials`,
+`access_token`, `authorization` and the rest are refused with the path to the
+offending field. Reverting to the text scan, or stopping the walk at lists or
+at nested mappings, each fails a test.
+
+Nothing was written to Drive by the failed attempt: the guard runs before the
+output directory is created, so no partial bundle exists. The run must be
+repeated to capture P2's missing/unexpected lists. No value was registered and
+the three Q5-E stops remain closed.
