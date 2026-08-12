@@ -86,6 +86,8 @@ def export_concepts() -> list[dict]:
             "confidence": meta.get("confidence", ""),
             "classificationConfidence": meta.get("classification_confidence"),
             "tree": meta.get("tree"),  # 분지/주행 시각화용 {name, children[]}
+            "image": _asset(meta),     # publishable 자산(자체 제작 도해 등)만
+            "imageOrigin": meta.get("asset_origin"),
             "refs": _refs(meta),
             "body": body.strip(),
         })
@@ -109,6 +111,7 @@ def export_questions() -> list[dict]:
             "confidence": meta.get("confidence", ""),
             "answerOnlyBacked": bool(meta.get("answer_only_backed")),
             "image": _asset(meta),
+            "imageOrigin": meta.get("asset_origin"),
             "refs": _refs(meta),
         })
     return out
