@@ -1334,12 +1334,24 @@ def _write_new_file(path: str, body: bytes) -> None:
     the check, so there is no window between deciding the name is free and
     taking it.
 
+    `O_BINARY` matters and is not Windows boilerplate.  Without it Windows
+    opens the descriptor in text mode and rewrites every `\\n` on the way out,
+    so the file on disk is not the bytes that were handed in — and since the
+    caller hashes what it *passed*, the recorded digest would describe bytes
+    that never existed.  A synthetic run would then fail its own consumer
+    check, and the failure would look like corruption rather than a translated
+    newline.  The flag is absent on POSIX, where `getattr` supplies 0.
+
     The write loop is not decoration: `os.write` is allowed to write fewer
     bytes than it was handed, and a short write would produce a truncated file
-    that still hashes to *something* and would be committed as a bundle.
+    that still hashes to *something* and would be committed as a bundle.  A
+    return of 0 makes no progress, so it is refused rather than retried
+    forever — a silent hang is worse than a named failure.
     """
+    flags = (os.O_CREAT | os.O_EXCL | os.O_WRONLY
+             | getattr(os, "O_BINARY", 0))
     try:
-        handle = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+        handle = os.open(path, flags, 0o644)
     except FileExistsError as error:
         raise PrepError(
             f"refusing to write {os.path.basename(path)!r}: it already exists "
@@ -1349,7 +1361,14 @@ def _write_new_file(path: str, body: bytes) -> None:
     try:
         written = 0
         while written < len(body):
-            written += os.write(handle, body[written:])
+            chunk = os.write(handle, body[written:])
+            if chunk <= 0:
+                raise PrepError(
+                    f"refusing to continue writing {os.path.basename(path)!r}:"
+                    f" os.write made no progress at byte {written} of "
+                    f"{len(body)}.  Retrying would spin forever, and the file "
+                    f"as it stands is truncated.")
+            written += chunk
     finally:
         os.close(handle)
 
@@ -1753,27 +1772,75 @@ def verify_published_bundle(directory: str,
     else:
         problems.append(f"{PREP_MANIFEST_FILE} is missing")
 
+    # ---- the commit itself -------------------------------------------------
+    # `committed` is the claim the whole marker exists to make, so it is
+    # checked by identity rather than truthiness.  A marker that says
+    # `committed: false`, or omits the field, is a record of a write that did
+    # not finish; accepting it because a manifest digest happened to match
+    # would let an abandoned directory pass as a bundle.
+    if marker.get("committed") is not True:
+        problems.append(
+            f"{COMMIT_MARKER}: committed is {marker.get('committed')!r}, not "
+            f"True.  This directory does not claim to be a finished bundle, "
+            f"and nothing else can make that claim on its behalf.")
+
     # ---- which contract applies -------------------------------------------
     # `synthetic` decides the expected file sets, so it cannot be taken from
     # one file's say-so.  Both records must agree, and `ingestable` must be
     # its negation; flipping the flag then fails the file-set check, because
     # the synthetic marker file is part of the fixed contract for one value
     # and absent from it for the other.
-    marker_synth = marker.get("synthetic_fixture")
-    manifest_synth = manifest.get("synthetic_fixture")
-    if marker_synth != manifest_synth:
+    #
+    # The types are checked by identity, not by truthiness.  `bool("false")`
+    # is True, so a string that reads as a denial would have been taken as an
+    # assertion — the more alarming the value looks, the more certainly it
+    # would have passed.  `0`/`1` are likewise not booleans here, however
+    # readable they are, because the contract writes real JSON booleans and
+    # anything else means the file was not written by this code.
+    def _strict_bool(label: str, record: Mapping[str, object],
+                     field: str) -> Optional[bool]:
+        if field not in record:
+            problems.append(f"{label}: {field} is missing")
+            return None
+        value = record[field]
+        if type(value) is not bool:                       # noqa: E721
+            problems.append(
+                f"{label}: {field} is {value!r} ({type(value).__name__}), not "
+                f"a JSON boolean; truthiness is not accepted here")
+            return None
+        return value
+
+    flags: Dict[str, Dict[str, Optional[bool]]] = {}
+    for label, record in ((COMMIT_MARKER, marker),
+                          (PREP_MANIFEST_FILE, manifest)):
+        flags[label] = {
+            "synthetic_fixture": _strict_bool(label, record,
+                                              "synthetic_fixture"),
+            "ingestable": _strict_bool(label, record, "ingestable"),
+        }
+        synth = flags[label]["synthetic_fixture"]
+        ingest = flags[label]["ingestable"]
+        if synth is not None and ingest is not None and ingest is not (
+                not synth):
+            problems.append(
+                f"{label}: ingestable {ingest!r} is not the negation of "
+                f"synthetic_fixture {synth!r}")
+
+    marker_synth = flags[COMMIT_MARKER]["synthetic_fixture"]
+    manifest_synth = flags[PREP_MANIFEST_FILE]["synthetic_fixture"]
+    if (marker_synth is not None and manifest_synth is not None
+            and marker_synth is not manifest_synth):
         problems.append(
             f"synthetic_fixture disagrees: {COMMIT_MARKER} says "
             f"{marker_synth!r}, {PREP_MANIFEST_FILE} says {manifest_synth!r}")
-    synthetic = bool(marker_synth)
-    for label, record in ((COMMIT_MARKER, marker),
-                          (PREP_MANIFEST_FILE, manifest)):
-        if record.get("ingestable") != (not bool(record.get(
-                "synthetic_fixture"))):
-            problems.append(
-                f"{label}: ingestable {record.get('ingestable')!r} is not the "
-                f"negation of synthetic_fixture "
-                f"{record.get('synthetic_fixture')!r}")
+
+    # When the flag is unusable, fall back to what is on disk rather than
+    # guessing a contract — otherwise one bad field cascades into a file-set
+    # complaint that hides the real one.
+    if marker_synth is not None:
+        synthetic = marker_synth
+    else:
+        synthetic = os.path.isfile(os.path.join(directory, SYNTHETIC_MARKER))
 
     expected_bundle = sorted(bundle_files(synthetic))
     expected_payload = sorted(payload_files(synthetic))
@@ -1804,11 +1871,21 @@ def verify_published_bundle(directory: str,
             if record.get(field) != constant:
                 problems.append(
                     f"{label}: {field} {record.get(field)!r} != {constant!r}")
-    if marker.get("timestamp") != manifest.get("timestamp"):
+    stamps = {}
+    for label, record in ((COMMIT_MARKER, marker),
+                          (PREP_MANIFEST_FILE, manifest)):
+        value = record.get("timestamp")
+        if type(value) is not str:                        # noqa: E721
+            problems.append(
+                f"{label}: timestamp is {value!r} ({type(value).__name__}), "
+                f"not the contracted string")
+        else:
+            stamps[label] = value
+    if len(stamps) == 2 and len(set(stamps.values())) != 1:
         problems.append(
             f"timestamp disagrees: {COMMIT_MARKER} says "
-            f"{marker.get('timestamp')!r}, {PREP_MANIFEST_FILE} says "
-            f"{manifest.get('timestamp')!r}")
+            f"{stamps[COMMIT_MARKER]!r}, {PREP_MANIFEST_FILE} says "
+            f"{stamps[PREP_MANIFEST_FILE]!r}")
 
     # ---- the only digest that counts is the recomputed one -----------------
     triples = []
@@ -1844,10 +1921,11 @@ def verify_published_bundle(directory: str,
             f"manifest digest {manifest_digest} != the externally frozen "
             f"{expected_manifest_sha256}")
 
-    return verdict(committed=True, prep_payload_sha256=fold,
+    return verdict(committed=marker.get("committed") is True,
+                   prep_payload_sha256=fold,
                    manifest_sha256=manifest_digest,
                    synthetic_fixture=synthetic,
-                   ingestable=bool(marker.get("ingestable")))
+                   ingestable=flags[COMMIT_MARKER]["ingestable"])
 
 
 # ─────────────────────────────────────────────────────────────────────────────

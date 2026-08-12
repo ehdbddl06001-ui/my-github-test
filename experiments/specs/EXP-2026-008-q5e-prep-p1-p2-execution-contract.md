@@ -283,12 +283,18 @@ indivisible instead:
    directory, non-empty directory, symlink or junction all raise, and the run
    stops.  A symlinked or reparse-point parent is refused for the same reason.
 2. every payload file, then `manifest.json`, written inside the claim — each
-   one an **exclusive create** (`O_CREAT | O_EXCL`), never `open(..., "w")`.
-   Claiming the directory says nothing about the names inside it: a writer
-   that got to `config.json` first must keep its bytes, and a truncating
-   write would replace them silently and commit on top.  The write loop
-   handles a short `os.write`, because a partial write would leave a
-   truncated file that still hashes to something.
+   one an **exclusive create** (`O_CREAT | O_EXCL | O_BINARY`), never
+   `open(..., "w")`.  Claiming the directory says nothing about the names
+   inside it: a writer that got to `config.json` first must keep its bytes,
+   and a truncating write would replace them silently and commit on top.
+   `O_BINARY` (absent, and therefore 0, on POSIX) is what keeps the file equal
+   to the bytes handed in: a Windows text-mode descriptor rewrites every `\n`
+   as `\r\n` on the way out, so the digest the writer records — taken from
+   what it passed — would describe bytes that never reached the disk, and a
+   normal run would fail its own consumer check.  The write loop retries a
+   short `os.write`, because a partial write leaves a truncated file that
+   still hashes to something, and refuses a write that returns 0 rather than
+   spinning forever.
 3. `COMMITTED.json` created last, the same way, recording the bundle file set,
    the payload file list and `prep_payload_sha256`.
 
@@ -327,6 +333,23 @@ two records the run writes:
   relabelling a synthetic bundle as ingestable fails on the file set — the
   synthetic marker file is part of the fixed set for one value and absent from
   it for the other.
+
+**Types are checked, not coerced.**  Every contract flag is written as a real
+JSON boolean, and the verifier requires exactly that:
+
+- `committed` must be `True` by identity.  It is the claim the marker exists
+  to make, so a marker that says `false`, omits the field, or carries `"true"`
+  or `1` is a record of a write that did not finish — and no manifest digest,
+  however correct, can make that claim on its behalf.
+- `synthetic_fixture` and `ingestable` must each be of type `bool` in both
+  records, and `ingestable` must be `not synthetic_fixture`.
+- `timestamp` must be a string in both records and identical between them.
+
+Truthiness is not accepted anywhere here, because `bool("false")` is `True`:
+under coercion, a value that reads as a denial would have been taken as an
+assertion, and the more alarming the value looked the more certainly it would
+have passed.  A violation is recorded in `problems` with `structure_ok: false`
+and `acceptance_eligible: false` — never raised.
 
 A malformed or truncated `COMMITTED.json` or `manifest.json` is a **finding**,
 returned as `ok: false` with a problem list.  It never raises: a parse error
@@ -402,8 +425,10 @@ below is present and correct in the bundle.
 
 **Bundle**
 
-- `COMMITTED.json` present — without it the directory is not a bundle and the
-  run is not accepted
+- `COMMITTED.json` present with `committed: true` as a JSON boolean — without
+  it the directory is not a bundle and the run is not accepted
+- `synthetic_fixture`, `ingestable` booleans and a string `timestamp`,
+  agreeing across both records
 - the actual file set, equal to the contracted set for that run kind and to the
   set recorded in the marker
 - `manifest.payload_files` equal to the fold target actually used
@@ -591,6 +616,34 @@ fold went unread. Now both records are parsed, every set and duplicated field
 is checked against the fixed code contract, and the recomputed fold must equal
 both recorded folds and they each other. Malformed or truncated JSON returns a
 structured verdict instead of raising.
+
+## 2026-08-12 — text-mode newlines, and flags read by truthiness
+
+Two more, both measured. Neither changes any gate, threshold or metric.
+
+**The writer's descriptor was not binary.** `os.open` without `O_BINARY` opens
+in text mode on Windows and rewrites every `\n` on the way out, so the file on
+disk is not the buffer the caller hashed. The recorded manifest digest would
+describe bytes that never existed, and a perfectly good synthetic run would
+fail its own consumer check with what looks like corruption. Simulating the
+translation reproduces exactly that — `manifest digest … != the externally
+frozen …` — and the fix is one flag, which `getattr` makes a no-op on POSIX.
+The invariant is now held directly by a test: what `_write_new_file` was handed
+and what a reader gets back are byte-identical, across unix newlines, CRLF
+already present, a lone carriage return, embedded nulls and high bytes, and an
+empty file. A write returning 0 is refused rather than retried, since a silent
+hang is worse than a named failure; short writes are still retried to the end.
+
+**The verifier read contract flags by truthiness.** `bool("false")` is `True`,
+so a marker whose `synthetic_fixture` said `"false"` was read as saying yes —
+the more alarming the value, the more certainly it passed. And `committed` was
+never checked at all, so a marker that recorded an unfinished write became
+`acceptance_eligible` as soon as a correct manifest digest was supplied. Both
+are now checked by identity and by type: `committed is True`,
+`synthetic_fixture` and `ingestable` of type `bool` with the latter the
+negation of the former, `timestamp` a string and equal across both records.
+Violations are problems, not exceptions. Missing, `null`, `0`, `1`, `"true"`
+and `"false"` are all covered by fixtures.
 
 Related, and worth stating rather than leaving implicit: structural validity is
 now reported separately from `acceptance_eligible`. `manifest.json` sits

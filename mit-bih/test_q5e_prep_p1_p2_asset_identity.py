@@ -2337,11 +2337,21 @@ def test_the_commit_marker_can_only_ever_be_created_once():
              and isinstance(n.func, ast.Attribute) and n.func.attr == "open"
              and isinstance(n.func.value, ast.Name) and n.func.value.id == "os"]
     check(len(opens) == 1, "with exactly one low-level open in it")
-    flags = {n.attr for n in ast.walk(opens[0]) if isinstance(n, ast.Attribute)}
+    flags = {n.attr for n in ast.walk(helper[0])
+             if isinstance(n, ast.Attribute)
+             and isinstance(n.value, ast.Name) and n.value.id == "os"}
     check("O_EXCL" in flags, f"carrying O_EXCL: {sorted(flags)}")
     check("O_CREAT" in flags, "together with O_CREAT")
     check("O_TRUNC" not in flags,
           "and never O_TRUNC, which would overwrite an existing file")
+    # Windows opens a descriptor in text mode without this and rewrites every
+    # newline on the way out, so the file would not be the bytes the caller
+    # hashed. getattr keeps it a no-op on POSIX.
+    check("O_BINARY" in {n.attr for n in ast.walk(helper[0])
+                         if isinstance(n, ast.Attribute)}
+          or any(isinstance(n, ast.Constant) and n.value == "O_BINARY"
+                 for n in ast.walk(helper[0])),
+          "and O_BINARY, so the bytes on disk are the bytes handed in")
 
     # And the writer creates files *only* through it: a stray open(..., "w")
     # anywhere in the writer would truncate whatever is at that name.
@@ -2693,6 +2703,232 @@ def test_structural_validity_is_not_an_acceptance_pass():
               "an uncommitted directory is not eligible even with the digest")
         check(gone["manifest_anchored_externally"] is False,
               "and is not reported as anchored")
+
+
+def test_written_bytes_are_the_bytes_that_were_handed_in():
+    """The digest must describe the file, not the buffer it came from.
+
+    Windows opens a descriptor in text mode unless told otherwise and rewrites
+    every `\\n` as `\\r\\n` on the way out.  The caller hashes what it *passed*,
+    so without `O_BINARY` the recorded digest would describe bytes that never
+    reached the disk — and a perfectly good synthetic run would fail its own
+    consumer check with what looks like corruption.  This holds the invariant
+    directly, so it is checked on whichever platform the suite runs on.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        cases = {
+            "unix newlines": b"first\nsecond\nthird\n",
+            "no trailing newline": b"a\nb",
+            "crlf already present": b"kept\r\nas is\r\n",
+            "lone carriage return": b"before\rafter\n",
+            "embedded nulls and high bytes": b"\x00\x1a\n\xff\xfe\n",
+            "empty": b"",
+        }
+        for index, (label, body) in enumerate(cases.items()):
+            path = os.path.join(tmp, f"case-{index}.bin")
+            P._write_new_file(path, body)
+            with open(path, "rb") as handle:
+                on_disk = handle.read()
+            check(on_disk == body,
+                  f"{label}: the file is byte-identical to what was written")
+            check(hashlib.sha256(on_disk).hexdigest()
+                  == hashlib.sha256(body).hexdigest(),
+                  f"{label}: so the digest of one is the digest of the other")
+
+        # The JSON helper returns the bytes a caller will hash. A newline-rich
+        # payload is the case that breaks under text-mode translation.
+        value = {"lines": ["one", "two", "three"], "note": "a\nb\nc\n",
+                 "nested": {"deep": ["x\ny", "z"]}}
+        path = os.path.join(tmp, "payload.json")
+        returned = P._write_new_json(path, value)
+        check(b"\n" in returned, "the fixture really does contain newlines")
+        with open(path, "rb") as handle:
+            on_disk = handle.read()
+        check(returned == on_disk,
+              "the returned bytes are exactly the file's bytes")
+        check(hashlib.sha256(returned).hexdigest()
+              == hashlib.sha256(on_disk).hexdigest(),
+              "so a digest taken from the return value describes the file")
+
+    # And the same invariant across a whole real bundle: the digest the writer
+    # reports for the manifest is the digest of the manifest on disk.
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        out = os.path.join(tmp, "run")
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 P.combine(p1, p2), ["x"], synthetic=True)
+        with open(os.path.join(out, P.PREP_MANIFEST_FILE), "rb") as handle:
+            actual = hashlib.sha256(handle.read()).hexdigest()
+        check(written["manifest_sha256_freeze_externally"] == actual,
+              "the reported manifest digest is the file's own digest")
+        verdict = P.verify_published_bundle(
+            out, expected_manifest_sha256=actual)
+        check(verdict["acceptance_eligible"] is True,
+              "so a normal synthetic run passes its own consumer check")
+
+
+def test_a_write_that_makes_no_progress_fails_instead_of_spinning():
+    real = os.write
+    calls = []
+
+    def stalled(fd, data):
+        calls.append(len(data))
+        return 0
+
+    with tempfile.TemporaryDirectory() as tmp:
+        os.write = stalled
+        try:
+            P._write_new_file(os.path.join(tmp, "stalled.bin"), b"payload")
+            raise AssertionError("a zero-length write was retried forever")
+        except P.PrepError as error:
+            check("made no progress" in str(error),
+                  "a write of zero bytes is a named failure, not a spin")
+            check("truncated" in str(error),
+                  "and it says the file as it stands is incomplete")
+        finally:
+            os.write = real
+        check(len(calls) == 1,
+              "the loop stopped on the first stalled write, not the hundredth")
+
+    # Partial writes are still retried; only *no* progress is fatal.
+    chunks = []
+
+    def stingy(fd, data):
+        chunks.append(len(data))
+        return real(fd, data[:2])
+
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, "partial.bin")
+        body = b"0123456789"
+        os.write = stingy
+        try:
+            P._write_new_file(path, body)
+        finally:
+            os.write = real
+        with open(path, "rb") as handle:
+            check(handle.read() == body, "a short write is retried to the end")
+        check(len(chunks) == 5, "in two-byte steps, as the stub forced")
+
+
+def test_the_verifier_reads_json_types_and_not_truthiness():
+    """`bool("false")` is True, so a denial would have read as an assertion.
+
+    Every field below is a contract flag written as a real JSON boolean. A
+    value of another type means the file was not written by this code, and
+    coercing it is how a bundle that says `"false"` gets treated as saying
+    yes — the more alarming the value looks, the more certainly it passes.
+    """
+    def rewrite(path, mutate):
+        with open(path, encoding="utf-8") as handle:
+            value = json.load(handle)
+        mutate(value)
+        os.remove(path)
+        with open(path, "w", encoding="utf-8") as handle:
+            json.dump(value, handle, indent=1, sort_keys=True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+
+        def fresh(name):
+            out = os.path.join(tmp, name)
+            written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                     combined, ["x"], synthetic=True)
+            return out, written
+
+        # ---- committed ---------------------------------------------------
+        for label, mutate in (
+                ("false", lambda v: v.update(committed=False)),
+                ("missing", lambda v: v.pop("committed", None)),
+                ("null", lambda v: v.update(committed=None)),
+                ("the string 'true'", lambda v: v.update(committed="true")),
+                ("the number 1", lambda v: v.update(committed=1))):
+            out, written = fresh(f"committed-{abs(hash(label)) % 10000}")
+            rewrite(os.path.join(out, P.COMMIT_MARKER), mutate)
+            # Supplied with the *correct* anchor, which is what made this
+            # slip through before: a matching manifest cannot vouch for a
+            # marker that does not claim to be finished.
+            verdict = P.verify_published_bundle(
+                out, expected_manifest_sha256=written[
+                    "manifest_sha256_freeze_externally"])
+            check(verdict["ok"] is False,
+                  f"committed {label} is refused")
+            check(verdict["acceptance_eligible"] is False,
+                  f"committed {label} is never acceptance-eligible, even with "
+                  f"a correct manifest anchor")
+            check(any("committed is" in p for p in verdict["problems"]),
+                  f"committed {label} is named in the problems")
+
+        # ---- synthetic_fixture and ingestable ----------------------------
+        bad_values = {"the string 'false'": "false",
+                      "the string 'true'": "true",
+                      "the number 0": 0, "the number 1": 1,
+                      "null": None}
+        for index, (label, value) in enumerate(bad_values.items()):
+            for field in ("synthetic_fixture", "ingestable"):
+                out, _ = fresh(f"flag-{field}-{index}")
+                for name in (P.COMMIT_MARKER, P.PREP_MANIFEST_FILE):
+                    rewrite(os.path.join(out, name),
+                            lambda v, f=field, x=value: v.update({f: x}))
+                verdict = P.verify_published_bundle(out)
+                check(verdict["structure_ok"] is False,
+                      f"{field} as {label} is refused")
+                check(verdict["acceptance_eligible"] is False,
+                      f"{field} as {label} is not acceptance-eligible")
+                check(any("not a JSON boolean" in p
+                          for p in verdict["problems"]),
+                      f"{field} as {label} is reported as a type problem")
+
+            for field in ("synthetic_fixture", "ingestable"):
+                out, _ = fresh(f"missing-{field}-{index}")
+                rewrite(os.path.join(out, P.COMMIT_MARKER),
+                        lambda v, f=field: v.pop(f, None))
+                verdict = P.verify_published_bundle(out)
+                check(verdict["structure_ok"] is False,
+                      f"a missing {field} is refused")
+                check(any(f"{field} is missing" in p
+                          for p in verdict["problems"]),
+                      f"and a missing {field} is named as missing")
+
+        # ---- timestamp ---------------------------------------------------
+        for label, value in (("null", None), ("a number", 20260812),
+                             ("a list", ["T"])):
+            out, _ = fresh(f"stamp-{abs(hash(label)) % 10000}")
+            rewrite(os.path.join(out, P.COMMIT_MARKER),
+                    lambda v, x=value: v.update(timestamp=x))
+            verdict = P.verify_published_bundle(out)
+            check(verdict["structure_ok"] is False,
+                  f"a timestamp that is {label} is refused")
+            check(any("not the contracted string" in p
+                      for p in verdict["problems"]),
+                  f"a timestamp that is {label} is reported as a type problem")
+
+        out, _ = fresh("stamp-mismatch")
+        rewrite(os.path.join(out, P.COMMIT_MARKER),
+                lambda v: v.update(timestamp="a-different-moment"))
+        verdict = P.verify_published_bundle(out)
+        check(verdict["structure_ok"] is False,
+              "two records stamped at different moments are refused")
+        check(any("timestamp disagrees" in p for p in verdict["problems"]),
+              "and the disagreement is named")
+
+        # ---- none of this raises -----------------------------------------
+        out, _ = fresh("everything-wrong")
+        for name in (P.COMMIT_MARKER, P.PREP_MANIFEST_FILE):
+            rewrite(os.path.join(out, name),
+                    lambda v: v.update(synthetic_fixture="false",
+                                       ingestable=1, timestamp=None))
+        rewrite(os.path.join(out, P.COMMIT_MARKER),
+                lambda v: v.update(committed="yes"))
+        verdict = P.verify_published_bundle(out)     # must not raise
+        check(verdict["structure_ok"] is False,
+              "a record wrong in every field is still a verdict")
+        check(len(verdict["problems"]) >= 4,
+              f"with each violation listed: {len(verdict['problems'])}")
+        check(verdict["acceptance_eligible"] is False,
+              "and never acceptance-eligible")
 
 
 def declared_tests():
