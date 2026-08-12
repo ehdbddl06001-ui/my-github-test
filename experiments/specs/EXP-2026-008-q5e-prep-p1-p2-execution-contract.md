@@ -356,14 +356,36 @@ returned as `ok: false` with a problem list.  It never raises: a parse error
 escaping to the caller would turn the thing this verifier exists to detect into
 a crash.
 
-**Structure is not acceptance.**  `manifest.json` is outside the payload fold,
-so nothing inside the bundle can vouch for it.  The result therefore reports
-`structure_ok` and `acceptance_eligible` separately: a structurally valid
-bundle whose manifest was never anchored against the externally frozen digest
-is **not** an acceptance pass, and the returned note says so in words.  The
-run's own call supplies the digest it has just computed, which is a
-self-consistency check; the external anchor is the saved notebook output, and a
-reviewer supplies that value.
+**Structure is not acceptance, and a digest is not provenance.**
+`manifest.json` is outside the payload fold, so nothing inside the bundle can
+vouch for it.  The caller therefore supplies both the digest **and where it
+came from**, as `manifest_anchor_source`, drawn from a fixed enum:
+
+| source | meaning | external? |
+|---|---|---|
+| `same_run_self_check` | the value this run just computed | no |
+| `saved_notebook_output` | the saved output of the report cell | **yes** |
+| `registered_record` | the value in this Decision log / registration | **yes** |
+| `none` | no digest supplied | no |
+
+*Matching* and *being anchored* are different facts and are reported
+separately, as `manifest_digest_matches_expected` and
+`manifest_anchored_externally`.  A run comparing the manifest against the
+digest it computed seconds earlier has confirmed that its own two lines of code
+agree — worth doing, and not evidence that the file has not been edited since,
+because there is no "since" yet.  Only an external source can make a bundle
+`acceptance_eligible`.
+
+An unrecognised, empty or missing source is **refused**, not quietly treated as
+external; naming a source without supplying a digest is refused too.  Passing a
+string is not provenance.
+
+Accordingly, a run's own immediate self-check returns `structure_ok: true`,
+`manifest_digest_matches_expected: true`,
+`manifest_anchor_source: same_run_self_check`,
+`manifest_anchored_externally: false` and `acceptance_eligible: false` — and
+its printed lines say the same thing.  A machine verdict that contradicts its
+own prose is worse than either alone.
 
 **Nothing is deleted, ever** — not a pre-existing path, and not the writer's
 own directory.  A failed run leaves its partial, uncommitted directory exactly
@@ -434,9 +456,12 @@ below is present and correct in the bundle.
 - `manifest.payload_files` equal to the fold target actually used
 - payload fold recomputes to the recorded `prep_payload_sha256`
 - the manifest does not contain its own digest, and neither does the marker
-- `verify_published_bundle()` returns `acceptance_eligible: true` with the
-  externally frozen manifest digest supplied.  `structure_ok` alone is not
-  sufficient and is not accepted as a result pass.
+- `verify_published_bundle()` returns `acceptance_eligible: true` when given
+  the frozen manifest digest **and** an external
+  `manifest_anchor_source` (`saved_notebook_output` or `registered_record`).
+  `structure_ok` alone is not sufficient, and neither is a digest whose origin
+  is the run itself — the run's own self-check is expected to report
+  `acceptance_eligible: false`.
 - the manifest's SHA-256 present in the notebook output or ingest log as the
   external freeze record
 - `synthetic_fixture: false` and `ingestable: true` for a production run
@@ -464,9 +489,10 @@ record):
   `blocked_by`
 - the full 64-hex `prep_payload_sha256` and `manifest_sha256_freeze_externally`
 - the commit and consumer-validation result: `COMMITTED.json` present,
-  `structure_ok`, the recomputed payload fold, whether the manifest was
-  anchored externally, `acceptance_eligible` with its stated reason, and the
-  directory path if the run did not commit
+  `structure_ok`, the recomputed payload fold,
+  `manifest_digest_matches_expected`, `manifest_anchor_source`,
+  `manifest_anchored_externally`, `acceptance_eligible` with its stated
+  reason, and the directory path if the run did not commit
 - the next action
 
 # Order
@@ -644,6 +670,33 @@ are now checked by identity and by type: `committed is True`,
 negation of the former, `timestamp` a string and equal across both records.
 Violations are problems, not exceptions. Missing, `null`, `0`, `1`, `"true"`
 and `"false"` are all covered by fixtures.
+
+## 2026-08-12 — a digest handed over is not a digest held elsewhere
+
+Codex's final review found the machine verdict contradicting the code's own
+prose, and it was right. `execute_prep()` passed `verify_published_bundle()`
+the digest `write_bundle()` had returned seconds earlier, and the verifier —
+seeing *a* digest — reported `manifest_anchored_externally: true` and
+`acceptance_eligible: true`, while the very next line printed that the saved
+notebook output was still needed. Whichever a reader believed, they were
+misled.
+
+The mistake was treating the presence of a digest as provenance. Matching a
+value the run computed itself confirms that its own two lines of code agree; it
+is not evidence the file has not been edited since, because there is no "since"
+yet. So the two facts are now separate — `manifest_digest_matches_expected` and
+`manifest_anchored_externally` — and the caller must declare where its value
+came from, as one of `same_run_self_check`, `saved_notebook_output`,
+`registered_record` or `none`. Only the middle two are external, and only they
+can carry `acceptance_eligible`. An unrecognised, empty or missing source is
+refused rather than assumed external, and naming a source without a value is
+refused too.
+
+The run's own check now reports `acceptance_eligible: false` with
+`manifest_anchor_source: same_run_self_check`, which is exactly what its
+printed lines say. A regression test asserts the returned dict and the emitted
+words agree, because the failure here was not a wrong flag but a disagreement
+between two things the same function said.
 
 Related, and worth stating rather than leaving implicit: structural validity is
 now reported separately from `acceptance_eligible`. `manifest.json` sits

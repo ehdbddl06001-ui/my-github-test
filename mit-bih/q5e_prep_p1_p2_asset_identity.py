@@ -158,6 +158,34 @@ PREP_MANIFEST_FILE = "manifest.json"
 #: fold, so folding it in would be circular.
 COMMIT_MARKER = "COMMITTED.json"
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Where a manifest digest came from
+#
+# `manifest.json` is outside the payload fold, so the only thing that can vouch
+# for it is a digest held somewhere else.  *Somewhere else* is the whole point:
+# a run comparing the manifest against the digest it computed itself, seconds
+# earlier, has checked that its own two lines of code agree — which is worth
+# doing, and is not evidence that the file has not been edited since.  So a
+# caller does not merely hand over a digest string, it says where the string
+# came from, and only a genuinely external origin can support acceptance.
+# ─────────────────────────────────────────────────────────────────────────────
+#: The run checking its own freshly computed value.  Catches a broken write;
+#: proves nothing about later editing, because there is no "later" yet.
+ANCHOR_SAME_RUN = "same_run_self_check"
+#: The saved output of the notebook's report cell — the primary freeze record.
+ANCHOR_SAVED_NOTEBOOK = "saved_notebook_output"
+#: The value written into the execution contract's Decision log / registration.
+ANCHOR_REGISTERED_RECORD = "registered_record"
+#: No digest was supplied at all.
+ANCHOR_NONE = "none"
+MANIFEST_ANCHOR_SOURCES: Tuple[str, ...] = (
+    ANCHOR_SAME_RUN, ANCHOR_SAVED_NOTEBOOK, ANCHOR_REGISTERED_RECORD,
+    ANCHOR_NONE)
+#: The two origins that are external to the run being verified.  Only these
+#: can make a bundle acceptance-eligible.
+EXTERNAL_MANIFEST_ANCHORS: Tuple[str, ...] = (
+    ANCHOR_SAVED_NOTEBOOK, ANCHOR_REGISTERED_RECORD)
+
 
 def payload_files(synthetic: bool) -> Tuple[str, ...]:
     """The exact fold target for this kind of run.
@@ -1686,7 +1714,8 @@ def _load_json(path: str, label: str) -> Tuple[object, Optional[str]]:
 
 
 def verify_published_bundle(directory: str,
-                            expected_manifest_sha256: Optional[str] = None
+                            expected_manifest_sha256: Optional[str] = None,
+                            manifest_anchor_source: Optional[str] = None
                             ) -> Dict[str, object]:
     """The consumer's contract: is this directory a committed PREP bundle?
 
@@ -1708,37 +1737,88 @@ def verify_published_bundle(directory: str,
     `manifest.json` is outside the payload fold, so the fold cannot detect an
     edited manifest, and its digest is deliberately absent from the bundle — a
     digest stored inside the artifact it describes is rewritten by whoever
-    edits that artifact.  The anchor is external: pass the frozen value from
-    the notebook output or the registration record as `expected_manifest_sha256`.
-    Structural validity and **acceptance eligibility** are reported separately,
-    so a bundle whose manifest was never anchored is never promoted to an
-    acceptance pass.
+    edits that artifact.  So it is anchored from outside, and the caller must
+    say **where the anchor came from**: `manifest_anchor_source` is one of
+    :data:`MANIFEST_ANCHOR_SOURCES`, not free text and not optional once a
+    digest is supplied.
+
+    That distinction is the whole point.  *Matching a digest* and *being
+    anchored* are different facts, reported separately as
+    `manifest_digest_matches_expected` and `manifest_anchored_externally`: a
+    run comparing the manifest against the value it computed itself moments
+    earlier has confirmed its own two lines of code agree, which is worth
+    doing and is not evidence that nothing has been edited since — there is no
+    "since" yet.  Only a digest from the saved notebook output or the
+    registration record is external, and only that can carry
+    `acceptance_eligible`.  Passing a string is not provenance.
     """
     problems: List[str] = []
 
+    source = manifest_anchor_source
+    if expected_manifest_sha256 is None:
+        # No digest: the only honest source is "none".  A caller naming an
+        # origin without a value has described evidence it did not bring.
+        if source not in (None, ANCHOR_NONE):
+            problems.append(
+                f"manifest_anchor_source is {source!r} but no "
+                f"expected_manifest_sha256 was supplied; an anchor origin "
+                f"without a value is not an anchor")
+        source = ANCHOR_NONE
+    elif source is None or source == "":
+        problems.append(
+            "a manifest digest was supplied without a manifest_anchor_source; "
+            "where a digest came from is what decides whether it anchors "
+            f"anything, so it must be one of {list(MANIFEST_ANCHOR_SOURCES)}")
+        source = None
+    elif source not in MANIFEST_ANCHOR_SOURCES:
+        problems.append(
+            f"manifest_anchor_source {source!r} is not one of "
+            f"{list(MANIFEST_ANCHOR_SOURCES)}; an unrecognised origin is "
+            f"refused rather than treated as external")
+        source = None
+    elif source == ANCHOR_NONE:
+        problems.append(
+            f"manifest_anchor_source is {ANCHOR_NONE!r} but a digest was "
+            f"supplied; say where it came from or do not pass it")
+        source = None
+
     def verdict(**extra) -> Dict[str, object]:
         structure_ok = not problems
-        anchored = bool(expected_manifest_sha256) and structure_ok
+        matches = extra.get("manifest_digest_matches_expected")
+        external = bool(source in EXTERNAL_MANIFEST_ANCHORS
+                        and matches is True and structure_ok)
+        if structure_ok and external:
+            note = (f"structurally valid and the manifest matches a digest "
+                    f"held outside this bundle ({source})")
+        elif structure_ok and source == ANCHOR_SAME_RUN:
+            note = ("structurally valid, and the manifest matches the digest "
+                    "this same run computed — a self-check, not an external "
+                    "anchor.  Acceptance needs the digest from the saved "
+                    "notebook output or the registration record, so this is "
+                    "NOT an acceptance pass")
+        elif structure_ok:
+            note = ("structurally valid, but manifest.json is outside the "
+                    "payload fold and no external digest anchors it, so it is "
+                    "unchecked and this is NOT an acceptance pass")
+        else:
+            note = "not structurally valid; acceptance is not in question"
         out: Dict[str, object] = {
             "directory": directory,
             "problems": problems,
             # Structural validity: is this a complete, self-consistent bundle?
             "ok": structure_ok,
             "structure_ok": structure_ok,
-            "manifest_anchored_externally": anchored,
+            # Where the caller says the comparison value came from, and
+            # whether that origin is outside the run being verified.
+            "manifest_anchor_source": source,
+            "manifest_anchored_externally": external,
             # Acceptance is a stricter question than structure, and an
             # unanchored manifest can never answer it: the one file the fold
             # does not cover would be unchecked.
-            "acceptance_eligible": structure_ok and anchored,
-            "acceptance_note": (
-                "structurally valid and the manifest matches the externally "
-                "frozen digest" if structure_ok and anchored else
-                "structurally valid, but no external manifest digest was "
-                "supplied: manifest.json is outside the payload fold, so it "
-                "is unchecked and this is NOT an acceptance pass"
-                if structure_ok else
-                "not structurally valid; acceptance is not in question"),
+            "acceptance_eligible": structure_ok and external,
+            "acceptance_note": note,
         }
+        out.setdefault("manifest_digest_matches_expected", None)
         out.update(extra)
         return out
 
@@ -1915,15 +1995,20 @@ def verify_published_bundle(directory: str,
         problems.append(
             f"{PREP_MANIFEST_FILE} must not be inside the fold it records")
 
-    if (expected_manifest_sha256 and manifest_digest
-            and manifest_digest != expected_manifest_sha256):
-        problems.append(
-            f"manifest digest {manifest_digest} != the externally frozen "
-            f"{expected_manifest_sha256}")
+    matches: Optional[bool] = None
+    if expected_manifest_sha256 is not None:
+        matches = (manifest_digest is not None
+                   and manifest_digest == expected_manifest_sha256)
+        if not matches:
+            problems.append(
+                f"manifest digest {manifest_digest} != the {source or 'given'}"
+                f" digest {expected_manifest_sha256}")
 
     return verdict(committed=marker.get("committed") is True,
                    prep_payload_sha256=fold,
                    manifest_sha256=manifest_digest,
+                   expected_manifest_sha256=expected_manifest_sha256,
+                   manifest_digest_matches_expected=matches,
                    synthetic_fixture=synthetic,
                    ingestable=flags[COMMIT_MARKER]["ingestable"])
 
@@ -2020,21 +2105,32 @@ def execute_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     # cannot verify its own output must not report a success: publication is
     # no longer an atomic rename, so "the directory is there" is not evidence
     # that it is complete.
+    # The digest handed in is the one this run just computed, so the origin is
+    # declared as exactly that.  The verifier then reports
+    # `manifest_anchored_externally: False` and `acceptance_eligible: False`,
+    # which is what the emitted lines below say too — an earlier version
+    # returned True for both while printing that the external anchor was still
+    # needed, and a machine verdict that contradicts its own prose is worse
+    # than either alone.
     verified = verify_published_bundle(
         written["directory"],
-        expected_manifest_sha256=written["manifest_sha256_freeze_externally"])
+        expected_manifest_sha256=written["manifest_sha256_freeze_externally"],
+        manifest_anchor_source=ANCHOR_SAME_RUN)
     if not verified["ok"]:
         raise PrepError(
             f"the bundle at {written['directory']!r} does not pass the "
             f"consumer contract: {verified['problems']}.  It is left in place "
             f"for inspection and nothing was deleted.")
-    # The digest handed in above is the one this run just computed, so what
-    # was checked here is self-consistency.  The *external* anchor is the
-    # saved notebook output; a later reader supplies that frozen value.
     emit(f"bundle committed, structure verified: "
          f"{verified['prep_payload_sha256']}")
-    emit("acceptance still needs the externally frozen manifest digest from "
-         "the saved report cell.")
+    emit(f"manifest digest self-check: "
+         f"{verified['manifest_digest_matches_expected']} "
+         f"(source={verified['manifest_anchor_source']}, "
+         f"externally anchored={verified['manifest_anchored_externally']})")
+    emit(f"acceptance_eligible={verified['acceptance_eligible']}: it needs the "
+         f"manifest digest from the saved report cell "
+         f"({ANCHOR_SAVED_NOTEBOOK}) or the registration record "
+         f"({ANCHOR_REGISTERED_RECORD}).")
     return {"p1": p1, "p2": p2, "combined": combined, "bundle": written,
             "verified": verified}
 
@@ -2043,7 +2139,10 @@ def module_capabilities() -> Tuple[str, ...]:
     """Names a notebook asserts before use, so a stale clone cannot masquerade."""
     return ("run_prep", "execute_prep", "run_p1", "run_p2", "combine",
             "registration_candidates", "write_bundle",
-            "verify_published_bundle", "COMMIT_MARKER", "fold_file_triples",
+            "verify_published_bundle", "COMMIT_MARKER",
+            "MANIFEST_ANCHOR_SOURCES", "EXTERNAL_MANIFEST_ANCHORS",
+            "ANCHOR_SAME_RUN", "ANCHOR_SAVED_NOTEBOOK",
+            "ANCHOR_REGISTERED_RECORD", "ANCHOR_NONE", "fold_file_triples",
             "DriveFolderAdapter", "GoogleDriveFolderAdapter",
             "LocalTreeReader", "normalise_child", "assert_no_credentials",
             "authenticate_drive_readonly", "build_drive_adapter",

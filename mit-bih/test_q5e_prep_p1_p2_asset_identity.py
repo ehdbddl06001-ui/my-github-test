@@ -1315,7 +1315,8 @@ def test_g5_only_a_committed_directory_is_a_bundle():
 
         verdict = P.verify_published_bundle(
             out, expected_manifest_sha256=written[
-                "manifest_sha256_freeze_externally"])
+                "manifest_sha256_freeze_externally"],
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(verdict["ok"] is True, "a committed bundle validates")
         check(verdict["committed"] is True, "and is reported as committed")
         check(verdict["prep_payload_sha256"] == written["prep_payload_sha256"],
@@ -1332,17 +1333,19 @@ def test_g5_only_a_committed_directory_is_a_bundle():
         # value is the only thing that can catch an edited manifest. It has to
         # actually be compared, not just carried.
         wrong = P.verify_published_bundle(
-            out, expected_manifest_sha256="f" * 64)
+            out, expected_manifest_sha256="f" * 64,
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(wrong["ok"] is False,
               "a manifest that disagrees with the frozen value is refused")
-        check(any("externally frozen" in p for p in wrong["problems"]),
-              "and the external anchor is what reports it")
+        check(any(P.ANCHOR_SAVED_NOTEBOOK in p for p in wrong["problems"]),
+              "and the problem names which anchor it disagreed with")
         with open(os.path.join(out, P.PREP_MANIFEST_FILE), "a",
                   encoding="utf-8") as handle:
             handle.write("\n")
         edited = P.verify_published_bundle(
             out, expected_manifest_sha256=written[
-                "manifest_sha256_freeze_externally"])
+                "manifest_sha256_freeze_externally"],
+            manifest_anchor_source=P.ANCHOR_REGISTERED_RECORD)
         check(edited["ok"] is False,
               "editing the manifest after the commit fails the anchor")
         check(P.verify_published_bundle(out)["ok"] is True,
@@ -2398,8 +2401,14 @@ def test_a_run_validates_its_own_bundle_before_reporting_success():
               "a successful run carries its own verification result")
         check(result["verified"]["committed"] is True,
               "showing the bundle was committed")
-        check(result["verified"]["manifest_anchored_externally"] is True,
-              "with the manifest anchored against the digest it just froze")
+        check(result["verified"]["manifest_digest_matches_expected"] is True,
+              "the manifest matches the digest the run just computed")
+        check(result["verified"]["manifest_anchor_source"] == P.ANCHOR_SAME_RUN,
+              "declared as exactly that: a same-run self-check")
+        check(result["verified"]["manifest_anchored_externally"] is False,
+              "which is not an external anchor")
+        check(result["verified"]["acceptance_eligible"] is False,
+              "so the run does not promote itself to an acceptance pass")
 
         # If the bundle would not pass the consumer contract, the run must
         # fail rather than hand back a directory nobody will accept.
@@ -2548,7 +2557,8 @@ def test_the_verifier_checks_the_marker_instead_of_trusting_it():
         refold(out, os.path.join(out, P.COMMIT_MARKER))
         verdict = P.verify_published_bundle(
             out, expected_manifest_sha256=written[
-                "manifest_sha256_freeze_externally"])
+                "manifest_sha256_freeze_externally"],
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(verdict["ok"] is False,
               "a rewritten marker fold does not launder an edited payload")
         check(any("manifest.json's" in p for p in verdict["problems"]),
@@ -2686,11 +2696,14 @@ def test_structural_validity_is_not_an_acceptance_pass():
 
         anchored = P.verify_published_bundle(
             out, expected_manifest_sha256=written[
-                "manifest_sha256_freeze_externally"])
+                "manifest_sha256_freeze_externally"],
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(anchored["acceptance_eligible"] is True,
-              "supplying the frozen digest is what makes it eligible")
+              "supplying the frozen digest with its origin makes it eligible")
 
-        wrong = P.verify_published_bundle(out, expected_manifest_sha256="f" * 64)
+        wrong = P.verify_published_bundle(
+            out, expected_manifest_sha256="f" * 64,
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(wrong["ok"] is False and wrong["acceptance_eligible"] is False,
               "and a digest that disagrees fails both")
 
@@ -2698,7 +2711,8 @@ def test_structural_validity_is_not_an_acceptance_pass():
         os.remove(os.path.join(out, P.COMMIT_MARKER))
         gone = P.verify_published_bundle(
             out, expected_manifest_sha256=written[
-                "manifest_sha256_freeze_externally"])
+                "manifest_sha256_freeze_externally"],
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(gone["acceptance_eligible"] is False,
               "an uncommitted directory is not eligible even with the digest")
         check(gone["manifest_anchored_externally"] is False,
@@ -2763,7 +2777,8 @@ def test_written_bytes_are_the_bytes_that_were_handed_in():
         check(written["manifest_sha256_freeze_externally"] == actual,
               "the reported manifest digest is the file's own digest")
         verdict = P.verify_published_bundle(
-            out, expected_manifest_sha256=actual)
+            out, expected_manifest_sha256=actual,
+            manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
         check(verdict["acceptance_eligible"] is True,
               "so a normal synthetic run passes its own consumer check")
 
@@ -2852,7 +2867,8 @@ def test_the_verifier_reads_json_types_and_not_truthiness():
             # marker that does not claim to be finished.
             verdict = P.verify_published_bundle(
                 out, expected_manifest_sha256=written[
-                    "manifest_sha256_freeze_externally"])
+                    "manifest_sha256_freeze_externally"],
+                manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
             check(verdict["ok"] is False,
                   f"committed {label} is refused")
             check(verdict["acceptance_eligible"] is False,
@@ -2929,6 +2945,161 @@ def test_the_verifier_reads_json_types_and_not_truthiness():
               f"with each violation listed: {len(verdict['problems'])}")
         check(verdict["acceptance_eligible"] is False,
               "and never acceptance-eligible")
+
+
+def test_matching_a_digest_and_being_anchored_are_different_facts():
+    """Where a digest came from decides whether it anchors anything.
+
+    A run comparing the manifest against the value it computed itself moments
+    earlier has confirmed that its own two lines of code agree.  That is worth
+    doing and it is not evidence the file has not been edited since — there is
+    no "since" yet.  So the match and the provenance are reported separately,
+    and only an origin outside the run can carry acceptance.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        out = os.path.join(tmp, "run")
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 P.combine(p1, p2), ["x"], synthetic=True)
+        frozen = written["manifest_sha256_freeze_externally"]
+
+        # 1. same-run digest: structure passes, acceptance does not.
+        same = P.verify_published_bundle(
+            out, expected_manifest_sha256=frozen,
+            manifest_anchor_source=P.ANCHOR_SAME_RUN)
+        check(same["structure_ok"] is True, "same-run: the structure is sound")
+        check(same["manifest_digest_matches_expected"] is True,
+              "same-run: the digest does match")
+        check(same["manifest_anchor_source"] == P.ANCHOR_SAME_RUN,
+              "same-run: the origin is reported as the run itself")
+        check(same["manifest_anchored_externally"] is False,
+              "same-run: a value the run computed is not an external anchor")
+        check(same["acceptance_eligible"] is False,
+              "same-run: so it is not acceptance-eligible")
+        check("self-check" in same["acceptance_note"]
+              and "NOT an acceptance pass" in same["acceptance_note"],
+              "same-run: and the note says so, matching the flags")
+
+        # 2 and 3. the two genuinely external origins.
+        for origin in (P.ANCHOR_SAVED_NOTEBOOK, P.ANCHOR_REGISTERED_RECORD):
+            verdict = P.verify_published_bundle(
+                out, expected_manifest_sha256=frozen,
+                manifest_anchor_source=origin)
+            check(verdict["structure_ok"] is True, f"{origin}: structure ok")
+            check(verdict["manifest_digest_matches_expected"] is True,
+                  f"{origin}: the digest matches")
+            check(verdict["manifest_anchored_externally"] is True,
+                  f"{origin}: and the origin is outside this run")
+            check(verdict["acceptance_eligible"] is True,
+                  f"{origin}: so it is acceptance-eligible")
+            check("NOT an acceptance pass" not in verdict["acceptance_note"],
+                  f"{origin}: and the note agrees with the flags")
+
+        # 4. an external anchor that disagrees fails both.
+        for origin in (P.ANCHOR_SAVED_NOTEBOOK, P.ANCHOR_REGISTERED_RECORD):
+            verdict = P.verify_published_bundle(
+                out, expected_manifest_sha256="a" * 64,
+                manifest_anchor_source=origin)
+            check(verdict["manifest_digest_matches_expected"] is False,
+                  f"{origin}: a disagreeing digest is reported as not matching")
+            check(verdict["structure_ok"] is False,
+                  f"{origin}: and fails the structural verdict")
+            check(verdict["manifest_anchored_externally"] is False,
+                  f"{origin}: an anchor that disagrees anchors nothing")
+            check(verdict["acceptance_eligible"] is False,
+                  f"{origin}: so acceptance is refused")
+
+        # 5. an origin that is not in the enum, or missing, or empty.
+        for origin in ("external", "trust me", "", None, P.ANCHOR_NONE, 7):
+            verdict = P.verify_published_bundle(
+                out, expected_manifest_sha256=frozen,
+                manifest_anchor_source=origin)
+            check(verdict["structure_ok"] is False,
+                  f"anchor source {origin!r} is refused")
+            check(verdict["manifest_anchored_externally"] is False,
+                  f"anchor source {origin!r} is not treated as external")
+            check(verdict["acceptance_eligible"] is False,
+                  f"anchor source {origin!r} yields no acceptance")
+            check(verdict["manifest_anchor_source"] is None,
+                  f"anchor source {origin!r} is not echoed back as valid")
+            # A missing origin and an unrecognised one are different mistakes
+            # and get different diagnoses; a caller that forgot the argument
+            # should not be told its value is not in the enum.
+            expected_reason = ("without a manifest_anchor_source"
+                               if origin in (None, "") else
+                               "is not one of" if origin != P.ANCHOR_NONE
+                               else "but a digest was supplied")
+            check(any(expected_reason in p for p in verdict["problems"]),
+                  f"anchor source {origin!r} is diagnosed as "
+                  f"{expected_reason!r}")
+
+        # Naming an origin without bringing a value is the mirror image.
+        verdict = P.verify_published_bundle(
+            out, manifest_anchor_source=P.ANCHOR_SAVED_NOTEBOOK)
+        check(verdict["structure_ok"] is False,
+              "an origin with no digest describes evidence it did not bring")
+        check(verdict["acceptance_eligible"] is False, "and is not eligible")
+
+        # No digest at all is honest, and stays honest.
+        bare = P.verify_published_bundle(out)
+        check(bare["structure_ok"] is True, "no digest: the structure is sound")
+        check(bare["manifest_anchor_source"] == P.ANCHOR_NONE,
+              "no digest: the origin is reported as none")
+        check(bare["manifest_digest_matches_expected"] is None,
+              "no digest: there is no match to report, not a false one")
+        check(bare["acceptance_eligible"] is False,
+              "no digest: and no acceptance")
+
+        check(set(P.EXTERNAL_MANIFEST_ANCHORS)
+              == {P.ANCHOR_SAVED_NOTEBOOK, P.ANCHOR_REGISTERED_RECORD},
+              "exactly two origins count as external")
+        check(P.ANCHOR_SAME_RUN not in P.EXTERNAL_MANIFEST_ANCHORS,
+              "and the run's own value is not one of them")
+
+
+def test_the_runs_verdict_and_its_own_words_do_not_contradict():
+    """A machine verdict that disagrees with its prose is worse than either.
+
+    The previous version returned `manifest_anchored_externally: True` and
+    `acceptance_eligible: True` while printing that the saved notebook output
+    was still needed.  Whichever a reader believed, they were misled.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
+        emitted = []
+        with _PatchedRegistration(tree):
+            result = P.execute_prep(
+                tree, P.SOURCE_BUNDLE_FOLDER_ID, os.path.join(tmp, "out"),
+                _adapter(), approval=TOKEN, timestamp="T",
+                emit=emitted.append, synthetic=True)
+
+    verified = result["verified"]
+    check(verified["structure_ok"] is True, "the run's own check passes")
+    check(verified["manifest_digest_matches_expected"] is True,
+          "its manifest matches the digest it computed")
+    check(verified["manifest_anchor_source"] == P.ANCHOR_SAME_RUN,
+          "declared as a same-run self-check")
+    check(verified["manifest_anchored_externally"] is False,
+          "not as an external anchor")
+    check(verified["acceptance_eligible"] is False,
+          "and not as an acceptance pass")
+
+    words = "\n".join(emitted)
+    check("acceptance_eligible=False" in words,
+          "the printed line states the same verdict the dict carries")
+    check(P.ANCHOR_SAME_RUN in words,
+          "and names the origin it actually used")
+    check(P.ANCHOR_SAVED_NOTEBOOK in words
+          and P.ANCHOR_REGISTERED_RECORD in words,
+          "and says which origins would be needed instead")
+    check("externally anchored=False" in words,
+          "with the external-anchor flag printed as it is")
+    # The contradiction that was there before: prose asking for a further
+    # anchor while the flags claimed one had been supplied.
+    check(not (verified["acceptance_eligible"] is True
+               and "still needs" in words),
+          "the run never asks for an anchor it has already claimed to have")
 
 
 def declared_tests():
