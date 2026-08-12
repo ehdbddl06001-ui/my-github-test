@@ -347,6 +347,50 @@ window.MEDKOS_ANATOMY = {
  ],
  "questions": [
   {
+   "id": "anatomy-2026-0015",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "gluteal-region",
+   "examPhase": "tagging-1",
+   "stem": "큰볼기근을 젖힌 볼기 부위 해부 사진에서, 포셉이 잡고 있으며 번호핀 ①이 가리키는 혈관의 이름을 말하시오.",
+   "choices": null,
+   "answer": "위볼기동맥 (superior gluteal artery)",
+   "explanation": "위볼기동맥은 속엉덩동맥 뒤갈래의 가지로, 큰궁둥구멍 윗부분(궁둥구멍근 위)으로 골반을 빠져나와 볼기 부위에 분포한다. 원본 영상 라벨에서 답이 실측 확인됨. 이미지는 학생 필기(빨간 별표·지시선·'큰볼기근'·YYY)를 주변 배경 기반 inpainting으로 제거하고 영상 라벨만 자연 패치로 가린 복원본이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 큰볼기근 (업로드 스캔 pf2 p1)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0016",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "등 얕은층 해부 사진에서 ▲ 포인터가 가리키며 번호핀 ①이 지시하는, 뒤통수뼈융기·목덜미인대·C7~T12 가시돌기에서 일어나는 얕은층 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "등세모근 (trapezius muscle)",
+   "explanation": "등세모근은 등 얕은층의 가장 표면 근육으로 위·중간·아래섬유로 나뉘며 빗장뼈 가쪽 1/3·봉우리(acromion)·어깨뼈가시에 닿는다. 원본 영상 라벨에서 답이 실측 확인됨. 이미지는 학생 필기(위/중간/아래, 목덜미인대, C1-T12, acromion, 세로 측정선, 파란 형광 윤곽 트레이스, 빨간 지시선, YYY)를 색 검출 + 주변 기반 inpainting으로 제거하고, 정답을 노출하는 영상 타이틀·라벨은 자연 패치로 가린 복원본이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 등세모근 (업로드 스캔 pf1 p1)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",
