@@ -3279,14 +3279,23 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
         "https://github.com/ehdbddl06001-ui/my-github-test.git",
         "file:///nonexistent-so-nothing-is-fetched")
 
-    def discover(cwd, clone_to):
+    def discover(cwd, sandbox):
+        """Run the cell's discovery with its absolute candidates sandboxed.
+
+        The cell checks `/content/repo` and friends before it walks the cwd,
+        which is right in Colab and makes a test that leaves them alone answer
+        differently depending on whether the machine happens to have a clone
+        there.  An earlier version of this test passed here and failed in
+        Colab for exactly that reason.  Re-pointing every `/content...`
+        literal — the candidates and the clone target alike — into a sandbox
+        makes the outcome depend only on the layout under test.
+        """
         namespace = {}
         previous = os.getcwd()
+        sandboxed = head.replace("'/content", f"'{sandbox}/content")
         try:
             os.chdir(cwd)
-            exec(compile(head.replace("CLONE_TO = '/content/repo'",
-                                      f"CLONE_TO = {clone_to!r}"),
-                         "environment_cell", "exec"), namespace)
+            exec(compile(sandboxed, "environment_cell", "exec"), namespace)
             return namespace.get("FOUND")
         except RuntimeError as error:
             return f"REFUSED: {error}"
@@ -3294,27 +3303,26 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
             os.chdir(previous)
 
     with tempfile.TemporaryDirectory() as tmp:
-        sink = os.path.join(tmp, "never-created")
-        check(discover(os.path.join(ROOT, "notebooks"), sink) == ROOT,
+        check(discover(os.path.join(ROOT, "notebooks"), tmp) == ROOT,
               "a cwd inside the repository finds the repository")
-        check(discover(ROOT, sink) == ROOT,
+        check(discover(ROOT, tmp) == ROOT,
               "and so does the repository root itself")
-        check(not os.path.exists(sink),
+        check(not os.path.exists(os.path.join(tmp, "content")),
               "neither of those reached the clone fallback at all")
 
     with tempfile.TemporaryDirectory() as tmp:
-        holder = os.path.join(tmp, "content")
+        holder = os.path.join(tmp, "here")
         os.makedirs(holder)
-        os.symlink(ROOT, os.path.join(holder, "my-github-test"))
-        check(discover(holder, os.path.join(tmp, "sink"))
-              == os.path.join(holder, "my-github-test"),
+        os.symlink(ROOT, os.path.join(holder, "some-other-name"))
+        check(discover(holder, tmp)
+              == os.path.join(holder, "some-other-name"),
               "a clone one level below the cwd is found by name-independent "
               "content, not by a hardcoded directory name")
 
     with tempfile.TemporaryDirectory() as tmp:
-        empty = os.path.join(tmp, "content")
+        empty = os.path.join(tmp, "here")
         os.makedirs(empty)
-        verdict = discover(empty, os.path.join(tmp, "sink"))
+        verdict = discover(empty, tmp)
         check(str(verdict).startswith("REFUSED"),
               f"with nothing to find, it refuses instead of guessing: "
               f"{verdict}")
@@ -3322,6 +3330,62 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
               "and the refusal tells the user exactly how to fix it")
         check("토큰을" in str(verdict),
               "while warning against pasting a token into a saved notebook")
+
+
+def test_the_fixture_cell_cannot_turn_a_failure_into_silence():
+    """The last cheap gate before a real run must not swallow its own result.
+
+    The cell printed `result.stdout` only. The suite writes its summary to
+    stdout and its AssertionError to stderr, so a failing suite printed
+    nothing and the cell reported "(테스트 출력 없음)" — which reads as "there
+    was no output", not "everything you were about to rely on is broken". It
+    then carried on to the cell that opens registered assets.
+    """
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    fixture = [c for c in cells
+               if "test_q5e_prep_p1_p2_asset_identity.py" in "".join(c["source"])]
+    check(len(fixture) == 1, "one cell runs the synthetic fixture suite")
+    body = "".join(fixture[0]["source"])
+
+    import ast
+    tree = ast.parse(body)
+
+    # The result has to be bound, not consumed inline: you cannot inspect a
+    # return code you never kept.
+    runs = [n for n in ast.walk(tree)
+            if isinstance(n, ast.Call)
+            and isinstance(n.func, ast.Attribute)
+            and n.func.attr == "run"]
+    check(len(runs) == 1, "it calls subprocess.run once")
+    inline = [n for n in ast.walk(tree)
+              if isinstance(n, ast.Attribute)
+              and n.attr in ("stdout", "stderr")
+              and isinstance(n.value, ast.Call)]
+    check(not inline,
+          "and does not read .stdout straight off the call, discarding the rest")
+
+    attrs = {n.attr for n in ast.walk(tree) if isinstance(n, ast.Attribute)}
+    check("returncode" in attrs, "the exit status is inspected")
+    check("stderr" in attrs, "and stderr is printed, not dropped")
+
+    raises = [n for n in ast.walk(tree) if isinstance(n, ast.Raise)]
+    check(raises, "a failing suite stops the notebook rather than continuing")
+    check("셀 9" in body,
+          "and says which cell must not be pressed")
+
+    # An `or` fallback labelling empty stdout is fine; what is not fine is
+    # that fallback wording implying nothing happened.  Checked on the
+    # expression itself, so the comment explaining the old bug may quote it.
+    fallbacks = [n.values[-1].value for n in ast.walk(tree)
+                 if isinstance(n, ast.BoolOp) and isinstance(n.op, ast.Or)
+                 and isinstance(n.values[-1], ast.Constant)
+                 and isinstance(n.values[-1].value, str)]
+    for text in fallbacks:
+        check("출력 없음" not in text,
+              f"an empty stdout is not labelled as absence: {text!r}")
+    check(fallbacks, "and empty stdout is still labelled as something")
 
 
 def declared_tests():
