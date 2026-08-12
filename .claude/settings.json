@@ -14,7 +14,27 @@
       "Bash(python pipelines/merge_state.py:*)",
       "Bash(python3 pipelines/merge_state.py:*)",
       "Bash(python -c:*)",
-      "Bash(python3 -c:*)"
+      "Bash(python3 -c:*)",
+      "Bash(python pipelines/anatomy_schedule.py:*)",
+      "Bash(python3 pipelines/anatomy_schedule.py:*)",
+      "Bash(python pipelines/anatomy_inventory.py:*)",
+      "Bash(python3 pipelines/anatomy_inventory.py:*)",
+      "Bash(python pipelines/anatomy_ingest.py:*)",
+      "Bash(python3 pipelines/anatomy_ingest.py:*)",
+      "Bash(python pipelines/anatomy_extract.py:*)",
+      "Bash(python3 pipelines/anatomy_extract.py:*)",
+      "Bash(python pipelines/anatomy_classify.py:*)",
+      "Bash(python3 pipelines/anatomy_classify.py:*)",
+      "Bash(python pipelines/anatomy_answers.py:*)",
+      "Bash(python3 pipelines/anatomy_answers.py:*)",
+      "Bash(python pipelines/anatomy_mask.py:*)",
+      "Bash(python3 pipelines/anatomy_mask.py:*)",
+      "Bash(python pipelines/anatomy_daily.py:*)",
+      "Bash(python3 pipelines/anatomy_daily.py:*)",
+      "Bash(python pipelines/export_anatomy_web.py:*)",
+      "Bash(python3 pipelines/export_anatomy_web.py:*)",
+      "Bash(python pipelines/test_anatomy.py:*)",
+      "Bash(python3 pipelines/test_anatomy.py:*)"
     ]
   },
   "hooks": {

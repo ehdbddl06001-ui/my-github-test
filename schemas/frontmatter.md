@@ -142,6 +142,48 @@ repo에 박아두는 것이 목적이다. `content/ailab/logs/ailab-YYYY-NNNN.md
 카드의 `next_goal`을 **다음 목표**로 함께 보여준다. → "결과가 쌓이고 다음 목표가 갱신되는" 게
 MedKOS에서 그대로 보인다.
 
+## 해부학(`anatomy`) 계약 — spec: `experiments/specs/anatomy-3q-2026.md`
+
+2026-2학기 임상해부학술기(3Q) 학습 영역. 공통 필수 필드(`id/type/topic/date/confidence`)
+위에 `kind` 별 계약이 얹힌다. 저장 위치: `content/anatomy/{sources,pages,concepts,questions,daily,answers}/`.
+검증은 `pipelines/frontmatter.py::_validate_anatomy`.
+
+| `kind` | 역할 | 추가 필수 |
+|---|---|---|
+| `source_doc` | Drive 원본 1개의 inventory 카드(파일ID·크기·해시·처리상태·누락기록) | `source_file_id` |
+| `source_page` | PDF 한 페이지(binary lane) 또는 섹션(text lane)의 출처·분류·용어 목록 | `source_file_id` + (`source_page` 번호 또는 `extraction: drive-mcp-text`+`section`) |
+| `concept` | 층(layer)/칸(compartment)/분지(branch)/주행(course)/인접관계 학습 카드 | `source_refs` |
+| `question` | 태깅·순서·관계·분지·경로 문항 | `source_refs`, `stem`, `answer`, `answer_separated: true`, `question_style` |
+| `daily_plan` | 그날의 학습 큐(`anatomy_daily.py` 결정론 선택 결과) | — |
+| `answer_list` | 답만 있는 자료(`tagging 2차.pdf`) 파싱 결과 | `source_file_id` |
+
+주요 선택 필드 (분류 축은 §7.3 프롬프트 규격과 동일):
+
+| 필드 | 예시 | 설명 |
+|---|---|---|
+| `region` | `pelvis-perineum` | `back/thorax/upper-limb/lower-limb/head/neck/abdomen/pelvis-perineum/multi` |
+| `subregion` | `axilla` | 세부 부위(자유 슬러그) |
+| `layer` | `deep` | `skin/superficial-fascia/deep-fascia/superficial/intermediate/deep/cavity-visceral` |
+| `compartment` | `anterior-compartment-of-arm` | 칸/공간/삼각 |
+| `structure_classes` | `[artery, nerve]` | bone/joint/ligament/fascia/muscle/artery/vein/nerve/lymphatic/organ/duct/foramen |
+| `relations` | `[branches-from, adjacent-to]` | covers/passes-through/branches-from/adjacent-to/begins-from/ends-at |
+| `exam_phase` | `tagging-2` | `tagging-1`/`tagging-2` (2026 일정표 기준) |
+| `scheduled_dates` | `[2026-10-06]` | 2026 수업일(과거 학기 날짜 금지) |
+| `source_refs` | `[{source_file_id: "...", page: 12}]` | concept/question 출처. text lane은 `page: null` + `section` |
+| `source_hash` | `sha256:...` | 원본 해시(binary lane) |
+| `asset_ref` | `.private/anatomy/...png` | 비공개 자산 경로(공개 금지) |
+| `publishable` | `false` | **명시적 true만 공개** — export가 이 값으로 게이트 |
+| `answer_only_candidate` | `true` | tagging 2차의 번호 항목(과거 답 후보) |
+| `priority` | `high` | 출제 우선순위 |
+| `needs_review` | `true` | 분류/근거 confidence 낮음 → 공개 daily deck 자동 포함 금지 |
+| `ocr_confidence` / `classification_confidence` | `0.97` | 추출·분류 신뢰도 |
+| `question_style` | `branch-tree` | `spotter/layer-order/branch-tree/course-tracing/relation/clinical-application/distinction` |
+| `extraction` | `drive-mcp-text` | text lane 마커(페이지 번호 없음 — 지어내지 않는다) |
+
+anatomy `question` 원칙: 정답·해설은 frontmatter(`answer`/`explanation`)에만 두고
+stem·보기에 누설하지 않는다. 객관식 보기는 같은 부위·같은 구조 종류로 동질 구성.
+출처로 확인되지 않은 사실 생성 금지 — 근거 없으면 `confidence: low` + `needs_review: true`.
+
 ## 문제형(`kmle`/`usmle`) 추가 필수 필드
 
 | 필드 | 예시 | 설명 |

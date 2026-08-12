@@ -50,6 +50,7 @@ AILAB_PROGRESS_FILE = STATE_DIR / "ailab_progress.json"
 TYPE_DIR = {
     "kmle": "kmle", "usmle": "usmle", "basic": "basic", "paper": "papers",
     "disease": "diseases", "drug": "drugs", "ailab": "ailab",
+    "anatomy": "anatomy",
 }
 
 
