@@ -19,3 +19,9 @@ state/.id_cache.json
 
 # fetch_project.py 로 받은 오픈소스 저장소 — GPL 등 copyleft 전염 방지. 받아서 읽기만.
 projects/
+
+# 해부학 원본·비공개 파생물(강의 PDF·페이지 이미지·마스크·QA 시트·텍스트 스냅샷).
+# 공개 repo에 절대 커밋하지 않는다 — spec: experiments/specs/anatomy-3q-2026.md §6.
+.private/
+# Drive listing 스냅샷(세션이 MCP로 채우는 임시 입력)
+state/.anatomy_listing.json
