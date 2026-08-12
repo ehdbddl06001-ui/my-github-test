@@ -650,14 +650,38 @@ def normalise_child(child: Mapping[str, object]) -> Dict[str, object]:
 
 
 def assert_no_credentials(payload: object, where: str = "bundle") -> None:
-    """Refuse to write anything that looks like a secret or a local path."""
-    text = _canonical_json(payload) if not isinstance(payload, str) else payload
-    lowered = text.lower()
-    for key in CREDENTIAL_KEYS:
-        if f'"{key}"' in lowered:
-            raise PrepError(
-                f"refusing to write {where}: it carries a {key!r} field.  "
-                f"Credentials are not evidence and never enter a bundle.")
+    """Refuse to write a bundle file that carries a credential-bearing field.
+
+    Checked on **keys**, walking the structure, rather than by scanning the
+    serialised text.  The text scan could not tell a field from a value, and
+    that is not a hypothetical: the auth audit records `credential_type`, whose
+    value in Colab is the class name `Credentials`, and the scan read that as a
+    `"credentials"` field and refused to write a run that had already completed
+    both gates.  A guard that fires on the word rather than the thing costs a
+    real run and teaches people to route around it.
+
+    What it is for is unchanged — a field named `access_token` or `password`
+    must never reach a bundle, at any depth — and that is now checked exactly,
+    so `credential_type` is fine and `credentials` is not.
+    """
+    banned = {k.lower() for k in CREDENTIAL_KEYS}
+
+    def walk(node: object, path: str) -> None:
+        if isinstance(node, Mapping):
+            for key, value in node.items():
+                name = str(key)
+                where_key = f"{path}.{name}" if path else name
+                if name.lower() in banned:
+                    raise PrepError(
+                        f"refusing to write {where}: it carries a {name!r} "
+                        f"field at {where_key!r}.  Credentials are not "
+                        f"evidence and never enter a bundle.")
+                walk(value, where_key)
+        elif isinstance(node, (list, tuple)):
+            for index, value in enumerate(node):
+                walk(value, f"{path}[{index}]")
+
+    walk(payload, "")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2220,7 +2244,8 @@ def design_card() -> str:
     """A constants card that opens nothing.  Safe to print anywhere."""
     return "\n".join([
         f"{EXPERIMENT_ID} / {SUBSTAGE} - read-only preflight, not a result",
-        f"  spec                 : {SPEC_PATH}",
+        f"  parent spec          : {SPEC_PATH}",
+        f"  execution contract   : {CONTRACT_PATH}",
         f"  scope                : P1 + P2 (P3 is NOT in scope)",
         f"  P1 expected files    : {len(BJ.mitdb_expected_files())}",
         f"  P1 publisher-listed  : {MITDB_PUBLISHER_LISTED_FILES} "

@@ -23,17 +23,30 @@ preflights, P1 and P2.  It is not a scientific design and produces no
 scientific result: nothing here measures anything about ECG data, and no
 outcome of a P1/P2 run may be cited as a Q5-E finding.
 
-The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`), passed
-Codex implementation acceptance on 2026-08-12, and has **still not been
-executed**.  The user granted a separate **read-only execution approval** on
-2026-08-12; the terminal stop in `run_prep()` is now open, and it opens by
-consulting `EXECUTION_APPROVAL_RECORD` rather than by having been deleted.  Its
-position is unchanged: still after the switch, the token and the folder id, and
-still before authentication, the Drive service and every reader.
+The implementation exists (`mit-bih/q5e_prep_p1_p2_asset_identity.py`) and
+passed Codex implementation acceptance on 2026-08-12.  The user granted a
+separate **read-only execution approval** on 2026-08-12; the terminal stop in
+`run_prep()` is now open, and it opens by consulting
+`EXECUTION_APPROVAL_RECORD` rather than by having been deleted.  Its position
+is unchanged: still after the switch, the token and the folder id, and still
+before authentication, the Drive service and every reader.
 
-**No run has happened.**  Enabling execution and executing are different
-things: this contract is not `MEASURED`, `PASS` or `COMPLETE`, and no observed
-value exists.
+**One run has completed (2026-08-12) and its bundle exists.**  P1 passed and
+produced the full MIT-BIH tree aggregate; P2 stopped at the directory contract.
+The bundle is committed and structurally verified — see the Decision log for
+the values, the stop and its cause.
+
+This contract is **not** `MEASURED`, `PASS` or `COMPLETE`, and it does not
+become so by a run having happened.  The combined verdict is a stop, no value
+is eligible for registration, and acceptance was Codex's to give against the
+saved notebook output.
+
+**Codex has now given it** (2026-08-12, see the Decision log): the bundle is
+`BUNDLE_ACCEPTED_AS_AUTHENTIC_STOP_RECORD`, P1's aggregate is
+`P1_OBSERVATION_ACCEPTED` with `REGISTRATION_DEFERRED_UNTIL_COMBINED_PASS`, and
+P2's stop is judged `P2_PRODUCER_ARTIFACT_OMISSION` rather than a stale
+contract.  An accepted run is not a passed gate: the stop stands, the
+twelve-file contract stands, and nothing here is promoted.
 
 P3 — the source-matching differential — is **not** in scope here.
 
@@ -760,3 +773,250 @@ call site does explicitly and a stray import still reaches nothing.
 API call was made, no registered asset was opened, and no digest was computed
 against real bytes. This change makes a run possible; it does not make one
 happen, and the three Q5-E stops remain closed.
+
+## 2026-08-12 — first execution attempt: P1 passed, P2 stopped, bundle refused
+
+The first real run under the read-only approval reached both gates and then
+failed to write, for a reason that was a defect in this code rather than
+anything about the assets.
+
+**What was measured.** Authentication succeeded with the scope proven exactly
+read-only. P1 returned `P1_MITDB_IDENTITY_PASS` — the registered MIT-BIH
+publisher tree is byte-identical to its registration. P2 returned
+`P2_DIRECTORY_CONTRACT_FAILED`: the folder at the registered id did not hold
+exactly the twelve contracted files. That is a real stop and is **not** to be
+resolved by relaxing the directory contract; which files are missing or
+unexpected is recorded by the run, and this attempt lost that detail to the
+defect below.
+
+**The defect.** `assert_no_credentials()` scanned the serialised JSON text for
+`"credentials"`. The auth audit records `credential_type`, as this contract
+requires, and its value in Colab is the class name `Credentials` — so the scan
+read a value as a field and refused to write a run that had already completed
+both gates. The guard fired on the word rather than the thing, and the cost was
+an entire execution.
+
+It now walks the structure and matches **keys** exactly, at any depth,
+including inside lists. `credential_type` is accepted; `credentials`,
+`access_token`, `authorization` and the rest are refused with the path to the
+offending field. Reverting to the text scan, or stopping the walk at lists or
+at nested mappings, each fails a test.
+
+Nothing was written to Drive by the failed attempt: the guard runs before the
+output directory is created, so no partial bundle exists. The run must be
+repeated to capture P2's missing/unexpected lists. No value was registered and
+the three Q5-E stops remain closed.
+
+## 2026-08-12 — first completed run: P1 measured, P2 stopped
+
+Run `20260812T123035_EXP-2026-008_q5e_prep_p1_p2_asset_identity`, written to
+`MyDrive/MedKOS/ecg-model/runs/`.  Read-only throughout: the credential was
+acquired with exactly `https://www.googleapis.com/auth/drive.readonly`,
+observed as exactly that one scope, and `exact_readonly_scope_proven` is true.
+No Drive file was moved, deleted or overwritten.
+
+**Runtime.**  Colab, Python 3.12.13, Linux-6.6.122+-x86_64-with-glibc2.35,
+`google-api-python-client` 2.198.0, `google-auth` 2.49.0, `google-colab` 1.0.0.
+
+### P1 — passed, and the value Q5-E was blocked on now exists
+
+All four gates PASS.  `SHA256SUMS.txt` read exactly once, its own digest equal
+to the registered `b61158a9…`; publisher list `checked/matched 146/146`, zero
+mismatched, zero unlisted; 147 per-file observations.
+
+    MITDB_TREE_AGGREGATE (observed)
+      0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8
+
+It extends the registered prefix `0b46a411`.  This is the full 64-hex that
+`INPUT_IDENTITY_REGISTRATION_REQUIRED` was waiting for.  It is an
+**observation, not a registration**: `gate_passed: true` but
+`eligible_for_registration: false`, because the combined gate did not open.
+
+### P2 — stopped at `directory_contract`
+
+The registered folder id returned **11 children**, all unambiguous.  The
+twelve-file contract reports `missing: ['negative_control_null.npz']`,
+`unexpected: []`.  Gates 4-7 were never reached, so `input_identity` is null
+and `SOURCE_BUNDLE_FILE_SHA256` was not computed.
+
+**The file was never produced.**  Established from the code, not inferred:
+`negative_control_null` appears exactly once in the 4,951-line frozen producer
+— inside the `BUNDLE_FILES` tuple — and the module contains **no `savez` call
+at all**.  The shard folder carries the producer's code hash `6b098c67df3c`,
+which is the frozen module's own SHA-256, so the version that made this bundle
+is the version just read.  Two runs on different code hashes each produced the
+same eleven files.
+
+**No data is missing.**  `null_summary()` returns `"j_null_max": list(maxima)`
+— the complete 10,000-replicate vector, inlined — and the per-family values are
+preserved in the 100 shard files.  What is absent is a file, not a measurement.
+
+**Open question for the design owner.**  Two readings fit the evidence and this
+document does not choose between them:
+
+1. the contract is stale — the design moved the null distribution into
+   `null_summary.json`, making the `.npz` redundant, and `BUNDLE_FILES` was not
+   updated; the twelve-file contract should become eleven; or
+2. the producer never met its approved spec — EXP-2026-007 lists
+   `negative_control_null.npz` under Required outputs, so the bundle is
+   genuinely short of what was approved and the producer is what needs fixing.
+
+`BUNDLE_FILES` lives in the **frozen** Q5-D module, whose SHA-256
+`6b098c67…` is a registered identity used across Q5-E and embedded in the shard
+folder name.  It is not edited here under either reading.  Shrinking the
+contract to make P2 pass would be resolving a failure by relaxing a rule, which
+this contract forbids.
+
+### Bundle
+
+    prep_payload_sha256               41114110ce08708592e73d096e1c697cb68492de19c6e59f98f082adae7fe0d3
+    manifest_sha256_freeze_externally 31f6086962e529cc2184028096fdde3edbdece12dfe959305f724708a3ea0973
+
+`COMMITTED.json` present, `structure_ok: true`, recomputed payload fold equal to
+both recorded folds, no problems.  `synthetic_fixture: false`,
+`ingestable: true`.  `acceptance_eligible: false` with
+`manifest_anchor_source: same_run_self_check` — as designed: the run compared
+the manifest against a digest it had just computed, which is self-consistency,
+not an external anchor.  Acceptance requires a reviewer to supply the digest
+above from the saved notebook output.
+
+The saved report cell did not print `missing`/`unexpected`, so the whole point
+of the stop had to be recovered from `decision.json` afterwards.  The cell now
+prints them; that gap was in the report, not in the bundle.
+
+### The run record and the template are separate files
+
+Colab pushes an executed notebook over the file it was opened from.  That would
+overwrite the unexecuted template, and the two must both exist: the template so
+a reader cannot mistake stale output for a result, the executed copy because
+its saved output **is** the external freeze record for the manifest digest.
+
+- `notebooks/quest56_q5e_prep_p1_p2_asset_identity.ipynb` — template, always
+  committed with zero outputs and null `execution_count`.
+- `notebooks/executed/quest56_q5e_prep_p1_p2_asset_identity_<timestamp>.ipynb`
+  — the run record, committed **with** its output.
+
+The first record is `…_20260812T123035.ipynb`.  Its output carries both
+digests, the P1 aggregate, the P2 stop and the missing filename.  A test
+asserts each side of the split.
+
+## 2026-08-12 — Codex result acceptance: the run is accepted, the stop stands
+
+Codex returned its verdict on the completed run.  Four decisions, recorded here
+as given.  None of them changes a gate, a threshold, the directory contract, a
+null value or a registered identity, and none of them makes this contract
+`MEASURED`, `PASS` or `COMPLETE`.
+
+### D1 — P1: the observation is accepted, registration is deferred
+
+The full aggregate
+
+    MITDB_TREE_AGGREGATE (observed, accepted as an observation)
+      0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8
+
+is **accepted as a valid observation**.  It is *not* written into the
+`MITDB_TREE_AGGREGATE` constant, because the preregistered combined gate
+permits registration only when P1 **and** P2 pass, and P2 stopped.
+
+    P1_OBSERVATION_ACCEPTED
+    REGISTRATION_DEFERRED_UNTIL_COMBINED_PASS
+
+This is what the *Independence* section prescribes rather than an exception to
+it: the passing gate's observation is reported, its eligibility is withheld.
+`INPUT_IDENTITY_REGISTRATION_REQUIRED` therefore remains closed, and the value
+above stays a candidate carrying `applied_automatically: false`.
+
+### D2 — P2: `P2_PRODUCER_ARTIFACT_OMISSION`
+
+`P2_DIRECTORY_CONTRACT_FAILED` is **not** grounds for correcting the contract.
+Of the two readings the result handoff put to the design owner, the first — a
+stale contract — is rejected and the second is adopted.
+
+`negative_control_null.npz` is registered in **both** places that define the
+bundle:
+
+- EXP-2026-007 *Required outputs*
+  (`experiments/specs/EXP-2026-007-q5d-order-preserving-beat-join-gate.md`,
+  under "Future Drive run directory"); and
+- `BUNDLE_FILES` in `mit-bih/q5d_order_preserving_beat_join.py`.
+
+No approved Decision log entry removed it from either.  The twelve-file
+directory contract is therefore **not** reduced to eleven.
+
+    P2_PRODUCER_ARTIFACT_OMISSION
+
+The defect is in the producer's **output packaging**.  It is not a failed
+scientific computation and not a loss of null values: `null_summary()` inlines
+the complete 10,000-replicate `j_null_max` vector, and the per-family values
+are preserved in the 100 shards.  What was never written is a file.
+
+### D3 — Recovery: deterministic reconstruction, never a re-run
+
+The EXP-2026-007 beat join and the 10,000 × 3 null are **not** re-run.  The
+adopted direction is to reconstruct `negative_control_null.npz` deterministically
+from the existing 100 validated shards through the **frozen**
+`finalize_null_shards()` path.
+
+- The existing Drive bundle and the existing null shards are not modified, not
+  deleted and not overwritten.
+- A **new corrective bundle folder** is created.  The existing eleven files are
+  copied **byte-identically** into it, and the reconstructed NPZ is added, so the
+  folder holds exactly the twelve `BUNDLE_FILES` names.
+- Nothing outside `BUNDLE_FILES` is placed in the corrective folder.
+- The corrective provenance is recorded in this repository's Decision log and in
+  `research/ASSETS.md` / `research/PROJECT_STATE.md`.
+
+**The NPZ contract is fixed in a specification before any implementation**, so
+that a serialisation cannot be chosen after seeing which one verifies:
+
+- `wrong_record`: float64, shape `(10000,)`
+- `order_shuffle`: float64, shape `(10000,)`
+- `circular_shift`: float64, shape `(10000,)`
+- `j_null_max`: float64, shape `(10000,)`
+- readable with `allow_pickle=False`
+- every value finite
+- for every replicate `b`, `j_null_max[b]` **exactly equal** to the maximum of
+  the three families at `b`
+- exactly equal to the `j_null_max` already recorded in the existing
+  `null_summary.json`
+- the existing 100 shards verified for identity, digest, `code_sha256`,
+  `rule_fingerprint`, `input_digest`, replicate coverage `0..9999`, and no
+  overlap and no gap
+
+If any one of these fails, the repair stops with `REPAIR_INPUT_UNQUALIFIED` and
+publishes neither the NPZ nor a new bundle.  Several schemas or serialisations
+are **not** produced so that one can be picked afterwards.
+
+### D4 — This run's bundle: an authentic stop record
+
+Recomputed from the actual Drive bytes:
+
+    manifest SHA-256  31f6086962e529cc2184028096fdde3edbdece12dfe959305f724708a3ea0973
+    payload fold      41114110ce08708592e73d096e1c697cb68492de19c6e59f98f082adae7fe0d3
+
+Both equal the external freeze values printed in the saved executed notebook
+`notebooks/executed/quest56_q5e_prep_p1_p2_asset_identity_20260812T123035.ipynb`,
+which is the external anchor this contract requires — not the run's own
+self-check.
+
+    BUNDLE_ACCEPTED_AS_AUTHENTIC_STOP_RECORD
+
+The bundle is accepted as a faithful record of what happened.  **The combined
+verdict is still a P2 stop**, so nothing is promoted to `PREP_P1_P2_PASS` and
+nothing becomes registration eligible.  Accepting a stop record and passing a
+gate are different claims and are not conflated here.
+
+### What this entry does not do
+
+It does not edit `BUNDLE_FILES`, the frozen Q5-D module or its SHA-256; it does
+not touch a null value, a gate, a threshold or a decision; it does not register
+the P1 aggregate or any `SOURCE_BUNDLE_FILE_SHA256`; it does not create,
+copy or read a Drive folder; it does not reconstruct an NPZ; and it does not
+raise this contract's `status`, which stays `approved_for_implementation`.
+
+### Position in the Order
+
+Step 5 (Codex result acceptance) is complete, with the outcome *accepted run,
+upheld stop*.  Step 6 (the registration PR) does **not** follow from it: it
+waits on a combined pass, which waits in turn on the corrective bundle and on a
+separate user approval to execute the repair.

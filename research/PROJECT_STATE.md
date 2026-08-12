@@ -1,6 +1,6 @@
 # ECG research project state
 
-Updated: 2026-08-09
+Updated: 2026-08-12
 
 ## EXP-2026-004 / Q5-A — MEASURED (2026-08-09), 판정 `UNRESOLVED` (D5)
 
@@ -397,6 +397,77 @@ code sha 사이에서 **bitwise 재현**됐다(세 family + `J_null_max`, 각 10
   −25 행에 비해 실패는 6,648 행(266배)이다. 경쟁 가설 4개와 진단 설계 요청을
   `research/HANDOFF_2026-08-11_Q5D_v_class_join_failure_to_codex.md` 로 Codex 에
   넘겼다. **tolerance 는 넓히지 않았다** — 결과를 본 뒤의 완화다.
+
+## EXP-2026-008 / Q5-E — PREP P1/P2 실행됨 (2026-08-12), 종합 판정 **STOP**
+
+Q5-D의 `JOIN_UNRESOLVED` 뒤 Q5-E(LEG2 실패 기전 audit)를 막고 있는 stop은 3건이고
+**그중 둘이 동결된 적 없는 자산 identity**(P1 MIT-BIH publisher tree · P2 canonical
+Q5-D bundle)다. 이 둘에 대한 read-only preflight를 사용자 승인 아래 실행했다.
+나머지 하나(P3 source-equivalence)는 이번 범위 밖이다. 실행계약:
+`experiments/specs/EXP-2026-008-q5e-prep-p1-p2-execution-contract.md`.
+
+run `20260812T123035_EXP-2026-008_q5e_prep_p1_p2_asset_identity` ·
+학습·delineation·beat join·association 없음 · DS2 label·V10 probability 미열람 ·
+Drive 파일 이동·삭제·덮어쓰기 0건 · scope 정확히 `drive.readonly`
+(`exact_readonly_scope_proven: true`).
+
+**P1 PASS.** MIT-BIH publisher tree 4 gate 전부 통과 — `SHA256SUMS.txt` 자체
+digest = 등록값(읽은 횟수 1) · publisher list 146/146 · per-file 관측 147개.
+
+```
+MITDB_TREE_AGGREGATE (관측, 등록 아님)
+  0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8
+```
+
+**P2 STOP `P2_DIRECTORY_CONTRACT_FAILED`.** 등록 folder id
+`1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd`(canonical Q5-D DS1_GATE bundle)가 **11개**
+child를 반환했다 — `missing: ['negative_control_null.npz']`, `unexpected: []`,
+ambiguity 0. gate 4~7 미도달이라 `input_identity`는 null이고
+`SOURCE_BUNDLE_FILE_SHA256` 다섯 값은 계산되지 않았다.
+
+### Codex 판정 (2026-08-12) — D1~D4
+
+- **D1 `P1_OBSERVATION_ACCEPTED` / `REGISTRATION_DEFERRED_UNTIL_COMBINED_PASS`.**
+  P1 aggregate는 유효한 관측으로 인수하되, 사전등록 combined gate가 P1+P2 동시
+  통과를 요구하므로 `MITDB_TREE_AGGREGATE` 상수에 **쓰지 않는다.**
+  `INPUT_IDENTITY_REGISTRATION_REQUIRED`는 닫힌 채다.
+- **D2 `P2_PRODUCER_ARTIFACT_OMISSION`.** 계약 정정 사유가 아니다 —
+  `negative_control_null.npz`는 EXP-2026-007 Required outputs와 frozen 모듈의
+  `BUNDLE_FILES` **양쪽에 등록**돼 있고 이를 제거한 승인된 Decision log가 없다.
+  **12파일 계약을 11로 줄이지 않는다.** 과학 계산 실패도 null 손실도 아니고
+  producer의 output-packaging 결함이다 — `null_summary()`가 10,000 replicate
+  `j_null_max`를 인라인하고 family별 값은 shard 100개에 보존돼 있다.
+  **없는 것은 파일이지 측정값이 아니다.**
+- **D3 복구 = 재실행이 아니라 재구성.** beat join과 10,000×3 null은 재실행하지
+  않는다. 기존 100개 validated shard에서 frozen `finalize_null_shards()` 경로로
+  NPZ를 결정론적으로 재구성하고, **새 corrective bundle 폴더**에 기존 11개를
+  byte-identical 복사 + 재구성 NPZ만 더해 정확히 12개로 만든다. 기존 bundle과
+  shard는 수정·삭제·덮어쓰기 하지 않는다. NPZ 계약(네 배열 float64 `(10000,)` ·
+  `allow_pickle=False` · 전부 finite · `j_null_max` exact equality 두 겹)은
+  **구현 전에 명세에 고정**하고, 하나라도 실패하면 `REPAIR_INPUT_UNQUALIFIED`로
+  중단한다.
+- **D4 `BUNDLE_ACCEPTED_AS_AUTHENTIC_STOP_RECORD`.** Drive 실제 바이트 재검산
+  manifest SHA-256 `31f60869…0973` · payload fold `41114110…7fe0d3` 가 저장된
+  executed notebook의 외부 동결값과 일치한다. **bundle은 진본 중단 기록으로
+  인수되지만 전체 판정은 P2 STOP**이라 `PREP_P1_P2_PASS`나 registration
+  eligible로 승격되지 않는다.
+
+### 지금 상태
+
+spec status는 `approved_for_implementation` 그대로다. `MEASURED`/`PASS`/
+`COMPLETE`가 **아니다** — 실행이 있었다는 사실이 판정을 올리지 않는다.
+등록된 값은 0건이고 Q5-E의 세 stop은 닫힌 채다(P3 source-equivalence는 착수도
+하지 않았다).
+
+**다음 순서(각 단계가 별도 승인)**: ① artifact-repair 명세·구현(draft PR) →
+② 사용자 실행 승인 → ③ shard에서 NPZ 재구성 + 12-file corrective bundle 생성 →
+④ 기존 11개 byte identity·새 bundle 계약 검증 → ⑤ 새 folder id·lineage 등록 PR →
+⑥ P1/P2 재실행 승인·재실행 → ⑦ combined PASS 확인 뒤에야 P1 aggregate와 P2 five
+digests 등록 → ⑧ 그 다음이 P3 PREP.
+
+선행 Q5-E preflight 2건(`PREP_M4_ASSET_FREEZE` 2026-08-11 ·
+`PREP_M4_RR_EQUIVALENCE` 2026-08-12, `RR_VALUE_IDENTICAL_44_OF_44`)의 동결값은
+`research/ASSETS.md`의 source/cache 행에 있다.
 
 ## 설계 원칙 (Q5-A 사전등록 — 변경 없음)
 

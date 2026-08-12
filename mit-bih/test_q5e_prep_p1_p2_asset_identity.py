@@ -822,16 +822,63 @@ def test_bundle_refuses_an_unexpected_output_file():
 
 
 def test_bundle_never_carries_a_credential():
-    for payload in ({"access_token": "secret"}, {"client_secret": "x"},
-                    {"nested": {"refresh_token": "y"}}):
+    for payload, label in (
+            ({"access_token": "secret"}, "a top-level token"),
+            ({"client_secret": "x"}, "a client secret"),
+            ({"nested": {"refresh_token": "y"}}, "one nested in a mapping"),
+            ({"rows": [{"ok": 1}, {"authorization": "Bearer x"}]},
+             "one inside a list"),
+            ({"credentials": {}}, "an actual credentials field"),
+            ({"PASSWORD": "x"}, "one whose key is uppercase")):
         try:
             P.assert_no_credentials(payload, "test")
-            raise AssertionError(f"{payload} was accepted")
+            raise AssertionError(f"{label} was accepted")
         except P.PrepError as error:
             check("Credentials are not evidence" in str(error),
-                  "a credential-shaped field is refused")
+                  f"{label} is refused")
+            check("field at" in str(error),
+                  f"{label} is reported with the path to the field")
     P.assert_no_credentials({"file_id": "abc", "sha256": "d" * 64}, "test")
     check(True, "an ordinary inventory row is accepted")
+
+
+def test_the_credential_guard_reads_fields_not_prose():
+    """It fires on the thing, not on the word.
+
+    The guard used to scan the serialised JSON, so it could not tell a field
+    from a value. `credential_type` — which the execution contract requires
+    the auth audit to record — holds the credential's class name, and in Colab
+    that is `Credentials`. The scan read the value as a `"credentials"` field
+    and refused to write a run that had already passed both gates. The
+    measurements were lost to a guard firing on a word.
+    """
+    class Credentials(object):                    # Colab's real class name
+        scopes = [P.DRIVE_READONLY_SCOPE]
+
+    audit = P.audit_credential_scopes(Credentials())
+    check(audit["credential_type"] == "Credentials",
+          "the audit records the credential's class name, as contracted")
+    check(audit["credential_recorded"] is False,
+          "while the credential object itself is not recorded")
+
+    config = P.build_config("T", False, audit)
+    P.assert_no_credentials(config, "config.json")
+    check(True, "a production config carrying that audit is accepted")
+
+    for benign in ({"credential_type": "Credentials"},
+                   {"note": "no password is stored here"},
+                   {"drive_authentication": {"credential_recorded": False}},
+                   {"text": 'a field named "access_token" is refused'}):
+        P.assert_no_credentials(benign, "test")
+    check(True, "and neither a class name nor prose about secrets is a field")
+
+    # The distinction is exactly one character of key, so pin both sides.
+    P.assert_no_credentials({"credential_type": "x"}, "test")
+    try:
+        P.assert_no_credentials({"credentials": "x"}, "test")
+        raise AssertionError("a credentials field was accepted")
+    except P.PrepError:
+        check(True, "'credential_type' passes and 'credentials' does not")
 
     inventory = P.normalise_child(
         {"id": "f1", "name": "x", "size": "3", "mimeType": "text/plain",
@@ -2273,6 +2320,12 @@ def test_the_report_cell_shows_everything_a_result_review_needs():
         "a per-gate table": "_gate_table",
         "unreached gates named as such": "(미도달)",
         "the 146 + 1 result": "publisher['checked']",
+        # A gate table saying STOP without naming the difference is not a
+        # finding. The first real run stopped on directory_contract and the
+        # saved output could not say which file — the detail had to be dug
+        # out of decision.json afterwards.
+        "which files the directory contract is missing": "_dc['missing']",
+        "and which are unexpected": "_dc['unexpected']",
         "the mismatch detail": "published_sha256",
         "P2's folder-id inventory": "p2.get('folder_id')",
         "the bridge method": "bridge.get('method')",
@@ -3235,6 +3288,203 @@ def test_the_execution_approval_opens_only_what_it_names():
           "SOURCE_BUNDLE_FILE_SHA256 is still unregistered")
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
           "SOURCE_MATCH_ORACLE_RECORD is still unregistered")
+
+
+def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
+    """A path that exists is not a repository.
+
+    The first version fell back to `os.getcwd() + '/..'` when `/content/repo`
+    was absent.  In Colab the cwd is `/content`, so that resolves to `/`, and
+    `sys.path` got `/mit-bih` — which does not exist, so the very first import
+    died with ModuleNotFoundError.  The fallback was confidently wrong: it
+    produced a path rather than admitting it had not found one.
+
+    So the environment cell now accepts a candidate only when the three
+    modules are actually in its `mit-bih/`, and it raises with instructions
+    rather than handing a bad path to `sys.path`.
+    """
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    env = [c for c in cells if "sys.path" in "".join(c["source"])]
+    check(len(env) == 1, "one cell sets up the import path")
+    body = "".join(env[0]["source"])
+
+    check("os.path.join(os.getcwd(), '..')" not in body
+          and 'os.path.join(os.getcwd(), "..")' not in body,
+          "the guessing parent-directory fallback is gone")
+    check("_is_repo" in body,
+          "a candidate is judged by whether it holds the modules")
+    for name in ("q5d_order_preserving_beat_join.py",
+                 "q5e_leg2_failure_mechanism_audit.py",
+                 "q5e_prep_p1_p2_asset_identity.py"):
+        check(name in body, f"{name} is one of the files it looks for")
+    check("raise RuntimeError" in body,
+          "and it raises rather than continuing with a path it invented")
+
+    # Run the discovery half for real, against layouts that matter. Everything
+    # below the import is cut off; the clone fallback is pointed at a dead URL
+    # so nothing is fetched, and its target is redirected into the test's own
+    # temp directory so a failed attempt cannot leave a stray /content/repo.
+    check("CLONE_TO" in body,
+          "the clone target is a named variable, so it can be redirected")
+    head = body.split("import q5d_order_preserving_beat_join")[0].replace(
+        "https://github.com/ehdbddl06001-ui/my-github-test.git",
+        "file:///nonexistent-so-nothing-is-fetched")
+
+    def discover(cwd, sandbox):
+        """Run the cell's discovery with its absolute candidates sandboxed.
+
+        The cell checks `/content/repo` and friends before it walks the cwd,
+        which is right in Colab and makes a test that leaves them alone answer
+        differently depending on whether the machine happens to have a clone
+        there.  An earlier version of this test passed here and failed in
+        Colab for exactly that reason.  Re-pointing every `/content...`
+        literal — the candidates and the clone target alike — into a sandbox
+        makes the outcome depend only on the layout under test.
+        """
+        import contextlib
+        import io
+
+        namespace = {}
+        previous = os.getcwd()
+        sandboxed = head.replace("'/content", f"'{sandbox}/content")
+        # The cell prints git's complaint when its clone fallback fails, which
+        # is the point of the "nothing to find" case.  Captured rather than
+        # let through: this cell's saved output is part of the freeze record,
+        # and a reviewer should not have to work out that a `fatal:` line came
+        # from a test exercising a refusal on purpose.
+        noise = io.StringIO()
+        try:
+            os.chdir(cwd)
+            with contextlib.redirect_stdout(noise), \
+                    contextlib.redirect_stderr(noise):
+                exec(compile(sandboxed, "environment_cell", "exec"), namespace)
+            return namespace.get("FOUND")
+        except RuntimeError as error:
+            return f"REFUSED: {error}"
+        finally:
+            os.chdir(previous)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        check(discover(os.path.join(ROOT, "notebooks"), tmp) == ROOT,
+              "a cwd inside the repository finds the repository")
+        check(discover(ROOT, tmp) == ROOT,
+              "and so does the repository root itself")
+        check(not os.path.exists(os.path.join(tmp, "content")),
+              "neither of those reached the clone fallback at all")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        holder = os.path.join(tmp, "here")
+        os.makedirs(holder)
+        os.symlink(ROOT, os.path.join(holder, "some-other-name"))
+        check(discover(holder, tmp)
+              == os.path.join(holder, "some-other-name"),
+              "a clone one level below the cwd is found by name-independent "
+              "content, not by a hardcoded directory name")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        empty = os.path.join(tmp, "here")
+        os.makedirs(empty)
+        verdict = discover(empty, tmp)
+        check(str(verdict).startswith("REFUSED"),
+              f"with nothing to find, it refuses instead of guessing: "
+              f"{verdict}")
+        check("git clone" in str(verdict),
+              "and the refusal tells the user exactly how to fix it")
+        check("토큰을" in str(verdict),
+              "while warning against pasting a token into a saved notebook")
+
+
+def test_the_fixture_cell_cannot_turn_a_failure_into_silence():
+    """The last cheap gate before a real run must not swallow its own result.
+
+    The cell printed `result.stdout` only. The suite writes its summary to
+    stdout and its AssertionError to stderr, so a failing suite printed
+    nothing and the cell reported "(테스트 출력 없음)" — which reads as "there
+    was no output", not "everything you were about to rely on is broken". It
+    then carried on to the cell that opens registered assets.
+    """
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    fixture = [c for c in cells
+               if "test_q5e_prep_p1_p2_asset_identity.py" in "".join(c["source"])]
+    check(len(fixture) == 1, "one cell runs the synthetic fixture suite")
+    body = "".join(fixture[0]["source"])
+
+    import ast
+    tree = ast.parse(body)
+
+    # The result has to be bound, not consumed inline: you cannot inspect a
+    # return code you never kept.
+    runs = [n for n in ast.walk(tree)
+            if isinstance(n, ast.Call)
+            and isinstance(n.func, ast.Attribute)
+            and n.func.attr == "run"]
+    check(len(runs) == 1, "it calls subprocess.run once")
+    inline = [n for n in ast.walk(tree)
+              if isinstance(n, ast.Attribute)
+              and n.attr in ("stdout", "stderr")
+              and isinstance(n.value, ast.Call)]
+    check(not inline,
+          "and does not read .stdout straight off the call, discarding the rest")
+
+    attrs = {n.attr for n in ast.walk(tree) if isinstance(n, ast.Attribute)}
+    check("returncode" in attrs, "the exit status is inspected")
+    check("stderr" in attrs, "and stderr is printed, not dropped")
+
+    raises = [n for n in ast.walk(tree) if isinstance(n, ast.Raise)]
+    check(raises, "a failing suite stops the notebook rather than continuing")
+    check("셀 9" in body,
+          "and says which cell must not be pressed")
+
+    # An `or` fallback labelling empty stdout is fine; what is not fine is
+    # that fallback wording implying nothing happened.  Checked on the
+    # expression itself, so the comment explaining the old bug may quote it.
+    fallbacks = [n.values[-1].value for n in ast.walk(tree)
+                 if isinstance(n, ast.BoolOp) and isinstance(n.op, ast.Or)
+                 and isinstance(n.values[-1], ast.Constant)
+                 and isinstance(n.values[-1].value, str)]
+    for text in fallbacks:
+        check("출력 없음" not in text,
+              f"an empty stdout is not labelled as absence: {text!r}")
+    check(fallbacks, "and empty stdout is still labelled as something")
+
+
+def test_the_executed_run_record_is_kept_beside_the_template():
+    """The committed notebook and the run record are different artifacts.
+
+    The template must stay unexecuted so a reader cannot mistake stale output
+    for a result; the executed copy must keep its output, because that saved
+    output *is* the external freeze record for the manifest digest. Colab
+    pushes the executed file over the template by default, which would satisfy
+    neither, so they live at separate paths.
+    """
+    executed_dir = os.path.join(ROOT, "notebooks", "executed")
+    if not os.path.isdir(executed_dir):
+        check(True, "no run has been recorded yet, which is a valid state")
+        return
+
+    records = sorted(n for n in os.listdir(executed_dir)
+                     if n.endswith(".ipynb"))
+    check(records, "the executed directory holds at least one run record")
+    for name in records:
+        with open(os.path.join(executed_dir, name), encoding="utf-8") as handle:
+            nb = json.load(handle)
+        outputs = sum(len(c.get("outputs") or ()) for c in nb["cells"])
+        check(outputs > 0,
+              f"{name} keeps its output — an executed record without output "
+              f"is not evidence of anything")
+        check(name != os.path.basename(NOTEBOOK),
+              f"{name} does not overwrite the unexecuted template")
+
+    # The template itself is checked for the opposite property elsewhere; this
+    # pins that the two really are distinct files.
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        template = json.load(handle)
+    check(sum(len(c.get("outputs") or ()) for c in template["cells"]) == 0,
+          "and the template beside them is still unexecuted")
 
 
 def declared_tests():
