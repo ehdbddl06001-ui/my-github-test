@@ -31,15 +31,15 @@ separate **read-only execution approval** on 2026-08-12; the terminal stop in
 is unchanged: still after the switch, the token and the folder id, and still
 before authentication, the Drive service and every reader.
 
-**One execution has been attempted (2026-08-12) and produced no bundle.**  It
-authenticated with the scope proven read-only, measured
-`P1_MITDB_IDENTITY_PASS` and `P2_DIRECTORY_CONTRACT_FAILED`, and then failed to
-write because of a defect in the credential guard — see the Decision log.  No
-bundle exists, no value has been registered, and the attempt's P2 detail was
-lost with it.
+**One run has completed (2026-08-12) and its bundle exists.**  P1 passed and
+produced the full MIT-BIH tree aggregate; P2 stopped at the directory contract.
+The bundle is committed and structurally verified — see the Decision log for
+the values, the stop and its cause.
 
-This contract is **not** `MEASURED`, `PASS` or `COMPLETE`.  A measured result
-requires a completed run whose bundle was written and verified.
+This contract is **not** `MEASURED`, `PASS` or `COMPLETE`, and it does not
+become so by a run having happened.  The combined verdict is a stop, no value
+is eligible for registration, and acceptance is Codex's to give against the
+saved notebook output.
 
 P3 — the source-matching differential — is **not** in scope here.
 
@@ -799,3 +799,80 @@ Nothing was written to Drive by the failed attempt: the guard runs before the
 output directory is created, so no partial bundle exists. The run must be
 repeated to capture P2's missing/unexpected lists. No value was registered and
 the three Q5-E stops remain closed.
+
+## 2026-08-12 — first completed run: P1 measured, P2 stopped
+
+Run `20260812T123035_EXP-2026-008_q5e_prep_p1_p2_asset_identity`, written to
+`MyDrive/MedKOS/ecg-model/runs/`.  Read-only throughout: the credential was
+acquired with exactly `https://www.googleapis.com/auth/drive.readonly`,
+observed as exactly that one scope, and `exact_readonly_scope_proven` is true.
+No Drive file was moved, deleted or overwritten.
+
+**Runtime.**  Colab, Python 3.12.13, Linux-6.6.122+-x86_64-with-glibc2.35,
+`google-api-python-client` 2.198.0, `google-auth` 2.49.0, `google-colab` 1.0.0.
+
+### P1 — passed, and the value Q5-E was blocked on now exists
+
+All four gates PASS.  `SHA256SUMS.txt` read exactly once, its own digest equal
+to the registered `b61158a9…`; publisher list `checked/matched 146/146`, zero
+mismatched, zero unlisted; 147 per-file observations.
+
+    MITDB_TREE_AGGREGATE (observed)
+      0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8
+
+It extends the registered prefix `0b46a411`.  This is the full 64-hex that
+`INPUT_IDENTITY_REGISTRATION_REQUIRED` was waiting for.  It is an
+**observation, not a registration**: `gate_passed: true` but
+`eligible_for_registration: false`, because the combined gate did not open.
+
+### P2 — stopped at `directory_contract`
+
+The registered folder id returned **11 children**, all unambiguous.  The
+twelve-file contract reports `missing: ['negative_control_null.npz']`,
+`unexpected: []`.  Gates 4-7 were never reached, so `input_identity` is null
+and `SOURCE_BUNDLE_FILE_SHA256` was not computed.
+
+**The file was never produced.**  Established from the code, not inferred:
+`negative_control_null` appears exactly once in the 4,951-line frozen producer
+— inside the `BUNDLE_FILES` tuple — and the module contains **no `savez` call
+at all**.  The shard folder carries the producer's code hash `6b098c67df3c`,
+which is the frozen module's own SHA-256, so the version that made this bundle
+is the version just read.  Two runs on different code hashes each produced the
+same eleven files.
+
+**No data is missing.**  `null_summary()` returns `"j_null_max": list(maxima)`
+— the complete 10,000-replicate vector, inlined — and the per-family values are
+preserved in the 100 shard files.  What is absent is a file, not a measurement.
+
+**Open question for the design owner.**  Two readings fit the evidence and this
+document does not choose between them:
+
+1. the contract is stale — the design moved the null distribution into
+   `null_summary.json`, making the `.npz` redundant, and `BUNDLE_FILES` was not
+   updated; the twelve-file contract should become eleven; or
+2. the producer never met its approved spec — EXP-2026-007 lists
+   `negative_control_null.npz` under Required outputs, so the bundle is
+   genuinely short of what was approved and the producer is what needs fixing.
+
+`BUNDLE_FILES` lives in the **frozen** Q5-D module, whose SHA-256
+`6b098c67…` is a registered identity used across Q5-E and embedded in the shard
+folder name.  It is not edited here under either reading.  Shrinking the
+contract to make P2 pass would be resolving a failure by relaxing a rule, which
+this contract forbids.
+
+### Bundle
+
+    prep_payload_sha256               41114110ce08708592e73d096e1c697cb68492de19c6e59f98f082adae7fe0d3
+    manifest_sha256_freeze_externally 31f6086962e529cc2184028096fdde3edbdece12dfe959305f724708a3ea0973
+
+`COMMITTED.json` present, `structure_ok: true`, recomputed payload fold equal to
+both recorded folds, no problems.  `synthetic_fixture: false`,
+`ingestable: true`.  `acceptance_eligible: false` with
+`manifest_anchor_source: same_run_self_check` — as designed: the run compared
+the manifest against a digest it had just computed, which is self-consistency,
+not an external anchor.  Acceptance requires a reviewer to supply the digest
+above from the saved notebook output.
+
+The saved report cell did not print `missing`/`unexpected`, so the whole point
+of the stop had to be recovered from `decision.json` afterwards.  The cell now
+prints them; that gap was in the report, not in the bundle.

@@ -2320,6 +2320,12 @@ def test_the_report_cell_shows_everything_a_result_review_needs():
         "a per-gate table": "_gate_table",
         "unreached gates named as such": "(미도달)",
         "the 146 + 1 result": "publisher['checked']",
+        # A gate table saying STOP without naming the difference is not a
+        # finding. The first real run stopped on directory_contract and the
+        # saved output could not say which file — the detail had to be dug
+        # out of decision.json afterwards.
+        "which files the directory contract is missing": "_dc['missing']",
+        "and which are unexpected": "_dc['unexpected']",
         "the mismatch detail": "published_sha256",
         "P2's folder-id inventory": "p2.get('folder_id')",
         "the bridge method": "bridge.get('method')",
