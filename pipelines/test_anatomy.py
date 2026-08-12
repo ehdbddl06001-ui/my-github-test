@@ -257,6 +257,20 @@ def test_mask_patch_pins_and_redraw_flag() -> None:
     assert anatomy_mask._sample_bg(img, [0, 0, 50, 50]) == anatomy_mask.NEUTRAL
 
 
+def test_preview_exam_signal() -> None:
+    """예습시험 신호: 수업 D-2 prepare / D-1 finalize(전날 아침 마감) / 당일 class-day."""
+    from datetime import date as _date
+    assert anatomy_daily.preview_exams(_date(2026, 8, 17))[0]["phase"] == "finalize"
+    both = anatomy_daily.preview_exams(_date(2026, 8, 18))
+    assert [x["phase"] for x in both] == ["class-day", "prepare"]  # 당일 + 다음 회차 D-2
+    assert both[1]["session_no"] == 2 and both[1]["due"] == "2026-08-19"
+    # 시험일(Tagging)은 예습시험 대상이 아니다
+    assert all(x["session_no"] != 8 for x in anatomy_daily.preview_exams(_date(2026, 9, 9)))
+    # 월요일 수업(8/24) → 일요일(8/23) 아침 finalize (주말 루틴 필수 근거)
+    sun = anatomy_daily.preview_exams(_date(2026, 8, 23))
+    assert any(x["phase"] == "finalize" and x["class_date"] == "2026-08-24" for x in sun)
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":
