@@ -13,6 +13,7 @@ Run with::
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -112,21 +113,32 @@ def _verified(paths):
             for key in Q5E.DISCOVERED_PATH_KEYS}
 
 
-def _oracle_pass(**overrides):
-    """A synthetic differential-PREP record.
+def _fixture_result(name, equal=True, source=None, adapter=None):
+    """One differential comparison, as the strict schema requires."""
+    digest = hashlib.sha256(name.encode("utf-8")).hexdigest()
+    return {"name": name,
+            "source_result_sha256": source or digest,
+            "adapter_result_sha256": adapter or digest,
+            "equal": equal}
 
-    Fixture-only. It still has to satisfy every structural check, including
-    the *current* adapter fingerprint, so editing the adapter invalidates it
-    exactly as a real stale PASS would be invalidated.
+
+def _oracle_pass(**overrides):
+    """A complete synthetic differential-PREP record.
+
+    Fixture-only. It must satisfy every structural check, including the
+    *current* adapter fingerprint and the full required-counterexample list,
+    so editing the adapter or dropping a fixture invalidates it exactly as a
+    real stale PASS would be.
     """
     record = {
         "verdict": Q5E.SOURCE_MATCH_ORACLE_PASS,
         "registered_file_sha256": Q5E.M4_SOURCE_MAP_HASHES["data.py"],
         "adapter_fingerprint": Q5E.source_match_adapter_fingerprint(),
-        "prep_bundle_sha256": "0" * 64,
-        "fixtures": ["nearest_used", "tie", "non_aami", "boundary",
-                     "annotation_order", "peak_order"],
-        "fixtures_passed": 6,
+        "prep_bundle_sha256": "a" * 64,
+        "oracle_harness_sha256": "b" * 64,
+        "fixtures": [_fixture_result(name)
+                     for name in Q5E.SOURCE_MATCH_REQUIRED_FIXTURES],
+        "fixtures_passed": len(Q5E.SOURCE_MATCH_REQUIRED_FIXTURES),
     }
     record.update(overrides)
     return record
@@ -1582,29 +1594,48 @@ def test_production_route_never_injects_a_qa_fixture():
     check(not default["ok"], "empty rows do not reproduce the registered QA")
 
 
+def _write_bundle_dir(directory, code=None, fingerprint=None, extra=None,
+                      mutate=None):
+    """A realistic Q5-D run bundle: all twelve registered files.
+
+    The earlier fixture wrote only the five files Q5-E reads, which is why it
+    never noticed that discovery rejected a real bundle for carrying the other
+    seven.
+    """
+    os.makedirs(directory, exist_ok=True)
+    for name in BJ.BUNDLE_FILES:
+        payload = "{}" if name.endswith(".json") else f"{name}\n"
+        if mutate and name == mutate:
+            payload += " "                 # one byte, nothing else
+        with open(os.path.join(directory, name), "w", encoding="utf-8") as fh:
+            fh.write(payload)
+    with open(os.path.join(directory, "manifest.json"), "w",
+              encoding="utf-8") as fh:
+        json.dump({"code_sha256": code or Q5E.PRODUCING_CODE_SHA256,
+                   "rule_fingerprint":
+                       fingerprint or Q5E.REGISTERED_RULE_FINGERPRINT}, fh)
+    if mutate == "manifest.json":
+        with open(os.path.join(directory, "manifest.json"), "a",
+                  encoding="utf-8") as fh:
+            fh.write(" ")
+    for name in (extra or ()):
+        with open(os.path.join(directory, name), "w", encoding="utf-8") as fh:
+            fh.write("stowaway\n")
+    return directory
+
+
 def _fake_mount(tmp, *, superseded=False, duplicate=False):
     """A mount tree with one canonical bundle and one look-alike decoy.
 
-    The decoy carries the same file names and a different `code_sha256`, which
-    is exactly the failure mode path-typing produces: two plausible folders,
-    one of them wrong.
+    The decoy carries the same twelve file names and a different
+    `code_sha256`, which is exactly the failure mode path-typing produces:
+    two plausible folders, one of them wrong.
     """
     import shutil
-    def bundle(directory, code):
-        os.makedirs(directory, exist_ok=True)
-        for name in Q5E.BUNDLE_INPUT_FILES:
-            with open(os.path.join(directory, name), "w",
-                      encoding="utf-8") as handle:
-                handle.write("{}" if name.endswith(".json") else "x\n")
-        with open(os.path.join(directory, "manifest.json"), "w",
-                  encoding="utf-8") as handle:
-            json.dump({"code_sha256": code}, handle)
-        return directory
-
     root = os.path.join(tmp, "MyDrive")
-    good = bundle(os.path.join(root, "runs", "20260811T035108_real"),
-                  Q5E.PRODUCING_CODE_SHA256)
-    bundle(os.path.join(root, "runs", "20260810T000000_old"), "0" * 64)
+    good = _write_bundle_dir(os.path.join(root, "runs", "20260811T035108_real"))
+    _write_bundle_dir(os.path.join(root, "runs", "20260810T000000_old"),
+                      code="0" * 64)
     if superseded:
         with open(os.path.join(good, Q5E.SUPERSEDED_MARKER), "w",
                   encoding="utf-8") as handle:
@@ -1612,6 +1643,116 @@ def _fake_mount(tmp, *, superseded=False, duplicate=False):
     if duplicate:
         shutil.copytree(good, os.path.join(root, "backup", "copy_of_run"))
     return root, good
+
+
+def _canonical_bundles(root, approval=None):
+    """Directories under `root` that satisfy the full bundle contract."""
+    token = approval or Q5E.EXECUTION_APPROVAL_TOKEN
+    out = []
+    for directory in Q5E._candidate_dirs(root):
+        if not all(os.path.exists(os.path.join(directory, name))
+                   for name in BJ.BUNDLE_FILES):
+            continue
+        if Q5E.verify_bundle_directory_contract(directory, token)["ok"]:
+            out.append(directory)
+    return out
+
+
+def test_a_real_twelve_file_bundle_is_accepted():
+    """Blocker 1: the seven files Q5-E does not read are not 'unexpected'."""
+    with tempfile.TemporaryDirectory() as tmp:
+        good = _write_bundle_dir(os.path.join(tmp, "run"))
+        contract = Q5E.verify_bundle_directory_contract(
+            good, Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(contract["ok"] is True,
+              "a complete twelve-file bundle satisfies the directory contract")
+        check(contract["unexpected"] == [],
+              "none of the twelve registered files is unexpected")
+        check(contract["n_files"] == len(BJ.BUNDLE_FILES),
+              "all twelve registered files were hashed")
+
+        subset = Q5E.subset_file_fold(good, Q5E.BUNDLE_INPUT_FILES,
+                                      Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(subset["ok"] is True and len(subset["files"]) == 5,
+              "the five-file identity folds without touching the other seven")
+        check(len(subset["aggregate"]) == 64,
+              "and produces a sha256 aggregate")
+        # The subset fold must use the same convention as the frozen module.
+        expected = hashlib.sha256(BJ._canonical_json(
+            [[f["name"], f["bytes"], f["sha256"]] for f in subset["files"]]
+        ).encode("utf-8")).hexdigest()
+        check(subset["aggregate"] == expected,
+              "the existing canonical fold convention is reused, not replaced")
+
+        old_way = BJ.hash_file_set(good, Q5E.BUNDLE_INPUT_FILES,
+                                   approval=BJ.EXECUTION_APPROVAL_TOKEN)
+        check(old_way["ok"] is False and len(old_way["extra"]) == 7,
+              "asking hash_file_set for the five would have rejected it")
+
+
+def test_bundle_contract_rejects_the_wrong_shapes():
+    with tempfile.TemporaryDirectory() as tmp:
+        token = Q5E.EXECUTION_APPROVAL_TOKEN
+        stowaway = _write_bundle_dir(os.path.join(tmp, "stowaway"),
+                                     extra=["notes.txt"])
+        result = Q5E.verify_bundle_directory_contract(stowaway, token)
+        check(result["ok"] is False and "notes.txt" in result["unexpected"],
+              "an unknown thirteenth file fails the full bundle contract")
+
+        wrong_code = _write_bundle_dir(os.path.join(tmp, "code"), code="0" * 64)
+        check(not Q5E.verify_bundle_directory_contract(wrong_code, token)["ok"],
+              "a wrong producing code fails")
+        wrong_fp = _write_bundle_dir(os.path.join(tmp, "fp"),
+                                     fingerprint="0" * 64)
+        result = Q5E.verify_bundle_directory_contract(wrong_fp, token)
+        check(result["ok"] is False,
+              "a wrong rule fingerprint fails")
+        check(any("rule_fingerprint" in p for p in result["problems"]),
+              "and the fingerprint is named as the problem")
+
+        incomplete = _write_bundle_dir(os.path.join(tmp, "short"))
+        os.remove(os.path.join(incomplete, "bootstrap.json"))
+        result = Q5E.verify_bundle_directory_contract(incomplete, token)
+        check(result["ok"] is False and "bootstrap.json" in result["missing"],
+              "a missing registered file fails even though Q5-E never reads it")
+
+        marked = _write_bundle_dir(os.path.join(tmp, "superseded"))
+        with open(os.path.join(marked, Q5E.SUPERSEDED_MARKER), "w",
+                  encoding="utf-8") as fh:
+            fh.write("{}")
+        check(not Q5E.verify_bundle_directory_contract(marked, token)["ok"],
+              "a SUPERSEDED copy is refused")
+
+
+def test_one_byte_change_in_an_input_file_changes_the_identity():
+    with tempfile.TemporaryDirectory() as tmp:
+        token = Q5E.EXECUTION_APPROVAL_TOKEN
+        good = _write_bundle_dir(os.path.join(tmp, "good"))
+        decoy = _write_bundle_dir(os.path.join(tmp, "decoy"),
+                                  mutate="decision.json")
+        check(Q5E.verify_bundle_directory_contract(decoy, token)["ok"] is True,
+              "the decoy still satisfies the directory contract")
+        a = Q5E.subset_file_fold(good, Q5E.BUNDLE_INPUT_FILES, token)
+        b = Q5E.subset_file_fold(decoy, Q5E.BUNDLE_INPUT_FILES, token)
+        check(a["aggregate"] != b["aggregate"],
+              "one byte in an input file changes the five-file identity")
+        try:
+            Q5E.resolve_identical_candidates(
+                [{"path": good, "digest": a["aggregate"]},
+                 {"path": decoy, "digest": b["aggregate"]}],
+                "canonical bundle", tmp)
+            raise AssertionError("two different bundles were merged")
+        except Q5E.DiagnosticInputMismatch as error:
+            check("never merged" in str(error),
+                  "a decoy differing by one byte is not the same identity")
+
+        untouched = _write_bundle_dir(os.path.join(tmp, "other"),
+                                      mutate="log.txt")
+        c = Q5E.subset_file_fold(untouched, Q5E.BUNDLE_INPUT_FILES, token)
+        check(c["aggregate"] == a["aggregate"],
+              "changing a file Q5-E does not read leaves its identity alone")
+        check(Q5E.verify_bundle_directory_contract(untouched, token)["ok"],
+              "and that bundle is still a valid directory")
 
 
 def test_input_discovery_is_by_digest_not_by_path():
@@ -1626,28 +1767,43 @@ def test_input_discovery_is_by_digest_not_by_path():
         except Q5E.DiagnosticInputMismatch as error:
             check("no " in str(error), "a missing input refuses, never guesses")
 
-        found = []
-        for directory in Q5E._candidate_dirs(root):
-            manifest = os.path.join(directory, "manifest.json")
-            if not os.path.exists(manifest):
-                continue
-            with open(manifest, encoding="utf-8") as handle:
-                if json.load(handle).get("code_sha256") == \
-                        Q5E.PRODUCING_CODE_SHA256:
-                    found.append(directory)
-        check(found == [good],
+        check(_canonical_bundles(root) == [good],
               "the decoy bundle with a different code_sha256 is not selected")
 
 
 def test_discovery_refuses_a_superseded_bundle():
     with tempfile.TemporaryDirectory() as tmp:
         root, _ = _fake_mount(tmp, superseded=True)
+        check(_canonical_bundles(root) == [],
+              "a SUPERSEDED bundle is not a candidate")
         try:
             Q5E.discover_registered_inputs(root, Q5E.EXECUTION_APPROVAL_TOKEN)
             raise AssertionError("a superseded bundle was selected")
         except Q5E.DiagnosticInputMismatch as error:
             check("canonical bundle" in str(error),
-                  "a SUPERSEDED bundle is not a match")
+                  "and discovery refuses rather than falling back")
+
+
+def test_byte_identical_bundle_duplicate_is_allowed_and_audited():
+    with tempfile.TemporaryDirectory() as tmp:
+        root, good = _fake_mount(tmp, duplicate=True)
+        found = _canonical_bundles(root)
+        check(len(found) == 2,
+              "both byte-identical copies satisfy the contract")
+        token = Q5E.EXECUTION_APPROVAL_TOKEN
+        candidates = [
+            {"path": d,
+             "digest": Q5E.subset_file_fold(
+                 d, Q5E.BUNDLE_INPUT_FILES, token)["aggregate"]}
+            for d in found]
+        resolved = Q5E.resolve_identical_candidates(
+            candidates, "canonical bundle", root)
+        check(resolved["n_candidates"] == 2,
+              "the duplicate is counted, not treated as an error")
+        check(len(resolved["byte_identical_duplicates"]) == 1,
+              "and the other path is recorded in the audit")
+        check(resolved["path"] in found,
+              "one of the real copies is chosen deterministically")
 
 
 def test_byte_identical_duplicates_are_resolved_not_refused():
@@ -1693,8 +1849,12 @@ def test_discovery_requires_a_clean_file_set_not_only_an_aggregate():
     with open(Q5E.__file__, encoding="utf-8") as handle:
         body = handle.read().split("def discover_registered_inputs(", 1)[1]
         body = body.split("\ndef ", 1)[0]
-    check(body.count('digest.get("ok")') >= 3,
-          "cache, source and bundle discovery all require a clean file set")
+    check(body.count('digest.get("ok")') >= 2,
+          "cache and source discovery require a clean file set")
+    check("verify_bundle_directory_contract(" in body,
+          "and the bundle goes through the full twelve-file contract")
+    check("subset_file_fold(" in body,
+          "while its identity is the five-file subset fold")
     problems = Q5E.verify_mitdb_identity.__doc__ or ""
     check("publisher" in problems,
           "the MIT-BIH gate documents its independent publisher check")
@@ -2544,6 +2704,98 @@ def test_frozen_module_approval_scope_is_pinned():
           "the only CLI option is Q5-E's own approval flag")
     check(text.count("BJ.EXECUTION_APPROVAL_TOKEN") == 1,
           "the frozen token is produced in exactly one place")
+
+
+
+def test_oracle_record_requires_real_digests():
+    """Blocker 2: a non-empty string is not an identity."""
+    check(Q5E.verify_source_match_equivalence(_oracle_pass())["ok"] is True,
+          "a complete record passes")
+    for field in Q5E.SOURCE_MATCH_ORACLE_DIGEST_FIELDS:
+        for bad, label in (("x", "a one-character placeholder"),
+                           ("a" * 63, "63 characters"),
+                           ("a" * 65, "65 characters"),
+                           ("A" * 64, "uppercase hex"),
+                           ("g" * 64, "non-hex characters"),
+                           ("", "an empty string")):
+            result = Q5E.verify_source_match_equivalence(
+                _oracle_pass(**{field: bad}))
+            check(result["ok"] is False,
+                  f"{field}={label} is refused")
+    missing = _oracle_pass()
+    del missing["oracle_harness_sha256"]
+    result = Q5E.verify_source_match_equivalence(missing)
+    check(result["ok"] is False,
+          "the PREP harness identity is a required field")
+    check(any("missing" in p for p in result["problems"]),
+          "and its absence is reported")
+
+
+def test_oracle_record_requires_every_counterexample():
+    """Blocker 2: a shrunken fixture list is not a differential."""
+    check(len(Q5E.SOURCE_MATCH_REQUIRED_FIXTURES) == 6,
+          "all six counterexamples are required")
+    declared = set(declared_tests())
+    for name in Q5E.SOURCE_MATCH_REQUIRED_FIXTURES:
+        check(name in declared,
+              f"required fixture {name} names a real regression test")
+
+    one = _oracle_pass(
+        fixtures=[_fixture_result(Q5E.SOURCE_MATCH_REQUIRED_FIXTURES[0])],
+        fixtures_passed=1)
+    result = Q5E.verify_source_match_equivalence(one)
+    check(result["ok"] is False, "a single-fixture PASS is refused")
+    check(any("omits required" in p for p in result["problems"]),
+          "and the omitted counterexamples are named")
+
+    dropped = list(Q5E.SOURCE_MATCH_REQUIRED_FIXTURES)[:-1]
+    result = Q5E.verify_source_match_equivalence(_oracle_pass(
+        fixtures=[_fixture_result(n) for n in dropped],
+        fixtures_passed=len(dropped)))
+    check(result["ok"] is False, "dropping one counterexample is refused")
+
+    duplicated = list(Q5E.SOURCE_MATCH_REQUIRED_FIXTURES) + [
+        Q5E.SOURCE_MATCH_REQUIRED_FIXTURES[0]]
+    result = Q5E.verify_source_match_equivalence(_oracle_pass(
+        fixtures=[_fixture_result(n) for n in duplicated],
+        fixtures_passed=len(duplicated)))
+    check(result["ok"] is False, "a duplicated fixture name is refused")
+    check(any("duplicate" in p for p in result["problems"]),
+          "and the duplicate is named")
+
+
+def test_oracle_record_requires_the_comparison_to_have_happened():
+    """Blocker 2: equal=true must be backed by matching result digests."""
+    names = list(Q5E.SOURCE_MATCH_REQUIRED_FIXTURES)
+    unequal = [_fixture_result(n) for n in names]
+    unequal[2]["equal"] = False
+    result = Q5E.verify_source_match_equivalence(
+        _oracle_pass(fixtures=unequal, fixtures_passed=len(names)))
+    check(result["ok"] is False, "a fixture that did not compare equal fails")
+    check(any("did not compare equal" in p for p in result["problems"]),
+          "and it is named")
+
+    lying = [_fixture_result(n) for n in names]
+    lying[1]["adapter_result_sha256"] = "c" * 64
+    result = Q5E.verify_source_match_equivalence(
+        _oracle_pass(fixtures=lying, fixtures_passed=len(names)))
+    check(result["ok"] is False,
+          "equal=true with differing result digests fails")
+    check(any("marked equal but" in p for p in result["problems"]),
+          "and the contradiction is stated")
+
+    miscounted = _oracle_pass(fixtures_passed=len(names) - 1)
+    result = Q5E.verify_source_match_equivalence(miscounted)
+    check(result["ok"] is False,
+          "fixtures_passed must equal the number that actually compared equal")
+
+    shaped = _oracle_pass(fixtures=list(names), fixtures_passed=len(names))
+    result = Q5E.verify_source_match_equivalence(shaped)
+    check(result["ok"] is False,
+          "a bare list of fixture names is not a result record")
+
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "and no real PASS is registered in this PR")
 
 
 

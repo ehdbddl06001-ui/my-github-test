@@ -3158,18 +3158,84 @@ def _candidate_dirs(root: str, max_depth: int = DISCOVERY_MAX_DEPTH):
         yield current
 
 
-def _only(matches: Sequence[str], what: str, root: str) -> str:
-    if len(matches) == 1:
-        return matches[0]
-    if not matches:
-        raise DiagnosticInputMismatch(
-            f"{DECISION_MISMATCH}: no {what} with the registered identity was "
-            f"found under {root!r}.  The audit does not fall back to a "
-            f"path-named guess: mount the registered artifact and re-run.")
-    raise DiagnosticInputMismatch(
-        f"{DECISION_MISMATCH}: {len(matches)} directories under {root!r} match "
-        f"the registered {what} ({matches[:4]}).  Identity must be unique; "
-        f"remove the duplicate copy rather than choosing one here.")
+
+def subset_file_fold(directory: str, names: Sequence[str],
+                     approval: Optional[str]) -> Dict[str, object]:
+    """Fold a **subset** of a directory without calling the rest unexpected.
+
+    `BJ.hash_file_set` answers "is this directory exactly this file set?", and
+    that is the right question for the bundle *as a whole*.  It is the wrong
+    question for the five files Q5-E reads: a real Q5-D run bundle carries all
+    twelve registered files, so asking for the five reports the other seven as
+    unexpected and rejects a perfectly canonical bundle.
+
+    So the two contracts are separated.  This computes the identity of just
+    the named files, using the same `(name, bytes, sha256)` canonical-JSON
+    fold as `hash_file_set` — the convention is reused, not reinvented — and
+    nothing is copied, moved or excluded from the directory to do it.
+    """
+    require_execution_approval(approval, f"file subset in {directory!r}")
+    files: List[Dict[str, object]] = []
+    missing: List[str] = []
+    for name in sorted(set(names)):
+        path = os.path.join(directory, name)
+        if not os.path.isfile(path):
+            missing.append(name)
+            continue
+        files.append({"name": name, "bytes": os.path.getsize(path),
+                      "sha256": sha256_file(path)})
+    aggregate = hashlib.sha256(_canonical_json(
+        [[f["name"], f["bytes"], f["sha256"]] for f in files]
+    ).encode("utf-8")).hexdigest()
+    return {"directory": directory, "files": files, "missing": missing,
+            "aggregate": aggregate, "n_files": len(files),
+            "ok": not missing,
+            "problems": ([] if not missing
+                         else [f"{directory}: missing {missing}"])}
+
+
+def verify_bundle_directory_contract(directory: str, approval: Optional[str]
+                                     ) -> Dict[str, object]:
+    """The **whole** Q5-D run bundle is complete and unmodified in shape.
+
+    All twelve registered files present, nothing unexpected beside them, no
+    `SUPERSEDED.json`, and `manifest.json` naming both the registered
+    producing code and the registered rule fingerprint.  This is the directory
+    contract; the scientific input identity of the five files Q5-E reads is a
+    separate check (:func:`verify_bundle_content_identity`).
+    """
+    require_execution_approval(approval, f"bundle directory {directory!r}")
+    problems: List[str] = []
+    if os.path.exists(os.path.join(directory, SUPERSEDED_MARKER)):
+        problems.append(
+            f"{SUPERSEDED_MARKER} present: this is a superseded bundle")
+    full = BJ.hash_file_set(directory, BJ.BUNDLE_FILES, approval=_bj(approval))
+    problems.extend(full.get("problems", ()))
+    code = fingerprint = ""
+    manifest_path = os.path.join(directory, "manifest.json")
+    if os.path.exists(manifest_path):
+        try:
+            with open(manifest_path, encoding="utf-8") as handle:
+                manifest = json.load(handle)
+            code = str(manifest.get("code_sha256") or "")
+            fingerprint = str(manifest.get("rule_fingerprint") or "")
+        except (OSError, ValueError) as error:
+            problems.append(f"manifest.json is unreadable: {error}")
+    if code != PRODUCING_CODE_SHA256:
+        problems.append(
+            f"manifest code_sha256 {code!r} != {PRODUCING_CODE_SHA256!r}")
+    if fingerprint != REGISTERED_RULE_FINGERPRINT:
+        problems.append(
+            f"manifest rule_fingerprint {fingerprint!r} != "
+            f"{REGISTERED_RULE_FINGERPRINT!r}")
+    return {"gate": "bundle_directory", "ok": not problems,
+            "reason": None if not problems else DECISION_MISMATCH,
+            "directory": directory, "n_files": full.get("n_files"),
+            "missing": list(full.get("missing", ())),
+            "unexpected": list(full.get("extra", ())),
+            "full_aggregate": full.get("aggregate"),
+            "code_sha256": code, "rule_fingerprint": fingerprint,
+            "problems": problems}
 
 
 def resolve_identical_candidates(matches: Sequence[Mapping[str, object]],
@@ -3263,13 +3329,13 @@ def verify_bundle_content_identity(directory: str, approval: Optional[str]
     registered digest, and stops when those digests have never been frozen.
     """
     require_execution_approval(approval, f"bundle contents at {directory!r}")
-    observed = {name: sha256_file(os.path.join(directory, name))
-                for name in BUNDLE_INPUT_FILES
-                if os.path.exists(os.path.join(directory, name))}
+    subset = subset_file_fold(directory, BUNDLE_INPUT_FILES, approval)
+    observed = {f["name"]: f["sha256"] for f in subset["files"]}
     if not SOURCE_BUNDLE_FILE_SHA256:
         return {"gate": "bundle_content_identity", "ok": False,
                 "reason": SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
                 "observed": observed, "registered": {},
+                "subset_fold": subset["aggregate"],
                 "problems": [
                     "no per-file SHA-256 is registered for the canonical "
                     "Q5-D bundle, so its contents cannot be verified.  The "
@@ -3291,6 +3357,7 @@ def verify_bundle_content_identity(directory: str, approval: Optional[str]
             "reason": None if not problems else DECISION_MISMATCH,
             "observed": observed,
             "registered": dict(SOURCE_BUNDLE_FILE_SHA256),
+            "subset_fold": subset["aggregate"],
             "problems": problems}
 
 
@@ -3315,28 +3382,27 @@ def discover_registered_inputs(search_root: str, approval: Optional[str]
 
     bundles: List[Dict[str, object]] = []
     for directory in _candidate_dirs(search_root):
+        # A candidate must look like a whole Q5-D run bundle, so the presence
+        # test is over the frozen twelve-file contract — not over the five
+        # files Q5-E happens to read.
         if not all(os.path.exists(os.path.join(directory, name))
-                   for name in BUNDLE_INPUT_FILES):
+                   for name in BJ.BUNDLE_FILES):
             continue
-        if os.path.exists(os.path.join(directory, SUPERSEDED_MARKER)):
-            continue                       # a superseded bundle is not a match
-        try:
-            with open(os.path.join(directory, "manifest.json"),
-                      encoding="utf-8") as handle:
-                code = str(json.load(handle).get("code_sha256") or "")
-        except (OSError, ValueError):
+        contract = verify_bundle_directory_contract(directory, approval)
+        if not contract["ok"]:
             continue
-        if code != PRODUCING_CODE_SHA256:
+        # Identity is the fold over the five files Q5-E reads, computed as a
+        # subset so the other seven registered files are not "unexpected".
+        subset = subset_file_fold(directory, BUNDLE_INPUT_FILES, approval)
+        if not subset["ok"]:
             continue
-        # Two bundles with the same producing code are only the same bundle
-        # when their contents agree, so the identity here is the fold over the
-        # five files Q5-E reads, not the manifest string.
-        digest = BJ.hash_file_set(directory, BUNDLE_INPUT_FILES,
-                                  approval=_bj(approval))
-        if not digest.get("ok"):
-            continue
+        if SOURCE_BUNDLE_FILE_SHA256:
+            observed = {f["name"]: f["sha256"] for f in subset["files"]}
+            if any(observed.get(name) != want for name, want
+                   in SOURCE_BUNDLE_FILE_SHA256.items()):
+                continue          # P2 registered: contents must match exactly
         bundles.append({"path": directory,
-                        "digest": str(digest.get("aggregate") or "")})
+                        "digest": str(subset.get("aggregate") or "")})
     resolved = resolve_identical_candidates(bundles, "canonical bundle",
                                             search_root)
     found["bundle_dir"] = resolved["path"]
@@ -3448,6 +3514,10 @@ def reverify_registered_inputs(paths: Mapping[str, object],
     canonical = verify_bundle_is_canonical(resolved["bundle_dir"], approval)
     checks.append({"gate": "bundle_present", "ok": bool(canonical["ok"]),
                    "problems": list(canonical["problems"])})
+    # The whole twelve-file directory contract, then the five-file scientific
+    # input identity.  Separate questions, checked separately.
+    checks.append(verify_bundle_directory_contract(resolved["bundle_dir"],
+                                                   approval))
     checks.append(verify_bundle_content_identity(resolved["bundle_dir"],
                                                  approval))
 
@@ -3590,7 +3660,31 @@ SOURCE_MATCH_ORACLE_PASS = "SOURCE_MATCH_EQUIVALENT_TO_REGISTERED_SOURCE"
 #: so that changing either side invalidates it automatically.
 SOURCE_MATCH_ORACLE_FIELDS: Tuple[str, ...] = (
     "verdict", "registered_file_sha256", "adapter_fingerprint",
-    "prep_bundle_sha256", "fixtures", "fixtures_passed")
+    "prep_bundle_sha256", "oracle_harness_sha256", "fixtures",
+    "fixtures_passed")
+#: Fields of the record that must each be a lowercase 64-hex SHA-256.  A
+#: non-empty string is not an identity; `"x"` must not open this gate.
+SOURCE_MATCH_ORACLE_DIGEST_FIELDS: Tuple[str, ...] = (
+    "registered_file_sha256", "adapter_fingerprint", "prep_bundle_sha256",
+    "oracle_harness_sha256")
+#: Every counterexample the differential PREP must cover, by the exact name
+#: the corresponding regression test uses.  A PASS that omits one of these has
+#: not tested the decision that fixture exists to pin, so it is not a PASS.
+SOURCE_MATCH_REQUIRED_FIXTURES: Tuple[str, ...] = (
+    "test_source_match_nearest_already_used_falls_through",
+    "test_source_match_distance_tie_goes_to_the_earlier_annotation",
+    "test_source_match_non_aami_symbol_consumes_its_match",
+    "test_source_match_boundary_cut_consumes_its_match",
+    "test_source_match_annotation_order_differing_from_sample_order",
+    "test_source_match_peak_order_change_is_visible",
+)
+
+
+def _is_sha256(value: object) -> bool:
+    """Exactly 64 lowercase hex characters.  Nothing else is a digest."""
+    text = value if isinstance(value, str) else ""
+    return (len(text) == 64
+            and all(c in "0123456789abcdef" for c in text))
 #: Filled only by a separately approved read-only PREP (P3).  While it is
 #: `None` the equivalence sub-gate stops M4 **before the detector runs**.
 SOURCE_MATCH_ORACLE_RECORD: Optional[Dict[str, object]] = None
@@ -3658,6 +3752,13 @@ def verify_source_match_equivalence(
         problems.append(
             f"verdict {record.get('verdict')!r} is not "
             f"{SOURCE_MATCH_ORACLE_PASS!r}")
+    # Every identity field must be a real digest.  A non-empty placeholder is
+    # not an identity, and neither is an uppercase or truncated one.
+    for field in SOURCE_MATCH_ORACLE_DIGEST_FIELDS:
+        if not _is_sha256(record.get(field)):
+            problems.append(
+                f"{field} is not a lowercase 64-hex SHA-256: "
+                f"{record.get(field)!r}")
     if str(record.get("registered_file_sha256") or "") != registered:
         problems.append(
             "the PREP was run against a different `data.py`; a PASS is not "
@@ -3666,23 +3767,65 @@ def verify_source_match_equivalence(
         problems.append(
             "the adapter has changed since the PREP; the differential must be "
             "re-run against the current fingerprint")
-    if not str(record.get("prep_bundle_sha256") or ""):
-        problems.append("the PREP bundle identity is not recorded")
-    fixtures = list(record.get("fixtures") or ())
+
+    # Fixture results, not a list of names: each must say what the source
+    # produced, what the adapter produced, and that the two agreed.
+    entries = list(record.get("fixtures") or ())
+    names: List[str] = []
+    equal_count = 0
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, Mapping):
+            problems.append(f"fixture {index} is not a result record")
+            continue
+        name = str(entry.get("name") or "")
+        if not name:
+            problems.append(f"fixture {index} has no name")
+            continue
+        names.append(name)
+        source_digest = entry.get("source_result_sha256")
+        adapter_digest = entry.get("adapter_result_sha256")
+        for field, value in (("source_result_sha256", source_digest),
+                             ("adapter_result_sha256", adapter_digest)):
+            if not _is_sha256(value):
+                problems.append(
+                    f"fixture {name!r}: {field} is not a 64-hex SHA-256")
+        if entry.get("equal") is not True:
+            problems.append(f"fixture {name!r} did not compare equal")
+            continue
+        if source_digest != adapter_digest:
+            problems.append(
+                f"fixture {name!r} is marked equal but the source and adapter "
+                f"result digests differ")
+            continue
+        equal_count += 1
+    duplicates = sorted({n for n in names if names.count(n) > 1})
+    if duplicates:
+        problems.append(f"duplicate fixture names: {duplicates}")
+    absent = [n for n in SOURCE_MATCH_REQUIRED_FIXTURES if n not in names]
+    if absent:
+        problems.append(
+            f"the differential omits required counterexamples: {absent}")
     try:
         passed = int(record.get("fixtures_passed"))
     except (TypeError, ValueError):
         passed = -1
-    if not fixtures:
+    if not entries:
         problems.append("no oracle fixtures are listed")
-    elif passed != len(fixtures):
-        problems.append(
-            f"{passed} of {len(fixtures)} oracle fixtures passed; a partial "
-            f"differential is not a PASS")
+    else:
+        if passed != equal_count:
+            problems.append(
+                f"fixtures_passed is {passed} but {equal_count} fixtures "
+                f"actually compared equal")
+        if passed != len(entries):
+            problems.append(
+                f"{passed} of {len(entries)} oracle fixtures passed; a partial "
+                f"differential is not a PASS")
     return {**base, "ok": not problems,
             "reason": None if not problems
             else SOURCE_MATCH_EQUIVALENCE_REQUIRED,
-            "fixtures": fixtures, "fixtures_passed": passed,
+            "fixtures": names, "fixtures_passed": passed,
+            "fixtures_equal": equal_count,
+            "required_fixtures": list(SOURCE_MATCH_REQUIRED_FIXTURES),
             "problems": problems}
 
 

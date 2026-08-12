@@ -2412,3 +2412,58 @@ Three registration items remain open, and each is now a terminal stop:
 drafted in `research/HANDOFF_2026-08-12_Q5E_prep_p1p2p3_to_codex.md`; none was
 executed here, no Drive asset was opened, and no digest or verdict value was
 computed or written.
+
+## 2026-08-12 — fifth-review corrections: bundle contracts and oracle schema
+
+The fifth Codex acceptance review found two defects.  Nothing was executed, no
+registered asset was opened, no digest or verdict value was computed or
+written, and this spec's `status` remains `approved_for_implementation`.
+
+**The directory contract and the input identity were the same check, and it
+rejected real bundles.**  Discovery asked `hash_file_set` whether the bundle
+directory was *exactly* the five files Q5-E reads.  A genuine Q5-D run bundle
+carries all twelve registered files, so the other seven were reported as
+unexpected and every canonical bundle failed.  The synthetic fixture wrote only
+five files, which is why the defect survived three reviews.  The two questions
+are now separate:
+
+- **directory contract** — `verify_bundle_directory_contract()` requires the
+  frozen twelve-file set complete with nothing unexpected beside it, no
+  `SUPERSEDED.json`, and `manifest.json` naming both the registered producing
+  code and the registered rule fingerprint;
+- **scientific input identity** — `subset_file_fold()` folds the five files
+  Q5-E reads using the same `(name, bytes, sha256)` canonical-JSON convention
+  as `hash_file_set`, without treating the remaining seven as unexpected and
+  without copying, moving or excluding anything on disk.
+
+Once P2 registers the per-file digests, a candidate must additionally match all
+five.  The fixtures are now realistic twelve-file bundles, and the regressions
+cover: a complete bundle accepted, a same-code decoy differing by one byte in an
+input file rejected, the other seven files not unexpected, an unknown
+thirteenth file rejected by the directory contract, byte-identical duplicates
+accepted and audited, and a `SUPERSEDED` copy rejected.
+
+**The oracle evidence structure was too loose.**  A PASS could be assembled from
+a one-character `prep_bundle_sha256` and a single fixture name.  The record now
+requires: every identity field a lowercase 64-hex SHA-256, including the PREP
+harness identity; the complete registered counterexample list, by the exact
+name of each regression test, with no omissions and no duplicates; and per
+fixture a result record carrying the source digest, the adapter digest and
+`equal`, where `equal` must be true and the two digests must agree.
+`fixtures_passed` must equal both the number that actually compared equal and
+the total.  A bare list of names is not a differential.
+
+`SOURCE_MATCH_ORACLE_RECORD` stays `None`; a real PASS may only be registered
+after P3, in a separate PR.
+
+The three PREP designs in
+`research/HANDOFF_2026-08-12_Q5E_prep_p1p2p3_to_codex.md` are corrected: P1
+states published-tree integrity as 146 publisher-listed files plus the
+separately registered digest of `SHA256SUMS.txt` itself, since a checksum file
+cannot verify itself and the frozen verifier skips it; P2 requires a Drive
+folder-id inventory bridged to the mounted bytes, stopping with
+`P2_FOLDER_ID_BRIDGE_UNRESOLVED` when that bridge cannot be built, because a
+matching folder name is not evidence; and P3 requires the digest-verified
+original `build_record` to be executed under dependency injection rather than
+compared against a second reimplementation, which could repeat the same
+misreading twice and call it agreement.
