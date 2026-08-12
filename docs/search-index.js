@@ -1,23 +1,25 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-11",
+ "generated": "2026-08-12",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 779,
+  "total": 834,
   "byType": {
+   "anatomy": 47,
    "kmle": 523,
    "usmle": 60,
-   "paper": 179,
+   "paper": 187,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Cardiology": 78,
-   "Nephrology": 56,
-   "Infectious Disease": 54,
-   "Pediatrics": 52,
+   "Cardiology": 79,
+   "Nephrology": 57,
+   "Infectious Disease": 55,
+   "Pediatrics": 53,
+   "Anatomy": 47,
    "Obstetrics & Gynecology": 37,
    "Neurology": 36,
    "Psychiatry": 36,
@@ -30,10 +32,10 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 32,
    "Rheumatology": 32,
    "Hematology": 31,
-   "Surgery": 29,
-   "Pathology": 25,
-   "Laboratory Medicine": 23,
-   "Hematology-Oncology": 18,
+   "Surgery": 30,
+   "Pathology": 26,
+   "Laboratory Medicine": 24,
+   "Hematology-Oncology": 19,
    "Physiology": 7,
    "Microbiology": 5,
    "Biochemistry": 4,
@@ -51,12 +53,26 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 594,
-   "medium": 185
+   "high": 612,
+   "medium": 218,
+   "low": 4
   },
-  "tagCount": 1822
+  "tagCount": 1855
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-13",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-13",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/anatomy/daily/2026-08-13.md",
+   "snippet": "오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-13 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-0553",
    "type": "kmle",
@@ -630,6 +646,656 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Paroxysmal Supraventricular Tachycardia PSVT AVNRT narrow-complex-tachycardia vagal-maneuver KMLE 2026 / Claude Routine 24세 여자가 20분 전 갑자기 시작된 두근거림으로 응급실에 왔다. 실신이나 흉통은 없다. 이전에도 비슷한 증상이 저절로 멎은 적이 있다. 진찰에서 규칙적인 빠른 맥박이 만져지고 혈압은 유지된다. 활력징후·검사 소견과 심전도는 자료와 같다. 가장 먼저 시도할 처치는? A. 경정맥 미주신경 자극을 먼저 시도한다 B. 정맥 아미오다론을 투여한다 C. 즉시 동기화 심장율동전환을 한다 D. 정맥 딜티아젬을 우선 투여한다 E. 경구 베타차단제를 투여한다 혈역학이 안정된 규칙적 좁은 QRS 빈맥(발작성 상심실빈맥)에서는 방실결절 전도를 늦추는 미주신경 자극(발살바·변형 발살바)을 가장 먼저 시도한다. 실패하면 아데노신, 그다음 칼슘·베타차단제 순으로 넘어간다."
   },
   {
+   "id": "anatomy-src-missing",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "missing_source",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/missing-sources.md",
+   "snippet": "Missing sources Drive에 원본이 없는 회차: 1, 8 1회차(orientation), 8회차(Tagging 1 원본)는 현재 폴더에 없다. 없는 파일을 추측해 만들지 않는다 — 업로드되면 inventory가 자동 반영한다.",
+   "text": "Anatomy missing_source Google Drive (3Q 해부학) Missing sources Drive에 원본이 없는 회차: 1, 8 1회차(orientation), 8회차(Tagging 1 원본)는 현재 폴더에 없다. 없는 파일을 추측해 만들지 않는다 — 업로드되면 inventory가 자동 반영한다."
+  },
+  {
+   "id": "anatomy-src-a2-tagging2",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-tagging2.md",
+   "snippet": "Source 파일: tagging 2차.pdf (Drive file ID 1v5m2IeMpb2JwaotIYJa vILdUg5JRIxP ) 폴더: 해부2 · 크기 2,570,003 bytes · Drive modified 2026 08 04T05:18:14Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: tagging 2차.pdf (Drive file ID 1v5m2IeMpb2JwaotIYJa vILdUg5JRIxP ) 폴더: 해부2 · 크기 2,570,003 bytes · Drive modified 2026 08 04T05:18:14Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s15",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s15.md",
+   "snippet": "Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s14",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s14.md",
+   "snippet": "Source 파일: 14차시(0930) 문용석pf.pdf (Drive file ID 1w9YssObls08gA35da5nZXiBt9rDXQpV ) 폴더: 해부2 · 크기 3,667,939 bytes · Drive modified 2026 08 04T05:18:00Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 14차시(0930) 문용석pf.pdf (Drive file ID 1w9YssObls08gA35da5nZXiBt9rDXQpV ) 폴더: 해부2 · 크기 3,667,939 bytes · Drive modified 2026 08 04T05:18:00Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s13",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s13.md",
+   "snippet": "Source 파일: 13차시(0929) 김홍태pf.pdf (Drive file ID 1fqcNIy Z2BnysPlRCl8F8cSaMl 2SLh3 ) 폴더: 해부2 · 크기 25,863,716 bytes · Drive modified 2026 08 04T05:18:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 13차시(0929) 김홍태pf.pdf (Drive file ID 1fqcNIy Z2BnysPlRCl8F8cSaMl 2SLh3 ) 폴더: 해부2 · 크기 25,863,716 bytes · Drive modified 2026 08 04T05:18:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s12",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s12.md",
+   "snippet": "Source 파일: 12차시(0925) 문용석pf.pdf (Drive file ID 1m zNU7EJ3593L 9R 5sXjoeOnKVJq8G5 ) 폴더: 해부2 · 크기 6,982,184 bytes · Drive modified 2026 08 04T05:17:58Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 12차시(0925) 문용석pf.pdf (Drive file ID 1m zNU7EJ3593L 9R 5sXjoeOnKVJq8G5 ) 폴더: 해부2 · 크기 6,982,184 bytes · Drive modified 2026 08 04T05:17:58Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s11",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s11.md",
+   "snippet": "Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s10",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s10.md",
+   "snippet": "Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-s09",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-s09.md",
+   "snippet": "Source 파일: 9차시(0911) 김홍태pf.pdf (Drive file ID 1nuT1hKVN4R3tvK7kqBZEwyfc1iDbfQlp ) 폴더: 해부2 · 크기 29,856,430 bytes · Drive modified 2026 08 04T05:17:38Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 9차시(0911) 김홍태pf.pdf (Drive file ID 1nuT1hKVN4R3tvK7kqBZEwyfc1iDbfQlp ) 폴더: 해부2 · 크기 29,856,430 bytes · Drive modified 2026 08 04T05:17:38Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a2-plan",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부2",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a2-plan.md",
+   "snippet": "Source 파일: 해부 수업계획서.xlsx (Drive file ID 1mS P7LNNkZbpBOB eyJjqKiotpGWZ5gx ) 폴더: 해부2 · 크기 7,867,817 bytes · Drive modified 2025 09 24T02:57:42Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관",
+   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 해부 수업계획서.xlsx (Drive file ID 1mS P7LNNkZbpBOB eyJjqKiotpGWZ5gx ) 폴더: 해부2 · 크기 7,867,817 bytes · Drive modified 2025 09 24T02:57:42Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a1-s07",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부1",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a1-s07.md",
+   "snippet": "Source 파일: 7회차(0904) 문용석pf.pdf (Drive file ID 11INApFHsemvqLWZi5CCsxDwc7P3YHQwV ) 폴더: 해부1 · 크기 6,071,524 bytes · Drive modified 2026 08 04T05:23:20Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용",
+   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 7회차(0904) 문용석pf.pdf (Drive file ID 11INApFHsemvqLWZi5CCsxDwc7P3YHQwV ) 폴더: 해부1 · 크기 6,071,524 bytes · Drive modified 2026 08 04T05:23:20Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a1-s06",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부1",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a1-s06.md",
+   "snippet": "Source 파일: 6회차(0901) 문용석pf.pdf (Drive file ID 1geCFG3Icgh nH6nHvEHacTEeWCiCwLf ) 폴더: 해부1 · 크기 57,243,873 bytes · Drive modified 2026 08 04T05:23:36Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용",
+   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 6회차(0901) 문용석pf.pdf (Drive file ID 1geCFG3Icgh nH6nHvEHacTEeWCiCwLf ) 폴더: 해부1 · 크기 57,243,873 bytes · Drive modified 2026 08 04T05:23:36Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a1-s05",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부1",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a1-s05.md",
+   "snippet": "Source 파일: 5회차(0829) 김홍태pf.pdf (Drive file ID 1qLFsMNerkM4ZuCSBc7qDryowUF6boVTB ) 폴더: 해부1 · 크기 42,388,363 bytes · Drive modified 2026 08 04T05:23:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 5회차(0829) 김홍태pf.pdf (Drive file ID 1qLFsMNerkM4ZuCSBc7qDryowUF6boVTB ) 폴더: 해부1 · 크기 42,388,363 bytes · Drive modified 2026 08 04T05:23:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a1-s04",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부1",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a1-s04.md",
+   "snippet": "Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a1-s03",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부1",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a1-s03.md",
+   "snippet": "Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-src-a1-s02",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부1",
+   "tags": [],
+   "source": "Google Drive (3Q 해부학)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/sources/a1-s02.md",
+   "snippet": "Source 파일: 2회차(0818) 김홍태pf.pdf (Drive file ID 1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm ) 폴더: 해부1 · 크기 38,447,779 bytes · Drive modified 2026 08 04T05:22:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
+   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 2회차(0818) 김홍태pf.pdf (Drive file ID 1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm ) 폴더: 해부1 · 크기 38,447,779 bytes · Drive modified 2026 08 04T05:22:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-해부실습14-퀴즈",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "해부실습14 퀴즈",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-02-해부실습14-퀴즈.md",
+   "snippet": "구조물 용어 (1개) 손목관절 (wrist joint) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
+   "text": "Anatomy 해부실습14 퀴즈 14차시(0930) 문용석pf.pdf 구조물 용어 (1개) 손목관절 (wrist joint) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-항문관",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "항문관",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-11-항문관.md",
+   "snippet": "구조물 용어 (3개) 항문기둥 (anal columns) 빗살선 (pectinate line) 위곧창자동맥 (superior rectal artery) 분류: region=pelvis perineum (conf 0.7) · layers=['skin'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
+   "text": "Anatomy 항문관 14차시(0930) 문용석pf.pdf 구조물 용어 (3개) 항문기둥 (anal columns) 빗살선 (pectinate line) 위곧창자동맥 (superior rectal artery) 분류: region=pelvis perineum (conf 0.7) · layers=['skin'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-팔꿉관절",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "팔꿉관절",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-05-팔꿉관절.md",
+   "snippet": "구조물 용어 (4개) 몸쪽노자관절 (proximal radioulnar joint) 안쪽곁인대 (ulnar collateral ligament) 가쪽곁인대 (radial collateral ligament) 노뼈머리띠인대 (anular ligament of radius) 분류: region=upper limb (conf 0.72) · layers= · classes=['bone', 'joint', 'ligament'] 원문 전",
+   "text": "Anatomy 팔꿉관절 14차시(0930) 문용석pf.pdf 구조물 용어 (4개) 몸쪽노자관절 (proximal radioulnar joint) 안쪽곁인대 (ulnar collateral ligament) 가쪽곁인대 (radial collateral ligament) 노뼈머리띠인대 (anular ligament of radius) 분류: region=upper limb (conf 0.72) · layers= · classes=['bone', 'joint', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-정낭과-정관",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "정낭과 정관",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-13-정낭과-정관.md",
+   "snippet": "구조물 용어 (5개) 정낭 (seminal vesicle) 아래안쪽각에서 좁아져 뚜렷하게 보이지 않지만 정낭배출관 (excretory duct) 정관 (ductus deferens) 낭 안쪽모서리 따라 아래안쪽으로 달리다가 넓어져 정관팽대 (ampulla of ductus deferens) 사정관 (ejaculatory duct) 분류: region=pelvis perineum (conf 0.82) · layers= · cla",
+   "text": "Anatomy 정낭과 정관 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 정낭 (seminal vesicle) 아래안쪽각에서 좁아져 뚜렷하게 보이지 않지만 정낭배출관 (excretory duct) 정관 (ductus deferens) 낭 안쪽모서리 따라 아래안쪽으로 달리다가 넓어져 정관팽대 (ampulla of ductus deferens) 사정관 (ejaculatory duct) 분류: region=pelvis perineum (conf 0.82) · layers= · classes=['duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-전립샘",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "전립샘",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-14-전립샘.md",
+   "snippet": "구조물 용어 (8개) 지만 앞쪽과 가쪽에서는 전립샘과 근막 사이 전립샘정맥얼기 (prostatic venous plexus) 요도전립샘부분 (prostatic urethra) 앞에서 열었다면 요도능선 (urethral crest) 전립샘굴 (prostatic sinus) 요도둔덕 (seminal colliculus) 전립샘소실 (prostatic utricle) 사정관 (ejaculatory duct) 전립샘관 (prostat",
+   "text": "Anatomy 전립샘 14차시(0930) 문용석pf.pdf 구조물 용어 (8개) 지만 앞쪽과 가쪽에서는 전립샘과 근막 사이 전립샘정맥얼기 (prostatic venous plexus) 요도전립샘부분 (prostatic urethra) 앞에서 열었다면 요도능선 (urethral crest) 전립샘굴 (prostatic sinus) 요도둔덕 (seminal colliculus) 전립샘소실 (prostatic utricle) 사정관 (ejaculatory duct) 전립샘관 (prostatic duct) 분류: region=pelvis perineum (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-요도",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "요도",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-15-요도.md",
+   "snippet": "구조물 용어 (5개) 요도 막부분 (membranous urethra) 요도 해면체부분 (spongy urethra) 망울요도샘 (bulbourethral gland) 요도배오목 (navicular fossa) 바깥요도구멍 (external urethral orifice) 분류: region=pelvis perineum (conf 0.8) · layers=['cavity visceral', 'deep'] · classes=['",
+   "text": "Anatomy 요도 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 요도 막부분 (membranous urethra) 요도 해면체부분 (spongy urethra) 망울요도샘 (bulbourethral gland) 요도배오목 (navicular fossa) 바깥요도구멍 (external urethral orifice) 분류: region=pelvis perineum (conf 0.8) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-여자골반안",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "여자골반안",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-08-여자골반안.md",
+   "snippet": "구조물 용어 (15개) 곧창자자궁오목 (rectouterine pouch) 자궁 (uterus) 자궁넓은인대 (broad ligament of uterus) 난소간막 (mesovarium) 난소 (ovary) 자궁관간막 (mesosalpinx) 자궁간막 (mesometrium) 난소걸이인대 (suspensory ligament of ovary) 고유난소인대 (ligament of ovary) 자궁관술 (fimbriae) 자궁관",
+   "text": "Anatomy 여자골반안 14차시(0930) 문용석pf.pdf 구조물 용어 (15개) 곧창자자궁오목 (rectouterine pouch) 자궁 (uterus) 자궁넓은인대 (broad ligament of uterus) 난소간막 (mesovarium) 난소 (ovary) 자궁관간막 (mesosalpinx) 자궁간막 (mesometrium) 난소걸이인대 (suspensory ligament of ovary) 고유난소인대 (ligament of ovary) 자궁관술 (fimbriae) 자궁관배안구멍 (abdominal ostium) 자궁뿔 (uterine horn) 자궁원인대 (round ligament of uterus) 자궁동맥 (uterine artery) 난소동맥 (ovarian artery) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classes=['artery', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-어깨관절",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "어깨관절",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-04-어깨관절.md",
+   "snippet": "구조물 용어 (11개) 어깨밑근 (subscapularis muscle) 어깨밑근힘줄밑주머니 (subtendinous bursa of subscapularis muscle) 돌림근띠 (rotator cuff) 어깨밑근 (subscapularis muscle) 가시위근 (supraspinatus muscle) 가시아래근 (infraspinatus muscle) 작은원근 (teres minor muscle) 부리위팔인대 (cora",
+   "text": "Anatomy 어깨관절 14차시(0930) 문용석pf.pdf 구조물 용어 (11개) 어깨밑근 (subscapularis muscle) 어깨밑근힘줄밑주머니 (subtendinous bursa of subscapularis muscle) 돌림근띠 (rotator cuff) 어깨밑근 (subscapularis muscle) 가시위근 (supraspinatus muscle) 가시아래근 (infraspinatus muscle) 작은원근 (teres minor muscle) 부리위팔인대 (coracohumeral ligament) 위팔가로인대 (transverse humeral ligament) 접시테두리 (glenoid labrum) 접시위팔인대 (glenohumeral ligament) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-손목관절",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "손목관절",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-06-손목관절.md",
+   "snippet": "구조물 용어 (4개) 반달뼈 (lunate) 손배뼈 (scaphoid) 세모뼈 (triquetrum) 관절원반 (articular disc) 분류: region=upper limb (conf 0.68) · layers= · classes=['bone', 'joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
+   "text": "Anatomy 손목관절 14차시(0930) 문용석pf.pdf 구조물 용어 (4개) 반달뼈 (lunate) 손배뼈 (scaphoid) 세모뼈 (triquetrum) 관절원반 (articular disc) 분류: region=upper limb (conf 0.68) · layers= · classes=['bone', 'joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-속엉덩동맥",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "속엉덩동맥",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "low",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-12-속엉덩동맥.md",
+   "snippet": "구조물 용어 (12개) 배꼽동맥 (umbilical artery) 위방광동맥 (superior vesical artery) 아래방광동맥 (inferior vesical artery) 중간곧창자동맥 (middle rectal artery) 엉덩허리동맥 (iliolumbar artery) 엉덩근가지 (iliacus branch) 허리가지 (lumbar branch) 가쪽엉치동맥 (lateral sacral artery) 위볼기동맥",
+   "text": "Anatomy 속엉덩동맥 14차시(0930) 문용석pf.pdf 구조물 용어 (12개) 배꼽동맥 (umbilical artery) 위방광동맥 (superior vesical artery) 아래방광동맥 (inferior vesical artery) 중간곧창자동맥 (middle rectal artery) 엉덩허리동맥 (iliolumbar artery) 엉덩근가지 (iliacus branch) 허리가지 (lumbar branch) 가쪽엉치동맥 (lateral sacral artery) 위볼기동맥 (superior gluteal artery) 아래볼기동맥 (inferior gluteal artery) 속음부동맥 (internal pudendal artery) 폐쇄동맥 (obturator artery) 분류: region=pelvis perineum (conf 0.59) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-봉우리빗장관절-acromioclavicular-join",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "봉우리빗장관절 (acromioclavicular joint)",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-03-봉우리빗장관절-acromioclavicula.md",
+   "snippet": "구조물 용어 (5개) 빗장뼈 봉우리끝 (acromial end of clavicle) 봉우리빗장인대 (acromioclavicular ligament) 부리빗장인대 (coracoclavicular ligament) 마름인대 (trapezoid ligament) 원뿔인대 (conoid ligament) 분류: region=upper limb (conf 0.94) · layers= · classes=['bone', 'ligamen",
+   "text": "Anatomy 봉우리빗장관절 (acromioclavicular joint) 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 빗장뼈 봉우리끝 (acromial end of clavicle) 봉우리빗장인대 (acromioclavicular ligament) 부리빗장인대 (coracoclavicular ligament) 마름인대 (trapezoid ligament) 원뿔인대 (conoid ligament) 분류: region=upper limb (conf 0.94) · layers= · classes=['bone', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-본문",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "본문",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "low",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-01-본문.md",
+   "snippet": "구조물 용어 (0개) 분류: region=pelvis perineum (conf 0.52) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
+   "text": "Anatomy 본문 14차시(0930) 문용석pf.pdf 구조물 용어 (0개) 분류: region=pelvis perineum (conf 0.52) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-방광-겉모습",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "방광 겉모습",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-09-방광-겉모습.md",
+   "snippet": "구조물 용어 (5개) 정중배꼽인대 (median umbilical ligament) 두덩뒤공간 (retropubic space) 방광목 (neck of bladder) 두덩전립샘인대 (puboprostatic ligament) 두덩방광인대 (pubovesical ligament) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classe",
+   "text": "Anatomy 방광 겉모습 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 정중배꼽인대 (median umbilical ligament) 두덩뒤공간 (retropubic space) 방광목 (neck of bladder) 두덩전립샘인대 (puboprostatic ligament) 두덩방광인대 (pubovesical ligament) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classes=['ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-남자골반안",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "남자골반안",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "low",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-07-남자골반안.md",
+   "snippet": "구조물 용어 (11개) 곧창자방광주름 (rectovesical fold) 정낭 (seminal vesicle) 곧창자방광오목 (rectovesical pouch) 곧창자옆오목 (pararectal fossa) 방광옆오목 (paravesical fossa) 폐쇄신경 (obturator nerve) 폐쇄동맥 (obturator artery) 요관 (ureter) 자궁동맥 (uterine artery) 안쪽배꼽인대 (medial u",
+   "text": "Anatomy 남자골반안 14차시(0930) 문용석pf.pdf 구조물 용어 (11개) 곧창자방광주름 (rectovesical fold) 정낭 (seminal vesicle) 곧창자방광오목 (rectovesical pouch) 곧창자옆오목 (pararectal fossa) 방광옆오목 (paravesical fossa) 폐쇄신경 (obturator nerve) 폐쇄동맥 (obturator artery) 요관 (ureter) 자궁동맥 (uterine artery) 안쪽배꼽인대 (medial umbilical ligament) 배꼽동맥 (umbilical artery) 분류: region=pelvis perineum (conf 0.57) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-골반가로막",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "골반가로막",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-16-골반가로막.md",
+   "snippet": "구조물 용어 (20개) 질주름 (vaginal rugae) 자궁목 (cervix of uterus) 자궁구멍 (external os of uterus) 질천장 (vaginal fornix) 질이 자궁구멍 위쪽 앞과 뒤로 뻗어있는 곳 자궁 (uterus) 자궁바닥 (fundus of uterus) 자궁몸통 (body of uterus) 자궁잘록 (isthmus of uterus) 자궁몸통과 자궁목 사이 좁아진 부분 골반가로막 (",
+   "text": "Anatomy 골반가로막 14차시(0930) 문용석pf.pdf 구조물 용어 (20개) 질주름 (vaginal rugae) 자궁목 (cervix of uterus) 자궁구멍 (external os of uterus) 질천장 (vaginal fornix) 질이 자궁구멍 위쪽 앞과 뒤로 뻗어있는 곳 자궁 (uterus) 자궁바닥 (fundus of uterus) 자궁몸통 (body of uterus) 자궁잘록 (isthmus of uterus) 자궁몸통과 자궁목 사이 좁아진 부분 골반가로막 (pelvic diaphragm) 항문올림근 (levator ani muscle) 과 꼬리근 (coccygeus muscle) 궁둥뼈가시 (ischial spine) 폐쇄관 (obturator canal) 속폐쇄근막 (obturator fascia) 항문올림근힘줄활 (tendinous arch of levator ani muscle) 두덩곧창자근 (puborectalis muscle) 비뇨생식구멍 (urogenital hiatus) 두덩꼬리근 (pubococcygeus muscle) 엉덩꼬리근 (iliococcygeus muscle) 꼬리근 (coccygeus muscle) 분류: region=pelvis perineum (conf 0.7) · layers= · classes=['bone', 'duct', 'foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-pg-a2-s14-곧창자",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "곧창자",
+   "tags": [],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "low",
+   "date": "2026-08-12",
+   "path": "content/anatomy/pages/a2-s14/sec-10-곧창자.md",
+   "snippet": "구조물 용어 (2개) 항문곧창자연결 (anorectal junction) 곧창자가로주름 (transverse folds of rectum) 분류: region=pelvis perineum (conf 0.47) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
+   "text": "Anatomy 곧창자 14차시(0930) 문용석pf.pdf 구조물 용어 (2개) 항문곧창자연결 (anorectal junction) 곧창자가로주름 (transverse folds of rectum) 분류: region=pelvis perineum (conf 0.47) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+  },
+  {
+   "id": "anatomy-daily-2026-08-12",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-12",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-12",
+   "path": "content/anatomy/daily/2026-08-12.md",
+   "snippet": "오늘의 학습 (2026 08 12 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 29일 · Tagging 2까지 68일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-12 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 12 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 29일 · Tagging 2까지 68일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-ans-a2-tagging2",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "Tagging 2 answer-only material",
+   "tags": [],
+   "source": "tagging 2차.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/answers/a2-tagging2.md",
+   "snippet": "Answer only 자료 파싱 결과 총 713개 구조물, 번호 항목(과거 태깅 답 후보) 82개. 부위 분포: abdomen 216, head 140, multi 1, neck 50, pelvis perineum 163, upper limb 143 번호 항목은 answer only candidate: true / priority: high 로만 기록한다. 원래 질문·핀 위치·사진을 복원한 것처럼 가장하지 않는다. 새 문항은 ",
+   "text": "Anatomy Tagging 2 answer-only material tagging 2차.pdf Answer only 자료 파싱 결과 총 713개 구조물, 번호 항목(과거 태깅 답 후보) 82개. 부위 분포: abdomen 216, head 140, multi 1, neck 50, pelvis perineum 163, upper limb 143 번호 항목은 answer only candidate: true / priority: high 로만 기록한다. 원래 질문·핀 위치·사진을 복원한 것처럼 가장하지 않는다. 새 문항은 강의 PDF에서 같은 구조가 확인될 때만 생성한다(아니면 needs review 격리)."
+  },
+  {
+   "id": "anatomy-2026-0012",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "항문관의 빗살선",
+   "tags": [
+    "빗살선",
+    "pectinate line",
+    "항문관"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0012.md",
+   "snippet": "문제 빗살선 기준 — frontmatter 참조. 정답 및 해설 동맥·정맥·신경·림프의 분수령. 답가지 E는 자료에 없는 항목.",
+   "text": "Anatomy 항문관의 빗살선 빗살선 pectinate line 항문관 14차시(0930) 문용석pf.pdf 문제 빗살선 기준 — frontmatter 참조. 정답 및 해설 동맥·정맥·신경·림프의 분수령. 답가지 E는 자료에 없는 항목."
+  },
+  {
+   "id": "anatomy-2026-0011",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "사정관의 형성",
+   "tags": [
+    "사정관",
+    "ejaculatory duct",
+    "정관팽대",
+    "정낭"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0011.md",
+   "snippet": "문제 사정관 형성 — frontmatter 참조. 정답 및 해설 정관팽대 + 정낭배출관 → 사정관 → 전립샘 관통 → 요도전립샘부분.",
+   "text": "Anatomy 사정관의 형성 사정관 ejaculatory duct 정관팽대 정낭 14차시(0930) 문용석pf.pdf 문제 사정관 형성 — frontmatter 참조. 정답 및 해설 정관팽대 + 정낭배출관 → 사정관 → 전립샘 관통 → 요도전립샘부분."
+  },
+  {
+   "id": "anatomy-2026-0010",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "요관의 골반 주행",
+   "tags": [
+    "요관",
+    "ureter",
+    "주행"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0010.md",
+   "snippet": "문제 요관 골반 주행 — frontmatter 참조. 정답 및 해설 속엉덩동맥 앞 → 자궁넓은인대 아래 → 방광 위가쪽각.",
+   "text": "Anatomy 요관의 골반 주행 요관 ureter 주행 14차시(0930) 문용석pf.pdf 문제 요관 골반 주행 — frontmatter 참조. 정답 및 해설 속엉덩동맥 앞 → 자궁넓은인대 아래 → 방광 위가쪽각."
+  },
+  {
+   "id": "anatomy-2026-0009",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "자궁넓은인대의 부분 구별",
+   "tags": [
+    "자궁넓은인대",
+    "mesosalpinx",
+    "구별"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0009.md",
+   "snippet": "문제 자궁넓은인대 부분 구별 — frontmatter 참조. 정답 및 해설 위에서부터: 자궁관간막 난소간막 자궁간막. 걸이인대는 혈관 복막주름.",
+   "text": "Anatomy 자궁넓은인대의 부분 구별 자궁넓은인대 mesosalpinx 구별 14차시(0930) 문용석pf.pdf 문제 자궁넓은인대 부분 구별 — frontmatter 참조. 정답 및 해설 위에서부터: 자궁관간막 난소간막 자궁간막. 걸이인대는 혈관 복막주름."
+  },
+  {
+   "id": "anatomy-2026-0008",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "항문올림근의 구성 — 위치 순서",
+   "tags": [
+    "항문올림근",
+    "levator ani",
+    "골반가로막"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0008.md",
+   "snippet": "문제 항문올림근 위치 순서 — frontmatter 참조. 정답 및 해설 두덩곧창자근이 가장 앞·안쪽. 엉덩꼬리근은 힘줄활에서 기시(가장 가쪽).",
+   "text": "Anatomy 항문올림근의 구성 — 위치 순서 항문올림근 levator ani 골반가로막 14차시(0930) 문용석pf.pdf 문제 항문올림근 위치 순서 — frontmatter 참조. 정답 및 해설 두덩곧창자근이 가장 앞·안쪽. 엉덩꼬리근은 힘줄활에서 기시(가장 가쪽)."
+  },
+  {
+   "id": "anatomy-2026-0007",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "방광 속면의 매끈한 세모꼴 부위",
+   "tags": [
+    "방광삼각",
+    "trigone",
+    "spotter"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0007.md",
+   "snippet": "문제 방광 속면 spotter(단답) — frontmatter 참조. 정답 및 해설 정답은 frontmatter answer . 표지: 속요도구멍(아래 꼭짓점)·요관구멍×2·요관사이주름.",
+   "text": "Anatomy 방광 속면의 매끈한 세모꼴 부위 방광삼각 trigone spotter 14차시(0930) 문용석pf.pdf 문제 방광 속면 spotter(단답) — frontmatter 참조. 정답 및 해설 정답은 frontmatter answer . 표지: 속요도구멍(아래 꼭짓점)·요관구멍×2·요관사이주름."
+  },
+  {
+   "id": "anatomy-2026-0006",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "여자 골반안의 복막 오목",
+   "tags": [
+    "곧창자자궁오목",
+    "rectouterine pouch",
+    "복막"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0006.md",
+   "snippet": "문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다.",
+   "text": "Anatomy 여자 골반안의 복막 오목 곧창자자궁오목 rectouterine pouch 복막 14차시(0930) 문용석pf.pdf 문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다."
+  },
+  {
+   "id": "anatomy-2026-0005",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "폐쇄신경의 주행",
+   "tags": [
+    "폐쇄신경",
+    "obturator nerve",
+    "주행"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0005.md",
+   "snippet": "문제 폐쇄신경의 주행 순서 문제 — frontmatter stem / choices 참조. 정답 및 해설 기시(허리신경얼기) → 큰허리근 안쪽모서리 → 혈관 사이 통과 → 폐쇄관. 동맥은 신경 아래쪽.",
+   "text": "Anatomy 폐쇄신경의 주행 폐쇄신경 obturator nerve 주행 14차시(0930) 문용석pf.pdf 문제 폐쇄신경의 주행 순서 문제 — frontmatter stem / choices 참조. 정답 및 해설 기시(허리신경얼기) → 큰허리근 안쪽모서리 → 혈관 사이 통과 → 폐쇄관. 동맥은 신경 아래쪽."
+  },
+  {
+   "id": "anatomy-2026-0004",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "속엉덩동맥 분지 판별",
+   "tags": [
+    "속엉덩동맥",
+    "분지",
+    "internal iliac artery"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/questions/tagging-2/anatomy-2026-0004.md",
+   "snippet": "문제 골반안의 동맥 박리 중이다. 다음 중 속엉덩동맥의 가지가 아닌 것은? A. 배꼽동맥 — B. 위볼기동맥 — C. 위곧창자동맥 — D. 폐쇄동맥 — E. 가쪽엉치동맥 정답 및 해설 정답은 frontmatter answer . 위곧창자동맥=아래창자간막동맥 가지(중간곧창자동맥과 문합).",
+   "text": "Anatomy 속엉덩동맥 분지 판별 속엉덩동맥 분지 internal iliac artery 14차시(0930) 문용석pf.pdf 문제 골반안의 동맥 박리 중이다. 다음 중 속엉덩동맥의 가지가 아닌 것은? A. 배꼽동맥 — B. 위볼기동맥 — C. 위곧창자동맥 — D. 폐쇄동맥 — E. 가쪽엉치동맥 정답 및 해설 정답은 frontmatter answer . 위곧창자동맥=아래창자간막동맥 가지(중간곧창자동맥과 문합)."
+  },
+  {
+   "id": "anatomy-2026-0003",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "골반가로막의 구성 — 안에서 가쪽으로",
+   "tags": [
+    "골반가로막",
+    "pelvic diaphragm",
+    "항문올림근",
+    "levator ani"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf + tagging 2차.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/concepts/pelvis-perineum/anatomy-2026-0003.md",
+   "snippet": "골반가로막 = 항문올림근 + 꼬리근 (+ 근막) 항문올림근(levator ani) ★tagging 답 후보 를 앞안쪽→가쪽 순서로: 1. 두덩곧창자근 (puborectalis) — 가장 앞·안쪽. 두덩뼈몸통에서 일어나 항문관을 감싸고 뒤에서 양쪽이 연결. 양쪽 사이 틈새 = 비뇨생식구멍 (요도·질 통과) 2. 두덩꼬리근 (pubococcygeus) — 두덩곧창자근 바로 가쪽. 두덩뼈몸통 → 꼬리뼈 3. 엉덩꼬리근 (ilioco",
+   "text": "Anatomy 골반가로막의 구성 — 안에서 가쪽으로 골반가로막 pelvic diaphragm 항문올림근 levator ani 14차시(0930) 문용석pf.pdf + tagging 2차.pdf 골반가로막 = 항문올림근 + 꼬리근 (+ 근막) 항문올림근(levator ani) ★tagging 답 후보 를 앞안쪽→가쪽 순서로: 1. 두덩곧창자근 (puborectalis) — 가장 앞·안쪽. 두덩뼈몸통에서 일어나 항문관을 감싸고 뒤에서 양쪽이 연결. 양쪽 사이 틈새 = 비뇨생식구멍 (요도·질 통과) 2. 두덩꼬리근 (pubococcygeus) — 두덩곧창자근 바로 가쪽. 두덩뼈몸통 → 꼬리뼈 3. 엉덩꼬리근 (iliococcygeus) — 가장 가쪽. 항문올림근힘줄활 에서 일어나 꼬리뼈로 4. 꼬리근 (coccygeus) — 항문올림근보다 가쪽. 궁둥뼈가시 → 꼬리뼈·엉치뼈 기준 구조물: 항문올림근힘줄활 — 속폐쇄근막이 선 모양으로 두꺼워진 것. 궁둥뼈가시 → 폐쇄관까지 거의 수평 전체 배열은 수평이 아니라 가쪽벽에서 아래안쪽으로 (움푹한 그릇 모양) — 그 아래면이 궁둥항문오목의 안쪽벽 이 된다 관계 문장(말로 설명하기) 1. 곧창자는 골반가로막을 뚫으며 항문곧창자연결이 그 높이에 있다. 2. 속폐쇄근(가쪽벽) → 속폐쇄근막 → 힘줄활 → 항문올림근 기시의 층 순서. 3. 궁둥구멍근은 골반가로막이 아니라 엉치뼈 앞면에서 일어나 볼기로 나간다(혼동 주의)."
+  },
+  {
+   "id": "anatomy-2026-0002",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "돌림근띠와 어깨관절 안정화 구조물",
+   "tags": [
+    "rotator cuff",
+    "돌림근띠",
+    "어깨관절",
+    "glenohumeral"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/concepts/upper-limb/anatomy-2026-0002.md",
+   "snippet": "어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로) 돌림근띠(rotator cuff) — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다: 근육 관절주머니에서의 위치 어깨밑근 (subscapularis) 앞 가시위근 (supraspinatus) 위 가시아래근 (infraspinatus) 뒤위 작은원근 (teres minor) 뒤아래 보조 구조물: 접시테두리(glenoid labrum) — 접시오목의 깊이를 깊게 함 접시",
+   "text": "Anatomy 돌림근띠와 어깨관절 안정화 구조물 rotator cuff 돌림근띠 어깨관절 glenohumeral 14차시(0930) 문용석pf.pdf 어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로) 돌림근띠(rotator cuff) — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다: 근육 관절주머니에서의 위치 어깨밑근 (subscapularis) 앞 가시위근 (supraspinatus) 위 가시아래근 (infraspinatus) 뒤위 작은원근 (teres minor) 뒤아래 보조 구조물: 접시테두리(glenoid labrum) — 접시오목의 깊이를 깊게 함 접시위팔인대(glenohumeral ligament) — 관절주머니 앞부분이 두꺼워진 띠. 겉보다 관절주머니 속에서 더 잘 보인다(위·중간·아래 구분) 부리위팔인대(coracohumeral ligament) — 부리돌기 가쪽모서리 → 위팔뼈 큰결절 위팔두갈래근 긴갈래 — 위팔가로인대 깊은쪽 결절사이고랑을 지난다 관계 문장(말로 설명하기) 1. 어깨밑근은 관절주머니 앞 을 덮고, 어깨밑근힘줄밑주머니는 관절주머니 섬유막구멍과 연결된다. 2. 관절주머니 섬유막은 안쪽으로 접시오목 모서리, 가쪽으로 위팔뼈 해부목 에 붙는다. 3. 부리빗장인대(마름인대 가쪽 + 원뿔인대 안쪽)는 봉우리빗장관절을 간접 지지한다."
+  },
+  {
+   "id": "anatomy-2026-0001",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "속엉덩동맥 분지 트리",
+   "tags": [
+    "속엉덩동맥",
+    "internal iliac artery",
+    "분지",
+    "골반"
+   ],
+   "source": "14차시(0930) 문용석pf.pdf + tagging 2차.pdf",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/anatomy/concepts/pelvis-perineum/anatomy-2026-0001.md",
+   "snippet": "속엉덩동맥 분지 — 트리로 외우기 온엉덩동맥에서 일어나 아래로 달려 골반안으로 들어간다(강의 14차시 실측 확인). 낱말이 아니라 어디로 빠져나가는가 로 묶는 것이 태깅 대비 핵심이다. 앞쪽(내장 방향) : 배꼽동맥→위방광동맥 · 아래방광동맥 · 중간곧창자동맥 뒤·벽쪽 : 엉덩허리동맥(엉덩근/허리 가지) · 가쪽엉치동맥 큰궁둥구멍으로 나가는 셋 : 위볼기동맥(윗부분) / 아래볼기동맥·속음부동맥(아랫부분) 폐쇄관으로 : 폐쇄동맥",
+   "text": "Anatomy 속엉덩동맥 분지 트리 속엉덩동맥 internal iliac artery 분지 골반 14차시(0930) 문용석pf.pdf + tagging 2차.pdf 속엉덩동맥 분지 — 트리로 외우기 온엉덩동맥에서 일어나 아래로 달려 골반안으로 들어간다(강의 14차시 실측 확인). 낱말이 아니라 어디로 빠져나가는가 로 묶는 것이 태깅 대비 핵심이다. 앞쪽(내장 방향) : 배꼽동맥→위방광동맥 · 아래방광동맥 · 중간곧창자동맥 뒤·벽쪽 : 엉덩허리동맥(엉덩근/허리 가지) · 가쪽엉치동맥 큰궁둥구멍으로 나가는 셋 : 위볼기동맥(윗부분) / 아래볼기동맥·속음부동맥(아랫부분) 폐쇄관으로 : 폐쇄동맥(폐쇄신경 아래쪽 동행) 혼동 주의: 위곧창자동맥은 속엉덩동맥의 가지가 아니라 아래창자간막동맥의 가지 다(강의 항문관 절에서 명시) — 중간곧창자동맥과 문합한다. 관계 문장(말로 설명하기) 1. 폐쇄신경·동맥·정맥은 함께 폐쇄관으로 들어간다(신경이 위). 2. 속음부동맥은 궁둥뼈가시 바로 위에서 큰궁둥구멍 아랫부분으로 골반을 빠져나간다. 3. 요관은 속엉덩동맥 앞 에서 아래앞쪽으로 달린다(수술·태깅 표지 관계)."
+  },
+  {
    "id": "usmle-2026-0060",
    "type": "usmle",
    "topic": "Psychiatry",
@@ -742,6 +1408,134 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0055.md",
    "snippet": "A 4 year old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examinati",
    "text": "Immunology Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility chronic-granulomatous-disease NADPH-oxidase oxidative-burst catalase-positive-organisms primary-immunodeficiency USMLE-style / MedKOS (immunology · phagocyte oxidative burst defects) A 4 year old boy is hospitalized for the third time this year with Staphylococcus aureus pneumonia complicated by a hepatic abscess. His growth parameters have been consistently below the 5th percentile since infancy, and physical examination reveals hepatosplenomegaly and residual scarring from prior skin abscesses. Vital signs and laboratory studies are shown. Which of the following is the most likely explanation for this patient's recurrent infections? A. Absence of functional B lymphocytes leading to failure of opsonizing antibody production B. Deficient complement mediated membrane attack complex formation C. Failure of neutrophils to generate reactive oxygen species via NADPH oxidase D. Impaired T cell mediated killing of intracellular pathogens due to IL 12 receptor deficiency E. Failure of neutrophils to fuse phagosomes with lysosomes containing myeloperoxidase Recurrent infections with catalase positive organisms, abscess formation, and a markedly reduced DHR oxidative burst signal indicate failure of the NADPH oxidase complex to generate reactive oxygen species — the defect underlying chronic granulomatous disease."
+  },
+  {
+   "id": "paper-2026-0187",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Aesthetic surgery journal",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0187_retrospective_validation_of_a_tissue_preserving_breast_augme.md",
+   "snippet": "Title Retrospective Validation of a Tissue Preserving Breast Augmentation Approach: From Native Tissue Geometry to Surgical Practice Authors Chacon Quiros Manuel, Burke Renee, Gordon Ashley, Herrera Mora Geovanny, Solis Torres Jeffry, Solis",
+   "text": "Surgery scraped pubmed PubMed / Aesthetic surgery journal Title Retrospective Validation of a Tissue Preserving Breast Augmentation Approach: From Native Tissue Geometry to Surgical Practice Authors Chacon Quiros Manuel, Burke Renee, Gordon Ashley, Herrera Mora Geovanny, Solis Torres Jeffry, Solis Chaves Pablo, van der Pot Wouter Journal / DOI Aesthetic surgery journal · DOI: 10.1093/asj/sjag110 · PMID: 42579317 https://pubmed.ncbi.nlm.nih.gov/42579317/ Abstract BACKGROUND: Breast augmentation has traditionally focused on implant volume and pocket selection, often overlooking the variability of native breast anatomy. OBJECTIVES: Breast tissue preservation (BTP) emphasizes preservation of fascial planes and tissue integrity, enabling prepectoral implant placement within a preserved tissue envelope. When combined with 3 dimensional (3D) imaging and ultrasound based geometric analysis, BTP supports selective implant positioning tailored to regional deficiencies, potentially improving stability and natural aesthetic outcomes while reducing reliance on larger implant volumes and the need for scaffold support. METHODS: A single center retrospective study analyzed 111 patients undergoing primary breast augmentation or augmentation mastopexy using tissue preservation techniques, including transaxillary and inframammary approaches. Pre and 12 month postoperative assessments incorporated 3D imaging and high resolution ultrasound to evaluate breast geometry, tissue distribution, volumetric and angular changes, and stability. Safety outcomes and patient satisfaction were evaluated over 12 months. RESULTS: Among 111 patients, complication rates were low (4.5%), with no Baker III IV capsular contracture, no implant ruptures and high satisfaction scores. Geometric analysis demonstrated consistent increases in upper, medial, and lateral angles, procedure specific inferior angle changes, preserved nipple alignment with maximal projection, and improved breast stability, supporting controlled and reproducible volume redistribution. These changes were achieved through targeted regional volume placement. CONCLUSIONS: This study highlights the clinical value of a comprehensive native breast assessment in real world practice. Integrating volumetric, topographic, and angular analysis enables individualized planning, precise implant positioning, with minimally invasive BTP techniques. This approach supports biomechanical stability, demonstrates a favorable safety profile, and promotes natural outcomes in everyday surgical practice. Level of Evidence: 4 (Therapeutic). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0186",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of public health",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0186_eyecare_health_promotion_in_schools_around_the_free_state_pr.md",
+   "snippet": "Title Eyecare health promotion in schools around the Free State Province, South Africa: school based interventional study Authors Nyathela Xolani, Nirghin Urvashni, Ebrahim Khan Naimah Journal / DOI International journal of public health · ",
+   "text": "Pediatrics scraped pubmed PubMed / International journal of public health Title Eyecare health promotion in schools around the Free State Province, South Africa: school based interventional study Authors Nyathela Xolani, Nirghin Urvashni, Ebrahim Khan Naimah Journal / DOI International journal of public health · DOI: 10.3389/ijph.2026.1609229 · PMID: 42577397 https://pubmed.ncbi.nlm.nih.gov/42577397/ Abstract OBJECTIVES: School based health promotion is critical for enhancing health literacy and academic performance. In South Africa, preventable visual impairment among school children may be exacerbated by the absence of structured eyecare promotion interventions. The objective of the study was to implement and evaluate the effectiveness of eyecare health promotion in the Thabo Mofutsanyane district, Free State province. METHODS: A school based cross sectional interventional study was conducted. Following a simple randomised assignment, 10 schools received the intervention while the remaining 10 received no intervention. An adopted and piloted questionnaire was administered at baseline and readministered 6 months after the intervention. The McNemar's chi square test was used for statistical analysis. RESULTS: The baseline study included 199 participants, and following attrition, stood at 136 learners, parents, and teachers. The learner experimental arm demonstrated a statistically significant change in eyecare knowledge (p < 0.05). While no statistically significant changes were noted among teachers, parents and learners had statistically significant variables. CONCLUSION: Despite limitations, this study demonstrated that targeted eye health promotion can improve eyecare knowledge. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0185",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the Egyptian National Cancer Institute",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0185_economic_evaluation_comparing_endobronchial_ultrasound_guide.md",
+   "snippet": "Title Economic evaluation comparing Endobronchial Ultrasound guided Transbronchial Needle Aspiration (EBUS TBNA) and surgical mediastinoscopy for mediastinal staging of lung cancer: a systematic review Authors Anwar Zainib Amirah, Anak Andr",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of the Egyptian National Cancer Institute Title Economic evaluation comparing Endobronchial Ultrasound guided Transbronchial Needle Aspiration (EBUS TBNA) and surgical mediastinoscopy for mediastinal staging of lung cancer: a systematic review Authors Anwar Zainib Amirah, Anak Andrew Atoi Airy, Chan Catherine Soo Shen, Raddy Dhinagar Selgal, De Cruz Edwin, Lamit Rafidah, Ayob Nabilah, Awg Piut Suzana, et al. Journal / DOI Journal of the Egyptian National Cancer Institute · DOI: 10.1186/s43046 026 00396 1 · PMID: 42579213 https://pubmed.ncbi.nlm.nih.gov/42579213/ Abstract INTRODUCTION: Mediastinal sampling is essential for diagnosing and staging thoracic diseases, particularly non small cell lung cancer (NSCLC). Traditional mediastinoscopy has been the gold standard; however, Endobronchial Ultrasound guided Transbronchial Needle Aspiration (EBUS TBNA) has emerged as a minimally invasive alternative. This systematic review compares the economic evaluations of EBUS TBNA to determine their cost effectiveness, healthcare resource use, and overall economic impact. METHODOLOGY: A systematic review was conducted following PRISMA guidelines. Databases searched included PubMed and ScienceDirect, using keywords such as \"EBUS TBNA,\" \"mediastinoscopy,\" and \"cost effectiveness.\" Inclusion criteria focused on studies evaluating studies comparing EBUS TBNA with traditional mediastinoscopy, with direct economic comparisons between EBUS TBNA and traditional mediastinoscopy. Articles published in English within the last 10 15 years were included, covering randomized controlled trials, cohort studies, and economic modeling analyses. Four studies met the eligibility criteria after screening and full text review. RESULTS: The review revealed that EBUS TBNA consistently demonstrated lower costs and better cost effectiveness compared to TMC. In the study by Steinfort et al. [1], EBUS TBNA reduced costs by AU$5,898 per patient compared to mediastinoscopy. Similarly, Chouaid et al. [2] reported cost savings of €1,450 per patient in France. EBUS TBNA avoided mediastinoscopy in 80% of cases while maintaining high diagnostic accuracy. Sensitivity analyses confirmed that EBUS TBNA was the most cost effective when its sensitivity exceeded 17% and mediastinal lymph node metastases (MLNM) prevalence was below 79%. DISCUSSION: EBUS TBNA offers significant economic and clinical advantages over traditional mediastinoscopy. It reduces the need for invasive procedures, minimizing patient risk and healthcare costs. Its combination with diagnostic tools like PET CT further enhances its value, as seen in Søgaard et al. [3], where this approach yielded the most cost effective outcomes for NSCLC staging. While most studies relied on modeled populations, the findings are robust across diverse healthcare settings. Limitations include the lack of real world long term analyses and variability in healthcare systems. CONCLUSION: This systematic review highlights that EBUS TBNA is a cost effective and clinically valuable alternative to traditional mediastinoscopy for mediastinal sampling. Its integration into clinical practice can improve resource utilization and patient outcomes while significantly reducing healthcare costs. Future research should explore its long term cost effectiveness and broader applicability in diverse healthcare settings. EBUS TBNA represents a critical advancement in the diagnostic staging of thoracic diseases. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0184",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Chemical biology & drug design",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0184_application_of_systems_genetics_to_investigate_molecular_pat.md",
+   "snippet": "Title Application of Systems Genetics to Investigate Molecular Pathology of Early Onset Colorectal Cancer Authors Kim Minjae J, Carr Sydney L, Kulkarni Vishnutheertha, Manchadi Mary Louise Journal / DOI Chemical biology & drug design · DOI:",
+   "text": "Pathology scraped pubmed PubMed / Chemical biology & drug design Title Application of Systems Genetics to Investigate Molecular Pathology of Early Onset Colorectal Cancer Authors Kim Minjae J, Carr Sydney L, Kulkarni Vishnutheertha, Manchadi Mary Louise Journal / DOI Chemical biology & drug design · DOI: 10.1111/cbdd.70379 · PMID: 42579310 https://pubmed.ncbi.nlm.nih.gov/42579310/ Abstract Colorectal cancer (CRC) is the second most common cause of cancer related deaths in the United States. The incidence of early onset CRC (EOCRC) has been rising in the past few decades. Given the multifaceted nature of EOCRC, the genetic and environmental factors contributing to this malignancy have remained elusive. Systems genetics is a multi omics tool that analyzes multiple genes as a collective network. Transcriptional correlation, protein protein interaction network, functional annotation, and drug gene interaction analyzes enable investigators to explore the functional roles of target genes and aid with discovery of novel diagnostic biomarkers and potential therapeutics. To clarify the objective of this work, this manuscript serves three purposes: a narrative review of recent systems genetics applications in EOCRC research, a step by step protocol for conducting these analyses, and a discussion of current advances in systems genetics to address limitations in generalizability and context dependence. Through this manuscript, we envision a future in which emerging oncology researchers adopt these tools into their investigations of EOCRC and other malignancies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0183",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0183_blood_cell_camouflaged_liquid_metal_nanoconjugates_orchestra.md",
+   "snippet": "Title Blood Cell Camouflaged Liquid Metal Nanoconjugates Orchestrate Treg Depletion and STING Amplified Photothermal Immunity for Metastatic Triple Negative Breast Cancer Therapy Authors Sang Nina, Miyako Eijiro Journal / DOI Advanced scien",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany) Title Blood Cell Camouflaged Liquid Metal Nanoconjugates Orchestrate Treg Depletion and STING Amplified Photothermal Immunity for Metastatic Triple Negative Breast Cancer Therapy Authors Sang Nina, Miyako Eijiro Journal / DOI Advanced science (Weinheim, Baden Wurttemberg, Germany) · DOI: 10.1002/advs.77069 · PMID: 42579335 https://pubmed.ncbi.nlm.nih.gov/42579335/ Abstract Triple negative breast cancer (TNBC) remains highly lethal due to aggressive metastasis and profound immunosuppression by regulatory T cells (Tregs). Here, we present a biomimetic liquid metal (LM) based photothermal immunotherapeutic nanoplatform exploiting gallium based LMs to orchestrate cascade amplification of antitumor immunity. The engineered nanoplatform (B LM DMX αCD25) integrates an LM photothermal core with dual immunomodulatory components anti CD25 antibody for Treg depletion and stimulator of interferon genes (STING) agonist 5,6 dimethylxanthenone 4 acetic acid (DMX) for innate immune activation while blood derived camouflaging enhances immune evasion and tumor accumulation. Quantitative RT PCR of 13 immune related genes confirmed STING engagement, robust CD8+ cytotoxic T cell infiltration, and Treg depletion in treated tumors. This platform operates through three synchronized mechanisms: (1) selective intratumoral Treg depletion dismantling immunosuppression; (2) near infrared triggered LM mediated photothermal therapy (58°C within 5 min) inducing immunogenic cell death and releasing tumor associated antigens; and (3) STING pathway activation promoting dendritic cell maturation and tumor specific cytotoxic T cell responses, collectively transforming immunologically \"cold\" TNBC into immune responsive tumors. In orthotopic 4T1 models, the nanoplatform achieves significant tumor regression with enhanced survival, while in metastatic models, it reduces pulmonary metastatic nodules and extends median survival beyond 70 days. This work establishes a paradigm shifting biomimetic LM based nanodelivery strategy addressing fundamental immunological barriers in TNBC through coordinated photothermal immunotherapy, offering a clinically translatable approach for TNBC. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0182",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetes therapy : research, treatment and education of diabetes and related disorders",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0182_healthcare_cost_impacts_of_telehealth_delivered_nutrition_th.md",
+   "snippet": "Title Healthcare Cost Impacts of Telehealth Delivered Nutrition Therapy among US Adults with Type 2 Diabetes or Obesity: A Matched Difference in Differences Analysis Authors Shanmugam Priya V, Adams Rebecca N, Athinarayanan Shaminie J, Wolf",
+   "text": "Nephrology scraped pubmed PubMed / Diabetes therapy : research, treatment and education of diabetes and related disorders Title Healthcare Cost Impacts of Telehealth Delivered Nutrition Therapy among US Adults with Type 2 Diabetes or Obesity: A Matched Difference in Differences Analysis Authors Shanmugam Priya V, Adams Rebecca N, Athinarayanan Shaminie J, Wolfberg Adam J, Ballreich Jeromie M Journal / DOI Diabetes therapy : research, treatment and education of diabetes and related disorders · DOI: 10.1007/s13300 026 01909 w · PMID: 42579263 https://pubmed.ncbi.nlm.nih.gov/42579263/ Abstract INTRODUCTION: Type 2 diabetes (T2D) and obesity are associated with substantial morbidity and healthcare spending. Although telehealth delivered lifestyle interventions have demonstrated clinical benefits, evidence on their impact on healthcare costs and utilization remains limited. This study evaluated the association between participation in a comprehensive nutrition first digital care model integrating individualized carbohydrate reduced nutrition support, clinician guided medication management, health coaching, and remote biometric monitoring on total healthcare costs and utilization over 1 year and 2 years. METHODS: We conducted a claims based, retrospective propensity score matched difference in differences analysis of cost and utilization outcomes among US adults with T2D or obesity who (1) enrolled in Virta Health's Individualized Nutrition Therapy (INT) program or (2) had a primary care visit for either condition between 2017 and 2025. Per member, per month (PMPM) outcomes included inpatient, outpatient, and prescription medication costs, as well as inpatient, emergency department, primary care, cardiology, and endocrinology visits. For the T2D cohort only, PMPM costs for each diabetes medication were also evaluated. RESULTS: Among 3819 adults with T2D and 2761 adults with obesity, program participation was associated with $240 and $256 PMPM reductions in total cost of care at 12 months, respectively ( $230 and $189 PMPM over 24 months; all p < 0.001). Among adults with T2D, savings were driven by reduced inpatient visits and deprescription of sodium glucose cotransporter 2 (SGLT2) inhibitors (66.8% reduction from baseline cost), sulfonylureas (51.7%), insulin (43.9%), and glucagon like peptide 1s (GLP 1s) (32.2%). Among adults without T2D and with obesity, reductions accrued across all cost categories. CONCLUSIONS: In this large, real world analysis, enrollment in a comprehensive nutrition first digital care model was associated with reductions in healthcare costs and utilization over 12 and 24 months, with prescription medication cost reductions emerging within the first quarter of treatment among adults with T2D. Together with prior evidence demonstrating clinical effectiveness, these findings suggest that comprehensive digital nutritional care models can generate meaningful economic value. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0181",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of biomedical materials research. Part A",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0181_kidney_targeted_biomimetic_nanoparticles_loaded_with_apolipo.md",
+   "snippet": "Title Kidney Targeted Biomimetic Nanoparticles Loaded With Apolipoprotein H Alleviate Sepsis Associated Acute Kidney Injury by Inhibiting the TLR4/NF κB Pathway Authors Zhu Lijun, He Ruyi, Xiao Jincong, Hu Guoqiang, You Kuangzhang, Rao Suhu",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of biomedical materials research. Part A Title Kidney Targeted Biomimetic Nanoparticles Loaded With Apolipoprotein H Alleviate Sepsis Associated Acute Kidney Injury by Inhibiting the TLR4/NF κB Pathway Authors Zhu Lijun, He Ruyi, Xiao Jincong, Hu Guoqiang, You Kuangzhang, Rao Suhuan Journal / DOI Journal of biomedical materials research. Part A · DOI: 10.1002/jbm.a.70143 · PMID: 42579333 https://pubmed.ncbi.nlm.nih.gov/42579333/ Abstract Sepsis associated acute kidney injury (SA AKI) is a common and life threatening complication of sepsis, whose high incidence and mortality severely impair patient prognosis. Existing anti AKI drugs exhibit limited efficacy due to their inability to efficiently target injured kidneys. Although kidney targeted nanocarrier delivery systems show potential, exogenous nanoparticles are rapidly cleared by the immune system, resulting in a short blood circulatory half life and unsatisfactory targeting efficiency. Recombinant apolipoprotein H (rAPOH) exhibits anti apoptotic and anti inflammatory activities, holding promise for SA AKI treatment; however, its efficacy is constrained by insufficient targeting capability and rapid in vivo metabolic clearance. In this study, we constructed a biomimetic delivery system (KMA@rAPOH) consisting of A@rAPOH nanoparticles coated with kidney targeting peptide functionalized renal tubular epithelial cell membranes to realize targeted rAPOH delivery for SA AKI therapy. The nanocarrier demonstrated satisfactory encapsulation efficiency, high drug loading capacity, and favorable controlled release, along with excellent long term stability in DMEM and deionized water. In vitro, KMA@rAPOH was efficiently internalized by renal tubular epithelial cells and exerted significant anti apoptotic and anti inflammatory effects. In a mouse model of SA AKI, KMA@rAPOH markedly alleviated renal pathological damage and inhibited cell apoptosis. Additionally, it reduced the proportion of CD11c+F4/80+ pro inflammatory macrophages in the renal CD45+CD11b+ population. Mechanistically, KMA@rAPOH was found to reduce TLR4 levels and inhibit NF κB p65 phosphorylation, accompanied by decreased secretion of pro inflammatory cytokines including TNF α, IL 1β, and IL 6. These observations indicate that the TLR4/NF κB cascade may partially mediate the renoprotective activity of KMA@rAPOH, and this biomimetic nanoplatform represents a promising targeted delivery strategy for the treatment of renal inflammatory disorders. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0180",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical transplantation",
+   "confidence": "medium",
+   "date": "2026-08-11",
+   "path": "content/papers/2026/2026-08-11_paper-2026-0180_pre_transplant_left_atrial_volume_index_and_one_year_morbidi.md",
+   "snippet": "Title Pre Transplant Left Atrial Volume Index and One Year Morbidity After Kidney Transplantation Authors Kadir Sajid, Pelaez Andres, Sasidharan Sandeep, Zolty Ronald Journal / DOI Clinical transplantation · DOI: 10.1111/ctr.70638 · PMID: 4",
+   "text": "Cardiology scraped pubmed PubMed / Clinical transplantation Title Pre Transplant Left Atrial Volume Index and One Year Morbidity After Kidney Transplantation Authors Kadir Sajid, Pelaez Andres, Sasidharan Sandeep, Zolty Ronald Journal / DOI Clinical transplantation · DOI: 10.1111/ctr.70638 · PMID: 42579331 https://pubmed.ncbi.nlm.nih.gov/42579331/ Abstract OBJECTIVES: Pre transplant echocardiography is routinely performed in kidney transplant candidates, although it remains unclear which parameters are associated with the broad spectrum of post transplant complications beyond cardiovascular events. Left atrial volume index (LAVI) reflects chronic diastolic burden, and its relationship with overall post transplant morbidity has not been well defined. MATERIAL AND METHODS: In a single center retrospective cohort of 242 adults undergoing first kidney only transplantation (2020 to 2022) with pre transplant echocardiography within 12 months, the main outcome was a composite of one year post transplant complications. Multivariable logistic regression was adjusted for age, sex, BMI, diabetes, and deceased donor status. RESULTS: LAVI was abnormal ( 34 mL/m2) in 83 of 218 patients (38.1%), with largely preserved systolic function (mean LVEF 59.1 ± 6.2%). Abnormal LAVI was associated with the composite outcome (69.5% versus 53.2%, adjusted OR 2.01, 95% CI 1.08 to 3.73, p = 0.027), with a graded increase across tertiles (trend p = 0.030). No individual complication category reached significance. Excluding cardiac events, the non cardiac composite was similar in magnitude but not conventionally significant (adjusted OR 1.80, 95% CI 0.98 to 3.32). No other echocardiographic parameter was associated with the outcomes. Atrial fibrillation analyses were exploratory and should be interpreted cautiously. CONCLUSIONS: Pre transplant LAVI 34 mL/m2 was associated with a higher burden of one year post transplant morbidity, with a graded relationship across severity. No individual complication category reached significance. These findings are hypothesis generating and require prospective validation before clinical use. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0179",

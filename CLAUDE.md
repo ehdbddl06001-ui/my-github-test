@@ -27,6 +27,10 @@
 - 기초의학 → `content/basic/`      논문 → `content/papers/{연도}/`
 - 질환 카드 → `content/diseases/`  약물 카드 → `content/drugs/`
 - AI·코딩 학습(ailab) → `content/ailab/`  (실습 노트북은 `notebooks/`, Colab+Drive 연동)
+- 해부학(3Q) → `content/anatomy/{sources,pages,concepts,questions,daily,answers}/`
+  · 원본 PDF·페이지 이미지·마스크는 **`.private/anatomy/`(git 무시)** — 공개 repo 커밋 금지.
+  · 일정 단일 기준은 `pipelines/anatomy_schedule.py`(2026 시간표). Drive 계획서 날짜 사용 금지.
+  · 루틴 종료일 **2026-10-19**(Tagging 2). 이후 anatomy 생성·커밋 금지(completed no-op).
   · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
 ## 커밋 전 필수 순서
@@ -71,6 +75,9 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
   결정론은 `pipelines/deepen.py`(완료했지만 아직 안 판 주차를 자동 선택), 실습 카드·**실제
   노트북**을 실측해 A)무엇을 했나 B)문제점 C)대안 D)모델 심화 E)자율학습 로드맵을 `kind:
   deepdive` 카드로. **낡은 repo 노트북 예측 금지 — 실행 로그(`kind: log`)의 `notebook`이 진짜.**
+- `/anatomy-daily` : **해부학(3Q) 일일 학습 세트** 생성 오케스트레이터(매일 05:00 KST
+  루틴이 호출, ~2026-10-19). Drive 증분 확인 → 결정론 큐(`anatomy_daily.py`) → 출처
+  강제 카드/문항 → 검증 → `docs/anatomy-data.js` 재생성. `/daily-run anatomy`도 위임됨.
 - `/gen-quest` : **주차 밖 독립 '심화 퀘스트'(`kind: quest`) 생성**. 한 주차로 못 끝낼 열린
   문제(예: inter-patient 일반화)를 SMOTE·도메인적응·self-supervised·파운데이션 모델 로드맵으로
   큐잉. `content/ailab/quests/`. 진척은 실험을 `ingest_run.py` 로그로 채우며 쌓는다.
