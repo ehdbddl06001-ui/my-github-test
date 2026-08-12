@@ -2218,3 +2218,318 @@ The terminal execution guard is untouched, and the frozen module
 `mit-bih/q5d_order_preserving_beat_join.py` is unchanged at code SHA-256
 `6b098c67…`.  Execution approval still waits on a second Codex acceptance
 review.
+
+## 2026-08-12 — second corrective implementation (I1 round 2); never executed
+
+The seven blockers of the second Codex implementation-acceptance review are
+corrected.  No registered artifact was opened, no M0-M4 aggregation ran,
+`detect_r()` was not called, no beat join was re-run, the terminal execution
+guard is untouched, and this spec's `status` remains
+`approved_for_implementation`.  No result number enters this document.
+
+1. **Production M4 is complete.**  `load_all_inputs()` no longer hands the gate
+   an empty frozen-RR map, a `None` replay and empty anchors.  The frozen V10
+   RR arrays come from the registered cache through `load_frozen_rr()`;
+   `build_detector_replay()` returns a callback that loads the
+   digest-verified V10 `frontend.py` as the producer, re-runs `detect_r()` on
+   all 22 DS1 records, applies the source's own annotation matching, AAMI
+   selection and `p±150` boundary cut, and reproduces the per-record counts and
+   RR arrays.  `mitdb_dir` is therefore a real M4 input: its signals and `.atr`
+   annotations are what the replay consumes, and the frozen Leg 1 replay is
+   attached to the mamba rows so M4.1 anchors have a kept sample to be placed
+   on rather than a position inferred from a row count.  The anchors are built
+   by the same object that ran the replay and refuse to exist before it, so
+   the ordering is structural.  Exercised only by synthetic injection.
+2. **M5 reaches the hypothesis statistics.**  `stratified_statistic()`
+   evaluates each of H1-H4 inside every registered stratum over that
+   hypothesis's own population, and a stratum counts as materialised only when
+   a level actually produced a number.  The pooled-only gate now asks
+   `has_stratified_evidence()` rather than inspecting stratum names, which
+   were always present and so never blocked anything.
+3. **Bundle writing is precheck plus atomic publish.**  Required outputs and
+   the tables backing them are validated before `os.makedirs`; everything is
+   written and verified in a staging directory and renamed into place; any
+   failure removes the staging directory and leaves the final path untouched.
+4. **The seven figures are distinct.**  Each has its own kind, panels and data
+   builder — stacked bar with side panels; records × 3 class heatmap; record
+   208 beat-level raster with the raw-ordinal sensitivity beside it; run-length
+   histogram with summary statistics; fixed-bin distance histogram with the
+   censor and endpoint bars; per-side candidate-degree violin and ECDF each
+   labelled with its decisional status; anchor curve with the Control C band.
+   `render_figures()` refuses to write two figures whose data is identical,
+   which is what previously let figures 4 and 5 share the distance series.
+5. **The fixture seam is fixed.**  `qa_fixture` is accepted only from an
+   explicit synthetic input; the production route refuses to publish anything
+   whose QA verdict is not `REGISTERED`; result, config, manifest and summary
+   all carry the stamp; and a synthetic bundle additionally contains
+   `SYNTHETIC_FIXTURE.json` with `ingestable: false`, so an ingester never has
+   to read prose to reject it.
+6. **Digest discovery is hardened.**  The MIT-BIH tree is verified against the
+   publisher's own `SHA256SUMS.txt` through the frozen module's
+   `verify_against_publisher_checksums`, not merely on file-name completeness,
+   and a tree without a checksum file is refused.  The V10 source is matched on
+   its full registered 7-file expected set and aggregate, because `frontend.py`
+   is byte-identical in V9 and V10 and matching on it alone would accept the V9
+   package.  `run_audit()` now takes only the mapping discovery returned and
+   refuses an unstamped one, so hand-typed paths cannot bypass identity.  A
+   real defect is closed here: `load_all_inputs()` had been passing the
+   *registered* aggregate constants as the *observed* identity, so the identity
+   sub-gate compared each constant with itself and could not fail; the
+   aggregates are now recomputed from the mounted bytes every run.
+7. **The test runner is stronger.**  Declared and collected tests are compared
+   by AST rather than by line prefix, every test must raise the assertion
+   counter at least once, and the reported assertion total is stated as what
+   actually ran together with whether the optional matplotlib renderer was
+   present, rather than as a fixed number.
+
+Execution approval still waits on a third Codex acceptance review.
+
+## 2026-08-12 — third-review corrections (identity and source matching); never executed
+
+The third Codex acceptance review returned `IMPLEMENTATION_BLOCKED` with A1
+`PARTIAL` and A6 `NOT_CLOSED`.  Its design rulings are applied below.  Nothing
+was executed, no registered artifact was opened, no digest was computed against
+Drive, and this spec's `status` remains `approved_for_implementation`.
+
+**B1 — source matching.**  The independent pure adapter is retained; the
+registered `data.py :: build_record` is not called wholesale, because it also
+performs feature computation, file access and side effects that are not part of
+the matching contract.  Every control-flow decision the prose left open is now
+fixed explicitly in `SOURCE_MATCH_CONTRACT`: traversal order on both sides, the
+distance-tie rule, whether a peak whose nearest annotation is already consumed
+falls through to the next-nearest (it does), the moment `used` is updated, and
+that `used` is consumed **before** both AAMI selection and the boundary cut, so
+neither releases an annotation back into the pool.  Six adversarial fixtures pin
+exactly these decisions.  Equivalence to the registered source is **not**
+claimed: `source_match_equivalence_status()` reports
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED`, pins the adapter fingerprint and the
+registered `data.py` digest, and records that reproducing 22/22 counts is a
+necessary condition only.  Differential testing against the source itself needs
+a separately approved read-only PREP, because `data.py` is a registered Drive
+asset this implementation may not open, and the count comparison must never be
+used to choose between two candidate implementations after the fact.
+
+**B2 — `rr_features` shape.**  Strict refusal is retained and widened.  The
+result must be two-dimensional, every row exactly `CACHE_RR_DIM` wide, and the
+row count exactly the kept-peak count; ragged rows, one-dimensional output,
+`(n, 6)`, `(n, 8)` and row-count mismatch each raise `M4_RR_MISMATCH` rather
+than reaching an `IndexError` or an implicit column choice.  No reshape, pad,
+truncation or column guess.
+
+**B3 — MIT-BIH identity.**  The tree aggregate must be registered as a full
+64-hex digest; the truncated `0b46a411…` is not an execution contract.  The full
+value is **not** present in this repository, any handoff, or any preflight
+record, so it is not reconstructed or guessed: `MITDB_TREE_AGGREGATE` is `None`
+and the gate reports `INPUT_IDENTITY_REGISTRATION_REQUIRED`.  Registering it
+needs a separately approved read-only PREP that writes the value into this spec
+and the module together.  Publisher-checksum verification over the full expected
+file set is retained as the independent check and is not a substitute.
+
+**Discovery stamp.**  A string field saying "verified" is not evidence — any
+caller could write it beside paths of their choosing — and neither is the
+provenance of a mapping.  The stamp and its checker are removed.  Every input is
+now re-verified from its bytes at the production entry, immediately before the
+run: bundle presence and per-file contents, the mamba digest, the V10 cache and
+source aggregates, and the MIT-BIH tree.
+
+**File-set problems.**  `hash_file_set` reports missing and unexpected entries;
+those were computed and then ignored.  A directory that folds to the registered
+aggregate over the expected set while carrying an unexpected file is now a
+failure, in discovery and in re-verification alike, and every problem list is
+preserved in the result's identity audit.
+
+**Canonical bundle content identity.**  File presence plus a `code_sha256`
+string in `manifest.json` does not pin contents: a bundle whose CSVs were edited
+while that string was preserved would still have been accepted, and "the QA
+counts match" is not an identity check.  Per-file SHA-256 verification of the
+five files Q5-E reads is now required.  Those digests exist in no repository
+record, so `SOURCE_BUNDLE_FILE_SHA256` is empty and the gate stops with
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`, pending a separately approved read-only
+PREP.
+
+**Byte-identical duplicates.**  Requiring a unique path conflicted with both the
+existing Drive duplicates of `mamba_data.npz` and the standing rule that no
+Drive file is moved or deleted.  Following the EXP-2026-007 precedent: zero
+matches fail; several copies of the same digest resolve deterministically and
+every duplicate path is recorded in the audit; candidates whose digests differ
+are never merged into one identity.
+
+**A latent production defect found while applying the above.**  Q5-E and Q5-D
+use different execution-approval tokens, and Q5-E was passing its own token to
+the frozen module's readers.  Every registered read on the production path —
+mamba, cache, classes, `.atr`, every `hash_file_set` — would have been refused
+by the frozen module, and only at execution time.  `frozen_module_approval()`
+now performs the translation explicitly: Q5-E's own approval is required first,
+and an unapproved caller is refused by Q5-E rather than by Q5-D.  It widens
+nothing; it makes the already-approved path reachable.
+
+Execution approval remains unrequested.  Two registration items and the source
+equivalence PREP are open, and each is a deliberate stop rather than a weaker
+check.
+
+## 2026-08-12 — fourth-review correction: source equivalence is a real gate
+
+The fourth Codex acceptance review found that
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED` was reported but never enforced: it was
+read once, in `build_result(... identity_audit=...)`, after the pipeline had
+already run.  The previous entry's claim that the three open items were each a
+deliberate stop was therefore **wrong for this one** — once the two digest
+registrations were filled in, the detector replay and M0–M4 would have run
+through an annotation-matching adapter that had never been compared against the
+registered source.  The correction:
+
+- `source_match_equivalence` is now an M4.0 sub-gate, registered in
+  `M4_GATE_ORDER` and in `M4_GATES_BEFORE_REPLAY` as the last check before the
+  detector.  The adapter is what the replay's counts are produced *through*, so
+  running the detector first would yield numbers whose meaning depends on an
+  unverified reimplementation.  A failure is `DIAGNOSTIC_INPUT_ABSENT` by the
+  existing rule; the detector callback is never reached.
+- A PASS is a structured record, not a verdict string.  It must carry the
+  registered `data.py` SHA-256 it was established against, the adapter
+  fingerprint it tested, the identity of the PREP bundle that produced it, and
+  the fixture list with the number that passed.  Changing the adapter or the
+  registered source invalidates it automatically, a partial differential is not
+  a PASS, and the registered PASS string on its own opens nothing.
+
+**Expression boundary.**  The adapter is described everywhere as a *candidate*
+source-matching adapter built from a *text-derived candidate contract* and
+*unverified against the registered `data.py`*.  The requirement in M4.1 that
+the source's own rule be reproduced stands as the scientific goal; no statement
+that the current implementation has achieved it is permitted, and none is made.
+
+**Approval-token translation.**  `frozen_module_approval()` is retained under
+the review's conditions and pinned by test: Q5-E's own approval is required
+before the Q5-D token is produced, a wrong or absent token yields Q5-E's own
+refusal, the translated token reaches only the frozen no-outcome readers
+enumerated in that test, the Q5-D token appears in no CLI option and in no
+notebook cell, and a newly added frozen reader cannot inherit the translation
+without failing that test.
+
+Three registration items remain open, and each is now a terminal stop:
+`INPUT_IDENTITY_REGISTRATION_REQUIRED` (P1),
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` (P2) and
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED` (P3).  Their read-only PREP designs are
+drafted in `research/HANDOFF_2026-08-12_Q5E_prep_p1p2p3_to_codex.md`; none was
+executed here, no Drive asset was opened, and no digest or verdict value was
+computed or written.
+
+## 2026-08-12 — fifth-review corrections: bundle contracts and oracle schema
+
+The fifth Codex acceptance review found two defects.  Nothing was executed, no
+registered asset was opened, no digest or verdict value was computed or
+written, and this spec's `status` remains `approved_for_implementation`.
+
+**The directory contract and the input identity were the same check, and it
+rejected real bundles.**  Discovery asked `hash_file_set` whether the bundle
+directory was *exactly* the five files Q5-E reads.  A genuine Q5-D run bundle
+carries all twelve registered files, so the other seven were reported as
+unexpected and every canonical bundle failed.  The synthetic fixture wrote only
+five files, which is why the defect survived three reviews.  The two questions
+are now separate:
+
+- **directory contract** — `verify_bundle_directory_contract()` requires the
+  frozen twelve-file set complete with nothing unexpected beside it, no
+  `SUPERSEDED.json`, and `manifest.json` naming both the registered producing
+  code and the registered rule fingerprint;
+- **scientific input identity** — `subset_file_fold()` folds the five files
+  Q5-E reads using the same `(name, bytes, sha256)` canonical-JSON convention
+  as `hash_file_set`, without treating the remaining seven as unexpected and
+  without copying, moving or excluding anything on disk.
+
+Once P2 registers the per-file digests, a candidate must additionally match all
+five.  The fixtures are now realistic twelve-file bundles, and the regressions
+cover: a complete bundle accepted, a same-code decoy differing by one byte in an
+input file rejected, the other seven files not unexpected, an unknown
+thirteenth file rejected by the directory contract, byte-identical duplicates
+accepted and audited, and a `SUPERSEDED` copy rejected.
+
+**The oracle evidence structure was too loose.**  A PASS could be assembled from
+a one-character `prep_bundle_sha256` and a single fixture name.  The record now
+requires: every identity field a lowercase 64-hex SHA-256, including the PREP
+harness identity; the complete registered counterexample list, by the exact
+name of each regression test, with no omissions and no duplicates; and per
+fixture a result record carrying the source digest, the adapter digest and
+`equal`, where `equal` must be true and the two digests must agree.
+`fixtures_passed` must equal both the number that actually compared equal and
+the total.  A bare list of names is not a differential.
+
+`SOURCE_MATCH_ORACLE_RECORD` stays `None`; a real PASS may only be registered
+after P3, in a separate PR.
+
+The three PREP designs in
+`research/HANDOFF_2026-08-12_Q5E_prep_p1p2p3_to_codex.md` are corrected: P1
+states published-tree integrity as 146 publisher-listed files plus the
+separately registered digest of `SHA256SUMS.txt` itself, since a checksum file
+cannot verify itself and the frozen verifier skips it; P2 requires a Drive
+folder-id inventory bridged to the mounted bytes, stopping with
+`P2_FOLDER_ID_BRIDGE_UNRESOLVED` when that bridge cannot be built, because a
+matching folder name is not evidence; and P3 requires the digest-verified
+original `build_record` to be executed under dependency injection rather than
+compared against a second reimplementation, which could repeat the same
+misreading twice and call it agreement.
+
+## 2026-08-12 — sixth-review corrections (A1–A6); never executed
+
+Nothing was executed, no registered asset was opened, no digest or verdict was
+computed or written, and `status` remains `approved_for_implementation`.
+
+**A1 — one authoritative path per contract.**  `verify_bundle_is_canonical()`
+is removed rather than kept as a wrapper: it checked only the five input files'
+presence plus the producing code, which is strictly weaker than the two
+contracts that replaced it, and a second answer to the same question is a place
+for the two to drift.  The legacy `bundle_present` gate is gone from
+re-verification, which now calls the directory contract and the content
+identity exactly once each; `source_files` is taken from the five files the
+content check actually verified.
+
+**A2 — the duplicate label now matches what the digest covers.**  A bundle
+candidate is matched on the five-file subset fold, so two accepted copies may
+differ in the seven files Q5-E does not read; recording those as
+`byte_identical_duplicates` was a false audit statement.  Bundles are recorded
+as `q5e_input_identical_copies`, with a note that byte-identity is not asserted,
+and every candidate carries both its twelve-file `full_aggregate` and its
+five-file `subset_fold`.  Assets whose digest covers all compared bytes —
+mamba, cache, V10 source — keep the byte-identical label.  The canonical
+provenance (registered run and folder id) is recorded separately from the
+selected mount path, the two being linked only once P2 establishes the
+folder-id bridge.  `registered_bundle_digests_complete()` requires the
+registered key set to be exactly the five input files with lowercase 64-hex
+values, so a partial registration cannot verify some inputs and silently skip
+others.
+
+**A3 — the 147-file contract is stated correctly.**  Exactly
+`BJ.mitdb_expected_files()` is passed to `hash_file_set`; the checksum file is
+no longer appended to a set that already contains it.  Published-tree integrity
+is reported as two separate fields — the 146 files the publisher list can cover,
+and the separately registered digest of `SHA256SUMS.txt` itself, since a
+checksum file cannot verify itself and the frozen verifier skips it.  A wrong
+checksum-file digest fails the gate regardless of what the aggregate happens to
+equal.
+
+**A4 — PREP bundle digests are non-self-referential.**  `prep_payload_fold()`
+folds a fixed, named payload set and excludes the `manifest.json` that records
+it; the manifest's own SHA-256 is frozen outside the bundle.  P3's
+`prep_bundle_sha256` carries the payload fold, not the manifest digest.
+
+**A5 — M4's real first failure survives into the result.**  `decide()` receives
+`m4["first_failure"]` and falls back to the status only when none was recorded,
+so `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, `M4_COUNT_MISMATCH` and
+`M4_FROZEN_RR_MISMATCH` are each distinguishable in `q5e_result.json`.  The
+terminal decision, the decision tree, the multiplicity family and the H1/H4
+partial handling are unchanged.
+
+**A6 — execution fact separated from gate outcome.**
+`detector_replay_performed` is now read from the `detector_replay` sub-gate
+rather than from the M4 status: a run stopped at the equivalence sub-gate
+records `false`, and a replay that ran and then failed the count or RR sub-gate
+records `true`.  The M4 status is kept alongside as its own field.
+
+Reproduced before fixing: an `rr_features()` shape violation escaped
+`m4_feasibility_gate()` as an exception and destroyed the run, losing the M0–M3
+partial results the registered decision tree preserves.  A dedicated
+`ReplayContractError` is now raised by the replay contract checks and is the
+only exception the gate converts — into the registered `M4_FROZEN_RR_MISMATCH`
+→ `DIAGNOSTIC_INPUT_ABSENT` path.  Nothing broader is caught, so a programmer
+error still propagates.
+
+The three registration items remain open and are unchanged as terminal stops.
