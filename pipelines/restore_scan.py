@@ -126,6 +126,60 @@ def _donor_blend(img, mask, donor_path: Path, cfg: dict):
     return out, cv2.bitwise_and(mask, bad)
 
 
+def _tight_strokes(img, box: list, drop: int = 35, pad: int = 2):
+    """박스 전체가 아니라 '펜 획 픽셀'만 마스크로 뽑는다(얇은 펜 마스킹).
+
+    검정 손글씨는 주변 배경보다 어두운 얇은 획이다 — 국소 배경(중앙값 블러)
+    대비 drop 이상 어두운 픽셀만 마스킹하면 지울 면적이 수 배 줄어 인페인팅
+    품질이 크게 올라간다. 획이 거의 안 잡히면(어두운 배경 위 글씨 등)
+    박스 전체로 폴백한다.
+    """
+    import cv2
+    import numpy as np
+
+    x0, y0, x1, y1 = box
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    bg = cv2.medianBlur(gray, 31).astype(np.int16)
+    m = np.zeros(gray.shape, np.uint8)
+    roi = (bg - gray.astype(np.int16)) > drop
+    m[y0:y1, x0:x1] = roi[y0:y1, x0:x1].astype(np.uint8) * 255
+    area = (y1 - y0) * (x1 - x0)
+    if area and m[y0:y1, x0:x1].sum() / 255 < 0.02 * area:
+        m[y0:y1, x0:x1] = 255          # 획 검출 실패 → 박스 전체 폴백
+    else:
+        m = cv2.dilate(m, np.ones((2 * pad + 1, 2 * pad + 1), np.uint8))
+    return m
+
+
+def _inpaint_progressive(img, mask, band: int = 4, radius: int = 4):
+    """넓은 마스크를 한 번에 채우지 않고 바깥 테두리부터 얇은 띠로 반복해 채운다.
+
+    확산 인페인팅은 채울 폭이 넓을수록 뭉개진다 — 매 pass 방금 채워진 픽셀을
+    이웃으로 삼아 band px씩 안쪽으로 전진하면 질감 전파가 훨씬 좋다
+    ('얇은 펜으로 여러 번' 방식).
+    """
+    import cv2
+    import numpy as np
+
+    k = np.ones((2 * band + 1, 2 * band + 1), np.uint8)
+    m = mask.copy()
+    img = img.copy()
+    for _ in range(200):                # 안전 상한
+        if not m.any():
+            break
+        inner = cv2.erode(m, k)
+        ring = cv2.subtract(m, inner)
+        if not ring.any():
+            ring, inner = m, np.zeros_like(m)
+        # 전체 남은 마스크를 넣어 인페인팅(안쪽 오염 픽셀이 소스로 쓰이지 않게)
+        # 하되, 이번 pass에서는 바깥 띠 결과만 확정한다.
+        filled = cv2.inpaint(img, m, radius, cv2.INPAINT_TELEA)
+        sel = ring > 0
+        img[sel] = filled[sel]
+        m = inner
+    return img
+
+
 def _match_grain(img, filled_mask):
     """인페인팅 영역에 주변 질감 수준의 고주파 노이즈를 입혀 '너무 매끈함'을 줄인다."""
     import cv2
@@ -151,15 +205,17 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
         raise SystemExit(f"이미지를 읽을 수 없음: {image}")
     mask = _color_mask(img, cfg.get("colors", {}), cfg.get("protect"),
                        cfg.get("olive_region"))
-    mask = cv2.dilate(mask, np.ones((9, 9), np.uint8))
+    mask = cv2.dilate(mask, np.ones((7, 7), np.uint8))
     for x0, y0, x1, y1 in cfg.get("erase_boxes", []):
         mask[y0:y1, x0:x1] = 255
+    for box in cfg.get("stroke_boxes", []):   # 얇은 펜: 획 픽셀만 마스킹
+        mask |= _tight_strokes(img, box)
     remaining = mask
     clean = img
     if cfg.get("donor"):  # 1순위: 인접 프레임에서 진짜 질감 복사
         clean, remaining = _donor_blend(img, mask, Path(cfg["donor"]), cfg)
-    if remaining.any():   # 폴백: 확산 인페인팅 + 질감 매칭
-        clean = cv2.inpaint(clean, remaining, 9, cv2.INPAINT_TELEA)
+    if remaining.any():   # 폴백: 점진(테두리→안쪽) 인페인팅 + 질감 매칭
+        clean = _inpaint_progressive(clean, remaining)
         clean = _match_grain(clean, remaining)
     out_clean.parent.mkdir(parents=True, exist_ok=True)
     cv2.imwrite(str(out_clean), clean)
