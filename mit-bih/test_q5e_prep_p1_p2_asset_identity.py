@@ -318,18 +318,46 @@ def test_no_api_or_file_access_without_approval():
 
 
 def test_terminal_guard_precedes_every_reader_and_api_call():
+    """The stop is open, and it opens on a recorded approval — not on a gap.
+
+    Execution was approved on 2026-08-12, so an approved, switched-on call now
+    proceeds past this point.  What must not change is its *position*: still
+    after every check, still before anything that authenticates or reads.
+    """
+    check(P.EXECUTION_APPROVAL_RECORD["granted"] is True,
+          "the read-only execution approval is recorded as granted")
+    granted = P._terminal_execution_guard()
+    check(granted["granted_on"] == "2026-08-12",
+          "with the date it was granted")
+    check(granted["granted_by"] == "user", "and by whom")
+    for forbidden in ("P3 implementation or execution", "running detect_r()",
+                      "M0-M4 aggregation", "training or retraining any model",
+                      "automatic registration of any observed value"):
+        check(forbidden in granted["not_approved"],
+              f"the record still withholds: {forbidden}")
+
+    # Flip the record back and the stop closes again, with no other edit.
+    # That is what makes this one value the boundary rather than a deletion.
+    real = dict(P.EXECUTION_APPROVAL_RECORD)
     adapter = _adapter()
-    with tempfile.TemporaryDirectory() as tmp:
-        try:
-            P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp, adapter=adapter,
-                       approval=TOKEN, open_registered_data=True,
-                       emit=lambda *a: None)
-            raise AssertionError("run_prep produced a result")
-        except P.PrepError as error:
-            check("never been executed" in str(error),
-                  "the terminal guard stops an approved run")
-    check(adapter.calls == [],
-          "and it stops it before any Drive call is made")
+    try:
+        P.EXECUTION_APPROVAL_RECORD["granted"] = False
+        with tempfile.TemporaryDirectory() as tmp:
+            try:
+                P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp,
+                           adapter=adapter, approval=TOKEN,
+                           open_registered_data=True, emit=lambda *a: None)
+                raise AssertionError("run_prep produced a result")
+            except P.PrepError as error:
+                check("not approved for execution" in str(error),
+                      "granted=False restores the terminal stop exactly")
+        check(adapter.calls == [],
+              "and it still stops before any Drive call is made")
+    finally:
+        P.EXECUTION_APPROVAL_RECORD.clear()
+        P.EXECUTION_APPROVAL_RECORD.update(real)
+    check(P.EXECUTION_APPROVAL_RECORD["granted"] is True,
+          "the fixture restored the record")
 
     import inspect
     source = inspect.getsource(P.run_prep)
@@ -340,6 +368,9 @@ def test_terminal_guard_precedes_every_reader_and_api_call():
     check(source.index("require_execution_approval")
           < source.index("_terminal_execution_guard"),
           "approval is checked before the guard, so refusals say why")
+    check(source.index("_terminal_execution_guard")
+          < source.index("build_drive_adapter("),
+          "and no credential is acquired above it")
 
 
 def test_run_prep_refuses_a_folder_id_that_is_not_the_registered_one():
@@ -877,9 +908,21 @@ def test_notebook_is_committed_unexecuted():
         check(cell.get("execution_count") is None,
               f"cell {index} was never executed")
     source = "\n".join("".join(c["source"]) for c in nb["cells"])
-    check("OPEN_REGISTERED_DATA = False" in source,
-          "the notebook defaults to closed")
-    check("APPROVAL = None" in source, "and carries no approval token")
+    # 2026-08-12: read-only execution was approved, so the notebook's two
+    # opt-in switches are deliberately on.  What must stay true is that they
+    # are the *only* thing that is on, and that the module still defaults
+    # closed so a stray import reaches nothing.
+    check("OPEN_REGISTERED_DATA = True" in source,
+          "the notebook opts in explicitly, under the 2026-08-12 approval")
+    check("APPROVAL = P.EXECUTION_APPROVAL_TOKEN" in source,
+          "and carries the separate read-only PREP token")
+    check("EXECUTION_APPROVAL_TOKEN" in source
+          and "Q5E_AUDIT" not in source,
+          "which is the PREP token, not the Q5-E audit token")
+    check(P.OPEN_REGISTERED_DATA is False,
+          "while the module itself still defaults closed")
+    check("EXECUTION_APPROVAL_RECORD" in source,
+          "the notebook prints the approval record it is running under")
     check("run_prep" in source, "it calls the production route")
     check("module_capabilities" in source, "with a staleness guard")
     for stage in ("DESIGN_AND_BOUNDARIES", "ENVIRONMENT", "SYNTHETIC_FIXTURES",
@@ -1703,23 +1746,32 @@ def test_c1_no_authentication_happens_while_the_guard_is_alive():
              for name in ("build_drive_adapter", "authenticate_drive_readonly",
                           "_colab_readonly_credential", "execute_prep",
                           "run_p1", "run_p2", "GoogleDriveFolderAdapter")}
+    record = dict(P.EXECUTION_APPROVAL_RECORD)
     for name in saved:
         setattr(P, name, spy(name))
     try:
+        # Execution is approved now, so the closed case is exercised by
+        # withdrawing the approval — the property under test is unchanged:
+        # while the stop is closed, *nothing* below it is reached.
+        P.EXECUTION_APPROVAL_RECORD["granted"] = False
         P.run_prep("/nonexistent/mitdb", P.SOURCE_BUNDLE_FOLDER_ID,
                    "/nonexistent/out", adapter=None, approval=TOKEN,
                    open_registered_data=True, timestamp="20260812T000000Z",
                    emit=lambda *a, **k: None)
         raise AssertionError("the terminal guard did not stop the run")
     except P.PrepError as error:
-        check("never been executed" in str(error),
+        check("not approved for execution" in str(error),
               "the terminal guard is what stopped it")
     finally:
         for name, value in saved.items():
             setattr(P, name, value)
+        P.EXECUTION_APPROVAL_RECORD.clear()
+        P.EXECUTION_APPROVAL_RECORD.update(record)
 
     check(calls == [],
           f"zero auth, adapter, API and reader calls were made: {calls}")
+    check(P.EXECUTION_APPROVAL_RECORD["granted"] is True,
+          "and the fixture restored the approval record")
 
 
 def test_c1_the_guard_sits_after_every_check_and_before_every_capability():
@@ -3100,6 +3152,89 @@ def test_the_runs_verdict_and_its_own_words_do_not_contradict():
     check(not (verified["acceptance_eligible"] is True
                and "still needs" in words),
           "the run never asks for an anchor it has already claimed to have")
+
+
+def test_the_execution_approval_opens_only_what_it_names():
+    """Enabling execution widened one thing. Everything else must be as it was.
+
+    An approval is easy to over-apply: the guard opens, the run works, and
+    nobody notices that the same edit also made three other refusals
+    conditional. So this checks the neighbours rather than the change — the
+    switch, the token, the folder id and the read-only seals all still refuse
+    exactly as before, with the approval granted.
+    """
+    check(P.EXECUTION_APPROVAL_RECORD["granted"] is True,
+          "the approval is in force for this test")
+
+    adapter = _adapter()
+    with tempfile.TemporaryDirectory() as tmp:
+        # The switch still has to be turned on at the call site.
+        try:
+            P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp, adapter=adapter,
+                       approval=TOKEN, open_registered_data=False,
+                       emit=lambda *a: None)
+            raise AssertionError("the closed switch let a run through")
+        except P.PrepNotApprovedError as error:
+            check("OPEN_REGISTERED_DATA is False" in str(error),
+                  "the module-level switch still refuses when closed")
+
+        # The separate PREP token is still required, and is still not the
+        # Q5-E audit token.
+        for wrong in (None, "", Q5E.EXECUTION_APPROVAL_TOKEN):
+            try:
+                P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp,
+                           adapter=adapter, approval=wrong,
+                           open_registered_data=True, emit=lambda *a: None)
+                raise AssertionError(f"approval {wrong!r} was accepted")
+            except P.PrepNotApprovedError:
+                check(True, f"approval {wrong!r} is still refused")
+
+        # The folder id is still the registered one only.
+        try:
+            P.run_prep(tmp, "1NotTheRegisteredFolderId", tmp, adapter=adapter,
+                       approval=TOKEN, open_registered_data=True,
+                       emit=lambda *a: None)
+            raise AssertionError("an unregistered folder id was accepted")
+        except P.PrepError as error:
+            check("registered canonical" in str(error),
+                  "the folder id is still checked, and by id")
+
+    check(adapter.calls == [],
+          "none of those refusals touched the Drive adapter")
+    check(P.OPEN_REGISTERED_DATA is False,
+          "and the module still defaults closed for a stray import")
+
+    # The approval names what it does not cover; the module has no way to do
+    # any of it. These are the seals every run reports.
+    for sealed in ("detector_executed", "m0_m4_aggregated",
+                   "beat_join_executed", "model_scored",
+                   "probability_opened", "labels_opened",
+                   "training_performed"):
+        check(P._p1_seals()[sealed] is False,
+              f"P1 still seals {sealed} shut")
+    check(P._p2_seals()["drive_modified"] is False,
+          "and P2 still seals Drive modification shut")
+
+    calls = _module_calls(P.__file__)
+    for banned in ("detect_r", "rr_features", "rdsamp", "rdann",
+                   "load_all_inputs", "run_audit"):
+        check(banned not in calls,
+              f"the module still never calls {banned}()")
+
+    # P3 is not in scope, and enabling P1/P2 did not quietly bring it in.
+    check("oracle_harness_identity.json" not in P.P1_P2_PREP_PAYLOAD_FILES,
+          "no P3 oracle file entered the payload")
+    check(set(P.EXECUTION_APPROVAL_RECORD["approved"]) and all(
+        "P3" not in item for item in P.EXECUTION_APPROVAL_RECORD["approved"]),
+        "and nothing approved mentions P3")
+
+    # Registration is still a separate PR: the three Q5-E stops are untouched.
+    check(Q5E.MITDB_TREE_AGGREGATE is None,
+          "MITDB_TREE_AGGREGATE is still unregistered")
+    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
+          "SOURCE_BUNDLE_FILE_SHA256 is still unregistered")
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "SOURCE_MATCH_ORACLE_RECORD is still unregistered")
 
 
 def declared_tests():

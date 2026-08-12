@@ -65,14 +65,54 @@ CONTRACT_PATH = ("experiments/specs/"
 # ─────────────────────────────────────────────────────────────────────────────
 EXECUTION_APPROVAL_TOKEN = "q5e-prep-p1-p2-read-only-execution-approved-by-user"
 EXECUTION_APPROVAL_FLAG = "--i-have-separate-prep-execution-approval"
-#: Default closed.  A stray import or notebook run cannot reach an asset.
+#: Default closed.  A stray import or notebook run cannot reach an asset, even
+#: now that execution is approved: the notebook opts in explicitly at its call
+#: site, so nothing reaches a registered byte by merely importing this module.
 OPEN_REGISTERED_DATA = False
+
+#: The user's separate read-only execution approval, written down rather than
+#: implied by a deleted line.  A guard that opens because someone edited it
+#: records no decision; this records who approved what, when, and — just as
+#: importantly — what was *not* approved, so the boundary is readable from the
+#: code and not only from a spec.  Setting `granted` back to False restores the
+#: previous refusal exactly, with no other change anywhere.
+EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
+    "granted": True,
+    "granted_on": "2026-08-12",
+    "granted_by": "user",
+    "kind": "read-only execution of EXP-2026-008 Q5-E PREP P1 and P2",
+    "approved": (
+        "P1 byte-identity over the registered MIT-BIH publisher tree",
+        "P2 byte-identity over the canonical Q5-D bundle at the registered "
+        "folder id",
+        "Drive API reads under exactly the drive.readonly scope",
+        "writing the P1/P2 result bundle and saving the notebook with its "
+        "outputs",
+    ),
+    "not_approved": (
+        "P3 implementation or execution",
+        "running detect_r()",
+        "re-running the beat join",
+        "M0-M4 aggregation",
+        "opening DS2 per-beat labels",
+        "opening V10 probabilities",
+        "computing association or S PR-AUC",
+        "training or retraining any model",
+        "moving, deleting or overwriting any Drive file",
+        "automatic registration of any observed value",
+    ),
+    "recorded_in": ("experiments/specs/"
+                    "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md"),
+}
 APPROVAL_NOTE = (
-    "Approved: writing this PREP implementation (2026-08-12).  NOT approved: "
-    "reading any registered Drive asset, calling the Drive API, computing any "
-    "real digest, running P3, running detect_r(), aggregating M0-M4, or "
-    "registering any value.  Read-only PREP execution needs its own separate "
-    "user approval.")
+    "Approved (2026-08-12): read-only execution of P1 and P2 — reading the "
+    "registered MIT-BIH tree, reading the canonical Q5-D bundle by folder id "
+    "under exactly the drive.readonly scope, writing the result bundle, and "
+    "saving the notebook with its outputs.  NOT approved: P3, detect_r(), "
+    "re-running the beat join, M0-M4 aggregation, DS2 labels, V10 "
+    "probabilities, association or S PR-AUC, any training, moving or deleting "
+    "any Drive file, or registering any observed value.  Registration remains "
+    "a separate result-acceptance PR after Codex review.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # P1 — registered targets
@@ -236,18 +276,31 @@ def execution_is_approved(approval: Optional[str]) -> bool:
     return approval == EXECUTION_APPROVAL_TOKEN
 
 
-def _terminal_execution_guard() -> None:
-    """The single line a separately approved execution PR removes.
+def _terminal_execution_guard() -> Dict[str, object]:
+    """The single stop a separately approved execution PR opens.
 
     It sits after every check and before the first registered read, so an
     approved run reaches a complete route and an unapproved one reaches
-    nothing.  This PR does not remove it.
+    nothing.  **This PR opens it** — and opens it by consulting
+    :data:`EXECUTION_APPROVAL_RECORD` rather than by deleting the check.
+
+    That difference is the point.  Deleting the line would leave the repository
+    with no statement of who approved what: the only evidence would be the
+    absence of code, which reads identically whether the approval happened or
+    someone simply removed an inconvenience.  Consulting a record keeps the
+    decision legible, keeps `granted: False` as an exact one-value revert, and
+    keeps this function as the single place the boundary moves.
+
+    Nothing else about the route changed: the switch, the approval token and
+    the folder id are still checked *before* this point, and authentication,
+    the Drive service and every reader still happen *after* it.
     """
-    raise PrepError(
-        "P1/P2 are implemented but have never been executed: reading the "
-        "registered MIT-BIH tree or calling the Drive API needs a separate "
-        f"read-only execution approval that does not exist yet.  "
-        f"{APPROVAL_NOTE}")
+    if not EXECUTION_APPROVAL_RECORD.get("granted"):
+        raise PrepError(
+            "P1/P2 are implemented but not approved for execution: reading the "
+            "registered MIT-BIH tree or calling the Drive API needs a separate "
+            f"read-only execution approval.  {APPROVAL_NOTE}")
+    return dict(EXECUTION_APPROVAL_RECORD)
 
 
 def _canonical_json(obj: object) -> str:
@@ -2051,11 +2104,14 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
             f"general-purpose folder inspector.")
     emit("Q5-E PREP P1+P2: approval present; nothing has been opened yet.")
 
-    _terminal_execution_guard()
+    granted = _terminal_execution_guard()
+    emit(f"read-only execution approval: granted {granted['granted_on']} by "
+         f"{granted['granted_by']} — {granted['kind']}.")
+    emit(f"not approved by it: {', '.join(granted['not_approved'])}.")
 
     # ---- Everything below is the complete, already-implemented preflight. --
-    # Removing the guard above is the *only* change a separately approved
-    # execution PR makes here.
+    # It is unchanged by the execution-enable PR: opening the guard above is
+    # the only thing that moved.
     auth_audit = None                                   # pragma: no cover
     if adapter is None:                                 # pragma: no cover
         adapter, auth_audit = build_drive_adapter(approval)
@@ -2149,7 +2205,15 @@ def module_capabilities() -> Tuple[str, ...]:
             "audit_credential_scopes", "runtime_identity",
             "check_runtime_dependencies", "parse_sha256sums_text",
             "compare_against_publisher_list", "payload_files", "bundle_files",
-            "design_card", "EXECUTION_APPROVAL_TOKEN", "DRIVE_READONLY_SCOPE")
+            "design_card", "EXECUTION_APPROVAL_TOKEN", "DRIVE_READONLY_SCOPE",
+            "EXECUTION_APPROVAL_RECORD")
+
+
+def _approval_line() -> str:
+    if not EXECUTION_APPROVAL_RECORD.get("granted"):
+        return "NOT APPROVED"
+    return (f"APPROVED {EXECUTION_APPROVAL_RECORD['granted_on']} by "
+            f"{EXECUTION_APPROVAL_RECORD['granted_by']} (read-only)")
 
 
 def design_card() -> str:
@@ -2165,7 +2229,8 @@ def design_card() -> str:
         f"  P2 folder id         : {SOURCE_BUNDLE_FOLDER_ID}",
         f"  P2 directory files   : {len(BJ.BUNDLE_FILES)}",
         f"  P2 Q5-E input files  : {len(BUNDLE_INPUT_FILES)}",
-        f"  execution approved   : {execution_is_approved(None)}",
+        f"  read-only execution  : {_approval_line()}",
+        f"  token still required : {not execution_is_approved(None)}",
         "",
         "  This preflight registers nothing.  It emits candidate values; a",
         "  separate result-acceptance PR registers them after Codex review.",
@@ -2185,7 +2250,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:    # pragma: no cover
     if not args.approved:
         print(f"\nSKIP: {APPROVAL_NOTE}")
         return 2
-    print("\nApproval flag present, but the terminal guard still refuses.")
+    print("\nApproval flag present.  This CLI still runs nothing: the "
+          "preflight is executed from the notebook, which supplies the "
+          "mount paths and the output directory.")
     return 2
 
 
