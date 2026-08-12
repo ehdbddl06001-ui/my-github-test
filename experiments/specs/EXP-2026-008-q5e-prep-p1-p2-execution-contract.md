@@ -53,8 +53,10 @@ P1 and P2 are scientifically independent gates.
 - Neither overwrites the other's verdict.
 - Each keeps its own status and its own first failing gate.
 - The combined verdict is `PREP_P1_P2_PASS` **only** when both pass.
-- If either fails, no value is offered as a registration candidate — not even
-  the passing gate's observation.
+- If either fails, nothing becomes eligible for registration.  The passing
+  gate's **observation is still reported** — erasing measured evidence makes a
+  run harder to diagnose, not safer — but its
+  `eligible_for_registration` is false.
 - A failure is never resolved by relaxing a rule.
 
 # P1 — MIT-BIH publisher tree identity
@@ -106,9 +108,15 @@ Gates, in order:
 4. **`superseded_absent`** — `SUPERSEDED.json` present is
    `P2_SUPERSEDED_BUNDLE`.
 5. **`canonical_bytes_bridge`** — bytes come from the folder id.  Streaming by
-   **file id** needs no bridge at all.  A mount may be used only if it can be
-   tied to the folder-id inventory by exact name, size and count, plus any
-   provider checksum; a matching folder name is never accepted.  Otherwise
+   **file id** needs no bridge at all.  Either way the fetched bytes are
+   re-checked against the inventory: length always, `sha256Checksum` when the
+   provider supplies one, `md5Checksum` when it supplies one — and both when
+   both exist. A checksum the provider did not supply is recorded as
+   unavailable, never guessed, and its absence alone does not fail a direct
+   stream, because the file id already ties the bytes to the folder. MD5 is a
+   provider **transfer cross-check**, not a security identity. A mount is
+   accepted only when tied to the inventory by exact name, size and every
+   available provider checksum; a matching folder name is never accepted.  Otherwise
    `P2_FOLDER_ID_BRIDGE_UNRESOLVED`.
 6. **`manifest_identity`** — `code_sha256` = `6b098c67…` and
    `rule_fingerprint` = `31c4be9f…`, or `P2_MANIFEST_IDENTITY_MISMATCH`.
@@ -133,40 +141,109 @@ and local paths never enter a bundle.
 
 # Bundle and identity
 
-A run writes exactly:
+A production run writes exactly:
 
-`config.json` · `manifest.json` · `source_inventory.json` · `decision.json` ·
-`registration_candidates.json` · `oracle_harness_identity.json` ·
-`fixture_results.json` · `log.txt` · `summary.md`
+`config.json` · `decision.json` · `log.txt` · `registration_candidates.json` ·
+`source_inventory.json` · `summary.md` · `manifest.json`
 
-The two oracle files belong to P3 and are written with an explicit
-`not_applicable` seal rather than a fabricated value, so the payload set stays
-complete and nothing pretends a differential happened here.  A synthetic run
-additionally writes `SYNTHETIC_FIXTURE.json` and is stamped `ingestable:
-false` in the config, the summary and that marker.
+The payload set is **P1/P2-specific** (`P1_P2_PREP_PAYLOAD_FILES`) and is not
+inherited from P3's list: the oracle harness and fixture-result files belong to
+the differential and have no business in an asset-identity bundle, not even as
+sealed placeholders.  Only the fold algorithm and the canonical-JSON
+convention are shared with Q5-E.
+
+A synthetic run additionally writes `SYNTHETIC_FIXTURE.json`, and that marker
+is **inside** the payload fold — deleting or editing it breaks the recomputed
+digest, which is what "no file outside the payload identity" has to mean.
+`manifest.payload_files` records the actual fold target for the run's kind, so
+a reader never has to guess which set was folded.
 
 **Non-self-referential identity.**  `prep_payload_sha256` folds every payload
 file and **excludes `manifest.json`**, which is the file that records it — a
 manifest containing its own digest is circular by construction.  The
 manifest's own SHA-256 is returned by the writer for freezing **outside** the
-bundle, in this document's Decision log and the registration record, and is
-deliberately absent from every file inside the bundle.
+bundle and is deliberately absent from every file inside it.  The primary
+external record is the saved notebook output of the final report cell, which
+prints the full 64-hex value together with `prep_payload_sha256`; the result
+acceptance PR copies both into this document's Decision log and the
+registration record.  No sidecar file is introduced — an extra artifact would
+need its own location, atomicity and identity contract before it could carry
+evidence.
 
-The bundle is staged, verified against the exact expected file set, and only
-then published by rename, so the output path never holds a partial run and no
-file sits outside the payload identity.
+The bundle is staged in a directory unique to the call, verified against the
+exact expected file set, and only then published by a same-parent rename, so
+the output path never holds a partial run.  **Nothing pre-existing is
+deleted**: an existing final path is refused rather than removed, no earlier
+staging directory is cleaned up, and a failed run's partial staging is
+preserved at a reported `.failed` path rather than discarded — a diagnosis is
+worth more than a tidy directory.
 
 # Registration
 
 A run produces **candidates**, not registrations.  `registration_candidates.json`
 records the observed `MITDB_TREE_AGGREGATE` and the five
-`SOURCE_BUNDLE_FILE_SHA256` values with `applied_automatically: false`, and
-withholds them entirely unless both gates passed.
+`SOURCE_BUNDLE_FILE_SHA256` values with `applied_automatically: false`.
+
+**Observations are preserved; only eligibility is withheld.**  When one gate
+fails, the other gate's measurement is still reported — erasing it would
+destroy audit evidence and make the run harder to diagnose, not safer.  Each
+entry carries `observed`, its own `gate_passed`, the shared
+`combined_registration_allowed`, and `eligible_for_registration`, which is true
+only when both hold.  A value that was never computed, because its gate stopped
+earlier, stays `None` because there is nothing to report.  The aggregate
+preserved on `MITDB_IDENTITY_DIVERGED` is marked `observation_only` — a
+diagnostic observation from a failed gate, explicitly not a candidate.
 
 Nothing in `mit-bih/q5e_leg2_failure_mechanism_audit.py` or in the Q5-E spec is
 edited by a run.  The values enter the codebase only through a **separate
 result-acceptance PR** after Codex reviews the run, and both must be written
 into the spec and the module together.
+
+# Result acceptance criteria
+
+Fixed **before** any measurement exists, so a result review cannot be argued
+into a looser standard afterwards.  A run is accepted only when every item
+below is present and correct in the bundle.
+
+**P1**
+
+- gate order as emitted, matching `P1_GATE_ORDER`
+- expected file count 147, `missing = 0`, `unexpected = 0`
+- `SHA256SUMS.txt` self digest equal to the registered value
+- publisher `checked = 146`, `matched = 146`
+- `mismatch = 0`, `unlisted = 0`
+- full aggregate present, 64-hex, prefix matching `0b46a411`
+- a **call audit** showing the aggregate was computed only after gates 1–3
+  passed, and that a checksum-file failure would have read no other file
+
+**P2**
+
+- evidence of a direct **folder id** query, not a name search
+- the exact child set the folder id returned
+- every ambiguity category zero: duplicate name, duplicate file id, missing
+  file id, nameless, subfolder, shortcut, trashed, Google-native, sizeless
+- twelve-file directory contract, `missing = 0`, `unexpected = 0`
+- `SUPERSEDED.json` absent
+- per-file cross-check: file id, inventory size vs observed size, provider
+  sha256 and md5 where available, and the download method used
+- `code_sha256` and `rule_fingerprint` both matching the registered values
+- the five Q5-E input files with name, bytes and SHA-256
+- the five-file subset fold
+- confirmation that the other seven files are not reported as input-unexpected
+
+**Bundle**
+
+- the actual file set, equal to the contracted set for that run kind
+- `manifest.payload_files` equal to the fold target actually used
+- payload fold recomputes to the recorded `prep_payload_sha256`
+- the manifest does not contain its own digest
+- the manifest's SHA-256 present in the notebook output or ingest log as the
+  external freeze record
+- `synthetic_fixture: false` and `ingestable: true` for a production run
+- no credential field and no local path anywhere in the bundle
+- P1 and P2 verdicts and `first_failure` values recorded independently
+- observations preserved even where the other gate failed
+- `eligible_for_registration` per candidate, and `applied_automatically: false`
 
 # Order
 

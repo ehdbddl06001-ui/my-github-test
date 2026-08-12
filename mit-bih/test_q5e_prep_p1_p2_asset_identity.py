@@ -712,10 +712,17 @@ def test_registration_candidates_never_apply_themselves():
                                         P.combine(p1, blocked_p2))
     check(blocked["registration_allowed"] is False,
           "one failure blocks registration entirely")
-    check(blocked["MITDB_TREE_AGGREGATE"]["observed"] is None,
-          "even the passing gate's value is withheld")
-    check(blocked["SOURCE_BUNDLE_FILE_SHA256"]["blocked_by"] ==
-          P.P2_SUPERSEDED_PRESENT, "and the blocking reason is named")
+    # G3: the observation survives; only eligibility is withheld.
+    check(blocked["MITDB_TREE_AGGREGATE"]["observed"] == p1["tree_aggregate"],
+          "the passing gate's observation is preserved as audit evidence")
+    check(blocked["MITDB_TREE_AGGREGATE"]["gate_passed"] is True,
+          "and its own gate is recorded as passed")
+    check(blocked["MITDB_TREE_AGGREGATE"]["eligible_for_registration"] is False,
+          "but it is not eligible for registration")
+    check(P.P2_SUPERSEDED_PRESENT in blocked["blocked_by"],
+          "and the blocking failure is named")
+    check(blocked["SOURCE_BUNDLE_FILE_SHA256"]["observed"] is None,
+          "the failed gate never computed its value, so it stays None")
 
 
 def test_bundle_is_complete_atomic_and_not_self_referential():
@@ -728,7 +735,7 @@ def test_bundle_is_complete_atomic_and_not_self_referential():
                                  combined, ["line"], synthetic=True)
         check(sorted(os.listdir(out)) == written["written"],
               "the published set is exactly what was reported")
-        for name in P.PREP_BUNDLE_FILES:
+        for name in P.bundle_files(True):
             check(os.path.exists(os.path.join(out, name)),
                   f"{name} is present")
         with open(os.path.join(out, P.PREP_MANIFEST_FILE),
@@ -748,35 +755,35 @@ def test_bundle_is_complete_atomic_and_not_self_referential():
                 check(written["manifest_sha256_freeze_externally"]
                       not in handle.read(),
                       f"nor inside {name}")
-        for name in P.NOT_APPLICABLE_HERE:
-            with open(os.path.join(out, name), encoding="utf-8") as handle:
-                seal = json.load(handle)
-            check(seal["not_applicable"] is True,
-                  f"{name} carries an explicit not_applicable seal")
-            check("P3" in seal["scope"], "naming P3 as its scope")
+        for name in ("oracle_harness_identity.json", "fixture_results.json"):
+            check(not os.path.exists(os.path.join(out, name)),
+                  f"{name} is a P3 file and is not written by a P1/P2 run")
 
 
 def test_bundle_refuses_an_unexpected_output_file():
-    real = P.PREP_PAYLOAD_FILES
+    real = P.P1_P2_PREP_PAYLOAD_FILES
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
         p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         out = os.path.join(tmp, "run")
         try:
-            P.PREP_PAYLOAD_FILES = real + ("never_written.json",)
+            P.P1_P2_PREP_PAYLOAD_FILES = real + ("never_written.json",)
             P.write_bundle(out, P.build_config("T", True), p1, p2, combined,
                            ["x"], synthetic=True)
             raise AssertionError("an incomplete file set was published")
         except P.PrepError as error:
             check("contracted set" in str(error),
                   "a file set that is not the contract is refused")
+            check("preserved at" in str(error),
+                  "and the partial staging is preserved, not deleted")
         finally:
-            P.PREP_PAYLOAD_FILES = real
+            P.P1_P2_PREP_PAYLOAD_FILES = real
         check(not os.path.exists(out),
-              "and the final path was never created")
-        check(os.listdir(tmp) == ["mitdb"],
-              "no staging directory is left behind")
+              "the final path was never created")
+        failed = [n for n in os.listdir(tmp) if n.endswith(".failed")]
+        check(len(failed) == 1,
+              "the failed staging directory is kept for inspection")
 
 
 def test_bundle_never_carries_a_credential():
@@ -911,6 +918,443 @@ def test_registered_q5e_gates_are_still_closed():
           "this module never assigns the registered aggregate")
     check("SOURCE_BUNDLE_FILE_SHA256 =" not in text,
           "nor the registered bundle digests")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Second acceptance review: B1-B7 and the G/E rulings
+# ─────────────────────────────────────────────────────────────────────────────
+class CountingReader(P.LocalTreeReader):
+    """Records which files were actually read, not just which gates ran."""
+
+    def __init__(self, approval):
+        super().__init__(approval)
+        self.read = []
+        self.listed = []
+
+    def listdir(self, directory):
+        self.listed.append(directory)
+        return super().listdir(directory)
+
+    def stat_and_hash(self, directory, name):
+        self.read.append(name)
+        return super().stat_and_hash(directory, name)
+
+
+def test_b1_checksum_failure_reads_nothing_else():
+    """B1: the I/O follows the gate order, not just the report."""
+    with tempfile.TemporaryDirectory() as tmp:
+        pristine = _write_mitdb_tree(os.path.join(tmp, "good"))
+        registered = _PatchedRegistration(pristine)
+        with registered:
+            drifted = _write_mitdb_tree(os.path.join(tmp, "drifted"),
+                                        bad_checksum_file=True)
+            reader = CountingReader(TOKEN)
+            calls = []
+            real_verifier = BJ.verify_against_publisher_checksums
+            BJ.verify_against_publisher_checksums = (
+                lambda *a, **k: calls.append("verify") or real_verifier(*a, **k))
+            try:
+                result = P.run_p1(drifted, TOKEN, reader=reader)
+            finally:
+                BJ.verify_against_publisher_checksums = real_verifier
+
+    check(result["status"] == P.P1_CHECKSUM_FILE_MISMATCH,
+          "a drifted checksum file stops P1")
+    check(reader.read == [BJ.MITDB_CHECKSUM_FILE],
+          "exactly one file was read: the checksum file itself")
+    check(len(reader.read) == 1,
+          "the other 146 files were never read")
+    check(calls == [], "the publisher verifier was never called")
+    check(result["tree_aggregate"] is None, "no aggregate was computed")
+    check(result["per_file"] == [], "and no per-file digests were produced")
+
+
+def test_b1_happy_path_reads_each_file_once():
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
+        with _PatchedRegistration(tree):
+            reader = CountingReader(TOKEN)
+            result = P.run_p1(tree, TOKEN, reader=reader)
+    check(result["ok"] is True, "the pristine tree passes")
+    check(len(reader.read) == 147, "147 files were read")
+    check(len(set(reader.read)) == 147, "each exactly once, none re-read")
+    check(reader.read[0] == BJ.MITDB_CHECKSUM_FILE,
+          "and the checksum file was read first, before the rest")
+
+
+def test_b1_file_set_failure_reads_no_file_at_all():
+    with tempfile.TemporaryDirectory() as tmp:
+        short = _write_mitdb_tree(os.path.join(tmp, "short"), drop="RECORDS")
+        with _PatchedRegistration(short):
+            reader = CountingReader(TOKEN)
+            result = P.run_p1(short, TOKEN, reader=reader)
+    check(result["status"] == P.P1_FILE_SET_MISMATCH, "the set gate fails")
+    check(reader.read == [],
+          "not even the checksum file is read when the set is wrong")
+
+
+def test_b2_inventory_rejects_every_ambiguity_form():
+    """B2: the file id is the identity key, so a row without one is unusable."""
+    cases = {
+        "missing_file_id": [dict(c, id="") for c in _bundle_children()],
+        "duplicate_file_ids": _bundle_children() + [
+            dict(_bundle_children()[0], name="extra-name")],
+        "google_native": [
+            dict(c, mimeType="application/vnd.google-apps.document")
+            if c["name"] == "decision.json" else c
+            for c in _bundle_children()],
+        "sizeless": [{k: v for k, v in c.items() if k != "size"}
+                     if c["name"] == "log.txt" else c
+                     for c in _bundle_children()],
+    }
+    for label, children in cases.items():
+        adapter = FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID: children})
+        result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+        check(result["status"] == P.P2_INVENTORY_AMBIGUOUS,
+              f"{label} is refused as ambiguous")
+        check(result["ambiguity"][label],
+              f"and is recorded under {label}")
+        check(result["input_identity"] is None,
+              f"{label} yields no identity")
+
+
+def test_b3_direct_stream_is_cross_checked_against_the_inventory():
+    """B3: a download that merely succeeded proves nothing about the bytes."""
+    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+    bridge = [g for g in result["gates"]
+              if g["gate"] == "canonical_bytes_bridge"][0]
+    check(bridge["ok"] is True, "a consistent stream passes")
+    check(len(bridge["cross_check"]) == len(BJ.BUNDLE_FILES),
+          "every file has an audit record")
+    for entry in bridge["cross_check"]:
+        for field in ("file_id", "name", "inventory_bytes", "observed_bytes",
+                      "provider_sha256", "observed_sha256", "sha256_match",
+                      "provider_md5", "observed_md5", "md5_match",
+                      "download_method", "checksum_available"):
+            check(field in entry, f"the audit record carries {field}")
+        check(entry["bytes_match"] is True, "size agrees with the inventory")
+        check(entry["sha256_match"] is True, "and so does the provider sha256")
+
+
+def test_b3_a_stream_that_disagrees_with_the_inventory_stops_the_bridge():
+    lying = [dict(c, size=str(len(c["_bytes"]) + 5)) for c in _bundle_children()]
+    adapter = FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID: lying})
+    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+    check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
+          "a size disagreement stops at the bridge gate")
+    check(result["input_identity"] is None,
+          "and unverified bytes never reach the input identity gate")
+    gates = [g["gate"] for g in result["gates"]]
+    check("manifest_identity" not in gates,
+          "nor the manifest gate")
+
+    wrong_hash = [dict(c, sha256Checksum="f" * 64) for c in _bundle_children()]
+    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+                      FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID:
+                                        wrong_hash}), TOKEN)
+    check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
+          "a provider sha256 disagreement stops too")
+
+    wrong_md5 = [dict(c, md5Checksum="0" * 32) for c in _bundle_children()]
+    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+                      FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID:
+                                        wrong_md5}), TOKEN)
+    check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
+          "and so does a provider md5 disagreement")
+
+
+def test_b3_missing_checksums_are_recorded_not_guessed():
+    """G4: absence is recorded; it does not fail a direct stream by itself."""
+    bare = [{k: v for k, v in c.items() if k != "sha256Checksum"}
+            for c in _bundle_children()]
+    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+                      FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID: bare}),
+                      TOKEN)
+    check(result["ok"] is True,
+          "a direct stream still passes without a provider checksum")
+    bridge = [g for g in result["gates"]
+              if g["gate"] == "canonical_bytes_bridge"][0]
+    check(bridge["n_without_checksum"] == len(BJ.BUNDLE_FILES),
+          "and the absence is counted, not glossed over")
+    for entry in bridge["cross_check"]:
+        check(entry["checksum_available"] is False,
+              "each record says the checksum was unavailable")
+        check(entry["sha256_match"] is False,
+              "an unavailable checksum is not reported as a match")
+        check(entry["provider_sha256"] is None,
+              "and no value is invented for it")
+        check("not a security identity" in entry["md5_note"],
+              "MD5 is labelled a transfer cross-check, not an identity")
+
+
+def test_g5_publish_never_deletes_anything_pre_existing():
+    """G5: an existing final path is refused, not removed."""
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+
+        out = os.path.join(tmp, "existing")
+        os.makedirs(out)
+        with open(os.path.join(out, "someone_elses_file.txt"), "w",
+                  encoding="utf-8") as handle:
+            handle.write("do not delete me")
+        try:
+            P.write_bundle(out, P.build_config("T", True), p1, p2, combined,
+                           ["x"], synthetic=True)
+            raise AssertionError("an existing directory was overwritten")
+        except P.PrepError as error:
+            check("already exists" in str(error),
+                  "an existing final path is refused")
+        check(os.path.exists(os.path.join(out, "someone_elses_file.txt")),
+              "and the file that was already there survives")
+
+        empty = os.path.join(tmp, "empty")
+        os.makedirs(empty)
+        try:
+            P.write_bundle(empty, P.build_config("T", True), p1, p2, combined,
+                           ["x"], synthetic=True)
+            raise AssertionError("an empty existing directory was consumed")
+        except P.PrepError:
+            check(os.path.isdir(empty),
+                  "even an empty existing directory is left alone")
+
+        source = open(P.__file__, encoding="utf-8").read()
+        writer = source.split("def write_bundle(", 1)[1].split("\ndef ", 1)[0]
+        check("rmtree" not in writer,
+              "the writer never calls a recursive delete")
+        check("os.rmdir" not in writer, "nor removes the final directory")
+        check("except BaseException" not in writer,
+              "and does not catch BaseException")
+        check("except Exception as error" in writer,
+              "it catches only ordinary exceptions, and names them")
+
+
+def test_g5_staging_is_unique_per_call():
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        combined = P.combine(p1, p2)
+        first = P.write_bundle(os.path.join(tmp, "a"),
+                               P.build_config("T", True), p1, p2, combined,
+                               ["x"], synthetic=True)
+        second = P.write_bundle(os.path.join(tmp, "b"),
+                                P.build_config("T", True), p1, p2, combined,
+                                ["x"], synthetic=True)
+        check(first["prep_payload_sha256"] == second["prep_payload_sha256"],
+              "the same inputs fold to the same payload digest")
+        check(os.path.isdir(os.path.join(tmp, "a")) and
+              os.path.isdir(os.path.join(tmp, "b")),
+              "two runs coexist without either deleting the other")
+        leftovers = [n for n in os.listdir(tmp) if ".staging." in n]
+        check(leftovers == [],
+              "a successful publish leaves no staging directory behind")
+
+
+def test_e3_e4_payload_is_p1_p2_specific_and_covers_the_marker():
+    """E3/E4: no P3 files inherited, and nothing sits outside the fold."""
+    check("oracle_harness_identity.json" not in P.P1_P2_PREP_PAYLOAD_FILES,
+          "the P3 oracle harness file is not part of a P1/P2 bundle")
+    check("fixture_results.json" not in P.P1_P2_PREP_PAYLOAD_FILES,
+          "nor the P3 fixture results file")
+    check(set(P.P1_P2_PREP_PAYLOAD_FILES) == {
+        "config.json", "decision.json", "log.txt",
+        "registration_candidates.json", "source_inventory.json",
+        "summary.md"}, "the P1/P2 payload set is exactly the contracted six")
+    check(P.SYNTHETIC_MARKER in P.payload_files(True),
+          "a synthetic run folds its marker into the payload identity")
+    check(P.SYNTHETIC_MARKER not in P.payload_files(False),
+          "a production run has no marker at all")
+    check(P.PREP_MANIFEST_FILE not in P.payload_files(True),
+          "the manifest is excluded from the fold it records")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        out = os.path.join(tmp, "run")
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 P.combine(p1, p2), ["x"], synthetic=True)
+        check(written["payload_files"] == list(P.payload_files(True)),
+              "the receipt reports the actual fold target")
+        with open(os.path.join(out, P.PREP_MANIFEST_FILE),
+                  encoding="utf-8") as handle:
+            manifest = json.load(handle)
+        check(manifest["payload_files"] == list(P.payload_files(True)),
+              "and so does the manifest")
+
+        # Tampering with the marker must break the recomputed fold.
+        triples = []
+        for name in P.payload_files(True):
+            with open(os.path.join(out, name), "rb") as handle:
+                body = handle.read()
+            triples.append({"name": name, "bytes": len(body),
+                            "sha256": hashlib.sha256(body).hexdigest()})
+        check(P.fold_file_triples(triples) == written["prep_payload_sha256"],
+              "the published fold recomputes exactly")
+        with open(os.path.join(out, P.SYNTHETIC_MARKER), "a",
+                  encoding="utf-8") as handle:
+            handle.write(" ")
+        tampered = []
+        for name in P.payload_files(True):
+            with open(os.path.join(out, name), "rb") as handle:
+                body = handle.read()
+            tampered.append({"name": name, "bytes": len(body),
+                             "sha256": hashlib.sha256(body).hexdigest()})
+        check(P.fold_file_triples(tampered) != written["prep_payload_sha256"],
+              "editing the synthetic marker breaks the payload fold")
+
+
+def test_b4_authentication_happens_only_on_the_approved_path():
+    """B4: an unapproved run performs zero authentication calls."""
+    calls = []
+
+    def authenticator():
+        calls.append("auth")
+
+    def service_factory():
+        calls.append("service")
+        return object()
+
+    for approval, label in ((None, "no approval"),
+                            ("wrong-token", "a wrong token")):
+        try:
+            P.authenticate_drive_readonly(approval,
+                                          authenticator=authenticator,
+                                          service_factory=service_factory)
+            raise AssertionError(f"{label} authenticated")
+        except P.PrepNotApprovedError:
+            check(True, f"{label} is refused before authenticating")
+    check(calls == [], "and zero authentication calls were made")
+
+    service = P.authenticate_drive_readonly(
+        TOKEN, authenticator=authenticator, service_factory=service_factory)
+    check(calls == ["auth", "service"],
+          "an approved call authenticates first, then builds the service")
+    check(service is not None, "and returns a service object")
+
+    adapter = P.build_drive_adapter(TOKEN, authenticator=authenticator,
+                                    service_factory=service_factory)
+    check(isinstance(adapter, P.GoogleDriveFolderAdapter),
+          "build_drive_adapter injects the service into the adapter")
+    check(adapter._service is not None, "the adapter holds the service")
+
+    with open(P.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    check("drive.readonly" in text, "the read-only scope is declared")
+    installers = _module_calls(P.__file__) & {
+        "check_call", "check_output", "call", "run", "Popen", "system"}
+    check(not installers,
+          f"no subprocess/installer call exists: {sorted(installers)}")
+    check("!pip" not in text, "and no notebook-magic install either")
+    report = P.check_runtime_dependencies()
+    check(set(report["required"]) == set(P.RUNTIME_DEPENDENCIES),
+          "the dependency requirement is reported explicitly")
+
+
+def test_b4_notebook_authenticates_only_behind_both_switches():
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    source = "\n".join("".join(c["source"]) for c in nb["cells"]
+                        if c["cell_type"] == "code")
+    check("authenticate_drive_readonly" in source
+          or "build_drive_adapter" in source,
+          "the notebook performs the real authentication")
+    check("check_runtime_dependencies" in source,
+          "and reports the dependency requirement before doing so")
+    auth_cell = [c for c in nb["cells"]
+                 if c["cell_type"] == "code"
+                 and ("build_drive_adapter" in "".join(c["source"])
+                      or "authenticate_drive_readonly" in "".join(c["source"]))]
+    check(auth_cell, "the auth cell exists")
+    body = "".join(auth_cell[0]["source"])
+    check("OPEN_REGISTERED_DATA" in body and "APPROVAL" in body,
+          "and is guarded by both switches")
+    check("pip install" not in source and "!pip" not in source,
+          "the notebook never installs a package silently")
+
+
+def test_b5_manifest_digest_is_reported_for_external_freezing():
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        source = handle.read()
+    check("manifest_sha256_freeze_externally" in source,
+          "the notebook prints the manifest digest for external freezing")
+    check("prep_payload_sha256" in source,
+          "and the payload fold")
+    check("registration_allowed" in source,
+          "and the registration verdict")
+    check("eligible_for_registration" in source,
+          "and each candidate's eligibility")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        p1 = _passing_p1(tmp)
+        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        out = os.path.join(tmp, "run")
+        written = P.write_bundle(out, P.build_config("T", True), p1, p2,
+                                 P.combine(p1, p2), ["x"], synthetic=True)
+    check(len(written["manifest_sha256_freeze_externally"]) == 64,
+          "the writer returns a full 64-hex manifest digest")
+    check(len(written["prep_payload_sha256"]) == 64,
+          "and a full payload fold")
+
+
+def test_b6_execution_contract_fixes_the_result_acceptance_criteria():
+    contract = os.path.join(
+        ROOT, "experiments", "specs",
+        "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md")
+    with open(contract, encoding="utf-8") as handle:
+        text = handle.read()
+    check("Result acceptance criteria" in text,
+          "the contract fixes what a result review will check")
+    for item in ("gate order", "146", "prefix", "call audit",
+                 "folder id", "ambiguity", "12", "SUPERSEDED",
+                 "subset fold", "payload fold", "self digest",
+                 "applied_automatically", "first_failure"):
+        check(item in text, f"the criteria mention {item}")
+
+
+def test_b7_claims_match_the_code():
+    with open(P.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    check("all bytes are linked by provider checksum" not in text,
+          "no claim that every byte is checksum-linked")
+    check("every available provider checksum" in text,
+          "the claim is scoped to checksums that exist")
+    contract = os.path.join(
+        ROOT, "experiments", "specs",
+        "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md")
+    with open(contract, encoding="utf-8") as handle:
+        spec = handle.read()
+    flat = " ".join(spec.lower().split())
+    check("observations are preserved" in flat,
+          "the contract states that observations are preserved")
+    check("only eligibility is withheld" in flat,
+          "and that only eligibility is withheld")
+    check("nothing pre-existing is deleted" in flat,
+          "the atomic-publish claim is scoped to no-delete behaviour")
+    check("not even the passing gate's observation" not in flat,
+          "the old blanket-withholding sentence is gone")
+
+
+def test_f2_patched_registration_restores_on_exception():
+    before = (P.MITDB_CHECKSUM_FILE_SHA256,
+              P.MITDB_REGISTERED_AGGREGATE_PREFIX)
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
+        try:
+            with _PatchedRegistration(tree):
+                check(P.MITDB_CHECKSUM_FILE_SHA256 != before[0],
+                      "the fixture does replace the registered constants")
+                raise RuntimeError("boom")
+        except RuntimeError:
+            check(True, "the exception propagates")
+    check((P.MITDB_CHECKSUM_FILE_SHA256,
+           P.MITDB_REGISTERED_AGGREGATE_PREFIX) == before,
+          "and the constants are restored even on an exception")
+    with open(P.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    check("registered_override" not in text and "override=" not in text,
+          "production takes no registration-override argument")
+
 
 
 def declared_tests():

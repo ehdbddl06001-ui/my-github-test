@@ -143,28 +143,34 @@ PREP_STATUSES: Tuple[str, ...] = (
 # ─────────────────────────────────────────────────────────────────────────────
 # Bundle contract
 # ─────────────────────────────────────────────────────────────────────────────
-#: Files folded into the payload identity.  A superset of Q5-E's list, because
-#: this PREP also emits `registration_candidates.json` and that file must be
-#: covered by the identity rather than sitting outside it.  `manifest.json` is
-#: excluded — it records the fold, so including it would be circular.
-PREP_PAYLOAD_FILES: Tuple[str, ...] = tuple(sorted(
-    set(Q5E.PREP_PAYLOAD_FILES) | {"registration_candidates.json"}))
-PREP_MANIFEST_FILE = Q5E.PREP_MANIFEST_FILE
-#: Exactly what a run writes.  Anything else in the directory is a defect, not
-#: a harmless extra: a file outside the payload identity is unaccounted for.
-PREP_BUNDLE_FILES: Tuple[str, ...] = tuple(
-    sorted(set(PREP_PAYLOAD_FILES) | {PREP_MANIFEST_FILE}))
-#: P3-only payload members.  Written with an explicit seal rather than a
-#: fabricated value, so the payload set stays complete and nothing pretends an
-#: oracle differential happened here.
-NOT_APPLICABLE_HERE: Tuple[str, ...] = (
-    "oracle_harness_identity.json", "fixture_results.json")
-NOT_APPLICABLE_SEAL = {
-    "not_applicable": True,
-    "scope": "P3 only",
-    "reason": ("this run implements P1 and P2 only; no source-matching "
-               "differential was performed and no oracle harness exists here"),
-}
+#: The payload identity of a **P1/P2** bundle.  Defined here rather than
+#: inherited from Q5-E's list: that list belongs to P3 and carries oracle
+#: files this preflight has no business writing.  Only the fold algorithm and
+#: the canonical-JSON convention are reused.  `manifest.json` is excluded — it
+#: records the fold, so including it would be circular by construction.
+P1_P2_PREP_PAYLOAD_FILES: Tuple[str, ...] = (
+    "config.json", "decision.json", "log.txt",
+    "registration_candidates.json", "source_inventory.json", "summary.md")
+PREP_MANIFEST_FILE = "manifest.json"
+
+
+def payload_files(synthetic: bool) -> Tuple[str, ...]:
+    """The exact fold target for this kind of run.
+
+    A synthetic run's marker is part of the payload identity, not an extra
+    sitting outside it: deleting or editing the marker must break the fold,
+    otherwise "no file outside the payload identity" would not be true.
+    """
+    names = set(P1_P2_PREP_PAYLOAD_FILES)
+    if synthetic:
+        names.add(SYNTHETIC_MARKER)
+    return tuple(sorted(names))
+
+
+def bundle_files(synthetic: bool) -> Tuple[str, ...]:
+    """Exactly what a run writes: the payload plus the manifest."""
+    return tuple(sorted(set(payload_files(synthetic)) | {PREP_MANIFEST_FILE}))
+
 
 SYNTHETIC_MARKER = "SYNTHETIC_FIXTURE.json"
 SYNTHETIC_NOTE = ("Produced from synthetic fixtures. NOT a Q5-E result and "
@@ -339,6 +345,77 @@ class GoogleDriveFolderAdapter(DriveFolderAdapter):     # pragma: no cover
             fileId=file_id, supportsAllDrives=True).execute()
 
 
+#: Packages an approved run needs.  Named and reported rather than installed:
+#: a silent `pip install latest` would change the runtime under a preflight
+#: whose whole purpose is to pin identity.
+RUNTIME_DEPENDENCIES: Dict[str, str] = {
+    "google.colab": "Colab read-only Drive authentication",
+    "googleapiclient": "Drive v3 client (google-api-python-client)",
+}
+#: Drive scope.  Read-only by contract: this preflight must be unable to
+#: modify, move or delete anything even if a call were miswritten.
+DRIVE_READONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly"
+
+
+def check_runtime_dependencies() -> Dict[str, object]:
+    """Report what an approved run needs.  Never installs anything."""
+    missing = []
+    for name in sorted(RUNTIME_DEPENDENCIES):
+        try:
+            __import__(name)
+        except ImportError:
+            missing.append(name)
+    return {"required": sorted(RUNTIME_DEPENDENCIES), "missing": missing,
+            "ok": not missing,
+            "note": ("install these deliberately and pin them; this preflight "
+                     "never installs a package for you, because a silent "
+                     "upgrade would change the runtime under an identity "
+                     "check")}
+
+
+def authenticate_drive_readonly(approval: Optional[str],
+                                authenticator=None, service_factory=None):
+    """Authenticate and build a **read-only** Drive v3 service.
+
+    Approval is checked before either step, so an unapproved notebook run
+    performs zero authentication calls — not a failed one, none.  Both steps
+    are injectable so the notebook path is testable without a real credential;
+    production passes neither and gets Colab auth plus a real client.
+
+    The returned service is handed to :class:`GoogleDriveFolderAdapter` and is
+    never written into a result.
+    """
+    require_execution_approval(approval, "Google Drive authentication")
+    report = check_runtime_dependencies()
+    if authenticator is None and service_factory is None and report["missing"]:
+        raise PrepError(
+            f"refusing to authenticate: {report['missing']} are not "
+            f"importable.  {report['note']}")
+    if authenticator is None:                            # pragma: no cover
+        from google.colab import auth                    # noqa: PLC0415
+        authenticator = auth.authenticate_user
+    authenticator()
+    if service_factory is None:                          # pragma: no cover
+        from googleapiclient.discovery import build      # noqa: PLC0415
+
+        def service_factory():
+            return build("drive", "v3")
+    return service_factory()
+
+
+def build_drive_adapter(approval: Optional[str], authenticator=None,
+                        service_factory=None) -> "GoogleDriveFolderAdapter":
+    """Authenticate, then hand the service to the adapter.
+
+    This is the whole production auth path, complete now.  The execution
+    approval PR removes the terminal guard and nothing else: it does not have
+    to write authentication logic for the first time.
+    """
+    service = authenticate_drive_readonly(
+        approval, authenticator=authenticator, service_factory=service_factory)
+    return GoogleDriveFolderAdapter(approval, service=service)
+
+
 def normalise_child(child: Mapping[str, object]) -> Dict[str, object]:
     """One inventory row, with credentials and local paths left out.
 
@@ -379,21 +456,25 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
            reader: Optional[LocalTreeReader] = None) -> Dict[str, object]:
     """P1, in the registered order, stopping at the first failing gate.
 
-    The aggregate is computed **only** after the expected file set, the
-    checksum file's own digest and the publisher list have each passed — so a
-    tree that fails an earlier gate never produces a number that could be
-    mistaken for a registration candidate.
+    The **I/O** follows the gate order, not just the report.  Only
+    `SHA256SUMS.txt` is read for gate 2; the other 146 files are not touched
+    until that gate passes, and the aggregate is folded only after the
+    publisher list has passed too.  A tree that fails an early gate therefore
+    never yields per-file digests or an aggregate that could be mistaken for a
+    registration candidate.
     """
     reader = reader or LocalTreeReader(approval)
     expected = list(BJ.mitdb_expected_files())
     gates: List[Dict[str, object]] = []
 
-    def stop(reason: str) -> Dict[str, object]:
-        return {"prep": "P1", "ok": False, "status": reason,
-                "first_failure": reason, "gates": gates,
-                "gate_order": list(P1_GATE_ORDER),
-                "tree_aggregate": None,
-                "seals": _p1_seals()}
+    def stop(reason: str, **extra) -> Dict[str, object]:
+        out = {"prep": "P1", "ok": False, "status": reason,
+               "first_failure": reason, "gates": gates,
+               "gate_order": list(P1_GATE_ORDER),
+               "tree_aggregate": None, "per_file": [],
+               "seals": _p1_seals()}
+        out.update(extra)
+        return out
 
     # ---- gate 1: the exact expected file set ------------------------------
     present = reader.listdir(mitdb_dir)
@@ -406,24 +487,25 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
     if missing or unexpected:
         return stop(P1_FILE_SET_MISMATCH)
 
-    # Per-file digests.  Needed by the publisher check below, and reused for
-    # the aggregate so the tree is read once.
-    files = [reader.stat_and_hash(mitdb_dir, name) for name in expected]
-    by_name = {str(f["name"]): f for f in files}
-
-    # ---- gate 2: the checksum file's own digest ---------------------------
-    observed_checksum = str(by_name[BJ.MITDB_CHECKSUM_FILE]["sha256"])
+    # ---- gate 2: the checksum file's own digest, reading ONLY that file ---
+    checksum_entry = reader.stat_and_hash(mitdb_dir, BJ.MITDB_CHECKSUM_FILE)
+    observed_checksum = str(checksum_entry["sha256"])
     checksum_ok = observed_checksum == MITDB_CHECKSUM_FILE_SHA256
     gates.append({"gate": "checksum_file_digest", "ok": checksum_ok,
                   "file": BJ.MITDB_CHECKSUM_FILE,
                   "observed": observed_checksum,
-                  "registered": MITDB_CHECKSUM_FILE_SHA256})
+                  "registered": MITDB_CHECKSUM_FILE_SHA256,
+                  "files_read_so_far": 1})
     if not checksum_ok:
-        # The publisher list is not trusted when the list itself is not the
-        # registered one; nothing it verifies would count.
+        # Nothing else is read.  A list that is not the registered list
+        # verifies nothing, so hashing the other 146 files would be work done
+        # in support of a conclusion that cannot be reached.
         return stop(P1_CHECKSUM_FILE_MISMATCH)
 
     # ---- gate 3: the publisher list over the other 146 files --------------
+    others = [reader.stat_and_hash(mitdb_dir, name) for name in expected
+              if name != BJ.MITDB_CHECKSUM_FILE]
+    files = sorted([checksum_entry] + others, key=lambda f: str(f["name"]))
     published = BJ.verify_against_publisher_checksums(
         {"files": files}, mitdb_dir)
     checked = int(published.get("checked") or 0)
@@ -453,10 +535,15 @@ def run_p1(mitdb_dir: str, approval: Optional[str],
                   "registered_prefix": MITDB_REGISTERED_AGGREGATE_PREFIX,
                   "prefix_matches": prefix_ok})
     if not prefix_ok:
-        out = stop(MITDB_IDENTITY_DIVERGED)
-        out["tree_aggregate"] = aggregate
-        out["per_file"] = files
-        return out
+        # The observed value is kept as a *diagnostic observation* so the
+        # divergence can be investigated.  It is explicitly not a registration
+        # candidate: this gate did not pass.
+        return stop(MITDB_IDENTITY_DIVERGED,
+                    tree_aggregate=aggregate, per_file=files,
+                    observation_only=True,
+                    observation_note=(
+                        "diagnostic observation from a FAILED gate; not a "
+                        "registration candidate"))
 
     return {
         "prep": "P1", "ok": True, "status": P1_PASS, "first_failure": None,
@@ -524,18 +611,38 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
         return stop(P2_FOLDER_ID_BRIDGE_UNRESOLVED)
 
     # ---- gate 2: the inventory is unambiguous -----------------------------
+    # P2's identity key is the Drive file id.  A row without one cannot be
+    # used at all, and a duplicated one makes "which file" unanswerable.
     names = [row["name"] for row in inventory]
-    duplicates = sorted({n for n in names if names.count(n) > 1})
-    folders = [r["name"] for r in inventory if r["is_folder"]]
-    shortcuts = [r["name"] for r in inventory if r["is_shortcut"]]
-    trashed = [r["name"] for r in inventory if r["trashed"]]
-    nameless = [r["file_id"] for r in inventory if not r["name"]]
-    ambiguity = {"duplicate_names": duplicates, "subfolders": folders,
-                 "shortcuts": shortcuts, "trashed": trashed,
-                 "nameless": nameless}
+    ids = [row["file_id"] for row in inventory]
+    expected_names = set(BJ.BUNDLE_FILES) | {SUPERSEDED_MARKER}
+    ambiguity = {
+        "duplicate_names": sorted({n for n in names if names.count(n) > 1}),
+        "subfolders": [r["name"] for r in inventory if r["is_folder"]],
+        "shortcuts": [r["name"] for r in inventory if r["is_shortcut"]],
+        "trashed": [r["name"] for r in inventory if r["trashed"]],
+        "nameless": [r["file_id"] for r in inventory if not r["name"]],
+        "missing_file_id": [r["name"] for r in inventory if not r["file_id"]],
+        "duplicate_file_ids": sorted(
+            {i for i in ids if i and ids.count(i) > 1}),
+        # A Google-native document has no plain bytes to hash, so one wearing
+        # a bundle file's name is a substitution, not a bundle member.
+        "google_native": [
+            r["name"] for r in inventory
+            if str(r["mime_type"]).startswith("application/vnd.google-apps.")
+            and not r["is_folder"] and not r["is_shortcut"]],
+        # A regular file must report a size; without one the inventory cannot
+        # be cross-checked against the bytes.
+        "sizeless": [
+            r["name"] for r in inventory
+            if r["bytes"] is None and not r["is_folder"]
+            and not r["is_shortcut"]
+            and not str(r["mime_type"]).startswith(
+                "application/vnd.google-apps.")],
+    }
     unambiguous = not any(ambiguity.values())
     gates.append({"gate": "inventory_unambiguous", "ok": unambiguous,
-                  **ambiguity})
+                  "expected_names": sorted(expected_names), **ambiguity})
     if not unambiguous:
         return stop(P2_INVENTORY_AMBIGUOUS, ambiguity=ambiguity)
 
@@ -621,73 +728,138 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
     }
 
 
+def _cross_check(row: Mapping[str, object], body: bytes,
+                 method: str) -> Dict[str, object]:
+    """Compare fetched bytes against everything the inventory claims.
+
+    Length is always checked.  `sha256Checksum` is the identity check;
+    `md5Checksum` is a **provider transfer cross-check**, not a security
+    identity — MD5 is not collision-resistant and is never treated as one.
+    A checksum the provider did not supply is recorded as unavailable rather
+    than guessed at.
+    """
+    observed_sha = _sha256_bytes(body)
+    observed_md5 = hashlib.md5(body).hexdigest()      # noqa: S324 - see above
+    provider_sha = row.get("provider_sha256")
+    provider_md5 = row.get("provider_md5")
+    inventory_bytes = row.get("bytes")
+    problems: List[str] = []
+    if inventory_bytes is not None and int(inventory_bytes) != len(body):
+        problems.append(
+            f"{row['name']}: inventory says {inventory_bytes} bytes, fetched "
+            f"{len(body)}")
+    if provider_sha and str(provider_sha).lower() != observed_sha:
+        problems.append(
+            f"{row['name']}: provider sha256 disagrees with the fetched bytes")
+    if provider_md5 and str(provider_md5).lower() != observed_md5:
+        problems.append(
+            f"{row['name']}: provider md5 disagrees with the fetched bytes")
+    return {
+        "file_id": row.get("file_id"), "name": row.get("name"),
+        "download_method": method,
+        "inventory_bytes": inventory_bytes, "observed_bytes": len(body),
+        "bytes_match": (inventory_bytes is None
+                        or int(inventory_bytes) == len(body)),
+        "provider_sha256": provider_sha, "observed_sha256": observed_sha,
+        "sha256_available": bool(provider_sha),
+        "sha256_match": (bool(provider_sha)
+                         and str(provider_sha).lower() == observed_sha),
+        "provider_md5": provider_md5, "observed_md5": observed_md5,
+        "md5_available": bool(provider_md5),
+        "md5_match": (bool(provider_md5)
+                      and str(provider_md5).lower() == observed_md5),
+        "md5_note": "provider transfer cross-check, not a security identity",
+        "checksum_available": bool(provider_sha or provider_md5),
+        "problems": problems,
+        "ok": not problems,
+    }
+
+
 def _canonical_bytes(inventory: Sequence[Mapping[str, object]],
                      adapter: DriveFolderAdapter, mount_dir: Optional[str],
                      reader: LocalTreeReader
                      ) -> Tuple[Dict[str, bytes], Dict[str, object]]:
-    """Fetch the bundle's bytes, and record how they were linked to the id.
+    """Fetch the bundle's bytes and cross-check every one against the inventory.
 
-    Preferred: stream each file **by file id**, which needs no bridge at all
-    because the bytes come from the registered folder directly.  Otherwise a
-    mount may be used only if it can be tied to the inventory by exact name,
-    size and count — never by folder name.
+    Preferred: stream each file **by file id**, which needs no bridge because
+    the bytes come from the registered folder directly.  Either way the fetched
+    bytes are re-checked against the inventory's size and any provider
+    checksum; a fetch that merely *succeeded* proves nothing about what came
+    back.  A missing provider checksum does not fail a direct stream — the
+    file id already ties the bytes to the folder — but it is recorded as
+    unavailable rather than passed over.
     """
-    by_id: Dict[str, bytes] = {}
+    audit: List[Dict[str, object]] = []
+    by_name: Dict[str, bytes] = {}
+    streamed = True
     try:
         for row in inventory:
-            by_id[str(row["name"])] = adapter.download(str(row["file_id"]))
-        return by_id, {"gate": "canonical_bytes_bridge", "ok": True,
-                       "method": "drive_file_id_stream",
-                       "n_files": len(by_id),
-                       "note": ("bytes came from the registered folder id "
-                                "directly; no mount bridge was needed")}
+            body = adapter.download(str(row["file_id"]))
+            by_name[str(row["name"])] = body
+            audit.append(_cross_check(row, body, "drive_file_id_stream"))
     except NotImplementedError:
-        pass                                  # fall through to the mount path
+        streamed = False
+        by_name, audit = {}, []
+
+    if streamed:
+        problems = [p for entry in audit for p in entry["problems"]]
+        if problems:
+            # Do not hand these bytes downstream: a manifest or input identity
+            # computed from unverified bytes would look like evidence.
+            return {}, {"gate": "canonical_bytes_bridge", "ok": False,
+                        "method": None, "attempted": "drive_file_id_stream",
+                        "n_files": len(audit), "cross_check": audit,
+                        "problems": problems}
+        return by_name, {
+            "gate": "canonical_bytes_bridge", "ok": True,
+            "method": "drive_file_id_stream", "n_files": len(audit),
+            "cross_check": audit,
+            "n_without_checksum": sum(1 for e in audit
+                                      if not e["checksum_available"]),
+            "note": ("bytes came from the registered folder id directly and "
+                     "were re-checked against the inventory; no mount bridge "
+                     "was needed")}
 
     if not mount_dir:
         return {}, {"gate": "canonical_bytes_bridge", "ok": False,
-                    "method": None,
+                    "method": None, "attempted": "mount",
+                    "cross_check": [],
                     "problems": ["the adapter cannot stream by file id and no "
                                  "mount was supplied, so the folder id cannot "
                                  "be linked to any bytes"]}
 
     present = reader.listdir(mount_dir)
-    problems: List[str] = []
     inventory_names = sorted(str(r["name"]) for r in inventory)
+    problems: List[str] = []
     if sorted(present) != inventory_names:
         problems.append(
             f"mount holds {sorted(present)} but the folder id lists "
             f"{inventory_names}; the two are not the same file set")
-    hashed: Dict[str, bytes] = {}
-    sizes: List[Dict[str, object]] = []
     if not problems:
         for row in inventory:
             name = str(row["name"])
-            stat = reader.stat_and_hash(mount_dir, name)
-            sizes.append({"name": name, "inventory_bytes": row["bytes"],
-                          "mount_bytes": stat["bytes"]})
-            if row["bytes"] is not None and int(row["bytes"]) != \
-                    int(stat["bytes"]):
-                problems.append(
-                    f"{name}: folder id says {row['bytes']} bytes, mount has "
-                    f"{stat['bytes']}")
-            if row["provider_sha256"] and \
-                    str(row["provider_sha256"]) != str(stat["sha256"]):
-                problems.append(
-                    f"{name}: provider checksum disagrees with the mounted "
-                    f"bytes")
-        if not problems:
-            for name in inventory_names:
-                with open(os.path.join(mount_dir, name), "rb") as handle:
-                    hashed[name] = handle.read()
-    return hashed, {
-        "gate": "canonical_bytes_bridge", "ok": not problems,
-        "method": "mount_bridged_to_folder_id" if not problems else None,
-        "n_files": len(hashed), "size_crosswalk": sizes,
-        "problems": problems,
-        "note": ("a matching folder *name* is never accepted as the bridge; "
-                 "only exact name, size and count against the folder-id "
-                 "inventory, plus any provider checksum")}
+            with open(os.path.join(mount_dir, name), "rb") as handle:
+                body = handle.read()
+            entry = _cross_check(row, body, "mount_bridged_to_folder_id")
+            audit.append(entry)
+            problems.extend(entry["problems"])
+            by_name[name] = body
+    if problems:
+        return {}, {"gate": "canonical_bytes_bridge", "ok": False,
+                    "method": None, "attempted": "mount",
+                    "n_files": len(audit), "cross_check": audit,
+                    "problems": problems,
+                    "note": ("a matching folder *name* is never accepted as "
+                             "the bridge")}
+    return by_name, {
+        "gate": "canonical_bytes_bridge", "ok": True,
+        "method": "mount_bridged_to_folder_id", "n_files": len(audit),
+        "cross_check": audit,
+        "n_without_checksum": sum(1 for e in audit
+                                  if not e["checksum_available"]),
+        "note": ("the mount was tied to the folder-id inventory by exact "
+                 "name, size and every available provider checksum; a "
+                 "matching folder name is never accepted as the bridge")}
 
 
 def _p2_seals() -> Dict[str, bool]:
@@ -728,33 +900,71 @@ def combine(p1: Mapping[str, object], p2: Mapping[str, object]
 def registration_candidates(p1: Mapping[str, object], p2: Mapping[str, object],
                             combined: Mapping[str, object]
                             ) -> Dict[str, object]:
-    """Observed values, offered for registration — never applied.
+    """Observations and eligibility, kept as **separate** facts.
 
-    Nothing here edits source or spec.  The values enter the codebase only
-    through a separate result-acceptance PR, after Codex reviews the run.
+    An earlier draft blanked a passing gate's observation when the other gate
+    failed.  That destroyed audit evidence: P1 really did compute an
+    aggregate, and erasing it makes the run harder to diagnose, not safer.
+    What must be withheld is *eligibility to register*, not the observation.
+
+    So each entry reports what was measured, whether its own gate passed, and
+    whether the combined gate opened registration.  A value that was never
+    computed — because its gate stopped earlier — stays `None`, because there
+    is nothing to report.
     """
-    allowed = bool(combined.get("registration_allowed"))
+    both = bool(combined.get("registration_allowed"))
+    blocked_by = sorted({str(r.get("first_failure")) for r in (p1, p2)
+                         if r.get("first_failure")})
+
+    def entry(target: str, observed: object, gate: Mapping[str, object],
+              **extra) -> Dict[str, object]:
+        passed = bool(gate.get("ok"))
+        return {
+            "target": target,
+            # Preserved regardless of the other gate's verdict.
+            "observed": observed,
+            "gate_passed": passed,
+            "combined_registration_allowed": both,
+            "eligible_for_registration": bool(passed and both),
+            "applied_automatically": False,
+            "blocked_by": blocked_by,
+            **extra}
+
+    # P1's aggregate exists only when gate 4 was reached.  On
+    # MITDB_IDENTITY_DIVERGED it was computed but the gate failed, so it is a
+    # diagnostic observation and explicitly not a candidate.
+    p1_observed = p1.get("tree_aggregate")
+    p1_entry = entry(
+        "q5e_leg2_failure_mechanism_audit.MITDB_TREE_AGGREGATE",
+        p1_observed, p1,
+        observation_only=bool(p1.get("observation_only")),
+        observation_note=(
+            p1.get("observation_note")
+            or ("computed after every P1 gate passed" if p1.get("ok")
+                else "not computed: P1 stopped before the aggregate gate")))
+
+    identity = dict(p2.get("input_identity") or {})
+    p2_observed = ({f["name"]: f["sha256"] for f in identity.get("files", ())}
+                   or None)
+    p2_entry = entry(
+        "q5e_leg2_failure_mechanism_audit.SOURCE_BUNDLE_FILE_SHA256",
+        p2_observed, p2,
+        subset_fold=identity.get("subset_fold"),
+        observation_note=(
+            "computed after every P2 gate passed" if p2.get("ok")
+            else "not computed: P2 stopped before the input-identity gate"))
+
     return {
-        "registration_allowed": allowed,
+        "registration_allowed": both,
         "applied_automatically": False,
-        "note": ("candidate observations only.  These do not modify "
-                 "q5e_leg2_failure_mechanism_audit.py or the spec; a separate "
-                 "result-acceptance PR registers them after review."),
-        "MITDB_TREE_AGGREGATE": {
-            "target": "q5e_leg2_failure_mechanism_audit.MITDB_TREE_AGGREGATE",
-            "observed": p1.get("tree_aggregate") if allowed else None,
-            "eligible": allowed and bool(p1.get("ok")),
-            "blocked_by": None if p1.get("ok") else p1.get("first_failure")},
-        "SOURCE_BUNDLE_FILE_SHA256": {
-            "target": ("q5e_leg2_failure_mechanism_audit."
-                       "SOURCE_BUNDLE_FILE_SHA256"),
-            "observed": ({f["name"]: f["sha256"]
-                          for f in dict(p2.get("input_identity") or {})
-                          .get("files", ())} if allowed else None),
-            "subset_fold": (dict(p2.get("input_identity") or {})
-                            .get("subset_fold") if allowed else None),
-            "eligible": allowed and bool(p2.get("ok")),
-            "blocked_by": None if p2.get("ok") else p2.get("first_failure")},
+        "blocked_by": blocked_by,
+        "note": ("observations are preserved even when the other gate failed; "
+                 "only eligibility is withheld.  Nothing here modifies "
+                 "q5e_leg2_failure_mechanism_audit.py or the spec — a separate "
+                 "result-acceptance PR registers eligible values after "
+                 "review."),
+        "MITDB_TREE_AGGREGATE": p1_entry,
+        "SOURCE_BUNDLE_FILE_SHA256": p2_entry,
     }
 
 
@@ -809,17 +1019,22 @@ def write_bundle(directory: str, config: Mapping[str, object],
                  p1: Mapping[str, object], p2: Mapping[str, object],
                  combined: Mapping[str, object], log_lines: Sequence[str],
                  synthetic: bool = False) -> Dict[str, object]:
-    """Write the PREP bundle atomically, with a non-self-referential identity.
+    """Write the PREP bundle, then publish it by rename.
 
-    Everything is staged and verified before it is published, so the final
-    path never holds a partial run.  `manifest.json` records the payload fold
-    and is excluded from it; the manifest's own SHA-256 is returned for
-    freezing **outside** the bundle and is deliberately not written inside it.
+    Deliberately conservative about deletion.  An earlier draft removed a
+    pre-existing staging directory and an empty final directory, and caught
+    `BaseException` to clean up — all three could destroy someone else's files
+    or a previous run's evidence.  Now: the staging directory is unique to this
+    call, an existing final path is refused rather than removed, nothing
+    pre-existing is deleted, and a failed run's partial staging is **kept** at
+    a reported `.failed` path so it can be inspected.
     """
-    if os.path.exists(directory) and os.listdir(directory):
+    if os.path.lexists(directory):
         raise PrepError(
-            f"refusing to write into a non-empty directory {directory!r}: a "
-            f"PREP bundle is new, never an overwrite")
+            f"refusing to publish to {directory!r}: it already exists.  A PREP "
+            f"bundle is new, never an overwrite, and this function does not "
+            f"delete anything that is already there.")
+    payload_names = payload_files(synthetic)
     candidates = registration_candidates(p1, p2, combined)
     payload: Dict[str, object] = {
         "config.json": config,
@@ -830,19 +1045,19 @@ def write_bundle(directory: str, config: Mapping[str, object],
                           "p2": dict(p2)},
         "registration_candidates.json": candidates,
     }
-    for name in NOT_APPLICABLE_HERE:
-        payload[name] = dict(NOT_APPLICABLE_SEAL)
     for name, value in payload.items():
         assert_no_credentials(value, name)
 
     parent = os.path.dirname(os.path.abspath(directory)) or "."
     os.makedirs(parent, exist_ok=True)
-    staging = os.path.join(
-        parent, f".{os.path.basename(os.path.abspath(directory))}.staging")
-    if os.path.exists(staging):
-        import shutil                                    # noqa: PLC0415
-        shutil.rmtree(staging)
-    os.makedirs(staging)
+    if os.path.islink(parent):
+        raise PrepError(
+            f"refusing to publish under {parent!r}: it is a symlink, and this "
+            f"function does not follow links when writing or renaming")
+    import tempfile                                        # noqa: PLC0415
+    staging = tempfile.mkdtemp(
+        prefix=f".{os.path.basename(os.path.abspath(directory))}.staging.",
+        dir=parent)
     try:
         for name, value in payload.items():
             with open(os.path.join(staging, name), "w",
@@ -863,30 +1078,29 @@ def write_bundle(directory: str, config: Mapping[str, object],
                           sort_keys=True)
 
         written = sorted(os.listdir(staging))
-        expected = sorted(set(PREP_PAYLOAD_FILES)
-                          | ({SYNTHETIC_MARKER} if synthetic else set()))
-        if written != expected:
+        if written != sorted(payload_names):
             raise PrepError(
                 f"refusing to publish: the staged file set {written} is not "
-                f"the contracted set {expected}.  A file outside the payload "
-                f"identity would be unaccounted for.")
+                f"the contracted set {sorted(payload_names)}.  A file outside "
+                f"the payload identity would be unaccounted for.")
 
-        triples = [{"name": name,
-                    "bytes": os.path.getsize(os.path.join(staging, name)),
-                    "sha256": _sha256_bytes(
-                        open(os.path.join(staging, name), "rb").read())}
-                   for name in written]
-        fold = fold_file_triples(
-            [t for t in triples if t["name"] in PREP_PAYLOAD_FILES])
+        triples = []
+        for name in written:
+            path = os.path.join(staging, name)
+            with open(path, "rb") as handle:
+                body = handle.read()
+            triples.append({"name": name, "bytes": len(body),
+                            "sha256": _sha256_bytes(body)})
+        fold = fold_file_triples(triples)
         manifest = {
             "experiment_id": EXPERIMENT_ID, "substage": SUBSTAGE,
             "timestamp": config.get("timestamp"),
             "prep_payload_sha256": fold,
-            "payload_files": list(PREP_PAYLOAD_FILES),
+            # The actual fold target for this kind of run, not a static list.
+            "payload_files": list(payload_names),
             "excluded_from_payload_fold": [PREP_MANIFEST_FILE],
             "manifest_self_digest_recorded_here": False,
             "manifest_self_digest_frozen_externally": True,
-            "not_applicable_files": list(NOT_APPLICABLE_HERE),
             "synthetic_fixture": bool(synthetic),
             "ingestable": not synthetic,
             "module_sha256": Q5E.sha256_file(os.path.abspath(__file__)),
@@ -894,30 +1108,39 @@ def write_bundle(directory: str, config: Mapping[str, object],
                 os.path.abspath(BJ.__file__)),
             "note": ("manifest.json is excluded from the fold it records; its "
                      "own SHA-256 is frozen outside this bundle, in the "
-                     "Decision log and the registration record"),
+                     "execution-contract Decision log and the registration "
+                     "record"),
         }
         assert_no_credentials(manifest, PREP_MANIFEST_FILE)
         with open(os.path.join(staging, PREP_MANIFEST_FILE), "w",
                   encoding="utf-8") as handle:
             json.dump(manifest, handle, indent=1, sort_keys=True)
 
-        final = sorted(os.listdir(staging))
-        want = sorted(set(PREP_BUNDLE_FILES)
-                      | ({SYNTHETIC_MARKER} if synthetic else set()))
-        if final != want:
+        final_set = sorted(os.listdir(staging))
+        if final_set != sorted(bundle_files(synthetic)):
             raise PrepError(
-                f"refusing to publish: final file set {final} != {want}")
+                f"refusing to publish: final file set {final_set} != "
+                f"{sorted(bundle_files(synthetic))}")
         with open(os.path.join(staging, PREP_MANIFEST_FILE), "rb") as handle:
             manifest_digest = _sha256_bytes(handle.read())
 
-        if os.path.isdir(directory):
-            os.rmdir(directory)
+        # Same-parent rename: same filesystem, so the publish is atomic.
         os.rename(staging, directory)
-    except BaseException:
-        import shutil                                    # noqa: PLC0415
-        shutil.rmtree(staging, ignore_errors=True)
-        raise
-    return {"directory": directory, "written": final,
+    except Exception as error:
+        # Keep the evidence.  A failed run's partial staging is more useful
+        # than a clean directory, and deleting it is how a diagnosis gets
+        # lost.  Only this call's own directory is ever touched.
+        failed = f"{staging}.failed"
+        try:
+            os.rename(staging, failed)
+        except OSError:                                    # pragma: no cover
+            failed = staging
+        raise PrepError(
+            f"PREP bundle was not published: {error}.  The partial staging "
+            f"directory is preserved at {failed!r} for inspection; nothing "
+            f"was deleted.") from error
+    return {"directory": directory, "written": final_set,
+            "payload_files": list(payload_names),
             "prep_payload_sha256": fold,
             # Returned for external freezing; deliberately NOT inside the file.
             "manifest_sha256_freeze_externally": manifest_digest,
@@ -939,6 +1162,10 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     again at the terminal guard.  Permission is checked before capability, so
     an unauthorised call is refused as unauthorised whatever happens to be
     installed and whatever credentials happen to exist.
+
+    When no adapter is supplied, the approved route authenticates and builds a
+    read-only Drive service itself — the auth path is complete here, so the
+    execution-approval PR removes the guard and nothing else.
     """
     if not open_registered_data:
         raise PrepNotApprovedError(
@@ -950,7 +1177,8 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
         raise PrepError(
             f"refusing to run: {folder_id!r} is not the registered canonical "
             f"folder id {SOURCE_BUNDLE_FOLDER_ID!r}.  The bundle is chosen by "
-            f"id, never by name or by proximity.")
+            f"id, never by name or by proximity, and this is not a "
+            f"general-purpose folder inspector.")
     emit("Q5-E PREP P1+P2: approval present; nothing has been opened yet.")
 
     _terminal_execution_guard()
@@ -960,7 +1188,7 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
     # execution PR makes here.
     return execute_prep(                                # pragma: no cover
         mitdb_dir, folder_id, out_dir,
-        adapter or GoogleDriveFolderAdapter(approval),
+        adapter or build_drive_adapter(approval),
         mount_dir=mount_dir, approval=approval, timestamp=timestamp,
         emit=emit, synthetic=False)
 
@@ -973,8 +1201,8 @@ def execute_prep(mitdb_dir: str, folder_id: str, out_dir: str,
                  ) -> Dict[str, object]:
     """Run both gates and write the bundle.  Shared by production and fixtures.
 
-    A synthetic run must set ``synthetic=True``; the bundle is then stamped
-    and is never an ingest candidate.
+    A synthetic run must set ``synthetic=True``; the bundle is then stamped and
+    is never an ingest candidate.
     """
     reader = reader or LocalTreeReader(approval)
     log: List[str] = [f"scope=P1+P2 synthetic={bool(synthetic)}"]
@@ -1005,6 +1233,8 @@ def module_capabilities() -> Tuple[str, ...]:
             "registration_candidates", "write_bundle", "fold_file_triples",
             "DriveFolderAdapter", "GoogleDriveFolderAdapter",
             "LocalTreeReader", "normalise_child", "assert_no_credentials",
+            "authenticate_drive_readonly", "build_drive_adapter",
+            "check_runtime_dependencies", "payload_files", "bundle_files",
             "design_card", "EXECUTION_APPROVAL_TOKEN")
 
 
