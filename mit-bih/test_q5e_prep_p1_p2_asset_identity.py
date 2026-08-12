@@ -17,6 +17,7 @@ import builtins
 import hashlib
 import json
 import os
+import pathlib
 import sys
 import tempfile
 
@@ -1473,10 +1474,35 @@ def test_g5_only_a_committed_directory_is_a_bundle():
         check(os.path.isdir(bare), "it is still there afterwards")
 
 
+def _symlinks_usable(where: str) -> bool:
+    """Can this process actually create a symlink, here, now?
+
+    `hasattr(os, "symlink")` is not the question — the attribute is present on
+    Windows, and the call then fails with `WinError 1314: A required privilege
+    is not held by the client` unless Developer Mode is on or the shell is
+    elevated.  Guarding on the attribute therefore let an `OSError` out of the
+    test on an ordinary Windows box and took the whole suite down with it.  So
+    probe for real, and clean up after the probe.
+    """
+    probe = os.path.join(where, "_symlink_probe")
+    try:
+        os.symlink(where, probe)
+    except (OSError, NotImplementedError, AttributeError):
+        return False
+    try:                                                 # a directory symlink
+        os.remove(probe)                                 # needs rmdir on
+    except OSError:                                      # Windows
+        os.rmdir(probe)
+    return True
+
+
 def test_g5_publish_refuses_a_symlinked_parent_or_target():
-    """A link at either end sends the write somewhere the path does not say."""
-    if not hasattr(os, "symlink"):                       # pragma: no cover
-        return
+    """A link at either end sends the write somewhere the path does not say.
+
+    The link half needs a platform that will make one for us; the checks that
+    do not need a real link run either way, so this test still asserts on a
+    Windows machine without Developer Mode instead of vanishing.
+    """
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
         p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
@@ -1488,35 +1514,38 @@ def test_g5_publish_refuses_a_symlinked_parent_or_target():
                   encoding="utf-8") as handle:
             handle.write("keep me")
 
-        # A symlink sitting *at* the final path.
-        link = os.path.join(tmp, "link_target")
-        os.symlink(real, link)
-        try:
-            P.write_bundle(link, P.build_config("T", True), p1, p2, combined,
-                           ["x"], synthetic=True)
-            raise AssertionError("published through a symlink")
-        except P.PrepError as error:
-            check("already there" in str(error),
-                  "a symlink at the final path is refused, not followed")
-        check(os.path.islink(link), "the link itself is left in place")
-        check(os.path.isfile(os.path.join(real, "precious.txt")),
-              "and what it points at is untouched")
+        if _symlinks_usable(tmp):
+            # A symlink sitting *at* the final path.
+            link = os.path.join(tmp, "link_target")
+            os.symlink(real, link)
+            try:
+                P.write_bundle(link, P.build_config("T", True), p1, p2,
+                               combined, ["x"], synthetic=True)
+                raise AssertionError("published through a symlink")
+            except P.PrepError as error:
+                check("already there" in str(error),
+                      "a symlink at the final path is refused, not followed")
+            check(os.path.islink(link), "the link itself is left in place")
+            check(os.path.isfile(os.path.join(real, "precious.txt")),
+                  "and what it points at is untouched")
 
-        # A symlinked parent directory.
-        parent_link = os.path.join(tmp, "link_parent")
-        os.symlink(real, parent_link)
-        try:
-            P.write_bundle(os.path.join(parent_link, "bundle"),
-                           P.build_config("T", True), p1, p2, combined,
-                           ["x"], synthetic=True)
-            raise AssertionError("published under a symlinked parent")
-        except P.PrepError as error:
-            check("symlink or reparse point" in str(error),
-                  "a symlinked parent is refused")
-        check(sorted(os.listdir(real)) == ["precious.txt"],
-              "and nothing was written through it")
+            # A symlinked parent directory.
+            parent_link = os.path.join(tmp, "link_parent")
+            os.symlink(real, parent_link)
+            try:
+                P.write_bundle(os.path.join(parent_link, "bundle"),
+                               P.build_config("T", True), p1, p2, combined,
+                               ["x"], synthetic=True)
+                raise AssertionError("published under a symlinked parent")
+            except P.PrepError as error:
+                check("symlink or reparse point" in str(error),
+                      "a symlinked parent is refused")
+            check(sorted(os.listdir(real)) == ["precious.txt"],
+                  "and nothing was written through it")
 
-        check(P._is_link_like(link) is True, "the link check sees a symlink")
+            check(P._is_link_like(link) is True,
+                  "the link check sees a symlink")
+
         check(P._is_link_like(real) is False,
               "and a real directory is not mistaken for one")
         check("isjunction" in open(P.__file__, encoding="utf-8").read(),
@@ -3290,6 +3319,113 @@ def test_the_execution_approval_opens_only_what_it_names():
           "SOURCE_MATCH_ORACLE_RECORD is still unregistered")
 
 
+def _as_source_literal_body(path: str, pure=None) -> str:
+    """`path`, escaped so it can sit inside a single-quoted Python literal.
+
+    Splicing a path straight into source is a real defect and not a
+    theoretical one.  A Windows temp directory is `C:\\Users\\...`, so the
+    naive splice hands `\\U` to the compiler, which reads it as the start of a
+    Unicode escape and dies with `SyntaxError: (unicode error)
+    'unicodeescape' codec can't decode bytes ... truncated \\UXXXXXXXX escape`
+    — before a single assertion in this file has run.  `\\N`, `\\x` and `\\u`
+    fail the same way, and a user named `Uwe` or a `Temp\\new` component is
+    enough to trigger it.
+
+    Separators are normalised to forward slashes, which `os.path` accepts on
+    Windows, and whatever survives that is escaped explicitly — a directory
+    name containing a backslash (legal on POSIX) or a quote cannot end the
+    literal early either.  `pure` exists so the Windows shape can be pinned
+    from a POSIX machine and vice versa; it defaults to the running platform's
+    flavour.
+    """
+    pure = pure or pathlib.PurePath
+    return pure(path).as_posix().replace("\\", "\\\\").replace("'", "\\'")
+
+
+def _same_path(left: str, right: str) -> bool:
+    """Equal as paths, not as strings.
+
+    `realpath` because a temp directory is reached through a symlink on macOS
+    and the cell reports whichever spelling it was handed; `normcase` because
+    Windows is case-insensitive and mixes separators.  Comparing the raw
+    strings would fail on both for reasons that have nothing to do with
+    discovery.
+    """
+    if not left or not right:
+        return False
+    return (os.path.normcase(os.path.realpath(left))
+            == os.path.normcase(os.path.realpath(right)))
+
+
+def _make_fake_repo(path: str) -> str:
+    """The smallest tree `_is_repo()` accepts: three named files in `mit-bih/`.
+
+    This used to be `os.symlink(ROOT, ...)`, which tests the same thing on
+    POSIX and cannot run on Windows at all without Developer Mode or an
+    elevated shell — so the case that matters most to a Windows regression was
+    the one Windows could not reach.  Discovery only asks `os.path.isfile`, so
+    empty files answer the identical question on every platform, and nothing
+    here is ever imported: the cell's source is cut off above its first
+    `import`.
+    """
+    inside = os.path.join(path, "mit-bih")
+    os.makedirs(inside)
+    for name in ("q5d_order_preserving_beat_join.py",
+                 "q5e_leg2_failure_mechanism_audit.py",
+                 "q5e_prep_p1_p2_asset_identity.py"):
+        with open(os.path.join(inside, name), "w", encoding="utf-8") as handle:
+            handle.write("")
+    return path
+
+
+def test_a_sandbox_path_survives_being_spliced_into_source():
+    """The escaping the discovery test depends on, pinned on both flavours.
+
+    The discovery test below rewrites the cell's `/content...` literals to
+    point into a temp directory.  That splice is the only reason this file
+    ever failed on Windows, and the failure was a `SyntaxError` at compile
+    time, so it took every assertion in the test down with it and looked like
+    a broken test file rather than a path bug.
+
+    Both flavours are exercised from whichever platform is running, because a
+    POSIX-only machine would otherwise never see the shape that breaks.
+    """
+    windows = [r"C:\Users\bob\AppData\Local\Temp\tmp1a2b",
+               r"C:\Users\Uwe\Temp\new",
+               r"D:\temp\x123\ufo"]
+    posix = ["/tmp/tmp1a2b", "/tmp/it's-a-dir", "/tmp/back\\slash"]
+
+    for raw, pure in ([(p, pathlib.PureWindowsPath) for p in windows]
+                      + [(p, pathlib.PurePosixPath) for p in posix]):
+        body = _as_source_literal_body(raw, pure=pure)
+        source = "SANDBOX = '" + body + "/content/repo'\n"
+        namespace: dict = {}
+        exec(compile(source, "escaping_check", "exec"), namespace)
+        expected = pure(raw).as_posix() + "/content/repo"
+        check(namespace["SANDBOX"] == expected,
+              f"{raw!r} survives the round trip as {expected!r}, "
+              f"got {namespace['SANDBOX']!r}")
+
+    # And the naive splice really does fail, so this test is pinning a bug
+    # rather than describing a preference.
+    naive = "SANDBOX = '" + windows[0] + "/content/repo'\n"
+    try:
+        compile(naive, "escaping_check", "exec")
+        raise AssertionError(
+            "splicing a raw Windows path into source no longer fails; if that "
+            "is genuinely true this test needs rewriting, but check first that "
+            "the path still contains an escape-like sequence")
+    except SyntaxError as error:
+        check("unicodeescape" in str(error) or "escape" in str(error),
+              f"the raw splice fails exactly as reported: {error}")
+
+    # The helper's default is the running platform, which is what the
+    # discovery test uses.
+    native = _as_source_literal_body(os.path.join("a", "b"))
+    check("\\U" not in native and "\\N" not in native,
+          "the platform default cannot emit a source escape either")
+
+
 def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
     """A path that exists is not a repository.
 
@@ -3335,6 +3471,10 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
     def discover(cwd, sandbox):
         """Run the cell's discovery with its absolute candidates sandboxed.
 
+        Returns `(verdict, captured)` — the captured text is asserted on
+        directly, because "the clone fallback's noise stays out of the saved
+        output" is a claim worth checking rather than trusting.
+
         The cell checks `/content/repo` and friends before it walks the cwd,
         which is right in Colab and makes a test that leaves them alone answer
         differently depending on whether the machine happens to have a clone
@@ -3342,13 +3482,18 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
         Colab for exactly that reason.  Re-pointing every `/content...`
         literal — the candidates and the clone target alike — into a sandbox
         makes the outcome depend only on the layout under test.
+
+        The sandbox goes in through `_as_source_literal_body`, never raw: a
+        Windows temp path spliced straight in is a compile-time `SyntaxError`,
+        which is what used to make this whole file unrunnable there.
         """
         import contextlib
         import io
 
         namespace = {}
         previous = os.getcwd()
-        sandboxed = head.replace("'/content", f"'{sandbox}/content")
+        sandboxed = head.replace(
+            "'/content", "'" + _as_source_literal_body(sandbox) + "/content")
         # The cell prints git's complaint when its clone fallback fails, which
         # is the point of the "nothing to find" case.  Captured rather than
         # let through: this cell's saved output is part of the freeze record,
@@ -3360,33 +3505,37 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
             with contextlib.redirect_stdout(noise), \
                     contextlib.redirect_stderr(noise):
                 exec(compile(sandboxed, "environment_cell", "exec"), namespace)
-            return namespace.get("FOUND")
+            return namespace.get("FOUND"), noise.getvalue()
         except RuntimeError as error:
-            return f"REFUSED: {error}"
+            return f"REFUSED: {error}", noise.getvalue()
         finally:
             os.chdir(previous)
 
     with tempfile.TemporaryDirectory() as tmp:
-        check(discover(os.path.join(ROOT, "notebooks"), tmp) == ROOT,
-              "a cwd inside the repository finds the repository")
-        check(discover(ROOT, tmp) == ROOT,
-              "and so does the repository root itself")
+        found, captured = discover(os.path.join(ROOT, "notebooks"), tmp)
+        check(_same_path(found, ROOT),
+              f"a cwd inside the repository finds the repository: {found}")
+        check(captured == "",
+              "and says nothing while doing it")
+        found, captured = discover(ROOT, tmp)
+        check(_same_path(found, ROOT),
+              f"and so does the repository root itself: {found}")
+        check(captured == "", "silently too")
         check(not os.path.exists(os.path.join(tmp, "content")),
               "neither of those reached the clone fallback at all")
 
     with tempfile.TemporaryDirectory() as tmp:
         holder = os.path.join(tmp, "here")
-        os.makedirs(holder)
-        os.symlink(ROOT, os.path.join(holder, "some-other-name"))
-        check(discover(holder, tmp)
-              == os.path.join(holder, "some-other-name"),
-              "a clone one level below the cwd is found by name-independent "
-              "content, not by a hardcoded directory name")
+        clone = _make_fake_repo(os.path.join(holder, "some-other-name"))
+        found, _ = discover(holder, tmp)
+        check(_same_path(found, clone),
+              f"a clone one level below the cwd is found by name-independent "
+              f"content, not by a hardcoded directory name: {found}")
 
     with tempfile.TemporaryDirectory() as tmp:
         empty = os.path.join(tmp, "here")
         os.makedirs(empty)
-        verdict = discover(empty, tmp)
+        verdict, captured = discover(empty, tmp)
         check(str(verdict).startswith("REFUSED"),
               f"with nothing to find, it refuses instead of guessing: "
               f"{verdict}")
@@ -3394,6 +3543,29 @@ def test_the_notebook_finds_the_repo_by_its_contents_not_by_a_guess():
               "and the refusal tells the user exactly how to fix it")
         check("토큰을" in str(verdict),
               "while warning against pasting a token into a saved notebook")
+        # The refusal path is the one that prints: the cell announces the
+        # clone attempt and echoes git's complaint.  That belongs in this
+        # test's capture buffer and nowhere near a saved notebook, so assert
+        # both halves — it really did run, and it really was contained.
+        check(captured.strip() != "",
+              "the dead clone fallback did run and did produce output")
+        check("저장소를 찾지 못했다" in captured,
+              "which is the cell's own announcement, captured not printed")
+
+    # As close to a Windows run as a POSIX machine gets, and it exercises
+    # `discover()` itself rather than the escaping helper alone.  The sandbox
+    # is only ever splice material, a candidate that `isfile` rejects and a
+    # `listdir` that raises and is caught — so a Windows-shaped string that
+    # does not exist here still drives the identical code path.  Before the
+    # fix this raised SyntaxError at `compile`; the assertion is that a
+    # verdict comes back at all.
+    with tempfile.TemporaryDirectory() as tmp:
+        empty = os.path.join(tmp, "here")
+        os.makedirs(empty)
+        verdict, _ = discover(empty, r"C:\Users\bob\AppData\Local\Temp\tmp1a2b")
+        check(str(verdict).startswith("REFUSED"),
+              f"a Windows-shaped sandbox compiles and still refuses: "
+              f"{verdict}")
 
 
 def test_the_fixture_cell_cannot_turn_a_failure_into_silence():
