@@ -231,6 +231,8 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
         tb = cfg.get("title_box")
         if tb:  # 좌상단 타이틀은 답 노출 → 항상 검은 박스(주변 맞춤 불필요)
             cv2.rectangle(quiz, (tb[0], tb[1]), (tb[2], tb[3]), (0, 0, 0), -1)
+        for x0, y0, x1, y1 in cfg.get("black_boxes", []):  # 자막 등 — 검은 박스가 깔끔
+            cv2.rectangle(quiz, (x0, y0), (x1, y1), (0, 0, 0), -1)
         for p in cfg.get("pins", []):
             if p.get("to"):
                 cv2.line(quiz, (p["x"], p["y"]), tuple(p["to"]), PIN_FILL, 3)

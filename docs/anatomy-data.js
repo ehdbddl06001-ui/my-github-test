@@ -391,6 +391,94 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0017",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "넓적다리 뒤쪽에서 종아리로 이어지는 해부 사진에서, 번호핀 ①(▲)이 가리키는 — 넙다리동맥이 다리오금으로 들어오면서 이름이 바뀐 — 혈관의 이름을 말하시오.",
+   "choices": null,
+   "answer": "오금동맥 (popliteal artery)",
+   "explanation": "넙다리동맥은 모음근구멍(adductor hiatus)을 지나 다리오금으로 들어오면서 오금동맥이 된다. 오금동맥은 무릎동맥 5가지(위가쪽·위안쪽·아래가쪽·아래안쪽·중간무릎동맥)를 낸다. 원본 영상 라벨에서 답 실측 확인. 이미지는 필기 제거 후 donor/점진 인페인팅 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "다리오금의 혈관 (업로드 스캔 5183 p1)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0018",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "다리오금 해부 사진에서, 궁둥신경이 갈라진 두 가지 중 번호핀 ①(▲)이 가리키는 — 넙다리두갈래근 안쪽 모서리를 따라 가쪽으로 달리는 — 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "온종아리신경 (common fibular nerve)",
+   "explanation": "궁둥신경은 다리오금 위에서 정강신경과 온종아리신경으로 갈라진다. 온종아리신경은 넙다리두갈래근 힘줄 안쪽을 따라 가쪽으로 내려가 종아리뼈머리를 감아돈다. 깊이 관계(가장 얕음: 정강신경 → 오금정맥 → 가장 깊음: 오금동맥)도 함께 기억. 원본 영상 라벨 실측 확인. 이미지는 필기 제거 후 donor/점진 인페인팅 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "다리오금의 신경 (업로드 스캔 5183 p8)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0019",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "suboccipital",
+   "examPhase": "tagging-1",
+   "stem": "뒤통수 부위 피부벗기기 사진에서, 번호핀 ①(▲)이 가리키는 — 뒤통수를 향해 올라가는 구불구불한 동맥과 동행하는 — 피부신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "큰뒤통수신경 (greater occipital nerve)",
+   "explanation": "큰뒤통수신경은 둘째목신경(C2) 뒤가지의 안쪽가지로, 뒤통수동맥과 동행하며 뒤통수 피부에 분포한다. 원본 영상 라벨 실측 확인. 이미지는 필기 제거 후 donor/점진 인페인팅 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "표면해부와 피부벗기기 — 피부신경 (업로드 스캔 0150 p3)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0020",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "suboccipital-triangle",
+   "examPhase": "tagging-1",
+   "stem": "뒤통수밑삼각 해부 사진에서, 번호핀 ①(▲)이 가리키는 — 뒤통수밑삼각의 위안쪽 경계를 이루는 — 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "큰뒤머리곧은근 (rectus capitis posterior major muscle)",
+   "explanation": "뒤통수밑삼각의 경계: 위안쪽 큰뒤머리곧은근, 위가쪽 위머리빗근, 아래가쪽 아래머리빗근. 삼각 안에 척추동맥과 뒤통수밑신경(C1 뒤가지)이 지난다. 원본 영상 라벨 실측 확인. 이미지는 필기 제거 후 donor/점진 인페인팅 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "뒤통수밑삼각 (업로드 스캔 0150 p9)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",
