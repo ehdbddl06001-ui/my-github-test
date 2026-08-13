@@ -1,25 +1,25 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-12",
+ "generated": "2026-08-13",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1009,
+  "total": 1021,
   "byType": {
    "usmle": 66,
-   "anatomy": 216,
+   "anatomy": 220,
+   "paper": 195,
    "kmle": 523,
-   "paper": 187,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 216,
-   "Cardiology": 79,
-   "Nephrology": 57,
-   "Infectious Disease": 55,
-   "Pediatrics": 53,
+   "Anatomy": 220,
+   "Cardiology": 80,
+   "Nephrology": 58,
+   "Infectious Disease": 56,
+   "Pediatrics": 54,
    "Obstetrics & Gynecology": 38,
    "Neurology": 36,
    "Psychiatry": 36,
@@ -31,11 +31,11 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 32,
    "Orthopedics": 32,
    "Rheumatology": 32,
+   "Surgery": 32,
    "Hematology": 31,
-   "Surgery": 31,
-   "Pathology": 26,
-   "Laboratory Medicine": 24,
-   "Hematology-Oncology": 19,
+   "Pathology": 27,
+   "Laboratory Medicine": 25,
+   "Hematology-Oncology": 20,
    "Physiology": 7,
    "Microbiology": 6,
    "Biochemistry": 5,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 626,
-   "medium": 334,
+   "high": 629,
+   "medium": 343,
    "low": 49
   },
-  "tagCount": 1879
+  "tagCount": 1886
  },
  "docs": [
   {
@@ -186,6 +186,213 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-13.md",
    "snippet": "오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 33분 문항 11개 · 개념 3개 · 복습 9개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-13 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 33분 문항 11개 · 개념 3개 · 복습 9개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0026",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "아래머리빗근 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "뒤통수밑삼각",
+    "아래머리빗근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처)",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0026.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가",
+   "text": "Anatomy 아래머리빗근 실사 spotter (복원본) spotter 복원 3회차 뒤통수밑삼각 아래머리빗근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가 부드러운 얼룩으로 남았다. 근육 결이 다른 문항만큼 또렷하지 않다. 정답 근거는 영상의 근육 라벨이 아니라 삼각의 경계 정의(아래가쪽 = 아래머리빗근) 와 같은 프레임의 뒤통수밑신경 라벨이다. 핀 위치가 그 경계 근육 위에 놓였는지 눈으로 확인할 것. 얼룩이 거슬리면 같은 영상의 p9(큰뒤머리곧은근 라벨 프레임)로 교체 가능. 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (필기 제거만, 라벨 살아 있음)."
+  },
+  {
+   "id": "anatomy-2026-0025",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "위가쪽무릎동맥 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "무릎동맥",
+    "오금동맥",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0025.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 ",
+   "text": "Anatomy 위가쪽무릎동맥 실사 spotter (복원본) spotter 복원 3회차 무릎동맥 오금동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 모두 대시오 · 관절주머니를 뚫는 가지는? (중간무릎동맥)"
+  },
+  {
+   "id": "anatomy-2026-0024",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "가슴등동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "넓은등근",
+    "가슴등동맥",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p8 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0024.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 이 동맥의 ",
+   "text": "Anatomy 가슴등동맥 실사 spotter (필기 제거·복원본) spotter 복원 2회차 넓은등근 가슴등동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p8 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 이 동맥의 모동맥은? (어깨밑동맥) · 같이 가는 신경은? (가슴등신경)"
+  },
+  {
+   "id": "anatomy-2026-0023",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "마름근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "마름근",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p2 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-13",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0023.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 마름근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 마름근 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "paper-2026-0195",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0195_is_pip_denervation_for_osteoarthritis_a_durable_solution_res.md",
+   "snippet": "Title Is PIP Denervation for Osteoarthritis a Durable Solution? Results from a Multicenter Outcome Study Authors Kwee Esmee, Nieuwdorp Niek J, Blaaker Camille, Duraku Liron S, Zuidam J Michiel, Hand Wrist Study Group, Hundepool Caroline A J",
+   "text": "Surgery scraped pubmed PubMed / The Journal of hand surgery Title Is PIP Denervation for Osteoarthritis a Durable Solution? Results from a Multicenter Outcome Study Authors Kwee Esmee, Nieuwdorp Niek J, Blaaker Camille, Duraku Liron S, Zuidam J Michiel, Hand Wrist Study Group, Hundepool Caroline A Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.06.006 · PMID: 42584378 https://pubmed.ncbi.nlm.nih.gov/42584378/ Abstract PURPOSE: Proximal interphalangeal (PIP) joint osteoarthritis frequently causes pain and functional limitation. Arthroplasty and arthrodesis can provide pain relief but are invasive, require prolonged rehabilitation, and carry substantial complication risks. PIP joint denervation has emerged as a less invasive, motion preserving alternative. However, evidence remains limited, and its durability is unclear. METHODS: In this multicenter prospective study, 87 patients (105 joints) with symptomatic osteoarthritis underwent PIP denervation between 2016 and 2024 and had at least 12 months of follow up. The primary outcome was procedural success, which was defined as the absence of subsequent arthroplasty or arthrodesis for persistent or recurrent symptoms. Secondary outcomes, assessed in the subgroup without repeat surgery (76 joints), included pain and function measured on 0 100 visual analog scales (VAS), as well as patient satisfaction and willingness to undergo the procedure again. RESULTS: At a median follow up of 43 months (range, 12 107 months), 81% of PIP joints had not undergone conversion to arthroplasty or arthrodesis after denervation surgery. Most repeat surgeries occurred within the first postoperative year. VAS pain at rest improved from 44 ± 25 before surgery to 18 ± 26 (26 point reduction), and pain during activity improved from 63 ± 22 to 29 ± 31 (34 point reduction). VAS function increased from 47 ± 19 to 60 ± 24 (13 point improvement). Overall, 62% of patients rated their satisfaction as excellent or good, and 79% reported that they would choose the procedure again. CONCLUSIONS: PIP denervation was associated with encouraging midterm outcomes in selected patients with symptomatic PIP joint osteoarthritis, with 81% of joints not requiring conversion to arthroplasty or arthrodesis over a 4 year follow up. TYPE OF STUDY/LEVEL OF EVIDENCE: Therapeutic III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0194",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC psychology",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0194_s_fame_a_low_threshold_municipal_social_services_interventio.md",
+   "snippet": "Title S FAME: a low threshold municipal social services intervention for digital media related family difficulties in children aged 10 14 years: protocol for a randomized controlled trial Authors Kapetanovic Sabina, Claesdotter Knutsson Emm",
+   "text": "Pediatrics scraped pubmed PubMed / BMC psychology Title S FAME: a low threshold municipal social services intervention for digital media related family difficulties in children aged 10 14 years: protocol for a randomized controlled trial Authors Kapetanovic Sabina, Claesdotter Knutsson Emma Journal / DOI BMC psychology · DOI: 10.1186/s40359 026 05302 x · PMID: 42581379 https://pubmed.ncbi.nlm.nih.gov/42581379/ Abstract BACKGROUND: Problematic gaming and broader digital media related family difficulties are increasingly encountered not only in specialist mental health services but also in everyday municipal support services. Sweden's new Social Services Act strengthens municipalities' responsibility to provide early, accessible, and knowledge based support, creating both an opportunity and an obligation to evaluate whether structured, family centered programs can be delivered effectively in this setting. The present protocol therefore addresses whether S FAME, a social services adaptation of the FAME model, can be implemented and evaluated as a low threshold, preventive support within Swedish municipal social services. This randomized controlled trial aims to evaluate the effectiveness, implementation feasibility, acceptability, and health economic consequences of S FAME. Specifically, the trial will test whether S FAME reduces child screen related problems and improves parent child relationship outcomes compared with treatment as usual followed by access to a brief parent focused digital intervention, and will examine whether changes in parenting behaviors mediate changes in child outcomes. METHODS: Families with children aged 10 14 years who seek municipal social services support because of digital media use (including gaming and excessive social media use) or related family conflict will be recruited from participating municipalities. Atleast176 families will be randomized in a 1:1 ratio to immediate S FAME or a condition consisting of regular support from social services during the study period and subsequent access to P FAME, a three session online intervention for parents. S FAME is delivered by trained municipal staff and retains selected family centered principles from FAME while adapting content, referral pathways, risk management, and implementation procedures to preventive social services. Quantitative outcomes will be collected at baseline, postintervention, and 1 month follow up. Qualitative interviews and focus groups will explore family and staff experiences, implementation fit, and the balance between fidelity and local adaptation. A health economic evaluation will estimate implementation costs and potential cost effectiveness from municipal and broader societal perspectives. DISCUSSION: Recruitment is planned to begin in February 2026 and end in December 2026. Final analyses of trial outcomes, qualitative implementation data, and health economic data are planned for the first quarter of 2027. TRIAL REGISTRATION: ClinicalTrials.gov NCT07245862 approval date April 20, 2026 (ongoing trial). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0193",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Medical journal of Malaysia",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0193_transabdominal_cervical_length_measurement_as_primary_screen.md",
+   "snippet": "Title Transabdominal cervical length measurement as primary screening method for short cervix in the mid trimester: A prospective observational cohort diagnostic accuracy study Authors Sii L P, Voon H Y, Adam B, Tan L N, Amin R Journal / DO",
+   "text": "Laboratory Medicine scraped pubmed PubMed / The Medical journal of Malaysia Title Transabdominal cervical length measurement as primary screening method for short cervix in the mid trimester: A prospective observational cohort diagnostic accuracy study Authors Sii L P, Voon H Y, Adam B, Tan L N, Amin R Journal / DOI The Medical journal of Malaysia · PMID: 42584432 https://pubmed.ncbi.nlm.nih.gov/42584432/ Abstract INTRODUCTION: Preterm birth (PTB) is a leading cause of neonatal morbidity and mortality, with cervical insufficiency being a major contributor. While transvaginal ultrasound is the gold standard, concerns over invasiveness, resource requirements, and acceptability limit its universal use. Transabdominal cervical length measurement may offer a pragmatic alternative, particularly in conservative populations. We aim to compare transabdominal versus transvaginal cervical length measurement for screening of short cervix during the mid trimester, and to determine the feasibility and clinical utility of using transabdominal ultrasound as a primary screening tool, especially in populations with reservations about undergoing transvaginal scans. MATERIALS AND METHODS: This was a prospective observational cohort diagnostic accuracy study involving pregnant women undergoing routine mid trimester anomaly scans. Cervical length was measured using transabdominal and transvaginal ultrasound by experienced sonographers. STATISTICAL ANALYSIS: correlation assessed with Spearman's coefficient. Agreement evaluated with intraclass correlation and Bland Altman plots. Diagnostic accuracy metrics (sensitivity, specificity, PPV and NPV) were calculated for transabdominal thresholds. Confounding factors, including bladder filling, maternal body mass index (BMI), and prior caesarean delivery on visualisation, were also evaluated. RESULTS: Of the 266 women eligible to participate in the study, 6.0% were excluded as they declined a transvaginal scan. Postvoid transabdominal (TA) measurements demonstrated better agreement with transvaginal (TV) values but were associated with higher rate of nonvisualization (10.0%). Bland Altman plots showed good agreement without systematic bias. The mean prevoid TA cervical length and postvoid TA cervical length were 35.7 mm and 35.6 mm respectively, compared to 39.3 mm on TV measurement. Non visualization occurred more often postvoid (10%) than prevoid (6.4%), while postvoid TA measurements showed stronger agreement with TV (ICC=0.818). Agreement of measurements was higher among Maternal Fetal Medicine (MFM) consultants than among MFM fellows. Body mass index (BMI) and prior caesarean section scars did not significantly affected visualization or measurement accuracy. CONCLUSION: TA cervical length measurement is a reliable initial screening approach for identifying women at risk of short cervix during mid trimester when performed by experienced operators. It serves as a pragmatic alternative in settings where TV scans are declined or not feasible, facilitating timely referral for TV confirmation and early initiation of preventive interventions such as progesterone therapy or cerclage. However, its application may be limited in untrained hands. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0192",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of perinatal medicine",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0192_basal_plate_remodeling_in_vascular_metabolic_pregnancy_disor.md",
+   "snippet": "Title Basal plate remodeling in vascular metabolic pregnancy disorders Authors Dugalić Stefan, Jovanović Ljubiša, Ivanović Katarina, Milinčić Miloš, Pavlović Dara, Lazarević Aleksandra, Gojnić Miroslava Journal / DOI Journal of perinatal me",
+   "text": "Pathology scraped pubmed PubMed / Journal of perinatal medicine Title Basal plate remodeling in vascular metabolic pregnancy disorders Authors Dugalić Stefan, Jovanović Ljubiša, Ivanović Katarina, Milinčić Miloš, Pavlović Dara, Lazarević Aleksandra, Gojnić Miroslava Journal / DOI Journal of perinatal medicine · DOI: 10.1515/jpm 2026 0297 · PMID: 42583861 https://pubmed.ncbi.nlm.nih.gov/42583861/ Abstract OBJECTIVES: To compare placental inflammatory lesions and basal plate vascularization between pregnancies complicated by maternal vascular metabolic disorders and normoglycemic, normotensive pregnancies, and to determine whether basal plate vascularization differs among metabolic, hypertensive, thrombophilic, and combined disorder phenotypes. METHODS: This retrospective observational study included 680 singleton pregnancies with placental histopathology. Pregnancies were classified as complicated by maternal vascular metabolic disorders or as belonging to a normoglycemic, normotensive comparison group without documented maternal vascular metabolic disease. Placental inflammatory lesions (villitis and decidualitis) were recorded as present or absent. Basal plate vascularization was assessed using a three level ordinal scoring system and compared between study groups and among vascular metabolic disorder phenotypes. RESULTS: Maternal vascular metabolic disorders were documented in 205 pregnancies, whereas 475 pregnancies constituted the comparison group. Villitis was more frequent in the vascular metabolic disorder group than in the comparison group (13.2 % vs. 3.2 %, p<0.001), as was decidualitis (71.2 % vs. 16.8 %, p<0.001). Basal plate vascularization scores were higher in the vascular metabolic disorder group (2.76 ± 0.45 vs. 2.59 ± 0.52, p<0.001). However, the absolute difference was modest, and the median score was 3.0 in both groups. Basal plate vascularization did not differ significantly among isolated metabolic, hypertensive, thrombophilic, and combined disorder phenotypes (p=0.216). CONCLUSIONS: Maternal vascular metabolic disorders were associated with a higher frequency of placental inflammatory lesions and slightly higher basal plate vascularization scores. However, the restricted scoring range, ceiling effect, unadjusted analyses, and retrospective observational design limit the clinical interpretation of these findings and preclude causal inference. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0191",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cancer science",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0191_quizartinib_resistance_mutations_and_treatment_outcomes_in_r.md",
+   "snippet": "Title Quizartinib Resistance Mutations and Treatment Outcomes in Relapsed or Refractory FLT3 ITD Positive AML Authors Semba Yuichiro, Miyamoto Toshihiro, Kasahara Senji, Kikushige Yoshikane, Maeda Takahiro, Yoshimoto Goichi, Ota Shuichi, Sa",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Cancer science Title Quizartinib Resistance Mutations and Treatment Outcomes in Relapsed or Refractory FLT3 ITD Positive AML Authors Semba Yuichiro, Miyamoto Toshihiro, Kasahara Senji, Kikushige Yoshikane, Maeda Takahiro, Yoshimoto Goichi, Ota Shuichi, Saito Akio, et al. Journal / DOI Cancer science · DOI: 10.1111/cas.70485 · PMID: 42584468 https://pubmed.ncbi.nlm.nih.gov/42584468/ Abstract Quizartinib is a FMS like tyrosine kinase 3 (FLT3) inhibitor indicated for FLT3 internal tandem duplication (FLT3 ITD) positive acute myeloid leukemia (AML). We aimed to evaluate quizartinib resistance mechanisms, in addition to efficacy and safety outcomes, in patients with relapsed or refractory FLT3 ITD positive AML. This multicenter, single arm study in Japan (jRCTs071200015) enrolled 18 patients between May 2020 and December 2022. Of these, 15 patients received oral quizartinib (up to 53 mg once daily) for up to 12 cycles of 28 days each, then were followed for 12 months. The primary endpoint was to evaluate the type and rate of quizartinib resistance mutations; secondary endpoints included composite complete remission (CRc) rate, overall response rate (ORR), hematopoietic stem cell transplantation (HSCT) rate, relapse free survival (RFS), overall survival (OS), and adverse events (AEs). Among seven evaluable patients, acquired mutations were detected in four patients (NF1 [R2616X], CSF3R [Q754X], NRAS [G13R], and FLT3 [D835Y] in one patient each), while loss of FLT3 ITD was observed in two patients. In efficacy analyses (n = 15), CRc rate was 66.7% (95% confidence interval [CI], 38.4 88.2), ORR was 73.3% (44.9 92.2), and median OS was 13.6 months (5.4 not evaluable). Three patients (20.0%) received HSCT directly after quizartinib; in these patients, median RFS was 8.5 months (95% CI, 6.2 not evaluable). Grade ≥ 3 non hematologic AEs and grade 1 QT prolongation were each reported in three patients (20.0%). These data offer additional information on potential resistance mechanisms in patients with relapsed or refractory FLT3 ITD positive AML. Trial Registration: Japan Registry of Clinical Trials (jRCTs071200015). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0190",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Medical journal of Malaysia",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0190_profile_risk_factors_genotype_and_outcome_of_staphylococcus_.md",
+   "snippet": "Title Profile, risk factors, genotype and outcome of Staphylococcus aureus catheter related blood stream infection in a Malaysian tertiary hospital Authors Nian J T, Chua W C, Intan Baiduri B, Habsah H, Abdul Razak H, Siti Asma H Journal / ",
+   "text": "Nephrology scraped pubmed PubMed / The Medical journal of Malaysia Title Profile, risk factors, genotype and outcome of Staphylococcus aureus catheter related blood stream infection in a Malaysian tertiary hospital Authors Nian J T, Chua W C, Intan Baiduri B, Habsah H, Abdul Razak H, Siti Asma H Journal / DOI The Medical journal of Malaysia · PMID: 42584438 https://pubmed.ncbi.nlm.nih.gov/42584438/ Abstract INTRODUCTION: Staphylococcus aureus is a commonly known causative agent of catheter related bloodstream infections (CRBSI) and complicated CRBSI. This study aimed to detect prevalence of S. aureus and complicated S. aureus CRBSI, their virulence genes and evaluate their association with development of complicated CRBSI, patient risk factors and outcomes. MATERIALS AND METHODS: A cross sectional study involving retrospective record review of CRBSI cases was conducted from January 2019 to December 2021. A total of 139 CRBSI cases were identified. Patients' clinical data, risk factors and outcomes of S. aureus CRBSI were analyzed. Nineteen isolates from patients with complicated S. aureus CRBSI were selected for detection of Cna, Chp and Cap8 gene using PCR. The association between the development of complicated S. aureus CRBSI and the presence of virulence genes was analyzed. RESULTS: Forty three (31%, n=43) of CRBSI cases were caused by S aureus. Among these, nineteen cases (44.2%) were complicated. Patients with chronic kidney disease (CKD) or end stage renal failure (ESRF) (adjusted OR 11.11, 95% CI: 2.86 33.33, p<0.001) were at significant risk of S.aureus CRBSI. Virulence genes detected were Cap8 (89.5 %, n=17), Cna (47.4%, n=9) and Chp (26.3%, n=5). The presence of these genes was not significantly associated with the development of complicated S.aureus CRBSI. S. aureus CRBSI were associated with higher mortality (p=0.035). CONCLUSION: S. aureus was the predominant agent for CRBSI and 44.2% of them were complicated. CKD/ESRF were the comorbidities associated with S. aureus CRBSI. Although cap8 was the most frequently detected virulence gene, it was not associated with the development of complicated S. aureus CRBSI. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0189",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BioMed research international",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0189_risk_factors_for_sepsis_and_pulmonary_embolism_mortality_in_.md",
+   "snippet": "Title Risk Factors for Sepsis and Pulmonary Embolism Mortality in Burn Patients by Using a Competing Risk Model: A Machine Learning Approach Authors Javanmardi Fatemeh, Shayan Zahra, Emami Amir, Khodakarim Soheila Journal / DOI BioMed resea",
+   "text": "Infectious Disease scraped pubmed PubMed / BioMed research international Title Risk Factors for Sepsis and Pulmonary Embolism Mortality in Burn Patients by Using a Competing Risk Model: A Machine Learning Approach Authors Javanmardi Fatemeh, Shayan Zahra, Emami Amir, Khodakarim Soheila Journal / DOI BioMed research international · DOI: 10.1155/bmri/7224574 · PMID: 42584456 https://pubmed.ncbi.nlm.nih.gov/42584456/ Abstract INTRODUCTION: Severe burn injury remains a prevalent cause of morbidity and mortality over the last several decades. Various potential complications significantly contribute to mortality in burn patients. Sepsis and pulmonary embolism (PE) are among the leading causes of death following burn injury. METHODS: This retrospective study was conducted at a burn center in southwest Iran. In the current study, competing risk analysis was performed. Two events were considered death due to PE, which is the event of interest, and the competing event defined as death due to sepsis. Discharge was considered as a censor. Hazard ratios (HR) and standard errors (SE) were used to estimate the risk of death. RESULTS: The study included 623 patients, with a total of 458 deaths (73.5%). Among them, 17 (2.7%) were due to PE, and 441 (70.8%) were attributed to sepsis related mortality. Lower limb burns were the most frequent injury site among survivors (77.0%) and PE cases (82.3%). Flame burns were the most common etiology in all groups. The need for mechanical ventilation is also associated within increasing hazard of mortality in both events. Patients with burns in the lower limbs are more likely to die from PE (HR = 3.15) and sepsis (HR = 2.10). A higher RBC count was associated with a decreased risk of mortality from both PE (HR: 0.66) and sepsis (HR: 0.53). Similarly, hemoglobin levels had a modest protective effect against both causes of death. CONCLUSION: These results highlight the complex relationship between burn characteristics, laboratory indicators, and demographic factors in determining mortality risk. Both clinical and laboratory parameters, as well as burn site and severity, play important roles in predicting outcomes in burn patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0188",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Asia",
+   "confidence": "medium",
+   "date": "2026-08-12",
+   "path": "content/papers/2026/2026-08-12_paper-2026-0188_determinants_and_prognostic_impact_of_left_atrial_reservoir_.md",
+   "snippet": "Title Determinants and Prognostic Impact of Left Atrial Reservoir Strain Improvement Following Mitral Transcatheter Edge To Edge Repair Authors Takahari Kosuke, Utsunomiya Hiroto, Hirokawa Tatsuya, Tohgi Kiyotaka, Yoshitomi Yuki, Shigehara ",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Asia Title Determinants and Prognostic Impact of Left Atrial Reservoir Strain Improvement Following Mitral Transcatheter Edge To Edge Repair Authors Takahari Kosuke, Utsunomiya Hiroto, Hirokawa Tatsuya, Tohgi Kiyotaka, Yoshitomi Yuki, Shigehara Mikio, Hyodo Yohei, Hamada Ayano, et al. Journal / DOI JACC. Asia · DOI: 10.1016/j.jacasi.2026.06.034 · PMID: 42584392 https://pubmed.ncbi.nlm.nih.gov/42584392/ Abstract Heart failure with functional mitral regurgitation (FMR) has poor prognosis, and mitral transcatheter edge to edge repair (M TEER) is an effective treatment. However, patient responses are variable, highlighting the need for early markers of treatment success. Left atrial reservoir strain (LARS) reflects atrial compliance and chronic hemodynamic burden and may identify patients with reversible atrial dysfunction. We retrospectively analyzed 128 patients with FMR (median age 80 years, 37% female; 31% atrial subtype) undergoing M TEER at Hiroshima University Hospital. LARS was measured at baseline and 1 month postprocedure, with improvement defined as ≥15% relative increase. Procedural success was high (98%), and LARS assessment showed excellent reproducibility. LARS improved in 33% of patients. Key predictors of early improvement were absence of persistent atrial fibrillation, lower baseline LARS, and better renal function. Procedural factors such as residual mitral regurgitation or transmitral gradient were not associated. Patients with LARS improvement showed greater reductions in pulmonary arterial wedge pressure, improved biventricular function, lower residual tricuspid regurgitation, and enhanced exercise capacity. During a median follow up of 14 months, early LARS improvement was associated with significantly higher event free survival. Multivariable analysis confirmed that LARS improvement independently predicted lower risk of all cause death and heart failure hospitalization, beyond baseline LARS and conventional post M TEER risk factors. Continuous analysis of %ΔLARS further supported a dose response relationship with outcomes. In summary, early LARS improvement reflects integrated atrial and cardiopulmonary reverse remodeling and is a strong independent predictor of short term prognosis after M TEER. Serial assessment of LARS shortly after M TEER may serve as a practical tool for early risk stratification and therapeutic optimization across all FMR subtypes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0553",

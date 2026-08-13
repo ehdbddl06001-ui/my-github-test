@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-12",
+ "generated": "2026-08-13",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -475,6 +475,72 @@ window.MEDKOS_ANATOMY = {
      "file": "3회차(0825) 허미선pf.pdf",
      "page": null,
      "section": "뒤통수밑삼각 (업로드 스캔 0150 p9)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0023",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "등 얕은층 해부 사진에서, 등세모근을 젖힌 뒤 그 아래로 드러난 — 번호핀 ①(▲)이 가리키는 — 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "마름근 (rhomboid muscle)",
+   "explanation": "등세모근을 젖히면 어깨뼈 안쪽모서리로 비스듬히 달리는 마름근(작은마름근: 목덜미인대·C7–T1 가시돌기 → 어깨뼈가시 안쪽 끝 높이 / 큰마름근: T2–5 가시돌기 → 어깨뼈 안쪽모서리)이 나온다. 지배신경은 둘 다 등쪽어깨신경(C5)이며 작용은 어깨뼈 뒤당김·아래쪽돌림. 위쪽에 이어지는 어깨올림근과 헷갈리지 말 것(어깨올림근은 C1–4 가로돌기에서 어깨뼈 위각). 원본 영상 라벨 실측 확인. 이미지는 필기(빨간 펜 주석)를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 등세모근 젖힌 뒤 마름근 (업로드 스캔 pf1 p2)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0024",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "넓은등근을 젖히고 그 속면(deep surface)을 관찰하는 사진에서, 번호핀 ①(▲)이 가리키는 — 같은 이름의 신경과 나란히 이 근육으로 들어가는 — 동맥의 이름을 말하시오.",
+   "choices": null,
+   "answer": "가슴등동맥 (thoracodorsal artery)",
+   "explanation": "가슴등동맥은 어깨밑동맥(subscapular a.)의 종말가지로, 같은 이름의 가슴등신경(C6–8, 뒤신경다발)과 함께 넓은등근 속면으로 들어가 이 근육을 먹여살린다. 어깨밑동맥은 겨드랑동맥 3부의 가지이며 어깨휘돌이동맥(circumflex scapular a.)과 가슴등동맥으로 갈린다. 임상: 넓은등근 피판(latissimus dorsi flap) 이식의 혈관줄기가 바로 이 가슴등동맥이라, 유방재건·수부재건에서 반드시 보존한다. 원본 영상 라벨 실측 확인. 이미지는 필기(여백 빨간 펜·조직 위 파란 펜)를 제거하고 영상 프레임만 남긴 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 넓은등근의 혈관·신경 (업로드 스캔 pf1 p8)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0025",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "다리오금 해부 사진에서, 오금동맥이 무릎관절 둘레로 내는 5개의 가지 중 번호핀 ①(▲)이 가리키는 — 넙다리뼈 가쪽관절융기 위를 돌아 나가는 — 동맥의 이름을 말하시오.",
+   "choices": null,
+   "answer": "위가쪽무릎동맥 (lateral superior genicular artery)",
+   "explanation": "오금동맥은 무릎동맥그물(genicular anastomosis)을 이루는 5가지를 낸다: 위가쪽·위안쪽·중간·아래가쪽·아래안쪽무릎동맥. 위가쪽무릎동맥은 넙다리뼈 가쪽관절융기 바로 위를 감아 앞쪽으로 돌아간다. 중간무릎동맥만 관절주머니를 뚫고 들어가 십자인대에 분포한다는 점이 구분 포인트. 이 그물은 넙다리동맥이 모음근구멍 부위에서 막혔을 때 측부순환이 된다. 원본 영상 라벨 실측 확인. 이미지는 필기(흰 펜 주석)를 제거하고 영상 프레임만 남긴 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "다리오금의 혈관 — 무릎동맥 5가지 (업로드 스캔 5183 p2)"
     }
    ]
   },
