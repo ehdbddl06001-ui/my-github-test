@@ -205,6 +205,9 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
   ```
   실사 이미지를 합본하므로 그 카드는 `publishable: false`, 출력은 `.private/` 아래.
   (문제만 빠르게 풀 용도의 `anatomy_pdf.py --manifest` 문제집은 보조 산출물.)
+  페이지 밀도는 frontmatter로 조절한다 — `quiz_per_page`(기본 2, 가로 페이지에 두 문항)
+  · `answers_per_page`(기본 3, 정답부 썸네일). 회차당 문항이 12~15개로 늘었으므로
+  **한 페이지 한 문항으로 돌리지 말 것**(아래 절반이 빈다).
 
 - **매일 전달 — 이것이 일일 루틴의 마무리 단계다**:
   1. 오늘 갱신된 회차의 서브노트 PDF를 만든다(위 명령).

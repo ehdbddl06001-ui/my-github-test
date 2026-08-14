@@ -19,6 +19,8 @@ config(JSON) 예:
   "colors": {"red": true, "olive": true, "blue": true},
   "protect": [[350,225,770,432]],          // 색 검출에서 보호(장갑·프로브·영상 라벨)
   "olive_region": [1300,0,9999,400],       // 올리브 검출 제한 영역(영상 노란 라벨 보호)
+  "red_soft_boxes": [[685,335,900,550]],   // 조직 위 옅은 빨간 펜(상대 붉기·박스 한정)
+  "red_soft": 45,                          // 위 판정 임계값(r - max(g,b))
   "erase_boxes": [[770,146,935,192]],      // 검정 손글씨 bbox
   "title_box": [38,145,240,270],           // quiz에서 검은 박스로 덮을 타이틀 존
   "label_boxes": [[640,522,870,598]],      // quiz에서 inpaint로 가릴 정답 라벨
@@ -161,6 +163,24 @@ def _tight_strokes(img, box: list, drop: int = 35, pad: int = 2,
     return m
 
 
+def _soft_red(img, box, thresh: int = 45):
+    """조직 위에 옅게 번진 빨간 펜 — 절대 임계값(r>120·g<85·b<85)으로는 못 잡는다.
+
+    밝은 조직 위에 그은 빨간 선은 g·b 가 같이 올라가 절대 임계값을 통과하지
+    못한다. 그래서 '상대 붉기'(r - max(g,b)) 로 판정한다. 다만 카데바 조직·혈관
+    자체도 붉어 전역 적용하면 진짜 혈관을 지운다 → 반드시 박스 안에서만 쓴다.
+    """
+    import cv2
+    import numpy as np
+
+    x0, y0, x1, y1 = box
+    b, g, r = cv2.split(img[y0:y1, x0:x1].astype(np.int16))
+    rel = r - np.maximum(g, b)
+    m = np.zeros(img.shape[:2], np.uint8)
+    m[y0:y1, x0:x1] = ((rel > thresh) & (r > 60)).astype(np.uint8) * 255
+    return cv2.dilate(m, np.ones((5, 5), np.uint8))
+
+
 def _inpaint_progressive(img, mask, band: int = 4, radius: int = 4):
     """넓은 마스크를 한 번에 채우지 않고 바깥 테두리부터 얇은 띠로 반복해 채운다.
 
@@ -216,6 +236,8 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
     mask = _color_mask(img, cfg.get("colors", {}), cfg.get("protect"),
                        cfg.get("olive_region"))
     mask = cv2.dilate(mask, np.ones((7, 7), np.uint8))
+    for box in cfg.get("red_soft_boxes", []):  # 조직 위 옅은 빨간 펜(상대 붉기)
+        mask |= _soft_red(img, box, int(cfg.get("red_soft", 45)))
     for x0, y0, x1, y1 in cfg.get("erase_boxes", []):
         mask[y0:y1, x0:x1] = 255
     for box in cfg.get("stroke_boxes", []):   # 얇은 펜(검정): 획 픽셀만 마스킹
@@ -296,9 +318,13 @@ def selftest() -> int:
                     (20, 20, 20), 2)                       # 검정 손글씨
         cv2.putText(img, "W", (270, 235), cv2.FONT_HERSHEY_SIMPLEX, 1,
                     (255, 255, 255), 2)                    # 흰 펜(조직 위)
+        # 조직(밝은 원) 위에 옅게 번진 빨간 선 — g·b 가 같이 올라가 절대 임계값을
+        # 통과하지 못한다. red_soft_boxes 가 아니면 안 지워진다.
+        cv2.line(img, (240, 280), (360, 280), (150, 150, 235), 3)
         src = td / "p.png"; cv2.imwrite(str(src), img)
         cfg = {"colors": {"red": True}, "erase_boxes": [[50, 320, 160, 365]],
                "bright_stroke_boxes": [[255, 200, 320, 250]],
+               "red_soft_boxes": [[230, 265, 370, 295]], "red_soft": 45,
                "title_box": [0, 0, 120, 40],
                "pins": [{"x": 300, "y": 100, "to": [300, 170], "n": 1}]}
         st = restore(src, cfg, td / "c.png", td / "q.png")
@@ -311,6 +337,9 @@ def selftest() -> int:
         roi = clean[200:250, 255:320]
         assert int(roi.max()) < 235, "흰 펜 잔존"
         assert abs(int(np.median(roi)) - 195) < 22, "조직까지 지워짐(박스 통째 삭제)"
+        # 옅은 빨간 선: 상대 붉기가 조직 수준(≈10)까지 내려와야 한다.
+        sb, sg, sr = cv2.split(clean[276:284, 245:355].astype(np.int16))
+        assert int((sr - np.maximum(sg, sb)).max()) < 30, "옅은 빨간 펜 잔존"
         quiz = cv2.imread(str(td / "q.png"))
         assert (quiz[5:35, 5:115] == 0).all(), "타이틀 검은 박스 미적용"
     print("[ OK ] restore_scan selftest")

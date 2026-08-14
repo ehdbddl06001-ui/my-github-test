@@ -793,6 +793,204 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0039",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "등 얕은층 해부 사진에서, 어깨뼈 아래각 아래·가쪽 가슴우리 벽에서 톱니 모양으로 드러난 — 번호핀 ①(▲)이 가리키는 — 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "앞톱니근 (serratus anterior muscle)",
+   "explanation": "넓은등근·등세모근을 젖히면 가쪽 가슴우리 벽에 톱니 모양(digitation)으로 붙는 앞톱니근이 드러난다. 1–8(9)째 갈비뼈 가쪽면에서 일어나 어깨뼈 안쪽모서리 앞면(특히 아래각)에 닿고, 긴가슴신경(long thoracic n., C5–7)의 지배를 받아 어깨뼈를 앞당김(protraction)·위쪽돌림 시킨다. 마비되면 날개어깨뼈(winged scapula). 등 쪽에서 보이는 것은 어깨뼈 아래각 주변으로 삐져나온 부분이라, '등 근육'이 아니라 팔이음뼈–가슴우리 근육임에 주의. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 넓은등근 젖힌 뒤 어깨뼈각 아래 (업로드 스캔 pf1 p7)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0040",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "등세모근을 젖혀 그 깊은면을 노출한 해부 사진에서, 번호핀 ①(▲)이 가리키는 — 목빗근 뒤모서리를 지나 등세모근 깊은면을 따라 내려오는 — 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "더부신경 (accessory nerve, CN XI)",
+   "explanation": "등세모근의 운동지배는 얕은층 중 유일하게 뇌신경인 더부신경(XI)이 맡는다. 목정맥구멍으로 두개를 나와 목빗근을 지배한 뒤 뒤목삼각을 가로질러 등세모근 깊은면으로 들어가며, 이 부위에서 셋째·넷째 목신경(C3–4)의 가지와 합쳐진다(C3·4는 고유감각·통각 담당). 뒤목삼각 수술·림프절 생검에서 손상되면 등세모근 위쪽이 위축되어 어깨처짐·팔 외전 제한이 생긴다. 같은 시야에서 등쪽어깨신경(C5, 마름근)·가로목동맥과 헷갈리지 말 것. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 등세모근 깊은면의 신경 (업로드 스캔 pf1 p11)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0041",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "마름근과 어깨올림근을 젖힌 해부 사진에서, 포셉이 들어올리고 있으며 번호핀 ①(◁)이 가리키는 — 어깨뼈 안쪽모서리를 따라 아래로 달리는 — 혈관의 이름을 말하시오.",
+   "choices": null,
+   "answer": "등쪽어깨동맥 (dorsal scapular artery)",
+   "explanation": "등쪽어깨동맥은 대개 빗장밑동맥 셋째부분(또는 가로목동맥의 깊은가지)에서 나와 어깨뼈 안쪽모서리를 따라 내려가며 마름근·어깨올림근에 분포하고, 어깨뼈 주위 동맥고리(어깨위동맥·어깨휘돌이동맥과의 문합)에 참여한다. 같은 이름의 등쪽어깨신경(C5)이 나란히 내려오므로 실습에서는 '동맥과 신경이 같이 있는 층'으로 기억한다. 두 구조 모두 큰마름근·작은마름근의 깊은면(속면)으로 들어간다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 마름근·어깨올림근 깊은면의 혈관 (업로드 스캔 pf1 p16)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0042",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "deep-back",
+   "examPhase": "tagging-1",
+   "stem": "등 깊은층을 노출한 해부 사진에서, 프로브가 들어올리고 있으며 번호핀 ①이 가리키는 — 목덜미인대와 위쪽 등뼈 가시돌기에서 일어나 목빗근 깊은면으로 비스듬히 올라가는 — 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "머리널판근 (splenius capitis muscle)",
+   "explanation": "널판근은 등 고유근육의 가장 얕은 층으로 목덜미인대와 C7–T3(머리널판근)·T3–T6(목널판근) 가시돌기에서 일어난다. 머리널판근은 꼭지돌기와 위목덜미선 가쪽 1/3에 닿고, 목널판근은 C1–3 가로돌기에 닿는다. 둘 다 척수신경 뒤가지(등 고유근육의 공통 규칙) 지배이며, 한쪽만 작용하면 같은쪽 돌림·가쪽굽힘, 양쪽이 함께 작용하면 목·머리 폄. 겉에서 보이는 방향이 목빗근과 반대(아래안쪽 → 위가쪽)라 실습에서 목빗근·어깨올림근과 가르는 기준이 된다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "등의 깊은층 근육 — 널판근 (업로드 스캔 pf1 p23)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0043",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "deep-back",
+   "examPhase": "tagging-1",
+   "stem": "척주세움근을 노출한 해부 사진에서, 가슴 높이에서 가장 가쪽 기둥을 이루며 번호핀 ①(▲)이 가리키는 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "엉덩갈비근 (iliocostalis muscle)",
+   "explanation": "척주세움근은 엉치뼈·엉덩뼈능선·허리등뼈 가시돌기의 공통힘줄에서 일어나 가쪽부터 엉덩갈비근–가장긴근–가시근의 세 기둥으로 갈라진다('엉–가–가'). 가장 가쪽인 엉덩갈비근은 갈비뼈각에 닿고(허리·등·목 부분), 중간의 가장긴근은 가로돌기와 꼭지돌기에, 가장 안쪽의 가시근은 가시돌기에 닿는다. 모두 척수신경 뒤가지 지배이며 양쪽이 작용하면 척주 폄, 한쪽이면 같은쪽 가쪽굽힘. 더 깊은 층의 가로돌기가시근육(반가시근–뭇갈래근–돌림근)과 층을 구분해야 한다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "등의 깊은층 근육 — 척주세움근 3기둥 (업로드 스캔 pf1 p27)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0044",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "큰볼기근을 젖힌 볼기 부위 해부 사진에서, 궁둥구멍근 아래모서리에서 나와 번호핀 ①(▲)이 가리키는 — 몸에서 가장 굵은 말초신경 — 의 이름을 말하시오.",
+   "choices": null,
+   "answer": "궁둥신경 (sciatic nerve)",
+   "explanation": "궁둥신경은 엉치신경얼기(L4–S3)에서 나와 큰궁둥구멍의 궁둥구멍근 아래(infrapiriform foramen)로 볼기부위에 들어오는, 몸에서 가장 굵고 긴 말초신경이다. 큰돌기와 궁둥뼈결절 사이 중간을 지나 넓적다리 뒤칸으로 내려가며 정강신경(tibial)과 온종아리신경(common fibular) 두 성분을 함께 싸고 있다(대개 오금 위쪽에서 갈라지나 궁둥구멍근을 관통하며 미리 갈라지는 변이가 흔하다). 볼기 근육주사를 위가쪽 1/4 사분면에 놓는 이유가 바로 이 신경 손상 회피. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 — 궁둥구멍근 주위 (업로드 스캔 pf2 p10)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0045",
+   "style": "spotter",
+   "region": "pelvis-perineum",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "볼기 부위 깊은 해부 사진에서, 엉치가시인대(궁둥뼈가시) 뒤를 돌아 작은궁둥구멍으로 다시 들어가며 번호핀 ①(▲)이 가리키는 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "음부신경 (pudendal nerve)",
+   "explanation": "음부신경(S2–4)은 큰궁둥구멍의 궁둥구멍근 아래로 골반을 나온 뒤, 궁둥뼈가시·엉치가시인대 뒤를 감아 곧바로 작은궁둥구멍으로 되돌아 들어가 폐쇄근막이 만드는 음부신경관(Alcock canal)으로 들어간다. 속음부동·정맥과 동행하며(신경이 인대에서 가장 안쪽) 아래곧창자신경·회음신경·음경(음핵)등신경을 낸다. '골반을 나갔다가 다시 들어가는' 이 U자 주행이 태깅 단골이며, 음부신경 차단술은 궁둥뼈가시를 지표로 삼는다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 — 궁둥구멍근 아래·엉치가시인대 주변 (업로드 스캔 pf2 p13)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0046",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "posterior-thigh",
+   "examPhase": "tagging-1",
+   "stem": "넓적다리 뒤칸을 노출한 해부 사진에서, 프로브가 들어올리고 있으며 번호핀 ①(◁)이 가리키는 — 궁둥뼈결절에서 일어나 가쪽아래로 달리는 — 근육(갈래까지)의 이름을 말하시오.",
+   "choices": null,
+   "answer": "넙다리두갈래근 긴갈래 (long head of biceps femoris muscle)",
+   "explanation": "넓적다리 뒤칸(햄스트링)은 궁둥뼈결절에서 일어나 무릎을 굽히고 엉덩관절을 펴며, 궁둥신경의 정강부분 지배를 받는다는 공통 규칙을 갖는다. 넙다리두갈래근은 예외적으로 두 갈래인데, 긴갈래만 궁둥뼈결절에서 일어나 정강부분 지배를 받고, 짧은갈래는 넙다리뼈 거친선 가쪽선에서 일어나 온종아리신경 지배를 받는다(그래서 짧은갈래는 엄밀히 햄스트링 정의에서 벗어난다). 두 갈래가 합쳐져 종아리뼈머리에 닿으며 무릎굽힘 + 굽힌 무릎의 가쪽돌림을 한다. 안쪽의 반힘줄근·반막근과 함께 오금의 위가쪽/위안쪽 경계를 만든다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "넓적다리 뒤칸의 근육 (업로드 스캔 pf2 p24)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0047",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 다리를 뒤에서 본 도해(왼쪽이 가쪽)에서 ①~④는 다리오금 마름모의 네 경계 근육, ⑤~⑦은 얕은 것부터 깊은 것 순서의 내용물, ⑧은 마름모의 가쪽 변을 따라 빠져나가는 신경이다. 각각을 한·영으로 답하고, 이어서 (가) 마름모의 바닥을 이루는 것 두 가지 (나) 무릎동맥 5가지 중 관절주머니를 뚫는 것 (다) ⑧이 감아도는 뼈 부위와 손상 시의 보행 이상을 답하시오.",
+   "choices": null,
+   "answer": "① 넙다리두갈래근 biceps femoris (위가쪽 경계) / ② 반힘줄근·반막근 semitendinosus·semimembranosus (위안쪽 경계) / ③ 장딴지근 가쪽갈래 lateral head of gastrocnemius (아래가쪽) / ④ 장딴지근 안쪽갈래 medial head (아래안쪽) / ⑤ 정강신경 tibial n. (가장 얕다) / ⑥ 오금정맥 popliteal v. (중간) / ⑦ 오금동맥 popliteal a. (가장 깊다) / ⑧ 온종아리신경 common fibular n. — (가) 넙다리뼈 오금면 popliteal surface + 오금근 popliteus (아래쪽) / (나) 중간무릎동맥 middle genicular a. / (다) 종아리뼈목 neck of fibula — 발처짐 foot drop",
+   "explanation": "다리오금은 마름모꼴 공간으로, 위 두 변은 햄스트링(가쪽 넙다리두갈래근 · 안쪽 반힘줄근·반막근), 아래 두 변은 장딴지근 두 갈래가 이룬다. 바닥은 위에서부터 넙다리뼈 오금면 → 무릎관절주머니 뒤 → 오금근이고, 지붕은 오금근막이다. 내용물의 깊이 순서는 **뒤(얕은)에서 앞(깊은)으로 정강신경 → 오금정맥 → 오금동맥**('신–정–동')이며, 오금동맥이 가장 깊기 때문에 맥박을 잡으려면 무릎을 살짝 굽혀 깊이 눌러야 한다. 오금동맥은 넙다리동맥이 모음근구멍을 지나면서 이름이 바뀐 것이고, 무릎동맥 5가지(위가쪽·위안쪽·중간·아래가쪽·아래안쪽)를 내어 무릎동맥그물을 만든 뒤 오금근 아래모서리에서 앞정강동맥·뒤정강동맥으로 갈린다. 이 중 **중간무릎동맥만 관절주머니를 뚫고** 들어가 십자인대에 분포한다. 궁둥신경의 두 종말가지 중 정강신경은 오금 한가운데를 수직으로 지나 종아리 뒤칸으로 가고, 온종아리신경은 넙다리두갈래근 힘줄 안쪽을 따라 가쪽아래로 내려가 종아리뼈목을 감아 앞칸·가쪽칸으로 들어간다 — 이 자리가 표면에 가까워 골절·석고붕대 압박으로 가장 흔히 다치며 발처짐과 발등 감각소실이 생긴다. 라벨판은 diag-popliteal-fossa-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-popliteal-fossa-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "다리오금 — 경계·내용물·무릎동맥 / 종아리 뒤칸"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",

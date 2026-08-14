@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1073,
+  "total": 1082,
   "byType": {
    "kmle": 555,
-   "anatomy": 232,
+   "anatomy": 241,
    "usmle": 66,
    "paper": 203,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 232,
+   "Anatomy": 241,
    "Cardiology": 83,
    "Nephrology": 61,
    "Infectious Disease": 59,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 673,
+   "high": 682,
    "medium": 351,
    "low": 49
   },
-  "tagCount": 1974
+  "tagCount": 1992
  },
  "docs": [
   {
@@ -213,6 +213,194 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Ventricular Fibrillation ventricular-fibrillation cardiac-arrest defibrillation acls shockable-rhythm KMLE 2026 / Claude Routine 58세 남자가 길에서 갑자기 쓰러져 응급실로 옮겨졌다. 도착 시 반응이 없고 큰 동맥에서 맥박이 만져지지 않으며 정상 호흡이 없다. 곧바로 가슴압박을 시작하고 감시장치를 붙였다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 리듬에서 가장 먼저 시행할 처치는? A. 즉시 비동기 전기충격을 시행한다 B. 정맥 아미오다론을 먼저 투여한다 C. 동기화 심장율동전환을 시행한다 D. 정맥 아트로핀을 투여한다 E. 경피 인공심장박동조율을 시작한다 무맥성 심실세동은 제세동 가능(shockable) 리듬으로, 가슴압박과 함께 지체 없는 비동기 전기충격(제세동)이 생존을 가르는 가장 중요한 처치다. 약물은 제세동에 보조적일 뿐 첫 처치가 아니다."
   },
   {
+   "id": "anatomy-2026-0047",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "다리오금 태깅 연습판 (자체 제작 도해)",
+   "tags": [
+    "spotter",
+    "도해",
+    "3회차",
+    "다리오금",
+    "오금동맥",
+    "온종아리신경",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0047.md",
+   "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다.",
+   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
+  },
+  {
+   "id": "anatomy-2026-0046",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "넙다리두갈래근",
+    "햄스트링",
+    "궁둥신경",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0046.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본) spotter 복원 2회차 넙다리두갈래근 햄스트링 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0045",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "음부신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "음부신경",
+    "작은궁둥구멍",
+    "음부신경관",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0045.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 음부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 음부신경 작은궁둥구멍 음부신경관 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0044",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "궁둥신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "궁둥신경",
+    "궁둥구멍근",
+    "볼기",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0044.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 궁둥신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 궁둥신경 궁둥구멍근 볼기 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0043",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "엉덩갈비근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "엉덩갈비근",
+    "척주세움근",
+    "뒤가지",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0043.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 엉덩갈비근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 엉덩갈비근 척주세움근 뒤가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0042",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "머리널판근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "머리널판근",
+    "뒤가지",
+    "깊은층",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0042.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 머리널판근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 머리널판근 뒤가지 깊은층 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0041",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "등쪽어깨동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "등쪽어깨동맥",
+    "마름근",
+    "빗장밑동맥",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0041.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 등쪽어깨동맥 실사 spotter (필기 제거·복원본) spotter 복원 2회차 등쪽어깨동맥 마름근 빗장밑동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0040",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "더부신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "더부신경",
+    "등세모근",
+    "뒤목삼각",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0040.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 더부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 더부신경 등세모근 뒤목삼각 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0039",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "앞톱니근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "앞톱니근",
+    "긴가슴신경",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0039.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 앞톱니근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 앞톱니근 긴가슴신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
    "id": "anatomy-2026-0038",
    "type": "anatomy",
    "topic": "Anatomy",
@@ -310,7 +498,7 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/notes/anatomy-2026-0034-s03-subnote.md",
    "snippet": "1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위",
-   "text": "Anatomy 3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리 서브노트 3회차 표 실사합본 예습시험 태깅 1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위안쪽 경계== 뒤통수밑신경 작은뒤머리곧은근 minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖 (안쪽) 뒤통수밑신경 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 ==위가쪽 경계== 뒤통수밑신경 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 ==아래가쪽 경계== 뒤통수밑신경 [!주의] 아래머리빗근의 예외 :: 뒤통수밑근육 4개 중 유일하게 머리뼈에 닿지 않는다 (C2 가시돌기 → C1 가로돌기). 작용도 고리중쇠관절에서 머리 같은쪽 돌림. 2) 삼각 안에 무엇이 있나 = 내용물: 척추동맥 (C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경 (C1 뒤가지) + 정맥얼기 신경 뿌리 성격 무엇을 하나 뒤통수밑신경 suboccipital n. C1 뒤가지 ==순수 운동== 뒤통수밑근육 4개 — 삼각 안 큰뒤통수신경 greater occipital n. C2 뒤가지 ==감각== 아래머리빗근 아래모서리를 감아 올라가 뒤통수 피부 셋째뒤통수신경 C3 뒤가지 감각 뒤통수 아래 안쪽 좁은 영역 [!기출] 운동 vs 감각 :: \"아래머리빗근을 감아 도는 신경\"은 큰뒤통수신경(감각) . 삼각 안에서 근육으로 들어가는 것이 뒤통수밑신경(운동) . 태깅에서 둘을 바꿔 내는 것이 단골. [!임상] 척추동맥·신경통 :: 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약 . 큰뒤통수신경 포착은 뒤통수신경통의 원인. 2. 어깨뼈부위 3공간 Scapular spaces !fig docs/assets/anatomy/diag scapular spaces labeled.svg 세 공간의 경계와 통과 구조물 — 긴갈래 가쪽=네모공간, 안쪽=세모공간, 큰원근 아래=세모간격 1) 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 ==겨드랑신경 C5·6== 벌림 15–90°·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 ==어깨위신경== 벌림 개시 0–15° 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다. 2) 세 공간 — 경계와 내용물 공간 경계 내용물 네모공간 quadrangular 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 ==위팔뼈 외과목== 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 [!암기] 기준은 긴갈래 하나 :: 위팔세갈래근 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격(노신경) . [!임상] 외과목 골절 :: 네모공간을 지나는 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽 감각소실. 노신경은 세모간격을 지나 노신경고랑으로 → 위팔뼈 몸통 골절에서 손목처짐. 3. 어깨동맥그물 Scapular anastomosis !fig docs/assets/anatomy/diag scapular spaces labeled.svg 오른쪽 아래 패널 — 빗장밑동맥 ↔ 겨드랑동맥 우회로 = 빗장밑동맥 → (갑상목동맥) 어깨위동맥 · 등쪽어깨동맥 ↕ 어깨휘돌이동맥 ← 어깨밑동맥 ← 겨드랑동맥 동맥 모동맥 경로 의미 어깨위동맥 갑상목동맥(빗장밑) 위가로어깨인대 위 그물의 위쪽 다리 등쪽어깨동맥 빗장밑(또는 가로목) 마름근 심부 그물의 안쪽 다리 어깨휘돌이동맥 어깨밑동맥(겨드랑 3부) ==세모공간 통과== 그물의 가쪽 다리 뒤위팔휘돌이동맥 겨드랑동맥 3부 네모공간 통과 겨드랑신경과 동행 [!TIP] 인대와의 관계 :: \"Army over the bridge, Navy under\" — 동맥(artery)은 위가로어깨인대 위 , 신경(nerve)은 어깨패임 속(인대 아래 ). 4. 다리오금 Popliteal fossa !fig .private/anatomy/render/uploads b2/q5183 p2 clean.png 실사 복원본 — 다리오금의 혈관(무릎동맥 가지). 라벨 살아 있는 판 1) 경계와 내용물 경계 구조 위가쪽 넙다리두갈래근 위안쪽 반힘줄근 · 반막근 아래 장딴지근 두 갈래 = 내용물 얕음 → 깊음 : 정강신경 → 오금정맥 → 오금동맥 (가장 깊다) + 작은두렁정맥 말단 · 오금림프절 [!주의] 깊이 순서 :: 맥박을 잡으려면 깊이 눌러야 한다 — 오금동맥이 가장 깊다. 순서를 뒤집어 내는 문항이 흔하다. 2) 혈관 동맥 나오는 곳 특징 오금동맥 넙다리동맥이 ==모음근구멍== 통과하며 개명 오금근 아래모서리에서 앞·뒤정강동맥으로 종말분지 무릎동맥 5가지 오금동맥 위가쪽·위안쪽· 중간 ·아래가쪽·아래안쪽 → 무릎동맥그물 종아리동맥 뒤정강동맥 뒤정강동맥이 갈라진 직후 [!기출] 중간무릎동맥 :: 5가지 중 유일하게 관절주머니를 뚫고 들어가 십자인대에 분포. 나머지는 관절 둘레를 감는다. 3) 신경 신경 주행 손상 시 정강신경 오금 한가운데를 수직으로 종아리 뒤칸 전체 지배 온종아리신경 넙다리두갈래근 힘줄 안쪽 → ==종아리뼈목을 감아돔== 발처짐(foot drop) + 발등 감각소실 [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리. 5. 종아리 뒤칸 Posterior compartment of leg !fig .private/anatomy/render/uploads a1 s02/q5183 p8 clean.png 실사 복원본 — 다리오금의 신경(온종아리신경 분지) 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용)·결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 ==무릎 잠금 해제== 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽 에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 ==가쪽(종아리뼈)에서 기시== — 교차 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음·발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). = 안쪽복사 뒤 통과 순서(앞→뒤) Tom, Dick ANd Harry : 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 [!암기] 이름과 위치가 어긋나는 둘 :: 긴발가락굽힘근은 안쪽 , 긴엄지굽힘근은 가쪽 에서 기시해 발바닥에서 교차한다. 이름만 보고 위치를 찍으면 틀린다. 6. 마무리 체크리스트 Self check 뒤통수밑삼각 경계 3근육과 내용물 2가지를 대시오. 뒤통수밑신경과 큰뒤통수신경의 차이(뿌리·성격·주행)는? 네모공간·세모공간·세모간격의 내용물을 각각 대시오. 셋을 가르는 기준은? 돌림근띠 4근육은? 큰원근이 빠지는 이유는? 다리오금 내용물을 얕은 것부터 순서대로 대시오. 넙다리동맥이 오금동맥으로 이름이 바뀌는 지점은? 무릎동맥 5가지 중 관절주머니를 뚫는 것은? 종아리뼈목을 감아도는 신경과 그 손상 증상은? 안쪽복사 뒤 통과 순서를 앞에서부터 대시오."
+   "text": "Anatomy 3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리 서브노트 3회차 표 실사합본 예습시험 태깅 1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위안쪽 경계== 뒤통수밑신경 작은뒤머리곧은근 minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖 (안쪽) 뒤통수밑신경 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 ==위가쪽 경계== 뒤통수밑신경 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 ==아래가쪽 경계== 뒤통수밑신경 [!주의] 아래머리빗근의 예외 :: 뒤통수밑근육 4개 중 유일하게 머리뼈에 닿지 않는다 (C2 가시돌기 → C1 가로돌기). 작용도 고리중쇠관절에서 머리 같은쪽 돌림. 2) 삼각 안에 무엇이 있나 = 내용물: 척추동맥 (C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경 (C1 뒤가지) + 정맥얼기 신경 뿌리 성격 무엇을 하나 뒤통수밑신경 suboccipital n. C1 뒤가지 ==순수 운동== 뒤통수밑근육 4개 — 삼각 안 큰뒤통수신경 greater occipital n. C2 뒤가지 ==감각== 아래머리빗근 아래모서리를 감아 올라가 뒤통수 피부 셋째뒤통수신경 C3 뒤가지 감각 뒤통수 아래 안쪽 좁은 영역 [!기출] 운동 vs 감각 :: \"아래머리빗근을 감아 도는 신경\"은 큰뒤통수신경(감각) . 삼각 안에서 근육으로 들어가는 것이 뒤통수밑신경(운동) . 태깅에서 둘을 바꿔 내는 것이 단골. [!임상] 척추동맥·신경통 :: 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약 . 큰뒤통수신경 포착은 뒤통수신경통의 원인. 2. 어깨뼈부위 3공간 Scapular spaces !fig docs/assets/anatomy/diag scapular spaces labeled.svg 세 공간의 경계와 통과 구조물 — 긴갈래 가쪽=네모공간, 안쪽=세모공간, 큰원근 아래=세모간격 1) 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 ==겨드랑신경 C5·6== 벌림 15–90°·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 ==어깨위신경== 벌림 개시 0–15° 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다. 2) 세 공간 — 경계와 내용물 공간 경계 내용물 네모공간 quadrangular 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 ==위팔뼈 외과목== 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 [!암기] 기준은 긴갈래 하나 :: 위팔세갈래근 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격(노신경) . [!임상] 외과목 골절 :: 네모공간을 지나는 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽 감각소실. 노신경은 세모간격을 지나 노신경고랑으로 → 위팔뼈 몸통 골절에서 손목처짐. 3. 어깨동맥그물 Scapular anastomosis !fig docs/assets/anatomy/diag scapular spaces labeled.svg 오른쪽 아래 패널 — 빗장밑동맥 ↔ 겨드랑동맥 우회로 = 빗장밑동맥 → (갑상목동맥) 어깨위동맥 · 등쪽어깨동맥 ↕ 어깨휘돌이동맥 ← 어깨밑동맥 ← 겨드랑동맥 동맥 모동맥 경로 의미 어깨위동맥 갑상목동맥(빗장밑) 위가로어깨인대 위 그물의 위쪽 다리 등쪽어깨동맥 빗장밑(또는 가로목) 마름근 심부 그물의 안쪽 다리 어깨휘돌이동맥 어깨밑동맥(겨드랑 3부) ==세모공간 통과== 그물의 가쪽 다리 뒤위팔휘돌이동맥 겨드랑동맥 3부 네모공간 통과 겨드랑신경과 동행 [!TIP] 인대와의 관계 :: \"Army over the bridge, Navy under\" — 동맥(artery)은 위가로어깨인대 위 , 신경(nerve)은 어깨패임 속(인대 아래 ). 4. 다리오금 Popliteal fossa !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 마름모의 네 경계와 '신–정–동' 깊이 순서 + 무릎동맥 5가지 — 자체 제작 도해 1) 경계와 내용물 경계 구조 위가쪽 넙다리두갈래근 위안쪽 반힘줄근 · 반막근 아래 장딴지근 두 갈래 = 내용물 얕음 → 깊음 : 정강신경 → 오금정맥 → 오금동맥 (가장 깊다) + 작은두렁정맥 말단 · 오금림프절 [!주의] 깊이 순서 :: 맥박을 잡으려면 깊이 눌러야 한다 — 오금동맥이 가장 깊다. 순서를 뒤집어 내는 문항이 흔하다. 2) 혈관 동맥 나오는 곳 특징 오금동맥 넙다리동맥이 ==모음근구멍== 통과하며 개명 오금근 아래모서리에서 앞·뒤정강동맥으로 종말분지 무릎동맥 5가지 오금동맥 위가쪽·위안쪽· 중간 ·아래가쪽·아래안쪽 → 무릎동맥그물 종아리동맥 뒤정강동맥 뒤정강동맥이 갈라진 직후 [!기출] 중간무릎동맥 :: 5가지 중 유일하게 관절주머니를 뚫고 들어가 십자인대에 분포. 나머지는 관절 둘레를 감는다. 3) 신경 신경 주행 손상 시 정강신경 오금 한가운데를 수직으로 종아리 뒤칸 전체 지배 온종아리신경 넙다리두갈래근 힘줄 안쪽 → ==종아리뼈목을 감아돔== 발처짐(foot drop) + 발등 감각소실 [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리. 5. 종아리 뒤칸 Posterior compartment of leg !fig .private/anatomy/render/uploads a1 s02/q5183 p8 clean.png 실사 복원본 — 다리오금의 신경(온종아리신경 분지) 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용)·결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 ==무릎 잠금 해제== 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽 에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 ==가쪽(종아리뼈)에서 기시== — 교차 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음·발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). = 안쪽복사 뒤 통과 순서(앞→뒤) Tom, Dick ANd Harry : 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 [!암기] 이름과 위치가 어긋나는 둘 :: 긴발가락굽힘근은 안쪽 , 긴엄지굽힘근은 가쪽 에서 기시해 발바닥에서 교차한다. 이름만 보고 위치를 찍으면 틀린다. 6. 마무리 체크리스트 Self check 뒤통수밑삼각 경계 3근육과 내용물 2가지를 대시오. 뒤통수밑신경과 큰뒤통수신경의 차이(뿌리·성격·주행)는? 네모공간·세모공간·세모간격의 내용물을 각각 대시오. 셋을 가르는 기준은? 돌림근띠 4근육은? 큰원근이 빠지는 이유는? 다리오금 내용물을 얕은 것부터 순서대로 대시오. 넙다리동맥이 오금동맥으로 이름이 바뀌는 지점은? 무릎동맥 5가지 중 관절주머니를 뚫는 것은? 종아리뼈목을 감아도는 신경과 그 손상 증상은? 안쪽복사 뒤 통과 순서를 앞에서부터 대시오."
   },
   {
    "id": "anatomy-2026-0033",

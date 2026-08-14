@@ -12,7 +12,7 @@ cover_lines:
   - "범위  뒤통수밑삼각 / 어깨뼈부위 3공간 / 다리오금 / 종아리 뒤칸"
   - "구성  ① 근육표 ② 혈관표 ③ 신경표 ④ 공간·삼각 ⑤ 실사 태깅 10문항 ⑥ 정답·해설"
   - "근거  3회차(0825) 허미선pf 실습영상 + 3회차 종합정리(0022) + tagging 2차"
-  - "도해  diag-suboccipital · diag-scapular-spaces(라벨판) + 실사 복원본(다리오금)"
+  - "도해  diag-suboccipital · diag-scapular-spaces · diag-popliteal-fossa(라벨판·퀴즈판) + 실사 복원본"
 date: 2026-08-14
 confidence: high
 session_no: 3
@@ -113,7 +113,7 @@ tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
 
 ## 4. 다리오금 | Popliteal fossa
 
-!fig .private/anatomy/render/uploads-b2/q5183_p2_clean.png | 실사 복원본 — 다리오금의 혈관(무릎동맥 가지). 라벨 살아 있는 판
+!fig docs/assets/anatomy/diag-popliteal-fossa-labeled.svg | 마름모의 네 경계와 '신–정–동' 깊이 순서 + 무릎동맥 5가지 — 자체 제작 도해
 
 ### 1) 경계와 내용물
 

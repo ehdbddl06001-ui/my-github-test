@@ -566,24 +566,43 @@ def _load_card(path: Path) -> dict:
     return yaml.safe_load(fm) or {}
 
 
-def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3):
+def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3,
+                 meta_quiz_per_page: int = 2):
     """실사 복원 문항을 같은 파일에 합친다 — 왼쪽 이미지 / 오른쪽 문제·정답.
 
     이미지는 `.private/` 산출물이므로 이 PDF도 반드시 `.private/` 아래로만 나간다
-    (build()가 강제). 카드의 answer/explanation 은 frontmatter에서만 읽는다."""
+    (build()가 강제). 카드의 answer/explanation 은 frontmatter에서만 읽는다.
+
+    문항 수가 늘면서(회차당 12~15) 한 페이지에 한 문항씩 넣으면 아래 절반이 빈다 →
+    정답부와 같은 '행(row)' 배치로 페이지당 여러 문항을 싣는다."""
     if not items:
         return
     cards = [(it, _load_card(root / it["card"])) for it in items]
 
     b.section_bar("실사 태깅 문항", "restored scans — quiz")
+    qper = max(1, int(meta_quiz_per_page or 2)) if b.split else 1
+    QROW = (b.PH - MARGIN * 2 - 56) / qper if b.split else 0
     for n, (it, card) in enumerate(cards, 1):
-        b.cur_fig = (it["quiz_image"], f"문제 {n} · 번호핀을 보고 답하시오")
-        if n > 1:
-            b.new_page(plain=True)
-            b.cur_sec = ("실사 태깅 문항", "restored scans — quiz")
-            b._compose_split(cont=True) if b.split else None
-        elif b.split:
-            b._compose_split(cont=False)
+        if qper == 1:
+            b.cur_fig = (it["quiz_image"], f"문제 {n} · 번호핀을 보고 답하시오")
+            if n > 1:
+                b.new_page(plain=True)
+                b.cur_sec = ("실사 태깅 문항", "restored scans — quiz")
+                b._compose_split(cont=True) if b.split else None
+            elif b.split:
+                b._compose_split(cont=False)
+        else:
+            if n > 1 and (n - 1) % qper == 0:
+                b.new_page(plain=True)
+                b.cur_sec = ("실사 태깅 문항", "restored scans — quiz")
+                b._compose_split(cont=True)
+            y0 = b.y
+            fig_w = (b.PW - 2 * MARGIN) * FIG_FRAC
+            b.cur_fig = (it["quiz_image"], f"문제 {n} · 번호핀을 보고 답하시오")
+            b._draw_figure(MARGIN, y0 + 2, fig_w, QROW - 24)
+            b.cur_fig = None
+            b.x0, b.x1 = MARGIN + fig_w + 18, b.PW - MARGIN
+            b.y = y0
         b.subsection(f"문제 {n}")
         b.rich(card.get("stem", ""), size=10, leading=15)
         b.y += 6
@@ -595,6 +614,9 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
             b.callout("주의", "검수 대기",
                       "이 프레임은 필기가 정답 구조 위에 겹쳐 복원 얼룩이 남아 있다. "
                       "근육 결이 또렷하지 않으니 감안하고 볼 것.")
+        if qper > 1:
+            b.x0 = MARGIN
+            b.y = y0 + QROW
 
     # ── 정답부: 페이지 절약을 위해 라벨판을 '작은 썸네일'로 두 문항씩 묶는다.
     # 문제 페이지와 같은 크기로 다시 넣으면 페이지 수가 두 배가 된다(사용자 지적).
@@ -648,7 +670,7 @@ def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
         b.new_page(plain=True)
     render_body(b, body)
     render_scans(b, meta.get("scan_questions") or [], root,
-                 meta.get("answers_per_page", 3))
+                 meta.get("answers_per_page", 3), meta.get("quiz_per_page", 2))
     b.footer_all()
     try:
         doc.subset_fonts()          # 한글 폰트 통째 삽입 방지(1.7MB → 수십 KB)
