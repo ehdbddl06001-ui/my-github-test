@@ -49,11 +49,60 @@ def check(condition: bool, label: str) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 # Fixtures
 # ─────────────────────────────────────────────────────────────────────────────
-def _identity(code_sha256=None, input_digest="d" * 64, split=None):
-    """The four identity fields a manifest carries, defaulting to registered."""
+def _preflight(rule_fingerprint=None, **overrides):
+    """A frozen input freeze shaped like the producer's, keyed as it keys it."""
+    freeze = {
+        "ok": True,
+        "rule_fingerprint": rule_fingerprint or R.REGISTERED_RULE_FINGERPRINT,
+        "canonical_mamba": {"sha256": "a" * 64},
+        "cache_aggregate": {"aggregate": "b" * 64},
+        "mitdb_aggregate": {"aggregate": "c" * 64},
+        "cache_ledger_contract": {"ok": True},
+        "result_contract": {"pid_digest": "d" * 64},
+    }
+    freeze.update(overrides)
+    return freeze
+
+
+def _producer_manifest(preflight=None, **overrides):
+    """A manifest with the producer's **schema** and the registered **identity**.
+
+    Two different things, and the fixture needs both from different places.
+
+    *Structure* comes from `BJ.build_manifest()` itself.  That is what caught
+    the schema error the first real run hit: a flat dict written from the same
+    belief as the code under test could only ever agree with that belief.
+
+    *Identity* is then pinned to `R.FROZEN_Q5D_SHA256_LF`, because
+    `build_manifest()` records `sha256_file()` — the **raw bytes of the module
+    in whatever checkout is running the test**.  On a CRLF checkout that is the
+    checkout's own newline digest
+    (`879436b6…` on Windows) and **not** the identity of the registered
+    artifact (`6b098c67…`), which was produced from an LF checkout.  Leaving it
+    unpinned would make a fixture that is supposed to impersonate the
+    registered bundle impersonate this machine instead — and the strict
+    validator would rightly refuse it, failing the suite on Windows for a
+    reason that has nothing to do with the code.
+
+    The pin happens **before** `overrides`, so a test that wants a foreign or
+    malformed `code` block still gets one.
+    """
+    manifest = BJ.build_manifest({}, "20260813T000000",
+                                 preflight if preflight is not None
+                                 else _preflight())
+    # Schema from the producer; identity from the registered artifact.
+    manifest["code"] = dict(manifest["code"],
+                            sha256=R.FROZEN_Q5D_SHA256_LF)
+    manifest.update(overrides)
+    return manifest
+
+
+def _identity(code_sha256=None, input_digest=None, split=None):
+    """The four identity fields as `identity_from_manifest()` returns them."""
     return {"split": split or R.REGISTERED_SPLIT,
             "code_sha256": code_sha256 or R.FROZEN_Q5D_SHA256_LF,
-            "input_digest": input_digest,
+            "input_digest": input_digest
+            or BJ.preflight_input_digest(_preflight()),
             "rule_fingerprint": R.REGISTERED_RULE_FINGERPRINT}
 
 
@@ -125,9 +174,7 @@ def _write_source_bundle(directory, identity, summary=None, omit=(), extra=(),
     """The eleven files.  Content is filler except manifest and null_summary."""
     os.makedirs(directory, exist_ok=True)
     arrays = _expected_arrays()
-    manifest = dict(identity)
-    manifest.update({"experiment_id": "EXP-2026-007", "stage": "DS1_GATE"})
-    manifest.update(manifest_extra or {})
+    manifest = _producer_manifest(**(manifest_extra or {}))
     if summary is None:
         summary = {"replicates": TOTAL, "families": list(R.REGISTERED_FAMILIES),
                    "master_seed": R.REGISTERED_MASTER_SEED,
@@ -450,36 +497,35 @@ def _repair_world(identity=None, provider_sha=True, bridge=True, **kwargs):
                  "mimeType": R.DRIVE_FOLDER_MIME, "trashed": False}]
         yield {"tmp": tmp, "runs": runs, "shards": shard_dir,
                "source": source, "target": target, "drive": drive,
-               "identity": identity, "built": built}
+               "identity": identity, "manifest": built["manifest"],
+               "built": built}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # The guard
 # ─────────────────────────────────────────────────────────────────────────────
-def test_the_approval_is_recorded_and_revoking_it_refuses_everything():
-    """The approval is a record, and closing it again is one value.
+def test_the_module_ships_unapproved_and_refuses_everything():
+    """The 2026-08-12 approval named an implementation this change replaced.
 
-    An approval that showed up as a deleted check would read the same whether
-    it happened or someone removed an inconvenience.  So it is written down —
-    who, when, for what, and what was withheld — and `granted: False` restores
-    the previous refusal exactly.
+    An execution approval is for a specific implementation, not for a module in
+    general — that is what `verify_execution_identity()` enforces — so changing
+    the manifest schema withdrew it.  Carrying `granted: True` forward would
+    have left a record every run refuses anyway.
     """
-    check(R.EXECUTION_APPROVAL_RECORD["granted"] is True,
-          "execution is approved")
-    check(R.EXECUTION_APPROVAL_RECORD["granted_on"] == "2026-08-12"
-          and R.EXECUTION_APPROVAL_RECORD["granted_by"] == "user",
-          "with the approver and the date recorded")
-    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"]
-          == R.APPROVED_IMPLEMENTATION_COMMIT,
-          "and the pinned commit agreeing with the approved implementation")
+    check(R.EXECUTION_APPROVAL_RECORD["granted"] is False,
+          "the approval record is closed again")
+    check(R.EXECUTION_APPROVAL_RECORD["granted_on"] is None
+          and R.EXECUTION_APPROVAL_RECORD["granted_by"] is None
+          and R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None,
+          "and records no approver, date or pinned commit")
     check(len(R.EXECUTION_APPROVAL_RECORD["not_approved"]) >= 10,
-          "what was NOT approved is still enumerated")
-    check("execution approved: True" in R.design_card(),
+          "what would not be approved is still enumerated")
+    check("execution approved: False" in R.design_card(),
           "the design card says so out loud")
 
-    with tempfile.TemporaryDirectory() as tmp, guard_closed():
+    with tempfile.TemporaryDirectory() as tmp:
         for call in (
-            lambda: R.qualify_shards(tmp, _identity(),
+            lambda: R.qualify_shards(tmp, _producer_manifest(),
                                      R.EXECUTION_APPROVAL_TOKEN),
             lambda: R.read_source_snapshot(tmp, R.EXECUTION_APPROVAL_TOKEN),
             lambda: R.bridge_mount_to_folder_id(FakeDrive(), "x", tmp, (),
@@ -511,7 +557,7 @@ def test_a_wrong_token_is_refused_before_the_guard_is_reached():
         for token in (None, "",
                       "q5e-prep-p1-p2-read-only-execution-approved-by-user"):
             try:
-                R.qualify_shards(tmp, _identity(), token)
+                R.qualify_shards(tmp, _producer_manifest(), token)
                 raise AssertionError(f"accepted {token!r}")
             except R.RepairNotApprovedError:
                 check(True, f"{token!r} is refused")
@@ -767,7 +813,7 @@ def test_the_production_shard_set_is_exactly_the_preregistered_hundred():
 
 def test_a_complete_consistent_shard_set_qualifies():
     with _repair_world() as world, approved() as token:
-        out = R.qualify_shards(world["shards"], world["identity"], token,
+        out = R.qualify_shards(world["shards"], world["manifest"], token,
                                world["drive"], R.SHARD_FOLDER_ID,
                                total=TOTAL, expected=EXPECTED)
         report = out["report"]
@@ -797,7 +843,7 @@ def test_missing_extra_duplicate_and_nested_shards_are_all_refused():
     with approved() as token:
         with _repair_world(identity, skip=((5, 10),)) as world:
             try:
-                R.qualify_shards(world["shards"], identity, token, None,
+                R.qualify_shards(world["shards"], world["manifest"], token, None,
                                  total=TOTAL, expected=EXPECTED)
                 raise AssertionError("a missing shard qualified")
             except R.RepairError as error:
@@ -810,7 +856,7 @@ def test_missing_extra_duplicate_and_nested_shards_are_all_refused():
                       "w", encoding="utf-8") as handle:
                 handle.write("{}")
             try:
-                R.qualify_shards(world["shards"], identity, token, None,
+                R.qualify_shards(world["shards"], world["manifest"], token, None,
                                  total=TOTAL, expected=EXPECTED)
                 raise AssertionError("an extra shard qualified")
             except R.RepairError as error:
@@ -820,7 +866,7 @@ def test_missing_extra_duplicate_and_nested_shards_are_all_refused():
         with _repair_world(identity) as world:
             os.makedirs(os.path.join(world["shards"], "nested"))
             try:
-                R.qualify_shards(world["shards"], identity, token, None,
+                R.qualify_shards(world["shards"], world["manifest"], token, None,
                                  total=TOTAL, expected=EXPECTED)
                 raise AssertionError("a subfolder qualified")
             except R.RepairError as error:
@@ -835,7 +881,7 @@ def test_malformed_json_becomes_a_structured_stop_not_a_raw_exception():
               }
     with _repair_world(identity, raw=broken) as world, approved() as token:
         try:
-            R.qualify_shards(world["shards"], identity, token, None,
+            R.qualify_shards(world["shards"], world["manifest"], token, None,
                              total=TOTAL, expected=EXPECTED)
             raise AssertionError("malformed JSON qualified")
         except R.RepairError as error:
@@ -905,7 +951,7 @@ def test_an_edited_shard_fails_its_own_digest():
         with open(path, "w", encoding="utf-8") as handle:
             json.dump(payload, handle, sort_keys=True)
         try:
-            R.qualify_shards(world["shards"], identity, token, None,
+            R.qualify_shards(world["shards"], world["manifest"], token, None,
                              total=TOTAL, expected=EXPECTED)
             raise AssertionError("an edited shard qualified")
         except R.RepairError as error:
@@ -919,7 +965,7 @@ def test_a_shard_whose_max_is_wrong_is_refused():
     with _repair_world(identity, payloads={(0, SHARD_SIZE): wrong}) as world, \
             approved() as token:
         try:
-            R.qualify_shards(world["shards"], identity, token, None,
+            R.qualify_shards(world["shards"], world["manifest"], token, None,
                              total=TOTAL, expected=EXPECTED)
             raise AssertionError("a wrong maximum qualified")
         except R.RepairError as error:
@@ -927,22 +973,274 @@ def test_a_shard_whose_max_is_wrong_is_refused():
                   "a shard whose maximum is not the family maximum is refused")
 
 
-def test_the_manifest_must_carry_registered_values_not_just_strings():
-    for field, value in (("split", "DS2"),
-                         ("code_sha256", "a" * 64),
-                         ("rule_fingerprint", "b" * 64),
-                         ("input_digest", "short")):
-        manifest = _identity()
-        manifest[field] = value
+def test_the_identity_comes_from_where_the_producer_actually_writes_it():
+    """The schema is learned from `BJ.build_manifest()`, not assumed.
+
+    The first real bundle stopped on `split: None` because this module expected
+    four flat top-level fields — a shape the producer has never written — and
+    every fixture agreed, having been written from the same belief.  These
+    assertions are anchored on the producer's own output, so the assumption
+    cannot drift back in.
+    """
+    manifest = _producer_manifest()
+    identity = R.identity_from_manifest(manifest)
+    check(sorted(identity) == sorted(R.IDENTITY_FIELDS),
+          "the four identity fields come back")
+
+    check("rule_fingerprint" in manifest,
+          "rule_fingerprint is at the manifest's top level")
+    check(isinstance(manifest.get("code"), dict)
+          and "sha256" in manifest["code"],
+          "the module digest is under manifest['code']['sha256']")
+    check("split" not in manifest,
+          "and the manifest carries no split at all")
+    check(identity["split"] == R.REGISTERED_SPLIT,
+          "so split comes from the registered constant instead")
+    check("registered constant" in R.MANIFEST_IDENTITY_SOURCES["split"],
+          "which the report says out loud")
+
+    check("input_digest" not in manifest,
+          "the manifest stores no input digest either")
+    check(identity["input_digest"]
+          == BJ.preflight_input_digest(manifest["preflight"]),
+          "it is derived from the preflight freeze by the producer's own "
+          "function")
+    check(set(BJ.PREFLIGHT_FREEZE_FIELDS) <= set(manifest["preflight"]),
+          "and the freeze carries every field that derivation needs")
+
+
+def test_a_manifest_that_does_not_anchor_is_refused():
+    cases = {
+        "a foreign rule fingerprint":
+            _producer_manifest(rule_fingerprint="f" * 64),
+        "a missing rule fingerprint": _producer_manifest(rule_fingerprint=None),
+        "a foreign module digest":
+            _producer_manifest(code={"sha256": "a" * 64}),
+        "a malformed module digest":
+            _producer_manifest(code={"sha256": "nope"}),
+        "no code block": _producer_manifest(code=None),
+    }
+    # `preflight=None` means "use the default freeze" to the fixture, so the
+    # absent case is built and then emptied.
+    cases["no preflight freeze"] = _producer_manifest()
+    cases["no preflight freeze"]["preflight"] = None
+    for label, manifest in cases.items():
         try:
             R.identity_from_manifest(manifest)
-            raise AssertionError(f"accepted {field}={value!r}")
+            raise AssertionError(f"accepted {label}")
         except R.RepairError as error:
             check(error.reason == R.INPUT_UNQUALIFIED,
-                  f"the manifest's {field} is checked against the registered "
-                  f"value, not merely for being a string")
-    check(R.identity_from_manifest(_identity()) == _identity(),
-          "and a registered manifest passes")
+                  f"{label} cannot anchor the repair")
+
+    # The freeze must agree with the manifest it sits in.
+    try:
+        R.identity_from_manifest(_producer_manifest(
+            preflight=_preflight(rule_fingerprint="e" * 64)))
+        raise AssertionError("accepted a freeze disagreeing with its manifest")
+    except R.RepairError as error:
+        check(error.reason == R.INPUT_UNQUALIFIED,
+              "a preflight fingerprint that disagrees with the manifest's is "
+              "refused")
+
+
+def test_only_a_complete_and_passing_freeze_may_anchor():
+    """Blocker 1 — a digest folded from a partial freeze summarises less than
+    it appears to, so completeness is proven before the fold, not after."""
+    for label, value in (("false", False), ("zero", 0), ("the string true",
+                                                         "true"),
+                         ("null", None)):
+        try:
+            R.identity_from_manifest(_producer_manifest(
+                preflight=_preflight(ok=value)))
+            raise AssertionError(f"accepted preflight.ok = {label}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"preflight.ok = {label} cannot anchor the repair")
+            check("not the JSON boolean true" in str(error),
+                  f"and identity, not truthiness, is what rejected {label}")
+
+    absent = _preflight()
+    absent.pop("ok")
+    try:
+        R.identity_from_manifest(_producer_manifest(preflight=absent))
+        raise AssertionError("accepted a freeze with no ok field")
+    except R.RepairError as error:
+        check(error.reason == R.INPUT_UNQUALIFIED,
+              "a freeze with no ok field cannot anchor the repair")
+
+    # Every registered freeze field, dropped one at a time.
+    for field in BJ.PREFLIGHT_FREEZE_FIELDS:
+        freeze = _preflight()
+        freeze.pop(field)
+        try:
+            R.identity_from_manifest(_producer_manifest(preflight=freeze))
+            raise AssertionError(f"accepted a freeze missing {field}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"a freeze missing {field!r} is refused")
+    check(len(BJ.PREFLIGHT_FREEZE_FIELDS) == 7,
+          "all seven registered freeze fields were exercised")
+
+    # And a whole, passing freeze still anchors.
+    identity = R.identity_from_manifest(_producer_manifest())
+    check(identity["input_digest"]
+          == BJ.preflight_input_digest(_preflight()),
+          "a complete, passing freeze derives the digest")
+
+
+def test_the_derived_digest_claim_is_bounded():
+    """Blocker 1 — the earlier wording overclaimed and is corrected.
+
+    Derivation buys internal consistency against an unverified redundant
+    stored digest.  It does not buy independent provenance: both still come
+    out of the same manifest.
+    """
+    note = R.MANIFEST_IDENTITY_SOURCES["input_digest"]
+    check("internal consistency" in note,
+          "the claim that is made is internal consistency")
+    check("NOT stronger independent provenance" in note,
+          "and the claim that is not made is independent provenance")
+    check(R.REGISTERED_INPUT_DIGEST is None,
+          "there is still no separately registered input digest to check "
+          "either against")
+
+
+def test_the_fixture_impersonates_the_registered_artifact_not_this_checkout():
+    """Windows portability — the fixture's identity is pinned, on purpose.
+
+    `BJ.build_manifest()` records `sha256_file()`, the raw bytes of the module
+    in whatever checkout is running.  On a CRLF checkout that digest is this
+    machine's, not the registered artifact's, so a fixture meant to impersonate
+    the registered bundle would impersonate the machine — and the strict
+    validator would correctly refuse it, failing the suite for a reason that
+    has nothing to do with the code.
+    """
+    fixture = _producer_manifest()
+    check(fixture["code"]["sha256"] == R.FROZEN_Q5D_SHA256_LF,
+          "the fixture carries the registered LF identity")
+
+    # Recorded rather than hidden: the producer really does write the running
+    # checkout's raw digest, and on an LF checkout the two coincide.
+    unpinned = BJ.build_manifest({}, "20260813T000000", _preflight())
+    checkout_raw = R.frozen_q5d_digests()["raw_sha256"]
+    check(unpinned["code"]["sha256"] == checkout_raw,
+          "an unpinned producer manifest carries this checkout's raw digest")
+    check(sorted(unpinned) == sorted(fixture),
+          "and the pin changes one value, not the schema")
+    if checkout_raw == R.FROZEN_Q5D_SHA256_LF:
+        check(True, "this checkout is LF, so raw and registered coincide here "
+                    "— the pin is what makes a CRLF checkout behave the same")
+    else:                                                # pragma: no cover
+        check(unpinned["code"]["sha256"] != R.FROZEN_Q5D_SHA256_LF,
+              "this checkout is CRLF, so the unpinned digest is not the "
+              "registered identity — exactly the case the pin exists for")
+
+    # Overrides still win, so the foreign/malformed fixtures keep working.
+    check(_producer_manifest(code={"sha256": "a" * 64})["code"]["sha256"]
+          == "a" * 64,
+          "an override is applied after the pin")
+
+
+def test_the_manifest_code_digest_must_be_the_registered_value():
+    """Blocker 2 — one comparison, and the stored value is kept.
+
+    The removed branch accepted the *imported* module's raw digest and then
+    returned the LF one, which on a CRLF checkout would have handed the shard
+    check an identity no shard carries.
+    """
+    manifest = _producer_manifest()
+    identity = R.identity_from_manifest(manifest)
+    check(identity["code_sha256"] == manifest["code"]["sha256"],
+          "the identity keeps the digest the manifest stored, untranslated")
+    check(identity["code_sha256"] == R.FROZEN_Q5D_SHA256_LF,
+          "which is the registered LF identity")
+    check(identity["code_sha256"] == _identity()["code_sha256"],
+          "so manifest identity and shard code_sha256 stay the same value")
+
+    # Every digest that is not the registered one is refused — including this
+    # checkout's own raw digest when it differs, which is the Windows case.
+    module_bytes = open(R.BJ.__file__, "rb").read()
+    candidates = {
+        "a foreign digest": "a" * 64,
+        "a malformed digest": "nope",
+        # On an LF checkout this is the CRLF digest; on a CRLF checkout it is
+        # the LF one — which *is* the registered value there, so the filter
+        # below drops it rather than asserting something false.
+        "the other newline convention's raw digest": hashlib.sha256(
+            module_bytes.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
+            if b"\r\n" not in module_bytes
+            else module_bytes.replace(b"\r\n", b"\n")).hexdigest(),
+        # Present and distinct only on a CRLF checkout: the Windows case.
+        "this checkout's own raw digest":
+            R.frozen_q5d_digests()["raw_sha256"],
+    }
+    rejected = {label: digest for label, digest in candidates.items()
+                if digest != R.FROZEN_Q5D_SHA256_LF}
+    check(len(rejected) >= 3,
+          f"at least three non-registered digests to try here: "
+          f"{sorted(rejected)}")
+    for label, digest in rejected.items():
+        try:
+            R.identity_from_manifest(
+                _producer_manifest(code={"sha256": digest}))
+            raise AssertionError(f"accepted {label}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"{label} is refused")
+
+    source = inspect.getsource(R.identity_from_manifest)
+    check("raw_sha256" not in source,
+          "no raw-digest fallback branch remains")
+
+
+def test_only_the_expected_exception_shapes_become_a_named_stop():
+    """Blocker 3 — an unexpected implementation defect must not be disguised."""
+    source = inspect.getsource(R.identity_from_manifest)
+    check("except Exception" not in source,
+          "the broad catch is gone")
+    check("(BJ.NullShardError, TypeError, ValueError)" in source,
+          "and exactly the JSON-shape exceptions are caught")
+
+    # The four malformed-freeze shapes still become a structured stop.
+    broken = {
+        "a null freeze field":
+            (lambda f: f.__setitem__("result_contract", None)),
+        "a freeze field of the wrong type":
+            (lambda f: f.__setitem__("canonical_mamba", "not-a-mapping")),
+        "a freeze field that is a list":
+            (lambda f: f.__setitem__("cache_aggregate", [])),
+        "a freeze field that is an int":
+            (lambda f: f.__setitem__("mitdb_aggregate", 7)),
+    }
+    for label, mutate in broken.items():
+        freeze = _preflight()
+        mutate(freeze)
+        try:
+            R.identity_from_manifest(_producer_manifest(preflight=freeze))
+            raise AssertionError(f"derived a digest from {label}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"{label} is a structured stop")
+
+    # A RuntimeError from inside the frozen deriver is a defect, not a bad
+    # manifest, and must surface as itself.
+    original = BJ.preflight_input_digest
+
+    def exploding(_preflight_freeze):
+        raise RuntimeError("a defect inside the frozen module")
+
+    BJ.preflight_input_digest = exploding
+    try:
+        R.identity_from_manifest(_producer_manifest())
+        raise AssertionError("a RuntimeError was swallowed")
+    except RuntimeError as error:
+        check("a defect inside the frozen module" in str(error),
+              "a RuntimeError surfaces as itself, not as REPAIR_INPUT_"
+              "UNQUALIFIED")
+    except R.RepairError:
+        raise AssertionError("a RuntimeError was disguised as a repair stop")
+    finally:
+        BJ.preflight_input_digest = original
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1930,19 +2228,12 @@ def test_the_spec_fixes_the_contract_this_module_implements():
 
 
 def test_no_fixture_changed_the_recorded_approval():
-    """The last word: the record is exactly what the enable PR wrote.
-
-    Fixtures open and close the guard constantly; none of them may leave it
-    somewhere it was not, in either direction.
-    """
-    check(R.EXECUTION_APPROVAL_RECORD["granted"] is True,
+    """The last word: fixtures open and close the guard, and restore it."""
+    check(R.EXECUTION_APPROVAL_RECORD["granted"] is False,
           "the guard is as the record left it")
-    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"]
-          == "5191a92353b5bb067a01b174cfcc70d722ef013c",
-          "and the pinned commit was not moved by a test")
-    check(R.APPROVED_IMPLEMENTATION_COMMIT
-          == R.EXECUTION_APPROVAL_RECORD["pinned_commit"],
-          "with the two records still agreeing")
+    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None
+          and R.APPROVED_IMPLEMENTATION_COMMIT is None,
+          "and no test pinned a commit")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1988,7 +2279,7 @@ def test_the_snapshot_and_qualification_judge_the_bridged_bytes():
             check(snapshot.digest(name) == bridge_rows[name],
                   f"{name}: the snapshot digest is the bridged digest")
 
-        out = R.qualify_shards(world["shards"], world["identity"], token,
+        out = R.qualify_shards(world["shards"], world["manifest"], token,
                                world["drive"], R.SHARD_FOLDER_ID,
                                total=TOTAL, expected=EXPECTED)
         rows = {row["name"]: row["mount_sha256"]
@@ -2619,8 +2910,6 @@ def test_the_approved_digests_must_come_from_the_approved_commit():
 
 def test_an_unrecorded_approval_stops_before_assets():
     """The pre-approval state, restored, still refuses."""
-    previous = R.APPROVED_IMPLEMENTATION_COMMIT
-    R.APPROVED_IMPLEMENTATION_COMMIT = None
     try:
         R.verify_execution_identity(ROOT, "b" * 40)
         raise AssertionError("verified with nothing recorded")
@@ -2629,8 +2918,6 @@ def test_an_unrecorded_approval_stops_before_assets():
               "with no approved implementation recorded, it refuses")
         check("no approved implementation commit" in str(error),
               "and says so")
-    finally:
-        R.APPROVED_IMPLEMENTATION_COMMIT = previous
 
 
 def test_the_approval_block_admits_only_metadata_assignments():
@@ -2696,7 +2983,7 @@ def test_a_call_smuggled_into_the_approval_block_breaks_science_identity():
     """F3 mutation — the science digest must not be computable over logic."""
     source = open(R.__file__, encoding="utf-8").read()
     mutated = source.replace(
-        f'APPROVED_IMPLEMENTATION_COMMIT = "{R.APPROVED_IMPLEMENTATION_COMMIT}"',
+        "APPROVED_IMPLEMENTATION_COMMIT = None",
         'APPROVED_IMPLEMENTATION_COMMIT = __import__("os").getcwd()', 1)
     check(mutated != source, "the mutation applied")
     try:
@@ -2821,27 +3108,13 @@ def test_a_broader_or_unobservable_scope_is_still_refused():
                   "including what we need")
 
 
-def test_the_recorded_pin_describes_the_commit_it_names():
-    """The enable PR's own claim, checked against git rather than trusted."""
-    check(R.is_hex64(R.APPROVED_IMPLEMENTATION_COMMIT + "0" * 24)
-          or len(R.APPROVED_IMPLEMENTATION_COMMIT) == 40,
-          "an implementation commit is recorded, as a 40-hex sha")
-    check(all(R.is_hex64(v) for v in R.APPROVED_ARTIFACT_DIGESTS.values()),
-          "and all four artifact digests are real digests")
-
-    # The record must describe that commit — recomputed from its own blobs.
-    from_commit = R.digests_from_commit(ROOT, R.APPROVED_IMPLEMENTATION_COMMIT)
-    check(from_commit == dict(R.APPROVED_ARTIFACT_DIGESTS),
-          f"the four digests are the ones commit "
-          f"{R.APPROVED_IMPLEMENTATION_COMMIT[:12]} actually holds")
-    check(from_commit["frozen_q5d_lf_sha256"] == R.FROZEN_Q5D_SHA256_LF,
-          "including the frozen module's registered identity")
-
-    # And the module on disk differs from the approved commit only inside the
-    # fence: that is the whole claim an enable PR makes.
-    check(R.module_science_digest()["module_science_lf_sha256"]
-          == R.APPROVED_ARTIFACT_DIGESTS["module_science_lf_sha256"],
-          "the enable PR moved approval metadata and no logic")
+def test_the_pin_ships_unset_so_no_production_run_is_possible():
+    check(R.APPROVED_IMPLEMENTATION_COMMIT is None,
+          "no implementation commit is approved for this code")
+    check(all(v is None for v in R.APPROVED_ARTIFACT_DIGESTS.values()),
+          "and no artifact digests are recorded")
+    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None,
+          "the approval record carries no pinned commit either")
 
 
 def declared_tests():
