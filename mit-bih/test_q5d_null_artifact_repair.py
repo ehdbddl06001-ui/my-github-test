@@ -504,26 +504,29 @@ def _repair_world(identity=None, provider_sha=True, bridge=True, **kwargs):
 # ─────────────────────────────────────────────────────────────────────────────
 # The guard
 # ─────────────────────────────────────────────────────────────────────────────
-def test_the_module_ships_unapproved_and_refuses_everything():
-    """The 2026-08-12 approval named an implementation this change replaced.
+def test_the_approval_is_recorded_and_revoking_it_refuses_everything():
+    """The approval is a record, and closing it again is one value.
 
-    An execution approval is for a specific implementation, not for a module in
-    general — that is what `verify_execution_identity()` enforces — so changing
-    the manifest schema withdrew it.  Carrying `granted: True` forward would
-    have left a record every run refuses anyway.
+    The 2026-08-12 approval named `5191a92` and lapsed when the manifest-schema
+    fix moved the science digest.  This one names the implementation Codex
+    accepted afterwards, and it will lapse the same way if the logic moves
+    again — an execution approval is for a specific implementation, not for a
+    module in general.
     """
-    check(R.EXECUTION_APPROVAL_RECORD["granted"] is False,
-          "the approval record is closed again")
-    check(R.EXECUTION_APPROVAL_RECORD["granted_on"] is None
-          and R.EXECUTION_APPROVAL_RECORD["granted_by"] is None
-          and R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None,
-          "and records no approver, date or pinned commit")
+    check(R.EXECUTION_APPROVAL_RECORD["granted"] is True,
+          "execution is approved")
+    check(R.EXECUTION_APPROVAL_RECORD["granted_on"] == "2026-08-13"
+          and R.EXECUTION_APPROVAL_RECORD["granted_by"] == "user",
+          "with the approver and the date recorded")
+    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"]
+          == R.APPROVED_IMPLEMENTATION_COMMIT,
+          "and the pinned commit agreeing with the approved implementation")
     check(len(R.EXECUTION_APPROVAL_RECORD["not_approved"]) >= 10,
-          "what would not be approved is still enumerated")
-    check("execution approved: False" in R.design_card(),
+          "what was NOT approved is still enumerated")
+    check("execution approved: True" in R.design_card(),
           "the design card says so out loud")
 
-    with tempfile.TemporaryDirectory() as tmp:
+    with tempfile.TemporaryDirectory() as tmp, guard_closed():
         for call in (
             lambda: R.qualify_shards(tmp, _producer_manifest(),
                                      R.EXECUTION_APPROVAL_TOKEN),
@@ -2229,11 +2232,14 @@ def test_the_spec_fixes_the_contract_this_module_implements():
 
 def test_no_fixture_changed_the_recorded_approval():
     """The last word: fixtures open and close the guard, and restore it."""
-    check(R.EXECUTION_APPROVAL_RECORD["granted"] is False,
+    check(R.EXECUTION_APPROVAL_RECORD["granted"] is True,
           "the guard is as the record left it")
-    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None
-          and R.APPROVED_IMPLEMENTATION_COMMIT is None,
-          "and no test pinned a commit")
+    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"]
+          == "0cab1367b914e1c73000d135e5cdcbc42714486b",
+          "and the pinned commit was not moved by a test")
+    check(R.APPROVED_IMPLEMENTATION_COMMIT
+          == R.EXECUTION_APPROVAL_RECORD["pinned_commit"],
+          "with the two records still agreeing")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2910,6 +2916,8 @@ def test_the_approved_digests_must_come_from_the_approved_commit():
 
 def test_an_unrecorded_approval_stops_before_assets():
     """The pre-approval state, restored, still refuses."""
+    previous = R.APPROVED_IMPLEMENTATION_COMMIT
+    R.APPROVED_IMPLEMENTATION_COMMIT = None
     try:
         R.verify_execution_identity(ROOT, "b" * 40)
         raise AssertionError("verified with nothing recorded")
@@ -2918,6 +2926,8 @@ def test_an_unrecorded_approval_stops_before_assets():
               "with no approved implementation recorded, it refuses")
         check("no approved implementation commit" in str(error),
               "and says so")
+    finally:
+        R.APPROVED_IMPLEMENTATION_COMMIT = previous
 
 
 def test_the_approval_block_admits_only_metadata_assignments():
@@ -2983,7 +2993,7 @@ def test_a_call_smuggled_into_the_approval_block_breaks_science_identity():
     """F3 mutation — the science digest must not be computable over logic."""
     source = open(R.__file__, encoding="utf-8").read()
     mutated = source.replace(
-        "APPROVED_IMPLEMENTATION_COMMIT = None",
+        f'APPROVED_IMPLEMENTATION_COMMIT = "{R.APPROVED_IMPLEMENTATION_COMMIT}"',
         'APPROVED_IMPLEMENTATION_COMMIT = __import__("os").getcwd()', 1)
     check(mutated != source, "the mutation applied")
     try:
@@ -3108,13 +3118,24 @@ def test_a_broader_or_unobservable_scope_is_still_refused():
                   "including what we need")
 
 
-def test_the_pin_ships_unset_so_no_production_run_is_possible():
-    check(R.APPROVED_IMPLEMENTATION_COMMIT is None,
-          "no implementation commit is approved for this code")
-    check(all(v is None for v in R.APPROVED_ARTIFACT_DIGESTS.values()),
-          "and no artifact digests are recorded")
-    check(R.EXECUTION_APPROVAL_RECORD["pinned_commit"] is None,
-          "the approval record carries no pinned commit either")
+def test_the_recorded_pin_describes_the_commit_it_names():
+    """The enable PR's own claim, checked against git rather than trusted."""
+    check(isinstance(R.APPROVED_IMPLEMENTATION_COMMIT, str)
+          and len(R.APPROVED_IMPLEMENTATION_COMMIT) == 40,
+          "an implementation commit is recorded, as a 40-hex sha")
+    check(all(R.is_hex64(v) for v in R.APPROVED_ARTIFACT_DIGESTS.values()),
+          "and all four artifact digests are real digests")
+
+    from_commit = R.digests_from_commit(ROOT, R.APPROVED_IMPLEMENTATION_COMMIT)
+    check(from_commit == dict(R.APPROVED_ARTIFACT_DIGESTS),
+          f"the four digests are the ones commit "
+          f"{R.APPROVED_IMPLEMENTATION_COMMIT[:12]} actually holds")
+    check(from_commit["frozen_q5d_lf_sha256"] == R.FROZEN_Q5D_SHA256_LF,
+          "including the frozen module's registered identity")
+
+    check(R.module_science_digest()["module_science_lf_sha256"]
+          == R.APPROVED_ARTIFACT_DIGESTS["module_science_lf_sha256"],
+          "and the enable PR moved approval metadata and no logic")
 
 
 def declared_tests():
