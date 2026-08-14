@@ -1589,8 +1589,11 @@ MANIFEST_IDENTITY_SOURCES: Dict[str, str] = {
     "rule_fingerprint": "manifest['rule_fingerprint'] (top level)",
     "code_sha256": "manifest['code']['sha256'] (raw-byte digest of the "
                    "producing module)",
-    "input_digest": "derived from manifest['preflight'] via the frozen "
-                    "BJ.preflight_input_digest()",
+    "input_digest": "derived from the complete, verified manifest['preflight'] "
+                    "freeze via the frozen BJ.preflight_input_digest(); "
+                    "stronger internal consistency than an unverified "
+                    "redundant stored digest, but NOT stronger independent "
+                    "provenance than a separately registered digest would be",
     "split": "registered constant; the manifest does not carry a split",
 }
 
@@ -1604,9 +1607,16 @@ def identity_from_manifest(manifest: Mapping[str, object]) -> Dict[str, str]:
 
     `input_digest` is **derived**, not read: `manifest['preflight']` is the
     frozen input freeze, and `BJ.preflight_input_digest()` is the producer's
-    own function over it.  That is a stronger anchor than a stored field would
-    be — a stored digest can disagree with the freeze it claims to summarise,
-    and a derived one cannot.
+    own function over it, called only once the freeze has been proven complete
+    and passing.
+
+    What that buys, stated precisely, because the earlier wording overclaimed:
+    a derived digest has stronger **internal consistency** than an unverified
+    redundant stored digest — a stored one can disagree with the freeze it
+    claims to summarise, and a derived one cannot.  It does **not** have
+    stronger **independent provenance** than a separately registered digest
+    would; both still come out of the same manifest, and this repository
+    registers no input digest to check either against.
 
     `split` is not in the manifest at all.  Rather than pretend otherwise it
     comes from the registered constant, and `validate_shard_schema()` holds
@@ -1633,22 +1643,21 @@ def identity_from_manifest(manifest: Mapping[str, object]) -> Dict[str, str]:
         problems.append(
             f"code.sha256: {code_sha!r} is not a 64-hex string; the producer "
             f"records the module digest under manifest['code']['sha256']")
+    elif code_sha != FROZEN_Q5D_SHA256_LF:
+        problems.append(
+            f"code.sha256: {code_sha} is not the registered "
+            f"{FROZEN_Q5D_SHA256_LF}")
     else:
-        # The manifest holds the **raw-byte** digest of the module as it was on
-        # the producing machine; the registered identity is the LF-normalised
-        # one.  They coincide on an LF checkout and diverge on a CRLF one, so
-        # either match names the registered module — and which one matched is
-        # recorded rather than glossed over.
-        imported = frozen_q5d_digests()
-        if code_sha == FROZEN_Q5D_SHA256_LF:
-            values["code_sha256"] = FROZEN_Q5D_SHA256_LF
-        elif code_sha == imported["raw_sha256"]:
-            values["code_sha256"] = FROZEN_Q5D_SHA256_LF
-        else:
-            problems.append(
-                f"code.sha256: {code_sha} is neither the registered "
-                f"LF-normalised {FROZEN_Q5D_SHA256_LF} nor the imported "
-                f"module's raw {imported['raw_sha256']}")
+        # The stored value is kept, not translated.  An earlier version
+        # accepted the *imported* module's raw digest as an alternative and
+        # then returned the LF one — which would have handed the shard check an
+        # identity the shards do not carry, since a shard stores whatever the
+        # producer stored.  On this registered bundle the manifest's raw digest
+        # equals the registered LF identity because the producing checkout used
+        # LF, so one comparison is enough and a second branch could only ever
+        # disagree with the shards.  The **live** module's LF identity is
+        # checked separately, by `assert_frozen_q5d_unchanged()`.
+        values["code_sha256"] = code_sha
 
     preflight = manifest.get("preflight")
     if not isinstance(preflight, Mapping):
@@ -1656,34 +1665,56 @@ def identity_from_manifest(manifest: Mapping[str, object]) -> Dict[str, str]:
             f"preflight: {type(preflight).__name__}, not the frozen input "
             f"freeze the input digest is derived from")
     else:
+        # A digest derived from a partial freeze would summarise less than it
+        # appears to, so the freeze has to be whole *before* it is folded.
+        # Absent *or* null.  `build_manifest()` rebuilds the freeze as
+        # `{k: preflight.get(k) for k in PREFLIGHT_FREEZE_FIELDS}`, so a field
+        # the producer never had arrives as a present `None` rather than as a
+        # missing key — a presence check alone would call that complete.
+        missing_fields = [f for f in BJ.PREFLIGHT_FREEZE_FIELDS
+                          if preflight.get(f) is None]
+        if missing_fields:
+            problems.append(
+                f"preflight has no value for {missing_fields}; only a "
+                f"complete freeze may anchor this repair")
+        if preflight.get("ok") is not True:
+            # By identity, not truthiness: `bool("false")` is True, so a freeze
+            # that recorded its own failure would otherwise have anchored a
+            # repair.
+            problems.append(
+                f"preflight.ok is {preflight.get('ok')!r}, not the JSON "
+                f"boolean true; a freeze that did not pass cannot anchor this "
+                f"repair")
         frozen_fingerprint = preflight.get("rule_fingerprint")
         if frozen_fingerprint != fingerprint:
             problems.append(
                 f"preflight.rule_fingerprint {frozen_fingerprint!r} disagrees "
                 f"with the manifest's own {fingerprint!r}")
-        try:
-            derived = BJ.preflight_input_digest(preflight)
-        except Exception as error:
-            # Broad on purpose.  The freeze comes out of a JSON file, so a
-            # field can be present but `None`, a string where a mapping
-            # belongs, or a list — and the frozen deriver signals those with
-            # `TypeError` rather than its own exception type.  Catching only
-            # `Q5DJoinError` let a raw traceback escape a function whose whole
-            # job is to turn a bad manifest into a named stop.
-            problems.append(f"input_digest: cannot be derived from the "
-                            f"manifest's preflight freeze "
-                            f"({type(error).__name__}: {error})")
-        else:
-            if not is_hex64(derived):                    # pragma: no cover
-                problems.append(f"input_digest: derived {derived!r} is not "
-                                f"64 hex digits")
-            elif (REGISTERED_INPUT_DIGEST is not None
-                  and derived != REGISTERED_INPUT_DIGEST):
-                problems.append(
-                    f"input_digest: derived {derived} is not the registered "
-                    f"{REGISTERED_INPUT_DIGEST}")
+        if not problems:
+            try:
+                derived = BJ.preflight_input_digest(preflight)
+            except (BJ.NullShardError, TypeError, ValueError) as error:
+                # Exactly the shapes a JSON freeze can take on: the frozen
+                # deriver raises `NullShardError` for a field it can name, and
+                # `TypeError`/`ValueError` when a field is present but is
+                # `None`, a string where a mapping belongs, or a list.  Nothing
+                # wider — a `RuntimeError` or an `AssertionError` from inside
+                # the frozen module is a defect, and disguising it as
+                # `REPAIR_INPUT_UNQUALIFIED` would blame the manifest for it.
+                problems.append(f"input_digest: cannot be derived from the "
+                                f"manifest's preflight freeze "
+                                f"({type(error).__name__}: {error})")
             else:
-                values["input_digest"] = derived
+                if not is_hex64(derived):                # pragma: no cover
+                    problems.append(f"input_digest: derived {derived!r} is not "
+                                    f"64 hex digits")
+                elif (REGISTERED_INPUT_DIGEST is not None
+                      and derived != REGISTERED_INPUT_DIGEST):
+                    problems.append(
+                        f"input_digest: derived {derived} is not the "
+                        f"registered {REGISTERED_INPUT_DIGEST}")
+                else:
+                    values["input_digest"] = derived
 
     values["split"] = REGISTERED_SPLIT
     if problems:

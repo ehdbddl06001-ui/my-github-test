@@ -1016,17 +1016,139 @@ def test_a_manifest_that_does_not_anchor_is_refused():
             check(error.reason == R.INPUT_UNQUALIFIED,
                   f"{label} cannot anchor the repair")
 
-    # A freeze that cannot yield a digest must produce a named stop, never a
-    # traceback — and the frozen deriver signals some of these with TypeError
-    # rather than its own exception type, which once escaped to the caller.
+    # The freeze must agree with the manifest it sits in.
+    try:
+        R.identity_from_manifest(_producer_manifest(
+            preflight=_preflight(rule_fingerprint="e" * 64)))
+        raise AssertionError("accepted a freeze disagreeing with its manifest")
+    except R.RepairError as error:
+        check(error.reason == R.INPUT_UNQUALIFIED,
+              "a preflight fingerprint that disagrees with the manifest's is "
+              "refused")
+
+
+def test_only_a_complete_and_passing_freeze_may_anchor():
+    """Blocker 1 — a digest folded from a partial freeze summarises less than
+    it appears to, so completeness is proven before the fold, not after."""
+    for label, value in (("false", False), ("zero", 0), ("the string true",
+                                                         "true"),
+                         ("null", None)):
+        try:
+            R.identity_from_manifest(_producer_manifest(
+                preflight=_preflight(ok=value)))
+            raise AssertionError(f"accepted preflight.ok = {label}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"preflight.ok = {label} cannot anchor the repair")
+            check("not the JSON boolean true" in str(error),
+                  f"and identity, not truthiness, is what rejected {label}")
+
+    absent = _preflight()
+    absent.pop("ok")
+    try:
+        R.identity_from_manifest(_producer_manifest(preflight=absent))
+        raise AssertionError("accepted a freeze with no ok field")
+    except R.RepairError as error:
+        check(error.reason == R.INPUT_UNQUALIFIED,
+              "a freeze with no ok field cannot anchor the repair")
+
+    # Every registered freeze field, dropped one at a time.
+    for field in BJ.PREFLIGHT_FREEZE_FIELDS:
+        freeze = _preflight()
+        freeze.pop(field)
+        try:
+            R.identity_from_manifest(_producer_manifest(preflight=freeze))
+            raise AssertionError(f"accepted a freeze missing {field}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"a freeze missing {field!r} is refused")
+    check(len(BJ.PREFLIGHT_FREEZE_FIELDS) == 7,
+          "all seven registered freeze fields were exercised")
+
+    # And a whole, passing freeze still anchors.
+    identity = R.identity_from_manifest(_producer_manifest())
+    check(identity["input_digest"]
+          == BJ.preflight_input_digest(_preflight()),
+          "a complete, passing freeze derives the digest")
+
+
+def test_the_derived_digest_claim_is_bounded():
+    """Blocker 1 — the earlier wording overclaimed and is corrected.
+
+    Derivation buys internal consistency against an unverified redundant
+    stored digest.  It does not buy independent provenance: both still come
+    out of the same manifest.
+    """
+    note = R.MANIFEST_IDENTITY_SOURCES["input_digest"]
+    check("internal consistency" in note,
+          "the claim that is made is internal consistency")
+    check("NOT stronger independent provenance" in note,
+          "and the claim that is not made is independent provenance")
+    check(R.REGISTERED_INPUT_DIGEST is None,
+          "there is still no separately registered input digest to check "
+          "either against")
+
+
+def test_the_manifest_code_digest_must_be_the_registered_value():
+    """Blocker 2 — one comparison, and the stored value is kept.
+
+    The removed branch accepted the *imported* module's raw digest and then
+    returned the LF one, which on a CRLF checkout would have handed the shard
+    check an identity no shard carries.
+    """
+    manifest = _producer_manifest()
+    identity = R.identity_from_manifest(manifest)
+    check(identity["code_sha256"] == manifest["code"]["sha256"],
+          "the identity keeps the digest the manifest stored, untranslated")
+    check(identity["code_sha256"] == R.FROZEN_Q5D_SHA256_LF,
+          "which on this registered bundle is the registered LF identity, "
+          "because the producing checkout used LF")
+
+    # A manifest carrying only some other raw digest is refused, even one that
+    # a differently-normalised checkout of this very module would produce.
+    crlf_raw = hashlib.sha256(
+        open(R.BJ.__file__, "rb").read().replace(b"\n", b"\r\n")).hexdigest()
+    check(crlf_raw != R.FROZEN_Q5D_SHA256_LF,
+          "the fixture really is a different digest")
+    for label, digest in (("a CRLF-checkout raw digest", crlf_raw),
+                          ("a foreign digest", "a" * 64),
+                          ("a malformed digest", "nope")):
+        try:
+            R.identity_from_manifest(
+                _producer_manifest(code={"sha256": digest}))
+            raise AssertionError(f"accepted {label}")
+        except R.RepairError as error:
+            check(error.reason == R.INPUT_UNQUALIFIED,
+                  f"{label} is refused")
+
+    source = inspect.getsource(R.identity_from_manifest)
+    check("raw_sha256" not in source,
+          "no raw-digest fallback branch remains")
+
+    # The identity handed to the shard check is the one the shards carry.
+    identity_shard = _identity()
+    check(identity["code_sha256"] == identity_shard["code_sha256"],
+          "so manifest identity and shard code_sha256 stay the same value")
+
+
+def test_only_the_expected_exception_shapes_become_a_named_stop():
+    """Blocker 3 — an unexpected implementation defect must not be disguised."""
+    source = inspect.getsource(R.identity_from_manifest)
+    check("except Exception" not in source,
+          "the broad catch is gone")
+    check("(BJ.NullShardError, TypeError, ValueError)" in source,
+          "and exactly the JSON-shape exceptions are caught")
+
+    # The four malformed-freeze shapes still become a structured stop.
     broken = {
-        "a missing freeze field": (lambda f: f.pop("result_contract")),
         "a null freeze field":
             (lambda f: f.__setitem__("result_contract", None)),
         "a freeze field of the wrong type":
             (lambda f: f.__setitem__("canonical_mamba", "not-a-mapping")),
         "a freeze field that is a list":
             (lambda f: f.__setitem__("cache_aggregate", [])),
+        "a freeze field that is an int":
+            (lambda f: f.__setitem__("mitdb_aggregate", 7)),
     }
     for label, mutate in broken.items():
         freeze = _preflight()
@@ -1037,19 +1159,26 @@ def test_a_manifest_that_does_not_anchor_is_refused():
         except R.RepairError as error:
             check(error.reason == R.INPUT_UNQUALIFIED,
                   f"{label} is a structured stop")
-            check("cannot be derived" in str(error)
-                  or "not the frozen input freeze" in str(error),
-                  f"naming what failed for {label}")
 
-    # The freeze must agree with the manifest it sits in.
+    # A RuntimeError from inside the frozen deriver is a defect, not a bad
+    # manifest, and must surface as itself.
+    original = BJ.preflight_input_digest
+
+    def exploding(_preflight_freeze):
+        raise RuntimeError("a defect inside the frozen module")
+
+    BJ.preflight_input_digest = exploding
     try:
-        R.identity_from_manifest(_producer_manifest(
-            preflight=_preflight(rule_fingerprint="e" * 64)))
-        raise AssertionError("accepted a freeze disagreeing with its manifest")
-    except R.RepairError as error:
-        check(error.reason == R.INPUT_UNQUALIFIED,
-              "a preflight fingerprint that disagrees with the manifest's is "
-              "refused")
+        R.identity_from_manifest(_producer_manifest())
+        raise AssertionError("a RuntimeError was swallowed")
+    except RuntimeError as error:
+        check("a defect inside the frozen module" in str(error),
+              "a RuntimeError surfaces as itself, not as REPAIR_INPUT_"
+              "UNQUALIFIED")
+    except R.RepairError:
+        raise AssertionError("a RuntimeError was disguised as a repair stop")
+    finally:
+        BJ.preflight_input_digest = original
 
 
 # ─────────────────────────────────────────────────────────────────────────────
