@@ -103,7 +103,11 @@ def _donor_blend(img, mask, donor_path: Path, cfg: dict):
     bad = cv2.dilate(bad, np.ones((13, 13), np.uint8))
     for x0, y0, x1, y1 in cfg.get("donor_bad_boxes", []):
         bad[y0:y1, x0:x1] = 255
-    diff = cv2.absdiff(cv2.GaussianBlur(g1, (21, 21), 0),
+    # 프레임 차이는 소스의 '배경'과 비교해야 한다. 소스를 날것으로 쓰면 지우려는
+    # 흰 필기(밝음)와 donor 의 흰 장갑(밝음)이 서로 닮아 보여 "차이 없음"으로
+    # 통과하고, 장갑이 글씨 자리에 그대로 복사된다(2026-08-13 실측 버그).
+    src_bg = cv2.medianBlur(g1, 51)
+    diff = cv2.absdiff(cv2.GaussianBlur(src_bg, (21, 21), 0),
                        cv2.GaussianBlur(cv2.cvtColor(don, cv2.COLOR_BGR2GRAY),
                                         (21, 21), 0))
     bad[diff > int(cfg.get("donor_diff_thresh", 60))] = 255
@@ -126,22 +130,28 @@ def _donor_blend(img, mask, donor_path: Path, cfg: dict):
     return out, cv2.bitwise_and(mask, bad)
 
 
-def _tight_strokes(img, box: list, drop: int = 35, pad: int = 2):
+def _tight_strokes(img, box: list, drop: int = 35, pad: int = 2,
+                   bright: bool = False, bgk: int = 31):
     """박스 전체가 아니라 '펜 획 픽셀'만 마스크로 뽑는다(얇은 펜 마스킹).
 
     검정 손글씨는 주변 배경보다 어두운 얇은 획이다 — 국소 배경(중앙값 블러)
     대비 drop 이상 어두운 픽셀만 마스킹하면 지울 면적이 수 배 줄어 인페인팅
     품질이 크게 올라간다. 획이 거의 안 잡히면(어두운 배경 위 글씨 등)
     박스 전체로 폴백한다.
+
+    `bright=True`는 부호를 뒤집어 **흰 펜**(조직 위 밝은 획)을 잡는다. 실사
+    스캔에는 검정 펜만큼이나 흰 펜 주석이 많은데, 박스 통째로 지우면 그 안의
+    조직(정답 근육)까지 날아가므로 획만 얇게 지워야 한다(2026-08-13 실측).
     """
     import cv2
     import numpy as np
 
     x0, y0, x1, y1 = box
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    bg = cv2.medianBlur(gray, 31).astype(np.int16)
+    bg = cv2.medianBlur(gray, bgk).astype(np.int16)
     m = np.zeros(gray.shape, np.uint8)
-    roi = (bg - gray.astype(np.int16)) > drop
+    delta = gray.astype(np.int16) - bg if bright else bg - gray.astype(np.int16)
+    roi = delta > drop
     m[y0:y1, x0:x1] = roi[y0:y1, x0:x1].astype(np.uint8) * 255
     area = (y1 - y0) * (x1 - x0)
     if area and m[y0:y1, x0:x1].sum() / 255 < 0.02 * area:
@@ -208,8 +218,18 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
     mask = cv2.dilate(mask, np.ones((7, 7), np.uint8))
     for x0, y0, x1, y1 in cfg.get("erase_boxes", []):
         mask[y0:y1, x0:x1] = 255
-    for box in cfg.get("stroke_boxes", []):   # 얇은 펜: 획 픽셀만 마스킹
+    for box in cfg.get("stroke_boxes", []):   # 얇은 펜(검정): 획 픽셀만 마스킹
         mask |= _tight_strokes(img, box)
+    for box in cfg.get("bright_stroke_boxes", []):   # 얇은 펜(흰색)
+        # 흰 글씨는 획이 굵어 31px 중앙값 배경이 글씨 자체에 오염된다 →
+        # 배경 커널을 키우고 여유 pad 를 줘야 획이 통째로 잡힌다(실측).
+        mask |= _tight_strokes(img, box, drop=int(cfg.get("bright_drop", 22)),
+                               pad=int(cfg.get("bright_pad", 3)), bright=True,
+                               bgk=int(cfg.get("bright_bgk", 61)))
+    for x0, y0, x1, y1 in cfg.get("keep_boxes", []):
+        # 최종 마스크에서 제외 — 영상 자체 그래픽(▲ 포인터 등)이 필기 박스와
+        # 겹칠 때 쓴다. `protect` 는 색 검출에만 걸려 획 마스크를 못 막는다.
+        mask[y0:y1, x0:x1] = 0
     remaining = mask
     clean = img
     if cfg.get("donor"):  # 1순위: 인접 프레임에서 진짜 질감 복사
@@ -217,8 +237,12 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
     if remaining.any():   # 폴백: 점진(테두리→안쪽) 인페인팅 + 질감 매칭
         clean = _inpaint_progressive(clean, remaining)
         clean = _match_grain(clean, remaining)
+    # 스캔 여백(흰 종이)에 쓴 필기는 지워도 회색 얼룩이 남는다 — 영상 프레임만
+    # 잘라내면 여백 필기가 통째로 사라진다. 좌표는 자르기 '전' 기준으로 쓴다.
+    crop = cfg.get("crop")
     out_clean.parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(out_clean), clean)
+    cv2.imwrite(str(out_clean),
+                clean[crop[1]:crop[3], crop[0]:crop[2]] if crop else clean)
     stats = {"mask_px": int(mask.sum() / 255), "quiz": None}
 
     if out_quiz:
@@ -227,7 +251,15 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
         for x0, y0, x1, y1 in cfg.get("label_boxes", []):
             lb[y0:y1, x0:x1] = 255
         if lb.any():
-            quiz = cv2.inpaint(quiz, lb, 9, cv2.INPAINT_TELEA)
+            # 정답 라벨 자리도 필기 제거와 같은 품질 경로로 채운다 —
+            # 한 번에 확산(cv2.inpaint)하면 넓은 라벨 박스가 번들거리는
+            # 뭉갠 자국으로 남아 "여기 뭔가 지웠다"가 티난다(실측).
+            rem = lb
+            if cfg.get("donor"):
+                quiz, rem = _donor_blend(quiz, lb, Path(cfg["donor"]), cfg)
+            if rem.any():
+                quiz = _inpaint_progressive(quiz, rem)
+                quiz = _match_grain(quiz, rem)
         tb = cfg.get("title_box")
         if tb:  # 좌상단 타이틀은 답 노출 → 항상 검은 박스(주변 맞춤 불필요)
             cv2.rectangle(quiz, (tb[0], tb[1]), (tb[2], tb[3]), (0, 0, 0), -1)
@@ -240,7 +272,8 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
             cv2.putText(quiz, str(p.get("n", 1)), (p["x"] - 10, p["y"] + 11),
                         cv2.FONT_HERSHEY_SIMPLEX, 1.1, PIN_TEXT, 3, cv2.LINE_AA)
         out_quiz.parent.mkdir(parents=True, exist_ok=True)
-        cv2.imwrite(str(out_quiz), quiz)
+        cv2.imwrite(str(out_quiz),
+                    quiz[crop[1]:crop[3], crop[0]:crop[2]] if crop else quiz)
         stats["quiz"] = str(out_quiz)
     return stats
 
@@ -259,8 +292,11 @@ def selftest() -> int:
                     (40, 40, 200), 3)                      # 빨간 필기
         cv2.putText(img, "note", (60, 350), cv2.FONT_HERSHEY_SIMPLEX, 1,
                     (20, 20, 20), 2)                       # 검정 손글씨
+        cv2.putText(img, "W", (270, 235), cv2.FONT_HERSHEY_SIMPLEX, 1,
+                    (255, 255, 255), 2)                    # 흰 펜(조직 위)
         src = td / "p.png"; cv2.imwrite(str(src), img)
         cfg = {"colors": {"red": True}, "erase_boxes": [[50, 320, 160, 365]],
+               "bright_stroke_boxes": [[255, 200, 320, 250]],
                "title_box": [0, 0, 120, 40],
                "pins": [{"x": 300, "y": 100, "to": [300, 170], "n": 1}]}
         st = restore(src, cfg, td / "c.png", td / "q.png")
@@ -268,6 +304,11 @@ def selftest() -> int:
         clean = cv2.imread(str(td / "c.png"))
         b, g, r = cv2.split(clean[60:90, 420:580].astype(np.int16))
         assert not bool(((r > 120) & (g < 85) & (b < 85)).any()), "빨간 필기 잔존"
+        # 흰 펜은 사라지되, 그 박스 안의 원(조직)은 살아 있어야 한다 —
+        # 박스 통째 지우기로 회귀하면 이 검사가 깨진다.
+        roi = clean[200:250, 255:320]
+        assert int(roi.max()) < 235, "흰 펜 잔존"
+        assert abs(int(np.median(roi)) - 195) < 22, "조직까지 지워짐(박스 통째 삭제)"
         quiz = cv2.imread(str(td / "q.png"))
         assert (quiz[5:35, 5:115] == 0).all(), "타이틀 검은 박스 미적용"
     print("[ OK ] restore_scan selftest")

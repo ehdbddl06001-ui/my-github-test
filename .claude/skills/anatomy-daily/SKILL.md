@@ -7,13 +7,33 @@ description: 2026-2학기 임상해부학술기(3Q) 일일 학습 세트를 생�
 
 spec: `experiments/specs/anatomy-3q-2026.md`. 아래 순서를 **반드시** 지킨다.
 
-## 0. 활성 조건 (하나라도 실패하면 보고만 하고 종료)
+## 0. 중단 조건 — **이 둘만** 생성을 막는다
 
-- `TZ=Asia/Seoul date +%F` 로 KST 오늘 확인. **2026-10-19 이후면**:
-  `python pipelines/anatomy_daily.py` 가 `completed`를 출력한다 → 그대로 보고 후
-  종료(생성·커밋 금지). 이 경우 사용자에게 루틴 삭제를 안내한다.
-- main에 `pipelines/anatomy_daily.py`가 없으면(아키텍처 PR 미병합) 자동 커밋을
-  하지 않고 상태만 보고한다.
+1. `TZ=Asia/Seoul date +%F` 로 KST 오늘 확인. **2026-10-19 이후면**:
+   `python pipelines/anatomy_daily.py` 가 `completed`를 출력한다 → 그대로 보고 후
+   종료(생성·커밋 금지). 이 경우 사용자에게 루틴 삭제를 안내한다.
+2. `pipelines/anatomy_daily.py` 를 끝내 못 구하는 경우(아래 0b 복구까지 실패) —
+   상태만 보고한다.
+
+**그 외 어떤 실패도 생성을 건너뛰는 사유가 아니다.** 특히 Drive 미접근(2단계)은
+증분 확인이 안 될 뿐이고, 3·4단계(큐 계산·카드/문항 생성)는 repo 콘텐츠만으로
+완결된다 — 반드시 진행한다.
+
+## 0b. 저장소 없음 복구 (루틴 컨테이너 필수 점검 — 2026-08-14 실측)
+
+루틴이 만드는 컨테이너에는 **저장소가 안 붙어 있을 수 있다**(트리거 설정에
+git source가 없으면 작업 디렉터리가 빈 채로 뜬다). 이때 "환경 문제"로 보고하고
+끝내지 말고 **직접 클론해서 진행한다** — 토큰(`GITHUB_TOKEN`)과 프록시는 주입돼
+있어 클론이 된다:
+
+```
+ls CLAUDE.md 2>/dev/null || {
+  cd ~ && git clone https://github.com/ehdbddl06001-ui/my-github-test && \
+  cd my-github-test
+}
+```
+
+클론까지 실패하면 그때 실패로 보고한다(사유·명령 출력 포함).
 
 ## 1. 동기화·상태
 
@@ -36,7 +56,10 @@ python pipelines/anatomy_schedule.py             # phase·D-day 확인
   python pipelines/anatomy_classify.py --source-id <sid>
   ```
   (바이너리 PDF는 이 컨테이너에서 못 받는다 — spec D1. 페이지 번호를 지어내지 말 것.)
-- Drive 접근 실패 시: 기존 자료를 지우지 말고 "Drive 미접근"으로 보고만.
+- **Drive는 선택 단계다.** MCP 도구가 없거나(루틴 컨테이너에는 보통 없다) 접근이
+  실패하면 기존 자료를 지우지 말고 **이 단계만 건너뛴 뒤 3단계로 계속 진행**한다.
+  보고에 "Drive 미접근 — 증분 확인 생략"을 한 줄 남기면 된다. 여기서 실행을
+  끝내면 안 된다.
 
 ## 3. 오늘 큐 계산 (결정론) + 밀린 날 따라잡기
 
@@ -238,3 +261,15 @@ python pipelines/export_search_web.py
 - 생성한 카드/문항 수와 id, 사용한 출처(파일명·섹션)
 - needs_review 대기 항목과 이유
 - Drive 신규/변경/누락(missing_source) 현황
+
+### 조용한 무작업 종료 금지 (필수)
+
+한 번의 실행은 **둘 중 하나로 끝나야 한다**:
+
+1. **산출물** — 커밋(또는 PR) + 그 안에 최소 오늘자 daily plan 카드. 또는
+2. **명시적 사유** — 왜 아무것도 안 만들었는지 보고 첫 줄에 한 문장으로.
+   0단계의 두 중단 조건(종료일 경과 / 파이프라인 확보 실패) 외의 사유라면
+   그건 버그다 — 사유와 함께 실패한 명령·출력을 남긴다.
+
+"확인했지만 만들 게 없었다"는 사유가 될 수 없다. `anatomy_daily.py` 의 `gaps`가
+비어 있으면 daily plan 카드만이라도 커밋해 그날 루틴이 돌았다는 흔적을 남긴다.
