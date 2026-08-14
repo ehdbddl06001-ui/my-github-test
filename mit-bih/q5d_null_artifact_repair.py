@@ -71,7 +71,7 @@ EXECUTION_APPROVAL_TOKEN = "q5d-null-artifact-repair-execution-approved-by-user"
 #: implementation is named here, in the enable PR, pointing *backwards*; the
 #: notebook measures the actual `HEAD` it is running and the two are checked
 #: against each other.
-APPROVED_IMPLEMENTATION_COMMIT = None
+APPROVED_IMPLEMENTATION_COMMIT = "0cab1367b914e1c73000d135e5cdcbc42714486b"
 
 #: LF-normalised digests of what the review actually covered.  The repair
 #: module is **not** in this table: a record inside a file cannot certify that
@@ -79,29 +79,34 @@ APPROVED_IMPLEMENTATION_COMMIT = None
 #: this approval block removed — so an enable PR that only flips the guard
 #: leaves it unchanged and a science change is visible.
 APPROVED_ARTIFACT_DIGESTS = {
-    "spec_lf_sha256": None,
-    "notebook_lf_sha256": None,
-    "frozen_q5d_lf_sha256": None,
-    "module_science_lf_sha256": None,
+    "spec_lf_sha256":
+        "156343efafaa0b54e2cccd42e1c071c4e2a91248f59c8e37f4e6e00f35df57d6",
+    "notebook_lf_sha256":
+        "d16368faf757b93b926d1f9956b70d23f816b97a27d81b6b6583377126c6c2f4",
+    "frozen_q5d_lf_sha256":
+        "6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226",
+    "module_science_lf_sha256":
+        "2998cc28194b0cc710934c72dc749be38e8b230880b0bd2480eccfe4a6aff0bc",
 }
 
-#: Closed again.  The 2026-08-12 approval named implementation `5191a92`, and
-#: this change moved the module's science digest — so the implementation that
-#: approval described no longer exists.  An execution approval is for a
-#: specific implementation, not for a module in general, which is exactly what
-#: `verify_execution_identity()` exists to enforce; carrying the old record
-#: forward would leave a `granted: True` that every run refuses anyway, and a
-#: reader would have to reconstruct why.  A fresh approval follows a fresh
-#: review.
+#: Open, as of 2026-08-13, for implementation `0cab136`.
+#:
+#: The 2026-08-12 approval named `5191a92` and lapsed when the manifest-schema
+#: fix moved the module's science digest — an execution approval is for a
+#: specific implementation, not for a module in general.  This one names the
+#: implementation Codex accepted after that fix and after the Windows
+#: portability blocker, and it will lapse the same way if the logic moves
+#: again.  Setting `granted` back to False restores the refusal exactly, with
+#: no other edit anywhere.
 EXECUTION_APPROVAL_RECORD = {
-    "granted": False,
-    "granted_on": None,
-    "granted_by": None,
-    "pinned_commit": None,
+    "granted": True,
+    "granted_on": "2026-08-13",
+    "granted_by": "user",
+    "pinned_commit": "0cab1367b914e1c73000d135e5cdcbc42714486b",
     "kind": ("reconstruct negative_control_null.npz from the existing "
              "EXP-2026-007 null shards and assemble a new corrective bundle "
              "folder"),
-    "would_approve": (
+    "approved": (
         "reading the 100 existing null shards, read-only",
         "reading the existing canonical Q5-D bundle's eleven files, read-only",
         "read-only Drive folder-id inventories of the registered folder ids",
