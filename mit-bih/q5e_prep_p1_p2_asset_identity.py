@@ -99,13 +99,21 @@ CONTRACT_PATH = ("experiments/specs/"
 # `SOURCE_BUNDLE_RUN` across.
 # ─────────────────────────────────────────────────────────────────────────────
 #: Q5-E's registered constants, imported and **not modified** by this module.
+#: Since the 2026-08-14 registration these name the corrective bundle.
 SOURCE_BUNDLE_RUN = Q5E.SOURCE_BUNDLE_RUN
 SOURCE_BUNDLE_FOLDER_ID = Q5E.SOURCE_BUNDLE_FOLDER_ID
-#: Readable aliases for the same two values.  Reports name the original
-#: explicitly rather than leaving "the folder id" to mean whichever one the
-#: reader had in mind — the substitution this whole preflight exists to catch.
-ORIGINAL_CANONICAL_RUN = SOURCE_BUNDLE_RUN
-ORIGINAL_CANONICAL_FOLDER_ID = SOURCE_BUNDLE_FOLDER_ID
+#: The original eleven-file folder.  Read from Q5-E's **lineage** constants,
+#: not from its registration.
+#:
+#: These used to alias `SOURCE_BUNDLE_*`, which was correct only while the
+#: registration still pointed at the original.  The 2026-08-14 registration
+#: moved that pointer to the corrective bundle, and the alias would have
+#: followed it — making `ORIGINAL_CANONICAL_FOLDER_ID` name the corrective
+#: folder, so `run_prep()` would have refused its own target as "the ORIGINAL
+#: canonical folder".  Which folder came first is a historical fact and must
+#: not move when a registration does.
+ORIGINAL_CANONICAL_RUN = Q5E.SOURCE_BUNDLE_ORIGINAL_RUN
+ORIGINAL_CANONICAL_FOLDER_ID = Q5E.SOURCE_BUNDLE_ORIGINAL_FOLDER_ID
 #: `research/ASSETS.md :: run-20260813-q5d-null-corrective`.
 CORRECTIVE_BUNDLE_RUN = ("20260813T000000_EXP-2026-009_q5d_null_artifact_"
                          "repair_corrective")

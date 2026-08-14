@@ -456,14 +456,53 @@ ambiguity 0. gate 4~7 미도달이라 `input_identity`는 null이고
 
 spec status는 `approved_for_implementation` 그대로다. `MEASURED`/`PASS`/
 `COMPLETE`가 **아니다** — 실행이 있었다는 사실이 판정을 올리지 않는다.
-등록된 값은 0건이고 Q5-E의 세 stop은 닫힌 채다(P3 source-equivalence는 착수도
-하지 않았다).
+2026-08-14에 **P1·P2 두 stop이 닫혔고**(아래), **남은 것은 P3 하나**다.
 
 **다음 순서(각 단계가 별도 승인)**: ~~① artifact-repair 명세·구현~~ →
 ~~② 사용자 실행 승인~~ → ~~③ shard에서 NPZ 재구성 + 12-file corrective bundle 생성~~ →
 ~~④ 기존 11개 byte identity·새 bundle 계약 검증~~ → ~~⑤ 새 folder id·lineage 등록~~ →
-**⑥ P1/P2 재실행 승인·재실행** → ⑦ combined PASS 확인 뒤에야 P1 aggregate와 P2 five
-digests 등록 → ⑧ 그 다음이 P3 PREP.  ①~⑤는 2026-08-13에 완료됐다(아래).
+~~⑥ P1/P2 재실행 승인·재실행~~ → ~~⑦ combined PASS 뒤 P1 aggregate·P2 five digests 등록~~ →
+**⑧ P3 PREP(source-matching differential) 승인·설계·구현·실행·인수**.
+①~⑦은 2026-08-13~14에 완료됐다(아래).
+
+### EXP-2026-008 / Q5-E PREP P1+P2 — 등록 완료 (2026-08-14)
+
+재실행 1회로 **`PREP_P1_P2_PASS`**. Codex 인수 `PREP_P1_P2_RESULT_ACCEPTED` ·
+`CORRECTIVE_PROMOTION_APPROVED`, 그리고 **별도 등록 PR**로 값을 옮겼다 —
+어떤 run도 값을 스스로 등록하지 않는다(`applied_automatically: false`).
+
+- run `20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity` ·
+  **folder id `1805OG3ovOf3TJU_0xmzGIR9Nz51qrn2L`**. 2026-08-12 STOP bundle은
+  덮어쓰지 않았고, 그 행의 'folder id 미기록' 공백도
+  `1yKw7zH4ElQFVcIx0ckFRDxNZVREQcZMU`로 사실 정정했다(**STOP 판정은 그대로**).
+- **P1 PASS** 147파일 · publisher 146/146 · mismatch 0 · unlisted 0 · aggregate
+  `0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8` —
+  2026-08-12 관측값과 **동일**(이틀 간격 두 실행이 일치).
+- **P2 PASS** corrective 후보 folder id 직접 조회 · 12/12 · ambiguity 0 ·
+  bridge `drive_file_id_stream` · **12파일 전부 provider sha256·md5 양쪽 일치**.
+  manifest identity는 producer 실제 schema(`manifest['code']['sha256']` nested)
+  에서 읽었다.
+- **외부 anchor 검증은 Codex가 직접 수행**했다 — Drive bundle을 read-only로 다시
+  가져와 `saved_notebook_output` anchor로 `acceptance_eligible: true` ·
+  `problems: []` 확인. 실행 자신의 self-check가 `false`였던 것은 설계대로다.
+- 등록된 네 범주는 **함께** 움직였다: `MITDB_TREE_AGGREGATE` ·
+  `SOURCE_BUNDLE_FOLDER_ID`(→ corrective) · `SOURCE_BUNDLE_RUN`(→ corrective
+  run) · `SOURCE_BUNDLE_FILE_SHA256` 5개. `p1_p2_registration_state()`가 부분
+  등록을 거부한다.
+- subset fold `2c98aebb…` · 12파일 full fold `4c9c9cec…` · payload fold
+  `4b77dbee…` · manifest 외부 동결 `f23d9018…` 는 **ASSETS.md에만** 있고 Q5-E
+  runtime 상수로 만들지 않았다. 12파일 fold는 provenance identity이고, Q5-E가
+  읽는 과학 입력 identity는 5파일 digest다.
+
+**계보 표기 의무**: 등록된 입력은 `corrective packaging-derived canonical Q5-E
+input`이다. 11파일은 EXP-2026-007 원 산출물의 byte-identical 복사본이지만
+12번째 `negative_control_null.npz`는 **원 실행이 쓴 파일이 아니다**. **"원래
+EXP-2026-007 실행이 12파일 bundle을 산출했다"고 쓰지 마라.**
+
+**남은 stop은 P3 하나다.** `SOURCE_MATCH_ORACLE_RECORD`는 여전히 `None`이고,
+`verify_source_match_equivalence()`가 **detector replay 이전에** M4를 막는다.
+P1/P2 등록은 P3의 승인 조건을 바꾸지 않았다 — P3는 설계·구현·실행·인수가 각각
+별도 승인이며, 그 전에는 Q5-E 본 실행 승인을 요청하지 않는다.
 
 ### EXP-2026-009 / corrective bundle — 실행 완료 (2026-08-13) `REPAIR_COMPLETE`
 
@@ -484,10 +523,10 @@ D3의 복구가 실제로 수행됐다. **포장 복구이지 과학적 결과�
 - **기존 bundle·shard는 읽기 전용으로만 열었고 수정·삭제·덮어쓰기 0건.** 실행 후
   source 재해시 일치. scope 정확히 `drive.readonly`.
 
-**이것이 Q5-E의 stop을 푼 것은 아니다.** corrective bundle이 12파일 계약을
-만족하게 됐을 뿐, **P2를 그 폴더에 대고 재실행하지 않았다** — 따라서
-`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`는 여전히 열려 있고, P1 aggregate는 아직
-관측이며, `PREP_P1_P2_PASS`에 도달하지 않았다. 재실행은 별도 승인 대상이다.
+**2026-08-13 시점에서는 Q5-E의 stop을 푼 것이 아니었다** — 12파일 계약을
+만족하게 됐을 뿐이고 P2를 그 폴더에 대고 재실행하지 않은 상태였다. 그 재실행이
+2026-08-14에 이루어져 `PREP_P1_P2_PASS`가 나왔고, 이 corrective bundle은 위
+EXP-2026-008 절에 적은 대로 canonical Q5-E 입력으로 등록됐다.
 
 선행 Q5-E preflight 2건(`PREP_M4_ASSET_FREEZE` 2026-08-11 ·
 `PREP_M4_RR_EQUIVALENCE` 2026-08-12, `RR_VALUE_IDENTICAL_44_OF_44`)의 동결값은

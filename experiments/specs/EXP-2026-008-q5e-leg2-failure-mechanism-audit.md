@@ -2533,3 +2533,52 @@ only exception the gate converts — into the registered `M4_FROZEN_RR_MISMATCH`
 error still propagates.
 
 The three registration items remain open and are unchanged as terminal stops.
+
+## 2026-08-14 — P1 and P2 input identity registered; P3 is the one open stop
+
+Two of the three registration items are closed.  This entry records that and
+nothing else: **no scientific question, hypothesis, comparator, multiplicity
+correction, gate, threshold, seed or stopping rule changes here.**  Identity
+was the thing that was missing, and identity is the only thing supplied.
+
+### Closed
+
+| item | was | now |
+|---|---|---|
+| P1 `INPUT_IDENTITY_REGISTRATION_REQUIRED` | aggregate recorded only as `0b46a411…` | `MITDB_TREE_AGGREGATE` = `0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8` |
+| P2 `SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` | no per-file digest anywhere | `SOURCE_BUNDLE_FILE_SHA256`, five files |
+
+Both come from PREP run `20260814T104835` (`PREP_P1_P2_PASS`), accepted by
+Codex as `PREP_P1_P2_RESULT_ACCEPTED` after it verified the external anchor
+itself.  The full record is in the PREP execution contract's Decision log.
+
+The registration also moved `SOURCE_BUNDLE_FOLDER_ID` and `SOURCE_BUNDLE_RUN`
+to the EXP-2026-009 corrective bundle, and all four moved together — a bundle
+identified by one run's folder id and another run's digests is identified by
+neither.
+
+The audited input is now a **corrective packaging-derived canonical Q5-E
+input**: eleven byte-identical copies of the original EXP-2026-007 output plus
+a twelfth, `negative_control_null.npz`, which that run never wrote and which
+was reconstructed from the 100 preregistered null shards with coverage
+`10000/10000` and a `j_null_max` element-wise identical to `null_summary.json`.
+No null value, family, seed or replicate count changed.  It must never be
+written that the original run produced a twelve-file bundle.
+
+### Still open — and unchanged
+
+**P3, the source-matching differential, is the one remaining registration
+stop.**  `SOURCE_MATCH_ORACLE_RECORD` is still `None`, so
+`verify_source_match_equivalence()` still reports
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED` and still stops `m4_feasibility_gate()`
+**before** the detector replay is constructed.  Registering P1 and P2 did not
+weaken that, did not reorder `M4_GATE_ORDER`, and did not change what P3 will
+have to demonstrate: a differential against the registered `data.py`, naming
+the digest it was established against, the adapter fingerprint it tested, the
+PREP bundle that produced it and the fixtures it compared.
+
+P3 still needs its own design, implementation, execution and result
+acceptance, each separately approved.  A Q5-E execution approval is not
+requested and may not be requested until P3 is complete.  This spec's status is
+unchanged; nothing here promotes it to `approved_for_execution`, `RUNNING`,
+`MEASURED` or `COMPLETE`.

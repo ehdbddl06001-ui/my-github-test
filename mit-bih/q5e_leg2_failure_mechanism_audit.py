@@ -58,8 +58,37 @@ SPEC_PATH = ("experiments/specs/"
              "EXP-2026-008-q5e-leg2-failure-mechanism-audit.md")
 
 #: The audited run.  Identity is established by digest, never by path.
-SOURCE_BUNDLE_RUN = "20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE"
-SOURCE_BUNDLE_FOLDER_ID = "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd"
+#:
+#: **Registered 2026-08-14.**  This is a *corrective packaging-derived*
+#: canonical input, and the distinction is not cosmetic:
+#:
+#: * The eleven files other than `negative_control_null.npz` are
+#:   **byte-identical copies** of what the original EXP-2026-007 run produced.
+#: * `negative_control_null.npz` is **not** a file that run wrote.  The original
+#:   producer never wrote it — the omission is `P2_PRODUCER_ARTIFACT_OMISSION`,
+#:   a packaging defect — and it was reconstructed a day later by a separate
+#:   module, `q5d_null_artifact_repair.py`, from the 100 preregistered null
+#:   shards.
+#:
+#: So it must never be said that the original run produced a twelve-file
+#: bundle.  It did not.  What the reconstruction did establish: replicate
+#: coverage exactly 10000/10000 with no gap and no overlap, and a `j_null_max`
+#: **element-wise identical** to the vector already in `null_summary.json` —
+#: two vectors written by different code paths in the original run, so their
+#: agreement is evidence rather than self-confirmation.  No scientific rule,
+#: null value, seed, family or replicate count was changed; this is a
+#: deterministic repackaging of a missing artifact.
+SOURCE_BUNDLE_RUN = ("20260813T000000_EXP-2026-009_q5d_null_artifact_repair_"
+                     "corrective")
+SOURCE_BUNDLE_FOLDER_ID = "1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH"
+#: What the corrective bundle was derived *from*, kept so the lineage is
+#: readable here and not only in `research/ASSETS.md`.  These are historical
+#: facts, never a target: this folder holds eleven files, it is immutable, and
+#: nothing reads it.
+SOURCE_BUNDLE_ORIGINAL_RUN = (
+    "20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE")
+SOURCE_BUNDLE_ORIGINAL_FOLDER_ID = "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd"
+SOURCE_BUNDLE_PROVENANCE = "corrective_packaging_derived"
 PRODUCING_CODE_SHA256 = (
     "6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226")
 REGISTERED_RULE_FINGERPRINT = (
@@ -3155,12 +3184,18 @@ DISCOVERED_PATH_KEYS: Tuple[str, ...] = (
 
 #: The MIT-BIH publisher tree aggregate, as a **full** 64-hex digest.
 #:
-#: The spec records it only truncated (`0b46a411…`), and a truncated digest is
+#: The spec recorded it only truncated (`0b46a411…`), and a truncated digest is
 #: not an execution contract: it cannot be recomputed from, and must not be
-#: guessed at or reconstructed.  Until a separately approved read-only PREP
-#: registers the full value in the spec and here together, this stays `None`
-#: and :func:`verify_mitdb_identity` reports the open item instead of passing.
-MITDB_TREE_AGGREGATE: Optional[str] = None
+#: guessed at or reconstructed.  **Registered 2026-08-14** from the read-only
+#: PREP run `20260814T104835`, which computed it only after all three preceding
+#: P1 gates passed — 147 files with nothing missing or extra, `SHA256SUMS.txt`
+#: matching its separately registered digest, and 146/146 publisher checksums.
+#:
+#: The same full value was observed by the earlier 2026-08-12 PREP run over the
+#: same tree.  Two runs two days apart agreeing is why this is a registration
+#: rather than a single reading.
+MITDB_TREE_AGGREGATE: Optional[str] = (
+    "0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8")
 INPUT_IDENTITY_REGISTRATION_REQUIRED = "INPUT_IDENTITY_REGISTRATION_REQUIRED"
 #: `SHA256SUMS.txt` cannot appear in its own list, so the frozen verifier skips
 #: it and covers the other 146 files.  Its own digest is registered separately
@@ -3174,12 +3209,106 @@ MITDB_PUBLISHER_LISTED_FILES = 146
 #: reads.  Verifying only that the files exist and that `manifest.json` names
 #: the right producing code leaves the contents unpinned: a bundle whose CSVs
 #: were edited but whose `code_sha256` string was preserved would still be
-#: accepted as canonical.  These digests are not in any existing repository
-#: record, and this implementation may not open Drive to compute them, so the
-#: map stays empty and :func:`verify_bundle_content_identity` stops with
-#: `SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`.
-SOURCE_BUNDLE_FILE_SHA256: Dict[str, str] = {}
+#: accepted as canonical.
+#:
+#: **Registered 2026-08-14** from PREP run `20260814T104835`, which streamed
+#: each file by Drive **file id** from `SOURCE_BUNDLE_FOLDER_ID` and re-checked
+#: every one against the inventory: size, provider SHA-256 and provider MD5, all
+#: twelve files, none missing a provider checksum.  The same five digests were
+#: written independently by the 2026-08-13 repair run and are recorded in
+#: `research/ASSETS.md :: run-20260813-q5d-null-corrective`; a writer and a
+#: reader in different modules on different days agreeing is the cross-check.
+#:
+#: These five are the **scientific input identity**.  The twelve-file fold of
+#: the whole bundle is a provenance record and lives in `research/ASSETS.md`,
+#: deliberately not here: Q5-E reads five files, and a gate over the other
+#: seven would fail a bundle for a reason the science does not depend on.
+SOURCE_BUNDLE_FILE_SHA256: Dict[str, str] = {
+    "decision.json":
+        "d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5",
+    "join_map.parquet":
+        "dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971",
+    "manifest.json":
+        "4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c",
+    "record_class_coverage.csv":
+        "e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec",
+    "unmatched_and_ambiguous.csv":
+        "b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f",
+}
 SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED = "SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# The registration itself, and why it is one thing rather than four
+# ─────────────────────────────────────────────────────────────────────────────
+#: The four values above are **one registration**.  A bundle identified by one
+#: run's folder id and another run's digests is identified by neither, and the
+#: half-registered state is worse than the unregistered one because both gates
+#: would report a pass built on a mismatch nobody looked for.  So the
+#: categories are named here and :func:`p1_p2_registration_state` refuses any
+#: partial fill — checked, not merely intended.
+P1_P2_REGISTRATION_CATEGORIES: Tuple[str, ...] = (
+    "MITDB_TREE_AGGREGATE", "SOURCE_BUNDLE_FOLDER_ID", "SOURCE_BUNDLE_RUN",
+    "SOURCE_BUNDLE_FILE_SHA256")
+P1_P2_REGISTRATION_INCOMPLETE = "P1_P2_REGISTRATION_INCOMPLETE"
+
+#: Where the registered values came from.  A record, never consulted by a gate.
+P1_P2_REGISTRATION: Dict[str, object] = {
+    "registered_on": "2026-08-14",
+    "accepted_by": "codex",
+    "verdicts": ("PREP_P1_P2_RESULT_ACCEPTED",
+                 "CORRECTIVE_PROMOTION_APPROVED"),
+    "prep_run": "20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity",
+    "prep_combined_status": "PREP_P1_P2_PASS",
+    "contract": ("experiments/specs/"
+                 "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md"),
+    "executed_notebook": ("notebooks/executed/"
+                          "quest56_q5e_prep_p1_p2_asset_identity_"
+                          "20260814T104835.ipynb"),
+    "applied_automatically": False,
+    "note": ("registered by a separate registration PR after Codex result "
+             "acceptance; no run writes these values, and the PREP module "
+             "emits candidates only"),
+}
+
+
+def p1_p2_registration_state() -> Dict[str, object]:
+    """All four categories registered, or none.  Never a mixture.
+
+    Each category is asked whether it is filled, and the answer is a set of
+    booleans that must be uniform.  A partial registration is reported as a
+    problem rather than tolerated: it is the shape in which
+    :func:`verify_mitdb_identity` could pass on a tree frozen for one bundle
+    while :func:`verify_bundle_content_identity` verified another.
+    """
+    filled = {
+        "MITDB_TREE_AGGREGATE": MITDB_TREE_AGGREGATE is not None,
+        "SOURCE_BUNDLE_FOLDER_ID": bool(SOURCE_BUNDLE_FOLDER_ID),
+        "SOURCE_BUNDLE_RUN": bool(SOURCE_BUNDLE_RUN),
+        "SOURCE_BUNDLE_FILE_SHA256": bool(SOURCE_BUNDLE_FILE_SHA256),
+    }
+    problems: List[str] = []
+    if len(set(filled.values())) != 1:
+        problems.append(
+            f"{P1_P2_REGISTRATION_INCOMPLETE}: registered="
+            f"{sorted(k for k, v in filled.items() if v)} unregistered="
+            f"{sorted(k for k, v in filled.items() if not v)}.  These four "
+            f"move together or not at all; a bundle identified by one run's "
+            f"folder id and another run's digests is identified by neither.")
+    registered = all(filled.values())
+    if registered:
+        if MITDB_TREE_AGGREGATE is not None and not _is_sha256(
+                MITDB_TREE_AGGREGATE):
+            problems.append("MITDB_TREE_AGGREGATE is not a 64-hex digest")
+        digests = registered_bundle_digests_complete()
+        if not digests["complete"]:
+            problems.extend(str(p) for p in digests["problems"])
+    return {"categories": list(P1_P2_REGISTRATION_CATEGORIES),
+            "filled": filled, "registered": registered,
+            "complete": registered and not problems,
+            "reason": None if not problems else P1_P2_REGISTRATION_INCOMPLETE,
+            "problems": problems,
+            "provenance": SOURCE_BUNDLE_PROVENANCE,
+            "record": dict(P1_P2_REGISTRATION)}
 
 
 def _candidate_dirs(root: str, max_depth: int = DISCOVERY_MAX_DEPTH):

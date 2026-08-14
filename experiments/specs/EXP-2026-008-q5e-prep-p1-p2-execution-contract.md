@@ -1195,3 +1195,124 @@ candidate, bundle preserved at a **new timestamp** — the 20260812 bundle is no
 overwritten.  Step 5 (Codex result acceptance) and step 6 (the registration PR,
 now carrying five items) follow only from that run's outcome.  Steps 7 and 8 —
 P3 and any Q5-E execution approval — remain sealed.
+
+## 2026-08-14 — result accepted, and the values registered by a separate PR
+
+The rerun ran once from merged `main`, against the corrective candidate.
+
+    P1       P1_MITDB_IDENTITY_PASS            first_failure null
+    P2       P2_SOURCE_BUNDLE_IDENTITY_PASS    first_failure null
+    combined PREP_P1_P2_PASS
+
+Run `20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity`, Drive folder
+id `1805OG3ovOf3TJU_0xmzGIR9Nz51qrn2L`.  The 20260812 stop bundle was not
+overwritten; it stands at folder id `1yKw7zH4ElQFVcIx0ckFRDxNZVREQcZMU`, a gap
+this entry also closes — that run's row previously said "folder id 미기록", and
+its **STOP verdict is unchanged**.
+
+### Codex result acceptance
+
+    PREP_P1_P2_RESULT_ACCEPTED
+    CORRECTIVE_PROMOTION_APPROVED
+
+**The external anchor was verified by Codex, not by the run.**  This is the
+distinction the contract has insisted on throughout, and it was honoured:
+Codex re-fetched the Drive bundle read-only and called
+
+    verify_published_bundle(
+        <bundle>,
+        expected_manifest_sha256=
+            "f23d90180cbc43f5805c8c04216bfdd2f3479a6fe9af655a884cfd17b8446f9e",
+        manifest_anchor_source=saved_notebook_output)
+
+obtaining `structure_ok: true`, `manifest_digest_matches_expected: true`,
+`manifest_anchored_externally: true`, `acceptance_eligible: true`,
+`problems: []`, `prep_payload_sha256:
+4b77dbeed73124d56914e5cba99de94a370f59ba9020d908b642a85b83ed5ee7`.
+
+The run's own self-check reported `acceptance_eligible: false` under
+`same_run_self_check`, exactly as designed.  A run comparing a digest against
+the value it computed seconds earlier has confirmed its own arithmetic, not
+that the file has not been edited since — and the two verdicts differing is
+the mechanism working, not a contradiction.
+
+### What was registered, and where
+
+Four categories, moved **together** by a separate registration PR into
+`mit-bih/q5e_leg2_failure_mechanism_audit.py`:
+
+| category | value |
+|---|---|
+| `MITDB_TREE_AGGREGATE` | `0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8` |
+| `SOURCE_BUNDLE_FOLDER_ID` | `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH` |
+| `SOURCE_BUNDLE_RUN` | `20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective` |
+| `SOURCE_BUNDLE_FILE_SHA256` | the five below |
+
+    decision.json                d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5
+    join_map.parquet             dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971
+    manifest.json                4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c
+    record_class_coverage.csv    e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec
+    unmatched_and_ambiguous.csv  b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f
+
+`SOURCE_BUNDLE_RUN` names the **corrective bundle**, not the PREP run.  The
+PREP run measured these values; the corrective bundle supplies the inputs.
+Writing `20260814T104835…` there would name the measuring instrument as the
+material.
+
+`p1_p2_registration_state()` refuses any partial fill: a bundle identified by
+one run's folder id and another run's digests is identified by neither, and the
+half-registered state is worse than the unregistered one because both gates
+would report a pass built on a mismatch nobody looked for.
+
+### Audit values that are deliberately **not** registered as constants
+
+| value | where it lives | why not a constant |
+|---|---|---|
+| five-file subset fold `2c98aebb…` | `research/ASSETS.md` | derivable from the five registered digests; a second copy could drift |
+| twelve-file full fold `4c9c9cec…` | `research/ASSETS.md` | provenance/audit identity of the *whole* bundle.  Q5-E reads five files; a gate over the other seven would fail a bundle for a reason the science does not depend on |
+| `prep_payload_sha256` `4b77dbee…` | `research/ASSETS.md` | identity of the PREP bundle, not of any Q5-E input |
+| PREP manifest freeze `f23d9018…` | `research/ASSETS.md`, this log | the acceptance anchor, not a science gate |
+
+None of these appears in `q5e_leg2_failure_mechanism_audit.py`, and a
+regression test asserts their absence there and their presence in `ASSETS.md`.
+
+### Corrective provenance — the statement that must survive
+
+The registered bundle is a **corrective packaging-derived canonical Q5-E
+input**.  Precisely:
+
+- The eleven files other than `negative_control_null.npz` are **byte-identical
+  copies** of what the original EXP-2026-007 run produced.
+- `negative_control_null.npz` is **not** a file that run wrote.  The original
+  producer never wrote it — `P2_PRODUCER_ARTIFACT_OMISSION` — and it was
+  reconstructed a day later by `q5d_null_artifact_repair.py` from the 100
+  preregistered null shards.
+- Replicate coverage exactly `10000/10000`, no gap, no overlap.
+- The reconstructed `j_null_max` is **element-wise identical** to the vector
+  already in `null_summary.json` — two vectors written by different code paths
+  in the original run, so their agreement is evidence rather than
+  self-confirmation.
+- No scientific rule, null value, seed, family or replicate count changed.
+  This is a deterministic repackaging of a missing artifact.
+
+**It must never be written that the original EXP-2026-007 run produced a
+twelve-file bundle.**  It did not.
+
+### What this entry does not do
+
+It does not run anything, authenticate, call the Drive API or write a bundle.
+It does not modify `q5d_order_preserving_beat_join.py`, any scientific gate,
+threshold, hypothesis or multiplicity correction.  It does not touch the
+template notebook, the executed records, the Drive bundles, the original
+eleven-file folder or the null shards.  It does not raise this contract's
+`status`, which stays `approved_for_implementation`, and it does not promote
+Q5-E to `approved_for_execution`, `RUNNING`, `MEASURED` or `COMPLETE`.
+
+### Position in the Order
+
+Steps 5 (Codex result acceptance) and 6 (the registration PR) are complete.
+Step 7 — P3 approval, implementation, execution and acceptance — is **not**
+changed by this: registering P1 and P2 did not alter P3's conditions, and
+`SOURCE_MATCH_ORACLE_RECORD` is still `None`, so `verify_source_match_equivalence()`
+still stops M4 before the detector replay is reached.  Step 8, a Q5-E execution
+approval, remains after that.

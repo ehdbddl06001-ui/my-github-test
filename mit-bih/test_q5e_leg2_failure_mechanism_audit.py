@@ -2266,8 +2266,20 @@ def test_run_audit_reverifies_and_never_trusts_a_stamp():
         check(True, "re-verification is itself approval-gated")
 
 
-def test_bundle_content_identity_is_required_and_unregistered():
-    """Blocker 3 — file presence plus a manifest string is not identity."""
+def test_bundle_content_identity_is_registered_and_still_discriminates():
+    """Blocker 3 — file presence plus a manifest string is not identity.
+
+    Registered 2026-08-14.  What matters now is not that the gate reports an
+    open item — it no longer does — but that registering it did not turn it
+    into a formality: a bundle whose bytes are not the registered bytes must
+    still fail, and the unregistered behaviour must still be exactly restored
+    if the map is ever emptied.
+    """
+    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 != {},
+          "the five per-file digests are registered")
+    check(set(Q5E.SOURCE_BUNDLE_FILE_SHA256) == set(Q5E.BUNDLE_INPUT_FILES),
+          "over exactly the five files Q5-E reads")
+
     with tempfile.TemporaryDirectory() as tmp:
         for name in Q5E.BUNDLE_INPUT_FILES:
             with open(os.path.join(tmp, name), "w", encoding="utf-8") as fh:
@@ -2275,18 +2287,31 @@ def test_bundle_content_identity_is_required_and_unregistered():
         checked = Q5E.verify_bundle_content_identity(
             tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
         check(checked["ok"] is False,
-              "content identity does not pass while unregistered")
-        check(checked["reason"] == Q5E.SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
-              "it reports the freeze as the open item")
-        check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
-              "no per-file digest is invented")
+              "a directory whose bytes are not the registered bytes fails")
+        check(checked["reason"] == Q5E.DECISION_MISMATCH,
+              "as a mismatch, not as an unregistered open item")
+        check(len(checked["problems"]) == len(Q5E.BUNDLE_INPUT_FILES),
+              "and every one of the five is named as differing")
         check(set(checked["observed"]) == set(Q5E.BUNDLE_INPUT_FILES),
               "every file Q5-E reads is hashed and reported")
+        check(checked["registered"] == dict(Q5E.SOURCE_BUNDLE_FILE_SHA256),
+              "with the registered map reported beside the observation")
 
-        # Once digests are registered, a one-byte change must fail. This
-        # exercises the comparison itself without inventing a real digest.
-        frozen = dict(checked["observed"])
+        # Emptying the map restores the previous refusal exactly — the
+        # registration is one value, not a rewritten gate.
         real = Q5E.SOURCE_BUNDLE_FILE_SHA256
+        try:
+            Q5E.SOURCE_BUNDLE_FILE_SHA256 = {}
+            back = Q5E.verify_bundle_content_identity(
+                tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+            check(back["reason"] == Q5E.SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+                  "emptying the map restores the freeze-required stop exactly")
+        finally:
+            Q5E.SOURCE_BUNDLE_FILE_SHA256 = real
+
+        # And a one-byte change still fails, exercised without inventing a
+        # digest: freeze what is on disk, then change one byte.
+        frozen = dict(checked["observed"])
         try:
             Q5E.SOURCE_BUNDLE_FILE_SHA256 = frozen
             ok = Q5E.verify_bundle_content_identity(
@@ -2305,18 +2330,267 @@ def test_bundle_content_identity_is_required_and_unregistered():
             Q5E.SOURCE_BUNDLE_FILE_SHA256 = real
 
 
-def test_mitdb_aggregate_registration_is_an_open_item():
-    """B3 — a truncated digest is not an execution contract."""
-    check(Q5E.MITDB_TREE_AGGREGATE is None,
-          "the full MIT-BIH aggregate is not invented or reconstructed")
+def test_mitdb_aggregate_is_registered_in_full():
+    """B3 — a truncated digest is not an execution contract; this one is full."""
+    check(Q5E.MITDB_TREE_AGGREGATE ==
+          "0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8",
+          "the full MIT-BIH aggregate is registered")
+    check(Q5E._is_sha256(Q5E.MITDB_TREE_AGGREGATE),
+          "as a lowercase 64-hex digest")
+    check(Q5E.MITDB_TREE_AGGREGATE.startswith("0b46a411"),
+          "extending the prefix the spec already recorded, not replacing it")
+
     with tempfile.TemporaryDirectory() as tmp:
         checked = Q5E.verify_mitdb_identity(tmp,
                                             Q5E.EXECUTION_APPROVAL_TOKEN)
-        check(checked["ok"] is False, "the gate does not pass while it is None")
-        check(checked["reason"] == Q5E.INPUT_IDENTITY_REGISTRATION_REQUIRED,
-              "it reports the registration as the open item")
-        check(any("truncated" in p for p in checked["problems"]),
-              "and says why: the registered value is truncated")
+        check(checked["ok"] is False,
+              "an empty directory is not the registered tree")
+        check(checked["reason"] == Q5E.DECISION_MISMATCH,
+              "and now fails as a mismatch, not as an unregistered open item")
+        check(checked["registered_aggregate"] == Q5E.MITDB_TREE_AGGREGATE,
+              "with the registered value reported")
+        check(not any("truncated" in p for p in checked["problems"]),
+              "the truncation complaint is gone, because it is no longer true")
+
+        # Setting it back to None restores the earlier open item exactly.
+        real = Q5E.MITDB_TREE_AGGREGATE
+        try:
+            Q5E.MITDB_TREE_AGGREGATE = None
+            back = Q5E.verify_mitdb_identity(tmp,
+                                             Q5E.EXECUTION_APPROVAL_TOKEN)
+            check(back["reason"] == Q5E.INPUT_IDENTITY_REGISTRATION_REQUIRED,
+                  "None restores the registration-required stop exactly")
+            check(any("truncated" in p for p in back["problems"]),
+                  "with its original reason")
+        finally:
+            Q5E.MITDB_TREE_AGGREGATE = real
+
+
+def test_the_four_registration_categories_move_together():
+    """The registration is one thing, and a partial fill is refused.
+
+    A bundle identified by one run's folder id and another run's digests is
+    identified by neither, and the half-registered state is worse than the
+    unregistered one: both gates would report a pass built on a mismatch
+    nobody looked for.  So this is checked, not merely intended — each
+    category is emptied in turn and the state must report the incompleteness.
+    """
+    state = Q5E.p1_p2_registration_state()
+    check(state["registered"] is True, "all four categories are registered")
+    check(state["complete"] is True, "and the registration is well-formed")
+    check(state["problems"] == [], "with no problems")
+    check(sorted(state["categories"]) == sorted(
+        ["MITDB_TREE_AGGREGATE", "SOURCE_BUNDLE_FOLDER_ID",
+         "SOURCE_BUNDLE_RUN", "SOURCE_BUNDLE_FILE_SHA256"]),
+        "over exactly the four categories the registration PR moved")
+    check(all(state["filled"].values()), "each one reported as filled")
+
+    saved = (Q5E.MITDB_TREE_AGGREGATE, Q5E.SOURCE_BUNDLE_FOLDER_ID,
+             Q5E.SOURCE_BUNDLE_RUN, Q5E.SOURCE_BUNDLE_FILE_SHA256)
+    try:
+        for attr, empty in (("MITDB_TREE_AGGREGATE", None),
+                            ("SOURCE_BUNDLE_FOLDER_ID", ""),
+                            ("SOURCE_BUNDLE_RUN", ""),
+                            ("SOURCE_BUNDLE_FILE_SHA256", {})):
+            setattr(Q5E, attr, empty)
+            partial = Q5E.p1_p2_registration_state()
+            check(partial["registered"] is False and
+                  partial["complete"] is False,
+                  f"emptying {attr} alone is not a registration")
+            check(partial["reason"] == Q5E.P1_P2_REGISTRATION_INCOMPLETE,
+                  f"and emptying {attr} is reported as incomplete")
+            check(any(attr in p for p in partial["problems"]),
+                  f"naming {attr} as the one that is missing")
+            setattr(Q5E, attr, saved[
+                ["MITDB_TREE_AGGREGATE", "SOURCE_BUNDLE_FOLDER_ID",
+                 "SOURCE_BUNDLE_RUN",
+                 "SOURCE_BUNDLE_FILE_SHA256"].index(attr)])
+
+        # All four empty is the *previous* state and is not an error: it is
+        # uniform.  Only a mixture is refused.
+        (Q5E.MITDB_TREE_AGGREGATE, Q5E.SOURCE_BUNDLE_FOLDER_ID,
+         Q5E.SOURCE_BUNDLE_RUN, Q5E.SOURCE_BUNDLE_FILE_SHA256) = (
+            None, "", "", {})
+        none = Q5E.p1_p2_registration_state()
+        check(none["registered"] is False, "all four empty is unregistered")
+        check(none["problems"] == [],
+              "and is uniform, so it is not an incompleteness")
+    finally:
+        (Q5E.MITDB_TREE_AGGREGATE, Q5E.SOURCE_BUNDLE_FOLDER_ID,
+         Q5E.SOURCE_BUNDLE_RUN, Q5E.SOURCE_BUNDLE_FILE_SHA256) = saved
+    check(Q5E.p1_p2_registration_state()["complete"] is True,
+          "the fixture restored the registration")
+
+
+def test_the_registered_values_are_exactly_the_accepted_ones():
+    """Transcription is where a registration PR fails, so pin every value."""
+    check(Q5E.SOURCE_BUNDLE_FOLDER_ID == "1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH",
+          "the corrective folder id is registered exactly")
+    check(Q5E.SOURCE_BUNDLE_RUN ==
+          "20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective",
+          "and the corrective RUN name — the bundle that supplies the inputs, "
+          "not the 2026-08-14 PREP run that measured them")
+    check("EXP-2026-008" not in Q5E.SOURCE_BUNDLE_RUN
+          and "20260814" not in Q5E.SOURCE_BUNDLE_RUN,
+          "the PREP run name was not transcribed here by mistake")
+    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {
+        "decision.json":
+            "d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5",
+        "join_map.parquet":
+            "dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971",
+        "manifest.json":
+            "4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c",
+        "record_class_coverage.csv":
+            "e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec",
+        "unmatched_and_ambiguous.csv":
+            "b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f",
+    }, "the five digests are registered exactly as accepted")
+
+    # Lineage: the original folder is recorded and is NOT the registered one.
+    check(Q5E.SOURCE_BUNDLE_ORIGINAL_FOLDER_ID ==
+          "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd",
+          "the original eleven-file folder is recorded")
+    check(Q5E.SOURCE_BUNDLE_ORIGINAL_RUN ==
+          "20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE",
+          "with its run name")
+    check(Q5E.SOURCE_BUNDLE_ORIGINAL_FOLDER_ID != Q5E.SOURCE_BUNDLE_FOLDER_ID,
+          "and it is not what is registered")
+    check(Q5E.SOURCE_BUNDLE_PROVENANCE == "corrective_packaging_derived",
+          "the provenance is stated, not left to be inferred")
+
+    # The claim that must never be made.
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    # The provenance note is a wrapped comment block, so it is matched on
+    # normalised prose rather than on raw source: a line break falling in the
+    # middle of a sentence is not a missing statement.
+    prose = " ".join(line.lstrip("#: ") for line in text.splitlines())
+    prose = " ".join(prose.split())
+    for claim, why in (
+            ("**not** a file that run wrote",
+             "the twelfth file is not one the original run wrote"),
+            ("The original producer never wrote it",
+             "and the omission is stated as the producer's"),
+            ("byte-identical copies",
+             "the other eleven are byte-identical copies"),
+            ("element-wise identical",
+             "and what the reconstruction did establish"),
+            ("`P2_PRODUCER_ARTIFACT_OMISSION`",
+             "with the standing verdict named"),
+            ("deterministic repackaging",
+             "and the change characterised as packaging, not science")):
+        check(claim in prose, f"the module records that {why}")
+
+    # The one sentence that must never be asserted.  It appears exactly once,
+    # and only inside the prohibition itself.
+    banned = "the original run produced a twelve-file"
+    check(prose.count(banned) == 1
+          and f"must never be said that {banned}" in prose,
+          "the false claim appears only as the thing forbidden, never as an "
+          "assertion")
+    check(Q5E.P1_P2_REGISTRATION["applied_automatically"] is False,
+          "and records that no run applied these values")
+
+
+def test_the_provenance_folds_are_not_runtime_science_gates():
+    """Audit identity and scientific input identity are different things.
+
+    The twelve-file fold covers the whole corrective bundle and is provenance;
+    the five-file digests are what Q5-E's science actually reads.  Folding the
+    other seven into a gate would fail a bundle for a reason the science does
+    not depend on, so those folds live in `research/ASSETS.md` and must not
+    appear in this module at all — the strongest available form of "not a
+    runtime constant".
+    """
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        text = handle.read()
+    for fold, what in (
+            ("4c9c9cec905efca85224c5dff080f1cae5f42a5d29322ddd7d964c668b54db7d",
+             "the twelve-file full fold"),
+            ("4b77dbeed73124d56914e5cba99de94a370f59ba9020d908b642a85b83ed5ee7",
+             "the PREP payload fold"),
+            ("f23d90180cbc43f5805c8c04216bfdd2f3479a6fe9af655a884cfd17b8446f9e",
+             "the PREP manifest external freeze")):
+        check(fold not in text,
+              f"{what} is not a constant in the audit module")
+
+    assets = os.path.join(ROOT, "research", "ASSETS.md")
+    with open(assets, encoding="utf-8") as handle:
+        registry = handle.read()
+    for fold, what in (
+            ("4c9c9cec905efca85224c5dff080f1cae5f42a5d29322ddd7d964c668b54db7d",
+             "the twelve-file full fold"),
+            ("2c98aebb797ec4f6e033ddaf95acb6b0bc66f2565d8681d3af14acbc575978ea",
+             "the five-file subset fold"),
+            ("4b77dbeed73124d56914e5cba99de94a370f59ba9020d908b642a85b83ed5ee7",
+             "the PREP payload fold"),
+            ("f23d90180cbc43f5805c8c04216bfdd2f3479a6fe9af655a884cfd17b8446f9e",
+             "the PREP manifest external freeze")):
+        check(fold in registry, f"{what} is recorded in ASSETS.md instead")
+
+    # And no gate consults anything but the five.
+    check(set(Q5E.SOURCE_BUNDLE_FILE_SHA256) == set(Q5E.BUNDLE_INPUT_FILES),
+          "the content gate is over exactly the five scientific inputs")
+    check(len(Q5E.BUNDLE_INPUT_FILES) == 5
+          and len(BJ.BUNDLE_FILES) == 12,
+          "five read, twelve contracted — two different questions")
+
+
+def test_p3_remains_the_one_open_stop():
+    """Registering P1 and P2 did not open P3, and did not move its conditions."""
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "the P3 source-match oracle is still unregistered")
+    gate = Q5E.verify_source_match_equivalence()
+    check(gate["ok"] is False, "so the P3 gate does not pass")
+    check(gate["reason"] == "SOURCE_MATCH_EQUIVALENCE_REQUIRED",
+          "reporting the differential against the registered data.py as the "
+          "one thing still owed")
+    check(Q5E.p1_p2_registration_state()["complete"] is True,
+          "even though P1/P2 are fully registered")
+
+    # This module *does* call detect_r(), inside the M4 detector replay — that
+    # is what M4 is.  The property that matters is that the P3 gate stops the
+    # feasibility route **before** the replay is ever built, so a detector
+    # cannot run on the strength of P1/P2 being registered.
+    import ast
+    import inspect
+    # By AST, not by substring: this function's comments necessarily name
+    # `detect_r()` — explaining that the gate stops before it is reached is
+    # the whole point of the comment — and a text scan cannot tell a mention
+    # from a call.
+    gate_tree = ast.parse(inspect.getsource(Q5E.m4_feasibility_gate))
+    gate_calls = {n.func.attr if isinstance(n.func, ast.Attribute)
+                  else getattr(n.func, "id", "")
+                  for n in ast.walk(gate_tree) if isinstance(n, ast.Call)}
+    check("verify_source_match_equivalence" in gate_calls,
+          "the feasibility gate calls the P3 equivalence check")
+    for banned in ("detect_r", "build_detector_replay", "rr_features"):
+        check(banned not in gate_calls,
+              f"and never calls {banned}() itself")
+    order = list(Q5E.M4_GATE_ORDER)
+    check(order.index("source_match_equivalence")
+          < order.index("detector_replay"),
+          "P3 equivalence sits before the detector replay in the gate order")
+    check(order.index("input_identity")
+          < order.index("source_match_equivalence"),
+          "and after input identity — which is what this PR just registered, "
+          "so the newly-open gate is followed by a still-closed one")
+
+    # And the registration did not add the detector to any earlier route.
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        tree = ast.parse(handle.read())
+    replay_calls = [n for n in ast.walk(tree)
+                    if isinstance(n, ast.Call)
+                    and isinstance(n.func, ast.Attribute)
+                    and n.func.attr == "detect_r"]
+    check(len(replay_calls) == 1,
+          "detect_r() is called from exactly one place in the module")
+    enclosing = [n.name for n in ast.walk(tree)
+                 if isinstance(n, ast.FunctionDef)
+                 and n.lineno <= replay_calls[0].lineno <= (n.end_lineno or 0)]
+    check("__call__" in enclosing,
+          "and that place is the detector replay's own __call__, reached only "
+          "after the M4 gate the P3 stop closes")
 
 
 def test_frozen_module_approval_is_translated_not_reused():
@@ -2883,13 +3157,20 @@ def test_a2_bundle_copies_are_not_called_byte_identical():
 def test_a2_registered_bundle_digests_must_be_complete():
     """A2: a half-filled registration is not a registration."""
     state = Q5E.registered_bundle_digests_complete()
-    check(state["registered"] is False,
-          "nothing is registered in this PR")
-    check(state["reason"] == Q5E.SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
-          "and the open item is reported")
+    check(state["registered"] is True,
+          "the five digests are registered (2026-08-14)")
+    check(state["complete"] is True, "completely and well-formed")
+    check(state["problems"] == [], "with no problems")
 
     real = Q5E.SOURCE_BUNDLE_FILE_SHA256
     try:
+        Q5E.SOURCE_BUNDLE_FILE_SHA256 = {}
+        empty = Q5E.registered_bundle_digests_complete()
+        check(empty["registered"] is False,
+              "an empty map is not a registration")
+        check(empty["reason"] == Q5E.SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
+              "and reports the freeze as the open item, exactly as before")
+
         full = {name: chr(ord("a") + i) * 64
                 for i, name in enumerate(Q5E.BUNDLE_INPUT_FILES)}
         Q5E.SOURCE_BUNDLE_FILE_SHA256 = dict(full)
