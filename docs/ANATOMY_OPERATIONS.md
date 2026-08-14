@@ -1,6 +1,7 @@
 # 해부학(3Q) 운영 문서 — 공개/비공개 자산과 루틴
 
 spec: `experiments/specs/anatomy-3q-2026.md` · 웹: `docs/anatomy.html`
+**시각 자료 제작 규격(두 lane·QA·함정): `docs/ANATOMY_VISUALS.md`**
 
 ## 1. 공개/비공개 경계 (절대 규칙)
 

@@ -405,6 +405,38 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "body": "## 어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로)\n\n**돌림근띠(rotator cuff)** — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다:\n\n| 근육 | 관절주머니에서의 위치 |\n|---|---|\n| 어깨밑근 (subscapularis) | **앞** |\n| 가시위근 (supraspinatus) | 위 |\n| 가시아래근 (infraspinatus) | 뒤위 |\n| 작은원근 (teres minor) | 뒤아래 |\n\n보조 구조물:\n\n- **접시테두리(glenoid labrum)** — 접시오목의 깊이를 깊게 함\n- **접시위팔인대(glenohumeral ligament)** — 관절주머니 앞부분이 두꺼워진 띠.\n  겉보다 **관절주머니 속에서** 더 잘 보인다(위·중간·아래 구분)\n- **부리위팔인대(coracohumeral ligament)** — 부리돌기 가쪽모서리 → 위팔뼈 큰결절\n- **위팔두갈래근 긴갈래** — 위팔가로인대 깊은쪽 결절사이고랑을 지난다\n\n## 관계 문장(말로 설명하기)\n\n1. 어깨밑근은 관절주머니 **앞**을 덮고, 어깨밑근힘줄밑주머니는 관절주머니\n   섬유막구멍과 연결된다.\n2. 관절주머니 섬유막은 안쪽으로 접시오목 모서리, 가쪽으로 위팔뼈 **해부목**에 붙는다.\n3. 부리빗장인대(마름인대 가쪽 + 원뿔인대 안쪽)는 봉우리빗장관절을 간접 지지한다."
+  },
+  {
+   "id": "anatomy-2026-0032",
+   "title": "어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "layer": "",
+   "conceptStyle": "relation",
+   "relations": [
+    "passes-through",
+    "adjacent-to",
+    "branches-from"
+   ],
+   "structureClasses": [
+    "muscle",
+    "nerve",
+    "artery"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-scapular-spaces-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 3공간과 통과 구조물"
+    }
+   ],
+   "body": "## 기준은 위팔세갈래근 긴갈래 하나\n\n도해: `docs/assets/anatomy/diag-scapular-spaces-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0031`)\n\n위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을\n가르는 것은 **위팔세갈래근 긴갈래**라는 세로 기둥이다.\n\n```\n            작은원근 teres minor\n   ┌──────────────┬──────────────┐\n   │   세모공간    │   네모공간    │\n   │ (긴갈래 안쪽) │ (긴갈래 가쪽) │\n   └──────────────┴──────────────┘\n            큰원근 teres major\n        ┌──────────────┐\n        │   세모간격    │\n        └──────────────┘\n      ↑ 세로 기둥 = 위팔세갈래근 긴갈래\n```\n\n## 경계와 내용물\n\n| 공간 | 경계 | 내용물 |\n|---|---|---|\n| **네모공간** quadrangular space | 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 **위팔뼈 외과목** | **겨드랑신경** + 뒤위팔휘돌이동맥 |\n| **세모공간** triangular space | 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 | **어깨휘돌이동맥** |\n| **세모간격** triangular interval | 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 | **노신경** + 깊은위팔동맥 |\n\n외우는 법: 긴갈래 **가쪽 = 네모(신경)**, **안쪽 = 세모(동맥)**, 큰원근 **아래 = 세모간격**.\n\n## 어깨동맥그물 (scapular anastomosis)\n\n```\n빗장밑동맥 subclavian a.\n├─ 갑상목동맥 → 어깨위동맥 suprascapular a.\n└─ 등쪽어깨동맥 dorsal scapular a.\n        ↕  (문합)\n겨드랑동맥 → 어깨밑동맥 → 어깨휘돌이동맥 circumflex scapular a.  ← 세모공간 통과\n```\n\n겨드랑동맥 근위를 결찰해도 팔이 사는 이유. 어깨위신경·동맥과 위가로어깨인대의 관계는\n**\"Army over the bridge, Navy under\"** — 동맥은 인대 위, 신경은 어깨패임 속(인대 아래).\n\n## 임상\n\n- **위팔뼈 외과목 골절** → 네모공간의 **겨드랑신경** 손상 → 어깨세모근 마비 +\n  어깨 가쪽(견장 부위) 감각소실. 어깨 벌림 15–90°가 안 된다.\n- **노신경**은 세모간격을 지나 위팔뼈 뒤면의 노신경고랑으로 들어간다 → 위팔뼈 몸통\n  중간 골절에서 손목처짐(wrist drop).\n- 돌림근띠(SITS)는 가시위근·가시아래근·작은원근·어깨밑근 — **큰원근은 돌림근띠가 아니다**."
   }
  ],
  "questions": [
@@ -647,6 +679,28 @@ window.MEDKOS_ANATOMY = {
      "file": "2회차(0818) 김홍태pf.pdf",
      "page": null,
      "section": "볼기부위 — 궁둥구멍근과 통과 구조물"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0031",
+   "style": "spotter",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 어깨를 뒤에서 본 도해에서 ①~③은 공간의 경계를 이루는 근육, ④·⑥·⑦은 공간의 이름과 그 통과 구조물, ⑤는 지나가는 신경이다. 각각을 한·영으로 답하시오.",
+   "choices": null,
+   "answer": "① 작은원근 teres minor (세 공간의 공통 위 경계) / ② 큰원근 teres major (공통 아래 경계) / ③ 위팔세갈래근 긴갈래 long head of triceps (공간을 가르는 세로 기둥) / ④ 네모공간 quadrangular space — 겨드랑신경 + 뒤위팔휘돌이동맥 / ⑤ 겨드랑신경 axillary n. / ⑥ 세모공간 triangular space — 어깨휘돌이동맥 / ⑦ 세모간격 triangular interval — 노신경 + 깊은위팔동맥",
+   "explanation": "세 공간은 '위팔세갈래근 긴갈래를 어디서 만나느냐'로 갈린다. 긴갈래 **가쪽**이 네모공간(가쪽 경계는 위팔뼈 외과목), **안쪽**이 세모공간, 큰원근 **아래**가 세모간격이다. 내용물은 네모=신경(겨드랑신경)+뒤위팔휘돌이동맥, 세모=동맥 하나(어깨휘돌이동맥), 세모간격=노신경+깊은위팔동맥으로 외운다. 임상 연결: 위팔뼈 **외과목 골절**은 네모공간을 지나는 겨드랑신경을 다치게 해 어깨세모근 마비 + 어깨 가쪽 감각소실을 만든다. 어깨휘돌이동맥은 어깨동맥그물(빗장밑동맥 ↔ 겨드랑동맥 우회로)의 연결고리라 겨드랑동맥 근위 결찰 시 측부순환이 된다. 라벨판은 diag-scapular-spaces-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-scapular-spaces-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 3공간과 통과 구조물"
     }
    ]
   },

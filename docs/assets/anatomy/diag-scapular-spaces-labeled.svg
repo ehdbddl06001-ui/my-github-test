@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="어깨뼈부위 3공간 — 네모공간·세모공간·세모간격의 경계와 통과 구조물을 그린 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 오른쪽 어깨를 뒤에서 본 구도.
+       근거: 3회차(0825) 실습영상 §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022).
+       핵심: 위·아래 경계는 작은원근/큰원근으로 공통, 가르는 것은 위팔세갈래근 긴갈래.
+       긴갈래 안쪽 = 세모공간, 가쪽 = 네모공간, 큰원근 아래 = 세모간격. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">어깨뼈부위 3공간 — 무엇이 지나가나
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">quadrangular / triangular space &amp; triangular interval</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 근거: 3회차 실습영상 §어깨뼈부위 · 오른쪽 어깨를 뒤에서 본 모습</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">신경 <tspan fill="#9cc3ff">파랑</tspan> / 동맥 <tspan fill="#e0645f">빨강</tspan> · ★ = tagging 최다 빈출</text>
+
+  <!-- ================= 뼈 ================= -->
+  <!-- 어깨뼈 -->
+  <path d="M 60,150 L 214,176 L 236,300 L 206,318 L 150,404 L 96,300 Z"
+        fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 62,196 L 226,214" stroke="#3d5166" stroke-width="7"/>
+  <text x="52" y="196" fill="#8fa3b8" font-size="11" class="kr">어깨뼈가시</text>
+  <text x="52" y="140" fill="#8fa3b8" font-size="12" class="kr">어깨뼈 scapula</text>
+  <text x="40" y="404" fill="#5d6f83" font-size="10">아래각 inferior angle</text>
+  <path d="M 122,400 L 150,398" stroke="#4a5b6e" stroke-width="1"/>
+  <!-- 접시오목 아래결절 -->
+  <circle cx="232" cy="292" r="6" fill="#0e1826" stroke="#5b7690" stroke-width="2"/>
+  <!-- 위팔뼈 -->
+  <circle cx="272" cy="238" r="34" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 258,268 C 250,300 254,340 262,392 L 306,392 C 300,340 298,300 304,268 Z"
+        fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 262,392 C 268,450 276,500 282,548 L 320,548 C 314,500 308,450 306,392 Z"
+        fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <text x="316" y="238" fill="#8fa3b8" font-size="11" class="kr">위팔뼈머리</text>
+  <text x="316" y="250" fill="#5d6f83" font-size="9">humeral head</text>
+  <text x="318" y="286" fill="#eab308" font-size="10.5" class="kr">외과목</text>
+  <text x="318" y="298" fill="#b7962e" font-size="9">surgical neck</text>
+  <path d="M 314,290 L 302,282" stroke="#8b7a2e" stroke-width="1"/>
+
+  <!-- ================= 근육 ================= -->
+  <!-- 작은원근 (위 경계) -->
+  <path d="M 214,262 C 234,250 250,240 268,232 L 276,258 C 256,266 238,276 222,288 Z"
+        fill="#2f5a44" stroke="#5aa87f" stroke-width="1.6"/>
+  <!-- 큰원근 (아래 경계) -->
+  <path d="M 186,348 C 216,330 244,318 268,310 L 276,338 C 250,346 224,358 198,376 Z"
+        fill="#2f5a44" stroke="#5aa87f" stroke-width="1.6"/>
+  <!-- 위팔세갈래근 긴갈래 (세로 기둥) -->
+  <path d="M 222,296 C 218,340 220,392 226,446 L 254,442 C 248,390 246,340 250,300 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="1.6"/>
+
+  <text x="128" y="252" fill="#bfe8d3" font-size="11.5" class="kr">작은원근</text>
+  <text x="128" y="264" fill="#8fc9ad" font-size="9">teres minor</text>
+  <path d="M 190,254 L 220,262" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="96" y="430" fill="#bfe8d3" font-size="11.5" class="kr">큰원근</text>
+  <text x="96" y="442" fill="#8fc9ad" font-size="9">teres major</text>
+  <path d="M 150,424 L 194,368" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="150" y="482" fill="#cfe4f7" font-size="11.5" class="kr">위팔세갈래근 긴갈래</text>
+  <text x="150" y="494" fill="#8fb6d8" font-size="9">long head of triceps</text>
+  <text x="150" y="506" fill="#6f8299" font-size="9">← 이 기둥이 공간을 가른다</text>
+  <path d="M 226,478 L 236,450" stroke="#4a5b6e" stroke-width="1"/>
+
+  <!-- ================= 3공간 ================= -->
+  <!-- 세모공간 (긴갈래 안쪽) -->
+  <path d="M 206,300 C 200,320 196,340 192,352 C 206,344 216,336 220,326 C 220,316 214,306 206,300 Z"
+        fill="#4a3520" stroke="#c08a45" stroke-width="1.6" opacity="0.95"/>
+  <!-- 네모공간 (긴갈래 가쪽) -->
+  <path d="M 252,288 C 268,282 274,278 276,268 L 276,318 C 272,314 262,300 252,296 Z"
+        fill="#5c2b2b" stroke="#c96b66" stroke-width="1.6" opacity="0.95"/>
+  <!-- 세모간격 (큰원근 아래) -->
+  <path d="M 236,392 C 248,382 262,376 276,372 L 288,404 C 268,408 250,414 238,422 Z"
+        fill="#3d3050" stroke="#9578c4" stroke-width="1.6" opacity="0.95"/>
+
+  <!-- 통과 구조물 -->
+  <!-- 네모공간: 겨드랑신경 + 뒤위팔휘돌이동맥 -->
+  <path d="M 240,286 C 268,282 296,290 318,306" fill="none" stroke="#9cc3ff" stroke-width="3.4"/>
+  <path d="M 240,300 C 270,298 298,308 320,324" fill="none" stroke="#e0645f" stroke-width="3"/>
+  <!-- 세모공간: 어깨휘돌이동맥 -->
+  <path d="M 216,322 C 190,334 166,344 140,348" fill="none" stroke="#e0645f" stroke-width="3"/>
+  <!-- 세모간격: 노신경 + 깊은위팔동맥 -->
+  <path d="M 252,398 C 282,398 306,414 322,444" fill="none" stroke="#9cc3ff" stroke-width="3.4"/>
+  <path d="M 250,412 C 280,414 302,430 316,458" fill="none" stroke="#e0645f" stroke-width="3"/>
+
+  <!-- 공간 라벨 -->
+  <text x="330" y="352" fill="#c96b66" font-size="12.5" class="kr">네모공간 ★</text>
+  <text x="330" y="365" fill="#a35f5b" font-size="9.5">quadrangular space</text>
+  <text x="330" y="381" fill="#9cc3ff" font-size="11" class="kr">겨드랑신경</text>
+  <text x="330" y="394" fill="#7f9cc4" font-size="9">axillary n.</text>
+  <text x="330" y="410" fill="#e0645f" font-size="11" class="kr">뒤위팔휘돌이동맥</text>
+  <text x="330" y="423" fill="#c98a86" font-size="9">post. circumflex humeral a.</text>
+  <path d="M 326,346 L 278,300" stroke="#8b4a47" stroke-width="1"/>
+
+  <text x="40" y="318" fill="#e3a765" font-size="12.5" class="kr">세모공간</text>
+  <text x="40" y="331" fill="#c99a5f" font-size="9.5">triangular space</text>
+  <text x="40" y="347" fill="#e0645f" font-size="11" class="kr">어깨휘돌이동맥</text>
+  <text x="40" y="360" fill="#c98a86" font-size="9">circumflex scapular a.</text>
+  <path d="M 130,340 L 196,332" stroke="#8b6a2e" stroke-width="1"/>
+
+  <text x="330" y="470" fill="#b49ae0" font-size="12.5" class="kr">세모간격 ★</text>
+  <text x="330" y="483" fill="#8f79b8" font-size="9.5">triangular interval</text>
+  <text x="330" y="499" fill="#9cc3ff" font-size="11" class="kr">노신경</text>
+  <text x="330" y="512" fill="#7f9cc4" font-size="9">radial n.</text>
+  <text x="330" y="528" fill="#e0645f" font-size="11" class="kr">깊은위팔동맥</text>
+  <text x="330" y="541" fill="#c98a86" font-size="9">deep brachial a.</text>
+  <path d="M 326,464 L 288,412" stroke="#6b5590" stroke-width="1"/>
+
+
+  <!-- ===== 개념 인셋: 세 공간의 배치 ===== -->
+  <rect x="376" y="96" width="152" height="196" rx="8" fill="#0b1624" stroke="#2b3a4d"/>
+  <text x="390" y="116" fill="#e6edf3" font-size="11" class="kr">배치 한눈에</text>
+  <rect x="392" y="126" width="120" height="14" rx="3" fill="#2f5a44" stroke="#5aa87f"/>
+  <text x="452" y="137" fill="#bfe8d3" font-size="9" text-anchor="middle" class="kr">작은원근</text>
+  <rect x="392" y="144" width="56" height="44" rx="3" fill="#4a3520" stroke="#c08a45"/>
+  <text x="420" y="163" fill="#e3a765" font-size="9" text-anchor="middle" class="kr">세모</text>
+  <text x="420" y="175" fill="#e3a765" font-size="9" text-anchor="middle" class="kr">공간</text>
+  <rect x="456" y="144" width="56" height="44" rx="3" fill="#5c2b2b" stroke="#c96b66"/>
+  <text x="484" y="163" fill="#c96b66" font-size="9" text-anchor="middle" class="kr">네모</text>
+  <text x="484" y="175" fill="#c96b66" font-size="9" text-anchor="middle" class="kr">공간</text>
+  <rect x="448" y="140" width="8" height="52" fill="#3d5f7f" stroke="#79a8d0" stroke-width="1"/>
+  <rect x="392" y="192" width="120" height="14" rx="3" fill="#2f5a44" stroke="#5aa87f"/>
+  <text x="452" y="203" fill="#bfe8d3" font-size="9" text-anchor="middle" class="kr">큰원근</text>
+  <rect x="410" y="210" width="84" height="38" rx="3" fill="#3d3050" stroke="#9578c4"/>
+  <text x="452" y="226" fill="#b49ae0" font-size="9" text-anchor="middle" class="kr">세모간격</text>
+  <text x="452" y="238" fill="#8f79b8" font-size="8" text-anchor="middle">노신경</text>
+  <rect x="404" y="206" width="8" height="46" fill="#3d5f7f" stroke="#79a8d0" stroke-width="1"/>
+  <text x="390" y="266" fill="#79a8d0" font-size="9" class="kr">■ 세로 기둥 = 긴갈래</text>
+  <text x="390" y="280" fill="#6f8299" font-size="8.5">가쪽(오른쪽)이 네모공간</text>
+
+  <!-- ================= 오른쪽: 경계 표 ================= -->
+  <rect x="536" y="96" width="326" height="222" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="552" y="120" fill="#e6edf3" font-size="13" class="kr">경계 — 위·아래는 셋 다 같다</text>
+  <text x="552" y="144" fill="#bfe8d3" font-size="11" class="kr">위 작은원근 · 아래 큰원근</text>
+  <text x="552" y="158" fill="#6f8299" font-size="10">(세모간격만 위 경계가 큰원근)</text>
+
+  <text x="552" y="184" fill="#c96b66" font-size="11.5" class="kr">네모공간</text>
+  <text x="640" y="184" fill="#93a4b7" font-size="10.5">안쪽 = 긴갈래 / 가쪽 = <tspan fill="#eab308">외과목</tspan></text>
+  <text x="552" y="212" fill="#e3a765" font-size="11.5" class="kr">세모공간</text>
+  <text x="640" y="212" fill="#93a4b7" font-size="10.5">가쪽 = 긴갈래 (긴갈래 <tspan fill="#e6edf3">안쪽</tspan>)</text>
+  <text x="552" y="240" fill="#b49ae0" font-size="11.5" class="kr">세모간격</text>
+  <text x="640" y="240" fill="#93a4b7" font-size="10.5">위 = 큰원근 / 안쪽 = 긴갈래</text>
+  <text x="640" y="254" fill="#93a4b7" font-size="10.5">가쪽 = 위팔뼈</text>
+
+  <text x="552" y="284" fill="#eab308" font-size="11" class="kr">외우는 법</text>
+  <text x="552" y="300" fill="#93a4b7" font-size="10.5">긴갈래 <tspan fill="#e6edf3">가쪽=네모(신경)</tspan> · <tspan fill="#e6edf3">안쪽=세모(동맥)</tspan></text>
+
+  <!-- ================= 오른쪽 아래: 어깨동맥그물 + 임상 ================= -->
+  <rect x="536" y="334" width="326" height="230" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="552" y="358" fill="#e0645f" font-size="13" class="kr">어깨동맥그물 scapular anastomosis</text>
+  <text x="552" y="382" fill="#93a4b7" font-size="10.5">빗장밑동맥 ↔ 겨드랑동맥 우회로 — 겨드랑동맥</text>
+  <text x="552" y="396" fill="#93a4b7" font-size="10.5">근위를 묶어도 팔이 사는 이유</text>
+  <path d="M 556,412 L 556,470" stroke="#5a4040" stroke-width="1.6"/>
+  <path d="M 556,424 L 580,424" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="586" y="428" fill="#f0a09c" font-size="10.5">어깨위동맥 (갑상목동맥)</text>
+  <path d="M 556,448 L 580,448" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="586" y="452" fill="#f0a09c" font-size="10.5">등쪽어깨동맥</text>
+  <path d="M 556,470 L 580,470" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="586" y="474" fill="#e0645f" font-size="10.5" class="kr">↕ 어깨휘돌이동맥</text>
+  <text x="586" y="487" fill="#6f8299" font-size="9.5">(어깨밑동맥 가지 — 세모공간 통과)</text>
+
+  <text x="552" y="514" fill="#eab308" font-size="11" class="kr">임상</text>
+  <text x="552" y="530" fill="#93a4b7" font-size="10.5">위팔뼈 <tspan fill="#e6edf3">외과목 골절</tspan> → 겨드랑신경 손상 →</text>
+  <text x="552" y="544" fill="#93a4b7" font-size="10.5">어깨세모근 마비 + 어깨 가쪽 감각소실</text>
+
+  <!-- ================= 하단 요약 ================= -->
+  <rect x="18" y="580" width="844" height="100" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="34" y="604" fill="#e6edf3" font-size="12.5" font-weight="700">한 줄 정리 — 세 공간은 "위팔세갈래근 긴갈래를 어디서 만나느냐"로 갈린다</text>
+  <text x="34" y="628" fill="#c96b66" font-size="11" class="kr">네모공간</text>
+  <text x="118" y="628" fill="#93a4b7" font-size="11">긴갈래 <tspan fill="#e6edf3">가쪽</tspan> · 겨드랑신경 + 뒤위팔휘돌이동맥 · 외과목 골절에서 다치는 곳</text>
+  <text x="34" y="650" fill="#e3a765" font-size="11" class="kr">세모공간</text>
+  <text x="118" y="650" fill="#93a4b7" font-size="11">긴갈래 <tspan fill="#e6edf3">안쪽</tspan> · 어깨휘돌이동맥 하나 — 어깨동맥그물의 연결고리</text>
+  <text x="34" y="672" fill="#b49ae0" font-size="11" class="kr">세모간격</text>
+  <text x="118" y="672" fill="#93a4b7" font-size="11">큰원근 <tspan fill="#e6edf3">아래</tspan> · 노신경 + 깊은위팔동맥 — 노신경고랑으로 이어진다</text>
+</svg>
