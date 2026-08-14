@@ -201,6 +201,68 @@ window.MEDKOS_ANATOMY = {
  ],
  "concepts": [
   {
+   "id": "anatomy-2026-0029",
+   "title": "등 근육 3층과 지배신경 규칙",
+   "region": "back",
+   "subregion": "superficial-back",
+   "layer": "superficial",
+   "conceptStyle": "layer-order",
+   "relations": [
+    "covers",
+    "adjacent-to"
+   ],
+   "structureClasses": [
+    "muscle",
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-back-layers-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 등세모근·넓은등근·마름근"
+    }
+   ],
+   "body": "## 층 순서 — 얕은층 → 중간층 → 깊은층\n\n도해: `docs/assets/anatomy/diag-back-layers-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0027`)\n\n| 층 | 근육 | 지배신경 | 기능 축 |\n|---|---|---|---|\n| 얕은층 ① | 등세모근 trapezius | **더부신경(XI)** (+C3·4 고유감각) | 팔이음뼈 운동 |\n| 얕은층 ① | 넓은등근 latissimus dorsi | 가슴등신경 C6–8 | 어깨 폄·모음·안쪽돌림 |\n| 얕은층 ② | 어깨올림근·작은/큰마름근 | 등쪽어깨신경 C5 | 어깨뼈 올림·뒤당김 |\n| 중간층 | 위뒤톱니근 serratus post. superior | 갈비사이신경 | 갈비뼈 올림(들숨) |\n| 중간층 | 아래뒤톱니근 serratus post. inferior | 갈비사이신경 | 갈비뼈 내림(날숨) |\n| 깊은층 | 척주세움근(엉덩갈비-가장긴-가시) | **척수신경 뒤가지** | 척주 폄 |\n| 깊은층 | 가로돌기가시근육(반가시-뭇갈래-돌림) | **뒤가지** | 분절 돌림·안정화 |\n\n## 왜 이런 규칙인가 (외우지 말고 이해)\n\n얕은·중간층은 배아기에 **팔이음뼈·갈비 쪽에서 등으로 이주해 온** 근육이라 원래 살던\n동네의 신경(척수신경 **앞가지**)을 그대로 데리고 왔다. 깊은층만 처음부터 등에서\n만들어진 **고유등근육**이라 **뒤가지** 지배를 받는다. 그래서 태깅에서 신경을 물으면\n\"이 근육이 몇 층이냐\"를 먼저 판단하면 된다.\n\n예외는 **등세모근** 하나 — 얕은층이지만 운동지배가 더부신경(XI)이다(목빗근과 한 짝으로\n인두굽이 유래). C3·4는 고유감각만 보낸다.\n\n## 척주세움근 3기둥 — 가쪽에서 안쪽으로\n\n```\n가쪽 ──────────────────────────── 안쪽\n엉덩갈비근      가장긴근        가시근\niliocostalis    longissimus     spinalis\n(갈비뼈각)      (가로돌기·꼭지)  (가시돌기)\n```\n\n그 아래 더 깊은 층이 가로돌기가시근육: **반가시근**(4–6분절 건너뜀) → **뭇갈래근**\n(2–4분절, 허리에서 최대) → **돌림근**(1–2분절, 가슴에서 발달). 건너뛰는 분절 수가\n줄수록 깊다.\n\n## 임상 삼각 (도해에 노란 점선)\n\n- **청진삼각** triangle of auscultation — 등세모근 가쪽모서리 · 넓은등근 위모서리 ·\n  큰마름근(또는 어깨뼈 안쪽모서리). 근육이 얇아 허파 청진이 잘 된다.\n- **허리삼각(Petit)** lumbar triangle — 엉덩뼈능선 · 넓은등근 앞모서리 · 배바깥빗근\n  뒤모서리. 허리탈장 호발 부위."
+  },
+  {
+   "id": "anatomy-2026-0030",
+   "title": "큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지",
+   "region": "lower-limb",
+   "subregion": "gluteal",
+   "layer": "",
+   "conceptStyle": "branch-tree",
+   "relations": [
+    "passes-through",
+    "branches-from",
+    "adjacent-to"
+   ],
+   "structureClasses": [
+    "muscle",
+    "nerve",
+    "artery"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-gluteal-foramina-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 — 궁둥구멍근과 통과 구조물"
+    }
+   ],
+   "body": "## 기준은 궁둥구멍근 하나\n\n도해: `docs/assets/anatomy/diag-gluteal-foramina-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0028`)\n\n궁둥구멍근 piriformis 이 큰궁둥구멍을 가로지르며 위·아래로 나눈다. 볼기부위 문제는\n거의 전부 \"이 구조가 궁둥구멍근 위냐 아래냐\"로 환원된다.\n\n```\n큰궁둥구멍 greater sciatic foramen\n├─ 위구멍 suprapiriform  : 위볼기동맥 · 위볼기정맥 · 위볼기신경 ← 이 셋뿐\n└─ 아래구멍 infrapiriform : 아래볼기 동맥·정맥·신경\n                            궁둥신경 (가장 가쪽, 가장 굵다)\n                            뒤넙다리피부신경\n                            음부신경 + 속음부동맥\n                              └→ 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입\n```\n\n## 혈관 분지 — 어디서 갈라지나\n\n```\n속엉덩동맥 internal iliac a.\n├─ 뒤갈래 posterior division ─→ 위볼기동맥 superior gluteal a.\n└─ 앞갈래 anterior division  ─┬→ 아래볼기동맥 inferior gluteal a.\n                              └→ 속음부동맥 internal pudendal a.\n```\n\n외우는 법: **위는 뒤갈래, 아래·음부는 앞갈래.**\n\n## 신경 — 무엇을 지배하나\n\n| 신경 | 나오는 곳 | 지배 |\n|---|---|---|\n| 위볼기신경 superior gluteal n. | 위구멍 | 중간볼기근·작은볼기근·넙다리근막긴장근 |\n| 아래볼기신경 inferior gluteal n. | 아래구멍 | 큰볼기근 **단독** |\n| 궁둥신경 sciatic n. (L4–S3) | 아래구멍 | 햄스트링 → 다리오금에서 정강/온종아리신경 분지 |\n| 뒤넙다리피부신경 | 아래구멍 | 넓적다리 뒤 피부(감각) |\n| 음부신경 pudendal n. (S2–4) | 아래구멍 → 재진입 | 회음 |\n\n## 임상 — 태깅·구술 단골\n\n- **Trendelenburg 징후**: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서\n  **반대쪽** 골반이 처진다(보상 = 몸통을 환측으로 기울임).\n- **근육주사 안전구역**: 볼기 **위가쪽 1/4**(또는 von Hochstetter 부위) — 궁둥신경과\n  볼기신경을 피한다.\n- **궁둥신경 표면 표지**: 궁둥뼈결절과 큰돌기의 **중간점** 심부.\n- **변이**: 궁둥신경이 궁둥구멍근을 뚫고 지나는 변이가 흔하며, 궁둥구멍근증후군의\n  해부학적 근거가 된다."
+  },
+  {
    "id": "anatomy-2026-0001",
    "title": "속엉덩동맥 분지 트리",
    "region": "pelvis-perineum",
@@ -343,6 +405,38 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "body": "## 어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로)\n\n**돌림근띠(rotator cuff)** — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다:\n\n| 근육 | 관절주머니에서의 위치 |\n|---|---|\n| 어깨밑근 (subscapularis) | **앞** |\n| 가시위근 (supraspinatus) | 위 |\n| 가시아래근 (infraspinatus) | 뒤위 |\n| 작은원근 (teres minor) | 뒤아래 |\n\n보조 구조물:\n\n- **접시테두리(glenoid labrum)** — 접시오목의 깊이를 깊게 함\n- **접시위팔인대(glenohumeral ligament)** — 관절주머니 앞부분이 두꺼워진 띠.\n  겉보다 **관절주머니 속에서** 더 잘 보인다(위·중간·아래 구분)\n- **부리위팔인대(coracohumeral ligament)** — 부리돌기 가쪽모서리 → 위팔뼈 큰결절\n- **위팔두갈래근 긴갈래** — 위팔가로인대 깊은쪽 결절사이고랑을 지난다\n\n## 관계 문장(말로 설명하기)\n\n1. 어깨밑근은 관절주머니 **앞**을 덮고, 어깨밑근힘줄밑주머니는 관절주머니\n   섬유막구멍과 연결된다.\n2. 관절주머니 섬유막은 안쪽으로 접시오목 모서리, 가쪽으로 위팔뼈 **해부목**에 붙는다.\n3. 부리빗장인대(마름인대 가쪽 + 원뿔인대 안쪽)는 봉우리빗장관절을 간접 지지한다."
+  },
+  {
+   "id": "anatomy-2026-0032",
+   "title": "어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "layer": "",
+   "conceptStyle": "relation",
+   "relations": [
+    "passes-through",
+    "adjacent-to",
+    "branches-from"
+   ],
+   "structureClasses": [
+    "muscle",
+    "nerve",
+    "artery"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-scapular-spaces-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 3공간과 통과 구조물"
+    }
+   ],
+   "body": "## 기준은 위팔세갈래근 긴갈래 하나\n\n도해: `docs/assets/anatomy/diag-scapular-spaces-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0031`)\n\n위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을\n가르는 것은 **위팔세갈래근 긴갈래**라는 세로 기둥이다.\n\n```\n            작은원근 teres minor\n   ┌──────────────┬──────────────┐\n   │   세모공간    │   네모공간    │\n   │ (긴갈래 안쪽) │ (긴갈래 가쪽) │\n   └──────────────┴──────────────┘\n            큰원근 teres major\n        ┌──────────────┐\n        │   세모간격    │\n        └──────────────┘\n      ↑ 세로 기둥 = 위팔세갈래근 긴갈래\n```\n\n## 경계와 내용물\n\n| 공간 | 경계 | 내용물 |\n|---|---|---|\n| **네모공간** quadrangular space | 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 **위팔뼈 외과목** | **겨드랑신경** + 뒤위팔휘돌이동맥 |\n| **세모공간** triangular space | 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 | **어깨휘돌이동맥** |\n| **세모간격** triangular interval | 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 | **노신경** + 깊은위팔동맥 |\n\n외우는 법: 긴갈래 **가쪽 = 네모(신경)**, **안쪽 = 세모(동맥)**, 큰원근 **아래 = 세모간격**.\n\n## 어깨동맥그물 (scapular anastomosis)\n\n```\n빗장밑동맥 subclavian a.\n├─ 갑상목동맥 → 어깨위동맥 suprascapular a.\n└─ 등쪽어깨동맥 dorsal scapular a.\n        ↕  (문합)\n겨드랑동맥 → 어깨밑동맥 → 어깨휘돌이동맥 circumflex scapular a.  ← 세모공간 통과\n```\n\n겨드랑동맥 근위를 결찰해도 팔이 사는 이유. 어깨위신경·동맥과 위가로어깨인대의 관계는\n**\"Army over the bridge, Navy under\"** — 동맥은 인대 위, 신경은 어깨패임 속(인대 아래).\n\n## 임상\n\n- **위팔뼈 외과목 골절** → 네모공간의 **겨드랑신경** 손상 → 어깨세모근 마비 +\n  어깨 가쪽(견장 부위) 감각소실. 어깨 벌림 15–90°가 안 된다.\n- **노신경**은 세모간격을 지나 위팔뼈 뒤면의 노신경고랑으로 들어간다 → 위팔뼈 몸통\n  중간 골절에서 손목처짐(wrist drop).\n- 돌림근띠(SITS)는 가시위근·가시아래근·작은원근·어깨밑근 — **큰원근은 돌림근띠가 아니다**."
   }
  ],
  "questions": [
@@ -374,10 +468,10 @@ window.MEDKOS_ANATOMY = {
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
-   "stem": "등 얕은층 해부 사진에서 ▲ 포인터가 가리키며 번호핀 ①이 지시하는, 뒤통수뼈융기·목덜미인대·C7~T12 가시돌기에서 일어나는 얕은층 근육의 이름을 말하시오.",
+   "stem": "등 얕은층 해부 사진에서 ▲ 포인터가 가리키며 번호핀 ①이 지시하는, 뒤통수뼈융기·목덜미인대·C7–T12 가시돌기에서 일어나는 얕은층 근육의 이름을 말하시오.",
    "choices": null,
    "answer": "등세모근 (trapezius muscle)",
-   "explanation": "등세모근은 등 얕은층의 가장 표면 근육으로 위·중간·아래섬유로 나뉘며 빗장뼈 가쪽 1/3·봉우리(acromion)·어깨뼈가시에 닿는다. 원본 영상 라벨에서 답이 실측 확인됨. 이미지는 학생 필기(위/중간/아래, 목덜미인대, C1-T12, acromion, 세로 측정선, 파란 형광 윤곽 트레이스, 빨간 지시선, YYY)를 색 검출 + 주변 기반 inpainting으로 제거하고, 정답을 노출하는 영상 타이틀·라벨은 자연 패치로 가린 복원본이다.",
+   "explanation": "등세모근은 등 얕은층의 가장 표면 근육으로 위·중간·아래섬유로 나뉘며 빗장뼈 가쪽 1/3·봉우리(acromion)·어깨뼈가시에 닿는다. 원본 영상 라벨에서 답이 실측 확인됨. 이미지는 학생 필기(위/중간/아래, 목덜미인대, C1–T12, acromion, 세로 측정선, 파란 형광 윤곽 트레이스, 빨간 지시선, YYY)를 색 검출 + 주변 기반 inpainting으로 제거하고, 정답을 노출하는 영상 타이틀·라벨은 자연 패치로 가린 복원본이다.",
    "confidence": "high",
    "answerOnlyBacked": false,
    "image": null,
@@ -541,6 +635,72 @@ window.MEDKOS_ANATOMY = {
      "file": "3회차(0825) 허미선pf.pdf",
      "page": null,
      "section": "다리오금의 혈관 — 무릎동맥 5가지 (업로드 스캔 5183 p2)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0027",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "등 근육 3층 도해에서 번호핀 ①~⑦이 가리키는 근육의 이름(한·영)과 각각의 지배신경을 말하시오. 왼쪽 패널부터 얕은층 → 중간층 → 깊은층이다.",
+   "choices": null,
+   "answer": "① 등세모근 trapezius — 더부신경(XI) / ② 넓은등근 latissimus dorsi — 가슴등신경(C6–8) / ③ 위뒤톱니근 serratus posterior superior — 갈비사이신경 / ④ 아래뒤톱니근 serratus posterior inferior — 갈비사이신경 / ⑤ 엉덩갈비근 iliocostalis — 척수신경 뒤가지 / ⑥ 가장긴근 longissimus — 뒤가지 / ⑦ 가시근 spinalis — 뒤가지",
+   "explanation": "층을 먼저 판단하면 신경이 따라온다. 얕은·중간층은 배아기에 팔이음뼈·갈비 쪽에서 등으로 이주해 온 근육이라 척수신경 **앞가지**를 데리고 왔고(등세모근만 예외적으로 더부신경 XI 운동지배, C3·4는 고유감각), 깊은층 고유등근육만 처음부터 등에서 만들어져 **뒤가지** 지배를 받는다. ⑤⑥⑦은 척주세움근 3기둥으로 가쪽→안쪽 순서가 엉덩갈비-가장긴-가시다(엉·가·가로 외우기). 중간층 두 근육은 호흡 보조 — 위뒤톱니근이 갈비뼈를 올려 들숨, 아래뒤톱니근이 내려 날숨. 도해는 자체 제작(claude-drawn-svg)이라 공개 가능하며, 라벨판은 diag-back-layers-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-back-layers-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 등세모근·넓은등근·마름근"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0028",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 볼기를 뒤에서 본 도해에서 번호핀 ①~⑦의 이름(한·영)을 말하고, 각각 궁둥구멍근의 위구멍(suprapiriform)과 아래구멍(infrapiriform) 중 어디로 나오는지 답하시오.",
+   "choices": null,
+   "answer": "① 궁둥구멍근 piriformis (구멍을 위·아래로 나누는 기준) / ② 위볼기동맥 superior gluteal a. — 위구멍 / ③ 위볼기신경 superior gluteal n. — 위구멍 / ④ 아래볼기동맥 inferior gluteal a. — 아래구멍 / ⑤ 궁둥신경 sciatic n. — 아래구멍(가장 가쪽·가장 굵다) / ⑥ 뒤넙다리피부신경 posterior femoral cutaneous n. — 아래구멍 / ⑦ 음부신경 pudendal n. + 속음부동맥 internal pudendal a. — 아래구멍으로 나왔다가 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입",
+   "explanation": "외우는 핵심은 '위구멍으로는 위볼기 동맥·정맥·신경 셋만 나오고 나머지는 전부 아래구멍'이다. 혈관 계보는 둘 다 속엉덩동맥 가지지만 위볼기동맥은 **뒤갈래**, 아래볼기동맥·속음부동맥은 **앞갈래**에서 나온다. 임상: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서 **반대쪽** 골반이 처지는 Trendelenburg 징후, 그래서 근육주사는 볼기 위가쪽 1/4에 놓아 궁둥신경을 피한다. 궁둥신경 표면 표지는 궁둥뼈결절과 큰돌기의 중간점이며, 궁둥구멍근을 뚫고 지나는 변이가 흔해 궁둥구멍근증후군의 해부 근거가 된다. 도해는 자체 제작(claude-drawn-svg), 라벨판은 diag-gluteal-foramina-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-gluteal-foramina-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 — 궁둥구멍근과 통과 구조물"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0031",
+   "style": "spotter",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 어깨를 뒤에서 본 도해에서 ①~③은 공간의 경계를 이루는 근육, ④·⑥·⑦은 공간의 이름과 그 통과 구조물, ⑤는 지나가는 신경이다. 각각을 한·영으로 답하시오.",
+   "choices": null,
+   "answer": "① 작은원근 teres minor (세 공간의 공통 위 경계) / ② 큰원근 teres major (공통 아래 경계) / ③ 위팔세갈래근 긴갈래 long head of triceps (공간을 가르는 세로 기둥) / ④ 네모공간 quadrangular space — 겨드랑신경 + 뒤위팔휘돌이동맥 / ⑤ 겨드랑신경 axillary n. / ⑥ 세모공간 triangular space — 어깨휘돌이동맥 / ⑦ 세모간격 triangular interval — 노신경 + 깊은위팔동맥",
+   "explanation": "세 공간은 '위팔세갈래근 긴갈래를 어디서 만나느냐'로 갈린다. 긴갈래 **가쪽**이 네모공간(가쪽 경계는 위팔뼈 외과목), **안쪽**이 세모공간, 큰원근 **아래**가 세모간격이다. 내용물은 네모=신경(겨드랑신경)+뒤위팔휘돌이동맥, 세모=동맥 하나(어깨휘돌이동맥), 세모간격=노신경+깊은위팔동맥으로 외운다. 임상 연결: 위팔뼈 **외과목 골절**은 네모공간을 지나는 겨드랑신경을 다치게 해 어깨세모근 마비 + 어깨 가쪽 감각소실을 만든다. 어깨휘돌이동맥은 어깨동맥그물(빗장밑동맥 ↔ 겨드랑동맥 우회로)의 연결고리라 겨드랑동맥 근위 결찰 시 측부순환이 된다. 라벨판은 diag-scapular-spaces-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-scapular-spaces-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 3공간과 통과 구조물"
     }
    ]
   },

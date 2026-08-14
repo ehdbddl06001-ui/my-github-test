@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="큰궁둥구멍 통과 구조물 — 궁둥구멍근을 기준으로 위구멍·아래구멍을 나눈 자체 제작 도해와 속엉덩동맥 분지 트리">
+  <!-- 자체 제작 도해(claude-drawn). 오른쪽 볼기부위를 뒤에서 본 구도(큰볼기근 젖힘).
+       근거: 2회차(0818) 실습영상 §볼기부위 + tagging 2차 [볼기 신경·혈관].
+       핵심: 궁둥구멍근이 큰궁둥구멍을 위·아래로 나눈다 → 위구멍엔 위볼기 A/V/N만,
+       나머지는 전부 아래구멍. 음부신경·속음부동맥은 작은궁둥구멍으로 되돌아 들어간다. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">큰궁둥구멍 통과 구조물 — 궁둥구멍근 기준
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">greater sciatic foramen — supra/infrapiriform</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과서식 구도) · 근거: 2회차 실습영상 §볼기부위 · 오른쪽 볼기를 뒤에서 본 모습(큰볼기근 젖힘)</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">★ = tagging 답 후보 · 신경 <tspan fill="#9cc3ff">파랑</tspan> / 동맥 <tspan fill="#e0645f">빨강</tspan></text>
+
+  <!-- ================= 뼈 ================= -->
+  <!-- 엉치뼈 -->
+  <path d="M 150,120 C 128,180 124,250 138,318 C 146,362 160,396 178,424 L 232,424
+           C 214,388 202,340 200,280 C 198,214 210,160 226,120 Z"
+        fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="150" y="104" fill="#8fa3b8" font-size="12" class="kr">엉치뼈 sacrum</text>
+  <!-- 엉덩뼈 (날개) -->
+  <path d="M 226,120 C 300,104 396,116 452,152 C 486,174 496,214 486,252
+           C 476,290 444,312 404,316 L 236,300 C 214,240 216,170 226,120 Z"
+        fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <text x="330" y="160" fill="#8fa3b8" font-size="12" class="kr">엉덩뼈 ilium</text>
+  <text x="330" y="174" fill="#5d6f83" font-size="10">엉덩뼈능선 iliac crest ↑</text>
+  <!-- 궁둥뼈가시 + 엉치가시인대 -->
+  <path d="M 236,392 L 214,404 L 238,414 Z" fill="#2c4054" stroke="#5b7690" stroke-width="1.6"/>
+  <text x="34" y="372" fill="#eab308" font-size="11" class="kr">궁둥뼈가시</text>
+  <text x="34" y="385" fill="#b7962e" font-size="9">ischial spine</text>
+  <path d="M 104,378 L 214,404" stroke="#8b7a2e" stroke-width="1"/>
+  <path d="M 236,404 C 214,420 196,428 178,430" fill="none" stroke="#4a6076" stroke-width="5"/>
+  <!-- 궁둥뼈결절 -->
+  <ellipse cx="268" cy="500" rx="46" ry="30" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <text x="222" y="546" fill="#8fa3b8" font-size="11" class="kr">궁둥뼈결절</text>
+  <text x="222" y="559" fill="#5d6f83" font-size="9">ischial tuberosity</text>
+  <!-- 넙다리뼈 큰돌기 -->
+  <path d="M 470,392 C 500,382 528,392 536,416 C 544,442 528,466 500,470 L 470,462 Z"
+        fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <text x="498" y="434" fill="#8fa3b8" font-size="10.5" class="kr">큰돌기</text>
+  <text x="498" y="446" fill="#5d6f83" font-size="8.5">greater trochanter</text>
+
+  <!-- ================= 궁둥구멍근 ================= -->
+  <path d="M 208,304 C 280,296 380,330 470,398 L 452,428 C 366,368 274,338 202,344 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="2"/>
+  <text x="222" y="330" fill="#cfe4f7" font-size="12.5" class="kr" transform="rotate(19 222 330)">궁둥구멍근 piriformis ★</text>
+  <text x="222" y="343" fill="#8fb6d8" font-size="9" transform="rotate(19 222 343)">볼기부위의 기준 landmark</text>
+
+  <!-- 위구멍 / 아래구멍 영역 표시 -->
+  <path d="M 214,282 C 286,272 372,300 452,354" fill="none" stroke="#4e9070" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="300" y="286" fill="#79c9a2" font-size="11" class="kr">위구멍 suprapiriform</text>
+  <path d="M 206,364 C 270,362 350,392 430,444" fill="none" stroke="#e3a765" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="34" y="336" fill="#e3a765" font-size="11" class="kr">아래구멍 infrapiriform</text>
+  <path d="M 148,332 L 210,362" stroke="#8b6a2e" stroke-width="1"/>
+
+  <!-- ================= 위구멍 통과: 위볼기 A/N ================= -->
+  <path d="M 224,300 C 300,292 366,308 424,336" fill="none" stroke="#e0645f" stroke-width="3.4"/>
+  <path d="M 224,312 C 300,304 364,320 420,346" fill="none" stroke="#9cc3ff" stroke-width="3"/>
+  <text x="436" y="322" fill="#e0645f" font-size="11.5" class="kr">위볼기동맥 ★</text>
+  <text x="436" y="335" fill="#c98a86" font-size="9">superior gluteal a.</text>
+  <text x="436" y="352" fill="#9cc3ff" font-size="11.5" class="kr">위볼기신경 ★</text>
+  <text x="436" y="365" fill="#7f9cc4" font-size="9">superior gluteal n.</text>
+
+  <!-- ================= 아래구멍 통과 ================= -->
+  <!-- 아래볼기 A/N -->
+  <path d="M 218,352 C 276,356 332,378 384,412" fill="none" stroke="#e0645f" stroke-width="3.2"/>
+  <path d="M 218,364 C 276,368 330,390 380,424" fill="none" stroke="#9cc3ff" stroke-width="2.8"/>
+  <!-- 궁둥신경 (가장 굵고 가장 가쪽) -->
+  <path d="M 226,382 C 292,394 340,430 366,492 C 384,534 390,566 392,596"
+        fill="none" stroke="#6fa8e8" stroke-width="7" stroke-linecap="round"/>
+  <!-- 뒤넙다리피부신경 -->
+  <path d="M 222,394 C 280,412 320,452 336,506 C 346,542 348,572 348,596"
+        fill="none" stroke="#9cc3ff" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <!-- 음부신경 + 속음부동맥 : 아래구멍 → 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입 -->
+  <path d="M 214,372 C 226,392 226,414 210,428 C 196,440 182,442 170,438"
+        fill="none" stroke="#e0645f" stroke-width="2.6"/>
+  <path d="M 210,382 C 220,398 220,416 206,428 C 194,438 182,440 172,436"
+        fill="none" stroke="#c9a5f0" stroke-width="2.4"/>
+
+  <text x="396" y="404" fill="#e0645f" font-size="11.5" class="kr">아래볼기동맥</text>
+  <text x="396" y="417" fill="#c98a86" font-size="9">inferior gluteal a.</text>
+  <text x="396" y="434" fill="#9cc3ff" font-size="11.5" class="kr">아래볼기신경 ★</text>
+  <text x="396" y="447" fill="#7f9cc4" font-size="9">inferior gluteal n.</text>
+
+  <text x="404" y="516" fill="#6fa8e8" font-size="13" class="kr">궁둥신경 ★</text>
+  <text x="404" y="530" fill="#7f9cc4" font-size="9.5">sciatic n. (L4–S3) · 가장 가쪽·가장 굵다</text>
+  <path d="M 400,512 L 372,500" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="300" y="596" fill="#9cc3ff" font-size="11" class="kr">뒤넙다리피부신경</text>
+  <text x="300" y="609" fill="#7f9cc4" font-size="9">posterior femoral cutaneous n.</text>
+
+  <text x="34" y="404" fill="#c9a5f0" font-size="11.5" class="kr">음부신경</text>
+  <text x="34" y="417" fill="#a186c4" font-size="9">pudendal n.</text>
+  <text x="34" y="430" fill="#e0645f" font-size="11.5" class="kr">속음부동맥</text>
+  <text x="34" y="443" fill="#c98a86" font-size="9">internal pudendal a.</text>
+  <path d="M 106,420 L 168,434" stroke="#4a5b6e" stroke-width="1"/>
+  <text x="34" y="464" fill="#8fa3b8" font-size="9.5">→ 작은궁둥구멍으로 재진입</text>
+  <text x="34" y="476" fill="#5d6f83" font-size="9">(궁둥뼈가시 뒤를 감아 돈다)</text>
+
+  <!-- 표면 표지: 궁둥신경 위치 -->
+  <line x1="268" y1="500" x2="500" y2="440" stroke="#eab308" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <circle cx="384" cy="470" r="6" fill="none" stroke="#eab308" stroke-width="1.6"/>
+  <text x="470" y="492" fill="#eab308" font-size="10" class="kr">궁둥뼈결절–큰돌기 중간점</text>
+  <text x="470" y="504" fill="#b7962e" font-size="9">= 궁둥신경 표면 표지</text>
+  <path d="M 466,486 L 392,472" stroke="#8b7a2e" stroke-width="1"/>
+
+  <!-- ================= 오른쪽: 속엉덩동맥 분지 트리 ================= -->
+  <rect x="596" y="96" width="266" height="252" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="612" y="120" fill="#e0645f" font-size="13" class="kr">혈관 분지 — 어디서 나오나</text>
+  <text x="612" y="146" fill="#e6edf3" font-size="11.5" class="kr">속엉덩동맥 internal iliac a.</text>
+  <path d="M 620,154 L 620,300" stroke="#5a4040" stroke-width="1.6"/>
+  <path d="M 620,178 L 646,178" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="652" y="182" fill="#f0a09c" font-size="11" class="kr">뒤갈래 posterior</text>
+  <path d="M 640,186 L 640,206 L 664,206" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="670" y="210" fill="#e0645f" font-size="11" class="kr">위볼기동맥 ★</text>
+  <path d="M 620,240 L 646,240" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="652" y="244" fill="#f0a09c" font-size="11" class="kr">앞갈래 anterior</text>
+  <path d="M 640,248 L 640,268 L 664,268" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="670" y="272" fill="#e0645f" font-size="11" class="kr">아래볼기동맥</text>
+  <path d="M 640,276 L 640,296 L 664,296" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="670" y="300" fill="#e0645f" font-size="11" class="kr">속음부동맥</text>
+  <text x="612" y="326" fill="#93a4b7" font-size="10">위=뒤갈래 / 아래·음부=앞갈래 로 외운다</text>
+
+  <!-- ================= 오른쪽 아래: 임상 ================= -->
+  <rect x="596" y="364" width="266" height="196" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="612" y="388" fill="#eab308" font-size="13" class="kr">임상 — 태깅·구술 단골</text>
+  <text x="612" y="412" fill="#e6edf3" font-size="11" class="kr">Trendelenburg 징후</text>
+  <text x="612" y="428" fill="#93a4b7" font-size="10">위볼기신경 손상 → 중간·작은볼기근 마비</text>
+  <text x="612" y="443" fill="#93a4b7" font-size="10">→ 한발 서기에서 <tspan fill="#eab308" class="kr">반대쪽</tspan> 골반이 처짐</text>
+  <text x="612" y="470" fill="#e6edf3" font-size="11" class="kr">근육주사 안전구역</text>
+  <text x="612" y="486" fill="#93a4b7" font-size="10">볼기 <tspan fill="#eab308">위가쪽 1/4</tspan> — 궁둥신경 회피</text>
+  <text x="612" y="512" fill="#e6edf3" font-size="11" class="kr">변이</text>
+  <text x="612" y="528" fill="#93a4b7" font-size="10">궁둥신경이 궁둥구멍근을 <tspan fill="#eab308">뚫는</tspan> 변이 흔함</text>
+  <text x="612" y="543" fill="#93a4b7" font-size="10">(궁둥구멍근증후군의 해부 근거)</text>
+
+  <!-- ================= 하단 요약 ================= -->
+  <rect x="18" y="628" width="844" height="54" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="34" y="650" fill="#79c9a2" font-size="11.5" class="kr">위구멍</text>
+  <text x="92" y="650" fill="#93a4b7" font-size="11">위볼기동맥·정맥·신경 <tspan fill="#6f8299">— 이 셋만</tspan></text>
+  <text x="34" y="672" fill="#e3a765" font-size="11.5" class="kr">아래구멍</text>
+  <text x="92" y="672" fill="#93a4b7" font-size="11">아래볼기 A·V·N · <tspan fill="#6fa8e8">궁둥신경(가장 가쪽)</tspan> · 뒤넙다리피부신경 · 음부신경 + 속음부동맥</text>
+  <text x="612" y="650" fill="#6f8299" font-size="10.5">외우는 법: "위는 위볼기 셋뿐,</text>
+  <text x="612" y="668" fill="#6f8299" font-size="10.5">나머지는 전부 아래로 나온다"</text>
+</svg>
