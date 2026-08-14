@@ -10,7 +10,7 @@ kicker: "MedKOS · 임상해부학술기 3Q · 3회차(2026-08-24)"
 layout: split
 cover_lines:
   - "범위  뒤통수밑삼각 / 어깨뼈부위 3공간 / 다리오금 / 종아리 뒤칸"
-  - "구성  ① 근육표 ② 혈관표 ③ 신경표 ④ 공간·삼각 ⑤ 실사 태깅 10문항 ⑥ 정답·해설"
+  - "구성  ① 근육표 ② 혈관표 ③ 신경표 ④ 공간·삼각 ⑤ 실사 태깅 15문항 ⑥ 정답·해설"
   - "근거  3회차(0825) 허미선pf 실습영상 + 3회차 종합정리(0022) + tagging 2차"
   - "도해  diag-suboccipital · diag-scapular-spaces · diag-popliteal-fossa(라벨판·퀴즈판) + 실사 복원본"
 date: 2026-08-14
@@ -27,13 +27,18 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0019.md", quiz_image: ".private/anatomy/render/uploads-s03/q0150_p3_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q0150_p3_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0020.md", quiz_image: ".private/anatomy/render/uploads-s03/q0150_p9_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q0150_p9_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0026.md", quiz_image: ".private/anatomy/render/uploads-b2/q0150_p11_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/q0150_p11_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0048.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p12_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p12_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0017.md", quiz_image: ".private/anatomy/render/uploads-s03/q5183_p1_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q5183_p1_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0025.md", quiz_image: ".private/anatomy/render/uploads-b2/q5183_p2_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/q5183_p2_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0018.md", quiz_image: ".private/anatomy/render/uploads-s03/q5183_p8_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q5183_p8_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0035.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p35_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p35_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0049.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p38_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p38_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0050.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p41_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p41_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0038.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p47_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p47_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0036.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p25_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p25_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0037.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p32_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p32_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0051.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p10_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0052.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p13_clean.png"}
 source_refs:
   - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf", page: null, section: "뒤통수밑삼각·어깨뼈부위·다리오금 실습영상"}
 tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
@@ -177,3 +182,9 @@ tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
 - 무릎동맥 5가지 중 관절주머니를 뚫는 것은?
 - 종아리뼈목을 감아도는 신경과 그 손상 증상은?
 - 안쪽복사 뒤 통과 순서를 앞에서부터 대시오.
+- 어깨뼈패임에서 인대 위로 지나는 것과 아래로 지나는 것은 각각 무엇인가?
+- 뒤통수밑삼각의 바닥과 내용물을 각각 대시오.
+- 안쪽장딴지피부신경과 무엇이 합쳐져 장딴지신경이 되는가? 임상적으로 왜 중요한가?
+
+> [!TIP] 함께 볼 자료 :: 도해 `diag-suboccipital-labeled.svg` · `diag-scapular-spaces-labeled/quiz.svg`(문항 0031)
+· `diag-popliteal-fossa-labeled/quiz.svg`(문항 **0047** — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다.

@@ -991,6 +991,116 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0048",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "suboccipital-triangle",
+   "examPhase": "tagging-1",
+   "stem": "뒤통수밑삼각을 노출한 해부 사진에서, 삼각의 바닥에서 포셉이 들어올리고 있으며 번호핀 ①(▲)이 가리키는 혈관의 이름을 말하시오.",
+   "choices": null,
+   "answer": "척추동맥 (vertebral artery)",
+   "explanation": "뒤통수밑삼각의 바닥은 뒤통수뒤통수막(posterior atlanto-occipital membrane)과 고리뼈 뒤활이며, 그 위 고리뼈 가로돌기구멍을 나온 척추동맥이 뒤활 위면의 척추동맥고랑을 따라 안쪽으로 달리다가 큰구멍으로 들어간다. 삼각의 내용물은 이 척추동맥 3부분과 뒤통수밑신경(C1 뒤가지)이다. 척추동맥은 빗장밑동맥 첫부분에서 나와 C6–C1 가로돌기구멍을 올라온 뒤 여기서 급격히 꺾이는데, 이 굴곡부가 목 과신전·급격한 회전(도수치료·미용실 세면대)에서 박리를 일으켜 뒷순환 뇌졸중의 원인이 된다. 큰뒤통수신경(C2 뒤가지)은 삼각을 덮고 지나갈 뿐 내용물이 아니다. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "뒤통수밑삼각 — 삼각 바닥의 혈관 (업로드 스캔 0150 p12)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0049",
+   "style": "spotter",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "가시위근을 젖혀 어깨뼈패임을 노출한 해부 사진에서, 패임을 가로질러 구멍으로 바꿔 놓으며 번호핀 ①(▲)이 가리키는 구조물의 이름을 말하시오.",
+   "choices": null,
+   "answer": "위가로어깨인대 (superior transverse scapular ligament)",
+   "explanation": "어깨뼈패임(scapular notch)은 위가로어깨인대가 덮으면서 하나의 구멍이 되고, 이 지점이 태깅 단골이다. 통과 규칙은 ==신경은 인대 아래, 동맥은 인대 위==(army over, navy under — artery over, nerve under) — 즉 어깨위신경(C5–6)은 인대 밑 구멍으로, 어깨위동맥은 인대 위로 지나간다. 그래서 인대가 골화되거나 패임이 좁으면 어깨위신경만 눌려 가시위근·가시아래근 위축과 어깨 뒤 깊은 통증이 생긴다(suprascapular nerve entrapment). 신경은 이어서 가시오목패임(spinoglenoid notch)을 돌아 가시아래근으로 가므로, 그 지점이 막히면 가시아래근만 단독 위축된다(배구·야구 선수). 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 가시위근을 젖힌 어깨뼈패임 (업로드 스캔 0150 p38)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0050",
+   "style": "spotter",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "가시위근을 젖힌 어깨뼈패임 부위 해부 사진에서, 위가로어깨인대의 위쪽으로 지나가며 번호핀 ①(▲)이 가리키는 혈관의 이름을 말하시오.",
+   "choices": null,
+   "answer": "어깨위동맥 (suprascapular artery)",
+   "explanation": "어깨위동맥은 빗장밑동맥의 갑상목동맥(thyrocervical trunk) 가지로, 어깨뼈패임에 이르면 ==위가로어깨인대의 위로== 넘어간다(같은 이름의 어깨위신경은 인대 아래 구멍으로 통과 — 동맥은 위, 신경은 아래). 이후 가시위오목·가시아래오목으로 이어져 어깨휘돌이동맥·등쪽어깨동맥과 문합해 어깨동맥그물(scapular anastomosis)을 이룬다. 이 그물 덕분에 겨드랑동맥 근위를 결찰해도 팔로 가는 곁순환이 유지된다. 동반 정맥은 대개 바깥목정맥으로 흘러 동맥과 경로가 갈린다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 어깨뼈패임 위를 지나는 혈관 (업로드 스캔 0150 p41)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0051",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "posterior-leg",
+   "examPhase": "tagging-1",
+   "stem": "종아리 뒤칸의 피부신경을 노출한 해부 사진에서, 장딴지근 두 갈래 사이 고랑을 따라 내려오며 번호핀 ①(▲)이 가리키는 — 정강신경에서 갈라져 나온 — 피부신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "안쪽장딴지피부신경 (medial sural cutaneous nerve)",
+   "explanation": "정강신경은 오금에서 안쪽장딴지피부신경을 내어 장딴지근 두 갈래 사이 고랑을 따라 내려온다. 종아리 중간쯤에서 온종아리신경이 낸 ==장딴지신경교통가지(가쪽장딴지피부신경 계열)==와 합쳐져 **장딴지신경(sural nerve)** 이 되고, 이것이 가쪽복사 뒤를 지나 발 가쪽모서리·새끼발가락 가쪽 피부를 담당한다(가쪽발등피부신경으로 이어짐). 표재성이고 운동섬유가 없어 **신경 생검·신경 이식의 표준 공여신경**이며, 발목 부위에서 sural nerve block의 표적이다. 정강신경(운동)·온종아리신경(운동+감각)과 달리 순수 감각신경임에 주의. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "종아리 뒤칸 — 피부신경 (업로드 스캔 5183 p10)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0052",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "posterior-leg",
+   "examPhase": "tagging-1",
+   "stem": "종아리 뒤칸의 얕은층을 노출한 해부 사진에서, 손가락이 짚고 있으며 번호핀 ①이 가리키는 — 넙다리뼈 두 관절융기에서 두 갈래로 일어나 발꿈치힘줄로 이어지는 — 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "장딴지근 (gastrocnemius muscle)",
+   "explanation": "장딴지근은 종아리 뒤칸 얕은층의 가장 표면 근육으로, 안쪽갈래는 넙다리뼈 안쪽관절융기 위, 가쪽갈래는 가쪽관절융기에서 일어나 아래에서 합쳐지고 가자미근과 함께 발꿈치힘줄(아킬레스힘줄)을 만들어 발꿈치뼈융기에 닿는다. ==무릎관절 위에서 일어나므로 발바닥굽힘뿐 아니라 무릎굽힘에도 관여==하는 두관절근육이며, 그래서 무릎을 편 상태에서 발등굽힘이 제한된다(무릎을 굽히면 풀린다 — Silfverskiöld 검사의 원리). 무릎 아래에서 일어나는 가자미근은 무릎 자세와 무관하게 작용하고 '제2의 심장'이라 불리는 정맥펌프 역할을 한다. 두 근육 모두 정강신경 지배. 원본 영상 자막 실측 확인(자막: 현재 보이는 근육이 장딴지근입니다). 이미지는 필기를 제거한 복원본이며 정답 자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "종아리 뒤칸 — 얕은층 근육 (업로드 스캔 5183 p13)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",
