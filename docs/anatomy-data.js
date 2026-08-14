@@ -1101,6 +1101,160 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0053",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "볼기 부위의 얕은근막을 벗겨 피부신경을 노출한 해부 사진에서, 엉덩뼈능선을 넘어 볼기 위쪽으로 내려오며 번호핀 ①(▲)이 가리키는 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "위볼기피부신경 (superior cluneal nerves)",
+   "explanation": "위볼기피부신경은 L1–L3 척수신경 **뒤가지의 가쪽가지**가 모여 만들어지며, 엉덩뼈능선을 타고 넘어 볼기 위쪽 피부를 담당한다. 뒤가지 유래이므로 얼기를 만들지 않고 분절 배열이 유지된다. 엉덩뼈능선에서 뼈를 채취(bone graft)하거나 그 부위를 절개할 때 이 신경이 잘려 만성 볼기 통증이 생기는 것이 임상 포인트. 같은 화면의 중간볼기피부신경(S1–S3 뒤가지)·아래볼기피부신경(뒤넙다리피부신경 가지 = 앞가지 계열)과 **유래가 다르다는 점**이 태깅의 핵심이다. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "다리 뒤쪽 피부신경 — 엉덩뼈능선을 넘는 가지 (업로드 스캔 pf1 p44 · 영상 12:18)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0054",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "볼기 부위 피부신경 해부 사진에서, 엉치뼈 뒤면의 구멍에서 나와 가쪽으로 퍼지며 번호핀 ①(▲)이 가리키는 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "중간볼기피부신경 (middle cluneal nerves)",
+   "explanation": "중간볼기피부신경은 S1–S3 척수신경 **뒤가지**가 뒤엉치구멍(posterior sacral foramina)으로 나와 엉치엉덩관절 위쪽 볼기 피부를 담당한다. 세 볼기피부신경 중 가운데 높이에서 나오므로 '나오는 높이'로 구분한다 — 위(엉덩뼈능선) · 중간(엉치뼈 뒤면) · 아래(큰볼기근 아래모서리). 위·중간은 뒤가지 유래라 얼기를 만들지 않지만, 아래볼기피부신경만 뒤넙다리피부신경(앞가지·엉치신경얼기)의 가지다. 엉치엉덩관절 부위 통증의 감별에서 이 신경의 분포가 근거가 된다. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "다리 뒤쪽 피부신경 — 뒤엉치구멍에서 나오는 가지 (업로드 스캔 pf1 p45 · 영상 12:23)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0055",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "볼기 부위 피부신경 해부 사진에서, 큰볼기근 아래모서리를 감아 볼기 아래쪽 피부로 올라가며 번호핀 ①(▲)이 가리키는 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "아래볼기피부신경 (inferior cluneal nerves)",
+   "explanation": "아래볼기피부신경은 이름만 볼기피부신경 3형제에 속할 뿐, 유래가 다르다 — **뒤넙다리피부신경(S1–S3 앞가지)의 가지**로, 큰볼기근 아래모서리를 감아 올라가 볼기 아래쪽 피부를 담당한다. 위·중간볼기피부신경이 척수신경 **뒤가지** 유래인 것과 대비되는 이 한 가지가 태깅·구술의 단골 함정이다. 뒤넙다리피부신경 자체는 궁둥구멍근 아래구멍으로 골반을 나오므로, 아래볼기피부신경도 결국 엉치신경얼기 계열이다. 앉을 때 닿는 볼기 아래 피부 감각이 이 신경의 영역이다. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "다리 뒤쪽 피부신경 — 큰볼기근 아래모서리를 감아 올라가는 가지 (업로드 스캔 pf1 p46 · 영상 12:27)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0056",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "posterior-thigh",
+   "examPhase": "tagging-1",
+   "stem": "넓적다리 뒤쪽의 얕은근막을 벗긴 해부 사진에서, 깊은근막을 뚫고 나와 넓적다리 뒤 피부로 퍼지며 번호핀 ①(▲)이 가리키는 신경 가지의 이름을 말하시오.",
+   "choices": null,
+   "answer": "뒤넙다리피부신경의 관통가지 (perforating branches of the posterior cutaneous nerve of thigh)",
+   "explanation": "뒤넙다리피부신경(S1–S3 앞가지)은 궁둥구멍근 아래구멍으로 골반을 나와 큰볼기근 깊은면을 지난 뒤 넓적다리 뒤 정중선을 따라 내려가면서, 깊은근막을 뚫고 나오는 여러 **관통가지**로 넓적다리 뒤 피부를 담당한다. 위쪽으로는 아래볼기피부신경, 안쪽으로는 회음가지를 낸다. 순수 감각신경이라 손상되어도 근력 저하는 없고 넓적다리 뒤 감각소실만 생긴다. 같은 넓적다리 뒤칸을 지나는 궁둥신경(운동+감각, 깊은층)과는 층이 다르다 — 피부신경은 **얕은근막** 안에 있고 궁둥신경은 깊은근막 아래에 있다는 것이 피부벗기기 실습의 요점. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "다리 뒤쪽 피부신경 — 넓적다리 뒤 피부로 나오는 가지 (업로드 스캔 pf1 p47 · 영상 12:45)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0057",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "posterior-leg",
+   "examPhase": "tagging-1",
+   "stem": "종아리 뒤쪽의 얕은근막에서, 작은두렁정맥과 나란히 가쪽복사 쪽으로 내려가며 번호핀 ①(▲)이 가리키는 굵은 피부신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "장딴지신경 (sural nerve)",
+   "explanation": "장딴지신경은 정강신경이 낸 **안쪽장딴지피부신경**과 온종아리신경이 낸 **장딴지신경교통가지**가 종아리 중간쯤에서 합쳐져 만들어진다. 작은두렁정맥과 나란히 내려가 가쪽복사 뒤를 지나 발 가쪽모서리·새끼발가락 가쪽 피부를 담당한다(가쪽발등피부신경으로 이어짐). 운동섬유가 없는 순수 감각신경이고 표재성이라 **신경 생검·신경 이식의 표준 공여신경**이며, 발목 부위 sural nerve block의 표적이다. 종아리 뒤쪽에서 얕은근막을 벗길 때 가장 먼저 눈에 띄는 굵은 흰 줄이 이것이다. 원본 영상 라벨·자막 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·자막·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "다리 뒤쪽 피부신경 — 종아리 뒤의 굵은 피부신경 (업로드 스캔 pf1 p48 · 영상 13:03)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0058",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "posterior-lower-limb",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 다리를 뒤에서 본 도해에서 ①~③은 볼기의 피부신경 3형제(위에서 아래로), ④⑤는 넓적다리 뒤, ⑥⑦⑧은 종아리 뒤의 피부신경이다. 각각을 한·영으로 답하고, 이어서 (가) ①~③ 중 앞가지에서 온 것 (나) ⑧을 이루는 두 신경 (다) ⑧이 공여신경으로 쓰이는 이유 (라) 넓적다리·종아리 안쪽 피부를 담당하는 신경을 답하시오.",
+   "choices": null,
+   "answer": "① 위볼기피부신경 superior cluneal nn. (L1–L3 뒤가지) / ② 중간볼기피부신경 middle cluneal nn. (S1–S3 뒤가지) / ③ 아래볼기피부신경 inferior cluneal nn. / ④ 뒤넙다리피부신경 posterior cutaneous n. of thigh (S1–S3 앞가지) / ⑤ 관통가지 perforating branches / ⑥ 안쪽장딴지피부신경 medial sural cutaneous n. / ⑦ 장딴지신경교통가지 sural communicating br. / ⑧ 장딴지신경 sural n. — (가) ③ 아래볼기피부신경(뒤넙다리피부신경의 가지), 나머지 둘은 척수신경 뒤가지 / (나) 안쪽장딴지피부신경(정강신경) + 장딴지신경교통가지(온종아리신경) / (다) 운동섬유가 없는 순수 감각신경이라 절제해도 근력 손실이 없고 표재성이라 채취가 쉽다 / (라) 두렁신경 saphenous n. (넙다리신경의 가지)",
+   "explanation": "볼기피부신경 3형제는 **나오는 높이**로 가른다 — 위(엉덩뼈능선을 넘음) · 중간(뒤엉치구멍) · 아래(큰볼기근 아래모서리). 그런데 유래는 2:1로 갈린다: 위·중간은 척수신경 **뒤가지**(각각 L1–L3, S1–S3)라 얼기를 만들지 않고 분절 배열을 지키는 반면, 아래볼기피부신경만 뒤넙다리피부신경(S1–S3 **앞가지**·엉치신경얼기)의 가지다. 이 한 가지가 구술·태깅의 단골 함정이다. 뒤넙다리피부신경은 궁둥구멍근 아래구멍으로 골반을 나와 넓적다리 뒤 정중선을 따라 내려가며 관통가지로 피부에 분포하고, 위로는 아래볼기피부신경, 안쪽으로는 회음가지를 낸다. 종아리에서는 정강신경의 안쪽장딴지피부신경과 온종아리신경의 교통가지가 합쳐져 장딴지신경이 되고, 작은두렁정맥과 나란히 가쪽복사 뒤를 지나 발 가쪽으로 간다. 넓적다리·종아리 **안쪽** 피부는 뒤칸 신경이 아니라 넙다리신경의 두렁신경 담당임에 주의. 라벨판은 diag-posterior-cutaneous-nerves-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-posterior-cutaneous-nerves-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "다리 뒤쪽 피부신경 실습영상(1회차 배정 구간) — 도해 근거"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0059",
+   "style": "layer-order",
+   "region": "back",
+   "subregion": "back-general",
+   "examPhase": "tagging-1",
+   "stem": "등뼈 높이 가로단면 도해(등이 위쪽)에서 ①~⑤는 피부에서 안쪽으로 지나는 층, ⑥⑦은 척수신경이 갈라지는 두 가지, ⑧은 감각신경세포체가 모인 곳이다. 각각을 답하고, 이어서 (가) ⑥과 ⑦의 차이를 굵기·얼기·지배 영역 세 가지로 (나) ⑤의 지배 가지와 그 예외가 되는 근육 (다) 피부신경·피부정맥이 있는 층 (라) ⑧ 손상 시의 결손을 답하시오.",
+   "choices": null,
+   "answer": "① 피부 skin / ② 얕은근막(피부밑조직) superficial fascia / ③ 깊은근막 deep fascia / ④ 얕은층 근육(등세모근·넓은등근) / ⑤ 고유등근육 intrinsic back mm. / ⑥ 뒤가지 dorsal ramus / ⑦ 앞가지 ventral ramus / ⑧ 뒤뿌리신경절 dorsal root ganglion — (가) 뒤가지는 가늘고·얼기를 만들지 않고·고유등근육과 척주 옆 등 피부만 / 앞가지는 굵고·얼기(목·팔·허리·엉치)를 이루고·몸통 앞가쪽과 팔다리 전체 / (나) 고유등근육은 전부 뒤가지 지배이며, 등에 있어도 이주근육(등세모근·넓은등근·마름근·어깨올림근)은 앞가지 또는 더부신경 지배라 예외 / (다) ② 얕은근막 / (라) 감각신경세포체가 죽어 해당 분절의 감각만 소실되고 운동은 보존된다",
+   "explanation": "척수신경은 척주사이구멍을 나오자마자 앞가지와 뒤가지로 갈리고, 그 뒤로는 영역이 겹치지 않는다. **뒤가지**는 가늘고 얼기를 만들지 않아 분절 배열이 그대로 유지되며, 고유등근육(척주세움근·가로돌기가시근육 등)과 척주 옆 등 피부만 담당한다. 뒤가지는 다시 안쪽가지·가쪽가지로 갈려 각각 피부가지를 낸다. **앞가지**는 굵고 목·팔·허리·엉치 얼기를 이뤄 팔다리와 몸통 앞가쪽을 담당하며, 갈비사이신경만 얼기 없이 분절을 지킨다. 시험의 함정은 '등에 있으니 뒤가지 지배'라는 추론이다 — 등세모근(더부신경 XI)·넓은등근(가슴등신경)·마름근(등쪽어깨신경)은 발생학적으로 다른 곳에서 이주해 온 근육이라 앞가지 계열의 지배를 받는다. 피부벗기기 실습에서는 피부 → 얕은근막 → 깊은근막 순으로 지나며, **피부신경과 피부정맥이 얕은근막 안에 있으므로** 여기서 너무 깊이 들어가면 분절 분포를 확인할 수 없게 된다. 라벨판은 diag-back-layers-rami-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-back-layers-rami-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "Back — Superficial layer 실습영상 + 1회차 과제(앞가지·뒤가지) — 도해 근거"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",

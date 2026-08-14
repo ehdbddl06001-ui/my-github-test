@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="볼기와 다리 뒤쪽의 피부신경 — 위·중간·아래볼기피부신경, 뒤넙다리피부신경, 장딴지신경의 유래와 담당 구역을 그린 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 오른쪽 다리를 뒤에서 본 구도.
+       근거: 1회차(0818) e-Anatomy §Lower limb — Superficial layer(12:02~13:34) 실습영상
+             + 문용석pf 과제(척수신경 앞가지·뒤가지 차이).
+       카데바 사진을 본뜬 것이 아니라 교과식 구도로 새로 그린 도식이다(Lane A).
+       핵심 ① 볼기피부신경 3형제의 유래가 서로 다르다(뒤가지 / 뒤가지 / 앞가지 계열)
+             ② 뒤넙다리피부신경은 아래볼기피부신경 + 관통가지를 낸다
+             ③ 장딴지신경 = 안쪽장딴지피부신경(정강) + 교통가지(온종아리) -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">볼기·다리 뒤쪽 피부신경 — 어디서 왔나
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">posterior cutaneous nerves</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 근거: 1회차 실습영상 §다리 뒤쪽 피부신경 · 오른쪽 다리를 뒤에서 본 모습</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11"><tspan fill="#9cc3ff">파랑</tspan> 뒤가지 유래 / <tspan fill="#7fd4a8">초록</tspan> 앞가지(얼기) 유래 · ★ = tagging 최다 빈출</text>
+
+  <!-- ================= 다리 윤곽 ================= -->
+  <!-- 볼기 -->
+  <path d="M 108,150 C 104,206 112,258 128,296 L 260,296 C 276,256 284,206 280,150 Z"
+        fill="#2b3d52" stroke="#4d6b8a" stroke-width="1.6"/>
+  <!-- 넓적다리 -->
+  <path d="M 128,296 L 260,296 C 254,352 246,404 240,440 L 148,440 C 142,404 134,352 128,296 Z"
+        fill="#24384c" stroke="#4d6b8a" stroke-width="1.6"/>
+  <!-- 종아리 -->
+  <path d="M 148,452 L 240,452 C 238,492 232,530 222,562 L 176,562 C 164,530 156,492 148,452 Z"
+        fill="#24384c" stroke="#4d6b8a" stroke-width="1.6"/>
+  <!-- 엉덩뼈능선 · 엉치뼈 -->
+  <path d="M 108,150 C 156,138 232,138 280,150" fill="none" stroke="#7b8ea3" stroke-width="2.4"/>
+  <path d="M 178,150 L 206,150 L 200,236 L 184,236 Z" fill="#1b2a3c" stroke="#5b7690" stroke-width="1.4"/>
+  <!-- 오금 -->
+  <path d="M 148,440 L 240,440 L 240,452 L 148,452 Z" fill="#12283a" stroke="#4d7fa5"
+        stroke-width="1.4" stroke-dasharray="5 4"/>
+
+  <!-- ================= 신경 ================= -->
+  <!-- 위볼기피부신경: 허리 뒤가지 → 엉덩뼈능선을 넘는다 -->
+  <path d="M 132,112 C 134,136 134,160 136,190" fill="none" stroke="#9cc3ff" stroke-width="3.2"/>
+  <path d="M 166,112 C 168,136 168,162 170,194" fill="none" stroke="#9cc3ff" stroke-width="3.2"/>
+  <path d="M 200,112 C 202,136 202,162 204,192" fill="none" stroke="#9cc3ff" stroke-width="3.2"/>
+  <!-- 중간볼기피부신경: 뒤엉치구멍에서 가쪽으로 -->
+  <path d="M 190,182 C 172,190 156,200 142,214" fill="none" stroke="#9cc3ff" stroke-width="3"/>
+  <path d="M 192,210 C 176,218 162,228 150,242" fill="none" stroke="#9cc3ff" stroke-width="3"/>
+  <!-- 뒤넙다리피부신경 본줄기(앞가지 = 엉치신경얼기) -->
+  <path d="M 214,262 C 212,320 208,382 204,436" fill="none" stroke="#7fd4a8" stroke-width="4.2"/>
+  <!-- 아래볼기피부신경: 큰볼기근 아래모서리를 감아 올라간다 -->
+  <path d="M 212,290 C 190,290 172,282 160,268" fill="none" stroke="#7fd4a8" stroke-width="3.2"/>
+  <path d="M 214,300 C 192,302 176,296 164,284" fill="none" stroke="#7fd4a8" stroke-width="3.2"/>
+  <!-- 관통가지 -->
+  <path d="M 212,336 C 190,340 176,346 164,354" fill="none" stroke="#7fd4a8" stroke-width="2.4"/>
+  <path d="M 210,368 C 232,372 244,378 254,386" fill="none" stroke="#7fd4a8" stroke-width="2.4"/>
+  <path d="M 208,398 C 188,402 176,408 166,416" fill="none" stroke="#7fd4a8" stroke-width="2.4"/>
+  <!-- 안쪽장딴지피부신경(정강신경) -->
+  <path d="M 216,446 C 216,478 214,500 212,514" fill="none" stroke="#9cc3ff" stroke-width="3.6"/>
+  <!-- 교통가지(온종아리신경 계열) -->
+  <path d="M 168,446 C 178,474 194,500 210,514" fill="none" stroke="#9cc3ff" stroke-width="3"
+        stroke-dasharray="7 4"/>
+  <!-- 장딴지신경 -->
+  <path d="M 211,514 C 214,536 218,550 222,562" fill="none" stroke="#9cc3ff" stroke-width="4.6"/>
+  <circle cx="211" cy="514" r="6" fill="#0e1826" stroke="#9cc3ff" stroke-width="2.4"/>
+
+  <!-- ================= 라벨 ================= -->
+  <text x="20" y="104" fill="#9cc3ff" font-size="11.5" class="kr">위볼기피부신경 ★</text>
+  <text x="20" y="116" fill="#7f9cc4" font-size="9">superior cluneal nn.</text>
+  <text x="20" y="128" fill="#7f9cc4" font-size="9">L1–L3 뒤가지</text>
+  <path d="M 108,132 L 130,140" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="312" y="192" fill="#9cc3ff" font-size="11.5" class="kr">중간볼기피부신경</text>
+  <text x="312" y="204" fill="#7f9cc4" font-size="9">middle cluneal nn.</text>
+  <text x="312" y="215" fill="#7f9cc4" font-size="9">S1–S3 뒤가지</text>
+  <text x="312" y="227" fill="#6f8299" font-size="9">뒤엉치구멍으로 나온다</text>
+  <path d="M 312,202 L 202,196" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="316" y="268" fill="#7fd4a8" font-size="11.5" class="kr">아래볼기피부신경 ★</text>
+  <text x="316" y="280" fill="#5fae87" font-size="9">inferior cluneal nn.</text>
+  <text x="316" y="292" fill="#6f8299" font-size="9">뒤넙다리피부신경의 가지</text>
+  <text x="316" y="304" fill="#eab308" font-size="9">— 뿌리가 다르다</text>
+  <path d="M 312,274 L 220,286" stroke="#3f7a5e" stroke-width="1"/>
+
+  <text x="316" y="340" fill="#7fd4a8" font-size="11.5" class="kr">뒤넙다리피부신경 ★</text>
+  <text x="316" y="352" fill="#5fae87" font-size="9">post. cutaneous n. of thigh</text>
+  <text x="316" y="364" fill="#5fae87" font-size="9">S1–S3 앞가지</text>
+  <text x="316" y="376" fill="#6f8299" font-size="9">궁둥구멍근 아래구멍으로</text>
+  <path d="M 312,346 L 216,330" stroke="#3f7a5e" stroke-width="1"/>
+
+  <text x="316" y="408" fill="#7fd4a8" font-size="10.5" class="kr">관통가지</text>
+  <text x="316" y="420" fill="#6f8299" font-size="9">perforating branches</text>
+  <text x="316" y="432" fill="#6f8299" font-size="9">넓적다리 뒤 피부</text>
+  <path d="M 312,414 L 214,378" stroke="#3f7a5e" stroke-width="1"/>
+
+  <text x="20" y="472" fill="#9cc3ff" font-size="10.5" class="kr">교통가지</text>
+  <text x="20" y="484" fill="#6f8299" font-size="9">온종아리신경 계열</text>
+  <path d="M 92,468 L 172,462" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="316" y="470" fill="#9cc3ff" font-size="10.5" class="kr">안쪽장딴지피부신경</text>
+  <text x="316" y="482" fill="#6f8299" font-size="9">정강신경 가지</text>
+  <path d="M 312,476 L 220,470" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="316" y="540" fill="#9cc3ff" font-size="12" class="kr">장딴지신경 ★</text>
+  <text x="316" y="552" fill="#7f9cc4" font-size="9">sural n. — 둘이 합쳐진 것</text>
+  <text x="316" y="564" fill="#6f8299" font-size="9">가쪽복사 뒤 → 발 가쪽</text>
+  <path d="M 312,546 L 218,540" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="20" y="176" fill="#8fa3b8" font-size="10" class="kr">엉덩뼈능선</text>
+  <path d="M 84,172 L 108,156" stroke="#4a5b6e" stroke-width="1"/>
+  <text x="20" y="244" fill="#8fa3b8" font-size="10" class="kr">엉치뼈</text>
+  <path d="M 66,240 L 182,224" stroke="#4a5b6e" stroke-width="1"/>
+  <text x="20" y="430" fill="#4d7fa5" font-size="10" class="kr">오금</text>
+  <path d="M 62,426 L 138,438" stroke="#3d5f7a" stroke-width="1"/>
+
+  <!-- ================= 오른쪽 위: 표 ================= -->
+  <rect x="446" y="96" width="416" height="268" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="120" fill="#e6edf3" font-size="13" class="kr">볼기피부신경 3형제 — 유래가 다르다</text>
+  <line x1="462" y1="132" x2="846" y2="132" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="462" y="154" fill="#9cc3ff" font-size="11" class="kr">위볼기 ★</text>
+  <text x="566" y="154" fill="#93a4b7" font-size="10.5">L1–L3 <tspan fill="#e6edf3">뒤가지</tspan> · 엉덩뼈능선을 넘는다</text>
+  <text x="566" y="168" fill="#6f8299" font-size="9.5">볼기 위쪽 피부 — 엉덩뼈능선 채취 후 통증의 원인</text>
+  <text x="462" y="196" fill="#9cc3ff" font-size="11" class="kr">중간볼기</text>
+  <text x="566" y="196" fill="#93a4b7" font-size="10.5">S1–S3 <tspan fill="#e6edf3">뒤가지</tspan> · 뒤엉치구멍으로</text>
+  <text x="566" y="210" fill="#6f8299" font-size="9.5">엉치엉덩관절 위 피부</text>
+  <text x="462" y="238" fill="#7fd4a8" font-size="11" class="kr">아래볼기 ★</text>
+  <text x="566" y="238" fill="#93a4b7" font-size="10.5">S1–S3 <tspan fill="#e6edf3">앞가지</tspan>(뒤넙다리피부신경 가지)</text>
+  <text x="566" y="252" fill="#6f8299" font-size="9.5">큰볼기근 아래모서리를 감아 볼기 아래 피부로</text>
+  <text x="462" y="284" fill="#eab308" font-size="11" class="kr">함정</text>
+  <text x="566" y="284" fill="#93a4b7" font-size="10.5">이름은 셋 다 "볼기피부신경"인데 <tspan fill="#e6edf3">아래볼기만</tspan></text>
+  <text x="566" y="298" fill="#93a4b7" font-size="10.5">앞가지 유래다 — 위·중간은 뒤가지.</text>
+  <text x="462" y="326" fill="#e6edf3" font-size="11" class="kr">위 → 아래 순서</text>
+  <text x="566" y="326" fill="#93a4b7" font-size="10.5">엉덩뼈능선(위) · 엉치뼈(중간) · 큰볼기근</text>
+  <text x="566" y="340" fill="#93a4b7" font-size="10.5">아래모서리(아래) — 나오는 높이로 외운다</text>
+
+  <!-- ================= 오른쪽 아래: 장딴지신경 ================= -->
+  <rect x="446" y="376" width="416" height="188" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="400" fill="#9cc3ff" font-size="13" class="kr">장딴지신경은 "합쳐져서" 만들어진다</text>
+  <text x="462" y="424" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3">안쪽장딴지피부신경</tspan>(정강신경) +</text>
+  <text x="462" y="440" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3">장딴지신경교통가지</tspan>(온종아리신경) → <tspan fill="#9cc3ff">장딴지신경</tspan></text>
+  <text x="462" y="464" fill="#93a4b7" font-size="10.5">가쪽복사 뒤를 지나 <tspan fill="#e6edf3">발 가쪽모서리·새끼발가락</tspan> 피부</text>
+  <text x="462" y="488" fill="#eab308" font-size="11" class="kr">임상</text>
+  <text x="546" y="488" fill="#93a4b7" font-size="10.5">순수 감각신경이라 잘라도 운동 손실이 없다 →</text>
+  <text x="546" y="502" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3">신경 생검·신경 이식의 표준 공여신경</tspan></text>
+  <text x="546" y="516" fill="#6f8299" font-size="9.5">발목 부위 sural nerve block의 표적이기도 하다</text>
+  <text x="462" y="542" fill="#6f8299" font-size="9.5">넓적다리·종아리 <tspan fill="#93a4b7">안쪽</tspan> 피부는 두렁신경(넙다리신경 가지)이 담당 — 뒤칸 신경이 아니다</text>
+
+  <!-- ================= 하단 요약 ================= -->
+  <rect x="18" y="580" width="844" height="100" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="34" y="604" fill="#e6edf3" font-size="12.5" font-weight="700">한 줄 정리 — 피부신경은 "어느 가지에서 나왔나"로 갈린다</text>
+  <text x="34" y="628" fill="#9cc3ff" font-size="11" class="kr">뒤가지</text>
+  <text x="130" y="628" fill="#93a4b7" font-size="11">척주 옆 등 피부만 담당 · 위볼기(L1–3) · 중간볼기(S1–3) — <tspan fill="#e6edf3">얼기를 만들지 않는다</tspan></text>
+  <text x="34" y="650" fill="#7fd4a8" font-size="11" class="kr">앞가지</text>
+  <text x="130" y="650" fill="#93a4b7" font-size="11">얼기를 이뤄 팔다리로 · 뒤넙다리피부신경 → <tspan fill="#e6edf3">아래볼기피부신경 + 관통가지</tspan></text>
+  <text x="34" y="672" fill="#eab308" font-size="11" class="kr">태깅</text>
+  <text x="130" y="672" fill="#93a4b7" font-size="11">볼기 3형제는 <tspan fill="#e6edf3">나오는 높이</tspan>로, 장딴지신경은 <tspan fill="#e6edf3">두 신경이 합쳐지는 지점</tspan>으로 가른다</text>
+</svg>
