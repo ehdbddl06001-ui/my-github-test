@@ -1,55 +1,25 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-13",
+ "generated": "2026-08-14",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-<<<<<<< HEAD
-  "total": 1021,
-=======
-  "total": 1049,
->>>>>>> origin/main
+  "total": 1061,
   "byType": {
    "kmle": 555,
    "usmle": 66,
-<<<<<<< HEAD
+   "paper": 203,
    "anatomy": 220,
-   "paper": 195,
-   "kmle": 523,
-=======
-   "anatomy": 216,
-   "paper": 195,
->>>>>>> origin/main
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-<<<<<<< HEAD
    "Anatomy": 220,
-   "Cardiology": 80,
-   "Nephrology": 58,
-   "Infectious Disease": 56,
-   "Pediatrics": 54,
-   "Obstetrics & Gynecology": 38,
-   "Neurology": 36,
-   "Psychiatry": 36,
-   "Endocrinology": 34,
-   "Gastroenterology": 33,
-   "Pulmonology": 33,
-   "Dermatology": 32,
-   "General Surgery": 32,
-   "Ophthalmology": 32,
-   "Orthopedics": 32,
-   "Rheumatology": 32,
-   "Surgery": 32,
-   "Hematology": 31,
-=======
-   "Anatomy": 216,
-   "Cardiology": 82,
-   "Nephrology": 60,
-   "Infectious Disease": 58,
-   "Pediatrics": 56,
+   "Cardiology": 83,
+   "Nephrology": 61,
+   "Infectious Disease": 59,
+   "Pediatrics": 57,
    "Obstetrics & Gynecology": 40,
    "Neurology": 38,
    "Psychiatry": 38,
@@ -62,11 +32,10 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 34,
    "Rheumatology": 34,
    "Hematology": 33,
-   "Surgery": 32,
->>>>>>> origin/main
-   "Pathology": 27,
-   "Laboratory Medicine": 25,
-   "Hematology-Oncology": 20,
+   "Surgery": 33,
+   "Pathology": 28,
+   "Laboratory Medicine": 26,
+   "Hematology-Oncology": 21,
    "Physiology": 7,
    "Microbiology": 6,
    "Biochemistry": 5,
@@ -84,19 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-<<<<<<< HEAD
-   "high": 629,
-   "medium": 343,
+   "high": 661,
+   "medium": 351,
    "low": 49
   },
-  "tagCount": 1886
-=======
-   "high": 658,
-   "medium": 342,
-   "low": 49
-  },
-  "tagCount": 1949
->>>>>>> origin/main
+  "tagCount": 1956
  },
  "docs": [
   {
@@ -364,6 +325,134 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0061.md",
    "snippet": "A 74 year old woman treated with a cardiac glycoside for chronic heart failure and rate control is brought in with nausea, anorexia, and complaints that lights appear to have yellow green halos. A thiazide diuretic was added two weeks ago f",
    "text": "Pharmacology Digoxin Toxicity Potentiated by Hypokalemia — Na+/K+-ATPase Binding digoxin hypokalemia Na-K-ATPase drug-toxicity thiazide USMLE-style / MedKOS A 74 year old woman treated with a cardiac glycoside for chronic heart failure and rate control is brought in with nausea, anorexia, and complaints that lights appear to have yellow green halos. A thiazide diuretic was added two weeks ago for hypertension. Her serum drug concentration is within the usual therapeutic range. Vital signs and laboratory studies are shown. Which of the following best explains why this patient is at increased risk of drug toxicity despite a therapeutic serum drug level? A. Reduced renal tubular secretion of the drug prolongs its elimination half life B. Low extracellular potassium reduces competition at the Na+/K+ ATPase, increasing drug binding to the pump C. Increased plasma protein binding raises the total but not the free drug concentration D. Induction of hepatic cytochrome P450 accelerates conversion to an active metabolite E. Alkalosis shifts the drug into its non ionized form, enhancing tissue penetration Cardiac glycosides bind the same site on Na+/K+ ATPase that potassium occupies; hypokalemia (here precipitated by a thiazide) removes competing potassium, increasing drug binding and effect even when the measured serum level is 'therapeutic'."
+  },
+  {
+   "id": "paper-2026-0203",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European geriatric medicine",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0203_outcomes_after_initial_nonoperative_management_of_undisplace.md",
+   "snippet": "Title Outcomes after initial nonoperative management of undisplaced intracapsular femoral neck fractures: a five year single center cohort study with structured literature review Authors Cara Joshua, Mir Basit, Khalafallah Mohamed Abdo, Mui",
+   "text": "Surgery scraped pubmed PubMed / European geriatric medicine Title Outcomes after initial nonoperative management of undisplaced intracapsular femoral neck fractures: a five year single center cohort study with structured literature review Authors Cara Joshua, Mir Basit, Khalafallah Mohamed Abdo, Muir Duncan, Narvani Ali, Khaleel Arshad, Imam Mohamed A Journal / DOI European geriatric medicine · DOI: 10.1007/s41999 026 01580 1 · PMID: 42593606 https://pubmed.ncbi.nlm.nih.gov/42593606/ Abstract BACKGROUND: Early surgical fixation is the standard approach for intracapsular femoral neck (neck of femur; NOF) fractures. However, a small subgroup of patients is managed conservatively because operative risks outweigh benefits, or due to patient preference. We evaluated outcomes of initial nonoperative management in older adults and contextualised our findings through a structured literature review. METHODS: We conducted a retrospective observational cohort study at a UK tertiary orthopaedic trauma unit (January 2018 August 2023). Patients with undisplaced or valgus impacted NOF fractures initially managed nonoperatively, were included. The primary outcome was treatment failure, defined as conversion to operative fixation or arthroplasty. Secondary outcomes included 30 and 90 day mortality, and treatment related complications. RESULTS: 38 patients were analysed. Most fractures were AO/OTA type 31 B1 (n = 29/38). The majority of patients were ASA class II III (n = 14 and n = 15, respectively). 13 patients required delayed surgery (34%; 95% CI 21 50%), most commonly hemiarthroplasty (n = 9), followed by total hip arthroplasty (n = 3) and dynamic hip screw fixation (n = 1). The mean time from injury to surgery in those converted was 49 days (range 1 208). Of the 25 patients remaining nonoperative, 14 had no fracture related readmissions, while two had persistent pain or poor mobility. 30 day mortality was 18% (7/38), and the 90 day mortality was 24% (9/38). CONCLUSION: Initial nonoperative management can avoid surgery in selected patients but carries a substantial risk of delayed conversion and prolonged time to definitive fixation. If chosen, a standardised pathway with close clinical and radiographic follow up and clear escalation triggers is essential. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0202",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Medical journal of Australia",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0202_watchful_waiting_compared_with_immediate_antibiotics_for_urb.md",
+   "snippet": "Title Watchful Waiting Compared With Immediate Antibiotics for Urban Aboriginal and Torres Strait Islander Children With Uncomplicated Acute Otitis Media (WATCH): A Non Inferiority Randomised Controlled Trial Authors Reath Jennifer S, Gunas",
+   "text": "Pediatrics scraped pubmed PubMed / The Medical journal of Australia Title Watchful Waiting Compared With Immediate Antibiotics for Urban Aboriginal and Torres Strait Islander Children With Uncomplicated Acute Otitis Media (WATCH): A Non Inferiority Randomised Controlled Trial Authors Reath Jennifer S, Gunasekera Hasantha, Lujic Sanja, Leach Amanda J, Campbell Letitia, Walsh Robyn, Usherwood Tim, Spurling Geoffrey K, et al. Journal / DOI The Medical journal of Australia · DOI: 10.5694/mja2.70260 · PMID: 42592875 https://pubmed.ncbi.nlm.nih.gov/42592875/ Abstract OBJECTIVE: Determine whether watchful waiting is non inferior to immediate oral antibiotics for uncomplicated acute otitis media among urban Aboriginal and Torres Strait Islander children. STUDY TYPE: Non inferiority unblinded randomised controlled trial. SETTING AND PARTICIPANTS: Eight Aboriginal Medical Services across three Australian states and territories between 25 August 2014 and 2 June 2023. Children (aged 1.5 16 years) with type B tympanograms and bulging tympanic membrane or acute pain/irritability were randomised by site and age (1.5 6 years and 7 16 years), with stratification using randomly allocated, permuted blocks of four and six in length. MAIN OUTCOME MEASURES: Watchful waiting compared with immediate oral antibiotics using modified intention to treat (using only available data) and per protocol analyses of Day 7 clinical resolution with non inferiority threshold set at 10 percentage points. RESULTS: Children were randomly allocated to watchful waiting (134), six of whom were lost to follow up or immediate antibiotics (129) with three lost to follow up. Resolution occurred in 57/106 (53.8%) watchful waiting and 68/113 (60.2%) immediate antibiotic group of those with complete Day 7 data ( 6.4 percentage points difference; 90% confidence interval [CI], 17.4 to 4.6) (modified intention to treat analysis). Per protocol analysis similarly demonstrated reduced resolution in the watchful waiting group (49/97; 50.5%) compared with immediate antibiotics (67/112; 59.8%) with 9.3 percentage points difference (90% CI, 20.6 to 2.0). There was less Day 3 diarrhoea in watchful waiting (3/90; 3.3%) than in the immediate antibiotic group (13/93 [14.0%]; 10.7 percentage points difference; 95% CI, 18.6 to 2.7) but no other differences in vomiting, diarrhoea or rash (Days 3 14). Day 7 analgesia use was higher in the watchful waiting (53/107 [49.5%]) than immediate antibiotic group (37/116 [31.9%]; 17.6 percentage points difference; 95% CI, 4.9 to 30.1). There were no intervention related severe adverse events or perforations. CONCLUSION: Although our results are numerically similar to those reported in other low risk populations and no unexpected safety signals were observed in the watchful waiting arm, non inferiority was not established. Larger, adequately powered trials are required to determine whether watchful waiting is non inferior in this population. TRIAL REGISTRATION: Australian New Zealand Clinical Trials Registry ACTRN 12613001068752. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0201",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medical mycology",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0201_oral_wash_pcr_for_the_diagnosis_of_pneumocystis_jirovecii_pn.md",
+   "snippet": "Title Oral wash PCR for the diagnosis of Pneumocystis jirovecii pneumonia in non HIV immunocompromised hosts: a diagnostic accuracy study Authors Bendjelloul Isshak, Kaminski Hannah, Issa Nahema, Guisset Olivier, Neau Didier, Camou Fabrice,",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Medical mycology Title Oral wash PCR for the diagnosis of Pneumocystis jirovecii pneumonia in non HIV immunocompromised hosts: a diagnostic accuracy study Authors Bendjelloul Isshak, Kaminski Hannah, Issa Nahema, Guisset Olivier, Neau Didier, Camou Fabrice, Dewitte Antoine, Larroquette Mathieu, et al. Journal / DOI Medical mycology · DOI: 10.1093/mmy/myag086 · PMID: 42593422 https://pubmed.ncbi.nlm.nih.gov/42593422/ Abstract We assessed the Pneumocystis jirovecii PCR accuracy on non invasive oropharyngeal wash (OW) specimens for the diagnosis of Pneumocystis jirovecii pneumonia (PJP) in non HIV immunocompromised patients. In this retrospective study, 134 patients with suspected PJP undergoing both OW and deep respiratory sampling were included. PJP was defined by composite criteria. OW P. jirovecii PCR showed a sensitivity of 61.5% (95% CI 42.5 77.6) and a specificity of 97.2% (95% CI 92.2 99.1). Positive and negative predictive values were 84.2% and 91.3%, respectively. These results suggest OW P. jirovecii PCR may support non invasive diagnosis, but cannot be used to exclude PJP. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0200",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Probiotics and antimicrobial proteins",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0200_oral_co_supplementation_with_pediococcus_pentosaceus_probiot.md",
+   "snippet": "Title Oral Co supplementation with Pediococcus pentosaceus Probiotic and Enteric Polymeric Phycocyanin Nanoparticles Mitigates Aging Related Biomarkers in Male Wistar Rats: A Preclinical Investigation Authors Flefil Nasser S, Ezzat Asmaa, A",
+   "text": "Pathology scraped pubmed PubMed / Probiotics and antimicrobial proteins Title Oral Co supplementation with Pediococcus pentosaceus Probiotic and Enteric Polymeric Phycocyanin Nanoparticles Mitigates Aging Related Biomarkers in Male Wistar Rats: A Preclinical Investigation Authors Flefil Nasser S, Ezzat Asmaa, Abd El Fattah Marwa A, Aly Hanan Farouk, Younis Eman A, Soliman Tarek N, Negm El Dein Asmaa Journal / DOI Probiotics and antimicrobial proteins · DOI: 10.1007/s12602 026 11159 8 · PMID: 42593613 https://pubmed.ncbi.nlm.nih.gov/42593613/ Abstract C phycocyanin (C PC) is a promising anti aging nutraceutical due to its antioxidant and anti inflammatory properties; however, its instability under acidic conditions limits its efficacy, necessitating advanced formulation strategies. This study evaluated the anti aging potential of novel enteric C PC nanoparticles (NPs) co delivered with Pediococcus pentosaceus in a D galactose induced aging model in male Wistar rats. C PC was extracted from microalgal biomass and encapsulated into Eudragit® S100 nanoparticles. Particle size, encapsulation efficiency, zeta potential, pH responsive release, and morphology were characterized. Aging was induced in male Wistar rats using D galactose. Oxidative stress markers, neurotransmitters, acetylcholine metabolism, behavioral performance, and brain histopathology were assessed following treatment with C PC nanoparticles with or without probiotic co supplementation. C PC was extracted from 2.5 g dry biomass with a yield of 31.02% and a purity ratio (A620/A280) of 0.704, then successfully encapsulated into Eudragit® S100 nanoparticles (211.4 ± 8.1 nm; encapsulation efficiency 63.7 ± 4.16%; zeta potential 20.4 ± 3.7 mV) exhibiting pH responsive release and uniform nanoscale morphology. D galactose induced aging markedly increased lipid peroxidation (MDA + 362.8%), depleted antioxidant defenses (GSH 78.96%, TAC 79.22%), reduced monoaminergic neurotransmitters (48.11 52.86%), decreased acetylcholine ( 66.12%), elevated acetylcholinesterase activity (+ 163.45%), impaired cognition and motor function (T maze + 136%, beam balance + 69.6%), and caused severe brain histopathology. Treatment with C PC nanoparticles, alone or combined with P. pentosaceus, significantly alleviated oxidative stress (MDA 112.2 196.4%, GSH 20.6 38.8%, TAC 42.9 50.7%), restored neurotransmitters (16 40.3%), improved cholinergic balance, enhanced behavioral performance, and preserved brain structure. These preclinical findings introduce C PC nanoparticle probiotic co supplementation as a promising nutraceutical strategy against aging associated neurodegeneration. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0199",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of hematology",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0199_therapeutic_advances_in_adult_b_cell_acute_lymphoblastic_leu.md",
+   "snippet": "Title Therapeutic Advances in Adult B cell Acute Lymphoblastic Leukemia with KMT2A Rearrangements Authors Liu Shen Hao, Deng Ai Ni, Li Hui Ying, Tan Kai Wen, Xue Sheng Li, Dai Hai Ping Journal / DOI Annals of hematology · DOI: 10.1007/s0027",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Annals of hematology Title Therapeutic Advances in Adult B cell Acute Lymphoblastic Leukemia with KMT2A Rearrangements Authors Liu Shen Hao, Deng Ai Ni, Li Hui Ying, Tan Kai Wen, Xue Sheng Li, Dai Hai Ping Journal / DOI Annals of hematology · DOI: 10.1007/s00277 026 07191 x · PMID: 42593564 https://pubmed.ncbi.nlm.nih.gov/42593564/ Abstract B cell acute lymphoblastic leukemia (ALL) with KMT2A rearrangements (KMT2Ar B ALL) represents a distinct, high risk subtype in adults, characterized by aggressive disease biology, high relapse rates, and inferior long term survival. Conventional intensive chemotherapy, even when consolidated with allogeneic hematopoietic stem cell transplantation (allo HSCT), yields suboptimal outcomes, underscoring the need for novel therapeutic approaches. In recent years, substantial progress has been made with the introduction of antibody based immunotherapies, cellular immunotherapies, and small molecular inhibitors, reshaping the treatment landscape for this challenging subgroup. This review provides a comprehensive overview of current and emerging therapeutic strategies for adult patients with KMT2Ar B ALL. We summarize outcomes associated with pediatric inspired chemotherapy and allo HSCT, focus on clinical evidence for antibody based immunotherapy including blinatumomab and inotuzumab ozogamicin, across frontline, consolidation, and relapsed or refractory settings. Advances in cellular immunotherapy, particularly CD19 directed chimeric antigen receptor T cell therapy, are discussed, with a focus on unique resistance mechanisms such as antigen loss and lineage switch. In addition, we review the biological rationale, efficacy and emerging resistance mechanisms of menin inhibitors, a promising class of agents specifically targeting the epigenetic dependency of KMT2A rearranged leukemia. Finally, other molecular approaches, including epigenetic modifiers, apoptosis pathway inhibitors, and signaling pathway inhibitors are discussed. Despite these advances, treatment resistance and disease relapse remain major obstacles. These ongoing challenges highlight the urgent need for multi center, prospective trials to investigate rational combination strategies to improve outcomes for adults with KMT2Ar B ALL. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0198",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Molecular biology reports",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0198_immunometabolic_effects_of_sglt2_inhibitors_on_the_th17_treg.md",
+   "snippet": "Title Immunometabolic Effects of SGLT2 Inhibitors on the Th17/Treg Axis: Mechanisms, Evidence, and Implications for Therapeutic Repurposing Authors Alasbily Hamza, Sherif Fathi M Journal / DOI Molecular biology reports · DOI: 10.1007/s11033",
+   "text": "Nephrology scraped pubmed PubMed / Molecular biology reports Title Immunometabolic Effects of SGLT2 Inhibitors on the Th17/Treg Axis: Mechanisms, Evidence, and Implications for Therapeutic Repurposing Authors Alasbily Hamza, Sherif Fathi M Journal / DOI Molecular biology reports · DOI: 10.1007/s11033 026 12564 6 · PMID: 42593596 https://pubmed.ncbi.nlm.nih.gov/42593596/ Abstract Sodium glucose cotransporter 2 (SGLT2) inhibitors confer cardiovascular and renal benefits that exceed those attributable to glycemic control alone, prompting interest in pleiotropic mechanisms, including immunomodulation. While prior research has largely focused on innate inflammatory pathways, emerging evidence suggests that SGLT2 inhibition may also influence adaptive immunity through immunometabolic reprogramming. Recent findings demonstrate functional SGLT2 expression in activated human cluster of differentiation 4 (CD4⁺) T cells and responsiveness to pharmacological inhibition, raising the possibility that both systemic metabolic remodeling and direct cellular effects contribute to immune regulation. This review examines the immunometabolic pathways linking SGLT2 inhibition to adaptive immune regulation and critically synthesizes the mechanistic, preclinical, and clinical evidence supporting effects on the T helper 17 (Th17)/regulatory T cell (Treg) axis, the most extensively studied adaptive immune pathway in this field. Proposed mechanisms include AMP activated protein kinase (AMPK) activation, suppression of mechanistic target of rapamycin complex 1 (mTORC1) and serum/glucocorticoid regulated kinase 1 (SGK1), ketone associated signaling, and broader fasting mimetic metabolic remodeling that may favor regulatory over pro inflammatory T cell responses. Experimental studies frequently report attenuation of Th17 associated responses and restoration of Th17/Treg balance, whereas human evidence remains limited. However, current data support adaptive immune modulation as a biologically plausible but incompletely validated component of SGLT2 inhibitor biology. Further translational and clinical studies are required to clarify its contribution to cardiorenal benefits and its potential relevance to therapeutic repurposing in immune mediated diseases. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0197",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Antonie van Leeuwenhoek",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0197_virulence_determinants_and_multidrug_resistance_profiles_of_.md",
+   "snippet": "Title Virulence determinants and multidrug resistance profiles of biofilm forming Staphylococcus aureus from healthy orthopedic surgical personnel Authors Pirmoradian Mozhgan, Zargar Mohsen, Nazari Razieh Journal / DOI Antonie van Leeuwenho",
+   "text": "Infectious Disease scraped pubmed PubMed / Antonie van Leeuwenhoek Title Virulence determinants and multidrug resistance profiles of biofilm forming Staphylococcus aureus from healthy orthopedic surgical personnel Authors Pirmoradian Mozhgan, Zargar Mohsen, Nazari Razieh Journal / DOI Antonie van Leeuwenhoek · DOI: 10.1007/s10482 026 02380 0 · PMID: 42593577 https://pubmed.ncbi.nlm.nih.gov/42593577/ Abstract Staphylococcus aureus (S. aureus) is a clinically significant opportunistic pathogen and a leading cause of healthcare associated infections, particularly in surgical settings. This study aimed to investigate the antibiotic resistance patterns, biofilm forming ability, and the distribution of selected virulence and resistance genes among S. aureus isolates collected from healthy orthopedic surgical personnel in Iran. A total of 63 S. aureus isolates, comprising 52 methicillin resistant (MRSA) and 11 methicillin susceptible (MSSA) isolates, were recovered from nasal and hand swabs. Antimicrobial susceptibility was determined by the Kirby Bauer disk diffusion method or broth microdilution for oxacillin. Biofilm formation was quantified using the tissue culture plate assay, and resistance and virulence genes were detected by PCR. All isolates were biofilm producers, with nasal isolates representing the highest proportion of strong producers, although the difference was not statistically significant. High resistance rates were observed to penicillin and ampicillin, and erythromycin resistance was significantly associated with moderate biofilm formation. MRSA, identified by cefoxitin resistance, accounted for 82.5% of the isolates and produced significantly greater biofilm biomass compared to MSSA isolates. Among MRSA isolates, 40.4% exhibited an MDR phenotype and 1.9% were XDR, while all isolates remained susceptible to vancomycin and chloramphenicol. The mecA gene was present in all MRSA isolates, while icaA was exclusive to MRSA and strongly correlated with biofilm biomass. Three agr types were identified, with agrI predominating. The convergence of potent virulence determinants, multidrug resistance, and robust biofilm formation particularly among MRSA isolates underscores the potential for silent nosocomial transmission and highlights the need for enhanced infection control practices and strengthened antimicrobial stewardship. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0196",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology",
+   "confidence": "medium",
+   "date": "2026-08-13",
+   "path": "content/papers/2026/2026-08-13_paper-2026-0196_infective_endocarditis_in_a_university_hospital_without_on_s.md",
+   "snippet": "Title Infective endocarditis in a university hospital without on site cardiac surgery: temporal trends over 37 years Authors Lema Eva María Romay, Pais María José García, García Blanca Ayuso, Fernández Juan Carlos Piñeiro, Rey Ramón Rabuñal",
+   "text": "Cardiology scraped pubmed PubMed / European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology Title Infective endocarditis in a university hospital without on site cardiac surgery: temporal trends over 37 years Authors Lema Eva María Romay, Pais María José García, García Blanca Ayuso, Fernández Juan Carlos Piñeiro, Rey Ramón Rabuñal, González Patricia Capón, Vázquez Iria Iñiguez, García Pilar Alonso, et al. Journal / DOI European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology · DOI: 10.1007/s10096 026 05627 w · PMID: 42593591 https://pubmed.ncbi.nlm.nih.gov/42593591/ Abstract BACKGROUND: The clinical spectrum and management of infective endocarditis (IE) in non referral centers are poorly characterized. We aimed to analyze long term trends in IE in a university hospital without on site cardiac surgery. METHODS: Retrospective analysis of prospectively collected population based data from IE patients across four time periods (1988 2024) at Hospital Universitario Lucus Augusti. RESULTS: 698 episodes were included (86.5% definite IE). 75.4% occurred in men. Median age was 72.5 years (IQR 63 80) and increased significantly over time (63 to 77 years; p < 0.001). Incidence rose from 3.5 to 16.9 cases per 100 000 inhabitants (overall 9.2/100 000). Age adjusted Charlson Comorbidity Index (CCI) increased from 3 (IQR 1 4) to 6 (IQR 4 7) (p < 0.001). Degenerative valvular disease related IE and prosthetic valve IE increased significantly. The Streptococcus bovis group was the most frequent etiology (23.1%), with a rise in Enterococcus spp. and coagulase negative staphylococci (p < 0.001). Non paravalvular complications occurred in 76.2%, with increasing rates of heart failure. Transfer to a referral center remained stable (20.5%) and was more frequent in younger, less comorbid patients. Cardiac surgery was indicated in 31% and performed in 15.6%; overall in hospital mortality was 19.9%, unchanged over time. CONCLUSIONS: The incidence of IE increased markedly in parallel with aging, rising comorbidity, and degenerative and prosthetic valve disease. Despite these changes, surgical rates and mortality remained stable, suggesting that referral patterns and local population characteristics should be considered when interpreting the clinical spectrum and outcomes of IE. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0585",
@@ -834,7 +923,6 @@ window.MEDKOS_INDEX = {
    "text": "Anatomy daily plan 2026-08-13 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 33분 문항 11개 · 개념 3개 · 복습 9개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
-<<<<<<< HEAD
    "id": "anatomy-2026-0026",
    "type": "anatomy",
    "topic": "Anatomy",
@@ -914,8 +1002,6 @@ window.MEDKOS_INDEX = {
    "text": "Anatomy 마름근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 마름근 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
-=======
->>>>>>> origin/main
    "id": "paper-2026-0195",
    "type": "paper",
    "topic": "Surgery",
