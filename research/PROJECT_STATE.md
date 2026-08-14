@@ -459,11 +459,35 @@ spec status는 `approved_for_implementation` 그대로다. `MEASURED`/`PASS`/
 등록된 값은 0건이고 Q5-E의 세 stop은 닫힌 채다(P3 source-equivalence는 착수도
 하지 않았다).
 
-**다음 순서(각 단계가 별도 승인)**: ① artifact-repair 명세·구현(draft PR) →
-② 사용자 실행 승인 → ③ shard에서 NPZ 재구성 + 12-file corrective bundle 생성 →
-④ 기존 11개 byte identity·새 bundle 계약 검증 → ⑤ 새 folder id·lineage 등록 PR →
-⑥ P1/P2 재실행 승인·재실행 → ⑦ combined PASS 확인 뒤에야 P1 aggregate와 P2 five
-digests 등록 → ⑧ 그 다음이 P3 PREP.
+**다음 순서(각 단계가 별도 승인)**: ~~① artifact-repair 명세·구현~~ →
+~~② 사용자 실행 승인~~ → ~~③ shard에서 NPZ 재구성 + 12-file corrective bundle 생성~~ →
+~~④ 기존 11개 byte identity·새 bundle 계약 검증~~ → ~~⑤ 새 folder id·lineage 등록~~ →
+**⑥ P1/P2 재실행 승인·재실행** → ⑦ combined PASS 확인 뒤에야 P1 aggregate와 P2 five
+digests 등록 → ⑧ 그 다음이 P3 PREP.  ①~⑤는 2026-08-13에 완료됐다(아래).
+
+### EXP-2026-009 / corrective bundle — 실행 완료 (2026-08-13) `REPAIR_COMPLETE`
+
+D3의 복구가 실제로 수행됐다. **포장 복구이지 과학적 결과가 아니다** — `J` 값 계산
+0, replicate 재실행 0, EXP-2026-007의 판정 `JOIN_UNRESOLVED`는 그대로다.
+
+- 새 corrective 폴더 `20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective`
+  · **folder id `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH`** · **12/12** `missing []`
+  `unexpected []`. 기존 11개는 byte-identical 복사, 12번째만 재구성했다.
+- `negative_control_null.npz` SHA-256
+  `38b12ceb91efa70bb63e09614d724ab88ed99bb5ae236425dcd585bf74caffcf`(320,968 B).
+- shard 100개 사전등록 집합과 정확 일치, replicate coverage **10000/10000**,
+  gap·overlap 0. 재구성은 frozen `finalize_null_shards()` 경로로만.
+- **재구성 `j_null_max` 가 `null_summary.json` 의 벡터와 element-wise 동일**
+  (10000 vs 10000). 두 값은 원 run에서 서로 다른 코드 경로가 썼으므로 이 일치가
+  독립 증거다. NPZ는 독립 parser와 `numpy.load(..., allow_pickle=False)` 두
+  reader로 검증(4배열 전부 float64 `(10000,)` finite).
+- **기존 bundle·shard는 읽기 전용으로만 열었고 수정·삭제·덮어쓰기 0건.** 실행 후
+  source 재해시 일치. scope 정확히 `drive.readonly`.
+
+**이것이 Q5-E의 stop을 푼 것은 아니다.** corrective bundle이 12파일 계약을
+만족하게 됐을 뿐, **P2를 그 폴더에 대고 재실행하지 않았다** — 따라서
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`는 여전히 열려 있고, P1 aggregate는 아직
+관측이며, `PREP_P1_P2_PASS`에 도달하지 않았다. 재실행은 별도 승인 대상이다.
 
 선행 Q5-E preflight 2건(`PREP_M4_ASSET_FREEZE` 2026-08-11 ·
 `PREP_M4_RR_EQUIVALENCE` 2026-08-12, `RR_VALUE_IDENTICAL_44_OF_44`)의 동결값은

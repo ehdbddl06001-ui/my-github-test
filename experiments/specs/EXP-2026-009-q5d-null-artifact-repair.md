@@ -781,3 +781,66 @@ PR that records the approved implementation commit and its four digests and
 flips `granted` to `True`; a separate user execution approval; and only then a
 run, whose output is preserved-but-unregistered until a further registration PR
 fixes the new folder id, the NPZ digest and the lineage.
+
+## 2026-08-13 — executed; the corrective bundle exists
+
+    REPAIR_COMPLETE
+    first_stopping_reason: null
+
+The user granted execution on 2026-08-13 for implementation
+`0cab1367b914e1c73000d135e5cdcbc42714486b`, recorded in the module's approval
+block by the execution-enable PR.  The run happened at execution head
+`ca0f7f6a30e5c4bc43c308b4cac0bf8e7fdf90f0`, measured from git by the module
+rather than taken from the notebook's word for it.
+
+**Corrective bundle**
+
+| | |
+|---|---|
+| folder name | `20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective` |
+| **Drive folder id** | `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH` |
+| files | **12**, `missing []`, `unexpected []` |
+| `negative_control_null.npz` SHA-256 | `38b12ceb91efa70bb63e09614d724ab88ed99bb5ae236425dcd585bf74caffcf` (320,968 B) |
+
+The twelve digests are in `research/ASSETS.md :: run-20260813-q5d-null-corrective`.
+
+**What the run proved, not merely reported**
+
+- The 100 preregistered shards were all present — `null_shard_00000_00100.json`
+  through `null_shard_09900_10000.json`, nothing missing, extra or nested — and
+  replicate coverage was exactly `10000/10000` with no gap and no overlap.
+- The reconstructed `j_null_max` is **element-wise identical** to the vector
+  already in `null_summary.json`, 10,000 against 10,000.  That is the
+  independent cross-check: the shards and the summary were written by different
+  code paths in the original run, so their agreement is evidence, while the
+  shards agreeing with themselves would not be.
+- The NPZ was verified by **two independent readers**: this module's own parser
+  and `numpy.load(..., allow_pickle=False)` under numpy 2.0.2.  All four arrays
+  are `float64`, shape `(10000,)`, finite, with no duplicate ZIP member.
+- Its size is arithmetically what it must be: 4 × (128-byte NPY v1.0 header +
+  80,000 bytes of payload) + 456 bytes of stored-ZIP overhead = **320,968 B**,
+  matching the produced file to the byte.
+- The source bundle was **re-hashed after the run** against the snapshot taken
+  before it, and was unchanged — so what was judged is what was copied.
+- Read-only throughout: the credential carried exactly
+  `https://www.googleapis.com/auth/drive.readonly`, observed as exactly that one
+  scope, with the adapter's whole surface `files.list` and no write method.
+  Nothing outside the new folder was written; the existing bundle and the
+  shards were opened read-only and not modified, deleted, overwritten or moved.
+- No `COMMITTED` marker was written — it is not one of the twelve
+  `BUNDLE_FILES`.
+
+**What this does *not* do.**  The corrective bundle now satisfies the twelve-file
+directory contract, but **Q5-E PREP P2 has not been re-run against it**, so
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` is still open, the P1 aggregate is still
+only an observation, and `PREP_P1_P2_PASS` has not been reached.  Re-running
+P1/P2 is a separate user approval.  Nothing about `EXP-2026-007`'s scientific
+verdict changed: `JOIN_UNRESOLVED` stands, and no `J` value was computed here.
+
+**A note for whoever runs this next.**  This entry edits the spec, which changes
+`spec_lf_sha256` — one of the four digests in the approved record.  So the
+recorded approval no longer matches the tree, and another repair run would stop
+at `REPAIR_EXECUTION_IDENTITY_UNVERIFIED` until a fresh enable cycle.  That is
+the intended behaviour and not a defect: the repair is done, and a second one
+should have to be approved again.
+

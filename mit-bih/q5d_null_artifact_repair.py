@@ -71,7 +71,7 @@ EXECUTION_APPROVAL_TOKEN = "q5d-null-artifact-repair-execution-approved-by-user"
 #: implementation is named here, in the enable PR, pointing *backwards*; the
 #: notebook measures the actual `HEAD` it is running and the two are checked
 #: against each other.
-APPROVED_IMPLEMENTATION_COMMIT = "5191a92353b5bb067a01b174cfcc70d722ef013c"
+APPROVED_IMPLEMENTATION_COMMIT = "0cab1367b914e1c73000d135e5cdcbc42714486b"
 
 #: LF-normalised digests of what the review actually covered.  The repair
 #: module is **not** in this table: a record inside a file cannot certify that
@@ -86,18 +86,23 @@ APPROVED_ARTIFACT_DIGESTS = {
     "frozen_q5d_lf_sha256":
         "6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226",
     "module_science_lf_sha256":
-        "89f1a8274bdeaec7c2d1bfe2656d4d7dc2d1bb5272010ff5012c61ff5aa15584",
+        "2998cc28194b0cc710934c72dc749be38e8b230880b0bd2480eccfe4a6aff0bc",
 }
 
-#: Open, as of 2026-08-12.  The record is written down rather than implied by a
-#: deleted check: an absent guard reads identically whether an approval
-#: happened or someone removed an inconvenience.  Setting `granted` back to
-#: False restores the previous refusal exactly, with no other edit anywhere.
+#: Open, as of 2026-08-13, for implementation `0cab136`.
+#:
+#: The 2026-08-12 approval named `5191a92` and lapsed when the manifest-schema
+#: fix moved the module's science digest — an execution approval is for a
+#: specific implementation, not for a module in general.  This one names the
+#: implementation Codex accepted after that fix and after the Windows
+#: portability blocker, and it will lapse the same way if the logic moves
+#: again.  Setting `granted` back to False restores the refusal exactly, with
+#: no other edit anywhere.
 EXECUTION_APPROVAL_RECORD = {
     "granted": True,
-    "granted_on": "2026-08-12",
+    "granted_on": "2026-08-13",
     "granted_by": "user",
-    "pinned_commit": "5191a92353b5bb067a01b174cfcc70d722ef013c",
+    "pinned_commit": "0cab1367b914e1c73000d135e5cdcbc42714486b",
     "kind": ("reconstruct negative_control_null.npz from the existing "
              "EXP-2026-007 null shards and assemble a new corrective bundle "
              "folder"),
@@ -1578,50 +1583,151 @@ IDENTITY_FIELDS: Tuple[str, ...] = ("split", "code_sha256",
                                     "rule_fingerprint", "input_digest")
 
 
+#: Where each identity field actually lives in a producer-written manifest.
+#: Learned from `BJ.build_manifest()`, not assumed: an earlier version of this
+#: module expected all four flat at the top level, which is a shape the
+#: producer has never written — and every fixture agreed with it, because the
+#: fixtures were written from the same assumption.  A synthetic manifest can
+#: only ever confirm its author's belief, so the fixtures now come from
+#: `BJ.build_manifest()` itself.
+MANIFEST_IDENTITY_SOURCES: Dict[str, str] = {
+    "rule_fingerprint": "manifest['rule_fingerprint'] (top level)",
+    "code_sha256": "manifest['code']['sha256'] (raw-byte digest of the "
+                   "producing module)",
+    "input_digest": "derived from the complete, verified manifest['preflight'] "
+                    "freeze via the frozen BJ.preflight_input_digest(); "
+                    "stronger internal consistency than an unverified "
+                    "redundant stored digest, but NOT stronger independent "
+                    "provenance than a separately registered digest would be",
+    "split": "registered constant; the manifest does not carry a split",
+}
+
+
 def identity_from_manifest(manifest: Mapping[str, object]) -> Dict[str, str]:
-    """What the shards must match — validated, not merely non-empty.
+    """What the shards must match, read from where the producer actually puts it.
 
     The manifest is trusted only because the bytes it was parsed from are tied
     to the registered folder id by :func:`bridge_mount_to_folder_id`, and only
-    for fields that also agree with a registered constant.  `input_digest` has
-    no registered counterpart in this repository, so it is checked for format
-    and for shard agreement and that limit is recorded rather than papered over.
+    for fields that also agree with a registered constant.
+
+    `input_digest` is **derived**, not read: `manifest['preflight']` is the
+    frozen input freeze, and `BJ.preflight_input_digest()` is the producer's
+    own function over it, called only once the freeze has been proven complete
+    and passing.
+
+    What that buys, stated precisely, because the earlier wording overclaimed:
+    a derived digest has stronger **internal consistency** than an unverified
+    redundant stored digest — a stored one can disagree with the freeze it
+    claims to summarise, and a derived one cannot.  It does **not** have
+    stronger **independent provenance** than a separately registered digest
+    would; both still come out of the same manifest, and this repository
+    registers no input digest to check either against.
+
+    `split` is not in the manifest at all.  Rather than pretend otherwise it
+    comes from the registered constant, and `validate_shard_schema()` holds
+    every shard to it.
     """
     problems: List[str] = []
     values: Dict[str, str] = {}
-    for field in IDENTITY_FIELDS:
-        value = manifest.get(field)
-        if not isinstance(value, str) or not value:
-            problems.append(f"{field}: {value!r} is not a non-empty string")
-            continue
-        values[field] = value
-    if values.get("split") != REGISTERED_SPLIT:
+
+    fingerprint = manifest.get("rule_fingerprint")
+    if not isinstance(fingerprint, str) or not is_hex64(fingerprint):
         problems.append(
-            f"split: {values.get('split')!r} is not the registered "
-            f"{REGISTERED_SPLIT!r}")
-    for field in ("code_sha256", "rule_fingerprint", "input_digest"):
-        if field in values and not is_hex64(values[field]):
-            problems.append(f"{field}: {values[field]!r} is not 64 hex digits")
-    if values.get("code_sha256") not in (None, FROZEN_Q5D_SHA256_LF):
+            f"rule_fingerprint: {fingerprint!r} is not a 64-hex string at the "
+            f"manifest's top level")
+    elif fingerprint != REGISTERED_RULE_FINGERPRINT:
         problems.append(
-            f"code_sha256: {values.get('code_sha256')} is not the registered "
+            f"rule_fingerprint: {fingerprint} is not the registered "
+            f"{REGISTERED_RULE_FINGERPRINT}")
+    else:
+        values["rule_fingerprint"] = fingerprint
+
+    code = manifest.get("code")
+    code_sha = code.get("sha256") if isinstance(code, Mapping) else None
+    if not isinstance(code_sha, str) or not is_hex64(code_sha):
+        problems.append(
+            f"code.sha256: {code_sha!r} is not a 64-hex string; the producer "
+            f"records the module digest under manifest['code']['sha256']")
+    elif code_sha != FROZEN_Q5D_SHA256_LF:
+        problems.append(
+            f"code.sha256: {code_sha} is not the registered "
             f"{FROZEN_Q5D_SHA256_LF}")
-    if values.get("rule_fingerprint") not in (None,
-                                              REGISTERED_RULE_FINGERPRINT):
+    else:
+        # The stored value is kept, not translated.  An earlier version
+        # accepted the *imported* module's raw digest as an alternative and
+        # then returned the LF one — which would have handed the shard check an
+        # identity the shards do not carry, since a shard stores whatever the
+        # producer stored.  On this registered bundle the manifest's raw digest
+        # equals the registered LF identity because the producing checkout used
+        # LF, so one comparison is enough and a second branch could only ever
+        # disagree with the shards.  The **live** module's LF identity is
+        # checked separately, by `assert_frozen_q5d_unchanged()`.
+        values["code_sha256"] = code_sha
+
+    preflight = manifest.get("preflight")
+    if not isinstance(preflight, Mapping):
         problems.append(
-            f"rule_fingerprint: {values.get('rule_fingerprint')} is not the "
-            f"registered {REGISTERED_RULE_FINGERPRINT}")
-    if (REGISTERED_INPUT_DIGEST is not None
-            and values.get("input_digest") != REGISTERED_INPUT_DIGEST):
-        problems.append(
-            f"input_digest: {values.get('input_digest')} is not the registered "
-            f"{REGISTERED_INPUT_DIGEST}")
+            f"preflight: {type(preflight).__name__}, not the frozen input "
+            f"freeze the input digest is derived from")
+    else:
+        # A digest derived from a partial freeze would summarise less than it
+        # appears to, so the freeze has to be whole *before* it is folded.
+        # Absent *or* null.  `build_manifest()` rebuilds the freeze as
+        # `{k: preflight.get(k) for k in PREFLIGHT_FREEZE_FIELDS}`, so a field
+        # the producer never had arrives as a present `None` rather than as a
+        # missing key — a presence check alone would call that complete.
+        missing_fields = [f for f in BJ.PREFLIGHT_FREEZE_FIELDS
+                          if preflight.get(f) is None]
+        if missing_fields:
+            problems.append(
+                f"preflight has no value for {missing_fields}; only a "
+                f"complete freeze may anchor this repair")
+        if preflight.get("ok") is not True:
+            # By identity, not truthiness: `bool("false")` is True, so a freeze
+            # that recorded its own failure would otherwise have anchored a
+            # repair.
+            problems.append(
+                f"preflight.ok is {preflight.get('ok')!r}, not the JSON "
+                f"boolean true; a freeze that did not pass cannot anchor this "
+                f"repair")
+        frozen_fingerprint = preflight.get("rule_fingerprint")
+        if frozen_fingerprint != fingerprint:
+            problems.append(
+                f"preflight.rule_fingerprint {frozen_fingerprint!r} disagrees "
+                f"with the manifest's own {fingerprint!r}")
+        if not problems:
+            try:
+                derived = BJ.preflight_input_digest(preflight)
+            except (BJ.NullShardError, TypeError, ValueError) as error:
+                # Exactly the shapes a JSON freeze can take on: the frozen
+                # deriver raises `NullShardError` for a field it can name, and
+                # `TypeError`/`ValueError` when a field is present but is
+                # `None`, a string where a mapping belongs, or a list.  Nothing
+                # wider — a `RuntimeError` or an `AssertionError` from inside
+                # the frozen module is a defect, and disguising it as
+                # `REPAIR_INPUT_UNQUALIFIED` would blame the manifest for it.
+                problems.append(f"input_digest: cannot be derived from the "
+                                f"manifest's preflight freeze "
+                                f"({type(error).__name__}: {error})")
+            else:
+                if not is_hex64(derived):                # pragma: no cover
+                    problems.append(f"input_digest: derived {derived!r} is not "
+                                    f"64 hex digits")
+                elif (REGISTERED_INPUT_DIGEST is not None
+                      and derived != REGISTERED_INPUT_DIGEST):
+                    problems.append(
+                        f"input_digest: derived {derived} is not the "
+                        f"registered {REGISTERED_INPUT_DIGEST}")
+                else:
+                    values["input_digest"] = derived
+
+    values["split"] = REGISTERED_SPLIT
     if problems:
         raise RepairError(
             INPUT_UNQUALIFIED,
             "the bundle manifest cannot anchor this repair:\n  "
             + "\n  ".join(problems))
-    return values
+    return {field: values[field] for field in IDENTITY_FIELDS}
 
 
 class _UnreadMapping(dict):
@@ -1932,6 +2038,7 @@ def qualify_shards(shard_dir: str, manifest: Mapping[str, object],
         "missing_files": missing_files, "extra_files": extra_files,
         "subdirectories": subdirs,
         "identity_anchor": "folder-id-verified bundle manifest.json",
+        "identity_sources": dict(MANIFEST_IDENTITY_SOURCES),
         "identity": dict(identity),
         "registered_input_digest": REGISTERED_INPUT_DIGEST,
         "input_digest_registration": (
@@ -2920,7 +3027,7 @@ def module_capabilities() -> Tuple[str, ...]:
             "verify_execution_identity", "module_science_digest",
             "SYNTHETIC_FIXTURE_MARKER", "DRIVE_READONLY_SCOPE",
             "ADAPTER_OPERATIONS", "REJECTED_PROPOSAL",
-            "assert_target_safe", "identity_from_manifest",
+            "assert_target_safe", "identity_from_manifest", "MANIFEST_IDENTITY_SOURCES",
             "identity_only_context", "coverage_report",
             "assert_frozen_q5d_unchanged", "frozen_q5d_digests",
             "digest_pair", "normalise_newlines", "artifact_identities",
