@@ -268,8 +268,18 @@ class Sub:
             pix = pymupdf.Pixmap(pix, 0)
         scale = min(w / pix.width, (h - 16) / pix.height)
         dw, dh = pix.width * scale, pix.height * scale
+        # 표시 크기의 2.4배로 줄이고 JPEG로 넣는다. 원본 픽스맵을 그대로 심으면
+        # 실사 사진 8장에 19MB까지 부푼다(2026-08-14 실측).
+        target = int(dw * 2.4)
+        if pix.width > target > 0:
+            s = target / pix.width
+            tmp = pymupdf.open()
+            tp = tmp.new_page(width=pix.width * s, height=pix.height * s)
+            tp.insert_image(tp.rect, pixmap=pix)
+            pix = tp.get_pixmap(dpi=72)
+            tmp.close()
         rect = pymupdf.Rect(x, y, x + dw, y + dh)
-        self.page.insert_image(rect, pixmap=pix)
+        self.page.insert_image(rect, stream=pix.tobytes("jpeg", jpg_quality=72))
         self.page.draw_rect(rect, color=RULE, width=0.7)
         if caption:
             self.page.insert_text((x, y + dh + 11), caption, fontname=FONT_NAME,
@@ -548,6 +558,58 @@ def _render_lines(b: Sub, lines: list[str]):
     flush_table()
 
 
+def _load_card(path: Path) -> dict:
+    raw = path.read_text(encoding="utf-8")
+    if not raw.startswith("---"):
+        return {}
+    _, fm, _ = raw.split("---", 2)
+    return yaml.safe_load(fm) or {}
+
+
+def render_scans(b: Sub, items: list, root: Path):
+    """실사 복원 문항을 같은 파일에 합친다 — 왼쪽 이미지 / 오른쪽 문제·정답.
+
+    이미지는 `.private/` 산출물이므로 이 PDF도 반드시 `.private/` 아래로만 나간다
+    (build()가 강제). 카드의 answer/explanation 은 frontmatter에서만 읽는다."""
+    if not items:
+        return
+    cards = [(it, _load_card(root / it["card"])) for it in items]
+
+    b.section_bar("실사 태깅 문항", "restored scans — quiz")
+    for n, (it, card) in enumerate(cards, 1):
+        b.cur_fig = (it["quiz_image"], f"문제 {n} · 번호핀을 보고 답하시오")
+        if n > 1:
+            b.new_page(plain=True)
+            b.cur_sec = ("실사 태깅 문항", "restored scans — quiz")
+            b._compose_split(cont=True) if b.split else None
+        elif b.split:
+            b._compose_split(cont=False)
+        b.subsection(f"문제 {n}")
+        b.rich(card.get("stem", ""), size=10, leading=15)
+        b.y += 6
+        for i in range(1, 4):
+            b.page.draw_line(pymupdf.Point(b.x0, b.y + 12), pymupdf.Point(b.x1, b.y + 12),
+                             color=RULE, width=0.8)
+            b.y += 22
+        if card.get("needs_review"):
+            b.callout("주의", "검수 대기",
+                      "이 프레임은 필기가 정답 구조 위에 겹쳐 복원 얼룩이 남아 있다. "
+                      "근육 결이 또렷하지 않으니 감안하고 볼 것.")
+
+    b.cur_fig = None
+    b.section_bar("실사 문항 정답 · 해설", "answers")
+    for n, (it, card) in enumerate(cards, 1):
+        b.cur_fig = (it.get("clean_image") or it["quiz_image"],
+                     f"정답 {n} · 라벨판(필기만 제거)")
+        b.new_page(plain=True)
+        b.cur_sec = ("실사 문항 정답 · 해설", "answers")
+        if b.split:
+            b._compose_split(cont=True)
+        b.subsection(f"정답 {n}")
+        b.callout("기출", card.get("answer", ""), card.get("explanation", ""))
+    b.cur_fig = None
+
+
 def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
     raw = card_path.read_text(encoding="utf-8")
     if not raw.startswith("---"):
@@ -569,6 +631,7 @@ def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
     if not b.split:
         b.new_page(plain=True)
     render_body(b, body)
+    render_scans(b, meta.get("scan_questions") or [], root)
     b.footer_all()
     try:
         doc.subset_fonts()          # 한글 폰트 통째 삽입 방지(1.7MB → 수십 KB)

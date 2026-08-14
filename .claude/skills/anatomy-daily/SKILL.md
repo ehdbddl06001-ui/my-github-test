@@ -196,19 +196,27 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
   땡시 D-14부터 하루 4개로 램프업. 근거: 해부는 2학점(개요: "해부에 힘 빼지
   말 것"), 땡시 총 66문항. 20개 파일을 전부 처리하지 말고 태깅·예습시험
   후보만 선별한다. 밀리면 3단계 catch-up이 흡수.
-- **Drive 저장(회차 단위 — 실사 자료의 유일한 보관처)**: 실사 복원본은 웹에 못 올리므로
-  회차마다 아래 두 벌을 만든다. 상세는 `docs/ANATOMY_VISUALS.md` §5.
-  1. **PDF 문제집** — `python pipelines/anatomy_pdf.py --manifest <회차 매니페스트>`.
-     매니페스트에 `image_px:900/image_q:50`, `answer_image_px:560/answer_image_q:42` 를
-     넣어 300KB 이하로 만든다(폰트 서브셋 필수 — 없으면 2MB). **채팅 파일 전송**으로
-     보내고, 사용자가 Drive 폴더에 저장하도록 안내한다.
-  2. **텍스트 동반본 Docs** — 문항·정답·해설을 `text/markdown` 으로 Drive 폴더
-     `MedKOS-해부-복원자료`(id `1W2AYQSr-zzKseja7ppukc1uLMh6CgOGl`)에 업로드.
-     문서 머리에 짝이 되는 PDF 파일명을 적어 둔다.
-  - **이미지·PDF를 MCP로 직접 업로드하지 않는다(기본값)**: `base64Content` 로 기능은
-    되지만 파일을 읽어 다시 출력해야 해 **파일 크기의 약 2배**가 토큰으로 나간다
-    (293KB PDF ≈ 22만 토큰, 2026-08-14 실측). 사용자가 명시적으로 요청하고 한도
-    여유를 확인했을 때만 예외.
+- **회차 산출물은 서브노트 한 파일로 합친다(기본)**: 도해 + 표 + **실사 태깅 문항·정답**까지
+  하나의 PDF. 카드 frontmatter에 `layout: split` 과 `scan_questions: [{card, quiz_image,
+  clean_image}]` 를 넣고:
+  ```
+  python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
+      --output .private/anatomy/pdf/subnote-sNN.pdf
+  ```
+  실사 이미지를 합본하므로 그 카드는 `publishable: false`, 출력은 `.private/` 아래.
+  (문제만 빠르게 풀 용도의 `anatomy_pdf.py --manifest` 문제집은 보조 산출물.)
+
+- **매일 전달 — 이것이 일일 루틴의 마무리 단계다**:
+  1. 오늘 갱신된 회차의 서브노트 PDF를 만든다(위 명령).
+  2. **`SendUserFile` 로 사용자에게 보낸다.** 루틴 세션도 이 도구를 쓸 수 있다.
+     사용자가 받은 파일을 Drive 폴더에 저장한다(한 번의 동작).
+  3. Google Drive MCP를 **쓸 수 있으면** 텍스트 동반본(서브노트 카드 본문)을
+     `MedKOS-해부-복원자료`(id `1W2AYQSr-zzKseja7ppukc1uLMh6CgOGl`)에 Docs로 올린다.
+     MCP가 없으면 이 단계만 건너뛰고 보고에 한 줄 남긴다(실행을 멈추지 않는다).
+  - **PDF·이미지를 MCP로 직접 업로드하지 않는다**: `base64Content` 로 기능은 되지만
+    파일을 읽어 다시 출력해야 해 **파일 크기의 약 2배**가 토큰으로 나간다
+    (1.2MB 서브노트 ≈ 90만 토큰 규모, 2026-08-14 실측). 매일 돌릴 수 없는 비용이라
+    기본값은 "올리지 않는다" 이고, 사용자가 명시적으로 요청할 때만 예외다.
 
 ### 답안 표기 규정 (확정본 학습평가 시트 — 문항 answer 필드에 적용)
 

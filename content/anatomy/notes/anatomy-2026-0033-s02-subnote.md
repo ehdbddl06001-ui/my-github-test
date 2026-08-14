@@ -21,10 +21,15 @@ region: multi
 structure_classes: [muscle, artery, nerve]
 exam_phase: tagging-1
 priority: high
-publishable: true
+publishable: false   # 실사 복원본을 합본하므로 웹 게시 금지
 needs_review: false
 source_refs:
   - {source_file_id: "1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm", source_file_name: "2회차(0818) 김홍태pf.pdf", page: null, section: "등 얕은층 근육·볼기부위 실습영상"}
+scan_questions:
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0016.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf1_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf1_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0023.md", quiz_image: ".private/anatomy/render/uploads-b2/pf1_p2_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/pf1_p2_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0024.md", quiz_image: ".private/anatomy/render/uploads-b2/pf1_p8_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/pf1_p8_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0015.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf2_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf2_clean.png"}
 tags: [서브노트, 2회차, 표, 예습시험, 태깅]
 ---
 
