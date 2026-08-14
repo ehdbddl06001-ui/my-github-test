@@ -147,3 +147,55 @@ python pipelines/restore_scan.py --image <page>.png --config <cfg>.json \
 5. `indexer.py --check` → `indexer.py` → `export_anatomy_web.py` → `export_search_web.py`.
 6. `docs/anatomy-data.js` 에 도해가 붙었는지 확인(`grep assets/anatomy`).
 7. 실사 이미지가 커밋에 섞이지 않았는지 `git status` 로 확인(`.private/` 는 gitignore).
+
+---
+
+## 5. 실사 자료를 Drive로 — 무엇이 되고 무엇이 안 되나 (2026-08-14 실측)
+
+실사 복원본은 웹(MedKOS 홈페이지)에 절대 안 올라간다(§0). 그래서 **개인 Drive가 유일한
+보관처**인데, 여기에 결정적인 제약이 있다.
+
+### 왜 클로드가 이미지를 Drive에 직접 못 올리는가
+
+Drive MCP `create_file` 에는 `base64Content` 가 있어 **기능적으로는 가능하다.** 문제는 비용:
+클로드가 그 base64 문자열을 **직접 출력**해야 하고, 출력하려면 먼저 파일을 **읽어 컨텍스트에
+넣어야** 한다 → 파일 크기의 약 **2배**가 토큰으로 나간다.
+
+| 산출물 | 파일 | base64 | 대략 토큰(읽기+쓰기) |
+|---|---|---|---|
+| 회차 실사 문제집 PDF(압축본) | 293KB | 391KB | **약 22만** |
+| 이미지 1장(1000px q55) | 45KB | 60KB | 약 3.5만 |
+
+주간 이용 한도를 통째로 태울 수 있는 규모라, **기본값은 "올리지 않는다"** 이다.
+사용자가 명시적으로 요청하고 한도 여유를 확인했을 때만 예외로 올린다.
+
+### 그래서 실제 배포 경로 (기본값)
+
+| 자료 | 경로 |
+|---|---|
+| 실사 문제집 **PDF**(문제 이미지 + 정답 이미지) | **채팅 파일 전송** → 사용자가 Drive 폴더에 저장(1회 동작) |
+| 실사 문제집 **텍스트 동반본**(문항·정답·해설) | 클로드가 **Drive Docs로 직접 업로드**(텍스트라 비용 없음) |
+| 회차 종합정리(study_guide) | Drive Docs 직접 업로드 |
+| 자체 제작 도해(SVG) | repo + 홈페이지 공개 — Drive에 올릴 필요 없음 |
+
+Drive 폴더 `MedKOS-해부-복원자료`(id `1W2AYQSr-zzKseja7ppukc1uLMh6CgOGl`)에 회차마다
+**"…실사 복원 문제집 — 정답·해설 (PDF 동반본)"** Docs를 올리고, 그 문서 머리에 짝이 되는
+PDF 파일명을 적어 둔다. 사용자가 채팅에서 받은 PDF를 같은 폴더에 저장하면
+**이미지(문제) + 텍스트(검색 가능한 정답)** 두 벌이 한곳에 모인다.
+
+### PDF 만드는 법
+
+```bash
+# 매니페스트: 회차 제목·수업일·범위·개요 + questions[{card, quiz_image, clean_image}]
+python pipelines/anatomy_pdf.py --manifest .private/anatomy/pdf/s02_manifest.json
+```
+
+용량 옵션(매니페스트 키) — **Drive 저장·모바일 열람용 기본값**:
+
+| 키 | 값 | 용도 |
+|---|---|---|
+| `image_px` / `image_q` | 900 / 50 | 문제(퀴즈) 이미지 |
+| `answer_image_px` / `answer_image_q` | 560 / 42 | 정답(라벨판) 이미지 |
+
+폰트 서브셋(`doc.subset_fonts()`)이 들어 있다 — 넣기 전 2002KB → 넣은 뒤 **293KB**.
+한글 폰트를 통째로 심으면 1.7MB를 먹으므로 이 호출을 지우지 말 것.

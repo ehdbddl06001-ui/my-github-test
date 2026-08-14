@@ -320,6 +320,11 @@ def build_study_pdf(card_path: Path, output: str, root: Path = ROOT) -> Path:
         page.insert_font(fontname=FONT_NAME, fontbuffer=b.fontbuf)
         page.insert_text((PAGE_W / 2 - 8, PAGE_H - 24), f"- {n} -",
                          fontname=FONT_NAME, fontsize=9, color=MUTED)
+    # 한글 폰트를 통째로 심으면 1.7MB — 실제 쓴 글자만 남긴다(Drive 업로드 비용 직결).
+    try:
+        doc.subset_fonts()
+    except Exception:
+        pass
     doc.save(str(out), deflate=True, garbage=3)
     doc.close()
     return out
@@ -334,6 +339,11 @@ def build_pdf(manifest: dict, root: Path = ROOT) -> Path:
 
     doc = pymupdf.open()
     b = Builder(doc, _font_buffer())
+    # Drive 업로드본은 바이트가 곧 토큰이라 해상도·품질을 낮춘다(§ANATOMY_VISUALS 5).
+    img_px = int(manifest.get("image_px", 1500))
+    img_q = int(manifest.get("image_q", 82))          # 아래 문제 루프의 q와 이름 충돌 금지
+    ans_px = int(manifest.get("answer_image_px", img_px))
+    ans_q = int(manifest.get("answer_image_q", img_q))
 
     # ── 표지 ───────────────────────────────────────────────
     b.new_page()
@@ -365,7 +375,7 @@ def build_pdf(manifest: dict, root: Path = ROOT) -> Path:
         b.text(card.get("stem", ""), size=11, gap=10)
         quiz = root / q["quiz_image"]
         if quiz.exists():
-            b.image(quiz, max_h=520)
+            b.image(quiz, max_h=520, max_px=img_px, jpg_q=img_q)
         else:
             b.text(f"[이미지 없음: {q['quiz_image']}]", size=10, color=WARN)
 
@@ -378,7 +388,7 @@ def build_pdf(manifest: dict, root: Path = ROOT) -> Path:
         b.text(card.get("explanation", ""), size=10, indent=6, gap=4)
         clean = q.get("clean_image")
         if clean and (root / clean).exists():
-            b.image(root / clean, max_h=280)
+            b.image(root / clean, max_h=280, max_px=ans_px, jpg_q=ans_q)
         b.spacer(8)
 
     # 페이지 번호
@@ -387,6 +397,11 @@ def build_pdf(manifest: dict, root: Path = ROOT) -> Path:
         page.insert_text((PAGE_W / 2 - 8, PAGE_H - 24), f"- {n} -",
                          fontname=FONT_NAME, fontsize=9, color=MUTED)
 
+    # 한글 폰트를 통째로 심으면 1.7MB — 실제 쓴 글자만 남긴다(Drive 업로드 비용 직결).
+    try:
+        doc.subset_fonts()
+    except Exception:
+        pass
     doc.save(str(out), deflate=True, garbage=3)
     doc.close()
     return out
