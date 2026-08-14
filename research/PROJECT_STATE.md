@@ -415,10 +415,21 @@ manifest_anchored_externally true · acceptance_eligible true · problems []
 ```
 
 **등록은 별도 registration PR 이 수행했다**(`applied_automatically: false`).
-네 범주가 **함께** 움직였고, `q5e_leg2_failure_mechanism_audit.py` 의
-`input_identity_registration()` / `assert_registration_is_atomic()` 가 부분 등록을
-`INPUT_IDENTITY_REGISTRATION_PARTIAL` 로 중단시킨다(회귀 테스트가 네 범주를 하나씩
-되돌려 전부 거부되는지 확인한다).
+네 범주가 **함께** 움직였다. 승인된 네 값은 `APPROVED_INPUT_IDENTITY` 한 레코드이고
+public 상수는 거기서 파생된다. 허용 상태는 정확히 둘 — 그 레코드, 또는 기록된 미등록
+상태 — 이고 exact match 로만 판정한다. 혼합은
+`INPUT_IDENTITY_REGISTRATION_PARTIAL`, 둘 중 어느 것도 아닌 값은
+`INPUT_IDENTITY_UNAPPROVED_VALUE` 로 중단한다(`"wrong-folder"` 같은 well-formed
+임의값이 통과하던 결함을 Codex 리뷰에서 잡아 고쳤다 — Decision log D14). 검사는
+**등록 자산을 한 바이트도 읽기 전에** 수행되며, spy 테스트가 부분·미승인 등록에서
+`hash_file_set()`·`subset_file_fold()` 호출 0회를 확인한다.
+
+같은 리뷰에서 **manifest schema 결함**도 잡혔다(D13): Q5-E audit 모듈이 flat
+`manifest['code_sha256']` 을 읽고 있었는데 producer 는 `manifest['code']['sha256']`
+에 쓴다 — 그대로 병합했다면 등록은 '완료'로 기록되면서 실제 discovery 에서 정상
+corrective bundle 이 `DECISION_MISMATCH` 로 탈락했을 것이다. directory contract 와 QA
+target 두 곳을 producer schema 로 정정했고(flat fallback 금지), 테스트 fixture 를
+`BJ.build_manifest()` 기반으로 교체했다.
 
 ```
 MITDB_TREE_AGGREGATE       0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8

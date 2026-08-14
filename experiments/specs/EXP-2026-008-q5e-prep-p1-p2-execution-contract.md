@@ -523,13 +523,16 @@ five move **together or not at all**:
 A bundle identified by one run's folder id and another run's digests is
 identified by neither, so a partial move is worse than none.
 
-**That PR has now been opened** (2026-08-14, see D9–D12).  Atomicity is no
-longer only a rule in this document: `input_identity_registration()` in
-`mit-bih/q5e_leg2_failure_mechanism_audit.py` reports the four code-side
-categories, `assert_registration_is_atomic()` stops on any mixture, and both
-identity gates refuse a half-moved registration before they compare anything.
-A regression test reverts each category one at a time and requires every one of
-those reverts to be refused.
+**That PR has now been opened** (2026-08-14, see D9–D12, revised by D13–D14).
+Atomicity is no longer only a rule in this document: the four accepted values
+are one record, `APPROVED_INPUT_IDENTITY`, from which the public constants are
+derived; `input_identity_registration()` accepts **exactly two** states by
+exact match — that record, or the recorded pre-registration one — and
+`assert_registration_is_atomic()` stops on a mixture
+(`INPUT_IDENTITY_REGISTRATION_PARTIAL`) or on a value belonging to neither
+(`INPUT_IDENTITY_UNAPPROVED_VALUE`).  The check runs before any registered byte
+is read.  Regression tests revert each category one at a time, and separately
+supply well-formed but unapproved values, and require every one to be refused.
 
 P3, M0–M4 and the Q5-E analysis proper stay sealed regardless: registration is
 an input identity, not an execution approval.
@@ -1343,6 +1346,80 @@ executed notebook or the unexecuted template.  It does not open P3, implement
 it, or soften its stop.  It does not raise this contract's `status`, which
 stays `approved_for_implementation`, and it does not promote Q5-E to
 `approved_for_execution`.
+
+### D13 — the same manifest-schema defect existed in the Q5-E audit module
+
+Codex's review of the registration PR found that D7's finding had been fixed in
+the PREP module only.  `mit-bih/q5e_leg2_failure_mechanism_audit.py` still read
+a flat `manifest['code_sha256']` in **two** places — the directory contract and
+the QA reproduction target — and no producer has ever written that key.
+
+This is not a future item.  Against a real bundle the flat read resolves to
+`""`, so merging the registration alone would have recorded P1/P2 as complete
+while `discover_registered_inputs()` rejected the registered corrective bundle
+with `DECISION_MISMATCH`.  A registration that cannot be used is not a
+registration.
+
+Fixed as a **schema correction**, reading what the frozen producer already
+writes.  Nothing was relaxed after seeing a result:
+
+- `manifest['code']` must be a mapping, and the digest is read from
+  `manifest['code']['sha256']`;
+- `rule_fingerprint` stays where it is, at the top level;
+- no flat-field fallback and no raw/LF alternative — a second accepted spelling
+  is how the schema drifted in the first place;
+- missing, null, wrongly typed and malformed `code` become structured problems
+  under `DECISION_MISMATCH` with the field named, never raised, and nothing in
+  the reader calls the frozen module, so no unrelated exception can be
+  relabelled as a manifest defect.
+
+The fixtures were the reason the suite could not catch it: they were
+hand-written flat dicts authored from the same belief as the code.  Every
+manifest fixture in `test_q5e_leg2_failure_mechanism_audit.py` is now produced
+by `BJ.build_manifest()`, with `code.sha256` pinned afterwards to the
+registered LF identity so a CRLF checkout cannot make the fixture impersonate
+the machine running it.  A regression test requires the flat legacy shape to
+**stop**.
+
+### D14 — "registered" now means the approved value, not merely a changed one
+
+Codex's review also found that the atomicity check accepted arbitrary
+identities.  It asked only whether a category *differed* from its
+pre-registration value, with well-formedness reduced to a non-empty string, so
+`SOURCE_BUNDLE_FOLDER_ID = "wrong-folder"` — and any syntactically valid 64-hex
+aggregate, and any five 64-hex digests under the right keys — passed as a
+complete, atomic, well-formed registration.  A check that accepts every value
+except one is not an identity check.  The tests missed it because they only
+ever reverted values to the historical ones.
+
+The four accepted values are now one record, `APPROVED_INPUT_IDENTITY`, and the
+public constants are derived from it rather than restated beside it.  Exactly
+two states are accepted, each by exact match:
+
+1. `APPROVED_INPUT_IDENTITY` — the registration this entry records;
+2. `UNREGISTERED_INPUT_IDENTITY` — this module before it.
+
+A mixture of the two is `INPUT_IDENTITY_REGISTRATION_PARTIAL`.  A value
+belonging to neither is `INPUT_IDENTITY_UNAPPROVED_VALUE`, which is reported in
+preference because it is the more specific failure.  Counterexample tests cover
+arbitrary folder and run strings, a plausible-looking unapproved folder id, an
+arbitrary aggregate, an aggregate sharing the registered `0b46a411` prefix, five
+arbitrary digests, one-of-five replaced, and the run and folder id swapped.
+
+The record is not self-certifying and no in-repository constant can be: an edit
+to it moves the target it is compared against.  What backs it is outside the
+module — this Decision log, `research/ASSETS.md`, and a regression test pinning
+all four values as literals.
+
+**Ordering corrected with it.**  `assert_registration_is_atomic()` claimed to
+stop before anything is opened, while the gates hashed the tree and folded the
+five files first.  A static registration error is decidable from the module
+alone, so the check now runs immediately after the approval check and before
+any read, in `verify_mitdb_identity()`, `verify_bundle_content_identity()`,
+`discover_registered_inputs()` and `reverify_registered_inputs()`.  A spy test
+requires zero `hash_file_set()` and zero `subset_file_fold()` calls under a
+partial or unapproved registration — and, so the test cannot pass on a module
+that reads nothing, requires the accepted registration to reach the fold.
 
 ### Position in the Order
 

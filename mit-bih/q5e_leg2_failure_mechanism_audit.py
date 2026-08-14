@@ -66,9 +66,43 @@ SPEC_PATH = ("experiments/specs/"
 #: EXP-2026-009 on 2026-08-13 — see :data:`SOURCE_BUNDLE_PROVENANCE` for what
 #: that does and does not mean.  It is *not* the folder EXP-2026-007 published,
 #: and no EXP-2026-007 execution ever produced a twelve-file bundle.
-SOURCE_BUNDLE_RUN = ("20260813T000000_EXP-2026-009_q5d_null_artifact_repair_"
-                     "corrective")
-SOURCE_BUNDLE_FOLDER_ID = "1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH"
+#: The accepted registration, as **one record**.  Every public constant below
+#: is derived from it rather than restated beside it.
+#:
+#: Restating them was a real defect and not a hypothetical one: the first
+#: version of this registration checked the folder id and run only for being
+#: *different from* the pre-registration values, so `"wrong-folder"` and
+#: `"wrong-run"` passed as a complete, atomic, well-formed registration.  A
+#: check that accepts any value except one is not an identity check.  The
+#: accepted states are now exactly two — this record, or the historical
+#: unregistered one — and everything else stops.
+#:
+#: This record is not self-certifying, and nothing in a repository can be: an
+#: edit here moves the target it is compared against.  What backs it is
+#: outside the module — `research/ASSETS.md`, the execution contract's D9-D12,
+#: and a regression test that pins all four values as literals.
+APPROVED_INPUT_IDENTITY: Dict[str, object] = {
+    "mitdb_tree_aggregate":
+        "0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8",
+    "source_bundle_folder_id": "1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH",
+    "source_bundle_run": ("20260813T000000_EXP-2026-009_q5d_null_artifact_"
+                          "repair_corrective"),
+    "source_bundle_file_sha256": {
+        "decision.json":
+            "d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5",
+        "join_map.parquet":
+            "dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971",
+        "manifest.json":
+            "4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c",
+        "record_class_coverage.csv":
+            "e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec",
+        "unmatched_and_ambiguous.csv":
+            "b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f",
+    },
+}
+
+SOURCE_BUNDLE_RUN = str(APPROVED_INPUT_IDENTITY["source_bundle_run"])
+SOURCE_BUNDLE_FOLDER_ID = str(APPROVED_INPUT_IDENTITY["source_bundle_folder_id"])
 
 #: The EXP-2026-007 run whose eleven files the corrective bundle copies
 #: byte-identically, and the folder the 2026-08-12 PREP run read and stopped on
@@ -79,6 +113,17 @@ SOURCE_BUNDLE_FOLDER_ID = "1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH"
 #: digests.
 ORIGINAL_PRODUCER_RUN = "20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE"
 ORIGINAL_PRODUCER_FOLDER_ID = "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd"
+
+#: The **only** other accepted state: this module before the 2026-08-14
+#: registration.  Kept so that "unregistered" is an exact match against a
+#: recorded state rather than "does not happen to equal the approved one",
+#: which is how an arbitrary value slipped through the first version.
+UNREGISTERED_INPUT_IDENTITY: Dict[str, object] = {
+    "mitdb_tree_aggregate": None,
+    "source_bundle_folder_id": ORIGINAL_PRODUCER_FOLDER_ID,
+    "source_bundle_run": ORIGINAL_PRODUCER_RUN,
+    "source_bundle_file_sha256": {},
+}
 
 #: Where the registered bundle came from, in the terms the acceptance fixed.
 #: This is a provenance record, not a gate: nothing here is compared against an
@@ -889,9 +934,17 @@ def verify_qa_targets(rows: Sequence[Mapping[str, object]],
     targets["rule_fingerprint"] = {
         "expected": expected_fp, "observed": fingerprint,
         "ok": fingerprint == expected_fp}
-    code = str(manifest.get("code_sha256") or "")
+    # Read from the producer's schema, not a flat key no producer writes.  The
+    # same defect that broke `verify_bundle_directory_contract` lived here too:
+    # against a real manifest `manifest['code_sha256']` resolves to `""`, so
+    # this QA target failed on every canonical bundle for a reason that had
+    # nothing to do with the bundle.  One reader, one spelling.
+    code_block = manifest.get("code")
+    code = (str(code_block.get("sha256") or "")
+            if isinstance(code_block, Mapping) else "")
     targets["producing_code_sha256"] = {
         "expected": expected_code, "observed": code,
+        "read_from": MANIFEST_IDENTITY_SOURCES["code_sha256"],
         "ok": code == expected_code}
     ok = all(entry["ok"] for entry in targets.values())
     return {"targets": targets, "ok": ok, "target_set": target_set,
@@ -3227,8 +3280,9 @@ DISCOVERED_PATH_KEYS: Tuple[str, ...] = (
 #: list plus the separately registered digest of the list itself — observed
 #: identically by the `20260812T123035` and `20260814T104835` runs, and
 #: registered here on 2026-08-14 together with the spec.
+#: Derived from :data:`APPROVED_INPUT_IDENTITY`, never restated beside it.
 MITDB_TREE_AGGREGATE: Optional[str] = (
-    "0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8")
+    APPROVED_INPUT_IDENTITY["mitdb_tree_aggregate"])
 INPUT_IDENTITY_REGISTRATION_REQUIRED = "INPUT_IDENTITY_REGISTRATION_REQUIRED"
 #: `SHA256SUMS.txt` cannot appear in its own list, so the frozen verifier skips
 #: it and covers the other 146 files.  Its own digest is registered separately
@@ -3251,18 +3305,9 @@ MITDB_PUBLISHER_LISTED_FILES = 146
 #: children.  These five files — not the other seven — are the scientific input
 #: identity of Q5-E, and the fold over exactly these five is what
 #: :func:`subset_file_fold` recomputes at run time.
-SOURCE_BUNDLE_FILE_SHA256: Dict[str, str] = {
-    "decision.json":
-        "d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5",
-    "join_map.parquet":
-        "dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971",
-    "manifest.json":
-        "4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c",
-    "record_class_coverage.csv":
-        "e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec",
-    "unmatched_and_ambiguous.csv":
-        "b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f",
-}
+#: Derived from :data:`APPROVED_INPUT_IDENTITY`, never restated beside it.
+SOURCE_BUNDLE_FILE_SHA256: Dict[str, str] = dict(
+    APPROVED_INPUT_IDENTITY["source_bundle_file_sha256"])
 SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED = "SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -3283,6 +3328,10 @@ SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED = "SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED"
 # Q5-E runtime constant and none may become one.
 # ─────────────────────────────────────────────────────────────────────────────
 INPUT_IDENTITY_REGISTRATION_PARTIAL = "INPUT_IDENTITY_REGISTRATION_PARTIAL"
+#: A value that is neither the approved one nor the recorded historical one.
+#: Distinct from `PARTIAL` on purpose: a mixture of two known states and a
+#: value nobody ever approved are different failures and want different words.
+INPUT_IDENTITY_UNAPPROVED_VALUE = "INPUT_IDENTITY_UNAPPROVED_VALUE"
 #: The four things the registration PR moves, in the order the contract lists
 #: them.  Naming them makes "all four or none" checkable instead of asserted.
 REGISTRATION_CATEGORIES: Tuple[str, ...] = (
@@ -3290,76 +3339,101 @@ REGISTRATION_CATEGORIES: Tuple[str, ...] = (
     "source_bundle_file_sha256")
 
 
-def input_identity_registration() -> Dict[str, object]:
-    """Are all four P1/P2 registration categories present, or all four absent?
-
-    Returns the per-category state and three summary facts: `registered` (all
-    four moved), `unregistered` (none moved) and `atomic` (one of those two is
-    true).  A partial registration is neither, and every caller below treats it
-    as a terminal stop — `INPUT_IDENTITY_REGISTRATION_PARTIAL` — rather than
-    verifying the categories that happen to be present.
-
-    `source_bundle_folder_id` and `source_bundle_run` always hold *some*
-    string, so "registered" for them means "names the corrective bundle the
-    2026-08-14 PREP verified" rather than "is non-empty"; the pre-registration
-    values are still in the module as :data:`ORIGINAL_PRODUCER_FOLDER_ID` and
-    :data:`ORIGINAL_PRODUCER_RUN`, which is exactly what makes the distinction
-    decidable.
-    """
-    digests = registered_bundle_digests_complete()
-    categories: Dict[str, Dict[str, object]] = {
-        "mitdb_tree_aggregate": {
-            "registered": MITDB_TREE_AGGREGATE is not None,
-            "well_formed": _is_sha256(MITDB_TREE_AGGREGATE),
-            "value": MITDB_TREE_AGGREGATE,
-        },
-        "source_bundle_folder_id": {
-            "registered":
-                SOURCE_BUNDLE_FOLDER_ID != ORIGINAL_PRODUCER_FOLDER_ID,
-            "well_formed": bool(SOURCE_BUNDLE_FOLDER_ID),
-            "value": SOURCE_BUNDLE_FOLDER_ID,
-        },
-        "source_bundle_run": {
-            "registered": SOURCE_BUNDLE_RUN != ORIGINAL_PRODUCER_RUN,
-            "well_formed": bool(SOURCE_BUNDLE_RUN),
-            "value": SOURCE_BUNDLE_RUN,
-        },
-        "source_bundle_file_sha256": {
-            "registered": bool(digests["registered"]),
-            "well_formed": bool(digests["complete"]),
-            "value": sorted(SOURCE_BUNDLE_FILE_SHA256),
-        },
+def current_input_identity() -> Dict[str, object]:
+    """The four registration constants as they stand right now."""
+    return {
+        "mitdb_tree_aggregate": MITDB_TREE_AGGREGATE,
+        "source_bundle_folder_id": SOURCE_BUNDLE_FOLDER_ID,
+        "source_bundle_run": SOURCE_BUNDLE_RUN,
+        "source_bundle_file_sha256": dict(SOURCE_BUNDLE_FILE_SHA256),
     }
-    moved = sorted(name for name in REGISTRATION_CATEGORIES
-                   if categories[name]["registered"])
-    absent = sorted(name for name in REGISTRATION_CATEGORIES
-                    if not categories[name]["registered"])
+
+
+def input_identity_registration() -> Dict[str, object]:
+    """Is the input identity **exactly** one of the two states that exist?
+
+    Exactly two states are accepted, and each by exact match against a recorded
+    record: :data:`APPROVED_INPUT_IDENTITY` — what Codex accepted on
+    2026-08-14 — and :data:`UNREGISTERED_INPUT_IDENTITY`, this module before
+    that PR.  Anything else stops.
+
+    The first version of this function asked a weaker question: it treated a
+    category as registered when it merely *differed* from the pre-registration
+    value, with well-formedness reduced to a non-empty string.  Under that rule
+    `SOURCE_BUNDLE_FOLDER_ID = "wrong-folder"` and an arbitrary but
+    syntactically valid 64-hex aggregate were reported as a complete, atomic,
+    well-formed registration.  A check that accepts every value except one is
+    not an identity check, and the tests missed it because they only ever
+    reverted values to the historical ones.
+
+    Three summary facts come back: `registered` (all four match the approved
+    record), `unregistered` (all four match the historical one) and `atomic`
+    (one of those two holds).  A mixture of the two known states is
+    `INPUT_IDENTITY_REGISTRATION_PARTIAL`; a value belonging to neither is
+    `INPUT_IDENTITY_UNAPPROVED_VALUE`, which takes precedence because it is the
+    more specific failure.
+    """
+    current = current_input_identity()
+    categories: Dict[str, Dict[str, object]] = {}
+    for name in REGISTRATION_CATEGORIES:
+        value = current[name]
+        matches_approved = value == APPROVED_INPUT_IDENTITY[name]
+        matches_historical = value == UNREGISTERED_INPUT_IDENTITY[name]
+        categories[name] = {
+            "registered": matches_approved,
+            "unregistered": matches_historical,
+            "known": matches_approved or matches_historical,
+            "value": sorted(value) if isinstance(value, dict) else value,
+        }
+    approved = sorted(n for n in REGISTRATION_CATEGORIES
+                      if categories[n]["registered"])
+    historical = sorted(n for n in REGISTRATION_CATEGORIES
+                        if categories[n]["unregistered"])
+    unknown = sorted(n for n in REGISTRATION_CATEGORIES
+                     if not categories[n]["known"])
+
     problems: List[str] = []
-    if moved and absent:
+    reason: Optional[str] = None
+    if unknown:
+        reason = INPUT_IDENTITY_UNAPPROVED_VALUE
         problems.append(
-            f"{INPUT_IDENTITY_REGISTRATION_PARTIAL}: registered {moved} but "
-            f"not {absent}.  A bundle identified by one run's folder id and "
-            f"another run's digests is identified by neither, so the four "
+            f"{INPUT_IDENTITY_UNAPPROVED_VALUE}: {unknown} hold values that "
+            f"are neither the approved registration nor the recorded "
+            f"pre-registration state.  An input identity is not 'anything but "
+            f"the old value'; it is the value the acceptance names, and "
+            f"nothing else is registered by being different.")
+    elif approved and historical:
+        reason = INPUT_IDENTITY_REGISTRATION_PARTIAL
+        problems.append(
+            f"{INPUT_IDENTITY_REGISTRATION_PARTIAL}: registered {approved} but "
+            f"not {historical}.  A bundle identified by one run's folder id "
+            f"and another run's digests is identified by neither, so the four "
             f"categories move together or not at all.")
-    if moved:
-        problems.extend(
-            f"{name}: registered but malformed" for name in moved
-            if not categories[name]["well_formed"])
-    problems.extend(digests["problems"])
-    return {"categories": categories, "categories_order":
-            list(REGISTRATION_CATEGORIES),
-            "registered": not absent, "unregistered": not moved,
-            "atomic": not (moved and absent),
-            "registered_categories": moved,
-            "unregistered_categories": absent,
+    # Reported for diagnostics; the exact-match comparison above is what
+    # decides, so a well-formed-but-wrong map can no longer pass here.
+    digests = registered_bundle_digests_complete()
+    return {"categories": categories,
+            "categories_order": list(REGISTRATION_CATEGORIES),
+            "registered": not historical and not unknown,
+            "unregistered": not approved and not unknown,
+            "atomic": not problems,
+            "registered_categories": approved,
+            "unregistered_categories": historical,
+            "unapproved_categories": unknown,
+            "digest_registration": digests,
             "ok": not problems,
-            "reason": None if not problems
-            else INPUT_IDENTITY_REGISTRATION_PARTIAL,
+            "reason": reason,
             "problems": problems}
 
 
 def assert_registration_is_atomic() -> Dict[str, object]:
-    """Stop on a half-moved registration, before anything is opened."""
+    """Stop on a half-moved or unapproved registration.
+
+    Callers invoke this **before** reading anything: a static registration
+    error is decidable from the module alone, so hashing a registered artifact
+    first would be work done in support of a conclusion that cannot be reached,
+    and would open assets on behalf of a registration nobody approved.
+    """
     state = input_identity_registration()
     if not state["ok"]:
         raise DiagnosticInputMismatch(
@@ -3414,6 +3488,87 @@ def subset_file_fold(directory: str, names: Sequence[str],
                          else [f"{directory}: missing {missing}"])}
 
 
+#: Where each producing-identity field actually lives in a manifest the frozen
+#: Q5-D module wrote.  Recorded rather than inferred, and reported beside the
+#: values, so a reader can see which field a digest came from.
+MANIFEST_IDENTITY_SOURCES: Dict[str, str] = {
+    "code_sha256": "manifest['code']['sha256'] (nested, from "
+                   "assert_implementation_only())",
+    "rule_fingerprint": "manifest['rule_fingerprint'] (top level)",
+}
+MANIFEST_SCHEMA_MISMATCH = "MANIFEST_SCHEMA_MISMATCH"
+
+
+def manifest_producing_identity(manifest: Mapping[str, object]
+                                ) -> Tuple[Dict[str, object], List[str]]:
+    """Read the producing identity from where the producer actually writes it.
+
+    `BJ.build_manifest()` records the module digest **nested**, at
+    ``manifest['code']['sha256']`` — `code` is the mapping
+    `assert_implementation_only()` returns — and the rule fingerprint at the
+    top level.  This gate previously read a flat ``manifest['code_sha256']``,
+    which no producer has ever written: against a real bundle it resolved to
+    `""` and the directory contract failed for a reason that had nothing to do
+    with the bundle.  The registration would then have been recorded as
+    complete while every canonical bundle was rejected at discovery.
+
+    The same defect was found and fixed in the PREP module on 2026-08-14 (D7);
+    it survived here because this suite's fixture was a hand-written flat dict,
+    authored from the same belief as the code, so the tests could confirm the
+    belief and never test it.  The fixture is now built by `BJ.build_manifest()`
+    itself.
+
+    Both fields are matched **exactly**.  There is no flat-field fallback and
+    no raw/LF alternative: accepting a second spelling would let the schema
+    this function exists to pin drift again, and returning one digest while the
+    artifact carries another would hand the caller an identity it does not
+    have.
+
+    Malformed, missing, null and wrongly typed fields come back as `problems`
+    and are never raised.  Nothing here calls into the frozen module, so there
+    is no exception to catch and no way for an unrelated `RuntimeError` to be
+    relabelled as a manifest defect.
+    """
+    problems: List[str] = []
+    observed: Dict[str, object] = {
+        "code_sha256": "", "rule_fingerprint": "",
+        "read_from": dict(MANIFEST_IDENTITY_SOURCES),
+    }
+
+    code = manifest.get("code")
+    if not isinstance(code, Mapping):
+        problems.append(
+            f"manifest code: {type(code).__name__}, not the mapping the "
+            f"producer writes under manifest['code'].  The module digest lives "
+            f"at manifest['code']['sha256']; a flat manifest['code_sha256'] is "
+            f"not this schema and is not accepted as one.")
+    else:
+        code_sha = code.get("sha256")
+        if not isinstance(code_sha, str) or not _is_sha256(code_sha):
+            problems.append(
+                f"manifest code.sha256: {code_sha!r} is not a lowercase "
+                f"64-hex string")
+        else:
+            observed["code_sha256"] = code_sha
+            if code_sha != PRODUCING_CODE_SHA256:
+                problems.append(
+                    f"manifest code.sha256 {code_sha!r} != "
+                    f"{PRODUCING_CODE_SHA256!r}")
+
+    fingerprint = manifest.get("rule_fingerprint")
+    if not isinstance(fingerprint, str) or not _is_sha256(fingerprint):
+        problems.append(
+            f"manifest rule_fingerprint: {fingerprint!r} is not a lowercase "
+            f"64-hex string at the manifest's top level")
+    else:
+        observed["rule_fingerprint"] = fingerprint
+        if fingerprint != REGISTERED_RULE_FINGERPRINT:
+            problems.append(
+                f"manifest rule_fingerprint {fingerprint!r} != "
+                f"{REGISTERED_RULE_FINGERPRINT!r}")
+    return observed, problems
+
+
 def verify_bundle_directory_contract(directory: str, approval: Optional[str]
                                      ) -> Dict[str, object]:
     """The **whole** Q5-D run bundle is complete and unmodified in shape.
@@ -3431,30 +3586,35 @@ def verify_bundle_directory_contract(directory: str, approval: Optional[str]
             f"{SUPERSEDED_MARKER} present: this is a superseded bundle")
     full = BJ.hash_file_set(directory, BJ.BUNDLE_FILES, approval=_bj(approval))
     problems.extend(full.get("problems", ()))
-    code = fingerprint = ""
+    identity: Dict[str, object] = {"code_sha256": "", "rule_fingerprint": "",
+                                   "read_from": dict(MANIFEST_IDENTITY_SOURCES)}
     manifest_path = os.path.join(directory, "manifest.json")
-    if os.path.exists(manifest_path):
+    if not os.path.exists(manifest_path):
+        problems.append("manifest.json is absent")
+    else:
         try:
             with open(manifest_path, encoding="utf-8") as handle:
                 manifest = json.load(handle)
-            code = str(manifest.get("code_sha256") or "")
-            fingerprint = str(manifest.get("rule_fingerprint") or "")
         except (OSError, ValueError) as error:
             problems.append(f"manifest.json is unreadable: {error}")
-    if code != PRODUCING_CODE_SHA256:
-        problems.append(
-            f"manifest code_sha256 {code!r} != {PRODUCING_CODE_SHA256!r}")
-    if fingerprint != REGISTERED_RULE_FINGERPRINT:
-        problems.append(
-            f"manifest rule_fingerprint {fingerprint!r} != "
-            f"{REGISTERED_RULE_FINGERPRINT!r}")
+        else:
+            if not isinstance(manifest, Mapping):
+                problems.append(
+                    f"manifest.json holds a {type(manifest).__name__}, not an "
+                    f"object")
+            else:
+                identity, manifest_problems = manifest_producing_identity(
+                    manifest)
+                problems.extend(manifest_problems)
     return {"gate": "bundle_directory", "ok": not problems,
             "reason": None if not problems else DECISION_MISMATCH,
             "directory": directory, "n_files": full.get("n_files"),
             "missing": list(full.get("missing", ())),
             "unexpected": list(full.get("extra", ())),
             "full_aggregate": full.get("aggregate"),
-            "code_sha256": code, "rule_fingerprint": fingerprint,
+            "code_sha256": identity["code_sha256"],
+            "rule_fingerprint": identity["rule_fingerprint"],
+            "manifest_identity": identity,
             "problems": problems}
 
 
@@ -3602,6 +3762,20 @@ def verify_mitdb_identity(directory: str, approval: Optional[str]
     checksums alone.
     """
     require_execution_approval(approval, f"MIT-BIH tree at {directory!r}")
+    # Registration state is decided from the module alone, so it is checked
+    # here — after approval, before a single file is hashed.  Reading 147 files
+    # to then report a static registration error would open registered assets
+    # on behalf of a registration nobody approved.
+    registration = input_identity_registration()
+    if not registration["ok"]:
+        return {"gate": "mitdb_identity", "ok": False,
+                "reason": registration["reason"],
+                "observed_aggregate": None,
+                "registered_aggregate": MITDB_TREE_AGGREGATE,
+                "registration": registration,
+                "publisher_checksums": {}, "integrity": {},
+                "files_read": 0,
+                "problems": list(registration["problems"])}
     # `mitdb_expected_files()` already contains SHA256SUMS.txt, so it is passed
     # exactly as-is.  Appending the checksum file again would be a false
     # statement of the contract even where set semantics hide the effect.
@@ -3653,16 +3827,8 @@ def verify_mitdb_identity(directory: str, approval: Optional[str]
 
     observed = str(file_set.get("aggregate") or "")
     base = {"gate": "mitdb_identity", "observed_aggregate": observed,
-            "publisher_checksums": published, "integrity": integrity}
-    registration = input_identity_registration()
-    if not registration["ok"]:
-        # A half-moved registration is not a weaker version of a registered
-        # one: it identifies nothing.  Reported before the aggregate is even
-        # compared, so no category can be verified on its own.
-        return {**base, "ok": False, "reason": registration["reason"],
-                "registered_aggregate": MITDB_TREE_AGGREGATE,
-                "registration": registration,
-                "problems": problems + list(registration["problems"])}
+            "publisher_checksums": published, "integrity": integrity,
+            "registration": registration, "files_read": len(names)}
     if MITDB_TREE_AGGREGATE is None:
         return {**base, "ok": False,
                 "reason": INPUT_IDENTITY_REGISTRATION_REQUIRED,
@@ -3695,17 +3861,18 @@ def verify_bundle_content_identity(directory: str, approval: Optional[str]
     when their digests have never been frozen.
     """
     require_execution_approval(approval, f"bundle contents at {directory!r}")
-    subset = subset_file_fold(directory, BUNDLE_INPUT_FILES, approval)
-    observed = {f["name"]: f["sha256"] for f in subset["files"]}
+    # Before the fold, for the same reason as in `verify_mitdb_identity`: a
+    # static registration error needs no bytes to decide, and folding the five
+    # files first would open them for a registration that is not accepted.
     registration = input_identity_registration()
     if not registration["ok"]:
         return {"gate": "bundle_content_identity", "ok": False,
                 "reason": registration["reason"],
-                "observed": observed,
-                "registered": dict(SOURCE_BUNDLE_FILE_SHA256),
-                "subset_fold": subset["aggregate"],
-                "registration": registration,
+                "observed": {}, "registered": dict(SOURCE_BUNDLE_FILE_SHA256),
+                "subset_fold": None, "registration": registration,
                 "problems": list(registration["problems"])}
+    subset = subset_file_fold(directory, BUNDLE_INPUT_FILES, approval)
+    observed = {f["name"]: f["sha256"] for f in subset["files"]}
     if not SOURCE_BUNDLE_FILE_SHA256:
         return {"gate": "bundle_content_identity", "ok": False,
                 "reason": SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED,
@@ -3752,6 +3919,9 @@ def discover_registered_inputs(search_root: str, approval: Optional[str]
     before it runs.
     """
     require_execution_approval(approval, f"input discovery under {search_root!r}")
+    # Before the walk: an unapproved or half-moved registration is decidable
+    # without touching the mount, and discovery is the widest reader here.
+    assert_registration_is_atomic()
     found: Dict[str, object] = {}
     audit: Dict[str, object] = {}
 
@@ -3912,6 +4082,7 @@ def reverify_registered_inputs(paths: Mapping[str, object],
     resolved = {key: str(paths[key]) for key in DISCOVERED_PATH_KEYS}
     require_execution_approval(
         approval, f"re-verification of {resolved['bundle_dir']!r}")
+    assert_registration_is_atomic()
 
     checks: List[Dict[str, object]] = []
 

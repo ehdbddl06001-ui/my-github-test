@@ -53,7 +53,8 @@ seals are unchanged by this document.
 stops are closed: the MIT-BIH tree aggregate (P1) and the canonical bundle's
 five per-file digests, run and folder id (P2) are registered — see §Inputs and
 the Decision log entry of the same date.  **`SOURCE_MATCH_EQUIVALENCE_REQUIRED`
-(P3) is the only remaining stop.**  Registering an input identity is not step 6:
+(P3) is the only remaining stop.**  P1/P2 registration **is** Order step 6 of
+the PREP execution contract, but it is not Q5-E scientific execution approval:
 it does not approve execution, and `status` stays
 `approved_for_implementation`.
 

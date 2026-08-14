@@ -38,6 +38,82 @@ NOTEBOOK = os.path.join(
 PASSED = 0
 
 
+def producer_manifest(code=None, fingerprint=None, **overrides):
+    """A manifest with the producer's **schema** and the registered identity.
+
+    Two different things, and each has to come from a different place.
+
+    *Structure* comes from `BJ.build_manifest()` itself.  Every fixture in this
+    file used to be a hand-written `{"code_sha256": ...}` flat dict — authored
+    from the same belief as the code under test, so the suite could only
+    confirm that belief and never test it.  The producer nests the digest at
+    `manifest['code']['sha256']`, and against a real bundle the flat read
+    resolved to `""`: the directory contract and the QA gate would have
+    rejected every canonical bundle while the registration was recorded as
+    complete.  A fixture built by the producer cannot make that mistake,
+    because it is not guessing.
+
+    *Identity* is then pinned to `Q5E.PRODUCING_CODE_SHA256`.
+    `build_manifest()` records `sha256_file()` over the frozen module **as it
+    exists in whatever checkout is running the test**, which on a CRLF checkout
+    is that checkout's own newline digest rather than the registered artifact's
+    LF identity.  Left unpinned, the fixture would impersonate the machine
+    running it, and the suite would pass on Linux and fail on Windows for a
+    reason unrelated to the code.
+    """
+    manifest = BJ.build_manifest({}, "20260811T035108")
+    manifest["code"] = dict(manifest["code"],
+                            sha256=code or Q5E.PRODUCING_CODE_SHA256)
+    if fingerprint is not None:
+        manifest["rule_fingerprint"] = fingerprint
+    manifest.update(overrides)
+    return manifest
+
+
+class patched_registration(object):
+    """Move the approved record and the derived constants **together**.
+
+    Now that the module accepts exactly two identity states, a test that
+    patches `SOURCE_BUNDLE_FILE_SHA256` alone leaves the module in the third,
+    forbidden state and every gate stops before it does anything — which is
+    correct behaviour and useless for exercising the comparison underneath.
+    So a fixture that wants a different registration says so coherently: it
+    changes what was approved, not just what the constant happens to hold.
+
+    Patching only one of the two is exactly the drift the exact-match check
+    exists to catch, so it is not offered here.
+    """
+
+    KEYS = {"mitdb_tree_aggregate": "MITDB_TREE_AGGREGATE",
+            "source_bundle_folder_id": "SOURCE_BUNDLE_FOLDER_ID",
+            "source_bundle_run": "SOURCE_BUNDLE_RUN",
+            "source_bundle_file_sha256": "SOURCE_BUNDLE_FILE_SHA256"}
+
+    def __init__(self, **overrides):
+        unknown = set(overrides) - set(self.KEYS)
+        if unknown:
+            raise AssertionError(f"not registration categories: {unknown}")
+        self.overrides = overrides
+        self.saved_record = None
+        self.saved_constants = {}
+
+    def __enter__(self):
+        self.saved_record = dict(Q5E.APPROVED_INPUT_IDENTITY)
+        self.saved_constants = {attr: getattr(Q5E, attr)
+                                for attr in self.KEYS.values()}
+        for category, value in self.overrides.items():
+            Q5E.APPROVED_INPUT_IDENTITY[category] = value
+            setattr(Q5E, self.KEYS[category], value)
+        return self
+
+    def __exit__(self, *exc):
+        Q5E.APPROVED_INPUT_IDENTITY.clear()
+        Q5E.APPROVED_INPUT_IDENTITY.update(self.saved_record)
+        for attr, value in self.saved_constants.items():
+            setattr(Q5E, attr, value)
+        return False
+
+
 def check(condition: bool, label: str) -> None:
     global PASSED
     if not condition:
@@ -458,7 +534,7 @@ def test_no_registered_mechanism_is_a_first_class_outcome():
 def test_qa_targets_and_mismatch():
     rows = tiny_bundle()
     decision = {"rule_fingerprint": Q5E.REGISTERED_RULE_FINGERPRINT}
-    manifest = {"code_sha256": Q5E.PRODUCING_CODE_SHA256}
+    manifest = producer_manifest()
     report = Q5E.verify_qa_targets(rows, decision, manifest)
     check(report["ok"] is False,
           "a synthetic bundle cannot reproduce the registered counts")
@@ -1427,7 +1503,7 @@ def _e2e_inputs():
     }
     return Q5E.ProductionInputs(
         rows=rows, decision={"rule_fingerprint": BJ.rule_fingerprint()},
-        manifest={"code_sha256": Q5E.PRODUCING_CODE_SHA256},
+        manifest=producer_manifest(),
         processed_classes=processed, mamba_by_record=mamba,
         cache_by_record=cache, cache_n=cache_n,
         m4_runtime=Q5E.M4_REGISTERED_RUNTIME,
@@ -1592,7 +1668,7 @@ def test_production_route_never_injects_a_qa_fixture():
           "run_audit calls the pipeline with the registered defaults")
     default = Q5E.verify_qa_targets(
         [], {"rule_fingerprint": BJ.rule_fingerprint()},
-        {"code_sha256": Q5E.PRODUCING_CODE_SHA256})
+        producer_manifest())
     check(default["target_set"] == Q5E.QA_TARGETS_REGISTERED,
           "the default target set is the registered one")
     check(default["targets"]["total_failure_rows"]["expected"] ==
@@ -1618,9 +1694,9 @@ def _write_bundle_dir(directory, code=None, fingerprint=None, extra=None,
             fh.write(payload)
     with open(os.path.join(directory, "manifest.json"), "w",
               encoding="utf-8") as fh:
-        json.dump({"code_sha256": code or Q5E.PRODUCING_CODE_SHA256,
-                   "rule_fingerprint":
-                       fingerprint or Q5E.REGISTERED_RULE_FINGERPRINT}, fh)
+        json.dump(producer_manifest(
+            code=code,
+            fingerprint=fingerprint or Q5E.REGISTERED_RULE_FINGERPRINT), fh)
     if mutate == "manifest.json":
         with open(os.path.join(directory, "manifest.json"), "a",
                   encoding="utf-8") as fh:
@@ -2292,11 +2368,11 @@ def test_bundle_content_identity_is_registered_and_enforced():
 
         # The comparison itself: bytes matching the registered digests pass,
         # and one byte more fails.  Exercised against this fixture's own
-        # digests, so it tests the comparison without needing the real bundle.
+        # digests — approved *and* derived together, because patching only the
+        # constant now leaves the module in the state the exact-match check
+        # refuses, which is the point of that check.
         frozen = dict(checked["observed"])
-        real = Q5E.SOURCE_BUNDLE_FILE_SHA256
-        try:
-            Q5E.SOURCE_BUNDLE_FILE_SHA256 = frozen
+        with patched_registration(source_bundle_file_sha256=frozen):
             ok = Q5E.verify_bundle_content_identity(
                 tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
             check(ok["ok"] is True, "matching contents verify")
@@ -2309,8 +2385,6 @@ def test_bundle_content_identity_is_registered_and_enforced():
                   "a one-byte change fails canonical verification")
             check(any("decision.json" in p for p in mutated["problems"]),
                   "and the mutated file is named")
-        finally:
-            Q5E.SOURCE_BUNDLE_FILE_SHA256 = real
 
 
 def test_mitdb_aggregate_is_registered_in_full():
@@ -3341,6 +3415,239 @@ def test_the_four_registration_categories_move_together():
     finally:
         (Q5E.MITDB_TREE_AGGREGATE, Q5E.SOURCE_BUNDLE_FOLDER_ID,
          Q5E.SOURCE_BUNDLE_RUN, Q5E.SOURCE_BUNDLE_FILE_SHA256) = saved
+
+
+def test_a_well_formed_but_unapproved_identity_is_refused():
+    """"Registered" means the approved value, not "different from the old one".
+
+    The first version of this registration asked only whether a category
+    differed from its pre-registration value, with well-formedness reduced to a
+    non-empty string. `"wrong-folder"` therefore passed as a complete, atomic,
+    well-formed registration, and so did any syntactically valid 64-hex
+    aggregate and any five 64-hex digests under the right keys. Every
+    counterexample below is well formed and none of them is approved.
+    """
+    approved = Q5E.APPROVED_INPUT_IDENTITY
+    counterexamples = {
+        "an arbitrary folder id": {
+            "SOURCE_BUNDLE_FOLDER_ID": "wrong-folder"},
+        "an arbitrary run name": {"SOURCE_BUNDLE_RUN": "wrong-run"},
+        "a plausible but unapproved folder id": {
+            "SOURCE_BUNDLE_FOLDER_ID": "1AbCdEfGhIjKlMnOpQrStUvWxYz012345"},
+        "an arbitrary 64-hex aggregate": {
+            "MITDB_TREE_AGGREGATE": "a" * 64},
+        "an aggregate sharing the registered prefix": {
+            "MITDB_TREE_AGGREGATE": "0b46a411" + "0" * 56},
+        "five arbitrary 64-hex digests": {
+            "SOURCE_BUNDLE_FILE_SHA256":
+                {name: chr(ord("a") + i) * 64
+                 for i, name in enumerate(Q5E.BUNDLE_INPUT_FILES)}},
+        "one digest of five replaced": {
+            "SOURCE_BUNDLE_FILE_SHA256":
+                dict(approved["source_bundle_file_sha256"],
+                     **{"decision.json": "f" * 64})},
+        "the run and the folder id swapped": {
+            "SOURCE_BUNDLE_FOLDER_ID": str(approved["source_bundle_run"]),
+            "SOURCE_BUNDLE_RUN": str(approved["source_bundle_folder_id"])},
+    }
+    for label, patch in sorted(counterexamples.items()):
+        saved = {attr: getattr(Q5E, attr) for attr in patch}
+        try:
+            for attr, value in patch.items():
+                setattr(Q5E, attr, value)
+            state = Q5E.input_identity_registration()
+            check(state["ok"] is False, f"{label} is refused")
+            check(state["registered"] is False,
+                  f"{label} is not reported as a registration")
+            check(state["atomic"] is False,
+                  f"{label} does not pass as atomic")
+            check(state["reason"] == Q5E.INPUT_IDENTITY_UNAPPROVED_VALUE,
+                  f"{label} is named an unapproved value, not a partial move")
+            check(state["unapproved_categories"],
+                  f"and the offending category is named for {label}")
+            try:
+                Q5E.assert_registration_is_atomic()
+                raise AssertionError(f"{label} was not refused")
+            except Q5E.DiagnosticInputMismatch as error:
+                check(Q5E.INPUT_IDENTITY_UNAPPROVED_VALUE in str(error),
+                      f"and the assertion form stops on {label}")
+        finally:
+            for attr, value in saved.items():
+                setattr(Q5E, attr, value)
+
+    check(Q5E.input_identity_registration()["ok"] is True,
+          "and the real registration still passes once restored")
+
+
+def test_no_registered_asset_is_read_before_the_registration_is_checked():
+    """A static registration error needs no bytes, so it must cost none.
+
+    `assert_registration_is_atomic()` claims to stop before anything is opened.
+    That has to be a property of the call order rather than of the docstring:
+    an earlier draft hashed 147 files and folded five more, and only then
+    reported that the registration was never approved — opening registered
+    assets on behalf of a registration nobody granted.
+    """
+    calls = []
+
+    def spy(label, real):
+        def recorded(*args, **kwargs):
+            calls.append(label)
+            return real(*args, **kwargs)
+        return recorded
+
+    real_hash, real_fold = BJ.hash_file_set, Q5E.subset_file_fold
+    broken = [("a partial move", {"MITDB_TREE_AGGREGATE": None}),
+              ("an unapproved value",
+               {"SOURCE_BUNDLE_FOLDER_ID": "wrong-folder"})]
+    try:
+        BJ.hash_file_set = spy("hash_file_set", real_hash)
+        Q5E.subset_file_fold = spy("subset_file_fold", real_fold)
+        with tempfile.TemporaryDirectory() as tmp:
+            _write_bundle_dir(tmp)
+            for label, patch in broken:
+                saved = {attr: getattr(Q5E, attr) for attr in patch}
+                try:
+                    for attr, value in patch.items():
+                        setattr(Q5E, attr, value)
+                    del calls[:]
+                    mitdb = Q5E.verify_mitdb_identity(
+                        tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+                    content = Q5E.verify_bundle_content_identity(
+                        tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+                    check(calls == [],
+                          f"{label}: no file was hashed or folded, got {calls}")
+                    check(mitdb["ok"] is False and content["ok"] is False,
+                          f"{label}: both gates stopped")
+                    check(mitdb["observed_aggregate"] is None,
+                          f"{label}: no aggregate was produced to be mistaken "
+                          f"for a registration candidate")
+                    check(content["observed"] == {} and
+                          content["subset_fold"] is None,
+                          f"{label}: and no per-file observation either")
+                    try:
+                        Q5E.discover_registered_inputs(
+                            tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+                        raise AssertionError(f"{label}: discovery ran")
+                    except Q5E.DiagnosticInputMismatch:
+                        check(calls == [],
+                              f"{label}: discovery walked nothing either")
+                finally:
+                    for attr, value in saved.items():
+                        setattr(Q5E, attr, value)
+
+            # The same calls, with the registration intact, do reach the files
+            # — otherwise this test would pass on a module that reads nothing.
+            del calls[:]
+            Q5E.verify_bundle_content_identity(
+                tmp, Q5E.EXECUTION_APPROVAL_TOKEN)
+            check("subset_file_fold" in calls,
+                  "an accepted registration does reach the fold")
+    finally:
+        BJ.hash_file_set, Q5E.subset_file_fold = real_hash, real_fold
+
+
+def test_the_manifest_is_read_from_the_schema_the_producer_writes():
+    """Blocker: a flat `code_sha256` key no producer has ever written.
+
+    `BJ.build_manifest()` nests the module digest at
+    `manifest['code']['sha256']`. This gate read a flat
+    `manifest['code_sha256']`, which resolves to `""` against every real
+    bundle — so registering the input identity would have been recorded as
+    complete while discovery rejected the canonical bundle with
+    `DECISION_MISMATCH`. The fixtures hid it: they were hand-written flat
+    dicts, authored from the same belief as the code.
+    """
+    manifest = producer_manifest()
+    check(isinstance(manifest.get("code"), dict),
+          "the producer writes `code` as a mapping")
+    check(manifest["code"]["sha256"] == Q5E.PRODUCING_CODE_SHA256,
+          "with the module digest nested inside it")
+    check("code_sha256" not in manifest,
+          "and no flat code_sha256 key at the top level")
+
+    observed, problems = Q5E.manifest_producing_identity(manifest)
+    check(problems == [], "the producer's own schema is read without problems")
+    check(observed["code_sha256"] == Q5E.PRODUCING_CODE_SHA256,
+          "the nested digest is what comes back")
+    check(observed["rule_fingerprint"] == Q5E.REGISTERED_RULE_FINGERPRINT,
+          "and the fingerprint is still read from the top level")
+    check("manifest['code']['sha256']" in observed["read_from"]["code_sha256"],
+          "and the result records which field each value came from")
+
+    # The legacy flat shape must STOP, not fall back.
+    legacy = {"code_sha256": Q5E.PRODUCING_CODE_SHA256,
+              "rule_fingerprint": Q5E.REGISTERED_RULE_FINGERPRINT}
+    observed, problems = Q5E.manifest_producing_identity(legacy)
+    check(problems, "the flat legacy manifest is refused")
+    check(observed["code_sha256"] == "",
+          "and no digest is recovered from the flat key")
+    check(any("flat manifest['code_sha256']" in p for p in problems),
+          "the refusal names the shape it will not accept")
+
+    # Malformed, missing and wrongly typed `code` are structured stops.
+    for label, bad in (
+            ("a missing code block", {}),
+            ("a string code block", {"code": Q5E.PRODUCING_CODE_SHA256}),
+            ("a null code block", {"code": None}),
+            ("a list code block", {"code": [Q5E.PRODUCING_CODE_SHA256]}),
+            ("an empty code mapping", {"code": {}}),
+            ("a non-hex code.sha256", {"code": {"sha256": "NOTAHASH"}}),
+            ("an uppercase code.sha256",
+             {"code": {"sha256": Q5E.PRODUCING_CODE_SHA256.upper()}}),
+            ("a wrong code.sha256", {"code": {"sha256": "0" * 64}})):
+        payload = dict(bad)
+        payload.setdefault("rule_fingerprint", Q5E.REGISTERED_RULE_FINGERPRINT)
+        observed, problems = Q5E.manifest_producing_identity(payload)
+        check(problems, f"{label} is a problem")
+        check(all(isinstance(p, str) for p in problems),
+              f"{label} is reported as structured text, never raised")
+
+    # And the same for the fingerprint, which stays where it is.
+    _observed, problems = Q5E.manifest_producing_identity(
+        producer_manifest(fingerprint="0" * 64))
+    check(any("rule_fingerprint" in p for p in problems),
+          "a wrong top-level fingerprint is still caught")
+
+    # End to end: a real twelve-file bundle carrying the producer's schema
+    # passes the directory contract, and the flat legacy shape fails it.
+    with tempfile.TemporaryDirectory() as tmp:
+        good = _write_bundle_dir(os.path.join(tmp, "good"))
+        contract = Q5E.verify_bundle_directory_contract(
+            good, Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(contract["ok"] is True,
+              "a bundle with the producer's manifest schema is accepted")
+        check(contract["code_sha256"] == Q5E.PRODUCING_CODE_SHA256,
+              "and its nested digest is reported")
+
+        flat = _write_bundle_dir(os.path.join(tmp, "flat"))
+        with open(os.path.join(flat, "manifest.json"), "w",
+                  encoding="utf-8") as fh:
+            json.dump(legacy, fh)
+        stopped = Q5E.verify_bundle_directory_contract(
+            flat, Q5E.EXECUTION_APPROVAL_TOKEN)
+        check(stopped["ok"] is False,
+              "a bundle carrying the legacy flat manifest stops")
+        check(stopped["reason"] == Q5E.DECISION_MISMATCH,
+              "as a mismatch, with the field named")
+
+    # The QA gate reads the same field from the same place.  It carried the
+    # identical defect and would have failed every canonical bundle.
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        module = handle.read()
+    check('manifest.get("code_sha256")' not in module,
+          "no reader in the module still asks for the flat key")
+    qa = Q5E.verify_qa_targets(tiny_bundle(),
+                               {"rule_fingerprint":
+                                Q5E.REGISTERED_RULE_FINGERPRINT},
+                               producer_manifest())
+    check(qa["targets"]["producing_code_sha256"]["ok"] is True,
+          "the QA target resolves the producing digest from the real schema")
+    flat_qa = Q5E.verify_qa_targets(tiny_bundle(),
+                                    {"rule_fingerprint":
+                                     Q5E.REGISTERED_RULE_FINGERPRINT}, legacy)
+    check(flat_qa["targets"]["producing_code_sha256"]["ok"] is False,
+          "and the flat legacy manifest fails that target rather than passing")
 
 
 def test_the_twelve_file_full_fold_is_not_a_runtime_science_gate():
