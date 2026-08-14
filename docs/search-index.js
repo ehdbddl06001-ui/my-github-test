@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1069,
+  "total": 1073,
   "byType": {
    "kmle": 555,
-   "anatomy": 228,
+   "anatomy": 232,
    "usmle": 66,
    "paper": 203,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 228,
+   "Anatomy": 232,
    "Cardiology": 83,
    "Nephrology": 61,
    "Infectious Disease": 59,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 669,
+   "high": 673,
    "medium": 351,
    "low": 49
   },
-  "tagCount": 1969
+  "tagCount": 1974
  },
  "docs": [
   {
@@ -211,6 +211,86 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0554.md",
    "snippet": "58세 남자가 길에서 갑자기 쓰러져 응급실로 옮겨졌다. 도착 시 반응이 없고 큰 동맥에서 맥박이 만져지지 않으며 정상 호흡이 없다. 곧바로 가슴압박을 시작하고 감시장치를 붙였다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 리듬에서 가장 먼저 시행할 처치는? A. 즉시 비동기 전기충격을 시행한다 B. 정맥 아미오다론을 먼저 투여한다 C. 동기화 심장율동전환을 시행한다 D. 정맥 아트로핀을 투여한다 E. 경피 인공심장박동조율",
    "text": "Cardiology Ventricular Fibrillation ventricular-fibrillation cardiac-arrest defibrillation acls shockable-rhythm KMLE 2026 / Claude Routine 58세 남자가 길에서 갑자기 쓰러져 응급실로 옮겨졌다. 도착 시 반응이 없고 큰 동맥에서 맥박이 만져지지 않으며 정상 호흡이 없다. 곧바로 가슴압박을 시작하고 감시장치를 붙였다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 리듬에서 가장 먼저 시행할 처치는? A. 즉시 비동기 전기충격을 시행한다 B. 정맥 아미오다론을 먼저 투여한다 C. 동기화 심장율동전환을 시행한다 D. 정맥 아트로핀을 투여한다 E. 경피 인공심장박동조율을 시작한다 무맥성 심실세동은 제세동 가능(shockable) 리듬으로, 가슴압박과 함께 지체 없는 비동기 전기충격(제세동)이 생존을 가르는 가장 중요한 처치다. 약물은 제세동에 보조적일 뿐 첫 처치가 아니다."
+  },
+  {
+   "id": "anatomy-2026-0038",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "장딴지근 안쪽갈래 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "다리오금",
+    "장딴지근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0038.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0037",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "뒤정강근 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "종아리뒤칸",
+    "뒤정강근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0037.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 뒤정강근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0036",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "오금근 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "종아리뒤칸",
+    "오금근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0036.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 오금근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0035",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "네모공간 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "어깨뼈부위",
+    "네모공간",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0035.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 네모공간 실사 spotter (복원본) spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0034",

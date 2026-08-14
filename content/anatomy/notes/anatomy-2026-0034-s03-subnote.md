@@ -10,7 +10,7 @@ kicker: "MedKOS · 임상해부학술기 3Q · 3회차(2026-08-24)"
 layout: split
 cover_lines:
   - "범위  뒤통수밑삼각 / 어깨뼈부위 3공간 / 다리오금 / 종아리 뒤칸"
-  - "구성  ① 근육표 ② 혈관표 ③ 신경표 ④ 공간·삼각 ⑤ 실사 태깅 6문항 ⑥ 정답·해설"
+  - "구성  ① 근육표 ② 혈관표 ③ 신경표 ④ 공간·삼각 ⑤ 실사 태깅 10문항 ⑥ 정답·해설"
   - "근거  3회차(0825) 허미선pf 실습영상 + 3회차 종합정리(0022) + tagging 2차"
   - "도해  diag-scapular-spaces(라벨판) + 실사 복원본(뒤통수밑삼각·다리오금)"
 date: 2026-08-14
@@ -30,6 +30,10 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0017.md", quiz_image: ".private/anatomy/render/uploads-s03/q5183_p1_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q5183_p1_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0025.md", quiz_image: ".private/anatomy/render/uploads-b2/q5183_p2_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/q5183_p2_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0018.md", quiz_image: ".private/anatomy/render/uploads-s03/q5183_p8_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q5183_p8_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0035.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p35_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p35_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0038.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p47_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p47_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0036.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p25_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p25_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0037.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p32_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p32_clean.png"}
 source_refs:
   - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf", page: null, section: "뒤통수밑삼각·어깨뼈부위·다리오금 실습영상"}
 tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]

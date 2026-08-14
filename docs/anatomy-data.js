@@ -705,6 +705,94 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0035",
+   "style": "spotter",
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "어깨뼈부위 해부 사진에서 번호핀 ①이 지시하는 — 위 작은원근, 아래 큰원근, 안쪽 위팔세갈래근 긴갈래, 가쪽 위팔뼈 외과목으로 둘러싸인 — 공간의 이름과 그 통과 구조물 2가지를 말하시오.",
+   "choices": null,
+   "answer": "네모공간 (quadrangular space) — 겨드랑신경(axillary n.) + 뒤위팔휘돌이동맥(posterior circumflex humeral a.)",
+   "explanation": "어깨뼈부위 3공간 중 태깅 최다 빈출. 위팔세갈래근 긴갈래를 기준으로 **가쪽**이 네모공간, **안쪽**이 세모공간이며, 큰원근 아래가 세모간격(노신경+깊은위팔동맥)이다. 네 경계 중 가쪽이 **위팔뼈 외과목**이라는 점이 임상과 직결된다 — 외과목 골절에서 겨드랑신경이 손상되어 어깨세모근 마비와 어깨 가쪽 감각소실이 생긴다. 영상 라벨과 자막('이곳은 네모공간(quadrangular space)으로')에서 답이 실측 확인됨. 이미지는 학생 필기(검정 펜 주석·지시선)를 획 단위로 제거하고 정답 라벨·자막·타이틀을 가린 복원본.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "어깨뼈부위 — 네모공간 (업로드 스캔 0150 p35)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0036",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "leg-posterior",
+   "examPhase": "tagging-1",
+   "stem": "종아리 뒤칸 해부 사진에서 ▲와 번호핀 ①이 가리키는 — 무릎 뒤에서 정강뼈 뒤면 위쪽에 붙는 깊은층 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "오금근 (popliteus muscle)",
+   "explanation": "종아리 뒤칸 **깊은층**의 가장 위쪽 근육으로, 넙다리뼈 가쪽관절융기에서 정강뼈 뒤면 위쪽(가자미근선 위)으로 달린다. 기능은 **무릎 잠금 해제(unlocking)** — 완전히 편 무릎에서 정강뼈를 안쪽으로 돌려 굽힘을 시작하게 한다. 지배는 정강신경. 오금동맥은 이 근육의 아래모서리에서 앞·뒤정강동맥으로 종말분지한다는 점이 함께 나온다. 영상 라벨과 자막에서 실측 확인됨.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "종아리 뒤칸 — 깊은층 오금근 (업로드 스캔 5183 p25)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0037",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "leg-posterior",
+   "examPhase": "tagging-1",
+   "stem": "종아리 뒤칸 깊은층 해부 사진에서 ▲와 번호핀 ①이 가리키는 — 긴발가락굽힘근과 긴엄지굽힘근 사이 가장 깊은 곳에 있는 근육의 이름을 말하시오.",
+   "choices": null,
+   "answer": "뒤정강근 (tibialis posterior muscle)",
+   "explanation": "종아리 뒤칸 깊은층 4근육(오금근·긴발가락굽힘근·긴엄지굽힘근·뒤정강근) 중 **가장 깊다**. 정강뼈·종아리뼈·뼈사이막 뒤면에서 일어나 안쪽복사 뒤를 돌아 발배뼈·안쪽쐐기뼈에 닿으며, **발바닥활(arch) 유지**의 핵심이다. 안쪽복사 뒤 통과 순서 'Tom, Dick ANd Harry'에서 가장 앞(T)이 이 근육의 힘줄이다. 지배는 정강신경. 영상 라벨과 자막에서 실측 확인됨.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "종아리 뒤칸 — 깊은층 뒤정강근 (업로드 스캔 5183 p32)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0038",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "다리오금의 경계를 관찰하는 사진에서 번호핀 ①이 지시하는 — 다리오금의 아래안쪽모서리를 이루는 — 구조의 이름을 말하시오.",
+   "choices": null,
+   "answer": "장딴지근 안쪽갈래 (medial head of gastrocnemius muscle)",
+   "explanation": "다리오금은 마름모꼴이며 경계는 위가쪽 넙다리두갈래근, 위안쪽 반힘줄근·반막근, **아래가쪽·아래안쪽이 장딴지근의 두 갈래**다. 장딴지근은 무릎 **위**(넙다리뼈 관절융기)에서 일어나므로 무릎 굽힘에도 관여하는 반면, 가자미근은 무릎 아래에서 일어나 발바닥굽힘만 한다 — 이 차이가 구분 문항 단골. 오금 바닥은 넙다리뼈 오금면·빗오금인대·오금근이다. 영상 라벨과 자막에서 실측 확인됨.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf",
+     "page": null,
+     "section": "다리오금 — 경계(아래안쪽모서리) (업로드 스캔 0150 p47)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",

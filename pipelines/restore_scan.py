@@ -219,7 +219,9 @@ def restore(image: Path, cfg: dict, out_clean: Path, out_quiz: Path | None) -> d
     for x0, y0, x1, y1 in cfg.get("erase_boxes", []):
         mask[y0:y1, x0:x1] = 255
     for box in cfg.get("stroke_boxes", []):   # 얇은 펜(검정): 획 픽셀만 마스킹
-        mask |= _tight_strokes(img, box)
+        # 굵은 유성펜·중간톤 조직에서는 기본 35가 너무 빡빡해 획을 놓친다 → 조절 가능
+        mask |= _tight_strokes(img, box, drop=int(cfg.get("stroke_drop", 35)),
+                               pad=int(cfg.get("stroke_pad", 2)))
     for box in cfg.get("bright_stroke_boxes", []):   # 얇은 펜(흰색)
         # 흰 글씨는 획이 굵어 31px 중앙값 배경이 글씨 자체에 오염된다 →
         # 배경 커널을 키우고 여유 pad 를 줘야 획이 통째로 잡힌다(실측).
