@@ -12,7 +12,7 @@ cover_lines:
   - "범위  뒤통수밑삼각 / 어깨뼈부위 3공간 / 다리오금 / 종아리 뒤칸"
   - "구성  ① 근육표 ② 혈관표 ③ 신경표 ④ 공간·삼각 ⑤ 실사 태깅 10문항 ⑥ 정답·해설"
   - "근거  3회차(0825) 허미선pf 실습영상 + 3회차 종합정리(0022) + tagging 2차"
-  - "도해  diag-scapular-spaces(라벨판) + 실사 복원본(뒤통수밑삼각·다리오금)"
+  - "도해  diag-suboccipital · diag-scapular-spaces(라벨판) + 실사 복원본(다리오금)"
 date: 2026-08-14
 confidence: high
 session_no: 3
@@ -41,7 +41,7 @@ tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
 
 ## 1. 뒤통수밑삼각 | Suboccipital triangle
 
-!fig .private/anatomy/render/uploads-b2/q0150_p11_clean.png | 실사 복원본 — 뒤통수밑삼각과 그 안의 뒤통수밑신경(▲). 필기만 제거하고 영상 라벨은 살린 판
+!fig docs/assets/anatomy/diag-suboccipital-labeled.svg | 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비
 
 ### 1) 경계를 이루는 근육 — 4개 중 3개가 경계
 

@@ -566,7 +566,7 @@ def _load_card(path: Path) -> dict:
     return yaml.safe_load(fm) or {}
 
 
-def render_scans(b: Sub, items: list, root: Path):
+def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3):
     """실사 복원 문항을 같은 파일에 합친다 — 왼쪽 이미지 / 오른쪽 문제·정답.
 
     이미지는 `.private/` 산출물이므로 이 PDF도 반드시 `.private/` 아래로만 나간다
@@ -596,17 +596,33 @@ def render_scans(b: Sub, items: list, root: Path):
                       "이 프레임은 필기가 정답 구조 위에 겹쳐 복원 얼룩이 남아 있다. "
                       "근육 결이 또렷하지 않으니 감안하고 볼 것.")
 
+    # ── 정답부: 페이지 절약을 위해 라벨판을 '작은 썸네일'로 두 문항씩 묶는다.
+    # 문제 페이지와 같은 크기로 다시 넣으면 페이지 수가 두 배가 된다(사용자 지적).
     b.cur_fig = None
     b.section_bar("실사 문항 정답 · 해설", "answers")
+    per = int(meta_answers_per_page or 3)
+    ROW_H = (b.PH - MARGIN * 2 - 56) / per if b.split else 250
     for n, (it, card) in enumerate(cards, 1):
-        b.cur_fig = (it.get("clean_image") or it["quiz_image"],
-                     f"정답 {n} · 라벨판(필기만 제거)")
-        b.new_page(plain=True)
-        b.cur_sec = ("실사 문항 정답 · 해설", "answers")
-        if b.split:
-            b._compose_split(cont=True)
-        b.subsection(f"정답 {n}")
-        b.callout("기출", card.get("answer", ""), card.get("explanation", ""))
+        if n > 1 and (n - 1) % per == 0:
+            b.new_page(plain=True)
+            b.cur_sec = ("실사 문항 정답 · 해설", "answers")
+            if b.split:
+                b._compose_split(cont=True)
+        y0 = b.y
+        thumb_w = (b.PW - 2 * MARGIN) * 0.30
+        img = root / (it.get("clean_image") or it["quiz_image"])
+        b.cur_fig = (str(img), f"정답 {n} · 라벨판")
+        b._draw_figure(b.x0, y0 + 4, thumb_w, ROW_H - 26)
+        b.cur_fig = None
+        keep_x0 = b.x0
+        b.x0 = keep_x0 + thumb_w + 16
+        b.y = y0
+        b.subsection(f"정답 {n} — {card.get('answer', '')}")
+        b.rich(card.get("explanation", ""), size=9.2, leading=13)
+        if card.get("needs_review"):
+            b.callout("주의", "", "복원 얼룩이 남은 프레임 — 근육 결이 또렷하지 않다.")
+        b.x0 = keep_x0
+        b.y = y0 + ROW_H
     b.cur_fig = None
 
 
@@ -631,7 +647,8 @@ def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
     if not b.split:
         b.new_page(plain=True)
     render_body(b, body)
-    render_scans(b, meta.get("scan_questions") or [], root)
+    render_scans(b, meta.get("scan_questions") or [], root,
+                 meta.get("answers_per_page", 3))
     b.footer_all()
     try:
         doc.subset_fonts()          # 한글 폰트 통째 삽입 방지(1.7MB → 수십 KB)
