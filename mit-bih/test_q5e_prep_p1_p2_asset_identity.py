@@ -147,15 +147,67 @@ class FakeDriveAdapter(P.DriveFolderAdapter):
         raise KeyError(file_id)
 
 
+def _preflight(**overrides):
+    """A frozen input freeze shaped like the producer's, keyed as it keys it."""
+    freeze = {
+        "ok": True,
+        "rule_fingerprint": P.REGISTERED_RULE_FINGERPRINT,
+        "canonical_mamba": {"sha256": "a" * 64},
+        "cache_aggregate": {"aggregate": "b" * 64},
+        "mitdb_aggregate": {"aggregate": "c" * 64},
+        "cache_ledger_contract": {"ok": True},
+        "result_contract": {"pid_digest": "d" * 64},
+    }
+    freeze.update(overrides)
+    return freeze
+
+
+def _producer_manifest(code=None, fingerprint=None, preflight=_preflight,
+                       **overrides):
+    """A manifest with the producer's **schema** and the registered **identity**.
+
+    Two different things, and the fixture needs each from a different place.
+
+    *Structure* comes from `BJ.build_manifest()` itself.  This is the whole
+    point of the fixture.  The previous version was a hand-written flat dict
+    carrying `code_sha256` at the top level — written from the same belief as
+    the code under test, so the suite could only ever confirm that belief.
+    The real producer nests the digest at `manifest['code']['sha256']`, and the
+    first live run against a real bundle read `""` and stopped for a reason
+    that had nothing to do with the bundle.  A fixture built by the producer
+    cannot make that mistake, because it is not guessing.
+
+    *Identity* is then pinned to `P.PRODUCING_CODE_SHA256`.  `build_manifest()`
+    records `sha256_file()` — the raw bytes of the frozen module **in whatever
+    checkout is running the test** — which on a CRLF checkout is that
+    checkout's own newline digest and not the identity of the registered
+    artifact, produced from an LF checkout.  Left unpinned, the fixture would
+    impersonate the machine running it and the suite would pass on Linux and
+    fail on Windows for a reason unrelated to the code.
+    """
+    manifest = BJ.build_manifest(
+        {}, "20260813T000000",
+        preflight() if callable(preflight) else preflight)
+    manifest["code"] = dict(manifest["code"],
+                            sha256=code or P.PRODUCING_CODE_SHA256)
+    if fingerprint is not None:
+        manifest["rule_fingerprint"] = fingerprint
+    manifest.update(overrides)
+    return manifest
+
+
 def _bundle_children(*, drop=None, extra=None, duplicate=False,
                      subfolder=False, shortcut=False, trashed=None,
                      superseded=False, code=None, fingerprint=None,
-                     mutate=None, id_prefix="file"):
+                     manifest=None, mutate=None, id_prefix="file"):
     """Children of one synthetic folder.
 
     ``id_prefix`` keeps file ids unique per folder, as real Drive ids are: two
     folders sharing an id would let a lookup return the wrong folder's bytes,
     which is precisely the confusion P2 exists to prevent.
+
+    ``manifest`` replaces the whole manifest object, so a test can hand P2 a
+    shape the producer would never write — a flat one, for instance.
     """
     names = list(BJ.BUNDLE_FILES)
     if drop:
@@ -163,11 +215,10 @@ def _bundle_children(*, drop=None, extra=None, duplicate=False,
     children = []
     for index, name in enumerate(names):
         if name == "manifest.json":
-            body = json.dumps({
-                "code_sha256": code or P.PRODUCING_CODE_SHA256,
-                "rule_fingerprint":
-                    fingerprint or P.REGISTERED_RULE_FINGERPRINT},
-                sort_keys=True).encode("utf-8")
+            value = (manifest if manifest is not None
+                     else _producer_manifest(code=code,
+                                             fingerprint=fingerprint))
+            body = json.dumps(value, sort_keys=True).encode("utf-8")
         else:
             body = f"synthetic {name}\n".encode("utf-8")
         if mutate == name:
@@ -215,7 +266,7 @@ def _bundle_children(*, drop=None, extra=None, duplicate=False,
 def _adapter(**kwargs):
     streamable = kwargs.pop("streamable", True)
     return FakeDriveAdapter(
-        {P.SOURCE_BUNDLE_FOLDER_ID: _bundle_children(**kwargs)},
+        {P.P2_TARGET_FOLDER_ID: _bundle_children(**kwargs)},
         streamable=streamable)
 
 
@@ -301,7 +352,7 @@ def test_no_api_or_file_access_without_approval():
                 (lambda: reader.listdir(tmp), "listdir"),
                 (lambda: reader.read_text(tmp, "x"), "read_text"),
                 (lambda: P.run_p1(tmp, None), "run_p1"),
-                (lambda: P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, None),
+                (lambda: P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, None),
                  "run_p2")):
             try:
                 call()
@@ -321,21 +372,46 @@ def test_no_api_or_file_access_without_approval():
 def test_terminal_guard_precedes_every_reader_and_api_call():
     """The stop is open, and it opens on a recorded approval — not on a gap.
 
-    Execution was approved on 2026-08-12, so an approved, switched-on call now
-    proceeds past this point.  What must not change is its *position*: still
-    after every check, still before anything that authenticates or reads.
+    The current execution approval is 2026-08-14 (the corrective-candidate
+    rerun), so an approved, switched-on call now proceeds past this point.  The
+    2026-08-12 approval covered the earlier run against the original eleven-file
+    folder and is kept only as history.  What must not change is the guard's
+    *position*: still after every check, still before anything that
+    authenticates or reads.
     """
     check(P.EXECUTION_APPROVAL_RECORD["granted"] is True,
           "the read-only execution approval is recorded as granted")
     granted = P._terminal_execution_guard()
-    check(granted["granted_on"] == "2026-08-12",
-          "with the date it was granted")
+    check(granted["granted_on"] == "2026-08-14",
+          "with the date the current approval was granted")
     check(granted["granted_by"] == "user", "and by whom")
+    check(granted["p2_target_folder_id"] == P.CORRECTIVE_BUNDLE_FOLDER_ID,
+          "and which folder it approved P2 to read")
     for forbidden in ("P3 implementation or execution", "running detect_r()",
                       "M0-M4 aggregation", "training or retraining any model",
-                      "automatic registration of any observed value"):
+                      "automatic registration of any observed value",
+                      "re-running the beat join",
+                      "re-running the 10,000 x 3 null replicates",
+                      "overwriting the 20260812 P2 stop bundle",
+                      "promoting the corrective folder to a canonical Q5-E "
+                      "input"):
         check(forbidden in granted["not_approved"],
               f"the record still withholds: {forbidden}")
+
+    # The superseded approval is kept, not rewritten.  A record that gets
+    # edited in place each time records only the latest thing, and the earlier
+    # approval is what explains why the 20260812 stop bundle exists at all.
+    prior = P.PRIOR_EXECUTION_APPROVAL_RECORDS
+    check(len(prior) == 1, "the earlier approval is preserved")
+    check(prior[0]["granted_on"] == "2026-08-12", "with its own date")
+    check(prior[0]["superseded"] is True, "marked superseded")
+    check(prior[0]["p2_target_folder_id"] == P.ORIGINAL_CANONICAL_FOLDER_ID,
+          "and naming the different folder it covered")
+    check(granted["supersedes"] == "2026-08-12",
+          "and the current record points back at it")
+    check(set(P.NOT_APPROVED) <= set(prior[0]["not_approved"])
+          and set(P.NOT_APPROVED) <= set(granted["not_approved"]),
+          "nothing that was withheld before has been quietly released")
 
     # Flip the record back and the stop closes again, with no other edit.
     # That is what makes this one value the boundary rather than a deletion.
@@ -345,7 +421,7 @@ def test_terminal_guard_precedes_every_reader_and_api_call():
         P.EXECUTION_APPROVAL_RECORD["granted"] = False
         with tempfile.TemporaryDirectory() as tmp:
             try:
-                P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp,
+                P.run_prep(tmp, P.P2_TARGET_FOLDER_ID, tmp,
                            adapter=adapter, approval=TOKEN,
                            open_registered_data=True, emit=lambda *a: None)
                 raise AssertionError("run_prep produced a result")
@@ -374,18 +450,91 @@ def test_terminal_guard_precedes_every_reader_and_api_call():
           "and no credential is acquired above it")
 
 
-def test_run_prep_refuses_a_folder_id_that_is_not_the_registered_one():
-    adapter = _adapter()
-    with tempfile.TemporaryDirectory() as tmp:
-        try:
-            P.run_prep(tmp, "1SomeOtherFolderIdEntirely", tmp,
-                       adapter=adapter, approval=TOKEN,
-                       open_registered_data=True, emit=lambda *a: None)
-            raise AssertionError("a foreign folder id was accepted")
-        except P.PrepError as error:
-            check("registered canonical folder id" in str(error),
-                  "the bundle is chosen by id, never by name or proximity")
-    check(adapter.calls == [], "and nothing was listed")
+def test_run_prep_accepts_only_the_corrective_candidate_folder_id():
+    """Only one id reaches the production P2 route, and the original is not it.
+
+    The two refusals are checked separately on purpose.  A foreign id is a
+    mistake; the *original canonical* id is a different thing — it is the
+    eleven-file folder whose P2 stop is already recorded, and re-reading it
+    would reproduce that stop where a reader could mistake it for a fresh
+    finding.  A single "not the target" message would have said the same words
+    for both, so the code says which one it refused and why.
+    """
+    for folder_id, needle, label in (
+            ("1SomeOtherFolderIdEntirely", "not the corrective candidate",
+             "a foreign id"),
+            ("", "not the corrective candidate", "an empty id"),
+            (P.CORRECTIVE_BUNDLE_FOLDER_ID.lower(),
+             "not the corrective candidate", "a case-folded id"),
+            (P.CORRECTIVE_BUNDLE_FOLDER_ID + " ",
+             "not the corrective candidate", "a trailing-space id"),
+            (P.ORIGINAL_CANONICAL_FOLDER_ID, "is the ORIGINAL canonical folder",
+             "the original eleven-file folder")):
+        adapter = _adapter()
+        with tempfile.TemporaryDirectory() as tmp:
+            try:
+                P.run_prep(tmp, folder_id, tmp, adapter=adapter,
+                           approval=TOKEN, open_registered_data=True,
+                           emit=lambda *a: None)
+                raise AssertionError(f"{label} was accepted")
+            except P.PrepError as error:
+                check(needle in str(error), f"{label} is refused, by name")
+        check(adapter.calls == [],
+              f"and {label} listed nothing before being refused")
+
+    check(P.P2_TARGET_FOLDER_ID == P.CORRECTIVE_BUNDLE_FOLDER_ID,
+          "the production target is the corrective candidate")
+    check(P.P2_TARGET_FOLDER_ID != P.ORIGINAL_CANONICAL_FOLDER_ID,
+          "and it is a different folder from the original canonical one")
+
+    # The refusal happens before the guard, so it is not reachable by flipping
+    # the approval record either.
+    import inspect
+    source = inspect.getsource(P.run_prep)
+    check(source.index("ORIGINAL_CANONICAL_FOLDER_ID")
+          < source.index("_terminal_execution_guard"),
+          "the original folder is refused before the terminal guard")
+    check(source.index("P2_TARGET_FOLDER_ID")
+          < source.index("_terminal_execution_guard"),
+          "and so is anything that is not the target")
+
+
+def test_the_original_canonical_registration_is_left_exactly_as_it_was():
+    """Pointing P2 at a candidate is not registering the candidate.
+
+    This is the boundary the whole rerun turns on.  A corrective bundle that
+    passes P2 has been *judged*, not adopted; adoption is a separate PR after
+    a combined PASS and a Codex result acceptance.  So Q5-E's registered
+    constants must still name the original, and the digests it would need must
+    still be unregistered.
+    """
+    check(Q5E.SOURCE_BUNDLE_FOLDER_ID == "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd",
+          "Q5-E still registers the original canonical folder id")
+    check(Q5E.SOURCE_BUNDLE_RUN.startswith("20260811T035108_"),
+          "and the original canonical run")
+    check(P.ORIGINAL_CANONICAL_FOLDER_ID == Q5E.SOURCE_BUNDLE_FOLDER_ID,
+          "the PREP module reads that registration rather than restating it")
+    check(P.SOURCE_BUNDLE_FOLDER_ID == Q5E.SOURCE_BUNDLE_FOLDER_ID,
+          "and does not shadow it with the candidate")
+    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
+          "the five input digests are still unregistered")
+    check(Q5E.MITDB_TREE_AGGREGATE is None,
+          "and so is the MIT-BIH tree aggregate")
+
+    # The candidate is named in this module and nowhere in the Q5-E audit.
+    with open(Q5E.__file__, encoding="utf-8") as handle:
+        audit = handle.read()
+    check(P.CORRECTIVE_BUNDLE_FOLDER_ID not in audit,
+          "the corrective folder id appears nowhere in the Q5-E audit module")
+    check(P.CORRECTIVE_BUNDLE_RUN not in audit,
+          "and neither does the corrective run name")
+
+    identity = P._folder_identity(P.P2_TARGET_FOLDER_ID)
+    check(identity["candidate_is_registered_as_canonical"] is False,
+          "and a P2 result says so in as many words")
+    check(identity["candidate_folder_id"] != identity[
+        "original_canonical_folder_id"],
+        "reporting the two folders under separate keys")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -510,10 +659,10 @@ def test_p1_rejects_an_aggregate_that_diverges_from_the_registered_prefix():
 # ─────────────────────────────────────────────────────────────────────────────
 def test_p2_accepts_the_registered_folder_id():
     adapter = _adapter()
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, TOKEN)
     check(result["ok"] is True, "an exact bundle passes")
     check(result["status"] == P.P2_PASS, "with the P2 pass status")
-    check(("list_children", P.SOURCE_BUNDLE_FOLDER_ID) in adapter.calls,
+    check(("list_children", P.P2_TARGET_FOLDER_ID) in adapter.calls,
           "the registered folder id was queried directly")
     check([g["gate"] for g in result["gates"]] == list(P.P2_GATE_ORDER),
           "every gate ran in the registered order")
@@ -531,9 +680,9 @@ def test_p2_rejects_a_decoy_folder_with_the_same_name():
     """A folder that merely has the right name is not the bundle."""
     decoy_id = "1DecoyFolderWithTheSameName"
     adapter = FakeDriveAdapter({
-        P.SOURCE_BUNDLE_FOLDER_ID: _bundle_children(id_prefix="real"),
+        P.P2_TARGET_FOLDER_ID: _bundle_children(id_prefix="real"),
         decoy_id: _bundle_children(code="0" * 64, id_prefix="decoy")})
-    good = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+    good = P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, TOKEN)
     decoy = P.run_p2(decoy_id, adapter, TOKEN)
     check(good["ok"] is True, "the registered id passes")
     check(decoy["ok"] is False, "the decoy fails")
@@ -548,7 +697,7 @@ def test_p2_rejects_a_decoy_folder_with_the_same_name():
 
 def test_p2_stops_when_the_folder_id_yields_nothing():
     adapter = FakeDriveAdapter({})
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, TOKEN)
     check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
           "an empty folder id cannot be bridged to any bytes")
     check(result["input_identity"] is None, "and yields no identity")
@@ -556,7 +705,7 @@ def test_p2_stops_when_the_folder_id_yields_nothing():
 
 def test_p2_stops_when_no_bridge_can_be_proven():
     adapter = _adapter(streamable=False)
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN,
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, TOKEN,
                       mount_dir=None)
     check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
           "no stream and no mount means no bridge")
@@ -570,7 +719,7 @@ def test_p2_stops_when_no_bridge_can_be_proven():
         for child in _bundle_children():
             with open(os.path.join(mount, child["name"]), "wb") as handle:
                 handle.write(child["_bytes"])
-        ok = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(streamable=False),
+        ok = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(streamable=False),
                       TOKEN, mount_dir=mount)
         check(ok["ok"] is True, "a mount matching the inventory bridges")
         check(ok["bridge"]["method"] == "mount_bridged_to_folder_id",
@@ -578,21 +727,21 @@ def test_p2_stops_when_no_bridge_can_be_proven():
 
         with open(os.path.join(mount, "log.txt"), "ab") as handle:
             handle.write(b"drift")
-        drifted = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+        drifted = P.run_p2(P.P2_TARGET_FOLDER_ID,
                            _adapter(streamable=False), TOKEN, mount_dir=mount)
         check(drifted["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
               "a mount whose sizes disagree with the inventory is refused")
 
 
 def test_p2_rejects_wrong_file_counts():
-    short = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+    short = P.run_p2(P.P2_TARGET_FOLDER_ID,
                      _adapter(drop="bootstrap.json"), TOKEN)
     check(short["status"] == P.P2_DIRECTORY_CONTRACT_FAILED,
           "eleven files fail the directory contract")
     gate = [g for g in short["gates"] if g["gate"] == "directory_contract"][0]
     check("bootstrap.json" in gate["missing"], "and the missing file is named")
 
-    wide = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+    wide = P.run_p2(P.P2_TARGET_FOLDER_ID,
                     _adapter(extra=["notes.txt"]), TOKEN)
     check(wide["status"] == P.P2_DIRECTORY_CONTRACT_FAILED,
           "thirteen files fail too")
@@ -605,7 +754,7 @@ def test_p2_rejects_an_ambiguous_inventory():
                           (dict(subfolder=True), "a subfolder"),
                           (dict(shortcut=True), "a shortcut"),
                           (dict(trashed="ghost.csv"), "a trashed item")):
-        result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(**kwargs), TOKEN)
+        result = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(**kwargs), TOKEN)
         check(result["status"] == P.P2_INVENTORY_AMBIGUOUS,
               f"{label} makes the inventory ambiguous")
         check(any(result["ambiguity"].values()),
@@ -613,7 +762,7 @@ def test_p2_rejects_an_ambiguous_inventory():
 
 
 def test_p2_rejects_a_superseded_bundle():
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(superseded=True),
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(superseded=True),
                       TOKEN)
     check(result["status"] == P.P2_SUPERSEDED_PRESENT,
           "a SUPERSEDED marker stops P2")
@@ -623,7 +772,7 @@ def test_p2_rejects_a_superseded_bundle():
 def test_p2_rejects_a_wrong_manifest_identity():
     for kwargs, label in ((dict(code="0" * 64), "producing code"),
                           (dict(fingerprint="0" * 64), "rule fingerprint")):
-        result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(**kwargs), TOKEN)
+        result = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(**kwargs), TOKEN)
         check(result["status"] == P.P2_MANIFEST_MISMATCH,
               f"a wrong {label} stops P2")
         gate = [g for g in result["gates"]
@@ -631,8 +780,150 @@ def test_p2_rejects_a_wrong_manifest_identity():
         check(gate["problems"], f"and the {label} problem is recorded")
 
 
+def test_p2_reads_the_identity_from_the_real_producer_schema():
+    """The manifest fixture is built by the producer, not written by hand.
+
+    This is the test that would have caught the live failure.  The previous
+    fixture was a flat `{"code_sha256": ..., "rule_fingerprint": ...}` dict
+    authored from the same belief as the gate, so a passing suite proved only
+    that the two agreed with each other.  `BJ.build_manifest()` nests the
+    module digest at `code.sha256`; against a real bundle the flat read
+    resolved to `""` and P2 stopped for a reason that had nothing to do with
+    the bundle.
+    """
+    manifest = _producer_manifest()
+    check("code_sha256" not in manifest,
+          "the producer writes no flat code_sha256 at the top level")
+    check(isinstance(manifest["code"], dict)
+          and P._is_sha256(manifest["code"]["sha256"]),
+          "it writes the module digest nested under code.sha256")
+    check(P._is_sha256(manifest["rule_fingerprint"]),
+          "and the rule fingerprint at the top level")
+    check("split" not in manifest,
+          "and carries no split, which is why P2 never reads one")
+
+    observed, problems = P.manifest_identity(manifest)
+    check(problems == [], "the real producer schema passes cleanly")
+    check(observed["code_sha256"] == P.PRODUCING_CODE_SHA256,
+          "with the registered producing digest read back")
+    check(observed["rule_fingerprint"] == P.REGISTERED_RULE_FINGERPRINT,
+          "and the registered rule fingerprint")
+    check(observed["preflight_rule_fingerprint"]
+          == P.REGISTERED_RULE_FINGERPRINT,
+          "and the freeze's fingerprint cross-checked against it")
+    check("code" in observed["read_from"]["code_sha256"]
+          and "sha256" in observed["read_from"]["code_sha256"],
+          "and the result says which field it read")
+
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
+    check(result["ok"] is True, "and a bundle carrying it passes P2 end to end")
+    check(result["manifest_identity"]["code_sha256"]
+          == P.PRODUCING_CODE_SHA256,
+          "with the identity reported from the nested field")
+
+
+def test_p2_stops_on_a_flat_or_malformed_manifest():
+    """A flat manifest is not this schema, and must not be read as one.
+
+    Each case is a shape a real file could take on — an older writer, a
+    hand-edit, a partially serialised object — and each must stop with a named
+    problem rather than resolve to an empty string that then "differs from the
+    registered value".
+    """
+    cases = (
+        ({"code_sha256": P.PRODUCING_CODE_SHA256,
+          "rule_fingerprint": P.REGISTERED_RULE_FINGERPRINT},
+         "code", "the old flat schema"),
+        (_producer_manifest(code=None) | {"code": None}, "code", "a null code"),
+        (_producer_manifest() | {"code": P.PRODUCING_CODE_SHA256},
+         "code", "a code that is a string, not a mapping"),
+        (_producer_manifest() | {"code": []}, "code", "a code that is a list"),
+        (_producer_manifest() | {"code": {}},
+         "code.sha256", "a code mapping with no sha256"),
+        (_producer_manifest() | {"code": {"sha256": None}},
+         "code.sha256", "a null code.sha256"),
+        (_producer_manifest() | {"code": {"sha256": 12345}},
+         "code.sha256", "a numeric code.sha256"),
+        (_producer_manifest() | {"code": {"sha256": "abc"}},
+         "code.sha256", "a truncated code.sha256"),
+        (_producer_manifest() | {"rule_fingerprint": None},
+         "rule_fingerprint", "a null rule_fingerprint"),
+        (_producer_manifest() | {"rule_fingerprint": ["x"]},
+         "rule_fingerprint", "a rule_fingerprint that is a list"),
+        (_producer_manifest() | {"preflight": "frozen"},
+         "preflight", "a preflight that is a string"),
+        (_producer_manifest() | {"preflight": []},
+         "preflight", "a preflight that is a list"),
+        (_producer_manifest(preflight=_preflight(rule_fingerprint="e" * 64)),
+         "preflight.rule_fingerprint", "a freeze fingerprint that disagrees"),
+    )
+    for manifest, field, label in cases:
+        observed, problems = P.manifest_identity(manifest)
+        check(any(p.startswith(field) for p in problems),
+              f"{label} is a named {field} problem")
+        result = P.run_p2(P.P2_TARGET_FOLDER_ID,
+                          _adapter(manifest=manifest), TOKEN)
+        check(result["status"] == P.P2_MANIFEST_MISMATCH,
+              f"and {label} stops P2 at the manifest gate")
+        check(result["input_identity"] is None,
+              f"and {label} yields no input identity")
+
+    # A freeze the producer legitimately omits is not a defect: build_manifest()
+    # writes `preflight: null` when no freeze was supplied, and P2 does not
+    # need one — it reads identity, not the input contract.
+    observed, problems = P.manifest_identity(_producer_manifest(preflight=None))
+    check(problems == [], "a null preflight is the producer's own shape")
+    check(observed["preflight_present"] is False, "and is reported as absent")
+
+    # And no wider exception is being swallowed into this verdict.  Read by
+    # AST, not by substring: this function's docstring necessarily names
+    # `BJ.build_manifest()` — it is explaining where the schema comes from —
+    # and a text scan cannot tell that from a call.
+    import ast
+    import inspect
+    tree = ast.parse(inspect.getsource(P.manifest_identity))
+    handlers = [n for n in ast.walk(tree) if isinstance(n, ast.ExceptHandler)]
+    check(handlers == [],
+          "the manifest reader catches nothing at all, so it cannot relabel a "
+          "RuntimeError or an AssertionError as a manifest defect")
+    calls = {n.func.value.id for n in ast.walk(tree)
+             if isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute)
+             and isinstance(n.func.value, ast.Name)}
+    check("BJ" not in calls and "Q5E" not in calls,
+          "and it calls nothing in the frozen or audit modules, so there is "
+          "nothing to catch")
+
+
+def test_p2_accepts_neither_a_raw_nor_a_near_miss_code_digest():
+    """Exactly one digest is accepted.  Not a family of them.
+
+    A shard and a manifest store whatever the producing checkout stored, so
+    accepting a second spelling and then returning the registered one would
+    hand the caller an identity the artifact does not carry.
+    """
+    live_raw = BJ.sha256_file(os.path.abspath(BJ.__file__))
+    variants = [("0" * 64, "an obviously wrong digest"),
+                (P.PRODUCING_CODE_SHA256.upper(), "an upper-cased digest"),
+                (P.PRODUCING_CODE_SHA256[:-1] + "0", "a one-character drift")]
+    if live_raw != P.PRODUCING_CODE_SHA256:
+        # Only meaningful on a checkout whose raw bytes differ from the frozen
+        # LF identity — a CRLF working tree.  There, the running module's own
+        # digest must not be accepted as the artifact's.
+        variants.append((live_raw, "this checkout's own raw digest"))
+    for digest, label in variants:
+        observed, problems = P.manifest_identity(_producer_manifest(code=digest))
+        check(any("code.sha256" in p for p in problems),
+              f"{label} is refused")
+        check(observed["code_sha256"] in (None, digest),
+              f"and {label} is never translated into the registered value")
+
+    ok, problems = P.manifest_identity(_producer_manifest())
+    check(problems == [] and ok["code_sha256"] == P.PRODUCING_CODE_SHA256,
+          "while the registered digest itself passes")
+
+
 def test_p2_does_not_call_the_other_seven_files_unexpected():
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
     gate = [g for g in result["gates"] if g["gate"] == "input_identity"][0]
     check(len(gate["not_unexpected"]) == 7,
           "the seven files Q5-E does not read are named as not-unexpected")
@@ -645,8 +936,8 @@ def test_p2_does_not_call_the_other_seven_files_unexpected():
 
 def test_p2_copies_differing_only_outside_the_inputs_are_not_byte_identical():
     """The same trap Q5-E closed: a shared subset fold is not byte-identity."""
-    a = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
-    b = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(mutate="log.txt"), TOKEN)
+    a = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
+    b = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(mutate="log.txt"), TOKEN)
     check(a["input_identity"]["subset_fold"] ==
           b["input_identity"]["subset_fold"],
           "changing a non-input file leaves the Q5-E input identity alone")
@@ -692,8 +983,8 @@ def test_p1_and_p2_verdicts_are_preserved_independently():
         bad_tree = _write_mitdb_tree(os.path.join(tmp, "bad"), drop="RECORDS")
         with _PatchedRegistration(bad_tree):
             bad_p1 = P.run_p1(bad_tree, TOKEN)
-    good_p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
-    bad_p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(superseded=True),
+    good_p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
+    bad_p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(superseded=True),
                       TOKEN)
 
     both = P.combine(good_p1, good_p2)
@@ -726,7 +1017,7 @@ def test_p1_and_p2_verdicts_are_preserved_independently():
 def test_registration_candidates_never_apply_themselves():
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-    p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+    p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
     allowed = P.registration_candidates(p1, p2, P.combine(p1, p2))
     check(allowed["registration_allowed"] is True, "both passing is eligible")
     check(allowed["applied_automatically"] is False,
@@ -739,7 +1030,7 @@ def test_registration_candidates_never_apply_themselves():
           Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
           "while the Q5-E module stays unregistered")
 
-    blocked_p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+    blocked_p2 = P.run_p2(P.P2_TARGET_FOLDER_ID,
                           _adapter(superseded=True), TOKEN)
     blocked = P.registration_candidates(p1, blocked_p2,
                                         P.combine(p1, blocked_p2))
@@ -761,7 +1052,7 @@ def test_registration_candidates_never_apply_themselves():
 def test_bundle_is_complete_atomic_and_not_self_referential():
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
@@ -797,7 +1088,7 @@ def test_bundle_refuses_an_unexpected_output_file():
     real = P.P1_P2_PREP_PAYLOAD_FILES
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         out = os.path.join(tmp, "run")
         try:
@@ -898,7 +1189,7 @@ def test_synthetic_run_is_stamped_and_never_ingestable():
         tree = _write_mitdb_tree(os.path.join(tmp, "mitdb"))
         adapter = _adapter()
         with _PatchedRegistration(tree):
-            outcome = P.execute_prep(tree, P.SOURCE_BUNDLE_FOLDER_ID,
+            outcome = P.execute_prep(tree, P.P2_TARGET_FOLDER_ID,
                                      os.path.join(tmp, "out"), adapter,
                                      approval=TOKEN, timestamp="T",
                                      emit=lambda *a: None, synthetic=True)
@@ -934,7 +1225,7 @@ def test_synthetic_run_is_stamped_and_never_ingestable():
 def test_seals_record_that_nothing_was_executed():
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-    p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+    p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
     check(p1["seals"]["detector_executed"] is False, "P1: no detector ran")
     check(p1["seals"]["m0_m4_aggregated"] is False, "P1: no M0-M4 aggregation")
     check(p1["seals"]["training_performed"] is False, "P1: no training")
@@ -956,12 +1247,18 @@ def test_notebook_is_committed_unexecuted():
         check(cell.get("execution_count") is None,
               f"cell {index} was never executed")
     source = "\n".join("".join(c["source"]) for c in nb["cells"])
-    # 2026-08-12: read-only execution was approved, so the notebook's two
-    # opt-in switches are deliberately on.  What must stay true is that they
-    # are the *only* thing that is on, and that the module still defaults
-    # closed so a stray import reaches nothing.
+    # 2026-08-14: the corrective-candidate rerun was approved, so this
+    # execution notebook's two opt-in switches are deliberately on.  Two things
+    # must stay true: they are the *only* thing that is on, and the module
+    # itself still defaults closed, so a stray import reaches nothing.  The
+    # notebook opening a switch at its call site and the module defaulting
+    # closed are not in tension — that split is the design.
     check("OPEN_REGISTERED_DATA = True" in source,
-          "the notebook opts in explicitly, under the 2026-08-12 approval")
+          "the notebook opts in explicitly, under the 2026-08-14 approval")
+    check("2026-08-14" in source,
+          "and says which approval it is running under")
+    check("모듈 기본값은 False" in source,
+          "while stating that the module's own default is still closed")
     check("APPROVAL = P.EXECUTION_APPROVAL_TOKEN" in source,
           "and carries the separate read-only PREP token")
     check("EXECUTION_APPROVAL_TOKEN" in source
@@ -999,6 +1296,51 @@ def test_notebook_is_committed_unexecuted():
                           if c["cell_type"] == "markdown")
     check("detect_r" in markdown,
           "the boundary is declared in prose, where naming it is the point")
+
+
+def test_the_notebook_targets_the_corrective_candidate_and_says_which():
+    """The notebook passes the target id, and shows both ids under both names.
+
+    A notebook that printed one "folder id" would leave the saved output —
+    which is the external freeze record — ambiguous about which folder the run
+    read.  Since the whole rerun turns on that distinction, both are printed
+    with the words that separate them.
+    """
+    with open(NOTEBOOK, encoding="utf-8") as handle:
+        nb = json.load(handle)
+    cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+    source = "\n".join("".join(c["source"]) for c in cells)
+
+    check("P.P2_TARGET_FOLDER_ID" in source,
+          "the notebook names the production target constant")
+    check("P.run_prep(" in source, "and calls the production route")
+
+    # The call itself passes the target, not the original.  By AST: a
+    # substring could match the constant anywhere in the file.
+    import ast
+    call = [n for n in ast.walk(ast.parse(source))
+            if isinstance(n, ast.Call)
+            and isinstance(n.func, ast.Attribute)
+            and n.func.attr == "run_prep"]
+    check(len(call) == 1, "exactly one run_prep() call exists")
+    folder_arg = call[0].args[1]
+    check(isinstance(folder_arg, ast.Attribute)
+          and folder_arg.attr == "P2_TARGET_FOLDER_ID",
+          "and its folder argument is the corrective target constant")
+
+    for name in ("ORIGINAL_CANONICAL_FOLDER_ID", "CORRECTIVE_BUNDLE_SPEC",
+                 "P2_TARGET_RUN", "ORIGINAL_CANONICAL_RUN"):
+        check(name in source,
+              f"the preflight cell prints {name} so the two are distinguished")
+    check("candidate_is_registered_as_canonical" in source,
+          "and the report states that the candidate is not registered")
+    check("SOURCE_BUNDLE_FOLDER_ID == P.ORIGINAL_CANONICAL_FOLDER_ID" in source,
+          "with an assertion that the registration was not moved by this run")
+
+    # The clone fallback points at a branch that will exist after the merge.
+    check("REPO_BRANCH = 'main'" in source,
+          "the clone fallback targets main, not a feature branch that will "
+          "be deleted")
 
 
 def test_registered_q5e_gates_are_still_closed():
@@ -1147,8 +1489,8 @@ def test_b2_inventory_rejects_every_ambiguity_form():
                      for c in _bundle_children()],
     }
     for label, children in cases.items():
-        adapter = FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID: children})
-        result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+        adapter = FakeDriveAdapter({P.P2_TARGET_FOLDER_ID: children})
+        result = P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, TOKEN)
         check(result["status"] == P.P2_INVENTORY_AMBIGUOUS,
               f"{label} is refused as ambiguous")
         check(result["ambiguity"][label],
@@ -1159,7 +1501,7 @@ def test_b2_inventory_rejects_every_ambiguity_form():
 
 def test_b3_direct_stream_is_cross_checked_against_the_inventory():
     """B3: a download that merely succeeded proves nothing about the bytes."""
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
     bridge = [g for g in result["gates"]
               if g["gate"] == "canonical_bytes_bridge"][0]
     check(bridge["ok"] is True, "a consistent stream passes")
@@ -1177,8 +1519,8 @@ def test_b3_direct_stream_is_cross_checked_against_the_inventory():
 
 def test_b3_a_stream_that_disagrees_with_the_inventory_stops_the_bridge():
     lying = [dict(c, size=str(len(c["_bytes"]) + 5)) for c in _bundle_children()]
-    adapter = FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID: lying})
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, adapter, TOKEN)
+    adapter = FakeDriveAdapter({P.P2_TARGET_FOLDER_ID: lying})
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID, adapter, TOKEN)
     check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
           "a size disagreement stops at the bridge gate")
     check(result["input_identity"] is None,
@@ -1188,15 +1530,15 @@ def test_b3_a_stream_that_disagrees_with_the_inventory_stops_the_bridge():
           "nor the manifest gate")
 
     wrong_hash = [dict(c, sha256Checksum="f" * 64) for c in _bundle_children()]
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
-                      FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID:
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID,
+                      FakeDriveAdapter({P.P2_TARGET_FOLDER_ID:
                                         wrong_hash}), TOKEN)
     check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
           "a provider sha256 disagreement stops too")
 
     wrong_md5 = [dict(c, md5Checksum="0" * 32) for c in _bundle_children()]
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
-                      FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID:
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID,
+                      FakeDriveAdapter({P.P2_TARGET_FOLDER_ID:
                                         wrong_md5}), TOKEN)
     check(result["status"] == P.P2_FOLDER_ID_BRIDGE_UNRESOLVED,
           "and so does a provider md5 disagreement")
@@ -1206,8 +1548,8 @@ def test_b3_missing_checksums_are_recorded_not_guessed():
     """G4: absence is recorded; it does not fail a direct stream by itself."""
     bare = [{k: v for k, v in c.items() if k != "sha256Checksum"}
             for c in _bundle_children()]
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
-                      FakeDriveAdapter({P.SOURCE_BUNDLE_FOLDER_ID: bare}),
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID,
+                      FakeDriveAdapter({P.P2_TARGET_FOLDER_ID: bare}),
                       TOKEN)
     check(result["ok"] is True,
           "a direct stream still passes without a provider checksum")
@@ -1230,7 +1572,7 @@ def test_g5_publish_never_deletes_anything_pre_existing():
     """G5: an existing final path is refused, not removed."""
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
 
         out = os.path.join(tmp, "existing")
@@ -1360,7 +1702,7 @@ def test_g5_a_writer_racing_into_the_claim_is_detected_not_overwritten():
     """
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         target = os.path.join(tmp, "racy")
 
@@ -1398,7 +1740,7 @@ def test_g5_only_a_committed_directory_is_a_bundle():
     """Publication is the marker, so every consumer check hangs off it."""
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
@@ -1505,7 +1847,7 @@ def test_g5_publish_refuses_a_symlinked_parent_or_target():
     """
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
 
         real = os.path.join(tmp, "real")
@@ -1555,7 +1897,7 @@ def test_g5_publish_refuses_a_symlinked_parent_or_target():
 def test_g5_staging_is_unique_per_call():
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         first = P.write_bundle(os.path.join(tmp, "a"),
                                P.build_config("T", True), p1, p2, combined,
@@ -1592,7 +1934,7 @@ def test_e3_e4_payload_is_p1_p2_specific_and_covers_the_marker():
 
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
                                  P.combine(p1, p2), ["x"], synthetic=True)
@@ -1830,7 +2172,7 @@ def test_c1_no_authentication_happens_while_the_guard_is_alive():
         # withdrawing the approval — the property under test is unchanged:
         # while the stop is closed, *nothing* below it is reached.
         P.EXECUTION_APPROVAL_RECORD["granted"] = False
-        P.run_prep("/nonexistent/mitdb", P.SOURCE_BUNDLE_FOLDER_ID,
+        P.run_prep("/nonexistent/mitdb", P.P2_TARGET_FOLDER_ID,
                    "/nonexistent/out", adapter=None, approval=TOKEN,
                    open_registered_data=True, timestamp="20260812T000000Z",
                    emit=lambda *a, **k: None)
@@ -1867,7 +2209,8 @@ def test_c1_the_guard_sits_after_every_check_and_before_every_capability():
             if name in ("require_execution_approval", "_terminal_execution_guard",
                         "build_drive_adapter", "execute_prep"):
                 order.append((name, node.lineno))
-        elif isinstance(node, ast.Name) and node.id == "SOURCE_BUNDLE_FOLDER_ID":
+        elif isinstance(node, ast.Name) and node.id in (
+                "P2_TARGET_FOLDER_ID", "ORIGINAL_CANONICAL_FOLDER_ID"):
             order.append(("folder_id", node.lineno))
     first = {}
     for label, line in order:
@@ -1933,7 +2276,7 @@ def test_b5_manifest_digest_is_reported_for_external_freezing():
 
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
                                  P.combine(p1, p2), ["x"], synthetic=True)
@@ -2195,9 +2538,9 @@ def test_c4_a_publisher_failure_keeps_every_digest_it_computed():
           "and the cheap benign explanations are reported under it")
 
     candidates = P.registration_candidates(
-        result, P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN),
+        result, P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN),
         P.combine(result,
-                  P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)))
+                  P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)))
     entry = candidates["MITDB_TREE_AGGREGATE"]
     check(entry["observed"] is None,
           "the aggregate target itself was never measured")
@@ -2232,7 +2575,7 @@ def test_c4_p2_keeps_the_bridge_it_proved_when_a_later_gate_fails():
     """C4: the cross-checks really happened; a manifest failure is not a reason
     to forget them.  `input_identity` stays None because that gate was never
     reached — an absent identity and a hidden one are different claims."""
-    result = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID,
+    result = P.run_p2(P.P2_TARGET_FOLDER_ID,
                       _adapter(code='0' * 64), TOKEN)
 
     check(result["status"] == P.P2_MANIFEST_MISMATCH,
@@ -2277,7 +2620,7 @@ def test_c5_the_run_records_the_environment_it_happened_in():
     """C5: a digest is only as interpretable as the runtime that produced it."""
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
         out = os.path.join(tmp, "bundle")
         P.write_bundle(out, P.build_config("T", True), p1, p2, combined,
@@ -2528,7 +2871,7 @@ def test_a_run_validates_its_own_bundle_before_reporting_success():
         out = os.path.join(tmp, "out")
         with _PatchedRegistration(tree):
             result = P.execute_prep(
-                tree, P.SOURCE_BUNDLE_FOLDER_ID, out, _adapter(),
+                tree, P.P2_TARGET_FOLDER_ID, out, _adapter(),
                 approval=TOKEN, timestamp="T", emit=lambda *a: None,
                 synthetic=True)
         check(result["verified"]["ok"] is True,
@@ -2558,7 +2901,7 @@ def test_a_run_validates_its_own_bundle_before_reporting_success():
         try:
             with _PatchedRegistration(tree):
                 P.execute_prep(
-                    tree, P.SOURCE_BUNDLE_FOLDER_ID,
+                    tree, P.P2_TARGET_FOLDER_ID,
                     os.path.join(tmp, "out2"), _adapter(), approval=TOKEN,
                     timestamp="T", emit=lambda *a: None, synthetic=True)
             raise AssertionError("a run reported success without validating")
@@ -2584,7 +2927,7 @@ def test_a_racing_writer_owns_any_name_it_got_to_first():
     """
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
 
         # One per kind of file the writer produces: canonical JSON, the plain
@@ -2654,7 +2997,7 @@ def test_the_verifier_checks_the_marker_instead_of_trusting_it():
     """
     def fresh(tmp, name):
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         out = os.path.join(tmp, name)
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
                                  P.combine(p1, p2), ["x"], synthetic=True)
@@ -2784,7 +3127,7 @@ def test_a_malformed_marker_or_manifest_is_a_verdict_not_a_crash():
     """A truncated bundle file is a finding; raising would hide it."""
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
 
         for index, (victim, body) in enumerate((
@@ -2813,7 +3156,7 @@ def test_structural_validity_is_not_an_acceptance_pass():
     """An unanchored manifest is the one file the fold cannot cover."""
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
                                  P.combine(p1, p2), ["x"], synthetic=True)
@@ -2902,7 +3245,7 @@ def test_written_bytes_are_the_bytes_that_were_handed_in():
     # reports for the manifest is the digest of the manifest on disk.
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
                                  P.combine(p1, p2), ["x"], synthetic=True)
@@ -2978,7 +3321,7 @@ def test_the_verifier_reads_json_types_and_not_truthiness():
 
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         combined = P.combine(p1, p2)
 
         def fresh(name):
@@ -3092,7 +3435,7 @@ def test_matching_a_digest_and_being_anchored_are_different_facts():
     """
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
-        p2 = P.run_p2(P.SOURCE_BUNDLE_FOLDER_ID, _adapter(), TOKEN)
+        p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
         out = os.path.join(tmp, "run")
         written = P.write_bundle(out, P.build_config("T", True), p1, p2,
                                  P.combine(p1, p2), ["x"], synthetic=True)
@@ -3204,7 +3547,7 @@ def test_the_runs_verdict_and_its_own_words_do_not_contradict():
         emitted = []
         with _PatchedRegistration(tree):
             result = P.execute_prep(
-                tree, P.SOURCE_BUNDLE_FOLDER_ID, os.path.join(tmp, "out"),
+                tree, P.P2_TARGET_FOLDER_ID, os.path.join(tmp, "out"),
                 _adapter(), approval=TOKEN, timestamp="T",
                 emit=emitted.append, synthetic=True)
 
@@ -3252,7 +3595,7 @@ def test_the_execution_approval_opens_only_what_it_names():
     with tempfile.TemporaryDirectory() as tmp:
         # The switch still has to be turned on at the call site.
         try:
-            P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp, adapter=adapter,
+            P.run_prep(tmp, P.P2_TARGET_FOLDER_ID, tmp, adapter=adapter,
                        approval=TOKEN, open_registered_data=False,
                        emit=lambda *a: None)
             raise AssertionError("the closed switch let a run through")
@@ -3264,22 +3607,26 @@ def test_the_execution_approval_opens_only_what_it_names():
         # Q5-E audit token.
         for wrong in (None, "", Q5E.EXECUTION_APPROVAL_TOKEN):
             try:
-                P.run_prep(tmp, P.SOURCE_BUNDLE_FOLDER_ID, tmp,
+                P.run_prep(tmp, P.P2_TARGET_FOLDER_ID, tmp,
                            adapter=adapter, approval=wrong,
                            open_registered_data=True, emit=lambda *a: None)
                 raise AssertionError(f"approval {wrong!r} was accepted")
             except P.PrepNotApprovedError:
                 check(True, f"approval {wrong!r} is still refused")
 
-        # The folder id is still the registered one only.
-        try:
-            P.run_prep(tmp, "1NotTheRegisteredFolderId", tmp, adapter=adapter,
-                       approval=TOKEN, open_registered_data=True,
-                       emit=lambda *a: None)
-            raise AssertionError("an unregistered folder id was accepted")
-        except P.PrepError as error:
-            check("registered canonical" in str(error),
-                  "the folder id is still checked, and by id")
+        # The folder id is still one id only — now the corrective candidate,
+        # and still nothing else.  Re-pointing the target did not turn this
+        # into a folder inspector.
+        for wrong_id in ("1NotTheRegisteredFolderId",
+                         P.ORIGINAL_CANONICAL_FOLDER_ID):
+            try:
+                P.run_prep(tmp, wrong_id, tmp, adapter=adapter,
+                           approval=TOKEN, open_registered_data=True,
+                           emit=lambda *a: None)
+                raise AssertionError(f"folder id {wrong_id!r} was accepted")
+            except P.PrepError as error:
+                check("refusing to run" in str(error),
+                      f"{wrong_id!r} is still refused, and by id")
 
     check(adapter.calls == [],
           "none of those refusals touched the Drive adapter")
@@ -3657,6 +4004,159 @@ def test_the_executed_run_record_is_kept_beside_the_template():
         template = json.load(handle)
     check(sum(len(c.get("outputs") or ()) for c in template["cells"]) == 0,
           "and the template beside them is still unexecuted")
+
+
+def test_the_corrective_contract_is_still_exactly_twelve_files():
+    """The contract did not move to meet the bundle.  The bundle moved.
+
+    EXP-2026-009 exists because the producer wrote eleven of twelve files, and
+    the standing decision was that this is a producer defect, not a stale
+    contract.  So the number P2 holds the corrective folder to is the same
+    twelve, `negative_control_null.npz` is still one of them, and a corrective
+    folder that arrived with eleven would stop exactly as the original did.
+    """
+    check(len(BJ.BUNDLE_FILES) == 12, "the directory contract is twelve files")
+    check("negative_control_null.npz" in BJ.BUNDLE_FILES,
+          "and the reconstructed file is one of them")
+    check(len(set(BJ.BUNDLE_FILES)) == 12, "with no duplicate name")
+    check(P.COMMIT_MARKER not in BJ.BUNDLE_FILES,
+          "and no commit marker is smuggled into the Q5-D contract")
+
+    full = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
+    check(full["ok"] is True, "a twelve-file corrective folder passes")
+    gate = [g for g in full["gates"] if g["gate"] == "directory_contract"][0]
+    check(gate["n_expected"] == 12 and gate["n_observed"] == 12,
+          "with twelve expected and twelve observed")
+    check(gate["missing"] == [] and gate["unexpected"] == [],
+          "nothing missing and nothing extra")
+    check(len(full["directory_contract"]["full_fold"]) == 64,
+          "and a twelve-file fold is produced")
+
+    # The original failure, reproduced against the corrective target: eleven
+    # files stop, and they stop naming the same file.
+    short = P.run_p2(P.P2_TARGET_FOLDER_ID,
+                     _adapter(drop="negative_control_null.npz"), TOKEN)
+    check(short["status"] == P.P2_DIRECTORY_CONTRACT_FAILED,
+          "eleven files still fail the directory contract")
+    gate = [g for g in short["gates"] if g["gate"] == "directory_contract"][0]
+    check(gate["missing"] == ["negative_control_null.npz"],
+          "naming exactly the file the producer omitted")
+    check(gate["unexpected"] == [],
+          "and reporting nothing unexpected, as the original run did")
+    check(short["input_identity"] is None,
+          "and no input identity is produced from an incomplete bundle")
+    check(short["target_is_corrective_candidate"] is True,
+          "even though the target was the corrective candidate — passing is "
+          "not implied by which folder was asked for")
+
+
+def test_an_unapproved_or_switched_off_run_performs_zero_calls():
+    """Zero, not "a failed one".  Counted rather than asserted.
+
+    Permission is checked before capability, so nothing that could mint a
+    credential, build a service or reach the API is entered at all.  The
+    counters below are the evidence; a route that authenticated and then
+    refused would leave a real credential behind and would count 1.
+    """
+    calls = {"credential": 0, "service": 0}
+
+    def credential_provider():
+        calls["credential"] += 1
+        raise AssertionError("a credential was requested")
+
+    def service_factory(credentials):
+        calls["service"] += 1
+        raise AssertionError("a service was built")
+
+    adapter = _adapter()
+    with tempfile.TemporaryDirectory() as tmp:
+        refusals = 0
+        for approval, switch, label in (
+                (None, True, "no approval"),
+                ("", True, "an empty approval"),
+                (Q5E.EXECUTION_APPROVAL_TOKEN, True, "the Q5-E audit token"),
+                (TOKEN, False, "OPEN_REGISTERED_DATA closed"),
+                (None, False, "neither")):
+            try:
+                P.run_prep(tmp, P.P2_TARGET_FOLDER_ID, tmp, adapter=adapter,
+                           approval=approval, open_registered_data=switch,
+                           emit=lambda *a: None)
+                raise AssertionError(f"{label} produced a run")
+            except P.PrepNotApprovedError:
+                refusals += 1
+        check(refusals == 5, "every unapproved combination refuses")
+
+        # The auth seam itself, called directly with the same wrong tokens.
+        for approval in (None, "", Q5E.EXECUTION_APPROVAL_TOKEN):
+            try:
+                P.authenticate_drive_readonly(
+                    approval, credential_provider=credential_provider,
+                    service_factory=service_factory)
+                raise AssertionError("authentication proceeded")
+            except P.PrepNotApprovedError:
+                check(True, f"authentication refuses approval {approval!r}")
+
+    check(calls["credential"] == 0,
+          "no credential was requested on any refused route")
+    check(calls["service"] == 0, "and no Drive service was built")
+    check(adapter.calls == [], "and the Drive adapter was never called")
+    check(P.OPEN_REGISTERED_DATA is False,
+          "the committed default is still closed")
+
+
+def test_the_rerun_does_not_touch_the_prior_run_record_or_the_prior_bundle():
+    """Nothing from 2026-08-12 is edited, overwritten or renamed by this change.
+
+    Two artifacts carry that run: the executed notebook in the repository, and
+    the Drive bundle it wrote.  The first is checked here directly; the second
+    cannot be reached from a test at all, which is itself the guarantee — this
+    module has no write, move, trash or delete verb anywhere in it, and the
+    output directory is composed from a timestamp, so a rerun cannot land on
+    the earlier one.
+    """
+    executed_dir = os.path.join(ROOT, "notebooks", "executed")
+    prior = "quest56_q5e_prep_p1_p2_asset_identity_20260812T123035.ipynb"
+    path = os.path.join(executed_dir, prior)
+    if os.path.isfile(path):
+        with open(path, encoding="utf-8") as handle:
+            nb = json.load(handle)
+        outputs = sum(len(c.get("outputs") or ()) for c in nb["cells"])
+        check(outputs > 0,
+              "the 20260812 executed record still carries its saved output — "
+              "it is the external freeze record for that run's manifest digest")
+        check(os.path.basename(path) != os.path.basename(NOTEBOOK),
+              "and it is a different file from the template")
+    else:
+        check(True, "no 20260812 executed record is committed, a valid state")
+
+    # A rerun writes a new versioned directory; it cannot address an old one.
+    import inspect
+    source = inspect.getsource(P.execute_prep)
+    check("f\"{timestamp}_{RUN_SLUG}\"" in source,
+          "the output directory is composed from the run's own timestamp")
+    writer = inspect.getsource(P.write_bundle)
+    check("os.mkdir(directory)" in writer,
+          "and it is claimed with mkdir, which fails rather than replaces")
+    for verb in ("shutil.rmtree", "os.remove", "os.unlink", "os.rmdir",
+                 "os.rename", "os.replace"):
+        check(verb not in writer,
+              f"the writer never calls {verb}, so nothing pre-existing moves")
+
+    # And nothing in the module can modify Drive: the adapter's whole surface
+    # is list and download.
+    surface = {n for n in dir(P.DriveFolderAdapter) if not n.startswith("_")}
+    check(surface == {"list_children", "download", "describe"},
+          "the Drive adapter exposes only read verbs")
+    # Checked on the adapter's own body rather than on every `.update(` in the
+    # file: `dict.update()` and `hashlib.update()` are not Drive writes, and a
+    # name-only scan cannot tell them apart.
+    with open(P.__file__, encoding="utf-8") as handle:
+        body = handle.read().split("class GoogleDriveFolderAdapter", 1)[1]
+        body = body.split("\ndef ", 1)[0]
+    for verb in (".create(", ".update(", ".delete(", ".trash(", ".copy(",
+                 ".move("):
+        check(verb not in body,
+              f"and the Drive adapter never calls files(){verb}")
 
 
 def declared_tests():
