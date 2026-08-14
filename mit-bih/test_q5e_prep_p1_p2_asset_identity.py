@@ -372,9 +372,12 @@ def test_no_api_or_file_access_without_approval():
 def test_terminal_guard_precedes_every_reader_and_api_call():
     """The stop is open, and it opens on a recorded approval — not on a gap.
 
-    Execution was approved on 2026-08-12, so an approved, switched-on call now
-    proceeds past this point.  What must not change is its *position*: still
-    after every check, still before anything that authenticates or reads.
+    The current execution approval is 2026-08-14 (the corrective-candidate
+    rerun), so an approved, switched-on call now proceeds past this point.  The
+    2026-08-12 approval covered the earlier run against the original eleven-file
+    folder and is kept only as history.  What must not change is the guard's
+    *position*: still after every check, still before anything that
+    authenticates or reads.
     """
     check(P.EXECUTION_APPROVAL_RECORD["granted"] is True,
           "the read-only execution approval is recorded as granted")
@@ -1244,12 +1247,18 @@ def test_notebook_is_committed_unexecuted():
         check(cell.get("execution_count") is None,
               f"cell {index} was never executed")
     source = "\n".join("".join(c["source"]) for c in nb["cells"])
-    # 2026-08-12: read-only execution was approved, so the notebook's two
-    # opt-in switches are deliberately on.  What must stay true is that they
-    # are the *only* thing that is on, and that the module still defaults
-    # closed so a stray import reaches nothing.
+    # 2026-08-14: the corrective-candidate rerun was approved, so this
+    # execution notebook's two opt-in switches are deliberately on.  Two things
+    # must stay true: they are the *only* thing that is on, and the module
+    # itself still defaults closed, so a stray import reaches nothing.  The
+    # notebook opening a switch at its call site and the module defaulting
+    # closed are not in tension — that split is the design.
     check("OPEN_REGISTERED_DATA = True" in source,
-          "the notebook opts in explicitly, under the 2026-08-12 approval")
+          "the notebook opts in explicitly, under the 2026-08-14 approval")
+    check("2026-08-14" in source,
+          "and says which approval it is running under")
+    check("모듈 기본값은 False" in source,
+          "while stating that the module's own default is still closed")
     check("APPROVAL = P.EXECUTION_APPROVAL_TOKEN" in source,
           "and carries the separate read-only PREP token")
     check("EXECUTION_APPROVAL_TOKEN" in source
