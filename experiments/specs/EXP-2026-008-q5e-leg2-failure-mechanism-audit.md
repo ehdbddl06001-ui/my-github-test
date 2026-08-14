@@ -49,6 +49,14 @@ preflight, implementation design, and scientific execution respectively.  None a
 labels, V10 probabilities, the association analysis, or any training.  Those
 seals are unchanged by this document.
 
+**Input identity registration (2026-08-14).**  Two of the three registration
+stops are closed: the MIT-BIH tree aggregate (P1) and the canonical bundle's
+five per-file digests, run and folder id (P2) are registered — see §Inputs and
+the Decision log entry of the same date.  **`SOURCE_MATCH_EQUIVALENCE_REQUIRED`
+(P3) is the only remaining stop.**  Registering an input identity is not step 6:
+it does not approve execution, and `status` stays
+`approved_for_implementation`.
+
 The frontmatter `split` reads `DS1_only_diagnostic`.  That is the **scope of
 this diagnostic**, forced by the DS2 seal, and it is not a change to the
 project's principal benchmark: `AGENTS.md`'s DS1 -> DS2 inter-patient evaluation
@@ -202,6 +210,42 @@ Before any measurement, record for **each** of the five files: Drive file ID,
 byte size, and SHA-256.  These five digests are this diagnostic's input
 identity and are written into its own manifest.
 
+**Registered 2026-08-14** (PREP P1/P2, execution contract D9–D12).  The five
+digests, and the run and folder id they were measured at, are now constants in
+`mit-bih/q5e_leg2_failure_mechanism_audit.py`:
+
+| item | value |
+|---|---|
+| run | `20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective` |
+| folder id | `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH` |
+| `decision.json` | `d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5` |
+| `join_map.parquet` | `dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971` |
+| `manifest.json` | `4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c` |
+| `record_class_coverage.csv` | `e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec` |
+| `unmatched_and_ambiguous.csv` | `b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f` |
+
+The registered bundle is the **corrective packaging-derived canonical Q5-E
+input** built by EXP-2026-009 on 2026-08-13, not the folder EXP-2026-007
+published.  Eleven of its twelve files are byte-identical copies of the
+EXP-2026-007 outputs; the twelfth, `negative_control_null.npz`, was never
+written by the original producer and was reconstructed from the 100
+preregistered null shards through the frozen `finalize_null_shards()` path
+(coverage 10000/10000, no gaps, no overlaps, `j_null_max` element-wise
+identical to `null_summary.json`).  No scientific rule, null value, seed,
+family or replicate count changed.  The original producer folder
+`1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd` is kept in the module as lineage
+(`ORIGINAL_PRODUCER_FOLDER_ID`) and is never read.
+
+The **five-file subset fold**
+`2c98aebb797ec4f6e033ddaf95acb6b0bc66f2565d8681d3af14acbc575978ea` is the
+scientific input identity and is recomputed at run time.  The **twelve-file
+full fold**
+`4c9c9cec905efca85224c5dff080f1cae5f42a5d29322ddd7d964c668b54db7d` is the
+whole bundle's provenance and audit identity; it is recorded in
+`research/ASSETS.md` and the execution contract and is deliberately **not** a
+runtime constant or gate here, because Q5-E reads five files and the seven it
+does not read must not be able to fail its identity gate.
+
 ## Read (frozen lineage, M1 / M3 / M4 only)
 
 - registered canonical `mamba_data.npz`, SHA-256
@@ -209,8 +253,10 @@ identity and are written into its own manifest.
 - registered **V10** preprocessing cache, aggregate `82b9a593…` over 45
   files, as the M4/Leg 2 input; the V9 cache aggregate `25cd7952…` is a
   corroborating rebuild and is not a substitute input;
-- registered MIT-BIH `mitdb-1.0.0` publisher tree, aggregate `0b46a411…`, 147
-  files, publisher checksums verified;
+- registered MIT-BIH `mitdb-1.0.0` publisher tree, 147 files, publisher
+  checksums verified; the aggregate was recorded here only as `0b46a411…` until
+  PREP P1 measured it, and the **full** registered value (2026-08-14) is
+  `0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8`;
 - the frozen module `mit-bih/q5d_order_preserving_beat_join.py` at code SHA-256
   `6b098c67…`, imported **read-only** to replay Leg 1 and to reconstruct the
   candidate graph deterministically.
@@ -1203,8 +1249,16 @@ no raw ECG or detector execution.  After this PR, **STOP** and wait for merge.
       — **explicit user approval, 2026-08-12, after PR #108 merged**
 - [x] Claude implements the frozen design without executing it
       — **implementation PR, 2026-08-12; never executed** (Decision log below)
+- [x] P1/P2 input identity registered — MIT-BIH tree aggregate, canonical
+      bundle run, folder id and the five per-file SHA-256, all four together
+      — **2026-08-14 registration PR** after `PREP_P1_P2_PASS` and
+      `PREP_P1_P2_RESULT_ACCEPTED` (Decision log below)
+- [ ] P3 source-matching differential: designed, implemented, executed and
+      accepted — the only remaining registration stop
 - [ ] User separately approves execution on the registered artifacts
-- [ ] Bundle file IDs, byte sizes and SHA-256 recorded before any measurement
+- [x] Bundle file IDs, byte sizes and SHA-256 recorded before any measurement
+      — recorded by PREP P2 at folder id `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH`,
+      twelve children cross-checked, before any Q5-E measurement exists
 - [ ] QA reproduction targets all match, or `DIAGNOSTIC_INPUT_MISMATCH`
 - [ ] M3 graph reconstruction reproduces the bundle partition exactly
 - [ ] Static source-map verification passes against the frozen V10
@@ -2533,3 +2587,50 @@ only exception the gate converts — into the registered `M4_FROZEN_RR_MISMATCH`
 error still propagates.
 
 The three registration items remain open and are unchanged as terminal stops.
+
+## 2026-08-14 — P1/P2 input identity registered; P3 is the only remaining stop
+
+The two asset-identity stops are closed.  This entry records that and nothing
+else: **no scientific question, hypothesis, prediction, measurement, negative
+control, multiplicity rule, gate, threshold or decision rule in this document is
+changed by it.**  Nothing was executed, no Drive asset was opened, and no
+measurement was computed here.
+
+The values come from the read-only PREP run
+`20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity` (combined verdict
+`PREP_P1_P2_PASS`), which Codex accepted on 2026-08-14 after re-fetching the
+Drive bundle read-only and verifying it against the externally anchored
+manifest digest — `PREP_P1_P2_RESULT_ACCEPTED`, `CORRECTIVE_PROMOTION_APPROVED`.
+The full record, including the four-category atomicity rule and the corrective
+provenance, is in the execution contract's Decision log, D9–D12
+(`experiments/specs/EXP-2026-008-q5e-prep-p1-p2-execution-contract.md`).
+
+Registered together, in one PR, all four or none:
+
+```
+MITDB_TREE_AGGREGATE       0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8
+SOURCE_BUNDLE_FOLDER_ID    1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH
+SOURCE_BUNDLE_RUN          20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective
+SOURCE_BUNDLE_FILE_SHA256  the five digests listed under §Inputs
+```
+
+`SOURCE_BUNDLE_RUN` names the **corrective repair run**, not the PREP run that
+verified it.  The registered bundle is a *corrective packaging-derived canonical
+Q5-E input*: eleven byte-identical copies of the EXP-2026-007 outputs plus one
+file — `negative_control_null.npz` — that the original producer never wrote and
+that EXP-2026-009 reconstructed from the 100 preregistered null shards a day
+later.  No EXP-2026-007 execution produced a twelve-file bundle.
+
+**What is now closed:** `INPUT_IDENTITY_REGISTRATION_REQUIRED` (P1) and
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED` (P2).
+
+**What is still a terminal stop:** `SOURCE_MATCH_EQUIVALENCE_REQUIRED` (P3) —
+one item, unchanged.  The source-matching adapter remains a text-derived
+candidate, unverified against the registered `data.py`, and
+`m4_feasibility_gate()` still stops **before** `detect_r()` is called.  P3 needs
+its own design, implementation, execution and result acceptance, in that order.
+
+An input identity is not an execution approval.  This spec's `status` stays
+`approved_for_implementation`; it is not `approved_for_execution`, `RUNNING`,
+`MEASURED` or `COMPLETE`, and no Q5-E execution approval is to be requested
+before P3 closes.

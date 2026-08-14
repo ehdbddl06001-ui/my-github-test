@@ -398,7 +398,69 @@ code sha 사이에서 **bitwise 재현**됐다(세 family + `J_null_max`, 각 10
   `research/HANDOFF_2026-08-11_Q5D_v_class_join_failure_to_codex.md` 로 Codex 에
   넘겼다. **tolerance 는 넓히지 않았다** — 결과를 본 뒤의 완화다.
 
-## EXP-2026-008 / Q5-E — PREP P1/P2 실행됨 (2026-08-12), 종합 판정 **STOP**
+## EXP-2026-008 / Q5-E — P1/P2 입력 identity **등록 완료** (2026-08-14) · 남은 stop은 P3 하나
+
+2026-08-14 재실행이 `PREP_P1_P2_PASS` 로 끝났고 Codex 가 결과를 인수했다
+(`PREP_P1_P2_RESULT_ACCEPTED` · `CORRECTIVE_PROMOTION_APPROVED`). 인수는 Drive 의
+실제 PREP bundle 을 읽기 전용으로 다시 가져와 **외부 anchor**(저장된 실행본 노트북
+출력)로 검증한 것이다 — 실행 자신의 self-check 가 아니다.
+
+```
+run          20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity
+folder id    1805OG3ovOf3TJU_0xmzGIR9Nz51qrn2L
+manifest 외부 동결   f23d90180cbc43f5805c8c04216bfdd2f3479a6fe9af655a884cfd17b8446f9e
+prep payload fold    4b77dbeed73124d56914e5cba99de94a370f59ba9020d908b642a85b83ed5ee7
+structure_ok true · manifest_digest_matches_expected true ·
+manifest_anchored_externally true · acceptance_eligible true · problems []
+```
+
+**등록은 별도 registration PR 이 수행했다**(`applied_automatically: false`).
+네 범주가 **함께** 움직였고, `q5e_leg2_failure_mechanism_audit.py` 의
+`input_identity_registration()` / `assert_registration_is_atomic()` 가 부분 등록을
+`INPUT_IDENTITY_REGISTRATION_PARTIAL` 로 중단시킨다(회귀 테스트가 네 범주를 하나씩
+되돌려 전부 거부되는지 확인한다).
+
+```
+MITDB_TREE_AGGREGATE       0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8
+SOURCE_BUNDLE_FOLDER_ID    1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH
+SOURCE_BUNDLE_RUN          20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective
+SOURCE_BUNDLE_FILE_SHA256  decision.json d464a405… · join_map.parquet dad93d34… ·
+                           manifest.json 4bd7b4d8… · record_class_coverage.csv e786c203… ·
+                           unmatched_and_ambiguous.csv b6134468…
+```
+
+`SOURCE_BUNDLE_RUN` 은 **corrective repair run** 이지 2026-08-14 PREP run 이름이
+아니다. 등록된 bundle 은 **corrective packaging-derived canonical Q5-E input** 이다 —
+기존 11파일은 EXP-2026-007 원 산출물의 byte-identical 복사본이지만 12번째
+`negative_control_null.npz` 는 **원 producer 가 실행 당시 쓴 파일이 아니고**, 하루 뒤
+별도 EXP-2026-009 packaging-repair 모듈이 사전등록 shard 100개에서 재구성했다
+(coverage 10000/10000 · gap·overlap 0 · `j_null_max` element-wise 동일). 과학 규칙·
+null 값·seed·replicate 수는 하나도 바뀌지 않았다. **"원래 EXP-2026-007 실행이 12파일
+bundle 을 산출했다"는 서술은 사실이 아니다.**
+
+**두 fold 의 역할이 다르다**: 5파일 subset fold `2c98aebb…978ea` 가 Q5-E 가 실제로 읽는
+**과학 입력 identity**(런타임 재계산)이고, 12파일 full fold `4c9c9cec…4db7d` 는 bundle
+전체의 **provenance·audit identity** 다 — 후자는 ASSETS·Decision log 기록 전용이며
+Q5-E runtime 상수·gate 가 아니다(회귀 테스트가 모듈에 없음을 고정한다).
+
+ASSETS 에 PREP run folder ID 두 개를 기록했다: 2026-08-14 PASS run
+`1805OG3ovOf3TJU_0xmzGIR9Nz51qrn2L`, 2026-08-12 STOP run
+`1yKw7zH4ElQFVcIx0ckFRDxNZVREQcZMU`(종전 '미기록'의 **사실 정정**이며 2026-08-12 의
+STOP 판정 자체는 그대로다).
+
+### 남은 것
+
+**Q5-E 의 stop 은 이제 P3 하나다** — `SOURCE_MATCH_EQUIVALENCE_REQUIRED`.
+source-matching adapter 는 여전히 등록 `data.py` 에 대해 검증되지 않은 text-derived
+candidate 이고, `m4_feasibility_gate()` 는 `detect_r()` 호출 **전에** 멈춘다. P3 는
+설계·구현·실행·결과 인수를 각각 별도로 받아야 하는 **다음 승인 단계**다.
+
+입력 identity 등록은 실행 승인이 아니다. Q5-E spec status 는
+`approved_for_implementation` 그대로이고, `approved_for_execution`·`RUNNING`·
+`MEASURED`·`COMPLETE` 중 무엇도 아니다. **P3 가 끝나기 전에는 Q5-E 본 실행 승인을
+요청하지 않는다.**
+
+## EXP-2026-008 / Q5-E — PREP P1/P2 실행됨 (2026-08-12), 종합 판정 **STOP** (이력)
 
 Q5-D의 `JOIN_UNRESOLVED` 뒤 Q5-E(LEG2 실패 기전 audit)를 막고 있는 stop은 3건이고
 **그중 둘이 동결된 적 없는 자산 identity**(P1 MIT-BIH publisher tree · P2 canonical
@@ -462,8 +524,9 @@ spec status는 `approved_for_implementation` 그대로다. `MEASURED`/`PASS`/
 **다음 순서(각 단계가 별도 승인)**: ~~① artifact-repair 명세·구현~~ →
 ~~② 사용자 실행 승인~~ → ~~③ shard에서 NPZ 재구성 + 12-file corrective bundle 생성~~ →
 ~~④ 기존 11개 byte identity·새 bundle 계약 검증~~ → ~~⑤ 새 folder id·lineage 등록~~ →
-**⑥ P1/P2 재실행 승인·재실행** → ⑦ combined PASS 확인 뒤에야 P1 aggregate와 P2 five
-digests 등록 → ⑧ 그 다음이 P3 PREP.  ①~⑤는 2026-08-13에 완료됐다(아래).
+~~⑥ P1/P2 재실행 승인·재실행~~ → ~~⑦ combined PASS 확인 뒤에야 P1 aggregate와 P2 five
+digests 등록~~ → **⑧ 그 다음이 P3 PREP**.  ①~⑤는 2026-08-13, ⑥~⑦은 2026-08-14에
+완료됐다(위 절).
 
 ### EXP-2026-009 / corrective bundle — 실행 완료 (2026-08-13) `REPAIR_COMPLETE`
 
@@ -484,10 +547,11 @@ D3의 복구가 실제로 수행됐다. **포장 복구이지 과학적 결과�
 - **기존 bundle·shard는 읽기 전용으로만 열었고 수정·삭제·덮어쓰기 0건.** 실행 후
   source 재해시 일치. scope 정확히 `drive.readonly`.
 
-**이것이 Q5-E의 stop을 푼 것은 아니다.** corrective bundle이 12파일 계약을
-만족하게 됐을 뿐, **P2를 그 폴더에 대고 재실행하지 않았다** — 따라서
-`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`는 여전히 열려 있고, P1 aggregate는 아직
-관측이며, `PREP_P1_P2_PASS`에 도달하지 않았다. 재실행은 별도 승인 대상이다.
+**이것이 Q5-E의 stop을 푼 것은 아니었다.** corrective bundle이 12파일 계약을
+만족하게 됐을 뿐, 그 시점에는 **P2를 그 폴더에 대고 재실행하지 않았다** — 따라서
+`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`는 그때까지 열려 있었고, P1 aggregate는 아직
+관측이었으며, `PREP_P1_P2_PASS`에 도달하지 않았다. **2026-08-14 별도 승인 아래
+재실행했고 통과했다 — 위 절 참조.**
 
 선행 Q5-E preflight 2건(`PREP_M4_ASSET_FREEZE` 2026-08-11 ·
 `PREP_M4_RR_EQUIVALENCE` 2026-08-12, `RR_VALUE_IDENTICAL_44_OF_44`)의 동결값은
