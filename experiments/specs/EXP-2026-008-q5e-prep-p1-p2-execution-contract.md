@@ -31,6 +31,17 @@ separate **read-only execution approval** on 2026-08-12; the terminal stop in
 is unchanged: still after the switch, the token and the folder id, and still
 before authentication, the Drive service and every reader.
 
+**A second read-only approval was granted on 2026-08-14**, for a rerun with P2
+pointed at the EXP-2026-009 corrective candidate.  It is recorded as its own
+entry rather than by editing the first: the two approvals cover **different
+folders**, so re-using the earlier record would describe a permission that was
+never given.  The superseded 2026-08-12 record is kept in
+`PRIOR_EXECUTION_APPROVAL_RECORDS`, because it is what explains why the
+20260812 stop bundle exists.  Nothing withheld by the first approval has been
+released by the second; the second withholds two further things — overwriting
+the 20260812 stop bundle, and promoting the corrective folder to a canonical
+Q5-E input.
+
 **One run has completed (2026-08-12) and its bundle exists.**  P1 passed and
 produced the full MIT-BIH tree aggregate; P2 stopped at the directory contract.
 The bundle is committed and structurally verified — see the Decision log for
@@ -116,15 +127,45 @@ and the frozen verifier explicitly skips it.  Stating that the publisher list
 verified all 147 would be false; the contract is 146 publisher-listed files
 plus the separately registered digest of the list itself.
 
-# P2 — canonical Q5-D bundle identity
+# P2 — Q5-D bundle identity
 
-Target: run `20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE`, Drive folder
-id `1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd`.
+**Target (from 2026-08-14):** the EXP-2026-009 corrective candidate, run
+`20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective`, Drive
+folder id `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH`.
+
+**Not the target:** the original canonical run
+`20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE`, folder id
+`1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd`.  The 2026-08-12 run read it and stopped at
+`P2_DIRECTORY_CONTRACT_FAILED` with `missing: ['negative_control_null.npz']`,
+judged `P2_PRODUCER_ARTIFACT_OMISSION`.  That folder holds eleven files, it is
+immutable, and this rerun does not read it.  `run_prep()` refuses it **by name
+and with its own reason**, separately from the generic "not the target"
+refusal: re-reading it would reproduce a stop that is already recorded, where a
+reader could mistake it for a fresh finding.
+
+**Pointing P2 at the candidate does not register the candidate.**  It is a
+*preregistered corrective candidate* — a folder P2 judges.  Q5-E's
+`SOURCE_BUNDLE_FOLDER_ID`, `SOURCE_BUNDLE_RUN`, `MITDB_TREE_AGGREGATE` and
+`SOURCE_BUNDLE_FILE_SHA256` are imported by the PREP module and left exactly as
+they are.  Only a separate registration PR, after a combined PASS **and** a
+Codex result acceptance, moves them — and it must move the folder id, the run
+name and the five digests **together**, because a bundle identified by one run's
+id and another run's digests is identified by neither.
+
+Every P2 result reports the folder actually read, the candidate and the
+original canonical folder under **separate keys**
+(`folder_id`, `candidate_folder_id`, `original_canonical_folder_id`), plus
+`target_is_corrective_candidate`, `target_is_original_canonical` and
+`candidate_is_registered_as_canonical: false`.  A single `folder_id` field was
+readable as any of the three, and the substitution this preflight exists to
+catch is exactly the one where a reader believes a result describes a folder it
+does not.
 
 **The bundle is chosen by folder id, never by folder name.**  A folder that
 merely has the right name is not evidence, and that substitution is easy to
-make and impossible to notice afterwards.  `run_prep()` refuses any folder id
-other than the registered one.
+make and impossible to notice afterwards.  `run_prep()` refuses every folder id
+other than the target — including one that differs only in case or by a
+trailing space.
 
 Gates, in order:
 
@@ -148,8 +189,39 @@ Gates, in order:
    accepted only when tied to the inventory by exact name, size and every
    available provider checksum; a matching folder name is never accepted.  Otherwise
    `P2_FOLDER_ID_BRIDGE_UNRESOLVED`.
-6. **`manifest_identity`** — `code_sha256` = `6b098c67…` and
-   `rule_fingerprint` = `31c4be9f…`, or `P2_MANIFEST_IDENTITY_MISMATCH`.
+6. **`manifest_identity`** — read from the schema `BJ.build_manifest()`
+   actually writes, or `P2_MANIFEST_IDENTITY_MISMATCH`.
+
+   | field | where it lives | required value |
+   |---|---|---|
+   | producing code digest | `manifest['code']['sha256']` — **nested**, the mapping `assert_implementation_only()` returns | exactly `6b098c67df3c8e2c8c070b093e6e2d801566f548a3173626745c4a126a97f226` |
+   | rule fingerprint | `manifest['rule_fingerprint']` — top level | exactly `31c4be9f44582a68c301fe6cc6572f4db6ff0b3de694af68f6ac6a0f48c2b40e` |
+   | freeze fingerprint | `manifest['preflight']['rule_fingerprint']`, when the freeze carries one | equal to the top-level value |
+
+   **The flat `manifest['code_sha256']` this gate used to read has never been
+   written by any producer.**  Against the real bundle it resolved to `""`, and
+   the gate then failed for a reason that had nothing to do with the bundle.
+   The synthetic fixture agreed with it only because the fixture was a
+   hand-written flat dict authored from the same belief as the code, so the
+   tests could confirm the belief and never test it.  Fixtures are now built by
+   `BJ.build_manifest()` itself, and a regression test pins that the old flat
+   shape does **not** pass.
+
+   **Exactly one digest is accepted**, not a family of them.  There is no
+   raw/LF alternative and no case-insensitive match: a shard and a manifest
+   store whatever the producing checkout stored, so accepting a second spelling
+   and returning the registered one would hand the caller an identity the
+   artifact does not carry.
+
+   A missing, null, wrongly typed or malformed field — including a `code` that
+   is a string rather than a mapping, and a freeze fingerprint that disagrees
+   with the top-level one — is a **structured problem** carried into
+   `P2_MANIFEST_IDENTITY_MISMATCH` with the offending field named.  It is never
+   raised.  The reader calls nothing in the frozen module and catches nothing
+   at all, so a `RuntimeError` or an `AssertionError` from elsewhere can never
+   be relabelled as a manifest defect.  `preflight: null` is the producer's own
+   shape when no freeze was supplied and is not a defect: P2 reads identity,
+   not the input contract.
 7. **`input_identity`** — the five files Q5-E reads: individual SHA-256 plus
    the subset fold.
 
@@ -432,6 +504,20 @@ edited by a run.  The values enter the codebase only through a **separate
 result-acceptance PR** after Codex reviews the run, and both must be written
 into the spec and the module together.
 
+Since 2026-08-14 that registration PR carries a fourth and fifth item, and all
+five move **together or not at all**:
+
+1. `MITDB_TREE_AGGREGATE`
+2. `SOURCE_BUNDLE_FILE_SHA256` — the five digests
+3. `SOURCE_BUNDLE_FOLDER_ID` → the corrective candidate id
+4. `SOURCE_BUNDLE_RUN` → the corrective run name
+5. `research/ASSETS.md`, recording the candidate's promotion to canonical
+
+A bundle identified by one run's folder id and another run's digests is
+identified by neither, so a partial move is worse than none.  Until that PR
+merges, the corrective folder is a judged candidate and nothing more, and P3,
+M0–M4 and the Q5-E analysis proper stay sealed.
+
 # Result acceptance criteria
 
 Fixed **before** any measurement exists, so a result review cannot be argued
@@ -452,6 +538,10 @@ below is present and correct in the bundle.
 **P2**
 
 - evidence of a direct **folder id** query, not a name search
+- the folder actually read, the corrective candidate and the original canonical
+  folder reported under separate keys, with
+  `target_is_corrective_candidate: true` and
+  `candidate_is_registered_as_canonical: false`
 - the exact child set the folder id returned
 - every ambiguity category zero: duplicate name, duplicate file id, missing
   file id, nameless, subfolder, shortcut, trashed, Google-native, sizeless
@@ -459,7 +549,9 @@ below is present and correct in the bundle.
 - `SUPERSEDED.json` absent
 - per-file cross-check: file id, inventory size vs observed size, provider
   sha256 and md5 where available, and the download method used
-- `code_sha256` and `rule_fingerprint` both matching the registered values
+- `code_sha256` and `rule_fingerprint` both matching the registered values,
+  read from `manifest['code']['sha256']` and `manifest['rule_fingerprint']`,
+  with the field each value came from recorded in the result
 - the five Q5-E input files with name, bytes and SHA-256
 - the five-file subset fold
 - confirmation that the other seven files are not reported as input-unexpected
@@ -1020,3 +1112,86 @@ Step 5 (Codex result acceptance) is complete, with the outcome *accepted run,
 upheld stop*.  Step 6 (the registration PR) does **not** follow from it: it
 waits on a combined pass, which waits in turn on the corrective bundle and on a
 separate user approval to execute the repair.
+
+## 2026-08-14 — rerun enable: the corrective candidate becomes P2's target
+
+The corrective bundle exists (EXP-2026-009, `REPAIR_COMPLETE`, 2026-08-13), and
+the user granted a second **read-only execution approval** for a P1/P2 rerun
+against it.  This entry records the code change that makes such a run possible,
+and its boundaries.  **No run has happened under it.**
+
+### D5 — `P2_TARGET_REPOINTED_TO_CORRECTIVE_CANDIDATE`
+
+`run_prep()` now accepts exactly `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH`
+(`20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective`) and
+refuses everything else — including a case-folded or space-padded spelling of
+the target itself.
+
+The **original canonical folder id is refused separately, by name, with its own
+reason**.  It is not a stray id: it is the eleven-file folder whose stop is
+already recorded, and a generic "not the target" message would have said the
+same words for a typo and for the one folder a reader might most plausibly
+re-point at.  Both refusals happen before the terminal guard, so neither is
+reachable by flipping the approval record.
+
+### D6 — `CANDIDATE_IS_NOT_A_REGISTRATION`
+
+Q5-E's `SOURCE_BUNDLE_FOLDER_ID`, `SOURCE_BUNDLE_RUN`, `MITDB_TREE_AGGREGATE`
+and `SOURCE_BUNDLE_FILE_SHA256` are **unchanged**.  The corrective folder id
+appears nowhere in `q5e_leg2_failure_mechanism_audit.py`, and a regression test
+asserts that.  Every P2 result reports the candidate and the original under
+separate keys with `candidate_is_registered_as_canonical: false`.
+
+Promotion is a separate PR after a combined PASS and a Codex result acceptance,
+and it moves the folder id, the run name and the five digests **together**.
+
+### D7 — `MANIFEST_SCHEMA_CORRECTED_TO_THE_PRODUCER`
+
+Gate 6 read a flat `manifest['code_sha256']`.  No producer has ever written
+that key.  `BJ.build_manifest()` nests the digest at `manifest['code']['sha256']`
+— `code` being the mapping `assert_implementation_only()` returns — and puts
+the fingerprint at the top level.
+
+**Why the tests did not catch it.**  The synthetic fixture was a hand-written
+flat dict, authored from the same belief as the gate.  A suite built that way
+can only confirm the belief; it cannot test it.  The fixture is now produced by
+`BJ.build_manifest()` itself, with the digest pinned to the registered LF
+identity so a CRLF checkout cannot make the fixture impersonate the machine
+running it, and a regression test pins that the old flat shape **stops**.
+
+The match is exact — one digest, no raw/LF alternative, no case folding.
+Malformed, missing, null and wrongly typed fields become structured problems
+under `P2_MANIFEST_IDENTITY_MISMATCH` with the field named; the reader calls
+nothing in the frozen module and catches nothing at all, so no `RuntimeError`
+or `AssertionError` can be relabelled as a manifest defect.
+
+### D8 — `RERUN_APPROVAL_RECORDED_SEPARATELY`
+
+The 2026-08-14 approval is a new record, not an edit of the 2026-08-12 one.
+The two cover different folders, and a record rewritten in place records only
+the latest thing.  `NOT_APPROVED` is written once and shared, so the two
+records cannot drift into a boundary that looks like it moved when nobody moved
+it.  The new record withholds two further things: overwriting the 20260812 stop
+bundle, and promoting the corrective folder to a canonical input.
+
+`OPEN_REGISTERED_DATA` remains `False` at module level.  Authentication and
+Drive-adapter construction remain below the terminal guard; the scope must
+still be exactly `drive.readonly`.
+
+### What this entry does not do
+
+It does not run anything, authenticate, call the Drive API, create a folder or
+write a bundle.  It does not modify `q5d_order_preserving_beat_join.py`, the
+twelve-file contract, a null value, a family, a seed, a replicate count, a
+gate, a threshold or a decision rule.  It does not overwrite the 20260812 stop
+bundle or its executed notebook, and it does not touch the original eleven-file
+Drive folder or the null shards.  It registers no value, and it does not raise
+this contract's `status`, which stays `approved_for_implementation`.
+
+### Position in the Order
+
+Step 4 is re-entered with a new target: a P1+P2 run against the corrective
+candidate, bundle preserved at a **new timestamp** — the 20260812 bundle is not
+overwritten.  Step 5 (Codex result acceptance) and step 6 (the registration PR,
+now carrying five items) follow only from that run's outcome.  Steps 7 and 8 —
+P3 and any Q5-E execution approval — remain sealed.
