@@ -65,18 +65,34 @@ def _preflight(rule_fingerprint=None, **overrides):
 
 
 def _producer_manifest(preflight=None, **overrides):
-    """A manifest built by **`BJ.build_manifest()` itself**.
+    """A manifest with the producer's **schema** and the registered **identity**.
 
-    This is the fixture that would have caught the schema error.  The previous
-    one was a flat dict of the four identity fields — a shape the producer has
-    never written — so every test agreed with the assumption that produced it,
-    and the first real bundle stopped on `split: None`.  A fixture invented by
-    the same author as the code under test can only confirm their belief; this
-    one cannot drift from the producer, because it is the producer.
+    Two different things, and the fixture needs both from different places.
+
+    *Structure* comes from `BJ.build_manifest()` itself.  That is what caught
+    the schema error the first real run hit: a flat dict written from the same
+    belief as the code under test could only ever agree with that belief.
+
+    *Identity* is then pinned to `R.FROZEN_Q5D_SHA256_LF`, because
+    `build_manifest()` records `sha256_file()` — the **raw bytes of the module
+    in whatever checkout is running the test**.  On a CRLF checkout that is the
+    checkout's own newline digest
+    (`879436b6…` on Windows) and **not** the identity of the registered
+    artifact (`6b098c67…`), which was produced from an LF checkout.  Leaving it
+    unpinned would make a fixture that is supposed to impersonate the
+    registered bundle impersonate this machine instead — and the strict
+    validator would rightly refuse it, failing the suite on Windows for a
+    reason that has nothing to do with the code.
+
+    The pin happens **before** `overrides`, so a test that wants a foreign or
+    malformed `code` block still gets one.
     """
     manifest = BJ.build_manifest({}, "20260813T000000",
                                  preflight if preflight is not None
                                  else _preflight())
+    # Schema from the producer; identity from the registered artifact.
+    manifest["code"] = dict(manifest["code"],
+                            sha256=R.FROZEN_Q5D_SHA256_LF)
     manifest.update(overrides)
     return manifest
 
@@ -1089,6 +1105,42 @@ def test_the_derived_digest_claim_is_bounded():
           "either against")
 
 
+def test_the_fixture_impersonates_the_registered_artifact_not_this_checkout():
+    """Windows portability — the fixture's identity is pinned, on purpose.
+
+    `BJ.build_manifest()` records `sha256_file()`, the raw bytes of the module
+    in whatever checkout is running.  On a CRLF checkout that digest is this
+    machine's, not the registered artifact's, so a fixture meant to impersonate
+    the registered bundle would impersonate the machine — and the strict
+    validator would correctly refuse it, failing the suite for a reason that
+    has nothing to do with the code.
+    """
+    fixture = _producer_manifest()
+    check(fixture["code"]["sha256"] == R.FROZEN_Q5D_SHA256_LF,
+          "the fixture carries the registered LF identity")
+
+    # Recorded rather than hidden: the producer really does write the running
+    # checkout's raw digest, and on an LF checkout the two coincide.
+    unpinned = BJ.build_manifest({}, "20260813T000000", _preflight())
+    checkout_raw = R.frozen_q5d_digests()["raw_sha256"]
+    check(unpinned["code"]["sha256"] == checkout_raw,
+          "an unpinned producer manifest carries this checkout's raw digest")
+    check(sorted(unpinned) == sorted(fixture),
+          "and the pin changes one value, not the schema")
+    if checkout_raw == R.FROZEN_Q5D_SHA256_LF:
+        check(True, "this checkout is LF, so raw and registered coincide here "
+                    "— the pin is what makes a CRLF checkout behave the same")
+    else:                                                # pragma: no cover
+        check(unpinned["code"]["sha256"] != R.FROZEN_Q5D_SHA256_LF,
+              "this checkout is CRLF, so the unpinned digest is not the "
+              "registered identity — exactly the case the pin exists for")
+
+    # Overrides still win, so the foreign/malformed fixtures keep working.
+    check(_producer_manifest(code={"sha256": "a" * 64})["code"]["sha256"]
+          == "a" * 64,
+          "an override is applied after the pin")
+
+
 def test_the_manifest_code_digest_must_be_the_registered_value():
     """Blocker 2 — one comparison, and the stored value is kept.
 
@@ -1101,18 +1153,25 @@ def test_the_manifest_code_digest_must_be_the_registered_value():
     check(identity["code_sha256"] == manifest["code"]["sha256"],
           "the identity keeps the digest the manifest stored, untranslated")
     check(identity["code_sha256"] == R.FROZEN_Q5D_SHA256_LF,
-          "which on this registered bundle is the registered LF identity, "
-          "because the producing checkout used LF")
+          "which is the registered LF identity")
+    check(identity["code_sha256"] == _identity()["code_sha256"],
+          "so manifest identity and shard code_sha256 stay the same value")
 
-    # A manifest carrying only some other raw digest is refused, even one that
-    # a differently-normalised checkout of this very module would produce.
-    crlf_raw = hashlib.sha256(
-        open(R.BJ.__file__, "rb").read().replace(b"\n", b"\r\n")).hexdigest()
-    check(crlf_raw != R.FROZEN_Q5D_SHA256_LF,
-          "the fixture really is a different digest")
-    for label, digest in (("a CRLF-checkout raw digest", crlf_raw),
-                          ("a foreign digest", "a" * 64),
-                          ("a malformed digest", "nope")):
+    # Every digest that is not the registered one is refused — including this
+    # checkout's own raw digest when it differs, which is the Windows case.
+    rejected = {"a foreign digest": "a" * 64, "a malformed digest": "nope"}
+    module_bytes = open(R.BJ.__file__, "rb").read()
+    flipped = (module_bytes.replace(b"\r\n", b"\n")
+               if b"\r\n" in module_bytes
+               else module_bytes.replace(b"\n", b"\r\n"))
+    rejected["the other newline convention's raw digest"] = hashlib.sha256(
+        flipped).hexdigest()
+    checkout_raw = R.frozen_q5d_digests()["raw_sha256"]
+    if checkout_raw != R.FROZEN_Q5D_SHA256_LF:           # pragma: no cover
+        rejected["this CRLF checkout's own raw digest"] = checkout_raw
+    for label, digest in rejected.items():
+        check(digest != R.FROZEN_Q5D_SHA256_LF,
+              f"{label} really is not the registered value")
         try:
             R.identity_from_manifest(
                 _producer_manifest(code={"sha256": digest}))
@@ -1124,11 +1183,6 @@ def test_the_manifest_code_digest_must_be_the_registered_value():
     source = inspect.getsource(R.identity_from_manifest)
     check("raw_sha256" not in source,
           "no raw-digest fallback branch remains")
-
-    # The identity handed to the shard check is the one the shards carry.
-    identity_shard = _identity()
-    check(identity["code_sha256"] == identity_shard["code_sha256"],
-          "so manifest identity and shard code_sha256 stay the same value")
 
 
 def test_only_the_expected_exception_shapes_become_a_named_stop():
