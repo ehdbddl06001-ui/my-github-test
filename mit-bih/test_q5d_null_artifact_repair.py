@@ -1159,19 +1159,27 @@ def test_the_manifest_code_digest_must_be_the_registered_value():
 
     # Every digest that is not the registered one is refused — including this
     # checkout's own raw digest when it differs, which is the Windows case.
-    rejected = {"a foreign digest": "a" * 64, "a malformed digest": "nope"}
     module_bytes = open(R.BJ.__file__, "rb").read()
-    flipped = (module_bytes.replace(b"\r\n", b"\n")
-               if b"\r\n" in module_bytes
-               else module_bytes.replace(b"\n", b"\r\n"))
-    rejected["the other newline convention's raw digest"] = hashlib.sha256(
-        flipped).hexdigest()
-    checkout_raw = R.frozen_q5d_digests()["raw_sha256"]
-    if checkout_raw != R.FROZEN_Q5D_SHA256_LF:           # pragma: no cover
-        rejected["this CRLF checkout's own raw digest"] = checkout_raw
+    candidates = {
+        "a foreign digest": "a" * 64,
+        "a malformed digest": "nope",
+        # On an LF checkout this is the CRLF digest; on a CRLF checkout it is
+        # the LF one — which *is* the registered value there, so the filter
+        # below drops it rather than asserting something false.
+        "the other newline convention's raw digest": hashlib.sha256(
+            module_bytes.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
+            if b"\r\n" not in module_bytes
+            else module_bytes.replace(b"\r\n", b"\n")).hexdigest(),
+        # Present and distinct only on a CRLF checkout: the Windows case.
+        "this checkout's own raw digest":
+            R.frozen_q5d_digests()["raw_sha256"],
+    }
+    rejected = {label: digest for label, digest in candidates.items()
+                if digest != R.FROZEN_Q5D_SHA256_LF}
+    check(len(rejected) >= 3,
+          f"at least three non-registered digests to try here: "
+          f"{sorted(rejected)}")
     for label, digest in rejected.items():
-        check(digest != R.FROZEN_Q5D_SHA256_LF,
-              f"{label} really is not the registered value")
         try:
             R.identity_from_manifest(
                 _producer_manifest(code={"sha256": digest}))
