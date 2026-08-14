@@ -8,8 +8,26 @@ that have never been frozen:
   it only in truncated form (`0b46a411…`), and a truncated digest is not an
   execution contract.
 * **P2** — the per-file SHA-256 of the five canonical Q5-D bundle files Q5-E
-  reads, established from the **registered Drive folder id** rather than from
-  a folder that merely has the right name.
+  reads, established from a **Drive folder id** rather than from a folder that
+  merely has the right name.
+
+Which folder P2 reads (2026-08-14)
+----------------------------------
+The 2026-08-12 run read the original canonical folder and stopped: the bundle
+held eleven of the twelve contracted files, because the producer never wrote
+`negative_control_null.npz`.  EXP-2026-009 then built a **corrective
+candidate** — the eleven original bytes copied unchanged plus the twelfth
+reconstructed from the 100 preregistered null shards.
+
+P2 now targets that candidate, `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH`, and
+`run_prep()` refuses every other id — including the original, by name and for
+a stated reason, because re-reading it would reproduce a stop that is already
+recorded.
+
+Pointing P2 at the candidate does **not** register it.  Q5-E's
+`SOURCE_BUNDLE_FOLDER_ID` and `SOURCE_BUNDLE_RUN` are imported here and left
+exactly as they are; the candidate becomes a canonical input only through a
+separate registration PR, after a combined PASS and a Codex result acceptance.
 
 This module implements those two read-only preflights.  It does **not**
 register anything: a run produces `registration_candidates.json`, and the
@@ -59,6 +77,53 @@ CONTRACT_PATH = ("experiments/specs/"
                  "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md")
 
 # ─────────────────────────────────────────────────────────────────────────────
+# P2 — registered targets
+#
+# Two folders are named here and they are **not** interchangeable.
+#
+# `ORIGINAL_CANONICAL_*` is what Q5-E registers today: the run that produced
+# the DS1 gate bundle.  The 2026-08-12 P2 run read it by folder id and stopped
+# at `P2_DIRECTORY_CONTRACT_FAILED` with `missing:
+# ['negative_control_null.npz']` — judged `P2_PRODUCER_ARTIFACT_OMISSION`, a
+# packaging defect in the producer rather than a stale contract.  That folder
+# still holds eleven files, it is immutable, and nothing here touches it.
+#
+# `CORRECTIVE_*` is the twelve-file folder EXP-2026-009 built on 2026-08-13 by
+# copying those eleven bytes unchanged and reconstructing the twelfth from the
+# 100 preregistered null shards.  It is a **preregistered corrective
+# candidate**: a folder P2 is now pointed at so that it can be judged.  It is
+# not yet a canonical Q5-E input, and this module does not make it one — the
+# constants in `q5e_leg2_failure_mechanism_audit.py` are deliberately left
+# exactly as they are.  Only a separate registration PR, after a combined PASS
+# and a Codex result acceptance, may move `SOURCE_BUNDLE_FOLDER_ID` and
+# `SOURCE_BUNDLE_RUN` across.
+# ─────────────────────────────────────────────────────────────────────────────
+#: Q5-E's registered constants, imported and **not modified** by this module.
+SOURCE_BUNDLE_RUN = Q5E.SOURCE_BUNDLE_RUN
+SOURCE_BUNDLE_FOLDER_ID = Q5E.SOURCE_BUNDLE_FOLDER_ID
+#: Readable aliases for the same two values.  Reports name the original
+#: explicitly rather than leaving "the folder id" to mean whichever one the
+#: reader had in mind — the substitution this whole preflight exists to catch.
+ORIGINAL_CANONICAL_RUN = SOURCE_BUNDLE_RUN
+ORIGINAL_CANONICAL_FOLDER_ID = SOURCE_BUNDLE_FOLDER_ID
+#: `research/ASSETS.md :: run-20260813-q5d-null-corrective`.
+CORRECTIVE_BUNDLE_RUN = ("20260813T000000_EXP-2026-009_q5d_null_artifact_"
+                         "repair_corrective")
+CORRECTIVE_BUNDLE_FOLDER_ID = "1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH"
+CORRECTIVE_BUNDLE_SPEC = ("experiments/specs/"
+                          "EXP-2026-009-q5d-null-artifact-repair.md")
+#: The single folder id the production route accepts.  Named separately from
+#: both of the above so that changing what P2 targets is one visible edit and
+#: not a silent consequence of editing a registration.
+P2_TARGET_FOLDER_ID = CORRECTIVE_BUNDLE_FOLDER_ID
+P2_TARGET_RUN = CORRECTIVE_BUNDLE_RUN
+
+PRODUCING_CODE_SHA256 = Q5E.PRODUCING_CODE_SHA256
+REGISTERED_RULE_FINGERPRINT = Q5E.REGISTERED_RULE_FINGERPRINT
+SUPERSEDED_MARKER = Q5E.SUPERSEDED_MARKER
+BUNDLE_INPUT_FILES = Q5E.BUNDLE_INPUT_FILES
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Approval.  Separate from the Q5-E audit token: approving this read-only
 # preflight is not approving the audit, and the two must not be
 # interchangeable.
@@ -70,17 +135,48 @@ EXECUTION_APPROVAL_FLAG = "--i-have-separate-prep-execution-approval"
 #: site, so nothing reaches a registered byte by merely importing this module.
 OPEN_REGISTERED_DATA = False
 
-#: The user's separate read-only execution approval, written down rather than
+#: What was **not** approved.  Identical across both approvals, and written
+#: once so the two records cannot drift apart into a boundary that looks like
+#: it moved when nobody moved it.
+NOT_APPROVED: Tuple[str, ...] = (
+    "P3 implementation or execution",
+    "running detect_r()",
+    "re-running the beat join",
+    "re-running the 10,000 x 3 null replicates",
+    "M0-M4 aggregation",
+    "opening DS2 per-beat labels",
+    "opening V10 probabilities",
+    "computing association or S PR-AUC",
+    "training or retraining any model",
+    "moving, deleting or overwriting any Drive file",
+    "automatic registration of any observed value",
+)
+
+#: The user's separate read-only execution approvals, written down rather than
 #: implied by a deleted line.  A guard that opens because someone edited it
-#: records no decision; this records who approved what, when, and — just as
+#: records no decision; these record who approved what, when, and — just as
 #: importantly — what was *not* approved, so the boundary is readable from the
-#: code and not only from a spec.  Setting `granted` back to False restores the
-#: previous refusal exactly, with no other change anywhere.
-EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
+#: code and not only from a spec.
+#:
+#: There are two entries because there were two approvals, and they are **not**
+#: the same approval.  The 2026-08-12 one covered P2 against the original
+#: canonical folder; that run happened and stopped.  The 2026-08-14 one covers
+#: P2 against the corrective candidate folder — a different target, so
+#: re-using the earlier record for it would describe a permission that was
+#: never given.  The superseded entry is kept rather than edited: a record that
+#: gets rewritten each time is a record of only the latest thing.
+PRIOR_EXECUTION_APPROVAL_RECORDS: Tuple[Dict[str, object], ...] = ({
     "granted": True,
+    "superseded": True,
     "granted_on": "2026-08-12",
     "granted_by": "user",
     "kind": "read-only execution of EXP-2026-008 Q5-E PREP P1 and P2",
+    "p2_target_folder_id": ORIGINAL_CANONICAL_FOLDER_ID,
+    "p2_target_run": ORIGINAL_CANONICAL_RUN,
+    "outcome": ("run 20260812T123035 completed; P1 PASS, P2 stopped at "
+                "P2_DIRECTORY_CONTRACT_FAILED (missing "
+                "negative_control_null.npz).  Bundle preserved and accepted "
+                "as an authentic stop record."),
     "approved": (
         "P1 byte-identity over the registered MIT-BIH publisher tree",
         "P2 byte-identity over the canonical Q5-D bundle at the registered "
@@ -89,30 +185,51 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
         "writing the P1/P2 result bundle and saving the notebook with its "
         "outputs",
     ),
-    "not_approved": (
-        "P3 implementation or execution",
-        "running detect_r()",
-        "re-running the beat join",
-        "M0-M4 aggregation",
-        "opening DS2 per-beat labels",
-        "opening V10 probabilities",
-        "computing association or S PR-AUC",
-        "training or retraining any model",
-        "moving, deleting or overwriting any Drive file",
-        "automatic registration of any observed value",
+    "not_approved": NOT_APPROVED,
+    "recorded_in": ("experiments/specs/"
+                    "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md"),
+},)
+
+#: The **current** approval.  This is the one `_terminal_execution_guard()`
+#: consults; setting `granted` back to False restores the previous refusal
+#: exactly, with no other change anywhere.
+EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
+    "granted": True,
+    "superseded": False,
+    "granted_on": "2026-08-14",
+    "granted_by": "user",
+    "kind": ("read-only re-execution of EXP-2026-008 Q5-E PREP P1 and P2, "
+             "with P2 pointed at the EXP-2026-009 corrective candidate"),
+    "supersedes": "2026-08-12",
+    "p2_target_folder_id": CORRECTIVE_BUNDLE_FOLDER_ID,
+    "p2_target_run": CORRECTIVE_BUNDLE_RUN,
+    "approved": (
+        "P1 byte-identity re-check over the registered MIT-BIH publisher tree",
+        "P2 byte-identity over the corrective candidate Q5-D bundle at folder "
+        f"id {CORRECTIVE_BUNDLE_FOLDER_ID}",
+        "Drive API reads under exactly the drive.readonly scope",
+        "writing a NEW versioned P1/P2 result bundle and saving the executed "
+        "notebook with its outputs",
+    ),
+    "not_approved": NOT_APPROVED + (
+        "overwriting the 20260812 P2 stop bundle",
+        "promoting the corrective folder to a canonical Q5-E input",
     ),
     "recorded_in": ("experiments/specs/"
                     "EXP-2026-008-q5e-prep-p1-p2-execution-contract.md"),
 }
 APPROVAL_NOTE = (
-    "Approved (2026-08-12): read-only execution of P1 and P2 — reading the "
-    "registered MIT-BIH tree, reading the canonical Q5-D bundle by folder id "
-    "under exactly the drive.readonly scope, writing the result bundle, and "
-    "saving the notebook with its outputs.  NOT approved: P3, detect_r(), "
-    "re-running the beat join, M0-M4 aggregation, DS2 labels, V10 "
-    "probabilities, association or S PR-AUC, any training, moving or deleting "
-    "any Drive file, or registering any observed value.  Registration remains "
-    "a separate result-acceptance PR after Codex review.")
+    "Approved (2026-08-14): read-only re-execution of P1 and P2 — re-checking "
+    "the registered MIT-BIH tree, reading the EXP-2026-009 corrective "
+    f"candidate bundle at folder id {CORRECTIVE_BUNDLE_FOLDER_ID} under "
+    "exactly the drive.readonly scope, writing a NEW versioned result bundle, "
+    "and saving the executed notebook with its outputs.  NOT approved: P3, "
+    "detect_r(), re-running the beat join or the null replicates, M0-M4 "
+    "aggregation, DS2 labels, V10 probabilities, association or S PR-AUC, any "
+    "training, moving or deleting any Drive file, overwriting the 20260812 "
+    "stop bundle, registering any observed value, or promoting the corrective "
+    "folder to a canonical Q5-E input.  Registration remains a separate "
+    "result-acceptance PR after Codex review.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # P1 — registered targets
@@ -140,15 +257,8 @@ P1_GATE_ORDER: Tuple[str, ...] = (
     "tree_aggregate")
 
 # ─────────────────────────────────────────────────────────────────────────────
-# P2 — registered targets
+# P2 — verdicts and gate order
 # ─────────────────────────────────────────────────────────────────────────────
-SOURCE_BUNDLE_RUN = Q5E.SOURCE_BUNDLE_RUN
-SOURCE_BUNDLE_FOLDER_ID = Q5E.SOURCE_BUNDLE_FOLDER_ID
-PRODUCING_CODE_SHA256 = Q5E.PRODUCING_CODE_SHA256
-REGISTERED_RULE_FINGERPRINT = Q5E.REGISTERED_RULE_FINGERPRINT
-SUPERSEDED_MARKER = Q5E.SUPERSEDED_MARKER
-BUNDLE_INPUT_FILES = Q5E.BUNDLE_INPUT_FILES
-
 P2_PASS = "P2_SOURCE_BUNDLE_IDENTITY_PASS"
 P2_DIGEST_FREEZE_REQUIRED = "P2_SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED"
 P2_FOLDER_ID_BRIDGE_UNRESOLVED = "P2_FOLDER_ID_BRIDGE_UNRESOLVED"
@@ -996,8 +1106,36 @@ def _p1_seals() -> Dict[str, bool]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# P2 — canonical Q5-D bundle identity, from the registered folder id
+# P2 — Q5-D bundle identity, from a folder id
 # ─────────────────────────────────────────────────────────────────────────────
+def _folder_identity(folder_id: str) -> Dict[str, object]:
+    """Which folder was read, reported so it cannot be confused with another.
+
+    Three ids are in play — the one actually queried, the corrective candidate
+    P2 is pointed at, and the original canonical folder Q5-E still registers —
+    and they are reported under **separate keys**.  A single `folder_id` field
+    next to the word "registered" was exactly readable as any of them, and the
+    one substitution this preflight exists to catch is the one where a reader
+    believes a result describes a folder it does not.
+    """
+    return {
+        "folder_id": folder_id,
+        "candidate_folder_id": CORRECTIVE_BUNDLE_FOLDER_ID,
+        "candidate_run": CORRECTIVE_BUNDLE_RUN,
+        "candidate_spec": CORRECTIVE_BUNDLE_SPEC,
+        "original_canonical_folder_id": ORIGINAL_CANONICAL_FOLDER_ID,
+        "original_canonical_run": ORIGINAL_CANONICAL_RUN,
+        "target_is_corrective_candidate":
+            folder_id == CORRECTIVE_BUNDLE_FOLDER_ID,
+        "target_is_original_canonical":
+            folder_id == ORIGINAL_CANONICAL_FOLDER_ID,
+        "candidate_is_registered_as_canonical": False,
+        "note": ("the corrective folder is a preregistered candidate P2 "
+                 "judges; it becomes a canonical Q5-E input only through a "
+                 "separate registration PR after a combined PASS"),
+    }
+
+
 def run_p2(folder_id: str, adapter: DriveFolderAdapter,
            approval: Optional[str], mount_dir: Optional[str] = None,
            reader: Optional[LocalTreeReader] = None) -> Dict[str, object]:
@@ -1016,7 +1154,7 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
         out = {"prep": "P2", "ok": False, "status": reason,
                "first_failure": reason, "gates": gates,
                "gate_order": list(P2_GATE_ORDER),
-               "folder_id": folder_id, "registered_run": SOURCE_BUNDLE_RUN,
+               **_folder_identity(folder_id),
                "inventory": inventory, "input_identity": None,
                "gate_passed": False, "eligible_for_registration": False,
                "observation_only": False, "blocked_by": reason,
@@ -1114,21 +1252,12 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
         gates.append({"gate": "manifest_identity", "ok": False,
                       "problems": [f"manifest.json unreadable: {error}"]})
         return stop(P2_MANIFEST_MISMATCH, **bridged)
-    code = str(manifest.get("code_sha256") or "")
-    fingerprint = str(manifest.get("rule_fingerprint") or "")
-    problems = []
-    if code != PRODUCING_CODE_SHA256:
-        problems.append(f"code_sha256 {code!r} != registered")
-    if fingerprint != REGISTERED_RULE_FINGERPRINT:
-        problems.append(f"rule_fingerprint {fingerprint!r} != registered")
+    identity, problems = manifest_identity(manifest)
     gates.append({"gate": "manifest_identity", "ok": not problems,
-                  "code_sha256": code, "rule_fingerprint": fingerprint,
-                  "problems": problems})
+                  **identity, "problems": problems})
     if problems:
         return stop(P2_MANIFEST_MISMATCH,
-                    manifest_identity={"code_sha256": code,
-                                       "rule_fingerprint": fingerprint,
-                                       "problems": problems},
+                    manifest_identity={**identity, "problems": problems},
                     **bridged)
 
     # ---- gate 7: the five-file scientific input identity ------------------
@@ -1151,13 +1280,12 @@ def run_p2(folder_id: str, adapter: DriveFolderAdapter,
     return {
         "prep": "P2", "ok": True, "status": P2_PASS, "first_failure": None,
         "gates": gates, "gate_order": list(P2_GATE_ORDER),
-        "folder_id": folder_id, "registered_run": SOURCE_BUNDLE_RUN,
+        **_folder_identity(folder_id),
         "inventory": inventory,
         "directory_contract": {"n_expected": len(expected),
                                "missing": [], "unexpected": [],
                                "full_fold": fold_file_triples(full_files)},
-        "manifest_identity": {"code_sha256": code,
-                              "rule_fingerprint": fingerprint},
+        "manifest_identity": dict(identity),
         "input_identity": {"files": input_files, "subset_fold": subset_fold},
         "bridge": bridge,
         "gate_passed": True, "observation_only": False, "blocked_by": None,
@@ -1297,6 +1425,109 @@ def _canonical_bytes(inventory: Sequence[Mapping[str, object]],
         "note": ("the mount was tied to the folder-id inventory by exact "
                  "name, size and every available provider checksum; a "
                  "matching folder name is never accepted as the bridge")}
+
+
+#: Where each identity field actually lives in `BJ.build_manifest()`'s output.
+#: Recorded in the result so a reader can see which field was consulted rather
+#: than infer it — the previous version read a `code_sha256` key that the
+#: producer has never written, and the report gave no way to notice.
+MANIFEST_IDENTITY_SOURCES: Dict[str, str] = {
+    "code_sha256": "manifest['code']['sha256'] (nested, from "
+                   "assert_implementation_only())",
+    "rule_fingerprint": "manifest['rule_fingerprint'] (top level)",
+    "preflight_rule_fingerprint": "manifest['preflight']['rule_fingerprint'] "
+                                  "(cross-checked against the top level when "
+                                  "the freeze carries one)",
+}
+
+
+def manifest_identity(manifest: Mapping[str, object]
+                      ) -> Tuple[Dict[str, object], List[str]]:
+    """Read the producing identity from where the producer actually writes it.
+
+    `BJ.build_manifest()` records the module digest **nested**, as
+    ``manifest['code']['sha256']`` — `code` is the mapping
+    `assert_implementation_only()` returns — and the rule fingerprint at the
+    top level.  An earlier version of this gate read a flat
+    ``manifest['code_sha256']``, which no producer has ever written; against
+    the real bundle it resolved to `""`, and the gate then failed for a reason
+    that had nothing to do with the bundle.  The synthetic fixture agreed with
+    it only because the fixture was a hand-written flat dict authored from the
+    same belief as the code, so the tests could confirm the belief and never
+    test it.  The fixtures now come from `BJ.build_manifest()` itself.
+
+    Both fields are matched **exactly** against the registered constants.
+    There is no raw/LF alternative: a shard and a manifest store whatever the
+    producing checkout stored, and accepting one digest while returning
+    another would hand the caller an identity the artifact does not carry.
+
+    Malformed, missing, null or wrongly typed fields are returned as
+    `problems`, never raised, and the caller turns them into
+    `P2_MANIFEST_IDENTITY_MISMATCH`.  Nothing here calls into the frozen
+    module, so there is no exception to catch and no room for a `RuntimeError`
+    or an `AssertionError` from elsewhere to be relabelled as a manifest
+    defect.
+    """
+    problems: List[str] = []
+    observed: Dict[str, object] = {
+        "code_sha256": None, "rule_fingerprint": None,
+        "preflight_rule_fingerprint": None,
+        "read_from": dict(MANIFEST_IDENTITY_SOURCES),
+    }
+
+    fingerprint = manifest.get("rule_fingerprint")
+    if not isinstance(fingerprint, str) or not _is_sha256(fingerprint):
+        problems.append(
+            f"rule_fingerprint: {fingerprint!r} is not a 64-hex string at the "
+            f"manifest's top level")
+    else:
+        observed["rule_fingerprint"] = fingerprint
+        if fingerprint != REGISTERED_RULE_FINGERPRINT:
+            problems.append(
+                f"rule_fingerprint {fingerprint} != the registered "
+                f"{REGISTERED_RULE_FINGERPRINT}")
+
+    code = manifest.get("code")
+    if not isinstance(code, Mapping):
+        problems.append(
+            f"code: {type(code).__name__}, not the mapping the producer writes "
+            f"under manifest['code']; the module digest lives at "
+            f"manifest['code']['sha256'] and a flat manifest['code_sha256'] is "
+            f"not this schema")
+    else:
+        code_sha = code.get("sha256")
+        if not isinstance(code_sha, str) or not _is_sha256(code_sha):
+            problems.append(
+                f"code.sha256: {code_sha!r} is not a 64-hex string")
+        else:
+            observed["code_sha256"] = code_sha
+            if code_sha != PRODUCING_CODE_SHA256:
+                problems.append(
+                    f"code.sha256 {code_sha} != the registered "
+                    f"{PRODUCING_CODE_SHA256}")
+
+    # The freeze is optional in the schema — `build_manifest()` writes `None`
+    # when no preflight was supplied — but when it is there it must not
+    # disagree with the manifest it sits inside.  Two fingerprints in one file
+    # that differ mean the file was assembled from two runs.
+    preflight = manifest.get("preflight")
+    if preflight is None:
+        observed["preflight_present"] = False
+    elif not isinstance(preflight, Mapping):
+        observed["preflight_present"] = True
+        problems.append(
+            f"preflight: {type(preflight).__name__}, not the frozen input "
+            f"freeze mapping or null")
+    else:
+        observed["preflight_present"] = True
+        frozen = preflight.get("rule_fingerprint")
+        if frozen is not None:
+            observed["preflight_rule_fingerprint"] = frozen
+            if frozen != fingerprint:
+                problems.append(
+                    f"preflight.rule_fingerprint {frozen!r} disagrees with the "
+                    f"manifest's own {fingerprint!r}")
+    return observed, problems
 
 
 def _p2_seals() -> Dict[str, bool]:
@@ -1538,11 +1769,24 @@ def build_config(timestamp: str, synthetic: bool,
                 "mitdb_publisher_listed_files": MITDB_PUBLISHER_LISTED_FILES,
                 "mitdb_registered_aggregate_prefix":
                     MITDB_REGISTERED_AGGREGATE_PREFIX,
+                # The two folders, under separate keys.  Q5-E's registered
+                # constants are recorded unchanged; the corrective folder is
+                # recorded as the candidate this run judged.
                 "source_bundle_run": SOURCE_BUNDLE_RUN,
                 "source_bundle_folder_id": SOURCE_BUNDLE_FOLDER_ID,
+                "original_canonical_run": ORIGINAL_CANONICAL_RUN,
+                "original_canonical_folder_id": ORIGINAL_CANONICAL_FOLDER_ID,
+                "corrective_candidate_run": CORRECTIVE_BUNDLE_RUN,
+                "corrective_candidate_folder_id": CORRECTIVE_BUNDLE_FOLDER_ID,
+                "corrective_candidate_spec": CORRECTIVE_BUNDLE_SPEC,
+                "p2_target_folder_id": P2_TARGET_FOLDER_ID,
+                "candidate_is_registered_as_canonical": False,
                 "producing_code_sha256": PRODUCING_CODE_SHA256,
-                "rule_fingerprint": REGISTERED_RULE_FINGERPRINT},
-            "approval_note": APPROVAL_NOTE}
+                "rule_fingerprint": REGISTERED_RULE_FINGERPRINT,
+                "manifest_identity_sources": dict(MANIFEST_IDENTITY_SOURCES)},
+            "approval_note": APPROVAL_NOTE,
+            "prior_approvals": [dict(r)
+                                for r in PRIOR_EXECUTION_APPROVAL_RECORDS]}
 
 
 def summary_markdown(combined: Mapping[str, object], p1: Mapping[str, object],
@@ -2120,13 +2364,31 @@ def run_prep(mitdb_dir: str, folder_id: str, out_dir: str,
             f"import or notebook run cannot reach a registered asset.  "
             f"{APPROVAL_NOTE}")
     require_execution_approval(approval, f"the P1/P2 preflight over {out_dir!r}")
-    if folder_id != SOURCE_BUNDLE_FOLDER_ID:
+    if folder_id == ORIGINAL_CANONICAL_FOLDER_ID:
+        # Named separately from the general refusal below.  This id is not a
+        # typo or a stray folder — it is the eleven-file original, and it is
+        # refused *because* P2 already read it on 2026-08-12 and stopped at
+        # P2_DIRECTORY_CONTRACT_FAILED.  Re-running against it would reproduce
+        # that stop and could be mistaken for a fresh finding, and it is not
+        # what this rerun was approved for.  The folder stays untouched.
         raise PrepError(
-            f"refusing to run: {folder_id!r} is not the registered canonical "
-            f"folder id {SOURCE_BUNDLE_FOLDER_ID!r}.  The bundle is chosen by "
-            f"id, never by name or by proximity, and this is not a "
+            f"refusing to run: {folder_id!r} is the ORIGINAL canonical folder "
+            f"{ORIGINAL_CANONICAL_RUN!r}, which holds eleven files and whose "
+            f"P2 stop (P2_DIRECTORY_CONTRACT_FAILED, missing "
+            f"'negative_control_null.npz') is already recorded and preserved.  "
+            f"This rerun targets the corrective candidate "
+            f"{CORRECTIVE_BUNDLE_FOLDER_ID!r} ({CORRECTIVE_BUNDLE_RUN}).  "
+            f"Neither folder is modified by pointing at the other.")
+    if folder_id != P2_TARGET_FOLDER_ID:
+        raise PrepError(
+            f"refusing to run: {folder_id!r} is not the corrective candidate "
+            f"folder id {P2_TARGET_FOLDER_ID!r}.  The bundle is chosen by id, "
+            f"never by name, by proximity or by size, and this is not a "
             f"general-purpose folder inspector.")
     emit("Q5-E PREP P1+P2: approval present; nothing has been opened yet.")
+    emit(f"P2 target: {P2_TARGET_FOLDER_ID} ({P2_TARGET_RUN}) — the "
+         f"preregistered corrective candidate, NOT the original canonical "
+         f"{ORIGINAL_CANONICAL_FOLDER_ID}.")
 
     granted = _terminal_execution_guard()
     emit(f"read-only execution approval: granted {granted['granted_on']} by "
@@ -2230,7 +2492,11 @@ def module_capabilities() -> Tuple[str, ...]:
             "check_runtime_dependencies", "parse_sha256sums_text",
             "compare_against_publisher_list", "payload_files", "bundle_files",
             "design_card", "EXECUTION_APPROVAL_TOKEN", "DRIVE_READONLY_SCOPE",
-            "EXECUTION_APPROVAL_RECORD")
+            "EXECUTION_APPROVAL_RECORD", "PRIOR_EXECUTION_APPROVAL_RECORDS",
+            "manifest_identity", "MANIFEST_IDENTITY_SOURCES",
+            "CORRECTIVE_BUNDLE_FOLDER_ID", "CORRECTIVE_BUNDLE_RUN",
+            "ORIGINAL_CANONICAL_FOLDER_ID", "ORIGINAL_CANONICAL_RUN",
+            "P2_TARGET_FOLDER_ID", "P2_TARGET_RUN")
 
 
 def _approval_line() -> str:
@@ -2251,7 +2517,12 @@ def design_card() -> str:
         f"  P1 publisher-listed  : {MITDB_PUBLISHER_LISTED_FILES} "
         f"(+1 for the list itself = 147)",
         f"  P1 aggregate prefix  : {MITDB_REGISTERED_AGGREGATE_PREFIX}",
-        f"  P2 folder id         : {SOURCE_BUNDLE_FOLDER_ID}",
+        f"  P2 target folder id  : {P2_TARGET_FOLDER_ID}  (corrective "
+        f"candidate)",
+        f"  P2 target run        : {P2_TARGET_RUN}",
+        f"  original canonical   : {ORIGINAL_CANONICAL_FOLDER_ID}  "
+        f"(11 files; refused as a target, untouched)",
+        f"  candidate registered : False — registration is a separate PR",
         f"  P2 directory files   : {len(BJ.BUNDLE_FILES)}",
         f"  P2 Q5-E input files  : {len(BUNDLE_INPUT_FILES)}",
         f"  read-only execution  : {_approval_line()}",
