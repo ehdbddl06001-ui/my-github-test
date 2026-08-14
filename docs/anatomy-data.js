@@ -201,6 +201,68 @@ window.MEDKOS_ANATOMY = {
  ],
  "concepts": [
   {
+   "id": "anatomy-2026-0029",
+   "title": "등 근육 3층과 지배신경 규칙",
+   "region": "back",
+   "subregion": "superficial-back",
+   "layer": "superficial",
+   "conceptStyle": "layer-order",
+   "relations": [
+    "covers",
+    "adjacent-to"
+   ],
+   "structureClasses": [
+    "muscle",
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-back-layers-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 등세모근·넓은등근·마름근"
+    }
+   ],
+   "body": "## 층 순서 — 얕은층 → 중간층 → 깊은층\n\n도해: `docs/assets/anatomy/diag-back-layers-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0027`)\n\n| 층 | 근육 | 지배신경 | 기능 축 |\n|---|---|---|---|\n| 얕은층 ① | 등세모근 trapezius | **더부신경(XI)** (+C3·4 고유감각) | 팔이음뼈 운동 |\n| 얕은층 ① | 넓은등근 latissimus dorsi | 가슴등신경 C6–8 | 어깨 폄·모음·안쪽돌림 |\n| 얕은층 ② | 어깨올림근·작은/큰마름근 | 등쪽어깨신경 C5 | 어깨뼈 올림·뒤당김 |\n| 중간층 | 위뒤톱니근 serratus post. superior | 갈비사이신경 | 갈비뼈 올림(들숨) |\n| 중간층 | 아래뒤톱니근 serratus post. inferior | 갈비사이신경 | 갈비뼈 내림(날숨) |\n| 깊은층 | 척주세움근(엉덩갈비-가장긴-가시) | **척수신경 뒤가지** | 척주 폄 |\n| 깊은층 | 가로돌기가시근육(반가시-뭇갈래-돌림) | **뒤가지** | 분절 돌림·안정화 |\n\n## 왜 이런 규칙인가 (외우지 말고 이해)\n\n얕은·중간층은 배아기에 **팔이음뼈·갈비 쪽에서 등으로 이주해 온** 근육이라 원래 살던\n동네의 신경(척수신경 **앞가지**)을 그대로 데리고 왔다. 깊은층만 처음부터 등에서\n만들어진 **고유등근육**이라 **뒤가지** 지배를 받는다. 그래서 태깅에서 신경을 물으면\n\"이 근육이 몇 층이냐\"를 먼저 판단하면 된다.\n\n예외는 **등세모근** 하나 — 얕은층이지만 운동지배가 더부신경(XI)이다(목빗근과 한 짝으로\n인두굽이 유래). C3·4는 고유감각만 보낸다.\n\n## 척주세움근 3기둥 — 가쪽에서 안쪽으로\n\n```\n가쪽 ──────────────────────────── 안쪽\n엉덩갈비근      가장긴근        가시근\niliocostalis    longissimus     spinalis\n(갈비뼈각)      (가로돌기·꼭지)  (가시돌기)\n```\n\n그 아래 더 깊은 층이 가로돌기가시근육: **반가시근**(4–6분절 건너뜀) → **뭇갈래근**\n(2–4분절, 허리에서 최대) → **돌림근**(1–2분절, 가슴에서 발달). 건너뛰는 분절 수가\n줄수록 깊다.\n\n## 임상 삼각 (도해에 노란 점선)\n\n- **청진삼각** triangle of auscultation — 등세모근 가쪽모서리 · 넓은등근 위모서리 ·\n  큰마름근(또는 어깨뼈 안쪽모서리). 근육이 얇아 허파 청진이 잘 된다.\n- **허리삼각(Petit)** lumbar triangle — 엉덩뼈능선 · 넓은등근 앞모서리 · 배바깥빗근\n  뒤모서리. 허리탈장 호발 부위."
+  },
+  {
+   "id": "anatomy-2026-0030",
+   "title": "큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지",
+   "region": "lower-limb",
+   "subregion": "gluteal",
+   "layer": "",
+   "conceptStyle": "branch-tree",
+   "relations": [
+    "passes-through",
+    "branches-from",
+    "adjacent-to"
+   ],
+   "structureClasses": [
+    "muscle",
+    "nerve",
+    "artery"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-gluteal-foramina-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 — 궁둥구멍근과 통과 구조물"
+    }
+   ],
+   "body": "## 기준은 궁둥구멍근 하나\n\n도해: `docs/assets/anatomy/diag-gluteal-foramina-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0028`)\n\n궁둥구멍근 piriformis 이 큰궁둥구멍을 가로지르며 위·아래로 나눈다. 볼기부위 문제는\n거의 전부 \"이 구조가 궁둥구멍근 위냐 아래냐\"로 환원된다.\n\n```\n큰궁둥구멍 greater sciatic foramen\n├─ 위구멍 suprapiriform  : 위볼기동맥 · 위볼기정맥 · 위볼기신경 ← 이 셋뿐\n└─ 아래구멍 infrapiriform : 아래볼기 동맥·정맥·신경\n                            궁둥신경 (가장 가쪽, 가장 굵다)\n                            뒤넙다리피부신경\n                            음부신경 + 속음부동맥\n                              └→ 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입\n```\n\n## 혈관 분지 — 어디서 갈라지나\n\n```\n속엉덩동맥 internal iliac a.\n├─ 뒤갈래 posterior division ─→ 위볼기동맥 superior gluteal a.\n└─ 앞갈래 anterior division  ─┬→ 아래볼기동맥 inferior gluteal a.\n                              └→ 속음부동맥 internal pudendal a.\n```\n\n외우는 법: **위는 뒤갈래, 아래·음부는 앞갈래.**\n\n## 신경 — 무엇을 지배하나\n\n| 신경 | 나오는 곳 | 지배 |\n|---|---|---|\n| 위볼기신경 superior gluteal n. | 위구멍 | 중간볼기근·작은볼기근·넙다리근막긴장근 |\n| 아래볼기신경 inferior gluteal n. | 아래구멍 | 큰볼기근 **단독** |\n| 궁둥신경 sciatic n. (L4–S3) | 아래구멍 | 햄스트링 → 다리오금에서 정강/온종아리신경 분지 |\n| 뒤넙다리피부신경 | 아래구멍 | 넓적다리 뒤 피부(감각) |\n| 음부신경 pudendal n. (S2–4) | 아래구멍 → 재진입 | 회음 |\n\n## 임상 — 태깅·구술 단골\n\n- **Trendelenburg 징후**: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서\n  **반대쪽** 골반이 처진다(보상 = 몸통을 환측으로 기울임).\n- **근육주사 안전구역**: 볼기 **위가쪽 1/4**(또는 von Hochstetter 부위) — 궁둥신경과\n  볼기신경을 피한다.\n- **궁둥신경 표면 표지**: 궁둥뼈결절과 큰돌기의 **중간점** 심부.\n- **변이**: 궁둥신경이 궁둥구멍근을 뚫고 지나는 변이가 흔하며, 궁둥구멍근증후군의\n  해부학적 근거가 된다."
+  },
+  {
    "id": "anatomy-2026-0001",
    "title": "속엉덩동맥 분지 트리",
    "region": "pelvis-perineum",
@@ -541,6 +603,50 @@ window.MEDKOS_ANATOMY = {
      "file": "3회차(0825) 허미선pf.pdf",
      "page": null,
      "section": "다리오금의 혈관 — 무릎동맥 5가지 (업로드 스캔 5183 p2)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0027",
+   "style": "spotter",
+   "region": "back",
+   "subregion": "superficial-back",
+   "examPhase": "tagging-1",
+   "stem": "등 근육 3층 도해에서 번호핀 ①~⑦이 가리키는 근육의 이름(한·영)과 각각의 지배신경을 말하시오. 왼쪽 패널부터 얕은층 → 중간층 → 깊은층이다.",
+   "choices": null,
+   "answer": "① 등세모근 trapezius — 더부신경(XI) / ② 넓은등근 latissimus dorsi — 가슴등신경(C6–8) / ③ 위뒤톱니근 serratus posterior superior — 갈비사이신경 / ④ 아래뒤톱니근 serratus posterior inferior — 갈비사이신경 / ⑤ 엉덩갈비근 iliocostalis — 척수신경 뒤가지 / ⑥ 가장긴근 longissimus — 뒤가지 / ⑦ 가시근 spinalis — 뒤가지",
+   "explanation": "층을 먼저 판단하면 신경이 따라온다. 얕은·중간층은 배아기에 팔이음뼈·갈비 쪽에서 등으로 이주해 온 근육이라 척수신경 **앞가지**를 데리고 왔고(등세모근만 예외적으로 더부신경 XI 운동지배, C3·4는 고유감각), 깊은층 고유등근육만 처음부터 등에서 만들어져 **뒤가지** 지배를 받는다. ⑤⑥⑦은 척주세움근 3기둥으로 가쪽→안쪽 순서가 엉덩갈비-가장긴-가시다(엉·가·가로 외우기). 중간층 두 근육은 호흡 보조 — 위뒤톱니근이 갈비뼈를 올려 들숨, 아래뒤톱니근이 내려 날숨. 도해는 자체 제작(claude-drawn-svg)이라 공개 가능하며, 라벨판은 diag-back-layers-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-back-layers-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "얕은층 근육 — 등세모근·넓은등근·마름근"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0028",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "gluteal",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 볼기를 뒤에서 본 도해에서 번호핀 ①~⑦의 이름(한·영)을 말하고, 각각 궁둥구멍근의 위구멍(suprapiriform)과 아래구멍(infrapiriform) 중 어디로 나오는지 답하시오.",
+   "choices": null,
+   "answer": "① 궁둥구멍근 piriformis (구멍을 위·아래로 나누는 기준) / ② 위볼기동맥 superior gluteal a. — 위구멍 / ③ 위볼기신경 superior gluteal n. — 위구멍 / ④ 아래볼기동맥 inferior gluteal a. — 아래구멍 / ⑤ 궁둥신경 sciatic n. — 아래구멍(가장 가쪽·가장 굵다) / ⑥ 뒤넙다리피부신경 posterior femoral cutaneous n. — 아래구멍 / ⑦ 음부신경 pudendal n. + 속음부동맥 internal pudendal a. — 아래구멍으로 나왔다가 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입",
+   "explanation": "외우는 핵심은 '위구멍으로는 위볼기 동맥·정맥·신경 셋만 나오고 나머지는 전부 아래구멍'이다. 혈관 계보는 둘 다 속엉덩동맥 가지지만 위볼기동맥은 **뒤갈래**, 아래볼기동맥·속음부동맥은 **앞갈래**에서 나온다. 임상: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서 **반대쪽** 골반이 처지는 Trendelenburg 징후, 그래서 근육주사는 볼기 위가쪽 1/4에 놓아 궁둥신경을 피한다. 궁둥신경 표면 표지는 궁둥뼈결절과 큰돌기의 중간점이며, 궁둥구멍근을 뚫고 지나는 변이가 흔해 궁둥구멍근증후군의 해부 근거가 된다. 도해는 자체 제작(claude-drawn-svg), 라벨판은 diag-gluteal-foramina-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-gluteal-foramina-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2회차(0818) 김홍태pf.pdf",
+     "page": null,
+     "section": "볼기부위 — 궁둥구멍근과 통과 구조물"
     }
    ]
   },
