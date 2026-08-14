@@ -116,11 +116,18 @@ python pipelines/anatomy_daily.py --date <KST 오늘> --plan
 `publishable: true` 가능(카데바 사진과 달리 저작권·존엄 문제 없음). 반드시 4b의
 QA 루프를 거친다.
 
-**회차 서브노트(표 중심 정리본)도 함께 만든다.** 근육표·혈관표·신경표·공간표 +
-콜아웃(기출/교수강조/주의/임상/TIP/암기) + 자가 점검 질문. 카드에 쓰고
-`pipelines/anatomy_subnote.py --card <카드> --output .private/anatomy/pdf/subnote-sNN.pdf`
-로 조판한다(문법·함정은 `docs/ANATOMY_VISUALS.md` §6). 텍스트뿐이라 Drive Docs
-업로드도 가능하다.
+**회차 서브노트가 학습자료의 기본 형태다 — 도해와 표를 한 파일에 합친다.**
+frontmatter `layout: split` 으로 **A4 가로 2단**: 섹션마다 왼쪽에 도해(`!fig`),
+오른쪽에 근육표·혈관표·신경표·공간표 + 콜아웃(기출/교수강조/주의/임상/TIP/암기),
+마지막에 자가 점검 질문. 도해를 따로 보내지 말고 **이 한 파일로** 전달한다.
+
+```
+python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
+    --output .private/anatomy/pdf/subnote-sNN.pdf
+```
+
+문법·조판 함정은 `docs/ANATOMY_VISUALS.md` §6. 텍스트 카드 자체는 Drive Docs
+업로드도 가능하다(도해는 PDF 안에만 들어간다).
 
 ## 4b. SVG 도해 자체 QA 루프 (필수 — 모델 불문)
 
