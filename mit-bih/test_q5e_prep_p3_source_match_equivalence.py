@@ -1447,12 +1447,15 @@ def test_consumption_timing_and_stage_states_are_part_of_the_comparison():
     observation, _meta = P3.observe_adapter(fixture, dictionary)
     check(observation["consumed_annotations"][0]["consumed_at_peak_index"] == 0,
           "the annotation consumed by the cut peak records when it was taken")
-    check(observation["kept_rows"] == [],
-          "no row survives the boundary cut in this fixture")
-    check(observation["stages"]["matched_pre_aami"] == [0],
+    filler = list(range(len(fixture["peaks"]) - len(P3.FILLER_PEAKS),
+                        len(fixture["peaks"])))
+    check([row["peak_index"] for row in observation["kept_rows"]] == filler,
+          "no row survives the boundary cut in this fixture: every kept row is "
+          "a filler beat, and the two peaks under test keep nothing")
+    check(observation["stages"]["matched_pre_aami"] == [0] + filler,
           "the state before AAMI selection still shows the match")
-    check(observation["stages"]["post_boundary"] == [],
-          "and the state after the boundary cut is empty")
+    check(observation["stages"]["post_boundary"] == filler,
+          "and the state after the boundary cut holds only the filler")
     check(observation["stages"]["kept_equals_post_boundary"] is True,
           "the producer's own kept rows agree with that description")
     check(observation["released_annotations"] == [],
@@ -2882,6 +2885,100 @@ NONE_RETURNING_PRODUCER = Z_USING_PRODUCER.replace(
     '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}')
 
 
+def test_the_filler_beats_cannot_touch_any_decision_under_test():
+    """The fixtures grew, and the growth has to be provably inert.
+
+    Run `20260816T022702` showed the registered producer declining to build a
+    record while holding one kept beat, so four of the six fixtures could never
+    reach the comparison.  Filler beats fix that — and a filler beat that could
+    become someone's nearest, be consumed by someone else, or change a tie
+    would silently rewrite the thing each fixture exists to refute.
+    """
+    filler_peaks = set(P3.FILLER_PEAKS)
+    filler_samples = {sample for sample, _symbol in P3.FILLER_ANNOTATIONS}
+    check(len(P3.FILLER_PEAKS) == len(filler_peaks) == 6,
+          "there are six distinct filler beats")
+    for fixture in P3.FIXTURES:
+        name = str(fixture["name"])
+        peaks = [int(p) for p in fixture["peaks"]]
+        annotations = [(int(s), str(y)) for s, y in fixture["annotations"]]
+        decision_peaks = [p for p in peaks if p not in filler_peaks]
+        decision_samples = [s for s, _ in annotations if s not in filler_samples]
+        check(peaks[-len(P3.FILLER_PEAKS):] == list(P3.FILLER_PEAKS),
+              f"{name}: the filler is appended, so the decision peaks are "
+              f"still traversed first")
+        for peak in P3.FILLER_PEAKS:
+            for other in decision_samples:
+                check(abs(peak - other) > P3.TOLERANCE,
+                      f"{name}: filler peak {peak} is further than the "
+                      f"tolerance from decision annotation {other}, so it can "
+                      f"never be matched to one")
+        for sample in filler_samples:
+            for other in decision_peaks:
+                check(abs(sample - other) > P3.TOLERANCE,
+                      f"{name}: filler annotation {sample} is out of reach of "
+                      f"decision peak {other}")
+        for peak in P3.FILLER_PEAKS:
+            within = [s for s, _ in annotations if abs(s - peak) <= P3.TOLERANCE]
+            check(within == [peak + 1],
+                  f"{name}: filler peak {peak} has exactly one annotation "
+                  f"within the tolerance, so it carries no matching decision")
+            check(BJ.WIN_BEFORE <= peak <= int(fixture["signal_length"])
+                  - BJ.WIN_AFTER - 1,
+                  f"{name}: filler peak {peak} is strictly inside the window "
+                  f"boundary, so it carries no boundary decision either")
+    classes = [BJ.AAMI_SYMBOL_MAP.get(symbol, "")
+               for _sample, symbol in P3.FILLER_ANNOTATIONS]
+    check(all(classes), f"every filler symbol maps to an AAMI class: {classes}")
+    check(all(a != b for a, b in zip(classes, classes[1:])),
+          f"neighbouring filler classes differ, which is what lets a kept row "
+          f"settle an ambiguous trace reading: {classes}")
+    check(classes[0] == "S",
+          "and the first one is S, so it differs from the decision annotation "
+          "before it in every fixture — those are all N or V")
+    used = {symbol for _s, symbol in P3.FILLER_ANNOTATIONS}
+    for fixture in P3.FIXTURES:
+        decision = {str(y) for s, y in fixture["annotations"]
+                    if int(s) not in filler_samples}
+        check(not (used & decision),
+              f"{fixture['name']}: no filler symbol is one the fixture's own "
+              f"annotations use")
+
+
+def test_the_filler_adds_the_same_rows_to_both_sides():
+    """Inert means inert on both sides, or it is not a fair comparison."""
+    result = differential_for(COLUMNAR_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a faithful producer still agrees on all six fixtures")
+    for entry in result["detail"]:
+        kept = [row["peak_sample"] for row in entry["source"]["kept_rows"]]
+        filler_kept = [p for p in kept if p in set(P3.FILLER_PEAKS)]
+        check(filler_kept == list(P3.FILLER_PEAKS),
+              f"{entry['name']}: every filler beat is kept, in order: "
+              f"{filler_kept}")
+        check(len(kept) >= 2,
+              f"{entry['name']}: at least two rows survive, which is what the "
+              f"registered producer needs before it will build a record")
+
+
+def test_each_fixture_still_isolates_its_own_decision():
+    """The detection matrix is the point of the fixture set, so it is re-run."""
+    caught = {}
+    for name in VARIANTS:
+        result = differential_for(variant_text(name))
+        caught[name] = sorted(entry["name"] for entry in result["detail"]
+                              if not entry["equal"])
+    for name, fixtures in caught.items():
+        check(fixtures, f"variant {name} is still caught by some fixture")
+    for name, fixtures in caught.items():
+        unique = [f for f in fixtures
+                  if all(f not in other for key, other in caught.items()
+                         if key != name)]
+        check(unique,
+              f"variant {name} is still caught by a fixture no other variant "
+              f"catches: {fixtures}")
+
+
 def test_a_producer_that_declines_to_build_a_record_is_its_own_finding():
     """"It returned nothing" is not "its rows could not be read".
 
@@ -2910,7 +3007,7 @@ def test_a_producer_that_declines_to_build_a_record_is_its_own_finding():
               and trace.get("n_steps", 0) > 0,
               "and that the producer really ran")
         locals_seen = trace.get("final_locals", {})
-        check(locals_seen.get("keep") == [0, 1],
+        check(locals_seen.get("keep") == list(range(8)),
               f"with the locals that explain it — here the producer had kept "
               f"rows and returned None anyway: keep = {locals_seen.get('keep')}")
         check("ys" in locals_seen and "peaks" in locals_seen,
