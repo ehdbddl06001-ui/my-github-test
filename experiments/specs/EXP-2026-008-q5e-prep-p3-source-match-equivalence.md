@@ -481,6 +481,48 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D16 (2026-08-16) — fourth attempt stopped at `P3_KEPT_ROWS_UNOBSERVABLE`;
+the reader now opens whatever container came back.**  Run `20260816T000714`
+ran the registered `build_record` to completion on the first fixture and then
+could not read its result: *"the producer returned no row container at all."*
+That message was true about the reader, not about the producer.  Row discovery
+canonicalised the return with the ordinary container limit, then scanned only
+the **top level** of it — so a return that is a tuple of arrays rather than a
+mapping of them, or an object carrying them as attributes, looked empty.  An
+unread container is not an absent one, and the difference matters because the
+first reading would have been recorded as a finding about the registered
+source.
+
+Three widenings, each of them still "read what came back" rather than a guess
+about what it means: the return is canonicalised with its own larger limit
+(`RETURN_MAX_CONTAINER`) so a real beat matrix is not truncated into
+unreadability; a return whose canonical form is nothing but a type name is
+re-read through its **public, non-callable attributes**, which is how a record
+object hands its rows over; and both the row scan and the label-vector scan
+recurse into nested containers instead of stopping at the first level they
+cannot name.  None of this decodes meaning — the peak-valued field, the
+first-column and the window-centre channels are unchanged, and they still have
+to agree with each other.
+
+The stop that remains is now actionable.  `P3_KEPT_ROWS_UNOBSERVABLE` prints
+the **shape** of what did come back — type, keys, lengths, element kinds via
+`describe_returned()` — and no value inside it, so the next extension is
+deliberate and the message can never carry something that would pass for a
+measurement.  "It kept nothing" and "its output cannot be read" stay separate:
+empty containers are still reported as an observation, not a failure.
+
+New regressions: `test_rows_handed_back_in_a_tuple_are_still_read`,
+`test_rows_handed_back_as_object_attributes_are_still_read`,
+`test_a_return_that_holds_no_rows_stops_and_describes_its_shape` (a producer
+returning a count still stops, and the stop names the shape),
+`test_the_shape_description_carries_no_measurable_value`, and
+`test_an_empty_result_is_reported_as_kept_nothing_not_as_unreadable`.  The
+notebook also generates its run stamp in KST rather than having it retyped
+each attempt, keeping the hand-written override and the `\d{8}T\d{6}` check.
+Bundle `c0cea7ac…` / manifest `d0cc9a05…` is preserved; the adapter, the
+fixtures, `SOURCE_MATCH_ORACLE_RECORD = None` and every scientific rule are
+untouched.
+
 **D15 (2026-08-15) — third attempt stopped at `frontend._z`; injected
 helpers are now probed rather than trusted.**  Run `20260815T235627` got past
 the signature and stopped while running: `build_record` calls `frontend._z`.
