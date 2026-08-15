@@ -1,41 +1,41 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-14",
+ "generated": "2026-08-15",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1067,
+  "total": 1105,
   "byType": {
+   "anatomy": 248,
+   "paper": 219,
    "kmle": 555,
-   "anatomy": 226,
    "usmle": 66,
-   "paper": 203,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 226,
-   "Cardiology": 83,
-   "Nephrology": 61,
-   "Infectious Disease": 59,
-   "Pediatrics": 57,
+   "Anatomy": 248,
+   "Cardiology": 85,
+   "Nephrology": 63,
+   "Infectious Disease": 61,
+   "Pediatrics": 59,
    "Obstetrics & Gynecology": 40,
    "Neurology": 38,
    "Psychiatry": 38,
    "Endocrinology": 36,
    "Gastroenterology": 35,
    "Pulmonology": 35,
+   "Surgery": 35,
    "Dermatology": 34,
    "General Surgery": 34,
    "Ophthalmology": 34,
    "Orthopedics": 34,
    "Rheumatology": 34,
    "Hematology": 33,
-   "Surgery": 33,
-   "Pathology": 28,
-   "Laboratory Medicine": 26,
-   "Hematology-Oncology": 21,
+   "Pathology": 30,
+   "Laboratory Medicine": 28,
+   "Hematology-Oncology": 23,
    "Physiology": 7,
    "Microbiology": 6,
    "Biochemistry": 5,
@@ -53,13 +53,656 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 667,
-   "medium": 351,
+   "high": 670,
+   "medium": 386,
    "low": 49
   },
-  "tagCount": 1966
+  "tagCount": 1992
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-16",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-16",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/daily/2026-08-16.md",
+   "snippet": "오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-16 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0052",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부판을 젖히는 방향과 남기는 층",
+   "tags": [
+    "layer-order",
+    "1회차",
+    "피부벗기기",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0052.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 피부판을 젖히는 방향과 남기는 층 layer-order 1회차 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0051",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "얕은정맥에서 깊은정맥으로 가는 길",
+   "tags": [
+    "relation",
+    "1회차",
+    "관통정맥",
+    "정맥류",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0051.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 얕은정맥에서 깊은정맥으로 가는 길 relation 1회차 관통정맥 정맥류 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0050",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "두렁정맥 채취와 동반 신경 손상",
+   "tags": [
+    "distinction",
+    "1회차",
+    "두렁신경",
+    "임상",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0050.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 두렁정맥 채취와 동반 신경 손상 distinction 1회차 두렁신경 임상 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0049",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "부위별 깊은근막의 이름",
+   "tags": [
+    "relation",
+    "1회차",
+    "깊은근막",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0049.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 부위별 깊은근막의 이름 relation 1회차 깊은근막 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0048",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "볼기 피부신경의 유래 구별",
+   "tags": [
+    "distinction",
+    "1회차",
+    "볼기피부신경",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0048.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 볼기 피부신경의 유래 구별 distinction 1회차 볼기피부신경 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0047",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "꼬리마취의 삽입 부위와 목표 공간",
+   "tags": [
+    "clinical-application",
+    "1회차",
+    "꼬리마취",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0047.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 꼬리마취의 삽입 부위와 목표 공간 clinical-application 1회차 꼬리마취 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0046",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "허리천자 높이의 해부학적 근거",
+   "tags": [
+    "clinical-application",
+    "1회차",
+    "허리천자",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0046.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허리천자 높이의 해부학적 근거 clinical-application 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0045",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "작은두렁정맥의 주행",
+   "tags": [
+    "course-tracing",
+    "1회차",
+    "작은두렁정맥",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0045.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 작은두렁정맥의 주행 course-tracing 1회차 작은두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0044",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "큰두렁정맥의 주행",
+   "tags": [
+    "course-tracing",
+    "1회차",
+    "큰두렁정맥",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0044.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 큰두렁정맥의 주행 course-tracing 1회차 큰두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0043",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부벗기기에서 칼의 깊이",
+   "tags": [
+    "relation",
+    "1회차",
+    "얕은근막",
+    "피부벗기기",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0043.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 피부벗기기에서 칼의 깊이 relation 1회차 얕은근막 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0042",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "다리 얕은정맥 태깅 연습판 (1–10)",
+   "tags": [
+    "spotter",
+    "도해",
+    "1회차",
+    "두렁정맥",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0042.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 다리 얕은정맥 태깅 연습판 (1–10) spotter 도해 1회차 두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0041",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척수신경 뒤가지의 지배 영역",
+   "tags": [
+    "distinction",
+    "1회차",
+    "뒤가지",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0041.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 척수신경 뒤가지의 지배 영역 distinction 1회차 뒤가지 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0040",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12)",
+   "tags": [
+    "branch-tree",
+    "도해",
+    "1회차",
+    "뒤가지",
+    "볼기피부신경",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0040.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12) branch-tree 도해 1회차 뒤가지 볼기피부신경 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0039",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "허리천자 통과 층 순서 (퀴즈판 11–19)",
+   "tags": [
+    "layer-order",
+    "도해",
+    "1회차",
+    "허리천자",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0039.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허리천자 통과 층 순서 (퀴즈판 11–19) layer-order 도해 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0038",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부·근막 층과 절개선 태깅 연습판 (1–10)",
+   "tags": [
+    "spotter",
+    "도해",
+    "1회차",
+    "층",
+    "피부벗기기",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0038.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 피부·근막 층과 절개선 태깅 연습판 (1–10) spotter 도해 1회차 층 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0037",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경",
+   "tags": [
+    "도해",
+    "1회차",
+    "정맥",
+    "두렁정맥",
+    "피부신경"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p, e-Anatomy Lower limb Superficial layer 02:44–03:39 / 12:02–13:34",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/concepts/lower-limb/anatomy-2026-0037.md",
+   "snippet": "주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 ",
+   "text": "Anatomy 다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경 도해 1회차 정맥 두렁정맥 피부신경 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p, e-Anatomy Lower limb Superficial layer 02:44–03:39 / 12:02–13:34 주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 정중선 끝 두렁정맥구멍(넓은근막) → 넙다리정맥 종아리근막을 뚫고 → 오금정맥 동반 신경 두렁신경 saphenous n. (무릎 아래부터) 장딴지신경 sural n. 암기: 큰 안 앞 / 작 가 뒤 두렁정맥구멍 직전 지류 얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. · 바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.) 흐름과 판막 얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이) 판막이 이 한 방향 만 허용하고, 장딴지근이 펌프가 된다. 판막부전 → 역류 → 정맥류 varicose veins (큰두렁계에 흔하다). 동반 신경의 감각 영역 신경 감각 영역 유래 두렁신경 종아리 안쪽 · 발 안쪽 넙다리신경의 감각가지 장딴지신경 종아리 뒤가쪽 · 발 가쪽 정강신경 + 온종아리신경 교통가지 임상 안쪽복사 앞 큰두렁정맥 = 응급 정맥절개(cut down) 자리. 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 이식편 . 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경. 장딴지신경은 신경생검 에 자주 쓴다. 실습 주의 두 정맥과 짝 신경 모두 얕은근막 안 에 있다. 피부만 벗기면 그대로 남는다."
+  },
+  {
+   "id": "anatomy-2026-0036",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척수신경 앞가지·뒤가지와 등·볼기 피부신경",
+   "tags": [
+    "도해",
+    "1회차",
+    "신경",
+    "뒤가지",
+    "앞가지",
+    "볼기피부신경"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이' (1회차 강의 PDF는 Drive 미보유)",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/concepts/back/anatomy-2026-0036.md",
+   "snippet": "갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior",
+   "text": "Anatomy 척수신경 앞가지·뒤가지와 등·볼기 피부신경 도해 1회차 신경 뒤가지 앞가지 볼기피부신경 해부 수업계획서 확정본 §1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이' (1회차 강의 PDF는 Drive 미보유) 갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior ramus 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기 굵기 가늘다 굵다 예외 C1 뒤가지(뒤통수밑신경) = 순수 운동 · C2 뒤가지 = 큰뒤통수신경 등세모근은 더부신경(XI) 지배 뒤가지의 피부가지 — 높이에 따라 갈린다 T1–T6: 안쪽가지 가 피부까지 간다. T7–T12: 가쪽가지 가 피부까지 간다. 둘 다 고유등근육에 운동가지를 준다. 볼기 피부신경 3형제 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 (엉덩뼈능선을 넘는다) 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 실습에서 등 피부를 벗기면 정중선 가까이에서 얕은근막을 뚫고 나오는 신경이 보인다 — 대부분 뒤가지의 피부가지다. 가쪽으로 갈수록 앞가지(갈비사이신경) 영역이 된다."
+  },
+  {
+   "id": "anatomy-2026-0035",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부·근막 층과 피부벗기기 절개선",
+   "tags": [
+    "도해",
+    "1회차",
+    "층",
+    "피부벗기기",
+    "얕은근막"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p (1회차 강의 PDF는 Drive 미보유)",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/concepts/back/anatomy-2026-0035.md",
+   "snippet": "층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑",
+   "text": "Anatomy 피부·근막 층과 피부벗기기 절개선 도해 1회차 층 피부벗기기 얕은근막 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p (1회차 강의 PDF는 Drive 미보유) 층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑조직) 지방 + 피부신경 · 얕은정맥 · 림프관 4 깊은근막 deep fascia 부위마다 이름이 다르다(아래) 5 근육 muscle 2회차부터 깊은근막의 부위별 이름 부위 깊은근막 특징 등 등허리근막 thoracolumbar fascia 고유등근육을 감싼다 넓적다리 넓은근막 fascia lata 두렁정맥구멍 이 뚫려 있다 종아리 종아리근막 crural fascia 작은두렁정맥이 여기를 뚫고 들어간다 절개선 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 볼기 볼기주름 가로절개 볼기주름 다리 뒤 넓적다리 뒤 세로절개 + 오금·발목 가로절개 오금·발목 피부판은 정중선에서 가쪽으로 젖히고, 얕은근막은 몸쪽에 남긴다. 왜 얕은근막을 남기나 얕은근막 안에 피부신경과 얕은정맥 이 들어 있다. 이 층을 통째로 벗기면 2회차 이후 관찰할 표본이 사라지고, 되돌릴 수 없다. 깊은근막을 뚫고 나오는 관통점 이 \"이 신경이 어디서 나왔나\"를 묻는 태깅 자리다. 같은 순서가 임상이 된다 허리천자 바늘: 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간. 자세한 근거는 anatomy 2026 0034 §5."
+  },
+  {
+   "id": "anatomy-2026-0034",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥",
+   "tags": [
+    "정리",
+    "1회차",
+    "예습시험",
+    "태깅",
+    "피부벗기기"
+   ],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/notes/anatomy-2026-0034-s01-study.md",
+   "snippet": "0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami",
+   "text": "Anatomy 1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥 정리 1회차 예습시험 태깅 피부벗기기 0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami labeled.svg … quiz.svg anatomy 2026 0040 (1–12) 다리 얕은정맥 + 동반 피부신경 assets/anatomy/diag saphenous veins labeled.svg … quiz.svg anatomy 2026 0042 (1–10) 개념 카드 anatomy 2026 0035 (층)· anatomy 2026 0036 (신경)· anatomy 2026 0037 (정맥)에 같은 도해와 표가 들어 있다. 라벨판으로 익히고 → 퀴즈판으로 번호를 답한 뒤 → 문항 카드로 채점한다. 범위 주의 : 1회차는 강의 PDF가 Drive에 없다. 아래 내용은 수업계획서 확정본이 정한 범위(실습지침 11–13p / 307p·311p, e Anatomy Superficial layer, 응용과제 3)에 대해 인정 교재의 표준 서술만 정리한 것이다. 수업에서 다른 절개선을 지시하면 그쪽이 우선이다. 1. 이 회차의 성격 — \"벗기는 회차\" 1회차는 구조를 찾는 회차가 아니라 덮개를 걷어내는 회차다. 오리엔테이션과 위령전례 뒤에 등과 다리의 피부를 벗긴다. 그래서 외울 것은 근육 이름이 아니라 층의 순서 와 층 안에 무엇이 들어 있는가 다. 2회차부터 나올 모든 구조가 이 층 감각 위에 얹힌다. 핵심 한 줄: 칼은 진피까지만. 얕은근막은 남긴다. 얕은근막을 열어 버리면 그 안의 피부신경·얕은정맥이 함께 뜯겨 나가고, 다시 만들 수 없다. 2. 층 구조 — 겉에서 속으로 순서 층 원어 그 안에 있는 것 / 특징 1 표피 epidermis 혈관 없음, 각질층 2 진피 dermis 질기다 — 피부판(skin flap)을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (= 피부밑조직 subcutaneous tissue) 지방 + 피부신경 + 얕은정맥 + 림프관·얕은림프절 4 깊은근막 deep fascia 등 = 등허리근막 thoracolumbar fascia / 넓적다리 = 넓은근막 fascia lata / 종아리 = 종아리근막 crural fascia 5 근육 muscle 2회차부터 층별로 벗긴다 얕은근막과 깊은근막 사이를 관통정맥·피부신경이 뚫고 지나간다. 깊은근막을 뚫는 그 지점이 태깅에서 \"이 신경이 어디서 나왔나\"를 묻는 자리다. 깊은근막은 부위마다 이름이 다르다. 이름을 부위와 짝지어 외운다. 넓은근막에는 두렁정맥구멍(saphenous opening) 이라는 구멍이 있고, 큰두렁정맥이 바로 그 구멍으로 들어가 넙다리정맥에 합류한다(§4). 절개선 (실습지침 11–13p / 307p·311p 범위) 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 acromion 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 iliac crest 볼기 볼기주름 가로절개 볼기주름 gluteal fold 다리 뒤 넓적다리 뒤 세로절개 볼기주름 → 오금 → 발꿈치 무릎·발목 가로절개 2개 오금 popliteal fossa · 발목 ankle 피부판은 정중선에서 가쪽으로 젖힌다. 얕은근막을 피부판에 붙이지 말고 몸쪽에 남긴다. 3. 신경 — 앞가지와 뒤가지 (응용과제 3) 척수 spinal cord │ ┌─────────────────┴─────────────────┐ 뒤뿌리 posterior root 앞뿌리 anterior root (감각 · 척수신경절이 붙음) (운동 · 신경절 없음) └─────────────────┬─────────────────┘ 척수신경 spinal n. (혼합) 척추사이구멍을 나오자마자 둘로 ┌─────────────────┴─────────────────┐ 뒤가지 posterior ramus 앞가지 anterior ramus 가늘다 · 얼기를 만들지 않는다 굵다 · 얼기를 만든다 │ │ ┌────┴────┐ ├─ 목·팔·허리엉치 신경얼기 안쪽가지 가쪽가지 ├─ 갈비사이신경(가슴은 얼기 없음) │ │ └─ 몸통 앞·가쪽 + 사지 전부 │ └─ T7–T12에서 피부까지 (등 얕은층·중간층 근육도 여기) └──────────── T1–T6에서 피부까지 (둘 다 고유등근육 = 깊은층에 운동가지를 준다) 축 뒤가지 앞가지 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기를 만든다 예외 C1 뒤가지 = 뒤통수밑신경, 순수 운동 (피부가지 없음) · C2 뒤가지 = 큰뒤통수신경 등세모근은 앞가지가 아니라 더부신경(XI) 지배 볼기 피부신경 3형제 — 유래가 갈린다 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 — 엉덩뼈능선을 넘어 내려온다 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 유래 ← 함정 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 뒤가지가 볼기 피부까지 내려오는 건 위·중간뿐이다. 4. 혈관 — 다리 얕은정맥 (e Anatomy Lower limb Superficial layer 구간) 발등정맥활 dorsal venous arch ├─ 안쪽 끝 ─→ 큰두렁정맥 great saphenous v. │ 안쪽복사 '앞' → 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 │ → 두렁정맥구멍(넓은근막) → 넙다리정맥 femoral v. │ 동반 신경: 두렁신경 saphenous n. (넙다리신경의 감각가지, 무릎 아래부터) │ 두렁구멍 직전 지류: 얕은배벽정맥 · 얕은엉덩휘돌이정맥 · 바깥음부정맥 │ (+ 덧두렁정맥 accessory saphenous v.) └─ 가쪽 끝 ─→ 작은두렁정맥 small saphenous v. 가쪽복사 '뒤' → 종아리 뒤 정중선 → 깊은근막(종아리근막)을 뚫고 → 오금정맥 popliteal v. 동반 신경: 장딴지신경 sural n. (정강신경 + 온종아리신경 교통가지) 복사 규칙 : 큰두렁 = 안쪽복사 앞 / 작은두렁 = 가쪽복사 뒤 . → \"큰 안 앞 / 작 가 뒤\" 흐름: 얕은정맥 → 관통정맥 perforating v. → 깊은정맥. 판막이 이 한 방향만 허용하고, 장딴지근이 펌프 역할을 한다. 판막부전이면 역류해 정맥류 varicose veins 가 된다. 신경 감각 영역 손상 상황 두렁신경 종아리 안쪽 · 발 안쪽 큰두렁정맥 채취(CABG)·정맥절개 장딴지신경 종아리 뒤가쪽 · 발 가쪽 작은두렁정맥 채취 · 신경생검 5. 임상 포인트 (응용과제 1·2) 5 1. 허리천자 lumbar puncture 바늘이 지나는 층 — §2의 '겉 → 속' 감각 그대로다. 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간(뇌척수액) 높이 : L3–L4 또는 L4–L5 가시돌기 사이. 체표 지표 : 엉덩뼈능선 최고점을 이은 선(Tuffier 선) ≈ L4 가시돌기 높이. 원칙 : 성인 척수는 L1–L2에서 끝나므로(척수원뿔) 그 아래에는 말총(cauda equina)만 있다. 말총의 신경뿌리는 바늘에 밀려나 잘 다치지 않는다. 신생아·영아는 척수 끝이 L3까지 내려와 있어 더 아래(L4–L5)에서 찌른다. 자세: 옆으로 누워 등을 최대한 구부린다(가시돌기 사이가 벌어진다). 5 2. 꼬리마취 caudal anesthesia 어디로 : 엉치틈새 sacral hiatus — S5 뒤쪽 활이 닫히지 않아 생긴 구멍. 좌우 엉치뿔 sacral cornua 를 만져 그 사이로 들어간다. 어디에 : 엉치관의 경막바깥공간(epidural space) . 경질막은 보통 S2 높이에서 끝나므로 그 아래에서는 거미막밑공간에 들어가지 않는다. 목적 : 항문·회음·아래 골반 수술 마취, 소아 마취(성인보다 지표가 뚜렷), 무통분만, 만성 요통의 경막바깥 스테로이드 주입. 허리천자와의 차이: 허리천자는 거미막밑공간까지 (뇌척수액을 얻는다), 꼬리마취는 경막바깥공간에서 멈춘다 . 5 3. 실습에서 바로 쓰는 임상 안쪽복사 앞 큰두렁정맥 — 쇼크로 정맥이 안 보일 때 정맥절개(cut down) 자리. 큰두렁정맥은 관상동맥우회술(CABG)·말초우회의 이식편 으로 쓴다. 청진삼각·허리삼각 같은 등의 약한 자리는 2회차 얕은층 근육에서 다룬다. 6. 예습시험 체크리스트 10 수업 전날 밤, 아래 10개를 소리 내어 답할 수 있으면 준비 끝이다. 1. 피부에서 근육까지 층을 겉에서 속으로 5개 말하시오. 2. 얕은근막 안에 들어 있는 구조 3가지는? 3. 피부벗기기에서 칼은 어느 층까지 넣는가? 그 이유는? 4. 등·넓적다리·종아리의 깊은근막 이름을 각각 대시오. 5. 뒤가지가 운동으로 지배하는 근육은 어느 층인가? 앞가지는? 6. 등 위쪽(T1–T6)과 아래쪽(T7–T12)에서 피부까지 가는 것은 뒤가지의 어느 가지인가? 7. 위·중간·아래볼기피부신경의 유래를 각각 말하시오(하나만 계열이 다르다). 8. 큰두렁정맥·작은두렁정맥이 각각 어느 복사의 어느 쪽을 지나며, 어디로 들어가는가? 9. 두 두렁정맥에 각각 어떤 신경이 동반하며, 그 신경이 다치면 어디 감각이 사라지는가? 10. 허리천자에서 바늘이 지나는 층을 순서대로 말하고, L3–L4를 고르는 해부학적 이유를 대시오. 7. 다음 회차로 넘어가는 다리 2회차(2026 08 20)는 오늘 벗긴 자리에서 등 근육 3층 과 볼기부위 로 들어간다. 오늘 만든 층 감각(얕은 → 중간 → 깊은, 앞가지 → 뒤가지)이 그대로 2회차의 신경지배 규칙이 된다. 2회차 종합정리는 anatomy 2026 0021 ."
+  },
+  {
+   "id": "paper-2026-0219",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of urology : official journal of the Japanese Urological Association",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0219_perioperative_outcomes_of_salvage_radical_prostatectomy_afte.md",
+   "snippet": "Title Perioperative Outcomes of Salvage Radical Prostatectomy After Radiation Therapy: A Nationwide Analysis Using the National Clinical Database of Japan Authors Fujita Kazutoshi, Makita Ami, Ishii Daisuke, Yamamoto Hiroyuki, Yasui Takahir",
+   "text": "Surgery scraped pubmed PubMed / International journal of urology : official journal of the Japanese Urological Association Title Perioperative Outcomes of Salvage Radical Prostatectomy After Radiation Therapy: A Nationwide Analysis Using the National Clinical Database of Japan Authors Fujita Kazutoshi, Makita Ami, Ishii Daisuke, Yamamoto Hiroyuki, Yasui Takahiro, Kikuchi Eiji Journal / DOI International journal of urology : official journal of the Japanese Urological Association · DOI: 10.1111/iju.70602 · PMID: 42603088 https://pubmed.ncbi.nlm.nih.gov/42603088/ Abstract BACKGROUND: Salvage radical prostatectomy (sRP) is a potentially curative treatment for localized recurrence after radiation therapy for prostate cancer; however, nationwide real world perioperative outcomes remain unclear. METHODS: We conducted a retrospective descriptive study using the Japanese National Clinical Database (NCD). Patients who underwent sRP after radiation therapy were identified, and perioperative, functional, and pathological outcomes were summarized descriptively according to surgical approach and prior radiation modality without comparative statistical analysis. RESULTS: A total of 162 patients were included. The median age was 71 years, and high risk features were common (Gleason score ≥ 8, 49.4%; pathological stage ≥ pT3, 45.7%). Robot assisted surgery was performed in 88.3% of cases. The median operative time was 254.5 min, and estimated blood loss was 101 mL. Blood transfusion was required in 4.3% of patients. Major complications (Clavien Dindo grade ≥ III) occurred in 4.9%, with one postoperative death (0.6%). Operative time and blood loss tended to be higher in patients with prior BT than EBRT, whereas major complication rates were comparable. Positive surgical margins were observed in 24.1%, and extraprostatic extension in 36.4%. Early continence recovery was limited, with 27.2% of patients using 0 1 pad/day at 1 month. CONCLUSIONS: This nationwide NCD study provides contemporary real world data regarding perioperative outcomes after salvage radical prostatectomy in Japan. Although perioperative morbidity appeared acceptable in appropriately selected patients, these findings should be interpreted descriptively because formal comparative analyses were not performed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0218",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medicine and life",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0218_efficacy_and_safety_of_ashwagandha_root_extract_in_children_.md",
+   "snippet": "Title Efficacy and safety of ashwagandha root extract in children and adolescents with mild attention deficit/hyperactivity disorder: a randomized, double blind, placebo controlled trial Authors Naik Sunil, Muralidhar Gudla, Rao Bade Sriniv",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of medicine and life Title Efficacy and safety of ashwagandha root extract in children and adolescents with mild attention deficit/hyperactivity disorder: a randomized, double blind, placebo controlled trial Authors Naik Sunil, Muralidhar Gudla, Rao Bade Srinivas, Agarwal Sanjay, Jain Mukta Journal / DOI Journal of medicine and life · DOI: 10.25122/jml 2026 0025 · PMID: 42602386 https://pubmed.ncbi.nlm.nih.gov/42602386/ Abstract This study investigated the effects of ashwagandha root extract (ARE) supplementation on core attention deficit/hyperactivity disorder (ADHD) symptoms, executive functioning, and patient reported outcomes in children and adolescents with mild ADHD. Fifty eight children and adolescents with clinically diagnosed mild ADHD were randomly assigned to either the ARE group (ARE; n = 29) or a placebo group (PLA; n = 29) in a prospective, randomized, double blind, placebo controlled, parallel group design. Participants received 150 mg of ashwagandha root extract or a matched placebo gummies twice daily for 56 days. Primary outcomes were changes in the Attention Deficit/Hyperactivity Disorder Rating Scale IV (ADHD RS IV) total score. Secondary outcomes: ADHD RS IV inattention and hyperactivity impulsivity subscales, Behavior Rating Inventory of Executive Function 2 (BRIEF 2) scores and Patient Reported Outcomes Measurement Information System (PROMIS) scores. Safety markers, including routine clinical laboratory parameters, were assessed at baseline and Day 56. At Day 56, ADHD RS IV inattention, hyperactivity impulsivity, and total scores were significantly lower in ARE than in PLA (P < 0.001). Significant improvements were also observed in the BRIEF 2 behavioral, emotional, and cognitive regulation indices and the global executive composite in ARE (P < 0.001). PROMIS sleep disturbance and anxiety scores improved significantly in ARE relative to PLA (P < 0.001). No significant between group differences or clinically meaningful changes were observed in safety markers across the intervention period. No serious adverse events were reported. Supplementation with 300 mg/day of ashwagandha root extract for 56 days significantly improved ADHD symptom severity, executive functioning, and selected patient reported outcomes in children and adolescents with mild ADHD, with a favorable safety profile. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0217",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Microbiology spectrum",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0217_analytical_performance_of_a_multi_target_open_real_time_pcr_.md",
+   "snippet": "Title Analytical performance of a multi target open real time PCR assay for simultaneous detection of tuberculosis, non tuberculous mycobacteria, and drug resistance in a high burden setting Authors Sidiq Zeeshan, Anand Ankita, Tyagi Payal,",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Microbiology spectrum Title Analytical performance of a multi target open real time PCR assay for simultaneous detection of tuberculosis, non tuberculous mycobacteria, and drug resistance in a high burden setting Authors Sidiq Zeeshan, Anand Ankita, Tyagi Payal, Dwivedi Kaushal Kumar, Rajpal Sanjay, Chopra Kamal Kishore Journal / DOI Microbiology spectrum · DOI: 10.1128/spectrum.01643 26 · PMID: 42603138 https://pubmed.ncbi.nlm.nih.gov/42603138/ Abstract UNLABELLED: Timely diagnosis of tuberculosis (TB) and drug resistance is crucial for effective disease control. Multiplex open molecular platforms capable of simultaneously detecting Mycobacterium tuberculosis complex (MTBc), non tuberculous mycobacteria (NTM), and resistance to first line anti TB drugs could significantly streamline diagnostic pathways. We evaluated two multiplex real time PCR assays (MTBc/NTM R Gene and MTB RIF/INH R Gene) using 300 well characterized samples (150 MTBc positive and 150 MTBc negative). Composite reference standards, including culture, MPT64 antigen testing, and line probe assays and phenotypic drug susceptibility testing. The MTBc detection demonstrated 100% sensitivity and specificity (150/150). NTM detection showed 70.0% sensitivity (35/50) and 100% specificity, indicating limitations in NTM species coverage. Rifampicin resistance was detected with 96.0% sensitivity (48/50) and 100% specificity. Isoniazid resistance detection achieved 100% sensitivity and specificity (50/50). High agreement (κ = 0.76 1.00) with established reference standards was observed. This analytical validation confirms that multiplex open real time PCR assays accurately and simultaneously detect MTBc, NTM, and rifampicin and isoniazid resistance using culture isolates. Clinical validation is warranted. While these platforms offer potential advantages in flexibility and expanded resistance profiling, further studies on clinical diagnostic accuracy, cost effectiveness, and operational feasibility are essential to determine their practical utility and programmatic impact in high burden settings. IMPORTANCE: Despite major advances in molecular diagnostics, critical gaps persist in tuberculosis (TB) detection, particularly the limited identification of isoniazid resistance and inadequate differentiation from non tuberculous mycobacteria. In this study, a multiplex open real time PCR assay demonstrated high analytical accuracy for simultaneous detection of Mycobacterium tuberculosis complex, rifampicin and isoniazid resistance, with strong agreement to reference standards. By integrating multi target detection within a single workflow, this approach addresses key limitations of current diagnostic strategies that rely on rifampicin as a surrogate for multidrug resistance. The open platform design further offers flexibility, scalability, and reduced dependence on proprietary systems, which are critical considerations in high burden settings. These findings highlight the potential of next generation molecular diagnostics to improve early resistance detection, refine treatment decisions, and strengthen TB control efforts globally. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0216",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of surgical case reports",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0216_multiple_surgical_excision_for_bilateral_multiple_mediastina.md",
+   "snippet": "Title Multiple surgical excision for bilateral multiple mediastinal liposarcoma: a case report Authors Jiang Suxin, Wang Zhihao, Zhao Jienong, Han Yong, Shi Hongcan Journal / DOI Journal of surgical case reports · DOI: 10.1093/jscr/rjag708 ",
+   "text": "Pathology scraped pubmed PubMed / Journal of surgical case reports Title Multiple surgical excision for bilateral multiple mediastinal liposarcoma: a case report Authors Jiang Suxin, Wang Zhihao, Zhao Jienong, Han Yong, Shi Hongcan Journal / DOI Journal of surgical case reports · DOI: 10.1093/jscr/rjag708 · PMID: 42603064 https://pubmed.ncbi.nlm.nih.gov/42603064/ Abstract Multiple giant mediastinal liposarcomas are rare and associated with a high propensity for recurrence. Surgical management is extremely challenging and carries substantial risks. Here we report the case of a 40 year old male patient who underwent multiple surgical resections for mediastinal liposarcoma. In April 2016, the patient presented with an intrathoracic mass and underwent right thoracotomy at our institution; postoperative histopathology confirmed a myxoid liposarcoma. Over the following decade, the patient received six cycles of chemotherapy and two cycles of anlotinib. In 2025, due to progressive dyspnea and chest tightness, chest computed tomography revealed multiple giant masses in the mediastinum and pleural cavity. In December 2025, the patient underwent resection of mediastinal tumors via a left seventh intercostal thoracotomy, followed by another resection via a right seventh intercostal thoracotomy in April 2026. Postoperative recovery was uneventful. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0215",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of investigative dermatology",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0215_regulatory_t_cells_from_foxp3_to_tolerance_inducing_therapie.md",
+   "snippet": "Title Regulatory T cells: From Foxp3 to tolerance inducing therapies Authors Iriki Hisato, Mukai Miho, Takahashi Hayato, Amagai Masayuki Journal / DOI The Journal of investigative dermatology · DOI: 10.1016/j.jid.2026.05.009 · PMID: 4260316",
+   "text": "Hematology-Oncology scraped pubmed PubMed / The Journal of investigative dermatology Title Regulatory T cells: From Foxp3 to tolerance inducing therapies Authors Iriki Hisato, Mukai Miho, Takahashi Hayato, Amagai Masayuki Journal / DOI The Journal of investigative dermatology · DOI: 10.1016/j.jid.2026.05.009 · PMID: 42603165 https://pubmed.ncbi.nlm.nih.gov/42603165/ Abstract The immune system balances self tolerance and threat defense; regulatory T cells (Tregs) enforce this equilibrium. This review follows their journey from the disputed suppressor T cell era to the Foxp3 defined lineage and then integrates how Tregs recalibrate antigen presenting cells and cytokine networks to sustain immune quiescence and restore homeostasis. These insights shape emerging therapies that expand endogenous Tregs in vivo with low dose IL 2 or employ ex vivo engineered cells to re establish immune balance. We conclude by outlining key challenges stability, tissue targeting, and scalability for durable tolerance and therapeutic applications of recently clarified Treg mediated tissue specific homeostasis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0214",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta clinica Belgica",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0214_discordance_between_symptomatic_echocardiographic_and_renal_.md",
+   "snippet": "Title Discordance between symptomatic, echocardiographic and renal trajectories after SGLT2 inhibitor initiation in heart failure: a landmark analysis of the prospective CaRD registry Authors Jurin Ivana, Hanžek Antonio, Lišnjić Petar, Jakl",
+   "text": "Nephrology scraped pubmed PubMed / Acta clinica Belgica Title Discordance between symptomatic, echocardiographic and renal trajectories after SGLT2 inhibitor initiation in heart failure: a landmark analysis of the prospective CaRD registry Authors Jurin Ivana, Hanžek Antonio, Lišnjić Petar, Jakljević Tomislav Journal / DOI Acta clinica Belgica · DOI: 10.1080/17843286.2026.2719667 · PMID: 42603121 https://pubmed.ncbi.nlm.nih.gov/42603121/ Abstract OBJECTIVES: To quantify the concordance and stability of symptomatic, echocardiographic and renal trajectories after sodium glucose cotransporter 2 inhibitor (SGLT2i) initiation and examine their association with subsequent events. METHODS: This day 210 landmark analysis included 618 adults with heart failure, baseline left ventricular ejection fraction (LVEF) <50%, and paired New York Heart Association (NYHA) class, LVEF and estimated glomerular filtration rate (eGFR) measurements on days 150 210. Domains were cross classified rather than treated as equivalent causal components. Repeat classification was assessed by day 365. Death or heart failure hospitalisation on days 211 365 was analysed with multivariable Cox regression; fixed horizon Firth logistic regression and continuous, threshold, weighting and co intervention analyses tested robustness. RESULTS: Discordant trajectories occurred in 368/618 patients (59.5%). Among 209 with repeat assessment, 181 (86.6%) retained the same classification (κ=0.74). Outcome status was complete in 576 patients, with 33 events. Non concordance was associated with the time to event outcome (adjusted hazard ratio 4.27, 95% confidence interval 1.61 11.32; p = 0.004); the fixed horizon Firth estimate was concordant (odds ratio 4.27, 95% confidence interval 1.64 11.13; p = 0.003). NYHA improvement contributed most of the prognostic signal. Adding non concordance to a conventional baseline model increased the area under the curve from 0.752 to 0.790, but the bootstrap interval for the increment included zero. CONCLUSION: Trajectories were frequently discordant and usually stable to day 365. Their association with events was non causal, driven predominantly by symptomatic change and of uncertain incremental predictive value. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0213",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / One health (Amsterdam, Netherlands)",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0213_cross_species_genomic_analysis_of_salmonella_enterica_subspe.md",
+   "snippet": "Title Cross species genomic analysis of Salmonella enterica subspecies enterica serovar Dublin isolated from dairy cattle, dogs, and humans in Florida from 2019 to 2024 Authors DeZoysa Asanka R, Edison Lekshmi K, Denagamage Thomas, Pellisse",
+   "text": "Infectious Disease scraped pubmed PubMed / One health (Amsterdam, Netherlands) Title Cross species genomic analysis of Salmonella enterica subspecies enterica serovar Dublin isolated from dairy cattle, dogs, and humans in Florida from 2019 to 2024 Authors DeZoysa Asanka R, Edison Lekshmi K, Denagamage Thomas, Pellissery Abraham J, Bommineni Yugendar R, Satharasinghe Dilan, Coiner Destini, Simon David, et al. Journal / DOI One health (Amsterdam, Netherlands) · DOI: 10.1016/j.onehlt.2026.101536 · PMID: 42603017 https://pubmed.ncbi.nlm.nih.gov/42603017/ Abstract Salmonella enterica serovar Dublin (S. Dublin) is a cattle adapted pathogen that can cause severe systemic infections in humans and animals. Understanding genomic relatedness across host species is essential for assessing the zoonotic potential and dissemination of antimicrobial resistance (AMR). In this study, 78 clinical S. Dublin strains, isolated in Florida between 2019 and 2024, were subjected to comparative genomic analysis. These included 19 animal derived isolates (17 from dairy cattle and two from dogs) and 59 human derived isolates. AMR gene profiling revealed widespread multidrug resistance, with genes conferring resistance to aminoglycoside (aac(6') Iaa, aph(6) Id), tetracycline (tetA), and sulfonamide (sul2) detected in all isolates. Beta lactamase genes, particularly bla TEM variants, were detected more frequently in human and dog derived isolates than in cattle derived isolates. In contrast, rare bla CMY variants (bla CMY 61, bla CMY 130, bla CMY 153, and bla CMY 2b) were detected in only one cattle isolate. Plasmid analysis revealed that IncX1, IncFII(S), and IncC replicons were common among the isolates, highlighting their potential role in facilitating AMR dissemination via horizontal gene transfer. Virulence gene profiling revealed conserved Salmonella pathogenicity islands, type III and type VI secretion systems, and the spv operon across S. Dublin isolates from all host species. Multilocus sequence typing (MLST) confirmed that all isolates belonged to sequence type (ST) 10, and most harbored the Gifsy 2 prophage. The SNP based phylogeny revealed distinct host associated clades as well as mixed host clusters, demonstrating close genomic relatedness among isolates from different host species and suggesting possible cross species transmission, exposure to shared sources, or circulation of closely related lineages. These findings illustrate the interconnectedness of animal and human S. Dublin infections, emphasize the importance of responsible antimicrobial use, and highlight the value of genomic surveillance for detecting and controlling S. Dublin infections. Collectively, this study provides a genomic framework for assessing cross species relatedness, virulence characteristics, and AMR patterns of S. Dublin. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0212",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0212_percutaneous_tricuspid_valve_in_valve_implantation_with_melo.md",
+   "snippet": "Title Percutaneous Tricuspid Valve in Valve Implantation With Melon Seeding During Deployment Authors Sellers Alexander M, Ravat Shreyas, Bennetts Jayme, Roberts Thomson Ross, Khan Ehsan, Engela Jean, Langran Jayne, Sinhal Ajay R Journal / ",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Case reports Title Percutaneous Tricuspid Valve in Valve Implantation With Melon Seeding During Deployment Authors Sellers Alexander M, Ravat Shreyas, Bennetts Jayme, Roberts Thomson Ross, Khan Ehsan, Engela Jean, Langran Jayne, Sinhal Ajay R Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.109732 · PMID: 42603160 https://pubmed.ncbi.nlm.nih.gov/42603160/ Abstract BACKGROUND: Bioprosthetic tricuspid valves are prone to structural deterioration over time. In patients with multiple prior sternotomies and functioning left sided prostheses, repeat surgery may carry prohibitive risk, prompting consideration of transcatheter alternatives. CASE SUMMARY: A 42 year old patient with rheumatic heart disease and a history of 3 prior sternotomies for mitral, aortic, and tricuspid valve replacement presented with recurrent admissions for diuretic resistant right heart failure complicated by congestive hepatopathy (Child Pugh B cirrhosis). Imaging demonstrated severe stenosis of a bioprosthetic tricuspid valve, with preserved left sided valve function. The patient underwent successful percutaneous tricuspid valve in valve implantation, resulting in marked symptomatic improvement and significant reduction in transvalvular gradients on echocardiography. DISCUSSION: Current guidelines support reintervention for symptomatic bioprosthetic valve dysfunction. In high surgical risk patients, percutaneous tricuspid valve in valve implantation represents an effective and less invasive alternative to repeat surgery. TAKE HOME MESSAGE: Percutaneous tricuspid valve in valve replacement is a viable therapeutic option for failed tricuspid bioprostheses in carefully selected high risk patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "anatomy-daily-2026-08-15",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-15",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-15",
+   "path": "content/anatomy/daily/2026-08-15.md",
+   "snippet": "오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-15 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0211",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0211_ten_minutes_of_intraoperative_nerve_stimulation_may_improve_.md",
+   "snippet": "Title Ten Minutes of Intraoperative Nerve Stimulation May Improve Outcomes Following End to End Nerve Transfer Authors Rieker Madeline, Choo Stephanie, Snipes Katherine, Devarasetty V V N Manohar, Kuechly Henry, Covell Nicole, Arendale Rich",
+   "text": "Surgery scraped pubmed PubMed / The Journal of hand surgery Title Ten Minutes of Intraoperative Nerve Stimulation May Improve Outcomes Following End to End Nerve Transfer Authors Rieker Madeline, Choo Stephanie, Snipes Katherine, Devarasetty V V N Manohar, Kuechly Henry, Covell Nicole, Arendale Richard, Gachigi Kennedy, et al. Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.07.005 · PMID: 42599251 https://pubmed.ncbi.nlm.nih.gov/42599251/ Abstract PURPOSE: Brief intraoperative electrical nerve stimulation (ES) has shown potential to improve outcomes of peripheral nerve surgery, including nerve repair, grafting, and transfer. This study compares clinical outcomes of nerve transfers receiving ES to those that did not. METHODS: Retrospective cohort study was performed of adults undergoing radial to axillary or median/ulnar to musculocutaneous nerve transfers at a single center between 2015 and 2025. Patients were divided into 2 groups: those who received 10 minutes of continuous ES (2 mA and 100 μs) intraoperatively (ES group) and those who did not (No ES group). Primary outcome was postoperative Medical Research Council motor grade. Chi square tests were used to test associations between categorical variables and t tests for continuous measures. RESULTS: Sixty surgeries (n = 44, no ES; n = 16, ES) in 46 patients were analyzed. Groups were similar in age (median 40 years, P = .622) and time to surgery (median 6 months, P = .261). Surgical characteristics were similar, including transfer type (P = .6884). All patients (n = 60) received end to end constructs. Among ES patients, 88% reached M4 M5 recovery versus 61% in nonstimulated patients (P = .136). Median follow up was 26 months for no ES and 15 months for ES (P = .029). Controlling for age and time to surgery, stimulated patients were more likely to reach at least M4 (odds ratio 6.0, 95% confidence interval 1.03 35.34, P = .046). CONCLUSIONS: Ten minutes of intraoperative ES may increase rates of excellent (M4 M5) motor recovery following end to end nerve transfer. Brief intraoperative ES is a readily implementable technique, requiring only 10 minutes of operative time, and represents a promising adjunct that may enhance outcomes for nerve transfers in brachial plexus reconstruction. Our practice has since adopted routine use of ES for nerve transfer surgeries. TYPE OF STUDY/LEVEL OF EVIDENCE: III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0210",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC ophthalmology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0210_defocus_incorporated_multiple_segment_spectacle_lenses_versu.md",
+   "snippet": "Title Defocus incorporated multiple segment spectacle lenses versus orthokeratology lenses for myopia control: a non inferiority randomised clinical trial Authors Andersen Lou Ann Christensen, Mejldal Anna, Sivakumar Saranga, Jakobsen Trine",
+   "text": "Pediatrics scraped pubmed PubMed / BMC ophthalmology Title Defocus incorporated multiple segment spectacle lenses versus orthokeratology lenses for myopia control: a non inferiority randomised clinical trial Authors Andersen Lou Ann Christensen, Mejldal Anna, Sivakumar Saranga, Jakobsen Trine Møldrup, Møller Flemming Journal / DOI BMC ophthalmology · DOI: 10.1186/s12886 026 05144 6 · PMID: 42595991 https://pubmed.ncbi.nlm.nih.gov/42595991/ Abstract BACKGROUND: To determine whether the Defocus Incorporated Multiple Segments (DIMS) spectacle lens is non inferior to Orthokeratology lenses (OKL) in slowing the progression of myopia in children. METHODS: A parallel group, non inferiority randomised clinical trial at the University Hospital of Southern Denmark compared the myopia control treatment efficacy of DIMS spectacle lenses with OKL in myopic children aged 6 12 years. Our primary outcome was axial length growth after 18 months of therapy, adjusted for change in central corneal thickness in the OKL group. The participants were allocated to the treatments using centralised computer generated randomisation. The interpreters were blinded. Non inferiority was concluded if the upper bound of the 95% confidence interval (95% CI) for the estimated treatment difference (DIMS OKL) after 18 months was equal to or below 0.13 mm. In case of non inferiority, superiority was tested in the same population. Superiority was declared if the upper 95%Cl bound was below zero. Our key secondary outcome was overall eye length growth after 18 months of therapy and was assessed for superiority. RESULTS: 90 participants were randomised to DIMS spectacle lenses (n = 45) and OKL (n = 45). For the primary outcome, 45 participants were analysed in both the DIMS spectacle lens and OKL groups using an intention to treat approach. A per protocol approach was used for sensitivity analysis. The between group difference (DIMS OKL) in axial elongation was 0.05 mm (95% CI 0.13; 0.04) in a mixed model adjusted for covariates: age at baseline, baseline cycloplegic spherical equivalent refractive error, baseline axial length, and number of myopic parents, which is below the non inferiority margin and above zero. The between group difference (DIMS OKL) in overall eye length elongation was 0.04 mm (95% CI 0.12; 0.04). One adverse event was observed in the OKL group. CONCLUSIONS: The DIMS spectacle lens was noninferior to OKL for slowing axial elongation after 18 months of therapy in myopic children. The DIMS spectacle lens was not superior to OKL. There was no statistically significant difference in overall eye length growth between the DIMS spectacle lens and OKL after 18 months of therapy in myopic children. TRIAL REGISTRATION: NCT05134935, 26 November 2021. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0209",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical microbiology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0209_multicenter_clinical_evaluation_of_a_fully_automated_multipl.md",
+   "snippet": "Title Multicenter clinical evaluation of a fully automated multiplex HSV 1, HSV 2, and VZV real time PCR assay Authors Yao Joseph, McElvania Erin, Al Ghoul Mohammad, Patel Parul, Kular Rupinder, Wuitschick Jeffrey, Huang Shihai, Birdsall Jo",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of clinical microbiology Title Multicenter clinical evaluation of a fully automated multiplex HSV 1, HSV 2, and VZV real time PCR assay Authors Yao Joseph, McElvania Erin, Al Ghoul Mohammad, Patel Parul, Kular Rupinder, Wuitschick Jeffrey, Huang Shihai, Birdsall John, et al. Journal / DOI Journal of clinical microbiology · DOI: 10.1128/jcm.00535 26 · PMID: 42599190 https://pubmed.ncbi.nlm.nih.gov/42599190/ Abstract Herpes simplex virus type 1 (HSV 1), herpes simplex virus type 2 (HSV 2), and varicella zoster virus (VZV) are associated with a range of clinical manifestations depending on the anatomical site of infection. HSV and VZV lesions often exhibit similar phenotypical characteristics, making clinical differentiation challenging. Detection and differentiation of HSV 1, HSV 2, and VZV are essential for diagnosis and treatment management. An automated multiplex real time PCR assay, Alinity m HSV 1 & 2/VZV assay, was developed to detect and differentiate HSV 1, HSV 2, and VZV. The assay was validated for use with cutaneous and mucocutaneous lesion swab specimens collected in commercial viral transport media from symptomatic patients. The assay demonstrated a limit of detection of 5.90 TCID50/mL for HSV 1, 2.07 TCID50/mL for HSV 2, and 0.055 TCID50/mL for VZV. Testing with clinical swab specimens demonstrated greater than 95% clinical sensitivity and specificity for all three analytes. The Alinity m HSV 1 & 2/VZV assay provides a reliable and accurate method for detection and differentiation of HSV 1, HSV 2, and VZV in lesion swab specimens for improved diagnostic accuracy and patient management.IMPORTANCEHerpes simplex virus type 1 (HSV 1), herpes simplex virus type 2 (HSV 2), and varicella zoster virus (VZV) can cause skin and mucocutaneous lesions that often appear clinically similar, making accurate diagnosis difficult without laboratory testing. Rapid and reliable identification of the causative virus is important because patient counseling, treatment decisions, and infection management differ among these infections. In this multicenter study, a fully automated molecular assay was evaluated that simultaneously detects and differentiates HSV 1, HSV 2, and VZV from a single lesion swab specimen. Testing of more than 1,200 clinical specimens demonstrated high sensitivity and specificity for all three viruses. The assay also offers a streamlined workflow with minimal hands on time and rapid turnaround. These findings support the use of this multiplex assay as a practical diagnostic tool that can improve laboratory efficiency and provide clinicians with timely, accurate results to guide patient care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0208",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of surgical pathology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0208_histopathology_and_clinical_features_of_spark_nevi_in_a_mult.md",
+   "snippet": "Title Histopathology and Clinical Features of SPARK Nevi in a Multi Institutional Cohort Authors El Rayes Dina, AlMahdy Albatool, Cazzato Gerardo, Jour George, Alomari Ahmed, Plaza Jose A, Cheng Tiffany W, Moshiri Ata S, et al. Journal / DO",
+   "text": "Pathology scraped pubmed PubMed / International journal of surgical pathology Title Histopathology and Clinical Features of SPARK Nevi in a Multi Institutional Cohort Authors El Rayes Dina, AlMahdy Albatool, Cazzato Gerardo, Jour George, Alomari Ahmed, Plaza Jose A, Cheng Tiffany W, Moshiri Ata S, et al. Journal / DOI International journal of surgical pathology · DOI: 10.1177/10668969261466611 · PMID: 42599278 https://pubmed.ncbi.nlm.nih.gov/42599278/ Abstract Background/ObjectivesSpitz nevus with architectural features of a Clark/dysplastic nevus (\"SPARK nevus\") is an uncommon melanocytic lesion closely mimicking dysplastic nevus and melanoma, creating diagnostic challenges. This study aimed to delineate the clinical, histopathologic, and immunohistochemical features of SPARK pattern lesions and to clarify their biologic behavior.MethodsA multi institutional retrospective study across six academic centers identified 74 SPARK nevi. Candidate lesions were re reviewed at each institution by board certified dermatopathologists using predefined inclusion criteria requiring concurrent Spitzoid cytology and Clark type architectural features. The demographic, clinical, histologic, immunohistochemical, and follow up data were collected and reviewed.ResultsThe cohort showed a predominance of female patients (76%) with a mean age of 32.4 years (range 11 68), and lesions were small (mean diameter 5.8 mm, range 2 20 mm), most often on the proximal extremities and trunk. Histologically, lesions were mainly compound (70%) with Spitzoid cytology in Clark type architecture; cytomorphology was mixed epithelioid spindled (47%) or epithelioid (41%), Kamino bodies were infrequent (9%), inflammation was usually non brisk (62%), and cytologic atypia often reached moderate to severe grades. Immunohistochemistry (performed in 55%) showed PRAME negativity, retained p16, and low MKI67 indices, and follow up (available in 93%; median 18 months) revealed one local recurrence, two metachronous SPARK nevi, and no SPARK related deaths.ConclusionsThis largest series defines the clinicopathologic and immunohistochemical spectrum of SPARK pattern lesions and demonstrates overall benign behavior despite morphologic overlap with dysplastic nevi and melanoma. SPARK is most appropriately interpreted as a morphologic pattern encompassing lesions arising from multiple melanocytic pathways. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0207",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0207_assessment_of_drug_utilization_patterns_and_associated_survi.md",
+   "snippet": "Title Assessment of drug utilization patterns and associated survival outcomes in recurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC): Insights from a resource constrained set up Authors Patel Vaishnavi, Khadela Avinas",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners Title Assessment of drug utilization patterns and associated survival outcomes in recurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC): Insights from a resource constrained set up Authors Patel Vaishnavi, Khadela Avinash, Kothari Rushabh, Shah Vraj B Journal / DOI Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners · DOI: 10.1177/10781552261478232 · PMID: 42599276 https://pubmed.ncbi.nlm.nih.gov/42599276/ Abstract BackgroundRecurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC) has a poor prognosis due to patient rigors, such as malnutrition, uncontrolled comorbidities, age, and performance status. Rapidly evolving treatment paradigms have led to multimodal pharmacotherapy. This study evaluates drug utilization patterns of chemotherapy regimens used in R/M HNSCC patients to optimize evidence based recommendations.MethodsThis prospective observational study recruited histologically confirmed R/M HNSCC patients aged 18 80 years, with Eastern Cooperative Oncology Group performance status 0 2, treated with palliative intent over one year.ResultsThis drug utilization pattern study recruited 112 patients. The most common chemotherapy regimens (31.19%) were oral triple metronomic chemotherapy followed by low dose nivolumab plus oral metronomic chemotherapy (27.5%), paclitaxel and carboplatin with triple metronomic chemotherapy (20.5%), and paclitaxel plus carboplatin (19.7%). The median progression free survival was 9 months (95% CI, 8.5 10.2). Grade 3 adverse events occurred in less than 12% of patients. Full dose immunotherapy based combination regimens contribute significantly (81.91%) to the total cost.ConclusionSignificant incongruity exists between NCCN recommended first line therapies and resource constrained setups. The pragmatic use of cost effective regimens, such as triple metronomic chemotherapy with low dose nivolumab or as monotherapy, improves survival outcomes, thus optimizing patient care in real world settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0206",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of nephrology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0206_risk_factors_for_recurrent_cardiovascular_events_in_ckd_resu.md",
+   "snippet": "Title Risk factors for recurrent cardiovascular events in CKD: results from the KNOW CKD study Authors Kang Eunjeong, Im Dah Woon, Kim Minsang, Kim Yaeni, Yoo Tae Hyun, Kim Soo Wan, Kim Jayoun, Oh Kook Hwan Journal / DOI Journal of nephrolo",
+   "text": "Nephrology scraped pubmed PubMed / Journal of nephrology Title Risk factors for recurrent cardiovascular events in CKD: results from the KNOW CKD study Authors Kang Eunjeong, Im Dah Woon, Kim Minsang, Kim Yaeni, Yoo Tae Hyun, Kim Soo Wan, Kim Jayoun, Oh Kook Hwan Journal / DOI Journal of nephrology · DOI: 10.1093/joneph/aajag150 · PMID: 42599094 https://pubmed.ncbi.nlm.nih.gov/42599094/ Abstract BACKGROUND: Chronic kidney disease (CKD) markedly increases cardiovascular (CV) risk, and some patients experience recurrent CV events over time. Analyses restricted to time to first event may therefore underestimate the total CV burden. We evaluated determinants of both first and recurrent non fatal CV events in CKD. METHODS: We analyzed 2099 non dialysis participants with CKD enrolled in the prospective KNOW CKD cohort. CV events were adjudicated and included myocardial infarction, stroke, heart failure, coronary or peripheral revascularization, and clinically significant arrhythmias. Predictors of the first event were assessed using Cox proportional hazards models. Recurrent event risk was evaluated using Andersen Gill, Prentice Williams Peterson total time and gap time models, and shared frailty models, complemented by mean cumulative function analyses. RESULTS: Over a median follow up of 8.29 years, 203 participants (9.7%) experienced at least one non fatal CV event (158 had one event, 39 had two, and 6 had three). Participants with baseline CV disease or diabetes exhibited substantially higher cumulative event burdens. Older age, diabetes, prior CV disease, higher C reactive protein (CRP), albuminuria, and lower body mass index (BMI) were consistently associated with recurrent events across models; CRP and albuminuria showed relatively stronger associations with recurrence than with the first event. CONCLUSION: In CKD, recurrent CV risk is driven not only by traditional factors, particularly diabetes, but also by markers of vascular injury and inflammation. Strategies targeting both metabolic and inflammatory pathways may be critical to reducing recurrent CV burden. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0205",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Microbial genomics",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0205_investigation_of_an_outbreak_of_shigella_sonnei_bla_ctx_m_3_.md",
+   "snippet": "Title Investigation of an outbreak of Shigella sonnei bla CTX M 3 among men in England, 2025 26, using long and short read whole genome sequencing Authors Turnbull Jake D, Greig David R, Barker Clare R, Nair Satheesh, Lock Katherine, Swift ",
+   "text": "Infectious Disease scraped pubmed PubMed / Microbial genomics Title Investigation of an outbreak of Shigella sonnei bla CTX M 3 among men in England, 2025 26, using long and short read whole genome sequencing Authors Turnbull Jake D, Greig David R, Barker Clare R, Nair Satheesh, Lock Katherine, Swift Craig, Chattaway Marie A, Baker Kate S, et al. Journal / DOI Microbial genomics · DOI: 10.1099/mgen.0.001817 · PMID: 42599284 https://pubmed.ncbi.nlm.nih.gov/42599284/ Abstract Background. Recent outbreaks of gastrointestinal symptoms among gay, bisexual and other men who have sex with men (GBMSM) have been caused by multidrug resistant (MDR) Shigella sonnei carrying bla CTX M 27 or bla CTX M 15. To date, the bla CTX M 3 variant has not been associated with sexually transmitted shigellosis in the UK.Methods. Routine surveillance identified an outbreak S. sonnei among men in England in June 2025. Short read sequencing data were analysed to identify antimicrobial resistance (AMR) determinants and to investigate the phylogenetic context of the outbreak. Long read Oxford Nanopore Technology sequencing data were analysed to characterize the AMR encoding plasmid content.Results. Of the 83 cases linked to the outbreak cluster, 91.5% were adult males and none reported recent travel outside Europe; these outbreak characteristics (specifically adult male, no travel) are consistent with transmission among European GBMSM networks (Mitchell et al. 2019, Mitchell et al. 2021). Phylogenetic analysis placed the outbreak cluster within a wider clade historically associated with travel to the Middle East. The outbreak isolates were MDR; 90.4% (n=75/83) had bla CTX M 3 located on an IncI1B/O plasmid. This is the first report of the IncI1B/O plasmid type and bla CTX M 3 in GBMSM associated MDR S. sonnei in England.Conclusions. Acquisition of the IncI1B/O plasmid encoding bla CTX M 3 represents an independent evolutionary event, separate from previously described GBMSM epidemics driven by acquisition of IncFII plasmids encoding bla CTX M 27 or bla CTX M 15. This study provides further evidence of the parallel emergence of bla CTX M variants conferring resistance to the third generation cephalosporins. Whole genome sequencing based surveillance and routine susceptibility testing of MDR S. sonnei are essential, as this pathogen continues to diversify and spread. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0204",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Clinical electrophysiology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0204_safety_of_dofetilide_initiation_following_a_shortened_amioda.md",
+   "snippet": "Title Safety of Dofetilide Initiation Following a Shortened Amiodarone Washout Period Authors Burright Isaac T, Del Carpio Munoz Freddy, Deshmukh Abhishek J, Asirvatham Samuel J, Kapa Suraj, Siontis Konstantinos C, Noseworthy Peter A, Killu",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Clinical electrophysiology Title Safety of Dofetilide Initiation Following a Shortened Amiodarone Washout Period Authors Burright Isaac T, Del Carpio Munoz Freddy, Deshmukh Abhishek J, Asirvatham Samuel J, Kapa Suraj, Siontis Konstantinos C, Noseworthy Peter A, Killu Ammar M, et al. Journal / DOI JACC. Clinical electrophysiology · DOI: 10.1016/j.jacep.2026.06.039 · PMID: 42599268 https://pubmed.ncbi.nlm.nih.gov/42599268/ Abstract BACKGROUND: Dofetilide, a class III antiarrhythmic for atrial fibrillation, frequently requires dose reduction or discontinuation for QT interval prolongation or ventricular arrhythmias. Food and Drug Administration guidelines mandate a 3 month amiodarone washout or serum amiodarone <0.3 mcg/mL before dofetilide initiation, potentially prolonging therapy interruption. OBJECTIVES: This study aimed to evaluate the safety of a shortened amiodarone to dofetilide transition by assessing dose reduction, drug discontinuation, and arrhythmic events. METHODS: Mayo Clinic patients transitioned from amiodarone to dofetilide in <90 days with ≥12 weeks of amiodarone therapy and serum concentration ≥0.3 mcg/mL if measured were identified. The primary end point was ventricular arrhythmias requiring dofetilide discontinuation. RESULTS: The final cohort included 66 patients (mean age 65 ± 14 years; 74.2% of the patients were men). Atrial fibrillation classification was 33.3% paroxysmal, 54.5% persistent, and 12.1% long standing persistent. A total of 22.7% had implantable cardioverter defibrillators. The median transition period was 43 days; 16 patients (24%) transitioned within 30 days (5 [8%] within 14 days), 20 (30%) between 31 and 45 days, 16 (24%) between 46 and 60 days, and 14 (21%) between 61 and 90 days. Dose reduction occurred in 24.2% and discontinuation in 10.6%, with no difference between ≤30 and 30 day transitions (dose reduction: 12.5% vs 28.0%, P = 0.319; discontinuation: 6.3% vs 12.0%, P = 1). No torsades de pointes (TdP) occurred during inpatient dofetilide initiation/loading. One TdP episode (339 days after dofetilide initiation, 419 days postamiodarone) was associated with intercurrent illness and additional QT prolonging medication exposure. CONCLUSIONS: In this cohort, dofetilide initiation within 90 days of amiodarone discontinuation was not associated with TdP during inpatient loading, supporting the feasibility of monitored, expedited transitions in select patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0577",
    "type": "kmle",
@@ -211,6 +854,19 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0554.md",
    "snippet": "58세 남자가 길에서 갑자기 쓰러져 응급실로 옮겨졌다. 도착 시 반응이 없고 큰 동맥에서 맥박이 만져지지 않으며 정상 호흡이 없다. 곧바로 가슴압박을 시작하고 감시장치를 붙였다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 리듬에서 가장 먼저 시행할 처치는? A. 즉시 비동기 전기충격을 시행한다 B. 정맥 아미오다론을 먼저 투여한다 C. 동기화 심장율동전환을 시행한다 D. 정맥 아트로핀을 투여한다 E. 경피 인공심장박동조율",
    "text": "Cardiology Ventricular Fibrillation ventricular-fibrillation cardiac-arrest defibrillation acls shockable-rhythm KMLE 2026 / Claude Routine 58세 남자가 길에서 갑자기 쓰러져 응급실로 옮겨졌다. 도착 시 반응이 없고 큰 동맥에서 맥박이 만져지지 않으며 정상 호흡이 없다. 곧바로 가슴압박을 시작하고 감시장치를 붙였다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 리듬에서 가장 먼저 시행할 처치는? A. 즉시 비동기 전기충격을 시행한다 B. 정맥 아미오다론을 먼저 투여한다 C. 동기화 심장율동전환을 시행한다 D. 정맥 아트로핀을 투여한다 E. 경피 인공심장박동조율을 시작한다 무맥성 심실세동은 제세동 가능(shockable) 리듬으로, 가슴압박과 함께 지체 없는 비동기 전기충격(제세동)이 생존을 가르는 가장 중요한 처치다. 약물은 제세동에 보조적일 뿐 첫 처치가 아니다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-14",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-14",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/daily/2026-08-14.md",
+   "snippet": "오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-14 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-2026-0032",

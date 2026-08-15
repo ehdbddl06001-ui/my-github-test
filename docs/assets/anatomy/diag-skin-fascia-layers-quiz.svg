@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 660" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="피부벗기기 절개선·층 구조 태깅 연습판 — 번호핀만 남긴 퀴즈판">
+  <!-- 퀴즈판. 번호 1–10은 문항 anatomy-2026-0038, 11–19는 anatomy-2026-0039 의
+       정답 순서와 1:1 (임의 변경 금지). 라벨판: diag-skin-fascia-layers-labeled.svg -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+    .pin{fill:#2a2416;stroke:#eab308;stroke-width:1.6}
+    .pn{fill:#eab308;font-size:11.5;font-weight:700;text-anchor:middle}
+  </style>
+  <rect width="880" height="660" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">태깅 연습 — 절개선과 피부·근막 층
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">quiz sheet</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">1–10: 번호가 가리키는 절개선·층·구조의 이름을 한·영으로 답하시오 · 11–19: 허리천자 바늘이 지나는 순서대로 층 이름을 답하시오</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">정답 확인은 라벨판(diag-skin-fascia-layers-labeled.svg)과 문항 카드에서.</text>
+
+  <!-- ================= 패널 A ================= -->
+  <rect x="18" y="82" width="392" height="560" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="34" y="106" fill="#9dc7f0" font-size="14" class="kr">A. 절개선 <tspan fill="#93a4b7" font-size="10.5" font-weight="400">뒤에서 본 모습</tspan></text>
+
+  <g transform="translate(40,118)">
+    <circle cx="118" cy="24" r="21" fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <path d="M 104,44 L 132,44 L 132,56 L 104,56 Z" fill="#162436" stroke="#3b506a" stroke-width="1.4"/>
+    <path d="M 104,56 C 78,62 58,72 50,84 L 44,120 L 56,124 L 62,96
+             C 66,140 66,176 70,206 L 166,206 C 170,176 170,140 174,96
+             L 180,124 L 192,120 L 186,84 C 178,72 158,62 132,56 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.7"/>
+    <path d="M 70,206 L 166,206 C 170,232 168,258 162,272 L 74,272 C 68,258 66,232 70,206 Z"
+          fill="#18293d" stroke="#3b506a" stroke-width="1.6"/>
+    <path d="M 74,272 L 114,272 L 112,352 L 110,410 L 108,470 L 84,470 L 84,410 L 80,352 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <path d="M 122,272 L 162,272 L 156,352 L 152,410 L 152,470 L 128,470 L 126,410 L 124,352 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <line x1="118" y1="58" x2="118" y2="206" stroke="#2b3a4d" stroke-width="1.4"/>
+
+    <line x1="118" y1="60" x2="118" y2="204" stroke="#eab308" stroke-width="2.2" stroke-dasharray="7 4"/>
+    <line x1="118" y1="62" x2="60" y2="80" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="118" y1="62" x2="176" y2="80" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="70" y1="206" x2="166" y2="206" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="74" y1="272" x2="162" y2="272" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="98" y1="272" x2="96" y2="470" stroke="#eab308" stroke-width="2.2" stroke-dasharray="7 4"/>
+    <line x1="140" y1="272" x2="140" y2="470" stroke="#eab308" stroke-width="2.2" stroke-dasharray="7 4"/>
+    <line x1="80" y1="352" x2="112" y2="352" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="126" y1="352" x2="156" y2="352" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="84" y1="462" x2="108" y2="462" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="128" y1="462" x2="152" y2="462" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+
+    <!-- 번호핀 -->
+    <line x1="118" y1="130" x2="216" y2="118" stroke="#4a5f78" stroke-width="0.9"/>
+    <circle cx="228" cy="116" r="12" class="pin"/><text x="228" y="120" class="pn">1</text>
+
+    <line x1="166" y1="206" x2="216" y2="182" stroke="#4a5f78" stroke-width="0.9"/>
+    <circle cx="228" cy="180" r="12" class="pin"/><text x="228" y="184" class="pn">2</text>
+
+    <line x1="162" y1="272" x2="216" y2="248" stroke="#4a5f78" stroke-width="0.9"/>
+    <circle cx="228" cy="246" r="12" class="pin"/><text x="228" y="250" class="pn">3</text>
+  </g>
+
+  <rect x="34" y="596" width="360" height="34" rx="5" fill="#1a2f47" stroke="#4d7fb0"/>
+  <text x="44" y="611" fill="#9cc3ff" font-size="10" class="kr">1–3은 절개선의 이름(기준이 되는 뼈 지표까지)을 답한다</text>
+  <text x="44" y="624" fill="#6f8299" font-size="9">피부판을 어느 방향으로 젖히는지도 함께 말해 보자</text>
+
+  <!-- ================= 패널 B ================= -->
+  <rect x="424" y="82" width="438" height="316" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="440" y="106" fill="#9dc7f0" font-size="14" class="kr">B. 층 단면 <tspan fill="#93a4b7" font-size="10.5" font-weight="400">겉 → 속</tspan></text>
+
+  <rect x="448" y="130" width="196" height="12" fill="#cbb89a" stroke="#8a7a63"/>
+  <rect x="448" y="142" width="196" height="26" fill="#a98f72" stroke="#8a7a63"/>
+  <rect x="448" y="168" width="196" height="92" fill="#f2d98b" stroke="#c9a94f"/>
+  <rect x="448" y="260" width="196" height="18" fill="#8fa7bd" stroke="#c3d6e6"/>
+  <rect x="448" y="278" width="196" height="60" fill="#a2494a" stroke="#d0716f"/>
+
+  <path d="M 454,196 C 490,184 526,214 562,200 C 592,190 618,208 640,200"
+        fill="none" stroke="#3f6fbf" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 454,232 C 492,244 528,216 564,234 C 594,248 620,228 640,236"
+        fill="none" stroke="#9cc3ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 480,278 L 480,238" stroke="#3f6fbf" stroke-width="2.4"/>
+  <circle cx="480" cy="269" r="4.5" fill="none" stroke="#eab308" stroke-width="1.5"/>
+
+  <!-- 번호핀: 4·5·6·9·10 은 오른쪽 열, 7·8 은 구조 위 -->
+  <line x1="644" y1="136" x2="664" y2="136" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="678" cy="136" r="12" class="pin"/><text x="678" y="140" class="pn">4</text>
+  <line x1="644" y1="155" x2="664" y2="166" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="678" cy="168" r="12" class="pin"/><text x="678" y="172" class="pn">5</text>
+  <line x1="644" y1="214" x2="664" y2="210" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="678" cy="208" r="12" class="pin"/><text x="678" y="212" class="pn">6</text>
+  <line x1="644" y1="269" x2="664" y2="262" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="678" cy="260" r="12" class="pin"/><text x="678" y="264" class="pn">9</text>
+  <line x1="644" y1="308" x2="664" y2="304" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="678" cy="302" r="12" class="pin"/><text x="678" y="306" class="pn">10</text>
+
+  <circle cx="506" cy="190" r="12" class="pin"/><text x="506" y="194" class="pn">7</text>
+  <circle cx="556" cy="243" r="12" class="pin"/><text x="556" y="247" class="pn">8</text>
+
+  <text x="448" y="360" fill="#6f8299" font-size="9.5">7·8은 6 안에 들어 있는 <tspan fill="#e6edf3">두 종류의 구조</tspan>다 — 굵기·색이 다르다.</text>
+  <text x="448" y="380" fill="#6f8299" font-size="9.5">노란 원(○)은 무엇이 무엇을 뚫고 나오는 자리인지 설명해 보자.</text>
+
+  <!-- ================= 패널 C ================= -->
+  <rect x="424" y="410" width="438" height="232" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="440" y="434" fill="#9dc7f0" font-size="14" class="kr">C. 허리천자 바늘이 지나는 층 <tspan fill="#93a4b7" font-size="10.5" font-weight="400">11 → 19 순서대로</tspan></text>
+  <text x="440" y="450" fill="#6f8299" font-size="10">11이 가장 겉, 19가 목표 지점이다. 각 칸의 이름을 답하시오.</text>
+
+  <g font-size="11">
+    <rect x="440" y="460" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="450" y="474" fill="#eab308" class="kr">11</text>
+    <rect x="440" y="484" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="450" y="498" fill="#eab308" class="kr">12</text>
+    <rect x="440" y="508" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="450" y="522" fill="#eab308" class="kr">13</text>
+    <rect x="440" y="532" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="450" y="546" fill="#eab308" class="kr">14</text>
+    <rect x="440" y="556" width="186" height="20" rx="4" fill="#2a2416" stroke="#eab308"/>
+    <text x="450" y="570" fill="#eab308" class="kr">15 <tspan fill="#93a4b7" font-size="9" font-weight="400">— 저항 소실을 느끼는 층</tspan></text>
+
+    <rect x="646" y="460" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="656" y="474" fill="#eab308" class="kr">16</text>
+    <rect x="646" y="484" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="656" y="498" fill="#eab308" class="kr">17</text>
+    <rect x="646" y="508" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="656" y="522" fill="#eab308" class="kr">18</text>
+    <rect x="646" y="532" width="186" height="20" rx="4" fill="#16303a" stroke="#4fb3c9"/>
+    <text x="656" y="546" fill="#eab308" class="kr">19 <tspan fill="#93a4b7" font-size="9" font-weight="400">— 목표 지점</tspan></text>
+  </g>
+
+  <line x1="626" y1="470" x2="646" y2="470" stroke="#4a5f78" stroke-width="0.9"/>
+  <rect x="440" y="584" width="392" height="48" rx="5" fill="#1a2f47" stroke="#4d7fb0"/>
+  <text x="450" y="600" fill="#9cc3ff" font-size="10" class="kr">추가: 이 시술은 어느 가시돌기 사이에서 하는가? 그 이유는?</text>
+  <text x="450" y="614" fill="#93a4b7" font-size="9">체표 지표로 그 높이를 어떻게 잡는지도 함께 답한다</text>
+  <text x="450" y="627" fill="#6f8299" font-size="9">성인과 신생아에서 높이가 달라지는 이유를 한 문장으로</text>
+</svg>
