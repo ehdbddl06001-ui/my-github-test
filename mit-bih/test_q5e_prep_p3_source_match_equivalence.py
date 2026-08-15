@@ -2241,6 +2241,85 @@ def test_an_unbindable_signature_reports_the_whole_signature():
         raise AssertionError("an uncovered parameter was filled in")
 
 
+#: A producer that normalises its beat window through `frontend._z`, the way
+#: the registered one turned out to.  The 20260815T235627 run established that
+#: `build_record` calls `_z` while running.
+Z_USING_PRODUCER = ARGUMENT_SHAPED_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS",
+    "from .frontend import detect_r, rr_features, FS, _z").replace(
+    "        beats.append([float(v[0]) for v in x[p - WIN_BEFORE:p + WIN_AFTER]])",
+    "        beats.append(_z([float(v[0]) for v in "
+    "x[p - WIN_BEFORE:p + WIN_AFTER]]))")
+
+#: The same producer, but with a matching decision that moves with `_z`.  An
+#: injected helper that can do this is not standing out of the way.
+Z_STEERING_PRODUCER = Z_USING_PRODUCER.replace(
+    "        if best is None or bd > tol:",
+    "        if _z(1.0) < 0:\n            continue\n"
+    "        if best is None or bd > tol:")
+
+
+def test_a_producer_that_normalises_through_the_injected_helper_is_observed():
+    """`_z` is declared, and the run still reads every decision."""
+    check("_z" in P3.FRONTEND_STUB_FUNCTIONS,
+          "the injected frontend declares _z")
+    result = differential_for(Z_USING_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer that normalises its windows through _z agrees on all "
+          "six fixtures")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          f"and every fixture was probed and found invariant: "
+          f"{result['stub_invariance']}")
+
+
+def test_an_injected_helper_that_steers_the_matching_is_caught():
+    """The claim is demonstrated per run, not asserted once in a comment.
+
+    A constant can be justified by arithmetic — `FS = 360` reproduces the
+    registered tolerance.  A *function* cannot, so its neutrality is probed:
+    the fixture is observed again with `_z` replaced by an elementwise
+    negation, and any compared field that moves stops the run.
+    """
+    try:
+        differential_for(Z_STEERING_PRODUCER)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_INJECTED_VALUE_STEERS_MATCHING,
+              "a producer whose matching moves with _z is caught")
+        check("identity vs negated" in str(error),
+              "and the stop names the two implementations it compared")
+        check("peak_to_annotation" in str(error)
+              or "kept_rows" in str(error),
+              "and which compared field moved")
+        check(error.status in P3.HARNESS_STOPS,
+              "it is a harness stop, so no equivalence verdict is claimed")
+    else:                                                    # pragma: no cover
+        raise AssertionError("an injected helper steered the comparison")
+
+
+def test_the_probe_reports_untested_rather_than_passed():
+    """A probe that cannot run says so; it never counts as a clean result."""
+    def refusing_source(_fixture, _variant=P3.STUB_VARIANT_PRIMARY):
+        raise AssertionError("the probe should not have reached this")
+
+    class _Refuses(object):
+        def __enter__(self):
+            raise P3.SourceHarnessError(P3.P3_SOURCE_RUNTIME_ERROR,
+                                        "the producer refused the probe")
+
+        def __exit__(self, *exc):
+            return False
+
+    report = P3.probe_injection_invariance(
+        lambda _fixture, _variant: _Refuses(), P3.FIXTURES[0], {},
+        P3.LabelDictionary())
+    check(report["status"] == "untested",
+          "a probe the producer refuses is reported as untested")
+    check("stopped under the probe" in report["reason"],
+          "with the reason recorded")
+    check(report["status"] != "invariant",
+          "and never silently upgraded to a clean invariance result")
+
+
 def test_a_producer_that_reads_a_declared_constant_loads_and_runs():
     """`frontend.FS` is part of the injected surface, and it is the right value.
 
