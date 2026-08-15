@@ -196,33 +196,42 @@ NOT_APPROVED: Tuple[str, ...] = (
     "correcting the candidate adapter inside this PREP",
 )
 
-#: Barrier 2.  `granted: False` is the committed state.  An execution PR flips
-#: this one field and changes nothing else; the value records who approved
-#: what, so an opened barrier still says why it is open.
+#: Barrier 2.  The user's separate read-only execution approval, written down
+#: rather than implied by a deleted line.  A guard that opens because someone
+#: edited it records no decision; this records who approved what, when, and —
+#: just as importantly — what was **not** approved, so the boundary is
+#: readable from the code and not only from a spec.  Setting `granted` back to
+#: `False` restores every refusal exactly, with no other change anywhere.
 EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
-    "granted": False,
-    "granted_on": None,
-    "granted_by": None,
+    "granted": True,
+    "granted_on": "2026-08-15",
+    "granted_by": "user",
     "kind": ("read-only execution of EXP-2026-008 Q5-E PREP P3: the candidate "
              "adapter against the registered data.py under synthetic "
              "dependency injection"),
-    "would_approve": (
+    "approved": (
         f"reading the registered {REGISTERED_SOURCE_NAME} by file id "
         f"{REGISTERED_SOURCE_FILE_ID} under exactly the drive.readonly scope",
         "loading it into an isolated namespace with synthetic stubs injected",
         "calling its build_record on the six registered synthetic fixtures",
-        "writing the P3 PREP result bundle",
+        "writing the P3 PREP result bundle and saving the executed notebook "
+        "with its outputs",
     ),
     "not_approved": NOT_APPROVED,
+    "implementation_accepted": "P3_IMPLEMENTATION_ACCEPTED (Codex, 2026-08-15, "
+                               "commit 40b1642)",
     "recorded_in": SPEC_PATH,
 }
 APPROVAL_NOTE = (
-    "P3 is implemented but NOT approved for execution.  Reaching the "
-    f"registered {REGISTERED_SOURCE_NAME} needs both OPEN_REGISTERED_DATA and "
-    "a separate read-only execution approval recorded in "
-    "EXECUTION_APPROVAL_RECORD, and neither the Q5-E audit token nor the "
-    "P1/P2 PREP token may be reused for it.  Not approved by any P3 "
-    "approval: " + ", ".join(NOT_APPROVED) + ".")
+    "Approved (2026-08-15) by the user: **read-only** execution of P3 — "
+    f"reading the registered {REGISTERED_SOURCE_NAME} by file id "
+    f"{REGISTERED_SOURCE_FILE_ID} under exactly the drive.readonly scope, "
+    "loading it under synthetic dependency injection, running the six "
+    "registered fixtures, and writing the PREP bundle.  OPEN_REGISTERED_DATA "
+    "is still False by default, so a stray import reaches nothing; the "
+    "notebook opts in explicitly at its call site.  Neither the Q5-E audit "
+    "token nor the P1/P2 PREP token opens this stage.  NOT approved by it: "
+    + ", ".join(NOT_APPROVED) + ".")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Bundle contract.  The payload fold is Q5-E's registered seven-file list and
@@ -298,12 +307,17 @@ def execution_is_approved(approval: Optional[str]) -> bool:
 
 
 def _terminal_execution_guard() -> Dict[str, object]:
-    """The stop a separately approved execution PR opens, by one field.
+    """The single stop a separately approved execution PR opens.
 
     It sits after the switch, the token and the fixture contract, and before
     dependencies, credentials, the Drive service and every read — so an
     unapproved call performs zero authentication attempts rather than a failed
-    one.
+    one.  **The execution PR opens it** by consulting
+    :data:`EXECUTION_APPROVAL_RECORD` rather than by deleting the check: a
+    removed line reads identically whether the approval happened or somebody
+    removed an inconvenience, while a consulted record keeps the decision
+    legible, keeps `granted: False` as an exact one-value revert, and keeps
+    this function as the only place the boundary moves.
     """
     if not EXECUTION_APPROVAL_RECORD.get("granted"):
         raise P3NotApprovedError(

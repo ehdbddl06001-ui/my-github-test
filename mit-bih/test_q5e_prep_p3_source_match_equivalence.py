@@ -227,49 +227,120 @@ class Credential(object):
         self.scopes = list(scopes)
 
 
-class opened_guard(object):
-    """Open the execution record for one test, then put it back.
+class _guard_set_to(object):
+    """Hold the execution record at one value for a test, then restore it.
 
-    The gates *below* the terminal guard — the file-id gate, the provider
-    inventory, the digest check — cannot be exercised while it is shut, and a
-    gate nobody tested is a gate nobody has.  So a test that needs them flips
-    exactly the field an approval PR would flip, and asserts the committed
-    value both before and after, so a suite that leaked an open barrier fails
-    rather than passing quietly.
+    Both directions are needed now that the user has approved execution.  The
+    gates *below* the guard — the file-id gate, the provider inventory, the
+    digest check — can only be exercised while it is open, and the refusals
+    that protect an unapproved run can only be exercised while it is shut; a
+    gate nobody tested is a gate nobody has.  Whatever the committed value is,
+    it is put back afterwards and checked, so a suite that leaks a flipped
+    barrier into the next test fails rather than passing quietly.
     """
 
+    def __init__(self, granted):
+        self.granted = granted
+        self._saved = None
+
     def __enter__(self):
-        check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False,
-              "the committed approval record is closed before this test")
-        P3.EXECUTION_APPROVAL_RECORD["granted"] = True
+        self._saved = P3.EXECUTION_APPROVAL_RECORD["granted"]
+        P3.EXECUTION_APPROVAL_RECORD["granted"] = self.granted
         return self
 
     def __exit__(self, *exc):
-        P3.EXECUTION_APPROVAL_RECORD["granted"] = False
-        check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False,
-              "and it is closed again afterwards")
+        P3.EXECUTION_APPROVAL_RECORD["granted"] = self._saved
+        check(P3.EXECUTION_APPROVAL_RECORD["granted"] is self._saved,
+              "the approval record is restored after the test")
         return False
 
 
+def opened_guard():
+    """The guard open, as an approved run has it."""
+    return _guard_set_to(True)
+
+
+def closed_guard():
+    """The guard shut, as it was before the approval and as a revert restores."""
+    return _guard_set_to(False)
+
+
 # ─────────────────────────────────────────────────────────────────────────────
-# 1. The two barriers, and what a closed one means: zero of everything.
+# 1. The barriers: what the approval opened, and what it did not.
 # ─────────────────────────────────────────────────────────────────────────────
-def test_both_barriers_are_closed_in_this_implementation_pr():
-    check(P3.OPEN_REGISTERED_DATA is False,
-          "OPEN_REGISTERED_DATA is the committed default: closed")
-    check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False,
-          "and the execution approval record grants nothing")
-    check(P3.EXECUTION_APPROVAL_RECORD["granted_on"] is None,
-          "so there is no approval date to point at")
-    check("P3 is implemented but NOT approved for execution" in
-          P3.APPROVAL_NOTE, "the approval note says exactly that")
+def test_the_execution_approval_is_recorded_rather_than_implied():
+    """A guard that opened because someone deleted a line records no decision.
+
+    The user approved read-only execution on 2026-08-15, and the record says
+    who, when, what for — and, at least as importantly, what the approval does
+    **not** cover.  `granted: False` remains an exact one-value revert.
+    """
+    record = P3.EXECUTION_APPROVAL_RECORD
+    check(record["granted"] is True, "the record grants read-only execution")
+    check(record["granted_on"] == "2026-08-15" and record["granted_by"] ==
+          "user", "and names when it was granted and by whom")
+    check("read-only" in str(record["kind"]),
+          "the approval is for a read-only run")
+    check(any("drive.readonly" in entry for entry in record["approved"]),
+          "which reads the registered file under exactly drive.readonly")
+    check("Approved (2026-08-15)" in P3.APPROVAL_NOTE
+          and "NOT approved by it" in P3.APPROVAL_NOTE,
+          "the note states both halves of the boundary")
     for item in ("the Q5-E scientific execution", "running detect_r()",
-                 "registering SOURCE_MATCH_ORACLE_RECORD"):
+                 "registering SOURCE_MATCH_ORACLE_RECORD",
+                 "M0-M4 aggregation", "training or retraining any model"):
         check(any(item in entry for entry in P3.NOT_APPROVED),
-              f"and names {item!r} as outside any P3 approval")
+              f"and {item!r} is still outside it")
+        check(item in P3.APPROVAL_NOTE,
+              f"and the note repeats {item!r} where a reader will see it")
 
 
-def test_closed_guard_performs_no_credential_api_source_or_mkdir_call():
+def test_the_switch_default_still_refuses_a_stray_import():
+    """Approval did not open the switch; the notebook opts in at its call site.
+
+    So an import, a copied cell or another module's call still reaches
+    nothing, and the approval is not a standing permission for the process.
+    """
+    check(P3.OPEN_REGISTERED_DATA is False,
+          "OPEN_REGISTERED_DATA is still False in the module")
+    try:
+        P3.run_p3("/nonexistent/out", approval=TOKEN, timestamp=STAMP,
+                  emit=lambda _message: None)
+    except P3.P3NotApprovedError as error:
+        check("OPEN_REGISTERED_DATA is False" in str(error),
+              "and a call that does not opt in explicitly is refused")
+    else:                                                    # pragma: no cover
+        raise AssertionError("the default switch let a run through")
+
+
+def test_reverting_the_approval_restores_every_refusal():
+    """One field back to False, and the whole route is shut again."""
+    body = FAITHFUL.encode("utf-8")
+    with closed_guard():
+        for label, thunk in (
+                ("run_p3",
+                 lambda: P3.run_p3("/nonexistent/out", approval=TOKEN,
+                                   open_registered_data=True, timestamp=STAMP,
+                                   emit=lambda _message: None)),
+                ("fetch_registered_source",
+                 lambda: P3.fetch_registered_source(
+                     FakeDriveFile(good_metadata(body), body,
+                                   fail_download=True), TOKEN)),
+                ("minting a registered permit",
+                 lambda: P3.RegisteredSourcePermit(
+                     P3._REGISTERED_PERMIT_KEY, body,
+                     {"observed_sha256": hashlib.sha256(body).hexdigest()},
+                     TOKEN))):
+            try:
+                thunk()
+            except P3.P3NotApprovedError as error:
+                check("not approved for execution" in str(error),
+                      f"{label} is refused again with granted back to False")
+            else:                                            # pragma: no cover
+                raise AssertionError(f"{label} ran with the guard reverted")
+
+
+def test_a_shut_guard_performs_no_credential_api_source_or_mkdir_call():
     """The whole point of a terminal guard: an unapproved call does nothing.
 
     Not "fails safely after connecting" — every seam that could authenticate,
@@ -307,12 +378,13 @@ def test_closed_guard_performs_no_credential_api_source_or_mkdir_call():
              "open_registered_data": True},            # the audit's token
             {"approval": P12.EXECUTION_APPROVAL_TOKEN,
              "open_registered_data": True},            # the P1/P2 token
-            {"approval": TOKEN, "open_registered_data": True},  # guard closed
+            {"approval": TOKEN, "open_registered_data": True},  # guard shut
         ]
         for keywords in attempts:
             try:
-                P3.run_p3("/nonexistent/out", timestamp=STAMP,
-                          emit=lambda _message: None, **keywords)
+                with closed_guard():
+                    P3.run_p3("/nonexistent/out", timestamp=STAMP,
+                              emit=lambda _message: None, **keywords)
             except P3.P3NotApprovedError:
                 check(True, f"run_p3 refuses {sorted(keywords)}")
             else:                                            # pragma: no cover
@@ -358,18 +430,19 @@ def test_every_registered_read_checks_approval_first():
                   f"the adapter at all")
         else:                                                # pragma: no cover
             raise AssertionError("the fetch ran without approval")
-    # Even the right token does not mint a permit while the guard is closed.
+    # Even the right token does not mint a permit while the guard is shut.
     adapter = FakeDriveFile(good_metadata(body), body, fail_download=True)
     try:
-        P3.fetch_registered_source(adapter, TOKEN)
+        with closed_guard():
+            P3.fetch_registered_source(adapter, TOKEN)
     except P3.P3NotApprovedError as error:
         check(not adapter.calls,
               "and with the correct token it still stops at the guard, before "
               "the first API call")
         check("not approved for execution" in str(error),
-              "naming the closed guard as the reason")
+              "naming the shut guard as the reason")
     else:                                                    # pragma: no cover
-        raise AssertionError("the fetch ran with the guard closed")
+        raise AssertionError("the fetch ran with the guard shut")
 
 
 def test_producer_bytes_are_executed_only_through_a_permit():
@@ -406,13 +479,24 @@ def test_producer_bytes_are_executed_only_through_a_permit():
     else:                                                    # pragma: no cover
         raise AssertionError("a forged registered permit was accepted")
     try:
-        P3.RegisteredSourcePermit(P3._REGISTERED_PERMIT_KEY, b"x = 1\n",
-                                  {}, TOKEN)
+        with closed_guard():
+            P3.RegisteredSourcePermit(P3._REGISTERED_PERMIT_KEY, b"x = 1\n",
+                                      {}, TOKEN)
     except P3.P3NotApprovedError as error:
         check("not approved for execution" in str(error),
-              "and even with the module's own key the closed guard refuses it")
+              "and even with the module's own key a shut guard refuses it")
     else:                                                    # pragma: no cover
         raise AssertionError("the guard did not stop a registered permit")
+    try:
+        with opened_guard():
+            P3.RegisteredSourcePermit(P3._REGISTERED_PERMIT_KEY, b"x = 1\n",
+                                      {}, TOKEN)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
+              "and with the guard open it is the digest that refuses it: the "
+              "approval opened a file, not a door")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a permit was minted over foreign bytes")
 
 
 class _counted_compiles(object):
@@ -629,7 +713,12 @@ def test_validation_runs_again_immediately_before_the_compiler():
 
 
 def test_a_registered_permit_is_refused_once_the_guard_closes_again():
-    """The guard is re-checked at execution, not only when the permit is minted."""
+    """The guard is re-checked at execution, not only when the permit is minted.
+
+    A permit minted under the approval is not a standing licence: revert the
+    record — as a revoked approval would — and the permit it already issued
+    stops working, at every surface, before anything is compiled.
+    """
     body = FAITHFUL.encode("utf-8")
     with _registered_bytes(body):
         adapter = FakeDriveFile(good_metadata(body), body)
@@ -640,7 +729,7 @@ def test_a_registered_permit_is_refused_once_the_guard_closes_again():
                 permit = P3.fetch_registered_source(adapter, TOKEN)
             check(type(permit) is P3.RegisteredSourcePermit,
                   "a registered permit was minted while the guard was open")
-            with _counted_compiles() as counter:
+            with _counted_compiles() as counter, closed_guard():
                 for label, thunk in (
                         ("the session factory",
                          lambda: P3.source_factory(permit)),
@@ -828,8 +917,13 @@ def test_the_synthetic_route_cannot_execute_the_registered_source():
           "and which carries no approval, because it opens nothing registered")
 
 
-def test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path():
-    """Counted, not argued: the refused route touches none of the three."""
+def test_a_shut_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path():
+    """Counted, not argued: the refused route touches none of the three.
+
+    Run with the approval reverted, because that is the state this protects:
+    every direct-call route into the registered path must reach nothing while
+    the guard is shut, not merely fail somewhere later.
+    """
     counters = {"compile": 0, "mkdir": 0}
     saved_compile = P3._compile_and_exec
     saved_mkdir = os.mkdir
@@ -863,7 +957,8 @@ def test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path(
         )
         for index, attempt in enumerate(attempts):
             try:
-                attempt()
+                with closed_guard():
+                    attempt()
             except (P3.P3NotApprovedError, P3.SourceHarnessError):
                 check(True, f"attempt {index} on the registered path refused")
             else:                                            # pragma: no cover
@@ -2099,9 +2194,13 @@ def test_the_notebook_is_committed_unexecuted():
     check(all(stage in first for stage in
               ("DESIGN", "SYNTHETIC_FIXTURES", "RESULT_GATE", "BUNDLE_REPORT")),
           "and the first code cell prints the whole planned order")
-    check("OPEN_REGISTERED_DATA = False" in text
-          or "OPEN_REGISTERED_DATA=False" in text,
-          "the notebook opens neither barrier")
+    check("APPROVAL = P3.EXECUTION_APPROVAL_TOKEN" in text
+          and "OPEN_REGISTERED_DATA = True" in text,
+          "the notebook opts in at its call site, as the approval intends")
+    check("모듈 기본값" in text and "P3.OPEN_REGISTERED_DATA" in text,
+          "while printing the module default beside it, which stays False")
+    check(P3.OPEN_REGISTERED_DATA is False,
+          "and that default really is still False in the module")
     check("run_p3(" in text, "it calls the production route rather than "
                              "reimplementing one")
     for label in ("prep payload fold", "manifest SHA-256", "adapter "
@@ -2126,11 +2225,14 @@ def test_the_notebook_cannot_reach_a_registered_byte_before_approval():
                   f"cell {index} runs before the approval preflight and does "
                   f"not call {token!r}")
     body = "\n".join(cells)
-    check("APPROVAL = None" in body or "APPROVAL = ''" in body,
-          "the approval variable is committed empty")
-    check("P3.EXECUTION_APPROVAL_TOKEN" not in body
-          or "APPROVAL = P3.EXECUTION_APPROVAL_TOKEN" not in body,
-          "and the token is not pre-filled for a reader to run accidentally")
+    check("APPROVAL = P3.EXECUTION_APPROVAL_TOKEN" in body,
+          "the approval token is set from the module, never typed as a "
+          "literal that could drift from it")
+    check(P3.EXECUTION_APPROVAL_TOKEN not in body,
+          "so the literal string itself does not appear in the notebook")
+    check("raise RuntimeError" in body and "TIMESTAMP" in body,
+          "and an empty TIMESTAMP stops the run rather than writing an "
+          "unnamed bundle")
 
 
 def test_the_spec_records_the_separated_states():
@@ -2169,10 +2271,12 @@ def test_module_capabilities_are_all_present():
               f"and the list advertises {name}")
     card = P3.design_card()
     check(P3.REGISTERED_SOURCE_FILE_ID in card
-          and "NOT APPROVED" in card
+          and "APPROVED 2026-08-15 by user (read-only)" in card
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")
+    check("OPEN_REGISTERED_DATA : False" in card,
+          "and that the switch default is still shut")
     for name in P3.fixture_names():
         check(name in card, f"and lists {name} with what it refutes")
 

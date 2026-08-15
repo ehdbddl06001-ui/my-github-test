@@ -22,24 +22,33 @@ created: 2026-08-14
 Five states are separated here on purpose, because collapsing any two of them
 would turn a piece of code into a claim it has not earned:
 
-- **implementation approved** — the user approved the design and the
-  implementation of P3 on 2026-08-14, and this document is promoted to
-  `approved_for_implementation` on that basis.
-- **execution not approved** — no approval exists to read the registered
-  `data.py`, to authenticate to Drive, or to run the differential.  Both
-  barriers in the module are closed and this PR does not open them.
-- **result not run** — the differential has never been executed against the
-  registered source.  There is no measured outcome anywhere in this
-  repository, and none may be inferred from the fact that the code exists.
+- **implementation approved and accepted** — the user approved the design and
+  the implementation on 2026-08-14; Codex returned `P3_IMPLEMENTATION_ACCEPTED`
+  at commit `40b1642` on 2026-08-15, and PR #140 merged as `e35e733`.
+- **execution approved, read-only** — on 2026-08-15 the user granted a
+  separate approval to read the registered `data.py` by file id under exactly
+  `drive.readonly`, run the six registered fixtures under injection, and write
+  the PREP bundle.  It approves nothing else; the list in `NOT_APPROVED` is
+  what it withholds.
+- **result not run** — the differential has still never been executed against
+  the registered source.  There is no measured outcome anywhere in this
+  repository, and none may be inferred from the fact that the code exists or
+  that execution is now permitted.
 - **`SOURCE_MATCH_ORACLE_RECORD` registration not approved** — a PASS, if one
   is ever measured, does not register itself.  Registration is a separate PR
   after Codex accepts the run.
 - **Q5-E scientific execution not approved** — P3 is one of three preflights.
   Completing it approves nothing about the audit itself.
 
-No statement below may be read as `PREP_IMPLEMENTATION_ACCEPTED`, `P3_PASS`,
-`SOURCE_MATCH_EQUIVALENT_TO_REGISTERED_SOURCE`, or an execution approval.  The
-state this PR ends in is **`P3_IMPLEMENTATION_AWAITING_CODEX_REVIEW`**.
+No statement below may be read as `P3_PASS`,
+`SOURCE_MATCH_EQUIVALENT_TO_REGISTERED_SOURCE`, a measured result, or an
+approval to register anything.  The state after the execution-enable change is
+**`P3_EXECUTION_APPROVED_NOT_YET_RUN`**: the route is open, and it has not been
+walked.
+
+`status:` in the frontmatter stays `approved_for_implementation`.  It moves
+only when a measured result has been accepted, exactly as it did for P1/P2 —
+an execution approval is permission to run, not an outcome.
 
 # Why P3 exists
 
@@ -194,12 +203,19 @@ mismatch stops it before anything is compiled.
 
 # Execution barriers
 
-Two, independent, and both closed in the implementation PR:
+Two, independent.  The implementation PR committed both closed; the
+execution-enable PR opened the second one and left the first at its default:
 
 | barrier | value | opened by |
 |---|---|---|
-| `OPEN_REGISTERED_DATA` | `False` | an explicit opt-in at the call site |
-| `EXECUTION_APPROVAL_RECORD["granted"]` | `False` | a separate approval PR changing one field |
+| `OPEN_REGISTERED_DATA` | `False` — **still the module default** | an explicit opt-in at the call site, which the notebook now makes |
+| `EXECUTION_APPROVAL_RECORD["granted"]` | `True` since 2026-08-15 | the user's separate read-only execution approval, recorded in the field rather than by deleting a check |
+
+The switch stays `False` deliberately: an import, a copied cell or another
+module's call still reaches nothing, and the approval is not a standing
+permission for the process.  `granted: False` remains an exact one-value
+revert that shuts every route again, and the regression suite runs both
+states rather than only the one it happens to be committed in.
 
 Neither the Q5-E audit token nor the P1/P2 PREP token opens P3: both are listed
 in `REFUSED_TOKENS` and refused **by name**, with a stated reason.  P1/P2
@@ -456,6 +472,27 @@ is built and again immediately before execution.  Regression:
 `test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
+
+**D12 (2026-08-15) — read-only execution approved; the record moved, nothing
+else did.**  Codex accepted the implementation at `40b1642`
+(`P3_IMPLEMENTATION_ACCEPTED`), PR #140 merged as `e35e733`, and the user
+granted a separate read-only execution approval.  The execution-enable change
+touches three things and no others: `EXECUTION_APPROVAL_RECORD` (`granted`,
+`granted_on`, `granted_by`, and the `would_approve` list renamed to `approved`
+now that it is one), the notebook's call-site opt-in with a Drive mount for
+the output bundle and a refusal to run with an empty `TIMESTAMP`, and the
+regression suite's guard helper, which now holds the record at either value
+and restores it — so the refusals that protect an unapproved run are still
+exercised, from the approved state, rather than becoming untested.  No
+fixture, no adapter, no scientific gate, threshold, null, seed, family or
+multiplicity is touched; `OPEN_REGISTERED_DATA` stays `False`;
+`SOURCE_MATCH_ORACLE_RECORD` stays `None`.  New regressions:
+`test_the_execution_approval_is_recorded_rather_than_implied`,
+`test_the_switch_default_still_refuses_a_stray_import`, and
+`test_reverting_the_approval_restores_every_refusal`.  The Drive mount is for
+**writing the bundle only** — the registered `data.py` is still read through
+the API by file id, never through a mount path, because picking a file by path
+is the substitution this PREP exists to prevent.
 
 **D11 (2026-08-14) — fourth-review items closed: the parent gate runs before
 the download, and an empty problem list means exactly that.**  Two narrow
