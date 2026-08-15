@@ -80,7 +80,8 @@ under synthetic dependency injection:
 
 | injected | stands in for | what it returns |
 |---|---|---|
-| `wfdb.rdrecord` / `rdann` / `rdsamp` | the WFDB reader | a ramp signal where `signal[i] == i`, and the fixture's annotations in the fixture's own order |
+| `sig`, `ann_sample`, `ann_symbol` **as arguments** | the caller's reading | the fixture's ramp signal and its annotations, in the fixture's own order — the registered `build_record` is handed its inputs rather than reading them |
+| `wfdb.rdrecord` / `rdann` / `rdsamp` | the WFDB reader | the same ramp signal and the same annotations, so either route sees one world |
 | `frontend.detect_r` | the registered detector | the fixture's peaks, in the fixture's order.  **The real detector is never called.** |
 | `frontend.rr_features`, `pwave.pwave_features` | the feature producers | rows whose first column is the peak the row was built for |
 | `frontend.FS` | the registered sampling rate | `360`, so the source's own `int(0.15 * fs)` lands on the registered 54-sample tolerance the fixtures are built around |
@@ -478,6 +479,39 @@ is built and again immediately before execution.  Regression:
 `test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
+
+**D14 (2026-08-15) — second attempt stopped at
+`P3_SOURCE_SIGNATURE_UNBINDABLE`; the registered producer is handed its
+inputs.**  With `FS` declared, run `20260815T233808` got past the import and
+stopped on the signature: `build_record` has required parameters `sig`,
+`ann_sample` and `ann_symbol`.  So the registered producer does **not** read
+its own signal and annotations — it receives them, and the caller (`prepare()`)
+does the reading.  That is a fact about the source obtained by observing a
+refusal, and it makes the injection *more* direct rather than less: the
+fixture's data now arrives as arguments.
+
+The binding plan is extended to cover those three names, and
+`binding_values(fixture)` is fixture-dependent by necessity — a producer that
+receives this fixture's signal must receive *this* fixture's.  The values are
+built exactly as the reader stubs build theirs, so a producer using either
+route sees one world, and a regression asserts that equality fixture by
+fixture.  `BINDING_RATIONALE` states, per key, why the value cannot change the
+behaviour under test, and it is folded into `oracle_harness_sha256` so editing
+a reason invalidates a PASS recorded under the old one.
+
+Two diagnosis improvements, because the first two stops each cost a round
+trip: `P3_SOURCE_SIGNATURE_UNBINDABLE` now prints the **whole observed
+signature** and what the plan did bind, and the notebook's report cells print
+`decision['detail']` for any harness stop — previously that string lived only
+in the bundle, so the operator had to open Drive to learn what was missing.
+
+New regressions: `test_a_producer_handed_its_inputs_as_arguments_runs_and_is
+_observed` (an argument-shaped producer agrees on all six fixtures),
+`test_the_injected_arguments_match_what_the_reader_stubs_return`,
+`test_every_injected_argument_carries_a_stated_reason`, and
+`test_an_unbindable_signature_reports_the_whole_signature`.  Bundle
+`bac0b881…` / manifest `c37172a1…` is preserved, and the adapter, the
+fixtures and every scientific rule are untouched.
 
 **D13 (2026-08-15) — first execution attempt stopped at
 `P3_STUB_SURFACE_INCOMPLETE`; the injected surface now declares `FS`.**  The
