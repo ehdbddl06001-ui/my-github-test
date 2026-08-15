@@ -1999,8 +1999,15 @@ def test_no_detector_no_m0_to_m4_no_labels_no_probabilities_no_training():
     targets = {call["target"] for call in log.as_list()}
     check(targets <= {"wfdb.rdrecord", "wfdb.rdann", "wfdb.rdsamp",
                       "frontend.detect_r", "frontend.rr_features",
-                      "pwave.pwave_features"},
+                      "pwave.pwave_features",
+                      # A refused lookup is part of the surface too: it
+                      # records what was wanted and hands back nothing.
+                      "wfdb.__getattr__", "frontend.__getattr__",
+                      "pwave.__getattr__"},
           f"a producer can reach only the injected stub surface: {targets}")
+    refusals = [c for c in log.as_list() if c["target"].endswith("__getattr__")]
+    check(all(c["declared"] is False for c in refusals),
+          "and a lookup outside it is recorded as refused, never supplied")
 
 
 #: A producer that imports its dependencies **inside** `build_record`.  Under
@@ -2086,6 +2093,98 @@ def test_the_producer_session_holds_the_injection_across_the_call():
               "loading outside a session is refused rather than half-injected")
     else:                                                    # pragma: no cover
         raise AssertionError("a producer was loaded with no injection active")
+
+
+#: A producer that reads `frontend.FS` at import time and derives its
+#: tolerance from it — the shape the registered `data.py` turned out to have,
+#: which the 20260815T232546 run discovered by stopping.
+FS_READING_PRODUCER = FAITHFUL.replace(
+    "from .frontend import detect_r, rr_features",
+    "from .frontend import detect_r, rr_features, FS").replace(
+    "    tol = int(0.15 * fs)", "    tol = int(0.15 * FS)")
+
+#: A producer that reads a name nobody declared.
+UNDECLARED_READING_PRODUCER = FAITHFUL.replace(
+    "from .frontend import detect_r, rr_features",
+    "from .frontend import detect_r, rr_features\n"
+    "import frontend as FE\n"
+    "_UNUSED = FE.SOMETHING_NOBODY_DECLARED")
+
+
+def test_a_producer_that_reads_a_declared_constant_loads_and_runs():
+    """`frontend.FS` is part of the injected surface, and it is the right value.
+
+    The registered source reads it at import time.  The value is pinned by the
+    arithmetic rather than by taste: the static source map records that
+    `data.py` computes `int(0.15 * fs)`, so an injected `FS` of 360 reproduces
+    the registered 54-sample tolerance the fixtures are built around, and any
+    other value would silently change the behaviour under test.
+    """
+    check(P3.FRONTEND_STUB_CONSTANTS["FS"] == 360,
+          "the injected frontend declares FS")
+    check(int(0.15 * P3.FRONTEND_STUB_CONSTANTS["FS"]) ==
+          Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES,
+          "and the source's own tolerance arithmetic over it lands on the "
+          "registered tolerance")
+    result = differential_for(FS_READING_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer that derives its tolerance from the injected FS runs "
+          "and agrees on all six fixtures")
+
+
+def test_an_undeclared_stub_attribute_is_its_own_stop():
+    """"The injection is incomplete" is not "the source is broken".
+
+    The run of 2026-08-15 stopped exactly here, and the message has to name
+    the module and the attribute — otherwise the next step is guesswork, and
+    guessing a value into an injected dependency is how a run stops measuring
+    the thing it claims to measure.
+    """
+    with _counted_compiles() as counter:
+        try:
+            differential_for(UNDECLARED_READING_PRODUCER)
+        except P3.SourceHarnessError as error:
+            check(error.status == P3.P3_STUB_SURFACE_INCOMPLETE,
+                  "an undeclared attribute stops as P3_STUB_SURFACE_INCOMPLETE")
+            check("SOMETHING_NOBODY_DECLARED" in str(error)
+                  and "'frontend'" in str(error),
+                  "and the stop names both the module and the attribute")
+            check("not a disagreement with the adapter" in str(error),
+                  "and says it is not a disagreement with the adapter")
+        else:                                                # pragma: no cover
+            raise AssertionError("an undeclared attribute was supplied")
+    check(counter.counts["compile"] > 0,
+          "the source did compile — this is a surface gap, not a load failure")
+    check(P3.P3_STUB_SURFACE_INCOMPLETE in P3.HARNESS_STOPS,
+          "the stop is registered as a harness stop")
+    decision = P3.decide(None, P3.P3_STUB_SURFACE_INCOMPLETE, "surface gap")
+    check(decision["harness_stop"] is True
+          and decision["equivalence_claimed"] is False
+          and decision["fixtures_passed"] is None,
+          "and it produces no fixture score and no equivalence claim")
+
+
+def test_an_undeclared_attribute_is_recorded_before_it_is_refused():
+    stubs, log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        frontend = sys.modules["frontend"]
+        check(frontend.FS == 360, "the declared constant is readable")
+        try:
+            frontend.WHATEVER_THIS_IS
+        except AttributeError as error:
+            check(isinstance(error, P3.StubAttributeMissing),
+                  "an undeclared one raises the harness's own AttributeError")
+        else:                                                # pragma: no cover
+            raise AssertionError("an undeclared attribute was returned")
+        check(hasattr(frontend, "WHATEVER_THIS_IS") is False,
+              "so hasattr() sees a plainly missing attribute, as it would on "
+              "a real module")
+    requests = [c for c in log.as_list()
+                if c["target"] == "frontend.__getattr__"]
+    check([c["requested"] for c in requests] == ["WHATEVER_THIS_IS"] * 2,
+          f"and every request is recorded for the bundle: {requests}")
+    check(all(c["declared"] is False for c in requests),
+          "each marked as undeclared rather than quietly supplied")
 
 
 def test_the_injected_stubs_never_reach_a_real_dependency():

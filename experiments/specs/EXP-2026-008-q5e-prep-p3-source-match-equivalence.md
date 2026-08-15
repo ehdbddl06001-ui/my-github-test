@@ -83,6 +83,12 @@ under synthetic dependency injection:
 | `wfdb.rdrecord` / `rdann` / `rdsamp` | the WFDB reader | a ramp signal where `signal[i] == i`, and the fixture's annotations in the fixture's own order |
 | `frontend.detect_r` | the registered detector | the fixture's peaks, in the fixture's order.  **The real detector is never called.** |
 | `frontend.rr_features`, `pwave.pwave_features` | the feature producers | rows whose first column is the peak the row was built for |
+| `frontend.FS` | the registered sampling rate | `360`, so the source's own `int(0.15 * fs)` lands on the registered 54-sample tolerance the fixtures are built around |
+
+The stub surface is **declared, not permissive**.  A name it does not carry is
+recorded and refused, and the run stops at `P3_STUB_SURFACE_INCOMPLETE` naming
+the module and the attribute; returning a mock would let an undeclared
+dependency into the run wearing a stub's name.
 
 **The injection spans the call, not only the load.**  `ProducerSession` holds
 the stub modules installed in `sys.modules` from compile through exec and
@@ -472,6 +478,43 @@ is built and again immediately before execution.  Regression:
 `test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
+
+**D13 (2026-08-15) — first execution attempt stopped at
+`P3_STUB_SURFACE_INCOMPLETE`; the injected surface now declares `FS`.**  The
+approved run `20260815T232546` reached the registered file and verified it:
+file id `1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK`, provider checksum and read bytes
+both `20cde66b…`, scope proven exactly `drive.readonly`.  Loading it then
+raised `AttributeError: module 'frontend' has no attribute 'FS'` — the
+registered `data.py` reads `frontend.FS` at import time, and the injected stub
+declared no constants at all.  **This is not a disagreement with the adapter
+and not a defect in the source**: it is this harness's injection surface being
+incomplete, and the run reported it as its own stop, produced no candidate,
+opened no record count and preserved its bundle (payload fold
+`dda8e3d2…`, manifest `cc997af2…`).
+
+The fix is deliberately narrow.  `FRONTEND_STUB_CONSTANTS` declares `FS = 360`
+— pinned by arithmetic rather than by taste: the static source map records
+that `data.py` computes `int(0.15 * fs)`, and `int(0.15 * 360) == 54 ==
+M4_PEAK_MATCH_TOLERANCE_SAMPLES`, the registered tolerance the six fixtures
+are built around.  Any other value would silently change the behaviour under
+test, which is the one thing an injection may never do; a regression asserts
+the arithmetic, not the number.  Undeclared names are no longer a bare
+`AttributeError`: each stub records the request in the call log and raises
+`StubAttributeMissing`, which the harness converts into
+`P3_STUB_SURFACE_INCOMPLETE` naming the module and the attribute, so a further
+gap is diagnosed in one run instead of guessed.  Returning a mock for unknown
+names was rejected: it would let an undeclared dependency into the run wearing
+a stub's name.  `WFDB_STUB_CONSTANTS` and `PWAVE_STUB_CONSTANTS` stay empty
+until a run demonstrates a need — the surface is what the source is shown to
+require, never what it might plausibly want.  New regressions:
+`test_a_producer_that_reads_a_declared_constant_loads_and_runs`,
+`test_an_undeclared_stub_attribute_is_its_own_stop`, and
+`test_an_undeclared_attribute_is_recorded_before_it_is_refused`.
+
+The stop bundle is kept as an authentic record of an attempted run, exactly as
+the 2026-08-12 P2 stop bundle was, and the re-run writes a new timestamped
+folder rather than replacing it.  Nothing about the adapter, the fixtures or
+any scientific rule changed, and no equivalence verdict was produced.
 
 **D12 (2026-08-15) — read-only execution approved; the record moved, nothing
 else did.**  Codex accepted the implementation at `40b1642`

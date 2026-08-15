@@ -137,6 +137,12 @@ P3_SOURCE_RUNTIME_ERROR = "P3_SOURCE_RUNTIME_ERROR"
 P3_SOURCE_TRACE_UNPROJECTABLE = "P3_SOURCE_TRACE_UNPROJECTABLE"
 P3_KEPT_ROWS_UNOBSERVABLE = "P3_KEPT_ROWS_UNOBSERVABLE"
 P3_FIXTURE_CONTRACT_VIOLATION = "P3_FIXTURE_CONTRACT_VIOLATION"
+#: The producer asked an injected stub for a name the declared surface does
+#: not carry.  Its own stop, because "the injection is incomplete" and "the
+#: source is broken" are different findings and only the first one is ours to
+#: fix.  The 20260815T232546 run stopped here: the registered `data.py` reads
+#: `frontend.FS` at import time, and the stub declared no constants at all.
+P3_STUB_SURFACE_INCOMPLETE = "P3_STUB_SURFACE_INCOMPLETE"
 #: Stops that say the harness could not make the comparison.  A candidate
 #: record is never produced from one of these, and none of them may be
 #: reported as a disagreement between the adapter and the registered source.
@@ -144,7 +150,8 @@ HARNESS_STOPS: Tuple[str, ...] = (
     P3_SOURCE_FILE_ID_UNREGISTERED, P3_SOURCE_IDENTITY_MISMATCH,
     P3_SOURCE_UNLOADABLE, P3_SOURCE_SIGNATURE_UNBINDABLE,
     P3_SOURCE_RUNTIME_ERROR, P3_SOURCE_TRACE_UNPROJECTABLE,
-    P3_KEPT_ROWS_UNOBSERVABLE, P3_FIXTURE_CONTRACT_VIOLATION)
+    P3_KEPT_ROWS_UNOBSERVABLE, P3_FIXTURE_CONTRACT_VIOLATION,
+    P3_STUB_SURFACE_INCOMPLETE)
 P3_STATUSES: Tuple[str, ...] = (
     (P3_PASS, P3_EQUIVALENCE_REQUIRED) + HARNESS_STOPS)
 #: Ordered P3 gates.  The source is never imported before its identity has
@@ -522,6 +529,43 @@ def fixture_card(name: str) -> Dict[str, object]:
 # so returned rows say which peaks survived.  Every stub records what it was
 # handed, because those arguments are the producer's own decisions.
 # ─────────────────────────────────────────────────────────────────────────────
+#: Constants the injected `frontend` stub declares, because the registered
+#: source reads them at import time.  The 20260815T232546 run established that
+#: `data.py` reads `frontend.FS`; it stopped there rather than guessing, which
+#: is what `P3_STUB_SURFACE_INCOMPLETE` is for.
+#:
+#: `FS` **must** be the registered 360 Hz and not an arbitrary number.  The
+#: static source map records that `data.py` computes its tolerance as
+#: `int(0.15 * fs)`, and `int(0.15 * 360) == 54 ==
+#: M4_PEAK_MATCH_TOLERANCE_SAMPLES` — the registered tolerance the fixtures are
+#: built around.  Injecting anything else would silently change the behaviour
+#: under test, which is the one thing an injection may never do.  A regression
+#: pins the arithmetic rather than the number.
+FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS}
+#: Constants the other stub modules declare.  Empty until a run shows that the
+#: registered source reads one, for the same reason: the surface is what the
+#: source demonstrably needs, never what it might plausibly want.
+WFDB_STUB_CONSTANTS: Dict[str, object] = {}
+PWAVE_STUB_CONSTANTS: Dict[str, object] = {}
+
+
+class StubAttributeMissing(AttributeError):
+    """A producer asked an injected stub for an undeclared name.
+
+    An `AttributeError` subclass on purpose: a producer that guards with
+    `hasattr()` must see a plain missing attribute, exactly as it would with a
+    real module that lacks the name.  A bare access propagates and the harness
+    turns it into `P3_STUB_SURFACE_INCOMPLETE`, naming the module and the
+    attribute so the next run needs no guesswork.
+    """
+
+    def __init__(self, module_name: str, attribute: str) -> None:
+        super().__init__(
+            f"the injected {module_name!r} stub declares no {attribute!r}")
+        self.module_name = module_name
+        self.attribute = attribute
+
+
 class StubCallLog(object):
     """Every call a producer made into an injected dependency, in order."""
 
@@ -675,9 +719,28 @@ def build_injection(fixture: Mapping[str, object],
         return (numpy.array(rows, dtype="float64") if numpy is not None
                 else rows)
 
+    def missing_attribute(module_name: str):
+        """What an injected module does when asked for an undeclared name.
+
+        It records the request — so the bundle says exactly what the producer
+        wanted — and then refuses.  Returning a mock instead would let an
+        unknown dependency slip into the run wearing a stub's name, which is
+        the whole thing the injection exists to prevent.
+        """
+        def __getattr__(name: str):
+            log.record(f"{module_name}.__getattr__", requested=name,
+                       declared=False)
+            raise StubAttributeMissing(module_name, name)
+
+        return __getattr__
+
     return ({"rdrecord": rdrecord, "rdann": rdann, "rdsamp": rdsamp,
              "dl_database": dl_database, "detect_r": detect_r,
-             "rr_features": rr_features, "pwave_features": pwave_features},
+             "rr_features": rr_features, "pwave_features": pwave_features,
+             "_missing_attribute": missing_attribute,
+             "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
+                            "frontend": dict(FRONTEND_STUB_CONSTANTS),
+                            "pwave": dict(PWAVE_STUB_CONSTANTS)}},
             log)
 
 
@@ -713,15 +776,29 @@ class InjectedModules(object):
             setattr(module, key, value)
         return module
 
+    def _surface(self, name: str, attributes: Mapping[str, object]
+                 ) -> types.ModuleType:
+        """One stub module: its declared surface, and a refusal for the rest.
+
+        The declared constants come from the module-level plan, and anything
+        else raises :class:`StubAttributeMissing` through PEP 562's module
+        `__getattr__` — recorded first, so a stop names what was wanted.
+        """
+        declared = dict(attributes)
+        declared.update(self.stubs["_constants"].get(name, {}))
+        module = self._module(name, declared)
+        module.__getattr__ = self.stubs["_missing_attribute"](name)
+        return module
+
     def __enter__(self) -> "InjectedModules":
-        wfdb = self._module("wfdb", {
+        wfdb = self._surface("wfdb", {
             k: self.stubs[k]
             for k in ("rdrecord", "rdann", "rdsamp", "dl_database")})
-        frontend = self._module("frontend", {
+        frontend = self._surface("frontend", {
             "detect_r": self.stubs["detect_r"],
             "rr_features": self.stubs["rr_features"]})
-        pwave = self._module("pwave",
-                             {"pwave_features": self.stubs["pwave_features"]})
+        pwave = self._surface("pwave",
+                              {"pwave_features": self.stubs["pwave_features"]})
         package = self._module(REGISTERED_SOURCE_PACKAGE, {})
         package.__path__ = []                                # type: ignore[attr-defined]
         setattr(package, "frontend", frontend)
@@ -1111,6 +1188,16 @@ def _compile_and_exec(body: bytes, label: str,
             f"not a disagreement with the adapter.") from error
     try:
         exec(code, namespace)                                # noqa: S102
+    except StubAttributeMissing as error:
+        raise SourceHarnessError(
+            P3_STUB_SURFACE_INCOMPLETE,
+            f"at import time the source read {error.attribute!r} from the "
+            f"injected {error.module_name!r} stub, which does not declare it.  "
+            f"That is this harness's injection surface being incomplete, not "
+            f"the source being broken and not a disagreement with the "
+            f"adapter: declare the name deliberately, with a value that "
+            f"cannot change the behaviour under test, and re-run every "
+            f"fixture.") from error
     except Exception as error:                               # noqa: BLE001
         raise SourceHarnessError(
             P3_SOURCE_UNLOADABLE,
@@ -1430,6 +1517,13 @@ def trace_call(function: Callable, code, kwargs: Mapping[str, object],
     sys.settrace(global_tracer)
     try:
         returned = function(**dict(kwargs))
+    except StubAttributeMissing as error:
+        raise SourceHarnessError(
+            P3_STUB_SURFACE_INCOMPLETE,
+            f"while running, the producer read {error.attribute!r} from the "
+            f"injected {error.module_name!r} stub, which does not declare it.  "
+            f"The injection surface is incomplete; that is not a "
+            f"disagreement with the adapter.") from error
     except Exception as error:                               # noqa: BLE001
         raise SourceHarnessError(
             status_on_error,
