@@ -1327,29 +1327,97 @@ BINDING_PLAN: Tuple[Tuple[Tuple[str, ...], str], ...] = (
     (("ddir", "dir", "data_dir", "datadir", "path", "root", "db_dir"),
      "data_dir"),
     (("fs", "sampling_rate", "rate"), "fs"),
+    # The 20260815T233808 run established that the registered `build_record`
+    # is handed its inputs rather than reading them: its required parameters
+    # are `sig`, `ann_sample` and `ann_symbol`.  That makes the fixture's data
+    # an **argument**, which is a more direct injection than a reader stub —
+    # and the values below are the very same objects the stub readers hand
+    # back, so a producer that uses either route sees one world.
+    (("sig", "signal", "x", "p_signal", "record_signal"), "signal"),
+    (("ann_sample", "ann_samples", "samples", "sample", "ann_idx"),
+     "annotation_samples"),
+    (("ann_symbol", "ann_symbols", "symbols", "symbol", "sym"),
+     "annotation_symbols"),
     (("use_detected", "detected", "use_detect"), "use_detected"),
     (("split", "which"), "split"),
     (("win_before", "before"), "win_before"),
     (("win_after", "after"), "win_after"),
 )
-BINDING_VALUES: Dict[str, object] = {
-    "record_name": "SYNTHETIC",
-    "data_dir": "<synthetic>",
-    "fs": FIXTURE_FS,
-    "use_detected": True,
-    "split": "DS1",
-    "win_before": BJ.WIN_BEFORE,
-    "win_after": BJ.WIN_AFTER,
+#: What each plan key is worth, and why it cannot change the behaviour under
+#: test.  Recorded rather than only computed, because a reviewer's question
+#: about an injected argument is always "why that value".
+BINDING_RATIONALE: Dict[str, str] = {
+    "record_name": "a name, never a path to anything real",
+    "data_dir": "a placeholder; nothing is read from a directory",
+    "fs": (f"the registered {FIXTURE_FS} Hz, so the source's own "
+           f"int(0.15 * fs) lands on the registered "
+           f"{Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES}-sample tolerance"),
+    "signal": ("the fixture's ramp signal, identical to what the injected "
+               "reader returns; its length is the boundary the cut uses"),
+    "annotation_samples": ("the fixture's annotation samples, in the "
+                           "fixture's own order — the order is under test"),
+    "annotation_symbols": ("the fixture's symbols, in the same order as the "
+                           "samples"),
+    "use_detected": ("True: the registered rows come from detector order, "
+                     "which is what the fixtures pin"),
+    "split": "a label; no split is opened",
+    "win_before": f"the frozen {BJ.WIN_BEFORE}-sample window",
+    "win_after": f"the frozen {BJ.WIN_AFTER}-sample window",
 }
 
 
-def bind_source_arguments(function: Callable) -> Dict[str, object]:
+def binding_values(fixture: Mapping[str, object]) -> Dict[str, object]:
+    """The value each plan key takes for one fixture.
+
+    Fixture-dependent by necessity: a producer that receives its signal and
+    annotations as arguments must receive *this* fixture's, and they are built
+    the same way the injected readers build theirs so the two routes cannot
+    disagree.
+    """
+    annotations = [(int(s), str(y)) for s, y in fixture["annotations"]]
+    numpy = _numpy()
+    samples = [s for s, _ in annotations]
+    return {
+        "record_name": "SYNTHETIC",
+        "data_dir": "<synthetic>",
+        "fs": FIXTURE_FS,
+        "signal": make_ramp_signal(int(fixture["signal_length"])),
+        "annotation_samples": (numpy.array(samples, dtype="int64")
+                               if numpy is not None else list(samples)),
+        "annotation_symbols": [y for _, y in annotations],
+        "use_detected": True,
+        "split": "DS1",
+        "win_before": BJ.WIN_BEFORE,
+        "win_after": BJ.WIN_AFTER,
+    }
+
+
+def _describe_binding(key: str, value: object) -> str:
+    """A short description of an injected argument, for the bundle.
+
+    The signal is three thousand samples long; its `repr` in a result file
+    would bury the plan it is meant to document.
+    """
+    length = getattr(value, "shape", None) or (
+        len(value) if isinstance(value, (list, tuple)) else None)
+    if length is not None:
+        return f"{key}: {type(value).__name__} of {length}"
+    return f"{key}: {value!r}"
+
+
+def bind_source_arguments(function: Callable,
+                          fixture: Mapping[str, object]) -> Dict[str, object]:
     """Bind the producer's parameters from the declared plan, or stop.
 
     Nothing is invented: a parameter is bound when its name matches the plan or
     when it has a default of its own, and anything else raises
     `P3_SOURCE_SIGNATURE_UNBINDABLE` — a harness stop, never a verdict about
     the adapter.
+
+    The stop names the **whole signature**, not only what went unbound.  The
+    20260815T233808 run had to be reopened to find out what `build_record`
+    actually takes; a stop that says what it saw makes the next gap a single
+    run rather than a round trip.
     """
     import inspect                                           # noqa: PLC0415
     try:
@@ -1359,6 +1427,7 @@ def bind_source_arguments(function: Callable) -> Dict[str, object]:
             P3_SOURCE_SIGNATURE_UNBINDABLE,
             f"the signature of {getattr(function, '__name__', '?')} could not "
             f"be read: {error}") from error
+    values = binding_values(fixture)
     bound: Dict[str, object] = {}
     plan: List[Dict[str, object]] = []
     unbound: List[str] = []
@@ -1372,9 +1441,11 @@ def bind_source_arguments(function: Callable) -> Dict[str, object]:
                 key = value_key
                 break
         if key is not None:
-            bound[name] = BINDING_VALUES[key]
+            bound[name] = values[key]
             plan.append({"parameter": name, "bound_from": "plan",
-                         "value": repr(BINDING_VALUES[key])})
+                         "plan_key": key,
+                         "value": _describe_binding(key, values[key]),
+                         "why": BINDING_RATIONALE[key]})
         elif parameter.default is not parameter.empty:
             plan.append({"parameter": name, "bound_from": "producer_default",
                          "value": repr(parameter.default)})
@@ -1385,11 +1456,14 @@ def bind_source_arguments(function: Callable) -> Dict[str, object]:
         raise SourceHarnessError(
             P3_SOURCE_SIGNATURE_UNBINDABLE,
             f"the producer has required parameters this PREP's declared "
-            f"binding plan does not cover: {unbound}.  The plan is extended "
-            f"deliberately and re-reviewed; a parameter is never filled with a "
-            f"guess.")
+            f"binding plan does not cover: {unbound}.  Its full signature is "
+            f"({', '.join(str(p) for p in signature.parameters.values())}), "
+            f"and the plan bound {sorted(bound)}.  The plan is extended "
+            f"deliberately and re-reviewed, with a stated reason why the value "
+            f"cannot change the behaviour under test; a parameter is never "
+            f"filled with a guess.")
     return {"kwargs": bound, "plan": plan,
-            "parameters": list(signature.parameters)}
+            "parameters": [str(p) for p in signature.parameters.values()]}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2331,7 +2405,7 @@ def observe_source(build_record: Callable, fixture: Mapping[str, object],
                    dictionary: LabelDictionary
                    ) -> Tuple[Dict[str, object], Dict[str, object]]:
     """Run the registered producer on one fixture and read what it did."""
-    binding = bind_source_arguments(build_record)
+    binding = bind_source_arguments(build_record, fixture)
     returned, trace = trace_call(build_record, build_record.__code__,
                                  binding["kwargs"])
     observation = project_observation(fixture, trace, returned, dictionary,
@@ -2447,8 +2521,7 @@ def oracle_harness_identity() -> Dict[str, object]:
                              for name in ORACLE_HARNESS_FUNCTIONS},
                "fixtures": [fixture_card(n) for n in fixture_names()],
                "binding_plan": [[list(a), k] for a, k in BINDING_PLAN],
-               "binding_values": {k: repr(v)
-                                  for k, v in sorted(BINDING_VALUES.items())},
+               "binding_rationale": dict(sorted(BINDING_RATIONALE.items())),
                "tolerance": TOLERANCE, "win_before": BJ.WIN_BEFORE,
                "win_after": BJ.WIN_AFTER, "module_version": MODULE_VERSION}
     return {"oracle_harness_sha256": canonical_digest(payload),
@@ -3397,6 +3470,7 @@ def module_capabilities() -> Tuple[str, ...]:
             "load_source_under_injection", "ProducerSession", "SourcePermit",
             "RegisteredSourcePermit", "SyntheticSourcePermit",
             "synthetic_permit", "validate_permit_for_execution",
+            "binding_values", "BINDING_PLAN", "BINDING_RATIONALE",
             "assert_registered_provenance",
             "source_factory", "bind_source_arguments",
             "fetch_registered_source", "oracle_harness_identity",

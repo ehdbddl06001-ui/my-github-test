@@ -1675,15 +1675,14 @@ def test_the_harness_identity_changes_when_the_harness_changes():
               "changing the fixture set changes it")
     finally:
         P3.FIXTURES = saved
-    saved_values = dict(P3.BINDING_VALUES)
+    saved_plan = P3.BINDING_PLAN
     try:
-        P3.BINDING_VALUES["fs"] = 250
+        P3.BINDING_PLAN = saved_plan[:-1]
         check(P3.oracle_harness_identity()["oracle_harness_sha256"]
               != identity["oracle_harness_sha256"],
               "and so does changing what the producer is called with")
     finally:
-        P3.BINDING_VALUES.clear()
-        P3.BINDING_VALUES.update(saved_values)
+        P3.BINDING_PLAN = saved_plan
     check(P3.oracle_harness_identity()["oracle_harness_sha256"] ==
           identity["oracle_harness_sha256"], "restoring both restores it")
 
@@ -2109,6 +2108,137 @@ UNDECLARED_READING_PRODUCER = FAITHFUL.replace(
     "from .frontend import detect_r, rr_features\n"
     "import frontend as FE\n"
     "_UNUSED = FE.SOMETHING_NOBODY_DECLARED")
+
+
+#: A producer shaped the way the registered one turned out to be: it is handed
+#: its signal and annotations rather than reading them.  The 20260815T233808
+#: run established the required parameters `sig`, `ann_sample`, `ann_symbol`.
+ARGUMENT_SHAPED_PRODUCER = '''
+from .frontend import detect_r, rr_features, FS
+
+WIN_BEFORE = 150
+WIN_AFTER = 150
+AAMI = {"N": "N", "L": "N", "R": "N", "e": "N", "j": "N",
+        "A": "S", "a": "S", "J": "S", "S": "S", "V": "V", "E": "V"}
+
+
+def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
+    x = sig
+    peaks = detect_r([row[0] for row in x], FS)
+    tol = int(0.15 * FS)
+    samples = [int(s) for s in ann_sample]
+    symbols = list(ann_symbol)
+    order = sorted(range(len(samples)), key=lambda k: (samples[k], k))
+    used = set()
+    beats, ys, keep = [], [], []
+    for i, p in enumerate(peaks):
+        p = int(p)
+        best, bd = None, tol + 1
+        for rank in range(len(order)):
+            if rank in used:
+                continue
+            d = abs(samples[order[rank]] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        used.add(best)
+        j = order[best]
+        cls = AAMI.get(symbols[j], "")
+        if not cls:
+            continue
+        if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
+            continue
+        keep.append(i)
+        beats.append([float(v[0]) for v in x[p - WIN_BEFORE:p + WIN_AFTER]])
+        ys.append(cls)
+    rr_all = rr_features(peaks, FS)
+    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}
+'''
+
+
+def test_a_producer_handed_its_inputs_as_arguments_runs_and_is_observed():
+    """The shape the registered `build_record` turned out to have.
+
+    `sig`, `ann_sample` and `ann_symbol` are required parameters, so the
+    fixture's data goes in as arguments — a more direct injection than a
+    reader stub, and one the projection reads exactly as before.
+    """
+    result = differential_for(ARGUMENT_SHAPED_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "an argument-shaped producer runs and agrees on all six fixtures")
+    for name in ("sig", "ann_sample", "ann_symbol"):
+        check(any(name in aliases for aliases, _key in P3.BINDING_PLAN),
+              f"and {name!r} is covered by the declared plan")
+
+
+def test_every_injected_argument_carries_a_stated_reason():
+    """"Why that value" is answerable for each one, from the module itself."""
+    keys = {key for _aliases, key in P3.BINDING_PLAN}
+    missing = sorted(keys - set(P3.BINDING_RATIONALE))
+    check(missing == [],
+          f"every plan key states why its value is safe: missing {missing}")
+    check(str(P3.BINDING_RATIONALE["fs"]).find("54") > 0,
+          "the sampling rate's reason is the registered tolerance it produces")
+    # The rationale is folded into the harness identity, so editing a reason
+    # invalidates a PASS recorded under the old one.
+    before = P3.oracle_harness_identity()["oracle_harness_sha256"]
+    saved = dict(P3.BINDING_RATIONALE)
+    try:
+        P3.BINDING_RATIONALE["fs"] = "because it seemed fine"
+        check(P3.oracle_harness_identity()["oracle_harness_sha256"] != before,
+              "and the reasons are part of the harness identity, so rewriting "
+              "one changes it")
+    finally:
+        P3.BINDING_RATIONALE.clear()
+        P3.BINDING_RATIONALE.update(saved)
+    check(P3.oracle_harness_identity()["oracle_harness_sha256"] == before,
+          "restoring them restores it")
+
+
+def test_the_injected_arguments_match_what_the_reader_stubs_return():
+    """One world: a producer using either route sees the same fixture."""
+    for name in P3.fixture_names():
+        fixture = P3.FIXTURES_BY_NAME[name]
+        values = P3.binding_values(fixture)
+        stubs, _log = P3.build_injection(fixture)
+        record = stubs["rdrecord"]("SYNTHETIC")
+        annotation = stubs["rdann"]("SYNTHETIC", "atr")
+        check(len(values["signal"]) == len(record.p_signal)
+              and float(values["signal"][7][0]) == float(record.p_signal[7][0]),
+              f"{name}: the argument signal is the reader stub's signal")
+        check([int(v) for v in values["annotation_samples"]] ==
+              [int(v) for v in annotation.sample],
+              f"{name}: the argument annotation samples are the stub's, in "
+              f"the fixture's own order")
+        check(list(values["annotation_symbols"]) == list(annotation.symbol),
+              f"{name}: and so are the symbols")
+        check(values["fs"] == P3.FRONTEND_STUB_CONSTANTS["FS"],
+              f"{name}: the injected fs is the declared constant")
+
+
+def test_an_unbindable_signature_reports_the_whole_signature():
+    """A stop that says what it saw makes the next gap one run, not two."""
+    unknown = ARGUMENT_SHAPED_PRODUCER.replace(
+        "def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):",
+        "def build_record(rec, sig, ann_sample, ann_symbol, mystery_thing):")
+    try:
+        differential_for(unknown)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_SOURCE_SIGNATURE_UNBINDABLE,
+              "an uncovered required parameter stops the run")
+        check("'mystery_thing'" in str(error) or "mystery_thing" in str(error),
+              "naming what could not be bound")
+        check("full signature is (rec, sig, ann_sample, ann_symbol, "
+              "mystery_thing)" in str(error),
+              "and printing the whole signature it observed")
+        check("the plan bound ['ann_sample', 'ann_symbol', 'rec', 'sig']"
+              in str(error),
+              "and what it did manage to bind")
+        check("never filled with a guess" in str(error),
+              "and that a value is never guessed into it")
+    else:                                                    # pragma: no cover
+        raise AssertionError("an uncovered parameter was filled in")
 
 
 def test_a_producer_that_reads_a_declared_constant_loads_and_runs():
