@@ -206,8 +206,21 @@ in `REFUSED_TOKENS` and refused **by name**, with a stated reason.  P1/P2
 approved reading registered bytes for identity; P3 loads and executes a
 registered source file, which is a separate decision.
 
-**A token is not an entry point.**  Producer bytes are compiled only through
-`SourcePermit`, and the two kinds are not interchangeable:
+**A token is not an entry point, and neither is a permit-shaped object.**
+Producer bytes are compiled only through `SourcePermit`, which is a **sealed
+snapshot of exactly two types**: the base class cannot be instantiated, no
+third kind can be defined, no field can be set or deleted after minting, and
+the inventory is handed out read-only.  Execution compares `type(permit)` by
+identity — never `isinstance`, which a subclass satisfies — and
+`validate_permit_for_execution()` re-derives every claim **from the permit's
+own bytes on the last line before the compiler**: the recomputed digest must
+equal the permit's, and the `kind`/`synthetic`/`approval` combination must be
+exactly one of two, with the registered one re-checking the token, the guard
+and the inventory identity, and the synthetic one requiring a digest that is
+not the registered file's.  An object that skipped its constructor, a
+look-alike, and a permit edited after minting all fail there.
+
+The two kinds are not interchangeable:
 
 - `RegisteredSourcePermit` is minted **only** inside
   `fetch_registered_source()`, with a module-private key, after the terminal
@@ -436,6 +449,30 @@ is built and again immediately before execution.  Regression:
 `test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
+
+**D9 (2026-08-14) — second-review blocker closed: permits are sealed, and
+re-validated before the compiler.**  D7 introduced the permit but left it a
+plain object: the base class was constructible, its slots were writable, and
+callers checked `isinstance`.  A third kind of permit could therefore be
+assembled by hand — claiming `synthetic`, carrying the registered bytes — and
+it skipped both the guard re-check (it was not a `RegisteredSourcePermit`) and
+the digest refusal (no constructor ran); a legitimately minted synthetic
+permit could be edited to the same effect.  The finding is accepted in full.
+`SourcePermit` now refuses direct construction, refuses any further subclass
+at class-creation time, refuses attribute assignment and deletion after
+minting, and exposes its inventory as a read-only mapping.  Execution compares
+the type by identity, and `validate_permit_for_execution()` re-derives the
+digest from the permit's own bytes and re-checks the whole
+`kind`/`synthetic`/`approval` combination — plus the token, the guard and the
+inventory identity for a registered permit — immediately before
+`_compile_and_exec()`, on every route.  Regressions:
+`test_a_hand_built_permit_cannot_execute_the_registered_bytes` (the reported
+bypass verbatim, plus a constructor-skipping forgery, with compiles and mkdirs
+counted at zero), `test_a_permit_subclass_is_not_a_permit`,
+`test_a_minted_permit_cannot_be_edited_afterwards`,
+`test_validation_runs_again_immediately_before_the_compiler` (asserts every
+compile is immediately preceded by a validation) and
+`test_a_registered_permit_is_refused_once_the_guard_closes_again`.
 
 **D8 (2026-08-14) — Codex review blocker 2 closed: the injection now spans the
 call.**  The first version closed the `InjectedModules` context as soon as the

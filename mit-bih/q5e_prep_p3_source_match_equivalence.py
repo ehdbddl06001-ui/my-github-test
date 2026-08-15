@@ -754,28 +754,113 @@ class InjectedModules(object):
 #
 # Nothing else can produce a permit, and nothing without one is compiled.
 # ─────────────────────────────────────────────────────────────────────────────
+# Sealing, and why a permit is not just a record
+# ---------------------------------------------
+# A first version of this made the permit a plain object: the base class was
+# constructible, its slots were writable, and the callers checked
+# `isinstance`.  That left a third kind of permit anyone could build — hand
+# construct the base class, set `kind = "synthetic"` and `body` to the
+# registered bytes, and both the guard re-check (skipped, because the object
+# is not a `RegisteredSourcePermit`) and the digest refusal (skipped, because
+# no constructor ran) were simply absent.  A legitimately minted synthetic
+# permit could be edited afterwards to the same effect.
+#
+# So a permit is now a **sealed snapshot of exactly two types**:
+#
+# * the base class cannot be instantiated and cannot be subclassed further;
+# * fields cannot be set or deleted after minting, and the inventory is handed
+#   out as a read-only mapping;
+# * execution accepts `type(permit)` being one of the two, by identity, never
+#   `isinstance` — a subclass is not one of them;
+# * and every claim the permit makes is **re-derived from its own bytes
+#   immediately before the compiler is reached**, not merely checked when it
+#   was minted.  A permit is evidence, not an assertion.
 _REGISTERED_PERMIT_KEY = object()
+_PERMIT_CONSTRUCTION_KEY = object()
+PERMIT_KIND_REGISTERED = "registered"
+PERMIT_KIND_SYNTHETIC = "synthetic"
 
 
 class SourcePermit(object):
-    """Permission to execute one producer's bytes, and the rules it carries."""
+    """Permission to execute one producer's bytes, and the rules it carries.
+
+    Not constructible, not subclassable beyond the two kinds below, and not
+    editable once minted.
+    """
 
     __slots__ = ("kind", "sha256", "body", "inventory", "synthetic", "label",
-                 "approval")
+                 "approval", "_sealed")
+    #: Filled once, immediately after the two concrete permits are defined.
+    #: While it is empty the module is still defining them; afterwards, any
+    #: further subclass is refused at class-creation time.
+    _PERMIT_TYPES: Tuple[type, ...] = ()
+
+    def __init_subclass__(cls, **kwargs: object) -> None:
+        super().__init_subclass__(**kwargs)
+        if SourcePermit._PERMIT_TYPES:
+            raise P3NotApprovedError(
+                f"refusing to define {cls.__name__}: there are exactly two "
+                f"kinds of source permit, and a third would be a rule nobody "
+                f"reviewed.  {APPROVAL_NOTE}")
+
+    def __init__(self, construction_key: object = None, kind: str = "",
+                 body: bytes = b"", inventory: Mapping[str, object] = (),
+                 synthetic: bool = False, label: str = "",
+                 approval: Optional[str] = None) -> None:
+        # Every parameter has a default so that `SourcePermit()` reaches the
+        # refusal below and says *why*, rather than dying on a signature and
+        # leaving the reader to guess whether the rule exists.
+        if construction_key is not _PERMIT_CONSTRUCTION_KEY:
+            raise P3NotApprovedError(
+                "a SourcePermit is not constructible: it is minted by "
+                "fetch_registered_source() or by synthetic_permit(), which are "
+                "where the gates live.  Building one directly would be a third "
+                f"kind of permit that skipped both.  {APPROVAL_NOTE}")
+        if type(self) not in SourcePermit._PERMIT_TYPES:
+            raise P3NotApprovedError(
+                f"{type(self).__name__} is not one of the two permit types; a "
+                f"subclass inherits the name and none of the checks.  "
+                f"{APPROVAL_NOTE}")
+        object.__setattr__(self, "kind", str(kind))
+        object.__setattr__(self, "sha256", _sha256_bytes(body))
+        object.__setattr__(self, "body", bytes(body))
+        object.__setattr__(self, "inventory",
+                           types.MappingProxyType(dict(inventory)))
+        object.__setattr__(self, "synthetic", bool(synthetic))
+        object.__setattr__(self, "label", str(label))
+        object.__setattr__(self, "approval", approval)
+        object.__setattr__(self, "_sealed", True)
+
+    def __setattr__(self, name: str, value: object) -> None:
+        if getattr(self, "_sealed", False):
+            raise P3NotApprovedError(
+                f"a source permit is a sealed snapshot; {name!r} cannot be "
+                f"changed after it is minted.  Editing one is how a fixture "
+                f"permit would become permission to run the registered "
+                f"source.  {APPROVAL_NOTE}")
+        object.__setattr__(self, name, value)                # pragma: no cover
+
+    def __delattr__(self, name: str) -> None:
+        raise P3NotApprovedError(
+            f"a source permit is a sealed snapshot; {name!r} cannot be "
+            f"removed from it.  {APPROVAL_NOTE}")
 
     def describe(self) -> Dict[str, object]:
         return {"kind": self.kind, "sha256": self.sha256,
                 "synthetic": self.synthetic, "label": self.label,
-                "bytes": len(self.body)}
+                "bytes": len(self.body), "sealed": True}
 
 
 class RegisteredSourcePermit(SourcePermit):
     """Bytes that came from the registered file id and matched its digest.
 
-    Constructing one is a privileged act, so it re-runs every check rather
-    than trusting the caller that reached it: the module-private key, this
-    PREP's own approval token, the terminal execution guard, and the digest.
+    Minting one is a privileged act, so it re-runs every check rather than
+    trusting the caller that got here: the module-private key, this PREP's own
+    approval token, the terminal execution guard, and the digest.  Every one
+    of them is checked again before the bytes reach a compiler.
     """
+
+    __slots__ = ()
 
     def __init__(self, key: object, body: bytes,
                  inventory: Mapping[str, object],
@@ -799,13 +884,9 @@ class RegisteredSourcePermit(SourcePermit):
             raise SourceHarnessError(
                 P3_SOURCE_IDENTITY_MISMATCH,
                 "the inventory does not describe the bytes it was handed")
-        self.kind = "registered"
-        self.sha256 = digest
-        self.body = bytes(body)
-        self.inventory = dict(inventory)
-        self.synthetic = False
-        self.label = REGISTERED_SOURCE_NAME
-        self.approval = approval
+        SourcePermit.__init__(self, _PERMIT_CONSTRUCTION_KEY,
+                              PERMIT_KIND_REGISTERED, body, inventory, False,
+                              REGISTERED_SOURCE_NAME, approval)
 
 
 class SyntheticSourcePermit(SourcePermit):
@@ -813,9 +894,12 @@ class SyntheticSourcePermit(SourcePermit):
 
     No approval is required, because nothing registered is reachable through
     it — and that is enforced rather than asserted: bytes whose digest is the
-    registered `data.py` are refused here, so this route cannot become a way
-    to execute the registered source without the guard.
+    registered `data.py` are refused here **and again** before execution, so
+    this route cannot become a way to run the registered source, by editing
+    the permit or by any other means.
     """
+
+    __slots__ = ()
 
     def __init__(self, body: bytes, label: str = "synthetic.py") -> None:
         digest = _sha256_bytes(body)
@@ -825,26 +909,108 @@ class SyntheticSourcePermit(SourcePermit):
                 f"registered {REGISTERED_SOURCE_NAME}.  Executing those needs "
                 f"the production route, both barriers and the id gate.  "
                 f"{APPROVAL_NOTE}")
-        self.kind = "synthetic"
-        self.sha256 = digest
-        self.body = bytes(body)
-        self.synthetic = True
-        self.label = label
-        self.approval = None
-        self.inventory = {
-            "requested_file_id": "<synthetic>", "file_id": "<synthetic>",
-            "name": label, "bytes": len(body), "observed_bytes": len(body),
-            "observed_sha256": digest,
-            "registered_sha256": REGISTERED_SOURCE_SHA256,
-            "digest_matches_registered": False, "read": True,
-            "synthetic_fixture": True, "problems": [],
-            "note": SYNTHETIC_NOTE}
+        SourcePermit.__init__(
+            self, _PERMIT_CONSTRUCTION_KEY, PERMIT_KIND_SYNTHETIC, body,
+            {"requested_file_id": "<synthetic>", "file_id": "<synthetic>",
+             "name": label, "bytes": len(body), "observed_bytes": len(body),
+             "observed_sha256": digest,
+             "registered_sha256": REGISTERED_SOURCE_SHA256,
+             "digest_matches_registered": False, "read": True,
+             "synthetic_fixture": True, "problems": [],
+             "note": SYNTHETIC_NOTE},
+            True, label, None)
+
+
+#: Closes the type set.  Any further subclass now fails at class creation, and
+#: `__init__` refuses anything whose exact type is not one of these two.
+SourcePermit._PERMIT_TYPES = (RegisteredSourcePermit, SyntheticSourcePermit)
 
 
 def synthetic_permit(body: bytes, label: str = "synthetic.py"
                      ) -> SyntheticSourcePermit:
     """The only way to get a permit for bytes that are not the registered file."""
     return SyntheticSourcePermit(body, label=label)
+
+
+def validate_permit_for_execution(permit: object) -> Dict[str, object]:
+    """Re-derive every claim a permit makes, from the bytes it actually holds.
+
+    Called immediately before the compiler, on every route, because "it was
+    checked when it was minted" is a statement about the past.  An object that
+    never ran a constructor, one whose type merely resembles a permit, or one
+    that was edited afterwards all fail here — the digest is recomputed from
+    `body`, and the kind, the synthetic flag and the approval must form one of
+    exactly two combinations:
+
+    * `registered` — not synthetic, this PREP's own approval token, the
+      registered digest, an inventory that describes those same bytes, and the
+      terminal guard still open;
+    * `synthetic` — synthetic, no approval, and a digest that is **not** the
+      registered one.
+
+    Anything else is refused, and refused as an approval failure rather than as
+    something about the adapter.
+    """
+    kind = type(permit)
+    if kind not in SourcePermit._PERMIT_TYPES:
+        raise P3NotApprovedError(
+            f"{getattr(kind, '__name__', kind)!r} is not one of the two source "
+            f"permits.  A look-alike, a subclass or a hand-built object is not "
+            f"a permit, and this is checked by type identity for exactly that "
+            f"reason.  {APPROVAL_NOTE}")
+    body = getattr(permit, "body", None)
+    if not isinstance(body, bytes):
+        raise P3NotApprovedError(
+            "the permit carries no bytes to execute; it never completed a "
+            f"mint.  {APPROVAL_NOTE}")
+    digest = _sha256_bytes(body)
+    if digest != getattr(permit, "sha256", None):
+        raise P3NotApprovedError(
+            f"the permit says its bytes hash to {getattr(permit, 'sha256', None)!r} "
+            f"and they hash to {digest}: the body or the digest was changed "
+            f"after it was minted.  {APPROVAL_NOTE}")
+    inventory = dict(getattr(permit, "inventory", {}) or {})
+    approval = getattr(permit, "approval", None)
+    if kind is RegisteredSourcePermit:
+        if (getattr(permit, "kind", None) != PERMIT_KIND_REGISTERED
+                or getattr(permit, "synthetic", None) is not False):
+            raise P3NotApprovedError(
+                "a registered permit must say so in every field; this one "
+                f"does not.  {APPROVAL_NOTE}")
+        require_execution_approval(
+            approval, f"executing the registered {REGISTERED_SOURCE_NAME}")
+        _terminal_execution_guard()
+        if digest != REGISTERED_SOURCE_SHA256:
+            raise SourceHarnessError(
+                P3_SOURCE_IDENTITY_MISMATCH,
+                f"a registered permit holds bytes hashing to {digest}, not the "
+                f"registered {REGISTERED_SOURCE_SHA256}")
+        if str(inventory.get("observed_sha256") or "") != digest:
+            raise SourceHarnessError(
+                P3_SOURCE_IDENTITY_MISMATCH,
+                "the permit's inventory does not describe the bytes it holds")
+    else:
+        if (getattr(permit, "kind", None) != PERMIT_KIND_SYNTHETIC
+                or getattr(permit, "synthetic", None) is not True):
+            raise P3NotApprovedError(
+                "a synthetic permit must say so in every field; this one does "
+                f"not.  {APPROVAL_NOTE}")
+        if approval is not None:
+            raise P3NotApprovedError(
+                "a synthetic permit carries no approval, because it opens "
+                f"nothing that needs one.  {APPROVAL_NOTE}")
+        if digest == REGISTERED_SOURCE_SHA256:
+            raise P3NotApprovedError(
+                "a synthetic permit holds the registered "
+                f"{REGISTERED_SOURCE_NAME} bytes.  The synthetic route never "
+                f"executes those, however the permit was obtained.  "
+                f"{APPROVAL_NOTE}")
+        if inventory.get("digest_matches_registered") is not False:
+            raise P3NotApprovedError(
+                "a synthetic permit's inventory claims to describe the "
+                f"registered file.  {APPROVAL_NOTE}")
+    return {"kind": permit.kind, "sha256": digest,
+            "synthetic": bool(permit.synthetic), "revalidated": True}
 
 
 def _compile_and_exec(body: bytes, label: str,
@@ -883,16 +1049,10 @@ def load_source_under_injection(permit: SourcePermit,
     its own name, so nothing else in the process can pick it up, and the stub
     package is what a relative import resolves through.
     """
-    if not isinstance(permit, SourcePermit):
-        raise P3NotApprovedError(
-            "producer bytes are executed only through a SourcePermit.  Raw "
-            f"bytes and a token string are not one.  {APPROVAL_NOTE}")
-    if isinstance(permit, RegisteredSourcePermit):
-        # The permit was checked when it was minted; a barrier could have been
-        # closed since, and this is the last moment before execution.
-        require_execution_approval(permit.approval,
-                                   f"the registered {permit.label}")
-        _terminal_execution_guard()
+    # Everything the permit claims is re-derived here, from the bytes it
+    # actually holds, on the last line before the compiler.  Checking at mint
+    # time only says what was true then; this is what is true now.
+    validate_permit_for_execution(permit)
     installed = sys.modules.get("wfdb")
     frontend = sys.modules.get(f"{REGISTERED_SOURCE_PACKAGE}.frontend")
     if (getattr(installed, "rdrecord", None) is not stubs["rdrecord"]
@@ -974,10 +1134,10 @@ def source_factory(permit: SourcePermit) -> Callable:
     fixture into the next, which would make a later observation depend on an
     earlier one.
     """
-    if not isinstance(permit, SourcePermit):
-        raise P3NotApprovedError(
-            "a source factory is built from a SourcePermit, not from raw "
-            f"bytes.  {APPROVAL_NOTE}")
+    # Validated here as well as before the compiler: a caller that cannot open
+    # a session at all is a clearer failure than one that opens six and is
+    # refused inside each.  Neither check replaces the other.
+    validate_permit_for_execution(permit)
 
     def open_producer(fixture: Mapping[str, object]) -> ProducerSession:
         return ProducerSession(permit, fixture)
@@ -2865,10 +3025,7 @@ def _execute_with_permit(out_dir: str, permit: SourcePermit,
     pre-check, and the real candidate is assembled from the published fold
     afterwards and reported for external freezing.
     """
-    if not isinstance(permit, SourcePermit):
-        raise P3NotApprovedError(
-            "a P3 run is executed from a SourcePermit, never from raw bytes "
-            f"and a token.  {APPROVAL_NOTE}")
+    validate_permit_for_execution(permit)
     synthetic = bool(permit.synthetic)
     source_inventory = dict(permit.inventory)
     log: List[str] = [
@@ -2977,14 +3134,13 @@ def _execute_registered_p3(out_dir: str, permit: RegisteredSourcePermit,
                            auth_audit: Optional[Mapping[str, object]] = None
                            ) -> Dict[str, object]:   # pragma: no cover
     """The production run, reachable only from `run_p3()` past the guard."""
-    if not isinstance(permit, RegisteredSourcePermit):
+    if type(permit) is not RegisteredSourcePermit:            # noqa: E721
         raise P3NotApprovedError(
             "the registered route runs only from a RegisteredSourcePermit, "
             "which fetch_registered_source() mints after the guard and the id "
-            f"and digest gates.  {APPROVAL_NOTE}")
-    require_execution_approval(permit.approval,
-                               f"the registered {REGISTERED_SOURCE_NAME}")
-    _terminal_execution_guard()
+            "and digest gates.  The type is compared by identity: a subclass "
+            f"inherits the name and none of the checks.  {APPROVAL_NOTE}")
+    validate_permit_for_execution(permit)
     return _execute_with_permit(out_dir, permit, timestamp=timestamp,
                                 emit=emit, auth_audit=auth_audit)
 
@@ -3059,7 +3215,8 @@ def module_capabilities() -> Tuple[str, ...]:
             "discover_kept_rows", "build_injection", "InjectedModules",
             "load_source_under_injection", "ProducerSession", "SourcePermit",
             "RegisteredSourcePermit", "SyntheticSourcePermit",
-            "synthetic_permit", "source_factory", "bind_source_arguments",
+            "synthetic_permit", "validate_permit_for_execution",
+            "source_factory", "bind_source_arguments",
             "fetch_registered_source", "oracle_harness_identity",
             "candidate_record", "check_candidate_against_gate",
             "assert_fixture_contract", "fixture_card", "decide", "write_bundle",

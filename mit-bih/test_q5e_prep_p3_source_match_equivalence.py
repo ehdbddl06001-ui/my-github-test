@@ -386,7 +386,7 @@ def test_producer_bytes_are_executed_only_through_a_permit():
         try:
             P3.load_source_under_injection(impostor, stubs)
         except P3.P3NotApprovedError as error:
-            check("only through a SourcePermit" in str(error),
+            check("not one of the two source permits" in str(error),
                   f"the loader refuses {type(impostor).__name__} instead of a "
                   f"permit")
         else:                                                # pragma: no cover
@@ -412,6 +412,255 @@ def test_producer_bytes_are_executed_only_through_a_permit():
               "and even with the module's own key the closed guard refuses it")
     else:                                                    # pragma: no cover
         raise AssertionError("the guard did not stop a registered permit")
+
+
+class _counted_compiles(object):
+    """Count every compile and every mkdir for the length of a block."""
+
+    def __init__(self):
+        self.counts = {"compile": 0, "mkdir": 0}
+        self._compile = None
+        self._mkdir = None
+
+    def __enter__(self):
+        self._compile = P3._compile_and_exec
+        self._mkdir = os.mkdir
+
+        def counted_compile(*args, **kwargs):
+            self.counts["compile"] += 1
+            return self._compile(*args, **kwargs)
+
+        def counted_mkdir(*args, **kwargs):
+            self.counts["mkdir"] += 1
+            return self._mkdir(*args, **kwargs)
+
+        P3._compile_and_exec = counted_compile
+        os.mkdir = counted_mkdir
+        return self
+
+    def __exit__(self, *exc):
+        P3._compile_and_exec = self._compile
+        os.mkdir = self._mkdir
+        return False
+
+
+class _registered_bytes(object):
+    """Point the registered digest at bytes this test controls.
+
+    The real `data.py` is unreadable here, so "the registered bytes" have to
+    be simulated to test that they are refused.  Pointing the constant at a
+    fixture's own body is the same move a registration would make, and it is
+    put back afterwards.
+    """
+
+    def __init__(self, body):
+        self.body = body
+        self._saved = None
+
+    def __enter__(self):
+        self._saved = P3.REGISTERED_SOURCE_SHA256
+        P3.REGISTERED_SOURCE_SHA256 = hashlib.sha256(self.body).hexdigest()
+        return self.body
+
+    def __exit__(self, *exc):
+        P3.REGISTERED_SOURCE_SHA256 = self._saved
+        check(P3.REGISTERED_SOURCE_SHA256 ==
+              Q5E.M4_SOURCE_MAP_HASHES["data.py"],
+              "the registered digest constant is put back afterwards")
+        return False
+
+
+def test_a_hand_built_permit_cannot_execute_the_registered_bytes():
+    """The reported bypass, verbatim, plus the ways around the way around it.
+
+    A permit used to be a plain object: base class constructible, slots
+    writable, callers checking `isinstance`.  That made a third kind of permit
+    anyone could assemble — claim `synthetic`, carry the registered bytes, and
+    skip both the guard re-check and the digest refusal, because neither
+    constructor ran.
+    """
+    registered = b"# stands in for the registered data.py bytes\n"
+    with _registered_bytes(registered), _counted_compiles() as counter:
+        def hand_built():
+            permit = P3.SourcePermit()
+            permit.kind = "synthetic"
+            permit.body = registered
+            permit.sha256 = hashlib.sha256(registered).hexdigest()
+            permit.inventory = {}
+            permit.synthetic = True
+            permit.label = "synthetic.py"
+            permit.approval = None
+            return P3.source_factory(permit)
+
+        try:
+            hand_built()
+        except P3.P3NotApprovedError as error:
+            check("not constructible" in str(error),
+                  "the base permit cannot be constructed at all, and says why")
+        else:                                                # pragma: no cover
+            raise AssertionError("a hand-built permit was accepted")
+
+        # And if the constructor is skipped entirely, the pre-compile
+        # re-validation is what refuses it.
+        forged = object.__new__(P3.SyntheticSourcePermit)
+        for field, value in (("kind", "synthetic"), ("body", registered),
+                             ("sha256",
+                              hashlib.sha256(registered).hexdigest()),
+                             ("inventory",
+                              {"digest_matches_registered": False,
+                               "observed_sha256":
+                                   hashlib.sha256(registered).hexdigest()}),
+                             ("synthetic", True), ("label", "synthetic.py"),
+                             ("approval", None)):
+            object.__setattr__(forged, field, value)
+        for label, thunk in (
+                ("the session factory", lambda: P3.source_factory(forged)),
+                ("the loader", lambda: P3.load_source_under_injection(
+                    forged, P3.build_injection(P3.FIXTURES[0])[0])),
+                ("the executor", lambda: P3._execute_with_permit(
+                    "/nonexistent", forged, timestamp=STAMP))):
+            try:
+                thunk()
+            except P3.P3NotApprovedError as error:
+                check("holds the registered" in str(error)
+                      or "sealed snapshot" in str(error),
+                      f"{label} refuses a permit that never ran a constructor")
+            else:                                            # pragma: no cover
+                raise AssertionError(f"{label} accepted a forged permit")
+    check(counter.counts == {"compile": 0, "mkdir": 0},
+          f"and nothing was compiled and no directory was created: "
+          f"{counter.counts}")
+
+
+def test_a_permit_subclass_is_not_a_permit():
+    try:
+        class Sneaky(P3.SyntheticSourcePermit):              # noqa: F811
+            pass
+    except P3.P3NotApprovedError as error:
+        check("exactly two kinds of source permit" in str(error),
+              "a third permit type cannot even be defined")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a permit subclass was defined")
+    check(P3.SourcePermit._PERMIT_TYPES ==
+          (P3.RegisteredSourcePermit, P3.SyntheticSourcePermit),
+          "and the permitted set is exactly the two committed types")
+    # Type identity, not isinstance: a look-alike carrying the right fields is
+    # refused because it is not one of those two objects.
+    class LooksLikeOne(object):
+        kind = "synthetic"
+        body = b"x = 1\n"
+        sha256 = hashlib.sha256(b"x = 1\n").hexdigest()
+        inventory = {"digest_matches_registered": False}
+        synthetic = True
+        label = "synthetic.py"
+        approval = None
+
+    try:
+        P3.validate_permit_for_execution(LooksLikeOne())
+    except P3.P3NotApprovedError as error:
+        check("checked by type identity" in str(error),
+              "and a duck-typed look-alike is refused by type identity")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a look-alike passed validation")
+
+
+def test_a_minted_permit_cannot_be_edited_afterwards():
+    permit = P3.synthetic_permit(FAITHFUL.encode("utf-8"))
+    registered = b"# stands in for the registered data.py bytes\n"
+    for field, value in (("body", registered), ("sha256", "0" * 64),
+                         ("kind", "registered"), ("synthetic", False),
+                         ("approval", TOKEN), ("label", "data.py"),
+                         ("inventory", {})):
+        try:
+            setattr(permit, field, value)
+        except P3.P3NotApprovedError as error:
+            check("sealed snapshot" in str(error),
+                  f"{field} cannot be changed after the permit is minted")
+        else:                                                # pragma: no cover
+            raise AssertionError(f"{field} was edited on a minted permit")
+    try:
+        del permit.body
+    except P3.P3NotApprovedError:
+        check(True, "and nothing can be deleted from it either")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a permit field was deleted")
+    try:
+        permit.inventory["observed_sha256"] = "0" * 64
+    except TypeError:
+        check(True, "the inventory is handed out read-only, so it cannot be "
+                    "edited through the reference either")
+    else:                                                    # pragma: no cover
+        raise AssertionError("the permit inventory was mutated")
+    check(permit.sha256 == hashlib.sha256(FAITHFUL.encode("utf-8")).hexdigest(),
+          "and the permit still describes the bytes it was minted over")
+
+
+def test_validation_runs_again_immediately_before_the_compiler():
+    """Not "it was checked when it was minted" — checked now, from the bytes."""
+    order = []
+    saved_validate = P3.validate_permit_for_execution
+    saved_compile = P3._compile_and_exec
+
+    def traced_validate(permit):
+        order.append("validate")
+        return saved_validate(permit)
+
+    def traced_compile(*args, **kwargs):
+        order.append("compile")
+        return saved_compile(*args, **kwargs)
+
+    try:
+        P3.validate_permit_for_execution = traced_validate
+        P3._compile_and_exec = traced_compile
+        permit = P3.synthetic_permit(FAITHFUL.encode("utf-8"))
+        with P3.ProducerSession(permit, P3.FIXTURES[0]) as (build_record, _log):
+            build_record(rec="SYNTHETIC", ddir="<synthetic>")
+    finally:
+        P3.validate_permit_for_execution = saved_validate
+        P3._compile_and_exec = saved_compile
+    check("compile" in order, "the producer really was compiled")
+    for index, event in enumerate(order):
+        if event == "compile":
+            check(index > 0 and order[index - 1] == "validate",
+                  "and every compile is immediately preceded by a validation")
+    check(saved_validate(permit)["revalidated"] is True,
+          "the validator reports that it re-derived the permit's claims")
+
+
+def test_a_registered_permit_is_refused_once_the_guard_closes_again():
+    """The guard is re-checked at execution, not only when the permit is minted."""
+    body = FAITHFUL.encode("utf-8")
+    with _registered_bytes(body):
+        adapter = FakeDriveFile(good_metadata(body), body)
+        saved_bytes = P3.REGISTERED_SOURCE_BYTES
+        try:
+            P3.REGISTERED_SOURCE_BYTES = len(body)
+            with opened_guard():
+                permit = P3.fetch_registered_source(adapter, TOKEN)
+            check(type(permit) is P3.RegisteredSourcePermit,
+                  "a registered permit was minted while the guard was open")
+            with _counted_compiles() as counter:
+                for label, thunk in (
+                        ("the session factory",
+                         lambda: P3.source_factory(permit)),
+                        ("the loader",
+                         lambda: P3.load_source_under_injection(
+                             permit, P3.build_injection(P3.FIXTURES[0])[0])),
+                        ("the executor",
+                         lambda: P3._execute_registered_p3(
+                             "/nonexistent", permit, timestamp=STAMP))):
+                    try:
+                        thunk()
+                    except P3.P3NotApprovedError as error:
+                        check("not approved for execution" in str(error),
+                              f"{label} refuses it now that the guard is shut")
+                    else:                                    # pragma: no cover
+                        raise AssertionError(f"{label} used a stale permit")
+            check(counter.counts == {"compile": 0, "mkdir": 0},
+                  f"with nothing compiled and no directory made: "
+                  f"{counter.counts}")
+        finally:
+            P3.REGISTERED_SOURCE_BYTES = saved_bytes
 
 
 def test_the_synthetic_route_cannot_execute_the_registered_source():
