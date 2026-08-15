@@ -46,6 +46,14 @@ PREP's own execution-approval record.  Neither is open in this implementation
 PR, and neither may be opened by reusing the Q5-E audit token or the P1/P2
 PREP token — both are refused by name.
 
+Bytes are executed only through a `SourcePermit`, never from a raw body and a
+token string, and there are exactly two kinds: one minted solely inside
+`fetch_registered_source()` after the guard and the id and digest gates, and
+one for fixture bytes that **refuses the registered digest outright**.  The
+stub modules stay installed for the whole `ProducerSession` — the load *and*
+every call — so a dependency imported inside `build_record` reaches the
+injection too, rather than the real package a moment after the load finished.
+
 Failure is not equivalence failure
 ----------------------------------
 A malformed source, an import error, an unbindable signature, an unreadable
@@ -725,46 +733,180 @@ class InjectedModules(object):
         self._saved.clear()
 
 
-def load_registered_source(body: bytes, expected_sha256: str,
-                           stubs: Mapping[str, object],
-                           approval: Optional[str],
-                           source_label: Optional[str] = None
-                           ) -> types.ModuleType:
-    """Execute the registered source in an isolated namespace, after checking it.
+# ─────────────────────────────────────────────────────────────────────────────
+# Permits: who may execute which bytes.
+#
+# An earlier version took `(body, expected_sha256, approval)` and executed
+# whatever it was handed.  A public token string was then the only thing
+# between a caller and compiling the registered source with both barriers
+# closed, because the guard lived in `run_p3()` and nothing below re-checked
+# it.  Bytes are now executed only through a **permit**, and there are exactly
+# two kinds:
+#
+# * `RegisteredSourcePermit` — minted only inside `fetch_registered_source()`,
+#   with a module-private key, after the terminal guard, the file-id gate and
+#   the digest gate.  Its constructor re-checks the approval and the guard, so
+#   even a caller holding the key gets nothing while a barrier is closed.
+# * `SyntheticSourcePermit` — for a producer written by a test or a notebook
+#   fixture.  It **refuses bytes whose digest is the registered `data.py`**, so
+#   the synthetic route is structurally incapable of running the registered
+#   source, whatever approval the caller has.
+#
+# Nothing else can produce a permit, and nothing without one is compiled.
+# ─────────────────────────────────────────────────────────────────────────────
+_REGISTERED_PERMIT_KEY = object()
 
-    The digest is recomputed **from the bytes handed in** and compared before
-    the source is compiled, so an unverified byte is never executed.  The
-    module is built by hand rather than imported from a path: it never joins
-    `sys.modules` under its own name, so nothing else in the process can pick
-    it up, and the stub package is what a relative import resolves through.
+
+class SourcePermit(object):
+    """Permission to execute one producer's bytes, and the rules it carries."""
+
+    __slots__ = ("kind", "sha256", "body", "inventory", "synthetic", "label",
+                 "approval")
+
+    def describe(self) -> Dict[str, object]:
+        return {"kind": self.kind, "sha256": self.sha256,
+                "synthetic": self.synthetic, "label": self.label,
+                "bytes": len(self.body)}
+
+
+class RegisteredSourcePermit(SourcePermit):
+    """Bytes that came from the registered file id and matched its digest.
+
+    Constructing one is a privileged act, so it re-runs every check rather
+    than trusting the caller that reached it: the module-private key, this
+    PREP's own approval token, the terminal execution guard, and the digest.
     """
-    label = source_label or REGISTERED_SOURCE_NAME
-    require_execution_approval(approval, f"the registered {label}")
-    observed = _sha256_bytes(body)
-    if observed != expected_sha256:
+
+    def __init__(self, key: object, body: bytes,
+                 inventory: Mapping[str, object],
+                 approval: Optional[str]) -> None:
+        if key is not _REGISTERED_PERMIT_KEY:
+            raise P3NotApprovedError(
+                "a registered-source permit is minted only by "
+                "fetch_registered_source(), after the terminal guard and the "
+                "file-id and digest gates.  Constructing one directly is how a "
+                f"caller would route around those gates.  {APPROVAL_NOTE}")
+        require_execution_approval(
+            approval, f"executing the registered {REGISTERED_SOURCE_NAME}")
+        _terminal_execution_guard()
+        digest = _sha256_bytes(body)
+        if digest != REGISTERED_SOURCE_SHA256:
+            raise SourceHarnessError(
+                P3_SOURCE_IDENTITY_MISMATCH,
+                f"a registered permit was asked for over bytes hashing to "
+                f"{digest}, not the registered {REGISTERED_SOURCE_SHA256}")
+        if str(inventory.get("observed_sha256") or "") != digest:
+            raise SourceHarnessError(
+                P3_SOURCE_IDENTITY_MISMATCH,
+                "the inventory does not describe the bytes it was handed")
+        self.kind = "registered"
+        self.sha256 = digest
+        self.body = bytes(body)
+        self.inventory = dict(inventory)
+        self.synthetic = False
+        self.label = REGISTERED_SOURCE_NAME
+        self.approval = approval
+
+
+class SyntheticSourcePermit(SourcePermit):
+    """Bytes written by a fixture, which are provably not the registered file.
+
+    No approval is required, because nothing registered is reachable through
+    it — and that is enforced rather than asserted: bytes whose digest is the
+    registered `data.py` are refused here, so this route cannot become a way
+    to execute the registered source without the guard.
+    """
+
+    def __init__(self, body: bytes, label: str = "synthetic.py") -> None:
+        digest = _sha256_bytes(body)
+        if digest == REGISTERED_SOURCE_SHA256:
+            raise P3NotApprovedError(
+                "the synthetic route refuses bytes whose digest is the "
+                f"registered {REGISTERED_SOURCE_NAME}.  Executing those needs "
+                f"the production route, both barriers and the id gate.  "
+                f"{APPROVAL_NOTE}")
+        self.kind = "synthetic"
+        self.sha256 = digest
+        self.body = bytes(body)
+        self.synthetic = True
+        self.label = label
+        self.approval = None
+        self.inventory = {
+            "requested_file_id": "<synthetic>", "file_id": "<synthetic>",
+            "name": label, "bytes": len(body), "observed_bytes": len(body),
+            "observed_sha256": digest,
+            "registered_sha256": REGISTERED_SOURCE_SHA256,
+            "digest_matches_registered": False, "read": True,
+            "synthetic_fixture": True, "problems": [],
+            "note": SYNTHETIC_NOTE}
+
+
+def synthetic_permit(body: bytes, label: str = "synthetic.py"
+                     ) -> SyntheticSourcePermit:
+    """The only way to get a permit for bytes that are not the registered file."""
+    return SyntheticSourcePermit(body, label=label)
+
+
+def _compile_and_exec(body: bytes, label: str,
+                      namespace: Dict[str, object]) -> None:
+    """The single place this module compiles or executes producer bytes.
+
+    One choke point on purpose: a test can count calls to it and show that a
+    refused route reached zero of them, which "we checked the arguments" could
+    never demonstrate.
+    """
+    try:
+        code = compile(body, label, "exec")
+    except SyntaxError as error:
         raise SourceHarnessError(
-            P3_SOURCE_IDENTITY_MISMATCH,
-            f"the bytes handed to the loader hash to {observed}, not the "
-            f"expected {expected_sha256}.  Nothing was compiled or executed.")
+            P3_SOURCE_UNLOADABLE,
+            f"the source did not compile: {error!r}.  That is a load failure, "
+            f"not a disagreement with the adapter.") from error
+    try:
+        exec(code, namespace)                                # noqa: S102
+    except Exception as error:                               # noqa: BLE001
+        raise SourceHarnessError(
+            P3_SOURCE_UNLOADABLE,
+            f"the source raised while executing at import time: "
+            f"{type(error).__name__}: {error}.  That is a load failure, not a "
+            f"disagreement with the adapter.") from error
+
+
+def load_source_under_injection(permit: SourcePermit,
+                                stubs: Mapping[str, object]
+                                ) -> types.ModuleType:
+    """Execute a permitted producer in an isolated namespace.
+
+    **Must be called with the stub modules already installed** — see
+    :class:`ProducerSession`, which is the only caller.  The module is built by
+    hand rather than imported from a path: it never joins `sys.modules` under
+    its own name, so nothing else in the process can pick it up, and the stub
+    package is what a relative import resolves through.
+    """
+    if not isinstance(permit, SourcePermit):
+        raise P3NotApprovedError(
+            "producer bytes are executed only through a SourcePermit.  Raw "
+            f"bytes and a token string are not one.  {APPROVAL_NOTE}")
+    if isinstance(permit, RegisteredSourcePermit):
+        # The permit was checked when it was minted; a barrier could have been
+        # closed since, and this is the last moment before execution.
+        require_execution_approval(permit.approval,
+                                   f"the registered {permit.label}")
+        _terminal_execution_guard()
+    installed = sys.modules.get("wfdb")
+    frontend = sys.modules.get(f"{REGISTERED_SOURCE_PACKAGE}.frontend")
+    if (getattr(installed, "rdrecord", None) is not stubs["rdrecord"]
+            or getattr(frontend, "detect_r", None) is not stubs["detect_r"]):
+        raise P3Error(
+            "refusing to execute a producer without its injected dependencies "
+            "installed in sys.modules: a module-level or function-level import "
+            "would then reach a real package, or the real detector.  Use "
+            "ProducerSession, which holds the injection open across the load "
+            "*and* every call.")
     module = types.ModuleType(f"{REGISTERED_SOURCE_PACKAGE}.data")
-    module.__file__ = label
+    module.__file__ = permit.label
     module.__package__ = REGISTERED_SOURCE_PACKAGE
-    with InjectedModules(stubs):
-        try:
-            code = compile(body, label, "exec")
-        except SyntaxError as error:
-            raise SourceHarnessError(
-                P3_SOURCE_UNLOADABLE,
-                f"the source did not compile: {error!r}.  That is a load "
-                f"failure, not a disagreement with the adapter.") from error
-        try:
-            exec(code, module.__dict__)                      # noqa: S102
-        except Exception as error:                           # noqa: BLE001
-            raise SourceHarnessError(
-                P3_SOURCE_UNLOADABLE,
-                f"the source raised while executing at import time: "
-                f"{type(error).__name__}: {error}.  That is a load failure, "
-                f"not a disagreement with the adapter.") from error
+    _compile_and_exec(permit.body, permit.label, module.__dict__)
     # Module-level `import wfdb` already bound the stub; this covers the
     # `from ... import detect_r` forms, where the name is a module global.
     for attribute in INJECTED_GLOBALS:
@@ -779,24 +921,68 @@ def load_registered_source(body: bytes, expected_sha256: str,
     return module
 
 
-def source_factory(body: bytes, expected_sha256: str,
-                   approval: Optional[str],
-                   source_label: Optional[str] = None) -> Callable:
-    """A per-fixture loader: fresh namespace, fresh stubs, every time.
+class ProducerSession(object):
+    """A loaded producer, held **with its stub modules still installed**.
+
+    The injection has to outlive the load.  An earlier version closed it as
+    soon as the module had been executed, which covered module-level imports
+    and nothing else: a `build_record` containing `import wfdb` or `from
+    .frontend import detect_r` in its own body would have resolved those names
+    at call time, when `sys.modules` had already been put back — and reached
+    the real package, or the real detector, in the middle of a run whose whole
+    claim is that it reached neither.
+
+    So the session spans compile, exec, **and every call**, and the caller can
+    only get the producer inside a `with` block.
+    """
+
+    __slots__ = ("permit", "fixture", "stubs", "log", "_injection", "_module")
+
+    def __init__(self, permit: SourcePermit,
+                 fixture: Mapping[str, object]) -> None:
+        self.permit = permit
+        self.fixture = fixture
+        self.stubs: Dict[str, object] = {}
+        self.log = StubCallLog()
+        self._injection: Optional[InjectedModules] = None
+        self._module: Optional[types.ModuleType] = None
+
+    def __enter__(self) -> Tuple[Callable, StubCallLog]:
+        self.stubs, self.log = build_injection(self.fixture)
+        self._injection = InjectedModules(self.stubs)
+        self._injection.__enter__()
+        try:
+            self._module = load_source_under_injection(self.permit, self.stubs)
+        except BaseException:
+            self._injection.__exit__(None, None, None)
+            self._injection = None
+            raise
+        return (getattr(self._module, REGISTERED_SOURCE_FUNCTION), self.log)
+
+    def __exit__(self, *exc: object) -> None:
+        if self._injection is not None:
+            self._injection.__exit__(*exc)
+            self._injection = None
+        self._module = None
+
+
+def source_factory(permit: SourcePermit) -> Callable:
+    """A per-fixture session opener: fresh namespace, fresh stubs, every time.
 
     The stubs *are* the fixture, so each fixture needs its own load.  Doing it
     this way also means module-level state in the producer cannot leak from one
     fixture into the next, which would make a later observation depend on an
     earlier one.
     """
-    def load(fixture: Mapping[str, object]
-             ) -> Tuple[Callable, StubCallLog]:
-        stubs, log = build_injection(fixture)
-        module = load_registered_source(body, expected_sha256, stubs, approval,
-                                        source_label=source_label)
-        return getattr(module, REGISTERED_SOURCE_FUNCTION), log
+    if not isinstance(permit, SourcePermit):
+        raise P3NotApprovedError(
+            "a source factory is built from a SourcePermit, not from raw "
+            f"bytes.  {APPROVAL_NOTE}")
 
-    return load
+    def open_producer(fixture: Mapping[str, object]) -> ProducerSession:
+        return ProducerSession(permit, fixture)
+
+    return open_producer
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1833,7 +2019,7 @@ def observe_adapter(fixture: Mapping[str, object], dictionary: LabelDictionary,
     return observation, dict(trace.as_dict())
 
 
-def differential_over_fixtures(load_source: Callable,
+def differential_over_fixtures(open_source: Callable,
                                adapter: Optional[Callable] = None,
                                emit=None) -> Dict[str, object]:
     """Compare the registered producer with the candidate adapter, fixture by fixture.
@@ -1855,9 +2041,12 @@ def differential_over_fixtures(load_source: Callable,
     detail: List[Dict[str, object]] = []
     for name in fixture_names():
         fixture = FIXTURES_BY_NAME[name]
-        build_record, call_log = load_source(fixture)
-        source_observation, source_meta = observe_source(
-            build_record, fixture, source_dictionary)
+        # The producer is observed **inside** its session, so the stubs are
+        # still installed while `build_record` runs.  A dependency imported in
+        # the function body resolves to the injected module, not a real one.
+        with open_source(fixture) as (build_record, call_log):
+            source_observation, source_meta = observe_source(
+                build_record, fixture, source_dictionary)
         adapter_observation, adapter_meta = observe_adapter(
             fixture, adapter_dictionary, adapter)
         source_digest = observation_digest(source_observation)
@@ -1906,7 +2095,8 @@ def describe_difference(source: Mapping[str, object],
 #: changes `oracle_harness_sha256`, so a PASS recorded under an older harness
 #: cannot be reused for a newer one.
 ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
-    "build_injection", "load_registered_source", "source_factory",
+    "build_injection", "InjectedModules", "load_source_under_injection",
+    "ProducerSession", "source_factory",
     "bind_source_arguments", "trace_call", "canonical_value", "growth_events",
     "_added_once", "_flipped_once", "_resolve_annotation_token",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
@@ -2096,16 +2286,22 @@ def build_drive_adapter(approval: Optional[str], credential_provider=None,
 
 def fetch_registered_source(adapter: DriveFileAdapter, approval: Optional[str],
                             file_id: str = REGISTERED_SOURCE_FILE_ID
-                            ) -> Tuple[bytes, Dict[str, object]]:
+                            ) -> RegisteredSourcePermit:
     """File id, then provider inventory, then bytes, then digest — in that order.
 
     Every step can stop the run and each stop has its own reason.  The
     inventory is taken *before* the download, so a wrong size, a trashed file,
     a shortcut or a folder is refused without transferring anything; the digest
-    is checked *before* the loader is allowed to compile the bytes.
+    is checked *before* anything is compiled.
+
+    Returns a :class:`RegisteredSourcePermit` rather than raw bytes: this
+    function is the **only** place a permit over the registered source is
+    minted, so "these bytes may be executed" cannot be asserted by a caller
+    that skipped the gates above.
     """
     require_execution_approval(approval,
                                f"the registered {REGISTERED_SOURCE_NAME}")
+    _terminal_execution_guard()
     if file_id != REGISTERED_SOURCE_FILE_ID:
         raise SourceHarnessError(
             P3_SOURCE_FILE_ID_UNREGISTERED,
@@ -2186,7 +2382,8 @@ def fetch_registered_source(adapter: DriveFileAdapter, approval: Optional[str],
             P3_SOURCE_IDENTITY_MISMATCH,
             f"read {len(body)} bytes where {REGISTERED_SOURCE_BYTES} are "
             f"registered")
-    return body, inventory
+    return RegisteredSourcePermit(_REGISTERED_PERMIT_KEY, body, inventory,
+                                  approval)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -2644,13 +2841,22 @@ def decide(differential: Optional[Mapping[str, object]],
     }
 
 
-def execute_p3(out_dir: str, source_body: bytes,
-               source_inventory: Mapping[str, object], timestamp: str = "",
-               approval: Optional[str] = None, emit=print,
-               synthetic: bool = False, adapter: Optional[Callable] = None,
-               auth_audit: Optional[Mapping[str, object]] = None,
-               source_label: Optional[str] = None) -> Dict[str, object]:
+def _execute_with_permit(out_dir: str, permit: SourcePermit,
+                         timestamp: str = "", emit=print,
+                         adapter: Optional[Callable] = None,
+                         auth_audit: Optional[Mapping[str, object]] = None
+                         ) -> Dict[str, object]:
     """Load, compare, decide, publish, then derive the candidate.
+
+    **Private on purpose.**  An earlier version was a public entry point
+    taking raw bytes, an arbitrary inventory and a token string, and it
+    checked neither barrier — so a caller with the public token could compile
+    and execute the registered source, and write a bundle, while the terminal
+    guard was closed.  It now takes a :class:`SourcePermit`, which cannot
+    exist over the registered bytes unless both barriers were open and the
+    file-id and digest gates passed, and the two public entry points are
+    :func:`run_p3` (registered, guarded) and :func:`execute_synthetic_p3`
+    (fixture bytes, provably not the registered file).
 
     The candidate's `prep_bundle_sha256` is the bundle's payload fold, so the
     candidate cannot live inside the bundle it describes.  The order here is
@@ -2658,14 +2864,16 @@ def execute_p3(out_dir: str, source_body: bytes,
     with a placeholder fold *before* publication, the bundle records that
     pre-check, and the real candidate is assembled from the published fold
     afterwards and reported for external freezing.
-
-    A synthetic run must pass ``synthetic=True``; its bundle is stamped inside
-    the folded payload and is never an ingest candidate and never a
-    `SOURCE_MATCH_ORACLE_RECORD` candidate.
     """
+    if not isinstance(permit, SourcePermit):
+        raise P3NotApprovedError(
+            "a P3 run is executed from a SourcePermit, never from raw bytes "
+            f"and a token.  {APPROVAL_NOTE}")
+    synthetic = bool(permit.synthetic)
+    source_inventory = dict(permit.inventory)
     log: List[str] = [
-        f"scope=P3 synthetic={bool(synthetic)}",
-        f"source={source_label or REGISTERED_SOURCE_NAME} "
+        f"scope=P3 synthetic={synthetic}",
+        f"permit={permit.kind} source={permit.label} "
         f"file_id={source_inventory.get('requested_file_id')}",
         f"registered_sha256={source_inventory.get('registered_sha256')}",
         f"observed_sha256={source_inventory.get('observed_sha256')}"]
@@ -2675,16 +2883,13 @@ def execute_p3(out_dir: str, source_body: bytes,
         emit(message)
 
     harness = oracle_harness_identity()
-    expected_digest = str(source_inventory.get("observed_sha256")
-                          or REGISTERED_SOURCE_SHA256)
+    expected_digest = permit.sha256
     stop: Optional[str] = None
     detail: Optional[str] = None
     differential: Optional[Dict[str, object]] = None
     try:
         differential = differential_over_fixtures(
-            source_factory(source_body, expected_digest, approval,
-                           source_label=source_label),
-            adapter=adapter, emit=record)
+            source_factory(permit), adapter=adapter, emit=record)
     except SourceHarnessError as error:
         stop, detail = error.status, error.detail
         record(f"harness stop: {stop}: {detail}")
@@ -2744,7 +2949,44 @@ def execute_p3(out_dir: str, source_body: bytes,
             "candidate": candidate, "candidate_gate": gate,
             "candidate_precheck": precheck, "harness": harness,
             "bundle": written, "verified": verified,
+            "permit": permit.describe(),
             "source_inventory": dict(source_inventory)}
+
+
+def execute_synthetic_p3(out_dir: str, producer_body: bytes,
+                         timestamp: str = "", emit=print,
+                         adapter: Optional[Callable] = None,
+                         source_label: str = "synthetic.py"
+                         ) -> Dict[str, object]:
+    """Run the whole route over a **fixture's own** producer bytes.
+
+    This is how the harness is exercised without the registered source, and it
+    cannot become a way to reach the registered source: the permit it builds
+    refuses bytes whose digest is the registered `data.py`, so no argument to
+    this function can make it execute that file.  Every bundle it writes is
+    stamped synthetic inside the folded payload, is never ingestable, and
+    never produces a `SOURCE_MATCH_ORACLE_RECORD` candidate.
+    """
+    permit = synthetic_permit(producer_body, label=source_label)
+    return _execute_with_permit(out_dir, permit, timestamp=timestamp,
+                                emit=emit, adapter=adapter)
+
+
+def _execute_registered_p3(out_dir: str, permit: RegisteredSourcePermit,
+                           timestamp: str = "", emit=print,
+                           auth_audit: Optional[Mapping[str, object]] = None
+                           ) -> Dict[str, object]:   # pragma: no cover
+    """The production run, reachable only from `run_p3()` past the guard."""
+    if not isinstance(permit, RegisteredSourcePermit):
+        raise P3NotApprovedError(
+            "the registered route runs only from a RegisteredSourcePermit, "
+            "which fetch_registered_source() mints after the guard and the id "
+            f"and digest gates.  {APPROVAL_NOTE}")
+    require_execution_approval(permit.approval,
+                               f"the registered {REGISTERED_SOURCE_NAME}")
+    _terminal_execution_guard()
+    return _execute_with_permit(out_dir, permit, timestamp=timestamp,
+                                emit=emit, auth_audit=auth_audit)
 
 
 def run_p3(out_dir: str, timestamp: str = "",
@@ -2802,22 +3044,22 @@ def _run_p3_after_the_guard(out_dir: str, timestamp: str,
         adapter_source, auth_audit = build_drive_adapter(approval)
         emit(f"Drive scope proven read-only: "
              f"{auth_audit['exact_readonly_scope_proven']}")
-    body, inventory = fetch_registered_source(adapter_source, approval,
-                                              file_id)
+    permit = fetch_registered_source(adapter_source, approval, file_id)
     emit(f"registered {REGISTERED_SOURCE_NAME} verified by id and digest: "
-         f"{inventory['observed_sha256']}")
-    return execute_p3(out_dir, body, inventory, timestamp=timestamp,
-                      approval=approval, emit=emit, synthetic=False,
-                      auth_audit=auth_audit)
+         f"{permit.sha256}")
+    return _execute_registered_p3(out_dir, permit, timestamp=timestamp,
+                                  emit=emit, auth_audit=auth_audit)
 
 
 def module_capabilities() -> Tuple[str, ...]:
     """Names a notebook asserts before use, so a stale clone cannot masquerade."""
-    return ("run_p3", "execute_p3", "differential_over_fixtures",
+    return ("run_p3", "execute_synthetic_p3", "differential_over_fixtures",
             "observe_source", "observe_adapter", "project_observation",
             "trace_call", "growth_events", "implied_mappings", "merge_implied",
-            "discover_kept_rows", "build_injection", "load_registered_source",
-            "source_factory", "bind_source_arguments",
+            "discover_kept_rows", "build_injection", "InjectedModules",
+            "load_source_under_injection", "ProducerSession", "SourcePermit",
+            "RegisteredSourcePermit", "SyntheticSourcePermit",
+            "synthetic_permit", "source_factory", "bind_source_arguments",
             "fetch_registered_source", "oracle_harness_identity",
             "candidate_record", "check_candidate_against_gate",
             "assert_fixture_contract", "fixture_card", "decide", "write_bundle",

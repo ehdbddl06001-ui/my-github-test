@@ -174,33 +174,18 @@ def variant_text(name: str) -> str:
     return text
 
 
-def load_for(text: str, approval: str = TOKEN, label: str = "synthetic.py"):
-    """A per-fixture loader over synthetic bytes, digest-checked exactly as the
-    production route checks the registered bytes."""
-    body = text.encode("utf-8")
-    return P3.source_factory(body, hashlib.sha256(body).hexdigest(), approval,
-                             source_label=label)
+def load_for(text: str, label: str = "synthetic.py"):
+    """A per-fixture session opener over synthetic bytes.
+
+    The permit refuses the registered digest, so nothing built here can reach
+    `data.py` however it is called.
+    """
+    return P3.source_factory(
+        P3.synthetic_permit(text.encode("utf-8"), label=label))
 
 
 def differential_for(text: str, adapter=None):
     return P3.differential_over_fixtures(load_for(text), adapter=adapter)
-
-
-def synthetic_inventory(text: str) -> dict:
-    """The inventory shape `execute_p3` consumes, for a synthetic producer.
-
-    The registered digest is deliberately **not** claimed: this records the
-    synthetic bytes' own digest, so nothing in a synthetic bundle can be
-    mistaken for a statement about `data.py`.
-    """
-    body = text.encode("utf-8")
-    return {"requested_file_id": "<synthetic>", "file_id": "<synthetic>",
-            "name": "synthetic.py", "bytes": len(body),
-            "observed_bytes": len(body),
-            "observed_sha256": hashlib.sha256(body).hexdigest(),
-            "registered_sha256": P3.REGISTERED_SOURCE_SHA256,
-            "digest_matches_registered": False, "read": True,
-            "synthetic_fixture": True, "problems": []}
 
 
 class FakeDriveFile(P3.DriveFileAdapter):
@@ -241,6 +226,30 @@ class Credential(object):
         self.scopes = list(scopes)
 
 
+class opened_guard(object):
+    """Open the execution record for one test, then put it back.
+
+    The gates *below* the terminal guard — the file-id gate, the provider
+    inventory, the digest check — cannot be exercised while it is shut, and a
+    gate nobody tested is a gate nobody has.  So a test that needs them flips
+    exactly the field an approval PR would flip, and asserts the committed
+    value both before and after, so a suite that leaked an open barrier fails
+    rather than passing quietly.
+    """
+
+    def __enter__(self):
+        check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False,
+              "the committed approval record is closed before this test")
+        P3.EXECUTION_APPROVAL_RECORD["granted"] = True
+        return self
+
+    def __exit__(self, *exc):
+        P3.EXECUTION_APPROVAL_RECORD["granted"] = False
+        check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False,
+              "and it is closed again afterwards")
+        return False
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 1. The two barriers, and what a closed one means: zero of everything.
 # ─────────────────────────────────────────────────────────────────────────────
@@ -266,11 +275,12 @@ def test_closed_guard_performs_no_credential_api_source_or_mkdir_call():
     call an API, read a registered byte, execute the source or create an output
     directory is counted, and every count must be zero.
     """
-    counters = {"auth": 0, "adapter": 0, "fetch": 0, "load": 0, "mkdir": 0,
-                "credential": 0}
+    counters = {"auth": 0, "adapter": 0, "fetch": 0, "load": 0, "compile": 0,
+                "mkdir": 0, "credential": 0}
     saved = {name: getattr(P3, name) for name in
              ("authenticate_drive_readonly", "build_drive_adapter",
-              "fetch_registered_source", "load_registered_source")}
+              "fetch_registered_source", "load_source_under_injection",
+              "_compile_and_exec")}
     saved_mkdir = os.mkdir
     saved_credential = P12._colab_readonly_credential
 
@@ -284,7 +294,8 @@ def test_closed_guard_performs_no_credential_api_source_or_mkdir_call():
         P3.authenticate_drive_readonly = counted("auth")
         P3.build_drive_adapter = counted("adapter")
         P3.fetch_registered_source = counted("fetch")
-        P3.load_registered_source = counted("load")
+        P3.load_source_under_injection = counted("load")
+        P3._compile_and_exec = counted("compile")
         P12._colab_readonly_credential = counted("credential")
         os.mkdir = counted("mkdir")
         attempts = [
@@ -311,7 +322,7 @@ def test_closed_guard_performs_no_credential_api_source_or_mkdir_call():
         os.mkdir = saved_mkdir
         P12._colab_readonly_credential = saved_credential
     check(counters == {"auth": 0, "adapter": 0, "fetch": 0, "load": 0,
-                       "mkdir": 0, "credential": 0},
+                       "compile": 0, "mkdir": 0, "credential": 0},
           f"and reached nothing at all on the way: {counters}")
 
 
@@ -335,24 +346,151 @@ def test_another_stages_token_is_refused_by_name():
 def test_every_registered_read_checks_approval_first():
     """Permission before capability, on each entry that touches a byte."""
     body = FAITHFUL.encode("utf-8")
-    digest = hashlib.sha256(body).hexdigest()
-    stubs, _log = P3.build_injection(P3.FIXTURES[0])
-    for approval in (None, "guess", Q5E.EXECUTION_APPROVAL_TOKEN):
-        try:
-            P3.load_registered_source(body, digest, stubs, approval)
-        except P3.P3NotApprovedError:
-            check(True, f"the loader refuses approval={approval!r}")
-        else:                                                # pragma: no cover
-            raise AssertionError("the loader executed without approval")
+    for approval in (None, "guess", Q5E.EXECUTION_APPROVAL_TOKEN,
+                     P12.EXECUTION_APPROVAL_TOKEN):
         adapter = FakeDriveFile(good_metadata(body), body, fail_download=True)
         try:
             P3.fetch_registered_source(adapter, approval)
         except P3.P3NotApprovedError:
             check(not adapter.calls,
-                  f"and the fetch refuses approval={approval!r} without "
-                  f"calling the adapter at all")
+                  f"the fetch refuses approval={approval!r} without calling "
+                  f"the adapter at all")
         else:                                                # pragma: no cover
             raise AssertionError("the fetch ran without approval")
+    # Even the right token does not mint a permit while the guard is closed.
+    adapter = FakeDriveFile(good_metadata(body), body, fail_download=True)
+    try:
+        P3.fetch_registered_source(adapter, TOKEN)
+    except P3.P3NotApprovedError as error:
+        check(not adapter.calls,
+              "and with the correct token it still stops at the guard, before "
+              "the first API call")
+        check("not approved for execution" in str(error),
+              "naming the closed guard as the reason")
+    else:                                                    # pragma: no cover
+        raise AssertionError("the fetch ran with the guard closed")
+
+
+def test_producer_bytes_are_executed_only_through_a_permit():
+    """The blocker: a public token plus raw bytes must not be a way in.
+
+    An earlier version's executor took `(body, inventory, approval)` and
+    checked neither barrier, so the token string alone could compile and run
+    the registered source.  Bytes now reach a compiler only through a permit,
+    and there is no way to build one over the registered digest without both
+    barriers open.
+    """
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    for impostor in (b"x = 1\n", {"body": b"x = 1\n"}, None,
+                     ("body", TOKEN)):
+        try:
+            P3.load_source_under_injection(impostor, stubs)
+        except P3.P3NotApprovedError as error:
+            check("only through a SourcePermit" in str(error),
+                  f"the loader refuses {type(impostor).__name__} instead of a "
+                  f"permit")
+        else:                                                # pragma: no cover
+            raise AssertionError(f"{impostor!r} was executed")
+        try:
+            P3.source_factory(impostor)
+        except P3.P3NotApprovedError:
+            check(True, "and so does the session factory")
+        else:                                                # pragma: no cover
+            raise AssertionError("a factory was built without a permit")
+    try:
+        P3.RegisteredSourcePermit(object(), b"x = 1\n", {}, TOKEN)
+    except P3.P3NotApprovedError as error:
+        check("minted only by fetch_registered_source()" in str(error),
+              "a registered permit cannot be constructed with a forged key")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a forged registered permit was accepted")
+    try:
+        P3.RegisteredSourcePermit(P3._REGISTERED_PERMIT_KEY, b"x = 1\n",
+                                  {}, TOKEN)
+    except P3.P3NotApprovedError as error:
+        check("not approved for execution" in str(error),
+              "and even with the module's own key the closed guard refuses it")
+    else:                                                    # pragma: no cover
+        raise AssertionError("the guard did not stop a registered permit")
+
+
+def test_the_synthetic_route_cannot_execute_the_registered_source():
+    """The synthetic executor is not a back door, and cannot be made one."""
+    saved = P3.REGISTERED_SOURCE_SHA256
+    body = FAITHFUL.encode("utf-8")
+    try:
+        # Point the registered digest at the fixture's own bytes: the synthetic
+        # route must then refuse those very bytes, whatever else is true.
+        P3.REGISTERED_SOURCE_SHA256 = hashlib.sha256(body).hexdigest()
+        for call in (lambda: P3.synthetic_permit(body),
+                     lambda: P3.execute_synthetic_p3("/nonexistent", body)):
+            try:
+                call()
+            except P3.P3NotApprovedError as error:
+                check("refuses bytes whose digest is the registered" in
+                      str(error),
+                      "the synthetic route refuses the registered bytes by "
+                      "digest, not by intention")
+            else:                                            # pragma: no cover
+                raise AssertionError("the registered bytes ran synthetically")
+    finally:
+        P3.REGISTERED_SOURCE_SHA256 = saved
+    permit = P3.synthetic_permit(body)
+    check(permit.synthetic is True and permit.kind == "synthetic",
+          "an ordinary fixture producer still gets a synthetic permit")
+    check(permit.inventory["digest_matches_registered"] is False
+          and permit.inventory["synthetic_fixture"] is True,
+          "whose inventory says plainly that it is not the registered file")
+    check(permit.approval is None,
+          "and which carries no approval, because it opens nothing registered")
+
+
+def test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path():
+    """Counted, not argued: the refused route touches none of the three."""
+    counters = {"compile": 0, "mkdir": 0}
+    saved_compile = P3._compile_and_exec
+    saved_mkdir = os.mkdir
+    body = FAITHFUL.encode("utf-8")
+
+    def counted_compile(*args, **kwargs):
+        counters["compile"] += 1
+        return saved_compile(*args, **kwargs)
+
+    def counted_mkdir(*args, **kwargs):
+        counters["mkdir"] += 1
+        return saved_mkdir(*args, **kwargs)
+
+    try:
+        P3._compile_and_exec = counted_compile
+        os.mkdir = counted_mkdir
+        attempts = (
+            lambda: P3.run_p3("/nonexistent", approval=TOKEN,
+                              open_registered_data=True, timestamp=STAMP,
+                              emit=lambda _m: None),
+            lambda: P3.fetch_registered_source(
+                FakeDriveFile(good_metadata(body), body), TOKEN),
+            lambda: P3.RegisteredSourcePermit(P3._REGISTERED_PERMIT_KEY, body,
+                                              {}, TOKEN),
+            lambda: P3.source_factory(b"raw bytes are not a permit"),
+            lambda: P3.load_source_under_injection(body, {}),
+            lambda: P3._execute_registered_p3("/nonexistent", body,
+                                              timestamp=STAMP),
+            lambda: P3._execute_with_permit("/nonexistent", body,
+                                            timestamp=STAMP),
+        )
+        for index, attempt in enumerate(attempts):
+            try:
+                attempt()
+            except (P3.P3NotApprovedError, P3.SourceHarnessError):
+                check(True, f"attempt {index} on the registered path refused")
+            else:                                            # pragma: no cover
+                raise AssertionError(f"attempt {index} was allowed")
+    finally:
+        P3._compile_and_exec = saved_compile
+        os.mkdir = saved_mkdir
+    check(counters == {"compile": 0, "mkdir": 0},
+          f"and between them they compiled nothing and created no directory: "
+          f"{counters}")
 
 
 def test_drive_scope_must_be_exactly_read_only():
@@ -404,7 +542,9 @@ def test_an_unregistered_file_id_stops_before_any_api_call():
     body = FAITHFUL.encode("utf-8")
     adapter = FakeDriveFile(good_metadata(body), body, fail_download=True)
     try:
-        P3.fetch_registered_source(adapter, TOKEN, "1SomeOtherFileIdEntirely")
+        with opened_guard():
+            P3.fetch_registered_source(adapter, TOKEN,
+                                       "1SomeOtherFileIdEntirely")
     except P3.SourceHarnessError as error:
         check(error.status == P3.P3_SOURCE_FILE_ID_UNREGISTERED,
               "an unregistered file id stops as P3_SOURCE_FILE_ID_UNREGISTERED")
@@ -445,7 +585,8 @@ def test_a_file_with_the_right_name_but_a_different_identity_is_refused():
               f"{label}: the name still matches, which is exactly the trap")
         adapter = FakeDriveFile(metadata, body, fail_download=True)
         try:
-            P3.fetch_registered_source(adapter, TOKEN)
+            with opened_guard():
+                P3.fetch_registered_source(adapter, TOKEN)
         except P3.SourceHarnessError as error:
             check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
                   f"{label}: refused as an identity mismatch")
@@ -456,7 +597,8 @@ def test_a_file_with_the_right_name_but_a_different_identity_is_refused():
     renamed = good_metadata(body, name="data_v2.py")
     adapter = FakeDriveFile(renamed, body, fail_download=True)
     try:
-        P3.fetch_registered_source(adapter, TOKEN)
+        with opened_guard():
+            P3.fetch_registered_source(adapter, TOKEN)
     except P3.SourceHarnessError as error:
         check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
               "a renamed file at the registered id is refused too")
@@ -472,7 +614,8 @@ def test_bytes_that_do_not_match_the_registered_digest_are_never_executed():
                           sha256Checksum=P3.REGISTERED_SOURCE_SHA256)
     adapter = FakeDriveFile(lying, poison)
     try:
-        P3.fetch_registered_source(adapter, TOKEN)
+        with opened_guard():
+            P3.fetch_registered_source(adapter, TOKEN)
     except P3.SourceHarnessError as error:
         check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
               "bytes whose digest is not the registered one stop the run")
@@ -485,18 +628,21 @@ def test_bytes_that_do_not_match_the_registered_digest_are_never_executed():
     short = FAITHFUL.encode("utf-8")
     adapter = FakeDriveFile(good_metadata(short), short, fail_download=True)
     try:
-        P3.fetch_registered_source(adapter, TOKEN)
+        with opened_guard():
+            P3.fetch_registered_source(adapter, TOKEN)
     except P3.SourceHarnessError as error:
         check("Nothing was downloaded" in str(error),
               "and a size or checksum that disagrees stops before the download")
-    stubs, _log = P3.build_injection(P3.FIXTURES[0])
-    try:
-        P3.load_registered_source(poison, "b" * 64, stubs, TOKEN)
-    except P3.SourceHarnessError as error:
-        check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
-              "and the loader repeats the check against the bytes it was given")
-    else:                                                    # pragma: no cover
-        raise AssertionError("the loader executed unverified bytes")
+    with opened_guard():
+        try:
+            P3.RegisteredSourcePermit(P3._REGISTERED_PERMIT_KEY, poison,
+                                      {"observed_sha256": "b" * 64}, TOKEN)
+        except P3.SourceHarnessError as error:
+            check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
+                  "and a permit repeats the check against the bytes it is "
+                  "given, so unverified bytes never become executable")
+        else:                                                # pragma: no cover
+            raise AssertionError("a permit was minted over unverified bytes")
 
 
 def test_matching_bytes_are_fetched_in_the_registered_order():
@@ -513,9 +659,12 @@ def test_matching_bytes_are_fetched_in_the_registered_order():
         P3.REGISTERED_SOURCE_BYTES = len(body)
         P3.REGISTERED_SOURCE_SHA256 = hashlib.sha256(body).hexdigest()
         adapter = FakeDriveFile(good_metadata(body), body)
-        fetched, inventory = P3.fetch_registered_source(adapter, TOKEN)
-        check(fetched == body,
-              "the verified bytes are what the adapter returned")
+        with opened_guard():
+            permit = P3.fetch_registered_source(adapter, TOKEN)
+        inventory = permit.inventory
+        check(permit.body == body and isinstance(
+                  permit, P3.RegisteredSourcePermit),
+              "the verified bytes come back inside a registered permit")
         check([c[0] for c in adapter.calls] == ["get_metadata", "download"],
               "inventory first, download second: a bad file is refused "
               "before anything is transferred")
@@ -554,12 +703,13 @@ def test_the_registered_identity_matches_the_frozen_source_map():
 # ─────────────────────────────────────────────────────────────────────────────
 def test_the_oracle_actually_executes_the_producer():
     """Not a description of the producer: the producer, running."""
-    load = load_for(FAITHFUL)
+    open_source = load_for(FAITHFUL)
     fixture = P3.FIXTURES_BY_NAME[
         "test_source_match_nearest_already_used_falls_through"]
-    build_record, log = load(fixture)
     dictionary = P3.LabelDictionary()
-    observation, meta = P3.observe_source(build_record, fixture, dictionary)
+    with open_source(fixture) as (build_record, log):
+        observation, meta = P3.observe_source(build_record, fixture,
+                                              dictionary)
     module_globals = build_record.__globals__
     check(module_globals["CALLED"] == ["SYNTHETIC"],
           "the producer's own module state shows its function ran")
@@ -732,9 +882,10 @@ def test_the_observation_digest_is_deterministic():
         digests.append(P3.observation_digest(observation))
     check(len(set(digests)) == 1,
           "the same run of the same producer yields the same digest")
-    load = load_for(FAITHFUL)
-    build_record, _log = load(P3.FIXTURES[0])
-    source, _meta = P3.observe_source(build_record, P3.FIXTURES[0], dictionary)
+    open_source = load_for(FAITHFUL)
+    with open_source(P3.FIXTURES[0]) as (build_record, _log):
+        source, _meta = P3.observe_source(build_record, P3.FIXTURES[0],
+                                          dictionary)
     check(P3.observation_digest(source) == digests[0],
           "and two different producers that decided the same thing agree")
     mutated = dict(source)
@@ -1002,11 +1153,9 @@ def test_there_is_no_facility_for_choosing_the_best_scoring_adapter():
 # ─────────────────────────────────────────────────────────────────────────────
 # 6. The bundle: fold, no-overwrite, commit marker, synthetic stamp.
 # ─────────────────────────────────────────────────────────────────────────────
-def _synthetic_run(directory, text=FAITHFUL, synthetic=True):
-    return P3.execute_p3(directory, text.encode("utf-8"),
-                         synthetic_inventory(text), timestamp=STAMP,
-                         approval=TOKEN, emit=lambda _m: None,
-                         synthetic=synthetic, source_label="synthetic.py")
+def _synthetic_run(directory, text=FAITHFUL):
+    return P3.execute_synthetic_p3(directory, text.encode("utf-8"),
+                                   timestamp=STAMP, emit=lambda _m: None)
 
 
 def test_a_synthetic_run_writes_the_contracted_bundle_and_verifies_it():
@@ -1291,15 +1440,99 @@ def test_no_detector_no_m0_to_m4_no_labels_no_probabilities_no_training():
     stub_body = text.split("def detect_r(*args", 1)[1].split("def ", 1)[0]
     check("real `detect_r()` is never called" in stub_body,
           "and it says so where it is defined")
-    log = P3.build_injection(P3.FIXTURES[0])[1]
-    load = load_for(FAITHFUL)
-    build_record, log = load(P3.FIXTURES[0])
-    build_record(rec="SYNTHETIC", ddir="<synthetic>")
+    open_source = load_for(FAITHFUL)
+    with open_source(P3.FIXTURES[0]) as (build_record, log):
+        build_record(rec="SYNTHETIC", ddir="<synthetic>")
     targets = {call["target"] for call in log.as_list()}
     check(targets <= {"wfdb.rdrecord", "wfdb.rdann", "wfdb.rdsamp",
                       "frontend.detect_r", "frontend.rr_features",
                       "pwave.pwave_features"},
           f"a producer can reach only the injected stub surface: {targets}")
+
+
+#: A producer that imports its dependencies **inside** `build_record`.  Under
+#: an injection that ends when the module finishes loading, these names would
+#: resolve at call time — after `sys.modules` had been put back — and reach the
+#: real package and the real detector.
+LATE_IMPORT_PRODUCER = FAITHFUL.replace(
+    "import wfdb\nfrom .frontend import detect_r, rr_features\n", "").replace(
+    "    CALLED.append(rec)\n",
+    "    CALLED.append(rec)\n"
+    "    import wfdb\n"
+    "    from .frontend import detect_r, rr_features\n")
+
+
+class _Decoy(object):
+    """Stands where a real dependency would be, and shouts if it is used."""
+
+    def __init__(self, name):
+        self.name = name
+
+    def __getattr__(self, attribute):
+        def refuse(*_args, **_kwargs):
+            raise AssertionError(
+                f"the REAL {self.name}.{attribute} was reached: the injection "
+                f"did not cover the call")
+        return refuse
+
+
+def test_a_producer_that_imports_inside_the_function_still_gets_the_stubs():
+    """Blocker 2: the injection must outlive the load, not end with it.
+
+    Decoys are installed where the real modules would be, so if the stub
+    context closed before `build_record` ran, the function-level imports would
+    pick the decoys up and the test would fail loudly rather than silently
+    reaching a real dependency.
+    """
+    check("    import wfdb" in LATE_IMPORT_PRODUCER
+          and "from .frontend import" in LATE_IMPORT_PRODUCER.split(
+              "def build_record", 1)[1],
+          "the fixture producer really does import inside the function")
+    saved = {name: sys.modules.get(name) for name in P3.INJECTED_MODULE_NAMES}
+    try:
+        for name in ("wfdb", "frontend",
+                     f"{P3.REGISTERED_SOURCE_PACKAGE}.frontend"):
+            sys.modules[name] = _Decoy(name)
+        result = differential_for(LATE_IMPORT_PRODUCER)
+        check(result["all_equal"] is True,
+              "a late-importing producer is observed exactly like an early "
+              "one, so its imports resolved to the stubs")
+        check(result["fixtures_passed"] == 6,
+              "on all six fixtures, with the decoys in place throughout")
+    finally:
+        for name, module in saved.items():
+            if module is None:
+                sys.modules.pop(name, None)
+            else:                                            # pragma: no cover
+                sys.modules[name] = module
+    check(all(sys.modules.get(name) is saved[name]
+              for name in P3.INJECTED_MODULE_NAMES),
+          "and sys.modules is exactly what it was before the run")
+
+
+def test_the_producer_session_holds_the_injection_across_the_call():
+    permit = P3.synthetic_permit(FAITHFUL.encode("utf-8"))
+    session = P3.ProducerSession(permit, P3.FIXTURES[0])
+    outside = sys.modules.get("wfdb")
+    with session as (build_record, log):
+        installed = sys.modules.get("wfdb")
+        check(installed is not outside,
+              "inside the session, wfdb is the injected stub")
+        check(getattr(installed, "rdrecord", None) is session.stubs["rdrecord"],
+              "and it is this session's own stub, not a leftover")
+        build_record(rec="SYNTHETIC", ddir="<synthetic>")
+        check(log.by_target("frontend.detect_r"),
+              "a call made inside the session reaches the stub detector")
+    check(sys.modules.get("wfdb") is outside,
+          "and afterwards sys.modules is restored")
+    try:
+        P3.load_source_under_injection(permit, P3.build_injection(
+            P3.FIXTURES[0])[0])
+    except P3.P3Error as error:
+        check("without its injected dependencies installed" in str(error),
+              "loading outside a session is refused rather than half-injected")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a producer was loaded with no injection active")
 
 
 def test_the_injected_stubs_never_reach_a_real_dependency():
@@ -1471,8 +1704,9 @@ def test_module_capabilities_are_all_present():
     missing = [name for name in P3.module_capabilities()
                if not hasattr(P3, name)]
     check(missing == [], f"every advertised capability exists: {missing}")
-    for name in ("run_p3", "execute_p3", "differential_over_fixtures",
-                 "fetch_registered_source", "candidate_record"):
+    for name in ("run_p3", "execute_synthetic_p3",
+                 "differential_over_fixtures", "fetch_registered_source",
+                 "candidate_record", "synthetic_permit", "ProducerSession"):
         check(name in P3.module_capabilities(),
               f"and the list advertises {name}")
     card = P3.design_card()

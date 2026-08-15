@@ -75,6 +75,15 @@ under synthetic dependency injection:
 | `frontend.detect_r` | the registered detector | the fixture's peaks, in the fixture's order.  **The real detector is never called.** |
 | `frontend.rr_features`, `pwave.pwave_features` | the feature producers | rows whose first column is the peak the row was built for |
 
+**The injection spans the call, not only the load.**  `ProducerSession` holds
+the stub modules installed in `sys.modules` from compile through exec and
+through **every** `build_record()` call, and `load_source_under_injection()`
+refuses to execute anything when they are not installed.  An injection that
+ended with the load would cover module-level imports only: a `build_record`
+containing `import wfdb` or `from .frontend import detect_r` in its own body
+resolves those names when it runs, and would then reach the real package — or
+the real detector — inside a run whose whole claim is that it reached neither.
+
 Nothing real is read: no ECG signal, no `.atr` file, no V9/V10 cache, no
 per-record count.  The ramp signal and the peak-carrying feature rows are what
 make the producer's output *self-identifying* — a returned window says which
@@ -197,6 +206,26 @@ in `REFUSED_TOKENS` and refused **by name**, with a stated reason.  P1/P2
 approved reading registered bytes for identity; P3 loads and executes a
 registered source file, which is a separate decision.
 
+**A token is not an entry point.**  Producer bytes are compiled only through
+`SourcePermit`, and the two kinds are not interchangeable:
+
+- `RegisteredSourcePermit` is minted **only** inside
+  `fetch_registered_source()`, with a module-private key, after the terminal
+  guard, the file-id gate and the digest gate.  Its constructor re-checks the
+  key, the approval token, the guard and the digest, so a caller holding the
+  key still gets nothing while a barrier is closed.
+- `SyntheticSourcePermit` covers a fixture's own producer and **refuses bytes
+  whose digest is the registered `data.py`** — so the synthetic route cannot
+  be turned into a way to execute the registered source, whatever arguments it
+  is given.
+
+There is exactly one place in the module that compiles or executes producer
+bytes (`_compile_and_exec`), one public production entry point (`run_p3()`,
+which reaches the registered file only through the guard) and one public
+synthetic entry point (`execute_synthetic_p3()`, which cannot reach it at
+all).  The private executor takes a permit, never a body plus an inventory
+plus a token.
+
 While a barrier is closed, an attempted run performs **zero** of each of:
 credential acquisition, Drive service construction, Drive API call, registered
 file read, import or exec of `data.py`, source `build_record` call, adapter
@@ -311,7 +340,12 @@ the frozen Q5-D module; any registration.
 1. Both barriers committed closed, and every other stage's token refused by
    name.
 2. A closed barrier yields zero credential, API, source-read, source-exec,
-   differential and mkdir calls — asserted by counting, not by inspection.
+   differential and mkdir calls — asserted by counting, not by inspection —
+   including for direct calls to the executor, the session factory and the
+   loader, which are the routes that would bypass `run_p3()`.
+2a. The injection covers the call: a producer that imports its dependencies
+   inside `build_record` still reaches only stubs, asserted with decoys
+   standing where the real modules would be.
 3. File id and digest both checked, in the registered order, before import; a
    file with the right name and a different identity refused in every shape
    tested.
@@ -383,3 +417,37 @@ because nothing about it has been read.
 **D6 (2026-08-14) — status is `P3_IMPLEMENTATION_AWAITING_CODEX_REVIEW`.**  No
 execution approval is requested by this document.  Points Codex is asked to
 approve or withdraw explicitly are listed in the implementation PR as B1, B2, …
+
+**D7 (2026-08-14) — Codex review blocker 1 closed: the executor no longer
+takes raw bytes.**  The first review found that `execute_p3()` checked neither
+`OPEN_REGISTERED_DATA` nor `EXECUTION_APPROVAL_RECORD`, so a caller with the
+public token string could compile and execute the registered source, and write
+a bundle, with the terminal guard shut — the guard lived in `run_p3()` and
+nothing below re-checked it.  The finding is accepted in full.  The public
+`execute_p3()` is **removed**; production runs go through `run_p3()` →
+`_execute_registered_p3()`, which accepts only a `RegisteredSourcePermit`;
+fixtures go through `execute_synthetic_p3()`, whose permit refuses the
+registered digest by construction.  The permit type is the typed snapshot the
+review asked for: it can only be minted past the guard and the id/digest
+gates, and it re-checks the key, the token, the guard and the digest when it
+is built and again immediately before execution.  Regression:
+`test_producer_bytes_are_executed_only_through_a_permit`,
+`test_the_synthetic_route_cannot_execute_the_registered_source`, and
+`test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
+which counts calls to the single compile choke point and to `os.mkdir` across
+seven direct-call routes and requires zero of each.
+
+**D8 (2026-08-14) — Codex review blocker 2 closed: the injection now spans the
+call.**  The first version closed the `InjectedModules` context as soon as the
+source module had executed, so a `build_record` importing `wfdb` or
+`.frontend` **inside its own body** would have resolved those names after
+`sys.modules` was restored, reaching the real package and the real detector
+mid-run.  The finding is accepted in full.  `ProducerSession` now holds the
+injection open across compile, exec and every call, `observe_source()` is
+called inside that `with` block, and `load_source_under_injection()` refuses
+to execute anything unless the stub modules are the ones installed.
+Regression: `test_a_producer_that_imports_inside_the_function_still_gets_the
+_stubs` runs a late-importing producer with decoys installed where the real
+modules would be — verified to fail against the previous lifetime with "the
+REAL wfdb.rdrecord was reached" — plus
+`test_the_producer_session_holds_the_injection_across_the_call`.
