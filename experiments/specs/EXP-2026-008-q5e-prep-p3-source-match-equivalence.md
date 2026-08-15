@@ -481,6 +481,61 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D20 (2026-08-16) — the registered producer ran and returned `None`.  That is
+a finding about the source, not about the reader.**  Run `20260816T012958`
+verified the registered file (id `1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK`, digest
+`20cde66b…`, scope `drive.readonly`), loaded it, ran `build_record` on the
+first fixture — and got `None` back.  Not an empty record: no record.
+
+**This settles D17's open question, against the diagnosis D17 was built on.**
+The columnar hypothesis was that a mapping of columns defeated the reader.  It
+did not: the reader was never handed a mapping.  D17's caveat named this exact
+alternative, and it is the one that happened.  The columnar reader stays —
+it is what will read the record when one is returned, and it is now the only
+thing standing between a real record and a channel chosen by availability —
+but it did not fix run 4 and this decision log should not read as though it
+did.
+
+Three changes, all of them diagnosis:
+
+* `P3_SOURCE_RETURNED_NO_RECORD` is its own stop.  "It returned nothing", "its
+  rows could not be read" and "it kept no rows" are three findings, and only
+  the first one is true here.  Collapsing them sends the next round to widen a
+  reader that was never involved — which is what the previous round did.
+* `trace_summary()` reads the trace the run already captured: which line
+  returned, which lines executed, and **what every local was holding at the
+  end**, canonicalised exactly as during tracing, so a signal comes out as
+  `{"__type__": …, "__len__": 3000}` and never as samples.  A stop discards the
+  differential, so this is attached to the exception and published inside
+  `fixture_results.json` — no new bundle file, payload fold unchanged.
+* `run_p3()` returns `fixture_results` as well as publishing it, and the
+  notebook prints the stop context on screen: return type and per-column
+  shapes, per-stub call counts and input row counts, the returning line, the
+  executed lines and the final locals.  Four stops in a row have cost a round
+  trip each because the answer was only in Drive.
+
+**What the next run will decide, and what it is not allowed to decide.**  The
+trace will say which line returned and with what in scope — whether the
+producer kept rows and still declined, or kept none and declined because of
+that.  Either way the finding belongs to the registered source, and the
+consequence may be that the six synthetic fixtures (3,000-sample ramp, one or
+two peaks, two annotations) do not satisfy a precondition the registered
+producer has — a patient template, a minimum beat count, something else.  If
+so, **that is a fixture-design question for the spec owner, not a harness
+fix**: the fixture set is registered, `SOURCE_MATCH_REQUIRED_FIXTURES` may not
+be trimmed or extended to make a run succeed, and no rule, tolerance or
+verdict criterion moves to accommodate a producer.  Nothing in this change
+touches them; it only makes the next run say what happened.
+
+Regressions: `test_a_producer_that_declines_to_build_a_record_is_its_own_
+finding` (status, message, trace with the returning line and the locals, stub
+counts, and no candidate) and
+`test_the_trace_a_stop_carries_describes_locals_without_their_contents`
+(a signal-sized local recorded as type and length, the summary small enough to
+publish).  Suite: 97 functions, 866 assertions.  Bundle `0a154303…` / manifest
+`5a4a7020…` at `runs/20260816T012958_…` is preserved as an authentic stop
+record.
+
 **D19 (2026-08-16) — a column selected row by row is still one column; the
 synthetic suite failed in Colab and passed here.**  With D17 merged and
 execution re-approved, cell 3 stopped before any registered asset was touched:
