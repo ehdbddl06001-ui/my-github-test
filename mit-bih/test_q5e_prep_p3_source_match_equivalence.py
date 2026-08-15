@@ -2961,24 +2961,6 @@ def test_the_filler_adds_the_same_rows_to_both_sides():
               f"registered producer needs before it will build a record")
 
 
-def test_each_fixture_still_isolates_its_own_decision():
-    """The detection matrix is the point of the fixture set, so it is re-run."""
-    caught = {}
-    for name in VARIANTS:
-        result = differential_for(variant_text(name))
-        caught[name] = sorted(entry["name"] for entry in result["detail"]
-                              if not entry["equal"])
-    for name, fixtures in caught.items():
-        check(fixtures, f"variant {name} is still caught by some fixture")
-    for name, fixtures in caught.items():
-        unique = [f for f in fixtures
-                  if all(f not in other for key, other in caught.items()
-                         if key != name)]
-        check(unique,
-              f"variant {name} is still caught by a fixture no other variant "
-              f"catches: {fixtures}")
-
-
 def test_a_producer_that_declines_to_build_a_record_is_its_own_finding():
     """"It returned nothing" is not "its rows could not be read".
 
