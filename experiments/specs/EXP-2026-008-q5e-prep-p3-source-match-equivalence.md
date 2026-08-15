@@ -481,6 +481,97 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D17 (2026-08-16) — the return is read by the registered schema, not by
+trial; execution approval withdrawn with the harness change.**  D16 widened the
+general reader, and Codex's review pointed at the thing that widening does not
+fix: the registered `build_record()` returns a **columnar record** — a mapping
+of one array per field (`beat`/`ref`/`rr`/`sim`/`pw`/`ctx`/`y`), all row-aligned
+— and a reader that recognises rows by trying channels until one works is not a
+basis for a statement about the registered source.  Which channel it lands on
+depends on what happens to be readable.
+
+The manipulated variable is exactly one thing: **return value → kept-row
+identity**.  The fixtures, the adapter, the matching rule, the tolerance and
+the verdict criteria are all fixed.
+
+*The record schema is registered, not retyped.*  `COLUMNAR_RECORD_KEYS` is
+`BJ.CACHE_KEYS` from the frozen Q5-D module — the cache schema the registered
+`prepare()` writes — so this list cannot drift from the thing it describes.
+
+*The identity carrier is fixed in advance and for a structural reason.*
+`rr[:, 0]`: the injected `rr_features` stub builds row `j` as `[peak_j, j, 0…]`,
+so its first column is the peak the row was built for **by the injection
+contract**, not by decoding what the source means by "rr".  It is also the one
+channel the `_z` probe cannot move, because the stub never sees `_z`.
+
+*Cross-checks can refuse but never decide.*  `pw[:, 0]` must equal the carrier
+exactly where it is readable; the beat window's centre column must equal it
+after the declared transform for the active variant (identity under the primary
+injection, elementwise negation under the probe — decided from the *variant*,
+which is an input, before any value is read).  A contradiction is
+`P3_COLUMNAR_RETURN_UNPROJECTABLE`; an unavailable channel is recorded as
+unavailable.  Neither can change which rows are read, so no run can end up
+reporting the channel that gave the nicest answer.
+
+*The reader is chosen by schema alone*, before a single value is looked at, and
+there is **no fallback** from the columnar reader to the general one: falling
+back after a contradiction is exactly the after-the-fact selection this removes.
+A mapping carrying record columns *without* the carrier is its own stop rather
+than a rescue by another channel.
+
+*Nothing is repaired.*  A first column that is NaN, infinite, non-integral, an
+unknown sample, or a duplicate is a stop; there is no rounding and no snapping
+to a closest peak.  Row **order** is deliberately not a validity rule: one of
+the six fixtures exists to catch a producer that reorders its rows, and a rule
+that stopped there would turn the difference it was built to detect into "the
+harness could not read this".  The order is read, reported, and compared.
+
+*Arrays are read through `shape`/`dtype`/`tolist()`* rather than through
+`isinstance(value, numpy.ndarray)`.  numpy is installed where the run happens
+and absent where the tests run, so a numpy-typed branch would be exercised only
+in the place that cannot test it.
+
+*Diagnosis survives the stop.*  `SourceHarnessError` now carries a structured
+`context`, and every fixture records the return's type, keys, per-column shape,
+dtype and row-alignment, the channels detected, the per-channel peak sequences,
+and per-stub call counts and input row counts — into the existing
+`fixture_results.json` (no new bundle file, payload fold unchanged), and onto
+the exception when a stop discards the differential.  Shapes and reasons only;
+never array contents.
+
+*The approval does not carry over.*  The harness changed, so
+`oracle_harness_sha256` changed, and an approval given for a harness the
+approver did not see is not an approval of this one.
+`EXECUTION_APPROVAL_RECORD.granted` is back to `False` with the withdrawal
+recorded beside it, `OPEN_REGISTERED_DATA` stays `False`, and this PR performs
+zero registered-source reads, zero Drive API calls, zero P3 runs, zero bundles
+and zero registrations.  The order from here is: review this change → merge →
+a separate execution-enable approval → one fresh run of all six fixtures from
+the first.
+
+New regressions (13): the columnar producer read end to end on all six
+fixtures under both injection variants; the reader chosen by schema and never
+by result; every way the carrier can fail to identify its rows (width, dtype,
+dimensionality, NaN, non-integral, unknown peak, duplicate); cross-checks that
+refuse (`pw` moved, beat centre moved) and one that is merely unavailable;
+row-count disagreement across columns; a record without its carrier that never
+falls back; order read rather than required; the record read through an
+array-shaped stand-in with `shape`/`dtype`/`tolist()`; the mutation showing the
+general reader *does* read a carrier-less record and so would have chosen a
+channel where this one refuses; a stop carrying its diagnosis out to the
+bundle; and the diagnosis containing no column values.  Suite: 93 functions,
+835 assertions.
+
+**What this does not claim.**  It does not claim to have identified the cause
+of the `20260816T000714` stop.  That run predates the shape-describing message,
+so its bundle does not say what came back, and a columnar mapping of plain
+lists is in fact readable by the old general reader — which means the evidence
+is equally consistent with a return the old reader could not name at all.  What
+this change does is make the columnar case explicit and checked, and make the
+*next* stop say what it saw.  The `20260816T000714` bundle (fold `c0cea7ac…`,
+manifest `d0cc9a05…`, Drive folder `1G7ju5VJjKdb6oTM-6n-_nPsM1fb1vRLI`) is a
+valid harness-stop audit record and is preserved unmodified.
+
 **D16 (2026-08-16) — fourth attempt stopped at `P3_KEPT_ROWS_UNOBSERVABLE`;
 the reader now opens whatever container came back.**  Run `20260816T000714`
 ran the registered `build_record` to completion on the first fixture and then

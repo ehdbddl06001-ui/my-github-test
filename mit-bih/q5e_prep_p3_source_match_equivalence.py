@@ -151,6 +151,13 @@ P3_STUB_SURFACE_INCOMPLETE = "P3_STUB_SURFACE_INCOMPLETE"
 #: not, the injection is steering the thing it was supposed to stand out of the
 #: way of, and that is a stop rather than a verdict.
 P3_INJECTED_VALUE_STEERS_MATCHING = "P3_INJECTED_VALUE_STEERS_MATCHING"
+#: The producer returned the registered **columnar** record — a mapping of
+#: per-row columns — and its own channels do not agree about which rows it
+#: kept.  Its own stop, kept apart from the generic one: here the return *was*
+#: recognised and read, and what failed is a contradiction inside it.  Reading
+#: this as `SOURCE_MATCH_EQUIVALENCE_REQUIRED` would be wrong in the worst
+#: direction, because no comparison was made.
+P3_COLUMNAR_RETURN_UNPROJECTABLE = "P3_COLUMNAR_RETURN_UNPROJECTABLE"
 #: Stops that say the harness could not make the comparison.  A candidate
 #: record is never produced from one of these, and none of them may be
 #: reported as a disagreement between the adapter and the registered source.
@@ -159,7 +166,8 @@ HARNESS_STOPS: Tuple[str, ...] = (
     P3_SOURCE_UNLOADABLE, P3_SOURCE_SIGNATURE_UNBINDABLE,
     P3_SOURCE_RUNTIME_ERROR, P3_SOURCE_TRACE_UNPROJECTABLE,
     P3_KEPT_ROWS_UNOBSERVABLE, P3_FIXTURE_CONTRACT_VIOLATION,
-    P3_STUB_SURFACE_INCOMPLETE, P3_INJECTED_VALUE_STEERS_MATCHING)
+    P3_STUB_SURFACE_INCOMPLETE, P3_INJECTED_VALUE_STEERS_MATCHING,
+    P3_COLUMNAR_RETURN_UNPROJECTABLE)
 P3_STATUSES: Tuple[str, ...] = (
     (P3_PASS, P3_EQUIVALENCE_REQUIRED) + HARNESS_STOPS)
 #: Ordered P3 gates.  The source is never imported before its identity has
@@ -217,8 +225,21 @@ NOT_APPROVED: Tuple[str, ...] = (
 #: just as importantly — what was **not** approved, so the boundary is
 #: readable from the code and not only from a spec.  Setting `granted` back to
 #: `False` restores every refusal exactly, with no other change anywhere.
+#:
+#: **Withdrawn on 2026-08-16.**  The approval of 2026-08-15 was given for the
+#: harness as it stood, and this change alters the harness: the reader that
+#: turns a returned record into kept-row identity is different, so
+#: `oracle_harness_sha256` is different.  An approval does not transfer to a
+#: harness the approver did not see, and neither does the implementation
+#: acceptance.  Re-enabling is one value, after review of this change.
 EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
-    "granted": True,
+    "granted": False,
+    "withdrawn_on": "2026-08-16",
+    "withdrawn_because": (
+        "the kept-row observation seam changed, so oracle_harness_sha256 "
+        "changed; the 2026-08-15 execution approval and the "
+        "P3_IMPLEMENTATION_ACCEPTED that came with it were given for the "
+        "previous harness and are not carried over automatically"),
     "granted_on": "2026-08-15",
     "granted_by": "user",
     "kind": ("read-only execution of EXP-2026-008 Q5-E PREP P3: the candidate "
@@ -238,7 +259,12 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "recorded_in": SPEC_PATH,
 }
 APPROVAL_NOTE = (
-    "Approved (2026-08-15) by the user: **read-only** execution of P3 — "
+    "WITHDRAWN (2026-08-16): the kept-row observation seam changed, so the "
+    "oracle harness identity changed, and neither the execution approval nor "
+    "the implementation acceptance transfers to a harness the approver has "
+    "not seen.  A fresh execution-enable approval reopens it, and the run "
+    "then starts again from the first of the six fixtures.  What was "
+    "Approved (2026-08-15), for the record: **read-only** execution of P3 —"
     f"reading the registered {REGISTERED_SOURCE_NAME} by file id "
     f"{REGISTERED_SOURCE_FILE_ID} under exactly the drive.readonly scope, "
     "loading it under synthetic dependency injection, running the six "
@@ -295,13 +321,20 @@ class SourceHarnessError(P3Error):
     because they were never compared.
     """
 
-    def __init__(self, status: str, message: str) -> None:
+    def __init__(self, status: str, message: str,
+                 context: Optional[Mapping[str, object]] = None) -> None:
         if status not in HARNESS_STOPS:
             raise P3Error(f"{status!r} is not a registered harness stop; the "
                           f"harness does not invent verdicts")
         super().__init__(f"{status}: {message}")
         self.status = status
         self.detail = message
+        #: Structured diagnosis, carried on the exception so that it survives
+        #: to the bundle.  A stop discards the differential, so anything only
+        #: reachable through the returned result is lost exactly when it is
+        #: most needed — which is how the 20260816T000714 run cost a round
+        #: trip.  Shapes and reasons only: never array contents.
+        self.context: Dict[str, object] = dict(context or {})
 
 
 def require_execution_approval(approval: Optional[str], what: str) -> None:
@@ -606,6 +639,27 @@ class StubCallLog(object):
 
     def as_list(self) -> List[Dict[str, object]]:
         return [dict(c) for c in self.calls]
+
+
+def stub_call_summary(log: StubCallLog) -> Dict[str, object]:
+    """How often each injected dependency was called, and with how many rows.
+
+    Counts and row counts only — never the values a stub was handed.  It
+    belongs beside the return schema for the same reason: when a run stops,
+    "the producer asked for peaks twice and never called the RR stub" is the
+    difference between one more round trip and none.
+    """
+    counts: Dict[str, int] = {}
+    rows: Dict[str, List[int]] = {}
+    for call in log.as_list():
+        target = str(call["target"])
+        counts[target] = counts.get(target, 0) + 1
+        for key in ("given", "returned"):
+            value = call.get(key)
+            if isinstance(value, (list, tuple)):
+                rows.setdefault(f"{target}.{key}", []).append(len(value))
+    return {"counts": dict(sorted(counts.items())),
+            "input_rows": {k: v for k, v in sorted(rows.items())}}
 
 
 def _numpy():
@@ -2038,6 +2092,352 @@ def merge_implied(by_container: Mapping[str, Mapping[str, object]],
 PEAK_ROW_FIELDS: Tuple[str, ...] = ("r_sample", "peak", "sample", "peak_index")
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# The registered producer's own return shape: a columnar record.
+#
+# `build_record()` does not hand back a list of row objects.  It hands back a
+# mapping of **columns** — one array per field, all of them row-aligned — which
+# is what `prepare()` saves as the record cache.  The generic reader below can
+# stumble into such a mapping, but it recognises it by trying things until one
+# works, and "whatever channel turned out to be readable" is not a basis for a
+# statement about the registered source.  So this schema is read explicitly:
+# the keys are checked first, the identity carrier is fixed in advance, and the
+# other channels can only refuse the reading — never choose it.
+# ─────────────────────────────────────────────────────────────────────────────
+#: The columns a built record carries.  Taken from the frozen Q5-D module
+#: rather than retyped here: `BJ.CACHE_KEYS` is the registered cache schema and
+#: the registered `build_record()` is what writes it, so this list cannot drift
+#: away from the thing it claims to describe.
+COLUMNAR_RECORD_KEYS: Tuple[str, ...] = tuple(BJ.CACHE_KEYS)
+
+#: The row-identity carrier, fixed **before** any run and for a structural
+#: reason rather than a hopeful one: `rr` is built by the injected
+#: `rr_features` stub, whose row `j` is `[peak_j, j, 0 …]`.  Its first column is
+#: therefore the peak each row was built for *by the injection contract* — not
+#: by decoding what the registered source means by "rr".  It is also the one
+#: channel that does not move with the `_z` probe, since the stub never sees it.
+COLUMNAR_IDENTITY_KEY = "rr"
+COLUMNAR_IDENTITY_WIDTH = BJ.CACHE_RR_DIM
+
+#: Independent channels checked **against** the carrier.  `pw` comes from the
+#: P-wave stub under the same row convention; `beat` is a window over the ramp
+#: signal, whose centre sample is its own index.  Neither can select rows: they
+#: can only agree, refuse, or be unavailable, and the last case is recorded.
+COLUMNAR_CROSSCHECK_KEYS: Tuple[str, ...] = ("pw", "beat")
+
+
+def _as_lists(value: object) -> object:
+    """An array-like as plain lists, via its own `tolist()`.
+
+    Structural rather than numpy-specific on purpose: this module never
+    imports numpy to do its work, the run happens where numpy is installed and
+    the tests run where it is not, and an `isinstance(value, ndarray)` branch
+    would be exercised in exactly the wrong one of those two places.
+    """
+    tolist = getattr(value, "tolist", None)
+    if callable(tolist) and not isinstance(value, (list, tuple, dict, str,
+                                                   bytes)):
+        try:
+            return tolist()
+        except Exception:                                    # noqa: BLE001
+            return None
+    return value
+
+
+def _sequence_shape(value: object) -> Optional[Tuple[int, ...]]:
+    """`(rows[, columns])` for an array-like value, or `None`."""
+    shape = getattr(value, "shape", None)
+    if isinstance(shape, tuple) and all(isinstance(v, int) for v in shape):
+        return tuple(int(v) for v in shape)
+    value = _as_lists(value)
+    if isinstance(value, (list, tuple)):
+        inner = [len(v) for v in value if isinstance(v, (list, tuple))]
+        if value and len(inner) == len(value) and len(set(inner)) == 1:
+            return (len(value), inner[0])
+        return (len(value),)
+    return None
+
+
+def _sequence_dtype(value: object) -> Optional[str]:
+    """The element type of an array-like, by name.  Never its contents."""
+    dtype = getattr(value, "dtype", None)
+    if dtype is not None:
+        return str(dtype)
+    value = _as_lists(value)
+    if not isinstance(value, (list, tuple)):
+        return None
+    kinds = set()
+    for item in list(value)[:MAX_CONTAINER]:
+        if isinstance(item, (list, tuple)):
+            kinds.update(type(v).__name__ for v in list(item)[:8])
+        else:
+            kinds.add(type(item).__name__)
+    return "/".join(sorted(kinds)[:4]) if kinds else "empty"
+
+
+def _numeric_rows(value: object) -> Optional[List[List[float]]]:
+    """A two-dimensional numeric block as plain floats, or `None`.
+
+    `None` means "this is not a numeric block" — a different thing from "this
+    block says something unexpected", which is a stop.
+    """
+    shape = _sequence_shape(value)
+    if shape is not None and shape[0] == 0:
+        # A column with no rows is a numeric block with no rows.  Reading it as
+        # "not a numeric block" would turn a producer that kept nothing into a
+        # producer that cannot be read, which are different findings.
+        return []
+    if shape is None or len(shape) != 2:
+        return None
+    value = _as_lists(value)
+    if not isinstance(value, (list, tuple)):
+        return None
+    rows: List[List[float]] = []
+    for row in value:
+        row = _as_lists(row)
+        if not isinstance(row, (list, tuple)):
+            return None
+        out: List[float] = []
+        for item in row:
+            if isinstance(item, bool) or not isinstance(item, (int, float)):
+                return None
+            out.append(float(item))
+        rows.append(out)
+    return rows
+
+
+def _flat_tokens(value: object, n_rows: int) -> List[str]:
+    """A flat per-row column read as opaque tokens, or `[]`.
+
+    What a token *means* is never decoded; it is compared only with tokens from
+    the same producer.  This is how a label column can help settle an ambiguous
+    trace without the harness ever deciding what a class is called.
+    """
+    value = _as_lists(value)
+    if not isinstance(value, (list, tuple)) or len(value) != n_rows:
+        return []
+    if any(isinstance(item, (list, tuple, dict)) for item in value):
+        return []
+    return [repr(item) for item in value]
+
+
+def columnar_keys_present(returned: object) -> List[str]:
+    """Which registered record columns a returned mapping carries, by name."""
+    if not isinstance(returned, Mapping):
+        return []
+    keys = {str(k) for k in returned.keys()}
+    return [key for key in COLUMNAR_RECORD_KEYS if key in keys]
+
+
+def is_columnar_return(returned: object) -> bool:
+    """Is this the registered columnar record schema?
+
+    Decided from the **schema alone** — the type and the key names — and never
+    from the values inside it.  That matters more than it looks: a dispatcher
+    that peeked at the numbers could pick whichever reader produced a tidier
+    answer, and the answer is the thing under test.
+
+    Recognition needs the identity carrier and at least one other registered
+    column.  Requiring all seven would be stricter in appearance only: a record
+    missing one of them would then be handed to the general reader, which is
+    the fallback this design exists to remove.  The carrier is the column that
+    decides anything, so it is the one that must be there — and a mapping that
+    carries record columns *without* it is a stop, not a fallback.
+    """
+    present = columnar_keys_present(returned)
+    return COLUMNAR_IDENTITY_KEY in present and len(present) >= 2
+
+
+def is_incomplete_columnar_return(returned: object) -> bool:
+    """Record columns came back, but not the one that identifies the rows."""
+    present = columnar_keys_present(returned)
+    return len(present) >= 2 and COLUMNAR_IDENTITY_KEY not in present
+
+
+def return_schema_report(returned: object,
+                         n_rows: Optional[int] = None) -> Dict[str, object]:
+    """What came back, described by shape.  Recorded on every fixture.
+
+    Type, keys, shapes, dtypes, row-alignment — enough that the next stop is
+    diagnosable from the bundle alone, and nothing that could be read as a
+    measurement.  No array contents and no source locals.
+    """
+    report: Dict[str, object] = {
+        "type": type(returned).__name__,
+        "is_mapping": isinstance(returned, Mapping),
+        "is_columnar_record": is_columnar_return(returned),
+        "shape_summary": describe_returned(returned),
+        "keys": None,
+        "columns": {},
+    }
+    if isinstance(returned, Mapping):
+        keys = sorted(str(k) for k in returned.keys())
+        report["keys"] = keys
+        report["missing_registered_keys"] = [
+            key for key in COLUMNAR_RECORD_KEYS if key not in keys]
+        columns: Dict[str, object] = {}
+        for key in keys[:32]:
+            value = returned[key]
+            shape = _sequence_shape(value)
+            columns[key] = {
+                "type": type(value).__name__,
+                "shape": (None if shape is None else list(shape)),
+                "dtype": _sequence_dtype(value),
+                "row_aligned": (None if shape is None or n_rows is None
+                                else shape[0] == n_rows)}
+        report["columns"] = columns
+    return report
+
+
+def project_columnar_rows(returned: Mapping[str, object],
+                          fixture: Mapping[str, object],
+                          variant: str = STUB_VARIANT_PRIMARY
+                          ) -> Dict[str, object]:
+    """Read kept-row identity out of the registered columnar record.
+
+    One decisional carrier, fixed in advance: `rr[:, 0]`, which the injected
+    stub wrote the peak into.  Everything else is a check on it.  A cross-check
+    that disagrees stops the run; a cross-check that is unavailable is recorded
+    as unavailable.  Neither can change which rows are read, so there is no way
+    for this function to end up reporting "the channel that gave the nicest
+    answer".
+
+    Nothing here rounds, snaps to a closest peak, or tolerates a near miss:
+    a first column that is not exactly a fixture peak sample is a stop.
+    """
+    peaks = [int(p) for p in fixture["peaks"]]
+    peak_set = set(peaks)
+    position_of = {p: i for i, p in enumerate(peaks)}
+    schema = return_schema_report(returned)
+
+    def stop(reason: str, **extra: object) -> None:
+        raise SourceHarnessError(
+            P3_COLUMNAR_RETURN_UNPROJECTABLE,
+            f"{fixture['name']}: {reason}.  The registered columnar record was "
+            f"recognised, so this is a contradiction inside what the producer "
+            f"returned, not a disagreement with the adapter, and no comparison "
+            f"was made.",
+            context={"fixture": str(fixture["name"]), "parser": "columnar",
+                     "variant": variant, "return_schema": schema,
+                     "reason": reason, **extra})
+
+    identity_column = returned.get(COLUMNAR_IDENTITY_KEY)
+    rows2d = _numeric_rows(identity_column)
+    if rows2d is None:
+        stop(f"{COLUMNAR_IDENTITY_KEY!r} is not a two-dimensional numeric "
+             f"block, so the registered row-identity carrier cannot be read")
+    if rows2d and len(rows2d[0]) != COLUMNAR_IDENTITY_WIDTH:
+        stop(f"{COLUMNAR_IDENTITY_KEY!r} is {len(rows2d)} x "
+             f"{len(rows2d[0])} where the registered width is "
+             f"{COLUMNAR_IDENTITY_WIDTH}")
+    identity: List[int] = []
+    for index, row in enumerate(rows2d):
+        value = row[0]
+        if value != value or value in (float("inf"), float("-inf")):
+            stop(f"row {index} of {COLUMNAR_IDENTITY_KEY!r} carries "
+                 f"{'NaN' if value != value else 'an infinity'} where a sample "
+                 f"index belongs")
+        if float(value) != int(value):
+            stop(f"row {index} of {COLUMNAR_IDENTITY_KEY!r} carries a "
+                 f"non-integral value where a sample index belongs; this "
+                 f"projection does not round")
+        sample = int(value)
+        if sample not in peak_set:
+            stop(f"row {index} of {COLUMNAR_IDENTITY_KEY!r} names sample "
+                 f"{sample}, which is not one of the fixture's peaks; this "
+                 f"projection does not fall back to the closest one")
+        identity.append(sample)
+    if len(set(identity)) != len(identity):
+        stop(f"{COLUMNAR_IDENTITY_KEY!r} names the same peak more than once, "
+             f"so its rows do not identify themselves")
+    # Row **order** is deliberately not a validity condition.  One of the six
+    # registered fixtures exists to catch a producer that emits its rows in a
+    # different order, and a rule that stopped on that would turn the
+    # difference it was built to detect into "the harness could not read this".
+    # The order is read and reported; comparing it is the differential's job.
+    positions = [position_of[s] for s in identity]
+    n_rows = len(identity)
+
+    # Every registered column is a column of the same record: a differing row
+    # count means the record does not describe one set of rows, and picking the
+    # majority would be inventing an answer.
+    notes: Dict[str, str] = {}
+    for key in COLUMNAR_RECORD_KEYS:
+        shape = _sequence_shape(returned.get(key))
+        if shape is None:
+            notes[key] = "not array-like; no row count to check"
+            continue
+        if shape[0] != n_rows:
+            stop(f"{key!r} has {shape[0]} rows where "
+                 f"{COLUMNAR_IDENTITY_KEY!r} has {n_rows}",
+                 row_counts={k: (_sequence_shape(returned.get(k)) or [None])[0]
+                             for k in COLUMNAR_RECORD_KEYS})
+
+    channels: Dict[str, List[int]] = {f"{COLUMNAR_IDENTITY_KEY}[:, 0]": identity}
+
+    pw_rows = _numeric_rows(returned.get("pw"))
+    if pw_rows is None:
+        notes["pw"] = "not a two-dimensional numeric block; not used"
+    elif not pw_rows:
+        notes["pw"] = "no rows; nothing to cross-check"
+    else:
+        observed = [row[0] for row in pw_rows]
+        if [float(v) for v in observed] != [float(v) for v in identity]:
+            stop(f"'pw' first column and {COLUMNAR_IDENTITY_KEY!r} first "
+                 f"column name different rows",
+                 rr_first_column=list(identity),
+                 pw_first_column=[(int(v) if float(v) == int(v) else v)
+                                  for v in observed])
+        channels["pw[:, 0]"] = identity
+
+    # The beat window carries sample identity only while the injection contract
+    # holds: the ramp signal makes `signal[i] == i`, and the declared `_z`
+    # stand-in is the identity under the primary variant and an elementwise
+    # negation under the probe.  The expected centre is therefore known from
+    # the *variant*, which is an input, before any value is looked at.
+    sign = -1.0 if variant == STUB_VARIANT_PROBE else 1.0
+    beat_rows = _numeric_rows(returned.get("beat"))
+    window = BJ.WIN_BEFORE + BJ.WIN_AFTER
+    if beat_rows is None:
+        notes["beat"] = "not a two-dimensional numeric block; not used"
+    elif not beat_rows:
+        notes["beat"] = "no rows; nothing to cross-check"
+    elif len(beat_rows[0]) != window:
+        notes["beat"] = (f"width {len(beat_rows[0])} is not the registered "
+                         f"window {window}; not used")
+    else:
+        centres = [row[BJ.WIN_BEFORE] for row in beat_rows]
+        expected = [sign * float(s) for s in identity]
+        # Undoing the declared transform is the whole of the arithmetic here:
+        # multiplying by the same `sign` the contract states.  Nothing measures
+        # a distance, and nothing is snapped to a closest anything.
+        recovered = [c * sign for c in centres]
+        if centres == expected:
+            channels[f"beat[:, {BJ.WIN_BEFORE}]"] = identity
+        elif all(float(v) == int(v) and int(v) in peak_set for v in recovered):
+            stop(f"the beat window centres name rows "
+                 f"{[int(v) for v in recovered]} where "
+                 f"{COLUMNAR_IDENTITY_KEY!r} names {identity}",
+                 beat_centres=[int(v) for v in recovered],
+                 rr_first_column=list(identity))
+        else:
+            notes["beat"] = ("the stored window does not carry sample identity "
+                             "under this injection; not used")
+
+    labels = _flat_tokens(returned.get("y"), n_rows)
+    rows = [{"row": index, "peak_sample": sample,
+             "tokens": ([["columnar_y", labels[index]]] if labels else [])}
+            for index, sample in enumerate(identity)]
+    return {"rows": rows,
+            "channels": sorted(channels),
+            "channel_sequences": {k: list(v) for k, v in channels.items()},
+            "parser": "columnar",
+            "identity_channel": f"{COLUMNAR_IDENTITY_KEY}[:, 0]",
+            "row_order_follows_fixture": positions == sorted(positions),
+            "channel_notes": notes,
+            "return_schema": return_schema_report(returned, n_rows)}
+
+
 def _unreadable(canonical: object) -> bool:
     """Did canonicalisation come back with nothing but a type name?"""
     return (isinstance(canonical, dict) and "__type__" in canonical
@@ -2119,12 +2519,21 @@ def _canonical_mapping(node: object) -> Optional[Dict[str, object]]:
     return out
 
 
-def discover_kept_rows(returned: object, fixture: Mapping[str, object]
+def discover_kept_rows(returned: object, fixture: Mapping[str, object],
+                       variant: str = STUB_VARIANT_PRIMARY
                        ) -> Dict[str, object]:
     """Read the kept rows out of whatever the producer returned.
 
-    Three independent channels, and they must agree where more than one is
-    present:
+    The registered columnar record is read by :func:`project_columnar_rows`,
+    and the choice between the two readers is made from the **return schema
+    alone** — before a single value is looked at — so a run can never end up
+    reporting whichever reader produced the tidier answer.  There is
+    deliberately no fallback from the columnar reader to this one: falling back
+    after a contradiction would be exactly that choice, made after seeing it.
+
+    What follows is the general reader, for the candidate adapter and for any
+    producer that hands rows back as rows.  Three independent channels, and
+    they must agree where more than one is present:
 
     * rows that are mappings and all carry a peak-valued field;
     * two-dimensional numeric blocks whose first column is a peak — the RR and
@@ -2137,8 +2546,24 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
     only against other tokens from the **same** producer, so the two sides
     never have to agree about how a class is spelled.
     """
+    if is_columnar_return(returned):
+        return project_columnar_rows(returned, fixture, variant)
+    if is_incomplete_columnar_return(returned):
+        raise SourceHarnessError(
+            P3_COLUMNAR_RETURN_UNPROJECTABLE,
+            f"{fixture['name']}: the producer returned the registered record "
+            f"columns {columnar_keys_present(returned)} without "
+            f"{COLUMNAR_IDENTITY_KEY!r}, the column that says which peak each "
+            f"row was built for.  Reading the remaining columns with the "
+            f"general reader would be choosing a channel because the "
+            f"registered one is missing, so the comparison is not made.",
+            context={"fixture": str(fixture["name"]), "parser": "columnar",
+                     "variant": variant,
+                     "return_schema": return_schema_report(returned),
+                     "reason": "the row-identity carrier is missing"})
     peaks = [int(p) for p in fixture["peaks"]]
     peak_set = set(peaks)
+    schema = return_schema_report(returned)
     canonical = canonical_value(returned, limit=RETURN_MAX_CONTAINER)
     if _unreadable(canonical):
         # A producer may hand back a record object rather than a mapping or a
@@ -2236,7 +2661,10 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
             raise SourceHarnessError(
                 P3_KEPT_ROWS_UNOBSERVABLE,
                 f"the producer returned row-like structures this projection "
-                f"could not read: {rejected}.  The comparison was not made.")
+                f"could not read: {rejected}.  The comparison was not made.",
+                context={"fixture": str(fixture["name"]), "parser": "generic",
+                         "variant": variant, "return_schema": schema,
+                         "rejected": list(rejected)})
         if not empty_lists:
             # Nothing that could hold rows came back at all.  "It kept
             # nothing" and "its output cannot be read" are different findings,
@@ -2249,11 +2677,15 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
                 f"the producer returned no row container at all: not an empty "
                 f"one, which would say it kept nothing, and not a readable "
                 f"one.  What it did return: {describe_returned(returned)}.  "
-                f"The comparison was not made.")
+                f"The comparison was not made.",
+                context={"fixture": str(fixture["name"]), "parser": "generic",
+                         "variant": variant, "return_schema": schema,
+                         "reason": "no row container at all"})
         # Every row container that came back was empty: the producer kept no
         # rows, and that is an observation rather than a failure.
         return {"rows": [], "channels": ["empty_result"],
                 "channel_sequences": {"empty_result": []},
+                "parser": "generic", "return_schema": schema,
                 "empty_containers": sorted(empty_lists)}
     sequences = {name: [row["peak_sample"] for row in rows]
                  for name, rows in channels.items()}
@@ -2262,7 +2694,11 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
             P3_KEPT_ROWS_UNOBSERVABLE,
             f"the producer's own output channels disagree about which rows it "
             f"kept: {sequences}.  A comparison built on a channel chosen after "
-            f"seeing the answers would be worthless.")
+            f"seeing the answers would be worthless.",
+            context={"fixture": str(fixture["name"]), "parser": "generic",
+                     "variant": variant, "return_schema": schema,
+                     "channel_sequences": {k: list(v)
+                                           for k, v in sequences.items()}})
     rows = channels[sorted(channels)[0]]
     for name in sorted(channels):
         for index, row in enumerate(channels[name]):
@@ -2274,7 +2710,9 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
         for position, row in enumerate(rows):
             row["tokens"].append([f"vector_{index}", vector[position]])
     return {"rows": rows, "channels": sorted(channels),
-            "channel_sequences": {k: list(v) for k, v in sequences.items()}}
+            "channel_sequences": {k: list(v) for k, v in sequences.items()},
+            "parser": "generic",
+            "return_schema": return_schema_report(returned, len(rows))}
 
 
 def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
@@ -2381,7 +2819,10 @@ class LabelDictionary(object):
 
 def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
                         returned: object, dictionary: LabelDictionary,
-                        side: str) -> Dict[str, object]:
+                        side: str,
+                        variant: str = STUB_VARIANT_PRIMARY,
+                        discovery: Optional[Dict[str, object]] = None
+                        ) -> Dict[str, object]:
     """One producer's decisions on one fixture, in the canonical schema.
 
     The same function runs over the registered source and over the candidate
@@ -2391,7 +2832,16 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
     annotations = _annotation_table(fixture)
     peaks = _peak_table(fixture)
     name = str(fixture["name"])
-    discovered = discover_kept_rows(returned, fixture)
+    discovered = discover_kept_rows(returned, fixture, variant)
+    if discovery is not None:
+        # Handed back to the caller by reference, so that the reading of the
+        # return survives a stop raised further down.  It is deliberately not
+        # part of the returned observation: the observation is what gets
+        # compared, and how a producer *shapes* its output is not a decision
+        # this PREP compares.
+        discovery.clear()
+        discovery.update({k: v for k, v in discovered.items() if k != "rows"})
+        discovery["n_rows"] = len(discovered["rows"])
     kept = discovered["rows"]
     peak_index_of = {p["peak_sample"]: p["peak_index"] for p in peaks}
 
@@ -2457,7 +2907,11 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
     if unresolved:
         raise SourceHarnessError(
             P3_SOURCE_TRACE_UNPROJECTABLE,
-            f"{side}/{name}: " + "; ".join(sorted(set(unresolved))))
+            f"{side}/{name}: " + "; ".join(sorted(set(unresolved))),
+            context={"fixture": name, "side": side, "variant": variant,
+                     "unresolved": sorted(set(unresolved)),
+                     "return_schema": discovered.get("return_schema"),
+                     "parser": discovered.get("parser")})
 
     # What the dictionary already knows must agree with what the trace says.
     # A row whose label contradicts its mapped annotation means one of the two
@@ -2473,7 +2927,10 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
                 f"{side}/{name}: the row kept for peak sample "
                 f"{row['peak_sample']} carries a label this producer has "
                 f"elsewhere used for {sorted(symbols)}, but the trace maps it "
-                f"to {symbol!r}")
+                f"to {symbol!r}",
+                context={"fixture": name, "side": side, "variant": variant,
+                         "return_schema": discovered.get("return_schema"),
+                         "parser": discovered.get("parser")})
 
     mapping = []
     for peak in peaks:
@@ -2575,15 +3032,28 @@ def observation_digest(observation: Mapping[str, object]) -> str:
 # The two sides.
 # ─────────────────────────────────────────────────────────────────────────────
 def observe_source(build_record: Callable, fixture: Mapping[str, object],
-                   dictionary: LabelDictionary
+                   dictionary: LabelDictionary,
+                   variant: str = STUB_VARIANT_PRIMARY,
+                   discovery: Optional[Dict[str, object]] = None
                    ) -> Tuple[Dict[str, object], Dict[str, object]]:
     """Run the registered producer on one fixture and read what it did."""
     binding = bind_source_arguments(build_record, fixture)
     returned, trace = trace_call(build_record, build_record.__code__,
                                  binding["kwargs"])
-    observation = project_observation(fixture, trace, returned, dictionary,
-                                      side="source")
-    return observation, {"binding": binding["plan"], **trace.as_dict()}
+    reading: Dict[str, object] = {} if discovery is None else discovery
+    try:
+        observation = project_observation(fixture, trace, returned, dictionary,
+                                          side="source", variant=variant,
+                                          discovery=reading)
+    except SourceHarnessError as error:
+        # The reading of the return is the diagnosis, so it is attached before
+        # the stop leaves this frame rather than recomputed by a caller that no
+        # longer has the value.
+        error.context.setdefault("return_schema",
+                                 return_schema_report(returned))
+        raise
+    return observation, {"binding": binding["plan"], "variant": variant,
+                         "return_reading": dict(reading), **trace.as_dict()}
 
 
 def observe_adapter(fixture: Mapping[str, object], dictionary: LabelDictionary,
@@ -2596,9 +3066,10 @@ def observe_adapter(fixture: Mapping[str, object], dictionary: LabelDictionary,
                               for s, y in fixture["annotations"]],
               "signal_length": int(fixture["signal_length"])}
     returned, trace = trace_call(adapter, adapter.__code__, kwargs)
+    reading: Dict[str, object] = {}
     observation = project_observation(fixture, trace, returned, dictionary,
-                                      side="adapter")
-    return observation, dict(trace.as_dict())
+                                      side="adapter", discovery=reading)
+    return observation, {"return_reading": dict(reading), **trace.as_dict()}
 
 
 def probe_injection_invariance(open_source: Callable,
@@ -2622,7 +3093,8 @@ def probe_injection_invariance(open_source: Callable,
             # fixture would leave the later fixtures with nothing to settle an
             # ambiguous trace against, and they would report "untested" for a
             # reason that has nothing to do with the injected helper.
-            probed, _meta = observe_source(build_record, fixture, dictionary)
+            probed, _meta = observe_source(build_record, fixture, dictionary,
+                                           variant=STUB_VARIANT_PROBE)
     except SourceHarnessError as error:
         return {"status": "untested", "variant": STUB_VARIANT_PROBE,
                 "reason": f"the producer stopped under the probe: "
@@ -2667,12 +3139,27 @@ def differential_over_fixtures(open_source: Callable,
     detail: List[Dict[str, object]] = []
     for name in fixture_names():
         fixture = FIXTURES_BY_NAME[name]
-        # The producer is observed **inside** its session, so the stubs are
-        # still installed while `build_record` runs.  A dependency imported in
-        # the function body resolves to the injected module, not a real one.
-        with open_source(fixture) as (build_record, call_log):
-            source_observation, source_meta = observe_source(
-                build_record, fixture, source_dictionary)
+        reading: Dict[str, object] = {}
+        call_log = StubCallLog()
+        try:
+            # The producer is observed **inside** its session, so the stubs are
+            # still installed while `build_record` runs.  A dependency imported
+            # in the function body resolves to the injected module, not a real
+            # one.
+            with open_source(fixture) as (build_record, call_log):
+                source_observation, source_meta = observe_source(
+                    build_record, fixture, source_dictionary,
+                    discovery=reading)
+        except SourceHarnessError as error:
+            # Everything learned up to the stop goes onto the exception, where
+            # `_execute_with_permit` can put it in the bundle.  A stop discards
+            # the differential, so a diagnosis reachable only through the
+            # result is lost exactly when it is the only thing worth having.
+            error.context.setdefault("fixture", name)
+            error.context["fixtures_completed"] = [e["name"] for e in detail]
+            error.context["stub_calls"] = stub_call_summary(call_log)
+            error.context.setdefault("return_reading", dict(reading))
+            raise
         # Neutrality of the injected helpers is probed, not assumed: the same
         # fixture is observed again with `_z` negated, and the decisions must
         # not move.  A difference means the injection is steering the
@@ -2703,6 +3190,12 @@ def differential_over_fixtures(open_source: Callable,
                        "adapter": adapter_observation,
                        "source_meta": source_meta,
                        "adapter_meta": adapter_meta,
+                       # Recorded on every fixture, not only on a stop: the
+                       # shape of what the producer returned and how much the
+                       # stubs were asked for is what makes the *next* stop
+                       # diagnosable from the bundle alone.
+                       "return_reading": dict(reading),
+                       "stub_calls": stub_call_summary(call_log),
                        "injected_calls": call_log.as_list(),
                        "difference": (None if equal else describe_difference(
                            source_observation, adapter_observation))})
@@ -2748,6 +3241,10 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
     "probe_injection_invariance", "_elementwise",
     "discover_kept_rows", "_unreadable", "_public_attributes",
+    "is_columnar_return", "is_incomplete_columnar_return",
+    "columnar_keys_present", "project_columnar_rows", "return_schema_report",
+    "_sequence_shape", "_numeric_rows", "_flat_tokens", "_as_lists",
+    "stub_call_summary", "columnar_keys_present",
     "describe_returned", "label_vectors", "project_observation",
     "stage_decomposition", "observe_source", "observe_adapter",
     "differential_over_fixtures")
@@ -3536,12 +4033,14 @@ def _execute_with_permit(out_dir: str, permit: SourcePermit,
     expected_digest = permit.sha256
     stop: Optional[str] = None
     detail: Optional[str] = None
+    stop_context: Dict[str, object] = {}
     differential: Optional[Dict[str, object]] = None
     try:
         differential = differential_over_fixtures(
             source_factory(permit), adapter=adapter, emit=record)
     except SourceHarnessError as error:
         stop, detail = error.status, error.detail
+        stop_context = dict(error.context)
         record(f"harness stop: {stop}: {detail}")
 
     precheck = check_candidate_against_gate(candidate_record(
@@ -3557,6 +4056,11 @@ def _execute_with_permit(out_dir: str, permit: SourcePermit,
                              if differential else {}),
         "stub_invariance": (differential.get("stub_invariance")
                             if differential else {}),
+        # A stop leaves `detail` empty, and the reading of the return is then
+        # the only thing that says why.  It is preserved inside the existing
+        # contracted file rather than in a new one, so the payload fold is
+        # unchanged and the diagnosis is still covered by it.
+        "harness_stop_context": dict(stop_context),
         "synthetic_fixture": bool(synthetic),
         "note": (SYNTHETIC_NOTE if synthetic else
                  "the fixture inputs are synthetic by design; the producer "
@@ -3733,6 +4237,11 @@ def module_capabilities() -> Tuple[str, ...]:
 
 def _approval_line() -> str:
     if not EXECUTION_APPROVAL_RECORD.get("granted"):
+        withdrawn = EXECUTION_APPROVAL_RECORD.get("withdrawn_on")
+        if withdrawn:
+            return (f"WITHDRAWN {withdrawn} - the approval of "
+                    f"{EXECUTION_APPROVAL_RECORD.get('granted_on')} was for a "
+                    f"different oracle harness and does not carry over")
         return "NOT APPROVED (implementation only)"
     return (f"APPROVED {EXECUTION_APPROVAL_RECORD['granted_on']} by "
             f"{EXECUTION_APPROVAL_RECORD['granted_by']} (read-only)")
