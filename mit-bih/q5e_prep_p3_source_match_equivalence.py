@@ -244,15 +244,16 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "0413a0ef11054d758ef6c5c9c847895de1c3d09302c1a8f6c6125445bf530088"),
+        "50f3eb7c78838b10d6e54fc2140edb9d7cd1d664b8bde30a333f63a2419a20e1"),
     "renewed_for_this_harness_because": (
-        "run 20260816T022702 showed the registered producer declining to build "
-        "a record from too few beats, so the six fixtures gained filler beats "
-        "and the harness identity moved with them.  **This renewal covers a "
-        "change to the registered fixture inputs**, not only to the harness: "
-        "the user chose it on 2026-08-16 after the trace was read, and the "
-        "spec owner should review D21.  No fixture was added, removed or "
-        "renamed, and no rule, tolerance or verdict criterion moved"),
+        "run 20260816T031420 got past the beat-count guard and stopped on an "
+        "undeclared name: the registered producer reads frontend.beat_ctx, "
+        "which builds the record's ctx column.  It is now declared under the "
+        "same row convention as the other feature producers, and a surface "
+        "discovery pass lists every remaining undeclared name at once instead "
+        "of one per round.  Injection surface and diagnosis only; the fixtures "
+        "(as revised in D21, which the spec owner should still review), the "
+        "rule, the tolerance and the verdict criteria are unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -840,7 +841,8 @@ def _elementwise(value: object, transform):
 
 def build_injection(fixture: Mapping[str, object],
                     log: Optional[StubCallLog] = None,
-                    variant: str = STUB_VARIANT_PRIMARY
+                    variant: str = STUB_VARIANT_PRIMARY,
+                    permissive: bool = False
                     ) -> Tuple[Dict[str, object], StubCallLog]:
     """The stub surface a producer may reach, and the log of what it reached.
 
@@ -920,6 +922,27 @@ def build_injection(fixture: Mapping[str, object],
         return (numpy.array(rows, dtype="float64") if numpy is not None
                 else rows)
 
+    def beat_ctx(*args: object, **kwargs: object):
+        """The producer of the record's `ctx` column.
+
+        Run `20260816T031420` got past the beat-count guard and stopped here:
+        `build_record` reads `frontend.beat_ctx` while running.  It is declared
+        under the **same row convention** as the other feature producers — one
+        row per peak it was handed, that peak in the first column — for the
+        same two reasons: the rows stay row-aligned with `rr`, which the
+        columnar reader requires of every registered column, and each row says
+        which peak it was built for, so nothing has to be inferred from counts.
+        Like every injected function its neutrality is probed rather than
+        asserted; a matching decision that moved with it would stop the run.
+        """
+        given = _peak_argument(args)
+        log.record("frontend.beat_ctx", given=list(given), n_args=len(args),
+                   kwargs=sorted(kwargs))
+        rows = [[float(p)] + [0.0] * 4 for p in given]
+        numpy = _numpy()
+        return (numpy.array(rows, dtype="float64") if numpy is not None
+                else rows)
+
     if variant not in STUB_VARIANTS:
         raise P3Error(
             f"{variant!r} is not one of the declared stub variants "
@@ -946,10 +969,20 @@ def build_injection(fixture: Mapping[str, object],
         wanted — and then refuses.  Returning a mock instead would let an
         unknown dependency slip into the run wearing a stub's name, which is
         the whole thing the injection exists to prevent.
+
+        The one exception is a **surface discovery** pass (`permissive`), which
+        exists only to list the names a producer would go on to ask for and
+        whose result may never become an observation.  It is built as its own
+        injection, is never used by `differential_over_fixtures` for a
+        comparison, and :func:`discover_stub_surface` is the only caller.
         """
         def __getattr__(name: str):
             log.record(f"{module_name}.__getattr__", requested=name,
-                       declared=False)
+                       declared=False, permissive=permissive)
+            if permissive:
+                import unittest.mock                          # noqa: PLC0415
+                return unittest.mock.MagicMock(
+                    name=f"undeclared:{module_name}.{name}")
             raise StubAttributeMissing(module_name, name)
 
         return __getattr__
@@ -957,6 +990,7 @@ def build_injection(fixture: Mapping[str, object],
     return ({"rdrecord": rdrecord, "rdann": rdann, "rdsamp": rdsamp,
              "dl_database": dl_database, "detect_r": detect_r,
              "rr_features": rr_features, "pwave_features": pwave_features,
+             "beat_ctx": beat_ctx,
              "_z": _z, "_variant": variant,
              "_missing_attribute": missing_attribute,
              "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
@@ -969,7 +1003,8 @@ def build_injection(fixture: Mapping[str, object],
 #: Rebound after execution as well as before, so `import wfdb` and `from
 #: .frontend import detect_r` are both covered.
 INJECTED_GLOBALS: Tuple[str, ...] = (
-    ("detect_r", "rr_features", "pwave_features") + FRONTEND_STUB_FUNCTIONS)
+    ("detect_r", "rr_features", "pwave_features", "beat_ctx")
+    + FRONTEND_STUB_FUNCTIONS)
 INJECTED_MODULE_NAMES: Tuple[str, ...] = (
     "wfdb", "frontend", "pwave", REGISTERED_SOURCE_PACKAGE,
     f"{REGISTERED_SOURCE_PACKAGE}.frontend",
@@ -1016,7 +1051,8 @@ class InjectedModules(object):
             k: self.stubs[k]
             for k in ("rdrecord", "rdann", "rdsamp", "dl_database")})
         frontend_surface = {"detect_r": self.stubs["detect_r"],
-                            "rr_features": self.stubs["rr_features"]}
+                            "rr_features": self.stubs["rr_features"],
+                            "beat_ctx": self.stubs["beat_ctx"]}
         frontend_surface.update({name: self.stubs[name]
                                  for name in FRONTEND_STUB_FUNCTIONS})
         frontend = self._surface("frontend", frontend_surface)
@@ -1487,15 +1523,17 @@ class ProducerSession(object):
     only get the producer inside a `with` block.
     """
 
-    __slots__ = ("permit", "fixture", "variant", "stubs", "log", "_injection",
-                 "_module")
+    __slots__ = ("permit", "fixture", "variant", "permissive", "stubs", "log",
+                 "_injection", "_module")
 
     def __init__(self, permit: SourcePermit,
                  fixture: Mapping[str, object],
-                 variant: str = STUB_VARIANT_PRIMARY) -> None:
+                 variant: str = STUB_VARIANT_PRIMARY,
+                 permissive: bool = False) -> None:
         self.permit = permit
         self.fixture = fixture
         self.variant = variant
+        self.permissive = permissive
         self.stubs: Dict[str, object] = {}
         self.log = StubCallLog()
         self._injection: Optional[InjectedModules] = None
@@ -1503,7 +1541,8 @@ class ProducerSession(object):
 
     def __enter__(self) -> Tuple[Callable, StubCallLog]:
         self.stubs, self.log = build_injection(self.fixture,
-                                               variant=self.variant)
+                                               variant=self.variant,
+                                               permissive=self.permissive)
         self._injection = InjectedModules(self.stubs)
         self._injection.__enter__()
         try:
@@ -1535,8 +1574,10 @@ def source_factory(permit: SourcePermit) -> Callable:
     validate_permit_for_execution(permit)
 
     def open_producer(fixture: Mapping[str, object],
-                      variant: str = STUB_VARIANT_PRIMARY) -> ProducerSession:
-        return ProducerSession(permit, fixture, variant=variant)
+                      variant: str = STUB_VARIANT_PRIMARY,
+                      permissive: bool = False) -> ProducerSession:
+        return ProducerSession(permit, fixture, variant=variant,
+                               permissive=permissive)
 
     return open_producer
 
@@ -3297,6 +3338,64 @@ def observe_adapter(fixture: Mapping[str, object], dictionary: LabelDictionary,
     return observation, {"return_reading": dict(reading), **trace.as_dict()}
 
 
+#: What a discovery pass is and is not, carried beside its result so that no
+#: reader can mistake one for the other.
+SURFACE_DISCOVERY_NOTE = (
+    "SURFACE DISCOVERY - NOT AN OBSERVATION.  Run only after a run has already "
+    "stopped at P3_STUB_SURFACE_INCOMPLETE, on the fixture that stopped it, "
+    "with undeclared names answered by a permissive stand-in instead of a "
+    "refusal.  Its only output is the list of names the producer went on to "
+    "ask for, so that one round declares all of them instead of one per round. "
+    "Nothing it computed is read: not a return value, not a trace, not a row. "
+    "The refusal itself is unchanged - a real run still stops at the first "
+    "undeclared name.")
+
+
+def discover_stub_surface(open_source: Callable,
+                          fixture: Mapping[str, object]) -> Dict[str, object]:
+    """List every undeclared name a producer would ask for, in one pass.
+
+    Four of this PREP's stops have been "the injected surface is missing one
+    more name", each costing a full round trip to learn a single name.  The
+    refusal is right — an unknown dependency must never slip into a run wearing
+    a stub's name — but learning them one at a time is not.
+
+    So after a run has already stopped for that reason, the same fixture is run
+    once more with undeclared names answered permissively, purely to enumerate
+    them.  The result is a list of names and nothing else: no value it produced
+    is read, and the caller writes it into the stop's context, never into an
+    observation.
+    """
+    names: List[str] = []
+    error: Optional[str] = None
+    completed = False
+    try:
+        with open_source(fixture, STUB_VARIANT_PRIMARY,
+                         permissive=True) as (build_record, log):
+            try:
+                binding = bind_source_arguments(build_record, fixture)
+                build_record(**dict(binding["kwargs"]))
+                completed = True
+            except BaseException as problem:                 # noqa: BLE001
+                error = f"{type(problem).__name__}: {problem}"[:400]
+            for call in log.as_list():
+                requested = str(call.get("requested") or "")
+                if requested.startswith("__"):
+                    continue     # import machinery, not a dependency
+                if call.get("declared") is False and requested:
+                    name = f"{str(call['target']).split('.')[0]}.{requested}"
+                    if name not in names:
+                        names.append(name)
+    except BaseException as problem:                         # noqa: BLE001
+        error = f"{type(problem).__name__}: {problem}"[:400]
+    return {"note": SURFACE_DISCOVERY_NOTE,
+            "fixture": str(fixture["name"]),
+            "undeclared_names": names,
+            "reached_the_end": completed,
+            "stopped_with": error,
+            "is_an_observation": False}
+
+
 def probe_injection_invariance(open_source: Callable,
                                fixture: Mapping[str, object],
                                observation: Mapping[str, object],
@@ -3384,6 +3483,12 @@ def differential_over_fixtures(open_source: Callable,
             error.context["fixtures_completed"] = [e["name"] for e in detail]
             error.context["stub_calls"] = stub_call_summary(call_log)
             error.context.setdefault("return_reading", dict(reading))
+            if error.status == P3_STUB_SURFACE_INCOMPLETE:
+                # One more pass over the same fixture, with undeclared names
+                # answered instead of refused, purely to list them.  Nothing it
+                # produces is read; only the names reach the bundle.
+                error.context["surface_discovery"] = discover_stub_surface(
+                    open_source, fixture)
             raise
         # Neutrality of the injected helpers is probed, not assumed: the same
         # fixture is observed again with `_z` negated, and the decisions must
@@ -3465,6 +3570,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "_added_once", "_flipped_once", "_resolve_annotation_token",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
     "probe_injection_invariance", "_elementwise",
+    "discover_stub_surface",
     "discover_kept_rows", "_unreadable", "_public_attributes",
     "trace_summary", "_summarise_local",
     "is_columnar_return", "is_incomplete_columnar_return",
