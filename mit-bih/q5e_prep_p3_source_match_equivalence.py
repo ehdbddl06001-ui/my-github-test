@@ -226,21 +226,26 @@ NOT_APPROVED: Tuple[str, ...] = (
 #: readable from the code and not only from a spec.  Setting `granted` back to
 #: `False` restores every refusal exactly, with no other change anywhere.
 #:
-#: **Withdrawn on 2026-08-16.**  The approval of 2026-08-15 was given for the
-#: harness as it stood, and this change alters the harness: the reader that
-#: turns a returned record into kept-row identity is different, so
-#: `oracle_harness_sha256` is different.  An approval does not transfer to a
-#: harness the approver did not see, and neither does the implementation
-#: acceptance.  Re-enabling is one value, after review of this change.
+#: **Re-granted on 2026-08-16**, for the columnar-reader harness and no other.
+#: The approval of 2026-08-15 was withdrawn when that reader changed the
+#: harness digest; this one names the digest it was given for, and
+#: :func:`_terminal_execution_guard` refuses when the module's harness is not
+#: that one.  Renewal is mechanical rather than remembered, and the failure
+#: direction is "ask again".
 EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
-    "granted": False,
-    "withdrawn_on": "2026-08-16",
-    "withdrawn_because": (
-        "the kept-row observation seam changed, so oracle_harness_sha256 "
-        "changed; the 2026-08-15 execution approval and the "
-        "P3_IMPLEMENTATION_ACCEPTED that came with it were given for the "
-        "previous harness and are not carried over automatically"),
-    "granted_on": "2026-08-15",
+    "granted": True,
+    "granted_on": "2026-08-16",
+    "for_oracle_harness_sha256": (
+        "a90d1d2a7dd272d930f64fa4657e91df3f54f8b79c9f968c6b351aa4bc5679e7"),
+    "supersedes": {
+        "granted_on": "2026-08-15",
+        "withdrawn_on": "2026-08-16",
+        "withdrawn_because": (
+            "the kept-row observation seam changed, so oracle_harness_sha256 "
+            "changed; the 2026-08-15 execution approval and the "
+            "P3_IMPLEMENTATION_ACCEPTED that came with it were given for the "
+            "previous harness and did not carry over"),
+    },
     "granted_by": "user",
     "kind": ("read-only execution of EXP-2026-008 Q5-E PREP P3: the candidate "
              "adapter against the registered data.py under synthetic "
@@ -259,12 +264,12 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "recorded_in": SPEC_PATH,
 }
 APPROVAL_NOTE = (
-    "WITHDRAWN (2026-08-16): the kept-row observation seam changed, so the "
-    "oracle harness identity changed, and neither the execution approval nor "
-    "the implementation acceptance transfers to a harness the approver has "
-    "not seen.  A fresh execution-enable approval reopens it, and the run "
-    "then starts again from the first of the six fixtures.  What was "
-    "Approved (2026-08-15), for the record: **read-only** execution of P3 —"
+    "Approved (2026-08-16) by the user, for oracle harness a90d1d2a… and no "
+    "other: the 2026-08-15 approval was withdrawn when the kept-row reader "
+    "changed the harness digest, and this one is bound to the digest so the "
+    "next harness change closes the door again rather than inheriting an "
+    "approval nobody gave.  The run starts again from the first of the six "
+    "fixtures.  What is approved: **read-only** execution of P3 — "
     f"reading the registered {REGISTERED_SOURCE_NAME} by file id "
     f"{REGISTERED_SOURCE_FILE_ID} under exactly the drive.readonly scope, "
     "loading it under synthetic dependency injection, running the six "
@@ -372,6 +377,21 @@ def _terminal_execution_guard() -> Dict[str, object]:
             "P3 is implemented but not approved for execution: reading and "
             f"executing the registered {REGISTERED_SOURCE_NAME} needs a "
             f"separate read-only execution approval.  {APPROVAL_NOTE}")
+    # The approval is for the harness it was given for.  Four rounds of this
+    # PREP were harness changes, and each one produced a different oracle; an
+    # approval that carried over to whatever the file says today would be an
+    # approval of something nobody read.  Binding it to the digest makes the
+    # renewal mechanical instead of remembered — and this is a *refusal*, so
+    # the failure direction is "ask again", never "run anyway".
+    bound = EXECUTION_APPROVAL_RECORD.get("for_oracle_harness_sha256")
+    current = str(oracle_harness_identity()["oracle_harness_sha256"])
+    if bound != current:
+        raise P3NotApprovedError(
+            f"the execution approval on record is for oracle harness "
+            f"{bound}, and this module's harness is {current}.  The harness "
+            f"decides what the run observes, so an approval given for a "
+            f"different one is not an approval of this run.  Re-approve "
+            f"against the current digest before executing.")
     return dict(EXECUTION_APPROVAL_RECORD)
 
 
@@ -4267,6 +4287,8 @@ def design_card() -> str:
         f"  required fixtures    : {len(REQUIRED_FIXTURES)}",
         f"  OPEN_REGISTERED_DATA : {OPEN_REGISTERED_DATA}",
         f"  execution approval   : {_approval_line()}",
+        f"  approval bound to    : "
+        f"{EXECUTION_APPROVAL_RECORD.get('for_oracle_harness_sha256')}",
         f"  ORACLE_RECORD        : {Q5E.SOURCE_MATCH_ORACLE_RECORD!r} "
         f"(unchanged by this module)",
         "",

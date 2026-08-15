@@ -276,25 +276,54 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     **not** cover.  `granted: False` remains an exact one-value revert.
     """
     record = P3.EXECUTION_APPROVAL_RECORD
-    check(record["granted"] is False,
-          "the committed record does not grant execution: the harness changed "
-          "under this PR, so the approval given for the previous one does not "
-          "carry over")
-    check(record["withdrawn_on"] == "2026-08-16"
-          and "oracle_harness_sha256" in str(record["withdrawn_because"]),
-          "and it says when it was withdrawn and why, rather than reverting to "
-          "a state indistinguishable from never having been approved")
-    check(record["granted_on"] == "2026-08-15" and record["granted_by"] ==
-          "user", "while keeping what was granted, when, and by whom")
+    check(record["granted"] is True, "the record grants read-only execution")
+    check(record["granted_on"] == "2026-08-16" and record["granted_by"] ==
+          "user", "and names when it was granted and by whom")
+    check(record["supersedes"]["withdrawn_on"] == "2026-08-16"
+          and "oracle_harness_sha256" in
+          str(record["supersedes"]["withdrawn_because"]),
+          "while keeping the withdrawn one and the reason it lapsed, so the "
+          "history reads as a decision rather than as an edit")
     check("read-only" in str(record["kind"]),
-          "the approval that was given was for a read-only run")
+          "the approval is for a read-only run")
     check(any("drive.readonly" in entry for entry in record["approved"]),
-          "which read the registered file under exactly drive.readonly")
-    check(P3.APPROVAL_NOTE.startswith("WITHDRAWN (2026-08-16)")
-          and "Approved (2026-08-15)" in P3.APPROVAL_NOTE
+          "which reads the registered file under exactly drive.readonly")
+    check(P3.APPROVAL_NOTE.startswith("Approved (2026-08-16)")
           and "NOT approved by it" in P3.APPROVAL_NOTE,
-          "the note leads with the withdrawal and still states both halves of "
-          "the boundary that was drawn")
+          "the note states both halves of the boundary")
+
+
+def test_the_approval_is_bound_to_the_harness_it_was_given_for():
+    """An approval is of a *thing*, and the harness is the thing.
+
+    Four rounds of this PREP were harness changes and each produced a
+    different oracle.  An approval that applied to whatever the file says today
+    would be an approval of something nobody read, so the record names the
+    digest and the guard checks it — a refusal, so the failure direction is
+    "ask again" and never "run anyway".
+    """
+    record = P3.EXECUTION_APPROVAL_RECORD
+    current = P3.oracle_harness_identity()["oracle_harness_sha256"]
+    check(record["for_oracle_harness_sha256"] == current,
+          f"the approval names this module's harness: {current}")
+    saved = record["for_oracle_harness_sha256"]
+    try:
+        record["for_oracle_harness_sha256"] = "0" * 64
+        try:
+            P3.run_p3("/nonexistent/out", approval=TOKEN,
+                      open_registered_data=True, timestamp=STAMP,
+                      emit=lambda _message: None)
+        except P3.P3NotApprovedError as error:
+            check("is not an approval of this run" in str(error),
+                  "an approval for another harness refuses the run")
+            check(current in str(error) and "0" * 64 in str(error),
+                  "naming both digests, so renewing it is mechanical")
+        else:                                                # pragma: no cover
+            raise AssertionError("a stale approval let a run through")
+    finally:
+        record["for_oracle_harness_sha256"] = saved
+    check(P3.EXECUTION_APPROVAL_RECORD["for_oracle_harness_sha256"] == current,
+          "and the record is restored after the test")
     for item in ("the Q5-E scientific execution", "running detect_r()",
                  "registering SOURCE_MATCH_ORACLE_RECORD",
                  "M0-M4 aggregation", "training or retraining any model"):
@@ -2964,9 +2993,10 @@ def test_this_change_moved_the_reader_and_nothing_scientific():
           and P3.REGISTERED_SOURCE_FILE_ID ==
           "1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK",
           "the source identity is unchanged")
-    check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False
-          and P3.OPEN_REGISTERED_DATA is False,
-          "and both barriers are shut, because the harness identity moved")
+    check(P3.OPEN_REGISTERED_DATA is False,
+          "and the module default still opens nothing on import: the "
+          "execution approval was re-granted against the new harness digest, "
+          "the switch was not")
 
 
 def test_the_injected_stubs_never_reach_a_real_dependency():
@@ -3160,13 +3190,13 @@ def test_module_capabilities_are_all_present():
               f"and the list advertises {name}")
     card = P3.design_card()
     check(P3.REGISTERED_SOURCE_FILE_ID in card
-          and "WITHDRAWN 2026-08-16" in card
+          and "APPROVED 2026-08-16 by user (read-only)" in card
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")
-    check("does not carry over" in card,
-          "and says why the earlier approval no longer applies, rather than "
-          "showing a bare 'not approved' that reads the same as never asked")
+    check(P3.EXECUTION_APPROVAL_RECORD["for_oracle_harness_sha256"] in card,
+          "and the harness digest the approval is bound to, beside the "
+          "harness digest the module actually has")
     check("OPEN_REGISTERED_DATA : False" in card,
           "and that the switch default is still shut")
     for name in P3.fixture_names():

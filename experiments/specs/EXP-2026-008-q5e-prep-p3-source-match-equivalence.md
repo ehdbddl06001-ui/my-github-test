@@ -481,6 +481,23 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D18 (2026-08-16) — execution re-approved, bound to the harness digest.**
+The user reviewed D17, merged it, and re-granted read-only execution.  The
+approval is recorded **against `oracle_harness_sha256`
+`a90d1d2a7dd272d930f64fa4657e91df3f54f8b79c9f968c6b351aa4bc5679e7`** and
+`_terminal_execution_guard()` refuses when the module's harness is not that
+one, naming both digests.
+
+The reason is the shape of this PREP so far: four of the five rounds were
+harness changes, each producing a different oracle.  An approval that applied
+to whatever the file says today would be an approval of something nobody read,
+and "remember to re-ask" is not a control.  The binding makes renewal
+mechanical, and it is a refusal — so the failure direction is always "ask
+again", never "run anyway".  `OPEN_REGISTERED_DATA` stays `False`: the switch
+was not re-opened, only the approval, and the notebook still opts in at its own
+call site.  Regression:
+`test_the_approval_is_bound_to_the_harness_it_was_given_for`.
+
 **D17 (2026-08-16) — the return is read by the registered schema, not by
 trial; execution approval withdrawn with the harness change.**  D16 widened the
 general reader, and Codex's review pointed at the thing that widening does not
