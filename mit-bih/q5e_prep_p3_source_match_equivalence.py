@@ -158,6 +158,14 @@ P3_INJECTED_VALUE_STEERS_MATCHING = "P3_INJECTED_VALUE_STEERS_MATCHING"
 #: this as `SOURCE_MATCH_EQUIVALENCE_REQUIRED` would be wrong in the worst
 #: direction, because no comparison was made.
 P3_COLUMNAR_RETURN_UNPROJECTABLE = "P3_COLUMNAR_RETURN_UNPROJECTABLE"
+#: The producer ran to completion and returned **nothing** — `None`, not an
+#: empty record.  Its own stop, because it is a different finding again: the
+#: run reached the registered source, executed it, and the source declined to
+#: build a record for this input.  Reading that as "the reader could not see
+#: the rows" would send the next round to the wrong place, and reading it as a
+#: disagreement would be a fabrication — no rows were compared.  Whether the
+#: cause is the fixture or the producer is answered by the trace, not here.
+P3_SOURCE_RETURNED_NO_RECORD = "P3_SOURCE_RETURNED_NO_RECORD"
 #: Stops that say the harness could not make the comparison.  A candidate
 #: record is never produced from one of these, and none of them may be
 #: reported as a disagreement between the adapter and the registered source.
@@ -167,7 +175,7 @@ HARNESS_STOPS: Tuple[str, ...] = (
     P3_SOURCE_RUNTIME_ERROR, P3_SOURCE_TRACE_UNPROJECTABLE,
     P3_KEPT_ROWS_UNOBSERVABLE, P3_FIXTURE_CONTRACT_VIOLATION,
     P3_STUB_SURFACE_INCOMPLETE, P3_INJECTED_VALUE_STEERS_MATCHING,
-    P3_COLUMNAR_RETURN_UNPROJECTABLE)
+    P3_COLUMNAR_RETURN_UNPROJECTABLE, P3_SOURCE_RETURNED_NO_RECORD)
 P3_STATUSES: Tuple[str, ...] = (
     (P3_PASS, P3_EQUIVALENCE_REQUIRED) + HARNESS_STOPS)
 #: Ordered P3 gates.  The source is never imported before its identity has
@@ -236,14 +244,13 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "251f6e35d59a6c6949710c70990d57d3ef25c7e5b04a27e072ab4227fe3dd1d7"),
+        "178685ba9fdbe2368e07544ea51dafdc9b69d609c33ccbd5fc6204fc6ce2a969"),
     "renewed_for_this_harness_because": (
-        "the row reader could not read a column selected row by row "
-        "(`[rr_all[i] for i in keep]`, whose rows are arrays where numpy is "
-        "installed), so the synthetic suite failed in Colab while passing "
-        "without numpy; the fix is inside the same observation seam and "
-        "changes nothing the approval was about.  Recorded here rather than "
-        "assumed: the renewal is in the diff the approver merges"),
+        "run 20260816T012958 reached the registered source, verified it, ran "
+        "it, and got None back; the harness now reports that as its own "
+        "finding and carries the trace that explains it.  Diagnosis only — no "
+        "fixture, rule, tolerance or verdict criterion moved.  Recorded here "
+        "rather than assumed: the renewal is in the diff the approver merges"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -1911,6 +1918,46 @@ def _removed_once(previous: object, current: object) -> List[object]:
     return removed if len(removed) == 1 else []
 
 
+#: How many named locals a stop is allowed to describe.  A cap, not a filter:
+#: the names are sorted, so which ones survive does not depend on the run.
+STOP_LOCALS_LIMIT = 48
+
+
+def trace_summary(trace: FrameTrace) -> Dict[str, object]:
+    """What the traced call did, for a stop that has no comparison to report.
+
+    A stop throws the differential away, and the trace with it — which is
+    precisely when the trace is the only thing that can say *why*.  This is the
+    reading of it: which line returned, which lines ran, and what each local
+    was holding at the end.
+
+    The locals are canonicalised exactly as they are during tracing, so a
+    signal or a beat matrix comes out as its type and length rather than as
+    numbers.  That is what makes this publishable in a bundle: it says
+    `len(keep) == 0`, never what was in the arrays.
+    """
+    lines: List[int] = []
+    finals: Dict[str, object] = {}
+    for step in trace.steps:
+        lines.append(int(step["line"]))
+        finals.update(step["changed"])           # type: ignore[arg-type]
+    returns = [int(s["line"]) for s in trace.steps if s["event"] == "return"]
+    names = sorted(finals)
+    return {
+        "code_name": trace.code_name,
+        "n_steps": trace.n_steps,
+        "truncated": trace.truncated,
+        "returned": describe_returned(trace.returned),
+        "returned_from_line": (returns[-1] if returns else None),
+        "last_line": (lines[-1] if lines else None),
+        "distinct_lines_executed": sorted(set(lines)),
+        "line_sequence_tail": lines[-40:],
+        "n_locals": len(names),
+        "final_locals": {name: finals[name] for name in names[:STOP_LOCALS_LIMIT]},
+        "final_locals_truncated": len(names) > STOP_LOCALS_LIMIT,
+    }
+
+
 def growth_events(trace: FrameTrace) -> List[Dict[str, object]]:
     """Every moment a container local recorded one decision, with its scalars."""
     seen: Dict[str, object] = {}
@@ -2597,6 +2644,23 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object],
     only against other tokens from the **same** producer, so the two sides
     never have to agree about how a class is spelled.
     """
+    if returned is None:
+        # It ran, and it declined to build a record.  That is an observation of
+        # the producer, not a failure of the reader, and the two must not be
+        # reported as one thing: widening a reader that was never the problem
+        # is how a run loses another round.  Why it declined is in the trace
+        # the caller attaches, never guessed at here.
+        raise SourceHarnessError(
+            P3_SOURCE_RETURNED_NO_RECORD,
+            f"{fixture['name']}: the producer ran to completion and returned "
+            f"None — not an empty record, which would say it kept no rows, but "
+            f"no record at all.  It declined to build one for this input.  No "
+            f"rows were compared, so this is not a disagreement with the "
+            f"adapter; the trace beside this stop says which line returned and "
+            f"what its locals were holding.",
+            context={"fixture": str(fixture["name"]), "variant": variant,
+                     "reason": "the producer returned None",
+                     "return_schema": return_schema_report(returned)})
     if is_columnar_return(returned):
         return project_columnar_rows(returned, fixture, variant)
     if is_incomplete_columnar_return(returned):
@@ -3099,9 +3163,13 @@ def observe_source(build_record: Callable, fixture: Mapping[str, object],
     except SourceHarnessError as error:
         # The reading of the return is the diagnosis, so it is attached before
         # the stop leaves this frame rather than recomputed by a caller that no
-        # longer has the value.
+        # longer has the value.  The trace goes with it: when the producer ran
+        # to completion and still gave nothing readable, which line it returned
+        # from and what its locals were holding is the whole question.
         error.context.setdefault("return_schema",
                                  return_schema_report(returned))
+        error.context.setdefault("trace", trace_summary(trace))
+        error.context.setdefault("binding", list(binding["plan"]))
         raise
     return observation, {"binding": binding["plan"], "variant": variant,
                          "return_reading": dict(reading), **trace.as_dict()}
@@ -3292,6 +3360,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
     "probe_injection_invariance", "_elementwise",
     "discover_kept_rows", "_unreadable", "_public_attributes",
+    "trace_summary",
     "is_columnar_return", "is_incomplete_columnar_return",
     "columnar_keys_present", "project_columnar_rows", "return_schema_report",
     "_sequence_shape", "_row_width", "_numeric_rows", "_flat_tokens",
@@ -4156,6 +4225,10 @@ def _execute_with_permit(out_dir: str, permit: SourcePermit,
     return {"decision": decision, "differential": differential,
             "candidate": candidate, "candidate_gate": gate,
             "candidate_precheck": precheck, "harness": harness,
+            # Returned as well as published: on a stop this is the only thing
+            # that says why, and making the caller open the bundle to read it
+            # is what turned each of the last four stops into a round trip.
+            "fixture_results": fixture_results,
             "bundle": written, "verified": verified,
             "permit": permit.describe(),
             "source_inventory": dict(source_inventory)}

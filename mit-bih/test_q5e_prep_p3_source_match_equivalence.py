@@ -2872,6 +2872,86 @@ def test_the_record_is_read_through_the_array_surface_not_through_numpy():
           "and none of this required numpy to be importable")
 
 
+#: A producer that runs to completion and declines to build a record.  The
+#: registered source did exactly this on the first fixture of run
+#: 20260816T012958 — it returned `None`, not an empty record.
+NONE_RETURNING_PRODUCER = Z_USING_PRODUCER.replace(
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}',
+    '    if len(keep) < 99:\n'
+    '        return None\n'
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}')
+
+
+def test_a_producer_that_declines_to_build_a_record_is_its_own_finding():
+    """"It returned nothing" is not "its rows could not be read".
+
+    Run `20260816T012958` reached the registered source, verified it, ran it,
+    and got `None` back.  Reported as a reader problem it sends the next round
+    to widen a reader that was never involved; reported as a disagreement it
+    invents a comparison that did not happen.  It is a third thing, and the
+    trace is what says which.
+    """
+    try:
+        differential_for(NONE_RETURNING_PRODUCER)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_SOURCE_RETURNED_NO_RECORD,
+              f"a None return is its own stop, not the reader's: {error.status}")
+        check("not an empty record" in str(error)
+              and "declined to build one" in str(error),
+              "and the message separates it from a producer that kept no rows")
+        check("not a disagreement with the adapter" in str(error),
+              "and from a disagreement, which would need a comparison")
+        trace = error.context.get("trace", {})
+        check(trace.get("returned") == "NoneType",
+              f"the trace records what came back: {trace.get('returned')}")
+        check(isinstance(trace.get("returned_from_line"), int),
+              f"and the line it returned from: {trace.get('returned_from_line')}")
+        check(trace.get("code_name") == "build_record"
+              and trace.get("n_steps", 0) > 0,
+              "and that the producer really ran")
+        locals_seen = trace.get("final_locals", {})
+        check(locals_seen.get("keep") == [0, 1],
+              f"with the locals that explain it — here the producer had kept "
+              f"rows and returned None anyway: keep = {locals_seen.get('keep')}")
+        check("ys" in locals_seen and "peaks" in locals_seen,
+              f"and the rest of what it was holding: {sorted(locals_seen)}")
+        check(error.context["stub_calls"]["counts"]["frontend.detect_r"] == 1,
+              "and how far it got through its dependencies")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a producer that returned nothing was read anyway")
+    check(P3.P3_SOURCE_RETURNED_NO_RECORD in P3.HARNESS_STOPS,
+          "the stop is a harness stop, so no candidate can be built from it")
+    decision = P3.decide(None, P3.P3_SOURCE_RETURNED_NO_RECORD, "declined")
+    check(decision["harness_stop"] is True
+          and decision["equivalence_claimed"] is False
+          and decision["fixtures_passed"] is None,
+          "and it yields no fixture score and no equivalence claim")
+
+
+def test_the_trace_a_stop_carries_describes_locals_without_their_contents():
+    """It has to be safe to write into a bundle, like every other diagnosis."""
+    try:
+        differential_for(NONE_RETURNING_PRODUCER)
+    except P3.SourceHarnessError as error:
+        trace = error.context["trace"]
+    else:                                                    # pragma: no cover
+        raise AssertionError("expected the None-return stop")
+    signal = trace["final_locals"].get("x")
+    check(isinstance(signal, dict) and signal.get("__len__") == 3000,
+          f"a signal-sized local is recorded as its type and length: {signal}")
+    check("__type__" in signal and not isinstance(signal.get("__len__"), list),
+          "never as its samples")
+    text = json.dumps(trace)
+    check(len(text) < 20000,
+          f"the whole trace summary stays small enough to publish: {len(text)}")
+    check(trace["distinct_lines_executed"] ==
+          sorted(set(trace["distinct_lines_executed"])),
+          "the executed lines are recorded in order and deduplicated")
+    check(trace["final_locals_truncated"] is False
+          and trace["n_locals"] == len(trace["final_locals"]),
+          "and the locals are complete rather than silently cut")
+
+
 def test_a_column_selected_row_by_row_is_still_one_column():
     """The shape a producer writes when it selects rows by index.
 
@@ -3025,6 +3105,19 @@ def test_the_bundle_records_the_return_shape_on_every_fixture():
               f"{entry['name']}: and how often each stub was asked for")
     check("harness_stop_context" in written,
           "the contracted file has a place for a stop's diagnosis")
+    with tempfile.TemporaryDirectory() as directory:
+        stopped = P3.execute_synthetic_p3(
+            directory, NONE_RETURNING_PRODUCER.encode("utf-8"),
+            timestamp=STAMP, emit=lambda _m: None)
+    context = stopped["fixture_results"]["harness_stop_context"]
+    check(stopped["decision"]["status"] == P3.P3_SOURCE_RETURNED_NO_RECORD,
+          "a run that stops still writes its bundle")
+    check(context["trace"]["returned"] == "NoneType"
+          and context["stub_calls"]["counts"],
+          "with the trace and the stub calls inside the contracted file")
+    check(stopped["fixture_results"] is not None,
+          "and the run hands the same reading back to its caller, so the "
+          "notebook can print it without opening Drive")
     check(sorted(P3.PREP_PAYLOAD_FILES) == sorted(Q5E.PREP_PAYLOAD_FILES),
           "and the payload list did not grow to hold any of it")
 
