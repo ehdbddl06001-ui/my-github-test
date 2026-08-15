@@ -294,6 +294,31 @@ def test_pdf_builder_selftest() -> None:
     assert r.returncode == 0, f"anatomy_pdf selftest 실패: {r.stdout}{r.stderr}"
 
 
+def test_region_not_professor_decides_session() -> None:
+    """과거 학기 자료의 회차 배정은 **부위** 기준이다 — 교수명·파일명 날짜가 아니라.
+
+    사용자 지시(2026-08-15): "교수님 이름을 따라갈 필요 없이 부위별로 공부한다고 했던
+    부분 기준으로 만들어라". 과거 학기 실습표의 담당교수·날짜는 지금과 다를 수 있다.
+    """
+    from anatomy_schedule import SCHEDULE_2026, session_for_region, session_no_for_date
+
+    # 업로드된 과거 '실습6' 표: 담당교수 문용석 / 9월 1일 — 둘 다 2026 기준이 아니다.
+    # 부위(목의 삼각·넓적다리 앞·안쪽·종아리 앞·발등)로 보면 2026-09-03 = 6회차.
+    assert session_for_region("목의 삼각") == 6
+    assert session_for_region("넓적다리 앞칸 넙다리네갈래근") == 6
+    assert session_for_region("발등의 근육과 힘줄") == 6
+    assert session_no_for_date(SCHEDULE_2026[5]["date"]) == 6
+
+    # 같은 스캔에 섞여 있어도 발목 안쪽면·굽힘근지지띠는 2026에선 7회차다.
+    assert session_for_region("발목 안쪽면") == 7
+    assert session_for_region("굽힘근지지띠") == 7
+
+    # 앞 회차 부위도 제자리를 찾아야 한다.
+    assert session_for_region("뒤통수밑삼각") == 3
+    assert session_for_region("볼기부위") == 2
+    assert session_for_region("없는부위이름") is None
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

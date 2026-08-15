@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-14",
+ "generated": "2026-08-15",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -1251,6 +1251,138 @@ window.MEDKOS_ANATOMY = {
      "file": "2회차(0818) 김홍태pf.pdf",
      "page": null,
      "section": "Back — Superficial layer 실습영상 + 1회차 과제(앞가지·뒤가지) — 도해 근거"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0061",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "anterior-neck",
+   "examPhase": "tagging-1",
+   "stem": "목의 피부밑조직을 벗겨 넓은목근을 노출한 해부 사진에서, 넓은목근의 깊은면으로 들어가며 번호핀 ①(◁)이 가리키는 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "얼굴신경의 목가지 (cervical branch of the facial nerve)",
+   "explanation": "넓은목근(platysma)은 목의 얕은근막 안에 있는 **표정근육**이라 목신경이 아니라 **얼굴신경(VII)의 목가지** 지배를 받는다. 얼굴신경은 붓꼭지구멍을 나와 귀밑샘 속에서 다섯 갈래로 갈라지는데, 그 가장 아래 가지가 아래턱뼈각 아래로 내려와 넓은목근으로 들어간다. 같은 부위를 지나는 **가로목신경**(목신경얼기 C2–3, 순수 감각)과 헷갈리기 쉬우나 — 운동이면 얼굴신경 목가지, 감각이면 가로목신경이다. 목 절개에서 아래턱모서리가지가 다치면 아랫입술이 처진다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 피부밑조직과 목빗근 / 넓은목근 (업로드 스캔 A p10 · 영상 08:21)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0062",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "submandibular-triangle",
+   "examPhase": "tagging-1",
+   "stem": "턱밑삼각을 열어 턱밑샘을 젖힌 해부 사진에서, 번호핀 ①(◁)이 가리키는 — 혀밑에서 열리는 — 관의 이름을 말하시오.",
+   "choices": null,
+   "answer": "턱밑샘관 (submandibular duct, Wharton duct)",
+   "explanation": "턱밑샘관은 턱밑샘의 깊은부분에서 나와 턱목뿔근 위를 지나 앞안쪽으로 달려 혀주름띠 옆 **혀밑언덕(sublingual caruncle)** 으로 열린다. 태깅 포인트는 **혀신경과의 교차**다 — 혀신경이 관의 가쪽에서 시작해 관 아래를 감아 안쪽으로 넘어간다(혀신경이 관을 '두 번 건넌다'). 관이 길고 위로 올라가는 주행이라 침이 고이기 쉬워 **침샘돌**이 가장 흔히 생기는 곳이며, 입안 바닥에서 만져지기도 한다. 턱밑샘 자체는 턱목뿔근을 감싸고 얕은부분·깊은부분으로 나뉜다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 앞목삼각과 구조물 / 턱밑삼각 (업로드 스캔 A p39 · 영상 03:12)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0063",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "carotid-triangle",
+   "examPhase": "tagging-1",
+   "stem": "목동맥삼각을 열어 목혈관신경집을 노출한 해부 사진에서, 번호핀 ①(▲)이 가리키는 — 방패연골 위모서리 높이에서 둘로 갈라지는 — 동맥의 이름을 말하시오.",
+   "choices": null,
+   "answer": "온목동맥 (common carotid artery)",
+   "explanation": "온목동맥은 목혈관신경집(carotid sheath) 안에서 속목정맥(가쪽)·미주신경(둘 사이 뒤쪽)과 함께 올라가며, **방패연골 위모서리(≈C4) 높이**에서 속목동맥과 바깥목동맥으로 갈라진다. 갈라지기 전까지는 **가지를 내지 않는다**는 것이 정의적 특징이다. 갈림 부위의 팽대(목동맥팽대, carotid sinus)는 압력수용체로 혈압 조절에, 목동맥토리(carotid body)는 화학수용체로 산소분압 감지에 관여하며 둘 다 혀인두신경(IX)이 담당한다. 촉진은 방패연골 가쪽에서 목빗근 앞모서리를 눌러 한다(양쪽 동시 압박 금지). 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 앞목삼각과 구조물 / 목동맥삼각 (업로드 스캔 B p4 · 영상 13:38)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0064",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "anterior-neck",
+   "examPhase": "tagging-1",
+   "stem": "앞목삼각을 노출한 해부 사진에서, 두힘살근의 앞힘살과 뒤힘살을 잇고 목뿔뼈에 매여 있으며 번호핀 ①(▲)이 가리키는 구조물의 이름을 말하시오.",
+   "choices": null,
+   "answer": "(두힘살근의) 중간힘줄 (intermediate tendon of the digastric muscle)",
+   "explanation": "두힘살근은 이름 그대로 두 힘살이 중간힘줄로 이어진 근육으로, 이 중간힘줄이 목뿔뼈 몸통·큰뿔에 섬유고리(fibrous sling)로 매여 있다. 발생 기원이 달라 **신경지배가 갈린다** — 앞힘살은 첫째 인두굽이 유래로 삼차신경의 아래턱신경(턱목뿔근신경), 뒤힘살은 둘째 인두굽이 유래로 얼굴신경(VII). 한 근육에 두 뇌신경이 들어가는 대표 예로 구술 단골이다. 두힘살근의 두 힘살과 아래턱뼈 아래모서리가 **턱밑삼각**을, 두 앞힘살과 목뿔뼈가 **턱끝밑삼각**을 만든다. 작용은 목뿔뼈 올림(삼킴)·아래턱 내림. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 앞목삼각과 구조물 / 목신경얼기 (업로드 스캔 B p12 · 영상 17:10)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0065",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "femoral-triangle",
+   "examPhase": "tagging-1",
+   "stem": "넙다리삼각을 열어 넙다리동맥과 그 가지를 노출한 해부 사진에서, 엉덩허리근과 두덩근 사이로 깊이 들어가며 번호핀 ①(▲)이 가리키는 동맥의 이름을 말하시오.",
+   "choices": null,
+   "answer": "안쪽넙다리휘돌이동맥 (medial circumflex femoral artery)",
+   "explanation": "안쪽넙다리휘돌이동맥은 깊은넙다리동맥(profunda femoris)의 가지로, **엉덩허리근과 두덩근 사이**로 뒤안쪽으로 들어가 넙다리뼈 목을 감아 올라간다. 성인에서 **넙다리뼈 머리·목의 주된 혈액 공급원**이라 넙다리뼈 목 골절이나 엉덩관절 탈구에서 이 동맥이 끊기면 대퇴골두 무혈성괴사가 생긴다(어린이에서만 볼기뼈절구가지·인대동맥이 보조). 짝인 가쪽넙다리휘돌이동맥은 넙다리빗근·넙다리곧은근 아래로 가쪽으로 간다. 넙다리동맥 자체는 넙다리삼각에서 **NAVEL 순서(가쪽→안쪽: 신경–동맥–정맥–빈공간–림프)** 로 배열된다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "다리 — 넙다리삼각 / 넙다리동맥 (업로드 스캔 C p9 · 영상 12:01)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0066",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "dorsum-of-foot",
+   "examPhase": "tagging-1",
+   "stem": "발등을 노출한 해부 사진에서, 발가락 등쪽에서 폄근힘줄이 넓게 퍼져 만들어지며 번호핀 ①(◁)이 가리키는 구조물의 이름을 말하시오.",
+   "choices": null,
+   "answer": "폄근널힘줄 (extensor expansion, dorsal digital expansion)",
+   "explanation": "긴발가락폄근·짧은발가락폄근의 힘줄은 발가락 등쪽에서 삼각형으로 넓게 퍼져 **폄근널힘줄**을 만들고, 여기에 벌레근과 뼈사이근의 힘줄이 가쪽에서 합류한다. 이 구조 덕분에 한 힘줄이 **발허리발가락관절은 펴면서 발가락뼈사이관절도 함께 펴는** 협동이 가능하다(손의 extensor hood와 같은 원리). 널힘줄은 중간갈래가 중간마디뼈 바닥에, 두 곁갈래가 끝마디뼈 바닥에 붙는다. 벌레근·뼈사이근이 마비되면 발허리발가락관절이 과다폄되고 뼈사이관절이 굽는 갈퀴발가락이 된다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "다리 — 발등의 근육과 힘줄 (업로드 스캔 D p22 · 영상 01:18)"
     }
    ]
   },

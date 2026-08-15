@@ -30,6 +30,9 @@
 - 해부학(3Q) → `content/anatomy/{sources,pages,concepts,questions,daily,answers}/`
   · 원본 PDF·페이지 이미지·마스크는 **`.private/anatomy/`(git 무시)** — 공개 repo 커밋 금지.
   · 일정 단일 기준은 `pipelines/anatomy_schedule.py`(2026 시간표). Drive 계획서 날짜 사용 금지.
+  · **회차 배정은 교수명·파일명 날짜가 아니라 「부위」로 한다.** 과거 학기 자료는 담당교수와
+    날짜가 지금과 다르다 — 그 자료가 다루는 부위를 2026 실습주제에 맞춘다. 결정론은
+    `anatomy_schedule.session_for_region()`(회귀: `test_region_not_professor_decides_session`).
   · 루틴 종료일 **2026-10-19**(Tagging 2). 이후 anatomy 생성·커밋 금지(completed no-op).
   · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
