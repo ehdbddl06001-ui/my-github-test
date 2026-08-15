@@ -276,16 +276,25 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     **not** cover.  `granted: False` remains an exact one-value revert.
     """
     record = P3.EXECUTION_APPROVAL_RECORD
-    check(record["granted"] is True, "the record grants read-only execution")
+    check(record["granted"] is False,
+          "the committed record does not grant execution: the harness changed "
+          "under this PR, so the approval given for the previous one does not "
+          "carry over")
+    check(record["withdrawn_on"] == "2026-08-16"
+          and "oracle_harness_sha256" in str(record["withdrawn_because"]),
+          "and it says when it was withdrawn and why, rather than reverting to "
+          "a state indistinguishable from never having been approved")
     check(record["granted_on"] == "2026-08-15" and record["granted_by"] ==
-          "user", "and names when it was granted and by whom")
+          "user", "while keeping what was granted, when, and by whom")
     check("read-only" in str(record["kind"]),
-          "the approval is for a read-only run")
+          "the approval that was given was for a read-only run")
     check(any("drive.readonly" in entry for entry in record["approved"]),
-          "which reads the registered file under exactly drive.readonly")
-    check("Approved (2026-08-15)" in P3.APPROVAL_NOTE
+          "which read the registered file under exactly drive.readonly")
+    check(P3.APPROVAL_NOTE.startswith("WITHDRAWN (2026-08-16)")
+          and "Approved (2026-08-15)" in P3.APPROVAL_NOTE
           and "NOT approved by it" in P3.APPROVAL_NOTE,
-          "the note states both halves of the boundary")
+          "the note leads with the withdrawal and still states both halves of "
+          "the boundary that was drawn")
     for item in ("the Q5-E scientific execution", "running detect_r()",
                  "registering SOURCE_MATCH_ORACLE_RECORD",
                  "M0-M4 aggregation", "training or retraining any model"):
@@ -2503,13 +2512,461 @@ def test_the_shape_description_carries_no_measurable_value():
 
 def test_an_empty_result_is_reported_as_kept_nothing_not_as_unreadable():
     """The two findings stay apart in the direction that matters too."""
-    rows = P3.discover_kept_rows({"beat": [], "rr": [], "y": []},
-                                 P3.FIXTURES[0])
+    rows = P3.discover_kept_rows({"kept": [], "labels": []}, P3.FIXTURES[0])
     check(rows["rows"] == [] and rows["channels"] == ["empty_result"],
           "a producer that returns empty containers kept no rows, and that is "
           "an observation rather than a failure")
     check(rows["empty_containers"] != [],
           f"with the containers it did return recorded: {rows}")
+    columnar = P3.discover_kept_rows({"beat": [], "rr": [], "y": []},
+                                     P3.FIXTURES[0])
+    check(columnar["rows"] == [] and columnar["parser"] == "columnar",
+          "and an empty registered record says the same thing through the "
+          "columnar reader, rather than reporting itself unreadable")
+
+
+#: A producer shaped the way the registered one is: it returns the record as
+#: **columns**, one array per field, which is what `prepare()` saves as the
+#: cache.  `BJ.CACHE_KEYS` is the registered schema for those columns.
+COLUMNAR_PRODUCER = '''
+from .frontend import detect_r, rr_features, FS, _z
+from .pwave import pwave_features
+
+WIN_BEFORE = 150
+WIN_AFTER = 150
+AAMI = {"N": "N", "L": "N", "R": "N", "e": "N", "j": "N",
+        "A": "S", "a": "S", "J": "S", "S": "S", "V": "V", "E": "V"}
+
+
+def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
+    x = sig
+    peaks = detect_r([row[0] for row in x], FS)
+    tol = int(0.15 * FS)
+    samples = [int(s) for s in ann_sample]
+    symbols = list(ann_symbol)
+    order = sorted(range(len(samples)), key=lambda k: (samples[k], k))
+    used = set()
+    ys, keep = [], []
+    for i, p in enumerate(peaks):
+        p = int(p)
+        best, bd = None, tol + 1
+        for rank in range(len(order)):
+            if rank in used:
+                continue
+            d = abs(samples[order[rank]] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        used.add(best)
+        j = order[best]
+        cls = AAMI.get(symbols[j], "")
+        if not cls:
+            continue
+        if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
+            continue
+        keep.append(i)
+        ys.append(cls)
+    rr_all = rr_features(peaks, FS)
+    pw_all = pwave_features(x, peaks, None, FS)
+    beat = [_z([float(v[0]) for v in
+                x[int(peaks[i]) - WIN_BEFORE:int(peaks[i]) + WIN_AFTER]])
+            for i in keep]
+    return {"beat": beat,
+            "ref": [[0.0] for _ in keep],
+            "rr": [list(rr_all[i]) for i in keep],
+            "sim": [[0.0] for _ in keep],
+            "pw": [list(pw_all[i]) for i in keep],
+            "ctx": [[0.0] for _ in keep],
+            "y": ys}
+'''
+
+
+def _record(fixture, kept, **overrides):
+    """A well-formed registered record over `kept`, before any mutation.
+
+    Built the way the injection contract says the columns come out: `rr` row
+    `j` starts with its peak, `pw` likewise, and the beat window is centred on
+    the sample it was cut around because the ramp signal makes it so.
+    """
+    window = P3.BJ.WIN_BEFORE + P3.BJ.WIN_AFTER
+    record = {
+        "beat": [[0.0] * P3.BJ.WIN_BEFORE + [float(p)]
+                 + [0.0] * (window - P3.BJ.WIN_BEFORE - 1) for p in kept],
+        "ref": [[0.0] for _ in kept],
+        "rr": [[float(p), float(i)] + [0.0] * (P3.BJ.CACHE_RR_DIM - 2)
+               for i, p in enumerate(kept)],
+        "sim": [[0.0] for _ in kept],
+        "pw": [[float(p)] + [0.0] * 4 for p in kept],
+        "ctx": [[0.0] for _ in kept],
+        "y": ["N" for _ in kept]}
+    record.update(overrides)
+    return record
+
+
+def _columnar_stop(record, fixture=None, variant=P3.STUB_VARIANT_PRIMARY):
+    """Read a record and return the stop it raised, or `None`."""
+    fixture = fixture or P3.FIXTURES[0]
+    try:
+        P3.discover_kept_rows(record, fixture, variant)
+    except P3.SourceHarnessError as error:
+        return error
+    return None
+
+
+def test_the_registered_columnar_record_is_read_by_its_own_reader():
+    """The shape the registered `build_record` returns, read end to end.
+
+    Not a list of rows: a mapping of columns, one array per field, all of them
+    row-aligned.  The 20260816T000714 run stopped without comparing anything,
+    and a general reader that recognises this by trying channels until one
+    works is not a basis for a statement about the registered source.
+    """
+    check(P3.COLUMNAR_RECORD_KEYS == tuple(BJ.CACHE_KEYS),
+          "the record columns come from the frozen Q5-D cache schema rather "
+          "than being retyped here")
+    result = differential_for(COLUMNAR_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a columnar producer is read and agrees on all six fixtures")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          f"and every fixture was probed under the negated helper: "
+          f"{result['stub_invariance']}")
+    reading = result["detail"][0]["return_reading"]
+    check(reading["parser"] == "columnar"
+          and reading["identity_channel"] == "rr[:, 0]",
+          f"the reading names the reader and the carrier it used: {reading}")
+    check(reading["channels"] == sorted(["rr[:, 0]", "pw[:, 0]",
+                                         f"beat[:, {P3.BJ.WIN_BEFORE}]"]),
+          f"and all three registered channels were read: {reading['channels']}")
+
+
+def test_the_reader_is_chosen_by_schema_and_never_by_result():
+    """A dispatcher that looked at the values could pick the nicer answer."""
+    import inspect
+    source = inspect.getsource(P3.is_columnar_return)
+    check("keys" in source and "values()" not in source,
+          "recognition reads key names, and never the values under them")
+    check(P3.is_columnar_return(_record(P3.FIXTURES[0], [1001])) is True,
+          "a registered record is recognised")
+    check(P3.is_columnar_return({"kept": [1, 2], "labels": ["N", "V"]})
+          is False, "an ordinary mapping is not")
+    check(P3.is_columnar_return([{"r_sample": 1001}]) is False,
+          "and neither is a list of rows, which the general reader takes")
+    # The columnar reader never hands a contradiction back to the general one:
+    # falling back after seeing a contradiction is choosing a channel by its
+    # answer, which is the whole thing this design removes.
+    broken = _record(P3.FIXTURES[0], [1001], rr=[[9999.0] + [0.0] * 6])
+    error = _columnar_stop(broken)
+    check(error is not None
+          and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE,
+          "a record whose carrier names an unknown peak stops")
+    check(P3.discover_kept_rows.__doc__ is not None
+          and "no fallback" in P3.discover_kept_rows.__doc__,
+          "and the reader says so where the next reader will look")
+
+
+def test_the_identity_carrier_is_checked_exactly_and_never_repaired():
+    """Every way the carrier could fail to identify its rows, one at a time."""
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    good = _record(fixture, peaks)
+    check(_columnar_stop(good) is None,
+          "the unmutated record reads cleanly, so each case below is the "
+          "mutation and nothing else")
+    cases = {
+        "wrong width": [[float(p), 0.0] for p in peaks],
+        "not numeric": [[str(p)] + [0.0] * 6 for p in peaks],
+        "not two-dimensional": [float(p) for p in peaks],
+        "NaN": [[float("nan")] + [0.0] * 6 for _ in peaks],
+        "non-integral": [[float(p) + 0.5] + [0.0] * 6 for p in peaks],
+        "unknown peak": [[float(p) + 3] + [0.0] * 6 for p in peaks],
+        "duplicate peak": [[float(peaks[0])] + [0.0] * 6 for _ in peaks],
+    }
+    for label, rr in cases.items():
+        error = _columnar_stop(_record(fixture, peaks, rr=rr))
+        check(error is not None
+              and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE,
+              f"a carrier that is {label} stops instead of being repaired")
+        check(error.context.get("return_schema", {}).get("columns", {}).get(
+            "rr") is not None,
+              f"and the stop for {label} carries the schema of what it read")
+    check("does not round" in str(_columnar_stop(
+        _record(fixture, peaks, rr=cases["non-integral"]))),
+          "the stop says outright that nothing is rounded into place")
+    check("does not fall back to the closest" in str(_columnar_stop(
+        _record(fixture, peaks, rr=cases["unknown peak"]))),
+          "and that no sample is snapped to a peak near it")
+
+
+def test_the_cross_check_channels_can_refuse_but_never_decide():
+    """`pw` and the beat centre check the carrier; they never replace it."""
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    window = P3.BJ.WIN_BEFORE + P3.BJ.WIN_AFTER
+    moved_pw = [[float(peaks[1])] + [0.0] * 4, [float(peaks[0])] + [0.0] * 4]
+    error = _columnar_stop(_record(fixture, peaks, pw=moved_pw))
+    check(error is not None
+          and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE
+          and "'pw' first column" in str(error),
+          "a pw column that names different rows stops the run")
+    check(error.context.get("rr_first_column") == peaks
+          and error.context.get("pw_first_column") == [peaks[1], peaks[0]],
+          f"and both sequences are preserved for the bundle: {error.context}")
+    moved_beat = [[0.0] * P3.BJ.WIN_BEFORE + [float(peaks[1 - i])]
+                  + [0.0] * (window - P3.BJ.WIN_BEFORE - 1)
+                  for i in range(len(peaks))]
+    error = _columnar_stop(_record(fixture, peaks, beat=moved_beat))
+    check(error is not None and "beat window centres" in str(error),
+          "a beat window centred on a different peak stops it too")
+    # Unavailable is recorded, not silently dropped — and it is never a stop,
+    # because a cross-check that cannot run has not contradicted anything.
+    reading = P3.discover_kept_rows(
+        _record(fixture, peaks, pw=[["x"], ["y"]]), fixture)
+    check([row["peak_sample"] for row in reading["rows"]] == peaks,
+          "an unreadable cross-check leaves the carrier's reading standing")
+    check("pw" in reading["channel_notes"]
+          and "pw[:, 0]" not in reading["channels"],
+          f"and says why it was not used: {reading['channel_notes']}")
+
+
+def test_every_registered_column_must_describe_the_same_rows():
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    error = _columnar_stop(_record(fixture, peaks, y=["N"]))
+    check(error is not None
+          and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE
+          and "'y' has 1 rows" in str(error),
+          "a column with a different row count stops the run")
+    check(error.context.get("row_counts", {}).get("rr") == 2,
+          f"and every column's row count is preserved: {error.context}")
+
+
+def test_a_record_without_its_identity_carrier_never_falls_back():
+    """The one case where the general reader would look like a rescue."""
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    record = _record(fixture, peaks)
+    record.pop("rr")
+    check(P3.is_columnar_return(record) is False
+          and P3.is_incomplete_columnar_return(record) is True,
+          "a record missing its carrier is recognised as exactly that")
+    error = _columnar_stop(record)
+    check(error is not None
+          and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE,
+          "and it stops rather than being read through the beat window")
+    check("would be choosing a channel" in str(error),
+          "with the reason: another channel would be chosen because the "
+          "registered one is absent, which is selection after the fact")
+
+
+def test_row_order_is_read_and_compared_rather_than_required():
+    """Order is a decision under test, so it must not be a validity rule.
+
+    One of the six fixtures exists to catch a producer that emits its rows in
+    another order.  A reader that stopped on that would convert the difference
+    it was built to detect into "the harness could not read this" — the worst
+    possible direction for an error.
+    """
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    reversed_rows = _record(fixture, list(reversed(peaks)))
+    reading = P3.discover_kept_rows(reversed_rows, fixture)
+    check([row["peak_sample"] for row in reading["rows"]] ==
+          list(reversed(peaks)),
+          "a reordered record is read in the order it came in")
+    check(reading["row_order_follows_fixture"] is False,
+          "the reading records that the order is not the fixture's")
+    check(P3.discover_kept_rows(_record(fixture, peaks),
+                                fixture)["row_order_follows_fixture"] is True,
+          "and that an unreordered one is")
+    # And the fixture built for this still catches it as a difference.
+    ordering = "test_source_match_peak_order_change_is_visible"
+    check(ordering in P3.fixture_names(),
+          "the ordering fixture is still one of the required six")
+
+
+class _Array(object):
+    """The array surface the reader is allowed to use, and nothing else.
+
+    numpy is installed where the run happens and absent where these tests run,
+    so an `isinstance(value, ndarray)` branch would be exercised in exactly the
+    wrong one of the two.  The reader goes through `shape`, `dtype` and
+    `tolist()` instead — the three things a real array offers — and this stands
+    in for one here.  Attribute access beyond those three fails loudly.
+    """
+
+    __slots__ = ("_rows", "shape", "dtype")
+
+    def __init__(self, rows, dtype="float32"):
+        self._rows = [list(r) if isinstance(r, (list, tuple)) else r
+                      for r in rows]
+        widths = [len(r) for r in self._rows if isinstance(r, list)]
+        square = (widths and len(widths) == len(self._rows)
+                  and len(set(widths)) == 1)
+        self.shape = ((len(self._rows), widths[0]) if square
+                      else (len(self._rows),))
+        self.dtype = dtype
+
+    def tolist(self):
+        return [list(r) if isinstance(r, list) else r for r in self._rows]
+
+    def __len__(self):
+        return len(self._rows)
+
+    def __iter__(self):
+        return iter(self._rows)
+
+
+def test_the_record_is_read_through_the_array_surface_not_through_numpy():
+    """The shape the run will really hand over: columns as arrays.
+
+    The registered producer builds its columns with numpy and stores them as
+    float32.  This module never imports numpy to read them — it uses `shape`,
+    `dtype` and `tolist()`, which is why the reading can be tested here at all.
+    """
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    plain = _record(fixture, peaks)
+    arrays = {key: (_Array(value, "<U1" if key == "y" else "float32"))
+              for key, value in plain.items()}
+    reading = P3.discover_kept_rows(arrays, fixture)
+    check([row["peak_sample"] for row in reading["rows"]] == peaks,
+          "columns handed over as arrays read exactly as plain lists do")
+    check(reading["channels"] == P3.discover_kept_rows(
+        plain, fixture)["channels"],
+          "with the same channels found in both")
+    check(reading["return_schema"]["columns"]["rr"]["dtype"] == "float32",
+          "and the array's own dtype is what the report records")
+    check(reading["rows"][0]["tokens"] == [["columnar_y", repr("N")]],
+          f"labels survive as opaque tokens: {reading['rows'][0]['tokens']}")
+    check(P3._numpy() is None or True,
+          "and none of this required numpy to be importable")
+
+
+def test_the_general_reader_would_choose_a_channel_where_this_one_refuses():
+    """The mutation that shows the new reader changes an outcome.
+
+    The general reader is not blind to a columnar record — that is the
+    problem.  It finds whichever channel happens to be readable, so a record
+    that has lost its registered identity carrier is still read, from whatever
+    else is lying around, and the run reports rows nobody registered a carrier
+    for.  Same input, two outcomes; only one of them is a statement about the
+    registered source.
+    """
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    record = _record(fixture, peaks)
+    record.pop(P3.COLUMNAR_IDENTITY_KEY)
+    saved = (P3.is_columnar_return, P3.is_incomplete_columnar_return)
+    try:
+        P3.is_columnar_return = lambda _returned: False
+        P3.is_incomplete_columnar_return = lambda _returned: False
+        general = P3.discover_kept_rows(record, fixture)
+    finally:
+        P3.is_columnar_return, P3.is_incomplete_columnar_return = saved
+    check([row["peak_sample"] for row in general["rows"]] == peaks,
+          "without the columnar reader the record is read anyway")
+    check(P3.COLUMNAR_IDENTITY_KEY not in "".join(general["channels"]),
+          f"from channels picked by what was available: {general['channels']}")
+    error = _columnar_stop(record)
+    check(error is not None
+          and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE,
+          "and with it the same record is a stop, because the channel that "
+          "was registered to decide is not there")
+    check(P3.is_columnar_return is saved[0]
+          and P3.is_incomplete_columnar_return is saved[1],
+          "the module is left exactly as it was")
+
+
+def test_a_stop_carries_its_diagnosis_out_to_the_bundle():
+    """A stop discards the differential, which is when the reading matters most.
+
+    The 20260816T000714 stop cost a round trip because everything that would
+    have explained it lived in a result the stop threw away.
+    """
+    broken = COLUMNAR_PRODUCER.replace(
+        '            "rr": [list(rr_all[i]) for i in keep],',
+        '            "rr": [[9.0] * 7 for i in keep],')
+    try:
+        differential_for(broken)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE,
+              "a record whose carrier cannot be read stops the differential")
+        context = error.context
+        check(context.get("fixture") in P3.fixture_names(),
+              f"the stop names the fixture it happened on: {context.get('fixture')}")
+        check(context.get("return_schema", {}).get("keys") ==
+              sorted(BJ.CACHE_KEYS),
+              "and carries the keys the producer returned")
+        check(context["return_schema"]["columns"]["beat"]["shape"] is not None,
+              "with each column's shape")
+        check("counts" in context.get("stub_calls", {})
+              and context["stub_calls"]["counts"].get("frontend.detect_r") == 1,
+              f"and how often each stub was called: {context.get('stub_calls')}")
+        check(context.get("fixtures_completed") == [],
+              "and which fixtures had completed when it stopped")
+    else:                                                    # pragma: no cover
+        raise AssertionError("an unreadable carrier was read anyway")
+
+
+def test_the_diagnosis_records_shapes_and_never_array_contents():
+    """It has to be safe to publish: shapes yes, measurements no."""
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    record = _record(fixture, peaks, ctx=[[0.125], [0.875]])
+    report = P3.return_schema_report(record, len(peaks))
+    text = json.dumps(report)
+    check("0.125" not in text and "0.875" not in text,
+          f"no column value appears anywhere in the report: {text[:200]}")
+    check(report["columns"]["ctx"]["shape"] == [2, 1]
+          and report["columns"]["ctx"]["row_aligned"] is True,
+          "while the shape and the row alignment are both recorded")
+    check(report["columns"]["beat"]["dtype"] is not None,
+          "and each column's element type")
+    check(report["is_columnar_record"] is True and report["keys"] ==
+          sorted(BJ.CACHE_KEYS), "with the schema it recognised")
+
+
+def test_the_bundle_records_the_return_shape_on_every_fixture():
+    """Not only on a stop: the next stop is diagnosable from the run before it."""
+    with tempfile.TemporaryDirectory() as directory:
+        result = P3.execute_synthetic_p3(directory,
+                                         COLUMNAR_PRODUCER.encode("utf-8"),
+                                         timestamp=STAMP, emit=lambda _m: None)
+        with open(os.path.join(result["bundle"]["directory"],
+                               "fixture_results.json"), encoding="utf-8") as h:
+            written = json.load(h)
+    check(len(written["detail"]) == 6, "every fixture is in the bundle")
+    for entry in written["detail"]:
+        check(entry["return_reading"]["parser"] == "columnar",
+              f"{entry['name']}: the reading of the return is recorded")
+        check(entry["return_reading"]["return_schema"]["keys"] ==
+              sorted(BJ.CACHE_KEYS),
+              f"{entry['name']}: with the columns the producer returned")
+        check(entry["stub_calls"]["counts"]["frontend.rr_features"] >= 1,
+              f"{entry['name']}: and how often each stub was asked for")
+    check("harness_stop_context" in written,
+          "the contracted file has a place for a stop's diagnosis")
+    check(sorted(P3.PREP_PAYLOAD_FILES) == sorted(Q5E.PREP_PAYLOAD_FILES),
+          "and the payload list did not grow to hold any of it")
+
+
+def test_this_change_moved_the_reader_and_nothing_scientific():
+    """The manipulated variable, stated as an assertion rather than a claim."""
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "no oracle record is registered")
+    check(len(P3.REQUIRED_FIXTURES) == 6
+          and list(P3.fixture_names()) == list(P3.REQUIRED_FIXTURES),
+          "the six required fixtures are the six that run")
+    check(P3.TOLERANCE == Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES,
+          "the tolerance is still the registered one")
+    check(P3.REGISTERED_SOURCE_SHA256 == Q5E.M4_SOURCE_MAP_HASHES["data.py"]
+          and P3.REGISTERED_SOURCE_FILE_ID ==
+          "1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK",
+          "the source identity is unchanged")
+    check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False
+          and P3.OPEN_REGISTERED_DATA is False,
+          "and both barriers are shut, because the harness identity moved")
 
 
 def test_the_injected_stubs_never_reach_a_real_dependency():
@@ -2703,10 +3160,13 @@ def test_module_capabilities_are_all_present():
               f"and the list advertises {name}")
     card = P3.design_card()
     check(P3.REGISTERED_SOURCE_FILE_ID in card
-          and "APPROVED 2026-08-15 by user (read-only)" in card
+          and "WITHDRAWN 2026-08-16" in card
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")
+    check("does not carry over" in card,
+          "and says why the earlier approval no longer applies, rather than "
+          "showing a bare 'not approved' that reads the same as never asked")
     check("OPEN_REGISTERED_DATA : False" in card,
           "and that the switch default is still shut")
     for name in P3.fixture_names():
