@@ -987,6 +987,81 @@ def test_a_file_with_the_right_name_but_a_different_identity_is_refused():
               "a renamed file at the registered id is refused too")
 
 
+def test_a_file_with_no_confirmable_parent_is_refused_before_the_download():
+    """An unconfirmed parent is not a confirmed one, and the difference is
+    which side of the transfer the run stops on.
+
+    The parent comparison used to be guarded by the parents being non-empty,
+    so a provider that returned none at all skipped the check and the bytes
+    were fetched anyway.  The provenance check would still have refused the
+    permit afterwards — but the contract is that a parent which cannot be
+    confirmed stops the run *before* anything is downloaded.
+    """
+    body = FAITHFUL.encode("utf-8")
+    for label, override in (("no parents at all", {"parents": []}),
+                            ("a parents field the provider omitted",
+                             {"parents": None}),
+                            ("a foreign parent",
+                             {"parents": ["1SomeOtherFolder"]})):
+        adapter = FakeDriveFile(good_metadata(body, **override), body,
+                                fail_download=True)
+        try:
+            with opened_guard():
+                P3.fetch_registered_source(adapter, TOKEN)
+        except P3.SourceHarnessError as error:
+            check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
+                  f"{label}: refused as an identity mismatch")
+            check("Nothing was downloaded" in str(error),
+                  f"{label}: and refused before the transfer, not after it")
+            check(adapter.calls == [("get_metadata",
+                                     P3.REGISTERED_SOURCE_FILE_ID)],
+                  f"{label}: exactly one metadata lookup and no download "
+                  f"({adapter.calls})")
+        else:                                                # pragma: no cover
+            raise AssertionError(f"{label} was fetched")
+
+
+def test_an_empty_problem_list_means_exactly_an_empty_list():
+    """A field that was never written is not a clean read."""
+    body = FAITHFUL.encode("utf-8")
+    saved_bytes = P3.REGISTERED_SOURCE_BYTES
+    with _registered_bytes(body) as registered:
+        try:
+            P3.REGISTERED_SOURCE_BYTES = len(registered)
+            permit = _registered_permit_for(registered)
+            genuine = dict(permit.inventory)
+            check(genuine["problems"] == [],
+                  "a genuine inventory records an empty problem list")
+            for label, override in (
+                    ("a missing problems field", {}),
+                    ("problems set to None", {"problems": None}),
+                    ("problems as an empty tuple", {"problems": ()}),
+                    ("problems as an empty string", {"problems": ""}),
+                    ("problems as an empty dict", {"problems": {}})):
+                inventory = dict(genuine)
+                if override:
+                    inventory.update(override)
+                else:
+                    inventory.pop("problems")
+                try:
+                    with opened_guard():
+                        P3.assert_registered_provenance(
+                            P3.REGISTERED_SOURCE_NAME, inventory,
+                            permit.sha256, len(registered))
+                except P3.SourceHarnessError as error:
+                    check("not an empty list" in str(error),
+                          f"{label} is refused rather than coerced")
+                else:                                        # pragma: no cover
+                    raise AssertionError(f"{label} passed as a clean read")
+            with opened_guard():
+                P3.assert_registered_provenance(
+                    P3.REGISTERED_SOURCE_NAME, genuine, permit.sha256,
+                    len(registered))
+            check(True, "while the genuine inventory still passes")
+        finally:
+            P3.REGISTERED_SOURCE_BYTES = saved_bytes
+
+
 def test_bytes_that_do_not_match_the_registered_digest_are_never_executed():
     """The digest gate sits before `compile`, not after `exec`."""
     poison = b"raise SystemExit('this must never be executed')\n"

@@ -457,6 +457,27 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D11 (2026-08-14) — fourth-review items closed: the parent gate runs before
+the download, and an empty problem list means exactly that.**  Two narrow
+exactness defects.  First, the parent comparison in
+`fetch_registered_source()` was guarded by the parents being non-empty, so a
+provider that returned none at all skipped the check and the bytes were
+transferred; the permit's provenance check would still have refused
+afterwards, but the contract is that an unconfirmed parent stops the run
+**before** the download, and "the provider told us nothing" is not "the
+provider confirmed the registered folder".  The guard is removed, so a
+missing, empty or foreign parent all stop at the same place.  Second,
+`assert_registered_provenance()` coerced the problem list before comparing it,
+which accepted a missing key, a `None` and an empty tuple as a clean read —
+exactly the fields a hand-assembled inventory would leave unwritten.  It now
+requires `problems` to be exactly `[]`.  Regressions:
+`test_a_file_with_no_confirmable_parent_is_refused_before_the_download`
+(empty, omitted and foreign parents; `P3_SOURCE_IDENTITY_MISMATCH`, one
+`get_metadata` call and zero downloads) and
+`test_an_empty_problem_list_means_exactly_an_empty_list` (missing, `None`,
+empty tuple, empty string and empty dict all refused, with a genuine
+inventory still passing).
+
 **D10 (2026-08-14) — third-review blocker closed: a registered permit must
 show its file-id provenance, not only its digest.**  D9's re-validation
 checked the type, the recomputed digest, the token and the guard, but of the

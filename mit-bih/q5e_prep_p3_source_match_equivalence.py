@@ -979,10 +979,14 @@ def assert_registered_provenance(label: object,
         if inventory.get(field) is not expected:
             problems.append(
                 f"{field} is {inventory.get(field)!r}, not {expected!r}")
-    if list(inventory.get("problems") or ()) != []:
+    # Exactly an empty list.  Coercing first would have accepted a missing
+    # key, a `None` and an empty tuple as "no problems", and those say that
+    # the field was never written rather than that the read was clean — a
+    # hand-assembled inventory is precisely where that difference matters.
+    if inventory.get("problems") != []:
         problems.append(
-            f"the inventory records unresolved problems: "
-            f"{inventory.get('problems')!r}")
+            f"problems is {inventory.get('problems')!r}, not an empty list; a "
+            f"missing or unset field is not a clean read")
     parents = [str(p) for p in (inventory.get("parents") or ())]
     if REGISTERED_SOURCE_FOLDER_ID not in parents:
         problems.append(
@@ -2573,11 +2577,17 @@ def fetch_registered_source(adapter: DriveFileAdapter, approval: Optional[str],
     if inventory["bytes"] != REGISTERED_SOURCE_BYTES:
         problems.append(f"the provider reports {inventory['bytes']} bytes and "
                         f"ASSETS registers {REGISTERED_SOURCE_BYTES}")
-    if (inventory["parents"]
-            and REGISTERED_SOURCE_FOLDER_ID not in inventory["parents"]):
+    # No truthiness guard.  An earlier version only compared the parents when
+    # the provider returned some, so a file with **no** observable parent
+    # passed this gate and was downloaded — and the contract is that a parent
+    # which cannot be confirmed stops the run *before* the transfer, not after
+    # it.  "The provider told us nothing" is not the same as "the provider
+    # confirmed the registered folder", and only the second one may proceed.
+    if REGISTERED_SOURCE_FOLDER_ID not in inventory["parents"]:
         problems.append(f"the file's parents {inventory['parents']} do not "
                         f"include the registered folder id "
-                        f"{REGISTERED_SOURCE_FOLDER_ID}")
+                        f"{REGISTERED_SOURCE_FOLDER_ID}; an unconfirmed parent "
+                        f"is not a confirmed one")
     if (inventory["provider_sha256"]
             and inventory["provider_sha256"] != REGISTERED_SOURCE_SHA256):
         problems.append(f"the provider checksum {inventory['provider_sha256']} "
