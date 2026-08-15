@@ -23,6 +23,7 @@ import json
 import os
 import sys
 import tempfile
+import types
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -659,6 +660,139 @@ def test_a_registered_permit_is_refused_once_the_guard_closes_again():
             check(counter.counts == {"compile": 0, "mkdir": 0},
                   f"with nothing compiled and no directory made: "
                   f"{counter.counts}")
+        finally:
+            P3.REGISTERED_SOURCE_BYTES = saved_bytes
+
+
+def _registered_permit_for(body):
+    """Mint a genuine registered permit over `body`, with the constants pointed
+    at it for the length of the caller's `_registered_bytes` block."""
+    adapter = FakeDriveFile(good_metadata(body), body)
+    with opened_guard():
+        return P3.fetch_registered_source(adapter, TOKEN)
+
+
+def test_a_registered_permit_must_show_it_came_from_the_registered_file_id():
+    """Matching the digest says the bytes are right, not where they came from.
+
+    The contract is that the oracle runs a file that passed the **file id**
+    gate as well.  A permit assembled around the right bytes with a two-field
+    inventory would otherwise be indistinguishable from a read of the
+    registered Drive file — an arbitrary copy of the same content, wearing the
+    provenance of the registered asset.
+    """
+    body = FAITHFUL.encode("utf-8")
+    saved_bytes = P3.REGISTERED_SOURCE_BYTES
+    with _registered_bytes(body) as registered:
+        digest = hashlib.sha256(registered).hexdigest()
+        try:
+            P3.REGISTERED_SOURCE_BYTES = len(registered)
+            with _counted_compiles() as counter, opened_guard():
+                forged = object.__new__(P3.RegisteredSourcePermit)
+                P3.SourcePermit.__init__(
+                    forged, P3._PERMIT_CONSTRUCTION_KEY,
+                    P3.PERMIT_KIND_REGISTERED, registered,
+                    {"observed_sha256": digest}, False, "data.py", TOKEN)
+                for label, thunk in (
+                        ("the session factory",
+                         lambda: P3.source_factory(forged)),
+                        ("the loader",
+                         lambda: P3.load_source_under_injection(
+                             forged, P3.build_injection(P3.FIXTURES[0])[0])),
+                        ("the registered executor",
+                         lambda: P3._execute_registered_p3(
+                             "/nonexistent", forged, timestamp=STAMP)),
+                        ("the validator",
+                         lambda: P3.validate_permit_for_execution(forged))):
+                    try:
+                        thunk()
+                    except P3.SourceHarnessError as error:
+                        check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
+                              f"{label} refuses a permit whose inventory does "
+                              f"not show a read of the registered file id")
+                        check("registered file id" in str(error),
+                              f"{label} says the file id is what is missing")
+                    else:                                    # pragma: no cover
+                        raise AssertionError(
+                            f"{label} accepted bytes with no provenance")
+            check(counter.counts == {"compile": 0, "mkdir": 0},
+                  f"and nothing was compiled or created: {counter.counts}")
+        finally:
+            P3.REGISTERED_SOURCE_BYTES = saved_bytes
+
+
+def test_each_provenance_field_of_a_registered_permit_is_re_checked():
+    """A genuine permit, then one field of its inventory swapped, one at a time."""
+    body = FAITHFUL.encode("utf-8")
+    saved_bytes = P3.REGISTERED_SOURCE_BYTES
+    with _registered_bytes(body) as registered:
+        try:
+            P3.REGISTERED_SOURCE_BYTES = len(registered)
+            permit = _registered_permit_for(registered)
+            with opened_guard():
+                report = P3.validate_permit_for_execution(permit)
+            check(report["revalidated"] is True
+                  and report["kind"] == P3.PERMIT_KIND_REGISTERED,
+                  "a permit minted by fetch_registered_source() passes the "
+                  "production validator unchanged")
+            genuine = dict(permit.inventory)
+            mutations = {
+                "a different requested file id":
+                    {"requested_file_id": "1SomethingElse"},
+                "a different resolved file id": {"file_id": "1SomethingElse"},
+                "another name": {"name": "data_v2.py"},
+                "another provider size": {"bytes": 999},
+                "another observed size": {"observed_bytes": 999},
+                "a registered digest that is not the observed one":
+                    {"registered_sha256": "a" * 64},
+                "an observed digest that is not the body's":
+                    {"observed_sha256": "b" * 64},
+                "a denied digest match": {"digest_matches_registered": False},
+                "a file that was never read": {"read": False},
+                "unresolved problems": {"problems": ["something was wrong"]},
+                "a foreign parent folder": {"parents": ["1SomeOtherFolder"]},
+                "no parent at all": {"parents": []},
+                "a trashed file": {"trashed": True},
+                "a shortcut": {"is_shortcut": True},
+                "a folder": {"is_folder": True},
+                "a truthy string where a boolean belongs":
+                    {"digest_matches_registered": "true"},
+            }
+            with _counted_compiles() as counter:
+                for label, override in mutations.items():
+                    tampered = object.__new__(P3.RegisteredSourcePermit)
+                    for field in ("kind", "sha256", "body", "synthetic",
+                                  "label", "approval", "_sealed"):
+                        object.__setattr__(tampered, field,
+                                           getattr(permit, field))
+                    object.__setattr__(
+                        tampered, "inventory",
+                        types.MappingProxyType({**genuine, **override}))
+                    try:
+                        with opened_guard():
+                            P3.validate_permit_for_execution(tampered)
+                    except P3.SourceHarnessError as error:
+                        check(error.status == P3.P3_SOURCE_IDENTITY_MISMATCH,
+                              f"{label} is refused by the provenance check")
+                    else:                                    # pragma: no cover
+                        raise AssertionError(f"{label} was accepted")
+                # The permit's own label is part of the same claim.
+                relabelled = object.__new__(P3.RegisteredSourcePermit)
+                for field in ("kind", "sha256", "body", "synthetic",
+                              "inventory", "approval", "_sealed"):
+                    object.__setattr__(relabelled, field,
+                                       getattr(permit, field))
+                object.__setattr__(relabelled, "label", "something_else.py")
+                try:
+                    with opened_guard():
+                        P3.validate_permit_for_execution(relabelled)
+                except P3.SourceHarnessError:
+                    check(True, "and so is a permit relabelled away from the "
+                                "registered file name")
+                else:                                        # pragma: no cover
+                    raise AssertionError("a relabelled permit was accepted")
+            check(counter.counts == {"compile": 0, "mkdir": 0},
+                  f"none of which compiled anything: {counter.counts}")
         finally:
             P3.REGISTERED_SOURCE_BYTES = saved_bytes
 

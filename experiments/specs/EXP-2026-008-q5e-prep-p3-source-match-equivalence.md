@@ -215,9 +215,16 @@ identity — never `isinstance`, which a subclass satisfies — and
 `validate_permit_for_execution()` re-derives every claim **from the permit's
 own bytes on the last line before the compiler**: the recomputed digest must
 equal the permit's, and the `kind`/`synthetic`/`approval` combination must be
-exactly one of two, with the registered one re-checking the token, the guard
-and the inventory identity, and the synthetic one requiring a digest that is
-not the registered file's.  An object that skipped its constructor, a
+exactly one of two.  A registered permit additionally re-runs the token, the
+guard and — through `assert_registered_provenance()` — the **whole file-id
+gate**: the requested and resolved file ids, the name, both byte counts, both
+digests, `digest_matches_registered` and `read` exactly `True`, `trashed`,
+`is_shortcut` and `is_folder` exactly `False`, an empty problem list, the
+registered folder among the parents, and the permit's own label.  A synthetic
+permit requires a digest that is not the registered file's.  Matching the
+digest alone would say the bytes are the right bytes and nothing about where
+they came from, and an arbitrary copy of the same content is not the
+registered asset.  An object that skipped its constructor, a
 look-alike, and a permit edited after minting all fail there.
 
 The two kinds are not interchangeable:
@@ -449,6 +456,31 @@ is built and again immediately before execution.  Regression:
 `test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
+
+**D10 (2026-08-14) — third-review blocker closed: a registered permit must
+show its file-id provenance, not only its digest.**  D9's re-validation
+checked the type, the recomputed digest, the token and the guard, but of the
+inventory it checked only `observed_sha256`.  With the guard open, a permit
+assembled around the right bytes with a two-field inventory therefore passed —
+and that breaks this PREP's actual contract, because an arbitrary copy of the
+same content would be indistinguishable from a read of the registered Drive
+file.  Matching the digest says the bytes are the right bytes; it does not say
+where they came from.  The finding is accepted in full.
+`assert_registered_provenance()` now re-derives the whole file-id gate from
+the inventory — `requested_file_id`, `file_id`, `name`, `bytes` and
+`observed_bytes` against the registered byte count and the permit's own body
+length, `registered_sha256` and `observed_sha256` against the recomputed
+digest, `digest_matches_registered` and `read` exactly `True`, `trashed`,
+`is_shortcut` and `is_folder` exactly `False`, an empty `problems` list, the
+registered folder among the parents, and the permit's own label — with
+booleans compared by identity so a truthy string cannot stand in for one.  It
+runs when the permit is minted **and** on the last line before the compiler.
+Regressions: `test_a_registered_permit_must_show_it_came_from_the_registered
+_file_id` (the reported bypass verbatim, through the factory, the loader, the
+registered executor and the validator, with compiles and mkdirs counted at
+zero) and `test_each_provenance_field_of_a_registered_permit_is_re_checked`
+(sixteen single-field mutations of a genuine permit's inventory plus a
+relabelled permit, all refused, and the genuine permit still passing).
 
 **D9 (2026-08-14) — second-review blocker closed: permits are sealed, and
 re-validated before the compiler.**  D7 introduced the permit but left it a

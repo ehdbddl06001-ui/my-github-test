@@ -884,6 +884,8 @@ class RegisteredSourcePermit(SourcePermit):
             raise SourceHarnessError(
                 P3_SOURCE_IDENTITY_MISMATCH,
                 "the inventory does not describe the bytes it was handed")
+        assert_registered_provenance(REGISTERED_SOURCE_NAME, inventory, digest,
+                                     len(body))
         SourcePermit.__init__(self, _PERMIT_CONSTRUCTION_KEY,
                               PERMIT_KIND_REGISTERED, body, inventory, False,
                               REGISTERED_SOURCE_NAME, approval)
@@ -930,6 +932,69 @@ def synthetic_permit(body: bytes, label: str = "synthetic.py"
                      ) -> SyntheticSourcePermit:
     """The only way to get a permit for bytes that are not the registered file."""
     return SyntheticSourcePermit(body, label=label)
+
+
+def assert_registered_provenance(label: object,
+                                 inventory: Mapping[str, object],
+                                 digest: str, observed_bytes: int) -> None:
+    """The file-id gate, re-derived from the inventory a permit carries.
+
+    Matching the registered **digest** says the bytes are the right bytes.  It
+    does not say where they came from, and this PREP's contract is that the
+    oracle runs a file that passed the **file id** gate as well: an arbitrary
+    copy of the same content, handed over with a two-field inventory, would
+    otherwise be indistinguishable from a read of the registered Drive file.
+    That is the difference between "these bytes hash correctly" and "this is
+    the registered asset", and P3 exists because the second one is the claim
+    that matters.
+
+    So every field `fetch_registered_source()` established is checked again
+    here, exactly, on the last line before the compiler.  Booleans are
+    compared by identity: `bool("false")` is `True`, and a string that reads
+    as a denial must not be taken as an assertion.
+    """
+    problems: List[str] = []
+    if label != REGISTERED_SOURCE_NAME:
+        problems.append(f"label {label!r} != {REGISTERED_SOURCE_NAME!r}")
+    for field, expected in (("requested_file_id", REGISTERED_SOURCE_FILE_ID),
+                            ("file_id", REGISTERED_SOURCE_FILE_ID),
+                            ("name", REGISTERED_SOURCE_NAME),
+                            ("registered_sha256", digest),
+                            ("observed_sha256", digest)):
+        if inventory.get(field) != expected:
+            problems.append(
+                f"{field} {inventory.get(field)!r} != {expected!r}")
+    for field in ("bytes", "observed_bytes"):
+        if inventory.get(field) != REGISTERED_SOURCE_BYTES:
+            problems.append(
+                f"{field} {inventory.get(field)!r} != "
+                f"{REGISTERED_SOURCE_BYTES}")
+    if observed_bytes != REGISTERED_SOURCE_BYTES:
+        problems.append(
+            f"the permit holds {observed_bytes} bytes where "
+            f"{REGISTERED_SOURCE_BYTES} are registered")
+    for field, expected in (("digest_matches_registered", True),
+                            ("read", True), ("trashed", False),
+                            ("is_shortcut", False), ("is_folder", False)):
+        if inventory.get(field) is not expected:
+            problems.append(
+                f"{field} is {inventory.get(field)!r}, not {expected!r}")
+    if list(inventory.get("problems") or ()) != []:
+        problems.append(
+            f"the inventory records unresolved problems: "
+            f"{inventory.get('problems')!r}")
+    parents = [str(p) for p in (inventory.get("parents") or ())]
+    if REGISTERED_SOURCE_FOLDER_ID not in parents:
+        problems.append(
+            f"parents {parents} do not include the registered folder "
+            f"{REGISTERED_SOURCE_FOLDER_ID}")
+    if problems:
+        raise SourceHarnessError(
+            P3_SOURCE_IDENTITY_MISMATCH,
+            "the permit's inventory does not show a read of the registered "
+            "file id: " + "; ".join(problems) + ".  Bytes with the right "
+            "digest are not the registered asset unless they came from the "
+            "registered file, and this PREP runs only the registered asset.")
 
 
 def validate_permit_for_execution(permit: object) -> Dict[str, object]:
@@ -985,10 +1050,8 @@ def validate_permit_for_execution(permit: object) -> Dict[str, object]:
                 P3_SOURCE_IDENTITY_MISMATCH,
                 f"a registered permit holds bytes hashing to {digest}, not the "
                 f"registered {REGISTERED_SOURCE_SHA256}")
-        if str(inventory.get("observed_sha256") or "") != digest:
-            raise SourceHarnessError(
-                P3_SOURCE_IDENTITY_MISMATCH,
-                "the permit's inventory does not describe the bytes it holds")
+        assert_registered_provenance(getattr(permit, "label", None), inventory,
+                                     digest, len(body))
     else:
         if (getattr(permit, "kind", None) != PERMIT_KIND_SYNTHETIC
                 or getattr(permit, "synthetic", None) is not True):
@@ -3216,6 +3279,7 @@ def module_capabilities() -> Tuple[str, ...]:
             "load_source_under_injection", "ProducerSession", "SourcePermit",
             "RegisteredSourcePermit", "SyntheticSourcePermit",
             "synthetic_permit", "validate_permit_for_execution",
+            "assert_registered_provenance",
             "source_factory", "bind_source_arguments",
             "fetch_registered_source", "oracle_harness_identity",
             "candidate_record", "check_candidate_against_gate",
