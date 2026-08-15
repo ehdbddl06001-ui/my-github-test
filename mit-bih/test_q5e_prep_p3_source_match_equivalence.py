@@ -2396,6 +2396,122 @@ def test_an_undeclared_attribute_is_recorded_before_it_is_refused():
           "each marked as undeclared rather than quietly supplied")
 
 
+#: The same producer, handing its rows back as a bare tuple rather than a
+#: mapping.  The 20260816T000714 run stopped at P3_KEPT_ROWS_UNOBSERVABLE
+#: because the reader only looked at the top level of a container it could not
+#: name — an unread container is not an absent one.
+TUPLE_RETURNING_PRODUCER = Z_USING_PRODUCER.replace(
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}',
+    '    return (beats, [rr_all[i] for i in keep], ys)')
+
+#: The same rows again, this time as a record object's attributes.
+OBJECT_RETURNING_PRODUCER = Z_USING_PRODUCER.replace(
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}',
+    '    class _Record(object):\n'
+    '        pass\n'
+    '    out = _Record()\n'
+    '    out.beat = beats\n'
+    '    out.rr = [rr_all[i] for i in keep]\n'
+    '    out.y = ys\n'
+    '    return out')
+
+#: A producer whose return says nothing at all about which rows it kept.  This
+#: one has to stop: reading a count as a mapping would be an invention.
+OPAQUE_RETURNING_PRODUCER = Z_USING_PRODUCER.replace(
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}',
+    '    return len(keep)')
+
+
+def test_rows_handed_back_in_a_tuple_are_still_read():
+    """A container the reader cannot name is opened, not given up on.
+
+    The rows are the same rows; only the wrapper differs.  Refusing to look
+    inside a tuple would report "this producer kept nothing observable" about
+    a producer that plainly kept something.
+    """
+    result = differential_for(TUPLE_RETURNING_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer that returns its rows in a tuple is read and agrees on "
+          "all six fixtures")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          "and the injection is still probed on every fixture")
+
+
+def test_rows_handed_back_as_object_attributes_are_still_read():
+    """A returned record is read through its own public attributes."""
+    result = differential_for(OBJECT_RETURNING_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer that returns a record object is read and agrees on all "
+          "six fixtures")
+    attributes = P3._public_attributes(_ExampleRecord())
+    check(sorted(attributes) == ["beat", "rr", "y"],
+          f"only public non-callable attributes are read: {sorted(attributes)}")
+
+
+class _ExampleRecord(object):
+    """A stand-in for a returned record, with things that must not be read."""
+
+    def __init__(self):
+        self.beat = [[1.0]]
+        self.rr = [[0.8]]
+        self.y = ["N"]
+        self._private = "not read"
+
+    def method(self):                                        # pragma: no cover
+        raise AssertionError("a callable attribute must not be read")
+
+
+def test_a_return_that_holds_no_rows_stops_and_describes_its_shape():
+    """The stop that cannot be avoided still has to be actionable.
+
+    "It kept nothing" and "its output cannot be read" are different findings.
+    When the second one is true the stop prints the *shape* of what came back
+    — type, keys, lengths — so the next extension is deliberate rather than a
+    guess, and never a value that could pass for a measurement.
+    """
+    try:
+        differential_for(OPAQUE_RETURNING_PRODUCER)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_KEPT_ROWS_UNOBSERVABLE,
+              "an unreadable return is a harness stop, not a disagreement")
+        check("What it did return: int." in str(error),
+              f"and the stop describes the returned shape: {error}")
+        check("not an empty one" in str(error),
+              "distinguishing it from a producer that kept no rows")
+        check("The comparison was not made." in str(error),
+              "and saying plainly that nothing was compared")
+    else:                                                    # pragma: no cover
+        raise AssertionError("an unreadable return was read anyway")
+    check(P3.P3_KEPT_ROWS_UNOBSERVABLE in P3.HARNESS_STOPS,
+          "the stop is registered as a harness stop")
+
+
+def test_the_shape_description_carries_no_measurable_value():
+    """Shapes are printable; contents are not, and must not leak into a stop."""
+    described = P3.describe_returned(
+        {"beat": [[0.125, 0.5], [0.25, 0.75]], "y": ["N", "V"]})
+    check("mapping(2)" in described and "'beat'" in described,
+          f"a mapping is described by its keys and size: {described}")
+    check("0.125" not in described and "'V'" not in described,
+          "and never by the values inside it")
+    check(P3.describe_returned(7) == "int"
+          and P3.describe_returned(None) == "NoneType",
+          "a scalar is described by its type alone")
+    check("no readable public attributes" in P3.describe_returned(object()),
+          "and an object with nothing readable says exactly that")
+
+
+def test_an_empty_result_is_reported_as_kept_nothing_not_as_unreadable():
+    """The two findings stay apart in the direction that matters too."""
+    rows = P3.discover_kept_rows({"beat": [], "rr": [], "y": []},
+                                 P3.FIXTURES[0])
+    check(rows["rows"] == [] and rows["channels"] == ["empty_result"],
+          "a producer that returns empty containers kept no rows, and that is "
+          "an observation rather than a failure")
+    check(rows["empty_containers"] != [],
+          f"with the containers it did return recorded: {rows}")
+
+
 def test_the_injected_stubs_never_reach_a_real_dependency():
     saved = {name: sys.modules.get(name) for name in P3.INJECTED_MODULE_NAMES}
     stubs, _log = P3.build_injection(P3.FIXTURES[0])
@@ -2539,8 +2655,16 @@ def test_the_notebook_cannot_reach_a_registered_byte_before_approval():
     check(P3.EXECUTION_APPROVAL_TOKEN not in body,
           "so the literal string itself does not appear in the notebook")
     check("raise RuntimeError" in body and "TIMESTAMP" in body,
-          "and an empty TIMESTAMP stops the run rather than writing an "
+          "and a malformed TIMESTAMP stops the run rather than writing an "
           "unnamed bundle")
+    check("%Y%m%dT%H%M%S" in body and "timedelta(hours=9)" in body,
+          "the run stamp is generated in KST rather than retyped each run")
+    check("if not TIMESTAMP:" in body,
+          "while a value written by hand still wins, for a re-run that has to "
+          "carry a particular identifier")
+    check(r"\d{8}T\d{6}" in body,
+          "and the format is checked, so a generated or typed value that is "
+          "not a run identifier stops before a folder is made")
 
 
 def test_the_spec_records_the_separated_states():

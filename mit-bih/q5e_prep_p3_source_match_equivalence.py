@@ -1556,10 +1556,16 @@ MAX_TRACE_STEPS = 200000
 #: more than the run — while a decision this projection can read is always a
 #: handful of members.
 MAX_CONTAINER = 512
-MAX_DEPTH = 3
+#: The returned object is canonicalised **once** per fixture, not at every
+#: line event, so it can be read whole.  A producer that hands back long rows
+#: must still be readable: summarising its output would turn "we could not
+#: read it" into a fact about the harness rather than about the producer.
+RETURN_MAX_CONTAINER = 65536
+MAX_DEPTH = 4
 
 
-def canonical_value(value: object, depth: int = 0) -> object:
+def canonical_value(value: object, depth: int = 0,
+                    limit: int = MAX_CONTAINER) -> object:
     """A JSON-safe view of one local, or a description of why it is not one.
 
     Values that cannot be represented are summarised by type and length rather
@@ -1573,7 +1579,7 @@ def canonical_value(value: object, depth: int = 0) -> object:
     if depth >= MAX_DEPTH:
         return {"__type__": type(value).__name__, "__elided__": True}
     try:
-        oversized = len(value) > MAX_CONTAINER                # type: ignore[arg-type]
+        oversized = len(value) > limit                        # type: ignore[arg-type]
     except TypeError:
         oversized = False
     if oversized:
@@ -1583,30 +1589,32 @@ def canonical_value(value: object, depth: int = 0) -> object:
     tolist = getattr(value, "tolist", None)
     if callable(tolist) and not isinstance(value, (list, tuple, set, dict)):
         try:
-            return canonical_value(tolist(), depth)
+            return canonical_value(tolist(), depth, limit)
         except Exception:                                    # noqa: BLE001
             return {"__type__": type(value).__name__}
     if isinstance(value, Mapping):
-        if len(value) > MAX_CONTAINER:                       # pragma: no cover
+        if len(value) > limit:                               # pragma: no cover
             return {"__type__": "mapping", "__len__": len(value)}
         try:
             items = sorted(value.items(), key=lambda kv: repr(kv[0]))
         except Exception:                                    # noqa: BLE001
             items = list(value.items())                      # pragma: no cover
-        return {"__map__": [[canonical_value(k, depth + 1),
-                             canonical_value(v, depth + 1)] for k, v in items]}
+        return {"__map__": [[canonical_value(k, depth + 1, limit),
+                             canonical_value(v, depth + 1, limit)]
+                            for k, v in items]}
     if isinstance(value, (set, frozenset)):
-        if len(value) > MAX_CONTAINER:                       # pragma: no cover
+        if len(value) > limit:                               # pragma: no cover
             return {"__type__": "set", "__len__": len(value)}
         try:
             members = sorted(value, key=repr)
         except Exception:                                    # noqa: BLE001
             members = list(value)                            # pragma: no cover
-        return {"__set__": [canonical_value(m, depth + 1) for m in members]}
+        return {"__set__": [canonical_value(m, depth + 1, limit)
+                            for m in members]}
     if isinstance(value, (list, tuple)):
-        if len(value) > MAX_CONTAINER:
+        if len(value) > limit:
             return {"__type__": type(value).__name__, "__len__": len(value)}
-        return [canonical_value(m, depth + 1) for m in value]
+        return [canonical_value(m, depth + 1, limit) for m in value]
     return {"__type__": type(value).__name__}
 
 
@@ -2030,6 +2038,70 @@ def merge_implied(by_container: Mapping[str, Mapping[str, object]],
 PEAK_ROW_FIELDS: Tuple[str, ...] = ("r_sample", "peak", "sample", "peak_index")
 
 
+def _unreadable(canonical: object) -> bool:
+    """Did canonicalisation come back with nothing but a type name?"""
+    return (isinstance(canonical, dict) and "__type__" in canonical
+            and "__map__" not in canonical and "__set__" not in canonical)
+
+
+def _public_attributes(value: object) -> Dict[str, object]:
+    """A returned object's public, non-callable attributes.
+
+    Bounded and dull on purpose: `__dict__` first, then a `__slots__`-style
+    sweep, skipping anything private or callable.  A producer that returns a
+    record hands its rows over this way.
+    """
+    out: Dict[str, object] = {}
+    holder = getattr(value, "__dict__", None)
+    names = (sorted(holder) if isinstance(holder, dict)
+             else [n for n in dir(value) if not n.startswith("_")])
+    for name in names[:MAX_CONTAINER]:
+        if name.startswith("_"):
+            continue
+        try:
+            attribute = getattr(value, name)
+        except Exception:                                    # noqa: BLE001
+            continue
+        if callable(attribute):
+            continue
+        out[name] = attribute
+    return out
+
+
+def describe_returned(value: object, depth: int = 0) -> str:
+    """The shape of what a producer returned, without its contents.
+
+    Type, keys, lengths and element kinds — enough to extend the reader
+    deliberately next time, and nothing that could pass for a measurement.
+    """
+    numpy = _numpy()
+    if numpy is not None and isinstance(value, numpy.ndarray):
+        return f"ndarray{tuple(value.shape)} of {value.dtype}"
+    if value is None or isinstance(value, (bool, int, float, str, bytes)):
+        return type(value).__name__
+    if isinstance(value, Mapping):
+        if depth >= 2:
+            return f"mapping of {len(value)}"
+        inner = ", ".join(
+            f"{k!r}: {describe_returned(v, depth + 1)}"
+            for k, v in list(value.items())[:12])
+        return f"mapping({len(value)}) {{{inner}}}"
+    if isinstance(value, (list, tuple, set, frozenset)):
+        kind = type(value).__name__
+        items = list(value)[:3]
+        if depth >= 2:
+            return f"{kind} of {len(value)}"
+        inner = ", ".join(describe_returned(v, depth + 1) for v in items)
+        return f"{kind}({len(value)}) [{inner}{', …' if len(value) > 3 else ''}]"
+    attributes = _public_attributes(value)
+    if attributes:
+        inner = ", ".join(
+            f"{k}: {describe_returned(v, depth + 1)}"
+            for k, v in list(attributes.items())[:12])
+        return f"{type(value).__name__} object with {{{inner}}}"
+    return f"{type(value).__name__} object with no readable public attributes"
+
+
 def _canonical_mapping(node: object) -> Optional[Dict[str, object]]:
     """A canonicalised mapping read back as a plain dict, or `None`.
 
@@ -2067,7 +2139,16 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
     """
     peaks = [int(p) for p in fixture["peaks"]]
     peak_set = set(peaks)
-    canonical = canonical_value(returned)
+    canonical = canonical_value(returned, limit=RETURN_MAX_CONTAINER)
+    if _unreadable(canonical):
+        # A producer may hand back a record object rather than a mapping or a
+        # tuple.  Its public attributes are what it returned, so they are read
+        # the same way — this is still "read what came back", not a guess about
+        # what it means.
+        attributes = _public_attributes(returned)
+        if attributes:
+            canonical = canonical_value(attributes,
+                                        limit=RETURN_MAX_CONTAINER)
     channels: Dict[str, List[Dict[str, object]]] = {}
     rejected: List[str] = []
     empty_lists: List[str] = []
@@ -2141,6 +2222,12 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
                         {"row": i, "peak_sample": v, "tokens": []}
                         for i, v in enumerate(centres)]
             return
+        # Not a row channel itself: look inside.  A producer may return a
+        # tuple of arrays rather than a mapping of them, and the rows are then
+        # one level further in — an unread container is not an absent one.
+        for index, item in enumerate(node[:MAX_CONTAINER]):
+            if isinstance(item, (list, dict)):
+                scan(item, f"{path}[{index}]")
         return
 
     scan(canonical, "")
@@ -2153,12 +2240,16 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object]
         if not empty_lists:
             # Nothing that could hold rows came back at all.  "It kept
             # nothing" and "its output cannot be read" are different findings,
-            # and only the second one is true here.
+            # and only the second one is true here.  The stop describes the
+            # **shape** of what did come back — type, keys, lengths — because
+            # otherwise the next step is a guess about a value nobody may look
+            # at directly.
             raise SourceHarnessError(
                 P3_KEPT_ROWS_UNOBSERVABLE,
-                "the producer returned no row container at all: not an empty "
-                "one, which would say it kept nothing, and not a readable one. "
-                " The comparison was not made.")
+                f"the producer returned no row container at all: not an empty "
+                f"one, which would say it kept nothing, and not a readable "
+                f"one.  What it did return: {describe_returned(returned)}.  "
+                f"The comparison was not made.")
         # Every row container that came back was empty: the producer kept no
         # rows, and that is an observation rather than a failure.
         return {"rows": [], "channels": ["empty_result"],
@@ -2208,12 +2299,17 @@ def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
                 if not str(key).startswith("__"):
                     scan(value)
             return
-        if isinstance(node, list) and n_rows and len(node) == n_rows:
-            if all(isinstance(v, (int, float, str)) and not isinstance(v, bool)
-                   for v in node):
+        if isinstance(node, list):
+            if n_rows and len(node) == n_rows and all(
+                    isinstance(v, (int, float, str)) and not isinstance(v, bool)
+                    for v in node):
                 if all(isinstance(v, int) and v in peak_set for v in node):
                     return
                 found.append([_canonical_json(v) for v in node])
+                return
+            for item in node[:MAX_CONTAINER]:
+                if isinstance(item, (list, dict)):
+                    scan(item)
             return
 
     scan(canonical)
@@ -2651,7 +2747,8 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "_added_once", "_flipped_once", "_resolve_annotation_token",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
     "probe_injection_invariance", "_elementwise",
-    "discover_kept_rows", "label_vectors", "project_observation",
+    "discover_kept_rows", "_unreadable", "_public_attributes",
+    "describe_returned", "label_vectors", "project_observation",
     "stage_decomposition", "observe_source", "observe_adapter",
     "differential_over_fixtures")
 
@@ -3615,7 +3712,8 @@ def module_capabilities() -> Tuple[str, ...]:
             "RegisteredSourcePermit", "SyntheticSourcePermit",
             "synthetic_permit", "validate_permit_for_execution",
             "binding_values", "BINDING_PLAN", "BINDING_RATIONALE",
-            "probe_injection_invariance", "FRONTEND_STUB_FUNCTIONS",
+            "probe_injection_invariance", "describe_returned",
+            "FRONTEND_STUB_FUNCTIONS",
             "STUB_VARIANTS",
             "assert_registered_provenance",
             "source_factory", "bind_source_arguments",
