@@ -99,13 +99,20 @@ CONTRACT_PATH = ("experiments/specs/"
 # `SOURCE_BUNDLE_RUN` across.
 # ─────────────────────────────────────────────────────────────────────────────
 #: Q5-E's registered constants, imported and **not modified** by this module.
+#: Since the 2026-08-14 registration PR these name the corrective bundle.
 SOURCE_BUNDLE_RUN = Q5E.SOURCE_BUNDLE_RUN
 SOURCE_BUNDLE_FOLDER_ID = Q5E.SOURCE_BUNDLE_FOLDER_ID
-#: Readable aliases for the same two values.  Reports name the original
-#: explicitly rather than leaving "the folder id" to mean whichever one the
-#: reader had in mind — the substitution this whole preflight exists to catch.
-ORIGINAL_CANONICAL_RUN = SOURCE_BUNDLE_RUN
-ORIGINAL_CANONICAL_FOLDER_ID = SOURCE_BUNDLE_FOLDER_ID
+#: The **original eleven-file producer folder**, read by the 2026-08-12 run.
+#:
+#: These used to alias the registration above, because before 2026-08-14 the
+#: registration *was* the original folder.  Aliasing them now would be wrong
+#: twice over: `run_prep()` refuses `ORIGINAL_CANONICAL_FOLDER_ID` by name, so
+#: the alias would make it refuse the folder it targets; and every report would
+#: print the same id under both "candidate" and "original", which is exactly
+#: the substitution this preflight exists to catch.  They are therefore read
+#: from Q5-E's own lineage constants, which is where that folder still lives.
+ORIGINAL_CANONICAL_RUN = Q5E.ORIGINAL_PRODUCER_RUN
+ORIGINAL_CANONICAL_FOLDER_ID = Q5E.ORIGINAL_PRODUCER_FOLDER_ID
 #: `research/ASSETS.md :: run-20260813-q5d-null-corrective`.
 CORRECTIVE_BUNDLE_RUN = ("20260813T000000_EXP-2026-009_q5d_null_artifact_"
                          "repair_corrective")
@@ -1129,10 +1136,17 @@ def _folder_identity(folder_id: str) -> Dict[str, object]:
             folder_id == CORRECTIVE_BUNDLE_FOLDER_ID,
         "target_is_original_canonical":
             folder_id == ORIGINAL_CANONICAL_FOLDER_ID,
-        "candidate_is_registered_as_canonical": False,
-        "note": ("the corrective folder is a preregistered candidate P2 "
-                 "judges; it becomes a canonical Q5-E input only through a "
-                 "separate registration PR after a combined PASS"),
+        # Derived, never asserted.  Before 2026-08-14 this was a hard `False`
+        # and saying so was the whole point; after the registration PR a hard
+        # `False` would be a false statement, and a report that keeps insisting
+        # a folder is unregistered after it was registered is worse than one
+        # that never claimed anything.  So it reads Q5-E's registration.
+        "candidate_is_registered_as_canonical":
+            CORRECTIVE_BUNDLE_FOLDER_ID == Q5E.SOURCE_BUNDLE_FOLDER_ID,
+        "note": ("the corrective folder was a preregistered candidate P2 "
+                 "judged; it became the canonical Q5-E input through the "
+                 "separate 2026-08-14 registration PR, after the combined "
+                 "PASS and the Codex result acceptance"),
     }
 
 

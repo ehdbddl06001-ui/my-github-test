@@ -499,39 +499,46 @@ def test_run_prep_accepts_only_the_corrective_candidate_folder_id():
           "and so is anything that is not the target")
 
 
-def test_the_original_canonical_registration_is_left_exactly_as_it_was():
-    """Pointing P2 at a candidate is not registering the candidate.
+def test_the_two_folders_are_never_collapsed_into_one_identity():
+    """The candidate and the original producer folder stay distinguishable.
 
-    This is the boundary the whole rerun turns on.  A corrective bundle that
-    passes P2 has been *judged*, not adopted; adoption is a separate PR after
-    a combined PASS and a Codex result acceptance.  So Q5-E's registered
-    constants must still name the original, and the digests it would need must
-    still be unregistered.
+    Before 2026-08-14 this test read the other way round: Q5-E registered the
+    original, and the candidate was a folder P2 merely judged.  The
+    registration PR moved the registration to the candidate, and the property
+    that has to survive that move is not *which* folder is registered but that
+    the two are never printed as one.  A `SOURCE_BUNDLE_FOLDER_ID` alias for
+    `ORIGINAL_CANONICAL_FOLDER_ID` would have made `run_prep()` refuse the very
+    folder it targets, and would have printed the same id under both names.
     """
-    check(Q5E.SOURCE_BUNDLE_FOLDER_ID == "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd",
-          "Q5-E still registers the original canonical folder id")
-    check(Q5E.SOURCE_BUNDLE_RUN.startswith("20260811T035108_"),
-          "and the original canonical run")
-    check(P.ORIGINAL_CANONICAL_FOLDER_ID == Q5E.SOURCE_BUNDLE_FOLDER_ID,
-          "the PREP module reads that registration rather than restating it")
+    check(Q5E.SOURCE_BUNDLE_FOLDER_ID == P.CORRECTIVE_BUNDLE_FOLDER_ID,
+          "Q5-E now registers the corrective bundle's folder id")
+    check(Q5E.SOURCE_BUNDLE_RUN == P.CORRECTIVE_BUNDLE_RUN,
+          "and the corrective run name")
     check(P.SOURCE_BUNDLE_FOLDER_ID == Q5E.SOURCE_BUNDLE_FOLDER_ID,
-          "and does not shadow it with the candidate")
-    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
-          "the five input digests are still unregistered")
-    check(Q5E.MITDB_TREE_AGGREGATE is None,
+          "the PREP module reads that registration rather than restating it")
+
+    check(P.ORIGINAL_CANONICAL_FOLDER_ID == "1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd",
+          "the original eleven-file producer folder is still named exactly")
+    check(P.ORIGINAL_CANONICAL_RUN.startswith("20260811T035108_"),
+          "with its own run name")
+    check(P.ORIGINAL_CANONICAL_FOLDER_ID != P.CORRECTIVE_BUNDLE_FOLDER_ID,
+          "and it is never the same value as the candidate")
+    check(P.ORIGINAL_CANONICAL_FOLDER_ID != Q5E.SOURCE_BUNDLE_FOLDER_ID,
+          "so the refusal-by-name cannot fire on the folder P2 targets")
+    check(P.ORIGINAL_CANONICAL_FOLDER_ID == Q5E.ORIGINAL_PRODUCER_FOLDER_ID,
+          "it is read from Q5-E's lineage constant, not restated here")
+
+    check(Q5E.registered_bundle_digests_complete()["complete"] is True,
+          "the five input digests are registered and complete")
+    check(Q5E._is_sha256(Q5E.MITDB_TREE_AGGREGATE),
           "and so is the MIT-BIH tree aggregate")
 
-    # The candidate is named in this module and nowhere in the Q5-E audit.
-    with open(Q5E.__file__, encoding="utf-8") as handle:
-        audit = handle.read()
-    check(P.CORRECTIVE_BUNDLE_FOLDER_ID not in audit,
-          "the corrective folder id appears nowhere in the Q5-E audit module")
-    check(P.CORRECTIVE_BUNDLE_RUN not in audit,
-          "and neither does the corrective run name")
-
     identity = P._folder_identity(P.P2_TARGET_FOLDER_ID)
-    check(identity["candidate_is_registered_as_canonical"] is False,
-          "and a P2 result says so in as many words")
+    check(identity["candidate_is_registered_as_canonical"] is True,
+          "a P2 result now reports the candidate as registered")
+    check(identity["target_is_corrective_candidate"] is True and
+          identity["target_is_original_canonical"] is False,
+          "and still says which of the two folders it read")
     check(identity["candidate_folder_id"] != identity[
         "original_canonical_folder_id"],
         "reporting the two folders under separate keys")
@@ -964,8 +971,8 @@ def test_p2_rejects_a_partial_registration_of_the_input_digests():
               "and the missing keys are named")
     finally:
         Q5E.SOURCE_BUNDLE_FILE_SHA256 = real
-    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
-          "and this PR registers nothing")
+    check(Q5E.registered_bundle_digests_complete()["complete"] is True,
+          "and the real registration, restored, is complete")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1015,6 +1022,11 @@ def test_p1_and_p2_verdicts_are_preserved_independently():
 
 
 def test_registration_candidates_never_apply_themselves():
+    # Snapshot rather than a fixed expectation: the property is "a run does not
+    # write into the Q5-E module", which has to hold both before and after the
+    # registration PR that eventually did write into it.
+    before = (Q5E.MITDB_TREE_AGGREGATE, dict(Q5E.SOURCE_BUNDLE_FILE_SHA256),
+              Q5E.SOURCE_BUNDLE_FOLDER_ID, Q5E.SOURCE_BUNDLE_RUN)
     with tempfile.TemporaryDirectory() as tmp:
         p1 = _passing_p1(tmp)
     p2 = P.run_p2(P.P2_TARGET_FOLDER_ID, _adapter(), TOKEN)
@@ -1026,9 +1038,9 @@ def test_registration_candidates_never_apply_themselves():
           "the observed aggregate is offered as a candidate")
     check(len(allowed["SOURCE_BUNDLE_FILE_SHA256"]["observed"]) == 5,
           "and the five input digests too")
-    check(Q5E.MITDB_TREE_AGGREGATE is None and
-          Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
-          "while the Q5-E module stays unregistered")
+    check((Q5E.MITDB_TREE_AGGREGATE, dict(Q5E.SOURCE_BUNDLE_FILE_SHA256),
+           Q5E.SOURCE_BUNDLE_FOLDER_ID, Q5E.SOURCE_BUNDLE_RUN) == before,
+          "while a run leaves every Q5-E registration constant untouched")
 
     blocked_p2 = P.run_p2(P.P2_TARGET_FOLDER_ID,
                           _adapter(superseded=True), TOKEN)
@@ -1343,18 +1355,30 @@ def test_the_notebook_targets_the_corrective_candidate_and_says_which():
           "be deleted")
 
 
-def test_registered_q5e_gates_are_still_closed():
-    """This PR registers nothing; the Q5-E stops stay exactly as they were."""
-    check(Q5E.MITDB_TREE_AGGREGATE is None, "P1 is still unregistered")
-    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {}, "P2 is still unregistered")
+def test_this_module_never_registers_anything_itself():
+    """Registration is a separate PR's job, and stays one.
+
+    P1 and P2 were registered on 2026-08-14 — by a registration PR that edited
+    `q5e_leg2_failure_mechanism_audit.py`, never by a run and never by this
+    module.  What this test pins is the boundary rather than the state: this
+    file assigns no registered value, and P3 is still untouched.
+    """
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
-          "P3 is untouched by this PR")
+          "P3 is untouched, before and after the P1/P2 registration")
     with open(P.__file__, encoding="utf-8") as handle:
         text = handle.read()
     check("MITDB_TREE_AGGREGATE =" not in text,
           "this module never assigns the registered aggregate")
     check("SOURCE_BUNDLE_FILE_SHA256 =" not in text,
           "nor the registered bundle digests")
+    check("SOURCE_MATCH_ORACLE_RECORD =" not in text,
+          "and it cannot open P3 either")
+    # The registration it reads is complete and atomic, which is the only
+    # state in which a Q5-E consumer may rely on these constants at all.
+    check(Q5E.input_identity_registration()["registered"] is True,
+          "the four Q5-E categories it imports are all registered")
+    check(Q5E.input_identity_registration()["atomic"] is True,
+          "and they moved together")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -3657,13 +3681,16 @@ def test_the_execution_approval_opens_only_what_it_names():
         "P3" not in item for item in P.EXECUTION_APPROVAL_RECORD["approved"]),
         "and nothing approved mentions P3")
 
-    # Registration is still a separate PR: the three Q5-E stops are untouched.
-    check(Q5E.MITDB_TREE_AGGREGATE is None,
-          "MITDB_TREE_AGGREGATE is still unregistered")
-    check(Q5E.SOURCE_BUNDLE_FILE_SHA256 == {},
-          "SOURCE_BUNDLE_FILE_SHA256 is still unregistered")
+    # Registration remained a separate PR.  P1 and P2 were registered there on
+    # 2026-08-14, atomically; P3 was not, and an execution approval for this
+    # preflight never touched any of them.
+    check(Q5E.input_identity_registration()["atomic"] is True,
+          "the P1/P2 registration is all-or-nothing, never half-moved")
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
           "SOURCE_MATCH_ORACLE_RECORD is still unregistered")
+    check(Q5E.source_match_equivalence_status()["status"] ==
+          Q5E.SOURCE_MATCH_EQUIVALENCE_REQUIRED,
+          "so P3 remains the one open Q5-E stop")
 
 
 def _as_source_literal_body(path: str, pure=None) -> str:

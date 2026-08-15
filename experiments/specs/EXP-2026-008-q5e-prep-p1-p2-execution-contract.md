@@ -42,24 +42,31 @@ released by the second; the second withholds two further things — overwriting
 the 20260812 stop bundle, and promoting the corrective folder to a canonical
 Q5-E input.
 
-**One run has completed (2026-08-12) and its bundle exists.**  P1 passed and
-produced the full MIT-BIH tree aggregate; P2 stopped at the directory contract.
-The bundle is committed and structurally verified — see the Decision log for
-the values, the stop and its cause.
+**Two runs have completed and both bundles exist.**
 
-This contract is **not** `MEASURED`, `PASS` or `COMPLETE`, and it does not
-become so by a run having happened.  The combined verdict is a stop, no value
-is eligible for registration, and acceptance was Codex's to give against the
-saved notebook output.
+- `20260812T123035` — P1 passed and produced the full MIT-BIH tree aggregate;
+  P2 stopped at the directory contract against the original canonical folder.
+  Codex accepted it (2026-08-12) as `BUNDLE_ACCEPTED_AS_AUTHENTIC_STOP_RECORD`,
+  with P1's aggregate `P1_OBSERVATION_ACCEPTED` /
+  `REGISTRATION_DEFERRED_UNTIL_COMBINED_PASS` and P2's stop judged
+  `P2_PRODUCER_ARTIFACT_OMISSION` rather than a stale contract.  **That stop
+  judgement is not revised by anything below.**
+- `20260814T104835` — the approved rerun against the EXP-2026-009 corrective
+  candidate.  P1 `P1_MITDB_IDENTITY_PASS`, P2
+  `P2_SOURCE_BUNDLE_IDENTITY_PASS`, combined **`PREP_P1_P2_PASS`**.  Codex
+  re-fetched the Drive bundle read-only and returned
+  `PREP_P1_P2_RESULT_ACCEPTED` and `CORRECTIVE_PROMOTION_APPROVED` on
+  2026-08-14 (Decision log, D9–D12).
 
-**Codex has now given it** (2026-08-12, see the Decision log): the bundle is
-`BUNDLE_ACCEPTED_AS_AUTHENTIC_STOP_RECORD`, P1's aggregate is
-`P1_OBSERVATION_ACCEPTED` with `REGISTRATION_DEFERRED_UNTIL_COMBINED_PASS`, and
-P2's stop is judged `P2_PRODUCER_ARTIFACT_OMISSION` rather than a stale
-contract.  An accepted run is not a passed gate: the stop stands, the
-twelve-file contract stands, and nothing here is promoted.
+The five registration items therefore moved on 2026-08-14, **in a separate
+registration PR** — not automatically, and not by the run that measured them.
 
-P3 — the source-matching differential — is **not** in scope here.
+This contract is still **not** `MEASURED`, `PASS` or `COMPLETE` as a scientific
+status: it produces asset identities, not results, and a completed run does not
+raise it.  `status` stays `approved_for_implementation`.
+
+P3 — the source-matching differential — is **not** in scope here, and it is now
+the **only** remaining Q5-E stop.
 
 # Why these two preflights exist
 
@@ -514,9 +521,21 @@ five move **together or not at all**:
 5. `research/ASSETS.md`, recording the candidate's promotion to canonical
 
 A bundle identified by one run's folder id and another run's digests is
-identified by neither, so a partial move is worse than none.  Until that PR
-merges, the corrective folder is a judged candidate and nothing more, and P3,
-M0–M4 and the Q5-E analysis proper stay sealed.
+identified by neither, so a partial move is worse than none.
+
+**That PR has now been opened** (2026-08-14, see D9–D12, revised by D13–D14).
+Atomicity is no longer only a rule in this document: the four accepted values
+are one record, `APPROVED_INPUT_IDENTITY`, from which the public constants are
+derived; `input_identity_registration()` accepts **exactly two** states by
+exact match — that record, or the recorded pre-registration one — and
+`assert_registration_is_atomic()` stops on a mixture
+(`INPUT_IDENTITY_REGISTRATION_PARTIAL`) or on a value belonging to neither
+(`INPUT_IDENTITY_UNAPPROVED_VALUE`).  The check runs before any registered byte
+is read.  Regression tests revert each category one at a time, and separately
+supply well-formed but unapproved values, and require every one to be refused.
+
+P3, M0–M4 and the Q5-E analysis proper stay sealed regardless: registration is
+an input identity, not an execution approval.
 
 # Result acceptance criteria
 
@@ -1195,3 +1214,216 @@ candidate, bundle preserved at a **new timestamp** — the 20260812 bundle is no
 overwritten.  Step 5 (Codex result acceptance) and step 6 (the registration PR,
 now carrying five items) follow only from that run's outcome.  Steps 7 and 8 —
 P3 and any Q5-E execution approval — remain sealed.
+
+## 2026-08-14 — the rerun passed; Codex accepted it; the values are registered
+
+The rerun happened (`20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity`,
+Drive folder id `1805OG3ovOf3TJU_0xmzGIR9Nz51qrn2L`) and returned
+`PREP_P1_P2_PASS`.  Codex then re-fetched the actual Drive PREP bundle
+read-only and ran the consumer verification itself, rather than reading the
+run's own self-report:
+
+```
+expected_manifest_sha256   f23d90180cbc43f5805c8c04216bfdd2f3479a6fe9af655a884cfd17b8446f9e
+manifest_anchor_source     saved_notebook_output
+
+structure_ok                        true
+manifest_digest_matches_expected    true
+manifest_anchored_externally        true
+acceptance_eligible                 true
+problems                            []
+prep_payload_sha256        4b77dbeed73124d56914e5cba99de94a370f59ba9020d908b642a85b83ed5ee7
+```
+
+This is the external anchor the *Result acceptance criteria* require, and it is
+external in the sense that section means: the digest came from the saved report
+cell of
+`notebooks/executed/quest56_q5e_prep_p1_p2_asset_identity_20260814T104835.ipynb`,
+not from the run being judged.  The PREP regression suite was also re-run on
+`main` before the verdict.
+
+    PREP_P1_P2_RESULT_ACCEPTED
+    CORRECTIVE_PROMOTION_APPROVED
+
+### D9 — the four code-side registrations, moved atomically
+
+`mit-bih/q5e_leg2_failure_mechanism_audit.py` now carries:
+
+| category | before | after |
+|---|---|---|
+| `MITDB_TREE_AGGREGATE` | `None` (`INPUT_IDENTITY_REGISTRATION_REQUIRED`) | `0b46a411c1882fc5e09e2e60c2613ca441574c78a62f84272ad3ff4a2179ade8` |
+| `SOURCE_BUNDLE_FOLDER_ID` | `1JjwBhU8BXf8lRrYPcM2UjFNdIKxE9Ghd` | `1JzRW_Xdes4Ywp4-VYVvksFFih_RQVbhH` |
+| `SOURCE_BUNDLE_RUN` | `20260811T035108_EXP-2026-007_q5d_beat_join_DS1_GATE` | `20260813T000000_EXP-2026-009_q5d_null_artifact_repair_corrective` |
+| `SOURCE_BUNDLE_FILE_SHA256` | `{}` (`SOURCE_BUNDLE_DIGEST_FREEZE_REQUIRED`) | the five digests below |
+
+```
+decision.json               d464a4059e6cad39de1018b3eaecb0b7713c9fd0839fbed94ffa4be2b2d7e8e5
+join_map.parquet            dad93d340f2ca0db30b4c8c77e13f847e612b342b1e31c47a1b411fa8fd62971
+manifest.json               4bd7b4d8bb2ce9a3461b85ecdf65761ce1ad625bd6c6adc1d39c6c12029fbb4c
+record_class_coverage.csv   e786c203ffe23c67ba7d412c64703813b5cb22ecbe7d17f53679ee94d982ccec
+unmatched_and_ambiguous.csv b6134468493b32fa5b56cfff9c35aee4d4059d6d8f321c6678a06acdf250459f
+```
+
+`SOURCE_BUNDLE_RUN` is the **corrective repair run**, not the 2026-08-14 PREP
+run that verified it.  The PREP run is a preflight over the input; it is not
+the input.
+
+The pre-registration values are kept as `ORIGINAL_PRODUCER_RUN` and
+`ORIGINAL_PRODUCER_FOLDER_ID`.  They are lineage, not a fallback: nothing reads
+them, and a bundle matching them would fail the registered digests.  Keeping
+them is also what makes the atomicity check decidable, because a folder id
+always holds *some* string and "registered" has to mean "names the corrective
+bundle" rather than "is non-empty".
+
+### D10 — corrective provenance, recorded permanently
+
+The registered bundle is a **corrective packaging-derived canonical Q5-E
+input**.  Precisely:
+
+- Eleven of its twelve files are byte-identical copies of the EXP-2026-007
+  outputs.
+- The twelfth, `negative_control_null.npz`, is **not** a file the original
+  producer wrote at execution time.  No EXP-2026-007 execution produced it.
+- It was reconstructed a day later by a separate EXP-2026-009
+  packaging-repair module, from the 100 preregistered null shards, through the
+  frozen `finalize_null_shards()` path.
+- Replicate coverage 10000/10000, zero gaps, zero overlaps.
+- The reconstructed `j_null_max` is **element-wise identical** to the vector
+  the original `null_summary.json` already carried — two independent code paths
+  of the original run agreeing.
+- No scientific rule, null value, seed, family or replicate count changed.  A
+  missing output was rebuilt deterministically; nothing was recomputed.
+
+Writing "the original EXP-2026-007 run produced a twelve-file bundle" is
+therefore **false** and is not written anywhere.  A regression test asserts
+that sentence's absence from the module and asserts that
+`SOURCE_BUNDLE_PROVENANCE['original_run_produced_twelve_files']` is `False`.
+
+### D11 — two folds, two different jobs
+
+| digest | what it identifies | where it lives |
+|---|---|---|
+| `2c98aebb797ec4f6e033ddaf95acb6b0bc66f2565d8681d3af14acbc575978ea` | the **five files Q5-E reads** — the scientific input identity | recomputed at run time by `subset_file_fold()`; recorded here and in ASSETS |
+| `4c9c9cec905efca85224c5dff080f1cae5f42a5d29322ddd7d964c668b54db7d` | the **whole twelve-file corrective bundle** — provenance and audit identity | recorded here and in ASSETS **only** |
+| `4b77dbeed73124d56914e5cba99de94a370f59ba9020d908b642a85b83ed5ee7` | the 2026-08-14 PREP run's own payload | recorded here and in ASSETS |
+| `f23d90180cbc43f5805c8c04216bfdd2f3479a6fe9af655a884cfd17b8446f9e` | that PREP bundle's manifest, frozen externally | saved notebook output; recorded here and in ASSETS |
+
+None of the four is a Q5-E runtime constant and none may become one.  Letting
+the twelve-file fold into the module would silently widen what a Q5-E run
+demands of its input: Q5-E reads five files, and the seven it does not read
+must not be able to fail its identity gate.  A regression test asserts that all
+four digests are absent from
+`mit-bih/q5e_leg2_failure_mechanism_audit.py` and present in this document.
+
+### D12 — the registration was performed by a separate PR
+
+Nothing applied automatically.  `registration_candidates.json` in the
+20260814 bundle carries `applied_automatically: false`, and the values entered
+the codebase only through this PR, on branch
+`claude/q5e-prep-p1-p2-registration`, after the acceptance above.  The PR opens
+for review and is not self-merged.
+
+Two PREP run folder ids are recorded in `research/ASSETS.md` by this PR:
+
+```
+20260814T104835_EXP-2026-008_q5e_prep_p1_p2_asset_identity   1805OG3ovOf3TJU_0xmzGIR9Nz51qrn2L
+20260812T123035_EXP-2026-008_q5e_prep_p1_p2_asset_identity   1yKw7zH4ElQFVcIx0ckFRDxNZVREQcZMU
+```
+
+The second is a **factual correction** of a "folder id not recorded" gap in the
+20260812 row.  It corrects the record of where that bundle is; it does not
+revise that run's verdict, which stays a P2 stop accepted as an authentic stop
+record.
+
+### What this entry does not do
+
+It does not run anything, authenticate, call the Drive API, mount Drive, read a
+registered artifact, create or modify a Drive folder, or re-run the PREP.  It
+does not modify `q5d_order_preserving_beat_join.py`, the twelve-file contract, a
+null value, a family, a seed, a replicate count, a gate, a threshold, a
+hypothesis, a multiplicity rule or a decision rule.  It does not edit either
+executed notebook or the unexecuted template.  It does not open P3, implement
+it, or soften its stop.  It does not raise this contract's `status`, which
+stays `approved_for_implementation`, and it does not promote Q5-E to
+`approved_for_execution`.
+
+### D13 — the same manifest-schema defect existed in the Q5-E audit module
+
+Codex's review of the registration PR found that D7's finding had been fixed in
+the PREP module only.  `mit-bih/q5e_leg2_failure_mechanism_audit.py` still read
+a flat `manifest['code_sha256']` in **two** places — the directory contract and
+the QA reproduction target — and no producer has ever written that key.
+
+This is not a future item.  Against a real bundle the flat read resolves to
+`""`, so merging the registration alone would have recorded P1/P2 as complete
+while `discover_registered_inputs()` rejected the registered corrective bundle
+with `DECISION_MISMATCH`.  A registration that cannot be used is not a
+registration.
+
+Fixed as a **schema correction**, reading what the frozen producer already
+writes.  Nothing was relaxed after seeing a result:
+
+- `manifest['code']` must be a mapping, and the digest is read from
+  `manifest['code']['sha256']`;
+- `rule_fingerprint` stays where it is, at the top level;
+- no flat-field fallback and no raw/LF alternative — a second accepted spelling
+  is how the schema drifted in the first place;
+- missing, null, wrongly typed and malformed `code` become structured problems
+  under `DECISION_MISMATCH` with the field named, never raised, and nothing in
+  the reader calls the frozen module, so no unrelated exception can be
+  relabelled as a manifest defect.
+
+The fixtures were the reason the suite could not catch it: they were
+hand-written flat dicts authored from the same belief as the code.  Every
+manifest fixture in `test_q5e_leg2_failure_mechanism_audit.py` is now produced
+by `BJ.build_manifest()`, with `code.sha256` pinned afterwards to the
+registered LF identity so a CRLF checkout cannot make the fixture impersonate
+the machine running it.  A regression test requires the flat legacy shape to
+**stop**.
+
+### D14 — "registered" now means the approved value, not merely a changed one
+
+Codex's review also found that the atomicity check accepted arbitrary
+identities.  It asked only whether a category *differed* from its
+pre-registration value, with well-formedness reduced to a non-empty string, so
+`SOURCE_BUNDLE_FOLDER_ID = "wrong-folder"` — and any syntactically valid 64-hex
+aggregate, and any five 64-hex digests under the right keys — passed as a
+complete, atomic, well-formed registration.  A check that accepts every value
+except one is not an identity check.  The tests missed it because they only
+ever reverted values to the historical ones.
+
+The four accepted values are now one record, `APPROVED_INPUT_IDENTITY`, and the
+public constants are derived from it rather than restated beside it.  Exactly
+two states are accepted, each by exact match:
+
+1. `APPROVED_INPUT_IDENTITY` — the registration this entry records;
+2. `UNREGISTERED_INPUT_IDENTITY` — this module before it.
+
+A mixture of the two is `INPUT_IDENTITY_REGISTRATION_PARTIAL`.  A value
+belonging to neither is `INPUT_IDENTITY_UNAPPROVED_VALUE`, which is reported in
+preference because it is the more specific failure.  Counterexample tests cover
+arbitrary folder and run strings, a plausible-looking unapproved folder id, an
+arbitrary aggregate, an aggregate sharing the registered `0b46a411` prefix, five
+arbitrary digests, one-of-five replaced, and the run and folder id swapped.
+
+The record is not self-certifying and no in-repository constant can be: an edit
+to it moves the target it is compared against.  What backs it is outside the
+module — this Decision log, `research/ASSETS.md`, and a regression test pinning
+all four values as literals.
+
+**Ordering corrected with it.**  `assert_registration_is_atomic()` claimed to
+stop before anything is opened, while the gates hashed the tree and folded the
+five files first.  A static registration error is decidable from the module
+alone, so the check now runs immediately after the approval check and before
+any read, in `verify_mitdb_identity()`, `verify_bundle_content_identity()`,
+`discover_registered_inputs()` and `reverify_registered_inputs()`.  A spy test
+requires zero `hash_file_set()` and zero `subset_file_fold()` calls under a
+partial or unapproved registration — and, so the test cannot pass on a module
+that reads nothing, requires the accepted registration to reach the fold.
+
+### Position in the Order
+
+Steps 5 and 6 are complete: Codex result acceptance, then the registration PR.
+Step 7 — P3 approval, implementation, execution and acceptance — is next and is
+untouched by this entry.  Step 8, a Q5-E execution approval, remains sealed
+behind step 7 and is not to be requested before it closes.
