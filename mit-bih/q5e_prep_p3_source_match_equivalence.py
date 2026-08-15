@@ -244,13 +244,15 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "178685ba9fdbe2368e07544ea51dafdc9b69d609c33ccbd5fc6204fc6ce2a969"),
+        "0413a0ef11054d758ef6c5c9c847895de1c3d09302c1a8f6c6125445bf530088"),
     "renewed_for_this_harness_because": (
-        "run 20260816T012958 reached the registered source, verified it, ran "
-        "it, and got None back; the harness now reports that as its own "
-        "finding and carries the trace that explains it.  Diagnosis only — no "
-        "fixture, rule, tolerance or verdict criterion moved.  Recorded here "
-        "rather than assumed: the renewal is in the diff the approver merges"),
+        "run 20260816T022702 showed the registered producer declining to build "
+        "a record from too few beats, so the six fixtures gained filler beats "
+        "and the harness identity moved with them.  **This renewal covers a "
+        "change to the registered fixture inputs**, not only to the harness: "
+        "the user chose it on 2026-08-16 after the trace was read, and the "
+        "spec owner should review D21.  No fixture was added, removed or "
+        "renamed, and no rule, tolerance or verdict criterion moved"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -452,6 +454,67 @@ MIN_FIXTURE_SAMPLE = 100
 TOLERANCE = Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES              # 54
 FIXTURE_FS = 360
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Filler beats (added 2026-08-16, D21).
+#
+# Run `20260816T022702` showed the registered producer running to completion and
+# returning `None` while holding one kept beat (`kp == [1000]`), having never
+# called the RR stub: it declines to build a record when too few beats survive.
+# An RR interval needs two beats, so a producer that computes one has to.  Four
+# of the six fixtures, built to isolate a single decision with as few peaks as
+# possible, keep fewer than two rows — so as they stood they could not reach
+# the comparison at all, whatever the adapter did.
+#
+# The fix is additive and identical across all six: a run of clean beats, far
+# from every decision under test and well inside the boundary, matched at
+# distance 1 by an unambiguous AAMI-N annotation.  What each fixture isolates
+# is untouched — no filler beat is within `TOLERANCE` of any decision peak or
+# annotation, so it cannot become anyone's nearest, be consumed by anyone else,
+# or change a tie.  Both sides keep the same filler rows in the same order, so
+# the filler adds identical rows to both observations and can only be a
+# difference if the two sides genuinely differ on it.
+#
+# Six of them, spaced 240 samples (a plausible interval at 360 Hz): enough that
+# an interior beat has neighbours on both sides for an RR feature, and enough
+# margin over a small minimum.  If the registered guard turns out to want more,
+# this is the one number to change — and changing it changes the fixture
+# digests, so a PASS recorded under the old ones cannot be reused.
+# ─────────────────────────────────────────────────────────────────────────────
+#: Filler symbols alternate between AAMI classes, and that is load-bearing
+#: rather than decorative.  The trace projection reads a consumed integer as
+#: either a list position or a sample rank; with filler present those two
+#: readings differ by a constant offset, so every peak has two candidate
+#: annotations and the producer's own kept row has to settle which.  A row
+#: carries its **class**, not its symbol — so six distinct N-class symbols
+#: would settle nothing.  Neighbouring filler annotations therefore carry
+#: different classes, and the first one is S so that it differs from whichever
+#: decision annotation precedes it in every fixture (those are all N or V).
+#: All six map to an AAMI class, so every filler beat is kept by both sides.
+FILLER_PEAKS: Tuple[int, ...] = (1500, 1740, 1980, 2220, 2460, 2700)
+FILLER_SYMBOLS: Tuple[str, ...] = ("A", "L", "J", "R", "a", "e")
+FILLER_ANNOTATIONS: Tuple[Tuple[int, str], ...] = tuple(
+    (peak + 1, symbol) for peak, symbol in zip(FILLER_PEAKS, FILLER_SYMBOLS))
+FILLER_NOTE = (
+    "the last six peaks of every fixture are filler: clean AAMI-N beats, "
+    "further than the tolerance from every decision peak and annotation, "
+    "present because the registered producer declines to build a record from "
+    "too few beats.  They are identical in all six fixtures and are kept by "
+    "both sides, so they carry no decision of their own")
+
+
+def _with_filler(peaks: Tuple[int, ...],
+                 annotations: Tuple[Tuple[int, str], ...]
+                 ) -> Tuple[Tuple[int, ...], Tuple[Tuple[int, str], ...]]:
+    """A fixture's own peaks and annotations, followed by the shared filler.
+
+    Appended rather than interleaved: the decision under test stays first in
+    traversal order, so a fixture that depends on the order it is traversed in
+    still depends on exactly what it did before.
+    """
+    return tuple(peaks) + tuple(FILLER_PEAKS), \
+        tuple(annotations) + tuple(FILLER_ANNOTATIONS)
+
+
 FIXTURES: Tuple[Dict[str, object], ...] = (
     {
         "name": "test_source_match_nearest_already_used_falls_through",
@@ -459,8 +522,8 @@ FIXTURES: Tuple[Dict[str, object], ...] = (
                     "is dropped.  Peak 1012's nearest is 1001, taken by peak "
                     "1000; falling through keeps it against 1042, dropping "
                     "loses the row entirely"),
-        "peaks": (1000, 1012),
-        "annotations": ((1001, "N"), (1042, "V")),
+        "peaks": _with_filler((1000, 1012), ((1001, "N"), (1042, "V")))[0],
+        "annotations": _with_filler((1000, 1012), ((1001, "N"), (1042, "V")))[1],
         "signal_length": 3000,
     },
     {
@@ -469,8 +532,8 @@ FIXTURES: Tuple[Dict[str, object], ...] = (
                     "Peak 1030 is 30 samples from both 1000 and 1060, and the "
                     "two carry different AAMI classes, so the tie rule is "
                     "visible in the kept row and not only in an index"),
-        "peaks": (1030,),
-        "annotations": ((1000, "N"), (1060, "V")),
+        "peaks": _with_filler((1030,), ((1000, "N"), (1060, "V")))[0],
+        "annotations": _with_filler((1030,), ((1000, "N"), (1060, "V")))[1],
         "signal_length": 3000,
     },
     {
@@ -482,8 +545,8 @@ FIXTURES: Tuple[Dict[str, object], ...] = (
                     "1044 keeps 1042.  Peak 1044's nearest annotation is 1042 "
                     "either way, so this fixture isolates the filter and does "
                     "not also depend on falling through"),
-        "peaks": (1000, 1044),
-        "annotations": ((1001, "+"), (1042, "N")),
+        "peaks": _with_filler((1000, 1044), ((1001, "+"), (1042, "N")))[0],
+        "annotations": _with_filler((1000, 1044), ((1001, "+"), (1042, "N")))[1],
         "signal_length": 3000,
     },
     {
@@ -492,8 +555,8 @@ FIXTURES: Tuple[Dict[str, object], ...] = (
                     "annotation.  Peak 140 matches 141 and is cut; peak 190 is "
                     "49 samples from 141 and is not cut, so releasing gives it "
                     "that row and consuming leaves it unmatched"),
-        "peaks": (140, 190),
-        "annotations": ((141, "N"), (251, "V")),
+        "peaks": _with_filler((140, 190), ((141, "N"), (251, "V")))[0],
+        "annotations": _with_filler((140, 190), ((141, "N"), (251, "V")))[1],
         "signal_length": 3000,
     },
     {
@@ -502,8 +565,8 @@ FIXTURES: Tuple[Dict[str, object], ...] = (
                     "returned them.  Listed as [1060, 1000] with peak 1030 "
                     "equidistant, list order takes 1060 and sample order takes "
                     "1000 — different AAMI classes, so the kept row shows it"),
-        "peaks": (1030,),
-        "annotations": ((1060, "V"), (1000, "N")),
+        "peaks": _with_filler((1030,), ((1060, "V"), (1000, "N")))[0],
+        "annotations": _with_filler((1030,), ((1060, "V"), (1000, "N")))[1],
         "signal_length": 3000,
     },
     {
@@ -514,8 +577,8 @@ FIXTURES: Tuple[Dict[str, object], ...] = (
                     "[1035, 1001] and sorting first gives [1001, 1035].  No "
                     "distance here is tied, so this fixture depends on the "
                     "traversal order alone"),
-        "peaks": (1035, 1001),
-        "annotations": ((1000, "N"), (1060, "V")),
+        "peaks": _with_filler((1035, 1001), ((1000, "N"), (1060, "V")))[0],
+        "annotations": _with_filler((1035, 1001), ((1000, "N"), (1060, "V")))[1],
         "signal_length": 3000,
     },
 )
@@ -1921,6 +1984,41 @@ def _removed_once(previous: object, current: object) -> List[object]:
 #: How many named locals a stop is allowed to describe.  A cap, not a filter:
 #: the names are sorted, so which ones survive does not depend on the run.
 STOP_LOCALS_LIMIT = 48
+#: How long a list inside one of those locals may be before it is described
+#: instead of shown.  A local holding one number per row is the diagnosis —
+#: `keep` and `used` are the whole answer — while a local holding a beat window
+#: is array contents wearing a local's name, and this file does not publish
+#: those.  The bound is on the value, not on which locals are read.
+STOP_LOCAL_ITEMS = 16
+
+
+def _summarise_local(value: object, depth: int = 0) -> object:
+    """A canonicalised local, with anything row-shaped left and anything
+    signal-shaped described.
+
+    The trace canonicalises locals as it goes, which already turns a numpy
+    array into a type and a length.  This is the second bound, for the case the
+    first one lets through: a list of windows is short enough to survive
+    canonicalisation and long enough, once multiplied out, to put a few
+    thousand numbers into a bundle.
+    """
+    if isinstance(value, list):
+        if len(value) > STOP_LOCAL_ITEMS or depth >= 2:
+            return {"__type__": "list", "__len__": len(value)}
+        return [_summarise_local(item, depth + 1) for item in value]
+    if isinstance(value, dict):
+        if "__map__" in value:
+            pairs = value["__map__"]
+            if len(pairs) > STOP_LOCAL_ITEMS or depth >= 2:
+                return {"__type__": "mapping", "__len__": len(pairs)}
+            return {"__map__": [[k, _summarise_local(v, depth + 1)]
+                                for k, v in pairs]}
+        if "__set__" in value:
+            members = value["__set__"]
+            if len(members) > STOP_LOCAL_ITEMS:
+                return {"__type__": "set", "__len__": len(members)}
+        return value
+    return value
 
 
 def trace_summary(trace: FrameTrace) -> Dict[str, object]:
@@ -1953,7 +2051,8 @@ def trace_summary(trace: FrameTrace) -> Dict[str, object]:
         "distinct_lines_executed": sorted(set(lines)),
         "line_sequence_tail": lines[-40:],
         "n_locals": len(names),
-        "final_locals": {name: finals[name] for name in names[:STOP_LOCALS_LIMIT]},
+        "final_locals": {name: _summarise_local(finals[name])
+                         for name in names[:STOP_LOCALS_LIMIT]},
         "final_locals_truncated": len(names) > STOP_LOCALS_LIMIT,
     }
 
@@ -2820,10 +2919,9 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object],
             for token in row["tokens"]:
                 if token not in rows[index]["tokens"]:
                     rows[index]["tokens"].append(token)
-    for index, vector in enumerate(label_vectors(canonical, len(rows),
-                                                 peak_set)):
+    for path, vector in label_vectors(canonical, len(rows), peak_set):
         for position, row in enumerate(rows):
-            row["tokens"].append([f"vector_{index}", vector[position]])
+            row["tokens"].append([f"vector_at{path}", vector[position]])
     return {"rows": rows, "channels": sorted(channels),
             "channel_sequences": {k: list(v) for k, v in sequences.items()},
             "parser": "generic",
@@ -2831,7 +2929,7 @@ def discover_kept_rows(returned: object, fixture: Mapping[str, object],
 
 
 def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
-                  ) -> List[List[str]]:
+                  ) -> List[Tuple[str, List[str]]]:
     """Flat per-row vectors a producer returned, as opaque tokens.
 
     What the values *mean* is never decoded.  They are tokens, compared only
@@ -2839,18 +2937,26 @@ def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
     in order to tell two annotations apart.  Every candidate vector is kept:
     one that turns out to be row-unique simply never matches anything and
     contributes nothing, while a class-like one generalises across fixtures.
-    """
-    found: List[List[str]] = []
 
-    def scan(node: object) -> None:
+    Each vector is returned with the **path it was found at**, and that path is
+    what names its channel.  Naming channels by the order they were discovered
+    in instead would make the same output channel a different channel from one
+    fixture to the next whenever the number of candidates changed — so a label
+    learned where a mapping was unambiguous could not settle the fixture that
+    needed it, and the run would stop as unprojectable for a reason that has
+    nothing to do with the producer.
+    """
+    found: List[Tuple[str, List[str]]] = []
+
+    def scan(node: object, path: str) -> None:
         if isinstance(node, dict):
             if "__map__" in node:
-                for _key, value in node["__map__"]:
-                    scan(value)
+                for key, value in node["__map__"]:
+                    scan(value, f"{path}.{key}")
                 return
             for key, value in node.items():
                 if not str(key).startswith("__"):
-                    scan(value)
+                    scan(value, f"{path}.{key}")
             return
         if isinstance(node, list):
             if n_rows and len(node) == n_rows and all(
@@ -2858,14 +2964,14 @@ def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
                     for v in node):
                 if all(isinstance(v, int) and v in peak_set for v in node):
                     return
-                found.append([_canonical_json(v) for v in node])
+                found.append((path, [_canonical_json(v) for v in node]))
                 return
-            for item in node[:MAX_CONTAINER]:
+            for index, item in enumerate(node[:MAX_CONTAINER]):
                 if isinstance(item, (list, dict)):
-                    scan(item)
+                    scan(item, f"{path}[{index}]")
             return
 
-    scan(canonical)
+    scan(canonical, "")
     return found
 
 
@@ -3360,7 +3466,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
     "probe_injection_invariance", "_elementwise",
     "discover_kept_rows", "_unreadable", "_public_attributes",
-    "trace_summary",
+    "trace_summary", "_summarise_local",
     "is_columnar_return", "is_incomplete_columnar_return",
     "columnar_keys_present", "project_columnar_rows", "return_schema_report",
     "_sequence_shape", "_row_width", "_numeric_rows", "_flat_tokens",

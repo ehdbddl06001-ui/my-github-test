@@ -481,6 +481,80 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D21 (2026-08-16) — the fixtures gain filler beats, because the registered
+producer will not build a record from too few of them.  A change to registered
+fixture inputs: the spec owner should review this entry.**
+
+Run `20260816T022702` answered D20's question.  The registered `build_record`
+ran 29 steps on the first fixture, matched peak 1000 to annotation 1001,
+normalised one beat window (`frontend._z` called once), dropped peak 1012 —
+whose nearest annotation was already consumed — and returned `None` from line
+50 while holding `kp == [1000]` and `used == {0}`.  It never called
+`rr_features`.  So the guard is not "no beats": it is a **minimum number of
+beats**, and it sits before the RR computation, which is what an RR interval
+needs two beats for.
+
+The consequence is about the fixture set, not the harness.  Each fixture was
+built to isolate one decision with as few peaks as possible, and by the
+adapter's own reading they keep 2, 1, 1, 0, 1 and 2 rows.  Four of the six
+cannot reach the comparison at all, whatever the adapter does.
+
+**The filler.**  Six clean beats at 1500…2700, spaced 240 samples, each matched
+at distance 1 by its own annotation, appended identically to all six fixtures.
+Every property that keeps them inert is asserted rather than asserted-to:
+
+* no filler peak is within `TOLERANCE` of any decision annotation, and no
+  filler annotation is within `TOLERANCE` of any decision peak, so a filler
+  beat can never become anyone's nearest or be consumed by anyone else;
+* each filler peak has exactly one annotation inside the tolerance, so it
+  carries no matching decision of its own;
+* each is strictly inside the boundary window, so it carries no boundary
+  decision either;
+* the filler is **appended**, so a fixture that depends on traversal order
+  still depends on exactly what it did before;
+* both sides keep all six, in order, so the filler adds identical rows to both
+  observations.
+
+The six one-decision variants are still each caught, and still each caught by a
+fixture no other variant catches — re-run as a regression rather than assumed
+(`test_each_fixture_still_isolates_its_own_decision`).
+
+**Two harness fixes the filler exposed**, both of which were latent rather than
+new:
+
+* *Filler symbols alternate AAMI classes.*  The trace projection reads a
+  consumed integer as either a list position or a sample rank, and with filler
+  present those readings differ by a constant offset — so every peak has two
+  candidate annotations and the producer's own kept row must settle which.  A
+  row carries its **class**, not its symbol, so six distinct N-class symbols
+  would settle nothing.  Neighbours therefore differ in class, and the first is
+  `S`, which differs from the decision annotation before it in every fixture.
+* *Label channels are named by path, not by discovery order.*  `vector_0`,
+  `vector_1` … made the same output channel a different channel whenever the
+  number of candidates changed between fixtures, so a label learned where a
+  mapping was unambiguous could not settle the fixture that needed it.  They
+  are now named `vector_at.y` and the like.
+* And the stop's trace summary bounds each local at `STOP_LOCAL_ITEMS = 16`:
+  `keep` and `used` are the diagnosis and stay legible, while a list of beat
+  windows is array contents wearing a local's name.  The summary went from
+  20,477 bytes to 1,853.
+
+**What did not change.**  `SOURCE_MATCH_REQUIRED_FIXTURES` — the names, the
+count, the order — the matching rule, the tolerance, the boundary, the AAMI
+map, the adapter (`85c5e259…`), the verdict criteria, and
+`SOURCE_MATCH_ORACLE_RECORD = None`.  What changed is the *inputs* of the six
+registered fixtures, and that is a spec-level change: it is recorded here, the
+execution approval was re-granted explicitly against it, and Codex should
+review it before the result of any run under these fixtures is treated as
+evidence.
+
+**Not reported, deliberately.**  The trace shows the registered source keeping
+one row on fixture 1 where the adapter keeps two — the exact behaviour that
+fixture exists to refute.  No comparison was made, so it is not a verdict, and
+it is written here only as the reason to expect the next run to be
+interesting.  Bundle `37bd7e76…` / manifest `9f596fe9…` at
+`runs/20260816T022702_…` is preserved.  Suite: 100 functions, 1,111 assertions.
+
 **D20 (2026-08-16) — the registered producer ran and returned `None`.  That is
 a finding about the source, not about the reader.**  Run `20260816T012958`
 verified the registered file (id `1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK`, digest
