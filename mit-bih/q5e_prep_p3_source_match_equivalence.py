@@ -143,6 +143,14 @@ P3_FIXTURE_CONTRACT_VIOLATION = "P3_FIXTURE_CONTRACT_VIOLATION"
 #: fix.  The 20260815T232546 run stopped here: the registered `data.py` reads
 #: `frontend.FS` at import time, and the stub declared no constants at all.
 P3_STUB_SURFACE_INCOMPLETE = "P3_STUB_SURFACE_INCOMPLETE"
+#: An injected value was shown to change the matching decisions.  A constant
+#: can be justified by arithmetic — `FS = 360` reproduces the registered
+#: tolerance — but a *function* cannot, so the neutrality of one is not
+#: asserted, it is probed: the same fixture is run again under a deliberately
+#: different implementation, and the observation must be identical.  When it is
+#: not, the injection is steering the thing it was supposed to stand out of the
+#: way of, and that is a stop rather than a verdict.
+P3_INJECTED_VALUE_STEERS_MATCHING = "P3_INJECTED_VALUE_STEERS_MATCHING"
 #: Stops that say the harness could not make the comparison.  A candidate
 #: record is never produced from one of these, and none of them may be
 #: reported as a disagreement between the adapter and the registered source.
@@ -151,7 +159,7 @@ HARNESS_STOPS: Tuple[str, ...] = (
     P3_SOURCE_UNLOADABLE, P3_SOURCE_SIGNATURE_UNBINDABLE,
     P3_SOURCE_RUNTIME_ERROR, P3_SOURCE_TRACE_UNPROJECTABLE,
     P3_KEPT_ROWS_UNOBSERVABLE, P3_FIXTURE_CONTRACT_VIOLATION,
-    P3_STUB_SURFACE_INCOMPLETE)
+    P3_STUB_SURFACE_INCOMPLETE, P3_INJECTED_VALUE_STEERS_MATCHING)
 P3_STATUSES: Tuple[str, ...] = (
     (P3_PASS, P3_EQUIVALENCE_REQUIRED) + HARNESS_STOPS)
 #: Ordered P3 gates.  The source is never imported before its identity has
@@ -542,6 +550,22 @@ def fixture_card(name: str) -> Dict[str, object]:
 #: under test, which is the one thing an injection may never do.  A regression
 #: pins the arithmetic rather than the number.
 FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS}
+#: Helper functions the registered source reaches for, beyond the two the
+#: source map names.  The 20260815T235627 run established that `build_record`
+#: calls `frontend._z` while running.
+#:
+#: A constant can be justified by arithmetic; a **function cannot**, and this
+#: PREP does not accept "it looked harmless".  So `_z` is injected as the
+#: identity — the least-interfering stand-in there is — and its neutrality is
+#: **probed on every fixture of every run**: the same fixture is observed again
+#: with `_z` replaced by an elementwise negation, and the two observations must
+#: be identical.  If a matching decision ever moved with `_z`, the run stops at
+#: `P3_INJECTED_VALUE_STEERS_MATCHING` instead of reporting a comparison the
+#: injection had a hand in.
+FRONTEND_STUB_FUNCTIONS: Tuple[str, ...] = ("_z",)
+STUB_VARIANT_PRIMARY = "identity"
+STUB_VARIANT_PROBE = "negated"
+STUB_VARIANTS: Tuple[str, ...] = (STUB_VARIANT_PRIMARY, STUB_VARIANT_PROBE)
 #: Constants the other stub modules declare.  Empty until a run shows that the
 #: registered source reads one, for the same reason: the surface is what the
 #: source demonstrably needs, never what it might plausibly want.
@@ -638,8 +662,34 @@ class _AnnotationStub(object):
         self.record_name = "SYNTHETIC"
 
 
+def _elementwise(value: object, transform):
+    """Apply `transform` to every number in a signal-shaped value.
+
+    Works on a numpy array, a list of rows or a flat list, and returns the
+    value unchanged when it is none of those — a probe that cannot perturb an
+    input reports that it could not, rather than pretending it did.
+    """
+    numpy = _numpy()
+    if numpy is not None and isinstance(value, numpy.ndarray):
+        return transform(value)
+    if isinstance(value, (list, tuple)):
+        out = []
+        for item in value:
+            if isinstance(item, (list, tuple)):
+                out.append([transform(v) for v in item])
+            elif isinstance(item, (int, float)) and not isinstance(item, bool):
+                out.append(transform(item))
+            else:
+                return value
+        return out
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        return transform(value)
+    return value
+
+
 def build_injection(fixture: Mapping[str, object],
-                    log: Optional[StubCallLog] = None
+                    log: Optional[StubCallLog] = None,
+                    variant: str = STUB_VARIANT_PRIMARY
                     ) -> Tuple[Dict[str, object], StubCallLog]:
     """The stub surface a producer may reach, and the log of what it reached.
 
@@ -719,6 +769,25 @@ def build_injection(fixture: Mapping[str, object],
         return (numpy.array(rows, dtype="float64") if numpy is not None
                 else rows)
 
+    if variant not in STUB_VARIANTS:
+        raise P3Error(
+            f"{variant!r} is not one of the declared stub variants "
+            f"{list(STUB_VARIANTS)}; a run may not invent a third injection")
+
+    def _z(value: object = None, *args: object, **kwargs: object):
+        """The declared helper stand-in, and the probe that tests it.
+
+        `identity` hands the value straight back — the least-interfering thing
+        a stand-in can do.  `negated` returns it elementwise negated, and
+        exists so a run can *demonstrate* that no matching decision moved with
+        it rather than assume so.
+        """
+        log.record("frontend._z", variant=variant, n_args=1 + len(args),
+                   kwargs=sorted(kwargs))
+        if variant == STUB_VARIANT_PROBE:
+            return _elementwise(value, lambda v: -v)
+        return value
+
     def missing_attribute(module_name: str):
         """What an injected module does when asked for an undeclared name.
 
@@ -737,6 +806,7 @@ def build_injection(fixture: Mapping[str, object],
     return ({"rdrecord": rdrecord, "rdann": rdann, "rdsamp": rdsamp,
              "dl_database": dl_database, "detect_r": detect_r,
              "rr_features": rr_features, "pwave_features": pwave_features,
+             "_z": _z, "_variant": variant,
              "_missing_attribute": missing_attribute,
              "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
                             "frontend": dict(FRONTEND_STUB_CONSTANTS),
@@ -748,7 +818,7 @@ def build_injection(fixture: Mapping[str, object],
 #: Rebound after execution as well as before, so `import wfdb` and `from
 #: .frontend import detect_r` are both covered.
 INJECTED_GLOBALS: Tuple[str, ...] = (
-    "detect_r", "rr_features", "pwave_features")
+    ("detect_r", "rr_features", "pwave_features") + FRONTEND_STUB_FUNCTIONS)
 INJECTED_MODULE_NAMES: Tuple[str, ...] = (
     "wfdb", "frontend", "pwave", REGISTERED_SOURCE_PACKAGE,
     f"{REGISTERED_SOURCE_PACKAGE}.frontend",
@@ -794,9 +864,11 @@ class InjectedModules(object):
         wfdb = self._surface("wfdb", {
             k: self.stubs[k]
             for k in ("rdrecord", "rdann", "rdsamp", "dl_database")})
-        frontend = self._surface("frontend", {
-            "detect_r": self.stubs["detect_r"],
-            "rr_features": self.stubs["rr_features"]})
+        frontend_surface = {"detect_r": self.stubs["detect_r"],
+                            "rr_features": self.stubs["rr_features"]}
+        frontend_surface.update({name: self.stubs[name]
+                                 for name in FRONTEND_STUB_FUNCTIONS})
+        frontend = self._surface("frontend", frontend_surface)
         pwave = self._surface("pwave",
                               {"pwave_features": self.stubs["pwave_features"]})
         package = self._module(REGISTERED_SOURCE_PACKAGE, {})
@@ -1264,19 +1336,23 @@ class ProducerSession(object):
     only get the producer inside a `with` block.
     """
 
-    __slots__ = ("permit", "fixture", "stubs", "log", "_injection", "_module")
+    __slots__ = ("permit", "fixture", "variant", "stubs", "log", "_injection",
+                 "_module")
 
     def __init__(self, permit: SourcePermit,
-                 fixture: Mapping[str, object]) -> None:
+                 fixture: Mapping[str, object],
+                 variant: str = STUB_VARIANT_PRIMARY) -> None:
         self.permit = permit
         self.fixture = fixture
+        self.variant = variant
         self.stubs: Dict[str, object] = {}
         self.log = StubCallLog()
         self._injection: Optional[InjectedModules] = None
         self._module: Optional[types.ModuleType] = None
 
     def __enter__(self) -> Tuple[Callable, StubCallLog]:
-        self.stubs, self.log = build_injection(self.fixture)
+        self.stubs, self.log = build_injection(self.fixture,
+                                               variant=self.variant)
         self._injection = InjectedModules(self.stubs)
         self._injection.__enter__()
         try:
@@ -1307,8 +1383,9 @@ def source_factory(permit: SourcePermit) -> Callable:
     # refused inside each.  Neither check replaces the other.
     validate_permit_for_execution(permit)
 
-    def open_producer(fixture: Mapping[str, object]) -> ProducerSession:
-        return ProducerSession(permit, fixture)
+    def open_producer(fixture: Mapping[str, object],
+                      variant: str = STUB_VARIANT_PRIMARY) -> ProducerSession:
+        return ProducerSession(permit, fixture, variant=variant)
 
     return open_producer
 
@@ -2428,6 +2505,49 @@ def observe_adapter(fixture: Mapping[str, object], dictionary: LabelDictionary,
     return observation, dict(trace.as_dict())
 
 
+def probe_injection_invariance(open_source: Callable,
+                               fixture: Mapping[str, object],
+                               observation: Mapping[str, object],
+                               dictionary: LabelDictionary
+                               ) -> Dict[str, object]:
+    """Run one fixture again under a different injected helper, and compare.
+
+    The claim being tested is narrow and important: that replacing `_z` with
+    something that behaves differently does not move a single decision this
+    PREP compares.  If it holds, the injected helper is standing out of the
+    way, and that is *shown* rather than argued.  If the probe cannot run —
+    because the producer refuses the perturbed values, say — the result is
+    reported as untested, never as passed.
+    """
+    try:
+        with open_source(fixture, STUB_VARIANT_PROBE) as (build_record, _log):
+            # The probe carries its own dictionary, accumulated across the
+            # fixtures in the same order as the primary run's.  A fresh one per
+            # fixture would leave the later fixtures with nothing to settle an
+            # ambiguous trace against, and they would report "untested" for a
+            # reason that has nothing to do with the injected helper.
+            probed, _meta = observe_source(build_record, fixture, dictionary)
+    except SourceHarnessError as error:
+        return {"status": "untested", "variant": STUB_VARIANT_PROBE,
+                "reason": f"the producer stopped under the probe: "
+                          f"{error.status}",
+                "fields": []}
+    except Exception as error:                               # noqa: BLE001
+        return {"status": "untested", "variant": STUB_VARIANT_PROBE,
+                "reason": f"the probe run raised "
+                          f"{type(error).__name__}: {error}",
+                "fields": []}
+    differing = [d["field"] for d in describe_difference(observation, probed)]
+    if differing:
+        return {"status": "violated", "variant": STUB_VARIANT_PROBE,
+                "reason": "a compared field moved with the injected helper",
+                "fields": differing}
+    return {"status": "invariant", "variant": STUB_VARIANT_PROBE,
+            "reason": ("every compared field is identical under both injected "
+                       "implementations"),
+            "fields": []}
+
+
 def differential_over_fixtures(open_source: Callable,
                                adapter: Optional[Callable] = None,
                                emit=None) -> Dict[str, object]:
@@ -2446,6 +2566,7 @@ def differential_over_fixtures(open_source: Callable,
     # than a property of how the tokens happen to be spelled.
     source_dictionary = LabelDictionary()
     adapter_dictionary = LabelDictionary()
+    probe_dictionary = LabelDictionary()
     results: List[Dict[str, object]] = []
     detail: List[Dict[str, object]] = []
     for name in fixture_names():
@@ -2456,6 +2577,21 @@ def differential_over_fixtures(open_source: Callable,
         with open_source(fixture) as (build_record, call_log):
             source_observation, source_meta = observe_source(
                 build_record, fixture, source_dictionary)
+        # Neutrality of the injected helpers is probed, not assumed: the same
+        # fixture is observed again with `_z` negated, and the decisions must
+        # not move.  A difference means the injection is steering the
+        # comparison, which is a stop rather than a result.
+        invariance = probe_injection_invariance(
+            open_source, fixture, source_observation, probe_dictionary)
+        if invariance["status"] == "violated":
+            raise SourceHarnessError(
+                P3_INJECTED_VALUE_STEERS_MATCHING,
+                f"{name}: the observation changed when an injected helper was "
+                f"replaced by a different implementation "
+                f"({STUB_VARIANT_PRIMARY} vs {STUB_VARIANT_PROBE}): "
+                f"{invariance['fields']}.  The injected value is not standing "
+                f"out of the way of the decisions this PREP compares, so the "
+                f"comparison is not made.")
         adapter_observation, adapter_meta = observe_adapter(
             fixture, adapter_dictionary, adapter)
         source_digest = observation_digest(source_observation)
@@ -2466,7 +2602,7 @@ def differential_over_fixtures(open_source: Callable,
                         "adapter_result_sha256": adapter_digest,
                         "equal": equal})
         detail.append({"name": name, "refutes": fixture["refutes"],
-                       "equal": equal,
+                       "equal": equal, "stub_invariance": invariance,
                        "source": source_observation,
                        "adapter": adapter_observation,
                        "source_meta": source_meta,
@@ -2475,7 +2611,12 @@ def differential_over_fixtures(open_source: Callable,
                        "difference": (None if equal else describe_difference(
                            source_observation, adapter_observation))})
         emit(f"fixture {name}: equal={equal}")
+    invariance_summary = {
+        entry["name"]: entry["stub_invariance"]["status"] for entry in detail}
     return {"gate": gate, "fixtures": results, "detail": detail,
+            "stub_invariance": invariance_summary,
+            "stub_invariance_probed": sorted(
+                {s for s in invariance_summary.values()}),
             "fixtures_passed": sum(1 for r in results if r["equal"]),
             "fixtures_total": len(results),
             "all_equal": all(r["equal"] for r in results),
@@ -2509,6 +2650,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "bind_source_arguments", "trace_call", "canonical_value", "growth_events",
     "_added_once", "_flipped_once", "_resolve_annotation_token",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
+    "probe_injection_invariance", "_elementwise",
     "discover_kept_rows", "label_vectors", "project_observation",
     "stage_decomposition", "observe_source", "observe_adapter",
     "differential_over_fixtures")
@@ -3316,6 +3458,8 @@ def _execute_with_permit(out_dir: str, permit: SourcePermit,
         "detail": (list(differential["detail"]) if differential else []),
         "label_dictionary": (differential.get("label_dictionary")
                              if differential else {}),
+        "stub_invariance": (differential.get("stub_invariance")
+                            if differential else {}),
         "synthetic_fixture": bool(synthetic),
         "note": (SYNTHETIC_NOTE if synthetic else
                  "the fixture inputs are synthetic by design; the producer "
@@ -3471,6 +3615,8 @@ def module_capabilities() -> Tuple[str, ...]:
             "RegisteredSourcePermit", "SyntheticSourcePermit",
             "synthetic_permit", "validate_permit_for_execution",
             "binding_values", "BINDING_PLAN", "BINDING_RATIONALE",
+            "probe_injection_invariance", "FRONTEND_STUB_FUNCTIONS",
+            "STUB_VARIANTS",
             "assert_registered_provenance",
             "source_factory", "bind_source_arguments",
             "fetch_registered_source", "oracle_harness_identity",

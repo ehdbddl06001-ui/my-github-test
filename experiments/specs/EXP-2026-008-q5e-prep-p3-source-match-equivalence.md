@@ -85,6 +85,7 @@ under synthetic dependency injection:
 | `frontend.detect_r` | the registered detector | the fixture's peaks, in the fixture's order.  **The real detector is never called.** |
 | `frontend.rr_features`, `pwave.pwave_features` | the feature producers | rows whose first column is the peak the row was built for |
 | `frontend.FS` | the registered sampling rate | `360`, so the source's own `int(0.15 * fs)` lands on the registered 54-sample tolerance the fixtures are built around |
+| `frontend._z` | the source's own helper | the identity — and **probed** every run by re-observing each fixture with it negated, so its neutrality is shown rather than assumed |
 
 The stub surface is **declared, not permissive**.  A name it does not carry is
 recorded and refused, and the run stops at `P3_STUB_SURFACE_INCOMPLETE` naming
@@ -479,6 +480,36 @@ is built and again immediately before execution.  Regression:
 `test_a_closed_guard_reaches_no_compile_exec_or_mkdir_on_the_registered_path`,
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
+
+**D15 (2026-08-15) — third attempt stopped at `frontend._z`; injected
+helpers are now probed rather than trusted.**  Run `20260815T235627` got past
+the signature and stopped while running: `build_record` calls `frontend._z`.
+That is a **function**, and the justification that worked for `FS` does not
+transfer — `FS = 360` is right because the source's own `int(0.15 * fs)` then
+lands on the registered tolerance, but no arithmetic says what a normaliser
+should be.
+
+So `_z` is injected as the identity, the least-interfering stand-in there is,
+and its neutrality is **demonstrated on every fixture of every run** instead of
+asserted: each fixture is observed a second time with `_z` replaced by an
+elementwise negation, and every compared field must be identical.  A field that
+moves stops the run at `P3_INJECTED_VALUE_STEERS_MATCHING` — because an
+injected value that can move a matching decision is not standing out of the way
+of the thing being compared, and a verdict produced through it would be partly
+the harness's own. A probe that cannot run (the producer refuses the perturbed
+values) is recorded as `untested`, never as passed, and the probe carries its
+own label dictionary accumulated in fixture order so a late fixture is not
+reported untested for a reason unrelated to `_z`.
+
+`FRONTEND_STUB_FUNCTIONS` is the declared function surface; the invariance
+summary is written into `fixture_results.json` and printed by the notebook's
+report cell. New regressions:
+`test_a_producer_that_normalises_through_the_injected_helper_is_observed`,
+`test_an_injected_helper_that_steers_the_matching_is_caught` (a producer whose
+matching branches on `_z` is caught, not reported), and
+`test_the_probe_reports_untested_rather_than_passed`.  Bundle `31f98c19…` /
+manifest `75338583…` is preserved; the adapter, the fixtures and every
+scientific rule are untouched.
 
 **D14 (2026-08-15) — second attempt stopped at
 `P3_SOURCE_SIGNATURE_UNBINDABLE`; the registered producer is handed its
