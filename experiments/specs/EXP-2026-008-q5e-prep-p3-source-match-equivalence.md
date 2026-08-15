@@ -481,6 +481,39 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D19 (2026-08-16) — a column selected row by row is still one column; the
+synthetic suite failed in Colab and passed here.**  With D17 merged and
+execution re-approved, cell 3 stopped before any registered asset was touched:
+`'rr' is not a two-dimensional numeric block`, on the *synthetic* `FAITHFUL`
+producer.  The cause is a shape the container this repo runs in cannot produce.
+A producer that selects rows by index writes `[rr_all[i] for i in keep]` — a
+**list of one-dimensional rows** rather than one two-dimensional block — and
+where numpy is installed those rows are arrays, not lists.  The width reader
+recognised a row only when it was a `list`/`tuple`, so the column read as 1-D
+and the carrier as unreadable.
+
+`_row_width()` now asks the row itself: a one-element `shape`, or `len()` for a
+`list`/`tuple`, or `len()` for anything that offers `tolist()` — which covers a
+numpy row, a stdlib `array.array` row (no `shape` at all) and a plain list
+alike.  `_sequence_dtype` and `_flat_tokens` go through the same reading, so a
+column of rows is never mistaken for a column of per-row labels.  Ragged rows
+are still not a block and are still refused rather than padded.
+
+This is the second time a difference between the two environments has cost a
+round trip, and it is worth naming: **numpy is installed where the run happens
+and absent where the tests run.**  D17 already moved array reading onto
+`shape`/`dtype`/`tolist()` for that reason; the regressions now exercise all
+three row kinds, including `array.array`, which is a real array type from the
+standard library rather than an imitation of one.  Regression:
+`test_a_column_selected_row_by_row_is_still_one_column`.
+
+The execution approval was re-recorded for the new harness digest
+`251f6e35d59a6c6949710c70990d57d3ef25c7e5b04a27e072ab4227fe3dd1d7`, with the
+reason stated in the record: the fix is inside the same observation seam and
+changes nothing the approval was about.  The renewal is in the diff the
+approver merges rather than assumed — which is the guard working, not the guard
+being worked around.
+
 **D18 (2026-08-16) — execution re-approved, bound to the harness digest.**
 The user reviewed D17, merged it, and re-granted read-only execution.  The
 approval is recorded **against `oracle_harness_sha256`

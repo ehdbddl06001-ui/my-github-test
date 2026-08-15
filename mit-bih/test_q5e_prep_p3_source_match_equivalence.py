@@ -2872,6 +2872,55 @@ def test_the_record_is_read_through_the_array_surface_not_through_numpy():
           "and none of this required numpy to be importable")
 
 
+def test_a_column_selected_row_by_row_is_still_one_column():
+    """The shape a producer writes when it selects rows by index.
+
+    `[rr_all[i] for i in keep]` is a **list of one-dimensional rows**, not one
+    two-dimensional block — and where numpy is installed those rows are arrays,
+    not lists.  Both are the same column of the same record.  A reader that
+    recognised only the block form reported a producer that plainly returned
+    rows as having returned none, which is how the Colab suite failed while
+    this suite (no numpy) passed.
+    """
+    fixture = P3.FIXTURES[0]
+    peaks = [int(p) for p in fixture["peaks"]][:2]
+    plain = _record(fixture, peaks)
+    selected = dict(plain)
+    for key in ("rr", "pw"):
+        selected[key] = [_Array(row) for row in plain[key]]
+    check(P3._sequence_shape(selected["rr"]) == (2, P3.BJ.CACHE_RR_DIM),
+          f"a list of row arrays has the shape of the block it is: "
+          f"{P3._sequence_shape(selected['rr'])}")
+    reading = P3.discover_kept_rows(selected, fixture)
+    check([row["peak_sample"] for row in reading["rows"]] == peaks,
+          "and it reads exactly as the block form does")
+    check(reading["channels"] == P3.discover_kept_rows(
+        plain, fixture)["channels"],
+          "with the same channels, including the cross-check")
+    check(P3._flat_tokens(selected["rr"], 2) == [],
+          "a column of rows is never mistaken for a column of per-row labels")
+    check(P3._flat_tokens(["N", "V"], 2) == [repr("N"), repr("V")],
+          "while a real label column still reads as tokens")
+    # And with a real array type from the standard library, which carries no
+    # `shape` at all — so the width has to come from the row itself.
+    import array as _array
+    stdlib = dict(plain)
+    stdlib["rr"] = [_array.array("d", row) for row in plain["rr"]]
+    check(P3._sequence_shape(stdlib["rr"]) == (2, P3.BJ.CACHE_RR_DIM),
+          "a row type with no shape attribute still reports its width")
+    check([row["peak_sample"] for row in
+           P3.discover_kept_rows(stdlib, fixture)["rows"]] == peaks,
+          "and reads the same rows")
+    # Rows of uneven width are not a block at all, so they are refused rather
+    # than read as though the ragged part were not there.
+    ragged = dict(plain)
+    ragged["rr"] = [_Array(plain["rr"][0]), _Array(plain["rr"][1][:3])]
+    error = _columnar_stop(ragged)
+    check(error is not None
+          and error.status == P3.P3_COLUMNAR_RETURN_UNPROJECTABLE,
+          "a ragged carrier stops instead of being padded or trimmed")
+
+
 def test_the_general_reader_would_choose_a_channel_where_this_one_refuses():
     """The mutation that shows the new reader changes an outcome.
 

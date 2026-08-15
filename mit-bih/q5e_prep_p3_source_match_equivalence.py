@@ -236,7 +236,14 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "a90d1d2a7dd272d930f64fa4657e91df3f54f8b79c9f968c6b351aa4bc5679e7"),
+        "251f6e35d59a6c6949710c70990d57d3ef25c7e5b04a27e072ab4227fe3dd1d7"),
+    "renewed_for_this_harness_because": (
+        "the row reader could not read a column selected row by row "
+        "(`[rr_all[i] for i in keep]`, whose rows are arrays where numpy is "
+        "installed), so the synthetic suite failed in Colab while passing "
+        "without numpy; the fix is inside the same observation seam and "
+        "changes nothing the approval was about.  Recorded here rather than "
+        "assumed: the renewal is in the diff the approver merges"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -2164,6 +2171,27 @@ def _as_lists(value: object) -> object:
     return value
 
 
+def _row_width(item: object) -> Optional[int]:
+    """How wide one row is, whatever kind of row it is.
+
+    A column can arrive as one two-dimensional block *or* as a list of
+    one-dimensional rows — `[rr_all[i] for i in keep]` is the second, and it is
+    what the producer writes when it selects rows by index.  Both are the same
+    record; a reader that recognised only the first would report a producer
+    that plainly returned rows as having returned none.
+    """
+    shape = getattr(item, "shape", None)
+    if isinstance(shape, tuple) and len(shape) == 1:
+        return int(shape[0])
+    if isinstance(item, (list, tuple)):
+        return len(item)
+    if isinstance(item, (str, bytes)) or isinstance(item, Mapping):
+        return None
+    if callable(getattr(item, "tolist", None)) and hasattr(item, "__len__"):
+        return len(item)                                     # type: ignore[arg-type]
+    return None
+
+
 def _sequence_shape(value: object) -> Optional[Tuple[int, ...]]:
     """`(rows[, columns])` for an array-like value, or `None`."""
     shape = getattr(value, "shape", None)
@@ -2171,9 +2199,10 @@ def _sequence_shape(value: object) -> Optional[Tuple[int, ...]]:
         return tuple(int(v) for v in shape)
     value = _as_lists(value)
     if isinstance(value, (list, tuple)):
-        inner = [len(v) for v in value if isinstance(v, (list, tuple))]
-        if value and len(inner) == len(value) and len(set(inner)) == 1:
-            return (len(value), inner[0])
+        widths = [_row_width(item) for item in value]
+        if value and all(w is not None for w in widths) \
+                and len(set(widths)) == 1:
+            return (len(value), int(widths[0]))              # type: ignore[arg-type]
         return (len(value),)
     return None
 
@@ -2188,10 +2217,11 @@ def _sequence_dtype(value: object) -> Optional[str]:
         return None
     kinds = set()
     for item in list(value)[:MAX_CONTAINER]:
-        if isinstance(item, (list, tuple)):
-            kinds.update(type(v).__name__ for v in list(item)[:8])
+        row = _as_lists(item)
+        if isinstance(row, (list, tuple)):
+            kinds.update(type(v).__name__ for v in list(row)[:8])
         else:
-            kinds.add(type(item).__name__)
+            kinds.add(type(row).__name__)
     return "/".join(sorted(kinds)[:4]) if kinds else "empty"
 
 
@@ -2236,8 +2266,9 @@ def _flat_tokens(value: object, n_rows: int) -> List[str]:
     value = _as_lists(value)
     if not isinstance(value, (list, tuple)) or len(value) != n_rows:
         return []
-    if any(isinstance(item, (list, tuple, dict)) for item in value):
-        return []
+    if any(_row_width(item) is not None or isinstance(item, Mapping)
+           for item in value):
+        return []                       # rows, not per-row tokens
     return [repr(item) for item in value]
 
 
@@ -3263,7 +3294,8 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "discover_kept_rows", "_unreadable", "_public_attributes",
     "is_columnar_return", "is_incomplete_columnar_return",
     "columnar_keys_present", "project_columnar_rows", "return_schema_report",
-    "_sequence_shape", "_numeric_rows", "_flat_tokens", "_as_lists",
+    "_sequence_shape", "_row_width", "_numeric_rows", "_flat_tokens",
+    "_as_lists", "_sequence_dtype",
     "stub_call_summary", "columnar_keys_present",
     "describe_returned", "label_vectors", "project_observation",
     "stage_decomposition", "observe_source", "observe_adapter",
