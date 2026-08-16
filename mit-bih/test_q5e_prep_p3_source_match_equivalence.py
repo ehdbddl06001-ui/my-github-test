@@ -2606,6 +2606,88 @@ def test_the_declared_surface_covers_the_compare_producer():
           "and the two columns it is declared for are registered ones")
 
 
+#: A producer that hands its compare helper the beat windows rather than the
+#: peaks, and routes its windows through two more declared helpers.  Both are
+#: what the 20260816T131241 run showed.
+WINDOW_ARGUMENT_PRODUCER = ARGUMENT_SHAPED_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS",
+    "from .frontend import (detect_r, rr_features, FS, _z, stack_ctx,\n"
+    "                       slope_channel, compare_features, beat_ctx)\n"
+    "from .pwave import pwave_features"
+).replace(
+    "    rr_all = rr_features(peaks, FS)",
+    "    windows = [_z([float(v[0]) for v in\n"
+    "                   x[int(peaks[i]) - WIN_BEFORE:"
+    "int(peaks[i]) + WIN_AFTER]])\n"
+    "               for i in keep]\n"
+    "    windows = slope_channel(stack_ctx(windows))\n"
+    "    ref_all, sim_all = compare_features(windows)\n"
+    "    ctx_all = beat_ctx(windows)\n"
+    "    pw_all = pwave_features(windows)\n"
+    "    rr_all = rr_features(peaks, FS)"
+).replace(
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}',
+    '    return {"beat": beats, "ref": [list(r) for r in ref_all],\n'
+    '            "rr": [rr_all[i] for i in keep],\n'
+    '            "sim": [list(r) for r in sim_all],\n'
+    '            "pw": [list(r) for r in pw_all],\n'
+    '            "ctx": [list(r) for r in ctx_all], "y": ys}')
+
+
+def test_a_helper_called_without_the_peaks_still_returns_aligned_rows():
+    """A column of the wrong length is a column the reader must refuse.
+
+    Run `20260816T131241` called `compare_features` with **no peak list**
+    (`given: [0]`), so a stub that answers only to peaks would have put an
+    empty column into a record whose other columns had seven rows.  The
+    windows say which rows they are: the injected signal is a ramp, so a
+    stored window's centre sample is the peak it was cut around — the same
+    declared property the beat cross-check reads.
+    """
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    peaks = [int(p) for p in P3.FIXTURES[0]["peaks"]][:3]
+    windows = [[0.0] * BJ.WIN_BEFORE + [float(p)]
+               + [0.0] * (BJ.WIN_AFTER - 1) for p in peaks]
+    with P3.InjectedModules(stubs):
+        frontend = sys.modules["frontend"]
+        ref, sim = frontend.compare_features(windows)
+        ctx = frontend.beat_ctx(windows)
+    for label, block in (("ref", ref), ("sim", sim), ("ctx", ctx)):
+        rows = [list(row) for row in block]
+        check([row[0] for row in rows] == [float(p) for p in peaks],
+              f"{label} recovers its rows from the windows: {rows}")
+    negated = [[-v for v in row] for row in windows]
+    with P3.InjectedModules(stubs):
+        ref_negated, _sim = sys.modules["frontend"].compare_features(negated)
+    check([list(row)[0] for row in ref_negated] == [float(p) for p in peaks],
+          "and a window that passed through a negating probe names the same "
+          "rows, because a sign cannot change which row is which")
+    result = differential_for(WINDOW_ARGUMENT_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer shaped this way agrees on all six fixtures")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          f"and every fixture was probed: {result['stub_invariance']}")
+
+
+def test_every_declared_helper_is_the_identity_and_is_probed():
+    """Shape-unknown helpers get the one stand-in that claims nothing."""
+    check(P3.FRONTEND_STUB_FUNCTIONS == ("_z", "stack_ctx", "slope_channel"),
+          f"the declared helpers are the three the runs found: "
+          f"{P3.FRONTEND_STUB_FUNCTIONS}")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    probe, _log = P3.build_injection(P3.FIXTURES[0],
+                                     variant=P3.STUB_VARIANT_PROBE)
+    for name in P3.FRONTEND_STUB_FUNCTIONS:
+        value = [[1.0, -2.0], [3.0, 4.0]]
+        check(stubs[name](value) == value,
+              f"{name} hands its argument straight back")
+        check(probe[name](value) == [[-1.0, 2.0], [-3.0, -4.0]],
+              f"and the probe variant of {name} negates it elementwise")
+        check(name in P3.INJECTED_GLOBALS,
+              f"{name} is part of the injected surface, so it is folded into "
+              f"the harness identity")
+
+
 def test_the_discovery_pass_reads_an_arity_back_and_keeps_going():
     """A stand-in that unpacks into nothing ends the pass one name early.
 

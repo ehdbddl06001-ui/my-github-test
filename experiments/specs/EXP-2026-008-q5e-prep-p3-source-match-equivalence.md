@@ -481,6 +481,43 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D25 (2026-08-16) — two more helpers, and the row producers now recover their
+rows from the windows.**  Run `20260816T131241` reported **two** names at once
+— `frontend.stack_ctx` and `frontend.slope_channel` — which is D24's retry
+working: before it, the second would have been hidden behind the first.
+
+Both are declared as **probed identities**.  This PREP has no registered claim
+about what either computes, and identity is the only stand-in that needs one:
+it hands the argument back, and it preserves the property the whole projection
+rests on — a window that passes through it still names its own centre sample
+under the injected ramp.  Their neutrality is demonstrated per run by the
+negation probe, exactly as `_z`'s is (D15).
+
+**The more important line in that run was `compare_features.given: [0]`.**  The
+producer called it **without the peaks**, so a stub that answers only to a peak
+list would have put an empty `ref`/`sim` into a record whose other columns had
+seven rows — and the reader would have refused it, correctly, for a reason
+created by the harness.  The row producers (`compare_features`, `beat_ctx`,
+`pwave_features`) now fall back to recovering their rows from the beat windows
+they were handed: the ramp makes `signal[i] == i`, so a stored window's centre
+sample *is* the peak it was cut around.  That is the same declared property the
+beat cross-check channel reads, not a new inference.  The identity carrier
+`rr` deliberately keeps the stricter behaviour: if it cannot see the peaks it
+produces nothing and the reader says so.
+
+Either sign is accepted when recovering a peak from a window, and the beat
+cross-check accepts a centre that has been through the transform an even
+number of times, because there is now more than one declared helper a window
+may pass through.  A sign cannot change *which* row is which — the rows still
+come from `rr` — so refusing one would manufacture a stop out of bookkeeping.
+
+Regressions: `test_a_helper_called_without_the_peaks_still_returns_aligned_
+rows` (a producer that hands its compare helper the windows, routed through
+both new helpers, agrees on all six fixtures and is probed invariant) and
+`test_every_declared_helper_is_the_identity_and_is_probed`.  Suite: 109
+functions, 1,153 assertions.  Bundle `b256e934…` / manifest `ff8868e3…` at
+`runs/20260816T131241_…` is preserved.
+
 **D24 (2026-08-16) — `frontend.compare_features` builds `ref` and `sim`, and
 the producer said how many values it returns.**  Run `20260816T125027` stopped
 on `frontend.compare_features`, and the discovery pass stopped *behind* it with

@@ -245,17 +245,16 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "f8feabc53d65ee56549b8fb8ee44ddd459edfef5f343f8f9b3b0edf7db1db1bc"),
+        "ae0b12f8365ccf6fbb3433d9d6d85670c1d0fe9cb563576aaebdaa2ac52d6487"),
     "renewed_for_this_harness_because": (
-        "run 20260816T125027 established that the registered producer reads "
-        "frontend.compare_features and unpacks it into two - the ref and sim "
-        "columns - so the injected surface declares it, with the arity the "
-        "producer itself named.  The discovery pass now reads an unpacking "
-        "arity back and keeps going, so a helper that returns a pair no "
-        "longer hides the names behind it.  Injection surface and diagnosis "
-        "only; the fixtures (as revised in D21, which the spec owner should "
-        "still review), the rule, the tolerance and the verdict criteria are "
-        "unchanged"),
+        "run 20260816T131241 reported two more helpers at once "
+        "(frontend.stack_ctx, frontend.slope_channel), which are declared as "
+        "probed identities, and showed compare_features being called without "
+        "the peaks - so the row producers now recover their rows from the "
+        "beat windows, which name their own centre under the injected ramp.  "
+        "Injection surface only; the fixtures (as revised in D21, which the "
+        "spec owner should still review), the rule, the tolerance and the "
+        "verdict criteria are unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -715,7 +714,18 @@ FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS,
 #: be identical.  If a matching decision ever moved with `_z`, the run stops at
 #: `P3_INJECTED_VALUE_STEERS_MATCHING` instead of reporting a comparison the
 #: injection had a hand in.
-FRONTEND_STUB_FUNCTIONS: Tuple[str, ...] = ("_z",)
+#: Helpers the registered producer reaches for whose *shape* this PREP has no
+#: registered claim about.  Each is injected as the identity — it hands its
+#: argument straight back — and each is probed on every fixture of every run
+#: by re-running under an elementwise negation.  `_z` came from the
+#: 20260815T235627 run; `stack_ctx` and `slope_channel` from 20260816T131241,
+#: where the discovery pass reported both at once.
+#:
+#: Identity is the only stand-in that needs no claim about what the helper
+#: computes, and it keeps the property the whole projection rests on: a window
+#: that passes through it still names its own centre sample.
+FRONTEND_STUB_FUNCTIONS: Tuple[str, ...] = ("_z", "stack_ctx",
+                                            "slope_channel")
 STUB_VARIANT_PRIMARY = "identity"
 STUB_VARIANT_PROBE = "negated"
 STUB_VARIANTS: Tuple[str, ...] = (STUB_VARIANT_PRIMARY, STUB_VARIANT_PROBE)
@@ -919,6 +929,35 @@ def build_injection(fixture: Mapping[str, object],
                 return values
         return []
 
+    def _peaks_from_windows(args: Sequence[object]) -> List[int]:
+        """Peaks recovered from a block of beat windows, or `[]`.
+
+        A producer does not have to hand a helper the peaks: the
+        20260816T131241 run showed `compare_features` being called without
+        them, and a stub that answers such a call with **no rows** puts a
+        column of a different length into the record — which the reader would
+        then, correctly, refuse.
+
+        The windows say it themselves.  The injected signal is a ramp, so
+        `signal[i] == i` and a stored window's centre sample *is* the peak it
+        was cut around; that is the same declared property the beat
+        cross-check channel reads.  Either sign is accepted because the
+        declared helpers (`_z` and the identity helpers beside it) may be
+        applied to a window more than once, and a sign cannot change which row
+        is which.
+        """
+        for argument in args:
+            rows = _numeric_rows(argument)
+            if not rows or len(rows[0]) != BJ.WIN_BEFORE + BJ.WIN_AFTER:
+                continue
+            centres = [row[BJ.WIN_BEFORE] for row in rows]
+            for sign in (1.0, -1.0):
+                values = [sign * c for c in centres]
+                if all(float(v) == int(v) and int(v) in set(peaks)
+                       for v in values):
+                    return [int(v) for v in values]
+        return []
+
     def rr_features(*args: object, **kwargs: object):
         """RR/feature producer stub.  Row `j` is `[peak_j, j, 0, 0, 0, 0, 0]`.
 
@@ -937,7 +976,7 @@ def build_injection(fixture: Mapping[str, object],
 
     def pwave_features(*args: object, **kwargs: object):
         """V10's P-wave add-on.  Same row convention, so it is observable too."""
-        given = _peak_argument(args)
+        given = _peak_argument(args) or _peaks_from_windows(args)
         log.record("pwave.pwave_features", given=list(given), n_args=len(args),
                    kwargs=sorted(kwargs))
         rows = [[float(p)] + [0.0] * 4 for p in given]
@@ -959,7 +998,7 @@ def build_injection(fixture: Mapping[str, object],
         producer: one row per peak handed in, that peak in the first column.
         The arity is not a guess — it is what the producer itself demanded.
         """
-        given = _peak_argument(args)
+        given = _peak_argument(args) or _peaks_from_windows(args)
         log.record("frontend.compare_features", given=list(given),
                    n_args=len(args), kwargs=sorted(kwargs))
         rows = [[float(p)] + [0.0] * 4 for p in given]
@@ -983,7 +1022,7 @@ def build_injection(fixture: Mapping[str, object],
         Like every injected function its neutrality is probed rather than
         asserted; a matching decision that moved with it would stop the run.
         """
-        given = _peak_argument(args)
+        given = _peak_argument(args) or _peaks_from_windows(args)
         log.record("frontend.beat_ctx", given=list(given), n_args=len(args),
                    kwargs=sorted(kwargs))
         rows = [[float(p)] + [0.0] * 4 for p in given]
@@ -996,19 +1035,28 @@ def build_injection(fixture: Mapping[str, object],
             f"{variant!r} is not one of the declared stub variants "
             f"{list(STUB_VARIANTS)}; a run may not invent a third injection")
 
-    def _z(value: object = None, *args: object, **kwargs: object):
-        """The declared helper stand-in, and the probe that tests it.
+    def _identity_helper(name: str):
+        """A declared helper stand-in, and the probe that tests it.
 
         `identity` hands the value straight back — the least-interfering thing
-        a stand-in can do.  `negated` returns it elementwise negated, and
-        exists so a run can *demonstrate* that no matching decision moved with
-        it rather than assume so.
+        a stand-in can do, and the only one that needs no claim about what the
+        helper computes.  `negated` returns it elementwise negated, and exists
+        so a run can *demonstrate* that no matching decision moved with the
+        helper rather than assume so.
+
+        Echoing the argument also preserves the one property this PREP relies
+        on: the injected signal is a ramp, so a window that passes through an
+        identity helper still names its own centre sample.
         """
-        log.record("frontend._z", variant=variant, n_args=1 + len(args),
-                   kwargs=sorted(kwargs))
-        if variant == STUB_VARIANT_PROBE:
-            return _elementwise(value, lambda v: -v)
-        return value
+        def helper(value: object = None, *args: object, **kwargs: object):
+            log.record(f"frontend.{name}", variant=variant,
+                       n_args=1 + len(args), kwargs=sorted(kwargs))
+            if variant == STUB_VARIANT_PROBE:
+                return _elementwise(value, lambda v: -v)
+            return value
+
+        helper.__name__ = name
+        return helper
 
     def missing_attribute(module_name: str):
         """What an injected module does when asked for an undeclared name.
@@ -1050,8 +1098,10 @@ def build_injection(fixture: Mapping[str, object],
              "dl_database": dl_database, "detect_r": detect_r,
              "rr_features": rr_features, "pwave_features": pwave_features,
              "beat_ctx": beat_ctx, "compare_features": compare_features,
-             "_z": _z, "_variant": variant,
+             "_variant": variant,
              "_missing_attribute": missing_attribute,
+             **{name: _identity_helper(name)
+                for name in FRONTEND_STUB_FUNCTIONS},
              "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
                             "frontend": dict(FRONTEND_STUB_CONSTANTS),
                             "pwave": dict(PWAVE_STUB_CONSTANTS)}},
@@ -2711,12 +2761,16 @@ def project_columnar_rows(returned: Mapping[str, object],
                          f"window {window}; not used")
     else:
         centres = [row[BJ.WIN_BEFORE] for row in beat_rows]
+        # Either sign: the declared helpers are the identity in the primary
+        # variant and an elementwise negation in the probe, and there is more
+        # than one of them, so a window may pass through the transform more
+        # than once.  A sign cannot change *which* row is which, and the rows
+        # still come from `rr` either way — so accepting both costs nothing
+        # and refusing one would manufacture a stop out of bookkeeping.
         expected = [sign * float(s) for s in identity]
-        # Undoing the declared transform is the whole of the arithmetic here:
-        # multiplying by the same `sign` the contract states.  Nothing measures
-        # a distance, and nothing is snapped to a closest anything.
+        expected_twice = [float(s) for s in identity]
         recovered = [c * sign for c in centres]
-        if centres == expected:
+        if centres == expected or centres == expected_twice:
             channels[f"beat[:, {BJ.WIN_BEFORE}]"] = identity
         elif all(float(v) == int(v) and int(v) in peak_set for v in recovered):
             stop(f"the beat window centres name rows "
