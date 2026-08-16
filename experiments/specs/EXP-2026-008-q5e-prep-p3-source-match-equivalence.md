@@ -481,6 +481,72 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D32 (2026-08-16) — RE-RUN UNDER THE CORRECTED HARNESS.  3 of 6 re-qualified;
+all three mismatches now qualified, including the non-AAMI one.**  Run
+`20260816T192351` (folder `1dBAwnVJVws6HnEa8z4mUfZ-bkMDCcUSE`, fold
+`eb8eb085…`, manifest `05dfeac0…`) ran all six fixtures from the first under
+harness `4127809f…` at merge commit `ee3841f`.
+
+```
+harness stop               : False
+required fixture coverage  : True
+injected-helper invariance : invariant on all six
+fixtures passed            : 3 / 6      ← re-derived, no longer carried over
+final verdict              : SOURCE_MATCH_EQUIVALENCE_REQUIRED
+```
+
+**The digest signature is the check on the fix.**  Against D29's run, exactly
+one number moved:
+
+| fixture | source digest | adapter digest |
+|---|---|---|
+| nearest_already_used_falls_through | unchanged `968c0642…` | unchanged |
+| distance_tie | unchanged `8618d216…` | unchanged |
+| **non_aami_symbol_consumes_its_match** | **`14712d08…` → `81d2a080…`** | unchanged |
+| boundary_cut | unchanged `2fe0cb57…` | unchanged |
+| annotation_order | unchanged `b0315d6b…` | unchanged |
+| peak_order_change | unchanged `3dc6bce6…` | unchanged |
+
+Only the fixture whose projection was defective moved, and every adapter
+observation is byte-identical.  A projection change that had disturbed anything
+else would have shown here.
+
+**The three qualified mismatches, as the source actually behaves.**
+
+1. **`nearest_already_used_falls_through`** — peak 1012's nearest is 1001,
+   consumed by peak 1000.  The source leaves peak 1012 **unmatched** *and*
+   leaves 1042 **unconsumed**: it drops the peak rather than falling through,
+   and does not take the annotation either.  The adapter matches 1012 to 1042
+   and keeps the row.
+
+2. **`non_aami_symbol_consumes_its_match`** *(now qualified)* — the source
+   never sees `'+'`: it is filtered out before matching, so peak 1000's nearest
+   candidate is 1042 (`'N'`, 42 samples away, inside the tolerance) and it
+   takes it; peak 1044 then finds its own nearest already consumed and is
+   dropped.  `'+'` is reported **unmatched**, which is what a filtered-out
+   annotation looks like.  The adapter consumes `'+'` at peak 1000, drops that
+   row at the AAMI stage, and gives 1042 to peak 1044.  Same number of kept
+   rows, different row, and a different annotation consumed.
+
+3. **`annotation_order_differing_from_sample_order`** — with 1060 listed first
+   and peak 1030 equidistant from both, the source takes **1060** (`'V'`): it
+   traverses in the reader's list order.  The adapter takes 1000 (`'N'`),
+   sample order.
+
+**The registered rule, now determined on all three points** — recorded as the
+input to an adapter correction, not applied to one here: filter to
+AAMI-mapped annotations first; for each peak in detector order take the nearest
+remaining candidate by absolute sample distance with ties going to the lower
+position in that filtered list; if the nearest is beyond the tolerance, or is
+already consumed, drop the peak and consume nothing; then apply the boundary
+cut.
+
+**What follows.**  `SOURCE_MATCH_ORACLE_RECORD` stays `None` — a disagreement
+yields no candidate record and the registered gate rejected the structure.  No
+adapter was touched by this run or by this entry.  The correction is a separate
+PR designed from this bundle, and after it the six fixtures run again from the
+first under a new harness digest and a fresh approval.
+
 **D31 (2026-08-16) — `P3_IMPLEMENTATION_ACCEPTED`; execution re-enabled for
 harness `4127809f…` at merge commit `ee3841f`.**  Codex accepted the corrected
 projection — `annotation_index_spaces()` and the filtered-position to
