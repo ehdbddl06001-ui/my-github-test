@@ -481,6 +481,60 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D29 (2026-08-16) — THE DIFFERENTIAL COMPLETED.  Verdict:
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3 of 6 fixtures equal.**  Run
+`20260816T161639` ran all six registered fixtures against the digest-verified
+registered `data.py` and produced a result rather than a stop.
+
+```
+harness stop                : False
+required fixture coverage   : True
+injected-helper invariance  : invariant on all six
+fixtures passed             : 3 / 6
+final verdict               : SOURCE_MATCH_EQUIVALENCE_REQUIRED
+```
+
+| fixture | equal | the decision it pins |
+|---|---|---|
+| nearest_already_used_falls_through | **False** | a peak whose nearest annotation is already consumed |
+| distance_tie_goes_to_the_earlier_annotation | True | |
+| non_aami_symbol_consumes_its_match | **False** | whether a non-AAMI annotation is filtered before matching or consumed then dropped |
+| boundary_cut_consumes_its_match | True | |
+| annotation_order_differing_from_sample_order | **False** | list order vs sample order |
+| peak_order_change_is_visible | True | |
+
+Source identity verified on the run: file id
+`1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK`, provider and observed SHA-256 both
+`20cde66b…`, scope `drive.readonly`.  Adapter fingerprint `85c5e259…`, oracle
+harness `c21a5c1d…`.  Bundle fold `fa4cfe6c…` / manifest `dd637818…` at
+`runs/20260816T161639_…`.
+
+**What this means.**  The candidate adapter `Q5E.match_peaks_to_annotations()`
+was transcribed from prose, and on three of the six decisions it does not do
+what the registered source does.  That is the finding P3 exists to produce, and
+it is a finding about the **adapter**, not about the source: the source is the
+oracle here.  Two of the three were predicted from the traces of the previous
+runs (drop-vs-fall-through, list-vs-sample order); the third — the non-AAMI
+one — was not, and my own model of the source therefore remains incomplete.
+The per-fixture differences are preserved in the bundle's
+`fixture_results.json`, and the correction must be written from those, not from
+my reconstruction.
+
+**What must not follow from it.**  No adapter was changed by this run and none
+is changed here.  `SOURCE_MATCH_ORACLE_RECORD` stays `None`: this is a
+**disagreement**, so no candidate record exists to register, and the registered
+gate rejected the structure accordingly.  No real-record count was opened, no
+`detect_r()` was run, no M0–M4 aggregation, no labels, no probabilities, no
+training.  A corrected adapter is a **separate PR**, reviewed by the spec
+owner, followed by a **full re-run of all six fixtures from the first** under
+a new harness digest and a fresh execution approval.
+
+**Standing caveat.**  The fixtures were revised in D21 (filler beats) to get
+past the registered producer's minimum-beat guard.  That revision is a
+spec-level change to registered fixture inputs and the spec owner has not yet
+reviewed it.  This verdict is therefore reported **under D21**, and if D21 is
+revised the run is repeated.
+
 **D28 (2026-08-16) — the same stop again: the class-level evidence was not
 enough, and I still cannot say why.**  Run `20260816T153415` stopped exactly
 where `20260816T142848` did, on the same fixture and the same peak.  So D27's
