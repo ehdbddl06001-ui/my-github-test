@@ -241,15 +241,25 @@ NOT_APPROVED: Tuple[str, ...] = (
 #: readable from the code and not only from a spec.  Setting `granted` back to
 #: `False` restores every refusal exactly, with no other change anywhere.
 #:
-#: **Closed on 2026-08-16 at Codex's instruction.**  The projection changed —
-#: an index in the producer's own annotation list is now read in that list's
-#: space — so `oracle_harness_sha256` changed, and the approval that produced
-#: run `20260816T161639` was given for the harness that had the defect.  It is
-#: not carried over, and this PR performs no execution of any kind.  The next
-#: run is a fresh execution-enable approval followed by all six fixtures from
-#: the first.
+#: **Re-granted on 2026-08-16**, after Codex returned `P3_IMPLEMENTATION_
+#: ACCEPTED` on the corrected projection.  It names the harness digest and the
+#: merge commit it was given for, so it opens *that* oracle and no other: the
+#: previous grant was closed when the filtered-index defect was fixed, and the
+#: same rule closes this one the moment the harness moves again.
 EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
-    "granted": False,
+    "granted": True,
+    "granted_at_merge_commit": "ee3841f17ef5eea879c2a75bdf7ceaf5963348ec",
+    "reviewed": ("P3_IMPLEMENTATION_ACCEPTED (Codex, 2026-08-16, PR #162): "
+                 "annotation_index_spaces() and the filtered-position to "
+                 "original-ordinal mapping, the stop on duplicate or "
+                 "conflicting spaces, the approval closure, the harness-digest "
+                 "binding and the notebook separation"),
+    "not_yet_qualified": (
+        "the 3-of-6 count and the non-AAMI fixture's source detail from run "
+        "20260816T161639 are NOT results of this harness; they are re-derived "
+        "by the re-run this approval opens, and until then only the two "
+        "qualified mismatches (nearest-used drop, original list order) carry "
+        "the equivalence verdict"),
     "closed_on": "2026-08-16",
     # The digest this record names is the harness as it stands, so a *later*
     # change still closes the door on its own; `granted` is what a fresh
@@ -301,12 +311,16 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "recorded_in": SPEC_PATH,
 }
 APPROVAL_NOTE = (
-    "Approved (2026-08-16) by the user, for oracle harness a90d1d2a… and no "
-    "other: the 2026-08-15 approval was withdrawn when the kept-row reader "
-    "changed the harness digest, and this one is bound to the digest so the "
-    "next harness change closes the door again rather than inheriting an "
-    "approval nobody gave.  The run starts again from the first of the six "
-    "fixtures.  What is approved: **read-only** execution of P3 — "
+    "Approved (2026-08-16) by the user for oracle harness 4127809f… at merge "
+    "commit ee3841f, after Codex returned P3_IMPLEMENTATION_ACCEPTED on the "
+    "corrected projection.  It is bound to that digest, so the next harness "
+    "change closes the door again rather than inheriting an approval nobody "
+    "gave, and the run starts again from the first of the six fixtures.  "
+    "**Not results, and not to be used as any:** the 3-of-6 count and the "
+    "non-AAMI fixture's source detail from run 20260816T161639, which this "
+    "re-run re-derives; until it does, the equivalence verdict rests on the "
+    "two qualified mismatches alone.  What is approved: **read-only** "
+    "execution of P3 — "
     f"reading the registered {REGISTERED_SOURCE_NAME} by file id "
     f"{REGISTERED_SOURCE_FILE_ID} under exactly the drive.readonly scope, "
     "loading it under synthetic dependency injection, running the six "

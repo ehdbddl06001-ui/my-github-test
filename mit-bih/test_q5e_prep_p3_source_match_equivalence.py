@@ -276,13 +276,18 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     **not** cover.  `granted: False` remains an exact one-value revert.
     """
     record = P3.EXECUTION_APPROVAL_RECORD
-    check(record["granted"] is False,
-          "the committed record does not grant execution: Codex closed it "
-          "when the projection changed")
+    check(record["granted"] is True,
+          "the record grants read-only execution of the corrected harness")
+    check(record["granted_at_merge_commit"].startswith("ee3841f")
+          and "P3_IMPLEMENTATION_ACCEPTED" in str(record["reviewed"]),
+          "naming the merge commit it was given at and the review it followed")
+    check("3-of-6 count" in str(record["not_yet_qualified"])
+          and "non-AAMI" in str(record["not_yet_qualified"]),
+          "and carrying, beside the grant, what this run must NOT be used to "
+          "confirm — the numbers the previous harness reported")
     check(record["closed_on"] == "2026-08-16"
           and "filtered annotation index" in str(record["closed_because"]),
-          "and it says when it was closed and why, rather than reverting to a "
-          "state indistinguishable from never having been approved")
+          "while keeping the closure it supersedes and the reason for it")
     check(record["granted_on"] == "2026-08-16" and record["granted_by"] ==
           "user", "while keeping what was granted, when, and by whom")
     check(record["supersedes"]["withdrawn_on"] == "2026-08-16"
@@ -294,8 +299,10 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
           "the approval is for a read-only run")
     check(any("drive.readonly" in entry for entry in record["approved"]),
           "which reads the registered file under exactly drive.readonly")
-    check("NOT approved by it" in P3.APPROVAL_NOTE,
-          "the note states both halves of the boundary that was drawn")
+    check("NOT approved by it" in P3.APPROVAL_NOTE
+          and "Not results, and not to be used as any" in P3.APPROVAL_NOTE,
+          "the note states both halves of the boundary, and that the previous "
+          "harness's numbers are not results of this one")
 
 
 def test_the_approval_is_bound_to_the_harness_it_was_given_for():
@@ -2953,9 +2960,9 @@ def test_the_fixtures_and_the_adapter_are_untouched_by_the_projection_fix():
           "and the tolerance is the registered one")
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
           "SOURCE_MATCH_ORACLE_RECORD is still None")
-    check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False
-          and P3.OPEN_REGISTERED_DATA is False,
-          "and execution is closed, as this PR requires")
+    check(P3.OPEN_REGISTERED_DATA is False,
+          "and the module default still opens nothing on import: the "
+          "execution approval names a harness, the switch does not")
 
 
 def test_a_class_code_settles_what_a_symbol_never_taught():
@@ -4213,7 +4220,7 @@ def test_module_capabilities_are_all_present():
               f"and the list advertises {name}")
     card = P3.design_card()
     check(P3.REGISTERED_SOURCE_FILE_ID in card
-          and "NOT APPROVED" in card
+          and "APPROVED 2026-08-16 by user (read-only)" in card
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")
