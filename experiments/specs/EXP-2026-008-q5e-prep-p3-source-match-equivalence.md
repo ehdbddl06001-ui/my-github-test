@@ -490,7 +490,8 @@ blocker in the non-AAMI fixture's source projection.**
 |---|---|
 | `D21_ACCEPTED` | filler-beat design accepted — outside tolerance of every decision peak/annotation, one annotation per filler, inside the boundary, appended after the decisions, identical and identically ordered on both sides, and the six one-decision mutation isolations still hold |
 | `P3_BUNDLE_AUTHENTIC` | run `20260816T161639`, folder `1bMZekLtAvqPe2-9oTd4YtPy_WTCLF0EQ`, fold `fa4cfe6c…`, manifest `dd637818…` |
-| `P3_EQUIVALENCE_REQUIRED_ACCEPTED` | `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3/6 equal, harness stop False, coverage True, stub invariance 6/6 |
+| `P3_EQUIVALENCE_REQUIRED_ACCEPTED` | equivalence is **rejected** — on the strength of at least two *qualified* mismatches, `nearest_already_used_falls_through` (drop, no consumption) and `annotation_order_differing_from_sample_order` (original list order).  Two are enough; the verdict does not depend on how many more there are |
+| `D29_REPORTED_COUNT_3_OF_6_NOT_REQUALIFIED_UNTIL_RERUN` | D29 records what run `20260816T161639` reported.  **3/6 is not re-qualified here**: the count includes the non-AAMI fixture, whose source detail this change corrects, so the number is re-derived only by a re-run under the corrected projection |
 | `NON_AAMI_FIXTURE_DETAIL_UNQUALIFIED_PENDING_PROJECTION_FIX` | the non-AAMI fixture's **source detail** is not qualified until a re-run |
 | `SOURCE_MATCH_ORACLE_RECORD` | `None`, unchanged |
 | adapter | 0 changes |
@@ -529,18 +530,28 @@ run at `P3_ANNOTATION_INDEX_SPACE_UNREADABLE` rather than being chosen
 between.  Where a producer filtered nothing the space is the reader's own list
 and the readings are exactly what they were.
 
-**The local replica now reproduces the run exactly.**  With the filter added,
-`FILTERING_SOURCE_PRODUCER` gives 3/6 and the same three fixtures — which it
-did not before, and which is the first time this repo can rehearse the
-registered behaviour end to end.
+**The local replica reproduces the run — as a regression, and only as one.**
+With the filter added, `FILTERING_SOURCE_PRODUCER` reaches the same 3-of-6
+shape the run reported, which it did not before.  That is **evidence about this
+implementation**: it shows the projection now reads a filtered index the way
+the registered producer writes one.  It is a synthetic producer written in this
+repository, so it is **not a measurement of the registered source** and nothing
+about the source is promoted from it.  Only a run against the digest-verified
+`data.py` measures that.
 
 **What is qualified and what is not.**  The two settled disagreements —
 `nearest_already_used_falls_through` (source drops a peak whose nearest is
 consumed, and does not consume the annotation either) and
 `annotation_order_differing_from_sample_order` (list order, not sample order) —
-are unchanged by this fix and a regression pins them.  The top-level verdict
-rests on those two and stands.  The non-AAMI fixture's exact source behaviour
-is **not promoted** here: it is re-derived only by a re-run.
+are unchanged by this fix and a regression pins them.  **Two qualified
+mismatches are enough to reject equivalence**, and the top-level verdict rests
+on those two alone — not on the count.
+
+Everything that touches the non-AAMI fixture stays unqualified: its exact
+source behaviour, and therefore also **the 3-of-6 count itself**, since that
+number includes it.  D29 records what the run reported and remains an accurate
+record of that; it is not re-qualified by this change, and the count is
+re-derived only by a re-run under the corrected projection.
 
 Regressions (7, as specified): the filtered index resolving to ordinal 1 and
 never to 0; the mapping holding when list order is not sample order; two
