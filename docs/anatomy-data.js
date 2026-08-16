@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-14",
+ "generated": "2026-08-15",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -231,6 +231,87 @@ window.MEDKOS_ANATOMY = {
    "body": "## 층 순서 — 얕은층 → 중간층 → 깊은층\n\n도해: `docs/assets/anatomy/diag-back-layers-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0027`)\n\n| 층 | 근육 | 지배신경 | 기능 축 |\n|---|---|---|---|\n| 얕은층 ① | 등세모근 trapezius | **더부신경(XI)** (+C3·4 고유감각) | 팔이음뼈 운동 |\n| 얕은층 ① | 넓은등근 latissimus dorsi | 가슴등신경 C6–8 | 어깨 폄·모음·안쪽돌림 |\n| 얕은층 ② | 어깨올림근·작은/큰마름근 | 등쪽어깨신경 C5 | 어깨뼈 올림·뒤당김 |\n| 중간층 | 위뒤톱니근 serratus post. superior | 갈비사이신경 | 갈비뼈 올림(들숨) |\n| 중간층 | 아래뒤톱니근 serratus post. inferior | 갈비사이신경 | 갈비뼈 내림(날숨) |\n| 깊은층 | 척주세움근(엉덩갈비-가장긴-가시) | **척수신경 뒤가지** | 척주 폄 |\n| 깊은층 | 가로돌기가시근육(반가시-뭇갈래-돌림) | **뒤가지** | 분절 돌림·안정화 |\n\n## 왜 이런 규칙인가 (외우지 말고 이해)\n\n얕은·중간층은 배아기에 **팔이음뼈·갈비 쪽에서 등으로 이주해 온** 근육이라 원래 살던\n동네의 신경(척수신경 **앞가지**)을 그대로 데리고 왔다. 깊은층만 처음부터 등에서\n만들어진 **고유등근육**이라 **뒤가지** 지배를 받는다. 그래서 태깅에서 신경을 물으면\n\"이 근육이 몇 층이냐\"를 먼저 판단하면 된다.\n\n예외는 **등세모근** 하나 — 얕은층이지만 운동지배가 더부신경(XI)이다(목빗근과 한 짝으로\n인두굽이 유래). C3·4는 고유감각만 보낸다.\n\n## 척주세움근 3기둥 — 가쪽에서 안쪽으로\n\n```\n가쪽 ──────────────────────────── 안쪽\n엉덩갈비근      가장긴근        가시근\niliocostalis    longissimus     spinalis\n(갈비뼈각)      (가로돌기·꼭지)  (가시돌기)\n```\n\n그 아래 더 깊은 층이 가로돌기가시근육: **반가시근**(4–6분절 건너뜀) → **뭇갈래근**\n(2–4분절, 허리에서 최대) → **돌림근**(1–2분절, 가슴에서 발달). 건너뛰는 분절 수가\n줄수록 깊다.\n\n## 임상 삼각 (도해에 노란 점선)\n\n- **청진삼각** triangle of auscultation — 등세모근 가쪽모서리 · 넓은등근 위모서리 ·\n  큰마름근(또는 어깨뼈 안쪽모서리). 근육이 얇아 허파 청진이 잘 된다.\n- **허리삼각(Petit)** lumbar triangle — 엉덩뼈능선 · 넓은등근 앞모서리 · 배바깥빗근\n  뒤모서리. 허리탈장 호발 부위."
   },
   {
+   "id": "anatomy-2026-0035",
+   "title": "피부·근막 층과 피부벗기기 절개선",
+   "region": "multi",
+   "subregion": "skin-and-fascia",
+   "layer": "superficial-fascia",
+   "conceptStyle": "layer-order",
+   "relations": [
+    "covers",
+    "passes-through"
+   ],
+   "structureClasses": [
+    "fascia",
+    "nerve",
+    "vein"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "medium",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-skin-fascia-layers-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p"
+    }
+   ],
+   "body": "## 층 순서 — 겉에서 속으로\n\n도해: `docs/assets/anatomy/diag-skin-fascia-layers-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0038`·`anatomy-2026-0039`)\n\n| 순서 | 층 | 원어 | 내용물·특징 |\n|---|---|---|---|\n| 1 | 표피 | epidermis | 혈관 없음 |\n| 2 | 진피 | dermis | 질기다 — 피부판을 잡는 층. **절개는 여기까지** |\n| 3 | 얕은근막 | superficial fascia (피부밑조직) | 지방 + **피부신경 · 얕은정맥 · 림프관** |\n| 4 | 깊은근막 | deep fascia | 부위마다 이름이 다르다(아래) |\n| 5 | 근육 | muscle | 2회차부터 |\n\n## 깊은근막의 부위별 이름\n\n| 부위 | 깊은근막 | 특징 |\n|---|---|---|\n| 등 | 등허리근막 thoracolumbar fascia | 고유등근육을 감싼다 |\n| 넓적다리 | 넓은근막 fascia lata | **두렁정맥구멍**이 뚫려 있다 |\n| 종아리 | 종아리근막 crural fascia | 작은두렁정맥이 여기를 뚫고 들어간다 |\n\n## 절개선\n\n| 부위 | 절개선 | 뼈 지표 |\n|---|---|---|\n| 등 | 뒤정중선 세로절개 | C7 가시돌기 → 엉치뼈 |\n| 등 위 | 봉우리쪽 가로절개 | C7 → 어깨봉우리 |\n| 등 아래 | 엉덩뼈능선 가로절개 | 엉덩뼈능선 |\n| 볼기 | 볼기주름 가로절개 | 볼기주름 |\n| 다리 뒤 | 넓적다리 뒤 세로절개 + 오금·발목 가로절개 | 오금·발목 |\n\n피부판은 정중선에서 **가쪽으로** 젖히고, 얕은근막은 몸쪽에 남긴다.\n\n## 왜 얕은근막을 남기나\n\n얕은근막 안에 **피부신경과 얕은정맥**이 들어 있다. 이 층을 통째로 벗기면\n2회차 이후 관찰할 표본이 사라지고, 되돌릴 수 없다. 깊은근막을 뚫고 나오는\n**관통점**이 \"이 신경이 어디서 나왔나\"를 묻는 태깅 자리다.\n\n## 같은 순서가 임상이 된다\n\n허리천자 바늘: 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실)\n→ 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간. 자세한 근거는 `anatomy-2026-0034` §5."
+  },
+  {
+   "id": "anatomy-2026-0036",
+   "title": "척수신경 앞가지·뒤가지와 등·볼기 피부신경",
+   "region": "back",
+   "subregion": "posterior-cutaneous",
+   "layer": "superficial-fascia",
+   "conceptStyle": "branch-tree",
+   "relations": [
+    "branches-from",
+    "passes-through"
+   ],
+   "structureClasses": [
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "medium",
+   "classificationConfidence": null,
+   "tree": [
+    {
+     "척수신경 spinal n.": [
+      {
+       "뒤가지 posterior ramus": [
+        "안쪽가지 medial branch (T1–T6에서 피부까지)",
+        "가쪽가지 lateral branch (T7–T12에서 피부까지)",
+        "위볼기피부신경 superior cluneal n. (L1–L3)",
+        "중간볼기피부신경 middle cluneal n. (S1–S3)",
+        "큰뒤통수신경 greater occipital n. (C2)"
+       ]
+      },
+      {
+       "앞가지 anterior ramus": [
+        "목·팔·허리엉치 신경얼기",
+        "갈비사이신경 intercostal n.",
+        "뒤넙다리피부신경 → 아래볼기피부신경 inferior cluneal n."
+       ]
+      }
+     ]
+    }
+   ],
+   "image": "assets/anatomy/diag-dorsal-rami-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차 응용과제 3 — 척수신경 앞가지·뒤가지 차이"
+    }
+   ],
+   "body": "## 갈라지는 순서\n\n도해: `docs/assets/anatomy/diag-dorsal-rami-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0040`)\n\n```\n척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐\n      └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합)\n                                        ├─ 뒤가지  (가늘다, 얼기 없음)\n                                        └─ 앞가지  (굵다, 얼기 만듦)\n```\n\n## 한눈 비교\n\n| 축 | 뒤가지 posterior ramus | 앞가지 anterior ramus |\n|---|---|---|\n| 운동 | 고유등근육(깊은층)**만** | 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 |\n| 피부 | 등 정중부 세로 띠 + 위·중간볼기 | 몸통 앞·가쪽, 사지 전부, 아래볼기 |\n| 신경얼기 | 만들지 않는다(분절 유지) | 목·팔·허리엉치 얼기 |\n| 굵기 | 가늘다 | 굵다 |\n| 예외 | C1 뒤가지(뒤통수밑신경) = **순수 운동** · C2 뒤가지 = 큰뒤통수신경 | 등세모근은 **더부신경(XI)** 지배 |\n\n## 뒤가지의 피부가지 — 높이에 따라 갈린다\n\n- T1–T6: **안쪽가지**가 피부까지 간다.\n- T7–T12: **가쪽가지**가 피부까지 간다.\n- 둘 다 고유등근육에 운동가지를 준다.\n\n## 볼기 피부신경 3형제\n\n| 신경 | 원어 | 유래 |\n|---|---|---|\n| 위볼기피부신경 | superior cluneal n. | L1–L3 **뒤가지** (엉덩뼈능선을 넘는다) |\n| 중간볼기피부신경 | middle cluneal n. | S1–S3 **뒤가지** |\n| 아래볼기피부신경 | inferior cluneal n. | 뒤넙다리피부신경의 가지 = **앞가지(S1–S3)** |\n\n외우는 법: **위·중간 = 뒤가지 / 아래 = 앞가지.**\n\n## 실습에서\n\n등 피부를 벗기면 정중선 가까이에서 얕은근막을 뚫고 나오는 신경이 보인다 —\n대부분 뒤가지의 피부가지다. 가쪽으로 갈수록 앞가지(갈비사이신경) 영역이 된다."
+  },
+  {
    "id": "anatomy-2026-0030",
    "title": "큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지",
    "region": "lower-limb",
@@ -261,6 +342,57 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "body": "## 기준은 궁둥구멍근 하나\n\n도해: `docs/assets/anatomy/diag-gluteal-foramina-labeled.svg` (퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0028`)\n\n궁둥구멍근 piriformis 이 큰궁둥구멍을 가로지르며 위·아래로 나눈다. 볼기부위 문제는\n거의 전부 \"이 구조가 궁둥구멍근 위냐 아래냐\"로 환원된다.\n\n```\n큰궁둥구멍 greater sciatic foramen\n├─ 위구멍 suprapiriform  : 위볼기동맥 · 위볼기정맥 · 위볼기신경 ← 이 셋뿐\n└─ 아래구멍 infrapiriform : 아래볼기 동맥·정맥·신경\n                            궁둥신경 (가장 가쪽, 가장 굵다)\n                            뒤넙다리피부신경\n                            음부신경 + 속음부동맥\n                              └→ 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입\n```\n\n## 혈관 분지 — 어디서 갈라지나\n\n```\n속엉덩동맥 internal iliac a.\n├─ 뒤갈래 posterior division ─→ 위볼기동맥 superior gluteal a.\n└─ 앞갈래 anterior division  ─┬→ 아래볼기동맥 inferior gluteal a.\n                              └→ 속음부동맥 internal pudendal a.\n```\n\n외우는 법: **위는 뒤갈래, 아래·음부는 앞갈래.**\n\n## 신경 — 무엇을 지배하나\n\n| 신경 | 나오는 곳 | 지배 |\n|---|---|---|\n| 위볼기신경 superior gluteal n. | 위구멍 | 중간볼기근·작은볼기근·넙다리근막긴장근 |\n| 아래볼기신경 inferior gluteal n. | 아래구멍 | 큰볼기근 **단독** |\n| 궁둥신경 sciatic n. (L4–S3) | 아래구멍 | 햄스트링 → 다리오금에서 정강/온종아리신경 분지 |\n| 뒤넙다리피부신경 | 아래구멍 | 넓적다리 뒤 피부(감각) |\n| 음부신경 pudendal n. (S2–4) | 아래구멍 → 재진입 | 회음 |\n\n## 임상 — 태깅·구술 단골\n\n- **Trendelenburg 징후**: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서\n  **반대쪽** 골반이 처진다(보상 = 몸통을 환측으로 기울임).\n- **근육주사 안전구역**: 볼기 **위가쪽 1/4**(또는 von Hochstetter 부위) — 궁둥신경과\n  볼기신경을 피한다.\n- **궁둥신경 표면 표지**: 궁둥뼈결절과 큰돌기의 **중간점** 심부.\n- **변이**: 궁둥신경이 궁둥구멍근을 뚫고 지나는 변이가 흔하며, 궁둥구멍근증후군의\n  해부학적 근거가 된다."
+  },
+  {
+   "id": "anatomy-2026-0037",
+   "title": "다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경",
+   "region": "lower-limb",
+   "subregion": "superficial-veins",
+   "layer": "superficial-fascia",
+   "conceptStyle": "course-tracing",
+   "relations": [
+    "begins-from",
+    "ends-at",
+    "passes-through"
+   ],
+   "structureClasses": [
+    "vein",
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "medium",
+   "classificationConfidence": null,
+   "tree": [
+    {
+     "발등정맥활 dorsal venous arch": [
+      {
+       "큰두렁정맥 great saphenous v.": [
+        "안쪽복사 앞 → 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽",
+        "두렁정맥구멍 saphenous opening → 넙다리정맥 femoral v.",
+        "지류 - 얕은배벽정맥 · 얕은엉덩휘돌이정맥 · 바깥음부정맥 · 덧두렁정맥",
+        "동반 - 두렁신경 saphenous n. (넙다리신경 가지)"
+       ]
+      },
+      {
+       "작은두렁정맥 small saphenous v.": [
+        "가쪽복사 뒤 → 종아리 뒤 정중선",
+        "종아리근막을 뚫고 → 오금정맥 popliteal v.",
+        "동반 - 장딴지신경 sural n. (정강신경 + 온종아리신경 교통가지)"
+       ]
+      }
+     ]
+    }
+   ],
+   "image": "assets/anatomy/diag-saphenous-veins-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차 — 다리 피부벗기기(실습지침 307p·311p) · e-Anatomy Lower limb Superficial layer"
+    }
+   ],
+   "body": "## 주행\n\n도해: `docs/assets/anatomy/diag-saphenous-veins-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0042`)\n\n| | 큰두렁정맥 great saphenous v. | 작은두렁정맥 small saphenous v. |\n|---|---|---|\n| 시작 | 발등정맥활 **안쪽** 끝 | 발등정맥활 **가쪽** 끝 |\n| 복사 | 안쪽복사 **앞** | 가쪽복사 **뒤** |\n| 경로 | 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 | 아킬레스힘줄 옆 → 종아리 뒤 정중선 |\n| 끝 | 두렁정맥구멍(넓은근막) → **넙다리정맥** | 종아리근막을 뚫고 → **오금정맥** |\n| 동반 신경 | 두렁신경 saphenous n. (무릎 아래부터) | 장딴지신경 sural n. |\n\n암기: **큰-안-앞 / 작-가-뒤**\n\n## 두렁정맥구멍 직전 지류\n\n얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. ·\n바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.)\n\n## 흐름과 판막\n\n```\n얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이)\n```\n\n판막이 이 **한 방향**만 허용하고, 장딴지근이 펌프가 된다.\n판막부전 → 역류 → **정맥류 varicose veins**(큰두렁계에 흔하다).\n\n## 동반 신경의 감각 영역\n\n| 신경 | 감각 영역 | 유래 |\n|---|---|---|\n| 두렁신경 | 종아리 안쪽 · 발 안쪽 | 넙다리신경의 감각가지 |\n| 장딴지신경 | 종아리 뒤가쪽 · 발 가쪽 | 정강신경 + 온종아리신경 교통가지 |\n\n## 임상\n\n- 안쪽복사 앞 큰두렁정맥 = 응급 **정맥절개(cut-down)** 자리.\n- 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 **이식편**.\n- 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경.\n- 장딴지신경은 **신경생검**에 자주 쓴다.\n\n## 실습 주의\n\n두 정맥과 짝 신경 모두 **얕은근막 안**에 있다. 피부만 벗기면 그대로 남는다."
   },
   {
    "id": "anatomy-2026-0001",
@@ -705,6 +837,372 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0038",
+   "style": "spotter",
+   "region": "multi",
+   "subregion": "skin-and-fascia",
+   "examPhase": "tagging-1",
+   "stem": "퀴즈판 diag-skin-fascia-layers-quiz.svg 에서 1–3은 A패널의 절개선, 4–10은 B패널 단면의 층과 그 안의 구조다. 각 번호가 가리키는 것을 한·영으로 답하시오.",
+   "choices": null,
+   "answer": "1 뒤정중선 세로절개 median incision (C7 가시돌기–엉치뼈) / 2 엉덩뼈능선 가로절개 (iliac crest) / 3 볼기주름 가로절개 (gluteal fold) / 4 표피 epidermis / 5 진피 dermis / 6 얕은근막 superficial fascia (피부밑조직 subcutaneous tissue) / 7 얕은정맥 superficial v. / 8 피부신경 cutaneous n. / 9 깊은근막 deep fascia / 10 근육 muscle",
+   "explanation": "층은 겉에서 속으로 표피–진피–얕은근막–깊은근막–근육 다섯이다. 7·8이 들어 있는 6이 이 회차의 핵심: 얕은근막을 열면 그 안의 정맥과 피부신경이 함께 뜯겨 표본이 사라진다. 그래서 칼은 5까지만 넣고 6은 몸쪽에 남긴다. 9는 부위마다 이름이 달라 등은 등허리근막, 넓적다리는 넓은근막, 종아리는 종아리근막이다. 노란 원으로 표시한 관통점은 피부신경·관통정맥이 9를 뚫고 나오는 자리로, 태깅에서 이 신경이 어디서 나왔는지를 묻는 근거가 된다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-skin-fascia-layers-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0039",
+   "style": "layer-order",
+   "region": "back",
+   "subregion": "lumbar-region",
+   "examPhase": "tagging-1",
+   "stem": "같은 퀴즈판 C패널의 11–19는 허리천자 바늘이 차례로 지나는 층이다. 11부터 19까지 순서대로 이름을 한·영으로 답하시오.",
+   "choices": null,
+   "answer": "11 피부 skin / 12 얕은근막 superficial fascia / 13 가시위인대 supraspinous lig. / 14 가시사이인대 interspinous lig. / 15 황색인대 lig. flavum / 16 경막바깥공간 epidural space / 17 경질막 dura mater / 18 거미막 arachnoid / 19 거미막밑공간 subarachnoid space",
+   "explanation": "피부벗기기에서 익힌 겉에서 속으로의 층 감각이 그대로 시술이 된다. 15를 뚫을 때 느껴지는 저항 소실(loss of resistance)이 16에 들어왔다는 신호이고, 경막바깥마취는 여기서 멈춘다. 바늘을 더 밀어 17·18을 지나면 19에 닿아 뇌척수액이 나온다. 15와 16의 경계를 놓치면 목표를 지나쳐 버리므로 저항 감각이 가장 중요한 지표다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-skin-fascia-layers-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0040",
+   "style": "branch-tree",
+   "region": "back",
+   "subregion": "posterior-cutaneous",
+   "examPhase": "tagging-1",
+   "stem": "퀴즈판 diag-dorsal-rami-quiz.svg 의 1–12를 한·영으로 답하고, 8–12에 대해서는 앞가지 계열인지 뒤가지 계열인지도 함께 밝히시오.",
+   "choices": null,
+   "answer": "1 뒤뿌리 posterior root (감각, 척수신경절이 붙는다) / 2 앞뿌리 anterior root (운동) / 3 척수신경 spinal n. / 4 뒤가지 posterior ramus / 5 앞가지 anterior ramus / 6 안쪽가지 medial branch / 7 가쪽가지 lateral branch / 8 큰뒤통수신경 greater occipital n. — C2 뒤가지 계열 / 9 등 피부가지 cutaneous branches — 뒤가지 계열 / 10 위볼기피부신경 superior cluneal n. — L1–L3 뒤가지 계열 / 11 중간볼기피부신경 middle cluneal n. — S1–S3 뒤가지 계열 / 12 아래볼기피부신경 inferior cluneal n. — 뒤넙다리피부신경의 가지, 앞가지 계열",
+   "explanation": "1과 2가 합쳐진 3이 척추사이구멍을 나오자마자 4와 5로 갈린다. 4는 가늘고 신경얼기를 만들지 않으며 고유등근육에만 운동가지를 준다. 5는 굵고 얼기를 만들어 사지와 몸통 앞가쪽을 맡는데, 등 얕은층·중간층 근육도 5의 지배다. 6·7 중 피부까지 가는 쪽은 높이에 따라 갈려 T1–T6은 6, T7–T12는 7이다. 12만 색이 다른 이유는 유래가 다르기 때문으로, 볼기 피부는 위·중간이 뒤가지, 아래가 앞가지라는 대비가 시험에서 가장 자주 갈린다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-dorsal-rami-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0041",
+   "style": "distinction",
+   "region": "back",
+   "subregion": "posterior-cutaneous",
+   "examPhase": "tagging-1",
+   "stem": "척수신경 뒤가지에 대한 설명으로 옳은 것은?",
+   "choices": [
+    "A. 등 얕은층 근육의 운동을 지배한다",
+    "B. 목신경얼기·팔신경얼기를 이룬다",
+    "C. 고유등근육에 운동가지를 준다",
+    "D. 앞가지보다 굵다",
+    "E. 사지의 피부감각을 담당한다"
+   ],
+   "answer": "C",
+   "explanation": "뒤가지는 고유등근육, 즉 깊은층 등근육에만 운동가지를 준다. 등 얕은층·중간층 근육은 앞가지 지배이며 등세모근만 더부신경(XI) 지배라는 예외가 있다(A 오답). 신경얼기를 만드는 것은 앞가지이고 뒤가지는 분절 배열을 그대로 유지한다(B 오답). 굵기는 앞가지가 더 굵다(D 오답). 사지의 피부감각은 앞가지 계열이 담당하고 뒤가지는 등 정중부 세로 띠와 위·중간볼기 피부만 맡는다(E 오답).",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0042",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "superficial-veins",
+   "examPhase": "tagging-1",
+   "stem": "퀴즈판 diag-saphenous-veins-quiz.svg 의 1–10이 가리키는 구조를 한·영으로 답하고, 정맥은 어느 정맥으로 흘러 들어가는지까지 밝히시오.",
+   "choices": null,
+   "answer": "1 큰두렁정맥 great saphenous v. (→ 넙다리정맥) / 2 두렁정맥구멍 saphenous opening — 넓은근막의 구멍, 여기서 넙다리정맥 femoral v.에 합류 / 3 두렁신경 saphenous n. / 4 안쪽복사 medial malleolus / 5 관통정맥 perforating v. / 6 작은두렁정맥 small saphenous v. / 7 종아리근막(깊은근막) 관통점 — 오금정맥 popliteal v.으로 들어간다 / 8 장딴지신경 sural n. / 9 가쪽복사 lateral malleolus / 10 발등정맥활 dorsal venous arch",
+   "explanation": "10의 안쪽 끝에서 1이, 가쪽 끝에서 6이 시작한다. 1은 4의 앞을 지나 올라가 2를 통해 깊은정맥에 합류하고, 6은 9의 뒤를 지나 종아리 뒤 정중선을 따라 오르다 7에서 깊은근막을 뚫는다. 큰-안-앞, 작-가-뒤로 외운다. 5는 얕은정맥의 피를 깊은정맥으로만 보내는 짧은 연결이며 판막이 역류를 막는다. 3과 8은 각각 1과 6에 붙어 다니므로 정맥을 채취할 때 함께 다치기 쉽다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-saphenous-veins-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0043",
+   "style": "relation",
+   "region": "multi",
+   "subregion": "skin-and-fascia",
+   "examPhase": "tagging-1",
+   "stem": "등 피부를 벗길 때 칼날을 진피까지만 넣도록 하는 이유로 가장 적절한 것은?",
+   "choices": [
+    "A. 깊은근막이 손상되어 근육이 건조해지기 때문",
+    "B. 얕은근막 안의 피부신경과 얕은정맥이 함께 뜯겨 나가기 때문",
+    "C. 표피가 재생되지 않기 때문",
+    "D. 등허리근막이 두꺼워 칼날이 상하기 때문",
+    "E. 고유등근육의 이는곳이 파괴되기 때문"
+   ],
+   "answer": "B",
+   "explanation": "얕은근막 안에는 피부신경·얕은정맥·림프관이 들어 있다. 칼이 이 층까지 들어가면 관찰해야 할 신경과 정맥이 피부판에 딸려 나가 표본이 사라지고 복원되지 않는다. 깊은근막은 얕은근막보다 더 깊이 있어 이 단계에서 닿지 않으며(A), 표피는 애초에 제거 대상이고(C), 칼이 부러지는 문제와는 무관하다(D). 고유등근육의 이는곳은 깊은층 구조로 피부벗기기 단계에서 노출되지 않는다(E).",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0044",
+   "style": "course-tracing",
+   "region": "lower-limb",
+   "subregion": "superficial-veins",
+   "examPhase": "tagging-1",
+   "stem": "큰두렁정맥이 발에서 시작해 깊은정맥에 합류할 때까지의 경로를, 지나는 뼈 지표와 근막 구조를 포함해 순서대로 서술하시오.",
+   "choices": null,
+   "answer": "발등정맥활의 안쪽 끝 → 안쪽복사 앞 → 정강뼈 안쪽면을 따라 위로 → 무릎 뒤안쪽 → 넓적다리 안쪽 → 넓은근막의 두렁정맥구멍 → 넙다리정맥에 합류",
+   "explanation": "몸에서 가장 긴 정맥으로 전 구간이 얕은근막 안을 달린다. 안쪽복사 앞이라는 위치가 임상에서 중요한데, 쇼크로 말초정맥이 보이지 않을 때 이 자리를 절개해 정맥로를 확보한다. 마지막에 통과하는 두렁정맥구멍은 넓은근막에 뚫린 구멍으로 두덩결절 아래가쪽 약 4 cm에 있고, 합류 직전에 얕은배벽정맥·얕은엉덩휘돌이정맥·바깥음부정맥이 들어온다. 무릎 아래부터는 두렁신경이 나란히 달려 채취 시 손상 위험이 있다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0045",
+   "style": "course-tracing",
+   "region": "lower-limb",
+   "subregion": "superficial-veins",
+   "examPhase": "tagging-1",
+   "stem": "작은두렁정맥의 시작 부위와 끝, 그리고 도중에 무엇을 뚫고 지나가는지 순서대로 서술하시오.",
+   "choices": null,
+   "answer": "발등정맥활의 가쪽 끝 → 가쪽복사 뒤 → 아킬레스힘줄 옆을 지나 종아리 뒤 정중선 → 종아리근막(깊은근막)을 뚫는다 → 오금정맥에 합류",
+   "explanation": "큰두렁정맥이 안쪽복사 앞을 지나는 것과 짝을 이루어 가쪽복사 뒤를 지난다. 종아리 뒤 정중선을 따라 오르다 오금에서 깊은근막을 뚫고 들어가는데, 뚫는 높이는 사람마다 달라 오금정맥이 아니라 큰두렁정맥이나 넓적다리 정맥으로 들어가는 변이도 있다. 장딴지신경이 나란히 달리므로 이 정맥을 채취하거나 결찰할 때 신경 손상으로 종아리 뒤가쪽과 발 가쪽 감각이 사라질 수 있다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0046",
+   "style": "clinical-application",
+   "region": "back",
+   "subregion": "lumbar-region",
+   "examPhase": "tagging-1",
+   "stem": "성인에서 허리천자를 L3–L4 또는 L4–L5 사이에서 시행하는 해부학적 근거로 옳은 것은?",
+   "choices": [
+    "A. 그 높이에서 황색인대가 가장 얇기 때문",
+    "B. 척수가 L1–L2 높이에서 끝나 그 아래에는 말총만 있기 때문",
+    "C. 경질막주머니가 L2 높이에서 끝나기 때문",
+    "D. 엉치뿔이 그 높이에서 만져지기 때문",
+    "E. 거미막밑공간이 그 높이에서 시작하기 때문"
+   ],
+   "answer": "B",
+   "explanation": "성인의 척수는 L1–L2 높이에서 척수원뿔로 끝나고 그 아래 척주관에는 말총만 있다. 말총의 신경뿌리는 뇌척수액 안에서 바늘에 밀려나므로 손상 위험이 낮다. 체표에서는 엉덩뼈능선 최고점을 이은 선이 대략 L4 가시돌기 높이여서 이 선을 기준으로 위아래 사이를 고른다. 황색인대의 두께는 높이 선택 기준이 아니고(A), 경질막주머니는 보통 S2에서 끝나며(C), 엉치뿔은 꼬리마취의 지표다(D). 거미막밑공간은 그 위쪽에도 이어져 있다(E). 신생아·영아는 척수 끝이 L3까지 내려와 더 아래에서 찌른다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0047",
+   "style": "clinical-application",
+   "region": "pelvis-perineum",
+   "subregion": "sacrum",
+   "examPhase": "tagging-1",
+   "stem": "꼬리마취에서 바늘을 넣는 구멍과 목표 공간, 촉지 지표를 답하고, 이 마취가 거미막밑공간까지 들어가지 않는 이유를 설명하시오.",
+   "choices": null,
+   "answer": "엉치틈새 sacral hiatus로 넣어 엉치관의 경막바깥공간 epidural space에 약을 준다. 촉지 지표는 좌우 엉치뿔 sacral cornua이며, 그 사이가 삽입 지점이다. 경질막주머니가 보통 S2 높이에서 끝나므로 그보다 아래인 엉치틈새로 들어가면 거미막밑공간에 닿지 않는다.",
+   "explanation": "엉치틈새는 S5의 뒤쪽 활이 닫히지 않아 남은 구멍이다. 항문·회음·아래 골반 수술 마취, 소아 마취, 무통분만, 만성 요통의 경막바깥 스테로이드 주입에 쓴다. 허리천자와의 차이를 층으로 정리하면, 허리천자는 경질막과 거미막을 뚫고 거미막밑공간까지 들어가 뇌척수액을 얻지만 꼬리마취는 그 앞 단계인 경막바깥공간에서 멈춘다. 소아는 엉치뿔이 뚜렷해 지표를 잡기 쉬워 성인보다 자주 쓴다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0048",
+   "style": "distinction",
+   "region": "lower-limb",
+   "subregion": "gluteal-region",
+   "examPhase": "tagging-1",
+   "stem": "볼기 피부에 분포하는 다음 신경 중 유래 계열이 나머지와 다른 것은?",
+   "choices": [
+    "A. 위볼기피부신경",
+    "B. 중간볼기피부신경",
+    "C. 아래볼기피부신경",
+    "D. L2 척수신경 뒤가지의 피부가지",
+    "E. S2 척수신경 뒤가지의 피부가지"
+   ],
+   "answer": "C",
+   "explanation": "위볼기피부신경은 L1–L3 뒤가지, 중간볼기피부신경은 S1–S3 뒤가지에서 나온다. 반면 아래볼기피부신경은 뒤넙다리피부신경의 가지여서 앞가지 계열이다. D와 E는 정의상 뒤가지의 피부가지다. 위·중간은 뒤가지, 아래는 앞가지로 정리하면 되고, 뒤가지가 볼기 피부까지 내려오는 것은 위·중간 둘뿐이라는 점이 시험에서 갈리는 지점이다. 위볼기피부신경은 엉덩뼈능선을 넘어 내려오므로 능선 부위 채취나 절개에서 손상될 수 있다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0049",
+   "style": "relation",
+   "region": "multi",
+   "subregion": "skin-and-fascia",
+   "examPhase": "tagging-1",
+   "stem": "등·넓적다리·종아리의 깊은근막 이름을 각각 한·영으로 답하고, 이 중 큰두렁정맥이 통과하는 구멍이 뚫려 있는 것은 어느 것인지 밝히시오.",
+   "choices": null,
+   "answer": "등 = 등허리근막 thoracolumbar fascia / 넓적다리 = 넓은근막 fascia lata / 종아리 = 종아리근막 crural fascia. 큰두렁정맥이 지나는 두렁정맥구멍 saphenous opening은 넓은근막에 있다.",
+   "explanation": "깊은근막은 한 겹의 같은 층이지만 부위마다 이름이 다르므로 부위와 짝지어 외운다. 넓은근막에 뚫린 두렁정맥구멍은 두덩결절 아래가쪽 약 4 cm에 있고 큰두렁정맥이 여기를 통해 넙다리정맥으로 들어간다. 작은두렁정맥은 구멍을 쓰지 않고 종아리근막을 직접 뚫는다는 점이 대비된다. 등허리근막은 고유등근육을 감싸며 2회차 이후 깊은층 해부에서 다시 나온다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0050",
+   "style": "distinction",
+   "region": "lower-limb",
+   "subregion": "superficial-veins",
+   "examPhase": "tagging-1",
+   "stem": "큰두렁정맥을 안쪽복사 앞에서 채취하다가 손상되기 쉬운 신경과, 손상 시 감각이 사라지는 부위의 조합으로 옳은 것은?",
+   "choices": [
+    "A. 두렁신경 — 종아리 안쪽과 발 안쪽",
+    "B. 장딴지신경 — 종아리 뒤가쪽과 발 가쪽",
+    "C. 얕은종아리신경 — 발등",
+    "D. 깊은종아리신경 — 첫째·둘째 발가락 사이",
+    "E. 뒤넙다리피부신경 — 넓적다리 뒤"
+   ],
+   "answer": "A",
+   "explanation": "큰두렁정맥은 무릎 아래부터 두렁신경과 나란히 달린다. 두렁신경은 넙다리신경의 감각가지로 종아리 안쪽과 발 안쪽 피부를 맡는다. 장딴지신경은 작은두렁정맥에 동반해 종아리 뒤가쪽과 발 가쪽을 맡으므로 짝이 다르다(B). 얕은종아리신경은 발등, 깊은종아리신경은 첫째·둘째 발가락 사이 물갈퀴공간, 뒤넙다리피부신경은 넓적다리 뒤 피부를 담당해 이 상황과 무관하다(C·D·E). 정맥과 신경의 짝을 묶어 외우면 채취 부위별 합병증이 그대로 따라온다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0051",
+   "style": "relation",
+   "region": "lower-limb",
+   "subregion": "superficial-veins",
+   "examPhase": "tagging-1",
+   "stem": "다리에서 얕은정맥의 피가 깊은정맥으로 흘러가는 경로와 그 방향을 유지하는 장치를 설명하고, 그 장치가 망가졌을 때 생기는 질환을 답하시오.",
+   "choices": null,
+   "answer": "얕은정맥 → 관통정맥 perforating v. → 깊은정맥 순으로 흐른다. 정맥 판막이 이 한 방향만 허용하고 장딴지근의 펌프작용이 피를 밀어 올린다. 판막부전으로 역류가 생기면 정맥류 varicose veins가 된다.",
+   "explanation": "관통정맥은 얕은근막과 깊은근막을 뚫고 두 계통을 잇는 짧은 정맥으로, 판막 덕분에 피가 깊은 쪽으로만 간다. 서 있을 때 중력을 이기는 힘은 심장이 아니라 장딴지근 수축이며 그래서 근육펌프라고 부른다. 판막이 망가지면 깊은정맥의 피가 얕은정맥으로 역류해 큰두렁정맥 계통이 늘어나고 구불구불해진다. 피부벗기기에서 얕은근막을 살려 두어야 이 관통 구조를 관찰할 수 있다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0052",
+   "style": "layer-order",
+   "region": "back",
+   "subregion": "skin-and-fascia",
+   "examPhase": "tagging-1",
+   "stem": "등 피부벗기기에서 피부판을 젖히는 방향과 몸쪽에 남겨야 하는 층의 조합으로 옳은 것은?",
+   "choices": [
+    "A. 가쪽에서 정중선 방향 — 깊은근막을 남긴다",
+    "B. 정중선에서 가쪽 방향 — 얕은근막을 남긴다",
+    "C. 정중선에서 가쪽 방향 — 진피를 남긴다",
+    "D. 가쪽에서 정중선 방향 — 얕은근막을 함께 벗긴다",
+    "E. 아래에서 위 방향 — 깊은근막을 함께 벗긴다"
+   ],
+   "answer": "B",
+   "explanation": "뒤정중선을 세로로 절개한 뒤 피부판을 정중선에서 가쪽으로 젖힌다. 이때 얕은근막은 피부판에 붙이지 말고 몸쪽에 남겨야 그 안의 피부신경과 얕은정맥이 살아남는다. 방향이 반대이거나(A·D) 남기는 층이 진피(C)면 관찰 대상이 사라진다. 깊은근막을 함께 벗기면 그 아래 근육까지 손상되어 2회차 층별 해부가 불가능해진다(E).",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "해부 수업계획서.xlsx",
+     "page": null,
+     "section": "확정본 §1회차(2026-08-18) 등·다리 피부벗기기 — 실습지침 11–13p / 307p·311p · 응용과제(허리천자·꼬리마취·앞가지/뒤가지)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",
@@ -1030,6 +1528,201 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-16",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "back",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0035"
+    ],
+    "relation": [
+     "anatomy-2026-0036",
+     "anatomy-2026-0037"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0040",
+    "anatomy-2026-0046",
+    "anatomy-2026-0044",
+    "anatomy-2026-0041",
+    "anatomy-2026-0039",
+    "anatomy-2026-0043",
+    "anatomy-2026-0015",
+    "anatomy-2026-0004",
+    "anatomy-2026-0047",
+    "anatomy-2026-0045",
+    "anatomy-2026-0048",
+    "anatomy-2026-0052"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0015",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0016",
+     "anatomy-2026-0017",
+     "anatomy-2026-0018"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0014",
+     "anatomy-2026-0007"
+    ],
+    "d-7": [],
+    "d-14": []
+   },
+   "estMinutes": 35
+  },
+  {
+   "date": "2026-08-15",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "back",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0032"
+    ],
+    "relation": [
+     "anatomy-2026-0001",
+     "anatomy-2026-0003"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0012",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0015",
+    "anatomy-2026-0005",
+    "anatomy-2026-0006",
+    "anatomy-2026-0016",
+    "anatomy-2026-0017",
+    "anatomy-2026-0018"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0015",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0016",
+     "anatomy-2026-0017",
+     "anatomy-2026-0018"
+    ],
+    "d-3": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0007",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006"
+    ],
+    "d-7": [],
+    "d-14": []
+   },
+   "estMinutes": 35
+  },
+  {
+   "date": "2026-08-14",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "back",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0032"
+    ],
+    "relation": [
+     "anatomy-2026-0001",
+     "anatomy-2026-0003"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0004",
+    "anatomy-2026-0012",
+    "anatomy-2026-0010",
+    "anatomy-2026-0009",
+    "anatomy-2026-0008",
+    "anatomy-2026-0011",
+    "anatomy-2026-0015",
+    "anatomy-2026-0005",
+    "anatomy-2026-0006",
+    "anatomy-2026-0016",
+    "anatomy-2026-0017",
+    "anatomy-2026-0018"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0014",
+     "anatomy-2026-0007"
+    ],
+    "d-3": [],
+    "d-7": [],
+    "d-14": []
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-13",
    "phase": "t1-prep",

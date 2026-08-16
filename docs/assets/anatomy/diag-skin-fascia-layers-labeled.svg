@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 660" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="피부벗기기 절개선과 피부·근막 층 구조 — 1회차 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 1회차(등·다리 피부벗기기) 범위.
+       근거: 해부 수업계획서 확정본 §1회차(실습지침 11-13p / 307p·311p,
+       e-Anatomy Back/Lower limb — Superficial layer). 1회차 강의 PDF는 Drive에 없어
+       (missing_sessions: 1) 내용은 인정 교재 5종 표준 서술만 담는다.
+       층을 겹쳐 그리면 안 읽히므로 왼쪽=절개선(표면), 오른쪽=단면(층)으로 분리했다. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="660" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">피부벗기기 — 절개선과 피부·근막 층
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">skin incision lines &amp; layers of skin and fascia</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">1회차(2026-08-18) 등·다리 피부벗기기 · 자체 제작 · 근거: 수업계획서 확정본 §1회차(실습지침 11–13p / 307p·311p)</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">핵심: 칼은 <tspan fill="#eab308">진피까지만</tspan> 넣는다. 얕은근막을 열면 그 안의 피부신경·얕은정맥이 함께 뜯긴다.</text>
+
+  <!-- ================= 패널 A : 절개선 ================= -->
+  <rect x="18" y="82" width="392" height="560" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="34" y="106" fill="#9dc7f0" font-size="14" class="kr">A. 절개선 incision lines <tspan fill="#93a4b7" font-size="10.5" font-weight="400">뒤에서 본 모습</tspan></text>
+
+  <g transform="translate(40,118)">
+    <!-- 몸통·다리 실루엣 (뒤에서 본 모습) -->
+    <circle cx="118" cy="24" r="21" fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <path d="M 104,44 L 132,44 L 132,56 L 104,56 Z" fill="#162436" stroke="#3b506a" stroke-width="1.4"/>
+    <path d="M 104,56 C 78,62 58,72 50,84 L 44,120 L 56,124 L 62,96
+             C 66,140 66,176 70,206 L 166,206 C 170,176 170,140 174,96
+             L 180,124 L 192,120 L 186,84 C 178,72 158,62 132,56 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.7"/>
+    <!-- 볼기 -->
+    <path d="M 70,206 L 166,206 C 170,232 168,258 162,272 L 74,272 C 68,258 66,232 70,206 Z"
+          fill="#18293d" stroke="#3b506a" stroke-width="1.6"/>
+    <!-- 왼다리 -->
+    <path d="M 74,272 L 114,272 L 112,352 L 110,410 L 108,470 L 84,470 L 84,410 L 80,352 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <!-- 오른다리 -->
+    <path d="M 122,272 L 162,272 L 156,352 L 152,410 L 152,470 L 128,470 L 126,410 L 124,352 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <!-- 척주 기준선 -->
+    <line x1="118" y1="58" x2="118" y2="206" stroke="#2b3a4d" stroke-width="1.4"/>
+
+    <!-- 절개선 (노랑 파선) -->
+    <line x1="118" y1="60" x2="118" y2="204" stroke="#eab308" stroke-width="2.2" stroke-dasharray="7 4"/>
+    <line x1="118" y1="62" x2="60" y2="80" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="118" y1="62" x2="176" y2="80" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="70" y1="206" x2="166" y2="206" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="74" y1="272" x2="162" y2="272" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="98" y1="272" x2="96" y2="470" stroke="#eab308" stroke-width="2.2" stroke-dasharray="7 4"/>
+    <line x1="140" y1="272" x2="140" y2="470" stroke="#eab308" stroke-width="2.2" stroke-dasharray="7 4"/>
+    <line x1="80" y1="352" x2="112" y2="352" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="126" y1="352" x2="156" y2="352" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="84" y1="462" x2="108" y2="462" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+    <line x1="128" y1="462" x2="152" y2="462" stroke="#eab308" stroke-width="2" stroke-dasharray="7 4"/>
+
+    <!-- 지시선 + 라벨 (전부 오른쪽 여백 열) -->
+    <line x1="176" y1="80" x2="212" y2="62" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="58" fill="#e6edf3" font-size="10.5" class="kr">봉우리쪽 가로절개</text>
+    <text x="216" y="70" fill="#6f8299" font-size="8.5">to acromion</text>
+
+    <line x1="118" y1="130" x2="212" y2="118" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="114" fill="#e6edf3" font-size="10.5" class="kr">뒤정중선 세로절개</text>
+    <text x="216" y="126" fill="#6f8299" font-size="8.5">median · C7 → 엉치뼈</text>
+
+    <line x1="166" y1="206" x2="212" y2="182" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="178" fill="#e6edf3" font-size="10.5" class="kr">엉덩뼈능선 가로절개</text>
+    <text x="216" y="190" fill="#6f8299" font-size="8.5">iliac crest</text>
+
+    <line x1="162" y1="272" x2="212" y2="248" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="244" fill="#e6edf3" font-size="10.5" class="kr">볼기주름 가로절개</text>
+    <text x="216" y="256" fill="#6f8299" font-size="8.5">gluteal fold</text>
+
+    <line x1="140" y1="320" x2="212" y2="312" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="308" fill="#e6edf3" font-size="10.5" class="kr">넓적다리 뒤 세로절개</text>
+    <text x="216" y="320" fill="#6f8299" font-size="8.5">posterior thigh</text>
+
+    <line x1="156" y1="352" x2="212" y2="374" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="378" fill="#e6edf3" font-size="10.5" class="kr">오금 가로절개</text>
+    <text x="216" y="390" fill="#6f8299" font-size="8.5">popliteal fossa</text>
+
+    <line x1="152" y1="462" x2="212" y2="444" stroke="#4a5f78" stroke-width="0.9"/>
+    <text x="216" y="440" fill="#e6edf3" font-size="10.5" class="kr">발목 가로절개</text>
+    <text x="216" y="452" fill="#6f8299" font-size="8.5">ankle</text>
+  </g>
+
+  <rect x="34" y="596" width="360" height="34" rx="5" fill="#1a2f47" stroke="#4d7fb0"/>
+  <text x="44" y="611" fill="#9cc3ff" font-size="10" class="kr">피부판(skin flap)은 정중선에서 가쪽으로 젖힌다</text>
+  <text x="44" y="624" fill="#6f8299" font-size="9">얕은근막을 붙여 두면 피부신경이 살아 있어 뒤가지 관찰이 된다</text>
+
+  <!-- ================= 패널 B : 층 단면 ================= -->
+  <rect x="424" y="82" width="438" height="316" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="440" y="106" fill="#9dc7f0" font-size="14" class="kr">B. 층 단면 layers <tspan fill="#93a4b7" font-size="10.5" font-weight="400">겉 → 속</tspan></text>
+
+  <!-- 밴드 -->
+  <rect x="448" y="130" width="196" height="12" fill="#cbb89a" stroke="#8a7a63"/>
+  <rect x="448" y="142" width="196" height="26" fill="#a98f72" stroke="#8a7a63"/>
+  <rect x="448" y="168" width="196" height="92" fill="#f2d98b" stroke="#c9a94f"/>
+  <rect x="448" y="260" width="196" height="18" fill="#8fa7bd" stroke="#c3d6e6"/>
+  <rect x="448" y="278" width="196" height="60" fill="#a2494a" stroke="#d0716f"/>
+
+  <!-- 얕은근막 속 구조 -->
+  <path d="M 454,196 C 490,184 526,214 562,200 C 592,190 618,208 640,200"
+        fill="none" stroke="#3f6fbf" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 454,232 C 492,244 528,216 564,234 C 594,248 620,228 640,236"
+        fill="none" stroke="#9cc3ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 깊은근막을 뚫는 관통 -->
+  <path d="M 480,278 L 480,238" stroke="#3f6fbf" stroke-width="2.4"/>
+  <circle cx="480" cy="269" r="4.5" fill="none" stroke="#eab308" stroke-width="1.5"/>
+
+  <!-- 절개 깊이 -->
+  <line x1="440" y1="168" x2="652" y2="168" stroke="#eab308" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="452" y="163" fill="#eab308" font-size="9.5" class="kr">← 칼은 여기까지 (피부만)</text>
+
+  <!-- 라벨 열 (660 ~ 856) -->
+  <line x1="644" y1="136" x2="660" y2="130" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="664" y="127" fill="#e6edf3" font-size="10.5" class="kr">표피 <tspan fill="#6f8299" font-size="9" font-weight="400">epidermis</tspan></text>
+  <text x="664" y="139" fill="#6f8299" font-size="9">혈관 없음 · 각질층</text>
+
+  <line x1="644" y1="155" x2="660" y2="155" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="664" y="158" fill="#e6edf3" font-size="10.5" class="kr">진피 <tspan fill="#6f8299" font-size="9" font-weight="400">dermis</tspan></text>
+  <text x="664" y="170" fill="#6f8299" font-size="9">피부판을 잡는 질긴 층</text>
+
+  <line x1="644" y1="200" x2="660" y2="192" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="664" y="189" fill="#f2d98b" font-size="11" class="kr">얕은근막 <tspan fill="#6f8299" font-size="9" font-weight="400">superficial fascia</tspan></text>
+  <text x="664" y="201" fill="#93a4b7" font-size="9">= 피부밑조직 subcutaneous</text>
+  <text x="664" y="215" fill="#3f6fbf" font-size="10" class="kr">■ <tspan fill="#93a4b7" font-size="9" font-weight="400">얕은정맥 superficial v.</tspan></text>
+  <text x="664" y="229" fill="#9cc3ff" font-size="10" class="kr">■ <tspan fill="#93a4b7" font-size="9" font-weight="400">피부신경 cutaneous n.</tspan></text>
+  <text x="664" y="241" fill="#93a4b7" font-size="9">+ 지방 · 림프관 · 림프절</text>
+
+  <line x1="644" y1="269" x2="660" y2="264" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="664" y="261" fill="#c3d6e6" font-size="10.5" class="kr">깊은근막 <tspan fill="#6f8299" font-size="9" font-weight="400">deep fascia</tspan></text>
+  <text x="664" y="273" fill="#93a4b7" font-size="9">등: 등허리근막</text>
+  <text x="664" y="285" fill="#93a4b7" font-size="9">넓적다리: 넓은근막 fascia lata</text>
+
+  <line x1="644" y1="308" x2="660" y2="308" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="664" y="311" fill="#e08b89" font-size="10.5" class="kr">근육 <tspan fill="#6f8299" font-size="9" font-weight="400">muscle</tspan></text>
+  <text x="664" y="323" fill="#6f8299" font-size="9">2회차부터 벗겨 나간다</text>
+
+  <text x="448" y="360" fill="#eab308" font-size="9.5" class="kr">○ 관통점 <tspan fill="#93a4b7" font-weight="400">깊은근막을 뚫고 나오는 피부신경·관통정맥</tspan></text>
+  <text x="448" y="380" fill="#6f8299" font-size="9.5">얕은근막은 <tspan fill="#e6edf3">벗기지 않는다</tspan> — 두렁정맥·피부신경 표본이 여기 있다.</text>
+
+  <!-- ================= 패널 C : 허리천자 통과 순서 ================= -->
+  <rect x="424" y="410" width="438" height="232" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="440" y="434" fill="#9dc7f0" font-size="14" class="kr">C. 허리천자 바늘이 지나는 층 <tspan fill="#93a4b7" font-size="10.5" font-weight="400">lumbar puncture</tspan></text>
+  <text x="440" y="450" fill="#6f8299" font-size="10">같은 '겉 → 속' 순서 감각이 그대로 임상이 된다 (응용과제 1)</text>
+
+  <g font-size="10.5">
+    <rect x="440" y="460" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="448" y="474" fill="#e6edf3" class="kr">1 피부 <tspan fill="#6f8299" font-size="9" font-weight="400">skin</tspan></text>
+    <rect x="440" y="484" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="448" y="498" fill="#e6edf3" class="kr">2 얕은근막 <tspan fill="#6f8299" font-size="9" font-weight="400">superficial f.</tspan></text>
+    <rect x="440" y="508" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="448" y="522" fill="#e6edf3" class="kr">3 가시위인대 <tspan fill="#6f8299" font-size="9" font-weight="400">supraspinous</tspan></text>
+    <rect x="440" y="532" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="448" y="546" fill="#e6edf3" class="kr">4 가시사이인대 <tspan fill="#6f8299" font-size="9" font-weight="400">interspinous</tspan></text>
+    <rect x="440" y="556" width="186" height="20" rx="4" fill="#2a2416" stroke="#eab308"/>
+    <text x="448" y="570" fill="#eab308" class="kr">5 황색인대 <tspan fill="#c9a94f" font-size="9" font-weight="400">lig. flavum</tspan></text>
+
+    <rect x="646" y="460" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="654" y="474" fill="#e6edf3" class="kr">6 경막바깥공간 <tspan fill="#6f8299" font-size="9" font-weight="400">epidural</tspan></text>
+    <rect x="646" y="484" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="654" y="498" fill="#e6edf3" class="kr">7 경질막 <tspan fill="#6f8299" font-size="9" font-weight="400">dura mater</tspan></text>
+    <rect x="646" y="508" width="186" height="20" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="654" y="522" fill="#e6edf3" class="kr">8 거미막 <tspan fill="#6f8299" font-size="9" font-weight="400">arachnoid</tspan></text>
+    <rect x="646" y="532" width="186" height="20" rx="4" fill="#16303a" stroke="#4fb3c9"/>
+    <text x="654" y="546" fill="#8fe0ef" class="kr">9 거미막밑공간 <tspan fill="#6f8299" font-size="9" font-weight="400">subarachnoid</tspan></text>
+    <text x="654" y="570" fill="#6f8299" font-size="9.5">→ 뇌척수액 CSF 획득</text>
+  </g>
+
+  <line x1="626" y1="470" x2="646" y2="470" stroke="#4a5f78" stroke-width="0.9"/>
+  <rect x="440" y="584" width="392" height="48" rx="5" fill="#1a2f47" stroke="#4d7fb0"/>
+  <text x="450" y="600" fill="#9cc3ff" font-size="10" class="kr">천자 높이: L3–L4 또는 L4–L5 가시돌기 사이</text>
+  <text x="450" y="614" fill="#93a4b7" font-size="9">엉덩뼈능선 최고점을 이은 선(Tuffier) ≈ L4 가시돌기</text>
+  <text x="450" y="627" fill="#6f8299" font-size="9">성인 척수는 L1–L2에서 끝나 아래는 말총뿐 — 바늘에 밀려 다치지 않는다</text>
+</svg>

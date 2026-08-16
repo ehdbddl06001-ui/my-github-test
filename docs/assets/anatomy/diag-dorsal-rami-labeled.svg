@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 660" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="척수신경 앞가지·뒤가지 분기와 등·볼기 피부신경 — 1회차 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이'.
+       근거: 해부 수업계획서 확정본 §1회차 응용과제 + e-Anatomy Back — Superficial layer.
+       분기 관계를 축 방향 단면에 겹쳐 그리면 안 읽히므로 왼쪽=분기 트리, 오른쪽=체표 분포로 분리. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+    .b{fill:#1b2a3c;stroke:#3b506a}
+  </style>
+  <rect width="880" height="660" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">척수신경 앞가지 · 뒤가지 — 분기와 피부 분포
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">anterior &amp; posterior rami of spinal nerve</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">1회차 응용과제 3 · 자체 제작 · <tspan fill="#f0b56b">주황 = 뒤가지 계열</tspan> / <tspan fill="#9cc3ff">파랑 = 앞가지 계열</tspan></text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">등 피부를 벗기면 얕은근막에서 만나는 신경은 대부분 <tspan fill="#f0b56b">뒤가지의 피부가지</tspan>다 — 정중선 가까이일수록 그렇다.</text>
+
+  <!-- ================= 패널 A : 분기 트리 ================= -->
+  <rect x="18" y="82" width="430" height="348" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="34" y="106" fill="#9dc7f0" font-size="14" class="kr">A. 한 쌍의 척수신경이 갈라지는 순서</text>
+
+  <!-- 척수 -->
+  <rect x="163" y="118" width="140" height="30" rx="6" fill="#2b3f57" stroke="#6f8299"/>
+  <text x="233" y="137" fill="#e6edf3" font-size="12" class="kr" text-anchor="middle">척수 spinal cord</text>
+
+  <!-- 뿌리 -->
+  <line x1="200" y1="148" x2="140" y2="172" stroke="#f0b56b" stroke-width="2"/>
+  <line x1="266" y1="148" x2="326" y2="172" stroke="#9cc3ff" stroke-width="2"/>
+  <rect x="46" y="172" width="176" height="46" rx="6" class="b"/>
+  <text x="56" y="189" fill="#e6edf3" font-size="11" class="kr">뒤뿌리 posterior root</text>
+  <text x="56" y="203" fill="#93a4b7" font-size="9.5">감각 sensory · 척수신경절이 붙는다</text>
+  <text x="56" y="214" fill="#6f8299" font-size="9">spinal ganglion (뒤뿌리신경절)</text>
+
+  <rect x="244" y="172" width="176" height="46" rx="6" class="b"/>
+  <text x="254" y="189" fill="#e6edf3" font-size="11" class="kr">앞뿌리 anterior root</text>
+  <text x="254" y="203" fill="#93a4b7" font-size="9.5">운동 motor · 신경절 없다</text>
+  <text x="254" y="214" fill="#6f8299" font-size="9">(교감신경 섬유는 T1–L2에서 함께)</text>
+
+  <!-- 합류 -->
+  <line x1="134" y1="218" x2="196" y2="238" stroke="#93a4b7" stroke-width="1.6"/>
+  <line x1="332" y1="218" x2="270" y2="238" stroke="#93a4b7" stroke-width="1.6"/>
+  <rect x="146" y="238" width="174" height="32" rx="6" fill="#243b52" stroke="#7f9ab5"/>
+  <text x="233" y="252" fill="#e6edf3" font-size="12" class="kr" text-anchor="middle">척수신경 spinal n.</text>
+  <text x="233" y="264" fill="#93a4b7" font-size="9" text-anchor="middle">혼합신경 · 척추사이구멍을 지나자마자 둘로 갈라진다</text>
+
+  <!-- 앞가지 / 뒤가지 -->
+  <line x1="190" y1="270" x2="128" y2="292" stroke="#f0b56b" stroke-width="2.4"/>
+  <line x1="276" y1="270" x2="338" y2="292" stroke="#9cc3ff" stroke-width="3.4"/>
+  <rect x="34" y="292" width="188" height="36" rx="6" fill="#2a2416" stroke="#f0b56b"/>
+  <text x="128" y="308" fill="#f0b56b" font-size="12" class="kr" text-anchor="middle">뒤가지 posterior ramus</text>
+  <text x="128" y="321" fill="#c9a94f" font-size="9" text-anchor="middle">가늘다 · 신경얼기를 만들지 않는다</text>
+
+  <rect x="244" y="292" width="188" height="36" rx="6" fill="#152538" stroke="#9cc3ff"/>
+  <text x="338" y="308" fill="#9cc3ff" font-size="12" class="kr" text-anchor="middle">앞가지 anterior ramus</text>
+  <text x="338" y="321" fill="#7f9ab5" font-size="9" text-anchor="middle">굵다 · 신경얼기를 만든다</text>
+
+  <!-- 뒤가지 하위 -->
+  <line x1="88" y1="328" x2="80" y2="348" stroke="#f0b56b" stroke-width="1.8"/>
+  <line x1="168" y1="328" x2="176" y2="348" stroke="#f0b56b" stroke-width="1.8"/>
+  <rect x="34" y="348" width="92" height="28" rx="5" class="b"/>
+  <text x="80" y="366" fill="#f0b56b" font-size="10.5" class="kr" text-anchor="middle">안쪽가지</text>
+  <rect x="130" y="348" width="92" height="28" rx="5" class="b"/>
+  <text x="176" y="366" fill="#f0b56b" font-size="10.5" class="kr" text-anchor="middle">가쪽가지</text>
+  <text x="34" y="392" fill="#93a4b7" font-size="9.5">위쪽(T1–T6): <tspan fill="#e6edf3">안쪽가지</tspan>가 피부까지 간다</text>
+  <text x="34" y="406" fill="#93a4b7" font-size="9.5">아래(T7–T12): <tspan fill="#e6edf3">가쪽가지</tspan>가 피부까지 간다</text>
+  <text x="34" y="420" fill="#6f8299" font-size="9">둘 다 고유등근육(깊은층)에 운동가지를 준다</text>
+
+  <!-- 앞가지 하위 -->
+  <text x="244" y="348" fill="#93a4b7" font-size="9.5">→ 목·팔·허리엉치 신경얼기</text>
+  <text x="244" y="362" fill="#6f8299" font-size="9">cervical · brachial · lumbosacral plexus</text>
+  <text x="244" y="378" fill="#93a4b7" font-size="9.5">→ 갈비사이신경(가슴에서는 얼기 없음)</text>
+  <text x="244" y="394" fill="#93a4b7" font-size="9.5">→ 몸통 앞·가쪽 피부와 근육, 사지 전부</text>
+  <text x="244" y="410" fill="#6f8299" font-size="9">등 얕은층·중간층 근육도 앞가지 지배다</text>
+
+  <!-- ================= 패널 B : 체표 분포 ================= -->
+  <rect x="462" y="82" width="400" height="348" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="478" y="106" fill="#9dc7f0" font-size="14" class="kr">B. 등·볼기 피부신경 <tspan fill="#93a4b7" font-size="10.5" font-weight="400">뒤에서 본 모습</tspan></text>
+
+  <g transform="translate(486,110) scale(0.86)">
+    <!-- 몸통 -->
+    <circle cx="86" cy="24" r="20" fill="#162436" stroke="#3b506a" stroke-width="1.5"/>
+    <path d="M 74,44 L 98,44 L 98,54 L 74,54 Z" fill="#162436" stroke="#3b506a" stroke-width="1.3"/>
+    <path d="M 74,54 C 52,60 34,70 28,82 L 24,112 L 34,116 L 40,92
+             C 44,132 44,166 48,194 L 124,194 C 128,166 128,132 132,92
+             L 138,116 L 148,112 L 144,82 C 138,70 120,60 98,54 Z"
+          fill="#162436" stroke="#3b506a" stroke-width="1.6"/>
+    <path d="M 48,194 L 124,194 C 128,218 126,242 120,256 L 52,256 C 46,242 44,218 48,194 Z"
+          fill="#18293d" stroke="#3b506a" stroke-width="1.5"/>
+    <line x1="86" y1="56" x2="86" y2="194" stroke="#2b3a4d" stroke-width="1.3"/>
+
+    <!-- 큰뒤통수신경 -->
+    <path d="M 86,44 C 76,34 70,26 72,16" fill="none" stroke="#f0b56b" stroke-width="2.4"/>
+    <circle cx="72" cy="16" r="3.4" fill="#f0b56b"/>
+
+    <!-- 등 뒤가지 피부가지: 정중선 양옆 세로 사슬 -->
+    <g stroke="#f0b56b" stroke-width="2" fill="none">
+      <path d="M 86,72 L 66,78"/><path d="M 86,92 L 64,99"/><path d="M 86,112 L 62,120"/>
+      <path d="M 86,132 L 60,142"/><path d="M 86,152 L 58,164"/><path d="M 86,172 L 58,186"/>
+      <path d="M 86,72 L 106,78"/><path d="M 86,92 L 108,99"/><path d="M 86,112 L 110,120"/>
+      <path d="M 86,132 L 112,142"/><path d="M 86,152 L 114,164"/><path d="M 86,172 L 114,186"/>
+    </g>
+
+    <!-- 위볼기피부신경: 엉덩뼈능선을 넘는다 -->
+    <g stroke="#f0b56b" stroke-width="2.6" fill="none">
+      <path d="M 78,190 C 74,200 70,208 66,218"/>
+      <path d="M 92,190 C 96,200 100,208 104,218"/>
+      <path d="M 86,190 L 86,216"/>
+    </g>
+    <line x1="48" y1="194" x2="124" y2="194" stroke="#eab308" stroke-width="1.6" stroke-dasharray="4 3"/>
+
+    <!-- 중간볼기피부신경 -->
+    <g stroke="#f0b56b" stroke-width="2.2" fill="none">
+      <path d="M 86,214 L 74,228"/><path d="M 86,224 L 76,240"/>
+      <path d="M 86,214 L 98,228"/><path d="M 86,224 L 96,240"/>
+    </g>
+
+    <!-- 아래볼기피부신경 (앞가지 유래) — 볼기주름을 감고 올라온다 -->
+    <g stroke="#9cc3ff" stroke-width="3.4" fill="none" stroke-linecap="round">
+      <path d="M 56,268 C 60,252 68,244 80,244"/>
+      <path d="M 116,268 C 112,252 104,244 92,244"/>
+      <path d="M 66,272 C 70,258 76,252 84,252"/>
+      <path d="M 106,272 C 102,258 96,252 88,252"/>
+    </g>
+    <line x1="52" y1="256" x2="120" y2="256" stroke="#4fb3c9" stroke-width="1.4" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- 라벨 열 -->
+  <line x1="550" y1="126" x2="654" y2="126" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="658" y="123" fill="#f0b56b" font-size="10.5" class="kr">큰뒤통수신경</text>
+  <text x="658" y="135" fill="#93a4b7" font-size="9">greater occipital n. · C2 뒤가지</text>
+
+  <line x1="592" y1="216" x2="654" y2="176" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="658" y="167" fill="#f0b56b" font-size="10.5" class="kr">등 피부가지 (뒤가지)</text>
+  <text x="658" y="179" fill="#93a4b7" font-size="9">정중선에 가까울수록 뒤가지 영역</text>
+  <text x="658" y="191" fill="#6f8299" font-size="9">가쪽으로 갈수록 앞가지(갈비사이) 영역</text>
+
+  <line x1="574" y1="290" x2="654" y2="236" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="658" y="227" fill="#f0b56b" font-size="10.5" class="kr">위볼기피부신경</text>
+  <text x="658" y="239" fill="#93a4b7" font-size="9">superior cluneal · L1–L3 <tspan fill="#f0b56b">뒤가지</tspan></text>
+  <text x="658" y="251" fill="#6f8299" font-size="9">엉덩뼈능선을 넘어 내려온다</text>
+
+  <line x1="572" y1="312" x2="654" y2="284" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="658" y="275" fill="#f0b56b" font-size="10.5" class="kr">중간볼기피부신경</text>
+  <text x="658" y="287" fill="#93a4b7" font-size="9">middle cluneal · S1–S3 <tspan fill="#f0b56b">뒤가지</tspan></text>
+
+  <line x1="545" y1="336" x2="654" y2="326" stroke="#4a5f78" stroke-width="0.9"/>
+  <text x="658" y="317" fill="#9cc3ff" font-size="10.5" class="kr">아래볼기피부신경</text>
+  <text x="658" y="329" fill="#93a4b7" font-size="9">inferior cluneal · 뒤넙다리피부신경의 가지</text>
+  <text x="658" y="341" fill="#eab308" font-size="9" class="kr">여기만 앞가지(S1–S3) 유래 — 함정</text>
+
+  <rect x="478" y="360" width="368" height="58" rx="5" fill="#1a2f47" stroke="#4d7fb0"/>
+  <text x="488" y="377" fill="#9cc3ff" font-size="10" class="kr">읽는 법: 볼기 피부는 '위·중간 = 뒤가지 / 아래 = 앞가지'</text>
+  <text x="488" y="392" fill="#93a4b7" font-size="9">위·중간볼기피부신경은 뒤가지가 볼기까지 내려온 유일한 예다.</text>
+  <text x="488" y="405" fill="#6f8299" font-size="9">C1 뒤가지(뒤통수밑신경)는 순수 운동 — 피부가지가 없다는 점도 함께 외운다.</text>
+
+  <!-- ================= 패널 C : 비교표 ================= -->
+  <rect x="18" y="440" width="844" height="204" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="34" y="464" fill="#9dc7f0" font-size="14" class="kr">C. 한눈 비교 <tspan fill="#93a4b7" font-size="10.5" font-weight="400">시험에서 갈리는 축만</tspan></text>
+
+  <g font-size="10.5">
+    <rect x="34" y="474" width="180" height="26" rx="4" fill="#1b2a3c" stroke="#3b506a"/>
+    <text x="44" y="491" fill="#93a4b7" class="kr">축</text>
+    <rect x="218" y="474" width="310" height="26" rx="4" fill="#2a2416" stroke="#f0b56b"/>
+    <text x="228" y="491" fill="#f0b56b" class="kr">뒤가지 posterior ramus</text>
+    <rect x="532" y="474" width="314" height="26" rx="4" fill="#152538" stroke="#9cc3ff"/>
+    <text x="542" y="491" fill="#9cc3ff" class="kr">앞가지 anterior ramus</text>
+
+    <rect x="34" y="504" width="180" height="26" rx="4" class="b"/>
+    <text x="44" y="521" fill="#e6edf3">운동 지배</text>
+    <rect x="218" y="504" width="310" height="26" rx="4" class="b"/>
+    <text x="228" y="521" fill="#e6edf3">고유등근육(깊은층)만</text>
+    <rect x="532" y="504" width="314" height="26" rx="4" class="b"/>
+    <text x="542" y="521" fill="#e6edf3">그 밖의 모든 뼈대근 — 등 얕은·중간층 포함</text>
+
+    <rect x="34" y="534" width="180" height="26" rx="4" class="b"/>
+    <text x="44" y="551" fill="#e6edf3">피부 감각</text>
+    <rect x="218" y="534" width="310" height="26" rx="4" class="b"/>
+    <text x="228" y="551" fill="#e6edf3">등 정중부 세로 띠 + 위·중간볼기</text>
+    <rect x="532" y="534" width="314" height="26" rx="4" class="b"/>
+    <text x="542" y="551" fill="#e6edf3">몸통 앞·가쪽, 사지 전부, 아래볼기</text>
+
+    <rect x="34" y="564" width="180" height="26" rx="4" class="b"/>
+    <text x="44" y="581" fill="#e6edf3">신경얼기</text>
+    <rect x="218" y="564" width="310" height="26" rx="4" class="b"/>
+    <text x="228" y="581" fill="#e6edf3">만들지 않는다 (분절이 그대로 유지)</text>
+    <rect x="532" y="564" width="314" height="26" rx="4" class="b"/>
+    <text x="542" y="581" fill="#e6edf3">목·팔·허리엉치 얼기를 만든다</text>
+
+    <rect x="34" y="594" width="180" height="26" rx="4" class="b"/>
+    <text x="44" y="611" fill="#e6edf3">기억할 예외</text>
+    <rect x="218" y="594" width="310" height="26" rx="4" class="b"/>
+    <text x="228" y="611" fill="#e6edf3">C1 뒤가지 = 순수 운동(뒤통수밑신경)</text>
+    <rect x="532" y="594" width="314" height="26" rx="4" class="b"/>
+    <text x="542" y="611" fill="#e6edf3">등세모근은 앞가지가 아니라 더부신경(XI)</text>
+  </g>
+  <text x="34" y="636" fill="#6f8299" font-size="9">태깅 포인트: 등 깊은층 근육 위에서 만난 신경 = 뒤가지, 어깨·팔로 향하면 = 앞가지 계열.</text>
+</svg>
