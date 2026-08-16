@@ -481,6 +481,237 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D29 (2026-08-16) — THE DIFFERENTIAL COMPLETED.  Verdict:
+`SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3 of 6 fixtures equal.**  Run
+`20260816T161639` ran all six registered fixtures against the digest-verified
+registered `data.py` and produced a result rather than a stop.
+
+```
+harness stop                : False
+required fixture coverage   : True
+injected-helper invariance  : invariant on all six
+fixtures passed             : 3 / 6
+final verdict               : SOURCE_MATCH_EQUIVALENCE_REQUIRED
+```
+
+| fixture | equal | the decision it pins |
+|---|---|---|
+| nearest_already_used_falls_through | **False** | a peak whose nearest annotation is already consumed |
+| distance_tie_goes_to_the_earlier_annotation | True | |
+| non_aami_symbol_consumes_its_match | **False** | whether a non-AAMI annotation is filtered before matching or consumed then dropped |
+| boundary_cut_consumes_its_match | True | |
+| annotation_order_differing_from_sample_order | **False** | list order vs sample order |
+| peak_order_change_is_visible | True | |
+
+Source identity verified on the run: file id
+`1a8mfNbCz5_vPaOWajsX15l93rgEaO_UK`, provider and observed SHA-256 both
+`20cde66b…`, scope `drive.readonly`.  Adapter fingerprint `85c5e259…`, oracle
+harness `c21a5c1d…`.  Bundle fold `fa4cfe6c…` / manifest `dd637818…` at
+`runs/20260816T161639_…`.
+
+**What this means.**  The candidate adapter `Q5E.match_peaks_to_annotations()`
+was transcribed from prose, and on three of the six decisions it does not do
+what the registered source does.  That is the finding P3 exists to produce, and
+it is a finding about the **adapter**, not about the source: the source is the
+oracle here.  Two of the three were predicted from the traces of the previous
+runs (drop-vs-fall-through, list-vs-sample order); the third — the non-AAMI
+one — was not, and my own model of the source therefore remains incomplete.
+The per-fixture differences are preserved in the bundle's
+`fixture_results.json`, and the correction must be written from those, not from
+my reconstruction.
+
+**What must not follow from it.**  No adapter was changed by this run and none
+is changed here.  `SOURCE_MATCH_ORACLE_RECORD` stays `None`: this is a
+**disagreement**, so no candidate record exists to register, and the registered
+gate rejected the structure accordingly.  No real-record count was opened, no
+`detect_r()` was run, no M0–M4 aggregation, no labels, no probabilities, no
+training.  A corrected adapter is a **separate PR**, reviewed by the spec
+owner, followed by a **full re-run of all six fixtures from the first** under
+a new harness digest and a fresh execution approval.
+
+**Standing caveat.**  The fixtures were revised in D21 (filler beats) to get
+past the registered producer's minimum-beat guard.  That revision is a
+spec-level change to registered fixture inputs and the spec owner has not yet
+reviewed it.  This verdict is therefore reported **under D21**, and if D21 is
+revised the run is repeated.
+
+**D28 (2026-08-16) — the same stop again: the class-level evidence was not
+enough, and I still cannot say why.**  Run `20260816T153415` stopped exactly
+where `20260816T142848` did, on the same fixture and the same peak.  So D27's
+diagnosis — the dictionary keyed by symbol, knowing `L` but not `N` — was
+either wrong or incomplete.
+
+**What this entry does not do is guess again.**  Two rounds have now been spent
+on a projection failure I have been unable to reproduce locally: a replica
+built to the registered rule *and* the registered container set (`keep`,
+`lab_idx`, `li`, `used`, `kp`, `valid`, class codes in `y`) projects cleanly
+and reports the two disagreements.  Something in the real trace differs from
+every replica of it, and the honest response is to look rather than to theorise
+a third time.
+
+*The notebook now prints the diagnosis that was already being collected.*  The
+unresolved list, the row tokens, the accumulated label dictionary and the
+fixture's own — all of it has been in `fixture_results.json` since D27 and none
+of it was on screen, which is why two rounds produced the same message and no
+new information.  That was my error, and it is the actual cost of this round.
+
+*One substantive change, which is a robustness fix rather than a diagnosis.*
+Negative evidence needs a channel that has been **single-valued** for a symbol
+or a class; a shared dictionary accumulating across six fixtures loses that the
+moment any fixture writes two labels for one class, and never gets it back.  So
+the settler now also consults a dictionary built from **the fixture's own
+resolved rows**, which cannot be diluted by another fixture.  If dilution is
+what happened, this fixes it; if not, the printed dictionaries will say what
+did.  `_settle_with()` is now one function both dictionaries go through, so the
+two cannot drift apart.
+
+Regression: `test_a_fixtures_own_rows_settle_it_even_when_the_shared_one_
+cannot` — a deliberately diluted dictionary settles nothing (the correct
+refusal), a clean one settles, an empty one settles nothing.  Suite: 114
+functions, 1,179 assertions.  Bundle `4085d030…` / manifest `e3171ccf…` at
+`runs/20260816T153415_…` is preserved.
+
+**D27 (2026-08-16) — the record read cleanly; the projection could not settle
+a class code.  A row labelled `2` said nothing about a symbol nobody had
+taught.**  Run `20260816T142848` read the whole record — all seven columns
+`row_aligned=True` — and stopped in the projection on the fifth fixture: *peak
+0 consumed an annotation the trace identifies only as one of [0, 1], and the
+row it produced does not settle it*.
+
+The ambiguity is the ordinary one: an integer in the trace can be a list
+position or a sample rank, and in that fixture the two readings differ for the
+first annotation only.  The candidates were `V` (index 0, sample 1060) and `N`
+(index 1, sample 1000).  The row carried the producer's own label, `2`.
+
+The dictionary is keyed by **symbol**.  By that fixture the producer had taught
+it `L`, `R`, `e`, `A`, `J`, `a` — every filler symbol — and never the symbol
+`N`, because the rows that would have taught it were themselves settled rather
+than resolved, and a settled row is not fed back.  So `excluded_symbols` could
+rule out `L` and `A` and had nothing to say about `N`, and the run stopped.
+
+Keyed by **registered AAMI class** there is everything to say: `0` has been the
+label on every `N`-class row this producer wrote, so a row labelled `2` is not
+class `N`, whatever its symbol turns out to be.  The dictionary now learns and
+settles at both levels — the class from the frozen AAMI map both sides already
+use, so nothing is decoded here that was not registered.  A producer that
+writes `y` as an int8 class code, which the registered one does, is
+distinguishing classes; the symbol level simply could not see what it was
+saying.  The stop also carries the dictionary and the row tokens now, so a
+failure to settle says *why*.
+
+**The registered rule, as three runs of trace now pin it.**  Not reported as a
+verdict — no comparison has completed — but recorded, because it is what the
+next run is expected to show:
+
+* the nearest annotation over **all** of them, ties to the lowest list index;
+* a peak whose nearest is already consumed is **dropped**, not passed on to the
+  next-nearest — and the annotation is not consumed either;
+* `y` is a class code, `N=0`, `S=1`, `V=2`.
+
+`SOURCE_RULE_PRODUCER` is built to exactly that and the harness now **reports**
+it: 4 of 6 agree, and the two that disagree are
+`test_source_match_nearest_already_used_falls_through` and
+`test_source_match_annotation_order_differing_from_sample_order` — the two
+fixtures built for those two decisions.  No candidate is produced from a
+differential with a disagreement, and nothing is registered by observing one.
+
+That is the whole point of this PREP arriving: the candidate adapter,
+transcribed from prose, appears to differ from the registered source on two
+decisions.  It becomes a finding when the run completes on all six fixtures,
+and the adapter is not touched here.
+
+Regressions: `test_a_class_code_settles_what_a_symbol_never_taught` and
+`test_the_registered_rule_is_reported_rather_than_stopping_the_run`.  Suite:
+113 functions, 1,174 assertions.  Bundle `a8826fd4…` / manifest `28f162aa…` at
+`runs/20260816T142848_…` is preserved.
+
+**D26 (2026-08-16) — the registered producer ran to completion and returned
+the whole record.  A beat is two-lead, and the harness was reading it flat.**
+Run `20260816T134407` is the first that got the registered `build_record` all
+the way through: 143 traced steps, a return at line 74, and all seven columns
+present.
+
+```
+beat  (7, 300, 2) float32     rr  (7, 7) float32     y  (7,) int8
+ctx   (7, 5)      float32     pw  (7, 5) float32
+ref   (0,)        float64     sim (0,)   float64     ← the only misalignment
+```
+
+The stop was `'ref' has 0 rows where 'rr' has 7`, and the cause is ours:
+`compare_features` was again called **without** the peaks (`given: [0]`), and
+D25's window-recovery could not read the block because a beat is
+`(300, 2)` — a sample per lead — not a flat 300.  `window_centres()` now reads
+the centre sample of a window whether it is flat or multi-channel, taking the
+first channel (the injected ramp puts the index in every channel, and one of
+them has to be chosen the same way every time).  The reader's beat cross-check
+goes through the same function, so a two-lead record is a channel rather than
+a blind spot.
+
+`_elementwise` also went only two levels deep, so the probe raised `TypeError:
+bad operand type for unary -: 'list'` on a three-level window and every fixture
+reported its injection as **untested** — the honest answer to a probe that
+could not run, and a useless one.  It now recurses to any depth.
+
+**What the trace shows about the registered source** (recorded, not reported —
+no comparison was made): `kp = [1000, 1500, 1740, 1980, 2220, 2460, 2700]` and
+`used = {0, 2, 3, 4, 5, 6, 7}`.  Peak 1012 was dropped **and annotation 1 was
+never consumed** — the source neither kept the peak nor took its match.  That
+is the decision `test_source_match_nearest_already_used_falls_through` exists
+to pin, and the adapter keeps that row.  It becomes a finding when the six
+fixtures are compared, and not before.
+
+**The rehearsal.**  `REGISTERED_SHAPED_PRODUCER` is built to these exact shapes
+— two-lead windows, `compare_features` handed the windows, integer class codes
+in `y`, all seven columns — with the *adapter's* rule, so that what it
+exercises is whether the harness can read such a record.  It agrees on all six
+fixtures, through the columnar reader, with all three channels
+(`rr[:, 0]`, `pw[:, 0]`, `beat[:, 150]`) read and no channel notes, and probed
+invariant on every fixture.  Writing it also caught a real difference: the
+first draft traversed annotations in list order and the projection reported it
+against the order fixture, which is that fixture doing its job on my own code.
+
+Regressions: `test_the_reader_handles_the_shapes_the_registered_record_came_
+back_with` and `test_a_window_block_is_read_flat_or_multi_channel`.  Suite: 111
+functions, 1,164 assertions.  Bundle `9f34e9ae…` / manifest `61887fea…` at
+`runs/20260816T134407_…` is preserved.
+
+**D25 (2026-08-16) — two more helpers, and the row producers now recover their
+rows from the windows.**  Run `20260816T131241` reported **two** names at once
+— `frontend.stack_ctx` and `frontend.slope_channel` — which is D24's retry
+working: before it, the second would have been hidden behind the first.
+
+Both are declared as **probed identities**.  This PREP has no registered claim
+about what either computes, and identity is the only stand-in that needs one:
+it hands the argument back, and it preserves the property the whole projection
+rests on — a window that passes through it still names its own centre sample
+under the injected ramp.  Their neutrality is demonstrated per run by the
+negation probe, exactly as `_z`'s is (D15).
+
+**The more important line in that run was `compare_features.given: [0]`.**  The
+producer called it **without the peaks**, so a stub that answers only to a peak
+list would have put an empty `ref`/`sim` into a record whose other columns had
+seven rows — and the reader would have refused it, correctly, for a reason
+created by the harness.  The row producers (`compare_features`, `beat_ctx`,
+`pwave_features`) now fall back to recovering their rows from the beat windows
+they were handed: the ramp makes `signal[i] == i`, so a stored window's centre
+sample *is* the peak it was cut around.  That is the same declared property the
+beat cross-check channel reads, not a new inference.  The identity carrier
+`rr` deliberately keeps the stricter behaviour: if it cannot see the peaks it
+produces nothing and the reader says so.
+
+Either sign is accepted when recovering a peak from a window, and the beat
+cross-check accepts a centre that has been through the transform an even
+number of times, because there is now more than one declared helper a window
+may pass through.  A sign cannot change *which* row is which — the rows still
+come from `rr` — so refusing one would manufacture a stop out of bookkeeping.
+
+Regressions: `test_a_helper_called_without_the_peaks_still_returns_aligned_
+rows` (a producer that hands its compare helper the windows, routed through
+both new helpers, agrees on all six fixtures and is probed invariant) and
+`test_every_declared_helper_is_the_identity_and_is_probed`.  Suite: 109
+functions, 1,153 assertions.  Bundle `b256e934…` / manifest `ff8868e3…` at
+`runs/20260816T131241_…` is preserved.
+
 **D24 (2026-08-16) — `frontend.compare_features` builds `ref` and `sim`, and
 the producer said how many values it returns.**  Run `20260816T125027` stopped
 on `frontend.compare_features`, and the discovery pass stopped *behind* it with

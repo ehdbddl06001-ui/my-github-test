@@ -245,17 +245,16 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "f8feabc53d65ee56549b8fb8ee44ddd459edfef5f343f8f9b3b0edf7db1db1bc"),
+        "c21a5c1d7536a77adcc9167995768689981abfeb6688adf0aa7706e48fa2d873"),
     "renewed_for_this_harness_because": (
-        "run 20260816T125027 established that the registered producer reads "
-        "frontend.compare_features and unpacks it into two - the ref and sim "
-        "columns - so the injected surface declares it, with the arity the "
-        "producer itself named.  The discovery pass now reads an unpacking "
-        "arity back and keeps going, so a helper that returns a pair no "
-        "longer hides the names behind it.  Injection surface and diagnosis "
-        "only; the fixtures (as revised in D21, which the spec owner should "
-        "still review), the rule, the tolerance and the verdict criteria are "
-        "unchanged"),
+        "run 20260816T153415 stopped where 20260816T142848 did, so the "
+        "class-level evidence added for it was not enough on its own: the "
+        "settler now also consults a dictionary built from the fixture's own "
+        "resolved rows, which cannot be diluted by another fixture, and the "
+        "notebook prints the dictionaries and the row tokens so a failure to "
+        "settle says why.  Projection and diagnosis only; the fixtures (as "
+        "revised in D21, which the spec owner should still review), the rule, "
+        "the tolerance and the verdict criteria are unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -715,7 +714,18 @@ FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS,
 #: be identical.  If a matching decision ever moved with `_z`, the run stops at
 #: `P3_INJECTED_VALUE_STEERS_MATCHING` instead of reporting a comparison the
 #: injection had a hand in.
-FRONTEND_STUB_FUNCTIONS: Tuple[str, ...] = ("_z",)
+#: Helpers the registered producer reaches for whose *shape* this PREP has no
+#: registered claim about.  Each is injected as the identity — it hands its
+#: argument straight back — and each is probed on every fixture of every run
+#: by re-running under an elementwise negation.  `_z` came from the
+#: 20260815T235627 run; `stack_ctx` and `slope_channel` from 20260816T131241,
+#: where the discovery pass reported both at once.
+#:
+#: Identity is the only stand-in that needs no claim about what the helper
+#: computes, and it keeps the property the whole projection rests on: a window
+#: that passes through it still names its own centre sample.
+FRONTEND_STUB_FUNCTIONS: Tuple[str, ...] = ("_z", "stack_ctx",
+                                            "slope_channel")
 STUB_VARIANT_PRIMARY = "identity"
 STUB_VARIANT_PROBE = "negated"
 STUB_VARIANTS: Tuple[str, ...] = (STUB_VARIANT_PRIMARY, STUB_VARIANT_PROBE)
@@ -839,23 +849,22 @@ class _AnnotationStub(object):
 def _elementwise(value: object, transform):
     """Apply `transform` to every number in a signal-shaped value.
 
-    Works on a numpy array, a list of rows or a flat list, and returns the
-    value unchanged when it is none of those — a probe that cannot perturb an
-    input reports that it could not, rather than pretending it did.
+    Works on a numpy array and on nesting of any depth, and returns the value
+    unchanged when it holds no numbers — a probe that cannot perturb an input
+    reports that it could not, rather than pretending it did.
+
+    The depth matters: run `20260816T134407` showed the registered producer
+    holding its windows as `(n, 300, 2)`, three levels deep, and a version of
+    this that only went two levels raised `TypeError: bad operand type for
+    unary -: 'list'` under the probe.  Every fixture then reported its
+    injection as **untested**, which is the honest answer to a probe that
+    could not run — and a useless one.
     """
     numpy = _numpy()
     if numpy is not None and isinstance(value, numpy.ndarray):
         return transform(value)
     if isinstance(value, (list, tuple)):
-        out = []
-        for item in value:
-            if isinstance(item, (list, tuple)):
-                out.append([transform(v) for v in item])
-            elif isinstance(item, (int, float)) and not isinstance(item, bool):
-                out.append(transform(item))
-            else:
-                return value
-        return out
+        return [_elementwise(item, transform) for item in value]
     if isinstance(value, (int, float)) and not isinstance(value, bool):
         return transform(value)
     return value
@@ -919,6 +928,34 @@ def build_injection(fixture: Mapping[str, object],
                 return values
         return []
 
+    def _peaks_from_windows(args: Sequence[object]) -> List[int]:
+        """Peaks recovered from a block of beat windows, or `[]`.
+
+        A producer does not have to hand a helper the peaks: the
+        20260816T131241 run showed `compare_features` being called without
+        them, and a stub that answers such a call with **no rows** puts a
+        column of a different length into the record — which the reader would
+        then, correctly, refuse.
+
+        The windows say it themselves.  The injected signal is a ramp, so
+        `signal[i] == i` and a stored window's centre sample *is* the peak it
+        was cut around; that is the same declared property the beat
+        cross-check channel reads.  Either sign is accepted because the
+        declared helpers (`_z` and the identity helpers beside it) may be
+        applied to a window more than once, and a sign cannot change which row
+        is which.
+        """
+        for argument in args:
+            centres = window_centres(argument)
+            if not centres:
+                continue
+            for sign in (1.0, -1.0):
+                values = [sign * c for c in centres]
+                if all(float(v) == int(v) and int(v) in set(peaks)
+                       for v in values):
+                    return [int(v) for v in values]
+        return []
+
     def rr_features(*args: object, **kwargs: object):
         """RR/feature producer stub.  Row `j` is `[peak_j, j, 0, 0, 0, 0, 0]`.
 
@@ -937,7 +974,7 @@ def build_injection(fixture: Mapping[str, object],
 
     def pwave_features(*args: object, **kwargs: object):
         """V10's P-wave add-on.  Same row convention, so it is observable too."""
-        given = _peak_argument(args)
+        given = _peak_argument(args) or _peaks_from_windows(args)
         log.record("pwave.pwave_features", given=list(given), n_args=len(args),
                    kwargs=sorted(kwargs))
         rows = [[float(p)] + [0.0] * 4 for p in given]
@@ -959,7 +996,7 @@ def build_injection(fixture: Mapping[str, object],
         producer: one row per peak handed in, that peak in the first column.
         The arity is not a guess — it is what the producer itself demanded.
         """
-        given = _peak_argument(args)
+        given = _peak_argument(args) or _peaks_from_windows(args)
         log.record("frontend.compare_features", given=list(given),
                    n_args=len(args), kwargs=sorted(kwargs))
         rows = [[float(p)] + [0.0] * 4 for p in given]
@@ -983,7 +1020,7 @@ def build_injection(fixture: Mapping[str, object],
         Like every injected function its neutrality is probed rather than
         asserted; a matching decision that moved with it would stop the run.
         """
-        given = _peak_argument(args)
+        given = _peak_argument(args) or _peaks_from_windows(args)
         log.record("frontend.beat_ctx", given=list(given), n_args=len(args),
                    kwargs=sorted(kwargs))
         rows = [[float(p)] + [0.0] * 4 for p in given]
@@ -996,19 +1033,28 @@ def build_injection(fixture: Mapping[str, object],
             f"{variant!r} is not one of the declared stub variants "
             f"{list(STUB_VARIANTS)}; a run may not invent a third injection")
 
-    def _z(value: object = None, *args: object, **kwargs: object):
-        """The declared helper stand-in, and the probe that tests it.
+    def _identity_helper(name: str):
+        """A declared helper stand-in, and the probe that tests it.
 
         `identity` hands the value straight back — the least-interfering thing
-        a stand-in can do.  `negated` returns it elementwise negated, and
-        exists so a run can *demonstrate* that no matching decision moved with
-        it rather than assume so.
+        a stand-in can do, and the only one that needs no claim about what the
+        helper computes.  `negated` returns it elementwise negated, and exists
+        so a run can *demonstrate* that no matching decision moved with the
+        helper rather than assume so.
+
+        Echoing the argument also preserves the one property this PREP relies
+        on: the injected signal is a ramp, so a window that passes through an
+        identity helper still names its own centre sample.
         """
-        log.record("frontend._z", variant=variant, n_args=1 + len(args),
-                   kwargs=sorted(kwargs))
-        if variant == STUB_VARIANT_PROBE:
-            return _elementwise(value, lambda v: -v)
-        return value
+        def helper(value: object = None, *args: object, **kwargs: object):
+            log.record(f"frontend.{name}", variant=variant,
+                       n_args=1 + len(args), kwargs=sorted(kwargs))
+            if variant == STUB_VARIANT_PROBE:
+                return _elementwise(value, lambda v: -v)
+            return value
+
+        helper.__name__ = name
+        return helper
 
     def missing_attribute(module_name: str):
         """What an injected module does when asked for an undeclared name.
@@ -1050,8 +1096,10 @@ def build_injection(fixture: Mapping[str, object],
              "dl_database": dl_database, "detect_r": detect_r,
              "rr_features": rr_features, "pwave_features": pwave_features,
              "beat_ctx": beat_ctx, "compare_features": compare_features,
-             "_z": _z, "_variant": variant,
+             "_variant": variant,
              "_missing_attribute": missing_attribute,
+             **{name: _identity_helper(name)
+                for name in FRONTEND_STUB_FUNCTIONS},
              "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
                             "frontend": dict(FRONTEND_STUB_CONSTANTS),
                             "pwave": dict(PWAVE_STUB_CONSTANTS)}},
@@ -2478,6 +2526,40 @@ def _sequence_dtype(value: object) -> Optional[str]:
     return "/".join(sorted(kinds)[:4]) if kinds else "empty"
 
 
+def window_centres(value: object) -> List[float]:
+    """The centre sample of each beat window in a block, or `[]`.
+
+    A window is `WIN_BEFORE + WIN_AFTER` samples long and a sample may have
+    more than one channel: run `20260816T134407` returned `beat` with shape
+    `(7, 300, 2)`, and a reader that recognised only the flat case treated a
+    perfectly ordinary two-lead record as unreadable.  The first channel is
+    read, because the injected ramp puts the sample index in every channel and
+    one of them has to be chosen the same way every time.
+
+    Nothing here decides anything on its own: the centres are compared against
+    the peaks the fixture declares, and a block that does not line up is simply
+    not this channel.
+    """
+    block = _as_lists(value)
+    if not isinstance(block, (list, tuple)) or not block:
+        return []
+    width = BJ.WIN_BEFORE + BJ.WIN_AFTER
+    centres: List[float] = []
+    for row in block:
+        row = _as_lists(row)
+        if not isinstance(row, (list, tuple)) or len(row) != width:
+            return []
+        centre = _as_lists(row[BJ.WIN_BEFORE])
+        if isinstance(centre, (list, tuple)):
+            if not centre:
+                return []
+            centre = centre[0]
+        if isinstance(centre, bool) or not isinstance(centre, (int, float)):
+            return []
+        centres.append(float(centre))
+    return centres
+
+
 def _numeric_rows(value: object) -> Optional[List[List[float]]]:
     """A two-dimensional numeric block as plain floats, or `None`.
 
@@ -2700,23 +2782,26 @@ def project_columnar_rows(returned: Mapping[str, object],
     # negation under the probe.  The expected centre is therefore known from
     # the *variant*, which is an input, before any value is looked at.
     sign = -1.0 if variant == STUB_VARIANT_PROBE else 1.0
-    beat_rows = _numeric_rows(returned.get("beat"))
+    # Read through `window_centres`, which handles a multi-channel window as
+    # well as a flat one: the registered record came back as (n, 300, 2), and
+    # a reader that recognised only the flat case would have called an
+    # ordinary two-lead block unreadable.
+    centres = window_centres(returned.get("beat"))
     window = BJ.WIN_BEFORE + BJ.WIN_AFTER
-    if beat_rows is None:
-        notes["beat"] = "not a two-dimensional numeric block; not used"
-    elif not beat_rows:
-        notes["beat"] = "no rows; nothing to cross-check"
-    elif len(beat_rows[0]) != window:
-        notes["beat"] = (f"width {len(beat_rows[0])} is not the registered "
-                         f"window {window}; not used")
+    if not centres:
+        notes["beat"] = (f"not a block of {window}-sample windows this reader "
+                         f"can take a centre from; not used")
     else:
-        centres = [row[BJ.WIN_BEFORE] for row in beat_rows]
+        # Either sign: the declared helpers are the identity in the primary
+        # variant and an elementwise negation in the probe, and there is more
+        # than one of them, so a window may pass through the transform more
+        # than once.  A sign cannot change *which* row is which, and the rows
+        # still come from `rr` either way — so accepting both costs nothing
+        # and refusing one would manufacture a stop out of bookkeeping.
         expected = [sign * float(s) for s in identity]
-        # Undoing the declared transform is the whole of the arithmetic here:
-        # multiplying by the same `sign` the contract states.  Nothing measures
-        # a distance, and nothing is snapped to a closest anything.
+        expected_twice = [float(s) for s in identity]
         recovered = [c * sign for c in centres]
-        if centres == expected:
+        if centres == expected or centres == expected_twice:
             channels[f"beat[:, {BJ.WIN_BEFORE}]"] = identity
         elif all(float(v) == int(v) and int(v) in peak_set for v in recovered):
             stop(f"the beat window centres name rows "
@@ -3092,22 +3177,37 @@ class LabelDictionary(object):
     a row-unique channel cannot poison a class-like one.
     """
 
-    __slots__ = ("by_token", "by_symbol")
+    __slots__ = ("by_token", "by_symbol", "by_class_token", "by_class")
 
     def __init__(self) -> None:
         self.by_token: Dict[str, Set[str]] = {}
         self.by_symbol: Dict[Tuple[str, str], Set[str]] = {}
+        # The same evidence again, grouped by **registered AAMI class**.
+        # A producer that writes a class code rather than a symbol — and the
+        # registered one writes `y` as int8 — teaches this map and not the one
+        # above: a token seen for `L` says nothing about the *symbol* `N`,
+        # while it says everything about the *class* `N`, which is what the
+        # producer was actually distinguishing.  The class comes from the
+        # frozen AAMI map both sides already use, so nothing is decoded here
+        # that was not registered.
+        self.by_class_token: Dict[str, Set[str]] = {}
+        self.by_class: Dict[Tuple[str, str], Set[str]] = {}
 
     @staticmethod
     def _key(token: Sequence[object]) -> str:
         return _canonical_json(list(token))
 
     def learn(self, tokens: Sequence[Sequence[object]], symbol: str) -> None:
+        aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")
         for token in tokens:
             self.by_token.setdefault(self._key(token), set()).add(symbol)
             channel = str(token[0]) if token else ""
             value = _canonical_json(token[1]) if len(token) > 1 else ""
             self.by_symbol.setdefault((channel, symbol), set()).add(value)
+            if aami:
+                self.by_class_token.setdefault(self._key(token),
+                                               set()).add(aami)
+                self.by_class.setdefault((channel, aami), set()).add(value)
 
     def symbols_for(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
         """Symbols consistent with every channel that has an opinion."""
@@ -3118,6 +3218,36 @@ class LabelDictionary(object):
         out = set(known[0])
         for other in known[1:]:
             out &= other
+        return out
+
+    def classes_for(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
+        """AAMI classes consistent with every channel that has an opinion."""
+        known = [set(self.by_class_token[self._key(t)]) for t in tokens
+                 if self._key(t) in self.by_class_token]
+        if not known:
+            return set()
+        out = set(known[0])
+        for other in known[1:]:
+            out &= other
+        return out
+
+    def excluded_classes(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
+        """Classes this row cannot carry, by the same negative evidence.
+
+        This is the one that settles a producer writing class codes: seeing
+        `0` on every row whose annotation is `L`, `R` or `e` says that a row
+        labelled `2` is not class `N` — even though the *symbol* `N` may never
+        have been seen at all.
+        """
+        out: Set[str] = set()
+        for token in tokens:
+            channel = str(token[0]) if token else ""
+            value = _canonical_json(token[1]) if len(token) > 1 else ""
+            for (known_channel, aami), values in self.by_class.items():
+                if known_channel != channel or len(values) != 1:
+                    continue
+                if value not in values:
+                    out.add(aami)
         return out
 
     def excluded_symbols(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
@@ -3140,9 +3270,49 @@ class LabelDictionary(object):
                     out.add(symbol)
         return out
 
-    def as_dict(self) -> Dict[str, List[str]]:
-        return {token: sorted(symbols)
-                for token, symbols in sorted(self.by_token.items())}
+    def as_dict(self) -> Dict[str, object]:
+        return {"by_token": {token: sorted(symbols)
+                             for token, symbols in sorted(
+                                 self.by_token.items())},
+                "by_class_token": {token: sorted(classes)
+                                   for token, classes in sorted(
+                                       self.by_class_token.items())}}
+
+
+def _settle_with(known: "LabelDictionary", tokens: Sequence[Sequence[object]],
+                 options: Sequence[int],
+                 annotations: Sequence[Mapping[str, object]]
+                 ) -> Optional[int]:
+    """Which candidate a producer's own row label points at, or `None`.
+
+    Four readings, tried in order and all of them observations of this
+    producer: the symbol its label has been seen on, the registered AAMI class
+    its label has been seen on, and the same two as negative evidence.  The
+    class level is what settles a producer that writes a class code — the
+    registered one writes `y` as int8 — because a token seen on every `L`, `R`
+    and `e` row says what class a differently-labelled row is *not*, while the
+    symbol `N` may never have been seen at all.
+    """
+    symbols = known.symbols_for(tokens)
+    if symbols:
+        matched = [index for index in options
+                   if annotations[index]["symbol"] in symbols]
+        if len(matched) == 1:
+            return matched[0]
+    classes = known.classes_for(tokens)
+    if classes:
+        matched = [index for index in options
+                   if annotations[index]["aami"] in classes]
+        if len(matched) == 1:
+            return matched[0]
+    excluded = known.excluded_symbols(tokens)
+    excluded_classes = known.excluded_classes(tokens)
+    matched = [index for index in options
+               if annotations[index]["symbol"] not in excluded
+               and annotations[index]["aami"] not in excluded_classes]
+    if len(matched) == len(options):
+        return None                  # nothing was ruled out; nothing is settled
+    return matched[0] if len(matched) == 1 else None
 
 
 def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
@@ -3160,6 +3330,7 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
     annotations = _annotation_table(fixture)
     peaks = _peak_table(fixture)
     name = str(fixture["name"])
+    dictionaries: List["LabelDictionary"] = [dictionary]
     discovered = discover_kept_rows(returned, fixture, variant)
     if discovery is not None:
         # Handed back to the caller by reference, so that the reading of the
@@ -3187,29 +3358,31 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
         if row is None:
             return None
         options = sorted(set(candidates))
-        symbols = dictionary.symbols_for(row["tokens"])
-        if symbols:
-            matched = [index for index in options
-                       if annotations[index]["symbol"] in symbols]
-        else:
-            excluded = dictionary.excluded_symbols(row["tokens"])
-            matched = [index for index in options
-                       if annotations[index]["symbol"] not in excluded]
-            if len(matched) == len(options):
-                return None          # nothing was ruled out; nothing is settled
-        return matched[0] if len(matched) == 1 else None
+        for known in dictionaries:
+            chosen = _settle_with(known, row["tokens"], options, annotations)
+            if chosen is not None:
+                return chosen
+        return None
 
     implied = implied_mappings(trace, fixture)
     merged, releases = merge_implied(implied["by_container"], side, name,
                                      settle=settle_by_row_label)
 
     # Rows whose annotation is already known teach the dictionary; the
-    # dictionary then settles the events that two readings left open.
+    # dictionary then settles the events that two readings left open.  They
+    # teach a **second, fixture-local** dictionary at the same time: the shared
+    # one accumulates across fixtures and a single channel that has been
+    # two-valued anywhere stops being usable as negative evidence everywhere,
+    # while this fixture's own rows are the most direct evidence there is about
+    # this fixture's labels and cannot be diluted by another one.
+    local_dictionary = LabelDictionary()
     for row in kept:
         pair = merged.get(peak_index_of.get(row["peak_sample"]))
         if pair is not None and pair["annotation_index"] is not None:
-            dictionary.learn(row["tokens"],
-                             annotations[pair["annotation_index"]]["symbol"])
+            symbol = annotations[pair["annotation_index"]]["symbol"]
+            dictionary.learn(row["tokens"], symbol)
+            local_dictionary.learn(row["tokens"], symbol)
+    dictionaries.append(local_dictionary)
     unresolved: List[str] = []
     for peak_index, entry in sorted(merged.items()):
         if entry["annotation_index"] is not None:
@@ -3239,7 +3412,18 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
             context={"fixture": name, "side": side, "variant": variant,
                      "unresolved": sorted(set(unresolved)),
                      "return_schema": discovered.get("return_schema"),
-                     "parser": discovered.get("parser")})
+                     "parser": discovered.get("parser"),
+                     # What the producer's own labels were understood to mean
+                     # when the settling failed.  Without it, "the row does not
+                     # settle it" is a fact with no cause attached, and the
+                     # 20260816T142848 stop cost a round trip working out that
+                     # the dictionary knew `L` but not `N`.
+                     "label_dictionary": dictionary.as_dict(),
+                     "fixture_label_dictionary": (
+                         dictionaries[-1].as_dict()
+                         if len(dictionaries) > 1 else {}),
+                     "row_tokens": [[r["peak_sample"], r["tokens"]]
+                                    for r in kept[:16]]})
 
     # What the dictionary already knows must agree with what the trace says.
     # A row whose label contradicts its mapped annotation means one of the two
@@ -3667,11 +3851,11 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "bind_source_arguments", "trace_call", "canonical_value", "growth_events",
     "_added_once", "_flipped_once", "_resolve_annotation_token",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
-    "probe_injection_invariance", "_elementwise",
+    "probe_injection_invariance", "_elementwise", "_settle_with",
     "discover_stub_surface",
     "discover_kept_rows", "_unreadable", "_public_attributes",
     "trace_summary", "_summarise_local",
-    "is_columnar_return", "is_incomplete_columnar_return",
+    "is_columnar_return", "is_incomplete_columnar_return", "window_centres",
     "columnar_keys_present", "project_columnar_rows", "return_schema_report",
     "_sequence_shape", "_row_width", "_numeric_rows", "_flat_tokens",
     "_as_lists", "_sequence_dtype",

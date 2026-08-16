@@ -2606,6 +2606,339 @@ def test_the_declared_surface_covers_the_compare_producer():
           "and the two columns it is declared for are registered ones")
 
 
+#: A producer that hands its compare helper the beat windows rather than the
+#: peaks, and routes its windows through two more declared helpers.  Both are
+#: what the 20260816T131241 run showed.
+WINDOW_ARGUMENT_PRODUCER = ARGUMENT_SHAPED_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS",
+    "from .frontend import (detect_r, rr_features, FS, _z, stack_ctx,\n"
+    "                       slope_channel, compare_features, beat_ctx)\n"
+    "from .pwave import pwave_features"
+).replace(
+    "    rr_all = rr_features(peaks, FS)",
+    "    windows = [_z([float(v[0]) for v in\n"
+    "                   x[int(peaks[i]) - WIN_BEFORE:"
+    "int(peaks[i]) + WIN_AFTER]])\n"
+    "               for i in keep]\n"
+    "    windows = slope_channel(stack_ctx(windows))\n"
+    "    ref_all, sim_all = compare_features(windows)\n"
+    "    ctx_all = beat_ctx(windows)\n"
+    "    pw_all = pwave_features(windows)\n"
+    "    rr_all = rr_features(peaks, FS)"
+).replace(
+    '    return {"beat": beats, "rr": [rr_all[i] for i in keep], "y": ys}',
+    '    return {"beat": beats, "ref": [list(r) for r in ref_all],\n'
+    '            "rr": [rr_all[i] for i in keep],\n'
+    '            "sim": [list(r) for r in sim_all],\n'
+    '            "pw": [list(r) for r in pw_all],\n'
+    '            "ctx": [list(r) for r in ctx_all], "y": ys}')
+
+
+#: A producer built to the shapes run `20260816T134407` showed the registered
+#: one returning: two-lead windows `(n, 300, 2)`, `compare_features` handed the
+#: windows rather than the peaks, integer class codes in `y`, and all seven
+#: columns.  Its **rule** is the adapter's, deliberately — this rehearses
+#: whether the harness can read the record, not what the record says.
+REGISTERED_SHAPED_PRODUCER = '''
+from .frontend import (detect_r, rr_features, FS, WIN_BEFORE, WIN_AFTER, _z,
+                       stack_ctx, slope_channel, compare_features, beat_ctx)
+from . import pwave as PW
+
+AAMI = {"N": "N", "L": "N", "R": "N", "e": "N", "j": "N",
+        "A": "S", "a": "S", "J": "S", "S": "S", "V": "V", "E": "V"}
+
+
+def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
+    x = sig
+    fs = FS
+    tol = int(0.15 * fs)
+    tpk = [int(s) for s in ann_sample]
+    tlb = [AAMI.get(str(s), "") for s in ann_symbol]
+    peaks = [int(p) for p in detect_r(slope_channel(x), fs)]
+    order = sorted(range(len(tpk)), key=lambda k: (tpk[k], k))
+    used = set()
+    kp, li = [], []
+    for i, p in enumerate(peaks):
+        best, bd = None, tol + 1
+        for rank in range(len(order)):
+            if rank in used:
+                continue
+            d = abs(tpk[order[rank]] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        used.add(best)
+        j = order[best]
+        if not tlb[j]:
+            continue
+        if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
+            continue
+        kp.append(p)
+        li.append(j)
+    valid = [[i, p] for i, p in enumerate(kp)]
+    idx = [i for i, _p in valid]
+    cuts = [_z([[float(v) for v in x[s]]
+                for s in range(p - WIN_BEFORE, p + WIN_AFTER)]) for p in kp]
+    cuts = stack_ctx(cuts)
+    ref, sim = compare_features(cuts)
+    ctx_all = beat_ctx(cuts)
+    pw_all = PW.pwave_features(cuts)
+    rr_all = rr_features(kp, fs)
+    y = [0 if tlb[j] == "N" else 1 for j in li]
+    return {"beat": cuts,
+            "ref": [list(r) for r in ref],
+            "rr": [list(rr_all[i]) for i in idx],
+            "sim": [list(r) for r in sim],
+            "pw": [list(r) for r in pw_all],
+            "ctx": [list(r) for r in ctx_all],
+            "y": y}
+'''
+
+
+def test_the_reader_handles_the_shapes_the_registered_record_came_back_with():
+    """A rehearsal of the real record, from the trace the run preserved.
+
+    Run `20260816T134407` ran the registered producer to completion and
+    returned all seven columns — `beat` with shape `(7, 300, 2)`, integer class
+    codes in `y` — and stopped only because `ref` and `sim` came back empty:
+    `compare_features` had been called without the peaks, and the stub answered
+    a call it did not recognise with no rows at all.
+
+    So the windows are read for what they are.  A sample may have more than one
+    channel, and a two-lead record is not an unreadable one.
+    """
+    result = differential_for(REGISTERED_SHAPED_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          f"the record shape the registered producer returns is read on all "
+          f"six fixtures: {result['fixtures_passed']}/6")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          f"and every fixture was probed invariant: {result['stub_invariance']}")
+    reading = result["detail"][0]["return_reading"]
+    check(reading["parser"] == "columnar", "through the columnar reader")
+    check(f"beat[:, {BJ.WIN_BEFORE}]" in reading["channels"],
+          f"with the two-lead beat block read as a cross-check channel rather "
+          f"than skipped: {reading['channels']}")
+    columns = reading["return_schema"]["columns"]
+    check(columns["beat"]["shape"][:1] == [len(reading["channel_sequences"]
+                                              ["rr[:, 0]"])],
+          f"every column describes the same rows: {columns}")
+    check(all(entry["return_reading"]["return_schema"]["columns"]["ref"]
+              ["shape"][0] ==
+              entry["return_reading"]["return_schema"]["columns"]["rr"]
+              ["shape"][0] for entry in result["detail"]),
+          "including ref, which is what the run stopped on")
+
+
+#: The registered rule, as three runs of trace now pin it: the nearest
+#: annotation over **all** of them, ties to the lowest list index, and a peak
+#: whose nearest is already consumed is **dropped** rather than falling
+#: through.  Class codes in `y` (N=0, S=1, V=2), which is what the record
+#: showed.  This is a stand-in for the source's *behaviour*, so the
+#: differential is expected to disagree with the adapter — on exactly the two
+#: fixtures built to catch these two decisions.
+SOURCE_RULE_PRODUCER = REGISTERED_SHAPED_PRODUCER.replace(
+    "    order = sorted(range(len(tpk)), key=lambda k: (tpk[k], k))\n", ""
+).replace("""        for rank in range(len(order)):
+            if rank in used:
+                continue
+            d = abs(tpk[order[rank]] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        used.add(best)
+        j = order[best]""",
+"""        for rank in range(len(tpk)):
+            d = abs(tpk[rank] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        if best in used:
+            continue
+        used.add(best)
+        j = best""").replace(
+    '    y = [0 if tlb[j] == "N" else 1 for j in li]',
+    '    y = [0 if tlb[j] == "N" else (1 if tlb[j] == "S" else 2) for j in li]')
+
+
+def test_a_class_code_settles_what_a_symbol_never_taught():
+    """The stop of `20260816T142848`, and why the dictionary could not settle it.
+
+    Candidates `V` and `N`; the row is labelled `2`; and by then the producer
+    had taught the dictionary `L`, `R`, `e`, `A`, `J`, `a` — every filler
+    symbol — but never the symbol `N` itself.  Keyed by symbol there is
+    nothing to say.  Keyed by **registered AAMI class** there is everything:
+    `0` has been the label on every `N`-class row, so a row labelled `2` is not
+    class `N`, whatever its symbol turns out to be.
+    """
+    dictionary = P3.LabelDictionary()
+    dictionary.learn([["columnar_y", "0"]], "L")             # class N
+    dictionary.learn([["columnar_y", "1"]], "A")             # class S
+    token = [["columnar_y", "2"]]
+    check(dictionary.symbols_for(token) == set()
+          and "N" not in dictionary.excluded_symbols(token),
+          "keyed by symbol, a row labelled 2 rules out nothing about 'N'")
+    check("N" in dictionary.excluded_classes(token)
+          and "V" not in dictionary.excluded_classes(token),
+          f"keyed by class it rules out N and leaves V: "
+          f"{sorted(dictionary.excluded_classes(token))}")
+    check(BJ.AAMI_SYMBOL_MAP["L"] == "N" and BJ.AAMI_SYMBOL_MAP["V"] == "V",
+          "and the class comes from the frozen map both sides already use")
+    published = dictionary.as_dict()
+    check("by_class_token" in published and "by_token" in published,
+          f"both readings are published for the bundle: {published}")
+
+
+def test_a_fixtures_own_rows_settle_it_even_when_the_shared_one_cannot():
+    """A shared dictionary can be diluted; a fixture's own rows cannot.
+
+    Negative evidence needs a channel that has been *single-valued* for a
+    symbol or a class.  One fixture writing two different labels for the same
+    class — for any reason, including a producer this PREP has not seen yet —
+    silently disables that evidence everywhere afterwards.  The fixture's own
+    resolved rows are the most direct evidence there is about its own labels,
+    and they cannot be diluted by another fixture, so the settler consults them
+    too.
+    """
+    annotations = [{"symbol": "V", "aami": "V"}, {"symbol": "N", "aami": "N"}]
+    token = [["columnar_y", "2"]]
+    diluted = P3.LabelDictionary()
+    diluted.learn([["columnar_y", "0"]], "L")                # class N
+    diluted.learn([["columnar_y", "9"]], "R")                # class N again
+    check(P3._settle_with(diluted, token, [0, 1], annotations) is None,
+          "a channel that has been two-valued for a class settles nothing, "
+          "which is the correct refusal rather than a guess")
+    local = P3.LabelDictionary()
+    local.learn([["columnar_y", "0"]], "L")
+    local.learn([["columnar_y", "1"]], "A")
+    check(P3._settle_with(local, token, [0, 1], annotations) == 0,
+          "while a clean dictionary rules out the N-class candidate and "
+          "leaves the V one")
+    check(P3._settle_with(P3.LabelDictionary(), token, [0, 1],
+                          annotations) is None,
+          "and an empty dictionary settles nothing at all")
+    import inspect
+    source = inspect.getsource(P3.project_observation)
+    check("local_dictionary" in source and "dictionaries" in source,
+          "the projection builds a fixture-local dictionary beside the shared "
+          "one")
+    check(source.index("dictionaries.append") <
+          source.index("chosen = settle_by_row_label"),
+          "and learns into it before the settling pass that needs it")
+
+
+def test_the_registered_rule_is_reported_rather_than_stopping_the_run():
+    """The rehearsal that matters: the source's behaviour, not just its shapes.
+
+    Peak 1012's nearest annotation is taken, and the registered producer drops
+    the peak instead of falling through; a tie goes to the lower list index
+    rather than the earlier sample.  Two of the six fixtures exist to catch
+    exactly those, and the run must *report* them — a projection that cannot
+    read the trace would turn a detected difference into "the harness could not
+    tell", which is the worst direction for this PREP to fail in.
+    """
+    result = differential_for(SOURCE_RULE_PRODUCER)
+    check(result["all_equal"] is False and result["fixtures_passed"] == 4,
+          f"four fixtures agree and two disagree: "
+          f"{result['fixtures_passed']}/6")
+    disagreed = sorted(entry["name"] for entry in result["detail"]
+                       if not entry["equal"])
+    check(disagreed == ["test_source_match_annotation_order_differing_from_"
+                        "sample_order",
+                        "test_source_match_nearest_already_used_falls_through"],
+          f"and they are the two built for these decisions: {disagreed}")
+    for entry in result["detail"]:
+        if entry["equal"]:
+            continue
+        fields = {difference["field"] for difference in entry["difference"]}
+        check({"kept_rows", "consumed_annotations"} <= fields,
+              f"{entry['name']}: the difference is in the rows kept and the "
+              f"annotations consumed: {sorted(fields)}")
+    check(P3.candidate_record(result, "a" * 64, "b" * 64, "c" * 64) is None,
+          "a differential with a disagreement yields no candidate at all")
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "and nothing is registered by observing one")
+
+
+def test_a_window_block_is_read_flat_or_multi_channel():
+    """One reader for both, so the two cannot drift apart."""
+    peaks = [1000, 1500]
+    flat = [[float(s) for s in range(p - BJ.WIN_BEFORE, p + BJ.WIN_AFTER)]
+            for p in peaks]
+    two_lead = [[[float(s)] * 2
+                 for s in range(p - BJ.WIN_BEFORE, p + BJ.WIN_AFTER)]
+                for p in peaks]
+    check(P3.window_centres(flat) == [1000.0, 1500.0],
+          "a flat window block names its centres")
+    check(P3.window_centres(two_lead) == [1000.0, 1500.0],
+          "and so does a two-lead one, from the first channel")
+    check(P3.window_centres([[1.0, 2.0], [3.0, 4.0]]) == [],
+          "a block that is not window-shaped is simply not this channel")
+    check(P3.window_centres([]) == [] and P3.window_centres(None) == [],
+          "and neither is nothing at all")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        ref, _sim = sys.modules["frontend"].compare_features(two_lead)
+    check([list(row)[0] for row in ref] == [1000.0, 1500.0],
+          "a helper handed two-lead windows still returns aligned rows")
+
+
+def test_a_helper_called_without_the_peaks_still_returns_aligned_rows():
+    """A column of the wrong length is a column the reader must refuse.
+
+    Run `20260816T131241` called `compare_features` with **no peak list**
+    (`given: [0]`), so a stub that answers only to peaks would have put an
+    empty column into a record whose other columns had seven rows.  The
+    windows say which rows they are: the injected signal is a ramp, so a
+    stored window's centre sample is the peak it was cut around — the same
+    declared property the beat cross-check reads.
+    """
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    peaks = [int(p) for p in P3.FIXTURES[0]["peaks"]][:3]
+    windows = [[0.0] * BJ.WIN_BEFORE + [float(p)]
+               + [0.0] * (BJ.WIN_AFTER - 1) for p in peaks]
+    with P3.InjectedModules(stubs):
+        frontend = sys.modules["frontend"]
+        ref, sim = frontend.compare_features(windows)
+        ctx = frontend.beat_ctx(windows)
+    for label, block in (("ref", ref), ("sim", sim), ("ctx", ctx)):
+        rows = [list(row) for row in block]
+        check([row[0] for row in rows] == [float(p) for p in peaks],
+              f"{label} recovers its rows from the windows: {rows}")
+    negated = [[-v for v in row] for row in windows]
+    with P3.InjectedModules(stubs):
+        ref_negated, _sim = sys.modules["frontend"].compare_features(negated)
+    check([list(row)[0] for row in ref_negated] == [float(p) for p in peaks],
+          "and a window that passed through a negating probe names the same "
+          "rows, because a sign cannot change which row is which")
+    result = differential_for(WINDOW_ARGUMENT_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer shaped this way agrees on all six fixtures")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          f"and every fixture was probed: {result['stub_invariance']}")
+
+
+def test_every_declared_helper_is_the_identity_and_is_probed():
+    """Shape-unknown helpers get the one stand-in that claims nothing."""
+    check(P3.FRONTEND_STUB_FUNCTIONS == ("_z", "stack_ctx", "slope_channel"),
+          f"the declared helpers are the three the runs found: "
+          f"{P3.FRONTEND_STUB_FUNCTIONS}")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    probe, _log = P3.build_injection(P3.FIXTURES[0],
+                                     variant=P3.STUB_VARIANT_PROBE)
+    for name in P3.FRONTEND_STUB_FUNCTIONS:
+        value = [[1.0, -2.0], [3.0, 4.0]]
+        check(stubs[name](value) == value,
+              f"{name} hands its argument straight back")
+        check(probe[name](value) == [[-1.0, 2.0], [-3.0, -4.0]],
+              f"and the probe variant of {name} negates it elementwise")
+        check(name in P3.INJECTED_GLOBALS,
+              f"{name} is part of the injected surface, so it is folded into "
+              f"the harness identity")
+
+
 def test_the_discovery_pass_reads_an_arity_back_and_keeps_going():
     """A stand-in that unpacks into nothing ends the pass one name early.
 
