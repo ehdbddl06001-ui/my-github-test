@@ -263,12 +263,39 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
                  "original-ordinal mapping, the stop on duplicate or "
                  "conflicting spaces, the approval closure, the harness-digest "
                  "binding and the notebook separation"),
-    "not_yet_qualified": (
-        "the 3-of-6 count and the non-AAMI fixture's source detail from run "
-        "20260816T161639 are NOT results of this harness; they are re-derived "
-        "by the re-run this approval opens, and until then only the two "
-        "qualified mismatches (nearest-used drop, original list order) carry "
-        "the equivalence verdict"),
+    # This field is written verbatim into the bundle's `config.json`, so a
+    # stale claim here becomes a stale claim in the record of every future run.
+    # It said the 3-of-6 count and the non-AAMI detail were "not results" that
+    # the next run would re-derive.  That was true of the grant it was written
+    # for, and it stopped being true when 20260816T192351 re-derived them under
+    # the corrected projection (D32) and the owner accepted them (D33).  It is
+    # kept, moved into history and labelled, rather than deleted.
+    "previous_grant_context": {
+        "applied_to": "the grant of 2026-08-16 for oracle harness 4127809f…, "
+                      "which opened run 20260816T192351",
+        "said_at_the_time": (
+            "the 3-of-6 count and the non-AAMI fixture's source detail from "
+            "run 20260816T161639 are NOT results of this harness; they are "
+            "re-derived by the re-run this approval opens, and until then only "
+            "the two qualified mismatches (nearest-used drop, original list "
+            "order) carry the equivalence verdict"),
+        "superseded_by": (
+            "D32 — the re-run re-derived all three under the corrected "
+            "projection, so the non-AAMI mismatch is qualified and the count "
+            "is a measured 3 of 6; D33 — the owner accepted that result "
+            "without a re-run, with the executed notebook recorded as not "
+            "preserved and the manifest anchored to the registered record"),
+    },
+    "already_decided": (
+        "run 20260816T192351 is the confirmed P3 result: "
+        "SOURCE_MATCH_EQUIVALENCE_REQUIRED, 3 of 6, all three mismatches "
+        "qualified (nearest-used drop, non-AAMI filtered before matching, "
+        "reader list order).  No future run re-derives this verdict"),
+    "what_the_next_run_decides": (
+        "whether the adapter corrected in D34 agrees with the registered "
+        "source on all six fixtures.  6 of 6 with no harness stop is the only "
+        "outcome that creates a SOURCE_MATCH_ORACLE_RECORD; anything else "
+        "creates none"),
     "closed_on": "2026-08-16",
     # The digest this record names is the harness as it stands, so a *later*
     # change still closes the door on its own; `granted` is what a fresh
@@ -5128,8 +5155,16 @@ def design_card() -> str:
         f"  required fixtures    : {len(REQUIRED_FIXTURES)}",
         f"  OPEN_REGISTERED_DATA : {OPEN_REGISTERED_DATA}",
         f"  execution approval   : {_approval_line()}",
-        f"  approval bound to    : "
+        # Both operands, because the approval binds both.  Printing only the
+        # harness is how the adapter went unbound in the first place.
+        f"  approval bound to    : oracle harness "
         f"{EXECUTION_APPROVAL_RECORD.get('for_oracle_harness_sha256')}",
+        f"                         adapter       "
+        f"{EXECUTION_APPROVAL_RECORD.get('for_adapter_fingerprint')}",
+        f"  this module compares : oracle harness "
+        f"{oracle_harness_identity()['oracle_harness_sha256']}",
+        f"                         adapter       "
+        f"{Q5E.source_match_adapter_fingerprint()}",
         f"  ORACLE_RECORD        : {Q5E.SOURCE_MATCH_ORACLE_RECORD!r} "
         f"(unchanged by this module)",
         "",

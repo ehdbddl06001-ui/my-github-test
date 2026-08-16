@@ -481,6 +481,50 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D36 (2026-08-16) — second `CHANGES_REQUIRED`: the approval record still
+contradicted the accepted verdict.**  D35's three fixes were confirmed — the
+gate checks both identities and does so before authentication, Drive, the
+registered read, compile and `mkdir`; the choice not to instrument
+`load_source_under_injection` was accepted as the more accurate one; the stale
+public wording, the row-block regressions and the replaced mutation all
+passed; and the adapter rule and fingerprint were confirmed unmoved.  One
+contradiction remained, in the field D35 had not looked at.
+
+**`EXECUTION_APPROVAL_RECORD["not_yet_qualified"]`** still said the 3-of-6
+count and the non-AAMI detail were *not* results, that the next run would
+re-derive them, and that only two mismatches carried the verdict.  Every
+clause of that was true of the grant it was written for and false after D32
+re-derived all three under the corrected projection and D33 accepted them.
+The new `APPROVAL_NOTE` said one thing and the record beside it said the
+opposite.
+
+This mattered more than a comment would, for two reasons the review named:
+the record is copied **verbatim into every bundle's `config.json`**, so a
+stale claim here becomes a stale claim in the permanent record of every future
+run; and a test was **pinning the stale wording**, so the contradiction was
+being actively defended.
+
+The claim is **moved into history, not deleted** — `previous_grant_context`
+keeps it word for word, attached to the grant it applied to (`4127809f…`, the
+one that opened `20260816T192351`) and to what superseded it (D32, D33).  Two
+fields state the present in its place: `already_decided` — the confirmed
+result, and that no future run re-derives it — and `what_the_next_run_decides`
+— whether the D34 adapter is 6 of 6, with no `SOURCE_MATCH_ORACLE_RECORD` on
+any other outcome.  The test is inverted to pin exactly that: `not_yet_
+qualified` must be **absent**, the history must name its grant and its
+superseders, and the two present-tense fields must say what they say.
+
+`design_card()` printed `approval bound to` as the harness digest alone.
+Printing one operand is how the adapter went unbound in the first place, so
+the card now prints both identities the approval binds **and** both the module
+would actually compare, labelled, so a mismatch on either is readable without
+running anything.  Pinned by the design-card test.
+
+Neither identity moved: the harness stays `4a06fa07…` and the adapter stays
+`5a889e6b…` — `EXECUTION_APPROVAL_RECORD` is not folded into the harness
+digest and `design_card` is not one of `ORACLE_HARNESS_FUNCTIONS`.  Execution
+stays closed, and the fresh approval still has to name both.
+
 **D35 (2026-08-16) — Codex returned `CHANGES_REQUIRED` on D34; three narrow
 blockers closed.**  The adapter rule, the positive-control argument, the
 fixtures, the filler, the tolerance and the AAMI map were all accepted; what

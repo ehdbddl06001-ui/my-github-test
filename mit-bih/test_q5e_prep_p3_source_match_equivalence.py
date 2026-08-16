@@ -289,10 +289,27 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     check(record["granted_at_merge_commit"].startswith("ee3841f")
           and "P3_IMPLEMENTATION_ACCEPTED" in str(record["reviewed"]),
           "naming the merge commit it was given at and the review it followed")
-    check("3-of-6 count" in str(record["not_yet_qualified"])
-          and "non-AAMI" in str(record["not_yet_qualified"]),
-          "and carrying, beside the grant, what this run must NOT be used to "
-          "confirm — the numbers the previous harness reported")
+    check("not_yet_qualified" not in record,
+          "the record no longer claims the 3-of-6 count and the non-AAMI "
+          "detail are unqualified: 20260816T192351 re-derived them (D32) and "
+          "they were accepted (D33), and this field is copied verbatim into "
+          "every bundle's config.json")
+    history = record["previous_grant_context"]
+    check("4127809f" in str(history["applied_to"])
+          and "3-of-6 count" in str(history["said_at_the_time"]),
+          "the claim is kept as history, attached to the grant it was true of")
+    check("D32" in str(history["superseded_by"])
+          and "D33" in str(history["superseded_by"]),
+          "and says what superseded it")
+    check("3 of 6" in str(record["already_decided"])
+          and "No future run re-derives this verdict"
+          in str(record["already_decided"]),
+          "while the record states the confirmed result as already decided")
+    check("D34" in str(record["what_the_next_run_decides"])
+          and "six fixtures" in str(record["what_the_next_run_decides"])
+          and "creates none" in str(record["what_the_next_run_decides"]),
+          "and states that the next run decides the corrected adapter's 6-of-6 "
+          "instead, with no record created on any other outcome")
     check(record["closed_on"] == "2026-08-16"
           and "filtered annotation index" in str(record["closed_because"]),
           "while keeping the closure it supersedes and the reason for it")
@@ -4437,9 +4454,18 @@ def test_module_capabilities_are_all_present():
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")
-    check(P3.EXECUTION_APPROVAL_RECORD["for_oracle_harness_sha256"] in card,
-          "and the harness digest the approval is bound to, beside the "
-          "harness digest the module actually has")
+    # Both operands, both sides.  Printing only the harness is how the adapter
+    # went unbound in the first place, so the card must not go back to it.
+    check(P3.EXECUTION_APPROVAL_RECORD["for_oracle_harness_sha256"] in card
+          and P3.EXECUTION_APPROVAL_RECORD["for_adapter_fingerprint"] in card,
+          "the card names BOTH identities the approval is bound to, not the "
+          "harness alone")
+    check(str(P3.oracle_harness_identity()["oracle_harness_sha256"]) in card
+          and str(Q5E.source_match_adapter_fingerprint()) in card,
+          "beside both identities this module would actually compare, so a "
+          "mismatch on either is readable without running anything")
+    check("approval bound to" in card and "this module compares" in card,
+          "and labels which pair is which")
     check("OPEN_REGISTERED_DATA : False" in card,
           "and that the switch default is still shut")
     for name in P3.fixture_names():
