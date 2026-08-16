@@ -245,16 +245,17 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "514076e8e37e0e75285b1149146745921dc6fc01ba2aa776bb158c857274678d"),
+        "3ba854583ce1062c28df287eec630da74d59b1b17174569297952b8fbe6daf80"),
     "renewed_for_this_harness_because": (
-        "run 20260816T134407 ran the registered producer to completion and "
-        "returned all seven columns; it stopped only because ref and sim came "
-        "back empty, the beat windows being (n, 300, 2) rather than flat.  "
-        "The reader, the row producers and the probe now handle a "
-        "multi-channel window at any nesting depth.  Reader and injection "
-        "surface only; the fixtures (as revised in D21, which the spec owner "
-        "should still review), the rule, the tolerance and the verdict "
-        "criteria are unchanged"),
+        "run 20260816T142848 read the whole record and stopped in the "
+        "projection: a row labelled with a class code could not be settled "
+        "against candidates V and N, because the label dictionary was keyed "
+        "by symbol and had learned L but never N.  It now learns and settles "
+        "by registered AAMI class as well, which is the level a producer "
+        "writing y as int8 is actually distinguishing.  Projection only; the "
+        "fixtures (as revised in D21, which the spec owner should still "
+        "review), the rule, the tolerance and the verdict criteria are "
+        "unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -3177,22 +3178,37 @@ class LabelDictionary(object):
     a row-unique channel cannot poison a class-like one.
     """
 
-    __slots__ = ("by_token", "by_symbol")
+    __slots__ = ("by_token", "by_symbol", "by_class_token", "by_class")
 
     def __init__(self) -> None:
         self.by_token: Dict[str, Set[str]] = {}
         self.by_symbol: Dict[Tuple[str, str], Set[str]] = {}
+        # The same evidence again, grouped by **registered AAMI class**.
+        # A producer that writes a class code rather than a symbol — and the
+        # registered one writes `y` as int8 — teaches this map and not the one
+        # above: a token seen for `L` says nothing about the *symbol* `N`,
+        # while it says everything about the *class* `N`, which is what the
+        # producer was actually distinguishing.  The class comes from the
+        # frozen AAMI map both sides already use, so nothing is decoded here
+        # that was not registered.
+        self.by_class_token: Dict[str, Set[str]] = {}
+        self.by_class: Dict[Tuple[str, str], Set[str]] = {}
 
     @staticmethod
     def _key(token: Sequence[object]) -> str:
         return _canonical_json(list(token))
 
     def learn(self, tokens: Sequence[Sequence[object]], symbol: str) -> None:
+        aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")
         for token in tokens:
             self.by_token.setdefault(self._key(token), set()).add(symbol)
             channel = str(token[0]) if token else ""
             value = _canonical_json(token[1]) if len(token) > 1 else ""
             self.by_symbol.setdefault((channel, symbol), set()).add(value)
+            if aami:
+                self.by_class_token.setdefault(self._key(token),
+                                               set()).add(aami)
+                self.by_class.setdefault((channel, aami), set()).add(value)
 
     def symbols_for(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
         """Symbols consistent with every channel that has an opinion."""
@@ -3203,6 +3219,36 @@ class LabelDictionary(object):
         out = set(known[0])
         for other in known[1:]:
             out &= other
+        return out
+
+    def classes_for(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
+        """AAMI classes consistent with every channel that has an opinion."""
+        known = [set(self.by_class_token[self._key(t)]) for t in tokens
+                 if self._key(t) in self.by_class_token]
+        if not known:
+            return set()
+        out = set(known[0])
+        for other in known[1:]:
+            out &= other
+        return out
+
+    def excluded_classes(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
+        """Classes this row cannot carry, by the same negative evidence.
+
+        This is the one that settles a producer writing class codes: seeing
+        `0` on every row whose annotation is `L`, `R` or `e` says that a row
+        labelled `2` is not class `N` — even though the *symbol* `N` may never
+        have been seen at all.
+        """
+        out: Set[str] = set()
+        for token in tokens:
+            channel = str(token[0]) if token else ""
+            value = _canonical_json(token[1]) if len(token) > 1 else ""
+            for (known_channel, aami), values in self.by_class.items():
+                if known_channel != channel or len(values) != 1:
+                    continue
+                if value not in values:
+                    out.add(aami)
         return out
 
     def excluded_symbols(self, tokens: Sequence[Sequence[object]]) -> Set[str]:
@@ -3225,9 +3271,13 @@ class LabelDictionary(object):
                     out.add(symbol)
         return out
 
-    def as_dict(self) -> Dict[str, List[str]]:
-        return {token: sorted(symbols)
-                for token, symbols in sorted(self.by_token.items())}
+    def as_dict(self) -> Dict[str, object]:
+        return {"by_token": {token: sorted(symbols)
+                             for token, symbols in sorted(
+                                 self.by_token.items())},
+                "by_class_token": {token: sorted(classes)
+                                   for token, classes in sorted(
+                                       self.by_class_token.items())}}
 
 
 def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
@@ -3276,12 +3326,27 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
         if symbols:
             matched = [index for index in options
                        if annotations[index]["symbol"] in symbols]
-        else:
-            excluded = dictionary.excluded_symbols(row["tokens"])
+            if len(matched) == 1:
+                return matched[0]
+        # Then the same question at the level the producer actually writes.
+        # The registered one writes `y` as a class code, so a token seen on
+        # every `L`, `R` and `e` row says what class a differently-labelled row
+        # is *not* — while the symbol `N` may never have been seen at all.  The
+        # 20260816T142848 run stopped exactly there: candidates `V` and `N`,
+        # a row labelled `2`, and a dictionary that knew `L` but not `N`.
+        classes = dictionary.classes_for(row["tokens"])
+        if classes:
             matched = [index for index in options
-                       if annotations[index]["symbol"] not in excluded]
-            if len(matched) == len(options):
-                return None          # nothing was ruled out; nothing is settled
+                       if annotations[index]["aami"] in classes]
+            if len(matched) == 1:
+                return matched[0]
+        excluded = dictionary.excluded_symbols(row["tokens"])
+        excluded_classes = dictionary.excluded_classes(row["tokens"])
+        matched = [index for index in options
+                   if annotations[index]["symbol"] not in excluded
+                   and annotations[index]["aami"] not in excluded_classes]
+        if len(matched) == len(options):
+            return None              # nothing was ruled out; nothing is settled
         return matched[0] if len(matched) == 1 else None
 
     implied = implied_mappings(trace, fixture)
@@ -3324,7 +3389,15 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
             context={"fixture": name, "side": side, "variant": variant,
                      "unresolved": sorted(set(unresolved)),
                      "return_schema": discovered.get("return_schema"),
-                     "parser": discovered.get("parser")})
+                     "parser": discovered.get("parser"),
+                     # What the producer's own labels were understood to mean
+                     # when the settling failed.  Without it, "the row does not
+                     # settle it" is a fact with no cause attached, and the
+                     # 20260816T142848 stop cost a round trip working out that
+                     # the dictionary knew `L` but not `N`.
+                     "label_dictionary": dictionary.as_dict(),
+                     "row_tokens": [[r["peak_sample"], r["tokens"]]
+                                    for r in kept[:16]]})
 
     # What the dictionary already knows must agree with what the trace says.
     # A row whose label contradicts its mapped annotation means one of the two

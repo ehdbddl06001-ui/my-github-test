@@ -481,6 +481,60 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D27 (2026-08-16) — the record read cleanly; the projection could not settle
+a class code.  A row labelled `2` said nothing about a symbol nobody had
+taught.**  Run `20260816T142848` read the whole record — all seven columns
+`row_aligned=True` — and stopped in the projection on the fifth fixture: *peak
+0 consumed an annotation the trace identifies only as one of [0, 1], and the
+row it produced does not settle it*.
+
+The ambiguity is the ordinary one: an integer in the trace can be a list
+position or a sample rank, and in that fixture the two readings differ for the
+first annotation only.  The candidates were `V` (index 0, sample 1060) and `N`
+(index 1, sample 1000).  The row carried the producer's own label, `2`.
+
+The dictionary is keyed by **symbol**.  By that fixture the producer had taught
+it `L`, `R`, `e`, `A`, `J`, `a` — every filler symbol — and never the symbol
+`N`, because the rows that would have taught it were themselves settled rather
+than resolved, and a settled row is not fed back.  So `excluded_symbols` could
+rule out `L` and `A` and had nothing to say about `N`, and the run stopped.
+
+Keyed by **registered AAMI class** there is everything to say: `0` has been the
+label on every `N`-class row this producer wrote, so a row labelled `2` is not
+class `N`, whatever its symbol turns out to be.  The dictionary now learns and
+settles at both levels — the class from the frozen AAMI map both sides already
+use, so nothing is decoded here that was not registered.  A producer that
+writes `y` as an int8 class code, which the registered one does, is
+distinguishing classes; the symbol level simply could not see what it was
+saying.  The stop also carries the dictionary and the row tokens now, so a
+failure to settle says *why*.
+
+**The registered rule, as three runs of trace now pin it.**  Not reported as a
+verdict — no comparison has completed — but recorded, because it is what the
+next run is expected to show:
+
+* the nearest annotation over **all** of them, ties to the lowest list index;
+* a peak whose nearest is already consumed is **dropped**, not passed on to the
+  next-nearest — and the annotation is not consumed either;
+* `y` is a class code, `N=0`, `S=1`, `V=2`.
+
+`SOURCE_RULE_PRODUCER` is built to exactly that and the harness now **reports**
+it: 4 of 6 agree, and the two that disagree are
+`test_source_match_nearest_already_used_falls_through` and
+`test_source_match_annotation_order_differing_from_sample_order` — the two
+fixtures built for those two decisions.  No candidate is produced from a
+differential with a disagreement, and nothing is registered by observing one.
+
+That is the whole point of this PREP arriving: the candidate adapter,
+transcribed from prose, appears to differ from the registered source on two
+decisions.  It becomes a finding when the run completes on all six fixtures,
+and the adapter is not touched here.
+
+Regressions: `test_a_class_code_settles_what_a_symbol_never_taught` and
+`test_the_registered_rule_is_reported_rather_than_stopping_the_run`.  Suite:
+113 functions, 1,174 assertions.  Bundle `a8826fd4…` / manifest `28f162aa…` at
+`runs/20260816T142848_…` is preserved.
+
 **D26 (2026-08-16) — the registered producer ran to completion and returned
 the whole record.  A beat is two-lead, and the harness was reading it flat.**
 Run `20260816T134407` is the first that got the registered `build_record` all
