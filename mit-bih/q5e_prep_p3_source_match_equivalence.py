@@ -241,13 +241,22 @@ NOT_APPROVED: Tuple[str, ...] = (
 #: readable from the code and not only from a spec.  Setting `granted` back to
 #: `False` restores every refusal exactly, with no other change anywhere.
 #:
-#: **Re-granted on 2026-08-16**, after Codex returned `P3_IMPLEMENTATION_
-#: ACCEPTED` on the corrected projection.  It names the harness digest and the
-#: merge commit it was given for, so it opens *that* oracle and no other: the
-#: previous grant was closed when the filtered-index defect was fixed, and the
-#: same rule closes this one the moment the harness moves again.
+#: **Closed again on 2026-08-16**, for the adapter-correction PR.  The
+#: candidate adapter was rewritten from the observed decisions of run
+#: `20260816T192351`, so both identities this PREP compares have moved: the
+#: adapter fingerprint, and — through the label-vector reading the correction
+#: exposed — the oracle harness.  An approval given for the pair that produced
+#: that run is not an approval of this one.  Re-opening it is a separate PR,
+#: after review, and the run that follows starts from the first fixture.
 EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
-    "granted": True,
+    "granted": False,
+    "closed_again_on": "2026-08-16",
+    "closed_again_because": (
+        "the candidate adapter was corrected from the observed decisions of "
+        "run 20260816T192351, so the adapter fingerprint moved and the "
+        "harness moved with the label-vector reading that correction "
+        "exposed; the approval that produced that run was given for the "
+        "previous pair and does not carry over"),
     "granted_at_merge_commit": "ee3841f17ef5eea879c2a75bdf7ceaf5963348ec",
     "reviewed": ("P3_IMPLEMENTATION_ACCEPTED (Codex, 2026-08-16, PR #162): "
                  "annotation_index_spaces() and the filtered-position to "
@@ -264,7 +273,7 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     # The digest this record names is the harness as it stands, so a *later*
     # change still closes the door on its own; `granted` is what a fresh
     # approval flips, and the diff that flips it shows the digest it is for.
-    "for_oracle_harness_sha256": "4127809f323eb2bf793065e85781eff0edb4f1f828dbfe04ac784df24b832a67",
+    "for_oracle_harness_sha256": "71dd6606f923f8b95abc22dc85e3686542586f8575a2dce9312639384ed154ea",
     "closed_because": (
         "Codex reviewed run 20260816T161639 and found the source projection "
         "read a filtered annotation index in the reader's index space, so the "
@@ -3309,6 +3318,16 @@ def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
                 if all(isinstance(v, int) and v in peak_set for v in node):
                     return
                 found.append((path, [_canonical_json(v) for v in node]))
+                return
+            if n_rows and len(node) == n_rows and node and all(
+                    isinstance(item, list) and len(item) == len(node[0])
+                    for item in node):
+                # A block with one entry per row is row data, and the row
+                # channels have already read it.  Recursing would offer each
+                # *row* as a per-row vector, which is only distinguishable
+                # from a column when the block is not square — and a square
+                # one would hand the projection a transposed reading of
+                # itself, with tokens that look stable and mean nothing.
                 return
             for index, item in enumerate(node[:MAX_CONTAINER]):
                 if isinstance(item, (list, dict)):

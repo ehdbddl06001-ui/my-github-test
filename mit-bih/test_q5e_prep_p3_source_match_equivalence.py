@@ -23,6 +23,7 @@ import json
 import os
 import sys
 import tempfile
+import textwrap
 import types
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -81,7 +82,8 @@ def build_record(rec, ddir, fs=360, use_detected=True):
     tol = int(0.15 * fs)
     samples = [int(s) for s in ann.sample]
     symbols = list(ann.symbol)
-    order = sorted(range(len(samples)), key=lambda k: (samples[k], k))
+    order = [k for k in range(len(samples)) if AAMI.get(symbols[k], "")]
+    tpk = [samples[k] for k in order]
     used = set()
     beats = []
     ys = []
@@ -89,20 +91,18 @@ def build_record(rec, ddir, fs=360, use_detected=True):
     for i, p in enumerate(peaks):
         p = int(p)
         best = None
-        bd = tol + 1
+        bd = None
         for rank in range(len(order)):
-            if rank in used:
-                continue
-            d = abs(samples[order[rank]] - p)
-            if d < bd:
+            d = abs(tpk[rank] - p)
+            if bd is None or d < bd:
                 best, bd = rank, d
         if best is None or bd > tol:
+            continue
+        if best in used:
             continue
         used.add(best)
         j = order[best]
         cls = AAMI.get(symbols[j], "")
-        if not cls:
-            continue
         if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
             continue
         keep.append(i)
@@ -118,30 +118,33 @@ def build_record(rec, ddir, fs=360, use_detected=True):
 #: _decision_no_other_fixture_catches` fails if a variant is caught by the
 #: wrong fixture, by several, or by none.
 VARIANTS = {
-    # A peak whose nearest annotation is taken is dropped instead of falling
-    # through to the next-nearest.
-    "drop_if_nearest_used": (
-        [("        for rank in range(len(order)):\n"
+    # A peak whose nearest annotation is taken falls through to the
+    # next-nearest instead of being dropped.
+    "fall_through_when_nearest_used": (
+        [("        for rank in range(len(order)):\n",
+          "        for rank in range(len(order)):\n"
           "            if rank in used:\n"
-          "                continue\n",
-          "        for rank in range(len(order)):\n"),
-         ("        used.add(best)\n",
-          "        if best in used:\n            continue\n"
-          "        used.add(best)\n")],
+          "                continue\n"),
+         ("        if best in used:\n            continue\n", "")],
         "test_source_match_nearest_already_used_falls_through"),
-    # An exact distance tie goes to the annotation later in the reader's list.
-    "tie_to_larger_list_index": (
-        [("            if d < bd:\n",
-          "            if d < bd or (d == bd and best is not None\n"
-          "                          and order[rank] > order[best]):\n")],
+    # An exact distance tie is broken by the sample value rather than by the
+    # position in the reader's list.  Under the registered rule those two are
+    # the same thing whenever the list happens to be in sample order, so the
+    # mutation is written as "the larger sample wins": it moves the answer in
+    # the tie fixture, whose list *is* in sample order, and leaves the
+    # order fixture — whose list is not — exactly where it was.
+    "tie_to_larger_sample": (
+        [("            if bd is None or d < bd:\n",
+          "            if bd is None or d < bd or (d == bd and best is not None\n"
+          "                                        and tpk[rank] > tpk[best]):\n")],
         "test_source_match_distance_tie_goes_to_the_earlier_annotation"),
-    # Non-AAMI annotations never enter the candidate pool.
-    "non_aami_filtered_before_matching": (
-        [("    order = sorted(range(len(samples)), "
-          "key=lambda k: (samples[k], k))\n",
-          "    order = sorted([k for k in range(len(samples))\n"
-          "                    if AAMI.get(symbols[k], '')],\n"
-          "                   key=lambda k: (samples[k], k))\n")],
+    # Non-AAMI annotations enter the pool and are dropped after matching.
+    "non_aami_matched_then_dropped": (
+        [('    order = [k for k in range(len(samples)) if AAMI.get(symbols[k], "")]\n',
+          "    order = list(range(len(samples)))\n"),
+         ('        cls = AAMI.get(symbols[j], "")\n',
+          '        cls = AAMI.get(symbols[j], "")\n'
+          "        if not cls:\n            continue\n")],
         "test_source_match_non_aami_symbol_consumes_its_match"),
     # A peak cut by the window boundary gives its annotation back.
     "boundary_cut_releases": (
@@ -151,11 +154,12 @@ VARIANTS = {
           "            used.discard(best)\n"
           "            continue\n")],
         "test_source_match_boundary_cut_consumes_its_match"),
-    # Annotations are traversed in the order the reader returned them.
-    "annotations_in_reader_order": (
-        [("    order = sorted(range(len(samples)), "
-          "key=lambda k: (samples[k], k))\n",
-          "    order = list(range(len(samples)))\n")],
+    # Candidates are re-sorted into sample order instead of the reader's.
+    "annotations_sorted_by_sample": (
+        [('    order = [k for k in range(len(samples)) if AAMI.get(symbols[k], "")]\n',
+          "    order = sorted([k for k in range(len(samples))\n"
+          "                    if AAMI.get(symbols[k], '')],\n"
+          "                   key=lambda k: (samples[k], k))\n")],
         "test_source_match_annotation_order_differing_from_sample_order"),
     # Peaks are sorted before matching.
     "peaks_sorted_first": (
@@ -276,8 +280,12 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     **not** cover.  `granted: False` remains an exact one-value revert.
     """
     record = P3.EXECUTION_APPROVAL_RECORD
-    check(record["granted"] is True,
-          "the record grants read-only execution of the corrected harness")
+    check(record["granted"] is False,
+          "the committed record does not grant execution: the adapter "
+          "correction moved both identities this PREP compares")
+    check(record["closed_again_on"] == "2026-08-16"
+          and "adapter fingerprint moved" in str(record["closed_again_because"]),
+          "and says when it was closed and why")
     check(record["granted_at_merge_commit"].startswith("ee3841f")
           and "P3_IMPLEMENTATION_ACCEPTED" in str(record["reviewed"]),
           "naming the merge commit it was given at and the review it followed")
@@ -2185,25 +2193,24 @@ def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
     tol = int(0.15 * FS)
     samples = [int(s) for s in ann_sample]
     symbols = list(ann_symbol)
-    order = sorted(range(len(samples)), key=lambda k: (samples[k], k))
+    order = [k for k in range(len(samples)) if AAMI.get(symbols[k], "")]
+    tpk = [samples[k] for k in order]
     used = set()
     beats, ys, keep = [], [], []
     for i, p in enumerate(peaks):
         p = int(p)
-        best, bd = None, tol + 1
+        best, bd = None, None
         for rank in range(len(order)):
-            if rank in used:
-                continue
-            d = abs(samples[order[rank]] - p)
-            if d < bd:
+            d = abs(tpk[rank] - p)
+            if bd is None or d < bd:
                 best, bd = rank, d
         if best is None or bd > tol:
+            continue
+        if best in used:
             continue
         used.add(best)
         j = order[best]
         cls = AAMI.get(symbols[j], "")
-        if not cls:
-            continue
         if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
             continue
         keep.append(i)
@@ -2668,26 +2675,25 @@ def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
     x = sig
     fs = FS
     tol = int(0.15 * fs)
-    tpk = [int(s) for s in ann_sample]
-    tlb = [AAMI.get(str(s), "") for s in ann_symbol]
+    keep = [(int(t), AAMI[str(l)]) for t, l in zip(ann_sample, ann_symbol)
+            if AAMI.get(str(l))]
+    tpk = [t for t, _l in keep]
+    tlb = [l for _t, l in keep]
     peaks = [int(p) for p in detect_r(slope_channel(x), fs)]
-    order = sorted(range(len(tpk)), key=lambda k: (tpk[k], k))
     used = set()
     kp, li = [], []
     for i, p in enumerate(peaks):
-        best, bd = None, tol + 1
-        for rank in range(len(order)):
-            if rank in used:
-                continue
-            d = abs(tpk[order[rank]] - p)
-            if d < bd:
+        best, bd = None, None
+        for rank in range(len(tpk)):
+            d = abs(tpk[rank] - p)
+            if bd is None or d < bd:
                 best, bd = rank, d
         if best is None or bd > tol:
             continue
-        used.add(best)
-        j = order[best]
-        if not tlb[j]:
+        if best in used:
             continue
+        used.add(best)
+        j = best
         if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
             continue
         kp.append(p)
@@ -2701,7 +2707,7 @@ def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
     ctx_all = beat_ctx(cuts)
     pw_all = PW.pwave_features(cuts)
     rr_all = rr_features(kp, fs)
-    y = [0 if tlb[j] == "N" else 1 for j in li]
+    y = [0 if tlb[j] == "N" else (1 if tlb[j] == "S" else 2) for j in li]
     return {"beat": cuts,
             "ref": [list(r) for r in ref],
             "rr": [list(rr_all[i]) for i in idx],
@@ -2746,54 +2752,15 @@ def test_the_reader_handles_the_shapes_the_registered_record_came_back_with():
           "including ref, which is what the run stopped on")
 
 
-#: The registered rule, as three runs of trace now pin it: the nearest
-#: annotation over **all** of them, ties to the lowest list index, and a peak
-#: whose nearest is already consumed is **dropped** rather than falling
-#: through.  Class codes in `y` (N=0, S=1, V=2), which is what the record
-#: showed.  This is a stand-in for the source's *behaviour*, so the
-#: differential is expected to disagree with the adapter — on exactly the two
-#: fixtures built to catch these two decisions.
-SOURCE_RULE_PRODUCER = REGISTERED_SHAPED_PRODUCER.replace(
-    "    order = sorted(range(len(tpk)), key=lambda k: (tpk[k], k))\n", ""
-).replace("""        for rank in range(len(order)):
-            if rank in used:
-                continue
-            d = abs(tpk[order[rank]] - p)
-            if d < bd:
-                best, bd = rank, d
-        if best is None or bd > tol:
-            continue
-        used.add(best)
-        j = order[best]""",
-"""        for rank in range(len(tpk)):
-            d = abs(tpk[rank] - p)
-            if d < bd:
-                best, bd = rank, d
-        if best is None or bd > tol:
-            continue
-        if best in used:
-            continue
-        used.add(best)
-        j = best""").replace(
-    '    y = [0 if tlb[j] == "N" else 1 for j in li]',
-    '    y = [0 if tlb[j] == "N" else (1 if tlb[j] == "S" else 2) for j in li]')
-
-
-#: The registered rule **with its filter**, which is what run 20260816T161639
-#: actually ran against and what Codex's review established from the source::
-#:
-#:     keep = [(p, AAMI[s]) for p, s in zip(ann_sample, ann_symbol)
-#:             if AAMI.get(s) in C2I]
-#:
-#: so non-AAMI annotations are gone *before* matching, and every index in the
-#: producer's trace is a position in the filtered list.
-FILTERING_SOURCE_PRODUCER = SOURCE_RULE_PRODUCER.replace(
-    '    tpk = [int(s) for s in ann_sample]\n'
-    '    tlb = [AAMI.get(str(s), "") for s in ann_symbol]',
-    '    keep = [(int(t), AAMI[str(l)]) for t, l in zip(ann_sample, ann_symbol)\n'
-    '            if AAMI.get(str(l))]\n'
-    '    tpk = [t for t, _l in keep]\n'
-    '    tlb = [l for _t, l in keep]')
+#: The registered rule as the P3 runs pinned it — filter to AAMI-mapped
+#: annotations before matching, keep the reader's list order, nearest by
+#: absolute sample distance with ties to the lower filtered position, drop the
+#: peak (consuming nothing) when that nearest is out of tolerance or already
+#: taken — is exactly what `REGISTERED_SHAPED_PRODUCER` above now encodes,
+#: because the corrected adapter was written from it.  The two names are kept
+#: because the tests below say which property they are exercising.
+SOURCE_RULE_PRODUCER = REGISTERED_SHAPED_PRODUCER
+FILTERING_SOURCE_PRODUCER = REGISTERED_SHAPED_PRODUCER
 
 
 def _source_rows(result, fixture_name):
@@ -2902,27 +2869,39 @@ def test_a_producer_that_filters_every_annotation_keeps_nothing():
           "the run completes and reports it as a result")
 
 
-def test_the_two_settled_disagreements_are_unchanged_by_this_fix():
-    """The top-level verdict rests on these two, and they must not move."""
+def test_the_three_findings_of_the_run_are_what_the_adapter_now_does():
+    """The corrected adapter is judged against the observations, not the prose.
+
+    Run `20260816T192351` recorded three decisions of the registered source.
+    They are asserted here as the *source* side of a producer built to that
+    rule — the same facts the bundle holds — and the adapter now agrees with
+    each of them.
+    """
     result = differential_for(FILTERING_SOURCE_PRODUCER)
-    check(result["fixtures_passed"] == 3 and result["all_equal"] is False,
-          f"3 of 6 equal, as the run reported: {result['fixtures_passed']}/6")
-    disagreed = sorted(entry["name"] for entry in result["detail"]
-                       if not entry["equal"])
-    check(disagreed == ["test_source_match_annotation_order_differing_from_"
-                        "sample_order",
-                        "test_source_match_nearest_already_used_falls_through",
-                        "test_source_match_non_aami_symbol_consumes_its_match"],
-          f"and they are the same three fixtures: {disagreed}")
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          f"the registered rule and the corrected adapter agree on all six: "
+          f"{result['fixtures_passed']}/6")
     rows = _source_rows(result,
                         "test_source_match_nearest_already_used_falls_through")
     check(rows.get(1000) == (0, "N") and 1012 not in rows,
-          f"the drop-if-nearest-used finding is untouched: {rows.get(1000)}, "
-          f"peak 1012 kept={1012 in rows}")
+          f"finding 1 — a peak whose nearest is consumed is dropped: "
+          f"{rows.get(1000)}, peak 1012 kept={1012 in rows}")
+    unmatched = {a["sample"] for a in next(
+        e for e in result["detail"]
+        if e["name"] == "test_source_match_nearest_already_used_falls_through"
+    )["source"]["unmatched_annotations"]}
+    check(1042 in unmatched,
+          f"and its annotation is not consumed on its behalf: {unmatched}")
+    rows = _source_rows(result,
+                        "test_source_match_non_aami_symbol_consumes_its_match")
+    check(rows.get(1000) == (1, "N") and 1044 not in rows,
+          f"finding 2 — non-AAMI is filtered before matching, so peak 1000 "
+          f"takes 1042 and peak 1044 is dropped: {rows.get(1000)}")
     rows = _source_rows(
         result, "test_source_match_annotation_order_differing_from_sample_order")
     check(rows.get(1030) == (0, "V"),
-          f"and so is the list-order finding: {rows.get(1030)}")
+          f"finding 3 — the reader's list order decides the tie: "
+          f"{rows.get(1030)}")
 
 
 def test_the_previous_projection_would_fail_the_non_aami_regression():
@@ -2946,23 +2925,76 @@ def test_the_previous_projection_would_fail_the_non_aami_regression():
           "which is exactly the substitution Codex found in the bundle")
 
 
-def test_the_fixtures_and_the_adapter_are_untouched_by_the_projection_fix():
+def test_the_fixtures_are_untouched_by_the_adapter_correction():
     check(list(P3.fixture_names()) == list(P3.REQUIRED_FIXTURES)
           and len(P3.REQUIRED_FIXTURES) == 6,
           "the six required fixtures are the six that run")
     check(P3.FILLER_PEAKS == (1500, 1740, 1980, 2220, 2460, 2700)
           and P3.FILLER_SYMBOLS == ("A", "L", "J", "R", "a", "e"),
           "the D21 filler is unchanged, as accepted")
-    check(Q5E.source_match_adapter_fingerprint() ==
+    check(Q5E.source_match_adapter_fingerprint() !=
           "85c5e2599f8680ca122152fa4daa0936d0393fec2b33048b29f75c81e3895bb5",
-          "the adapter fingerprint is unchanged")
+          "the adapter fingerprint moved with the correction, so a PASS "
+          "recorded against the old adapter cannot be reused for this one")
+    check(P3._is_sha256(Q5E.source_match_adapter_fingerprint()),
+          "and it is still a digest of the adapter and its contract")
     check(P3.TOLERANCE == Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES == 54,
           "and the tolerance is the registered one")
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
           "SOURCE_MATCH_ORACLE_RECORD is still None")
-    check(P3.OPEN_REGISTERED_DATA is False,
-          "and the module default still opens nothing on import: the "
-          "execution approval names a harness, the switch does not")
+    check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False
+          and P3.OPEN_REGISTERED_DATA is False,
+          "and execution is closed, as an adapter correction requires")
+
+
+def test_the_correction_is_pinned_by_a_mutation_per_finding():
+    """Each of the three corrections, reverted one at a time, must be caught.
+
+    A correction that no test can undo is a correction nothing depends on.
+    These are the same three decisions run `20260816T192351` recorded, and
+    each mutation is a single edit to the adapter's own loop.
+    """
+    import inspect
+    body = inspect.getsource(Q5E.match_peaks_to_annotations)
+    mutations = {
+        "fall through instead of dropping": (
+            "        if best in used:\n", "        if False and best in used:\n",
+            "test_source_match_nearest_already_used_falls_through"),
+        "re-sort the candidates by sample": (
+            '    order = [k for k in range(len(annotations))\n'
+            '             if BJ.AAMI_SYMBOL_MAP.get(str(annotations[k][1]), "")]',
+            '    order = sorted([k for k in range(len(annotations))\n'
+            '                    if BJ.AAMI_SYMBOL_MAP.get(str(annotations[k][1]), "")],\n'
+            '                   key=lambda k: (int(annotations[k][0]), k))',
+            "test_source_match_annotation_order_differing_from_sample_order"),
+        "match before filtering by AAMI": (
+            '    order = [k for k in range(len(annotations))\n'
+            '             if BJ.AAMI_SYMBOL_MAP.get(str(annotations[k][1]), "")]',
+            "    order = list(range(len(annotations)))",
+            "test_source_match_non_aami_symbol_consumes_its_match"),
+    }
+    for label, (old, new, expected) in sorted(mutations.items()):
+        check(old in body, f"the mutation for {label!r} still applies")
+        text = body.replace(old, new, 1)
+        if "before filtering" in label:
+            text = text.replace(
+                '        aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")\n',
+                '        aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")\n'
+                "        if not aami:\n            continue\n", 1)
+        namespace = {"BJ": Q5E.BJ, "Dict": dict, "List": list, "Tuple": tuple,
+                     "Sequence": list,
+                     "M4_PEAK_MATCH_TOLERANCE_SAMPLES":
+                         Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES}
+        exec(textwrap.dedent(text), namespace)
+        result = differential_for(FILTERING_SOURCE_PRODUCER,
+                                  adapter=namespace["match_peaks_to_annotations"])
+        caught = [entry["name"] for entry in result["detail"]
+                  if not entry["equal"]]
+        check(expected in caught,
+              f"reverting {label!r} is caught by {expected}: {caught}")
+    result = differential_for(FILTERING_SOURCE_PRODUCER)
+    check(result["all_equal"] is True,
+          "and the unmutated adapter agrees on all six")
 
 
 def test_a_class_code_settles_what_a_symbol_never_taught():
@@ -3031,37 +3063,27 @@ def test_a_fixtures_own_rows_settle_it_even_when_the_shared_one_cannot():
           "and learns into it before the settling pass that needs it")
 
 
-def test_the_registered_rule_is_reported_rather_than_stopping_the_run():
-    """The rehearsal that matters: the source's behaviour, not just its shapes.
+def test_a_rule_difference_is_reported_rather_than_stopping_the_run():
+    """A projection that cannot read a difference is worse than one that finds
+    none: it turns a detected difference into "the harness could not tell".
 
-    Peak 1012's nearest annotation is taken, and the registered producer drops
-    the peak instead of falling through; a tie goes to the lower list index
-    rather than the earlier sample.  Two of the six fixtures exist to catch
-    exactly those, and the run must *report* them — a projection that cannot
-    read the trace would turn a detected difference into "the harness could not
-    tell", which is the worst direction for this PREP to fail in.
+    Every one-decision variant is a producer whose rule differs from the
+    adapter's, and each is *reported* — with the difference named field by
+    field — rather than stopping the run.
     """
-    result = differential_for(SOURCE_RULE_PRODUCER)
-    check(result["all_equal"] is False and result["fixtures_passed"] == 4,
-          f"four fixtures agree and two disagree: "
-          f"{result['fixtures_passed']}/6")
-    disagreed = sorted(entry["name"] for entry in result["detail"]
-                       if not entry["equal"])
-    check(disagreed == ["test_source_match_annotation_order_differing_from_"
-                        "sample_order",
-                        "test_source_match_nearest_already_used_falls_through"],
-          f"and they are the two built for these decisions: {disagreed}")
-    for entry in result["detail"]:
-        if entry["equal"]:
-            continue
+    for variant, (_edits, expected) in sorted(VARIANTS.items()):
+        result = differential_for(variant_text(variant))
+        check(result["all_equal"] is False,
+              f"{variant}: a rule difference is reported")
+        entry = next(e for e in result["detail"] if not e["equal"])
         fields = {difference["field"] for difference in entry["difference"]}
-        check({"kept_rows", "consumed_annotations"} <= fields,
-              f"{entry['name']}: the difference is in the rows kept and the "
-              f"annotations consumed: {sorted(fields)}")
-    check(P3.candidate_record(result, "a" * 64, "b" * 64, "c" * 64) is None,
-          "a differential with a disagreement yields no candidate at all")
+        check("kept_rows" in fields,
+              f"{variant}: the difference names the rows kept: "
+              f"{sorted(fields)}")
+        check(P3.candidate_record(result, "a" * 64, "b" * 64, "c" * 64) is None,
+              f"{variant}: and yields no candidate record at all")
     check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
-          "and nothing is registered by observing one")
+          "nothing is registered by observing one")
 
 
 def test_a_window_block_is_read_flat_or_multi_channel():
@@ -3385,25 +3407,24 @@ def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
     tol = int(0.15 * FS)
     samples = [int(s) for s in ann_sample]
     symbols = list(ann_symbol)
-    order = sorted(range(len(samples)), key=lambda k: (samples[k], k))
+    order = [k for k in range(len(samples)) if AAMI.get(symbols[k], "")]
+    tpk = [samples[k] for k in order]
     used = set()
     ys, keep = [], []
     for i, p in enumerate(peaks):
         p = int(p)
-        best, bd = None, tol + 1
+        best, bd = None, None
         for rank in range(len(order)):
-            if rank in used:
-                continue
-            d = abs(samples[order[rank]] - p)
-            if d < bd:
+            d = abs(tpk[rank] - p)
+            if bd is None or d < bd:
                 best, bd = rank, d
         if best is None or bd > tol:
+            continue
+        if best in used:
             continue
         used.add(best)
         j = order[best]
         cls = AAMI.get(symbols[j], "")
-        if not cls:
-            continue
         if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
             continue
         keep.append(i)
@@ -3798,9 +3819,11 @@ def test_a_producer_that_declines_to_build_a_record_is_its_own_finding():
               and trace.get("n_steps", 0) > 0,
               "and that the producer really ran")
         locals_seen = trace.get("final_locals", {})
-        check(locals_seen.get("keep") == list(range(8)),
+        check(locals_seen.get("keep") == [0, 2, 3, 4, 5, 6, 7],
               f"with the locals that explain it — here the producer had kept "
-              f"rows and returned None anyway: keep = {locals_seen.get('keep')}")
+              f"rows and returned None anyway, and peak 1 is absent because "
+              f"its nearest annotation was already taken: "
+              f"keep = {locals_seen.get('keep')}")
         check("ys" in locals_seen and "peaks" in locals_seen,
               f"and the rest of what it was holding: {sorted(locals_seen)}")
         check(error.context["stub_calls"]["counts"]["frontend.detect_r"] == 1,
@@ -4220,7 +4243,7 @@ def test_module_capabilities_are_all_present():
               f"and the list advertises {name}")
     card = P3.design_card()
     check(P3.REGISTERED_SOURCE_FILE_ID in card
-          and "APPROVED 2026-08-16 by user (read-only)" in card
+          and "NOT APPROVED" in card
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")

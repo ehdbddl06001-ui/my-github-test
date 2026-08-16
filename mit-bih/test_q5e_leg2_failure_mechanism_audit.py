@@ -2509,18 +2509,25 @@ def test_production_refuses_to_publish_a_fixture_verdict():
 # rather than paragraphs.  No registered asset is opened.
 # ─────────────────────────────────────────────────────────────────────────────
 def test_source_match_nearest_already_used_falls_through():
-    """Counterexample 1: nearest is taken, next-nearest is inside tolerance."""
+    """Counterexample 1: nearest is taken, next-nearest is inside tolerance.
+
+    The registered source **drops the peak** here — P3 run `20260816T192351`
+    left peak 1012 unmatched *and* 1042 unconsumed — so the adapter does too.
+    The fixture name is registered and names the *decision*, not the outcome.
+    """
     annotations = [(1000, "N"), (1040, "N")]
     result = Q5E.match_peaks_to_annotations([1000, 1010], annotations, 20000)
     kept = {r["peak_index"]: r["raw_atr_ordinal"] for r in result["kept_rows"]}
-    check(kept == {0: 0, 1: 1},
-          "the second peak takes the next-nearest unused annotation")
-    check(not result["peaks_without_annotation"],
-          "it is not dropped merely because its nearest was consumed")
-    check(not result["annotations_without_peak"],
-          "and no annotation is left unmatched")
+    check(kept == {0: 0},
+          f"the first peak takes its nearest and the second is dropped: {kept}")
+    check([a["anchor_ordinal"] for a in result["peaks_without_annotation"]]
+          == [1],
+          "the peak whose nearest was already consumed becomes an anchor")
+    check([a["anchor_ordinal"] for a in result["annotations_without_peak"]]
+          == [1],
+          "and the next-nearest annotation is NOT consumed on its behalf")
     check(Q5E.SOURCE_MATCH_CONTRACT["nearest_already_used"].startswith(
-        "the peak takes the next-nearest"),
+        "the peak is dropped"),
         "the contract states this decision explicitly")
 
 
@@ -2536,18 +2543,28 @@ def test_source_match_distance_tie_goes_to_the_earlier_annotation():
 
 
 def test_source_match_non_aami_symbol_consumes_its_match():
-    """Counterexample 3: nearest annotation is a non-AAMI symbol."""
+    """Counterexample 3: nearest annotation is a non-AAMI symbol.
+
+    It never becomes a candidate.  P3 run `20260816T192351` showed the
+    registered source filtering non-AAMI annotations **before** matching:
+    `'+'` came back unmatched and the peak beside it took the AAMI annotation
+    further away.  The fixture name is registered and names the decision.
+    """
     annotations = [(1000, "F"), (1040, "N")]
     result = Q5E.match_peaks_to_annotations([1000], annotations, 20000)
-    check(not result["kept_rows"],
-          "a peak matched to a non-AAMI annotation is dropped")
+    kept = {r["peak_index"]: r["raw_atr_ordinal"] for r in result["kept_rows"]}
+    check(kept == {0: 1},
+          f"the peak takes the AAMI annotation, not the nearer non-AAMI one: "
+          f"{kept}")
     check([a["anchor_ordinal"] for a in result["annotations_without_peak"]]
-          == [1],
-          "the non-AAMI annotation stays consumed and is not an anchor")
+          == [0],
+          "the non-AAMI annotation consumes nothing and is left unmatched")
     check(not result["peaks_without_annotation"],
           "the peak matched, so it is not a peak-without-annotation anchor")
-    check("BEFORE AAMI" in Q5E.SOURCE_MATCH_CONTRACT["used_vs_aami"],
-          "the contract fixes used-before-AAMI explicitly")
+    check("BEFORE matching" in Q5E.SOURCE_MATCH_CONTRACT["aami_filter"],
+          "the contract fixes AAMI-before-matching explicitly")
+    check("cannot consume a match" in Q5E.SOURCE_MATCH_CONTRACT["used_vs_aami"],
+          "and says there is no used-vs-AAMI ordering left to fix")
 
 
 def test_source_match_boundary_cut_consumes_its_match():
@@ -2588,6 +2605,9 @@ def test_source_match_peak_order_change_is_visible():
     check(Q5E.SOURCE_MATCH_CONTRACT["traversal"].startswith(
         "peaks in detector order"),
         "the contract fixes the traversal order this depends on")
+    check("list order" in Q5E.SOURCE_MATCH_CONTRACT["traversal"]
+          and "NOT re-sorted" in Q5E.SOURCE_MATCH_CONTRACT["traversal"],
+          "and that the candidates keep the reader's order")
 
 
 def test_source_equivalence_is_declared_unproven():

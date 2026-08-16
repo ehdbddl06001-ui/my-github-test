@@ -4213,18 +4213,26 @@ def load_v10_producer(v10_source_dir: str, approval: Optional[str]):
 #: None of this is evidence that the registered `data.py` makes the same
 #: choices — that is what P3 exists to establish.
 SOURCE_MATCH_CONTRACT: Dict[str, str] = {
-    "traversal": "peaks in detector order; annotations in ascending sample "
-                 "order, ties broken by their `.atr` ordinal",
-    "distance_tie": "the smaller annotation sample wins; if two candidates "
-                    "share a sample, the smaller `.atr` ordinal wins",
-    "nearest_already_used": "the peak takes the next-nearest unused candidate "
-                            "inside the tolerance; it is NOT dropped merely "
-                            "because its nearest neighbour is taken",
+    "derived_from": "observed decisions of the registered build_record, "
+                    "recorded by EXP-2026-008 P3 run 20260816T192351 "
+                    "(fold eb8eb085…, harness 4127809f…) and its "
+                    "fixture_results.json; every clause below is a reading of "
+                    "that bundle, not of prose",
+    "aami_filter": "annotations are restricted to AAMI-mapped symbols BEFORE "
+                   "matching begins; a non-AAMI annotation is never a "
+                   "candidate, never consumes anything, and is left unmatched",
+    "traversal": "peaks in detector order; annotations in the reader's own "
+                 "list order, restricted as above — NOT re-sorted by sample",
+    "distance_tie": "the lower position in that filtered reader-order list "
+                    "wins; the sample values do not break the tie",
+    "nearest_already_used": "the peak is dropped and nothing is consumed; it "
+                            "does NOT fall through to the next-nearest "
+                            "candidate",
     "used_added": "when the match is accepted, before the next peak is "
                   "considered",
-    "used_vs_aami": "`used` is consumed during matching, BEFORE AAMI "
-                    "selection; a non-AAMI annotation still consumes its match "
-                    "and its peak is then dropped, not rematched",
+    "used_vs_aami": "there is no used-vs-AAMI ordering to fix: AAMI selection "
+                    "happens BEFORE matching, so a non-AAMI annotation cannot "
+                    "consume a match in the first place",
     "used_vs_boundary": "`used` is consumed during matching, BEFORE the "
                         "boundary cut; a peak cut by `p-150`/`p+150` does not "
                         "release its annotation",
@@ -4436,54 +4444,69 @@ def match_peaks_to_annotations(peaks: Sequence[int],
                                ) -> Dict[str, object]:
     """**Candidate** source-matching adapter for `data.py :: build_record`.
 
-    This is a *text-derived candidate contract*, **unverified against the
-    registered `data.py`**.  EXP-2026-008 requires M4.1 to reproduce the
-    source's own rule; this function does not yet establish that it does, and
-    nothing here may be read as evidence that it does.  The equivalence
-    sub-gate stops M4 before the detector runs until a differential PREP (P3)
-    records a PASS.
+    Rewritten on 2026-08-16 from **observed decisions of the registered
+    source**, not from prose.  The first version was transcribed from a
+    paragraph and P3 run `20260816T192351` recorded it differing from the
+    registered `build_record` on three of six fixtures; each clause below is a
+    reading of that run's `fixture_results.json` (EXP-2026-008 D32).
+
+    Still **unverified as equivalent**.  Being written from one run's observed
+    decisions is not the same as reproducing the source's rule, and the
+    equivalence sub-gate continues to stop M4 before the detector runs until a
+    differential PREP records a PASS over all six fixtures.  Nothing here may
+    be read as that PASS.
 
     Every control-flow decision is fixed in :data:`SOURCE_MATCH_CONTRACT` and
     summarised here, because "greedy nearest with a `used` set" is prose that
     admits several inequivalent implementations:
 
-    * peaks are traversed in detector order; annotations in ascending sample
-      order, ties broken by `.atr` ordinal;
-    * the nearest **unused** candidate within the tolerance wins, so a peak
-      whose nearest annotation is already taken falls through to the
-      next-nearest rather than being dropped;
-    * distance ties go to the smaller sample, then the smaller ordinal;
-    * `used` is updated at the moment a match is accepted, and therefore
-      **before** both AAMI selection and the boundary cut — a peak later
-      dropped by either does not release its annotation back into the pool.
+    * annotations are restricted to **AAMI-mapped symbols before matching
+      begins**, in the reader's own list order — a non-AAMI annotation is never
+      a candidate, consumes nothing, and stays unmatched;
+    * peaks are traversed in detector order; the candidate list is **not**
+      re-sorted by sample;
+    * the nearest candidate by absolute sample distance wins, and a distance
+      tie goes to the **lower position in that filtered list**;
+    * if the nearest is beyond the tolerance **or already consumed**, the peak
+      is dropped and nothing is consumed — there is no fall-through to the
+      next-nearest;
+    * `used` is updated when a match is accepted, and therefore **before** the
+      boundary cut — a peak cut by `p-150`/`p+150` does not release its
+      annotation back into the pool.
 
-    The tolerance, the greediness, the `used` set and the cut are all read
-    from the registered source map rather than chosen here: no detector,
-    second tolerance or manual anchor is introduced.  Whether these decisions
-    match the registered implementation is exactly what remains unverified.
-    Returns the kept cache rows in detector order plus the two discordance
-    anchor kinds M4.1 defines.
+    The tolerance, the AAMI map, the window and the cut are all read from the
+    registered constants rather than chosen here: no detector, second tolerance
+    or manual anchor is introduced.  Returns the kept cache rows in detector
+    order plus the two discordance anchor kinds M4.1 defines.
     """
-    order = sorted(range(len(annotations)),
-                   key=lambda k: (int(annotations[k][0]), k))
+    # AAMI selection happens *before* matching, so the candidate list is the
+    # reader's own order with the non-AAMI symbols removed — and their original
+    # ordinals are kept, because a kept row reports the ordinal the reader gave.
+    order = [k for k in range(len(annotations))
+             if BJ.AAMI_SYMBOL_MAP.get(str(annotations[k][1]), "")]
     positions = [int(annotations[k][0]) for k in order]
     used: set = set()
     matched_annotation: Dict[int, int] = {}      # peak index -> annotation idx
     for index, peak in enumerate(peaks):
         peak = int(peak)
         best = None
-        best_distance = tolerance + 1
-        # Nearest *unused* candidate.  `rank` ascends with sample then ordinal,
-        # and the comparison is strict, so a tie keeps the earlier one.
+        best_distance = None
+        # Nearest candidate over **all** of them, used or not.  `rank` ascends
+        # with the filtered reader order and the comparison is strict, so a
+        # distance tie keeps the lower position.
         for rank, pos in enumerate(positions):
-            if rank in used:
-                continue
             distance = abs(pos - peak)
-            if distance < best_distance:
+            if best_distance is None or distance < best_distance:
                 best, best_distance = rank, distance
-        if best is not None and best_distance <= tolerance:
-            used.add(best)                 # consumed here: before AAMI and cut
-            matched_annotation[index] = order[best]
+        if best is None or best_distance > tolerance:
+            continue                       # nothing near enough; nothing taken
+        if best in used:
+            # The nearest is already consumed.  The peak is dropped and no
+            # annotation is consumed for it: it does not fall through to the
+            # next-nearest candidate.
+            continue
+        used.add(best)                     # consumed here: before the cut
+        matched_annotation[index] = order[best]
 
     kept_rows: List[Dict[str, object]] = []
     peaks_without_annotation: List[Dict[str, object]] = []
@@ -4496,9 +4519,9 @@ def match_peaks_to_annotations(peaks: Sequence[int],
                  "anchor_ordinal": index, "anchor_sample": peak})
             continue
         symbol = str(annotations[annotation_index][1])
+        # Non-empty by construction: the candidate list was AAMI-filtered
+        # before matching, so nothing reaches here that AAMI would drop.
         aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")
-        if not aami:
-            continue          # AAMI selection; the annotation stays consumed
         if not (peak - BJ.WIN_BEFORE >= 0 and
                 peak + BJ.WIN_AFTER <= int(signal_length)):
             continue          # boundary cut; the annotation stays consumed

@@ -481,6 +481,64 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D33 (2026-08-16) — the candidate adapter is corrected from the observed
+decisions.  Implementation only; execution closed.**  The three findings of
+run `20260816T192351` are now the adapter's rule.  Written from that bundle,
+not from prose — which is what produced the first version and what P3 was
+built to catch.
+
+`SOURCE_MATCH_CONTRACT` gains a `derived_from` naming the run, and three
+clauses change:
+
+| decision | was | is |
+|---|---|---|
+| AAMI | matched first, non-AAMI consumed then dropped | **filtered before matching**; a non-AAMI annotation is never a candidate and consumes nothing |
+| traversal / tie | annotations re-sorted by sample; tie to the smaller sample | the reader's **list order**, restricted to AAMI; tie to the **lower position in that filtered list** |
+| nearest already used | fall through to the next-nearest | **drop the peak, consume nothing** |
+
+The boundary cut is unchanged and still applies after a successful match, and
+a peak cut by it still does not release its annotation.
+
+**What moved with it.**  `source_match_adapter_fingerprint()` is now
+`5a889e6bb01478d4005149abf98a548f0a2805e2a7f8a7b6df91fa043ecfc43c`, so a PASS
+recorded against the old adapter cannot be reused.  The oracle harness moved
+too, to `71dd6606f923f8b95abc22dc85e3686542586f8575a2dce9312639384ed154ea`, for
+a reason the correction exposed rather than caused: `label_vectors` treated the
+*rows* of a square row-block as per-row label vectors.  Harmless while the RR
+block was not square with the row count; with seven kept rows and a seven-wide
+RR block it handed the projection a transposed reading of itself, whose tokens
+looked stable and meant nothing.  A block with one entry per row is row data
+the row channels have already read, so it is no longer recursed into.
+
+**The synthetic producers moved as well, and that is not the harness being
+bent to fit the adapter.**  `FAITHFUL` is the harness's *positive control* —
+its definition is "a producer that agrees" — and the six `VARIANTS` are
+one-decision deviations from it.  When the adapter's rule changes, a positive
+control that keeps the old rule is not a control at all.  Three variants are
+therefore inverted (fall-through, non-AAMI-matched-then-dropped,
+sorted-by-sample), and the tie variant is now "the tie is broken by sample
+rather than by list position", because under reader-order traversal a
+tie-by-list-index mutation is also caught by the order fixture, and each
+fixture must catch exactly one variant.  The detection matrix is a bijection
+again.
+
+**Success conditions, as measured.**  Six of six agree between the registered
+rule and the corrected adapter, with the injection probed invariant on every
+fixture, no harness stop, and each of the three corrections caught by its own
+fixture when reverted one at a time
+(`test_the_correction_is_pinned_by_a_mutation_per_finding`).  Suites: P3 122
+functions / 1,249 assertions, Q5-E audit 115 / 1,032, P1-P2 91 / 1,437, Q5-D
+881 passed.
+
+**Boundaries.**  `SOURCE_MATCH_ORACLE_RECORD` stays `None`, the registered
+`data.py`, the six fixtures, the filler, the tolerance, the AAMI map and the
+gate are untouched, the notebook is unexecuted, and **execution is closed
+again** — both identities the differential compares have moved, so the
+approval that produced `20260816T192351` does not carry over.  Agreement on a
+synthetic producer is not equivalence: only a run against the digest-verified
+`data.py` decides that.  If that run is not 6/6, or stops, no
+`SOURCE_MATCH_ORACLE_RECORD` is created.
+
 **D32 (2026-08-16) — RE-RUN UNDER THE CORRECTED HARNESS.  3 of 6 re-qualified;
 all three mismatches now qualified, including the non-AAMI one.**  Run
 `20260816T192351` (folder `1dBAwnVJVws6HnEa8z4mUfZ-bkMDCcUSE`, fold
