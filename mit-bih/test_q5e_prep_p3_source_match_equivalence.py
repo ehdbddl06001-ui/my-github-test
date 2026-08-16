@@ -2730,6 +2730,100 @@ def test_the_reader_handles_the_shapes_the_registered_record_came_back_with():
           "including ref, which is what the run stopped on")
 
 
+#: The registered rule, as three runs of trace now pin it: the nearest
+#: annotation over **all** of them, ties to the lowest list index, and a peak
+#: whose nearest is already consumed is **dropped** rather than falling
+#: through.  Class codes in `y` (N=0, S=1, V=2), which is what the record
+#: showed.  This is a stand-in for the source's *behaviour*, so the
+#: differential is expected to disagree with the adapter — on exactly the two
+#: fixtures built to catch these two decisions.
+SOURCE_RULE_PRODUCER = REGISTERED_SHAPED_PRODUCER.replace(
+    "    order = sorted(range(len(tpk)), key=lambda k: (tpk[k], k))\n", ""
+).replace("""        for rank in range(len(order)):
+            if rank in used:
+                continue
+            d = abs(tpk[order[rank]] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        used.add(best)
+        j = order[best]""",
+"""        for rank in range(len(tpk)):
+            d = abs(tpk[rank] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        if best in used:
+            continue
+        used.add(best)
+        j = best""").replace(
+    '    y = [0 if tlb[j] == "N" else 1 for j in li]',
+    '    y = [0 if tlb[j] == "N" else (1 if tlb[j] == "S" else 2) for j in li]')
+
+
+def test_a_class_code_settles_what_a_symbol_never_taught():
+    """The stop of `20260816T142848`, and why the dictionary could not settle it.
+
+    Candidates `V` and `N`; the row is labelled `2`; and by then the producer
+    had taught the dictionary `L`, `R`, `e`, `A`, `J`, `a` — every filler
+    symbol — but never the symbol `N` itself.  Keyed by symbol there is
+    nothing to say.  Keyed by **registered AAMI class** there is everything:
+    `0` has been the label on every `N`-class row, so a row labelled `2` is not
+    class `N`, whatever its symbol turns out to be.
+    """
+    dictionary = P3.LabelDictionary()
+    dictionary.learn([["columnar_y", "0"]], "L")             # class N
+    dictionary.learn([["columnar_y", "1"]], "A")             # class S
+    token = [["columnar_y", "2"]]
+    check(dictionary.symbols_for(token) == set()
+          and "N" not in dictionary.excluded_symbols(token),
+          "keyed by symbol, a row labelled 2 rules out nothing about 'N'")
+    check("N" in dictionary.excluded_classes(token)
+          and "V" not in dictionary.excluded_classes(token),
+          f"keyed by class it rules out N and leaves V: "
+          f"{sorted(dictionary.excluded_classes(token))}")
+    check(BJ.AAMI_SYMBOL_MAP["L"] == "N" and BJ.AAMI_SYMBOL_MAP["V"] == "V",
+          "and the class comes from the frozen map both sides already use")
+    published = dictionary.as_dict()
+    check("by_class_token" in published and "by_token" in published,
+          f"both readings are published for the bundle: {published}")
+
+
+def test_the_registered_rule_is_reported_rather_than_stopping_the_run():
+    """The rehearsal that matters: the source's behaviour, not just its shapes.
+
+    Peak 1012's nearest annotation is taken, and the registered producer drops
+    the peak instead of falling through; a tie goes to the lower list index
+    rather than the earlier sample.  Two of the six fixtures exist to catch
+    exactly those, and the run must *report* them — a projection that cannot
+    read the trace would turn a detected difference into "the harness could not
+    tell", which is the worst direction for this PREP to fail in.
+    """
+    result = differential_for(SOURCE_RULE_PRODUCER)
+    check(result["all_equal"] is False and result["fixtures_passed"] == 4,
+          f"four fixtures agree and two disagree: "
+          f"{result['fixtures_passed']}/6")
+    disagreed = sorted(entry["name"] for entry in result["detail"]
+                       if not entry["equal"])
+    check(disagreed == ["test_source_match_annotation_order_differing_from_"
+                        "sample_order",
+                        "test_source_match_nearest_already_used_falls_through"],
+          f"and they are the two built for these decisions: {disagreed}")
+    for entry in result["detail"]:
+        if entry["equal"]:
+            continue
+        fields = {difference["field"] for difference in entry["difference"]}
+        check({"kept_rows", "consumed_annotations"} <= fields,
+              f"{entry['name']}: the difference is in the rows kept and the "
+              f"annotations consumed: {sorted(fields)}")
+    check(P3.candidate_record(result, "a" * 64, "b" * 64, "c" * 64) is None,
+          "a differential with a disagreement yields no candidate at all")
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "and nothing is registered by observing one")
+
+
 def test_a_window_block_is_read_flat_or_multi_channel():
     """One reader for both, so the two cannot drift apart."""
     peaks = [1000, 1500]
