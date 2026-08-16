@@ -4206,12 +4206,18 @@ def load_v10_producer(v10_source_dir: str, approval: Optional[str]):
 
 
 #: The control-flow decisions this **candidate** adapter makes.  Each is a
-#: place where a different reading of the prose "greedy nearest with a used
-#: set" would produce a different answer, so they are named here as a
-#: text-derived candidate contract: a reviewer compares decisions rather than
+#: place where a different reading would produce a different answer, so they
+#: are named as a decision contract: a reviewer compares decisions rather than
 #: paragraphs, and the adapter fingerprint changes if any of them is edited.
-#: None of this is evidence that the registered `data.py` makes the same
-#: choices — that is what P3 exists to establish.
+#: These decisions are no longer transcribed from prose.  They were **derived
+#: from observation** — the per-fixture `difference` records of P3 run
+#: 20260816T192351, in which the registered `data.py` was executed under
+#: dependency injection and disagreed with the previous, prose-derived
+#: candidate on three of them (spec D32, corrected in D34).
+#: That is a much stronger provenance and it is still **not** verification:
+#: the differential that produced those observations compared the *previous*
+#: adapter.  Whether the corrected one agrees on all six is what the next P3
+#: run establishes, and nothing here may stand in for it.
 SOURCE_MATCH_CONTRACT: Dict[str, str] = {
     "derived_from": "observed decisions of the registered build_record, "
                     "recorded by EXP-2026-008 P3 run 20260816T192351 "
@@ -4327,11 +4333,15 @@ def verify_source_match_equivalence(
                 "reason": SOURCE_MATCH_EQUIVALENCE_REQUIRED,
                 "problems": [
                     "no differential comparison against the registered "
-                    "`data.py` has been recorded.  The adapter is a "
-                    "text-derived candidate and is unverified against the "
-                    "registered source; reproducing the registered per-record "
-                    "counts is a necessary condition, not a proof, and may "
-                    "not be used to choose between candidate implementations."]}
+                    "`data.py` has recorded a PASS for the adapter as it "
+                    "now stands.  Its decisions were derived from the "
+                    "observations of P3 run 20260816T192351 rather than from "
+                    "prose (spec D34), which is provenance, not verification: "
+                    "that run compared the previous candidate, and whether "
+                    "this one agrees on all six fixtures is still unmeasured. "
+                    "Reproducing the registered per-record counts is a "
+                    "necessary condition, not a proof, and may not be used to "
+                    "choose between candidate implementations."]}
     problems: List[str] = []
     missing = [f for f in SOURCE_MATCH_ORACLE_FIELDS if f not in record]
     if missing:
@@ -4430,10 +4440,13 @@ def source_match_equivalence_status(
         "registered_function": gate["registered_function"],
         "contract": gate["contract"],
         "problems": list(gate.get("problems", ())),
-        "note": ("This adapter is a text-derived candidate and is unverified "
-                 "against the registered `data.py` until a differential PREP "
-                 "records a PASS.  Reproducing the registered per-record "
-                 "counts is a necessary condition only."),
+        "note": ("This adapter's decisions were derived from the observations "
+                 "of P3 run 20260816T192351, not from prose (spec D34).  It "
+                 "remains unverified against the registered `data.py` until a "
+                 "differential PREP records a PASS for the adapter as it now "
+                 "stands — that run compared the previous candidate.  "
+                 "Reproducing the registered per-record counts is a necessary "
+                 "condition only."),
     }
 
 
@@ -5255,11 +5268,15 @@ def design_card() -> str:
         "  Open registration items - each is a terminal stop, not a warning:",
         f"    source-matching adapter (P3): "
         f"{source_match_equivalence_status()['status']}",
-        "  The adapter is a text-derived candidate, unverified against the",
-        "  registered data.py; M4 stops before the detector until a",
-        "  differential PREP records a PASS.  P3 is the only remaining stop,",
-        "  and it still needs its own design, implementation, execution and",
-        "  result acceptance.",
+        "  The adapter's decisions are derived from the observations of P3",
+        "  run 20260816T192351 rather than from prose (spec D34), and it is",
+        "  still unverified against the registered data.py; M4 stops before",
+        "  the detector until a differential PREP records a PASS for the",
+        "  adapter as it now stands.  P3 is the only remaining stop.  Its",
+        "  design and implementation are complete and its first result is",
+        "  accepted (D32/D33); what remains is acceptance of the adapter",
+        "  correction, a fresh approval naming both identities, and the",
+        "  execution and result acceptance that follow.",
         "",
         f"  {APPROVAL_NOTE}",
     ]

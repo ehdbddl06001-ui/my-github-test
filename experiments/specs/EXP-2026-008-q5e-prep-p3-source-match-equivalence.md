@@ -481,6 +481,87 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D35 (2026-08-16) — Codex returned `CHANGES_REQUIRED` on D34; three narrow
+blockers closed.**  The adapter rule, the positive-control argument, the
+fixtures, the filler, the tolerance and the AAMI map were all accepted; what
+was refused was the machinery around them.  All three findings are accepted in
+full, and all three were verified in the code before being fixed.
+
+**Blocker 1 — the approval named one operand of a two-operand comparison.**
+`EXECUTION_APPROVAL_RECORD` carried `for_oracle_harness_sha256` and
+`_terminal_execution_guard()` checked only that.  But
+`oracle_harness_identity()` folds the capture and projection surface and *not*
+the candidate adapter — the adapter is the thing under test and lives in
+another module — so every adapter correction leaves the harness digest exactly
+where it was.  An approval therefore survived the candidate being rewritten
+underneath it, and a bundle could have recorded a PASS for a pair nobody
+approved together.  The three call sites of
+`source_match_adapter_fingerprint()` were all reporting; none was a gate.
+
+This is the same gap as the injected-surface one D27 fixed, repeated on the
+other operand, and it was in the file with a comment above it explaining the
+first instance.  `for_adapter_fingerprint` is now on the record and the guard
+refuses on a mismatch, naming both fingerprints so renewal is mechanical.
+Regression: `test_the_approval_is_bound_to_the_adapter_it_was_given_for`,
+which counts authentication, the Drive adapter, the registered fetch, the
+compile choke point, `os.mkdir` and the credential seam across the refusal and
+requires zero of each.  It deliberately does not instrument
+`load_source_under_injection`: that function *is* folded into the harness
+digest, so replacing it would move the harness identity and the harness gate
+would fire first and hide the gate under test.
+
+**Blocker 2 — the state the module printed contradicted D34.**
+`APPROVAL_NOTE` is appended to more than twenty refusals and is written into
+the bundle, and it opened with "Approved (2026-08-16) … for oracle harness
+`4127809f…`" while `granted` was `False` and the harness was two corrections
+past that digest.  A refusal that opens with an approval is a refusal nobody
+reads correctly.  The adapter module compounded it: "text-derived candidate"
+in four places, and "P3 … still needs its own design, implementation" after
+both were finished.
+
+The note now states the current state — `P3_IMPLEMENTATION_AWAITING_
+ACCEPTANCE`, execution closed for the named pair — keeps the past grant as
+labelled history, and says plainly that the accepted verdict of
+`20260816T192351` is already decided and is *not* what the next run
+re-derives.  The adapter's provenance is restated everywhere as **derived from
+the observations of `20260816T192351`, not from prose**, while keeping the
+distinction that matters: that is provenance, not verification, because the
+run that produced those observations compared the *previous* candidate.
+Regression: `test_the_approval_note_describes_the_current_state_not_a_past_
+grant`.
+
+**Blocker 3 — the row-block guard had no test, and one mutation was
+mislabelled.**  `label_vectors()` skips any rectangular block with one entry
+per row, and nothing pinned that; `grep` for the function across the suites
+returned nothing at all.  Two tests now do:
+`test_a_row_shaped_block_is_not_offered_as_label_vectors` requires the 7×7 RR
+block to contribute no vector while the flat seven-entry `y` channel still
+does, and requires a block whose outer length is *not* the row count to still
+be recursed into, so the guard is pinned as narrow rather than as a blanket
+skip; `test_removing_the_row_block_guard_brings_the_transposed_tokens_back`
+re-executes the function with the guard forced false and requires the seven
+`.rr[…]` vectors — the transposed reading — to reappear.  The docstring's
+"Every candidate vector is kept" now names the exception.
+
+The mutation note is also accepted.  `if best in used` → `if False and …` does
+not fall through; it lets the peak **match an annotation already consumed**,
+a different mistake that the same fixture happens to catch.  Rather than
+correct the label, the mutation is now a real fall-through — the candidate
+scan skips consumed ranks and settles on the next-nearest unused one — which
+is what the finding was about.  It is still caught by
+`nearest_already_used_falls_through`, so the pinning is unchanged and now
+means what it says.
+
+**What moved.**  The oracle harness is now
+`4a06fa07ab7d8e69a22c441276ad0e80cc37328e3ef517705ec9bf4f1e725698` (blockers 1
+and 3 both edit folded text; the digest D34 records, `71dd6606…`, is history).
+The adapter fingerprint is **unchanged** at `5a889e6b…` — nothing here touched
+`match_peaks_to_annotations` or `SOURCE_MATCH_CONTRACT`, which is the point:
+the accepted rule was not renegotiated while closing review findings.
+Execution stays closed, `SOURCE_MATCH_ORACLE_RECORD` stays `None`, the
+notebook stays unexecuted, and the fresh approval must name **both**
+`4a06fa07…` and `5a889e6b…`.
+
 **D34 (2026-08-16) — the candidate adapter is corrected from the observed
 decisions.  Implementation only; execution closed.**  The three findings of
 run `20260816T192351` are now the adapter's rule.  Written from that bundle,

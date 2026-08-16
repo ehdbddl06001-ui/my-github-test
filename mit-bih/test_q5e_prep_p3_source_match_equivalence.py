@@ -308,9 +308,9 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     check(any("drive.readonly" in entry for entry in record["approved"]),
           "which reads the registered file under exactly drive.readonly")
     check("NOT approved by it" in P3.APPROVAL_NOTE
-          and "Not results, and not to be used as any" in P3.APPROVAL_NOTE,
-          "the note states both halves of the boundary, and that the previous "
-          "harness's numbers are not results of this one")
+          and "execution is CLOSED" in P3.APPROVAL_NOTE,
+          "the note states both halves of the boundary, and says the door is "
+          "shut rather than opening with the word 'Approved'")
 
 
 def test_the_approval_is_bound_to_the_harness_it_was_given_for():
@@ -355,6 +355,108 @@ def test_the_approval_is_bound_to_the_harness_it_was_given_for():
               f"and {item!r} is still outside it")
         check(item in P3.APPROVAL_NOTE,
               f"and the note repeats {item!r} where a reader will see it")
+
+
+def test_the_approval_is_bound_to_the_adapter_it_was_given_for():
+    """The differential has *two* operands, and both are named.
+
+    The harness digest cannot stand in for this one.  The adapter is the thing
+    under test and lives in another module, so a correction to it leaves
+    `oracle_harness_sha256` exactly where it was — which is how, until
+    2026-08-16, an approval could survive the candidate being rewritten
+    underneath it and the bundle could record a PASS for a pair nobody
+    approved together.  Every seam that could authenticate, call an API, read a
+    registered byte, execute the source or create a directory is counted here,
+    and all of them must stay at zero on the refusal.
+    """
+    record = P3.EXECUTION_APPROVAL_RECORD
+    current = Q5E.source_match_adapter_fingerprint()
+    check(record["for_adapter_fingerprint"] == current,
+          f"the approval names the adapter it would compare: {current}")
+    # `load_source_under_injection` is deliberately NOT counted here: it is
+    # one of ORACLE_HARNESS_FUNCTIONS, so replacing it changes
+    # oracle_harness_sha256 and the harness gate would fire first and hide the
+    # gate under test.  Nothing is lost — it cannot run without the bytes
+    # `fetch_registered_source` returns, and it executes them through
+    # `_compile_and_exec`; both are counted.
+    counters = {"auth": 0, "adapter": 0, "fetch": 0, "compile": 0,
+                "mkdir": 0, "credential": 0}
+    saved_calls = {name: getattr(P3, name) for name in
+                   ("authenticate_drive_readonly", "build_drive_adapter",
+                    "fetch_registered_source", "_compile_and_exec")}
+    saved_mkdir = os.mkdir
+    saved_credential = P12._colab_readonly_credential
+    saved = record["for_adapter_fingerprint"]
+
+    def counted(key):
+        def call(*args, **kwargs):
+            counters[key] += 1
+        return call
+
+    try:
+        P3.authenticate_drive_readonly = counted("auth")
+        P3.build_drive_adapter = counted("adapter")
+        P3.fetch_registered_source = counted("fetch")
+        P3._compile_and_exec = counted("compile")
+        P12._colab_readonly_credential = counted("credential")
+        os.mkdir = counted("mkdir")
+        # The guard is opened on purpose: `granted` is the barrier a fresh
+        # approval flips, and the fingerprint binding is the gate *below* it.
+        record["for_adapter_fingerprint"] = "0" * 64
+        try:
+            with opened_guard():
+                P3.run_p3("/nonexistent/out", approval=TOKEN,
+                          open_registered_data=True, timestamp=STAMP,
+                          emit=lambda _message: None)
+        except P3.P3NotApprovedError as error:
+            check("not an approval of this run" in str(error),
+                  "an approval for another adapter refuses the run")
+            check(current in str(error) and "0" * 64 in str(error),
+                  "naming both fingerprints, so renewing it is mechanical")
+        else:                                                # pragma: no cover
+            raise AssertionError("a stale adapter approval let a run through")
+    finally:
+        record["for_adapter_fingerprint"] = saved
+        for name, value in saved_calls.items():
+            setattr(P3, name, value)
+        os.mkdir = saved_mkdir
+        P12._colab_readonly_credential = saved_credential
+    check(counters == {"auth": 0, "adapter": 0, "fetch": 0, "compile": 0,
+                       "mkdir": 0, "credential": 0},
+          f"and reached nothing at all on the way: {counters}")
+    check(P3.EXECUTION_APPROVAL_RECORD["for_adapter_fingerprint"] == current,
+          "and the record is restored after the test")
+
+
+def test_the_approval_note_describes_the_current_state_not_a_past_grant():
+    """`APPROVAL_NOTE` rides on nearly every refusal, so it must not say
+    "Approved".
+
+    It did, for a while after the approval had been closed again, and it named
+    a harness digest two corrections old — a refusal that opens with an
+    approval is a refusal nobody reads correctly.  Past grants belong in
+    `EXECUTION_APPROVAL_RECORD` as history.
+    """
+    note = P3.APPROVAL_NOTE
+    check(not note.startswith("Approved"),
+          "the note does not open by announcing an approval")
+    check("execution is CLOSED" in note and "AWAITING_ACCEPTANCE" in note,
+          "it states the current state instead")
+    for digest in (str(P3.EXECUTION_APPROVAL_RECORD["for_oracle_harness_sha256"]
+                       )[:8],
+                   str(P3.EXECUTION_APPROVAL_RECORD["for_adapter_fingerprint"]
+                       )[:8]):
+        check(digest in note,
+              f"and names the pair the door is closed for: {digest}…")
+    check("History, not current state" in note and "4127809f" in note,
+          "the past grant is kept, and labelled as history")
+    check("D34" in note and "corrected" in note,
+          "the adapter is described as corrected from observation, not as a "
+          "text-derived candidate awaiting design")
+    check("D32" in note and "D33" in note and "3 of 6" in note,
+          "and the accepted result is stated as already decided")
+    check("not a re-derivation" in note and "6 of 6" in note,
+          "so the next run is not mistaken for a re-run of the verdict")
 
 
 def test_the_switch_default_still_refuses_a_stray_import():
@@ -2947,6 +3049,79 @@ def test_the_fixtures_are_untouched_by_the_adapter_correction():
           "and execution is closed, as an adapter correction requires")
 
 
+def _label_vector_shapes():
+    """Seven kept rows, and the three block shapes a record puts beside them."""
+    return {
+        # 7 rows x 300 samples: rectangular, and its rows are 300 long.
+        "beat": [[float(row * 300 + col) for col in range(300)]
+                 for row in range(7)],
+        # 7 rows x 7 features: **square with the row count**.  This is the
+        # shape that produced the transposed reading of 20260816T192351.
+        "rr": [[float(row * 7 + col) for col in range(7)] for row in range(7)],
+        # A block whose outer length is not the row count: not row data, so
+        # the guard must not touch it.
+        "ctx": [[float(col) for col in range(7)] for _ in range(3)],
+        # The real per-row label channel: flat, one entry per row.
+        "y": [0, 1, 2, 0, 1, 2, 0],
+    }
+
+
+def test_a_row_shaped_block_is_not_offered_as_label_vectors():
+    """The square RR block must not be read as seven per-row label vectors.
+
+    `label_vectors` names a channel by the path it was found at, so a block
+    with one entry per row hands the projection its own rows back under paths
+    like `.rr[0]` — tokens that look stable across a fixture and mean nothing,
+    because they are row data the row channels have already read.  When the RR
+    block is square with the row count there is nothing in the shape to tell a
+    row from a column, which is exactly the case run `20260816T192351` hit with
+    seven kept rows and a seven-wide RR block.
+    """
+    canonical = _label_vector_shapes()
+    peaks = {1000, 1042, 1500, 1740, 1980, 2220, 2460}
+    found = dict(P3.label_vectors(canonical, 7, peaks))
+    check(".y" in found and found[".y"] == ["0", "1", "2", "0", "1", "2", "0"],
+          f"the flat per-row label channel is still collected: {sorted(found)}")
+    check(not [p for p in found if p.startswith(".rr")],
+          f"and no vector is taken from the square RR block: {sorted(found)}")
+    check(not [p for p in found if p.startswith(".beat")],
+          f"nor from the 7x300 beat block: {sorted(found)}")
+    check([p for p in found if p.startswith(".ctx")],
+          "while a block whose outer length is NOT the row count is still "
+          f"recursed into, so the guard is not a blanket skip: {sorted(found)}")
+
+
+def test_removing_the_row_block_guard_brings_the_transposed_tokens_back():
+    """The guard is load-bearing: without it the bad RR tokens reappear.
+
+    A guard nothing can undo is a guard nothing depends on.  This re-executes
+    `label_vectors` with its rectangular check forced false and requires the
+    seven `.rr[...]` vectors — the transposed reading — to come back.
+    """
+    import inspect
+    body = inspect.getsource(P3.label_vectors)
+    guard = ("            if n_rows and len(node) == n_rows and node and all(\n"
+             "                    isinstance(item, list) and "
+             "len(item) == len(node[0])\n"
+             "                    for item in node):\n")
+    check(guard in body, "the rectangular guard is still where it was")
+    namespace = {"_canonical_json": P3._canonical_json,
+                 "MAX_CONTAINER": P3.MAX_CONTAINER,
+                 "List": list, "Tuple": tuple, "Set": set}
+    exec(body.replace(guard, "            if False:\n", 1), namespace)
+    without = dict(namespace["label_vectors"](
+        _label_vector_shapes(), 7, {1000, 1042, 1500, 1740, 1980, 2220, 2460}))
+    rr = sorted(p for p in without if p.startswith(".rr"))
+    check(len(rr) == 7,
+          f"without the guard the RR block's own rows come back as seven "
+          f"per-row vectors: {rr}")
+    check(without[".rr[0]"] == ["0.0", "1.0", "2.0", "3.0", "4.0", "5.0",
+                                "6.0"],
+          "and each is a row of the block read as if it were a column")
+    check(".y" in without,
+          "the guard changes only that — the flat channel is unaffected")
+
+
 def test_the_correction_is_pinned_by_a_mutation_per_finding():
     """Each of the three corrections, reverted one at a time, must be caught.
 
@@ -2957,8 +3132,18 @@ def test_the_correction_is_pinned_by_a_mutation_per_finding():
     import inspect
     body = inspect.getsource(Q5E.match_peaks_to_annotations)
     mutations = {
+        # A real fall-through, not a re-use.  Disabling `if best in used`
+        # alone would let the peak *match an annotation already consumed* —
+        # caught by the same fixture, but a different mistake from the one
+        # this correction is about.  Falling through means the scan skips
+        # consumed candidates and settles on the next-nearest unused one.
         "fall through instead of dropping": (
-            "        if best in used:\n", "        if False and best in used:\n",
+            "        for rank, pos in enumerate(positions):\n"
+            "            distance = abs(pos - peak)\n",
+            "        for rank, pos in enumerate(positions):\n"
+            "            if rank in used:\n"
+            "                continue\n"
+            "            distance = abs(pos - peak)\n",
             "test_source_match_nearest_already_used_falls_through"),
         "re-sort the candidates by sample": (
             '    order = [k for k in range(len(annotations))\n'
@@ -2976,6 +3161,11 @@ def test_the_correction_is_pinned_by_a_mutation_per_finding():
     for label, (old, new, expected) in sorted(mutations.items()):
         check(old in body, f"the mutation for {label!r} still applies")
         text = body.replace(old, new, 1)
+        if "fall through" in label:
+            # ...and the drop goes with it, or the mutation would still refuse
+            # the peak after having found it a fresh candidate.
+            text = text.replace(
+                "        if best in used:\n", "        if False:\n", 1)
         if "before filtering" in label:
             text = text.replace(
                 '        aami = BJ.AAMI_SYMBOL_MAP.get(symbol, "")\n',

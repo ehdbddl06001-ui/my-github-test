@@ -273,7 +273,22 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     # The digest this record names is the harness as it stands, so a *later*
     # change still closes the door on its own; `granted` is what a fresh
     # approval flips, and the diff that flips it shows the digest it is for.
-    "for_oracle_harness_sha256": "71dd6606f923f8b95abc22dc85e3686542586f8575a2dce9312639384ed154ea",
+    "for_oracle_harness_sha256": "4a06fa07ab7d8e69a22c441276ad0e80cc37328e3ef517705ec9bf4f1e725698",
+    # The differential compares *two* things, and until 2026-08-16 the approval
+    # named only one of them.  The harness digest folds the capture and
+    # projection surface; it does not fold the candidate adapter, because the
+    # adapter is the thing under test and lives in another module.  So an
+    # approval granted for one adapter stayed valid while the adapter was
+    # rewritten underneath it — exactly the gap the injected-surface comment in
+    # oracle_harness_identity() describes, repeated on the other operand.  Both
+    # identities are named here now, and the guard checks both.
+    "for_adapter_fingerprint": (
+        "5a889e6bb01478d4005149abf98a548f0a2805e2a7f8a7b6df91fa043ecfc43c"),
+    "why_both_identities_are_named": (
+        "a P3 run is a comparison, so its result is only meaningful for the "
+        "pair it compared; naming the harness alone let the candidate move "
+        "without re-approval, and a PASS recorded that way would be a PASS "
+        "for an adapter nobody approved running"),
     "closed_because": (
         "Codex reviewed run 20260816T161639 and found the source projection "
         "read a filtered annotation index in the reader's index space, so the "
@@ -319,17 +334,31 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
                                "commit 40b1642)",
     "recorded_in": SPEC_PATH,
 }
+#: What the *current* state is, in the words a stop message should carry.  This
+#: string is appended to nearly every refusal this module raises and is written
+#: into the bundle, so it has to describe the state the reader is actually in.
+#: It said "Approved …" for a while after the approval had been closed again,
+#: naming a harness digest two corrections old — a refusal that opens with an
+#: approval is a refusal nobody reads correctly.  Past grants are history and
+#: are kept in EXECUTION_APPROVAL_RECORD, not here.
 APPROVAL_NOTE = (
-    "Approved (2026-08-16) by the user for oracle harness 4127809f… at merge "
-    "commit ee3841f, after Codex returned P3_IMPLEMENTATION_ACCEPTED on the "
-    "corrected projection.  It is bound to that digest, so the next harness "
-    "change closes the door again rather than inheriting an approval nobody "
-    "gave, and the run starts again from the first of the six fixtures.  "
-    "**Not results, and not to be used as any:** the 3-of-6 count and the "
-    "non-AAMI fixture's source detail from run 20260816T161639, which this "
-    "re-run re-derives; until it does, the equivalence verdict rests on the "
-    "two qualified mismatches alone.  What is approved: **read-only** "
-    "execution of P3 — "
+    "P3_IMPLEMENTATION_AWAITING_ACCEPTANCE — **execution is CLOSED** for "
+    "oracle harness 4a06fa07… and adapter fingerprint 5a889e6b…, the pair this "
+    "module would compare.  Design and implementation are complete and the "
+    "candidate adapter has been corrected from the observed decisions of run "
+    "20260816T192351 (spec D34), so what remains is acceptance of that "
+    "correction and a fresh approval naming BOTH identities; the approval that "
+    "produced 20260816T192351 was for the previous pair and does not carry "
+    "over.  History, not current state: the 2026-08-16 grant for harness "
+    "4127809f… at merge commit ee3841f, recorded in EXECUTION_APPROVAL_RECORD. "
+    " Already decided, and not re-derived by any future run: run "
+    "20260816T192351 is the confirmed P3 result — SOURCE_MATCH_EQUIVALENCE_"
+    "REQUIRED, 3 of 6, all three mismatches qualified (spec D32), accepted "
+    "under D33 with its executed notebook recorded as not preserved.  The next "
+    "run is not a re-derivation of that verdict: it exists to test whether the "
+    "**corrected** adapter is 6 of 6 against the registered source, and if it "
+    "is not, no SOURCE_MATCH_ORACLE_RECORD is created.  What a fresh approval "
+    "would cover: **read-only** execution of P3 — "
     f"reading the registered {REGISTERED_SOURCE_NAME} by file id "
     f"{REGISTERED_SOURCE_FILE_ID} under exactly the drive.readonly scope, "
     "loading it under synthetic dependency injection, running the six "
@@ -452,6 +481,22 @@ def _terminal_execution_guard() -> Dict[str, object]:
             f"decides what the run observes, so an approval given for a "
             f"different one is not an approval of this run.  Re-approve "
             f"against the current digest before executing.")
+    # ...and for the adapter it was given for.  The harness digest cannot
+    # stand in for this one: the adapter is the operand under test and lives in
+    # another module, so every adapter correction leaves the harness digest
+    # exactly where it was.  Binding only the harness would let a corrected
+    # candidate inherit the approval of the candidate it replaced, and the
+    # bundle would record a PASS for a pair that was never approved together.
+    bound_adapter = EXECUTION_APPROVAL_RECORD.get("for_adapter_fingerprint")
+    current_adapter = str(Q5E.source_match_adapter_fingerprint())
+    if bound_adapter != current_adapter:
+        raise P3NotApprovedError(
+            f"the execution approval on record is for adapter fingerprint "
+            f"{bound_adapter}, and this module would compare "
+            f"{current_adapter}.  A differential is only a result for the "
+            f"pair it compared, so an approval given for a different "
+            f"candidate is not an approval of this run.  Re-approve against "
+            f"the current adapter fingerprint before executing.")
     return dict(EXECUTION_APPROVAL_RECORD)
 
 
@@ -3287,9 +3332,13 @@ def label_vectors(canonical: object, n_rows: int, peak_set: Set[int]
 
     What the values *mean* is never decoded.  They are tokens, compared only
     with other tokens from the same producer, which is all the projection needs
-    in order to tell two annotations apart.  Every candidate vector is kept:
-    one that turns out to be row-unique simply never matches anything and
-    contributes nothing, while a class-like one generalises across fixtures.
+    in order to tell two annotations apart.  Every candidate vector is kept
+    **except one shape**: a rectangular nested block with exactly one entry per
+    row is row data the row channels have already read, and it is skipped
+    rather than recursed into (see the guard below).  Keeping the rest is
+    deliberate — a vector that turns out to be row-unique simply never matches
+    anything and contributes nothing, while a class-like one generalises across
+    fixtures.
 
     Each vector is returned with the **path it was found at**, and that path is
     what names its channel.  Naming channels by the order they were discovered
