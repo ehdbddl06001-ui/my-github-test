@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 660" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="다리 얕은정맥 태깅 연습판 — 번호핀만 남긴 퀴즈판">
+  <!-- 퀴즈판. 번호 1-10은 문항 anatomy-2026-0042 의 정답 순서와 1:1 (임의 변경 금지).
+       라벨판: diag-saphenous-veins-labeled.svg -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+    .b{fill:#1b2a3c;stroke:#3b506a}
+    .limb{fill:#162436;stroke:#3b506a;stroke-width:1.7}
+    .pin{fill:#2a2416;stroke:#eab308;stroke-width:1.6}
+    .pn{fill:#eab308;font-size:11.5;font-weight:700;text-anchor:middle}
+  </style>
+  <rect width="880" height="660" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">태깅 연습 — 다리 얕은정맥과 피부신경
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">quiz sheet</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">1-10의 이름을 한·영으로 답하시오. 정맥은 <tspan fill="#e6edf3">어디로 흘러 들어가는지</tspan>까지 함께 답한다.</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">정답 확인은 라벨판(diag-saphenous-veins-labeled.svg)과 문항 카드에서.</text>
+
+  <rect x="18" y="82" width="310" height="468" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="34" y="106" fill="#9dc7f0" font-size="14" class="kr">A. 앞에서 본 모습</text>
+  <text x="34" y="122" fill="#6f8299" font-size="9.5">오른다리 · 안쪽이 왼쪽</text>
+
+  <g transform="translate(44,132)">
+    <path d="M 50,0 L 130,0 C 132,56 128,116 114,164 C 118,220 116,272 108,326 L 106,344
+             C 112,348 128,352 132,360 L 128,370 L 72,370 L 70,344 L 68,326
+             C 60,272 58,220 62,164 C 48,116 44,56 50,0 Z" class="limb"/>
+    <line x1="50" y1="166" x2="128" y2="162" stroke="#2b3a4d" stroke-width="1.3"/>
+    <text x="136" y="160" fill="#4a5f78" font-size="8.5">무릎</text>
+
+    <!-- 안쪽복사 -->
+    <circle cx="72" cy="338" r="7" fill="#3d5166" stroke="#7f9ab5" stroke-width="1.3"/>
+
+    <!-- 큰두렁정맥 -->
+    <path d="M 88,364 C 78,356 72,348 66,336 C 62,316 64,290 66,264
+             C 68,224 66,196 64,172 C 66,140 70,108 76,76 C 80,48 84,30 90,18"
+          fill="none" stroke="#3f6fbf" stroke-width="5" stroke-linecap="round"/>
+    <!-- 발등정맥활 -->
+    <path d="M 88,364 C 100,368 116,366 126,360" fill="none" stroke="#3f6fbf" stroke-width="3.4"/>
+    <!-- 두렁구멍 -->
+    <circle cx="92" cy="16" r="9" fill="none" stroke="#eab308" stroke-width="2"/>
+    <!-- 지류들 -->
+    <g stroke="#3f6fbf" stroke-width="2.4" fill="none">
+      <path d="M 90,22 L 66,8"/><path d="M 92,24 L 120,10"/><path d="M 90,30 L 68,34"/>
+    </g>
+    <!-- 두렁신경 (무릎 아래부터 동반) -->
+    <path d="M 70,168 C 72,206 70,240 72,268 C 74,296 76,318 80,336"
+          fill="none" stroke="#9cc3ff" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- 관통정맥 -->
+    <g stroke="#3f6fbf" stroke-width="2" fill="none">
+      <path d="M 66,300 L 86,300"/><path d="M 65,246 L 85,246"/>
+    </g>
+    <circle cx="86" cy="300" r="4" fill="none" stroke="#eab308" stroke-width="1.4"/>
+    <circle cx="85" cy="246" r="4" fill="none" stroke="#eab308" stroke-width="1.4"/>
+  </g>
+
+  <line x1="136" y1="148" x2="196" y2="152" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="212" cy="152" r="13" class="pin"/><text x="212" y="156" class="pn">2</text>
+
+  <line x1="114" y1="242" x2="196" y2="240" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="212" cy="240" r="13" class="pin"/><text x="212" y="244" class="pn">1</text>
+
+  <line x1="118" y1="422" x2="196" y2="330" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="212" cy="330" r="13" class="pin"/><text x="212" y="334" class="pn">3</text>
+
+  <line x1="116" y1="470" x2="196" y2="410" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="212" cy="410" r="13" class="pin"/><text x="212" y="414" class="pn">4</text>
+
+  <line x1="130" y1="432" x2="196" y2="470" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="212" cy="470" r="13" class="pin"/><text x="212" y="474" class="pn">5</text>
+
+  <line x1="170" y1="496" x2="196" y2="512" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="212" cy="516" r="13" class="pin"/><text x="212" y="520" class="pn">10</text>
+
+  <rect x="340" y="82" width="310" height="468" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="356" y="106" fill="#9dc7f0" font-size="14" class="kr">B. 뒤에서 본 모습</text>
+  <text x="356" y="122" fill="#6f8299" font-size="9.5">오른다리 · 가쪽이 왼쪽</text>
+
+  <g transform="translate(366,132)">
+    <path d="M 50,0 L 130,0 C 132,56 128,116 114,164 C 118,220 116,272 108,326 L 106,344
+             C 112,348 128,352 132,360 L 128,370 L 72,370 L 70,344 L 68,326
+             C 60,272 58,220 62,164 C 48,116 44,56 50,0 Z" class="limb"/>
+    <line x1="50" y1="166" x2="128" y2="162" stroke="#2b3a4d" stroke-width="1.3"/>
+    <text x="136" y="160" fill="#4a5f78" font-size="8.5">오금</text>
+    <!-- 오금 마름모 -->
+    <path d="M 90,150 L 106,164 L 90,180 L 74,164 Z" fill="none" stroke="#7f9ab5" stroke-width="1.2" stroke-dasharray="3 2"/>
+
+    <!-- 가쪽복사 -->
+    <circle cx="74" cy="338" r="7" fill="#3d5166" stroke="#7f9ab5" stroke-width="1.3"/>
+
+    <!-- 작은두렁정맥: 가쪽복사 뒤 → 종아리 뒤 정중 → 오금 -->
+    <path d="M 92,366 C 82,358 74,350 70,340 C 70,322 76,306 84,290
+             C 90,268 90,240 90,212 C 90,196 90,184 90,172"
+          fill="none" stroke="#3f6fbf" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 92,366 C 104,368 116,366 126,360" fill="none" stroke="#3f6fbf" stroke-width="3.4"/>
+    <!-- 깊은근막 관통점 -->
+    <circle cx="90" cy="176" r="9" fill="none" stroke="#eab308" stroke-width="2"/>
+
+    <!-- 장딴지신경 -->
+    <path d="M 96,214 C 92,246 86,274 78,300 C 74,318 72,330 72,342"
+          fill="none" stroke="#9cc3ff" stroke-width="3.2" stroke-linecap="round"/>
+    <!-- 아킬레스힘줄 -->
+    <line x1="90" y1="292" x2="90" y2="336" stroke="#4a5f78" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <line x1="456" y1="308" x2="518" y2="184" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="534" cy="184" r="13" class="pin"/><text x="534" y="188" class="pn">7</text>
+
+  <line x1="456" y1="352" x2="518" y2="272" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="534" cy="272" r="13" class="pin"/><text x="534" y="276" class="pn">6</text>
+
+  <line x1="444" y1="432" x2="518" y2="356" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="534" cy="356" r="13" class="pin"/><text x="534" y="360" class="pn">8</text>
+
+  <line x1="440" y1="470" x2="518" y2="432" stroke="#4a5f78" stroke-width="0.9"/>
+  <circle cx="534" cy="432" r="13" class="pin"/><text x="534" y="436" class="pn">9</text>
+
+  <rect x="356" y="506" width="278" height="40" rx="5" fill="#1a2f47" stroke="#4d7fb0"/>
+  <text x="366" y="522" fill="#9cc3ff" font-size="10" class="kr">1과 6은 각각 어느 복사를 어느 쪽으로 지나는가?</text>
+  <text x="366" y="536" fill="#6f8299" font-size="9">네 글자로 규칙을 만들어 외워 보자</text>
+
+  <rect x="662" y="82" width="200" height="468" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="676" y="106" fill="#9dc7f0" font-size="13" class="kr">C. 말로 설명하기</text>
+  <g font-size="9.5">
+    <rect x="676" y="120" width="172" height="46" rx="4" class="b"/>
+    <text x="684" y="138" fill="#e6edf3">1. 얕은정맥의 피는 어떤</text>
+    <text x="684" y="152" fill="#e6edf3">경로로 깊은정맥에 가나?</text>
+    <rect x="676" y="174" width="172" height="46" rx="4" class="b"/>
+    <text x="684" y="192" fill="#e6edf3">2. 그 흐름이 한 방향으로</text>
+    <text x="684" y="206" fill="#e6edf3">유지되는 장치는?</text>
+    <rect x="676" y="228" width="172" height="46" rx="4" class="b"/>
+    <text x="684" y="246" fill="#e6edf3">3. 그 장치가 망가지면</text>
+    <text x="684" y="260" fill="#e6edf3">생기는 병은?</text>
+    <rect x="676" y="282" width="172" height="46" rx="4" class="b"/>
+    <text x="684" y="300" fill="#e6edf3">4. 우회수술 이식편으로</text>
+    <text x="684" y="314" fill="#e6edf3">쓰는 정맥은 1·6 중?</text>
+    <rect x="676" y="336" width="172" height="60" rx="4" class="b"/>
+    <text x="684" y="354" fill="#e6edf3">5. 1을 채취할 때 다치기</text>
+    <text x="684" y="368" fill="#e6edf3">쉬운 신경과, 6을 채취할</text>
+    <text x="684" y="382" fill="#e6edf3">때 다치기 쉬운 신경은?</text>
+    <rect x="676" y="404" width="172" height="60" rx="4" class="b"/>
+    <text x="684" y="422" fill="#e6edf3">6. 피부벗기기에서 이 구조</text>
+    <text x="684" y="436" fill="#e6edf3">들을 살리려면 어느 층까지</text>
+    <text x="684" y="450" fill="#e6edf3">만 칼을 넣어야 하나?</text>
+  </g>
+  <text x="676" y="486" fill="#6f8299" font-size="9">답을 소리 내어 말한 뒤</text>
+  <text x="676" y="500" fill="#6f8299" font-size="9">라벨판으로 채점한다.</text>
+
+  <rect x="18" y="562" width="844" height="82" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="34" y="586" fill="#9dc7f0" font-size="13" class="kr">채점 기준 <tspan fill="#93a4b7" font-size="10" font-weight="400">답안 표기 규정</tspan></text>
+  <text x="34" y="608" fill="#93a4b7" font-size="10">공인 한글용어 또는 원어 중 하나로 답한다. 허용 약자는 a. v. n. m. lig. sup. inf. ant. post. med. lat. (마침표 필수).</text>
+  <text x="34" y="626" fill="#6f8299" font-size="10">예: '큰두렁정맥' 또는 'great saphenous v.' 둘 다 정답. 'GSV' 같은 임의 약자는 오답으로 본다.</text>
+</svg>

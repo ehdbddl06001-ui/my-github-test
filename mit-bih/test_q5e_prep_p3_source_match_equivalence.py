@@ -2382,6 +2382,113 @@ def test_a_producer_that_reads_a_declared_constant_loads_and_runs():
           "and agrees on all six fixtures")
 
 
+#: A producer that reads two names nobody declared, one after the other.  The
+#: refusal only ever reveals the first, which is how four rounds of this PREP
+#: each cost a full run to learn a single name.
+TWO_MISSING_NAMES_PRODUCER = Z_USING_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS, _z",
+    "from .frontend import detect_r, rr_features, FS, _z\n"
+    "import frontend as FE").replace(
+    "    rr_all = rr_features(peaks, FS)",
+    "    _first = FE.first_missing_name\n"
+    "    _second = FE.second_missing_name\n"
+    "    rr_all = rr_features(peaks, FS)")
+
+
+def test_the_declared_surface_covers_the_ctx_producer():
+    """`frontend.beat_ctx` builds the record's `ctx` column.
+
+    Run `20260816T031420` got past the beat-count guard and stopped here.  It
+    is declared under the same row convention as the other feature producers,
+    for the same two reasons: the rows stay aligned with `rr`, which the
+    columnar reader requires of every registered column, and each row says
+    which peak it was built for rather than leaving that to a count.
+    """
+    check("beat_ctx" in P3.INJECTED_GLOBALS,
+          "the injected globals carry beat_ctx")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        frontend = sys.modules["frontend"]
+        rows = frontend.beat_ctx([1000, 1012], 360)
+        rows = [list(row) for row in rows]
+    check([row[0] for row in rows] == [1000.0, 1012.0],
+          f"each row names the peak it was built for: {rows}")
+    check(len({len(row) for row in rows}) == 1,
+          "and every row has the same width, so the column is a block")
+    ctx_reading = P3.build_injection(P3.FIXTURES[0])[0]["beat_ctx"]
+    check(callable(ctx_reading), "it is a callable, like the producers beside "
+                                 "it")
+
+
+def test_the_surface_discovery_pass_lists_every_missing_name_at_once():
+    """A refusal reveals one name; four rounds have each cost a run for one.
+
+    So after a run has already stopped for that reason, the same fixture is run
+    once more with undeclared names answered rather than refused — purely to
+    enumerate them.  Nothing it produces may be read.
+    """
+    try:
+        differential_for(TWO_MISSING_NAMES_PRODUCER)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_STUB_SURFACE_INCOMPLETE,
+              "the run still stops at the first undeclared name")
+        check("first_missing_name" in str(error),
+              "and the stop still names that one")
+        discovery = error.context["surface_discovery"]
+        check(discovery["undeclared_names"] ==
+              ["frontend.first_missing_name", "frontend.second_missing_name"],
+              f"while the discovery pass lists both, in the order the producer "
+              f"asked for them: {discovery['undeclared_names']}")
+        check(discovery["is_an_observation"] is False
+              and "NOT AN OBSERVATION" in discovery["note"],
+              "and says plainly that it is not an observation")
+        check(all(not name.split(".")[1].startswith("__")
+                  for name in discovery["undeclared_names"]),
+              "import machinery is not reported as a dependency")
+    else:                                                    # pragma: no cover
+        raise AssertionError("two undeclared names did not stop the run")
+
+
+def test_the_discovery_pass_can_never_become_a_result():
+    """Permissive is a diagnosis mode, and it must not be reachable elsewhere."""
+    import inspect
+    source = inspect.getsource(P3.differential_over_fixtures)
+    check("permissive" not in source,
+          "the differential never opens a permissive session itself")
+    check("discover_stub_surface" in source
+          and "P3_STUB_SURFACE_INCOMPLETE" in source,
+          "it only asks for one after a run has already stopped for that "
+          "reason")
+    callers = [name for name in dir(P3)
+               if callable(getattr(P3, name, None))
+               and "permissive=True" in (
+                   inspect.getsource(getattr(P3, name))
+                   if getattr(getattr(P3, name), "__module__", "") ==
+                   P3.__name__ and not isinstance(getattr(P3, name), type)
+                   else "")]
+    check(callers == ["discover_stub_surface"],
+          f"and it is the only function in the module that opens one: "
+          f"{callers}")
+    # A permissive session still refuses nothing quietly: every undeclared name
+    # is recorded, and the record says which mode it was recorded in.
+    stubs, log = P3.build_injection(P3.FIXTURES[0], permissive=True)
+    with P3.InjectedModules(stubs):
+        sys.modules["frontend"].whatever_this_is
+    entries = [c for c in log.as_list() if c["target"] == "frontend.__getattr__"]
+    check(entries and entries[0]["permissive"] is True
+          and entries[0]["declared"] is False,
+          f"a permissive read is logged as permissive: {entries}")
+    stubs, log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        try:
+            sys.modules["frontend"].whatever_this_is
+        except P3.StubAttributeMissing:
+            pass
+    entries = [c for c in log.as_list() if c["target"] == "frontend.__getattr__"]
+    check(entries and entries[0]["permissive"] is False,
+          "and an ordinary read is logged as the refusal it is")
+
+
 def test_an_undeclared_stub_attribute_is_its_own_stop():
     """"The injection is incomplete" is not "the source is broken".
 

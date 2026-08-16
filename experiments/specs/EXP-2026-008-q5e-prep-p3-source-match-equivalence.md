@@ -481,6 +481,46 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D22 (2026-08-16) — the filler worked; `frontend.beat_ctx` is declared, and
+the surface is now discovered in one pass instead of one name per run.**  Run
+`20260816T031420` got past the beat-count guard: `detect_r` returned the 8
+peaks, and **`rr_features` was called with 7** — the registered producer
+dropped peak 1012, whose nearest annotation was already consumed, and carried
+the other seven forward.  It then read `frontend.beat_ctx`, which the injected
+surface did not declare.
+
+`beat_ctx` builds the record's `ctx` column and is declared under the **same
+row convention** as the other feature producers — one row per peak it was
+handed, that peak in the first column — for the same two reasons: the rows stay
+aligned with `rr`, which the columnar reader requires of every registered
+column, and each row says which peak it was built for rather than leaving that
+to a count.  Like every injected *function* its neutrality is probed rather
+than argued (D15).
+
+**The round-trip problem, and the fix.**  Four stops in this PREP have been
+"the injected surface is missing one more name", and a refusal reveals exactly
+one name per run.  The refusal is right — an unknown dependency must never
+slip into a run wearing a stub's name — but learning them one at a time is
+not.  So `discover_stub_surface()` runs the *same* fixture once more **after**
+a run has already stopped for that reason, with undeclared names answered by a
+permissive stand-in instead of refused, purely to enumerate them.
+
+Its containment is structural, not promised: it is the only function in the
+module that opens a permissive session (asserted by a regression that scans
+the module's own source), `differential_over_fixtures` opens one only inside
+its `P3_STUB_SURFACE_INCOMPLETE` branch, the result goes into the stop's
+context and never into an observation, every permissive read is logged *as*
+permissive, and the ordinary refusal is untouched — a real run still stops at
+the first undeclared name.  Nothing the pass computes is read: not a return
+value, not a trace, not a row, only the list of names.
+
+New regressions: `test_the_declared_surface_covers_the_ctx_producer`,
+`test_the_surface_discovery_pass_lists_every_missing_name_at_once` (a producer
+reading two undeclared names still stops at the first, and the discovery pass
+reports both), and `test_the_discovery_pass_can_never_become_a_result`.  Suite:
+102 functions, 1,113 assertions.  Bundle `43e95495…` / manifest `f949c7b0…` at
+`runs/20260816T031420_…` is preserved.
+
 **D21 (2026-08-16) — the fixtures gain filler beats, because the registered
 producer will not build a record from too few of them.  A change to registered
 fixture inputs: the spec owner should review this entry.**

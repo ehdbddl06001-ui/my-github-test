@@ -5,37 +5,37 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1119,
+  "total": 1149,
   "byType": {
-   "anatomy": 270,
-   "paper": 211,
+   "anatomy": 292,
+   "paper": 219,
    "kmle": 555,
    "usmle": 66,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 270,
-   "Cardiology": 84,
-   "Nephrology": 62,
-   "Infectious Disease": 60,
-   "Pediatrics": 58,
+   "Anatomy": 292,
+   "Cardiology": 85,
+   "Nephrology": 63,
+   "Infectious Disease": 61,
+   "Pediatrics": 59,
    "Obstetrics & Gynecology": 40,
    "Neurology": 38,
    "Psychiatry": 38,
    "Endocrinology": 36,
    "Gastroenterology": 35,
    "Pulmonology": 35,
+   "Surgery": 35,
    "Dermatology": 34,
    "General Surgery": 34,
    "Ophthalmology": 34,
    "Orthopedics": 34,
    "Rheumatology": 34,
-   "Surgery": 34,
    "Hematology": 33,
-   "Pathology": 29,
-   "Laboratory Medicine": 27,
-   "Hematology-Oncology": 22,
+   "Pathology": 30,
+   "Laboratory Medicine": 28,
+   "Hematology-Oncology": 23,
    "Physiology": 7,
    "Microbiology": 6,
    "Biochemistry": 5,
@@ -53,13 +53,26 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 711,
-   "medium": 359,
+   "high": 714,
+   "medium": 386,
    "low": 49
   },
-  "tagCount": 2061
+  "tagCount": 2078
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-16",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-16",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/daily/2026-08-16.md",
+   "snippet": "오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-16 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "anatomy-2026-0076",
    "type": "anatomy",
@@ -248,6 +261,508 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0068.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
    "text": "Anatomy 가로목신경 실사 spotter (필기 제거·복원본) spotter 복원 6회차 가로목신경 목신경얼기 신경점 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p17 문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0052",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부판을 젖히는 방향과 남기는 층",
+   "tags": [
+    "layer-order",
+    "1회차",
+    "피부벗기기",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0052.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 피부판을 젖히는 방향과 남기는 층 layer-order 1회차 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0051",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "얕은정맥에서 깊은정맥으로 가는 길",
+   "tags": [
+    "relation",
+    "1회차",
+    "관통정맥",
+    "정맥류",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0051.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 얕은정맥에서 깊은정맥으로 가는 길 relation 1회차 관통정맥 정맥류 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0050",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "두렁정맥 채취와 동반 신경 손상",
+   "tags": [
+    "distinction",
+    "1회차",
+    "두렁신경",
+    "임상",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0050.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 두렁정맥 채취와 동반 신경 손상 distinction 1회차 두렁신경 임상 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0049",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "부위별 깊은근막의 이름",
+   "tags": [
+    "relation",
+    "1회차",
+    "깊은근막",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0049.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 부위별 깊은근막의 이름 relation 1회차 깊은근막 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0048",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "볼기 피부신경의 유래 구별",
+   "tags": [
+    "distinction",
+    "1회차",
+    "볼기피부신경",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0048.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 볼기 피부신경의 유래 구별 distinction 1회차 볼기피부신경 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0047",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "꼬리마취의 삽입 부위와 목표 공간",
+   "tags": [
+    "clinical-application",
+    "1회차",
+    "꼬리마취",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0047.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 꼬리마취의 삽입 부위와 목표 공간 clinical-application 1회차 꼬리마취 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0046",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "허리천자 높이의 해부학적 근거",
+   "tags": [
+    "clinical-application",
+    "1회차",
+    "허리천자",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0046.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허리천자 높이의 해부학적 근거 clinical-application 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0045",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "작은두렁정맥의 주행",
+   "tags": [
+    "course-tracing",
+    "1회차",
+    "작은두렁정맥",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0045.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 작은두렁정맥의 주행 course-tracing 1회차 작은두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0044",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "큰두렁정맥의 주행",
+   "tags": [
+    "course-tracing",
+    "1회차",
+    "큰두렁정맥",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0044.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 큰두렁정맥의 주행 course-tracing 1회차 큰두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0043",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부벗기기에서 칼의 깊이",
+   "tags": [
+    "relation",
+    "1회차",
+    "얕은근막",
+    "피부벗기기",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0043.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 피부벗기기에서 칼의 깊이 relation 1회차 얕은근막 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0042",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "다리 얕은정맥 태깅 연습판 (1–10)",
+   "tags": [
+    "spotter",
+    "도해",
+    "1회차",
+    "두렁정맥",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0042.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 다리 얕은정맥 태깅 연습판 (1–10) spotter 도해 1회차 두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0041",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척수신경 뒤가지의 지배 영역",
+   "tags": [
+    "distinction",
+    "1회차",
+    "뒤가지",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0041.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 척수신경 뒤가지의 지배 영역 distinction 1회차 뒤가지 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0040",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12)",
+   "tags": [
+    "branch-tree",
+    "도해",
+    "1회차",
+    "뒤가지",
+    "볼기피부신경",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0040.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12) branch-tree 도해 1회차 뒤가지 볼기피부신경 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0039",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "허리천자 통과 층 순서 (퀴즈판 11–19)",
+   "tags": [
+    "layer-order",
+    "도해",
+    "1회차",
+    "허리천자",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0039.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허리천자 통과 층 순서 (퀴즈판 11–19) layer-order 도해 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0038",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부·근막 층과 절개선 태깅 연습판 (1–10)",
+   "tags": [
+    "spotter",
+    "도해",
+    "1회차",
+    "층",
+    "피부벗기기",
+    "예습시험"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0038.md",
+   "snippet": "문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 피부·근막 층과 절개선 태깅 연습판 (1–10) spotter 도해 1회차 층 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0037",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경",
+   "tags": [
+    "도해",
+    "1회차",
+    "정맥",
+    "두렁정맥",
+    "피부신경"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p, e-Anatomy Lower limb Superficial layer 02:44–03:39 / 12:02–13:34",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/concepts/lower-limb/anatomy-2026-0037.md",
+   "snippet": "주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 ",
+   "text": "Anatomy 다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경 도해 1회차 정맥 두렁정맥 피부신경 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p, e-Anatomy Lower limb Superficial layer 02:44–03:39 / 12:02–13:34 주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 정중선 끝 두렁정맥구멍(넓은근막) → 넙다리정맥 종아리근막을 뚫고 → 오금정맥 동반 신경 두렁신경 saphenous n. (무릎 아래부터) 장딴지신경 sural n. 암기: 큰 안 앞 / 작 가 뒤 두렁정맥구멍 직전 지류 얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. · 바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.) 흐름과 판막 얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이) 판막이 이 한 방향 만 허용하고, 장딴지근이 펌프가 된다. 판막부전 → 역류 → 정맥류 varicose veins (큰두렁계에 흔하다). 동반 신경의 감각 영역 신경 감각 영역 유래 두렁신경 종아리 안쪽 · 발 안쪽 넙다리신경의 감각가지 장딴지신경 종아리 뒤가쪽 · 발 가쪽 정강신경 + 온종아리신경 교통가지 임상 안쪽복사 앞 큰두렁정맥 = 응급 정맥절개(cut down) 자리. 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 이식편 . 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경. 장딴지신경은 신경생검 에 자주 쓴다. 실습 주의 두 정맥과 짝 신경 모두 얕은근막 안 에 있다. 피부만 벗기면 그대로 남는다."
+  },
+  {
+   "id": "anatomy-2026-0036",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척수신경 앞가지·뒤가지와 등·볼기 피부신경",
+   "tags": [
+    "도해",
+    "1회차",
+    "신경",
+    "뒤가지",
+    "앞가지",
+    "볼기피부신경"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이' (1회차 강의 PDF는 Drive 미보유)",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/concepts/back/anatomy-2026-0036.md",
+   "snippet": "갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior",
+   "text": "Anatomy 척수신경 앞가지·뒤가지와 등·볼기 피부신경 도해 1회차 신경 뒤가지 앞가지 볼기피부신경 해부 수업계획서 확정본 §1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이' (1회차 강의 PDF는 Drive 미보유) 갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior ramus 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기 굵기 가늘다 굵다 예외 C1 뒤가지(뒤통수밑신경) = 순수 운동 · C2 뒤가지 = 큰뒤통수신경 등세모근은 더부신경(XI) 지배 뒤가지의 피부가지 — 높이에 따라 갈린다 T1–T6: 안쪽가지 가 피부까지 간다. T7–T12: 가쪽가지 가 피부까지 간다. 둘 다 고유등근육에 운동가지를 준다. 볼기 피부신경 3형제 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 (엉덩뼈능선을 넘는다) 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 실습에서 등 피부를 벗기면 정중선 가까이에서 얕은근막을 뚫고 나오는 신경이 보인다 — 대부분 뒤가지의 피부가지다. 가쪽으로 갈수록 앞가지(갈비사이신경) 영역이 된다."
+  },
+  {
+   "id": "anatomy-2026-0035",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "피부·근막 층과 피부벗기기 절개선",
+   "tags": [
+    "도해",
+    "1회차",
+    "층",
+    "피부벗기기",
+    "얕은근막"
+   ],
+   "source": "해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p (1회차 강의 PDF는 Drive 미보유)",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/concepts/back/anatomy-2026-0035.md",
+   "snippet": "층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑",
+   "text": "Anatomy 피부·근막 층과 피부벗기기 절개선 도해 1회차 층 피부벗기기 얕은근막 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p (1회차 강의 PDF는 Drive 미보유) 층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑조직) 지방 + 피부신경 · 얕은정맥 · 림프관 4 깊은근막 deep fascia 부위마다 이름이 다르다(아래) 5 근육 muscle 2회차부터 깊은근막의 부위별 이름 부위 깊은근막 특징 등 등허리근막 thoracolumbar fascia 고유등근육을 감싼다 넓적다리 넓은근막 fascia lata 두렁정맥구멍 이 뚫려 있다 종아리 종아리근막 crural fascia 작은두렁정맥이 여기를 뚫고 들어간다 절개선 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 볼기 볼기주름 가로절개 볼기주름 다리 뒤 넓적다리 뒤 세로절개 + 오금·발목 가로절개 오금·발목 피부판은 정중선에서 가쪽으로 젖히고, 얕은근막은 몸쪽에 남긴다. 왜 얕은근막을 남기나 얕은근막 안에 피부신경과 얕은정맥 이 들어 있다. 이 층을 통째로 벗기면 2회차 이후 관찰할 표본이 사라지고, 되돌릴 수 없다. 깊은근막을 뚫고 나오는 관통점 이 \"이 신경이 어디서 나왔나\"를 묻는 태깅 자리다. 같은 순서가 임상이 된다 허리천자 바늘: 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간. 자세한 근거는 anatomy 2026 0034 §5."
+  },
+  {
+   "id": "anatomy-2026-0034",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥",
+   "tags": [
+    "정리",
+    "1회차",
+    "예습시험",
+    "태깅",
+    "피부벗기기"
+   ],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/anatomy/notes/anatomy-2026-0034-s01-study.md",
+   "snippet": "0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami",
+   "text": "Anatomy 1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥 정리 1회차 예습시험 태깅 피부벗기기 0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami labeled.svg … quiz.svg anatomy 2026 0040 (1–12) 다리 얕은정맥 + 동반 피부신경 assets/anatomy/diag saphenous veins labeled.svg … quiz.svg anatomy 2026 0042 (1–10) 개념 카드 anatomy 2026 0035 (층)· anatomy 2026 0036 (신경)· anatomy 2026 0037 (정맥)에 같은 도해와 표가 들어 있다. 라벨판으로 익히고 → 퀴즈판으로 번호를 답한 뒤 → 문항 카드로 채점한다. 범위 주의 : 1회차는 강의 PDF가 Drive에 없다. 아래 내용은 수업계획서 확정본이 정한 범위(실습지침 11–13p / 307p·311p, e Anatomy Superficial layer, 응용과제 3)에 대해 인정 교재의 표준 서술만 정리한 것이다. 수업에서 다른 절개선을 지시하면 그쪽이 우선이다. 1. 이 회차의 성격 — \"벗기는 회차\" 1회차는 구조를 찾는 회차가 아니라 덮개를 걷어내는 회차다. 오리엔테이션과 위령전례 뒤에 등과 다리의 피부를 벗긴다. 그래서 외울 것은 근육 이름이 아니라 층의 순서 와 층 안에 무엇이 들어 있는가 다. 2회차부터 나올 모든 구조가 이 층 감각 위에 얹힌다. 핵심 한 줄: 칼은 진피까지만. 얕은근막은 남긴다. 얕은근막을 열어 버리면 그 안의 피부신경·얕은정맥이 함께 뜯겨 나가고, 다시 만들 수 없다. 2. 층 구조 — 겉에서 속으로 순서 층 원어 그 안에 있는 것 / 특징 1 표피 epidermis 혈관 없음, 각질층 2 진피 dermis 질기다 — 피부판(skin flap)을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (= 피부밑조직 subcutaneous tissue) 지방 + 피부신경 + 얕은정맥 + 림프관·얕은림프절 4 깊은근막 deep fascia 등 = 등허리근막 thoracolumbar fascia / 넓적다리 = 넓은근막 fascia lata / 종아리 = 종아리근막 crural fascia 5 근육 muscle 2회차부터 층별로 벗긴다 얕은근막과 깊은근막 사이를 관통정맥·피부신경이 뚫고 지나간다. 깊은근막을 뚫는 그 지점이 태깅에서 \"이 신경이 어디서 나왔나\"를 묻는 자리다. 깊은근막은 부위마다 이름이 다르다. 이름을 부위와 짝지어 외운다. 넓은근막에는 두렁정맥구멍(saphenous opening) 이라는 구멍이 있고, 큰두렁정맥이 바로 그 구멍으로 들어가 넙다리정맥에 합류한다(§4). 절개선 (실습지침 11–13p / 307p·311p 범위) 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 acromion 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 iliac crest 볼기 볼기주름 가로절개 볼기주름 gluteal fold 다리 뒤 넓적다리 뒤 세로절개 볼기주름 → 오금 → 발꿈치 무릎·발목 가로절개 2개 오금 popliteal fossa · 발목 ankle 피부판은 정중선에서 가쪽으로 젖힌다. 얕은근막을 피부판에 붙이지 말고 몸쪽에 남긴다. 3. 신경 — 앞가지와 뒤가지 (응용과제 3) 척수 spinal cord │ ┌─────────────────┴─────────────────┐ 뒤뿌리 posterior root 앞뿌리 anterior root (감각 · 척수신경절이 붙음) (운동 · 신경절 없음) └─────────────────┬─────────────────┘ 척수신경 spinal n. (혼합) 척추사이구멍을 나오자마자 둘로 ┌─────────────────┴─────────────────┐ 뒤가지 posterior ramus 앞가지 anterior ramus 가늘다 · 얼기를 만들지 않는다 굵다 · 얼기를 만든다 │ │ ┌────┴────┐ ├─ 목·팔·허리엉치 신경얼기 안쪽가지 가쪽가지 ├─ 갈비사이신경(가슴은 얼기 없음) │ │ └─ 몸통 앞·가쪽 + 사지 전부 │ └─ T7–T12에서 피부까지 (등 얕은층·중간층 근육도 여기) └──────────── T1–T6에서 피부까지 (둘 다 고유등근육 = 깊은층에 운동가지를 준다) 축 뒤가지 앞가지 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기를 만든다 예외 C1 뒤가지 = 뒤통수밑신경, 순수 운동 (피부가지 없음) · C2 뒤가지 = 큰뒤통수신경 등세모근은 앞가지가 아니라 더부신경(XI) 지배 볼기 피부신경 3형제 — 유래가 갈린다 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 — 엉덩뼈능선을 넘어 내려온다 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 유래 ← 함정 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 뒤가지가 볼기 피부까지 내려오는 건 위·중간뿐이다. 4. 혈관 — 다리 얕은정맥 (e Anatomy Lower limb Superficial layer 구간) 발등정맥활 dorsal venous arch ├─ 안쪽 끝 ─→ 큰두렁정맥 great saphenous v. │ 안쪽복사 '앞' → 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 │ → 두렁정맥구멍(넓은근막) → 넙다리정맥 femoral v. │ 동반 신경: 두렁신경 saphenous n. (넙다리신경의 감각가지, 무릎 아래부터) │ 두렁구멍 직전 지류: 얕은배벽정맥 · 얕은엉덩휘돌이정맥 · 바깥음부정맥 │ (+ 덧두렁정맥 accessory saphenous v.) └─ 가쪽 끝 ─→ 작은두렁정맥 small saphenous v. 가쪽복사 '뒤' → 종아리 뒤 정중선 → 깊은근막(종아리근막)을 뚫고 → 오금정맥 popliteal v. 동반 신경: 장딴지신경 sural n. (정강신경 + 온종아리신경 교통가지) 복사 규칙 : 큰두렁 = 안쪽복사 앞 / 작은두렁 = 가쪽복사 뒤 . → \"큰 안 앞 / 작 가 뒤\" 흐름: 얕은정맥 → 관통정맥 perforating v. → 깊은정맥. 판막이 이 한 방향만 허용하고, 장딴지근이 펌프 역할을 한다. 판막부전이면 역류해 정맥류 varicose veins 가 된다. 신경 감각 영역 손상 상황 두렁신경 종아리 안쪽 · 발 안쪽 큰두렁정맥 채취(CABG)·정맥절개 장딴지신경 종아리 뒤가쪽 · 발 가쪽 작은두렁정맥 채취 · 신경생검 5. 임상 포인트 (응용과제 1·2) 5 1. 허리천자 lumbar puncture 바늘이 지나는 층 — §2의 '겉 → 속' 감각 그대로다. 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간(뇌척수액) 높이 : L3–L4 또는 L4–L5 가시돌기 사이. 체표 지표 : 엉덩뼈능선 최고점을 이은 선(Tuffier 선) ≈ L4 가시돌기 높이. 원칙 : 성인 척수는 L1–L2에서 끝나므로(척수원뿔) 그 아래에는 말총(cauda equina)만 있다. 말총의 신경뿌리는 바늘에 밀려나 잘 다치지 않는다. 신생아·영아는 척수 끝이 L3까지 내려와 있어 더 아래(L4–L5)에서 찌른다. 자세: 옆으로 누워 등을 최대한 구부린다(가시돌기 사이가 벌어진다). 5 2. 꼬리마취 caudal anesthesia 어디로 : 엉치틈새 sacral hiatus — S5 뒤쪽 활이 닫히지 않아 생긴 구멍. 좌우 엉치뿔 sacral cornua 를 만져 그 사이로 들어간다. 어디에 : 엉치관의 경막바깥공간(epidural space) . 경질막은 보통 S2 높이에서 끝나므로 그 아래에서는 거미막밑공간에 들어가지 않는다. 목적 : 항문·회음·아래 골반 수술 마취, 소아 마취(성인보다 지표가 뚜렷), 무통분만, 만성 요통의 경막바깥 스테로이드 주입. 허리천자와의 차이: 허리천자는 거미막밑공간까지 (뇌척수액을 얻는다), 꼬리마취는 경막바깥공간에서 멈춘다 . 5 3. 실습에서 바로 쓰는 임상 안쪽복사 앞 큰두렁정맥 — 쇼크로 정맥이 안 보일 때 정맥절개(cut down) 자리. 큰두렁정맥은 관상동맥우회술(CABG)·말초우회의 이식편 으로 쓴다. 청진삼각·허리삼각 같은 등의 약한 자리는 2회차 얕은층 근육에서 다룬다. 6. 예습시험 체크리스트 10 수업 전날 밤, 아래 10개를 소리 내어 답할 수 있으면 준비 끝이다. 1. 피부에서 근육까지 층을 겉에서 속으로 5개 말하시오. 2. 얕은근막 안에 들어 있는 구조 3가지는? 3. 피부벗기기에서 칼은 어느 층까지 넣는가? 그 이유는? 4. 등·넓적다리·종아리의 깊은근막 이름을 각각 대시오. 5. 뒤가지가 운동으로 지배하는 근육은 어느 층인가? 앞가지는? 6. 등 위쪽(T1–T6)과 아래쪽(T7–T12)에서 피부까지 가는 것은 뒤가지의 어느 가지인가? 7. 위·중간·아래볼기피부신경의 유래를 각각 말하시오(하나만 계열이 다르다). 8. 큰두렁정맥·작은두렁정맥이 각각 어느 복사의 어느 쪽을 지나며, 어디로 들어가는가? 9. 두 두렁정맥에 각각 어떤 신경이 동반하며, 그 신경이 다치면 어디 감각이 사라지는가? 10. 허리천자에서 바늘이 지나는 층을 순서대로 말하고, L3–L4를 고르는 해부학적 이유를 대시오. 7. 다음 회차로 넘어가는 다리 2회차(2026 08 20)는 오늘 벗긴 자리에서 등 근육 3층 과 볼기부위 로 들어간다. 오늘 만든 층 감각(얕은 → 중간 → 깊은, 앞가지 → 뒤가지)이 그대로 2회차의 신경지배 규칙이 된다. 2회차 종합정리는 anatomy 2026 0021 ."
+  },
+  {
+   "id": "paper-2026-0219",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of urology : official journal of the Japanese Urological Association",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0219_perioperative_outcomes_of_salvage_radical_prostatectomy_afte.md",
+   "snippet": "Title Perioperative Outcomes of Salvage Radical Prostatectomy After Radiation Therapy: A Nationwide Analysis Using the National Clinical Database of Japan Authors Fujita Kazutoshi, Makita Ami, Ishii Daisuke, Yamamoto Hiroyuki, Yasui Takahir",
+   "text": "Surgery scraped pubmed PubMed / International journal of urology : official journal of the Japanese Urological Association Title Perioperative Outcomes of Salvage Radical Prostatectomy After Radiation Therapy: A Nationwide Analysis Using the National Clinical Database of Japan Authors Fujita Kazutoshi, Makita Ami, Ishii Daisuke, Yamamoto Hiroyuki, Yasui Takahiro, Kikuchi Eiji Journal / DOI International journal of urology : official journal of the Japanese Urological Association · DOI: 10.1111/iju.70602 · PMID: 42603088 https://pubmed.ncbi.nlm.nih.gov/42603088/ Abstract BACKGROUND: Salvage radical prostatectomy (sRP) is a potentially curative treatment for localized recurrence after radiation therapy for prostate cancer; however, nationwide real world perioperative outcomes remain unclear. METHODS: We conducted a retrospective descriptive study using the Japanese National Clinical Database (NCD). Patients who underwent sRP after radiation therapy were identified, and perioperative, functional, and pathological outcomes were summarized descriptively according to surgical approach and prior radiation modality without comparative statistical analysis. RESULTS: A total of 162 patients were included. The median age was 71 years, and high risk features were common (Gleason score ≥ 8, 49.4%; pathological stage ≥ pT3, 45.7%). Robot assisted surgery was performed in 88.3% of cases. The median operative time was 254.5 min, and estimated blood loss was 101 mL. Blood transfusion was required in 4.3% of patients. Major complications (Clavien Dindo grade ≥ III) occurred in 4.9%, with one postoperative death (0.6%). Operative time and blood loss tended to be higher in patients with prior BT than EBRT, whereas major complication rates were comparable. Positive surgical margins were observed in 24.1%, and extraprostatic extension in 36.4%. Early continence recovery was limited, with 27.2% of patients using 0 1 pad/day at 1 month. CONCLUSIONS: This nationwide NCD study provides contemporary real world data regarding perioperative outcomes after salvage radical prostatectomy in Japan. Although perioperative morbidity appeared acceptable in appropriately selected patients, these findings should be interpreted descriptively because formal comparative analyses were not performed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0218",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of medicine and life",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0218_efficacy_and_safety_of_ashwagandha_root_extract_in_children_.md",
+   "snippet": "Title Efficacy and safety of ashwagandha root extract in children and adolescents with mild attention deficit/hyperactivity disorder: a randomized, double blind, placebo controlled trial Authors Naik Sunil, Muralidhar Gudla, Rao Bade Sriniv",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of medicine and life Title Efficacy and safety of ashwagandha root extract in children and adolescents with mild attention deficit/hyperactivity disorder: a randomized, double blind, placebo controlled trial Authors Naik Sunil, Muralidhar Gudla, Rao Bade Srinivas, Agarwal Sanjay, Jain Mukta Journal / DOI Journal of medicine and life · DOI: 10.25122/jml 2026 0025 · PMID: 42602386 https://pubmed.ncbi.nlm.nih.gov/42602386/ Abstract This study investigated the effects of ashwagandha root extract (ARE) supplementation on core attention deficit/hyperactivity disorder (ADHD) symptoms, executive functioning, and patient reported outcomes in children and adolescents with mild ADHD. Fifty eight children and adolescents with clinically diagnosed mild ADHD were randomly assigned to either the ARE group (ARE; n = 29) or a placebo group (PLA; n = 29) in a prospective, randomized, double blind, placebo controlled, parallel group design. Participants received 150 mg of ashwagandha root extract or a matched placebo gummies twice daily for 56 days. Primary outcomes were changes in the Attention Deficit/Hyperactivity Disorder Rating Scale IV (ADHD RS IV) total score. Secondary outcomes: ADHD RS IV inattention and hyperactivity impulsivity subscales, Behavior Rating Inventory of Executive Function 2 (BRIEF 2) scores and Patient Reported Outcomes Measurement Information System (PROMIS) scores. Safety markers, including routine clinical laboratory parameters, were assessed at baseline and Day 56. At Day 56, ADHD RS IV inattention, hyperactivity impulsivity, and total scores were significantly lower in ARE than in PLA (P < 0.001). Significant improvements were also observed in the BRIEF 2 behavioral, emotional, and cognitive regulation indices and the global executive composite in ARE (P < 0.001). PROMIS sleep disturbance and anxiety scores improved significantly in ARE relative to PLA (P < 0.001). No significant between group differences or clinically meaningful changes were observed in safety markers across the intervention period. No serious adverse events were reported. Supplementation with 300 mg/day of ashwagandha root extract for 56 days significantly improved ADHD symptom severity, executive functioning, and selected patient reported outcomes in children and adolescents with mild ADHD, with a favorable safety profile. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0217",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Microbiology spectrum",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0217_analytical_performance_of_a_multi_target_open_real_time_pcr_.md",
+   "snippet": "Title Analytical performance of a multi target open real time PCR assay for simultaneous detection of tuberculosis, non tuberculous mycobacteria, and drug resistance in a high burden setting Authors Sidiq Zeeshan, Anand Ankita, Tyagi Payal,",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Microbiology spectrum Title Analytical performance of a multi target open real time PCR assay for simultaneous detection of tuberculosis, non tuberculous mycobacteria, and drug resistance in a high burden setting Authors Sidiq Zeeshan, Anand Ankita, Tyagi Payal, Dwivedi Kaushal Kumar, Rajpal Sanjay, Chopra Kamal Kishore Journal / DOI Microbiology spectrum · DOI: 10.1128/spectrum.01643 26 · PMID: 42603138 https://pubmed.ncbi.nlm.nih.gov/42603138/ Abstract UNLABELLED: Timely diagnosis of tuberculosis (TB) and drug resistance is crucial for effective disease control. Multiplex open molecular platforms capable of simultaneously detecting Mycobacterium tuberculosis complex (MTBc), non tuberculous mycobacteria (NTM), and resistance to first line anti TB drugs could significantly streamline diagnostic pathways. We evaluated two multiplex real time PCR assays (MTBc/NTM R Gene and MTB RIF/INH R Gene) using 300 well characterized samples (150 MTBc positive and 150 MTBc negative). Composite reference standards, including culture, MPT64 antigen testing, and line probe assays and phenotypic drug susceptibility testing. The MTBc detection demonstrated 100% sensitivity and specificity (150/150). NTM detection showed 70.0% sensitivity (35/50) and 100% specificity, indicating limitations in NTM species coverage. Rifampicin resistance was detected with 96.0% sensitivity (48/50) and 100% specificity. Isoniazid resistance detection achieved 100% sensitivity and specificity (50/50). High agreement (κ = 0.76 1.00) with established reference standards was observed. This analytical validation confirms that multiplex open real time PCR assays accurately and simultaneously detect MTBc, NTM, and rifampicin and isoniazid resistance using culture isolates. Clinical validation is warranted. While these platforms offer potential advantages in flexibility and expanded resistance profiling, further studies on clinical diagnostic accuracy, cost effectiveness, and operational feasibility are essential to determine their practical utility and programmatic impact in high burden settings. IMPORTANCE: Despite major advances in molecular diagnostics, critical gaps persist in tuberculosis (TB) detection, particularly the limited identification of isoniazid resistance and inadequate differentiation from non tuberculous mycobacteria. In this study, a multiplex open real time PCR assay demonstrated high analytical accuracy for simultaneous detection of Mycobacterium tuberculosis complex, rifampicin and isoniazid resistance, with strong agreement to reference standards. By integrating multi target detection within a single workflow, this approach addresses key limitations of current diagnostic strategies that rely on rifampicin as a surrogate for multidrug resistance. The open platform design further offers flexibility, scalability, and reduced dependence on proprietary systems, which are critical considerations in high burden settings. These findings highlight the potential of next generation molecular diagnostics to improve early resistance detection, refine treatment decisions, and strengthen TB control efforts globally. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0216",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of surgical case reports",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0216_multiple_surgical_excision_for_bilateral_multiple_mediastina.md",
+   "snippet": "Title Multiple surgical excision for bilateral multiple mediastinal liposarcoma: a case report Authors Jiang Suxin, Wang Zhihao, Zhao Jienong, Han Yong, Shi Hongcan Journal / DOI Journal of surgical case reports · DOI: 10.1093/jscr/rjag708 ",
+   "text": "Pathology scraped pubmed PubMed / Journal of surgical case reports Title Multiple surgical excision for bilateral multiple mediastinal liposarcoma: a case report Authors Jiang Suxin, Wang Zhihao, Zhao Jienong, Han Yong, Shi Hongcan Journal / DOI Journal of surgical case reports · DOI: 10.1093/jscr/rjag708 · PMID: 42603064 https://pubmed.ncbi.nlm.nih.gov/42603064/ Abstract Multiple giant mediastinal liposarcomas are rare and associated with a high propensity for recurrence. Surgical management is extremely challenging and carries substantial risks. Here we report the case of a 40 year old male patient who underwent multiple surgical resections for mediastinal liposarcoma. In April 2016, the patient presented with an intrathoracic mass and underwent right thoracotomy at our institution; postoperative histopathology confirmed a myxoid liposarcoma. Over the following decade, the patient received six cycles of chemotherapy and two cycles of anlotinib. In 2025, due to progressive dyspnea and chest tightness, chest computed tomography revealed multiple giant masses in the mediastinum and pleural cavity. In December 2025, the patient underwent resection of mediastinal tumors via a left seventh intercostal thoracotomy, followed by another resection via a right seventh intercostal thoracotomy in April 2026. Postoperative recovery was uneventful. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0215",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of investigative dermatology",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0215_regulatory_t_cells_from_foxp3_to_tolerance_inducing_therapie.md",
+   "snippet": "Title Regulatory T cells: From Foxp3 to tolerance inducing therapies Authors Iriki Hisato, Mukai Miho, Takahashi Hayato, Amagai Masayuki Journal / DOI The Journal of investigative dermatology · DOI: 10.1016/j.jid.2026.05.009 · PMID: 4260316",
+   "text": "Hematology-Oncology scraped pubmed PubMed / The Journal of investigative dermatology Title Regulatory T cells: From Foxp3 to tolerance inducing therapies Authors Iriki Hisato, Mukai Miho, Takahashi Hayato, Amagai Masayuki Journal / DOI The Journal of investigative dermatology · DOI: 10.1016/j.jid.2026.05.009 · PMID: 42603165 https://pubmed.ncbi.nlm.nih.gov/42603165/ Abstract The immune system balances self tolerance and threat defense; regulatory T cells (Tregs) enforce this equilibrium. This review follows their journey from the disputed suppressor T cell era to the Foxp3 defined lineage and then integrates how Tregs recalibrate antigen presenting cells and cytokine networks to sustain immune quiescence and restore homeostasis. These insights shape emerging therapies that expand endogenous Tregs in vivo with low dose IL 2 or employ ex vivo engineered cells to re establish immune balance. We conclude by outlining key challenges stability, tissue targeting, and scalability for durable tolerance and therapeutic applications of recently clarified Treg mediated tissue specific homeostasis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0214",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta clinica Belgica",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0214_discordance_between_symptomatic_echocardiographic_and_renal_.md",
+   "snippet": "Title Discordance between symptomatic, echocardiographic and renal trajectories after SGLT2 inhibitor initiation in heart failure: a landmark analysis of the prospective CaRD registry Authors Jurin Ivana, Hanžek Antonio, Lišnjić Petar, Jakl",
+   "text": "Nephrology scraped pubmed PubMed / Acta clinica Belgica Title Discordance between symptomatic, echocardiographic and renal trajectories after SGLT2 inhibitor initiation in heart failure: a landmark analysis of the prospective CaRD registry Authors Jurin Ivana, Hanžek Antonio, Lišnjić Petar, Jakljević Tomislav Journal / DOI Acta clinica Belgica · DOI: 10.1080/17843286.2026.2719667 · PMID: 42603121 https://pubmed.ncbi.nlm.nih.gov/42603121/ Abstract OBJECTIVES: To quantify the concordance and stability of symptomatic, echocardiographic and renal trajectories after sodium glucose cotransporter 2 inhibitor (SGLT2i) initiation and examine their association with subsequent events. METHODS: This day 210 landmark analysis included 618 adults with heart failure, baseline left ventricular ejection fraction (LVEF) <50%, and paired New York Heart Association (NYHA) class, LVEF and estimated glomerular filtration rate (eGFR) measurements on days 150 210. Domains were cross classified rather than treated as equivalent causal components. Repeat classification was assessed by day 365. Death or heart failure hospitalisation on days 211 365 was analysed with multivariable Cox regression; fixed horizon Firth logistic regression and continuous, threshold, weighting and co intervention analyses tested robustness. RESULTS: Discordant trajectories occurred in 368/618 patients (59.5%). Among 209 with repeat assessment, 181 (86.6%) retained the same classification (κ=0.74). Outcome status was complete in 576 patients, with 33 events. Non concordance was associated with the time to event outcome (adjusted hazard ratio 4.27, 95% confidence interval 1.61 11.32; p = 0.004); the fixed horizon Firth estimate was concordant (odds ratio 4.27, 95% confidence interval 1.64 11.13; p = 0.003). NYHA improvement contributed most of the prognostic signal. Adding non concordance to a conventional baseline model increased the area under the curve from 0.752 to 0.790, but the bootstrap interval for the increment included zero. CONCLUSION: Trajectories were frequently discordant and usually stable to day 365. Their association with events was non causal, driven predominantly by symptomatic change and of uncertain incremental predictive value. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0213",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / One health (Amsterdam, Netherlands)",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0213_cross_species_genomic_analysis_of_salmonella_enterica_subspe.md",
+   "snippet": "Title Cross species genomic analysis of Salmonella enterica subspecies enterica serovar Dublin isolated from dairy cattle, dogs, and humans in Florida from 2019 to 2024 Authors DeZoysa Asanka R, Edison Lekshmi K, Denagamage Thomas, Pellisse",
+   "text": "Infectious Disease scraped pubmed PubMed / One health (Amsterdam, Netherlands) Title Cross species genomic analysis of Salmonella enterica subspecies enterica serovar Dublin isolated from dairy cattle, dogs, and humans in Florida from 2019 to 2024 Authors DeZoysa Asanka R, Edison Lekshmi K, Denagamage Thomas, Pellissery Abraham J, Bommineni Yugendar R, Satharasinghe Dilan, Coiner Destini, Simon David, et al. Journal / DOI One health (Amsterdam, Netherlands) · DOI: 10.1016/j.onehlt.2026.101536 · PMID: 42603017 https://pubmed.ncbi.nlm.nih.gov/42603017/ Abstract Salmonella enterica serovar Dublin (S. Dublin) is a cattle adapted pathogen that can cause severe systemic infections in humans and animals. Understanding genomic relatedness across host species is essential for assessing the zoonotic potential and dissemination of antimicrobial resistance (AMR). In this study, 78 clinical S. Dublin strains, isolated in Florida between 2019 and 2024, were subjected to comparative genomic analysis. These included 19 animal derived isolates (17 from dairy cattle and two from dogs) and 59 human derived isolates. AMR gene profiling revealed widespread multidrug resistance, with genes conferring resistance to aminoglycoside (aac(6') Iaa, aph(6) Id), tetracycline (tetA), and sulfonamide (sul2) detected in all isolates. Beta lactamase genes, particularly bla TEM variants, were detected more frequently in human and dog derived isolates than in cattle derived isolates. In contrast, rare bla CMY variants (bla CMY 61, bla CMY 130, bla CMY 153, and bla CMY 2b) were detected in only one cattle isolate. Plasmid analysis revealed that IncX1, IncFII(S), and IncC replicons were common among the isolates, highlighting their potential role in facilitating AMR dissemination via horizontal gene transfer. Virulence gene profiling revealed conserved Salmonella pathogenicity islands, type III and type VI secretion systems, and the spv operon across S. Dublin isolates from all host species. Multilocus sequence typing (MLST) confirmed that all isolates belonged to sequence type (ST) 10, and most harbored the Gifsy 2 prophage. The SNP based phylogeny revealed distinct host associated clades as well as mixed host clusters, demonstrating close genomic relatedness among isolates from different host species and suggesting possible cross species transmission, exposure to shared sources, or circulation of closely related lineages. These findings illustrate the interconnectedness of animal and human S. Dublin infections, emphasize the importance of responsible antimicrobial use, and highlight the value of genomic surveillance for detecting and controlling S. Dublin infections. Collectively, this study provides a genomic framework for assessing cross species relatedness, virulence characteristics, and AMR patterns of S. Dublin. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0212",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-08-15",
+   "path": "content/papers/2026/2026-08-15_paper-2026-0212_percutaneous_tricuspid_valve_in_valve_implantation_with_melo.md",
+   "snippet": "Title Percutaneous Tricuspid Valve in Valve Implantation With Melon Seeding During Deployment Authors Sellers Alexander M, Ravat Shreyas, Bennetts Jayme, Roberts Thomson Ross, Khan Ehsan, Engela Jean, Langran Jayne, Sinhal Ajay R Journal / ",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Case reports Title Percutaneous Tricuspid Valve in Valve Implantation With Melon Seeding During Deployment Authors Sellers Alexander M, Ravat Shreyas, Bennetts Jayme, Roberts Thomson Ross, Khan Ehsan, Engela Jean, Langran Jayne, Sinhal Ajay R Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.109732 · PMID: 42603160 https://pubmed.ncbi.nlm.nih.gov/42603160/ Abstract BACKGROUND: Bioprosthetic tricuspid valves are prone to structural deterioration over time. In patients with multiple prior sternotomies and functioning left sided prostheses, repeat surgery may carry prohibitive risk, prompting consideration of transcatheter alternatives. CASE SUMMARY: A 42 year old patient with rheumatic heart disease and a history of 3 prior sternotomies for mitral, aortic, and tricuspid valve replacement presented with recurrent admissions for diuretic resistant right heart failure complicated by congestive hepatopathy (Child Pugh B cirrhosis). Imaging demonstrated severe stenosis of a bioprosthetic tricuspid valve, with preserved left sided valve function. The patient underwent successful percutaneous tricuspid valve in valve implantation, resulting in marked symptomatic improvement and significant reduction in transvalvular gradients on echocardiography. DISCUSSION: Current guidelines support reintervention for symptomatic bioprosthetic valve dysfunction. In high surgical risk patients, percutaneous tricuspid valve in valve implantation represents an effective and less invasive alternative to repeat surgery. TAKE HOME MESSAGE: Percutaneous tricuspid valve in valve replacement is a viable therapeutic option for failed tricuspid bioprostheses in carefully selected high risk patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "anatomy-daily-2026-08-15",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-15",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-15",
+   "path": "content/anatomy/daily/2026-08-15.md",
+   "snippet": "오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-15 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-2026-0067",
@@ -677,6 +1192,412 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Ventricular Fibrillation ventricular-fibrillation cardiac-arrest defibrillation acls shockable-rhythm KMLE 2026 / Claude Routine 58세 남자가 길에서 갑자기 쓰러져 응급실로 옮겨졌다. 도착 시 반응이 없고 큰 동맥에서 맥박이 만져지지 않으며 정상 호흡이 없다. 곧바로 가슴압박을 시작하고 감시장치를 붙였다. 활력징후·검사 소견과 심전도는 자료와 같다. 이 리듬에서 가장 먼저 시행할 처치는? A. 즉시 비동기 전기충격을 시행한다 B. 정맥 아미오다론을 먼저 투여한다 C. 동기화 심장율동전환을 시행한다 D. 정맥 아트로핀을 투여한다 E. 경피 인공심장박동조율을 시작한다 무맥성 심실세동은 제세동 가능(shockable) 리듬으로, 가슴압박과 함께 지체 없는 비동기 전기충격(제세동)이 생존을 가르는 가장 중요한 처치다. 약물은 제세동에 보조적일 뿐 첫 처치가 아니다."
   },
   {
+   "id": "anatomy-daily-2026-08-14",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-14",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/daily/2026-08-14.md",
+   "snippet": "오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-14 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0095",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "장딴지근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "장딴지근",
+    "발꿈치힘줄",
+    "종아리뒤칸",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0095.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 장딴지근 실사 spotter (필기 제거·복원본) spotter 복원 3회차 장딴지근 발꿈치힘줄 종아리뒤칸 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0094",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "안쪽장딴지피부신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "안쪽장딴지피부신경",
+    "장딴지신경",
+    "정강신경",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0094.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 안쪽장딴지피부신경 실사 spotter (필기 제거·복원본) spotter 복원 3회차 안쪽장딴지피부신경 장딴지신경 정강신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0093",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "어깨위동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "어깨위동맥",
+    "어깨동맥그물",
+    "갑상목동맥",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0093.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 어깨위동맥 실사 spotter (필기 제거·복원본) spotter 복원 3회차 어깨위동맥 어깨동맥그물 갑상목동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0092",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "위가로어깨인대 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "위가로어깨인대",
+    "어깨뼈패임",
+    "어깨위신경",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0092.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위가로어깨인대 실사 spotter (필기 제거·복원본) spotter 복원 3회차 위가로어깨인대 어깨뼈패임 어깨위신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0091",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "척추동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "척추동맥",
+    "뒤통수밑삼각",
+    "고리뼈",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0091.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 척추동맥 실사 spotter (필기 제거·복원본) spotter 복원 3회차 척추동맥 뒤통수밑삼각 고리뼈 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0090",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "다리오금 태깅 연습판 (자체 제작 도해)",
+   "tags": [
+    "spotter",
+    "도해",
+    "3회차",
+    "다리오금",
+    "오금동맥",
+    "온종아리신경",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0090.md",
+   "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다.",
+   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
+  },
+  {
+   "id": "anatomy-2026-0089",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "넙다리두갈래근",
+    "햄스트링",
+    "궁둥신경",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0089.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본) spotter 복원 2회차 넙다리두갈래근 햄스트링 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0088",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "음부신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "음부신경",
+    "작은궁둥구멍",
+    "음부신경관",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0088.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 음부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 음부신경 작은궁둥구멍 음부신경관 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0087",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "궁둥신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "궁둥신경",
+    "궁둥구멍근",
+    "볼기",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0087.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 궁둥신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 궁둥신경 궁둥구멍근 볼기 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0086",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "엉덩갈비근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "엉덩갈비근",
+    "척주세움근",
+    "뒤가지",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0086.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 엉덩갈비근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 엉덩갈비근 척주세움근 뒤가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0085",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "머리널판근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "머리널판근",
+    "뒤가지",
+    "깊은층",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0085.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 머리널판근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 머리널판근 뒤가지 깊은층 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0084",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "등쪽어깨동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "등쪽어깨동맥",
+    "마름근",
+    "빗장밑동맥",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0084.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 등쪽어깨동맥 실사 spotter (필기 제거·복원본) spotter 복원 2회차 등쪽어깨동맥 마름근 빗장밑동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0083",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "더부신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "더부신경",
+    "등세모근",
+    "뒤목삼각",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0083.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 더부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 더부신경 등세모근 뒤목삼각 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0082",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "앞톱니근 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "앞톱니근",
+    "긴가슴신경",
+    "예습시험"
+   ],
+   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0082.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 앞톱니근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 앞톱니근 긴가슴신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0081",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "장딴지근 안쪽갈래 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "다리오금",
+    "장딴지근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0081.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0080",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "뒤정강근 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "종아리뒤칸",
+    "뒤정강근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0080.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 뒤정강근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0079",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "오금근 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "종아리뒤칸",
+    "오금근",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0079.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 오금근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0078",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "네모공간 실사 spotter (복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "어깨뼈부위",
+    "네모공간",
+    "예습시험"
+   ],
+   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0078.md",
+   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 네모공간 실사 spotter (복원본) spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0077",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리",
+   "tags": [
+    "서브노트",
+    "3회차",
+    "표",
+    "실사합본",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-08-14",
+   "path": "content/anatomy/notes/anatomy-2026-0077-s03-subnote.md",
+   "snippet": "1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위",
+   "text": "Anatomy 3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리 서브노트 3회차 표 실사합본 예습시험 태깅 1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위안쪽 경계== 뒤통수밑신경 작은뒤머리곧은근 minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖 (안쪽) 뒤통수밑신경 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 ==위가쪽 경계== 뒤통수밑신경 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 ==아래가쪽 경계== 뒤통수밑신경 [!주의] 아래머리빗근의 예외 :: 뒤통수밑근육 4개 중 유일하게 머리뼈에 닿지 않는다 (C2 가시돌기 → C1 가로돌기). 작용도 고리중쇠관절에서 머리 같은쪽 돌림. 2) 삼각 안에 무엇이 있나 = 내용물: 척추동맥 (C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경 (C1 뒤가지) + 정맥얼기 신경 뿌리 성격 무엇을 하나 뒤통수밑신경 suboccipital n. C1 뒤가지 ==순수 운동== 뒤통수밑근육 4개 — 삼각 안 큰뒤통수신경 greater occipital n. C2 뒤가지 ==감각== 아래머리빗근 아래모서리를 감아 올라가 뒤통수 피부 셋째뒤통수신경 C3 뒤가지 감각 뒤통수 아래 안쪽 좁은 영역 [!기출] 운동 vs 감각 :: \"아래머리빗근을 감아 도는 신경\"은 큰뒤통수신경(감각) . 삼각 안에서 근육으로 들어가는 것이 뒤통수밑신경(운동) . 태깅에서 둘을 바꿔 내는 것이 단골. [!임상] 척추동맥·신경통 :: 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약 . 큰뒤통수신경 포착은 뒤통수신경통의 원인. 2. 어깨뼈부위 3공간 Scapular spaces !fig docs/assets/anatomy/diag scapular spaces labeled.svg 세 공간의 경계와 통과 구조물 — 긴갈래 가쪽=네모공간, 안쪽=세모공간, 큰원근 아래=세모간격 1) 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 ==겨드랑신경 C5·6== 벌림 15–90°·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 ==어깨위신경== 벌림 개시 0–15° 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다. 2) 세 공간 — 경계와 내용물 공간 경계 내용물 네모공간 quadrangular 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 ==위팔뼈 외과목== 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 [!암기] 기준은 긴갈래 하나 :: 위팔세갈래근 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격(노신경) . [!임상] 외과목 골절 :: 네모공간을 지나는 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽 감각소실. 노신경은 세모간격을 지나 노신경고랑으로 → 위팔뼈 몸통 골절에서 손목처짐. 3. 어깨동맥그물 Scapular anastomosis !fig docs/assets/anatomy/diag scapular spaces labeled.svg 오른쪽 아래 패널 — 빗장밑동맥 ↔ 겨드랑동맥 우회로 = 빗장밑동맥 → (갑상목동맥) 어깨위동맥 · 등쪽어깨동맥 ↕ 어깨휘돌이동맥 ← 어깨밑동맥 ← 겨드랑동맥 동맥 모동맥 경로 의미 어깨위동맥 갑상목동맥(빗장밑) 위가로어깨인대 위 그물의 위쪽 다리 등쪽어깨동맥 빗장밑(또는 가로목) 마름근 심부 그물의 안쪽 다리 어깨휘돌이동맥 어깨밑동맥(겨드랑 3부) ==세모공간 통과== 그물의 가쪽 다리 뒤위팔휘돌이동맥 겨드랑동맥 3부 네모공간 통과 겨드랑신경과 동행 [!TIP] 인대와의 관계 :: \"Army over the bridge, Navy under\" — 동맥(artery)은 위가로어깨인대 위 , 신경(nerve)은 어깨패임 속(인대 아래 ). 4. 다리오금 Popliteal fossa !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 마름모의 네 경계와 '신–정–동' 깊이 순서 + 무릎동맥 5가지 — 자체 제작 도해 1) 경계와 내용물 경계 구조 위가쪽 넙다리두갈래근 위안쪽 반힘줄근 · 반막근 아래 장딴지근 두 갈래 = 내용물 얕음 → 깊음 : 정강신경 → 오금정맥 → 오금동맥 (가장 깊다) + 작은두렁정맥 말단 · 오금림프절 [!주의] 깊이 순서 :: 맥박을 잡으려면 깊이 눌러야 한다 — 오금동맥이 가장 깊다. 순서를 뒤집어 내는 문항이 흔하다. 2) 혈관 동맥 나오는 곳 특징 오금동맥 넙다리동맥이 ==모음근구멍== 통과하며 개명 오금근 아래모서리에서 앞·뒤정강동맥으로 종말분지 무릎동맥 5가지 오금동맥 위가쪽·위안쪽· 중간 ·아래가쪽·아래안쪽 → 무릎동맥그물 종아리동맥 뒤정강동맥 뒤정강동맥이 갈라진 직후 [!기출] 중간무릎동맥 :: 5가지 중 유일하게 관절주머니를 뚫고 들어가 십자인대에 분포. 나머지는 관절 둘레를 감는다. 3) 신경 신경 주행 손상 시 정강신경 오금 한가운데를 수직으로 종아리 뒤칸 전체 지배 온종아리신경 넙다리두갈래근 힘줄 안쪽 → ==종아리뼈목을 감아돔== 발처짐(foot drop) + 발등 감각소실 [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리. 5. 종아리 뒤칸 Posterior compartment of leg !fig .private/anatomy/render/uploads a1 s02/q5183 p8 clean.png 실사 복원본 — 다리오금의 신경(온종아리신경 분지) 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용)·결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 ==무릎 잠금 해제== 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽 에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 ==가쪽(종아리뼈)에서 기시== — 교차 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음·발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). = 안쪽복사 뒤 통과 순서(앞→뒤) Tom, Dick ANd Harry : 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 [!암기] 이름과 위치가 어긋나는 둘 :: 긴발가락굽힘근은 안쪽 , 긴엄지굽힘근은 가쪽 에서 기시해 발바닥에서 교차한다. 이름만 보고 위치를 찍으면 틀린다. 6. 마무리 체크리스트 Self check 뒤통수밑삼각 경계 3근육과 내용물 2가지를 대시오. 뒤통수밑신경과 큰뒤통수신경의 차이(뿌리·성격·주행)는? 네모공간·세모공간·세모간격의 내용물을 각각 대시오. 셋을 가르는 기준은? 돌림근띠 4근육은? 큰원근이 빠지는 이유는? 다리오금 내용물을 얕은 것부터 순서대로 대시오. 넙다리동맥이 오금동맥으로 이름이 바뀌는 지점은? 무릎동맥 5가지 중 관절주머니를 뚫는 것은? 종아리뼈목을 감아도는 신경과 그 손상 증상은? 안쪽복사 뒤 통과 순서를 앞에서부터 대시오. 어깨뼈패임에서 인대 위로 지나는 것과 아래로 지나는 것은 각각 무엇인가? 뒤통수밑삼각의 바닥과 내용물을 각각 대시오. 안쪽장딴지피부신경과 무엇이 합쳐져 장딴지신경이 되는가? 임상적으로 왜 중요한가? [!TIP] 함께 볼 자료 :: 도해 diag suboccipital labeled.svg · diag scapular spaces labeled/quiz.svg (문항 0031) · diag popliteal fossa labeled/quiz.svg (문항 0090 — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다."
+  },
+  {
    "id": "anatomy-2026-0060",
    "type": "anatomy",
    "topic": "Anatomy",
@@ -841,399 +1762,6 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0053.md",
    "snippet": "문제 실사 spotter — 복원 이미지(1회차 pf1 p44)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
    "text": "Anatomy 위볼기피부신경 실사 spotter (필기 제거·복원본) spotter 복원 1회차 위볼기피부신경 뒤가지 엉덩뼈능선 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p44 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p44)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0052",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "장딴지근 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "장딴지근",
-    "발꿈치힘줄",
-    "종아리뒤칸",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0052.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지근 실사 spotter (필기 제거·복원본) spotter 복원 3회차 장딴지근 발꿈치힘줄 종아리뒤칸 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0051",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "안쪽장딴지피부신경 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "안쪽장딴지피부신경",
-    "장딴지신경",
-    "정강신경",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0051.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 안쪽장딴지피부신경 실사 spotter (필기 제거·복원본) spotter 복원 3회차 안쪽장딴지피부신경 장딴지신경 정강신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0050",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "어깨위동맥 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "어깨위동맥",
-    "어깨동맥그물",
-    "갑상목동맥",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0050.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 어깨위동맥 실사 spotter (필기 제거·복원본) spotter 복원 3회차 어깨위동맥 어깨동맥그물 갑상목동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0049",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "위가로어깨인대 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "위가로어깨인대",
-    "어깨뼈패임",
-    "어깨위신경",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0049.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위가로어깨인대 실사 spotter (필기 제거·복원본) spotter 복원 3회차 위가로어깨인대 어깨뼈패임 어깨위신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0048",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "척추동맥 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "척추동맥",
-    "뒤통수밑삼각",
-    "고리뼈",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0048.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 척추동맥 실사 spotter (필기 제거·복원본) spotter 복원 3회차 척추동맥 뒤통수밑삼각 고리뼈 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0047",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "다리오금 태깅 연습판 (자체 제작 도해)",
-   "tags": [
-    "spotter",
-    "도해",
-    "3회차",
-    "다리오금",
-    "오금동맥",
-    "온종아리신경",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0047.md",
-   "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다.",
-   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
-  },
-  {
-   "id": "anatomy-2026-0046",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "넙다리두갈래근",
-    "햄스트링",
-    "궁둥신경",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0046.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본) spotter 복원 2회차 넙다리두갈래근 햄스트링 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0045",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "음부신경 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "음부신경",
-    "작은궁둥구멍",
-    "음부신경관",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0045.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 음부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 음부신경 작은궁둥구멍 음부신경관 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0044",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "궁둥신경 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "궁둥신경",
-    "궁둥구멍근",
-    "볼기",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0044.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 궁둥신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 궁둥신경 궁둥구멍근 볼기 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0043",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "엉덩갈비근 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "엉덩갈비근",
-    "척주세움근",
-    "뒤가지",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0043.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 엉덩갈비근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 엉덩갈비근 척주세움근 뒤가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0042",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "머리널판근 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "머리널판근",
-    "뒤가지",
-    "깊은층",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0042.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 머리널판근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 머리널판근 뒤가지 깊은층 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0041",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "등쪽어깨동맥 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "등쪽어깨동맥",
-    "마름근",
-    "빗장밑동맥",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0041.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 등쪽어깨동맥 실사 spotter (필기 제거·복원본) spotter 복원 2회차 등쪽어깨동맥 마름근 빗장밑동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0040",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "더부신경 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "더부신경",
-    "등세모근",
-    "뒤목삼각",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0040.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 더부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 더부신경 등세모근 뒤목삼각 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0039",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "앞톱니근 실사 spotter (필기 제거·복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "2회차",
-    "앞톱니근",
-    "긴가슴신경",
-    "예습시험"
-   ],
-   "source": "2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0039.md",
-   "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 앞톱니근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 앞톱니근 긴가슴신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0038",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "장딴지근 안쪽갈래 실사 spotter (복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "다리오금",
-    "장딴지근",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0038.md",
-   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0037",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "뒤정강근 실사 spotter (복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "종아리뒤칸",
-    "뒤정강근",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0037.md",
-   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 뒤정강근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0036",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "오금근 실사 spotter (복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "종아리뒤칸",
-    "오금근",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0036.md",
-   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 오금근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0035",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "네모공간 실사 spotter (복원본)",
-   "tags": [
-    "spotter",
-    "복원",
-    "3회차",
-    "어깨뼈부위",
-    "네모공간",
-    "예습시험"
-   ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0035.md",
-   "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 네모공간 실사 spotter (복원본) spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
-  },
-  {
-   "id": "anatomy-2026-0034",
-   "type": "anatomy",
-   "topic": "Anatomy",
-   "subtopic": "3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리",
-   "tags": [
-    "서브노트",
-    "3회차",
-    "표",
-    "실사합본",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "",
-   "confidence": "high",
-   "date": "2026-08-14",
-   "path": "content/anatomy/notes/anatomy-2026-0034-s03-subnote.md",
-   "snippet": "1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위",
-   "text": "Anatomy 3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리 서브노트 3회차 표 실사합본 예습시험 태깅 1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위안쪽 경계== 뒤통수밑신경 작은뒤머리곧은근 minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖 (안쪽) 뒤통수밑신경 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 ==위가쪽 경계== 뒤통수밑신경 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 ==아래가쪽 경계== 뒤통수밑신경 [!주의] 아래머리빗근의 예외 :: 뒤통수밑근육 4개 중 유일하게 머리뼈에 닿지 않는다 (C2 가시돌기 → C1 가로돌기). 작용도 고리중쇠관절에서 머리 같은쪽 돌림. 2) 삼각 안에 무엇이 있나 = 내용물: 척추동맥 (C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경 (C1 뒤가지) + 정맥얼기 신경 뿌리 성격 무엇을 하나 뒤통수밑신경 suboccipital n. C1 뒤가지 ==순수 운동== 뒤통수밑근육 4개 — 삼각 안 큰뒤통수신경 greater occipital n. C2 뒤가지 ==감각== 아래머리빗근 아래모서리를 감아 올라가 뒤통수 피부 셋째뒤통수신경 C3 뒤가지 감각 뒤통수 아래 안쪽 좁은 영역 [!기출] 운동 vs 감각 :: \"아래머리빗근을 감아 도는 신경\"은 큰뒤통수신경(감각) . 삼각 안에서 근육으로 들어가는 것이 뒤통수밑신경(운동) . 태깅에서 둘을 바꿔 내는 것이 단골. [!임상] 척추동맥·신경통 :: 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약 . 큰뒤통수신경 포착은 뒤통수신경통의 원인. 2. 어깨뼈부위 3공간 Scapular spaces !fig docs/assets/anatomy/diag scapular spaces labeled.svg 세 공간의 경계와 통과 구조물 — 긴갈래 가쪽=네모공간, 안쪽=세모공간, 큰원근 아래=세모간격 1) 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 ==겨드랑신경 C5·6== 벌림 15–90°·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 ==어깨위신경== 벌림 개시 0–15° 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다. 2) 세 공간 — 경계와 내용물 공간 경계 내용물 네모공간 quadrangular 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 ==위팔뼈 외과목== 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 [!암기] 기준은 긴갈래 하나 :: 위팔세갈래근 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격(노신경) . [!임상] 외과목 골절 :: 네모공간을 지나는 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽 감각소실. 노신경은 세모간격을 지나 노신경고랑으로 → 위팔뼈 몸통 골절에서 손목처짐. 3. 어깨동맥그물 Scapular anastomosis !fig docs/assets/anatomy/diag scapular spaces labeled.svg 오른쪽 아래 패널 — 빗장밑동맥 ↔ 겨드랑동맥 우회로 = 빗장밑동맥 → (갑상목동맥) 어깨위동맥 · 등쪽어깨동맥 ↕ 어깨휘돌이동맥 ← 어깨밑동맥 ← 겨드랑동맥 동맥 모동맥 경로 의미 어깨위동맥 갑상목동맥(빗장밑) 위가로어깨인대 위 그물의 위쪽 다리 등쪽어깨동맥 빗장밑(또는 가로목) 마름근 심부 그물의 안쪽 다리 어깨휘돌이동맥 어깨밑동맥(겨드랑 3부) ==세모공간 통과== 그물의 가쪽 다리 뒤위팔휘돌이동맥 겨드랑동맥 3부 네모공간 통과 겨드랑신경과 동행 [!TIP] 인대와의 관계 :: \"Army over the bridge, Navy under\" — 동맥(artery)은 위가로어깨인대 위 , 신경(nerve)은 어깨패임 속(인대 아래 ). 4. 다리오금 Popliteal fossa !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 마름모의 네 경계와 '신–정–동' 깊이 순서 + 무릎동맥 5가지 — 자체 제작 도해 1) 경계와 내용물 경계 구조 위가쪽 넙다리두갈래근 위안쪽 반힘줄근 · 반막근 아래 장딴지근 두 갈래 = 내용물 얕음 → 깊음 : 정강신경 → 오금정맥 → 오금동맥 (가장 깊다) + 작은두렁정맥 말단 · 오금림프절 [!주의] 깊이 순서 :: 맥박을 잡으려면 깊이 눌러야 한다 — 오금동맥이 가장 깊다. 순서를 뒤집어 내는 문항이 흔하다. 2) 혈관 동맥 나오는 곳 특징 오금동맥 넙다리동맥이 ==모음근구멍== 통과하며 개명 오금근 아래모서리에서 앞·뒤정강동맥으로 종말분지 무릎동맥 5가지 오금동맥 위가쪽·위안쪽· 중간 ·아래가쪽·아래안쪽 → 무릎동맥그물 종아리동맥 뒤정강동맥 뒤정강동맥이 갈라진 직후 [!기출] 중간무릎동맥 :: 5가지 중 유일하게 관절주머니를 뚫고 들어가 십자인대에 분포. 나머지는 관절 둘레를 감는다. 3) 신경 신경 주행 손상 시 정강신경 오금 한가운데를 수직으로 종아리 뒤칸 전체 지배 온종아리신경 넙다리두갈래근 힘줄 안쪽 → ==종아리뼈목을 감아돔== 발처짐(foot drop) + 발등 감각소실 [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리. 5. 종아리 뒤칸 Posterior compartment of leg !fig .private/anatomy/render/uploads a1 s02/q5183 p8 clean.png 실사 복원본 — 다리오금의 신경(온종아리신경 분지) 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용)·결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 ==무릎 잠금 해제== 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽 에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 ==가쪽(종아리뼈)에서 기시== — 교차 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음·발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). = 안쪽복사 뒤 통과 순서(앞→뒤) Tom, Dick ANd Harry : 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 [!암기] 이름과 위치가 어긋나는 둘 :: 긴발가락굽힘근은 안쪽 , 긴엄지굽힘근은 가쪽 에서 기시해 발바닥에서 교차한다. 이름만 보고 위치를 찍으면 틀린다. 6. 마무리 체크리스트 Self check 뒤통수밑삼각 경계 3근육과 내용물 2가지를 대시오. 뒤통수밑신경과 큰뒤통수신경의 차이(뿌리·성격·주행)는? 네모공간·세모공간·세모간격의 내용물을 각각 대시오. 셋을 가르는 기준은? 돌림근띠 4근육은? 큰원근이 빠지는 이유는? 다리오금 내용물을 얕은 것부터 순서대로 대시오. 넙다리동맥이 오금동맥으로 이름이 바뀌는 지점은? 무릎동맥 5가지 중 관절주머니를 뚫는 것은? 종아리뼈목을 감아도는 신경과 그 손상 증상은? 안쪽복사 뒤 통과 순서를 앞에서부터 대시오. 어깨뼈패임에서 인대 위로 지나는 것과 아래로 지나는 것은 각각 무엇인가? 뒤통수밑삼각의 바닥과 내용물을 각각 대시오. 안쪽장딴지피부신경과 무엇이 합쳐져 장딴지신경이 되는가? 임상적으로 왜 중요한가? [!TIP] 함께 볼 자료 :: 도해 diag suboccipital labeled.svg · diag scapular spaces labeled/quiz.svg (문항 0031) · diag popliteal fossa labeled/quiz.svg (문항 0047 — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다."
   },
   {
    "id": "anatomy-2026-0033",
