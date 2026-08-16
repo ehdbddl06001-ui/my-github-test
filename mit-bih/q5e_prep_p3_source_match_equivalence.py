@@ -244,16 +244,17 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "50f3eb7c78838b10d6e54fc2140edb9d7cd1d664b8bde30a333f63a2419a20e1"),
+        "bf01a0a43cb7b1867b6055a3ef41b0d26af8a39fca8b68e263525f6d4a9c094d"),
     "renewed_for_this_harness_because": (
-        "run 20260816T031420 got past the beat-count guard and stopped on an "
-        "undeclared name: the registered producer reads frontend.beat_ctx, "
-        "which builds the record's ctx column.  It is now declared under the "
-        "same row convention as the other feature producers, and a surface "
-        "discovery pass lists every remaining undeclared name at once instead "
-        "of one per round.  Injection surface and diagnosis only; the fixtures "
-        "(as revised in D21, which the spec owner should still review), the "
-        "rule, the tolerance and the verdict criteria are unchanged"),
+        "run 20260816T121935 established that the registered producer takes "
+        "its beat window from frontend.WIN_BEFORE, so the injected surface "
+        "now declares the registered 150/150 pair from the frozen Q5-D "
+        "module.  This renewal also covers a fix to the guard itself: the "
+        "harness identity did not fold the injected surface, so a declared "
+        "constant added on its own left the digest unmoved while changing "
+        "what the oracle observes.  It folds it now.  The fixtures (as "
+        "revised in D21, which the spec owner should still review), the rule, "
+        "the tolerance and the verdict criteria are unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -680,7 +681,27 @@ def fixture_card(name: str) -> Dict[str, object]:
 #: built around.  Injecting anything else would silently change the behaviour
 #: under test, which is the one thing an injection may never do.  A regression
 #: pins the arithmetic rather than the number.
-FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS}
+#:
+#: `WIN_BEFORE` and `WIN_AFTER` are the beat window, and the 20260816T121935
+#: run established that `build_record` reads the first of them from `frontend`
+#: rather than defining it.  They are pinned to the frozen Q5-D module's
+#: `WIN_BEFORE`/`WIN_AFTER`, which are the registered v10 lineage constants —
+#: the same 150/150 the boundary rule `p - 150 >= 0 and p + 150 <= len(x)` is
+#: written from, the same pair `stage_decomposition` describes both sides with,
+#: and the same pair the candidate adapter applies.  One fixture exists solely
+#: to pin that boundary (peak 140 is cut by it), so injecting any other value
+#: would move the line the fixture was built to test.
+#:
+#: Only `WIN_BEFORE` was observed being read.  `WIN_AFTER` is declared beside
+#: it because they are one constant in two halves — a window with a start and
+#: no end is not a window — and because they carry the *same* justification;
+#: declaring the pair costs nothing and a missing half costs a whole run.  The
+#: discovery pass cannot settle this on its own: a permissive stand-in answers
+#: `WIN_BEFORE`, and what a producer does next with a stand-in is not
+#: necessarily what it does with 150.
+FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS,
+                                              "WIN_BEFORE": BJ.WIN_BEFORE,
+                                              "WIN_AFTER": BJ.WIN_AFTER}
 #: Helper functions the registered source reaches for, beyond the two the
 #: source map names.  The 20260815T235627 run established that `build_record`
 #: calls `frontend._z` while running.
@@ -3348,7 +3369,10 @@ SURFACE_DISCOVERY_NOTE = (
     "ask for, so that one round declares all of them instead of one per round. "
     "Nothing it computed is read: not a return value, not a trace, not a row. "
     "The refusal itself is unchanged - a real run still stops at the first "
-    "undeclared name.")
+    "undeclared name.  Read the list as a LOWER BOUND: a stand-in answers "
+    "where the real value would, and a producer that branches on what it got "
+    "back may take a different path than it will once the name is declared "
+    "for real.")
 
 
 def discover_stub_surface(open_source: Callable,
@@ -3591,6 +3615,20 @@ def oracle_harness_identity() -> Dict[str, object]:
                "fixtures": [fixture_card(n) for n in fixture_names()],
                "binding_plan": [[list(a), k] for a, k in BINDING_PLAN],
                "binding_rationale": dict(sorted(BINDING_RATIONALE.items())),
+               # The injected surface *is* part of the oracle: a producer that
+               # reads `frontend.WIN_BEFORE` behaves according to the value it
+               # was handed, so a run under a different declared surface is a
+               # run of a different oracle.  Folding it in was missing until
+               # 2026-08-16 and the gap was masked by every earlier surface
+               # change having also edited a function's text — a declared
+               # constant added on its own would have left the digest, and so
+               # the recorded execution approval, unmoved.
+               "injected_constants": {
+                   "wfdb": dict(sorted(WFDB_STUB_CONSTANTS.items())),
+                   "frontend": dict(sorted(FRONTEND_STUB_CONSTANTS.items())),
+                   "pwave": dict(sorted(PWAVE_STUB_CONSTANTS.items()))},
+               "injected_functions": sorted(INJECTED_GLOBALS),
+               "stub_variants": list(STUB_VARIANTS),
                "tolerance": TOLERANCE, "win_before": BJ.WIN_BEFORE,
                "win_after": BJ.WIN_AFTER, "module_version": MODULE_VERSION}
     return {"oracle_harness_sha256": canonical_digest(payload),
