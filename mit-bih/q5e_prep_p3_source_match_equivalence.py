@@ -245,16 +245,16 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "ae0b12f8365ccf6fbb3433d9d6d85670c1d0fe9cb563576aaebdaa2ac52d6487"),
+        "514076e8e37e0e75285b1149146745921dc6fc01ba2aa776bb158c857274678d"),
     "renewed_for_this_harness_because": (
-        "run 20260816T131241 reported two more helpers at once "
-        "(frontend.stack_ctx, frontend.slope_channel), which are declared as "
-        "probed identities, and showed compare_features being called without "
-        "the peaks - so the row producers now recover their rows from the "
-        "beat windows, which name their own centre under the injected ramp.  "
-        "Injection surface only; the fixtures (as revised in D21, which the "
-        "spec owner should still review), the rule, the tolerance and the "
-        "verdict criteria are unchanged"),
+        "run 20260816T134407 ran the registered producer to completion and "
+        "returned all seven columns; it stopped only because ref and sim came "
+        "back empty, the beat windows being (n, 300, 2) rather than flat.  "
+        "The reader, the row producers and the probe now handle a "
+        "multi-channel window at any nesting depth.  Reader and injection "
+        "surface only; the fixtures (as revised in D21, which the spec owner "
+        "should still review), the rule, the tolerance and the verdict "
+        "criteria are unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -849,23 +849,22 @@ class _AnnotationStub(object):
 def _elementwise(value: object, transform):
     """Apply `transform` to every number in a signal-shaped value.
 
-    Works on a numpy array, a list of rows or a flat list, and returns the
-    value unchanged when it is none of those — a probe that cannot perturb an
-    input reports that it could not, rather than pretending it did.
+    Works on a numpy array and on nesting of any depth, and returns the value
+    unchanged when it holds no numbers — a probe that cannot perturb an input
+    reports that it could not, rather than pretending it did.
+
+    The depth matters: run `20260816T134407` showed the registered producer
+    holding its windows as `(n, 300, 2)`, three levels deep, and a version of
+    this that only went two levels raised `TypeError: bad operand type for
+    unary -: 'list'` under the probe.  Every fixture then reported its
+    injection as **untested**, which is the honest answer to a probe that
+    could not run — and a useless one.
     """
     numpy = _numpy()
     if numpy is not None and isinstance(value, numpy.ndarray):
         return transform(value)
     if isinstance(value, (list, tuple)):
-        out = []
-        for item in value:
-            if isinstance(item, (list, tuple)):
-                out.append([transform(v) for v in item])
-            elif isinstance(item, (int, float)) and not isinstance(item, bool):
-                out.append(transform(item))
-            else:
-                return value
-        return out
+        return [_elementwise(item, transform) for item in value]
     if isinstance(value, (int, float)) and not isinstance(value, bool):
         return transform(value)
     return value
@@ -947,10 +946,9 @@ def build_injection(fixture: Mapping[str, object],
         is which.
         """
         for argument in args:
-            rows = _numeric_rows(argument)
-            if not rows or len(rows[0]) != BJ.WIN_BEFORE + BJ.WIN_AFTER:
+            centres = window_centres(argument)
+            if not centres:
                 continue
-            centres = [row[BJ.WIN_BEFORE] for row in rows]
             for sign in (1.0, -1.0):
                 values = [sign * c for c in centres]
                 if all(float(v) == int(v) and int(v) in set(peaks)
@@ -2528,6 +2526,40 @@ def _sequence_dtype(value: object) -> Optional[str]:
     return "/".join(sorted(kinds)[:4]) if kinds else "empty"
 
 
+def window_centres(value: object) -> List[float]:
+    """The centre sample of each beat window in a block, or `[]`.
+
+    A window is `WIN_BEFORE + WIN_AFTER` samples long and a sample may have
+    more than one channel: run `20260816T134407` returned `beat` with shape
+    `(7, 300, 2)`, and a reader that recognised only the flat case treated a
+    perfectly ordinary two-lead record as unreadable.  The first channel is
+    read, because the injected ramp puts the sample index in every channel and
+    one of them has to be chosen the same way every time.
+
+    Nothing here decides anything on its own: the centres are compared against
+    the peaks the fixture declares, and a block that does not line up is simply
+    not this channel.
+    """
+    block = _as_lists(value)
+    if not isinstance(block, (list, tuple)) or not block:
+        return []
+    width = BJ.WIN_BEFORE + BJ.WIN_AFTER
+    centres: List[float] = []
+    for row in block:
+        row = _as_lists(row)
+        if not isinstance(row, (list, tuple)) or len(row) != width:
+            return []
+        centre = _as_lists(row[BJ.WIN_BEFORE])
+        if isinstance(centre, (list, tuple)):
+            if not centre:
+                return []
+            centre = centre[0]
+        if isinstance(centre, bool) or not isinstance(centre, (int, float)):
+            return []
+        centres.append(float(centre))
+    return centres
+
+
 def _numeric_rows(value: object) -> Optional[List[List[float]]]:
     """A two-dimensional numeric block as plain floats, or `None`.
 
@@ -2750,17 +2782,16 @@ def project_columnar_rows(returned: Mapping[str, object],
     # negation under the probe.  The expected centre is therefore known from
     # the *variant*, which is an input, before any value is looked at.
     sign = -1.0 if variant == STUB_VARIANT_PROBE else 1.0
-    beat_rows = _numeric_rows(returned.get("beat"))
+    # Read through `window_centres`, which handles a multi-channel window as
+    # well as a flat one: the registered record came back as (n, 300, 2), and
+    # a reader that recognised only the flat case would have called an
+    # ordinary two-lead block unreadable.
+    centres = window_centres(returned.get("beat"))
     window = BJ.WIN_BEFORE + BJ.WIN_AFTER
-    if beat_rows is None:
-        notes["beat"] = "not a two-dimensional numeric block; not used"
-    elif not beat_rows:
-        notes["beat"] = "no rows; nothing to cross-check"
-    elif len(beat_rows[0]) != window:
-        notes["beat"] = (f"width {len(beat_rows[0])} is not the registered "
-                         f"window {window}; not used")
+    if not centres:
+        notes["beat"] = (f"not a block of {window}-sample windows this reader "
+                         f"can take a centre from; not used")
     else:
-        centres = [row[BJ.WIN_BEFORE] for row in beat_rows]
         # Either sign: the declared helpers are the identity in the primary
         # variant and an elementwise negation in the probe, and there is more
         # than one of them, so a window may pass through the transform more
@@ -3725,7 +3756,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "discover_stub_surface",
     "discover_kept_rows", "_unreadable", "_public_attributes",
     "trace_summary", "_summarise_local",
-    "is_columnar_return", "is_incomplete_columnar_return",
+    "is_columnar_return", "is_incomplete_columnar_return", "window_centres",
     "columnar_keys_present", "project_columnar_rows", "return_schema_report",
     "_sequence_shape", "_row_width", "_numeric_rows", "_flat_tokens",
     "_as_lists", "_sequence_dtype",

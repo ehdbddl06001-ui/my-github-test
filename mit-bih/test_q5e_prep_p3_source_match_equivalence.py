@@ -2634,6 +2634,125 @@ WINDOW_ARGUMENT_PRODUCER = ARGUMENT_SHAPED_PRODUCER.replace(
     '            "ctx": [list(r) for r in ctx_all], "y": ys}')
 
 
+#: A producer built to the shapes run `20260816T134407` showed the registered
+#: one returning: two-lead windows `(n, 300, 2)`, `compare_features` handed the
+#: windows rather than the peaks, integer class codes in `y`, and all seven
+#: columns.  Its **rule** is the adapter's, deliberately — this rehearses
+#: whether the harness can read the record, not what the record says.
+REGISTERED_SHAPED_PRODUCER = '''
+from .frontend import (detect_r, rr_features, FS, WIN_BEFORE, WIN_AFTER, _z,
+                       stack_ctx, slope_channel, compare_features, beat_ctx)
+from . import pwave as PW
+
+AAMI = {"N": "N", "L": "N", "R": "N", "e": "N", "j": "N",
+        "A": "S", "a": "S", "J": "S", "S": "S", "V": "V", "E": "V"}
+
+
+def build_record(rec, sig, ann_sample, ann_symbol, use_detected=True):
+    x = sig
+    fs = FS
+    tol = int(0.15 * fs)
+    tpk = [int(s) for s in ann_sample]
+    tlb = [AAMI.get(str(s), "") for s in ann_symbol]
+    peaks = [int(p) for p in detect_r(slope_channel(x), fs)]
+    order = sorted(range(len(tpk)), key=lambda k: (tpk[k], k))
+    used = set()
+    kp, li = [], []
+    for i, p in enumerate(peaks):
+        best, bd = None, tol + 1
+        for rank in range(len(order)):
+            if rank in used:
+                continue
+            d = abs(tpk[order[rank]] - p)
+            if d < bd:
+                best, bd = rank, d
+        if best is None or bd > tol:
+            continue
+        used.add(best)
+        j = order[best]
+        if not tlb[j]:
+            continue
+        if not (p - WIN_BEFORE >= 0 and p + WIN_AFTER <= len(x)):
+            continue
+        kp.append(p)
+        li.append(j)
+    valid = [[i, p] for i, p in enumerate(kp)]
+    idx = [i for i, _p in valid]
+    cuts = [_z([[float(v) for v in x[s]]
+                for s in range(p - WIN_BEFORE, p + WIN_AFTER)]) for p in kp]
+    cuts = stack_ctx(cuts)
+    ref, sim = compare_features(cuts)
+    ctx_all = beat_ctx(cuts)
+    pw_all = PW.pwave_features(cuts)
+    rr_all = rr_features(kp, fs)
+    y = [0 if tlb[j] == "N" else 1 for j in li]
+    return {"beat": cuts,
+            "ref": [list(r) for r in ref],
+            "rr": [list(rr_all[i]) for i in idx],
+            "sim": [list(r) for r in sim],
+            "pw": [list(r) for r in pw_all],
+            "ctx": [list(r) for r in ctx_all],
+            "y": y}
+'''
+
+
+def test_the_reader_handles_the_shapes_the_registered_record_came_back_with():
+    """A rehearsal of the real record, from the trace the run preserved.
+
+    Run `20260816T134407` ran the registered producer to completion and
+    returned all seven columns — `beat` with shape `(7, 300, 2)`, integer class
+    codes in `y` — and stopped only because `ref` and `sim` came back empty:
+    `compare_features` had been called without the peaks, and the stub answered
+    a call it did not recognise with no rows at all.
+
+    So the windows are read for what they are.  A sample may have more than one
+    channel, and a two-lead record is not an unreadable one.
+    """
+    result = differential_for(REGISTERED_SHAPED_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          f"the record shape the registered producer returns is read on all "
+          f"six fixtures: {result['fixtures_passed']}/6")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          f"and every fixture was probed invariant: {result['stub_invariance']}")
+    reading = result["detail"][0]["return_reading"]
+    check(reading["parser"] == "columnar", "through the columnar reader")
+    check(f"beat[:, {BJ.WIN_BEFORE}]" in reading["channels"],
+          f"with the two-lead beat block read as a cross-check channel rather "
+          f"than skipped: {reading['channels']}")
+    columns = reading["return_schema"]["columns"]
+    check(columns["beat"]["shape"][:1] == [len(reading["channel_sequences"]
+                                              ["rr[:, 0]"])],
+          f"every column describes the same rows: {columns}")
+    check(all(entry["return_reading"]["return_schema"]["columns"]["ref"]
+              ["shape"][0] ==
+              entry["return_reading"]["return_schema"]["columns"]["rr"]
+              ["shape"][0] for entry in result["detail"]),
+          "including ref, which is what the run stopped on")
+
+
+def test_a_window_block_is_read_flat_or_multi_channel():
+    """One reader for both, so the two cannot drift apart."""
+    peaks = [1000, 1500]
+    flat = [[float(s) for s in range(p - BJ.WIN_BEFORE, p + BJ.WIN_AFTER)]
+            for p in peaks]
+    two_lead = [[[float(s)] * 2
+                 for s in range(p - BJ.WIN_BEFORE, p + BJ.WIN_AFTER)]
+                for p in peaks]
+    check(P3.window_centres(flat) == [1000.0, 1500.0],
+          "a flat window block names its centres")
+    check(P3.window_centres(two_lead) == [1000.0, 1500.0],
+          "and so does a two-lead one, from the first channel")
+    check(P3.window_centres([[1.0, 2.0], [3.0, 4.0]]) == [],
+          "a block that is not window-shaped is simply not this channel")
+    check(P3.window_centres([]) == [] and P3.window_centres(None) == [],
+          "and neither is nothing at all")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        ref, _sim = sys.modules["frontend"].compare_features(two_lead)
+    check([list(row)[0] for row in ref] == [1000.0, 1500.0],
+          "a helper handed two-lead windows still returns aligned rows")
+
+
 def test_a_helper_called_without_the_peaks_still_returns_aligned_rows():
     """A column of the wrong length is a column the reader must refuse.
 

@@ -481,6 +481,56 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D26 (2026-08-16) — the registered producer ran to completion and returned
+the whole record.  A beat is two-lead, and the harness was reading it flat.**
+Run `20260816T134407` is the first that got the registered `build_record` all
+the way through: 143 traced steps, a return at line 74, and all seven columns
+present.
+
+```
+beat  (7, 300, 2) float32     rr  (7, 7) float32     y  (7,) int8
+ctx   (7, 5)      float32     pw  (7, 5) float32
+ref   (0,)        float64     sim (0,)   float64     ← the only misalignment
+```
+
+The stop was `'ref' has 0 rows where 'rr' has 7`, and the cause is ours:
+`compare_features` was again called **without** the peaks (`given: [0]`), and
+D25's window-recovery could not read the block because a beat is
+`(300, 2)` — a sample per lead — not a flat 300.  `window_centres()` now reads
+the centre sample of a window whether it is flat or multi-channel, taking the
+first channel (the injected ramp puts the index in every channel, and one of
+them has to be chosen the same way every time).  The reader's beat cross-check
+goes through the same function, so a two-lead record is a channel rather than
+a blind spot.
+
+`_elementwise` also went only two levels deep, so the probe raised `TypeError:
+bad operand type for unary -: 'list'` on a three-level window and every fixture
+reported its injection as **untested** — the honest answer to a probe that
+could not run, and a useless one.  It now recurses to any depth.
+
+**What the trace shows about the registered source** (recorded, not reported —
+no comparison was made): `kp = [1000, 1500, 1740, 1980, 2220, 2460, 2700]` and
+`used = {0, 2, 3, 4, 5, 6, 7}`.  Peak 1012 was dropped **and annotation 1 was
+never consumed** — the source neither kept the peak nor took its match.  That
+is the decision `test_source_match_nearest_already_used_falls_through` exists
+to pin, and the adapter keeps that row.  It becomes a finding when the six
+fixtures are compared, and not before.
+
+**The rehearsal.**  `REGISTERED_SHAPED_PRODUCER` is built to these exact shapes
+— two-lead windows, `compare_features` handed the windows, integer class codes
+in `y`, all seven columns — with the *adapter's* rule, so that what it
+exercises is whether the harness can read such a record.  It agrees on all six
+fixtures, through the columnar reader, with all three channels
+(`rr[:, 0]`, `pw[:, 0]`, `beat[:, 150]`) read and no channel notes, and probed
+invariant on every fixture.  Writing it also caught a real difference: the
+first draft traversed annotations in list order and the projection reported it
+against the order fixture, which is that fixture doing its job on my own code.
+
+Regressions: `test_the_reader_handles_the_shapes_the_registered_record_came_
+back_with` and `test_a_window_block_is_read_flat_or_multi_channel`.  Suite: 111
+functions, 1,164 assertions.  Bundle `9f34e9ae…` / manifest `61887fea…` at
+`runs/20260816T134407_…` is preserved.
+
 **D25 (2026-08-16) — two more helpers, and the row producers now recover their
 rows from the windows.**  Run `20260816T131241` reported **two** names at once
 — `frontend.stack_ctx` and `frontend.slope_channel` — which is D24's retry
