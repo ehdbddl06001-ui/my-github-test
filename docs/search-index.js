@@ -1,25 +1,25 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-15",
+ "generated": "2026-08-16",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1102,
+  "total": 1119,
   "byType": {
-   "anatomy": 261,
+   "anatomy": 270,
+   "paper": 211,
    "kmle": 555,
    "usmle": 66,
-   "paper": 203,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 261,
-   "Cardiology": 83,
-   "Nephrology": 61,
-   "Infectious Disease": 59,
-   "Pediatrics": 57,
+   "Anatomy": 270,
+   "Cardiology": 84,
+   "Nephrology": 62,
+   "Infectious Disease": 60,
+   "Pediatrics": 58,
    "Obstetrics & Gynecology": 40,
    "Neurology": 38,
    "Psychiatry": 38,
@@ -31,11 +31,11 @@ window.MEDKOS_INDEX = {
    "Ophthalmology": 34,
    "Orthopedics": 34,
    "Rheumatology": 34,
+   "Surgery": 34,
    "Hematology": 33,
-   "Surgery": 33,
-   "Pathology": 28,
-   "Laboratory Medicine": 26,
-   "Hematology-Oncology": 21,
+   "Pathology": 29,
+   "Laboratory Medicine": 27,
+   "Hematology-Oncology": 22,
    "Physiology": 7,
    "Microbiology": 6,
    "Biochemistry": 5,
@@ -53,13 +53,202 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 702,
-   "medium": 351,
+   "high": 711,
+   "medium": 359,
    "low": 49
   },
-  "tagCount": 2038
+  "tagCount": 2061
  },
  "docs": [
+  {
+   "id": "anatomy-2026-0076",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "폐쇄신경 앞가지 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "폐쇄신경",
+    "짧은모음근",
+    "안쪽칸",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p36",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0076.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p36)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 폐쇄신경 앞가지 실사 spotter (필기 제거·복원본) spotter 복원 6회차 폐쇄신경 짧은모음근 안쪽칸 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p36 문제 실사 spotter — 복원 이미지(6회차 C p36)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0075",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "두렁신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "두렁신경",
+    "모음근굴",
+    "넙다리신경",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p29",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0075.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p29)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 두렁신경 실사 spotter (필기 제거·복원본) spotter 복원 6회차 두렁신경 모음근굴 넙다리신경 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p29 문제 실사 spotter — 복원 이미지(6회차 C p29)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0074",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "넙다리관구멍 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "넙다리관구멍",
+    "넙다리탈장",
+    "오목인대",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p6",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0074.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p6)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 넙다리관구멍 실사 spotter (필기 제거·복원본) spotter 복원 6회차 넙다리관구멍 넙다리탈장 오목인대 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p6 문제 실사 spotter — 복원 이미지(6회차 C p6)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0073",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "폐쇄신경 앞피부가지 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "폐쇄신경",
+    "앞피부가지",
+    "연관통",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p40",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0073.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p40)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 폐쇄신경 앞피부가지 실사 spotter (필기 제거·복원본) spotter 복원 6회차 폐쇄신경 앞피부가지 연관통 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p40 문제 실사 spotter — 복원 이미지(6회차 B p40)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0072",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "위후두동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "위후두동맥",
+    "방패목뿔막",
+    "위후두신경",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p27",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0072.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위후두동맥 실사 spotter (필기 제거·복원본) spotter 복원 6회차 위후두동맥 방패목뿔막 위후두신경 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p27 문제 실사 spotter — 복원 이미지(6회차 B p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0071",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "위갑상동맥 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "위갑상동맥",
+    "바깥목동맥",
+    "방패샘",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p8",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0071.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위갑상동맥 실사 spotter (필기 제거·복원본) spotter 복원 6회차 위갑상동맥 바깥목동맥 방패샘 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p8 문제 실사 spotter — 복원 이미지(6회차 B p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0070",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "어깨목뿔근 위힘살·아래힘살 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "어깨목뿔근",
+    "근육삼각",
+    "목신경고리",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p42",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0070.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p42)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 어깨목뿔근 위힘살·아래힘살 실사 spotter (필기 제거·복원본) spotter 복원 6회차 어깨목뿔근 근육삼각 목신경고리 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p42 문제 실사 spotter — 복원 이미지(6회차 A p42)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0069",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "목뿔뼈 몸통 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "목뿔뼈",
+    "앞목삼각",
+    "두힘살근",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p34",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0069.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p34)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 목뿔뼈 몸통 실사 spotter (필기 제거·복원본) spotter 복원 6회차 목뿔뼈 앞목삼각 두힘살근 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p34 문제 실사 spotter — 복원 이미지(6회차 A p34)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0068",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "가로목신경 실사 spotter (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "가로목신경",
+    "목신경얼기",
+    "신경점",
+    "예습시험"
+   ],
+   "source": "과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p17",
+   "confidence": "high",
+   "date": "2026-08-16",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0068.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 가로목신경 실사 spotter (필기 제거·복원본) spotter 복원 6회차 가로목신경 목신경얼기 신경점 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p17 문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
   {
    "id": "anatomy-2026-0067",
    "type": "anatomy",
@@ -206,6 +395,134 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0061.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
    "text": "Anatomy 얼굴신경의 목가지 실사 spotter (필기 제거·복원본) spotter 복원 6회차 얼굴신경 넓은목근 목가지 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 A p10 문제 실사 spotter — 복원 이미지(6회차 A p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "paper-2026-0211",
+   "type": "paper",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0211_ten_minutes_of_intraoperative_nerve_stimulation_may_improve_.md",
+   "snippet": "Title Ten Minutes of Intraoperative Nerve Stimulation May Improve Outcomes Following End to End Nerve Transfer Authors Rieker Madeline, Choo Stephanie, Snipes Katherine, Devarasetty V V N Manohar, Kuechly Henry, Covell Nicole, Arendale Rich",
+   "text": "Surgery scraped pubmed PubMed / The Journal of hand surgery Title Ten Minutes of Intraoperative Nerve Stimulation May Improve Outcomes Following End to End Nerve Transfer Authors Rieker Madeline, Choo Stephanie, Snipes Katherine, Devarasetty V V N Manohar, Kuechly Henry, Covell Nicole, Arendale Richard, Gachigi Kennedy, et al. Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.07.005 · PMID: 42599251 https://pubmed.ncbi.nlm.nih.gov/42599251/ Abstract PURPOSE: Brief intraoperative electrical nerve stimulation (ES) has shown potential to improve outcomes of peripheral nerve surgery, including nerve repair, grafting, and transfer. This study compares clinical outcomes of nerve transfers receiving ES to those that did not. METHODS: Retrospective cohort study was performed of adults undergoing radial to axillary or median/ulnar to musculocutaneous nerve transfers at a single center between 2015 and 2025. Patients were divided into 2 groups: those who received 10 minutes of continuous ES (2 mA and 100 μs) intraoperatively (ES group) and those who did not (No ES group). Primary outcome was postoperative Medical Research Council motor grade. Chi square tests were used to test associations between categorical variables and t tests for continuous measures. RESULTS: Sixty surgeries (n = 44, no ES; n = 16, ES) in 46 patients were analyzed. Groups were similar in age (median 40 years, P = .622) and time to surgery (median 6 months, P = .261). Surgical characteristics were similar, including transfer type (P = .6884). All patients (n = 60) received end to end constructs. Among ES patients, 88% reached M4 M5 recovery versus 61% in nonstimulated patients (P = .136). Median follow up was 26 months for no ES and 15 months for ES (P = .029). Controlling for age and time to surgery, stimulated patients were more likely to reach at least M4 (odds ratio 6.0, 95% confidence interval 1.03 35.34, P = .046). CONCLUSIONS: Ten minutes of intraoperative ES may increase rates of excellent (M4 M5) motor recovery following end to end nerve transfer. Brief intraoperative ES is a readily implementable technique, requiring only 10 minutes of operative time, and represents a promising adjunct that may enhance outcomes for nerve transfers in brachial plexus reconstruction. Our practice has since adopted routine use of ES for nerve transfer surgeries. TYPE OF STUDY/LEVEL OF EVIDENCE: III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0210",
+   "type": "paper",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / BMC ophthalmology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0210_defocus_incorporated_multiple_segment_spectacle_lenses_versu.md",
+   "snippet": "Title Defocus incorporated multiple segment spectacle lenses versus orthokeratology lenses for myopia control: a non inferiority randomised clinical trial Authors Andersen Lou Ann Christensen, Mejldal Anna, Sivakumar Saranga, Jakobsen Trine",
+   "text": "Pediatrics scraped pubmed PubMed / BMC ophthalmology Title Defocus incorporated multiple segment spectacle lenses versus orthokeratology lenses for myopia control: a non inferiority randomised clinical trial Authors Andersen Lou Ann Christensen, Mejldal Anna, Sivakumar Saranga, Jakobsen Trine Møldrup, Møller Flemming Journal / DOI BMC ophthalmology · DOI: 10.1186/s12886 026 05144 6 · PMID: 42595991 https://pubmed.ncbi.nlm.nih.gov/42595991/ Abstract BACKGROUND: To determine whether the Defocus Incorporated Multiple Segments (DIMS) spectacle lens is non inferior to Orthokeratology lenses (OKL) in slowing the progression of myopia in children. METHODS: A parallel group, non inferiority randomised clinical trial at the University Hospital of Southern Denmark compared the myopia control treatment efficacy of DIMS spectacle lenses with OKL in myopic children aged 6 12 years. Our primary outcome was axial length growth after 18 months of therapy, adjusted for change in central corneal thickness in the OKL group. The participants were allocated to the treatments using centralised computer generated randomisation. The interpreters were blinded. Non inferiority was concluded if the upper bound of the 95% confidence interval (95% CI) for the estimated treatment difference (DIMS OKL) after 18 months was equal to or below 0.13 mm. In case of non inferiority, superiority was tested in the same population. Superiority was declared if the upper 95%Cl bound was below zero. Our key secondary outcome was overall eye length growth after 18 months of therapy and was assessed for superiority. RESULTS: 90 participants were randomised to DIMS spectacle lenses (n = 45) and OKL (n = 45). For the primary outcome, 45 participants were analysed in both the DIMS spectacle lens and OKL groups using an intention to treat approach. A per protocol approach was used for sensitivity analysis. The between group difference (DIMS OKL) in axial elongation was 0.05 mm (95% CI 0.13; 0.04) in a mixed model adjusted for covariates: age at baseline, baseline cycloplegic spherical equivalent refractive error, baseline axial length, and number of myopic parents, which is below the non inferiority margin and above zero. The between group difference (DIMS OKL) in overall eye length elongation was 0.04 mm (95% CI 0.12; 0.04). One adverse event was observed in the OKL group. CONCLUSIONS: The DIMS spectacle lens was noninferior to OKL for slowing axial elongation after 18 months of therapy in myopic children. The DIMS spectacle lens was not superior to OKL. There was no statistically significant difference in overall eye length growth between the DIMS spectacle lens and OKL after 18 months of therapy in myopic children. TRIAL REGISTRATION: NCT05134935, 26 November 2021. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0209",
+   "type": "paper",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical microbiology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0209_multicenter_clinical_evaluation_of_a_fully_automated_multipl.md",
+   "snippet": "Title Multicenter clinical evaluation of a fully automated multiplex HSV 1, HSV 2, and VZV real time PCR assay Authors Yao Joseph, McElvania Erin, Al Ghoul Mohammad, Patel Parul, Kular Rupinder, Wuitschick Jeffrey, Huang Shihai, Birdsall Jo",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of clinical microbiology Title Multicenter clinical evaluation of a fully automated multiplex HSV 1, HSV 2, and VZV real time PCR assay Authors Yao Joseph, McElvania Erin, Al Ghoul Mohammad, Patel Parul, Kular Rupinder, Wuitschick Jeffrey, Huang Shihai, Birdsall John, et al. Journal / DOI Journal of clinical microbiology · DOI: 10.1128/jcm.00535 26 · PMID: 42599190 https://pubmed.ncbi.nlm.nih.gov/42599190/ Abstract Herpes simplex virus type 1 (HSV 1), herpes simplex virus type 2 (HSV 2), and varicella zoster virus (VZV) are associated with a range of clinical manifestations depending on the anatomical site of infection. HSV and VZV lesions often exhibit similar phenotypical characteristics, making clinical differentiation challenging. Detection and differentiation of HSV 1, HSV 2, and VZV are essential for diagnosis and treatment management. An automated multiplex real time PCR assay, Alinity m HSV 1 & 2/VZV assay, was developed to detect and differentiate HSV 1, HSV 2, and VZV. The assay was validated for use with cutaneous and mucocutaneous lesion swab specimens collected in commercial viral transport media from symptomatic patients. The assay demonstrated a limit of detection of 5.90 TCID50/mL for HSV 1, 2.07 TCID50/mL for HSV 2, and 0.055 TCID50/mL for VZV. Testing with clinical swab specimens demonstrated greater than 95% clinical sensitivity and specificity for all three analytes. The Alinity m HSV 1 & 2/VZV assay provides a reliable and accurate method for detection and differentiation of HSV 1, HSV 2, and VZV in lesion swab specimens for improved diagnostic accuracy and patient management.IMPORTANCEHerpes simplex virus type 1 (HSV 1), herpes simplex virus type 2 (HSV 2), and varicella zoster virus (VZV) can cause skin and mucocutaneous lesions that often appear clinically similar, making accurate diagnosis difficult without laboratory testing. Rapid and reliable identification of the causative virus is important because patient counseling, treatment decisions, and infection management differ among these infections. In this multicenter study, a fully automated molecular assay was evaluated that simultaneously detects and differentiates HSV 1, HSV 2, and VZV from a single lesion swab specimen. Testing of more than 1,200 clinical specimens demonstrated high sensitivity and specificity for all three viruses. The assay also offers a streamlined workflow with minimal hands on time and rapid turnaround. These findings support the use of this multiplex assay as a practical diagnostic tool that can improve laboratory efficiency and provide clinicians with timely, accurate results to guide patient care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0208",
+   "type": "paper",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of surgical pathology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0208_histopathology_and_clinical_features_of_spark_nevi_in_a_mult.md",
+   "snippet": "Title Histopathology and Clinical Features of SPARK Nevi in a Multi Institutional Cohort Authors El Rayes Dina, AlMahdy Albatool, Cazzato Gerardo, Jour George, Alomari Ahmed, Plaza Jose A, Cheng Tiffany W, Moshiri Ata S, et al. Journal / DO",
+   "text": "Pathology scraped pubmed PubMed / International journal of surgical pathology Title Histopathology and Clinical Features of SPARK Nevi in a Multi Institutional Cohort Authors El Rayes Dina, AlMahdy Albatool, Cazzato Gerardo, Jour George, Alomari Ahmed, Plaza Jose A, Cheng Tiffany W, Moshiri Ata S, et al. Journal / DOI International journal of surgical pathology · DOI: 10.1177/10668969261466611 · PMID: 42599278 https://pubmed.ncbi.nlm.nih.gov/42599278/ Abstract Background/ObjectivesSpitz nevus with architectural features of a Clark/dysplastic nevus (\"SPARK nevus\") is an uncommon melanocytic lesion closely mimicking dysplastic nevus and melanoma, creating diagnostic challenges. This study aimed to delineate the clinical, histopathologic, and immunohistochemical features of SPARK pattern lesions and to clarify their biologic behavior.MethodsA multi institutional retrospective study across six academic centers identified 74 SPARK nevi. Candidate lesions were re reviewed at each institution by board certified dermatopathologists using predefined inclusion criteria requiring concurrent Spitzoid cytology and Clark type architectural features. The demographic, clinical, histologic, immunohistochemical, and follow up data were collected and reviewed.ResultsThe cohort showed a predominance of female patients (76%) with a mean age of 32.4 years (range 11 68), and lesions were small (mean diameter 5.8 mm, range 2 20 mm), most often on the proximal extremities and trunk. Histologically, lesions were mainly compound (70%) with Spitzoid cytology in Clark type architecture; cytomorphology was mixed epithelioid spindled (47%) or epithelioid (41%), Kamino bodies were infrequent (9%), inflammation was usually non brisk (62%), and cytologic atypia often reached moderate to severe grades. Immunohistochemistry (performed in 55%) showed PRAME negativity, retained p16, and low MKI67 indices, and follow up (available in 93%; median 18 months) revealed one local recurrence, two metachronous SPARK nevi, and no SPARK related deaths.ConclusionsThis largest series defines the clinicopathologic and immunohistochemical spectrum of SPARK pattern lesions and demonstrates overall benign behavior despite morphologic overlap with dysplastic nevi and melanoma. SPARK is most appropriately interpreted as a morphologic pattern encompassing lesions arising from multiple melanocytic pathways. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0207",
+   "type": "paper",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0207_assessment_of_drug_utilization_patterns_and_associated_survi.md",
+   "snippet": "Title Assessment of drug utilization patterns and associated survival outcomes in recurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC): Insights from a resource constrained set up Authors Patel Vaishnavi, Khadela Avinas",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners Title Assessment of drug utilization patterns and associated survival outcomes in recurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC): Insights from a resource constrained set up Authors Patel Vaishnavi, Khadela Avinash, Kothari Rushabh, Shah Vraj B Journal / DOI Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners · DOI: 10.1177/10781552261478232 · PMID: 42599276 https://pubmed.ncbi.nlm.nih.gov/42599276/ Abstract BackgroundRecurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC) has a poor prognosis due to patient rigors, such as malnutrition, uncontrolled comorbidities, age, and performance status. Rapidly evolving treatment paradigms have led to multimodal pharmacotherapy. This study evaluates drug utilization patterns of chemotherapy regimens used in R/M HNSCC patients to optimize evidence based recommendations.MethodsThis prospective observational study recruited histologically confirmed R/M HNSCC patients aged 18 80 years, with Eastern Cooperative Oncology Group performance status 0 2, treated with palliative intent over one year.ResultsThis drug utilization pattern study recruited 112 patients. The most common chemotherapy regimens (31.19%) were oral triple metronomic chemotherapy followed by low dose nivolumab plus oral metronomic chemotherapy (27.5%), paclitaxel and carboplatin with triple metronomic chemotherapy (20.5%), and paclitaxel plus carboplatin (19.7%). The median progression free survival was 9 months (95% CI, 8.5 10.2). Grade 3 adverse events occurred in less than 12% of patients. Full dose immunotherapy based combination regimens contribute significantly (81.91%) to the total cost.ConclusionSignificant incongruity exists between NCCN recommended first line therapies and resource constrained setups. The pragmatic use of cost effective regimens, such as triple metronomic chemotherapy with low dose nivolumab or as monotherapy, improves survival outcomes, thus optimizing patient care in real world settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0206",
+   "type": "paper",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of nephrology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0206_risk_factors_for_recurrent_cardiovascular_events_in_ckd_resu.md",
+   "snippet": "Title Risk factors for recurrent cardiovascular events in CKD: results from the KNOW CKD study Authors Kang Eunjeong, Im Dah Woon, Kim Minsang, Kim Yaeni, Yoo Tae Hyun, Kim Soo Wan, Kim Jayoun, Oh Kook Hwan Journal / DOI Journal of nephrolo",
+   "text": "Nephrology scraped pubmed PubMed / Journal of nephrology Title Risk factors for recurrent cardiovascular events in CKD: results from the KNOW CKD study Authors Kang Eunjeong, Im Dah Woon, Kim Minsang, Kim Yaeni, Yoo Tae Hyun, Kim Soo Wan, Kim Jayoun, Oh Kook Hwan Journal / DOI Journal of nephrology · DOI: 10.1093/joneph/aajag150 · PMID: 42599094 https://pubmed.ncbi.nlm.nih.gov/42599094/ Abstract BACKGROUND: Chronic kidney disease (CKD) markedly increases cardiovascular (CV) risk, and some patients experience recurrent CV events over time. Analyses restricted to time to first event may therefore underestimate the total CV burden. We evaluated determinants of both first and recurrent non fatal CV events in CKD. METHODS: We analyzed 2099 non dialysis participants with CKD enrolled in the prospective KNOW CKD cohort. CV events were adjudicated and included myocardial infarction, stroke, heart failure, coronary or peripheral revascularization, and clinically significant arrhythmias. Predictors of the first event were assessed using Cox proportional hazards models. Recurrent event risk was evaluated using Andersen Gill, Prentice Williams Peterson total time and gap time models, and shared frailty models, complemented by mean cumulative function analyses. RESULTS: Over a median follow up of 8.29 years, 203 participants (9.7%) experienced at least one non fatal CV event (158 had one event, 39 had two, and 6 had three). Participants with baseline CV disease or diabetes exhibited substantially higher cumulative event burdens. Older age, diabetes, prior CV disease, higher C reactive protein (CRP), albuminuria, and lower body mass index (BMI) were consistently associated with recurrent events across models; CRP and albuminuria showed relatively stronger associations with recurrence than with the first event. CONCLUSION: In CKD, recurrent CV risk is driven not only by traditional factors, particularly diabetes, but also by markers of vascular injury and inflammation. Strategies targeting both metabolic and inflammatory pathways may be critical to reducing recurrent CV burden. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0205",
+   "type": "paper",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Microbial genomics",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0205_investigation_of_an_outbreak_of_shigella_sonnei_bla_ctx_m_3_.md",
+   "snippet": "Title Investigation of an outbreak of Shigella sonnei bla CTX M 3 among men in England, 2025 26, using long and short read whole genome sequencing Authors Turnbull Jake D, Greig David R, Barker Clare R, Nair Satheesh, Lock Katherine, Swift ",
+   "text": "Infectious Disease scraped pubmed PubMed / Microbial genomics Title Investigation of an outbreak of Shigella sonnei bla CTX M 3 among men in England, 2025 26, using long and short read whole genome sequencing Authors Turnbull Jake D, Greig David R, Barker Clare R, Nair Satheesh, Lock Katherine, Swift Craig, Chattaway Marie A, Baker Kate S, et al. Journal / DOI Microbial genomics · DOI: 10.1099/mgen.0.001817 · PMID: 42599284 https://pubmed.ncbi.nlm.nih.gov/42599284/ Abstract Background. Recent outbreaks of gastrointestinal symptoms among gay, bisexual and other men who have sex with men (GBMSM) have been caused by multidrug resistant (MDR) Shigella sonnei carrying bla CTX M 27 or bla CTX M 15. To date, the bla CTX M 3 variant has not been associated with sexually transmitted shigellosis in the UK.Methods. Routine surveillance identified an outbreak S. sonnei among men in England in June 2025. Short read sequencing data were analysed to identify antimicrobial resistance (AMR) determinants and to investigate the phylogenetic context of the outbreak. Long read Oxford Nanopore Technology sequencing data were analysed to characterize the AMR encoding plasmid content.Results. Of the 83 cases linked to the outbreak cluster, 91.5% were adult males and none reported recent travel outside Europe; these outbreak characteristics (specifically adult male, no travel) are consistent with transmission among European GBMSM networks (Mitchell et al. 2019, Mitchell et al. 2021). Phylogenetic analysis placed the outbreak cluster within a wider clade historically associated with travel to the Middle East. The outbreak isolates were MDR; 90.4% (n=75/83) had bla CTX M 3 located on an IncI1B/O plasmid. This is the first report of the IncI1B/O plasmid type and bla CTX M 3 in GBMSM associated MDR S. sonnei in England.Conclusions. Acquisition of the IncI1B/O plasmid encoding bla CTX M 3 represents an independent evolutionary event, separate from previously described GBMSM epidemics driven by acquisition of IncFII plasmids encoding bla CTX M 27 or bla CTX M 15. This study provides further evidence of the parallel emergence of bla CTX M variants conferring resistance to the third generation cephalosporins. Whole genome sequencing based surveillance and routine susceptibility testing of MDR S. sonnei are essential, as this pathogen continues to diversify and spread. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0204",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Clinical electrophysiology",
+   "confidence": "medium",
+   "date": "2026-08-14",
+   "path": "content/papers/2026/2026-08-14_paper-2026-0204_safety_of_dofetilide_initiation_following_a_shortened_amioda.md",
+   "snippet": "Title Safety of Dofetilide Initiation Following a Shortened Amiodarone Washout Period Authors Burright Isaac T, Del Carpio Munoz Freddy, Deshmukh Abhishek J, Asirvatham Samuel J, Kapa Suraj, Siontis Konstantinos C, Noseworthy Peter A, Killu",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Clinical electrophysiology Title Safety of Dofetilide Initiation Following a Shortened Amiodarone Washout Period Authors Burright Isaac T, Del Carpio Munoz Freddy, Deshmukh Abhishek J, Asirvatham Samuel J, Kapa Suraj, Siontis Konstantinos C, Noseworthy Peter A, Killu Ammar M, et al. Journal / DOI JACC. Clinical electrophysiology · DOI: 10.1016/j.jacep.2026.06.039 · PMID: 42599268 https://pubmed.ncbi.nlm.nih.gov/42599268/ Abstract BACKGROUND: Dofetilide, a class III antiarrhythmic for atrial fibrillation, frequently requires dose reduction or discontinuation for QT interval prolongation or ventricular arrhythmias. Food and Drug Administration guidelines mandate a 3 month amiodarone washout or serum amiodarone <0.3 mcg/mL before dofetilide initiation, potentially prolonging therapy interruption. OBJECTIVES: This study aimed to evaluate the safety of a shortened amiodarone to dofetilide transition by assessing dose reduction, drug discontinuation, and arrhythmic events. METHODS: Mayo Clinic patients transitioned from amiodarone to dofetilide in <90 days with ≥12 weeks of amiodarone therapy and serum concentration ≥0.3 mcg/mL if measured were identified. The primary end point was ventricular arrhythmias requiring dofetilide discontinuation. RESULTS: The final cohort included 66 patients (mean age 65 ± 14 years; 74.2% of the patients were men). Atrial fibrillation classification was 33.3% paroxysmal, 54.5% persistent, and 12.1% long standing persistent. A total of 22.7% had implantable cardioverter defibrillators. The median transition period was 43 days; 16 patients (24%) transitioned within 30 days (5 [8%] within 14 days), 20 (30%) between 31 and 45 days, 16 (24%) between 46 and 60 days, and 14 (21%) between 61 and 90 days. Dose reduction occurred in 24.2% and discontinuation in 10.6%, with no difference between ≤30 and 30 day transitions (dose reduction: 12.5% vs 28.0%, P = 0.319; discontinuation: 6.3% vs 12.0%, P = 1). No torsades de pointes (TdP) occurred during inpatient dofetilide initiation/loading. One TdP episode (339 days after dofetilide initiation, 419 days postamiodarone) was associated with intercurrent illness and additional QT prolonging medication exposure. CONCLUSIONS: In this cohort, dofetilide initiation within 90 days of amiodarone discontinuation was not associated with TdP during inpatient loading, supporting the feasibility of monitored, expedited transitions in select patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0577",

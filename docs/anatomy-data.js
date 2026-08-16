@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-15",
+ "generated": "2026-08-16",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -1383,6 +1383,204 @@ window.MEDKOS_ANATOMY = {
      "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
      "page": null,
      "section": "다리 — 발등의 근육과 힘줄 (업로드 스캔 D p22 · 영상 01:18)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0068",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "anterior-neck",
+   "examPhase": "tagging-1",
+   "stem": "목의 얕은근막에서 피부신경을 노출한 해부 사진에서, 목빗근을 가로질러 앞쪽으로 달리며 번호핀 ①(▲)이 가리키는 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "가로목신경 (transverse cervical nerve)",
+   "explanation": "가로목신경은 목신경얼기(C2–C3)의 피부가지로, 목빗근 뒤모서리 중간(**신경점, Erb point**)에서 나와 목빗근을 가로질러 앞으로 달리며 앞목삼각의 피부 감각을 담당한다. 같은 신경점에서 작은뒤통수신경(C2)·큰귓바퀴신경(C2–3)·빗장위신경(C3–4)이 함께 나와 **목의 피부신경 4형제**를 이룬다. 같은 부위를 지나는 얼굴신경의 목가지와 반드시 갈라야 하는데, **가로목신경은 순수 감각**이고 얼굴신경 목가지는 넓은목근을 움직이는 **운동**이다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 얕은정맥과 피부신경 (업로드 스캔 A p17 · 영상 13:11)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0069",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "anterior-neck",
+   "examPhase": "tagging-1",
+   "stem": "앞목삼각의 경계를 확인하는 해부 사진에서, 번호핀 ①(▲)이 가리키는 — 다른 뼈와 관절을 이루지 않는 U자 뼈 — 의 부위 이름을 말하시오.",
+   "choices": null,
+   "answer": "목뿔뼈 몸통 (body of the hyoid bone)",
+   "explanation": "목뿔뼈는 인체에서 **다른 뼈와 관절을 이루지 않는 유일한 뼈**로, 근육과 인대에만 매달려 있다(붓목뿔인대로 관자뼈 붓돌기에 연결). 몸통과 큰뿔·작은뿔로 이루어지며 C3 높이에 있다. 앞목삼각을 소삼각으로 나누는 두 근육 — **두힘살근**(중간힘줄이 목뿔뼈에 섬유고리로 매임)과 **어깨목뿔근** — 이 모두 목뿔뼈에 붙기 때문에, 목뿔뼈가 앞목삼각 구획의 기준점이 된다. 목뿔위근육이 올리고 목뿔아래근육이 내려 삼킴을 돕는다. 목졸림사에서 골절이 확인되는 법의학적 지표이기도 하다. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 앞목삼각의 경계 (업로드 스캔 A p34 · 영상 01:07)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0070",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "muscular-triangle",
+   "examPhase": "tagging-1",
+   "stem": "근육삼각을 노출한 해부 사진에서 번호핀 ①과 ②가 각각 가리키는 부분의 이름을 말하고, 이 근육이 목의 삼각 구분에서 하는 역할을 답하시오.",
+   "choices": null,
+   "answer": "① 어깨목뿔근의 위힘살 (superior belly of omohyoid) / ② 아래힘살 (inferior belly) — 위힘살은 앞목삼각을 목동맥삼각과 근육삼각으로, 아래힘살은 뒤목삼각을 뒤통수삼각과 빗장위삼각으로 나눈다",
+   "explanation": "어깨목뿔근은 어깨뼈 위모서리에서 일어나 **중간힘줄**로 방향을 바꾸어 목뿔뼈로 올라가는 두힘살 근육이다. 중간힘줄은 빗장뼈·첫째갈비뼈에 붙는 목근막 섬유고리에 매여 있어 각도가 유지된다. 목의 삼각 구분에서 이 근육 하나가 앞·뒤 양쪽을 모두 나눈다 — **위힘살**이 앞목삼각을 목동맥삼각(위)과 근육삼각(아래)으로, **아래힘살**이 뒤목삼각을 뒤통수삼각(위)과 빗장위삼각(아래)으로 가른다. 지배는 목신경고리(ansa cervicalis, C1–C3)이며 목뿔뼈를 내리고 고정한다. 앞목삼각을 나누는 다른 근육인 두힘살근과 함께 **둘 다 목뿔뼈에 붙는다**는 것이 암기 고리. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 근육삼각 (업로드 스캔 A p42 · 영상 05:07)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0071",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "carotid-triangle",
+   "examPhase": "tagging-1",
+   "stem": "목동맥삼각을 열어 바깥목동맥의 가지를 노출한 해부 사진에서, 갈림 직후 앞아래로 나오며 번호핀 ①(▲)이 가리키는 동맥의 이름을 말하시오.",
+   "choices": null,
+   "answer": "위갑상동맥 (superior thyroid artery)",
+   "explanation": "위갑상동맥은 바깥목동맥이 온목동맥에서 갈라진 **직후 첫 번째로 내는 앞가지**로, 앞아래로 내려가 방패샘 위극에 분포하고 위후두동맥을 낸다. 바깥목동맥의 가지는 앞(위갑상·혀·얼굴) · 뒤(뒤통수·뒤귓바퀴) · 안쪽(오름인두) · 종말(위턱·얕은관자)로 나눠 외운다. 방패샘 수술에서 위갑상동맥을 결찰할 때는 **위후두신경 바깥가지**가 함께 지나가므로 샘 피막에 가깝게 묶어야 하고, 손상되면 반지방패근이 마비되어 고음이 안 난다(성악가에게 치명적). 아래쪽 짝인 아래갑상동맥은 되돌이후두신경과 얽힌다. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 목동맥삼각 (업로드 스캔 B p8 · 영상 15:08)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0072",
+   "style": "spotter",
+   "region": "neck",
+   "subregion": "submandibular-triangle",
+   "examPhase": "tagging-1",
+   "stem": "턱밑삼각의 깊은부분을 노출한 해부 사진에서, 위갑상동맥에서 갈라져 방패목뿔막을 뚫고 후두로 들어가며 번호핀 ①(▲)이 가리키는 동맥의 이름을 말하시오.",
+   "choices": null,
+   "answer": "위후두동맥 (superior laryngeal artery)",
+   "explanation": "위후두동맥은 **위갑상동맥의 가지**로, 위후두신경의 속가지와 함께 **방패목뿔막(thyrohyoid membrane)을 뚫고** 후두안으로 들어가 성대주름 위쪽 후두 점막과 근육에 분포한다. 짝이 되는 아래후두동맥은 아래갑상동맥(갑상목동맥 가지)에서 나와 되돌이후두신경과 동행한다. 임상 연결이 두 갈래다 — ① 이 동맥과 함께 막을 뚫는 **위후두신경 속가지**는 성대문 위 감각을 담당해 후두마취의 표적이고, ② 아래쪽 짝인 되돌이후두신경은 아래갑상동맥과 얽혀 방패샘 수술의 대표 손상 신경이다. **동맥과 신경이 짝지어 다닌다**는 원칙으로 위·아래를 함께 외운다. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "목 — 턱밑삼각의 깊은부분 (업로드 스캔 B p27 · 영상 24:04)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0073",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "anterior-thigh",
+   "examPhase": "tagging-1",
+   "stem": "넓적다리 앞안쪽의 얕은근막을 벗긴 해부 사진에서, 넓적다리 안쪽 피부로 나오며 번호핀 ①(▲)이 가리키는 신경 가지의 이름을 말하시오.",
+   "choices": null,
+   "answer": "폐쇄신경의 앞피부가지 (anterior cutaneous branch of the obturator nerve)",
+   "explanation": "폐쇄신경(L2–L4)은 폐쇄구멍의 폐쇄관을 지나 넓적다리 안쪽칸으로 들어가 앞가지·뒤가지로 갈리는데, **앞가지가 모음근을 지배하고 나서 피부가지를 내어 넓적다리 안쪽 중간부위 피부**를 담당한다. 넓적다리 앞·안쪽의 피부는 세 계통이 나눠 맡는다 — 가쪽은 가쪽넙다리피부신경(L2–3), 앞은 넙다리신경의 앞피부가지, 안쪽은 **폐쇄신경 앞피부가지**와 두렁신경. 임상에서 중요한 이유는 **연관통**이다: 엉덩관절은 폐쇄신경의 관절가지를 받으므로 고관절 병변이 **무릎 안쪽 통증**으로 나타날 수 있다(소아 대퇴골두 골단분리증에서 전형적). 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "다리 — 다리 앞쪽 피부신경 (업로드 스캔 B p40 · 영상 11:01)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0074",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "femoral-triangle",
+   "examPhase": "tagging-1",
+   "stem": "넙다리혈관집을 열어 그 안쪽 칸을 노출한 해부 사진에서, 번호핀 ①(▲)이 가리키는 — 넙다리탈장이 빠져나오는 입구 — 의 이름을 말하시오.",
+   "choices": null,
+   "answer": "넙다리관구멍 (femoral ring)",
+   "explanation": "넙다리혈관집은 세 칸으로 나뉜다 — 가쪽에 넙다리동맥, 가운데에 넙다리정맥, **안쪽에 넙다리관**(깊은샅고랑림프절과 지방이 든 빈 공간)이다. 넙다리관의 위쪽 입구가 **넙다리관구멍**이고, 경계는 앞 고샅인대 · 안쪽 **오목인대(lacunar ligament)** · 가쪽 넙다리정맥 · 뒤 두덩뼈빗인대다. 넙다리탈장은 이 구멍으로 내려와 두렁정맥구멍으로 튀어나오며 **여성에서 골반이 넓어 더 흔하다**. 경계가 단단한 인대로 둘러싸여 좁기 때문에 **감돈·목졸림 위험이 샅굴탈장보다 훨씬 높아** 응급수술 적응이 된다. 감별점: 넙다리탈장은 두덩뼈결절의 **가쪽아래**, 샅굴탈장은 **안쪽위**에서 만져진다. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "다리 — 넙다리삼각 / 넙다리혈관집 (업로드 스캔 C p6 · 영상 08:17)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0075",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "adductor-canal",
+   "examPhase": "tagging-1",
+   "stem": "모음근굴을 열어 그 내용물을 노출한 해부 사진에서, 넙다리동맥과 함께 굴을 지나다가 동맥과 헤어지는 — 번호핀 ①(▲)이 가리키는 — 신경의 이름을 말하시오.",
+   "choices": null,
+   "answer": "두렁신경 (saphenous nerve)",
+   "explanation": "두렁신경은 **넙다리신경의 가장 긴 가지이자 순수 감각신경**으로, 모음근굴에서 넙다리동·정맥과 함께 내려가다가 굴의 끝에서 혈관과 헤어진다 — **혈관은 모음근구멍을 지나 뒤로(오금동맥이 됨)** 가고, **신경은 넙다리빗근과 두덩정강근 사이로 나와 앞안쪽으로** 계속 내려간다. 이후 큰두렁정맥과 나란히 종아리·발 안쪽 피부를 담당한다. 모음근굴의 지붕은 넓은근모음근막이고 내용물은 넙다리동·정맥 + 두렁신경 + 안쪽넓은근신경이다. 임상: 무릎 수술 후 통증조절에 쓰는 **adductor canal block**이 이 신경을 겨냥하며, 넙다리신경차단과 달리 넙다리네갈래근 근력을 보존해 조기보행이 가능하다. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "다리 — 모음근굴 (업로드 스캔 C p29 · 영상 23:04)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0076",
+   "style": "spotter",
+   "region": "lower-limb",
+   "subregion": "medial-thigh",
+   "examPhase": "tagging-1",
+   "stem": "넓적다리 안쪽칸에서 짧은모음근을 기준으로 신경을 노출한 해부 사진에서, 짧은모음근의 앞면을 지나며 번호핀 ①(▲)이 가리키는 신경 가지의 이름을 말하시오.",
+   "choices": null,
+   "answer": "폐쇄신경의 앞가지 (anterior branch of the obturator nerve)",
+   "explanation": "폐쇄신경은 폐쇄관을 나오면서 **짧은모음근을 사이에 두고** 앞가지와 뒤가지로 갈린다 — **앞가지는 짧은모음근의 앞면**, 뒤가지는 뒷면을 지난다. 이것이 층을 가르는 결정적 지표다. 앞가지는 긴모음근·두덩정강근·짧은모음근을 지배하고 피부가지를 내어 넓적다리 안쪽 피부를 담당하며, 뒤가지는 바깥폐쇄근·큰모음근의 모음부분을 지배한다. 큰모음근의 **정강부분은 정강신경** 지배라 큰모음근만 두 신경을 받는다. 두덩근은 넙다리신경이 주로 지배하되 폐쇄신경 가지를 함께 받는 변이가 흔해 이중지배의 예로 자주 나온다. 원본 영상 라벨 실측 확인.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 실습6 스캔 178장(4분할 PDF)",
+     "page": null,
+     "section": "다리 — 넓적다리 안쪽칸 / 짧은모음근 (업로드 스캔 C p36 · 영상 29:29)"
     }
    ]
   },

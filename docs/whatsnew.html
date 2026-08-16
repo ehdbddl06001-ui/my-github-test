@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MedKOS 새 자료 · 날짜순</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html">🧠 퀴즈</a>
+  <a href="papers.html">📄 논문</a>
+  <a href="ailab.html">🤖 AI랩</a>
+  <a href="anatomy.html">🫀 해부학</a>
+  <a href="whatsnew.html" class="active">🆕 새 자료</a>
+  <a href="search.html">🔍 검색</a>
+</nav>
+
+<header>
+  <h1>새 자료 <span id="newBadge" class="wn-badge" hidden></span></h1>
+  <p class="sub">만든 날짜(<code>frontmatter.date</code>) 최신순. 마지막으로 확인한 시점 이후에 생긴 것은 <b>NEW</b> 로 표시됩니다. 이 페이지는 <code>search-index.js</code>(= <code>content/</code>에서 생성)만 읽으므로 항상 저장소 최신 상태와 같습니다.</p>
+</header>
+
+<section class="card">
+  <div class="filters">
+    <select id="typeFilter"><option value="__ALL__">전체 타입</option></select>
+    <select id="rangeFilter">
+      <option value="14">최근 14일</option>
+      <option value="30">최근 30일</option>
+      <option value="90">최근 90일</option>
+      <option value="0">전체</option>
+    </select>
+    <input type="search" id="q" placeholder="제목·태그로 좁히기" />
+    <button id="markSeen" type="button" class="wn-btn">여기까지 봤음</button>
+  </div>
+  <p id="count" class="muted"></p>
+</section>
+
+<section id="timeline"></section>
+
+<footer class="muted" style="margin:28px 0 40px">
+  <span id="meta"></span>
+</footer>
+
+<script src="search-index.js"></script>
+<script src="whatsnew-app.js"></script>
+</body>
+</html>

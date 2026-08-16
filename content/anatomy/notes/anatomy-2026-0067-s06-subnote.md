@@ -12,7 +12,7 @@ quiz_per_page: 2
 answers_per_page: 3
 cover_lines:
   - "범위  목의 삼각(앞 4·뒤 2) / 다리 얕은층 / 넓적다리 앞칸·안쪽칸 / 종아리 앞칸 / 발등"
-  - "구성  ① 목삼각 ② 목혈관신경집·목신경얼기 ③ 넙다리삼각 ④ 앞·안쪽칸 ⑤ 종아리 앞·발등 ⑥ 실사 6문항"
+  - "구성  ① 목삼각 ② 목혈관신경집·목신경얼기 ③ 넙다리삼각 ④ 앞·안쪽칸 ⑤ 종아리 앞·발등 ⑥ 실사 15문항"
   - "근거  과거 학기 '실습6' 스캔 178장 — 회차 배정은 교수명이 아니라 **부위 기준**"
   - "과제  목삼각 그림 그려 설명 / 온목동맥 박동 촉진 / 넙다리동맥 채혈·더듬자 삽입 이유"
 date: 2026-08-15
@@ -29,10 +29,19 @@ source_refs:
   - {source_file_id: "upload-2026-08-15-s06", source_file_name: "과거 학기 실습6 스캔 178장(4분할 PDF)", page: null, section: "Neck — Triangle of neck (superficial·deep) / Lower limb — Superficial·Anterior & medial thigh·Leg·Foot", note: "배정 근거: anatomy_schedule.session_for_region — 부위(실습주제) 기준으로 2026-09-03 6회차. 스캔 표지의 담당교수·날짜는 과거 학기 값이라 배정에 쓰지 않음"}
 scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0061.md", quiz_image: ".private/anatomy/render/uploads-s06/A010_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/A010_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0068.md", quiz_image: ".private/anatomy/render/uploads-s06/A017_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/A017_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0069.md", quiz_image: ".private/anatomy/render/uploads-s06/A034_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/A034_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0070.md", quiz_image: ".private/anatomy/render/uploads-s06/A042_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/A042_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0062.md", quiz_image: ".private/anatomy/render/uploads-s06/A039_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/A039_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0063.md", quiz_image: ".private/anatomy/render/uploads-s06/B004_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/B004_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0071.md", quiz_image: ".private/anatomy/render/uploads-s06/B008_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/B008_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0064.md", quiz_image: ".private/anatomy/render/uploads-s06/B012_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/B012_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0072.md", quiz_image: ".private/anatomy/render/uploads-s06/B027_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/B027_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0073.md", quiz_image: ".private/anatomy/render/uploads-s06/B040_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/B040_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0074.md", quiz_image: ".private/anatomy/render/uploads-s06/C006_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/C006_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0065.md", quiz_image: ".private/anatomy/render/uploads-s06/C009_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/C009_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0075.md", quiz_image: ".private/anatomy/render/uploads-s06/C029_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/C029_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0076.md", quiz_image: ".private/anatomy/render/uploads-s06/C036_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/C036_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0066.md", quiz_image: ".private/anatomy/render/uploads-s06/D022_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/D022_clean.png"}
 tags: [서브노트, 6회차, 목삼각, 넙다리삼각, 표, 예습시험, 태깅]
 ---
