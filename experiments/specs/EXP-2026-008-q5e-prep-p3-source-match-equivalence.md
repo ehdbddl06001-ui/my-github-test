@@ -481,7 +481,7 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
-**D33 (2026-08-16) — the candidate adapter is corrected from the observed
+**D34 (2026-08-16) — the candidate adapter is corrected from the observed
 decisions.  Implementation only; execution closed.**  The three findings of
 run `20260816T192351` are now the adapter's rule.  Written from that bundle,
 not from prose — which is what produced the first version and what P3 was
@@ -538,6 +538,101 @@ approval that produced `20260816T192351` does not carry over.  Agreement on a
 synthetic producer is not equivalence: only a run against the digest-verified
 `data.py` decides that.  If that run is not 6/6, or stops, no
 `SOURCE_MATCH_ORACLE_RECORD` is created.
+
+**D33 (2026-08-16) — `EXECUTED_NOTEBOOK_NOT_PRESERVED` for run
+`20260816T192351`.  The bundle is the evidence; the manifest anchor moves to
+the registered record.**  The Colab session that produced `20260816T192351` was
+closed without saving, so no executed copy of
+`notebooks/quest58_q5e_prep_p3_source_match_equivalence.ipynb` exists for that
+run.  This is recorded rather than repaired.
+
+**What was checked, and how the absence was established.**  Three independent
+places, all read-only: `notebooks/executed/` in this repository holds only
+`…_20260816T161639.ipynb`; a Drive search for `quest58` returns no file for
+this stamp; and the run folder `1dBAwnVJVws6HnEa8z4mUfZ-bkMDCcUSE` holds
+exactly the nine contract files (seven payload files, `manifest.json`,
+`COMMITTED.json`) and nothing else.  The notebook was not misplaced — it was
+never written.
+
+**What is not done about it.**  The executed notebook is **not** restored and
+**not** reconstructed, and no file is added to `notebooks/executed/` as if it
+had been executed.  The measured results of `20260816T192351` are **not**
+re-derived, re-computed, or re-stated from anything other than the bundle
+already in Drive.  P3 is **not** re-run: an executed artefact produced today
+would be a different run with a different stamp, not a recovery of this one,
+and re-running is in any case barred while the approval is closed.  D32's
+verdict stands exactly as recorded — `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3 of
+6 re-derived, all three mismatches qualified, `SOURCE_MATCH_ORACLE_RECORD`
+still `None`.
+
+**Primary evidence is the committed Drive bundle.**  The seven payload files
+are intact and are what every claim about this run rests on; the per-fixture
+`difference` records live in `fixture_results.json` there.  The payload fold
+`eb8eb085…` binds those seven to each other, so the bundle remains internally
+verifiable without the notebook.
+
+**The manifest anchor: `manifest_anchor_source = registered_record`.**  The
+bundle contract deliberately keeps `manifest.json` out of the fold it records,
+so the manifest's own SHA-256 must be pinned from outside the bundle.  The
+intended anchor was `ANCHOR_SAVED_NOTEBOOK` — the saved output of the
+notebook's report cell — and that anchor is gone with the notebook.  The anchor
+used instead is `ANCHOR_REGISTERED_RECORD`: the full manifest digest
+`05dfeac05087c182aaedf02d69f5d0d80bc851f4759d6c28669f5e2cf78b540a`, registered
+in PR #164 (merge commit `b60a668`) in the `run-p3-result-2` row of
+`research/ASSETS.md` and in D32 above.
+
+**The re-hash, read-only.**  `manifest.json` (file id
+`1uqQM30cYbq7Eyf34S2a93V7ZJ-Wmv1V6`) was fetched from Drive under
+`drive.readonly` and hashed without being modified, moved, or rewritten: 2,195
+bytes, SHA-256
+`05dfeac05087c182aaedf02d69f5d0d80bc851f4759d6c28669f5e2cf78b540a`.  That is a
+byte-for-byte match with the registered digest.  Nothing in Drive was written
+by this check.
+
+**Why this is an external anchor and not a forgery.**  The distinction is
+*when the anchor was fixed relative to what it constrains*.  The digest was
+committed to this repository in PR #164, before the notebook's absence was
+known and with no ability to influence the manifest it names; today's re-hash
+only tests the manifest against that pre-existing record and could have failed.
+A reconstructed notebook would be the opposite — an artefact written after the
+fact, by the party it exonerates, carrying whatever digest was wanted.  This
+entry therefore claims exactly one thing: the manifest now in Drive is the same
+manifest that was registered.  It does not claim, and must not be read as
+claiming, that a saved same-run notebook exists or that the loss was repaired.
+The anchor is weaker than `ANCHOR_SAVED_NOTEBOOK` — it is one step further from
+the run — and it is labelled as such wherever it is used.
+
+**Boundaries.**  No code, fixture, adapter, notebook, execution approval record
+or Drive file is changed by this entry; it is documentation only.  The
+operational lesson — save the executed notebook before closing the session, and
+treat `ANCHOR_SAVED_NOTEBOOK` as a step of the run rather than a courtesy —
+applies to the next run, which is a fresh run under a fresh approval.
+
+**ACCEPTED (owner ruling, 2026-08-16, merged as #166).**  `20260816T192351` is
+accepted as the confirmed result **without a re-run**, on five grounds: the P3
+contract already admits `registered_record` as a legitimate external anchor;
+the full manifest digest was registered in #164 *before* the loss was known;
+the read-only re-hash matches that registration exactly; every scientific value
+lives in the nine-file Drive bundle, and no measured quantity existed only in
+the notebook; and the executed notebook is a copy of screen output, not the
+sole origin of the computation.  The decisive point is the last one — **a
+re-run would not recover the lost notebook, it would only add one more run** —
+so re-running has no evidentiary relationship to the thing that went missing.
+
+Evidence level, as accepted:
+
+| item | standing |
+|---|---|
+| D32 scientific verdict | **held** |
+| `3/6` and the three mismatches | **confirmed** |
+| Drive bundle | primary evidence |
+| manifest anchor | `ANCHOR_REGISTERED_RECORD` |
+| saved-notebook evidence | **recorded as absent** |
+| overall confidence | one step weaker than before, and sufficient to accept |
+
+This ruling settles the *past* run only.  The next execution is not a recovery
+of it: it exists to test whether the **corrected adapter** (D34) is 6/6 against
+the registered source, under a fresh approval and fresh identities.
 
 **D32 (2026-08-16) — RE-RUN UNDER THE CORRECTED HARNESS.  3 of 6 re-qualified;
 all three mismatches now qualified, including the non-AAMI one.**  Run
@@ -862,17 +957,18 @@ transcribed from prose, appears to differ from the registered source on two
 decisions.  It becomes a finding when the run completes on all six fixtures,
 and the adapter is not touched here.
 
-> **Superseded — read this paragraph as history.**  The "4 of 6" above is a
-> **synthetic rehearsal**, measured against `SOURCE_RULE_PRODUCER`, a replica
-> written in this repository that did **not yet model the pre-match AAMI
-> filter**.  It was never a measurement of the registered source and it is not
-> a P3 result.  The confirmed result is **D32**: run `20260816T192351`, **3 of
-> 6**, with **three** qualified mismatches —
-> `nearest_already_used_falls_through`,
-> `non_aami_symbol_consumes_its_match` and
-> `annotation_order_differing_from_sample_order`.  D24's `keep = [… if
-> AAMI.get(s) in C2I]` is the filter this replica was missing; with it added
-> (`FILTERING_SOURCE_PRODUCER`, D30) the replica reaches the same 3-of-6 shape.
+> **Historical — this paragraph is a synthetic rehearsal, not a P3 result.**
+> The "4 of 6 agree, and the two that disagree are …" above was measured on
+> **`SOURCE_RULE_PRODUCER`**, a synthetic producer written to the rule three
+> partial traces had pinned at the time.  It was never a comparison against the
+> registered `data.py`, and it is not a count of anything the registered source
+> did.  It is left in place because D27 is a record of what was known on
+> 2026-08-16 before any differential completed.  The measured P3 result is
+> **D32**: 3 of 6 agree, and **three** fixtures disagree — the two named here
+> plus `test_source_match_non_aami_symbol_consumes_its_match`, whose source
+> detail was only qualified once the filtered annotation index space was read
+> correctly (D30, D32).  Read this paragraph for history; read D32 for the
+> verdict.
 
 Regressions: `test_a_class_code_settles_what_a_symbol_never_taught` and
 `test_the_registered_rule_is_reported_rather_than_stopping_the_run`.  Suite:
