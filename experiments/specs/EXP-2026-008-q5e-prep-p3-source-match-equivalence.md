@@ -804,6 +804,18 @@ transcribed from prose, appears to differ from the registered source on two
 decisions.  It becomes a finding when the run completes on all six fixtures,
 and the adapter is not touched here.
 
+> **Superseded — read this paragraph as history.**  The "4 of 6" above is a
+> **synthetic rehearsal**, measured against `SOURCE_RULE_PRODUCER`, a replica
+> written in this repository that did **not yet model the pre-match AAMI
+> filter**.  It was never a measurement of the registered source and it is not
+> a P3 result.  The confirmed result is **D32**: run `20260816T192351`, **3 of
+> 6**, with **three** qualified mismatches —
+> `nearest_already_used_falls_through`,
+> `non_aami_symbol_consumes_its_match` and
+> `annotation_order_differing_from_sample_order`.  D24's `keep = [… if
+> AAMI.get(s) in C2I]` is the filter this replica was missing; with it added
+> (`FILTERING_SOURCE_PRODUCER`, D30) the replica reaches the same 3-of-6 shape.
+
 Regressions: `test_a_class_code_settles_what_a_symbol_never_taught` and
 `test_the_registered_rule_is_reported_rather_than_stopping_the_run`.  Suite:
 113 functions, 1,174 assertions.  Bundle `a8826fd4…` / manifest `28f162aa…` at
