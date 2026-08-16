@@ -481,6 +481,89 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D30 (2026-08-16) — Codex review: D21 accepted, the verdict accepted, and a
+blocker in the non-AAMI fixture's source projection.**
+
+*Acceptance boundary, as recorded by the reviewer:*
+
+| marker | state |
+|---|---|
+| `D21_ACCEPTED` | filler-beat design accepted — outside tolerance of every decision peak/annotation, one annotation per filler, inside the boundary, appended after the decisions, identical and identically ordered on both sides, and the six one-decision mutation isolations still hold |
+| `P3_BUNDLE_AUTHENTIC` | run `20260816T161639`, folder `1bMZekLtAvqPe2-9oTd4YtPy_WTCLF0EQ`, fold `fa4cfe6c…`, manifest `dd637818…` |
+| `P3_EQUIVALENCE_REQUIRED_ACCEPTED` | `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3/6 equal, harness stop False, coverage True, stub invariance 6/6 |
+| `NON_AAMI_FIXTURE_DETAIL_UNQUALIFIED_PENDING_PROJECTION_FIX` | the non-AAMI fixture's **source detail** is not qualified until a re-run |
+| `SOURCE_MATCH_ORACLE_RECORD` | `None`, unchanged |
+| adapter | 0 changes |
+
+**The blocker.**  The registered `build_record()` filters before it matches:
+
+```python
+keep = [(p, AAMI[s]) for p, s in zip(ann_sample, ann_symbol)
+        if AAMI.get(s) in C2I]
+```
+
+so `'+'` cannot appear as a matched or kept annotation on the source side — it
+is gone before matching starts.  The published `fixture_results.json`
+nonetheless mapped source peak 1000 to original ordinal 0, the `'+'`.  The
+cause is exactly as the reviewer read it: the producer's `j` is a position in
+the **filtered** list, and the projection read it as a position in the
+reader's.
+
+```
+original annotations : [+, N, A, L, …]
+filtered tpk         : [   N, A, L, …]
+j = 0, source meaning:     N              (original ordinal 1)
+j = 0, as published  : +                  (original ordinal 0)  ← wrong space
+```
+
+**The fix, narrow and mechanical.**  `annotation_index_spaces()` reads the
+producer's own annotation list out of the trace — a flat list of samples, or a
+list of `[sample, …]` rows, every member of which is an annotation sample of
+this fixture — and turns it into a space by **exact sample equality**: position
+→ sample → original ordinal.  Nothing re-derives the matching rule, the
+tolerance or the AAMI map; the producer applied those already and this reads
+what it was left holding.  A list the producer built that is not the reader's
+is the evidence that it works in another space; **two** such lists that
+disagree, or one that repeats a sample, are evidence of nothing and stop the
+run at `P3_ANNOTATION_INDEX_SPACE_UNREADABLE` rather than being chosen
+between.  Where a producer filtered nothing the space is the reader's own list
+and the readings are exactly what they were.
+
+**The local replica now reproduces the run exactly.**  With the filter added,
+`FILTERING_SOURCE_PRODUCER` gives 3/6 and the same three fixtures — which it
+did not before, and which is the first time this repo can rehearse the
+registered behaviour end to end.
+
+**What is qualified and what is not.**  The two settled disagreements —
+`nearest_already_used_falls_through` (source drops a peak whose nearest is
+consumed, and does not consume the annotation either) and
+`annotation_order_differing_from_sample_order` (list order, not sample order) —
+are unchanged by this fix and a regression pins them.  The top-level verdict
+rests on those two and stands.  The non-AAMI fixture's exact source behaviour
+is **not promoted** here: it is re-derived only by a re-run.
+
+Regressions (7, as specified): the filtered index resolving to ordinal 1 and
+never to 0; the mapping holding when list order is not sample order; two
+disagreeing spaces and a repeated sample each stopping; a producer that filters
+everything keeping nothing and reporting it as a disagreement rather than a
+stop; the two settled disagreements unchanged; fixtures, filler, adapter
+fingerprint and tolerance unchanged; and the mutation — resolving without the
+space — landing on ordinal 0, the `'+'`.  Suite: 121 functions, 1,224
+assertions.
+
+**Approval.**  Closed.  `oracle_harness_sha256` is now
+`4127809f323eb2bf793065e85781eff0edb4f1f828dbfe04ac784df24b832a67`; the
+approval that produced `20260816T161639` was given for the harness that had the
+defect and does not carry over.  This change performs no Drive access, no
+execution, no bundle write, no adapter edit and no registration.  Review →
+merge → fresh execution-enable approval → all six fixtures from the first →
+*then* an adapter-correction PR designed from that result.
+
+*Housekeeping:* the executed notebook had been saved from Colab over the
+committed unexecuted one.  The executed copy now lives at
+`notebooks/executed/quest58_q5e_prep_p3_source_match_equivalence_20260816T161639.ipynb`
+and the committed notebook is unexecuted again, as its contract requires.
+
 **D29 (2026-08-16) — THE DIFFERENTIAL COMPLETED.  Verdict:
 `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3 of 6 fixtures equal.**  Run
 `20260816T161639` ran all six registered fixtures against the digest-verified
