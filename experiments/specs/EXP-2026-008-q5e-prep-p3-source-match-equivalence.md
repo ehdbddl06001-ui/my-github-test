@@ -481,6 +481,30 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D31 (2026-08-16) — `P3_IMPLEMENTATION_ACCEPTED`; execution re-enabled for
+harness `4127809f…` at merge commit `ee3841f`.**  Codex accepted the corrected
+projection — `annotation_index_spaces()` and the filtered-position to
+original-ordinal mapping, the stop on duplicate or conflicting spaces, the
+approval closure, the harness-digest binding and the notebook separation — and
+the documentation boundary of D30 as restated.  PR #162 is merged at
+`ee3841f17ef5eea879c2a75bdf7ceaf5963348ec`, and the harness at that commit is
+`4127809f323eb2bf793065e85781eff0edb4f1f828dbfe04ac784df24b832a67`, which is
+the digest this approval names.
+
+The record carries the grant **and what the grant may not be used to confirm**:
+`not_yet_qualified` states that the 3-of-6 count and the non-AAMI fixture's
+source detail from run `20260816T161639` are not results of this harness.  They
+are re-derived by the re-run this approval opens, and until that run completes
+the equivalence verdict rests on the two qualified mismatches alone.
+`OPEN_REGISTERED_DATA` stays `False`; the notebook opts in at its call site.
+
+The re-run is all six fixtures from the first, under this harness, with a fresh
+bundle.  What it decides: the exact number of agreeing fixtures, and the
+registered source's actual behaviour on the non-AAMI fixture now that a
+filtered index is read in the space the producer built it in.  What it does not
+decide: anything about the adapter's correction, which is a separate PR
+designed **after** that result.
+
 **D30 (2026-08-16) — Codex review: D21 accepted, the verdict accepted, and a
 blocker in the non-AAMI fixture's source projection.**
 
