@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1179" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="얼굴·가슴벽의 동맥과 정맥 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 4회차 §얼굴동맥·얕은관자동맥 · 큰가슴근부위 · 가슴벽 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="1179" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">얼굴·가슴벽의 동맥과 정맥<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> arteries &amp; veins of face and thoracic wall</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">4회차 · 바깥목동맥 계열과 겨드랑·속가슴·가슴대동맥 계열을 한 장에</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,192 H 615 V 114 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,192 H 615 V 167 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,192 H 615 V 220 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,192 H 615 V 278 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,394 H 615 V 342 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,394 H 615 V 401 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,394 H 615 V 454 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,537 H 615 V 512 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,537 H 615 V 571 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,364 H 419 V 192 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,364 H 419 V 394 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,364 H 419 V 537 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,630 H 615 V 630 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,721 H 615 V 694 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,721 H 615 V 758 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,673 H 419 V 630 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,673 H 419 V 721 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,857 H 615 V 827 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,857 H 615 V 896 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,980 H 615 V 955 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,980 H 615 V 1014 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,1073 H 615 V 1078 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,964 H 419 V 857 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,964 H 419 V 980 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,964 H 419 V 1073 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,642 H 219 V 364 H 232" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 206,642 H 219 V 673 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,642 H 219 V 964 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="622" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="642" fill="#7fd4a8" font-size="12" class="kr">얼굴·가슴벽의 혈관</text>
+  <rect x="232" y="337" width="174" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="242" y="357" fill="#e0645f" font-size="12" class="kr">바깥목동맥 ★</text>
+  <text x="242" y="372" fill="#c98a86" font-size="9">external carotid a.</text>
+  <text x="242" y="383" fill="#6f8299" font-size="9">방패연골 위모서리(C4)에서 갈린 뒤</text>
+  <rect x="232" y="646" width="174" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="666" fill="#b49ae0" font-size="12" class="kr">얼굴의 정맥 ★</text>
+  <text x="242" y="680" fill="#8f79b8" font-size="9">veins of the face</text>
+  <text x="242" y="692" fill="#6f8299" font-size="9">판막 없음</text>
+  <rect x="232" y="942" width="174" height="44" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="962" fill="#7fd4a8" font-size="12" class="kr">가슴벽의 혈관</text>
+  <text x="242" y="977" fill="#5fae87" font-size="9">vessels of the thoracic wall</text>
+  <rect x="432" y="159" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="179" fill="#e0645f" font-size="12" class="kr">얼굴동맥 ★</text>
+  <text x="442" y="194" fill="#c98a86" font-size="9">facial a.</text>
+  <text x="442" y="205" fill="#6f8299" font-size="9">깨물근 앞모서리에서 <tspan fill="#e6edf3" font-weight="700">아래턱뼈를</tspan></text>
+  <text x="442" y="216" fill="#6f8299" font-size="9">넘어<tspan fill="#e6edf3" font-weight="700"> 올라온다 · 구불구불</tspan></text>
+  <rect x="432" y="366" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="386" fill="#e0645f" font-size="12" class="kr">얕은관자동맥 ★</text>
+  <text x="442" y="401" fill="#c98a86" font-size="9">superficial temporal a.</text>
+  <text x="442" y="412" fill="#6f8299" font-size="9">귀 앞 박동 촉지점</text>
+  <rect x="432" y="510" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="530" fill="#e0645f" font-size="12" class="kr">위턱동맥</text>
+  <text x="442" y="545" fill="#c98a86" font-size="9">maxillary a.</text>
+  <text x="442" y="556" fill="#6f8299" font-size="9">관자아래우묵으로</text>
+  <rect x="432" y="602" width="170" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="442" y="622" fill="#b49ae0" font-size="12" class="kr">얼굴정맥 ★</text>
+  <text x="442" y="637" fill="#8f79b8" font-size="9">facial v.</text>
+  <text x="442" y="648" fill="#6f8299" font-size="9">동맥 <tspan fill="#e6edf3" font-weight="700">뒤</tspan>를 곧게</text>
+  <rect x="432" y="694" width="170" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="442" y="714" fill="#b49ae0" font-size="12" class="kr">아래턱뒤정맥 ★</text>
+  <text x="442" y="728" fill="#8f79b8" font-size="9">retromandibular v.</text>
+  <text x="442" y="740" fill="#6f8299" font-size="9">얕은관자정맥 + 위턱정맥</text>
+  <rect x="432" y="830" width="170" height="55" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="850" fill="#e0645f" font-size="12" class="kr">겨드랑동맥 ★</text>
+  <text x="442" y="865" fill="#c98a86" font-size="9">axillary a.</text>
+  <text x="442" y="876" fill="#6f8299" font-size="9">작은가슴근이 1·2·3부로 나눈다</text>
+  <rect x="432" y="947" width="170" height="66" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="967" fill="#e0645f" font-size="12" class="kr">속가슴동맥 ★</text>
+  <text x="442" y="982" fill="#c98a86" font-size="9">internal thoracic a.</text>
+  <text x="442" y="993" fill="#6f8299" font-size="9">빗장밑동맥 가지 · 복장뼈 가쪽</text>
+  <text x="442" y="1004" fill="#6f8299" font-size="9">1–2 cm</text>
+  <rect x="432" y="1051" width="170" height="44" rx="7" fill="#40201f" stroke="#7a3a38" stroke-width="1.3"/>
+  <text x="442" y="1071" fill="#e0645f" font-size="12" class="kr">가슴대동맥</text>
+  <text x="442" y="1086" fill="#c98a86" font-size="9">thoracic aorta</text>
+  <rect x="628" y="92" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="112" fill="#e0645f" font-size="12" class="kr">아래입술동맥</text>
+  <text x="638" y="127" fill="#c98a86" font-size="9">inferior labial a.</text>
+  <rect x="628" y="145" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="165" fill="#e0645f" font-size="12" class="kr">위입술동맥</text>
+  <text x="638" y="180" fill="#c98a86" font-size="9">superior labial a.</text>
+  <rect x="628" y="198" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="218" fill="#e0645f" font-size="12" class="kr">가쪽코동맥</text>
+  <text x="638" y="233" fill="#c98a86" font-size="9">lateral nasal a.</text>
+  <rect x="628" y="251" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="271" fill="#e0645f" font-size="12" class="kr">눈구석동맥 ★</text>
+  <text x="638" y="286" fill="#c98a86" font-size="9">angular a.</text>
+  <text x="638" y="297" fill="#6f8299" font-size="9">종말가지 — 눈동맥과 문합</text>
+  <rect x="628" y="315" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="335" fill="#e0645f" font-size="12" class="kr">가로얼굴동맥 ★</text>
+  <text x="638" y="350" fill="#c98a86" font-size="9">transverse facial a.</text>
+  <text x="638" y="361" fill="#6f8299" font-size="9">귀밑샘관 <tspan fill="#e6edf3" font-weight="700">위</tspan>를 가로로</text>
+  <rect x="628" y="379" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="399" fill="#e0645f" font-size="12" class="kr">이마가지</text>
+  <text x="638" y="414" fill="#c98a86" font-size="9">frontal br.</text>
+  <rect x="628" y="432" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="452" fill="#e0645f" font-size="12" class="kr">마루가지</text>
+  <text x="638" y="467" fill="#c98a86" font-size="9">parietal br.</text>
+  <rect x="628" y="485" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="505" fill="#e0645f" font-size="12" class="kr">중간뇌막동맥 ★</text>
+  <text x="638" y="520" fill="#c98a86" font-size="9">middle meningeal a.</text>
+  <text x="638" y="531" fill="#6f8299" font-size="9">경막외혈종</text>
+  <rect x="628" y="549" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="569" fill="#e0645f" font-size="12" class="kr">눈확아래동맥</text>
+  <text x="638" y="584" fill="#c98a86" font-size="9">infraorbital a.</text>
+  <rect x="628" y="602" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="622" fill="#b49ae0" font-size="12" class="kr">온얼굴정맥</text>
+  <text x="638" y="637" fill="#8f79b8" font-size="9">common facial v.</text>
+  <text x="638" y="648" fill="#6f8299" font-size="9">속목정맥으로</text>
+  <rect x="628" y="666" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="686" fill="#b49ae0" font-size="12" class="kr">앞가지</text>
+  <text x="638" y="701" fill="#8f79b8" font-size="9">ant. division</text>
+  <text x="638" y="712" fill="#6f8299" font-size="9">얼굴정맥과 합류</text>
+  <rect x="628" y="730" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="750" fill="#b49ae0" font-size="12" class="kr">뒤가지 ★</text>
+  <text x="638" y="765" fill="#8f79b8" font-size="9">post. division</text>
+  <text x="638" y="776" fill="#6f8299" font-size="9">뒤귓바퀴정맥과 → <tspan fill="#e6edf3" font-weight="700">바깥목정맥</tspan></text>
+  <rect x="628" y="794" width="160" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="814" fill="#e0645f" font-size="12" class="kr">가슴봉우리동맥 ★</text>
+  <text x="638" y="829" fill="#c98a86" font-size="9">thoracoacromial a.</text>
+  <text x="638" y="840" fill="#6f8299" font-size="9">2부 ·</text>
+  <text x="638" y="851" fill="#6f8299" font-size="9">가슴근·봉우리·빗장·어깨세모</text>
+  <rect x="628" y="869" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="889" fill="#e0645f" font-size="12" class="kr">가쪽가슴동맥</text>
+  <text x="638" y="904" fill="#c98a86" font-size="9">lateral thoracic a.</text>
+  <text x="638" y="915" fill="#6f8299" font-size="9">2부 · 앞톱니근·젖샘</text>
+  <rect x="628" y="933" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="953" fill="#e0645f" font-size="12" class="kr">앞갈비사이동맥</text>
+  <text x="638" y="968" fill="#c98a86" font-size="9">ant. intercostal aa.</text>
+  <rect x="628" y="986" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="1006" fill="#e0645f" font-size="12" class="kr">근육가로막·위배벽동맥</text>
+  <text x="638" y="1021" fill="#c98a86" font-size="9">musculophrenic / sup.</text>
+  <text x="638" y="1032" fill="#c98a86" font-size="9">epigastric a.</text>
+  <rect x="628" y="1050" width="160" height="55" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="1070" fill="#e0645f" font-size="12" class="kr">뒤갈비사이동맥 ★</text>
+  <text x="638" y="1085" fill="#c98a86" font-size="9">post. intercostal aa.</text>
+  <text x="638" y="1096" fill="#6f8299" font-size="9">3–11번 · 갈비사이고랑으로</text>
+  <line x1="26" y1="1115" x2="814" y2="1115" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1127" fill="#93a4b7" font-size="10.5">가로얼굴동맥은 <tspan fill="#e6edf3" font-weight="700">얕은관자동맥</tspan> 가지 — 얼굴동맥 가지가 아니다(태깅 단골 함정).</text>
+  <text x="26" y="1145" fill="#93a4b7" font-size="10.5">얼굴정맥은 판막이 없어 눈구석정맥–위눈정맥을 거쳐 <tspan fill="#e6edf3" font-weight="700">해면정맥굴</tspan>과 통한다(위험삼각).</text>
+</svg>

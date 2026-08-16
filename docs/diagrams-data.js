@@ -2,8 +2,8 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-08-16",
- "count": 49,
- "groups": 26,
+ "count": 55,
+ "groups": 29,
  "items": [
   {
    "file": "tree-s01-vessel-labeled.svg",
@@ -268,6 +268,72 @@ window.MEDKOS_DIAGRAMS = {
    "title": "함께 지나는 것",
    "date": "2026-08-16",
    "bytes": 5997
+  },
+  {
+   "file": "tree-s04-vessel-labeled.svg",
+   "base": "tree-s04-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 4,
+   "title": "얼굴·가슴벽의 동맥과 정맥",
+   "date": "2026-08-16",
+   "bytes": 14417
+  },
+  {
+   "file": "tree-s04-vessel-quiz.svg",
+   "base": "tree-s04-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 4,
+   "title": "얼굴·가슴벽의 동맥과 정맥",
+   "date": "2026-08-16",
+   "bytes": 13219
+  },
+  {
+   "file": "tree-s04-nerve-labeled.svg",
+   "base": "tree-s04-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 4,
+   "title": "얼굴의 두 신경",
+   "date": "2026-08-16",
+   "bytes": 11461
+  },
+  {
+   "file": "tree-s04-nerve-quiz.svg",
+   "base": "tree-s04-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 4,
+   "title": "얼굴의 두 신경",
+   "date": "2026-08-16",
+   "bytes": 9549
+  },
+  {
+   "file": "tree-s04-bundle-labeled.svg",
+   "base": "tree-s04-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 4,
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 9053
+  },
+  {
+   "file": "tree-s04-bundle-quiz.svg",
+   "base": "tree-s04-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 4,
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 8024
   },
   {
    "file": "tree-s06-vessel-labeled.svg",

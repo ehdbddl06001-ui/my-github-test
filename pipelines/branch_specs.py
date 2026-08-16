@@ -440,4 +440,144 @@ SPECS: dict[str, dict] = {
             _n("동반 피부정맥", kind="vein", terminal=True)]),
     ]),
 },
+
+# ── 4회차 (2026-08-27) 큰가슴근부위·가슴벽 / 얼굴·귀밑샘·씹기근육 ─────────
+"s04-nerve": {
+    "title": "얼굴의 두 신경 — VII과 V", "en": "facial (VII) & trigeminal (V) nerves",
+    "subtitle": "4회차 · 표정근육은 얼굴신경, 씹기근육과 피부감각은 삼차신경 — 인두굽이가 갈랐다",
+    "kind": "nerve",
+    "source": "4회차 §얼굴신경 · 삼차신경 · 씹기근육 (부위 기준 배정)",
+    "footer": [
+        "얼굴신경은 귀밑샘을 **지나가기만** 한다 — 귀밑샘 분비는 IX → 귀신경절 → 귓바퀴관자신경.",
+        "표정근육=둘째 인두굽이=VII, 씹기근육=첫째 인두굽이=V3 — 근육의 족보가 신경을 정한다.",
+    ],
+    "root": _n("얼굴에 오는 뇌신경", "cranial nn. of the face", children=[
+        _n("얼굴신경 VII", "facial n.", "붓꼭지구멍 → 귀밑샘 속에서 갈림 · **운동**",
+           star=True, children=[
+            _n("뒤귓바퀴신경", "post. auricular n.", "귀밑샘 들어가기 **전**에 갈린다 · 뒤통수힘살",
+               terminal=True),
+            _n("관자가지", "temporal br.", "이마힘살·눈둘레근 위쪽", star=True, terminal=True),
+            _n("광대가지", "zygomatic br.", "눈둘레근 — 각막반사 날개", star=True, terminal=True),
+            _n("볼가지", "buccal br.", "여러 개 · 볼근·입 주위 근육", star=True, terminal=True),
+            _n("턱모서리가지", "marginal mandibular br.", "턱밑샘 수술에서 손상 1순위",
+               star=True, terminal=True),
+            _n("목가지", "cervical br.", "넓은목근 — 감각인 가로목신경과 구분", star=True,
+               terminal=True),
+        ]),
+        _n("삼차신경 V", "trigeminal n.", "얼굴 **피부감각** + 씹기근육 운동", star=True, children=[
+            _n("눈신경 V1", "ophthalmic n.", "위눈확틈새 · 순수 감각", children=[
+                _n("눈확위신경", "supraorbital n.", "눈확위구멍 · 이마·머리덮개 앞",
+                   star=True, terminal=True),
+                _n("도르래위신경", "supratrochlear n.", "그보다 **안쪽**", terminal=True),
+                _n("눈물·코섬모체신경", "lacrimal/nasociliary n.",
+                   "V1↔V2 경계는 **위눈꺼풀 / 아래눈꺼풀**", terminal=True)]),
+            _n("위턱신경 V2", "maxillary n.", "원형구멍 · 순수 감각", star=True, children=[
+                _n("눈확아래신경", "infraorbital n.", "눈확아래구멍 · 뺨·**윗입술**",
+                   star=True, terminal=True),
+                _n("광대얼굴·광대관자가지", "zygomaticofacial/temporal", terminal=True)]),
+            _n("아래턱신경 V3", "mandibular n.", "타원구멍 · **감각+운동**", star=True, children=[
+                _n("귓바퀴관자신경", "auriculotemporal n.", "중간뇌막동맥을 두 뿌리로 감쌈 · "
+                   "귀밑샘 분비섬유를 **얹어 나름**", star=True, terminal=True),
+                _n("턱끝신경", "mental n.", "턱끝구멍 · **아랫입술**·턱", star=True, terminal=True),
+                _n("씹기근육 운동가지", "nn. to muscles of mastication",
+                   "깨물근·깊은관자·날개근신경", star=True, terminal=True)]),
+        ]),
+    ]),
+},
+
+"s04-vessel": {
+    "title": "얼굴·가슴벽의 동맥과 정맥", "en": "arteries & veins of face and thoracic wall",
+    "subtitle": "4회차 · 바깥목동맥 계열과 겨드랑·속가슴·가슴대동맥 계열을 한 장에",
+    "kind": "mixed", "legend_kinds": ["artery", "vein"],
+    "source": "4회차 §얼굴동맥·얕은관자동맥 · 큰가슴근부위 · 가슴벽",
+    "footer": [
+        "가로얼굴동맥은 **얕은관자동맥** 가지 — 얼굴동맥 가지가 아니다(태깅 단골 함정).",
+        "얼굴정맥은 판막이 없어 눈구석정맥–위눈정맥을 거쳐 **해면정맥굴**과 통한다(위험삼각).",
+    ],
+    "root": _n("얼굴·가슴벽의 혈관", children=[
+        _n("바깥목동맥", "external carotid a.", "방패연골 위모서리(C4)에서 갈린 뒤",
+           kind="artery", star=True, children=[
+            _n("얼굴동맥", "facial a.", "깨물근 앞모서리에서 **아래턱뼈를 넘어** 올라온다 · 구불구불",
+               kind="artery", star=True, children=[
+                _n("아래입술동맥", "inferior labial a.", kind="artery", terminal=True),
+                _n("위입술동맥", "superior labial a.", kind="artery", terminal=True),
+                _n("가쪽코동맥", "lateral nasal a.", kind="artery", terminal=True),
+                _n("눈구석동맥", "angular a.", "종말가지 — 눈동맥과 문합", kind="artery",
+                   star=True, terminal=True)]),
+            _n("얕은관자동맥", "superficial temporal a.", "귀 앞 박동 촉지점",
+               kind="artery", star=True, children=[
+                _n("가로얼굴동맥", "transverse facial a.", "귀밑샘관 **위**를 가로로",
+                   kind="artery", star=True, terminal=True),
+                _n("이마가지", "frontal br.", kind="artery", terminal=True),
+                _n("마루가지", "parietal br.", kind="artery", terminal=True)]),
+            _n("위턱동맥", "maxillary a.", "관자아래우묵으로", kind="artery", children=[
+                _n("중간뇌막동맥", "middle meningeal a.", "경막외혈종", kind="artery",
+                   star=True, terminal=True),
+                _n("눈확아래동맥", "infraorbital a.", kind="artery", terminal=True)]),
+        ]),
+        _n("얼굴의 정맥", "veins of the face", "판막 없음", kind="vein", star=True, children=[
+            _n("얼굴정맥", "facial v.", "동맥 **뒤**를 곧게", kind="vein", star=True, children=[
+                _n("온얼굴정맥", "common facial v.", "속목정맥으로", kind="vein", terminal=True)]),
+            _n("아래턱뒤정맥", "retromandibular v.", "얕은관자정맥 + 위턱정맥",
+               kind="vein", star=True, children=[
+                _n("앞가지", "ant. division", "얼굴정맥과 합류", kind="vein", terminal=True),
+                _n("뒤가지", "post. division", "뒤귓바퀴정맥과 → **바깥목정맥**",
+                   kind="vein", star=True, terminal=True)]),
+        ]),
+        _n("가슴벽의 혈관", "vessels of the thoracic wall", children=[
+            _n("겨드랑동맥", "axillary a.", "작은가슴근이 1·2·3부로 나눈다",
+               kind="artery", star=True, children=[
+                _n("가슴봉우리동맥", "thoracoacromial a.", "2부 · 가슴근·봉우리·빗장·어깨세모",
+                   kind="artery", star=True, terminal=True),
+                _n("가쪽가슴동맥", "lateral thoracic a.", "2부 · 앞톱니근·젖샘",
+                   kind="artery", terminal=True)]),
+            _n("속가슴동맥", "internal thoracic a.", "빗장밑동맥 가지 · 복장뼈 가쪽 1–2 cm",
+               kind="artery", star=True, children=[
+                _n("앞갈비사이동맥", "ant. intercostal aa.", kind="artery", terminal=True),
+                _n("근육가로막·위배벽동맥", "musculophrenic / sup. epigastric a.",
+                   kind="artery", terminal=True)]),
+            _n("가슴대동맥", "thoracic aorta", kind="artery", children=[
+                _n("뒤갈비사이동맥", "post. intercostal aa.", "3–11번 · 갈비사이고랑으로",
+                   kind="artery", star=True, terminal=True)]),
+        ]),
+    ]),
+},
+
+"s04-bundle": {
+    "title": "함께 지나는 것 — 귀밑샘·갈비사이", "en": "neurovascular bundles",
+    "subtitle": "4회차 · 귀밑샘은 얕은 것부터 신경–정맥–동맥, 갈비사이고랑은 위부터 정맥–동맥–신경",
+    "kind": "mixed", "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "4회차 §귀밑샘 · 가슴벽 갈비사이 · 세모가슴근고랑",
+    "footer": [
+        "귀밑샘 속 순서 '신–정–동'(얕은→깊은) — 다리오금과 같은 순서로 묶어 외운다.",
+        "갈비사이고랑은 위부터 '정–동–신'(VAN) — 천자는 반드시 갈비뼈 **위모서리**를 따라.",
+    ],
+    "root": _n("네 개의 통로", children=[
+        _n("귀밑샘 속", "within the parotid gland", "얕은 → 깊은", star=True, children=[
+            _n("① 얼굴신경 VII", "facial n.", "가장 얕다 · 샘을 얕은/깊은엽으로 가른다",
+               kind="nerve", star=True, terminal=True),
+            _n("② 아래턱뒤정맥", "retromandibular v.", "중간", kind="vein", terminal=True),
+            _n("③ 바깥목동맥", "external carotid a.", "가장 깊다", kind="artery",
+               star=True, terminal=True)]),
+        _n("갈비사이고랑", "costal groove", "위 → 아래 · VAN", star=True, children=[
+            _n("① 갈비사이정맥", "post. intercostal v.", "가장 **위**", kind="vein",
+               terminal=True),
+            _n("② 갈비사이동맥", "post. intercostal a.", "가운데", kind="artery", terminal=True),
+            _n("③ 갈비사이신경", "intercostal n.", "가장 **아래**·가장 얕다 — 천자 주의",
+               kind="nerve", star=True, terminal=True)]),
+        _n("세모가슴근고랑", "deltopectoral groove", "빗장뼈 아래 삼각", star=True, children=[
+            _n("노쪽피부정맥", "cephalic v.", "겨드랑정맥으로 합류", kind="vein",
+               star=True, terminal=True),
+            _n("어깨세모가지", "deltoid br. of thoracoacromial a.", kind="artery",
+               terminal=True)]),
+        _n("얼굴의 구멍 짝", "foramina of the face", "신경과 동맥이 같은 이름으로 함께",
+           children=[
+            _n("눈확위구멍", "supraorbital foramen", "눈확위신경(V1) + 눈확위동맥",
+               kind="nerve", star=True, terminal=True),
+            _n("눈확아래구멍", "infraorbital foramen", "눈확아래신경(V2) + 눈확아래동맥",
+               kind="nerve", star=True, terminal=True),
+            _n("턱끝구멍", "mental foramen", "턱끝신경(V3) + 턱끝동맥 · 세 구멍은 거의 수직선",
+               kind="nerve", star=True, terminal=True)]),
+    ]),
+},
 }

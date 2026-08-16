@@ -2083,6 +2083,336 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0096",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "얼굴의 얕은근막을 벗겨 표정근육을 드러낸 사진에서, 이마 전체를 덮으며 번호핀 ①이 가리키는 근육(힘살)의 이름을 말하시오.",
+   "choices": null,
+   "answer": "뒤통수이마근의 이마힘살 (frontal belly of occipitofrontalis muscle)",
+   "explanation": "뒤통수이마근은 이마힘살과 뒤통수힘살이 **머리덮개널힘줄(galea aponeurotica)**로 이어진 한 근육이다. 이마힘살은 뼈에 붙지 않고 **눈썹 피부와 눈둘레근에 직접** 붙어, 수축하면 눈썹을 올리고 이마에 가로주름을 만든다. 지배는 얼굴신경(VII)의 **관자가지**다(뒤통수힘살은 뒤귓바퀴신경). 표정근육의 공통 특징 — 뼈에서 일어나 **피부에 정지**하고, 모두 얼굴신경 지배이며, 둘째 인두굽이에서 유래한다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "뒤통수이마근 이마힘살 (F p4)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0097",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "콧등 위를 세로로 달리는 근육에 번호핀 ①이 놓여 있다. 이 근육의 이름과, 수축했을 때 생기는 주름의 방향을 말하시오.",
+   "choices": null,
+   "answer": "눈살근 (procerus) — 미간에 **가로주름**이 생긴다",
+   "explanation": "눈살근은 코뼈·가쪽코연골에서 일어나 미간 피부에 붙는 얇은 세로근이다. 수축하면 미간 피부를 아래로 당겨 **가로주름**을 만든다(찡그림). 바로 옆의 **눈썹주름근**은 눈썹을 안쪽·아래로 모아 **세로주름**을 만들어 방향이 반대다 — 태깅에서 둘을 가르는 기준이 이 주름 방향이다. 이마힘살(가로주름·이마 전체)과도 구분한다. 지배는 얼굴신경 관자가지. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "눈살근 (F p7)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0098",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "눈확 안쪽모서리에서 일어나 코방울과 윗입술 두 곳으로 갈라져 붙는 가늘고 긴 근육에 번호핀 ①이 놓여 있다. 이름을 말하시오.",
+   "choices": null,
+   "answer": "위입술콧방울올림근 (levator labii superioris alaeque nasi)",
+   "explanation": "입 주위 근육 중 **가장 안쪽·가장 위**에서 내려오는 가늘고 긴 근육으로, 위턱뼈 이마돌기에서 일어나 ① 코방울(alae nasi) ② 윗입술 두 갈래로 갈라져 붙는다. 그래서 이름에 'labii superioris'와 'alaeque nasi'가 함께 들어간다. 수축하면 콧구멍을 넓히고 윗입술을 올려 **혐오 표정**을 만든다. 가쪽에 나란한 위입술올림근(코방울로 안 감)·작은광대근과 순서대로 갈라 외운다. 지배는 얼굴신경 **볼가지**. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "위입술콧방울올림근 (F p12)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0099",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "입꼬리 가쪽 약 1 cm 지점에서 여러 표정근육의 섬유가 모여 만드는 단단한 덩어리에 번호핀 ①이 놓여 있다. 이 구조의 이름과, 여기에 모이는 근육을 셋 이상 말하시오.",
+   "choices": null,
+   "answer": "볼굴대 (modiolus) — 입둘레근·입꼬리당김근·입꼬리올림근·입꼬리내림근·큰광대근·볼근 등이 모인다",
+   "explanation": "볼굴대는 입꼬리 가쪽에서 표정근육 섬유가 **교차하며 엮여 만드는 근육섬유 덩어리**로, 만져보면 단단한 결절로 잡힌다. 입둘레근·큰광대근·입꼬리올림근·입꼬리내림근·입꼬리당김근·볼근이 여기로 수렴해, 입꼬리의 방향(웃음·찡그림)이 결정되는 **역학적 중심축**이다. 임상적으로 얼굴신경 볼가지가 마비되면 볼굴대가 반대쪽으로 끌려가 입꼬리가 처지고, 안면 성형·구순열 수술에서 재건의 기준점이 된다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "볼굴대(modiolus) (F p19)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0100",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "볼근 얕은쪽에서 노란 지방덩어리를 젖혀 드러낸 사진에서 번호핀 ①이 가리키는 구조의 이름과, 이 구조가 특히 중요한 시기를 말하시오.",
+   "choices": null,
+   "answer": "볼지방체 (buccal fat pad) — **젖먹이(영아)**의 빨기에서 중요",
+   "explanation": "볼지방체는 볼근 얕은쪽·깨물근 앞모서리에 낀 **캡슐에 싸인 독립 지방덩어리**로, 일반 피하지방과 달리 굶어도 잘 줄지 않는다. 영아에서는 빨 때 볼이 안으로 함몰되지 않게 받쳐 주어 **흡철(sucking) 패드**로 불린다. 실습에서는 이것을 제거해야 그 아래의 볼근·귀밑샘관·얼굴신경 볼가지가 드러난다. 성형에서 얼굴 윤곽 축소를 위해 부분 절제하기도 한다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "볼지방체 (F p28)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0101",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "parotid",
+   "examPhase": "tagging-1",
+   "stem": "귀밑샘 앞모서리에서 나와 광대활 아래를 가로로 달리는 동맥에 번호핀 ①이 놓여 있다. 이 동맥의 이름과 어느 동맥의 가지인지 말하시오.",
+   "choices": null,
+   "answer": "가로얼굴동맥 (transverse facial artery) — **얕은관자동맥**의 가지",
+   "explanation": "가로얼굴동맥은 귀밑샘 **속에서** 얕은관자동맥으로부터 갈라져, 광대활 아래·귀밑샘관 위를 따라 앞으로 가로질러 달린다. 그래서 귀밑샘관과 나란히 달리는 '위-아래 짝'으로 외운다(위: 가로얼굴동맥, 아래: 귀밑샘관). 얼굴 가쪽의 귀밑샘·깨물근·볼 피부에 분포하며, **얼굴동맥(바깥목동맥 가지)과는 다른 혈관**이라는 점이 태깅 함정이다. 얼굴 성형·필러 시술에서 손상 주의 혈관. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "가로얼굴동맥 (F p29)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0102",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "parotid",
+   "examPhase": "tagging-1",
+   "stem": "귀밑샘을 제거해 얼굴신경 가지들을 드러낸 사진이다. 번호핀 ①~⑤가 놓인 가지의 이름을 **위에서 아래 순서로** 각각 말하시오.",
+   "choices": null,
+   "answer": "위에서 아래로 ① 관자가지 ② 광대가지 ③ 볼가지 ④ 턱모서리가지 ⑤ 목가지 (관광볼턱목)",
+   "explanation": "얼굴신경은 붓꼭지구멍으로 나와 귀밑샘 **속에서** 부챗살처럼 다섯 갈래로 갈린다 — 위에서 아래로 **관자·광대·볼·턱모서리·목**(암기: '관광볼턱목'). 이때 얼굴신경은 귀밑샘을 지나가기만 할 뿐 **귀밑샘을 지배하지 않는다**(귀밑샘 분비는 혀인두신경 IX → 귀신경절 → 귓바퀴관자신경). 임상: **턱모서리가지**는 아래턱뼈 아래모서리를 따라 얕게 달려 턱밑샘 수술에서 잘 다치고, 다치면 아래입술이 처져 웃을 때 비대칭이 된다. 볼가지는 여러 개이며 목가지는 넓은목근에 분포한다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "얼굴신경 5가지 분지 (F p33)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0103",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "얼굴동맥과 나란히 달리는 정맥에 번호핀 ①이 놓여 있다. 이 정맥의 이름과, 동맥에 대해 앞·뒤 어느 쪽에 있는지, 그리고 임상적으로 위험한 이유를 말하시오.",
+   "choices": null,
+   "answer": "얼굴정맥 (facial vein) — 얼굴동맥의 **뒤쪽**을 곧게 달린다. 판막이 없어 해면정맥굴로 역류할 수 있다(위험삼각)",
+   "explanation": "얼굴정맥은 눈구석정맥에서 시작해 얼굴동맥의 **뒤(가쪽)** 를 따라 내려가는데, 동맥이 구불구불한 데 비해 정맥은 **비교적 곧게** 달린다는 점이 구분 포인트다. 얼굴정맥에는 **판막이 없고**, 눈구석정맥–위눈정맥을 거쳐 **해면정맥굴**과 통한다. 그래서 코 뿌리~윗입술을 잇는 '**얼굴의 위험삼각**'의 감염이 역류해 해면정맥굴 혈전증을 일으킬 수 있다. 아래에서는 아래턱뒤정맥 앞가지와 합쳐 **온얼굴정맥**이 되어 속목정맥으로 들어간다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "얼굴정맥 (F p37)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0104",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "parotid",
+   "examPhase": "tagging-1",
+   "stem": "얕은관자동맥과 함께 귀 앞을 지나 관자부위로 올라가는 신경에 번호핀 ①이 놓여 있다. 이름과 어느 뇌신경 가지인지, 그리고 어떤 분비기능을 나르는지 말하시오.",
+   "choices": null,
+   "answer": "귓바퀴관자신경 (auriculotemporal nerve) — 삼차신경 **아래턱신경(V3)**의 가지, 귀밑샘 **부교감 분비섬유**를 나른다",
+   "explanation": "귓바퀴관자신경은 V3에서 나와 **중간뇌막동맥을 두 뿌리로 감싼 뒤** 다시 합쳐 턱관절 뒤를 지나 얕은관자동맥과 나란히 올라간다. 감각으로는 귓바퀴 앞부분·바깥귀길·고막·관자부위 피부를 맡고, **혀인두신경(IX) → 작은바위신경 → 귀신경절**에서 온 신경절이후 부교감섬유를 **얹어 날라** 귀밑샘의 침 분비를 담당한다. 임상: 귀밑샘 수술 뒤 이 섬유가 땀샘으로 잘못 재생되면 먹을 때 뺨에 땀이 나는 **Frey 증후군**이 생긴다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "귓바퀴관자신경 (F p40)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0105",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "이마의 피부신경을 드러낸 사진에서 눈확위구멍(패임)을 통해 나오는 신경에 번호핀 ①이 놓여 있다. 이름과 삼차신경의 몇 번째 가지에 속하는지 말하시오.",
+   "choices": null,
+   "answer": "눈확위신경 (supraorbital nerve) — 삼차신경 **눈신경(V1)**의 가지",
+   "explanation": "V1(눈신경)의 이마신경이 **눈확위신경**과 **도르래위신경**으로 갈려 이마·머리덮개 앞부분·위눈꺼풀 피부의 감각을 맡는다. 눈확위신경은 눈확위구멍(또는 패임)으로, 도르래위신경은 그보다 안쪽으로 나오며 각각 같은 이름의 동맥(눈동맥 가지)과 동반한다. 삼차신경 피부분지 **세 구멍은 거의 수직선상**에 있다 — 눈확위구멍(V1) · 눈확아래구멍(V2) · 턱끝구멍(V3). 삼차신경통 진단에서 이 세 점을 눌러 압통을 본다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "눈확위신경 (F p42)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0106",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "눈확아래모서리 약 1 cm 아래의 구멍에서 나오는 신경에 번호핀 ①이 놓여 있다. 이름과 담당하는 피부 감각 영역을 말하시오.",
+   "choices": null,
+   "answer": "눈확아래신경 (infraorbital nerve) — 아래눈꺼풀·뺨·코 가쪽·**윗입술** 피부 감각",
+   "explanation": "눈확아래신경은 삼차신경 **위턱신경(V2)**이 눈확아래고랑·눈확아래관을 지나 눈확아래구멍으로 나온 종말가지다. 아래눈꺼풀·코 가쪽·뺨·윗입술의 피부 감각을 맡아 치과에서 윗니·윗입술 마취(눈확아래신경 차단)의 표적이 된다. 위·아래 짝인 눈확위신경(V1, 이마·윗눈꺼풀)과 턱끝신경(V3, 아랫입술·턱)과 함께 **얼굴 피부 감각의 3층 구조**를 이룬다 — 운동은 모두 얼굴신경(VII)이 맡는다는 점과 갈라 외운다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "눈확아래신경 (F p46)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0107",
+   "style": "spotter",
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "광대활에서 아래턱뼈 가지 가쪽면으로 내려오는 네모난 근육이 노출되어 있고 번호핀 ①이 놓여 있다. 이름과 지배신경, 작용을 말하시오.",
+   "choices": null,
+   "answer": "깨물근 (masseter) — **아래턱신경(V3)**의 깨물근신경 지배, 아래턱을 올린다(씹기)",
+   "explanation": "깨물근은 광대활에서 아래턱뼈 가지·턱뼈각 가쪽면에 붙는 두꺼운 네모근으로, 얕은부분과 깊은부분으로 나뉜다. 씹기근육 네 개(깨물근·관자근·안쪽날개근·가쪽날개근)는 모두 **첫째 인두굽이** 유래라 **삼차신경 아래턱신경(V3)** 지배다 — 표정근육이 둘째 인두굽이·얼굴신경(VII) 지배인 것과 정확히 짝지어 외운다. 작용은 아래턱 올림(닫기)이고, 유일하게 **가쪽날개근만 입을 벌린다**. 깨물근 얕은쪽을 지나는 구조는 귀밑샘관·얼굴신경 볼가지·가로얼굴동맥이다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육 영상 스캔 50장",
+     "page": null,
+     "section": "깨물근 (F p50)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0108",
+   "style": "spotter",
+   "region": "thorax",
+   "subregion": "pectoral",
+   "examPhase": "tagging-1",
+   "stem": "큰가슴근을 젖혀 그 깊은쪽을 드러낸 사진이다. 번호핀 ①의 신경과 ②의 근육 이름을 각각 말하고, ①이 ②를 어떻게 지나는지 설명하시오.",
+   "choices": null,
+   "answer": "① 안쪽가슴근신경 (medial pectoral nerve) ② 작은가슴근 (pectoralis minor) — ①은 ②를 **뚫고 나와** 큰가슴근에 닿는다",
+   "explanation": "안쪽가슴근신경(C8–T1, 팔신경얼기 **안쪽다발**)은 작은가슴근을 **관통**해 작은가슴근과 큰가슴근을 **둘 다** 지배한다. 반면 가쪽가슴근신경(C5–7, **가쪽다발**)은 작은가슴근 위모서리 위로 지나 **큰가슴근만** 지배한다 — '안쪽은 뚫고 둘 다, 가쪽은 넘어서 하나'로 외운다. 이름의 안쪽·가쪽은 근육 위치가 아니라 **팔신경얼기 다발**에서 온 것이라 헷갈리기 쉽다. 작은가슴근은 3~5번 갈비뼈에서 어깨뼈 **부리돌기**로 올라가 겨드랑동맥을 세 부분으로 나누는 기준이 된다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 큰가슴근부위·가슴벽 영상 스캔 23장",
+     "page": null,
+     "section": "안쪽가슴근신경·작은가슴근 (P p15)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0109",
+   "style": "spotter",
+   "region": "thorax",
+   "subregion": "pectoral",
+   "examPhase": "tagging-1",
+   "stem": "빗장가슴근막을 뚫고 나와 큰가슴근·작은가슴근 사이로 들어가는 동맥가지에 번호핀 ①이 놓여 있다. 이 가지의 이름과 모동맥, 그리고 모동맥의 네 가지를 말하시오.",
+   "choices": null,
+   "answer": "가슴봉우리동맥(thoracoacromial artery)의 **가슴근가지(pectoral branch)** — 네 가지는 가슴근·봉우리·빗장·어깨세모 가지",
+   "explanation": "가슴봉우리동맥은 겨드랑동맥 **2부**의 가지로, 빗장가슴근막을 뚫고 나오자마자 네 갈래로 갈린다 — **가슴근·봉우리·빗장·어깨세모가지**(암기: 'C-A-P-D'). 그중 가슴근가지가 큰가슴근·작은가슴근 사이를 따라 내려가며 두 근육을 먹인다. 어깨세모가지는 **세모가슴근고랑**에서 노쪽피부정맥과 나란히 달려, 이 고랑이 '동맥+정맥이 함께 지나는' 대표 통로가 된다. 겨드랑동맥 2부의 다른 가지는 가쪽가슴동맥이다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 큰가슴근부위·가슴벽 영상 스캔 23장",
+     "page": null,
+     "section": "가슴봉우리동맥 가슴근가지 (P p16)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0110",
+   "style": "spotter",
+   "region": "thorax",
+   "subregion": "thoracic-wall",
+   "examPhase": "tagging-1",
+   "stem": "갈비뼈 아래모서리의 갈비사이고랑을 드러낸 사진에서 번호핀 ①이 가리키는 구조의 이름과, 이 고랑 안 세 구조의 **위에서 아래 배열 순서**를 말하시오.",
+   "choices": null,
+   "answer": "갈비사이신경 (intercostal nerve) — 위에서부터 **정맥 → 동맥 → 신경** (VAN)",
+   "explanation": "갈비사이 혈관신경다발은 갈비뼈 아래모서리의 **갈비사이고랑** 안에서 위에서 아래로 **정맥·동맥·신경(VAN)** 순으로 놓이며, 바깥갈비사이근과 속갈비사이근 사이를 달린다. 신경이 가장 아래·가장 얕게 놓이므로 **가슴막천자·흉관 삽입은 반드시 갈비뼈 위모서리를 따라** 넣어야 다발을 다치지 않는다. 갈비사이신경은 T1–T11 앞가지이며 앞·가쪽 피부가지를 내 가슴·배벽 피부를 분절(dermatome)로 지배한다. 곁갈비사이가지가 갈비 위모서리를 따라 되올라오므로 아래모서리만 피하면 안전하다는 점도 함께 본다. 원본 영상 라벨 실측 확인. 이미지는 필기를 제거한 복원본이며 정답 라벨·타이틀·자막은 가림.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 큰가슴근부위·가슴벽 영상 스캔 23장",
+     "page": null,
+     "section": "갈비사이신경과 갈비사이고랑 배열 (P p22)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "region": "pelvis-perineum",
