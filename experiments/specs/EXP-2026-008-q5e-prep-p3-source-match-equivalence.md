@@ -481,6 +481,42 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D28 (2026-08-16) — the same stop again: the class-level evidence was not
+enough, and I still cannot say why.**  Run `20260816T153415` stopped exactly
+where `20260816T142848` did, on the same fixture and the same peak.  So D27's
+diagnosis — the dictionary keyed by symbol, knowing `L` but not `N` — was
+either wrong or incomplete.
+
+**What this entry does not do is guess again.**  Two rounds have now been spent
+on a projection failure I have been unable to reproduce locally: a replica
+built to the registered rule *and* the registered container set (`keep`,
+`lab_idx`, `li`, `used`, `kp`, `valid`, class codes in `y`) projects cleanly
+and reports the two disagreements.  Something in the real trace differs from
+every replica of it, and the honest response is to look rather than to theorise
+a third time.
+
+*The notebook now prints the diagnosis that was already being collected.*  The
+unresolved list, the row tokens, the accumulated label dictionary and the
+fixture's own — all of it has been in `fixture_results.json` since D27 and none
+of it was on screen, which is why two rounds produced the same message and no
+new information.  That was my error, and it is the actual cost of this round.
+
+*One substantive change, which is a robustness fix rather than a diagnosis.*
+Negative evidence needs a channel that has been **single-valued** for a symbol
+or a class; a shared dictionary accumulating across six fixtures loses that the
+moment any fixture writes two labels for one class, and never gets it back.  So
+the settler now also consults a dictionary built from **the fixture's own
+resolved rows**, which cannot be diluted by another fixture.  If dilution is
+what happened, this fixes it; if not, the printed dictionaries will say what
+did.  `_settle_with()` is now one function both dictionaries go through, so the
+two cannot drift apart.
+
+Regression: `test_a_fixtures_own_rows_settle_it_even_when_the_shared_one_
+cannot` — a deliberately diluted dictionary settles nothing (the correct
+refusal), a clean one settles, an empty one settles nothing.  Suite: 114
+functions, 1,179 assertions.  Bundle `4085d030…` / manifest `e3171ccf…` at
+`runs/20260816T153415_…` is preserved.
+
 **D27 (2026-08-16) — the record read cleanly; the projection could not settle
 a class code.  A row labelled `2` said nothing about a symbol nobody had
 taught.**  Run `20260816T142848` read the whole record — all seven columns
