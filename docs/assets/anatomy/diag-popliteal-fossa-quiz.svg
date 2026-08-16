@@ -47,7 +47,7 @@
   <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">다리오금 — 태깅 연습판<tspan fill="#93a4b7" font-size="12" font-weight="400"> popliteal fossa — quiz</tspan></text>
   <text x="20" y="50" fill="#93a4b7" font-size="11">오른쪽 다리를 뒤에서 본 모습(왼쪽이 가쪽). ①~④는 <tspan fill="#e6edf3">마름모의 네 경계 근육</tspan>,</text>
   <text x="20" y="66" fill="#93a4b7" font-size="11">⑤~⑦은 <tspan fill="#e6edf3">얕은 것부터 깊은 것 순서의 내용물</tspan>, ⑧은 가쪽 변을 따라 빠져나가는 신경이다.</text>
-  <text x="20" y="84" fill="#6f8299" font-size="11">정답은 대응 문항 카드(anatomy-2026-0047) frontmatter에 있다.</text>
+  <text x="20" y="84" fill="#6f8299" font-size="11">정답은 대응 문항 카드(anatomy-2026-0090) frontmatter에 있다.</text>
 
   <!-- ================= 번호핀 ================= -->
   <circle cx="152" cy="206" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>

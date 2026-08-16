@@ -29,15 +29,15 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0016.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf1_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf1_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0023.md", quiz_image: ".private/anatomy/render/uploads-b2/pf1_p2_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/pf1_p2_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0024.md", quiz_image: ".private/anatomy/render/uploads-b2/pf1_p8_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/pf1_p8_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0039.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p7_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p7_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0040.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p11_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p11_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0041.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p16_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p16_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0042.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p23_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p23_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0043.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p27_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p27_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0082.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p7_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p7_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0083.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p11_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p11_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0084.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p16_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p16_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0085.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p23_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p23_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0086.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p27_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p27_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0015.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf2_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf2_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0044.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p10_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0045.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p13_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0046.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p24_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p24_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0087.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p10_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0088.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p13_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0089.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p24_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p24_clean.png"}
 tags: [서브노트, 2회차, 표, 예습시험, 태깅]
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: anatomy-2026-0034
+id: anatomy-2026-0077
 type: anatomy
 kind: study_guide
 topic: Anatomy
@@ -27,18 +27,18 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0019.md", quiz_image: ".private/anatomy/render/uploads-s03/q0150_p3_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q0150_p3_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0020.md", quiz_image: ".private/anatomy/render/uploads-s03/q0150_p9_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q0150_p9_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0026.md", quiz_image: ".private/anatomy/render/uploads-b2/q0150_p11_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/q0150_p11_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0048.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p12_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p12_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0091.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p12_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p12_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0017.md", quiz_image: ".private/anatomy/render/uploads-s03/q5183_p1_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q5183_p1_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0025.md", quiz_image: ".private/anatomy/render/uploads-b2/q5183_p2_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/q5183_p2_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0018.md", quiz_image: ".private/anatomy/render/uploads-s03/q5183_p8_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/q5183_p8_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0035.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p35_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p35_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0049.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p38_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p38_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0050.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p41_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p41_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0038.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p47_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p47_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0036.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p25_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p25_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0037.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p32_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p32_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0051.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p10_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0052.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p13_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0078.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p35_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p35_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0092.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p38_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p38_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0093.md", quiz_image: ".private/anatomy/render/uploads-t2/q0150_p41_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q0150_p41_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0081.md", quiz_image: ".private/anatomy/render/uploads-b3/q0150_p47_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q0150_p47_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0079.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p25_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p25_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0080.md", quiz_image: ".private/anatomy/render/uploads-b3/q5183_p32_quiz.png", clean_image: ".private/anatomy/render/uploads-b3/q5183_p32_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0094.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p10_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0095.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p13_clean.png"}
 source_refs:
   - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf", page: null, section: "뒤통수밑삼각·어깨뼈부위·다리오금 실습영상"}
 tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
@@ -187,4 +187,4 @@ tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
 - 안쪽장딴지피부신경과 무엇이 합쳐져 장딴지신경이 되는가? 임상적으로 왜 중요한가?
 
 > [!TIP] 함께 볼 자료 :: 도해 `diag-suboccipital-labeled.svg` · `diag-scapular-spaces-labeled/quiz.svg`(문항 0031)
-· `diag-popliteal-fossa-labeled/quiz.svg`(문항 **0047** — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다.
+· `diag-popliteal-fossa-labeled/quiz.svg`(문항 **0090** — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다.
