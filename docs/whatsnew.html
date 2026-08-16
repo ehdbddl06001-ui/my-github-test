@@ -13,12 +13,13 @@
   <a href="ailab.html">🤖 AI랩</a>
   <a href="anatomy.html">🫀 해부학</a>
   <a href="whatsnew.html" class="active">🆕 새 자료</a>
+  <a href="diagrams.html">🖼 도해</a>
   <a href="search.html">🔍 검색</a>
 </nav>
 
 <header>
   <h1>새 자료 <span id="newBadge" class="wn-badge" hidden></span></h1>
-  <p class="sub">만든 날짜(<code>frontmatter.date</code>) 최신순. 마지막으로 확인한 시점 이후에 생긴 것은 <b>NEW</b> 로 표시됩니다. 이 페이지는 <code>search-index.js</code>(= <code>content/</code>에서 생성)만 읽으므로 항상 저장소 최신 상태와 같습니다.</p>
+  <p class="sub">만든 날짜(<code>frontmatter.date</code>) 최신순. 마지막으로 확인한 시점 이후에 생긴 것은 <b>NEW</b> 로 표시됩니다. 카드(<code>content/</code>)와 도해(<code>docs/assets/anatomy/</code>)를 한 타임라인에 모읍니다. 도해는 라벨판만 나오며, 퀴즈판과 함께 보려면 <a href="diagrams.html">도해 갤러리</a>로.</p>
 </header>
 
 <section class="card">
@@ -43,6 +44,7 @@
 </footer>
 
 <script src="search-index.js"></script>
+<script src="diagrams-data.js"></script>
 <script src="whatsnew-app.js"></script>
 </body>
 </html>

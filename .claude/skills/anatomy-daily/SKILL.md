@@ -213,7 +213,10 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
   후보만 선별한다. 밀리면 3단계 catch-up이 흡수.
 - **분지 계보 트리는 손으로 그리지 않는다**: 신경·혈관은 위치 도해만으로 부족하다.
   `pipelines/branch_specs.py` 에 회차 스펙을 추가하고 `python pipelines/branch_tree.py --all`
-  로 생성한다. 회차마다 **신경 / 혈관(동맥+정맥) / 신경혈관다발** 세 장을 만들고
+  로 생성한다(스펙 키를 바꾸면 옛 파일은 자동 삭제된다). 만들고 나면
+  `python pipelines/export_diagrams_web.py` 로 **도해 갤러리 매니페스트**를 갱신한다 —
+  안 하면 새 도해가 웹의 '새 자료'·'도해' 목록에 안 뜬다.
+  회차마다 **신경 / 혈관(동맥+정맥) / 신경혈관다발** 세 장을 만들고
   서브노트에 `!fig docs/assets/anatomy/tree-sNN-*.svg` 로 건다.
   정맥을 빼먹지 말 것 — 혈관은 동맥·정맥 둘 다이고, 셋이 같이 지나는 자리(bundle)가
   태깅에서 그대로 출제된다.

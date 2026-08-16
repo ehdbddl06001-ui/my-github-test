@@ -44,6 +44,8 @@
    신규 콘텐츠까지 반영하게 한다(병합 직후 번들은 낡아 있음).
 2. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
 3. `python pipelines/indexer.py`          (SQLite 재빌드) → 이어서 `docs/` 번들 재생성
+   (도해·트리 SVG를 건드렸으면 `python pipelines/export_diagrams_web.py` 도 함께 —
+    자산은 검색 색인에 안 잡혀 별도 매니페스트가 갤러리·새 자료 목록의 근거다)
 4. 새 `.md` 와 재생성된 `docs/` 번들을 함께 커밋(id_counter·seen_topics·seen_papers 는
    파생물이라 커밋 대상이 아니다; ailab 진도를 바꿨다면 `state/ailab_progress.json` 만 포함).
 5. 신규 타입(paper/disease/drug)은 self-verify 한계를 고려해 **PR로** 올린다.

@@ -337,6 +337,21 @@ def test_every_session_has_nerve_and_vessel_tree() -> None:
             assert f"{s}-{suffix}" in SPECS, f"{s}: {suffix} 트리 없음"
 
 
+def test_diagram_manifest_covers_every_svg() -> None:
+    """도해 갤러리 매니페스트: 자산 누락·유령 항목·날짜 없음 회귀(2026-08-16)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "export_diagrams_web.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"export_diagrams_web selftest 실패: {r.stdout}{r.stderr}"
+    # 생성기가 만든 tree-*.svg 는 전부 현재 스펙에 대응해야 한다(이름 바꾼 옛 파일 잔존 금지)
+    sys.path.insert(0, str(Path(__file__).parent))
+    from branch_specs import SPECS
+    root = Path(__file__).resolve().parents[1]
+    for p in (root / "docs" / "assets" / "anatomy").glob("tree-*.svg"):
+        key = p.stem.rsplit("-", 1)[0][len("tree-"):]
+        assert key in SPECS, f"스펙 없는 유령 도해: {p.name}"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

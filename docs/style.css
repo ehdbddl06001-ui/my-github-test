@@ -197,3 +197,26 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
 .wn-links{flex:none; font-size:.8rem; color:var(--muted)}
 .wn-links a{color:var(--accent); text-decoration:none}
 .wn-links a:hover{text-decoration:underline}
+
+/* ── 도해 갤러리 ─────────────────────────────────────────── */
+.dg-grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.dg-tile{margin:0; background:#0b1624; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; display:flex; flex-direction:column}
+.dg-tile.is-new{border-color:var(--accent); box-shadow:0 0 0 1px rgba(124,92,255,.35)}
+.dg-tile img{display:block; width:100%; height:170px; object-fit:contain;
+  object-position:left top; background:#0e1826}
+.dg-tile figcaption{padding:9px 11px; display:flex; flex-wrap:wrap; gap:5px 7px; align-items:baseline}
+.dg-kind{font-size:.7rem; font-weight:700; border-radius:5px; padding:2px 6px;
+  background:#0e1826; border:1px solid var(--line); color:var(--muted)}
+.dg-tree-nerve{color:#9cc3ff; border-color:#3d5166}
+.dg-tree-vessel{color:#e0645f; border-color:#5a4040}
+.dg-tree-bundle{color:#7fd4a8; border-color:#3f7a5e}
+.dg-diag{color:#c9a34a; border-color:#5a4a20}
+.dg-sess{font-size:.7rem; color:var(--muted); border:1px solid var(--line);
+  border-radius:5px; padding:2px 6px}
+.dg-quiz{color:#eab308; border-color:#5a4a20}
+.dg-title{flex:1 1 100%; color:var(--ink); font-size:.88rem; line-height:1.4}
+.dg-links{flex:1 1 100%; font-size:.78rem; color:var(--muted)}
+.dg-links a{color:var(--accent); text-decoration:none}
+.dg-links a:hover{text-decoration:underline}
+.wn-diagram{color:#c9a34a; border-color:#5a4a20}

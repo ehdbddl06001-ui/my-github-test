@@ -314,9 +314,17 @@ def main() -> int:
         return selftest()
     from branch_specs import SPECS
     if a.all:
+        made = set()
         for k, s in SPECS.items():
             for p in build(k, s):
+                made.add(p.name)
                 print(f"생성: {p.relative_to(ROOT)}")
+        # 스펙 키를 바꾸면(예: s01-artery → s01-vessel) 예전 파일이 남아 갤러리에
+        # 유령 항목으로 뜬다(실측 2026-08-16) → 생성물이 아닌 tree-*.svg 는 지운다.
+        for old in sorted(OUT_DIR.glob("tree-*.svg")):
+            if old.name not in made:
+                old.unlink()
+                print(f"삭제(스펙 없음): {old.relative_to(ROOT)}")
         return 0
     if not a.key:
         print("--all 또는 --key 필요"); return 2
