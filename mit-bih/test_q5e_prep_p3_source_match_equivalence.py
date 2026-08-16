@@ -2791,6 +2791,44 @@ def test_a_class_code_settles_what_a_symbol_never_taught():
           f"both readings are published for the bundle: {published}")
 
 
+def test_a_fixtures_own_rows_settle_it_even_when_the_shared_one_cannot():
+    """A shared dictionary can be diluted; a fixture's own rows cannot.
+
+    Negative evidence needs a channel that has been *single-valued* for a
+    symbol or a class.  One fixture writing two different labels for the same
+    class — for any reason, including a producer this PREP has not seen yet —
+    silently disables that evidence everywhere afterwards.  The fixture's own
+    resolved rows are the most direct evidence there is about its own labels,
+    and they cannot be diluted by another fixture, so the settler consults them
+    too.
+    """
+    annotations = [{"symbol": "V", "aami": "V"}, {"symbol": "N", "aami": "N"}]
+    token = [["columnar_y", "2"]]
+    diluted = P3.LabelDictionary()
+    diluted.learn([["columnar_y", "0"]], "L")                # class N
+    diluted.learn([["columnar_y", "9"]], "R")                # class N again
+    check(P3._settle_with(diluted, token, [0, 1], annotations) is None,
+          "a channel that has been two-valued for a class settles nothing, "
+          "which is the correct refusal rather than a guess")
+    local = P3.LabelDictionary()
+    local.learn([["columnar_y", "0"]], "L")
+    local.learn([["columnar_y", "1"]], "A")
+    check(P3._settle_with(local, token, [0, 1], annotations) == 0,
+          "while a clean dictionary rules out the N-class candidate and "
+          "leaves the V one")
+    check(P3._settle_with(P3.LabelDictionary(), token, [0, 1],
+                          annotations) is None,
+          "and an empty dictionary settles nothing at all")
+    import inspect
+    source = inspect.getsource(P3.project_observation)
+    check("local_dictionary" in source and "dictionaries" in source,
+          "the projection builds a fixture-local dictionary beside the shared "
+          "one")
+    check(source.index("dictionaries.append") <
+          source.index("chosen = settle_by_row_label"),
+          "and learns into it before the settling pass that needs it")
+
+
 def test_the_registered_rule_is_reported_rather_than_stopping_the_run():
     """The rehearsal that matters: the source's behaviour, not just its shapes.
 

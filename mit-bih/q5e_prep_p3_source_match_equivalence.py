@@ -245,17 +245,16 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "3ba854583ce1062c28df287eec630da74d59b1b17174569297952b8fbe6daf80"),
+        "c21a5c1d7536a77adcc9167995768689981abfeb6688adf0aa7706e48fa2d873"),
     "renewed_for_this_harness_because": (
-        "run 20260816T142848 read the whole record and stopped in the "
-        "projection: a row labelled with a class code could not be settled "
-        "against candidates V and N, because the label dictionary was keyed "
-        "by symbol and had learned L but never N.  It now learns and settles "
-        "by registered AAMI class as well, which is the level a producer "
-        "writing y as int8 is actually distinguishing.  Projection only; the "
-        "fixtures (as revised in D21, which the spec owner should still "
-        "review), the rule, the tolerance and the verdict criteria are "
-        "unchanged"),
+        "run 20260816T153415 stopped where 20260816T142848 did, so the "
+        "class-level evidence added for it was not enough on its own: the "
+        "settler now also consults a dictionary built from the fixture's own "
+        "resolved rows, which cannot be diluted by another fixture, and the "
+        "notebook prints the dictionaries and the row tokens so a failure to "
+        "settle says why.  Projection and diagnosis only; the fixtures (as "
+        "revised in D21, which the spec owner should still review), the rule, "
+        "the tolerance and the verdict criteria are unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -3280,6 +3279,42 @@ class LabelDictionary(object):
                                        self.by_class_token.items())}}
 
 
+def _settle_with(known: "LabelDictionary", tokens: Sequence[Sequence[object]],
+                 options: Sequence[int],
+                 annotations: Sequence[Mapping[str, object]]
+                 ) -> Optional[int]:
+    """Which candidate a producer's own row label points at, or `None`.
+
+    Four readings, tried in order and all of them observations of this
+    producer: the symbol its label has been seen on, the registered AAMI class
+    its label has been seen on, and the same two as negative evidence.  The
+    class level is what settles a producer that writes a class code — the
+    registered one writes `y` as int8 — because a token seen on every `L`, `R`
+    and `e` row says what class a differently-labelled row is *not*, while the
+    symbol `N` may never have been seen at all.
+    """
+    symbols = known.symbols_for(tokens)
+    if symbols:
+        matched = [index for index in options
+                   if annotations[index]["symbol"] in symbols]
+        if len(matched) == 1:
+            return matched[0]
+    classes = known.classes_for(tokens)
+    if classes:
+        matched = [index for index in options
+                   if annotations[index]["aami"] in classes]
+        if len(matched) == 1:
+            return matched[0]
+    excluded = known.excluded_symbols(tokens)
+    excluded_classes = known.excluded_classes(tokens)
+    matched = [index for index in options
+               if annotations[index]["symbol"] not in excluded
+               and annotations[index]["aami"] not in excluded_classes]
+    if len(matched) == len(options):
+        return None                  # nothing was ruled out; nothing is settled
+    return matched[0] if len(matched) == 1 else None
+
+
 def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
                         returned: object, dictionary: LabelDictionary,
                         side: str,
@@ -3295,6 +3330,7 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
     annotations = _annotation_table(fixture)
     peaks = _peak_table(fixture)
     name = str(fixture["name"])
+    dictionaries: List["LabelDictionary"] = [dictionary]
     discovered = discover_kept_rows(returned, fixture, variant)
     if discovery is not None:
         # Handed back to the caller by reference, so that the reading of the
@@ -3322,44 +3358,31 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
         if row is None:
             return None
         options = sorted(set(candidates))
-        symbols = dictionary.symbols_for(row["tokens"])
-        if symbols:
-            matched = [index for index in options
-                       if annotations[index]["symbol"] in symbols]
-            if len(matched) == 1:
-                return matched[0]
-        # Then the same question at the level the producer actually writes.
-        # The registered one writes `y` as a class code, so a token seen on
-        # every `L`, `R` and `e` row says what class a differently-labelled row
-        # is *not* — while the symbol `N` may never have been seen at all.  The
-        # 20260816T142848 run stopped exactly there: candidates `V` and `N`,
-        # a row labelled `2`, and a dictionary that knew `L` but not `N`.
-        classes = dictionary.classes_for(row["tokens"])
-        if classes:
-            matched = [index for index in options
-                       if annotations[index]["aami"] in classes]
-            if len(matched) == 1:
-                return matched[0]
-        excluded = dictionary.excluded_symbols(row["tokens"])
-        excluded_classes = dictionary.excluded_classes(row["tokens"])
-        matched = [index for index in options
-                   if annotations[index]["symbol"] not in excluded
-                   and annotations[index]["aami"] not in excluded_classes]
-        if len(matched) == len(options):
-            return None              # nothing was ruled out; nothing is settled
-        return matched[0] if len(matched) == 1 else None
+        for known in dictionaries:
+            chosen = _settle_with(known, row["tokens"], options, annotations)
+            if chosen is not None:
+                return chosen
+        return None
 
     implied = implied_mappings(trace, fixture)
     merged, releases = merge_implied(implied["by_container"], side, name,
                                      settle=settle_by_row_label)
 
     # Rows whose annotation is already known teach the dictionary; the
-    # dictionary then settles the events that two readings left open.
+    # dictionary then settles the events that two readings left open.  They
+    # teach a **second, fixture-local** dictionary at the same time: the shared
+    # one accumulates across fixtures and a single channel that has been
+    # two-valued anywhere stops being usable as negative evidence everywhere,
+    # while this fixture's own rows are the most direct evidence there is about
+    # this fixture's labels and cannot be diluted by another one.
+    local_dictionary = LabelDictionary()
     for row in kept:
         pair = merged.get(peak_index_of.get(row["peak_sample"]))
         if pair is not None and pair["annotation_index"] is not None:
-            dictionary.learn(row["tokens"],
-                             annotations[pair["annotation_index"]]["symbol"])
+            symbol = annotations[pair["annotation_index"]]["symbol"]
+            dictionary.learn(row["tokens"], symbol)
+            local_dictionary.learn(row["tokens"], symbol)
+    dictionaries.append(local_dictionary)
     unresolved: List[str] = []
     for peak_index, entry in sorted(merged.items()):
         if entry["annotation_index"] is not None:
@@ -3396,6 +3419,9 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
                      # 20260816T142848 stop cost a round trip working out that
                      # the dictionary knew `L` but not `N`.
                      "label_dictionary": dictionary.as_dict(),
+                     "fixture_label_dictionary": (
+                         dictionaries[-1].as_dict()
+                         if len(dictionaries) > 1 else {}),
                      "row_tokens": [[r["peak_sample"], r["tokens"]]
                                     for r in kept[:16]]})
 
@@ -3825,7 +3851,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "bind_source_arguments", "trace_call", "canonical_value", "growth_events",
     "_added_once", "_flipped_once", "_resolve_annotation_token",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
-    "probe_injection_invariance", "_elementwise",
+    "probe_injection_invariance", "_elementwise", "_settle_with",
     "discover_stub_surface",
     "discover_kept_rows", "_unreadable", "_public_attributes",
     "trace_summary", "_summarise_local",
