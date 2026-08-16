@@ -167,6 +167,11 @@ P3_COLUMNAR_RETURN_UNPROJECTABLE = "P3_COLUMNAR_RETURN_UNPROJECTABLE"
 #: disagreement would be a fabrication — no rows were compared.  Whether the
 #: cause is the fixture or the producer is answered by the trace, not here.
 P3_SOURCE_RETURNED_NO_RECORD = "P3_SOURCE_RETURNED_NO_RECORD"
+#: The producer indexes its annotations in a space this projection cannot map
+#: back to the reader's list.  Its own stop, because reading an index in the
+#: wrong space does not fail loudly — it names the **wrong annotation**, and a
+#: run that does that is worse than one that stops.
+P3_ANNOTATION_INDEX_SPACE_UNREADABLE = "P3_ANNOTATION_INDEX_SPACE_UNREADABLE"
 #: Stops that say the harness could not make the comparison.  A candidate
 #: record is never produced from one of these, and none of them may be
 #: reported as a disagreement between the adapter and the registered source.
@@ -176,7 +181,8 @@ HARNESS_STOPS: Tuple[str, ...] = (
     P3_SOURCE_RUNTIME_ERROR, P3_SOURCE_TRACE_UNPROJECTABLE,
     P3_KEPT_ROWS_UNOBSERVABLE, P3_FIXTURE_CONTRACT_VIOLATION,
     P3_STUB_SURFACE_INCOMPLETE, P3_INJECTED_VALUE_STEERS_MATCHING,
-    P3_COLUMNAR_RETURN_UNPROJECTABLE, P3_SOURCE_RETURNED_NO_RECORD)
+    P3_COLUMNAR_RETURN_UNPROJECTABLE, P3_SOURCE_RETURNED_NO_RECORD,
+    P3_ANNOTATION_INDEX_SPACE_UNREADABLE)
 P3_STATUSES: Tuple[str, ...] = (
     (P3_PASS, P3_EQUIVALENCE_REQUIRED) + HARNESS_STOPS)
 #: Ordered P3 gates.  The source is never imported before its identity has
@@ -235,16 +241,29 @@ NOT_APPROVED: Tuple[str, ...] = (
 #: readable from the code and not only from a spec.  Setting `granted` back to
 #: `False` restores every refusal exactly, with no other change anywhere.
 #:
-#: **Re-granted on 2026-08-16**, for the columnar-reader harness and no other.
-#: The approval of 2026-08-15 was withdrawn when that reader changed the
-#: harness digest; this one names the digest it was given for, and
-#: :func:`_terminal_execution_guard` refuses when the module's harness is not
-#: that one.  Renewal is mechanical rather than remembered, and the failure
-#: direction is "ask again".
+#: **Closed on 2026-08-16 at Codex's instruction.**  The projection changed —
+#: an index in the producer's own annotation list is now read in that list's
+#: space — so `oracle_harness_sha256` changed, and the approval that produced
+#: run `20260816T161639` was given for the harness that had the defect.  It is
+#: not carried over, and this PR performs no execution of any kind.  The next
+#: run is a fresh execution-enable approval followed by all six fixtures from
+#: the first.
 EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
-    "granted": True,
+    "granted": False,
+    "closed_on": "2026-08-16",
+    # The digest this record names is the harness as it stands, so a *later*
+    # change still closes the door on its own; `granted` is what a fresh
+    # approval flips, and the diff that flips it shows the digest it is for.
+    "for_oracle_harness_sha256": "4127809f323eb2bf793065e85781eff0edb4f1f828dbfe04ac784df24b832a67",
+    "closed_because": (
+        "Codex reviewed run 20260816T161639 and found the source projection "
+        "read a filtered annotation index in the reader's index space, so the "
+        "non-AAMI fixture's source detail named the wrong annotation.  The "
+        "projection is fixed here and the harness identity moved with it; the "
+        "approval that produced that run was given for the harness that had "
+        "the defect and does not carry over"),
     "granted_on": "2026-08-16",
-    "for_oracle_harness_sha256": (
+    "was_for_oracle_harness_sha256": (
         "c21a5c1d7536a77adcc9167995768689981abfeb6688adf0aa7706e48fa2d873"),
     "renewed_for_this_harness_because": (
         "run 20260816T153415 stopped where 20260816T142848 did, so the "
@@ -2239,17 +2258,130 @@ def growth_events(trace: FrameTrace) -> List[Dict[str, object]]:
     return events
 
 
+def _sample_sequence(value: object, samples: Set[int]) -> Optional[List[int]]:
+    """A canonical local read as a list of annotation samples, or `None`.
+
+    Two shapes count, because a producer writes both: a flat list of samples,
+    and a list of `[sample, …]` rows.  Every member has to be an annotation
+    sample of this fixture — all of them, not most — so an ordinary list of
+    numbers cannot be mistaken for the annotation list.  Peak samples cannot
+    qualify either: the fixture contract keeps the two sets disjoint.
+    """
+    if not isinstance(value, list) or not value:
+        return None
+    out: List[int] = []
+    for item in value:
+        if isinstance(item, list) and item:
+            item = item[0]
+        if isinstance(item, bool) or not isinstance(item, int):
+            return None
+        if item not in samples:
+            return None
+        out.append(item)
+    return out
+
+
+def annotation_index_spaces(trace: FrameTrace, fixture: Mapping[str, object]
+                            ) -> Dict[str, object]:
+    """The index space the producer's own annotation list defines.
+
+    The registered `build_record()` filters before it matches::
+
+        keep = [(p, AAMI[s]) for p, s in zip(ann_sample, ann_symbol)
+                if AAMI.get(s) in C2I]
+
+    so an integer index in its trace is a position in the **filtered** list,
+    not in the reader's.  Read as the reader's, every index after a dropped
+    annotation names the wrong one — and it names one, silently, which is why
+    this is read explicitly instead of being left to the two readings that were
+    here before.
+
+    The mapping back is exact equality of sample values: the producer's list
+    holds annotation samples, the fixture's samples are distinct, so position
+    → sample → ordinal is a lookup rather than a rule.  Nothing here
+    re-derives the matching rule, the tolerance or the AAMI map — the producer
+    already applied those, and this only reads what it was left holding.
+
+    A list the producer built that is **not** the reader's is the evidence that
+    it works in another space; two different such lists are not evidence of
+    anything, and stop the run rather than being chosen between.
+    """
+    annotations = _annotation_table(fixture)
+    by_sample: Dict[int, List[int]] = {}
+    for annotation in annotations:
+        by_sample.setdefault(int(annotation["sample"]),
+                             []).append(int(annotation["index"]))
+    repeated = sorted(s for s, seen in by_sample.items() if len(seen) > 1)
+    if repeated:
+        raise SourceHarnessError(                            # pragma: no cover
+            P3_ANNOTATION_INDEX_SPACE_UNREADABLE,
+            f"the fixture repeats annotation samples {repeated}, so a sample "
+            f"does not identify an annotation and an index in the producer's "
+            f"own list cannot be mapped back to one")
+    finals: Dict[str, object] = {}
+    for step in trace.steps:
+        finals.update(step["changed"])                       # type: ignore[arg-type]
+    found: Dict[Tuple[int, ...], Dict[str, object]] = {}
+    for name in sorted(finals):
+        samples = _sample_sequence(finals[name], set(by_sample))
+        if samples is None:
+            continue
+        if len(set(samples)) != len(samples):
+            raise SourceHarnessError(
+                P3_ANNOTATION_INDEX_SPACE_UNREADABLE,
+                f"the producer's local {name!r} lists an annotation sample "
+                f"more than once, so a position in it does not identify an "
+                f"annotation: {samples}")
+        ordinals = [by_sample[s][0] for s in samples]
+        order = sorted(range(len(samples)), key=lambda k: (samples[k], k))
+        entry = found.setdefault(tuple(ordinals), {
+            "locals": [], "samples": list(samples), "ordinals": ordinals,
+            "rank_ordinals": [ordinals[k] for k in order]})
+        entry["locals"].append(name)                         # type: ignore[union-attr]
+    identity = tuple(int(a["index"]) for a in annotations)
+    others = [entry for key, entry in sorted(found.items()) if key != identity]
+    if len(others) > 1:
+        raise SourceHarnessError(
+            P3_ANNOTATION_INDEX_SPACE_UNREADABLE,
+            f"the producer built more than one annotation list and they do "
+            f"not agree: "
+            f"{[(e['locals'], e['ordinals']) for e in others]}.  Which one its "
+            f"indices belong to is not observable, and choosing would be "
+            f"guessing at the answer.")
+    chosen = others[0] if others else found.get(identity)
+    return {"space": chosen,
+            "filtered": bool(others),
+            "observed": [{"locals": entry["locals"],
+                          "ordinals": entry["ordinals"]}
+                         for entry in found.values()]}
+
+
 def _resolve_annotation_token(token: object,
-                              annotations: Sequence[Mapping[str, object]]
+                              annotations: Sequence[Mapping[str, object]],
+                              space: Optional[Mapping[str, object]] = None
                               ) -> Dict[str, object]:
     """One integer from a trace, read as an annotation — or reported ambiguous.
 
     Three readings are possible and they are tried in that order: the
-    annotation's sample, its position in the reader's list, and its rank in
-    sample order.  Fixture construction rules out a sample/index collision, so
-    only the last two can disagree — and when they do, this says so rather than
-    choosing one.
+    annotation's sample, its position in the producer's own annotation list,
+    and its rank in sample order within that list.  Fixture construction rules
+    out a sample/index collision, so only the last two can disagree — and when
+    they do, this says so rather than choosing one.
+
+    `space` is that list, when the producer built one (see
+    :func:`annotation_index_spaces`).  Where it filtered nothing the space is
+    the reader's own list and these are the readings this function always had;
+    where it filtered — the registered producer drops non-AAMI annotations
+    before matching — position and rank are read **in the filtered space** and
+    mapped back by sample, because that is the space the producer's own
+    integers live in.
     """
+    ordinals = (list(space["ordinals"]) if space else
+                [int(a["index"]) for a in annotations])
+    rank_ordinals = (list(space["rank_ordinals"]) if space else
+                     [int(a["index"]) for a in
+                      sorted(annotations, key=lambda a: (a["sample"],
+                                                         a["index"]))])
     if isinstance(token, (list, tuple)) and len(token) == 2:
         token = token[1]
     if not isinstance(token, int) or isinstance(token, bool):
@@ -2259,17 +2391,17 @@ def _resolve_annotation_token(token: object,
     if len(by_sample) == 1:
         return {"resolved": by_sample[0]["index"], "ambiguous": False,
                 "candidates": [by_sample[0]["index"]], "reading": "sample"}
-    by_index = [a for a in annotations if a["index"] == token]
-    by_rank = [a for a in annotations if a["rank"] == token]
-    if by_index and by_rank:
-        if by_index[0]["index"] == by_rank[0]["index"]:
-            return {"resolved": by_index[0]["index"], "ambiguous": False,
-                    "candidates": [by_index[0]["index"]],
-                    "reading": "index_and_rank_agree"}
+    in_space = 0 <= token < len(ordinals)
+    if in_space:
+        by_index, by_rank = ordinals[token], rank_ordinals[token]
+        reading = "index_and_rank" + ("_in_filtered_space" if space and
+                                      space.get("filtered") else "")
+        if by_index == by_rank:
+            return {"resolved": by_index, "ambiguous": False,
+                    "candidates": [by_index], "reading": reading + "_agree"}
         return {"resolved": None, "ambiguous": True,
-                "candidates": sorted({by_index[0]["index"],
-                                      by_rank[0]["index"]}),
-                "reading": "index_and_rank_disagree"}
+                "candidates": sorted({by_index, by_rank}),
+                "reading": reading + "_disagree"}
     return {"resolved": None, "ambiguous": False, "candidates": [],
             "reading": "outside_the_annotation_domain"}
 
@@ -2313,10 +2445,15 @@ def implied_mappings(trace: FrameTrace, fixture: Mapping[str, object]
     """
     annotations = _annotation_table(fixture)
     peaks = _peak_table(fixture)
+    spaces = annotation_index_spaces(trace, fixture)
+    space = spaces["space"]
+    if space is not None:
+        space = dict(space, filtered=spaces["filtered"])
     by_container: Dict[str, Dict[str, object]] = {}
     skipped: List[Dict[str, object]] = []
     for event in growth_events(trace):
-        annotation = _resolve_annotation_token(event["token"], annotations)
+        annotation = _resolve_annotation_token(event["token"], annotations,
+                                               space)
         if annotation["reading"] in ("not_an_integer",
                                      "outside_the_annotation_domain"):
             skipped.append({"container": event["container"],
@@ -2354,7 +2491,8 @@ def implied_mappings(trace: FrameTrace, fixture: Mapping[str, object]
     for name, record in by_container.items():
         if not record["pairs"]:
             record["releases"] = []
-    return {"by_container": by_container, "skipped": skipped}
+    return {"by_container": by_container, "skipped": skipped,
+            "annotation_index_space": spaces}
 
 
 def merge_implied(by_container: Mapping[str, Mapping[str, object]],
@@ -3365,6 +3503,11 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
         return None
 
     implied = implied_mappings(trace, fixture)
+    # Which index space the producer's own integers were read in, recorded on
+    # the observation's side channel so the bundle says it rather than leaving
+    # a reader to infer it from the ordinals.
+    if discovery is not None:
+        discovery["annotation_index_space"] = implied["annotation_index_space"]
     merged, releases = merge_implied(implied["by_container"], side, name,
                                      settle=settle_by_row_label)
 
@@ -3418,6 +3561,8 @@ def project_observation(fixture: Mapping[str, object], trace: FrameTrace,
                      # settle it" is a fact with no cause attached, and the
                      # 20260816T142848 stop cost a round trip working out that
                      # the dictionary knew `L` but not `N`.
+                     "annotation_index_space": implied[
+                         "annotation_index_space"],
                      "label_dictionary": dictionary.as_dict(),
                      "fixture_label_dictionary": (
                          dictionaries[-1].as_dict()
@@ -3850,6 +3995,7 @@ ORACLE_HARNESS_FUNCTIONS: Tuple[str, ...] = (
     "ProducerSession", "source_factory",
     "bind_source_arguments", "trace_call", "canonical_value", "growth_events",
     "_added_once", "_flipped_once", "_resolve_annotation_token",
+    "annotation_index_spaces", "_sample_sequence",
     "_resolve_peak_in_scope", "implied_mappings", "merge_implied",
     "probe_injection_invariance", "_elementwise", "_settle_with",
     "discover_stub_surface",

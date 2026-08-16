@@ -276,21 +276,26 @@ def test_the_execution_approval_is_recorded_rather_than_implied():
     **not** cover.  `granted: False` remains an exact one-value revert.
     """
     record = P3.EXECUTION_APPROVAL_RECORD
-    check(record["granted"] is True, "the record grants read-only execution")
+    check(record["granted"] is False,
+          "the committed record does not grant execution: Codex closed it "
+          "when the projection changed")
+    check(record["closed_on"] == "2026-08-16"
+          and "filtered annotation index" in str(record["closed_because"]),
+          "and it says when it was closed and why, rather than reverting to a "
+          "state indistinguishable from never having been approved")
     check(record["granted_on"] == "2026-08-16" and record["granted_by"] ==
-          "user", "and names when it was granted and by whom")
+          "user", "while keeping what was granted, when, and by whom")
     check(record["supersedes"]["withdrawn_on"] == "2026-08-16"
           and "oracle_harness_sha256" in
           str(record["supersedes"]["withdrawn_because"]),
-          "while keeping the withdrawn one and the reason it lapsed, so the "
-          "history reads as a decision rather than as an edit")
+          "and the one before that, so the history reads as decisions rather "
+          "than as edits")
     check("read-only" in str(record["kind"]),
           "the approval is for a read-only run")
     check(any("drive.readonly" in entry for entry in record["approved"]),
           "which reads the registered file under exactly drive.readonly")
-    check(P3.APPROVAL_NOTE.startswith("Approved (2026-08-16)")
-          and "NOT approved by it" in P3.APPROVAL_NOTE,
-          "the note states both halves of the boundary")
+    check("NOT approved by it" in P3.APPROVAL_NOTE,
+          "the note states both halves of the boundary that was drawn")
 
 
 def test_the_approval_is_bound_to_the_harness_it_was_given_for():
@@ -307,12 +312,16 @@ def test_the_approval_is_bound_to_the_harness_it_was_given_for():
     check(record["for_oracle_harness_sha256"] == current,
           f"the approval names this module's harness: {current}")
     saved = record["for_oracle_harness_sha256"]
+    # The guard is opened for this check on purpose: `granted` is the barrier
+    # a fresh approval flips, and the digest binding is the gate *below* it.
+    # A gate nobody tested is a gate nobody has.
     try:
         record["for_oracle_harness_sha256"] = "0" * 64
         try:
-            P3.run_p3("/nonexistent/out", approval=TOKEN,
-                      open_registered_data=True, timestamp=STAMP,
-                      emit=lambda _message: None)
+            with opened_guard():
+                P3.run_p3("/nonexistent/out", approval=TOKEN,
+                          open_registered_data=True, timestamp=STAMP,
+                          emit=lambda _message: None)
         except P3.P3NotApprovedError as error:
             check("is not an approval of this run" in str(error),
                   "an approval for another harness refuses the run")
@@ -2763,6 +2772,192 @@ SOURCE_RULE_PRODUCER = REGISTERED_SHAPED_PRODUCER.replace(
     '    y = [0 if tlb[j] == "N" else (1 if tlb[j] == "S" else 2) for j in li]')
 
 
+#: The registered rule **with its filter**, which is what run 20260816T161639
+#: actually ran against and what Codex's review established from the source::
+#:
+#:     keep = [(p, AAMI[s]) for p, s in zip(ann_sample, ann_symbol)
+#:             if AAMI.get(s) in C2I]
+#:
+#: so non-AAMI annotations are gone *before* matching, and every index in the
+#: producer's trace is a position in the filtered list.
+FILTERING_SOURCE_PRODUCER = SOURCE_RULE_PRODUCER.replace(
+    '    tpk = [int(s) for s in ann_sample]\n'
+    '    tlb = [AAMI.get(str(s), "") for s in ann_symbol]',
+    '    keep = [(int(t), AAMI[str(l)]) for t, l in zip(ann_sample, ann_symbol)\n'
+    '            if AAMI.get(str(l))]\n'
+    '    tpk = [t for t, _l in keep]\n'
+    '    tlb = [l for _t, l in keep]')
+
+
+def _source_rows(result, fixture_name):
+    entry = next(e for e in result["detail"] if e["name"] == fixture_name)
+    return {row["peak_sample"]: (row["annotation_index"], row["symbol"])
+            for row in entry["source"]["kept_rows"]}
+
+
+def test_a_filtered_index_is_read_in_the_filtered_space():
+    """Codex's blocker: `j` is a position in the producer's list, not the reader's.
+
+    The registered `build_record()` drops non-AAMI annotations before matching,
+    so with `['+', 'N', 'A', …]` in and `['N', 'A', …]` kept, the producer's
+    `j = 0` means **`N`** — original ordinal 1.  Read in the reader's space it
+    means `'+'`, ordinal 0, which is an annotation the source cannot have
+    matched at all: it was gone before matching started.  A wrong ordinal does
+    not fail loudly; it names the wrong annotation in a published result.
+    """
+    result = differential_for(FILTERING_SOURCE_PRODUCER)
+    rows = _source_rows(result,
+                        "test_source_match_non_aami_symbol_consumes_its_match")
+    check(rows[1000] == (1, "N"),
+          f"peak 1000 maps to original ordinal 1, 'N': {rows.get(1000)}")
+    check(rows[1000] != (0, "+"),
+          "and never to ordinal 0, the '+' the source filtered out before it "
+          "matched anything")
+    fixture = P3.FIXTURES_BY_NAME[
+        "test_source_match_non_aami_symbol_consumes_its_match"]
+    consumed = next(e for e in result["detail"]
+                    if e["name"] == fixture["name"])["source"][
+                        "consumed_annotations"]
+    check(all(a["symbol"] != "+" for a in consumed),
+          f"no non-AAMI annotation appears as consumed by the source: "
+          f"{[(a['index'], a['symbol']) for a in consumed]}")
+
+
+def test_the_filtered_mapping_holds_when_list_order_is_not_sample_order():
+    """The space is read by sample equality, so ordering cannot disturb it."""
+    fixture = dict(P3.FIXTURES_BY_NAME[
+        "test_source_match_annotation_order_differing_from_sample_order"])
+    trace = P3.FrameTrace()
+    # A producer that filtered the first annotation out of a list whose order
+    # is not sample order.  1060 is listed first and 1000 second.
+    samples = [int(s) for s, _y in fixture["annotations"]]
+    trace.steps = [{"step": 1, "line": 1, "event": "line",
+                    "changed": {"tpk": samples[1:]}}]
+    spaces = P3.annotation_index_spaces(trace, fixture)
+    check(spaces["filtered"] is True, "the shorter list is seen as a space")
+    check(spaces["space"]["ordinals"][0] == 1,
+          f"position 0 in it is original ordinal 1: "
+          f"{spaces['space']['ordinals'][:3]}")
+    resolved = P3._resolve_annotation_token(
+        0, P3._annotation_table(fixture),
+        dict(spaces["space"], filtered=True))
+    check(resolved["candidates"] == [1] or resolved["resolved"] == 1,
+          f"and the token 0 resolves there: {resolved}")
+    check("filtered_space" in resolved["reading"],
+          f"the reading says which space it was read in: {resolved['reading']}")
+
+
+def test_an_unmappable_index_space_stops_instead_of_guessing():
+    """Two lists that disagree, or one that repeats, are not a space."""
+    fixture = P3.FIXTURES[0]
+    samples = [int(s) for s, _y in fixture["annotations"]]
+    trace = P3.FrameTrace()
+    trace.steps = [{"step": 1, "line": 1, "event": "line",
+                    "changed": {"tpk": samples[1:], "other": samples[2:]}}]
+    try:
+        P3.annotation_index_spaces(trace, fixture)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_ANNOTATION_INDEX_SPACE_UNREADABLE,
+              "two disagreeing lists stop the run")
+        check("choosing would be guessing" in str(error),
+              "rather than one of them being picked")
+    else:                                                    # pragma: no cover
+        raise AssertionError("two index spaces were reconciled by guessing")
+    repeated = P3.FrameTrace()
+    repeated.steps = [{"step": 1, "line": 1, "event": "line",
+                       "changed": {"tpk": [samples[1], samples[1]]}}]
+    try:
+        P3.annotation_index_spaces(repeated, fixture)
+    except P3.SourceHarnessError as error:
+        check(error.status == P3.P3_ANNOTATION_INDEX_SPACE_UNREADABLE,
+              "a list that repeats a sample stops too")
+    else:                                                    # pragma: no cover
+        raise AssertionError("a repeated sample was mapped anyway")
+    check(P3.P3_ANNOTATION_INDEX_SPACE_UNREADABLE in P3.HARNESS_STOPS,
+          "and the stop is a harness stop, so it yields no verdict")
+
+
+def test_a_producer_that_filters_every_annotation_keeps_nothing():
+    """The empty end of the same contract, stated rather than left implicit."""
+    everything = FILTERING_SOURCE_PRODUCER.replace(
+        'if AAMI.get(str(l))]', 'if False]')
+    result = differential_for(everything)
+    for entry in result["detail"]:
+        check(entry["source"]["kept_rows"] == [],
+              f"{entry['name']}: a producer that filtered everything keeps no "
+              f"rows")
+        check(entry["source"]["consumed_annotations"] == [],
+              f"{entry['name']}: and consumes nothing")
+        check(entry["equal"] is False,
+              f"{entry['name']}: which is a disagreement with the adapter, "
+              f"not a harness stop")
+    check(result["fixtures_passed"] == 0,
+          "the run completes and reports it as a result")
+
+
+def test_the_two_settled_disagreements_are_unchanged_by_this_fix():
+    """The top-level verdict rests on these two, and they must not move."""
+    result = differential_for(FILTERING_SOURCE_PRODUCER)
+    check(result["fixtures_passed"] == 3 and result["all_equal"] is False,
+          f"3 of 6 equal, as the run reported: {result['fixtures_passed']}/6")
+    disagreed = sorted(entry["name"] for entry in result["detail"]
+                       if not entry["equal"])
+    check(disagreed == ["test_source_match_annotation_order_differing_from_"
+                        "sample_order",
+                        "test_source_match_nearest_already_used_falls_through",
+                        "test_source_match_non_aami_symbol_consumes_its_match"],
+          f"and they are the same three fixtures: {disagreed}")
+    rows = _source_rows(result,
+                        "test_source_match_nearest_already_used_falls_through")
+    check(rows.get(1000) == (0, "N") and 1012 not in rows,
+          f"the drop-if-nearest-used finding is untouched: {rows.get(1000)}, "
+          f"peak 1012 kept={1012 in rows}")
+    rows = _source_rows(
+        result, "test_source_match_annotation_order_differing_from_sample_order")
+    check(rows.get(1030) == (0, "V"),
+          f"and so is the list-order finding: {rows.get(1030)}")
+
+
+def test_the_previous_projection_would_fail_the_non_aami_regression():
+    """The mutation: without the space, the filtered index names the wrong one."""
+    fixture = P3.FIXTURES_BY_NAME[
+        "test_source_match_non_aami_symbol_consumes_its_match"]
+    annotations = P3._annotation_table(fixture)
+    samples = [int(s) for s, _y in fixture["annotations"]]
+    space = {"ordinals": [annotations[i]["index"] for i in range(1, len(samples))],
+             "rank_ordinals": [annotations[i]["index"]
+                               for i in range(1, len(samples))],
+             "filtered": True}
+    with_space = P3._resolve_annotation_token(0, annotations, space)
+    without = P3._resolve_annotation_token(0, annotations, None)
+    check(with_space["resolved"] == 1,
+          f"in the filtered space, 0 is ordinal 1: {with_space}")
+    check(without["resolved"] == 0,
+          f"without it, 0 is ordinal 0 — the '+' the source never matched: "
+          f"{without}")
+    check(annotations[0]["symbol"] == "+" and annotations[1]["symbol"] == "N",
+          "which is exactly the substitution Codex found in the bundle")
+
+
+def test_the_fixtures_and_the_adapter_are_untouched_by_the_projection_fix():
+    check(list(P3.fixture_names()) == list(P3.REQUIRED_FIXTURES)
+          and len(P3.REQUIRED_FIXTURES) == 6,
+          "the six required fixtures are the six that run")
+    check(P3.FILLER_PEAKS == (1500, 1740, 1980, 2220, 2460, 2700)
+          and P3.FILLER_SYMBOLS == ("A", "L", "J", "R", "a", "e"),
+          "the D21 filler is unchanged, as accepted")
+    check(Q5E.source_match_adapter_fingerprint() ==
+          "85c5e2599f8680ca122152fa4daa0936d0393fec2b33048b29f75c81e3895bb5",
+          "the adapter fingerprint is unchanged")
+    check(P3.TOLERANCE == Q5E.M4_PEAK_MATCH_TOLERANCE_SAMPLES == 54,
+          "and the tolerance is the registered one")
+    check(Q5E.SOURCE_MATCH_ORACLE_RECORD is None,
+          "SOURCE_MATCH_ORACLE_RECORD is still None")
+    check(P3.EXECUTION_APPROVAL_RECORD["granted"] is False
+          and P3.OPEN_REGISTERED_DATA is False,
+          "and execution is closed, as this PR requires")
+
+
 def test_a_class_code_settles_what_a_symbol_never_taught():
     """The stop of `20260816T142848`, and why the dictionary could not settle it.
 
@@ -4018,7 +4213,7 @@ def test_module_capabilities_are_all_present():
               f"and the list advertises {name}")
     card = P3.design_card()
     check(P3.REGISTERED_SOURCE_FILE_ID in card
-          and "APPROVED 2026-08-16 by user (read-only)" in card
+          and "NOT APPROVED" in card
           and "None (unchanged by this module)" in card,
           "the design card states the target, the approval state and that "
           "nothing is registered")
