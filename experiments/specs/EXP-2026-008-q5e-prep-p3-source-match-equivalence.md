@@ -481,6 +481,37 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D24 (2026-08-16) — `frontend.compare_features` builds `ref` and `sim`, and
+the producer said how many values it returns.**  Run `20260816T125027` stopped
+on `frontend.compare_features`, and the discovery pass stopped *behind* it with
+`ValueError: not enough values to unpack (expected 2, got 0)`.  That message
+is evidence, not noise: the producer unpacks the result into **two**, which is
+exactly the two record columns still unaccounted for (`ref` and `sim`), and
+V10's registered `ARMS` carries a `compare` arm beside them.  So the stub
+returns two blocks, both under the same row convention as every other feature
+producer.  The arity is not a guess — it is what the producer demanded.
+
+**The pass now reads an arity back and keeps going.**  A stand-in that unpacks
+into nothing ends the discovery one name early, which is what happened here:
+the `WIN_BEFORE` round reported "reached the end" and this round did not, for a
+reason that had nothing to do with the surface.  On an unpacking error the pass
+retries with the number the producer named, bounded by
+`MAX_DISCOVERY_ATTEMPTS` and only ever driven by a *new* number, so it cannot
+search.  Every attempt is recorded, including the failed one.  Demonstrated by
+a producer that unpacks an undeclared helper into two and then reads another
+undeclared name: the old pass reported one name, this one reports both.
+
+Regressions: `test_the_declared_surface_covers_the_compare_producer` and
+`test_the_discovery_pass_reads_an_arity_back_and_keeps_going`.  Suite: 107
+functions, 1,137 assertions.  Bundle `b1d4d4ce…` / manifest `381a1208…` at
+`runs/20260816T125027_…` is preserved.
+
+**Where this stands.**  Six of the seven record columns now have a declared
+producer: `beat` (windowing), `rr`, `pw`, `ctx`, `ref` and `sim`, plus `y` from
+the labels.  The surface has been the whole cost of the last four rounds, and
+it is now, by the pass's own reckoning, complete up to what a stand-in can
+reveal.
+
 **D23 (2026-08-16) — the window comes from `frontend` too; and the harness
 identity was not covering the injected surface at all.**  Run
 `20260816T121935` ran the whole producer: `detect_r` returned 8 peaks,

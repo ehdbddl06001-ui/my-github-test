@@ -2568,6 +2568,74 @@ def test_the_harness_identity_covers_the_injected_surface():
           "change closes the door until it is renewed")
 
 
+#: A producer that unpacks an undeclared helper into two, and then reads
+#: another undeclared name.  The 20260816T125027 pass stopped at the unpack —
+#: `ValueError: not enough values to unpack (expected 2, got 0)` — and never
+#: saw the second name.
+UNPACKING_PRODUCER = Z_USING_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS, _z",
+    "from .frontend import detect_r, rr_features, FS, _z\n"
+    "import frontend as FE").replace(
+    "    rr_all = rr_features(peaks, FS)",
+    "    _first, _second = FE.pair_returning_helper(1)\n"
+    "    _after = FE.name_after_the_unpack\n"
+    "    rr_all = rr_features(peaks, FS)")
+
+
+def test_the_declared_surface_covers_the_compare_producer():
+    """`frontend.compare_features` builds `ref` and `sim`, and returns two.
+
+    The arity is not a guess: run `20260816T125027` produced `ValueError: not
+    enough values to unpack (expected 2, got 0)` from the producer itself, and
+    V10's registered `ARMS` carries a `compare` arm beside the two remaining
+    record columns.
+    """
+    check("compare_features" in P3.INJECTED_GLOBALS,
+          "the injected globals carry compare_features")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        returned = sys.modules["frontend"].compare_features([1000, 1012], 360)
+    check(len(returned) == 2,
+          f"it returns exactly the two blocks the producer unpacks: "
+          f"{len(returned)}")
+    for index, block in enumerate(returned):
+        rows = [list(row) for row in block]
+        check([row[0] for row in rows] == [1000.0, 1012.0],
+              f"block {index} names the peak each row was built for: {rows}")
+    check({"ref", "sim"} <= set(P3.COLUMNAR_RECORD_KEYS),
+          "and the two columns it is declared for are registered ones")
+
+
+def test_the_discovery_pass_reads_an_arity_back_and_keeps_going():
+    """A stand-in that unpacks into nothing ends the pass one name early.
+
+    The producer says how many values it wanted, so the retry is reading the
+    refusal rather than working around it — and a retry that is not driven by
+    a new number the producer named does not happen.
+    """
+    try:
+        differential_for(UNPACKING_PRODUCER)
+    except P3.SourceHarnessError as error:
+        discovery = error.context["surface_discovery"]
+        check(discovery["undeclared_names"] ==
+              ["frontend.pair_returning_helper",
+               "frontend.name_after_the_unpack"],
+              f"the pass gets past the unpack and reports the name behind it: "
+              f"{discovery['undeclared_names']}")
+        check(discovery["unpack_arity_used"] == 2
+              and discovery["reached_the_end"] is True,
+              f"using the arity the producer itself named: {discovery}")
+        attempts = discovery["attempts"]
+        check(len(attempts) == 2 and attempts[0]["unpack_arity"] == 0
+              and "expected 2" in str(attempts[0]["stopped_with"]),
+              f"and every attempt is recorded, including the one that failed: "
+              f"{attempts}")
+    else:                                                    # pragma: no cover
+        raise AssertionError("the unpacking producer did not stop the run")
+    check(P3.MAX_DISCOVERY_ATTEMPTS >= 2,
+          "the retry is bounded rather than a search")
+
+
 def test_the_discovery_pass_reports_itself_as_a_lower_bound():
     """A stand-in answers where a value would, and control flow can differ.
 

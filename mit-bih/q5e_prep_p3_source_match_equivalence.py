@@ -67,6 +67,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import sys
 import types
 from typing import (Callable, Dict, List, Mapping, Optional, Sequence, Set,
@@ -244,17 +245,17 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "bf01a0a43cb7b1867b6055a3ef41b0d26af8a39fca8b68e263525f6d4a9c094d"),
+        "f8feabc53d65ee56549b8fb8ee44ddd459edfef5f343f8f9b3b0edf7db1db1bc"),
     "renewed_for_this_harness_because": (
-        "run 20260816T121935 established that the registered producer takes "
-        "its beat window from frontend.WIN_BEFORE, so the injected surface "
-        "now declares the registered 150/150 pair from the frozen Q5-D "
-        "module.  This renewal also covers a fix to the guard itself: the "
-        "harness identity did not fold the injected surface, so a declared "
-        "constant added on its own left the digest unmoved while changing "
-        "what the oracle observes.  It folds it now.  The fixtures (as "
-        "revised in D21, which the spec owner should still review), the rule, "
-        "the tolerance and the verdict criteria are unchanged"),
+        "run 20260816T125027 established that the registered producer reads "
+        "frontend.compare_features and unpacks it into two - the ref and sim "
+        "columns - so the injected surface declares it, with the arity the "
+        "producer itself named.  The discovery pass now reads an unpacking "
+        "arity back and keeps going, so a helper that returns a pair no "
+        "longer hides the names behind it.  Injection surface and diagnosis "
+        "only; the fixtures (as revised in D21, which the spec owner should "
+        "still review), the rule, the tolerance and the verdict criteria are "
+        "unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -863,7 +864,8 @@ def _elementwise(value: object, transform):
 def build_injection(fixture: Mapping[str, object],
                     log: Optional[StubCallLog] = None,
                     variant: str = STUB_VARIANT_PRIMARY,
-                    permissive: bool = False
+                    permissive: bool = False,
+                    unpack_arity: int = 0
                     ) -> Tuple[Dict[str, object], StubCallLog]:
     """The stub surface a producer may reach, and the log of what it reached.
 
@@ -943,6 +945,31 @@ def build_injection(fixture: Mapping[str, object],
         return (numpy.array(rows, dtype="float64") if numpy is not None
                 else rows)
 
+    def compare_features(*args: object, **kwargs: object):
+        """The producer of the record's `ref` and `sim` columns.
+
+        Run `20260816T125027` established two things at once: `build_record`
+        reads `frontend.compare_features`, and it **unpacks the result into
+        two** — the discovery pass got `ValueError: not enough values to
+        unpack (expected 2, got 0)`.  Two blocks beside `beat`, and V10's
+        registered `ARMS` carries a `compare` arm, so this is the pair the
+        cache calls `ref` and `sim`.
+
+        Both come back under the same row convention as every other feature
+        producer: one row per peak handed in, that peak in the first column.
+        The arity is not a guess — it is what the producer itself demanded.
+        """
+        given = _peak_argument(args)
+        log.record("frontend.compare_features", given=list(given),
+                   n_args=len(args), kwargs=sorted(kwargs))
+        rows = [[float(p)] + [0.0] * 4 for p in given]
+        numpy = _numpy()
+        block = (numpy.array(rows, dtype="float64") if numpy is not None
+                 else rows)
+        second = (numpy.array(rows, dtype="float64") if numpy is not None
+                  else [list(row) for row in rows])
+        return block, second
+
     def beat_ctx(*args: object, **kwargs: object):
         """The producer of the record's `ctx` column.
 
@@ -1002,8 +1029,19 @@ def build_injection(fixture: Mapping[str, object],
                        declared=False, permissive=permissive)
             if permissive:
                 import unittest.mock                          # noqa: PLC0415
-                return unittest.mock.MagicMock(
+                stand_in = unittest.mock.MagicMock(
                     name=f"undeclared:{module_name}.{name}")
+                if unpack_arity:
+                    # A producer that writes `a, b = helper(...)` refuses a
+                    # stand-in that unpacks into nothing, and the pass stops
+                    # one name early.  The arity is not guessed: it is read
+                    # back from the producer's own ValueError and fed in here
+                    # on a retry, which is why this is a parameter.
+                    stand_in.return_value = tuple(
+                        unittest.mock.MagicMock(
+                            name=f"undeclared:{module_name}.{name}[{i}]")
+                        for i in range(unpack_arity))
+                return stand_in
             raise StubAttributeMissing(module_name, name)
 
         return __getattr__
@@ -1011,7 +1049,7 @@ def build_injection(fixture: Mapping[str, object],
     return ({"rdrecord": rdrecord, "rdann": rdann, "rdsamp": rdsamp,
              "dl_database": dl_database, "detect_r": detect_r,
              "rr_features": rr_features, "pwave_features": pwave_features,
-             "beat_ctx": beat_ctx,
+             "beat_ctx": beat_ctx, "compare_features": compare_features,
              "_z": _z, "_variant": variant,
              "_missing_attribute": missing_attribute,
              "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
@@ -1024,8 +1062,8 @@ def build_injection(fixture: Mapping[str, object],
 #: Rebound after execution as well as before, so `import wfdb` and `from
 #: .frontend import detect_r` are both covered.
 INJECTED_GLOBALS: Tuple[str, ...] = (
-    ("detect_r", "rr_features", "pwave_features", "beat_ctx")
-    + FRONTEND_STUB_FUNCTIONS)
+    ("detect_r", "rr_features", "pwave_features", "beat_ctx",
+     "compare_features") + FRONTEND_STUB_FUNCTIONS)
 INJECTED_MODULE_NAMES: Tuple[str, ...] = (
     "wfdb", "frontend", "pwave", REGISTERED_SOURCE_PACKAGE,
     f"{REGISTERED_SOURCE_PACKAGE}.frontend",
@@ -1073,7 +1111,9 @@ class InjectedModules(object):
             for k in ("rdrecord", "rdann", "rdsamp", "dl_database")})
         frontend_surface = {"detect_r": self.stubs["detect_r"],
                             "rr_features": self.stubs["rr_features"],
-                            "beat_ctx": self.stubs["beat_ctx"]}
+                            "beat_ctx": self.stubs["beat_ctx"],
+                            "compare_features":
+                                self.stubs["compare_features"]}
         frontend_surface.update({name: self.stubs[name]
                                  for name in FRONTEND_STUB_FUNCTIONS})
         frontend = self._surface("frontend", frontend_surface)
@@ -1544,17 +1584,19 @@ class ProducerSession(object):
     only get the producer inside a `with` block.
     """
 
-    __slots__ = ("permit", "fixture", "variant", "permissive", "stubs", "log",
-                 "_injection", "_module")
+    __slots__ = ("permit", "fixture", "variant", "permissive", "unpack_arity",
+                 "stubs", "log", "_injection", "_module")
 
     def __init__(self, permit: SourcePermit,
                  fixture: Mapping[str, object],
                  variant: str = STUB_VARIANT_PRIMARY,
-                 permissive: bool = False) -> None:
+                 permissive: bool = False,
+                 unpack_arity: int = 0) -> None:
         self.permit = permit
         self.fixture = fixture
         self.variant = variant
         self.permissive = permissive
+        self.unpack_arity = unpack_arity
         self.stubs: Dict[str, object] = {}
         self.log = StubCallLog()
         self._injection: Optional[InjectedModules] = None
@@ -1563,7 +1605,8 @@ class ProducerSession(object):
     def __enter__(self) -> Tuple[Callable, StubCallLog]:
         self.stubs, self.log = build_injection(self.fixture,
                                                variant=self.variant,
-                                               permissive=self.permissive)
+                                               permissive=self.permissive,
+                                               unpack_arity=self.unpack_arity)
         self._injection = InjectedModules(self.stubs)
         self._injection.__enter__()
         try:
@@ -1596,9 +1639,11 @@ def source_factory(permit: SourcePermit) -> Callable:
 
     def open_producer(fixture: Mapping[str, object],
                       variant: str = STUB_VARIANT_PRIMARY,
-                      permissive: bool = False) -> ProducerSession:
+                      permissive: bool = False,
+                      unpack_arity: int = 0) -> ProducerSession:
         return ProducerSession(permit, fixture, variant=variant,
-                               permissive=permissive)
+                               permissive=permissive,
+                               unpack_arity=unpack_arity)
 
     return open_producer
 
@@ -3375,6 +3420,12 @@ SURFACE_DISCOVERY_NOTE = (
     "for real.")
 
 
+#: How many times a discovery pass may retry with an arity read back from the
+#: producer's own unpacking error.  A bound, not a search: each retry must be
+#: driven by a *new* number the producer named, so a loop cannot invent one.
+MAX_DISCOVERY_ATTEMPTS = 4
+
+
 def discover_stub_surface(open_source: Callable,
                           fixture: Mapping[str, object]) -> Dict[str, object]:
     """List every undeclared name a producer would ask for, in one pass.
@@ -3393,30 +3444,53 @@ def discover_stub_surface(open_source: Callable,
     names: List[str] = []
     error: Optional[str] = None
     completed = False
-    try:
-        with open_source(fixture, STUB_VARIANT_PRIMARY,
-                         permissive=True) as (build_record, log):
-            try:
-                binding = bind_source_arguments(build_record, fixture)
-                build_record(**dict(binding["kwargs"]))
-                completed = True
-            except BaseException as problem:                 # noqa: BLE001
-                error = f"{type(problem).__name__}: {problem}"[:400]
-            for call in log.as_list():
-                requested = str(call.get("requested") or "")
-                if requested.startswith("__"):
-                    continue     # import machinery, not a dependency
-                if call.get("declared") is False and requested:
-                    name = f"{str(call['target']).split('.')[0]}.{requested}"
-                    if name not in names:
-                        names.append(name)
-    except BaseException as problem:                         # noqa: BLE001
-        error = f"{type(problem).__name__}: {problem}"[:400]
+    arity = 0
+    attempts: List[Dict[str, object]] = []
+
+    def collect(log: StubCallLog) -> None:
+        for call in log.as_list():
+            requested = str(call.get("requested") or "")
+            if requested.startswith("__"):
+                continue         # import machinery, not a dependency
+            if call.get("declared") is False and requested:
+                name = f"{str(call['target']).split('.')[0]}.{requested}"
+                if name not in names:
+                    names.append(name)
+
+    for _attempt in range(MAX_DISCOVERY_ATTEMPTS):
+        error, completed = None, False
+        try:
+            with open_source(fixture, STUB_VARIANT_PRIMARY, permissive=True,
+                             unpack_arity=arity) as (build_record, log):
+                try:
+                    binding = bind_source_arguments(build_record, fixture)
+                    build_record(**dict(binding["kwargs"]))
+                    completed = True
+                except BaseException as problem:             # noqa: BLE001
+                    error = f"{type(problem).__name__}: {problem}"[:400]
+                collect(log)
+        except BaseException as problem:                     # noqa: BLE001
+            error = f"{type(problem).__name__}: {problem}"[:400]
+        attempts.append({"unpack_arity": arity, "reached_the_end": completed,
+                         "stopped_with": error})
+        if completed or error is None:
+            break
+        # A producer that writes `a, b = helper(...)` refuses a stand-in that
+        # unpacks into nothing, and the pass would stop one name early.  The
+        # arity comes from the producer's own message, not from a guess, so
+        # retrying with it is reading the refusal rather than working around
+        # it.  Anything else ends the pass.
+        wanted = re.search(r"unpack \(expected (\d+)", error or "")
+        if not wanted or int(wanted.group(1)) == arity:
+            break
+        arity = int(wanted.group(1))
     return {"note": SURFACE_DISCOVERY_NOTE,
             "fixture": str(fixture["name"]),
             "undeclared_names": names,
             "reached_the_end": completed,
             "stopped_with": error,
+            "unpack_arity_used": arity,
+            "attempts": attempts,
             "is_an_observation": False}
 
 
