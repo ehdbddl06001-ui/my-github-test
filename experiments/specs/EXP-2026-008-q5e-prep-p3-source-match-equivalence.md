@@ -481,6 +481,81 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D24 (2026-08-16) — `frontend.compare_features` builds `ref` and `sim`, and
+the producer said how many values it returns.**  Run `20260816T125027` stopped
+on `frontend.compare_features`, and the discovery pass stopped *behind* it with
+`ValueError: not enough values to unpack (expected 2, got 0)`.  That message
+is evidence, not noise: the producer unpacks the result into **two**, which is
+exactly the two record columns still unaccounted for (`ref` and `sim`), and
+V10's registered `ARMS` carries a `compare` arm beside them.  So the stub
+returns two blocks, both under the same row convention as every other feature
+producer.  The arity is not a guess — it is what the producer demanded.
+
+**The pass now reads an arity back and keeps going.**  A stand-in that unpacks
+into nothing ends the discovery one name early, which is what happened here:
+the `WIN_BEFORE` round reported "reached the end" and this round did not, for a
+reason that had nothing to do with the surface.  On an unpacking error the pass
+retries with the number the producer named, bounded by
+`MAX_DISCOVERY_ATTEMPTS` and only ever driven by a *new* number, so it cannot
+search.  Every attempt is recorded, including the failed one.  Demonstrated by
+a producer that unpacks an undeclared helper into two and then reads another
+undeclared name: the old pass reported one name, this one reports both.
+
+Regressions: `test_the_declared_surface_covers_the_compare_producer` and
+`test_the_discovery_pass_reads_an_arity_back_and_keeps_going`.  Suite: 107
+functions, 1,137 assertions.  Bundle `b1d4d4ce…` / manifest `381a1208…` at
+`runs/20260816T125027_…` is preserved.
+
+**Where this stands.**  Six of the seven record columns now have a declared
+producer: `beat` (windowing), `rr`, `pw`, `ctx`, `ref` and `sim`, plus `y` from
+the labels.  The surface has been the whole cost of the last four rounds, and
+it is now, by the pass's own reckoning, complete up to what a stand-in can
+reveal.
+
+**D23 (2026-08-16) — the window comes from `frontend` too; and the harness
+identity was not covering the injected surface at all.**  Run
+`20260816T121935` ran the whole producer: `detect_r` returned 8 peaks,
+`rr_features`, `pwave_features` and `beat_ctx` were each handed the 7 that
+survived, `_z` was called once — and it read `frontend.WIN_BEFORE`.  The
+discovery pass added in D22 paid for itself immediately: **one** remaining
+undeclared name, and it **reached the end of `build_record`** with that name
+answered.
+
+`WIN_BEFORE`/`WIN_AFTER` are pinned to the frozen Q5-D module's registered
+150/150 — the pair the boundary rule `p - 150 >= 0 and p + 150 <= len(x)` is
+written from, the pair the candidate adapter applies, and the pair
+`stage_decomposition` describes both sides with.  One fixture exists solely to
+pin that line (peak 140 is cut by it), so any other value would move the thing
+the fixture was built to test.  That is the same kind of arithmetic
+justification `FS = 360` has, and the regression pins the relationship rather
+than the number.  Only `WIN_BEFORE` was observed; `WIN_AFTER` is declared with
+it because they are one constant in two halves and carry the same
+justification.
+
+**The discovery pass is a lower bound, and now says so.**  A stand-in answers
+where the real value would, so a producer that branches on what it got back
+may take a different path once the name is declared for real.  The note
+carries that caveat wherever the result goes.
+
+**The guard had a hole.**  `oracle_harness_sha256` folded the harness
+functions, the fixtures, the binding plan and its rationale — but **not the
+injected surface**.  Adding `WIN_BEFORE` on its own would therefore have left
+the digest unmoved, and with it the D18 execution approval, while changing what
+the producer under test actually does: a run under a different declared surface
+is a run of a different oracle.  The gap was invisible because every earlier
+surface change (`FS`, `_z`, `beat_ctx`) also edited a function's text.  The
+payload now folds the declared constants of all three stub modules, the
+injected function names and the stub variants, and
+`test_the_harness_identity_covers_the_injected_surface` pins it by moving a
+constant and requiring the digest to move.
+
+New regressions: `test_the_injected_window_is_the_registered_one` (a producer
+that takes its window from the injection agrees on all six fixtures, and the
+cut fixture's peak is cut by exactly this window),
+`test_the_discovery_pass_reports_itself_as_a_lower_bound`, and the identity
+test above.  Suite: 105 functions, 1,128 assertions.  Bundle `6b860151…` /
+manifest `d2a582a4…` at `runs/20260816T121935_…` is preserved.
+
 **D22 (2026-08-16) — the filler worked; `frontend.beat_ctx` is declared, and
 the surface is now discovered in one pass instead of one name per run.**  Run
 `20260816T031420` got past the beat-count guard: `detect_r` returned the 8

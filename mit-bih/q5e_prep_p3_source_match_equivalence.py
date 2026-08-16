@@ -67,6 +67,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import sys
 import types
 from typing import (Callable, Dict, List, Mapping, Optional, Sequence, Set,
@@ -244,16 +245,17 @@ EXECUTION_APPROVAL_RECORD: Dict[str, object] = {
     "granted": True,
     "granted_on": "2026-08-16",
     "for_oracle_harness_sha256": (
-        "50f3eb7c78838b10d6e54fc2140edb9d7cd1d664b8bde30a333f63a2419a20e1"),
+        "f8feabc53d65ee56549b8fb8ee44ddd459edfef5f343f8f9b3b0edf7db1db1bc"),
     "renewed_for_this_harness_because": (
-        "run 20260816T031420 got past the beat-count guard and stopped on an "
-        "undeclared name: the registered producer reads frontend.beat_ctx, "
-        "which builds the record's ctx column.  It is now declared under the "
-        "same row convention as the other feature producers, and a surface "
-        "discovery pass lists every remaining undeclared name at once instead "
-        "of one per round.  Injection surface and diagnosis only; the fixtures "
-        "(as revised in D21, which the spec owner should still review), the "
-        "rule, the tolerance and the verdict criteria are unchanged"),
+        "run 20260816T125027 established that the registered producer reads "
+        "frontend.compare_features and unpacks it into two - the ref and sim "
+        "columns - so the injected surface declares it, with the arity the "
+        "producer itself named.  The discovery pass now reads an unpacking "
+        "arity back and keeps going, so a helper that returns a pair no "
+        "longer hides the names behind it.  Injection surface and diagnosis "
+        "only; the fixtures (as revised in D21, which the spec owner should "
+        "still review), the rule, the tolerance and the verdict criteria are "
+        "unchanged"),
     "supersedes": {
         "granted_on": "2026-08-15",
         "withdrawn_on": "2026-08-16",
@@ -680,7 +682,27 @@ def fixture_card(name: str) -> Dict[str, object]:
 #: built around.  Injecting anything else would silently change the behaviour
 #: under test, which is the one thing an injection may never do.  A regression
 #: pins the arithmetic rather than the number.
-FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS}
+#:
+#: `WIN_BEFORE` and `WIN_AFTER` are the beat window, and the 20260816T121935
+#: run established that `build_record` reads the first of them from `frontend`
+#: rather than defining it.  They are pinned to the frozen Q5-D module's
+#: `WIN_BEFORE`/`WIN_AFTER`, which are the registered v10 lineage constants —
+#: the same 150/150 the boundary rule `p - 150 >= 0 and p + 150 <= len(x)` is
+#: written from, the same pair `stage_decomposition` describes both sides with,
+#: and the same pair the candidate adapter applies.  One fixture exists solely
+#: to pin that boundary (peak 140 is cut by it), so injecting any other value
+#: would move the line the fixture was built to test.
+#:
+#: Only `WIN_BEFORE` was observed being read.  `WIN_AFTER` is declared beside
+#: it because they are one constant in two halves — a window with a start and
+#: no end is not a window — and because they carry the *same* justification;
+#: declaring the pair costs nothing and a missing half costs a whole run.  The
+#: discovery pass cannot settle this on its own: a permissive stand-in answers
+#: `WIN_BEFORE`, and what a producer does next with a stand-in is not
+#: necessarily what it does with 150.
+FRONTEND_STUB_CONSTANTS: Dict[str, object] = {"FS": FIXTURE_FS,
+                                              "WIN_BEFORE": BJ.WIN_BEFORE,
+                                              "WIN_AFTER": BJ.WIN_AFTER}
 #: Helper functions the registered source reaches for, beyond the two the
 #: source map names.  The 20260815T235627 run established that `build_record`
 #: calls `frontend._z` while running.
@@ -842,7 +864,8 @@ def _elementwise(value: object, transform):
 def build_injection(fixture: Mapping[str, object],
                     log: Optional[StubCallLog] = None,
                     variant: str = STUB_VARIANT_PRIMARY,
-                    permissive: bool = False
+                    permissive: bool = False,
+                    unpack_arity: int = 0
                     ) -> Tuple[Dict[str, object], StubCallLog]:
     """The stub surface a producer may reach, and the log of what it reached.
 
@@ -922,6 +945,31 @@ def build_injection(fixture: Mapping[str, object],
         return (numpy.array(rows, dtype="float64") if numpy is not None
                 else rows)
 
+    def compare_features(*args: object, **kwargs: object):
+        """The producer of the record's `ref` and `sim` columns.
+
+        Run `20260816T125027` established two things at once: `build_record`
+        reads `frontend.compare_features`, and it **unpacks the result into
+        two** — the discovery pass got `ValueError: not enough values to
+        unpack (expected 2, got 0)`.  Two blocks beside `beat`, and V10's
+        registered `ARMS` carries a `compare` arm, so this is the pair the
+        cache calls `ref` and `sim`.
+
+        Both come back under the same row convention as every other feature
+        producer: one row per peak handed in, that peak in the first column.
+        The arity is not a guess — it is what the producer itself demanded.
+        """
+        given = _peak_argument(args)
+        log.record("frontend.compare_features", given=list(given),
+                   n_args=len(args), kwargs=sorted(kwargs))
+        rows = [[float(p)] + [0.0] * 4 for p in given]
+        numpy = _numpy()
+        block = (numpy.array(rows, dtype="float64") if numpy is not None
+                 else rows)
+        second = (numpy.array(rows, dtype="float64") if numpy is not None
+                  else [list(row) for row in rows])
+        return block, second
+
     def beat_ctx(*args: object, **kwargs: object):
         """The producer of the record's `ctx` column.
 
@@ -981,8 +1029,19 @@ def build_injection(fixture: Mapping[str, object],
                        declared=False, permissive=permissive)
             if permissive:
                 import unittest.mock                          # noqa: PLC0415
-                return unittest.mock.MagicMock(
+                stand_in = unittest.mock.MagicMock(
                     name=f"undeclared:{module_name}.{name}")
+                if unpack_arity:
+                    # A producer that writes `a, b = helper(...)` refuses a
+                    # stand-in that unpacks into nothing, and the pass stops
+                    # one name early.  The arity is not guessed: it is read
+                    # back from the producer's own ValueError and fed in here
+                    # on a retry, which is why this is a parameter.
+                    stand_in.return_value = tuple(
+                        unittest.mock.MagicMock(
+                            name=f"undeclared:{module_name}.{name}[{i}]")
+                        for i in range(unpack_arity))
+                return stand_in
             raise StubAttributeMissing(module_name, name)
 
         return __getattr__
@@ -990,7 +1049,7 @@ def build_injection(fixture: Mapping[str, object],
     return ({"rdrecord": rdrecord, "rdann": rdann, "rdsamp": rdsamp,
              "dl_database": dl_database, "detect_r": detect_r,
              "rr_features": rr_features, "pwave_features": pwave_features,
-             "beat_ctx": beat_ctx,
+             "beat_ctx": beat_ctx, "compare_features": compare_features,
              "_z": _z, "_variant": variant,
              "_missing_attribute": missing_attribute,
              "_constants": {"wfdb": dict(WFDB_STUB_CONSTANTS),
@@ -1003,8 +1062,8 @@ def build_injection(fixture: Mapping[str, object],
 #: Rebound after execution as well as before, so `import wfdb` and `from
 #: .frontend import detect_r` are both covered.
 INJECTED_GLOBALS: Tuple[str, ...] = (
-    ("detect_r", "rr_features", "pwave_features", "beat_ctx")
-    + FRONTEND_STUB_FUNCTIONS)
+    ("detect_r", "rr_features", "pwave_features", "beat_ctx",
+     "compare_features") + FRONTEND_STUB_FUNCTIONS)
 INJECTED_MODULE_NAMES: Tuple[str, ...] = (
     "wfdb", "frontend", "pwave", REGISTERED_SOURCE_PACKAGE,
     f"{REGISTERED_SOURCE_PACKAGE}.frontend",
@@ -1052,7 +1111,9 @@ class InjectedModules(object):
             for k in ("rdrecord", "rdann", "rdsamp", "dl_database")})
         frontend_surface = {"detect_r": self.stubs["detect_r"],
                             "rr_features": self.stubs["rr_features"],
-                            "beat_ctx": self.stubs["beat_ctx"]}
+                            "beat_ctx": self.stubs["beat_ctx"],
+                            "compare_features":
+                                self.stubs["compare_features"]}
         frontend_surface.update({name: self.stubs[name]
                                  for name in FRONTEND_STUB_FUNCTIONS})
         frontend = self._surface("frontend", frontend_surface)
@@ -1523,17 +1584,19 @@ class ProducerSession(object):
     only get the producer inside a `with` block.
     """
 
-    __slots__ = ("permit", "fixture", "variant", "permissive", "stubs", "log",
-                 "_injection", "_module")
+    __slots__ = ("permit", "fixture", "variant", "permissive", "unpack_arity",
+                 "stubs", "log", "_injection", "_module")
 
     def __init__(self, permit: SourcePermit,
                  fixture: Mapping[str, object],
                  variant: str = STUB_VARIANT_PRIMARY,
-                 permissive: bool = False) -> None:
+                 permissive: bool = False,
+                 unpack_arity: int = 0) -> None:
         self.permit = permit
         self.fixture = fixture
         self.variant = variant
         self.permissive = permissive
+        self.unpack_arity = unpack_arity
         self.stubs: Dict[str, object] = {}
         self.log = StubCallLog()
         self._injection: Optional[InjectedModules] = None
@@ -1542,7 +1605,8 @@ class ProducerSession(object):
     def __enter__(self) -> Tuple[Callable, StubCallLog]:
         self.stubs, self.log = build_injection(self.fixture,
                                                variant=self.variant,
-                                               permissive=self.permissive)
+                                               permissive=self.permissive,
+                                               unpack_arity=self.unpack_arity)
         self._injection = InjectedModules(self.stubs)
         self._injection.__enter__()
         try:
@@ -1575,9 +1639,11 @@ def source_factory(permit: SourcePermit) -> Callable:
 
     def open_producer(fixture: Mapping[str, object],
                       variant: str = STUB_VARIANT_PRIMARY,
-                      permissive: bool = False) -> ProducerSession:
+                      permissive: bool = False,
+                      unpack_arity: int = 0) -> ProducerSession:
         return ProducerSession(permit, fixture, variant=variant,
-                               permissive=permissive)
+                               permissive=permissive,
+                               unpack_arity=unpack_arity)
 
     return open_producer
 
@@ -3348,7 +3414,16 @@ SURFACE_DISCOVERY_NOTE = (
     "ask for, so that one round declares all of them instead of one per round. "
     "Nothing it computed is read: not a return value, not a trace, not a row. "
     "The refusal itself is unchanged - a real run still stops at the first "
-    "undeclared name.")
+    "undeclared name.  Read the list as a LOWER BOUND: a stand-in answers "
+    "where the real value would, and a producer that branches on what it got "
+    "back may take a different path than it will once the name is declared "
+    "for real.")
+
+
+#: How many times a discovery pass may retry with an arity read back from the
+#: producer's own unpacking error.  A bound, not a search: each retry must be
+#: driven by a *new* number the producer named, so a loop cannot invent one.
+MAX_DISCOVERY_ATTEMPTS = 4
 
 
 def discover_stub_surface(open_source: Callable,
@@ -3369,30 +3444,53 @@ def discover_stub_surface(open_source: Callable,
     names: List[str] = []
     error: Optional[str] = None
     completed = False
-    try:
-        with open_source(fixture, STUB_VARIANT_PRIMARY,
-                         permissive=True) as (build_record, log):
-            try:
-                binding = bind_source_arguments(build_record, fixture)
-                build_record(**dict(binding["kwargs"]))
-                completed = True
-            except BaseException as problem:                 # noqa: BLE001
-                error = f"{type(problem).__name__}: {problem}"[:400]
-            for call in log.as_list():
-                requested = str(call.get("requested") or "")
-                if requested.startswith("__"):
-                    continue     # import machinery, not a dependency
-                if call.get("declared") is False and requested:
-                    name = f"{str(call['target']).split('.')[0]}.{requested}"
-                    if name not in names:
-                        names.append(name)
-    except BaseException as problem:                         # noqa: BLE001
-        error = f"{type(problem).__name__}: {problem}"[:400]
+    arity = 0
+    attempts: List[Dict[str, object]] = []
+
+    def collect(log: StubCallLog) -> None:
+        for call in log.as_list():
+            requested = str(call.get("requested") or "")
+            if requested.startswith("__"):
+                continue         # import machinery, not a dependency
+            if call.get("declared") is False and requested:
+                name = f"{str(call['target']).split('.')[0]}.{requested}"
+                if name not in names:
+                    names.append(name)
+
+    for _attempt in range(MAX_DISCOVERY_ATTEMPTS):
+        error, completed = None, False
+        try:
+            with open_source(fixture, STUB_VARIANT_PRIMARY, permissive=True,
+                             unpack_arity=arity) as (build_record, log):
+                try:
+                    binding = bind_source_arguments(build_record, fixture)
+                    build_record(**dict(binding["kwargs"]))
+                    completed = True
+                except BaseException as problem:             # noqa: BLE001
+                    error = f"{type(problem).__name__}: {problem}"[:400]
+                collect(log)
+        except BaseException as problem:                     # noqa: BLE001
+            error = f"{type(problem).__name__}: {problem}"[:400]
+        attempts.append({"unpack_arity": arity, "reached_the_end": completed,
+                         "stopped_with": error})
+        if completed or error is None:
+            break
+        # A producer that writes `a, b = helper(...)` refuses a stand-in that
+        # unpacks into nothing, and the pass would stop one name early.  The
+        # arity comes from the producer's own message, not from a guess, so
+        # retrying with it is reading the refusal rather than working around
+        # it.  Anything else ends the pass.
+        wanted = re.search(r"unpack \(expected (\d+)", error or "")
+        if not wanted or int(wanted.group(1)) == arity:
+            break
+        arity = int(wanted.group(1))
     return {"note": SURFACE_DISCOVERY_NOTE,
             "fixture": str(fixture["name"]),
             "undeclared_names": names,
             "reached_the_end": completed,
             "stopped_with": error,
+            "unpack_arity_used": arity,
+            "attempts": attempts,
             "is_an_observation": False}
 
 
@@ -3591,6 +3689,20 @@ def oracle_harness_identity() -> Dict[str, object]:
                "fixtures": [fixture_card(n) for n in fixture_names()],
                "binding_plan": [[list(a), k] for a, k in BINDING_PLAN],
                "binding_rationale": dict(sorted(BINDING_RATIONALE.items())),
+               # The injected surface *is* part of the oracle: a producer that
+               # reads `frontend.WIN_BEFORE` behaves according to the value it
+               # was handed, so a run under a different declared surface is a
+               # run of a different oracle.  Folding it in was missing until
+               # 2026-08-16 and the gap was masked by every earlier surface
+               # change having also edited a function's text — a declared
+               # constant added on its own would have left the digest, and so
+               # the recorded execution approval, unmoved.
+               "injected_constants": {
+                   "wfdb": dict(sorted(WFDB_STUB_CONSTANTS.items())),
+                   "frontend": dict(sorted(FRONTEND_STUB_CONSTANTS.items())),
+                   "pwave": dict(sorted(PWAVE_STUB_CONSTANTS.items()))},
+               "injected_functions": sorted(INJECTED_GLOBALS),
+               "stub_variants": list(STUB_VARIANTS),
                "tolerance": TOLERANCE, "win_before": BJ.WIN_BEFORE,
                "win_after": BJ.WIN_AFTER, "module_version": MODULE_VERSION}
     return {"oracle_harness_sha256": canonical_digest(payload),

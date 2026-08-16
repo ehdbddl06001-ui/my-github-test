@@ -2489,6 +2489,173 @@ def test_the_discovery_pass_can_never_become_a_result():
           "and an ordinary read is logged as the refusal it is")
 
 
+#: A producer that takes its window from `frontend` rather than defining it,
+#: the way the registered one turned out to.  The 20260816T121935 run
+#: established that `build_record` reads `frontend.WIN_BEFORE`.
+WINDOW_READING_PRODUCER = Z_USING_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS, _z",
+    "from .frontend import detect_r, rr_features, FS, _z, WIN_BEFORE, "
+    "WIN_AFTER").replace("WIN_BEFORE = 150\nWIN_AFTER = 150\n", "")
+
+
+def test_the_injected_window_is_the_registered_one():
+    """A constant is justified by arithmetic, never by taste.
+
+    `FS` is 360 because the source's own `int(0.15 * fs)` then lands on the
+    registered tolerance.  The window is the same kind of claim: 150/150 is
+    what the registered boundary rule is written from, what the candidate
+    adapter applies, and what `stage_decomposition` describes both sides with —
+    and one fixture exists solely to pin that line.
+    """
+    for name in ("WIN_BEFORE", "WIN_AFTER"):
+        check(name in P3.FRONTEND_STUB_CONSTANTS,
+              f"the injected frontend declares {name}")
+    check(P3.FRONTEND_STUB_CONSTANTS["WIN_BEFORE"] == BJ.WIN_BEFORE
+          and P3.FRONTEND_STUB_CONSTANTS["WIN_AFTER"] == BJ.WIN_AFTER,
+          "and takes both from the frozen Q5-D module rather than retyping "
+          "them, so they cannot drift from the rule they describe")
+    fixture = P3.FIXTURES_BY_NAME[
+        "test_source_match_boundary_cut_consumes_its_match"]
+    peak = int(fixture["peaks"][0])
+    check(peak - P3.FRONTEND_STUB_CONSTANTS["WIN_BEFORE"] < 0,
+          f"peak {peak} is cut by exactly this window, which is what that "
+          f"fixture exists to pin — a different value would move the line")
+    observation, _meta = P3.observe_adapter(fixture, P3.LabelDictionary())
+    check(observation["stages"]["window"] ==
+          [P3.FRONTEND_STUB_CONSTANTS["WIN_BEFORE"],
+           P3.FRONTEND_STUB_CONSTANTS["WIN_AFTER"]],
+          "the injected window is the one both sides are described with")
+    result = differential_for(WINDOW_READING_PRODUCER)
+    check(result["all_equal"] is True and result["fixtures_passed"] == 6,
+          "a producer that takes its window from the injection agrees on all "
+          "six fixtures")
+    check(result["stub_invariance_probed"] == ["invariant"],
+          "and the injection is still probed on every fixture")
+
+
+def test_the_harness_identity_covers_the_injected_surface():
+    """A run under a different declared surface is a run of a different oracle.
+
+    This was missing until 2026-08-16, and the gap was invisible because every
+    earlier surface change had also edited a function's text.  Adding
+    `WIN_BEFORE` on its own would have left the digest — and with it the
+    recorded execution approval — unmoved, while changing what the producer
+    under test actually does.
+    """
+    before = P3.oracle_harness_identity()["oracle_harness_sha256"]
+    saved = dict(P3.FRONTEND_STUB_CONSTANTS)
+    try:
+        P3.FRONTEND_STUB_CONSTANTS["WIN_BEFORE"] = 149
+        check(P3.oracle_harness_identity()["oracle_harness_sha256"] != before,
+              "changing a declared constant changes the harness identity")
+    finally:
+        P3.FRONTEND_STUB_CONSTANTS.clear()
+        P3.FRONTEND_STUB_CONSTANTS.update(saved)
+    check(P3.oracle_harness_identity()["oracle_harness_sha256"] == before,
+          "and restoring it restores the identity")
+    saved_globals = P3.INJECTED_GLOBALS
+    try:
+        P3.INJECTED_GLOBALS = saved_globals + ("something_new",)
+        check(P3.oracle_harness_identity()["oracle_harness_sha256"] != before,
+              "declaring another injected name changes it too")
+    finally:
+        P3.INJECTED_GLOBALS = saved_globals
+    identity = P3.oracle_harness_identity()
+    check(identity["oracle_harness_sha256"] == before,
+          "and the module is left exactly as it was")
+    check(P3.EXECUTION_APPROVAL_RECORD["for_oracle_harness_sha256"] == before,
+          "the recorded execution approval names this harness, so a surface "
+          "change closes the door until it is renewed")
+
+
+#: A producer that unpacks an undeclared helper into two, and then reads
+#: another undeclared name.  The 20260816T125027 pass stopped at the unpack —
+#: `ValueError: not enough values to unpack (expected 2, got 0)` — and never
+#: saw the second name.
+UNPACKING_PRODUCER = Z_USING_PRODUCER.replace(
+    "from .frontend import detect_r, rr_features, FS, _z",
+    "from .frontend import detect_r, rr_features, FS, _z\n"
+    "import frontend as FE").replace(
+    "    rr_all = rr_features(peaks, FS)",
+    "    _first, _second = FE.pair_returning_helper(1)\n"
+    "    _after = FE.name_after_the_unpack\n"
+    "    rr_all = rr_features(peaks, FS)")
+
+
+def test_the_declared_surface_covers_the_compare_producer():
+    """`frontend.compare_features` builds `ref` and `sim`, and returns two.
+
+    The arity is not a guess: run `20260816T125027` produced `ValueError: not
+    enough values to unpack (expected 2, got 0)` from the producer itself, and
+    V10's registered `ARMS` carries a `compare` arm beside the two remaining
+    record columns.
+    """
+    check("compare_features" in P3.INJECTED_GLOBALS,
+          "the injected globals carry compare_features")
+    stubs, _log = P3.build_injection(P3.FIXTURES[0])
+    with P3.InjectedModules(stubs):
+        returned = sys.modules["frontend"].compare_features([1000, 1012], 360)
+    check(len(returned) == 2,
+          f"it returns exactly the two blocks the producer unpacks: "
+          f"{len(returned)}")
+    for index, block in enumerate(returned):
+        rows = [list(row) for row in block]
+        check([row[0] for row in rows] == [1000.0, 1012.0],
+              f"block {index} names the peak each row was built for: {rows}")
+    check({"ref", "sim"} <= set(P3.COLUMNAR_RECORD_KEYS),
+          "and the two columns it is declared for are registered ones")
+
+
+def test_the_discovery_pass_reads_an_arity_back_and_keeps_going():
+    """A stand-in that unpacks into nothing ends the pass one name early.
+
+    The producer says how many values it wanted, so the retry is reading the
+    refusal rather than working around it — and a retry that is not driven by
+    a new number the producer named does not happen.
+    """
+    try:
+        differential_for(UNPACKING_PRODUCER)
+    except P3.SourceHarnessError as error:
+        discovery = error.context["surface_discovery"]
+        check(discovery["undeclared_names"] ==
+              ["frontend.pair_returning_helper",
+               "frontend.name_after_the_unpack"],
+              f"the pass gets past the unpack and reports the name behind it: "
+              f"{discovery['undeclared_names']}")
+        check(discovery["unpack_arity_used"] == 2
+              and discovery["reached_the_end"] is True,
+              f"using the arity the producer itself named: {discovery}")
+        attempts = discovery["attempts"]
+        check(len(attempts) == 2 and attempts[0]["unpack_arity"] == 0
+              and "expected 2" in str(attempts[0]["stopped_with"]),
+              f"and every attempt is recorded, including the one that failed: "
+              f"{attempts}")
+    else:                                                    # pragma: no cover
+        raise AssertionError("the unpacking producer did not stop the run")
+    check(P3.MAX_DISCOVERY_ATTEMPTS >= 2,
+          "the retry is bounded rather than a search")
+
+
+def test_the_discovery_pass_reports_itself_as_a_lower_bound():
+    """A stand-in answers where a value would, and control flow can differ.
+
+    The 20260816T121935 pass listed one name and reached the end of the
+    producer — with that name answered by a mock.  What the producer does next
+    once the name is declared for real is not something the pass observed, and
+    the note has to say so or the list reads as a guarantee.
+    """
+    check("LOWER BOUND" in P3.SURFACE_DISCOVERY_NOTE,
+          "the note says the list is a lower bound")
+    check("branches on what it got back" in P3.SURFACE_DISCOVERY_NOTE,
+          "and why: a producer may branch on the stand-in")
+    try:
+        differential_for(TWO_MISSING_NAMES_PRODUCER)
+    except P3.SourceHarnessError as error:
+        discovery = error.context["surface_discovery"]
+        check(P3.SURFACE_DISCOVERY_NOTE == discovery["note"],
+              "and the caveat travels with every result it produces")
+
+
 def test_an_undeclared_stub_attribute_is_its_own_stop():
     """"The injection is incomplete" is not "the source is broken".
 
