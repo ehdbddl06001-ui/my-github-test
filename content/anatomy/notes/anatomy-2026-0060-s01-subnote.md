@@ -78,6 +78,20 @@ tags: [서브노트, 1회차, 표, 피부신경, 예습시험, 태깅]
 
 > [!암기] 안쪽가지 vs 가쪽가지 :: 뒤가지는 둘로 갈라져 각각 피부가지를 내는데, 위쪽 등에서는 **안쪽가지**가, 아래쪽 등·허리에서는 **가쪽가지**가 피부에 닿는다.
 
+## 2b. 신경 계보 — 척수신경에서 피부신경까지 | Nerve tree
+
+!fig docs/assets/anatomy/tree-s01-nerve-labeled.svg | 앞가지/뒤가지가 갈린 뒤 어디까지 가는지 — 볼기 3형제의 뿌리가 2:1로 갈리는 지점이 한눈에 보인다
+
+> [!암기] 계보로 외우면 헷갈리지 않는다 :: 이름이 비슷한 것끼리(위·중간·아래볼기피부신경) 묶지 말고 **어느 가지에서 내려왔는지**로 묶는다. 퀴즈판 `tree-s01-nerve-quiz.svg` 로 상자만 보고 이름 채우기.
+
+## 2c. 얕은정맥 계보 | Vein tree
+
+!fig docs/assets/anatomy/tree-s01-vessel-labeled.svg | 발등정맥활에서 시작해 두 두렁정맥으로 갈리고, 관통정맥이 깊은정맥과 잇는다
+
+## 2d. 함께 지나는 것 | Neurovascular pairs
+
+!fig docs/assets/anatomy/tree-s01-bundle-labeled.svg | 얕은근막 속에서 정맥과 피부신경은 짝을 지어 다닌다 — 하나를 찾으면 다른 하나가 따라온다
+
 ## 3. 볼기·다리 뒤 피부신경 | Posterior cutaneous nerves
 
 !fig docs/assets/anatomy/diag-posterior-cutaneous-nerves-labeled.svg | 볼기 3형제의 유래와 장딴지신경이 만들어지는 지점 — 실사 문항 5개와 같은 구도

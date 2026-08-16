@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 413" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="다리의 얕은정맥과 깊은정맥 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 1회차 §피부벗기기 — 얕은근막의 내용물 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="413" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">다리의 얕은정맥과 깊은정맥<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> superficial &amp; deep veins of the limb</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">1회차 · 얕은근막 안에 있는 것과 깊은근막 아래 있는 것</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#b49ae0">■ 정맥</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,172 H 615 V 167 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,139 H 419 V 114 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,139 H 419 V 172 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,236 H 419 V 231 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,306 H 419 V 295 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,222 H 219 V 139 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,222 H 219 V 236 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,222 H 219 V 306 H 232" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <rect x="26" y="200" width="180" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="1.3"/>
+  <text x="36" y="220" fill="#b49ae0" font-size="12" class="kr">발등정맥활</text>
+  <text x="36" y="234" fill="#8f79b8" font-size="9">dorsal venous arch of foot</text>
+  <rect x="232" y="111" width="174" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="131" fill="#b49ae0" font-size="12" class="kr">큰두렁정맥 ★</text>
+  <text x="242" y="146" fill="#8f79b8" font-size="9">great saphenous v.</text>
+  <text x="242" y="157" fill="#6f8299" font-size="9">안쪽복사 <tspan fill="#e6edf3" font-weight="700">앞</tspan></text>
+  <rect x="232" y="209" width="174" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="229" fill="#b49ae0" font-size="12" class="kr">작은두렁정맥 ★</text>
+  <text x="242" y="244" fill="#8f79b8" font-size="9">small saphenous v.</text>
+  <text x="242" y="255" fill="#6f8299" font-size="9">가쪽복사 <tspan fill="#e6edf3" font-weight="700">뒤</tspan> · 장딴지신경 동반</text>
+  <rect x="232" y="273" width="174" height="66" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="242" y="293" fill="#b49ae0" font-size="12" class="kr">관통정맥</text>
+  <text x="242" y="308" fill="#8f79b8" font-size="9">perforating vv.</text>
+  <text x="242" y="319" fill="#6f8299" font-size="9">얕은↔깊은 연결 · 판막은 깊은</text>
+  <text x="242" y="330" fill="#6f8299" font-size="9">쪽으로만</text>
+  <rect x="432" y="92" width="170" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#b49ae0" font-size="12" class="kr">덧두렁정맥</text>
+  <text x="442" y="127" fill="#8f79b8" font-size="9">accessory saphenous v.</text>
+  <rect x="432" y="145" width="170" height="55" rx="7" fill="#2c2542" stroke="#584a76" stroke-width="1.3"/>
+  <text x="442" y="165" fill="#b49ae0" font-size="12" class="kr">두렁정맥구멍 ★</text>
+  <text x="442" y="180" fill="#8f79b8" font-size="9">saphenous opening</text>
+  <text x="442" y="191" fill="#6f8299" font-size="9">넓은근막의 구멍</text>
+  <rect x="432" y="209" width="170" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="229" fill="#b49ae0" font-size="12" class="kr">오금정맥</text>
+  <text x="442" y="244" fill="#8f79b8" font-size="9">popliteal v.</text>
+  <rect x="432" y="273" width="170" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="293" fill="#b49ae0" font-size="12" class="kr">깊은정맥</text>
+  <text x="442" y="308" fill="#8f79b8" font-size="9">deep vv.</text>
+  <rect x="628" y="145" width="160" height="44" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="165" fill="#b49ae0" font-size="12" class="kr">넙다리정맥</text>
+  <text x="638" y="180" fill="#8f79b8" font-size="9">femoral v.</text>
+  <line x1="26" y1="349" x2="814" y2="349" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="361" fill="#93a4b7" font-size="10.5">얕은정맥은 얕은근막 안, 깊은정맥은 깊은근막 아래 — 피부벗기기에서 갈리는 층.</text>
+  <text x="26" y="379" fill="#93a4b7" font-size="10.5">관통정맥의 판막은 깊은 쪽으로만 열린다 — 망가지면 역류해 하지정맥류.</text>
+</svg>

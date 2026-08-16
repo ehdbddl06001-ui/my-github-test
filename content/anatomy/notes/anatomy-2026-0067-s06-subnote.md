@@ -81,7 +81,7 @@ tags: [서브노트, 6회차, 목삼각, 넙다리삼각, 표, 예습시험, 태
 
 > [!임상] 뒤목삼각 두 사고 :: ① 림프절 생검에서 **더부신경 손상** → 등세모근 위축·어깨처짐. ② 빗장위 중심정맥삽입에서 가슴막꼭대기를 찔러 **기흉**.
 
-## 2. 목의 혈관·신경 | Vessels &amp; nerves of the neck
+## 2. 목의 혈관·신경 | Vessels & nerves of the neck
 
 !fig docs/assets/anatomy/diag-neck-triangles-labeled.svg | 목동맥삼각 = 목혈관신경집 3인방이 드러나는 자리
 
@@ -109,6 +109,18 @@ tags: [서브노트, 6회차, 목삼각, 넙다리삼각, 표, 예습시험, 태
 
 > [!암기] 신경점(Erb's point) :: 목빗근 **뒤모서리 중간**에서 목신경얼기 피부가지 4개가 한 점처럼 나온다. 여기가 국소마취 표적.
 
+## 2b. 신경 계보 — 목신경얼기·허리신경얼기 | Nerve tree
+
+!fig docs/assets/anatomy/tree-s06-nerve-labeled.svg | 목신경얼기는 신경점 한 곳에서 피부가지 4개, 허리신경얼기는 넙다리·폐쇄로 갈린다
+
+## 2c. 혈관 계보 (동맥 + 정맥) | Vessel tree
+
+!fig docs/assets/anatomy/tree-s06-vessel-labeled.svg | 바깥목동맥 8가지와 넙다리동맥 계열 + 속·바깥목정맥, 넙다리정맥
+
+## 2d. 함께 지나는 것 | Neurovascular bundles
+
+!fig docs/assets/anatomy/tree-s06-bundle-labeled.svg | 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히
+
 ## 3. 넙다리삼각 | Femoral triangle
 
 !fig .private/anatomy/render/uploads-s06/C009_clean.png | 실사 복원본 — 넙다리동맥과 안쪽넙다리휘돌이동맥. 라벨 살아 있는 판
@@ -134,7 +146,7 @@ tags: [서브노트, 6회차, 목삼각, 넙다리삼각, 표, 예습시험, 태
 
 > [!기출] 대퇴골두 무혈성괴사 :: 넙다리뼈 목 골절·엉덩관절 탈구로 ==안쪽넙다리휘돌이동맥==이 끊기면 생긴다. 어린이에서만 볼기뼈절구가지가 보조한다.
 
-## 4. 넓적다리 앞칸·안쪽칸 | Anterior &amp; medial thigh
+## 4. 넓적다리 앞칸·안쪽칸 | Anterior & medial thigh
 
 !fig .private/anatomy/render/uploads-s06/C009_clean.png | 실사 복원본 — 앞칸의 층과 모음근 무리 위치
 
@@ -152,7 +164,7 @@ tags: [서브노트, 6회차, 목삼각, 넙다리삼각, 표, 예습시험, 태
 
 > [!암기] 두 굴의 이름 :: 넓적다리 앞에서 **넙다리삼각 → 모음근굴 → 모음근구멍 → 오금**으로 이어진다. 혈관 이름은 넙다리동맥 → (모음근구멍) → 오금동맥으로 바뀐다.
 
-## 5. 종아리 앞칸·발등 | Anterior leg &amp; dorsum of foot
+## 5. 종아리 앞칸·발등 | Anterior leg & dorsum of foot
 
 !fig .private/anatomy/render/uploads-s06/D022_clean.png | 실사 복원본 — 발등의 폄근힘줄과 폄근널힘줄. 라벨 살아 있는 판
 

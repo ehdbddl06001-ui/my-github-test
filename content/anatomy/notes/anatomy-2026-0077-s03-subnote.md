@@ -151,6 +151,18 @@ tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
 
 > [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리.
 
+## 4b. 신경 계보 — 궁둥신경에서 발까지 | Nerve tree
+
+!fig docs/assets/anatomy/tree-s03-nerve-labeled.svg | 오금에서 정강/온종아리로 갈리고, 온종아리는 종아리뼈목에서 다시 얕은/깊은으로 갈린다
+
+## 4c. 혈관 계보 (동맥 + 정맥) | Vessel tree
+
+!fig docs/assets/anatomy/tree-s03-vessel-labeled.svg | 빗장밑동맥·겨드랑동맥의 어깨동맥그물과, 오금동맥의 무릎동맥그물 + 동반정맥
+
+## 4d. 함께 지나는 것 | Neurovascular bundles
+
+!fig docs/assets/anatomy/tree-s03-bundle-labeled.svg | 다리오금(신–정–동) · 네모공간 · 어깨뼈패임 — 셋이 함께 지나는 세 자리
+
 ## 5. 종아리 뒤칸 | Posterior compartment of leg
 
 !fig .private/anatomy/render/uploads-a1-s02/q5183_p8_clean.png | 실사 복원본 — 다리오금의 신경(온종아리신경 분지)

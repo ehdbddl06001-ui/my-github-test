@@ -319,6 +319,24 @@ def test_region_not_professor_decides_session() -> None:
     assert session_for_region("없는부위이름") is None
 
 
+def test_branch_tree_selftest() -> None:
+    """분지 계보 트리 생성기: 배치 겹침·노드별 색·강조 렌더 회귀."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "branch_tree.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"branch_tree selftest 실패: {r.stdout}{r.stderr}"
+
+
+def test_every_session_has_nerve_and_vessel_tree() -> None:
+    """서브노트를 만든 회차는 신경·혈관·다발 트리를 모두 갖는다(사용자 지시 2026-08-16)."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    from branch_specs import SPECS
+    sessions = {k.split("-")[0] for k in SPECS}
+    for s in sessions:
+        for suffix in ("nerve", "vessel", "bundle"):
+            assert f"{s}-{suffix}" in SPECS, f"{s}: {suffix} 트리 없음"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

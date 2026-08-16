@@ -121,6 +121,18 @@ tags: [서브노트, 2회차, 표, 예습시험, 태깅]
 
 > [!주의] 짧은갈래는 3중 예외 :: 햄스트링 공통조건(① 궁둥뼈결절 기시 ② 무릎 아래 정지 ③ 정강신경 지배) 중 **①과 ③을 어긴다.** 구분 문항 단골.
 
+## 2b. 신경 계보 | Nerve tree
+
+!fig docs/assets/anatomy/tree-s02-nerve-labeled.svg | 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 계열
+
+## 2c. 혈관 계보 (동맥 + 정맥) | Vessel tree
+
+!fig docs/assets/anatomy/tree-s02-vessel-labeled.svg | 속엉덩동맥 앞갈래/뒤갈래와, 같은 이름으로 되돌아오는 정맥
+
+## 2d. 함께 지나는 것 | Neurovascular bundles
+
+!fig docs/assets/anatomy/tree-s02-bundle-labeled.svg | 큰궁둥구멍의 위·아래구멍마다 동맥·정맥·신경이 한 다발로 지나간다
+
 ## 3. 혈관 — 어디서 갈라지나 | Arteries
 
 !fig docs/assets/anatomy/diag-gluteal-foramina-labeled.svg | 속엉덩동맥 → 뒤갈래(위볼기) / 앞갈래(아래볼기·음부) — 오른쪽 위 트리
@@ -153,7 +165,7 @@ tags: [서브노트, 2회차, 표, 예습시험, 태깅]
 
 > [!임상] 궁둥신경 표면 표지 :: **궁둥뼈결절과 큰돌기의 중간점** 심부. 궁둥구멍근을 뚫고 지나는 변이가 흔해 궁둥구멍근증후군의 해부 근거가 된다.
 
-## 5. 공간·삼각 | Spaces &amp; triangles
+## 5. 공간·삼각 | Spaces & triangles
 
 !fig docs/assets/anatomy/diag-back-layers-labeled.svg | 청진삼각·허리삼각 위치(왼쪽 패널 노란 점선)
 

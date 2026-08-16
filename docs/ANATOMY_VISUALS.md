@@ -124,6 +124,41 @@ python pipelines/restore_scan.py --image <page>.png --config <cfg>.json \
 
 ---
 
+## 2b. Lane A-2 — **분지 계보(트리) 구조도** (생성기, 2026-08-16)
+
+위치 도해(층·삼각·공간)만으로는 **"이게 어디서 갈라져 나왔나"** 가 안 보인다. 특히 신경은
+계보 그림이 아예 없었다(사용자 지적). 그래서 트리는 **손으로 그리지 않고 생성**한다.
+
+```
+pipelines/branch_specs.py   # 회차별 스펙(중첩 dict) — 여기만 고친다
+pipelines/branch_tree.py    # 스펙 → SVG (라벨판 + 퀴즈판 동시 생성)
+python pipelines/branch_tree.py --all        # docs/assets/anatomy/tree-*.svg
+python pipelines/branch_tree.py --selftest
+```
+
+회차마다 **세 장**을 만든다:
+
+| 키 | 무엇 |
+|---|---|
+| `tree-sNN-nerve` | 신경 계보 — 얼기 → 가지 → 종말가지 |
+| `tree-sNN-vessel` | **동맥 + 정맥** 계보 한 장(노드마다 색이 다르다) |
+| `tree-sNN-bundle` | **신경혈관다발** — 통로(구멍·굴·집)마다 지나는 동맥·정맥·신경을 색으로 묶음 |
+
+- 노드 키: `kr` `en` `note` `star`(빈출) `terminal`(종말가지) `kind`(노드별 색) `children`
+- `kind` 를 노드에 주면 한 장에 동맥(빨강)·정맥(보라)·신경(파랑)을 섞을 수 있다.
+  스펙에 `legend_kinds: ["artery","vein","nerve"]` 를 넣으면 머리말에 3색 범례가 붙는다.
+- `**강조**` 는 밝은 tspan 으로 렌더된다(별표가 글자로 찍히지 않는다).
+- 배치는 "자식을 쌓고 부모를 그 중앙에" — 겹침이 원리적으로 생기지 않는다(selftest 가 고정).
+
+### 트리 함정 (실측)
+
+- **글자 수로 줄바꿈하면 한글 줄이 상자 밖으로 넘친다.** 한글은 전각(1.0em), ASCII 는
+  0.52em 로 **글자별 폭을 더해** 판단한다(`_cw`).
+- 스펙 문자열에 `&amp;` 를 직접 쓰면 렌더러가 한 번 더 escape 해 `&amp;` 가 글자로 찍힌다
+  → 평문 `&` 로 쓴다. (같은 이유로 서브노트 마크다운 제목에도 `&` 를 쓴다.)
+
+---
+
 ## 3. 두 lane 공통 — 라벨판/퀴즈판 쌍과 학습 동선
 
 | 산출물 | Lane A | Lane B |

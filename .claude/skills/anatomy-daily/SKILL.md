@@ -211,6 +211,12 @@ python pipelines/anatomy_subnote.py --card content/anatomy/notes/<카드>.md \
   땡시 D-14부터 하루 4개로 램프업. 근거: 해부는 2학점(개요: "해부에 힘 빼지
   말 것"), 땡시 총 66문항. 20개 파일을 전부 처리하지 말고 태깅·예습시험
   후보만 선별한다. 밀리면 3단계 catch-up이 흡수.
+- **분지 계보 트리는 손으로 그리지 않는다**: 신경·혈관은 위치 도해만으로 부족하다.
+  `pipelines/branch_specs.py` 에 회차 스펙을 추가하고 `python pipelines/branch_tree.py --all`
+  로 생성한다. 회차마다 **신경 / 혈관(동맥+정맥) / 신경혈관다발** 세 장을 만들고
+  서브노트에 `!fig docs/assets/anatomy/tree-sNN-*.svg` 로 건다.
+  정맥을 빼먹지 말 것 — 혈관은 동맥·정맥 둘 다이고, 셋이 같이 지나는 자리(bundle)가
+  태깅에서 그대로 출제된다.
 - **회차 산출물은 서브노트 한 파일로 합친다(기본)**: 도해 + 표 + **실사 태깅 문항·정답**까지
   하나의 PDF. 카드 frontmatter에 `layout: split` 과 `scan_questions: [{card, quiz_image,
   clean_image}]` 를 넣고:
