@@ -2,9 +2,81 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-08-18",
- "count": 61,
- "groups": 32,
+ "count": 67,
+ "groups": 35,
  "items": [
+  {
+   "file": "tree-s05-vessel-labeled.svg",
+   "base": "tree-s05-vessel",
+   "variant": "labeled",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "대동맥활·심장동맥과 위턱동맥",
+   "date": "2026-08-18",
+   "bytes": 18467
+  },
+  {
+   "file": "tree-s05-vessel-quiz.svg",
+   "base": "tree-s05-vessel",
+   "variant": "quiz",
+   "kind": "tree-vessel",
+   "kindLabel": "혈관 계보(동맥+정맥)",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "대동맥활·심장동맥과 위턱동맥",
+   "date": "2026-08-18",
+   "bytes": 16477
+  },
+  {
+   "file": "tree-s05-nerve-labeled.svg",
+   "base": "tree-s05-nerve",
+   "variant": "labeled",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "가슴안과 관자아래우묵의 신경",
+   "date": "2026-08-18",
+   "bytes": 15276
+  },
+  {
+   "file": "tree-s05-nerve-quiz.svg",
+   "base": "tree-s05-nerve",
+   "variant": "quiz",
+   "kind": "tree-nerve",
+   "kindLabel": "신경 계보",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "가슴안과 관자아래우묵의 신경",
+   "date": "2026-08-18",
+   "bytes": 12503
+  },
+  {
+   "file": "tree-s05-bundle-labeled.svg",
+   "base": "tree-s05-bundle",
+   "variant": "labeled",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-18",
+   "bytes": 13974
+  },
+  {
+   "file": "tree-s05-bundle-quiz.svg",
+   "base": "tree-s05-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-18",
+   "bytes": 11235
+  },
   {
    "file": "tree-s07-vessel-labeled.svg",
    "base": "tree-s07-vessel",
