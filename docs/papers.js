@@ -2,6 +2,143 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0444",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation--developed with the special contribution of the European Heart Rhythm Association",
+  "authors": [
+   "Camm A John",
+   "Lip Gregory Y H",
+   "De Caterina Raffaele",
+   "Savelieva Irene",
+   "Atar Dan",
+   "Hohnloser Stefan H",
+   "Hindricks Gerhard",
+   "Kirchhof Paulus",
+   "et al."
+  ],
+  "journal": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "doi": "",
+  "pmid": "22923145",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/22923145/",
+  "pubdate": "2012-10",
+  "date": "2026-08-17",
+  "tags": [
+   "landmark",
+   "highly-cited",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": true,
+  "citations": 1138,
+  "rcr": 40.38,
+  "nihPercentile": 99.8,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1138회 · RCR 40.38 (분야평균=1.0) · NIH 상위 백분위 99.8.\n(인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.)",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0443",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Guidelines for the diagnosis and treatment of chronic heart failure",
+  "authors": [
+   "Remme W J",
+   "Swedberg K",
+   "Task Force for the Diagnosis and Treatment of Chronic Heart Failure, European Society of Cardiology"
+  ],
+  "journal": "European heart journal",
+  "doi": "",
+  "pmid": "11492984",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/11492984/",
+  "pubdate": "2001-09",
+  "date": "2026-08-17",
+  "tags": [
+   "landmark",
+   "highly-cited",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": true,
+  "citations": 1150,
+  "rcr": 32.55,
+  "nihPercentile": 99.7,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1150회 · RCR 32.55 (분야평균=1.0) · NIH 상위 백분위 99.7.\n(인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.)",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0442",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Noncoding RNAs as novel diagnostic biomarkers for diabetic retinopathy: A systematic review and meta-analysis",
+  "authors": [
+   "Zhang Ting",
+   "Xu Donghong"
+  ],
+  "journal": "Journal of diabetes investigation",
+  "doi": "10.1111/jdi.70395",
+  "pmid": "42606362",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42606362/",
+  "pubdate": "2026-08-17",
+  "date": "2026-08-17",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND AND AIMS:** Diabetic retinopathy (DR), a frequent microvascular complication of diabetes, requires early detection to mitigate progression. Noncoding RNAs (ncRNAs) have emerged as promising diagnostic biomarkers. This meta-analysis evaluates their overall diagnostic accuracy for DR.\n\n**METHODS:** A comprehensive literature search was conducted across multiple electronic databases, including PubMed, Embase, and Web of Science, to identify relevant studies published until August 2025. Data on study characteristics, quality, and diagnostic performance were pooled. Pooled effect sizes were calculated using a random effects model. Heterogeneity was explored via subgroup analysis and meta-regression; publication bias was assessed using Deck's funnel plot.\n\n**RESULTS:** Twenty-four studies from 17 articles (1,983 patients, 1,437 controls) were included. The pooled analysis demonstrated that ncRNAs achieved a sensitivity of 0.81 and a specificity of 0.84. The area under the curve (AUC) was 0.89, whereas the positive and negative likelihood ratios were 4.96 and 0.23, respectively. LncRNAs demonstrated superior diagnostic performance compared to miRNAs (P = 0.03). Control type, region, and expression trend did not significantly influence outcomes. Significant heterogeneity was observed (I2 > 50%), but sensitivity analysis confirmed robustness, and no notable publication bias was detected.\n\n**CONCLUSION:** Circulating ncRNAs, particularly lncRNAs, show high diagnostic potential for DR and represent promising noninvasive biomarkers for early screening and differential diagnosis.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0441",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Non-Invasive Methods for Identifying Electrical Responders to Conduction System Pacing Cardiac Resynchronization Therapy",
+  "authors": [
+   "Samways Jack W",
+   "Ali Nadine",
+   "Arnold Ahran D",
+   "Chow Ji-Jian",
+   "Shun-Shin Matthew",
+   "Mohal Jagdeep Singh",
+   "Naraen Akriti",
+   "Saleh Keenan",
+   "et al."
+  ],
+  "journal": "Pacing and clinical electrophysiology : PACE",
+  "doi": "10.1111/pace.70393",
+  "pmid": "42606538",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42606538/",
+  "pubdate": "2026-08-17",
+  "date": "2026-08-17",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Conduction system pacing (CSP) is an emerging alternative modality of cardiac resynchronization therapy (CRT). However, not all patients obtain electrical resynchronization with CSP, there is a clinical need for reliable non-invasive predictors of response. We aimed to assess the ability of several non-invasive modalities to predict electrical resynchronization with CSP-CRT.\n\n**METHODS:** Patients with standard heart failure CRT indications (excluding right-bundle branch block) underwent CSP-CRT using His-bundle and left-bundle branch pacing. Electrical resynchronization was defined as a >10 ms reduction in left ventricular activation time or conversion to a physiological left ventricular activation pattern on non-invasive multi-electrode mapping. We assessed whether 12-lead ECG morphology, vector electrocardiogram (VCG) derived QRS area, Ultra High Frequency (UHF)-ECG parameters or MRI scar burden predicted electrical resynchronization.\n\n**RESULTS:** Thirty four patients were analyzed (mean age 69±10 years; 82% male; LVEF 30±6%; QRS duration 161±23 ms; 32% ischemic cardiomyopathy). Electrical resynchronization was achieved in 24/34 (71%; 95%CI 53-85). Strauss criteria positivity on 12-lead ECG yielded a positive predictive value (PPV) of 83% (95%CI 61-95%) and negative predictive value (NPV) of 55% (95%CI 23-83%). VCG QRS area >100µVs demonstrated PPV 100% (95% CI 81-100%) and NPV 73% (95%CI 85-100%). UHF-ECG e-DYS >50 ms gave PPV 93% (95%CI 66-100%) and NPV 47% (23%-72%); >60 ms gave PPV 90% (95%CI 66-100%) and NPV 38% (95%CI 18-62%). MRI scar burden <15% resulted in PPV 88% (95%CI 64-99%) and NPV 56% (95%CI 21-86%). Lines of propagation discontinuity on multi-electrode mapping showed PPV 100% (95%CI 85-100%) and NPV 83% (95%CI 52-98%).\n\n**CONCLUSIONS:** Multiple non-invasive markers, including QRS morphology, VCG QRS area, UHF-ECG e-DYS, MRI scar burden showed potential to identify patients who are likely to electrically resynchronize with CSP-CRT, although their NPVs were generally modest. Non-invasive propagation mapping had the highest PPV and NPV.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0440",
   "topic": "Laboratory Medicine",
   "subtopic": "",
