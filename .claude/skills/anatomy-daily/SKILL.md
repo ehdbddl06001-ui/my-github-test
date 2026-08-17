@@ -238,6 +238,32 @@ python pipelines/anatomy_pdf.py --manifest .private/anatomy/pdf/sNN_manifest.jso
 - 렌더 QA: 생성 후 표지·개요·문제 1·정답 마지막 페이지를 72dpi로 렌더해
   눈으로 확인(4b와 동일한 원칙 — 텍스트 잘림·이미지 고아 블록 없어야 함).
 
+## 4f. 서브노트 — 회차 산출물의 기본형 (`anatomy_subnote.py`)
+
+회차마다 사용자에게 보내는 **파일 한 벌**은 서브노트다(루틴 프롬프트 3단계).
+`kind: study_guide` 카드 한 장을 넣으면 나머지는 전부 결정론이다.
+
+```
+python pipelines/anatomy_subnote.py \
+  --card content/anatomy/notes/<카드>.md \
+  --output .private/anatomy/pdf/subnote-sNN.pdf
+```
+
+- 지면: **가로 A4**. 왼쪽 = 카드가 참조하는 라벨판 도해(`assets/anatomy/*-labeled.svg`),
+  오른쪽 = 근육표·혈관표·신경표·콜아웃. 도해가 떨어지면 그 뒤 지면은 전폭으로 흐른다.
+- 뒤에 그 회차 문항(`session_no` 일치)의 **퀴즈판 + 지문**, 마지막에 **정답·해설**을
+  합본한다. 그림 있는 문항은 한 지면, 관계형(그림 없는) 문항은 이어 붙인다.
+- 카드 본문 `## 0.`(딸린 시각 자료 파일명 표)은 자동으로 빠진다 — 그 도해가 이미
+  왼쪽에 실려 있다. 관계도(ASCII 트리)는 **글자 격자**로 찍어 원문 열 정렬을 지킨다.
+- 새 그림을 여기서 만들지 않는다. 도해는 4a/4b를 거쳐 `docs/assets/anatomy/`에
+  이미 있는 것만 싣는다(lane 분리).
+- 출력은 `.private/anatomy/pdf/` 고정(스크립트가 밖을 거부) → **커밋 금지**,
+  `SendUserFile` 로 채팅 전송 → 사용자가 Drive에 보관.
+- 렌더 QA: 만든 뒤 첫 지면·문항 지면·정답 마지막 지면을 렌더해 눈으로 본다
+  (빈 지면·여백 넘침 없어야 한다). 회귀는 `anatomy_subnote.py --selftest`.
+- 문제집형 PDF(`anatomy_pdf.py`)는 세로 A4 [표지→개요→문제→정답]으로 성격이 다르다.
+  실사 복원본 위주 회차나 사용자가 문제집을 따로 원할 때 쓴다.
+
 ## 4e. 종합 학습 정리 (study_guide — 사용자 1순위 산출물)
 
 사용자 요구(2026-08-12): 문항보다 **회차 범위 전체의 해부학적 내용 정리**가

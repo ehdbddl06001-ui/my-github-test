@@ -1,13 +1,13 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-15",
+ "generated": "2026-08-16",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1105,
+  "total": 1106,
   "byType": {
-   "anatomy": 248,
+   "anatomy": 249,
    "paper": 219,
    "kmle": 555,
    "usmle": 66,
@@ -15,7 +15,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 248,
+   "Anatomy": 249,
    "Cardiology": 85,
    "Nephrology": 63,
    "Infectious Disease": 61,
@@ -53,13 +53,26 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 670,
+   "high": 671,
    "medium": 386,
    "low": 49
   },
   "tagCount": 1992
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-17",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-17",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/daily/2026-08-17.md",
+   "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-17 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "anatomy-daily-2026-08-16",
    "type": "anatomy",
