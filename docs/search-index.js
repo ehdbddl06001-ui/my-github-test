@@ -5,10 +5,10 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1168,
+  "total": 1388,
   "byType": {
+   "paper": 440,
    "anatomy": 310,
-   "paper": 220,
    "kmle": 555,
    "usmle": 66,
    "ailab": 14,
@@ -16,26 +16,26 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 310,
-   "Cardiology": 86,
-   "Nephrology": 63,
-   "Infectious Disease": 61,
-   "Pediatrics": 59,
+   "Cardiology": 126,
+   "Nephrology": 113,
+   "Infectious Disease": 89,
+   "Hematology-Oncology": 72,
+   "Pediatrics": 66,
+   "Pathology": 57,
+   "Surgery": 44,
    "Obstetrics & Gynecology": 40,
+   "Laboratory Medicine": 38,
    "Neurology": 38,
    "Psychiatry": 38,
    "Endocrinology": 36,
    "Gastroenterology": 35,
    "Pulmonology": 35,
-   "Surgery": 35,
    "Dermatology": 34,
    "General Surgery": 34,
    "Ophthalmology": 34,
    "Orthopedics": 34,
    "Rheumatology": 34,
    "Hematology": 33,
-   "Pathology": 30,
-   "Laboratory Medicine": 28,
-   "Hematology-Oncology": 23,
    "Physiology": 7,
    "Microbiology": 6,
    "Biochemistry": 5,
@@ -53,13 +53,3973 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
+   "medium": 607,
    "high": 732,
-   "medium": 387,
    "low": 49
   },
-  "tagCount": 2106
+  "tagCount": 2108
  },
  "docs": [
+  {
+   "id": "paper-2026-0440",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0440_landmark_clinical_practice_guideline_update_adult_sinusitis.md",
+   "snippet": "Title Clinical practice guideline (update): adult sinusitis Authors Rosenfeld Richard M, Piccirillo Jay F, Chandrasekhar Sujana S, Brook Itzhak, Ashok Kumar Kaparaboyna, Kramper Maggie, Orlandi Richard R, Palmer James N, et al. Journal / DO",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery Title Clinical practice guideline (update): adult sinusitis Authors Rosenfeld Richard M, Piccirillo Jay F, Chandrasekhar Sujana S, Brook Itzhak, Ashok Kumar Kaparaboyna, Kramper Maggie, Orlandi Richard R, Palmer James N, et al. Journal / DOI Otolaryngology head and neck surgery : official journal of American Academy of Otolaryngology Head and Neck Surgery · DOI: 10.1177/0194599815572097 · PMID: 25832968 https://pubmed.ncbi.nlm.nih.gov/25832968/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 856회 · RCR 45.13 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: This update of a 2007 guideline from the American Academy of Otolaryngology Head and Neck Surgery Foundation provides evidence based recommendations to manage adult rhinosinusitis, defined as symptomatic inflammation of the paranasal sinuses and nasal cavity. Changes from the prior guideline include a consumer added to the update group, evidence from 42 new systematic reviews, enhanced information on patient education and counseling, a new algorithm to clarify action statement relationships, expanded opportunities for watchful waiting (without antibiotic therapy) as initial therapy of acute bacterial rhinosinusitis (ABRS), and 3 new recommendations for managing chronic rhinosinusitis (CRS). PURPOSE: The purpose of this multidisciplinary guideline is to identify quality improvement opportunities in managing adult rhinosinusitis and to create explicit and actionable recommendations to implement these opportunities in clinical practice. Specifically, the goals are to improve diagnostic accuracy for adult rhinosinusitis, promote appropriate use of ancillary tests to confirm diagnosis and guide management, and promote judicious use of systemic and topical therapy, which includes radiography, nasal endoscopy, computed tomography, and testing for allergy and immune function. Emphasis was also placed on identifying multiple chronic conditions that would modify management of rhinosinusitis, including asthma, cystic fibrosis, immunocompromised state, and ciliary dyskinesia. ACTION STATEMENTS: The update group made strong recommendations that clinicians (1) should distinguish presumed ABRS from acute rhinosinusitis (ARS) caused by viral upper respiratory infections and noninfectious conditions and (2) should confirm a clinical diagnosis of CRS with objective documentation of sinonasal inflammation, which may be accomplished using anterior rhinoscopy, nasal endoscopy, or computed tomography. The update group made recommendations that clinicians (1) should either offer watchful waiting (without antibiotics) or prescribe initial antibiotic therapy for adults with uncomplicated ABRS; (2) should prescribe amoxicillin with or without clavulanate as ﬁrst line therapy for 5 to 10 days (if a decision is made to treat ABRS with an antibiotic); (3) should reassess the patient to confirm ABRS, exclude other causes of illness, and detect complications if the patient worsens or fails to improve with the initial management option by 7 days after diagnosis or worsens during the initial management; (4) should distinguish CRS and recurrent ARS from isolated episodes of ABRS and other causes of sinonasal symptoms; (5) should assess the patient with CRS or recurrent ARS for multiple chronic conditions that would modify management, such as asthma, cystic fibrosis, immunocompromised state, and ciliary dyskinesia; (6) should confirm the presence or absence of nasal polyps in a patient with CRS; and (7) should recommend saline nasal irrigation, topical intranasal corticosteroids, or both for symptom relief of CRS. The update group stated as options that clinicians may (1) recommend analgesics, topical intranasal steroids, and/or nasal saline irrigation for symptomatic relief of viral rhinosinusitis; (2) recommend analgesics, topical intranasal steroids, and/or nasal saline irrigation) for symptomatic relief of ABRS; and (3) obtain testing for allergy and immune function in evaluating a patient with CRS or recurrent ARS. The update group made recommendations that clinicians (1) should not obtain radiographic imaging for patients who meet diagnostic criteria for ARS, unless a complication or alternative diagnosis is suspected, and (2) should not prescribe topical or systemic antifungal therapy for patients with CRS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0439",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of pathology & laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0439_landmark_human_papillomavirus_testing_in_head_and_neck_carcinomas_gui.md",
+   "snippet": "Title Human Papillomavirus Testing in Head and Neck Carcinomas: Guideline From the College of American Pathologists Authors Lewis James S, Beadle Beth, Bishop Justin A, Chernock Rebecca D, Colasacco Carol, Lacchetti Christina, Moncur Joel T",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Archives of pathology & laboratory medicine Title Human Papillomavirus Testing in Head and Neck Carcinomas: Guideline From the College of American Pathologists Authors Lewis James S, Beadle Beth, Bishop Justin A, Chernock Rebecca D, Colasacco Carol, Lacchetti Christina, Moncur Joel Todd, Rocco James W, et al. Journal / DOI Archives of pathology & laboratory medicine · DOI: 10.5858/arpa.2017 0286 CP · PMID: 29251996 https://pubmed.ncbi.nlm.nih.gov/29251996/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 438회 · RCR 21.84 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Context Human papillomavirus (HPV) is a major cause of oropharyngeal squamous cell carcinomas, and HPV (and/or surrogate marker p16) status has emerged as a prognostic marker that significantly impacts clinical management. There is no current consensus on when to test oropharyngeal squamous cell carcinomas for HPV/p16 or on which tests to choose. Objective To develop evidence based recommendations for the testing, application, interpretation, and reporting of HPV and surrogate marker tests in head and neck carcinomas. Design The College of American Pathologists convened a panel of experts in head and neck and molecular pathology, as well as surgical, medical, and radiation oncology, to develop recommendations. A systematic review of the literature was conducted to address 6 key questions. Final recommendations were derived from strength of evidence, open comment period feedback, and expert panel consensus. Results The major recommendations include (1) testing newly diagnosed oropharyngeal squamous cell carcinoma patients for high risk HPV, either from the primary tumor or from cervical nodal metastases, using p16 immunohistochemistry with a 70% nuclear and cytoplasmic staining cutoff, and (2) not routinely testing nonsquamous oropharyngeal carcinomas or nonoropharyngeal carcinomas for HPV. Pathologists are to report tumors as HPV positive or p16 positive. Guidelines are provided for testing cytologic samples and handling of locoregional and distant recurrence specimens. Conclusions Based on the systematic review and on expert panel consensus, high risk HPV testing is recommended for all new oropharyngeal squamous cell carcinoma patients, but not routinely recommended for other head and neck carcinomas. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0438",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of radiation oncology, biology, physics",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0438_landmark_modern_radiation_therapy_for_hodgkin_lymphoma_field_and_dose.md",
+   "snippet": "Title Modern radiation therapy for Hodgkin lymphoma: field and dose guidelines from the international lymphoma radiation oncology group (ILROG) Authors Specht Lena, Yahalom Joachim, Illidge Tim, Berthelsen Anne Kiil, Constine Louis S, Eich ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / International journal of radiation oncology, biology, physics Title Modern radiation therapy for Hodgkin lymphoma: field and dose guidelines from the international lymphoma radiation oncology group (ILROG) Authors Specht Lena, Yahalom Joachim, Illidge Tim, Berthelsen Anne Kiil, Constine Louis S, Eich Hans Theodor, Girinsky Theodore, Hoppe Richard T, et al. Journal / DOI International journal of radiation oncology, biology, physics · DOI: 10.1016/j.ijrobp.2013.05.005 · PMID: 23790512 https://pubmed.ncbi.nlm.nih.gov/23790512/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 414회 · RCR 14.08 (분야평균=1.0) · NIH 상위 백분위 98.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Radiation therapy (RT) is the most effective single modality for local control of Hodgkin lymphoma (HL) and an important component of therapy for many patients. These guidelines have been developed to address the use of RT in HL in the modern era of combined modality treatment. The role of reduced volumes and doses is addressed, integrating modern imaging with 3 dimensional (3D) planning and advanced techniques of treatment delivery. The previously applied extended field (EF) and original involved field (IF) techniques, which treated larger volumes based on nodal stations, have now been replaced by the use of limited volumes, based solely on detectable nodal (and extranodal extension) involvement at presentation, using contrast enhanced computed tomography, positron emission tomography/computed tomography, magnetic resonance imaging, or a combination of these techniques. The International Commission on Radiation Units and Measurements concepts of gross tumor volume, clinical target volume, internal target volume, and planning target volume are used for defining the targeted volumes. Newer treatment techniques, including intensity modulated radiation therapy, breath hold, image guided radiation therapy, and 4 dimensional imaging, should be implemented when their use is expected to decrease significantly the risk for normal tissue damage while still achieving the primary goal of local tumor control. The highly conformal involved node radiation therapy (INRT), recently introduced for patients for whom optimal imaging is available, is explained. A new concept, involved site radiation therapy (ISRT), is introduced as the standard conformal therapy for the scenario, commonly encountered, wherein optimal imaging is not available. There is increasing evidence that RT doses used in the past are higher than necessary for disease control in this era of combined modality therapy. The use of INRT and of lower doses in early stage HL is supported by available data. Although the use of ISRT has not yet been validated in a formal study, it is more conservative than INRT, accounting for suboptimal information and appropriately designed for safe local disease control. The goal of modern smaller field radiation therapy is to reduce both treatment volume and treatment dose while maintaining efficacy and minimizing acute and late sequelae. This review is a consensus of the International Lymphoma Radiation Oncology Group (ILROG) Steering Committee regarding the modern approach to RT in the treatment of HL, outlining a new concept of ISRT in which reduced treatment volumes are planned for the effective control of involved sites of HL. Nodal and extranodal non Hodgkin lymphomas (NHL) are covered separately by ILROG guidelines. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0437",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical periodontology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0437_landmark_scientific_evidence_on_the_links_between_periodontal_disease.md",
+   "snippet": "Title Scientific evidence on the links between periodontal diseases and diabetes: Consensus report and guidelines of the joint workshop on periodontal diseases and diabetes by the International Diabetes Federation and the European Federatio",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Journal of clinical periodontology Title Scientific evidence on the links between periodontal diseases and diabetes: Consensus report and guidelines of the joint workshop on periodontal diseases and diabetes by the International Diabetes Federation and the European Federation of Periodontology Authors Sanz Mariano, Ceriello Antonio, Buysschaert Martin, Chapple Iain, Demmer Ryan T, Graziani Filippo, Herrera David, Jepsen Søren, et al. Journal / DOI Journal of clinical periodontology · DOI: 10.1111/jcpe.12808 · PMID: 29280174 https://pubmed.ncbi.nlm.nih.gov/29280174/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 464회 · RCR 26.35 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Diabetes and periodontitis are chronic non communicable diseases independently associated with mortality and have a bidirectional relationship. AIMS: To update the evidence for their epidemiological and mechanistic associations and re examine the impact of effective periodontal therapy upon metabolic control (glycated haemoglobin, HbA1C). EPIDEMIOLOGY: There is strong evidence that people with periodontitis have elevated risk for dysglycaemia and insulin resistance. Cohort studies among people with diabetes demonstrate significantly higher HbA1C levels in patients with periodontitis (versus periodontally healthy patients), but there are insufficient data among people with type 1 diabetes. Periodontitis is also associated with an increased risk of incident type 2 diabetes. MECHANISMS: Mechanistic links between periodontitis and diabetes involve elevations in interleukin (IL) 1 β, tumour necrosis factor α, IL 6, receptor activator of nuclear factor kappa B ligand/osteoprotegerin ratio, oxidative stress and Toll like receptor (TLR) 2/4 expression. INTERVENTIONS: Periodontal therapy is safe and effective in people with diabetes, and it is associated with reductions in HbA1C of 0.27 0.48% after 3 months, although studies involving longer term follow up are inconclusive. CONCLUSIONS: The European Federation of Periodontology (EFP) and the International Diabetes Federation (IDF) report consensus guidelines for physicians, oral healthcare professionals and patients to improve early diagnosis, prevention and comanagement of diabetes and periodontitis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0436",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0436_landmark_clinical_practice_guideline_tonsillectomy_in_children_update.md",
+   "snippet": "Title Clinical Practice Guideline: Tonsillectomy in Children (Update) Authors Mitchell Ron B, Archer Sanford M, Ishman Stacey L, Rosenfeld Richard M, Coles Sarah, Finestone Sandra A, Friedman Norman R, Giordano Terri, et al. Journal / DOI O",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery Title Clinical Practice Guideline: Tonsillectomy in Children (Update) Authors Mitchell Ron B, Archer Sanford M, Ishman Stacey L, Rosenfeld Richard M, Coles Sarah, Finestone Sandra A, Friedman Norman R, Giordano Terri, et al. Journal / DOI Otolaryngology head and neck surgery : official journal of American Academy of Otolaryngology Head and Neck Surgery · DOI: 10.1177/0194599818801757 · PMID: 30798778 https://pubmed.ncbi.nlm.nih.gov/30798778/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 499회 · RCR 41.14 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: This update of a 2011 guideline developed by the American Academy of Otolaryngology Head and Neck Surgery Foundation provides evidence based recommendations on the pre , intra , and postoperative care and management of children 1 to 18 years of age under consideration for tonsillectomy. Tonsillectomy is defined as a surgical procedure performed with or without adenoidectomy that completely removes the tonsil, including its capsule, by dissecting the peritonsillar space between the tonsil capsule and the muscular wall. Tonsillectomy is one of the most common surgical procedures in the United States, with 289,000 ambulatory procedures performed annually in children <15 years of age based on the most recent published data. This guideline is intended for all clinicians in any setting who interact with children who may be candidates for tonsillectomy. PURPOSE: The purpose of this multidisciplinary guideline is to identify quality improvement opportunities in managing children under consideration for tonsillectomy and to create explicit and actionable recommendations to implement these opportunities in clinical practice. Specifically, the goals are to educate clinicians, patients, and/or caregivers regarding the indications for tonsillectomy and the natural history of recurrent throat infections. Additional goals include the following: optimizing the perioperative management of children undergoing tonsillectomy, emphasizing the need for evaluation and intervention in special populations, improving the counseling and education of families who are considering tonsillectomy for their children, highlighting the management options for patients with modifying factors, and reducing inappropriate or unnecessary variations in care. Children aged 1 to 18 years under consideration for tonsillectomy are the target patient for the guideline. For this guideline update, the American Academy of Otolaryngology Head and Neck Surgery Foundation selected a panel representing the fields of nursing, anesthesiology, consumers, family medicine, infectious disease, otolaryngology head and neck surgery, pediatrics, and sleep medicine. KEY ACTION STATEMENTS: The guideline update group made strong recommendations for the following key action statements (KASs): (1) Clinicians should recommend watchful waiting for recurrent throat infection if there have been <7 episodes in the past year, <5 episodes per year in the past 2 years, or <3 episodes per year in the past 3 years. (2) Clinicians should administer a single intraoperative dose of intravenous dexamethasone to children undergoing tonsillectomy. (3) Clinicians should recommend ibuprofen, acetaminophen, or both for pain control after tonsillectomy. The guideline update group made recommendations for the following KASs: (1) Clinicians should assess the child with recurrent throat infection who does not meet criteria in KAS 2 for modifying factors that may nonetheless favor tonsillectomy, which may include but are not limited to multiple antibiotic allergies/intolerance, PFAPA (periodic fever, aphthous stomatitis, pharyngitis, and adenitis), or history of 1 peritonsillar abscess. (2) Clinicians should ask caregivers of children with obstructive sleep disordered breathing and tonsillar hypertrophy about comorbid conditions that may improve after tonsillectomy, including growth retardation, poor school performance, enuresis, asthma, and behavioral problems. (3) Before performing tonsillectomy, the clinician should refer children with obstructive sleep disordered breathing for polysomnography if they are <2 years of age or if they exhibit any of the following: obesity, Down syndrome, craniofacial abnormalities, neuromuscular disorders, sickle cell disease, or mucopolysaccharidoses. (4) The clinician should advocate for polysomnography prior to tonsillectomy for obstructive sleep disordered breathing in children without any of the comorbidities listed in KAS 5 for whom the need for tonsillectomy is uncertain or when there is discordance between the physical examination and the reported severity of oSDB. (5) Clinicians should recommend tonsillectomy for children with obstructive sleep apnea documented by overnight polysomnography. (6) Clinicians should counsel patients and caregivers and explain that obstructive sleep disordered breathing may persist or recur after tonsillectomy and may require further management. (7) The clinician should counsel patients and caregivers regarding the importance of managing posttonsillectomy pain as part of the perioperative education process and should reinforce this counseling at the time of surgery with reminders about the need to anticipate, reassess, and adequately treat pain after surgery. (8) Clinicians should arrange for overnight, inpatient monitoring of children after tonsillectomy if they are <3 years old or have severe obstructive sleep apnea (apnea hypopnea index ≥10 obstructive events/hour, oxygen saturation nadir <80%, or both). (9) Clinicians should follow up with patients and/or caregivers after tonsillectomy and document in the medical record the presence or absence of bleeding within 24 hours of surgery (primary bleeding) and bleeding occurring later than 24 hours after surgery (secondary bleeding). (10) Clinicians should determine their rate of primary and secondary posttonsillectomy bleeding at least annually. The guideline update group made a strong recommendation against 2 actions: (1) Clinicians should not administer or prescribe perioperative antibiotics to children undergoing tonsillectomy. (2) Clinicians must not administer or prescribe codeine, or any medication containing codeine, after tonsillectomy in children younger than 12 years. The policy level for the recommendation about documenting recurrent throat infection was an option: (1) Clinicians may recommend tonsillectomy for recurrent throat infection with a frequency of at least 7 episodes in the past year, at least 5 episodes per year for 2 years, or at least 3 episodes per year for 3 years with documentation in the medical record for each episode of sore throat and ≥1 of the following: temperature 38.3°C (101°F), cervical adenopathy, tonsillar exudate, or positive test for group A beta hemolytic streptococcus. DIFFERENCES FROM PRIOR GUIDELINE: (1) Incorporating new evidence profiles to include the role of patient preferences, confidence in the evidence, differences of opinion, quality improvement opportunities, and any exclusion to which the action statement does not apply. (2) There were 1 new clinical practice guideline, 26 new systematic reviews, and 13 new randomized controlled trials included in the current guideline update. (3) Inclusion of 2 consumer advocates on the guideline update group. (4) Changes to 5 KASs from the original guideline: KAS 1 (Watchful waiting for recurrent throat infection), KAS 3 (Tonsillectomy for recurrent infection with modifying factors), KAS 4 (Tonsillectomy for obstructive sleep disordered breathing), KAS 9 (Perioperative pain counseling), and KAS 10 (Perioperative antibiotics). (5) Seven new KASs: KAS 5 (Indications for polysomnography), KAS 6 (Additional recommendations for polysomnography), KAS 7 (Tonsillectomy for obstructive sleep apnea), KAS 12 (Inpatient monitoring for children after tonsillectomy), KAS 13 (Postoperative ibuprofen and acetaminophen), KAS 14 (Postoperative codeine), and KAS 15a (Outcome assessment for bleeding). (6) Addition of an algorithm outlining KASs. (7) Enhanced emphasis on patient and/or caregiver education and shared decision making. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0435",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of urology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0435_landmark_early_detection_of_prostate_cancer_aua_guideline.md",
+   "snippet": "Title Early detection of prostate cancer: AUA Guideline Authors Carter H Ballentine, Albertsen Peter C, Barry Michael J, Etzioni Ruth, Freedland Stephen J, Greene Kirsten Lynn, Holmberg Lars, Kantoff Philip, et al. Journal / DOI The Journal",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / The Journal of urology Title Early detection of prostate cancer: AUA Guideline Authors Carter H Ballentine, Albertsen Peter C, Barry Michael J, Etzioni Ruth, Freedland Stephen J, Greene Kirsten Lynn, Holmberg Lars, Kantoff Philip, et al. Journal / DOI The Journal of urology · DOI: 10.1016/j.juro.2013.04.119 · PMID: 23659877 https://pubmed.ncbi.nlm.nih.gov/23659877/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 859회 · RCR 29.81 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: The guideline purpose is to provide the urologist with a framework for the early detection of prostate cancer in asymptomatic average risk men. MATERIALS AND METHODS: A systematic review was conducted and summarized evidence derived from over 300 studies that addressed the predefined outcomes of interest (prostate cancer incidence/mortality, quality of life, diagnostic accuracy and harms of testing). In addition to the quality of evidence, the panel considered values and preferences expressed in a clinical setting (patient physician dyad) rather than having a public health perspective. Guideline statements were organized by age group in years (age <40; 40 to 54; 55 to 69; ≥ 70). RESULTS: Except prostate specific antigen based prostate cancer screening, there was minimal evidence to assess the outcomes of interest for other tests. The quality of evidence for the benefits of screening was moderate, and evidence for harm was high for men age 55 to 69 years. For men outside this age range, evidence was lacking for benefit, but the harms of screening, including over diagnosis and overtreatment, remained. Modeled data suggested that a screening interval of two years or more may be preferred to reduce the harms of screening. CONCLUSIONS: The Panel recommended shared decision making for men age 55 to 69 years considering PSA based screening, a target age group for whom benefits may outweigh harms. Outside this age range, PSA based screening as a routine could not be recommended based on the available evidence. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0434",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European radiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0434_landmark_the_diagnostic_accuracy_of_us_ct_mri_and_1h_mrs_for_the_eval.md",
+   "snippet": "Title The diagnostic accuracy of US, CT, MRI and 1H MRS for the evaluation of hepatic steatosis compared with liver biopsy: a meta analysis Authors Bohte Anneloes E, van Werven Jochem R, Bipat Shandra, Stoker Jaap Journal / DOI European rad",
+   "text": "Pathology landmark highly-cited pubmed PubMed / European radiology Title The diagnostic accuracy of US, CT, MRI and 1H MRS for the evaluation of hepatic steatosis compared with liver biopsy: a meta analysis Authors Bohte Anneloes E, van Werven Jochem R, Bipat Shandra, Stoker Jaap Journal / DOI European radiology · DOI: 10.1007/s00330 010 1905 5 · PMID: 20680289 https://pubmed.ncbi.nlm.nih.gov/20680289/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 439회 · RCR 14.73 (분야평균=1.0) · NIH 상위 백분위 98.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To meta analyse the diagnostic accuracy of US, CT, MRI and 1H MRS for the evaluation of hepatic steatosis. METHODS: From a comprehensive literature search in MEDLINE, EMBASE, CINAHL and Cochrane (up to November 2009), articles were selected that investigated the diagnostic performance imaging techniques for evaluating hepatic steatosis with histopathology as the reference standard. Cut off values for the presence of steatosis on liver biopsy were subdivided into four groups: (1) 0, 2 and 5% steatosis; (2) 10, 15 and 20%; (3) 25, 30 and 33%; (4) 50, 60 and 66%. Per group, summary estimates for sensitivity and specificity were calculated. The natural logarithm of the diagnostic odds ratio (lnDOR) was used as a single indicator of test performance. RESULTS: 46 articles were included. Mean sensitivity estimates for subgroups were 73.3 90.5% (US), 46.1 72.0% (CT), 82.0 97.4% (MRI) and 72.7 88.5% (1H MRS). Mean specificity ranges were 69.6 85.2% (US), 88.1 94.6% (CT), 76.1 95.3% (MRI) and 92.0 95.7% (1H MRS). Overall performance (lnDOR) of MRI and 1H MRS was better than that for US and CT for all subgroups, with significant differences in groups 1 and 2. CONCLUSION: MRI and 1H MRS can be considered techniques of choice for accurate evaluation of hepatic steatosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0433",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0433_landmark_bone_health_in_cancer_patients_esmo_clinical_practice_guidel.md",
+   "snippet": "Title Bone health in cancer patients: ESMO Clinical Practice Guidelines Authors Coleman R, Body J J, Aapro M, Hadji P, Herrstedt J, ESMO Guidelines Working Group Journal / DOI Annals of oncology : official journal of the European Society fo",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Bone health in cancer patients: ESMO Clinical Practice Guidelines Authors Coleman R, Body J J, Aapro M, Hadji P, Herrstedt J, ESMO Guidelines Working Group Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1093/annonc/mdu103 · PMID: 24782453 https://pubmed.ncbi.nlm.nih.gov/24782453/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 414회 · RCR 14.12 (분야평균=1.0) · NIH 상위 백분위 98.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract There are three distinct areas of cancer management that make bone health in cancer patients of increasing clinical importance. First, bone metastases are common in many solid tumours, notably those arising from the breast, prostate and lung, as well as multiple myeloma, and may cause major morbidity including fractures, severe pain, nerve compression and hypercalcaemia. Through optimum multidisciplinary management of patients with bone metastases, including the use of bone targeted treatments such as potent bisphosphonates or denosumab, it has been possible to transform the course of advanced cancer for many patients resulting in a major reduction in skeletal complications, reduced bone pain and improved quality of life. Secondly, many of the treatments we use to treat cancer patients have effects on reproductive hormones, which are critical for the maintenance of normal bone remodelling. This endocrine disturbance results in accelerated bone loss and an increased risk of osteoporosis and fractures that can have a significant negative impact on the lives of the rapidly expanding number of long term cancer survivors. Finally, the bone marrow micro environment is also intimately involved in the metastatic processes required for cancer dissemination, and there are emerging data showing that, at least in some clinical situations, the use of bone targeted treatments can reduce metastasis to bone and has potential impact on patient survival. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0432",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0432_landmark_the_case_for_early_identification_and_intervention_of_chroni.md",
+   "snippet": "Title The case for early identification and intervention of chronic kidney disease: conclusions from a Kidney Disease: Improving Global Outcomes (KDIGO) Controversies Conference Authors Shlipak Michael G, Tummalapalli Sri Lekha, Boulware L ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title The case for early identification and intervention of chronic kidney disease: conclusions from a Kidney Disease: Improving Global Outcomes (KDIGO) Controversies Conference Authors Shlipak Michael G, Tummalapalli Sri Lekha, Boulware L Ebony, Grams Morgan E, Ix Joachim H, Jha Vivekanand, Kengne Andre Pascal, Madero Magdalena, et al. Journal / DOI Kidney international · DOI: 10.1016/j.kint.2020.10.012 · PMID: 33127436 https://pubmed.ncbi.nlm.nih.gov/33127436/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 464회 · RCR 35.26 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Chronic kidney disease (CKD) causes substantial global morbidity and increases cardiovascular and all cause mortality. Unlike other chronic diseases with established strategies for screening, there has been no consensus on whether health systems and governments should prioritize early identification and intervention for CKD. Guidelines on evaluating and managing early CKD are available but have not been universally adopted in the absence of incentives or quality measures for prioritizing CKD care. The burden of CKD falls disproportionately upon persons with lower socioeconomic status, who have a higher prevalence of CKD, limited access to treatment, and poorer outcomes. Therefore, identifying and treating CKD at the earliest stages is an equity imperative. In 2019, Kidney Disease: Improving Global Outcomes (KDIGO) held a controversies conference entitled \"Early Identification and Intervention in CKD.\" Participants identified strategies for screening, risk stratification, and treatment for early CKD and the key health system and economic factors for implementing these processes. A consensus emerged that CKD screening coupled with risk stratification and treatment should be implemented immediately for high risk persons and that this should ideally occur in primary or community care settings with tailoring to the local context. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0431",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0431_landmark_effect_of_a_perioperative_cardiac_output_guided_hemodynamic_.md",
+   "snippet": "Title Effect of a perioperative, cardiac output guided hemodynamic therapy algorithm on outcomes following major gastrointestinal surgery: a randomized clinical trial and systematic review Authors Pearse Rupert M, Harrison David A, MacDonal",
+   "text": "Surgery landmark highly-cited pubmed PubMed / JAMA Title Effect of a perioperative, cardiac output guided hemodynamic therapy algorithm on outcomes following major gastrointestinal surgery: a randomized clinical trial and systematic review Authors Pearse Rupert M, Harrison David A, MacDonald Neil, Gillies Michael A, Blunt Mark, Ackland Gareth, Grocott Michael P W, Ahern Aoife, et al. Journal / DOI JAMA · DOI: 10.1001/jama.2014.5305 · PMID: 24842135 https://pubmed.ncbi.nlm.nih.gov/24842135/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 644회 · RCR 28.95 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract IMPORTANCE: Small trials suggest that postoperative outcomes may be improved by the use of cardiac output monitoring to guide administration of intravenous fluid and inotropic drugs as part of a hemodynamic therapy algorithm. OBJECTIVE: To evaluate the clinical effectiveness of a perioperative, cardiac output guided hemodynamic therapy algorithm. DESIGN, SETTING, AND PARTICIPANTS: OPTIMISE was a pragmatic, multicenter, randomized, observer blinded trial of 734 high risk patients aged 50 years or older undergoing major gastrointestinal surgery at 17 acute care hospitals in the United Kingdom. An updated systematic review and meta analysis were also conducted including randomized trials published from 1966 to February 2014. INTERVENTIONS: Patients were randomly assigned to a cardiac output guided hemodynamic therapy algorithm for intravenous fluid and inotrope (dopexamine) infusion during and 6 hours following surgery (n=368) or to usual care (n=366). MAIN OUTCOMES AND MEASURES: The primary outcome was a composite of predefined 30 day moderate or major complications and mortality. Secondary outcomes were morbidity on day 7; infection, critical care free days, and all cause mortality at 30 days; all cause mortality at 180 days; and length of hospital stay. RESULTS: Baseline patient characteristics, clinical care, and volumes of intravenous fluid were similar between groups. Care was nonadherent to the allocated treatment for less than 10% of patients in each group. The primary outcome occurred in 36.6% of intervention and 43.4% of usual care participants (relative risk [RR], 0.84 [95% CI, 0.71 1.01]; absolute risk reduction, 6.8% [95% CI, 0.3% to 13.9%]; P = .07). There was no significant difference between groups for any secondary outcomes. Five intervention patients (1.4%) experienced cardiovascular serious adverse events within 24 hours compared with none in the usual care group. Findings of the meta analysis of 38 trials, including data from this study, suggest that the intervention is associated with fewer complications (intervention, 488/1548 [31.5%] vs control, 614/1476 [41.6%]; RR, 0.77 [95% CI, 0.71 0.83]) and a nonsignificant reduction in hospital, 28 day, or 30 day mortality (intervention, 159/3215 deaths [4.9%] vs control, 206/3160 deaths [6.5%]; RR, 0.82 [95% CI, 0.67 1.01]) and mortality at longest follow up (intervention, 267/3215 deaths [8.3%] vs control, 327/3160 deaths [10.3%]; RR, 0.86 [95% CI, 0.74 1.00]). CONCLUSIONS AND RELEVANCE: In a randomized trial of high risk patients undergoing major gastrointestinal surgery, use of a cardiac output guided hemodynamic therapy algorithm compared with usual care did not reduce a composite outcome of complications and 30 day mortality. However, inclusion of these data in an updated meta analysis indicates that the intervention was associated with a reduction in complication rates. TRIAL REGISTRATION: isrctn.org Identifier: ISRCTN04386758. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0430",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Neurology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0430_landmark_practice_parameter_diagnosis_of_dementia_an_evidence_based_r.md",
+   "snippet": "Title Practice parameter: diagnosis of dementia (an evidence based review). Report of the Quality Standards Subcommittee of the American Academy of Neurology Authors Knopman D S, DeKosky S T, Cummings J L, Chui H, Corey Bloom J, Relkin N, S",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / Neurology Title Practice parameter: diagnosis of dementia (an evidence based review). Report of the Quality Standards Subcommittee of the American Academy of Neurology Authors Knopman D S, DeKosky S T, Cummings J L, Chui H, Corey Bloom J, Relkin N, Small G W, Miller B, et al. Journal / DOI Neurology · PMID: 11342678 https://pubmed.ncbi.nlm.nih.gov/11342678/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 1133회 · RCR 32.61 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To update the 1994 practice parameter for the diagnosis of dementia in the elderly. BACKGROUND: The AAN previously published a practice parameter on dementia in 1994. New research and clinical developments warrant an update of some aspects of diagnosis. METHODS: Studies published in English from 1985 through 1999 were identified that addressed four questions: 1) Are the current criteria for the diagnosis of dementia reliable? 2) Are the current diagnostic criteria able to establish a diagnosis for the prevalent dementias in the elderly? 3) Do laboratory tests improve the accuracy of the clinical diagnosis of dementing illness? 4) What comorbidities should be evaluated in elderly patients undergoing an initial assessment for dementia? RECOMMENDATIONS: Based on evidence in the literature, the following recommendations are made. 1) The DSM III R definition of dementia is reliable and should be used (Guideline). 2) The National Institute of Neurologic, Communicative Disorders and Stroke AD and Related Disorders Association (NINCDS ADRDA) or the Diagnostic and Statistical Manual, 3rd edition, revised (DSM IIIR) diagnostic criteria for AD and clinical criteria for Creutzfeldt Jakob disease (CJD) have sufficient reliability and validity and should be used (Guideline). Diagnostic criteria for vascular dementia, dementia with Lewy bodies, and frontotemporal dementia may be of use in clinical practice (Option) but have imperfect reliability and validity. 3) Structural neuroimaging with either a noncontrast CT or MR scan in the initial evaluation of patients with dementia is appropriate. Because of insufficient data on validity, no other imaging procedure is recommended (Guideline). There are currently no genetic markers recommended for routine diagnostic purposes (Guideline). The CSF 14 3 3 protein is useful for confirming or rejecting the diagnosis of CJD (Guideline). 4) Screening for depression, B(12) deficiency, and hypothyroidism should be performed (Guideline). Screening for syphilis in patients with dementia is not justified unless clinical suspicion for neurosyphilis is present (Guideline). CONCLUSIONS: Diagnostic criteria for dementia have improved since the 1994 practice parameter. Further research is needed to improve clinical definitions of dementia and its subtypes, as well as to determine the utility of various instruments of neuroimaging, biomarkers, and genetic testing in increasing diagnostic accuracy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0429",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Virchows Archiv : an international journal of pathology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0429_landmark_ovarian_carcinomas_five_distinct_diseases_with_different_ori.md",
+   "snippet": "Title Ovarian carcinomas: five distinct diseases with different origins, genetic alterations, and clinicopathological features Authors Prat Jaime Journal / DOI Virchows Archiv : an international journal of pathology · DOI: 10.1007/s00428 01",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Virchows Archiv : an international journal of pathology Title Ovarian carcinomas: five distinct diseases with different origins, genetic alterations, and clinicopathological features Authors Prat Jaime Journal / DOI Virchows Archiv : an international journal of pathology · DOI: 10.1007/s00428 012 1203 5 · PMID: 22322322 https://pubmed.ncbi.nlm.nih.gov/22322322/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 448회 · RCR 13.81 (분야평균=1.0) · NIH 상위 백분위 98.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Malignant epithelial tumors (carcinomas) are the most common ovarian cancers and also the most lethal gynecological malignancies. Based on histopathology and molecular genetic alterations, ovarian carcinomas are divided into five main types (high grade serous (70%), endometrioid (10%), clear cell (10%), mucinous (3%), and low grade serous carcinomas (<5%)) that account for over 95% of cases. These types are essentially distinct diseases, as indicated by differences in epidemiological and genetic risk factors, precursor lesions, patterns of spread, and molecular events during oncogenesis, response to chemotherapy, and prognosis. For a successful specific treatment, reproducible histopathological diagnosis of the tumor cell type is critical. The five tumor types are morphologically diverse and resemble carcinomas of the uterus. Actually, recent investigations have demonstrated that a significant number of cancers, traditionally thought to be primary ovarian tumors (particularly serous, endometrioid, and clear cell carcinomas), originate in the fallopian tube and the endometrium and involve the ovary secondarily. This review summarizes recent advances in the molecular pathology which have greatly improved our understanding of the biology of ovarian carcinoma and are also relevant to patient management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0428",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Mayo Clinic proceedings",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0428_landmark_management_of_newly_diagnosed_symptomatic_multiple_myeloma_u.md",
+   "snippet": "Title Management of newly diagnosed symptomatic multiple myeloma: updated Mayo Stratification of Myeloma and Risk Adapted Therapy (mSMART) consensus guidelines 2013 Authors Mikhael Joseph R, Dingli David, Roy Vivek, Reeder Craig B, Buadi Fr",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Mayo Clinic proceedings Title Management of newly diagnosed symptomatic multiple myeloma: updated Mayo Stratification of Myeloma and Risk Adapted Therapy (mSMART) consensus guidelines 2013 Authors Mikhael Joseph R, Dingli David, Roy Vivek, Reeder Craig B, Buadi Francis K, Hayman Suzanne R, Dispenzieri Angela, Fonseca Rafael, et al. Journal / DOI Mayo Clinic proceedings · DOI: 10.1016/j.mayocp.2013.01.019 · PMID: 23541011 https://pubmed.ncbi.nlm.nih.gov/23541011/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 426회 · RCR 12.73 (분야평균=1.0) · NIH 상위 백분위 98.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Multiple myeloma remains an incurable neoplasm of plasma cells that affects more than 20,000 people annually in the United States. There has been a veritable revolution in this disease during the past decade, with dramatic improvements in our understanding of its pathogenesis, the development of several novel agents, and a concomitant doubling in overall survival. Because multiple myeloma is a complex and wide ranging disorder, its management must be guided by disease and patient related factors; emerging as one of the most influential factors is risk stratification, primarily based on cytogenetic features. A risk adapted approach provides optimal therapy to patients, ensuring intense therapy for aggressive disease and minimizing toxic effects, providing sufficient but less intense therapy for low risk disease. This consensus statement reflects recommendations from more than 20 Mayo Clinic myeloma physicians, providing a practical approach for newly diagnosed patients with myeloma who are not enrolled in a clinical trial. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0427",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0427_landmark_kdigo_clinical_practice_guideline_for_lipid_management_in_ck.md",
+   "snippet": "Title KDIGO Clinical Practice Guideline for Lipid Management in CKD: summary of recommendation statements and clinical approach to the patient Authors Wanner Christoph, Tonelli Marcello, Kidney Disease: Improving Global Outcomes Lipid Guide",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title KDIGO Clinical Practice Guideline for Lipid Management in CKD: summary of recommendation statements and clinical approach to the patient Authors Wanner Christoph, Tonelli Marcello, Kidney Disease: Improving Global Outcomes Lipid Guideline Development Work Group Members Journal / DOI Kidney international · DOI: 10.1038/ki.2014.31 · PMID: 24552851 https://pubmed.ncbi.nlm.nih.gov/24552851/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 468회 · RCR 15.82 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The Kidney Disease: Improving Global Outcomes (KDIGO) organization developed clinical practice guidelines on lipid management for all adults and children with chronic kidney disease (CKD). Thirteen recommendations were obtained from the available evidence outlining a three step management including assessment in all, treatment in many, and follow up measurements in few. A key element is the recommendation of statin or statin/ezetimibe treatment in adults aged ⩾50 years with estimated glomerular filtration rate (eGFR) <60 ml/min per 1.73 m(2) but not treated with chronic dialysis or kidney transplantation. In dialysis patients, the magnitude of any relative reduction in risk appears to be substantially smaller than in earlier stages of CKD and initiation of statin treatment is not recommended for most prevalent hemodialysis patients. In the past, clinical practice guidelines suggested the use of targets for LDL cholesterol, which require repeated measurements. Treatment escalation with higher doses of statin would be a consequence when LDL cholesterol targets are not met. The KDIGO Work Group did not recommend this strategy because higher doses of statins have not been proven to be safe in the setting of CKD. Since LDL cholesterol levels do not necessarily suggest the need to increase statin doses, follow up measurement of lipid levels is not recommended. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0426",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood advances",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0426_landmark_american_society_of_hematology_2021_guidelines_for_managemen.md",
+   "snippet": "Title American Society of Hematology 2021 guidelines for management of venous thromboembolism: prevention and treatment in patients with cancer Authors Lyman Gary H, Carrier Marc, Ay Cihan, Di Nisio Marcello, Hicks Lisa K, Khorana Alok A, L",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Blood advances Title American Society of Hematology 2021 guidelines for management of venous thromboembolism: prevention and treatment in patients with cancer Authors Lyman Gary H, Carrier Marc, Ay Cihan, Di Nisio Marcello, Hicks Lisa K, Khorana Alok A, Leavitt Andrew D, Lee Agnes Y Y, et al. Journal / DOI Blood advances · DOI: 10.1182/bloodadvances.2020003442 · PMID: 33570602 https://pubmed.ncbi.nlm.nih.gov/33570602/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 652회 · RCR 51.12 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Venous thromboembolism (VTE) is a common complication among patients with cancer. Patients with cancer and VTE are at a markedly increased risk for morbidity and mortality. OBJECTIVE: These evidence based guidelines of the American Society of Hematology (ASH) are intended to support patients, clinicians, and other health care professionals in their decisions about the prevention and treatment of VTE in patients with cancer. METHODS: ASH formed a multidisciplinary guideline panel balanced to minimize potential bias from conflicts of interest. The guideline development process was supported by updated or new systematic evidence reviews. The Grading of Recommendations Assessment, Development, and Evaluation (GRADE) approach was used to assess evidence and make recommendations. RESULTS: Recommendations address mechanical and pharmacological prophylaxis in hospitalized medical patients with cancer, those undergoing a surgical procedure, and ambulatory patients receiving cancer chemotherapy. The recommendations also address the use of anticoagulation for the initial, short term, and long term treatment of VTE in patients with cancer. CONCLUSIONS: Strong recommendations include not using thromboprophylaxis in ambulatory patients receiving cancer chemotherapy at low risk of VTE and to use low molecular weight heparin (LMWH) for initial treatment of VTE in patients with cancer. Conditional recommendations include using thromboprophylaxis in hospitalized medical patients with cancer, LMWH or fondaparinux for surgical patients with cancer, LMWH or direct oral anticoagulants (DOAC) in ambulatory patients with cancer receiving systemic therapy at high risk of VTE and LMWH or DOAC for initial treatment of VTE, DOAC for the short term treatment of VTE, and LMWH or DOAC for the long term treatment of VTE in patients with cancer. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0425",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of pediatrics",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0425_landmark_efficacy_of_fluticasone_nasal_spray_for_pediatric_obstructiv.md",
+   "snippet": "Title Efficacy of fluticasone nasal spray for pediatric obstructive sleep apnea Authors Brouillette R T, Manoukian J J, Ducharme F M, Oudjhane K, Earle L G, Ladan S, Morielli A Journal / DOI The Journal of pediatrics · PMID: 11391326 https:",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / The Journal of pediatrics Title Efficacy of fluticasone nasal spray for pediatric obstructive sleep apnea Authors Brouillette R T, Manoukian J J, Ducharme F M, Oudjhane K, Earle L G, Ladan S, Morielli A Journal / DOI The Journal of pediatrics · PMID: 11391326 https://pubmed.ncbi.nlm.nih.gov/11391326/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 253회 · RCR 9.57 (분야평균=1.0) · NIH 상위 백분위 97.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: We tested the hypothesis that a 6 week course of a nasal glucocorticoid spray would decrease the severity of obstructive sleep apnea in children with adenotonsillar hypertrophy. STUDY DESIGN: We conducted a randomized, triple blind, placebocontrolled, parallel group trial of nasal fluticasone propionate versus placebo in 25 children aged 1 to 10 years with obstructive sleep apnea proven on polysomnography. The primary outcome was the change from baseline in the frequency of mixed and obstructive apneas and hypopneas. RESULTS: Thirteen children received fluticasone, and 12 received placebo. The mixed/obstructive apnea/hypopnea index decreased from 10.7 +/ 2.6 (SE) to 5.8 +/ 2.2 in the fluticasone group but increased from 10.9 +/ 2.3 to 13.1 +/ 3.6 in the placebo group, P =.04. The mixed/obstructive apnea/hypopnea index decreased in 12 of 13 subjects treated with fluticasone versus 6 of 12 treated with placebo, P =.03. The frequencies of hemoglobin desaturation and respiratory movement/arousals also decreased more in the fluticasone group. Changes from baseline in tonsillar size, adenoidal size, and symptom score were not significantly different between groups. CONCLUSION: Nasal fluticasone decreased the frequency of mixed and obstructive apneas and hypopneas, suggesting that topical corticosteroids may be helpful in ameliorating pediatric obstructive sleep apnea. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0424",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Hepatology (Baltimore, Md.)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0424_landmark_diagnostic_accuracy_and_reliability_of_ultrasonography_for_t.md",
+   "snippet": "Title Diagnostic accuracy and reliability of ultrasonography for the detection of fatty liver: a meta analysis Authors Hernaez Ruben, Lazo Mariana, Bonekamp Susanne, Kamel Ihab, Brancati Frederick L, Guallar Eliseo, Clark Jeanne M Journal /",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / Hepatology (Baltimore, Md.) Title Diagnostic accuracy and reliability of ultrasonography for the detection of fatty liver: a meta analysis Authors Hernaez Ruben, Lazo Mariana, Bonekamp Susanne, Kamel Ihab, Brancati Frederick L, Guallar Eliseo, Clark Jeanne M Journal / DOI Hepatology (Baltimore, Md.) · DOI: 10.1002/hep.24452 · PMID: 21618575 https://pubmed.ncbi.nlm.nih.gov/21618575/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 1209회 · RCR 38.39 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract UNLABELLED: Ultrasonography is a widely accessible imaging technique for the detection of fatty liver, but the reported accuracy and reliability have been inconsistent across studies. We aimed to perform a systematic review and meta analysis of the diagnostic accuracy and reliability of ultrasonography for the detection of fatty liver. We used MEDLINE and Embase from October 1967 to March 2010. Studies that provided cross tabulations of ultrasonography versus histology or standard imaging techniques, or that provided reliability data for ultrasonography, were included. Study variables were independently abstracted by three reviewers and double checked by one reviewer. Forty nine (4720 participants) studies were included for the meta analysis of diagnostic accuracy. The overall sensitivity, specificity, positive likelihood ratio, and negative likelihood ratio of ultrasound for the detection of moderate severe fatty liver, compared to histology (gold standard), were 84.8% (95% confidence interval: 79.5 88.9), 93.6% (87.2 97.0), 13.3 (6.4 27.6), and 0.16 (0.12 0.22), respectively. The area under the summary receiving operating characteristics curve was 0.93 (0.91 0.95). Reliability of ultrasound for the detection of fatty liver showed kappa statistics ranging from 0.54 to 0.92 for intrarater reliability and from 0.44 to 1.00 for interrater reliability. Sensitivity and specificity of ultrasound was similar to that of other imaging techniques (i.e., computed tomography or magnetic resonance imaging). Statistical heterogeneity was present even after stratification for multiple clinically relevant characteristics. CONCLUSION: Ultrasonography allows for reliable and accurate detection of moderate severe fatty liver, compared to histology. Because of its low cost, safety, and accessibility, ultrasound is likely the imaging technique of choice for screening for fatty liver in clinical and population settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0423",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of pathology & laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0423_landmark_validating_whole_slide_imaging_for_diagnostic_purposes_in_pa.md",
+   "snippet": "Title Validating whole slide imaging for diagnostic purposes in pathology: guideline from the College of American Pathologists Pathology and Laboratory Quality Center Authors Pantanowitz Liron, Sinard John H, Henricks Walter H, Fatheree Lis",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Archives of pathology & laboratory medicine Title Validating whole slide imaging for diagnostic purposes in pathology: guideline from the College of American Pathologists Pathology and Laboratory Quality Center Authors Pantanowitz Liron, Sinard John H, Henricks Walter H, Fatheree Lisa A, Carter Alexis B, Contis Lydia, Beckwith Bruce A, Evans Andrew J, et al. Journal / DOI Archives of pathology & laboratory medicine · DOI: 10.5858/arpa.2013 0093 CP · PMID: 23634907 https://pubmed.ncbi.nlm.nih.gov/23634907/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 466회 · RCR 16.33 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract CONTEXT: There is increasing interest in using whole slide imaging (WSI) for diagnostic purposes (primary and/or consultation). An important consideration is whether WSI can safely replace conventional light microscopy as the method by which pathologists review histologic sections, cytology slides, and/or hematology slides to render diagnoses. Validation of WSI is crucial to ensure that diagnostic performance based on digitized slides is at least equivalent to that of glass slides and light microscopy. Currently, there are no standard guidelines regarding validation of WSI for diagnostic use. OBJECTIVE: To recommend validation requirements for WSI systems to be used for diagnostic purposes. DESIGN: The College of American Pathologists Pathology and Laboratory Quality Center convened a nonvendor panel from North America with expertise in digital pathology to develop these validation recommendations. A literature review was performed in which 767 international publications that met search term requirements were identified. Studies outside the scope of this effort and those related solely to technical elements, education, and image analysis were excluded. A total of 27 publications were graded and underwent data extraction for evidence evaluation. Recommendations were derived from the strength of evidence determined from 23 of these published studies, open comment feedback, and expert panel consensus. RESULTS: Twelve guideline statements were established to help pathology laboratories validate their own WSI systems intended for clinical use. Validation of the entire WSI system, involving pathologists trained to use the system, should be performed in a manner that emulates the laboratory's actual clinical environment. It is recommended that such a validation study include at least 60 routine cases per application, comparing intraobserver diagnostic concordance between digitized and glass slides viewed at least 2 weeks apart. It is important that the validation process confirm that all material present on a glass slide to be scanned is included in the digital image. CONCLUSIONS: Validation should demonstrate that the WSI system under review produces acceptable digital slides for diagnostic interpretation. The intention of validating WSI systems is to permit the clinical use of this technology in a manner that does not compromise patient care. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0422",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Allergy",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0422_landmark_eaaci_guidelines_on_allergen_immunotherapy_ige_mediated_food.md",
+   "snippet": "Title EAACI Guidelines on allergen immunotherapy: IgE mediated food allergy Authors Pajno G B, Fernandez Rivas M, Arasi S, Roberts G, Akdis C A, Alvaro Lozano M, Beyer K, Bindslev Jensen C, et al. Journal / DOI Allergy · DOI: 10.1111/all.13",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Allergy Title EAACI Guidelines on allergen immunotherapy: IgE mediated food allergy Authors Pajno G B, Fernandez Rivas M, Arasi S, Roberts G, Akdis C A, Alvaro Lozano M, Beyer K, Bindslev Jensen C, et al. Journal / DOI Allergy · DOI: 10.1111/all.13319 · PMID: 29205393 https://pubmed.ncbi.nlm.nih.gov/29205393/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 428회 · RCR 23.35 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Food allergy can result in considerable morbidity, impairment of quality of life, and healthcare expenditure. There is therefore interest in novel strategies for its treatment, particularly food allergen immunotherapy (FA AIT) through the oral (OIT), sublingual (SLIT), or epicutaneous (EPIT) routes. This Guideline, prepared by the European Academy of Allergy and Clinical Immunology (EAACI) Task Force on Allergen Immunotherapy for IgE mediated Food Allergy, aims to provide evidence based recommendations for active treatment of IgE mediated food allergy with FA AIT. Immunotherapy relies on the delivery of gradually increasing doses of specific allergen to increase the threshold of reaction while on therapy (also known as desensitization) and ultimately to achieve post discontinuation effectiveness (also known as tolerance or sustained unresponsiveness). Oral FA AIT has most frequently been assessed: here, the allergen is either immediately swallowed (OIT) or held under the tongue for a period of time (SLIT). Overall, trials have found substantial benefit for patients undergoing either OIT or SLIT with respect to efficacy during treatment, particularly for cow's milk, hen's egg, and peanut allergies. A benefit post discontinuation is also suggested, but not confirmed. Adverse events during FA AIT have been frequently reported, but few subjects discontinue FA AIT as a result of these. Taking into account the current evidence, FA AIT should only be performed in research centers or in clinical centers with an extensive experience in FA AIT. Patients and their families should be provided with information about the use of FA AIT for IgE mediated food allergy to allow them to make an informed decision about the therapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0421",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0421_landmark_2017_acc_aha_aapa_abc_acpm_ags_apha_ash_aspc_nma_pcna_guidel.md",
+   "snippet": "Title 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults: A Report of the American College of Cardiology/American Heart Association Task",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Circulation Title 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Authors Whelton Paul K, Carey Robert M, Aronow Wilbert S, Casey Donald E, Collins Karen J, Dennison Himmelfarb Cheryl, DePalma Sondra M, Gidding Samuel, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000000596 · PMID: 30354654 https://pubmed.ncbi.nlm.nih.gov/30354654/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 468회 · RCR 20.44 (분야평균=1.0) · NIH 상위 백분위 99.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0420",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Regional anesthesia and pain medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0420_landmark_regional_anesthesia_in_the_patient_receiving_antithrombotic_.md",
+   "snippet": "Title Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: American Society of Regional Anesthesia and Pain Medicine Evidence Based Guidelines (Third Edition) Authors Horlocker Terese T, Wedel Denise J, Rowli",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Regional anesthesia and pain medicine Title Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: American Society of Regional Anesthesia and Pain Medicine Evidence Based Guidelines (Third Edition) Authors Horlocker Terese T, Wedel Denise J, Rowlingson John C, Enneking F Kayser, Kopp Sandra L, Benzon Honorio T, Brown David L, Heit John A, et al. Journal / DOI Regional anesthesia and pain medicine · PMID: 20052816 https://pubmed.ncbi.nlm.nih.gov/20052816/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 688회 · RCR 26.62 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The actual incidence of neurologic dysfunction resulting from hemorrhagic complications associated with neuraxial blockade is unknown. Although the incidence cited in the literature is estimated to be less than 1 in 150,000 epidural and less than 1 in 220,000 spinal anesthetics, recent epidemiologic surveys suggest that the frequency is increasing and may be as high as 1 in 3000 in some patient populations.Overall, the risk of clinically significant bleeding increase with age,associated abnormalities of the spinal cord or vertebral column, the presence of an underlying coagulopathy, difficulty during needle placement,and an indwelling neuraxial catheter during sustained anticoagulation( particularly with standard heparin or low molecular weight heparin). The need for prompt diagnosis and intervention to optimize neurologic outcome is also consistently reported. In response to these patient safety issues, the American Society of Regional Anesthesia and Pain Medicine (ASRA) convened its Third Consensus Conference on Regional Anesthesia and Anticoagulation. Practice guidelines or recommendations summarize evidence based reviews. However, the rarity of spinal hematoma defies a prospective randomized study, and there is no current laboratory model. As a result,the ASRA consensus statements represent the collective experience of recognized experts in the field of neuraxial anesthesia and anticoagulation. These are based on case reports, clinical series, pharmacology,hematology, and risk factors for surgical bleeding. An understanding of the complexity of this issue is essential to patient management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0419",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Arthritis and rheumatism",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0419_landmark_a_randomized_trial_of_parenteral_methotrexate_comparing_an_i.md",
+   "snippet": "Title A randomized trial of parenteral methotrexate comparing an intermediate dose with a higher dose in children with juvenile idiopathic arthritis who failed to respond to standard doses of methotrexate Authors Ruperto Nicolino, Murray Ke",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / Arthritis and rheumatism Title A randomized trial of parenteral methotrexate comparing an intermediate dose with a higher dose in children with juvenile idiopathic arthritis who failed to respond to standard doses of methotrexate Authors Ruperto Nicolino, Murray Kevin J, Gerloni Valeria, Wulffraat Nico, de Oliveira Sheila Knupp Feitosa, Falcini Fernanda, Dolezalova Pavla, Alessio Maria, et al. Journal / DOI Arthritis and rheumatism · PMID: 15248217 https://pubmed.ncbi.nlm.nih.gov/15248217/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 256회 · RCR 7.30 (분야평균=1.0) · NIH 상위 백분위 95.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To compare the safety and efficacy of parenteral methotrexate (MTX) at an intermediate dosage (15 mg/m(2)/week) versus a higher dosage (30 mg/m(2)/week) in patients with polyarticular course juvenile idiopathic arthritis (JIA) who failed to improve while receiving standard dosages of MTX (8 12.5 mg/m(2)/week). METHODS: In the screening phase, 595 patients who were newly started on a standard dose of MTX were followed up for 6 months. Subsequently, the nonresponders, defined according to the American College of Rheumatology (ACR) pediatric 30% improvement criteria (pediatric 30), were randomized to receive an intermediate dose or higher dose of parenteral MTX for an additional 6 months. Improvement in the screening and randomization phase was defined by the ACR pediatric 30 response, as well as by the 50% and 70% response levels (ACR pediatric 50 and ACR pediatric 70, respectively). RESULTS: In the screening phase, after receiving standard doses of MTX, 430 patients (72%) improved according to the ACR pediatric 30, while 360 (61%) met the ACR pediatric 50 and 225 (38%) met the ACR pediatric 70; among these patients, 69 (12%) also met the definition of complete disease control. Of the 133 nonresponders, 80 were randomized to receive an intermediate dose or higher dose of MTX. In the randomization phase, the ACR pediatric 30 response rate was 25 of 40 children (62.5%) in the intermediate dose group versus 23 of 40 children (57.5%) in the higher dose group. An ACR pediatric 50 response rate was attained by 23 patients (57.5%) receiving an intermediate dose versus 22 (55%) in the higher dose group. An ACR pediatric 70 response rate was seen in 18 children (45%) receiving an intermediate dose versus 19 (47.5%) receiving a higher dose. Five children (12.5%) in the intermediate dose group versus 4 (10%) receiving the higher dose of MTX also met the definition of complete disease control. None of the intergroup differences in response rate were significant. There were no significant differences in the frequency of adverse events or laboratory abnormalities between the 2 randomized groups. CONCLUSION: This study shows that the plateau of efficacy of MTX in JIA is reached with parenteral administration of 15 mg/m(2)/week and that a further increase in dosage is not associated with any additional therapeutic benefit. MTX should be administered for up to 9 12 months to appreciate its full therapeutic effect. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0418",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical endocrinology and metabolism",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0418_landmark_diagnosis_and_treatment_of_primary_adrenal_insufficiency_an_.md",
+   "snippet": "Title Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline Authors Bornstein Stefan R, Allolio Bruno, Arlt Wiebke, Barthel Andreas, Don Wauchope Andrew, Hammer Gary D, Husebye Eystein S,",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / The Journal of clinical endocrinology and metabolism Title Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline Authors Bornstein Stefan R, Allolio Bruno, Arlt Wiebke, Barthel Andreas, Don Wauchope Andrew, Hammer Gary D, Husebye Eystein S, Merke Deborah P, et al. Journal / DOI The Journal of clinical endocrinology and metabolism · DOI: 10.1210/jc.2015 1710 · PMID: 26760044 https://pubmed.ncbi.nlm.nih.gov/26760044/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 1214회 · RCR 56.38 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: This clinical practice guideline addresses the diagnosis and treatment of primary adrenal insufficiency. PARTICIPANTS: The Task Force included a chair, selected by The Clinical Guidelines Subcommittee of the Endocrine Society, eight additional clinicians experienced with the disease, a methodologist, and a medical writer. The co sponsoring associations (European Society of Endocrinology and the American Association for Clinical Chemistry) had participating members. The Task Force received no corporate funding or remuneration in connection with this review. EVIDENCE: This evidence based guideline was developed using the Grading of Recommendations, Assessment, Development, and Evaluation (GRADE) system to determine the strength of recommendations and the quality of evidence. CONSENSUS PROCESS: The evidence used to formulate recommendations was derived from two commissioned systematic reviews as well as other published systematic reviews and studies identified by the Task Force. The guideline was reviewed and approved sequentially by the Endocrine Society's Clinical Guidelines Subcommittee and Clinical Affairs Core Committee, members responding to a web posting, and the Endocrine Society Council. At each stage, the Task Force incorporated changes in response to written comments. CONCLUSIONS: We recommend diagnostic tests for the exclusion of primary adrenal insufficiency in all patients with indicative clinical symptoms or signs. In particular, we suggest a low diagnostic (and therapeutic) threshold in acutely ill patients, as well as in patients with predisposing factors. This is also recommended for pregnant women with unexplained persistent nausea, fatigue, and hypotension. We recommend a short corticotropin test (250 μg) as the \"gold standard\" diagnostic tool to establish the diagnosis. If a short corticotropin test is not possible in the first instance, we recommend an initial screening procedure comprising the measurement of morning plasma ACTH and cortisol levels. Diagnosis of the underlying cause should include a validated assay of autoantibodies against 21 hydroxylase. In autoantibody negative individuals, other causes should be sought. We recommend once daily fludrocortisone (median, 0.1 mg) and hydrocortisone (15 25 mg/d) or cortisone acetate replacement (20 35 mg/d) applied in two to three daily doses in adults. In children, hydrocortisone (∼8 mg/m(2)/d) is recommended. Patients should be educated about stress dosing and equipped with a steroid card and glucocorticoid preparation for parenteral emergency administration. Follow up should aim at monitoring appropriate dosing of corticosteroids and associated autoimmune diseases, particularly autoimmune thyroid disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0417",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Gut",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0417_landmark_british_society_of_gastroenterology_guidelines_on_the_diagno.md",
+   "snippet": "Title British Society of Gastroenterology guidelines on the diagnosis and management of patients at risk of gastric adenocarcinoma Authors Banks Matthew, Graham David, Jansen Marnix, Gotoda Takuji, Coda Sergio, di Pietro Massimiliano, Uedo ",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Gut Title British Society of Gastroenterology guidelines on the diagnosis and management of patients at risk of gastric adenocarcinoma Authors Banks Matthew, Graham David, Jansen Marnix, Gotoda Takuji, Coda Sergio, di Pietro Massimiliano, Uedo Noriya, Bhandari Pradeep, et al. Journal / DOI Gut · DOI: 10.1136/gutjnl 2018 318126 · PMID: 31278206 https://pubmed.ncbi.nlm.nih.gov/31278206/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 479회 · RCR 24.60 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Gastric adenocarcinoma carries a poor prognosis, in part due to the late stage of diagnosis. Risk factors include Helicobacter pylori infection, family history of gastric cancer in particular, hereditary diffuse gastric cancer and pernicious anaemia. The stages in the progression to cancer include chronic gastritis, gastric atrophy (GA), gastric intestinal metaplasia (GIM) and dysplasia. The key to early detection of cancer and improved survival is to non invasively identify those at risk before endoscopy. However, although biomarkers may help in the detection of patients with chronic atrophic gastritis, there is insufficient evidence to support their use for population screening. High quality endoscopy with full mucosal visualisation is an important part of improving early detection. Image enhanced endoscopy combined with biopsy sampling for histopathology is the best approach to detect and accurately risk stratify GA and GIM. Biopsies following the Sydney protocol from the antrum, incisura, lesser and greater curvature allow both diagnostic confirmation and risk stratification for progression to cancer. Ideally biopsies should be directed to areas of GA or GIM visualised by high quality endoscopy. There is insufficient evidence to support screening in a low risk population (undergoing routine diagnostic oesophagogastroduodenoscopy) such as the UK, but endoscopic surveillance every 3 years should be offered to patients with extensive GA or GIM. Endoscopic mucosal resection or endoscopic submucosal dissection of visible gastric dysplasia and early cancer has been shown to be efficacious with a high success rate and low rate of recurrence, providing that specific quality criteria are met. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0416",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the National Comprehensive Cancer Network : JNCCN",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0416_landmark_management_of_immunotherapy_related_toxicities_version_1_201.md",
+   "snippet": "Title Management of Immunotherapy Related Toxicities, Version 1.2019 Authors Thompson John A, Schneider Bryan J, Brahmer Julie, Andrews Stephanie, Armand Philippe, Bhatia Shailender, Budde Lihua E, Costa Luciano, et al. Journal / DOI Journa",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of the National Comprehensive Cancer Network : JNCCN Title Management of Immunotherapy Related Toxicities, Version 1.2019 Authors Thompson John A, Schneider Bryan J, Brahmer Julie, Andrews Stephanie, Armand Philippe, Bhatia Shailender, Budde Lihua E, Costa Luciano, et al. Journal / DOI Journal of the National Comprehensive Cancer Network : JNCCN · DOI: 10.6004/jnccn.2019.0013 · PMID: 30865922 https://pubmed.ncbi.nlm.nih.gov/30865922/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 445회 · RCR 18.40 (분야평균=1.0) · NIH 상위 백분위 99.1. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The aim of the NCCN Guidelines for Management of Immunotherapy Related Toxicities is to provide guidance on the management of immune related adverse events resulting from cancer immunotherapy. The NCCN Management of Immunotherapy Related Toxicities Panel is an interdisciplinary group of representatives from NCCN Member Institutions and ASCO, consisting of medical and hematologic oncologists with expertise in a wide array of disease sites, and experts from the fields of dermatology, gastroenterology, neuro oncology, nephrology, emergency medicine, cardiology, oncology nursing, and patient advocacy. Several panel representatives are members of the Society for Immunotherapy of Cancer (SITC). The initial version of the NCCN Guidelines was designed in general alignment with recommendations published by ASCO and SITC. The content featured in this issue is an excerpt of the recommendations for managing toxicity related to immune checkpoint blockade and a review of existing evidence. For the full version of the NCCN Guidelines, including recommendations for managing toxicities related to chimeric antigen receptor T cell therapy, visit NCCN.org. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0415",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetologia",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0415_landmark_targeting_renal_glucose_reabsorption_to_treat_hyperglycaemia.md",
+   "snippet": "Title Targeting renal glucose reabsorption to treat hyperglycaemia: the pleiotropic effects of SGLT2 inhibition Authors Vallon Volker, Thomson Scott C Journal / DOI Diabetologia · DOI: 10.1007/s00125 016 4157 3 · PMID: 27878313 https://pubm",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Diabetologia Title Targeting renal glucose reabsorption to treat hyperglycaemia: the pleiotropic effects of SGLT2 inhibition Authors Vallon Volker, Thomson Scott C Journal / DOI Diabetologia · DOI: 10.1007/s00125 016 4157 3 · PMID: 27878313 https://pubmed.ncbi.nlm.nih.gov/27878313/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 488회 · RCR 19.96 (분야평균=1.0) · NIH 상위 백분위 99.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Healthy kidneys filter ∼160 g/day of glucose (∼30% of daily energy intake) under euglycaemic conditions. To prevent valuable energy from being lost in the urine, the proximal tubule avidly reabsorbs filtered glucose up to a limit of ∼450 g/day. When blood glucose levels increase to the point that the filtered load exceeds this limit, the surplus is excreted in the urine. Thus, the kidney provides a safety valve that can prevent extreme hyperglycaemia as long as glomerular filtration is maintained. Most of the capacity for renal glucose reabsorption is provided by sodium glucose cotransporter (SGLT) 2 in the early proximal tubule. In the absence or with inhibition of SGLT2, the renal reabsorptive capacity for glucose declines to ∼80 g/day (the residual capacity of SGLT1), i.e. the safety valve opens at a lower threshold, which makes it relevant to glucose homeostasis from day to day. Several SGLT2 inhibitors are now approved glucose lowering agents for individuals with type 2 diabetes and preserved kidney function. By inducing glucosuria, these drugs improve glycaemic control in all stages of type 2 diabetes, while their risk of causing hypoglycaemia is low because they naturally stop working when the filtered glucose load falls below ∼80 g/day and they do not otherwise interfere with metabolic counterregulation. Through glucosuria, SGLT2 inhibitors reduce body weight and body fat, and shift substrate utilisation from carbohydrates to lipids and, possibly, ketone bodies. Because SGLT2 reabsorbs sodium along with glucose, SGLT2 blockers are natriuretic and antihypertensive. Also, because they work in the proximal tubule, SGLT2 inhibitors increase delivery of fluid and electrolytes to the macula densa, thereby activating tubuloglomerular feedback and increasing tubular back pressure. This mitigates glomerular hyperfiltration, reduces the kidney's demand for oxygen and lessens albuminuria. For reasons that are less well understood, SGLT2 inhibitors are also uricosuric. These pleiotropic effects of SGLT2 inhibitors are likely to have contributed to the results of the EMPA REG OUTCOME trial in which the SGLT2 inhibitor, empagliflozin, slowed the progression of chronic kidney disease and reduced major adverse cardiovascular events in high risk individuals with type 2 diabetes. This review discusses the role of SGLT2 in the physiology and pathophysiology of renal glucose reabsorption and outlines the unexpected logic of inhibiting SGLT2 in the diabetic kidney. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0414",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Stroke",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0414_landmark_guidelines_for_the_management_of_patients_with_unruptured_in.md",
+   "snippet": "Title Guidelines for the Management of Patients With Unruptured Intracranial Aneurysms: A Guideline for Healthcare Professionals From the American Heart Association/American Stroke Association Authors Thompson B Gregory, Brown Robert D, Ami",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Stroke Title Guidelines for the Management of Patients With Unruptured Intracranial Aneurysms: A Guideline for Healthcare Professionals From the American Heart Association/American Stroke Association Authors Thompson B Gregory, Brown Robert D, Amin Hanjani Sepideh, Broderick Joseph P, Cockroft Kevin M, Connolly E Sander, Duckwiler Gary R, Harris Catherine C, et al. Journal / DOI Stroke · DOI: 10.1161/STR.0000000000000070 · PMID: 26089327 https://pubmed.ncbi.nlm.nih.gov/26089327/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 821회 · RCR 40.42 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: The aim of this updated statement is to provide comprehensive and evidence based recommendations for management of patients with unruptured intracranial aneurysms. METHODS: Writing group members used systematic literature reviews from January 1977 up to June 2014. They also reviewed contemporary published evidence based guidelines, personal files, and published expert opinion to summarize existing evidence, indicate gaps in current knowledge, and when appropriate, formulated recommendations using standard American Heart Association criteria. The guideline underwent extensive peer review, including review by the Stroke Council Leadership and Stroke Scientific Statement Oversight Committees, before consideration and approval by the American Heart Association Science Advisory and Coordinating Committee. RESULTS: Evidence based guidelines are presented for the care of patients presenting with unruptured intracranial aneurysms. The guidelines address presentation, natural history, epidemiology, risk factors, screening, diagnosis, imaging and outcomes from surgical and endovascular treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0413",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatrics",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0413_landmark_creating_opportunities_for_parent_empowerment_program_effect.md",
+   "snippet": "Title Creating opportunities for parent empowerment: program effects on the mental health/coping outcomes of critically ill young children and their mothers Authors Melnyk Bernadette Mazurek, Alpert Gillis Linda, Feinstein Nancy Fischbeck, ",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / Pediatrics Title Creating opportunities for parent empowerment: program effects on the mental health/coping outcomes of critically ill young children and their mothers Authors Melnyk Bernadette Mazurek, Alpert Gillis Linda, Feinstein Nancy Fischbeck, Crean Hugh F, Johnson Jean, Fairbanks Eileen, Small Leigh, Rubenstein Jeffrey, et al. Journal / DOI Pediatrics · PMID: 15173543 https://pubmed.ncbi.nlm.nih.gov/15173543/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 264회 · RCR 10.45 (분야평균=1.0) · NIH 상위 백분위 97.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: Increasing numbers of children in the United States (ie, approximately 200 children per 100,000 population) require intensive care annually, because of advances in pediatric therapeutic techniques and a changing spectrum of pediatric disease. These children are especially vulnerable to a multitude of short and long term negative emotional, behavioral, and academic outcomes, including a higher risk of posttraumatic stress disorder (PTSD) and a greater need for psychiatric treatment, compared with matched hospitalized children who do not require intensive care. In addition, the parents of these children are at risk for the development of PTSD, as well as other negative emotional outcomes (eg, depression and anxiety disorders). There has been little research conducted to systematically determine the effects of interventions aimed at improving psychosocial outcomes for critically ill children and their parents, despite recognition of the adverse effects of critical care hospitalization on the nonphysiologic well being of patients and their families. The purpose of this study was to evaluate the effects of a preventive educational behavioral intervention program, the Creating Opportunities for Parent Empowerment (COPE) program, initiated early in the intensive care unit hospitalization on the mental health/psychosocial outcomes of critically ill young children and their mothers. DESIGN: A randomized, controlled trial with follow up assessments 1, 3, 6, and 12 months after hospitalization was conducted with 174 mothers and their 2 to 7 year old children who were unexpectedly hospitalized in the pediatric intensive care units (PICUs) of 2 children's hospitals. The final sample of 163 mothers ranged in age from 18 to 52 years, with a mean of 31.2 years. Among the mothers reporting race/ethnicity, the sample included 116 white (71.2%), 33 African American (20.3%), 3 Hispanic (1.8%), and 2 Indian (1.2%) mothers. The mean age of the hospitalized children was 50.3 months. Ninety nine children (60.7%) were male and 64 (39.3%) were female. The major reasons for hospitalization were respiratory problems, accidental trauma, neurologic problems, and infections. Fifty seven percent (n = 93) of the children had never been hospitalized overnight, and none had experienced a previous PICU hospitalization. INTERVENTIONS: Mothers in the experimental (COPE) group received a 3 phase educational behavioral intervention program 1) 6 to 16 hours after PICU admission, 2) 2 to 16 hours after transfer to the general pediatric unit, and 3) 2 to 3 days after their children were discharged from the hospital. Control mothers received a structurally equivalent control program. The COPE intervention was based on self regulation theory, control theory, and the emotional contagion hypothesis. The COPE program, which was delivered with audiotapes and matching written information, as well as a parent child activity workbook that facilitated implementing the audiotaped information, focused on increasing 1) parents' knowledge and understanding of the range of behaviors and emotions that young children typically display during and after hospitalization and 2) direct parent participation in their children's emotional and physical care. The COPE workbook, which was provided to parents and children after transfer from the PICU to the general pediatric unit, contained 3 activities to be completed before discharge from the hospital, ie, 1) puppet play to encourage expression of emotions in a nonthreatening manner, 2) therapeutic medical play to assist children in obtaining some sense of mastery and control over the hospital experience, and 3) reading and discussing Jenny's Wish, a story about a young child who successfully copes with a stressful hospitalization. OUTCOME MEASURES: Primary outcomes included maternal anxiety, negative mood state, depression, maternal beliefs, parental stress, and parent participation in their children's care, as well as child adjustment, which was assessed with the Behavioral Assessment System for Children (parent form). RESn (parent form). RESULTS: COPE mothers reported significantly less parental stress and participated more in their children's physical and emotional care on the pediatric unit, compared with control mothers, as rated by nurses who were blinded with respect to study group. In comparison with control mothers, COPE mothers reported less negative mood state, less depression, and fewer PTSD symptoms at certain follow up assessments after hospitalization. In addition, COPE mothers reported stronger beliefs regarding their children's likely responses to hospitalization and how they could enhance their children's adjustment, compared with control mothers. COPE children, in comparison with control children, exhibited significantly fewer withdrawal symptoms 6 months after discharge, as well as fewer negative behavioral symptoms and externalizing behaviors at 12 months. COPE mothers also reported less hyperactivity and greater adaptability among their children at 12 months, compared with control mothers. One year after discharge, a significantly higher percentage of control group children (25.9%) exhibited clinically significant behavioral symptoms, compared with COPE children (2.3%). In addition, 6 and 12 months after discharge, significantly higher percentages of control group children exhibited clinically significant externalizing symptoms (6 months, 14.3%; 12 months, 22.2%), compared with COPE children (6 months, 1.8%; 12 months, 4.5%). CONCLUSIONS: The findings of this study indicated that mothers who received the COPE program experienced improved maternal functional and emotional coping outcomes, which resulted in significantly fewer child adjustment problems, in comparison with the control group. With the increasing prevalence of attention deficit/hyperactivity disorder and externalizing problems among children and the documented lack of mental health screening and early intervention services for children in this country, the COPE intervention could help protect this high risk population of children from developing these troublesome problems. As a result, the mental health status of children after critical care hospitalization could be improved. With routine provision of the COPE program in PICUs throughout the country, family burdens and costs associated with the mental health treatment of these problems might be substantially reduced. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0412",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical endocrinology and metabolism",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0412_landmark_the_diagnosis_of_cushing_s_syndrome_an_endocrine_society_cli.md",
+   "snippet": "Title The diagnosis of Cushing's syndrome: an Endocrine Society Clinical Practice Guideline Authors Nieman Lynnette K, Biller Beverly M K, Findling James W, Newell Price John, Savage Martin O, Stewart Paul M, Montori Victor M Journal / DOI ",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / The Journal of clinical endocrinology and metabolism Title The diagnosis of Cushing's syndrome: an Endocrine Society Clinical Practice Guideline Authors Nieman Lynnette K, Biller Beverly M K, Findling James W, Newell Price John, Savage Martin O, Stewart Paul M, Montori Victor M Journal / DOI The Journal of clinical endocrinology and metabolism · DOI: 10.1210/jc.2008 0125 · PMID: 18334580 https://pubmed.ncbi.nlm.nih.gov/18334580/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 1912회 · RCR 61.62 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: The objective of the study was to develop clinical practice guidelines for the diagnosis of Cushing's syndrome. PARTICIPANTS: The Task Force included a chair, selected by the Clinical Guidelines Subcommittee (CGS) of The Endocrine Society, five additional experts, a methodologist, and a medical writer. The Task Force received no corporate funding or remuneration. CONSENSUS PROCESS: Consensus was guided by systematic reviews of evidence and discussions. The guidelines were reviewed and approved sequentially by The Endocrine Society's CGS and Clinical Affairs Core Committee, members responding to a web posting, and The Endocrine Society Council. At each stage the Task Force incorporated needed changes in response to written comments. CONCLUSIONS: After excluding exogenous glucocorticoid use, we recommend testing for Cushing's syndrome in patients with multiple and progressive features compatible with the syndrome, particularly those with a high discriminatory value, and patients with adrenal incidentaloma. We recommend initial use of one test with high diagnostic accuracy (urine cortisol, late night salivary cortisol, 1 mg overnight or 2 mg 48 h dexamethasone suppression test). We recommend that patients with an abnormal result see an endocrinologist and undergo a second test, either one of the above or, in some cases, a serum midnight cortisol or dexamethasone CRH test. Patients with concordant abnormal results should undergo testing for the cause of Cushing's syndrome. Patients with concordant normal results should not undergo further evaluation. We recommend additional testing in patients with discordant results, normal responses suspected of cyclic hypercortisolism, or initially normal responses who accumulate additional features over time. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0411",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0411_landmark_escmid_and_ecmm_joint_clinical_guidelines_for_the_diagnosis_.md",
+   "snippet": "Title ESCMID and ECMM joint clinical guidelines for the diagnosis and management of mucormycosis 2013 Authors Cornely O A, Arikan Akdagli S, Dannaoui E, Groll A H, Lagrou K, Chakrabarti A, Lanternier F, Pagano L, et al. Journal / DOI Clinic",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases Title ESCMID and ECMM joint clinical guidelines for the diagnosis and management of mucormycosis 2013 Authors Cornely O A, Arikan Akdagli S, Dannaoui E, Groll A H, Lagrou K, Chakrabarti A, Lanternier F, Pagano L, et al. Journal / DOI Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases · DOI: 10.1111/1469 0691.12371 · PMID: 24479848 https://pubmed.ncbi.nlm.nih.gov/24479848/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 480회 · RCR 22.12 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract These European Society for Clinical Microbiology and Infectious Diseases and European Confederation of Medical Mycology Joint Clinical Guidelines focus on the diagnosis and management of mucormycosis. Only a few of the numerous recommendations can be summarized here. To diagnose mucormycosis, direct microscopy preferably using optical brighteners, histopathology and culture are strongly recommended. Pathogen identification to species level by molecular methods and susceptibility testing are strongly recommended to establish epidemiological knowledge. The recommendation for guiding treatment based on MICs is supported only marginally. Imaging is strongly recommended to determine the extent of disease. To differentiate mucormycosis from aspergillosis in haematological malignancy and stem cell transplantation recipients, identification of the reverse halo sign on computed tomography is advised with moderate strength. For adults and children we strongly recommend surgical debridement in addition to immediate first line antifungal treatment with liposomal or lipid complex amphotericin B with a minimum dose of 5 mg/kg/day. Amphotericin B deoxycholate is better avoided because of severe adverse effects. For salvage treatment we strongly recommend posaconazole 4×200 mg/day. Reversal of predisposing conditions is strongly recommended, i.e. using granulocyte colony stimulating factor in haematological patients with ongoing neutropenia, controlling hyperglycaemia and ketoacidosis in diabetic patients, and limiting glucocorticosteroids to the minimum dose required. We recommend against using deferasirox in haematological patients outside clinical trials, and marginally support a recommendation for deferasirox in diabetic patients. Hyperbaric oxygen is supported with marginal strength only. Finally, we strongly recommend continuing treatment until complete response demonstrated on imaging and permanent reversal of predisposing factors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0410",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of gastroenterology and hepatology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0410_landmark_second_asia_pacific_consensus_guidelines_for_helicobacter_py.md",
+   "snippet": "Title Second Asia Pacific Consensus Guidelines for Helicobacter pylori infection Authors Fock K Ming, Katelaris Peter, Sugano Kentaro, Ang Tiing Leong, Hunt Richard, Talley Nicholas J, Lam Shiu Kum, Xiao Shu Dong, et al. Journal / DOI Journ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of gastroenterology and hepatology Title Second Asia Pacific Consensus Guidelines for Helicobacter pylori infection Authors Fock K Ming, Katelaris Peter, Sugano Kentaro, Ang Tiing Leong, Hunt Richard, Talley Nicholas J, Lam Shiu Kum, Xiao Shu Dong, et al. Journal / DOI Journal of gastroenterology and hepatology · DOI: 10.1111/j.1440 1746.2009.05982.x · PMID: 19788600 https://pubmed.ncbi.nlm.nih.gov/19788600/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 448회 · RCR 15.86 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The Asia Pacific Consensus Conference was convened to review and synthesize the most current information on Helicobacter pylori management so as to update the previously published regional guidelines. The group recognized that in addition to long established indications, such as peptic ulcer disease, early mucosa associated lymphoid tissue (MALT) type lymphoma and family history of gastric cancer, H. pylori eradication was also indicated for H. pylori infected patients with functional dyspepsia, in those receiving long term maintenance proton pump inhibitor (PPI) for gastroesophageal reflux disease, and in cases of unexplained iron deficiency anemia or idiopathic thrombocytopenic purpura. In addition, a population 'test and treat' strategy for H. pylori infection in communities with high incidence of gastric cancer was considered to be an effective strategy for gastric cancer prevention. It was recommended that H. pylori infection should be tested for and eradicated prior to long term aspirin or non steroidal anti inflammatory drug therapy in patients at high risk for ulcers and ulcer related complications. In Asia, the currently recommended first line therapy for H. pylori infection is PPI based triple therapy with amoxicillin/metronidazole and clarithromycin for 7 days, while bismuth based quadruple therapy is an effective alternative. There appears to be an increasing rate of resistance to clarithromycin and metronidazole in parts of Asia, leading to reduced efficacy of PPI based triple therapy. There are insufficient data to recommend sequential therapy as an alternative first line therapy in Asia. Salvage therapies that can be used include: (i) standard triple therapy that has not been previously used; (ii) bismuth based quadruple therapy; (iii) levofloxacin based triple therapy; and (iv) rifabutin based triple therapy. Both CYP2C19 genetic polymorphisms and cigarette smoking can influence future H. pylori eradication rates. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0409",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0409_landmark_kdoqi_clinical_practice_guideline_and_clinical_practice_reco.md",
+   "snippet": "Title KDOQI Clinical Practice Guideline and Clinical Practice Recommendations for anemia in chronic kidney disease: 2007 update of hemoglobin target Authors KDOQI Journal / DOI American journal of kidney diseases : the official journal of t",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guideline and Clinical Practice Recommendations for anemia in chronic kidney disease: 2007 update of hemoglobin target Authors KDOQI Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · PMID: 17720528 https://pubmed.ncbi.nlm.nih.gov/17720528/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 498회 · RCR 16.03 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0408",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Stroke",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0408_landmark_guidelines_for_the_management_of_spontaneous_intracerebral_h.md",
+   "snippet": "Title Guidelines for the management of spontaneous intracerebral hemorrhage: a guideline for healthcare professionals from the American Heart Association/American Stroke Association Authors Morgenstern Lewis B, Hemphill J Claude, Anderson C",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Stroke Title Guidelines for the management of spontaneous intracerebral hemorrhage: a guideline for healthcare professionals from the American Heart Association/American Stroke Association Authors Morgenstern Lewis B, Hemphill J Claude, Anderson Craig, Becker Kyra, Broderick Joseph P, Connolly E Sander, Greenberg Steven M, Huang James N, et al. Journal / DOI Stroke · DOI: 10.1161/STR.0b013e3181ec611b · PMID: 20651276 https://pubmed.ncbi.nlm.nih.gov/20651276/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 1087회 · RCR 36.87 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: The aim of this guideline is to present current and comprehensive recommendations for the diagnosis and treatment of acute spontaneous intracerebral hemorrhage. METHODS: A formal literature search of MEDLINE was performed. Data were synthesized with the use of evidence tables. Writing committee members met by teleconference to discuss data derived recommendations. The American Heart Association Stroke Council's Levels of Evidence grading algorithm was used to grade each recommendation. Prerelease review of the draft guideline was performed by 6 expert peer reviewers and by the members of the Stroke Council Scientific Statements Oversight Committee and Stroke Council Leadership Committee. It is intended that this guideline be fully updated in 3 years' time. RESULTS: Evidence based guidelines are presented for the care of patients presenting with intracerebral hemorrhage. The focus was subdivided into diagnosis, hemostasis, blood pressure management, inpatient and nursing management, preventing medical comorbidities, surgical treatment, outcome prediction, rehabilitation, prevention of recurrence, and future considerations. CONCLUSIONS: Intracerebral hemorrhage is a serious medical condition for which outcome can be impacted by early, aggressive care. The guidelines offer a framework for goal directed treatment of the patient with intracerebral hemorrhage. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0407",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatrics",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0407_landmark_efficacy_of_constraint_induced_movement_therapy_for_children.md",
+   "snippet": "Title Efficacy of constraint induced movement therapy for children with cerebral palsy with asymmetric motor impairment Authors Taub Edward, Ramey Sharon Landesman, DeLuca Stephanie, Echols Karen Journal / DOI Pediatrics · PMID: 14754942 ht",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / Pediatrics Title Efficacy of constraint induced movement therapy for children with cerebral palsy with asymmetric motor impairment Authors Taub Edward, Ramey Sharon Landesman, DeLuca Stephanie, Echols Karen Journal / DOI Pediatrics · PMID: 14754942 https://pubmed.ncbi.nlm.nih.gov/14754942/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 291회 · RCR 10.66 (분야평균=1.0) · NIH 상위 백분위 97.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: Constraint Induced Movement (CI) therapy has been found to be a promising treatment for substantially increasing the use of extremities affected by such neurologic injuries as stroke and traumatic brain injury in adults. The purpose of this study was to determine the applicability of this intervention to young children with cerebral palsy. METHODS: A randomized, controlled clinical trial of pediatric CI therapy in which 18 children with diagnosed hemiparesis associated with cerebral palsy (7 96 months old) were randomly assigned to receive either pediatric CI therapy or conventional treatment. Pediatric CI therapy involved promoting increased use of the more affected arm and hand by intensive training (using shaping) of the more impaired upper extremity for 6 hours/day for 21 consecutive days coupled with bivalved casting of the child's less affected upper extremity for that period. Children's functional upper extremity skills were assessed in the laboratory (blinded scoring) and at home (parent ratings) just prior, after, and 3 weeks posttreatment. Treated children were followed for 6 months. RESULTS: Children receiving pediatric CI therapy compared with controls acquired significantly more new classes of motoric skills (9.3 vs 2.2); demonstrated significant gains in the mean amount (2.1 vs 0.1) and quality (1.7 vs 0.3) of more affected arm use at home; and in a laboratory motor function test displayed substantial improvement including increases in unprompted use of the more affected upper extremity (52.1% vs 2.1% of items). Benefits were maintained over 6 months, with supplemental evidence of quality of life changes for many children. CONCLUSION: Pediatric CI therapy produced major and sustained improvement in motoric function in the young children with hemiparesis in the study. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0406",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of pediatric gastroenterology and nutrition",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0406_landmark_european_society_for_pediatric_gastroenterology_hepatology_a.md",
+   "snippet": "Title European Society for Pediatric Gastroenterology, Hepatology, and Nutrition guidelines for the diagnosis of coeliac disease Authors Husby S, Koletzko S, Korponay Szabó I R, Mearin M L, Phillips A, Shamir R, Troncone R, Giersiepen K, et",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / Journal of pediatric gastroenterology and nutrition Title European Society for Pediatric Gastroenterology, Hepatology, and Nutrition guidelines for the diagnosis of coeliac disease Authors Husby S, Koletzko S, Korponay Szabó I R, Mearin M L, Phillips A, Shamir R, Troncone R, Giersiepen K, et al. Journal / DOI Journal of pediatric gastroenterology and nutrition · DOI: 10.1097/MPG.0b013e31821a23d0 · PMID: 22197856 https://pubmed.ncbi.nlm.nih.gov/22197856/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 1931회 · RCR 71.67 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: Diagnostic criteria for coeliac disease (CD) from the European Society for Paediatric Gastroenterology, Hepatology, and Nutrition (ESPGHAN) were published in 1990. Since then, the autoantigen in CD, tissue transglutaminase, has been identified; the perception of CD has changed from that of a rather uncommon enteropathy to a common multiorgan disease strongly dependent on the haplotypes human leukocyte antigen (HLA) DQ2 and HLA DQ8; and CD specific antibody tests have improved. METHODS: A panel of 17 experts defined CD and developed new diagnostic criteria based on the Delphi process. Two groups of patients were defined with different diagnostic approaches to diagnose CD: children with symptoms suggestive of CD (group 1) and asymptomatic children at increased risk for CD (group 2). The 2004 National Institutes of Health/Agency for Healthcare Research and Quality report and a systematic literature search on antibody tests for CD in paediatric patients covering the years 2004 to 2009 was the basis for the evidence based recommendations on CD specific antibody testing. RESULTS: In group 1, the diagnosis of CD is based on symptoms, positive serology, and histology that is consistent with CD. If immunoglobulin A anti tissue transglutaminase type 2 antibody titers are high ( 10 times the upper limit of normal), then the option is to diagnose CD without duodenal biopsies by applying a strict protocol with further laboratory tests. In group 2, the diagnosis of CD is based on positive serology and histology. HLA DQ2 and HLA DQ8 testing is valuable because CD is unlikely if both haplotypes are negative. CONCLUSIONS: The aim of the new guidelines was to achieve a high diagnostic accuracy and to reduce the burden for patients and their families. The performance of these guidelines in clinical practice should be evaluated prospectively. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0405",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / International review of experimental pathology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0405_landmark_structure_development_and_molecular_pathology_of_basement_me.md",
+   "snippet": "Title Structure, development, and molecular pathology of basement membranes Authors Timpl R, Dziadek M Journal / DOI International review of experimental pathology · PMID: 3536789 https://pubmed.ncbi.nlm.nih.gov/3536789/ Why must read 파트(Pa",
+   "text": "Pathology landmark highly-cited pubmed PubMed / International review of experimental pathology Title Structure, development, and molecular pathology of basement membranes Authors Timpl R, Dziadek M Journal / DOI International review of experimental pathology · PMID: 3536789 https://pubmed.ncbi.nlm.nih.gov/3536789/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 499회 · RCR 15.19 (분야평균=1.0) · NIH 상위 백분위 98.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0404",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Haematologica",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0404_landmark_ecil_6_guidelines_for_the_treatment_of_invasive_candidiasis_.md",
+   "snippet": "Title ECIL 6 guidelines for the treatment of invasive candidiasis, aspergillosis and mucormycosis in leukemia and hematopoietic stem cell transplant patients Authors Tissot Frederic, Agrawal Samir, Pagano Livio, Petrikkos Georgios, Groll An",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Haematologica Title ECIL 6 guidelines for the treatment of invasive candidiasis, aspergillosis and mucormycosis in leukemia and hematopoietic stem cell transplant patients Authors Tissot Frederic, Agrawal Samir, Pagano Livio, Petrikkos Georgios, Groll Andreas H, Skiada Anna, Lass Flörl Cornelia, Calandra Thierry, et al. Journal / DOI Haematologica · DOI: 10.3324/haematol.2016.152900 · PMID: 28011902 https://pubmed.ncbi.nlm.nih.gov/28011902/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 461회 · RCR 24.78 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The European Conference on Infections in Leukemia (ECIL) provides recommendations for diagnostic strategies and prophylactic, pre emptive or targeted therapy strategies for various types of infection in patients with hematologic malignancies or hematopoietic stem cell transplantation recipients. Meetings are held every two years since 2005 and evidence based recommendations are elaborated after evaluation of the literature and discussion among specialists of nearly all European countries. In this manuscript, the ECIL group presents the 2015 update of the recommendations for the targeted treatment of invasive candidiasis, aspergillosis and mucormycosis. Current data now allow a very strong recommendation in favor of echinocandins for first line therapy of candidemia irrespective of the underlying predisposing factors. Anidulafungin has been given the same grading as the other echinocandins for hemato oncological patients. The beneficial role of catheter removal in candidemia is strengthened. Aspergillus guidelines now recommend the use of either voriconazole or isavuconazole for first line treatment of invasive aspergillosis, while first line combination antifungal therapy is not routinely recommended. As only few new data were published since the last ECIL guidelines, no major changes were made to mucormycosis recommendations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0403",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0403_landmark_prevalence_of_depression_in_chronic_kidney_disease_systemati.md",
+   "snippet": "Title Prevalence of depression in chronic kidney disease: systematic review and meta analysis of observational studies Authors Palmer Suetonia, Vecchio Mariacristina, Craig Jonathan C, Tonelli Marcello, Johnson David W, Nicolucci Antonio, P",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title Prevalence of depression in chronic kidney disease: systematic review and meta analysis of observational studies Authors Palmer Suetonia, Vecchio Mariacristina, Craig Jonathan C, Tonelli Marcello, Johnson David W, Nicolucci Antonio, Pellegrini Fabio, Saglimbene Valeria, et al. Journal / DOI Kidney international · DOI: 10.1038/ki.2013.77 · PMID: 23486521 https://pubmed.ncbi.nlm.nih.gov/23486521/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 630회 · RCR 27.68 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Prevalence estimates of depression in chronic kidney disease (CKD) vary widely in existing studies. We conducted a systematic review and meta analysis of observational studies to summarize the point prevalence of depressive symptoms in adults with CKD. We searched MEDLINE and Embase (through January 2012). Random effects meta analysis was used to estimate the prevalence of depressive symptoms. We also limited the analyses to studies using clinical interview and prespecified criteria for diagnosis. We included 249 populations (55,982 participants). Estimated prevalence of depression varied by stage of CKD and the tools used for diagnosis. Prevalence of interview based depression in CKD stage 5D was 22.8% (confidence interval (CI), 18.6 27.6), but estimates were somewhat less precise for CKD stages 1 5 (21.4% (CI, 11.1 37.2)) and for kidney transplant recipients (25.7% (12.8 44.9)). Using self or clinician administered rating scales, the prevalence of depressive symptoms for CKD stage 5D was higher (39.3% (CI, 36.8 42.0)) relative to CKD stages 1 5 (26.5% (CI, 18.5 36.5)) and transplant recipients (26.6% (CI, 20.9 33.1)) and suggested that self report scales may overestimate the presence of depression, particularly in the dialysis setting. Thus, interview defined depression affects approximately one quarter of adults with CKD. Given the potential prevalence of depression in the setting of CKD, randomized trials to evaluate effects of interventions for depression on patient centered outcomes are needed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0402",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European urology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0402_landmark_eau_guidelines_on_interventional_treatment_for_urolithiasis.md",
+   "snippet": "Title EAU Guidelines on Interventional Treatment for Urolithiasis Authors Türk Christian, Petřík Aleš, Sarica Kemal, Seitz Christian, Skolarikos Andreas, Straub Michael, Knoll Thomas Journal / DOI European urology · DOI: 10.1016/j.eururo.20",
+   "text": "Surgery landmark highly-cited pubmed PubMed / European urology Title EAU Guidelines on Interventional Treatment for Urolithiasis Authors Türk Christian, Petřík Aleš, Sarica Kemal, Seitz Christian, Skolarikos Andreas, Straub Michael, Knoll Thomas Journal / DOI European urology · DOI: 10.1016/j.eururo.2015.07.041 · PMID: 26344917 https://pubmed.ncbi.nlm.nih.gov/26344917/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 1249회 · RCR 81.55 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract CONTEXT: Management of urinary stones is a major issue for most urologists. Treatment modalities are minimally invasive and include extracorporeal shockwave lithotripsy (SWL), ureteroscopy (URS), and percutaneous nephrolithotomy (PNL). Technological advances and changing treatment patterns have had an impact on current treatment recommendations, which have clearly shifted towards endourologic procedures. These guidelines describe recent recommendations on treatment indications and the choice of modality for ureteral and renal calculi. OBJECTIVE: To evaluate the optimal measures for treatment of urinary stone disease. EVIDENCE ACQUISITION: Several databases were searched to identify studies on interventional treatment of urolithiasis, with special attention to the level of evidence. EVIDENCE SYNTHESIS: Treatment decisions are made individually according to stone size, location, and (if known) composition, as well as patient preference and local expertise. Treatment recommendations have shifted to endourologic procedures such as URS and PNL, and SWL has lost its place as the first line modality for many indications despite its proven efficacy. Open and laparoscopic techniques are restricted to limited indications. Best clinical practice standards have been established for all treatments, making all options minimally invasive with low complication rates. CONCLUSION: Active treatment of urolithiasis is currently a minimally invasive intervention, with preference for endourologic techniques. PATIENT SUMMARY: For active removal of stones from the kidney or ureter, technological advances have made it possible to use less invasive surgical techniques. These interventions are safe and are generally associated with shorter recovery times and less discomfort for the patient. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0401",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of pediatrics & adolescent medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0401_landmark_decreasing_sedentary_behaviors_in_treating_pediatric_obesity.md",
+   "snippet": "Title Decreasing sedentary behaviors in treating pediatric obesity Authors Epstein L H, Paluch R A, Gordy C C, Dorn J Journal / DOI Archives of pediatrics & adolescent medicine · PMID: 10710017 https://pubmed.ncbi.nlm.nih.gov/10710017/ Why ",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / Archives of pediatrics & adolescent medicine Title Decreasing sedentary behaviors in treating pediatric obesity Authors Epstein L H, Paluch R A, Gordy C C, Dorn J Journal / DOI Archives of pediatrics & adolescent medicine · PMID: 10710017 https://pubmed.ncbi.nlm.nih.gov/10710017/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 334회 · RCR 12.08 (분야평균=1.0) · NIH 상위 백분위 98.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Epidemiological studies have shown television watching to be a risk factor for the development of obesity in children. The effect of reducing television watching and other sedentary behaviors as a component of a comprehensive obesity treatment program has not been thoroughly tested. OBJECTIVE: To compare the influence of targeting decreases in sedentary behavior vs. increases in physical activity in the comprehensive treatment of obesity in 8 to 12 year old children. DESIGN: Randomized, controlled outcome study. SETTING: Childhood obesity research clinic. DESIGN: Ninety families with obese 8 to 12 year old children were randomly assigned to groups that were provided a comprehensive family based behavioral weight control program that included dietary, and behavior change information but differed in whether sedentary or physically active behaviors were targeted and the degree of behavior change required. RESULTS: Results during 2 years showed that targeting either decreased sedentary behaviors or increased physical activity was associated with significant decreases in percent overweight and body fat and improved aerobic fitness. Self reported activity minutes increased and targeted sedentary time decreased during treatment. Children substituted nontargeted sedentary behaviors for some of their targeted sedentary behaviors. CONCLUSION: These results support reducing sedentary behaviors as an adjunct in the treatment of pediatric obesity. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0400",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical endocrinology and metabolism",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0400_landmark_pheochromocytoma_and_paraganglioma_an_endocrine_society_clin.md",
+   "snippet": "Title Pheochromocytoma and paraganglioma: an endocrine society clinical practice guideline Authors Lenders Jacques W M, Duh Quan Yang, Eisenhofer Graeme, Gimenez Roqueplo Anne Paule, Grebe Stefan K G, Murad Mohammad Hassan, Naruse Mitsuhide",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / The Journal of clinical endocrinology and metabolism Title Pheochromocytoma and paraganglioma: an endocrine society clinical practice guideline Authors Lenders Jacques W M, Duh Quan Yang, Eisenhofer Graeme, Gimenez Roqueplo Anne Paule, Grebe Stefan K G, Murad Mohammad Hassan, Naruse Mitsuhide, Pacak Karel, et al. Journal / DOI The Journal of clinical endocrinology and metabolism · DOI: 10.1210/jc.2014 1498 · PMID: 24893135 https://pubmed.ncbi.nlm.nih.gov/24893135/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 1970회 · RCR 78.56 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: The aim was to formulate clinical practice guidelines for pheochromocytoma and paraganglioma (PPGL). PARTICIPANTS: The Task Force included a chair selected by the Endocrine Society Clinical Guidelines Subcommittee (CGS), seven experts in the field, and a methodologist. The authors received no corporate funding or remuneration. EVIDENCE: This evidence based guideline was developed using the Grading of Recommendations, Assessment, Development, and Evaluation (GRADE) system to describe both the strength of recommendations and the quality of evidence. The Task Force reviewed primary evidence and commissioned two additional systematic reviews. CONSENSUS PROCESS: One group meeting, several conference calls, and e mail communications enabled consensus. Committees and members of the Endocrine Society, European Society of Endocrinology, and Americal Association for Clinical Chemistry reviewed drafts of the guidelines. CONCLUSIONS: The Task Force recommends that initial biochemical testing for PPGLs should include measurements of plasma free or urinary fractionated metanephrines. Consideration should be given to preanalytical factors leading to false positive or false negative results. All positive results require follow up. Computed tomography is suggested for initial imaging, but magnetic resonance is a better option in patients with metastatic disease or when radiation exposure must be limited. (123)I metaiodobenzylguanidine scintigraphy is a useful imaging modality for metastatic PPGLs. We recommend consideration of genetic testing in all patients, with testing by accredited laboratories. Patients with paraganglioma should be tested for SDHx mutations, and those with metastatic disease for SDHB mutations. All patients with functional PPGLs should undergo preoperative blockade to prevent perioperative complications. Preparation should include a high sodium diet and fluid intake to prevent postoperative hypotension. We recommend minimally invasive adrenalectomy for most pheochromocytomas with open resection for most paragangliomas. Partial adrenalectomy is an option for selected patients. Lifelong follow up is suggested to detect recurrent or metastatic disease. We suggest personalized management with evaluation and treatment by multidisciplinary teams with appropriate expertise to ensure favorable outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0399",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Acta cytologica",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0399_landmark_the_bethesda_system_for_reporting_thyroid_cytopathology_a_me.md",
+   "snippet": "Title The Bethesda System for Reporting Thyroid Cytopathology: a meta analysis Authors Bongiovanni Massimo, Spitale Alessandra, Faquin William C, Mazzucchelli Luca, Baloch Zubair W Journal / DOI Acta cytologica · DOI: 10.1159/000339959 · PM",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Acta cytologica Title The Bethesda System for Reporting Thyroid Cytopathology: a meta analysis Authors Bongiovanni Massimo, Spitale Alessandra, Faquin William C, Mazzucchelli Luca, Baloch Zubair W Journal / DOI Acta cytologica · DOI: 10.1159/000339959 · PMID: 22846422 https://pubmed.ncbi.nlm.nih.gov/22846422/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 703회 · RCR 27.86 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: We aimed to investigate the validity of the Bethesda System for Reporting Thyroid Cytopathology (TBSRTC) through meta analysis. STUDY DESIGN: All publications between January 1, 2008 and September 1, 2011 that studied TBSRTC and had available histological follow up data were retrieved. To calculate the sensitivity, specificity and diagnostic accuracy, the cases diagnosed as follicular neoplasm, suspicious for malignancy and malignant which were histopathologically confirmed as malignant were defined as true positive. True negative included benign cases confirmed as benign on histopathology. The nondiagnostic category was excluded from the statistical calculation. The correlations between the 6 diagnostic categories were investigated. RESULTS: The publications review resulted in a case cohort of 25,445 thyroid fine needle aspirations, 6,362 (25%) of which underwent surgical excision; this group constituted the basis of the study. The sensitivity, specificity and diagnostic accuracy were 97, 50.7 and 68.8%, respectively. The positive predictive value and negative predictive value were 55.9 and 96.3%, respectively. The rates of false negatives and false positives were low: 3 and 0.5%, respectively. CONCLUSIONS: The results of meta analysis showed high overall accuracy, indicating that TBSRTC represents a reliable and valid reporting system for thyroid cytology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0398",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0398_landmark_antimicrobial_prophylaxis_for_adult_patients_with_cancer_rel.md",
+   "snippet": "Title Antimicrobial Prophylaxis for Adult Patients With Cancer Related Immunosuppression: ASCO and IDSA Clinical Practice Guideline Update Authors Taplitz Randy A, Kennedy Erin B, Bow Eric J, Crews Jennie, Gleason Charise, Hawley Douglas K,",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Antimicrobial Prophylaxis for Adult Patients With Cancer Related Immunosuppression: ASCO and IDSA Clinical Practice Guideline Update Authors Taplitz Randy A, Kennedy Erin B, Bow Eric J, Crews Jennie, Gleason Charise, Hawley Douglas K, Langston Amelia A, Nastoupil Loretta J, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.18.00374 · PMID: 30179565 https://pubmed.ncbi.nlm.nih.gov/30179565/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 472회 · RCR 19.44 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To provide an updated joint ASCO/Infectious Diseases Society of America (IDSA) guideline on antimicrobial prophylaxis for adult patients with immunosuppression associated with cancer and its treatment. METHODS: ASCO and IDSA convened an update Expert Panel and conducted a systematic review of relevant studies from May 2011 to November 2016. The guideline recommendations were based on the review of evidence by the Expert Panel. RESULTS: Six new or updated meta analyses and six new primary studies were added to the updated systematic review. RECOMMENDATIONS: Antibacterial and antifungal prophylaxis is recommended for patients who are at high risk of infection, including patients who are expected to have profound, protracted neutropenia, which is defined as < 100 neutrophils/µL for 7 days or other risk factors. Herpes simplex virus seropositive patients undergoing allogeneic hematopoietic stem cell transplantation or leukemia induction therapy should receive nucleoside analog based antiviral prophylaxis, such as acyclovir. Pneumocystis jirovecii prophylaxis is recommended for patients receiving chemotherapy regimens that are associated with a 3.5% risk for pneumonia as a result of this organism (eg, those with ≥ 20 mg prednisone equivalents daily for ≥ 1 month or on the basis of purine analog usage). Treatment with a nucleoside reverse transcription inhibitor (eg, entecavir or tenofovir) is recommended for patients at high risk of hepatitis B virus reactivation. Recommendations for vaccination and avoidance of prolonged contact with environments that have high concentrations of airborne fungal spores are also provided within the updated guideline. Additional information is available at www.asco.org/supportive care guidelines . Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0397",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American Society of Nephrology : JASN",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0397_landmark_chronic_kidney_disease_and_mortality_risk_a_systematic_revie.md",
+   "snippet": "Title Chronic kidney disease and mortality risk: a systematic review Authors Tonelli Marcello, Wiebe Natasha, Culleton Bruce, House Andrew, Rabbat Chris, Fok Mei, McAlister Finlay, Garg Amit X Journal / DOI Journal of the American Society o",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Journal of the American Society of Nephrology : JASN Title Chronic kidney disease and mortality risk: a systematic review Authors Tonelli Marcello, Wiebe Natasha, Culleton Bruce, House Andrew, Rabbat Chris, Fok Mei, McAlister Finlay, Garg Amit X Journal / DOI Journal of the American Society of Nephrology : JASN · PMID: 16738019 https://pubmed.ncbi.nlm.nih.gov/16738019/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1349회 · RCR 36.20 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Current guidelines identify people with chronic kidney disease (CKD) as being at high risk for cardiovascular and all cause mortality. Because as many as 19 million Americans may have CKD, a comprehensive summary of this risk would be potentially useful for planning public health policy. A systematic review of the association between non dialysis dependent CKD and the risk for all cause and cardiovascular mortality was conducted. Patient and study related characteristics that influenced the magnitude of these associations also were investigated. MEDLINE and EMBASE databases were searched, and reference lists through December 2004 were consulted. Authors of 10 primary studies provided additional data. Cohort studies or cohort analyses of randomized, controlled trials that compared mortality between those with and without chronically reduced kidney function were included. Studies were excluded from review when participants were followed for < 1 yr or had ESRD. Two reviewers independently extracted data on study setting, quality, participant and renal function characteristics, and outcomes. Thirty nine studies that followed a total of 1,371,990 participants were reviewed. The unadjusted relative risk for mortality in participants with reduced kidney function compared with those without ranged from 0.94 to 5.0 and was significantly more than 1.0 in 93% of cohorts. Among the 16 studies that provided suitable data, the absolute risk for death increased exponentially with decreasing renal function. Fourteen cohorts described the risk for mortality from reduced kidney function, after adjustment for other established risk factors. Although adjusted relative hazards were consistently lower than unadjusted relative risks (median reduction 17%), they remained significantly more than 1.0 in 71% of cohorts. This review supports current guidelines that identify individuals with CKD as being at high risk for cardiovascular mortality. Determining which interventions best offset this risk remains a health priority. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0396",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Chest",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0396_landmark_prevention_of_vte_in_orthopedic_surgery_patients_antithrombo.md",
+   "snippet": "Title Prevention of VTE in orthopedic surgery patients: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence Based Clinical Practice Guidelines Authors Falck Ytter Yngve, Francis Charles",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Chest Title Prevention of VTE in orthopedic surgery patients: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence Based Clinical Practice Guidelines Authors Falck Ytter Yngve, Francis Charles W, Johanson Norman A, Curley Catherine, Dahl Ola E, Schulman Sam, Ortel Thomas L, Pauker Stephen G, et al. Journal / DOI Chest · DOI: 10.1378/chest.11 2404 · PMID: 22315265 https://pubmed.ncbi.nlm.nih.gov/22315265/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 1711회 · RCR 73.98 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: VTE is a serious, but decreasing complication following major orthopedic surgery. This guideline focuses on optimal prophylaxis to reduce postoperative pulmonary embolism and DVT. METHODS: The methods of this guideline follow those described in Methodology for the Development of Antithrombotic Therapy and Prevention of Thrombosis Guidelines: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence Based Clinical Practice Guidelines in this supplement. RESULTS: In patients undergoing major orthopedic surgery, we recommend the use of one of the following rather than no antithrombotic prophylaxis: low molecular weight heparin; fondaparinux; dabigatran, apixaban, rivaroxaban (total hip arthroplasty or total knee arthroplasty but not hip fracture surgery); low dose unfractionated heparin; adjusted dose vitamin K antagonist; aspirin (all Grade 1B); or an intermittent pneumatic compression device (IPCD) (Grade 1C) for a minimum of 10 to 14 days. We suggest the use of low molecular weight heparin in preference to the other agents we have recommended as alternatives (Grade 2C/2B), and in patients receiving pharmacologic prophylaxis, we suggest adding an IPCD during the hospital stay (Grade 2C). We suggest extending thromboprophylaxis for up to 35 days (Grade 2B). In patients at increased bleeding risk, we suggest an IPCD or no prophylaxis (Grade 2C). In patients who decline injections, we recommend using apixaban or dabigatran (all Grade 1B). We suggest against using inferior vena cava filter placement for primary prevention in patients with contraindications to both pharmacologic and mechanical thromboprophylaxis (Grade 2C). We recommend against Doppler (or duplex) ultrasonography screening before hospital discharge (Grade 1B). For patients with isolated lower extremity injuries requiring leg immobilization, we suggest no thromboprophylaxis (Grade 2B). For patients undergoing knee arthroscopy without a history of VTE, we suggest no thromboprophylaxis (Grade 2B). CONCLUSIONS: Optimal strategies for thromboprophylaxis after major orthopedic surgery include pharmacologic and mechanical approaches. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0395",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA pediatrics",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0395_landmark_effects_of_social_needs_screening_and_in_person_service_navi.md",
+   "snippet": "Title Effects of Social Needs Screening and In Person Service Navigation on Child Health: A Randomized Clinical Trial Authors Gottlieb Laura M, Hessler Danielle, Long Dayna, Laves Ellen, Burns Abigail R, Amaya Anais, Sweeney Patricia, Schud",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / JAMA pediatrics Title Effects of Social Needs Screening and In Person Service Navigation on Child Health: A Randomized Clinical Trial Authors Gottlieb Laura M, Hessler Danielle, Long Dayna, Laves Ellen, Burns Abigail R, Amaya Anais, Sweeney Patricia, Schudel Christine, et al. Journal / DOI JAMA pediatrics · DOI: 10.1001/jamapediatrics.2016.2521 · PMID: 27599265 https://pubmed.ncbi.nlm.nih.gov/27599265/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 360회 · RCR 19.48 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract IMPORTANCE: Social determinants of health shape both children's immediate health and their lifetime risk for disease. Increasingly, pediatric health care organizations are intervening to address family social adversity. However, little evidence is available on the effectiveness of related interventions. OBJECTIVE: To evaluate the effects of social needs screening and in person resource navigation services on social needs and child health. DESIGN, SETTING, AND PARTICIPANTS: Patients were randomized to intervention or active control conditions by the day of the week. Primary outcomes observed at 4 months after enrollment included caregivers' reports of social needs and child health status. Recruitment occurred between October 13, 2013, and August 27, 2015, in pediatric primary and urgent care clinics in 2 safety net hospitals. Participants were English speaking or Spanish speaking caregivers accompanying minor children to nonacute medical visits. INTERVENTIONS: After standardized screening, caregivers either received written information on relevant community services (active control) or received in person help to access services with follow up telephone calls for further assistance if needed (navigation intervention). MAIN OUTCOMES AND MEASURES: Change in reported social needs and in caregiver assessment of child's overall health reported 4 months later. RESULTS: Among 1809 patients enrolled in the study, evenly split between the 2 sites, 31.6% (n = 572) were enrolled in a primary care clinic and 68.4% (n = 1237) were enrolled in an urgent care setting. The children were primarily Hispanic white individuals (50.9% [n = 921]) and non Hispanic black individuals (26.2% [n = 473]) and had a mean (SD) age of 5.1 (4.8) years; 50.5% (n = 913) were female. The reported number of social needs at baseline ranged from 0 to 11 of 14 total possible items, with a mean (SD) of 2.7 (2.2). At 4 months after enrollment, the number of social needs reported by the intervention arm decreased more than that reported by the control arm, with a mean (SE) change of 0.39 (0.13) vs 0.22 (0.13) (P < .001). In addition, caregivers in the intervention arm reported significantly greater improvement in their child's health, with a mean (SE) change of 0.36 (0.05) vs 0.12 (0.05) (P < .001). CONCLUSIONS AND RELEVANCE: To our knowledge, this investigation is the first randomized clinical trial to evaluate health outcomes of a pediatric social needs navigation program. Compared with an active control at 4 months after enrollment, the intervention significantly decreased families' reports of social needs and significantly improved children's overall health status as reported by caregivers. These findings support the feasibility and potential effect of addressing social needs in pediatric health care settings. TRIAL REGISTRATION: clinicaltrials.gov Identifier: NCT01939704. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0394",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / BMJ open",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0394_landmark_stard_2015_guidelines_for_reporting_diagnostic_accuracy_stud.md",
+   "snippet": "Title STARD 2015 guidelines for reporting diagnostic accuracy studies: explanation and elaboration Authors Cohen Jérémie F, Korevaar Daniël A, Altman Douglas G, Bruns David E, Gatsonis Constantine A, Hooft Lotty, Irwig Les, Levine Deborah, ",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / BMJ open Title STARD 2015 guidelines for reporting diagnostic accuracy studies: explanation and elaboration Authors Cohen Jérémie F, Korevaar Daniël A, Altman Douglas G, Bruns David E, Gatsonis Constantine A, Hooft Lotty, Irwig Les, Levine Deborah, et al. Journal / DOI BMJ open · DOI: 10.1136/bmjopen 2016 012799 · PMID: 28137831 https://pubmed.ncbi.nlm.nih.gov/28137831/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 2046회 · RCR 102.99 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Diagnostic accuracy studies are, like other clinical studies, at risk of bias due to shortcomings in design and conduct, and the results of a diagnostic accuracy study may not apply to other patient groups and settings. Readers of study reports need to be informed about study design and conduct, in sufficient detail to judge the trustworthiness and applicability of the study findings. The STARD statement (Standards for Reporting of Diagnostic Accuracy Studies) was developed to improve the completeness and transparency of reports of diagnostic accuracy studies. STARD contains a list of essential items that can be used as a checklist, by authors, reviewers and other readers, to ensure that a report of a diagnostic accuracy study contains the necessary information. STARD was recently updated. All updated STARD materials, including the checklist, are available at http://www.equator network.org/reporting guidelines/stard Here, we present the STARD 2015 explanation and elaboration document. Through commented examples of appropriate reporting, we clarify the rationale for each of the 30 items on the STARD 2015 checklist, and describe what is expected from authors in developing sufficiently informative study reports. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0393",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Nature reviews. Cancer",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0393_landmark_preventing_or_reducing_late_side_effects_of_radiation_therap.md",
+   "snippet": "Title Preventing or reducing late side effects of radiation therapy: radiobiology meets molecular pathology Authors Bentzen Søren M Journal / DOI Nature reviews. Cancer · PMID: 16929324 https://pubmed.ncbi.nlm.nih.gov/16929324/ Why must rea",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Nature reviews. Cancer Title Preventing or reducing late side effects of radiation therapy: radiobiology meets molecular pathology Authors Bentzen Søren M Journal / DOI Nature reviews. Cancer · PMID: 16929324 https://pubmed.ncbi.nlm.nih.gov/16929324/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 769회 · RCR 18.37 (분야평균=1.0) · NIH 상위 백분위 99.1. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Radiation therapy has curative or palliative potential in roughly half of all incident solid tumours, and offers organ and function preservation in most cases. Unfortunately, early and late toxicity limits the deliverable intensity of radiotherapy, and might affect the long term health related quality of life of the patient. Recent progress in molecular pathology and normal tissue radiobiology has improved the mechanistic understanding of late normal tissue effects and shifted the focus from initial damage induction to damage recognition and tissue remodelling. This stimulates research into new pharmacological strategies for preventing or reducing the side effects of radiation therapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0392",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of allergy, asthma & immunology : official publication of the American College of Allergy, Asthma, & Immunology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0392_landmark_diagnosis_and_management_of_rhinitis_complete_guidelines_of_.md",
+   "snippet": "Title Diagnosis and management of rhinitis: complete guidelines of the Joint Task Force on Practice Parameters in Allergy, Asthma and Immunology. American Academy of Allergy, Asthma, and Immunology Authors Dykewicz M S, Fineman S, Skoner D ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of allergy, asthma & immunology : official publication of the American College of Allergy, Asthma, & Immunology Title Diagnosis and management of rhinitis: complete guidelines of the Joint Task Force on Practice Parameters in Allergy, Asthma and Immunology. American Academy of Allergy, Asthma, and Immunology Authors Dykewicz M S, Fineman S, Skoner D P, Nicklas R, Lee R, Blessing Moore J, Li J T, Bernstein I L, et al. Journal / DOI Annals of allergy, asthma & immunology : official publication of the American College of Allergy, Asthma, & Immunology · PMID: 9860027 https://pubmed.ncbi.nlm.nih.gov/9860027/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 482회 · RCR 19.65 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract This document contains complete guidelines for diagnosis and management of rhinitis developed by the Joint Task Force on Practice Parameters in Allergy, Asthma and Immunology, representing the American Academy of Allergy, Asthma and Immunology, the American College of Allergy, Asthma and Immunology and the Joint Council on Allergy, Asthma and Immunology. The guidelines are comprehensive and begin with statements on clinical characteristics and diagnosis of different forms of rhinitis (allergic, non allergic, occupational rhinitis, hormonal rhinitis [pregnancy and hypothyroidism], drug induced rhinitis, rhinitis from food ingestion), and other conditions that may be confused with rhinitis. Recommendations on patient evaluation discuss appropriate use of history, physical examination, and diagnostic testing, as well as unproven or inappropriate techniques that should not be used. Parameters on management include use of environmental control measures, pharmacologic therapy including recently introduced therapies and allergen immunotherapy. Because of the risks to patients and society from sedation and performance impairment caused by first generation antihistamines, second generation antihistamines that reduce or eliminate these side effects should usually be considered before first generation antihistamines for the treatment of allergic rhinitis. The document emphasizes the importance of rhinitis management for comorbid conditions (asthma, sinusitis, otitis media). Guidelines are also presented on special considerations in patients subsets (children, the elderly, pregnancy, athletes and patients with rhinitis medicamentosa); and when consultation with an allergist immunologist should be considered. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0391",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0391_landmark_chronic_kidney_disease_after_acute_kidney_injury_a_systemati.md",
+   "snippet": "Title Chronic kidney disease after acute kidney injury: a systematic review and meta analysis Authors Coca Steven G, Singanamala Swathi, Parikh Chirag R Journal / DOI Kidney international · DOI: 10.1038/ki.2011.379 · PMID: 22113526 https://",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title Chronic kidney disease after acute kidney injury: a systematic review and meta analysis Authors Coca Steven G, Singanamala Swathi, Parikh Chirag R Journal / DOI Kidney international · DOI: 10.1038/ki.2011.379 · PMID: 22113526 https://pubmed.ncbi.nlm.nih.gov/22113526/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1738회 · RCR 57.27 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Acute kidney injury may increase the risk for chronic kidney disease and end stage renal disease. In an attempt to summarize the literature and provide more compelling evidence, we conducted a systematic review comparing the risk for CKD, ESRD, and death in patients with and without AKI. From electronic databases, web search engines, and bibliographies, 13 cohort studies were selected, evaluating long term renal outcomes and non renal outcomes in patients with AKI. The pooled incidence of CKD and ESRD were 25.8 per 100 person years and 8.6 per 100 person years, respectively. Patients with AKI had higher risks for developing CKD (pooled adjusted hazard ratio 8.8, 95% CI 3.1 25.5), ESRD (pooled adjusted HR 3.1, 95% CI 1.9 5.0), and mortality (pooled adjusted HR 2.0, 95% CI 1.3 3.1) compared with patients without AKI. The relationship between AKI and CKD or ESRD was graded on the basis of the severity of AKI, and the effect size was dampened by decreased baseline glomerular filtration rate. Data were limited, but AKI was also independently associated with the risk for cardiovascular disease and congestive heart failure, but not with hospitalization for stroke or all cause hospitalizations. Meta regression did not identify any study level factors that were associated with the risk for CKD or ESRD. Our review identifies AKI as an independent risk factor for CKD, ESRD, death, and other important non renal outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0390",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Stroke",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0390_landmark_guidelines_for_the_management_of_aneurysmal_subarachnoid_hem.md",
+   "snippet": "Title Guidelines for the management of aneurysmal subarachnoid hemorrhage: a guideline for healthcare professionals from the American Heart Association/american Stroke Association Authors Connolly E Sander, Rabinstein Alejandro A, Carhuapom",
+   "text": "Surgery landmark highly-cited pubmed PubMed / Stroke Title Guidelines for the management of aneurysmal subarachnoid hemorrhage: a guideline for healthcare professionals from the American Heart Association/american Stroke Association Authors Connolly E Sander, Rabinstein Alejandro A, Carhuapoma J Ricardo, Derdeyn Colin P, Dion Jacques, Higashida Randall T, Hoh Brian L, Kirkness Catherine J, et al. Journal / DOI Stroke · DOI: 10.1161/STR.0b013e3182587839 · PMID: 22556195 https://pubmed.ncbi.nlm.nih.gov/22556195/ Why must read 파트(Surgery) 내 고인용 랜드마크로 선정. 피인용 2542회 · RCR 103.74 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: The aim of this guideline is to present current and comprehensive recommendations for the diagnosis and treatment of aneurysmal subarachnoid hemorrhage (aSAH). METHODS: A formal literature search of MEDLINE (November 1, 2006, through May 1, 2010) was performed. Data were synthesized with the use of evidence tables. Writing group members met by teleconference to discuss data derived recommendations. The American Heart Association Stroke Council's Levels of Evidence grading algorithm was used to grade each recommendation. The guideline draft was reviewed by 7 expert peer reviewers and by the members of the Stroke Council Leadership and Manuscript Oversight Committees. It is intended that this guideline be fully updated every 3 years. RESULTS: Evidence based guidelines are presented for the care of patients presenting with aSAH. The focus of the guideline was subdivided into incidence, risk factors, prevention, natural history and outcome, diagnosis, prevention of rebleeding, surgical and endovascular repair of ruptured aneurysms, systems of care, anesthetic management during repair, management of vasospasm and delayed cerebral ischemia, management of hydrocephalus, management of seizures, and management of medical complications. CONCLUSIONS: aSAH is a serious medical condition in which outcome can be dramatically impacted by early, aggressive, expert care. The guidelines offer a framework for goal directed treatment of the patient with aSAH. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0389",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The New England journal of medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0389_landmark_fluvoxamine_for_the_treatment_of_anxiety_disorders_in_childr.md",
+   "snippet": "Title Fluvoxamine for the treatment of anxiety disorders in children and adolescents. The Research Unit on Pediatric Psychopharmacology Anxiety Study Group Authors (정보 없음) Journal / DOI The New England journal of medicine · PMID: 11323729 h",
+   "text": "Pediatrics landmark highly-cited pubmed PubMed / The New England journal of medicine Title Fluvoxamine for the treatment of anxiety disorders in children and adolescents. The Research Unit on Pediatric Psychopharmacology Anxiety Study Group Authors (정보 없음) Journal / DOI The New England journal of medicine · PMID: 11323729 https://pubmed.ncbi.nlm.nih.gov/11323729/ Why must read 파트(Pediatrics) 내 고인용 랜드마크로 선정. 피인용 391회 · RCR 13.32 (분야평균=1.0) · NIH 상위 백분위 98.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Drugs that selectively inhibit serotonin reuptake are effective treatments for adults with mood and anxiety disorders, but limited data are available on the safety and efficacy of serotonin reuptake inhibitors in children with anxiety disorders. METHODS: We studied 128 children who were 6 to 17 years of age; who met the criteria for social phobia, separation anxiety disorder, or generalized anxiety disorder; and who had received psychological treatment for three weeks without improvement. The children were randomly assigned to receive fluvoxamine (at a maximum of 300 mg per day) or placebo for eight weeks and were evaluated with rating scales designed to assess the degree of anxiety and impairment. RESULTS: Children in the fluvoxamine group had a mean (+/ SD) decrease of 9.7+/ 6.9 points in symptoms of anxiety on the Pediatric Anxiety Rating Scale (range of possible scores, 0 to 25, with higher scores indicating greater anxiety), as compared with a decrease of 3.1+/ 4.8 points among children in the placebo group (P<0.001). On the Clinical Global Impressions Improvement scale, 48 of 63 children in the fluvoxamine group (76 percent) responded to the treatment, as indicated by a score of less than 4, as compared with 19 of 65 children in the placebo group (29 percent, P<0.001). Five children in the fluvoxamine group (8 percent) discontinued treatment because of adverse events, as compared with one child in the placebo group (2 percent). CONCLUSIONS: Fluvoxamine is an effective treatment for children and adolescents with social phobia, separation anxiety disorder, or generalized anxiety disorder. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0388",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0388_landmark_recommendations_for_human_epidermal_growth_factor_receptor_2.md",
+   "snippet": "Title Recommendations for human epidermal growth factor receptor 2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline update Authors Wolff Antonio C, Hammond M Elizab",
+   "text": "Laboratory Medicine landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Recommendations for human epidermal growth factor receptor 2 testing in breast cancer: American Society of Clinical Oncology/College of American Pathologists clinical practice guideline update Authors Wolff Antonio C, Hammond M Elizabeth H, Hicks David G, Dowsett Mitch, McShane Lisa M, Allison Kimberly H, Allred Donald C, Bartlett John M S, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.2013.50.9984 · PMID: 24101045 https://pubmed.ncbi.nlm.nih.gov/24101045/ Why must read 파트(Laboratory Medicine) 내 고인용 랜드마크로 선정. 피인용 3317회 · RCR 107.31 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To update the American Society of Clinical Oncology (ASCO)/College of American Pathologists (CAP) guideline recommendations for human epidermal growth factor receptor 2 (HER2) testing in breast cancer to improve the accuracy of HER2 testing and its utility as a predictive marker in invasive breast cancer. METHODS: ASCO/CAP convened an Update Committee that included coauthors of the 2007 guideline to conduct a systematic literature review and update recommendations for optimal HER2 testing. RESULTS: The Update Committee identified criteria and areas requiring clarification to improve the accuracy of HER2 testing by immunohistochemistry (IHC) or in situ hybridization (ISH). The guideline was reviewed and approved by both organizations. RECOMMENDATIONS: The Update Committee recommends that HER2 status (HER2 negative or positive) be determined in all patients with invasive (early stage or recurrence) breast cancer on the basis of one or more HER2 test results (negative, equivocal, or positive). Testing criteria define HER2 positive status when (on observing within an area of tumor that amounts to 10% of contiguous and homogeneous tumor cells) there is evidence of protein overexpression (IHC) or gene amplification (HER2 copy number or HER2/CEP17 ratio by ISH based on counting at least 20 cells within the area). If results are equivocal (revised criteria), reflex testing should be performed using an alternative assay (IHC or ISH). Repeat testing should be considered if results seem discordant with other histopathologic findings. Laboratories should demonstrate high concordance with a validated HER2 test on a sufficiently large and representative set of specimens. Testing must be performed in a laboratory accredited by CAP or another accrediting entity. The Update Committee urges providers and health systems to cooperate to ensure the highest quality testing. This guideline was developed through a collaboration between the American Society of Clinical Oncology and the College of American Pathologists and has been published jointly by invitation and consent in both Journal of Clinical Oncology and the Archives of Pathology & Laboratory Medicine. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0387",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Lancet. Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0387_landmark_digital_pathology_and_artificial_intelligence.md",
+   "snippet": "Title Digital pathology and artificial intelligence Authors Niazi Muhammad Khalid Khan, Parwani Anil V, Gurcan Metin N Journal / DOI The Lancet. Oncology · DOI: 10.1016/S1470 2045(19)30154 8 · PMID: 31044723 https://pubmed.ncbi.nlm.nih.gov/",
+   "text": "Pathology landmark highly-cited pubmed PubMed / The Lancet. Oncology Title Digital pathology and artificial intelligence Authors Niazi Muhammad Khalid Khan, Parwani Anil V, Gurcan Metin N Journal / DOI The Lancet. Oncology · DOI: 10.1016/S1470 2045(19)30154 8 · PMID: 31044723 https://pubmed.ncbi.nlm.nih.gov/31044723/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 782회 · RCR 35.81 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract In modern clinical practice, digital pathology has a crucial role and is increasingly a technological requirement in the scientific laboratory environment. The advent of whole slide imaging, availability of faster networks, and cheaper storage solutions has made it easier for pathologists to manage digital slide images and share them for clinical use. In parallel, unprecedented advances in machine learning have enabled the synergy of artificial intelligence and digital pathology, which offers image based diagnosis possibilities that were once limited only to radiology and cardiology. Integration of digital slides into the pathology workflow, advanced algorithms, and computer aided diagnostic techniques extend the frontiers of the pathologist's view beyond a microscopic slide and enable true utilisation and integration of knowledge that is beyond human limits and boundaries, and we believe there is clear potential for artificial intelligence breakthroughs in the pathology setting. In this Review, we discuss advancements in digital slide based image diagnosis for cancer along with some challenges and opportunities for artificial intelligence in digital pathology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0386",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Cochrane database of systematic reviews",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0386_landmark_allergen_injection_immunotherapy_for_seasonal_allergic_rhini.md",
+   "snippet": "Title Allergen injection immunotherapy for seasonal allergic rhinitis Authors Calderon M A, Alves B, Jacobson M, Hurwitz B, Sheikh A, Durham S Journal / DOI The Cochrane database of systematic reviews · PMID: 17253469 https://pubmed.ncbi.nl",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / The Cochrane database of systematic reviews Title Allergen injection immunotherapy for seasonal allergic rhinitis Authors Calderon M A, Alves B, Jacobson M, Hurwitz B, Sheikh A, Durham S Journal / DOI The Cochrane database of systematic reviews · PMID: 17253469 https://pubmed.ncbi.nlm.nih.gov/17253469/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 488회 · RCR 15.71 (분야평균=1.0) · NIH 상위 백분위 98.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Allergic rhinitis is the most common of the allergic diseases. Despite improved understanding of the pathophysiology of allergic rhinitis and advances in its pharmacological treatment, its prevalence has increased worldwide. For patients whose symptoms remain uncontrolled despite medical treatment, allergen injection immunotherapy is advised. An allergen based treatment may reduce symptoms, the need for medication and modify the natural course of this disease. OBJECTIVES: To evaluate the efficacy and safety of subcutaneous specific allergen immunotherapy, compared with placebo, for reducing symptoms and medication requirements in seasonal allergic rhinitis patients. SEARCH STRATEGY: We searched the Cochrane Ear, Nose and Throat Disorders Group Trials Register, the Cochrane Central Register of Controlled Trials (CENTRAL) (The Cochrane Library, Issue 1 2006), MEDLINE (1950 to 2006), EMBASE (1974 to 2006), Pre MEDLINE, KOREAMED, INDMED, LILACS, PAKMEDINET, Scisearch, mRCT and the National Research Register. The date of the last search was February 2006. SELECTION CRITERIA: All studies identified by the searches were assessed to identify randomised controlled trials involving participants with symptoms of seasonal allergic rhinitis and proven allergen sensitivity, treated with subcutaneous allergen specific immunotherapy or corresponding placebo. DATA COLLECTION AND ANALYSIS: Two independent authors identified all studies reporting double blind, placebo controlled randomised trials of specific immunotherapy in patients with seasonal allergic rhinitis due to tree, grass or weed pollens. Two authors independently performed quality assessment of studies. Data from identified studies were abstracted onto a standard extraction sheet and subsequently entered into RevMan 4.2.8. Analysis was performed using the Standardised Mean Difference (SMD) method and a random effects model; P values < 0.05 were considered statistically significant. The primary outcome measures were symptom scores, medication use, quality of life and adverse events. MAIN RESULTS: We retrieved 1111 publications of which 51 satisfied our inclusion criteria. In total there were 2871 participants (1645 active, 1226 placebo), each receiving on average 18 injections. Duration of immunotherapy varied from three days to three years. Symptom score data from 15 trials were suitable for meta analysis and showed an overall reduction in the immunotherapy group (SMD 0.73 (95% CI 0.97 to 0.50, P < 0.00001)). Medication score data from 13 trials showed an overall reduction in the immunotherapy group (SMD of 0.57 (95% CI 0.82 to 0.33, p<0.00001)). Clinical interpretation of the effect size is difficult. Adrenaline was given in 0.13% (19 of 14085 injections) of those on active treatment and in 0.01% (1 of 8278 injections) of the placebo group for treatment of adverse events. There were no fatalities. AUTHORS' CONCLUSIONS: This review has shown that specific allergen injection immunotherapy in suitably selected patients with seasonal allergic rhinitis results in a significant reduction in symptom scores and medication use. Injection immunotherapy has a known and relatively low risk of severe adverse events. We found no long term consequences from adverse events. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0385",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0385_landmark_global_prevalence_of_chronic_kidney_disease_a_systematic_rev.md",
+   "snippet": "Title Global Prevalence of Chronic Kidney Disease A Systematic Review and Meta Analysis Authors Hill Nathan R, Fatoba Samuel T, Oke Jason L, Hirst Jennifer A, O'Callaghan Christopher A, Lasserson Daniel S, Hobbs F D Richard Journal / DOI Pl",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / PloS one Title Global Prevalence of Chronic Kidney Disease A Systematic Review and Meta Analysis Authors Hill Nathan R, Fatoba Samuel T, Oke Jason L, Hirst Jennifer A, O'Callaghan Christopher A, Lasserson Daniel S, Hobbs F D Richard Journal / DOI PloS one · DOI: 10.1371/journal.pone.0158765 · PMID: 27383068 https://pubmed.ncbi.nlm.nih.gov/27383068/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 2579회 · RCR 120.19 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Chronic kidney disease (CKD) is a global health burden with a high economic cost to health systems and is an independent risk factor for cardiovascular disease (CVD). All stages of CKD are associated with increased risks of cardiovascular morbidity, premature mortality, and/or decreased quality of life. CKD is usually asymptomatic until later stages and accurate prevalence data are lacking. Thus we sought to determine the prevalence of CKD globally, by stage, geographical location, gender and age. A systematic review and meta analysis of observational studies estimating CKD prevalence in general populations was conducted through literature searches in 8 databases. We assessed pooled data using a random effects model. Of 5,842 potential articles, 100 studies of diverse quality were included, comprising 6,908,440 patients. Global mean(95%CI) CKD prevalence of 5 stages 13·4%(11·7 15·1%), and stages 3 5 was 10·6%(9·2 12·2%). Weighting by study quality did not affect prevalence estimates. CKD prevalence by stage was Stage 1 (eGFR 90+ACR 30): 3·5% (2·8 4·2%); Stage 2 (eGFR 60 89+ACR 30): 3·9% (2·7 5·3%); Stage 3 (eGFR 30 59): 7·6% (6·4 8·9%); Stage 4 = (eGFR 29 15): 0·4% (0·3 0·5%); and Stage 5 (eGFR<15): 0·1% (0·1 0·1%). CKD has a high global prevalence with a consistent estimated global CKD prevalence of between 11 to 13% with the majority stage 3. Future research should evaluate intervention strategies deliverable at scale to delay the progression of CKD and improve CVD outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0384",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0384_landmark_executive_summary_of_the_kdigo_2024_clinical_practice_guidel.md",
+   "snippet": "Title Executive summary of the KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease: known knowns and known unknowns Authors Levin Adeera, Ahmed Sofia B, Carrero Juan Jesus, Foster Bethany, Fran",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title Executive summary of the KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease: known knowns and known unknowns Authors Levin Adeera, Ahmed Sofia B, Carrero Juan Jesus, Foster Bethany, Francis Anna, Hall Rasheeda K, Herrington Will G, Hill Guy, et al. Journal / DOI Kidney international · DOI: 10.1016/j.kint.2023.10.016 · PMID: 38519239 https://pubmed.ncbi.nlm.nih.gov/38519239/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 516회 · RCR 118.67 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The Kidney Disease: Improving Global Outcomes (KDIGO) Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease (CKD) updates the KDIGO 2012 guideline and has been developed with patient partners, clinicians, and researchers around the world, using robust methodology. This update, based on a substantially broader base of evidence than has previously been available, reflects an exciting time in nephrology. New therapies and strategies have been tested in large and diverse populations that help to inform care; however, this guideline is not intended for people receiving dialysis nor those who have a kidney transplant. The document is sensitive to international considerations, CKD across the lifespan, and discusses special considerations in implementation. The scope includes chapters dedicated to the evaluation and risk assessment of people with CKD, management to delay CKD progression and its complications, medication management and drug stewardship in CKD, and optimal models of CKD care. Treatment approaches and actionable guideline recommendations are based on systematic reviews of relevant studies and appraisal of the quality of the evidence and the strength of recommendations which followed the \"Grading of Recommendations Assessment, Development, and Evaluation\" (GRADE) approach. The limitations of the evidence are discussed. The guideline also provides practice points, which serve to direct clinical care or activities for which a systematic review was not conducted, and it includes useful infographics and describes an important research agenda for the future. It targets a broad audience of people with CKD and their healthcare, while being mindful of implications for policy and payment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0383",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0383_landmark_2009_focused_update_accf_aha_guidelines_for_the_diagnosis_an.md",
+   "snippet": "Title 2009 focused update: ACCF/AHA Guidelines for the Diagnosis and Management of Heart Failure in Adults: a report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines: developed in",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2009 focused update: ACCF/AHA Guidelines for the Diagnosis and Management of Heart Failure in Adults: a report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines: developed in collaboration with the International Society for Heart and Lung Transplantation Authors Jessup Mariell, Abraham William T, Casey Donald E, Feldman Arthur M, Francis Gary S, Ganiats Theodore G, Konstam Marvin A, Mancini Donna M, et al. Journal / DOI Circulation · DOI: 10.1161/CIRCULATIONAHA.109.192064 · PMID: 19324967 https://pubmed.ncbi.nlm.nih.gov/19324967/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1202회 · RCR 36.05 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0382",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0382_landmark_multiple_myeloma_esmo_clinical_practice_guidelines_for_diagn.md",
+   "snippet": "Title Multiple myeloma: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up Authors Moreau P, San Miguel J, Sonneveld P, Mateos M V, Zamagni E, Avet Loiseau H, Hajek R, Dimopoulos M A, et al. Journal / DOI Annals of onc",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Multiple myeloma: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up Authors Moreau P, San Miguel J, Sonneveld P, Mateos M V, Zamagni E, Avet Loiseau H, Hajek R, Dimopoulos M A, et al. Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1093/annonc/mdx096 · PMID: 28453614 https://pubmed.ncbi.nlm.nih.gov/28453614/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 508회 · RCR 20.27 (분야평균=1.0) · NIH 상위 백분위 99.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0381",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / BMJ (Clinical research ed.)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0381_landmark_sodium_glucose_cotransporter_protein_2_sglt_2_inhibitors_and.md",
+   "snippet": "Title Sodium glucose cotransporter protein 2 (SGLT 2) inhibitors and glucagon like peptide 1 (GLP 1) receptor agonists for type 2 diabetes: systematic review and network meta analysis of randomised controlled trials Authors Palmer Suetonia ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / BMJ (Clinical research ed.) Title Sodium glucose cotransporter protein 2 (SGLT 2) inhibitors and glucagon like peptide 1 (GLP 1) receptor agonists for type 2 diabetes: systematic review and network meta analysis of randomised controlled trials Authors Palmer Suetonia C, Tendal Britta, Mustafa Reem A, Vandvik Per Olav, Li Sheyu, Hao Qiukui, Tunnicliffe David, Ruospo Marinella, et al. Journal / DOI BMJ (Clinical research ed.) · DOI: 10.1136/bmj.m4573 · PMID: 33441402 https://pubmed.ncbi.nlm.nih.gov/33441402/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 558회 · RCR 38.17 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To evaluate sodium glucose cotransporter 2 (SGLT 2) inhibitors and glucagon like peptide 1 (GLP 1) receptor agonists in patients with type 2 diabetes at varying cardiovascular and renal risk. DESIGN: Network meta analysis. DATA SOURCES: Medline, Embase, and Cochrane CENTRAL up to 11 August 2020. ELIGIBILITY CRITERIA FOR SELECTING STUDIES: Randomised controlled trials comparing SGLT 2 inhibitors or GLP 1 receptor agonists with placebo, standard care, or other glucose lowering treatment in adults with type 2 diabetes with follow up of 24 weeks or longer. Studies were screened independently by two reviewers for eligibility, extracted data, and assessed risk of bias. MAIN OUTCOME MEASURES: Frequentist random effects network meta analysis was carried out and GRADE (grading of recommendations assessment, development, and evaluation) used to assess evidence certainty. Results included estimated absolute effects of treatment per 1000 patients treated for five years for patients at very low risk (no cardiovascular risk factors), low risk (three or more cardiovascular risk factors), moderate risk (cardiovascular disease), high risk (chronic kidney disease), and very high risk (cardiovascular disease and kidney disease). A guideline panel provided oversight of the systematic review. RESULTS: 764 trials including 421 346 patients proved eligible. All results refer to the addition of SGLT 2 inhibitors and GLP 1 receptor agonists to existing diabetes treatment. Both classes of drugs lowered all cause mortality, cardiovascular mortality, non fatal myocardial infarction, and kidney failure (high certainty evidence). Notable differences were found between the two agents: SGLT 2 inhibitors reduced admission to hospital for heart failure more than GLP 1 receptor agonists, and GLP 1 receptor agonists reduced non fatal stroke more than SGLT 2 inhibitors (which appeared to have no effect). SGLT 2 inhibitors caused genital infection (high certainty), whereas GLP 1 receptor agonists might cause severe gastrointestinal events (low certainty). Low certainty evidence suggested that SGLT 2 inhibitors and GLP 1 receptor agonists might lower body weight. Little or no evidence was found for the effect of SGLT 2 inhibitors or GLP 1 receptor agonists on limb amputation, blindness, eye disease, neuropathic pain, or health related quality of life. The absolute benefits of these drugs vary substantially across patients from low to very high risk of cardiovascular and renal outcomes (eg, SGLT 2 inhibitors resulted in 3 to 40 fewer deaths in 1000 patients over five years; see interactive decision support tool (https://magicevidence.org/match it/200820dist/ !/) for all outcomes. CONCLUSIONS: In patients with type 2 diabetes, SGLT 2 inhibitors and GLP 1 receptor agonists reduced cardiovascular and renal outcomes, with some differences in benefits and harms. Absolute benefits are determined by individual risk profiles of patients, with clear implications for clinical practice, as reflected in the BMJ Rapid Recommendations directly informed by this systematic review. SYSTEMATIC REVIEW REGISTRATION: PROSPERO CRD42019153180. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0380",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0380_landmark_2009_focused_update_incorporated_into_the_acc_aha_2005_guide.md",
+   "snippet": "Title 2009 focused update incorporated into the ACC/AHA 2005 Guidelines for the Diagnosis and Management of Heart Failure in Adults: a report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2009 focused update incorporated into the ACC/AHA 2005 Guidelines for the Diagnosis and Management of Heart Failure in Adults: a report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines: developed in collaboration with the International Society for Heart and Lung Transplantation Authors Hunt Sharon Ann, Abraham William T, Chin Marshall H, Feldman Arthur M, Francis Gary S, Ganiats Theodore G, Jessup Mariell, Konstam Marvin A, et al. Journal / DOI Circulation · DOI: 10.1161/CIRCULATIONAHA.109.192065 · PMID: 19324966 https://pubmed.ncbi.nlm.nih.gov/19324966/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1253회 · RCR 35.43 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0379",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0379_landmark_non_oncogene_addicted_metastatic_non_small_cell_lung_cancer_.md",
+   "snippet": "Title Non oncogene addicted metastatic non small cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow up Authors Hendriks L E, Kerr K M, Menis J, Mok T S, Nestle U, Passaro A, Peters S, Planchard D, et al. ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Non oncogene addicted metastatic non small cell lung cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow up Authors Hendriks L E, Kerr K M, Menis J, Mok T S, Nestle U, Passaro A, Peters S, Planchard D, et al. Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1016/j.annonc.2022.12.013 · PMID: 36669645 https://pubmed.ncbi.nlm.nih.gov/36669645/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 528회 · RCR 51.71 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0378",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0378_landmark_european_heart_rhythm_association_practical_guide_on_the_use.md",
+   "snippet": "Title European Heart Rhythm Association Practical Guide on the use of new oral anticoagulants in patients with non valvular atrial fibrillation Authors Heidbuchel Hein, Verhamme Peter, Alings Marco, Antz Matthias, Hacke Werner, Oldgren Jona",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology Title European Heart Rhythm Association Practical Guide on the use of new oral anticoagulants in patients with non valvular atrial fibrillation Authors Heidbuchel Hein, Verhamme Peter, Alings Marco, Antz Matthias, Hacke Werner, Oldgren Jonas, Sinnaeve Peter, Camm A John, et al. Journal / DOI Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology · DOI: 10.1093/europace/eut083 · PMID: 23625942 https://pubmed.ncbi.nlm.nih.gov/23625942/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 591회 · RCR 22.27 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract New oral anticoagulants (NOACs) are an alternative for vitamin K antagonists (VKAs) to prevent stroke in patients with non valvular atrial fibrillation (AF). Both physicians and patients will have to learn how to use these drugs effectively and safely in clinical practice. Many unresolved questions on how to optimally use these drugs in specific clinical situations remain. The European Heart Rhythm Association set out to coordinate a unified way of informing physicians on the use of the different NOACs. A writing group listed 15 topics of concrete clinical scenarios and formulated as practical answers as possible based on available evidence. The 15 topics are: (1) Practical start up and follow up scheme for patients on NOACs; (2) How to measure the anticoagulant effect of NOACs; (3) Drug drug interactions and pharmacokinetics of NOACs; (4) Switching between anticoagulant regimens; (5) Ensuring compliance of NOAC intake; (6) How to deal with dosing errors; (7) Patients with chronic kidney disease; (8) What to do if there is a (suspected) overdose without bleeding, or a clotting test is indicating a risk of bleeding? (9) Management of bleeding complications; (10) Patients undergoing a planned surgical intervention or ablation; (11) Patients undergoing an urgent surgical intervention; (12) Patients with AF and coronary artery disease; (13) Cardioversion in a NOAC treated patient; (14) Patients presenting with acute stroke while on NOACs; (15) NOACs vs. VKAs in AF patients with a malignancy. Since new information is becoming available at a rapid pace, an EHRA Web site with the latest updated information accompanies this text (www.NOACforAF.eu). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0377",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0377_landmark_2009_focused_update_incorporated_into_the_acc_aha_2005_guide.md",
+   "snippet": "Title 2009 Focused update incorporated into the ACC/AHA 2005 Guidelines for the Diagnosis and Management of Heart Failure in Adults A Report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice ",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2009 Focused update incorporated into the ACC/AHA 2005 Guidelines for the Diagnosis and Management of Heart Failure in Adults A Report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines Developed in Collaboration With the International Society for Heart and Lung Transplantation Authors Hunt Sharon Ann, Abraham William T, Chin Marshall H, Feldman Arthur M, Francis Gary S, Ganiats Theodore G, Jessup Mariell, Konstam Marvin A, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2008.11.013 · PMID: 19358937 https://pubmed.ncbi.nlm.nih.gov/19358937/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1287회 · RCR 37.08 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0376",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0376_landmark_clinical_practice_guideline_allergic_rhinitis.md",
+   "snippet": "Title Clinical practice guideline: Allergic rhinitis Authors Seidman Michael D, Gurgel Richard K, Lin Sandra Y, Schwartz Seth R, Baroody Fuad M, Bonner James R, Dawson Douglas E, Dykewicz Mark S, et al. Journal / DOI Otolaryngology head and",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery Title Clinical practice guideline: Allergic rhinitis Authors Seidman Michael D, Gurgel Richard K, Lin Sandra Y, Schwartz Seth R, Baroody Fuad M, Bonner James R, Dawson Douglas E, Dykewicz Mark S, et al. Journal / DOI Otolaryngology head and neck surgery : official journal of American Academy of Otolaryngology Head and Neck Surgery · DOI: 10.1177/0194599814561600 · PMID: 25644617 https://pubmed.ncbi.nlm.nih.gov/25644617/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 539회 · RCR 28.47 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: Allergic rhinitis (AR) is one of the most common diseases affecting adults. It is the most common chronic disease in children in the United States today and the fifth most common chronic disease in the United States overall. AR is estimated to affect nearly 1 in every 6 Americans and generates $2 to $5 billion in direct health expenditures annually. It can impair quality of life and, through loss of work and school attendance, is responsible for as much as $2 to $4 billion in lost productivity annually. Not surprisingly, myriad diagnostic tests and treatments are used in managing this disorder, yet there is considerable variation in their use. This clinical practice guideline was undertaken to optimize the care of patients with AR by addressing quality improvement opportunities through an evaluation of the available evidence and an assessment of the harm benefit balance of various diagnostic and management options. PURPOSE: The primary purpose of this guideline is to address quality improvement opportunities for all clinicians, in any setting, who are likely to manage patients with AR as well as to optimize patient care, promote effective diagnosis and therapy, and reduce harmful or unnecessary variations in care. The guideline is intended to be applicable for both pediatric and adult patients with AR. Children under the age of 2 years were excluded from the clinical practice guideline because rhinitis in this population may be different than in older patients and is not informed by the same evidence base. The guideline is intended to focus on a limited number of quality improvement opportunities deemed most important by the working group and is not intended to be a comprehensive reference for diagnosing and managing AR. The recommendations outlined in the guideline are not intended to represent the standard of care for patient management, nor are the recommendations intended to limit treatment or care provided to individual patients. ACTION STATEMENTS: The development group made a strong recommendation that clinicians recommend intranasal steroids for patients with a clinical diagnosis of AR whose symptoms affect their quality of life. The development group also made a strong recommendation that clinicians recommend oral second generation/less sedating antihistamines for patients with AR and primary complaints of sneezing and itching. The panel made the following recommendations: (1) Clinicians should make the clinical diagnosis of AR when patients present with a history and physical examination consistent with an allergic cause and 1 or more of the following symptoms: nasal congestion, runny nose, itchy nose, or sneezing. Findings of AR consistent with an allergic cause include, but are not limited to, clear rhinorrhea, nasal congestion, pale discoloration of the nasal mucosa, and red and watery eyes. (2) Clinicians should perform and interpret, or refer to a clinician who can perform and interpret, specific IgE (skin or blood) allergy testing for patients with a clinical diagnosis of AR who do not respond to empiric treatment, or when the diagnosis is uncertain, or when knowledge of the specific causative allergen is needed to target therapy. (3) Clinicians should assess patients with a clinical diagnosis of AR for, and document in the medical record, the presence of associated conditions such as asthma, atopic dermatitis, sleep disordered breathing, conjunctivitis, rhinosinusitis, and otitis media. (4) Clinicians should offer, or refer to a clinician who can offer, immunotherapy (sublingual or subcutaneous) for patients with AR who have inadequate response to symptoms with pharmacologic therapy with or without environmental controls. The panel recommended against (1) clinicians routinely performing sinonasal imaging in patients presenting with symptoms consistent with a diagnosis of AR and (2) clinicians offering oral leukotriene receptor antagonists as primary therapy for patients with AR. The panel group made the following options: (1) Clinicians may advise avoidance of known allergens or may advise environmental controls (ie, removal of pets; the use of air filtration systems, bed covers, and acaricides [chemical agents formulated to kill dust mites]) in patients with AR who have identified allergens that correlate with clinical symptoms. (2) Clinicians may offer intranasal antihistamines for patients with seasonal, perennial, or episodic AR. (3) Clinicians may offer combination pharmacologic therapy in patients with AR who have inadequate response to pharmacologic monotherapy. (4) Clinicians may offer, or refer to a surgeon who can offer, inferior turbinate reduction in patients with AR with nasal airway obstruction and enlarged inferior turbinates who have failed medical management. (5) Clinicians may offer acupuncture, or refer to a clinician who can offer acupuncture, for patients with AR who are interested in nonpharmacologic therapy. The development group provided no recommendation regarding the use of herbal therapy for patients with AR. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0375",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0375_landmark_2021_update_to_the_2017_acc_expert_consensus_decision_pathwa.md",
+   "snippet": "Title 2021 Update to the 2017 ACC Expert Consensus Decision Pathway for Optimization of Heart Failure Treatment: Answers to 10 Pivotal Issues About Heart Failure With Reduced Ejection Fraction: A Report of the American College of Cardiology",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2021 Update to the 2017 ACC Expert Consensus Decision Pathway for Optimization of Heart Failure Treatment: Answers to 10 Pivotal Issues About Heart Failure With Reduced Ejection Fraction: A Report of the American College of Cardiology Solution Set Oversight Committee Authors Writing Committee, Maddox Thomas M, Januzzi James L, Allen Larry A, Breathett Khadijah, Butler Javed, Davis Leslie L, Fonarow Gregg C, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2020.11.022 · PMID: 33446410 https://pubmed.ncbi.nlm.nih.gov/33446410/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 656회 · RCR 45.06 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0374",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0374_landmark_2023_aha_acc_accp_aspc_nla_pcna_guideline_for_the_management.md",
+   "snippet": "Title 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines Authors ",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines Authors Virani Salim S, Newby L Kristin, Arnold Suzanne V, Bittner Vera, Brewer LaPrincess C, Demeter Susan Halli, Dixon Dave L, Fearon William F, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000001168 · PMID: 37471501 https://pubmed.ncbi.nlm.nih.gov/37471501/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1288회 · RCR 174.74 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract AIM: The \"2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease\" provides an update to and consolidates new evidence since the \"2012 ACCF/AHA/ACP/AATS/PCNA/SCAI/STS Guideline for the Diagnosis and Management of Patients With Stable Ischemic Heart Disease\" and the corresponding \"2014 ACC/AHA/AATS/PCNA/SCAI/STS Focused Update of the Guideline for the Diagnosis and Management of Patients With Stable Ischemic Heart Disease.\" METHODS: A comprehensive literature search was conducted from September 2021 to May 2022. Clinical studies, systematic reviews and meta analyses, and other evidence conducted on human participants were identified that were published in English from MEDLINE (through PubMed), EMBASE, the Cochrane Library, Agency for Healthcare Research and Quality, and other selected databases relevant to this guideline. STRUCTURE: This guideline provides an evidenced based and patient centered approach to management of patients with chronic coronary disease, considering social determinants of health and incorporating the principles of shared decision making and team based care. Relevant topics include general approaches to treatment decisions, guideline directed management and therapy to reduce symptoms and future cardiovascular events, decision making pertaining to revascularization in patients with chronic coronary disease, recommendations for management in special populations, patient follow up and monitoring, evidence gaps, and areas in need of future research. Where applicable, and based on availability of cost effectiveness data, cost value recommendations are also provided for clinicians. Many recommendations from previously published guidelines have been updated with new evidence, and new recommendations have been created when supported by published data. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0373",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0373_landmark_clinical_end_points_and_response_criteria_in_mycosis_fungoid.md",
+   "snippet": "Title Clinical end points and response criteria in mycosis fungoides and Sézary syndrome: a consensus statement of the International Society for Cutaneous Lymphomas, the United States Cutaneous Lymphoma Consortium, and the Cutaneous Lymphom",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Clinical end points and response criteria in mycosis fungoides and Sézary syndrome: a consensus statement of the International Society for Cutaneous Lymphomas, the United States Cutaneous Lymphoma Consortium, and the Cutaneous Lymphoma Task Force of the European Organisation for Research and Treatment of Cancer Authors Olsen Elise A, Whittaker Sean, Kim Youn H, Duvic Madeleine, Prince H Miles, Lessin Stuart R, Wood Gary S, Willemze Rein, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.2010.32.0630 · PMID: 21576639 https://pubmed.ncbi.nlm.nih.gov/21576639/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 541회 · RCR 17.60 (분야평균=1.0) · NIH 상위 백분위 99.1. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Mycosis fungoides (MF) and Sézary syndrome (SS), the major forms of cutaneous T cell lymphoma, have unique characteristics that distinguish them from other types of non Hodgkin's lymphomas. Clinical trials in MF/SS have suffered from a lack of standardization in evaluation, staging, assessment, end points, and response criteria. Recently defined criteria for the diagnosis of early MF, guidelines for initial evaluation, and revised staging and classification criteria for MF and SS now offer the potential for uniform staging of patients enrolled in clinical trials for MF/SS. This article presents consensus recommendations for the general conduct of clinical trials of patients with MF/SS as well as methods for standardized assessment of potential disease manifestations in skin, lymph nodes, blood, and visceral organs, and definition of end points and response criteria. These guidelines should facilitate collaboration among investigators and collation of data from sponsor generated or investigator initiated clinical trials involving patients with MF or SS. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0372",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The lancet. Diabetes & endocrinology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0372_landmark_sglt2_inhibitors_for_the_prevention_of_kidney_failure_in_pat.md",
+   "snippet": "Title SGLT2 inhibitors for the prevention of kidney failure in patients with type 2 diabetes: a systematic review and meta analysis Authors Neuen Brendon L, Young Tamara, Heerspink Hiddo J L, Neal Bruce, Perkovic Vlado, Billot Laurent, Maha",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / The lancet. Diabetes & endocrinology Title SGLT2 inhibitors for the prevention of kidney failure in patients with type 2 diabetes: a systematic review and meta analysis Authors Neuen Brendon L, Young Tamara, Heerspink Hiddo J L, Neal Bruce, Perkovic Vlado, Billot Laurent, Mahaffey Kenneth W, Charytan David M, et al. Journal / DOI The lancet. Diabetes & endocrinology · DOI: 10.1016/S2213 8587(19)30256 6 · PMID: 31495651 https://pubmed.ncbi.nlm.nih.gov/31495651/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 676회 · RCR 32.50 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: The effects of sodium glucose co transporter 2 (SGLT2) inhibitors on kidney failure, particularly the need for dialysis or transplantation or death due to kidney disease, is uncertain. Additionally, previous studies have been underpowered to robustly assess heterogeneity of effects on kidney outcomes by different levels of estimated glomerular filtration rate (eGFR) and albuminuria. We aimed to do a systematic review and meta analysis to assess the effects of SGLT2 inhibitors on major kidney outcomes in patients with type 2 diabetes and to determine the consistency of effect size across trials and different levels of eGFR and albuminuria. METHODS: We did a systematic review and meta analysis of randomised, controlled, cardiovascular or kidney outcome trials of SGLT2 inhibitors that reported effects on major kidney outcomes in people with type 2 diabetes. We searched MEDLINE and Embase from database inception to June 14, 2019, to identify eligible trials. The primary outcome was a composite of dialysis, transplantation, or death due to kidney disease. We used random effects models to obtain summary relative risks (RRs) with 95% CIs and random effects meta regression to explore effect modification by subgroups of baseline eGFR, albuminuria, and use of renin angiotensin system (RAS) blockade. This review is registered with PROSPERO (CRD42019131774). FINDINGS: From 2085 records identified, four studies met our inclusion criteria, assessing three SGLT2 inhibitors: empagliflozin (EMPA REG OUTCOME), canagliflozin (CANVAS Program and CREDENCE), and dapagliflozin (DECLARE TIMI 58). From a total of 38 723 participants, 252 required dialysis or transplantation or died of kidney disease, 335 developed end stage kidney disease, and 943 had acute kidney injury. SGLT2 inhibitors substantially reduced the risk of dialysis, transplantation, or death due to kidney disease (RR 0·67, 95% CI 0·52 0·86, p=0·0019), an effect consistent across studies (I2=0%, pheterogeneity=0·53). SGLT2 inhibitors also reduced end stage kidney disease (0·65, 0·53 0·81, p<0·0001), and acute kidney injury (0·75, 0·66 0·85, p<0·0001), with consistent benefits across studies. Although we identified some evidence that the proportional effect of SGLT2 inhibitors might attenuate with declining kidney function (ptrend=0·073), there was clear, separate evidence of benefit for all eGFR subgroups, including for participants with a baseline eGFR 30 45 mL/min per 1·73 m2 (RR 0·70, 95% CI 0·54 0·91, p=0·0080). Renoprotection was also consistent across studies irrespective of baseline albuminuria (ptrend=0·66) and use of RAS blockade (pheterogeneity=0·31). INTERPRETATION: SGLT2 inhibitors reduced the risk of dialysis, transplantation, or death due to kidney disease in individuals with type 2 diabetes and provided protection against acute kidney injury. These data provide substantive evidence supporting the use of SGLT2 inhibitors to prevent major kidney outcomes in people with type 2 diabetes. FUNDING: None. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0371",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0371_landmark_2014_aha_acc_hrs_guideline_for_the_management_of_patients_wi.md",
+   "snippet": "Title 2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on practice guidelines and the Heart Rhythm Society Authors Janua",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on practice guidelines and the Heart Rhythm Society Authors January Craig T, Wann L Samuel, Alpert Joseph S, Calkins Hugh, Cigarroa Joaquin E, Cleveland Joseph C, Conti Jamie B, Ellinor Patrick T, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000000041 · PMID: 24682347 https://pubmed.ncbi.nlm.nih.gov/24682347/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1289회 · RCR 48.42 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0370",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0370_landmark_practice_guidelines_for_diseases_caused_by_aspergillus_infec.md",
+   "snippet": "Title Practice guidelines for diseases caused by Aspergillus. Infectious Diseases Society of America Authors Stevens D A, Kan V L, Judson M A, Morrison V A, Dummer S, Denning D W, Bennett J E, Walsh T J, et al. Journal / DOI Clinical infect",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America Title Practice guidelines for diseases caused by Aspergillus. Infectious Diseases Society of America Authors Stevens D A, Kan V L, Judson M A, Morrison V A, Dummer S, Denning D W, Bennett J E, Walsh T J, et al. Journal / DOI Clinical infectious diseases : an official publication of the Infectious Diseases Society of America · PMID: 10770732 https://pubmed.ncbi.nlm.nih.gov/10770732/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 547회 · RCR 20.04 (분야평균=1.0) · NIH 상위 백분위 99.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Aspergillosis comprises a variety of manifestations of infection. These guidelines are directed to 3 principal entities: invasive aspergillosis, involving several organ systems (particularly pulmonary disease); pulmonary aspergilloma; and allergic bronchopulmonary aspergillosis. The recommendations are distilled in this summary, but the reader is encouraged to review the more extensive discussions in subsequent sections, which show the strength of the recommendations and the quality of the evidence, and the original publications cited in detail. Invasive aspergillosis. Because it is highly lethal in the immunocompromised host, even in the face of therapy, work up must be prompt and aggressive, and therapy may need to be initiated upon suspicion of the diagnosis, without definitive proof (BIII). Intravenous therapy should be used initially in rapidly progressing disease (BIII). The largest therapeutic experience is with amphotericin B deoxycholate, which should be given at maximum tolerated doses (e.g., 1 1.5 mg/kg/d) and should be continued, despite modest increases in serum creatinine levels (BIII). Lipid formulations of amphotericin are indicated for the patient who has impaired renal function or who develops nephrotoxicity while receiving deoxycholate amphotericin (AII). Oral itraconazole is an alternative for patients who can take oral medication, are likely to be adherent, can be demonstrated (by serum level monitoring) to absorb the drug, and lack the potential for interaction with other drugs (BII). Oral itraconazole is attractive for continuing therapy in the patient who responds to initial iv therapy (CIII). Therapy should be prolonged beyond resolution of disease and reversible underlying predispositions (BIII). Adjunctive therapy (particularly surgery and combination chemotherapy, also immunotherapy), may be useful in certain situations (CIII). Aspergilloma. The optimal treatment strategy for aspergilloma is unknown. Therapy is predominantly directed at preventing life threatening hemoptysis. Surgical removal of aspergilloma is definitive treatment, but because of significant morbidity and mortality it should be reserved for high risk patients such as those with episodes of life threatening hemoptysis, and considered for patients with underlying sarcoidosis, immunocompromised patients, and those with increasing Aspergillus specific IgG titers (CIII). Surgical candidates would need to have adequate pulmonary function to undergo the operation. Bronchial artery embolization rarely produces a permanent success, but may be useful as a temporizing procedure in patients with life threatening hemoptysis. Endobronchial and intracavitary instillation of antifungals or oral itraconazole may be useful for this condition. Since the majority of aspergillomas do not cause life threatening hemoptysis, the morbidity and cost of treatment must be weighed against the clinical benefit. Allergic bronchopulmonary aspergillosis (APBA). Although no well designed studies have been carried out, the available data support the use of corticosteroids for acute exacerbations of ABPA (AII). Neither the optimal corticosteroid dose nor the duration of therapy has been standardized, but limited data suggest the starting dose should be approximately 0.5 mg/kg/d of prednisone. The decision to taper corticosteroids should be made on an individual basis, depending on the clinical course (BIII). The available data suggest that clinical symptoms alone are inadequate to make such decisions, since significant lung damage may occur in asymptomatic patients. Increasing serum IgE levels, new or worsening infiltrate on chest radiograph, and worsening spirometry suggest that corticosteroids should be used (BII). Multiple asthmatic exacerbations in a patient with ABPA suggest that chronic corticosteroid therapy should be used (BIII). Itraconazole appears useful as a corticosteroid sparing agent (BII). (ABSTRACT TRUNCATED) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0369",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Arthritis care & research",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0369_landmark_2020_american_college_of_rheumatology_guideline_for_the_mana.md",
+   "snippet": "Title 2020 American College of Rheumatology Guideline for the Management of Gout Authors FitzGerald John D, Dalbeth Nicola, Mikuls Ted, Brignardello Petersen Romina, Guyatt Gordon, Abeles Aryeh M, Gelber Allan C, Harrold Leslie R, et al. Jo",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Arthritis care & research Title 2020 American College of Rheumatology Guideline for the Management of Gout Authors FitzGerald John D, Dalbeth Nicola, Mikuls Ted, Brignardello Petersen Romina, Guyatt Gordon, Abeles Aryeh M, Gelber Allan C, Harrold Leslie R, et al. Journal / DOI Arthritis care & research · DOI: 10.1002/acr.24180 · PMID: 32391934 https://pubmed.ncbi.nlm.nih.gov/32391934/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 689회 · RCR 44.98 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To provide guidance for the management of gout, including indications for and optimal use of urate lowering therapy (ULT), treatment of gout flares, and lifestyle and other medication recommendations. METHODS: Fifty seven population, intervention, comparator, and outcomes questions were developed, followed by a systematic literature review, including network meta analyses with ratings of the available evidence according to the Grading of Recommendations Assessment, Development and Evaluation (GRADE) methodology, and patient input. A group consensus process was used to compose the final recommendations and grade their strength as strong or conditional. RESULTS: Forty two recommendations (including 16 strong recommendations) were generated. Strong recommendations included initiation of ULT for all patients with tophaceous gout, radiographic damage due to gout, or frequent gout flares; allopurinol as the preferred first line ULT, including for those with moderate to severe chronic kidney disease (CKD; stage 3); using a low starting dose of allopurinol (≤100 mg/day, and lower in CKD) or febuxostat (<40 mg/day); and a treat to target management strategy with ULT dose titration guided by serial serum urate (SU) measurements, with an SU target of <6 mg/dl. When initiating ULT, concomitant antiinflammatory prophylaxis therapy for a duration of at least 3 6 months was strongly recommended. For management of gout flares, colchicine, nonsteroidal antiinflammatory drugs, or glucocorticoids (oral, intraarticular, or intramuscular) were strongly recommended. CONCLUSION: Using GRADE methodology and informed by a consensus process based on evidence from the current literature and patient preferences, this guideline provides direction for clinicians and patients making decisions on the management of gout. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0368",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0368_landmark_the_2018_european_heart_rhythm_association_practical_guide_o.md",
+   "snippet": "Title The 2018 European Heart Rhythm Association Practical Guide on the use of non vitamin K antagonist oral anticoagulants in patients with atrial fibrillation Authors Steffel Jan, Verhamme Peter, Potpara Tatjana S, Albaladejo Pierre, Antz",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title The 2018 European Heart Rhythm Association Practical Guide on the use of non vitamin K antagonist oral anticoagulants in patients with atrial fibrillation Authors Steffel Jan, Verhamme Peter, Potpara Tatjana S, Albaladejo Pierre, Antz Matthias, Desteghe Lien, Haeusler Karl Georg, Oldgren Jonas, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehy136 · PMID: 29562325 https://pubmed.ncbi.nlm.nih.gov/29562325/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1371회 · RCR 70.58 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The current manuscript is the second update of the original Practical Guide, published in 2013 [Heidbuchel et al. European Heart Rhythm Association Practical Guide on the use of new oral anticoagulants in patients with non valvular atrial fibrillation. Europace 2013;15:625 651; Heidbuchel et al. Updated European Heart Rhythm Association Practical Guide on the use of non vitamin K antagonist anticoagulants in patients with non valvular atrial fibrillation. Europace 2015;17:1467 1507]. Non vitamin K antagonist oral anticoagulants (NOACs) are an alternative for vitamin K antagonists (VKAs) to prevent stroke in patients with atrial fibrillation (AF) and have emerged as the preferred choice, particularly in patients newly started on anticoagulation. Both physicians and patients are becoming more accustomed to the use of these drugs in clinical practice. However, many unresolved questions on how to optimally use these agents in specific clinical situations remain. The European Heart Rhythm Association (EHRA) set out to coordinate a unified way of informing physicians on the use of the different NOACs. A writing group identified 20 topics of concrete clinical scenarios for which practical answers were formulated, based on available evidence. The 20 topics are as follows i.e., (1) Eligibility for NOACs; (2) Practical start up and follow up scheme for patients on NOACs; (3) Ensuring adherence to prescribed oral anticoagulant intake; (4) Switching between anticoagulant regimens; (5) Pharmacokinetics and drug drug interactions of NOACs; (6) NOACs in patients with chronic kidney or advanced liver disease; (7) How to measure the anticoagulant effect of NOACs; (8) NOAC plasma level measurement: rare indications, precautions, and potential pitfalls; (9) How to deal with dosing errors; (10) What to do if there is a (suspected) overdose without bleeding, or a clotting test is indicating a potential risk of bleeding; (11) Management of bleeding under NOAC therapy; (12) Patients undergoing a planned invasive procedure, surgery or ablation; (13) Patients requiring an urgent surgical intervention; (14) Patients with AF and coronary artery disease; (15) Avoiding confusion with NOAC dosing across indications; (16) Cardioversion in a NOAC treated patient; (17) AF patients presenting with acute stroke while on NOACs; (18) NOACs in special situations; (19) Anticoagulation in AF patients with a malignancy; and (20) Optimizing dose adjustments of VKA. Additional information and downloads of the text and anticoagulation cards in different languages can be found on an EHRA website (www.NOACforAF.eu). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0367",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Allergy",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0367_landmark_eaaci_guidelines_on_allergen_immunotherapy_allergic_rhinocon.md",
+   "snippet": "Title EAACI Guidelines on Allergen Immunotherapy: Allergic rhinoconjunctivitis Authors Roberts G, Pfaar O, Akdis C A, Ansotegui I J, Durham S R, Gerth van Wijk R, Halken S, Larenas Linnemann D, et al. Journal / DOI Allergy · DOI: 10.1111/al",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Allergy Title EAACI Guidelines on Allergen Immunotherapy: Allergic rhinoconjunctivitis Authors Roberts G, Pfaar O, Akdis C A, Ansotegui I J, Durham S R, Gerth van Wijk R, Halken S, Larenas Linnemann D, et al. Journal / DOI Allergy · DOI: 10.1111/all.13317 · PMID: 28940458 https://pubmed.ncbi.nlm.nih.gov/28940458/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 562회 · RCR 31.46 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Allergic rhinoconjunctivitis (AR) is an allergic disorder of the nose and eyes affecting about a fifth of the general population. Symptoms of AR can be controlled with allergen avoidance measures and pharmacotherapy. However, many patients continue to have ongoing symptoms and an impaired quality of life; pharmacotherapy may also induce some side effects. Allergen immunotherapy (AIT) represents the only currently available treatment that targets the underlying pathophysiology, and it may have a disease modifying effect. Either the subcutaneous (SCIT) or sublingual (SLIT) routes may be used. This Guideline has been prepared by the European Academy of Allergy and Clinical Immunology's (EAACI) Taskforce on AIT for AR and is part of the EAACI presidential project \"EAACI Guidelines on Allergen Immunotherapy.\" It aims to provide evidence based clinical recommendations and has been informed by a formal systematic review and meta analysis. Its generation has followed the Appraisal of Guidelines for Research and Evaluation (AGREE II) approach. The process included involvement of the full range of stakeholders. In general, broad evidence for the clinical efficacy of AIT for AR exists but a product specific evaluation of evidence is recommended. In general, SCIT and SLIT are recommended for both seasonal and perennial AR for its short term benefit. The strongest evidence for long term benefit is documented for grass AIT (especially for the grass tablets) where long term benefit is seen. To achieve long term efficacy, it is recommended that a minimum of 3 years of therapy is used. Many gaps in the evidence base exist, particularly around long term benefit and use in children. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0366",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Canadian journal of cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0366_landmark_2016_canadian_cardiovascular_society_guidelines_for_the_mana.md",
+   "snippet": "Title 2016 Canadian Cardiovascular Society Guidelines for the Management of Dyslipidemia for the Prevention of Cardiovascular Disease in the Adult Authors Anderson Todd J, Grégoire Jean, Pearson Glen J, Barry Arden R, Couture Patrick, Dawes",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / The Canadian journal of cardiology Title 2016 Canadian Cardiovascular Society Guidelines for the Management of Dyslipidemia for the Prevention of Cardiovascular Disease in the Adult Authors Anderson Todd J, Grégoire Jean, Pearson Glen J, Barry Arden R, Couture Patrick, Dawes Martin, Francis Gordon A, Genest Jacques, et al. Journal / DOI The Canadian journal of cardiology · DOI: 10.1016/j.cjca.2016.07.510 · PMID: 27712954 https://pubmed.ncbi.nlm.nih.gov/27712954/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 704회 · RCR 29.80 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Since the publication of the 2012 guidelines new literature has emerged to inform decision making. The 2016 guidelines primary panel selected a number of clinically relevant questions and has produced updated recommendations, on the basis of important new findings. In subjects with clinical atherosclerosis, abdominal aortic aneurysm, most subjects with diabetes or chronic kidney disease, and those with low density lipoprotein cholesterol ≥ 5 mmol/L, statin therapy is recommended. For all others, there is an emphasis on risk assessment linked to lipid determination to optimize decision making. We have recommended nonfasting lipid determination as a suitable alternative to fasting levels. Risk assessment and lipid determination should be considered in individuals older than 40 years of age or in those at increased risk regardless of age. Pharmacotherapy is generally not indicated for those at low Framingham Risk Score (FRS; <10%). A wider range of patients are now eligible for statin therapy in the FRS intermediate risk category (10% 19%) and in those with a high FRS ( 20%). Despite the controversy, we continue to advocate for low density lipoprotein cholesterol targets for subjects who start therapy. Detailed recommendations are also presented for health behaviour modification that is indicated in all subjects. Finally, recommendation for the use of nonstatin medications is provided. Shared decision making is vital because there are many areas in which clinical trials do not fully inform practice. The guidelines are meant to be a platform for meaningful conversation between patient and care provider so that individual decisions can be made for risk screening, assessment, and treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0365",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Heart rhythm",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0365_landmark_2012_hrs_ehra_ecas_expert_consensus_statement_on_catheter_an.md",
+   "snippet": "Title 2012 HRS/EHRA/ECAS expert consensus statement on catheter and surgical ablation of atrial fibrillation: recommendations for patient selection, procedural techniques, patient management and follow up, definitions, endpoints, and resear",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Heart rhythm Title 2012 HRS/EHRA/ECAS expert consensus statement on catheter and surgical ablation of atrial fibrillation: recommendations for patient selection, procedural techniques, patient management and follow up, definitions, endpoints, and research trial design: a report of the Heart Rhythm Society (HRS) Task Force on Catheter and Surgical Ablation of Atrial Fibrillation. Developed in partnership with the European Heart Rhythm Association (EHRA), a registered branch of the European Society of Cardiology (ESC) and the European Cardiac Arrhythmia Society (ECAS); and in collaboration with the American College of Cardiology (ACC), American Heart Association (AHA), the Asia Pacific Heart Rhythm Society (APHRS), and the Society of Thoracic Surgeons (STS). Endorsed by the governing bodies of the American College of Cardiology Foundation, the American Heart Association, the European Cardiac Arrhythmia Society, the European Heart Rhythm Association, the Society of Thoracic Surgeons, the Asia Pacific Heart Rhythm Society, and the Heart Rhythm Society Authors Calkins Hugh, Kuck Karl Heinz, Cappato Riccardo, Brugada Josep, Camm A John, Chen Shih Ann, Crijns Harry J G, Damiano Ralph J, et al. Journal / DOI Heart rhythm · DOI: 10.1016/j.hrthm.2011.12.016 · PMID: 22386883 https://pubmed.ncbi.nlm.nih.gov/22386883/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1391회 · RCR 50.49 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0364",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0364_landmark_venous_thromboembolism_prophylaxis_and_treatment_in_patients.md",
+   "snippet": "Title Venous thromboembolism prophylaxis and treatment in patients with cancer: american society of clinical oncology clinical practice guideline update 2014 Authors Lyman Gary H, Bohlke Kari, Khorana Alok A, Kuderer Nicole M, Lee Agnes Y, ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Venous thromboembolism prophylaxis and treatment in patients with cancer: american society of clinical oncology clinical practice guideline update 2014 Authors Lyman Gary H, Bohlke Kari, Khorana Alok A, Kuderer Nicole M, Lee Agnes Y, Arcelus Juan Ignacio, Balaban Edward P, Clarke Jeffrey M, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.2014.59.7351 · PMID: 25605844 https://pubmed.ncbi.nlm.nih.gov/25605844/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 571회 · RCR 22.67 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To provide current recommendations about the prophylaxis and treatment of venous thromboembolism (VTE) in patients with cancer. METHODS: PubMed and the Cochrane Library were searched for randomized controlled trials, systematic reviews, meta analyses, and clinical practice guidelines from November 2012 through July 2014. An update committee reviewed the identified abstracts. RESULTS: Of the 53 publications identified and reviewed, none prompted a change in the 2013 recommendations. RECOMMENDATIONS: Most hospitalized patients with active cancer require thromboprophylaxis throughout hospitalization. Routine thromboprophylaxis is not recommended for patients with cancer in the outpatient setting. It may be considered for selected high risk patients. Patients with multiple myeloma receiving antiangiogenesis agents with chemotherapy and/or dexamethasone should receive prophylaxis with either low molecular weight heparin (LMWH) or low dose aspirin. Patients undergoing major surgery should receive prophylaxis starting before surgery and continuing for at least 7 to 10 days. Extending prophylaxis up to 4 weeks should be considered in those undergoing major abdominal or pelvic surgery with high risk features. LMWH is recommended for the initial 5 to 10 days of treatment for deep vein thrombosis and pulmonary embolism as well as for long term secondary prophylaxis (at least 6 months). Use of novel oral anticoagulants is not currently recommended for patients with malignancy and VTE because of limited data in patients with cancer. Anticoagulation should not be used to extend survival of patients with cancer in the absence of other indications. Patients with cancer should be periodically assessed for VTE risk. Oncology professionals should educate patients about the signs and symptoms of VTE. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0363",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of internal medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0363_landmark_sodium_glucose_cotransporter_2_inhibitors_for_type_2_diabete.md",
+   "snippet": "Title Sodium glucose cotransporter 2 inhibitors for type 2 diabetes: a systematic review and meta analysis Authors Vasilakou Despoina, Karagiannis Thomas, Athanasiadou Eleni, Mainou Maria, Liakos Aris, Bekiari Eleni, Sarigianni Maria, Matth",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Annals of internal medicine Title Sodium glucose cotransporter 2 inhibitors for type 2 diabetes: a systematic review and meta analysis Authors Vasilakou Despoina, Karagiannis Thomas, Athanasiadou Eleni, Mainou Maria, Liakos Aris, Bekiari Eleni, Sarigianni Maria, Matthews David R, et al. Journal / DOI Annals of internal medicine · DOI: 10.7326/0003 4819 159 4 201308200 00007 · PMID: 24026259 https://pubmed.ncbi.nlm.nih.gov/24026259/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 713회 · RCR 23.66 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Sodium glucose cotransporter 2 (SGLT2) inhibitors are a new class of antidiabetic drugs. PURPOSE: To assess the efficacy and safety of SGLT2 inhibitors in adults with type 2 diabetes. DATA SOURCES: MEDLINE, EMBASE, and the Cochrane Library from inception through April 2013 without language restrictions; regulatory authorities' reports; and gray literature. STUDY SELECTION: Randomized trials comparing SGLT2 inhibitors with placebo or other medication for type 2 diabetes. DATA EXTRACTION: Three reviewers extracted or checked data for study characteristics, outcomes of interest, and risk of bias, and 3 reviewers summarized strength of evidence using the Grading of Recommendations Assessment, Development and Evaluation approach. DATA SYNTHESIS: Sodium glucose cotransporter 2 inhibitors were compared with placebo in 45 studies (n = 11 232) and with active comparators in 13 studies (n = 5175). They had a favorable effect on hemoglobin A1c level (mean difference vs. placebo, 0.66% [95% CI, 0.73% to 0.58%]; mean difference vs. active comparators, 0.06% [CI, 0.18% to 0.05%]). Sensitivity analyses incorporating unpublished data showed similar effect estimates. Compared with other agents, SGLT2 inhibitors reduced body weight (mean difference, 1.80 kg [CI, 3.50 to 0.11 kg]) and systolic blood pressure (mean difference, 4.45 mm Hg [CI, 5.73 to 3.18 mm Hg]). Urinary and genital tract infections were more common with SGLT2 inhibitors (odds ratios, 1.42 [CI, 1.06 to 1.90] and 5.06 [CI, 3.44 to 7.45], respectively). Hypoglycemic risk was similar to that of other agents. Results for cardiovascular outcomes and death were inconclusive. An imbalance in incidence of bladder and breast cancer was noted with dapagliflozin compared with control. LIMITATION: Most trials were rated as high risk of bias because of missing data and last observation carried forward methods. CONCLUSION: Sodium glucose cotransporter 2 inhibitors may improve short term outcomes in adults with type 2 diabetes, but effects on long term outcomes and safety are unclear. PRIMARY FUNDING SOURCE: None. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0362",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0362_landmark_2016_esc_guidelines_for_the_management_of_atrial_fibrillatio.md",
+   "snippet": "Title 2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS Authors Kirchhof Paulus, Benussi Stefano, Kotecha Dipak, Ahlsson Anders, Atar Dan, Casadei Barbara, Castella Manuel, Diener Hans Chris",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology Title 2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS Authors Kirchhof Paulus, Benussi Stefano, Kotecha Dipak, Ahlsson Anders, Atar Dan, Casadei Barbara, Castella Manuel, Diener Hans Christoph, et al. Journal / DOI Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology · PMID: 27567465 https://pubmed.ncbi.nlm.nih.gov/27567465/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1391회 · RCR 63.22 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0361",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Leukemia",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0361_landmark_international_myeloma_working_group_guidelines_for_serum_fre.md",
+   "snippet": "Title International Myeloma Working Group guidelines for serum free light chain analysis in multiple myeloma and related disorders Authors Dispenzieri A, Kyle R, Merlini G, Miguel J S, Ludwig H, Hajek R, Palumbo A, Jagannath S, et al. Journ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Leukemia Title International Myeloma Working Group guidelines for serum free light chain analysis in multiple myeloma and related disorders Authors Dispenzieri A, Kyle R, Merlini G, Miguel J S, Ludwig H, Hajek R, Palumbo A, Jagannath S, et al. Journal / DOI Leukemia · DOI: 10.1038/leu.2008.307 · PMID: 19020545 https://pubmed.ncbi.nlm.nih.gov/19020545/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 611회 · RCR 17.09 (분야평균=1.0) · NIH 상위 백분위 99.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The serum immunoglobulin free light chain (FLC) assay measures levels of free kappa and lambda immunoglobulin light chains. There are three major indications for the FLC assay in the evaluation and management of multiple myeloma and related plasma cell disorders (PCD). In the context of screening, the serum FLC assay in combination with serum protein electrophoresis (PEL) and immunofixation yields high sensitivity, and negates the need for 24 h urine studies for diagnoses other than light chain amyloidosis (AL). Second, the baseline FLC measurement is of major prognostic value in virtually every PCD. Third, the FLC assay allows for quantitative monitoring of patients with oligosecretory PCD, including AL, oligosecretory myeloma and nearly two thirds of patients who had previously been deemed to have non secretory myeloma. In AL patients, serial FLC measurements outperform PEL and immunofixation. In oligosecretory myeloma patients, although not formally validated, serial FLC measurements reduce the need for frequent bone marrow biopsies. In contrast, there are no data to support using FLC assay in place of 24 h urine PEL for monitoring or for serial measurements in PCD with measurable disease by serum or urine PEL. This paper provides consensus guidelines for the use of this important assay, in the diagnosis and management of clonal PCD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0360",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0360_landmark_executive_summary_of_the_2017_kdigo_chronic_kidney_disease_m.md",
+   "snippet": "Title Executive summary of the 2017 KDIGO Chronic Kidney Disease Mineral and Bone Disorder (CKD MBD) Guideline Update: what's changed and why it matters Authors Ketteler Markus, Block Geoffrey A, Evenepoel Pieter, Fukagawa Masafumi, Herzog ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title Executive summary of the 2017 KDIGO Chronic Kidney Disease Mineral and Bone Disorder (CKD MBD) Guideline Update: what's changed and why it matters Authors Ketteler Markus, Block Geoffrey A, Evenepoel Pieter, Fukagawa Masafumi, Herzog Charles A, McCann Linda, Moe Sharon M, Shroff Rukshana, et al. Journal / DOI Kidney international · DOI: 10.1016/j.kint.2017.04.006 · PMID: 28646995 https://pubmed.ncbi.nlm.nih.gov/28646995/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 717회 · RCR 37.46 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The KDIGO 2017 Clinical Practice Guideline Update for the Diagnosis, Evaluation, Prevention, and Treatment of CKD MBD represents a selective update of the prior CKD MBD Guideline published in 2009. This update, along with the 2009 publication, is intended to assist the practitioner caring for adults and children with chronic kidney disease (CKD), those on chronic dialysis therapy, or individuals with a kidney transplant. This review highlights key aspects of the 2017 CKD MBD Guideline Update, with an emphasis on the rationale for the changes made to the original guideline document. Topic areas encompassing updated recommendations include diagnosis of bone abnormalities in CKD mineral and bone disorder (MBD), treatment of CKD MBD by targeting phosphate lowering and calcium maintenance, treatment of abnormalities in parathyroid hormone in CKD MBD, treatment of bone abnormalities by antiresorptives and other osteoporosis therapies, and evaluation and treatment of kidney transplant bone disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0359",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of clinical endocrinology and metabolism",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0359_landmark_testosterone_therapy_in_men_with_androgen_deficiency_syndrom.md",
+   "snippet": "Title Testosterone therapy in men with androgen deficiency syndromes: an Endocrine Society clinical practice guideline Authors Bhasin Shalender, Cunningham Glenn R, Hayes Frances J, Matsumoto Alvin M, Snyder Peter J, Swerdloff Ronald S, Mon",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / The Journal of clinical endocrinology and metabolism Title Testosterone therapy in men with androgen deficiency syndromes: an Endocrine Society clinical practice guideline Authors Bhasin Shalender, Cunningham Glenn R, Hayes Frances J, Matsumoto Alvin M, Snyder Peter J, Swerdloff Ronald S, Montori Victor M, Task Force, Endocrine Society Journal / DOI The Journal of clinical endocrinology and metabolism · DOI: 10.1210/jc.2009 2354 · PMID: 20525905 https://pubmed.ncbi.nlm.nih.gov/20525905/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1444회 · RCR 48.11 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: Our objective was to update the guidelines for the evaluation and treatment of androgen deficiency syndromes in adult men published previously in 2006. PARTICIPANTS: The Task Force was composed of a chair, selected by the Clinical Guidelines Subcommittee of The Endocrine Society, five additional experts, a methodologist, and a medical writer. The Task Force received no corporate funding or remuneration. CONCLUSIONS: We recommend making a diagnosis of androgen deficiency only in men with consistent symptoms and signs and unequivocally low serum testosterone levels. We suggest the measurement of morning total testosterone level by a reliable assay as the initial diagnostic test. We recommend confirmation of the diagnosis by repeating the measurement of morning total testosterone and, in some men in whom total testosterone is near the lower limit of normal or in whom SHBG abnormality is suspected by measurement of free or bioavailable testosterone level, using validated assays. We recommend testosterone therapy for men with symptomatic androgen deficiency to induce and maintain secondary sex characteristics and to improve their sexual function, sense of well being, muscle mass and strength, and bone mineral density. We recommend against starting testosterone therapy in patients with breast or prostate cancer, a palpable prostate nodule or induration or prostate specific antigen greater than 4 ng/ml or greater than 3 ng/ml in men at high risk for prostate cancer such as African Americans or men with first degree relatives with prostate cancer without further urological evaluation, hematocrit greater than 50%, untreated severe obstructive sleep apnea, severe lower urinary tract symptoms with International Prostate Symptom Score above 19, or uncontrolled or poorly controlled heart failure. When testosterone therapy is instituted, we suggest aiming at achieving testosterone levels during treatment in the mid normal range with any of the approved formulations, chosen on the basis of the patient's preference, consideration of pharmacokinetics, treatment burden, and cost. Men receiving testosterone therapy should be monitored using a standardized plan. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0358",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European urology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0358_landmark_eau_guidelines_on_non_muscle_invasive_urothelial_carcinoma_o.md",
+   "snippet": "Title EAU guidelines on non muscle invasive urothelial carcinoma of the bladder, the 2011 update Authors Babjuk Marko, Oosterlinck Willem, Sylvester Richard, Kaasinen Eero, Böhle Andreas, Palou Redorta Juan, Rouprêt Morgan, European Associa",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / European urology Title EAU guidelines on non muscle invasive urothelial carcinoma of the bladder, the 2011 update Authors Babjuk Marko, Oosterlinck Willem, Sylvester Richard, Kaasinen Eero, Böhle Andreas, Palou Redorta Juan, Rouprêt Morgan, European Association of Urology (EAU) Journal / DOI European urology · DOI: 10.1016/j.eururo.2011.03.017 · PMID: 21458150 https://pubmed.ncbi.nlm.nih.gov/21458150/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 613회 · RCR 18.61 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract CONTEXT AND OBJECTIVE: To present the 2011 European Association of Urology (EAU) guidelines on non muscle invasive bladder cancer (NMIBC). EVIDENCE ACQUISITION: Literature published between 2004 and 2010 on the diagnosis and treatment of NMIBC was systematically reviewed. Previous guidelines were updated, and the level of evidence (LE) and grade of recommendation (GR) were assigned. EVIDENCE SYNTHESIS: Tumours staged as Ta, T1, or carcinoma in situ (CIS) are grouped as NMIBC. Diagnosis depends on cystoscopy and histologic evaluation of the tissue obtained by transurethral resection (TUR) in papillary tumours or by multiple bladder biopsies in CIS. In papillary lesions, a complete TUR is essential for the patient's prognosis. Where the initial resection is incomplete or where a high grade or T1 tumour is detected, a second TUR should be performed within 2 6 wk. In papillary tumours, the risks of both recurrence and progression may be estimated for individual patients using the scoring system and risk tables. The stratification of patients into low , intermediate , and high risk groups separately for recurrence and progression is pivotal to recommending adjuvant treatment. For patients with a low risk of tumour recurrence and progression, one immediate instillation of chemotherapy is recommended. Patients with an intermediate or high risk of recurrence and an intermediate risk of progression should receive one immediate instillation of chemotherapy followed by a minimum of 1 yr of bacillus Calmette Guérin (BCG) intravesical immunotherapy or further instillations of chemotherapy. Papillary tumours with a high risk of progression and CIS should receive intravesical BCG for 1 yr. Cystectomy may be offered to the highest risk patients, and it is at least recommended in BCG failure patients. The long version of the guidelines is available from the EAU Web site (www.uroweb.org). CONCLUSIONS: These abridged EAU guidelines present updated information on the diagnosis and treatment of NMIBC for incorporation into clinical practice. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0357",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0357_landmark_kdoqi_clinical_practice_guidelines_and_clinical_practice_rec.md",
+   "snippet": "Title KDOQI Clinical Practice Guidelines and Clinical Practice Recommendations for Anemia in Chronic Kidney Disease Authors KDOQI, National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the Na",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guidelines and Clinical Practice Recommendations for Anemia in Chronic Kidney Disease Authors KDOQI, National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · PMID: 16678659 https://pubmed.ncbi.nlm.nih.gov/16678659/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 730회 · RCR 22.48 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0356",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of heart failure",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0356_landmark_esc_guidelines_for_the_diagnosis_and_treatment_of_acute_and_.md",
+   "snippet": "Title ESC guidelines for the diagnosis and treatment of acute and chronic heart failure 2008: the Task Force for the diagnosis and treatment of acute and chronic heart failure 2008 of the European Society of Cardiology. Developed in collabo",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European journal of heart failure Title ESC guidelines for the diagnosis and treatment of acute and chronic heart failure 2008: the Task Force for the diagnosis and treatment of acute and chronic heart failure 2008 of the European Society of Cardiology. Developed in collaboration with the Heart Failure Association of the ESC (HFA) and endorsed by the European Society of Intensive Care Medicine (ESICM) Authors Dickstein Kenneth, Cohen Solal Alain, Filippatos Gerasimos, McMurray John J V, Ponikowski Piotr, Poole Wilson Philip Alexander, Strömberg Anna, van Veldhuisen Dirk J, et al. Journal / DOI European journal of heart failure · DOI: 10.1016/j.ejheart.2008.08.005 · PMID: 18826876 https://pubmed.ncbi.nlm.nih.gov/18826876/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1468회 · RCR 42.71 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0355",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0355_landmark_venous_thromboembolism_prophylaxis_and_treatment_in_patients.md",
+   "snippet": "Title Venous thromboembolism prophylaxis and treatment in patients with cancer: American Society of Clinical Oncology clinical practice guideline update Authors Lyman Gary H, Khorana Alok A, Kuderer Nicole M, Lee Agnes Y, Arcelus Juan Ignac",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Venous thromboembolism prophylaxis and treatment in patients with cancer: American Society of Clinical Oncology clinical practice guideline update Authors Lyman Gary H, Khorana Alok A, Kuderer Nicole M, Lee Agnes Y, Arcelus Juan Ignacio, Balaban Edward P, Clarke Jeffrey M, Flowers Christopher R, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.2013.49.1118 · PMID: 23669224 https://pubmed.ncbi.nlm.nih.gov/23669224/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 616회 · RCR 22.53 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To provide recommendations about prophylaxis and treatment of venous thromboembolism (VTE) in patients with cancer. Prophylaxis in the outpatient, inpatient, and perioperative settings was considered, as were treatment and use of anticoagulation as a cancer directed therapy. METHODS: A systematic review of the literature published from December 2007 to December 2012 was completed in MEDLINE and the Cochrane Collaboration Library. An Update Committee reviewed evidence to determine which recommendations required revision. RESULTS: Forty two publications met eligibility criteria, including 16 systematic reviews and 24 randomized controlled trials. RECOMMENDATIONS: Most hospitalized patients with cancer require thromboprophylaxis throughout hospitalization. Thromboprophylaxis is not routinely recommended for outpatients with cancer. It may be considered for selected high risk patients. Patients with multiple myeloma receiving antiangiogenesis agents with chemotherapy and/or dexamethasone should receive prophylaxis with either low molecular weight heparin (LMWH) or low dose aspirin. Patients undergoing major cancer surgery should receive prophylaxis, starting before surgery and continuing for at least 7 to 10 days. Extending prophylaxis up to 4 weeks should be considered in those with high risk features. LMWH is recommended for the initial 5 to 10 days of treatment for deep vein thrombosis and pulmonary embolism as well as for long term (6 months) secondary prophylaxis. Use of novel oral anticoagulants is not currently recommended for patients with malignancy and VTE. Anticoagulation should not be used for cancer treatment in the absence of other indications. Patients with cancer should be periodically assessed for VTE risk. Oncology professionals should provide patient education about the signs and symptoms of VTE. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0354",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Canadian journal of cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0354_landmark_2021_canadian_cardiovascular_society_guidelines_for_the_mana.md",
+   "snippet": "Title 2021 Canadian Cardiovascular Society Guidelines for the Management of Dyslipidemia for the Prevention of Cardiovascular Disease in Adults Authors Pearson Glen J, Thanassoulis George, Anderson Todd J, Barry Arden R, Couture Patrick, Da",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / The Canadian journal of cardiology Title 2021 Canadian Cardiovascular Society Guidelines for the Management of Dyslipidemia for the Prevention of Cardiovascular Disease in Adults Authors Pearson Glen J, Thanassoulis George, Anderson Todd J, Barry Arden R, Couture Patrick, Dayan Natalie, Francis Gordon A, Genest Jacques, et al. Journal / DOI The Canadian journal of cardiology · DOI: 10.1016/j.cjca.2021.03.016 · PMID: 33781847 https://pubmed.ncbi.nlm.nih.gov/33781847/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 745회 · RCR 56.09 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The 2021 guidelines primary panel selected clinically relevant questions and produced updated recommendations, on the basis of important new findings that have emerged since the 2016 guidelines. In patients with clinical atherosclerosis, abdominal aortic aneurysm, most patients with diabetes or chronic kidney disease, and those with low density lipoprotein cholesterol ≥ 5 mmol/L, statin therapy continues to be recommended. We have introduced the concept of lipid/lipoprotein treatment thresholds for intensifying lipid lowering therapy with nonstatin agents, and have identified the secondary prevention patients who have been shown to derive the largest benefit from intensification of therapy with these agents. For all other patients, we emphasize risk assessment linked to lipid/lipoprotein evaluation to optimize clinical decision making. Lipoprotein(a) measurement is now recommended once in a patient's lifetime, as part of initial lipid screening to assess cardiovascular risk. For any patient with triglycerides ˃ 1.5 mmol/L, either non high density lipoprotein cholesterol or apolipoprotein B are the preferred lipid parameter for screening, rather than low density lipoprotein cholesterol. We provide updated recommendations regarding the role of coronary artery calcium scoring as a clinical decision tool to aid the decision to initiate statin therapy. There are new recommendations on the preventative care of women with hypertensive disorders of pregnancy. Health behaviour modification, including regular exercise and a heart healthy diet, remain the cornerstone of cardiovascular disease prevention. These guidelines are intended to provide a platform for meaningful conversation and shared decision making between patient and care provider, so that individual decisions can be made for risk screening, assessment, and treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0353",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0353_landmark_2017_acc_aha_hfsa_focused_update_of_the_2013_accf_aha_guidel.md",
+   "snippet": "Title 2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Fa",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Failure Society of America Authors Yancy Clyde W, Jessup Mariell, Bozkurt Biykem, Butler Javed, Casey Donald E, Colvin Monica M, Drazner Mark H, Filippatos Gerasimos S, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2017.04.025 · PMID: 28461007 https://pubmed.ncbi.nlm.nih.gov/28461007/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1498회 · RCR 65.69 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0352",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0352_landmark_multiple_myeloma_eha_esmo_clinical_practice_guidelines_for_d.md",
+   "snippet": "Title Multiple myeloma: EHA ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up† Authors Dimopoulos M A, Moreau P, Terpos E, Mateos M V, Zweegman S, Cook G, Delforge M, Hájek R, et al. Journal / DOI Annals of oncology :",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Multiple myeloma: EHA ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up† Authors Dimopoulos M A, Moreau P, Terpos E, Mateos M V, Zweegman S, Cook G, Delforge M, Hájek R, et al. Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1016/j.annonc.2020.11.014 · PMID: 33549387 https://pubmed.ncbi.nlm.nih.gov/33549387/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 619회 · RCR 43.70 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0351",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0351_landmark_updated_european_heart_rhythm_association_practical_guide_on.md",
+   "snippet": "Title Updated European Heart Rhythm Association Practical Guide on the use of non vitamin K antagonist anticoagulants in patients with non valvular atrial fibrillation Authors Heidbuchel Hein, Verhamme Peter, Alings Marco, Antz Matthias, Di",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology Title Updated European Heart Rhythm Association Practical Guide on the use of non vitamin K antagonist anticoagulants in patients with non valvular atrial fibrillation Authors Heidbuchel Hein, Verhamme Peter, Alings Marco, Antz Matthias, Diener Hans Christoph, Hacke Werner, Oldgren Jonas, Sinnaeve Peter, et al. Journal / DOI Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology · DOI: 10.1093/europace/euv309 · PMID: 26324838 https://pubmed.ncbi.nlm.nih.gov/26324838/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 755회 · RCR 33.56 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The current manuscript is an update of the original Practical Guide, published in June 2013[Heidbuchel H, Verhamme P, Alings M, Antz M, Hacke W, Oldgren J, et al. European Heart Rhythm Association Practical Guide on the use of new oral anticoagulants in patients with non valvular atrial fibrillation. Europace 2013;15:625 51; Heidbuchel H, Verhamme P, Alings M, Antz M, Hacke W, Oldgren J, et al. EHRA practical guide on the use of new oral anticoagulants in patients with non valvular atrial fibrillation: executive summary. Eur Heart J 2013;34:2094 106]. Non vitamin K antagonist oral anticoagulants (NOACs) are an alternative for vitamin K antagonists (VKAs) to prevent stroke in patients with non valvular atrial fibrillation (AF). Both physicians and patients have to learn how to use these drugs effectively and safely in clinical practice. Many unresolved questions on how to optimally use these drugs in specific clinical situations remain. The European Heart Rhythm Association set out to coordinate a unified way of informing physicians on the use of the different NOACs. A writing group defined what needs to be considered as 'non valvular AF' and listed 15 topics of concrete clinical scenarios for which practical answers were formulated, based on available evidence. The 15 topics are (i) practical start up and follow up scheme for patients on NOACs; (ii) how to measure the anticoagulant effect of NOACs; (iii) drug drug interactions and pharmacokinetics of NOACs; (iv) switching between anticoagulant regimens; (v) ensuring adherence of NOAC intake; (vi) how to deal with dosing errors; (vii) patients with chronic kidney disease; (viii) what to do if there is a (suspected) overdose without bleeding, or a clotting test is indicating a risk of bleeding?; (xi) management of bleeding complications; (x) patients undergoing a planned surgical intervention or ablation; (xi) patients undergoing an urgent surgical intervention; (xii) patients with AF and coronary artery disease; (xiii) cardioversion in a NOAC treated patient; (xiv) patients presenting with acute stroke while on NOACs; and (xv) NOACs vs. VKAs in AF patients with a malignancy. Additional information and downloads of the text and anticoagulation cards in 16 languages can be found on an European Heart Rhythm Association web site (www.NOACforAF.eu). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0350",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0350_landmark_2019_aha_acc_hrs_focused_update_of_the_2014_aha_acc_hrs_guid.md",
+   "snippet": "Title 2019 AHA/ACC/HRS Focused Update of the 2014 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guide",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2019 AHA/ACC/HRS Focused Update of the 2014 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society Authors January Craig T, Wann L Samuel, Calkins Hugh, Chen Lin Y, Cigarroa Joaquin E, Cleveland Joseph C, Ellinor Patrick T, Ezekowitz Michael D, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2019.01.011 · PMID: 30703431 https://pubmed.ncbi.nlm.nih.gov/30703431/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1542회 · RCR 84.37 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0349",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Allergy",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0349_landmark_anaphylaxis_guidelines_from_the_european_academy_of_allergy_.md",
+   "snippet": "Title Anaphylaxis: guidelines from the European Academy of Allergy and Clinical Immunology Authors Muraro A, Roberts G, Worm M, Bilò M B, Brockow K, Fernández Rivas M, Santos A F, Zolkipli Z Q, et al. Journal / DOI Allergy · DOI: 10.1111/al",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Allergy Title Anaphylaxis: guidelines from the European Academy of Allergy and Clinical Immunology Authors Muraro A, Roberts G, Worm M, Bilò M B, Brockow K, Fernández Rivas M, Santos A F, Zolkipli Z Q, et al. Journal / DOI Allergy · DOI: 10.1111/all.12437 · PMID: 24909803 https://pubmed.ncbi.nlm.nih.gov/24909803/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 624회 · RCR 28.84 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Anaphylaxis is a clinical emergency, and all healthcare professionals should be familiar with its recognition and acute and ongoing management. These guidelines have been prepared by the European Academy of Allergy and Clinical Immunology (EAACI) Taskforce on Anaphylaxis. They aim to provide evidence based recommendations for the recognition, risk factor assessment, and the management of patients who are at risk of, are experiencing, or have experienced anaphylaxis. While the primary audience is allergists, these guidelines are also relevant to all other healthcare professionals. The development of these guidelines has been underpinned by two systematic reviews of the literature, both on the epidemiology and on clinical management of anaphylaxis. Anaphylaxis is a potentially life threatening condition whose clinical diagnosis is based on recognition of a constellation of presenting features. First line treatment for anaphylaxis is intramuscular adrenaline. Useful second line interventions may include removing the trigger where possible, calling for help, correct positioning of the patient, high flow oxygen, intravenous fluids, inhaled short acting bronchodilators, and nebulized adrenaline. Discharge arrangements should involve an assessment of the risk of further reactions, a management plan with an anaphylaxis emergency action plan, and, where appropriate, prescribing an adrenaline auto injector. If an adrenaline auto injector is prescribed, education on when and how to use the device should be provided. Specialist follow up is essential to investigate possible triggers, to perform a comprehensive risk assessment, and to prevent future episodes by developing personalized risk reduction strategies including, where possible, commencing allergen immunotherapy. Training for the patient and all caregivers is essential. There are still many gaps in the evidence base for anaphylaxis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0348",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0348_landmark_2022_aha_acc_hfsa_guideline_for_the_management_of_heart_fail.md",
+   "snippet": "Title 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: Executive Summary: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Heidenreich Paul A, ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: Executive Summary: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Heidenreich Paul A, Bozkurt Biykem, Aguilar David, Allen Larry A, Byun Joni J, Colvin Monica M, Deswal Anita, Drazner Mark H, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2021.12.011 · PMID: 35379504 https://pubmed.ncbi.nlm.nih.gov/35379504/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 821회 · RCR 73.46 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract AIM: The \"2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure\" replaces the \"2013 ACCF/AHA Guideline for the Management of Heart Failure\" and the \"2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure.\" The 2022 guideline is intended to provide patient centric recommendations for clinicians to prevent, diagnose, and manage patients with heart failure. METHODS: A comprehensive literature search was conducted from May 2020 to December 2020, encompassing studies, reviews, and other evidence conducted on human subjects that were published in English from MEDLINE (PubMed), EMBASE, the Cochrane Collaboration, the Agency for Healthcare Research and Quality, and other relevant databases. Additional relevant clinical trials and research studies, published through September 2021, were also considered. This guideline was harmonized with other American Heart Association/American College of Cardiology guidelines published through December 2021. STRUCTURE: Heart failure remains a leading cause of morbidity and mortality globally. The 2022 heart failure guideline provides recommendations based on contemporary evidence for the treatment of these patients. The recommendations present an evidence based approach to managing patients with heart failure, with the intent to improve quality of care and align with patients' interests. Many recommendations from the earlier heart failure guidelines have been updated with new evidence, and new recommendations have been created when supported by published data. Value statements are provided for certain treatments with high quality published economic analyses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0347",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Pancreatology : official journal of the International Association of Pancreatology (IAP) ... [et al.]",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0347_landmark_iap_guidelines_for_the_surgical_management_of_acute_pancreat.md",
+   "snippet": "Title IAP Guidelines for the Surgical Management of Acute Pancreatitis Authors Uhl Waldemar, Warshaw Andrew, Imrie Clement, Bassi Claudio, McKay Colin J, Lankisch Paul G, Carter Ross, Di Magno Eugene, et al. Journal / DOI Pancreatology : of",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Pancreatology : official journal of the International Association of Pancreatology (IAP) ... [et al.] Title IAP Guidelines for the Surgical Management of Acute Pancreatitis Authors Uhl Waldemar, Warshaw Andrew, Imrie Clement, Bassi Claudio, McKay Colin J, Lankisch Paul G, Carter Ross, Di Magno Eugene, et al. Journal / DOI Pancreatology : official journal of the International Association of Pancreatology (IAP) ... [et al.] · PMID: 12435871 https://pubmed.ncbi.nlm.nih.gov/12435871/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 504회 · RCR 18.02 (분야평균=1.0) · NIH 상위 백분위 99.1. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract During 2002 the International Association of Pancreatology developed evidenced based guidelines on the surgical management of acute pancreatitis. There were 11 guidelines, 10 of which were recommendations grade B and one (the second) grade A. (1) Mild acute pancreatitis is not an indication for pancreatic surgery. (2) The use of prophylactic broad spectrum antibiotics reduces infection rates in computed tomography proven necrotizing pancreatitis but may not improve survival. (3) Fine needle aspiration for bacteriology should be performed to differentiate between sterile and infected pancreatic necrosis in patients with sepsis syndrome. (4) Infected pancreatic necrosis in patients with clinical signs and symptoms of sepsis is an indication for intervention including surgery and radiological drainage. (5) Patients with sterile pancreatic necrosis (with negative fine needle aspiration for bacteriology) should be managed conservatively and only undergo intervention in selected cases. (6) Early surgery within 14 days after onset of the disease is not recommended in patients with necrotizing pancreatitis unless there are specific indications. (7) Surgical and other forms of interventional management should favor an organ preserving approach, which involves debridement or necrosectomy combined with a postoperative management concept that maximizes postoperative evacuation of retroperitoneal debris and exudate. (8) Cholecystectomy should be performed to avoid recurrence of gallstone associated acute pancreatitis. (9) In mild gallstone associated acute pancreatitis, cholecystectomy should be performed as soon as the patient has recovered and ideally during the same hospital admission. (10) In severe gallstone associated acute pancreatitis, cholecystectomy should be delayed until there is sufficient resolution of the inflammatory response and clinical recovery. (11) Endoscopic sphincterotomy is an alternative to cholecystectomy in those who are not fit to undergo surgery in order to lower the risk of recurrence of gallstone associated acute pancreatitis. There is however a theoretical risk of introducing infection into sterile pancreatic necrosis. These guidelines should now form the basis for audit studies in order to determine the quality of patient care delivery. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0346",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0346_landmark_2013_esc_guidelines_on_cardiac_pacing_and_cardiac_resynchron.md",
+   "snippet": "Title 2013 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy: the Task Force on cardiac pacing and resynchronization therapy of the European Society of Cardiology (ESC). Developed in collaboration with the European Hear",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2013 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy: the Task Force on cardiac pacing and resynchronization therapy of the European Society of Cardiology (ESC). Developed in collaboration with the European Heart Rhythm Association (EHRA) Authors Brignole Michele, Auricchio Angelo, Baron Esquivias Gonzalo, Bordachar Pierre, Boriani Giuseppe, Breithardt Ole A, Cleland John, Deharo Jean Claude, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/eht150 · PMID: 23801822 https://pubmed.ncbi.nlm.nih.gov/23801822/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1544회 · RCR 57.91 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0345",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Leukemia",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0345_landmark_prevention_of_thalidomide_and_lenalidomide_associated_thromb.md",
+   "snippet": "Title Prevention of thalidomide and lenalidomide associated thrombosis in myeloma Authors Palumbo A, Rajkumar S V, Dimopoulos M A, Richardson P G, San Miguel J, Barlogie B, Harousseau J, Zonder J A, et al. Journal / DOI Leukemia · PMID: 180",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Leukemia Title Prevention of thalidomide and lenalidomide associated thrombosis in myeloma Authors Palumbo A, Rajkumar S V, Dimopoulos M A, Richardson P G, San Miguel J, Barlogie B, Harousseau J, Zonder J A, et al. Journal / DOI Leukemia · PMID: 18094721 https://pubmed.ncbi.nlm.nih.gov/18094721/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 653회 · RCR 16.22 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The incidence of venous thromboembolism (VTE) is more than 1 per thousand annually in the general population and increases further in cancer patients. The risk of VTE is higher in multiple myeloma (MM) patients who receive thalidomide or lenalidomide, especially in combination with dexamethasone or chemotherapy. Various VTE prophylaxis strategies, such as low molecular weight heparin (LMWH), warfarin or aspirin, have been investigated in small, uncontrolled clinical studies. This manuscript summarizes the available evidence and recommends a prophylaxis strategy according to a risk assessment model. Individual risk factors for thrombosis associated with thalidomide/lenalidomide based therapy include age, history of VTE, central venous catheter, comorbidities (infections, diabetes, cardiac disease), immobilization, surgery and inherited thrombophilia. Myeloma related risk factors include diagnosis and hyperviscosity. VTE is very high in patients who receive high dose dexamethasone, doxorubicin or multiagent chemotherapy in combination with thalidomide or lenalidomide, but not with bortezomib. The panel recommends aspirin for patients with < or = 1 risk factor for VTE. LMWH (equivalent to enoxaparin 40 mg per day) is recommended for those with two or more individual/myeloma related risk factors. LMWH is also recommended for all patients receiving concurrent high dose dexamethasone or doxorubicin. Full dose warfarin targeting a therapeutic INR of 2 3 is an alternative to LMWH, although there are limited data in the literature with this strategy. In the absence of clear data from randomized studies as a foundation for recommendations, many of the following proposed strategies are the results of common sense or derive from the extrapolation of data from many studies not specifically designed to answer these questions. Further investigation is needed to define the best VTE prophylaxis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0344",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0344_landmark_k_doqi_clinical_practice_guidelines_on_hypertension_and_anti.md",
+   "snippet": "Title K/DOQI clinical practice guidelines on hypertension and antihypertensive agents in chronic kidney disease Authors Kidney Disease Outcomes Quality Initiative (K/DOQI) Journal / DOI American journal of kidney diseases : the official jou",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title K/DOQI clinical practice guidelines on hypertension and antihypertensive agents in chronic kidney disease Authors Kidney Disease Outcomes Quality Initiative (K/DOQI) Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · PMID: 15114537 https://pubmed.ncbi.nlm.nih.gov/15114537/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 863회 · RCR 23.43 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0343",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0343_landmark_prevention_of_pneumococcal_disease_recommendations_of_the_ad.md",
+   "snippet": "Title Prevention of pneumococcal disease: recommendations of the Advisory Committee on Immunization Practices (ACIP) Authors (정보 없음) Journal / DOI MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations an",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports Title Prevention of pneumococcal disease: recommendations of the Advisory Committee on Immunization Practices (ACIP) Authors (정보 없음) Journal / DOI MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports · PMID: 9132580 https://pubmed.ncbi.nlm.nih.gov/9132580/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 514회 · RCR 16.02 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract This report updates the last recommendations by the Advisory Committee on Immunization Practices (ACIP) concerning pneumococcal polysaccharide vaccine (MMWR 1989;38:64 8, 73 6). ACIP recommends that the vaccine be used more extensively and administered to all persons in the following groups: a) persons aged or = 65 years, b) immunocompetent persons aged or = to 2 years who are at increased risk for illness and death associated with pneumococcal disease because of chronic illness, c) persons aged or = 2 years with functional or anatomic asplenia, d) persons aged or = 2 years living in environments in which the risk for disease is high, and e) immunocompromised persons aged or = 2 years who are at high risk for infection. This report contains updated information regarding a) antimicrobial resistance among pneumococci, b) vaccine effectiveness and cost effectiveness, c) indications for vaccination, d) guidelines for revaccination, e) strategies for improving delivery of vaccine, and f) development of pneumococcal conjugate vaccine. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0342",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0342_landmark_guidelines_for_the_diagnosis_and_treatment_of_chronic_heart_.md",
+   "snippet": "Title Guidelines for the diagnosis and treatment of chronic heart failure: executive summary (update 2005): The Task Force for the Diagnosis and Treatment of Chronic Heart Failure of the European Society of Cardiology Authors Swedberg Karl,",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title Guidelines for the diagnosis and treatment of chronic heart failure: executive summary (update 2005): The Task Force for the Diagnosis and Treatment of Chronic Heart Failure of the European Society of Cardiology Authors Swedberg Karl, Cleland John, Dargie Henry, Drexler Helmut, Follath Ferenc, Komajda Michel, Tavazzi Luigi, Smiseth Otto A, et al. Journal / DOI European heart journal · PMID: 15901669 https://pubmed.ncbi.nlm.nih.gov/15901669/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1598회 · RCR 44.52 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0341",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the European Academy of Dermatology and Venereology : JEADV",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0341_landmark_consensus_based_european_guidelines_for_treatment_of_atopic_.md",
+   "snippet": "Title Consensus based European guidelines for treatment of atopic eczema (atopic dermatitis) in adults and children: part I Authors Wollenberg A, Barbarot S, Bieber T, Christen Zaech S, Deleuran M, Fink Wagner A, Gieler U, Girolomoni G, et ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of the European Academy of Dermatology and Venereology : JEADV Title Consensus based European guidelines for treatment of atopic eczema (atopic dermatitis) in adults and children: part I Authors Wollenberg A, Barbarot S, Bieber T, Christen Zaech S, Deleuran M, Fink Wagner A, Gieler U, Girolomoni G, et al. Journal / DOI Journal of the European Academy of Dermatology and Venereology : JEADV · DOI: 10.1111/jdv.14891 · PMID: 29676534 https://pubmed.ncbi.nlm.nih.gov/29676534/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 662회 · RCR 39.54 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract This guideline was developed as a joint interdisciplinary European project, including physicians from all relevant disciplines as well as patients. It is a consensus based guideline, taking available evidence from other guidelines, systematic reviews and published studies into account. This first part of the guideline covers methods, patient perspective, general measures and avoidance strategies, basic emollient treatment and bathing, dietary intervention, topical anti inflammatory therapy, phototherapy and antipruritic therapy, whereas the second part covers antimicrobial therapy, systemic treatment, allergen specific immunotherapy, complementary medicine, psychosomatic counselling and educational interventions. Management of AE must consider the individual clinical variability of the disease; highly standardized treatment rules are not recommended. Basic therapy is focused on treatment of disturbed barrier function by hydrating and lubricating topical treatment, besides further avoidance of specific and unspecific provocation factors. Topical anti inflammatory treatment based on glucocorticosteroids and calcineurin inhibitors is used for flare management and for proactive therapy for long term control. Topical corticosteroids remain the mainstay of therapy, whereas tacrolimus and pimecrolimus are preferred in sensitive skin areas and for long term use. Topical phosphodiesterase inhibitors may be a treatment alternative when available. Adjuvant therapy includes UV irradiation, preferably with UVB 311 nm or UVA1. Pruritus is targeted with the majority of the recommended therapies, but some patients may need additional antipruritic therapy. Antimicrobial therapy, systemic anti inflammatory treatment, immunotherapy, complementary medicine and educational intervention will be addressed in part II of the guideline. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0340",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Lancet (London, England)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0340_landmark_impact_of_diabetes_on_the_effects_of_sodium_glucose_co_trans.md",
+   "snippet": "Title Impact of diabetes on the effects of sodium glucose co transporter 2 inhibitors on kidney outcomes: collaborative meta analysis of large placebo controlled trials Authors Nuffield Department of Population Health Renal Studies Group, S",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Lancet (London, England) Title Impact of diabetes on the effects of sodium glucose co transporter 2 inhibitors on kidney outcomes: collaborative meta analysis of large placebo controlled trials Authors Nuffield Department of Population Health Renal Studies Group, SGLT2 inhibitor Meta Analysis Cardio Renal Trialists' Consortium Journal / DOI Lancet (London, England) · DOI: 10.1016/S0140 6736(22)02074 8 · PMID: 36351458 https://pubmed.ncbi.nlm.nih.gov/36351458/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 869회 · RCR 78.67 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Large trials have shown that sodium glucose co transporter 2 (SGLT2) inhibitors reduce the risk of adverse kidney and cardiovascular outcomes in patients with heart failure or chronic kidney disease, or with type 2 diabetes and high risk of atherosclerotic cardiovascular disease. None of the trials recruiting patients with and without diabetes were designed to assess outcomes separately in patients without diabetes. METHODS: We did a systematic review and meta analysis of SGLT2 inhibitor trials. We searched the MEDLINE and Embase databases for trials published from database inception to Sept 5, 2022. SGLT2 inhibitor trials that were double blind, placebo controlled, performed in adults (age ≥18 years), large (≥500 participants per group), and at least 6 months in duration were included. Summary level data used for analysis were extracted from published reports or provided by trial investigators, and inverse variance weighted meta analyses were conducted to estimate treatment effects. The main efficacy outcomes were kidney disease progression (standardised to a definition of a sustained ≥50% decrease in estimated glomerular filtration rate [eGFR] from randomisation, a sustained low eGFR, end stage kidney disease, or death from kidney failure), acute kidney injury, and a composite of cardiovascular death or hospitalisation for heart failure. Other outcomes were death from cardiovascular and non cardiovascular disease considered separately, and the main safety outcomes were ketoacidosis and lower limb amputation. This study is registered with PROSPERO, CRD42022351618. FINDINGS: We identified 13 trials involving 90 413 participants. After exclusion of four participants with uncertain diabetes status, we analysed 90 409 participants (74 804 [82·7%] participants with diabetes [ 99% with type 2 diabetes] and 15 605 [17·3%] without diabetes; trial level mean baseline eGFR range 37 85 mL/min per 1·73 m2). Compared with placebo, allocation to an SGLT2 inhibitor reduced the risk of kidney disease progression by 37% (relative risk [RR] 0·63, 95% CI 0·58 0·69) with similar RRs in patients with and without diabetes. In the four chronic kidney disease trials, RRs were similar irrespective of primary kidney diagnosis. SGLT2 inhibitors reduced the risk of acute kidney injury by 23% (0·77, 0·70 0·84) and the risk of cardiovascular death or hospitalisation for heart failure by 23% (0·77, 0·74 0·81), again with similar effects in those with and without diabetes. SGLT2 inhibitors also reduced the risk of cardiovascular death (0·86, 0·81 0·92) but did not significantly reduce the risk of non cardiovascular death (0·94, 0·88 1·02). For these mortality outcomes, RRs were similar in patients with and without diabetes. For all outcomes, results were broadly similar irrespective of trial mean baseline eGFR. Based on estimates of absolute effects, the absolute benefits of SGLT2 inhibition outweighed any serious hazards of ketoacidosis or amputation. INTERPRETATION: In addition to the established cardiovascular benefits of SGLT2 inhibitors, the randomised data support their use for modifying risk of kidney disease progression and acute kidney injury, not only in patients with type 2 diabetes at high cardiovascular risk, but also in patients with chronic kidney disease or heart failure irrespective of diabetes status, primary kidney disease, or kidney function. FUNDING: UK Medical Research Council and Kidney Research UK. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0339",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0339_landmark_clinical_practice_guideline_for_the_management_of_asymptomat.md",
+   "snippet": "Title Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019 Update by the Infectious Diseases Society of America Authors Nicolle Lindsay E, Gupta Kalpana, Bradley Suzanne F, Colgan Richard, DeMuri Gregory P, Dreko",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Clinical infectious diseases : an official publication of the Infectious Diseases Society of America Title Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019 Update by the Infectious Diseases Society of America Authors Nicolle Lindsay E, Gupta Kalpana, Bradley Suzanne F, Colgan Richard, DeMuri Gregory P, Drekonja Dimitri, Eckert Linda O, Geerlings Suzanne E, et al. Journal / DOI Clinical infectious diseases : an official publication of the Infectious Diseases Society of America · DOI: 10.1093/cid/ciy1121 · PMID: 30895288 https://pubmed.ncbi.nlm.nih.gov/30895288/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 518회 · RCR 34.41 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Asymptomatic bacteriuria (ASB) is a common finding in many populations, including healthy women and persons with underlying urologic abnormalities. The 2005 guideline from the Infectious Diseases Society of America recommended that ASB should be screened for and treated only in pregnant women or in an individual prior to undergoing invasive urologic procedures. Treatment was not recommended for healthy women; older women or men; or persons with diabetes, indwelling catheters, or spinal cord injury. The guideline did not address children and some adult populations, including patients with neutropenia, solid organ transplants, and nonurologic surgery. In the years since the publication of the guideline, further information relevant to ASB has become available. In addition, antimicrobial treatment of ASB has been recognized as an important contributor to inappropriate antimicrobial use, which promotes emergence of antimicrobial resistance. The current guideline updates the recommendations of the 2005 guideline, includes new recommendations for populations not previously addressed, and, where relevant, addresses the interpretation of nonlocalizing clinical symptoms in populations with a high prevalence of ASB. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0338",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0338_landmark_2014_aha_acc_hrs_guideline_for_the_management_of_patients_wi.md",
+   "snippet": "Title 2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: executive summary: a report of the American College of Cardiology/American Heart Association Task Force on practice guidelines and the Heart Rhythm So",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: executive summary: a report of the American College of Cardiology/American Heart Association Task Force on practice guidelines and the Heart Rhythm Society Authors January Craig T, Wann L Samuel, Alpert Joseph S, Calkins Hugh, Cigarroa Joaquin E, Cleveland Joseph C, Conti Jamie B, Ellinor Patrick T, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000000040 · PMID: 24682348 https://pubmed.ncbi.nlm.nih.gov/24682348/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1680회 · RCR 65.36 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0337",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / United European gastroenterology journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0337_landmark_european_society_for_the_study_of_coeliac_disease_esscd_guid.md",
+   "snippet": "Title European Society for the Study of Coeliac Disease (ESsCD) guideline for coeliac disease and other gluten related disorders Authors Al Toma Abdulbaqi, Volta Umberto, Auricchio Renata, Castillejo Gemma, Sanders David S, Cellier Christop",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / United European gastroenterology journal Title European Society for the Study of Coeliac Disease (ESsCD) guideline for coeliac disease and other gluten related disorders Authors Al Toma Abdulbaqi, Volta Umberto, Auricchio Renata, Castillejo Gemma, Sanders David S, Cellier Christophe, Mulder Chris J, Lundin Knut E A Journal / DOI United European gastroenterology journal · DOI: 10.1177/2050640619844125 · PMID: 31210940 https://pubmed.ncbi.nlm.nih.gov/31210940/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 670회 · RCR 40.12 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract This guideline presents recommendations for the management of coeliac disease (CD) and other gluten related disorders both in adults and children. There has been a substantial increase in the prevalence of CD over the last 50 years and many patients remain undiagnosed. Diagnostic testing, including serology and biopsy, should be performed on a gluten containing diet. The diagnosis of CD is based on a combination of clinical, serological and histopathological data. In a group of children the diagnosis may be made without biopsy if strict criteria are available. The treatment for CD is primarily a gluten free diet (GFD), which requires significant patient education, motivation and follow up. Slow responsiveness occurs frequently, particularly in those diagnosed in adulthood. Persistent or recurring symptoms necessitate a review of the original diagnosis, exclude alternative diagnoses, confirm dietary adherence (dietary review and serology) and follow up biopsy. In addition, evaluation to exclude complications of CD, such as refractory CD or lymphoma, should be performed. The guideline also deals with other gluten related disorders, such as dermatitis herpetiformis, which is a cutaneous manifestation of CD characterized by granular IgA deposits in the dermal papillae. The skin lesions clear with gluten withdrawal. Also, less well defined conditions such as non coeliac gluten sensitivity (NCGS) and gluten sensitive neurological manifestations, such as ataxia, have been addressed. Newer therapeutic modalities for CD are being studied in clinical trials but are not yet approved for use in practice. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0336",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0336_landmark_2017_acc_aha_aapa_abc_acpm_ags_apha_ash_aspc_nma_pcna_guidel.md",
+   "snippet": "Title 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults: Executive Summary: A Report of the American College of Cardiology/American Hea",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Circulation Title 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Authors Whelton Paul K, Carey Robert M, Aronow Wilbert S, Casey Donald E, Collins Karen J, Dennison Himmelfarb Cheryl, DePalma Sondra M, Gidding Samuel, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000000597 · PMID: 30354655 https://pubmed.ncbi.nlm.nih.gov/30354655/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 900회 · RCR 41.25 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0335",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0335_landmark_procalcitonin_as_a_diagnostic_test_for_sepsis_in_critically_.md",
+   "snippet": "Title Procalcitonin as a diagnostic test for sepsis in critically ill adults and after surgery or trauma: a systematic review and meta analysis Authors Uzzan Bernard, Cohen Régis, Nicolas Patrick, Cucherat Michel, Perret Gérard Yves Journal",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title Procalcitonin as a diagnostic test for sepsis in critically ill adults and after surgery or trauma: a systematic review and meta analysis Authors Uzzan Bernard, Cohen Régis, Nicolas Patrick, Cucherat Michel, Perret Gérard Yves Journal / DOI Critical care medicine · PMID: 16715031 https://pubmed.ncbi.nlm.nih.gov/16715031/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 524회 · RCR 16.17 (분야평균=1.0) · NIH 상위 백분위 98.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To quantify the accuracy of serum procalcitonin as a diagnostic test for sepsis, severe sepsis, or septic shock in adults in intensive care units or after surgery or trauma, alone and compared with C reactive protein. To draw and compare the summary receiver operating characteristics curves for procalcitonin and C reactive protein from the literature. DATA SOURCE: MEDLINE (keywords: procalcitonin, intensive care, sepsis, postoperative sepsis, trauma); screening of the literature. STUDY SELECTION: Meta analysis of all 49 published studies in medical, surgical, or polyvalent intensive care units or postoperative wards. Children, medical patients, and immunocompromised patients were excluded. DATA EXTRACTION: Thirty three studies fulfilled inclusion criteria (3,943 patients, 1,828 males, 922 females; mean age: 56.1 yrs; 1,825 patients with sepsis, severe sepsis, or septic shock; 1,545 with only systemic inflammatory response syndrome); eight studies could not be analyzed statistically. Global mortality rate was 29.3%. DATA SYNTHESIS: Global odds ratios for diagnosis of infection complicated by systemic inflammation were 15.7 for the 25 studies (2,966 patients) using procalcitonin (95% confidence interval, 9.1 27.1) and 5.4 for the 15 studies (1,322 patients) using C reactive protein (95% confidence interval, 3.2 9.2). The summary receiver operating characteristics curve for procalcitonin was better than for C reactive protein. In the 15 studies using both markers, the Q value (intersection of summary receiver operating characteristics curve with the diagonal line where sensitivity equals specificity) was significantly higher for procalcitonin than for C reactive protein (0.78 vs. 0.71, p = .02), the former test showing better accuracy. CONCLUSIONS: Procalcitonin represents a good biological diagnostic marker for sepsis, severe sepsis, or septic shock, difficult diagnoses in critically ill patients. Procalcitonin is superior to C reactive protein. Procalcitonin should be included in diagnostic guidelines for sepsis and in clinical practice in intensive care units. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0334",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Arthritis & rheumatology (Hoboken, N.J.)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0334_landmark_2015_american_college_of_rheumatology_guideline_for_the_trea.md",
+   "snippet": "Title 2015 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis Authors Singh Jasvinder A, Saag Kenneth G, Bridges S Louis, Akl Elie A, Bannuru Raveendhara R, Sullivan Matthew C, Vaysbrot Elizaveta, McNaughto",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Arthritis & rheumatology (Hoboken, N.J.) Title 2015 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis Authors Singh Jasvinder A, Saag Kenneth G, Bridges S Louis, Akl Elie A, Bannuru Raveendhara R, Sullivan Matthew C, Vaysbrot Elizaveta, McNaughton Christine, et al. Journal / DOI Arthritis & rheumatology (Hoboken, N.J.) · DOI: 10.1002/art.39480 · PMID: 26545940 https://pubmed.ncbi.nlm.nih.gov/26545940/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1699회 · RCR 77.59 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To develop a new evidence based, pharmacologic treatment guideline for rheumatoid arthritis (RA). METHODS: We conducted systematic reviews to synthesize the evidence for the benefits and harms of various treatment options. We used the Grading of Recommendations Assessment, Development and Evaluation (GRADE) methodology to rate the quality of evidence. We employed a group consensus process to grade the strength of recommendations (either strong or conditional). A strong recommendation indicates that clinicians are certain that the benefits of an intervention far outweigh the harms (or vice versa). A conditional recommendation denotes uncertainty over the balance of benefits and harms and/or more significant variability in patient values and preferences. RESULTS: The guideline covers the use of traditional disease modifying antirheumatic drugs (DMARDs), biologic agents, tofacitinib, and glucocorticoids in early (<6 months) and established (≥6 months) RA. In addition, it provides recommendations on using a treat to target approach, tapering and discontinuing medications, and the use of biologic agents and DMARDs in patients with hepatitis, congestive heart failure, malignancy, and serious infections. The guideline addresses the use of vaccines in patients starting/receiving DMARDs or biologic agents, screening for tuberculosis in patients starting/receiving biologic agents or tofacitinib, and laboratory monitoring for traditional DMARDs. The guideline includes 74 recommendations: 23% are strong and 77% are conditional. CONCLUSION: This RA guideline should serve as a tool for clinicians and patients (our two target audiences) for pharmacologic treatment decisions in commonly encountered clinical situations. These recommendations are not prescriptive, and the treatment decisions should be made by physicians and patients through a shared decision making process taking into account patients' values, preferences, and comorbidities. These recommendations should not be used to limit or deny access to therapies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0333",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Leukemia",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0333_landmark_international_myeloma_working_group_molecular_classification.md",
+   "snippet": "Title International Myeloma Working Group molecular classification of multiple myeloma: spotlight review Authors Fonseca R, Bergsagel P L, Drach J, Shaughnessy J, Gutierrez N, Stewart A K, Morgan G, Van Ness B, et al. Journal / DOI Leukemia",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Leukemia Title International Myeloma Working Group molecular classification of multiple myeloma: spotlight review Authors Fonseca R, Bergsagel P L, Drach J, Shaughnessy J, Gutierrez N, Stewart A K, Morgan G, Van Ness B, et al. Journal / DOI Leukemia · DOI: 10.1038/leu.2009.174 · PMID: 19798094 https://pubmed.ncbi.nlm.nih.gov/19798094/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 678회 · RCR 14.97 (분야평균=1.0) · NIH 상위 백분위 98.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Myeloma is a malignant proliferation of monoclonal plasma cells. Although morphologically similar, several subtypes of the disease have been identified at the genetic and molecular level. These genetic subtypes are associated with unique clinicopathological features and dissimilar outcome. At the top hierarchical level, myeloma can be divided into hyperdiploid and non hyperdiploid subtypes. The latter is mainly composed of cases harboring IgH translocations, generally associated with more aggressive clinical features and shorter survival. The three main IgH translocations in myeloma are the t(11;14)(q13;q32), t(4;14)(p16;q32) and t(14;16)(q32;q23). Trisomies and a more indolent form of the disease characterize hyperdiploid myeloma. A number of genetic progression factors have been identified including deletions of chromosomes 13 and 17 and abnormalities of chromosome 1 (1p deletion and 1q amplification). Other key drivers of cell survival and proliferation have also been identified such as nuclear factor B activating mutations and other deregulation factors for the cyclin dependent pathways regulators. Further understanding of the biological subtypes of the disease has come from the application of novel techniques such as gene expression profiling and array based comparative genomic hybridization. The combination of data arising from these studies and that previously elucidated through other mechanisms allows for most myeloma cases to be classified under one of several genetic subtypes. This paper proposes a framework for the classification of myeloma subtypes and provides recommendations for genetic testing. This group proposes that genetic testing needs to be incorporated into daily clinical practice and also as an essential component of all ongoing and future clinical trials. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0332",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0332_landmark_kdoqi_clinical_practice_guideline_for_hemodialysis_adequacy_.md",
+   "snippet": "Title KDOQI Clinical Practice Guideline for Hemodialysis Adequacy: 2015 update Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · DOI: 10.1053/j.aj",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guideline for Hemodialysis Adequacy: 2015 update Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · DOI: 10.1053/j.ajkd.2015.07.015 · PMID: 26498416 https://pubmed.ncbi.nlm.nih.gov/26498416/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 913회 · RCR 45.52 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The National Kidney Foundation's Kidney Disease Outcomes Quality Initiative (KDOQI) has provided evidence based guidelines for all stages of chronic kidney disease (CKD) and related complications since 1997. The 2015 update of the KDOQI Clinical Practice Guideline for Hemodialysis Adequacy is intended to assist practitioners caring for patients in preparation for and during hemodialysis. The literature reviewed for this update includes clinical trials and observational studies published between 2000 and March 2014. New topics include high frequency hemodialysis and risks; prescription flexibility in initiation timing, frequency, duration, and ultrafiltration rate; and more emphasis on volume and blood pressure control. Appraisal of the quality of the evidence and the strength of recommendations followed the Grading of Recommendation Assessment, Development, and Evaluation (GRADE) approach. Limitations of the evidence are discussed and specific suggestions are provided for future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0331",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Antimicrobial agents and chemotherapy",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0331_landmark_systematic_review_and_meta_analysis_of_the_efficacy_of_appro.md",
+   "snippet": "Title Systematic review and meta analysis of the efficacy of appropriate empiric antibiotic therapy for sepsis Authors Paul Mical, Shani Vered, Muchtar Eli, Kariv Galia, Robenshtok Eyal, Leibovici Leonard Journal / DOI Antimicrobial agents ",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Antimicrobial agents and chemotherapy Title Systematic review and meta analysis of the efficacy of appropriate empiric antibiotic therapy for sepsis Authors Paul Mical, Shani Vered, Muchtar Eli, Kariv Galia, Robenshtok Eyal, Leibovici Leonard Journal / DOI Antimicrobial agents and chemotherapy · DOI: 10.1128/AAC.00627 10 · PMID: 20733044 https://pubmed.ncbi.nlm.nih.gov/20733044/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 550회 · RCR 18.77 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Quantifying the benefit of early antibiotic treatment is crucial for decision making and can be assessed only in observational studies. We performed a systematic review of prospective studies reporting the effect of appropriate empirical antibiotic treatment on all cause mortality among adult inpatients with sepsis. Two reviewers independently extracted data. Risk of bias was assessed using the Newcastle Ottawa score. We calculated unadjusted odds ratios (ORs) with 95% confidence intervals for each study and extracted adjusted ORs, with variance, methods, and covariates being used for adjustment. ORs were pooled using random effects meta analysis. We examined the effects of methodological and clinical confounders on results through subgroup analysis or mixed effect meta regression. Seventy studies were included, of which 48 provided an adjusted OR for inappropriate empirical antibiotic treatment. Inappropriate empirical antibiotic treatment was associated with significantly higher mortality in the unadjusted and adjusted comparisons, with considerable heterogeneity occurring in both analyses (I(2) 70%). Study design, time of mortality assessment, the reporting methods of the multivariable models, and the covariates used for adjustment were significantly associated with effect size. Septic shock was the only clinical variable significantly affecting results (it was associated with higher ORs). Studies adjusting for background conditions and sepsis severity reported a pooled adjusted OR of 1.60 (95% confidence interval = 1.37 to 1.86; 26 studies; number needed to treat to prevent one fatal outcome, 10 patients [95% confidence interval = 8 to 15]; I(2) = 46.3%) given 34% mortality with inappropriate empirical treatment. Appropriate empirical antibiotic treatment is associated with a significant reduction in all cause mortality. However, the methods used in the observational studies significantly affect the effect size reported. Methods of observational studies assessing the effects of antibiotic treatment should be improved and standardized. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0330",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0330_landmark_acc_aha_esc_2006_guidelines_for_the_management_of_patients_w.md",
+   "snippet": "Title ACC/AHA/ESC 2006 Guidelines for the Management of Patients with Atrial Fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines and the European Society of Cardiology Co",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title ACC/AHA/ESC 2006 Guidelines for the Management of Patients with Atrial Fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines and the European Society of Cardiology Committee for Practice Guidelines (Writing Committee to Revise the 2001 Guidelines for the Management of Patients With Atrial Fibrillation): developed in collaboration with the European Heart Rhythm Association and the Heart Rhythm Society Authors Fuster Valentin, Rydén Lars E, Cannom David S, Crijns Harry J, Curtis Anne B, Ellenbogen Kenneth A, Halperin Jonathan L, Le Heuzey Jean Yves, et al. Journal / DOI Circulation · PMID: 16908781 https://pubmed.ncbi.nlm.nih.gov/16908781/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1947회 · RCR 54.93 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0329",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0329_landmark_diffuse_large_b_cell_lymphoma_dlbcl_esmo_clinical_practice_g.md",
+   "snippet": "Title Diffuse large B cell lymphoma (DLBCL): ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up Authors Tilly H, Gomes da Silva M, Vitolo U, Jack A, Meignan M, Lopez Guillermo A, Walewski J, André M, et al. Journal / D",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Diffuse large B cell lymphoma (DLBCL): ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up Authors Tilly H, Gomes da Silva M, Vitolo U, Jack A, Meignan M, Lopez Guillermo A, Walewski J, André M, et al. Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1093/annonc/mdv304 · PMID: 26314773 https://pubmed.ncbi.nlm.nih.gov/26314773/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 680회 · RCR 22.92 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0328",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0328_landmark_kdoqi_clinical_practice_guideline_for_diabetes_and_ckd_2012_.md",
+   "snippet": "Title KDOQI Clinical Practice Guideline for Diabetes and CKD: 2012 Update Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · DOI: 10.1053/j.ajkd.20",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guideline for Diabetes and CKD: 2012 Update Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · DOI: 10.1053/j.ajkd.2012.07.005 · PMID: 23067652 https://pubmed.ncbi.nlm.nih.gov/23067652/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 958회 · RCR 33.50 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The 2012 update of the Kidney Disease Outcomes Quality Initiative (KDOQI) Clinical Practice Guideline for Diabetes and Chronic Kidney Disease (CKD) is intended to assist the practitioner caring for patients with diabetes and CKD. Substantial high quality new evidence has emerged since the original 2007 KDOQI guideline that could significantly change recommendations for clinical practice. As such, revisions of prior guidelines are offered that specifically address hemoglobin A(1c) (HbA(1c)) targets, treatments to lower low density lipoprotein cholesterol (LDL C) levels, and use of angiotensin converting enzyme inhibitor (ACE I) and angiotensin receptor blocker (ARB) treatment in diabetic patients with and without albuminuria. Treatment approaches are addressed in each section and the stated guideline recommendations are based on systematic reviews of relevant trials. Appraisal of the quality of the evidence and the strength of recommendations followed the Grading of Recommendation Assessment, Development, and Evaluation (GRADE) approach. Limitations of the evidence are discussed and specific suggestions are provided for future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0327",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0327_landmark_prevention_of_perinatal_group_b_streptococcal_disease_revise.md",
+   "snippet": "Title Prevention of perinatal group B streptococcal disease. Revised guidelines from CDC Authors Schrag Stephanie, Gorwitz Rachel, Fultz Butts Kristi, Schuchat Anne Journal / DOI MMWR. Recommendations and reports : Morbidity and mortality w",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports Title Prevention of perinatal group B streptococcal disease. Revised guidelines from CDC Authors Schrag Stephanie, Gorwitz Rachel, Fultz Butts Kristi, Schuchat Anne Journal / DOI MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports · PMID: 12211284 https://pubmed.ncbi.nlm.nih.gov/12211284/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 605회 · RCR 19.45 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Group B streptococcus (GBS) remains a leading cause of serious neonatal infection despite great progress in perinatal GBS disease prevention in the 1990s. In 1996, CDC, in collaboration with other agencies, published guidelines for the prevention of perinatal group B streptococcal disease (CDC. Prevention of perinatal group B streptococcal disease: a public health perspective. MMWR 1996;45[RR 7]:1 24). Data collected after the issuance of the 1996 guidelines prompted reevaluation of prevention strategies at a meeting of clinical and public health representatives in November 2001. This report replaces CDC's 1996 guidelines. The recommendations are based on available evidence and expert opinion where sufficient evidence was lacking. Although many of the recommendations in the 2002 guidelines are the same as those in 1996, they include some key changes: Recommendation of universal prenatal screening for vaginal and rectal GBS colonization of all pregnant women at 35 37 weeks' gestation, based on recent documentation in a large retrospective cohort study of a strong protective effect of this culture based screening strategy relative to the risk based strategy Updated prophylaxis regimens for women with penicillin allergy Detailed instruction on prenatal specimen collection and expanded methods of GBS culture processing, including instructions on antimicrobial susceptibility testing Recommendation against routine intrapartum antibiotic prophylaxis for GBS colonized women undergoing planned cesarean deliveries who have not begun labor or had rupture of membranes A suggested algorithm for management of patients with threatened preterm delivery An updated algorithm for management of newborns exposed to intrapartum antibiotic prophylaxis Although universal screening for GBS colonization is anticipated to result in further reductions in the burden of GBS disease, the need to monitor for potential adverse consequences of intrapartum antibiotic use, such as emergence of bacterial antimicrobial resistance or increased incidence or severity of non GBS neonatal pathogens, continues, and intrapartum antibiotics are still viewed as an interim strategy until GBS vaccines achieve licensure. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0326",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0326_landmark_2017_acc_aha_hfsa_focused_update_of_the_2013_accf_aha_guidel.md",
+   "snippet": "Title 2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Fa",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Failure Society of America Authors Yancy Clyde W, Jessup Mariell, Bozkurt Biykem, Butler Javed, Casey Donald E, Colvin Monica M, Drazner Mark H, Filippatos Gerasimos S, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000000509 · PMID: 28455343 https://pubmed.ncbi.nlm.nih.gov/28455343/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2103회 · RCR 91.83 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0325",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0325_landmark_recommendations_for_the_use_of_wbc_growth_factors_american_s.md",
+   "snippet": "Title Recommendations for the Use of WBC Growth Factors: American Society of Clinical Oncology Clinical Practice Guideline Update Authors Smith Thomas J, Bohlke Kari, Lyman Gary H, Carson Kenneth R, Crawford Jeffrey, Cross Scott J, Goldberg",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Recommendations for the Use of WBC Growth Factors: American Society of Clinical Oncology Clinical Practice Guideline Update Authors Smith Thomas J, Bohlke Kari, Lyman Gary H, Carson Kenneth R, Crawford Jeffrey, Cross Scott J, Goldberg John M, Khatcheressian James L, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.2015.62.3488 · PMID: 26169616 https://pubmed.ncbi.nlm.nih.gov/26169616/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 681회 · RCR 22.65 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To update the 2006 American Society of Clinical Oncology guideline on the use of hematopoietic colony stimulating factors (CSFs). METHODS: The American Society of Clinical Oncology convened an Update Committee and conducted a systematic review of randomized clinical trials, meta analyses, and systematic reviews from October 2005 through September 2014. Guideline recommendations were based on the review of the evidence by the Update Committee. RESULTS: Changes to previous recommendations include the addition of tbo filgrastim and filgrastim sndz, moderation of the recommendation regarding routine use of CSFs in older patients with diffuse aggressive lymphoma, and addition of recommendations against routine dose dense chemotherapy in lymphoma and in favor of high dose intensity chemotherapy in urothelial cancer. The Update Committee did not address recommendations regarding use of CSFs in acute myeloid leukemia or myelodysplastic syndromes in adults. RECOMMENDATIONS: Prophylactic use of CSFs to reduce the risk of febrile neutropenia is warranted when the risk of febrile neutropenia is approximately 20% or higher and no other equally effective and safe regimen that does not require CSFs is available. Primary prophylaxis is recommended for the prevention of febrile neutropenia in patients who are at high risk on the basis of age, medical history, disease characteristics, and myelotoxicity of the chemotherapy regimen. Dose dense regimens that require CSFs should only be used within an appropriately designed clinical trial or if supported by convincing efficacy data. Current recommendations for the management of patients exposed to lethal doses of total body radiotherapy, but not doses high enough to lead to certain death as a result of injury to other organs, include the prompt administration of CSFs. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0324",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0324_landmark_resistant_hypertension_diagnosis_evaluation_and_treatment_a_.md",
+   "snippet": "Title Resistant hypertension: diagnosis, evaluation, and treatment: a scientific statement from the American Heart Association Professional Education Committee of the Council for High Blood Pressure Research Authors Calhoun David A, Jones D",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Circulation Title Resistant hypertension: diagnosis, evaluation, and treatment: a scientific statement from the American Heart Association Professional Education Committee of the Council for High Blood Pressure Research Authors Calhoun David A, Jones Daniel, Textor Stephen, Goff David C, Murphy Timothy P, Toto Robert D, White Anthony, Cushman William C, et al. Journal / DOI Circulation · DOI: 10.1161/CIRCULATIONAHA.108.189141 · PMID: 18574054 https://pubmed.ncbi.nlm.nih.gov/18574054/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 969회 · RCR 27.86 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Resistant hypertension is a common clinical problem faced by both primary care clinicians and specialists. While the exact prevalence of resistant hypertension is unknown, clinical trials suggest that it is not rare, involving perhaps 20% to 30% of study participants. As older age and obesity are 2 of the strongest risk factors for uncontrolled hypertension, the incidence of resistant hypertension will likely increase as the population becomes more elderly and heavier. The prognosis of resistant hypertension is unknown, but cardiovascular risk is undoubtedly increased as patients often have a history of long standing, severe hypertension complicated by multiple other cardiovascular risk factors such as obesity, sleep apnea, diabetes, and chronic kidney disease. The diagnosis of resistant hypertension requires use of good blood pressure technique to confirm persistently elevated blood pressure levels. Pseudoresistance, including lack of blood pressure control secondary to poor medication adherence or white coat hypertension, must be excluded. Resistant hypertension is almost always multifactorial in etiology. Successful treatment requires identification and reversal of lifestyle factors contributing to treatment resistance; diagnosis and appropriate treatment of secondary causes of hypertension; and use of effective multidrug regimens. As a subgroup, patients with resistant hypertension have not been widely studied. Observational assessments have allowed for identification of demographic and lifestyle characteristics associated with resistant hypertension, and the role of secondary causes of hypertension in promoting treatment resistance is well documented; however, identification of broader mechanisms of treatment resistance is lacking. In particular, attempts to elucidate potential genetic causes of resistant hypertension have been limited. Recommendations for the pharmacological treatment of resistant hypertension remain largely empiric due to the lack of systematic assessments of 3 or 4 drug combinations. Studies of resistant hypertension are limited by the high cardiovascular risk of patients within this subgroup, which generally precludes safe withdrawal of medications; the presence of multiple disease processes (eg, sleep apnea, diabetes, chronic kidney disease, atherosclerotic disease) and their associated medical therapies, which confound interpretation of study results; and the difficulty in enrolling large numbers of study participants. Expanding our understanding of the causes of resistant hypertension and thereby potentially allowing for more effective prevention and/or treatment will be essential to improve the long term clinical management of this disorder. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0323",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Lancet. Infectious diseases",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0323_landmark_accuracy_of_procalcitonin_for_sepsis_diagnosis_in_critically.md",
+   "snippet": "Title Accuracy of procalcitonin for sepsis diagnosis in critically ill patients: systematic review and meta analysis Authors Tang Benjamin M P, Eslick Guy D, Craig Jonathan C, McLean Anthony S Journal / DOI The Lancet. Infectious diseases ·",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / The Lancet. Infectious diseases Title Accuracy of procalcitonin for sepsis diagnosis in critically ill patients: systematic review and meta analysis Authors Tang Benjamin M P, Eslick Guy D, Craig Jonathan C, McLean Anthony S Journal / DOI The Lancet. Infectious diseases · PMID: 17317602 https://pubmed.ncbi.nlm.nih.gov/17317602/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 616회 · RCR 18.14 (분야평균=1.0) · NIH 상위 백분위 99.1. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Procalcitonin is widely reported as a useful biochemical marker to differentiate sepsis from other non infectious causes of systemic inflammatory response syndrome. In this systematic review, we estimated the diagnostic accuracy of procalcitonin in sepsis diagnosis in critically ill patients. 18 studies were included in the review. Overall, the diagnostic performance of procalcitonin was low, with mean values of both sensitivity and specificity being 71% (95% CI 67 76) and an area under the summary receiver operator characteristic curve of 0.78 (95% CI 0.73 0.83). Studies were grouped into phase 2 studies (n=14) and phase 3 studies (n=4) by use of Sackett and Haynes' classification. Phase 2 studies had a low pooled diagnostic odds ratio of 7.79 (95% CI 5.86 10.35). Phase 3 studies showed significant heterogeneity because of variability in sample size (meta regression coefficient 0.592, p=0.017), with diagnostic performance upwardly biased in smaller studies, but moving towards a null effect in larger studies. Procalcitonin cannot reliably differentiate sepsis from other non infectious causes of systemic inflammatory response syndrome in critically ill adult patients. The findings from this study do not lend support to the widespread use of the procalcitonin test in critical care settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0322",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0322_landmark_acc_aha_2005_guideline_update_for_the_diagnosis_and_manageme.md",
+   "snippet": "Title ACC/AHA 2005 Guideline Update for the Diagnosis and Management of Chronic Heart Failure in the Adult: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines (Writing Committee to Up",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title ACC/AHA 2005 Guideline Update for the Diagnosis and Management of Chronic Heart Failure in the Adult: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines (Writing Committee to Update the 2001 Guidelines for the Evaluation and Management of Heart Failure): developed in collaboration with the American College of Chest Physicians and the International Society for Heart and Lung Transplantation: endorsed by the Heart Rhythm Society Authors Hunt Sharon Ann, Abraham William T, Chin Marshall H, Feldman Arthur M, Francis Gary S, Ganiats Theodore G, Jessup Mariell, Konstam Marvin A, et al. Journal / DOI Circulation · PMID: 16160202 https://pubmed.ncbi.nlm.nih.gov/16160202/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2147회 · RCR 58.14 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0321",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Cancer",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0321_landmark_anemia_as_an_independent_prognostic_factor_for_survival_in_p.md",
+   "snippet": "Title Anemia as an independent prognostic factor for survival in patients with cancer: a systemic, quantitative review Authors Caro J J, Salas M, Ward A, Goss G Journal / DOI Cancer · PMID: 11413508 https://pubmed.ncbi.nlm.nih.gov/11413508/",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Cancer Title Anemia as an independent prognostic factor for survival in patients with cancer: a systemic, quantitative review Authors Caro J J, Salas M, Ward A, Goss G Journal / DOI Cancer · PMID: 11413508 https://pubmed.ncbi.nlm.nih.gov/11413508/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 725회 · RCR 17.34 (분야평균=1.0) · NIH 상위 백분위 99.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Anemia is common in cancer patients, although the prevalence is influenced both by the type of malignancy and the choice of treatment. Individual studies have compared the survival of patients with and without anemia and have shown reduced survival times in patients with various malignancies, including carcinoma of the lung, cervix, head and neck, prostate, lymphoma, and multiple myeloma. The objective of this study was to systematically review, to summarize, and to obtain an overall estimate of the effect of anemia on survival in patients with malignant disease. METHODS: A comprehensive literature review was carried out using the MEDLINE data base and reviewing the reference lists from published studies. Two hundred papers were identified. Of these, 60 papers that reported the survival of cancer patients according to either hemoglobin levels or the presence of anemia were included. Among these papers, 25% related to patients with lung carcinoma, 17% related to patients with head and neck carcinoma, 12% related to patients with multiple myeloma, 10% related to patients with prostate carcinoma, 8% related to patients with cervicouterine carcinoma, 7% related to patients with leukemia, 5% related to patients with lymphoma, and 16% related to patients with other types of malignancies. RESULTS: The relative risk of death increased by 19% (95% confidence interval, 10 29%) in anemic patients with lung carcinoma, by 75% (37 123%) in anemic patients with head and neck carcinoma, by 47% (21 78%) in anemic patients with prostate carcinoma, and by 67% (30 113%) in anemic patients with lymphoma. The overall estimate increase in risk was 65% (54 77%). CONCLUSIONS: Anemia is associated with shorter survival times for patients with lung carcinoma, cervicouterine carcinoma, head and neck carcinoma, prostate carcinoma, lymphoma, and multiple myeloma. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0320",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0320_landmark_kdigo_2020_clinical_practice_guideline_for_diabetes_manageme.md",
+   "snippet": "Title KDIGO 2020 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2020.06.01",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title KDIGO 2020 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2020.06.019 · PMID: 32998798 https://pubmed.ncbi.nlm.nih.gov/32998798/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1012회 · RCR 63.68 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0319",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0319_landmark_recommendations_for_the_diagnosis_and_management_of_corticos.md",
+   "snippet": "Title Recommendations for the diagnosis and management of corticosteroid insufficiency in critically ill adult patients: consensus statements from an international task force by the American College of Critical Care Medicine Authors Marik P",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title Recommendations for the diagnosis and management of corticosteroid insufficiency in critically ill adult patients: consensus statements from an international task force by the American College of Critical Care Medicine Authors Marik Paul E, Pastores Stephen M, Annane Djillali, Meduri G Umberto, Sprung Charles L, Arlt Wiebke, Keh Didier, Briegel Josef, et al. Journal / DOI Critical care medicine · DOI: 10.1097/CCM.0b013e31817603ba · PMID: 18496365 https://pubmed.ncbi.nlm.nih.gov/18496365/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 629회 · RCR 19.25 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To develop consensus statements for the diagnosis and management of corticosteroid insufficiency in critically ill adult patients. PARTICIPANTS: A multidisciplinary, multispecialty task force of experts in critical care medicine was convened from the membership of the Society of Critical Care Medicine and the European Society of Intensive Care Medicine. In addition, international experts in endocrinology were invited to participate. DESIGN/METHODS: The task force members reviewed published literature and provided expert opinion from which the consensus was derived. The consensus statements were developed using a modified Delphi methodology. The strength of each recommendation was quantified using the Modified GRADE system, which classifies recommendations as strong (grade 1) or weak (grade 2) and the quality of evidence as high (grade A), moderate (grade B), or low (grade C) based on factors that include the study design, the consistency of the results, and the directness of the evidence. RESULTS: The task force coined the term critical illness related corticosteroid insufficiency to describe the dysfunction of the hypothalamic pituitary adrenal axis that occurs during critical illness. Critical illness related corticosteroid insufficiency is caused by adrenal insufficiency together with tissue corticosteroid resistance and is characterized by an exaggerated and protracted proinflammatory response. Critical illness related corticosteroid insufficiency should be suspected in hypotensive patients who have responded poorly to fluids and vasopressor agents, particularly in the setting of sepsis. At this time, the diagnosis of tissue corticosteroid resistance remains problematic. Adrenal insufficiency in critically ill patients is best made by a delta total serum cortisol of < 9 microg/dL after adrenocorticotrophic hormone (250 microg) administration or a random total cortisol of < 10 microg/dL. The benefit of treatment with glucocorticoids at this time seems to be limited to patients with vasopressor dependent septic shock and patients with early severe acute respiratory distress syndrome (PaO2/FiO2 of < 200 and within 14 days of onset). The adrenocorticotrophic hormone stimulation test should not be used to identify those patients with septic shock or acute respiratory distress syndrome who should receive glucocorticoids. Hydrocortisone in a dose of 200 mg/day in four divided doses or as a continuous infusion in a dose of 240 mg/day (10 mg/hr) for or = 7 days is recommended for septic shock. Methylprednisolone in a dose of 1 mg x kg( 1) x day( 1) for or = 14 days is recommended in patients with severe early acute respiratory distress syndrome. Glucocorticoids should be weaned and not stopped abruptly. Reinstitution of treatment should be considered with recurrence of signs of sepsis, hypotension, or worsening oxygenation. Dexamethasone is not recommended to treat critical illness related corticosteroid insufficiency. The role of glucocorticoids in the management of patients with community acquired pneumonia, liver failure, pancreatitis, those undergoing cardiac surgery, and other groups of critically ill patients requires further investigation. CONCLUSION: Evidence linked consensus statements with regard to the diagnosis and management of corticosteroid deficiency in critically ill patients have been developed by a multidisciplinary, multispecialty task force. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0318",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of heart failure",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0318_landmark_esc_guidelines_for_the_diagnosis_and_treatment_of_acute_and_.md",
+   "snippet": "Title ESC guidelines for the diagnosis and treatment of acute and chronic heart failure 2012: The Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2012 of the European Society of Cardiology. Developed in collabo",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European journal of heart failure Title ESC guidelines for the diagnosis and treatment of acute and chronic heart failure 2012: The Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2012 of the European Society of Cardiology. Developed in collaboration with the Heart Failure Association (HFA) of the ESC Authors McMurray John J V, Adamopoulos Stamatis, Anker Stefan D, Auricchio Angelo, Böhm Michael, Dickstein Kenneth, Falk Volkmar, Filippatos Gerasimos, et al. Journal / DOI European journal of heart failure · DOI: 10.1093/eurjhf/hfs105 · PMID: 22828712 https://pubmed.ncbi.nlm.nih.gov/22828712/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2186회 · RCR 77.86 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0317",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of allergy and clinical immunology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0317_landmark_allergen_immunotherapy_a_practice_parameter_third_update.md",
+   "snippet": "Title Allergen immunotherapy: a practice parameter third update Authors Cox Linda, Nelson Harold, Lockey Richard, Calabria Christopher, Chacko Thomas, Finegold Ira, Nelson Michael, Weber Richard, et al. Journal / DOI The Journal of allergy ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / The Journal of allergy and clinical immunology Title Allergen immunotherapy: a practice parameter third update Authors Cox Linda, Nelson Harold, Lockey Richard, Calabria Christopher, Chacko Thomas, Finegold Ira, Nelson Michael, Weber Richard, et al. Journal / DOI The Journal of allergy and clinical immunology · DOI: 10.1016/j.jaci.2010.09.034 · PMID: 21122901 https://pubmed.ncbi.nlm.nih.gov/21122901/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 845회 · RCR 31.04 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0316",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0316_landmark_kdigo_2021_clinical_practice_guideline_for_the_management_of.md",
+   "snippet": "Title KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) Blood Pressure Work Group Journal / DOI Kidney international · DOI: 10.101",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) Blood Pressure Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2020.11.003 · PMID: 33637192 https://pubmed.ncbi.nlm.nih.gov/33637192/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1069회 · RCR 86.43 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0315",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0315_landmark_clinical_practice_parameters_for_hemodynamic_support_of_pedi.md",
+   "snippet": "Title Clinical practice parameters for hemodynamic support of pediatric and neonatal septic shock: 2007 update from the American College of Critical Care Medicine Authors Brierley Joe, Carcillo Joseph A, Choong Karen, Cornell Tim, Decaen Al",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title Clinical practice parameters for hemodynamic support of pediatric and neonatal septic shock: 2007 update from the American College of Critical Care Medicine Authors Brierley Joe, Carcillo Joseph A, Choong Karen, Cornell Tim, Decaen Allan, Deymann Andreas, Doctor Allan, Davis Alan, et al. Journal / DOI Critical care medicine · DOI: 10.1097/CCM.0b013e31819323c6 · PMID: 19325359 https://pubmed.ncbi.nlm.nih.gov/19325359/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 645회 · RCR 23.12 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: The Institute of Medicine calls for the use of clinical guidelines and practice parameters to promote \"best practices\" and to improve patient outcomes. OBJECTIVE: 2007 update of the 2002 American College of Critical Care Medicine Clinical Guidelines for Hemodynamic Support of Neonates and Children with Septic Shock. PARTICIPANTS: Society of Critical Care Medicine members with special interest in neonatal and pediatric septic shock were identified from general solicitation at the Society of Critical Care Medicine Educational and Scientific Symposia (2001 2006). METHODS: The Pubmed/MEDLINE literature database (1966 2006) was searched using the keywords and phrases: sepsis, septicemia, septic shock, endotoxemia, persistent pulmonary hypertension, nitric oxide, extracorporeal membrane oxygenation (ECMO), and American College of Critical Care Medicine guidelines. Best practice centers that reported best outcomes were identified and their practices examined as models of care. Using a modified Delphi method, 30 experts graded new literature. Over 30 additional experts then reviewed the updated recommendations. The document was subsequently modified until there was greater than 90% expert consensus. RESULTS: The 2002 guidelines were widely disseminated, translated into Spanish and Portuguese, and incorporated into Society of Critical Care Medicine and AHA sanctioned recommendations. Centers that implemented the 2002 guidelines reported best practice outcomes (hospital mortality 1% 3% in previously healthy, and 7% 10% in chronically ill children). Early use of 2002 guidelines was associated with improved outcome in the community hospital emergency department (number needed to treat = 3.3) and tertiary pediatric intensive care setting (number needed to treat = 3.6); every hour that went by without guideline adherence was associated with a 1.4 fold increased mortality risk. The updated 2007 guidelines continue to recognize an increased likelihood that children with septic shock, compared with adults, require 1) proportionally larger quantities of fluid, 2) inotrope and vasodilator therapies, 3) hydrocortisone for absolute adrenal insufficiency, and 4) ECMO for refractory shock. The major new recommendation in the 2007 update is earlier use of inotrope support through peripheral access until central access is attained. CONCLUSION: The 2007 update continues to emphasize early use of age specific therapies to attain time sensitive goals, specifically recommending 1) first hour fluid resuscitation and inotrope therapy directed to goals of threshold heart rates, normal blood pressure, and capillary refill <or=2 secs, and 2) subsequent intensive care unit hemodynamic support directed to goals of central venous oxygen saturation 70% and cardiac index 3.3 6.0 L/min/m. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0314",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0314_landmark_2014_esc_guidelines_on_the_diagnosis_and_management_of_acute.md",
+   "snippet": "Title 2014 ESC guidelines on the diagnosis and management of acute pulmonary embolism Authors Konstantinides Stavros V, Torbicki Adam, Agnelli Giancarlo, Danchin Nicolas, Fitzmaurice David, Galiè Nazzareno, Gibbs J Simon R, Huisman Menno V,",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2014 ESC guidelines on the diagnosis and management of acute pulmonary embolism Authors Konstantinides Stavros V, Torbicki Adam, Agnelli Giancarlo, Danchin Nicolas, Fitzmaurice David, Galiè Nazzareno, Gibbs J Simon R, Huisman Menno V, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehu283 · PMID: 25173341 https://pubmed.ncbi.nlm.nih.gov/25173341/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2206회 · RCR 91.91 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0313",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0313_landmark_european_society_of_clinical_microbiology_and_infectious_dis.md",
+   "snippet": "Title European Society of Clinical Microbiology and Infectious Diseases: update of the treatment guidance document for Clostridium difficile infection Authors Debast S B, Bauer M P, Kuijper E J, European Society of Clinical Microbiology and",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases Title European Society of Clinical Microbiology and Infectious Diseases: update of the treatment guidance document for Clostridium difficile infection Authors Debast S B, Bauer M P, Kuijper E J, European Society of Clinical Microbiology and Infectious Diseases Journal / DOI Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases · DOI: 10.1111/1469 0691.12418 · PMID: 24118601 https://pubmed.ncbi.nlm.nih.gov/24118601/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 846회 · RCR 34.39 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract In 2009 the first European Society of Clinical Microbiology and Infection (ESCMID) treatment guidance document for Clostridium difficile infection (CDI) was published. The guideline has been applied widely in clinical practice. In this document an update and review on the comparative effectiveness of the currently available treatment modalities of CDI is given, thereby providing evidence based recommendations on this issue. A computerized literature search was carried out to investigate randomized and non randomized trials investigating the effect of an intervention on the clinical outcome of CDI. The Grades of Recommendation Assessment, Development and Evaluation (GRADE) system was used to grade the strength of our recommendations and the quality of the evidence. The ESCMID and an international team of experts from 11 European countries supported the process. To improve clinical guidance in the treatment of CDI, recommendations are specified for various patient groups, e.g. initial non severe disease, severe CDI, first recurrence or risk for recurrent disease, multiple recurrences and treatment of CDI when oral administration is not possible. Treatment options that are reviewed include: antibiotics, toxin binding resins and polymers, immunotherapy, probiotics, and faecal or bacterial intestinal transplantation. Except for very mild CDI that is clearly induced by antibiotic usage antibiotic treatment is advised. The main antibiotics that are recommended are metronidazole, vancomycin and fidaxomicin. Faecal transplantation is strongly recommended for multiple recurrent CDI. In case of perforation of the colon and/or systemic inflammation and deteriorating clinical condition despite antibiotic therapy, total abdominal colectomy or diverting loop ileostomy combined with colonic lavage is recommended. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0312",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Hypertension (Dallas, Tex. : 1979)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0312_landmark_resistant_hypertension_diagnosis_evaluation_and_treatment_a_.md",
+   "snippet": "Title Resistant hypertension: diagnosis, evaluation, and treatment. A scientific statement from the American Heart Association Professional Education Committee of the Council for High Blood Pressure Research Authors Calhoun David A, Jones D",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Hypertension (Dallas, Tex. : 1979) Title Resistant hypertension: diagnosis, evaluation, and treatment. A scientific statement from the American Heart Association Professional Education Committee of the Council for High Blood Pressure Research Authors Calhoun David A, Jones Daniel, Textor Stephen, Goff David C, Murphy Timothy P, Toto Robert D, White Anthony, Cushman William C, et al. Journal / DOI Hypertension (Dallas, Tex. : 1979) · DOI: 10.1161/HYPERTENSIONAHA.108.189141 · PMID: 18391085 https://pubmed.ncbi.nlm.nih.gov/18391085/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1114회 · RCR 31.99 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Resistant hypertension is a common clinical problem faced by both primary care clinicians and specialists. While the exact prevalence of resistant hypertension is unknown, clinical trials suggest that it is not rare, involving perhaps 20% to 30% of study participants. As older age and obesity are 2 of the strongest risk factors for uncontrolled hypertension, the incidence of resistant hypertension will likely increase as the population becomes more elderly and heavier. The prognosis of resistant hypertension is unknown, but cardiovascular risk is undoubtedly increased as patients often have a history of long standing, severe hypertension complicated by multiple other cardiovascular risk factors such as obesity, sleep apnea, diabetes, and chronic kidney disease. The diagnosis of resistant hypertension requires use of good blood pressure technique to confirm persistently elevated blood pressure levels. Pseudoresistance, including lack of blood pressure control secondary to poor medication adherence or white coat hypertension, must be excluded. Resistant hypertension is almost always multifactorial in etiology. Successful treatment requires identification and reversal of lifestyle factors contributing to treatment resistance; diagnosis and appropriate treatment of secondary causes of hypertension; and use of effective multidrug regimens. As a subgroup, patients with resistant hypertension have not been widely studied. Observational assessments have allowed for identification of demographic and lifestyle characteristics associated with resistant hypertension, and the role of secondary causes of hypertension in promoting treatment resistance is well documented; however, identification of broader mechanisms of treatment resistance is lacking. In particular, attempts to elucidate potential genetic causes of resistant hypertension have been limited. Recommendations for the pharmacological treatment of resistant hypertension remain largely empiric due to the lack of systematic assessments of 3 or 4 drug combinations. Studies of resistant hypertension are limited by the high cardiovascular risk of patients within this subgroup, which generally precludes safe withdrawal of medications; the presence of multiple disease processes (eg, sleep apnea, diabetes, chronic kidney disease, atherosclerotic disease) and their associated medical therapies, which confound interpretation of study results; and the difficulty in enrolling large numbers of study participants. Expanding our understanding of the causes of resistant hypertension and thereby potentially allowing for more effective prevention and/or treatment will be essential to improve the long term clinical management of this disorder. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0311",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care (London, England)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0311_landmark_mortality_in_sepsis_and_septic_shock_in_europe_north_america.md",
+   "snippet": "Title Mortality in sepsis and septic shock in Europe, North America and Australia between 2009 and 2019 results from a systematic review and meta analysis Authors Bauer Michael, Gerlach Herwig, Vogelmann Tobias, Preissing Franziska, Stiefel",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care (London, England) Title Mortality in sepsis and septic shock in Europe, North America and Australia between 2009 and 2019 results from a systematic review and meta analysis Authors Bauer Michael, Gerlach Herwig, Vogelmann Tobias, Preissing Franziska, Stiefel Julia, Adam Daniel Journal / DOI Critical care (London, England) · DOI: 10.1186/s13054 020 02950 2 · PMID: 32430052 https://pubmed.ncbi.nlm.nih.gov/32430052/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 659회 · RCR 41.22 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Sepsis and septic shock remain drivers for mortality in critically ill patients. The heterogeneity of the syndrome hinders the generation of reproducible numbers on mortality risks. Consequently, mortality rates range from 15 to 56%. We aimed to update and extend the existing knowledge from meta analyses and estimate 30 and 90 day mortality rates for sepsis and septic shock separately, stratify rates by region and study type and assess mortality rates across different sequential organ failure assessment (SOFA) scores. METHODS: We performed a systematic review of articles published in PubMed or in the Cochrane Database, between 2009 and 2019 in English language including interventional and observational studies. A meta analysis of pooled 28/30 and 90 day mortality rated separately for sepsis and septic shock was done using a random effects model. Time trends were assessed via Joinpoint methodology and for the assessment of mortality rate over different SOFA scores, and linear regression was applied. RESULTS: Four thousand five hundred records were identified. After title/abstract screening, 783 articles were assessed in full text for eligibility. Of those, 170 studies were included. Average 30 day septic shock mortality was 34.7% (95% CI 32.6 36.9%), and 90 day septic shock mortality was 38.5% (95% CI 35.4 41.5%). Average 30 day sepsis mortality was 24.4% (95% CI 21.5 27.2%), and 90 day sepsis mortality was 32.2% (95% CI 27.0 37.5%). Estimated mortality rates from RCTs were below prospective and retrospective cohort studies. Rates varied between regions, with 30 day septic shock mortality being 33.7% (95% CI 31.5 35.9) in North America, 32.5% (95% CI 31.7 33.3) in Europe and 26.4% (95% CI 18.1 34.6) in Australia. A statistically significant decrease of 30 day septic shock mortality rate was found between 2009 and 2011, but not after 2011. Per 1 point increase of the average SOFA score, average mortality increased by 1.8 3.3%. CONCLUSION: Trends of lower sepsis and continuous septic shock mortality rates over time and regional disparities indicate a remaining unmet need for improving sepsis management. Further research is needed to investigate how trends in the burden of disease influence mortality rates in sepsis and septic shock at 30 and 90 day mortality over time. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0310",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0310_landmark_2023_acc_aha_accp_hrs_guideline_for_the_diagnosis_and_manage.md",
+   "snippet": "Title 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Joglar José A, ",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Joglar José A, Chung Mina K, Armbruster Anastasia L, Benjamin Emelia J, Chyou Janice Y, Cronin Edmond M, Deswal Anita, Eckhardt Lee L, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000001193 · PMID: 38033089 https://pubmed.ncbi.nlm.nih.gov/38033089/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2243회 · RCR 505.02 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract AIM: The \"2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation\" provides recommendations to guide clinicians in the treatment of patients with atrial fibrillation. METHODS: A comprehensive literature search was conducted from May 12, 2022, to November 3, 2022, encompassing studies, reviews, and other evidence conducted on human subjects that were published in English from PubMed, EMBASE, the Cochrane Library, the Agency for Healthcare Research and Quality, and other selected databases relevant to this guideline. Additional relevant studies, published through November 2022, during the guideline writing process, were also considered by the writing committee and added to the evidence tables, where appropriate. STRUCTURE: Atrial fibrillation is the most sustained common arrhythmia, and its incidence and prevalence are increasing in the United States and globally. Recommendations from the \"2014 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation\" and the \"2019 AHA/ACC/HRS Focused Update of the 2014 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation\" have been updated with new evidence to guide clinicians. In addition, new recommendations addressing atrial fibrillation and thromboembolic risk assessment, anticoagulation, left atrial appendage occlusion, atrial fibrillation catheter or surgical ablation, and risk factor modification and atrial fibrillation prevention have been developed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0309",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0309_landmark_evolving_concepts_in_the_management_of_chronic_myeloid_leuke.md",
+   "snippet": "Title Evolving concepts in the management of chronic myeloid leukemia: recommendations from an expert panel on behalf of the European LeukemiaNet Authors Baccarani Michele, Saglio Giuseppe, Goldman John, Hochhaus Andreas, Simonsson Bengt, A",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Blood Title Evolving concepts in the management of chronic myeloid leukemia: recommendations from an expert panel on behalf of the European LeukemiaNet Authors Baccarani Michele, Saglio Giuseppe, Goldman John, Hochhaus Andreas, Simonsson Bengt, Appelbaum Frederick, Apperley Jane, Cervantes Francisco, et al. Journal / DOI Blood · PMID: 16709930 https://pubmed.ncbi.nlm.nih.gov/16709930/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 957회 · RCR 23.52 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The introduction of imatinib mesylate (IM) has revolutionized the treatment of chronic myeloid leukemia (CML). Although experience is too limited to permit evidence based evaluation of survival, the available data fully justify critical reassessment of CML management. The panel therefore reviewed treatment of CML since 1998. It confirmed the value of IM (400 mg/day) and of conventional allogeneic hematopoietic stem cell transplantation (alloHSCT). It recommended that the preferred initial treatment for most patients newly diagnosed in chronic phase should now be 400 mg IM daily. A dose increase of IM, alloHSCT, or investigational treatments were recommended in case of failure, and could be considered in case of suboptimal response. Failure was defined at 3 months (no hematologic response [HR]), 6 months (incomplete HR or no cytogenetic response [CgR]), 12 months (less than partial CgR [Philadelphia chromosome positive (Ph(+)) 35%]), 18 months (less than complete CgR), and in case of HR or CgR loss, or appearance of highly IM resistant BCR ABL mutations. Suboptimal response was defined at 3 months (incomplete HR), 6 months (less than partial CgR), 12 months (less than complete CgR), 18 months (less than major molecular response [MMolR]), and, in case of MMolR loss, other mutations or other chromosomal abnormalities. The importance of regular monitoring at experienced centers was highlighted. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0308",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0308_landmark_kdoqi_clinical_practice_guidelines_and_clinical_practice_rec.md",
+   "snippet": "Title KDOQI Clinical Practice Guidelines and Clinical Practice Recommendations for Diabetes and Chronic Kidney Disease Authors KDOQI Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guidelines and Clinical Practice Recommendations for Diabetes and Chronic Kidney Disease Authors KDOQI Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · PMID: 17276798 https://pubmed.ncbi.nlm.nih.gov/17276798/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1173회 · RCR 33.51 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0307",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Lancet. Respiratory medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0307_landmark_cytokine_elevation_in_severe_and_critical_covid_19_a_rapid_s.md",
+   "snippet": "Title Cytokine elevation in severe and critical COVID 19: a rapid systematic review, meta analysis, and comparison with other inflammatory syndromes Authors Leisman Daniel E, Ronner Lukas, Pinotti Rachel, Taylor Matthew D, Sinha Pratik, Cal",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / The Lancet. Respiratory medicine Title Cytokine elevation in severe and critical COVID 19: a rapid systematic review, meta analysis, and comparison with other inflammatory syndromes Authors Leisman Daniel E, Ronner Lukas, Pinotti Rachel, Taylor Matthew D, Sinha Pratik, Calfee Carolyn S, Hirayama Alexandre V, Mastroiani Fiore, et al. Journal / DOI The Lancet. Respiratory medicine · DOI: 10.1016/S2213 2600(20)30404 5 · PMID: 33075298 https://pubmed.ncbi.nlm.nih.gov/33075298/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 686회 · RCR 33.30 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The description of a so called cytokine storm in patients with COVID 19 has prompted consideration of anti cytokine therapies, particularly interleukin 6 antagonists. However, direct systematic comparisons of COVID 19 with other critical illnesses associated with elevated cytokine concentrations have not been reported. In this Rapid Review, we report the results of a systematic review and meta analysis of COVID 19 studies published or posted as preprints between Nov 1, 2019, and April 14, 2020, in which interleukin 6 concentrations in patients with severe or critical disease were recorded. 25 COVID 19 studies (n=1245 patients) were ultimately included. Comparator groups included four trials each in sepsis (n=5320), cytokine release syndrome (n=72), and acute respiratory distress syndrome unrelated to COVID 19 (n=2767). In patients with severe or critical COVID 19, the pooled mean serum interleukin 6 concentration was 36·7 pg/mL (95% CI 21·6 62·3 pg/mL; I2=57·7%). Mean interleukin 6 concentrations were nearly 100 times higher in patients with cytokine release syndrome (3110·5 pg/mL, 632·3 15 302·9 pg/mL; p<0·0001), 27 times higher in patients with sepsis (983·6 pg/mL, 550·1 1758·4 pg/mL; p<0·0001), and 12 times higher in patients with acute respiratory distress syndrome unrelated to COVID 19 (460 pg/mL, 216·3 978·7 pg/mL; p<0·0001). Our findings question the role of a cytokine storm in COVID 19 induced organ dysfunction. Many questions remain about the immune features of COVID 19 and the potential role of anti cytokine and immune modulating treatments in patients with the disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0306",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0306_landmark_esc_guidelines_for_the_diagnosis_and_treatment_of_acute_and_.md",
+   "snippet": "Title ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2008: the Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2008 of the European Society of Cardiology. Developed in collabo",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2008: the Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2008 of the European Society of Cardiology. Developed in collaboration with the Heart Failure Association of the ESC (HFA) and endorsed by the European Society of Intensive Care Medicine (ESICM) Authors Dickstein Kenneth, Cohen Solal Alain, Filippatos Gerasimos, McMurray John J V, Ponikowski Piotr, Poole Wilson Philip Alexander, Strömberg Anna, van Veldhuisen Dirk J, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehn309 · PMID: 18799522 https://pubmed.ncbi.nlm.nih.gov/18799522/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2277회 · RCR 68.05 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0305",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annual review of pathology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0305_landmark_molecular_pathology_of_malignant_gliomas.md",
+   "snippet": "Title Molecular pathology of malignant gliomas Authors Louis David N Journal / DOI Annual review of pathology · PMID: 18039109 https://pubmed.ncbi.nlm.nih.gov/18039109/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 509회 · RCR 10.60 (분야평균=",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Annual review of pathology Title Molecular pathology of malignant gliomas Authors Louis David N Journal / DOI Annual review of pathology · PMID: 18039109 https://pubmed.ncbi.nlm.nih.gov/18039109/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 509회 · RCR 10.60 (분야평균=1.0) · NIH 상위 백분위 97.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Malignant gliomas, the most common type of primary brain tumor, are a spectrum of tumors of varying differentiation and malignancy grades. These tumors may arise from neural stem cells and appear to contain tumor stem cells. Early genetic events differ between astrocytic and oligodendroglial tumors, but all tumors have an initially invasive phenotype, which complicates therapy. Progression associated genetic alterations are common to different tumor types, targeting growth promoting and cell cycle control pathways and resulting in focal hypoxia, necrosis, and angiogenesis. Knowledge of malignant glioma genetics has already impacted clinical management of these tumors, and researchers hope that further knowledge of the molecular pathology of malignant gliomas will result in novel therapies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0304",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European urology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0304_landmark_eau_guidelines_on_non_muscle_invasive_urothelial_carcinoma_o.md",
+   "snippet": "Title EAU guidelines on non muscle invasive urothelial carcinoma of the bladder: update 2013 Authors Babjuk Marko, Burger Maximilian, Zigeuner Richard, Shariat Shahrokh F, van Rhijn Bas W G, Compérat Eva, Sylvester Richard J, Kaasinen Eero,",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / European urology Title EAU guidelines on non muscle invasive urothelial carcinoma of the bladder: update 2013 Authors Babjuk Marko, Burger Maximilian, Zigeuner Richard, Shariat Shahrokh F, van Rhijn Bas W G, Compérat Eva, Sylvester Richard J, Kaasinen Eero, et al. Journal / DOI European urology · DOI: 10.1016/j.eururo.2013.06.003 · PMID: 23827737 https://pubmed.ncbi.nlm.nih.gov/23827737/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 962회 · RCR 32.79 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract CONTEXT: The first European Association of Urology (EAU) guidelines on bladder cancer were published in 2002 [1]. Since then, the guidelines have been continuously updated. OBJECTIVE: To present the 2013 EAU guidelines on non muscle invasive bladder cancer (NMIBC). EVIDENCE ACQUISITION: Literature published between 2010 and 2012 on the diagnosis and treatment of NMIBC was systematically reviewed. Previous guidelines were updated, and the levels of evidence and grades of recommendation were assigned. EVIDENCE SYNTHESIS: Tumours staged as Ta, T1, or carcinoma in situ (CIS) are grouped as NMIBC. Diagnosis depends on cystoscopy and histologic evaluation of the tissue obtained by transurethral resection (TUR) in papillary tumours or by multiple bladder biopsies in CIS. In papillary lesions, a complete TUR is essential for the patient's prognosis. Where the initial resection is incomplete, where there is no muscle in the specimen, or where a high grade or T1 tumour is detected, a second TUR should be performed within 2 6 wk. The risks of both recurrence and progression may be estimated for individual patients using the EORTC scoring system and risk tables. The stratification of patients into low , intermediate , and high risk groups is pivotal to recommending adjuvant treatment. For patients with a low risk tumour, one immediate instillation of chemotherapy is recommended. Patients with an intermediate risk tumour should receive one immediate instillation of chemotherapy followed by 1 yr of full dose bacillus Calmette Guérin (BCG) intravesical immunotherapy or by further instillations of chemotherapy for a maximum of 1 yr. In patients with high risk tumours, full dose intravesical BCG for 1 3 yr is indicated. In patients at highest risk of tumour progression, immediate radical cystectomy should be considered. Cystectomy is recommended in BCG refractory tumours. The long version of the guidelines is available from the EAU Web site: http://www.uroweb.org/guidelines/. CONCLUSIONS: These abridged EAU guidelines present updated information on the diagnosis and treatment of NMIBC for incorporation into clinical practice. PATIENT SUMMARY: The EAU Panel on Non muscle Invasive Bladder Cancer released an updated version of their guidelines. Current clinical studies support patient selection into different risk groups; low, intermediate and high risk. These risk groups indicate the likelihood of the development of a new (recurrent) cancer after initial treatment (endoscopic resection) or progression to more aggressive (muscle invasive) bladder cancer and are most important for the decision to provide chemo or immunotherapy (bladder installations). Surgical removal of the bladder (radical cystectomy) should only be considered in patients who have failed chemo or immunotherapy, or who are in the highest risk group for progression. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0303",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Nature reviews. Nephrology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0303_landmark_acute_kidney_disease_and_renal_recovery_consensus_report_of_.md",
+   "snippet": "Title Acute kidney disease and renal recovery: consensus report of the Acute Disease Quality Initiative (ADQI) 16 Workgroup Authors Chawla Lakhmir S, Bellomo Rinaldo, Bihorac Azra, Goldstein Stuart L, Siew Edward D, Bagshaw Sean M, Bittlema",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Nature reviews. Nephrology Title Acute kidney disease and renal recovery: consensus report of the Acute Disease Quality Initiative (ADQI) 16 Workgroup Authors Chawla Lakhmir S, Bellomo Rinaldo, Bihorac Azra, Goldstein Stuart L, Siew Edward D, Bagshaw Sean M, Bittleman David, Cruz Dinna, et al. Journal / DOI Nature reviews. Nephrology · DOI: 10.1038/nrneph.2017.2 · PMID: 28239173 https://pubmed.ncbi.nlm.nih.gov/28239173/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1199회 · RCR 54.64 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Consensus definitions have been reached for both acute kidney injury (AKI) and chronic kidney disease (CKD) and these definitions are now routinely used in research and clinical practice. The KDIGO guideline defines AKI as an abrupt decrease in kidney function occurring over 7 days or less, whereas CKD is defined by the persistence of kidney disease for a period of 90 days. AKI and CKD are increasingly recognized as related entities and in some instances probably represent a continuum of the disease process. For patients in whom pathophysiologic processes are ongoing, the term acute kidney disease (AKD) has been proposed to define the course of disease after AKI; however, definitions of AKD and strategies for the management of patients with AKD are not currently available. In this consensus statement, the Acute Disease Quality Initiative (ADQI) proposes definitions, staging criteria for AKD, and strategies for the management of affected patients. We also make recommendations for areas of future research, which aim to improve understanding of the underlying processes and improve outcomes for patients with AKD. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0302",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Intensive care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0302_landmark_incidence_and_mortality_of_hospital_and_icu_treated_sepsis_r.md",
+   "snippet": "Title Incidence and mortality of hospital and ICU treated sepsis: results from an updated and expanded systematic review and meta analysis Authors Fleischmann Struzek C, Mellhammar L, Rose N, Cassini A, Rudd K E, Schlattmann P, Allegranzi B",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Intensive care medicine Title Incidence and mortality of hospital and ICU treated sepsis: results from an updated and expanded systematic review and meta analysis Authors Fleischmann Struzek C, Mellhammar L, Rose N, Cassini A, Rudd K E, Schlattmann P, Allegranzi B, Reinhart K Journal / DOI Intensive care medicine · DOI: 10.1007/s00134 020 06151 x · PMID: 32572531 https://pubmed.ncbi.nlm.nih.gov/32572531/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 696회 · RCR 41.83 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To investigate the global burden of sepsis in hospitalized adults by updating and expanding a systematic review and meta analysis and to compare findings with recent Institute for Health Metrics and Evaluation (IHME) sepsis estimates. METHODS: Thirteen electronic databases were searched for studies on population level sepsis incidence defined according to clinical criteria (Sepsis 1, 2: severe sepsis criteria, or sepsis 3: sepsis criteria) or relevant ICD codes. The search of the original systematic review was updated for studies published 05/2015 02/2019 and complemented by a search targeting low or middle income country (LMIC) studies published 01/1979 02/2019. We performed a random effects meta analysis with incidence of hospital and ICU treated sepsis and proportion of deaths among these sepsis cases as outcomes. RESULTS: Of 4746 results, 28 met the inclusion criteria. 21 studies contributed data for the meta analysis and were pooled with 30 studies from the original meta analysis. Pooled incidence was 189 [95% CI 133, 267] hospital treated sepsis cases per 100,000 person years. An estimated 26.7% [22.9, 30.7] of sepsis patients died. Estimated incidence of ICU treated sepsis was 58 [42, 81] per 100,000 person years, of which 41.9% [95% CI 36.2, 47.7] died prior to hospital discharge. There was a considerably higher incidence of hospital treated sepsis observed after 2008 (+ 46% compared to the overall time frame). CONCLUSIONS: Compared to results from the IHME study, we found an approximately 50% lower incidence of hospital treated sepsis. The majority of studies included were based on administrative data, thus limiting our ability to assess temporal trends and regional differences. The incidence of sepsis remains unknown for the vast majority of LMICs, highlighting the urgent need for improved epidemiological sepsis surveillance. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0301",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0301_landmark_2024_esc_guidelines_for_the_management_of_atrial_fibrillatio.md",
+   "snippet": "Title 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association for Cardio Thoracic Surgery (EACTS) Authors Van Gelder Isabelle C, Rienstra Michiel, Bunting Karina V, Casado Arroy",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association for Cardio Thoracic Surgery (EACTS) Authors Van Gelder Isabelle C, Rienstra Michiel, Bunting Karina V, Casado Arroyo Ruben, Caso Valeria, Crijns Harry J G M, De Potter Tom J R, Dwight Jeremy, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehae176 · PMID: 39210723 https://pubmed.ncbi.nlm.nih.gov/39210723/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2328회 · RCR 551.58 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0300",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0300_landmark_mutation_incidence_and_coincidence_in_non_small_cell_lung_ca.md",
+   "snippet": "Title Mutation incidence and coincidence in non small cell lung cancer: meta analyses by ethnicity and histology (mutMap) Authors Dearden S, Stevens J, Wu Y L, Blowers D Journal / DOI Annals of oncology : official journal of the European So",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Mutation incidence and coincidence in non small cell lung cancer: meta analyses by ethnicity and histology (mutMap) Authors Dearden S, Stevens J, Wu Y L, Blowers D Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1093/annonc/mdt205 · PMID: 23723294 https://pubmed.ncbi.nlm.nih.gov/23723294/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 547회 · RCR 14.40 (분야평균=1.0) · NIH 상위 백분위 98.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Meta analyses were conducted to characterize patterns of mutation incidence in non small cell lung cancer (NSCLC). DESIGN: Nine genes with the most complete published mutation coincidence data were evaluated. One meta analysis generated a 'mutMap' to visually represent mutation coincidence by ethnicity (Western/Asian) and histology (adenocarcinoma [ADC] or squamous cell carcinoma). Another meta analysis evaluated incidence of individual mutations. Extended analyses explored incidence of EGFR and KRAS mutations by ethnicity, histology, and smoking status. RESULTS: Genes evaluated were TP53, EGFR, KRAS, LKB1, EML4 ALK, PTEN, BRAF, PIK3CA, and ErbB2. The mutMap highlighted mutation coincidences occurring in ≥5% of patients, including TP53 with KRAS or EGFR mutations in patients with ADC, and TP53 with LKB1 mutation in Western patients. TP53 was the most frequently mutated gene overall. Frequencies of TP53, EGFR, KRAS, LKB1, PTEN, and BRAF mutations were influenced by histology and/or ethnicity. Although EGFR mutations were most frequent in patients with ADC and never/light smokers from Asia, and KRAS mutations were most frequent in patients with ADC and ever/heavy smokers from Western countries, both were detected outside these subgroups. CONCLUSIONS: Potential molecular pathology segments of NSCLC were identified. Further studies of mutations in NSCLC are warranted to facilitate more specific diagnoses and guide treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0299",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Gut",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0299_landmark_current_european_concepts_in_the_management_of_helicobacter_.md",
+   "snippet": "Title Current European concepts in the management of Helicobacter pylori infection. The Maastricht Consensus Report. European Helicobacter Pylori Study Group Authors (정보 없음) Journal / DOI Gut · PMID: 9274464 https://pubmed.ncbi.nlm.nih.gov/",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Gut Title Current European concepts in the management of Helicobacter pylori infection. The Maastricht Consensus Report. European Helicobacter Pylori Study Group Authors (정보 없음) Journal / DOI Gut · PMID: 9274464 https://pubmed.ncbi.nlm.nih.gov/9274464/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 971회 · RCR 41.24 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract There is considerable confusion over the management of Helicobacter pylori infection, particularly among primary care physicians, and numerous European countries lack national guidelines in this rapidly growing area of medicine. The European Helicobacter Pylori Study Group therefore organised a meeting in Maastricht of H pylori experts, primary care physicians and representatives of National Societies of Gastroenterology from Europe to establish consensus guidelines on the management of H pylori at the primary care and specialist levels, and to consider general health care issues associated with the infection. As in previous guidelines, eradication therapy was recommended in all H pylori positive patients with peptic ulcer disease. Additionally, at the primary care level in dyspeptic patients < 45 years old and with no alarm symptoms, diagnosis is recommended by non invasive means (13C urea breath test, serology) and if H pylori positive the patient should be treated. Moreover, at the specialist level the indications for eradication of H pylori were also broadened to include H pylori positive patients with functional dyspepsia in whom no other possible causes of symptoms are identified by the specialist (after a full investigation including endoscopy, ultrasound and other necessary investigations), patients with low grade gastric mucosa associated lymphoid tissue (MALT) lymphoma (managed in specialised centres) and those with gastritis with severe macro or microscopic abnormalities. There was consensus that treatment regimens should be simple, well tolerated and achieve an eradication rate of over 80% on an intention to treat basis. It was strongly recommended, therefore, that eradication treatment should be with proton pump inhibitor based triple therapy for seven days, using a proton pump inhibitor and two of the following: clarithromycin, a nitroimidazole (metronidazole or tinidazole) and amoxycillin. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0298",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0298_landmark_kdigo_2022_clinical_practice_guideline_for_diabetes_manageme.md",
+   "snippet": "Title KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2022.06.00",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2022.06.008 · PMID: 36272764 https://pubmed.ncbi.nlm.nih.gov/36272764/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1200회 · RCR 120.50 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0297",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / British journal of haematology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0297_landmark_guidelines_for_the_diagnosis_and_management_of_disseminated_.md",
+   "snippet": "Title Guidelines for the diagnosis and management of disseminated intravascular coagulation. British Committee for Standards in Haematology Authors Levi M, Toh C H, Thachil J, Watson H G Journal / DOI British journal of haematology · DOI: 1",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / British journal of haematology Title Guidelines for the diagnosis and management of disseminated intravascular coagulation. British Committee for Standards in Haematology Authors Levi M, Toh C H, Thachil J, Watson H G Journal / DOI British journal of haematology · DOI: 10.1111/j.1365 2141.2009.07600.x · PMID: 19222477 https://pubmed.ncbi.nlm.nih.gov/19222477/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 709회 · RCR 22.76 (분야평균=1.0) · NIH 상위 백분위 99.4. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The diagnosis of disseminated intravascular coagulation (DIC) should encompass both clinical and laboratory information. The International Society for Thrombosis and Haemostasis (ISTH) DIC scoring system provides objective measurement of DIC. Where DIC is present the scoring system correlates with key clinical observations and outcomes. It is important to repeat the tests to monitor the dynamically changing scenario based on laboratory results and clinical observations. The cornerstone of the treatment of DIC is treatment of the underlying condition. Transfusion of platelets or plasma (components) in patients with DIC should not primarily be based on laboratory results and should in general be reserved for patients who present with bleeding. In patients with DIC and bleeding or at high risk of bleeding (e.g. postoperative patients or patients due to undergo an invasive procedure) and a platelet count of <50 x 10(9)/l transfusion of platelets should be considered. In non bleeding patients with DIC, prophylactic platelet transfusion is not given unless it is perceived that there is a high risk of bleeding. In bleeding patients with DIC and prolonged prothrombin time (PT) and activated partial thromboplastin time (aPTT), administration of fresh frozen plasma (FFP) may be useful. It should not be instituted based on laboratory tests alone but should be considered in those with active bleeding and in those requiring an invasive procedure. There is no evidence that infusion of plasma stimulates the ongoing activation of coagulation. If transfusion of FFP is not possible in patients with bleeding because of fluid overload, consider using factor concentrates such as prothrombin complex concentrate, recognising that these will only partially correct the defect because they contain only selected factors, whereas in DIC there is a global deficiency of coagulation factors. Severe hypofibrinogenaemia (<1 g/l) that persists despite FFP replacement may be treated with fibrinogen concentrate or cryoprecipitate. In cases of DIC where thrombosis predominates, such as arterial or venous thromboembolism, severe purpura fulminans associated with acral ischemia or vascular skin infarction, therapeutic doses of heparin should be considered. In these patients where there is perceived to be a co existing high risk of bleeding there may be benefits in using continuous infusion unfractionated heparin (UFH) due to its short half life and reversibility. Weight adjusted doses (e.g. 10 mu/kg/h) may be used without the intention of prolonging the APTT ratio to 1.5 2.5 times the control. Monitoring the APTT in these cases may be complicated and clinical observation for signs of bleeding is important. In critically ill, non bleeding patients with DIC, prophylaxis for venous thromboembolism with prophylactic doses of heparin or low molecular weight heparin is recommended. Consider treating patients with severe sepsis and DIC with recombinant human activated protein C (continuous infusion, 24 microg/kg/h for 4 d). Patients at high risk of bleeding should not be given recombinant human activated protein C. Current manufacturers guidance advises against using this product in patients with platelet counts of <30 x 10(9)/l. In the event of invasive procedures, administration of recombinant human activated protein C should be discontinued shortly before the intervention (elimination half life approximately 20 min) and may be resumed a few hours later, dependent on the clinical situation. In the absence of further prospective evidence from randomised controlled trials confirming a beneficial effect of antithrombin concentrate on clinically relevant endpoints in patients with DIC and not receiving heparin, administration of antithrombin cannot be recommended. In general, patients with DIC should not be treated with antifibrinolytic agents. Patients with DIC that is characterised by a primary hyperfibrinolytic state and who present with severe bleeding could be treated with lysine analogues, such as tranexamic acid (e.g. 1 g every 8 h). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0296",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0296_landmark_2013_accf_aha_guideline_for_the_management_of_heart_failure_.md",
+   "snippet": "Title 2013 ACCF/AHA guideline for the management of heart failure: a report of the American College of Cardiology Foundation/American Heart Association Task Force on practice guidelines Authors WRITING COMMITTEE MEMBERS, Yancy Clyde W, Jess",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Circulation Title 2013 ACCF/AHA guideline for the management of heart failure: a report of the American College of Cardiology Foundation/American Heart Association Task Force on practice guidelines Authors WRITING COMMITTEE MEMBERS, Yancy Clyde W, Jessup Mariell, Bozkurt Biykem, Butler Javed, Casey Donald E, Drazner Mark H, Fonarow Gregg C, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0b013e31829e8776 · PMID: 23741058 https://pubmed.ncbi.nlm.nih.gov/23741058/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2479회 · RCR 87.41 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0295",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Epilepsy research",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0295_landmark_surgical_outcomes_in_lesional_and_non_lesional_epilepsy_a_sy.md",
+   "snippet": "Title Surgical outcomes in lesional and non lesional epilepsy: a systematic review and meta analysis Authors Téllez Zenteno José F, Hernández Ronquillo Lizbeth, Moien Afshari Farzad, Wiebe Samuel Journal / DOI Epilepsy research · DOI: 10.10",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Epilepsy research Title Surgical outcomes in lesional and non lesional epilepsy: a systematic review and meta analysis Authors Téllez Zenteno José F, Hernández Ronquillo Lizbeth, Moien Afshari Farzad, Wiebe Samuel Journal / DOI Epilepsy research · DOI: 10.1016/j.eplepsyres.2010.02.007 · PMID: 20227852 https://pubmed.ncbi.nlm.nih.gov/20227852/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 558회 · RCR 19.90 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSES: To provide evidence based quantitative summary estimates of seizure outcomes in patients with non lesional and lesional epilepsy treated with surgery, and to assess the consistency of results among published studies. METHODS: An exhaustive literature search identified articles published since 1995, describing outcomes according to lesional status in patients of any age who underwent resective epilepsy surgery. Two reviewers independently assessed study eligibility and extracted the data. Disagreements were resolved through discussion. Random effects meta analyses were used after assessing the dataset for heterogeneity. RESULTS: Forty articles fulfilled eligibility criteria and described outcomes in 697 patients with non lesional epilepsy and 2860 patients with lesional epilepsy. Overall, the odds of being seizure free after surgery were 2.5 times higher in patients with lesions on MRI or histopathology (OR 2.5, 95%CI 2.1, 3.0, p<0.001). In patients with temporal lobe epilepsy surgery the odds were 2.7 times higher in those with lesions (OR 2.7, 95%CI 2.1, 3.5, p<0.001). In patients with extratemporal epilepsy surgery the odds were 2.9 higher in those with lesions (OR 2.9, 95%CI 1.6, 5.1, p<0.001). Outcomes were similar in children, adults, and studies that used MRI or histopathology to identify lesions. DISCUSSION: Overall, the odds of seizure freedom after surgery are two to three times higher in the presence of a lesion on histopathology or MRI. The results are clinically and statistically significant, consistent across various subgroups, and quite homogeneous across studies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0294",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0294_landmark_management_of_toxicities_from_immunotherapy_esmo_clinical_pr.md",
+   "snippet": "Title Management of toxicities from immunotherapy: ESMO Clinical Practice Guideline for diagnosis, treatment and follow up Authors Haanen J, Obeid M, Spain L, Carbonnel F, Wang Y, Robert C, Lyon A R, Wick W, et al. Journal / DOI Annals of o",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Management of toxicities from immunotherapy: ESMO Clinical Practice Guideline for diagnosis, treatment and follow up Authors Haanen J, Obeid M, Spain L, Carbonnel F, Wang Y, Robert C, Lyon A R, Wick W, et al. Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1016/j.annonc.2022.10.001 · PMID: 36270461 https://pubmed.ncbi.nlm.nih.gov/36270461/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 990회 · RCR 75.92 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0293",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0293_landmark_2019_acc_aha_guideline_on_the_primary_prevention_of_cardiova.md",
+   "snippet": "Title 2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Authors Arnett Donna K, Blumenthal Roger ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Authors Arnett Donna K, Blumenthal Roger S, Albert Michelle A, Buroker Andrew B, Goldberger Zachary D, Hahn Ellen J, Himmelfarb Cheryl Dennison, Khera Amit, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2019.03.010 · PMID: 30894318 https://pubmed.ncbi.nlm.nih.gov/30894318/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1386회 · RCR 67.81 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0292",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0292_landmark_surviving_sepsis_campaign_international_guidelines_for_the_m.md",
+   "snippet": "Title Surviving Sepsis Campaign International Guidelines for the Management of Septic Shock and Sepsis Associated Organ Dysfunction in Children Authors Weiss Scott L, Peters Mark J, Alhazzani Waleed, Agus Michael S D, Flori Heidi R, Inwald ",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies Title Surviving Sepsis Campaign International Guidelines for the Management of Septic Shock and Sepsis Associated Organ Dysfunction in Children Authors Weiss Scott L, Peters Mark J, Alhazzani Waleed, Agus Michael S D, Flori Heidi R, Inwald David P, Nadel Simon, Schlapbach Luregn J, et al. Journal / DOI Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies · DOI: 10.1097/PCC.0000000000002198 · PMID: 32032273 https://pubmed.ncbi.nlm.nih.gov/32032273/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 759회 · RCR 55.46 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVES: To develop evidence based recommendations for clinicians caring for children (including infants, school aged children, and adolescents) with septic shock and other sepsis associated organ dysfunction. DESIGN: A panel of 49 international experts, representing 12 international organizations, as well as three methodologists and three public members was convened. Panel members assembled at key international meetings (for those panel members attending the conference), and a stand alone meeting was held for all panel members in November 2018. A formal conflict of interest policy was developed at the onset of the process and enforced throughout. Teleconferences and electronic based discussion among the chairs, co chairs, methodologists, and group heads, as well as within subgroups, served as an integral part of the guideline development process. METHODS: The panel consisted of six subgroups: recognition and management of infection, hemodynamics and resuscitation, ventilation, endocrine and metabolic therapies, adjunctive therapies, and research priorities. We conducted a systematic review for each Population, Intervention, Control, and Outcomes question to identify the best available evidence, statistically summarized the evidence, and then assessed the quality of evidence using the Grading of Recommendations Assessment, Development, and Evaluation approach. We used the evidence to decision framework to formulate recommendations as strong or weak, or as a best practice statement. In addition, \"in our practice\" statements were included when evidence was inconclusive to issue a recommendation, but the panel felt that some guidance based on practice patterns may be appropriate. RESULTS: The panel provided 77 statements on the management and resuscitation of children with septic shock and other sepsis associated organ dysfunction. Overall, six were strong recommendations, 52 were weak recommendations, and nine were best practice statements. For 13 questions, no recommendations could be made; but, for 10 of these, \"in our practice\" statements were provided. In addition, 49 research priorities were identified. CONCLUSIONS: A large cohort of international experts was able to achieve consensus regarding many recommendations for the best care of children with sepsis, acknowledging that most aspects of care had relatively low quality of evidence resulting in the frequent issuance of weak recommendations. Despite this challenge, these recommendations regarding the management of children with septic shock and other sepsis associated organ dysfunction provide a foundation for consistent care to improve outcomes and inform future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0291",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0291_landmark_2015_esc_guidelines_for_the_management_of_patients_with_vent.md",
+   "snippet": "Title 2015 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death: The Task Force for the Management of Patients with Ventricular Arrhythmias and the Prevention of Sudden Cardia",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2015 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death: The Task Force for the Management of Patients with Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death of the European Society of Cardiology (ESC). Endorsed by: Association for European Paediatric and Congenital Cardiology (AEPC) Authors Priori Silvia G, Blomström Lundqvist Carina, Mazzanti Andrea, Blom Nico, Borggrefe Martin, Camm John, Elliott Perry Mark, Fitzsimons Donna, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehv316 · PMID: 26320108 https://pubmed.ncbi.nlm.nih.gov/26320108/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2626회 · RCR 108.40 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0290",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Neuro-oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0290_landmark_eano_guideline_on_the_diagnosis_and_management_of_meningioma.md",
+   "snippet": "Title EANO guideline on the diagnosis and management of meningiomas Authors Goldbrunner Roland, Stavrinou Pantelis, Jenkinson Michael D, Sahm Felix, Mawrin Christian, Weber Damien C, Preusser Matthias, Minniti Giuseppe, et al. Journal / DOI",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Neuro-oncology Title EANO guideline on the diagnosis and management of meningiomas Authors Goldbrunner Roland, Stavrinou Pantelis, Jenkinson Michael D, Sahm Felix, Mawrin Christian, Weber Damien C, Preusser Matthias, Minniti Giuseppe, et al. Journal / DOI Neuro oncology · DOI: 10.1093/neuonc/noab150 · PMID: 34181733 https://pubmed.ncbi.nlm.nih.gov/34181733/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 576회 · RCR 45.32 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Meningiomas are the most common intracranial tumors. Yet, only few controlled clinical trials have been conducted to guide clinical decision making, resulting in variations of management approaches across countries and centers. However, recent advances in molecular genetics and clinical trial results help to refine the diagnostic and therapeutic approach to meningioma. Accordingly, the European Association of Neuro Oncology (EANO) updated its recommendations for the diagnosis and treatment of meningiomas. A provisional diagnosis of meningioma is typically made by neuroimaging, mostly magnetic resonance imaging. Such provisional diagnoses may be made incidentally. Accordingly, a significant proportion of meningiomas, notably in patients that are asymptomatic or elderly or both, may be managed by a watch and scan strategy. A surgical intervention with tissue, commonly with the goal of gross total resection, is required for the definitive diagnosis according to the WHO classification. A role for molecular profiling including gene panel sequencing and genomic methylation profiling is emerging. A gross total surgical resection including the involved dura is often curative. Inoperable or recurrent tumors requiring treatment can be treated with radiosurgery, if the size or the vicinity of critical structures allows that, or with fractionated radiotherapy (RT). Treatment concepts combining surgery and radiosurgery or fractionated RT are increasingly used, although there remain controversies regard timing, type, and dosing of the various RT approaches. Radionuclide therapy targeting somatostatin receptors is an experimental approach, as are all approaches of systemic pharmacotherapy. The best albeit modest results with pharmacotherapy have been obtained with bevacizumab or multikinase inhibitors targeting vascular endothelial growth factor receptor, but no standard of care systemic treatment has been yet defined. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0289",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0289_landmark_chronic_myeloid_leukemia_an_update_of_concepts_and_managemen.md",
+   "snippet": "Title Chronic myeloid leukemia: an update of concepts and management recommendations of European LeukemiaNet Authors Baccarani Michele, Cortes Jorge, Pane Fabrizio, Niederwieser Dietger, Saglio Giuseppe, Apperley Jane, Cervantes Francisco, ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Chronic myeloid leukemia: an update of concepts and management recommendations of European LeukemiaNet Authors Baccarani Michele, Cortes Jorge, Pane Fabrizio, Niederwieser Dietger, Saglio Giuseppe, Apperley Jane, Cervantes Francisco, Deininger Michael, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · DOI: 10.1200/JCO.2009.25.0779 · PMID: 19884523 https://pubmed.ncbi.nlm.nih.gov/19884523/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1009회 · RCR 25.23 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To review and update the European LeukemiaNet (ELN) recommendations for the management of chronic myeloid leukemia with imatinib and second generation tyrosine kinase inhibitors (TKIs), including monitoring, response definition, and first and second line therapy. METHODS: These recommendations are based on a critical and comprehensive review of the relevant papers up to February 2009 and the results of four consensus conferences held by the panel of experts appointed by ELN in 2008. RESULTS: Cytogenetic monitoring was required at 3, 6, 12, and 18 months. Molecular monitoring was required every 3 months. On the basis of the degree and the timing of hematologic, cytogenetic, and molecular results, the response to first line imatinib was defined as optimal, suboptimal, or failure, and the response to second generation TKIs was defined as suboptimal or failure. CONCLUSION: Initial treatment was confirmed as imatinib 400 mg daily. Imatinib should be continued indefinitely in optimal responders. Suboptimal responders may continue on imatinb, at the same or higher dose, or may be eligible for investigational therapy with second generation TKIs. In instances of imatinib failure, second generation TKIs are recommended, followed by allogeneic hematopoietic stem cell transplantation only in instances of failure and, sometimes, suboptimal response, depending on transplantation risk. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0288",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0288_landmark_kdoqi_clinical_practice_guideline_for_nutrition_in_ckd_2020_.md",
+   "snippet": "Title KDOQI Clinical Practice Guideline for Nutrition in CKD: 2020 Update Authors Ikizler T Alp, Burrowes Jerrilynn D, Byham Gray Laura D, Campbell Katrina L, Carrero Juan Jesus, Chan Winnie, Fouque Denis, Friedman Allon N, et al. Journal /",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guideline for Nutrition in CKD: 2020 Update Authors Ikizler T Alp, Burrowes Jerrilynn D, Byham Gray Laura D, Campbell Katrina L, Carrero Juan Jesus, Chan Winnie, Fouque Denis, Friedman Allon N, et al. Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · DOI: 10.1053/j.ajkd.2020.05.006 · PMID: 32829751 https://pubmed.ncbi.nlm.nih.gov/32829751/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1405회 · RCR 103.00 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The National Kidney Foundation's Kidney Disease Outcomes Quality Initiative (KDOQI) has provided evidence based guidelines for nutrition in kidney diseases since 1999. Since the publication of the first KDOQI nutrition guideline, there has been a great accumulation of new evidence regarding the management of nutritional aspects of kidney disease and sophistication in the guidelines process. The 2020 update to the KDOQI Clinical Practice Guideline for Nutrition in CKD was developed as a joint effort with the Academy of Nutrition and Dietetics (Academy). It provides comprehensive up to date information on the understanding and care of patients with chronic kidney disease (CKD), especially in terms of their metabolic and nutritional milieu for the practicing clinician and allied health care workers. The guideline was expanded to include not only patients with end stage kidney disease or advanced CKD, but also patients with stages 1 5 CKD who are not receiving dialysis and patients with a functional kidney transplant. The updated guideline statements focus on 6 primary areas: nutritional assessment, medical nutrition therapy (MNT), dietary protein and energy intake, nutritional supplementation, micronutrients, and electrolytes. The guidelines primarily cover dietary management rather than all possible nutritional interventions. The evidence data and guideline statements were evaluated using Grading of Recommendations, Assessment, Development and Evaluation (GRADE) criteria. As applicable, each guideline statement is accompanied by rationale/background information, a detailed justification, monitoring and evaluation guidance, implementation considerations, special discussions, and recommendations for future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0287",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0287_landmark_recommendations_for_the_management_of_hemophagocytic_lymphoh.md",
+   "snippet": "Title Recommendations for the management of hemophagocytic lymphohistiocytosis in adults Authors La Rosée Paul, Horne AnnaCarin, Hines Melissa, von Bahr Greenwood Tatiana, Machowicz Rafal, Berliner Nancy, Birndt Sebastian, Gil Herrera Juana",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Blood Title Recommendations for the management of hemophagocytic lymphohistiocytosis in adults Authors La Rosée Paul, Horne AnnaCarin, Hines Melissa, von Bahr Greenwood Tatiana, Machowicz Rafal, Berliner Nancy, Birndt Sebastian, Gil Herrera Juana, et al. Journal / DOI Blood · DOI: 10.1182/blood.2018894618 · PMID: 30992265 https://pubmed.ncbi.nlm.nih.gov/30992265/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 834회 · RCR 39.09 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Hemophagocytic lymphohistiocytosis (HLH) is a severe hyperinflammatory syndrome induced by aberrantly activated macrophages and cytotoxic T cells. The primary (genetic) form, caused by mutations affecting lymphocyte cytotoxicity and immune regulation, is most common in children, whereas the secondary (acquired) form is most frequent in adults. Secondary HLH is commonly triggered by infections or malignancies but may also be induced by autoinflammatory/autoimmune disorders, in which case it is called macrophage activation syndrome (MAS; or MAS HLH). Most information on the diagnosis and treatment of HLH comes from the pediatric literature. Although helpful in some adult cases, this raises several challenges. For example, the HLH 2004 diagnostic criteria developed for children are commonly applied but are not validated for adults. Another challenge in HLH diagnosis is that patients may present with a phenotype indistinguishable from sepsis or multiple organ dysfunction syndrome. Treatment algorithms targeting hyperinflammation are frequently based on pediatric protocols, such as HLH 94 and HLH 2004, which may result in overtreatment and unnecessary toxicity in adults. Therefore, dose reductions, individualized tailoring of treatment duration, and an age dependent modified diagnostic approach are to be considered. Here, we present expert opinions derived from an interdisciplinary working group on adult HLH, sponsored by the Histiocyte Society, to facilitate knowledge transfer between physicians caring for pediatric and adult patients with HLH, with the aim to improve the outcome for adult patients affected by HLH. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0286",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0286_landmark_2012_focused_update_of_the_esc_guidelines_for_the_management.md",
+   "snippet": "Title 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation. Developed with the special contribution of the European Heart Rhythm ",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation. Developed with the special contribution of the European Heart Rhythm Association Authors Camm A John, Lip Gregory Y H, De Caterina Raffaele, Savelieva Irene, Atar Dan, Hohnloser Stefan H, Hindricks Gerhard, Kirchhof Paulus, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehs253 · PMID: 22922413 https://pubmed.ncbi.nlm.nih.gov/22922413/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 2744회 · RCR 98.38 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0285",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Nature reviews. Cancer",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0285_landmark_targeting_brain_cancer_advances_in_the_molecular_pathology_o.md",
+   "snippet": "Title Targeting brain cancer: advances in the molecular pathology of malignant glioma and medulloblastoma Authors Huse Jason T, Holland Eric C Journal / DOI Nature reviews. Cancer · DOI: 10.1038/nrc2818 · PMID: 20414201 https://pubmed.ncbi.",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Nature reviews. Cancer Title Targeting brain cancer: advances in the molecular pathology of malignant glioma and medulloblastoma Authors Huse Jason T, Holland Eric C Journal / DOI Nature reviews. Cancer · DOI: 10.1038/nrc2818 · PMID: 20414201 https://pubmed.ncbi.nlm.nih.gov/20414201/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 586회 · RCR 14.12 (분야평균=1.0) · NIH 상위 백분위 98.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Malignant brain tumours continue to be the cause of a disproportionate level of morbidity and mortality across a wide range of individuals. The most common variants in the adult and paediatric populations malignant glioma and medulloblastoma, respectively have been the subject of increasingly intensive research over the past two decades that has led to considerable advances in the understanding of their basic biology and pathogenesis. This Review summarizes these developments in the context of the evolving notion of molecular pathology and discusses the implications that this work has on the design of new treatment regimens. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0284",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0284_landmark_use_of_positron_emission_tomography_for_response_assessment_.md",
+   "snippet": "Title Use of positron emission tomography for response assessment of lymphoma: consensus of the Imaging Subcommittee of International Harmonization Project in Lymphoma Authors Juweid Malik E, Stroobants Sigrid, Hoekstra Otto S, Mottaghy Fel",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Use of positron emission tomography for response assessment of lymphoma: consensus of the Imaging Subcommittee of International Harmonization Project in Lymphoma Authors Juweid Malik E, Stroobants Sigrid, Hoekstra Otto S, Mottaghy Felix M, Dietlein Markus, Guermazi Ali, Wiseman Gregory A, Kostakoglu Lale, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · PMID: 17242397 https://pubmed.ncbi.nlm.nih.gov/17242397/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1041회 · RCR 29.31 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To develop guidelines for performing and interpreting positron emission tomography (PET) imaging for treatment assessment in patients with lymphoma both in clinical practice and in clinical trials. METHODS: An International Harmonization Project (IHP) was convened to discuss standardization of clinical trial parameters in lymphoma. An imaging subcommittee developed consensus recommendations based on published PET literature and the collective expertise of its members in the use of PET in lymphoma. Only recommendations subsequently endorsed by all IHP subcommittees were adopted. RECOMMENDATIONS: PET after completion of therapy should be performed at least 3 weeks, and preferably at 6 to 8 weeks, after chemotherapy or chemoimmunotherapy, and 8 to 12 weeks after radiation or chemoradiotherapy. Visual assessment alone is adequate for interpreting PET findings as positive or negative when assessing response after completion of therapy. Mediastinal blood pool activity is recommended as the reference background activity to define PET positivity for a residual mass or = 2 cm in greatest transverse diameter, regardless of its location. A smaller residual mass or a normal sized lymph node (ie, < or = 1 x 1 cm in diameter) should be considered positive if its activity is above that of the surrounding background. Specific criteria for defining PET positivity in the liver, spleen, lung, and bone marrow are also proposed. Use of attenuation corrected PET is strongly encouraged. Use of PET for treatment monitoring during a course of therapy should only be done in a clinical trial or as part of a prospective registry. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0283",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0283_landmark_kdoqi_clinical_practice_guideline_for_vascular_access_2019_u.md",
+   "snippet": "Title KDOQI Clinical Practice Guideline for Vascular Access: 2019 Update Authors Lok Charmaine E, Huber Thomas S, Lee Timmy, Shenoy Surendra, Yevzlin Alexander S, Abreo Kenneth, Allon Michael, Asif Arif, et al. Journal / DOI American journa",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title KDOQI Clinical Practice Guideline for Vascular Access: 2019 Update Authors Lok Charmaine E, Huber Thomas S, Lee Timmy, Shenoy Surendra, Yevzlin Alexander S, Abreo Kenneth, Allon Michael, Asif Arif, et al. Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · DOI: 10.1053/j.ajkd.2019.12.001 · PMID: 32778223 https://pubmed.ncbi.nlm.nih.gov/32778223/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1813회 · RCR 153.24 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The National Kidney Foundation's Kidney Disease Outcomes Quality Initiative (KDOQI) has provided evidence based guidelines for hemodialysis vascular access since 1996. Since the last update in 2006, there has been a great accumulation of new evidence and sophistication in the guidelines process. The 2019 update to the KDOQI Clinical Practice Guideline for Vascular Access is a comprehensive document intended to assist multidisciplinary practitioners care for chronic kidney disease patients and their vascular access. New topics include the end stage kidney disease \"Life Plan\" and related concepts, guidance on vascular access choice, new targets for arteriovenous access (fistulas and grafts) and central venous catheters, management of specific complications, and renewed approaches to some older topics. Appraisal of the quality of the evidence was independently conducted by using a Grading of Recommendations Assessment, Development, and Evaluation (GRADE) approach, and interpretation and application followed the GRADE Evidence to Decision frameworks. As applicable, each guideline statement is accompanied by rationale/background information, a detailed justification, monitoring and evaluation guidance, implementation considerations, special discussions, and recommendations for future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0282",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Lancet. Infectious diseases",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0282_landmark_procalcitonin_as_a_diagnostic_marker_for_sepsis_a_systematic.md",
+   "snippet": "Title Procalcitonin as a diagnostic marker for sepsis: a systematic review and meta analysis Authors Wacker Christina, Prkno Anna, Brunkhorst Frank M, Schlattmann Peter Journal / DOI The Lancet. Infectious diseases · DOI: 10.1016/S1473 3099",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / The Lancet. Infectious diseases Title Procalcitonin as a diagnostic marker for sepsis: a systematic review and meta analysis Authors Wacker Christina, Prkno Anna, Brunkhorst Frank M, Schlattmann Peter Journal / DOI The Lancet. Infectious diseases · DOI: 10.1016/S1473 3099(12)70323 7 · PMID: 23375419 https://pubmed.ncbi.nlm.nih.gov/23375419/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 836회 · RCR 32.21 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Procalcitonin is a promising marker for identification of bacterial infections. We assessed the accuracy and clinical value of procalcitonin for diagnosis of sepsis in critically ill patients. METHODS: We searched Medline, Embase, ISI Web of Knowledge, the Cochrane Library, Scopus, BioMed Central, and Science Direct, from inception to Feb 21, 2012, and reference lists of identified primary studies. We included articles written in English, German, or French that investigated procalcitonin for differentiation of septic patients those with sepsis, severe sepsis, or septic shock from those with a systemic inflammatory response syndrome of non infectious origin. Studies of healthy people, patients without probable infection, and children younger than 28 days were excluded. Two independent investigators extracted patient and study characteristics; discrepancies were resolved by consensus. We calculated individual and pooled sensitivities and specificities. We used I(2) to test heterogeneity and investigated the source of heterogeneity by metaregression. FINDINGS: Our search returned 3487 reports, of which 30 fulfilled the inclusion criteria, accounting for 3244 patients. Bivariate analysis yielded a mean sensitivity of 0 · 77 (95% CI 0 · 72 0 · 81) and specificity of 0 · 79 (95% CI 0 · 74 0 · 84). The area under the receiver operating characteristic curve was 0 · 85 (95% CI 0 · 81 0 · 88). The studies had substantial heterogeneity (I(2)=96%, 95% CI 94 99). None of the subgroups investigated population, admission category, assay used, severity of disease, and description and masking of the reference standard could account for the heterogeneity. INTERPRETATION: Procalcitonin is a helpful biomarker for early diagnosis of sepsis in critically ill patients. Nevertheless, the results of the test must be interpreted carefully in the context of medical history, physical examination, and microbiological assessment. FUNDING: Ministry of Education and Research, the Deutsche Forschungsgemeinschaft, Thuringian Ministry for Education, Science and Culture, the Thuringian Foundation for Technology, Innovation and Research, and the German Sepsis Society. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0281",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0281_landmark_2014_aha_acc_hrs_guideline_for_the_management_of_patients_wi.md",
+   "snippet": "Title 2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines and the Heart Rhythm Society Authors Janua",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2014 AHA/ACC/HRS guideline for the management of patients with atrial fibrillation: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines and the Heart Rhythm Society Authors January Craig T, Wann L Samuel, Alpert Joseph S, Calkins Hugh, Cigarroa Joaquin E, Cleveland Joseph C, Conti Jamie B, Ellinor Patrick T, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2014.03.022 · PMID: 24685669 https://pubmed.ncbi.nlm.nih.gov/24685669/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 3175회 · RCR 125.02 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0280",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Medical image analysis",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0280_landmark_image_analysis_and_machine_learning_in_digital_pathology_cha.md",
+   "snippet": "Title Image analysis and machine learning in digital pathology: Challenges and opportunities Authors Madabhushi Anant, Lee George Journal / DOI Medical image analysis · DOI: 10.1016/j.media.2016.06.037 · PMID: 27423409 https://pubmed.ncbi.n",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Medical image analysis Title Image analysis and machine learning in digital pathology: Challenges and opportunities Authors Madabhushi Anant, Lee George Journal / DOI Medical image analysis · DOI: 10.1016/j.media.2016.06.037 · PMID: 27423409 https://pubmed.ncbi.nlm.nih.gov/27423409/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 600회 · RCR 23.64 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract With the rise in whole slide scanner technology, large numbers of tissue slides are being scanned and represented and archived digitally. While digital pathology has substantial implications for telepathology, second opinions, and education there are also huge research opportunities in image computing with this new source of \"big data\". It is well known that there is fundamental prognostic data embedded in pathology images. The ability to mine \"sub visual\" image features from digital pathology slide images, features that may not be visually discernible by a pathologist, offers the opportunity for better quantitative modeling of disease appearance and hence possibly improved prediction of disease aggressiveness and patient outcome. However the compelling opportunities in precision medicine offered by big digital pathology data come with their own set of computational challenges. Image analysis and computer assisted detection and diagnosis tools previously developed in the context of radiographic images are woefully inadequate to deal with the data density in high resolution digitized whole slide images. Additionally there has been recent substantial interest in combining and fusing radiologic imaging and proteomics and genomics based measurements with features extracted from digital pathology images for better prognostic prediction of disease aggressiveness and patient outcome. Again there is a paucity of powerful tools for combining disease specific features that manifest across multiple different length scales. The purpose of this review is to discuss developments in computational image analysis tools for predictive modeling of digital pathology images from a detection, segmentation, feature extraction, and tissue classification perspective. We discuss the emergence of new handcrafted feature approaches for improved predictive modeling of tissue appearance and also review the emergence of deep learning schemes for both object detection and tissue classification. We also briefly review some of the state of the art in fusion of radiology and pathology images and also combining digital pathology derived image measurements with molecular \"omics\" features for better predictive modeling. The review ends with a brief discussion of some of the technical and computational challenges to be overcome and reflects on future opportunities for the quantitation of histopathology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0279",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the National Comprehensive Cancer Network : JNCCN",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0279_landmark_prostate_cancer_version_2_2019_nccn_clinical_practice_guidel.md",
+   "snippet": "Title Prostate Cancer, Version 2.2019, NCCN Clinical Practice Guidelines in Oncology Authors Mohler James L, Antonarakis Emmanuel S, Armstrong Andrew J, D'Amico Anthony V, Davis Brian J, Dorff Tanya, Eastham James A, Enke Charles A, et al. ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of the National Comprehensive Cancer Network : JNCCN Title Prostate Cancer, Version 2.2019, NCCN Clinical Practice Guidelines in Oncology Authors Mohler James L, Antonarakis Emmanuel S, Armstrong Andrew J, D'Amico Anthony V, Davis Brian J, Dorff Tanya, Eastham James A, Enke Charles A, et al. Journal / DOI Journal of the National Comprehensive Cancer Network : JNCCN · DOI: 10.6004/jnccn.2019.0023 · PMID: 31085757 https://pubmed.ncbi.nlm.nih.gov/31085757/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1048회 · RCR 50.72 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The NCCN Guidelines for Prostate Cancer include recommendations regarding diagnosis, risk stratification and workup, treatment options for localized disease, and management of recurrent and advanced disease for clinicians who treat patients with prostate cancer. The portions of the guidelines included herein focus on the roles of germline and somatic genetic testing, risk stratification with nomograms and tumor multigene molecular testing, androgen deprivation therapy, secondary hormonal therapy, chemotherapy, and immunotherapy in patients with prostate cancer. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0278",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0278_landmark_k_doqi_clinical_practice_guidelines_for_bone_metabolism_and_.md",
+   "snippet": "Title K/DOQI clinical practice guidelines for bone metabolism and disease in chronic kidney disease Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundatio",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title K/DOQI clinical practice guidelines for bone metabolism and disease in chronic kidney disease Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · PMID: 14520607 https://pubmed.ncbi.nlm.nih.gov/14520607/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 1974회 · RCR 61.05 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0277",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical nutrition (Edinburgh, Scotland)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0277_landmark_espen_guidelines_on_enteral_nutrition_intensive_care.md",
+   "snippet": "Title ESPEN Guidelines on Enteral Nutrition: Intensive care Authors Kreymann K G, Berger M M, Deutz N E P, Hiesmayr M, Jolliet P, Kazandjiev G, Nitenberg G, van den Berghe G, et al. Journal / DOI Clinical nutrition (Edinburgh, Scotland) · P",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Clinical nutrition (Edinburgh, Scotland) Title ESPEN Guidelines on Enteral Nutrition: Intensive care Authors Kreymann K G, Berger M M, Deutz N E P, Hiesmayr M, Jolliet P, Kazandjiev G, Nitenberg G, van den Berghe G, et al. Journal / DOI Clinical nutrition (Edinburgh, Scotland) · PMID: 16697087 https://pubmed.ncbi.nlm.nih.gov/16697087/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 848회 · RCR 28.84 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Enteral nutrition (EN) via tube feeding is, today, the preferred way of feeding the critically ill patient and an important means of counteracting for the catabolic state induced by severe diseases. These guidelines are intended to give evidence based recommendations for the use of EN in patients who have a complicated course during their ICU stay, focusing particularly on those who develop a severe inflammatory response, i.e. patients who have failure of at least one organ during their ICU stay. These guidelines were developed by an interdisciplinary expert group in accordance with officially accepted standards and are based on all relevant publications since 1985. They were discussed and accepted in a consensus conference. EN should be given to all ICU patients who are not expected to be taking a full oral diet within three days. It should have begun during the first 24h using a standard high protein formula. During the acute and initial phases of critical illness an exogenous energy supply in excess of 20 25 kcal/kg BW/day should be avoided, whereas, during recovery, the aim should be to provide values of 25 30 total kcal/kg BW/day. Supplementary parenteral nutrition remains a reserve tool and should be given only to those patients who do not reach their target nutrient intake on EN alone. There is no general indication for immune modulating formulae in patients with severe illness or sepsis and an APACHE II Score 15. Glutamine should be supplemented in patients suffering from burns or trauma. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0276",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0276_landmark_guidelines_for_the_management_of_atrial_fibrillation_the_tas.md",
+   "snippet": "Title Guidelines for the management of atrial fibrillation: the Task Force for the Management of Atrial Fibrillation of the European Society of Cardiology (ESC) Authors European Heart Rhythm Association, European Association for Cardio Thor",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title Guidelines for the management of atrial fibrillation: the Task Force for the Management of Atrial Fibrillation of the European Society of Cardiology (ESC) Authors European Heart Rhythm Association, European Association for Cardio Thoracic Surgery, Camm A John, Kirchhof Paulus, Lip Gregory Y H, Schotten Ulrich, Savelieva Irene, Ernst Sabine, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehq278 · PMID: 20802247 https://pubmed.ncbi.nlm.nih.gov/20802247/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 3344회 · RCR 106.09 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0275",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Lancet (London, England)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0275_landmark_malignant_mesothelioma.md",
+   "snippet": "Title Malignant mesothelioma Authors Robinson Bruce W S, Musk Arthur W, Lake Richard A Journal / DOI Lancet (London, England) · PMID: 16054941 https://pubmed.ncbi.nlm.nih.gov/16054941/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 606회 · ",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Lancet (London, England) Title Malignant mesothelioma Authors Robinson Bruce W S, Musk Arthur W, Lake Richard A Journal / DOI Lancet (London, England) · PMID: 16054941 https://pubmed.ncbi.nlm.nih.gov/16054941/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 606회 · RCR 14.00 (분야평균=1.0) · NIH 상위 백분위 98.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Malignant mesothelioma is an aggressive, treatment resistant tumour, which is increasing in frequency throughout the world. Although the main risk factor is asbestos exposure, a virus, simian virus 40 (SV40), could have a role. Mesothelioma has an unusual molecular pathology with loss of tumour suppressor genes being the predominant pattern of lesions, especially the P16INK4A, and P14ARF, and NF2 genes, rather than the more common p53 and Rb tumour suppressor genes. Cytopathology of mesothelioma effusions or fine needle aspirations are often sufficient to establish a diagnosis, but histopathology is also often required. Patients typically present with breathlessness and chest pain with pleural effusions. Median survival is now 12 months from diagnosis. Palliative chemotherapy is beneficial for mesothelioma patients with high performance status. The role of aggressive surgery remains controversial and growth factor receptor blockade is still unproven. Gene therapy and immunotherapy are used on an experimental basis only. Patterns identified from microarray studies could be useful for diagnosis as well as prognostication. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0274",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of allergy and clinical immunology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0274_landmark_allergic_rhinitis_and_its_impact_on_asthma_aria_guidelines_2.md",
+   "snippet": "Title Allergic Rhinitis and its Impact on Asthma (ARIA) guidelines: 2010 revision Authors Brozek Jan L, Bousquet Jean, Baena Cagnani Carlos E, Bonini Sergio, Canonica G Walter, Casale Thomas B, van Wijk Roy Gerth, Ohta Ken, et al. Journal /",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / The Journal of allergy and clinical immunology Title Allergic Rhinitis and its Impact on Asthma (ARIA) guidelines: 2010 revision Authors Brozek Jan L, Bousquet Jean, Baena Cagnani Carlos E, Bonini Sergio, Canonica G Walter, Casale Thomas B, van Wijk Roy Gerth, Ohta Ken, et al. Journal / DOI The Journal of allergy and clinical immunology · DOI: 10.1016/j.jaci.2010.06.047 · PMID: 20816182 https://pubmed.ncbi.nlm.nih.gov/20816182/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1063회 · RCR 39.89 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Allergic rhinitis represents a global health problem affecting 10% to 20% of the population. The Allergic Rhinitis and its Impact on Asthma (ARIA) guidelines have been widely used to treat the approximately 500 million affected patients globally. OBJECTIVE: To develop explicit, unambiguous, and transparent clinical recommendations systematically for treatment of allergic rhinitis on the basis of current best evidence. METHODS: The authors updated ARIA clinical recommendations in collaboration with Global Allergy and Asthma European Network following the approach suggested by the Grading of Recommendations Assessment, Development and Evaluation working group. RESULTS: This article presents recommendations about the prevention of allergic diseases, the use of oral and topical medications, allergen specific immunotherapy, and complementary treatments in patients with allergic rhinitis as well as patients with both allergic rhinitis and asthma. The guideline panel developed evidence profiles for each recommendation and considered health benefits and harms, burden, patient preferences, and resource use, when appropriate, to formulate recommendations for patients, clinicians, and other health care professionals. CONCLUSION: These are the most recent and currently the most systematically and transparently developed recommendations about the treatment of allergic rhinitis in adults and children. Patients, clinicians, and policy makers are encouraged to use these recommendations in their daily practice and to support their decisions. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0273",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international. Supplement",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0273_landmark_kdigo_clinical_practice_guideline_for_the_diagnosis_evaluati.md",
+   "snippet": "Title KDIGO clinical practice guideline for the diagnosis, evaluation, prevention, and treatment of Chronic Kidney Disease Mineral and Bone Disorder (CKD MBD) Authors Kidney Disease: Improving Global Outcomes (KDIGO) CKD MBD Work Group Jour",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international. Supplement Title KDIGO clinical practice guideline for the diagnosis, evaluation, prevention, and treatment of Chronic Kidney Disease Mineral and Bone Disorder (CKD MBD) Authors Kidney Disease: Improving Global Outcomes (KDIGO) CKD MBD Work Group Journal / DOI Kidney international. Supplement · DOI: 10.1038/ki.2009.188 · PMID: 19644521 https://pubmed.ncbi.nlm.nih.gov/19644521/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 2319회 · RCR 78.89 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The 2009 Kidney Disease: Improving Global Outcomes (KDIGO) clinical practice guideline on the management of chronic kidney disease mineral and bone disorder (CKD MBD) is intended to assist the practitioner caring for adults and children with CKD stages 3 5, on chronic dialysis therapy, or with a kidney transplant. The guideline contains recommendations on evaluation and treatment for abnormalities of CKD MBD. This disease concept of CKD MBD is based on a prior KDIGO consensus conference. Tests considered are those that relate to the detection and monitoring of laboratory, bone, and cardiovascular abnormalities. Treatments considered are interventions to treat hyperphosphatemia, hyperparathyroidism, and bone disease in patients with CKD stages 3 5D and 1 5T. The guideline development process followed an evidence based approach and treatment recommendations are based on systematic reviews of relevant treatment trials. Recommendations for testing used evidence based on diagnostic accuracy or risk prediction and linked it indirectly with how this would be expected to achieve better outcomes for patients through better detection, evaluation or treatment of disease. Critical appraisal of the quality of the evidence and the strength of recommendations followed the GRADE approach. An ungraded statement was provided when a question did not lend itself to systematic literature review. Limitations of the evidence, especially the lack of definitive clinical outcome trials, are discussed and suggestions are provided for future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0272",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0272_landmark_infective_endocarditis_diagnosis_antimicrobial_therapy_and_m.md",
+   "snippet": "Title Infective endocarditis: diagnosis, antimicrobial therapy, and management of complications: a statement for healthcare professionals from the Committee on Rheumatic Fever, Endocarditis, and Kawasaki Disease, Council on Cardiovascular D",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Circulation Title Infective endocarditis: diagnosis, antimicrobial therapy, and management of complications: a statement for healthcare professionals from the Committee on Rheumatic Fever, Endocarditis, and Kawasaki Disease, Council on Cardiovascular Disease in the Young, and the Councils on Clinical Cardiology, Stroke, and Cardiovascular Surgery and Anesthesia, American Heart Association: endorsed by the Infectious Diseases Society of America Authors Baddour Larry M, Wilson Walter R, Bayer Arnold S, Fowler Vance G, Bolger Ann F, Levison Matthew E, Ferrieri Patricia, Gerber Michael A, et al. Journal / DOI Circulation · PMID: 15956145 https://pubmed.ncbi.nlm.nih.gov/15956145/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 1198회 · RCR 37.57 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: Despite advances in medical, surgical, and critical care interventions, infective endocarditis remains a disease that is associated with considerable morbidity and mortality. The continuing evolution of antimicrobial resistance among common pathogens that cause infective endocarditis creates additional therapeutic issues for physicians to manage in this potentially life threatening illness. METHODS AND RESULTS: This work represents the third iteration of an infective endocarditis \"treatment\" document developed by the American Heart Association under the auspices of the Committee on Rheumatic Fever, Endocarditis, and Kawasaki Disease, Council on Cardiovascular Disease of the Young. It updates recommendations for diagnosis, treatment, and management of complications of infective endocarditis. A multidisciplinary committee of experts drafted this document to assist physicians in the evolving care of patients with infective endocarditis in the new millennium. This extensive document is accompanied by an executive summary that covers the key points of the diagnosis, antimicrobial therapy, and management of infective endocarditis. For the first time, an evidence based scoring system that is used by the American College of Cardiology and the American Heart Association was applied to treatment recommendations. Tables also have been included that provide input on the use of echocardiography during diagnosis and treatment of infective endocarditis, evaluation and treatment of culture negative endocarditis, and short term and long term management of patients during and after completion of antimicrobial treatment. To assist physicians who care for children, pediatric dosing was added to each treatment regimen. CONCLUSIONS: The recommendations outlined in this update should assist physicians in all aspects of patient care in the diagnosis, medical and surgical treatment, and follow up of infective endocarditis, as well as management of associated complications. Clinical variability and complexity in infective endocarditis, however, dictate that these guidelines be used to support and not supplant physician directed decisions in individual patient management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0271",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0271_landmark_2014_esc_guidelines_on_diagnosis_and_management_of_hypertrop.md",
+   "snippet": "Title 2014 ESC Guidelines on diagnosis and management of hypertrophic cardiomyopathy: the Task Force for the Diagnosis and Management of Hypertrophic Cardiomyopathy of the European Society of Cardiology (ESC) Authors Authors/Task Force memb",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2014 ESC Guidelines on diagnosis and management of hypertrophic cardiomyopathy: the Task Force for the Diagnosis and Management of Hypertrophic Cardiomyopathy of the European Society of Cardiology (ESC) Authors Authors/Task Force members, Elliott Perry M, Anastasakis Aris, Borger Michael A, Borggrefe Martin, Cecchi Franco, Charron Philippe, Hagege Albert Alain, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehu284 · PMID: 25173338 https://pubmed.ncbi.nlm.nih.gov/25173338/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 3427회 · RCR 128.07 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0270",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neurology, neurosurgery, and psychiatry",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0270_landmark_heterogeneity_of_small_vessel_disease_a_systematic_review_of.md",
+   "snippet": "Title Heterogeneity of small vessel disease: a systematic review of MRI and histopathology correlations Authors Gouw Alida A, Seewann Alexandra, van der Flier Wiesje M, Barkhof Frederik, Rozemuller Annemieke M, Scheltens Philip, Geurts Jero",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Journal of neurology, neurosurgery, and psychiatry Title Heterogeneity of small vessel disease: a systematic review of MRI and histopathology correlations Authors Gouw Alida A, Seewann Alexandra, van der Flier Wiesje M, Barkhof Frederik, Rozemuller Annemieke M, Scheltens Philip, Geurts Jeroen J G Journal / DOI Journal of neurology, neurosurgery, and psychiatry · DOI: 10.1136/jnnp.2009.204685 · PMID: 20935330 https://pubmed.ncbi.nlm.nih.gov/20935330/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 620회 · RCR 20.06 (분야평균=1.0) · NIH 상위 백분위 99.3. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: White matter hyperintensities (WMH), lacunes and microbleeds are regarded as typical MRI expressions of cerebral small vessel disease (SVD) and they are highly prevalent in the elderly. However, clinical expression of MRI defined SVD is generally moderate and heterogeneous. By reviewing studies that directly correlated postmortem MRI and histopathology, this paper aimed to characterise the pathological substrates of SVD in order to create more understanding as to its heterogeneous clinical manifestation. SUMMARY: Postmortem studies showed that WMH are also heterogeneous in terms of histopathology. Damage to the tissue ranges from slight disentanglement of the matrix to varying degrees of myelin and axonal loss. Glial cell responses include astrocytic reactions for example, astrogliosis and clasmatodendrosis as well as loss of oligodendrocytes and distinct microglial responses. Lipohyalinosis, arteriosclerosis, vessel wall leakage and collagen deposition in venular walls are recognised microvascular changes. Suggested pathogenetic mechanisms are ischaemia/hypoxia, hypoperfusion due to altered cerebrovascular autoregulation, blood brain barrier leakage, inflammation, degeneration and amyloid angiopathy. Only a few postmortem MRI studies have addressed lacunes and microbleeds to date. Cortical microinfarcts and changes in the normal appearing white matter are 'invisible' on conventional MRI but are nevertheless expected to contribute substantially to clinical symptoms. CONCLUSION: Pathological substrates of WMH are heterogeneous in nature and severity, which may partly explain the weak clinicoradiological associations found in SVD. Lacunes and microbleeds have been relatively understudied and need to be further investigated. Future studies should also take into account 'MRI invisible' SVD features and consider the use of, for example, quantitative MRI techniques, to increase the sensitivity of MRI for these abnormalities and study their effects on clinical functioning. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0269",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0269_landmark_2006_update_of_recommendations_for_the_use_of_white_blood_ce.md",
+   "snippet": "Title 2006 update of recommendations for the use of white blood cell growth factors: an evidence based clinical practice guideline Authors Smith Thomas J, Khatcheressian James, Lyman Gary H, Ozer Howard, Armitage James O, Balducci Lodovico,",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title 2006 update of recommendations for the use of white blood cell growth factors: an evidence based clinical practice guideline Authors Smith Thomas J, Khatcheressian James, Lyman Gary H, Ozer Howard, Armitage James O, Balducci Lodovico, Bennett Charles L, Cantor Scott B, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · PMID: 16682719 https://pubmed.ncbi.nlm.nih.gov/16682719/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1140회 · RCR 29.03 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: To update the 2000 American Society of Clinical Oncology guideline on the use of hematopoietic colony stimulating factors (CSF). UPDATE METHODOLOGY: The Update Committee completed a review and analysis of pertinent data published from 1999 through September 2005. Guided by the 1996 ASCO clinical outcomes criteria, the Update Committee formulated recommendations based on improvements in survival, quality of life, toxicity reduction and cost effectiveness. RECOMMENDATIONS: The 2005 Update Committee agreed unanimously that reduction in febrile neutropenia (FN) is an important clinical outcome that justifies the use of CSFs, regardless of impact on other factors, when the risk of FN is approximately 20% and no other equally effective regimen that does not require CSFs is available. Primary prophylaxis is recommended for the prevention of FN in patients who are at high risk based on age, medical history, disease characteristics, and myelotoxicity of the chemotherapy regimen. CSF use allows a modest to moderate increase in dose density and/or dose intensity of chemotherapy regimens. Dose dense regimens should only be used within an appropriately designed clinical trial or if supported by convincing efficacy data. Prophylactic CSF for patients with diffuse aggressive lymphoma aged 65 years and older treated with curative chemotherapy (CHOP or more aggressive regimens) should be given to reduce the incidence of FN and infections. Current recommendations for the management of patients exposed to lethal doses of total body radiotherapy, but not doses high enough to lead to certain death due to injury to other organs, includes the prompt administration of CSF or pegylated G CSF. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0268",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0268_landmark_2022_aha_acc_hfsa_guideline_for_the_management_of_heart_fail.md",
+   "snippet": "Title 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Heidenreich Paul A, Bozkurt Biykem, Agu",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Heidenreich Paul A, Bozkurt Biykem, Aguilar David, Allen Larry A, Byun Joni J, Colvin Monica M, Deswal Anita, Drazner Mark H, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2021.12.012 · PMID: 35379503 https://pubmed.ncbi.nlm.nih.gov/35379503/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 2377회 · RCR 233.82 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract AIM: The \"2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure\" replaces the \"2013 ACCF/AHA Guideline for the Management of Heart Failure\" and the \"2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure.\" The 2022 guideline is intended to provide patient centric recommendations for clinicians to prevent, diagnose, and manage patients with heart failure. METHODS: A comprehensive literature search was conducted from May 2020 to December 2020, encompassing studies, reviews, and other evidence conducted on human subjects that were published in English from MEDLINE (PubMed), EMBASE, the Cochrane Collaboration, the Agency for Healthcare Research and Quality, and other relevant databases. Additional relevant clinical trials and research studies, published through September 2021, were also considered. This guideline was harmonized with other American Heart Association/American College of Cardiology guidelines published through December 2021. STRUCTURE: Heart failure remains a leading cause of morbidity and mortality globally. The 2022 heart failure guideline provides recommendations based on contemporary evidence for the treatment of these patients. The recommendations present an evidence based approach to managing patients with heart failure, with the intent to improve quality of care and align with patients' interests. Many recommendations from the earlier heart failure guidelines have been updated with new evidence, and new recommendations have been created when supported by published data. Value statements are provided for certain treatments with high quality published economic analyses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0267",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0267_landmark_prevention_of_perinatal_group_b_streptococcal_disease_revise.md",
+   "snippet": "Title Prevention of perinatal group B streptococcal disease revised guidelines from CDC, 2010 Authors Verani Jennifer R, McGee Lesley, Schrag Stephanie J, Division of Bacterial Diseases, National Center for Immunization and Respiratory Dise",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports Title Prevention of perinatal group B streptococcal disease revised guidelines from CDC, 2010 Authors Verani Jennifer R, McGee Lesley, Schrag Stephanie J, Division of Bacterial Diseases, National Center for Immunization and Respiratory Diseases, Centers for Disease Control and Prevention (CDC) Journal / DOI MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports · PMID: 21088663 https://pubmed.ncbi.nlm.nih.gov/21088663/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 1351회 · RCR 45.52 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Despite substantial progress in prevention of perinatal group B streptococcal (GBS) disease since the 1990s, GBS remains the leading cause of early onset neonatal sepsis in the United States. In 1996, CDC, in collaboration with relevant professional societies, published guidelines for the prevention of perinatal group B streptococcal disease (CDC. Prevention of perinatal group B streptococcal disease: a public health perspective. MMWR 1996;45[No. RR 7]); those guidelines were updated and republished in 2002 (CDC. Prevention of perinatal group B streptococcal disease: revised guidelines from CDC. MMWR 2002;51[No. RR 11]). In June 2009, a meeting of clinical and public health representatives was held to reevaluate prevention strategies on the basis of data collected after the issuance of the 2002 guidelines. This report presents CDC's updated guidelines, which have been endorsed by the American College of Obstetricians and Gynecologists, the American Academy of Pediatrics, the American College of Nurse Midwives, the American Academy of Family Physicians, and the American Society for Microbiology. The recommendations were made on the basis of available evidence when such evidence was sufficient and on expert opinion when available evidence was insufficient. The key changes in the 2010 guidelines include the following: • expanded recommendations on laboratory methods for the identification of GBS, • clarification of the colony count threshold required for reporting GBS detected in the urine of pregnant women, • updated algorithms for GBS screening and intrapartum chemoprophylaxis for women with preterm labor or preterm premature rupture of membranes, • a change in the recommended dose of penicillin G for chemoprophylaxis, • updated prophylaxis regimens for women with penicillin allergy, and • a revised algorithm for management of newborns with respect to risk for early onset GBS disease. Universal screening at 35 37 weeks' gestation for maternal GBS colonization and use of intrapartum antibiotic prophylaxis has resulted in substantial reductions in the burden of early onset GBS disease among newborns. Although early onset GBS disease has become relatively uncommon in recent years, the rates of maternal GBS colonization (and therefore the risk for early onset GBS disease in the absence of intrapartum antibiotic prophylaxis) remain unchanged since the 1970s. Continued efforts are needed to sustain and improve on the progress achieved in the prevention of GBS disease. There also is a need to monitor for potential adverse consequences of intrapartum antibiotic prophylaxis (e.g., emergence of bacterial antimicrobial resistance or increased incidence or severity of non GBS neonatal pathogens). In the absence of a licensed GBS vaccine, universal screening and intrapartum antibiotic prophylaxis continue to be the cornerstones of early onset GBS disease prevention. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0266",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0266_landmark_2019_esc_guidelines_for_the_diagnosis_and_management_of_acut.md",
+   "snippet": "Title 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS) Authors Konstantinides Stavros V, Meyer Guy, Becattini Cecilia, Bueno Héctor, Geer",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS) Authors Konstantinides Stavros V, Meyer Guy, Becattini Cecilia, Bueno Héctor, Geersing Geert Jan, Harjola Veli Pekka, Huisman Menno V, Humbert Marc, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehz405 · PMID: 31504429 https://pubmed.ncbi.nlm.nih.gov/31504429/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 3559회 · RCR 245.69 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0265",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of pathology & laboratory medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0265_landmark_updated_molecular_testing_guideline_for_the_selection_of_lun.md",
+   "snippet": "Title Updated Molecular Testing Guideline for the Selection of Lung Cancer Patients for Treatment With Targeted Tyrosine Kinase Inhibitors: Guideline From the College of American Pathologists, the International Association for the Study of ",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Archives of pathology & laboratory medicine Title Updated Molecular Testing Guideline for the Selection of Lung Cancer Patients for Treatment With Targeted Tyrosine Kinase Inhibitors: Guideline From the College of American Pathologists, the International Association for the Study of Lung Cancer, and the Association for Molecular Pathology Authors Lindeman Neal I, Cagle Philip T, Aisner Dara L, Arcila Maria E, Beasley Mary Beth, Bernicker Eric H, Colasacco Carol, Dacic Sanja, et al. Journal / DOI Archives of pathology & laboratory medicine · DOI: 10.5858/arpa.2017 0388 CP · PMID: 29355391 https://pubmed.ncbi.nlm.nih.gov/29355391/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 655회 · RCR 26.57 (분야평균=1.0) · NIH 상위 백분위 99.6. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract CONTEXT: In 2013, an evidence based guideline was published by the College of American Pathologists, the International Association for the Study of Lung Cancer, and the Association for Molecular Pathology to set standards for the molecular analysis of lung cancers to guide treatment decisions with targeted inhibitors. New evidence has prompted an evaluation of additional laboratory technologies, targetable genes, patient populations, and tumor types for testing. OBJECTIVE: To systematically review and update the 2013 guideline to affirm its validity; to assess the evidence of new genetic discoveries, technologies, and therapies; and to issue an evidence based update. DESIGN: The College of American Pathologists, the International Association for the Study of Lung Cancer, and the Association for Molecular Pathology convened an expert panel to develop an evidence based guideline to help define the key questions and literature search terms, review abstracts and full articles, and draft recommendations. RESULTS: Eighteen new recommendations were drafted. The panel also updated 3 recommendations from the 2013 guideline. CONCLUSIONS: The 2013 guideline was largely reaffirmed with updated recommendations to allow testing of cytology samples, require improved assay sensitivity, and recommend against the use of immunohistochemistry for EGFR testing. Key new recommendations include ROS1 testing for all adenocarcinoma patients; the inclusion of additional genes ( ERBB2, MET, BRAF, KRAS, and RET) for laboratories that perform next generation sequencing panels; immunohistochemistry as an alternative to fluorescence in situ hybridization for ALK and/or ROS1 testing; use of 5% sensitivity assays for EGFR T790M mutations in patients with secondary resistance to EGFR inhibitors; and the use of cell free DNA to \"rule in\" targetable mutations when tissue is limited or hard to obtain. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0264",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / The American journal of gastroenterology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0264_landmark_acg_clinical_guidelines_diagnosis_and_management_of_celiac_d.md",
+   "snippet": "Title ACG clinical guidelines: diagnosis and management of celiac disease Authors Rubio Tapia Alberto, Hill Ivor D, Kelly Ciarán P, Calderwood Audrey H, Murray Joseph A, American College of Gastroenterology Journal / DOI The American journa",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / The American journal of gastroenterology Title ACG clinical guidelines: diagnosis and management of celiac disease Authors Rubio Tapia Alberto, Hill Ivor D, Kelly Ciarán P, Calderwood Audrey H, Murray Joseph A, American College of Gastroenterology Journal / DOI The American journal of gastroenterology · DOI: 10.1038/ajg.2013.79 · PMID: 23609613 https://pubmed.ncbi.nlm.nih.gov/23609613/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1170회 · RCR 46.64 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract This guideline presents recommendations for the diagnosis and management of patients with celiac disease. Celiac disease is an immune based reaction to dietary gluten (storage protein for wheat, barley, and rye) that primarily affects the small intestine in those with a genetic predisposition and resolves with exclusion of gluten from the diet. There has been a substantial increase in the prevalence of celiac disease over the last 50 years and an increase in the rate of diagnosis in the last 10 years. Celiac disease can present with many symptoms, including typical gastrointestinal symptoms (e.g., diarrhea, steatorrhea, weight loss, bloating, flatulence, abdominal pain) and also non gastrointestinal abnormalities (e.g., abnormal liver function tests, iron deficiency anemia, bone disease, skin disorders, and many other protean manifestations). Indeed, many individuals with celiac disease may have no symptoms at all. Celiac disease is usually detected by serologic testing of celiac specific antibodies. The diagnosis is confirmed by duodenal mucosal biopsies. Both serology and biopsy should be performed on a gluten containing diet. The treatment for celiac disease is primarily a gluten free diet (GFD), which requires significant patient education, motivation, and follow up. Non responsive celiac disease occurs frequently, particularly in those diagnosed in adulthood. Persistent or recurring symptoms should lead to a review of the patient's original diagnosis to exclude alternative diagnoses, a review of the GFD to ensure there is no obvious gluten contamination, and serologic testing to confirm adherence with the GFD. In addition, evaluation for disorders associated with celiac disease that could cause persistent symptoms, such as microscopic colitis, pancreatic exocrine dysfunction, and complications of celiac disease, such as enteropathy associated lymphoma or refractory celiac disease, should be entertained. Newer therapeutic modalities are being studied in clinical trials, but are not yet approved for use in practice. Given the incomplete response of many patients to a GFD free diet as well as the difficulty of adherence to the GFD over the long term, development of new effective therapies for symptom control and reversal of inflammation and organ damage are needed. The prevalence of celiac disease is increasing worldwide and many patients with celiac disease remain undiagnosed, highlighting the need for improved strategies in the future for the optimal detection of patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0263",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of internal medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0263_landmark_evaluation_and_management_of_chronic_kidney_disease_synopsis.md",
+   "snippet": "Title Evaluation and management of chronic kidney disease: synopsis of the kidney disease: improving global outcomes 2012 clinical practice guideline Authors Stevens Paul E, Levin Adeera, Kidney Disease: Improving Global Outcomes Chronic Ki",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Annals of internal medicine Title Evaluation and management of chronic kidney disease: synopsis of the kidney disease: improving global outcomes 2012 clinical practice guideline Authors Stevens Paul E, Levin Adeera, Kidney Disease: Improving Global Outcomes Chronic Kidney Disease Guideline Development Work Group Members Journal / DOI Annals of internal medicine · DOI: 10.7326/0003 4819 158 11 201306040 00007 · PMID: 23732715 https://pubmed.ncbi.nlm.nih.gov/23732715/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 2891회 · RCR 106.71 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract DESCRIPTION: The Kidney Disease: Improving Global Outcomes (KDIGO) organization developed clinical practice guidelines in 2012 to provide guidance on the evaluation, management, and treatment of chronic kidney disease (CKD) in adults and children who are not receiving renal replacement therapy. METHODS: The KDIGO CKD Guideline Development Work Group defined the scope of the guideline, gathered evidence, determined topics for systematic review, and graded the quality of evidence that had been summarized by an evidence review team. Searches of the English language literature were conducted through November 2012. Final modification of the guidelines was informed by the KDIGO Board of Directors and a public review process involving registered stakeholders. RECOMMENDATIONS: The full guideline included 110 recommendations. This synopsis focuses on 10 key recommendations pertinent to definition, classification, monitoring, and management of CKD in adults. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0262",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Intensive care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0262_landmark_surviving_sepsis_campaign_guidelines_on_the_management_of_cr.md",
+   "snippet": "Title Surviving Sepsis Campaign: guidelines on the management of critically ill adults with Coronavirus Disease 2019 (COVID 19) Authors Alhazzani Waleed, Møller Morten Hylander, Arabi Yaseen M, Loeb Mark, Gong Michelle Ng, Fan Eddy, Oczkows",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Intensive care medicine Title Surviving Sepsis Campaign: guidelines on the management of critically ill adults with Coronavirus Disease 2019 (COVID 19) Authors Alhazzani Waleed, Møller Morten Hylander, Arabi Yaseen M, Loeb Mark, Gong Michelle Ng, Fan Eddy, Oczkowski Simon, Levy Mitchell M, et al. Journal / DOI Intensive care medicine · DOI: 10.1007/s00134 020 06022 5 · PMID: 32222812 https://pubmed.ncbi.nlm.nih.gov/32222812/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 1352회 · RCR 81.32 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract BACKGROUND: The novel severe acute respiratory syndrome coronavirus 2 (SARS CoV 2) is the cause of a rapidly spreading illness, Coronavirus Disease 2019 (COVID 19), affecting thousands of people around the world. Urgent guidance for clinicians caring for the sickest of these patients is needed. METHODS: We formed a panel of 36 experts from 12 countries. All panel members completed the World Health Organization conflict of interest disclosure form. The panel proposed 53 questions that are relevant to the management of COVID 19 in the ICU. We searched the literature for direct and indirect evidence on the management of COVID 19 in critically ill patients in the ICU. We identified relevant and recent systematic reviews on most questions relating to supportive care. We assessed the certainty in the evidence using the Grading of Recommendations, Assessment, Development and Evaluation (GRADE) approach, then generated recommendations based on the balance between benefit and harm, resource and cost implications, equity, and feasibility. Recommendations were either strong or weak, or in the form of best practice recommendations. RESULTS: The Surviving Sepsis Campaign COVID 19 panel issued 54 statements, of which 4 are best practice statements, 9 are strong recommendations, and 35 are weak recommendations. No recommendation was provided for 6 questions. The topics were: (1) infection control, (2) laboratory diagnosis and specimens, (3) hemodynamic support, (4) ventilatory support, and (5) COVID 19 therapy. CONCLUSION: The Surviving Sepsis Campaign COVID 19 panel issued several recommendations to help support healthcare workers caring for critically ill ICU patients with COVID 19. When available, we will provide new recommendations in further releases of these guidelines. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0261",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0261_landmark_guidelines_for_the_ultrasound_assessment_of_endothelial_depe.md",
+   "snippet": "Title Guidelines for the ultrasound assessment of endothelial dependent flow mediated vasodilation of the brachial artery: a report of the International Brachial Artery Reactivity Task Force Authors Corretti Mary C, Anderson Todd J, Benjami",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title Guidelines for the ultrasound assessment of endothelial dependent flow mediated vasodilation of the brachial artery: a report of the International Brachial Artery Reactivity Task Force Authors Corretti Mary C, Anderson Todd J, Benjamin Emelia J, Celermajer David, Charbonneau Francois, Creager Mark A, Deanfield John, Drexler Helmut, et al. Journal / DOI Journal of the American College of Cardiology · PMID: 11788217 https://pubmed.ncbi.nlm.nih.gov/11788217/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 3783회 · RCR 103.55 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Endothelial function is thought to be an important factor in the pathogenesis of atherosclerosis, hypertension and heart failure. In the 1990s, high frequency ultrasonographic imaging of the brachial artery to assess endothelium dependent flow mediated vasodilation (FMD) was developed. The technique provokes the release of nitric oxide, resulting in vasodilation that can be quantitated as an index of vasomotor function. The noninvasive nature of the technique allows repeated measurements over time to study the effectiveness of various interventions that may affect vascular health. However, despite its widespread use, there are technical and interpretive limitations of this technique. State of the art information is presented and insights are provided into the strengths and limitations of high resolution ultrasonography of the brachial artery to evaluate vasomotor function, with guidelines for its research application in the study of endothelial physiology. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0260",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0260_landmark_molecular_testing_guideline_for_selection_of_lung_cancer_pat.md",
+   "snippet": "Title Molecular testing guideline for selection of lung cancer patients for EGFR and ALK tyrosine kinase inhibitors: guideline from the College of American Pathologists, International Association for the Study of Lung Cancer, and Associatio",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer Title Molecular testing guideline for selection of lung cancer patients for EGFR and ALK tyrosine kinase inhibitors: guideline from the College of American Pathologists, International Association for the Study of Lung Cancer, and Association for Molecular Pathology Authors Lindeman Neal I, Cagle Philip T, Beasley Mary Beth, Chitale Dhananjay Arun, Dacic Sanja, Giaccone Giuseppe, Jenkins Robert Brian, Kwiatkowski David J, et al. Journal / DOI Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer · DOI: 10.1097/JTO.0b013e318290868f · PMID: 23552377 https://pubmed.ncbi.nlm.nih.gov/23552377/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 660회 · RCR 18.90 (분야평균=1.0) · NIH 상위 백분위 99.2. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To establish evidence based recommendations for the molecular analysis of lung cancers that are that are required to guide EGFR and ALK directed therapies, addressing which patients and samples should be tested, and when and how testing should be performed. PARTICIPANTS: Three cochairs without conflicts of interest were selected, one from each of the 3 sponsoring professional societies: College of American Pathologists, International Association for the Study of Lung Cancer, and Association for Molecular Pathology. Writing and advisory panels were constituted from additional experts from these societies. EVIDENCE: Three unbiased literature searches of electronic databases were performed to capture articles published published from January 2004 through February 2012, yielding 1533 articles whose abstracts were screened to identify 521 pertinent articles that were then reviewed in detail for their relevance to the recommendations. Evidence was formally graded for each recommendation. CONSENSUS PROCESS: Initial recommendations were formulated by the cochairs and panel members at a public meeting. Each guideline section was assigned to at least 2 panelists. Drafts were circulated to the writing panel (version 1), advisory panel (version 2), and the public (version 3) before submission (version 4). CONCLUSIONS: The 37 guideline items address 14 subjects, including 15 recommendations (evidence grade A/B). The major recommendations are to use testing for EGFR mutations and ALK fusions to guide patient selection for therapy with an epidermal growth factor receptor (EGFR) or anaplastic lymphoma kinase (ALK) inhibitor, respectively, in all patients with advanced stage adenocarcinoma, regardless of sex, race, smoking history, or other clinical risk factors, and to prioritize EGFR and ALK testing over other molecular predictive tests. As scientific discoveries and clinical practice outpace the completion of randomized clinical trials, evidence based guidelines developed by expert practitioners are vital for communicating emerging clinical standards. Already, new treatments targeting genetic alterations in other, less common driver oncogenes are being evaluated in lung cancer, and testing for these may be addressed in future versions of these guidelines. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0259",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European urology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0259_landmark_european_association_of_urology_guidelines_on_muscle_invasiv.md",
+   "snippet": "Title European Association of Urology Guidelines on Muscle invasive and Metastatic Bladder Cancer: Summary of the 2020 Guidelines Authors Witjes J Alfred, Bruins Harman Max, Cathomas Richard, Compérat Eva M, Cowan Nigel C, Gakis Georgios, H",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / European urology Title European Association of Urology Guidelines on Muscle invasive and Metastatic Bladder Cancer: Summary of the 2020 Guidelines Authors Witjes J Alfred, Bruins Harman Max, Cathomas Richard, Compérat Eva M, Cowan Nigel C, Gakis Georgios, Hernández Virginia, Linares Espinós Estefania, et al. Journal / DOI European urology · DOI: 10.1016/j.eururo.2020.03.055 · PMID: 32360052 https://pubmed.ncbi.nlm.nih.gov/32360052/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1421회 · RCR 97.11 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract CONTEXT: This overview presents the updated European Association of Urology (EAU) guidelines for muscle invasive and metastatic bladder cancer (MMIBC). OBJECTIVE: To provide practical evidence based recommendations and consensus statements on the clinical management of MMIBC with a focus on diagnosis and treatment. EVIDENCE ACQUISITION: A broad and comprehensive scoping exercise covering all areas of the MMIBC guideline has been performed annually since its 2017 publication (based on the 2016 guideline). Databases covered by the search included Medline, EMBASE, and the Cochrane Libraries, resulting in yearly guideline updates. A level of evidence and a grade of recommendation were assigned. Additionally, the results of a collaborative multistakeholder consensus project on advanced bladder cancer (BC) have been incorporated in the 2020 guidelines, addressing those areas where it is unlikely that prospective comparative studies will be conducted. EVIDENCE SYNTHESIS: Variant histologies are increasingly reported in invasive BC and are relevant for treatment and prognosis. Staging is preferably done with (enhanced) computerised tomography scanning. Treatment decisions are still largely based on clinical factors. Radical cystectomy (RC) with lymph node dissection remains the recommended treatment in highest risk non muscle invasive and muscle invasive nonmetastatic BC, preceded by cisplatin based neoadjuvant chemotherapy (NAC) for invasive tumours in \"fit\" patients. Selected men and women benefit from sexuality sparing RC, although this is not recommended as standard therapy. Open and robotic RC show comparable outcomes, provided the procedure is performed in experienced centres. For open RC 10, the minimum selected case load is 10 procedures per year. If bladder preservation is considered, chemoradiation is an alternative in well selected patients without carcinoma in situ and after maximal resection. Adjuvant chemotherapy should be considered if no NAC was given. Perioperative immunotherapy can be offered in clinical trial setting. For fit metastatic patients, cisplatin based chemotherapy remains the first choice. In cisplatin ineligible patients, immunotherapy in Programmed Death Ligand 1 (PD L1) positive patients or carboplatin in PD L1 negative patients is recommended. For second line treatment in metastatic disease, pembrolizumab is recommended. Postchemotherapy surgery may prolong survival in responders. Quality of life should be monitored in all phases of treatment and follow up. The extended version of the guidelines is available at the EAU website: https://uroweb.org/guideline/bladder cancer muscle invasive and metastatic/. CONCLUSIONS: This summary of the 2020 EAU MMIBC guideline provides updated information on the diagnosis and treatment of MMIBC for incorporation into clinical practice. PATIENT SUMMARY: The European Association of Urology Muscle invasive and Metastatic Bladder Cancer (MMIBC) Panel has released an updated version of their guideline, which contains information on histology, staging, prognostic factors, and treatment of MMIBC. The recommendations are based on the current literature (until the end of 2019), with emphasis on high level data from randomised clinical trials and meta analyses and on the findings of an international consensus meeting. Surgical removal of the bladder and bladder preservation are discussed, as well as the use of chemotherapy and immunotherapy in localised and metastatic disease. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0258",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0258_landmark_2018_aha_acc_aacvpr_aapa_abc_acpm_ada_ags_apha_aspc_nla_pcna.md",
+   "snippet": "Title 2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Author",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Circulation Title 2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Authors Grundy Scott M, Stone Neil J, Bailey Alison L, Beam Craig, Birtcher Kim K, Blumenthal Roger S, Braun Lynne T, de Ferranti Sarah, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000000625 · PMID: 30586774 https://pubmed.ncbi.nlm.nih.gov/30586774/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 3436회 · RCR 181.06 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Since 1980, the American College of Cardiology (ACC) and American Heart Association (AHA) have translated scientific evidence into clinical practice guidelines with recommendations to improve cardiovascular health. These guidelines, which are based on systematic methods to evaluate and classify evidence, provide a foundation for the delivery of quality cardiovascular care. The ACC and AHA sponsor the development and publication of clinical practice guidelines without commercial support, and members volunteer their time to the writing and review efforts. Clinical practice guidelines provide recommendations applicable to patients with or at risk of developing cardiovascular disease (CVD). The focus is on medical practice in the United States, but these guidelines are relevant to patients throughout the world. Although guidelines may be used to inform regulatory or payer decisions, the intent is to improve quality of care and align with patients’ interests. Guidelines are intended to define practices meeting the needs of patients in most, but not all, circumstances, and should not replace clinical judgment. Recommendations for guideline directed management and therapy, which encompasses clinical evaluation, diagnostic testing, and both pharmacological and procedural treatments, are effective only when followed by both practitioners and patients. Adherence to recommendations can be enhanced by shared decision making between clinicians and patients, with patient engagement in selecting interventions on the basis of individual values, preferences, and associated conditions and comorbidities. The ACC/AHA Task Force on Clinical Practice Guidelines strives to ensure that the guideline writing committee both contains requisite expertise and is representative of the broader medical community by selecting experts from a broad array of backgrounds, representing different geographic regions, sexes, races, ethnicities, intellectual perspectives/biases, and scopes of clinical practice, and by inviting organizations and professional societies with related interests and expertise to participate as partners or collaborators. The ACC and AHA have rigorous policies and methods to ensure that documents are developed without bias or improper influence. The complete policy on relationships with industry and other entities (RWI) can be found online. Beginning in 2017, numerous modifications to the guidelines have been and continue to be implemented to make guidelines shorter and enhance “user friendliness.” Guidelines are written and presented in a modular knowledge chunk format, in which each chunk includes a table of recommendations, a brief synopsis, recommendation specific supportive text and, when appropriate, flow diagrams or additional tables. Hyperlinked references are provided for each modular knowledge chunk to facilitate quick access and review. More structured guidelines–including word limits (“targets”) and a web guideline supplement for useful but noncritical tables and figures–are 2 such changes. This Preamble is an abbreviated version, with the detailed version available online. The reader is encouraged to consult the full text guideline for additional guidance and details, since the executive summary contains mainly the recommendations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0257",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0257_landmark_developing_a_new_definition_and_assessing_new_clinical_crite.md",
+   "snippet": "Title Developing a New Definition and Assessing New Clinical Criteria for Septic Shock: For the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis 3) Authors Shankar Hari Manu, Phillips Gary S, Levy Mitchell L, Se",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / JAMA Title Developing a New Definition and Assessing New Clinical Criteria for Septic Shock: For the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis 3) Authors Shankar Hari Manu, Phillips Gary S, Levy Mitchell L, Seymour Christopher W, Liu Vincent X, Deutschman Clifford S, Angus Derek C, Rubenfeld Gordon D, et al. Journal / DOI JAMA · DOI: 10.1001/jama.2016.0289 · PMID: 26903336 https://pubmed.ncbi.nlm.nih.gov/26903336/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 1702회 · RCR 74.12 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract IMPORTANCE: Septic shock currently refers to a state of acute circulatory failure associated with infection. Emerging biological insights and reported variation in epidemiology challenge the validity of this definition. OBJECTIVE: To develop a new definition and clinical criteria for identifying septic shock in adults. DESIGN, SETTING, AND PARTICIPANTS: The Society of Critical Care Medicine and the European Society of Intensive Care Medicine convened a task force (19 participants) to revise current sepsis/septic shock definitions. Three sets of studies were conducted: (1) a systematic review and meta analysis of observational studies in adults published between January 1, 1992, and December 25, 2015, to determine clinical criteria currently reported to identify septic shock and inform the Delphi process; (2) a Delphi study among the task force comprising 3 surveys and discussions of results from the systematic review, surveys, and cohort studies to achieve consensus on a new septic shock definition and clinical criteria; and (3) cohort studies to test variables identified by the Delphi process using Surviving Sepsis Campaign (SSC) (2005 2010; n = 28,150), University of Pittsburgh Medical Center (UPMC) (2010 2012; n = 1,309,025), and Kaiser Permanente Northern California (KPNC) (2009 2013; n = 1,847,165) electronic health record (EHR) data sets. MAIN OUTCOMES AND MEASURES: Evidence for and agreement on septic shock definitions and criteria. RESULTS: The systematic review identified 44 studies reporting septic shock outcomes (total of 166,479 patients) from a total of 92 sepsis epidemiology studies reporting different cutoffs and combinations for blood pressure (BP), fluid resuscitation, vasopressors, serum lactate level, and base deficit to identify septic shock. The septic shock associated crude mortality was 46.5% (95% CI, 42.7% 50.3%), with significant between study statistical heterogeneity (I2 = 99.5%; τ2 = 182.5; P < .001). The Delphi process identified hypotension, serum lactate level, and vasopressor therapy as variables to test using cohort studies. Based on these 3 variables alone or in combination, 6 patient groups were generated. Examination of the SSC database demonstrated that the patient group requiring vasopressors to maintain mean BP 65 mm Hg or greater and having a serum lactate level greater than 2 mmol/L (18 mg/dL) after fluid resuscitation had a significantly higher mortality (42.3% [95% CI, 41.2% 43.3%]) in risk adjusted comparisons with the other 5 groups derived using either serum lactate level greater than 2 mmol/L alone or combinations of hypotension, vasopressors, and serum lactate level 2 mmol/L or lower. These findings were validated in the UPMC and KPNC data sets. CONCLUSIONS AND RELEVANCE: Based on a consensus process using results from a systematic review, surveys, and cohort studies, septic shock is defined as a subset of sepsis in which underlying circulatory, cellular, and metabolic abnormalities are associated with a greater risk of mortality than sepsis alone. Adult patients with septic shock can be identified using the clinical criteria of hypotension requiring vasopressor therapy to maintain mean BP 65 mm Hg or greater and having a serum lactate level greater than 2 mmol/L after adequate fluid resuscitation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0256",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0256_landmark_recommendations_for_the_evaluation_of_left_ventricular_diast.md",
+   "snippet": "Title Recommendations for the Evaluation of Left Ventricular Diastolic Function by Echocardiography: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging Authors Nagueh Sherif F, Smi",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography Title Recommendations for the Evaluation of Left Ventricular Diastolic Function by Echocardiography: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging Authors Nagueh Sherif F, Smiseth Otto A, Appleton Christopher P, Byrd Benjamin F, Dokainish Hisham, Edvardsen Thor, Flachskampf Frank A, Gillebert Thierry C, et al. Journal / DOI Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography · DOI: 10.1016/j.echo.2016.01.011 · PMID: 27037982 https://pubmed.ncbi.nlm.nih.gov/27037982/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 4456회 · RCR 205.09 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0255",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of endocrinology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0255_landmark_european_society_of_endocrinology_clinical_practice_guidelin.md",
+   "snippet": "Title European Society of Endocrinology Clinical Practice Guidelines on the management of adrenocortical carcinoma in adults, in collaboration with the European Network for the Study of Adrenal Tumors Authors Fassnacht Martin, Dekkers Olaf,",
+   "text": "Pathology landmark highly-cited pubmed PubMed / European journal of endocrinology Title European Society of Endocrinology Clinical Practice Guidelines on the management of adrenocortical carcinoma in adults, in collaboration with the European Network for the Study of Adrenal Tumors Authors Fassnacht Martin, Dekkers Olaf, Else Tobias, Baudin Eric, Berruti Alfredo, de Krijger Ronald, Haak Harm, Mihai Radu, et al. Journal / DOI European journal of endocrinology · DOI: 10.1530/EJE 18 0608 · PMID: 30299884 https://pubmed.ncbi.nlm.nih.gov/30299884/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 725회 · RCR 34.41 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Adrenocortical carcinoma (ACC) is a rare and in most cases steroid hormone producing tumor with variable prognosis. The purpose of these guidelines is to provide clinicians with best possible evidence based recommendations for clinical management of patients with ACC based on the GRADE (Grading of Recommendations Assessment, Development and Evaluation) system. We predefined four main clinical questions, which we judged as particularly important for the management of ACC patients and performed systematic literature searches: (A) What is needed to diagnose an ACC by histopathology? (B) Which are the best prognostic markers in ACC? (C) Is adjuvant therapy able to prevent recurrent disease or reduce mortality after radical resection? (D) What is the best treatment option for macroscopically incompletely resected, recurrent or metastatic disease? Other relevant questions were discussed within the group. Selected Recommendations: (i) We recommend that all patients with suspected and proven ACC are discussed in a multidisciplinary expert team meeting. (ii) We recommend that every patient with (suspected) ACC should undergo careful clinical assessment, detailed endocrine work up to identify autonomous hormone excess and adrenal focused imaging. (iii) We recommend that adrenal surgery for (suspected) ACC should be performed only by surgeons experienced in adrenal and oncological surgery aiming at a complete en bloc resection (including resection of oligo metastatic disease). (iv) We suggest that all suspected ACC should be reviewed by an expert adrenal pathologist using the Weiss score and providing Ki67 index. (v) We suggest adjuvant mitotane treatment in patients after radical surgery that have a perceived high risk of recurrence (ENSAT stage III, or R1 resection, or Ki67 10%). (vi) For advanced ACC not amenable to complete surgical resection, local therapeutic measures (e.g. radiation therapy, radiofrequency ablation, chemoembolization) are of particular value. However, we suggest against the routine use of adrenal surgery in case of widespread metastatic disease. In these patients, we recommend either mitotane monotherapy or mitotane, etoposide, doxorubicin and cisplatin depending on prognostic parameters. In selected patients with a good response, surgery may be subsequently considered. (vii) In patients with recurrent disease and a disease free interval of at least 12 months, in whom a complete resection/ablation seems feasible, we recommend surgery or alternatively other local therapies. Furthermore, we offer detailed recommendations about the management of mitotane treatment and other supportive therapies. Finally, we suggest directions for future research. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0254",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0254_landmark_national_cancer_institute_sponsored_working_group_guidelines.md",
+   "snippet": "Title National Cancer Institute sponsored Working Group guidelines for chronic lymphocytic leukemia: revised guidelines for diagnosis and treatment Authors Cheson B D, Bennett J M, Grever M, Kay N, Keating M J, O'Brien S, Rai K R Journal / ",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Blood Title National Cancer Institute sponsored Working Group guidelines for chronic lymphocytic leukemia: revised guidelines for diagnosis and treatment Authors Cheson B D, Bennett J M, Grever M, Kay N, Keating M J, O'Brien S, Rai K R Journal / DOI Blood · PMID: 8652811 https://pubmed.ncbi.nlm.nih.gov/8652811/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1520회 · RCR 37.51 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0253",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of internal medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0253_landmark_national_kidney_foundation_practice_guidelines_for_chronic_k.md",
+   "snippet": "Title National Kidney Foundation practice guidelines for chronic kidney disease: evaluation, classification, and stratification Authors Levey Andrew S, Coresh Josef, Balk Ethan, Kausz Annamaria T, Levin Adeera, Steffes Michael W, Hogg Ronal",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Annals of internal medicine Title National Kidney Foundation practice guidelines for chronic kidney disease: evaluation, classification, and stratification Authors Levey Andrew S, Coresh Josef, Balk Ethan, Kausz Annamaria T, Levin Adeera, Steffes Michael W, Hogg Ronald J, Perrone Ronald D, et al. Journal / DOI Annals of internal medicine · PMID: 12859163 https://pubmed.ncbi.nlm.nih.gov/12859163/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 3526회 · RCR 95.68 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Chronic kidney disease is a worldwide public health problem with an increasing incidence and prevalence, poor outcomes, and high cost. Outcomes of chronic kidney disease include not only kidney failure but also complications of decreased kidney function and cardiovascular disease. Current evidence suggests that some of these adverse outcomes can be prevented or delayed by early detection and treatment. Unfortunately, chronic kidney disease is underdiagnosed and undertreated, in part as a result of lack of agreement on a definition and classification of its stages of progression. Recent clinical practice guidelines by the National Kidney Foundation 1) define chronic kidney disease and classify its stages, regardless of underlying cause, 2) evaluate laboratory measurements for the clinical assessment of kidney disease, 3) associate the level of kidney function with complications of chronic kidney disease, and 4) stratify the risk for loss of kidney function and development of cardiovascular disease. The guidelines were developed by using an approach based on the procedure outlined by the Agency for Healthcare Research and Quality. This paper presents the definition and five stage classification system of chronic kidney disease and summarizes the major recommendations on early detection in adults. Recommendations include identifying persons at increased risk (those with diabetes, those with hypertension, those with a family history of chronic kidney disease, those older than 60 years of age, or those with U.S. racial or ethnic minority status), detecting kidney damage by measuring the albumin creatinine ratio in untimed (\"spot\") urine specimens, and estimating the glomerular filtration rate from serum creatinine measurements by using prediction equations. Because of the high prevalence of early stages of chronic kidney disease in the general population (approximately 11% of adults), this information is particularly important for general internists and specialists. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0252",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical nutrition (Edinburgh, Scotland)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0252_landmark_espen_guideline_on_clinical_nutrition_in_the_intensive_care_.md",
+   "snippet": "Title ESPEN guideline on clinical nutrition in the intensive care unit Authors Singer Pierre, Blaser Annika Reintam, Berger Mette M, Alhazzani Waleed, Calder Philip C, Casaer Michael P, Hiesmayr Michael, Mayer Konstantin, et al. Journal / D",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Clinical nutrition (Edinburgh, Scotland) Title ESPEN guideline on clinical nutrition in the intensive care unit Authors Singer Pierre, Blaser Annika Reintam, Berger Mette M, Alhazzani Waleed, Calder Philip C, Casaer Michael P, Hiesmayr Michael, Mayer Konstantin, et al. Journal / DOI Clinical nutrition (Edinburgh, Scotland) · DOI: 10.1016/j.clnu.2018.08.037 · PMID: 30348463 https://pubmed.ncbi.nlm.nih.gov/30348463/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 1793회 · RCR 113.80 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Following the new ESPEN Standard Operating Procedures, the previous guidelines to provide best medical nutritional therapy to critically ill patients have been updated. These guidelines define who are the patients at risk, how to assess nutritional status of an ICU patient, how to define the amount of energy to provide, the route to choose and how to adapt according to various clinical conditions. When to start and how to progress in the administration of adequate provision of nutrients is also described. The best determination of amount and nature of carbohydrates, fat and protein are suggested. Special attention is given to glutamine and omega 3 fatty acids. Particular conditions frequently observed in intensive care such as patients with dysphagia, frail patients, multiple trauma patients, abdominal surgery, sepsis, and obesity are discussed to guide the practitioner toward the best evidence based therapy. Monitoring of this nutritional therapy is discussed in a separate document. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0251",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0251_landmark_2015_esc_ers_guidelines_for_the_diagnosis_and_treatment_of_p.md",
+   "snippet": "Title 2015 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension: The Joint Task Force for the Diagnosis and Treatment of Pulmonary Hypertension of the European Society of Cardiology (ESC) and the European Respiratory",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2015 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension: The Joint Task Force for the Diagnosis and Treatment of Pulmonary Hypertension of the European Society of Cardiology (ESC) and the European Respiratory Society (ERS): Endorsed by: Association for European Paediatric and Congenital Cardiology (AEPC), International Society for Heart and Lung Transplantation (ISHLT) Authors Galiè Nazzareno, Humbert Marc, Vachiery Jean Luc, Gibbs Simon, Lang Irene, Torbicki Adam, Simonneau Gérald, Peacock Andrew, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehv317 · PMID: 26320113 https://pubmed.ncbi.nlm.nih.gov/26320113/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 4676회 · RCR 213.64 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0250",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of pediatric gastroenterology and nutrition",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0250_landmark_guideline_for_the_diagnosis_and_treatment_of_celiac_disease_.md",
+   "snippet": "Title Guideline for the diagnosis and treatment of celiac disease in children: recommendations of the North American Society for Pediatric Gastroenterology, Hepatology and Nutrition Authors Hill Ivor D, Dirks Martha H, Liptak Gregory S, Col",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Journal of pediatric gastroenterology and nutrition Title Guideline for the diagnosis and treatment of celiac disease in children: recommendations of the North American Society for Pediatric Gastroenterology, Hepatology and Nutrition Authors Hill Ivor D, Dirks Martha H, Liptak Gregory S, Colletti Richard B, Fasano Alessio, Guandalini Stefano, Hoffenberg Edward J, Horvath Karoly, et al. Journal / DOI Journal of pediatric gastroenterology and nutrition · PMID: 15625418 https://pubmed.ncbi.nlm.nih.gov/15625418/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 760회 · RCR 25.42 (분야평균=1.0) · NIH 상위 백분위 99.5. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Celiac disease is an immune mediated enteropathy caused by a permanent sensitivity to gluten in genetically susceptible individuals. It occurs in children and adolescents with gastrointestinal symptoms, dermatitis herpetiformis, dental enamel defects, osteoporosis, short stature, delayed puberty and persistent iron deficiency anemia and in asymptomatic individuals with type 1 diabetes, Down syndrome, Turner syndrome, Williams syndrome, selective immunoglobulin (Ig)A deficiency and first degree relatives of individuals with celiac disease. The Celiac Disease Guideline Committee of the North American Society for Pediatric Gastroenterology, Hepatology and Nutrition has formulated a clinical practice guideline for the diagnosis and treatment of pediatric celiac disease based on an integration of a systematic review of the medical literature combined with expert opinion. The Committee examined the indications for testing, the value of serological tests, human leukocyte antigen (HLA) typing and histopathology and the treatment and monitoring of children with celiac disease. It is recommended that children and adolescents with symptoms of celiac disease or an increased risk for celiac disease have a blood test for antibody to tissue transglutaminase (TTG), that those with an elevated TTG be referred to a pediatric gastroenterologist for an intestinal biopsy and that those with the characteristics of celiac disease on intestinal histopathology be treated with a strict gluten free diet. This document represents the official recommendations of the North American Society for Pediatric Gastroenterology, Hepatology and Nutrition on the diagnosis and treatment of celiac disease in children and adolescents. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0249",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Annals of oncology : official journal of the European Society for Medical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0249_landmark_management_of_toxicities_from_immunotherapy_esmo_clinical_pr.md",
+   "snippet": "Title Management of toxicities from immunotherapy: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up Authors Haanen J B A G, Carbonnel F, Robert C, Kerr K M, Peters S, Larkin J, Jordan K, ESMO Guidelines Committee Jou",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Annals of oncology : official journal of the European Society for Medical Oncology Title Management of toxicities from immunotherapy: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow up Authors Haanen J B A G, Carbonnel F, Robert C, Kerr K M, Peters S, Larkin J, Jordan K, ESMO Guidelines Committee Journal / DOI Annals of oncology : official journal of the European Society for Medical Oncology · DOI: 10.1093/annonc/mdx225 · PMID: 28881921 https://pubmed.ncbi.nlm.nih.gov/28881921/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 1608회 · RCR 56.84 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0248",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Kidney international",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0248_landmark_kdigo_2024_clinical_practice_guideline_for_the_evaluation_an.md",
+   "snippet": "Title KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2023.",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Kidney international Title KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease Authors Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group Journal / DOI Kidney international · DOI: 10.1016/j.kint.2023.10.018 · PMID: 38490803 https://pubmed.ncbi.nlm.nih.gov/38490803/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 4205회 · RCR 1037.34 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0247",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0247_landmark_surviving_sepsis_campaign_international_guidelines_for_manag.md",
+   "snippet": "Title Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock: 2016 Authors Rhodes Andrew, Evans Laura E, Alhazzani Waleed, Levy Mitchell M, Antonelli Massimo, Ferrer Ricard, Kumar Anand, Sevransky Jona",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock: 2016 Authors Rhodes Andrew, Evans Laura E, Alhazzani Waleed, Levy Mitchell M, Antonelli Massimo, Ferrer Ricard, Kumar Anand, Sevransky Jonathan E, et al. Journal / DOI Critical care medicine · DOI: 10.1097/CCM.0000000000002255 · PMID: 28098591 https://pubmed.ncbi.nlm.nih.gov/28098591/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 2086회 · RCR 104.97 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To provide an update to \"Surviving Sepsis Campaign Guidelines for Management of Sepsis and Septic Shock: 2012.\" DESIGN: A consensus committee of 55 international experts representing 25 international organizations was convened. Nominal groups were assembled at key international meetings (for those committee members attending the conference). A formal conflict of interest (COI) policy was developed at the onset of the process and enforced throughout. A stand alone meeting was held for all panel members in December 2015. Teleconferences and electronic based discussion among subgroups and among the entire committee served as an integral part of the development. METHODS: The panel consisted of five sections: hemodynamics, infection, adjunctive therapies, metabolic, and ventilation. Population, intervention, comparison, and outcomes (PICO) questions were reviewed and updated as needed, and evidence profiles were generated. Each subgroup generated a list of questions, searched for best available evidence, and then followed the principles of the Grading of Recommendations Assessment, Development, and Evaluation (GRADE) system to assess the quality of evidence from high to very low, and to formulate recommendations as strong or weak, or best practice statement when applicable. RESULTS: The Surviving Sepsis Guideline panel provided 93 statements on early management and resuscitation of patients with sepsis or septic shock. Overall, 32 were strong recommendations, 39 were weak recommendations, and 18 were best practice statements. No recommendation was provided for four questions. CONCLUSIONS: Substantial agreement exists among a large cohort of international experts regarding many strong recommendations for the best care of patients with sepsis. Although a significant number of aspects of care have relatively weak support, evidence based recommendations regarding the acute management of sepsis and septic shock are the foundation of improved outcomes for these critically ill patients with high mortality. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0246",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0246_landmark_esc_guidelines_for_the_diagnosis_and_treatment_of_acute_and_.md",
+   "snippet": "Title ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2012: The Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2012 of the European Society of Cardiology. Developed in collabo",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2012: The Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2012 of the European Society of Cardiology. Developed in collaboration with the Heart Failure Association (HFA) of the ESC Authors McMurray John J V, Adamopoulos Stamatis, Anker Stefan D, Auricchio Angelo, Böhm Michael, Dickstein Kenneth, Falk Volkmar, Filippatos Gerasimos, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehs104 · PMID: 22611136 https://pubmed.ncbi.nlm.nih.gov/22611136/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 4806회 · RCR 170.99 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0245",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of respiratory and critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0245_landmark_diagnosis_and_detection_of_sarcoidosis_an_official_american_.md",
+   "snippet": "Title Diagnosis and Detection of Sarcoidosis. An Official American Thoracic Society Clinical Practice Guideline Authors Crouser Elliott D, Maier Lisa A, Wilson Kevin C, Bonham Catherine A, Morgenthau Adam S, Patterson Karen C, Abston Eric, ",
+   "text": "Pathology landmark highly-cited pubmed PubMed / American journal of respiratory and critical care medicine Title Diagnosis and Detection of Sarcoidosis. An Official American Thoracic Society Clinical Practice Guideline Authors Crouser Elliott D, Maier Lisa A, Wilson Kevin C, Bonham Catherine A, Morgenthau Adam S, Patterson Karen C, Abston Eric, Bernstein Richard C, et al. Journal / DOI American journal of respiratory and critical care medicine · DOI: 10.1164/rccm.202002 0251ST · PMID: 32293205 https://pubmed.ncbi.nlm.nih.gov/32293205/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 821회 · RCR 60.05 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Background: The diagnosis of sarcoidosis is not standardized but is based on three major criteria: a compatible clinical presentation, finding nonnecrotizing granulomatous inflammation in one or more tissue samples, and the exclusion of alternative causes of granulomatous disease. There are no universally accepted measures to determine if each diagnostic criterion has been satisfied; therefore, the diagnosis of sarcoidosis is never fully secure.Methods: Systematic reviews and, when appropriate, meta analyses were performed to summarize the best available evidence. The evidence was appraised using the Grading of Recommendations, Assessment, Development, and Evaluation approach and then discussed by a multidisciplinary panel. Recommendations for or against various diagnostic tests were formulated and graded after the expert panel weighed desirable and undesirable consequences, certainty of estimates, feasibility, and acceptability.Results: The clinical presentation, histopathology, and exclusion of alternative diagnoses were summarized. On the basis of the available evidence, the expert committee made 1 strong recommendation for baseline serum calcium testing, 13 conditional recommendations, and 1 best practice statement. All evidence was very low quality.Conclusions: The panel used systematic reviews of the evidence to inform clinical recommendations in favor of or against various diagnostic tests in patients with suspected or known sarcoidosis. The evidence and recommendations should be revisited as new evidence becomes available. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0244",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0244_landmark_revised_recommendations_of_the_international_working_group_f.md",
+   "snippet": "Title Revised recommendations of the International Working Group for Diagnosis, Standardization of Response Criteria, Treatment Outcomes, and Reporting Standards for Therapeutic Trials in Acute Myeloid Leukemia Authors Cheson Bruce D, Benne",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Revised recommendations of the International Working Group for Diagnosis, Standardization of Response Criteria, Treatment Outcomes, and Reporting Standards for Therapeutic Trials in Acute Myeloid Leukemia Authors Cheson Bruce D, Bennett John M, Kopecky Kenneth J, Büchner Thomas, Willman Cheryl L, Estey Elihu H, Schiffer Charles A, Doehner Hartmut, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · PMID: 14673054 https://pubmed.ncbi.nlm.nih.gov/14673054/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 2452회 · RCR 50.84 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract An International Working Group met to revise the diagnostic and response criteria for acute myelogenous leukemia originally published in 1990, as well as to provide definitions of outcomes and reporting standards to improve interpretability of data and comparisons among trials. Since the original publication, there have been major advances in our understanding of the biology and molecular genetics of acute leukemia that are clinically relevant and warrant incorporation into response definitions. Differences from the 1990 recommendations included a category of leukemia free state, new criteria for complete remission, including cytogenetic and molecular remissions and remission duration. Storage of viable blasts for correlative studies is important for future progress in the therapy of these disorders. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0243",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Circulation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0243_landmark_2022_aha_acc_hfsa_guideline_for_the_management_of_heart_fail.md",
+   "snippet": "Title 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Heidenreich Paul A, Bozkurt Biykem, Agu",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Circulation Title 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Authors Heidenreich Paul A, Bozkurt Biykem, Aguilar David, Allen Larry A, Byun Joni J, Colvin Monica M, Deswal Anita, Drazner Mark H, et al. Journal / DOI Circulation · DOI: 10.1161/CIR.0000000000001063 · PMID: 35363499 https://pubmed.ncbi.nlm.nih.gov/35363499/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 4760회 · RCR 482.93 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract AIM: The \"2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure\" replaces the \"2013 ACCF/AHA Guideline for the Management of Heart Failure\" and the \"2017 ACC/AHA/HFSA Focused Update of the 2013 ACCF/AHA Guideline for the Management of Heart Failure.\" The 2022 guideline is intended to provide patient centric recommendations for clinicians to prevent, diagnose, and manage patients with heart failure. METHODS: A comprehensive literature search was conducted from May 2020 to December 2020, encompassing studies, reviews, and other evidence conducted on human subjects that were published in English from MEDLINE (PubMed), EMBASE, the Cochrane Collaboration, the Agency for Healthcare Research and Quality, and other relevant databases. Additional relevant clinical trials and research studies, published through September 2021, were also considered. This guideline was harmonized with other American Heart Association/American College of Cardiology guidelines published through December 2021. Structure: Heart failure remains a leading cause of morbidity and mortality globally. The 2022 heart failure guideline provides recommendations based on contemporary evidence for the treatment of these patients. The recommendations present an evidence based approach to managing patients with heart failure, with the intent to improve quality of care and align with patients' interests. Many recommendations from the earlier heart failure guidelines have been updated with new evidence, and new recommendations have been created when supported by published data. Value statements are provided for certain treatments with high quality published economic analyses. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0242",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0242_landmark_surviving_sepsis_campaign_guidelines_for_management_of_sever.md",
+   "snippet": "Title Surviving Sepsis Campaign guidelines for management of severe sepsis and septic shock Authors Dellinger R Phillip, Carlet Jean M, Masur Henry, Gerlach Herwig, Calandra Thierry, Cohen Jonathan, Gea Banacloche Juan, Keh Didier, et al. J",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title Surviving Sepsis Campaign guidelines for management of severe sepsis and septic shock Authors Dellinger R Phillip, Carlet Jean M, Masur Henry, Gerlach Herwig, Calandra Thierry, Cohen Jonathan, Gea Banacloche Juan, Keh Didier, et al. Journal / DOI Critical care medicine · PMID: 15090974 https://pubmed.ncbi.nlm.nih.gov/15090974/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 2132회 · RCR 62.75 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: In 2003, critical care and infectious disease experts representing 11 international organizations developed management guidelines for severe sepsis and septic shock that would be of practical use for the bedside clinician, under the auspices of the Surviving Sepsis Campaign, an international effort to increase awareness and improve outcome in severe sepsis. DESIGN: The process included a modified Delphi method, a consensus conference, several subsequent smaller meetings of subgroups and key individuals, teleconferences, and electronic based discussion among subgroups and among the entire committee. METHODS: We used a modified Delphi methodology for grading recommendations, built on a 2001 publication sponsored by the International Sepsis Forum. We undertook a systematic review of the literature graded along five levels to create recommendation grades from A to E, with A being the highest grade. Pediatric considerations were provided to contrast adult and pediatric management. RESULTS: Key recommendations, listed by category and not by hierarchy, include early goal directed resuscitation of the septic patient during the first 6 hrs after recognition; appropriate diagnostic studies to ascertain causative organisms before starting antibiotics; early administration of broad spectrum antibiotic therapy; reassessment of antibiotic therapy with microbiology and clinical data to narrow coverage, when appropriate; a usual 7 10 days of antibiotic therapy guided by clinical response; source control with attention to the method that balances risks and benefits; equivalence of crystalloid and colloid resuscitation; aggressive fluid challenge to restore mean circulating filling pressure; vasopressor preference for norepinephrine and dopamine; cautious use of vasopressin pending further studies; avoiding low dose dopamine administration for renal protection; consideration of dobutamine inotropic therapy in some clinical situations; avoidance of supranormal oxygen delivery as a goal of therapy; stress dose steroid therapy for septic shock; use of recombinant activated protein C in patients with severe sepsis and high risk for death; with resolution of tissue hypoperfusion and in the absence of coronary artery disease or acute hemorrhage, targeting a hemoglobin of 7 9 g/dL; appropriate use of fresh frozen plasma and platelets; a low tidal volume and limitation of inspiratory plateau pressure strategy for acute lung injury and acute respiratory distress syndrome; application of a minimal amount of positive end expiratory pressure in acute lung injury/acute respiratory distress syndrome; a semirecumbent bed position unless contraindicated; protocols for weaning and sedation/analgesia, using either intermittent bolus sedation or continuous infusion sedation with daily interruptions/lightening; avoidance of neuromuscular blockers, if at all possible; maintenance of blood glucose <150 mg/dL after initial stabilization; equivalence of continuous veno veno hemofiltration and intermittent hemodialysis; lack of utility of bicarbonate use for pH or =7.15; use of deep vein thrombosis/stress ulcer prophylaxis; and consideration of limitation of support where appropriate. Pediatric considerations included a more likely need for intubation due to low functional residual capacity; more difficult intravenous access; fluid resuscitation based on weight with 40 60 mL/kg or higher needed; decreased cardiac output and increased systemic vascular resistance as the most common hemodynamic profile; greater use of physical examination therapeutic end points; unsettled issue of high dose steroids for therapy of septic shock; and greater risk of hypoglycemia with aggressive glucose control. CONCLUSION: Evidence based recommendations can be made regarding many aspects of the acute management of sepsis and septic shock that are hoped to translate into improved outcomes for the critically ill patient. The impact of these guidelines will be formally tested and guidelines updated annually and even more rapidly as some important new knowledge becomes as available. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0241",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0241_landmark_2016_esc_guidelines_for_the_management_of_atrial_fibrillatio.md",
+   "snippet": "Title 2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS Authors Kirchhof Paulus, Benussi Stefano, Kotecha Dipak, Ahlsson Anders, Atar Dan, Casadei Barbara, Castella Manuel, Diener Hans Chris",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS Authors Kirchhof Paulus, Benussi Stefano, Kotecha Dipak, Ahlsson Anders, Atar Dan, Casadei Barbara, Castella Manuel, Diener Hans Christoph, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehw210 · PMID: 27567408 https://pubmed.ncbi.nlm.nih.gov/27567408/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 4906회 · RCR 226.89 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0240",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0240_landmark_diagnosis_and_management_of_aspergillus_diseases_executive_s.md",
+   "snippet": "Title Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID ECMM ERS guideline Authors Ullmann A J, Aguado J M, Arikan Akdagli S, Denning D W, Groll A H, Lagrou K, Lass Flörl C, Lewis R E, et al. Journal / D",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases Title Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID ECMM ERS guideline Authors Ullmann A J, Aguado J M, Arikan Akdagli S, Denning D W, Groll A H, Lagrou K, Lass Flörl C, Lewis R E, et al. Journal / DOI Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases · DOI: 10.1016/j.cmi.2018.01.002 · PMID: 29544767 https://pubmed.ncbi.nlm.nih.gov/29544767/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 1169회 · RCR 71.28 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The European Society for Clinical Microbiology and Infectious Diseases, the European Confederation of Medical Mycology and the European Respiratory Society Joint Clinical Guidelines focus on diagnosis and management of aspergillosis. Of the numerous recommendations, a few are summarized here. Chest computed tomography as well as bronchoscopy with bronchoalveolar lavage (BAL) in patients with suspicion of pulmonary invasive aspergillosis (IA) are strongly recommended. For diagnosis, direct microscopy, preferably using optical brighteners, histopathology and culture are strongly recommended. Serum and BAL galactomannan measures are recommended as markers for the diagnosis of IA. PCR should be considered in conjunction with other diagnostic tests. Pathogen identification to species complex level is strongly recommended for all clinically relevant Aspergillus isolates; antifungal susceptibility testing should be performed in patients with invasive disease in regions with resistance found in contemporary surveillance programmes. Isavuconazole and voriconazole are the preferred agents for first line treatment of pulmonary IA, whereas liposomal amphotericin B is moderately supported. Combinations of antifungals as primary treatment options are not recommended. Therapeutic drug monitoring is strongly recommended for patients receiving posaconazole suspension or any form of voriconazole for IA treatment, and in refractory disease, where a personalized approach considering reversal of predisposing factors, switching drug class and surgical intervention is also strongly recommended. Primary prophylaxis with posaconazole is strongly recommended in patients with acute myelogenous leukaemia or myelodysplastic syndrome receiving induction chemotherapy. Secondary prophylaxis is strongly recommended in high risk patients. We strongly recommend treatment duration based on clinical improvement, degree of immunosuppression and response on imaging. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0239",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0239_landmark_guidelines_for_the_diagnosis_and_treatment_of_chronic_lympho.md",
+   "snippet": "Title Guidelines for the diagnosis and treatment of chronic lymphocytic leukemia: a report from the International Workshop on Chronic Lymphocytic Leukemia updating the National Cancer Institute Working Group 1996 guidelines Authors Hallek M",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Blood Title Guidelines for the diagnosis and treatment of chronic lymphocytic leukemia: a report from the International Workshop on Chronic Lymphocytic Leukemia updating the National Cancer Institute Working Group 1996 guidelines Authors Hallek Michael, Cheson Bruce D, Catovsky Daniel, Caligaris Cappio Federico, Dighiero Guillaume, Döhner Hartmut, Hillmen Peter, Keating Michael J, et al. Journal / DOI Blood · DOI: 10.1182/blood 2007 06 093906 · PMID: 18216293 https://pubmed.ncbi.nlm.nih.gov/18216293/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 2587회 · RCR 58.90 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Standardized criteria for diagnosis and response assessment are needed to interpret and compare clinical trials and for approval of new therapeutic agents by regulatory agencies. Therefore, a National Cancer Institute sponsored Working Group (NCI WG) on chronic lymphocytic leukemia (CLL) published guidelines for the design and conduct of clinical trials for patients with CLL in 1988, which were updated in 1996. During the past decade, considerable progress has been achieved in defining new prognostic markers, diagnostic parameters, and treatment options. This prompted the International Workshop on Chronic Lymphocytic Leukemia (IWCLL) to provide updated recommendations for the management of CLL in clinical trials and general practice. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0238",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0238_landmark_2014_evidence_based_guideline_for_the_management_of_high_blo.md",
+   "snippet": "Title 2014 evidence based guideline for the management of high blood pressure in adults: report from the panel members appointed to the Eighth Joint National Committee (JNC 8) Authors James Paul A, Oparil Suzanne, Carter Barry L, Cushman Wi",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / JAMA Title 2014 evidence based guideline for the management of high blood pressure in adults: report from the panel members appointed to the Eighth Joint National Committee (JNC 8) Authors James Paul A, Oparil Suzanne, Carter Barry L, Cushman William C, Dennison Himmelfarb Cheryl, Handler Joel, Lackland Daniel T, LeFevre Michael L, et al. Journal / DOI JAMA · DOI: 10.1001/jama.2013.284427 · PMID: 24352797 https://pubmed.ncbi.nlm.nih.gov/24352797/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 5839회 · RCR 241.11 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Hypertension is the most common condition seen in primary care and leads to myocardial infarction, stroke, renal failure, and death if not detected early and treated appropriately. Patients want to be assured that blood pressure (BP) treatment will reduce their disease burden, while clinicians want guidance on hypertension management using the best scientific evidence. This report takes a rigorous, evidence based approach to recommend treatment thresholds, goals, and medications in the management of hypertension in adults. Evidence was drawn from randomized controlled trials, which represent the gold standard for determining efficacy and effectiveness. Evidence quality and recommendations were graded based on their effect on important outcomes. There is strong evidence to support treating hypertensive persons aged 60 years or older to a BP goal of less than 150/90 mm Hg and hypertensive persons 30 through 59 years of age to a diastolic goal of less than 90 mm Hg; however, there is insufficient evidence in hypertensive persons younger than 60 years for a systolic goal, or in those younger than 30 years for a diastolic goal, so the panel recommends a BP of less than 140/90 mm Hg for those groups based on expert opinion. The same thresholds and goals are recommended for hypertensive adults with diabetes or nondiabetic chronic kidney disease (CKD) as for the general hypertensive population younger than 60 years. There is moderate evidence to support initiating drug treatment with an angiotensin converting enzyme inhibitor, angiotensin receptor blocker, calcium channel blocker, or thiazide type diuretic in the nonblack hypertensive population, including those with diabetes. In the black hypertensive population, including those with diabetes, a calcium channel blocker or thiazide type diuretic is recommended as initial therapy. There is moderate evidence to support initial or add on antihypertensive therapy with an angiotensin converting enzyme inhibitor or angiotensin receptor blocker in persons with CKD to improve kidney outcomes. Although this guideline provides evidence based recommendations for the management of high BP and should meet the clinical needs of most patients, these recommendations are not a substitute for clinical judgment, and decisions about care must carefully consider and incorporate the clinical characteristics and circumstances of each individual patient. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0237",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Intensive care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0237_landmark_surviving_sepsis_campaign_international_guidelines_for_manag.md",
+   "snippet": "Title Surviving Sepsis Campaign: international guidelines for management of severe sepsis and septic shock, 2012 Authors Dellinger R P, Levy Mitchell M, Rhodes Andrew, Annane Djillali, Gerlach Herwig, Opal Steven M, Sevransky Jonathan E, Sp",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Intensive care medicine Title Surviving Sepsis Campaign: international guidelines for management of severe sepsis and septic shock, 2012 Authors Dellinger R P, Levy Mitchell M, Rhodes Andrew, Annane Djillali, Gerlach Herwig, Opal Steven M, Sevransky Jonathan E, Sprung Charles L, et al. Journal / DOI Intensive care medicine · DOI: 10.1007/s00134 012 2769 8 · PMID: 23361625 https://pubmed.ncbi.nlm.nih.gov/23361625/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 3219회 · RCR 130.57 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To provide an update to the \"Surviving Sepsis Campaign Guidelines for Management of Severe Sepsis and Septic Shock,\" last published in 2008. DESIGN: A consensus committee of 68 international experts representing 30 international organizations was convened. Nominal groups were assembled at key international meetings (for those committee members attending the conference). A formal conflict of interest policy was developed at the onset of the process and enforced throughout. The entire guidelines process was conducted independent of any industry funding. A stand alone meeting was held for all subgroup heads, co and vice chairs, and selected individuals. Teleconferences and electronic based discussion among subgroups and among the entire committee served as an integral part of the development. METHODS: The authors were advised to follow the principles of the Grading of Recommendations Assessment, Development and Evaluation (GRADE) system to guide assessment of quality of evidence from high (A) to very low (D) and to determine the strength of recommendations as strong (1) or weak (2). The potential drawbacks of making strong recommendations in the presence of low quality evidence were emphasized. Recommendations were classified into three groups: (1) those directly targeting severe sepsis; (2) those targeting general care of the critically ill patient and considered high priority in severe sepsis; and (3) pediatric considerations. RESULTS: Key recommendations and suggestions, listed by category, include: early quantitative resuscitation of the septic patient during the first 6 h after recognition (1C); blood cultures before antibiotic therapy (1C); imaging studies performed promptly to confirm a potential source of infection (UG); administration of broad spectrum antimicrobials therapy within 1 h of the recognition of septic shock (1B) and severe sepsis without septic shock (1C) as the goal of therapy; reassessment of antimicrobial therapy daily for de escalation, when appropriate (1B); infection source control with attention to the balance of risks and benefits of the chosen method within 12 h of diagnosis (1C); initial fluid resuscitation with crystalloid (1B) and consideration of the addition of albumin in patients who continue to require substantial amounts of crystalloid to maintain adequate mean arterial pressure (2C) and the avoidance of hetastarch formulations (1B); initial fluid challenge in patients with sepsis induced tissue hypoperfusion and suspicion of hypovolemia to achieve a minimum of 30 mL/kg of crystalloids (more rapid administration and greater amounts of fluid may be needed in some patients (1C); fluid challenge technique continued as long as hemodynamic improvement is based on either dynamic or static variables (UG); norepinephrine as the first choice vasopressor to maintain mean arterial pressure ≥65 mmHg (1B); epinephrine when an additional agent is needed to maintain adequate blood pressure (2B); vasopressin (0.03 U/min) can be added to norepinephrine to either raise mean arterial pressure to target or to decrease norepinephrine dose but should not be used as the initial vasopressor (UG); dopamine is not recommended except in highly selected circumstances (2C); dobutamine infusion administered or added to vasopressor in the presence of (a) myocardial dysfunction as suggested by elevated cardiac filling pressures and low cardiac output, or (b) ongoing signs of hypoperfusion despite achieving adequate intravascular volume and adequate mean arterial pressure (1C); avoiding use of intravenous hydrocortisone in adult septic shock patients if adequate fluid resuscitation and vasopressor therapy are able to restore hemodynamic stability (2C); hemoglobin target of 7 9 g/dL in the absence of tissue hypoperfusion, ischemic coronary artery disease, or acute hemorrhage (1B); low tidal volume (1A) and limitation of inspiratory plateau pressure (1B) for acute respiratory distress syndrome (ARDS); application of at least a minimal amount of positive end expiratory pressure (PEEP) in ARDS (1B); higher rather than lower level of PEEP for patients with sepsis induced moderate or severe ARDS (2C); recruitment maneuvers in sepsis patients with severe refractory hypoxemia due to ARDS (2C); prone positioning in sepsis induced ARDS patients with a PaO (2)/FiO (2) ratio of ≤100 mm Hg in facilities that have experience with such practices (2C); head of bed elevation in mechanically ventilated patients unless contraindicated (1B); a conservative fluid strategy for patients with established ARDS who do not have evidence of tissue hypoperfusion (1C); protocols for weaning and sedation (1A); minimizing use of either intermittent bolus sedation or continuous infusion sedation targeting specific titration endpoints (1B); avoidance of neuromuscular blockers if possible in the septic patient without ARDS (1C); a short course of neuromuscular blocker (no longer than 48 h) for patients with early ARDS and a PaO (2)/FI O (2) <150 mm Hg (2C); a protocolized approach to blood glucose management commencing insulin dosing when two consecutive blood glucose levels are 180 mg/dL, targeting an upper blood glucose ≤180 mg/dL (1A); equivalency of continuous veno venous hemofiltration or intermittent hemodialysis (2B); prophylaxis for deep vein thrombosis (1B); use of stress ulcer prophylaxis to prevent upper gastrointestinal bleeding in patients with bleeding risk factors (1B); oral or enteral (if necessary) feedings, as tolerated, rather than either complete fasting or provision of only intravenous glucose within the first 48 h after a diagnosis of severe sepsis/septic shock (2C); and addressing goals of care, including treatment plans and end of life planning (as appropriate) (1B), as early as feasible, but within 72 h of intensive care unit admission (2C). Recommendations specific to pediatric severe sepsis include: therapy with face mask oxygen, high flow nasal cannula oxygen, or nasopharyngeal continuous PEEP in the presence of respiratory distress and hypoxemia (2C), use of physical examination therapeutic endpoints such as capillary refill (2C); for septic shock associated with hypovolemia, the use of crystalloids or albumin to deliver a bolus of 20 mL/kg of crystalloids (or albumin equivalent) over 5 10 min (2C); more common use of inotropes and vasodilators for low cardiac output septic shock associated with elevated systemic vascular resistance (2C); and use of hydrocortisone only in children with suspected or proven \"absolute\"' adrenal insufficiency (2C). CONCLUSIONS: Strong agreement existed among a large cohort of international experts regarding many level 1 recommendations for the best care of patients with severe sepsis. Although a significant number of aspects of care have relatively weak support, evidence based recommendations regarding the acute management of sepsis and septic shock are the foundation of improved outcomes for this important group of critically ill patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0236",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Archives of internal medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0236_landmark_the_sixth_report_of_the_joint_national_committee_on_preventi.md",
+   "snippet": "Title The sixth report of the Joint National Committee on prevention, detection, evaluation, and treatment of high blood pressure Authors (정보 없음) Journal / DOI Archives of internal medicine · PMID: 9385294 https://pubmed.ncbi.nlm.nih.gov/93",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Archives of internal medicine Title The sixth report of the Joint National Committee on prevention, detection, evaluation, and treatment of high blood pressure Authors (정보 없음) Journal / DOI Archives of internal medicine · PMID: 9385294 https://pubmed.ncbi.nlm.nih.gov/9385294/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 4958회 · RCR 184.65 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Racial and ethnic minority populations are growing segments of our society. The prevalence of hypertension in these populations differs across groups, and control rates are not as good as in the general population. Clinicians should be aware of these management challenges, taking social and cultural factors into account. Guidelines are provided for management of children and women with hypertension. In older persons, diuretics are preferred and long acting dihydropyridine calcium antagonists may be considered. Specific therapy for patients with LVH, coronary artery disease, and heart failure are outlined. Patients with renal insufficiency with greater than 1 g/d of proteinuria should be treated to a therapy blood pressure goal of 125/75 mm Hg; those with less proteinuria should be treated to a blood pressure goal of 130/85 mm Hg. ACE inhibitors have additional renoprotective effects over other antihypertensive agents. Patients with diabetes should be treated to a therapy blood pressure goal of below 130/85 mm Hg. Hypertension may coexist with various other conditions and may be induced by various pressor agents. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0235",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / British medical journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0235_landmark_molecular_pathology_of_schizophrenia_more_than_one_disease_p.md",
+   "snippet": "Title Molecular pathology of schizophrenia: more than one disease process? Authors Crow T J Journal / DOI British medical journal · PMID: 6101544 https://pubmed.ncbi.nlm.nih.gov/6101544/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 1355회",
+   "text": "Pathology landmark highly-cited pubmed PubMed / British medical journal Title Molecular pathology of schizophrenia: more than one disease process? Authors Crow T J Journal / DOI British medical journal · PMID: 6101544 https://pubmed.ncbi.nlm.nih.gov/6101544/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 1355회 · RCR 59.51 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0234",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Blood",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0234_landmark_diagnosis_and_management_of_acute_myeloid_leukemia_in_adults.md",
+   "snippet": "Title Diagnosis and management of acute myeloid leukemia in adults: recommendations from an international expert panel, on behalf of the European LeukemiaNet Authors Döhner Hartmut, Estey Elihu H, Amadori Sergio, Appelbaum Frederick R, Büch",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Blood Title Diagnosis and management of acute myeloid leukemia in adults: recommendations from an international expert panel, on behalf of the European LeukemiaNet Authors Döhner Hartmut, Estey Elihu H, Amadori Sergio, Appelbaum Frederick R, Büchner Thomas, Burnett Alan K, Dombret Hervé, Fenaux Pierre, et al. Journal / DOI Blood · DOI: 10.1182/blood 2009 07 235358 · PMID: 19880497 https://pubmed.ncbi.nlm.nih.gov/19880497/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 2724회 · RCR 66.98 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract In 2003, an international working group last reported on recommendations for diagnosis, response assessment, and treatment outcomes in acute myeloid leukemia (AML). Since that time, considerable progress has been made in elucidating the molecular pathogenesis of the disease that has resulted in the identification of new diagnostic and prognostic markers. Furthermore, therapies are now being developed that target disease associated molecular defects. Recent developments prompted an international expert panel to provide updated evidence and expert opinion based recommendations for the diagnosis and management of AML, that contain both minimal requirements for general practice as well as standards for clinical trials. A new standardized reporting system for correlation of cytogenetic and molecular genetic data with clinical data is proposed. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0233",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0233_landmark_k_doqi_clinical_practice_guidelines_for_chronic_kidney_disea.md",
+   "snippet": "Title K/DOQI clinical practice guidelines for chronic kidney disease: evaluation, classification, and stratification Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / American journal of kidney diseases : the official journal of the National Kidney Foundation Title K/DOQI clinical practice guidelines for chronic kidney disease: evaluation, classification, and stratification Authors National Kidney Foundation Journal / DOI American journal of kidney diseases : the official journal of the National Kidney Foundation · PMID: 11904577 https://pubmed.ncbi.nlm.nih.gov/11904577/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 8765회 · RCR 248.89 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0232",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0232_landmark_american_college_of_chest_physicians_society_of_critical_car.md",
+   "snippet": "Title American College of Chest Physicians/Society of Critical Care Medicine Consensus Conference: definitions for sepsis and organ failure and guidelines for the use of innovative therapies in sepsis Authors (정보 없음) Journal / DOI Critical ",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title American College of Chest Physicians/Society of Critical Care Medicine Consensus Conference: definitions for sepsis and organ failure and guidelines for the use of innovative therapies in sepsis Authors (정보 없음) Journal / DOI Critical care medicine · PMID: 1597042 https://pubmed.ncbi.nlm.nih.gov/1597042/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 4085회 · RCR 146.43 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To define the terms \"sepsis\" and \"organ failure\" in a precise manner. DATA SOURCES: Review of the medical literature and the use of expert testimony at a consensus conference. SETTING: American College of Chest Physicians (ACCP) headquarters in Northbrook, IL. PARTICIPANTS: Leadership members of ACCP/Society of Critical Care Medicine (SCCM). RESULTS: An ACCP/SCCM Consensus Conference was held in August of 1991 with the goal of agreeing on a set of definitions that could be applied to patients with sepsis and its sequelae. New definitions were offered for some terms, while others were discarded. Broad definitions of sepsis and the systemic inflammatory response syndrome were proposed, along with detailed physiologic variables by which a patient could be categorized. Definitions for severe sepsis, septic shock, hypotension, and multiple organ dysfunction syndrome were also offered. The use of severity scoring methods were recommended when dealing with septic patients as an adjunctive tool to assess mortality. Appropriate methods and applications for the use and testing of new therapies were recommended. CONCLUSION: The use of these terms and techniques should assist clinicians and researchers who deal with sepsis and its sequelae. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0231",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0231_landmark_2013_accf_aha_guideline_for_the_management_of_heart_failure_.md",
+   "snippet": "Title 2013 ACCF/AHA guideline for the management of heart failure: a report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines Authors Yancy Clyde W, Jessup Mariell, Bozkurt Biykem,",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title 2013 ACCF/AHA guideline for the management of heart failure: a report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines Authors Yancy Clyde W, Jessup Mariell, Bozkurt Biykem, Butler Javed, Casey Donald E, Drazner Mark H, Fonarow Gregg C, Geraci Stephen A, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2013.05.019 · PMID: 23747642 https://pubmed.ncbi.nlm.nih.gov/23747642/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 5084회 · RCR 186.72 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0230",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Neuron",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0230_landmark_the_molecular_pathology_of_alzheimer_s_disease.md",
+   "snippet": "Title The molecular pathology of Alzheimer's disease Authors Selkoe D J Journal / DOI Neuron · PMID: 1673054 https://pubmed.ncbi.nlm.nih.gov/1673054/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 2271회 · RCR 60.56 (분야평균=1.0) · NIH 상위 백분위 ",
+   "text": "Pathology landmark highly-cited pubmed PubMed / Neuron Title The molecular pathology of Alzheimer's disease Authors Selkoe D J Journal / DOI Neuron · PMID: 1673054 https://pubmed.ncbi.nlm.nih.gov/1673054/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 2271회 · RCR 60.56 (분야평균=1.0) · NIH 상위 백분위 99.9. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0229",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0229_landmark_revised_response_criteria_for_malignant_lymphoma.md",
+   "snippet": "Title Revised response criteria for malignant lymphoma Authors Cheson Bruce D, Pfistner Beate, Juweid Malik E, Gascoyne Randy D, Specht Lena, Horning Sandra J, Coiffier Bertrand, Fisher Richard I, et al. Journal / DOI Journal of clinical on",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Revised response criteria for malignant lymphoma Authors Cheson Bruce D, Pfistner Beate, Juweid Malik E, Gascoyne Randy D, Specht Lena, Horning Sandra J, Coiffier Bertrand, Fisher Richard I, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · PMID: 17242396 https://pubmed.ncbi.nlm.nih.gov/17242396/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 3868회 · RCR 99.63 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract PURPOSE: Standardized response criteria are needed to interpret and compare clinical trials and for approval of new therapeutic agents by regulatory agencies. METHODS: The International Working Group response criteria (Cheson et al, J Clin Oncol 17:1244, 1999) were widely adopted, but required reassessment because of identified limitations and the increased use of [18F]fluorodeoxyglucose positron emission tomography (PET), immunohistochemistry (IHC), and flow cytometry. The International Harmonization Project was convened to provide updated recommendations. RESULTS: New guidelines are presented incorporating PET, IHC, and flow cytometry for definitions of response in non Hodgkin's and Hodgkin's lymphoma. Standardized definitions of end points are provided. CONCLUSION: We hope that these guidelines will be adopted widely by study groups, pharmaceutical and biotechnology companies, and regulatory agencies to facilitate the development of new and more effective therapies to improve the outcome of patients with lymphoma. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0228",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Hypertension (Dallas, Tex. : 1979)",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0228_landmark_seventh_report_of_the_joint_national_committee_on_prevention.md",
+   "snippet": "Title Seventh report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure Authors Chobanian Aram V, Bakris George L, Black Henry R, Cushman William C, Green Lee A, Izzo Joseph L, Jones D",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / Hypertension (Dallas, Tex. : 1979) Title Seventh report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure Authors Chobanian Aram V, Bakris George L, Black Henry R, Cushman William C, Green Lee A, Izzo Joseph L, Jones Daniel W, Materson Barry J, et al. Journal / DOI Hypertension (Dallas, Tex. : 1979) · PMID: 14656957 https://pubmed.ncbi.nlm.nih.gov/14656957/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 9876회 · RCR 287.67 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The National High Blood Pressure Education Program presents the complete Seventh Report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure. Like its predecessors, the purpose is to provide an evidence based approach to the prevention and management of hypertension. The key messages of this report are these: in those older than age 50, systolic blood pressure (BP) of greater than 140 mm Hg is a more important cardiovascular disease (CVD) risk factor than diastolic BP; beginning at 115/75 mm Hg, CVD risk doubles for each increment of 20/10 mm Hg; those who are normotensive at 55 years of age will have a 90% lifetime risk of developing hypertension; prehypertensive individuals (systolic BP 120 139 mm Hg or diastolic BP 80 89 mm Hg) require health promoting lifestyle modifications to prevent the progressive rise in blood pressure and CVD; for uncomplicated hypertension, thiazide diuretic should be used in drug treatment for most, either alone or combined with drugs from other classes; this report delineates specific high risk conditions that are compelling indications for the use of other antihypertensive drug classes (angiotensin converting enzyme inhibitors, angiotensin receptor blockers, beta blockers, calcium channel blockers); two or more antihypertensive medications will be required to achieve goal BP (<140/90 mm Hg, or <130/80 mm Hg) for patients with diabetes and chronic kidney disease; for patients whose BP is more than 20 mm Hg above the systolic BP goal or more than 10 mm Hg above the diastolic BP goal, initiation of therapy using two agents, one of which usually will be a thiazide diuretic, should be considered; regardless of therapy or care, hypertension will be controlled only if patients are motivated to stay on their treatment plan. Positive experiences, trust in the clinician, and empathy improve patient motivation and satisfaction. This report serves as a guide, and the committee continues to recognize that the responsible physician's judgment remains paramount. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0227",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0227_landmark_surviving_sepsis_campaign_international_guidelines_for_manag.md",
+   "snippet": "Title Surviving sepsis campaign: international guidelines for management of severe sepsis and septic shock: 2012 Authors Dellinger R Phillip, Levy Mitchell M, Rhodes Andrew, Annane Djillali, Gerlach Herwig, Opal Steven M, Sevransky Jonathan",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Critical care medicine Title Surviving sepsis campaign: international guidelines for management of severe sepsis and septic shock: 2012 Authors Dellinger R Phillip, Levy Mitchell M, Rhodes Andrew, Annane Djillali, Gerlach Herwig, Opal Steven M, Sevransky Jonathan E, Sprung Charles L, et al. Journal / DOI Critical care medicine · DOI: 10.1097/CCM.0b013e31827e83af · PMID: 23353941 https://pubmed.ncbi.nlm.nih.gov/23353941/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 4206회 · RCR 171.94 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To provide an update to the \"Surviving Sepsis Campaign Guidelines for Management of Severe Sepsis and Septic Shock,\" last published in 2008. DESIGN: A consensus committee of 68 international experts representing 30 international organizations was convened. Nominal groups were assembled at key international meetings (for those committee members attending the conference). A formal conflict of interest policy was developed at the onset of the process and enforced throughout. The entire guidelines process was conducted independent of any industry funding. A stand alone meeting was held for all subgroup heads, co and vice chairs, and selected individuals. Teleconferences and electronic based discussion among subgroups and among the entire committee served as an integral part of the development. METHODS: The authors were advised to follow the principles of the Grading of Recommendations Assessment, Development and Evaluation (GRADE) system to guide assessment of quality of evidence from high (A) to very low (D) and to determine the strength of recommendations as strong (1) or weak (2). The potential drawbacks of making strong recommendations in the presence of low quality evidence were emphasized. Some recommendations were ungraded (UG). Recommendations were classified into three groups: 1) those directly targeting severe sepsis; 2) those targeting general care of the critically ill patient and considered high priority in severe sepsis; and 3) pediatric considerations. RESULTS: Key recommendations and suggestions, listed by category, include: early quantitative resuscitation of the septic patient during the first 6 hrs after recognition (1C); blood cultures before antibiotic therapy (1C); imaging studies performed promptly to confirm a potential source of infection (UG); administration of broad spectrum antimicrobials therapy within 1 hr of recognition of septic shock (1B) and severe sepsis without septic shock (1C) as the goal of therapy; reassessment of antimicrobial therapy daily for de escalation, when appropriate (1B); infection source control with attention to the balance of risks and benefits of the chosen method within 12 hrs of diagnosis (1C); initial fluid resuscitation with crystalloid (1B) and consideration of the addition of albumin in patients who continue to require substantial amounts of crystalloid to maintain adequate mean arterial pressure (2C) and the avoidance of hetastarch formulations (1C); initial fluid challenge in patients with sepsis induced tissue hypoperfusion and suspicion of hypovolemia to achieve a minimum of 30 mL/kg of crystalloids (more rapid administration and greater amounts of fluid may be needed in some patients) (1C); fluid challenge technique continued as long as hemodynamic improvement, as based on either dynamic or static variables (UG); norepinephrine as the first choice vasopressor to maintain mean arterial pressure ≥ 65 mm Hg (1B); epinephrine when an additional agent is needed to maintain adequate blood pressure (2B); vasopressin (0.03 U/min) can be added to norepinephrine to either raise mean arterial pressure to target or to decrease norepinephrine dose but should not be used as the initial vasopressor (UG); dopamine is not recommended except in highly selected circumstances (2C); dobutamine infusion administered or added to vasopressor in the presence of a) myocardial dysfunction as suggested by elevated cardiac filling pressures and low cardiac output, or b) ongoing signs of hypoperfusion despite achieving adequate intravascular volume and adequate mean arterial pressure (1C); avoiding use of intravenous hydrocortisone in adult septic shock patients if adequate fluid resuscitation and vasopressor therapy are able to restore hemodynamic stability (2C); hemoglobin target of 7 9 g/dL in the absence of tissue hypoperfusion, ischemic coronary artery disease, or acute hemorrhage (1B); low tidal volume (1A) and limitation of inspiratory plateau pressure (1B) for acute respiratory distress syndrome (ARDS); application of at least a minimal amount of positive end expiratory pressure (PEEP) in ARDS (1B); higher rather than lower level of PEEP for patients with sepsis induced moderate or severe ARDS (2C); recruitment maneuvers in sepsis patients with severe refractory hypoxemia due to ARDS (2C); prone positioning in sepsis induced ARDS patients with a PaO2/FIO2 ratio of ≤ 100 mm Hg in facilities that have experience with such practices (2C); head of bed elevation in mechanically ventilated patients unless contraindicated (1B); a conservative fluid strategy for patients with established ARDS who do not have evidence of tissue hypoperfusion (1C); protocols for weaning and sedation (1A); minimizing use of either intermittent bolus sedation or continuous infusion sedation targeting specific titration endpoints (1B); avoidance of neuromuscular blockers if possible in the septic patient without ARDS (1C); a short course of neuromuscular blocker (no longer than 48 hrs) for patients with early ARDS and a Pao2/Fio2 < 150 mm Hg (2C); a protocolized approach to blood glucose management commencing insulin dosing when two consecutive blood glucose levels are 180 mg/dL, targeting an upper blood glucose ≤ 180 mg/dL (1A); equivalency of continuous veno venous hemofiltration or intermittent hemodialysis (2B); prophylaxis for deep vein thrombosis (1B); use of stress ulcer prophylaxis to prevent upper gastrointestinal bleeding in patients with bleeding risk factors (1B); oral or enteral (if necessary) feedings, as tolerated, rather than either complete fasting or provision of only intravenous glucose within the first 48 hrs after a diagnosis of severe sepsis/septic shock (2C); and addressing goals of care, including treatment plans and end of life planning (as appropriate) (1B), as early as feasible, but within 72 hrs of intensive care unit admission (2C). Recommendations specific to pediatric severe sepsis include: therapy with face mask oxygen, high flow nasal cannula oxygen, or nasopharyngeal continuous PEEP in the presence of respiratory distress and hypoxemia (2C), use of physical examination therapeutic endpoints such as capillary refill (2C); for septic shock associated with hypovolemia, the use of crystalloids or albumin to deliver a bolus of 20 mL/kg of crystalloids (or albumin equivalent) over 5 to 10 mins (2C); more common use of inotropes and vasodilators for low cardiac output septic shock associated with elevated systemic vascular resistance (2C); and use of hydrocortisone only in children with suspected or proven \"absolute\"' adrenal insufficiency (2C). CONCLUSIONS: Strong agreement existed among a large cohort of international experts regarding many level 1 recommendations for the best care of patients with severe sepsis. Although a significant number of aspects of care have relatively weak support, evidence based recommendations regarding the acute management of sepsis and septic shock are the foundation of improved outcomes for this important group of critically ill patients. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0226",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of heart failure",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0226_landmark_2016_esc_guidelines_for_the_diagnosis_and_treatment_of_acute.md",
+   "snippet": "Title 2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: The Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC). Developed with the ",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European journal of heart failure Title 2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: The Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC). Developed with the special contribution of the Heart Failure Association (HFA) of the ESC Authors Ponikowski Piotr, Voors Adriaan A, Anker Stefan D, Bueno Héctor, Cleland John G F, Coats Andrew J S, Falk Volkmar, González Juanatey José Ramón, et al. Journal / DOI European journal of heart failure · DOI: 10.1002/ejhf.592 · PMID: 27207191 https://pubmed.ncbi.nlm.nih.gov/27207191/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 5098회 · RCR 231.94 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0225",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / American journal of respiratory and critical care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0225_landmark_idiopathic_pulmonary_fibrosis_an_update_and_progressive_pulm.md",
+   "snippet": "Title Idiopathic Pulmonary Fibrosis (an Update) and Progressive Pulmonary Fibrosis in Adults: An Official ATS/ERS/JRS/ALAT Clinical Practice Guideline Authors Raghu Ganesh, Remy Jardin Martine, Richeldi Luca, Thomson Carey C, Inoue Yoshikaz",
+   "text": "Pathology landmark highly-cited pubmed PubMed / American journal of respiratory and critical care medicine Title Idiopathic Pulmonary Fibrosis (an Update) and Progressive Pulmonary Fibrosis in Adults: An Official ATS/ERS/JRS/ALAT Clinical Practice Guideline Authors Raghu Ganesh, Remy Jardin Martine, Richeldi Luca, Thomson Carey C, Inoue Yoshikazu, Johkoh Takeshi, Kreuter Michael, Lynch David A, et al. Journal / DOI American journal of respiratory and critical care medicine · DOI: 10.1164/rccm.202202 0399ST · PMID: 35486072 https://pubmed.ncbi.nlm.nih.gov/35486072/ Why must read 파트(Pathology) 내 고인용 랜드마크로 선정. 피인용 2294회 · RCR 232.22 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract Background: This American Thoracic Society, European Respiratory Society, Japanese Respiratory Society, and Asociación Latinoamericana de Tórax guideline updates prior idiopathic pulmonary fibrosis (IPF) guidelines and addresses the progression of pulmonary fibrosis in patients with interstitial lung diseases (ILDs) other than IPF. Methods: A committee was composed of multidisciplinary experts in ILD, methodologists, and patient representatives. 1) Update of IPF: Radiological and histopathological criteria for IPF were updated by consensus. Questions about transbronchial lung cryobiopsy, genomic classifier testing, antacid medication, and antireflux surgery were informed by systematic reviews and answered with evidence based recommendations using the Grading of Recommendations, Assessment, Development and Evaluation (GRADE) approach. 2) Progressive pulmonary fibrosis (PPF): PPF was defined, and then radiological and physiological criteria for PPF were determined by consensus. Questions about pirfenidone and nintedanib were informed by systematic reviews and answered with evidence based recommendations using the GRADE approach. Results:1) Update of IPF: A conditional recommendation was made to regard transbronchial lung cryobiopsy as an acceptable alternative to surgical lung biopsy in centers with appropriate expertise. No recommendation was made for or against genomic classifier testing. Conditional recommendations were made against antacid medication and antireflux surgery for the treatment of IPF. 2) PPF: PPF was defined as at least two of three criteria (worsening symptoms, radiological progression, and physiological progression) occurring within the past year with no alternative explanation in a patient with an ILD other than IPF. A conditional recommendation was made for nintedanib, and additional research into pirfenidone was recommended. Conclusions: The conditional recommendations in this guideline are intended to provide the basis for rational, informed decisions by clinicians. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0224",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0224_landmark_recommendations_for_initial_evaluation_staging_and_response_.md",
+   "snippet": "Title Recommendations for initial evaluation, staging, and response assessment of Hodgkin and non Hodgkin lymphoma: the Lugano classification Authors Cheson Bruce D, Fisher Richard I, Barrington Sally F, Cavalli Franco, Schwartz Lawrence H,",
+   "text": "Hematology-Oncology landmark highly-cited pubmed PubMed / Journal of clinical oncology : official journal of the American Society of Clinical Oncology Title Recommendations for initial evaluation, staging, and response assessment of Hodgkin and non Hodgkin lymphoma: the Lugano classification Authors Cheson Bruce D, Fisher Richard I, Barrington Sally F, Cavalli Franco, Schwartz Lawrence H, Zucca Emanuele, Lister T Andrew, Alliance, Australasian Leukaemia and Lymphoma Group, et al. Journal / DOI Journal of clinical oncology : official journal of the American Society of Clinical Oncology · PMID: 25113753 https://pubmed.ncbi.nlm.nih.gov/25113753/ Why must read 파트(Hematology Oncology) 내 고인용 랜드마크로 선정. 피인용 4504회 · RCR 156.67 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract The purpose of this work was to modernize recommendations for evaluation, staging, and response assessment of patients with Hodgkin lymphoma (HL) and non Hodgkin lymphoma (NHL). A workshop was held at the 11th International Conference on Malignant Lymphoma in Lugano, Switzerland, in June 2011, that included leading hematologists, oncologists, radiation oncologists, pathologists, radiologists, and nuclear medicine physicians, representing major international lymphoma clinical trials groups and cancer centers. Clinical and imaging subcommittees presented their conclusions at a subsequent workshop at the 12th International Conference on Malignant Lymphoma, leading to revised criteria for staging and of the International Working Group Guidelines of 2007 for response. As a result, fluorodeoxyglucose (FDG) positron emission tomography (PET)–computed tomography (CT) was formally incorporated into standard staging for FDG avid lymphomas. A modification of the Ann Arbor descriptive terminology will be used for anatomic distribution of disease extent, but the suffixes A or B for symptoms will only be included for HL. A bone marrow biopsy is no longer indicated for the routine staging of HL and most diffuse large B cell lymphomas. However, regardless of stage, general practice is to treat patients based on limited (stages I and II, nonbulky) or advanced (stage III or IV) disease, with stage II bulky disease considered as limited or advanced disease based on histology and a number of prognostic factors. PET CT will be used to assess response in FDG avid histologies using the 5 point scale. The product of the perpendicular diameters of a single node can be used to identify progressive disease. Routine surveillance scans are discouraged. These recommendations should improve evaluation of patients with lymphoma and enhance the ability to compare outcomes of clinical trials. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0223",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0223_landmark_the_seventh_report_of_the_joint_national_committee_on_preven.md",
+   "snippet": "Title The Seventh Report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure: the JNC 7 report Authors Chobanian Aram V, Bakris George L, Black Henry R, Cushman William C, Green Lee A, ",
+   "text": "Nephrology landmark highly-cited pubmed PubMed / JAMA Title The Seventh Report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure: the JNC 7 report Authors Chobanian Aram V, Bakris George L, Black Henry R, Cushman William C, Green Lee A, Izzo Joseph L, Jones Daniel W, Materson Barry J, et al. Journal / DOI JAMA · PMID: 12748199 https://pubmed.ncbi.nlm.nih.gov/12748199/ Why must read 파트(Nephrology) 내 고인용 랜드마크로 선정. 피인용 14581회 · RCR 435.34 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract \"The Seventh Report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure\" provides a new guideline for hypertension prevention and management. The following are the key messages(1) In persons older than 50 years, systolic blood pressure (BP) of more than 140 mm Hg is a much more important cardiovascular disease (CVD) risk factor than diastolic BP; (2) The risk of CVD, beginning at 115/75 mm Hg, doubles with each increment of 20/10 mm Hg; individuals who are normotensive at 55 years of age have a 90% lifetime risk for developing hypertension; (3) Individuals with a systolic BP of 120 to 139 mm Hg or a diastolic BP of 80 to 89 mm Hg should be considered as prehypertensive and require health promoting lifestyle modifications to prevent CVD; (4) Thiazide type diuretics should be used in drug treatment for most patients with uncomplicated hypertension, either alone or combined with drugs from other classes. Certain high risk conditions are compelling indications for the initial use of other antihypertensive drug classes (angiotensin converting enzyme inhibitors, angiotensin receptor blockers, beta blockers, calcium channel blockers); (5) Most patients with hypertension will require 2 or more antihypertensive medications to achieve goal BP (<140/90 mm Hg, or <130/80 mm Hg for patients with diabetes or chronic kidney disease); (6) If BP is more than 20/10 mm Hg above goal BP, consideration should be given to initiating therapy with 2 agents, 1 of which usually should be a thiazide type diuretic; and (7) The most effective therapy prescribed by the most careful clinician will control hypertension only if patients are motivated. Motivation improves when patients have positive experiences with and trust in the clinician. Empathy builds trust and is a potent motivator. Finally, in presenting these guidelines, the committee recognizes that the responsible physician's judgment remains paramount. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0222",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Intensive care medicine",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0222_landmark_surviving_sepsis_campaign_international_guidelines_for_manag.md",
+   "snippet": "Title Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock: 2016 Authors Rhodes Andrew, Evans Laura E, Alhazzani Waleed, Levy Mitchell M, Antonelli Massimo, Ferrer Ricard, Kumar Anand, Sevransky Jona",
+   "text": "Infectious Disease landmark highly-cited pubmed PubMed / Intensive care medicine Title Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock: 2016 Authors Rhodes Andrew, Evans Laura E, Alhazzani Waleed, Levy Mitchell M, Antonelli Massimo, Ferrer Ricard, Kumar Anand, Sevransky Jonathan E, et al. Journal / DOI Intensive care medicine · DOI: 10.1007/s00134 017 4683 6 · PMID: 28101605 https://pubmed.ncbi.nlm.nih.gov/28101605/ Why must read 파트(Infectious Disease) 내 고인용 랜드마크로 선정. 피인용 4363회 · RCR 218.77 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract OBJECTIVE: To provide an update to \"Surviving Sepsis Campaign Guidelines for Management of Sepsis and Septic Shock: 2012\". DESIGN: A consensus committee of 55 international experts representing 25 international organizations was convened. Nominal groups were assembled at key international meetings (for those committee members attending the conference). A formal conflict of interest (COI) policy was developed at the onset of the process and enforced throughout. A stand alone meeting was held for all panel members in December 2015. Teleconferences and electronic based discussion among subgroups and among the entire committee served as an integral part of the development. METHODS: The panel consisted of five sections: hemodynamics, infection, adjunctive therapies, metabolic, and ventilation. Population, intervention, comparison, and outcomes (PICO) questions were reviewed and updated as needed, and evidence profiles were generated. Each subgroup generated a list of questions, searched for best available evidence, and then followed the principles of the Grading of Recommendations Assessment, Development, and Evaluation (GRADE) system to assess the quality of evidence from high to very low, and to formulate recommendations as strong or weak, or best practice statement when applicable. RESULTS: The Surviving Sepsis Guideline panel provided 93 statements on early management and resuscitation of patients with sepsis or septic shock. Overall, 32 were strong recommendations, 39 were weak recommendations, and 18 were best practice statements. No recommendation was provided for four questions. CONCLUSIONS: Substantial agreement exists among a large cohort of international experts regarding many strong recommendations for the best care of patients with sepsis. Although a significant number of aspects of care have relatively weak support, evidence based recommendations regarding the acute management of sepsis and septic shock are the foundation of improved outcomes for these critically ill patients with high mortality. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0221",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0221_landmark_2016_esc_guidelines_for_the_diagnosis_and_treatment_of_acute.md",
+   "snippet": "Title 2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: The Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC)Developed with the sp",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: The Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC)Developed with the special contribution of the Heart Failure Association (HFA) of the ESC Authors Ponikowski Piotr, Voors Adriaan A, Anker Stefan D, Bueno Héctor, Cleland John G F, Coats Andrew J S, Falk Volkmar, González Juanatey José Ramón, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehw128 · PMID: 27206819 https://pubmed.ncbi.nlm.nih.gov/27206819/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 9640회 · RCR 442.42 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "anatomy-daily-2026-08-17",
    "type": "anatomy",
