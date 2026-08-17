@@ -30,7 +30,15 @@
 - 해부학(3Q) → `content/anatomy/{sources,pages,concepts,questions,daily,answers}/`
   · 원본 PDF·페이지 이미지·마스크는 **`.private/anatomy/`(git 무시)** — 공개 repo 커밋 금지.
   · 일정 단일 기준은 `pipelines/anatomy_schedule.py`(2026 시간표). Drive 계획서 날짜 사용 금지.
+  · **회차 배정은 교수명·파일명 날짜가 아니라 「부위」로 한다.** 과거 학기 자료는 담당교수와
+    날짜가 지금과 다르다 — 그 자료가 다루는 부위를 2026 실습주제에 맞춘다. 결정론은
+    `anatomy_schedule.session_for_region()`(회귀: `test_region_not_professor_decides_session`).
   · 루틴 종료일 **2026-10-19**(Tagging 2). 이후 anatomy 생성·커밋 금지(completed no-op).
+  · 모든 문항은 `scheduled_dates` 를 반드시 갖는다 — 없으면 회차 필터·일일 큐에서 영영
+    안 뽑힌다. 빠진 게 생기면 `pipelines/backfill_sessions.py`(부위 기준)로 채운다.
+  · 서브노트(`kind: study_guide`)는 `mnemonics:`(두문자·대조, 5줄 이상)를 갖는다.
+    빈칸 채우기·자가 점검 페이지는 본문의 `==하이라이트==`·`### 소제목`에서 **자동 파생**
+    되므로, 외울 것은 반드시 `==...==` 로 표시한다(회귀: `test_subnotes_carry_memory_aids`).
   · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
 ## 커밋 전 필수 순서
@@ -41,6 +49,8 @@
    신규 콘텐츠까지 반영하게 한다(병합 직후 번들은 낡아 있음).
 2. `python pipelines/indexer.py --check`  (frontmatter 검증, 실패 시 중단)
 3. `python pipelines/indexer.py`          (SQLite 재빌드) → 이어서 `docs/` 번들 재생성
+   (도해·트리 SVG를 건드렸으면 `python pipelines/export_diagrams_web.py` 도 함께 —
+    자산은 검색 색인에 안 잡혀 별도 매니페스트가 갤러리·새 자료 목록의 근거다)
 4. 새 `.md` 와 재생성된 `docs/` 번들을 함께 커밋(id_counter·seen_topics·seen_papers 는
    파생물이라 커밋 대상이 아니다; ailab 진도를 바꿨다면 `state/ailab_progress.json` 만 포함).
 5. 신규 타입(paper/disease/drug)은 self-verify 한계를 고려해 **PR로** 올린다.

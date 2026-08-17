@@ -15,6 +15,7 @@ test_anatomy.py — 해부학 파이프라인 회귀 테스트(pytest 없이 ass
 from __future__ import annotations
 
 import json
+import re
 import sys
 import tempfile
 from datetime import date
@@ -294,6 +295,107 @@ def test_pdf_builder_selftest() -> None:
     assert r.returncode == 0, f"anatomy_pdf selftest 실패: {r.stdout}{r.stderr}"
 
 
+def test_region_not_professor_decides_session() -> None:
+    """과거 학기 자료의 회차 배정은 **부위** 기준이다 — 교수명·파일명 날짜가 아니라.
+
+    사용자 지시(2026-08-15): "교수님 이름을 따라갈 필요 없이 부위별로 공부한다고 했던
+    부분 기준으로 만들어라". 과거 학기 실습표의 담당교수·날짜는 지금과 다를 수 있다.
+    """
+    from anatomy_schedule import SCHEDULE_2026, session_for_region, session_no_for_date
+
+    # 업로드된 과거 '실습6' 표: 담당교수 문용석 / 9월 1일 — 둘 다 2026 기준이 아니다.
+    # 부위(목의 삼각·넓적다리 앞·안쪽·종아리 앞·발등)로 보면 2026-09-03 = 6회차.
+    assert session_for_region("목의 삼각") == 6
+    assert session_for_region("넓적다리 앞칸 넙다리네갈래근") == 6
+    assert session_for_region("발등의 근육과 힘줄") == 6
+    assert session_no_for_date(SCHEDULE_2026[5]["date"]) == 6
+
+    # 같은 스캔에 섞여 있어도 발목 안쪽면·굽힘근지지띠는 2026에선 7회차다.
+    assert session_for_region("발목 안쪽면") == 7
+    assert session_for_region("굽힘근지지띠") == 7
+
+    # 앞 회차 부위도 제자리를 찾아야 한다.
+    assert session_for_region("뒤통수밑삼각") == 3
+    assert session_for_region("볼기부위") == 2
+    assert session_for_region("없는부위이름") is None
+
+
+def test_branch_tree_selftest() -> None:
+    """분지 계보 트리 생성기: 배치 겹침·노드별 색·강조 렌더 회귀."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "branch_tree.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"branch_tree selftest 실패: {r.stdout}{r.stderr}"
+
+
+def test_every_session_has_nerve_and_vessel_tree() -> None:
+    """서브노트를 만든 회차는 신경·혈관·다발 트리를 모두 갖는다(사용자 지시 2026-08-16)."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    from branch_specs import SPECS
+    sessions = {k.split("-")[0] for k in SPECS}
+    for s in sessions:
+        for suffix in ("nerve", "vessel", "bundle"):
+            assert f"{s}-{suffix}" in SPECS, f"{s}: {suffix} 트리 없음"
+
+
+def test_diagram_manifest_covers_every_svg() -> None:
+    """도해 갤러리 매니페스트: 자산 누락·유령 항목·날짜 없음 회귀(2026-08-16)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "export_diagrams_web.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"export_diagrams_web selftest 실패: {r.stdout}{r.stderr}"
+    # 생성기가 만든 tree-*.svg 는 전부 현재 스펙에 대응해야 한다(이름 바꾼 옛 파일 잔존 금지)
+    sys.path.insert(0, str(Path(__file__).parent))
+    from branch_specs import SPECS
+    root = Path(__file__).resolve().parents[1]
+    for p in (root / "docs" / "assets" / "anatomy").glob("tree-*.svg"):
+        key = p.stem.rsplit("-", 1)[0][len("tree-"):]
+        assert key in SPECS, f"스펙 없는 유령 도해: {p.name}"
+
+
+def test_every_question_has_a_session() -> None:
+    """모든 문항에 `scheduled_dates` 가 있어야 회차 필터·일일 큐에 잡힌다(2026-08-17).
+
+    초기 문항 39건이 이 값 없이 만들어져 웹 '오늘의 문항'에서 영영 안 뽑혔다.
+    backfill_sessions.py 가 **부위 기준**으로 채웠고, 다시 새는 것을 여기서 막는다.
+    """
+    root = Path(__file__).resolve().parents[1]
+    bad = []
+    for p in (root / "content/anatomy/questions").rglob("*.md"):
+        if not re.search(r"^scheduled_dates:", p.read_text(encoding="utf-8"), re.M):
+            bad.append(p.name)
+    assert not bad, f"scheduled_dates 없는 문항: {bad[:8]} (총 {len(bad)}건)"
+
+
+def test_backfill_uses_region_not_professor() -> None:
+    """회차 백필도 교수명·과거 학기 날짜가 아니라 부위로 정한다."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "backfill_sessions.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"backfill_sessions selftest 실패: {r.stdout}{r.stderr}"
+
+
+def test_subnotes_carry_memory_aids() -> None:
+    """서브노트마다 암기 3종(두문자·빈칸·자가점검)의 재료가 있어야 한다(2026-08-17).
+
+    빈칸·자가점검은 본문에서 자동 파생되므로 `==하이라이트==` 와 `### 소제목` 이,
+    두문자 표는 `mnemonics:` 가 재료다. 하나라도 비면 그 회차만 암기 페이지가 사라진다.
+    """
+    sys.path.insert(0, str(Path(__file__).parent))
+    import yaml
+    from anatomy_subnote import cloze_items, self_check_items
+    root = Path(__file__).resolve().parents[1]
+    notes = sorted((root / "content/anatomy/notes").glob("*-subnote.md"))
+    assert notes, "서브노트가 없다"
+    for p in notes:
+        raw = p.read_text(encoding="utf-8")
+        _, fm, body = raw.split("---", 2)
+        meta = yaml.safe_load(fm) or {}
+        mn = meta.get("mnemonics") or []
+        assert len(mn) >= 5, f"{p.name}: 두문자 {len(mn)}줄 (5줄 이상 필요)"
+        assert all(m.get("key") and m.get("full") for m in mn), f"{p.name}: 빈 두문자 줄"
+        assert len(cloze_items(body)) >= 10, f"{p.name}: 빈칸 재료(==하이라이트==) 부족"
+        assert len(self_check_items(body)) >= 5, f"{p.name}: 자가점검 재료 부족"
 def test_subnote_builder_selftest() -> None:
     """서브노트: 도해 레인·0절 제외·문항 합본·.private 가드 회귀 (anatomy_subnote --selftest)."""
     import subprocess

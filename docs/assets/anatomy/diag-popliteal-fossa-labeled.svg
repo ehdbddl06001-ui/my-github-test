@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="다리오금 — 네 경계 근육과 얕음에서 깊음으로의 내용물 순서, 무릎동맥 다섯 가지를 그린 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 오른쪽 다리를 뒤에서 본 구도.
+       근거: 3회차(0825) 실습영상 §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022).
+       카데바 사진을 본뜬 것이 아니라 교과식 구도로 새로 그린 도식이다(Lane A).
+       핵심 ① 마름모 네 경계 ② 얕음→깊음 = 신경·정맥·동맥 ③ 중간무릎동맥만 관절주머니 관통
+             ④ 온종아리신경은 두갈래근 힘줄 안쪽 → 종아리뼈목을 감아돈다. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">다리오금 — 경계 넷, 깊이 셋
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">popliteal fossa</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 근거: 3회차 실습영상 §다리오금 · 오른쪽 다리를 뒤에서 본 모습</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">신경 <tspan fill="#9cc3ff">파랑</tspan> / 동맥 <tspan fill="#e0645f">빨강</tspan> / 정맥 <tspan fill="#8f79c4">보라</tspan> · ★ = tagging 최다 빈출</text>
+  <text x="20" y="86" fill="#5d6f83" font-size="10">← 가쪽 lateral   |   안쪽 medial →</text>
+
+  <!-- ================= 뼈 ================= -->
+  <path d="M 200,116 L 250,116 L 258,286 L 192,286 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <circle cx="196" cy="306" r="28" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <circle cx="254" cy="306" r="28" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 196,344 L 254,344 L 246,544 L 204,544 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <!-- 종아리뼈: 가쪽 = 화면 왼쪽 -->
+  <ellipse cx="168" cy="364" rx="16" ry="13" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 158,378 L 180,378 L 180,544 L 164,544 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="225" y="158" fill="#7b8ea3" font-size="10.5" text-anchor="middle" class="kr">넙다리뼈 femur</text>
+
+  <!-- ================= 경계 근육 ================= -->
+  <!-- 위가쪽: 넙다리두갈래근 -->
+  <path d="M 112,136 C 128,192 152,246 196,296 L 224,272 C 184,228 162,178 150,132 Z"
+        fill="#2f5a44" stroke="#5aa87f" stroke-width="1.6"/>
+  <!-- 위안쪽: 반힘줄근·반막근 -->
+  <path d="M 338,136 C 322,192 298,246 254,296 L 226,272 C 266,228 288,178 300,132 Z"
+        fill="#2f5a44" stroke="#5aa87f" stroke-width="1.6"/>
+  <!-- 아래가쪽: 장딴지근 가쪽갈래 -->
+  <path d="M 150,350 C 146,412 168,468 194,516 L 226,502 C 200,458 184,410 186,354 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="1.6"/>
+  <!-- 아래안쪽: 장딴지근 안쪽갈래 -->
+  <path d="M 300,350 C 304,412 282,468 256,516 L 224,502 C 250,458 266,410 264,354 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="1.6"/>
+
+  <!-- 마름모 윤곽 -->
+  <path d="M 225,182 L 312,320 L 225,468 L 138,320 Z" fill="#12283a" stroke="#4d7fa5"
+        stroke-width="1.8" stroke-dasharray="7 5" opacity="0.9"/>
+
+  <!-- ================= 내용물: 깊은 것부터 그린다 ================= -->
+  <!-- 오금동맥 (가장 깊다) -->
+  <path d="M 203,190 C 199,258 199,336 205,464" fill="none" stroke="#e0645f" stroke-width="5"/>
+  <!-- 무릎동맥 5가지 -->
+  <path d="M 200,262 C 182,258 170,266 162,280" fill="none" stroke="#e0645f" stroke-width="2.6"/>
+  <path d="M 200,272 C 226,270 246,278 262,292" fill="none" stroke="#e0645f" stroke-width="2.6"/>
+  <path d="M 200,316 C 214,318 222,322 229,330" fill="none" stroke="#f0a09c" stroke-width="3"/>
+  <path d="M 202,372 C 184,376 172,384 165,396" fill="none" stroke="#e0645f" stroke-width="2.6"/>
+  <path d="M 202,382 C 226,384 246,392 259,404" fill="none" stroke="#e0645f" stroke-width="2.6"/>
+  <!-- 오금정맥 -->
+  <path d="M 217,190 C 213,258 213,336 219,464" fill="none" stroke="#8f79c4" stroke-width="5"/>
+  <!-- 작은두렁정맥 합류 -->
+  <path d="M 236,516 C 228,492 222,478 219,464" fill="none" stroke="#8f79c4" stroke-width="3"
+        stroke-dasharray="6 4"/>
+  <!-- 정강신경 (가장 얕다) -->
+  <path d="M 233,186 C 229,258 229,338 233,466" fill="none" stroke="#9cc3ff" stroke-width="5.4"/>
+  <!-- 온종아리신경: 두갈래근 힘줄 안쪽 → 종아리뼈목 -->
+  <path d="M 231,230 C 206,262 186,302 172,342 C 165,358 163,372 168,386"
+        fill="none" stroke="#9cc3ff" stroke-width="4.4"/>
+
+  <!-- ================= 왼쪽 라벨 ================= -->
+  <text x="20" y="176" fill="#bfe8d3" font-size="11.5" class="kr">넙다리두갈래근 ★</text>
+  <text x="20" y="188" fill="#8fc9ad" font-size="9">biceps femoris</text>
+  <text x="20" y="200" fill="#6f8299" font-size="9">위가쪽 경계</text>
+  <path d="M 108,182 L 132,196" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="20" y="360" fill="#8fa3b8" font-size="10.5" class="kr">종아리뼈머리</text>
+  <text x="20" y="372" fill="#5d6f83" font-size="9">head of fibula</text>
+  <path d="M 96,356 L 152,362" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="20" y="424" fill="#9cc3ff" font-size="11.5" class="kr">온종아리신경 ★</text>
+  <text x="20" y="436" fill="#7f9cc4" font-size="9">common fibular n.</text>
+  <text x="20" y="448" fill="#6f8299" font-size="9">두갈래근 힘줄 안쪽으로</text>
+  <text x="20" y="461" fill="#eab308" font-size="9.5" class="kr">종아리뼈목을 감아돈다</text>
+  <path d="M 116,430 L 162,394" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="20" y="524" fill="#cfe4f7" font-size="11.5" class="kr">장딴지근 가쪽갈래</text>
+  <text x="20" y="536" fill="#8fb6d8" font-size="9">lat. head of gastrocnemius</text>
+  <text x="20" y="548" fill="#6f8299" font-size="9">아래가쪽 경계</text>
+  <path d="M 116,518 L 168,486" stroke="#4a5b6e" stroke-width="1"/>
+
+  <!-- ================= 오른쪽 라벨 ================= -->
+  <text x="306" y="170" fill="#bfe8d3" font-size="11.5" class="kr">반힘줄근 · 반막근 ★</text>
+  <text x="306" y="182" fill="#8fc9ad" font-size="9">semitendinosus</text>
+  <text x="306" y="193" fill="#8fc9ad" font-size="9">semimembranosus</text>
+  <text x="306" y="206" fill="#6f8299" font-size="9">위안쪽 경계</text>
+  <path d="M 302,188 L 288,208" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="326" y="296" fill="#9cc3ff" font-size="11.5" class="kr">정강신경 — 가장 얕다</text>
+  <text x="326" y="308" fill="#7f9cc4" font-size="9">tibial n.</text>
+  <path d="M 322,292 L 238,300" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="326" y="336" fill="#b49ae0" font-size="11.5" class="kr">오금정맥 — 중간</text>
+  <text x="326" y="348" fill="#8f79b8" font-size="9">popliteal v.</text>
+  <path d="M 322,332 L 224,338" stroke="#584a76" stroke-width="1"/>
+
+  <text x="316" y="378" fill="#e0645f" font-size="11.5" class="kr">오금동맥 — 가장 깊다 ★</text>
+  <text x="316" y="390" fill="#c98a86" font-size="9">popliteal a.</text>
+  <text x="316" y="401" fill="#6f8299" font-size="9">맥박은 깊이 눌러야 잡힌다</text>
+  <path d="M 312,374 L 210,372" stroke="#8b4a47" stroke-width="1"/>
+
+  <text x="326" y="446" fill="#f0a09c" font-size="10.5" class="kr">무릎동맥 5가지</text>
+  <text x="326" y="458" fill="#6f8299" font-size="9">위·아래 각 2 + 중간 1</text>
+  <path d="M 322,442 L 268,404" stroke="#8b4a47" stroke-width="1"/>
+
+  <text x="306" y="524" fill="#cfe4f7" font-size="11.5" class="kr">장딴지근 안쪽갈래</text>
+  <text x="306" y="536" fill="#8fb6d8" font-size="9">med. head of gastrocnemius</text>
+  <text x="306" y="548" fill="#6f8299" font-size="9">아래안쪽 경계</text>
+  <path d="M 302,518 L 276,488" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="180" y="566" fill="#8f79b8" font-size="9.5" text-anchor="middle">작은두렁정맥 합류</text>
+  <path d="M 212,560 L 236,522" stroke="#584a76" stroke-width="1"/>
+
+  <!-- ================= 오른쪽 위: 깊이 순서 ================= -->
+  <rect x="446" y="96" width="416" height="112" rx="10" fill="#0b1624" stroke="#2b3a4d"/>
+  <text x="462" y="120" fill="#e6edf3" font-size="12.5" class="kr">깊이 순서 — 피부에서 뼈 쪽으로</text>
+  <rect x="462" y="132" width="122" height="34" rx="5" fill="#1d3552" stroke="#9cc3ff"/>
+  <text x="523" y="154" fill="#9cc3ff" font-size="11" text-anchor="middle" class="kr">① 정강신경</text>
+  <text x="594" y="154" fill="#5d6f83" font-size="14" text-anchor="middle">›</text>
+  <rect x="604" y="132" width="122" height="34" rx="5" fill="#2c2542" stroke="#8f79c4"/>
+  <text x="665" y="154" fill="#b49ae0" font-size="11" text-anchor="middle" class="kr">② 오금정맥</text>
+  <text x="736" y="154" fill="#5d6f83" font-size="14" text-anchor="middle">›</text>
+  <rect x="746" y="132" width="102" height="34" rx="5" fill="#40201f" stroke="#e0645f"/>
+  <text x="797" y="154" fill="#e0645f" font-size="11" text-anchor="middle" class="kr">③ 오금동맥</text>
+  <text x="462" y="190" fill="#eab308" font-size="11" class="kr">"신 – 정 – 동"</text>
+  <text x="556" y="190" fill="#93a4b7" font-size="10.5">순서를 뒤집어 내는 문항이 흔하다</text>
+
+  <!-- ================= 오른쪽 가운데: 무릎동맥 ================= -->
+  <rect x="446" y="220" width="416" height="186" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="244" fill="#e0645f" font-size="13" class="kr">무릎동맥 5가지 genicular arteries</text>
+  <text x="462" y="264" fill="#93a4b7" font-size="10.5">넙다리동맥이 <tspan fill="#e6edf3">모음근구멍</tspan>을 지나면서 오금동맥으로 이름이 바뀐다</text>
+  <path d="M 470,276 L 470,376" stroke="#5a4040" stroke-width="1.8"/>
+  <path d="M 470,290 L 492,290" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="500" y="294" fill="#f0a09c" font-size="10.5">위가쪽무릎동맥 · 위안쪽무릎동맥</text>
+  <path d="M 470,316 L 492,316" stroke="#e0645f" stroke-width="2.4"/>
+  <text x="500" y="320" fill="#e0645f" font-size="10.5" class="kr">중간무릎동맥 ★</text>
+  <text x="500" y="333" fill="#6f8299" font-size="9.5">5가지 중 유일하게 관절주머니를 뚫고 → 십자인대</text>
+  <path d="M 470,356 L 492,356" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="500" y="360" fill="#f0a09c" font-size="10.5">아래가쪽무릎동맥 · 아래안쪽무릎동맥</text>
+  <path d="M 470,376 L 492,376" stroke="#5a4040" stroke-width="1.6"/>
+  <text x="500" y="380" fill="#93a4b7" font-size="10.5">오금근 아래모서리 → <tspan fill="#e6edf3">앞정강동맥 + 뒤정강동맥</tspan></text>
+
+  <!-- ================= 오른쪽 아래: 신경·임상 ================= -->
+  <rect x="446" y="418" width="416" height="146" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="442" fill="#9cc3ff" font-size="13" class="kr">궁둥신경의 두 종말가지 · 임상</text>
+  <text x="462" y="464" fill="#9cc3ff" font-size="11" class="kr">정강신경</text>
+  <text x="550" y="464" fill="#93a4b7" font-size="10.5">오금 한가운데를 수직으로 관통 → 종아리 뒤칸 전체 + 발바닥</text>
+  <text x="462" y="486" fill="#9cc3ff" font-size="11" class="kr">온종아리신경</text>
+  <text x="550" y="486" fill="#93a4b7" font-size="10.5">두갈래근 힘줄 <tspan fill="#e6edf3">안쪽</tspan> → 종아리뼈목을 감아 앞칸·가쪽칸으로</text>
+  <text x="462" y="512" fill="#eab308" font-size="10.5" class="kr">발처짐</text>
+  <text x="550" y="512" fill="#93a4b7" font-size="10.5">종아리뼈목 골절·석고붕대 압박 → 발등 감각소실 동반</text>
+  <text x="462" y="532" fill="#eab308" font-size="10.5" class="kr">허혈</text>
+  <text x="550" y="532" fill="#93a4b7" font-size="10.5">무릎 뒤 관통상·탈구 → 오금동맥 손상, 곁순환이 약해 다리 허혈</text>
+  <text x="462" y="552" fill="#6f8299" font-size="9.5">베이커낭종은 오금 <tspan fill="#93a4b7">안쪽</tspan> — 반막근과 장딴지근 안쪽갈래 사이에 생긴다</text>
+
+  <!-- ================= 하단 요약 ================= -->
+  <rect x="18" y="580" width="844" height="100" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="34" y="604" fill="#e6edf3" font-size="12.5" font-weight="700">한 줄 정리 — 마름모의 네 변은 근육, 안쪽은 "신–정–동" 세 층</text>
+  <text x="34" y="628" fill="#bfe8d3" font-size="11" class="kr">경계</text>
+  <text x="118" y="628" fill="#93a4b7" font-size="11">위 = 햄스트링 둘(<tspan fill="#e6edf3">가쪽 두갈래근 · 안쪽 반힘줄/반막</tspan>) · 아래 = 장딴지근 두 갈래 · 바닥 = 오금면·오금근</text>
+  <text x="34" y="650" fill="#9cc3ff" font-size="11" class="kr">내용물</text>
+  <text x="118" y="650" fill="#93a4b7" font-size="11">얕→깊 <tspan fill="#e6edf3">정강신경 → 오금정맥 → 오금동맥</tspan> · 온종아리신경은 마름모 <tspan fill="#e6edf3">가쪽 변을 따라</tspan> 빠져나간다</text>
+  <text x="34" y="672" fill="#e0645f" font-size="11" class="kr">동맥</text>
+  <text x="118" y="672" fill="#93a4b7" font-size="11">무릎동맥 5가지 중 <tspan fill="#e6edf3">중간무릎동맥만 관절주머니 관통</tspan> · 오금근 아래에서 앞·뒤정강동맥으로 갈린다</text>
+</svg>

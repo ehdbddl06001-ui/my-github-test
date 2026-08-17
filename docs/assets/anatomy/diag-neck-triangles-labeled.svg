@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="목의 삼각 — 목빗근이 가르는 앞목삼각·뒤목삼각과 그 안의 네 개·두 개 소삼각을 그린 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 오른쪽 목을 가쪽에서 본 구도(얼굴이 왼쪽).
+       근거: 6회차(2026-09-03) e-Anatomy Neck §Triangle of neck superficial/deep
+             + 실습지침 117–130p + 응용과제 1 "목삼각 그림을 그려 설명한다".
+       회차 배정은 **부위 기준** — 과거 학기 스캔의 교수명·날짜가 아니라 실습주제로 6회차.
+       핵심 ① 목빗근이 앞/뒤를 가른다 ② 앞은 넷, 뒤는 둘로 다시 갈린다
+             ③ 가르는 근육은 두힘살근과 어깨목뿔근이다 -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">목의 삼각 — 넷 + 둘
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">triangles of the neck</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 근거: 6회차 실습영상 §Triangle of neck · 오른쪽 목을 가쪽에서 본 모습(얼굴이 왼쪽)</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11"><tspan fill="#5aa87f">초록</tspan> 가르는 근육 · ★ = tagging 최다 빈출</text>
+
+  <!-- ================= 삼각 면 (경계선은 뒤에 얇게 그린다) ================= -->
+  <path d="M 62,232 L 72,236 L 138,268 L 62,276 Z" fill="#4a3520" stroke="#c08a45" stroke-width="1.2"/>
+  <path d="M 72,236 L 250,160 L 276,190 L 140,266 Z" fill="#3d3050" stroke="#9578c4" stroke-width="1.2"/>
+  <path d="M 140,270 L 250,212 L 200,338 Z" fill="#5c2b2b" stroke="#c96b66" stroke-width="1.2"/>
+  <path d="M 62,280 L 140,274 L 202,346 L 128,438 L 62,438 Z" fill="#1d3552" stroke="#79a8d0" stroke-width="1.2"/>
+  <path d="M 320,199 L 368,320 L 196,428 Z" fill="#24402f" stroke="#5aa87f" stroke-width="1.2"/>
+  <path d="M 368,322 L 390,442 L 152,470 L 196,430 Z" fill="#4a3a20" stroke="#c9a34a" stroke-width="1.2"/>
+
+  <!-- ================= 뼈 ================= -->
+  <path d="M 62,228 L 250,160" stroke="#6b8298" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 268,164 L 300,172 L 294,200 L 266,192 Z" fill="#22344a" stroke="#5b7690" stroke-width="1.4"/>
+  <path d="M 120,262 C 134,257 152,257 166,262 L 164,277 C 150,272 134,272 122,277 Z"
+        fill="#22344a" stroke="#5b7690" stroke-width="1.4"/>
+  <path d="M 96,472 C 200,486 320,472 400,444" fill="none" stroke="#6b8298" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 62,222 L 62,470" stroke="#4a5b6e" stroke-width="1.6" stroke-dasharray="6 5"/>
+
+  <!-- ================= 경계 근육 (얇은 선) ================= -->
+  <!-- 목빗근: 앞·뒤 모서리 두 줄 -->
+  <path d="M 282,190 L 100,468" stroke="#5aa87f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 312,198 L 146,480" stroke="#5aa87f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 282,190 L 312,198 L 146,480 L 100,468 Z" fill="#2f5a44" opacity="0.55"/>
+  <!-- 등세모근 앞모서리 -->
+  <path d="M 330,200 C 352,268 374,362 392,446" fill="none" stroke="#4e9070" stroke-width="5" stroke-linecap="round"/>
+  <!-- 두힘살근 -->
+  <path d="M 72,234 L 138,268" stroke="#7ec4a0" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M 140,266 L 276,190" stroke="#7ec4a0" stroke-width="4.6" stroke-linecap="round"/>
+  <!-- 어깨목뿔근 -->
+  <path d="M 136,278 L 204,352" stroke="#7ec4a0" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M 196,428 C 262,414 320,382 368,320" fill="none" stroke="#7ec4a0" stroke-width="4.6" stroke-linecap="round"/>
+
+  <!-- ================= 삼각 라벨 ================= -->
+  <text x="20" y="180" fill="#e3a765" font-size="10.5" class="kr">턱끝밑삼각</text>
+  <text x="20" y="192" fill="#a8783a" font-size="8.5">submental</text>
+  <path d="M 82,186 L 100,240" stroke="#8b6a2e" stroke-width="1"/>
+
+  <text x="150" y="132" fill="#b49ae0" font-size="11.5" class="kr">턱밑삼각 ★</text>
+  <text x="150" y="144" fill="#8f79b8" font-size="8.5">submandibular (digastric)</text>
+  <path d="M 176,150 L 168,214" stroke="#584a76" stroke-width="1"/>
+
+  <text x="300" y="252" fill="#c96b66" font-size="11.5" class="kr">목동맥삼각 ★</text>
+  <text x="300" y="264" fill="#a35f5b" font-size="8.5">carotid</text>
+  <path d="M 296,258 L 214,270" stroke="#8b4a47" stroke-width="1"/>
+
+  <text x="20" y="400" fill="#9cc3ff" font-size="11" class="kr">근육삼각</text>
+  <text x="20" y="412" fill="#6f8299" font-size="8.5">muscular</text>
+  <path d="M 76,396 L 116,370" stroke="#4a6483" stroke-width="1"/>
+
+  <text x="300" y="150" fill="#7fd4a8" font-size="11" class="kr">뒤통수삼각</text>
+  <text x="300" y="162" fill="#5fae87" font-size="8.5">occipital</text>
+  <path d="M 316,166 L 292,300" stroke="#3f7a5e" stroke-width="1"/>
+
+  <text x="290" y="500" fill="#e0c070" font-size="11" class="kr">빗장위삼각 ★</text>
+  <text x="290" y="512" fill="#a8873a" font-size="8.5">supraclavicular</text>
+  <path d="M 300,494 L 288,452" stroke="#8b7a2e" stroke-width="1"/>
+
+  <!-- ================= 구조 라벨 ================= -->
+  <text x="20" y="150" fill="#8fa3b8" font-size="9.5" class="kr">아래턱뼈</text>
+  <text x="216" y="490" fill="#8fa3b8" font-size="9.5" class="kr">빗장뼈</text>
+  <text x="20" y="300" fill="#8fa3b8" font-size="9.5" class="kr">목뿔뼈</text>
+  <path d="M 62,296 L 120,274" stroke="#4a5b6e" stroke-width="1"/>
+  <text x="150" y="560" fill="#bfe8d3" font-size="11" class="kr">목빗근 ★</text>
+  <text x="150" y="572" fill="#8fc9ad" font-size="8.5">sternocleidomastoid — 앞/뒤를 가른다</text>
+  <path d="M 174,552 L 176,470" stroke="#3f7a5e" stroke-width="1"/>
+  <text x="352" y="560" fill="#8fc9ad" font-size="10" class="kr">등세모근</text>
+  <path d="M 388,552 L 402,466" stroke="#3f7a5e" stroke-width="1"/>
+  <text x="20" y="540" fill="#bfe8d3" font-size="10" class="kr">어깨목뿔근</text>
+  <text x="20" y="552" fill="#6f8299" font-size="8.5">위힘살 / 아래힘살</text>
+  <path d="M 98,534 L 172,376" stroke="#3f7a5e" stroke-width="1"/>
+  <text x="182" y="200" fill="#bfe8d3" font-size="10" class="kr">두힘살근</text>
+  <text x="182" y="212" fill="#6f8299" font-size="8.5">앞힘살 / 뒤힘살</text>
+  <path d="M 200,216 L 208,240" stroke="#3f7a5e" stroke-width="1"/>
+
+  <!-- ================= 오른쪽 위: 경계 ================= -->
+  <rect x="446" y="96" width="416" height="230" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="120" fill="#e6edf3" font-size="13" class="kr">경계 — 무엇이 가르나</text>
+  <line x1="462" y1="132" x2="846" y2="132" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="462" y="154" fill="#bfe8d3" font-size="11" class="kr">큰 경계</text>
+  <text x="556" y="154" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3">목빗근</tspan>이 앞목삼각 / 뒤목삼각을 가른다</text>
+  <text x="462" y="180" fill="#93a4b7" font-size="11" class="kr">앞목삼각</text>
+  <text x="556" y="180" fill="#93a4b7" font-size="10.5">위 아래턱뼈 아래모서리 · 뒤 목빗근 앞모서리</text>
+  <text x="556" y="194" fill="#93a4b7" font-size="10.5">앞 <tspan fill="#e6edf3">목의 정중선</tspan></text>
+  <text x="462" y="220" fill="#93a4b7" font-size="11" class="kr">뒤목삼각</text>
+  <text x="556" y="220" fill="#93a4b7" font-size="10.5">앞 목빗근 뒤모서리 · 뒤 등세모근 앞모서리</text>
+  <text x="556" y="234" fill="#93a4b7" font-size="10.5">아래 <tspan fill="#e6edf3">빗장뼈 중간 1/3</tspan></text>
+  <text x="462" y="262" fill="#eab308" font-size="11" class="kr">소삼각</text>
+  <text x="556" y="262" fill="#93a4b7" font-size="10.5">앞은 <tspan fill="#e6edf3">두힘살근</tspan>과 <tspan fill="#e6edf3">어깨목뿔근 위힘살</tspan>이 넷으로,</text>
+  <text x="556" y="276" fill="#93a4b7" font-size="10.5">뒤는 <tspan fill="#e6edf3">어깨목뿔근 아래힘살</tspan>이 둘로 가른다</text>
+  <text x="462" y="304" fill="#eab308" font-size="11" class="kr">암기</text>
+  <text x="556" y="304" fill="#93a4b7" font-size="10.5">가르는 근육은 <tspan fill="#e6edf3">두힘살근 · 어깨목뿔근</tspan> 딱 둘 —</text>
+  <text x="556" y="318" fill="#93a4b7" font-size="10.5">둘 다 <tspan fill="#e6edf3">목뿔뼈</tspan>에 붙는다</text>
+
+  <!-- ================= 오른쪽 아래: 내용물 ================= -->
+  <rect x="446" y="338" width="416" height="226" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="362" fill="#e6edf3" font-size="13" class="kr">무엇이 들어 있나</text>
+  <line x1="462" y1="374" x2="846" y2="374" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="462" y="396" fill="#e3a765" font-size="10.5" class="kr">턱끝밑</text>
+  <text x="556" y="396" fill="#93a4b7" font-size="10.5">턱끝밑림프절 · 목뿔아래 정맥 합류</text>
+  <text x="462" y="420" fill="#b49ae0" font-size="10.5" class="kr">턱밑 ★</text>
+  <text x="556" y="420" fill="#93a4b7" font-size="10.5">턱밑샘 · <tspan fill="#e6edf3">턱밑샘관</tspan> · 혀신경 · 혀밑신경</text>
+  <text x="556" y="434" fill="#6f8299" font-size="9.5">얼굴동맥이 샘을 파고 지나간다</text>
+  <text x="462" y="458" fill="#c96b66" font-size="10.5" class="kr">목동맥 ★</text>
+  <text x="556" y="458" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3">온목동맥</tspan> 갈림 · 속목정맥 · 미주신경</text>
+  <text x="556" y="472" fill="#6f8299" font-size="9.5">= 목혈관신경집 3인방 (동맥 안쪽 · 정맥 가쪽 · 신경 뒤)</text>
+  <text x="462" y="496" fill="#9cc3ff" font-size="10.5" class="kr">근육</text>
+  <text x="556" y="496" fill="#93a4b7" font-size="10.5">목뿔아래근육 · 방패샘 · 후두 · 기관</text>
+  <text x="462" y="520" fill="#7fd4a8" font-size="10.5" class="kr">뒤통수</text>
+  <text x="556" y="520" fill="#93a4b7" font-size="10.5"><tspan fill="#e6edf3">더부신경 XI</tspan> · 목신경얼기 피부가지 4개</text>
+  <text x="462" y="544" fill="#e0c070" font-size="10.5" class="kr">빗장위 ★</text>
+  <text x="556" y="544" fill="#93a4b7" font-size="10.5">빗장밑동맥 3부 · 팔신경얼기 줄기 · 가슴막꼭대기</text>
+
+  <!-- ================= 하단 요약 ================= -->
+  <rect x="18" y="580" width="844" height="100" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="34" y="604" fill="#e6edf3" font-size="12.5" font-weight="700">한 줄 정리 — 목빗근이 둘로, 두힘살근·어깨목뿔근이 여섯으로 나눈다</text>
+  <text x="34" y="628" fill="#93a4b7" font-size="11" class="kr">앞 넷</text>
+  <text x="118" y="628" fill="#93a4b7" font-size="11">턱끝밑 · <tspan fill="#e6edf3">턱밑</tspan> · <tspan fill="#e6edf3">목동맥</tspan> · 근육 — 위에서 아래로, 안쪽에서 가쪽으로 훑는다</text>
+  <text x="34" y="650" fill="#93a4b7" font-size="11" class="kr">뒤 둘</text>
+  <text x="118" y="650" fill="#93a4b7" font-size="11">뒤통수(<tspan fill="#e6edf3">더부신경</tspan>) · <tspan fill="#e6edf3">빗장위</tspan>(빗장밑동맥·팔신경얼기) — 어깨목뿔근 아래힘살이 경계</text>
+  <text x="34" y="672" fill="#eab308" font-size="11" class="kr">임상</text>
+  <text x="118" y="672" fill="#93a4b7" font-size="11">뒤목삼각 림프절 생검에서 <tspan fill="#e6edf3">더부신경 손상</tspan> · 빗장위 중심정맥삽입에서 <tspan fill="#e6edf3">기흉</tspan></text>
+</svg>

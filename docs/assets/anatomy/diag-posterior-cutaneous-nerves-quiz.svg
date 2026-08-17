@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 588" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="볼기·다리 뒤쪽 피부신경 태깅 퀴즈판 — 번호핀 8개, 라벨 제거">
+  <!-- 자체 제작 도해(claude-drawn) 퀴즈판. 라벨판 diag-posterior-cutaneous-nerves-labeled.svg 와 같은 좌표.
+       근거: 1회차(0818) e-Anatomy §Lower limb — Superficial layer 실습영상. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+    .pin{stroke:none}
+  </style>
+  <rect width="880" height="588" fill="#0e1826"/>
+
+  <!-- ================= 다리 윤곽 ================= -->
+  <!-- 볼기 -->
+  <path d="M 108,150 C 104,206 112,258 128,296 L 260,296 C 276,256 284,206 280,150 Z"
+        fill="#2b3d52" stroke="#4d6b8a" stroke-width="1.6"/>
+  <!-- 넓적다리 -->
+  <path d="M 128,296 L 260,296 C 254,352 246,404 240,440 L 148,440 C 142,404 134,352 128,296 Z"
+        fill="#24384c" stroke="#4d6b8a" stroke-width="1.6"/>
+  <!-- 종아리 -->
+  <path d="M 148,452 L 240,452 C 238,492 232,530 222,562 L 176,562 C 164,530 156,492 148,452 Z"
+        fill="#24384c" stroke="#4d6b8a" stroke-width="1.6"/>
+  <!-- 엉덩뼈능선 · 엉치뼈 -->
+  <path d="M 108,150 C 156,138 232,138 280,150" fill="none" stroke="#7b8ea3" stroke-width="2.4"/>
+  <path d="M 178,150 L 206,150 L 200,236 L 184,236 Z" fill="#1b2a3c" stroke="#5b7690" stroke-width="1.4"/>
+  <!-- 오금 -->
+  <path d="M 148,440 L 240,440 L 240,452 L 148,452 Z" fill="#12283a" stroke="#4d7fa5"
+        stroke-width="1.4" stroke-dasharray="5 4"/>
+
+  <!-- ================= 신경 ================= -->
+  <!-- 위볼기피부신경: 허리 뒤가지 → 엉덩뼈능선을 넘는다 -->
+  <path d="M 132,112 C 134,136 134,160 136,190" fill="none" stroke="#9cc3ff" stroke-width="3.2"/>
+  <path d="M 166,112 C 168,136 168,162 170,194" fill="none" stroke="#9cc3ff" stroke-width="3.2"/>
+  <path d="M 200,112 C 202,136 202,162 204,192" fill="none" stroke="#9cc3ff" stroke-width="3.2"/>
+  <!-- 중간볼기피부신경: 뒤엉치구멍에서 가쪽으로 -->
+  <path d="M 190,182 C 172,190 156,200 142,214" fill="none" stroke="#9cc3ff" stroke-width="3"/>
+  <path d="M 192,210 C 176,218 162,228 150,242" fill="none" stroke="#9cc3ff" stroke-width="3"/>
+  <!-- 뒤넙다리피부신경 본줄기(앞가지 = 엉치신경얼기) -->
+  <path d="M 214,262 C 212,320 208,382 204,436" fill="none" stroke="#7fd4a8" stroke-width="4.2"/>
+  <!-- 아래볼기피부신경: 큰볼기근 아래모서리를 감아 올라간다 -->
+  <path d="M 212,290 C 190,290 172,282 160,268" fill="none" stroke="#7fd4a8" stroke-width="3.2"/>
+  <path d="M 214,300 C 192,302 176,296 164,284" fill="none" stroke="#7fd4a8" stroke-width="3.2"/>
+  <!-- 관통가지 -->
+  <path d="M 212,336 C 190,340 176,346 164,354" fill="none" stroke="#7fd4a8" stroke-width="2.4"/>
+  <path d="M 210,368 C 232,372 244,378 254,386" fill="none" stroke="#7fd4a8" stroke-width="2.4"/>
+  <path d="M 208,398 C 188,402 176,408 166,416" fill="none" stroke="#7fd4a8" stroke-width="2.4"/>
+  <!-- 안쪽장딴지피부신경(정강신경) -->
+  <path d="M 216,446 C 216,478 214,500 212,514" fill="none" stroke="#9cc3ff" stroke-width="3.6"/>
+  <!-- 교통가지(온종아리신경 계열) -->
+  <path d="M 168,446 C 178,474 194,500 210,514" fill="none" stroke="#9cc3ff" stroke-width="3"
+        stroke-dasharray="7 4"/>
+  <!-- 장딴지신경 -->
+  <path d="M 211,514 C 214,536 218,550 222,562" fill="none" stroke="#9cc3ff" stroke-width="4.6"/>
+  <circle cx="211" cy="514" r="6" fill="#0e1826" stroke="#9cc3ff" stroke-width="2.4"/>
+
+
+  <!-- ================= 머리말 ================= -->
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">볼기·다리 뒤쪽 피부신경 — 태깅 연습판<tspan fill="#93a4b7" font-size="12" font-weight="400"> quiz</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">오른쪽 다리를 뒤에서 본 모습. ①~③은 <tspan fill="#e6edf3">볼기의 피부신경 3형제</tspan>(위에서 아래로),</text>
+  <text x="20" y="66" fill="#93a4b7" font-size="11">④⑤는 <tspan fill="#e6edf3">넓적다리 뒤</tspan>, ⑥⑦⑧은 <tspan fill="#e6edf3">종아리 뒤</tspan>의 피부신경이다.</text>
+  <text x="20" y="84" fill="#6f8299" font-size="11">정답은 대응 문항 카드(anatomy-2026-0058) frontmatter에 있다.</text>
+
+  <!-- ================= 번호핀 ================= -->
+  <circle cx="200" cy="138" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="200" y="143" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">1</text>
+  <circle cx="166" cy="204" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="166" y="209" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">2</text>
+  <circle cx="176" cy="278" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="176" y="283" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">3</text>
+  <circle cx="210" cy="330" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="210" y="335" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">4</text>
+  <circle cx="236" cy="376" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="236" y="381" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">5</text>
+  <circle cx="215" cy="478" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="215" y="483" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">6</text>
+  <circle cx="186" cy="478" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="186" y="483" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">7</text>
+  <circle cx="216" cy="540" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="216" y="545" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">8</text>
+
+  <!-- ================= 답안 칸 ================= -->
+  <rect x="446" y="96" width="416" height="332" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="462" y="120" fill="#93a4b7" font-size="12" font-weight="700">답안 칸</text>
+  <text x="462" y="152" fill="#eab308" font-size="12" font-weight="700">1.</text>
+  <line x1="482" y1="154" x2="846" y2="154" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="188" fill="#eab308" font-size="12" font-weight="700">2.</text>
+  <line x1="482" y1="190" x2="846" y2="190" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="224" fill="#eab308" font-size="12" font-weight="700">3.</text>
+  <line x1="482" y1="226" x2="846" y2="226" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="260" fill="#eab308" font-size="12" font-weight="700">4.</text>
+  <line x1="482" y1="262" x2="846" y2="262" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="296" fill="#eab308" font-size="12" font-weight="700">5.</text>
+  <line x1="482" y1="298" x2="846" y2="298" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="332" fill="#eab308" font-size="12" font-weight="700">6.</text>
+  <line x1="482" y1="334" x2="846" y2="334" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="368" fill="#eab308" font-size="12" font-weight="700">7.</text>
+  <line x1="482" y1="370" x2="846" y2="370" stroke="#3d5166" stroke-width="1.2"/>
+  <text x="462" y="404" fill="#eab308" font-size="12" font-weight="700">8.</text>
+  <line x1="482" y1="406" x2="846" y2="406" stroke="#3d5166" stroke-width="1.2"/>
+
+  <!-- ================= 추가 질문 ================= -->
+  <rect x="446" y="444" width="416" height="120" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="462" y="468" fill="#e6edf3" font-size="12" font-weight="700">이어서 답하시오</text>
+  <text x="462" y="492" fill="#93a4b7" font-size="10.5">· ①~③ 중 <tspan fill="#e6edf3">앞가지</tspan>에서 온 것은? 나머지 둘은 어디서 왔나?</text>
+  <text x="462" y="512" fill="#93a4b7" font-size="10.5">· ⑧은 어떤 두 신경이 합쳐진 것인가?</text>
+  <text x="462" y="532" fill="#93a4b7" font-size="10.5">· ⑧이 임상에서 <tspan fill="#e6edf3">공여신경</tspan>으로 쓰이는 이유는?</text>
+  <text x="462" y="552" fill="#93a4b7" font-size="10.5">· 넓적다리·종아리 <tspan fill="#e6edf3">안쪽</tspan> 피부를 담당하는 신경은?</text>
+</svg>

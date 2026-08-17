@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MedKOS 도해 갤러리 · 날짜순</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html">🧠 퀴즈</a>
+  <a href="papers.html">📄 논문</a>
+  <a href="ailab.html">🤖 AI랩</a>
+  <a href="anatomy.html">🫀 해부학</a>
+  <a href="whatsnew.html">🆕 새 자료</a>
+  <a href="diagrams.html" class="active">🖼 도해</a>
+  <a href="search.html">🔍 검색</a>
+</nav>
+
+<header>
+  <h1>도해 갤러리 <span id="newBadge" class="wn-badge" hidden></span></h1>
+  <p class="sub">자체 제작 도해와 분지 계보 트리를 <b>만든 날짜순</b>으로 봅니다. 날짜는 git에 처음 커밋된 날(KST)이라 실제 제작일과 같습니다. 라벨판과 퀴즈판이 짝으로 묶여 있으니 <b>퀴즈판을 먼저 풀고 라벨판으로 채점</b>하세요.</p>
+</header>
+
+<section class="card">
+  <div class="filters">
+    <select id="kindFilter"><option value="__ALL__">전체 종류</option></select>
+    <select id="sessionFilter"><option value="__ALL__">전체 회차</option></select>
+    <select id="variantFilter">
+      <option value="labeled">라벨판만 보기</option>
+      <option value="quiz">퀴즈판만 보기</option>
+      <option value="__ALL__">둘 다</option>
+    </select>
+    <input type="search" id="q" placeholder="제목으로 좁히기" />
+    <button id="markSeen" type="button" class="wn-btn">여기까지 봤음</button>
+  </div>
+  <p id="count" class="muted"></p>
+</section>
+
+<section id="timeline"></section>
+
+<footer class="muted" style="margin:28px 0 40px"><span id="meta"></span></footer>
+
+<script src="diagrams-data.js"></script>
+<script src="diagrams-app.js"></script>
+</body>
+</html>
