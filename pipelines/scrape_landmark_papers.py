@@ -124,9 +124,15 @@ def _num(v):
 # 있으면 이름이 바뀐 순간 '인용 0회'로 조용히 무너진다 — 실제로 그렇게 5주간 랜드마크가
 # 0편이었다(2026-07-13~08-10 CI: 전 주제 "인용 50회 이상 후보 없음"). 그래서 알려진
 # 별칭을 순서대로 훑고, 하나도 못 찾으면 '0'이 아니라 None(=지표 없음)으로 남긴다.
-CITATION_KEYS = ("citation_count", "citationCount", "citations", "cited_by_count")
-RCR_KEYS = ("relative_citation_ratio", "relativeCitationRatio", "rcr")
-PERCENTILE_KEYS = ("nih_percentile", "nihPercentile", "percentile")
+# 2026-08-17 CI 실측: legacy=false 응답은 **camelCase** 스키마다. 실제 키는
+#   citedByPmidCount / rcr / nihRcrPercentile / pubYear
+# 예전 코드가 읽던 citation_count·relative_citation_ratio·nih_percentile 은 응답에
+# 아예 없었다 → 전부 0 → '고인용 후보 없음'. 구(legacy) 이름도 함께 남겨 둔다.
+CITATION_KEYS = ("citedByPmidCount", "citation_count", "citationCount",
+                 "citations", "cited_by_count")
+RCR_KEYS = ("rcr", "relative_citation_ratio", "relativeCitationRatio")
+PERCENTILE_KEYS = ("nihRcrPercentile", "nih_percentile", "nihPercentile", "percentile")
+YEAR_KEYS = ("pubYear", "year")
 
 
 def _first(row: dict, keys: tuple[str, ...]) -> float | None:
@@ -169,7 +175,7 @@ def icite(pmids: list[str], fixture: str | None = None,
             "citations": int(cc) if cc is not None else None,
             "rcr": _first(r, RCR_KEYS),
             "nih_percentile": _first(r, PERCENTILE_KEYS),
-            "year": r.get("year"),
+            "year": _first(r, YEAR_KEYS),
         }
     return out
 

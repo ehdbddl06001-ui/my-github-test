@@ -38,6 +38,40 @@ def test_citation_field_aliases() -> None:
               f"got {L._first(row, L.CITATION_KEYS)}")
 
 
+def test_real_icite_schema() -> None:
+    """2026-08-17 CI 로 실측한 iCite legacy=false 응답(camelCase)을 읽어야 한다.
+
+    원래 코드는 citation_count 를 봤는데 실제 키는 citedByPmidCount 였다 — 이 한 줄
+    때문에 5주간 랜드마크가 0편이었다. 실제 키 이름을 테스트로 못박는다.
+    """
+    print("test_real_icite_schema")
+    row = {
+        "_id": "11492984", "pmid": 11492984, "pubYear": 2001,
+        "citedByPmidCount": 3184, "rcr": 22.4, "nihRcrPercentile": 99.7,
+    }
+    check("citedByPmidCount 를 인용수로 읽는다",
+          L._first(row, L.CITATION_KEYS) == 3184, f"got {L._first(row, L.CITATION_KEYS)}")
+    check("rcr 를 RCR 로 읽는다", L._first(row, L.RCR_KEYS) == 22.4)
+    check("nihRcrPercentile 을 백분위로 읽는다",
+          L._first(row, L.PERCENTILE_KEYS) == 99.7)
+    check("pubYear 를 연도로 읽는다", L._first(row, L.YEAR_KEYS) == 2001)
+
+
+def test_fixture_matches_real_schema() -> None:
+    """픽스처가 legacy(snake_case)로 되돌아가면 테스트가 실제 API 와 어긋난다."""
+    print("test_fixture_matches_real_schema")
+    import json
+    fx = json.loads((Path(L.__file__).parent / "fixtures" / "icite_sample.json")
+                    .read_text(encoding="utf-8"))
+    rows = fx.get("data", [])
+    check("픽스처에 행이 있다", bool(rows))
+    check("픽스처가 실제 키(citedByPmidCount)를 쓴다",
+          all("citedByPmidCount" in r for r in rows),
+          "픽스처가 구 스키마로 되돌아갔다")
+    top = max(L._first(r, L.CITATION_KEYS) or 0 for r in rows)
+    check("픽스처에 랜드마크급(≥1000) 논문이 있다", top >= 1000, f"top={top}")
+
+
 def test_missing_metric_is_none_not_zero() -> None:
     """값이 없으면 0 이 아니라 None — '인용 0회 논문'과 구분돼야 한다."""
     print("test_missing_metric_is_none_not_zero")
@@ -116,6 +150,8 @@ def test_defaults_are_landmark_grade() -> None:
 
 def main() -> int:
     test_citation_field_aliases()
+    test_real_icite_schema()
+    test_fixture_matches_real_schema()
     test_missing_metric_is_none_not_zero()
     test_coverage_detects_metric_outage()
     test_rank_drops_unknown_metrics()

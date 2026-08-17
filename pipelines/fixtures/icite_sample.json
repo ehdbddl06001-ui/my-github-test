@@ -1,18 +1,41 @@
 {
+  "_comment": "NIH iCite /api/pubs?legacy=false 실제 응답 스키마(camelCase). 2026-08-17 CI에서 실측한 키 이름을 그대로 쓴다 — 여기를 legacy(snake_case)로 되돌리면 테스트가 실제 API와 어긋나 또 조용히 0편이 된다.",
   "data": [
     {
+      "_id": "40123456",
       "pmid": 40123456,
-      "year": 2021,
-      "citation_count": 1240,
-      "relative_citation_ratio": 18.7,
-      "nih_percentile": 99.2
+      "pubYear": 2021,
+      "title": "Empagliflozin in Heart Failure with Preserved Ejection Fraction",
+      "journalNameIso": "N Engl J Med",
+      "doi": "10.1056/NEJMoa2107038",
+      "citedByPmidCount": 1240,
+      "rcr": 18.7,
+      "nihRcrPercentile": 99.2,
+      "isClinicalArticle": true
     },
     {
+      "_id": "40987654",
       "pmid": 40987654,
-      "year": 2019,
-      "citation_count": 47,
-      "relative_citation_ratio": 2.1,
-      "nih_percentile": 82.4
+      "pubYear": 2019,
+      "title": "A moderately cited cohort study",
+      "journalNameIso": "Eur Heart J",
+      "doi": "10.1093/eurheartj/ehz001",
+      "citedByPmidCount": 47,
+      "rcr": 2.1,
+      "nihRcrPercentile": 82.4,
+      "isClinicalArticle": false
+    },
+    {
+      "_id": "40555000",
+      "pmid": 40555000,
+      "pubYear": 2024,
+      "title": "Too new to have accrued citations",
+      "journalNameIso": "JAMA",
+      "doi": "10.1001/jama.2024.0001",
+      "citedByPmidCount": 0,
+      "rcr": null,
+      "nihRcrPercentile": null,
+      "isClinicalArticle": true
     }
   ]
 }
