@@ -295,6 +295,32 @@ def test_pdf_builder_selftest() -> None:
     assert r.returncode == 0, f"anatomy_pdf selftest 실패: {r.stdout}{r.stderr}"
 
 
+def test_unit_label_session_and_region() -> None:
+    """날짜순 목록의 소속 배지('2회차 · 등') — 시간표가 유일 기준이고 부분일치를 안 만든다."""
+    from anatomy_schedule import region_label, session_no_for_date, unit_label
+
+    assert unit_label({"session_no": 2, "region": "back"}) == "2회차 · 등"
+    # session_no 가 없으면 scheduled_dates 를 시간표에 대조해 회차를 구한다.
+    assert unit_label({"scheduled_dates": ["2026-08-20"], "region": "lower-limb"}) == "2회차 · 다리"
+    # 두 회차에 걸쳐 배우는 페이지 카드는 둘 다 적는다.
+    assert unit_label({"scheduled_dates": ["2026-09-14", "2026-09-21"],
+                       "region": "upper-limb"}) == "9·11회차 · 팔"
+    # region 만 있는 인제스트 카드는 부위만.
+    assert unit_label({"region": "abdomen"}) == "배"
+    # multi 는 그 회차의 시간표 부위로 넓혀 적는다.
+    assert unit_label({"session_no": 1, "region": "multi"}) == "1회차 · 등·다리"
+    # daily plan 은 regions(복수) 를 쓴다.
+    assert unit_label({"regions": ["back", "lower-limb"]}) == "등·다리"
+    assert unit_label({}) == ""
+    # 시험일(Tagging 1)은 부위가 없다 → 회차만.
+    assert unit_label({"scheduled_dates": ["2026-09-10"]}) == "8회차"
+    assert session_no_for_date(date(2026, 8, 18)) == 1
+    assert session_no_for_date(date(2026, 8, 19)) is None      # 수업 없는 날
+    assert region_label(["back", "back"]) == "등"              # 중복 제거
+    # 배지 클릭은 정확일치여야 한다 — 접두어가 겹치면 1회차가 11회차를 끌고 온다.
+    assert unit_label({"session_no": 11, "region": "back"}).split(" · ")[0] != "1회차"
+
+
 def test_region_not_professor_decides_session() -> None:
     """과거 학기 자료의 회차 배정은 **부위** 기준이다 — 교수명·파일명 날짜가 아니라.
 

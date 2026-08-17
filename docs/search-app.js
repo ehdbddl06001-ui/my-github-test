@@ -6,6 +6,8 @@
   var DOCS = (IDX.docs || []).slice();
   var STATS = IDX.stats || {};
 
+  var unitSel = "";   // 회차 배지로 좁힌 상태("9회차"). 문자열 검색이 아니라 정확일치다.
+
   var $ = function (id) { return document.getElementById(id); };
   var qEl = $("q"), typeEl = $("typeFilter"), topicEl = $("topicFilter");
   var resultsEl = $("results"), countEl = $("count");
@@ -95,6 +97,10 @@
     var tag = TYPE_LABEL[d.type] || d.type;
     var conf = d.confidence
       ? '<span class="pill conf-' + esc(d.confidence) + '">' + esc(d.confidence) + "</span>" : "";
+    // 해부는 날짜순으로 늘어놓으면 소속을 잃는다 → '2회차 · 등'을 제목 옆에 박는다.
+    var unit = d.unit
+      ? '<span class="pill unit" data-unit="' + esc(d.unit.split(" · ")[0]) + '"'
+        + ' title="회차·부위 — 눌러 같은 회차만 보기">' + esc(d.unit) + "</span>" : "";
     var sub = d.subtopic ? " / " + esc(d.subtopic) : "";
     var tags = (d.tags || []).slice(0, 6).map(function (t) {
       return '<span class="tag">' + esc(t) + "</span>";
@@ -106,7 +112,7 @@
     return '<article class="paper">'
       + '<div class="ptop"><span class="pill">' + esc(tag) + "</span>"
       + '<span class="rid">' + esc(d.id) + "</span>" + conf + "</div>"
-      + '<div class="ptitle">' + highlight(d.topic || "?", terms) + sub + "</div>"
+      + '<div class="ptitle">' + unit + highlight(d.topic || "?", terms) + sub + "</div>"
       + (snippet ? '<div class="rsnip">' + snippet + (d.snippet.length >= 240 ? "…" : "") + "</div>" : "")
       + (tags ? '<div class="rtags">' + tags + "</div>" : "")
       + '<div class="rmeta">' + esc(d.date || "") + (d.source ? " · " + esc(d.source) : "") + "</div>"
@@ -122,15 +128,21 @@
     var out = DOCS.filter(function (d) {
       if (type !== "__ALL__" && d.type !== type) return false;
       if (topic !== "__ALL__" && d.topic !== topic) return false;
+      // 정확일치라야 한다 — 부분일치면 '1회차'가 '11회차'까지 끌고 온다.
+      if (unitSel && (d.unit || "").split(" · ")[0] !== unitSel) return false;
       if (!terms.length) return true;
       var hay = (d.text || "").toLowerCase();
       return terms.every(function (t) { return hay.indexOf(t) !== -1; });
     });
 
-    countEl.textContent = out.length + "건"
+    countEl.innerHTML = esc(out.length + "건")
       + (q ? ' · "' + esc(q) + '"' : "")
-      + (type !== "__ALL__" ? " · " + (TYPE_LABEL[type] || type) : "")
-      + (topic !== "__ALL__" ? " · " + topic : "");
+      + (type !== "__ALL__" ? " · " + esc(TYPE_LABEL[type] || type) : "")
+      + (topic !== "__ALL__" ? " · " + esc(topic) : "")
+      + (unitSel ? ' <button class="pill unit unitclear" title="회차 필터 해제">'
+                   + esc(unitSel) + " ✕</button>" : "");
+    var clear = countEl.querySelector(".unitclear");
+    if (clear) clear.addEventListener("click", function () { unitSel = ""; render(); });
 
     if (!out.length) {
       resultsEl.innerHTML = '<p class="empty">일치하는 문서가 없습니다.</p>';
@@ -140,6 +152,14 @@
     if (out.length > 200) {
       resultsEl.innerHTML += '<p class="muted" style="text-align:center">상위 200건만 표시 — 검색어로 좁혀주세요.</p>';
     }
+    // 회차 배지 클릭 = 그 회차만 보기(정확일치 필터).
+    Array.prototype.forEach.call(resultsEl.querySelectorAll(".pill.unit"), function (b) {
+      b.addEventListener("click", function () {
+        unitSel = b.getAttribute("data-unit");
+        render();
+        scrollToResults();
+      });
+    });
   }
 
   var t;

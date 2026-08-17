@@ -109,6 +109,14 @@ def _fig_map() -> dict[str, int]:
 
 def collect() -> list[dict]:
     fig_map = _fig_map()
+    sys.path.insert(0, str(Path(__file__).parent))
+    try:
+        from anatomy_schedule import unit_label
+    except Exception:                                   # 스케줄 모듈이 없어도 동작
+        def unit_label(meta):                           # noqa: ANN001
+            no = meta.get("session_no")
+            return f"{no}회차" if no else ""
+
     rows: list[dict] = []
     for p in sorted(ASSETS.glob("*.svg")):
         name = p.name
@@ -120,13 +128,16 @@ def collect() -> list[dict]:
         variant = ("quiz" if stem.endswith("-quiz")
                    else "labeled" if stem.endswith("-labeled") else "single")
         base = re.sub(r"-(quiz|labeled)$", "", stem)
+        session = _session(name, fig_map)
         rows.append({
             "file": name,
             "base": base,
             "variant": variant,
             "kind": _kind(name),
             "kindLabel": KIND_LABEL[_kind(name)],
-            "session": _session(name, fig_map),
+            "session": session,
+            # 날짜순 타임라인에서 카드와 같은 소속 배지를 달기 위한 라벨('2회차 · 등').
+            "unit": unit_label({"session_no": session}) if session else "",
             "title": _title(svg, base),
             "date": date,
             "bytes": p.stat().st_size,

@@ -13,7 +13,8 @@
       if (it.variant === "quiz") return;
       DOCS.push({
         id: it.base, type: "diagram", date: it.date,
-        topic: it.session ? it.session + "회차" : "",
+        unit: it.unit || (it.session ? it.session + "회차" : ""),
+        topic: "",                       // 회차는 unit 배지가 보여준다(오른쪽 중복 제거)
         subtopic: it.title + " — " + it.kindLabel,
         tags: [it.kind], path: "docs/assets/anatomy/" + it.file,
         _href: "anatomy.html#diagrams"
@@ -22,6 +23,7 @@
     DOCS.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
   })();
   var SEEN_KEY = "medkos_whatsnew_seen";   // 마지막으로 "여기까지 봤음" 누른 날짜
+  var unitSel = "";                        // 회차 배지로 좁힌 상태("6회차")
 
   var TYPE_LABEL = {
     anatomy: "해부학", kmle: "KMLE", usmle: "USMLE", paper: "논문",
@@ -85,8 +87,11 @@
     return DOCS.filter(function (d) {
       if (t !== "__ALL__" && d.type !== t) return false;
       if (range > 0 && daysAgo(d.date) > range) return false;
+      // 회차 배지 필터는 정확일치다 — 부분일치면 '1회차'가 '11회차'까지 끌고 온다.
+      if (unitSel && (d.unit || "").split(" · ")[0] !== unitSel) return false;
       if (q) {
-        var hay = (d.subtopic + " " + d.topic + " " + (d.tags || []).join(" ") + " " + d.id).toLowerCase();
+        var hay = (d.subtopic + " " + d.topic + " " + (d.unit || "") + " "
+                   + (d.tags || []).join(" ") + " " + d.id).toLowerCase();
         if (hay.indexOf(q) < 0) return false;
       }
       return true;
@@ -96,8 +101,13 @@
   function card(d) {
     var href = TYPE_HREF[d.type] || "search.html";
     var gh = ghUrl(d.path);
+    // 날짜순으로 늘어놓으면 해부 자료는 소속을 잃는다 → '2회차 · 등'을 제목 앞에.
+    var unit = d.unit
+      ? '<button class="wn-unit" data-unit="' + esc(d.unit.split(" · ")[0]) + '"'
+        + ' title="이 회차만 보기">' + esc(d.unit) + "</button>" : "";
     return '<li class="wn-item' + (isNew(d) ? " is-new" : "") + '">' +
       '<span class="wn-type wn-' + esc(d.type) + '">' + esc(TYPE_LABEL[d.type] || d.type) + "</span>" +
+      unit +
       '<span class="wn-title">' + esc(d.subtopic || d.topic || d.id) + "</span>" +
       (d.topic && d.subtopic ? '<span class="wn-topic">' + esc(d.topic) + "</span>" : "") +
       '<span class="wn-links">' +
@@ -124,7 +134,17 @@
         "</h3><ul class=\"wn-list\">" + items.map(card).join("") + "</ul></div>";
     }).join("");
     $("timeline").innerHTML = html || '<div class="card muted">조건에 맞는 자료가 없습니다.</div>';
-    $("count").textContent = rows.length + "건 · " + order.length + "일";
+    $("count").innerHTML = esc(rows.length + "건 · " + order.length + "일")
+      + (unitSel ? ' <button class="wn-unit wn-unitclear" title="회차 필터 해제">'
+                   + esc(unitSel) + " ✕</button>" : "");
+    var clear = $("count").querySelector(".wn-unitclear");
+    if (clear) clear.addEventListener("click", function () { unitSel = ""; render(); });
+    Array.prototype.forEach.call($("timeline").querySelectorAll(".wn-unit"), function (b) {
+      b.addEventListener("click", function () {
+        unitSel = b.getAttribute("data-unit");
+        render();
+      });
+    });
 
     var newTotal = DOCS.filter(isNew).length;
     var badge = $("newBadge");
