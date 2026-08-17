@@ -34,7 +34,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 # 콘텐츠 레인 — 결정론 파이프라인이 만들고 테스트가 지키는 산출물만.
-CONTENT_PREFIXES = ("content/", "docs/", "notebooks/", "research/")
+CONTENT_PREFIXES = ("content/", "docs/", "notebooks/")
 CONTENT_FILES = ("state/ailab_progress.json",)
 
 # 번들 재생성 순서(색인 → 각 뷰). 하나라도 빠지면 홈페이지가 낡는다.
