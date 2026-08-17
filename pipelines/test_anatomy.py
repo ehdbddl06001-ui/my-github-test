@@ -396,6 +396,12 @@ def test_subnotes_carry_memory_aids() -> None:
         assert all(m.get("key") and m.get("full") for m in mn), f"{p.name}: 빈 두문자 줄"
         assert len(cloze_items(body)) >= 10, f"{p.name}: 빈칸 재료(==하이라이트==) 부족"
         assert len(self_check_items(body)) >= 5, f"{p.name}: 자가점검 재료 부족"
+def test_subnote_builder_selftest() -> None:
+    """서브노트: 도해 레인·0절 제외·문항 합본·.private 가드 회귀 (anatomy_subnote --selftest)."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "anatomy_subnote.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"anatomy_subnote selftest 실패: {r.stdout}{r.stderr}"
 
 
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]

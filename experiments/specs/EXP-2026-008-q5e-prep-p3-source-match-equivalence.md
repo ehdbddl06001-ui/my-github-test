@@ -481,6 +481,259 @@ is built and again immediately before execution.  Regression:
 which counts calls to the single compile choke point and to `os.mkdir` across
 seven direct-call routes and requires zero of each.
 
+**D33 (2026-08-16) — `EXECUTED_NOTEBOOK_NOT_PRESERVED` for run
+`20260816T192351`.  The bundle is the evidence; the manifest anchor moves to
+the registered record.**  The Colab session that produced `20260816T192351` was
+closed without saving, so no executed copy of
+`notebooks/quest58_q5e_prep_p3_source_match_equivalence.ipynb` exists for that
+run.  This is recorded rather than repaired.
+
+**What was checked, and how the absence was established.**  Three independent
+places, all read-only: `notebooks/executed/` in this repository holds only
+`…_20260816T161639.ipynb`; a Drive search for `quest58` returns no file for
+this stamp; and the run folder `1dBAwnVJVws6HnEa8z4mUfZ-bkMDCcUSE` holds
+exactly the nine contract files (seven payload files, `manifest.json`,
+`COMMITTED.json`) and nothing else.  The notebook was not misplaced — it was
+never written.
+
+**What is not done about it.**  The executed notebook is **not** restored and
+**not** reconstructed, and no file is added to `notebooks/executed/` as if it
+had been executed.  The measured results of `20260816T192351` are **not**
+re-derived, re-computed, or re-stated from anything other than the bundle
+already in Drive.  P3 is **not** re-run: an executed artefact produced today
+would be a different run with a different stamp, not a recovery of this one,
+and re-running is in any case barred while the approval is closed.  D32's
+verdict stands exactly as recorded — `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3 of
+6 re-derived, all three mismatches qualified, `SOURCE_MATCH_ORACLE_RECORD`
+still `None`.
+
+**Primary evidence is the committed Drive bundle.**  The seven payload files
+are intact and are what every claim about this run rests on; the per-fixture
+`difference` records live in `fixture_results.json` there.  The payload fold
+`eb8eb085…` binds those seven to each other, so the bundle remains internally
+verifiable without the notebook.
+
+**The manifest anchor: `manifest_anchor_source = registered_record`.**  The
+bundle contract deliberately keeps `manifest.json` out of the fold it records,
+so the manifest's own SHA-256 must be pinned from outside the bundle.  The
+intended anchor was `ANCHOR_SAVED_NOTEBOOK` — the saved output of the
+notebook's report cell — and that anchor is gone with the notebook.  The anchor
+used instead is `ANCHOR_REGISTERED_RECORD`: the full manifest digest
+`05dfeac05087c182aaedf02d69f5d0d80bc851f4759d6c28669f5e2cf78b540a`, registered
+in PR #164 (merge commit `b60a668`) in the `run-p3-result-2` row of
+`research/ASSETS.md` and in D32 above.
+
+**The re-hash, read-only.**  `manifest.json` (file id
+`1uqQM30cYbq7Eyf34S2a93V7ZJ-Wmv1V6`) was fetched from Drive under
+`drive.readonly` and hashed without being modified, moved, or rewritten: 2,195
+bytes, SHA-256
+`05dfeac05087c182aaedf02d69f5d0d80bc851f4759d6c28669f5e2cf78b540a`.  That is a
+byte-for-byte match with the registered digest.  Nothing in Drive was written
+by this check.
+
+**Why this is an external anchor and not a forgery.**  The distinction is
+*when the anchor was fixed relative to what it constrains*.  The digest was
+committed to this repository in PR #164, before the notebook's absence was
+known and with no ability to influence the manifest it names; today's re-hash
+only tests the manifest against that pre-existing record and could have failed.
+A reconstructed notebook would be the opposite — an artefact written after the
+fact, by the party it exonerates, carrying whatever digest was wanted.  This
+entry therefore claims exactly one thing: the manifest now in Drive is the same
+manifest that was registered.  It does not claim, and must not be read as
+claiming, that a saved same-run notebook exists or that the loss was repaired.
+The anchor is weaker than `ANCHOR_SAVED_NOTEBOOK` — it is one step further from
+the run — and it is labelled as such wherever it is used.
+
+**Boundaries.**  No code, fixture, adapter, notebook, execution approval record
+or Drive file is changed by this entry; it is documentation only.  The
+operational lesson — save the executed notebook before closing the session, and
+treat `ANCHOR_SAVED_NOTEBOOK` as a step of the run rather than a courtesy —
+applies to the next run, which is a fresh run under a fresh approval.
+
+**D32 (2026-08-16) — RE-RUN UNDER THE CORRECTED HARNESS.  3 of 6 re-qualified;
+all three mismatches now qualified, including the non-AAMI one.**  Run
+`20260816T192351` (folder `1dBAwnVJVws6HnEa8z4mUfZ-bkMDCcUSE`, fold
+`eb8eb085…`, manifest `05dfeac0…`) ran all six fixtures from the first under
+harness `4127809f…` at merge commit `ee3841f`.
+
+```
+harness stop               : False
+required fixture coverage  : True
+injected-helper invariance : invariant on all six
+fixtures passed            : 3 / 6      ← re-derived, no longer carried over
+final verdict              : SOURCE_MATCH_EQUIVALENCE_REQUIRED
+```
+
+**The digest signature is the check on the fix.**  Against D29's run, exactly
+one number moved:
+
+| fixture | source digest | adapter digest |
+|---|---|---|
+| nearest_already_used_falls_through | unchanged `968c0642…` | unchanged |
+| distance_tie | unchanged `8618d216…` | unchanged |
+| **non_aami_symbol_consumes_its_match** | **`14712d08…` → `81d2a080…`** | unchanged |
+| boundary_cut | unchanged `2fe0cb57…` | unchanged |
+| annotation_order | unchanged `b0315d6b…` | unchanged |
+| peak_order_change | unchanged `3dc6bce6…` | unchanged |
+
+Only the fixture whose projection was defective moved, and every adapter
+observation is byte-identical.  A projection change that had disturbed anything
+else would have shown here.
+
+**The three qualified mismatches, as the source actually behaves.**
+
+1. **`nearest_already_used_falls_through`** — peak 1012's nearest is 1001,
+   consumed by peak 1000.  The source leaves peak 1012 **unmatched** *and*
+   leaves 1042 **unconsumed**: it drops the peak rather than falling through,
+   and does not take the annotation either.  The adapter matches 1012 to 1042
+   and keeps the row.
+
+2. **`non_aami_symbol_consumes_its_match`** *(now qualified)* — the source
+   never sees `'+'`: it is filtered out before matching, so peak 1000's nearest
+   candidate is 1042 (`'N'`, 42 samples away, inside the tolerance) and it
+   takes it; peak 1044 then finds its own nearest already consumed and is
+   dropped.  `'+'` is reported **unmatched**, which is what a filtered-out
+   annotation looks like.  The adapter consumes `'+'` at peak 1000, drops that
+   row at the AAMI stage, and gives 1042 to peak 1044.  Same number of kept
+   rows, different row, and a different annotation consumed.
+
+3. **`annotation_order_differing_from_sample_order`** — with 1060 listed first
+   and peak 1030 equidistant from both, the source takes **1060** (`'V'`): it
+   traverses in the reader's list order.  The adapter takes 1000 (`'N'`),
+   sample order.
+
+**The registered rule, now determined on all three points** — recorded as the
+input to an adapter correction, not applied to one here: filter to
+AAMI-mapped annotations first; for each peak in detector order take the nearest
+remaining candidate by absolute sample distance with ties going to the lower
+position in that filtered list; if the nearest is beyond the tolerance, or is
+already consumed, drop the peak and consume nothing; then apply the boundary
+cut.
+
+**What follows.**  `SOURCE_MATCH_ORACLE_RECORD` stays `None` — a disagreement
+yields no candidate record and the registered gate rejected the structure.  No
+adapter was touched by this run or by this entry.  The correction is a separate
+PR designed from this bundle, and after it the six fixtures run again from the
+first under a new harness digest and a fresh approval.
+
+**D31 (2026-08-16) — `P3_IMPLEMENTATION_ACCEPTED`; execution re-enabled for
+harness `4127809f…` at merge commit `ee3841f`.**  Codex accepted the corrected
+projection — `annotation_index_spaces()` and the filtered-position to
+original-ordinal mapping, the stop on duplicate or conflicting spaces, the
+approval closure, the harness-digest binding and the notebook separation — and
+the documentation boundary of D30 as restated.  PR #162 is merged at
+`ee3841f17ef5eea879c2a75bdf7ceaf5963348ec`, and the harness at that commit is
+`4127809f323eb2bf793065e85781eff0edb4f1f828dbfe04ac784df24b832a67`, which is
+the digest this approval names.
+
+The record carries the grant **and what the grant may not be used to confirm**:
+`not_yet_qualified` states that the 3-of-6 count and the non-AAMI fixture's
+source detail from run `20260816T161639` are not results of this harness.  They
+are re-derived by the re-run this approval opens, and until that run completes
+the equivalence verdict rests on the two qualified mismatches alone.
+`OPEN_REGISTERED_DATA` stays `False`; the notebook opts in at its call site.
+
+The re-run is all six fixtures from the first, under this harness, with a fresh
+bundle.  What it decides: the exact number of agreeing fixtures, and the
+registered source's actual behaviour on the non-AAMI fixture now that a
+filtered index is read in the space the producer built it in.  What it does not
+decide: anything about the adapter's correction, which is a separate PR
+designed **after** that result.
+
+**D30 (2026-08-16) — Codex review: D21 accepted, the verdict accepted, and a
+blocker in the non-AAMI fixture's source projection.**
+
+*Acceptance boundary, as recorded by the reviewer:*
+
+| marker | state |
+|---|---|
+| `D21_ACCEPTED` | filler-beat design accepted — outside tolerance of every decision peak/annotation, one annotation per filler, inside the boundary, appended after the decisions, identical and identically ordered on both sides, and the six one-decision mutation isolations still hold |
+| `P3_BUNDLE_AUTHENTIC` | run `20260816T161639`, folder `1bMZekLtAvqPe2-9oTd4YtPy_WTCLF0EQ`, fold `fa4cfe6c…`, manifest `dd637818…` |
+| `P3_EQUIVALENCE_REQUIRED_ACCEPTED` | equivalence is **rejected** — on the strength of at least two *qualified* mismatches, `nearest_already_used_falls_through` (drop, no consumption) and `annotation_order_differing_from_sample_order` (original list order).  Two are enough; the verdict does not depend on how many more there are |
+| `D29_REPORTED_COUNT_3_OF_6_NOT_REQUALIFIED_UNTIL_RERUN` | D29 records what run `20260816T161639` reported.  **3/6 is not re-qualified here**: the count includes the non-AAMI fixture, whose source detail this change corrects, so the number is re-derived only by a re-run under the corrected projection |
+| `NON_AAMI_FIXTURE_DETAIL_UNQUALIFIED_PENDING_PROJECTION_FIX` | the non-AAMI fixture's **source detail** is not qualified until a re-run |
+| `SOURCE_MATCH_ORACLE_RECORD` | `None`, unchanged |
+| adapter | 0 changes |
+
+**The blocker.**  The registered `build_record()` filters before it matches:
+
+```python
+keep = [(p, AAMI[s]) for p, s in zip(ann_sample, ann_symbol)
+        if AAMI.get(s) in C2I]
+```
+
+so `'+'` cannot appear as a matched or kept annotation on the source side — it
+is gone before matching starts.  The published `fixture_results.json`
+nonetheless mapped source peak 1000 to original ordinal 0, the `'+'`.  The
+cause is exactly as the reviewer read it: the producer's `j` is a position in
+the **filtered** list, and the projection read it as a position in the
+reader's.
+
+```
+original annotations : [+, N, A, L, …]
+filtered tpk         : [   N, A, L, …]
+j = 0, source meaning:     N              (original ordinal 1)
+j = 0, as published  : +                  (original ordinal 0)  ← wrong space
+```
+
+**The fix, narrow and mechanical.**  `annotation_index_spaces()` reads the
+producer's own annotation list out of the trace — a flat list of samples, or a
+list of `[sample, …]` rows, every member of which is an annotation sample of
+this fixture — and turns it into a space by **exact sample equality**: position
+→ sample → original ordinal.  Nothing re-derives the matching rule, the
+tolerance or the AAMI map; the producer applied those already and this reads
+what it was left holding.  A list the producer built that is not the reader's
+is the evidence that it works in another space; **two** such lists that
+disagree, or one that repeats a sample, are evidence of nothing and stop the
+run at `P3_ANNOTATION_INDEX_SPACE_UNREADABLE` rather than being chosen
+between.  Where a producer filtered nothing the space is the reader's own list
+and the readings are exactly what they were.
+
+**The local replica reproduces the run — as a regression, and only as one.**
+With the filter added, `FILTERING_SOURCE_PRODUCER` reaches the same 3-of-6
+shape the run reported, which it did not before.  That is **evidence about this
+implementation**: it shows the projection now reads a filtered index the way
+the registered producer writes one.  It is a synthetic producer written in this
+repository, so it is **not a measurement of the registered source** and nothing
+about the source is promoted from it.  Only a run against the digest-verified
+`data.py` measures that.
+
+**What is qualified and what is not.**  The two settled disagreements —
+`nearest_already_used_falls_through` (source drops a peak whose nearest is
+consumed, and does not consume the annotation either) and
+`annotation_order_differing_from_sample_order` (list order, not sample order) —
+are unchanged by this fix and a regression pins them.  **Two qualified
+mismatches are enough to reject equivalence**, and the top-level verdict rests
+on those two alone — not on the count.
+
+Everything that touches the non-AAMI fixture stays unqualified: its exact
+source behaviour, and therefore also **the 3-of-6 count itself**, since that
+number includes it.  D29 records what the run reported and remains an accurate
+record of that; it is not re-qualified by this change, and the count is
+re-derived only by a re-run under the corrected projection.
+
+Regressions (7, as specified): the filtered index resolving to ordinal 1 and
+never to 0; the mapping holding when list order is not sample order; two
+disagreeing spaces and a repeated sample each stopping; a producer that filters
+everything keeping nothing and reporting it as a disagreement rather than a
+stop; the two settled disagreements unchanged; fixtures, filler, adapter
+fingerprint and tolerance unchanged; and the mutation — resolving without the
+space — landing on ordinal 0, the `'+'`.  Suite: 121 functions, 1,224
+assertions.
+
+**Approval.**  Closed.  `oracle_harness_sha256` is now
+`4127809f323eb2bf793065e85781eff0edb4f1f828dbfe04ac784df24b832a67`; the
+approval that produced `20260816T161639` was given for the harness that had the
+defect and does not carry over.  This change performs no Drive access, no
+execution, no bundle write, no adapter edit and no registration.  Review →
+merge → fresh execution-enable approval → all six fixtures from the first →
+*then* an adapter-correction PR designed from that result.
+
+*Housekeeping:* the executed notebook had been saved from Colab over the
+committed unexecuted one.  The executed copy now lives at
+`notebooks/executed/quest58_q5e_prep_p3_source_match_equivalence_20260816T161639.ipynb`
+and the committed notebook is unexecuted again, as its contract requires.
+
 **D29 (2026-08-16) — THE DIFFERENTIAL COMPLETED.  Verdict:
 `SOURCE_MATCH_EQUIVALENCE_REQUIRED`, 3 of 6 fixtures equal.**  Run
 `20260816T161639` ran all six registered fixtures against the digest-verified
@@ -619,6 +872,19 @@ That is the whole point of this PREP arriving: the candidate adapter,
 transcribed from prose, appears to differ from the registered source on two
 decisions.  It becomes a finding when the run completes on all six fixtures,
 and the adapter is not touched here.
+
+> **Historical — this paragraph is a synthetic rehearsal, not a P3 result.**
+> The "4 of 6 agree, and the two that disagree are …" above was measured on
+> **`SOURCE_RULE_PRODUCER`**, a synthetic producer written to the rule three
+> partial traces had pinned at the time.  It was never a comparison against the
+> registered `data.py`, and it is not a count of anything the registered source
+> did.  It is left in place because D27 is a record of what was known on
+> 2026-08-16 before any differential completed.  The measured P3 result is
+> **D32**: 3 of 6 agree, and **three** fixtures disagree — the two named here
+> plus `test_source_match_non_aami_symbol_consumes_its_match`, whose source
+> detail was only qualified once the filtered annotation index space was read
+> correctly (D30, D32).  Read this paragraph for history; read D32 for the
+> verdict.
 
 Regressions: `test_a_class_code_settles_what_a_symbol_never_taught` and
 `test_the_registered_rule_is_reported_rather_than_stopping_the_run`.  Suite:

@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1165,
+  "total": 1167,
   "byType": {
-   "anatomy": 308,
-   "paper": 219,
+   "anatomy": 309,
+   "paper": 220,
    "kmle": 555,
    "usmle": 66,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 308,
-   "Cardiology": 85,
+   "Anatomy": 309,
+   "Cardiology": 86,
    "Nephrology": 63,
    "Infectious Disease": 61,
    "Pediatrics": 59,
@@ -53,13 +53,42 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 730,
-   "medium": 386,
+   "high": 731,
+   "medium": 387,
    "low": 49
   },
   "tagCount": 2100
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-17",
+   "type": "anatomy",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-17",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/daily/2026-08-17.md",
+   "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-17 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0220",
+   "type": "paper",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Medical care research and review : MCRR",
+   "confidence": "medium",
+   "date": "2026-08-16",
+   "path": "content/papers/2026/2026-08-16_paper-2026-0220_the_impact_of_hospital_infrastructure_investment_on_quality_.md",
+   "snippet": "Title The Impact of Hospital Infrastructure Investment on Quality of Care Authors Levin Zachary Journal / DOI Medical care research and review : MCRR · DOI: 10.1177/10775587261471942 · PMID: 42604414 https://pubmed.ncbi.nlm.nih.gov/42604414",
+   "text": "Cardiology scraped pubmed PubMed / Medical care research and review : MCRR Title The Impact of Hospital Infrastructure Investment on Quality of Care Authors Levin Zachary Journal / DOI Medical care research and review : MCRR · DOI: 10.1177/10775587261471942 · PMID: 42604414 https://pubmed.ncbi.nlm.nih.gov/42604414/ Abstract Hospitals spend billions of dollars annually on major construction projects and facility upgrades, but limited research to date has examined whether this expenditure benefits patients. Using a novel dataset of California hospital construction projects opening between 2010 and 2019, we estimate the effect of project opening on patient experience and clinical measures using a difference in differences framework. We find sizable, statistically significant improvements in patient experience cleanliness, quietness at night, and likelihood to recommend with effects persisting for at least 2 years after opening. We find no measurable impact on clinical outcomes, 30 day mortality, and readmission for heart attacks and heart failure. These results suggest infrastructure investments meaningfully affect perceived care environments but may not translate into near term changes in clinical performance. Policymakers and hospital leaders should weigh these returns when evaluating capital expenditures and potential support for hospital construction. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "anatomy-daily-2026-08-16",
    "type": "anatomy",

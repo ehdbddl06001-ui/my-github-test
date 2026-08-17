@@ -1,1 +1,8 @@
 pyyaml>=6.0
+# 해부 학습자료 조판(anatomy_pdf.py · anatomy_subnote.py). 없으면 PDF 단계가 통째로 죽는다.
+pymupdf>=1.24
+# 실사 복원·마스킹 lane(anatomy_mask.py · restore_scan.py)과 그 회귀 테스트.
+# 2026-08-17 실측: 루틴 컨테이너에 이 셋이 없어 test_anatomy.py 가 ImportError 로 죽었다.
+pillow>=10.0
+numpy>=1.26
+opencv-python-headless>=4.9
