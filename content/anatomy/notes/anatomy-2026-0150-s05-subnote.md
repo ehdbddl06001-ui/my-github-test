@@ -5,15 +5,15 @@ kind: study_guide
 topic: Anatomy
 subtopic: "5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위"
 pdf_title: "5회차 서브노트 — 심장 · 관자아래우묵"
-pdf_subtitle: "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리와 계보 트리 · 관계형 12문항 합본"
+pdf_subtitle: "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리 · 계보 트리 3장 · 실사 태깅 8문항 합본"
 kicker: "MedKOS · 임상해부학술기 3Q · 5회차(2026-08-31)"
 layout: split
 quiz_per_page: 2
 answers_per_page: 3
 cover_lines:
   - "범위  가슴벽 안쪽면 / 가슴안·가슴막·가슴막오목 / 위세로칸 / 심장막·심장막굴 / 심장·심장동맥·자극전도계 / 관자부위 / 관자아래우묵"
-  - "구성  ① 가슴막 ② 세로칸 ③ 심장막 ④ 심장 ⑤ 계보 트리 3장 ⑥ 관자·관자아래부위 ⑦ 관계형 12문항"
-  - "근거  회차 배정은 부위 기준(anatomy_schedule.session_for_region → 5회차) · 스캔 미공급으로 실사 문항 없음"
+  - "구성  ① 가슴막 ② 세로칸 ③ 심장막 ④ 심장 ⑤ 계보 트리 3장 ⑥ 관자·관자아래부위 ⑦ 실사 태깅 8문항"
+  - "근거  2026-08-18 업로드 스캔 3종(관자아래부위·가슴막·세로칸·심장막·심장·심장속구조) — 회차 배정은 부위 기준"
   - "축    복장뼈각이 모든 높이의 기준 · 가로막신경은 앞, 미주신경은 뒤 · 가쪽날개근만 턱을 연다"
 date: 2026-08-18
 confidence: medium
@@ -23,13 +23,22 @@ region: multi
 structure_classes: [muscle, artery, vein, nerve]
 exam_phase: tagging-1
 priority: high
-publishable: true
+publishable: false   # 실사 복원본을 합본하므로 웹 게시 금지
 needs_review: false
 source_refs:
   - {source_file_id: "schedule-2026-s05", source_file_name: "임상해부학술기 3Q 2026 실습시간표 확정본", page: null, section: "5회차(2026-08-31) 실습주제 — 가슴벽·가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위", note: "배정 근거: anatomy_schedule.session_for_region('가슴안'·'심장'·'관자부위') → 5회차. 담당교수·과거 학기 파일명 날짜는 배정에 쓰지 않음"}
   - {source_file_id: "tree-s05-specs", source_file_name: "pipelines/branch_specs.py s05-nerve / s05-vessel / s05-bundle", page: null, section: "계보 트리 3장(도해 근거)", note: "본 카드의 !fig 도해는 이 스펙에서 결정론적으로 생성됨 — asset_origin: claude-drawn-svg"}
-# scan_questions: 없음 — 5회차 스캔 미공급(실사 제외). 계보 트리 퀴즈판(문항 0166–0168)은
-# 27~37핀이라 이 지면의 썸네일 크기에서 번호핀이 안 읽힌다 → 웹 '회차별 학습'에서 전체 크기로 푼다.
+# 계보 트리 퀴즈판(문항 0166–0168)은 27~37핀이라 이 지면 썸네일에서 번호핀이 안 읽힌다
+# → 웹 '회차별 학습'에서 전체 크기로 푼다. 여기 싣는 것은 업로드 스캔 실사 8문항.
+scan_questions:
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0170.md", quiz_image: ".private/anatomy/render/uploads-s05/A044_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/A044_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0171.md", quiz_image: ".private/anatomy/render/uploads-s05/B011_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B011_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0172.md", quiz_image: ".private/anatomy/render/uploads-s05/B015_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B015_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0173.md", quiz_image: ".private/anatomy/render/uploads-s05/B020_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B020_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0174.md", quiz_image: ".private/anatomy/render/uploads-s05/B026_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B026_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0175.md", quiz_image: ".private/anatomy/render/uploads-s05/B039_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/B039_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0176.md", quiz_image: ".private/anatomy/render/uploads-s05/C007_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/C007_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0169.md", quiz_image: ".private/anatomy/render/uploads-s05/A019_quiz.png", clean_image: ".private/anatomy/render/uploads-s05/A019_clean.png"}
 mnemonics:
   - {key: "C3,4,5 keeps the diaphragm alive", full: "가로막신경 = C3·C4·C5", note: "그래서 가로막·심장막 자극이 어깨(C3–C5 피부분절)로 간다"}
   - {key: "앞은 가로막 뒤는 미주", full: "허파뿌리 앞=가로막신경 / 뒤=미주신경", note: "세로칸에서 두 신경을 가르는 유일한 기준 — 태깅 단골"}

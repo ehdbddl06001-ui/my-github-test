@@ -3685,6 +3685,190 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0169",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래우묵을 가쪽에서 연 실사 사진이다. 번호핀 1–9가 가리키는 구조의 이름을 번호 순서대로 답하시오. (4번과 9번은 같은 혈관의 서로 다른 지점이다.)",
+   "choices": null,
+   "answer": "1. 가쪽날개근 위갈래 (superior head of lateral pterygoid m.) 2. 가쪽날개근 아래갈래 (inferior head of lateral pterygoid m.) 3. 볼신경 (buccal n.) 4. 위턱동맥 (maxillary a.) 5. 안쪽날개근 (medial pterygoid m.) 6. 혀신경 (lingual n.) 7. 아래이틀신경 (inferior alveolar n.) 8. 아래이틀동맥 (inferior alveolar a.) 9. 위턱동맥 (maxillary a.) — 4번과 같은 동맥의 더 앞·안쪽 지점",
+   "explanation": "가쪽날개근의 두 갈래(위갈래는 나비뼈 큰날개, 아래갈래는 가쪽날개판 가쪽면에서 일어난다) 사이로 **볼신경과 위턱동맥**이 빠져나오는 것이 이 우묵의 핵심 배열이다. 위턱동맥은 가쪽날개근의 얕은쪽 또는 깊은쪽을 지나는데 이 변이가 흔해 두 지점(4·9)에서 다르게 보인다. **혀신경이 아래이틀신경보다 앞·안쪽**에 놓이는 것이 태깅의 결정적 단서이며, 이 위치관계 때문에 하치조 전달마취에서 혀가 함께 마취된다. 안쪽날개근은 가장 깊이 있어 아래턱뼈가지 안쪽면으로 간다. 아래이틀신경·동맥은 턱뼈구멍으로 함께 들어가 이름이 같은 짝을 이룬다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장)",
+     "page": null,
+     "section": "A019 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0170",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "pleura",
+   "examPhase": "tagging-1",
+   "stem": "가슴안을 앞에서 연 실사 사진이다. 번호핀 1–4가 가리키는 공간·경계의 이름을 답하고, 4번이 임상적으로 왜 중요한지 한 문장으로 쓰시오.",
+   "choices": null,
+   "answer": "1. 가슴막안 (pleural cavity) 2. 갈비세로칸오목 (costomediastinal recess) 3. 가슴막접힘선 (line of pleural reflection) 4. 갈비가로막오목 (costodiaphragmatic recess) — 가슴막안에서 **가장 깊은 곳**이라 가슴막삼출이 먼저 고이고 가슴막천자의 표적이 된다.",
+   "explanation": "벽쪽가슴막과 내장쪽가슴막 사이의 잠재공간이 가슴막안이고, 벽쪽가슴막이 방향을 바꾸며 꺾이는 자리가 가슴막접힘선이다. 접힘선 안쪽에는 허파가 미처 채우지 못한 여분 공간(오목)이 남는데, 복장뼈 뒤 왼쪽의 갈비세로칸오목과 갈비·가로막가슴막이 만나는 갈비가로막오목 둘이다. 갈비가로막오목이 가장 깊어 액체가 여기 먼저 고인다. 허파 아래경계 6·8·10과 가슴막 아래경계 8·10·12의 **두 갈비 차이**가 곧 이 오목이며, 천자 바늘은 신경혈관다발을 피해 아래 갈비뼈의 위모서리를 타고 들어간다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장)",
+     "page": null,
+     "section": "A044 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0171",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "mediastinum",
+   "examPhase": "tagging-1",
+   "stem": "위세로칸을 앞에서 연 실사 사진이다. 번호핀 1–9가 가리키는 구조의 이름을 번호 순서대로 답하시오. 동맥과 신경이 섞여 있다.",
+   "choices": null,
+   "answer": "1. 오른온목동맥 (right common carotid a.) 2. 왼미주신경 (left vagus n.) 3. 오른빗장밑동맥 (right subclavian a.) 4. 왼온목동맥 (left common carotid a.) 5. 왼빗장밑동맥 (left subclavian a.) 6. 왼가로막신경 (left phrenic n.) 7. 팔머리동맥 (brachiocephalic trunk) 8. 오른미주신경 (right vagus n.) 9. 오른가로막신경 (right phrenic n.)",
+   "explanation": "대동맥활의 가지는 **오른쪽에만 팔머리동맥**이 있고 왼쪽은 온목동맥·빗장밑동맥이 활에서 직접 나온다(7 → 1·3 / 4·5). 좌우 비대칭이 생기는 이유는 발생에서 오른쪽 등쪽대동맥이 퇴화하기 때문이며, 이 때문에 오른되돌이후두신경은 오른빗장밑동맥을, 왼되돌이후두신경은 대동맥활을 감는다. 신경 넷(2·6·8·9)은 큰혈관 표면을 따라 내려가는데, **가로막신경은 허파뿌리 앞**으로 가 중간세로칸을, **미주신경은 허파뿌리 뒤**로 가 뒤세로칸을 지난다 — 실습에서 두 신경을 가르는 기준은 이 앞뒤 관계 하나뿐이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장)",
+     "page": null,
+     "section": "B011 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0172",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "pericardium",
+   "examPhase": "tagging-1",
+   "stem": "심장막을 열고 심장막안을 노출한 실사 사진이다. 번호핀 1–5가 가리키는 구조의 이름을 답하고, 1번과 5번 중 손가락이 좌우로 통과하는 쪽은 어느 것인지 답하시오.",
+   "choices": null,
+   "answer": "1. 심장막가로굴 (transverse pericardial sinus) 2. 허파동맥 (pulmonary a.) 3. 오름대동맥 (ascending aorta) 4. 위대정맥 (superior vena cava) 5. 심장막빗굴 (oblique pericardial sinus). 손가락이 좌우로 **통과하는 쪽은 1번(가로굴)**이고, 5번(빗굴)은 막다른 골목이다.",
+   "explanation": "장막심장막이 동맥관(오름대동맥+허파동맥줄기)과 정맥관(대정맥+허파정맥)을 각각 감싸며 접히는 바람에 두 관 사이에 남은 통로가 **가로굴**이다. 앞벽은 오름대동맥과 허파동맥줄기(3·2), 뒤벽은 위대정맥과 왼심방(4)이 이루며, 좌우로 뚫려 있어 심장수술에서 유출로 두 줄기에 한 번에 교차겸자를 걸 수 있다. **빗굴**은 왼심방 뒤면에서 허파정맥·아래대정맥 반전부에 둘러싸여 끝나는 막다른 공간이라 손가락이 통과하지 못한다. 참고로 이 스캔의 필기에는 빗굴이 '오른심방 뒤'로 적혀 있으나 빗굴은 **왼심방 뒤**(식도 앞)가 맞다 — 필기 오류이므로 그대로 외우지 말 것.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장)",
+     "page": null,
+     "section": "B015 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0173",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart",
+   "examPhase": "tagging-1",
+   "stem": "심장의 복장갈비면(앞면)을 보여 주는 실사 사진이다. 번호핀 1–9가 가리키는 구조의 이름을 답하시오. 2번은 빨간 선으로, 8번은 검은 점선으로 그려져 있다.",
+   "choices": null,
+   "answer": "1. 심방귀 (auricle, 오른심방귀) 2. 방실사이고랑 = 심장동맥고랑 (coronary sulcus) 3. 허파동맥줄기 (pulmonary trunk) 4. 오른심방 (right atrium) 5. 왼심실 (left ventricle) 6. 심장바깥막 (epicardium) 7. 오른심실 (right ventricle) 8. 앞심실사이고랑 (anterior interventricular sulcus) 9. 심장꼭대기 (apex of the heart)",
+   "explanation": "심장 표면의 두 고랑이 네 방의 경계를 그대로 드러낸다. **방실사이고랑**(빨간 선)은 심방과 심실을 갈라 심장을 빙 둘러 돌며 그 안에 오른심장동맥·휘돌이가지·심장정맥굴이 들어 있고, **앞심실사이고랑**(검은 점선)은 두 심실을 갈라 그 안에 앞심실사이가지와 큰심장정맥이 달린다. 앞면은 대부분 오른심실(7)이 만들고, 왼모서리와 심장꼭대기는 왼심실(5)이 만든다 — 심장꼭대기는 왼쪽 다섯째 갈비사이 빗장중간선에서 촉지된다. 6번의 심장바깥막은 장막심장막의 내장쪽층 그 자체이며, 사진에서는 겸자로 들어올려 그 층을 보여 주고 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장)",
+     "page": null,
+     "section": "B020 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0174",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart",
+   "examPhase": "tagging-1",
+   "stem": "심장 앞면의 심장동맥을 보여 주는 실사 사진이다. 번호핀 1–3이 가리키는 동맥의 이름을 대고, 각각 어느 심장동맥에서 나온 가지인지 함께 답하시오.",
+   "choices": null,
+   "answer": "1. 왼대각동맥 (left diagonal a.) — 왼심장동맥(앞심실사이가지) 계열 2. 앞심실사이가지 (anterior interventricular br., LAD) — **왼심장동맥** 3. 오른모서리가지 (right marginal br.) — **오른심장동맥**",
+   "explanation": "왼심장동맥은 짧은 줄기 뒤 곧 앞심실사이가지(LAD)와 휘돌이가지로 갈리고, LAD에서 심장의 왼모서리 쪽으로 뻗는 가지를 대각동맥이라 부른다. LAD는 앞심실사이고랑을 타고 심장꼭대기로 내려가며 심실사이막 앞 2/3에 수직으로 사이막가지를 보내기 때문에 막히면 광범위한 앞벽경색이 생겨 'widow-maker'라 불린다. 오른모서리가지는 오른심장동맥이 심장의 아래(급성)모서리를 따라 보내는 가지다. 참고로 **우세(dominance)는 뒤심실사이가지를 누가 내느냐**로 정하며 이 사진의 앞면 가지들로는 판정하지 않는다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장)",
+     "page": null,
+     "section": "B026 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0175",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart",
+   "examPhase": "tagging-1",
+   "stem": "오른심방을 열어 속면을 보여 주는 실사 사진이다. 번호핀 1–5가 가리키는 구조의 이름을 답하고, 4번이 발생학적으로 무엇과 무엇의 경계인지, 그리고 그 위끝에 무엇이 있는지 쓰시오.",
+   "choices": null,
+   "answer": "1. 위대정맥구멍 (opening of the superior vena cava) — 판막이 없다 2. 빗살근 (pectinate muscles, 특히 심방귀) 3. 대정맥굴 (sinus of venae cavae, 매끈한 부분) 4. 분계능선 (crista terminalis) 5. 아래대정맥구멍 (opening of the inferior vena cava) — 아래대정맥판막(valve of the IVC)을 동반한다. 4번은 **굴정맥굴에서 유래한 매끈부(3)와 원시심방에서 유래한 거친부(2)의 경계**이며, 그 위끝에 **굴심방결절**이 있다.",
+   "explanation": "오른심방은 발생 기원이 다른 두 부분이 합쳐진 방이다. 뒤쪽 매끈한 대정맥굴은 굴정맥굴에서, 앞쪽 빗살근이 있는 거친 부분은 원시심방에서 유래하며 그 경계가 속면의 분계능선(겉면의 분계고랑)이다. 굴심방결절이 위대정맥과 오른심방이 만나는 곳, 곧 분계고랑의 위끝에 있으므로 실습에서는 이 고랑을 따라가 결절 자리를 지목한다. 위대정맥구멍에는 판막이 없고 아래대정맥구멍에는 태생기에 혈류를 타원구멍으로 보내던 아래대정맥판막이 흔적으로 남는다. 심장정맥굴구멍에도 판막(Thebesian valve)이 있으며, 그 구멍과 삼첨판 사이막첨·토다힘줄이 이루는 코흐삼각 안에 방실결절이 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장)",
+     "page": null,
+     "section": "B039 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0176",
+   "style": "spotter",
+   "session": 5,
+   "region": "thorax",
+   "subregion": "heart",
+   "examPhase": "tagging-1",
+   "stem": "왼심실을 열어 방실판막을 보여 주는 실사 사진이다. 번호핀 1–5가 가리키는 구조의 이름을 답하고, 이 판막이 삼첨판과 다른 점을 첨판 수로 답하시오.",
+   "choices": null,
+   "answer": "1. 힘줄끈 (chordae tendineae) 2. 왼방실판막 = 승모판막 (left atrioventricular valve, mitral valve) 3. 왼방실구멍 (left atrioventricular orifice) 4. 뒤첨판 (posterior cusp) 5. 앞첨판 (anterior cusp). 오른방실판막(삼첨판)이 **3첨**인 데 비해 이 판막은 **2첨**이다.",
+   "explanation": "왼방실판막은 첨판이 둘뿐이어서 이첨판, 주교의 관(miter)을 닮았다 하여 승모판이라 부른다. 앞첨판은 크고 대동맥구멍과 맞닿아 있어 왼심실 유입로와 유출로를 나누는 칸막이 역할을 하고, 뒤첨판은 작고 넓게 퍼진다. 두 첨판의 자유모서리에서 힘줄끈이 나와 앞·뒤 유두근에 붙는데, 각 유두근이 **양쪽 첨판 모두에** 힘줄끈을 보내므로 유두근 하나가 끊어져도 판막 전체가 한꺼번에 뒤집히지 않는다. 심근경색으로 유두근이 파열되면 급성 승모판폐쇄부전이 생긴다. 왼심실 벽은 오른심실보다 약 3배 두껍고 육주도 굵다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장)",
+     "page": null,
+     "section": "C007 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -4327,7 +4511,7 @@ window.MEDKOS_ANATOMY = {
    "id": "anatomy-2026-0150",
    "session": 5,
    "title": "5회차 서브노트 — 심장 · 관자아래우묵",
-   "subtitle": "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리와 계보 트리 · 관계형 12문항 합본",
+   "subtitle": "가슴막·세로칸·심장막·심장 + 관자아래우묵 표 정리 · 계보 트리 3장 · 실사 태깅 8문항 합본",
    "sections": [
     "1. 가슴막과 가슴막안",
     "2. 세로칸",
@@ -4402,7 +4586,7 @@ window.MEDKOS_ANATOMY = {
      "note": "굴심방결절가지도 약 60%가 오른쪽 기원"
     }
    ],
-   "scanCount": 0
+   "scanCount": 8
   },
   {
    "id": "anatomy-2026-0067",

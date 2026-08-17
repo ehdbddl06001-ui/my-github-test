@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1485,
+  "total": 1493,
   "byType": {
    "usmle": 96,
-   "anatomy": 345,
+   "anatomy": 353,
    "paper": 440,
    "kmle": 587,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 345,
+   "Anatomy": 353,
    "Cardiology": 128,
    "Nephrology": 115,
    "Infectious Disease": 91,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 816,
+   "high": 824,
    "medium": 620,
    "low": 49
   },
-  "tagCount": 2303
+  "tagCount": 2304
  },
  "docs": [
   {
@@ -193,6 +193,174 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-18.md",
    "snippet": "오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-18 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0176",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "왼심실 실사 spotter — 승모판막과 두 첨판 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장) — C007 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0176.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 왼심실 실사 spotter — 승모판막과 두 첨판 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장) — C007 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0175",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "오른심방 속구조 실사 spotter — 매끈부와 거친부 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B039 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0175.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 오른심방 속구조 실사 spotter — 매끈부와 거친부 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B039 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0174",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장동맥 실사 spotter — 앞면의 가지 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B026 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0174.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장동맥 실사 spotter — 앞면의 가지 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B026 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0173",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장 표면 실사 spotter — 두 고랑과 네 방 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B020 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0173.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장 표면 실사 spotter — 두 고랑과 네 방 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B020 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0172",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장막안 실사 spotter — 가로굴과 빗굴 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B015 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0172.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장막안 실사 spotter — 가로굴과 빗굴 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B015 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0171",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "위세로칸 실사 spotter — 대동맥활의 가지와 두 신경 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B011 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0171.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위세로칸 실사 spotter — 대동맥활의 가지와 두 신경 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B011 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0170",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "가슴막 구분 실사 spotter — 가슴막안과 두 오목 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A044 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0170.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴막 구분 실사 spotter — 가슴막안과 두 오목 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A044 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0169",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래우묵 실사 spotter — 날개근과 V3 가지 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A019 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0169.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자아래우묵 실사 spotter — 날개근과 V3 가지 (필기 제거·복원본) 5회차 · 머리 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A019 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0162",
