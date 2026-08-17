@@ -2,6 +2,76 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0444",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation--developed with the special contribution of the European Heart Rhythm Association",
+  "authors": [
+   "Camm A John",
+   "Lip Gregory Y H",
+   "De Caterina Raffaele",
+   "Savelieva Irene",
+   "Atar Dan",
+   "Hohnloser Stefan H",
+   "Hindricks Gerhard",
+   "Kirchhof Paulus",
+   "et al."
+  ],
+  "journal": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+  "doi": "",
+  "pmid": "22923145",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/22923145/",
+  "pubdate": "2012-10",
+  "date": "2026-08-17",
+  "tags": [
+   "landmark",
+   "highly-cited",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": true,
+  "citations": 1138,
+  "rcr": 40.38,
+  "nihPercentile": 99.8,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1138회 · RCR 40.38 (분야평균=1.0) · NIH 상위 백분위 99.8.\n(인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.)",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0443",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Guidelines for the diagnosis and treatment of chronic heart failure",
+  "authors": [
+   "Remme W J",
+   "Swedberg K",
+   "Task Force for the Diagnosis and Treatment of Chronic Heart Failure, European Society of Cardiology"
+  ],
+  "journal": "European heart journal",
+  "doi": "",
+  "pmid": "11492984",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/11492984/",
+  "pubdate": "2001-09",
+  "date": "2026-08-17",
+  "tags": [
+   "landmark",
+   "highly-cited",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": true,
+  "citations": 1150,
+  "rcr": 32.55,
+  "nihPercentile": 99.7,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1150회 · RCR 32.55 (분야평균=1.0) · NIH 상위 백분위 99.7.\n(인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.)",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0442",
   "topic": "Laboratory Medicine",
   "subtopic": "",
