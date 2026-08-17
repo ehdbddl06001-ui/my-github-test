@@ -16,13 +16,22 @@ on:
     inputs:
       max:
         description: "주제당 저장할 상위 편수"
-        default: "2"
+        default: "12"
       min_citations:
         description: "최소 인용수 하한선"
-        default: "50"
+        default: "1000"
+      max_run:
+        description: "이번 실행에서 저장할 상한(균형 예산)"
+        default: "60"
       since_year:
         description: "이 연도 이후만(비우면 제한 없음)"
         default: ""
+      dry_run:
+        description: "true 면 저장·커밋 없이 랭킹만 (진단용)"
+        default: "false"
+      debug_icite:
+        description: "true 면 iCite 원본 응답을 찍는다(형식 변경 진단)"
+        default: "false"
 
 permissions:
   contents: write
@@ -44,16 +53,29 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
+      - name: Regression tests (인용지표 위장 실패 방지)
+        run: python pipelines/test_landmark.py
+
       - name: Rank landmark papers (iCite) → Markdown cards
         run: |
-          SINCE=""
+          OPTS=""
           if [ -n "${{ github.event.inputs.since_year }}" ]; then
-            SINCE="--since-year ${{ github.event.inputs.since_year }}"
+            OPTS="$OPTS --since-year ${{ github.event.inputs.since_year }}"
           fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            OPTS="$OPTS --dry-run"
+          fi
+          if [ "${{ github.event.inputs.debug_icite }}" = "true" ]; then
+            OPTS="$OPTS --debug-icite"
+          fi
+          # --target-ratio 0.5: '논문 탭의 절반은 랜드마크'를 저장된 코퍼스에서 역산한다.
+          # 최신 스크랩이 매일 늘어나므로 고정 편수로는 비율이 안 맞는다(자기 균형).
           python pipelines/scrape_landmark_papers.py \
-            --max "${{ github.event.inputs.max || '2' }}" \
-            --min-citations "${{ github.event.inputs.min_citations || '50' }}" \
-            $SINCE
+            --max "${{ github.event.inputs.max || '12' }}" \
+            --min-citations "${{ github.event.inputs.min_citations || '1000' }}" \
+            --target-ratio 0.5 \
+            --max-run "${{ github.event.inputs.max_run || '60' }}" \
+            $OPTS
 
       - name: Validate frontmatter
         run: python pipelines/indexer.py --check
@@ -77,6 +99,7 @@ jobs:
           fi
 
       - name: Backup content to Google Drive
+        if: github.event.inputs.dry_run != 'true'
         env:
           RCLONE_CONF_BASE64: ${{ secrets.RCLONE_CONF_BASE64 }}
         run: |

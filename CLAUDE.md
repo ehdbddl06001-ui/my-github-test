@@ -93,6 +93,14 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
 - `/gen-kmle` `/gen-paper` `/gen-card` : 타입별 생성
 - `/scrape-papers` : PubMed 최신 논문 스크랩(recency, 매일)
 - `/landmark-papers` : 파트별 고인용 '꼭 봐야 하는' 논문 정리(impact, 주간). iCite 인용랭킹.
+  · **논문 탭은 최신:랜드마크 = 50:50 을 지향한다.** 최신은 매일, 랜드마크는 주간이라
+    편수를 고정하면 비율이 영영 안 맞는다 → `--target-ratio 0.5` 가 저장된 코퍼스에서
+    **부족분을 역산**해 그만큼만 채운다(`--max-run` 은 한 실행 상한).
+  · 인용지표(iCite)를 못 읽으면 `citations` 를 0 으로 눌러쓰지 말 것. 0 으로 채우면
+    장애가 "고인용 후보 없음"이라는 정상 메시지로 위장돼 **5주간 랜드마크 0편**이었다
+    (2026-07~08 실측). 지금은 지표 0건·전 주제 실패 시 `exit 1` 로 CI 가 빨개진다.
+    회귀: `python pipelines/test_landmark.py`.
+  · PMID 목록은 150개씩 배치로 요청한다(한 URL 에 몰면 `HTTP 414`).
 - `/gen-ailab` : 의료 AI·코딩 학습 카드(공개 프로젝트 분석·도식·지시어 해설) 생성
 - `/ai-weekly` : 이번 주 실습 주제(`datasets.py`)를 받아 카드·Colab 노트북 연결(주간)
 - `/ai-mentor` : 학습(content/ailab·notebooks) 검토 → 심화학습·코드보완·새기능 제안을
