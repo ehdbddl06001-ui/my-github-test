@@ -23,6 +23,9 @@ on:
       max_run:
         description: "이번 실행에서 저장할 상한(균형 예산)"
         default: "60"
+      pool:
+        description: "주제당 후보 풀 크기(크게 잡을수록 하한선을 안 낮추고도 더 많이 확보)"
+        default: "400"
       since_year:
         description: "이 연도 이후만(비우면 제한 없음)"
         default: ""
@@ -73,6 +76,7 @@ jobs:
           python pipelines/scrape_landmark_papers.py \
             --max "${{ github.event.inputs.max || '12' }}" \
             --min-citations "${{ github.event.inputs.min_citations || '1000' }}" \
+            --pool "${{ github.event.inputs.pool || '400' }}" \
             --target-ratio 0.5 \
             --max-run "${{ github.event.inputs.max_run || '60' }}" \
             $OPTS
