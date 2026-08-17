@@ -66,18 +66,6 @@ window.MEDKOS_DIAGRAMS = {
    "bytes": 8672
   },
   {
-   "file": "tree-s07-bundle-quiz.svg",
-   "base": "tree-s07-bundle",
-   "variant": "quiz",
-   "kind": "tree-bundle",
-   "kindLabel": "신경혈관다발",
-   "session": 7,
-   "unit": "7회차 · 목·다리",
-   "title": "함께 지나는 것",
-   "date": "2026-08-17",
-   "bytes": 7542
-  },
-  {
    "file": "tree-s01-vessel-labeled.svg",
    "base": "tree-s01-vessel",
    "variant": "labeled",
@@ -520,6 +508,18 @@ window.MEDKOS_DIAGRAMS = {
    "title": "목의 삼각",
    "date": "2026-08-16",
    "bytes": 11813
+  },
+  {
+   "file": "tree-s07-bundle-quiz.svg",
+   "base": "tree-s07-bundle",
+   "variant": "quiz",
+   "kind": "tree-bundle",
+   "kindLabel": "신경혈관다발",
+   "session": 7,
+   "unit": "7회차 · 목·다리",
+   "title": "함께 지나는 것",
+   "date": "2026-08-16",
+   "bytes": 7542
   },
   {
    "file": "diag-posterior-cutaneous-nerves-labeled.svg",
