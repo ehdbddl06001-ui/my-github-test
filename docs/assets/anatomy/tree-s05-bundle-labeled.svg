@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1408" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 5회차 §허파뿌리 · 심장막 · 관자아래우묵 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="1408" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> neurovascular bundles &amp; spaces</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">5회차 · 배열 순서가 그대로 태깅 문제가 되는 세 자리</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#e0645f">■ 동맥</tspan>  <tspan fill="#b49ae0">■ 정맥</tspan>  <tspan fill="#9cc3ff">■ 신경</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 602,174 H 615 V 120 H 628" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 602,174 H 615 V 178 H 628" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 602,174 H 615 V 236 H 628" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,336 H 419 V 174 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,336 H 419 V 300 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,336 H 419 V 370 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,336 H 419 V 440 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,336 H 419 V 504 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,649 H 419 V 578 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,649 H 419 V 659 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,649 H 419 V 728 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,938 H 419 V 798 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,938 H 419 V 868 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,938 H 419 V 937 H 432" fill="none" stroke="#7a3a38" stroke-width="1.6"/>
+  <path d="M 406,938 H 419 V 1012 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,938 H 419 V 1087 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1230 H 419 V 1162 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1230 H 419 V 1237 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 406,1230 H 419 V 1306 H 432" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,767 H 219 V 336 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,767 H 219 V 649 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,767 H 219 V 938 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,767 H 219 V 1230 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="748" width="180" height="38" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="768" fill="#7fd4a8" font-size="12" class="kr">세 개의 자리</text>
+  <rect x="232" y="309" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="329" fill="#7fd4a8" font-size="12" class="kr">허파뿌리 ★</text>
+  <text x="242" y="344" fill="#5fae87" font-size="9">root of the lung</text>
+  <text x="242" y="355" fill="#6f8299" font-size="9">앞→뒤 공통: 정맥–동맥–기관지</text>
+  <rect x="232" y="622" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="642" fill="#7fd4a8" font-size="12" class="kr">심장막굴 ★</text>
+  <text x="242" y="656" fill="#5fae87" font-size="9">pericardial sinuses</text>
+  <text x="242" y="668" fill="#6f8299" font-size="9">장막심장막이 접혀 생긴 막다른 공간</text>
+  <rect x="232" y="910" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="930" fill="#7fd4a8" font-size="12" class="kr">관자아래우묵 ★</text>
+  <text x="242" y="946" fill="#5fae87" font-size="9">infratemporal fossa</text>
+  <text x="242" y="956" fill="#6f8299" font-size="9">아래턱뼈가지 <tspan fill="#e6edf3" font-weight="700">안쪽</tspan> · 얕은→깊은</text>
+  <rect x="232" y="1202" width="174" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="1222" fill="#7fd4a8" font-size="12" class="kr">갈비가로막오목 ★</text>
+  <text x="242" y="1237" fill="#5fae87" font-size="9">costodiaphragmatic recess</text>
+  <text x="242" y="1248" fill="#6f8299" font-size="9">가슴막안의 <tspan fill="#e6edf3" font-weight="700">가장 깊은 곳</tspan></text>
+  <rect x="432" y="146" width="170" height="55" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="442" y="166" fill="#7fd4a8" font-size="12" class="kr">앞→뒤 순서 ★</text>
+  <text x="442" y="181" fill="#5fae87" font-size="9">ant. → post.</text>
+  <text x="442" y="192" fill="#6f8299" font-size="9">좌우 공통</text>
+  <rect x="432" y="273" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="293" fill="#7fd4a8" font-size="12" class="kr">위→아래(오른쪽) ★</text>
+  <text x="442" y="308" fill="#5fae87" font-size="9">right, sup. → inf.</text>
+  <text x="442" y="319" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">기관지가 동맥보다 위</tspan>(eparterial)</text>
+  <rect x="432" y="337" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="357" fill="#7fd4a8" font-size="12" class="kr">위→아래(왼쪽) ★</text>
+  <text x="442" y="372" fill="#5fae87" font-size="9">left, sup. → inf.</text>
+  <text x="442" y="383" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">동맥이 가장 위</tspan> — 대동맥활을</text>
+  <text x="442" y="394" fill="#6f8299" font-size="9">넘어야 해서</text>
+  <rect x="432" y="412" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="432" fill="#9cc3ff" font-size="12" class="kr">가로막신경 ★</text>
+  <text x="442" y="447" fill="#7f9cc4" font-size="9">phrenic n.</text>
+  <text x="442" y="458" fill="#6f8299" font-size="9">뿌리 <tspan fill="#e6edf3" font-weight="700">앞</tspan></text>
+  <rect x="432" y="476" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="496" fill="#9cc3ff" font-size="12" class="kr">미주신경 ★</text>
+  <text x="442" y="511" fill="#7f9cc4" font-size="9">vagus n.</text>
+  <text x="442" y="522" fill="#6f8299" font-size="9">뿌리 <tspan fill="#e6edf3" font-weight="700">뒤</tspan></text>
+  <rect x="432" y="540" width="170" height="77" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="560" fill="#7fd4a8" font-size="12" class="kr">가로굴 ★</text>
+  <text x="442" y="575" fill="#5fae87" font-size="9">transverse sinus</text>
+  <text x="442" y="586" fill="#6f8299" font-size="9">앞=대동맥+허파동맥줄기 /</text>
+  <text x="442" y="597" fill="#6f8299" font-size="9">뒤=위대정맥+왼심방 · 심장수술</text>
+  <text x="442" y="608" fill="#6f8299" font-size="9">교차겸자 자리</text>
+  <rect x="432" y="626" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="646" fill="#7fd4a8" font-size="12" class="kr">빗굴 ★</text>
+  <text x="442" y="661" fill="#5fae87" font-size="9">oblique sinus</text>
+  <text x="442" y="672" fill="#6f8299" font-size="9">왼심방 <tspan fill="#e6edf3" font-weight="700">뒤</tspan> · 허파정맥에 둘러싸인</text>
+  <text x="442" y="683" fill="#6f8299" font-size="9">막다른 골목</text>
+  <rect x="432" y="701" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="721" fill="#9cc3ff" font-size="12" class="kr">심장막 감각 ★</text>
+  <text x="442" y="736" fill="#7f9cc4" font-size="9">pericardial sensory</text>
+  <text x="442" y="747" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">가로막신경</tspan>(C3–C5) → 어깨 연관통</text>
+  <rect x="432" y="765" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="785" fill="#7fd4a8" font-size="12" class="kr">① 가쪽날개근 ★</text>
+  <text x="442" y="800" fill="#5fae87" font-size="9">lateral pterygoid m.</text>
+  <text x="442" y="811" fill="#6f8299" font-size="9">두 갈래 사이로 위턱동맥이 지난다</text>
+  <text x="442" y="822" fill="#6f8299" font-size="9">· <tspan fill="#e6edf3" font-weight="700">턱을 여는</tspan> 유일한 씹기근육</text>
+  <rect x="432" y="840" width="170" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="860" fill="#b49ae0" font-size="12" class="kr">② 날개정맥얼기 ★</text>
+  <text x="442" y="875" fill="#8f79b8" font-size="9">pterygoid venous plexus</text>
+  <text x="442" y="886" fill="#6f8299" font-size="9">근육 주위를 채운다</text>
+  <rect x="432" y="904" width="170" height="66" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="442" y="924" fill="#e0645f" font-size="12" class="kr">③ 위턱동맥 ★</text>
+  <text x="442" y="939" fill="#c98a86" font-size="9">maxillary a.</text>
+  <text x="442" y="950" fill="#6f8299" font-size="9">가쪽날개근의 얕은쪽/깊은쪽을</text>
+  <text x="442" y="961" fill="#6f8299" font-size="9">지난다(변이)</text>
+  <rect x="432" y="979" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="999" fill="#9cc3ff" font-size="12" class="kr">④ 아래이틀신경·혀신경 ★</text>
+  <text x="442" y="1014" fill="#7f9cc4" font-size="9">inf. alveolar &amp; lingual nn.</text>
+  <text x="442" y="1025" fill="#6f8299" font-size="9">안쪽날개근 앞 · 혀신경이 <tspan fill="#e6edf3" font-weight="700">더</tspan></text>
+  <text x="442" y="1036" fill="#6f8299" font-size="9">앞·안쪽</text>
+  <rect x="432" y="1054" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1074" fill="#7fd4a8" font-size="12" class="kr">⑤ 안쪽날개근 ★</text>
+  <text x="442" y="1089" fill="#5fae87" font-size="9">medial pterygoid m.</text>
+  <text x="442" y="1100" fill="#6f8299" font-size="9">가장 깊다 · 깨물근과</text>
+  <text x="442" y="1111" fill="#6f8299" font-size="9">아래턱뼈가지를 샌드위치처럼 낀다</text>
+  <rect x="432" y="1129" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1149" fill="#7fd4a8" font-size="12" class="kr">가슴막 아래경계 8·10·12 ★</text>
+  <text x="442" y="1164" fill="#5fae87" font-size="9">pleural reflection</text>
+  <text x="442" y="1175" fill="#6f8299" font-size="9">빗장중간선 8 · 중간겨드랑선 10 ·</text>
+  <text x="442" y="1186" fill="#6f8299" font-size="9">척주옆선 12번 갈비</text>
+  <rect x="432" y="1204" width="170" height="66" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1224" fill="#7fd4a8" font-size="12" class="kr">허파 아래경계 6·8·10 ★</text>
+  <text x="442" y="1239" fill="#5fae87" font-size="9">inferior border of lung</text>
+  <text x="442" y="1250" fill="#6f8299" font-size="9">가슴막보다 항상 <tspan fill="#e6edf3" font-weight="700">두 갈비 위</tspan> — 그</text>
+  <text x="442" y="1261" fill="#6f8299" font-size="9">차이가 오목이다</text>
+  <rect x="432" y="1279" width="170" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="442" y="1299" fill="#7fd4a8" font-size="12" class="kr">갈비뼈 위모서리로 ★</text>
+  <text x="442" y="1314" fill="#5fae87" font-size="9">above the rib</text>
+  <text x="442" y="1325" fill="#6f8299" font-size="9">갈비사이고랑의 VAN을 피한다</text>
+  <rect x="628" y="92" width="160" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="638" y="112" fill="#b49ae0" font-size="12" class="kr">① 허파정맥 ★</text>
+  <text x="638" y="127" fill="#8f79b8" font-size="9">pulmonary vv.</text>
+  <text x="638" y="138" fill="#6f8299" font-size="9">가장 앞·아래</text>
+  <rect x="628" y="156" width="160" height="44" rx="7" fill="#40201f" stroke="#e0645f" stroke-width="2.2"/>
+  <text x="638" y="176" fill="#e0645f" font-size="12" class="kr">② 허파동맥</text>
+  <text x="638" y="191" fill="#c98a86" font-size="9">pulmonary a.</text>
+  <rect x="628" y="209" width="160" height="55" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="2.2"/>
+  <text x="638" y="229" fill="#7fd4a8" font-size="12" class="kr">③ 기관지 ★</text>
+  <text x="638" y="244" fill="#5fae87" font-size="9">main bronchus</text>
+  <text x="638" y="255" fill="#6f8299" font-size="9">가장 뒤</text>
+  <line x1="26" y1="1344" x2="814" y2="1344" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1356" fill="#93a4b7" font-size="10.5">허파뿌리 앞→뒤는 좌우 공통 <tspan fill="#e6edf3" font-weight="700">정–동–기(VAB)</tspan>, 위→아래만 좌우가 다르다.</text>
+  <text x="26" y="1374" fill="#93a4b7" font-size="10.5">심장막가로굴 앞벽=대동맥+허파동맥줄기, 뒤벽=위대정맥+왼심방 — 손가락이 통과한다.</text>
+</svg>
