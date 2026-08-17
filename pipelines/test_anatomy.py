@@ -404,6 +404,28 @@ def test_subnote_builder_selftest() -> None:
     assert r.returncode == 0, f"anatomy_subnote selftest 실패: {r.stdout}{r.stderr}"
 
 
+def test_publish_lane_guard() -> None:
+    """publish.py: 콘텐츠만 main 자동 푸시, 코드 변경은 거부(2026-08-17).
+
+    루틴이 매일 만드는 것(content/·docs/)은 사람 개입 없이 main 에 올라가야 하고,
+    파이프라인·스킬·규칙 변경은 반드시 사람이 보게 막아야 한다.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "publish.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"publish selftest 실패: {r.stdout}{r.stderr}"
+    sys.path.insert(0, str(Path(__file__).parent))
+    from publish import classify
+    # 해부 루틴의 하루치 산출물은 전부 콘텐츠 레인이어야 한다
+    daily = ["content/anatomy/daily/2026-08-20.md",
+             "content/anatomy/questions/tagging-1/anatomy-2026-0200.md",
+             "docs/anatomy-data.js", "docs/search-index.js"]
+    assert classify(daily)[1] == [], "일일 산출물이 코드 레인으로 분류됨"
+    # 파이프라인·스킬은 반드시 코드 레인
+    assert classify(["pipelines/anatomy_daily.py"])[0] == []
+    assert classify([".claude/skills/anatomy-daily/SKILL.md"])[0] == []
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":
