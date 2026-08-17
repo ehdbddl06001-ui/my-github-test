@@ -267,3 +267,15 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
   .co-head { grid-template-columns: 70px 1fr; }
   .co-date, .co-meta { grid-column: 2; }
 }
+
+/* 회차별 학습 — 문항 카드(도해 우선) */
+.co-q { display: grid; grid-template-columns: 300px 1fr; gap: 14px; align-items: start;
+        margin: 14px 0; }
+.co-q:not(:has(.co-fig)) { grid-template-columns: 1fr; }
+.co-fig { display: block; border: 1px solid var(--line, #2a3550); border-radius: 8px;
+          overflow: hidden; background: #0d1424; }
+.co-fig img { display: block; width: 100%; height: auto; }
+.co-pdfonly { margin-top: 14px; }
+.co-pdfonly > summary { cursor: pointer; font-size: .88em; opacity: .78; padding: 6px 0; }
+.co-pdfonly[open] > summary { opacity: 1; }
+@media (max-width: 720px) { .co-q { grid-template-columns: 1fr; } }

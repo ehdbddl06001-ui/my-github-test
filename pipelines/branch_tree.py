@@ -149,6 +149,21 @@ def _pal(node: dict, default: str) -> dict:
     return PALETTE.get(node.get("kind", default), PALETTE["nerve"])
 
 
+def answer_key(spec: dict) -> list[str]:
+    """퀴즈판 번호핀 1..N 에 대응하는 이름 목록. render(quiz=True) 와 **같은 순서**다.
+
+    번호는 `sorted(boxes, key=(depth, y))` 로 결정되므로 사람이 세면 안 되고
+    여기서 받아 써야 한다(문항 생성기가 이 함수를 쓴다).
+    """
+    return [f"{i}. {n}" for i, n in enumerate(_key_names(spec), 1)]
+
+
+def _key_names(spec: dict) -> list[str]:
+    acc: list[dict] = []
+    layout(spec["root"], 0, HEAD_H, acc)
+    return [b["node"].get("kr", "") for b in sorted(acc, key=lambda b: (b["depth"], b["y"]))]
+
+
 def render(spec: dict, quiz: bool = False) -> str:
     kind = spec.get("kind", "nerve")
     pal = PALETTE.get(kind, PALETTE["nerve"])
@@ -308,10 +323,16 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--key"); ap.add_argument("--out")
+    ap.add_argument("--answers", help="퀴즈판 번호→이름 정답표를 출력할 스펙 키")
     ap.add_argument("--selftest", action="store_true")
     a = ap.parse_args()
     if a.selftest:
         return selftest()
+    if a.answers:
+        from branch_specs import SPECS as _S
+        for ln in answer_key(_S[a.answers]):
+            print(ln)
+        return 0
     from branch_specs import SPECS
     if a.all:
         made = set()
