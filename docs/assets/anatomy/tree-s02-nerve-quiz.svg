@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 889" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="등·볼기의 신경 계보 — 분지 계보 구조도 퀴즈판">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 2회차 §등 얕은층~깊은층 · 볼기부위 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="840" height="889" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">등·볼기의 신경 계보 — 분지 퀴즈판<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> nerves of the back &amp; gluteal region</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">2회차 · 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10">번호를 보고 이름을 답하시오 · 정답은 대응 문항 카드 frontmatter</text>
+  <path d="M 406,144 H 419 V 120 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,144 H 419 V 178 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,231 H 615 V 228 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,284 H 615 V 284 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,338 H 615 V 342 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,282 H 419 V 231 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,282 H 419 V 284 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,282 H 419 V 338 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,466 H 419 V 406 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,466 H 419 V 470 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,466 H 419 V 534 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,598 H 615 V 600 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,666 H 615 V 658 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,751 H 615 V 725 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,751 H 615 V 786 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,675 H 419 V 598 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,675 H 419 V 666 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,675 H 419 V 751 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,415 H 219 V 144 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,415 H 219 V 282 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,415 H 219 V 466 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,415 H 219 V 675 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <rect x="26" y="396" width="180" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="1.3"/>
+  <circle cx="116" cy="415" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="116" y="420" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">1</text>
+  <rect x="232" y="117" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="144" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="149" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">2</text>
+  <rect x="232" y="255" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="282" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="287" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">3</text>
+  <rect x="232" y="438" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="466" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="471" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">4</text>
+  <rect x="232" y="648" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="319" cy="675" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="319" y="680" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">5</text>
+  <rect x="432" y="92" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="120" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="124" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">6</text>
+  <rect x="432" y="156" width="170" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="178" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="183" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">7</text>
+  <rect x="432" y="209" width="170" height="44" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="231" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="236" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">8</text>
+  <rect x="432" y="262" width="170" height="44" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="284" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="289" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">9</text>
+  <rect x="432" y="316" width="170" height="44" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="338" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="343" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">10</text>
+  <rect x="432" y="379" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="406" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="412" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">11</text>
+  <rect x="432" y="443" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="470" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="476" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">12</text>
+  <rect x="432" y="507" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="517" cy="534" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="540" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">13</text>
+  <rect x="432" y="571" width="170" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="598" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="604" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">14</text>
+  <rect x="432" y="639" width="170" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="666" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="672" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">15</text>
+  <rect x="432" y="723" width="170" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <circle cx="517" cy="751" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="517" y="756" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">16</text>
+  <rect x="628" y="209" width="160" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="228" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="233" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">17</text>
+  <rect x="628" y="262" width="160" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="284" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="289" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">18</text>
+  <rect x="628" y="315" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="342" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="348" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">19</text>
+  <rect x="628" y="571" width="160" height="59" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="600" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="606" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">20</text>
+  <rect x="628" y="639" width="160" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="658" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="663" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">21</text>
+  <rect x="628" y="703" width="160" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="725" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="730" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">22</text>
+  <rect x="628" y="756" width="160" height="59" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <circle cx="708" cy="786" r="14" fill="#eab308" stroke="#0e1826" stroke-width="2"/>
+  <text x="708" y="790" fill="#241a05" font-size="15" font-weight="700" text-anchor="middle" class="pin">23</text>
+  <line x1="26" y1="825" x2="814" y2="825" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="837" fill="#93a4b7" font-size="10.5">고유등근육만 뒤가지 지배 — 등세모근·넓은등근·마름근은 이주근육이라 예외.</text>
+  <text x="26" y="855" fill="#93a4b7" font-size="10.5">볼기: 큰볼기근=아래볼기신경 / 중간·작은볼기근=위볼기신경 (크기와 이름이 반대).</text>
+</svg>

@@ -70,23 +70,23 @@
   <!-- ===== 번호핀 ===== -->
   <!-- ① 두덩곧창자근 -->
   <circle cx="566" cy="176" r="14" fill="#eab308"/>
-  <text x="566" y="181" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" stroke="none">1</text>
+  <text x="566" y="181" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" class="pin">1</text>
   <path d="M 552 180 L 460 218" stroke="#eab308" stroke-width="1.5"/>
   <!-- ② 비뇨생식구멍 -->
   <circle cx="336" cy="110" r="14" fill="#eab308"/>
-  <text x="336" y="115" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" stroke="none">2</text>
+  <text x="336" y="115" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" class="pin">2</text>
   <path d="M 348 118 L 420 168" stroke="#eab308" stroke-width="1.5"/>
   <!-- ③ 항문올림근힘줄활(노란 점선) -->
   <circle cx="152" cy="330" r="14" fill="#eab308"/>
-  <text x="152" y="335" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" stroke="none">3</text>
+  <text x="152" y="335" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" class="pin">3</text>
   <path d="M 165 324 L 246 300" stroke="#eab308" stroke-width="1.5"/>
   <!-- ④ 엉덩꼬리근 -->
   <circle cx="688" cy="356" r="14" fill="#eab308"/>
-  <text x="688" y="361" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" stroke="none">4</text>
+  <text x="688" y="361" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" class="pin">4</text>
   <path d="M 674 360 L 556 388" stroke="#eab308" stroke-width="1.5"/>
   <!-- ⑤ 꼬리근 -->
   <circle cx="700" cy="444" r="14" fill="#eab308"/>
-  <text x="700" y="449" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" stroke="none">5</text>
+  <text x="700" y="449" fill="#0e1826" font-size="15" font-weight="800" text-anchor="middle" class="pin">5</text>
   <path d="M 688 452 L 606 470" stroke="#eab308" stroke-width="1.5"/>
 
   <!-- 힌트 -->

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="뒤통수밑삼각 — 경계 근육 3개와 내용물(척추동맥·뒤통수밑신경), 뒤가지 신경 3형제를 그린 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn). 뒤통수밑부위를 뒤에서 본 구도(머리반가시근 젖힘).
+       근거: 3회차(0825) 실습영상 §뒤통수밑삼각 + 3회차 종합정리(anatomy-2026-0022).
+       핵심: 경계 3근육(큰뒤머리곧은근·위머리빗근·아래머리빗근) / 내용물 2개
+       (척추동맥·뒤통수밑신경) / C1 운동·C2 감각의 대비. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">뒤통수밑삼각 — 경계와 내용물
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">suboccipital triangle</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과서식 구도) · 근거: 3회차 실습영상 §뒤통수밑삼각 · 뒤에서 본 모습(머리반가시근 젖힘)</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">신경 <tspan fill="#9cc3ff">파랑</tspan> / 동맥 <tspan fill="#e0645f">빨강</tspan> · ★ = tagging 답 후보 · 왼쪽 절반만 표시(오른쪽은 대칭)</text>
+
+  <!-- ===== 뼈 ===== -->
+  <!-- 뒤통수뼈 -->
+  <path d="M 120,110 C 240,88 420,88 540,110 C 556,150 556,196 540,232
+           C 420,254 240,254 120,232 C 104,196 104,150 120,110 Z"
+        fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="150" y="140" fill="#8fa3b8" font-size="12" class="kr">뒤통수뼈 occipital bone</text>
+  <!-- 위·아래목덜미선 -->
+  <path d="M 132,178 C 250,164 420,164 532,178" fill="none" stroke="#4a6076" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="150" y="172" fill="#7f93a8" font-size="10">위목덜미선 superior nuchal line</text>
+  <path d="M 138,220 C 252,208 418,208 528,220" fill="none" stroke="#5b7690" stroke-width="2.5"/>
+  <text x="150" y="214" fill="#8fa3b8" font-size="10" class="kr">아래목덜미선 <tspan font-weight="400" fill="#5d6f83">inferior nuchal line</tspan></text>
+
+  <!-- 고리뼈(C1) 뒤활 + 가로돌기 -->
+  <path d="M 168,330 C 260,306 400,306 492,330 L 486,356 C 398,334 262,334 174,356 Z"
+        fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <text x="300" y="300" fill="#8fa3b8" font-size="11" class="kr" text-anchor="middle">고리뼈(C1) 뒤활</text>
+  <text x="300" y="313" fill="#5d6f83" font-size="9" text-anchor="middle">posterior arch of atlas</text>
+  <ellipse cx="150" cy="352" rx="26" ry="16" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <text x="60" y="330" fill="#8fa3b8" font-size="10.5" class="kr">C1 가로돌기</text>
+  <text x="60" y="342" fill="#5d6f83" font-size="9">transverse process</text>
+  <path d="M 122,338 L 138,348" stroke="#4a5b6e" stroke-width="1"/>
+
+  <!-- 중쇠뼈(C2) 가시돌기 -->
+  <path d="M 300,470 L 342,470 L 352,506 L 290,506 Z" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 316,506 L 326,560" stroke="#3d5166" stroke-width="8"/>
+  <text x="360" y="492" fill="#8fa3b8" font-size="11" class="kr">중쇠뼈(C2) 가시돌기 ★</text>
+  <text x="360" y="505" fill="#5d6f83" font-size="9">spinous process of axis — 두 갈래로 갈라짐</text>
+
+  <!-- ===== 근육 (왼쪽 절반) ===== -->
+  <!-- 큰뒤머리곧은근: C2 가시돌기 → 아래목덜미선 가쪽 -->
+  <path d="M 296,472 L 316,466 L 246,226 L 214,232 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="1.8"/>
+  <!-- 작은뒤머리곧은근: C1 뒤결절 → 아래목덜미선 안쪽 (삼각 밖) -->
+  <path d="M 306,326 L 330,326 L 322,228 L 296,228 Z"
+        fill="#2c4763" stroke="#5b86ac" stroke-width="1.6" opacity="0.85"/>
+  <!-- 위머리빗근: C1 가로돌기 → 위·아래목덜미선 사이 -->
+  <path d="M 150,338 L 168,326 L 210,230 L 182,220 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="1.8"/>
+  <!-- 아래머리빗근: C2 가시돌기 → C1 가로돌기 -->
+  <path d="M 292,486 L 300,462 L 168,352 L 152,372 Z"
+        fill="#3d5f7f" stroke="#79a8d0" stroke-width="1.8"/>
+
+  <!-- ===== 삼각 영역 ===== -->
+  <path d="M 214,244 L 300,462 L 176,352 Z" fill="#4a3520" stroke="#c08a45"
+        stroke-width="2" opacity="0.92"/>
+  <text x="336" y="392" fill="#f0c78f" font-size="12" class="kr">뒤통수밑삼각 ★</text>
+  <text x="336" y="405" fill="#c99a5f" font-size="9">suboccipital triangle</text>
+  <path d="M 332,388 L 252,382" stroke="#8b6a2e" stroke-width="1"/>
+
+  <!-- ===== 내용물 ===== -->
+  <!-- 척추동맥: C1 가로돌기구멍 → 뒤활 위 고랑 → 큰구멍 -->
+  <path d="M 150,368 C 158,346 176,332 198,326 C 240,316 286,314 318,318"
+        fill="none" stroke="#e0645f" stroke-width="5" stroke-linecap="round"/>
+  <text x="352" y="316" fill="#e0645f" font-size="12" class="kr">척추동맥 ★</text>
+  <text x="352" y="329" fill="#c98a86" font-size="9">vertebral a. — C1 뒤활 위 고랑을 가로지름</text>
+  <!-- 뒤통수밑신경 C1 -->
+  <circle cx="238" cy="356" r="7" fill="#9cc3ff" stroke="#0e1826" stroke-width="1.5"/>
+  <path d="M 238,356 C 226,332 218,300 214,262" fill="none" stroke="#9cc3ff" stroke-width="2.6"/>
+  <path d="M 238,356 C 258,368 276,390 288,420" fill="none" stroke="#9cc3ff" stroke-width="2.6"/>
+  <text x="60" y="404" fill="#9cc3ff" font-size="12" class="kr">뒤통수밑신경 ★</text>
+  <text x="60" y="417" fill="#7f9cc4" font-size="9">suboccipital n. · C1 뒤가지 · 순수 운동</text>
+  <path d="M 176,398 L 230,362" stroke="#4a5b6e" stroke-width="1"/>
+
+  <!-- 큰뒤통수신경 C2: 아래머리빗근 아래모서리를 감아 올라감 -->
+  <path d="M 262,520 C 232,506 206,470 200,428 C 196,392 206,340 220,286
+           C 228,252 240,214 250,180"
+        fill="none" stroke="#c9a5f0" stroke-width="3.4"/>
+  <text x="300" y="126" fill="#c9a5f0" font-size="12" class="kr">큰뒤통수신경 ★</text>
+  <text x="300" y="139" fill="#a186c4" font-size="9">greater occipital n. · C2 뒤가지 · 감각</text>
+  <path d="M 298,132 L 254,176" stroke="#6b5590" stroke-width="1"/>
+  <text x="188" y="556" fill="#a186c4" font-size="10">아래머리빗근 <tspan class="kr" fill="#c9a5f0">아래모서리</tspan>를 감아 올라간다</text>
+  <path d="M 258,536 L 268,514" stroke="#6b5590" stroke-width="1"/>
+
+  <!-- ===== 근육 라벨 ===== -->
+  <text x="392" y="252" fill="#cfe4f7" font-size="11.5" class="kr">큰뒤머리곧은근</text>
+  <text x="392" y="264" fill="#8fb6d8" font-size="9">rectus capitis post. major — 위안쪽 경계</text>
+  <path d="M 388,254 L 262,300" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="392" y="212" fill="#9fc0dd" font-size="10.5" class="kr">작은뒤머리곧은근</text>
+  <text x="392" y="224" fill="#7f9cc4" font-size="9">minor — 삼각 <tspan class="kr">밖</tspan>(안쪽)</text>
+  <path d="M 388,216 L 334,264" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="34" y="252" fill="#cfe4f7" font-size="11.5" class="kr">위머리빗근</text>
+  <text x="34" y="264" fill="#8fb6d8" font-size="9">obliquus capitis superior</text>
+  <text x="34" y="276" fill="#8fb6d8" font-size="9">— 위가쪽 경계</text>
+  <path d="M 122,258 L 180,272" stroke="#4a5b6e" stroke-width="1"/>
+
+  <text x="34" y="470" fill="#cfe4f7" font-size="11.5" class="kr">아래머리빗근 ★</text>
+  <text x="34" y="482" fill="#8fb6d8" font-size="9">obliquus capitis inferior</text>
+  <text x="34" y="494" fill="#8fb6d8" font-size="9">— 아래가쪽 경계</text>
+  <path d="M 130,466 L 208,410" stroke="#4a5b6e" stroke-width="1"/>
+
+  <!-- ===== 오른쪽: 신경 3형제 ===== -->
+  <rect x="596" y="96" width="266" height="212" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="612" y="120" fill="#e6edf3" font-size="13" class="kr">뒤가지 신경 3형제</text>
+  <text x="612" y="136" fill="#6f8299" font-size="10">모두 척수신경 <tspan fill="#f0b56b">뒤가지</tspan> — 운동/감각을 구분</text>
+
+  <rect x="612" y="150" width="234" height="44" rx="6" fill="#16283c" stroke="#3d5166"/>
+  <text x="624" y="168" fill="#9cc3ff" font-size="11" class="kr">C1 뒤통수밑신경</text>
+  <text x="624" y="184" fill="#93a4b7" font-size="9.5">운동 — 뒤통수밑근육 4개 · 삼각 <tspan fill="#e6edf3">안</tspan></text>
+
+  <rect x="612" y="200" width="234" height="56" rx="6" fill="#221a33" stroke="#5b4a7a"/>
+  <text x="624" y="218" fill="#c9a5f0" font-size="11" class="kr">C2 큰뒤통수신경</text>
+  <text x="624" y="234" fill="#93a4b7" font-size="9.5">감각 — 뒤통수 피부(가장 굵은 피부가지)</text>
+  <text x="624" y="248" fill="#93a4b7" font-size="9.5">아래머리빗근 아래모서리를 감아 올라감</text>
+
+  <rect x="612" y="262" width="234" height="34" rx="6" fill="#16283c" stroke="#3d5166"/>
+  <text x="624" y="280" fill="#8fb6d8" font-size="10.5" class="kr">C3 셋째뒤통수신경 <tspan fill="#93a4b7" font-size="9.5">감각 · 좁은 영역</tspan></text>
+
+  <!-- ===== 오른쪽 아래: 임상·함정 ===== -->
+  <rect x="596" y="324" width="266" height="212" rx="10" fill="#111d2c" stroke="#2b3a4d"/>
+  <text x="612" y="348" fill="#eab308" font-size="13" class="kr">함정 · 임상</text>
+  <text x="612" y="372" fill="#e6edf3" font-size="10.5" class="kr">"감아 도는 신경"은?</text>
+  <text x="612" y="388" fill="#93a4b7" font-size="10">아래머리빗근을 감아 도는 것은</text>
+  <text x="612" y="402" fill="#c9a5f0" font-size="10" class="kr">큰뒤통수신경(감각)</text>
+  <text x="612" y="418" fill="#93a4b7" font-size="10">삼각 <tspan fill="#e6edf3">안</tspan>에서 근육으로 들어가는 것이</text>
+  <text x="612" y="432" fill="#9cc3ff" font-size="10" class="kr">뒤통수밑신경(운동)</text>
+
+  <text x="612" y="458" fill="#e6edf3" font-size="10.5" class="kr">아래머리빗근의 예외</text>
+  <text x="612" y="474" fill="#93a4b7" font-size="10">4개 중 <tspan fill="#eab308">유일하게 머리뼈에 안 닿음</tspan></text>
+  <text x="612" y="488" fill="#93a4b7" font-size="10">(C2 가시돌기 → C1 가로돌기)</text>
+
+  <text x="612" y="512" fill="#e6edf3" font-size="10.5" class="kr">척추동맥</text>
+  <text x="612" y="526" fill="#93a4b7" font-size="10">고리뼈 위 굽이가 심해 <tspan fill="#eab308">과신전에 취약</tspan></text>
+
+  <!-- ===== 하단 요약 ===== -->
+  <rect x="18" y="586" width="844" height="94" rx="10" fill="#121e2e" stroke="#2b3a4d"/>
+  <text x="34" y="610" fill="#e6edf3" font-size="12.5" font-weight="700">한 줄 정리 — 경계 3 · 내용물 2</text>
+  <text x="34" y="634" fill="#cfe4f7" font-size="11" class="kr">경계</text>
+  <text x="96" y="634" fill="#93a4b7" font-size="11">위안쪽 <tspan fill="#e6edf3">큰뒤머리곧은근</tspan> · 위가쪽 <tspan fill="#e6edf3">위머리빗근</tspan> · 아래가쪽 <tspan fill="#e6edf3">아래머리빗근</tspan> (작은뒤머리곧은근은 삼각 밖)</text>
+  <text x="34" y="656" fill="#e0645f" font-size="11" class="kr">내용물</text>
+  <text x="96" y="656" fill="#93a4b7" font-size="11"><tspan fill="#e0645f">척추동맥</tspan> + <tspan fill="#9cc3ff">뒤통수밑신경</tspan> + 정맥얼기 — 네 근육 전부 뒤통수밑신경 지배</text>
+  <text x="34" y="674" fill="#eab308" font-size="11" class="kr">작용</text>
+  <text x="96" y="674" fill="#93a4b7" font-size="11">머리 폄 · 같은쪽 돌림의 미세조정(고리뒤통수·고리중쇠관절)</text>
+</svg>

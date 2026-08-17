@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654 513" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="함께 지나는 것 — 얕은층 — 분지 계보 구조도">
+  <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
+       근거: 1회차 §피부벗기기 — 얕은근막의 내용물 -->
+  <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
+  <rect width="654" height="513" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">함께 지나는 것 — 얕은층<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> superficial neurovascular pairs</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">1회차 · 얕은근막 안에서 정맥과 피부신경은 짝을 지어 다닌다</text>
+  <text x="26" y="68" fill="#6f8299" font-size="10"><tspan fill="#b49ae0">■ 정맥</tspan>  <tspan fill="#9cc3ff">■ 신경</tspan>  · ★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
+  <path d="M 406,147 H 419 V 120 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,147 H 419 V 184 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,275 H 419 V 248 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 406,275 H 419 V 312 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,390 H 419 V 370 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,390 H 419 V 420 H 432" fill="none" stroke="#584a76" stroke-width="1.6"/>
+  <path d="M 206,268 H 219 V 147 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,268 H 219 V 275 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <path d="M 206,268 H 219 V 390 H 232" fill="none" stroke="#3f7a5e" stroke-width="1.6"/>
+  <rect x="26" y="246" width="180" height="44" rx="7" fill="#24402f" stroke="#7fd4a8" stroke-width="1.3"/>
+  <text x="36" y="266" fill="#7fd4a8" font-size="12" class="kr">얕은근막 속의 짝</text>
+  <text x="36" y="281" fill="#5fae87" font-size="9">in the superficial fascia</text>
+  <rect x="232" y="128" width="174" height="38" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="148" fill="#7fd4a8" font-size="12" class="kr">종아리·발 안쪽 ★</text>
+  <rect x="232" y="256" width="174" height="38" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="276" fill="#7fd4a8" font-size="12" class="kr">종아리 뒤·발 가쪽 ★</text>
+  <rect x="232" y="372" width="174" height="38" rx="7" fill="#24402f" stroke="#3f7a5e" stroke-width="1.3"/>
+  <text x="242" y="392" fill="#7fd4a8" font-size="12" class="kr">등의 얕은층</text>
+  <rect x="432" y="92" width="170" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="112" fill="#b49ae0" font-size="12" class="kr">큰두렁정맥 ★</text>
+  <text x="442" y="127" fill="#8f79b8" font-size="9">great saphenous v.</text>
+  <text x="442" y="138" fill="#6f8299" font-size="9">안쪽복사 앞</text>
+  <rect x="432" y="156" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="176" fill="#9cc3ff" font-size="12" class="kr">두렁신경 ★</text>
+  <text x="442" y="191" fill="#7f9cc4" font-size="9">saphenous n.</text>
+  <text x="442" y="202" fill="#6f8299" font-size="9">넙다리신경 가지</text>
+  <rect x="432" y="220" width="170" height="55" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="240" fill="#b49ae0" font-size="12" class="kr">작은두렁정맥 ★</text>
+  <text x="442" y="255" fill="#8f79b8" font-size="9">small saphenous v.</text>
+  <text x="442" y="266" fill="#6f8299" font-size="9">가쪽복사 뒤</text>
+  <rect x="432" y="284" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="304" fill="#9cc3ff" font-size="12" class="kr">장딴지신경 ★</text>
+  <text x="442" y="319" fill="#7f9cc4" font-size="9">sural n.</text>
+  <text x="442" y="330" fill="#6f8299" font-size="9">생검·이식 공여신경</text>
+  <rect x="432" y="348" width="170" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="368" fill="#9cc3ff" font-size="12" class="kr">뒤가지의 피부가지</text>
+  <text x="442" y="383" fill="#7f9cc4" font-size="9">cutaneous brr. of dorsal rami</text>
+  <rect x="432" y="401" width="170" height="38" rx="7" fill="#2c2542" stroke="#b49ae0" stroke-width="2.2"/>
+  <text x="442" y="421" fill="#b49ae0" font-size="12" class="kr">동반 피부정맥</text>
+  <line x1="26" y1="449" x2="628" y2="449" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="461" fill="#93a4b7" font-size="10.5">짝을 외우면 하나를 찾으면 다른 하나가 따라온다 — 피부벗기기의 요령.</text>
+  <text x="26" y="479" fill="#93a4b7" font-size="10.5">복사 기준: 큰두렁정맥은 안쪽복사 <tspan fill="#e6edf3" font-weight="700">앞</tspan>, 작은두렁정맥은 가쪽복사 <tspan fill="#e6edf3" font-weight="700">뒤</tspan>.</text>
+</svg>
