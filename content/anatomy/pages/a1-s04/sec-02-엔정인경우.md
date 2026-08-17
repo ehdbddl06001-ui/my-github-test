@@ -6,10 +6,10 @@ topic: Anatomy
 subtopic: 엔정인경우
 date: '2026-08-12'
 confidence: medium
-source: 4회차(0828) 허미선pf.pdf
+source: 4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_id: a1-s04
 source_file_id: 1n7KICVjUyEI4OYyd1aTZO2GMErC-Ye1T
-source_file_name: 4회차(0828) 허미선pf.pdf
+source_file_name: 4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_page: null
 region: thorax
 classification_confidence: 0.77

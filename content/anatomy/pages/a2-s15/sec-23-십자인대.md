@@ -6,10 +6,10 @@ topic: Anatomy
 subtopic: 십자인대
 date: '2026-08-12'
 confidence: medium
-source: 15차시(1013) 허미선pf.pdf
+source: 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_id: a2-s15
 source_file_id: 1R3MQ_-tL_XMnzmqrJhgugvRFIfWW_EEB
-source_file_name: 15차시(1013) 허미선pf.pdf
+source_file_name: 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_page: null
 region: lower-limb
 classification_confidence: 0.91

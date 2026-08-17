@@ -543,6 +543,124 @@ SPECS: dict[str, dict] = {
     ]),
 },
 
+# ── 7회차 (2026-09-07) 목의 뿌리·인두 / 종아리 가쪽·발목 안쪽면·발바닥 ──────
+"s07-nerve": {
+    "title": "목뿌리·발목의 신경", "en": "nerves of the root of neck & ankle",
+    "subtitle": "7회차 · 위가슴문을 지나는 신경과, 굽힘근지지띠 밑을 지나는 신경",
+    "kind": "nerve", "source": "7회차 §목의 뿌리·인두 · 종아리 가쪽 · 발목 안쪽면",
+    "footer": [
+        "되돌이후두신경은 좌우 경로가 다르다 — 오른쪽 빗장밑동맥 / 왼쪽 대동맥활.",
+        "정강신경은 굽힘근지지띠 **아래**에서 안쪽·가쪽 발바닥신경으로 갈린다(발목굴증후군).",
+    ],
+    "root": _n("7회차의 신경", children=[
+        _n("미주신경 X", "vagus n.", "목혈관신경집 안에서 내려간다", star=True, children=[
+            _n("되돌이후두신경(오른)", "right recurrent laryngeal n.",
+               "**빗장밑동맥**을 감아 올라간다", star=True, terminal=True),
+            _n("되돌이후두신경(왼)", "left recurrent laryngeal n.",
+               "**대동맥활**(동맥관인대)을 감아 — 더 길다", star=True, terminal=True),
+            _n("위후두신경", "superior laryngeal n.", "속가지(감각)+바깥가지(반지방패근)",
+               terminal=True)]),
+        _n("가로막신경", "phrenic n.", "C3–5 · **앞목갈비근 앞면**을 타고 내려간다",
+           star=True, children=[
+            _n("가로막", "diaphragm", "C3-4-5 keeps the diaphragm alive", terminal=True)]),
+        _n("팔신경얼기", "brachial plexus", "앞·중간목갈비근 **사이**(목갈비근틈새)",
+           star=True, children=[
+            _n("위가슴문 통과", "through superior thoracic aperture",
+               "빗장밑동맥과 같은 틈새 — 정맥은 앞목갈비근 **앞**", star=True, terminal=True)]),
+        _n("온종아리신경", "common fibular n.", "종아리뼈목을 감아 돈다 — 발처짐",
+           star=True, children=[
+            _n("얕은종아리신경", "superficial fibular n.",
+               "가쪽칸(긴·짧은종아리근) + 발등 피부", star=True, terminal=True),
+            _n("깊은종아리신경", "deep fibular n.",
+               "앞칸 근육 + **첫째 발가락사이 피부**", star=True, terminal=True)]),
+        _n("정강신경", "tibial n.", "굽힘근지지띠 밑 **발목굴**을 지난다", star=True, children=[
+            _n("안쪽발바닥신경", "medial plantar n.", "손의 정중신경에 해당", star=True,
+               terminal=True),
+            _n("가쪽발바닥신경", "lateral plantar n.", "손의 자신경에 해당", star=True,
+               terminal=True),
+            _n("안쪽발꿈치가지", "medial calcaneal br.", "지지띠를 **뚫고** 나온다 — 발꿈치 감각",
+               terminal=True)]),
+    ]),
+},
+
+"s07-vessel": {
+    "title": "목뿌리·종아리의 동맥과 정맥", "en": "vessels of the root of neck & leg",
+    "subtitle": "7회차 · 빗장밑동맥 3부와 오금동맥 아래 갈래를 나란히",
+    "kind": "mixed", "legend_kinds": ["artery", "vein"],
+    "source": "7회차 §목의 뿌리 · 종아리 가쪽·뒤 · 발바닥",
+    "footer": [
+        "빗장밑동맥은 **앞목갈비근**이 1·2·3부로 나눈다 — 겨드랑동맥을 작은가슴근이 나누는 것과 같은 꼴.",
+        "발바닥동맥활은 **가쪽발바닥동맥**이 주로 만든다 — 손의 깊은손바닥동맥활에 해당.",
+    ],
+    "root": _n("7회차의 혈관", children=[
+        _n("빗장밑동맥", "subclavian a.", "앞목갈비근이 3부로 나눈다", kind="artery",
+           star=True, children=[
+            _n("1부 — 척추동맥", "vertebral a.", "가로구멍으로 올라간다", kind="artery",
+               star=True, terminal=True),
+            _n("1부 — 속가슴동맥", "internal thoracic a.", "아래로 — 앞갈비사이동맥",
+               kind="artery", terminal=True),
+            _n("1부 — 갑상목동맥", "thyrocervical trunk", "아래갑상·어깨위·목가로동맥",
+               kind="artery", star=True, terminal=True),
+            _n("2부 — 갈비목동맥", "costocervical trunk", kind="artery", terminal=True)]),
+        _n("목의 정맥", "veins of the neck", kind="vein", children=[
+            _n("속목정맥", "internal jugular v.", "빗장밑정맥과 만나 팔머리정맥",
+               kind="vein", star=True, terminal=True),
+            _n("빗장밑정맥", "subclavian v.", "앞목갈비근 **앞** — 동맥은 뒤", kind="vein",
+               star=True, terminal=True)]),
+        _n("오금동맥", "popliteal a.", "오금근 아래모서리에서 갈린다", kind="artery",
+           star=True, children=[
+            _n("앞정강동맥", "anterior tibial a.", "뼈사이막을 **뚫고** 앞칸으로 → 발등동맥",
+               kind="artery", star=True, terminal=True),
+            _n("뒤정강동맥", "posterior tibial a.", "발목 안쪽면 → 안쪽·가쪽발바닥동맥",
+               kind="artery", star=True, terminal=True),
+            _n("종아리동맥", "fibular a.", "뒤정강동맥 가지 · 가쪽칸에는 **자기 동맥이 없다**",
+               kind="artery", star=True, terminal=True)]),
+        _n("발의 동맥활", "arches of the foot", kind="artery", children=[
+            _n("깊은발바닥동맥활", "deep plantar arch", "주로 **가쪽발바닥동맥**",
+               kind="artery", star=True, terminal=True),
+            _n("발등동맥", "dorsalis pedis a.", "긴엄지폄근힘줄 **가쪽** 촉지",
+               kind="artery", star=True, terminal=True)]),
+    ]),
+},
+
+"s07-bundle": {
+    "title": "함께 지나는 것 — 위가슴문·발목", "en": "neurovascular bundles",
+    "subtitle": "7회차 · 목갈비근이 가르는 목의 통로와, 굽힘근지지띠 밑 발목굴",
+    "kind": "mixed", "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "7회차 §목의 뿌리 · 발목 안쪽면 · 종아리 가쪽",
+    "footer": [
+        "앞목갈비근이 기준: **정맥은 앞, 동맥·팔신경얼기는 뒤**(목갈비근틈새).",
+        "발목굴 앞→뒤 'Tom, Dick, And Very Nervous Harry' — 동맥·신경이 가운데 낀다.",
+    ],
+    "root": _n("세 개의 통로", children=[
+        _n("목갈비근틈새", "scalene triangle", "앞·중간목갈비근 사이", star=True, children=[
+            _n("빗장밑정맥", "subclavian v.", "앞목갈비근 **앞** — 틈새 밖", kind="vein",
+               star=True, terminal=True),
+            _n("빗장밑동맥 2부", "subclavian a.", "틈새 **안**", kind="artery",
+               star=True, terminal=True),
+            _n("팔신경얼기", "brachial plexus", "동맥과 같은 틈새", kind="nerve",
+               star=True, terminal=True)]),
+        _n("발목굴(굽힘근지지띠 밑)", "tarsal tunnel", "안쪽복사 뒤 · 앞→뒤 순서", star=True,
+           children=[
+            _n("① 뒤정강근 힘줄", "Tibialis posterior", "**T**om", kind="mixed", terminal=True),
+            _n("② 긴발가락굽힘근 힘줄", "flexor Digitorum longus", "**D**ick", kind="mixed",
+               terminal=True),
+            _n("③ 뒤정강동맥", "posterior tibial Artery", "**A**nd", kind="artery",
+               star=True, terminal=True),
+            _n("④ 정강신경", "tibial Nerve", "**V**ery **N**ervous", kind="nerve",
+               star=True, terminal=True),
+            _n("⑤ 긴엄지굽힘근 힘줄", "flexor Hallucis longus", "**H**arry", kind="mixed",
+               star=True, terminal=True)]),
+        _n("종아리근지지띠 밑", "fibular retinacula", "가쪽복사 뒤", star=True, children=[
+            _n("긴종아리근 힘줄", "fibularis longus", "발바닥을 가로질러 첫째 발허리뼈로",
+               kind="mixed", star=True, terminal=True),
+            _n("짧은종아리근 힘줄", "fibularis brevis", "다섯째 발허리뼈 거친면", kind="mixed",
+               terminal=True),
+            _n("얕은종아리신경", "superficial fibular n.", "가쪽칸을 지배 — **동맥은 없다**",
+               kind="nerve", star=True, terminal=True)]),
+    ]),
+},
+
 "s04-bundle": {
     "title": "함께 지나는 것 — 귀밑샘·갈비사이", "en": "neurovascular bundles",
     "subtitle": "4회차 · 귀밑샘은 얕은 것부터 신경–정맥–동맥, 갈비사이고랑은 위부터 정맥–동맥–신경",

@@ -40,7 +40,7 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0094.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p10_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0095.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p13_clean.png"}
 source_refs:
-  - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf", page: null, section: "뒤통수밑삼각·어깨뼈부위·다리오금 실습영상"}
+  - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕", page: null, section: "뒤통수밑삼각·어깨뼈부위·다리오금 실습영상"}
 mnemonics:
   - {key: "오금 신–정–동", full: "얕은 것부터 정강신경 → 오금정맥 → 오금동맥", note: "동맥이 가장 깊어 맥박이 안 잡힌다"}
   - {key: "어깨뼈패임", full: "동맥은 인대 **위**, 신경은 인대 **아래**", note: "같은 이름인데 층이 갈린다"}

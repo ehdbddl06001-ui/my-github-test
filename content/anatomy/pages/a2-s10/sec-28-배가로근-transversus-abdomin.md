@@ -6,10 +6,10 @@ topic: Anatomy
 subtopic: 배가로근 (transversus abdominis muscle)
 date: '2026-08-12'
 confidence: medium
-source: 10차시(0918) 허미선pf.pdf
+source: 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_id: a2-s10
 source_file_id: 1HlXe71Yv3uMIhM6_UNWHqmtrw-K0MOBT
-source_file_name: 10차시(0918) 허미선pf.pdf
+source_file_name: 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_page: null
 region: abdomen
 classification_confidence: 0.82

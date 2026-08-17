@@ -6,10 +6,10 @@ topic: Anatomy
 subtopic: 본문
 date: '2026-08-12'
 confidence: low
-source: 3회차(0825) 허미선pf.pdf
+source: 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_id: a1-s03
 source_file_id: 1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG
-source_file_name: 3회차(0825) 허미선pf.pdf
+source_file_name: 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_page: null
 region: lower-limb
 classification_confidence: 0.51
