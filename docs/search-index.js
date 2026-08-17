@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1485,
+  "total": 1497,
   "byType": {
    "usmle": 96,
-   "anatomy": 345,
-   "paper": 440,
+   "anatomy": 353,
+   "paper": 444,
    "kmle": 587,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 345,
-   "Cardiology": 128,
+   "Anatomy": 353,
+   "Cardiology": 131,
    "Nephrology": 115,
    "Infectious Disease": 91,
    "Hematology-Oncology": 72,
@@ -26,8 +26,8 @@ window.MEDKOS_INDEX = {
    "Neurology": 45,
    "Psychiatry": 44,
    "Surgery": 44,
+   "Laboratory Medicine": 39,
    "Endocrinology": 38,
-   "Laboratory Medicine": 38,
    "Gastroenterology": 37,
    "Pulmonology": 37,
    "Dermatology": 36,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 816,
-   "medium": 620,
+   "high": 824,
+   "medium": 624,
    "low": 49
   },
-  "tagCount": 2303
+  "tagCount": 2304
  },
  "docs": [
   {
@@ -193,6 +193,174 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-18.md",
    "snippet": "오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-18 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0176",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "왼심실 실사 spotter — 승모판막과 두 첨판 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장) — C007 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0176.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 왼심실 실사 spotter — 승모판막과 두 첨판 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장) — C007 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0175",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "오른심방 속구조 실사 spotter — 매끈부와 거친부 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B039 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0175.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 오른심방 속구조 실사 spotter — 매끈부와 거친부 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B039 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0174",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장동맥 실사 spotter — 앞면의 가지 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B026 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0174.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장동맥 실사 spotter — 앞면의 가지 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B026 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0173",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장 표면 실사 spotter — 두 고랑과 네 방 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B020 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0173.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장 표면 실사 spotter — 두 고랑과 네 방 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B020 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0172",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장막안 실사 spotter — 가로굴과 빗굴 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B015 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0172.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장막안 실사 spotter — 가로굴과 빗굴 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B015 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0171",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "위세로칸 실사 spotter — 대동맥활의 가지와 두 신경 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B011 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0171.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위세로칸 실사 spotter — 대동맥활의 가지와 두 신경 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B011 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0170",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "가슴막 구분 실사 spotter — 가슴막안과 두 오목 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A044 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0170.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴막 구분 실사 spotter — 가슴막안과 두 오목 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A044 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0169",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래우묵 실사 spotter — 날개근과 V3 가지 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A019 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0169.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자아래우묵 실사 spotter — 날개근과 V3 가지 (필기 제거·복원본) 5회차 · 머리 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A019 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0162",
@@ -497,6 +665,76 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/notes/anatomy-2026-0150-s05-subnote.md",
    "snippet": "0. 이 회차의 축 — 세 문장 1. 복장뼈각(T4/T5)이 가슴의 모든 높이를 정한다 — 기관갈림·대동맥활·위/아래세로칸 경계가 전부 이 한 선에 걸린다. 2. 가로막신경은 앞, 미주신경은 뒤 — 세로칸에서 두 신경을 가르는 기준은 허파뿌리와의 앞뒤 관계 하나뿐이다. 3. 관자아래우묵은 V3와 위턱동맥의 방 — 씹기근육 4개는 전부 V3인데 가쪽날개근만 턱을 연다 . 1. 가슴막과 가슴막안 Pleura & pleural ca",
    "text": "Anatomy 5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 5회차 · 가슴·머리 서브노트 5회차 가슴막 세로칸 심장막 심장 심장동맥 관자아래우묵 위턱동맥 씹기근육 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 복장뼈각(T4/T5)이 가슴의 모든 높이를 정한다 — 기관갈림·대동맥활·위/아래세로칸 경계가 전부 이 한 선에 걸린다. 2. 가로막신경은 앞, 미주신경은 뒤 — 세로칸에서 두 신경을 가르는 기준은 허파뿌리와의 앞뒤 관계 하나뿐이다. 3. 관자아래우묵은 V3와 위턱동맥의 방 — 씹기근육 4개는 전부 V3인데 가쪽날개근만 턱을 연다 . 1. 가슴막과 가슴막안 Pleura & pleural cavity 1) 두 겹과 그 경계 구분 덮는 곳 신경지배 통증 벽쪽가슴막 갈비부분 갈비뼈·갈비사이근 안쪽면 ==갈비사이신경== 예민 · 국소 로 아프다 벽쪽 세로칸부분 세로칸 가쪽면 ==가로막신경== 어깨 연관통 벽쪽 가로막부분 가로막 위면 주변부=갈비사이신경 / ==중앙부=가로막신경== 부위에 따라 갈린다 벽쪽 목부분(가슴막꼭대기) 빗장뼈 안쪽 1/3 위 ==2.5 cm== 갈비사이신경 ==시블슨근막==(suprapleural membrane)이 덮는다 내장쪽가슴막 허파 표면 · 틈새 속까지 자율신경(허파얼기) ==통증 없음== 2) 오목(recess) — 허파가 채우지 못한 여분 오목 위치 의미 ==갈비가로막오목== 갈비가슴막 ↔ 가로막가슴막 사이 가슴막안에서 가장 깊다 · 가슴막삼출이 먼저 고인다 갈비세로칸오목 복장뼈 뒤 왼쪽 · 심장패임 자리 왼허파 앞모서리가 못 채운 자리 3) 아래경계 — 숫자 두 줄 선 허파 아래경계 가슴막 아래경계 빗장중간선 6번 갈비 ==8번 갈비== 중간겨드랑선 8번 갈비 ==10번 갈비== 척주옆선 10번 갈비 ==12번 갈비== [!암기] 허파 6·8·10 / 가슴막 8·10·12 :: 가슴막이 항상 두 갈비 아래 다. 그 차이가 곧 갈비가로막오목이고, 가슴막천자는 그 여분 공간을 노린다. [!주의] 천자는 갈비뼈 위 모서리 :: 갈비사이고랑의 배열이 위부터 ==정맥–동맥–신경(VAN)== 이라 신경·혈관이 갈비뼈 아래 모서리에 붙어 있다. 바늘은 아래 갈비뼈의 위모서리를 타고 들어간다. 2. 세로칸 Mediastinum 1) 복장뼈각 — 이 한 선에 걸리는 것들 복장뼈각(T4/T5, 둘째 갈비연골) 높이의 사건 위세로칸 ↔ 아래세로칸 경계 ==기관갈림(carina)== 대동맥활의 시작과 끝 홀정맥이 위대정맥으로 합류 가슴관이 오른쪽 → 왼쪽으로 건너간다 2) 위세로칸 내용 — 앞에서 뒤로 벗겨 나가는 순서 층 구조 메모 ① 샘 가슴샘 어릴수록 크다 · 성인은 지방으로 ② 정맥 왼·오른 ==팔머리정맥== → 위대정맥 왼쪽이 길고 거의 가로로 건넌다 ③ 동맥 ==대동맥활== + 가지 3개 팔머리동맥 · 왼온목동맥 · 왼빗장밑동맥 ④ 신경 미주신경 · 가로막신경 · ==왼되돌이후두신경== 왼되돌이는 동맥관인대 를 감아 올라간다 ⑤ 기도·소화관 기관 → 식도 기관이 앞, 식도가 뒤 ⑥ 림프 가슴관 가장 뒤·왼쪽 3) 아래세로칸 셋 구획 내용 앞세로칸 가슴샘 잔재 · 지방 · 림프절 (복장뼈 ↔ 심장막 사이, 좁다) ==중간세로칸== 심장막 + 심장 + 허파뿌리 + 가로막신경 + 심장막가로막혈관 뒤세로칸 내림가슴대동맥 · 식도 · 가슴관 · ==홀·반홀정맥== · 교감신경줄기 [!기출] 가로막신경이 지나는 구획 :: 목에서 내려와 중간세로칸 을 지난다(심장막 가쪽면에 딱 붙어). 미주신경은 허파뿌리 뒤로 넘어가 뒤세로칸 으로 들어간다 — 같이 내려오다 허파뿌리에서 갈라진다. 3. 신경 계보 Nerve tree !fig docs/assets/anatomy/tree s05 nerve labeled.svg 가로막신경·미주신경이 허파뿌리에서 앞뒤로 갈리고, V3가 관자아래우묵을 채운다 4. 심장막 Pericardium 층 내용 섬유심장막 질긴 바깥주머니 · 아래는 가로막 ==중심널힘줄==에 붙고 위는 큰혈관 바깥막과 연속 → 심장이 매달려 있다 장막심장막 벽쪽층 섬유심장막 안쪽면 을 덧댄 층 장막심장막 내장쪽층 = ==심장바깥막(epicardium)== · 심장 표면 그 자체 심장막안 두 장막층 사이 · 소량의 장액 신경지배 ==가로막신경(C3–C5)== → 자극되면 어깨 연관통 혈액공급 심장막가로막동맥(속가슴동맥 가지) 심장막굴 — 큰혈관을 감싸다 접힌 자리 굴 앞벽 뒤벽 임상 ==심장막가로굴== 오름대동맥 + 허파동맥줄기 위대정맥 + 왼심방 심장수술에서 동맥 두 줄기를 한 번에 교차겸자 ==심장막빗굴== 왼심방 뒤면 허파정맥·아래대정맥 반전부 막다른 골목 — 손가락이 통과하지 못한다 [!주의] 가로굴은 통과, 빗굴은 막힘 :: 둘을 바꿔 쓰는 실수가 가장 흔하다. 가로 굴은 좌우로 뚫려 손가락이 지나가고, 빗 굴은 왼심방 뒤에서 끝난다. [!임상] 심장눌림증(cardiac tamponade) :: 섬유심장막이 늘어나지 않아 소량의 혈액도 심실 채움을 막는다. 벡 3징 — 저혈압 · 목정맥 확장 · 심음 감약. 5. 심장 Heart 1) 겉면 표지 구조 무엇이 만드나 오른모서리 오른심방 아래(급성)모서리 오른심실 왼(둔한)모서리 왼심실 ==심장꼭대기(apex)== 왼심실 · 왼쪽 5번 갈비사이 빗장중간선 복장갈비면(앞면) 대부분 ==오른심실== 가로막면(아래면) 대부분 왼심실 ==분계고랑/분계능선== 오른심방의 매끈부(굴정맥굴 유래) ↔ 거친부(빗살근) 경계 · 굴심방결절 이 그 위끝에 2) 판막과 청진 자리 판막 위치 청진 자리 대동맥판(반달판) 왼심실 유출로 오른 2번 갈비사이 복장뼈 옆 허파동맥판(반달판) 오른심실 유출로 왼 2번 갈비사이 복장뼈 옆 ==삼첨판== (오른방실) 오른심방→오른심실 왼 4–5번 갈비사이 복장뼈 왼모서리 ==승모판(2첨)== (왼방실) 왼심방→왼심실 심장꼭대기 [!TIP] 판막 위치 ≠ 청진 자리 :: 소리는 혈류를 타고 하류로 퍼지므로 청진점이 판막 실제 위치보다 아래·가쪽으로 밀린다. 태깅은 실제 위치, 청진은 소리 나는 자리를 묻는다. 3) 심장동맥 — 우세(dominance)가 핵심 동맥 주행 주요 가지 오른심장동맥 오른심방귀와 허파동맥줄기 사이 → 오른방실고랑 ==굴심방결절가지(약 60%)== · 오른모서리가지 · ==뒤심실사이가지(약 70%)== 왼심장동맥 짧은 줄기 뒤 곧 갈린다 ==앞심실사이가지(LAD)== · 휘돌이가지 → 왼모서리가지 정맥 동행 동맥 종착 큰심장정맥 앞심실사이가지 ==심장정맥굴== 중간심장정맥 뒤심실사이가지 심장정맥굴 작은심장정맥 오른모서리가지 심장정맥굴 심장정맥굴 — 왼심방 뒤 방실고랑 → ==오른심방== [!기출] 우세(dominance)의 정의 :: 뒤심실사이가지를 누가 내느냐 로 정한다. 오른심장동맥이 내면 right dominance(약 70%). 관상동맥 개수나 굵기가 아니다. 4) 자극전도계 구조 위치 ==굴심방결절(SA)== 위대정맥–오른심방 경계 · 분계고랑 위끝 ==방실결절(AV)== 코흐삼각 — 심장정맥굴구멍 · 삼첨판 사이막첨 · 토다힘줄이 이루는 삼각 방실다발(His) 섬유뼈대를 뚫는 유일한 근육 연결 오른다리 일부가 ==조절대(moderator band)==를 타고 앞유두근으로 6. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s05 vessel labeled.svg 대동맥활 3가지·심장동맥·심장정맥굴과, 관자아래우묵을 채우는 위턱동맥 3부 7. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s05 bundle labeled.svg 허파뿌리 배열·심장막굴·관자아래우묵 — 순서가 그대로 문제가 되는 세 자리 허파뿌리 배열 — 한 표로 방향 오른쪽 왼쪽 앞 → 뒤 ==허파정맥 → 허파동맥 → 기관지 (VAB)== 같다 위 → 아래 ==기관지==(eparterial) → 동맥 → 정맥 ==동맥== → 기관지 → 정맥 신경 앞=가로막신경 / 뒤=미주신경 같다 넘어가는 것 ==홀정맥==이 뿌리 위 를 활처럼 ==대동맥활==이 뿌리 위 를 [!암기] 왼쪽은 동맥이 먼저 :: 왼허파동맥은 대동맥활을 넘어가야 해서 가장 위로 올라간다. 오른쪽은 넘을 것이 없어 위엽기관지가 동맥보다 위(eparterial)로 곧장 간다. 8. 관자부위 Temporal region 구조 내용 관자우묵 경계 위·뒤 관자선 · 아래 ==광대활== · 앞 이마돌기 관자근 관자우묵 → 광대활 아래(깊은쪽) 를 지나 → 아래턱뼈 ==근육돌기==·가지 앞모서리 관자근 작용 앞섬유=닫기 / ==뒤섬유=턱 후퇴== 관자근 신경 ==깊은관자신경(V3 앞줄기)== ==프테리온(pterion)== 이마·마루·관자·나비뼈가 만나는 곳 · 머리뼈에서 가장 얇다 프테리온 임상 속면에 ==중간뇌막동맥 앞가지== → 골절 시 경막외혈종 9. 관자아래우묵 Infratemporal fossa 1) 경계 — 여섯 면 면 경계 위 나비뼈 ==큰날개==(관자아래능선) 안쪽 ==가쪽날개판== 가쪽 ==아래턱뼈가지== 앞 위턱뼈 뒤면(관자아래면) 뒤 붓돌기 · 관자뼈 아래 안쪽날개근이 아래턱뼈에 닿는 자리 2) 씹기근육 넷 — 전부 V3, 작용만 하나가 반대 근육 이는곳 → 닿는곳 작용 관자근 관자우묵 → 근육돌기 닫기 + ==후퇴== 깨물근 광대활 → 아래턱뼈가지 가쪽면 닫기(가장 강한 올림) 안쪽날개근 가쪽날개판 안쪽면 → 아래턱뼈가지 안쪽면 닫기 + 갈기 ==가쪽날개근== 큰날개·가쪽날개판 가쪽면 → 관절돌기목· 관절원반 ==열기==(관절원반을 앞으로 당겨) [!암기] 깨물근과 안쪽날개근은 샌드위치 :: 아래턱뼈가지를 가쪽(깨물근)·안쪽(안쪽날개근) 에서 끼고 같은 방향으로 당긴다 — 그래서 둘 다 강력한 '닫기'다. 3) 우묵을 채우는 것들 — 얕은 데서 깊은 데로 순서 구조 포인트 ① 가쪽날개근 두 갈래 사이로 볼신경·위턱동맥이 지난다 ② ==날개정맥얼기== 판막 없음 → ==해면정맥굴==과 교통(감염 전파) ③ ==위턱동맥== 가쪽날개근의 얕은쪽/깊은쪽 통과는 변이 ④ 아래이틀신경 · 혀신경 안쪽날개근 앞 · ==혀신경이 더 앞·안쪽== ⑤ 안쪽날개근 가장 깊다 4) 위턱동맥 3부 — 1부는 구멍, 2부는 근육, 3부는 우묵 부 이름 대표 가지 1부 아래턱부 ==중간뇌막동맥==(가시구멍) · ==아래이틀동맥==(턱뼈구멍) 2부 날개근부 깊은관자 · 깨물 · 날개근가지 · 볼동맥 (전부 근육 ) 3부 날개입천장부 눈확아래동맥 · ==나비입천장동맥==(코피의 주범) 5) 얹혀 가는 섬유 — V3는 길만 빌려준다 섬유 진짜 주인 하는 일 타고 가는 길 ==고실끈신경== 얼굴신경 VII 혀 앞 2/3 미각 + 턱밑·혀밑샘 분비 ==혀신경(V3)==에 합류 귀신경절 이후섬유 혀인두신경 IX ==귀밑샘== 분비 ==귓바퀴관자신경(V3)== [!기출] 혀 앞 2/3의 이중지배 :: 일반감각은 혀신경(V3), 미각은 고실끈신경(VII) — 같은 자리를 두 신경이 나눠 맡는다. 뒤 1/3은 감각·미각 모두 IX. [!임상] 아래이틀신경 마취 :: 치과의 하치조 마취는 ==턱뼈구멍== 앞의 아래이틀신경을 노린다. 바로 앞·안쪽의 혀신경 이 함께 마취되어 혀 절반이 저린 이유가 이것이다. 10. 마무리 체크리스트 Self check 1. 복장뼈각 높이에서 일어나는 사건 다섯 가지를 말할 수 있는가? 2. 벽쪽가슴막 네 부분의 신경지배와, 어느 자극이 어깨로 가는지 구분되는가? 3. 허파와 가슴막의 아래경계 숫자 두 줄을 세 선에서 각각 말할 수 있는가? 4. 위세로칸 내용을 앞에서 뒤로 여섯 층으로 벗겨 낼 수 있는가? 5. 가로굴과 빗굴의 앞뒤 벽을 각각 무엇이 이루는가? 6. 심장 앞면·아래면·심장꼭대기를 각각 어느 방·심실이 만드는가? 7. 우세(dominance)의 정의를 한 문장으로 말할 수 있는가? 8. 굴심방결절과 방실결절의 위치를 표지 구조로 지목할 수 있는가? 9. 허파뿌리의 앞→뒤 배열과, 좌우가 갈리는 위→아래 배열을 구분하는가? 10. 씹기근육 넷의 작용 중 하나만 반대인 이유를 근육의 닿는곳으로 설명할 수 있는가? 11. 위턱동맥 1·2·3부를 대표 가지 하나씩으로 나눌 수 있는가? 12. 혀 앞 2/3에서 일반감각과 미각을 각각 어느 신경이 맡는가?"
+  },
+  {
+   "id": "paper-2026-0444",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0444_landmark_2012_focused_update_of_the_esc_guidelines_for_the_management.md",
+   "snippet": "Title 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation developed with the special contribution of the European Heart Rhythm A",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology Title 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation developed with the special contribution of the European Heart Rhythm Association Authors Camm A John, Lip Gregory Y H, De Caterina Raffaele, Savelieva Irene, Atar Dan, Hohnloser Stefan H, Hindricks Gerhard, Kirchhof Paulus, et al. Journal / DOI Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology · PMID: 22923145 https://pubmed.ncbi.nlm.nih.gov/22923145/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1138회 · RCR 40.38 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0443",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0443_landmark_guidelines_for_the_diagnosis_and_treatment_of_chronic_heart_.md",
+   "snippet": "Title Guidelines for the diagnosis and treatment of chronic heart failure Authors Remme W J, Swedberg K, Task Force for the Diagnosis and Treatment of Chronic Heart Failure, European Society of Cardiology Journal / DOI European heart journa",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title Guidelines for the diagnosis and treatment of chronic heart failure Authors Remme W J, Swedberg K, Task Force for the Diagnosis and Treatment of Chronic Heart Failure, European Society of Cardiology Journal / DOI European heart journal · PMID: 11492984 https://pubmed.ncbi.nlm.nih.gov/11492984/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1150회 · RCR 32.55 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0442",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of diabetes investigation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0442_noncoding_rnas_as_novel_diagnostic_biomarkers_for_diabetic_r.md",
+   "snippet": "Title Noncoding RNAs as novel diagnostic biomarkers for diabetic retinopathy: A systematic review and meta analysis Authors Zhang Ting, Xu Donghong Journal / DOI Journal of diabetes investigation · DOI: 10.1111/jdi.70395 · PMID: 42606362 ht",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of diabetes investigation Title Noncoding RNAs as novel diagnostic biomarkers for diabetic retinopathy: A systematic review and meta analysis Authors Zhang Ting, Xu Donghong Journal / DOI Journal of diabetes investigation · DOI: 10.1111/jdi.70395 · PMID: 42606362 https://pubmed.ncbi.nlm.nih.gov/42606362/ Abstract BACKGROUND AND AIMS: Diabetic retinopathy (DR), a frequent microvascular complication of diabetes, requires early detection to mitigate progression. Noncoding RNAs (ncRNAs) have emerged as promising diagnostic biomarkers. This meta analysis evaluates their overall diagnostic accuracy for DR. METHODS: A comprehensive literature search was conducted across multiple electronic databases, including PubMed, Embase, and Web of Science, to identify relevant studies published until August 2025. Data on study characteristics, quality, and diagnostic performance were pooled. Pooled effect sizes were calculated using a random effects model. Heterogeneity was explored via subgroup analysis and meta regression; publication bias was assessed using Deck's funnel plot. RESULTS: Twenty four studies from 17 articles (1,983 patients, 1,437 controls) were included. The pooled analysis demonstrated that ncRNAs achieved a sensitivity of 0.81 and a specificity of 0.84. The area under the curve (AUC) was 0.89, whereas the positive and negative likelihood ratios were 4.96 and 0.23, respectively. LncRNAs demonstrated superior diagnostic performance compared to miRNAs (P = 0.03). Control type, region, and expression trend did not significantly influence outcomes. Significant heterogeneity was observed (I2 50%), but sensitivity analysis confirmed robustness, and no notable publication bias was detected. CONCLUSION: Circulating ncRNAs, particularly lncRNAs, show high diagnostic potential for DR and represent promising noninvasive biomarkers for early screening and differential diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0441",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pacing and clinical electrophysiology : PACE",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0441_non_invasive_methods_for_identifying_electrical_responders_t.md",
+   "snippet": "Title Non Invasive Methods for Identifying Electrical Responders to Conduction System Pacing Cardiac Resynchronization Therapy Authors Samways Jack W, Ali Nadine, Arnold Ahran D, Chow Ji Jian, Shun Shin Matthew, Mohal Jagdeep Singh, Naraen ",
+   "text": "Cardiology scraped pubmed PubMed / Pacing and clinical electrophysiology : PACE Title Non Invasive Methods for Identifying Electrical Responders to Conduction System Pacing Cardiac Resynchronization Therapy Authors Samways Jack W, Ali Nadine, Arnold Ahran D, Chow Ji Jian, Shun Shin Matthew, Mohal Jagdeep Singh, Naraen Akriti, Saleh Keenan, et al. Journal / DOI Pacing and clinical electrophysiology : PACE · DOI: 10.1111/pace.70393 · PMID: 42606538 https://pubmed.ncbi.nlm.nih.gov/42606538/ Abstract BACKGROUND: Conduction system pacing (CSP) is an emerging alternative modality of cardiac resynchronization therapy (CRT). However, not all patients obtain electrical resynchronization with CSP, there is a clinical need for reliable non invasive predictors of response. We aimed to assess the ability of several non invasive modalities to predict electrical resynchronization with CSP CRT. METHODS: Patients with standard heart failure CRT indications (excluding right bundle branch block) underwent CSP CRT using His bundle and left bundle branch pacing. Electrical resynchronization was defined as a 10 ms reduction in left ventricular activation time or conversion to a physiological left ventricular activation pattern on non invasive multi electrode mapping. We assessed whether 12 lead ECG morphology, vector electrocardiogram (VCG) derived QRS area, Ultra High Frequency (UHF) ECG parameters or MRI scar burden predicted electrical resynchronization. RESULTS: Thirty four patients were analyzed (mean age 69±10 years; 82% male; LVEF 30±6%; QRS duration 161±23 ms; 32% ischemic cardiomyopathy). Electrical resynchronization was achieved in 24/34 (71%; 95%CI 53 85). Strauss criteria positivity on 12 lead ECG yielded a positive predictive value (PPV) of 83% (95%CI 61 95%) and negative predictive value (NPV) of 55% (95%CI 23 83%). VCG QRS area 100µVs demonstrated PPV 100% (95% CI 81 100%) and NPV 73% (95%CI 85 100%). UHF ECG e DYS 50 ms gave PPV 93% (95%CI 66 100%) and NPV 47% (23% 72%); 60 ms gave PPV 90% (95%CI 66 100%) and NPV 38% (95%CI 18 62%). MRI scar burden <15% resulted in PPV 88% (95%CI 64 99%) and NPV 56% (95%CI 21 86%). Lines of propagation discontinuity on multi electrode mapping showed PPV 100% (95%CI 85 100%) and NPV 83% (95%CI 52 98%). CONCLUSIONS: Multiple non invasive markers, including QRS morphology, VCG QRS area, UHF ECG e DYS, MRI scar burden showed potential to identify patients who are likely to electrically resynchronize with CSP CRT, although their NPVs were generally modest. Non invasive propagation mapping had the highest PPV and NPV. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0440",
