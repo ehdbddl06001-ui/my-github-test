@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1462,
+  "total": 1468,
   "byType": {
+   "usmle": 96,
    "paper": 440,
    "kmle": 587,
    "anatomy": 328,
-   "usmle": 90,
    "ailab": 14,
    "basic": 3
   },
@@ -20,10 +20,10 @@ window.MEDKOS_INDEX = {
    "Nephrology": 115,
    "Infectious Disease": 91,
    "Hematology-Oncology": 72,
-   "Pediatrics": 68,
+   "Pediatrics": 69,
    "Pathology": 62,
    "Obstetrics & Gynecology": 46,
-   "Neurology": 44,
+   "Neurology": 45,
    "Psychiatry": 44,
    "Surgery": 44,
    "Endocrinology": 38,
@@ -36,14 +36,14 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 36,
    "Rheumatology": 36,
    "Hematology": 35,
-   "Physiology": 12,
+   "Physiology": 13,
    "Pharmacology": 7,
+   "Biochemistry": 6,
    "Microbiology": 6,
-   "Biochemistry": 5,
+   "Immunology": 4,
+   "Internal Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
-   "Immunology": 3,
-   "Internal Medicine": 3,
    "Oncology": 3,
    "Allergy": 2,
    "Medical Imaging AI": 2,
@@ -53,13 +53,133 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
+   "high": 812,
    "medium": 607,
-   "high": 806,
    "low": 49
   },
-  "tagCount": 2247
+  "tagCount": 2260
  },
  "docs": [
+  {
+   "id": "usmle-2026-0108",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Guillain-Barré Syndrome — Serial Vital Capacity to Detect Impending Respiratory Failure",
+   "tags": [
+    "guillain-barre",
+    "respiratory-failure",
+    "vital-capacity",
+    "neuromuscular",
+    "monitoring"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute neuromuscular respiratory failure)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0108.md",
+   "snippet": "A 28 year old woman is admitted because of 5 days of progressive weakness that began with difficulty walking on her toes and now prevents her from climbing stairs or lifting objects overhead. Two weeks ago she had a self limited diarrheal i",
+   "text": "Neurology Guillain-Barré Syndrome — Serial Vital Capacity to Detect Impending Respiratory Failure guillain-barre respiratory-failure vital-capacity neuromuscular monitoring USMLE-style / MedKOS (neurology · acute neuromuscular respiratory failure) A 28 year old woman is admitted because of 5 days of progressive weakness that began with difficulty walking on her toes and now prevents her from climbing stairs or lifting objects overhead. Two weeks ago she had a self limited diarrheal illness. She reports that since last night she becomes short of breath when lying flat and cannot count past 15 in a single breath. Examination shows symmetric weakness of the distal and proximal lower extremities and milder weakness of the hands, absent deep tendon reflexes in all four limbs, and mild bilateral facial weakness; sensation is mildly decreased in the feet. Vital signs and cerebrospinal fluid studies are shown, and immunomodulatory treatment is planned. Which of the following is the most appropriate method to detect impending respiratory failure in this patient? A. Arterial blood gas measurement every morning B. Continuous pulse oximetry monitoring alone C. Peak expiratory flow rate measurement D. Serial bedside measurement of forced vital capacity E. Daily portable chest radiography Progressive symmetric ascending weakness with areflexia after a diarrheal illness, facial diplegia, and cerebrospinal fluid showing elevated protein with a normal cell count indicate Guillain Barré syndrome, and her orthopnea and inability to count past 15 in one breath signal advancing diaphragmatic weakness. Neuromuscular respiratory failure must be detected by measuring respiratory muscle mechanics — serial bedside forced vital capacity (with negative inspiratory force) — because hypoxemia on oximetry and hypercapnia on blood gas appear only late, after the patient is already decompensating; a falling vital capacity approaching roughly 15–20 mL/kg is an indication for elective intubation before crisis."
+  },
+  {
+   "id": "usmle-2026-0107",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Intussusception — Pneumatic Enema as Diagnostic and Therapeutic Next Step",
+   "tags": [
+    "intussusception",
+    "pneumatic-enema",
+    "pediatric-acute-abdomen",
+    "ultrasound",
+    "bowel-obstruction"
+   ],
+   "source": "USMLE-style / MedKOS (pediatrics · acute abdomen in infancy)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0107.md",
+   "snippet": "A 9 month old boy is brought to the emergency department because of episodes of sudden inconsolable crying for the past 8 hours. During each episode he draws his legs up toward his abdomen and screams for several minutes, then becomes quiet",
+   "text": "Pediatrics Intussusception — Pneumatic Enema as Diagnostic and Therapeutic Next Step intussusception pneumatic-enema pediatric-acute-abdomen ultrasound bowel-obstruction USMLE-style / MedKOS (pediatrics · acute abdomen in infancy) A 9 month old boy is brought to the emergency department because of episodes of sudden inconsolable crying for the past 8 hours. During each episode he draws his legs up toward his abdomen and screams for several minutes, then becomes quiet and unusually drowsy until the next episode 15 to 20 minutes later. He has vomited four times and passed one stool mixed with blood and mucus. On examination between episodes he is drowsy but arousable; the abdomen is soft without rigidity or rebound tenderness, and a sausage shaped mass is palpable in the right upper quadrant. Vital signs, laboratory studies, and imaging findings are shown. After intravenous fluid resuscitation and surgical consultation, which of the following is the most appropriate next step in management? A. Emergency exploratory laparotomy B. Contrast enhanced abdominal computed tomography C. Pneumatic enema under fluoroscopic guidance D. Upper gastrointestinal contrast series E. Nasogastric decompression with inpatient observation Paroxysmal episodes of crying with drawn up legs alternating with lethargy, vomiting, blood and mucus stool, a sausage shaped right upper quadrant mass, and ultrasound showing a concentric ring shaped bowel mass in an infant establish ileocolic intussusception. In a hemodynamically stabilized child without peritonitis or free air, the treatment of choice is nonoperative reduction by pneumatic (air) enema under fluoroscopic guidance, which is therapeutic in roughly 80–90% of cases; surgery is reserved for perforation, peritonitis, or failed enema reduction."
+  },
+  {
+   "id": "usmle-2026-0106",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Ventricular Fibrillation Arrest — Immediate Defibrillation Before Drugs or Airway",
+   "tags": [
+    "ventricular-fibrillation",
+    "cardiac-arrest",
+    "defibrillation",
+    "ACLS",
+    "CPR"
+   ],
+   "source": "USMLE-style / MedKOS (emergency medicine · ACLS cardiac arrest algorithm)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0106.md",
+   "snippet": "A 58 year old man collapses in an airport terminal while walking to his gate. A bystander finds him unresponsive and begins chest compressions, and emergency medical personnel arrive within 4 minutes. He is apneic apart from occasional gasp",
+   "text": "Internal Medicine Ventricular Fibrillation Arrest — Immediate Defibrillation Before Drugs or Airway ventricular-fibrillation cardiac-arrest defibrillation ACLS CPR USMLE-style / MedKOS (emergency medicine · ACLS cardiac arrest algorithm) A 58 year old man collapses in an airport terminal while walking to his gate. A bystander finds him unresponsive and begins chest compressions, and emergency medical personnel arrive within 4 minutes. He is apneic apart from occasional gasping, and no carotid pulse is palpable. Defibrillator pads are placed while compressions continue, and the monitor shows the rhythm in the figure. Which of the following is the most appropriate immediate next step in management? A. Administer intravenous epinephrine B. Deliver an unsynchronized electrical shock C. Perform synchronized electrical cardioversion D. Administer an intravenous amiodarone bolus E. Perform endotracheal intubation before further steps A witnessed collapse with no pulse and a monitor showing a chaotic, irregular waveform without organized QRS complexes is ventricular fibrillation, a shockable arrest rhythm. The single intervention proven to restore circulation is immediate unsynchronized defibrillation with minimal interruption of compressions; every minute of delay reduces survival by roughly 7–10%. Synchronized cardioversion is impossible and inappropriate because fibrillation has no QRS complex for the device to synchronize to, and epinephrine, amiodarone, and advanced airway placement all come only after shock delivery and resumption of CPR in the ACLS algorithm."
+  },
+  {
+   "id": "usmle-2026-0105",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Carbon Monoxide Poisoning — Oxygen Content vs Normal PaO2 and Pulse Oximetry",
+   "tags": [
+    "carbon-monoxide",
+    "oxygen-delivery",
+    "hemoglobin",
+    "oxygen-dissociation-curve",
+    "pulse-oximetry"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · oxygen transport and hemoglobin binding)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0105.md",
+   "snippet": "A 34 year old man is brought to the emergency department in winter because of severe headache, nausea, dizziness, and progressive confusion that began this morning. His wife and daughter, who live in the same apartment heated by an aging ga",
+   "text": "Physiology Carbon Monoxide Poisoning — Oxygen Content vs Normal PaO2 and Pulse Oximetry carbon-monoxide oxygen-delivery hemoglobin oxygen-dissociation-curve pulse-oximetry USMLE-style / MedKOS (physiology · oxygen transport and hemoglobin binding) A 34 year old man is brought to the emergency department in winter because of severe headache, nausea, dizziness, and progressive confusion that began this morning. His wife and daughter, who live in the same apartment heated by an aging gas boiler, have milder headaches and nausea. He has no cough, chest pain, or fever, and he does not smoke. Examination shows a confused man oriented only to person; the lungs are clear to auscultation and there is no cyanosis. Vital signs and laboratory studies are shown. Which of the following best explains the impaired oxygen delivery to this patient's tissues? A. Reduced arterial oxygen content with impaired oxygen unloading in tissues B. Impaired diffusion of oxygen across the alveolar capillary membrane C. Right to left shunting of pulmonary blood past unventilated alveoli D. Oxidation of hemoglobin iron to the ferric state that cannot bind oxygen E. Uncoupling of mitochondrial electron transport from ATP synthesis Winter time headache, nausea, and confusion clustering in household members sharing a gas heated apartment, with an elevated lactate, a carboxyhemoglobin of 27%, but a normal PaO2 and normal pulse oximetry reading, indicates carbon monoxide poisoning. CO binds hemoglobin with roughly 250 fold greater affinity than oxygen, so arterial oxygen content falls even though dissolved oxygen (PaO2) — determined by alveolar gas exchange, which is intact — remains normal; CO binding also shifts the oxyhemoglobin dissociation curve leftward, impairing unloading of the oxygen that remains. Standard pulse oximetry cannot distinguish carboxyhemoglobin from oxyhemoglobin, which is why the SpO2 reading is deceptively normal."
+  },
+  {
+   "id": "usmle-2026-0104",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Medium-Chain Acyl-CoA Dehydrogenase Deficiency — Hypoketotic Hypoglycemia After Fasting",
+   "tags": [
+    "MCAD",
+    "fatty-acid-oxidation",
+    "hypoketotic-hypoglycemia",
+    "acylcarnitine",
+    "metabolic"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · fatty acid oxidation disorders)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0104.md",
+   "snippet": "A 14 month old boy is brought to the emergency department because he could not be awakened this morning. He has had 2 days of vomiting and diarrhea with poor oral intake, and he refused his evening feeding last night. He was born at term an",
+   "text": "Biochemistry Medium-Chain Acyl-CoA Dehydrogenase Deficiency — Hypoketotic Hypoglycemia After Fasting MCAD fatty-acid-oxidation hypoketotic-hypoglycemia acylcarnitine metabolic USMLE-style / MedKOS (biochemistry · fatty acid oxidation disorders) A 14 month old boy is brought to the emergency department because he could not be awakened this morning. He has had 2 days of vomiting and diarrhea with poor oral intake, and he refused his evening feeding last night. He was born at term and his development has been normal. On arrival he is lethargic and minimally responsive, with a soft abdomen and a liver edge palpable 2 cm below the costal margin. Vital signs and laboratory studies are shown. Impaired activity of which of the following enzymes is the most likely cause of this patient's condition? A. Carnitine palmitoyltransferase I B. Glucose 6 phosphatase C. Liver glycogen phosphorylase D. HMG CoA lyase E. Medium chain acyl CoA dehydrogenase Fasting stress from gastroenteritis in a toddler producing profound hypoglycemia with inappropriately absent urine ketones, mild hyperammonemia, mild transaminase elevation, hepatomegaly, and a markedly elevated octanoylcarnitine (C8) on the plasma acylcarnitine profile is the signature of medium chain acyl CoA dehydrogenase (MCAD) deficiency. Blocked mitochondrial beta oxidation of medium chain fatty acids deprives the liver of acetyl CoA, simultaneously preventing ketogenesis and crippling gluconeogenesis, so fasting produces hypoketotic hypoglycemia; accumulating medium chain species are exported as C8 acylcarnitine, the diagnostic marker."
+  },
+  {
+   "id": "usmle-2026-0103",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Hereditary Angioedema — Bradykinin as the Effector Mediator of C1 Inhibitor Deficiency",
+   "tags": [
+    "hereditary-angioedema",
+    "C1-inhibitor",
+    "bradykinin",
+    "complement",
+    "kallikrein"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · complement and contact-system regulation)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0103.md",
+   "snippet": "A 23 year old woman comes to the clinic because of recurrent episodes of swelling of her lips and hands over the past 4 years. Each episode develops over several hours, lasts 2 to 3 days, and resolves without treatment; the swelling is not ",
+   "text": "Immunology Hereditary Angioedema — Bradykinin as the Effector Mediator of C1 Inhibitor Deficiency hereditary-angioedema C1-inhibitor bradykinin complement kallikrein USMLE-style / MedKOS (immunology · complement and contact-system regulation) A 23 year old woman comes to the clinic because of recurrent episodes of swelling of her lips and hands over the past 4 years. Each episode develops over several hours, lasts 2 to 3 days, and resolves without treatment; the swelling is not itchy, and no hives have ever accompanied it. She has also had several episodes of severe crampy abdominal pain with vomiting that resolved spontaneously. Prior episodes did not improve with antihistamines or glucocorticoids. Her father has had similar episodes since adolescence. The current episode began the day after a dental extraction. Examination shows nonpitting, nonerythematous edema of the lips and dorsum of both hands without urticaria. Vital signs and laboratory studies are shown. Increased activity of which of the following mediators is most directly responsible for this patient's episodes of swelling? A. Histamine B. Bradykinin C. Leukotriene C4 D. Complement C5a E. Substance P Recurrent nonpruritic angioedema without urticaria, unresponsive to antihistamines and glucocorticoids, with a positive family history, attacks triggered by dental trauma, low C4, and low C1 inhibitor functional activity indicates hereditary angioedema. C1 inhibitor normally restrains plasma kallikrein and factor XIIa of the contact system; its deficiency permits unchecked kallikrein mediated cleavage of high molecular weight kininogen, generating excess bradykinin, which increases vascular permeability and produces the episodic edema. The histamine pathway is not involved, which is why urticaria is absent and antihistamines fail."
+  },
   {
    "id": "paper-2026-0440",
    "type": "paper",
