@@ -614,15 +614,39 @@
     return n === 0 ? "오늘" : (n > 0 ? "D-" + n : "지남 " + (-n) + "일");
   }
 
+  function coCard(q, i) {
+    var img = q.image
+      ? '<a href="' + esc(q.image) + '" target="_blank" rel="noopener" class="co-fig">'
+        + '<img loading="lazy" src="' + esc(q.image) + '" alt="문항 도해" /></a>'
+      : "";
+    return '<li class="co-q">' + img
+      + '<div class="co-qt"><b>' + esc(q.stem) + "</b>"
+      + '<button class="co-rev" data-q="' + esc(q.id) + '" type="button">정답·해설 보기</button>'
+      + '<div class="co-ans hidden" id="ans-' + esc(q.id) + '">'
+      + "<b>정답</b> " + esc(q.answer)
+      + (q.explanation ? "<p><b>해설</b> " + esc(q.explanation) + "</p>" : "")
+      + "</div></div></li>";
+  }
+
   function coQuestionList(no) {
     var qs = coQuestions(no);
-    if (!qs.length) return '<p class="muted">이 회차 문항은 아직 없습니다.</p>';
-    return '<ol class="co-qs">' + qs.map(function (q, i) {
-      return "<li><b>" + esc(q.stem) + "</b>"
-        + '<button class="co-rev" data-q="' + esc(q.id) + '" type="button">정답 보기</button>'
-        + '<div class="co-ans hidden" id="ans-' + esc(q.id) + '">'
-        + "<b>" + esc(q.answer) + "</b><p>" + esc(q.explanation || "") + "</p></div></li>";
-    }).join("") + "</ol>";
+    // 실사(카데바) 문항은 **웹에 그림이 없다**(publishable:false). 지문만 남으면
+    // '번호핀 ①이 가리키는…' 이 그림 없이 읽혀 쓸모가 없다 → 기본에서 접고,
+    // 그림이 있는 문항만 펼쳐 둔다. 실사는 서브노트 PDF 로 푼다.
+    var withFig = qs.filter(function (q) { return !!q.image; });
+    var pdfOnly = qs.filter(function (q) { return !q.image; });
+    var h = "";
+    if (withFig.length) {
+      h += '<ol class="co-qs">' + withFig.map(coCard).join("") + "</ol>";
+    } else {
+      h += '<p class="muted">이 회차는 화면에서 풀 수 있는 도해 문항이 아직 없습니다.</p>';
+    }
+    if (pdfOnly.length) {
+      h += '<details class="co-pdfonly"><summary>서브노트 PDF 전용 문항 ' + pdfOnly.length
+        + "개 — 카데바 실사라 웹에는 그림이 안 실립니다</summary>"
+        + '<ol class="co-qs">' + pdfOnly.map(coCard).join("") + "</ol></details>";
+    }
+    return h;
   }
 
   function coBody(s) {
