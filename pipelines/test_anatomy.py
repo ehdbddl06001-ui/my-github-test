@@ -498,6 +498,31 @@ def test_web_bundle_is_ordered_by_session() -> None:
     assert guides == sorted(guides, key=lambda g: g["session"]), "서브노트가 회차순이 아니다"
 
 
+def test_every_session_has_a_web_solvable_question() -> None:
+    """회차마다 **화면에서 풀 수 있는(그림 있는) 문항**이 있어야 한다(2026-08-17).
+
+    실사(카데바) 문항은 publishable:false 라 웹에 그림이 안 실린다 — 지문만 남으면
+    '번호핀 ①이 가리키는…' 이 그림 없이 읽혀 쓸모가 없다. 계보 트리 퀴즈판은 자체
+    제작이라 공개 가능하므로, 트리가 있는 회차는 반드시 그림 문항을 갖는다.
+    """
+    import json
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "gen_tree_questions.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"gen_tree_questions selftest 실패: {r.stdout}{r.stderr}"
+    root = Path(__file__).resolve().parents[1]
+    raw = (root / "docs/anatomy-data.js").read_text(encoding="utf-8")
+    data = json.loads(raw[raw.index("{"):raw.rindex(";")])
+    with_fig = {q["session"] for q in data["questions"] if q.get("image")}
+    sys.path.insert(0, str(Path(__file__).parent))
+    from branch_specs import SPECS
+    import re as _re
+    tree_sessions = {int(m.group(1)) for k in SPECS
+                     if (m := _re.fullmatch(r"s(\d\d)-(?:nerve|vessel|bundle)", k))}
+    missing = sorted(tree_sessions - with_fig)
+    assert not missing, f"트리는 있는데 그림 문항이 없는 회차: {missing}"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

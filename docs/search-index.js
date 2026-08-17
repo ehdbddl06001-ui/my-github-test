@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1388,
+  "total": 1406,
   "byType": {
    "paper": 440,
-   "anatomy": 310,
+   "anatomy": 328,
    "kmle": 555,
    "usmle": 66,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 310,
+   "Anatomy": 328,
    "Cardiology": 126,
    "Nephrology": 113,
    "Infectious Disease": 89,
@@ -54,10 +54,10 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 607,
-   "high": 732,
+   "high": 750,
    "low": 49
   },
-  "tagCount": 2108
+  "tagCount": 2112
  },
  "docs": [
   {
@@ -4033,6 +4033,384 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0149",
+   "type": "anatomy",
+   "unit": "7회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "목뿌리·종아리의 동맥과 정맥 — 계보 퀴즈판 (7회차 혈관 계보(동맥+정맥))",
+   "tags": [
+    "계보",
+    "도해",
+    "7회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 §목의 뿌리 · 종아리 가쪽·뒤 · 발바닥 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0149.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s07 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s07 vessel labeled.svg 로.",
+   "text": "Anatomy 목뿌리·종아리의 동맥과 정맥 — 계보 퀴즈판 (7회차 혈관 계보(동맥+정맥)) 7회차 · 목·다리 계보 도해 7회차 혈관 계보(동맥+정맥) 예습시험 태깅 7회차 §목의 뿌리 · 종아리 가쪽·뒤 · 발바닥 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s07 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s07 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0148",
+   "type": "anatomy",
+   "unit": "7회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "목뿌리·발목의 신경 — 계보 퀴즈판 (7회차 신경 계보)",
+   "tags": [
+    "계보",
+    "도해",
+    "7회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 §목의 뿌리·인두 · 종아리 가쪽 · 발목 안쪽면 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0148.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s07 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s07 nerve labeled.svg 로.",
+   "text": "Anatomy 목뿌리·발목의 신경 — 계보 퀴즈판 (7회차 신경 계보) 7회차 · 목·다리 계보 도해 7회차 신경 계보 예습시험 태깅 7회차 §목의 뿌리·인두 · 종아리 가쪽 · 발목 안쪽면 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s07 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s07 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0147",
+   "type": "anatomy",
+   "unit": "7회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 위가슴문·발목 — 계보 퀴즈판 (7회차 함께 지나는 것(신경혈관다발))",
+   "tags": [
+    "계보",
+    "도해",
+    "7회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 §목의 뿌리 · 발목 안쪽면 · 종아리 가쪽 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0147.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s07 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s07 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 위가슴문·발목 — 계보 퀴즈판 (7회차 함께 지나는 것(신경혈관다발)) 7회차 · 목·다리 계보 도해 7회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 7회차 §목의 뿌리 · 발목 안쪽면 · 종아리 가쪽 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s07 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s07 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0146",
+   "type": "anatomy",
+   "unit": "6회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "바깥목동맥과 넙다리동맥 — 계보 퀴즈판 (6회차 혈관 계보(동맥+정맥))",
+   "tags": [
+    "계보",
+    "도해",
+    "6회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 §목동맥삼각 · 넙다리삼각 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0146.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s06 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s06 vessel labeled.svg 로.",
+   "text": "Anatomy 바깥목동맥과 넙다리동맥 — 계보 퀴즈판 (6회차 혈관 계보(동맥+정맥)) 6회차 · 목·다리 계보 도해 6회차 혈관 계보(동맥+정맥) 예습시험 태깅 6회차 §목동맥삼각 · 넙다리삼각 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s06 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s06 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0145",
+   "type": "anatomy",
+   "unit": "6회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "목·다리 앞의 신경 계보 — 계보 퀴즈판 (6회차 신경 계보)",
+   "tags": [
+    "계보",
+    "도해",
+    "6회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 §목의 삼각 · 넓적다리 앞칸·안쪽칸 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0145.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s06 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s06 nerve labeled.svg 로.",
+   "text": "Anatomy 목·다리 앞의 신경 계보 — 계보 퀴즈판 (6회차 신경 계보) 6회차 · 목·다리 계보 도해 6회차 신경 계보 예습시험 태깅 6회차 §목의 삼각 · 넓적다리 앞칸·안쪽칸 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s06 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s06 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0144",
+   "type": "anatomy",
+   "unit": "6회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 목·넙다리 — 계보 퀴즈판 (6회차 함께 지나는 것(신경혈관다발))",
+   "tags": [
+    "계보",
+    "도해",
+    "6회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 §목동맥삼각 · 넙다리삼각 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0144.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s06 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s06 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 목·넙다리 — 계보 퀴즈판 (6회차 함께 지나는 것(신경혈관다발)) 6회차 · 목·다리 계보 도해 6회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 6회차 §목동맥삼각 · 넙다리삼각 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s06 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s06 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0143",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴·가슴벽의 동맥과 정맥 — 계보 퀴즈판 (4회차 혈관 계보(동맥+정맥))",
+   "tags": [
+    "계보",
+    "도해",
+    "4회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "4회차 §얼굴동맥·얕은관자동맥 · 큰가슴근부위 · 가슴벽 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0143.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s04 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s04 vessel labeled.svg 로.",
+   "text": "Anatomy 얼굴·가슴벽의 동맥과 정맥 — 계보 퀴즈판 (4회차 혈관 계보(동맥+정맥)) 4회차 · 가슴·머리 계보 도해 4회차 혈관 계보(동맥+정맥) 예습시험 태깅 4회차 §얼굴동맥·얕은관자동맥 · 큰가슴근부위 · 가슴벽 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s04 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s04 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0142",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴의 두 신경 — VII과 V — 계보 퀴즈판 (4회차 신경 계보)",
+   "tags": [
+    "계보",
+    "도해",
+    "4회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "4회차 §얼굴신경 · 삼차신경 · 씹기근육 (부위 기준 배정) — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0142.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s04 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s04 nerve labeled.svg 로.",
+   "text": "Anatomy 얼굴의 두 신경 — VII과 V — 계보 퀴즈판 (4회차 신경 계보) 4회차 · 가슴·머리 계보 도해 4회차 신경 계보 예습시험 태깅 4회차 §얼굴신경 · 삼차신경 · 씹기근육 (부위 기준 배정) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s04 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s04 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0141",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 귀밑샘·갈비사이 — 계보 퀴즈판 (4회차 함께 지나는 것(신경혈관다발))",
+   "tags": [
+    "계보",
+    "도해",
+    "4회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "4회차 §귀밑샘 · 가슴벽 갈비사이 · 세모가슴근고랑 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0141.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s04 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s04 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 귀밑샘·갈비사이 — 계보 퀴즈판 (4회차 함께 지나는 것(신경혈관다발)) 4회차 · 가슴·머리 계보 도해 4회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 4회차 §귀밑샘 · 가슴벽 갈비사이 · 세모가슴근고랑 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s04 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s04 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0140",
+   "type": "anatomy",
+   "unit": "3회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "빗장밑동맥과 오금동맥 — 계보 퀴즈판 (3회차 혈관 계보(동맥+정맥))",
+   "tags": [
+    "계보",
+    "도해",
+    "3회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 §뒤통수밑삼각·어깨뼈부위·다리오금 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0140.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s03 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s03 vessel labeled.svg 로.",
+   "text": "Anatomy 빗장밑동맥과 오금동맥 — 계보 퀴즈판 (3회차 혈관 계보(동맥+정맥)) 3회차 · 등·다리 계보 도해 3회차 혈관 계보(동맥+정맥) 예습시험 태깅 3회차 §뒤통수밑삼각·어깨뼈부위·다리오금 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s03 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s03 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0139",
+   "type": "anatomy",
+   "unit": "3회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "궁둥신경에서 발까지 — 계보 퀴즈판 (3회차 신경 계보)",
+   "tags": [
+    "계보",
+    "도해",
+    "3회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 §다리오금·종아리 뒤부위 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0139.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s03 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s03 nerve labeled.svg 로.",
+   "text": "Anatomy 궁둥신경에서 발까지 — 계보 퀴즈판 (3회차 신경 계보) 3회차 · 등·다리 계보 도해 3회차 신경 계보 예습시험 태깅 3회차 §다리오금·종아리 뒤부위 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s03 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s03 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0138",
+   "type": "anatomy",
+   "unit": "3회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 오금·어깨뼈 — 계보 퀴즈판 (3회차 함께 지나는 것(신경혈관다발))",
+   "tags": [
+    "계보",
+    "도해",
+    "3회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 §다리오금 · 어깨뼈부위 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0138.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s03 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s03 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 오금·어깨뼈 — 계보 퀴즈판 (3회차 함께 지나는 것(신경혈관다발)) 3회차 · 등·다리 계보 도해 3회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 3회차 §다리오금 · 어깨뼈부위 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s03 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s03 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0137",
+   "type": "anatomy",
+   "unit": "2회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "등·볼기의 혈관 계보 — 계보 퀴즈판 (2회차 혈관 계보(동맥+정맥))",
+   "tags": [
+    "계보",
+    "도해",
+    "2회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2회차 §볼기부위 혈관 · 등 얕은층 혈관 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0137.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s02 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s02 vessel labeled.svg 로.",
+   "text": "Anatomy 등·볼기의 혈관 계보 — 계보 퀴즈판 (2회차 혈관 계보(동맥+정맥)) 2회차 · 등·다리 계보 도해 2회차 혈관 계보(동맥+정맥) 예습시험 태깅 2회차 §볼기부위 혈관 · 등 얕은층 혈관 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s02 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s02 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0136",
+   "type": "anatomy",
+   "unit": "2회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "등·볼기의 신경 계보 — 계보 퀴즈판 (2회차 신경 계보)",
+   "tags": [
+    "계보",
+    "도해",
+    "2회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2회차 §등 얕은층~깊은층 · 볼기부위 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0136.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s02 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s02 nerve labeled.svg 로.",
+   "text": "Anatomy 등·볼기의 신경 계보 — 계보 퀴즈판 (2회차 신경 계보) 2회차 · 등·다리 계보 도해 2회차 신경 계보 예습시험 태깅 2회차 §등 얕은층~깊은층 · 볼기부위 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s02 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s02 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0135",
+   "type": "anatomy",
+   "unit": "2회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 등·볼기 — 계보 퀴즈판 (2회차 함께 지나는 것(신경혈관다발))",
+   "tags": [
+    "계보",
+    "도해",
+    "2회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2회차 §볼기부위 — 큰궁둥구멍 통과 구조물 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0135.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s02 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s02 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 등·볼기 — 계보 퀴즈판 (2회차 함께 지나는 것(신경혈관다발)) 2회차 · 등·다리 계보 도해 2회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 2회차 §볼기부위 — 큰궁둥구멍 통과 구조물 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s02 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s02 bundle labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0134",
+   "type": "anatomy",
+   "unit": "1회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "다리의 얕은정맥과 깊은정맥 — 계보 퀴즈판 (1회차 혈관 계보(동맥+정맥))",
+   "tags": [
+    "계보",
+    "도해",
+    "1회차",
+    "혈관 계보(동맥+정맥)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "1회차 §피부벗기기 — 얕은근막의 내용물 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0134.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s01 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s01 vessel labeled.svg 로.",
+   "text": "Anatomy 다리의 얕은정맥과 깊은정맥 — 계보 퀴즈판 (1회차 혈관 계보(동맥+정맥)) 1회차 · 등·다리 계보 도해 1회차 혈관 계보(동맥+정맥) 예습시험 태깅 1회차 §피부벗기기 — 얕은근막의 내용물 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s01 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s01 vessel labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0133",
+   "type": "anatomy",
+   "unit": "1회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "척수신경에서 피부신경까지 — 계보 퀴즈판 (1회차 신경 계보)",
+   "tags": [
+    "계보",
+    "도해",
+    "1회차",
+    "신경 계보",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "1회차 과제 §앞가지·뒤가지 + Lower limb Superficial layer — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0133.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s01 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s01 nerve labeled.svg 로.",
+   "text": "Anatomy 척수신경에서 피부신경까지 — 계보 퀴즈판 (1회차 신경 계보) 1회차 · 등·다리 계보 도해 1회차 신경 계보 예습시험 태깅 1회차 과제 §앞가지·뒤가지 + Lower limb Superficial layer — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s01 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s01 nerve labeled.svg 로."
+  },
+  {
+   "id": "anatomy-2026-0132",
+   "type": "anatomy",
+   "unit": "1회차 · 등·다리",
+   "topic": "Anatomy",
+   "subtopic": "함께 지나는 것 — 얕은층 — 계보 퀴즈판 (1회차 함께 지나는 것(신경혈관다발))",
+   "tags": [
+    "계보",
+    "도해",
+    "1회차",
+    "함께 지나는 것(신경혈관다발)",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "1회차 §피부벗기기 — 얕은근막의 내용물 — 자체 제작 계보 트리(branch_specs.py)",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0132.md",
+   "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s01 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s01 bundle labeled.svg 로.",
+   "text": "Anatomy 함께 지나는 것 — 얕은층 — 계보 퀴즈판 (1회차 함께 지나는 것(신경혈관다발)) 1회차 · 등·다리 계보 도해 1회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 1회차 §피부벗기기 — 얕은근막의 내용물 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s01 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s01 bundle labeled.svg 로."
   },
   {
    "id": "anatomy-2026-0112",
