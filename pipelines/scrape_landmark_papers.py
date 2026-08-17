@@ -36,6 +36,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 import urllib.parse
@@ -98,8 +99,33 @@ def _num(v):
         return None
 
 
-def icite(pmids: list[str], fixture: str | None = None) -> dict[str, dict]:
-    """PMID → {citations, rcr, nih_percentile, year}. 200개씩 배치로 조회."""
+# iCite 응답의 필드명은 API 판올림(legacy 토글 포함)에 따라 흔들린다. 하나만 보고
+# 있으면 이름이 바뀐 순간 '인용 0회'로 조용히 무너진다 — 실제로 그렇게 5주간 랜드마크가
+# 0편이었다(2026-07-13~08-10 CI: 전 주제 "인용 50회 이상 후보 없음"). 그래서 알려진
+# 별칭을 순서대로 훑고, 하나도 못 찾으면 '0'이 아니라 None(=지표 없음)으로 남긴다.
+CITATION_KEYS = ("citation_count", "citationCount", "citations", "cited_by_count")
+RCR_KEYS = ("relative_citation_ratio", "relativeCitationRatio", "rcr")
+PERCENTILE_KEYS = ("nih_percentile", "nihPercentile", "percentile")
+
+
+def _first(row: dict, keys: tuple[str, ...]) -> float | None:
+    """별칭 후보를 순서대로 보고 처음 숫자로 읽히는 값을 반환(없으면 None)."""
+    for k in keys:
+        if k in row:
+            v = _num(row[k])
+            if v is not None:
+                return v
+    return None
+
+
+def icite(pmids: list[str], fixture: str | None = None,
+          debug: bool = False) -> dict[str, dict]:
+    """PMID → {citations, rcr, nih_percentile, year}. 200개씩 배치로 조회.
+
+    인용수를 못 읽은 논문은 `citations: None` 으로 남긴다(0으로 눌러쓰지 않는다).
+    0으로 채우면 '인용이 없는 논문'과 'API가 값을 안 준 논문'이 구분되지 않아,
+    장애가 "고인용 후보 없음"이라는 정상 메시지로 위장된다.
+    """
     if fixture:
         raw = json.loads(Path(fixture).read_text(encoding="utf-8")).get("data", [])
         rows = raw
@@ -110,19 +136,27 @@ def icite(pmids: list[str], fixture: str | None = None) -> dict[str, dict]:
             url = f"{ICITE}?" + urllib.parse.urlencode({"pmids": ",".join(batch), "legacy": "false"})
             rows.extend(json.loads(_get(url)).get("data", []))
             time.sleep(0.3)  # API 예절
+    if debug and rows:
+        print(f"  [debug] iCite 응답 {len(rows)}행, 첫 행 키: {sorted(rows[0])}", file=sys.stderr)
+        print(f"  [debug] 첫 행: {json.dumps(rows[0], ensure_ascii=False)[:400]}", file=sys.stderr)
     out: dict[str, dict] = {}
     for r in rows:
         pmid = str(r.get("pmid", ""))
         if not pmid:
             continue
-        cc = _num(r.get("citation_count"))
+        cc = _first(r, CITATION_KEYS)
         out[pmid] = {
-            "citations": int(cc) if cc is not None else 0,
-            "rcr": _num(r.get("relative_citation_ratio")),
-            "nih_percentile": _num(r.get("nih_percentile")),
+            "citations": int(cc) if cc is not None else None,
+            "rcr": _first(r, RCR_KEYS),
+            "nih_percentile": _first(r, PERCENTILE_KEYS),
             "year": r.get("year"),
         }
     return out
+
+
+def coverage(metrics: dict[str, dict]) -> int:
+    """인용수를 실제로 읽어낸 논문 수. 0이면 랭킹은 의미가 없다(=지표 장애)."""
+    return sum(1 for m in metrics.values() if m.get("citations") is not None)
 
 
 # ── 랭킹 ───────────────────────────────────────────────────────────────────
@@ -131,7 +165,7 @@ def rank(recs: list[dict], metrics: dict[str, dict], min_citations: int) -> list
     scored = []
     for rec in recs:
         m = metrics.get(rec["pmid"])
-        if not m or m["citations"] < min_citations:
+        if not m or m.get("citations") is None or m["citations"] < min_citations:
             continue
         rec = {**rec, **m}
         scored.append(rec)
@@ -222,13 +256,61 @@ def save_card(rec: dict, topic: str, today: str) -> Path:
     return path
 
 
+# ── 논문 탭 균형(최신 : 랜드마크) ───────────────────────────────────────────
+def corpus_balance() -> tuple[int, int]:
+    """저장된 논문 카드를 (랜드마크, 최신) 으로 센다. content 가 SoT — 파생 상태 없음."""
+    landmark = recency = 0
+    if not PAPERS_DIR.exists():
+        return 0, 0
+    pat = re.compile(r"^landmark:\s*true\s*$", re.MULTILINE | re.IGNORECASE)
+    for p in PAPERS_DIR.rglob("*.md"):
+        if pat.search(p.read_text(encoding="utf-8")):
+            landmark += 1
+        else:
+            recency += 1
+    return landmark, recency
+
+
+def balance_deficit(target_ratio: float) -> int:
+    """탭이 target_ratio(랜드마크 비중)에 닿으려면 몇 편이 더 필요한가.
+
+    최신 스크랩은 매일(주제당 1편), 랜드마크는 주간이라 편수를 고정하면 비율이 영영
+    안 맞는다. 그래서 '주당 몇 편'이 아니라 **저장된 코퍼스의 현재 비율**에서 부족분을
+    역산한다. 최신이 늘면 랜드마크 몫도 자동으로 따라 늘어난다(자기 균형).
+    """
+    landmark, recency = corpus_balance()
+    if target_ratio >= 1.0:
+        return max(0, recency + landmark)
+    # landmark / (landmark + recency) == target_ratio 를 만족시키는 landmark 목표치
+    want = target_ratio * recency / (1.0 - target_ratio)
+    return max(0, int(round(want)) - landmark)
+
+
 # ── 오케스트레이션 ──────────────────────────────────────────────────────────
 def run(topics: dict[str, str], pool: int, per_topic: int, min_citations: int,
         since_year: int | None, evidence_filter: bool, dry_run: bool,
-        fixture: str | None, icite_fixture: str | None) -> int:
+        fixture: str | None, icite_fixture: str | None,
+        target_ratio: float | None = None, max_run: int | None = None,
+        debug: bool = False) -> int:
     today = date.today().isoformat()
     saved, skipped = 0, 0
+    # 지표 장애 감지용: 후보를 실제로 받아온 주제 수 vs 인용수를 읽어낸 주제 수.
+    topics_with_candidates = topics_with_metrics = 0
 
+    # 균형 모드: 이번 실행의 전체 예산을 코퍼스 부족분에서 역산한다.
+    budget: int | None = None
+    if target_ratio is not None:
+        landmark, recency = corpus_balance()
+        deficit = balance_deficit(target_ratio)
+        budget = deficit if max_run is None else min(deficit, max_run)
+        print(f"현재 논문 탭: 랜드마크 {landmark}편 / 최신 {recency}편 "
+              f"→ 목표 비중 {target_ratio:.0%}, 부족 {deficit}편, 이번 실행 예산 {budget}편")
+        if budget <= 0:
+            print("이미 목표 비중 충족 — 저장할 것 없음")
+            return 0
+
+    # 1단계: 주제별로 후보를 모아 인용순 랭킹만 만든다(저장은 2단계에서 균등 배분).
+    ranked_by_topic: dict[str, list[dict]] = {}
     for topic, query in topics.items():
         if evidence_filter and not fixture:
             query = f"{query} {EVIDENCE_FILTER}"
@@ -242,47 +324,98 @@ def run(topics: dict[str, str], pool: int, per_topic: int, min_citations: int,
                     continue
                 recs = parse_articles(efetch(pmids))
                 time.sleep(0.4)  # NCBI 예절
-            metrics = icite([r["pmid"] for r in recs], icite_fixture)
+            metrics = icite([r["pmid"] for r in recs], icite_fixture, debug=debug)
         except Exception as e:  # 네트워크·파싱 실패는 한 주제만 건너뛰고 계속
             print(f"[{topic}] 가져오기 실패: {e}", file=sys.stderr)
             continue
 
-        ranked = rank(recs, metrics, min_citations)
-        if not ranked:
-            print(f"[{topic}] 인용 {min_citations}회 이상 후보 없음")
+        topics_with_candidates += 1
+        got = coverage(metrics)
+        if got:
+            topics_with_metrics += 1
+        else:
+            # 여기서 침묵하면 장애가 '고인용 후보 없음'으로 위장된다 — 반드시 구분해 알린다.
+            print(f"[{topic}] iCite 인용지표를 한 건도 못 읽음 "
+                  f"(후보 {len(recs)}편) — 랭킹 불가", file=sys.stderr)
             continue
 
-        taken = 0
-        for rec in ranked:
-            if taken >= per_topic:
+        ranked = rank(recs, metrics, min_citations)
+        if not ranked:
+            top = max((m["citations"] for m in metrics.values()
+                       if m.get("citations") is not None), default=0)
+            print(f"[{topic}] 인용 {min_citations}회 이상 후보 없음 "
+                  f"(지표 확보 {got}편, 최고 인용 {top}회)")
+            continue
+        ranked_by_topic[topic] = ranked
+
+    # 지표를 한 주제도 못 읽었다면 그건 '랜드마크가 없다'가 아니라 장애다 → 빨갛게 실패.
+    if topics_with_candidates and not topics_with_metrics:
+        print("\n[치명] 모든 주제에서 iCite 인용지표를 못 읽었다. API 응답 형식이 바뀌었거나 "
+              "차단됐을 수 있다 — --debug-icite 로 원본 응답을 확인하라.", file=sys.stderr)
+        return 1
+
+    # 2단계: 주제를 라운드로빈으로 돌며 저장 — 한 주제가 예산을 독식하지 않게.
+    cursors = {t: 0 for t in ranked_by_topic}
+    taken_by_topic = {t: 0 for t in ranked_by_topic}
+    while ranked_by_topic:
+        progressed = False
+        for topic in list(ranked_by_topic):
+            if budget is not None and saved >= budget:
+                ranked_by_topic.clear()
                 break
-            if paper_seen(rec["pmid"]):
-                skipped += 1
+            if taken_by_topic[topic] >= per_topic:
                 continue
+            ranked = ranked_by_topic[topic]
+            rec = None
+            while cursors[topic] < len(ranked):
+                cand = ranked[cursors[topic]]
+                cursors[topic] += 1
+                if paper_seen(cand["pmid"]):
+                    skipped += 1
+                    continue
+                rec = cand
+                break
+            if rec is None:
+                continue
+            progressed = True
+            taken_by_topic[topic] += 1
+            saved += 1
             if dry_run:
                 rcr = f" RCR {rec['rcr']:.2f}" if rec.get("rcr") is not None else ""
                 print(f"[{topic}] TOP  인용 {rec['citations']:>5}{rcr}  {rec['pmid']}  {rec['title'][:64]}")
-                saved += 1
-                taken += 1
                 continue
             path = save_card(rec, topic, today)
             print(f"[{topic}] 저장 (인용 {rec['citations']}) {path.relative_to(ROOT)}")
-            saved += 1
-            taken += 1
+        if not progressed:
+            break  # 모든 주제가 소진됨(후보 고갈 또는 per_topic 상한 도달)
 
     verb = "선정" if dry_run else "저장"
     print(f"\n랜드마크 {verb} {saved}편, 중복 건너뜀 {skipped}편")
+    if target_ratio is not None and not dry_run:
+        landmark, recency = corpus_balance()
+        total = landmark + recency
+        pct = (landmark / total * 100) if total else 0.0
+        print(f"저장 후 논문 탭: 랜드마크 {landmark}편 / 최신 {recency}편 (랜드마크 {pct:.1f}%)")
     return 0
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="파트별 고인용 랜드마크 논문 → Markdown 카드")
-    ap.add_argument("--pool", type=int, default=80,
-                    help="주제당 후보 풀 크기(관련도순 esearch retmax, 기본 80)")
-    ap.add_argument("--max", type=int, default=2, dest="per_topic",
-                    help="주제당 저장할 상위 편수(기본 2)")
-    ap.add_argument("--min-citations", type=int, default=50,
-                    help="이 인용수 미만은 제외(기본 50)")
+    ap.add_argument("--pool", type=int, default=400,
+                    help="주제당 후보 풀 크기(관련도순 esearch retmax, 기본 400). "
+                         "'수천 회 인용' 급을 만나려면 풀이 커야 한다.")
+    ap.add_argument("--max", type=int, default=8, dest="per_topic",
+                    help="주제당 저장할 상위 편수(기본 8)")
+    ap.add_argument("--min-citations", type=int, default=1000,
+                    help="이 인용수 미만은 제외(기본 1000 — 교과서에 실릴 급). "
+                         "후보가 마르면 낮춰서 다시 돌린다.")
+    ap.add_argument("--target-ratio", type=float,
+                    help="논문 탭에서 랜드마크가 차지할 목표 비중(예: 0.5). 지정하면 "
+                         "저장된 코퍼스의 부족분을 역산해 그만큼만 채운다(자기 균형).")
+    ap.add_argument("--max-run", type=int,
+                    help="--target-ratio 사용 시 한 실행에서 저장할 상한(폭주 방지)")
+    ap.add_argument("--debug-icite", action="store_true",
+                    help="iCite 원본 응답의 첫 행과 키를 찍는다(형식 변경 진단용)")
     ap.add_argument("--since-year", type=int,
                     help="이 연도 이후 게재만 후보로(생략 시 제한 없음)")
     ap.add_argument("--no-evidence-filter", action="store_true",
@@ -303,6 +436,7 @@ def main() -> int:
     return run(
         topics, args.pool, args.per_topic, args.min_citations, args.since_year,
         not args.no_evidence_filter, args.dry_run, args.fixture, args.icite_fixture,
+        args.target_ratio, args.max_run, args.debug_icite,
     )
 
 
