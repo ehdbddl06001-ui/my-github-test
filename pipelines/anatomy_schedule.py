@@ -173,9 +173,84 @@ ANSWER_RULES = {
 }
 
 
+# 부위 코드 → 한글. 카드 frontmatter 의 region/regions 값이 여기 키다.
+REGION_LABELS = {
+    "back": "등",
+    "lower-limb": "다리",
+    "upper-limb": "팔",
+    "neck": "목",
+    "head": "머리",
+    "thorax": "가슴",
+    "abdomen": "배",
+    "pelvis-perineum": "골반·회음",
+    "pelvis": "골반",
+    "multi": "여러 부위",
+}
+
+
 def session_detail(no: int) -> dict:
     """회차 상세(확정본). 없으면 빈 dict."""
     return SESSION_DETAILS.get(no, {})
+
+
+def session_no_for_date(d: date) -> int | None:
+    """수업일 → 회차 번호(1부터). 수업일이 아니면 None."""
+    for i, s in enumerate(SCHEDULE_2026, 1):
+        if s["date"] == d:
+            return i
+    return None
+
+
+def region_label(regions) -> str:
+    """부위 코드(문자열 또는 리스트) → '등·다리' 같은 한글 라벨."""
+    if not regions:
+        return ""
+    if isinstance(regions, str):
+        regions = [regions]
+    seen, out = set(), []
+    for r in regions:
+        key = str(r).strip()
+        label = REGION_LABELS.get(key, key)
+        if label and label not in seen:
+            seen.add(label)
+            out.append(label)
+    return "·".join(out)
+
+
+def unit_label(meta: dict) -> str:
+    """해부 카드 → '2회차 · 등' 같은 소속 라벨(결정론).
+
+    날짜순으로 늘어놓은 목록에서 '이게 몇 회차의 어느 부위냐'를 한눈에 보여준다.
+    회차는 frontmatter 의 `session_no`, 없으면 `scheduled_dates` 를 시간표에 대조해
+    구한다(시간표가 유일 기준 — 파일명·수업계획서 날짜를 쓰지 않는다).
+    부위는 `region`(또는 daily plan 의 `regions`), `multi` 뿐이면 그 회차의 시간표
+    부위로 넓혀 적는다.
+    """
+    if meta.get("session_no"):
+        sessions = [int(meta["session_no"])]
+    else:
+        # 두 회차에 걸쳐 배우는 페이지 카드가 있다 → 걸린 회차를 모두 적는다(9·11회차).
+        sessions = []
+        for raw in meta.get("scheduled_dates", []) or []:
+            try:
+                d = raw if isinstance(raw, date) else date.fromisoformat(str(raw))
+            except ValueError:
+                continue
+            no = session_no_for_date(d)
+            if no and no not in sessions:
+                sessions.append(no)
+        sessions.sort()
+
+    regions = meta.get("region") or meta.get("regions") or []
+    label = region_label(regions)
+    if label in ("", "여러 부위") and sessions:
+        sched = SCHEDULE_2026[sessions[0] - 1] if sessions[0] <= len(SCHEDULE_2026) else {}
+        label = region_label(sched.get("regions", [])) or label
+
+    if not sessions:
+        return label
+    head = "·".join(str(s) for s in sessions) + "회차"
+    return f"{head} · {label}" if label else head
 
 
 def kst_today() -> date:
