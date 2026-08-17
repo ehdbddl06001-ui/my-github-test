@@ -134,11 +134,18 @@ merge=medkos-state`) + `pipelines/merge_state.py`(union/최댓값)가 자동 병
 - `/index-db` : 색인 재빌드/검증
 
 
-## Codex ↔ Claude Code 협업
-- 공통 규칙은 `AGENTS.md`와 `docs/AI_COLLABORATION.md`를 먼저 읽는다.
-- 구현은 `experiments/specs/`의 명세가 `status: approved_for_implementation`일 때 시작한다.
-- 명세의 `implementation_owner`가 현재 작업 주체와 일치해야 한다.
-- Claude Code 브랜치는 `claude/<task>`, Codex 브랜치는 `codex/<task>`를 사용한다.
-- 두 에이전트가 같은 브랜치·같은 작업 파일을 동시에 수정하지 않는다.
-- Codex가 작성한 명세를 구현할 때 과학적 질문·split·지표·중단 조건을 임의로 바꾸지 말고, 필요한 변경은 Decision log에 남긴다.
-- Drive의 기존 ECG 자산은 정리 목적으로 이동하지 않는다. 먼저 `research/ASSETS.md`에 등록하고, 별도 migration spec 승인 후 이동한다.
+## ECG 실험은 여기가 아니다 — `ecg-lab` repo (2026-08-17 분리)
+논문을 목표로 하는 ECG 부정맥 실험(`mit-bih/`·`experiments/specs/EXP-*`·`research/`·
+quest 노트북)은 **`ehdbddl06001-ui/ecg-lab`** 로 떼어냈다. 여기는 **공부**, 거기는 **연구**다.
+- **이 repo에서 실험 코드를 만들지 않는다.** 반대로 거기서 `content/` 카드를 만들지 않는다.
+  한 과제는 한 repo 안에서 끝낸다 — 두 repo를 함께 건드리는 PR을 열지 않는다.
+- AI 학습 트랙은 **여기 남는다**: `content/ailab/`(주차 카드·`kind: log`·`kind: quest`
+  로드맵·mentor 노트), `notebooks/week*`·`ailab_*`, `/gen-ailab` `/ai-weekly`
+  `/deepen-week` `/gen-quest` `/ai-mentor` `/ai-debug`, 그리고 실행 로그 루프 전체.
+- 다리는 **퀘스트 카드**다. `kind: quest` 카드는 "한 주차로 못 끝낼 열린 문제"를 큐잉하고,
+  그 문제를 실제로 파는 실험은 ecg-lab 의 `experiments/specs/EXP-*` 가 맡는다.
+  퀘스트 카드에서 대응 실험을 가리킬 땐 **URL로** 건다(상대경로는 여기서 깨진다).
+- Codex 와의 협업 규칙(`AGENTS.md`·`docs/AI_COLLABORATION.md`·과제 프롬프트 템플릿)은
+  ecg-lab 으로 옮겼다. 실험 과제를 받았다면 그 repo 를 열고 거기 규칙을 따른다.
+- Drive `MyDrive/MedKOS/ecg-model/` 은 **이름 그대로 둔다** — 옛 노트북이 그 경로에
+  의존한다. 정리 목적의 이동 금지, migration spec 승인 후에만.
