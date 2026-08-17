@@ -1,94 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654 905" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="아래턱신경과 가슴의 신경 — 분지 계보 구조도">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026 1300" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="가슴안과 관자아래우묵의 신경 — 분지 계보 구조도">
   <!-- 자동 생성: pipelines/branch_tree.py (스펙: branch_specs.py). 손으로 고치지 말 것.
-       근거: 5회차 §관자아래부위 · 위세로칸 · 심장막 -->
+       근거: 5회차 §가슴안·세로칸·심장 · 관자아래부위 (부위 기준 배정) -->
   <style>text{paint-order:stroke;stroke:#0e1826;stroke-width:3px;stroke-linejoin:round}.kr{font-weight:700}.pin{stroke:none}</style>
-  <rect width="654" height="905" fill="#0e1826"/>
-  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">아래턱신경과 가슴의 신경<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> mandibular n. &amp; nerves of the thorax</tspan></text>
-  <text x="26" y="50" fill="#93a4b7" font-size="10.5">5회차 · 관자아래우묵의 V3와, 세로칸을 지나는 미주·가로막신경</text>
+  <rect width="1026" height="1300" fill="#0e1826"/>
+  <text x="26" y="30" fill="#e6edf3" font-size="17" font-weight="700">가슴안과 관자아래우묵의 신경<tspan fill="#93a4b7" font-size="11.5" font-weight="400"> nerves of the thoracic cavity &amp; infratemporal fossa</tspan></text>
+  <text x="26" y="50" fill="#93a4b7" font-size="10.5">5회차 · 목에서 내려온 신경이 허파뿌리를 앞뒤로 가르고, V3가 관자아래우묵을 채운다</text>
   <text x="26" y="68" fill="#6f8299" font-size="10">★ = tagging 최다 빈출 · 굵은 테두리 = 종말가지</text>
-  <path d="M 406,262 H 419 V 125 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,262 H 419 V 200 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,262 H 419 V 275 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,262 H 419 V 344 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,262 H 419 V 408 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,540 H 419 V 478 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,540 H 419 V 548 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,540 H 419 V 612 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,698 H 419 V 670 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,698 H 419 V 734 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 406,804 H 419 V 804 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 206,529 H 219 V 262 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 206,529 H 219 V 540 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 206,529 H 219 V 698 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <path d="M 206,529 H 219 V 804 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
-  <rect x="26" y="510" width="180" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="1.3"/>
-  <text x="36" y="530" fill="#9cc3ff" font-size="12" class="kr">5회차의 신경</text>
-  <rect x="232" y="235" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
-  <text x="242" y="255" fill="#9cc3ff" font-size="12" class="kr">아래턱신경 V3 ★</text>
-  <text x="242" y="270" fill="#7f9cc4" font-size="9">mandibular n.</text>
-  <text x="242" y="281" fill="#6f8299" font-size="9">타원구멍 → 관자아래우묵</text>
-  <rect x="232" y="513" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
-  <text x="242" y="533" fill="#9cc3ff" font-size="12" class="kr">미주신경 X ★</text>
-  <text x="242" y="548" fill="#7f9cc4" font-size="9">vagus n.</text>
-  <text x="242" y="559" fill="#6f8299" font-size="9">허파뿌리 <tspan fill="#e6edf3" font-weight="700">뒤</tspan>로 내려간다</text>
-  <rect x="232" y="664" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
-  <text x="242" y="684" fill="#9cc3ff" font-size="12" class="kr">가로막신경 ★</text>
-  <text x="242" y="700" fill="#7f9cc4" font-size="9">phrenic n.</text>
-  <text x="242" y="710" fill="#6f8299" font-size="9">C3–5 · 허파뿌리 <tspan fill="#e6edf3" font-weight="700">앞</tspan> · 심장막에</text>
-  <text x="242" y="722" fill="#6f8299" font-size="9">붙어 내려감</text>
-  <rect x="232" y="776" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
-  <text x="242" y="796" fill="#9cc3ff" font-size="12" class="kr">교감신경줄기</text>
-  <text x="242" y="811" fill="#7f9cc4" font-size="9">sympathetic trunk</text>
-  <text x="242" y="822" fill="#6f8299" font-size="9">갈비뼈 목 앞 · 내장신경을 낸다</text>
-  <rect x="432" y="92" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="112" fill="#9cc3ff" font-size="12" class="kr">씹기근육 운동가지 ★</text>
-  <text x="442" y="127" fill="#7f9cc4" font-size="9">nn. to mastication</text>
-  <text x="442" y="138" fill="#6f8299" font-size="9">깨물근·깊은관자·안쪽/가쪽날개근신</text>
-  <text x="442" y="149" fill="#6f8299" font-size="9">경</text>
-  <rect x="432" y="167" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="187" fill="#9cc3ff" font-size="12" class="kr">볼신경 ★</text>
-  <text x="442" y="202" fill="#7f9cc4" font-size="9">buccal n.</text>
-  <text x="442" y="213" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">감각</tspan> — 볼 점막·피부(볼근 운동은</text>
-  <text x="442" y="224" fill="#6f8299" font-size="9">VII)</text>
-  <rect x="432" y="242" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="262" fill="#9cc3ff" font-size="12" class="kr">혀신경 ★</text>
-  <text x="442" y="277" fill="#7f9cc4" font-size="9">lingual n.</text>
-  <text x="442" y="288" fill="#6f8299" font-size="9">고실끈신경(VII)을 받아 혀 앞 2/3</text>
-  <text x="442" y="299" fill="#6f8299" font-size="9">미각·침샘</text>
-  <rect x="432" y="317" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="337" fill="#9cc3ff" font-size="12" class="kr">아래이틀신경 ★</text>
-  <text x="442" y="352" fill="#7f9cc4" font-size="9">inferior alveolar n.</text>
-  <text x="442" y="363" fill="#6f8299" font-size="9">아래턱뼈 속 → <tspan fill="#e6edf3" font-weight="700">턱끝신경</tspan>으로 나온다</text>
-  <rect x="432" y="381" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="401" fill="#9cc3ff" font-size="12" class="kr">귓바퀴관자신경</text>
-  <text x="442" y="416" fill="#7f9cc4" font-size="9">auriculotemporal n.</text>
-  <text x="442" y="427" fill="#6f8299" font-size="9">중간뇌막동맥을 두 뿌리로 감쌈</text>
-  <rect x="432" y="445" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="465" fill="#9cc3ff" font-size="12" class="kr">왼되돌이후두신경 ★</text>
-  <text x="442" y="480" fill="#7f9cc4" font-size="9">left recurrent laryngeal n.</text>
-  <text x="442" y="491" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">대동맥활</tspan>(동맥관인대)을 감아</text>
-  <text x="442" y="502" fill="#6f8299" font-size="9">올라감</text>
-  <rect x="432" y="520" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="540" fill="#9cc3ff" font-size="12" class="kr">심장가지</text>
-  <text x="442" y="555" fill="#7f9cc4" font-size="9">cardiac brr.</text>
-  <text x="442" y="566" fill="#6f8299" font-size="9">심장신경얼기 — 부교감(느리게)</text>
-  <rect x="432" y="584" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="604" fill="#9cc3ff" font-size="12" class="kr">식도신경얼기</text>
-  <text x="442" y="619" fill="#7f9cc4" font-size="9">esophageal plexus</text>
-  <text x="442" y="630" fill="#6f8299" font-size="9">뒤세로칸으로</text>
-  <rect x="432" y="648" width="170" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="668" fill="#9cc3ff" font-size="12" class="kr">가로막 운동</text>
-  <text x="442" y="683" fill="#7f9cc4" font-size="9">motor to diaphragm</text>
-  <rect x="432" y="701" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="721" fill="#9cc3ff" font-size="12" class="kr">심장막·세로칸가슴막 감각 ★</text>
-  <text x="442" y="736" fill="#7f9cc4" font-size="9">sensory</text>
-  <text x="442" y="747" fill="#6f8299" font-size="9">연관통이 <tspan fill="#e6edf3" font-weight="700">어깨끝(C4 피부분절)</tspan> 으로</text>
-  <text x="442" y="758" fill="#6f8299" font-size="9">간다</text>
-  <rect x="432" y="776" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
-  <text x="442" y="796" fill="#9cc3ff" font-size="12" class="kr">심장가지</text>
-  <text x="442" y="811" fill="#7f9cc4" font-size="9">cardiac brr.</text>
-  <text x="442" y="822" fill="#6f8299" font-size="9">심장신경얼기 — 교감(빠르게)</text>
-  <line x1="26" y1="841" x2="628" y2="841" stroke="#2b3a4d" stroke-width="1"/>
-  <text x="26" y="853" fill="#93a4b7" font-size="10.5">V3만 감각+운동 — 씹기근육 넷은 전부 여기서 나온다.</text>
-  <text x="26" y="871" fill="#93a4b7" font-size="10.5">허파뿌리 기준: 가로막신경은 <tspan fill="#e6edf3" font-weight="700">앞</tspan>, 미주신경은 <tspan fill="#e6edf3" font-weight="700">뒤</tspan> — 세로칸 태깅의 축.</text>
+  <path d="M 602,182 H 615 V 120 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,182 H 615 V 184 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,182 H 615 V 253 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,184 H 419 V 182 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,390 H 419 V 328 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,390 H 419 V 398 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,390 H 419 V 462 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,550 H 419 V 526 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,550 H 419 V 584 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,728 H 615 V 642 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,728 H 615 V 706 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,728 H 615 V 765 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,728 H 615 V 824 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 788,1038 H 801 V 1043 H 814" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,964 H 615 V 893 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,964 H 615 V 968 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 602,964 H 615 V 1038 H 628" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,846 H 419 V 728 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,846 H 419 V 964 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1151 H 419 V 1118 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 406,1151 H 419 V 1193 H 432" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,668 H 219 V 184 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,668 H 219 V 390 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,668 H 219 V 550 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,668 H 219 V 846 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <path d="M 206,668 H 219 V 1151 H 232" fill="none" stroke="#4a6483" stroke-width="1.6"/>
+  <rect x="26" y="649" width="180" height="38" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="1.3"/>
+  <text x="36" y="669" fill="#9cc3ff" font-size="12" class="kr">5회차의 신경</text>
+  <rect x="232" y="152" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="172" fill="#9cc3ff" font-size="12" class="kr">가로막신경 ★</text>
+  <text x="242" y="186" fill="#7f9cc4" font-size="9">phrenic n.</text>
+  <text x="242" y="198" fill="#6f8299" font-size="9">C3·C4·C5 — 'C3,4,5 keeps the</text>
+  <text x="242" y="208" fill="#6f8299" font-size="9">diaphragm alive'</text>
+  <rect x="232" y="363" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="383" fill="#9cc3ff" font-size="12" class="kr">미주신경 X ★</text>
+  <text x="242" y="398" fill="#7f9cc4" font-size="9">vagus n.</text>
+  <text x="242" y="409" fill="#6f8299" font-size="9">허파뿌리 <tspan fill="#e6edf3" font-weight="700">뒤</tspan>로 내려간다</text>
+  <rect x="232" y="517" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="537" fill="#9cc3ff" font-size="12" class="kr">갈비사이신경 ★</text>
+  <text x="242" y="552" fill="#7f9cc4" font-size="9">intercostal nn.</text>
+  <text x="242" y="563" fill="#6f8299" font-size="9">T1–T11 앞가지 · 얼기를 만들지</text>
+  <text x="242" y="574" fill="#6f8299" font-size="9">않는다</text>
+  <rect x="232" y="813" width="174" height="66" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="833" fill="#9cc3ff" font-size="12" class="kr">아래턱신경 V3 ★</text>
+  <text x="242" y="848" fill="#7f9cc4" font-size="9">mandibular n.</text>
+  <text x="242" y="859" fill="#6f8299" font-size="9">타원구멍 → 관자아래우묵 ·</text>
+  <text x="242" y="870" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">감각+운동</tspan></text>
+  <rect x="232" y="1124" width="174" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="242" y="1144" fill="#9cc3ff" font-size="12" class="kr">얹혀 가는 섬유 ★</text>
+  <text x="242" y="1158" fill="#7f9cc4" font-size="9">hitchhiking fibers</text>
+  <text x="242" y="1170" fill="#6f8299" font-size="9">V3 가지를 길로 쓰는 다른 뇌신경</text>
+  <rect x="432" y="154" width="170" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="174" fill="#9cc3ff" font-size="12" class="kr">허파뿌리 앞으로 ★</text>
+  <text x="442" y="189" fill="#7f9cc4" font-size="9">ant. to the root of the lung</text>
+  <text x="442" y="200" fill="#6f8299" font-size="9">미주신경과 갈리는 지점</text>
+  <rect x="432" y="295" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="315" fill="#9cc3ff" font-size="12" class="kr">왼되돌이후두신경 ★</text>
+  <text x="442" y="330" fill="#7f9cc4" font-size="9">left recurrent laryngeal n.</text>
+  <text x="442" y="341" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">대동맥활</tspan>(동맥관인대)을 감아</text>
+  <text x="442" y="352" fill="#6f8299" font-size="9">올라간다</text>
+  <rect x="432" y="370" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="390" fill="#9cc3ff" font-size="12" class="kr">허파가지·식도얼기</text>
+  <text x="442" y="405" fill="#7f9cc4" font-size="9">pulmonary/esophageal plexus</text>
+  <text x="442" y="416" fill="#6f8299" font-size="9">부교감 — 기관지 수축</text>
+  <rect x="432" y="434" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="454" fill="#9cc3ff" font-size="12" class="kr">심장가지 ★</text>
+  <text x="442" y="469" fill="#7f9cc4" font-size="9">cardiac br.</text>
+  <text x="442" y="480" fill="#6f8299" font-size="9">부교감 — 심박수 <tspan fill="#e6edf3" font-weight="700">감소</tspan></text>
+  <rect x="432" y="498" width="170" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="518" fill="#9cc3ff" font-size="12" class="kr">벽쪽가슴막 감각 ★</text>
+  <text x="442" y="533" fill="#7f9cc4" font-size="9">parietal pleura</text>
+  <text x="442" y="544" fill="#6f8299" font-size="9">갈비·가로막 <tspan fill="#e6edf3" font-weight="700">주변부</tspan> — 통증에 예민</text>
+  <rect x="432" y="562" width="170" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="582" fill="#9cc3ff" font-size="12" class="kr">가쪽·앞피부가지</text>
+  <text x="442" y="597" fill="#7f9cc4" font-size="9">lateral/ant. cutaneous br.</text>
+  <rect x="432" y="701" width="170" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="721" fill="#9cc3ff" font-size="12" class="kr">앞줄기</text>
+  <text x="442" y="736" fill="#7f9cc4" font-size="9">ant. division</text>
+  <text x="442" y="747" fill="#6f8299" font-size="9">대부분 <tspan fill="#e6edf3" font-weight="700">운동</tspan></text>
+  <rect x="432" y="936" width="170" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="442" y="956" fill="#9cc3ff" font-size="12" class="kr">뒤줄기 ★</text>
+  <text x="442" y="971" fill="#7f9cc4" font-size="9">post. division</text>
+  <text x="442" y="982" fill="#6f8299" font-size="9">대부분 <tspan fill="#e6edf3" font-weight="700">감각</tspan></text>
+  <rect x="432" y="1085" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1105" fill="#9cc3ff" font-size="12" class="kr">고실끈신경 ★</text>
+  <text x="442" y="1120" fill="#7f9cc4" font-size="9">chorda tympani</text>
+  <text x="442" y="1131" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">VII</tspan> · 혀 앞 2/3 미각 +</text>
+  <text x="442" y="1142" fill="#6f8299" font-size="9">턱밑·혀밑샘 분비</text>
+  <rect x="432" y="1160" width="170" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="442" y="1180" fill="#9cc3ff" font-size="12" class="kr">귀신경절 ★</text>
+  <text x="442" y="1195" fill="#7f9cc4" font-size="9">otic ganglion</text>
+  <text x="442" y="1206" fill="#6f8299" font-size="9"><tspan fill="#e6edf3" font-weight="700">IX</tspan> 부교감이 갈아타는 곳 →</text>
+  <text x="442" y="1217" fill="#6f8299" font-size="9">귓바퀴관자신경 → 귀밑샘</text>
+  <rect x="628" y="92" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="112" fill="#9cc3ff" font-size="12" class="kr">심장막가지 ★</text>
+  <text x="638" y="127" fill="#7f9cc4" font-size="9">pericardial br.</text>
+  <text x="638" y="138" fill="#6f8299" font-size="9">섬유·벽쪽장막심장막 <tspan fill="#e6edf3" font-weight="700">감각</tspan></text>
+  <rect x="628" y="156" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="176" fill="#9cc3ff" font-size="12" class="kr">가로막 운동 ★</text>
+  <text x="638" y="191" fill="#7f9cc4" font-size="9">motor to diaphragm</text>
+  <text x="638" y="202" fill="#6f8299" font-size="9">유일한 운동 지배</text>
+  <rect x="628" y="220" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="240" fill="#9cc3ff" font-size="12" class="kr">가로막가슴막·배막 감각 ★</text>
+  <text x="638" y="255" fill="#7f9cc4" font-size="9">central diaphragmatic sensory</text>
+  <text x="638" y="266" fill="#6f8299" font-size="9">자극되면 <tspan fill="#e6edf3" font-weight="700">어깨 연관통</tspan>(C3–C5</text>
+  <text x="638" y="277" fill="#6f8299" font-size="9">피부분절)</text>
+  <rect x="628" y="615" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="635" fill="#9cc3ff" font-size="12" class="kr">깊은관자신경 ★</text>
+  <text x="638" y="650" fill="#7f9cc4" font-size="9">deep temporal nn.</text>
+  <text x="638" y="661" fill="#6f8299" font-size="9">관자근</text>
+  <rect x="628" y="679" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="699" fill="#9cc3ff" font-size="12" class="kr">깨물근신경</text>
+  <text x="638" y="714" fill="#7f9cc4" font-size="9">masseteric n.</text>
+  <text x="638" y="725" fill="#6f8299" font-size="9">턱뼈패임을 지난다</text>
+  <rect x="628" y="743" width="160" height="44" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="763" fill="#9cc3ff" font-size="12" class="kr">가쪽날개근신경</text>
+  <text x="638" y="778" fill="#7f9cc4" font-size="9">n. to lateral pterygoid</text>
+  <rect x="628" y="796" width="160" height="55" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="816" fill="#9cc3ff" font-size="12" class="kr">볼신경 ★</text>
+  <text x="638" y="831" fill="#7f9cc4" font-size="9">buccal n.</text>
+  <text x="638" y="842" fill="#6f8299" font-size="9">앞줄기의 <tspan fill="#e6edf3" font-weight="700">유일한 감각</tspan> — 볼 점막</text>
+  <rect x="628" y="860" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="880" fill="#9cc3ff" font-size="12" class="kr">귓바퀴관자신경 ★</text>
+  <text x="638" y="895" fill="#7f9cc4" font-size="9">auriculotemporal n.</text>
+  <text x="638" y="906" fill="#6f8299" font-size="9">중간뇌막동맥을 두 뿌리로</text>
+  <text x="638" y="917" fill="#6f8299" font-size="9">감싼다</text>
+  <rect x="628" y="935" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="638" y="955" fill="#9cc3ff" font-size="12" class="kr">혀신경 ★</text>
+  <text x="638" y="970" fill="#7f9cc4" font-size="9">lingual n.</text>
+  <text x="638" y="981" fill="#6f8299" font-size="9">혀 앞 2/3 <tspan fill="#e6edf3" font-weight="700">일반감각</tspan> ·</text>
+  <text x="638" y="992" fill="#6f8299" font-size="9">고실끈신경이 합류</text>
+  <rect x="628" y="1011" width="160" height="55" rx="7" fill="#1d3552" stroke="#4a6483" stroke-width="1.3"/>
+  <text x="638" y="1031" fill="#9cc3ff" font-size="12" class="kr">아래이틀신경 ★</text>
+  <text x="638" y="1046" fill="#7f9cc4" font-size="9">inferior alveolar n.</text>
+  <text x="638" y="1057" fill="#6f8299" font-size="9">턱뼈구멍 → 턱끝신경으로 나온다</text>
+  <rect x="814" y="1010" width="160" height="66" rx="7" fill="#1d3552" stroke="#9cc3ff" stroke-width="2.2"/>
+  <text x="824" y="1030" fill="#9cc3ff" font-size="12" class="kr">턱목뿔근신경 ★</text>
+  <text x="824" y="1045" fill="#7f9cc4" font-size="9">n. to mylohyoid</text>
+  <text x="824" y="1056" fill="#6f8299" font-size="9">구멍 <tspan fill="#e6edf3" font-weight="700">들어가기 전</tspan>에 갈린</text>
+  <text x="824" y="1067" fill="#6f8299" font-size="9">운동가지</text>
+  <line x1="26" y1="1236" x2="1000" y2="1236" stroke="#2b3a4d" stroke-width="1"/>
+  <text x="26" y="1248" fill="#93a4b7" font-size="10.5">가로막신경은 허파뿌리 <tspan fill="#e6edf3" font-weight="700">앞</tspan>, 미주신경은 허파뿌리 <tspan fill="#e6edf3" font-weight="700">뒤</tspan> — 세로칸에서 둘을 가르는 유일한 기준.</text>
+  <text x="26" y="1266" fill="#93a4b7" font-size="10.5">고실끈신경은 얼굴신경(VII) 가지인데 <tspan fill="#e6edf3" font-weight="700">혀신경(V3)에 얹혀</tspan> 간다 — 미각·침샘은 V가 아니다.</text>
 </svg>

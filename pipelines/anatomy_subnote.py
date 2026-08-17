@@ -778,7 +778,18 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
         keep_x0 = b.x0
         b.x0 = keep_x0 + thumb_w + 16
         b.y = y0
-        b.subsection(f"정답 {n} — {card.get('answer', '')}")
+        # 제목 줄(subsection)은 줄바꿈이 없어 폭을 넘으면 **잘려 나간다**. 핀이 여러 개인
+        # spotter는 정답이 "1. … 2. … 9. …" 라 한 줄에 절대 안 들어간다(2026-08-18 실측:
+        # 8문항 정답이 전부 오른쪽에서 잘림) → 안 들어갈 때만 번호를 제목으로 돌리고
+        # 정답 본문은 줄바꿈되는 rich 로 그린다. 짧은 정답은 기존과 똑같이 한 줄 제목.
+        ans = str(card.get("answer", ""))
+        head = f"정답 {n} — {ans}"
+        if b._w(head, 10.8) <= b.width - 14:
+            b.subsection(head)
+        else:
+            b.subsection(f"정답 {n}")
+            b.rich(f"**{ans}**", size=9.4, leading=13.4)
+            b.y += 2
         b.rich(card.get("explanation", ""), size=9.2, leading=13)
         if card.get("needs_review"):
             b.callout("주의", "", "복원 얼룩이 남은 프레임 — 근육 결이 또렷하지 않다.")

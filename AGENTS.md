@@ -1,39 +1,74 @@
-# AGENTS.md — Codex operating rules
+# AGENTS.md — Codex operating rules (MedKOS)
 
 ## Mission
-Codex and Claude Code collaborate on MedKOS and ECG experiments through GitHub.
-GitHub Markdown is the shared control plane; Google Drive stores large data and run artifacts.
+This repository is MedKOS: a personal medical knowledge platform (KMLE/USMLE questions,
+paper cards, anatomy, disease/drug cards, and the AI-lab **study** track) plus the
+deterministic pipelines and the static site that publish it.
+
+ECG arrhythmia **research** moved to `ehdbddl06001-ui/ecg-lab` on 2026-08-17.
+Experiment specs, experiment code, research handoffs and quest notebooks live there.
+
+## Repository boundary — read this first
+
+| Task | Repository |
+|---|---|
+| Study card, exam question, paper card, anatomy set | **here** |
+| Pipeline, indexer, exporter, site, skill, routine | **here** |
+| AI-lab weekly card, run log, quest roadmap, mentor note | **here** (`content/ailab/`) |
+| Experiment spec, experiment code, measured result, research conclusion | **ecg-lab** |
+
+One task lives in one repository. Never open a PR that touches both. If an AI-lab quest card
+here needs a real experiment, queue it here and link the ecg-lab spec **by URL** — relative
+paths do not resolve across repositories.
 
 ## Source of truth
-- Follow `CLAUDE.md` and `schemas/frontmatter.md`.
-- Medical knowledge: `content/**/*.md`.
-- Executed code: committed notebook/script plus ingested run log.
-- Large artifacts: `MyDrive/MedKOS/ecg-model/`; register paths in `research/ASSETS.md`.
-- Never infer results from an unexecuted or stale notebook.
+- Follow `CLAUDE.md` and `schemas/frontmatter.md`. `CLAUDE.md` wins on conflict.
+- Medical knowledge: `content/**/*.md`. `db/` and Google Drive are derived.
+- Executed code: the committed notebook plus its ingested run log (`kind: log`).
+- Never infer results from an unexecuted or stale notebook. `pipelines/ingest_run.py`
+  writes measured numbers; an LLM does not type them in.
 
-## Roles
-- Codex: inspect the repository, design experiments, write/update specs, implement bounded tasks, review code/results, and update research conclusions.
-- Claude Code: implement approved specs, run deterministic checks, keep Colab compatibility, and prepare implementation PRs.
-- Either agent may code, but one task has one implementation owner. Do not edit the same task branch concurrently.
+## Non-negotiables
+- Every `.md` carries frontmatter per `schemas/frontmatter.md`.
+- Deterministic work — parsing, DB writes, ID issuing, counting, file moves — goes through
+  `pipelines/*.py`. An agent does not do it by hand.
+- Exam questions keep answers separated from the stem (`answer_separated: true`).
+- Never write to the database directly. Never store content outside `content/`.
+- Never reuse or roll back an id.
+- Anatomy source PDFs, page images and masks stay in `.private/` and are never committed.
+- Conflicting sources: keep source/edition/date and lower `confidence` instead of picking one.
 
 ## Required workflow
-1. Read `CLAUDE.md`, `docs/AI_COLLABORATION.md`, `research/PROJECT_STATE.md`, and the assigned spec.
+1. Read `CLAUDE.md`, and the spec if the task names one.
 2. Start from updated `main`.
-3. Codex design branch: `codex/<task>`; Claude implementation branch: `claude/<task>`; shared maintenance: `agent/<task>`.
-4. Before implementation, the spec must say `status: approved_for_implementation` and name `implementation_owner`.
-5. Implement only the acceptance criteria. Record deviations under the spec's Decision log.
-6. Run repository checks described in `CLAUDE.md`.
-7. Colab execution writes the Drive run bundle, then commits the executed notebook and ingests `result.json`.
-8. Use PR review before merging research architecture, evaluation, or migration changes.
+3. Codex branch: `codex/<task>`; Claude Code branch: `claude/<task>`; shared: `agent/<task>`.
+   Two agents never edit the same branch or the same file concurrently.
+4. Publish with one command: `python pipelines/publish.py -m "<message>"`.
+   It validates frontmatter, rebuilds the index and the `docs/` bundle, merges `main`, and
+   pushes. Doing the steps by hand drops one of them — that has actually happened.
+5. `publish.py` splits lanes by path. Content (`content/**`, `docs/**`, `notebooks/**`,
+   `state/ailab_progress.json`) pushes to `main` directly. Code (`pipelines/**`,
+   `.claude/**`, `CLAUDE.md`, `schemas/**`, everything else) is refused on `main` — use
+   `--branch claude/<task>` or `codex/<task>`, open a PR, and **merge it in the same
+   session**. An unmerged PR means the next day's routine rebuilds the same files from
+   scratch (measured 2026-08-17).
+6. Exam questions are never published on a branch — that path is blocked on purpose, because
+   PR-routed questions caused duplicate id issuance.
 
-## ECG non-negotiables
-- MIT-BIH DS1→DS2 patient-independent evaluation remains the principal benchmark unless a spec explicitly changes it.
-- Primary target: S-beat PR-AUC; also report patient-level lower-tail failures and macro metrics.
-- Preserve patient split, seeds, environment, preprocessing, threshold rule, and bootstrap method.
-- Do not retest closed ideas without a new rationale and stopping rule.
-- Never tune on the final test set.
+## Tests
+```bash
+python pipelines/indexer.py --check     # frontmatter validation
+python pipelines/test_anatomy.py
+python pipelines/test_state.py
+python pipelines/test_datasets.py
+python pipelines/test_deepen.py
+python pipelines/test_landmark.py
+python pipelines/merge_state.py --selftest
+python pipelines/publish.py --selftest
+```
 
 ## File movement
-- Do not move existing Drive assets merely to tidy paths; old notebooks may depend on them.
-- Inventory and register first. Move only through a dedicated migration spec containing old path, new path, affected consumers, rollback, and verification.
-- Do not commit raw ECG datasets, checkpoints, secrets, tokens, or rclone configuration.
+- Do not move Drive assets merely to tidy paths; old notebooks depend on them.
+  Drive root `MyDrive/MedKOS/ecg-model/` keeps its name after the repository split.
+- Do not commit secrets, tokens, rclone configuration, raw datasets, or checkpoints.
+- `db/*.sqlite` is derived and gitignored — rebuild with `indexer.py`, never commit.

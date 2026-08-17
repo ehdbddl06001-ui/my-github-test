@@ -13,9 +13,9 @@ window.MEDKOS_DIAGRAMS = {
    "kindLabel": "혈관 계보(동맥+정맥)",
    "session": 5,
    "unit": "5회차 · 가슴·머리",
-   "title": "위턱동맥과 심장의 혈관",
+   "title": "대동맥활·심장동맥과 위턱동맥",
    "date": "2026-08-18",
-   "bytes": 11594
+   "bytes": 18467
   },
   {
    "file": "tree-s05-vessel-quiz.svg",
@@ -25,9 +25,9 @@ window.MEDKOS_DIAGRAMS = {
    "kindLabel": "혈관 계보(동맥+정맥)",
    "session": 5,
    "unit": "5회차 · 가슴·머리",
-   "title": "위턱동맥과 심장의 혈관",
+   "title": "대동맥활·심장동맥과 위턱동맥",
    "date": "2026-08-18",
-   "bytes": 10367
+   "bytes": 16477
   },
   {
    "file": "tree-s05-nerve-labeled.svg",
@@ -37,9 +37,9 @@ window.MEDKOS_DIAGRAMS = {
    "kindLabel": "신경 계보",
    "session": 5,
    "unit": "5회차 · 가슴·머리",
-   "title": "아래턱신경과 가슴의 신경",
+   "title": "가슴안과 관자아래우묵의 신경",
    "date": "2026-08-18",
-   "bytes": 9357
+   "bytes": 15276
   },
   {
    "file": "tree-s05-nerve-quiz.svg",
@@ -49,9 +49,9 @@ window.MEDKOS_DIAGRAMS = {
    "kindLabel": "신경 계보",
    "session": 5,
    "unit": "5회차 · 가슴·머리",
-   "title": "아래턱신경과 가슴의 신경",
+   "title": "가슴안과 관자아래우묵의 신경",
    "date": "2026-08-18",
-   "bytes": 7874
+   "bytes": 12503
   },
   {
    "file": "tree-s05-bundle-labeled.svg",
@@ -63,7 +63,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "5회차 · 가슴·머리",
    "title": "함께 지나는 것",
    "date": "2026-08-18",
-   "bytes": 8595
+   "bytes": 13974
   },
   {
    "file": "tree-s05-bundle-quiz.svg",
@@ -75,7 +75,7 @@ window.MEDKOS_DIAGRAMS = {
    "unit": "5회차 · 가슴·머리",
    "title": "함께 지나는 것",
    "date": "2026-08-18",
-   "bytes": 7257
+   "bytes": 11235
   },
   {
    "file": "tree-s07-vessel-labeled.svg",

@@ -5,47 +5,47 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1410,
+  "total": 1494,
   "byType": {
-   "paper": 440,
-   "anatomy": 332,
-   "kmle": 555,
-   "usmle": 66,
+   "usmle": 96,
+   "anatomy": 350,
+   "paper": 444,
+   "kmle": 587,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 332,
-   "Cardiology": 126,
-   "Nephrology": 113,
-   "Infectious Disease": 89,
+   "Anatomy": 350,
+   "Cardiology": 131,
+   "Nephrology": 115,
+   "Infectious Disease": 91,
    "Hematology-Oncology": 72,
-   "Pediatrics": 66,
-   "Pathology": 57,
+   "Pediatrics": 69,
+   "Pathology": 62,
+   "Obstetrics & Gynecology": 46,
+   "Neurology": 45,
+   "Psychiatry": 44,
    "Surgery": 44,
-   "Obstetrics & Gynecology": 40,
-   "Laboratory Medicine": 38,
-   "Neurology": 38,
-   "Psychiatry": 38,
-   "Endocrinology": 36,
-   "Gastroenterology": 35,
-   "Pulmonology": 35,
-   "Dermatology": 34,
-   "General Surgery": 34,
-   "Ophthalmology": 34,
-   "Orthopedics": 34,
-   "Rheumatology": 34,
-   "Hematology": 33,
-   "Physiology": 7,
+   "Laboratory Medicine": 39,
+   "Endocrinology": 38,
+   "Gastroenterology": 37,
+   "Pulmonology": 37,
+   "Dermatology": 36,
+   "General Surgery": 36,
+   "Ophthalmology": 36,
+   "Orthopedics": 36,
+   "Rheumatology": 36,
+   "Hematology": 35,
+   "Physiology": 13,
+   "Pharmacology": 7,
+   "Biochemistry": 6,
    "Microbiology": 6,
-   "Biochemistry": 5,
-   "Pharmacology": 5,
    "Immunology": 4,
+   "Internal Medicine": 4,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
    "Allergy": 2,
-   "Internal Medicine": 2,
    "Medical Imaging AI": 2,
    "AI Mentorship": 1,
    "ML Debugging": 1,
@@ -53,13 +53,620 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "medium": 607,
-   "high": 754,
+   "high": 824,
+   "medium": 621,
    "low": 49
   },
-  "tagCount": 2120
+  "tagCount": 2296
  },
  "docs": [
+  {
+   "id": "usmle-2026-0108",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Guillain-Barré Syndrome — Serial Vital Capacity to Detect Impending Respiratory Failure",
+   "tags": [
+    "guillain-barre",
+    "respiratory-failure",
+    "vital-capacity",
+    "neuromuscular",
+    "monitoring"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute neuromuscular respiratory failure)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0108.md",
+   "snippet": "A 28 year old woman is admitted because of 5 days of progressive weakness that began with difficulty walking on her toes and now prevents her from climbing stairs or lifting objects overhead. Two weeks ago she had a self limited diarrheal i",
+   "text": "Neurology Guillain-Barré Syndrome — Serial Vital Capacity to Detect Impending Respiratory Failure guillain-barre respiratory-failure vital-capacity neuromuscular monitoring USMLE-style / MedKOS (neurology · acute neuromuscular respiratory failure) A 28 year old woman is admitted because of 5 days of progressive weakness that began with difficulty walking on her toes and now prevents her from climbing stairs or lifting objects overhead. Two weeks ago she had a self limited diarrheal illness. She reports that since last night she becomes short of breath when lying flat and cannot count past 15 in a single breath. Examination shows symmetric weakness of the distal and proximal lower extremities and milder weakness of the hands, absent deep tendon reflexes in all four limbs, and mild bilateral facial weakness; sensation is mildly decreased in the feet. Vital signs and cerebrospinal fluid studies are shown, and immunomodulatory treatment is planned. Which of the following is the most appropriate method to detect impending respiratory failure in this patient? A. Arterial blood gas measurement every morning B. Continuous pulse oximetry monitoring alone C. Peak expiratory flow rate measurement D. Serial bedside measurement of forced vital capacity E. Daily portable chest radiography Progressive symmetric ascending weakness with areflexia after a diarrheal illness, facial diplegia, and cerebrospinal fluid showing elevated protein with a normal cell count indicate Guillain Barré syndrome, and her orthopnea and inability to count past 15 in one breath signal advancing diaphragmatic weakness. Neuromuscular respiratory failure must be detected by measuring respiratory muscle mechanics — serial bedside forced vital capacity (with negative inspiratory force) — because hypoxemia on oximetry and hypercapnia on blood gas appear only late, after the patient is already decompensating; a falling vital capacity approaching roughly 15–20 mL/kg is an indication for elective intubation before crisis."
+  },
+  {
+   "id": "usmle-2026-0107",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Intussusception — Pneumatic Enema as Diagnostic and Therapeutic Next Step",
+   "tags": [
+    "intussusception",
+    "pneumatic-enema",
+    "pediatric-acute-abdomen",
+    "ultrasound",
+    "bowel-obstruction"
+   ],
+   "source": "USMLE-style / MedKOS (pediatrics · acute abdomen in infancy)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0107.md",
+   "snippet": "A 9 month old boy is brought to the emergency department because of episodes of sudden inconsolable crying for the past 8 hours. During each episode he draws his legs up toward his abdomen and screams for several minutes, then becomes quiet",
+   "text": "Pediatrics Intussusception — Pneumatic Enema as Diagnostic and Therapeutic Next Step intussusception pneumatic-enema pediatric-acute-abdomen ultrasound bowel-obstruction USMLE-style / MedKOS (pediatrics · acute abdomen in infancy) A 9 month old boy is brought to the emergency department because of episodes of sudden inconsolable crying for the past 8 hours. During each episode he draws his legs up toward his abdomen and screams for several minutes, then becomes quiet and unusually drowsy until the next episode 15 to 20 minutes later. He has vomited four times and passed one stool mixed with blood and mucus. On examination between episodes he is drowsy but arousable; the abdomen is soft without rigidity or rebound tenderness, and a sausage shaped mass is palpable in the right upper quadrant. Vital signs, laboratory studies, and imaging findings are shown. After intravenous fluid resuscitation and surgical consultation, which of the following is the most appropriate next step in management? A. Emergency exploratory laparotomy B. Contrast enhanced abdominal computed tomography C. Pneumatic enema under fluoroscopic guidance D. Upper gastrointestinal contrast series E. Nasogastric decompression with inpatient observation Paroxysmal episodes of crying with drawn up legs alternating with lethargy, vomiting, blood and mucus stool, a sausage shaped right upper quadrant mass, and ultrasound showing a concentric ring shaped bowel mass in an infant establish ileocolic intussusception. In a hemodynamically stabilized child without peritonitis or free air, the treatment of choice is nonoperative reduction by pneumatic (air) enema under fluoroscopic guidance, which is therapeutic in roughly 80–90% of cases; surgery is reserved for perforation, peritonitis, or failed enema reduction."
+  },
+  {
+   "id": "usmle-2026-0106",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Ventricular Fibrillation Arrest — Immediate Defibrillation Before Drugs or Airway",
+   "tags": [
+    "ventricular-fibrillation",
+    "cardiac-arrest",
+    "defibrillation",
+    "ACLS",
+    "CPR"
+   ],
+   "source": "USMLE-style / MedKOS (emergency medicine · ACLS cardiac arrest algorithm)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0106.md",
+   "snippet": "A 58 year old man collapses in an airport terminal while walking to his gate. A bystander finds him unresponsive and begins chest compressions, and emergency medical personnel arrive within 4 minutes. He is apneic apart from occasional gasp",
+   "text": "Internal Medicine Ventricular Fibrillation Arrest — Immediate Defibrillation Before Drugs or Airway ventricular-fibrillation cardiac-arrest defibrillation ACLS CPR USMLE-style / MedKOS (emergency medicine · ACLS cardiac arrest algorithm) A 58 year old man collapses in an airport terminal while walking to his gate. A bystander finds him unresponsive and begins chest compressions, and emergency medical personnel arrive within 4 minutes. He is apneic apart from occasional gasping, and no carotid pulse is palpable. Defibrillator pads are placed while compressions continue, and the monitor shows the rhythm in the figure. Which of the following is the most appropriate immediate next step in management? A. Administer intravenous epinephrine B. Deliver an unsynchronized electrical shock C. Perform synchronized electrical cardioversion D. Administer an intravenous amiodarone bolus E. Perform endotracheal intubation before further steps A witnessed collapse with no pulse and a monitor showing a chaotic, irregular waveform without organized QRS complexes is ventricular fibrillation, a shockable arrest rhythm. The single intervention proven to restore circulation is immediate unsynchronized defibrillation with minimal interruption of compressions; every minute of delay reduces survival by roughly 7–10%. Synchronized cardioversion is impossible and inappropriate because fibrillation has no QRS complex for the device to synchronize to, and epinephrine, amiodarone, and advanced airway placement all come only after shock delivery and resumption of CPR in the ACLS algorithm."
+  },
+  {
+   "id": "usmle-2026-0105",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Carbon Monoxide Poisoning — Oxygen Content vs Normal PaO2 and Pulse Oximetry",
+   "tags": [
+    "carbon-monoxide",
+    "oxygen-delivery",
+    "hemoglobin",
+    "oxygen-dissociation-curve",
+    "pulse-oximetry"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · oxygen transport and hemoglobin binding)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0105.md",
+   "snippet": "A 34 year old man is brought to the emergency department in winter because of severe headache, nausea, dizziness, and progressive confusion that began this morning. His wife and daughter, who live in the same apartment heated by an aging ga",
+   "text": "Physiology Carbon Monoxide Poisoning — Oxygen Content vs Normal PaO2 and Pulse Oximetry carbon-monoxide oxygen-delivery hemoglobin oxygen-dissociation-curve pulse-oximetry USMLE-style / MedKOS (physiology · oxygen transport and hemoglobin binding) A 34 year old man is brought to the emergency department in winter because of severe headache, nausea, dizziness, and progressive confusion that began this morning. His wife and daughter, who live in the same apartment heated by an aging gas boiler, have milder headaches and nausea. He has no cough, chest pain, or fever, and he does not smoke. Examination shows a confused man oriented only to person; the lungs are clear to auscultation and there is no cyanosis. Vital signs and laboratory studies are shown. Which of the following best explains the impaired oxygen delivery to this patient's tissues? A. Reduced arterial oxygen content with impaired oxygen unloading in tissues B. Impaired diffusion of oxygen across the alveolar capillary membrane C. Right to left shunting of pulmonary blood past unventilated alveoli D. Oxidation of hemoglobin iron to the ferric state that cannot bind oxygen E. Uncoupling of mitochondrial electron transport from ATP synthesis Winter time headache, nausea, and confusion clustering in household members sharing a gas heated apartment, with an elevated lactate, a carboxyhemoglobin of 27%, but a normal PaO2 and normal pulse oximetry reading, indicates carbon monoxide poisoning. CO binds hemoglobin with roughly 250 fold greater affinity than oxygen, so arterial oxygen content falls even though dissolved oxygen (PaO2) — determined by alveolar gas exchange, which is intact — remains normal; CO binding also shifts the oxyhemoglobin dissociation curve leftward, impairing unloading of the oxygen that remains. Standard pulse oximetry cannot distinguish carboxyhemoglobin from oxyhemoglobin, which is why the SpO2 reading is deceptively normal."
+  },
+  {
+   "id": "usmle-2026-0104",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Medium-Chain Acyl-CoA Dehydrogenase Deficiency — Hypoketotic Hypoglycemia After Fasting",
+   "tags": [
+    "MCAD",
+    "fatty-acid-oxidation",
+    "hypoketotic-hypoglycemia",
+    "acylcarnitine",
+    "metabolic"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · fatty acid oxidation disorders)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0104.md",
+   "snippet": "A 14 month old boy is brought to the emergency department because he could not be awakened this morning. He has had 2 days of vomiting and diarrhea with poor oral intake, and he refused his evening feeding last night. He was born at term an",
+   "text": "Biochemistry Medium-Chain Acyl-CoA Dehydrogenase Deficiency — Hypoketotic Hypoglycemia After Fasting MCAD fatty-acid-oxidation hypoketotic-hypoglycemia acylcarnitine metabolic USMLE-style / MedKOS (biochemistry · fatty acid oxidation disorders) A 14 month old boy is brought to the emergency department because he could not be awakened this morning. He has had 2 days of vomiting and diarrhea with poor oral intake, and he refused his evening feeding last night. He was born at term and his development has been normal. On arrival he is lethargic and minimally responsive, with a soft abdomen and a liver edge palpable 2 cm below the costal margin. Vital signs and laboratory studies are shown. Impaired activity of which of the following enzymes is the most likely cause of this patient's condition? A. Carnitine palmitoyltransferase I B. Glucose 6 phosphatase C. Liver glycogen phosphorylase D. HMG CoA lyase E. Medium chain acyl CoA dehydrogenase Fasting stress from gastroenteritis in a toddler producing profound hypoglycemia with inappropriately absent urine ketones, mild hyperammonemia, mild transaminase elevation, hepatomegaly, and a markedly elevated octanoylcarnitine (C8) on the plasma acylcarnitine profile is the signature of medium chain acyl CoA dehydrogenase (MCAD) deficiency. Blocked mitochondrial beta oxidation of medium chain fatty acids deprives the liver of acetyl CoA, simultaneously preventing ketogenesis and crippling gluconeogenesis, so fasting produces hypoketotic hypoglycemia; accumulating medium chain species are exported as C8 acylcarnitine, the diagnostic marker."
+  },
+  {
+   "id": "usmle-2026-0103",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Hereditary Angioedema — Bradykinin as the Effector Mediator of C1 Inhibitor Deficiency",
+   "tags": [
+    "hereditary-angioedema",
+    "C1-inhibitor",
+    "bradykinin",
+    "complement",
+    "kallikrein"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · complement and contact-system regulation)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/usmle/usmle-2026-0103.md",
+   "snippet": "A 23 year old woman comes to the clinic because of recurrent episodes of swelling of her lips and hands over the past 4 years. Each episode develops over several hours, lasts 2 to 3 days, and resolves without treatment; the swelling is not ",
+   "text": "Immunology Hereditary Angioedema — Bradykinin as the Effector Mediator of C1 Inhibitor Deficiency hereditary-angioedema C1-inhibitor bradykinin complement kallikrein USMLE-style / MedKOS (immunology · complement and contact-system regulation) A 23 year old woman comes to the clinic because of recurrent episodes of swelling of her lips and hands over the past 4 years. Each episode develops over several hours, lasts 2 to 3 days, and resolves without treatment; the swelling is not itchy, and no hives have ever accompanied it. She has also had several episodes of severe crampy abdominal pain with vomiting that resolved spontaneously. Prior episodes did not improve with antihistamines or glucocorticoids. Her father has had similar episodes since adolescence. The current episode began the day after a dental extraction. Examination shows nonpitting, nonerythematous edema of the lips and dorsum of both hands without urticaria. Vital signs and laboratory studies are shown. Increased activity of which of the following mediators is most directly responsible for this patient's episodes of swelling? A. Histamine B. Bradykinin C. Leukotriene C4 D. Complement C5a E. Substance P Recurrent nonpruritic angioedema without urticaria, unresponsive to antihistamines and glucocorticoids, with a positive family history, attacks triggered by dental trauma, low C4, and low C1 inhibitor functional activity indicates hereditary angioedema. C1 inhibitor normally restrains plasma kallikrein and factor XIIa of the contact system; its deficiency permits unchecked kallikrein mediated cleavage of high molecular weight kininogen, generating excess bradykinin, which increases vascular permeability and produces the episodic edema. The histamine pathway is not involved, which is why urticaria is absent and antihistamines fail."
+  },
+  {
+   "id": "anatomy-daily-2026-08-18",
+   "type": "anatomy",
+   "unit": "등·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-18",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/daily/2026-08-18.md",
+   "snippet": "오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-18 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0176",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "왼심실 실사 spotter — 승모판막과 두 첨판 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장) — C007 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0176.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 왼심실 실사 spotter — 승모판막과 두 첨판 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장) — C007 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0175",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "오른심방 속구조 실사 spotter — 매끈부와 거친부 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B039 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0175.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 오른심방 속구조 실사 spotter — 매끈부와 거친부 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B039 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0174",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장동맥 실사 spotter — 앞면의 가지 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B026 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0174.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장동맥 실사 spotter — 앞면의 가지 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B026 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0173",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장 표면 실사 spotter — 두 고랑과 네 방 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B020 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0173.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장 표면 실사 spotter — 두 고랑과 네 방 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B020 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0172",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장막안 실사 spotter — 가로굴과 빗굴 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B015 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0172.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장막안 실사 spotter — 가로굴과 빗굴 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B015 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0171",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "위세로칸 실사 spotter — 대동맥활의 가지와 두 신경 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B011 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0171.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위세로칸 실사 spotter — 대동맥활의 가지와 두 신경 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 B — 대동맥활·세로칸 / Pericardium and heart 0:00–41:29 (50장) — B011 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0170",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "가슴막 구분 실사 spotter — 가슴막안과 두 오목 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A044 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0170.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 가슴막 구분 실사 spotter — 가슴막안과 두 오목 (필기 제거·복원본) 5회차 · 가슴 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A044 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0169",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래우묵 실사 spotter — 날개근과 V3 가지 (필기 제거·복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "5회차",
+    "실사",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A019 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0169.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자아래우묵 실사 spotter — 날개근과 V3 가지 (필기 제거·복원본) 5회차 · 머리 spotter 복원 5회차 실사 태깅 예습시험 5회차 업로드 스캔 A — 관자아래부위 / Thoracic cavity and pleura / Superior mediastinum (50장) — A019 페이지. 회차 배정은 교수명·파일명 날짜가 아니라 **부위 기준**(anatomy_schedule.session_for_region → 5회차 2026-08-31) 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (비공개 복원본). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0162",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "혀 앞 2/3의 이중지배와 하치조 마취",
+   "tags": [
+    "clinical-application",
+    "5회차",
+    "혀신경",
+    "고실끈신경",
+    "이중지배",
+    "하치조마취",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0162.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 혀 앞 2/3의 이중지배와 하치조 마취 5회차 · 머리 clinical-application 5회차 혀신경 고실끈신경 이중지배 하치조마취 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0161",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "위턱동맥 3부와 대표 가지",
+   "tags": [
+    "branch-tree",
+    "5회차",
+    "위턱동맥",
+    "중간뇌막동맥",
+    "나비입천장동맥",
+    "관자아래우묵",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0161.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위턱동맥 3부와 대표 가지 5회차 · 머리 branch-tree 5회차 위턱동맥 중간뇌막동맥 나비입천장동맥 관자아래우묵 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0160",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "씹기근육 넷 중 하나만 반대인 이유",
+   "tags": [
+    "distinction",
+    "5회차",
+    "씹기근육",
+    "가쪽날개근",
+    "V3",
+    "턱관절",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0160.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 씹기근육 넷 중 하나만 반대인 이유 5회차 · 머리 distinction 5회차 씹기근육 가쪽날개근 V3 턱관절 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0159",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "허파뿌리 구조의 배열",
+   "tags": [
+    "layer-order",
+    "5회차",
+    "허파뿌리",
+    "VAB",
+    "eparterial",
+    "좌우차이",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0159.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허파뿌리 구조의 배열 5회차 · 가슴 layer-order 5회차 허파뿌리 VAB eparterial 좌우차이 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0158",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "자극전도계의 위치 표지",
+   "tags": [
+    "relation",
+    "5회차",
+    "굴심방결절",
+    "방실결절",
+    "코흐삼각",
+    "분계고랑",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0158.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 자극전도계의 위치 표지 5회차 · 가슴 relation 5회차 굴심방결절 방실결절 코흐삼각 분계고랑 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0157",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장동맥 우세(dominance)의 정의",
+   "tags": [
+    "branch-tree",
+    "5회차",
+    "심장동맥",
+    "우세",
+    "뒤심실사이가지",
+    "분지",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0157.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장동맥 우세(dominance)의 정의 5회차 · 가슴 branch-tree 5회차 심장동맥 우세 뒤심실사이가지 분지 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0156",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "심장막가로굴과 심장막빗굴",
+   "tags": [
+    "distinction",
+    "5회차",
+    "심장막",
+    "가로굴",
+    "빗굴",
+    "심장수술",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0156.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 심장막가로굴과 심장막빗굴 5회차 · 가슴 distinction 5회차 심장막 가로굴 빗굴 심장수술 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0155",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "복장뼈각 높이에서 일어나는 일",
+   "tags": [
+    "relation",
+    "5회차",
+    "복장뼈각",
+    "기관갈림",
+    "대동맥활",
+    "높이기준",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0155.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 복장뼈각 높이에서 일어나는 일 5회차 · 가슴 relation 5회차 복장뼈각 기관갈림 대동맥활 높이기준 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0154",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "허파뿌리를 기준으로 갈리는 두 신경",
+   "tags": [
+    "distinction",
+    "5회차",
+    "가로막신경",
+    "미주신경",
+    "허파뿌리",
+    "세로칸",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정)",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0154.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 허파뿌리를 기준으로 갈리는 두 신경 5회차 · 가슴 distinction 5회차 가로막신경 미주신경 허파뿌리 세로칸 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 (부위 기준 배정) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0150",
+   "type": "anatomy",
+   "unit": "5회차 · 가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위",
+   "tags": [
+    "서브노트",
+    "5회차",
+    "가슴막",
+    "세로칸",
+    "심장막",
+    "심장",
+    "심장동맥",
+    "관자아래우묵",
+    "위턱동맥",
+    "씹기근육",
+    "표",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/anatomy/notes/anatomy-2026-0150-s05-subnote.md",
+   "snippet": "0. 이 회차의 축 — 세 문장 1. 복장뼈각(T4/T5)이 가슴의 모든 높이를 정한다 — 기관갈림·대동맥활·위/아래세로칸 경계가 전부 이 한 선에 걸린다. 2. 가로막신경은 앞, 미주신경은 뒤 — 세로칸에서 두 신경을 가르는 기준은 허파뿌리와의 앞뒤 관계 하나뿐이다. 3. 관자아래우묵은 V3와 위턱동맥의 방 — 씹기근육 4개는 전부 V3인데 가쪽날개근만 턱을 연다 . 1. 가슴막과 가슴막안 Pleura & pleural ca",
+   "text": "Anatomy 5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 5회차 · 가슴·머리 서브노트 5회차 가슴막 세로칸 심장막 심장 심장동맥 관자아래우묵 위턱동맥 씹기근육 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 복장뼈각(T4/T5)이 가슴의 모든 높이를 정한다 — 기관갈림·대동맥활·위/아래세로칸 경계가 전부 이 한 선에 걸린다. 2. 가로막신경은 앞, 미주신경은 뒤 — 세로칸에서 두 신경을 가르는 기준은 허파뿌리와의 앞뒤 관계 하나뿐이다. 3. 관자아래우묵은 V3와 위턱동맥의 방 — 씹기근육 4개는 전부 V3인데 가쪽날개근만 턱을 연다 . 1. 가슴막과 가슴막안 Pleura & pleural cavity 1) 두 겹과 그 경계 구분 덮는 곳 신경지배 통증 벽쪽가슴막 갈비부분 갈비뼈·갈비사이근 안쪽면 ==갈비사이신경== 예민 · 국소 로 아프다 벽쪽 세로칸부분 세로칸 가쪽면 ==가로막신경== 어깨 연관통 벽쪽 가로막부분 가로막 위면 주변부=갈비사이신경 / ==중앙부=가로막신경== 부위에 따라 갈린다 벽쪽 목부분(가슴막꼭대기) 빗장뼈 안쪽 1/3 위 ==2.5 cm== 갈비사이신경 ==시블슨근막==(suprapleural membrane)이 덮는다 내장쪽가슴막 허파 표면 · 틈새 속까지 자율신경(허파얼기) ==통증 없음== 2) 오목(recess) — 허파가 채우지 못한 여분 오목 위치 의미 ==갈비가로막오목== 갈비가슴막 ↔ 가로막가슴막 사이 가슴막안에서 가장 깊다 · 가슴막삼출이 먼저 고인다 갈비세로칸오목 복장뼈 뒤 왼쪽 · 심장패임 자리 왼허파 앞모서리가 못 채운 자리 3) 아래경계 — 숫자 두 줄 선 허파 아래경계 가슴막 아래경계 빗장중간선 6번 갈비 ==8번 갈비== 중간겨드랑선 8번 갈비 ==10번 갈비== 척주옆선 10번 갈비 ==12번 갈비== [!암기] 허파 6·8·10 / 가슴막 8·10·12 :: 가슴막이 항상 두 갈비 아래 다. 그 차이가 곧 갈비가로막오목이고, 가슴막천자는 그 여분 공간을 노린다. [!주의] 천자는 갈비뼈 위 모서리 :: 갈비사이고랑의 배열이 위부터 ==정맥–동맥–신경(VAN)== 이라 신경·혈관이 갈비뼈 아래 모서리에 붙어 있다. 바늘은 아래 갈비뼈의 위모서리를 타고 들어간다. 2. 세로칸 Mediastinum 1) 복장뼈각 — 이 한 선에 걸리는 것들 복장뼈각(T4/T5, 둘째 갈비연골) 높이의 사건 위세로칸 ↔ 아래세로칸 경계 ==기관갈림(carina)== 대동맥활의 시작과 끝 홀정맥이 위대정맥으로 합류 가슴관이 오른쪽 → 왼쪽으로 건너간다 2) 위세로칸 내용 — 앞에서 뒤로 벗겨 나가는 순서 층 구조 메모 ① 샘 가슴샘 어릴수록 크다 · 성인은 지방으로 ② 정맥 왼·오른 ==팔머리정맥== → 위대정맥 왼쪽이 길고 거의 가로로 건넌다 ③ 동맥 ==대동맥활== + 가지 3개 팔머리동맥 · 왼온목동맥 · 왼빗장밑동맥 ④ 신경 미주신경 · 가로막신경 · ==왼되돌이후두신경== 왼되돌이는 동맥관인대 를 감아 올라간다 ⑤ 기도·소화관 기관 → 식도 기관이 앞, 식도가 뒤 ⑥ 림프 가슴관 가장 뒤·왼쪽 3) 아래세로칸 셋 구획 내용 앞세로칸 가슴샘 잔재 · 지방 · 림프절 (복장뼈 ↔ 심장막 사이, 좁다) ==중간세로칸== 심장막 + 심장 + 허파뿌리 + 가로막신경 + 심장막가로막혈관 뒤세로칸 내림가슴대동맥 · 식도 · 가슴관 · ==홀·반홀정맥== · 교감신경줄기 [!기출] 가로막신경이 지나는 구획 :: 목에서 내려와 중간세로칸 을 지난다(심장막 가쪽면에 딱 붙어). 미주신경은 허파뿌리 뒤로 넘어가 뒤세로칸 으로 들어간다 — 같이 내려오다 허파뿌리에서 갈라진다. 3. 신경 계보 Nerve tree !fig docs/assets/anatomy/tree s05 nerve labeled.svg 가로막신경·미주신경이 허파뿌리에서 앞뒤로 갈리고, V3가 관자아래우묵을 채운다 4. 심장막 Pericardium 층 내용 섬유심장막 질긴 바깥주머니 · 아래는 가로막 ==중심널힘줄==에 붙고 위는 큰혈관 바깥막과 연속 → 심장이 매달려 있다 장막심장막 벽쪽층 섬유심장막 안쪽면 을 덧댄 층 장막심장막 내장쪽층 = ==심장바깥막(epicardium)== · 심장 표면 그 자체 심장막안 두 장막층 사이 · 소량의 장액 신경지배 ==가로막신경(C3–C5)== → 자극되면 어깨 연관통 혈액공급 심장막가로막동맥(속가슴동맥 가지) 심장막굴 — 큰혈관을 감싸다 접힌 자리 굴 앞벽 뒤벽 임상 ==심장막가로굴== 오름대동맥 + 허파동맥줄기 위대정맥 + 왼심방 심장수술에서 동맥 두 줄기를 한 번에 교차겸자 ==심장막빗굴== 왼심방 뒤면 허파정맥·아래대정맥 반전부 막다른 골목 — 손가락이 통과하지 못한다 [!주의] 가로굴은 통과, 빗굴은 막힘 :: 둘을 바꿔 쓰는 실수가 가장 흔하다. 가로 굴은 좌우로 뚫려 손가락이 지나가고, 빗 굴은 왼심방 뒤에서 끝난다. [!임상] 심장눌림증(cardiac tamponade) :: 섬유심장막이 늘어나지 않아 소량의 혈액도 심실 채움을 막는다. 벡 3징 — 저혈압 · 목정맥 확장 · 심음 감약. 5. 심장 Heart 1) 겉면 표지 구조 무엇이 만드나 오른모서리 오른심방 아래(급성)모서리 오른심실 왼(둔한)모서리 왼심실 ==심장꼭대기(apex)== 왼심실 · 왼쪽 5번 갈비사이 빗장중간선 복장갈비면(앞면) 대부분 ==오른심실== 가로막면(아래면) 대부분 왼심실 ==분계고랑/분계능선== 오른심방의 매끈부(굴정맥굴 유래) ↔ 거친부(빗살근) 경계 · 굴심방결절 이 그 위끝에 2) 판막과 청진 자리 판막 위치 청진 자리 대동맥판(반달판) 왼심실 유출로 오른 2번 갈비사이 복장뼈 옆 허파동맥판(반달판) 오른심실 유출로 왼 2번 갈비사이 복장뼈 옆 ==삼첨판== (오른방실) 오른심방→오른심실 왼 4–5번 갈비사이 복장뼈 왼모서리 ==승모판(2첨)== (왼방실) 왼심방→왼심실 심장꼭대기 [!TIP] 판막 위치 ≠ 청진 자리 :: 소리는 혈류를 타고 하류로 퍼지므로 청진점이 판막 실제 위치보다 아래·가쪽으로 밀린다. 태깅은 실제 위치, 청진은 소리 나는 자리를 묻는다. 3) 심장동맥 — 우세(dominance)가 핵심 동맥 주행 주요 가지 오른심장동맥 오른심방귀와 허파동맥줄기 사이 → 오른방실고랑 ==굴심방결절가지(약 60%)== · 오른모서리가지 · ==뒤심실사이가지(약 70%)== 왼심장동맥 짧은 줄기 뒤 곧 갈린다 ==앞심실사이가지(LAD)== · 휘돌이가지 → 왼모서리가지 정맥 동행 동맥 종착 큰심장정맥 앞심실사이가지 ==심장정맥굴== 중간심장정맥 뒤심실사이가지 심장정맥굴 작은심장정맥 오른모서리가지 심장정맥굴 심장정맥굴 — 왼심방 뒤 방실고랑 → ==오른심방== [!기출] 우세(dominance)의 정의 :: 뒤심실사이가지를 누가 내느냐 로 정한다. 오른심장동맥이 내면 right dominance(약 70%). 관상동맥 개수나 굵기가 아니다. 4) 자극전도계 구조 위치 ==굴심방결절(SA)== 위대정맥–오른심방 경계 · 분계고랑 위끝 ==방실결절(AV)== 코흐삼각 — 심장정맥굴구멍 · 삼첨판 사이막첨 · 토다힘줄이 이루는 삼각 방실다발(His) 섬유뼈대를 뚫는 유일한 근육 연결 오른다리 일부가 ==조절대(moderator band)==를 타고 앞유두근으로 6. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s05 vessel labeled.svg 대동맥활 3가지·심장동맥·심장정맥굴과, 관자아래우묵을 채우는 위턱동맥 3부 7. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s05 bundle labeled.svg 허파뿌리 배열·심장막굴·관자아래우묵 — 순서가 그대로 문제가 되는 세 자리 허파뿌리 배열 — 한 표로 방향 오른쪽 왼쪽 앞 → 뒤 ==허파정맥 → 허파동맥 → 기관지 (VAB)== 같다 위 → 아래 ==기관지==(eparterial) → 동맥 → 정맥 ==동맥== → 기관지 → 정맥 신경 앞=가로막신경 / 뒤=미주신경 같다 넘어가는 것 ==홀정맥==이 뿌리 위 를 활처럼 ==대동맥활==이 뿌리 위 를 [!암기] 왼쪽은 동맥이 먼저 :: 왼허파동맥은 대동맥활을 넘어가야 해서 가장 위로 올라간다. 오른쪽은 넘을 것이 없어 위엽기관지가 동맥보다 위(eparterial)로 곧장 간다. 8. 관자부위 Temporal region 구조 내용 관자우묵 경계 위·뒤 관자선 · 아래 ==광대활== · 앞 이마돌기 관자근 관자우묵 → 광대활 아래(깊은쪽) 를 지나 → 아래턱뼈 ==근육돌기==·가지 앞모서리 관자근 작용 앞섬유=닫기 / ==뒤섬유=턱 후퇴== 관자근 신경 ==깊은관자신경(V3 앞줄기)== ==프테리온(pterion)== 이마·마루·관자·나비뼈가 만나는 곳 · 머리뼈에서 가장 얇다 프테리온 임상 속면에 ==중간뇌막동맥 앞가지== → 골절 시 경막외혈종 9. 관자아래우묵 Infratemporal fossa 1) 경계 — 여섯 면 면 경계 위 나비뼈 ==큰날개==(관자아래능선) 안쪽 ==가쪽날개판== 가쪽 ==아래턱뼈가지== 앞 위턱뼈 뒤면(관자아래면) 뒤 붓돌기 · 관자뼈 아래 안쪽날개근이 아래턱뼈에 닿는 자리 2) 씹기근육 넷 — 전부 V3, 작용만 하나가 반대 근육 이는곳 → 닿는곳 작용 관자근 관자우묵 → 근육돌기 닫기 + ==후퇴== 깨물근 광대활 → 아래턱뼈가지 가쪽면 닫기(가장 강한 올림) 안쪽날개근 가쪽날개판 안쪽면 → 아래턱뼈가지 안쪽면 닫기 + 갈기 ==가쪽날개근== 큰날개·가쪽날개판 가쪽면 → 관절돌기목· 관절원반 ==열기==(관절원반을 앞으로 당겨) [!암기] 깨물근과 안쪽날개근은 샌드위치 :: 아래턱뼈가지를 가쪽(깨물근)·안쪽(안쪽날개근) 에서 끼고 같은 방향으로 당긴다 — 그래서 둘 다 강력한 '닫기'다. 3) 우묵을 채우는 것들 — 얕은 데서 깊은 데로 순서 구조 포인트 ① 가쪽날개근 두 갈래 사이로 볼신경·위턱동맥이 지난다 ② ==날개정맥얼기== 판막 없음 → ==해면정맥굴==과 교통(감염 전파) ③ ==위턱동맥== 가쪽날개근의 얕은쪽/깊은쪽 통과는 변이 ④ 아래이틀신경 · 혀신경 안쪽날개근 앞 · ==혀신경이 더 앞·안쪽== ⑤ 안쪽날개근 가장 깊다 4) 위턱동맥 3부 — 1부는 구멍, 2부는 근육, 3부는 우묵 부 이름 대표 가지 1부 아래턱부 ==중간뇌막동맥==(가시구멍) · ==아래이틀동맥==(턱뼈구멍) 2부 날개근부 깊은관자 · 깨물 · 날개근가지 · 볼동맥 (전부 근육 ) 3부 날개입천장부 눈확아래동맥 · ==나비입천장동맥==(코피의 주범) 5) 얹혀 가는 섬유 — V3는 길만 빌려준다 섬유 진짜 주인 하는 일 타고 가는 길 ==고실끈신경== 얼굴신경 VII 혀 앞 2/3 미각 + 턱밑·혀밑샘 분비 ==혀신경(V3)==에 합류 귀신경절 이후섬유 혀인두신경 IX ==귀밑샘== 분비 ==귓바퀴관자신경(V3)== [!기출] 혀 앞 2/3의 이중지배 :: 일반감각은 혀신경(V3), 미각은 고실끈신경(VII) — 같은 자리를 두 신경이 나눠 맡는다. 뒤 1/3은 감각·미각 모두 IX. [!임상] 아래이틀신경 마취 :: 치과의 하치조 마취는 ==턱뼈구멍== 앞의 아래이틀신경을 노린다. 바로 앞·안쪽의 혀신경 이 함께 마취되어 혀 절반이 저린 이유가 이것이다. 10. 마무리 체크리스트 Self check 1. 복장뼈각 높이에서 일어나는 사건 다섯 가지를 말할 수 있는가? 2. 벽쪽가슴막 네 부분의 신경지배와, 어느 자극이 어깨로 가는지 구분되는가? 3. 허파와 가슴막의 아래경계 숫자 두 줄을 세 선에서 각각 말할 수 있는가? 4. 위세로칸 내용을 앞에서 뒤로 여섯 층으로 벗겨 낼 수 있는가? 5. 가로굴과 빗굴의 앞뒤 벽을 각각 무엇이 이루는가? 6. 심장 앞면·아래면·심장꼭대기를 각각 어느 방·심실이 만드는가? 7. 우세(dominance)의 정의를 한 문장으로 말할 수 있는가? 8. 굴심방결절과 방실결절의 위치를 표지 구조로 지목할 수 있는가? 9. 허파뿌리의 앞→뒤 배열과, 좌우가 갈리는 위→아래 배열을 구분하는가? 10. 씹기근육 넷의 작용 중 하나만 반대인 이유를 근육의 닿는곳으로 설명할 수 있는가? 11. 위턱동맥 1·2·3부를 대표 가지 하나씩으로 나눌 수 있는가? 12. 혀 앞 2/3에서 일반감각과 미각을 각각 어느 신경이 맡는가?"
+  },
+  {
+   "id": "paper-2026-0444",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0444_landmark_2012_focused_update_of_the_esc_guidelines_for_the_management.md",
+   "snippet": "Title 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation developed with the special contribution of the European Heart Rhythm A",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology Title 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation developed with the special contribution of the European Heart Rhythm Association Authors Camm A John, Lip Gregory Y H, De Caterina Raffaele, Savelieva Irene, Atar Dan, Hohnloser Stefan H, Hindricks Gerhard, Kirchhof Paulus, et al. Journal / DOI Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology · PMID: 22923145 https://pubmed.ncbi.nlm.nih.gov/22923145/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1138회 · RCR 40.38 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0443",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0443_landmark_guidelines_for_the_diagnosis_and_treatment_of_chronic_heart_.md",
+   "snippet": "Title Guidelines for the diagnosis and treatment of chronic heart failure Authors Remme W J, Swedberg K, Task Force for the Diagnosis and Treatment of Chronic Heart Failure, European Society of Cardiology Journal / DOI European heart journa",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title Guidelines for the diagnosis and treatment of chronic heart failure Authors Remme W J, Swedberg K, Task Force for the Diagnosis and Treatment of Chronic Heart Failure, European Society of Cardiology Journal / DOI European heart journal · PMID: 11492984 https://pubmed.ncbi.nlm.nih.gov/11492984/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1150회 · RCR 32.55 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0442",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of diabetes investigation",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0442_noncoding_rnas_as_novel_diagnostic_biomarkers_for_diabetic_r.md",
+   "snippet": "Title Noncoding RNAs as novel diagnostic biomarkers for diabetic retinopathy: A systematic review and meta analysis Authors Zhang Ting, Xu Donghong Journal / DOI Journal of diabetes investigation · DOI: 10.1111/jdi.70395 · PMID: 42606362 ht",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of diabetes investigation Title Noncoding RNAs as novel diagnostic biomarkers for diabetic retinopathy: A systematic review and meta analysis Authors Zhang Ting, Xu Donghong Journal / DOI Journal of diabetes investigation · DOI: 10.1111/jdi.70395 · PMID: 42606362 https://pubmed.ncbi.nlm.nih.gov/42606362/ Abstract BACKGROUND AND AIMS: Diabetic retinopathy (DR), a frequent microvascular complication of diabetes, requires early detection to mitigate progression. Noncoding RNAs (ncRNAs) have emerged as promising diagnostic biomarkers. This meta analysis evaluates their overall diagnostic accuracy for DR. METHODS: A comprehensive literature search was conducted across multiple electronic databases, including PubMed, Embase, and Web of Science, to identify relevant studies published until August 2025. Data on study characteristics, quality, and diagnostic performance were pooled. Pooled effect sizes were calculated using a random effects model. Heterogeneity was explored via subgroup analysis and meta regression; publication bias was assessed using Deck's funnel plot. RESULTS: Twenty four studies from 17 articles (1,983 patients, 1,437 controls) were included. The pooled analysis demonstrated that ncRNAs achieved a sensitivity of 0.81 and a specificity of 0.84. The area under the curve (AUC) was 0.89, whereas the positive and negative likelihood ratios were 4.96 and 0.23, respectively. LncRNAs demonstrated superior diagnostic performance compared to miRNAs (P = 0.03). Control type, region, and expression trend did not significantly influence outcomes. Significant heterogeneity was observed (I2 50%), but sensitivity analysis confirmed robustness, and no notable publication bias was detected. CONCLUSION: Circulating ncRNAs, particularly lncRNAs, show high diagnostic potential for DR and represent promising noninvasive biomarkers for early screening and differential diagnosis. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0441",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pacing and clinical electrophysiology : PACE",
+   "confidence": "medium",
+   "date": "2026-08-17",
+   "path": "content/papers/2026/2026-08-17_paper-2026-0441_non_invasive_methods_for_identifying_electrical_responders_t.md",
+   "snippet": "Title Non Invasive Methods for Identifying Electrical Responders to Conduction System Pacing Cardiac Resynchronization Therapy Authors Samways Jack W, Ali Nadine, Arnold Ahran D, Chow Ji Jian, Shun Shin Matthew, Mohal Jagdeep Singh, Naraen ",
+   "text": "Cardiology scraped pubmed PubMed / Pacing and clinical electrophysiology : PACE Title Non Invasive Methods for Identifying Electrical Responders to Conduction System Pacing Cardiac Resynchronization Therapy Authors Samways Jack W, Ali Nadine, Arnold Ahran D, Chow Ji Jian, Shun Shin Matthew, Mohal Jagdeep Singh, Naraen Akriti, Saleh Keenan, et al. Journal / DOI Pacing and clinical electrophysiology : PACE · DOI: 10.1111/pace.70393 · PMID: 42606538 https://pubmed.ncbi.nlm.nih.gov/42606538/ Abstract BACKGROUND: Conduction system pacing (CSP) is an emerging alternative modality of cardiac resynchronization therapy (CRT). However, not all patients obtain electrical resynchronization with CSP, there is a clinical need for reliable non invasive predictors of response. We aimed to assess the ability of several non invasive modalities to predict electrical resynchronization with CSP CRT. METHODS: Patients with standard heart failure CRT indications (excluding right bundle branch block) underwent CSP CRT using His bundle and left bundle branch pacing. Electrical resynchronization was defined as a 10 ms reduction in left ventricular activation time or conversion to a physiological left ventricular activation pattern on non invasive multi electrode mapping. We assessed whether 12 lead ECG morphology, vector electrocardiogram (VCG) derived QRS area, Ultra High Frequency (UHF) ECG parameters or MRI scar burden predicted electrical resynchronization. RESULTS: Thirty four patients were analyzed (mean age 69±10 years; 82% male; LVEF 30±6%; QRS duration 161±23 ms; 32% ischemic cardiomyopathy). Electrical resynchronization was achieved in 24/34 (71%; 95%CI 53 85). Strauss criteria positivity on 12 lead ECG yielded a positive predictive value (PPV) of 83% (95%CI 61 95%) and negative predictive value (NPV) of 55% (95%CI 23 83%). VCG QRS area 100µVs demonstrated PPV 100% (95% CI 81 100%) and NPV 73% (95%CI 85 100%). UHF ECG e DYS 50 ms gave PPV 93% (95%CI 66 100%) and NPV 47% (23% 72%); 60 ms gave PPV 90% (95%CI 66 100%) and NPV 38% (95%CI 18 62%). MRI scar burden <15% resulted in PPV 88% (95%CI 64 99%) and NPV 56% (95%CI 21 86%). Lines of propagation discontinuity on multi electrode mapping showed PPV 100% (95%CI 85 100%) and NPV 83% (95%CI 52 98%). CONCLUSIONS: Multiple non invasive markers, including QRS morphology, VCG QRS area, UHF ECG e DYS, MRI scar burden showed potential to identify patients who are likely to electrically resynchronize with CSP CRT, although their NPVs were generally modest. Non invasive propagation mapping had the highest PPV and NPV. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "paper-2026-0440",
    "type": "paper",
@@ -4021,6 +4628,646 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology landmark highly-cited pubmed PubMed / European heart journal Title 2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: The Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC)Developed with the special contribution of the Heart Failure Association (HFA) of the ESC Authors Ponikowski Piotr, Voors Adriaan A, Anker Stefan D, Bueno Héctor, Cleland John G F, Coats Andrew J S, Falk Volkmar, González Juanatey José Ramón, et al. Journal / DOI European heart journal · DOI: 10.1093/eurheartj/ehw128 · PMID: 27206819 https://pubmed.ncbi.nlm.nih.gov/27206819/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 9640회 · RCR 442.42 (분야평균=1.0) · NIH 상위 백분위 100.0. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
+   "id": "kmle-2026-0617",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Polymyalgia Rheumatica",
+   "tags": [
+    "polymyalgia-rheumatica",
+    "morning-stiffness",
+    "elevated-ESR",
+    "low-dose-glucocorticoid",
+    "giant-cell-arteritis-overlap"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0617.md",
+   "snippet": "72세 여자가 6주째 양쪽 어깨와 골반이 아프고 뻣뻣해서 왔다. 특히 아침에 한 시간 넘게 뻣뻣하고, 팔을 들어 머리를 빗기 어렵다. 근력 자체는 유지되고 두통·시야증상은 없다. 근육효소는 정상이나 염증수치가 크게 올라 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고용량 메토트렉세이트 B. 저용량 경구 글루코코르티코이드 C. 고용량 정맥 글루코코르티코이드 D. 비스테로이드소염제 단독 E. 항TNF 생",
+   "text": "Rheumatology Polymyalgia Rheumatica polymyalgia-rheumatica morning-stiffness elevated-ESR low-dose-glucocorticoid giant-cell-arteritis-overlap KMLE 2026 / Claude Routine 72세 여자가 6주째 양쪽 어깨와 골반이 아프고 뻣뻣해서 왔다. 특히 아침에 한 시간 넘게 뻣뻣하고, 팔을 들어 머리를 빗기 어렵다. 근력 자체는 유지되고 두통·시야증상은 없다. 근육효소는 정상이나 염증수치가 크게 올라 있다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고용량 메토트렉세이트 B. 저용량 경구 글루코코르티코이드 C. 고용량 정맥 글루코코르티코이드 D. 비스테로이드소염제 단독 E. 항TNF 생물학제제 고령에서 양측 어깨·골반의 통증과 1시간 넘는 아침 경직, 정상 근육효소, 현저한 염증수치 상승은 류마티스다발근통이다. 저용량 경구 글루코코르티코이드에 극적으로 반응하며, 이 반응 자체가 진단을 뒷받침한다."
+  },
+  {
+   "id": "kmle-2026-0616",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Adult-Onset Still Disease",
+   "tags": [
+    "adult-onset-still-disease",
+    "quotidian-fever",
+    "evanescent-rash",
+    "hyperferritinemia",
+    "diagnosis-of-exclusion"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0616.md",
+   "snippet": "31세 여자가 3주째 매일 저녁이면 39℃ 넘게 치솟았다 아침엔 내리는 열로 왔다. 열이 오를 때 몸통과 팔다리에 연어살색 발진이 나타났다 열이 내리면 사라진다. 목·겨드랑이 림프절이 커져 있고 관절통과 인후통을 호소한다. 반복 배양과 자가항체는 음성이다. 활력징후와 검사 소견은 자료와 같다. 가장 가능성이 높은 진단은? A. 감염심내막염 B. 전신홍반루푸스 C. 성인스틸병 D. 급성 바이러스간염 E. 만성 골수백혈병 하루 주",
+   "text": "Rheumatology Adult-Onset Still Disease adult-onset-still-disease quotidian-fever evanescent-rash hyperferritinemia diagnosis-of-exclusion KMLE 2026 / Claude Routine 31세 여자가 3주째 매일 저녁이면 39℃ 넘게 치솟았다 아침엔 내리는 열로 왔다. 열이 오를 때 몸통과 팔다리에 연어살색 발진이 나타났다 열이 내리면 사라진다. 목·겨드랑이 림프절이 커져 있고 관절통과 인후통을 호소한다. 반복 배양과 자가항체는 음성이다. 활력징후와 검사 소견은 자료와 같다. 가장 가능성이 높은 진단은? A. 감염심내막염 B. 전신홍반루푸스 C. 성인스틸병 D. 급성 바이러스간염 E. 만성 골수백혈병 하루 주기의 고열(quotidian fever), 열과 함께 나타났다 사라지는 연어살색 발진, 관절통·인후통·림프절병, 호중구우세 백혈구증가와 현저한 고페리틴혈증에 자가항체·배양 음성은 성인스틸병의 전형이다. 감염·악성·다른 결합조직병을 배제한 임상진단이다."
+  },
+  {
+   "id": "kmle-2026-0615",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Pneumocystis jirovecii Pneumonia",
+   "tags": [
+    "pneumocystis-pneumonia",
+    "HIV",
+    "TMP-SMX",
+    "adjunctive-corticosteroid",
+    "exertional-hypoxemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0615.md",
+   "snippet": "34세 남자가 3주에 걸쳐 서서히 심해진 마른기침과 운동 시 호흡곤란으로 왔다. 최근 체중이 줄고 입안에 흰 백태가 있다. 진찰에서 청진음은 비교적 깨끗한데 조금만 움직여도 산소포화도가 뚝 떨어진다. 활력징후와 검사 소견은 자료와 같고, 가슴 X선에서 양쪽 폐문 주위의 미만성 간유리음영이 보인다. 가장 적절한 치료는? A. 경구 아지트로마이신 투여 B. 흡입 기관지확장제 사용 C. 항결핵 4제요법 시작 D. 트리메토프림 설파메",
+   "text": "Pulmonology Pneumocystis jirovecii Pneumonia pneumocystis-pneumonia HIV TMP-SMX adjunctive-corticosteroid exertional-hypoxemia KMLE 2026 / Claude Routine 34세 남자가 3주에 걸쳐 서서히 심해진 마른기침과 운동 시 호흡곤란으로 왔다. 최근 체중이 줄고 입안에 흰 백태가 있다. 진찰에서 청진음은 비교적 깨끗한데 조금만 움직여도 산소포화도가 뚝 떨어진다. 활력징후와 검사 소견은 자료와 같고, 가슴 X선에서 양쪽 폐문 주위의 미만성 간유리음영이 보인다. 가장 적절한 치료는? A. 경구 아지트로마이신 투여 B. 흡입 기관지확장제 사용 C. 항결핵 4제요법 시작 D. 트리메토프림 설파메톡사졸 투여 E. 경구 오셀타미비르 투여 면역저하(구강칸디다·저CD4)를 배경으로 아급성 마른기침·운동유발 저산소혈증, 청진에 비해 심한 저산소혈증, 양측 간유리음영, LDH 상승은 폐포자충폐렴이다. 일차치료는 트리메토프림 설파메톡사졸이며, 저산소혈증이 심하면 보조 스테로이드를 병용한다."
+  },
+  {
+   "id": "kmle-2026-0614",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Near-Fatal Asthma Exacerbation",
+   "tags": [
+    "near-fatal-asthma",
+    "silent-chest",
+    "inhaled-beta-agonist",
+    "systemic-corticosteroid",
+    "respiratory-failure"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0614.md",
+   "snippet": "24세 남자가 천식으로 치료 중 오늘 갑자기 숨이 심하게 차서 왔다. 말을 한 단어씩만 겨우 하고 앉아서 어깨를 들썩이며 숨쉰다. 처음엔 심하게 쌕쌕거렸으나 지금은 숨소리가 오히려 잘 들리지 않는다. 활력징후와 검사 소견은 자료와 같다. 특히 이산화탄소분압이 정상 상단으로 올라와 있다. 가장 적절한 초기 처치는? A. 고농도 산소·흡입 베타항진제·스테로이드를 시작한다 B. 진정제를 투여해 호흡을 안정시킨다 C. 흉부 X선 결과",
+   "text": "Pulmonology Near-Fatal Asthma Exacerbation near-fatal-asthma silent-chest inhaled-beta-agonist systemic-corticosteroid respiratory-failure KMLE 2026 / Claude Routine 24세 남자가 천식으로 치료 중 오늘 갑자기 숨이 심하게 차서 왔다. 말을 한 단어씩만 겨우 하고 앉아서 어깨를 들썩이며 숨쉰다. 처음엔 심하게 쌕쌕거렸으나 지금은 숨소리가 오히려 잘 들리지 않는다. 활력징후와 검사 소견은 자료와 같다. 특히 이산화탄소분압이 정상 상단으로 올라와 있다. 가장 적절한 초기 처치는? A. 고농도 산소·흡입 베타항진제·스테로이드를 시작한다 B. 진정제를 투여해 호흡을 안정시킨다 C. 흉부 X선 결과를 먼저 기다린다 D. 경구 기관지확장제만 처방하고 관찰한다 E. 광범위 항생제만 먼저 투여한다 한 단어 발화·보조근 사용, 쌕쌕거림이 줄며 조용해진 폐(silent chest), 저산소혈증과 이산화탄소가 정상으로 '올라온' 것은 지쳐가는 중증(near fatal) 천식악화다. 즉시 고농도 산소, 반복 흡입 베타항진제(+항콜린제), 전신 스테로이드를 시작하고 악화 시 기관삽관을 준비한다."
+  },
+  {
+   "id": "kmle-2026-0613",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Tricyclic Antidepressant Overdose",
+   "tags": [
+    "tricyclic-antidepressant-overdose",
+    "wide-QRS",
+    "sodium-bicarbonate",
+    "anticholinergic-toxidrome",
+    "cardiotoxicity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0613.md",
+   "snippet": "22세 여자가 우울증 약을 한꺼번에 삼킨 뒤 의식이 처지고 경련을 한 차례 해서 실려 왔다. 피부는 건조하고 붉으며 입안이 마르고 소변이 차 있다. 활력징후와 검사 소견은 자료와 같고, 심전도에서 QRS가 넓어지고 aVR 유도의 종말 R파가 커져 있다. 가장 적절한 처치는? A. 경구 활성탄만 반복 투여한다 B. 정맥 베타차단제로 빈맥을 조절한다 C. 정맥 칼슘통로차단제를 투여한다 D. 정맥 플루마제닐을 투여한다 E. 정맥 중",
+   "text": "Psychiatry Tricyclic Antidepressant Overdose tricyclic-antidepressant-overdose wide-QRS sodium-bicarbonate anticholinergic-toxidrome cardiotoxicity KMLE 2026 / Claude Routine 22세 여자가 우울증 약을 한꺼번에 삼킨 뒤 의식이 처지고 경련을 한 차례 해서 실려 왔다. 피부는 건조하고 붉으며 입안이 마르고 소변이 차 있다. 활력징후와 검사 소견은 자료와 같고, 심전도에서 QRS가 넓어지고 aVR 유도의 종말 R파가 커져 있다. 가장 적절한 처치는? A. 경구 활성탄만 반복 투여한다 B. 정맥 베타차단제로 빈맥을 조절한다 C. 정맥 칼슘통로차단제를 투여한다 D. 정맥 플루마제닐을 투여한다 E. 정맥 중탄산나트륨을 투여한다 항우울제 과량 후 의식저하·경련·항콜린 소견에 QRS 확장과 aVR 종말 R파 증가는 삼환계항우울제 중독의 나트륨통로차단 심장독성이다. 즉각적 치료는 정맥 중탄산나트륨으로 나트륨통로차단을 극복하고 산증을 교정하는 것이다."
+  },
+  {
+   "id": "kmle-2026-0612",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Opioid Withdrawal",
+   "tags": [
+    "opioid-withdrawal",
+    "buprenorphine",
+    "opioid-use-disorder",
+    "mydriasis",
+    "medication-assisted-treatment"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0612.md",
+   "snippet": "26세 남자가 하루 전 마지막으로 헤로인을 사용한 뒤 콧물·눈물·하품·근육통·복통·설사와 심한 갈망으로 왔다. 소름이 돋고 안절부절못하며 동공이 커져 있다. 의식은 명료하다. 활력징후와 검사 소견은 자료와 같다. 금단증상 조절에 가장 적절한 약물은? A. 정맥 날록손 B. 설하 부프레노르핀 C. 경구 벤조디아제핀 D. 경구 항정신병약 E. 정맥 플루마제닐 최근 아편유사제 중단 후 콧물·눈물·하품·근육통·설사·산대동공·갈망은 아",
+   "text": "Psychiatry Opioid Withdrawal opioid-withdrawal buprenorphine opioid-use-disorder mydriasis medication-assisted-treatment KMLE 2026 / Claude Routine 26세 남자가 하루 전 마지막으로 헤로인을 사용한 뒤 콧물·눈물·하품·근육통·복통·설사와 심한 갈망으로 왔다. 소름이 돋고 안절부절못하며 동공이 커져 있다. 의식은 명료하다. 활력징후와 검사 소견은 자료와 같다. 금단증상 조절에 가장 적절한 약물은? A. 정맥 날록손 B. 설하 부프레노르핀 C. 경구 벤조디아제핀 D. 경구 항정신병약 E. 정맥 플루마제닐 최근 아편유사제 중단 후 콧물·눈물·하품·근육통·설사·산대동공·갈망은 아편유사제 금단이다. 금단 조절과 유지치료의 표준은 부분작용제인 부프레노르핀(또는 메타돈)이며, 적절한 금단 시점에 시작한다."
+  },
+  {
+   "id": "kmle-2026-0611",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Congenital Adrenal Hyperplasia (Salt-Wasting Crisis)",
+   "tags": [
+    "congenital-adrenal-hyperplasia",
+    "21-hydroxylase-deficiency",
+    "salt-wasting-crisis",
+    "hydrocortisone",
+    "hyponatremia-hyperkalemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0611.md",
+   "snippet": "생후 12일 여아가 사흘째 젖을 잘 안 먹고 자꾸 토하며 축 처져 왔다. 체중이 출생 때보다 많이 줄었고 피부탄력이 떨어져 있다. 바깥생식기에서 음핵비대와 음순융합이 관찰된다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 처치는? A. 저장성 식염수로 나트륨을 천천히 올린다 B. 경구 수유를 지속하며 경과관찰한다 C. 생리식염수·포도당과 정맥 하이드로코르티손을 투여한다 D. 정맥 칼륨을 보충한다 E. 광범위 항생제만",
+   "text": "Pediatrics Congenital Adrenal Hyperplasia (Salt-Wasting Crisis) congenital-adrenal-hyperplasia 21-hydroxylase-deficiency salt-wasting-crisis hydrocortisone hyponatremia-hyperkalemia KMLE 2026 / Claude Routine 생후 12일 여아가 사흘째 젖을 잘 안 먹고 자꾸 토하며 축 처져 왔다. 체중이 출생 때보다 많이 줄었고 피부탄력이 떨어져 있다. 바깥생식기에서 음핵비대와 음순융합이 관찰된다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 처치는? A. 저장성 식염수로 나트륨을 천천히 올린다 B. 경구 수유를 지속하며 경과관찰한다 C. 생리식염수·포도당과 정맥 하이드로코르티손을 투여한다 D. 정맥 칼륨을 보충한다 E. 광범위 항생제만 시작한다 신생아기의 구토·체중감소·탈수·쇼크에 저나트륨·고칼륨·저혈당과 여아의 남성화된 바깥생식기가 겹치면 21 수산화효소결핍 선천부신과다형성의 소금소실위기다. 생리식염수·포도당으로 소생하며 정맥 하이드로코르티손(당·염류코르티코이드 효과)을 즉시 투여한다."
+  },
+  {
+   "id": "kmle-2026-0610",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Foreign Body Aspiration",
+   "tags": [
+    "foreign-body-aspiration",
+    "unilateral-wheeze",
+    "rigid-bronchoscopy",
+    "toddler",
+    "sudden-choking"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0610.md",
+   "snippet": "18개월 남아가 한 시간 전 땅콩을 먹다가 갑자기 켁켁거리며 기침하고 숨차 해서 왔다. 열은 없었고 그전까지 건강했다. 청진에서 오른쪽 호흡음이 줄고 국소적으로 쌕쌕거린다. 활력징후와 검사 소견은 자료와 같고, 가슴 X선에서 오른쪽 폐가 날숨에 과팽창되어 있다. 가장 적절한 처치는? A. 경직기관지경으로 이물을 제거한다 B. 흡입 기관지확장제만 반복 투여한다 C. 광범위 항생제를 정맥투여한다 D. 전신 스테로이드를 투여한다 E",
+   "text": "Pediatrics Foreign Body Aspiration foreign-body-aspiration unilateral-wheeze rigid-bronchoscopy toddler sudden-choking KMLE 2026 / Claude Routine 18개월 남아가 한 시간 전 땅콩을 먹다가 갑자기 켁켁거리며 기침하고 숨차 해서 왔다. 열은 없었고 그전까지 건강했다. 청진에서 오른쪽 호흡음이 줄고 국소적으로 쌕쌕거린다. 활력징후와 검사 소견은 자료와 같고, 가슴 X선에서 오른쪽 폐가 날숨에 과팽창되어 있다. 가장 적절한 처치는? A. 경직기관지경으로 이물을 제거한다 B. 흡입 기관지확장제만 반복 투여한다 C. 광범위 항생제를 정맥투여한다 D. 전신 스테로이드를 투여한다 E. 등을 세게 두드리며 경과관찰한다 갑작스러운 사레 후의 기침·호흡곤란, 편측 호흡음 감소·국소 천명, 날숨 과팽창은 기관지 이물흡인이다. 확진과 치료를 겸해 경직기관지경으로 이물을 제거하는 것이 표준이다."
+  },
+  {
+   "id": "kmle-2026-0609",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Pyogenic Flexor Tenosynovitis",
+   "tags": [
+    "flexor-tenosynovitis",
+    "kanavel-signs",
+    "hand-infection",
+    "surgical-drainage",
+    "penetrating-injury"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0609.md",
+   "snippet": "38세 남자가 사흘 전 생선 가시에 둘째 손가락을 찔린 뒤 손가락이 붓고 몹시 아파 왔다. 손가락은 소시지처럼 전체가 부어 있고, 굽힘힘줄을 따라 누르면 아프며, 살짝 펴려고만 해도 심한 통증이 유발되고, 환자는 손가락을 약간 굽힌 채로 유지한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 손가락 부목만 대고 경과관찰 B. 국소 스테로이드 주사 C. 진통제와 냉찜질만 시행 D. 정맥 항생제와 응급 수술적 ",
+   "text": "Orthopedics Pyogenic Flexor Tenosynovitis flexor-tenosynovitis kanavel-signs hand-infection surgical-drainage penetrating-injury KMLE 2026 / Claude Routine 38세 남자가 사흘 전 생선 가시에 둘째 손가락을 찔린 뒤 손가락이 붓고 몹시 아파 왔다. 손가락은 소시지처럼 전체가 부어 있고, 굽힘힘줄을 따라 누르면 아프며, 살짝 펴려고만 해도 심한 통증이 유발되고, 환자는 손가락을 약간 굽힌 채로 유지한다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 손가락 부목만 대고 경과관찰 B. 국소 스테로이드 주사 C. 진통제와 냉찜질만 시행 D. 정맥 항생제와 응급 수술적 배농을 준비한다 E. 경구 항히스타민제 투여 찔린 상처 후 손가락 전체가 대칭적으로 붓고, 굽힘힘줄을 따라 압통이 있으며, 수동신전 시 심한 통증과 굽힘 자세를 취하는 소견은 화농굽힘힘줄윤활막염이다. 정맥 항생제로 시작하되 반응이 없거나 진행하면 응급 수술적 배농이 필요하므로 즉시 준비한다."
+  },
+  {
+   "id": "kmle-2026-0608",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Posterior Hip Dislocation",
+   "tags": [
+    "posterior-hip-dislocation",
+    "urgent-closed-reduction",
+    "avascular-necrosis",
+    "sciatic-nerve",
+    "dashboard-injury"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0608.md",
+   "snippet": "29세 남자가 정면 충돌 교통사고로 실려 왔다. 오른쪽 엉덩관절이 심하게 아파 움직이지 못하고, 오른쪽 다리는 굽고 안쪽으로 돌아가 짧아져 있다. 단순촬영에서 넙다리뼈머리가 볼기뼈절구 뒤·위쪽으로 이탈해 있으며 골절 조각은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 6주간 목발 보행 후 재평가 B. 되도록 빨리 도수정복을 시행한다 C. 진통제만 주고 부기가 빠지길 기다린다 D. 즉시 인공관절 전치환",
+   "text": "Orthopedics Posterior Hip Dislocation posterior-hip-dislocation urgent-closed-reduction avascular-necrosis sciatic-nerve dashboard-injury KMLE 2026 / Claude Routine 29세 남자가 정면 충돌 교통사고로 실려 왔다. 오른쪽 엉덩관절이 심하게 아파 움직이지 못하고, 오른쪽 다리는 굽고 안쪽으로 돌아가 짧아져 있다. 단순촬영에서 넙다리뼈머리가 볼기뼈절구 뒤·위쪽으로 이탈해 있으며 골절 조각은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 6주간 목발 보행 후 재평가 B. 되도록 빨리 도수정복을 시행한다 C. 진통제만 주고 부기가 빠지길 기다린다 D. 즉시 인공관절 전치환술을 한다 E. 장하지 석고고정만 하고 경과관찰 고에너지 외상 후 엉덩관절 굴곡·내전·내회전·단축은 뒤쪽 엉덩관절탈구다. 넙다리뼈머리로 가는 혈류가 차단되어 시간이 지날수록 무혈관괴사 위험이 커지므로, 가능한 한 빨리(보통 6시간 이내) 도수정복하는 것이 원칙이다."
+  },
+  {
+   "id": "kmle-2026-0607",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Optic Neuritis",
+   "tags": [
+    "optic-neuritis",
+    "relative-afferent-pupillary-defect",
+    "pain-on-eye-movement",
+    "IV-methylprednisolone",
+    "demyelination"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0607.md",
+   "snippet": "28세 여자가 3일 전부터 왼쪽 눈이 점점 흐려지고 눈을 움직일 때 눈 뒤가 아파서 왔다. 시야 가운데가 어둡게 보이고 색이 바래 보인다고 한다. 겉으로 눈은 정상이고 안압도 정상이다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 치료는? A. 경구 프레드니솔론 단독 투여 B. 항생제 안약 점안 C. 정맥 메틸프레드니솔론 고용량 투여 D. 안압하강제 점안 E. 경과관찰만 하며 재검 젊은 여성에서 아급성 단안 시력저하",
+   "text": "Ophthalmology Optic Neuritis optic-neuritis relative-afferent-pupillary-defect pain-on-eye-movement IV-methylprednisolone demyelination KMLE 2026 / Claude Routine 28세 여자가 3일 전부터 왼쪽 눈이 점점 흐려지고 눈을 움직일 때 눈 뒤가 아파서 왔다. 시야 가운데가 어둡게 보이고 색이 바래 보인다고 한다. 겉으로 눈은 정상이고 안압도 정상이다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 치료는? A. 경구 프레드니솔론 단독 투여 B. 항생제 안약 점안 C. 정맥 메틸프레드니솔론 고용량 투여 D. 안압하강제 점안 E. 경과관찰만 하며 재검 젊은 여성에서 아급성 단안 시력저하, 안구운동 시 통증, 중심암점·색각저하, 상대구심동공결손에 겉보기·안저가 정상(구후시신경염)이면 시신경염이다. 회복을 앞당기기 위해 정맥 고용량 메틸프레드니솔론으로 치료하며, 경구 프레드니솔론 단독은 피한다."
+  },
+  {
+   "id": "kmle-2026-0606",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Retrobulbar Hemorrhage (Orbital Compartment Syndrome)",
+   "tags": [
+    "retrobulbar-hemorrhage",
+    "orbital-compartment-syndrome",
+    "lateral-canthotomy",
+    "elevated-intraocular-pressure",
+    "vision-threatening-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0606.md",
+   "snippet": "44세 남자가 교통사고로 오른쪽 눈 주위를 크게 다친 뒤 눈이 튀어나오고 급격히 안 보인다며 왔다. 오른쪽 눈꺼풀은 심하게 부어 단단하고, 안구는 앞으로 밀려나와 눈을 움직이기 어렵고 손으로 눌러도 뒤로 밀리지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 처치는? A. 항생제 안약을 점안한다 B. 안와 CT를 먼저 촬영하고 결과를 기다린다 C. 냉찜질만 하며 부기를 관찰한다 D. 스테로이드 안약을 점안",
+   "text": "Ophthalmology Retrobulbar Hemorrhage (Orbital Compartment Syndrome) retrobulbar-hemorrhage orbital-compartment-syndrome lateral-canthotomy elevated-intraocular-pressure vision-threatening-emergency KMLE 2026 / Claude Routine 44세 남자가 교통사고로 오른쪽 눈 주위를 크게 다친 뒤 눈이 튀어나오고 급격히 안 보인다며 왔다. 오른쪽 눈꺼풀은 심하게 부어 단단하고, 안구는 앞으로 밀려나와 눈을 움직이기 어렵고 손으로 눌러도 뒤로 밀리지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 처치는? A. 항생제 안약을 점안한다 B. 안와 CT를 먼저 촬영하고 결과를 기다린다 C. 냉찜질만 하며 부기를 관찰한다 D. 스테로이드 안약을 점안한다 E. 가쪽 눈구석절개와 아래힘줄절개를 즉시 시행한다 외상 후 안구돌출·안구운동제한·저항성 안와, 안압 급상승과 상대구심동공결손·시력저하는 안와출혈에 의한 안와구획증후군이다. 시신경허혈이 임박한 시력응급이므로 영상 전에 즉시 가쪽 눈구석절개·아래힘줄절개로 안와를 감압한다."
+  },
+  {
+   "id": "kmle-2026-0605",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Septic Abortion",
+   "tags": [
+    "septic-abortion",
+    "retained-products-of-conception",
+    "broad-spectrum-antibiotics",
+    "uterine-evacuation",
+    "source-control"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0605.md",
+   "snippet": "27세 여자가 임신 10주에 시설 밖에서 임신중절 시술을 받은 뒤 사흘째 고열·심한 아랫배통증·악취 나는 질분비물로 왔다. 자궁은 물렁하고 압통이 심하며 자궁경부에서 고름 섞인 분비물이 나온다. 초음파에서 자궁 안에 잔류 조직이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 항생제와 함께 자궁내용물을 배출시킨다 B. 해열제만 투여하고 경과를 관찰한다 C. 자궁수축억제제를 투여한다 D. 경구 항생제만 ",
+   "text": "Obstetrics & Gynecology Septic Abortion septic-abortion retained-products-of-conception broad-spectrum-antibiotics uterine-evacuation source-control KMLE 2026 / Claude Routine 27세 여자가 임신 10주에 시설 밖에서 임신중절 시술을 받은 뒤 사흘째 고열·심한 아랫배통증·악취 나는 질분비물로 왔다. 자궁은 물렁하고 압통이 심하며 자궁경부에서 고름 섞인 분비물이 나온다. 초음파에서 자궁 안에 잔류 조직이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 항생제와 함께 자궁내용물을 배출시킨다 B. 해열제만 투여하고 경과를 관찰한다 C. 자궁수축억제제를 투여한다 D. 경구 항생제만 처방하고 귀가시킨다 E. 지혈제만 투여하며 출혈을 조절한다 임신중절 후 고열·자궁압통·악취 분비물·잔류 조직·패혈증 소견은 패혈유산이다. 광범위 정맥 항생제로 소생하면서 감염원인 잔류물을 자궁소파/흡인으로 신속히 제거(근원조절)하는 것이 표준 처치다."
+  },
+  {
+   "id": "kmle-2026-0604",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Amniotic Fluid Embolism",
+   "tags": [
+    "amniotic-fluid-embolism",
+    "cardiovascular-collapse",
+    "disseminated-intravascular-coagulation",
+    "supportive-resuscitation",
+    "intrapartum-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0604.md",
+   "snippet": "31세 임산부가 진통 중 인공파막 직후 갑자기 숨이 차고 청색증이 오면서 쓰러졌다. 곧이어 질에서 응고되지 않는 출혈이 시작되었다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 자궁수축억제제를 정주한다 B. 광범위 항생제를 먼저 시작한다 C. 즉시 저분자량헤파린을 투여한다 D. 이뇨제로 폐부종을 조절한다 E. 산소·순환보조와 응고인자를 보충한다 분만 중 파막 직후 갑작스러운 저산소혈증·심혈관허탈에 이어 응고",
+   "text": "Obstetrics & Gynecology Amniotic Fluid Embolism amniotic-fluid-embolism cardiovascular-collapse disseminated-intravascular-coagulation supportive-resuscitation intrapartum-emergency KMLE 2026 / Claude Routine 31세 임산부가 진통 중 인공파막 직후 갑자기 숨이 차고 청색증이 오면서 쓰러졌다. 곧이어 질에서 응고되지 않는 출혈이 시작되었다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 자궁수축억제제를 정주한다 B. 광범위 항생제를 먼저 시작한다 C. 즉시 저분자량헤파린을 투여한다 D. 이뇨제로 폐부종을 조절한다 E. 산소·순환보조와 응고인자를 보충한다 분만 중 파막 직후 갑작스러운 저산소혈증·심혈관허탈에 이어 응고되지 않는 출혈(소모응고병증)이 나타나면 양수색전증이다. 특이치료가 없으므로 즉각적 기도확보·고농도 산소·순환보조(승압제)와 함께 수혈·응고인자 보충으로 파종혈관내응고를 교정하는 지지·소생치료가 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0603",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Posterior Communicating Artery Aneurysm (Third Nerve Palsy)",
+   "tags": [
+    "third-nerve-palsy",
+    "posterior-communicating-artery-aneurysm",
+    "pupil-involving",
+    "CT-angiography",
+    "subarachnoid-hemorrhage-risk"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0603.md",
+   "snippet": "52세 여자가 오늘 아침부터 왼쪽 눈꺼풀이 처지고 물체가 겹쳐 보여 왔다. 심한 머리통증이 함께 있다. 왼쪽 눈은 아래·바깥쪽으로 돌아가 있고 눈꺼풀이 처졌으며 동공이 커져 빛에 반응하지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 검사는? A. 하루 뒤 외래에서 경과관찰 B. 갑상샘기능검사 C. 관자동맥 생검 D. 뇌 CT 혈관조영술 E. 중증근무력증 항체검사 눈이 아래·바깥으로 편위된 눈돌림신경마비",
+   "text": "Neurology Posterior Communicating Artery Aneurysm (Third Nerve Palsy) third-nerve-palsy posterior-communicating-artery-aneurysm pupil-involving CT-angiography subarachnoid-hemorrhage-risk KMLE 2026 / Claude Routine 52세 여자가 오늘 아침부터 왼쪽 눈꺼풀이 처지고 물체가 겹쳐 보여 왔다. 심한 머리통증이 함께 있다. 왼쪽 눈은 아래·바깥쪽으로 돌아가 있고 눈꺼풀이 처졌으며 동공이 커져 빛에 반응하지 않는다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 검사는? A. 하루 뒤 외래에서 경과관찰 B. 갑상샘기능검사 C. 관자동맥 생검 D. 뇌 CT 혈관조영술 E. 중증근무력증 항체검사 눈이 아래·바깥으로 편위된 눈돌림신경마비에 동공산대·빛반사 소실(동공침범)과 두통이 동반되면, 뒤교통동맥 동맥류에 의한 압박을 의심해야 한다. 파열 전 응급이므로 즉시 뇌 CT 혈관조영술로 동맥류를 확인한다."
+  },
+  {
+   "id": "kmle-2026-0602",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Botulism",
+   "tags": [
+    "botulism",
+    "descending-paralysis",
+    "antitoxin",
+    "home-canned-food",
+    "cranial-nerve-palsy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0602.md",
+   "snippet": "45세 남자가 하루 전부터 복시·눈꺼풀처짐·발음장애와 삼킴곤란이 생겼고 점차 양팔 힘이 빠져 왔다. 감각은 정상이고 열은 없으며 의식은 또렷하다. 이틀 전 집에서 만든 통조림을 먹었다. 증상은 위에서 아래로 대칭적으로 내려온다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 정맥 면역글로불린 B. 고용량 스테로이드 C. 보툴리눔 항독소 D. 피리도스티그민 E. 혈장교환술 발열·감각이상 없이 뇌신경마비(복시·눈",
+   "text": "Neurology Botulism botulism descending-paralysis antitoxin home-canned-food cranial-nerve-palsy KMLE 2026 / Claude Routine 45세 남자가 하루 전부터 복시·눈꺼풀처짐·발음장애와 삼킴곤란이 생겼고 점차 양팔 힘이 빠져 왔다. 감각은 정상이고 열은 없으며 의식은 또렷하다. 이틀 전 집에서 만든 통조림을 먹었다. 증상은 위에서 아래로 대칭적으로 내려온다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 정맥 면역글로불린 B. 고용량 스테로이드 C. 보툴리눔 항독소 D. 피리도스티그민 E. 혈장교환술 발열·감각이상 없이 뇌신경마비(복시·눈꺼풀처짐·구음·연하장애)로 시작해 대칭적으로 하행하는 이완마비, 동공반응 저하, 가정 통조림 섭취력은 보툴리눔독소증이다. 치료는 신경근접합부의 독소를 중화하는 보툴리눔 항독소를 조기에 투여하는 것이다."
+  },
+  {
+   "id": "kmle-2026-0601",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Ethylene Glycol Poisoning",
+   "tags": [
+    "ethylene-glycol",
+    "high-anion-gap-metabolic-acidosis",
+    "osmolal-gap",
+    "fomepizole",
+    "calcium-oxalate-crystals"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0601.md",
+   "snippet": "42세 남자가 술 대신 부동액을 마신 뒤 몇 시간 만에 취한 듯 비틀거리고 숨을 몰아쉬며 실려 왔다. 소변현미경에서 봉투 모양 결정이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 활성탄을 경구 투여한다 B. 아세틸시스테인을 정주한다 C. 날록손을 정주한다 D. 플루마제닐을 정주한다 E. 포메피졸을 정주한다 부동액(에틸렌글리콜) 섭취 후 음이온차·삼투질농도차가 모두 증가한 대사산증, 봉투 모양의 옥살",
+   "text": "Nephrology Ethylene Glycol Poisoning ethylene-glycol high-anion-gap-metabolic-acidosis osmolal-gap fomepizole calcium-oxalate-crystals KMLE 2026 / Claude Routine 42세 남자가 술 대신 부동액을 마신 뒤 몇 시간 만에 취한 듯 비틀거리고 숨을 몰아쉬며 실려 왔다. 소변현미경에서 봉투 모양 결정이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 활성탄을 경구 투여한다 B. 아세틸시스테인을 정주한다 C. 날록손을 정주한다 D. 플루마제닐을 정주한다 E. 포메피졸을 정주한다 부동액(에틸렌글리콜) 섭취 후 음이온차·삼투질농도차가 모두 증가한 대사산증, 봉투 모양의 옥살산칼슘 결정, 급성콩팥손상은 에틸렌글리콜 중독이다. 치료는 알코올탈수소효소를 차단해 독성 대사물 생성을 막는 포메피졸(또는 에탄올)이며, 중증이면 혈액투석을 병행한다."
+  },
+  {
+   "id": "kmle-2026-0600",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Hyperkalemic Emergency",
+   "tags": [
+    "hyperkalemia",
+    "calcium-gluconate",
+    "membrane-stabilization",
+    "peaked-T-waves",
+    "cardiac-toxicity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0600.md",
+   "snippet": "63세 남자가 이틀간 힘이 빠지고 소변이 거의 안 나와 왔다. 오래된 당뇨병콩팥병이 있고 최근 소염진통제를 자주 복용했다. 심전도에서 뾰족하고 좁은 T파와 넓어진 QRS가 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 처치는? A. 정맥 칼슘글루콘산염을 투여한다 B. 경구 양이온교환수지를 투여한다 C. 혈액투석을 준비하며 기다린다 D. 생리식염수만 정주하며 경과를 본다 E. 정맥 인슐린과 포도당을 투여한",
+   "text": "Nephrology Hyperkalemic Emergency hyperkalemia calcium-gluconate membrane-stabilization peaked-T-waves cardiac-toxicity KMLE 2026 / Claude Routine 63세 남자가 이틀간 힘이 빠지고 소변이 거의 안 나와 왔다. 오래된 당뇨병콩팥병이 있고 최근 소염진통제를 자주 복용했다. 심전도에서 뾰족하고 좁은 T파와 넓어진 QRS가 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 처치는? A. 정맥 칼슘글루콘산염을 투여한다 B. 경구 양이온교환수지를 투여한다 C. 혈액투석을 준비하며 기다린다 D. 생리식염수만 정주하며 경과를 본다 E. 정맥 인슐린과 포도당을 투여한다 무뇨성 급성콩팥손상에 심한 고칼륨혈증(7.4)과 심전도 변화(뾰족한 T파·QRS 확장)가 있으면 심정지 위험이 임박한 응급이다. 가장 먼저 정맥 칼슘글루콘산염으로 심근막을 안정화한 뒤, 인슐린/포도당·베타항진제로 칼륨을 세포 안으로 이동시키고 투석으로 제거한다."
+  },
+  {
+   "id": "kmle-2026-0599",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Hemorrhagic Fever with Renal Syndrome (Hantavirus)",
+   "tags": [
+    "hantavirus",
+    "hemorrhagic-fever-renal-syndrome",
+    "hantaan-virus",
+    "supportive-care",
+    "rodent-exposure"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0599.md",
+   "snippet": "27세 군인이 야외 훈련 뒤 5일간 고열·두통·심한 허리통증과 함께 눈이 침침해지고 소변량이 줄어 왔다. 얼굴과 몸통에 홍조가 있고 겨드랑이·연구개에 점상출혈이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경험적 광범위 항생제 투여 B. 수액·전해질 조절과 투석 지지치료 C. 고용량 스테로이드 충격요법 D. 신선냉동혈장 대량 수혈 E. 즉시 신장 생검 시행 설치류 노출 가능성이 높은 야외활동 후 고",
+   "text": "Infectious Disease Hemorrhagic Fever with Renal Syndrome (Hantavirus) hantavirus hemorrhagic-fever-renal-syndrome hantaan-virus supportive-care rodent-exposure KMLE 2026 / Claude Routine 27세 군인이 야외 훈련 뒤 5일간 고열·두통·심한 허리통증과 함께 눈이 침침해지고 소변량이 줄어 왔다. 얼굴과 몸통에 홍조가 있고 겨드랑이·연구개에 점상출혈이 보인다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경험적 광범위 항생제 투여 B. 수액·전해질 조절과 투석 지지치료 C. 고용량 스테로이드 충격요법 D. 신선냉동혈장 대량 수혈 E. 즉시 신장 생검 시행 설치류 노출 가능성이 높은 야외활동 후 고열·허리통증·시야흐림·핍뇨에 혈소판감소·단백뇨·급성콩팥손상·점상출혈이 겹치면 신증후군출혈열(한타바이러스)이다. 특이치료가 없으므로 병기(발열·저혈압·핍뇨·이뇨·회복)에 맞춘 수액·전해질·투석 지지치료가 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0598",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Leptospirosis (Weil Disease)",
+   "tags": [
+    "leptospirosis",
+    "weil-disease",
+    "conjunctival-suffusion",
+    "doxycycline",
+    "freshwater-exposure"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0598.md",
+   "snippet": "39세 남자가 5일간의 고열·심한 장딴지 근육통·황달로 왔다. 열흘 전 폭우 뒤 논에서 오래 일했다. 두 눈의 흰자위가 붉게 충혈되어 있으나 눈곱은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 아시클로버 B. 경구 아르테미시닌 병합요법 C. 경구 프라지콴텔 D. 정맥 페니실린 G 또는 독시사이클린 E. 경구 메트로니다졸 민물·흙 노출력, 고열·심한 장딴지 근육통, 결막충혈, 황달·급성콩팥손상·혈",
+   "text": "Infectious Disease Leptospirosis (Weil Disease) leptospirosis weil-disease conjunctival-suffusion doxycycline freshwater-exposure KMLE 2026 / Claude Routine 39세 남자가 5일간의 고열·심한 장딴지 근육통·황달로 왔다. 열흘 전 폭우 뒤 논에서 오래 일했다. 두 눈의 흰자위가 붉게 충혈되어 있으나 눈곱은 없다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 경구 아시클로버 B. 경구 아르테미시닌 병합요법 C. 경구 프라지콴텔 D. 정맥 페니실린 G 또는 독시사이클린 E. 경구 메트로니다졸 민물·흙 노출력, 고열·심한 장딴지 근육통, 결막충혈, 황달·급성콩팥손상·혈소판감소는 렙토스피라증(중증형 Weil병)이다. 치료는 정맥 페니실린 G(중증) 또는 독시사이클린이다."
+  },
+  {
+   "id": "kmle-2026-0597",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Febrile Neutropenia",
+   "tags": [
+    "febrile-neutropenia",
+    "chemotherapy",
+    "empirical-antibiotics",
+    "antipseudomonal-beta-lactam",
+    "oncologic-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0597.md",
+   "snippet": "48세 여자가 급성백혈병으로 항암화학요법을 받은 지 10일째에 열이 나고 오한이 있어 왔다. 뚜렷한 국소 감염 징후는 없다. 활력징후와 검사 소견은 자료와 같다. 혈액배양을 받은 뒤 가장 적절한 처치는? A. 해열제만 투여하고 배양 결과를 기다린다 B. 경구 항히스타민제를 투여한다 C. 항녹농균 광범위 베타락탐(예: 세페핌)을 즉시 정맥투여한다 D. 과립구집락자극인자만 투여하고 관찰한다 E. 경험적 항진균제를 단독으로 먼저 시",
+   "text": "Hematology Febrile Neutropenia febrile-neutropenia chemotherapy empirical-antibiotics antipseudomonal-beta-lactam oncologic-emergency KMLE 2026 / Claude Routine 48세 여자가 급성백혈병으로 항암화학요법을 받은 지 10일째에 열이 나고 오한이 있어 왔다. 뚜렷한 국소 감염 징후는 없다. 활력징후와 검사 소견은 자료와 같다. 혈액배양을 받은 뒤 가장 적절한 처치는? A. 해열제만 투여하고 배양 결과를 기다린다 B. 경구 항히스타민제를 투여한다 C. 항녹농균 광범위 베타락탐(예: 세페핌)을 즉시 정맥투여한다 D. 과립구집락자극인자만 투여하고 관찰한다 E. 경험적 항진균제를 단독으로 먼저 시작한다 항암치료 후 절대호중구수 500/mm³ 미만에서 발열(≥38.3℃ 또는 38.0℃ 지속)은 발열성 호중구감소증이며 응급이다. 배양 채취 직후 항녹농균 광범위 베타락탐(세페핌·피페라실린 타조박탐·카바페넴)을 1시간 이내 경험적으로 시작한다."
+  },
+  {
+   "id": "kmle-2026-0596",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Acute Hemolytic Transfusion Reaction",
+   "tags": [
+    "acute-hemolytic-transfusion-reaction",
+    "ABO-incompatibility",
+    "stop-transfusion",
+    "intravascular-hemolysis",
+    "clerical-error"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0596.md",
+   "snippet": "58세 여자가 수술 후 빈혈로 농축적혈구를 수혈받던 중, 시작 15분 만에 오한·옆구리통증·주입혈관을 따라 화끈거림을 호소하고 소변이 붉어졌다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 해야 할 처치는? A. 수혈을 즉시 중단하고 생리식염수로 정맥로를 유지한다 B. 해열제를 투여하고 수혈 속도를 늦춰 계속한다 C. 항히스타민제를 투여하고 수혈을 지속한다 D. 이뇨제를 먼저 정주해 소변량을 늘린다 E. 경험적 광범위 항생",
+   "text": "Hematology Acute Hemolytic Transfusion Reaction acute-hemolytic-transfusion-reaction ABO-incompatibility stop-transfusion intravascular-hemolysis clerical-error KMLE 2026 / Claude Routine 58세 여자가 수술 후 빈혈로 농축적혈구를 수혈받던 중, 시작 15분 만에 오한·옆구리통증·주입혈관을 따라 화끈거림을 호소하고 소변이 붉어졌다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 해야 할 처치는? A. 수혈을 즉시 중단하고 생리식염수로 정맥로를 유지한다 B. 해열제를 투여하고 수혈 속도를 늦춰 계속한다 C. 항히스타민제를 투여하고 수혈을 지속한다 D. 이뇨제를 먼저 정주해 소변량을 늘린다 E. 경험적 광범위 항생제를 시작한다 수혈 시작 직후의 발열·오한·옆구리통증·주입부 통증·혈색소뇨·혈관내용혈 지표는 ABO 부적합에 의한 급성 용혈성 수혈반응이다. 가장 먼저 수혈을 즉시 중단하고 정맥로를 생리식염수로 유지하며, 혈액백·검체를 혈액은행에 보내 확인한다."
+  },
+  {
+   "id": "kmle-2026-0595",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Postoperative Anastomotic Leak",
+   "tags": [
+    "anastomotic-leak",
+    "postoperative-sepsis",
+    "low-anterior-resection",
+    "contrast-enhanced-CT",
+    "source-control"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0595.md",
+   "snippet": "62세 남자가 직장암으로 저위앞절제술을 받은 지 5일째 되는 날 갑자기 배가 아프고 열이 나며 처졌다. 배는 전반적으로 단단하고 눌렀다 뗄 때 아파한다. 배안배액관에서 혼탁하고 대변 냄새가 나는 액체가 나온다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 다음 처치는? A. 진통제만 늘리고 경과를 관찰한다 B. 수액·항생제 후 CT로 누출을 확인해 배액한다 C. 경구 수분섭취를 늘려 탈수를 교정한다 D. 배액관을 제거하고",
+   "text": "General Surgery Postoperative Anastomotic Leak anastomotic-leak postoperative-sepsis low-anterior-resection contrast-enhanced-CT source-control KMLE 2026 / Claude Routine 62세 남자가 직장암으로 저위앞절제술을 받은 지 5일째 되는 날 갑자기 배가 아프고 열이 나며 처졌다. 배는 전반적으로 단단하고 눌렀다 뗄 때 아파한다. 배안배액관에서 혼탁하고 대변 냄새가 나는 액체가 나온다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 다음 처치는? A. 진통제만 늘리고 경과를 관찰한다 B. 수액·항생제 후 CT로 누출을 확인해 배액한다 C. 경구 수분섭취를 늘려 탈수를 교정한다 D. 배액관을 제거하고 상처를 봉합한다 E. 지사제를 투여해 배액량을 줄인다 잘록창자수술 후 5일경 발열·복막자극징후·대변성 배액과 패혈증 소견은 문합부누출이다. 즉시 수액소생과 광범위 항생제로 패혈증을 치료하면서 조영증강 CT로 누출·고름집을 확인하고, 배액 또는 재수술로 근원조절을 한다."
+  },
+  {
+   "id": "kmle-2026-0594",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Cecal Volvulus",
+   "tags": [
+    "cecal-volvulus",
+    "large-bowel-obstruction",
+    "coffee-bean-sign",
+    "right-hemicolectomy",
+    "surgical-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0594.md",
+   "snippet": "34세 여자가 하루 전부터 배가 점점 불러오고 심하게 아프며 토해서 왔다. 대변과 방귀가 나오지 않는다. 배는 비대칭으로 부풀어 있고 장음은 금속성으로 항진되어 있다. 활력징후와 검사 소견은 자료와 같고, 복부 CT에서 오른아래에 있어야 할 막창자가 좌상복부로 뒤틀려 올라가 있고 소용돌이 모양의 장간막이 보인다. 복막자극징후는 없다. 가장 적절한 치료는? A. 고섬유식이와 경과관찰 B. 대장내시경 감압술만 시행 C. 바륨 관장",
+   "text": "General Surgery Cecal Volvulus cecal-volvulus large-bowel-obstruction coffee-bean-sign right-hemicolectomy surgical-emergency KMLE 2026 / Claude Routine 34세 여자가 하루 전부터 배가 점점 불러오고 심하게 아프며 토해서 왔다. 대변과 방귀가 나오지 않는다. 배는 비대칭으로 부풀어 있고 장음은 금속성으로 항진되어 있다. 활력징후와 검사 소견은 자료와 같고, 복부 CT에서 오른아래에 있어야 할 막창자가 좌상복부로 뒤틀려 올라가 있고 소용돌이 모양의 장간막이 보인다. 복막자극징후는 없다. 가장 적절한 치료는? A. 고섬유식이와 경과관찰 B. 대장내시경 감압술만 시행 C. 바륨 관장으로 정복 D. 항생제만 정맥투여하며 관찰 E. 수술로 우측 반결장절제술을 시행한다 젊은 환자의 급성 큰창자막힘에서 막창자가 좌상복부로 전위되고 장간막이 소용돌이치는 소견은 막창자꼬임이다. 내시경 정복 성공률이 낮고 재발·괴사 위험이 커, 표준 치료는 수술적 절제(우측 반결장절제술)다."
+  },
+  {
+   "id": "kmle-2026-0593",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Toxic Megacolon",
+   "tags": [
+    "toxic-megacolon",
+    "ulcerative-colitis",
+    "colonic-dilatation",
+    "systemic-toxicity",
+    "antidiarrheal-contraindication"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0593.md",
+   "snippet": "26세 여자가 6주째 피가 섞인 설사로 궤양잘록창자염 진단을 받고 치료 중이었는데, 이틀 전부터 배가 몹시 불러오고 통증이 심해지며 열이 났다. 배는 팽창하고 두드리면 북소리가 나며 장음이 거의 들리지 않는다. 활력징후와 검사 소견은 자료와 같고, 배 X선에서 가로잘록창자가 7 cm로 늘어나 있다. 이 상황에서 반드시 피해야 할 처치는? A. 로페라마이드 등 지사제를 투여한다 B. 정맥 수액과 전해질을 교정한다 C. 정맥 코르",
+   "text": "Gastroenterology Toxic Megacolon toxic-megacolon ulcerative-colitis colonic-dilatation systemic-toxicity antidiarrheal-contraindication KMLE 2026 / Claude Routine 26세 여자가 6주째 피가 섞인 설사로 궤양잘록창자염 진단을 받고 치료 중이었는데, 이틀 전부터 배가 몹시 불러오고 통증이 심해지며 열이 났다. 배는 팽창하고 두드리면 북소리가 나며 장음이 거의 들리지 않는다. 활력징후와 검사 소견은 자료와 같고, 배 X선에서 가로잘록창자가 7 cm로 늘어나 있다. 이 상황에서 반드시 피해야 할 처치는? A. 로페라마이드 등 지사제를 투여한다 B. 정맥 수액과 전해질을 교정한다 C. 정맥 코르티코스테로이드를 투여한다 D. 광범위 항생제를 정맥투여한다 E. 코위관으로 장을 감압한다 궤양잘록창자염 경과 중 잘록창자 확장(≥6 cm)과 전신독성(발열·빈맥·백혈구증가)이 겹치면 독성거대결장이다. 지사제·마약성 진통제·항콜린제는 장운동을 억제해 확장·천공을 조장하므로 반드시 피해야 한다."
+  },
+  {
+   "id": "kmle-2026-0592",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Boerhaave Syndrome",
+   "tags": [
+    "boerhaave-syndrome",
+    "esophageal-perforation",
+    "subcutaneous-emphysema",
+    "water-soluble-contrast-esophagram",
+    "mediastinitis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0592.md",
+   "snippet": "54세 남자가 2시간 전 심하게 구토한 뒤 갑자기 극심한 가슴·명치 통증이 생겨 왔다. 통증은 등으로 뻗치고 숨쉬기 힘들어한다. 목과 앞가슴을 누르면 살갗 밑에서 미세한 공기 알갱이가 만져지고 사각거린다. 활력징후와 검사 소견은 자료와 같고, 가슴 X선에서 왼쪽 가슴막삼출과 종격동 공기음영이 보인다. 진단을 확정하기 위한 가장 적절한 검사는? A. 상부위장관 내시경을 즉시 시행한다 B. 바륨 식도조영술을 시행한다 C. 심장초음",
+   "text": "Gastroenterology Boerhaave Syndrome boerhaave-syndrome esophageal-perforation subcutaneous-emphysema water-soluble-contrast-esophagram mediastinitis KMLE 2026 / Claude Routine 54세 남자가 2시간 전 심하게 구토한 뒤 갑자기 극심한 가슴·명치 통증이 생겨 왔다. 통증은 등으로 뻗치고 숨쉬기 힘들어한다. 목과 앞가슴을 누르면 살갗 밑에서 미세한 공기 알갱이가 만져지고 사각거린다. 활력징후와 검사 소견은 자료와 같고, 가슴 X선에서 왼쪽 가슴막삼출과 종격동 공기음영이 보인다. 진단을 확정하기 위한 가장 적절한 검사는? A. 상부위장관 내시경을 즉시 시행한다 B. 바륨 식도조영술을 시행한다 C. 심장초음파를 시행한다 D. 수용성 조영제 식도조영술을 시행한다 E. 관상동맥 조영술을 시행한다 심한 구토 직후의 흉통, 피부밑공기(염발음), 좌측 가슴막삼출·종격동 기종은 식도파열(Boerhaave)이다. 진단 확정은 누출을 확인하는 수용성 조영제 식도조영술이며, 바륨은 종격동 자극 우려로 피한다."
+  },
+  {
+   "id": "kmle-2026-0591",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Hyperosmolar Hyperglycemic State",
+   "tags": [
+    "hyperosmolar-hyperglycemic-state",
+    "type-2-diabetes",
+    "isotonic-saline",
+    "volume-resuscitation",
+    "hyperosmolarity"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0591.md",
+   "snippet": "74세 남자가 일주일간 기운이 없고 소변을 자주 보다가 오늘 정신이 혼미해져 왔다. 제2형 당뇨병이 있으나 최근 폐렴을 앓으며 식사와 수분 섭취가 크게 줄었다. 점막은 매우 건조하고 피부탄력이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 처치는? A. 중탄산나트륨을 정주한다 B. 인슐린을 정맥으로 먼저 대량 볼루스 투여한다 C. 등장성 생리식염수로 적극적 수액소생을 시작한다 D. 경구 혈당강하제를",
+   "text": "Endocrinology Hyperosmolar Hyperglycemic State hyperosmolar-hyperglycemic-state type-2-diabetes isotonic-saline volume-resuscitation hyperosmolarity KMLE 2026 / Claude Routine 74세 남자가 일주일간 기운이 없고 소변을 자주 보다가 오늘 정신이 혼미해져 왔다. 제2형 당뇨병이 있으나 최근 폐렴을 앓으며 식사와 수분 섭취가 크게 줄었다. 점막은 매우 건조하고 피부탄력이 떨어져 있다. 활력징후와 검사 소견은 자료와 같다. 가장 먼저 시행해야 할 처치는? A. 중탄산나트륨을 정주한다 B. 인슐린을 정맥으로 먼저 대량 볼루스 투여한다 C. 등장성 생리식염수로 적극적 수액소생을 시작한다 D. 경구 혈당강하제를 즉시 투여한다 E. 저장성 식염수를 빠르게 대량 정주한다 현저한 고혈당(약 1,000 mg/dL)·고삼투압·심한 탈수·의식저하에 케톤/산증이 경미하면 고삼투압고혈당상태다. 첫 처치는 등장성 생리식염수로 순환혈량을 회복시키는 것이며, 인슐린은 수액을 시작한 뒤 이어서 지속정주한다."
+  },
+  {
+   "id": "kmle-2026-0590",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Myxedema Coma",
+   "tags": [
+    "myxedema-coma",
+    "severe-hypothyroidism",
+    "levothyroxine",
+    "hydrocortisone",
+    "hypothermia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0590.md",
+   "snippet": "72세 여자가 반응이 둔해지고 자꾸 잠들려 해서 실려 왔다. 여러 해 갑상샘기능저하증으로 약을 먹다가 몇 달 전부터 임의로 끊었다. 며칠 전부터 감기를 앓았고 오늘 아침부터 처지고 몸이 차가웠다. 피부는 거칠고 부어 있으며 깊은힘줄반사의 이완기가 느리다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 처치는? A. 경구 레보티록신을 소량 시작한다 B. 정맥 레보티록신과 하이드로코르티손을 투여한다 C. 능동 재가온만 하",
+   "text": "Endocrinology Myxedema Coma myxedema-coma severe-hypothyroidism levothyroxine hydrocortisone hypothermia KMLE 2026 / Claude Routine 72세 여자가 반응이 둔해지고 자꾸 잠들려 해서 실려 왔다. 여러 해 갑상샘기능저하증으로 약을 먹다가 몇 달 전부터 임의로 끊었다. 며칠 전부터 감기를 앓았고 오늘 아침부터 처지고 몸이 차가웠다. 피부는 거칠고 부어 있으며 깊은힘줄반사의 이완기가 느리다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 초기 처치는? A. 경구 레보티록신을 소량 시작한다 B. 정맥 레보티록신과 하이드로코르티손을 투여한다 C. 능동 재가온만 하며 경과를 관찰한다 D. 고장성 식염수를 빠르게 정주한다 E. 정맥 베타차단제로 서맥을 교정한다 약을 끊은 저갑상샘 환자가 감염을 계기로 의식저하·저체온·서맥·저나트륨혈증·저혈당을 보이면 점액부종혼수다. 정맥 갑상샘호르몬을 즉시 시작하되, 동반될 수 있는 부신기능저하로 인한 위기를 막기 위해 정맥 하이드로코르티손을 함께 준다."
+  },
+  {
+   "id": "kmle-2026-0589",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Eczema Herpeticum",
+   "tags": [
+    "eczema-herpeticum",
+    "atopic-dermatitis",
+    "herpes-simplex-virus",
+    "acyclovir",
+    "monomorphic-vesicles"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0589.md",
+   "snippet": "22세 여자가 이틀 전부터 얼굴과 목의 피부가 급격히 나빠지고 열이 나서 왔다. 오래된 아토피피부염이 있는 부위에 크기가 비슷하고 가운데가 움푹 팬 물집과 짓무른 자국이 무리지어 빠르게 번졌고 심하게 아프다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 국소 스테로이드 강도를 올려 도포 B. 국소 칼시뉴린억제제 도포 C. 경구 항히스타민제만 투여 D. 전신 아시클로버 투여 E. 광범위 항진균제 도포 아토피피",
+   "text": "Dermatology Eczema Herpeticum eczema-herpeticum atopic-dermatitis herpes-simplex-virus acyclovir monomorphic-vesicles KMLE 2026 / Claude Routine 22세 여자가 이틀 전부터 얼굴과 목의 피부가 급격히 나빠지고 열이 나서 왔다. 오래된 아토피피부염이 있는 부위에 크기가 비슷하고 가운데가 움푹 팬 물집과 짓무른 자국이 무리지어 빠르게 번졌고 심하게 아프다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 국소 스테로이드 강도를 올려 도포 B. 국소 칼시뉴린억제제 도포 C. 경구 항히스타민제만 투여 D. 전신 아시클로버 투여 E. 광범위 항진균제 도포 아토피피부염 부위에 급성으로 번지는, 크기가 균일하고 배꼽처럼 팬 통증성 물집·미란과 발열은 단순포진바이러스가 습진 부위에 파종한 포진성습진(카포시수두양발진)이다. 전신 아시클로버 등 항바이러스제가 즉각 치료다."
+  },
+  {
+   "id": "kmle-2026-0588",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Staphylococcal Scalded Skin Syndrome",
+   "tags": [
+    "staphylococcal-scalded-skin-syndrome",
+    "exfoliative-toxin",
+    "penicillinase-resistant-penicillin",
+    "pediatric-blistering",
+    "superficial-desquamation"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0588.md",
+   "snippet": "3세 남아가 하루 전부터 온몸이 빨개지고 아파하며 왔다. 처음엔 입 주위와 목 주름에서 시작해 몸통으로 번졌고, 살짝 문지르기만 해도 표피가 얇게 밀려 벗겨졌다. 최근 농가진을 앓았다. 결막·구강 점막은 깨끗하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고용량 경구 스테로이드 투여 B. 정맥 아시클로버 투여 C. 항포도알균 페니실린 정맥투여 D. 정맥 면역글로불린 단독 투여 E. 국소 스테로이드 연고 ",
+   "text": "Dermatology Staphylococcal Scalded Skin Syndrome staphylococcal-scalded-skin-syndrome exfoliative-toxin penicillinase-resistant-penicillin pediatric-blistering superficial-desquamation KMLE 2026 / Claude Routine 3세 남아가 하루 전부터 온몸이 빨개지고 아파하며 왔다. 처음엔 입 주위와 목 주름에서 시작해 몸통으로 번졌고, 살짝 문지르기만 해도 표피가 얇게 밀려 벗겨졌다. 최근 농가진을 앓았다. 결막·구강 점막은 깨끗하다. 활력징후와 검사 소견은 자료와 같다. 가장 적절한 치료는? A. 고용량 경구 스테로이드 투여 B. 정맥 아시클로버 투여 C. 항포도알균 페니실린 정맥투여 D. 정맥 면역글로불린 단독 투여 E. 국소 스테로이드 연고 도포 얼굴·주름에서 시작해 번지는 광범위 홍반과 표피의 얕은 벗겨짐, 점막 비침범, 선행 포도알균 감염은 포도알균 열상피부증후군(SSSS)이다. 표피박리독소를 내는 황색포도알균이 원인이므로 페니실린분해효소내성 페니실린(또는 세팔로스포린) 정맥 항생제가 치료의 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0587",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Acute Pericarditis",
+   "tags": [
+    "acute-pericarditis",
+    "pleuritic-chest-pain",
+    "NSAID",
+    "colchicine",
+    "friction-rub"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0587.md",
+   "snippet": "27세 남자가 3일 전부터 날카로운 앞가슴 통증으로 왔다. 통증은 숨을 깊이 쉬거나 누우면 심해지고 앞으로 몸을 숙이면 줄었다. 1주 전 감기몸살을 앓았다. 청진에서 왼쪽 복장뼈 경계에서 심장주기와 함께 긁는 소리가 들린다. 활력징후와 검사 소견은 자료와 같고, 심전도에서 여러 유도에 걸친 미만성 ST분절 상승과 PR분절 하강이 보인다. 가장 적절한 초기 치료는? A. 이부프로펜과 콜히친을 함께 투여한다 B. 즉시 관상동맥중재",
+   "text": "Cardiology Acute Pericarditis acute-pericarditis pleuritic-chest-pain NSAID colchicine friction-rub KMLE 2026 / Claude Routine 27세 남자가 3일 전부터 날카로운 앞가슴 통증으로 왔다. 통증은 숨을 깊이 쉬거나 누우면 심해지고 앞으로 몸을 숙이면 줄었다. 1주 전 감기몸살을 앓았다. 청진에서 왼쪽 복장뼈 경계에서 심장주기와 함께 긁는 소리가 들린다. 활력징후와 검사 소견은 자료와 같고, 심전도에서 여러 유도에 걸친 미만성 ST분절 상승과 PR분절 하강이 보인다. 가장 적절한 초기 치료는? A. 이부프로펜과 콜히친을 함께 투여한다 B. 즉시 관상동맥중재술을 시행한다 C. 정맥 혈전용해제를 투여한다 D. 경구 베타차단제를 투여한다 E. 광범위 항생제를 정맥투여한다 젊은 환자에서 자세에 따라 변하는 흉막성 통증, 선행 바이러스감염, 심막마찰음, 미만성 ST상승·PR하강, 정상 트로포닌은 급성 바이러스/특발 심막염을 시사한다. 일차 치료는 고용량 NSAID(또는 아스피린)에 콜히친을 병용하는 것이다."
+  },
+  {
+   "id": "kmle-2026-0586",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Sustained Monomorphic Ventricular Tachycardia",
+   "tags": [
+    "ventricular-tachycardia",
+    "wide-complex-tachycardia",
+    "procainamide",
+    "prior-myocardial-infarction",
+    "AV-nodal-blocker-pitfall"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/kmle/2026/kmle-2026-0586.md",
+   "snippet": "68세 남자가 갑자기 시작된 두근거림으로 응급실에 왔다. 3년 전 심근경색으로 관상동맥중재술을 받은 병력이 있다. 의식은 명료하고 흉통이나 호흡곤란은 뚜렷하지 않으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 베라파밀을 정주한다 B. 정맥 프로카인아마이드를 정주한다 C. 정맥 아데노신을 빠르게 정주한다 D. 정맥 디곡신을 정주한다 E. 경구 딜티아젬을 투여한다 ",
+   "text": "Cardiology Sustained Monomorphic Ventricular Tachycardia ventricular-tachycardia wide-complex-tachycardia procainamide prior-myocardial-infarction AV-nodal-blocker-pitfall KMLE 2026 / Claude Routine 68세 남자가 갑자기 시작된 두근거림으로 응급실에 왔다. 3년 전 심근경색으로 관상동맥중재술을 받은 병력이 있다. 의식은 명료하고 흉통이나 호흡곤란은 뚜렷하지 않으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 베라파밀을 정주한다 B. 정맥 프로카인아마이드를 정주한다 C. 정맥 아데노신을 빠르게 정주한다 D. 정맥 디곡신을 정주한다 E. 경구 딜티아젬을 투여한다 심근경색 병력이 있는 환자에서 규칙적인 넓은 QRS 빈맥은 우선 심실빈맥으로 간주한다. 혈역학적으로 비교적 안정적이므로 즉시 전기심율동전환보다 항부정맥제(프로카인아마이드 또는 아미오다론)를 쓰며, 방실결절차단제는 금기다."
+  },
+  {
    "id": "anatomy-daily-2026-08-17",
    "type": "anatomy",
    "unit": "등·다리",
@@ -4035,11 +5282,11 @@ window.MEDKOS_INDEX = {
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
-   "id": "anatomy-2026-0153",
+   "id": "anatomy-2026-0168",
    "type": "anatomy",
    "unit": "5회차 · 가슴·머리",
    "topic": "Anatomy",
-   "subtopic": "위턱동맥과 심장의 혈관 — 계보 퀴즈판 (5회차 혈관 계보(동맥+정맥))",
+   "subtopic": "대동맥활·심장동맥과 위턱동맥 — 계보 퀴즈판 (5회차 혈관 계보(동맥+정맥))",
    "tags": [
     "계보",
     "도해",
@@ -4048,19 +5295,19 @@ window.MEDKOS_INDEX = {
     "예습시험",
     "태깅"
    ],
-   "source": "5회차 §관자아래부위 · 위세로칸 · 심장 — 자체 제작 계보 트리(branch_specs.py)",
+   "source": "5회차 §대동맥활·심장 · 관자아래부위 위턱동맥 — 자체 제작 계보 트리(branch_specs.py)",
    "confidence": "high",
    "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0153.md",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0168.md",
    "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 vessel labeled.svg 로.",
-   "text": "Anatomy 위턱동맥과 심장의 혈관 — 계보 퀴즈판 (5회차 혈관 계보(동맥+정맥)) 5회차 · 가슴·머리 계보 도해 5회차 혈관 계보(동맥+정맥) 예습시험 태깅 5회차 §관자아래부위 · 위세로칸 · 심장 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 vessel labeled.svg 로."
+   "text": "Anatomy 대동맥활·심장동맥과 위턱동맥 — 계보 퀴즈판 (5회차 혈관 계보(동맥+정맥)) 5회차 · 가슴·머리 계보 도해 5회차 혈관 계보(동맥+정맥) 예습시험 태깅 5회차 §대동맥활·심장 · 관자아래부위 위턱동맥 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 vessel quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 vessel labeled.svg 로."
   },
   {
-   "id": "anatomy-2026-0152",
+   "id": "anatomy-2026-0167",
    "type": "anatomy",
    "unit": "5회차 · 가슴·머리",
    "topic": "Anatomy",
-   "subtopic": "아래턱신경과 가슴의 신경 — 계보 퀴즈판 (5회차 신경 계보)",
+   "subtopic": "가슴안과 관자아래우묵의 신경 — 계보 퀴즈판 (5회차 신경 계보)",
    "tags": [
     "계보",
     "도해",
@@ -4069,19 +5316,19 @@ window.MEDKOS_INDEX = {
     "예습시험",
     "태깅"
    ],
-   "source": "5회차 §관자아래부위 · 위세로칸 · 심장막 — 자체 제작 계보 트리(branch_specs.py)",
+   "source": "5회차 §가슴안·세로칸·심장 · 관자아래부위 (부위 기준 배정) — 자체 제작 계보 트리(branch_specs.py)",
    "confidence": "high",
    "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0152.md",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0167.md",
    "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 nerve labeled.svg 로.",
-   "text": "Anatomy 아래턱신경과 가슴의 신경 — 계보 퀴즈판 (5회차 신경 계보) 5회차 · 가슴·머리 계보 도해 5회차 신경 계보 예습시험 태깅 5회차 §관자아래부위 · 위세로칸 · 심장막 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 nerve labeled.svg 로."
+   "text": "Anatomy 가슴안과 관자아래우묵의 신경 — 계보 퀴즈판 (5회차 신경 계보) 5회차 · 가슴·머리 계보 도해 5회차 신경 계보 예습시험 태깅 5회차 §가슴안·세로칸·심장 · 관자아래부위 (부위 기준 배정) — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 nerve quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 nerve labeled.svg 로."
   },
   {
-   "id": "anatomy-2026-0151",
+   "id": "anatomy-2026-0166",
    "type": "anatomy",
    "unit": "5회차 · 가슴·머리",
    "topic": "Anatomy",
-   "subtopic": "함께 지나는 것 — 관자아래·세로칸 — 계보 퀴즈판 (5회차 함께 지나는 것(신경혈관다발))",
+   "subtopic": "함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵 — 계보 퀴즈판 (5회차 함께 지나는 것(신경혈관다발))",
    "tags": [
     "계보",
     "도해",
@@ -4090,39 +5337,12 @@ window.MEDKOS_INDEX = {
     "예습시험",
     "태깅"
    ],
-   "source": "5회차 §관자아래우묵 · 가슴막 · 심장막 — 자체 제작 계보 트리(branch_specs.py)",
+   "source": "5회차 §허파뿌리 · 심장막 · 관자아래우묵 — 자체 제작 계보 트리(branch_specs.py)",
    "confidence": "high",
    "date": "2026-08-17",
-   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0151.md",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0166.md",
    "snippet": "문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 bundle labeled.svg 로.",
-   "text": "Anatomy 함께 지나는 것 — 관자아래·세로칸 — 계보 퀴즈판 (5회차 함께 지나는 것(신경혈관다발)) 5회차 · 가슴·머리 계보 도해 5회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 5회차 §관자아래우묵 · 가슴막 · 심장막 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 bundle labeled.svg 로."
-  },
-  {
-   "id": "anatomy-2026-0150",
-   "type": "anatomy",
-   "unit": "5회차 · 가슴·머리",
-   "topic": "Anatomy",
-   "subtopic": "5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위",
-   "tags": [
-    "서브노트",
-    "5회차",
-    "관자아래우묵",
-    "위턱동맥",
-    "아래턱신경",
-    "가슴막",
-    "위세로칸",
-    "심장막",
-    "심장",
-    "표",
-    "예습시험",
-    "태깅"
-   ],
-   "source": "",
-   "confidence": "high",
-   "date": "2026-08-17",
-   "path": "content/anatomy/notes/anatomy-2026-0150-s05-subnote.md",
-   "snippet": "0. 이 회차의 축 — 세 문장 1. 근육이 동맥을 나눈다 — 가쪽날개근이 위턱동맥을 1·2·3부로 가르고, 부마다 목적지가 다르다. 2. 허파뿌리 앞뒤가 세로칸의 기준선 — 가로막신경은 앞, 미주신경은 뒤. 3. 심장은 피가 도는 순서로 외운다 — 대정맥 → 오른심방 → 삼첨 → 오른심실 → 허파동맥 → … → 대동맥. 1. 관자부위·관자아래우묵 Temporal & infratemporal fossa !fig docs/ass",
-   "text": "Anatomy 5회차 서브노트 — 가슴안·가슴막·위세로칸·심장막·심장 / 관자부위·관자아래부위 5회차 · 가슴·머리 서브노트 5회차 관자아래우묵 위턱동맥 아래턱신경 가슴막 위세로칸 심장막 심장 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 근육이 동맥을 나눈다 — 가쪽날개근이 위턱동맥을 1·2·3부로 가르고, 부마다 목적지가 다르다. 2. 허파뿌리 앞뒤가 세로칸의 기준선 — 가로막신경은 앞, 미주신경은 뒤. 3. 심장은 피가 도는 순서로 외운다 — 대정맥 → 오른심방 → 삼첨 → 오른심실 → 허파동맥 → … → 대동맥. 1. 관자부위·관자아래우묵 Temporal & infratemporal fossa !fig docs/assets/anatomy/tree s05 vessel labeled.svg 가쪽날개근이 위턱동맥을 3부로 가른다 — 1부 뼈, 2부 근육, 3부 얼굴 속 1) 위턱동맥 세 부분 부 기준 주요 가지 1부 아래턱부 가쪽날개근 아래(안쪽) ==중간뇌막동맥==(가시구멍) · ==아래이틀동맥== · 깊은귓바퀴·앞고실동맥 2부 날개근부 가쪽날개근 표면·속 깊은관자 · 날개근 · 깨물근 · 볼동맥 (전부 근육 ) 3부 날개입천장부 ==날개위턱틈새== 를 지나 날개입천장오목으로 눈확아래동맥 · ==나비입천장동맥== · 뒤위이틀동맥 [!임상] 중간뇌막동맥 :: 관자뼈 날개점(pterion) 골절에서 찢어져 ==경막외혈종==(볼록렌즈 모양)을 만든다. 의식이 잠깐 맑아졌다 나빠지는 명료기(lucid interval) 가 고전적 소견. [!주의] 자르는 높이가 중요하다 :: 아래턱뼈 관절돌기보다 아래 에서 자르면 아래턱구멍으로 들어가는 ==아래이틀동맥·신경이 함께 손상==된다. 실습 절단선이 여기서 갈린다. 2) 아래턱신경 V3 — 감각 + 운동 가지 성질 메모 씹기근육가지(깨물근·깊은관자·안쪽/가쪽날개근) 운동 ==씹기근육 넷은 전부 V3== 볼신경 buccal n. 감각 볼 점막·피부 — ==볼근 운동은 얼굴신경(VII)== 혀신경 lingual n. 감각 ==고실끈신경(VII)== 을 받아 혀 앞 2/3 미각·턱밑샘 분비 아래이틀신경 감각+운동 아래턱관 → ==턱끝신경== 으로 나옴. 턱목뿔근신경을 냄 귓바퀴관자신경 감각+분비 중간뇌막동맥을 두 뿌리로 감싼다 [!기출] 볼신경 vs 볼가지 :: 이름이 닮았지만 ==볼신경(V3)은 감각==, ==얼굴신경 볼가지(VII)는 운동==이다. 관자아래우묵 태깅의 단골 함정. 2. 가슴막과 가슴막안 Pleura & pleural cavity 구조 내용 허파쪽가슴막 visceral 허파 표면에 밀착 — 통증감각 없다 벽쪽가슴막 parietal 갈비·세로칸·가로막·가슴막꼭대기 4부분. ==갈비사이신경·가로막신경 감각== 가슴막안 두 층 사이 잠재공간 · 소량의 장액 ==갈비가로막오목== 가장 깊은 오목 — 삼출액이 고이고 천자 표적 갈비세로칸오목 왼쪽 심장패임 앞 가슴막꼭대기 첫째 갈비뼈 위로 ==2–3 cm 올라옴== — 빗장위 천자에서 기흉 위험 [!임상] 가슴막천자 :: 중간겨드랑선 기준 ==7–9번 갈비사이공간==, 갈비뼈 위모서리 를 따라. 벽쪽가슴막은 통증에 예민해 국소마취가 필요하지만 허파쪽은 아프지 않다. 3. 위세로칸 Superior mediastinum !fig docs/assets/anatomy/tree s05 nerve labeled.svg V3와 세로칸의 신경 — 허파뿌리 앞뒤가 기준선 앞 → 뒤 순서 구조 가장 앞 가슴샘(어린이) · ==좌우 팔머리정맥 → 위대정맥== 가운데 ==대동맥활== 과 3가지(팔머리·왼온목·왼빗장밑동맥) 뒤 기관 · 식도 · 가슴림프관 · 교감신경줄기 항목 내용 복장뼈각 sternal angle 둘째 갈비연골 높이 = ==대동맥활 시작·끝 · 기관 갈림 · T4/T5== 왼팔머리정맥 복장뼈 뒤를 ==가로질러== 오른쪽으로 — 그래서 오른쪽보다 길다 왼되돌이후두신경 ==대동맥활(동맥관인대)== 을 감아 올라감 — 오른쪽은 빗장밑동맥 가로막신경 허파뿌리 앞 · 심장막에 붙어 내려감 미주신경 허파뿌리 뒤 → 식도신경얼기 [!기출] 쉰 목소리의 해부 :: 대동맥류·왼심방 확장·폐암(좌상엽)에서 ==왼되돌이후두신경==이 눌린다. 오른쪽보다 훨씬 길고 대동맥활을 감아 돌기 때문이다. 4. 심장막 Pericardium !fig docs/assets/anatomy/tree s05 bundle labeled.svg 관자아래우묵의 신경–동맥 짝과 심장막굴 둘 층 내용 섬유심장막 질긴 바깥층 · 가로막 중심널힘줄에 붙는다 장막심장막 벽쪽 섬유층 안쪽에 밀착 장막심장막 내장쪽 (심장바깥막) 심장 표면 굴 위치 임상 가로심장막굴 ==오름대동맥·허파동맥 뒤== · 위대정맥 앞 손가락이 관통 — 수술에서 동맥 두 개를 한 번에 죈다 빗심장막굴 ==오른심방 뒤 · 식도 앞== 막다른 골목 — 손가락이 끝에서 막힌다 [!임상] 심장눌림증(tamponade) :: 섬유심장막이 안 늘어나 소량(150–200 mL)의 피만 고여도 심장이 눌린다. Beck 3징 — 저혈압 · 목정맥 확장 · 심음 감소. 배액은 칼돌기 아래로. [!주의] 심장막 통증은 어깨로 :: 심장막·세로칸가슴막의 감각은 ==가로막신경(C3–5)== 이라 연관통이 어깨끝 으로 간다. 심장 자체의 통증(내장구심)과 경로가 다르다. 5. 심장 속면과 판막 Chambers & valves 방 특징 오른심방 앞 ==빗살근육== / 뒤 매끈(정맥굴 유래) · 경계는 ==분계능선== · 심장정맥굴구멍(판막 있음) · 위대정맥구멍(판막 없음) · 타원오목 오른심실 ==육주(살기둥)== · 꼭지근–힘줄끈 · 조절대 (중간정맥굴다발) 왼심방 허파정맥 ==4개== 가 들어옴 · 대부분 매끈, 심방귀만 빗살 왼심실 벽이 오른심실의 ==2–3배== · 대동맥구멍 판막 첨 수 위치 오른방실판막(삼첨) ==3== 오른심방↔오른심실 왼방실판막(승모) ==2== 왼심방↔왼심실 허파동맥판막 · 대동맥판막 각 3(반달) 심실 출구 = 피가 도는 순서: 대정맥 → 오른심방 → 삼첨 → 오른심실 → 허파동맥판막 → 허파 → 왼심방 → 승모 → 왼심실 → 대동맥판막 → 온몸 [!암기] 청진 위치는 제자리가 아니다 :: 판막의 해부학적 위치보다 혈류가 부딪히는 하류 에서 잘 들린다 — 대동맥(오른 2늑간) · 허파동맥(왼 2늑간) · 삼첨(왼 4–5늑간 복장뼈모서리) · 승모(==심장끝, 왼 5늑간 빗장중간선==). 6. 심장동맥 Coronary arteries 동맥 가지 먹이는 곳 왼심장동맥 ==앞심실사이가지(LAD)== 왼심실 앞·심실사이막 앞 2/3 — 막히면 가장 넓은 경색 휘돌이가지 왼심방·왼심실 가쪽 오른심장동맥 ==뒤심실사이가지== 심실사이막 뒤 1/3 · 우세 판정 기준 굴심방결절가지·방실결절가지 ==전도계== — 막히면 서맥·방실차단 오른모서리가지 오른심실 = 정맥은 ==심장정맥굴==(방실사이고랑 뒤)로 모여 오른심방 으로 돌아온다. [!기출] 우세(dominance) :: 뒤심실사이가지를 누가 내느냐 로 정한다. 한국인 대부분 오른쪽 우세라, 오른심장동맥이 막히면 하벽경색 + 전도장애가 함께 온다. 7. 실사 태깅 문항 이 회차의 실사(관자아래우묵·가슴막·세로칸·심장 115장)는 복원·검수 중이다. 자동 마스킹이 영상 라벨을 놓치는 페이지가 있어 4회차와 같은 수작업 QA를 거친 뒤 합본한다. 그동안은 계보 트리 퀴즈판 문항으로 화면에서 푼다."
+   "text": "Anatomy 함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵 — 계보 퀴즈판 (5회차 함께 지나는 것(신경혈관다발)) 5회차 · 가슴·머리 계보 도해 5회차 함께 지나는 것(신경혈관다발) 예습시험 태깅 5회차 §허파뿌리 · 심장막 · 관자아래우묵 — 자체 제작 계보 트리(branch_specs.py) 문제 계보 구조도 퀴즈판 — 그림은 docs/assets/anatomy/tree s05 bundle quiz.svg (공개 자산). 정답 및 해설 정답·해설은 frontmatter. 채점은 라벨판 tree s05 bundle labeled.svg 로."
   },
   {
    "id": "anatomy-2026-0149",
@@ -14171,6 +15391,88 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Atrial Fibrillation with Rapid Ventricular Response atrial-fibrillation rate-control ecg palpitation KMLE 2026 / Claude Routine 68세 남자가 2시간 전 갑자기 시작된 가슴 두근거림으로 응급실에 왔다. 어지럽지만 흉통·호흡곤란은 없다. 맥박은 빠르고 완전히 불규칙하며, 혈압은 안정적으로 유지된다. 심전도는 자료와 같다. 활력징후·검사는 자료와 같다. 이 환자에게 가장 적절한 처치는? A. 즉시 동시성 전기심장율동전환 B. 정맥 딜티아젬 투여 C. 정맥 아데노신 투여 D. 정맥 아트로핀 투여 E. 경구 이뇨제 투여 혈역학적으로 안정된 급성 심방세동 빠른 심실반응에서는 방실결절 차단제(비 DHP 칼슘차단제 또는 베타차단제)로 심박수 조절이 우선이다."
   },
   {
+   "id": "usmle-2026-0102",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management",
+   "tags": [
+    "alcohol-withdrawal",
+    "delirium-tremens",
+    "benzodiazepine",
+    "CIWA-Ar",
+    "withdrawal-seizure"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0102.md",
+   "snippet": "A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, dia",
+   "text": "Psychiatry Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management alcohol-withdrawal delirium-tremens benzodiazepine CIWA-Ar withdrawal-seizure USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management) A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, diaphoretic, agitated, and reports seeing insects crawling on the wall; nursing staff witnessed a brief generalized tonic clonic seizure this morning. Vital signs and laboratory studies are shown; blood glucose and head CT are unremarkable. His CIWA Ar score is 22. Which of the following is the most appropriate next step in management? A. Haloperidol alone for agitation, without a benzodiazepine B. Phenytoin loading for ongoing seizure prophylaxis C. Benzodiazepine (e.g., lorazepam) dosed according to a symptom triggered CIWA Ar protocol D. Thiamine supplementation alone, withholding benzodiazepine treatment E. Physical restraints and continuous observation without pharmacologic treatment, pending psychiatry consultation This patient's history of heavy daily alcohol use, last drink the day before admission, and autonomic hyperactivity with hallucinations and a withdrawal seizure indicate severe alcohol withdrawal at risk for progression to delirium tremens; the appropriate next step is symptom triggered benzodiazepine dosing (e.g., via the CIWA Ar protocol), which treats the underlying GABA A receptor hypofunction driving both the autonomic instability and seizure risk."
+  },
+  {
+   "id": "usmle-2026-0100",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ectopic Pregnancy — Methotrexate Eligibility in a Hemodynamically Stable Patient",
+   "tags": [
+    "ectopic-pregnancy",
+    "methotrexate",
+    "beta-hCG",
+    "adnexal-mass",
+    "hemodynamic-stability"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · early pregnancy management)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0100.md",
+   "snippet": "A 27 year old woman, gravida 2 para 1, at 6 weeks' gestation by last menstrual period, comes to the office with mild, nonradiating lower abdominal discomfort and no vaginal bleeding. She is alert, comfortable, and hemodynamically stable, wi",
+   "text": "Obstetrics & Gynecology Ectopic Pregnancy — Methotrexate Eligibility in a Hemodynamically Stable Patient ectopic-pregnancy methotrexate beta-hCG adnexal-mass hemodynamic-stability USMLE-style / MedKOS (obstetrics · early pregnancy management) A 27 year old woman, gravida 2 para 1, at 6 weeks' gestation by last menstrual period, comes to the office with mild, nonradiating lower abdominal discomfort and no vaginal bleeding. She is alert, comfortable, and hemodynamically stable, with a soft abdomen and no peritoneal signs. Transvaginal ultrasound shows no intrauterine gestational sac, a 2.1 cm left adnexal mass without cardiac activity, and no free fluid in the pelvis. Serial beta hCG values are shown. Which of the following is the most appropriate next step in management? A. Emergency laparoscopic salpingectomy today B. Single dose intramuscular methotrexate with scheduled hCG monitoring C. Expectant management with hCG monitoring only, no pharmacologic or surgical treatment D. Dilation and curettage to evaluate for a failed intrauterine pregnancy E. Repeat transvaginal ultrasound in one week before making any treatment decision This patient is hemodynamically stable with an ectopic pregnancy (no intrauterine sac, adnexal mass, suboptimally rising hCG below the discriminatory zone), normal liver and renal function, and no contraindications noted — she meets criteria for single dose methotrexate, which avoids surgery while treating the ectopic pregnancy once confirmed and monitored appropriately."
+  },
+  {
+   "id": "usmle-2026-0099",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width",
+   "tags": [
+    "complete-heart-block",
+    "escape-rhythm",
+    "AV-node",
+    "His-Purkinje",
+    "cardiac-conduction-physiology",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0099.md",
+   "snippet": "A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, ",
+   "text": "Physiology Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width complete-heart-block escape-rhythm AV-node His-Purkinje cardiac-conduction-physiology ECG USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization) A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, wide complex ventricular rhythm, with no fixed relationship between the P waves and the QRS complexes. Laboratory studies shown are unremarkable, and he takes no cardioactive medications. The slow rate and wide QRS morphology of this ventricular rhythm are most consistent with an escape pacemaker originating at which of the following sites? A. Distal Purkinje fibers within the ventricular myocardium (infra Hisian) B. The proximal bundle of His, just below the atrioventricular node C. The sinoatrial node, generating the observed atrial activity itself D. An ectopic atrial focus near the crista terminalis E. The coronary sinus ostium, producing a low atrial escape rhythm In complete AV block, the width and rate of the escape rhythm localize the level of the escape pacemaker: a narrower QRS at a relatively faster rate (~40–60/min) suggests a junctional/proximal His origin, whereas a wide QRS at a slower rate (~20–40/min), as seen here, indicates a more distal, infra Hisian ventricular myocardial escape focus with fewer intrinsic pacemaker cells and slower automaticity."
+  },
+  {
+   "id": "usmle-2026-0097",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Renal AL Amyloidosis (light-chain fibril pathogenesis vs other amyloid subtypes)",
+   "tags": [
+    "amyloidosis",
+    "AL-amyloid",
+    "light-chain",
+    "Congo-red",
+    "nephrotic-syndrome",
+    "plasma-cell-dyscrasia"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · amyloidosis classification)",
+   "confidence": "high",
+   "date": "2026-08-04",
+   "path": "content/usmle/usmle-2026-0097.md",
+   "snippet": "A 64 year old man is evaluated for lower extremity edema and fatigue over the past 2 months. He has no history of rheumatoid arthritis, inflammatory bowel disease, chronic infection, or long term dialysis, and there is no family history of ",
+   "text": "Pathology Renal AL Amyloidosis (light-chain fibril pathogenesis vs other amyloid subtypes) amyloidosis AL-amyloid light-chain Congo-red nephrotic-syndrome plasma-cell-dyscrasia USMLE-style / MedKOS (pathology · amyloidosis classification) A 64 year old man is evaluated for lower extremity edema and fatigue over the past 2 months. He has no history of rheumatoid arthritis, inflammatory bowel disease, chronic infection, or long term dialysis, and there is no family history of similar illness. A renal biopsy shows amorphous eosinophilic material in the glomerular mesangium that exhibits apple green birefringence under polarized light after Congo red staining. Bone marrow biopsy reveals a clonal population of plasma cells. Which of the following best describes the pathogenesis of this patient's renal disease? A. Reactive systemic deposition of serum amyloid A protein driven by a chronic inflammatory disease B. Deposition of a hereditary mutant transthyretin variant produced by the liver C. Misfolded monoclonal immunoglobulin light chains from a clonal plasma cell population forming amyloid fibrils D. Deposition of wild type (non mutant) transthyretin associated with advanced age E. Accumulation of beta 2 microglobulin fibrils related to long term hemodialysis The absence of a chronic inflammatory disease (excludes AA amyloidosis), absence of dialysis history (excludes Aβ2M), and absence of a hereditary or advanced age transthyretin pattern, combined with a clonal plasma cell population and monoclonal lambda light chains, indicate AL amyloidosis: misfolded monoclonal light chains misassemble into beta pleated sheet fibrils that deposit in tissue and bind Congo red with apple green birefringence."
+  },
+  {
    "id": "paper-2026-0153",
    "type": "paper",
    "unit": "",
@@ -15795,6 +17097,66 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Sustained Monomorphic Ventricular Tachycardia ventricular-tachycardia wide-complex-tachycardia amiodarone post-MI ECG KMLE 2026 / Claude Routine 62세 남자가 1시간 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 3년 전 심근경색으로 스텐트 삽입을 받은 병력이 있다. 의식은 명료하고 흉통은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아미오다론을 투여한다 B. 정맥 아데노신을 빠르게 정주한다 C. 즉시 비동기 제세동을 시행한다 D. 경구 베라파밀을 투여한다 E. 미주신경자극수기를 반복 시행한다 허혈성 심질환 병력에 규칙적이고 넓은 QRS 빈맥이면 심실빈맥으로 간주한다. 혈압·의식·말초관류가 유지되는 안정 상태이므로 즉각 전기충격보다 항부정맥제(아미오다론 등)로 종료를 시도하는 것이 초기 처치이며, 방실결절차단제(베라파밀·아데노신)는 금기다."
   },
   {
+   "id": "usmle-2026-0094",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage — Uterine Atony First-Line Management",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "bimanual-massage",
+    "oxytocin"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0094.md",
+   "snippet": "A 29 year old woman, G3P3, undergoes vaginal delivery after a prolonged second stage augmented with oxytocin. Ten minutes after delivery of the placenta, she has brisk vaginal bleeding. On examination, the uterine fundus is difficult to pal",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage — Uterine Atony First-Line Management postpartum-hemorrhage uterine-atony uterotonics bimanual-massage oxytocin USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 29 year old woman, G3P3, undergoes vaginal delivery after a prolonged second stage augmented with oxytocin. Ten minutes after delivery of the placenta, she has brisk vaginal bleeding. On examination, the uterine fundus is difficult to palpate and feels soft above the umbilicus, with no evidence of vaginal or cervical laceration. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Emergent hysterectomy to secure hemostasis B. Administration of tranexamic acid alone, with close observation C. Placement of an intrauterine balloon tamponade device as the initial intervention D. Bimanual uterine massage and compression while initiating additional uterotonic therapy E. Immediate exploratory laparotomy for bilateral uterine artery ligation 부드럽고 만져지지 않는 자궁저(자궁이완)와 파열 소견이 없는 상태에서의 다량 출혈은 자궁근이완이 원인인 산후출혈이다. 1차 처치는 양손 자궁마사지·압박과 함께 추가 자궁수축제(옥시토신 증량, 메칠에르고노빈, 카보프로스트, 미소프로스톨 등) 투여이며, 이에 반응하지 않을 때 풍선탐폰·수술적 처치로 단계적으로 올라간다."
+  },
+  {
+   "id": "usmle-2026-0093",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Analgesic Nephropathy — Renal Papillary Necrosis",
+   "tags": [
+    "renal-papillary-necrosis",
+    "analgesic-nephropathy",
+    "nsaid",
+    "prostaglandin",
+    "vasa-recta"
+   ],
+   "source": "USMLE-style / MedKOS (renal pathology · chronic analgesic use)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0093.md",
+   "snippet": "A 52 year old woman with a 15 year history of daily combination analgesic tablets (acetaminophen aspirin caffeine) for chronic low back pain presents with sudden colicky flank pain and gross hematuria. Imaging shows a sloughed renal papilla",
+   "text": "Pathology Analgesic Nephropathy — Renal Papillary Necrosis renal-papillary-necrosis analgesic-nephropathy nsaid prostaglandin vasa-recta USMLE-style / MedKOS (renal pathology · chronic analgesic use) A 52 year old woman with a 15 year history of daily combination analgesic tablets (acetaminophen aspirin caffeine) for chronic low back pain presents with sudden colicky flank pain and gross hematuria. Imaging shows a sloughed renal papilla producing a 'ring sign' on the collecting system. Vital signs and laboratory studies are shown. The renal injury in this patient is best explained by which of the following underlying pathophysiologic mechanisms? A. Ischemic necrosis of the vasa recta from analgesic induced loss of vasodilatory prostaglandins in the renal medulla B. Immune complex deposition in the papillary interstitium triggering complement mediated necrosis C. Crystal induced obstruction of the collecting ducts by monosodium urate deposits D. Direct viral cytopathic injury to the papillary transitional epithelium E. Amyloid fibril deposition within the vasa recta causing progressive microvascular occlusion 복합진통제(아스피린+아세트아미노펜 등)를 오래 사용하면 아스피린이 프로스타글란딘 합성을 억제해 저산소 상태인 신수질 유두부의 혈관확장 보상기전을 없애 허혈을 유발하고, 아세트아미노펜 대사산물은 유두 세관세포에 직접 독성을 준다. 두 기전이 겹쳐 유두 허혈·괴사(신유두괴사)가 발생한다."
+  },
+  {
+   "id": "usmle-2026-0092",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism)",
+   "tags": [
+    "atrial-fibrillation",
+    "atrial-kick",
+    "frank-starling",
+    "preload",
+    "ecg"
+   ],
+   "source": "USMLE-style / MedKOS (cardiac physiology · arrhythmia)",
+   "confidence": "high",
+   "date": "2026-07-30",
+   "path": "content/usmle/usmle-2026-0092.md",
+   "snippet": "A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atr",
+   "text": "Physiology Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism) atrial-fibrillation atrial-kick frank-starling preload ecg USMLE-style / MedKOS (cardiac physiology · arrhythmia) A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atrial contraction in this rhythm most directly produces which of the following physiologic consequences? A. Increased ventricular preload from prolonged diastolic filling time B. Reduced left ventricular end diastolic volume from loss of coordinated atrial contraction ('atrial kick') C. Increased stroke volume via an enhanced Frank Starling response D. Decreased myocardial oxygen demand due to the irregular ventricular rate E. Increased coronary perfusion pressure from variable diastolic intervals 심방세동에서는 심방의 조직화된 수축이 소실되어(무질서한 전기활동) 심실 이완기 말 충만의 마지막 능동 성분인 '심방 수축(atrial kick)'이 사라진다. 특히 심실 이완기능이 저하된 환자(고령·좌심실비대)에서는 이 능동 충만분의 소실이 좌심실 이완기말 용적을 유의하게 줄여, Frank Starling 기전에 따라 일회박출량이 감소한다."
+  },
+  {
    "id": "paper-2026-0129",
    "type": "paper",
    "unit": "",
@@ -16501,6 +17863,84 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0330.md",
    "snippet": "58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 ",
    "text": "Cardiology Atrial Flutter atrial-flutter narrow-qrs-tachycardia rate-control diltiazem palpitation KMLE 2026 / Claude Routine 58세 남자가 2시간 전부터 두근거림을 느껴 응급실에 왔다. 어지럼이나 흉통은 없다. 목동맥에서 규칙적으로 빠른 맥이 만져진다. 활력징후·검사와 심전도는 자료와 같다. 가장 적절한 다음 처치는? A. 딜티아젬을 정맥으로 주어 심박수를 낮춘다 B. 아데노신을 정맥으로 빠르게 밀어 넣는다 C. 즉시 동기화 전기심장율동전환을 시행한다 D. 아트로핀을 정맥으로 투여한다 E. 리도카인을 정맥으로 투여한다 규칙적 좁은QRS 빈맥이 분당 약 150회로 톱니파 양상을 보이는 심방조동이다. 혈역학적으로 안정하므로 즉각적 율동전환보다 방실결절 차단 약물로 심박수를 먼저 조절하는 것이 적절하다."
+  },
+  {
+   "id": "usmle-2026-0090",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome)",
+   "tags": [
+    "catatonia",
+    "lorazepam-challenge",
+    "NMS-differentiation",
+    "antipsychotic-induced"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · catatonia management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0090.md",
+   "snippet": "A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, ",
+   "text": "Psychiatry Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome) catatonia lorazepam-challenge NMS-differentiation antipsychotic-induced USMLE-style / MedKOS (psychiatry · catatonia management) A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, stares blankly, and has had markedly decreased oral intake. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Discontinue the antipsychotic and initiate a benzodiazepine (lorazepam) trial B. Administer dantrolene and bromocriptine while continuing the current antipsychotic C. Initiate electroconvulsive therapy before any medication trial D. Restart a different high potency antipsychotic at a lower dose E. Obtain an urgent MRI of the brain before initiating any treatment Mutism, waxy flexibility, and posturing without fever, rigidity, autonomic instability, or elevated CK point to catatonia rather than neuroleptic malignant syndrome; the antipsychotic should be discontinued and a lorazepam challenge (both diagnostic and often therapeutic) initiated first, reserving ECT for benzodiazepine refractory cases and avoiding further antipsychotic exposure, which can precipitate NMS."
+  },
+  {
+   "id": "usmle-2026-0088",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Status Epilepticus (Benzodiazepine-Refractory Stepwise Management)",
+   "tags": [
+    "status-epilepticus",
+    "benzodiazepine-refractory",
+    "fosphenytoin",
+    "seizure-management"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · seizure emergency management)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0088.md",
+   "snippet": "A 34 year old woman is brought in by EMS after a witnessed generalized tonic clonic seizure that has now lasted more than 20 minutes without return to baseline. She has no history of epilepsy. EMS administered two doses of intravenous loraz",
+   "text": "Neurology Status Epilepticus (Benzodiazepine-Refractory Stepwise Management) status-epilepticus benzodiazepine-refractory fosphenytoin seizure-management USMLE-style / MedKOS (neurology · seizure emergency management) A 34 year old woman is brought in by EMS after a witnessed generalized tonic clonic seizure that has now lasted more than 20 minutes without return to baseline. She has no history of epilepsy. EMS administered two doses of intravenous lorazepam en route, 4 minutes apart, without effect. On arrival she continues to have rhythmic limb jerking. Vital signs and point of care studies are shown. Which of the following is the most appropriate next step in management? A. A third dose of intravenous lorazepam B. An intravenous loading dose of fosphenytoin C. Immediate induction of general anesthesia with continuous EEG monitoring D. Oral phenytoin administered via nasogastric tube E. Intravenous phenobarbital as the preferred initial second line agent This patient has benzodiazepine refractory status epilepticus after two adequate doses of a first line benzodiazepine; the next step is an intravenous second line agent — fosphenytoin, valproate, or levetiracetam — rather than a third benzodiazepine dose, oral therapy, or escalation straight to anesthetic infusion, which is reserved for seizures refractory to an adequate second line agent."
+  },
+  {
+   "id": "usmle-2026-0087",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Complete (Third-Degree) AV Block — Escape Pacemaker Physiology",
+   "tags": [
+    "complete-heart-block",
+    "escape-rhythm",
+    "automaticity",
+    "ECG",
+    "conduction-system"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · cardiac conduction system)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0087.md",
+   "snippet": "A 74 year old man presents with recurrent syncope. He takes no cardioactive medications. Vital signs are shown. An ECG (shown) reveals complete dissociation between P waves and QRS complexes, with atrial activity at a faster, regular rate a",
+   "text": "Physiology Complete (Third-Degree) AV Block — Escape Pacemaker Physiology complete-heart-block escape-rhythm automaticity ECG conduction-system USMLE-style / MedKOS (physiology · cardiac conduction system) A 74 year old man presents with recurrent syncope. He takes no cardioactive medications. Vital signs are shown. An ECG (shown) reveals complete dissociation between P waves and QRS complexes, with atrial activity at a faster, regular rate and a slower, regular wide complex ventricular rhythm. Serum electrolytes, troponin, and digoxin level are unremarkable, as shown. Which of the following mechanisms is most likely responsible for the ventricular rhythm seen on this patient's ECG? A. Spontaneous phase 4 diastolic depolarization in a subsidiary pacemaker distal to the site of block B. A re entrant circuit confined entirely within the AV node that bypasses the site of block C. Triggered activity from early afterdepolarizations in Purkinje fibers D. Retrograde conduction from the ventricles depolarizing the sinoatrial node E. Enhanced automaticity of the sinoatrial node overriding a structurally normal AV node In complete (third degree) AV block, no atrial impulses reach the ventricles, so a subsidiary pacemaker distal to the block — the AV junction or, when block is infranodal, the His Purkinje/ventricular myocardium — generates the ventricular rhythm via its own intrinsic phase 4 diastolic (pacemaker) depolarization; the slower, regular rate reflects the lower intrinsic firing rate of these distal pacemaker tissues compared with the SA node."
+  },
+  {
+   "id": "usmle-2026-0086",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Multiple Myeloma (Cast Nephropathy Mechanism)",
+   "tags": [
+    "multiple-myeloma",
+    "cast-nephropathy",
+    "bence-jones-protein",
+    "rouleaux",
+    "hypercalcemia"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · plasma cell dyscrasia)",
+   "confidence": "high",
+   "date": "2026-07-28",
+   "path": "content/usmle/usmle-2026-0086.md",
+   "snippet": "A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a m",
+   "text": "Pathology Multiple Myeloma (Cast Nephropathy Mechanism) multiple-myeloma cast-nephropathy bence-jones-protein rouleaux hypercalcemia USMLE-style / MedKOS (pathology · plasma cell dyscrasia) A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a monoclonal spike, and urine immunofixation confirms free kappa light chains. Which of the following mechanisms most likely accounts for this patient's renal dysfunction? A. Precipitation of free immunoglobulin light chains with Tamm–Horsfall protein forming obstructing casts in the distal tubules B. Diffuse deposition of AL amyloid fibrils in the glomerular basement membrane causing nephrotic range proteinuria C. Hypercalcemia induced nephrogenic diabetes insipidus with distal tubular resistance to antidiuretic hormone D. NSAID induced afferent arteriolar vasoconstriction reducing glomerular perfusion pressure E. Immune complex deposition activating complement in the glomerular mesangium Multiple myeloma most commonly causes acute kidney injury through myeloma cast nephropathy: filtered free light chains combine with Tamm–Horsfall protein secreted by the thick ascending limb/distal tubule to form obstructing intratubular casts, distinct from AL amyloidosis (which causes nephrotic range proteinuria via glomerular deposition rather than tubular obstruction) or the other listed mechanisms."
   },
   {
    "id": "paper-2026-0125",
@@ -18242,6 +19682,107 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Cardiac Tamponade cardiac-tamponade pericardial-effusion pulsus-paradoxus pericardiocentesis obstructive-shock KMLE 2026 / Claude Routine 55세 남자가 하루 전부터 심해진 호흡곤란으로 응급실에 왔다. 최근 폐암으로 항암치료 중이다. 목정맥이 팽대되어 있고 심음이 멀리 들린다. 들숨 때 수축기혈압이 크게 떨어진다. 활력징후·검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 이뇨제로 전부하를 줄인다 B. 베타차단제로 심박수를 낮춘다 C. 심낭천자로 삼출액을 뺀다 D. 혈전용해제를 투여한다 E. 큰 용량 수액을 빠르게 준다 저혈압·경정맥팽대·심음 감소와 들숨 시 수축기혈압 저하는 심장눌림증을 시사한다. 심낭삼출로 심장이 눌려 확장이 안 되는 폐쇄성 쇼크이므로, 즉시 심낭천자로 삼출액을 빼내 심장 충만을 회복시키는 것이 근본 처치다. 이뇨제·정맥확장제는 전부하를 더 떨어뜨려 금기다."
   },
   {
+   "id": "usmle-2026-0084",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Lithium Toxicity Precipitated by Thiazide Diuretic (Renal Clearance Mechanism)",
+   "tags": [
+    "lithium-toxicity",
+    "thiazide-diuretic",
+    "bipolar-disorder",
+    "drug-interaction",
+    "nephrogenic-diabetes-insipidus"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · psychopharmacology)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0084.md",
+   "snippet": "A 58 year old woman with bipolar I disorder maintained on a stable dose of lithium for 6 years is brought in by her family for new onset coarse tremor, slurred speech, and unsteady gait over the past 4 days. Two weeks ago, her primary care ",
+   "text": "Psychiatry Lithium Toxicity Precipitated by Thiazide Diuretic (Renal Clearance Mechanism) lithium-toxicity thiazide-diuretic bipolar-disorder drug-interaction nephrogenic-diabetes-insipidus USMLE-style / MedKOS (psychiatry · psychopharmacology) A 58 year old woman with bipolar I disorder maintained on a stable dose of lithium for 6 years is brought in by her family for new onset coarse tremor, slurred speech, and unsteady gait over the past 4 days. Two weeks ago, her primary care physician started hydrochlorothiazide for newly diagnosed hypertension. She reports no changes to her lithium dose or diet. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's current presentation? A. Thiazide induced volume depletion increases proximal tubular reabsorption of sodium and lithium B. Thiazide directly displaces lithium from plasma protein binding sites C. Thiazide induces hepatic enzymes that increase conversion of lithium to an active toxic metabolite D. Thiazide causes a pharmacodynamic interaction that increases lithium receptor sensitivity in the central nervous system E. Thiazide impairs biliary excretion of lithium, causing systemic accumulation Thiazide diuretics cause mild volume depletion, which increases proximal tubular sodium (and secondarily lithium) reabsorption; because lithium is renally excreted and not protein bound, hepatically metabolized, or biliary excreted, this reduced renal clearance is the mechanism behind thiazide precipitated lithium toxicity."
+  },
+  {
+   "id": "usmle-2026-0083",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Wernicke Encephalopathy (Thiamine Before Glucose in Suspected Thiamine Deficiency)",
+   "tags": [
+    "Wernicke-encephalopathy",
+    "thiamine",
+    "alcohol-use-disorder",
+    "hypoglycemia-management-sequence",
+    "ophthalmoplegia"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · nutritional encephalopathy)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0083.md",
+   "snippet": "A 51 year old man with a long history of heavy alcohol use is brought to the emergency department by a friend because of confusion and unsteady gait over the past two days. He has not eaten a full meal in several days. Examination shows hor",
+   "text": "Neurology Wernicke Encephalopathy (Thiamine Before Glucose in Suspected Thiamine Deficiency) Wernicke-encephalopathy thiamine alcohol-use-disorder hypoglycemia-management-sequence ophthalmoplegia USMLE-style / MedKOS (neurology · nutritional encephalopathy) A 51 year old man with a long history of heavy alcohol use is brought to the emergency department by a friend because of confusion and unsteady gait over the past two days. He has not eaten a full meal in several days. Examination shows horizontal nystagmus, bilateral abducens palsy, and a wide based, ataxic gait. Vital signs and a bedside capillary glucose are shown. He is disheveled and appears malnourished. Which of the following is the most appropriate immediate next step in management? A. Administer thiamine before dextrose infusion B. Administer dextrose alone C. Obtain a noncontrast head CT before giving any treatment D. Administer naloxone E. Begin a benzodiazepine taper for alcohol withdrawal This patient's nystagmus, ophthalmoplegia, and ataxia in the setting of chronic alcohol use and poor nutrition suggest thiamine deficient Wernicke encephalopathy; because thiamine is a required cofactor for glucose metabolism, administering glucose first can precipitate or worsen Wernicke encephalopathy, so thiamine should be given before or together with dextrose in any thiamine deficient patient who also needs glucose correction."
+  },
+  {
+   "id": "usmle-2026-0082",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage (Second-Line Uterotonic Selection with Comorbidity Contraindications)",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "uterotonics",
+    "methylergonovine",
+    "carboprost",
+    "asthma-contraindication"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0082.md",
+   "snippet": "A 29 year old woman, G2P2, has continuous heavy vaginal bleeding 20 minutes after a vaginal delivery. The uterus is soft and boggy on bimanual examination, and no lacerations are seen. Her history includes moderate persistent asthma treated",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage (Second-Line Uterotonic Selection with Comorbidity Contraindications) postpartum-hemorrhage uterine-atony uterotonics methylergonovine carboprost asthma-contraindication USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 29 year old woman, G2P2, has continuous heavy vaginal bleeding 20 minutes after a vaginal delivery. The uterus is soft and boggy on bimanual examination, and no lacerations are seen. Her history includes moderate persistent asthma treated with an inhaled corticosteroid and albuterol as needed, and chronic hypertension treated with labetalol. An indwelling Foley catheter shows adequate urine output. Bimanual uterine massage and an infusion of intravenous oxytocin have been started, but bleeding continues. Which of the following is the most appropriate next step in pharmacologic management? A. Intramuscular methylergonovine B. Intramuscular carboprost tromethamine C. Rectal misoprostol D. Intravenous tranexamic acid monotherapy E. Uterine artery embolization This patient has uterine atony refractory to oxytocin. Methylergonovine is relatively contraindicated because of her chronic hypertension (risk of severe hypertensive crisis), and carboprost is relatively contraindicated because of her asthma (risk of bronchospasm); misoprostol, a prostaglandin E1 analog, carries neither contraindication and is the most appropriate next uterotonic in this patient."
+  },
+  {
+   "id": "usmle-2026-0080",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Cushing Reflex (Baroreceptor-Mediated Bradycardia from Raised ICP)",
+   "tags": [
+    "Cushing-reflex",
+    "baroreceptor-reflex",
+    "intracranial-pressure",
+    "brainstem-herniation",
+    "cardiovascular-physiology"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · neuro-cardiovascular reflex)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0080.md",
+   "snippet": "A 34 year old man is brought to the emergency department after a motorcycle collision. He was initially responsive but is now unresponsive with a fixed, dilated left pupil. Vital signs are shown, with widened pulse pressure and irregular re",
+   "text": "Physiology Cushing Reflex (Baroreceptor-Mediated Bradycardia from Raised ICP) Cushing-reflex baroreceptor-reflex intracranial-pressure brainstem-herniation cardiovascular-physiology USMLE-style / MedKOS (physiology · neuro-cardiovascular reflex) A 34 year old man is brought to the emergency department after a motorcycle collision. He was initially responsive but is now unresponsive with a fixed, dilated left pupil. Vital signs are shown, with widened pulse pressure and irregular respirations. A noncontrast head CT shows a large epidural hematoma with midline shift. Which of the following physiologic mechanisms best explains this patient's current heart rate and blood pressure? A. Arterial baroreceptor mediated reflex response to acutely elevated systemic blood pressure B. Direct compression of the sinoatrial node by displaced brain parenchyma C. Loss of sympathetic outflow from spinal cord transection below the medulla D. Reflex tachycardia from decreased cerebral perfusion pressure E. Vagal nerve compression by the expanding hematoma at the skull base Rising intracranial pressure reduces cerebral perfusion, triggering a sympathetically mediated pressor response that raises systemic arterial pressure to restore cerebral blood flow; the resulting acute hypertension activates arterial baroreceptors, which reflexively drive vagal mediated bradycardia — the Cushing reflex (hypertension, bradycardia, irregular respirations)."
+  },
+  {
+   "id": "usmle-2026-0079",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Tricyclic Antidepressant Overdose (Sodium Channel Blockade)",
+   "tags": [
+    "TCA-overdose",
+    "sodium-channel-blockade",
+    "sodium-bicarbonate",
+    "wide-complex-tachycardia",
+    "amitriptyline"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · toxicology)",
+   "confidence": "high",
+   "date": "2026-07-23",
+   "path": "content/usmle/usmle-2026-0079.md",
+   "snippet": "A 22 year old woman is brought to the emergency department after being found unresponsive with an empty pill bottle labeled amitriptyline nearby. She is lethargic and minimally responsive to voice. Vital signs, arterial blood gas, and a rhy",
+   "text": "Pharmacology Tricyclic Antidepressant Overdose (Sodium Channel Blockade) TCA-overdose sodium-channel-blockade sodium-bicarbonate wide-complex-tachycardia amitriptyline USMLE-style / MedKOS (pharmacology · toxicology) A 22 year old woman is brought to the emergency department after being found unresponsive with an empty pill bottle labeled amitriptyline nearby. She is lethargic and minimally responsive to voice. Vital signs, arterial blood gas, and a rhythm strip obtained on arrival are shown. Which of the following is the most appropriate immediate pharmacologic intervention? A. Intravenous sodium bicarbonate B. Intravenous flecainide C. Intravenous physostigmine D. Intravenous calcium gluconate E. Intravenous naloxone TCA overdose blocks fast cardiac sodium channels, widening the QRS and predisposing to wide complex tachyarrhythmias and hypotension; serum alkalinization with IV sodium bicarbonate increases the extracellular sodium gradient and shifts drug binding kinetics, narrowing the QRS and improving conduction."
+  },
+  {
    "id": "paper-2026-0098",
    "type": "paper",
    "unit": "",
@@ -19152,6 +20693,106 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0234.md",
    "snippet": "58세 남자가 갑자기 시작된 찢어지는 듯한 앞가슴 통증이 등으로 뻗쳐 응급실에 왔다. 통증은 시작과 동시에 최고조였다. 양팔 혈압 차이가 크고, 확장기 잡음이 새로 들린다. 활력징후·검사는 자료와 같다. 진단 영상을 준비하면서 혈압·심박 조절을 위해 가장 먼저 투여할 약은? A. 정맥 베타차단제로 심박수를 분당 60회 이하로 낮춘다 B. 정맥 니트로프루시드를 혈관확장제 단독으로 먼저 투여한다 C. 혈전용해제를 정맥으로 투여한다",
    "text": "Cardiology Acute Aortic Dissection (Stanford A) aortic-dissection beta-blocker-first dP-dt hypertensive-emergency contraindication KMLE 2026 / Claude Routine 58세 남자가 갑자기 시작된 찢어지는 듯한 앞가슴 통증이 등으로 뻗쳐 응급실에 왔다. 통증은 시작과 동시에 최고조였다. 양팔 혈압 차이가 크고, 확장기 잡음이 새로 들린다. 활력징후·검사는 자료와 같다. 진단 영상을 준비하면서 혈압·심박 조절을 위해 가장 먼저 투여할 약은? A. 정맥 베타차단제로 심박수를 분당 60회 이하로 낮춘다 B. 정맥 니트로프루시드를 혈관확장제 단독으로 먼저 투여한다 C. 혈전용해제를 정맥으로 투여한다 D. 이중항혈소판제를 부하 용량으로 투여한다 E. 등장수액을 빠르게 대량 투여한다 급성 대동맥박리에서 목표는 혈관벽 전단응력(dP/dt)을 낮추는 것이다. 베타차단제로 심박수·수축력을 먼저 떨어뜨린 뒤 혈압이 남으면 혈관확장제를 더한다. 혈관확장제를 먼저 단독 투여하면 반사빈맥으로 전단응력이 오히려 커져 박리가 진행한다."
+  },
+  {
+   "id": "usmle-2026-0078",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Severe Lithium Toxicity — Thiazide- and Dehydration-Precipitated",
+   "tags": [
+    "lithium-toxicity",
+    "bipolar-disorder",
+    "hemodialysis",
+    "thiazide-interaction",
+    "drug-toxicity"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · lithium toxicity)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0078.md",
+   "snippet": "A 54 year old woman with bipolar I disorder maintained on chronic lithium started hydrochlorothiazide for hypertension 2 weeks ago and then had a week of viral gastroenteritis with vomiting and diarrhea. She now presents with coarse tremor,",
+   "text": "Psychiatry Severe Lithium Toxicity — Thiazide- and Dehydration-Precipitated lithium-toxicity bipolar-disorder hemodialysis thiazide-interaction drug-toxicity USMLE-style / MedKOS (psychiatry · lithium toxicity) A 54 year old woman with bipolar I disorder maintained on chronic lithium started hydrochlorothiazide for hypertension 2 weeks ago and then had a week of viral gastroenteritis with vomiting and diarrhea. She now presents with coarse tremor, ataxia, confusion, and myoclonic jerks. She is normothermic and has no muscular rigidity. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Initiate emergent hemodialysis B. Administer sodium polystyrene sulfonate C. Start IV normal saline and reassess in 24 hours D. Administer IV sodium bicarbonate to alkalinize the urine E. Begin oral whole bowel irrigation with polyethylene glycol Severe neurologic lithium toxicity with a markedly elevated level and acute kidney injury impairing lithium clearance is an indication for hemodialysis rather than fluids or decontamination measures alone."
+  },
+  {
+   "id": "usmle-2026-0077",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Cholinergic Crisis vs Myasthenic Crisis — Pyridostigmine Overdose",
+   "tags": [
+    "myasthenia-gravis",
+    "cholinergic-crisis",
+    "pyridostigmine",
+    "muscarinic-toxicity",
+    "respiratory-failure"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · neuromuscular junction disorders)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0077.md",
+   "snippet": "A 23 year old woman with myasthenia gravis on home pyridostigmine develops a upper respiratory infection and, over the past 2 days, self increases her pyridostigmine dose because her weakness feels worse. She now presents with worsening gen",
+   "text": "Neurology Cholinergic Crisis vs Myasthenic Crisis — Pyridostigmine Overdose myasthenia-gravis cholinergic-crisis pyridostigmine muscarinic-toxicity respiratory-failure USMLE-style / MedKOS (neurology · neuromuscular junction disorders) A 23 year old woman with myasthenia gravis on home pyridostigmine develops a upper respiratory infection and, over the past 2 days, self increases her pyridostigmine dose because her weakness feels worse. She now presents with worsening generalized weakness, excessive salivation, watery diarrhea, and abdominal cramping. On examination she has diffuse muscle fasciculations, bilateral ptosis, and diaphoresis. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate step in management? A. Increase the pyridostigmine dose to overcome receptor blockade B. Administer edrophonium to confirm the diagnosis before treatment C. Begin plasmapheresis emergently before addressing muscarinic symptoms D. Administer neostigmine to reverse the muscle weakness E. Discontinue pyridostigmine with atropine for muscarinic symptom control Dose escalation followed by miosis, bradycardia, salivation, diarrhea, and fasciculations indicates cholinergic (muscarinic) toxicity rather than myasthenic weakness alone; management is to hold the acetylcholinesterase inhibitor, give atropine for muscarinic symptoms, and monitor for respiratory failure."
+  },
+  {
+   "id": "usmle-2026-0076",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Unstable Wide-Complex Tachycardia — Synchronized Cardioversion",
+   "tags": [
+    "ventricular-tachycardia",
+    "unstable-arrhythmia",
+    "synchronized-cardioversion",
+    "ACLS",
+    "ischemic-cardiomyopathy"
+   ],
+   "source": "USMLE-style / MedKOS (internal medicine · arrhythmia, synthetic ECG)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0076.md",
+   "snippet": "A 62 year old man with a history of myocardial infarction 3 years ago presents with sudden palpitations and near syncope. He is diaphoretic, pale, and mildly confused but has a palpable pulse. The rhythm strip is shown. Vital signs and labo",
+   "text": "Internal Medicine Unstable Wide-Complex Tachycardia — Synchronized Cardioversion ventricular-tachycardia unstable-arrhythmia synchronized-cardioversion ACLS ischemic-cardiomyopathy USMLE-style / MedKOS (internal medicine · arrhythmia, synthetic ECG) A 62 year old man with a history of myocardial infarction 3 years ago presents with sudden palpitations and near syncope. He is diaphoretic, pale, and mildly confused but has a palpable pulse. The rhythm strip is shown. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate management? A. Immediate unsynchronized defibrillation B. Intravenous amiodarone loading infusion over 10 minutes C. Immediate synchronized cardioversion D. Vagal maneuvers followed by adenosine if unsuccessful E. Intravenous metoprolol bolus A wide complex tachycardia with hypotension, altered mentation, and a palpable pulse is unstable and requires immediate synchronized cardioversion; unsynchronized defibrillation is reserved for pulseless rhythms."
+  },
+  {
+   "id": "usmle-2026-0075",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "AL (Primary) Amyloidosis — Source of Amyloidogenic Protein",
+   "tags": [
+    "amyloidosis",
+    "AL-amyloid",
+    "plasma-cell-dyscrasia",
+    "nephrotic-syndrome",
+    "congo-red"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · amyloidosis)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0075.md",
+   "snippet": "A 58 year old man presents with 6 months of progressive lower extremity edema, fatigue, and foamy urine. He has no history of diabetes, chronic infection, autoimmune disease, or dialysis. On examination he has macroglossia and easy bruising",
+   "text": "Pathology AL (Primary) Amyloidosis — Source of Amyloidogenic Protein amyloidosis AL-amyloid plasma-cell-dyscrasia nephrotic-syndrome congo-red USMLE-style / MedKOS (pathology · amyloidosis) A 58 year old man presents with 6 months of progressive lower extremity edema, fatigue, and foamy urine. He has no history of diabetes, chronic infection, autoimmune disease, or dialysis. On examination he has macroglossia and easy bruising around the eyes after routine phlebotomy. Serum protein electrophoresis shows a monoclonal spike in the gamma region. A renal biopsy demonstrates extracellular deposits that stain with Congo red and show apple green birefringence under polarized light. Vital signs and laboratory studies are shown. Which of the following is the most likely underlying source of the amyloidogenic protein in this patient? A. Serum amyloid A protein produced during chronic inflammation B. Clonal plasma cells producing misfolded immunoglobulin light chains C. Mutant transthyretin protein synthesized by the liver D. β2 microglobulin accumulation from long term dialysis E. Islet amyloid polypeptide deposition in pancreatic islets A monoclonal gammopathy with a markedly skewed serum free light chain ratio, nephrotic syndrome, macroglossia, and periorbital bruising in a patient without chronic inflammatory disease or dialysis points to AL amyloidosis from a clonal plasma cell dyscrasia."
+  },
+  {
+   "id": "usmle-2026-0073",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "Ornithine Transcarbamylase (OTC) Deficiency — Urea Cycle Biochemistry",
+   "tags": [
+    "urea-cycle",
+    "OTC-deficiency",
+    "hyperammonemia",
+    "orotic-acid",
+    "X-linked"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · urea cycle)",
+   "confidence": "high",
+   "date": "2026-07-21",
+   "path": "content/usmle/usmle-2026-0073.md",
+   "snippet": "A 3 day old male newborn, born after an uncomplicated term vaginal delivery, becomes progressively lethargic and refuses feeds over the past 24 hours. He has had several episodes of non bilious vomiting without diarrhea or fever. His mother",
+   "text": "Biochemistry Ornithine Transcarbamylase (OTC) Deficiency — Urea Cycle Biochemistry urea-cycle OTC-deficiency hyperammonemia orotic-acid X-linked USMLE-style / MedKOS (biochemistry · urea cycle) A 3 day old male newborn, born after an uncomplicated term vaginal delivery, becomes progressively lethargic and refuses feeds over the past 24 hours. He has had several episodes of non bilious vomiting without diarrhea or fever. His mother reports that two maternal uncles died in infancy of an undiagnosed illness. Vital signs and laboratory studies are shown. Which of the following additional findings would most strongly support this infant's specific enzyme defect over other proximal urea cycle disorders? A. Elevated urine orotic acid with low plasma citrulline B. Markedly elevated plasma citrulline with elevated urine orotic acid C. Low or undetectable urine orotic acid with low plasma citrulline D. Elevated plasma propionylcarnitine (C3) with normal urine orotic acid E. Elevated plasma lysine with low plasma ornithine OTC deficiency causes carbamoyl phosphate to accumulate proximal to the block and divert into cytosolic pyrimidine synthesis, raising urine orotic acid, while citrulline synthesis downstream of OTC is reduced."
   },
   {
    "id": "kmle-2026-0233",
@@ -20432,6 +22073,105 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0170.md",
    "snippet": "78세 남자가 아침에 화장실에서 갑자기 정신을 잃고 쓰러졌다가 깨어나 응급실에 왔다. 어지럼과 식은땀을 호소하며 힘이 없다. 심전도에서 P파와 QRS가 서로 무관하게 각자의 주기로 나타난다. 활력징후·검사와 파형은 자료와 같다. 지금 가장 적절한 처치는? A. 아데노신을 빠르게 정맥주사한다 B. 경구 베타차단제를 투여한다 C. 생리식염수만 빠르게 주입하고 경과를 본다 D. 즉시 심박조율을 준비해 시행한다 E. 딜티아젬을 정맥주",
    "text": "Cardiology Complete AV Block complete-av-block bradycardia av-dissociation transcutaneous-pacing syncope KMLE 2026 / Claude Routine 78세 남자가 아침에 화장실에서 갑자기 정신을 잃고 쓰러졌다가 깨어나 응급실에 왔다. 어지럼과 식은땀을 호소하며 힘이 없다. 심전도에서 P파와 QRS가 서로 무관하게 각자의 주기로 나타난다. 활력징후·검사와 파형은 자료와 같다. 지금 가장 적절한 처치는? A. 아데노신을 빠르게 정맥주사한다 B. 경구 베타차단제를 투여한다 C. 생리식염수만 빠르게 주입하고 경과를 본다 D. 즉시 심박조율을 준비해 시행한다 E. 딜티아젬을 정맥주사한다 P파와 QRS가 완전히 해리되어 각자 뛰고 서맥·저혈압·실신이 동반되면 3도(완전) 방실차단이다. 혈역학이 불안정한 완전방실차단의 확정 처치는 심박조율(우선 경피, 이어 경정맥)이며, 아트로핀은 흔히 무효하고 방실결절억제 약물은 금기다."
+  },
+  {
+   "id": "usmle-2026-0071",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Postpartum Hemorrhage — Second-Line Uterotonic Selection",
+   "tags": [
+    "postpartum-hemorrhage",
+    "uterine-atony",
+    "carboprost",
+    "methylergonovine",
+    "uterotonics"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0071.md",
+   "snippet": "A 34 year old woman, G3P3, delivers a 4300 g infant vaginally after a prolonged second stage of labor complicated by shoulder dystocia. Fifteen minutes postpartum, she continues to have brisk vaginal bleeding despite vigorous fundal massage",
+   "text": "Obstetrics & Gynecology Postpartum Hemorrhage — Second-Line Uterotonic Selection postpartum-hemorrhage uterine-atony carboprost methylergonovine uterotonics USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 34 year old woman, G3P3, delivers a 4300 g infant vaginally after a prolonged second stage of labor complicated by shoulder dystocia. Fifteen minutes postpartum, she continues to have brisk vaginal bleeding despite vigorous fundal massage and one dose of intravenous oxytocin; on examination the uterus remains soft and poorly contracted. Her medical history is notable for chronic hypertension controlled with labetalol; she has no history of asthma or other pulmonary disease. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Administer intramuscular methylergonovine B. Administer intramuscular carboprost tromethamine C. Discontinue oxytocin and reassess for spontaneous resolution in 30 minutes D. Proceed directly to emergency hysterectomy E. Administer an additional intravenous fluid bolus only, without further uterotonic therapy Uterine atony persisting despite fundal massage and oxytocin requires a second line uterotonic. Methylergonovine is contraindicated in this patient because of her chronic hypertension (risk of hypertensive crisis and stroke), whereas she has no asthma or other contraindication to carboprost (a prostaglandin F2 alpha analog, which is relatively contraindicated in asthma due to bronchospasm risk), making carboprost the most appropriate next agent."
+  },
+  {
+   "id": "usmle-2026-0070",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Elevated Intracranial Pressure — Impending Herniation Management",
+   "tags": [
+    "intracranial-pressure",
+    "herniation",
+    "traumatic-brain-injury",
+    "hyperventilation",
+    "hypertonic-saline"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · neurocritical care)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0070.md",
+   "snippet": "A 34 year old man is brought to the emergency department after a high speed motorcycle collision. Over the next hour in the trauma bay, his level of consciousness declines: he now opens his eyes only to painful stimuli, makes incomprehensib",
+   "text": "Neurology Elevated Intracranial Pressure — Impending Herniation Management intracranial-pressure herniation traumatic-brain-injury hyperventilation hypertonic-saline USMLE-style / MedKOS (neurology · neurocritical care) A 34 year old man is brought to the emergency department after a high speed motorcycle collision. Over the next hour in the trauma bay, his level of consciousness declines: he now opens his eyes only to painful stimuli, makes incomprehensible sounds, and extends his arms and legs in response to pain. His right pupil is now 6 mm and reacts sluggishly to light, while the left pupil is 3 mm and reacts briskly. Vital signs and laboratory studies are shown. Which of the following is the most appropriate immediate management step? A. Immediate lumbar puncture to directly measure and relieve the elevated intracranial pressure B. Elevate the head of the bed, initiate brief hyperventilation to a PaCO2 of approximately 30 mmHg, and give hypertonic saline or mannitol C. Aggressive intravenous isotonic fluid boluses to maximize cerebral perfusion pressure D. Immediate high dose intravenous dexamethasone as the primary measure to reduce cerebral edema E. Prophylactic phenytoin loading without any further airway or pressure directed intervention A declining GCS, asymmetric pupillary findings, and hypertension with bradycardia after trauma indicate impending uncal herniation from rising intracranial pressure. Temporizing measures to acutely lower ICP — head of bed elevation, brief controlled hyperventilation, and hyperosmolar therapy (hypertonic saline or mannitol) — buy time while definitive neurosurgical evaluation and imaging are arranged."
+  },
+  {
+   "id": "usmle-2026-0069",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "Baroreceptor Reflex in Hemorrhagic Shock",
+   "tags": [
+    "baroreceptor-reflex",
+    "hemorrhagic-shock",
+    "autonomic-nervous-system",
+    "sympathetic-tone"
+   ],
+   "source": "USMLE-style / MedKOS (physiology · cardiovascular reflexes)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0069.md",
+   "snippet": "A 27 year old man is brought to the emergency department after a motor vehicle collision with significant blood loss from an open femur fracture. He is anxious and diaphoretic, and his extremities are cool and pale. Vital signs are shown. W",
+   "text": "Physiology Baroreceptor Reflex in Hemorrhagic Shock baroreceptor-reflex hemorrhagic-shock autonomic-nervous-system sympathetic-tone USMLE-style / MedKOS (physiology · cardiovascular reflexes) A 27 year old man is brought to the emergency department after a motor vehicle collision with significant blood loss from an open femur fracture. He is anxious and diaphoretic, and his extremities are cool and pale. Vital signs are shown. Which of the following mechanisms best accounts for this patient's elevated heart rate? A. Reduced arterial wall stretch decreases baroreceptor afferent firing, disinhibits the vasomotor center, and increases sympathetic outflow B. Decreased atrial natriuretic peptide release directly raises heart rate through increased renal sodium retention C. Activation of the renin angiotensin system causes angiotensin II to directly increase sinoatrial nodal automaticity D. Cerebral hypoperfusion triggers the Cushing reflex, producing reflex tachycardia through brainstem vasomotor centers E. Reduced blood volume directly stimulates the sinoatrial node via stretch activated calcium channels, independent of autonomic input Acute hemorrhage lowers arterial pressure and reduces stretch of the carotid sinus and aortic arch baroreceptors. Decreased afferent firing along the glossopharyngeal and vagus nerves disinhibits the medullary vasomotor center, increasing sympathetic outflow (tachycardia, increased contractility, arteriolar and venous vasoconstriction) and withdrawing parasympathetic tone — the immediate compensatory response to hypovolemia."
+  },
+  {
+   "id": "usmle-2026-0068",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Methotrexate Toxicity — Leucovorin Rescue Mechanism",
+   "tags": [
+    "methotrexate",
+    "leucovorin",
+    "folinic-acid",
+    "dihydrofolate-reductase",
+    "antimetabolite"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antimetabolites)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0068.md",
+   "snippet": "A 14 year old girl with osteosarcoma is receiving a cycle of high dose intravenous methotrexate as part of her chemotherapy protocol. She also receives aggressive intravenous hydration and urinary alkalinization, and is given scheduled dose",
+   "text": "Pharmacology Methotrexate Toxicity — Leucovorin Rescue Mechanism methotrexate leucovorin folinic-acid dihydrofolate-reductase antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolites) A 14 year old girl with osteosarcoma is receiving a cycle of high dose intravenous methotrexate as part of her chemotherapy protocol. She also receives aggressive intravenous hydration and urinary alkalinization, and is given scheduled doses of leucovorin beginning 24 hours after the methotrexate infusion, continuing until her serum methotrexate level falls below a defined threshold. Vital signs and laboratory studies obtained during monitoring are shown. Which of the following best explains how leucovorin protects this patient's normal tissues from methotrexate toxicity? A. Leucovorin competitively displaces methotrexate from dihydrofolate reductase, restoring the enzyme's normal catalytic activity in all cells B. Leucovorin induces hepatic cytochrome P450 enzymes, thereby accelerating renal and biliary clearance of circulating methotrexate C. Leucovorin binds circulating methotrexate directly in the plasma, forming an inactive complex that is excreted by the kidneys D. Leucovorin upregulates expression of the reduced folate carrier, increasing active efflux of methotrexate out of cells E. Leucovorin bypasses the methotrexate inhibited dihydrofolate reductase step by directly supplying reduced folate for purine and thymidylate synthesis Methotrexate competitively inhibits dihydrofolate reductase (DHFR), blocking regeneration of tetrahydrofolate needed for purine and thymidylate synthesis. Leucovorin (folinic acid) is already a reduced folate; it enters the one carbon pool downstream of the blocked DHFR step and directly supplies the cofactors normal cells need, rescuing them from methotrexate's antiproliferative effect without reactivating the inhibited enzyme itself."
+  },
+  {
+   "id": "usmle-2026-0067",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Fat Embolism Syndrome (Long-Bone Fracture)",
+   "tags": [
+    "fat-embolism",
+    "long-bone-fracture",
+    "petechiae",
+    "hypoxemia",
+    "ARDS-mimic"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · fat embolism)",
+   "confidence": "high",
+   "date": "2026-07-16",
+   "path": "content/usmle/usmle-2026-0067.md",
+   "snippet": "A 22 year old man underwent open reduction and internal fixation of a closed femoral shaft fracture sustained in a motor vehicle collision 36 hours ago. He is now increasingly short of breath and confused, unable to state the correct year. ",
+   "text": "Pathology Fat Embolism Syndrome (Long-Bone Fracture) fat-embolism long-bone-fracture petechiae hypoxemia ARDS-mimic USMLE-style / MedKOS (pathology · fat embolism) A 22 year old man underwent open reduction and internal fixation of a closed femoral shaft fracture sustained in a motor vehicle collision 36 hours ago. He is now increasingly short of breath and confused, unable to state the correct year. Examination reveals new non palpable petechiae scattered across both axillae and the anterior chest wall that were not present on admission. Vital signs and laboratory studies are shown. Which of the following mechanisms best explains this patient's respiratory failure and skin findings? A. Circulating antiplatelet antibodies destroy platelets and trigger diffuse microvascular thrombosis B. Marrow megakaryocytes embolize to the pulmonary vasculature and cause acute pulmonary infarction C. Marrow fat globules occlude pulmonary capillaries, and the free fatty acids released produce direct endothelial injury D. Immune complexes deposit in alveolar capillaries and trigger complement mediated diffuse alveolar damage E. A lower extremity venous thrombus crosses a patent foramen ovale into the systemic arterial circulation Onset 24 72 hours after long bone fracture or fixation with the triad of respiratory distress, altered mentation, and a petechial rash over the axillae/chest, plus new thrombocytopenia and hypoxemia with normal coagulation studies, is the classic presentation of fat embolism syndrome. Marrow fat is released into the venous circulation at the fracture site, mechanically occludes pulmonary and systemic capillaries, and the free fatty acids liberated by lipase activity directly injure capillary endothelium, producing capillary leak, thrombocytopenia (platelet adherence to fat droplets), and petechiae from dermal capillary occlusion."
   },
   {
    "id": "ailab-2026-0014",
@@ -24081,8 +25821,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-07-06",
    "path": "content/kmle/2026/kmle-2026-0037.md",
-   "snippet": "55세 여성이 구강 점막의 통증성 미란과 몸통의 이완성 물집으로 왔다. 정상으로 보이는 피부를 문지르면 표피가 벗겨진다(Nikolsky 징후 양성). 직접면역형광검사에서 표피세포 사이에 그물모양의 IgG 침착이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진상피부염 D. 다형홍반 E. 농가진 점막 침범이 흔하고 이완성 수포, Nikolsky 양성, 표피세포간 데스모글레인에 대",
-   "text": "Dermatology Pemphigus Vulgaris pemphigus Nikolsky sign intraepidermal IgG KMLE 2026 / Claude Routine 55세 여성이 구강 점막의 통증성 미란과 몸통의 이완성 물집으로 왔다. 정상으로 보이는 피부를 문지르면 표피가 벗겨진다(Nikolsky 징후 양성). 직접면역형광검사에서 표피세포 사이에 그물모양의 IgG 침착이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진상피부염 D. 다형홍반 E. 농가진 점막 침범이 흔하고 이완성 수포, Nikolsky 양성, 표피세포간 데스모글레인에 대한 IgG 침착은 심상성 천포창의 특징이다. 수포성 유천포창(노인, 긴장성 수포, 기저막대 선상 침착)과 감별된다. 치료는 전신 스테로이드·리툭시맙이다."
+   "snippet": "55세 여성이 구강 점막의 통증성 미란과 몸통의 이완성 물집으로 왔다. 정상으로 보이는 피부를 손가락으로 문지르면 표피가 밀려 벗겨진다. 직접면역형광검사에서 표피세포 사이에 그물모양의 IgG 침착이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진상피부염 D. 다형홍반 E. 농가진 점막 침범이 흔하고 이완성 수포, Nikolsky 양성, 표피세포간 데스모글레인에 대한 IgG 침",
+   "text": "Dermatology Pemphigus Vulgaris pemphigus Nikolsky sign intraepidermal IgG KMLE 2026 / Claude Routine 55세 여성이 구강 점막의 통증성 미란과 몸통의 이완성 물집으로 왔다. 정상으로 보이는 피부를 손가락으로 문지르면 표피가 밀려 벗겨진다. 직접면역형광검사에서 표피세포 사이에 그물모양의 IgG 침착이 관찰된다. 다음 중 가장 가능성이 높은 진단은? A. 심상성 천포창 B. 수포성 유천포창 C. 포진상피부염 D. 다형홍반 E. 농가진 점막 침범이 흔하고 이완성 수포, Nikolsky 양성, 표피세포간 데스모글레인에 대한 IgG 침착은 심상성 천포창의 특징이다. 수포성 유천포창(노인, 긴장성 수포, 기저막대 선상 침착)과 감별된다. 치료는 전신 스테로이드·리툭시맙이다."
   },
   {
    "id": "kmle-2026-0036",
@@ -25582,26 +27322,6 @@ window.MEDKOS_INDEX = {
    "text": "Immunology Terminal Complement Deficiency complement MAC C5-C9 Neisseria CH50 USMLE-style / MedKOS (complement immunodeficiency) An 18 year old college student is admitted with his second lifetime episode of Neisseria meningitidis meningitis; he had a documented meningococcal bacteremia at age 12. Immunoglobulin levels and T and B cell counts are normal. Total hemolytic complement activity (CH50) is undetectable, while C3 is normal. Which of the following best explains his susceptibility? A. Deficiency of a terminal complement component (C5 C9), impairing formation of the membrane attack complex B. C3 deficiency C. C1 esterase inhibitor deficiency D. Bruton tyrosine kinase deficiency (X linked agammaglobulinemia) E. Selective IgA deficiency 재발성 Neisseria 감염 + CH50 소실 + 정상 C3는 말단 보체(C5 C9, MAC) 결핍이다. MAC이 Neisseria 같은 얇은 세포벽 그람음성균을 직접 용해하므로, 결핍 시 수막알균/임균 재발 감염에 취약하다."
   },
   {
-   "id": "usmle-2026-0008",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Biochemistry",
-   "subtopic": "Urea Cycle (Ornithine Transcarbamylase Deficiency)",
-   "tags": [
-    "urea-cycle",
-    "OTC",
-    "hyperammonemia",
-    "orotic-aciduria",
-    "X-linked"
-   ],
-   "source": "USMLE-style / MedKOS (inborn errors of metabolism)",
-   "confidence": "high",
-   "date": "2026-07-02",
-   "path": "content/usmle/usmle-2026-0008.md",
-   "snippet": "A male neonate is normal at birth but on day 3 of life becomes lethargic and feeds poorly, then develops tachypnea and seizures. Laboratory studies show a markedly elevated plasma ammonia, a low BUN, and a respiratory alkalosis. Urine oroti",
-   "text": "Biochemistry Urea Cycle (Ornithine Transcarbamylase Deficiency) urea-cycle OTC hyperammonemia orotic-aciduria X-linked USMLE-style / MedKOS (inborn errors of metabolism) A male neonate is normal at birth but on day 3 of life becomes lethargic and feeds poorly, then develops tachypnea and seizures. Laboratory studies show a markedly elevated plasma ammonia, a low BUN, and a respiratory alkalosis. Urine orotic acid is elevated, and there is no megaloblastic anemia. Plasma citrulline is low. Which enzyme deficiency best explains these findings? A. Ornithine transcarbamylase B. Carbamoyl phosphate synthetase I C. UMP synthase (hereditary orotic aciduria) D. Medium chain acyl CoA dehydrogenase E. Phenylalanine hydroxylase 고암모니아혈증 + 낮은 BUN + 소변 orotic acid 상승 + 낮은 citrulline + 거대적혈모구빈혈 없음 + X 연관 남아는 ornithine transcarbamylase 결핍이다. 축적된 carbamoyl phosphate가 피리미딘 합성 경로로 흘러 orotic acid가 증가한다."
-  },
-  {
    "id": "usmle-2026-0007",
    "type": "usmle",
    "unit": "",
@@ -25620,26 +27340,6 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0007.md",
    "snippet": "A 62 year old man with a 40 pack year smoking history reports several months of proximal lower limb weakness and difficulty rising from a chair. He notes that grip strength briefly improves after sustained effort. He also has dry mouth and ",
    "text": "Neurology Lambert-Eaton Myasthenic Syndrome LEMS VGCC paraneoplastic small-cell-lung-cancer RNS USMLE-style / MedKOS (paraneoplastic neurology) A 62 year old man with a 40 pack year smoking history reports several months of proximal lower limb weakness and difficulty rising from a chair. He notes that grip strength briefly improves after sustained effort. He also has dry mouth and reduced knee reflexes that become detectable after brief exercise. Repetitive nerve stimulation shows a low baseline compound muscle action potential that increases by 100% at high frequency (or after exercise). Which of the following is the most likely pathophysiologic mechanism? A. Autoantibodies against postsynaptic nicotinic acetylcholine receptors B. Autoantibodies against presynaptic P/Q type voltage gated calcium channels C. Autoantibodies against muscle specific kinase (MuSK) D. Autoantibodies against voltage gated potassium channels E. Autoantibodies against the ganglioside GM1 노력으로 호전되는 근위부 근력저하 + 자율신경 증상(구강건조) + 고빈도 반복자극에서 진폭 증가(incremental) + 흡연력은 Lambert Eaton 근무력증후군이다. presynaptic P/Q형 전압의존성 칼슘통로에 대한 항체가 ACh 방출을 줄이며, 흔히 소세포폐암의 부종양 증후군이다."
-  },
-  {
-   "id": "usmle-2026-0006",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Immunology",
-   "subtopic": "Chronic Granulomatous Disease",
-   "tags": [
-    "CGD",
-    "NADPH-oxidase",
-    "respiratory-burst",
-    "catalase-positive",
-    "DHR"
-   ],
-   "source": "USMLE-style / MedKOS (primary immunodeficiency)",
-   "confidence": "high",
-   "date": "2026-07-02",
-   "path": "content/usmle/usmle-2026-0006.md",
-   "snippet": "A 2 year old boy has had recurrent Staphylococcus aureus lymphadenitis, a Serratia marcescens skin abscess, and an Aspergillus pneumonia, plus a hepatic abscess. Neutrophil count is normal. A dihydrorhodamine (DHR) flow cytometry oxidative ",
-   "text": "Immunology Chronic Granulomatous Disease CGD NADPH-oxidase respiratory-burst catalase-positive DHR USMLE-style / MedKOS (primary immunodeficiency) A 2 year old boy has had recurrent Staphylococcus aureus lymphadenitis, a Serratia marcescens skin abscess, and an Aspergillus pneumonia, plus a hepatic abscess. Neutrophil count is normal. A dihydrorhodamine (DHR) flow cytometry oxidative burst assay shows markedly reduced fluorescence after stimulation. Which of the following underlying defects best explains this presentation? A. Defective NADPH oxidase (chronic granulomatous disease) B. Defective CD18/beta 2 integrin (leukocyte adhesion deficiency type 1) C. Defective Bruton tyrosine kinase (X linked agammaglobulinemia) D. WAS gene mutation (Wiskott Aldrich syndrome) E. IL 12 receptor deficiency 재발성 catalase 양성 세균(Staph, Serratia)·곰팡이(Aspergillus) 감염 + DHR/NBT 이상은 NADPH oxidase 결핍(만성 육아종병)이다. 호중구가 산소 폭발(respiratory burst)로 활성산소를 만들지 못해 catalase 양성 미생물을 죽이지 못한다."
   },
   {
    "id": "usmle-2026-0005",
