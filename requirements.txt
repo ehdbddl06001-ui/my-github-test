@@ -1,8 +1,17 @@
-pyyaml>=6.0
-# 해부 학습자료 조판(anatomy_pdf.py · anatomy_subnote.py). 없으면 PDF 단계가 통째로 죽는다.
-pymupdf>=1.24
-# 실사 복원·마스킹 lane(anatomy_mask.py · restore_scan.py)과 그 회귀 테스트.
-# 2026-08-17 실측: 루틴 컨테이너에 이 셋이 없어 test_anatomy.py 가 ImportError 로 죽었다.
-pillow>=10.0
+# ecg-lab 실험 코드 · 회귀 테스트 의존성.
+#
+# 회귀 테스트(mit-bih/test_*.py)는 합성 데이터 자립형이지만 라이브러리는 필요하다.
+# 2026-08-17 실측(빈 컨테이너, 14개 테스트):
+#   아무것도 없을 때            0 통과 — numpy 부터 죽는다
+#   아래 4개만 설치했을 때     10 통과
+#   나머지 4개(q4o·q4p·q4q·svdb_rhythm)는 torch 가 있어야 통과한다
 numpy>=1.26
-opencv-python-headless>=4.9
+scikit-learn>=1.4
+scipy>=1.11
+matplotlib>=3.8
+
+# 학습·평가 모듈용. Colab 에는 이미 있다. 로컬에서 위 4개 테스트까지 돌리려면 필요.
+torch>=2.2
+
+# 원시 MIT-BIH/INCART 신호를 직접 읽을 때만 필요(전처리 1회 실행용).
+# wfdb>=4.1

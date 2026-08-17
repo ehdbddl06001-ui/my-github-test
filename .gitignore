@@ -1,27 +1,24 @@
-# SQLite는 Markdown에서 재빌드되는 파생물 — 커밋하지 않는다
-db/*.sqlite
-db/*.sqlite-*
-
 # 비밀/환경
 .env
 *.key
+rclone.conf
 
 # 파이썬
 __pycache__/
 *.pyc
 .venv/
 
-# 상태는 content 에서 파생 — 커밋하지 않는다(충돌 원천 제거). state.py 참조.
-state/id_counter.json
-state/seen_topics.json
-state/seen_papers.json
-state/.id_cache.json
-
-# fetch_project.py 로 받은 오픈소스 저장소 — GPL 등 copyleft 전염 방지. 받아서 읽기만.
-projects/
-
-# 해부학 원본·비공개 파생물(강의 PDF·페이지 이미지·마스크·QA 시트·텍스트 스냅샷).
-# 공개 repo에 절대 커밋하지 않는다 — spec: experiments/specs/anatomy-3q-2026.md §6.
-.private/
-# Drive listing 스냅샷(세션이 MCP로 채우는 임시 입력)
-state/.anatomy_listing.json
+# 원시 데이터셋·체크포인트·대용량 산출물은 커밋하지 않는다 — Drive 에 두고
+# research/ASSETS.md 에 경로만 등록한다(CLAUDE.md 「금지」).
+*.npy
+*.npz
+*.keras
+*.h5
+*.pt
+*.pth
+*.dat
+*.hea
+*.atr
+data/
+runs/
+checkpoints/
