@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1474,
+  "total": 1462,
   "byType": {
    "paper": 440,
    "kmle": 587,
    "anatomy": 328,
-   "usmle": 102,
+   "usmle": 90,
    "ailab": 14,
    "basic": 3
   },
@@ -21,10 +21,10 @@ window.MEDKOS_INDEX = {
    "Infectious Disease": 91,
    "Hematology-Oncology": 72,
    "Pediatrics": 68,
-   "Pathology": 63,
-   "Obstetrics & Gynecology": 47,
-   "Neurology": 46,
-   "Psychiatry": 46,
+   "Pathology": 62,
+   "Obstetrics & Gynecology": 46,
+   "Neurology": 44,
+   "Psychiatry": 44,
    "Surgery": 44,
    "Endocrinology": 38,
    "Laboratory Medicine": 38,
@@ -37,12 +37,12 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 36,
    "Hematology": 35,
    "Physiology": 12,
-   "Pharmacology": 9,
-   "Biochemistry": 6,
-   "Immunology": 6,
+   "Pharmacology": 7,
    "Microbiology": 6,
+   "Biochemistry": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
+   "Immunology": 3,
    "Internal Medicine": 3,
    "Oncology": 3,
    "Allergy": 2,
@@ -54,10 +54,10 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "medium": 607,
-   "high": 818,
+   "high": 806,
    "low": 49
   },
-  "tagCount": 2266
+  "tagCount": 2247
  },
  "docs": [
   {
@@ -14741,26 +14741,6 @@ window.MEDKOS_INDEX = {
    "text": "Psychiatry Alcohol Withdrawal Seizure — Symptom-Triggered Benzodiazepine Management alcohol-withdrawal delirium-tremens benzodiazepine CIWA-Ar withdrawal-seizure USMLE-style / MedKOS (psychiatry · alcohol withdrawal syndrome management) A 52 year old man is hospitalized on day 3 after elective orthopedic surgery. He has a history of drinking approximately 8 alcoholic beverages daily for over a decade, with his last drink the night before admission. He is now tremulous, diaphoretic, agitated, and reports seeing insects crawling on the wall; nursing staff witnessed a brief generalized tonic clonic seizure this morning. Vital signs and laboratory studies are shown; blood glucose and head CT are unremarkable. His CIWA Ar score is 22. Which of the following is the most appropriate next step in management? A. Haloperidol alone for agitation, without a benzodiazepine B. Phenytoin loading for ongoing seizure prophylaxis C. Benzodiazepine (e.g., lorazepam) dosed according to a symptom triggered CIWA Ar protocol D. Thiamine supplementation alone, withholding benzodiazepine treatment E. Physical restraints and continuous observation without pharmacologic treatment, pending psychiatry consultation This patient's history of heavy daily alcohol use, last drink the day before admission, and autonomic hyperactivity with hallucinations and a withdrawal seizure indicate severe alcohol withdrawal at risk for progression to delirium tremens; the appropriate next step is symptom triggered benzodiazepine dosing (e.g., via the CIWA Ar protocol), which treats the underlying GABA A receptor hypofunction driving both the autonomic instability and seizure risk."
   },
   {
-   "id": "usmle-2026-0101",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Neurology",
-   "subtopic": "Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis",
-   "tags": [
-    "acute-ischemic-stroke",
-    "alteplase",
-    "tPA",
-    "blood-pressure-threshold",
-    "thrombolysis-eligibility"
-   ],
-   "source": "USMLE-style / MedKOS (neurology · acute stroke thrombolysis eligibility)",
-   "confidence": "high",
-   "date": "2026-08-04",
-   "path": "content/usmle/usmle-2026-0101.md",
-   "snippet": "A 68 year old man is brought to the emergency department 2 hours and 10 minutes after the witnessed sudden onset of right sided weakness and difficulty speaking. He takes no anticoagulant or antiplatelet medication and has had no recent sur",
-   "text": "Neurology Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis acute-ischemic-stroke alteplase tPA blood-pressure-threshold thrombolysis-eligibility USMLE-style / MedKOS (neurology · acute stroke thrombolysis eligibility) A 68 year old man is brought to the emergency department 2 hours and 10 minutes after the witnessed sudden onset of right sided weakness and difficulty speaking. He takes no anticoagulant or antiplatelet medication and has had no recent surgery or bleeding. Vital signs and initial studies are shown; noncontrast CT of the head shows no hemorrhage and no early ischemic changes involving more than one third of the middle cerebral artery territory. Which of the following is the most appropriate next step in management? A. Administer intravenous alteplase immediately without addressing the blood pressure B. Lower blood pressure with intravenous labetalol to below 185/110 mmHg, then administer intravenous alteplase C. Give aspirin 325 mg orally now and defer thrombolytic therapy D. Proceed directly to mechanical thrombectomy without administering thrombolytic therapy E. Obtain CT angiography before making any treatment decision, delaying thrombolysis This patient is within the eligible time window for intravenous alteplase and has no exclusion criteria on labs or imaging, but his blood pressure (196/110 mmHg) exceeds the 185/110 mmHg threshold required before thrombolysis; the correct next step is to lower blood pressure with a rapid acting intravenous agent and then give alteplase promptly, without delaying treatment for additional imaging or substituting antiplatelet therapy."
-  },
-  {
    "id": "usmle-2026-0100",
    "type": "usmle",
    "unit": "",
@@ -14800,26 +14780,6 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0099.md",
    "snippet": "A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, ",
    "text": "Physiology Complete Heart Block — Escape Pacemaker Localization by Rate and QRS Width complete-heart-block escape-rhythm AV-node His-Purkinje cardiac-conduction-physiology ECG USMLE-style / MedKOS (cardiac electrophysiology · escape rhythm localization) A 78 year old man presents after a syncopal episode. He has had several weeks of fatigue and lightheadedness. His rhythm strip (shown) reveals P waves marching through at a regular atrial rate that is entirely independent of a much slower, wide complex ventricular rhythm, with no fixed relationship between the P waves and the QRS complexes. Laboratory studies shown are unremarkable, and he takes no cardioactive medications. The slow rate and wide QRS morphology of this ventricular rhythm are most consistent with an escape pacemaker originating at which of the following sites? A. Distal Purkinje fibers within the ventricular myocardium (infra Hisian) B. The proximal bundle of His, just below the atrioventricular node C. The sinoatrial node, generating the observed atrial activity itself D. An ectopic atrial focus near the crista terminalis E. The coronary sinus ostium, producing a low atrial escape rhythm In complete AV block, the width and rate of the escape rhythm localize the level of the escape pacemaker: a narrower QRS at a relatively faster rate (~40–60/min) suggests a junctional/proximal His origin, whereas a wide QRS at a slower rate (~20–40/min), as seen here, indicates a more distal, infra Hisian ventricular myocardial escape focus with fewer intrinsic pacemaker cells and slower automaticity."
-  },
-  {
-   "id": "usmle-2026-0098",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Immunology",
-   "subtopic": "Chronic Granulomatous Disease (NADPH oxidase respiratory burst defect)",
-   "tags": [
-    "chronic-granulomatous-disease",
-    "NADPH-oxidase",
-    "respiratory-burst",
-    "catalase-positive-organisms",
-    "NBT-test"
-   ],
-   "source": "USMLE-style / MedKOS (immunology · phagocyte oxidative killing defect)",
-   "confidence": "high",
-   "date": "2026-08-04",
-   "path": "content/usmle/usmle-2026-0098.md",
-   "snippet": "A 4 year old boy has had recurrent skin abscesses caused by Staphylococcus aureus, suppurative lymphadenitis, and now presents with fever and a pulmonary infiltrate found on imaging to be caused by Aspergillus species. Vital signs and labor",
-   "text": "Immunology Chronic Granulomatous Disease (NADPH oxidase respiratory burst defect) chronic-granulomatous-disease NADPH-oxidase respiratory-burst catalase-positive-organisms NBT-test USMLE-style / MedKOS (immunology · phagocyte oxidative killing defect) A 4 year old boy has had recurrent skin abscesses caused by Staphylococcus aureus, suppurative lymphadenitis, and now presents with fever and a pulmonary infiltrate found on imaging to be caused by Aspergillus species. Vital signs and laboratory studies are shown; serum immunoglobulin levels and lymphocyte counts are normal. A dihydrorhodamine (DHR) flow cytometry assay shows markedly reduced oxidation compared with controls. The enzyme defect underlying this patient's recurrent infections most directly impairs which of the following processes? A. Complement mediated opsonization of encapsulated bacteria via the classical pathway B. CD40 CD40 ligand interaction required for immunoglobulin class switching C. MHC class II mediated antigen presentation to CD4+ helper T cells D. Microtubule dependent fusion of phagosomes with lysosomes E. NADPH oxidase mediated generation of superoxide during the phagocyte respiratory burst Recurrent infections with catalase positive organisms (S. aureus, Aspergillus), normal immunoglobulins and lymphocyte counts, and a markedly reduced DHR oxidation assay point to chronic granulomatous disease, caused by a defect in the phagocyte NADPH oxidase complex that normally generates superoxide for oxidative killing of ingested catalase positive microbes."
   },
   {
    "id": "usmle-2026-0097",
@@ -16467,46 +16427,6 @@ window.MEDKOS_INDEX = {
    "text": "Cardiology Sustained Monomorphic Ventricular Tachycardia ventricular-tachycardia wide-complex-tachycardia amiodarone post-MI ECG KMLE 2026 / Claude Routine 62세 남자가 1시간 전 갑자기 시작된 두근거림과 어지럼으로 응급실에 왔다. 3년 전 심근경색으로 스텐트 삽입을 받은 병력이 있다. 의식은 명료하고 흉통은 없으며 사지는 따뜻하다. 심전도는 자료와 같고 활력징후와 검사 소견도 자료와 같다. 가장 적절한 처치는? A. 정맥 아미오다론을 투여한다 B. 정맥 아데노신을 빠르게 정주한다 C. 즉시 비동기 제세동을 시행한다 D. 경구 베라파밀을 투여한다 E. 미주신경자극수기를 반복 시행한다 허혈성 심질환 병력에 규칙적이고 넓은 QRS 빈맥이면 심실빈맥으로 간주한다. 혈압·의식·말초관류가 유지되는 안정 상태이므로 즉각 전기충격보다 항부정맥제(아미오다론 등)로 종료를 시도하는 것이 초기 처치이며, 방실결절차단제(베라파밀·아데노신)는 금기다."
   },
   {
-   "id": "usmle-2026-0096",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Psychiatry",
-   "subtopic": "Alcohol Withdrawal Delirium (Delirium Tremens) — Symptom-Triggered Benzodiazepine Therapy",
-   "tags": [
-    "alcohol-withdrawal",
-    "delirium-tremens",
-    "benzodiazepine",
-    "ciwa-ar",
-    "autonomic-instability"
-   ],
-   "source": "USMLE-style / MedKOS (psychiatry · substance withdrawal)",
-   "confidence": "high",
-   "date": "2026-07-30",
-   "path": "content/usmle/usmle-2026-0096.md",
-   "snippet": "A 48 year old man with a 20 year history of heavy daily alcohol use is hospitalized for pancreatitis. On hospital day 3, he becomes agitated and diaphoretic, with a coarse hand tremor, and reports seeing insects crawling on the walls. He is",
-   "text": "Psychiatry Alcohol Withdrawal Delirium (Delirium Tremens) — Symptom-Triggered Benzodiazepine Therapy alcohol-withdrawal delirium-tremens benzodiazepine ciwa-ar autonomic-instability USMLE-style / MedKOS (psychiatry · substance withdrawal) A 48 year old man with a 20 year history of heavy daily alcohol use is hospitalized for pancreatitis. On hospital day 3, he becomes agitated and diaphoretic, with a coarse hand tremor, and reports seeing insects crawling on the walls. He is disoriented to place and time. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Immediate physical restraints alone, pending psychiatric evaluation B. Scheduled fixed dose haloperidol as monotherapy for agitation C. Symptom triggered benzodiazepine dosing guided by a standardized withdrawal scale (e.g., CIWA Ar) D. Initiation of disulfiram to reduce further alcohol seeking behavior E. Naltrexone administration to blunt autonomic symptoms and craving 장기간 과도한 음주 후 입원 3일째 발생한 초조·발한·거친 진전·환시(벌레가 기어다니는 것을 봄)·지남력장애와 자율신경 항진(빈맥·고혈압·발열)은 알코올금단섬망(진전섬망)에 합당하다. 표준 처치는 CIWA Ar 같은 표준화 척도로 증상을 평가해 그에 따라 용량을 조절하는 벤조디아제핀 증상유도 투여이며, 경련·섬망으로의 진행을 예방한다."
-  },
-  {
-   "id": "usmle-2026-0095",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Neurology",
-   "subtopic": "Status Epilepticus — Stepwise Pharmacologic Management",
-   "tags": [
-    "status-epilepticus",
-    "benzodiazepine",
-    "fosphenytoin",
-    "levetiracetam",
-    "seizure-algorithm"
-   ],
-   "source": "USMLE-style / MedKOS (neurology · seizure emergency)",
-   "confidence": "high",
-   "date": "2026-07-30",
-   "path": "content/usmle/usmle-2026-0095.md",
-   "snippet": "A 34 year old man is brought to the emergency department after his girlfriend witnessed 8 minutes of continuous generalized tonic clonic convulsions with no return to baseline between episodes. On arrival, convulsions are ongoing. IV access",
-   "text": "Neurology Status Epilepticus — Stepwise Pharmacologic Management status-epilepticus benzodiazepine fosphenytoin levetiracetam seizure-algorithm USMLE-style / MedKOS (neurology · seizure emergency) A 34 year old man is brought to the emergency department after his girlfriend witnessed 8 minutes of continuous generalized tonic clonic convulsions with no return to baseline between episodes. On arrival, convulsions are ongoing. IV access is obtained, and he receives 4 mg IV lorazepam, followed by a second 4 mg dose 5 minutes later. Convulsions continue. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Administer a third dose of IV lorazepam B. Obtain an emergent MRI of the brain before further pharmacologic treatment C. Load with an intravenous second line antiseizure agent such as fosphenytoin D. Administer intramuscular midazolam as an alternative benzodiazepine route E. Begin a continuous propofol infusion with endotracheal intubation 충분한 용량의 벤조디아제핀(2회) 투여에도 경련이 지속되면 '난치성' 단계로 넘어가기 전, 표준 알고리즘상 다음 단계는 정맥용 2차 항경련제(포스페니토인·레베티라세탐·발프로산 중 하나) 부하이며, 마취제(프로포폴 등) 지속주입은 2차 약물에도 반응하지 않는 '초난치성' 단계에서 고려한다."
-  },
-  {
    "id": "usmle-2026-0094",
    "type": "usmle",
    "unit": "",
@@ -16565,26 +16485,6 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0092.md",
    "snippet": "A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atr",
    "text": "Physiology Atrial Fibrillation — Loss of Atrial Kick (Frank-Starling Mechanism) atrial-fibrillation atrial-kick frank-starling preload ecg USMLE-style / MedKOS (cardiac physiology · arrhythmia) A 68 year old man is found to have an irregularly irregular pulse on a routine visit. His rhythm strip and laboratory studies are shown; there is no evidence of acute ischemia or thyroid dysfunction. The absence of a discrete, organized atrial contraction in this rhythm most directly produces which of the following physiologic consequences? A. Increased ventricular preload from prolonged diastolic filling time B. Reduced left ventricular end diastolic volume from loss of coordinated atrial contraction ('atrial kick') C. Increased stroke volume via an enhanced Frank Starling response D. Decreased myocardial oxygen demand due to the irregular ventricular rate E. Increased coronary perfusion pressure from variable diastolic intervals 심방세동에서는 심방의 조직화된 수축이 소실되어(무질서한 전기활동) 심실 이완기 말 충만의 마지막 능동 성분인 '심방 수축(atrial kick)'이 사라진다. 특히 심실 이완기능이 저하된 환자(고령·좌심실비대)에서는 이 능동 충만분의 소실이 좌심실 이완기말 용적을 유의하게 줄여, Frank Starling 기전에 따라 일회박출량이 감소한다."
-  },
-  {
-   "id": "usmle-2026-0091",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Pharmacology",
-   "subtopic": "Methotrexate Toxicity — Leucovorin (Folinic Acid) Rescue Mechanism",
-   "tags": [
-    "methotrexate",
-    "leucovorin",
-    "folinic-acid",
-    "dihydrofolate-reductase",
-    "antimetabolite"
-   ],
-   "source": "USMLE-style / MedKOS (pharmacology · antimetabolite rescue)",
-   "confidence": "high",
-   "date": "2026-07-30",
-   "path": "content/usmle/usmle-2026-0091.md",
-   "snippet": "A 9 year old girl with high grade osteosarcoma is receiving high dose methotrexate as part of chemotherapy. On day 3, she develops oral mucositis. Vital signs and laboratory studies are shown. She is started on IV hydration, urinary alkalin",
-   "text": "Pharmacology Methotrexate Toxicity — Leucovorin (Folinic Acid) Rescue Mechanism methotrexate leucovorin folinic-acid dihydrofolate-reductase antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 9 year old girl with high grade osteosarcoma is receiving high dose methotrexate as part of chemotherapy. On day 3, she develops oral mucositis. Vital signs and laboratory studies are shown. She is started on IV hydration, urinary alkalinization, and leucovorin, dosed according to her serum methotrexate level. Leucovorin reduces methotrexate induced cytotoxicity by which of the following mechanisms? A. Bypassing dihydrofolate reductase blockade by supplying reduced folate for thymidylate and purine synthesis B. Competitively displacing methotrexate from renal tubular transporters to enhance urinary excretion C. Inhibiting hepatic cytochrome P450 metabolism of methotrexate to lower circulating active drug levels D. Chelating methotrexate in the plasma to form an inactive, renally excreted complex E. Directly inhibiting dihydrofolate reductase to prevent further methotrexate binding at the active site 메토트렉세이트는 디하이드로엽산환원효소(DHFR)를 억제해 테트라하이드로엽산 생성을 막고, 그 결과 티미딜산·퓨린 합성이 차단되어 급속 증식 세포(골수·구강점막)가 손상된다. 류코보린(폴린산)은 이미 환원된 엽산 형태로, DHFR 단계를 우회해 세포에 직접 환원엽산을 공급함으로써 티미딜산·퓨린 합성을 정상화시킨다."
   },
   {
    "id": "paper-2026-0129",
@@ -17314,26 +17214,6 @@ window.MEDKOS_INDEX = {
    "text": "Psychiatry Catatonia (Benzodiazepine Challenge — Differentiation from Neuroleptic Malignant Syndrome) catatonia lorazepam-challenge NMS-differentiation antipsychotic-induced USMLE-style / MedKOS (psychiatry · catatonia management) A 41 year old woman with schizophrenia is brought in after her haloperidol dose was increased 5 days ago. For the past 3 days she has been mute, holds fixed postures for extended periods, exhibits waxy flexibility on passive limb movement, stares blankly, and has had markedly decreased oral intake. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Discontinue the antipsychotic and initiate a benzodiazepine (lorazepam) trial B. Administer dantrolene and bromocriptine while continuing the current antipsychotic C. Initiate electroconvulsive therapy before any medication trial D. Restart a different high potency antipsychotic at a lower dose E. Obtain an urgent MRI of the brain before initiating any treatment Mutism, waxy flexibility, and posturing without fever, rigidity, autonomic instability, or elevated CK point to catatonia rather than neuroleptic malignant syndrome; the antipsychotic should be discontinued and a lorazepam challenge (both diagnostic and often therapeutic) initiated first, reserving ECT for benzodiazepine refractory cases and avoiding further antipsychotic exposure, which can precipitate NMS."
   },
   {
-   "id": "usmle-2026-0089",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Obstetrics & Gynecology",
-   "subtopic": "Postpartum Hemorrhage (Uterine Atony — Uterotonic Selection with Dual Contraindications)",
-   "tags": [
-    "postpartum-hemorrhage",
-    "uterine-atony",
-    "uterotonics",
-    "misoprostol",
-    "contraindications"
-   ],
-   "source": "USMLE-style / MedKOS (obstetrics · postpartum hemorrhage management)",
-   "confidence": "high",
-   "date": "2026-07-28",
-   "path": "content/usmle/usmle-2026-0089.md",
-   "snippet": "A 28 year old woman with chronic hypertension and asthma undergoes vaginal delivery of a 4.2 kg infant after a prolonged second stage. She now has heavy vaginal bleeding with a soft, boggy uterus palpable above the umbilicus. The placenta i",
-   "text": "Obstetrics & Gynecology Postpartum Hemorrhage (Uterine Atony — Uterotonic Selection with Dual Contraindications) postpartum-hemorrhage uterine-atony uterotonics misoprostol contraindications USMLE-style / MedKOS (obstetrics · postpartum hemorrhage management) A 28 year old woman with chronic hypertension and asthma undergoes vaginal delivery of a 4.2 kg infant after a prolonged second stage. She now has heavy vaginal bleeding with a soft, boggy uterus palpable above the umbilicus. The placenta is intact and no lacerations are found on exam. Bleeding continues despite vigorous fundal massage and a first line intravenous oxytocin infusion at the maximum recommended rate. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Intramuscular carboprost tromethamine (15 methyl prostaglandin F2α) B. Intramuscular methylergonovine C. Sublingual or rectal misoprostol D. Repeating the intravenous oxytocin infusion at the same rate E. Uterine artery embolization as the immediate next step With uterine atony refractory to maximal oxytocin, the next uterotonic should avoid this patient's specific contraindications: carboprost is contraindicated in asthma (bronchospasm risk) and methylergonovine is contraindicated in hypertension (risk of severe hypertension/stroke), leaving misoprostol as the appropriate second line agent; repeating oxytocin at the same rate has already failed, and embolization is reserved for hemorrhage refractory to pharmacologic uterotonics."
-  },
-  {
    "id": "usmle-2026-0088",
    "type": "usmle",
    "unit": "",
@@ -17391,26 +17271,6 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0086.md",
    "snippet": "A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a m",
    "text": "Pathology Multiple Myeloma (Cast Nephropathy Mechanism) multiple-myeloma cast-nephropathy bence-jones-protein rouleaux hypercalcemia USMLE-style / MedKOS (pathology · plasma cell dyscrasia) A 68 year old man presents with 3 months of fatigue and lower back pain. Skeletal survey shows multiple lytic lesions in the vertebral bodies and skull. Vital signs and laboratory studies are shown. Serum protein electrophoresis reveals a monoclonal spike, and urine immunofixation confirms free kappa light chains. Which of the following mechanisms most likely accounts for this patient's renal dysfunction? A. Precipitation of free immunoglobulin light chains with Tamm–Horsfall protein forming obstructing casts in the distal tubules B. Diffuse deposition of AL amyloid fibrils in the glomerular basement membrane causing nephrotic range proteinuria C. Hypercalcemia induced nephrogenic diabetes insipidus with distal tubular resistance to antidiuretic hormone D. NSAID induced afferent arteriolar vasoconstriction reducing glomerular perfusion pressure E. Immune complex deposition activating complement in the glomerular mesangium Multiple myeloma most commonly causes acute kidney injury through myeloma cast nephropathy: filtered free light chains combine with Tamm–Horsfall protein secreted by the thick ascending limb/distal tubule to form obstructing intratubular casts, distinct from AL amyloidosis (which causes nephrotic range proteinuria via glomerular deposition rather than tubular obstruction) or the other listed mechanisms."
-  },
-  {
-   "id": "usmle-2026-0085",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Pharmacology",
-   "subtopic": "Methotrexate Toxicity (Leucovorin Rescue Mechanism)",
-   "tags": [
-    "methotrexate",
-    "dihydrofolate-reductase",
-    "leucovorin",
-    "folinic-acid",
-    "antimetabolite"
-   ],
-   "source": "USMLE-style / MedKOS (pharmacology · antimetabolite rescue)",
-   "confidence": "high",
-   "date": "2026-07-28",
-   "path": "content/usmle/usmle-2026-0085.md",
-   "snippet": "A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are show",
-   "text": "Pharmacology Methotrexate Toxicity (Leucovorin Rescue Mechanism) methotrexate dihydrofolate-reductase leucovorin folinic-acid antimetabolite USMLE-style / MedKOS (pharmacology · antimetabolite rescue) A 58 year old woman receiving high dose intravenous methotrexate for primary CNS lymphoma develops oral mucositis and pancytopenia on hospital day 3. She is started on a rescue agent per protocol. Vital signs and laboratory studies are shown; renal function remains normal. Which of the following best explains the mechanism by which the rescue therapy prevents further toxicity in this patient? A. It competitively displaces methotrexate from dihydrofolate reductase, restoring enzyme activity B. It provides a reduced folate cofactor that bypasses the blocked dihydrofolate reductase step, restoring one carbon transfer reactions C. It inhibits renal organic anion transporters, reducing tubular reabsorption of methotrexate D. It alkalinizes the urine, increasing methotrexate solubility and enhancing renal clearance E. It induces hepatic cytochrome enzymes that accelerate methotrexate metabolism to inactive metabolites Leucovorin (folinic acid) is a reduced folate that does not require dihydrofolate reductase for activation, so it restores tetrahydrofolate dependent one carbon transfer (thymidylate and purine synthesis) in normal proliferating cells even while methotrexate continues to inhibit the enzyme — this is a metabolic bypass, not competitive displacement or enhanced clearance."
   },
   {
    "id": "paper-2026-0125",
@@ -19213,26 +19073,6 @@ window.MEDKOS_INDEX = {
    "text": "Obstetrics & Gynecology Postpartum Hemorrhage (Second-Line Uterotonic Selection with Comorbidity Contraindications) postpartum-hemorrhage uterine-atony uterotonics methylergonovine carboprost asthma-contraindication USMLE-style / MedKOS (obstetrics · postpartum hemorrhage) A 29 year old woman, G2P2, has continuous heavy vaginal bleeding 20 minutes after a vaginal delivery. The uterus is soft and boggy on bimanual examination, and no lacerations are seen. Her history includes moderate persistent asthma treated with an inhaled corticosteroid and albuterol as needed, and chronic hypertension treated with labetalol. An indwelling Foley catheter shows adequate urine output. Bimanual uterine massage and an infusion of intravenous oxytocin have been started, but bleeding continues. Which of the following is the most appropriate next step in pharmacologic management? A. Intramuscular methylergonovine B. Intramuscular carboprost tromethamine C. Rectal misoprostol D. Intravenous tranexamic acid monotherapy E. Uterine artery embolization This patient has uterine atony refractory to oxytocin. Methylergonovine is relatively contraindicated because of her chronic hypertension (risk of severe hypertensive crisis), and carboprost is relatively contraindicated because of her asthma (risk of bronchospasm); misoprostol, a prostaglandin E1 analog, carries neither contraindication and is the most appropriate next uterotonic in this patient."
   },
   {
-   "id": "usmle-2026-0081",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Pathology",
-   "subtopic": "Fat Embolism Syndrome (Mechanism of Petechial Rash after Long Bone Fracture)",
-   "tags": [
-    "fat-embolism-syndrome",
-    "long-bone-fracture",
-    "petechiae",
-    "thrombocytopenia",
-    "free-fatty-acids"
-   ],
-   "source": "USMLE-style / MedKOS (general pathology · embolism)",
-   "confidence": "high",
-   "date": "2026-07-23",
-   "path": "content/usmle/usmle-2026-0081.md",
-   "snippet": "A 19 year old man develops confusion, dyspnea, and a petechial rash over the chest and axillae 36 hours after surgical fixation of a closed femoral shaft fracture sustained in a motor vehicle collision. He was neurologically intact and hemo",
-   "text": "Pathology Fat Embolism Syndrome (Mechanism of Petechial Rash after Long Bone Fracture) fat-embolism-syndrome long-bone-fracture petechiae thrombocytopenia free-fatty-acids USMLE-style / MedKOS (general pathology · embolism) A 19 year old man develops confusion, dyspnea, and a petechial rash over the chest and axillae 36 hours after surgical fixation of a closed femoral shaft fracture sustained in a motor vehicle collision. He was neurologically intact and hemodynamically stable immediately after the injury. Vital signs and laboratory studies obtained now are shown. Chest imaging shows diffuse bilateral opacities. Which of the following mechanisms best explains this patient's petechial rash? A. Occlusion of dermal capillaries by marrow derived fat globules with local endothelial injury from free fatty acids B. Immune mediated platelet destruction from fracture associated antiplatelet antibodies C. Disseminated intravascular coagulation from gram negative sepsis D. Vitamin C deficiency causing impaired collagen cross linking in vessel walls E. Direct bacterial invasion of dermal vessels from an open wound In fat embolism syndrome, marrow fat globules released after long bone fracture mechanically occlude small vessels and are hydrolyzed to free fatty acids that directly injure capillary endothelium, causing petechiae (classically over the chest, axillae, and conjunctivae), consumptive thrombocytopenia, hypoxemia, and neurologic changes 24 72 hours after injury."
-  },
-  {
    "id": "usmle-2026-0080",
    "type": "usmle",
    "unit": "",
@@ -20263,26 +20103,6 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0075.md",
    "snippet": "A 58 year old man presents with 6 months of progressive lower extremity edema, fatigue, and foamy urine. He has no history of diabetes, chronic infection, autoimmune disease, or dialysis. On examination he has macroglossia and easy bruising",
    "text": "Pathology AL (Primary) Amyloidosis — Source of Amyloidogenic Protein amyloidosis AL-amyloid plasma-cell-dyscrasia nephrotic-syndrome congo-red USMLE-style / MedKOS (pathology · amyloidosis) A 58 year old man presents with 6 months of progressive lower extremity edema, fatigue, and foamy urine. He has no history of diabetes, chronic infection, autoimmune disease, or dialysis. On examination he has macroglossia and easy bruising around the eyes after routine phlebotomy. Serum protein electrophoresis shows a monoclonal spike in the gamma region. A renal biopsy demonstrates extracellular deposits that stain with Congo red and show apple green birefringence under polarized light. Vital signs and laboratory studies are shown. Which of the following is the most likely underlying source of the amyloidogenic protein in this patient? A. Serum amyloid A protein produced during chronic inflammation B. Clonal plasma cells producing misfolded immunoglobulin light chains C. Mutant transthyretin protein synthesized by the liver D. β2 microglobulin accumulation from long term dialysis E. Islet amyloid polypeptide deposition in pancreatic islets A monoclonal gammopathy with a markedly skewed serum free light chain ratio, nephrotic syndrome, macroglossia, and periorbital bruising in a patient without chronic inflammatory disease or dialysis points to AL amyloidosis from a clonal plasma cell dyscrasia."
-  },
-  {
-   "id": "usmle-2026-0074",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Immunology",
-   "subtopic": "Chronic Granulomatous Disease — Phagocyte NADPH Oxidase Defect",
-   "tags": [
-    "chronic-granulomatous-disease",
-    "NADPH-oxidase",
-    "catalase-positive",
-    "oxidative-burst",
-    "primary-immunodeficiency"
-   ],
-   "source": "USMLE-style / MedKOS (immunology · phagocyte disorders)",
-   "confidence": "high",
-   "date": "2026-07-21",
-   "path": "content/usmle/usmle-2026-0074.md",
-   "snippet": "An 18 month old boy is brought to the hospital with a 4 day history of fever and a painful, fluctuant perianal mass. This is his third hospitalization for a deep soft tissue abscess in the past year; a prior admission was for pneumonia with",
-   "text": "Immunology Chronic Granulomatous Disease — Phagocyte NADPH Oxidase Defect chronic-granulomatous-disease NADPH-oxidase catalase-positive oxidative-burst primary-immunodeficiency USMLE-style / MedKOS (immunology · phagocyte disorders) An 18 month old boy is brought to the hospital with a 4 day history of fever and a painful, fluctuant perianal mass. This is his third hospitalization for a deep soft tissue abscess in the past year; a prior admission was for pneumonia with a right upper lobe nodule on chest imaging that grew Aspergillus species on culture. His maternal uncle had a similar history of recurrent infections in childhood. Vital signs and laboratory studies are shown. Which of the following is the most likely underlying defect? A. Defect in myeloperoxidase (MPO) within neutrophil phagolysosomes B. Deficiency of terminal complement components C5 through C9 C. Deficiency of the IL 12/IFN γ signaling axis D. Defect in the phagocyte NADPH oxidase complex (gp91 phox) E. Mutation in the Wiskott–Aldrich syndrome protein (WASP) gene Recurrent abscesses and invasive infections with catalase positive organisms (Serratia, Aspergillus) with normal immunoglobulins and complement point to a defect of the phagocyte respiratory burst, most commonly an X linked NADPH oxidase (gp91 phox) defect."
   },
   {
    "id": "usmle-2026-0073",
@@ -21583,26 +21403,6 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0170.md",
    "snippet": "78세 남자가 아침에 화장실에서 갑자기 정신을 잃고 쓰러졌다가 깨어나 응급실에 왔다. 어지럼과 식은땀을 호소하며 힘이 없다. 심전도에서 P파와 QRS가 서로 무관하게 각자의 주기로 나타난다. 활력징후·검사와 파형은 자료와 같다. 지금 가장 적절한 처치는? A. 아데노신을 빠르게 정맥주사한다 B. 경구 베타차단제를 투여한다 C. 생리식염수만 빠르게 주입하고 경과를 본다 D. 즉시 심박조율을 준비해 시행한다 E. 딜티아젬을 정맥주",
    "text": "Cardiology Complete AV Block complete-av-block bradycardia av-dissociation transcutaneous-pacing syncope KMLE 2026 / Claude Routine 78세 남자가 아침에 화장실에서 갑자기 정신을 잃고 쓰러졌다가 깨어나 응급실에 왔다. 어지럼과 식은땀을 호소하며 힘이 없다. 심전도에서 P파와 QRS가 서로 무관하게 각자의 주기로 나타난다. 활력징후·검사와 파형은 자료와 같다. 지금 가장 적절한 처치는? A. 아데노신을 빠르게 정맥주사한다 B. 경구 베타차단제를 투여한다 C. 생리식염수만 빠르게 주입하고 경과를 본다 D. 즉시 심박조율을 준비해 시행한다 E. 딜티아젬을 정맥주사한다 P파와 QRS가 완전히 해리되어 각자 뛰고 서맥·저혈압·실신이 동반되면 3도(완전) 방실차단이다. 혈역학이 불안정한 완전방실차단의 확정 처치는 심박조율(우선 경피, 이어 경정맥)이며, 아트로핀은 흔히 무효하고 방실결절억제 약물은 금기다."
-  },
-  {
-   "id": "usmle-2026-0072",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Psychiatry",
-   "subtopic": "Alcohol Withdrawal — Symptom-Triggered Benzodiazepine Therapy",
-   "tags": [
-    "alcohol-withdrawal",
-    "benzodiazepine",
-    "CIWA-Ar",
-    "thiamine",
-    "delirium-tremens-prevention"
-   ],
-   "source": "USMLE-style / MedKOS (psychiatry · substance withdrawal)",
-   "confidence": "high",
-   "date": "2026-07-16",
-   "path": "content/usmle/usmle-2026-0072.md",
-   "snippet": "A 52 year old man is hospitalized after an emergency appendectomy. He reports drinking approximately 10 standard alcoholic drinks daily for several years, with his last drink about 40 hours before admission. He is now agitated, tremulous, a",
-   "text": "Psychiatry Alcohol Withdrawal — Symptom-Triggered Benzodiazepine Therapy alcohol-withdrawal benzodiazepine CIWA-Ar thiamine delirium-tremens-prevention USMLE-style / MedKOS (psychiatry · substance withdrawal) A 52 year old man is hospitalized after an emergency appendectomy. He reports drinking approximately 10 standard alcoholic drinks daily for several years, with his last drink about 40 hours before admission. He is now agitated, tremulous, and diaphoretic; he remains oriented to person, place, and time, with no hallucinations or seizures. He has already received intravenous thiamine. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in his management? A. Administer scheduled high dose haloperidol to control his agitation B. Administer 50% dextrose intravenously before any further intervention C. Initiate prophylactic phenytoin to prevent a withdrawal seizure D. Administer symptom triggered lorazepam dosing guided by a standardized withdrawal assessment scale E. Apply physical restraints and reassess in 24 hours without pharmacologic therapy This patient's tachycardia, hypertension, tremor, and diaphoresis roughly 40 hours after his last drink reflect alcohol withdrawal, with thiamine already addressed. Symptom triggered benzodiazepine dosing (e.g., lorazepam) guided by a standardized scale such as CIWA Ar treats the underlying GABAergic/glutamatergic dysregulation, controls autonomic hyperactivity, and reduces progression to withdrawal seizures or delirium tremens more effectively and with less total drug exposure than fixed schedule dosing."
   },
   {
    "id": "usmle-2026-0071",
@@ -26852,26 +26652,6 @@ window.MEDKOS_INDEX = {
    "text": "Immunology Terminal Complement Deficiency complement MAC C5-C9 Neisseria CH50 USMLE-style / MedKOS (complement immunodeficiency) An 18 year old college student is admitted with his second lifetime episode of Neisseria meningitidis meningitis; he had a documented meningococcal bacteremia at age 12. Immunoglobulin levels and T and B cell counts are normal. Total hemolytic complement activity (CH50) is undetectable, while C3 is normal. Which of the following best explains his susceptibility? A. Deficiency of a terminal complement component (C5 C9), impairing formation of the membrane attack complex B. C3 deficiency C. C1 esterase inhibitor deficiency D. Bruton tyrosine kinase deficiency (X linked agammaglobulinemia) E. Selective IgA deficiency 재발성 Neisseria 감염 + CH50 소실 + 정상 C3는 말단 보체(C5 C9, MAC) 결핍이다. MAC이 Neisseria 같은 얇은 세포벽 그람음성균을 직접 용해하므로, 결핍 시 수막알균/임균 재발 감염에 취약하다."
   },
   {
-   "id": "usmle-2026-0008",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Biochemistry",
-   "subtopic": "Urea Cycle (Ornithine Transcarbamylase Deficiency)",
-   "tags": [
-    "urea-cycle",
-    "OTC",
-    "hyperammonemia",
-    "orotic-aciduria",
-    "X-linked"
-   ],
-   "source": "USMLE-style / MedKOS (inborn errors of metabolism)",
-   "confidence": "high",
-   "date": "2026-07-02",
-   "path": "content/usmle/usmle-2026-0008.md",
-   "snippet": "A male neonate is normal at birth but on day 3 of life becomes lethargic and feeds poorly, then develops tachypnea and seizures. Laboratory studies show a markedly elevated plasma ammonia, a low BUN, and a respiratory alkalosis. Urine oroti",
-   "text": "Biochemistry Urea Cycle (Ornithine Transcarbamylase Deficiency) urea-cycle OTC hyperammonemia orotic-aciduria X-linked USMLE-style / MedKOS (inborn errors of metabolism) A male neonate is normal at birth but on day 3 of life becomes lethargic and feeds poorly, then develops tachypnea and seizures. Laboratory studies show a markedly elevated plasma ammonia, a low BUN, and a respiratory alkalosis. Urine orotic acid is elevated, and there is no megaloblastic anemia. Plasma citrulline is low. Which enzyme deficiency best explains these findings? A. Ornithine transcarbamylase B. Carbamoyl phosphate synthetase I C. UMP synthase (hereditary orotic aciduria) D. Medium chain acyl CoA dehydrogenase E. Phenylalanine hydroxylase 고암모니아혈증 + 낮은 BUN + 소변 orotic acid 상승 + 낮은 citrulline + 거대적혈모구빈혈 없음 + X 연관 남아는 ornithine transcarbamylase 결핍이다. 축적된 carbamoyl phosphate가 피리미딘 합성 경로로 흘러 orotic acid가 증가한다."
-  },
-  {
    "id": "usmle-2026-0007",
    "type": "usmle",
    "unit": "",
@@ -26890,26 +26670,6 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0007.md",
    "snippet": "A 62 year old man with a 40 pack year smoking history reports several months of proximal lower limb weakness and difficulty rising from a chair. He notes that grip strength briefly improves after sustained effort. He also has dry mouth and ",
    "text": "Neurology Lambert-Eaton Myasthenic Syndrome LEMS VGCC paraneoplastic small-cell-lung-cancer RNS USMLE-style / MedKOS (paraneoplastic neurology) A 62 year old man with a 40 pack year smoking history reports several months of proximal lower limb weakness and difficulty rising from a chair. He notes that grip strength briefly improves after sustained effort. He also has dry mouth and reduced knee reflexes that become detectable after brief exercise. Repetitive nerve stimulation shows a low baseline compound muscle action potential that increases by 100% at high frequency (or after exercise). Which of the following is the most likely pathophysiologic mechanism? A. Autoantibodies against postsynaptic nicotinic acetylcholine receptors B. Autoantibodies against presynaptic P/Q type voltage gated calcium channels C. Autoantibodies against muscle specific kinase (MuSK) D. Autoantibodies against voltage gated potassium channels E. Autoantibodies against the ganglioside GM1 노력으로 호전되는 근위부 근력저하 + 자율신경 증상(구강건조) + 고빈도 반복자극에서 진폭 증가(incremental) + 흡연력은 Lambert Eaton 근무력증후군이다. presynaptic P/Q형 전압의존성 칼슘통로에 대한 항체가 ACh 방출을 줄이며, 흔히 소세포폐암의 부종양 증후군이다."
-  },
-  {
-   "id": "usmle-2026-0006",
-   "type": "usmle",
-   "unit": "",
-   "topic": "Immunology",
-   "subtopic": "Chronic Granulomatous Disease",
-   "tags": [
-    "CGD",
-    "NADPH-oxidase",
-    "respiratory-burst",
-    "catalase-positive",
-    "DHR"
-   ],
-   "source": "USMLE-style / MedKOS (primary immunodeficiency)",
-   "confidence": "high",
-   "date": "2026-07-02",
-   "path": "content/usmle/usmle-2026-0006.md",
-   "snippet": "A 2 year old boy has had recurrent Staphylococcus aureus lymphadenitis, a Serratia marcescens skin abscess, and an Aspergillus pneumonia, plus a hepatic abscess. Neutrophil count is normal. A dihydrorhodamine (DHR) flow cytometry oxidative ",
-   "text": "Immunology Chronic Granulomatous Disease CGD NADPH-oxidase respiratory-burst catalase-positive DHR USMLE-style / MedKOS (primary immunodeficiency) A 2 year old boy has had recurrent Staphylococcus aureus lymphadenitis, a Serratia marcescens skin abscess, and an Aspergillus pneumonia, plus a hepatic abscess. Neutrophil count is normal. A dihydrorhodamine (DHR) flow cytometry oxidative burst assay shows markedly reduced fluorescence after stimulation. Which of the following underlying defects best explains this presentation? A. Defective NADPH oxidase (chronic granulomatous disease) B. Defective CD18/beta 2 integrin (leukocyte adhesion deficiency type 1) C. Defective Bruton tyrosine kinase (X linked agammaglobulinemia) D. WAS gene mutation (Wiskott Aldrich syndrome) E. IL 12 receptor deficiency 재발성 catalase 양성 세균(Staph, Serratia)·곰팡이(Aspergillus) 감염 + DHR/NBT 이상은 NADPH oxidase 결핍(만성 육아종병)이다. 호중구가 산소 폭발(respiratory burst)로 활성산소를 만들지 못해 catalase 양성 미생물을 죽이지 못한다."
   },
   {
    "id": "usmle-2026-0005",
