@@ -22,14 +22,20 @@ description: 파트(주제)별로 '꼭 봐야 하는' 고인용 랜드마크 논
    ```
 2. **랭킹 → 상위 카드 저장** (편수·하한선·연도는 인자로 조정)
    ```
-   python pipelines/scrape_landmark_papers.py --max 2 --min-citations 50
-   # 최근 것만: --since-year 2010    설계 편향 끄기: --no-evidence-filter
+   python pipelines/scrape_landmark_papers.py --target-ratio 0.5 --max-run 60
+   # 하한선/풀 조정: --min-citations 1000 --pool 400   최근 것만: --since-year 2010
+   # 설계 편향 끄기: --no-evidence-filter
    ```
    - 인용지표는 **NIH iCite**(무료, 키 불필요)에서 가져온다: 총 피인용수 + RCR(분야
      정규화 인용지표, 1.0=평균) + NIH 백분위. 인용수 우선, RCR로 tie-break.
-   - 중복은 `scrape_papers`와 **공유하는** `state/seen_papers.json`(PMID)로 자동 판별한다.
-     같은 논문이 '최신' 피드와 '랜드마크' 피드에 중복 저장되지 않는다.
+   - **`--target-ratio` 가 핵심이다.** '주당 몇 편'을 고정하면 매일 도는 최신 스크랩
+     (주제당 1편/일)에 밀려 논문 탭이 영영 최신 일색이 된다. 그래서 저장된 코퍼스의
+     현재 비율에서 **부족분을 역산**해 그만큼만 채운다(자기 균형). `--max-run` 은
+     한 실행 상한(폭주 방지).
+   - 중복은 저장된 `content/papers/**` frontmatter의 `pmid` 스캔으로 판별한다
+     (`state.paper_seen`). 상태 파일은 content 파생물이라 커밋하지 않는다.
    - id는 `state.next_id('paper')`로만 발급된다. 카드 파일명에 `_landmark_`가 붙는다.
+   - 저장은 주제 **라운드로빈** — 한 주제가 예산을 독식하지 않는다.
 3. **검증 + 색인**
    ```
    python pipelines/indexer.py --check   # 실패하면 멈추고 원인 보고
@@ -39,9 +45,20 @@ description: 파트(주제)별로 '꼭 봐야 하는' 고인용 랜드마크 논
    ```
    python pipelines/export_papers_web.py   # content/papers/**/*.md → docs/papers.js
    ```
-5. **커밋** — 새 `content/papers/**` + `state/seen_papers.json`(+ 필요시 `id_counter.json`,
-   `seen_topics.json`) + `docs/papers.js`를 **같은 커밋**에 포함해 push.
-   신규 paper 타입이므로 self-verify 한계를 고려해 **PR로** 올리는 것을 원칙으로 한다.
+5. **커밋** — 새 `content/papers/**` + `docs/papers.js`를 **같은 커밋**에 포함해 push.
+   상태 파일(`seen_papers.json` 등)은 content 파생물이라 커밋 대상이 아니다.
+
+## 실패가 조용히 숨지 않게 (2026-08 사고)
+
+주간 CI가 5주 연속 `success` 였는데 랜드마크는 **0편**이었다(2026-07-13~08-10). 원인은
+iCite 인용지표가 한 건도 안 붙었는데 값 없음을 `citations: 0` 으로 눌러써서, 장애가
+`인용 50회 이상 후보 없음` 이라는 **정상 메시지로 위장**된 것이다. 그래서:
+
+- 인용/RCR/백분위는 알려진 **필드 별칭**을 훑어 읽고, 못 읽으면 `None`(0 아님)로 둔다.
+- `coverage()` 가 지표 확보 편수를 세고, **전 주제에서 0이면 `exit 1`** — CI가 빨개진다.
+- '지표 장애'와 '하한 미달'을 로그에서 구분한다(하한 미달일 땐 최고 인용수도 찍는다).
+- 응답 형식이 또 바뀐 것 같으면 `--debug-icite` 로 원본 첫 행·키를 덤프해 확인한다.
+- 회귀 테스트: `python pipelines/test_landmark.py` (CI가 매 실행 앞단에서 돌린다).
 
 ## 카드는 무엇을 담나
 
@@ -61,7 +78,12 @@ Ideas)은 이후 `/gen-paper`로 사람·LLM이 검수해 채운다.
 - 매주는 `.github/workflows/landmark-papers.yml`(cron)이 위 2~5단계를 대신 돌린다.
   인용수는 매일 바뀌지 않으므로 최신 스크랩(매일)과 달리 **주간** 주기가 적절하다.
 
-## 최신 vs 랜드마크
+## 최신 vs 랜드마크 (논문 탭은 50:50을 지향한다)
 
 - 최신(`scrape-papers`): 최근 N일 새 논문, `sort=date`, `tags: [scraped, pubmed]`. 매일.
 - 랜드마크(이 스킬): 파트별 고인용, 인용 랭킹, `tags: [landmark, highly-cited, pubmed]`. 주간.
+- 목표 비중은 `--target-ratio 0.5` 로 강제한다. 홈페이지 논문 탭에서 ⭐ 배지·
+  '랜드마크만' 필터·인용순 정렬로 두 축을 갈라 볼 수 있다(`docs/papers-app.js`).
+- **공급은 유한하다**: 인용 1000회 이상 논문은 주제당 수십~수백 편뿐이라, 매일 늘어나는
+  최신 스크랩을 영원히 따라갈 수 없다. 부족분이 줄지 않으면 `--min-citations` 를
+  낮추거나(예: 1000→500) 최신 스크랩 편수를 줄여 균형을 맞춘다.
