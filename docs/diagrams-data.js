@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
- "generated": "2026-08-16",
+ "generated": "2026-08-17",
  "count": 55,
  "groups": 29,
  "items": [
@@ -567,28 +567,6 @@ window.MEDKOS_DIAGRAMS = {
    "bytes": 8075
   },
   {
-   "file": "diag-pelvic-diaphragm-quiz.svg",
-   "base": "diag-pelvic-diaphragm",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": null,
-   "title": "골반가로막 spotter 퀴즈판",
-   "date": "2026-08-12",
-   "bytes": 8201
-  },
-  {
-   "file": "diag-internal-iliac-quiz.svg",
-   "base": "diag-internal-iliac",
-   "variant": "quiz",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": null,
-   "title": "속엉덩동맥 분지 spotter 퀴즈판",
-   "date": "2026-08-12",
-   "bytes": 10683
-  },
-  {
    "file": "diag-pelvic-diaphragm-labeled.svg",
    "base": "diag-pelvic-diaphragm",
    "variant": "labeled",
@@ -600,6 +578,17 @@ window.MEDKOS_DIAGRAMS = {
    "bytes": 10221
   },
   {
+   "file": "diag-pelvic-diaphragm-quiz.svg",
+   "base": "diag-pelvic-diaphragm",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 14,
+   "title": "골반가로막 spotter 퀴즈판",
+   "date": "2026-08-12",
+   "bytes": 8201
+  },
+  {
    "file": "diag-internal-iliac-labeled.svg",
    "base": "diag-internal-iliac",
    "variant": "labeled",
@@ -609,6 +598,17 @@ window.MEDKOS_DIAGRAMS = {
    "title": "속엉덩동맥 분지",
    "date": "2026-08-12",
    "bytes": 14315
+  },
+  {
+   "file": "diag-internal-iliac-quiz.svg",
+   "base": "diag-internal-iliac",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 14,
+   "title": "속엉덩동맥 분지 spotter 퀴즈판",
+   "date": "2026-08-12",
+   "bytes": 10683
   }
  ]
 };

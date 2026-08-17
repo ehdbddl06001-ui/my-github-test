@@ -203,6 +203,15 @@ REGION_KEYWORDS: dict[str, int] = {
     # 7회차 — 목의 뿌리·인두 / 종아리 가쪽·발목 안쪽면·발바닥
     "목의 뿌리": 7, "인두": 7, "종아리 가쪽": 7,
     "발목 안쪽면": 7, "굽힘근지지띠": 7, "발바닥": 7,
+    # 카드의 `subregion` 슬러그(영문)도 같은 사전으로 본다 — 부위 기준 배정의
+    # 입력이 한글 실습주제일 때도, 영문 슬러그일 때도 결정론이 하나로 유지된다.
+    "superficial-back": 2, "deep-back": 2, "gluteal": 2, "posterior-thigh": 2,
+    "suboccipital": 3, "scapular-region": 3, "popliteal-fossa": 3, "posterior-leg": 3,
+    "pectoral": 4, "thoracic-wall": 4, "face": 4, "parotid": 4, "infratemporal": 4,
+    "anterior-neck": 6, "femoral-triangle": 6,
+    "anal-canal": 12, "perineum": 12,
+    "pelvic-cavity": 14, "pelvic-diaphragm": 14, "urinary-bladder": 14,
+    "male-internal-genitalia": 14, "female-internal-genitalia": 14,
     # 9~15회차
     "겨드랑": 9, "허파": 9, "기관지": 9, "뒤세로칸": 9,
     "위팔 앞칸": 10, "팔오금": 10, "아래팔 앞칸": 10, "손바닥": 10,

@@ -44,6 +44,17 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0108.md", quiz_image: ".private/anatomy/render/uploads-s04/P015_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P015_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0109.md", quiz_image: ".private/anatomy/render/uploads-s04/P016_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P016_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0110.md", quiz_image: ".private/anatomy/render/uploads-s04/P022_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P022_clean.png"}
+mnemonics:
+  - {key: "관광볼턱목", full: "관자 · 광대 · 볼 · 턱모서리 · 목", note: "얼굴신경 5분지 — 위에서 아래 순서"}
+  - {key: "VII은 움직이고 V는 느낀다", full: "표정근육=VII(둘째 인두굽이) / 얼굴 피부감각=V", note: "씹기근육만 예외적으로 V3가 '움직인다'"}
+  - {key: "귀밑샘 신–정–동", full: "얼굴신경 → 아래턱뒤정맥 → 바깥목동맥", note: "얕은 것부터. 다리오금과 같은 순서"}
+  - {key: "갈비사이 VAN", full: "위에서 정맥 → 동맥 → 신경", note: "신경이 가장 아래 → 천자는 갈비뼈 위모서리"}
+  - {key: "세 구멍은 수직선", full: "눈확위(V1) · 눈확아래(V2) · 턱끝(V3)", note: "각 구멍마다 같은 이름 동맥이 동반"}
+  - {key: "안쪽은 뚫고 둘 다", full: "안쪽가슴근신경=작은가슴근 관통·둘 다 지배 / 가쪽=넘어가 큰가슴근만", note: "안쪽·가쪽은 팔신경얼기 다발 이름"}
+  - {key: "CAPD", full: "가슴봉우리동맥 4가지 — 가슴근 · 봉우리 · 빗장 · 어깨세모", note: "겨드랑동맥 2부에서"}
+  - {key: "가로얼굴은 얕은관자 것", full: "가로얼굴동맥 = 얕은관자동맥 가지", note: "얼굴동맥 가지가 아니다 — 태깅 단골 함정"}
+  - {key: "가쪽날개근만 연다", full: "깨물·관자·안쪽날개=닫기 / 가쪽날개=열기", note: "씹기근육 4개 전부 V3"}
+  - {key: "이마가 남으면 중추", full: "중추성 마비=이마 주름 남음 / 말초성=이마까지 마비", note: "이마힘살은 양쪽 겉질 지배"}
 tags: [서브노트, 4회차, 얼굴, 표정근육, 귀밑샘, 얼굴신경, 삼차신경, 씹기근육, 큰가슴근, 가슴벽, 표, 예습시험, 태깅]
 ---
 

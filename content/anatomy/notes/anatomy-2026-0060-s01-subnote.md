@@ -33,6 +33,13 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0055.md", quiz_image: ".private/anatomy/render/uploads-t3/pf1_p46_quiz.png", clean_image: ".private/anatomy/render/uploads-t3/pf1_p46_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0056.md", quiz_image: ".private/anatomy/render/uploads-t3/pf1_p47_quiz.png", clean_image: ".private/anatomy/render/uploads-t3/pf1_p47_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0057.md", quiz_image: ".private/anatomy/render/uploads-t3/pf1_p48_quiz.png", clean_image: ".private/anatomy/render/uploads-t3/pf1_p48_clean.png"}
+mnemonics:
+  - {key: "얕은근막의 짝", full: "큰두렁정맥+두렁신경 / 작은두렁정맥+장딴지신경", note: "하나를 찾으면 다른 하나가 따라온다"}
+  - {key: "복사 앞뒤", full: "큰두렁=안쪽복사 **앞** / 작은두렁=가쪽복사 **뒤**", note: "피부벗기기에서 첫 갈림길"}
+  - {key: "얼기는 앞가지만", full: "뒤가지 계열은 얼기를 만들지 않는다", note: "뒤가지는 분절 배열이 그대로 남는다"}
+  - {key: "볼기 3형제 중 하나만 앞가지", full: "위·중간=뒤가지 / **아래볼기피부신경만 앞가지**", note: "아래는 뒤넙다리피부신경 가지"}
+  - {key: "관통정맥은 깊은 쪽으로만", full: "판막이 얕은→깊은 한 방향", note: "망가지면 역류 → 하지정맥류"}
+  - {key: "장딴지신경은 공여신경", full: "정강(안쪽장딴지피부) + 온종아리(교통가지)", note: "순수 감각이라 떼어 써도 된다"}
 tags: [서브노트, 1회차, 표, 피부신경, 예습시험, 태깅]
 ---
 

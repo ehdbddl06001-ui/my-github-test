@@ -38,6 +38,14 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0087.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p10_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0088.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p13_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0089.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p24_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p24_clean.png"}
+mnemonics:
+  - {key: "등세모근만 뇌신경", full: "등세모근·목빗근 = 더부신경 XI", note: "얕은층인데 예외 — 태깅 단골"}
+  - {key: "이주근육 넷", full: "등세모 · 넓은등 · 마름 · 어깨올림", note: "고유등근육만 **뒤가지** 지배"}
+  - {key: "크기와 이름이 반대", full: "큰볼기근=**아래**볼기신경 / 중간·작은=**위**볼기신경", note: "이름만 보고 크기로 짐작하면 틀린다"}
+  - {key: "위구멍은 하나뿐", full: "위구멍=위볼기신경·동맥 / 아래구멍=궁둥·아래볼기·음부·뒤넙다리피부", note: "궁둥구멍근이 가른다"}
+  - {key: "햄스트링의 예외", full: "두갈래근 **짧은갈래**만 온종아리부분 지배", note: "나머지는 정강부분"}
+  - {key: "Trendelenburg", full: "위볼기신경 마비 → 반대쪽 골반이 처진다", note: "중간·작은볼기근이 못 버틴다"}
+  - {key: "날개어깨뼈", full: "긴가슴신경(C5–7) 마비 → 앞톱니근", note: "벽 밀기에서 어깨뼈가 뜬다"}
 tags: [서브노트, 2회차, 표, 예습시험, 태깅]
 ---
 

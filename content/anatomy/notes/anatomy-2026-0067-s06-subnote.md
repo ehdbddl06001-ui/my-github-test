@@ -43,6 +43,14 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0075.md", quiz_image: ".private/anatomy/render/uploads-s06/C029_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/C029_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0076.md", quiz_image: ".private/anatomy/render/uploads-s06/C036_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/C036_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0066.md", quiz_image: ".private/anatomy/render/uploads-s06/D022_quiz.png", clean_image: ".private/anatomy/render/uploads-s06/D022_clean.png"}
+mnemonics:
+  - {key: "앞목삼각 넷", full: "턱끝밑 · 턱밑 · 목동맥 · 근육삼각", note: "가르는 근육은 두힘살근·어깨목뿔근 **둘뿐**"}
+  - {key: "두힘살근 두 신경", full: "앞힘살=삼차신경(V3) / 뒤힘살=얼굴신경(VII)", note: "첫째·둘째 인두굽이 유래가 다르다"}
+  - {key: "목혈관신경집", full: "동맥 **안쪽** · 정맥 **가쪽** · 미주신경은 둘 사이 **뒤**", note: "중심정맥삽입의 해부"}
+  - {key: "NAVEL", full: "가쪽부터 신경–동맥–정맥–빈공간–림프", note: "넙다리삼각 — 정맥이 동맥 **안쪽**"}
+  - {key: "신경점(Erb)", full: "목빗근 **뒤모서리 중간**에서 피부가지 4개", note: "작은뒤통수·큰귓바퀴·가로목·빗장위"}
+  - {key: "C4에서 갈린다", full: "온목동맥 → 방패연골 위모서리에서 속·바깥으로", note: "갈리기 전엔 가지가 없다"}
+  - {key: "운동이면 VII, 감각이면 목신경얼기", full: "넓은목근=얼굴신경 목가지 / 가로목신경=감각", note: "같은 자리를 지나 헷갈린다"}
 tags: [서브노트, 6회차, 목삼각, 넙다리삼각, 표, 예습시험, 태깅]
 ---
 

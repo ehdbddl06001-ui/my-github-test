@@ -558,6 +558,145 @@ def _render_lines(b: Sub, lines: list[str]):
     flush_table()
 
 
+CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
+HL_RE = re.compile(r"==([^=]+)==")
+LEAD_RE = re.compile(r"^(>\s*\[![^\]]+\]\s*|- |=> |  - )")
+
+
+def _num(i: int) -> str:
+    """1-base 번호를 ①…⑳, 그 뒤는 (21) 형태로."""
+    # ㉑ 이후는 'korea' 폰트에 글리프가 없어 빈칸으로 찍힌다(실측) → (21) 로 폴백
+    return CIRCLED[i - 1] if 1 <= i <= len(CIRCLED) else f"({i})"
+
+
+def cloze_items(body: str) -> list[tuple[str, str, list[str]]]:
+    """본문의 `==하이라이트==` 를 그대로 빈칸 문항으로 바꾼다(결정론).
+
+    LLM이 빈칸을 새로 지어내면 카드와 어긋난다 — **이미 카드에서 '외울 것'으로
+    표시한 하이라이트만** 뽑는다. 표가 하이라이트의 대부분을 차지하므로(실측 s01은
+    27개 중 24개가 표 안) 표 행도 '첫 칸 — 나머지' 형태의 한 문장으로 만든다.
+
+    반환: [(섹션 제목, 빈칸이 들어간 문장, [정답 …]), …]
+    """
+    out: list[tuple[str, str, list[str]]] = []
+    sec = ""
+    for ln in body.splitlines():
+        s = ln.rstrip()
+        if s.startswith("## "):
+            sec = s[3:].split("|")[0].strip()
+            continue
+        if "==" not in s:
+            continue
+        if s.lstrip().startswith("|"):
+            cells = [c.strip() for c in s.strip().strip("|").split("|")]
+            if all(set(c) <= set("-: ") for c in cells):
+                continue
+            head, rest = cells[0], [c for c in cells[1:] if c]
+            text = (f"**{head}** — " if head else "") + " · ".join(rest)
+        else:
+            text = LEAD_RE.sub("", s.strip()).replace(" :: ", " — ").strip()
+        answers = HL_RE.findall(text)
+        if not answers:
+            continue
+        out.append((sec, text, answers))
+    return out
+
+
+def _blank_text(text: str, start: int) -> str:
+    """`==답==` 을 `( ⑦ )` 로 바꾼다. start 는 이 문장의 첫 번호."""
+    n = [start]
+
+    def rep(_m):
+        s = f"**( {_num(n[0])} )**"
+        n[0] += 1
+        return s
+    return HL_RE.sub(rep, text)
+
+
+def self_check_items(body: str) -> list[str]:
+    """`### 소제목` 과 콜아웃 라벨을 '말로 설명해 보기' 목록으로 (결정론)."""
+    out = []
+    for ln in body.splitlines():
+        s = ln.strip()
+        if s.startswith("### "):
+            out.append(re.sub(r"^\d+\)\s*", "", s[4:]).strip())
+        elif s.startswith("> [!"):
+            m = re.match(r">\s*\[!(?P<k>[^\]]+)\]\s*(?P<rest>.*)$", s)
+            if m:
+                label = m.group("rest").split("::")[0].strip()
+                if label and len(label) <= 40:
+                    out.append(f"[{m.group('k').strip()}] {label}")
+    seen, uniq = set(), []
+    for x in out:
+        if x and x not in seen:
+            seen.add(x); uniq.append(x)
+    return uniq
+
+
+def render_memory(b: Sub, meta: dict, body: str):
+    """암기 3종 세트 — ① 두문자 압축 ② 빈칸 채우기 ③ 30초 자가 점검.
+
+    본문을 다 읽은 뒤 '덮고 떠올리는' 단계를 PDF 안에서 끝내려는 페이지들이다.
+    ②·③은 본문에서 **자동 파생**되므로 카드를 고치면 같이 따라온다.
+    """
+    mn = meta.get("mnemonics") or []
+    items = cloze_items(body)
+    checks = self_check_items(body)
+    if not (mn or items or checks):
+        return
+
+    def start(kr, en):
+        # split 모드에서는 section_bar 가 스스로 새 페이지를 연다 — 여기서 new_page 를
+        # 또 부르면 내용 없는 '(이어서)' 페이지가 한 장씩 낀다(2026-08-17 실측).
+        if not b.split:
+            b.new_page()
+        b.cur_fig = None
+        b.section_bar(kr, en)
+
+    if mn:
+        start("암기 압축 — 두문자·대조", "mnemonics")
+        rows = [["두문자 / 대조", "풀이", "쓰이는 곳"]]
+        for m in mn:
+            rows.append([str(m.get("key", "")), str(m.get("full", "")),
+                         str(m.get("note", ""))])
+        b.table(rows)
+        b.callout("암기", "쓰는 법",
+                  "왼쪽 칸만 보고 오른쪽 두 칸을 소리 내어 복원한다. "
+                  "막히는 줄에 표시해 두고 다음 날 그 줄부터 시작한다.")
+
+    if items:
+        start("빈칸 채우기 — 본문 하이라이트", "cloze recall")
+        b.rich("본문에서 ==형광==으로 표시한 것만 빈칸으로 바꾼 것이다. "
+               "정답은 이 절 끝에 번호순으로 있다.", size=9.0, color=MUTED)
+        b.y += 4
+        n, answers, cur_sec = 1, [], None
+        for sec, text, ans in items:
+            if sec != cur_sec:
+                b.subsection(sec)
+                cur_sec = sec
+            b.bullet(_blank_text(text, n))
+            for a in ans:
+                answers.append(f"{_num(n)} {a}")
+                n += 1
+        b.y += 6
+        b.subsection("빈칸 정답")
+        # 세 개씩 묶어 한 줄로 — 정답만 보려고 페이지를 넘기지 않게
+        for i in range(0, len(answers), 3):
+            b.rich("   ".join(answers[i:i + 3]), size=8.8, color=INK)
+
+    if checks:
+        start("30초 자가 점검 — 덮고 말하기", "active recall")
+        b.rich("각 줄을 보고 **30초 안에 소리 내어** 설명한다. 막히면 그 절만 다시 읽는다.",
+               size=9.0, color=MUTED)
+        b.y += 4
+        for i, c in enumerate(checks, 1):
+            b.bullet(f"□  {c}")
+        b.y += 6
+        b.callout("TIP", "3-2-1 복습",
+                  "수업 당일 밤 · 3일 뒤 · 7일 뒤 이 페이지만 다시 돈다. "
+                  "본문을 다시 읽는 것보다 이 목록을 말로 푸는 쪽이 태깅 점수에 직결된다.")
+
+
 def _load_card(path: Path) -> dict:
     raw = path.read_text(encoding="utf-8")
     if not raw.startswith("---"):
@@ -669,6 +808,7 @@ def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
     if not b.split:
         b.new_page(plain=True)
     render_body(b, body)
+    render_memory(b, meta, body)
     render_scans(b, meta.get("scan_questions") or [], root,
                  meta.get("answers_per_page", 3), meta.get("quiz_per_page", 2))
     b.footer_all()
@@ -687,10 +827,12 @@ def selftest() -> int:
         root = Path(td)
         (root / ".private/anatomy/pdf").mkdir(parents=True)
         card = root / "c.md"
-        card.write_text("---\nsubtopic: 테스트\npdf_subtitle: sub\n---\n"
+        card.write_text("---\nsubtopic: 테스트\npdf_subtitle: sub\n"
+                        "mnemonics:\n  - {key: 관광볼턱목, full: 관자·광대·볼·턱모서리·목,"
+                        " note: 얼굴신경 5분지}\n---\n"
                         "## 1. 제목 | English\n### 1) 소제목\n"
                         "- 불릿 **강조** ==형광== `english`\n"
-                        "| 근육 | 신경 |\n|---|---|\n| 등세모근 | 더부신경 |\n"
+                        "| 근육 | 신경 |\n|---|---|\n| 등세모근 | ==더부신경== |\n"
                         "> [!기출] 라벨 :: 본문 내용\n=> A → B → C\n", encoding="utf-8")
         out = build(card, ".private/anatomy/pdf/t.pdf", root=root)
         assert out.exists() and out.stat().st_size > 900
@@ -698,6 +840,12 @@ def selftest() -> int:
         txt = "".join(p.get_text() for p in d)
         for must in ("제목", "등세모근", "더부신경", "기출", "A → B → C"):
             assert must in txt, f"누락: {must}"
+        # 암기 3종: 두문자 표 · 빈칸(①) · 자가 점검 체크박스
+        for must in ("관광볼턱목", "빈칸 채우기", "①", "30초 자가 점검", "□"):
+            assert must in txt, f"암기 페이지 누락: {must}"
+        # 빈칸 페이지에는 정답이 형광 그대로 노출되면 안 된다 — 정답은 목록에만
+        cloze_page = [p.get_text() for p in d if "빈칸 채우기" in p.get_text()][0]
+        assert "( ① )" in cloze_page.replace("\n", ""), "빈칸 표시 실패"
         assert out.stat().st_size < 400_000, f"폰트 서브셋 실패? {out.stat().st_size}"
         d.close()
     print("[ OK ] anatomy_subnote selftest")

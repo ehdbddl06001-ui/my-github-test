@@ -34,6 +34,11 @@
     날짜가 지금과 다르다 — 그 자료가 다루는 부위를 2026 실습주제에 맞춘다. 결정론은
     `anatomy_schedule.session_for_region()`(회귀: `test_region_not_professor_decides_session`).
   · 루틴 종료일 **2026-10-19**(Tagging 2). 이후 anatomy 생성·커밋 금지(completed no-op).
+  · 모든 문항은 `scheduled_dates` 를 반드시 갖는다 — 없으면 회차 필터·일일 큐에서 영영
+    안 뽑힌다. 빠진 게 생기면 `pipelines/backfill_sessions.py`(부위 기준)로 채운다.
+  · 서브노트(`kind: study_guide`)는 `mnemonics:`(두문자·대조, 5줄 이상)를 갖는다.
+    빈칸 채우기·자가 점검 페이지는 본문의 `==하이라이트==`·`### 소제목`에서 **자동 파생**
+    되므로, 외울 것은 반드시 `==...==` 로 표시한다(회귀: `test_subnotes_carry_memory_aids`).
   · 오픈 데이터 목록·주차 선정 같은 **결정론**은 `pipelines/datasets.py`가 맡는다(카드는 해석).
 
 ## 커밋 전 필수 순서

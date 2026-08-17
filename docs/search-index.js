@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-16",
+ "generated": "2026-08-17",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {

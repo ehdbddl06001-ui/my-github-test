@@ -41,6 +41,13 @@ scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0095.md", quiz_image: ".private/anatomy/render/uploads-t2/q5183_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t2/q5183_p13_clean.png"}
 source_refs:
   - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf", page: null, section: "뒤통수밑삼각·어깨뼈부위·다리오금 실습영상"}
+mnemonics:
+  - {key: "오금 신–정–동", full: "얕은 것부터 정강신경 → 오금정맥 → 오금동맥", note: "동맥이 가장 깊어 맥박이 안 잡힌다"}
+  - {key: "어깨뼈패임", full: "동맥은 인대 **위**, 신경은 인대 **아래**", note: "같은 이름인데 층이 갈린다"}
+  - {key: "네모공간", full: "겨드랑신경 + 뒤위팔휘돌이동맥", note: "외과목 골절에서 함께 다친다"}
+  - {key: "SITS", full: "가시위 · 가시아래 · 작은원 · 어깨밑근", note: "돌림근띠 4형제"}
+  - {key: "뒤통수밑삼각 세 근육", full: "큰뒤머리곧은근 · 위머리빗근 · 아래머리빗근", note: "바닥에 **척추동맥**과 C1 뒤가지"}
+  - {key: "종아리뼈목 = 발처짐", full: "온종아리신경이 뼈를 감아 도는 자리", note: "가장 흔한 말초신경 손상부위"}
 tags: [서브노트, 3회차, 표, 실사합본, 예습시험, 태깅]
 ---
 

@@ -15,6 +15,7 @@ test_anatomy.py — 해부학 파이프라인 회귀 테스트(pytest 없이 ass
 from __future__ import annotations
 
 import json
+import re
 import sys
 import tempfile
 from datetime import date
@@ -350,6 +351,51 @@ def test_diagram_manifest_covers_every_svg() -> None:
     for p in (root / "docs" / "assets" / "anatomy").glob("tree-*.svg"):
         key = p.stem.rsplit("-", 1)[0][len("tree-"):]
         assert key in SPECS, f"스펙 없는 유령 도해: {p.name}"
+
+
+def test_every_question_has_a_session() -> None:
+    """모든 문항에 `scheduled_dates` 가 있어야 회차 필터·일일 큐에 잡힌다(2026-08-17).
+
+    초기 문항 39건이 이 값 없이 만들어져 웹 '오늘의 문항'에서 영영 안 뽑혔다.
+    backfill_sessions.py 가 **부위 기준**으로 채웠고, 다시 새는 것을 여기서 막는다.
+    """
+    root = Path(__file__).resolve().parents[1]
+    bad = []
+    for p in (root / "content/anatomy/questions").rglob("*.md"):
+        if not re.search(r"^scheduled_dates:", p.read_text(encoding="utf-8"), re.M):
+            bad.append(p.name)
+    assert not bad, f"scheduled_dates 없는 문항: {bad[:8]} (총 {len(bad)}건)"
+
+
+def test_backfill_uses_region_not_professor() -> None:
+    """회차 백필도 교수명·과거 학기 날짜가 아니라 부위로 정한다."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "backfill_sessions.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"backfill_sessions selftest 실패: {r.stdout}{r.stderr}"
+
+
+def test_subnotes_carry_memory_aids() -> None:
+    """서브노트마다 암기 3종(두문자·빈칸·자가점검)의 재료가 있어야 한다(2026-08-17).
+
+    빈칸·자가점검은 본문에서 자동 파생되므로 `==하이라이트==` 와 `### 소제목` 이,
+    두문자 표는 `mnemonics:` 가 재료다. 하나라도 비면 그 회차만 암기 페이지가 사라진다.
+    """
+    sys.path.insert(0, str(Path(__file__).parent))
+    import yaml
+    from anatomy_subnote import cloze_items, self_check_items
+    root = Path(__file__).resolve().parents[1]
+    notes = sorted((root / "content/anatomy/notes").glob("*-subnote.md"))
+    assert notes, "서브노트가 없다"
+    for p in notes:
+        raw = p.read_text(encoding="utf-8")
+        _, fm, body = raw.split("---", 2)
+        meta = yaml.safe_load(fm) or {}
+        mn = meta.get("mnemonics") or []
+        assert len(mn) >= 5, f"{p.name}: 두문자 {len(mn)}줄 (5줄 이상 필요)"
+        assert all(m.get("key") and m.get("full") for m in mn), f"{p.name}: 빈 두문자 줄"
+        assert len(cloze_items(body)) >= 10, f"{p.name}: 빈칸 재료(==하이라이트==) 부족"
+        assert len(self_check_items(body)) >= 5, f"{p.name}: 자가점검 재료 부족"
 
 
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
