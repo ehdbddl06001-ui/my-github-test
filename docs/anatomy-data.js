@@ -9,6 +9,7 @@ window.MEDKOS_ANATOMY = {
  },
  "schedule": [
   {
+   "no": 1,
    "date": "2026-08-18",
    "topics": [
     "orientation",
@@ -19,9 +20,26 @@ window.MEDKOS_ANATOMY = {
     "back",
     "lower-limb"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Back — Superficial layer",
+     "0:00~11:08"
+    ],
+    [
+     "Lower limb — Superficial layer",
+     "02:44~03:39 / 12:02~13:34"
+    ]
+   ],
+   "tasks": [
+    "허리천자 방법·원칙",
+    "꼬리마취 목적·방법",
+    "척수신경 앞가지·뒤가지 차이"
+   ]
   },
   {
+   "no": 2,
    "date": "2026-08-20",
    "topics": [
     "등 얕은층·중간층·깊은층 근육",
@@ -31,9 +49,34 @@ window.MEDKOS_ANATOMY = {
     "back",
     "lower-limb"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Back — Superficial layer",
+     "07:06~11:08"
+    ],
+    [
+     "Back — Muscles of back",
+     "00:00~23:53"
+    ],
+    [
+     "Lower limb — Superficial layer",
+     "02:41~03:40 / 12:00~13:00"
+    ],
+    [
+     "Lower limb — Gluteal region & posterior thigh",
+     "00:00~18:00"
+    ]
+   ],
+   "tasks": [
+    "청진삼각·허리삼각 경계와 임상",
+    "중간·작은볼기근과 직립보행",
+    "볼기주사 회피 부위"
+   ]
   },
   {
+   "no": 3,
    "date": "2026-08-24",
    "topics": [
     "뒤통수밑삼각",
@@ -44,9 +87,38 @@ window.MEDKOS_ANATOMY = {
     "back",
     "lower-limb"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Back — Superficial layer",
+     "10:25~10:40"
+    ],
+    [
+     "Back — Muscles of back",
+     "23:40~28:55"
+    ],
+    [
+     "Upper limb — Scapular region",
+     "00:00~18:08"
+    ],
+    [
+     "Lower limb — Gluteal region & posterior thigh",
+     "17:35~23:05"
+    ],
+    [
+     "Lower limb — Leg",
+     "0:00~13:20"
+    ]
+   ],
+   "tasks": [
+    "어깨관절 근육 작용 시연",
+    "겨드랑신경 손상 상황·결과",
+    "어깨 동맥그물 임상"
+   ]
   },
   {
+   "no": 4,
    "date": "2026-08-27",
    "topics": [
     "큰가슴근부위",
@@ -57,9 +129,31 @@ window.MEDKOS_ANATOMY = {
     "thorax",
     "head"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Head — Superficial layer of face",
+     "0:00~46:38"
+    ],
+    [
+     "Upper limb — Pectoral region",
+     "0:00~13:55"
+    ],
+    [
+     "Thorax — Thoracic wall",
+     "00:00~06:58"
+    ]
+   ],
+   "tasks": [
+    "삼차신경 가지·분포",
+    "귀밑샘-얼굴신경 관계",
+    "젖꼭지 표지점",
+    "가슴천자"
+   ]
   },
   {
+   "no": 5,
    "date": "2026-08-31",
    "topics": [
     "가슴벽·가슴안·가슴막·위세로칸·심장막·심장",
@@ -69,9 +163,38 @@ window.MEDKOS_ANATOMY = {
     "thorax",
     "head"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Head — Superficial layer of face",
+     "38:00~46:35"
+    ],
+    [
+     "Head — Deep layer of face",
+     "00:00~28:14"
+    ],
+    [
+     "Thorax — Thoracic cavity and pleura",
+     "00:00~12:48"
+    ],
+    [
+     "Thorax — Superior mediastinum",
+     "00:00~13:58"
+    ],
+    [
+     "Thorax — Pericardium and heart",
+     "00:00~41:29"
+    ]
+   ],
+   "tasks": [
+    "아래이틀신경차단",
+    "심장음 청진위치 vs 제자리 심장",
+    "심장동맥 분포"
+   ]
   },
   {
+   "no": 6,
    "date": "2026-09-03",
    "topics": [
     "목의 삼각·목의 내장",
@@ -81,9 +204,42 @@ window.MEDKOS_ANATOMY = {
     "neck",
     "lower-limb"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Neck — Triangle of neck (superficial)",
+     "00:00~19:59"
+    ],
+    [
+     "Neck — Triangle of neck (deep)",
+     "00:00~26:45"
+    ],
+    [
+     "Lower limb — Superficial layer",
+     "00:00~13:34"
+    ],
+    [
+     "Lower limb — Anterior & medial thigh",
+     "00:00~31:31"
+    ],
+    [
+     "Lower limb — Leg",
+     "13:20~29:38"
+    ],
+    [
+     "Lower limb — Foot",
+     "0:00~5:42"
+    ]
+   ],
+   "tasks": [
+    "목삼각 그림",
+    "온목동맥 박동 촉진",
+    "넙다리동맥 채혈·더듬자 삽입 이유"
+   ]
   },
   {
+   "no": 7,
    "date": "2026-09-07",
    "topics": [
     "목의 뿌리·인두",
@@ -93,17 +249,51 @@ window.MEDKOS_ANATOMY = {
     "neck",
     "lower-limb"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Neck — Internal organ of neck",
+     "00:00~06:48"
+    ],
+    [
+     "Neck — Root of neck",
+     "0:00~17:08"
+    ],
+    [
+     "Neck — Pharynx",
+     "0:00~07:37"
+    ],
+    [
+     "Lower limb — Leg",
+     "21:28~29:38"
+    ],
+    [
+     "Lower limb — Foot",
+     "05:43~17:17"
+    ]
+   ],
+   "tasks": [
+    "기관절개 시연",
+    "위가슴문 통과 구조물",
+    "온종아리신경 손상",
+    "발바닥활 보강 구조"
+   ]
   },
   {
+   "no": 8,
    "date": "2026-09-10",
    "topics": [
     "Tagging 1"
    ],
    "regions": [],
-   "exam": "tagging-1"
+   "exam": "tagging-1",
+   "professor": "김홍태·문용석",
+   "eanatomy": [],
+   "tasks": []
   },
   {
+   "no": 9,
    "date": "2026-09-14",
    "topics": [
     "피드백",
@@ -114,9 +304,34 @@ window.MEDKOS_ANATOMY = {
     "upper-limb",
     "thorax"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Thorax — Trachea, Bronchus, Lung",
+     "00:00~11:14"
+    ],
+    [
+     "Thorax — Posterior mediastinum",
+     "00:00~14:36"
+    ],
+    [
+     "Upper limb — Superficial fascia",
+     "00:00~06:49"
+    ],
+    [
+     "Upper limb — Axilla",
+     "00:00~30:33"
+    ]
+   ],
+   "tasks": [
+    "주기관지 구조 차이와 이물질",
+    "기관지허파구역",
+    "팔신경얼기 부위별 손상"
+   ]
   },
   {
+   "no": 10,
    "date": "2026-09-17",
    "topics": [
     "위팔 앞칸·팔오금·아래팔 앞칸·손바닥",
@@ -126,9 +341,33 @@ window.MEDKOS_ANATOMY = {
     "upper-limb",
     "abdomen"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Upper limb — Arm",
+     "0:00~15:20"
+    ],
+    [
+     "Upper limb — Forearm",
+     "0:00~35:20"
+    ],
+    [
+     "Upper limb — Hand",
+     "1:30~26:20"
+    ],
+    [
+     "Abdomen — Abdominal wall",
+     "00:00~44:47"
+    ]
+   ],
+   "tasks": [
+    "노동맥 채혈·더듬자 이유",
+    "고샅탈장 구조적 이유"
+   ]
   },
   {
+   "no": 11,
    "date": "2026-09-21",
    "topics": [
     "위팔 뒤칸·아래팔 뒤칸·손등",
@@ -138,9 +377,34 @@ window.MEDKOS_ANATOMY = {
     "upper-limb",
     "abdomen"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Upper limb — Arm",
+     "15:19~21:18"
+    ],
+    [
+     "Upper limb — Forearm",
+     "23:01~41:51"
+    ],
+    [
+     "Upper limb — Hand",
+     "0:00~01:17"
+    ],
+    [
+     "Abdomen — Abdominal cavity",
+     "0:00~59:00"
+    ]
+   ],
+   "tasks": [
+    "노신경 손상 증상",
+    "막창자꼬리 위치변이",
+    "간문맥-대정맥연결"
+   ]
   },
   {
+   "no": 12,
    "date": "2026-09-28",
    "topics": [
     "척주·척수막",
@@ -150,9 +414,25 @@ window.MEDKOS_ANATOMY = {
     "back",
     "pelvis-perineum"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Back — Spinal cord and meninges",
+     "00:00~11:54"
+    ],
+    [
+     "Perineum & Pelvis — Perineum",
+     "00:00~31:22"
+    ]
+   ],
+   "tasks": [
+    "척주관·척수 길이차와 허리천자",
+    "골반바닥손상·episiotomy"
+   ]
   },
   {
+   "no": 13,
    "date": "2026-10-01",
    "topics": [
     "머리덮개·머리뼈 속구조·뇌 적출·눈확",
@@ -162,9 +442,35 @@ window.MEDKOS_ANATOMY = {
     "head",
     "abdomen"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Head — Scalp and cranium",
+     "0:00~28:45"
+    ],
+    [
+     "Head — Orbit",
+     "00:00~36:11"
+    ],
+    [
+     "Abdomen — Abdominal cavity",
+     "59:14~1:16:47"
+    ],
+    [
+     "Abdomen — Diaphragm & posterior wall",
+     "00:00~11:06"
+    ]
+   ],
+   "tasks": [
+    "섬모체신경절 부교감 작용",
+    "위 내시경 비교",
+    "ERCP 쓸개이자관",
+    "팽대부 종양 황달"
+   ]
   },
   {
+   "no": 14,
    "date": "2026-10-06",
    "topics": [
     "팔의 관절",
@@ -174,9 +480,26 @@ window.MEDKOS_ANATOMY = {
     "upper-limb",
     "pelvis-perineum"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "문용석",
+   "eanatomy": [
+    [
+     "Upper limb — Joints of upper limb",
+     "0:00~12:50"
+    ],
+    [
+     "Perineum & Pelvis — Pelvis",
+     "0:00~38:37"
+    ]
+   ],
+   "tasks": [
+    "어깨관절 안정화 구조",
+    "골반장기-복막 관계",
+    "배뇨·배변 기전"
+   ]
   },
   {
+   "no": 15,
    "date": "2026-10-08",
    "topics": [
     "머리 시상절단·입안·후두",
@@ -188,15 +511,51 @@ window.MEDKOS_ANATOMY = {
     "neck",
     "lower-limb"
    ],
-   "exam": null
+   "exam": null,
+   "professor": "김홍태",
+   "eanatomy": [
+    [
+     "Head — Sagittal section of head",
+     "00:00~12:14"
+    ],
+    [
+     "Head — Oral cavity and tongue",
+     "00:00~11:08"
+    ],
+    [
+     "Head — Middle ear",
+     "00:00~06:19"
+    ],
+    [
+     "Neck — Pharynx",
+     "00:00~10:58"
+    ],
+    [
+     "Neck — Larynx",
+     "00:00~13:17"
+    ],
+    [
+     "Lower limb — Joints of the lower limb",
+     "00:00~29:58"
+    ]
+   ],
+   "tasks": [
+    "뇌하수체 접근법",
+    "후두경 영상 비교",
+    "십자인대 손상 확인법"
+   ]
   },
   {
+   "no": 16,
    "date": "2026-10-19",
    "topics": [
     "Tagging 2"
    ],
    "regions": [],
-   "exam": "tagging-2"
+   "exam": "tagging-2",
+   "professor": "김홍태·문용석",
+   "eanatomy": [],
+   "tasks": []
   }
  ],
  "concepts": [
@@ -575,6 +934,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0015",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "gluteal-region",
    "examPhase": "tagging-1",
@@ -597,6 +957,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0016",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -619,6 +980,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0017",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "popliteal-fossa",
    "examPhase": "tagging-1",
@@ -641,6 +1003,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0018",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "popliteal-fossa",
    "examPhase": "tagging-1",
@@ -663,6 +1026,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0019",
    "style": "spotter",
+   "session": 3,
    "region": "back",
    "subregion": "suboccipital",
    "examPhase": "tagging-1",
@@ -685,6 +1049,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0020",
    "style": "spotter",
+   "session": 3,
    "region": "back",
    "subregion": "suboccipital-triangle",
    "examPhase": "tagging-1",
@@ -707,6 +1072,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0023",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -729,6 +1095,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0024",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -751,6 +1118,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0025",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "popliteal-fossa",
    "examPhase": "tagging-1",
@@ -773,6 +1141,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0027",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -795,6 +1164,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0028",
    "style": "spotter",
+   "session": 2,
    "region": "lower-limb",
    "subregion": "gluteal",
    "examPhase": "tagging-1",
@@ -817,6 +1187,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0031",
    "style": "spotter",
+   "session": 3,
    "region": "upper-limb",
    "subregion": "scapular-region",
    "examPhase": "tagging-1",
@@ -839,6 +1210,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0038",
    "style": "spotter",
+   "session": 1,
    "region": "multi",
    "subregion": "skin-and-fascia",
    "examPhase": "tagging-1",
@@ -861,6 +1233,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0039",
    "style": "layer-order",
+   "session": 1,
    "region": "back",
    "subregion": "lumbar-region",
    "examPhase": "tagging-1",
@@ -883,6 +1256,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0040",
    "style": "branch-tree",
+   "session": 1,
    "region": "back",
    "subregion": "posterior-cutaneous",
    "examPhase": "tagging-1",
@@ -905,6 +1279,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0041",
    "style": "distinction",
+   "session": 1,
    "region": "back",
    "subregion": "posterior-cutaneous",
    "examPhase": "tagging-1",
@@ -933,6 +1308,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0042",
    "style": "spotter",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "superficial-veins",
    "examPhase": "tagging-1",
@@ -955,6 +1331,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0043",
    "style": "relation",
+   "session": 1,
    "region": "multi",
    "subregion": "skin-and-fascia",
    "examPhase": "tagging-1",
@@ -983,6 +1360,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0044",
    "style": "course-tracing",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "superficial-veins",
    "examPhase": "tagging-1",
@@ -1005,6 +1383,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0045",
    "style": "course-tracing",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "superficial-veins",
    "examPhase": "tagging-1",
@@ -1027,6 +1406,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0046",
    "style": "clinical-application",
+   "session": 1,
    "region": "back",
    "subregion": "lumbar-region",
    "examPhase": "tagging-1",
@@ -1055,6 +1435,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0047",
    "style": "clinical-application",
+   "session": 1,
    "region": "pelvis-perineum",
    "subregion": "sacrum",
    "examPhase": "tagging-1",
@@ -1077,6 +1458,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0048",
    "style": "distinction",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "gluteal-region",
    "examPhase": "tagging-1",
@@ -1105,6 +1487,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0049",
    "style": "relation",
+   "session": 1,
    "region": "multi",
    "subregion": "skin-and-fascia",
    "examPhase": "tagging-1",
@@ -1127,6 +1510,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0050",
    "style": "distinction",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "superficial-veins",
    "examPhase": "tagging-1",
@@ -1155,6 +1539,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0051",
    "style": "relation",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "superficial-veins",
    "examPhase": "tagging-1",
@@ -1177,6 +1562,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0052",
    "style": "layer-order",
+   "session": 1,
    "region": "back",
    "subregion": "skin-and-fascia",
    "examPhase": "tagging-1",
@@ -1205,6 +1591,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0053",
    "style": "spotter",
+   "session": 1,
    "region": "back",
    "subregion": "gluteal",
    "examPhase": "tagging-1",
@@ -1227,6 +1614,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0054",
    "style": "spotter",
+   "session": 1,
    "region": "back",
    "subregion": "gluteal",
    "examPhase": "tagging-1",
@@ -1249,6 +1637,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0055",
    "style": "spotter",
+   "session": 1,
    "region": "back",
    "subregion": "gluteal",
    "examPhase": "tagging-1",
@@ -1271,6 +1660,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0056",
    "style": "spotter",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "posterior-thigh",
    "examPhase": "tagging-1",
@@ -1293,6 +1683,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0057",
    "style": "spotter",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "posterior-leg",
    "examPhase": "tagging-1",
@@ -1315,6 +1706,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0058",
    "style": "spotter",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "posterior-lower-limb",
    "examPhase": "tagging-1",
@@ -1337,6 +1729,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0059",
    "style": "layer-order",
+   "session": 1,
    "region": "back",
    "subregion": "back-general",
    "examPhase": "tagging-1",
@@ -1359,6 +1752,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0061",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "anterior-neck",
    "examPhase": "tagging-1",
@@ -1381,6 +1775,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0062",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "submandibular-triangle",
    "examPhase": "tagging-1",
@@ -1403,6 +1798,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0063",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "carotid-triangle",
    "examPhase": "tagging-1",
@@ -1425,6 +1821,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0064",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "anterior-neck",
    "examPhase": "tagging-1",
@@ -1447,6 +1844,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0065",
    "style": "spotter",
+   "session": 6,
    "region": "lower-limb",
    "subregion": "femoral-triangle",
    "examPhase": "tagging-1",
@@ -1469,6 +1867,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0066",
    "style": "spotter",
+   "session": 6,
    "region": "lower-limb",
    "subregion": "dorsum-of-foot",
    "examPhase": "tagging-1",
@@ -1491,6 +1890,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0068",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "anterior-neck",
    "examPhase": "tagging-1",
@@ -1513,6 +1913,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0069",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "anterior-neck",
    "examPhase": "tagging-1",
@@ -1535,6 +1936,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0070",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "muscular-triangle",
    "examPhase": "tagging-1",
@@ -1557,6 +1959,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0071",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "carotid-triangle",
    "examPhase": "tagging-1",
@@ -1579,6 +1982,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0072",
    "style": "spotter",
+   "session": 6,
    "region": "neck",
    "subregion": "submandibular-triangle",
    "examPhase": "tagging-1",
@@ -1601,6 +2005,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0073",
    "style": "spotter",
+   "session": 6,
    "region": "lower-limb",
    "subregion": "anterior-thigh",
    "examPhase": "tagging-1",
@@ -1623,6 +2028,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0074",
    "style": "spotter",
+   "session": 6,
    "region": "lower-limb",
    "subregion": "femoral-triangle",
    "examPhase": "tagging-1",
@@ -1645,6 +2051,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0075",
    "style": "spotter",
+   "session": 6,
    "region": "lower-limb",
    "subregion": "adductor-canal",
    "examPhase": "tagging-1",
@@ -1667,6 +2074,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0076",
    "style": "spotter",
+   "session": 6,
    "region": "lower-limb",
    "subregion": "medial-thigh",
    "examPhase": "tagging-1",
@@ -1689,6 +2097,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0078",
    "style": "spotter",
+   "session": 3,
    "region": "upper-limb",
    "subregion": "scapular-region",
    "examPhase": "tagging-1",
@@ -1711,6 +2120,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0079",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "leg-posterior",
    "examPhase": "tagging-1",
@@ -1733,6 +2143,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0080",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "leg-posterior",
    "examPhase": "tagging-1",
@@ -1755,6 +2166,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0081",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "popliteal-fossa",
    "examPhase": "tagging-1",
@@ -1777,6 +2189,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0082",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -1799,6 +2212,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0083",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -1821,6 +2235,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0084",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "superficial-back",
    "examPhase": "tagging-1",
@@ -1843,6 +2258,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0085",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "deep-back",
    "examPhase": "tagging-1",
@@ -1865,6 +2281,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0086",
    "style": "spotter",
+   "session": 2,
    "region": "back",
    "subregion": "deep-back",
    "examPhase": "tagging-1",
@@ -1887,6 +2304,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0087",
    "style": "spotter",
+   "session": 2,
    "region": "lower-limb",
    "subregion": "gluteal",
    "examPhase": "tagging-1",
@@ -1909,6 +2327,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0088",
    "style": "spotter",
+   "session": 2,
    "region": "pelvis-perineum",
    "subregion": "gluteal",
    "examPhase": "tagging-1",
@@ -1931,6 +2350,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0089",
    "style": "spotter",
+   "session": 2,
    "region": "lower-limb",
    "subregion": "posterior-thigh",
    "examPhase": "tagging-1",
@@ -1953,6 +2373,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0090",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "popliteal-fossa",
    "examPhase": "tagging-1",
@@ -1975,6 +2396,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0091",
    "style": "spotter",
+   "session": 3,
    "region": "back",
    "subregion": "suboccipital-triangle",
    "examPhase": "tagging-1",
@@ -1997,6 +2419,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0092",
    "style": "spotter",
+   "session": 3,
    "region": "upper-limb",
    "subregion": "scapular-region",
    "examPhase": "tagging-1",
@@ -2019,6 +2442,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0093",
    "style": "spotter",
+   "session": 3,
    "region": "upper-limb",
    "subregion": "scapular-region",
    "examPhase": "tagging-1",
@@ -2041,6 +2465,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0094",
    "style": "spotter",
+   "session": 1,
    "region": "lower-limb",
    "subregion": "posterior-leg",
    "examPhase": "tagging-1",
@@ -2063,6 +2488,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0095",
    "style": "spotter",
+   "session": 3,
    "region": "lower-limb",
    "subregion": "posterior-leg",
    "examPhase": "tagging-1",
@@ -2085,6 +2511,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0096",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2107,6 +2534,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0097",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2129,6 +2557,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0098",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2151,6 +2580,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0099",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2173,6 +2603,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0100",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2195,6 +2626,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0101",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "parotid",
    "examPhase": "tagging-1",
@@ -2217,6 +2649,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0102",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "parotid",
    "examPhase": "tagging-1",
@@ -2239,6 +2672,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0103",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2261,6 +2695,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0104",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "parotid",
    "examPhase": "tagging-1",
@@ -2283,6 +2718,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0105",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2305,6 +2741,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0106",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "face",
    "examPhase": "tagging-1",
@@ -2327,6 +2764,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0107",
    "style": "spotter",
+   "session": 4,
    "region": "head",
    "subregion": "infratemporal",
    "examPhase": "tagging-1",
@@ -2349,6 +2787,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0108",
    "style": "spotter",
+   "session": 4,
    "region": "thorax",
    "subregion": "pectoral",
    "examPhase": "tagging-1",
@@ -2371,6 +2810,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0109",
    "style": "spotter",
+   "session": 4,
    "region": "thorax",
    "subregion": "pectoral",
    "examPhase": "tagging-1",
@@ -2393,6 +2833,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0110",
    "style": "spotter",
+   "session": 4,
    "region": "thorax",
    "subregion": "thoracic-wall",
    "examPhase": "tagging-1",
@@ -2415,6 +2856,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -2448,6 +2890,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0005",
    "style": "course-tracing",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -2475,6 +2918,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0006",
    "style": "relation",
+   "session": 11,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -2502,6 +2946,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0007",
    "style": "spotter",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "urinary-bladder",
    "examPhase": "tagging-2",
@@ -2529,6 +2974,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0008",
    "style": "layer-order",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-diaphragm",
    "examPhase": "tagging-2",
@@ -2561,6 +3007,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0009",
    "style": "distinction",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -2593,6 +3040,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0010",
    "style": "course-tracing",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -2625,6 +3073,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0011",
    "style": "relation",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "male-internal-genitalia",
    "examPhase": "tagging-2",
@@ -2657,6 +3106,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0012",
    "style": "clinical-application",
+   "session": 12,
    "region": "pelvis-perineum",
    "subregion": "anal-canal",
    "examPhase": "tagging-2",
@@ -2685,6 +3135,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0013",
    "style": "spotter",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-cavity",
    "examPhase": "tagging-2",
@@ -2712,6 +3163,7 @@ window.MEDKOS_ANATOMY = {
   {
    "id": "anatomy-2026-0014",
    "style": "spotter",
+   "session": 14,
    "region": "pelvis-perineum",
    "subregion": "pelvic-diaphragm",
    "examPhase": "tagging-2",
@@ -2735,6 +3187,433 @@ window.MEDKOS_ANATOMY = {
      "section": "골반 [골반가로막]"
     }
    ]
+  }
+ ],
+ "guides": [
+  {
+   "id": "anatomy-2026-0034",
+   "session": 1,
+   "title": "1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥",
+   "subtitle": "",
+   "sections": [
+    "1. 이 회차의 성격 — \"벗기는 회차\"",
+    "2. 층 구조 — 겉에서 속으로",
+    "3. 신경 — 앞가지와 뒤가지 (응용과제 3)",
+    "4. 혈관 — 다리 얕은정맥 (e-Anatomy Lower limb Superficial layer 구간)",
+    "5. 임상 포인트 (응용과제 1·2)",
+    "6. 예습시험 체크리스트 10",
+    "7. 다음 회차로 넘어가는 다리"
+   ],
+   "figs": [],
+   "mnemonics": [],
+   "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0060",
+   "session": 1,
+   "title": "1회차 서브노트 — 등 · 다리 피부벗기기",
+   "subtitle": "층 구조 · 피부신경 · 얕은정맥 표 중심 정리 + 술기(허리천자·꼬리마취)",
+   "sections": [
+    "1. 층 구조 — 피부벗기기가 지나는 길",
+    "2. 척수신경 — 앞가지와 뒤가지",
+    "2b. 신경 계보 — 척수신경에서 피부신경까지",
+    "2c. 얕은정맥 계보",
+    "2d. 함께 지나는 것",
+    "3. 볼기·다리 뒤 피부신경",
+    "4. 얕은정맥",
+    "5. 술기 — 허리천자와 꼬리마취",
+    "6. 마무리 체크리스트"
+   ],
+   "figs": [
+    "diag-back-layers-rami-labeled.svg",
+    "diag-lumbar-puncture-labeled.svg",
+    "diag-posterior-cutaneous-nerves-labeled.svg",
+    "tree-s01-bundle-labeled.svg",
+    "tree-s01-nerve-labeled.svg",
+    "tree-s01-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "얕은근막의 짝",
+     "full": "큰두렁정맥+두렁신경 / 작은두렁정맥+장딴지신경",
+     "note": "하나를 찾으면 다른 하나가 따라온다"
+    },
+    {
+     "key": "복사 앞뒤",
+     "full": "큰두렁=안쪽복사 **앞** / 작은두렁=가쪽복사 **뒤**",
+     "note": "피부벗기기에서 첫 갈림길"
+    },
+    {
+     "key": "얼기는 앞가지만",
+     "full": "뒤가지 계열은 얼기를 만들지 않는다",
+     "note": "뒤가지는 분절 배열이 그대로 남는다"
+    },
+    {
+     "key": "볼기 3형제 중 하나만 앞가지",
+     "full": "위·중간=뒤가지 / **아래볼기피부신경만 앞가지**",
+     "note": "아래는 뒤넙다리피부신경 가지"
+    },
+    {
+     "key": "관통정맥은 깊은 쪽으로만",
+     "full": "판막이 얕은→깊은 한 방향",
+     "note": "망가지면 역류 → 하지정맥류"
+    },
+    {
+     "key": "장딴지신경은 공여신경",
+     "full": "정강(안쪽장딴지피부) + 온종아리(교통가지)",
+     "note": "순수 감각이라 떼어 써도 된다"
+    }
+   ],
+   "scanCount": 5
+  },
+  {
+   "id": "anatomy-2026-0021",
+   "session": 2,
+   "title": "2회차 종합 정리 — 등 근육 3층 / 볼기부위 / 넓적다리 뒤칸",
+   "subtitle": "",
+   "sections": [
+    "1. 등 근육 — 3층 구조",
+    "2. 볼기부위 (gluteal region)",
+    "3. 넓적다리 뒤칸 — 햄스트링",
+    "4. 관계도 한 장 요약",
+    "5. 예습시험 체크리스트 (10문제 대비)"
+   ],
+   "figs": [],
+   "mnemonics": [],
+   "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0033",
+   "session": 2,
+   "title": "2회차 서브노트 — 등 · 볼기 · 넓적다리 뒤",
+   "subtitle": "근육 · 혈관 · 신경 표 중심 정리 + 태깅/예습시험 포인트",
+   "sections": [
+    "1. 등 근육 — 층별 총정리",
+    "2. 볼기부위",
+    "2b. 신경 계보",
+    "2c. 혈관 계보 (동맥 + 정맥)",
+    "2d. 함께 지나는 것",
+    "3. 혈관 — 어디서 갈라지나",
+    "4. 신경 — 뿌리·지배·손상",
+    "5. 공간·삼각",
+    "6. 마무리 체크리스트"
+   ],
+   "figs": [
+    "diag-back-layers-labeled.svg",
+    "diag-gluteal-foramina-labeled.svg",
+    "tree-s02-bundle-labeled.svg",
+    "tree-s02-nerve-labeled.svg",
+    "tree-s02-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "등세모근만 뇌신경",
+     "full": "등세모근·목빗근 = 더부신경 XI",
+     "note": "얕은층인데 예외 — 태깅 단골"
+    },
+    {
+     "key": "이주근육 넷",
+     "full": "등세모 · 넓은등 · 마름 · 어깨올림",
+     "note": "고유등근육만 **뒤가지** 지배"
+    },
+    {
+     "key": "크기와 이름이 반대",
+     "full": "큰볼기근=**아래**볼기신경 / 중간·작은=**위**볼기신경",
+     "note": "이름만 보고 크기로 짐작하면 틀린다"
+    },
+    {
+     "key": "위구멍은 하나뿐",
+     "full": "위구멍=위볼기신경·동맥 / 아래구멍=궁둥·아래볼기·음부·뒤넙다리피부",
+     "note": "궁둥구멍근이 가른다"
+    },
+    {
+     "key": "햄스트링의 예외",
+     "full": "두갈래근 **짧은갈래**만 온종아리부분 지배",
+     "note": "나머지는 정강부분"
+    },
+    {
+     "key": "Trendelenburg",
+     "full": "위볼기신경 마비 → 반대쪽 골반이 처진다",
+     "note": "중간·작은볼기근이 못 버틴다"
+    },
+    {
+     "key": "날개어깨뼈",
+     "full": "긴가슴신경(C5–7) 마비 → 앞톱니근",
+     "note": "벽 밀기에서 어깨뼈가 뜬다"
+    }
+   ],
+   "scanCount": 12
+  },
+  {
+   "id": "anatomy-2026-0022",
+   "session": 3,
+   "title": "3회차 종합 정리 — 뒤통수밑삼각 / 어깨뼈부위 / 다리오금·종아리 뒤칸",
+   "subtitle": "",
+   "sections": [
+    "1. 뒤통수밑삼각 (suboccipital triangle)",
+    "2. 어깨뼈부위 (scapular region)",
+    "3. 다리오금 (popliteal fossa)",
+    "4. 종아리 뒤칸 (posterior compartment of leg)",
+    "5. 예습시험 체크리스트 (10문제 대비)"
+   ],
+   "figs": [],
+   "mnemonics": [],
+   "scanCount": 0
+  },
+  {
+   "id": "anatomy-2026-0077",
+   "session": 3,
+   "title": "3회차 서브노트 — 뒤통수밑삼각 · 어깨뼈부위 · 다리오금",
+   "subtitle": "근육 · 혈관 · 신경 표 + 실사 태깅 문항 합본",
+   "sections": [
+    "1. 뒤통수밑삼각",
+    "2. 어깨뼈부위 3공간",
+    "3. 어깨동맥그물",
+    "4. 다리오금",
+    "4b. 신경 계보 — 궁둥신경에서 발까지",
+    "4c. 혈관 계보 (동맥 + 정맥)",
+    "4d. 함께 지나는 것",
+    "5. 종아리 뒤칸",
+    "6. 마무리 체크리스트"
+   ],
+   "figs": [
+    "diag-popliteal-fossa-labeled.svg",
+    "diag-scapular-spaces-labeled.svg",
+    "diag-suboccipital-labeled.svg",
+    "tree-s03-bundle-labeled.svg",
+    "tree-s03-nerve-labeled.svg",
+    "tree-s03-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "오금 신–정–동",
+     "full": "얕은 것부터 정강신경 → 오금정맥 → 오금동맥",
+     "note": "동맥이 가장 깊어 맥박이 안 잡힌다"
+    },
+    {
+     "key": "어깨뼈패임",
+     "full": "동맥은 인대 **위**, 신경은 인대 **아래**",
+     "note": "같은 이름인데 층이 갈린다"
+    },
+    {
+     "key": "네모공간",
+     "full": "겨드랑신경 + 뒤위팔휘돌이동맥",
+     "note": "외과목 골절에서 함께 다친다"
+    },
+    {
+     "key": "SITS",
+     "full": "가시위 · 가시아래 · 작은원 · 어깨밑근",
+     "note": "돌림근띠 4형제"
+    },
+    {
+     "key": "뒤통수밑삼각 세 근육",
+     "full": "큰뒤머리곧은근 · 위머리빗근 · 아래머리빗근",
+     "note": "바닥에 **척추동맥**과 C1 뒤가지"
+    },
+    {
+     "key": "종아리뼈목 = 발처짐",
+     "full": "온종아리신경이 뼈를 감아 도는 자리",
+     "note": "가장 흔한 말초신경 손상부위"
+    }
+   ],
+   "scanCount": 15
+  },
+  {
+   "id": "anatomy-2026-0111",
+   "session": 4,
+   "title": "4회차 서브노트 — 얼굴 · 가슴벽",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 실사 태깅 15문항 합본",
+   "sections": [
+    "1. 표정근육",
+    "2. 귀밑샘과 얼굴신경",
+    "3. 얼굴의 혈관",
+    "4. 삼차신경 피부분지",
+    "5. 씹기근육",
+    "6. 큰가슴근부위",
+    "7. 가슴벽과 갈비사이",
+    "8. 실사 태깅 15문항"
+   ],
+   "figs": [
+    "tree-s04-bundle-labeled.svg",
+    "tree-s04-nerve-labeled.svg",
+    "tree-s04-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "관광볼턱목",
+     "full": "관자 · 광대 · 볼 · 턱모서리 · 목",
+     "note": "얼굴신경 5분지 — 위에서 아래 순서"
+    },
+    {
+     "key": "VII은 움직이고 V는 느낀다",
+     "full": "표정근육=VII(둘째 인두굽이) / 얼굴 피부감각=V",
+     "note": "씹기근육만 예외적으로 V3가 '움직인다'"
+    },
+    {
+     "key": "귀밑샘 신–정–동",
+     "full": "얼굴신경 → 아래턱뒤정맥 → 바깥목동맥",
+     "note": "얕은 것부터. 다리오금과 같은 순서"
+    },
+    {
+     "key": "갈비사이 VAN",
+     "full": "위에서 정맥 → 동맥 → 신경",
+     "note": "신경이 가장 아래 → 천자는 갈비뼈 위모서리"
+    },
+    {
+     "key": "세 구멍은 수직선",
+     "full": "눈확위(V1) · 눈확아래(V2) · 턱끝(V3)",
+     "note": "각 구멍마다 같은 이름 동맥이 동반"
+    },
+    {
+     "key": "안쪽은 뚫고 둘 다",
+     "full": "안쪽가슴근신경=작은가슴근 관통·둘 다 지배 / 가쪽=넘어가 큰가슴근만",
+     "note": "안쪽·가쪽은 팔신경얼기 다발 이름"
+    },
+    {
+     "key": "CAPD",
+     "full": "가슴봉우리동맥 4가지 — 가슴근 · 봉우리 · 빗장 · 어깨세모",
+     "note": "겨드랑동맥 2부에서"
+    },
+    {
+     "key": "가로얼굴은 얕은관자 것",
+     "full": "가로얼굴동맥 = 얕은관자동맥 가지",
+     "note": "얼굴동맥 가지가 아니다 — 태깅 단골 함정"
+    },
+    {
+     "key": "가쪽날개근만 연다",
+     "full": "깨물·관자·안쪽날개=닫기 / 가쪽날개=열기",
+     "note": "씹기근육 4개 전부 V3"
+    },
+    {
+     "key": "이마가 남으면 중추",
+     "full": "중추성 마비=이마 주름 남음 / 말초성=이마까지 마비",
+     "note": "이마힘살은 양쪽 겉질 지배"
+    }
+   ],
+   "scanCount": 15
+  },
+  {
+   "id": "anatomy-2026-0067",
+   "session": 6,
+   "title": "6회차 서브노트 — 목의 삼각 · 다리 앞부분",
+   "subtitle": "삼각·칸 중심 표 정리 + 실사 태깅 문항 합본",
+   "sections": [
+    "1. 목의 삼각 — 넷 + 둘",
+    "2. 목의 혈관·신경",
+    "2b. 신경 계보 — 목신경얼기·허리신경얼기",
+    "2c. 혈관 계보 (동맥 + 정맥)",
+    "2d. 함께 지나는 것",
+    "3. 넙다리삼각",
+    "4. 넓적다리 앞칸·안쪽칸",
+    "5. 종아리 앞칸·발등",
+    "6. 마무리 체크리스트"
+   ],
+   "figs": [
+    "diag-neck-triangles-labeled.svg",
+    "tree-s06-bundle-labeled.svg",
+    "tree-s06-nerve-labeled.svg",
+    "tree-s06-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "앞목삼각 넷",
+     "full": "턱끝밑 · 턱밑 · 목동맥 · 근육삼각",
+     "note": "가르는 근육은 두힘살근·어깨목뿔근 **둘뿐**"
+    },
+    {
+     "key": "두힘살근 두 신경",
+     "full": "앞힘살=삼차신경(V3) / 뒤힘살=얼굴신경(VII)",
+     "note": "첫째·둘째 인두굽이 유래가 다르다"
+    },
+    {
+     "key": "목혈관신경집",
+     "full": "동맥 **안쪽** · 정맥 **가쪽** · 미주신경은 둘 사이 **뒤**",
+     "note": "중심정맥삽입의 해부"
+    },
+    {
+     "key": "NAVEL",
+     "full": "가쪽부터 신경–동맥–정맥–빈공간–림프",
+     "note": "넙다리삼각 — 정맥이 동맥 **안쪽**"
+    },
+    {
+     "key": "신경점(Erb)",
+     "full": "목빗근 **뒤모서리 중간**에서 피부가지 4개",
+     "note": "작은뒤통수·큰귓바퀴·가로목·빗장위"
+    },
+    {
+     "key": "C4에서 갈린다",
+     "full": "온목동맥 → 방패연골 위모서리에서 속·바깥으로",
+     "note": "갈리기 전엔 가지가 없다"
+    },
+    {
+     "key": "운동이면 VII, 감각이면 목신경얼기",
+     "full": "넓은목근=얼굴신경 목가지 / 가로목신경=감각",
+     "note": "같은 자리를 지나 헷갈린다"
+    }
+   ],
+   "scanCount": 15
+  },
+  {
+   "id": "anatomy-2026-0112",
+   "session": 7,
+   "title": "7회차 서브노트 — 목의 뿌리 · 발목",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 목의 뿌리",
+    "2. 인두",
+    "3. 종아리 가쪽칸",
+    "4. 발목 안쪽면과 발목굴",
+    "5. 발바닥",
+    "6. 실사 태깅 문항"
+   ],
+   "figs": [
+    "tree-s07-bundle-labeled.svg",
+    "tree-s07-nerve-labeled.svg",
+    "tree-s07-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "Tom, Dick, And Very Nervous Harry",
+     "full": "뒤정강근 · 긴발가락굽힘근 · 뒤정강동맥 · 정강신경 · 긴엄지굽힘근",
+     "note": "발목굴을 앞(안쪽복사 쪽)에서 뒤로 지나는 순서"
+    },
+    {
+     "key": "앞은 정맥, 뒤는 동맥·얼기",
+     "full": "빗장밑정맥=앞목갈비근 앞 / 빗장밑동맥·팔신경얼기=뒤(목갈비근틈새)",
+     "note": "중심정맥삽입·목갈비근증후군의 해부"
+    },
+    {
+     "key": "C3-4-5 keeps the diaphragm alive",
+     "full": "가로막신경 C3–C5 · 앞목갈비근 **앞면**을 타고 내려간다",
+     "note": "목갈비근틈새가 아니라 근육 앞면"
+    },
+    {
+     "key": "오른쪽은 빗장밑, 왼쪽은 대동맥활",
+     "full": "되돌이후두신경이 감아 도는 구조가 좌우 다르다",
+     "note": "왼쪽이 더 길어 수술·종격동 병변에 잘 눌린다"
+    },
+    {
+     "key": "가쪽칸에는 동맥이 없다",
+     "full": "종아리 가쪽칸 = 얕은종아리신경 지배 · 혈액은 종아리동맥이 곁가지로",
+     "note": "칸마다 동맥이 있다는 통념의 예외"
+    },
+    {
+     "key": "앞정강은 뚫고, 뒤정강은 돌아",
+     "full": "앞정강동맥=뼈사이막 관통 / 뒤정강동맥=발목 안쪽면으로",
+     "note": "오금동맥 갈림 뒤 두 갈래의 운명"
+    },
+    {
+     "key": "긴종아리근은 가로지른다",
+     "full": "가쪽복사 뒤 → 발바닥을 **가로질러** 첫째 발허리뼈·안쪽쐐기뼈",
+     "note": "가로발바닥활을 떠받친다"
+    },
+    {
+     "key": "발등은 긴엄지폄근 가쪽",
+     "full": "발등동맥 촉지점 = 긴엄지폄근힘줄 **가쪽**",
+     "note": "뒤정강동맥은 안쪽복사 뒤에서 촉지"
+    }
+   ],
+   "scanCount": 0
   }
  ],
  "daily": [

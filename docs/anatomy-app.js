@@ -87,12 +87,12 @@
   }
 
   // ── 탭 ────────────────────────────────────────────────────
-  var VIEWS = { today: renderToday, region: renderRegion, relation: renderRelation,
-                quiz: renderQuizSetup, review: renderReview, diagrams: renderDiagrams,
-                sources: renderSources };
-  var viewEls = { today: "anatToday", region: "anatRegion", relation: "anatRelation",
-                  quiz: "anatQuiz", review: "anatReview", diagrams: "anatDiagrams",
-                  sources: "anatSources" };
+  var VIEWS = { course: renderCourse, today: renderToday, region: renderRegion,
+                relation: renderRelation, quiz: renderQuizSetup, review: renderReview,
+                diagrams: renderDiagrams, sources: renderSources };
+  var viewEls = { course: "anatCourse", today: "anatToday", region: "anatRegion",
+                  relation: "anatRelation", quiz: "anatQuiz", review: "anatReview",
+                  diagrams: "anatDiagrams", sources: "anatSources" };
   document.querySelectorAll(".anat-tab").forEach(function (btn) {
     btn.addEventListener("click", function () { show(btn.dataset.view); });
   });
@@ -581,7 +581,139 @@
     dgPaint();
   }
 
+  // ── 회차별 학습(진도 순) ───────────────────────────────────
+  // PDF 서브노트를 옆에 놓고 같은 순서로 따라가는 화면. 1회차 → 16회차가
+  // **수업 순서 그대로** 흐르고, 각 회차 안에서 읽을 것 → 도해 → 문항 순이다.
+  var SCHED = DATA.schedule || [];
+  var GUIDES = DATA.guides || [];
+  var CO_KEY = "medkos_anatomy_course_done";     // 회차별 '완료' 체크
+  var coOpen = null;
+
+  function coDone() {
+    try { return JSON.parse(localStorage.getItem(CO_KEY) || "{}"); } catch (e) { return {}; }
+  }
+  function coToggleDone(no) {
+    var d = coDone();
+    if (d[no]) { delete d[no]; } else { d[no] = kstToday(); }
+    try { localStorage.setItem(CO_KEY, JSON.stringify(d)); } catch (e) { /* 무시 */ }
+  }
+  function coQuestions(no) {
+    return QUESTIONS.filter(function (q) { return q.session === no; });
+  }
+  function coGuides(no) {
+    return GUIDES.filter(function (g) { return g.session === no; });
+  }
+  function coTrees(no) {
+    var pad = "s" + (no < 10 ? "0" + no : no);
+    return ((window.MEDKOS_DIAGRAMS || {}).items || []).filter(function (it) {
+      return it.variant === "labeled" && it.file.indexOf("tree-" + pad + "-") === 0;
+    });
+  }
+  function coDday(iso) {
+    var n = Math.round((new Date(iso) - new Date(kstToday())) / 86400000);
+    return n === 0 ? "오늘" : (n > 0 ? "D-" + n : "지남 " + (-n) + "일");
+  }
+
+  function coQuestionList(no) {
+    var qs = coQuestions(no);
+    if (!qs.length) return '<p class="muted">이 회차 문항은 아직 없습니다.</p>';
+    return '<ol class="co-qs">' + qs.map(function (q, i) {
+      return "<li><b>" + esc(q.stem) + "</b>"
+        + '<button class="co-rev" data-q="' + esc(q.id) + '" type="button">정답 보기</button>'
+        + '<div class="co-ans hidden" id="ans-' + esc(q.id) + '">'
+        + "<b>" + esc(q.answer) + "</b><p>" + esc(q.explanation || "") + "</p></div></li>";
+    }).join("") + "</ol>";
+  }
+
+  function coBody(s) {
+    var no = s.no, gs = coGuides(no), trees = coTrees(no), qs = coQuestions(no);
+    var h = "";
+    if (s.professor) h += '<p class="muted">담당 ' + esc(s.professor) + "</p>";
+    h += '<h4>① 읽기 — 서브노트</h4>';
+    if (gs.length) {
+      h += "<ul>" + gs.map(function (g) {
+        return "<li><b>" + esc(g.title) + "</b>"
+          + (g.subtitle ? ' <span class="muted">' + esc(g.subtitle) + "</span>" : "")
+          + (g.sections.length ? '<br><span class="muted">' + esc(g.sections.join(" · ")) + "</span>" : "")
+          + (g.mnemonics.length ? ' <span class="co-chip">두문자 ' + g.mnemonics.length + "</span>" : "")
+          + (g.scanCount ? ' <span class="co-chip">실사 ' + g.scanCount + "문항</span>" : "")
+          + "</li>";
+      }).join("") + "</ul>";
+      var mn = gs.reduce(function (a, g) { return a.concat(g.mnemonics); }, []);
+      if (mn.length) {
+        h += '<details class="co-mn"><summary>두문자 ' + mn.length + "개 펼치기</summary><table>"
+          + mn.map(function (m) {
+            return "<tr><td><b>" + esc(m.key) + "</b></td><td>" + esc(m.full)
+              + '</td><td class="muted">' + esc(m.note) + "</td></tr>";
+          }).join("") + "</table></details>";
+      }
+    } else {
+      h += '<p class="muted">서브노트 준비 중.</p>';
+    }
+    h += "<h4>② 보기 — 도해·계보</h4>";
+    h += trees.length
+      ? '<div class="dg-grid">' + trees.map(dgTile).join("") + "</div>"
+      : '<p class="muted">이 회차 트리는 아직 없습니다.</p>';
+    h += "<h4>③ 풀기 — 문항 " + qs.length + "개</h4>" + coQuestionList(no);
+    if (s.eanatomy && s.eanatomy.length) {
+      h += "<h4>참고 — e-Anatomy 구간</h4><ul class=\"muted\">" + s.eanatomy.map(function (e) {
+        return "<li>" + esc(e[0]) + " <code>" + esc(e[1]) + "</code></li>";
+      }).join("") + "</ul>";
+    }
+    if (s.tasks && s.tasks.length) {
+      h += "<h4>응용과제</h4><ul>" + s.tasks.map(function (t) {
+        return "<li>" + esc(t) + "</li>";
+      }).join("") + "</ul>";
+    }
+    return h;
+  }
+
+  function renderCourse() {
+    var done = coDone(), today = kstToday();
+    // 아직 안 지난 가장 가까운 회차를 기본으로 펼친다 — '지금 어디' 를 바로 보여준다
+    if (coOpen === null) {
+      var nxt = SCHED.filter(function (s) { return s.date >= today; })[0];
+      coOpen = nxt ? nxt.no : (SCHED.length ? SCHED[SCHED.length - 1].no : 1);
+    }
+    var html = "<h2>회차별 학습 <span class=\"muted\">수업 순서 그대로</span></h2>"
+      + '<p class="muted">서브노트 PDF를 옆에 놓고 같은 순서로 따라가세요. 회차마다 '
+      + "<b>① 읽기 → ② 보기 → ③ 풀기</b> 로 이어집니다. 체크는 이 브라우저에만 남습니다.</p>"
+      + '<ol class="co-list">';
+    SCHED.forEach(function (s) {
+      var open = s.no === coOpen, isExam = !!s.exam;
+      html += '<li class="co-item' + (open ? " is-open" : "") + (isExam ? " is-exam" : "")
+        + (done[s.no] ? " is-done" : "") + '">'
+        + '<button class="co-head" type="button" data-no="' + s.no + '">'
+        + '<span class="co-no">' + (isExam ? "시험" : s.no + "회차") + "</span>"
+        + '<span class="co-date">' + esc(s.date) + " · " + coDday(s.date) + "</span>"
+        + '<span class="co-topic">' + esc(s.topics.join(" / ")) + "</span>"
+        + '<span class="co-meta">' + coQuestions(s.no).length + "문항</span>"
+        + "</button>"
+        + '<label class="co-done"><input type="checkbox" data-done="' + s.no + '"'
+        + (done[s.no] ? " checked" : "") + " /> 완료</label>"
+        + '<div class="co-body' + (open ? "" : " hidden") + '">' + (open ? coBody(s) : "") + "</div>"
+        + "</li>";
+    });
+    $("anatCourse").innerHTML = html + "</ol>";
+
+    $("anatCourse").querySelectorAll(".co-head").forEach(function (b) {
+      b.addEventListener("click", function () {
+        coOpen = coOpen === +b.dataset.no ? -1 : +b.dataset.no;
+        renderCourse();
+      });
+    });
+    $("anatCourse").querySelectorAll("[data-done]").forEach(function (c) {
+      c.addEventListener("change", function () { coToggleDone(+c.dataset.done); renderCourse(); });
+    });
+    $("anatCourse").querySelectorAll(".co-rev").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var el = $("ans-" + b.dataset.q);
+        if (el) el.classList.toggle("hidden");
+      });
+    });
+  }
+
   // 초기 화면
   var hash = (location.hash || "").replace("#", "");
-  show(VIEWS[hash] ? hash : "today");
+  show(VIEWS[hash] ? hash : "course");
 })();

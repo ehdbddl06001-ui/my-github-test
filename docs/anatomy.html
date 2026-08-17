@@ -24,7 +24,8 @@
 
 <section class="card">
   <div class="anat-tabs" role="tablist" aria-label="해부학 모드">
-    <button class="anat-tab active" data-view="today" role="tab" aria-selected="true">📅 오늘의 학습</button>
+    <button class="anat-tab active" data-view="course" role="tab" aria-selected="true">📖 회차별 학습</button>
+    <button class="anat-tab" data-view="today" role="tab" aria-selected="false">📅 오늘의 학습</button>
     <button class="anat-tab" data-view="region" role="tab" aria-selected="false">🗺️ 부위별</button>
     <button class="anat-tab" data-view="relation" role="tab" aria-selected="false">🔗 관계 모드</button>
     <button class="anat-tab" data-view="quiz" role="tab" aria-selected="false">📌 태깅 퀴즈</button>
@@ -34,7 +35,8 @@
   </div>
 </section>
 
-<section id="anatToday" class="card anat-view"></section>
+<section id="anatCourse" class="card anat-view"></section>
+<section id="anatToday" class="card anat-view hidden"></section>
 <section id="anatRegion" class="card anat-view hidden"></section>
 <section id="anatRelation" class="card anat-view hidden"></section>
 <section id="anatQuiz" class="card anat-view hidden"></section>
