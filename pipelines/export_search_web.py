@@ -7,7 +7,8 @@ content/**/*.md 하나다(대칭: export_usmle_web.py / export_papers_web.py).
 
 산출물: docs/search-index.js
   window.MEDKOS_INDEX = { generated, repo, branch, stats{...}, docs[ {...} ] }
-  각 doc: id, type, topic, subtopic, tags[], source, confidence, date, path, text(검색용)
+  각 doc: id, type, unit, topic, subtopic, tags[], source, confidence, date, path, text(검색용)
+  unit — 해부 전용. 'N회차 · 부위'(anatomy_schedule.unit_label). 날짜순 목록에서 소속 표시.
 
 사용: python pipelines/export_search_web.py
 """
@@ -18,6 +19,7 @@ import re
 from datetime import date
 from pathlib import Path
 
+from anatomy_schedule import unit_label
 from frontmatter import Doc, load
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -48,9 +50,12 @@ def build_record(d: Doc) -> dict:
     else:
         body = d.body
     clean = _strip_md(body)
+    # 해부는 날짜순 목록에서 '몇 회차의 어느 부위'인지가 바로 보여야 한다(2회차 · 등).
+    unit = unit_label(m) if d.type == "anatomy" else ""
     return {
         "id": d.id,
         "type": d.type,
+        "unit": unit,
         "topic": m.get("topic", "") or "",
         "subtopic": m.get("subtopic", "") or "",
         "tags": [str(t) for t in (m.get("tags", []) or [])],
@@ -60,8 +65,9 @@ def build_record(d: Doc) -> dict:
         "path": str(d.path.relative_to(ROOT)),
         "snippet": clean[:SNIPPET_LEN],
         # 검색 대상 텍스트(제목+주제+태그+본문). 소문자는 브라우저에서 처리.
+        # 검색어로도 걸리게 unit 을 넣는다 — "2회차"·"등"으로 그 회차 자료를 모을 수 있다.
         "text": " ".join(filter(None, [
-            m.get("topic", ""), m.get("subtopic", ""),
+            m.get("topic", ""), m.get("subtopic", ""), unit,
             " ".join(str(t) for t in (m.get("tags", []) or [])),
             m.get("source", ""), clean,
         ])),

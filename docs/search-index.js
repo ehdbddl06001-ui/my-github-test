@@ -63,6 +63,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-daily-2026-08-17",
    "type": "anatomy",
+   "unit": "등·다리",
    "topic": "Anatomy",
    "subtopic": "daily plan 2026-08-17",
    "tags": [],
@@ -71,11 +72,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-17",
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-08-17 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+   "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "paper-2026-0220",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -92,6 +94,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-daily-2026-08-16",
    "type": "anatomy",
+   "unit": "등·다리",
    "topic": "Anatomy",
    "subtopic": "daily plan 2026-08-16",
    "tags": [],
@@ -100,11 +103,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/daily/2026-08-16.md",
    "snippet": "오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-08-16 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+   "text": "Anatomy daily plan 2026-08-16 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 16 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 25일 · Tagging 2까지 64일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 23개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-2026-0111",
    "type": "anatomy",
+   "unit": "4회차 · 가슴·머리",
    "topic": "Anatomy",
    "subtopic": "4회차 서브노트 — 큰가슴근부위·가슴벽 / 얼굴·표정근육·귀밑샘·얼굴신경·씹기근육",
    "tags": [
@@ -127,11 +131,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/notes/anatomy-2026-0111-s04-subnote.md",
    "snippet": "0. 이 회차의 축 — 세 문장 1. 표정근육은 얼굴신경(VII), 씹기근육은 삼차신경(V3) — 둘째 인두굽이와 첫째 인두굽이라는 족보가 신경을 정한다. 2. 얼굴 피부감각은 전부 삼차신경 V1·V2·V3 — 운동(VII)과 감각(V)의 이중 지배가 얼굴의 원칙이다. 3. 다발은 순서로 외운다 — 귀밑샘 속은 얕은→깊은 신–정–동 , 갈비사이고랑은 위→아래 정–동–신 . 1. 표정근육 Muscles of facial expr",
-   "text": "Anatomy 4회차 서브노트 — 큰가슴근부위·가슴벽 / 얼굴·표정근육·귀밑샘·얼굴신경·씹기근육 서브노트 4회차 얼굴 표정근육 귀밑샘 얼굴신경 삼차신경 씹기근육 큰가슴근 가슴벽 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 표정근육은 얼굴신경(VII), 씹기근육은 삼차신경(V3) — 둘째 인두굽이와 첫째 인두굽이라는 족보가 신경을 정한다. 2. 얼굴 피부감각은 전부 삼차신경 V1·V2·V3 — 운동(VII)과 감각(V)의 이중 지배가 얼굴의 원칙이다. 3. 다발은 순서로 외운다 — 귀밑샘 속은 얕은→깊은 신–정–동 , 갈비사이고랑은 위→아래 정–동–신 . 1. 표정근육 Muscles of facial expression 1) 공통 원칙 항목 내용 발생 ==둘째 인두굽이== → 전부 얼굴신경(VII) 지배 이는곳/닿는곳 뼈·근막에서 일어나 ==피부에 정지== (그래서 수축하면 주름이 생긴다) 층 얕은근막 속 에 있다 — 피부벗기기에서 같이 딸려 나오기 쉽다 공통 수렴점 입 주위 근육은 ==볼굴대(modiolus)== 로 모인다 2) 눈·코 주위 근육 작용 구분 포인트 뒤통수이마근 이마힘살 frontal belly 눈썹 올림 · 이마 가로 주름 머리덮개널힘줄로 뒤통수힘살과 이어짐 눈둘레근 orbicularis oculi 눈 감기 눈확부분(꽉 감기)·눈꺼풀부분(깜빡임)·==눈물주머니부분==(눈물 배출) 눈썹주름근 corrugator supercilii 눈썹 모음 · 미간 세로 주름 눈살근과 주름 방향이 반대 눈살근 procerus 미간 가로 주름 콧등 위 세로근 코근 nasalis 가로부분(콧구멍 좁힘)·날개부분(넓힘) 두 부분 작용이 반대 코중격내림근 코끝을 내림 웃을 때 코끝이 처지는 원인 [!암기] 주름 방향으로 갈라라 :: 이마힘살·눈살근 = 가로주름 , 눈썹주름근 = 세로주름 . 실사 태깅에서 위치가 비슷할 때 이 한 줄이 답을 가른다. 3) 입 주위 — 올림근 4형제와 내림근 3형제 방향 근육 특징 올림 위입술콧방울올림근 ★ 가장 안쪽 · 코방울 + 윗입술 두 갈래 올림 위입술올림근 코방울로 안 감 올림 작은광대근 · 큰광대근 큰광대근은 볼굴대로 — 웃음근 올림 입꼬리올림근 위입술올림근 깊은쪽 내림 아래입술내림근 · 입꼬리내림근 · 턱끝근 턱끝근은 아랫입술을 내밀고 턱 주름 가로 입꼬리당김근 risorius 볼굴대에서 가쪽으로 — 억지웃음 벽 볼근 buccinator 볼의 벽 · ==귀밑샘관이 뚫고 들어간다== · 나팔 불기 고리 입둘레근 orbicularis oris 여러 근육 섬유가 엮인 고리 — 독립 근육이 아니다 [!기출] 볼근은 표정근육인가 씹기근육인가 :: 위치가 볼이라 헷갈리지만 표정근육(VII 볼가지) 이다. 씹을 때 음식을 이 사이로 밀어 주는 보조 역할을 할 뿐, 아래턱을 움직이지 않는다. [!임상] 볼굴대(modiolus) :: 입꼬리 가쪽 1 cm의 ==근육섬유 덩어리==. 입둘레근·큰광대근·입꼬리올림근/내림근·입꼬리당김근·볼근이 수렴하는 역학 중심 이라 구순열 재건·안면 성형의 기준점이다. 2. 귀밑샘과 얼굴신경 Parotid gland & facial nerve !fig docs/assets/anatomy/tree s04 nerve labeled.svg VII은 움직이고 V는 느낀다 — 얼굴에 오는 두 뇌신경의 계보 1) 귀밑샘을 뚫고 지나는 것 — 얕은 것부터 순서 구조 메모 ① 가장 얕다 ==얼굴신경 VII== 샘을 얕은엽/깊은엽으로 가른다 — 종양 수술의 기준 ② 중간 아래턱뒤정맥 얕은관자정맥 + 위턱정맥 ③ 가장 깊다 ==바깥목동맥== 여기서 얕은관자·위턱동맥으로 갈린다 = 다리오금의 신–정–동 과 같은 순서 — 두 자리를 한 묶음으로 외운다. 구조 포인트 귀밑샘관 parotid duct 광대활 아래 손가락 두 마디 · ==볼근을 뚫고== 위 둘째큰어금니 맞은편으로 열림 귀밑샘 분비 얼굴신경이 아니다 — ==혀인두신경 IX== → 작은바위신경 → 귀신경절 → 귓바퀴관자신경 에 얹혀 온다 볼지방체 볼근 얕은쪽 캡슐 지방 — 영아의 빨기 패드. 걷어내야 깊은 구조가 보인다 2) 얼굴신경 다섯 가지 — 관광볼턱목 가지 분포 임상 관자가지 이마힘살·눈둘레근 위쪽 마비 시 이마 주름이 안 잡힘 광대가지 눈둘레근 ==각막반사의 날개(운동)== — 들신경은 V1 볼가지 볼근·입 주위 근육 (여러 개) 볼굴대 지배 턱모서리가지 아래입술내림근·턱끝근 ==턱밑샘 수술 손상 1순위== → 웃을 때 아랫입술 비대칭 목가지 넓은목근 같은 자리의 가로목신경은 감각 — 갈라 외운다 [!기출] 중추성 vs 말초성 얼굴마비 :: 이마힘살은 양쪽 대뇌겉질 의 지배를 받아, 중추성(뇌졸중)에서는 이마 주름이 남고 아래얼굴만 처진다. 말초성(Bell 마비)은 ==이마까지 전부== 마비된다. 태깅과 함께 반드시 붙는 임상 포인트. 3. 얼굴의 혈관 Vessels of the face !fig docs/assets/anatomy/tree s04 vessel labeled.svg 바깥목동맥 계열과 얼굴정맥 계열 — 가로얼굴동맥의 주인이 누구인지 확인 혈관 주행 함정 얼굴동맥 facial a. 바깥목동맥 → 턱밑샘 뒤 → ==깨물근 앞모서리에서 아래턱뼈를 넘음== → 구불구불 올라 눈구석동맥 맥박 촉지점. 아래·위입술동맥, 가쪽코동맥을 낸다 가로얼굴동맥 ★ ==얕은관자동맥== 가지 · 귀밑샘관 위 를 가로로 얼굴동맥 가지가 아니다 — 태깅 단골 함정 얕은관자동맥 귀 앞 박동 촉지 → 이마가지·마루가지 거대세포동맥염 생검 부위 얼굴정맥 눈구석정맥에서 시작 · 동맥의 ==뒤쪽을 곧게== 동맥은 구불구불, 정맥은 곧게 — 구분 기준 아래턱뒤정맥 얕은관자정맥 + 위턱정맥 → 앞가지(→온얼굴정맥) · 뒤가지(→바깥목정맥) 귀밑샘 속 중간층 [!임상] 얼굴의 위험삼각 :: 얼굴정맥에는 판막이 없어 눈구석정맥–위눈정맥을 거쳐 ==해면정맥굴==과 통한다. 코 뿌리~윗입술 삼각의 종기를 짜면 감염이 역류해 해면정맥굴 혈전증이 될 수 있다. 4. 삼차신경 피부분지 Cutaneous branches of V 가지 나오는 구멍 담당 피부 눈확위신경 (V1) 눈확위구멍/패임 이마·머리덮개 앞· 위눈꺼풀 도르래위신경 (V1) 그보다 안쪽 미간·이마 안쪽 눈확아래신경 (V2) 눈확아래구멍 아래눈꺼풀·뺨·코 가쪽· 윗입술 턱끝신경 (V3) 턱끝구멍 아랫입술 ·턱 = 세 구멍은 거의 ==수직선상==에 놓인다. 각 구멍에서 같은 이름의 동맥 이 함께 나온다(눈확위·눈확아래·턱끝동맥). [!주의] 얼굴 감각의 경계 :: V1/V2는 위눈꺼풀 / 아래눈꺼풀 에서, V2/V3는 윗입술 / 아랫입술 에서 갈린다. 턱뼈각 부위 피부는 삼차신경이 아니라 ==큰귓바퀴신경(C2–3)== 이다 — 삼차신경통 감별의 고전 포인트. 5. 씹기근육 Muscles of mastication 근육 작용 메모 깨물근 masseter 아래턱 올림 광대활 → 아래턱가지 가쪽. 얕은/깊은부분 관자근 temporalis 올림 + 뒤당김 부챗살 섬유가 ==근육돌기==에 붙음 안쪽날개근 올림 (깨물근의 안쪽 짝) 아래턱가지 안쪽 면 가쪽날개근 ★ ==유일하게 입을 벌린다== · 내밀기 관절원반에 붙어 턱관절 운동의 주역 = 넷 다 ==첫째 인두굽이== 유래 → 아래턱신경(V3) 지배. 표정근육(둘째 굽이·VII)과 정확히 짝지어 외운다. [!암기] 깨물근 얕은쪽을 지나는 것 3형제 :: ==귀밑샘관 · 얼굴신경 볼가지 · 가로얼굴동맥==. 이 셋이 나란히 가로로 달리는 것이 얼굴 가쪽 태깅의 뼈대다. 6. 큰가슴근부위 Pectoral region 구조 포인트 큰가슴근 빗장부분·복장갈비부분·배부분 → 위팔뼈 결절사이고랑 가쪽입술 . 안모음·안쪽돌림 작은가슴근 3–5번 갈비뼈 → 어깨뼈 ==부리돌기==. 겨드랑동맥을 1·2·3부로 나누는 기준 가쪽가슴근신경 (C5–7, 가쪽다발) 작은가슴근 위로 넘어 — 큰가슴근만 안쪽가슴근신경 (C8–T1, 안쪽다발) 작은가슴근을 ==뚫고== — 둘 다 가슴봉우리동맥 겨드랑동맥 2부 · 빗장가슴근막을 뚫고 → 가슴근·봉우리·빗장·어깨세모가지 세모가슴근고랑 ==노쪽피부정맥 + 어깨세모가지== 가 함께 지나는 통로 젖샘 2–6번 갈비뼈 · ==젖샘걸이인대(Cooper)== · 암에서 이 인대가 끌려 피부 함몰 [!암기] 안쪽은 뚫고 둘 다, 가쪽은 넘어서 하나 :: 이름의 안쪽·가쪽은 근육 위치가 아니라 팔신경얼기 다발 에서 온 것이다. 이 한 줄이 문항 0108의 답이다. 7. 가슴벽과 갈비사이 Thoracic wall !fig docs/assets/anatomy/tree s04 bundle labeled.svg 귀밑샘은 얕은→깊은 신–정–동, 갈비사이고랑은 위→아래 정–동–신 층 근육 섬유 방향 · 메모 바깥 바깥갈비사이근 뒤위 → 앞아래 (주머니에 손 넣는 방향). 앞쪽은 ==바깥갈비사이막== 중간 속갈비사이근 반대 방향. 뒤쪽은 속갈비사이막 안 맨속갈비사이근·가로가슴근 혈관신경다발이 속·맨속 사이 항목 내용 갈비사이고랑 배열 위에서 ==정맥 → 동맥 → 신경 (VAN)== 천자 원칙 신경이 가장 아래·얕으므로 ==갈비뼈 위 모서리를 따라== 삽입 갈비사이신경 T1–T11 앞가지 · 가쪽·앞 피부가지로 분절 지배 동맥 공급 뒤갈비사이동맥(가슴대동맥) ↔ 앞갈비사이동맥(속가슴동맥) 문합 복장뼈각 둘째 갈비연골 높이 = ==기관 갈림·대동맥활 시작·T4/T5== 의 기준선 [!임상] 젖꼭지와 흉관 :: 남성 젖꼭지는 대개 ==넷째 갈비사이공간==(T4 피부분절). 흉관은 중간겨드랑선 4–5번 갈비사이공간(안전삼각)에서 갈비뼈 위 모서리를 따라 넣는다. 8. 실사 태깅 15문항 아래는 필기를 제거한 복원 실사(비공개 렌더)다. 각 문항의 정답·해설은 뒷장 정답표에. 라벨·타이틀·자막은 가려 두었고, 클린판( clean.png )에는 원본 라벨이 살아 있다."
+   "text": "Anatomy 4회차 서브노트 — 큰가슴근부위·가슴벽 / 얼굴·표정근육·귀밑샘·얼굴신경·씹기근육 4회차 · 가슴·머리 서브노트 4회차 얼굴 표정근육 귀밑샘 얼굴신경 삼차신경 씹기근육 큰가슴근 가슴벽 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 표정근육은 얼굴신경(VII), 씹기근육은 삼차신경(V3) — 둘째 인두굽이와 첫째 인두굽이라는 족보가 신경을 정한다. 2. 얼굴 피부감각은 전부 삼차신경 V1·V2·V3 — 운동(VII)과 감각(V)의 이중 지배가 얼굴의 원칙이다. 3. 다발은 순서로 외운다 — 귀밑샘 속은 얕은→깊은 신–정–동 , 갈비사이고랑은 위→아래 정–동–신 . 1. 표정근육 Muscles of facial expression 1) 공통 원칙 항목 내용 발생 ==둘째 인두굽이== → 전부 얼굴신경(VII) 지배 이는곳/닿는곳 뼈·근막에서 일어나 ==피부에 정지== (그래서 수축하면 주름이 생긴다) 층 얕은근막 속 에 있다 — 피부벗기기에서 같이 딸려 나오기 쉽다 공통 수렴점 입 주위 근육은 ==볼굴대(modiolus)== 로 모인다 2) 눈·코 주위 근육 작용 구분 포인트 뒤통수이마근 이마힘살 frontal belly 눈썹 올림 · 이마 가로 주름 머리덮개널힘줄로 뒤통수힘살과 이어짐 눈둘레근 orbicularis oculi 눈 감기 눈확부분(꽉 감기)·눈꺼풀부분(깜빡임)·==눈물주머니부분==(눈물 배출) 눈썹주름근 corrugator supercilii 눈썹 모음 · 미간 세로 주름 눈살근과 주름 방향이 반대 눈살근 procerus 미간 가로 주름 콧등 위 세로근 코근 nasalis 가로부분(콧구멍 좁힘)·날개부분(넓힘) 두 부분 작용이 반대 코중격내림근 코끝을 내림 웃을 때 코끝이 처지는 원인 [!암기] 주름 방향으로 갈라라 :: 이마힘살·눈살근 = 가로주름 , 눈썹주름근 = 세로주름 . 실사 태깅에서 위치가 비슷할 때 이 한 줄이 답을 가른다. 3) 입 주위 — 올림근 4형제와 내림근 3형제 방향 근육 특징 올림 위입술콧방울올림근 ★ 가장 안쪽 · 코방울 + 윗입술 두 갈래 올림 위입술올림근 코방울로 안 감 올림 작은광대근 · 큰광대근 큰광대근은 볼굴대로 — 웃음근 올림 입꼬리올림근 위입술올림근 깊은쪽 내림 아래입술내림근 · 입꼬리내림근 · 턱끝근 턱끝근은 아랫입술을 내밀고 턱 주름 가로 입꼬리당김근 risorius 볼굴대에서 가쪽으로 — 억지웃음 벽 볼근 buccinator 볼의 벽 · ==귀밑샘관이 뚫고 들어간다== · 나팔 불기 고리 입둘레근 orbicularis oris 여러 근육 섬유가 엮인 고리 — 독립 근육이 아니다 [!기출] 볼근은 표정근육인가 씹기근육인가 :: 위치가 볼이라 헷갈리지만 표정근육(VII 볼가지) 이다. 씹을 때 음식을 이 사이로 밀어 주는 보조 역할을 할 뿐, 아래턱을 움직이지 않는다. [!임상] 볼굴대(modiolus) :: 입꼬리 가쪽 1 cm의 ==근육섬유 덩어리==. 입둘레근·큰광대근·입꼬리올림근/내림근·입꼬리당김근·볼근이 수렴하는 역학 중심 이라 구순열 재건·안면 성형의 기준점이다. 2. 귀밑샘과 얼굴신경 Parotid gland & facial nerve !fig docs/assets/anatomy/tree s04 nerve labeled.svg VII은 움직이고 V는 느낀다 — 얼굴에 오는 두 뇌신경의 계보 1) 귀밑샘을 뚫고 지나는 것 — 얕은 것부터 순서 구조 메모 ① 가장 얕다 ==얼굴신경 VII== 샘을 얕은엽/깊은엽으로 가른다 — 종양 수술의 기준 ② 중간 아래턱뒤정맥 얕은관자정맥 + 위턱정맥 ③ 가장 깊다 ==바깥목동맥== 여기서 얕은관자·위턱동맥으로 갈린다 = 다리오금의 신–정–동 과 같은 순서 — 두 자리를 한 묶음으로 외운다. 구조 포인트 귀밑샘관 parotid duct 광대활 아래 손가락 두 마디 · ==볼근을 뚫고== 위 둘째큰어금니 맞은편으로 열림 귀밑샘 분비 얼굴신경이 아니다 — ==혀인두신경 IX== → 작은바위신경 → 귀신경절 → 귓바퀴관자신경 에 얹혀 온다 볼지방체 볼근 얕은쪽 캡슐 지방 — 영아의 빨기 패드. 걷어내야 깊은 구조가 보인다 2) 얼굴신경 다섯 가지 — 관광볼턱목 가지 분포 임상 관자가지 이마힘살·눈둘레근 위쪽 마비 시 이마 주름이 안 잡힘 광대가지 눈둘레근 ==각막반사의 날개(운동)== — 들신경은 V1 볼가지 볼근·입 주위 근육 (여러 개) 볼굴대 지배 턱모서리가지 아래입술내림근·턱끝근 ==턱밑샘 수술 손상 1순위== → 웃을 때 아랫입술 비대칭 목가지 넓은목근 같은 자리의 가로목신경은 감각 — 갈라 외운다 [!기출] 중추성 vs 말초성 얼굴마비 :: 이마힘살은 양쪽 대뇌겉질 의 지배를 받아, 중추성(뇌졸중)에서는 이마 주름이 남고 아래얼굴만 처진다. 말초성(Bell 마비)은 ==이마까지 전부== 마비된다. 태깅과 함께 반드시 붙는 임상 포인트. 3. 얼굴의 혈관 Vessels of the face !fig docs/assets/anatomy/tree s04 vessel labeled.svg 바깥목동맥 계열과 얼굴정맥 계열 — 가로얼굴동맥의 주인이 누구인지 확인 혈관 주행 함정 얼굴동맥 facial a. 바깥목동맥 → 턱밑샘 뒤 → ==깨물근 앞모서리에서 아래턱뼈를 넘음== → 구불구불 올라 눈구석동맥 맥박 촉지점. 아래·위입술동맥, 가쪽코동맥을 낸다 가로얼굴동맥 ★ ==얕은관자동맥== 가지 · 귀밑샘관 위 를 가로로 얼굴동맥 가지가 아니다 — 태깅 단골 함정 얕은관자동맥 귀 앞 박동 촉지 → 이마가지·마루가지 거대세포동맥염 생검 부위 얼굴정맥 눈구석정맥에서 시작 · 동맥의 ==뒤쪽을 곧게== 동맥은 구불구불, 정맥은 곧게 — 구분 기준 아래턱뒤정맥 얕은관자정맥 + 위턱정맥 → 앞가지(→온얼굴정맥) · 뒤가지(→바깥목정맥) 귀밑샘 속 중간층 [!임상] 얼굴의 위험삼각 :: 얼굴정맥에는 판막이 없어 눈구석정맥–위눈정맥을 거쳐 ==해면정맥굴==과 통한다. 코 뿌리~윗입술 삼각의 종기를 짜면 감염이 역류해 해면정맥굴 혈전증이 될 수 있다. 4. 삼차신경 피부분지 Cutaneous branches of V 가지 나오는 구멍 담당 피부 눈확위신경 (V1) 눈확위구멍/패임 이마·머리덮개 앞· 위눈꺼풀 도르래위신경 (V1) 그보다 안쪽 미간·이마 안쪽 눈확아래신경 (V2) 눈확아래구멍 아래눈꺼풀·뺨·코 가쪽· 윗입술 턱끝신경 (V3) 턱끝구멍 아랫입술 ·턱 = 세 구멍은 거의 ==수직선상==에 놓인다. 각 구멍에서 같은 이름의 동맥 이 함께 나온다(눈확위·눈확아래·턱끝동맥). [!주의] 얼굴 감각의 경계 :: V1/V2는 위눈꺼풀 / 아래눈꺼풀 에서, V2/V3는 윗입술 / 아랫입술 에서 갈린다. 턱뼈각 부위 피부는 삼차신경이 아니라 ==큰귓바퀴신경(C2–3)== 이다 — 삼차신경통 감별의 고전 포인트. 5. 씹기근육 Muscles of mastication 근육 작용 메모 깨물근 masseter 아래턱 올림 광대활 → 아래턱가지 가쪽. 얕은/깊은부분 관자근 temporalis 올림 + 뒤당김 부챗살 섬유가 ==근육돌기==에 붙음 안쪽날개근 올림 (깨물근의 안쪽 짝) 아래턱가지 안쪽 면 가쪽날개근 ★ ==유일하게 입을 벌린다== · 내밀기 관절원반에 붙어 턱관절 운동의 주역 = 넷 다 ==첫째 인두굽이== 유래 → 아래턱신경(V3) 지배. 표정근육(둘째 굽이·VII)과 정확히 짝지어 외운다. [!암기] 깨물근 얕은쪽을 지나는 것 3형제 :: ==귀밑샘관 · 얼굴신경 볼가지 · 가로얼굴동맥==. 이 셋이 나란히 가로로 달리는 것이 얼굴 가쪽 태깅의 뼈대다. 6. 큰가슴근부위 Pectoral region 구조 포인트 큰가슴근 빗장부분·복장갈비부분·배부분 → 위팔뼈 결절사이고랑 가쪽입술 . 안모음·안쪽돌림 작은가슴근 3–5번 갈비뼈 → 어깨뼈 ==부리돌기==. 겨드랑동맥을 1·2·3부로 나누는 기준 가쪽가슴근신경 (C5–7, 가쪽다발) 작은가슴근 위로 넘어 — 큰가슴근만 안쪽가슴근신경 (C8–T1, 안쪽다발) 작은가슴근을 ==뚫고== — 둘 다 가슴봉우리동맥 겨드랑동맥 2부 · 빗장가슴근막을 뚫고 → 가슴근·봉우리·빗장·어깨세모가지 세모가슴근고랑 ==노쪽피부정맥 + 어깨세모가지== 가 함께 지나는 통로 젖샘 2–6번 갈비뼈 · ==젖샘걸이인대(Cooper)== · 암에서 이 인대가 끌려 피부 함몰 [!암기] 안쪽은 뚫고 둘 다, 가쪽은 넘어서 하나 :: 이름의 안쪽·가쪽은 근육 위치가 아니라 팔신경얼기 다발 에서 온 것이다. 이 한 줄이 문항 0108의 답이다. 7. 가슴벽과 갈비사이 Thoracic wall !fig docs/assets/anatomy/tree s04 bundle labeled.svg 귀밑샘은 얕은→깊은 신–정–동, 갈비사이고랑은 위→아래 정–동–신 층 근육 섬유 방향 · 메모 바깥 바깥갈비사이근 뒤위 → 앞아래 (주머니에 손 넣는 방향). 앞쪽은 ==바깥갈비사이막== 중간 속갈비사이근 반대 방향. 뒤쪽은 속갈비사이막 안 맨속갈비사이근·가로가슴근 혈관신경다발이 속·맨속 사이 항목 내용 갈비사이고랑 배열 위에서 ==정맥 → 동맥 → 신경 (VAN)== 천자 원칙 신경이 가장 아래·얕으므로 ==갈비뼈 위 모서리를 따라== 삽입 갈비사이신경 T1–T11 앞가지 · 가쪽·앞 피부가지로 분절 지배 동맥 공급 뒤갈비사이동맥(가슴대동맥) ↔ 앞갈비사이동맥(속가슴동맥) 문합 복장뼈각 둘째 갈비연골 높이 = ==기관 갈림·대동맥활 시작·T4/T5== 의 기준선 [!임상] 젖꼭지와 흉관 :: 남성 젖꼭지는 대개 ==넷째 갈비사이공간==(T4 피부분절). 흉관은 중간겨드랑선 4–5번 갈비사이공간(안전삼각)에서 갈비뼈 위 모서리를 따라 넣는다. 8. 실사 태깅 15문항 아래는 필기를 제거한 복원 실사(비공개 렌더)다. 각 문항의 정답·해설은 뒷장 정답표에. 라벨·타이틀·자막은 가려 두었고, 클린판( clean.png )에는 원본 라벨이 살아 있다."
   },
   {
    "id": "anatomy-2026-0110",
    "type": "anatomy",
+   "unit": "4회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "갈비사이신경과 갈비사이고랑 배열 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -147,11 +152,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0110.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 P p22, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 갈비사이신경과 갈비사이고랑 배열 실사 spotter (필기 제거·복원본) spotter 복원 4회차 갈비사이신경과 예습시험 태깅 과거 학기 'Pectoral region · Thoracic wall' 영상 스캔 23장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p22 문제 실사 spotter — 복원 이미지(4회차 P p22, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 갈비사이신경과 갈비사이고랑 배열 실사 spotter (필기 제거·복원본) 4회차 · 가슴 spotter 복원 4회차 갈비사이신경과 예습시험 태깅 과거 학기 'Pectoral region · Thoracic wall' 영상 스캔 23장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p22 문제 실사 spotter — 복원 이미지(4회차 P p22, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0109",
    "type": "anatomy",
+   "unit": "4회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "가슴봉우리동맥 가슴근가지 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -167,11 +173,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0109.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 P p16, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 가슴봉우리동맥 가슴근가지 실사 spotter (필기 제거·복원본) spotter 복원 4회차 가슴봉우리동맥 예습시험 태깅 과거 학기 'Pectoral region · Thoracic wall' 영상 스캔 23장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p16 문제 실사 spotter — 복원 이미지(4회차 P p16, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 가슴봉우리동맥 가슴근가지 실사 spotter (필기 제거·복원본) 4회차 · 가슴 spotter 복원 4회차 가슴봉우리동맥 예습시험 태깅 과거 학기 'Pectoral region · Thoracic wall' 영상 스캔 23장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p16 문제 실사 spotter — 복원 이미지(4회차 P p16, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0108",
    "type": "anatomy",
+   "unit": "4회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "안쪽가슴근신경·작은가슴근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -187,11 +194,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0108.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 P p15, 번호핀 ①·②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 안쪽가슴근신경·작은가슴근 실사 spotter (필기 제거·복원본) spotter 복원 4회차 안쪽가슴근신경·작은가슴근 예습시험 태깅 과거 학기 'Pectoral region · Thoracic wall' 영상 스캔 23장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p15 문제 실사 spotter — 복원 이미지(4회차 P p15, 번호핀 ①·②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 안쪽가슴근신경·작은가슴근 실사 spotter (필기 제거·복원본) 4회차 · 가슴 spotter 복원 4회차 안쪽가슴근신경·작은가슴근 예습시험 태깅 과거 학기 'Pectoral region · Thoracic wall' 영상 스캔 23장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p15 문제 실사 spotter — 복원 이미지(4회차 P p15, 번호핀 ①·②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0107",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "깨물근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -207,11 +215,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0107.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p50, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 깨물근 실사 spotter (필기 제거·복원본) spotter 복원 4회차 깨물근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p50 문제 실사 spotter — 복원 이미지(4회차 F p50, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 깨물근 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 깨물근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p50 문제 실사 spotter — 복원 이미지(4회차 F p50, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0106",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "눈확아래신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -227,11 +236,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0106.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p46, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 눈확아래신경 실사 spotter (필기 제거·복원본) spotter 복원 4회차 눈확아래신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p46 문제 실사 spotter — 복원 이미지(4회차 F p46, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 눈확아래신경 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 눈확아래신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p46 문제 실사 spotter — 복원 이미지(4회차 F p46, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0105",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "눈확위신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -247,11 +257,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0105.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p42, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 눈확위신경 실사 spotter (필기 제거·복원본) spotter 복원 4회차 눈확위신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p42 문제 실사 spotter — 복원 이미지(4회차 F p42, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 눈확위신경 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 눈확위신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p42 문제 실사 spotter — 복원 이미지(4회차 F p42, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0104",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "귓바퀴관자신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -267,11 +278,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0104.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p40, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 귓바퀴관자신경 실사 spotter (필기 제거·복원본) spotter 복원 4회차 귓바퀴관자신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p40 문제 실사 spotter — 복원 이미지(4회차 F p40, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 귓바퀴관자신경 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 귓바퀴관자신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p40 문제 실사 spotter — 복원 이미지(4회차 F p40, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0103",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "얼굴정맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -287,11 +299,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0103.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p37, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 얼굴정맥 실사 spotter (필기 제거·복원본) spotter 복원 4회차 얼굴정맥 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p37 문제 실사 spotter — 복원 이미지(4회차 F p37, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 얼굴정맥 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 얼굴정맥 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p37 문제 실사 spotter — 복원 이미지(4회차 F p37, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0102",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "얼굴신경 5가지 분지 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -307,11 +320,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0102.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p33, 번호핀 ①~⑤)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 얼굴신경 5가지 분지 실사 spotter (필기 제거·복원본) spotter 복원 4회차 얼굴신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p33 문제 실사 spotter — 복원 이미지(4회차 F p33, 번호핀 ①~⑤)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 얼굴신경 5가지 분지 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 얼굴신경 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p33 문제 실사 spotter — 복원 이미지(4회차 F p33, 번호핀 ①~⑤)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0101",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "가로얼굴동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -327,11 +341,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0101.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p29, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 가로얼굴동맥 실사 spotter (필기 제거·복원본) spotter 복원 4회차 가로얼굴동맥 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p29 문제 실사 spotter — 복원 이미지(4회차 F p29, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 가로얼굴동맥 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 가로얼굴동맥 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p29 문제 실사 spotter — 복원 이미지(4회차 F p29, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0100",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "볼지방체 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -347,11 +362,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0100.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p28, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 볼지방체 실사 spotter (필기 제거·복원본) spotter 복원 4회차 볼지방체 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p28 문제 실사 spotter — 복원 이미지(4회차 F p28, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 볼지방체 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 볼지방체 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p28 문제 실사 spotter — 복원 이미지(4회차 F p28, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0099",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "볼굴대(modiolus) 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -367,11 +383,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0099.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p19, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 볼굴대(modiolus) 실사 spotter (필기 제거·복원본) spotter 복원 4회차 볼굴대 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p19 문제 실사 spotter — 복원 이미지(4회차 F p19, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 볼굴대(modiolus) 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 볼굴대 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p19 문제 실사 spotter — 복원 이미지(4회차 F p19, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0098",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "위입술콧방울올림근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -387,11 +404,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0098.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p12, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위입술콧방울올림근 실사 spotter (필기 제거·복원본) spotter 복원 4회차 위입술콧방울올림근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p12 문제 실사 spotter — 복원 이미지(4회차 F p12, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 위입술콧방울올림근 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 위입술콧방울올림근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p12 문제 실사 spotter — 복원 이미지(4회차 F p12, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0097",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "눈살근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -407,11 +425,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0097.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p7, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 눈살근 실사 spotter (필기 제거·복원본) spotter 복원 4회차 눈살근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p7 문제 실사 spotter — 복원 이미지(4회차 F p7, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 눈살근 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 눈살근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p7 문제 실사 spotter — 복원 이미지(4회차 F p7, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0096",
    "type": "anatomy",
+   "unit": "4회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "뒤통수이마근 이마힘살 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -427,11 +446,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0096.md",
    "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p4, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 뒤통수이마근 이마힘살 실사 spotter (필기 제거·복원본) spotter 복원 4회차 뒤통수이마근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p4 문제 실사 spotter — 복원 이미지(4회차 F p4, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 뒤통수이마근 이마힘살 실사 spotter (필기 제거·복원본) 4회차 · 머리 spotter 복원 4회차 뒤통수이마근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 50장 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p4 문제 실사 spotter — 복원 이미지(4회차 F p4, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0076",
    "type": "anatomy",
+   "unit": "6회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "폐쇄신경 앞가지 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -448,11 +468,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0076.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p36)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 폐쇄신경 앞가지 실사 spotter (필기 제거·복원본) spotter 복원 6회차 폐쇄신경 짧은모음근 안쪽칸 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p36 문제 실사 spotter — 복원 이미지(6회차 C p36)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 폐쇄신경 앞가지 실사 spotter (필기 제거·복원본) 6회차 · 다리 spotter 복원 6회차 폐쇄신경 짧은모음근 안쪽칸 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p36 문제 실사 spotter — 복원 이미지(6회차 C p36)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0075",
    "type": "anatomy",
+   "unit": "6회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "두렁신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -469,11 +490,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0075.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p29)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 두렁신경 실사 spotter (필기 제거·복원본) spotter 복원 6회차 두렁신경 모음근굴 넙다리신경 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p29 문제 실사 spotter — 복원 이미지(6회차 C p29)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 두렁신경 실사 spotter (필기 제거·복원본) 6회차 · 다리 spotter 복원 6회차 두렁신경 모음근굴 넙다리신경 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p29 문제 실사 spotter — 복원 이미지(6회차 C p29)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0074",
    "type": "anatomy",
+   "unit": "6회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "넙다리관구멍 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -490,11 +512,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0074.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p6)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 넙다리관구멍 실사 spotter (필기 제거·복원본) spotter 복원 6회차 넙다리관구멍 넙다리탈장 오목인대 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p6 문제 실사 spotter — 복원 이미지(6회차 C p6)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 넙다리관구멍 실사 spotter (필기 제거·복원본) 6회차 · 다리 spotter 복원 6회차 넙다리관구멍 넙다리탈장 오목인대 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 C p6 문제 실사 spotter — 복원 이미지(6회차 C p6)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0073",
    "type": "anatomy",
+   "unit": "6회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "폐쇄신경 앞피부가지 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -511,11 +534,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0073.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p40)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 폐쇄신경 앞피부가지 실사 spotter (필기 제거·복원본) spotter 복원 6회차 폐쇄신경 앞피부가지 연관통 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p40 문제 실사 spotter — 복원 이미지(6회차 B p40)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 폐쇄신경 앞피부가지 실사 spotter (필기 제거·복원본) 6회차 · 다리 spotter 복원 6회차 폐쇄신경 앞피부가지 연관통 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p40 문제 실사 spotter — 복원 이미지(6회차 B p40)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0072",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "위후두동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -532,11 +556,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0072.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위후두동맥 실사 spotter (필기 제거·복원본) spotter 복원 6회차 위후두동맥 방패목뿔막 위후두신경 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p27 문제 실사 spotter — 복원 이미지(6회차 B p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 위후두동맥 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 위후두동맥 방패목뿔막 위후두신경 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p27 문제 실사 spotter — 복원 이미지(6회차 B p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0071",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "위갑상동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -553,11 +578,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0071.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위갑상동맥 실사 spotter (필기 제거·복원본) spotter 복원 6회차 위갑상동맥 바깥목동맥 방패샘 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p8 문제 실사 spotter — 복원 이미지(6회차 B p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 위갑상동맥 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 위갑상동맥 바깥목동맥 방패샘 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 B p8 문제 실사 spotter — 복원 이미지(6회차 B p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0070",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "어깨목뿔근 위힘살·아래힘살 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -574,11 +600,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0070.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p42)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 어깨목뿔근 위힘살·아래힘살 실사 spotter (필기 제거·복원본) spotter 복원 6회차 어깨목뿔근 근육삼각 목신경고리 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p42 문제 실사 spotter — 복원 이미지(6회차 A p42)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 어깨목뿔근 위힘살·아래힘살 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 어깨목뿔근 근육삼각 목신경고리 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p42 문제 실사 spotter — 복원 이미지(6회차 A p42)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0069",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "목뿔뼈 몸통 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -595,11 +622,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0069.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p34)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 목뿔뼈 몸통 실사 spotter (필기 제거·복원본) spotter 복원 6회차 목뿔뼈 앞목삼각 두힘살근 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p34 문제 실사 spotter — 복원 이미지(6회차 A p34)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 목뿔뼈 몸통 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 목뿔뼈 앞목삼각 두힘살근 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p34 문제 실사 spotter — 복원 이미지(6회차 A p34)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0068",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "가로목신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -616,11 +644,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0068.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 가로목신경 실사 spotter (필기 제거·복원본) spotter 복원 6회차 가로목신경 목신경얼기 신경점 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p17 문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 가로목신경 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 가로목신경 목신경얼기 신경점 예습시험 과거 학기 '실습6' 스캔(담당교수·표기 날짜는 과거 학기 값) — 2026 회차 배정은 **부위 기준**으로 2026-09-03 6회차 — 업로드 스캔 A p17 문제 실사 spotter — 복원 이미지(6회차 A p17)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0052",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "피부판을 젖히는 방향과 남기는 층",
    "tags": [
@@ -634,11 +663,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0052.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 피부판을 젖히는 방향과 남기는 층 layer-order 1회차 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 피부판을 젖히는 방향과 남기는 층 1회차 · 등 layer-order 1회차 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0051",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "얕은정맥에서 깊은정맥으로 가는 길",
    "tags": [
@@ -653,11 +683,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0051.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 얕은정맥에서 깊은정맥으로 가는 길 relation 1회차 관통정맥 정맥류 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 얕은정맥에서 깊은정맥으로 가는 길 1회차 · 다리 relation 1회차 관통정맥 정맥류 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0050",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "두렁정맥 채취와 동반 신경 손상",
    "tags": [
@@ -672,11 +703,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0050.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 두렁정맥 채취와 동반 신경 손상 distinction 1회차 두렁신경 임상 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 두렁정맥 채취와 동반 신경 손상 1회차 · 다리 distinction 1회차 두렁신경 임상 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0049",
    "type": "anatomy",
+   "unit": "1회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "부위별 깊은근막의 이름",
    "tags": [
@@ -690,11 +722,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0049.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 부위별 깊은근막의 이름 relation 1회차 깊은근막 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 부위별 깊은근막의 이름 1회차 · 등·다리 relation 1회차 깊은근막 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0048",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "볼기 피부신경의 유래 구별",
    "tags": [
@@ -708,11 +741,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0048.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 볼기 피부신경의 유래 구별 distinction 1회차 볼기피부신경 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 볼기 피부신경의 유래 구별 1회차 · 다리 distinction 1회차 볼기피부신경 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0047",
    "type": "anatomy",
+   "unit": "1회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "꼬리마취의 삽입 부위와 목표 공간",
    "tags": [
@@ -727,11 +761,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0047.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 꼬리마취의 삽입 부위와 목표 공간 clinical-application 1회차 꼬리마취 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 꼬리마취의 삽입 부위와 목표 공간 1회차 · 골반·회음 clinical-application 1회차 꼬리마취 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0046",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "허리천자 높이의 해부학적 근거",
    "tags": [
@@ -746,11 +781,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0046.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 허리천자 높이의 해부학적 근거 clinical-application 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 허리천자 높이의 해부학적 근거 1회차 · 등 clinical-application 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0045",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "작은두렁정맥의 주행",
    "tags": [
@@ -764,11 +800,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0045.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 작은두렁정맥의 주행 course-tracing 1회차 작은두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 작은두렁정맥의 주행 1회차 · 다리 course-tracing 1회차 작은두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0044",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "큰두렁정맥의 주행",
    "tags": [
@@ -782,11 +819,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0044.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 큰두렁정맥의 주행 course-tracing 1회차 큰두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 큰두렁정맥의 주행 1회차 · 다리 course-tracing 1회차 큰두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0043",
    "type": "anatomy",
+   "unit": "1회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "피부벗기기에서 칼의 깊이",
    "tags": [
@@ -801,11 +839,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0043.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 피부벗기기에서 칼의 깊이 relation 1회차 얕은근막 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 피부벗기기에서 칼의 깊이 1회차 · 등·다리 relation 1회차 얕은근막 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0042",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "다리 얕은정맥 태깅 연습판 (1–10)",
    "tags": [
@@ -820,11 +859,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0042.md",
    "snippet": "문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 다리 얕은정맥 태깅 연습판 (1–10) spotter 도해 1회차 두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 다리 얕은정맥 태깅 연습판 (1–10) 1회차 · 다리 spotter 도해 1회차 두렁정맥 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p · e-Anatomy Lower limb Superficial layer 문제 퀴즈판: docs/assets/anatomy/diag saphenous veins quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0041",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척수신경 뒤가지의 지배 영역",
    "tags": [
@@ -839,11 +879,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0041.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 척수신경 뒤가지의 지배 영역 distinction 1회차 뒤가지 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 척수신경 뒤가지의 지배 영역 1회차 · 등 distinction 1회차 뒤가지 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0040",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12)",
    "tags": [
@@ -860,11 +901,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0040.md",
    "snippet": "문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12) branch-tree 도해 1회차 뒤가지 볼기피부신경 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 척수신경 가지와 등·볼기 피부신경 태깅 연습판 (1–12) 1회차 · 등 branch-tree 도해 1회차 뒤가지 볼기피부신경 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag dorsal rami quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0039",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "허리천자 통과 층 순서 (퀴즈판 11–19)",
    "tags": [
@@ -880,11 +922,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0039.md",
    "snippet": "문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 허리천자 통과 층 순서 (퀴즈판 11–19) layer-order 도해 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 허리천자 통과 층 순서 (퀴즈판 11–19) 1회차 · 등 layer-order 도해 1회차 허리천자 응용과제 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0038",
    "type": "anatomy",
+   "unit": "1회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "피부·근막 층과 절개선 태깅 연습판 (1–10)",
    "tags": [
@@ -900,11 +943,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0038.md",
    "snippet": "문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
-   "text": "Anatomy 피부·근막 층과 절개선 태깅 연습판 (1–10) spotter 도해 1회차 층 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+   "text": "Anatomy 피부·근막 층과 절개선 태깅 연습판 (1–10) 1회차 · 등·다리 spotter 도해 1회차 층 피부벗기기 예습시험 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p 문제 퀴즈판: docs/assets/anatomy/diag skin fascia layers quiz.svg 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "anatomy-2026-0037",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경",
    "tags": [
@@ -919,11 +963,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/concepts/lower-limb/anatomy-2026-0037.md",
    "snippet": "주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 ",
-   "text": "Anatomy 다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경 도해 1회차 정맥 두렁정맥 피부신경 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p, e-Anatomy Lower limb Superficial layer 02:44–03:39 / 12:02–13:34 주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 정중선 끝 두렁정맥구멍(넓은근막) → 넙다리정맥 종아리근막을 뚫고 → 오금정맥 동반 신경 두렁신경 saphenous n. (무릎 아래부터) 장딴지신경 sural n. 암기: 큰 안 앞 / 작 가 뒤 두렁정맥구멍 직전 지류 얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. · 바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.) 흐름과 판막 얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이) 판막이 이 한 방향 만 허용하고, 장딴지근이 펌프가 된다. 판막부전 → 역류 → 정맥류 varicose veins (큰두렁계에 흔하다). 동반 신경의 감각 영역 신경 감각 영역 유래 두렁신경 종아리 안쪽 · 발 안쪽 넙다리신경의 감각가지 장딴지신경 종아리 뒤가쪽 · 발 가쪽 정강신경 + 온종아리신경 교통가지 임상 안쪽복사 앞 큰두렁정맥 = 응급 정맥절개(cut down) 자리. 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 이식편 . 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경. 장딴지신경은 신경생검 에 자주 쓴다. 실습 주의 두 정맥과 짝 신경 모두 얕은근막 안 에 있다. 피부만 벗기면 그대로 남는다."
+   "text": "Anatomy 다리 얕은정맥(큰·작은두렁정맥)과 동반 피부신경 1회차 · 다리 도해 1회차 정맥 두렁정맥 피부신경 해부 수업계획서 확정본 §1회차 — 실습지침 307p·311p, e-Anatomy Lower limb Superficial layer 02:44–03:39 / 12:02–13:34 주행 도해: docs/assets/anatomy/diag saphenous veins labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0042 ) 큰두렁정맥 great saphenous v. 작은두렁정맥 small saphenous v. 시작 발등정맥활 안쪽 끝 발등정맥활 가쪽 끝 복사 안쪽복사 앞 가쪽복사 뒤 경로 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 아킬레스힘줄 옆 → 종아리 뒤 정중선 끝 두렁정맥구멍(넓은근막) → 넙다리정맥 종아리근막을 뚫고 → 오금정맥 동반 신경 두렁신경 saphenous n. (무릎 아래부터) 장딴지신경 sural n. 암기: 큰 안 앞 / 작 가 뒤 두렁정맥구멍 직전 지류 얕은배벽정맥 superficial epigastric v. · 얕은엉덩휘돌이정맥 superficial circumflex iliac v. · 바깥음부정맥 external pudendal v. (+ 덧두렁정맥 accessory saphenous v.) 흐름과 판막 얕은정맥(얕은근막 안) → 관통정맥 perforating v. → 깊은정맥(근육 사이) 판막이 이 한 방향 만 허용하고, 장딴지근이 펌프가 된다. 판막부전 → 역류 → 정맥류 varicose veins (큰두렁계에 흔하다). 동반 신경의 감각 영역 신경 감각 영역 유래 두렁신경 종아리 안쪽 · 발 안쪽 넙다리신경의 감각가지 장딴지신경 종아리 뒤가쪽 · 발 가쪽 정강신경 + 온종아리신경 교통가지 임상 안쪽복사 앞 큰두렁정맥 = 응급 정맥절개(cut down) 자리. 큰두렁정맥 = 관상동맥우회술(CABG)·말초우회의 이식편 . 채취 시 신경 손상 주의: 큰두렁 → 두렁신경 / 작은두렁 → 장딴지신경. 장딴지신경은 신경생검 에 자주 쓴다. 실습 주의 두 정맥과 짝 신경 모두 얕은근막 안 에 있다. 피부만 벗기면 그대로 남는다."
   },
   {
    "id": "anatomy-2026-0036",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척수신경 앞가지·뒤가지와 등·볼기 피부신경",
    "tags": [
@@ -939,11 +984,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/concepts/back/anatomy-2026-0036.md",
    "snippet": "갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior",
-   "text": "Anatomy 척수신경 앞가지·뒤가지와 등·볼기 피부신경 도해 1회차 신경 뒤가지 앞가지 볼기피부신경 해부 수업계획서 확정본 §1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이' (1회차 강의 PDF는 Drive 미보유) 갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior ramus 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기 굵기 가늘다 굵다 예외 C1 뒤가지(뒤통수밑신경) = 순수 운동 · C2 뒤가지 = 큰뒤통수신경 등세모근은 더부신경(XI) 지배 뒤가지의 피부가지 — 높이에 따라 갈린다 T1–T6: 안쪽가지 가 피부까지 간다. T7–T12: 가쪽가지 가 피부까지 간다. 둘 다 고유등근육에 운동가지를 준다. 볼기 피부신경 3형제 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 (엉덩뼈능선을 넘는다) 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 실습에서 등 피부를 벗기면 정중선 가까이에서 얕은근막을 뚫고 나오는 신경이 보인다 — 대부분 뒤가지의 피부가지다. 가쪽으로 갈수록 앞가지(갈비사이신경) 영역이 된다."
+   "text": "Anatomy 척수신경 앞가지·뒤가지와 등·볼기 피부신경 1회차 · 등 도해 1회차 신경 뒤가지 앞가지 볼기피부신경 해부 수업계획서 확정본 §1회차 응용과제 3 '척수신경 앞가지·뒤가지 차이' (1회차 강의 PDF는 Drive 미보유) 갈라지는 순서 도해: docs/assets/anatomy/diag dorsal rami labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0040 ) 척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐ └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합) ├─ 뒤가지 (가늘다, 얼기 없음) └─ 앞가지 (굵다, 얼기 만듦) 한눈 비교 축 뒤가지 posterior ramus 앞가지 anterior ramus 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기 굵기 가늘다 굵다 예외 C1 뒤가지(뒤통수밑신경) = 순수 운동 · C2 뒤가지 = 큰뒤통수신경 등세모근은 더부신경(XI) 지배 뒤가지의 피부가지 — 높이에 따라 갈린다 T1–T6: 안쪽가지 가 피부까지 간다. T7–T12: 가쪽가지 가 피부까지 간다. 둘 다 고유등근육에 운동가지를 준다. 볼기 피부신경 3형제 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 (엉덩뼈능선을 넘는다) 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 실습에서 등 피부를 벗기면 정중선 가까이에서 얕은근막을 뚫고 나오는 신경이 보인다 — 대부분 뒤가지의 피부가지다. 가쪽으로 갈수록 앞가지(갈비사이신경) 영역이 된다."
   },
   {
    "id": "anatomy-2026-0035",
    "type": "anatomy",
+   "unit": "1회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "피부·근막 층과 피부벗기기 절개선",
    "tags": [
@@ -958,11 +1004,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/concepts/back/anatomy-2026-0035.md",
    "snippet": "층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑",
-   "text": "Anatomy 피부·근막 층과 피부벗기기 절개선 도해 1회차 층 피부벗기기 얕은근막 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p (1회차 강의 PDF는 Drive 미보유) 층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑조직) 지방 + 피부신경 · 얕은정맥 · 림프관 4 깊은근막 deep fascia 부위마다 이름이 다르다(아래) 5 근육 muscle 2회차부터 깊은근막의 부위별 이름 부위 깊은근막 특징 등 등허리근막 thoracolumbar fascia 고유등근육을 감싼다 넓적다리 넓은근막 fascia lata 두렁정맥구멍 이 뚫려 있다 종아리 종아리근막 crural fascia 작은두렁정맥이 여기를 뚫고 들어간다 절개선 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 볼기 볼기주름 가로절개 볼기주름 다리 뒤 넓적다리 뒤 세로절개 + 오금·발목 가로절개 오금·발목 피부판은 정중선에서 가쪽으로 젖히고, 얕은근막은 몸쪽에 남긴다. 왜 얕은근막을 남기나 얕은근막 안에 피부신경과 얕은정맥 이 들어 있다. 이 층을 통째로 벗기면 2회차 이후 관찰할 표본이 사라지고, 되돌릴 수 없다. 깊은근막을 뚫고 나오는 관통점 이 \"이 신경이 어디서 나왔나\"를 묻는 태깅 자리다. 같은 순서가 임상이 된다 허리천자 바늘: 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간. 자세한 근거는 anatomy 2026 0034 §5."
+   "text": "Anatomy 피부·근막 층과 피부벗기기 절개선 1회차 · 등·다리 도해 1회차 층 피부벗기기 얕은근막 해부 수업계획서 확정본 §1회차 — 실습지침 11–13p / 307p·311p (1회차 강의 PDF는 Drive 미보유) 층 순서 — 겉에서 속으로 도해: docs/assets/anatomy/diag skin fascia layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0038 · anatomy 2026 0039 ) 순서 층 원어 내용물·특징 1 표피 epidermis 혈관 없음 2 진피 dermis 질기다 — 피부판을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (피부밑조직) 지방 + 피부신경 · 얕은정맥 · 림프관 4 깊은근막 deep fascia 부위마다 이름이 다르다(아래) 5 근육 muscle 2회차부터 깊은근막의 부위별 이름 부위 깊은근막 특징 등 등허리근막 thoracolumbar fascia 고유등근육을 감싼다 넓적다리 넓은근막 fascia lata 두렁정맥구멍 이 뚫려 있다 종아리 종아리근막 crural fascia 작은두렁정맥이 여기를 뚫고 들어간다 절개선 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 볼기 볼기주름 가로절개 볼기주름 다리 뒤 넓적다리 뒤 세로절개 + 오금·발목 가로절개 오금·발목 피부판은 정중선에서 가쪽으로 젖히고, 얕은근막은 몸쪽에 남긴다. 왜 얕은근막을 남기나 얕은근막 안에 피부신경과 얕은정맥 이 들어 있다. 이 층을 통째로 벗기면 2회차 이후 관찰할 표본이 사라지고, 되돌릴 수 없다. 깊은근막을 뚫고 나오는 관통점 이 \"이 신경이 어디서 나왔나\"를 묻는 태깅 자리다. 같은 순서가 임상이 된다 허리천자 바늘: 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간. 자세한 근거는 anatomy 2026 0034 §5."
   },
   {
    "id": "anatomy-2026-0034",
    "type": "anatomy",
+   "unit": "1회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥",
    "tags": [
@@ -977,11 +1024,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-16",
    "path": "content/anatomy/notes/anatomy-2026-0034-s01-study.md",
    "snippet": "0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami",
-   "text": "Anatomy 1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥 정리 1회차 예습시험 태깅 피부벗기기 0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami labeled.svg … quiz.svg anatomy 2026 0040 (1–12) 다리 얕은정맥 + 동반 피부신경 assets/anatomy/diag saphenous veins labeled.svg … quiz.svg anatomy 2026 0042 (1–10) 개념 카드 anatomy 2026 0035 (층)· anatomy 2026 0036 (신경)· anatomy 2026 0037 (정맥)에 같은 도해와 표가 들어 있다. 라벨판으로 익히고 → 퀴즈판으로 번호를 답한 뒤 → 문항 카드로 채점한다. 범위 주의 : 1회차는 강의 PDF가 Drive에 없다. 아래 내용은 수업계획서 확정본이 정한 범위(실습지침 11–13p / 307p·311p, e Anatomy Superficial layer, 응용과제 3)에 대해 인정 교재의 표준 서술만 정리한 것이다. 수업에서 다른 절개선을 지시하면 그쪽이 우선이다. 1. 이 회차의 성격 — \"벗기는 회차\" 1회차는 구조를 찾는 회차가 아니라 덮개를 걷어내는 회차다. 오리엔테이션과 위령전례 뒤에 등과 다리의 피부를 벗긴다. 그래서 외울 것은 근육 이름이 아니라 층의 순서 와 층 안에 무엇이 들어 있는가 다. 2회차부터 나올 모든 구조가 이 층 감각 위에 얹힌다. 핵심 한 줄: 칼은 진피까지만. 얕은근막은 남긴다. 얕은근막을 열어 버리면 그 안의 피부신경·얕은정맥이 함께 뜯겨 나가고, 다시 만들 수 없다. 2. 층 구조 — 겉에서 속으로 순서 층 원어 그 안에 있는 것 / 특징 1 표피 epidermis 혈관 없음, 각질층 2 진피 dermis 질기다 — 피부판(skin flap)을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (= 피부밑조직 subcutaneous tissue) 지방 + 피부신경 + 얕은정맥 + 림프관·얕은림프절 4 깊은근막 deep fascia 등 = 등허리근막 thoracolumbar fascia / 넓적다리 = 넓은근막 fascia lata / 종아리 = 종아리근막 crural fascia 5 근육 muscle 2회차부터 층별로 벗긴다 얕은근막과 깊은근막 사이를 관통정맥·피부신경이 뚫고 지나간다. 깊은근막을 뚫는 그 지점이 태깅에서 \"이 신경이 어디서 나왔나\"를 묻는 자리다. 깊은근막은 부위마다 이름이 다르다. 이름을 부위와 짝지어 외운다. 넓은근막에는 두렁정맥구멍(saphenous opening) 이라는 구멍이 있고, 큰두렁정맥이 바로 그 구멍으로 들어가 넙다리정맥에 합류한다(§4). 절개선 (실습지침 11–13p / 307p·311p 범위) 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 acromion 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 iliac crest 볼기 볼기주름 가로절개 볼기주름 gluteal fold 다리 뒤 넓적다리 뒤 세로절개 볼기주름 → 오금 → 발꿈치 무릎·발목 가로절개 2개 오금 popliteal fossa · 발목 ankle 피부판은 정중선에서 가쪽으로 젖힌다. 얕은근막을 피부판에 붙이지 말고 몸쪽에 남긴다. 3. 신경 — 앞가지와 뒤가지 (응용과제 3) 척수 spinal cord │ ┌─────────────────┴─────────────────┐ 뒤뿌리 posterior root 앞뿌리 anterior root (감각 · 척수신경절이 붙음) (운동 · 신경절 없음) └─────────────────┬─────────────────┘ 척수신경 spinal n. (혼합) 척추사이구멍을 나오자마자 둘로 ┌─────────────────┴─────────────────┐ 뒤가지 posterior ramus 앞가지 anterior ramus 가늘다 · 얼기를 만들지 않는다 굵다 · 얼기를 만든다 │ │ ┌────┴────┐ ├─ 목·팔·허리엉치 신경얼기 안쪽가지 가쪽가지 ├─ 갈비사이신경(가슴은 얼기 없음) │ │ └─ 몸통 앞·가쪽 + 사지 전부 │ └─ T7–T12에서 피부까지 (등 얕은층·중간층 근육도 여기) └──────────── T1–T6에서 피부까지 (둘 다 고유등근육 = 깊은층에 운동가지를 준다) 축 뒤가지 앞가지 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기를 만든다 예외 C1 뒤가지 = 뒤통수밑신경, 순수 운동 (피부가지 없음) · C2 뒤가지 = 큰뒤통수신경 등세모근은 앞가지가 아니라 더부신경(XI) 지배 볼기 피부신경 3형제 — 유래가 갈린다 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 — 엉덩뼈능선을 넘어 내려온다 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 유래 ← 함정 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 뒤가지가 볼기 피부까지 내려오는 건 위·중간뿐이다. 4. 혈관 — 다리 얕은정맥 (e Anatomy Lower limb Superficial layer 구간) 발등정맥활 dorsal venous arch ├─ 안쪽 끝 ─→ 큰두렁정맥 great saphenous v. │ 안쪽복사 '앞' → 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 │ → 두렁정맥구멍(넓은근막) → 넙다리정맥 femoral v. │ 동반 신경: 두렁신경 saphenous n. (넙다리신경의 감각가지, 무릎 아래부터) │ 두렁구멍 직전 지류: 얕은배벽정맥 · 얕은엉덩휘돌이정맥 · 바깥음부정맥 │ (+ 덧두렁정맥 accessory saphenous v.) └─ 가쪽 끝 ─→ 작은두렁정맥 small saphenous v. 가쪽복사 '뒤' → 종아리 뒤 정중선 → 깊은근막(종아리근막)을 뚫고 → 오금정맥 popliteal v. 동반 신경: 장딴지신경 sural n. (정강신경 + 온종아리신경 교통가지) 복사 규칙 : 큰두렁 = 안쪽복사 앞 / 작은두렁 = 가쪽복사 뒤 . → \"큰 안 앞 / 작 가 뒤\" 흐름: 얕은정맥 → 관통정맥 perforating v. → 깊은정맥. 판막이 이 한 방향만 허용하고, 장딴지근이 펌프 역할을 한다. 판막부전이면 역류해 정맥류 varicose veins 가 된다. 신경 감각 영역 손상 상황 두렁신경 종아리 안쪽 · 발 안쪽 큰두렁정맥 채취(CABG)·정맥절개 장딴지신경 종아리 뒤가쪽 · 발 가쪽 작은두렁정맥 채취 · 신경생검 5. 임상 포인트 (응용과제 1·2) 5 1. 허리천자 lumbar puncture 바늘이 지나는 층 — §2의 '겉 → 속' 감각 그대로다. 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간(뇌척수액) 높이 : L3–L4 또는 L4–L5 가시돌기 사이. 체표 지표 : 엉덩뼈능선 최고점을 이은 선(Tuffier 선) ≈ L4 가시돌기 높이. 원칙 : 성인 척수는 L1–L2에서 끝나므로(척수원뿔) 그 아래에는 말총(cauda equina)만 있다. 말총의 신경뿌리는 바늘에 밀려나 잘 다치지 않는다. 신생아·영아는 척수 끝이 L3까지 내려와 있어 더 아래(L4–L5)에서 찌른다. 자세: 옆으로 누워 등을 최대한 구부린다(가시돌기 사이가 벌어진다). 5 2. 꼬리마취 caudal anesthesia 어디로 : 엉치틈새 sacral hiatus — S5 뒤쪽 활이 닫히지 않아 생긴 구멍. 좌우 엉치뿔 sacral cornua 를 만져 그 사이로 들어간다. 어디에 : 엉치관의 경막바깥공간(epidural space) . 경질막은 보통 S2 높이에서 끝나므로 그 아래에서는 거미막밑공간에 들어가지 않는다. 목적 : 항문·회음·아래 골반 수술 마취, 소아 마취(성인보다 지표가 뚜렷), 무통분만, 만성 요통의 경막바깥 스테로이드 주입. 허리천자와의 차이: 허리천자는 거미막밑공간까지 (뇌척수액을 얻는다), 꼬리마취는 경막바깥공간에서 멈춘다 . 5 3. 실습에서 바로 쓰는 임상 안쪽복사 앞 큰두렁정맥 — 쇼크로 정맥이 안 보일 때 정맥절개(cut down) 자리. 큰두렁정맥은 관상동맥우회술(CABG)·말초우회의 이식편 으로 쓴다. 청진삼각·허리삼각 같은 등의 약한 자리는 2회차 얕은층 근육에서 다룬다. 6. 예습시험 체크리스트 10 수업 전날 밤, 아래 10개를 소리 내어 답할 수 있으면 준비 끝이다. 1. 피부에서 근육까지 층을 겉에서 속으로 5개 말하시오. 2. 얕은근막 안에 들어 있는 구조 3가지는? 3. 피부벗기기에서 칼은 어느 층까지 넣는가? 그 이유는? 4. 등·넓적다리·종아리의 깊은근막 이름을 각각 대시오. 5. 뒤가지가 운동으로 지배하는 근육은 어느 층인가? 앞가지는? 6. 등 위쪽(T1–T6)과 아래쪽(T7–T12)에서 피부까지 가는 것은 뒤가지의 어느 가지인가? 7. 위·중간·아래볼기피부신경의 유래를 각각 말하시오(하나만 계열이 다르다). 8. 큰두렁정맥·작은두렁정맥이 각각 어느 복사의 어느 쪽을 지나며, 어디로 들어가는가? 9. 두 두렁정맥에 각각 어떤 신경이 동반하며, 그 신경이 다치면 어디 감각이 사라지는가? 10. 허리천자에서 바늘이 지나는 층을 순서대로 말하고, L3–L4를 고르는 해부학적 이유를 대시오. 7. 다음 회차로 넘어가는 다리 2회차(2026 08 20)는 오늘 벗긴 자리에서 등 근육 3층 과 볼기부위 로 들어간다. 오늘 만든 층 감각(얕은 → 중간 → 깊은, 앞가지 → 뒤가지)이 그대로 2회차의 신경지배 규칙이 된다. 2회차 종합정리는 anatomy 2026 0021 ."
+   "text": "Anatomy 1회차 종합 정리 — 등·다리 피부벗기기 / 피부·근막 층 / 피부신경·얕은정맥 1회차 · 등·다리 정리 1회차 예습시험 태깅 피부벗기기 0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 절개선 + 피부·근막 층 + 허리천자 assets/anatomy/diag skin fascia layers labeled.svg … quiz.svg anatomy 2026 0038 (1–10) · anatomy 2026 0039 (11–19) 척수신경 앞가지·뒤가지 + 등·볼기 피부신경 assets/anatomy/diag dorsal rami labeled.svg … quiz.svg anatomy 2026 0040 (1–12) 다리 얕은정맥 + 동반 피부신경 assets/anatomy/diag saphenous veins labeled.svg … quiz.svg anatomy 2026 0042 (1–10) 개념 카드 anatomy 2026 0035 (층)· anatomy 2026 0036 (신경)· anatomy 2026 0037 (정맥)에 같은 도해와 표가 들어 있다. 라벨판으로 익히고 → 퀴즈판으로 번호를 답한 뒤 → 문항 카드로 채점한다. 범위 주의 : 1회차는 강의 PDF가 Drive에 없다. 아래 내용은 수업계획서 확정본이 정한 범위(실습지침 11–13p / 307p·311p, e Anatomy Superficial layer, 응용과제 3)에 대해 인정 교재의 표준 서술만 정리한 것이다. 수업에서 다른 절개선을 지시하면 그쪽이 우선이다. 1. 이 회차의 성격 — \"벗기는 회차\" 1회차는 구조를 찾는 회차가 아니라 덮개를 걷어내는 회차다. 오리엔테이션과 위령전례 뒤에 등과 다리의 피부를 벗긴다. 그래서 외울 것은 근육 이름이 아니라 층의 순서 와 층 안에 무엇이 들어 있는가 다. 2회차부터 나올 모든 구조가 이 층 감각 위에 얹힌다. 핵심 한 줄: 칼은 진피까지만. 얕은근막은 남긴다. 얕은근막을 열어 버리면 그 안의 피부신경·얕은정맥이 함께 뜯겨 나가고, 다시 만들 수 없다. 2. 층 구조 — 겉에서 속으로 순서 층 원어 그 안에 있는 것 / 특징 1 표피 epidermis 혈관 없음, 각질층 2 진피 dermis 질기다 — 피부판(skin flap)을 잡는 층. 절개는 여기까지 3 얕은근막 superficial fascia (= 피부밑조직 subcutaneous tissue) 지방 + 피부신경 + 얕은정맥 + 림프관·얕은림프절 4 깊은근막 deep fascia 등 = 등허리근막 thoracolumbar fascia / 넓적다리 = 넓은근막 fascia lata / 종아리 = 종아리근막 crural fascia 5 근육 muscle 2회차부터 층별로 벗긴다 얕은근막과 깊은근막 사이를 관통정맥·피부신경이 뚫고 지나간다. 깊은근막을 뚫는 그 지점이 태깅에서 \"이 신경이 어디서 나왔나\"를 묻는 자리다. 깊은근막은 부위마다 이름이 다르다. 이름을 부위와 짝지어 외운다. 넓은근막에는 두렁정맥구멍(saphenous opening) 이라는 구멍이 있고, 큰두렁정맥이 바로 그 구멍으로 들어가 넙다리정맥에 합류한다(§4). 절개선 (실습지침 11–13p / 307p·311p 범위) 부위 절개선 뼈 지표 등 뒤정중선 세로절개 C7 가시돌기 → 엉치뼈 등 위 봉우리쪽 가로절개 C7 → 어깨봉우리 acromion 등 아래 엉덩뼈능선 가로절개 엉덩뼈능선 iliac crest 볼기 볼기주름 가로절개 볼기주름 gluteal fold 다리 뒤 넓적다리 뒤 세로절개 볼기주름 → 오금 → 발꿈치 무릎·발목 가로절개 2개 오금 popliteal fossa · 발목 ankle 피부판은 정중선에서 가쪽으로 젖힌다. 얕은근막을 피부판에 붙이지 말고 몸쪽에 남긴다. 3. 신경 — 앞가지와 뒤가지 (응용과제 3) 척수 spinal cord │ ┌─────────────────┴─────────────────┐ 뒤뿌리 posterior root 앞뿌리 anterior root (감각 · 척수신경절이 붙음) (운동 · 신경절 없음) └─────────────────┬─────────────────┘ 척수신경 spinal n. (혼합) 척추사이구멍을 나오자마자 둘로 ┌─────────────────┴─────────────────┐ 뒤가지 posterior ramus 앞가지 anterior ramus 가늘다 · 얼기를 만들지 않는다 굵다 · 얼기를 만든다 │ │ ┌────┴────┐ ├─ 목·팔·허리엉치 신경얼기 안쪽가지 가쪽가지 ├─ 갈비사이신경(가슴은 얼기 없음) │ │ └─ 몸통 앞·가쪽 + 사지 전부 │ └─ T7–T12에서 피부까지 (등 얕은층·중간층 근육도 여기) └──────────── T1–T6에서 피부까지 (둘 다 고유등근육 = 깊은층에 운동가지를 준다) 축 뒤가지 앞가지 운동 고유등근육(깊은층) 만 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 피부 등 정중부 세로 띠 + 위·중간볼기 몸통 앞·가쪽, 사지 전부, 아래볼기 신경얼기 만들지 않는다(분절 유지) 목·팔·허리엉치 얼기를 만든다 예외 C1 뒤가지 = 뒤통수밑신경, 순수 운동 (피부가지 없음) · C2 뒤가지 = 큰뒤통수신경 등세모근은 앞가지가 아니라 더부신경(XI) 지배 볼기 피부신경 3형제 — 유래가 갈린다 신경 원어 유래 위볼기피부신경 superior cluneal n. L1–L3 뒤가지 — 엉덩뼈능선을 넘어 내려온다 중간볼기피부신경 middle cluneal n. S1–S3 뒤가지 아래볼기피부신경 inferior cluneal n. 뒤넙다리피부신경의 가지 = 앞가지(S1–S3) 유래 ← 함정 외우는 법: 위·중간 = 뒤가지 / 아래 = 앞가지. 뒤가지가 볼기 피부까지 내려오는 건 위·중간뿐이다. 4. 혈관 — 다리 얕은정맥 (e Anatomy Lower limb Superficial layer 구간) 발등정맥활 dorsal venous arch ├─ 안쪽 끝 ─→ 큰두렁정맥 great saphenous v. │ 안쪽복사 '앞' → 정강뼈 안쪽 → 무릎 뒤안쪽 → 넓적다리 안쪽 │ → 두렁정맥구멍(넓은근막) → 넙다리정맥 femoral v. │ 동반 신경: 두렁신경 saphenous n. (넙다리신경의 감각가지, 무릎 아래부터) │ 두렁구멍 직전 지류: 얕은배벽정맥 · 얕은엉덩휘돌이정맥 · 바깥음부정맥 │ (+ 덧두렁정맥 accessory saphenous v.) └─ 가쪽 끝 ─→ 작은두렁정맥 small saphenous v. 가쪽복사 '뒤' → 종아리 뒤 정중선 → 깊은근막(종아리근막)을 뚫고 → 오금정맥 popliteal v. 동반 신경: 장딴지신경 sural n. (정강신경 + 온종아리신경 교통가지) 복사 규칙 : 큰두렁 = 안쪽복사 앞 / 작은두렁 = 가쪽복사 뒤 . → \"큰 안 앞 / 작 가 뒤\" 흐름: 얕은정맥 → 관통정맥 perforating v. → 깊은정맥. 판막이 이 한 방향만 허용하고, 장딴지근이 펌프 역할을 한다. 판막부전이면 역류해 정맥류 varicose veins 가 된다. 신경 감각 영역 손상 상황 두렁신경 종아리 안쪽 · 발 안쪽 큰두렁정맥 채취(CABG)·정맥절개 장딴지신경 종아리 뒤가쪽 · 발 가쪽 작은두렁정맥 채취 · 신경생검 5. 임상 포인트 (응용과제 1·2) 5 1. 허리천자 lumbar puncture 바늘이 지나는 층 — §2의 '겉 → 속' 감각 그대로다. 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → 황색인대(저항 소실) → 경막바깥공간 → 경질막 → 거미막 → 거미막밑공간(뇌척수액) 높이 : L3–L4 또는 L4–L5 가시돌기 사이. 체표 지표 : 엉덩뼈능선 최고점을 이은 선(Tuffier 선) ≈ L4 가시돌기 높이. 원칙 : 성인 척수는 L1–L2에서 끝나므로(척수원뿔) 그 아래에는 말총(cauda equina)만 있다. 말총의 신경뿌리는 바늘에 밀려나 잘 다치지 않는다. 신생아·영아는 척수 끝이 L3까지 내려와 있어 더 아래(L4–L5)에서 찌른다. 자세: 옆으로 누워 등을 최대한 구부린다(가시돌기 사이가 벌어진다). 5 2. 꼬리마취 caudal anesthesia 어디로 : 엉치틈새 sacral hiatus — S5 뒤쪽 활이 닫히지 않아 생긴 구멍. 좌우 엉치뿔 sacral cornua 를 만져 그 사이로 들어간다. 어디에 : 엉치관의 경막바깥공간(epidural space) . 경질막은 보통 S2 높이에서 끝나므로 그 아래에서는 거미막밑공간에 들어가지 않는다. 목적 : 항문·회음·아래 골반 수술 마취, 소아 마취(성인보다 지표가 뚜렷), 무통분만, 만성 요통의 경막바깥 스테로이드 주입. 허리천자와의 차이: 허리천자는 거미막밑공간까지 (뇌척수액을 얻는다), 꼬리마취는 경막바깥공간에서 멈춘다 . 5 3. 실습에서 바로 쓰는 임상 안쪽복사 앞 큰두렁정맥 — 쇼크로 정맥이 안 보일 때 정맥절개(cut down) 자리. 큰두렁정맥은 관상동맥우회술(CABG)·말초우회의 이식편 으로 쓴다. 청진삼각·허리삼각 같은 등의 약한 자리는 2회차 얕은층 근육에서 다룬다. 6. 예습시험 체크리스트 10 수업 전날 밤, 아래 10개를 소리 내어 답할 수 있으면 준비 끝이다. 1. 피부에서 근육까지 층을 겉에서 속으로 5개 말하시오. 2. 얕은근막 안에 들어 있는 구조 3가지는? 3. 피부벗기기에서 칼은 어느 층까지 넣는가? 그 이유는? 4. 등·넓적다리·종아리의 깊은근막 이름을 각각 대시오. 5. 뒤가지가 운동으로 지배하는 근육은 어느 층인가? 앞가지는? 6. 등 위쪽(T1–T6)과 아래쪽(T7–T12)에서 피부까지 가는 것은 뒤가지의 어느 가지인가? 7. 위·중간·아래볼기피부신경의 유래를 각각 말하시오(하나만 계열이 다르다). 8. 큰두렁정맥·작은두렁정맥이 각각 어느 복사의 어느 쪽을 지나며, 어디로 들어가는가? 9. 두 두렁정맥에 각각 어떤 신경이 동반하며, 그 신경이 다치면 어디 감각이 사라지는가? 10. 허리천자에서 바늘이 지나는 층을 순서대로 말하고, L3–L4를 고르는 해부학적 이유를 대시오. 7. 다음 회차로 넘어가는 다리 2회차(2026 08 20)는 오늘 벗긴 자리에서 등 근육 3층 과 볼기부위 로 들어간다. 오늘 만든 층 감각(얕은 → 중간 → 깊은, 앞가지 → 뒤가지)이 그대로 2회차의 신경지배 규칙이 된다. 2회차 종합정리는 anatomy 2026 0021 ."
   },
   {
    "id": "paper-2026-0219",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -998,6 +1046,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0218",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -1014,6 +1063,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0217",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -1030,6 +1080,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0216",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -1046,6 +1097,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0215",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -1062,6 +1114,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0214",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -1078,6 +1131,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0213",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -1094,6 +1148,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0212",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -1110,6 +1165,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-daily-2026-08-15",
    "type": "anatomy",
+   "unit": "등·다리",
    "topic": "Anatomy",
    "subtopic": "daily plan 2026-08-15",
    "tags": [],
@@ -1118,11 +1174,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/daily/2026-08-15.md",
    "snippet": "오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-08-15 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+   "text": "Anatomy daily plan 2026-08-15 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 15 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 26일 · Tagging 2까지 65일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 21개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-2026-0067",
    "type": "anatomy",
+   "unit": "6회차 · 목·다리",
    "topic": "Anatomy",
    "subtopic": "6회차 서브노트 — 목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등",
    "tags": [
@@ -1139,11 +1196,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/notes/anatomy-2026-0067-s06-subnote.md",
    "snippet": "1. 목의 삼각 — 넷 + 둘 Triangles of the neck !fig docs/assets/anatomy/diag neck triangles labeled.svg 목빗근이 앞/뒤를 가르고, 두힘살근·어깨목뿔근이 여섯으로 나눈다 — 응용과제 1 답안 1) 큰 경계 삼각 경계 앞목삼각 anterior 위 아래턱뼈 아래모서리 · 뒤 ==목빗근 앞모서리== · 앞 목의 정중선 뒤목삼각 posterior 앞 ==목빗근 뒤모서리",
-   "text": "Anatomy 6회차 서브노트 — 목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등 서브노트 6회차 목삼각 넙다리삼각 표 예습시험 태깅 1. 목의 삼각 — 넷 + 둘 Triangles of the neck !fig docs/assets/anatomy/diag neck triangles labeled.svg 목빗근이 앞/뒤를 가르고, 두힘살근·어깨목뿔근이 여섯으로 나눈다 — 응용과제 1 답안 1) 큰 경계 삼각 경계 앞목삼각 anterior 위 아래턱뼈 아래모서리 · 뒤 ==목빗근 앞모서리== · 앞 목의 정중선 뒤목삼각 posterior 앞 ==목빗근 뒤모서리== · 뒤 등세모근 앞모서리 · 아래 빗장뼈 중간 1/3 = 가르는 근육은 딱 둘 — 두힘살근 (앞을 위쪽에서) · 어깨목뿔근 (앞을 아래쪽, 뒤를 위아래로). 둘 다 목뿔뼈 에 붙는다. 2) 앞목삼각의 네 소삼각 소삼각 경계 내용물 턱끝밑삼각 submental 양쪽 두힘살근 앞힘살 · 목뿔뼈 (바닥 턱목뿔근) 턱끝밑림프절 턱밑삼각 submandibular ★ 아래턱뼈 아래모서리 · 두힘살근 두 힘살 ==턱밑샘 · 턱밑샘관== · 혀신경 · 혀밑신경 · 얼굴동맥 목동맥삼각 carotid ★ 두힘살근 뒤힘살 · 어깨목뿔근 위힘살 · 목빗근 앞모서리 ==온목동맥 갈림== · 속목정맥 · 미주신경 근육삼각 muscular 어깨목뿔근 위힘살 · 목빗근 앞모서리 · 정중선 목뿔아래근육 · 방패샘 · 후두 · 기관 [!기출] 두힘살근의 두 얼굴 :: 한 근육인데 앞힘살은 삼차신경 (아래턱신경의 턱목뿔근신경), 뒤힘살은 얼굴신경 (VII) 지배다. 첫째·둘째 인두굽이 유래가 달라서다. 두 힘살을 잇는 ==중간힘줄==은 목뿔뼈에 섬유고리로 매인다. [!임상] 턱밑샘관 :: 길고 위로 올라가는 주행이라 침이 고여 ==침샘돌==이 가장 흔하다. 혀신경이 관을 가쪽에서 아래로 감아 안쪽으로 넘어가는 교차 가 태깅 포인트. 3) 뒤목삼각의 두 소삼각 소삼각 경계 내용물 뒤통수삼각 occipital 어깨목뿔근 아래힘살 위 ==더부신경 XI== · 목신경얼기 피부가지 4개 빗장위삼각 supraclavicular ★ 어깨목뿔근 아래힘살 아래 · 빗장뼈 ==빗장밑동맥 3부== · 팔신경얼기 줄기 · 가슴막꼭대기 [!임상] 뒤목삼각 두 사고 :: ① 림프절 생검에서 더부신경 손상 → 등세모근 위축·어깨처짐. ② 빗장위 중심정맥삽입에서 가슴막꼭대기를 찔러 기흉 . 2. 목의 혈관·신경 Vessels & nerves of the neck !fig docs/assets/anatomy/diag neck triangles labeled.svg 목동맥삼각 = 목혈관신경집 3인방이 드러나는 자리 1) 목혈관신경집 carotid sheath 구조 위치 포인트 온목동맥 → 속·바깥목동맥 안쪽 ==방패연골 위모서리(C4)== 높이에서 갈림. 갈리기 전엔 가지 없음 속목정맥 가쪽 목빗근에 덮임. 중심정맥삽입 표적 미주신경 X 둘 사이 뒤 아래로 내려가며 심장가지를 낸다 = 목동맥팽대(압력수용체) · 목동맥토리(화학수용체) — 둘 다 ==혀인두신경 IX== 담당 2) 목신경얼기 cervical plexus (C1–C4) 가지 담당 작은뒤통수신경 귓바퀴 뒤 머리덮개 큰귓바퀴신경 귓바퀴·턱뼈각 부위 피부 가로목신경 앞목삼각 피부 (감각 — 얼굴신경 목가지와 구분) 빗장위신경 목뿌리·가슴 윗부분 피부 목신경고리 ansa cervicalis 목뿔아래근육 (위뿌리 C1 + 아래뿌리 C2–3) [!주의] 넓은목근은 목신경이 아니다 :: 얕은근막 속 표정근육 이라 ==얼굴신경(VII)의 목가지== 지배. 같은 자리를 지나는 가로목신경(감각)과 갈라 외운다 — 운동이면 얼굴신경, 감각이면 가로목신경 . [!암기] 신경점(Erb's point) :: 목빗근 뒤모서리 중간 에서 목신경얼기 피부가지 4개가 한 점처럼 나온다. 여기가 국소마취 표적. 2b. 신경 계보 — 목신경얼기·허리신경얼기 Nerve tree !fig docs/assets/anatomy/tree s06 nerve labeled.svg 목신경얼기는 신경점 한 곳에서 피부가지 4개, 허리신경얼기는 넙다리·폐쇄로 갈린다 2c. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s06 vessel labeled.svg 바깥목동맥 8가지와 넙다리동맥 계열 + 속·바깥목정맥, 넙다리정맥 2d. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s06 bundle labeled.svg 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히 3. 넙다리삼각 Femoral triangle !fig .private/anatomy/render/uploads s06/C009 clean.png 실사 복원본 — 넙다리동맥과 안쪽넙다리휘돌이동맥. 라벨 살아 있는 판 경계 구조 위(바닥변) ==고샅인대== 가쪽 넙다리빗근 안쪽모서리 안쪽 긴모음근 안쪽모서리 바닥 엉덩허리근(가쪽) + 두덩근(안쪽) 지붕 넙다리근막 · 두렁정맥구멍 = 가쪽 → 안쪽 배열 NAVEL : 넙다리 신 경 – 넙다리 동 맥 – 넙다리 정 맥 – 빈공간 – 림 프(깊은샅고랑림프절) 가지 나오는 곳 포인트 깊은넙다리동맥 고샅인대 아래 ~4 cm 넓적다리의 주 공급원 안쪽넙다리휘돌이동맥 ★ 깊은넙다리동맥 ==엉덩허리근·두덩근 사이==로 → 넙다리뼈 머리·목 공급 가쪽넙다리휘돌이동맥 깊은넙다리동맥 넙다리빗근 아래로 가쪽 관통동맥 3–4개 깊은넙다리동맥 큰모음근을 뚫고 뒤칸으로 [!임상] 왜 넙다리동맥에서 찌르나 (응용과제 3) :: 굵고 얕고 뼈(넙다리뼈머리) 위에 있어 눌러 지혈이 된다 . 고샅인대 중간점 바로 아래에서 만져지므로 동맥채혈·심장 더듬자(카테터) 삽입의 표준 경로다. [!기출] 대퇴골두 무혈성괴사 :: 넙다리뼈 목 골절·엉덩관절 탈구로 ==안쪽넙다리휘돌이동맥==이 끊기면 생긴다. 어린이에서만 볼기뼈절구가지가 보조한다. 4. 넓적다리 앞칸·안쪽칸 Anterior & medial thigh !fig .private/anatomy/render/uploads s06/C009 clean.png 실사 복원본 — 앞칸의 층과 모음근 무리 위치 칸 근육 신경 작용 앞칸 넙다리빗근 sartorius ==넙다리신경== 굽힘·벌림·가쪽돌림 (책상다리) 넙다리네갈래근 4갈래 넙다리신경 무릎 폄 (==곧은근만 엉덩관절 굽힘도==) 엉덩허리근 엉덩근=넙다리신경 / 큰허리근=L1–3 앞가지 엉덩관절 굽힘 안쪽칸 긴·짧은·큰모음근 · 두덩근 · 두덩정강근 ==폐쇄신경== (큰모음근 일부는 정강신경) 모음 바깥폐쇄근 폐쇄신경 가쪽돌림 = 모음근굴 adductor canal : 넙다리빗근 아래, 넓은근모음근막이 지붕. 통과 = 넙다리동·정맥 + ==두렁신경== + 안쪽넓은근신경 → 아래끝의 모음근구멍 을 지나면 오금동맥이 된다. [!주의] 큰모음근의 이중 지배 :: 모음부분은 폐쇄신경, ==정강부분(궁둥뼈결절 기시)은 정강신경==. 그래서 큰모음근만 두 신경을 받는다. [!암기] 두 굴의 이름 :: 넓적다리 앞에서 넙다리삼각 → 모음근굴 → 모음근구멍 → 오금 으로 이어진다. 혈관 이름은 넙다리동맥 → (모음근구멍) → 오금동맥으로 바뀐다. 5. 종아리 앞칸·발등 Anterior leg & dorsum of foot !fig .private/anatomy/render/uploads s06/D022 clean.png 실사 복원본 — 발등의 폄근힘줄과 폄근널힘줄. 라벨 살아 있는 판 근육 닿는곳 작용 앞정강근 tibialis ant. 안쪽쐐기뼈·첫째발허리뼈 발등굽힘 + ==안쪽번짐== 긴엄지폄근 엄지 끝마디뼈 엄지 폄 긴발가락폄근 2–5 폄근널힘줄 발가락 폄 셋째종아리근 다섯째발허리뼈 발등굽힘 + 가쪽번짐 전 근육 ==깊은종아리신경== 지배, 혈류는 앞정강동맥 . 지지띠: 위·아래 폄근지지띠 가 힘줄을 눌러 활시위를 막는다. 발등 내용 근육 짧은엄지폄근 · 짧은발가락폄근 (깊은종아리신경) 동맥 ==발등동맥== — 긴엄지폄근 힘줄 가쪽 에서 촉지 신경 깊은종아리신경(첫째 발샅 피부) · 얕은종아리신경(나머지 발등 피부) 폄근널힘줄 ★ 폄근힘줄 + ==벌레근·뼈사이근==이 합류 → 발허리발가락관절과 뼈사이관절을 함께 편다 [!임상] 발등동맥 촉지 :: 긴엄지폄근 힘줄 바로 가쪽 , 첫째·둘째 발허리뼈 사이. 말초동맥질환 평가의 기본 지점이며 약 10%에서 정상적으로 만져지지 않는다. [!기출] 깊은 vs 얕은종아리신경 :: 깊은 은 앞칸 근육 전부 + 첫째 발샅 피부, 얕은 은 가쪽칸 근육(긴·짧은종아리근) + 발등 피부 대부분. 발처짐은 온종아리신경(둘의 어미)이 종아리뼈목에서 눌릴 때. 6. 마무리 체크리스트 Self check 목삼각을 그려 앞 4개·뒤 2개의 경계를 각각 말하시오(응용과제 1). 앞목삼각과 뒤목삼각을 가르는 근육은? 소삼각을 가르는 근육 둘은? 목혈관신경집 3인방의 배열(안쪽·가쪽·뒤)을 말하시오. 온목동맥은 어디서 갈라지며, 갈라지기 전에 가지를 내는가? 온목동맥 박동은 어디서 만지나(응용과제 2)? 양쪽을 동시에 누르면 안 되는 이유는? 넓은목근의 지배신경은? 같은 부위의 가로목신경과 어떻게 구분하는가? 두힘살근의 앞힘살·뒤힘살 지배신경이 다른 이유는? 넙다리삼각의 네 경계와 바닥을 말하고, 내용물을 가쪽부터 배열하시오. 넙다리동맥에서 채혈·더듬자를 넣는 해부학적 이유는(응용과제 3)? 안쪽넙다리휘돌이동맥이 임상에서 중요한 이유는? 모음근굴의 지붕·통과 구조물·끝나는 지점을 말하시오. 큰모음근이 두 신경의 지배를 받는 이유는? 종아리 앞칸 근육의 공통 신경·동맥은? 발등동맥은 어디서 만지나? 폄근널힘줄에 합류하는 근육 둘과, 그 덕에 가능한 움직임은? [!TIP] 함께 볼 자료 :: 도해 diag neck triangles labeled.svg (목삼각 — 응용과제 1 답안). 실사 문항 6개는 본 파일 뒤쪽에 합본되어 있다. 이 회차 스캔 178장 중 발목 안쪽면·굽힘근지지띠(D13–D20) 는 2026 시간표에서 7회차 범위이므로 여기에 넣지 않았다."
+   "text": "Anatomy 6회차 서브노트 — 목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등 6회차 · 목·다리 서브노트 6회차 목삼각 넙다리삼각 표 예습시험 태깅 1. 목의 삼각 — 넷 + 둘 Triangles of the neck !fig docs/assets/anatomy/diag neck triangles labeled.svg 목빗근이 앞/뒤를 가르고, 두힘살근·어깨목뿔근이 여섯으로 나눈다 — 응용과제 1 답안 1) 큰 경계 삼각 경계 앞목삼각 anterior 위 아래턱뼈 아래모서리 · 뒤 ==목빗근 앞모서리== · 앞 목의 정중선 뒤목삼각 posterior 앞 ==목빗근 뒤모서리== · 뒤 등세모근 앞모서리 · 아래 빗장뼈 중간 1/3 = 가르는 근육은 딱 둘 — 두힘살근 (앞을 위쪽에서) · 어깨목뿔근 (앞을 아래쪽, 뒤를 위아래로). 둘 다 목뿔뼈 에 붙는다. 2) 앞목삼각의 네 소삼각 소삼각 경계 내용물 턱끝밑삼각 submental 양쪽 두힘살근 앞힘살 · 목뿔뼈 (바닥 턱목뿔근) 턱끝밑림프절 턱밑삼각 submandibular ★ 아래턱뼈 아래모서리 · 두힘살근 두 힘살 ==턱밑샘 · 턱밑샘관== · 혀신경 · 혀밑신경 · 얼굴동맥 목동맥삼각 carotid ★ 두힘살근 뒤힘살 · 어깨목뿔근 위힘살 · 목빗근 앞모서리 ==온목동맥 갈림== · 속목정맥 · 미주신경 근육삼각 muscular 어깨목뿔근 위힘살 · 목빗근 앞모서리 · 정중선 목뿔아래근육 · 방패샘 · 후두 · 기관 [!기출] 두힘살근의 두 얼굴 :: 한 근육인데 앞힘살은 삼차신경 (아래턱신경의 턱목뿔근신경), 뒤힘살은 얼굴신경 (VII) 지배다. 첫째·둘째 인두굽이 유래가 달라서다. 두 힘살을 잇는 ==중간힘줄==은 목뿔뼈에 섬유고리로 매인다. [!임상] 턱밑샘관 :: 길고 위로 올라가는 주행이라 침이 고여 ==침샘돌==이 가장 흔하다. 혀신경이 관을 가쪽에서 아래로 감아 안쪽으로 넘어가는 교차 가 태깅 포인트. 3) 뒤목삼각의 두 소삼각 소삼각 경계 내용물 뒤통수삼각 occipital 어깨목뿔근 아래힘살 위 ==더부신경 XI== · 목신경얼기 피부가지 4개 빗장위삼각 supraclavicular ★ 어깨목뿔근 아래힘살 아래 · 빗장뼈 ==빗장밑동맥 3부== · 팔신경얼기 줄기 · 가슴막꼭대기 [!임상] 뒤목삼각 두 사고 :: ① 림프절 생검에서 더부신경 손상 → 등세모근 위축·어깨처짐. ② 빗장위 중심정맥삽입에서 가슴막꼭대기를 찔러 기흉 . 2. 목의 혈관·신경 Vessels & nerves of the neck !fig docs/assets/anatomy/diag neck triangles labeled.svg 목동맥삼각 = 목혈관신경집 3인방이 드러나는 자리 1) 목혈관신경집 carotid sheath 구조 위치 포인트 온목동맥 → 속·바깥목동맥 안쪽 ==방패연골 위모서리(C4)== 높이에서 갈림. 갈리기 전엔 가지 없음 속목정맥 가쪽 목빗근에 덮임. 중심정맥삽입 표적 미주신경 X 둘 사이 뒤 아래로 내려가며 심장가지를 낸다 = 목동맥팽대(압력수용체) · 목동맥토리(화학수용체) — 둘 다 ==혀인두신경 IX== 담당 2) 목신경얼기 cervical plexus (C1–C4) 가지 담당 작은뒤통수신경 귓바퀴 뒤 머리덮개 큰귓바퀴신경 귓바퀴·턱뼈각 부위 피부 가로목신경 앞목삼각 피부 (감각 — 얼굴신경 목가지와 구분) 빗장위신경 목뿌리·가슴 윗부분 피부 목신경고리 ansa cervicalis 목뿔아래근육 (위뿌리 C1 + 아래뿌리 C2–3) [!주의] 넓은목근은 목신경이 아니다 :: 얕은근막 속 표정근육 이라 ==얼굴신경(VII)의 목가지== 지배. 같은 자리를 지나는 가로목신경(감각)과 갈라 외운다 — 운동이면 얼굴신경, 감각이면 가로목신경 . [!암기] 신경점(Erb's point) :: 목빗근 뒤모서리 중간 에서 목신경얼기 피부가지 4개가 한 점처럼 나온다. 여기가 국소마취 표적. 2b. 신경 계보 — 목신경얼기·허리신경얼기 Nerve tree !fig docs/assets/anatomy/tree s06 nerve labeled.svg 목신경얼기는 신경점 한 곳에서 피부가지 4개, 허리신경얼기는 넙다리·폐쇄로 갈린다 2c. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s06 vessel labeled.svg 바깥목동맥 8가지와 넙다리동맥 계열 + 속·바깥목정맥, 넙다리정맥 2d. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s06 bundle labeled.svg 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히 3. 넙다리삼각 Femoral triangle !fig .private/anatomy/render/uploads s06/C009 clean.png 실사 복원본 — 넙다리동맥과 안쪽넙다리휘돌이동맥. 라벨 살아 있는 판 경계 구조 위(바닥변) ==고샅인대== 가쪽 넙다리빗근 안쪽모서리 안쪽 긴모음근 안쪽모서리 바닥 엉덩허리근(가쪽) + 두덩근(안쪽) 지붕 넙다리근막 · 두렁정맥구멍 = 가쪽 → 안쪽 배열 NAVEL : 넙다리 신 경 – 넙다리 동 맥 – 넙다리 정 맥 – 빈공간 – 림 프(깊은샅고랑림프절) 가지 나오는 곳 포인트 깊은넙다리동맥 고샅인대 아래 ~4 cm 넓적다리의 주 공급원 안쪽넙다리휘돌이동맥 ★ 깊은넙다리동맥 ==엉덩허리근·두덩근 사이==로 → 넙다리뼈 머리·목 공급 가쪽넙다리휘돌이동맥 깊은넙다리동맥 넙다리빗근 아래로 가쪽 관통동맥 3–4개 깊은넙다리동맥 큰모음근을 뚫고 뒤칸으로 [!임상] 왜 넙다리동맥에서 찌르나 (응용과제 3) :: 굵고 얕고 뼈(넙다리뼈머리) 위에 있어 눌러 지혈이 된다 . 고샅인대 중간점 바로 아래에서 만져지므로 동맥채혈·심장 더듬자(카테터) 삽입의 표준 경로다. [!기출] 대퇴골두 무혈성괴사 :: 넙다리뼈 목 골절·엉덩관절 탈구로 ==안쪽넙다리휘돌이동맥==이 끊기면 생긴다. 어린이에서만 볼기뼈절구가지가 보조한다. 4. 넓적다리 앞칸·안쪽칸 Anterior & medial thigh !fig .private/anatomy/render/uploads s06/C009 clean.png 실사 복원본 — 앞칸의 층과 모음근 무리 위치 칸 근육 신경 작용 앞칸 넙다리빗근 sartorius ==넙다리신경== 굽힘·벌림·가쪽돌림 (책상다리) 넙다리네갈래근 4갈래 넙다리신경 무릎 폄 (==곧은근만 엉덩관절 굽힘도==) 엉덩허리근 엉덩근=넙다리신경 / 큰허리근=L1–3 앞가지 엉덩관절 굽힘 안쪽칸 긴·짧은·큰모음근 · 두덩근 · 두덩정강근 ==폐쇄신경== (큰모음근 일부는 정강신경) 모음 바깥폐쇄근 폐쇄신경 가쪽돌림 = 모음근굴 adductor canal : 넙다리빗근 아래, 넓은근모음근막이 지붕. 통과 = 넙다리동·정맥 + ==두렁신경== + 안쪽넓은근신경 → 아래끝의 모음근구멍 을 지나면 오금동맥이 된다. [!주의] 큰모음근의 이중 지배 :: 모음부분은 폐쇄신경, ==정강부분(궁둥뼈결절 기시)은 정강신경==. 그래서 큰모음근만 두 신경을 받는다. [!암기] 두 굴의 이름 :: 넓적다리 앞에서 넙다리삼각 → 모음근굴 → 모음근구멍 → 오금 으로 이어진다. 혈관 이름은 넙다리동맥 → (모음근구멍) → 오금동맥으로 바뀐다. 5. 종아리 앞칸·발등 Anterior leg & dorsum of foot !fig .private/anatomy/render/uploads s06/D022 clean.png 실사 복원본 — 발등의 폄근힘줄과 폄근널힘줄. 라벨 살아 있는 판 근육 닿는곳 작용 앞정강근 tibialis ant. 안쪽쐐기뼈·첫째발허리뼈 발등굽힘 + ==안쪽번짐== 긴엄지폄근 엄지 끝마디뼈 엄지 폄 긴발가락폄근 2–5 폄근널힘줄 발가락 폄 셋째종아리근 다섯째발허리뼈 발등굽힘 + 가쪽번짐 전 근육 ==깊은종아리신경== 지배, 혈류는 앞정강동맥 . 지지띠: 위·아래 폄근지지띠 가 힘줄을 눌러 활시위를 막는다. 발등 내용 근육 짧은엄지폄근 · 짧은발가락폄근 (깊은종아리신경) 동맥 ==발등동맥== — 긴엄지폄근 힘줄 가쪽 에서 촉지 신경 깊은종아리신경(첫째 발샅 피부) · 얕은종아리신경(나머지 발등 피부) 폄근널힘줄 ★ 폄근힘줄 + ==벌레근·뼈사이근==이 합류 → 발허리발가락관절과 뼈사이관절을 함께 편다 [!임상] 발등동맥 촉지 :: 긴엄지폄근 힘줄 바로 가쪽 , 첫째·둘째 발허리뼈 사이. 말초동맥질환 평가의 기본 지점이며 약 10%에서 정상적으로 만져지지 않는다. [!기출] 깊은 vs 얕은종아리신경 :: 깊은 은 앞칸 근육 전부 + 첫째 발샅 피부, 얕은 은 가쪽칸 근육(긴·짧은종아리근) + 발등 피부 대부분. 발처짐은 온종아리신경(둘의 어미)이 종아리뼈목에서 눌릴 때. 6. 마무리 체크리스트 Self check 목삼각을 그려 앞 4개·뒤 2개의 경계를 각각 말하시오(응용과제 1). 앞목삼각과 뒤목삼각을 가르는 근육은? 소삼각을 가르는 근육 둘은? 목혈관신경집 3인방의 배열(안쪽·가쪽·뒤)을 말하시오. 온목동맥은 어디서 갈라지며, 갈라지기 전에 가지를 내는가? 온목동맥 박동은 어디서 만지나(응용과제 2)? 양쪽을 동시에 누르면 안 되는 이유는? 넓은목근의 지배신경은? 같은 부위의 가로목신경과 어떻게 구분하는가? 두힘살근의 앞힘살·뒤힘살 지배신경이 다른 이유는? 넙다리삼각의 네 경계와 바닥을 말하고, 내용물을 가쪽부터 배열하시오. 넙다리동맥에서 채혈·더듬자를 넣는 해부학적 이유는(응용과제 3)? 안쪽넙다리휘돌이동맥이 임상에서 중요한 이유는? 모음근굴의 지붕·통과 구조물·끝나는 지점을 말하시오. 큰모음근이 두 신경의 지배를 받는 이유는? 종아리 앞칸 근육의 공통 신경·동맥은? 발등동맥은 어디서 만지나? 폄근널힘줄에 합류하는 근육 둘과, 그 덕에 가능한 움직임은? [!TIP] 함께 볼 자료 :: 도해 diag neck triangles labeled.svg (목삼각 — 응용과제 1 답안). 실사 문항 6개는 본 파일 뒤쪽에 합본되어 있다. 이 회차 스캔 178장 중 발목 안쪽면·굽힘근지지띠(D13–D20) 는 2026 시간표에서 7회차 범위이므로 여기에 넣지 않았다."
   },
   {
    "id": "anatomy-2026-0066",
    "type": "anatomy",
+   "unit": "6회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "폄근널힘줄 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1160,11 +1218,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0066.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 D p22)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 폄근널힘줄 실사 spotter (필기 제거·복원본) spotter 복원 6회차 폄근널힘줄 발등 벌레근 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 D p22 문제 실사 spotter — 복원 이미지(6회차 D p22)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 폄근널힘줄 실사 spotter (필기 제거·복원본) 6회차 · 다리 spotter 복원 6회차 폄근널힘줄 발등 벌레근 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 D p22 문제 실사 spotter — 복원 이미지(6회차 D p22)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0065",
    "type": "anatomy",
+   "unit": "6회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "안쪽넙다리휘돌이동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1181,11 +1240,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0065.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 C p9)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 안쪽넙다리휘돌이동맥 실사 spotter (필기 제거·복원본) spotter 복원 6회차 안쪽넙다리휘돌이동맥 깊은넙다리동맥 넙다리삼각 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 C p9 문제 실사 spotter — 복원 이미지(6회차 C p9)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 안쪽넙다리휘돌이동맥 실사 spotter (필기 제거·복원본) 6회차 · 다리 spotter 복원 6회차 안쪽넙다리휘돌이동맥 깊은넙다리동맥 넙다리삼각 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 C p9 문제 실사 spotter — 복원 이미지(6회차 C p9)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0064",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "두힘살근 중간힘줄 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1202,11 +1262,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0064.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 두힘살근 중간힘줄 실사 spotter (필기 제거·복원본) spotter 복원 6회차 두힘살근 중간힘줄 목뿔뼈 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 B p12 문제 실사 spotter — 복원 이미지(6회차 B p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 두힘살근 중간힘줄 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 두힘살근 중간힘줄 목뿔뼈 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 B p12 문제 실사 spotter — 복원 이미지(6회차 B p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0063",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "온목동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1223,11 +1284,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0063.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 B p4)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 온목동맥 실사 spotter (필기 제거·복원본) spotter 복원 6회차 온목동맥 목동맥삼각 목혈관신경집 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 B p4 문제 실사 spotter — 복원 이미지(6회차 B p4)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 온목동맥 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 온목동맥 목동맥삼각 목혈관신경집 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 B p4 문제 실사 spotter — 복원 이미지(6회차 B p4)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0062",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "턱밑샘관 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1244,11 +1306,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0062.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p39)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 턱밑샘관 실사 spotter (필기 제거·복원본) spotter 복원 6회차 턱밑샘관 턱밑삼각 혀신경 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 A p39 문제 실사 spotter — 복원 이미지(6회차 A p39)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 턱밑샘관 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 턱밑샘관 턱밑삼각 혀신경 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 A p39 문제 실사 spotter — 복원 이미지(6회차 A p39)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0061",
    "type": "anatomy",
+   "unit": "6회차 · 목",
    "topic": "Anatomy",
    "subtopic": "얼굴신경의 목가지 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1265,11 +1328,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-15",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0061.md",
    "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 얼굴신경의 목가지 실사 spotter (필기 제거·복원본) spotter 복원 6회차 얼굴신경 넓은목근 목가지 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 A p10 문제 실사 spotter — 복원 이미지(6회차 A p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 얼굴신경의 목가지 실사 spotter (필기 제거·복원본) 6회차 · 목 spotter 복원 6회차 얼굴신경 넓은목근 목가지 예습시험 과거 학기 '실습6' 스캔(담당교수 문용석·9월 1일 표기) — 2026 회차 배정은 **부위 기준**(목의 삼각 / 넓적다리 앞·안쪽칸 / 종아리 앞 / 발등)으로 2026-09-03 6회차 — 업로드 스캔 A p10 문제 실사 spotter — 복원 이미지(6회차 A p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "paper-2026-0211",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -1286,6 +1350,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0210",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -1302,6 +1367,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0209",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -1318,6 +1384,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0208",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -1334,6 +1401,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0207",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -1350,6 +1418,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0206",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -1366,6 +1435,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0205",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -1382,6 +1452,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0204",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -1398,6 +1469,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0577",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Anterior Shoulder Dislocation",
    "tags": [
@@ -1417,6 +1489,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0576",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Achilles Tendon Rupture",
    "tags": [
@@ -1436,6 +1509,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0575",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Bacterial Keratitis",
    "tags": [
@@ -1455,6 +1529,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0574",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Central Retinal Vein Occlusion",
    "tags": [
@@ -1474,6 +1549,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0557",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Bullous Pemphigoid",
    "tags": [
@@ -1493,6 +1569,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0556",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Necrotizing Fasciitis",
    "tags": [
@@ -1512,6 +1589,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0555",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Aortic Dissection",
    "tags": [
@@ -1531,6 +1609,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0554",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Ventricular Fibrillation",
    "tags": [
@@ -1550,6 +1629,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-daily-2026-08-14",
    "type": "anatomy",
+   "unit": "등·다리",
    "topic": "Anatomy",
    "subtopic": "daily plan 2026-08-14",
    "tags": [],
@@ -1558,11 +1638,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/daily/2026-08-14.md",
    "snippet": "오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-08-14 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+   "text": "Anatomy daily plan 2026-08-14 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 14 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 27일 · Tagging 2까지 66일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 11개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-2026-0095",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "장딴지근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1579,11 +1660,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0095.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지근 실사 spotter (필기 제거·복원본) spotter 복원 3회차 장딴지근 발꿈치힘줄 종아리뒤칸 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 장딴지근 실사 spotter (필기 제거·복원본) 3회차 · 다리 spotter 복원 3회차 장딴지근 발꿈치힘줄 종아리뒤칸 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0094",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "안쪽장딴지피부신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1600,11 +1682,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0094.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 안쪽장딴지피부신경 실사 spotter (필기 제거·복원본) spotter 복원 3회차 안쪽장딴지피부신경 장딴지신경 정강신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 안쪽장딴지피부신경 실사 spotter (필기 제거·복원본) 1회차 · 다리 spotter 복원 3회차 안쪽장딴지피부신경 장딴지신경 정강신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0093",
    "type": "anatomy",
+   "unit": "3회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "어깨위동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1621,11 +1704,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0093.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 어깨위동맥 실사 spotter (필기 제거·복원본) spotter 복원 3회차 어깨위동맥 어깨동맥그물 갑상목동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 어깨위동맥 실사 spotter (필기 제거·복원본) 3회차 · 팔 spotter 복원 3회차 어깨위동맥 어깨동맥그물 갑상목동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0092",
    "type": "anatomy",
+   "unit": "3회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "위가로어깨인대 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1642,11 +1726,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0092.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위가로어깨인대 실사 spotter (필기 제거·복원본) spotter 복원 3회차 위가로어깨인대 어깨뼈패임 어깨위신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 위가로어깨인대 실사 spotter (필기 제거·복원본) 3회차 · 팔 spotter 복원 3회차 위가로어깨인대 어깨뼈패임 어깨위신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0091",
    "type": "anatomy",
+   "unit": "3회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척추동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1663,11 +1748,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0091.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 척추동맥 실사 spotter (필기 제거·복원본) spotter 복원 3회차 척추동맥 뒤통수밑삼각 고리뼈 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 척추동맥 실사 spotter (필기 제거·복원본) 3회차 · 등 spotter 복원 3회차 척추동맥 뒤통수밑삼각 고리뼈 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0090",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "다리오금 태깅 연습판 (자체 제작 도해)",
    "tags": [
@@ -1684,11 +1770,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0090.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다.",
-   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
+   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) 3회차 · 다리 spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
   },
   {
    "id": "anatomy-2026-0089",
    "type": "anatomy",
+   "unit": "2회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1705,11 +1792,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0089.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본) spotter 복원 2회차 넙다리두갈래근 햄스트링 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 넙다리두갈래근 긴갈래 실사 spotter (필기 제거·복원본) 2회차 · 다리 spotter 복원 2회차 넙다리두갈래근 햄스트링 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p24 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p24)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0088",
    "type": "anatomy",
+   "unit": "2회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "음부신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1726,11 +1814,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0088.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 음부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 음부신경 작은궁둥구멍 음부신경관 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 음부신경 실사 spotter (필기 제거·복원본) 2회차 · 골반·회음 spotter 복원 2회차 음부신경 작은궁둥구멍 음부신경관 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0087",
    "type": "anatomy",
+   "unit": "2회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "궁둥신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1747,11 +1836,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0087.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 궁둥신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 궁둥신경 궁둥구멍근 볼기 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 궁둥신경 실사 spotter (필기 제거·복원본) 2회차 · 다리 spotter 복원 2회차 궁둥신경 궁둥구멍근 볼기 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf2 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0086",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "엉덩갈비근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1768,11 +1858,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0086.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 엉덩갈비근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 엉덩갈비근 척주세움근 뒤가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 엉덩갈비근 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 엉덩갈비근 척주세움근 뒤가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p27 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p27)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0085",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "머리널판근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1789,11 +1880,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0085.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 머리널판근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 머리널판근 뒤가지 깊은층 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 머리널판근 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 머리널판근 뒤가지 깊은층 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p23 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p23)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0084",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "등쪽어깨동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1810,11 +1902,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0084.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 등쪽어깨동맥 실사 spotter (필기 제거·복원본) spotter 복원 2회차 등쪽어깨동맥 마름근 빗장밑동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 등쪽어깨동맥 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 등쪽어깨동맥 마름근 빗장밑동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p16 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p16)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0083",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "더부신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1831,11 +1924,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0083.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 더부신경 실사 spotter (필기 제거·복원본) spotter 복원 2회차 더부신경 등세모근 뒤목삼각 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 더부신경 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 더부신경 등세모근 뒤목삼각 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0082",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "앞톱니근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -1851,11 +1945,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0082.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 앞톱니근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 앞톱니근 긴가슴신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 앞톱니근 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 앞톱니근 긴가슴신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p7 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p7)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0081",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "장딴지근 안쪽갈래 실사 spotter (복원본)",
    "tags": [
@@ -1871,11 +1966,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0081.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0080",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "뒤정강근 실사 spotter (복원본)",
    "tags": [
@@ -1891,11 +1987,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0080.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 뒤정강근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 뒤정강근 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0079",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "오금근 실사 spotter (복원본)",
    "tags": [
@@ -1911,11 +2008,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0079.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 오금근 실사 spotter (복원본) spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 오금근 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0078",
    "type": "anatomy",
+   "unit": "3회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "네모공간 실사 spotter (복원본)",
    "tags": [
@@ -1931,11 +2029,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0078.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 네모공간 실사 spotter (복원본) spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 네모공간 실사 spotter (복원본) 3회차 · 팔 spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0077",
    "type": "anatomy",
+   "unit": "3회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리",
    "tags": [
@@ -1951,11 +2050,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/notes/anatomy-2026-0077-s03-subnote.md",
    "snippet": "1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위",
-   "text": "Anatomy 3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리 서브노트 3회차 표 실사합본 예습시험 태깅 1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위안쪽 경계== 뒤통수밑신경 작은뒤머리곧은근 minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖 (안쪽) 뒤통수밑신경 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 ==위가쪽 경계== 뒤통수밑신경 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 ==아래가쪽 경계== 뒤통수밑신경 [!주의] 아래머리빗근의 예외 :: 뒤통수밑근육 4개 중 유일하게 머리뼈에 닿지 않는다 (C2 가시돌기 → C1 가로돌기). 작용도 고리중쇠관절에서 머리 같은쪽 돌림. 2) 삼각 안에 무엇이 있나 = 내용물: 척추동맥 (C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경 (C1 뒤가지) + 정맥얼기 신경 뿌리 성격 무엇을 하나 뒤통수밑신경 suboccipital n. C1 뒤가지 ==순수 운동== 뒤통수밑근육 4개 — 삼각 안 큰뒤통수신경 greater occipital n. C2 뒤가지 ==감각== 아래머리빗근 아래모서리를 감아 올라가 뒤통수 피부 셋째뒤통수신경 C3 뒤가지 감각 뒤통수 아래 안쪽 좁은 영역 [!기출] 운동 vs 감각 :: \"아래머리빗근을 감아 도는 신경\"은 큰뒤통수신경(감각) . 삼각 안에서 근육으로 들어가는 것이 뒤통수밑신경(운동) . 태깅에서 둘을 바꿔 내는 것이 단골. [!임상] 척추동맥·신경통 :: 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약 . 큰뒤통수신경 포착은 뒤통수신경통의 원인. 2. 어깨뼈부위 3공간 Scapular spaces !fig docs/assets/anatomy/diag scapular spaces labeled.svg 세 공간의 경계와 통과 구조물 — 긴갈래 가쪽=네모공간, 안쪽=세모공간, 큰원근 아래=세모간격 1) 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 ==겨드랑신경 C5·6== 벌림 15–90°·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 ==어깨위신경== 벌림 개시 0–15° 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다. 2) 세 공간 — 경계와 내용물 공간 경계 내용물 네모공간 quadrangular 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 ==위팔뼈 외과목== 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 [!암기] 기준은 긴갈래 하나 :: 위팔세갈래근 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격(노신경) . [!임상] 외과목 골절 :: 네모공간을 지나는 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽 감각소실. 노신경은 세모간격을 지나 노신경고랑으로 → 위팔뼈 몸통 골절에서 손목처짐. 3. 어깨동맥그물 Scapular anastomosis !fig docs/assets/anatomy/diag scapular spaces labeled.svg 오른쪽 아래 패널 — 빗장밑동맥 ↔ 겨드랑동맥 우회로 = 빗장밑동맥 → (갑상목동맥) 어깨위동맥 · 등쪽어깨동맥 ↕ 어깨휘돌이동맥 ← 어깨밑동맥 ← 겨드랑동맥 동맥 모동맥 경로 의미 어깨위동맥 갑상목동맥(빗장밑) 위가로어깨인대 위 그물의 위쪽 다리 등쪽어깨동맥 빗장밑(또는 가로목) 마름근 심부 그물의 안쪽 다리 어깨휘돌이동맥 어깨밑동맥(겨드랑 3부) ==세모공간 통과== 그물의 가쪽 다리 뒤위팔휘돌이동맥 겨드랑동맥 3부 네모공간 통과 겨드랑신경과 동행 [!TIP] 인대와의 관계 :: \"Army over the bridge, Navy under\" — 동맥(artery)은 위가로어깨인대 위 , 신경(nerve)은 어깨패임 속(인대 아래 ). 4. 다리오금 Popliteal fossa !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 마름모의 네 경계와 '신–정–동' 깊이 순서 + 무릎동맥 5가지 — 자체 제작 도해 1) 경계와 내용물 경계 구조 위가쪽 넙다리두갈래근 위안쪽 반힘줄근 · 반막근 아래 장딴지근 두 갈래 = 내용물 얕음 → 깊음 : 정강신경 → 오금정맥 → 오금동맥 (가장 깊다) + 작은두렁정맥 말단 · 오금림프절 [!주의] 깊이 순서 :: 맥박을 잡으려면 깊이 눌러야 한다 — 오금동맥이 가장 깊다. 순서를 뒤집어 내는 문항이 흔하다. 2) 혈관 동맥 나오는 곳 특징 오금동맥 넙다리동맥이 ==모음근구멍== 통과하며 개명 오금근 아래모서리에서 앞·뒤정강동맥으로 종말분지 무릎동맥 5가지 오금동맥 위가쪽·위안쪽· 중간 ·아래가쪽·아래안쪽 → 무릎동맥그물 종아리동맥 뒤정강동맥 뒤정강동맥이 갈라진 직후 [!기출] 중간무릎동맥 :: 5가지 중 유일하게 관절주머니를 뚫고 들어가 십자인대에 분포. 나머지는 관절 둘레를 감는다. 3) 신경 신경 주행 손상 시 정강신경 오금 한가운데를 수직으로 종아리 뒤칸 전체 지배 온종아리신경 넙다리두갈래근 힘줄 안쪽 → ==종아리뼈목을 감아돔== 발처짐(foot drop) + 발등 감각소실 [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리. 4b. 신경 계보 — 궁둥신경에서 발까지 Nerve tree !fig docs/assets/anatomy/tree s03 nerve labeled.svg 오금에서 정강/온종아리로 갈리고, 온종아리는 종아리뼈목에서 다시 얕은/깊은으로 갈린다 4c. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s03 vessel labeled.svg 빗장밑동맥·겨드랑동맥의 어깨동맥그물과, 오금동맥의 무릎동맥그물 + 동반정맥 4d. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s03 bundle labeled.svg 다리오금(신–정–동) · 네모공간 · 어깨뼈패임 — 셋이 함께 지나는 세 자리 5. 종아리 뒤칸 Posterior compartment of leg !fig .private/anatomy/render/uploads a1 s02/q5183 p8 clean.png 실사 복원본 — 다리오금의 신경(온종아리신경 분지) 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용)·결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 ==무릎 잠금 해제== 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽 에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 ==가쪽(종아리뼈)에서 기시== — 교차 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음·발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). = 안쪽복사 뒤 통과 순서(앞→뒤) Tom, Dick ANd Harry : 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 [!암기] 이름과 위치가 어긋나는 둘 :: 긴발가락굽힘근은 안쪽 , 긴엄지굽힘근은 가쪽 에서 기시해 발바닥에서 교차한다. 이름만 보고 위치를 찍으면 틀린다. 6. 마무리 체크리스트 Self check 뒤통수밑삼각 경계 3근육과 내용물 2가지를 대시오. 뒤통수밑신경과 큰뒤통수신경의 차이(뿌리·성격·주행)는? 네모공간·세모공간·세모간격의 내용물을 각각 대시오. 셋을 가르는 기준은? 돌림근띠 4근육은? 큰원근이 빠지는 이유는? 다리오금 내용물을 얕은 것부터 순서대로 대시오. 넙다리동맥이 오금동맥으로 이름이 바뀌는 지점은? 무릎동맥 5가지 중 관절주머니를 뚫는 것은? 종아리뼈목을 감아도는 신경과 그 손상 증상은? 안쪽복사 뒤 통과 순서를 앞에서부터 대시오. 어깨뼈패임에서 인대 위로 지나는 것과 아래로 지나는 것은 각각 무엇인가? 뒤통수밑삼각의 바닥과 내용물을 각각 대시오. 안쪽장딴지피부신경과 무엇이 합쳐져 장딴지신경이 되는가? 임상적으로 왜 중요한가? [!TIP] 함께 볼 자료 :: 도해 diag suboccipital labeled.svg · diag scapular spaces labeled/quiz.svg (문항 0031) · diag popliteal fossa labeled/quiz.svg (문항 0090 — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다."
+   "text": "Anatomy 3회차 서브노트 — 뒤통수밑삼각·어깨뼈부위·다리오금 근육/혈관/신경 총정리 3회차 · 등·다리 서브노트 3회차 표 실사합본 예습시험 태깅 1. 뒤통수밑삼각 Suboccipital triangle !fig docs/assets/anatomy/diag suboccipital labeled.svg 경계 3근육과 내용물(척추동맥·뒤통수밑신경) · C1 운동 vs C2 감각의 대비 1) 경계를 이루는 근육 — 4개 중 3개가 경계 근육 이는곳 → 닿는곳 삼각에서 신경 큰뒤머리곧은근 rectus capitis post. major C2 가시돌기 → 아래목덜미선 가쪽 ==위안쪽 경계== 뒤통수밑신경 작은뒤머리곧은근 minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖 (안쪽) 뒤통수밑신경 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 ==위가쪽 경계== 뒤통수밑신경 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 ==아래가쪽 경계== 뒤통수밑신경 [!주의] 아래머리빗근의 예외 :: 뒤통수밑근육 4개 중 유일하게 머리뼈에 닿지 않는다 (C2 가시돌기 → C1 가로돌기). 작용도 고리중쇠관절에서 머리 같은쪽 돌림. 2) 삼각 안에 무엇이 있나 = 내용물: 척추동맥 (C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경 (C1 뒤가지) + 정맥얼기 신경 뿌리 성격 무엇을 하나 뒤통수밑신경 suboccipital n. C1 뒤가지 ==순수 운동== 뒤통수밑근육 4개 — 삼각 안 큰뒤통수신경 greater occipital n. C2 뒤가지 ==감각== 아래머리빗근 아래모서리를 감아 올라가 뒤통수 피부 셋째뒤통수신경 C3 뒤가지 감각 뒤통수 아래 안쪽 좁은 영역 [!기출] 운동 vs 감각 :: \"아래머리빗근을 감아 도는 신경\"은 큰뒤통수신경(감각) . 삼각 안에서 근육으로 들어가는 것이 뒤통수밑신경(운동) . 태깅에서 둘을 바꿔 내는 것이 단골. [!임상] 척추동맥·신경통 :: 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약 . 큰뒤통수신경 포착은 뒤통수신경통의 원인. 2. 어깨뼈부위 3공간 Scapular spaces !fig docs/assets/anatomy/diag scapular spaces labeled.svg 세 공간의 경계와 통과 구조물 — 긴갈래 가쪽=네모공간, 안쪽=세모공간, 큰원근 아래=세모간격 1) 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 ==겨드랑신경 C5·6== 벌림 15–90°·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 ==어깨위신경== 벌림 개시 0–15° 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 [!주의] 돌림근띠(SITS) :: 가시위·가시아래·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다. 2) 세 공간 — 경계와 내용물 공간 경계 내용물 네모공간 quadrangular 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 ==위팔뼈 외과목== 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 [!암기] 기준은 긴갈래 하나 :: 위팔세갈래근 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격(노신경) . [!임상] 외과목 골절 :: 네모공간을 지나는 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽 감각소실. 노신경은 세모간격을 지나 노신경고랑으로 → 위팔뼈 몸통 골절에서 손목처짐. 3. 어깨동맥그물 Scapular anastomosis !fig docs/assets/anatomy/diag scapular spaces labeled.svg 오른쪽 아래 패널 — 빗장밑동맥 ↔ 겨드랑동맥 우회로 = 빗장밑동맥 → (갑상목동맥) 어깨위동맥 · 등쪽어깨동맥 ↕ 어깨휘돌이동맥 ← 어깨밑동맥 ← 겨드랑동맥 동맥 모동맥 경로 의미 어깨위동맥 갑상목동맥(빗장밑) 위가로어깨인대 위 그물의 위쪽 다리 등쪽어깨동맥 빗장밑(또는 가로목) 마름근 심부 그물의 안쪽 다리 어깨휘돌이동맥 어깨밑동맥(겨드랑 3부) ==세모공간 통과== 그물의 가쪽 다리 뒤위팔휘돌이동맥 겨드랑동맥 3부 네모공간 통과 겨드랑신경과 동행 [!TIP] 인대와의 관계 :: \"Army over the bridge, Navy under\" — 동맥(artery)은 위가로어깨인대 위 , 신경(nerve)은 어깨패임 속(인대 아래 ). 4. 다리오금 Popliteal fossa !fig docs/assets/anatomy/diag popliteal fossa labeled.svg 마름모의 네 경계와 '신–정–동' 깊이 순서 + 무릎동맥 5가지 — 자체 제작 도해 1) 경계와 내용물 경계 구조 위가쪽 넙다리두갈래근 위안쪽 반힘줄근 · 반막근 아래 장딴지근 두 갈래 = 내용물 얕음 → 깊음 : 정강신경 → 오금정맥 → 오금동맥 (가장 깊다) + 작은두렁정맥 말단 · 오금림프절 [!주의] 깊이 순서 :: 맥박을 잡으려면 깊이 눌러야 한다 — 오금동맥이 가장 깊다. 순서를 뒤집어 내는 문항이 흔하다. 2) 혈관 동맥 나오는 곳 특징 오금동맥 넙다리동맥이 ==모음근구멍== 통과하며 개명 오금근 아래모서리에서 앞·뒤정강동맥으로 종말분지 무릎동맥 5가지 오금동맥 위가쪽·위안쪽· 중간 ·아래가쪽·아래안쪽 → 무릎동맥그물 종아리동맥 뒤정강동맥 뒤정강동맥이 갈라진 직후 [!기출] 중간무릎동맥 :: 5가지 중 유일하게 관절주머니를 뚫고 들어가 십자인대에 분포. 나머지는 관절 둘레를 감는다. 3) 신경 신경 주행 손상 시 정강신경 오금 한가운데를 수직으로 종아리 뒤칸 전체 지배 온종아리신경 넙다리두갈래근 힘줄 안쪽 → ==종아리뼈목을 감아돔== 발처짐(foot drop) + 발등 감각소실 [!임상] 종아리뼈목 :: 골절·석고붕대 압박으로 온종아리신경이 가장 흔히 다치는 자리. 4b. 신경 계보 — 궁둥신경에서 발까지 Nerve tree !fig docs/assets/anatomy/tree s03 nerve labeled.svg 오금에서 정강/온종아리로 갈리고, 온종아리는 종아리뼈목에서 다시 얕은/깊은으로 갈린다 4c. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s03 vessel labeled.svg 빗장밑동맥·겨드랑동맥의 어깨동맥그물과, 오금동맥의 무릎동맥그물 + 동반정맥 4d. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s03 bundle labeled.svg 다리오금(신–정–동) · 네모공간 · 어깨뼈패임 — 셋이 함께 지나는 세 자리 5. 종아리 뒤칸 Posterior compartment of leg !fig .private/anatomy/render/uploads a1 s02/q5183 p8 clean.png 실사 복원본 — 다리오금의 신경(온종아리신경 분지) 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용)·결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 ==무릎 잠금 해제== 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽 에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 ==가쪽(종아리뼈)에서 기시== — 교차 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음·발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). = 안쪽복사 뒤 통과 순서(앞→뒤) Tom, Dick ANd Harry : 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 [!암기] 이름과 위치가 어긋나는 둘 :: 긴발가락굽힘근은 안쪽 , 긴엄지굽힘근은 가쪽 에서 기시해 발바닥에서 교차한다. 이름만 보고 위치를 찍으면 틀린다. 6. 마무리 체크리스트 Self check 뒤통수밑삼각 경계 3근육과 내용물 2가지를 대시오. 뒤통수밑신경과 큰뒤통수신경의 차이(뿌리·성격·주행)는? 네모공간·세모공간·세모간격의 내용물을 각각 대시오. 셋을 가르는 기준은? 돌림근띠 4근육은? 큰원근이 빠지는 이유는? 다리오금 내용물을 얕은 것부터 순서대로 대시오. 넙다리동맥이 오금동맥으로 이름이 바뀌는 지점은? 무릎동맥 5가지 중 관절주머니를 뚫는 것은? 종아리뼈목을 감아도는 신경과 그 손상 증상은? 안쪽복사 뒤 통과 순서를 앞에서부터 대시오. 어깨뼈패임에서 인대 위로 지나는 것과 아래로 지나는 것은 각각 무엇인가? 뒤통수밑삼각의 바닥과 내용물을 각각 대시오. 안쪽장딴지피부신경과 무엇이 합쳐져 장딴지신경이 되는가? 임상적으로 왜 중요한가? [!TIP] 함께 볼 자료 :: 도해 diag suboccipital labeled.svg · diag scapular spaces labeled/quiz.svg (문항 0031) · diag popliteal fossa labeled/quiz.svg (문항 0090 — 번호핀 8개 + 이어서 답할 4문항). 실사 문항은 본 파일 뒤쪽에 합본되어 있다."
   },
   {
    "id": "anatomy-2026-0060",
    "type": "anatomy",
+   "unit": "1회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "1회차 서브노트 — 등·다리 피부벗기기 / 얕은층 총정리",
    "tags": [
@@ -1971,11 +2071,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/notes/anatomy-2026-0060-s01-subnote.md",
    "snippet": "1. 층 구조 — 피부벗기기가 지나는 길 Layers !fig docs/assets/anatomy/diag back layers rami labeled.svg 등뼈 높이 가로단면 — 층 순서와 척수신경 앞·뒤가지, 그리고 뒤가지의 피부가지 1) 벗겨 나가는 순서 층 내용 실습에서 피부 skin 표피 + 진피 칼날을 ==눕혀== 얇게 뜬다 얕은근막 superficial fascia 피부밑지방 · ==피부신경 · 피부정맥 · 림프",
-   "text": "Anatomy 1회차 서브노트 — 등·다리 피부벗기기 / 얕은층 총정리 서브노트 1회차 표 피부신경 예습시험 태깅 1. 층 구조 — 피부벗기기가 지나는 길 Layers !fig docs/assets/anatomy/diag back layers rami labeled.svg 등뼈 높이 가로단면 — 층 순서와 척수신경 앞·뒤가지, 그리고 뒤가지의 피부가지 1) 벗겨 나가는 순서 층 내용 실습에서 피부 skin 표피 + 진피 칼날을 ==눕혀== 얇게 뜬다 얕은근막 superficial fascia 피부밑지방 · ==피부신경 · 피부정맥 · 림프관== 여기서 신경·정맥을 찾아 남긴다 깊은근막 deep fascia 근육을 싸는 흰 막 ==여기서 멈춘다== — 더 가면 근육이 다친다 얕은층 근육 등세모근 · 넓은등근 다음 회차의 시작점 등허리근막 → 고유등근육 척주세움근 등 3층 구조의 마지막 [!주의] 얕은근막에서 서두르면 :: 피부신경·피부정맥이 통째로 잘려 나간다. 한 번 자르면 분절 분포를 확인할 방법이 없다 — 피부벗기기의 성패가 여기서 갈린다. [!TIP] 깊은근막의 감별 :: 지방(노랗고 무름) 아래에 나타나는 흰색·질긴 섬유막 . 여기가 나오면 칼을 멈추고 가위·손가락으로 박리한다. 2) 얕은근막 안에 있는 것 구조 예 왜 여기 있나 피부신경 볼기피부신경 · 장딴지신경 깊은근막을 뚫고 나와 피부로 간다 얕은정맥 ==큰두렁정맥 · 작은두렁정맥== 깊은정맥과 관통정맥으로 연결 얕은림프관·림프절 얕은샅고랑림프절 피부 림프의 1차 배출로 2. 척수신경 — 앞가지와 뒤가지 Rami (과제) !fig docs/assets/anatomy/diag back layers rami labeled.svg 척수신경이 갈라지는 지점 — 뒤가지는 등만, 앞가지는 얼기를 이뤄 팔다리로 항목 뒤가지 dorsal ramus 앞가지 ventral ramus 굵기 가늘다 ==굵다== 얼기 ==만들지 않는다== (분절 유지) 목·팔·허리·엉치 얼기를 이룬다 근육 ==고유등근육 전부== 몸통 앞가쪽 + 팔다리 전체 피부 척주 옆 등 피부(안쪽가지·가쪽가지) 몸통 앞가쪽 + 팔다리 피부 예외 — 갈비사이신경은 얼기 없이 분절을 지킨다 [!기출] \"등에 있으니 뒤가지\" 함정 :: 등세모근( 더부신경 XI ) · 넓은등근(가슴등신경) · 마름근·어깨올림근(등쪽어깨신경)은 발생 중 이주해 온 근육이라 앞가지 계열 지배다. 뒤가지가 지배하는 것은 고유등근육뿐. [!암기] 안쪽가지 vs 가쪽가지 :: 뒤가지는 둘로 갈라져 각각 피부가지를 내는데, 위쪽 등에서는 안쪽가지 가, 아래쪽 등·허리에서는 가쪽가지 가 피부에 닿는다. 2b. 신경 계보 — 척수신경에서 피부신경까지 Nerve tree !fig docs/assets/anatomy/tree s01 nerve labeled.svg 앞가지/뒤가지가 갈린 뒤 어디까지 가는지 — 볼기 3형제의 뿌리가 2:1로 갈리는 지점이 한눈에 보인다 [!암기] 계보로 외우면 헷갈리지 않는다 :: 이름이 비슷한 것끼리(위·중간·아래볼기피부신경) 묶지 말고 어느 가지에서 내려왔는지 로 묶는다. 퀴즈판 tree s01 nerve quiz.svg 로 상자만 보고 이름 채우기. 2c. 얕은정맥 계보 Vein tree !fig docs/assets/anatomy/tree s01 vessel labeled.svg 발등정맥활에서 시작해 두 두렁정맥으로 갈리고, 관통정맥이 깊은정맥과 잇는다 2d. 함께 지나는 것 Neurovascular pairs !fig docs/assets/anatomy/tree s01 bundle labeled.svg 얕은근막 속에서 정맥과 피부신경은 짝을 지어 다닌다 — 하나를 찾으면 다른 하나가 따라온다 3. 볼기·다리 뒤 피부신경 Posterior cutaneous nerves !fig docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg 볼기 3형제의 유래와 장딴지신경이 만들어지는 지점 — 실사 문항 5개와 같은 구도 1) 볼기피부신경 3형제 — 이름은 형제, 뿌리는 남 신경 뿌리 나오는 곳 담당 위볼기피부신경 superior cluneal L1–L3 ==뒤가지== 엉덩뼈능선을 넘는다 볼기 위쪽 피부 중간볼기피부신경 middle cluneal S1–S3 ==뒤가지== 뒤엉치구멍 엉치엉덩관절 위 피부 아래볼기피부신경 inferior cluneal S1–S3 ==앞가지== 큰볼기근 아래모서리를 감아 볼기 아래쪽 피부 [!기출] 셋 중 하나만 앞가지 :: 아래볼기피부신경만 뒤넙다리피부신경(앞가지·엉치신경얼기)의 가지다. 위·중간은 뒤가지. 이름이 같아 보여도 유래를 물으면 갈린다. [!임상] 엉덩뼈능선 채취 :: 뼈이식용으로 엉덩뼈능선을 취하면 위볼기피부신경이 잘려 만성 볼기 통증이 남을 수 있다. 2) 넓적다리 뒤 · 종아리 뒤 신경 유래 주행 담당 뒤넙다리피부신경 S1–S3 앞가지 ==궁둥구멍근 아래구멍== → 넓적다리 뒤 정중선 넓적다리 뒤 피부 관통가지 perforating br. 위 신경의 가지 깊은근막을 뚫고 나온다 넓적다리 뒤 피부 안쪽장딴지피부신경 ==정강신경== 장딴지근 두 갈래 사이 고랑 종아리 뒤 장딴지신경교통가지 ==온종아리신경== 가쪽에서 안쪽으로 합류 — 장딴지신경 sural n. 위 둘이 합쳐진 것 작은두렁정맥과 나란히 → 가쪽복사 뒤 발 가쪽모서리·새끼발가락 두렁신경 saphenous n. ==넙다리신경== 큰두렁정맥과 나란히 종아리·발 안쪽 = 장딴지신경 형성: 안쪽장딴지피부신경(정강) + 교통가지(온종아리) → 장딴지신경 [!임상] 왜 장딴지신경을 떼어 쓰나 :: 운동섬유가 없는 순수 감각신경 이라 잘라도 근력 손실이 없고, 표재성이라 채취가 쉽다 → 신경 생검·신경 이식의 표준 공여신경 . 발목에서 sural nerve block의 표적이기도 하다. [!주의] 안쪽은 뒤칸 신경이 아니다 :: 넓적다리·종아리 안쪽 피부는 두렁신경(넙다리신경 가지) 담당. 뒤에서 내려온 신경으로 착각하기 쉽다. 4. 얕은정맥 Superficial veins !fig docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg 피부신경과 나란히 달리는 얕은정맥 — 신경·정맥 짝을 함께 외운다 정맥 시작 주행 끝 동반 신경 큰두렁정맥 great saphenous 발등정맥활 ==안쪽== ==안쪽복사 앞== → 종아리·넓적다리 안쪽 두렁정맥구멍 → 넙다리정맥 두렁신경 작은두렁정맥 small saphenous 발등정맥활 ==가쪽== ==가쪽복사 뒤== → 종아리 뒤 정중선 오금정맥 ==장딴지신경== [!암기] 복사 기준 :: 큰두렁은 안쪽복사 앞 , 작은두렁은 가쪽복사 뒤 . 정맥절개술(cut down)의 고전적 자리가 안쪽복사 앞 큰두렁정맥이다. [!임상] 관통정맥 :: 얕은정맥과 깊은정맥을 잇고 판막이 깊은 쪽으로만 열린다. 판막이 망가지면 역류가 생겨 하지정맥류가 된다. 5. 술기 — 허리천자와 꼬리마취 Procedures (과제) !fig docs/assets/anatomy/diag lumbar puncture labeled.svg 정중시상면 — 바늘이 지나는 층, 척수원뿔(L1–L2)과 경막주머니 끝(S2) 1) 허리천자 lumbar puncture 항목 내용 자세 모로 누워 ==허리를 최대한 구부린다== (가시돌기 사이가 벌어진다) 높이 ==L3–L4 또는 L4–L5== · Tuffier 선(양쪽 엉덩뼈능선 연결) = L4 통과 층 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → ==황색인대== → 경막바깥공간 → 경막 → 거미막 → 거미막밑공간 원칙 척수를 피한다 · 무균 · 바늘 경사면을 세로로(경막섬유를 벌려 지나 두통을 줄인다) 금기 ==머리속압 상승== · 천자 부위 감염 · 출혈경향 [!기출] 왜 L3 아래인가 :: 성인의 척수는 L1–L2 에서 원뿔로 끝나고 그 아래는 말총뿐이다. 말총은 바늘에 밀려 비켜나므로 손상이 잘 생기지 않는다. 소아는 척수가 L3까지 내려와 있어 한 마디 더 아래에서 찌른다. [!주의] 머리속압이 높을 때 :: 뇌척수액을 빼면 압력 차로 뇌탈출이 일어날 수 있다 → 의심되면 영상 먼저 . 2) 꼬리마취 caudal block 항목 내용 무엇 ==엉치관 경막바깥마취== — 경막바깥공간의 꼬리쪽 입구로 들어간다 목적 항문·회음·아랫배·다리 수술 진통 (==소아에서 특히==) · 만성 허리통증의 경막바깥 주사 지표 ==엉치뿔== 두 개 사이의 엉치뼈틈새 (S4–S5 뒤벽 결손) 자세 엎드리거나 옆으로 누워 엉치뿔을 만져 확인 주의 경막주머니는 ==S2==까지 — 깊이 밀어 넣으면 거미막밑주사가 되어 전척추마취 = 두 술기의 공통 원리: 끝나는 높이를 알아야 안전하다 — 척수 L1–L2 / 경막주머니 S2 6. 마무리 체크리스트 Self check 피부벗기기에서 지나는 층을 순서대로 대고, 어디서 멈춰야 하는지 말하시오. 피부신경과 피부정맥은 어느 층에 있는가? 왜 그 층에서 조심해야 하는가? 척수신경 앞가지와 뒤가지의 차이를 굵기·얼기·지배 영역 세 가지로 말하시오. 고유등근육은 어느 가지의 지배를 받는가? 등에 있으면서 예외인 근육 넷을 대시오. 볼기피부신경 3형제를 위에서 아래로 대고, 각각의 뿌리를 말하시오. 그중 유래가 다른 하나는 무엇이며 어디서 왔는가? 장딴지신경은 어떤 두 신경이 합쳐진 것인가? 왜 공여신경으로 쓰이는가? 큰두렁정맥·작은두렁정맥의 복사 기준 위치와 각각 동반하는 신경은? 허리천자를 L3 아래에서 하는 이유는? 소아에서 달라지는 점은? 허리천자 바늘이 지나는 층을 순서대로 대시오. 꼬리마취의 지표와, 너무 깊이 넣으면 안 되는 이유는? [!TIP] 함께 볼 자료 :: 도해 diag back layers rami labeled/quiz.svg (문항 0059 ) · diag posterior cutaneous nerves labeled/quiz.svg (문항 0058 — 번호핀 8개) · diag lumbar puncture labeled.svg (술기). 실사 문항 5개는 본 파일 뒤쪽에 합본되어 있다."
+   "text": "Anatomy 1회차 서브노트 — 등·다리 피부벗기기 / 얕은층 총정리 1회차 · 등·다리 서브노트 1회차 표 피부신경 예습시험 태깅 1. 층 구조 — 피부벗기기가 지나는 길 Layers !fig docs/assets/anatomy/diag back layers rami labeled.svg 등뼈 높이 가로단면 — 층 순서와 척수신경 앞·뒤가지, 그리고 뒤가지의 피부가지 1) 벗겨 나가는 순서 층 내용 실습에서 피부 skin 표피 + 진피 칼날을 ==눕혀== 얇게 뜬다 얕은근막 superficial fascia 피부밑지방 · ==피부신경 · 피부정맥 · 림프관== 여기서 신경·정맥을 찾아 남긴다 깊은근막 deep fascia 근육을 싸는 흰 막 ==여기서 멈춘다== — 더 가면 근육이 다친다 얕은층 근육 등세모근 · 넓은등근 다음 회차의 시작점 등허리근막 → 고유등근육 척주세움근 등 3층 구조의 마지막 [!주의] 얕은근막에서 서두르면 :: 피부신경·피부정맥이 통째로 잘려 나간다. 한 번 자르면 분절 분포를 확인할 방법이 없다 — 피부벗기기의 성패가 여기서 갈린다. [!TIP] 깊은근막의 감별 :: 지방(노랗고 무름) 아래에 나타나는 흰색·질긴 섬유막 . 여기가 나오면 칼을 멈추고 가위·손가락으로 박리한다. 2) 얕은근막 안에 있는 것 구조 예 왜 여기 있나 피부신경 볼기피부신경 · 장딴지신경 깊은근막을 뚫고 나와 피부로 간다 얕은정맥 ==큰두렁정맥 · 작은두렁정맥== 깊은정맥과 관통정맥으로 연결 얕은림프관·림프절 얕은샅고랑림프절 피부 림프의 1차 배출로 2. 척수신경 — 앞가지와 뒤가지 Rami (과제) !fig docs/assets/anatomy/diag back layers rami labeled.svg 척수신경이 갈라지는 지점 — 뒤가지는 등만, 앞가지는 얼기를 이뤄 팔다리로 항목 뒤가지 dorsal ramus 앞가지 ventral ramus 굵기 가늘다 ==굵다== 얼기 ==만들지 않는다== (분절 유지) 목·팔·허리·엉치 얼기를 이룬다 근육 ==고유등근육 전부== 몸통 앞가쪽 + 팔다리 전체 피부 척주 옆 등 피부(안쪽가지·가쪽가지) 몸통 앞가쪽 + 팔다리 피부 예외 — 갈비사이신경은 얼기 없이 분절을 지킨다 [!기출] \"등에 있으니 뒤가지\" 함정 :: 등세모근( 더부신경 XI ) · 넓은등근(가슴등신경) · 마름근·어깨올림근(등쪽어깨신경)은 발생 중 이주해 온 근육이라 앞가지 계열 지배다. 뒤가지가 지배하는 것은 고유등근육뿐. [!암기] 안쪽가지 vs 가쪽가지 :: 뒤가지는 둘로 갈라져 각각 피부가지를 내는데, 위쪽 등에서는 안쪽가지 가, 아래쪽 등·허리에서는 가쪽가지 가 피부에 닿는다. 2b. 신경 계보 — 척수신경에서 피부신경까지 Nerve tree !fig docs/assets/anatomy/tree s01 nerve labeled.svg 앞가지/뒤가지가 갈린 뒤 어디까지 가는지 — 볼기 3형제의 뿌리가 2:1로 갈리는 지점이 한눈에 보인다 [!암기] 계보로 외우면 헷갈리지 않는다 :: 이름이 비슷한 것끼리(위·중간·아래볼기피부신경) 묶지 말고 어느 가지에서 내려왔는지 로 묶는다. 퀴즈판 tree s01 nerve quiz.svg 로 상자만 보고 이름 채우기. 2c. 얕은정맥 계보 Vein tree !fig docs/assets/anatomy/tree s01 vessel labeled.svg 발등정맥활에서 시작해 두 두렁정맥으로 갈리고, 관통정맥이 깊은정맥과 잇는다 2d. 함께 지나는 것 Neurovascular pairs !fig docs/assets/anatomy/tree s01 bundle labeled.svg 얕은근막 속에서 정맥과 피부신경은 짝을 지어 다닌다 — 하나를 찾으면 다른 하나가 따라온다 3. 볼기·다리 뒤 피부신경 Posterior cutaneous nerves !fig docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg 볼기 3형제의 유래와 장딴지신경이 만들어지는 지점 — 실사 문항 5개와 같은 구도 1) 볼기피부신경 3형제 — 이름은 형제, 뿌리는 남 신경 뿌리 나오는 곳 담당 위볼기피부신경 superior cluneal L1–L3 ==뒤가지== 엉덩뼈능선을 넘는다 볼기 위쪽 피부 중간볼기피부신경 middle cluneal S1–S3 ==뒤가지== 뒤엉치구멍 엉치엉덩관절 위 피부 아래볼기피부신경 inferior cluneal S1–S3 ==앞가지== 큰볼기근 아래모서리를 감아 볼기 아래쪽 피부 [!기출] 셋 중 하나만 앞가지 :: 아래볼기피부신경만 뒤넙다리피부신경(앞가지·엉치신경얼기)의 가지다. 위·중간은 뒤가지. 이름이 같아 보여도 유래를 물으면 갈린다. [!임상] 엉덩뼈능선 채취 :: 뼈이식용으로 엉덩뼈능선을 취하면 위볼기피부신경이 잘려 만성 볼기 통증이 남을 수 있다. 2) 넓적다리 뒤 · 종아리 뒤 신경 유래 주행 담당 뒤넙다리피부신경 S1–S3 앞가지 ==궁둥구멍근 아래구멍== → 넓적다리 뒤 정중선 넓적다리 뒤 피부 관통가지 perforating br. 위 신경의 가지 깊은근막을 뚫고 나온다 넓적다리 뒤 피부 안쪽장딴지피부신경 ==정강신경== 장딴지근 두 갈래 사이 고랑 종아리 뒤 장딴지신경교통가지 ==온종아리신경== 가쪽에서 안쪽으로 합류 — 장딴지신경 sural n. 위 둘이 합쳐진 것 작은두렁정맥과 나란히 → 가쪽복사 뒤 발 가쪽모서리·새끼발가락 두렁신경 saphenous n. ==넙다리신경== 큰두렁정맥과 나란히 종아리·발 안쪽 = 장딴지신경 형성: 안쪽장딴지피부신경(정강) + 교통가지(온종아리) → 장딴지신경 [!임상] 왜 장딴지신경을 떼어 쓰나 :: 운동섬유가 없는 순수 감각신경 이라 잘라도 근력 손실이 없고, 표재성이라 채취가 쉽다 → 신경 생검·신경 이식의 표준 공여신경 . 발목에서 sural nerve block의 표적이기도 하다. [!주의] 안쪽은 뒤칸 신경이 아니다 :: 넓적다리·종아리 안쪽 피부는 두렁신경(넙다리신경 가지) 담당. 뒤에서 내려온 신경으로 착각하기 쉽다. 4. 얕은정맥 Superficial veins !fig docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg 피부신경과 나란히 달리는 얕은정맥 — 신경·정맥 짝을 함께 외운다 정맥 시작 주행 끝 동반 신경 큰두렁정맥 great saphenous 발등정맥활 ==안쪽== ==안쪽복사 앞== → 종아리·넓적다리 안쪽 두렁정맥구멍 → 넙다리정맥 두렁신경 작은두렁정맥 small saphenous 발등정맥활 ==가쪽== ==가쪽복사 뒤== → 종아리 뒤 정중선 오금정맥 ==장딴지신경== [!암기] 복사 기준 :: 큰두렁은 안쪽복사 앞 , 작은두렁은 가쪽복사 뒤 . 정맥절개술(cut down)의 고전적 자리가 안쪽복사 앞 큰두렁정맥이다. [!임상] 관통정맥 :: 얕은정맥과 깊은정맥을 잇고 판막이 깊은 쪽으로만 열린다. 판막이 망가지면 역류가 생겨 하지정맥류가 된다. 5. 술기 — 허리천자와 꼬리마취 Procedures (과제) !fig docs/assets/anatomy/diag lumbar puncture labeled.svg 정중시상면 — 바늘이 지나는 층, 척수원뿔(L1–L2)과 경막주머니 끝(S2) 1) 허리천자 lumbar puncture 항목 내용 자세 모로 누워 ==허리를 최대한 구부린다== (가시돌기 사이가 벌어진다) 높이 ==L3–L4 또는 L4–L5== · Tuffier 선(양쪽 엉덩뼈능선 연결) = L4 통과 층 피부 → 얕은근막 → 가시위인대 → 가시사이인대 → ==황색인대== → 경막바깥공간 → 경막 → 거미막 → 거미막밑공간 원칙 척수를 피한다 · 무균 · 바늘 경사면을 세로로(경막섬유를 벌려 지나 두통을 줄인다) 금기 ==머리속압 상승== · 천자 부위 감염 · 출혈경향 [!기출] 왜 L3 아래인가 :: 성인의 척수는 L1–L2 에서 원뿔로 끝나고 그 아래는 말총뿐이다. 말총은 바늘에 밀려 비켜나므로 손상이 잘 생기지 않는다. 소아는 척수가 L3까지 내려와 있어 한 마디 더 아래에서 찌른다. [!주의] 머리속압이 높을 때 :: 뇌척수액을 빼면 압력 차로 뇌탈출이 일어날 수 있다 → 의심되면 영상 먼저 . 2) 꼬리마취 caudal block 항목 내용 무엇 ==엉치관 경막바깥마취== — 경막바깥공간의 꼬리쪽 입구로 들어간다 목적 항문·회음·아랫배·다리 수술 진통 (==소아에서 특히==) · 만성 허리통증의 경막바깥 주사 지표 ==엉치뿔== 두 개 사이의 엉치뼈틈새 (S4–S5 뒤벽 결손) 자세 엎드리거나 옆으로 누워 엉치뿔을 만져 확인 주의 경막주머니는 ==S2==까지 — 깊이 밀어 넣으면 거미막밑주사가 되어 전척추마취 = 두 술기의 공통 원리: 끝나는 높이를 알아야 안전하다 — 척수 L1–L2 / 경막주머니 S2 6. 마무리 체크리스트 Self check 피부벗기기에서 지나는 층을 순서대로 대고, 어디서 멈춰야 하는지 말하시오. 피부신경과 피부정맥은 어느 층에 있는가? 왜 그 층에서 조심해야 하는가? 척수신경 앞가지와 뒤가지의 차이를 굵기·얼기·지배 영역 세 가지로 말하시오. 고유등근육은 어느 가지의 지배를 받는가? 등에 있으면서 예외인 근육 넷을 대시오. 볼기피부신경 3형제를 위에서 아래로 대고, 각각의 뿌리를 말하시오. 그중 유래가 다른 하나는 무엇이며 어디서 왔는가? 장딴지신경은 어떤 두 신경이 합쳐진 것인가? 왜 공여신경으로 쓰이는가? 큰두렁정맥·작은두렁정맥의 복사 기준 위치와 각각 동반하는 신경은? 허리천자를 L3 아래에서 하는 이유는? 소아에서 달라지는 점은? 허리천자 바늘이 지나는 층을 순서대로 대시오. 꼬리마취의 지표와, 너무 깊이 넣으면 안 되는 이유는? [!TIP] 함께 볼 자료 :: 도해 diag back layers rami labeled/quiz.svg (문항 0059 ) · diag posterior cutaneous nerves labeled/quiz.svg (문항 0058 — 번호핀 8개) · diag lumbar puncture labeled.svg (술기). 실사 문항 5개는 본 파일 뒤쪽에 합본되어 있다."
   },
   {
    "id": "anatomy-2026-0059",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "등의 층과 척수신경 앞·뒤가지 연습판 (자체 제작 도해)",
    "tags": [
@@ -1991,11 +2092,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0059.md",
    "snippet": "문제 자체 제작 도해 — 퀴즈판은 docs/assets/anatomy/diag back layers rami quiz.svg , 라벨판은 docs/assets/anatomy/diag back layers rami labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 앞가지/뒤가지 비교표와 피부벗기기 층 순서가 함께 있다.",
-   "text": "Anatomy 등의 층과 척수신경 앞·뒤가지 연습판 (자체 제작 도해) 도해 1회차 앞가지 뒤가지 피부벗기기 예습시험 1회차(0818) 문용석pf 과제 §척수신경 앞가지·뒤가지 차이 + §등·다리 피부벗기기 문제 자체 제작 도해 — 퀴즈판은 docs/assets/anatomy/diag back layers rami quiz.svg , 라벨판은 docs/assets/anatomy/diag back layers rami labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 앞가지/뒤가지 비교표와 피부벗기기 층 순서가 함께 있다."
+   "text": "Anatomy 등의 층과 척수신경 앞·뒤가지 연습판 (자체 제작 도해) 1회차 · 등 도해 1회차 앞가지 뒤가지 피부벗기기 예습시험 1회차(0818) 문용석pf 과제 §척수신경 앞가지·뒤가지 차이 + §등·다리 피부벗기기 문제 자체 제작 도해 — 퀴즈판은 docs/assets/anatomy/diag back layers rami quiz.svg , 라벨판은 docs/assets/anatomy/diag back layers rami labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 앞가지/뒤가지 비교표와 피부벗기기 층 순서가 함께 있다."
   },
   {
    "id": "anatomy-2026-0058",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "볼기·다리 뒤쪽 피부신경 태깅 연습판 (자체 제작 도해)",
    "tags": [
@@ -2012,11 +2114,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0058.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag posterior cutaneous nerves quiz.svg , 라벨판은 docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 볼기 3형제 표·장딴지신경 형성·임상이 함께 있다.",
-   "text": "Anatomy 볼기·다리 뒤쪽 피부신경 태깅 연습판 (자체 제작 도해) spotter 도해 1회차 피부신경 볼기피부신경 장딴지신경 예습시험 1회차(0818) e-Anatomy §Lower limb — Superficial layer + 문용석pf 과제 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag posterior cutaneous nerves quiz.svg , 라벨판은 docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 볼기 3형제 표·장딴지신경 형성·임상이 함께 있다."
+   "text": "Anatomy 볼기·다리 뒤쪽 피부신경 태깅 연습판 (자체 제작 도해) 1회차 · 다리 spotter 도해 1회차 피부신경 볼기피부신경 장딴지신경 예습시험 1회차(0818) e-Anatomy §Lower limb — Superficial layer + 문용석pf 과제 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag posterior cutaneous nerves quiz.svg , 라벨판은 docs/assets/anatomy/diag posterior cutaneous nerves labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 볼기 3형제 표·장딴지신경 형성·임상이 함께 있다."
   },
   {
    "id": "anatomy-2026-0057",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "장딴지신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -2033,11 +2136,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0057.md",
    "snippet": "문제 실사 spotter — 복원 이미지(1회차 pf1 p48)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지신경 실사 spotter (필기 제거·복원본) spotter 복원 1회차 장딴지신경 작은두렁정맥 공여신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p48 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p48)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 장딴지신경 실사 spotter (필기 제거·복원본) 1회차 · 다리 spotter 복원 1회차 장딴지신경 작은두렁정맥 공여신경 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p48 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p48)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0056",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "뒤넙다리피부신경 관통가지 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -2054,11 +2158,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0056.md",
    "snippet": "문제 실사 spotter — 복원 이미지(1회차 pf1 p47)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 뒤넙다리피부신경 관통가지 실사 spotter (필기 제거·복원본) spotter 복원 1회차 뒤넙다리피부신경 관통가지 얕은근막 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p47 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p47)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 뒤넙다리피부신경 관통가지 실사 spotter (필기 제거·복원본) 1회차 · 다리 spotter 복원 1회차 뒤넙다리피부신경 관통가지 얕은근막 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p47 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p47)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0055",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "아래볼기피부신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -2075,11 +2180,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0055.md",
    "snippet": "문제 실사 spotter — 복원 이미지(1회차 pf1 p46)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 아래볼기피부신경 실사 spotter (필기 제거·복원본) spotter 복원 1회차 아래볼기피부신경 뒤넙다리피부신경 앞가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p46 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p46)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 아래볼기피부신경 실사 spotter (필기 제거·복원본) 1회차 · 등 spotter 복원 1회차 아래볼기피부신경 뒤넙다리피부신경 앞가지 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p46 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p46)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0054",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "중간볼기피부신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -2096,11 +2202,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0054.md",
    "snippet": "문제 실사 spotter — 복원 이미지(1회차 pf1 p45)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 중간볼기피부신경 실사 spotter (필기 제거·복원본) spotter 복원 1회차 중간볼기피부신경 뒤가지 뒤엉치구멍 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p45 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p45)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 중간볼기피부신경 실사 spotter (필기 제거·복원본) 1회차 · 등 spotter 복원 1회차 중간볼기피부신경 뒤가지 뒤엉치구멍 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p45 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p45)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0053",
    "type": "anatomy",
+   "unit": "1회차 · 등",
    "topic": "Anatomy",
    "subtopic": "위볼기피부신경 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -2117,11 +2224,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0053.md",
    "snippet": "문제 실사 spotter — 복원 이미지(1회차 pf1 p44)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위볼기피부신경 실사 spotter (필기 제거·복원본) spotter 복원 1회차 위볼기피부신경 뒤가지 엉덩뼈능선 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p44 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p44)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 위볼기피부신경 실사 spotter (필기 제거·복원본) 1회차 · 등 spotter 복원 1회차 위볼기피부신경 뒤가지 엉덩뼈능선 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p44 (e-Anatomy 다리 뒤쪽 피부신경 영상 캡처 · 1회차 배정 구간 12:02–13:34) 문제 실사 spotter — 복원 이미지(1회차 pf1 p44)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0033",
    "type": "anatomy",
+   "unit": "2회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "2회차 서브노트 — 등·볼기·넓적다리뒤 근육/혈관/신경 총정리",
    "tags": [
@@ -2136,11 +2244,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/notes/anatomy-2026-0033-s02-subnote.md",
    "snippet": "1. 등 근육 — 층별 총정리 Muscles of the back !fig docs/assets/anatomy/diag back layers labeled.svg 등 근육 3층과 층별 지배신경 — 왼쪽 패널부터 얕은층 → 중간층 → 깊은층 1) 얕은층 ① — 팔이음뼈를 움직인다 근육 이는곳 origin 닿는곳 insertion 신경 작용 등세모근 trapezius 바깥뒤통수뼈융기·목덜미인대·C7–T12 가시돌기 빗장뼈 가쪽 1",
-   "text": "Anatomy 2회차 서브노트 — 등·볼기·넓적다리뒤 근육/혈관/신경 총정리 서브노트 2회차 표 예습시험 태깅 1. 등 근육 — 층별 총정리 Muscles of the back !fig docs/assets/anatomy/diag back layers labeled.svg 등 근육 3층과 층별 지배신경 — 왼쪽 패널부터 얕은층 → 중간층 → 깊은층 1) 얕은층 ① — 팔이음뼈를 움직인다 근육 이는곳 origin 닿는곳 insertion 신경 작용 등세모근 trapezius 바깥뒤통수뼈융기·목덜미인대·C7–T12 가시돌기 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 ==더부신경 XI== (+C3·4 감각) 상: 올림·위쪽돌림 / 중: 뒤당김 / 하: 내림 넓은등근 latissimus dorsi T7–12 가시돌기·등허리근막·엉덩뼈능선·아래갈비 3–4 위팔뼈 ==결절사이고랑 바닥== 가슴등신경 C6–8 폄·모음·안쪽돌림 [!주의] 등세모근만 예외 :: 얕은층인데 운동지배가 더부신경(XI) 이다. 나머지 얕은·중간층은 전부 척수신경 앞가지 . 깊은층만 뒤가지 . 2) 얕은층 ② — 등세모근을 젖혀야 보인다 근육 이는곳 닿는곳 신경 작용 어깨올림근 levator scapulae C1–4 가로돌기 어깨뼈 위각–가시 사이 안쪽모서리 등쪽어깨신경 C5 (+C3·4) 올림·아래쪽돌림 작은마름근 rhomboid minor 목덜미인대·C7–T1 가시돌기 어깨뼈가시 안쪽 끝 높이 ==등쪽어깨신경 C5== 뒤당김·고정 큰마름근 rhomboid major T2–5 가시돌기 어깨뼈 안쪽모서리(가시–아래각) ==등쪽어깨신경 C5== 뒤당김·아래쪽돌림 [!TIP] 마름근 vs 어깨올림근 :: 둘 다 등쪽어깨신경이지만 닿는 높이 가 다르다 — 어깨올림근은 위각, 마름근은 가시 아래 안쪽모서리. 태깅에서 \"위각에 닿는가\"로 가른다. 3) 중간층 — 호흡 보조 근육 주행 신경 작용 위뒤톱니근 serratus post. superior C7–T3 가시돌기 → 2–5갈비뼈 갈비사이신경 갈비뼈 올림( 들숨 ) 아래뒤톱니근 serratus post. inferior T11–L2 가시돌기 → 9–12갈비뼈 갈비사이신경 갈비뼈 내림( 날숨 ) 4) 깊은층 — 고유등근육(뒤가지) 무리 구성(가쪽→안쪽 / 얕→깊) 특징 척주세움근 erector spinae 엉덩갈비근 – 가장긴근 – 가시근 갈비뼈각 / 가로돌기·꼭지돌기 / 가시돌기에 닿음 가로돌기가시근육 transversospinalis 반가시근 – 뭇갈래근 – 돌림근 건너뛰는 분절 수 4–6 / 2–4 / 1–2 — 적을수록 깊다 = 벗겨 나가는 순서: 피부 → 얕은근막 → 등세모근·넓은등근 → 마름근·어깨올림근 → 뒤톱니근 → 등허리근막 → 척주세움근 → 가로돌기가시근육 [!암기] 척주세움근 3기둥 :: 가쪽부터 \"엉–가–가\" (엉덩갈비 – 가장긴 – 가시). 가로돌기가시근육은 깊어질수록 짧다 — \"반–뭇–돌\" . 2. 볼기부위 Gluteal region !fig docs/assets/anatomy/diag gluteal foramina labeled.svg 궁둥구멍근 기준 위구멍/아래구멍 통과 구조물 + 속엉덩동맥 분지 1) 근육 — 큰볼기근을 젖히면 나오는 순서 근육 신경 작용 태깅 포인트 큰볼기근 gluteus maximus ==아래볼기신경== 엉덩관절 폄·가쪽돌림 가장 크고 얕음. 엉덩정강띠에도 닿음 중간볼기근 gluteus medius ==위볼기신경== 벌림·안쪽돌림 Trendelenburg의 주인공 작은볼기근 gluteus minimus 위볼기신경 벌림·안쪽돌림 중간볼기근 심부 궁둥구멍근 piriformis S1·2 앞가지 가쪽돌림 ==구멍을 위·아래로 가르는 기준== 위쌍둥이·속폐쇄·아래쌍둥이근 — 가쪽돌림 궁둥구멍근 아래 삼총사 넙다리네모근 quadratus femoris — 가쪽돌림 가장 아래 [!기출] 신경 짝짓기 :: 큰볼기근 = 아래 볼기신경 / 중간·작은볼기근 = 위 볼기신경. 근육 크기와 신경 이름이 반대로 붙는 것이 함정. 2) 큰궁둥구멍 통과 구조물 구멍 통과 구조물 위구멍 suprapiriform 위볼기동맥 · 위볼기정맥 · 위볼기신경 — ==이 셋뿐== 아래구멍 infrapiriform 아래볼기 A·V·N / 궁둥신경 (가장 가쪽) / 뒤넙다리피부신경 / 음부신경 + 속음부동맥 = 음부신경·속음부동맥: 아래구멍으로 나갔다가 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입 → 회음으로 [!암기] 위/아래 :: \"위는 위볼기 셋뿐, 나머지는 전부 아래로\" . 아래구멍 구조물은 가쪽부터 궁둥신경이 가장 굵고 가장 가쪽. 3) 넓적다리 뒤칸 — 햄스트링 근육 이는곳 닿는곳 신경 반힘줄근 semitendinosus 궁둥뼈결절 정강뼈 안쪽(거위발) 정강신경분 반막근 semimembranosus 궁둥뼈결절 정강뼈 안쪽관절융기 뒤 정강신경분 넙다리두갈래근 긴갈래 궁둥뼈결절 종아리뼈머리 정강신경분 넙다리두갈래근 짧은갈래 ==넙다리뼈 거친선== 종아리뼈머리 ==온종아리신경분== [!주의] 짧은갈래는 3중 예외 :: 햄스트링 공통조건(① 궁둥뼈결절 기시 ② 무릎 아래 정지 ③ 정강신경 지배) 중 ①과 ③을 어긴다. 구분 문항 단골. 2b. 신경 계보 Nerve tree !fig docs/assets/anatomy/tree s02 nerve labeled.svg 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 계열 2c. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s02 vessel labeled.svg 속엉덩동맥 앞갈래/뒤갈래와, 같은 이름으로 되돌아오는 정맥 2d. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s02 bundle labeled.svg 큰궁둥구멍의 위·아래구멍마다 동맥·정맥·신경이 한 다발로 지나간다 3. 혈관 — 어디서 갈라지나 Arteries !fig docs/assets/anatomy/diag gluteal foramina labeled.svg 속엉덩동맥 → 뒤갈래(위볼기) / 앞갈래(아래볼기·음부) — 오른쪽 위 트리 동맥 모동맥 경로 분포 · 임상 위볼기동맥 속엉덩동맥 ==뒤갈래== 위구멍 중간·작은볼기근. 골반골절 시 출혈원 아래볼기동맥 속엉덩동맥 ==앞갈래== 아래구멍 큰볼기근·궁둥신경 영양 속음부동맥 속엉덩동맥 앞갈래 아래구멍 → 작은궁둥구멍 재진입 회음·외음부 가슴등동맥 어깨밑동맥(겨드랑동맥 3부) 넓은등근 속면 넓은등근. ==피판 이식 혈관줄기== 등쪽어깨동맥 빗장밑동맥(또는 가로목동맥) 마름근 심부 어깨동맥그물 구성 = 속엉덩동맥 → 뒤갈래 = 위볼기동맥 / 앞갈래 = 아래볼기동맥 · 속음부동맥 4. 신경 — 뿌리·지배·손상 Nerves !fig docs/assets/anatomy/diag back layers labeled.svg 층 = 신경 규칙(앞가지/뒤가지)과 등세모근 예외 신경 뿌리 지배 근육 손상 시 더부신경 XI 뇌신경 등세모근·목빗근 어깨 처짐·위쪽돌림 약화 등쪽어깨신경 C5 마름근·어깨올림근 어깨뼈 가쪽 이동(날개어깨 아님) 가슴등신경 C6–8 넓은등근 모음·안쪽돌림 약화 위볼기신경 L4–S1 중간·작은볼기근·넙다리근막긴장근 ==Trendelenburg 징후== 아래볼기신경 L5–S2 큰볼기근 단독 계단 오르기·일어서기 곤란 궁둥신경 L4–S3 햄스트링 → 정강/온종아리신경 인체 최대 신경. 다리 뒤·아래 전반 뒤넙다리피부신경 S1–3 (감각) 넓적다리 뒤 피부 감각소실 [!임상] Trendelenburg :: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서 ==반대쪽== 골반이 처진다. 보상으로 몸통을 환측으로 기울인다. 그래서 근육주사는 볼기 위가쪽 1/4 에 놓는다. [!임상] 궁둥신경 표면 표지 :: 궁둥뼈결절과 큰돌기의 중간점 심부. 궁둥구멍근을 뚫고 지나는 변이가 흔해 궁둥구멍근증후군의 해부 근거가 된다. 5. 공간·삼각 Spaces & triangles !fig docs/assets/anatomy/diag back layers labeled.svg 청진삼각·허리삼각 위치(왼쪽 패널 노란 점선) 이름 경계 의미 청진삼각 auscultation 등세모근 가쪽·넓은등근 위·큰마름근(어깨뼈 안쪽모서리) 근육이 얇아 허파 청진이 잘 됨 허리삼각(Petit) lumbar 엉덩뼈능선·넓은등근 앞모서리·배바깥빗근 뒤모서리 허리탈장 호발 큰궁둥구멍 궁둥구멍근이 위·아래로 가름 §2 2 표 참조 6. 마무리 체크리스트 Self check 등세모근 지배신경은? 그것이 예외인 이유는? 마름근·어깨올림근의 신경과 뿌리는? 둘을 가르는 해부학적 기준은? 척주세움근 3기둥을 가쪽부터 대시오. 그 아래 층 3가지는? 위구멍으로 나오는 구조물 3개를 대고, 나머지가 어디로 나오는지 말하시오. 큰볼기근과 중간볼기근의 신경을 각각 대시오. 헷갈리는 이유는? 햄스트링 4개 중 예외는 무엇이며 어떤 조건을 어기는가? 속엉덩동맥의 앞갈래·뒤갈래에서 각각 나오는 볼기 동맥은? Trendelenburg 징후에서 처지는 쪽은 환측인가 반대쪽인가? [!TIP] 함께 볼 자료 :: 도해 diag back layers labeled.svg (층·신경 규칙) · diag gluteal foramina labeled.svg (위/아래구멍 + 혈관 분지) — 각각 퀴즈판으로 번호핀 답하기 연습(문항 0027·0028). 실사 문제집은 scanpack s02.pdf ."
+   "text": "Anatomy 2회차 서브노트 — 등·볼기·넓적다리뒤 근육/혈관/신경 총정리 2회차 · 등·다리 서브노트 2회차 표 예습시험 태깅 1. 등 근육 — 층별 총정리 Muscles of the back !fig docs/assets/anatomy/diag back layers labeled.svg 등 근육 3층과 층별 지배신경 — 왼쪽 패널부터 얕은층 → 중간층 → 깊은층 1) 얕은층 ① — 팔이음뼈를 움직인다 근육 이는곳 origin 닿는곳 insertion 신경 작용 등세모근 trapezius 바깥뒤통수뼈융기·목덜미인대·C7–T12 가시돌기 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 ==더부신경 XI== (+C3·4 감각) 상: 올림·위쪽돌림 / 중: 뒤당김 / 하: 내림 넓은등근 latissimus dorsi T7–12 가시돌기·등허리근막·엉덩뼈능선·아래갈비 3–4 위팔뼈 ==결절사이고랑 바닥== 가슴등신경 C6–8 폄·모음·안쪽돌림 [!주의] 등세모근만 예외 :: 얕은층인데 운동지배가 더부신경(XI) 이다. 나머지 얕은·중간층은 전부 척수신경 앞가지 . 깊은층만 뒤가지 . 2) 얕은층 ② — 등세모근을 젖혀야 보인다 근육 이는곳 닿는곳 신경 작용 어깨올림근 levator scapulae C1–4 가로돌기 어깨뼈 위각–가시 사이 안쪽모서리 등쪽어깨신경 C5 (+C3·4) 올림·아래쪽돌림 작은마름근 rhomboid minor 목덜미인대·C7–T1 가시돌기 어깨뼈가시 안쪽 끝 높이 ==등쪽어깨신경 C5== 뒤당김·고정 큰마름근 rhomboid major T2–5 가시돌기 어깨뼈 안쪽모서리(가시–아래각) ==등쪽어깨신경 C5== 뒤당김·아래쪽돌림 [!TIP] 마름근 vs 어깨올림근 :: 둘 다 등쪽어깨신경이지만 닿는 높이 가 다르다 — 어깨올림근은 위각, 마름근은 가시 아래 안쪽모서리. 태깅에서 \"위각에 닿는가\"로 가른다. 3) 중간층 — 호흡 보조 근육 주행 신경 작용 위뒤톱니근 serratus post. superior C7–T3 가시돌기 → 2–5갈비뼈 갈비사이신경 갈비뼈 올림( 들숨 ) 아래뒤톱니근 serratus post. inferior T11–L2 가시돌기 → 9–12갈비뼈 갈비사이신경 갈비뼈 내림( 날숨 ) 4) 깊은층 — 고유등근육(뒤가지) 무리 구성(가쪽→안쪽 / 얕→깊) 특징 척주세움근 erector spinae 엉덩갈비근 – 가장긴근 – 가시근 갈비뼈각 / 가로돌기·꼭지돌기 / 가시돌기에 닿음 가로돌기가시근육 transversospinalis 반가시근 – 뭇갈래근 – 돌림근 건너뛰는 분절 수 4–6 / 2–4 / 1–2 — 적을수록 깊다 = 벗겨 나가는 순서: 피부 → 얕은근막 → 등세모근·넓은등근 → 마름근·어깨올림근 → 뒤톱니근 → 등허리근막 → 척주세움근 → 가로돌기가시근육 [!암기] 척주세움근 3기둥 :: 가쪽부터 \"엉–가–가\" (엉덩갈비 – 가장긴 – 가시). 가로돌기가시근육은 깊어질수록 짧다 — \"반–뭇–돌\" . 2. 볼기부위 Gluteal region !fig docs/assets/anatomy/diag gluteal foramina labeled.svg 궁둥구멍근 기준 위구멍/아래구멍 통과 구조물 + 속엉덩동맥 분지 1) 근육 — 큰볼기근을 젖히면 나오는 순서 근육 신경 작용 태깅 포인트 큰볼기근 gluteus maximus ==아래볼기신경== 엉덩관절 폄·가쪽돌림 가장 크고 얕음. 엉덩정강띠에도 닿음 중간볼기근 gluteus medius ==위볼기신경== 벌림·안쪽돌림 Trendelenburg의 주인공 작은볼기근 gluteus minimus 위볼기신경 벌림·안쪽돌림 중간볼기근 심부 궁둥구멍근 piriformis S1·2 앞가지 가쪽돌림 ==구멍을 위·아래로 가르는 기준== 위쌍둥이·속폐쇄·아래쌍둥이근 — 가쪽돌림 궁둥구멍근 아래 삼총사 넙다리네모근 quadratus femoris — 가쪽돌림 가장 아래 [!기출] 신경 짝짓기 :: 큰볼기근 = 아래 볼기신경 / 중간·작은볼기근 = 위 볼기신경. 근육 크기와 신경 이름이 반대로 붙는 것이 함정. 2) 큰궁둥구멍 통과 구조물 구멍 통과 구조물 위구멍 suprapiriform 위볼기동맥 · 위볼기정맥 · 위볼기신경 — ==이 셋뿐== 아래구멍 infrapiriform 아래볼기 A·V·N / 궁둥신경 (가장 가쪽) / 뒤넙다리피부신경 / 음부신경 + 속음부동맥 = 음부신경·속음부동맥: 아래구멍으로 나갔다가 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입 → 회음으로 [!암기] 위/아래 :: \"위는 위볼기 셋뿐, 나머지는 전부 아래로\" . 아래구멍 구조물은 가쪽부터 궁둥신경이 가장 굵고 가장 가쪽. 3) 넓적다리 뒤칸 — 햄스트링 근육 이는곳 닿는곳 신경 반힘줄근 semitendinosus 궁둥뼈결절 정강뼈 안쪽(거위발) 정강신경분 반막근 semimembranosus 궁둥뼈결절 정강뼈 안쪽관절융기 뒤 정강신경분 넙다리두갈래근 긴갈래 궁둥뼈결절 종아리뼈머리 정강신경분 넙다리두갈래근 짧은갈래 ==넙다리뼈 거친선== 종아리뼈머리 ==온종아리신경분== [!주의] 짧은갈래는 3중 예외 :: 햄스트링 공통조건(① 궁둥뼈결절 기시 ② 무릎 아래 정지 ③ 정강신경 지배) 중 ①과 ③을 어긴다. 구분 문항 단골. 2b. 신경 계보 Nerve tree !fig docs/assets/anatomy/tree s02 nerve labeled.svg 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 계열 2c. 혈관 계보 (동맥 + 정맥) Vessel tree !fig docs/assets/anatomy/tree s02 vessel labeled.svg 속엉덩동맥 앞갈래/뒤갈래와, 같은 이름으로 되돌아오는 정맥 2d. 함께 지나는 것 Neurovascular bundles !fig docs/assets/anatomy/tree s02 bundle labeled.svg 큰궁둥구멍의 위·아래구멍마다 동맥·정맥·신경이 한 다발로 지나간다 3. 혈관 — 어디서 갈라지나 Arteries !fig docs/assets/anatomy/diag gluteal foramina labeled.svg 속엉덩동맥 → 뒤갈래(위볼기) / 앞갈래(아래볼기·음부) — 오른쪽 위 트리 동맥 모동맥 경로 분포 · 임상 위볼기동맥 속엉덩동맥 ==뒤갈래== 위구멍 중간·작은볼기근. 골반골절 시 출혈원 아래볼기동맥 속엉덩동맥 ==앞갈래== 아래구멍 큰볼기근·궁둥신경 영양 속음부동맥 속엉덩동맥 앞갈래 아래구멍 → 작은궁둥구멍 재진입 회음·외음부 가슴등동맥 어깨밑동맥(겨드랑동맥 3부) 넓은등근 속면 넓은등근. ==피판 이식 혈관줄기== 등쪽어깨동맥 빗장밑동맥(또는 가로목동맥) 마름근 심부 어깨동맥그물 구성 = 속엉덩동맥 → 뒤갈래 = 위볼기동맥 / 앞갈래 = 아래볼기동맥 · 속음부동맥 4. 신경 — 뿌리·지배·손상 Nerves !fig docs/assets/anatomy/diag back layers labeled.svg 층 = 신경 규칙(앞가지/뒤가지)과 등세모근 예외 신경 뿌리 지배 근육 손상 시 더부신경 XI 뇌신경 등세모근·목빗근 어깨 처짐·위쪽돌림 약화 등쪽어깨신경 C5 마름근·어깨올림근 어깨뼈 가쪽 이동(날개어깨 아님) 가슴등신경 C6–8 넓은등근 모음·안쪽돌림 약화 위볼기신경 L4–S1 중간·작은볼기근·넙다리근막긴장근 ==Trendelenburg 징후== 아래볼기신경 L5–S2 큰볼기근 단독 계단 오르기·일어서기 곤란 궁둥신경 L4–S3 햄스트링 → 정강/온종아리신경 인체 최대 신경. 다리 뒤·아래 전반 뒤넙다리피부신경 S1–3 (감각) 넓적다리 뒤 피부 감각소실 [!임상] Trendelenburg :: 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서 ==반대쪽== 골반이 처진다. 보상으로 몸통을 환측으로 기울인다. 그래서 근육주사는 볼기 위가쪽 1/4 에 놓는다. [!임상] 궁둥신경 표면 표지 :: 궁둥뼈결절과 큰돌기의 중간점 심부. 궁둥구멍근을 뚫고 지나는 변이가 흔해 궁둥구멍근증후군의 해부 근거가 된다. 5. 공간·삼각 Spaces & triangles !fig docs/assets/anatomy/diag back layers labeled.svg 청진삼각·허리삼각 위치(왼쪽 패널 노란 점선) 이름 경계 의미 청진삼각 auscultation 등세모근 가쪽·넓은등근 위·큰마름근(어깨뼈 안쪽모서리) 근육이 얇아 허파 청진이 잘 됨 허리삼각(Petit) lumbar 엉덩뼈능선·넓은등근 앞모서리·배바깥빗근 뒤모서리 허리탈장 호발 큰궁둥구멍 궁둥구멍근이 위·아래로 가름 §2 2 표 참조 6. 마무리 체크리스트 Self check 등세모근 지배신경은? 그것이 예외인 이유는? 마름근·어깨올림근의 신경과 뿌리는? 둘을 가르는 해부학적 기준은? 척주세움근 3기둥을 가쪽부터 대시오. 그 아래 층 3가지는? 위구멍으로 나오는 구조물 3개를 대고, 나머지가 어디로 나오는지 말하시오. 큰볼기근과 중간볼기근의 신경을 각각 대시오. 헷갈리는 이유는? 햄스트링 4개 중 예외는 무엇이며 어떤 조건을 어기는가? 속엉덩동맥의 앞갈래·뒤갈래에서 각각 나오는 볼기 동맥은? Trendelenburg 징후에서 처지는 쪽은 환측인가 반대쪽인가? [!TIP] 함께 볼 자료 :: 도해 diag back layers labeled.svg (층·신경 규칙) · diag gluteal foramina labeled.svg (위/아래구멍 + 혈관 분지) — 각각 퀴즈판으로 번호핀 답하기 연습(문항 0027·0028). 실사 문제집은 scanpack s02.pdf ."
   },
   {
    "id": "anatomy-2026-0032",
    "type": "anatomy",
+   "unit": "3회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물",
    "tags": [
@@ -2156,11 +2265,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/concepts/upper-limb/anatomy-2026-0032.md",
    "snippet": "기준은 위팔세갈래근 긴갈래 하나 도해: docs/assets/anatomy/diag scapular spaces labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0031 ) 위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을 가르는 것은 위팔세갈래근 긴갈래 라는 세로 기둥이다. 작은원근 teres minor ┌──────────────┬───────────",
-   "text": "Anatomy 어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물 도해 3회차 어깨뼈부위 네모공간 세모간격 어깨동맥그물 3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 기준은 위팔세갈래근 긴갈래 하나 도해: docs/assets/anatomy/diag scapular spaces labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0031 ) 위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을 가르는 것은 위팔세갈래근 긴갈래 라는 세로 기둥이다. 작은원근 teres minor ┌──────────────┬──────────────┐ │ 세모공간 │ 네모공간 │ │ (긴갈래 안쪽) │ (긴갈래 가쪽) │ └──────────────┴──────────────┘ 큰원근 teres major ┌──────────────┐ │ 세모간격 │ └──────────────┘ ↑ 세로 기둥 = 위팔세갈래근 긴갈래 경계와 내용물 공간 경계 내용물 네모공간 quadrangular space 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 외과목 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular space 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 외우는 법: 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격 . 어깨동맥그물 (scapular anastomosis) 빗장밑동맥 subclavian a. ├─ 갑상목동맥 → 어깨위동맥 suprascapular a. └─ 등쪽어깨동맥 dorsal scapular a. ↕ (문합) 겨드랑동맥 → 어깨밑동맥 → 어깨휘돌이동맥 circumflex scapular a. ← 세모공간 통과 겨드랑동맥 근위를 결찰해도 팔이 사는 이유. 어깨위신경·동맥과 위가로어깨인대의 관계는 \"Army over the bridge, Navy under\" — 동맥은 인대 위, 신경은 어깨패임 속(인대 아래). 임상 위팔뼈 외과목 골절 → 네모공간의 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽(견장 부위) 감각소실. 어깨 벌림 15–90°가 안 된다. 노신경 은 세모간격을 지나 위팔뼈 뒤면의 노신경고랑으로 들어간다 → 위팔뼈 몸통 중간 골절에서 손목처짐(wrist drop). 돌림근띠(SITS)는 가시위근·가시아래근·작은원근·어깨밑근 — 큰원근은 돌림근띠가 아니다 ."
+   "text": "Anatomy 어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물 3회차 · 팔 도해 3회차 어깨뼈부위 네모공간 세모간격 어깨동맥그물 3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 기준은 위팔세갈래근 긴갈래 하나 도해: docs/assets/anatomy/diag scapular spaces labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0031 ) 위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을 가르는 것은 위팔세갈래근 긴갈래 라는 세로 기둥이다. 작은원근 teres minor ┌──────────────┬──────────────┐ │ 세모공간 │ 네모공간 │ │ (긴갈래 안쪽) │ (긴갈래 가쪽) │ └──────────────┴──────────────┘ 큰원근 teres major ┌──────────────┐ │ 세모간격 │ └──────────────┘ ↑ 세로 기둥 = 위팔세갈래근 긴갈래 경계와 내용물 공간 경계 내용물 네모공간 quadrangular space 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 외과목 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular space 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 외우는 법: 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격 . 어깨동맥그물 (scapular anastomosis) 빗장밑동맥 subclavian a. ├─ 갑상목동맥 → 어깨위동맥 suprascapular a. └─ 등쪽어깨동맥 dorsal scapular a. ↕ (문합) 겨드랑동맥 → 어깨밑동맥 → 어깨휘돌이동맥 circumflex scapular a. ← 세모공간 통과 겨드랑동맥 근위를 결찰해도 팔이 사는 이유. 어깨위신경·동맥과 위가로어깨인대의 관계는 \"Army over the bridge, Navy under\" — 동맥은 인대 위, 신경은 어깨패임 속(인대 아래). 임상 위팔뼈 외과목 골절 → 네모공간의 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽(견장 부위) 감각소실. 어깨 벌림 15–90°가 안 된다. 노신경 은 세모간격을 지나 위팔뼈 뒤면의 노신경고랑으로 들어간다 → 위팔뼈 몸통 중간 골절에서 손목처짐(wrist drop). 돌림근띠(SITS)는 가시위근·가시아래근·작은원근·어깨밑근 — 큰원근은 돌림근띠가 아니다 ."
   },
   {
    "id": "anatomy-2026-0031",
    "type": "anatomy",
+   "unit": "3회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "어깨뼈부위 3공간 태깅 연습판 (자체 제작 도해)",
    "tags": [
@@ -2176,11 +2286,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0031.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag scapular spaces quiz.svg , 라벨판은 docs/assets/anatomy/diag scapular spaces labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 경계 표·어깨동맥그물·임상이 함께 있다.",
-   "text": "Anatomy 어깨뼈부위 3공간 태깅 연습판 (자체 제작 도해) spotter 도해 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag scapular spaces quiz.svg , 라벨판은 docs/assets/anatomy/diag scapular spaces labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 경계 표·어깨동맥그물·임상이 함께 있다."
+   "text": "Anatomy 어깨뼈부위 3공간 태깅 연습판 (자체 제작 도해) 3회차 · 팔 spotter 도해 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag scapular spaces quiz.svg , 라벨판은 docs/assets/anatomy/diag scapular spaces labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 경계 표·어깨동맥그물·임상이 함께 있다."
   },
   {
    "id": "anatomy-2026-0030",
    "type": "anatomy",
+   "unit": "2회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지",
    "tags": [
@@ -2195,11 +2306,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/concepts/lower-limb/anatomy-2026-0030.md",
    "snippet": "기준은 궁둥구멍근 하나 도해: docs/assets/anatomy/diag gluteal foramina labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0028 ) 궁둥구멍근 piriformis 이 큰궁둥구멍을 가로지르며 위·아래로 나눈다. 볼기부위 문제는 거의 전부 \"이 구조가 궁둥구멍근 위냐 아래냐\"로 환원된다. 큰궁둥구멍 greater sciatic foramen ├─ 위구멍 supra",
-   "text": "Anatomy 큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지 도해 2회차 볼기부위 궁둥신경 혈관분지 2회차(0818) 김홍태pf.pdf §볼기부위 + tagging 2차.pdf [볼기 신경·혈관] 기준은 궁둥구멍근 하나 도해: docs/assets/anatomy/diag gluteal foramina labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0028 ) 궁둥구멍근 piriformis 이 큰궁둥구멍을 가로지르며 위·아래로 나눈다. 볼기부위 문제는 거의 전부 \"이 구조가 궁둥구멍근 위냐 아래냐\"로 환원된다. 큰궁둥구멍 greater sciatic foramen ├─ 위구멍 suprapiriform : 위볼기동맥 · 위볼기정맥 · 위볼기신경 ← 이 셋뿐 └─ 아래구멍 infrapiriform : 아래볼기 동맥·정맥·신경 궁둥신경 (가장 가쪽, 가장 굵다) 뒤넙다리피부신경 음부신경 + 속음부동맥 └→ 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입 혈관 분지 — 어디서 갈라지나 속엉덩동맥 internal iliac a. ├─ 뒤갈래 posterior division ─→ 위볼기동맥 superior gluteal a. └─ 앞갈래 anterior division ─┬→ 아래볼기동맥 inferior gluteal a. └→ 속음부동맥 internal pudendal a. 외우는 법: 위는 뒤갈래, 아래·음부는 앞갈래. 신경 — 무엇을 지배하나 신경 나오는 곳 지배 위볼기신경 superior gluteal n. 위구멍 중간볼기근·작은볼기근·넙다리근막긴장근 아래볼기신경 inferior gluteal n. 아래구멍 큰볼기근 단독 궁둥신경 sciatic n. (L4–S3) 아래구멍 햄스트링 → 다리오금에서 정강/온종아리신경 분지 뒤넙다리피부신경 아래구멍 넓적다리 뒤 피부(감각) 음부신경 pudendal n. (S2–4) 아래구멍 → 재진입 회음 임상 — 태깅·구술 단골 Trendelenburg 징후 : 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서 반대쪽 골반이 처진다(보상 = 몸통을 환측으로 기울임). 근육주사 안전구역 : 볼기 위가쪽 1/4 (또는 von Hochstetter 부위) — 궁둥신경과 볼기신경을 피한다. 궁둥신경 표면 표지 : 궁둥뼈결절과 큰돌기의 중간점 심부. 변이 : 궁둥신경이 궁둥구멍근을 뚫고 지나는 변이가 흔하며, 궁둥구멍근증후군의 해부학적 근거가 된다."
+   "text": "Anatomy 큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지 2회차 · 다리 도해 2회차 볼기부위 궁둥신경 혈관분지 2회차(0818) 김홍태pf.pdf §볼기부위 + tagging 2차.pdf [볼기 신경·혈관] 기준은 궁둥구멍근 하나 도해: docs/assets/anatomy/diag gluteal foramina labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0028 ) 궁둥구멍근 piriformis 이 큰궁둥구멍을 가로지르며 위·아래로 나눈다. 볼기부위 문제는 거의 전부 \"이 구조가 궁둥구멍근 위냐 아래냐\"로 환원된다. 큰궁둥구멍 greater sciatic foramen ├─ 위구멍 suprapiriform : 위볼기동맥 · 위볼기정맥 · 위볼기신경 ← 이 셋뿐 └─ 아래구멍 infrapiriform : 아래볼기 동맥·정맥·신경 궁둥신경 (가장 가쪽, 가장 굵다) 뒤넙다리피부신경 음부신경 + 속음부동맥 └→ 궁둥뼈가시 뒤를 감아 작은궁둥구멍으로 재진입 혈관 분지 — 어디서 갈라지나 속엉덩동맥 internal iliac a. ├─ 뒤갈래 posterior division ─→ 위볼기동맥 superior gluteal a. └─ 앞갈래 anterior division ─┬→ 아래볼기동맥 inferior gluteal a. └→ 속음부동맥 internal pudendal a. 외우는 법: 위는 뒤갈래, 아래·음부는 앞갈래. 신경 — 무엇을 지배하나 신경 나오는 곳 지배 위볼기신경 superior gluteal n. 위구멍 중간볼기근·작은볼기근·넙다리근막긴장근 아래볼기신경 inferior gluteal n. 아래구멍 큰볼기근 단독 궁둥신경 sciatic n. (L4–S3) 아래구멍 햄스트링 → 다리오금에서 정강/온종아리신경 분지 뒤넙다리피부신경 아래구멍 넓적다리 뒤 피부(감각) 음부신경 pudendal n. (S2–4) 아래구멍 → 재진입 회음 임상 — 태깅·구술 단골 Trendelenburg 징후 : 위볼기신경 손상 → 중간·작은볼기근 마비 → 한발 서기에서 반대쪽 골반이 처진다(보상 = 몸통을 환측으로 기울임). 근육주사 안전구역 : 볼기 위가쪽 1/4 (또는 von Hochstetter 부위) — 궁둥신경과 볼기신경을 피한다. 궁둥신경 표면 표지 : 궁둥뼈결절과 큰돌기의 중간점 심부. 변이 : 궁둥신경이 궁둥구멍근을 뚫고 지나는 변이가 흔하며, 궁둥구멍근증후군의 해부학적 근거가 된다."
   },
   {
    "id": "anatomy-2026-0029",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "등 근육 3층과 지배신경 규칙",
    "tags": [
@@ -2214,11 +2326,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/concepts/back/anatomy-2026-0029.md",
    "snippet": "층 순서 — 얕은층 → 중간층 → 깊은층 도해: docs/assets/anatomy/diag back layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0027 ) 층 근육 지배신경 기능 축 얕은층 ① 등세모근 trapezius 더부신경(XI) (+C3·4 고유감각) 팔이음뼈 운동 얕은층 ① 넓은등근 latissimus dorsi 가슴등신경 C6–8 어깨 폄·모음·안쪽돌림 얕은층 ②",
-   "text": "Anatomy 등 근육 3층과 지배신경 규칙 도해 2회차 등근육 층 신경지배 2회차(0818) 김홍태pf.pdf §얕은층 근육 + 해부2 인제스트 pages 카드 층 순서 — 얕은층 → 중간층 → 깊은층 도해: docs/assets/anatomy/diag back layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0027 ) 층 근육 지배신경 기능 축 얕은층 ① 등세모근 trapezius 더부신경(XI) (+C3·4 고유감각) 팔이음뼈 운동 얕은층 ① 넓은등근 latissimus dorsi 가슴등신경 C6–8 어깨 폄·모음·안쪽돌림 얕은층 ② 어깨올림근·작은/큰마름근 등쪽어깨신경 C5 어깨뼈 올림·뒤당김 중간층 위뒤톱니근 serratus post. superior 갈비사이신경 갈비뼈 올림(들숨) 중간층 아래뒤톱니근 serratus post. inferior 갈비사이신경 갈비뼈 내림(날숨) 깊은층 척주세움근(엉덩갈비 가장긴 가시) 척수신경 뒤가지 척주 폄 깊은층 가로돌기가시근육(반가시 뭇갈래 돌림) 뒤가지 분절 돌림·안정화 왜 이런 규칙인가 (외우지 말고 이해) 얕은·중간층은 배아기에 팔이음뼈·갈비 쪽에서 등으로 이주해 온 근육이라 원래 살던 동네의 신경(척수신경 앞가지 )을 그대로 데리고 왔다. 깊은층만 처음부터 등에서 만들어진 고유등근육 이라 뒤가지 지배를 받는다. 그래서 태깅에서 신경을 물으면 \"이 근육이 몇 층이냐\"를 먼저 판단하면 된다. 예외는 등세모근 하나 — 얕은층이지만 운동지배가 더부신경(XI)이다(목빗근과 한 짝으로 인두굽이 유래). C3·4는 고유감각만 보낸다. 척주세움근 3기둥 — 가쪽에서 안쪽으로 가쪽 ──────────────────────────── 안쪽 엉덩갈비근 가장긴근 가시근 iliocostalis longissimus spinalis (갈비뼈각) (가로돌기·꼭지) (가시돌기) 그 아래 더 깊은 층이 가로돌기가시근육: 반가시근 (4–6분절 건너뜀) → 뭇갈래근 (2–4분절, 허리에서 최대) → 돌림근 (1–2분절, 가슴에서 발달). 건너뛰는 분절 수가 줄수록 깊다. 임상 삼각 (도해에 노란 점선) 청진삼각 triangle of auscultation — 등세모근 가쪽모서리 · 넓은등근 위모서리 · 큰마름근(또는 어깨뼈 안쪽모서리). 근육이 얇아 허파 청진이 잘 된다. 허리삼각(Petit) lumbar triangle — 엉덩뼈능선 · 넓은등근 앞모서리 · 배바깥빗근 뒤모서리. 허리탈장 호발 부위."
+   "text": "Anatomy 등 근육 3층과 지배신경 규칙 2회차 · 등 도해 2회차 등근육 층 신경지배 2회차(0818) 김홍태pf.pdf §얕은층 근육 + 해부2 인제스트 pages 카드 층 순서 — 얕은층 → 중간층 → 깊은층 도해: docs/assets/anatomy/diag back layers labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0027 ) 층 근육 지배신경 기능 축 얕은층 ① 등세모근 trapezius 더부신경(XI) (+C3·4 고유감각) 팔이음뼈 운동 얕은층 ① 넓은등근 latissimus dorsi 가슴등신경 C6–8 어깨 폄·모음·안쪽돌림 얕은층 ② 어깨올림근·작은/큰마름근 등쪽어깨신경 C5 어깨뼈 올림·뒤당김 중간층 위뒤톱니근 serratus post. superior 갈비사이신경 갈비뼈 올림(들숨) 중간층 아래뒤톱니근 serratus post. inferior 갈비사이신경 갈비뼈 내림(날숨) 깊은층 척주세움근(엉덩갈비 가장긴 가시) 척수신경 뒤가지 척주 폄 깊은층 가로돌기가시근육(반가시 뭇갈래 돌림) 뒤가지 분절 돌림·안정화 왜 이런 규칙인가 (외우지 말고 이해) 얕은·중간층은 배아기에 팔이음뼈·갈비 쪽에서 등으로 이주해 온 근육이라 원래 살던 동네의 신경(척수신경 앞가지 )을 그대로 데리고 왔다. 깊은층만 처음부터 등에서 만들어진 고유등근육 이라 뒤가지 지배를 받는다. 그래서 태깅에서 신경을 물으면 \"이 근육이 몇 층이냐\"를 먼저 판단하면 된다. 예외는 등세모근 하나 — 얕은층이지만 운동지배가 더부신경(XI)이다(목빗근과 한 짝으로 인두굽이 유래). C3·4는 고유감각만 보낸다. 척주세움근 3기둥 — 가쪽에서 안쪽으로 가쪽 ──────────────────────────── 안쪽 엉덩갈비근 가장긴근 가시근 iliocostalis longissimus spinalis (갈비뼈각) (가로돌기·꼭지) (가시돌기) 그 아래 더 깊은 층이 가로돌기가시근육: 반가시근 (4–6분절 건너뜀) → 뭇갈래근 (2–4분절, 허리에서 최대) → 돌림근 (1–2분절, 가슴에서 발달). 건너뛰는 분절 수가 줄수록 깊다. 임상 삼각 (도해에 노란 점선) 청진삼각 triangle of auscultation — 등세모근 가쪽모서리 · 넓은등근 위모서리 · 큰마름근(또는 어깨뼈 안쪽모서리). 근육이 얇아 허파 청진이 잘 된다. 허리삼각(Petit) lumbar triangle — 엉덩뼈능선 · 넓은등근 앞모서리 · 배바깥빗근 뒤모서리. 허리탈장 호발 부위."
   },
   {
    "id": "anatomy-2026-0028",
    "type": "anatomy",
+   "unit": "2회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "큰궁둥구멍 통과 구조물 태깅 연습판 (자체 제작 도해)",
    "tags": [
@@ -2234,11 +2347,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0028.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag gluteal foramina quiz.svg , 정답 라벨판은 docs/assets/anatomy/diag gluteal foramina labeled.svg . 번호핀 7개의 이름 + 위/아래구멍 을 답한다. 답안 칸이 도해 오른쪽에 있다. 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 속엉덩동맥 분지 트리와 임상 요",
-   "text": "Anatomy 큰궁둥구멍 통과 구조물 태깅 연습판 (자체 제작 도해) spotter 도해 2회차 볼기부위 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf §볼기부위 + tagging 2차.pdf [볼기 신경·혈관] 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag gluteal foramina quiz.svg , 정답 라벨판은 docs/assets/anatomy/diag gluteal foramina labeled.svg . 번호핀 7개의 이름 + 위/아래구멍 을 답한다. 답안 칸이 도해 오른쪽에 있다. 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 속엉덩동맥 분지 트리와 임상 요약이 함께 있다."
+   "text": "Anatomy 큰궁둥구멍 통과 구조물 태깅 연습판 (자체 제작 도해) 2회차 · 다리 spotter 도해 2회차 볼기부위 궁둥신경 예습시험 2회차(0818) 김홍태pf.pdf §볼기부위 + tagging 2차.pdf [볼기 신경·혈관] 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag gluteal foramina quiz.svg , 정답 라벨판은 docs/assets/anatomy/diag gluteal foramina labeled.svg . 번호핀 7개의 이름 + 위/아래구멍 을 답한다. 답안 칸이 도해 오른쪽에 있다. 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 속엉덩동맥 분지 트리와 임상 요약이 함께 있다."
   },
   {
    "id": "anatomy-2026-0027",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "등 근육 3층 태깅 연습판 (자체 제작 도해)",
    "tags": [
@@ -2254,11 +2368,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0027.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag back layers quiz.svg , 정답 라벨판은 docs/assets/anatomy/diag back layers labeled.svg . 번호핀 7개의 이름 + 지배신경 을 답한다. 답안 칸이 도해 하단에 있다. 정답 및 해설 정답·해설은 frontmatter. 라벨판을 열어 자가 채점한다.",
-   "text": "Anatomy 등 근육 3층 태깅 연습판 (자체 제작 도해) spotter 도해 2회차 등근육 층 예습시험 2회차(0818) 김홍태pf.pdf §얕은층 근육 + 해부2 인제스트 pages 카드 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag back layers quiz.svg , 정답 라벨판은 docs/assets/anatomy/diag back layers labeled.svg . 번호핀 7개의 이름 + 지배신경 을 답한다. 답안 칸이 도해 하단에 있다. 정답 및 해설 정답·해설은 frontmatter. 라벨판을 열어 자가 채점한다."
+   "text": "Anatomy 등 근육 3층 태깅 연습판 (자체 제작 도해) 2회차 · 등 spotter 도해 2회차 등근육 층 예습시험 2회차(0818) 김홍태pf.pdf §얕은층 근육 + 해부2 인제스트 pages 카드 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag back layers quiz.svg , 정답 라벨판은 docs/assets/anatomy/diag back layers labeled.svg . 번호핀 7개의 이름 + 지배신경 을 답한다. 답안 칸이 도해 하단에 있다. 정답 및 해설 정답·해설은 frontmatter. 라벨판을 열어 자가 채점한다."
   },
   {
    "id": "usmle-2026-0066",
    "type": "usmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Postpartum Hemorrhage from Uterine Atony — Uterotonic Contraindicated in Hypertension",
    "tags": [
@@ -2278,6 +2393,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0065",
    "type": "usmle",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "Acute Mesenteric Ischemia — Pain Out of Proportion and the Diagnostic Next Step",
    "tags": [
@@ -2297,6 +2413,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0064",
    "type": "usmle",
+   "unit": "",
    "topic": "Internal Medicine",
    "subtopic": "Stable Monomorphic Ventricular Tachycardia — Next Step in the Hemodynamically Stable Patient",
    "tags": [
@@ -2316,6 +2433,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0063",
    "type": "usmle",
+   "unit": "",
    "topic": "Microbiology",
    "subtopic": "Listeria monocytogenes — Actin-Based Intracellular Motility and Cell-to-Cell Spread",
    "tags": [
@@ -2335,6 +2453,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0062",
    "type": "usmle",
+   "unit": "",
    "topic": "Biochemistry",
    "subtopic": "Ornithine Transcarbamylase Deficiency — Hyperammonemia with Elevated Orotic Acid",
    "tags": [
@@ -2354,6 +2473,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0061",
    "type": "usmle",
+   "unit": "",
    "topic": "Pharmacology",
    "subtopic": "Digoxin Toxicity Potentiated by Hypokalemia — Na+/K+-ATPase Binding",
    "tags": [
@@ -2373,6 +2493,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0203",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -2389,6 +2510,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0202",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -2405,6 +2527,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0201",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -2421,6 +2544,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0200",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -2437,6 +2561,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0199",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -2453,6 +2578,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0198",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -2469,6 +2595,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0197",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -2485,6 +2612,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0196",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -2501,6 +2629,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0585",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Antiphospholipid Syndrome",
    "tags": [
@@ -2520,6 +2649,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0584",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Granulomatosis with Polyangiitis",
    "tags": [
@@ -2540,6 +2670,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0583",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Tuberculous Pleural Effusion",
    "tags": [
@@ -2559,6 +2690,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0582",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Tension Pneumothorax",
    "tags": [
@@ -2578,6 +2710,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0581",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Conversion Disorder",
    "tags": [
@@ -2597,6 +2730,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0580",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Lithium Toxicity",
    "tags": [
@@ -2616,6 +2750,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0579",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Tetralogy of Fallot (Cyanotic Spell)",
    "tags": [
@@ -2635,6 +2770,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0578",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Intussusception",
    "tags": [
@@ -2654,6 +2790,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0573",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Placenta Previa",
    "tags": [
@@ -2673,6 +2810,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0572",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "HELLP Syndrome",
    "tags": [
@@ -2692,6 +2830,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0571",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Subarachnoid Hemorrhage",
    "tags": [
@@ -2711,6 +2850,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0570",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Cerebral Venous Sinus Thrombosis",
    "tags": [
@@ -2730,6 +2870,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0569",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Contrast-induced Nephropathy",
    "tags": [
@@ -2748,6 +2889,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0568",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Tumor Lysis Syndrome AKI",
    "tags": [
@@ -2767,6 +2909,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0567",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Post-influenza Staphylococcal Pneumonia",
    "tags": [
@@ -2785,6 +2928,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0566",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Scrub Typhus",
    "tags": [
@@ -2804,6 +2948,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0565",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Heparin-Induced Thrombocytopenia",
    "tags": [
@@ -2823,6 +2968,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0564",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Acute Promyelocytic Leukemia",
    "tags": [
@@ -2842,6 +2988,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0563",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Post-thyroidectomy Neck Hematoma",
    "tags": [
@@ -2861,6 +3008,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0562",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Strangulated Inguinal Hernia",
    "tags": [
@@ -2880,6 +3028,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0561",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Clostridioides difficile Colitis",
    "tags": [
@@ -2899,6 +3048,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0560",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Spontaneous Bacterial Peritonitis",
    "tags": [
@@ -2918,6 +3068,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0559",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Primary Aldosteronism",
    "tags": [
@@ -2937,6 +3088,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0558",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Pheochromocytoma",
    "tags": [
@@ -2956,6 +3108,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-daily-2026-08-13",
    "type": "anatomy",
+   "unit": "등·다리",
    "topic": "Anatomy",
    "subtopic": "daily plan 2026-08-13",
    "tags": [],
@@ -2964,11 +3117,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-13",
    "path": "content/anatomy/daily/2026-08-13.md",
    "snippet": "오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 33분 문항 11개 · 개념 3개 · 복습 9개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-08-13 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 33분 문항 11개 · 개념 3개 · 복습 9개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+   "text": "Anatomy daily plan 2026-08-13 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 13 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 28일 · Tagging 2까지 67일 예상 소요: 약 33분 문항 11개 · 개념 3개 · 복습 9개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-2026-0026",
    "type": "anatomy",
+   "unit": "3회차 · 등",
    "topic": "Anatomy",
    "subtopic": "아래머리빗근 실사 spotter (복원본)",
    "tags": [
@@ -2984,11 +3138,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-13",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0026.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가",
-   "text": "Anatomy 아래머리빗근 실사 spotter (복원본) spotter 복원 3회차 뒤통수밑삼각 아래머리빗근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가 부드러운 얼룩으로 남았다. 근육 결이 다른 문항만큼 또렷하지 않다. 정답 근거는 영상의 근육 라벨이 아니라 삼각의 경계 정의(아래가쪽 = 아래머리빗근) 와 같은 프레임의 뒤통수밑신경 라벨이다. 핀 위치가 그 경계 근육 위에 놓였는지 눈으로 확인할 것. 얼룩이 거슬리면 같은 영상의 p9(큰뒤머리곧은근 라벨 프레임)로 교체 가능. 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (필기 제거만, 라벨 살아 있음)."
+   "text": "Anatomy 아래머리빗근 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 뒤통수밑삼각 아래머리빗근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가 부드러운 얼룩으로 남았다. 근육 결이 다른 문항만큼 또렷하지 않다. 정답 근거는 영상의 근육 라벨이 아니라 삼각의 경계 정의(아래가쪽 = 아래머리빗근) 와 같은 프레임의 뒤통수밑신경 라벨이다. 핀 위치가 그 경계 근육 위에 놓였는지 눈으로 확인할 것. 얼룩이 거슬리면 같은 영상의 p9(큰뒤머리곧은근 라벨 프레임)로 교체 가능. 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (필기 제거만, 라벨 살아 있음)."
   },
   {
    "id": "anatomy-2026-0025",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "위가쪽무릎동맥 실사 spotter (복원본)",
    "tags": [
@@ -3004,11 +3159,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-13",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0025.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 ",
-   "text": "Anatomy 위가쪽무릎동맥 실사 spotter (복원본) spotter 복원 3회차 무릎동맥 오금동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 모두 대시오 · 관절주머니를 뚫는 가지는? (중간무릎동맥)"
+   "text": "Anatomy 위가쪽무릎동맥 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 무릎동맥 오금동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 모두 대시오 · 관절주머니를 뚫는 가지는? (중간무릎동맥)"
   },
   {
    "id": "anatomy-2026-0024",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "가슴등동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -3024,11 +3180,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-13",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0024.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 이 동맥의 ",
-   "text": "Anatomy 가슴등동맥 실사 spotter (필기 제거·복원본) spotter 복원 2회차 넓은등근 가슴등동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p8 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 이 동맥의 모동맥은? (어깨밑동맥) · 같이 가는 신경은? (가슴등신경)"
+   "text": "Anatomy 가슴등동맥 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 넓은등근 가슴등동맥 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p8 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p8)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 이 동맥의 모동맥은? (어깨밑동맥) · 같이 가는 신경은? (가슴등신경)"
   },
   {
    "id": "anatomy-2026-0023",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "마름근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -3043,11 +3200,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-13",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0023.md",
    "snippet": "문제 실사 spotter — 복원 이미지(2회차 pf1 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 마름근 실사 spotter (필기 제거·복원본) spotter 복원 2회차 마름근 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 마름근 실사 spotter (필기 제거·복원본) 2회차 · 등 spotter 복원 2회차 마름근 예습시험 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(2회차 pf1 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "paper-2026-0195",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -3064,6 +3222,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0194",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -3080,6 +3239,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0193",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -3096,6 +3256,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0192",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -3112,6 +3273,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0191",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -3128,6 +3290,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0190",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -3144,6 +3307,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0189",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -3160,6 +3324,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0188",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -3176,6 +3341,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0553",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Eosinophilic Granulomatosis with Polyangiitis",
    "tags": [
@@ -3195,6 +3361,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0552",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Takayasu Arteritis",
    "tags": [
@@ -3213,6 +3380,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0551",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Lung Abscess",
    "tags": [
@@ -3231,6 +3399,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0550",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Carbon Monoxide Poisoning",
    "tags": [
@@ -3249,6 +3418,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0549",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Catatonia",
    "tags": [
@@ -3267,6 +3437,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0548",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Acute Dystonic Reaction",
    "tags": [
@@ -3285,6 +3456,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0547",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Reye Syndrome",
    "tags": [
@@ -3303,6 +3475,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0546",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Testicular Torsion",
    "tags": [
@@ -3321,6 +3494,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0545",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Supracondylar Humeral Fracture",
    "tags": [
@@ -3339,6 +3513,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0544",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Unstable Pelvic Ring Fracture",
    "tags": [
@@ -3357,6 +3532,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0543",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Methanol Toxic Optic Neuropathy",
    "tags": [
@@ -3375,6 +3551,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0542",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Open Globe Injury",
    "tags": [
@@ -3393,6 +3570,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0541",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Vasa Previa",
    "tags": [
@@ -3411,6 +3589,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0540",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Severe Preeclampsia",
    "tags": [
@@ -3428,6 +3607,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0539",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Lambert-Eaton Myasthenic Syndrome",
    "tags": [
@@ -3446,6 +3626,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0538",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Osmotic Demyelination Syndrome",
    "tags": [
@@ -3463,6 +3644,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0537",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Cholesterol Atheroembolism",
    "tags": [
@@ -3481,6 +3663,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0536",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Lupus Nephritis",
    "tags": [
@@ -3499,6 +3682,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0535",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Enteric (Typhoid) Fever",
    "tags": [
@@ -3517,6 +3701,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0534",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Dengue Shock Syndrome",
    "tags": [
@@ -3535,6 +3720,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0533",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Severe Aplastic Anemia",
    "tags": [
@@ -3552,6 +3738,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0532",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Paroxysmal Nocturnal Hemoglobinuria",
    "tags": [
@@ -3570,6 +3757,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0531",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Abdominal Compartment Syndrome",
    "tags": [
@@ -3587,6 +3775,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0530",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Fournier Gangrene",
    "tags": [
@@ -3605,6 +3794,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0529",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Primary Sclerosing Cholangitis",
    "tags": [
@@ -3623,6 +3813,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0528",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Wilson Disease",
    "tags": [
@@ -3641,6 +3832,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0527",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Sheehan Syndrome",
    "tags": [
@@ -3659,6 +3851,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0526",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Hypercalcemia of Malignancy",
    "tags": [
@@ -3677,6 +3870,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0525",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Ramsay Hunt Syndrome",
    "tags": [
@@ -3695,6 +3889,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0524",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Toxic Epidermal Necrolysis",
    "tags": [
@@ -3712,6 +3907,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0523",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Digoxin Toxicity",
    "tags": [
@@ -3730,6 +3926,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0522",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Paroxysmal Supraventricular Tachycardia",
    "tags": [
@@ -3748,6 +3945,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-src-missing",
    "type": "anatomy",
+   "unit": "",
    "topic": "Anatomy",
    "subtopic": "missing_source",
    "tags": [],
@@ -3761,6 +3959,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-src-a2-tagging2",
    "type": "anatomy",
+   "unit": "",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3774,6 +3973,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-src-a2-s15",
    "type": "anatomy",
+   "unit": "15회차 · 머리·목·다리",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3782,11 +3982,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s15.md",
    "snippet": "Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 15회차 · 머리·목·다리 Google Drive (3Q 해부학) Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s14",
    "type": "anatomy",
+   "unit": "14회차 · 팔·골반·회음",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3795,11 +3996,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s14.md",
    "snippet": "Source 파일: 14차시(0930) 문용석pf.pdf (Drive file ID 1w9YssObls08gA35da5nZXiBt9rDXQpV ) 폴더: 해부2 · 크기 3,667,939 bytes · Drive modified 2026 08 04T05:18:00Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 14차시(0930) 문용석pf.pdf (Drive file ID 1w9YssObls08gA35da5nZXiBt9rDXQpV ) 폴더: 해부2 · 크기 3,667,939 bytes · Drive modified 2026 08 04T05:18:00Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 14회차 · 팔·골반·회음 Google Drive (3Q 해부학) Source 파일: 14차시(0930) 문용석pf.pdf (Drive file ID 1w9YssObls08gA35da5nZXiBt9rDXQpV ) 폴더: 해부2 · 크기 3,667,939 bytes · Drive modified 2026 08 04T05:18:00Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s13",
    "type": "anatomy",
+   "unit": "13회차 · 머리·배",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3808,11 +4010,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s13.md",
    "snippet": "Source 파일: 13차시(0929) 김홍태pf.pdf (Drive file ID 1fqcNIy Z2BnysPlRCl8F8cSaMl 2SLh3 ) 폴더: 해부2 · 크기 25,863,716 bytes · Drive modified 2026 08 04T05:18:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 13차시(0929) 김홍태pf.pdf (Drive file ID 1fqcNIy Z2BnysPlRCl8F8cSaMl 2SLh3 ) 폴더: 해부2 · 크기 25,863,716 bytes · Drive modified 2026 08 04T05:18:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 13회차 · 머리·배 Google Drive (3Q 해부학) Source 파일: 13차시(0929) 김홍태pf.pdf (Drive file ID 1fqcNIy Z2BnysPlRCl8F8cSaMl 2SLh3 ) 폴더: 해부2 · 크기 25,863,716 bytes · Drive modified 2026 08 04T05:18:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s12",
    "type": "anatomy",
+   "unit": "12회차 · 등·골반·회음",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3821,11 +4024,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s12.md",
    "snippet": "Source 파일: 12차시(0925) 문용석pf.pdf (Drive file ID 1m zNU7EJ3593L 9R 5sXjoeOnKVJq8G5 ) 폴더: 해부2 · 크기 6,982,184 bytes · Drive modified 2026 08 04T05:17:58Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 12차시(0925) 문용석pf.pdf (Drive file ID 1m zNU7EJ3593L 9R 5sXjoeOnKVJq8G5 ) 폴더: 해부2 · 크기 6,982,184 bytes · Drive modified 2026 08 04T05:17:58Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 12회차 · 등·골반·회음 Google Drive (3Q 해부학) Source 파일: 12차시(0925) 문용석pf.pdf (Drive file ID 1m zNU7EJ3593L 9R 5sXjoeOnKVJq8G5 ) 폴더: 해부2 · 크기 6,982,184 bytes · Drive modified 2026 08 04T05:17:58Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s11",
    "type": "anatomy",
+   "unit": "11회차 · 팔·배",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3834,11 +4038,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s11.md",
    "snippet": "Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 11회차 · 팔·배 Google Drive (3Q 해부학) Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s10",
    "type": "anatomy",
+   "unit": "10회차 · 팔·배",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3847,11 +4052,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s10.md",
    "snippet": "Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 10회차 · 팔·배 Google Drive (3Q 해부학) Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s09",
    "type": "anatomy",
+   "unit": "9회차 · 팔·가슴",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3860,11 +4066,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s09.md",
    "snippet": "Source 파일: 9차시(0911) 김홍태pf.pdf (Drive file ID 1nuT1hKVN4R3tvK7kqBZEwyfc1iDbfQlp ) 폴더: 해부2 · 크기 29,856,430 bytes · Drive modified 2026 08 04T05:17:38Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부2 Google Drive (3Q 해부학) Source 파일: 9차시(0911) 김홍태pf.pdf (Drive file ID 1nuT1hKVN4R3tvK7kqBZEwyfc1iDbfQlp ) 폴더: 해부2 · 크기 29,856,430 bytes · Drive modified 2026 08 04T05:17:38Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부2 9회차 · 팔·가슴 Google Drive (3Q 해부학) Source 파일: 9차시(0911) 김홍태pf.pdf (Drive file ID 1nuT1hKVN4R3tvK7kqBZEwyfc1iDbfQlp ) 폴더: 해부2 · 크기 29,856,430 bytes · Drive modified 2026 08 04T05:17:38Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-plan",
    "type": "anatomy",
+   "unit": "",
    "topic": "Anatomy",
    "subtopic": "해부2",
    "tags": [],
@@ -3878,6 +4085,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-src-a1-s07",
    "type": "anatomy",
+   "unit": "7회차 · 목·다리",
    "topic": "Anatomy",
    "subtopic": "해부1",
    "tags": [],
@@ -3886,11 +4094,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s07.md",
    "snippet": "Source 파일: 7회차(0904) 문용석pf.pdf (Drive file ID 11INApFHsemvqLWZi5CCsxDwc7P3YHQwV ) 폴더: 해부1 · 크기 6,071,524 bytes · Drive modified 2026 08 04T05:23:20Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용",
-   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 7회차(0904) 문용석pf.pdf (Drive file ID 11INApFHsemvqLWZi5CCsxDwc7P3YHQwV ) 폴더: 해부1 · 크기 6,071,524 bytes · Drive modified 2026 08 04T05:23:20Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부1 7회차 · 목·다리 Google Drive (3Q 해부학) Source 파일: 7회차(0904) 문용석pf.pdf (Drive file ID 11INApFHsemvqLWZi5CCsxDwc7P3YHQwV ) 폴더: 해부1 · 크기 6,071,524 bytes · Drive modified 2026 08 04T05:23:20Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s06",
    "type": "anatomy",
+   "unit": "6회차 · 목·다리",
    "topic": "Anatomy",
    "subtopic": "해부1",
    "tags": [],
@@ -3899,11 +4108,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s06.md",
    "snippet": "Source 파일: 6회차(0901) 문용석pf.pdf (Drive file ID 1geCFG3Icgh nH6nHvEHacTEeWCiCwLf ) 폴더: 해부1 · 크기 57,243,873 bytes · Drive modified 2026 08 04T05:23:36Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용",
-   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 6회차(0901) 문용석pf.pdf (Drive file ID 1geCFG3Icgh nH6nHvEHacTEeWCiCwLf ) 폴더: 해부1 · 크기 57,243,873 bytes · Drive modified 2026 08 04T05:23:36Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부1 6회차 · 목·다리 Google Drive (3Q 해부학) Source 파일: 6회차(0901) 문용석pf.pdf (Drive file ID 1geCFG3Icgh nH6nHvEHacTEeWCiCwLf ) 폴더: 해부1 · 크기 57,243,873 bytes · Drive modified 2026 08 04T05:23:36Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s05",
    "type": "anatomy",
+   "unit": "5회차 · 가슴·머리",
    "topic": "Anatomy",
    "subtopic": "해부1",
    "tags": [],
@@ -3912,11 +4122,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s05.md",
    "snippet": "Source 파일: 5회차(0829) 김홍태pf.pdf (Drive file ID 1qLFsMNerkM4ZuCSBc7qDryowUF6boVTB ) 폴더: 해부1 · 크기 42,388,363 bytes · Drive modified 2026 08 04T05:23:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 5회차(0829) 김홍태pf.pdf (Drive file ID 1qLFsMNerkM4ZuCSBc7qDryowUF6boVTB ) 폴더: 해부1 · 크기 42,388,363 bytes · Drive modified 2026 08 04T05:23:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부1 5회차 · 가슴·머리 Google Drive (3Q 해부학) Source 파일: 5회차(0829) 김홍태pf.pdf (Drive file ID 1qLFsMNerkM4ZuCSBc7qDryowUF6boVTB ) 폴더: 해부1 · 크기 42,388,363 bytes · Drive modified 2026 08 04T05:23:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s04",
    "type": "anatomy",
+   "unit": "4회차 · 가슴·머리",
    "topic": "Anatomy",
    "subtopic": "해부1",
    "tags": [],
@@ -3925,11 +4136,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s04.md",
    "snippet": "Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부1 4회차 · 가슴·머리 Google Drive (3Q 해부학) Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s03",
    "type": "anatomy",
+   "unit": "3회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "해부1",
    "tags": [],
@@ -3938,11 +4150,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s03.md",
    "snippet": "Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부1 3회차 · 등·다리 Google Drive (3Q 해부학) Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s02",
    "type": "anatomy",
+   "unit": "2회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "해부1",
    "tags": [],
@@ -3951,11 +4164,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s02.md",
    "snippet": "Source 파일: 2회차(0818) 김홍태pf.pdf (Drive file ID 1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm ) 폴더: 해부1 · 크기 38,447,779 bytes · Drive modified 2026 08 04T05:22:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부1 Google Drive (3Q 해부학) Source 파일: 2회차(0818) 김홍태pf.pdf (Drive file ID 1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm ) 폴더: 해부1 · 크기 38,447,779 bytes · Drive modified 2026 08 04T05:22:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "text": "Anatomy 해부1 2회차 · 등·다리 Google Drive (3Q 해부학) Source 파일: 2회차(0818) 김홍태pf.pdf (Drive file ID 1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm ) 폴더: 해부1 · 크기 38,447,779 bytes · Drive modified 2026 08 04T05:22:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-pg-a2-s15-후두절단면",
    "type": "anatomy",
+   "unit": "15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "후두절단면",
    "tags": [],
@@ -3964,11 +4178,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-16-후두절단면.md",
    "snippet": "구조물 용어 (11개) 속후두신경 (internal laryngeal nerve) 위후두동맥 (superior laryngeal artery) 가쪽방패목뿔인대 (lateral thyrohyoid ligament) 밀알연골 (triticeal cartilage) 안뜰주름 (vestibular fold) 성대주름 (vocal fold) 후두안뜰 (laryngeal vestibule) 후두실 (laryngeal ventricle) ",
-   "text": "Anatomy 후두절단면 15차시(1013) 허미선pf.pdf 구조물 용어 (11개) 속후두신경 (internal laryngeal nerve) 위후두동맥 (superior laryngeal artery) 가쪽방패목뿔인대 (lateral thyrohyoid ligament) 밀알연골 (triticeal cartilage) 안뜰주름 (vestibular fold) 성대주름 (vocal fold) 후두안뜰 (laryngeal vestibule) 후두실 (laryngeal ventricle) 성대문아래공간 (infraglottic cavity) 성대틈새 (rima glottidis) 앞교차 (anterior commisure) 분류: region=neck (conf 0.86) · layers=['cavity visceral'] · classes=['artery', 'foramen', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 후두절단면 15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (11개) 속후두신경 (internal laryngeal nerve) 위후두동맥 (superior laryngeal artery) 가쪽방패목뿔인대 (lateral thyrohyoid ligament) 밀알연골 (triticeal cartilage) 안뜰주름 (vestibular fold) 성대주름 (vocal fold) 후두안뜰 (laryngeal vestibule) 후두실 (laryngeal ventricle) 성대문아래공간 (infraglottic cavity) 성대틈새 (rima glottidis) 앞교차 (anterior commisure) 분류: region=neck (conf 0.86) · layers=['cavity visceral'] · classes=['artery', 'foramen', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-후두속-자체기원근육",
    "type": "anatomy",
+   "unit": "14·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "후두속 자체기원근육",
    "tags": [],
@@ -3977,11 +4192,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-15-후두속-자체기원근육.md",
    "snippet": "구조물 용어 (10개) 방패목뿔막 (thyrohyoid membrane) 반지방패인대 (cricothyroid ligament) 반지방패관절 (cricothyroid joint) 방패모뿔근 (thyroarytenoid muscle) 성대근 (vocalis muscle) 탄력원뿔 (conus elasticus) 성대인대 (vocal ligament) 모뿔덮개주름 (aryepiglottic fold) 모뿔덮개근 (aryepiglo",
-   "text": "Anatomy 후두속 자체기원근육 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 방패목뿔막 (thyrohyoid membrane) 반지방패인대 (cricothyroid ligament) 반지방패관절 (cricothyroid joint) 방패모뿔근 (thyroarytenoid muscle) 성대근 (vocalis muscle) 탄력원뿔 (conus elasticus) 성대인대 (vocal ligament) 모뿔덮개주름 (aryepiglottic fold) 모뿔덮개근 (aryepiglottic muscle) 방패목뿔막 (thyrohyoid membrane) 분류: region=neck (conf 1.0) · layers=['deep'] · classes=['joint', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 후두속 자체기원근육 14·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 방패목뿔막 (thyrohyoid membrane) 반지방패인대 (cricothyroid ligament) 반지방패관절 (cricothyroid joint) 방패모뿔근 (thyroarytenoid muscle) 성대근 (vocalis muscle) 탄력원뿔 (conus elasticus) 성대인대 (vocal ligament) 모뿔덮개주름 (aryepiglottic fold) 모뿔덮개근 (aryepiglottic muscle) 방패목뿔막 (thyrohyoid membrane) 분류: region=neck (conf 1.0) · layers=['deep'] · classes=['joint', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-후두바깥-자체기원근육",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "후두바깥 자체기원근육",
    "tags": [],
@@ -3990,11 +4206,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-14-후두바깥-자체기원근육.md",
    "snippet": "구조물 용어 (8개) 반지방패근 (cricothyroid muscle) 조롱박오목 (piriform fossa) 아래후두신경 (inferior laryngeal nerve) 뒤반지모뿔근 (posterior cricoarythenoid muscle) 모뿔근 (arytenoid muscle) 비스듬하게 엑스자모양으로 교차하는 빗모뿔근 (oblique arytenoid muscle) 과 그보다 깊이 가로로 주행하는 가로모뿔근 (tr",
-   "text": "Anatomy 후두바깥 자체기원근육 15차시(1013) 허미선pf.pdf 구조물 용어 (8개) 반지방패근 (cricothyroid muscle) 조롱박오목 (piriform fossa) 아래후두신경 (inferior laryngeal nerve) 뒤반지모뿔근 (posterior cricoarythenoid muscle) 모뿔근 (arytenoid muscle) 비스듬하게 엑스자모양으로 교차하는 빗모뿔근 (oblique arytenoid muscle) 과 그보다 깊이 가로로 주행하는 가로모뿔근 (transverse arytenoid muscle) 모뿔덮개근 (aryepiglottic muscle) 분류: region=neck (conf 0.89) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 후두바깥 자체기원근육 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (8개) 반지방패근 (cricothyroid muscle) 조롱박오목 (piriform fossa) 아래후두신경 (inferior laryngeal nerve) 뒤반지모뿔근 (posterior cricoarythenoid muscle) 모뿔근 (arytenoid muscle) 비스듬하게 엑스자모양으로 교차하는 빗모뿔근 (oblique arytenoid muscle) 과 그보다 깊이 가로로 주행하는 가로모뿔근 (transverse arytenoid muscle) 모뿔덮개근 (aryepiglottic muscle) 분류: region=neck (conf 0.89) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-혀의신경2",
    "type": "anatomy",
+   "unit": "7회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "혀의신경2",
    "tags": [],
@@ -4003,11 +4220,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-08-혀의신경2.md",
    "snippet": "구조물 용어 (2개) 부교감신경섬유 (parasympathetic fiber) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.68) · layers=['deep', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 혀의신경2 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 부교감신경섬유 (parasympathetic fiber) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.68) · layers=['deep', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 혀의신경2 7회차 · 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 부교감신경섬유 (parasympathetic fiber) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.68) · layers=['deep', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-혀의신경1",
    "type": "anatomy",
+   "unit": "7회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "혀의신경1",
    "tags": [],
@@ -4016,11 +4234,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-07-혀의신경1.md",
    "snippet": "구조물 용어 (4개) 혀신경 (lingual nerve) 셋째큰어금니 (third molar tooth) 턱밑신경절 (submandibular ganglion) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.69) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 혀의신경1 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 혀신경 (lingual nerve) 셋째큰어금니 (third molar tooth) 턱밑신경절 (submandibular ganglion) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.69) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 혀의신경1 7회차 · 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 혀신경 (lingual nerve) 셋째큰어금니 (third molar tooth) 턱밑신경절 (submandibular ganglion) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.69) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-코중격-시상면",
    "type": "anatomy",
+   "unit": "머리",
    "topic": "Anatomy",
    "subtopic": "코중격 시상면",
    "tags": [],
@@ -4029,11 +4248,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-02-코중격-시상면.md",
    "snippet": "구조물 용어 (10개) 벌집뼈수직판 (perpendicular plate) 보습뼈 (vomer) 코중격연골 (septal nasal cartilage) 입천장뼈 (palatine bone) 위 턱뼈 코능선 (nasal crest) 이마뼈 (frontal bone) 후각신경섬유 (olfactory nerve fiber) 앞니관 (incisive canal) 나비굴 (sphenoidal sinus) 나비굴구멍 (aperture o",
-   "text": "Anatomy 코중격 시상면 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 벌집뼈수직판 (perpendicular plate) 보습뼈 (vomer) 코중격연골 (septal nasal cartilage) 입천장뼈 (palatine bone) 위 턱뼈 코능선 (nasal crest) 이마뼈 (frontal bone) 후각신경섬유 (olfactory nerve fiber) 앞니관 (incisive canal) 나비굴 (sphenoidal sinus) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=head (conf 0.67) · layers=['cavity visceral'] · classes=['bone', 'duct', 'foramen', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 코중격 시상면 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 벌집뼈수직판 (perpendicular plate) 보습뼈 (vomer) 코중격연골 (septal nasal cartilage) 입천장뼈 (palatine bone) 위 턱뼈 코능선 (nasal crest) 이마뼈 (frontal bone) 후각신경섬유 (olfactory nerve fiber) 앞니관 (incisive canal) 나비굴 (sphenoidal sinus) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=head (conf 0.67) · layers=['cavity visceral'] · classes=['bone', 'duct', 'foramen', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-코안-가쪽벽",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "코안 가쪽벽",
    "tags": [],
@@ -4042,11 +4262,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-03-코안-가쪽벽.md",
    "snippet": "구조물 용어 (10개) 아래코선반 (nasal concha) 맨위코선반 (supreme nasal concha) 아래콧길 (nasal meatus) 각각의 콧길이 코인두길과 뒤콧구멍 (choanae) 코눈물관 (nasolacrimal duct) 갈고리돌기 (uncinate process) 벌집뼈융기 (ethmoidal bulla) 반달틈새 (semilunar hiatus) 나비벌집오목 (sphenoethmoidal recess",
-   "text": "Anatomy 코안 가쪽벽 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 아래코선반 (nasal concha) 맨위코선반 (supreme nasal concha) 아래콧길 (nasal meatus) 각각의 콧길이 코인두길과 뒤콧구멍 (choanae) 코눈물관 (nasolacrimal duct) 갈고리돌기 (uncinate process) 벌집뼈융기 (ethmoidal bulla) 반달틈새 (semilunar hiatus) 나비벌집오목 (sphenoethmoidal recess) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=neck (conf 0.6) · layers= · classes=['bone', 'duct', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 코안 가쪽벽 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 아래코선반 (nasal concha) 맨위코선반 (supreme nasal concha) 아래콧길 (nasal meatus) 각각의 콧길이 코인두길과 뒤콧구멍 (choanae) 코눈물관 (nasolacrimal duct) 갈고리돌기 (uncinate process) 벌집뼈융기 (ethmoidal bulla) 반달틈새 (semilunar hiatus) 나비벌집오목 (sphenoethmoidal recess) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=neck (conf 0.6) · layers= · classes=['bone', 'duct', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-입천장",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "입천장",
    "tags": [],
@@ -4055,11 +4276,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-04-입천장.md",
    "snippet": "구조물 용어 (5개) 두꼐는 입천장샘 (palatine gland) 부위에 있는 입천장널힘줄 (palatine aponeurosis) 입천장혀활 (palatoglossal arch) 입천장인두활 (palatopharyngeal arch) 목구멍편도 (palatine tonsil) 분류: region=neck (conf 0.6) · layers= · classes=['fascia', 'foramen', 'organ'] 원문 전문",
-   "text": "Anatomy 입천장 15차시(1013) 허미선pf.pdf 구조물 용어 (5개) 두꼐는 입천장샘 (palatine gland) 부위에 있는 입천장널힘줄 (palatine aponeurosis) 입천장혀활 (palatoglossal arch) 입천장인두활 (palatopharyngeal arch) 목구멍편도 (palatine tonsil) 분류: region=neck (conf 0.6) · layers= · classes=['fascia', 'foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 입천장 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (5개) 두꼐는 입천장샘 (palatine gland) 부위에 있는 입천장널힘줄 (palatine aponeurosis) 입천장혀활 (palatoglossal arch) 입천장인두활 (palatopharyngeal arch) 목구멍편도 (palatine tonsil) 분류: region=neck (conf 0.6) · layers= · classes=['fascia', 'foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두의-신경",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "인두의 신경",
    "tags": [],
@@ -4068,11 +4290,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-12-인두의-신경.md",
    "snippet": "구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.74) · layers= · classes=['nerve'] 원문 전문은 커밋하지 ",
-   "text": "Anatomy 인두의 신경 15차시(1013) 허미선pf.pdf 구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.74) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두의 신경 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.74) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두의-구분",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "인두의 구분",
    "tags": [],
@@ -4081,11 +4304,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-13-인두의-구분.md",
    "snippet": "구조물 용어 (7개) 코인두 (nasopharynx) 물렁입천장 위쪽공간 입인두 (oropharynx) 목젖 (uvula) 입인두 뒤쪽에서 혀 뒷부분 일부 관찰 후두인두 (laryngopharynx) 모뿔덮개주름 (aryepiglottic fold) 후두어귀 (laryngeal inlet) 조롱박오목 (piriform fossa) 분류: region=neck (conf 0.78) · layers=['cavity visceral",
-   "text": "Anatomy 인두의 구분 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 코인두 (nasopharynx) 물렁입천장 위쪽공간 입인두 (oropharynx) 목젖 (uvula) 입인두 뒤쪽에서 혀 뒷부분 일부 관찰 후두인두 (laryngopharynx) 모뿔덮개주름 (aryepiglottic fold) 후두어귀 (laryngeal inlet) 조롱박오목 (piriform fossa) 분류: region=neck (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두의 구분 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 코인두 (nasopharynx) 물렁입천장 위쪽공간 입인두 (oropharynx) 목젖 (uvula) 입인두 뒤쪽에서 혀 뒷부분 일부 관찰 후두인두 (laryngopharynx) 모뿔덮개주름 (aryepiglottic fold) 후두어귀 (laryngeal inlet) 조롱박오목 (piriform fossa) 분류: region=neck (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두벽",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "인두벽",
    "tags": [],
@@ -4094,11 +4318,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-06-인두벽.md",
    "snippet": "구조물 용어 (7개) 날개아래턱솔기 (pterygomandibular raphe) 날개갈고리 (pterygoid hamulus) 인두결절근막 (pharyngobasilar fascia) 연골벽 (cartilaginous wall) 막벽 (membranous wall) 입천장긴장근 (tensor veli palatini muscle) 귀관인두근 (salpingopharyngeus muscle) 분류: region=neck (co",
-   "text": "Anatomy 인두벽 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 날개아래턱솔기 (pterygomandibular raphe) 날개갈고리 (pterygoid hamulus) 인두결절근막 (pharyngobasilar fascia) 연골벽 (cartilaginous wall) 막벽 (membranous wall) 입천장긴장근 (tensor veli palatini muscle) 귀관인두근 (salpingopharyngeus muscle) 분류: region=neck (conf 0.53) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두벽 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 날개아래턱솔기 (pterygomandibular raphe) 날개갈고리 (pterygoid hamulus) 인두결절근막 (pharyngobasilar fascia) 연골벽 (cartilaginous wall) 막벽 (membranous wall) 입천장긴장근 (tensor veli palatini muscle) 귀관인두근 (salpingopharyngeus muscle) 분류: region=neck (conf 0.53) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두근육",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "인두근육",
    "tags": [],
@@ -4107,11 +4332,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-11-인두근육.md",
    "snippet": "구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) ",
-   "text": "Anatomy 인두근육 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) 아래인두수축근 (inferior constrictor muscle) 인두솔기 (pharyngeal raphe) 붓인두근 (stylopharyngeus muscle) 분류: region=neck (conf 0.72) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두근육 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) 아래인두수축근 (inferior constrictor muscle) 인두솔기 (pharyngeal raphe) 붓인두근 (stylopharyngeus muscle) 분류: region=neck (conf 0.72) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-엉덩관절-주변정리",
    "type": "anatomy",
+   "unit": "1·2·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "엉덩관절 주변정리",
    "tags": [],
@@ -4120,11 +4346,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-17-엉덩관절-주변정리.md",
    "snippet": "구조물 용어 (0개) 분류: region=lower limb (conf 0.5) · layers=['deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 엉덩관절 주변정리 15차시(1013) 허미선pf.pdf 구조물 용어 (0개) 분류: region=lower limb (conf 0.5) · layers=['deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엉덩관절 주변정리 1·2·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (0개) 분류: region=lower limb (conf 0.5) · layers=['deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-엉덩관절-속구조",
    "type": "anatomy",
+   "unit": "1·2·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "엉덩관절 속구조",
    "tags": [],
@@ -4133,11 +4360,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-19-엉덩관절-속구조.md",
    "snippet": "구조물 용어 (6개) 폐쇄막 (obturator membrane) 바깥폐쇄근 (obturator externus muscle) 폐쇄동맥 (obturator artery) 폐쇄관 (obturator canal) 절구가로인대 (transverse acetabular ligament) 절구테두리 (acetabular labrum) 분류: region=lower limb (conf 0.5) · layers= · classes=['ar",
-   "text": "Anatomy 엉덩관절 속구조 15차시(1013) 허미선pf.pdf 구조물 용어 (6개) 폐쇄막 (obturator membrane) 바깥폐쇄근 (obturator externus muscle) 폐쇄동맥 (obturator artery) 폐쇄관 (obturator canal) 절구가로인대 (transverse acetabular ligament) 절구테두리 (acetabular labrum) 분류: region=lower limb (conf 0.5) · layers= · classes=['artery', 'duct', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엉덩관절 속구조 1·2·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (6개) 폐쇄막 (obturator membrane) 바깥폐쇄근 (obturator externus muscle) 폐쇄동맥 (obturator artery) 폐쇄관 (obturator canal) 절구가로인대 (transverse acetabular ligament) 절구테두리 (acetabular labrum) 분류: region=lower limb (conf 0.5) · layers= · classes=['artery', 'duct', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-십자인대",
    "type": "anatomy",
+   "unit": "1·7·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "십자인대",
    "tags": [],
@@ -4146,11 +4374,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-23-십자인대.md",
    "snippet": "구조물 용어 (8개) 가쪽곁인대 (fibular collateral ligament) 안쪽곁인대 (tibial collateral ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 십자인대 (cruciate ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ",
-   "text": "Anatomy 십자인대 15차시(1013) 허미선pf.pdf 구조물 용어 (8개) 가쪽곁인대 (fibular collateral ligament) 안쪽곁인대 (tibial collateral ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 십자인대 (cruciate ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 십자인대 1·7·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (8개) 가쪽곁인대 (fibular collateral ligament) 안쪽곁인대 (tibial collateral ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 십자인대 (cruciate ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-무릎지지띠와-무릎인대",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "무릎지지띠와 무릎인대",
    "tags": [],
@@ -4159,11 +4388,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-22-무릎지지띠와-무릎인대.md",
    "snippet": "구조물 용어 (4개) 가쪽무릎지지띠 (lateral patellar retinaculum) 안쪽무릎지지띠 (medial patellar retinaculum) 위오목 (superior recess) 무릎위주머니 (suprapatellar bursa) 분류: region=lower limb (conf 0.77) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 무릎지지띠와 무릎인대 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 가쪽무릎지지띠 (lateral patellar retinaculum) 안쪽무릎지지띠 (medial patellar retinaculum) 위오목 (superior recess) 무릎위주머니 (suprapatellar bursa) 분류: region=lower limb (conf 0.77) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 무릎지지띠와 무릎인대 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 가쪽무릎지지띠 (lateral patellar retinaculum) 안쪽무릎지지띠 (medial patellar retinaculum) 위오목 (superior recess) 무릎위주머니 (suprapatellar bursa) 분류: region=lower limb (conf 0.77) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-무릎관절-안쪽면",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "무릎관절 안쪽면",
    "tags": [],
@@ -4172,11 +4402,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-20-무릎관절-안쪽면.md",
    "snippet": "구조물 용어 (2개) 안쪽곁인대 (tibial collateral ligament) 깊은부분은 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 무릎관절 안쪽면 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 안쪽곁인대 (tibial collateral ligament) 깊은부분은 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 무릎관절 안쪽면 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 안쪽곁인대 (tibial collateral ligament) 깊은부분은 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-무릎관절-뒷면",
    "type": "anatomy",
+   "unit": "1·3·7·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "무릎관절 뒷면",
    "tags": [],
@@ -4185,11 +4416,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-21-무릎관절-뒷면.md",
    "snippet": "구조물 용어 (2개) 빗오금인대 (oblique popliteal ligament) 활꼴오금인대 (arcuate popliteal ligament) 분류: region=lower limb (conf 0.71) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 무릎관절 뒷면 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 빗오금인대 (oblique popliteal ligament) 활꼴오금인대 (arcuate popliteal ligament) 분류: region=lower limb (conf 0.71) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 무릎관절 뒷면 1·3·7·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 빗오금인대 (oblique popliteal ligament) 활꼴오금인대 (arcuate popliteal ligament) 분류: region=lower limb (conf 0.71) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-목구멍편도",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "목구멍편도",
    "tags": [],
@@ -4198,11 +4430,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-05-목구멍편도.md",
    "snippet": "구조물 용어 (7개) 입천장혀근 (palatoglossus muscle) 입천장인두근 (palatopharyngeus muscle) 인두결절근막 (pharyngobasilar fascia) 입천장인두근 (palatopharyngeus muscle) 위인두수축근 (superior constrictor muscle) 붓혀근 (styloglossus muscle) 혀인두신경 (glossopharyngeal nerve) 분류: reg",
-   "text": "Anatomy 목구멍편도 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 입천장혀근 (palatoglossus muscle) 입천장인두근 (palatopharyngeus muscle) 인두결절근막 (pharyngobasilar fascia) 입천장인두근 (palatopharyngeus muscle) 위인두수축근 (superior constrictor muscle) 붓혀근 (styloglossus muscle) 혀인두신경 (glossopharyngeal nerve) 분류: region=neck (conf 0.5) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 목구멍편도 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 입천장혀근 (palatoglossus muscle) 입천장인두근 (palatopharyngeus muscle) 인두결절근막 (pharyngobasilar fascia) 입천장인두근 (palatopharyngeus muscle) 위인두수축근 (superior constrictor muscle) 붓혀근 (styloglossus muscle) 혀인두신경 (glossopharyngeal nerve) 분류: region=neck (conf 0.5) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-다리",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "다리",
    "tags": [],
@@ -4211,11 +4444,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-01-다리.md",
    "snippet": "구조물 용어 (0개) 분류: region=multi (conf 0.25) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (0개) 분류: region=multi (conf 0.25) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 다리 1·14·15회차 · 등·다리 15차시(1013) 허미선pf.pdf 구조물 용어 (0개) 분류: region=multi (conf 0.25) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-관절주머니와-인대",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "관절주머니와 인대",
    "tags": [],
@@ -4224,11 +4458,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-18-관절주머니와-인대.md",
    "snippet": "구조물 용어 (4개) 큰허리근주머니 (psoas bursa) 궁둥넙다리인대 (ischiofemoral ligament) 엉덩넙다리인대 (iliofemoral ligament) 두덩넙다리인대 (pubofemoral ligament) 분류: region=lower limb (conf 0.82) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .pr",
-   "text": "Anatomy 관절주머니와 인대 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 큰허리근주머니 (psoas bursa) 궁둥넙다리인대 (ischiofemoral ligament) 엉덩넙다리인대 (iliofemoral ligament) 두덩넙다리인대 (pubofemoral ligament) 분류: region=lower limb (conf 0.82) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 관절주머니와 인대 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 큰허리근주머니 (psoas bursa) 궁둥넙다리인대 (ischiofemoral ligament) 엉덩넙다리인대 (iliofemoral ligament) 두덩넙다리인대 (pubofemoral ligament) 분류: region=lower limb (conf 0.82) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-관절주머니와-인대",
    "type": "anatomy",
+   "unit": "3·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "관절주머니와 인대",
    "tags": [],
@@ -4237,11 +4472,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-25-관절주머니와-인대.md",
    "snippet": "구조물 용어 (1개) 세모인대 (triangular ligament) 분류: region=lower limb (conf 0.62) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 관절주머니와 인대 15차시(1013) 허미선pf.pdf 구조물 용어 (1개) 세모인대 (triangular ligament) 분류: region=lower limb (conf 0.62) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 관절주머니와 인대 3·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (1개) 세모인대 (triangular ligament) 분류: region=lower limb (conf 0.62) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-관절반달-meniscus-",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "관절반달 (meniscus)",
    "tags": [],
@@ -4250,11 +4486,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-24-관절반달-meniscus.md",
    "snippet": "구조물 용어 (3개) 무릎가로인대 (transverse ligament of knee) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 분류: region=lower limb (conf 0.89) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 관절반달 (meniscus) 15차시(1013) 허미선pf.pdf 구조물 용어 (3개) 무릎가로인대 (transverse ligament of knee) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 분류: region=lower limb (conf 0.89) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 관절반달 (meniscus) 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (3개) 무릎가로인대 (transverse ligament of knee) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 분류: region=lower limb (conf 0.89) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-고실열기",
    "type": "anatomy",
+   "unit": "머리",
    "topic": "Anatomy",
    "subtopic": "고실열기",
    "tags": [],
@@ -4263,11 +4500,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-09-고실열기.md",
    "snippet": "구조물 용어 (7개) 고실 (tympanic cavity) 뒤쪽으로는 꼭지방어귀 (aditus to mastoid antrum) 고유고실 (tympanic cavity proper) 과 고실위쪽 고실위오목 (epitympanic recess) 뒤머리뼈우묵 (posterior cranial fossa) 무릎신경절 (geniculate ganglion) 큰바위신경 (greater petrosal nerve) 분류: region=h",
-   "text": "Anatomy 고실열기 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 고실 (tympanic cavity) 뒤쪽으로는 꼭지방어귀 (aditus to mastoid antrum) 고유고실 (tympanic cavity proper) 과 고실위쪽 고실위오목 (epitympanic recess) 뒤머리뼈우묵 (posterior cranial fossa) 무릎신경절 (geniculate ganglion) 큰바위신경 (greater petrosal nerve) 분류: region=head (conf 0.71) · layers=['cavity visceral'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고실열기 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 고실 (tympanic cavity) 뒤쪽으로는 꼭지방어귀 (aditus to mastoid antrum) 고유고실 (tympanic cavity proper) 과 고실위쪽 고실위오목 (epitympanic recess) 뒤머리뼈우묵 (posterior cranial fossa) 무릎신경절 (geniculate ganglion) 큰바위신경 (greater petrosal nerve) 분류: region=head (conf 0.71) · layers=['cavity visceral'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-고실",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "고실",
    "tags": [],
@@ -4276,11 +4514,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-10-고실.md",
    "snippet": "구조물 용어 (10개) 귓속뼈 (auditory ossicles) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 고실끈신경 (chorda tympani) 속귀 뼈미로 (bony labyrinth) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 즉 바닥이 달팽이의 타원창 (vestibular window) 분류: region=head (conf 0.38) · layers= · cla",
-   "text": "Anatomy 고실 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 귓속뼈 (auditory ossicles) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 고실끈신경 (chorda tympani) 속귀 뼈미로 (bony labyrinth) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 즉 바닥이 달팽이의 타원창 (vestibular window) 분류: region=head (conf 0.38) · layers= · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고실 1·14·15회차 · 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 귓속뼈 (auditory ossicles) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 고실끈신경 (chorda tympani) 속귀 뼈미로 (bony labyrinth) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 즉 바닥이 달팽이의 타원창 (vestibular window) 분류: region=head (conf 0.38) · layers= · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-해부실습14-퀴즈",
    "type": "anatomy",
+   "unit": "14·15회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "해부실습14 퀴즈",
    "tags": [],
@@ -4289,11 +4528,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-02-해부실습14-퀴즈.md",
    "snippet": "구조물 용어 (1개) 손목관절 (wrist joint) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 해부실습14 퀴즈 14차시(0930) 문용석pf.pdf 구조물 용어 (1개) 손목관절 (wrist joint) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 해부실습14 퀴즈 14·15회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (1개) 손목관절 (wrist joint) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-항문관",
    "type": "anatomy",
+   "unit": "골반·회음",
    "topic": "Anatomy",
    "subtopic": "항문관",
    "tags": [],
@@ -4302,11 +4542,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-11-항문관.md",
    "snippet": "구조물 용어 (3개) 항문기둥 (anal columns) 빗살선 (pectinate line) 위곧창자동맥 (superior rectal artery) 분류: region=pelvis perineum (conf 0.7) · layers=['skin'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 항문관 14차시(0930) 문용석pf.pdf 구조물 용어 (3개) 항문기둥 (anal columns) 빗살선 (pectinate line) 위곧창자동맥 (superior rectal artery) 분류: region=pelvis perineum (conf 0.7) · layers=['skin'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 항문관 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (3개) 항문기둥 (anal columns) 빗살선 (pectinate line) 위곧창자동맥 (superior rectal artery) 분류: region=pelvis perineum (conf 0.7) · layers=['skin'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-팔꿉관절",
    "type": "anatomy",
+   "unit": "7·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "팔꿉관절",
    "tags": [],
@@ -4315,11 +4556,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-05-팔꿉관절.md",
    "snippet": "구조물 용어 (4개) 몸쪽노자관절 (proximal radioulnar joint) 안쪽곁인대 (ulnar collateral ligament) 가쪽곁인대 (radial collateral ligament) 노뼈머리띠인대 (anular ligament of radius) 분류: region=upper limb (conf 0.72) · layers= · classes=['bone', 'joint', 'ligament'] 원문 전",
-   "text": "Anatomy 팔꿉관절 14차시(0930) 문용석pf.pdf 구조물 용어 (4개) 몸쪽노자관절 (proximal radioulnar joint) 안쪽곁인대 (ulnar collateral ligament) 가쪽곁인대 (radial collateral ligament) 노뼈머리띠인대 (anular ligament of radius) 분류: region=upper limb (conf 0.72) · layers= · classes=['bone', 'joint', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 팔꿉관절 7·14·15회차 · 팔 14차시(0930) 문용석pf.pdf 구조물 용어 (4개) 몸쪽노자관절 (proximal radioulnar joint) 안쪽곁인대 (ulnar collateral ligament) 가쪽곁인대 (radial collateral ligament) 노뼈머리띠인대 (anular ligament of radius) 분류: region=upper limb (conf 0.72) · layers= · classes=['bone', 'joint', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-정낭과-정관",
    "type": "anatomy",
+   "unit": "골반·회음",
    "topic": "Anatomy",
    "subtopic": "정낭과 정관",
    "tags": [],
@@ -4328,11 +4570,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-13-정낭과-정관.md",
    "snippet": "구조물 용어 (5개) 정낭 (seminal vesicle) 아래안쪽각에서 좁아져 뚜렷하게 보이지 않지만 정낭배출관 (excretory duct) 정관 (ductus deferens) 낭 안쪽모서리 따라 아래안쪽으로 달리다가 넓어져 정관팽대 (ampulla of ductus deferens) 사정관 (ejaculatory duct) 분류: region=pelvis perineum (conf 0.82) · layers= · cla",
-   "text": "Anatomy 정낭과 정관 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 정낭 (seminal vesicle) 아래안쪽각에서 좁아져 뚜렷하게 보이지 않지만 정낭배출관 (excretory duct) 정관 (ductus deferens) 낭 안쪽모서리 따라 아래안쪽으로 달리다가 넓어져 정관팽대 (ampulla of ductus deferens) 사정관 (ejaculatory duct) 분류: region=pelvis perineum (conf 0.82) · layers= · classes=['duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 정낭과 정관 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 정낭 (seminal vesicle) 아래안쪽각에서 좁아져 뚜렷하게 보이지 않지만 정낭배출관 (excretory duct) 정관 (ductus deferens) 낭 안쪽모서리 따라 아래안쪽으로 달리다가 넓어져 정관팽대 (ampulla of ductus deferens) 사정관 (ejaculatory duct) 분류: region=pelvis perineum (conf 0.82) · layers= · classes=['duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-전립샘",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "전립샘",
    "tags": [],
@@ -4341,11 +4584,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-14-전립샘.md",
    "snippet": "구조물 용어 (8개) 지만 앞쪽과 가쪽에서는 전립샘과 근막 사이 전립샘정맥얼기 (prostatic venous plexus) 요도전립샘부분 (prostatic urethra) 앞에서 열었다면 요도능선 (urethral crest) 전립샘굴 (prostatic sinus) 요도둔덕 (seminal colliculus) 전립샘소실 (prostatic utricle) 사정관 (ejaculatory duct) 전립샘관 (prostat",
-   "text": "Anatomy 전립샘 14차시(0930) 문용석pf.pdf 구조물 용어 (8개) 지만 앞쪽과 가쪽에서는 전립샘과 근막 사이 전립샘정맥얼기 (prostatic venous plexus) 요도전립샘부분 (prostatic urethra) 앞에서 열었다면 요도능선 (urethral crest) 전립샘굴 (prostatic sinus) 요도둔덕 (seminal colliculus) 전립샘소실 (prostatic utricle) 사정관 (ejaculatory duct) 전립샘관 (prostatic duct) 분류: region=pelvis perineum (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 전립샘 14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (8개) 지만 앞쪽과 가쪽에서는 전립샘과 근막 사이 전립샘정맥얼기 (prostatic venous plexus) 요도전립샘부분 (prostatic urethra) 앞에서 열었다면 요도능선 (urethral crest) 전립샘굴 (prostatic sinus) 요도둔덕 (seminal colliculus) 전립샘소실 (prostatic utricle) 사정관 (ejaculatory duct) 전립샘관 (prostatic duct) 분류: region=pelvis perineum (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-요도",
    "type": "anatomy",
+   "unit": "골반·회음",
    "topic": "Anatomy",
    "subtopic": "요도",
    "tags": [],
@@ -4354,11 +4598,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-15-요도.md",
    "snippet": "구조물 용어 (5개) 요도 막부분 (membranous urethra) 요도 해면체부분 (spongy urethra) 망울요도샘 (bulbourethral gland) 요도배오목 (navicular fossa) 바깥요도구멍 (external urethral orifice) 분류: region=pelvis perineum (conf 0.8) · layers=['cavity visceral', 'deep'] · classes=['",
-   "text": "Anatomy 요도 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 요도 막부분 (membranous urethra) 요도 해면체부분 (spongy urethra) 망울요도샘 (bulbourethral gland) 요도배오목 (navicular fossa) 바깥요도구멍 (external urethral orifice) 분류: region=pelvis perineum (conf 0.8) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 요도 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 요도 막부분 (membranous urethra) 요도 해면체부분 (spongy urethra) 망울요도샘 (bulbourethral gland) 요도배오목 (navicular fossa) 바깥요도구멍 (external urethral orifice) 분류: region=pelvis perineum (conf 0.8) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-여자골반안",
    "type": "anatomy",
+   "unit": "6·7·14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "여자골반안",
    "tags": [],
@@ -4367,11 +4612,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-08-여자골반안.md",
    "snippet": "구조물 용어 (15개) 곧창자자궁오목 (rectouterine pouch) 자궁 (uterus) 자궁넓은인대 (broad ligament of uterus) 난소간막 (mesovarium) 난소 (ovary) 자궁관간막 (mesosalpinx) 자궁간막 (mesometrium) 난소걸이인대 (suspensory ligament of ovary) 고유난소인대 (ligament of ovary) 자궁관술 (fimbriae) 자궁관",
-   "text": "Anatomy 여자골반안 14차시(0930) 문용석pf.pdf 구조물 용어 (15개) 곧창자자궁오목 (rectouterine pouch) 자궁 (uterus) 자궁넓은인대 (broad ligament of uterus) 난소간막 (mesovarium) 난소 (ovary) 자궁관간막 (mesosalpinx) 자궁간막 (mesometrium) 난소걸이인대 (suspensory ligament of ovary) 고유난소인대 (ligament of ovary) 자궁관술 (fimbriae) 자궁관배안구멍 (abdominal ostium) 자궁뿔 (uterine horn) 자궁원인대 (round ligament of uterus) 자궁동맥 (uterine artery) 난소동맥 (ovarian artery) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classes=['artery', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 여자골반안 6·7·14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (15개) 곧창자자궁오목 (rectouterine pouch) 자궁 (uterus) 자궁넓은인대 (broad ligament of uterus) 난소간막 (mesovarium) 난소 (ovary) 자궁관간막 (mesosalpinx) 자궁간막 (mesometrium) 난소걸이인대 (suspensory ligament of ovary) 고유난소인대 (ligament of ovary) 자궁관술 (fimbriae) 자궁관배안구멍 (abdominal ostium) 자궁뿔 (uterine horn) 자궁원인대 (round ligament of uterus) 자궁동맥 (uterine artery) 난소동맥 (ovarian artery) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classes=['artery', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-어깨관절",
    "type": "anatomy",
+   "unit": "6·7·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "어깨관절",
    "tags": [],
@@ -4380,11 +4626,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-04-어깨관절.md",
    "snippet": "구조물 용어 (11개) 어깨밑근 (subscapularis muscle) 어깨밑근힘줄밑주머니 (subtendinous bursa of subscapularis muscle) 돌림근띠 (rotator cuff) 어깨밑근 (subscapularis muscle) 가시위근 (supraspinatus muscle) 가시아래근 (infraspinatus muscle) 작은원근 (teres minor muscle) 부리위팔인대 (cora",
-   "text": "Anatomy 어깨관절 14차시(0930) 문용석pf.pdf 구조물 용어 (11개) 어깨밑근 (subscapularis muscle) 어깨밑근힘줄밑주머니 (subtendinous bursa of subscapularis muscle) 돌림근띠 (rotator cuff) 어깨밑근 (subscapularis muscle) 가시위근 (supraspinatus muscle) 가시아래근 (infraspinatus muscle) 작은원근 (teres minor muscle) 부리위팔인대 (coracohumeral ligament) 위팔가로인대 (transverse humeral ligament) 접시테두리 (glenoid labrum) 접시위팔인대 (glenohumeral ligament) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 어깨관절 6·7·14·15회차 · 팔 14차시(0930) 문용석pf.pdf 구조물 용어 (11개) 어깨밑근 (subscapularis muscle) 어깨밑근힘줄밑주머니 (subtendinous bursa of subscapularis muscle) 돌림근띠 (rotator cuff) 어깨밑근 (subscapularis muscle) 가시위근 (supraspinatus muscle) 가시아래근 (infraspinatus muscle) 작은원근 (teres minor muscle) 부리위팔인대 (coracohumeral ligament) 위팔가로인대 (transverse humeral ligament) 접시테두리 (glenoid labrum) 접시위팔인대 (glenohumeral ligament) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-손목관절",
    "type": "anatomy",
+   "unit": "14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "손목관절",
    "tags": [],
@@ -4393,11 +4640,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-06-손목관절.md",
    "snippet": "구조물 용어 (4개) 반달뼈 (lunate) 손배뼈 (scaphoid) 세모뼈 (triquetrum) 관절원반 (articular disc) 분류: region=upper limb (conf 0.68) · layers= · classes=['bone', 'joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손목관절 14차시(0930) 문용석pf.pdf 구조물 용어 (4개) 반달뼈 (lunate) 손배뼈 (scaphoid) 세모뼈 (triquetrum) 관절원반 (articular disc) 분류: region=upper limb (conf 0.68) · layers= · classes=['bone', 'joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손목관절 14·15회차 · 팔 14차시(0930) 문용석pf.pdf 구조물 용어 (4개) 반달뼈 (lunate) 손배뼈 (scaphoid) 세모뼈 (triquetrum) 관절원반 (articular disc) 분류: region=upper limb (conf 0.68) · layers= · classes=['bone', 'joint'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-속엉덩동맥",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "속엉덩동맥",
    "tags": [],
@@ -4406,11 +4654,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-12-속엉덩동맥.md",
    "snippet": "구조물 용어 (12개) 배꼽동맥 (umbilical artery) 위방광동맥 (superior vesical artery) 아래방광동맥 (inferior vesical artery) 중간곧창자동맥 (middle rectal artery) 엉덩허리동맥 (iliolumbar artery) 엉덩근가지 (iliacus branch) 허리가지 (lumbar branch) 가쪽엉치동맥 (lateral sacral artery) 위볼기동맥",
-   "text": "Anatomy 속엉덩동맥 14차시(0930) 문용석pf.pdf 구조물 용어 (12개) 배꼽동맥 (umbilical artery) 위방광동맥 (superior vesical artery) 아래방광동맥 (inferior vesical artery) 중간곧창자동맥 (middle rectal artery) 엉덩허리동맥 (iliolumbar artery) 엉덩근가지 (iliacus branch) 허리가지 (lumbar branch) 가쪽엉치동맥 (lateral sacral artery) 위볼기동맥 (superior gluteal artery) 아래볼기동맥 (inferior gluteal artery) 속음부동맥 (internal pudendal artery) 폐쇄동맥 (obturator artery) 분류: region=pelvis perineum (conf 0.59) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 속엉덩동맥 14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (12개) 배꼽동맥 (umbilical artery) 위방광동맥 (superior vesical artery) 아래방광동맥 (inferior vesical artery) 중간곧창자동맥 (middle rectal artery) 엉덩허리동맥 (iliolumbar artery) 엉덩근가지 (iliacus branch) 허리가지 (lumbar branch) 가쪽엉치동맥 (lateral sacral artery) 위볼기동맥 (superior gluteal artery) 아래볼기동맥 (inferior gluteal artery) 속음부동맥 (internal pudendal artery) 폐쇄동맥 (obturator artery) 분류: region=pelvis perineum (conf 0.59) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-봉우리빗장관절-acromioclavicular-join",
    "type": "anatomy",
+   "unit": "14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "봉우리빗장관절 (acromioclavicular joint)",
    "tags": [],
@@ -4419,11 +4668,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-03-봉우리빗장관절-acromioclavicula.md",
    "snippet": "구조물 용어 (5개) 빗장뼈 봉우리끝 (acromial end of clavicle) 봉우리빗장인대 (acromioclavicular ligament) 부리빗장인대 (coracoclavicular ligament) 마름인대 (trapezoid ligament) 원뿔인대 (conoid ligament) 분류: region=upper limb (conf 0.94) · layers= · classes=['bone', 'ligamen",
-   "text": "Anatomy 봉우리빗장관절 (acromioclavicular joint) 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 빗장뼈 봉우리끝 (acromial end of clavicle) 봉우리빗장인대 (acromioclavicular ligament) 부리빗장인대 (coracoclavicular ligament) 마름인대 (trapezoid ligament) 원뿔인대 (conoid ligament) 분류: region=upper limb (conf 0.94) · layers= · classes=['bone', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 봉우리빗장관절 (acromioclavicular joint) 14·15회차 · 팔 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 빗장뼈 봉우리끝 (acromial end of clavicle) 봉우리빗장인대 (acromioclavicular ligament) 부리빗장인대 (coracoclavicular ligament) 마름인대 (trapezoid ligament) 원뿔인대 (conoid ligament) 분류: region=upper limb (conf 0.94) · layers= · classes=['bone', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-본문",
    "type": "anatomy",
+   "unit": "14·15회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "본문",
    "tags": [],
@@ -4432,11 +4682,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-01-본문.md",
    "snippet": "구조물 용어 (0개) 분류: region=pelvis perineum (conf 0.52) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 본문 14차시(0930) 문용석pf.pdf 구조물 용어 (0개) 분류: region=pelvis perineum (conf 0.52) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 본문 14·15회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (0개) 분류: region=pelvis perineum (conf 0.52) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-방광-겉모습",
    "type": "anatomy",
+   "unit": "7·14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "방광 겉모습",
    "tags": [],
@@ -4445,11 +4696,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-09-방광-겉모습.md",
    "snippet": "구조물 용어 (5개) 정중배꼽인대 (median umbilical ligament) 두덩뒤공간 (retropubic space) 방광목 (neck of bladder) 두덩전립샘인대 (puboprostatic ligament) 두덩방광인대 (pubovesical ligament) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classe",
-   "text": "Anatomy 방광 겉모습 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 정중배꼽인대 (median umbilical ligament) 두덩뒤공간 (retropubic space) 방광목 (neck of bladder) 두덩전립샘인대 (puboprostatic ligament) 두덩방광인대 (pubovesical ligament) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classes=['ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 방광 겉모습 7·14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (5개) 정중배꼽인대 (median umbilical ligament) 두덩뒤공간 (retropubic space) 방광목 (neck of bladder) 두덩전립샘인대 (puboprostatic ligament) 두덩방광인대 (pubovesical ligament) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep'] · classes=['ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-남자골반안",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "남자골반안",
    "tags": [],
@@ -4458,11 +4710,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-07-남자골반안.md",
    "snippet": "구조물 용어 (11개) 곧창자방광주름 (rectovesical fold) 정낭 (seminal vesicle) 곧창자방광오목 (rectovesical pouch) 곧창자옆오목 (pararectal fossa) 방광옆오목 (paravesical fossa) 폐쇄신경 (obturator nerve) 폐쇄동맥 (obturator artery) 요관 (ureter) 자궁동맥 (uterine artery) 안쪽배꼽인대 (medial u",
-   "text": "Anatomy 남자골반안 14차시(0930) 문용석pf.pdf 구조물 용어 (11개) 곧창자방광주름 (rectovesical fold) 정낭 (seminal vesicle) 곧창자방광오목 (rectovesical pouch) 곧창자옆오목 (pararectal fossa) 방광옆오목 (paravesical fossa) 폐쇄신경 (obturator nerve) 폐쇄동맥 (obturator artery) 요관 (ureter) 자궁동맥 (uterine artery) 안쪽배꼽인대 (medial umbilical ligament) 배꼽동맥 (umbilical artery) 분류: region=pelvis perineum (conf 0.57) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 남자골반안 14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (11개) 곧창자방광주름 (rectovesical fold) 정낭 (seminal vesicle) 곧창자방광오목 (rectovesical pouch) 곧창자옆오목 (pararectal fossa) 방광옆오목 (paravesical fossa) 폐쇄신경 (obturator nerve) 폐쇄동맥 (obturator artery) 요관 (ureter) 자궁동맥 (uterine artery) 안쪽배꼽인대 (medial umbilical ligament) 배꼽동맥 (umbilical artery) 분류: region=pelvis perineum (conf 0.57) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-골반가로막",
    "type": "anatomy",
+   "unit": "2·7·14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "골반가로막",
    "tags": [],
@@ -4471,11 +4724,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-16-골반가로막.md",
    "snippet": "구조물 용어 (20개) 질주름 (vaginal rugae) 자궁목 (cervix of uterus) 자궁구멍 (external os of uterus) 질천장 (vaginal fornix) 질이 자궁구멍 위쪽 앞과 뒤로 뻗어있는 곳 자궁 (uterus) 자궁바닥 (fundus of uterus) 자궁몸통 (body of uterus) 자궁잘록 (isthmus of uterus) 자궁몸통과 자궁목 사이 좁아진 부분 골반가로막 (",
-   "text": "Anatomy 골반가로막 14차시(0930) 문용석pf.pdf 구조물 용어 (20개) 질주름 (vaginal rugae) 자궁목 (cervix of uterus) 자궁구멍 (external os of uterus) 질천장 (vaginal fornix) 질이 자궁구멍 위쪽 앞과 뒤로 뻗어있는 곳 자궁 (uterus) 자궁바닥 (fundus of uterus) 자궁몸통 (body of uterus) 자궁잘록 (isthmus of uterus) 자궁몸통과 자궁목 사이 좁아진 부분 골반가로막 (pelvic diaphragm) 항문올림근 (levator ani muscle) 과 꼬리근 (coccygeus muscle) 궁둥뼈가시 (ischial spine) 폐쇄관 (obturator canal) 속폐쇄근막 (obturator fascia) 항문올림근힘줄활 (tendinous arch of levator ani muscle) 두덩곧창자근 (puborectalis muscle) 비뇨생식구멍 (urogenital hiatus) 두덩꼬리근 (pubococcygeus muscle) 엉덩꼬리근 (iliococcygeus muscle) 꼬리근 (coccygeus muscle) 분류: region=pelvis perineum (conf 0.7) · layers= · classes=['bone', 'duct', 'foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 골반가로막 2·7·14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (20개) 질주름 (vaginal rugae) 자궁목 (cervix of uterus) 자궁구멍 (external os of uterus) 질천장 (vaginal fornix) 질이 자궁구멍 위쪽 앞과 뒤로 뻗어있는 곳 자궁 (uterus) 자궁바닥 (fundus of uterus) 자궁몸통 (body of uterus) 자궁잘록 (isthmus of uterus) 자궁몸통과 자궁목 사이 좁아진 부분 골반가로막 (pelvic diaphragm) 항문올림근 (levator ani muscle) 과 꼬리근 (coccygeus muscle) 궁둥뼈가시 (ischial spine) 폐쇄관 (obturator canal) 속폐쇄근막 (obturator fascia) 항문올림근힘줄활 (tendinous arch of levator ani muscle) 두덩곧창자근 (puborectalis muscle) 비뇨생식구멍 (urogenital hiatus) 두덩꼬리근 (pubococcygeus muscle) 엉덩꼬리근 (iliococcygeus muscle) 꼬리근 (coccygeus muscle) 분류: region=pelvis perineum (conf 0.7) · layers= · classes=['bone', 'duct', 'foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-곧창자",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "곧창자",
    "tags": [],
@@ -4484,11 +4738,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s14/sec-10-곧창자.md",
    "snippet": "구조물 용어 (2개) 항문곧창자연결 (anorectal junction) 곧창자가로주름 (transverse folds of rectum) 분류: region=pelvis perineum (conf 0.47) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 곧창자 14차시(0930) 문용석pf.pdf 구조물 용어 (2개) 항문곧창자연결 (anorectal junction) 곧창자가로주름 (transverse folds of rectum) 분류: region=pelvis perineum (conf 0.47) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 곧창자 14회차 · 골반·회음 14차시(0930) 문용석pf.pdf 구조물 용어 (2개) 항문곧창자연결 (anorectal junction) 곧창자가로주름 (transverse folds of rectum) 분류: region=pelvis perineum (conf 0.47) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-피부벗기기",
    "type": "anatomy",
+   "unit": "1·7회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "피부벗기기",
    "tags": [],
@@ -4497,11 +4752,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-07-피부벗기기.md",
    "snippet": "구조물 용어 (2개) 여자에서는 대음순 (labium majus) 안쪽면 따라 소음순 (labium minus) 분류: region=pelvis perineum (conf 0.62) · layers=['skin', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 피부벗기기 13차시(0929) 김홍태pf.pdf 구조물 용어 (2개) 여자에서는 대음순 (labium majus) 안쪽면 따라 소음순 (labium minus) 분류: region=pelvis perineum (conf 0.62) · layers=['skin', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 피부벗기기 1·7회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (2개) 여자에서는 대음순 (labium majus) 안쪽면 따라 소음순 (labium minus) 분류: region=pelvis perineum (conf 0.62) · layers=['skin', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-척주관열기",
    "type": "anatomy",
+   "unit": "12회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척주관열기",
    "tags": [],
@@ -4510,11 +4766,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-02-척주관열기.md",
    "snippet": "구조물 용어 (10개) 척추뼈고리판 (lamina of vertebral arch) 과 가시돌기 (spinous process) 가능한 고리판 가쪽에서 고리판절제술 (laminectomy) 가시사이인대 (interspinous ligaments) 와 가시끝인대 (supraspinous ligament) 황색인대 (ligamenta flava) 가시끝인대 (supraspinous ligament) 가시사이인대 (interspin",
-   "text": "Anatomy 척주관열기 13차시(0929) 김홍태pf.pdf 구조물 용어 (10개) 척추뼈고리판 (lamina of vertebral arch) 과 가시돌기 (spinous process) 가능한 고리판 가쪽에서 고리판절제술 (laminectomy) 가시사이인대 (interspinous ligaments) 와 가시끝인대 (supraspinous ligament) 황색인대 (ligamenta flava) 가시끝인대 (supraspinous ligament) 가시사이인대 (interspinous ligament) 경막바깥공간 (epidural space) 속척주정맥얼기 (internal vertebral venous plexus) 분류: region=back (conf 0.75) · layers=['cavity visceral'] · classes=['bone', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 척주관열기 12회차 · 등 13차시(0929) 김홍태pf.pdf 구조물 용어 (10개) 척추뼈고리판 (lamina of vertebral arch) 과 가시돌기 (spinous process) 가능한 고리판 가쪽에서 고리판절제술 (laminectomy) 가시사이인대 (interspinous ligaments) 와 가시끝인대 (supraspinous ligament) 황색인대 (ligamenta flava) 가시끝인대 (supraspinous ligament) 가시사이인대 (interspinous ligament) 경막바깥공간 (epidural space) 속척주정맥얼기 (internal vertebral venous plexus) 분류: region=back (conf 0.75) · layers=['cavity visceral'] · classes=['bone', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-척주관-관찰",
    "type": "anatomy",
+   "unit": "7·12·13회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척주관 관찰",
    "tags": [],
@@ -4523,11 +4780,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-03-척주관-관찰.md",
    "snippet": "구조물 용어 (5개) 척수경막 (spinal dura mater) 척추사이구멍 (intervertebral foramen) 척수신경뿌리 (spinal nerve root) 뒤세로인대 (posterior longitudinal ligament) 척추사이원반 (intervertebral disc) 분류: region=back (conf 0.85) · layers= · classes=['foramen', 'ligament', 'ne",
-   "text": "Anatomy 척주관 관찰 13차시(0929) 김홍태pf.pdf 구조물 용어 (5개) 척수경막 (spinal dura mater) 척추사이구멍 (intervertebral foramen) 척수신경뿌리 (spinal nerve root) 뒤세로인대 (posterior longitudinal ligament) 척추사이원반 (intervertebral disc) 분류: region=back (conf 0.85) · layers= · classes=['foramen', 'ligament', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 척주관 관찰 7·12·13회차 · 등 13차시(0929) 김홍태pf.pdf 구조물 용어 (5개) 척수경막 (spinal dura mater) 척추사이구멍 (intervertebral foramen) 척수신경뿌리 (spinal nerve root) 뒤세로인대 (posterior longitudinal ligament) 척추사이원반 (intervertebral disc) 분류: region=back (conf 0.85) · layers= · classes=['foramen', 'ligament', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-척수막",
    "type": "anatomy",
+   "unit": "7·12회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척수막",
    "tags": [],
@@ -4536,11 +4794,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-04-척수막.md",
    "snippet": "구조물 용어 (4개) 거미막 (arachnoid mater) 경막밑공간 (subdural space) 척수연막 (spinal pia mater) 거미막밑공간 (subarachnoid space) 분류: region=back (conf 0.58) · layers=['cavity visceral'] · classes=['organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 척수막 13차시(0929) 김홍태pf.pdf 구조물 용어 (4개) 거미막 (arachnoid mater) 경막밑공간 (subdural space) 척수연막 (spinal pia mater) 거미막밑공간 (subarachnoid space) 분류: region=back (conf 0.58) · layers=['cavity visceral'] · classes=['organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 척수막 7·12회차 · 등 13차시(0929) 김홍태pf.pdf 구조물 용어 (4개) 거미막 (arachnoid mater) 경막밑공간 (subdural space) 척수연막 (spinal pia mater) 거미막밑공간 (subarachnoid space) 분류: region=back (conf 0.58) · layers=['cavity visceral'] · classes=['organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-척수",
    "type": "anatomy",
+   "unit": "7회차 · 등",
    "topic": "Anatomy",
    "subtopic": "척수",
    "tags": [],
@@ -4549,11 +4808,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-05-척수.md",
    "snippet": "구조물 용어 (6개) 척수원뿔 (conus medullaris) 치아인대 (denticulate ligament) 척수신경절 (spinal ganglion) 척수신경줄기 (trunk of spinal nerve) 말총 (cauda equina) 종말끈 (filum terminale) 분류: region=back (conf 0.8) · layers= · classes=['ligament', 'nerve'] 원문 전문은 커밋하지 ",
-   "text": "Anatomy 척수 13차시(0929) 김홍태pf.pdf 구조물 용어 (6개) 척수원뿔 (conus medullaris) 치아인대 (denticulate ligament) 척수신경절 (spinal ganglion) 척수신경줄기 (trunk of spinal nerve) 말총 (cauda equina) 종말끈 (filum terminale) 분류: region=back (conf 0.8) · layers= · classes=['ligament', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 척수 7회차 · 등 13차시(0929) 김홍태pf.pdf 구조물 용어 (6개) 척수원뿔 (conus medullaris) 치아인대 (denticulate ligament) 척수신경절 (spinal ganglion) 척수신경줄기 (trunk of spinal nerve) 말총 (cauda equina) 종말끈 (filum terminale) 분류: region=back (conf 0.8) · layers= · classes=['ligament', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-음핵",
    "type": "anatomy",
+   "unit": "1회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "음핵",
    "tags": [],
@@ -4562,11 +4822,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-14-음핵.md",
    "snippet": "구조물 용어 (2개) 음핵몸통 (body of clitoris) 음핵귀두 (glans of clitoris) 분류: region=lower limb (conf 0.38) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 음핵 13차시(0929) 김홍태pf.pdf 구조물 용어 (2개) 음핵몸통 (body of clitoris) 음핵귀두 (glans of clitoris) 분류: region=lower limb (conf 0.38) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 음핵 1회차 · 다리 13차시(0929) 김홍태pf.pdf 구조물 용어 (2개) 음핵몸통 (body of clitoris) 음핵귀두 (glans of clitoris) 분류: region=lower limb (conf 0.38) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-음경",
    "type": "anatomy",
+   "unit": "1·9회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "음경",
    "tags": [],
@@ -4575,11 +4836,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-11-음경.md",
    "snippet": "구조물 용어 (13개) 음경꺼풀 (prepuce) 음경꺼풀주름띠 (frenulum of prepuce) 음경고리인대 (fundiform ligament of penis) 음경걸이인대 (suspensory ligament of penis) 얕은음경등정맥 (superficial dorsal veins of penis) 깊은음경등정맥 (deep dorsal vein of penis) 음경등동맥 (dorsal artery of pen",
-   "text": "Anatomy 음경 13차시(0929) 김홍태pf.pdf 구조물 용어 (13개) 음경꺼풀 (prepuce) 음경꺼풀주름띠 (frenulum of prepuce) 음경고리인대 (fundiform ligament of penis) 음경걸이인대 (suspensory ligament of penis) 얕은음경등정맥 (superficial dorsal veins of penis) 깊은음경등정맥 (deep dorsal vein of penis) 음경등동맥 (dorsal artery of penis) 음경등신경 (dorsal nerve of penis) 음경망울 (bulb of penis) 요도해면체 (corpus spongiosum of penis) 음경귀두 (glans penis) 음경다리 (crus of penis) 음경해면체 (corpus cavernosum of penis) 분류: region=pelvis perineum (conf 0.71) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'ligament', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 음경 1·9회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (13개) 음경꺼풀 (prepuce) 음경꺼풀주름띠 (frenulum of prepuce) 음경고리인대 (fundiform ligament of penis) 음경걸이인대 (suspensory ligament of penis) 얕은음경등정맥 (superficial dorsal veins of penis) 깊은음경등정맥 (deep dorsal vein of penis) 음경등동맥 (dorsal artery of penis) 음경등신경 (dorsal nerve of penis) 음경망울 (bulb of penis) 요도해면체 (corpus spongiosum of penis) 음경귀두 (glans penis) 음경다리 (crus of penis) 음경해면체 (corpus cavernosum of penis) 분류: region=pelvis perineum (conf 0.71) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'ligament', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-얕은샅공간2",
    "type": "anatomy",
+   "unit": "1·2회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "얕은샅공간2",
    "tags": [],
@@ -4588,11 +4850,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-13-얕은샅공간2.md",
    "snippet": "구조물 용어 (18개) 불두덩 (mons pubis) 양쪽대음순 (labium majus) 뒤음순연결 (posterior commisure) 대음순틈새 (pudendal cleft) 소음순 (labium minus) 질구멍 (vaginal orifice) 음핵주름띠 (frenulum of clitoris) 음핵꺼풀 (prepuce of clitoris) 음핵귀두 (glans of clitoris) 질어귀 (vestibule) ",
-   "text": "Anatomy 얕은샅공간2 13차시(0929) 김홍태pf.pdf 구조물 용어 (18개) 불두덩 (mons pubis) 양쪽대음순 (labium majus) 뒤음순연결 (posterior commisure) 대음순틈새 (pudendal cleft) 소음순 (labium minus) 질구멍 (vaginal orifice) 음핵주름띠 (frenulum of clitoris) 음핵꺼풀 (prepuce of clitoris) 음핵귀두 (glans of clitoris) 질어귀 (vestibule) 질구멍 (vaginal orifice) 경우에 따라 처녀막 (hymen) 바깥요도구멍 (external urethral orifice) 큰질어귀샘관 (duct of greater vestibular gland) 샅신경 (perineal nerve) 개의 뒤음순신경 (posterior labial nerve) 얕은샅가로근 (superficial transverse perineal muscle) 궁둥해면체근 (ischiocavernosus muscle) 분류: region=pelvis perineum (conf 0.76) · layers=['deep', 'skin', 'superficial'] · classes=['foramen', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 얕은샅공간2 1·2회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (18개) 불두덩 (mons pubis) 양쪽대음순 (labium majus) 뒤음순연결 (posterior commisure) 대음순틈새 (pudendal cleft) 소음순 (labium minus) 질구멍 (vaginal orifice) 음핵주름띠 (frenulum of clitoris) 음핵꺼풀 (prepuce of clitoris) 음핵귀두 (glans of clitoris) 질어귀 (vestibule) 질구멍 (vaginal orifice) 경우에 따라 처녀막 (hymen) 바깥요도구멍 (external urethral orifice) 큰질어귀샘관 (duct of greater vestibular gland) 샅신경 (perineal nerve) 개의 뒤음순신경 (posterior labial nerve) 얕은샅가로근 (superficial transverse perineal muscle) 궁둥해면체근 (ischiocavernosus muscle) 분류: region=pelvis perineum (conf 0.76) · layers=['deep', 'skin', 'superficial'] · classes=['foramen', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-얕은샅공간-superficial-perineal-pou",
    "type": "anatomy",
+   "unit": "7·9·10회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "얕은샅공간 (superficial perineal pouch)",
    "tags": [],
@@ -4601,11 +4864,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-10-얕은샅공간-superficial-perine.md",
    "snippet": "구조물 용어 (8개) 얕은샅가로근 (superficial transverse perineal muscle) 샅중심체에서 바깥항문조임근 (external anal sphincter muscle) 망울해면체근 (bulbospongiosus muscle) 궁둥해면체근 (ischiocavernosus muscle) 음경뿌리 이루는 음경해면체 (corpus cavernosum of penis) 망울해면체근 (bulbospongiosus",
-   "text": "Anatomy 얕은샅공간 (superficial perineal pouch) 13차시(0929) 김홍태pf.pdf 구조물 용어 (8개) 얕은샅가로근 (superficial transverse perineal muscle) 샅중심체에서 바깥항문조임근 (external anal sphincter muscle) 망울해면체근 (bulbospongiosus muscle) 궁둥해면체근 (ischiocavernosus muscle) 음경뿌리 이루는 음경해면체 (corpus cavernosum of penis) 망울해면체근 (bulbospongiosus muscle) 요도해면체 (corpus spongiosum of penis) 아래쪽에서 음경망울 (bulb of penis) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 얕은샅공간 (superficial perineal pouch) 7·9·10회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (8개) 얕은샅가로근 (superficial transverse perineal muscle) 샅중심체에서 바깥항문조임근 (external anal sphincter muscle) 망울해면체근 (bulbospongiosus muscle) 궁둥해면체근 (ischiocavernosus muscle) 음경뿌리 이루는 음경해면체 (corpus cavernosum of penis) 망울해면체근 (bulbospongiosus muscle) 요도해면체 (corpus spongiosum of penis) 아래쪽에서 음경망울 (bulb of penis) 분류: region=pelvis perineum (conf 0.7) · layers=['cavity visceral', 'deep', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-샅의-경계",
    "type": "anatomy",
+   "unit": "1·2·14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "샅의 경계",
    "tags": [],
@@ -4614,11 +4878,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-06-샅의-경계.md",
    "snippet": "구조물 용어 (11개) 샅 (perineum) 골반가로막 (pelvic diaphragm) 두덩결합 (pubic symphysis) 아래두덩인대 (inferior pubic ligament) 꼬리뼈 (coccyx) 양쪽 궁둥뼈결절 (ischial tuberosity) 양쪽 궁둥두덩가지 (ischiopubic ramus) 엉치결절인대 (sacrotuberous ligament) 비뇨생식부위 (urogenital triangle)",
-   "text": "Anatomy 샅의 경계 13차시(0929) 김홍태pf.pdf 구조물 용어 (11개) 샅 (perineum) 골반가로막 (pelvic diaphragm) 두덩결합 (pubic symphysis) 아래두덩인대 (inferior pubic ligament) 꼬리뼈 (coccyx) 양쪽 궁둥뼈결절 (ischial tuberosity) 양쪽 궁둥두덩가지 (ischiopubic ramus) 엉치결절인대 (sacrotuberous ligament) 비뇨생식부위 (urogenital triangle) 항문부위 (anal triangle) 수 있음 남자비뇨생식부위에 위치한 바깥생식기관인 음낭 (scrotum) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['bone', 'duct', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 샅의 경계 1·2·14회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (11개) 샅 (perineum) 골반가로막 (pelvic diaphragm) 두덩결합 (pubic symphysis) 아래두덩인대 (inferior pubic ligament) 꼬리뼈 (coccyx) 양쪽 궁둥뼈결절 (ischial tuberosity) 양쪽 궁둥두덩가지 (ischiopubic ramus) 엉치결절인대 (sacrotuberous ligament) 비뇨생식부위 (urogenital triangle) 항문부위 (anal triangle) 수 있음 남자비뇨생식부위에 위치한 바깥생식기관인 음낭 (scrotum) 분류: region=pelvis perineum (conf 0.73) · layers= · classes=['bone', 'duct', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-깊은샅공간2",
    "type": "anatomy",
+   "unit": "골반·회음",
    "topic": "Anatomy",
    "subtopic": "깊은샅공간2",
    "tags": [],
@@ -4627,11 +4892,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-15-깊은샅공간2.md",
    "snippet": "구조물 용어 (2개) 질어귀망울 (bulb of vestibule) 샅막 (perineal membrane) 분류: region=pelvis perineum (conf 0.45) · layers=['cavity visceral', 'deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 깊은샅공간2 13차시(0929) 김홍태pf.pdf 구조물 용어 (2개) 질어귀망울 (bulb of vestibule) 샅막 (perineal membrane) 분류: region=pelvis perineum (conf 0.45) · layers=['cavity visceral', 'deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 깊은샅공간2 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (2개) 질어귀망울 (bulb of vestibule) 샅막 (perineal membrane) 분류: region=pelvis perineum (conf 0.45) · layers=['cavity visceral', 'deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-깊은샅공간-deep-perineal-pouch-",
    "type": "anatomy",
+   "unit": "1·7회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "깊은샅공간 (deep perineal pouch)",
    "tags": [],
@@ -4640,11 +4906,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-12-깊은샅공간-deep-perineal-pouc.md",
    "snippet": "구조물 용어 (9개) 음경망울동맥 (artery of bulb of penis) 음경등신경 (dorsal nerve of penis) 속음부동맥 (internal pudendal artery) 샅가로인대 (transverse perineal ligament) 깊은샅가로근 (deep transverse perineal muscle) 요도 (urethra) 바깥요도조임근 (external urethral sphincter musc",
-   "text": "Anatomy 깊은샅공간 (deep perineal pouch) 13차시(0929) 김홍태pf.pdf 구조물 용어 (9개) 음경망울동맥 (artery of bulb of penis) 음경등신경 (dorsal nerve of penis) 속음부동맥 (internal pudendal artery) 샅가로인대 (transverse perineal ligament) 깊은샅가로근 (deep transverse perineal muscle) 요도 (urethra) 바깥요도조임근 (external urethral sphincter muscle) 남자요도막부분 (membranous urethra) 망울요도샘 (bulbourethral gland) 분류: region=pelvis perineum (conf 0.85) · layers=['cavity visceral', 'deep'] · classes=['artery', 'ligament', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 깊은샅공간 (deep perineal pouch) 1·7회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (9개) 음경망울동맥 (artery of bulb of penis) 음경등신경 (dorsal nerve of penis) 속음부동맥 (internal pudendal artery) 샅가로인대 (transverse perineal ligament) 깊은샅가로근 (deep transverse perineal muscle) 요도 (urethra) 바깥요도조임근 (external urethral sphincter muscle) 남자요도막부분 (membranous urethra) 망울요도샘 (bulbourethral gland) 분류: region=pelvis perineum (conf 0.85) · layers=['cavity visceral', 'deep'] · classes=['artery', 'ligament', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-궁둥항문오목의-혈관과-신경",
    "type": "anatomy",
+   "unit": "9회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "궁둥항문오목의 혈관과 신경",
    "tags": [],
@@ -4653,11 +4920,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-09-궁둥항문오목의-혈관과-신경.md",
    "snippet": "구조물 용어 (14개) 음부신경 (pudendal nerve) 속음부동맥 (internal pudendal artery) 의 가지들로 음부신경관 (pudendal canal) 엉치결절인대 (sacrotuberous ligament) 엉치가시인대 (sacrospinous ligament) 음부신경 (pudendal nerve) 샅신경 (perineal nerve) 와 더 깊이있는 음경등신경 (dorsal nerve of peni",
-   "text": "Anatomy 궁둥항문오목의 혈관과 신경 13차시(0929) 김홍태pf.pdf 구조물 용어 (14개) 음부신경 (pudendal nerve) 속음부동맥 (internal pudendal artery) 의 가지들로 음부신경관 (pudendal canal) 엉치결절인대 (sacrotuberous ligament) 엉치가시인대 (sacrospinous ligament) 음부신경 (pudendal nerve) 샅신경 (perineal nerve) 와 더 깊이있는 음경등신경 (dorsal nerve of penis) 샅신경 (perineal nerve) 아래곧창자신경 (inferior anal nerve) 음경등신경 (dorsal nerve of penis) 음핵등신경 (dorsal nerve of clitoris) 속음부동맥 (internal pudendal artery) 아래곧창자동맥 (inferior anal artery) 분류: region=pelvis perineum (conf 0.41) · layers=['superficial', 'superficial fascia'] · classes=['artery', 'ligament', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 궁둥항문오목의 혈관과 신경 9회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (14개) 음부신경 (pudendal nerve) 속음부동맥 (internal pudendal artery) 의 가지들로 음부신경관 (pudendal canal) 엉치결절인대 (sacrotuberous ligament) 엉치가시인대 (sacrospinous ligament) 음부신경 (pudendal nerve) 샅신경 (perineal nerve) 와 더 깊이있는 음경등신경 (dorsal nerve of penis) 샅신경 (perineal nerve) 아래곧창자신경 (inferior anal nerve) 음경등신경 (dorsal nerve of penis) 음핵등신경 (dorsal nerve of clitoris) 속음부동맥 (internal pudendal artery) 아래곧창자동맥 (inferior anal artery) 분류: region=pelvis perineum (conf 0.41) · layers=['superficial', 'superficial fascia'] · classes=['artery', 'ligament', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-궁둥항문오목-ischioanal-fossa-",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "궁둥항문오목 (ischioanal fossa)",
    "tags": [],
@@ -4666,11 +4934,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-08-궁둥항문오목-ischioanal-fossa.md",
    "snippet": "구조물 용어 (8개) 항문과 궁둥뼈결절 중간부위에서 칼을 궁둥항문오목지방덩이 (fat body of ischioanal fossa) 바깥항문조임근 (external anal sphincter muscle) 근육섬유로 된 두꺼운 고리모양으로 샅중심체 (perineal body) 아래곧창자혈관 (inferior rectal vessel) 골반가로막 (pelvic diaphragm) 속폐쇄근막 (obturator fascia) 큰볼",
-   "text": "Anatomy 궁둥항문오목 (ischioanal fossa) 13차시(0929) 김홍태pf.pdf 구조물 용어 (8개) 항문과 궁둥뼈결절 중간부위에서 칼을 궁둥항문오목지방덩이 (fat body of ischioanal fossa) 바깥항문조임근 (external anal sphincter muscle) 근육섬유로 된 두꺼운 고리모양으로 샅중심체 (perineal body) 아래곧창자혈관 (inferior rectal vessel) 골반가로막 (pelvic diaphragm) 속폐쇄근막 (obturator fascia) 큰볼기근 (gluteus maximus muscle) 엉치결절인대 (sacrotuberous ligament) 분류: region=pelvis perineum (conf 0.58) · layers=['skin', 'superficial fascia'] · classes=['bone', 'duct', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 궁둥항문오목 (ischioanal fossa) 14회차 · 골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (8개) 항문과 궁둥뼈결절 중간부위에서 칼을 궁둥항문오목지방덩이 (fat body of ischioanal fossa) 바깥항문조임근 (external anal sphincter muscle) 근육섬유로 된 두꺼운 고리모양으로 샅중심체 (perineal body) 아래곧창자혈관 (inferior rectal vessel) 골반가로막 (pelvic diaphragm) 속폐쇄근막 (obturator fascia) 큰볼기근 (gluteus maximus muscle) 엉치결절인대 (sacrotuberous ligament) 분류: region=pelvis perineum (conf 0.58) · layers=['skin', 'superficial fascia'] · classes=['bone', 'duct', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s13-골반",
    "type": "anatomy",
+   "unit": "12·14회차 · 등·골반·회음",
    "topic": "Anatomy",
    "subtopic": "골반",
    "tags": [],
@@ -4679,11 +4948,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s13/sec-01-골반.md",
    "snippet": "구조물 용어 (0개) 분류: region=multi (conf 0.33) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 골반 13차시(0929) 김홍태pf.pdf 구조물 용어 (0개) 분류: region=multi (conf 0.33) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 골반 12·14회차 · 등·골반·회음 13차시(0929) 김홍태pf.pdf 구조물 용어 (0개) 분류: region=multi (conf 0.33) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-허리신경얼기",
    "type": "anatomy",
+   "unit": "1·2·7회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "허리신경얼기",
    "tags": [],
@@ -4692,11 +4962,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-22-허리신경얼기.md",
    "snippet": "구조물 용어 (11개) 허리신경절 (lumbar ganglia) 교통가지 (rami communicantes) 음부넙다리신경 (genitofemoral nerve) 음부가지 (genital branch) 허리신경얼기 (lumbar plexus) 폐쇄신경 (obturator nerve) 넙다리신경 (femoral nerve) 음부넙다리신경 (genitofemoral nerve) 엉덩아랫배신경 (iliohypogastric ner",
-   "text": "Anatomy 허리신경얼기 12차시(0925) 문용석pf.pdf 구조물 용어 (11개) 허리신경절 (lumbar ganglia) 교통가지 (rami communicantes) 음부넙다리신경 (genitofemoral nerve) 음부가지 (genital branch) 허리신경얼기 (lumbar plexus) 폐쇄신경 (obturator nerve) 넙다리신경 (femoral nerve) 음부넙다리신경 (genitofemoral nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 가쪽넙다리피부신경 (lateral cutaneous nerve of thigh) 분류: region=lower limb (conf 0.53) · layers=['deep', 'skin'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 허리신경얼기 1·2·7회차 · 다리 12차시(0925) 문용석pf.pdf 구조물 용어 (11개) 허리신경절 (lumbar ganglia) 교통가지 (rami communicantes) 음부넙다리신경 (genitofemoral nerve) 음부가지 (genital branch) 허리신경얼기 (lumbar plexus) 폐쇄신경 (obturator nerve) 넙다리신경 (femoral nerve) 음부넙다리신경 (genitofemoral nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 가쪽넙다리피부신경 (lateral cutaneous nerve of thigh) 분류: region=lower limb (conf 0.53) · layers=['deep', 'skin'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-해부실습-13퀴즈-",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "해부실습 13퀴즈\\",
    "tags": [],
@@ -4705,11 +4976,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-02-해부실습-13퀴즈.md",
    "snippet": "구조물 용어 (0개) 분류: region=abdomen (conf 0.5) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 해부실습 13퀴즈\\ 12차시(0925) 문용석pf.pdf 구조물 용어 (0개) 분류: region=abdomen (conf 0.5) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 해부실습 13퀴즈\\ 배 12차시(0925) 문용석pf.pdf 구조물 용어 (0개) 분류: region=abdomen (conf 0.5) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-콩팥단면",
    "type": "anatomy",
+   "unit": "1·13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "콩팥단면",
    "tags": [],
@@ -4718,11 +4990,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-17-콩팥단면.md",
    "snippet": "구조물 용어 (30개) 섬유피막 (fibrous capsule) 겉질 (cortex) 속질 (medulla) 여러 개의 콩팥피라밋 (renal pyramid) 콩팥기둥 (renal column) 콩팥유두 (renal papilla) 작은콩팥잔 (minor calices) 큰콩팥잔 (major calices) 콩팥깔때기 (renal pelvis) 콩팥굴 (renal sinus) 배대동맥 (abdominal aorta) 가로막 대",
-   "text": "Anatomy 콩팥단면 12차시(0925) 문용석pf.pdf 구조물 용어 (30개) 섬유피막 (fibrous capsule) 겉질 (cortex) 속질 (medulla) 여러 개의 콩팥피라밋 (renal pyramid) 콩팥기둥 (renal column) 콩팥유두 (renal papilla) 작은콩팥잔 (minor calices) 큰콩팥잔 (major calices) 콩팥깔때기 (renal pelvis) 콩팥굴 (renal sinus) 배대동맥 (abdominal aorta) 가로막 대동맥구멍지나 배로 들어오면서 형성 자율신경얼기 (autonomic plexus) 복강신경얼기 (celiac plexus) 위창자간막신경얼기 (superior mesenteric plexus) 배대동맥신경얼기 (abdominal aortic plexus) 아래창자간막신경얼기 (inferior mesenteric plexus) 위아랫배신경얼기 (superior hypogastric plexus) 아래아랫배신경얼기 (inferior hypogastric plexus) 복강동맥 (celiac trunk) 위창자간막동맥 (superior mesenteric artery) 아래창자간막동맥 (inferior mesenteric artery) 아래가로막동맥 (inferior phrenic artery) 오른아래가로막동맥 (right inferior phrenic artery) 왼아래가로막동맥 (left inferior phrenic artery) 중간부신동맥 (middle suprarenal artery) 아래부신동맥 (inferior suprarenal artery) 고환동맥은 깊은고샅구멍 (deep inguinal ring) 으로 들 어가고 여자의 난소동맥은 온엉덩동맥 (common iliac artery) 허리동맥 (lumbar artery) 정중엉치동맥 (medial sacral artery) 분류: region=abdomen (conf 0.79) · layers=['deep'] · classes=['artery', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 콩팥단면 1·13회차 · 배 12차시(0925) 문용석pf.pdf 구조물 용어 (30개) 섬유피막 (fibrous capsule) 겉질 (cortex) 속질 (medulla) 여러 개의 콩팥피라밋 (renal pyramid) 콩팥기둥 (renal column) 콩팥유두 (renal papilla) 작은콩팥잔 (minor calices) 큰콩팥잔 (major calices) 콩팥깔때기 (renal pelvis) 콩팥굴 (renal sinus) 배대동맥 (abdominal aorta) 가로막 대동맥구멍지나 배로 들어오면서 형성 자율신경얼기 (autonomic plexus) 복강신경얼기 (celiac plexus) 위창자간막신경얼기 (superior mesenteric plexus) 배대동맥신경얼기 (abdominal aortic plexus) 아래창자간막신경얼기 (inferior mesenteric plexus) 위아랫배신경얼기 (superior hypogastric plexus) 아래아랫배신경얼기 (inferior hypogastric plexus) 복강동맥 (celiac trunk) 위창자간막동맥 (superior mesenteric artery) 아래창자간막동맥 (inferior mesenteric artery) 아래가로막동맥 (inferior phrenic artery) 오른아래가로막동맥 (right inferior phrenic artery) 왼아래가로막동맥 (left inferior phrenic artery) 중간부신동맥 (middle suprarenal artery) 아래부신동맥 (inferior suprarenal artery) 고환동맥은 깊은고샅구멍 (deep inguinal ring) 으로 들 어가고 여자의 난소동맥은 온엉덩동맥 (common iliac artery) 허리동맥 (lumbar artery) 정중엉치동맥 (medial sacral artery) 분류: region=abdomen (conf 0.79) · layers=['deep'] · classes=['artery', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-콩팥",
    "type": "anatomy",
+   "unit": "13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "콩팥",
    "tags": [],
@@ -4731,11 +5004,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-16-콩팥.md",
    "snippet": "구조물 용어 (5개) 콩팥주위지방체 (pararenal fat body) 콩팥근막 (renal fascia) 콩팥주위지방피막 (perirenal fat capsule) 콩팥문 (hilum of kidney) 경우에 따라 덧콩팥동맥 (accessory renal artery) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['artery', 'musc",
-   "text": "Anatomy 콩팥 12차시(0925) 문용석pf.pdf 구조물 용어 (5개) 콩팥주위지방체 (pararenal fat body) 콩팥근막 (renal fascia) 콩팥주위지방피막 (perirenal fat capsule) 콩팥문 (hilum of kidney) 경우에 따라 덧콩팥동맥 (accessory renal artery) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['artery', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 콩팥 13회차 · 배 12차시(0925) 문용석pf.pdf 구조물 용어 (5개) 콩팥주위지방체 (pararenal fat body) 콩팥근막 (renal fascia) 콩팥주위지방피막 (perirenal fat capsule) 콩팥문 (hilum of kidney) 경우에 따라 덧콩팥동맥 (accessory renal artery) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['artery', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-위에서-눈확열기",
    "type": "anatomy",
+   "unit": "13회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "위에서 눈확열기",
    "tags": [],
@@ -4744,11 +5018,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-12-위에서-눈확열기.md",
    "snippet": "구조물 용어 (2개) 눈확천장 (obital roof) 볏돌기 (crista galli) 분류: region=head (conf 0.81) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 위에서 눈확열기 12차시(0925) 문용석pf.pdf 구조물 용어 (2개) 눈확천장 (obital roof) 볏돌기 (crista galli) 분류: region=head (conf 0.81) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위에서 눈확열기 13회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (2개) 눈확천장 (obital roof) 볏돌기 (crista galli) 분류: region=head (conf 0.81) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-안구",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "안구",
    "tags": [],
@@ -4757,11 +5032,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-15-안구.md",
    "snippet": "구조물 용어 (15개) 온힘줄고리 (common tendinous ring) 관상면 (coronal plane) 유리체 (vitreous body) 안구섬유층 (fibrous layer of eyeball) 검정색으로 보이는 막이 맥락막 (choroid) 홍채 합해서 포도막 (uvea) 앞쪽에 홍채에 둘러싸여있는 빈부분이 동공 (pupil) 섬모체에 둘러 싸인 부분은 섬모체가장자리 (ciliary margin) 안구 가장 속에",
-   "text": "Anatomy 안구 12차시(0925) 문용석pf.pdf 구조물 용어 (15개) 온힘줄고리 (common tendinous ring) 관상면 (coronal plane) 유리체 (vitreous body) 안구섬유층 (fibrous layer of eyeball) 검정색으로 보이는 막이 맥락막 (choroid) 홍채 합해서 포도막 (uvea) 앞쪽에 홍채에 둘러싸여있는 빈부분이 동공 (pupil) 섬모체에 둘러 싸인 부분은 섬모체가장자리 (ciliary margin) 안구 가장 속에 있는 망막 (retina) 잘보존된 망막에서는 중심오목 (fovea centralis) 다소 노란색을 띠는 황반 (macula) 시각신경원반 (optic disc) 상이 맺히지 않으므로 맹점 (blind spot) 안구앞방 (anterior chamber) 안구뒤방 (posterior chamber) 분류: region=abdomen (conf 0.56) · layers=['cavity visceral', 'deep', 'intermediate'] · classes=['duct', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 안구 배 12차시(0925) 문용석pf.pdf 구조물 용어 (15개) 온힘줄고리 (common tendinous ring) 관상면 (coronal plane) 유리체 (vitreous body) 안구섬유층 (fibrous layer of eyeball) 검정색으로 보이는 막이 맥락막 (choroid) 홍채 합해서 포도막 (uvea) 앞쪽에 홍채에 둘러싸여있는 빈부분이 동공 (pupil) 섬모체에 둘러 싸인 부분은 섬모체가장자리 (ciliary margin) 안구 가장 속에 있는 망막 (retina) 잘보존된 망막에서는 중심오목 (fovea centralis) 다소 노란색을 띠는 황반 (macula) 시각신경원반 (optic disc) 상이 맺히지 않으므로 맹점 (blind spot) 안구앞방 (anterior chamber) 안구뒤방 (posterior chamber) 분류: region=abdomen (conf 0.56) · layers=['cavity visceral', 'deep', 'intermediate'] · classes=['duct', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-아래대정맥-inferior-vena-cava-",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "아래대정맥 (inferior vena cava)",
    "tags": [],
@@ -4770,11 +5046,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-18-아래대정맥-inferior-vena-cava.md",
    "snippet": "구조물 용어 (3개) 콩팥정맥 (renal vein) 허리정맥 (lumbar vein) 오름허리정맥 (ascending lumbar vein) 분류: region=abdomen (conf 0.6) · layers= · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래대정맥 (inferior vena cava) 12차시(0925) 문용석pf.pdf 구조물 용어 (3개) 콩팥정맥 (renal vein) 허리정맥 (lumbar vein) 오름허리정맥 (ascending lumbar vein) 분류: region=abdomen (conf 0.6) · layers= · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래대정맥 (inferior vena cava) 배 12차시(0925) 문용석pf.pdf 구조물 용어 (3개) 콩팥정맥 (renal vein) 허리정맥 (lumbar vein) 오름허리정맥 (ascending lumbar vein) 분류: region=abdomen (conf 0.6) · layers= · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-배",
    "type": "anatomy",
+   "unit": "13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "배",
    "tags": [],
@@ -4783,11 +5060,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-01-배.md",
    "snippet": "구조물 용어 (1개) 방사선영상 (ERCP) 분류: region=abdomen (conf 0.9) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 배 12차시(0925) 문용석pf.pdf 구조물 용어 (1개) 방사선영상 (ERCP) 분류: region=abdomen (conf 0.9) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배 13회차 · 배 12차시(0925) 문용석pf.pdf 구조물 용어 (1개) 방사선영상 (ERCP) 분류: region=abdomen (conf 0.9) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-머리뼈-바닥면-basal-surface-of-crani",
    "type": "anatomy",
+   "unit": "7·15회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "머리뼈 바닥면 (basal surface of cranium)",
    "tags": [],
@@ -4796,11 +5074,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-09-머리뼈-바닥면-basal-surface-of.md",
    "snippet": "구조물 용어 (5개) 체판 (cribriform plate) 시각신경관 (optic canal) 위눈확틈새 (superior orbital fissure) 목정맥구멍 (jugular foramen) 혀밑신경관 (hypoglossal canal) 분류: region=head (conf 0.7) · layers= · classes=['foramen', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .pri",
-   "text": "Anatomy 머리뼈 바닥면 (basal surface of cranium) 12차시(0925) 문용석pf.pdf 구조물 용어 (5개) 체판 (cribriform plate) 시각신경관 (optic canal) 위눈확틈새 (superior orbital fissure) 목정맥구멍 (jugular foramen) 혀밑신경관 (hypoglossal canal) 분류: region=head (conf 0.7) · layers= · classes=['foramen', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 머리뼈 바닥면 (basal surface of cranium) 7·15회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (5개) 체판 (cribriform plate) 시각신경관 (optic canal) 위눈확틈새 (superior orbital fissure) 목정맥구멍 (jugular foramen) 혀밑신경관 (hypoglossal canal) 분류: region=head (conf 0.7) · layers= · classes=['foramen', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-머리덮개의-층",
    "type": "anatomy",
+   "unit": "13회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "머리덮개의 층",
    "tags": [],
@@ -4809,11 +5088,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-04-머리덮개의-층.md",
    "snippet": "구조물 용어 (7개) 피부밑조직 (subcutaneous tissue) 머리덮개널힘줄 (epicranial aponeurosis) 관상봉합 (coronal suture) 시상봉합 (sagittal suture) 정수리점 (bregma) 시옷봉합 (lambdoid suture) 시옷점 (lambda) 분류: region=head (conf 1.0) · layers=['skin', 'superficial', 'superficial",
-   "text": "Anatomy 머리덮개의 층 12차시(0925) 문용석pf.pdf 구조물 용어 (7개) 피부밑조직 (subcutaneous tissue) 머리덮개널힘줄 (epicranial aponeurosis) 관상봉합 (coronal suture) 시상봉합 (sagittal suture) 정수리점 (bregma) 시옷봉합 (lambdoid suture) 시옷점 (lambda) 분류: region=head (conf 1.0) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['duct', 'fascia'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 머리덮개의 층 13회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (7개) 피부밑조직 (subcutaneous tissue) 머리덮개널힘줄 (epicranial aponeurosis) 관상봉합 (coronal suture) 시상봉합 (sagittal suture) 정수리점 (bregma) 시옷봉합 (lambdoid suture) 시옷점 (lambda) 분류: region=head (conf 1.0) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['duct', 'fascia'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-머리덮개뼈-calvaria-분리",
    "type": "anatomy",
+   "unit": "12·13회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "머리덮개뼈 (calvaria) 분리",
    "tags": [],
@@ -4822,11 +5102,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-05-머리덮개뼈-calvaria-분리.md",
    "snippet": "구조물 용어 (4개) 그어진 선 따라 머리뼈 바깥판 (outer table) 무 깊이 자르는 경우 뇌막 과 뇌 손상가능하므로 판사이층 (diploe) 큰구멍 (foramen magnum) 머리덮개뼈 위뒤방향으로 당겨 뇌경막 (cranial dura mater) 분류: region=head (conf 0.72) · layers= · classes=['bone', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .pr",
-   "text": "Anatomy 머리덮개뼈 (calvaria) 분리 12차시(0925) 문용석pf.pdf 구조물 용어 (4개) 그어진 선 따라 머리뼈 바깥판 (outer table) 무 깊이 자르는 경우 뇌막 과 뇌 손상가능하므로 판사이층 (diploe) 큰구멍 (foramen magnum) 머리덮개뼈 위뒤방향으로 당겨 뇌경막 (cranial dura mater) 분류: region=head (conf 0.72) · layers= · classes=['bone', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 머리덮개뼈 (calvaria) 분리 12·13회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (4개) 그어진 선 따라 머리뼈 바깥판 (outer table) 무 깊이 자르는 경우 뇌막 과 뇌 손상가능하므로 판사이층 (diploe) 큰구멍 (foramen magnum) 머리덮개뼈 위뒤방향으로 당겨 뇌경막 (cranial dura mater) 분류: region=head (conf 0.72) · layers= · classes=['bone', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-머리덮개-벗기기",
    "type": "anatomy",
+   "unit": "7회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "머리덮개 벗기기",
    "tags": [],
@@ -4835,11 +5116,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-03-머리덮개-벗기기.md",
    "snippet": "구조물 용어 (6개) 코뿌리점 (nasion) 혹은 미간 (glabella) 부분에서 머리마루점 (vertex) 정수리점 (bregma) 지나 바깥뒤통수뼈융기 (external occipital protuberance) 이 시신에서는 머 리덮개의 뼈막 (periost) 분류: region=head (conf 0.83) · layers= · classes=['bone', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — ",
-   "text": "Anatomy 머리덮개 벗기기 12차시(0925) 문용석pf.pdf 구조물 용어 (6개) 코뿌리점 (nasion) 혹은 미간 (glabella) 부분에서 머리마루점 (vertex) 정수리점 (bregma) 지나 바깥뒤통수뼈융기 (external occipital protuberance) 이 시신에서는 머 리덮개의 뼈막 (periost) 분류: region=head (conf 0.83) · layers= · classes=['bone', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 머리덮개 벗기기 7회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (6개) 코뿌리점 (nasion) 혹은 미간 (glabella) 부분에서 머리마루점 (vertex) 정수리점 (bregma) 지나 바깥뒤통수뼈융기 (external occipital protuberance) 이 시신에서는 머 리덮개의 뼈막 (periost) 분류: region=head (conf 0.83) · layers= · classes=['bone', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-뒤배벽의-혈관",
    "type": "anatomy",
+   "unit": "1·14·15회차 · 배",
    "topic": "Anatomy",
    "subtopic": "뒤배벽의 혈관",
    "tags": [],
@@ -4848,11 +5130,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-21-뒤배벽의-혈관.md",
    "snippet": "구조물 용어 (4개) 온엉덩동맥 (common iliac artery) 바깥엉덩동맥 (external iliac artery) 허리동맥 (lumbar artery) 가슴림프관팽대 (cisterna chyli) 분류: region=abdomen (conf 0.42) · layers=['deep'] · classes=['artery', 'lymphatic'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/",
-   "text": "Anatomy 뒤배벽의 혈관 12차시(0925) 문용석pf.pdf 구조물 용어 (4개) 온엉덩동맥 (common iliac artery) 바깥엉덩동맥 (external iliac artery) 허리동맥 (lumbar artery) 가슴림프관팽대 (cisterna chyli) 분류: region=abdomen (conf 0.42) · layers=['deep'] · classes=['artery', 'lymphatic'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 뒤배벽의 혈관 1·14·15회차 · 배 12차시(0925) 문용석pf.pdf 구조물 용어 (4개) 온엉덩동맥 (common iliac artery) 바깥엉덩동맥 (external iliac artery) 허리동맥 (lumbar artery) 가슴림프관팽대 (cisterna chyli) 분류: region=abdomen (conf 0.42) · layers=['deep'] · classes=['artery', 'lymphatic'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-뒤배벽의-근육",
    "type": "anatomy",
+   "unit": "1회차 · 배",
    "topic": "Anatomy",
    "subtopic": "뒤배벽의 근육",
    "tags": [],
@@ -4861,11 +5144,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-20-뒤배벽의-근육.md",
    "snippet": "구조물 용어 (7개) 음부넙다리신경 (genitofemoral nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 가쪽넙다리피부신경 (lateral cutaneous nerve of thigh) 작은허리근 (psoas minor muscle) 넙다리신경 (femoral nerve) 분류: region=abdomen (",
-   "text": "Anatomy 뒤배벽의 근육 12차시(0925) 문용석pf.pdf 구조물 용어 (7개) 음부넙다리신경 (genitofemoral nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 가쪽넙다리피부신경 (lateral cutaneous nerve of thigh) 작은허리근 (psoas minor muscle) 넙다리신경 (femoral nerve) 분류: region=abdomen (conf 0.38) · layers=['skin'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 뒤배벽의 근육 1회차 · 배 12차시(0925) 문용석pf.pdf 구조물 용어 (7개) 음부넙다리신경 (genitofemoral nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 가쪽넙다리피부신경 (lateral cutaneous nerve of thigh) 작은허리근 (psoas minor muscle) 넙다리신경 (femoral nerve) 분류: region=abdomen (conf 0.38) · layers=['skin'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-눈확속의-구조물",
    "type": "anatomy",
+   "unit": "7회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "눈확속의 구조물",
    "tags": [],
@@ -4874,11 +5158,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-13-눈확속의-구조물.md",
    "snippet": "구조물 용어 (34개) 눈확뼈막 (periorbita) 이를 통해 눈확안 주행하는 이마신경 (frontal nerve) 앞쪽으로 추적하면 계속 똑바로 주행하는 더 큰 눈확위신경 (supraorbital nerve) 과 보다 안쪽으로 주행하는 도르래위신경 (supratrochlear nerve) 눈확위구멍 (supraorbital foramen) 눈확위패임 (supraorbital notch) 눈물샘신경 (lacrimal ner",
-   "text": "Anatomy 눈확속의 구조물 12차시(0925) 문용석pf.pdf 구조물 용어 (34개) 눈확뼈막 (periorbita) 이를 통해 눈확안 주행하는 이마신경 (frontal nerve) 앞쪽으로 추적하면 계속 똑바로 주행하는 더 큰 눈확위신경 (supraorbital nerve) 과 보다 안쪽으로 주행하는 도르래위신경 (supratrochlear nerve) 눈확위구멍 (supraorbital foramen) 눈확위패임 (supraorbital notch) 눈물샘신경 (lacrimal nerve) 도르래신경 (trochlear nerve) 위빗근 (superior oblique muscle) 이 신경들 손상하지 않으면서 지방 제거하여 위눈꺼풀올림근 (levator palpebrae superioris muscle) 시각신경관 (optic canal) 위곧은근 (superior rectus muscle) 눈돌림신경 (oculomotor nerve) 위빗근 (superior oblique muscle) 코섬모체신경 (nasociliary nerve) 긴섬모체신경 (long ciliary nerve) 뒤벌집신경 (posterior ethmoidal nerve) 앞벌집신경 (anterior ethmoidal nerve) 도르래아래신경 (infratrochlear nerve) 눈동맥 (ophthalmic artery) 위눈정맥 (superior ophthalmic vein) 가쪽곧은근 (lateral rectus muscle) 갓돌림신경 (abducens nerve) 온힘줄고리 (common tendinous ring) 시각신경 (optic nerve) 섬모체신경절 (ciliary ganglion) 짧은섬모체신경 (short ciliary nerve) 눈돌림신경 (oculomotor nerve) 코섬모체신경 (nasociliary nerve) 눈동맥 (ophthalmic artery) 안쪽곧은근 (medial rectus muscle) 눈돌림신경 (oculomotor nerve) 아래곧은근 (inferior rectus muscle) 눈물샘 (lacrimal gland) 분류: region=head (conf 0.86) · layers=['deep', 'skin'] · classes=['artery', 'bone', 'foramen', 'muscle', 'nerve', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 눈확속의 구조물 7회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (34개) 눈확뼈막 (periorbita) 이를 통해 눈확안 주행하는 이마신경 (frontal nerve) 앞쪽으로 추적하면 계속 똑바로 주행하는 더 큰 눈확위신경 (supraorbital nerve) 과 보다 안쪽으로 주행하는 도르래위신경 (supratrochlear nerve) 눈확위구멍 (supraorbital foramen) 눈확위패임 (supraorbital notch) 눈물샘신경 (lacrimal nerve) 도르래신경 (trochlear nerve) 위빗근 (superior oblique muscle) 이 신경들 손상하지 않으면서 지방 제거하여 위눈꺼풀올림근 (levator palpebrae superioris muscle) 시각신경관 (optic canal) 위곧은근 (superior rectus muscle) 눈돌림신경 (oculomotor nerve) 위빗근 (superior oblique muscle) 코섬모체신경 (nasociliary nerve) 긴섬모체신경 (long ciliary nerve) 뒤벌집신경 (posterior ethmoidal nerve) 앞벌집신경 (anterior ethmoidal nerve) 도르래아래신경 (infratrochlear nerve) 눈동맥 (ophthalmic artery) 위눈정맥 (superior ophthalmic vein) 가쪽곧은근 (lateral rectus muscle) 갓돌림신경 (abducens nerve) 온힘줄고리 (common tendinous ring) 시각신경 (optic nerve) 섬모체신경절 (ciliary ganglion) 짧은섬모체신경 (short ciliary nerve) 눈돌림신경 (oculomotor nerve) 코섬모체신경 (nasociliary nerve) 눈동맥 (ophthalmic artery) 안쪽곧은근 (medial rectus muscle) 눈돌림신경 (oculomotor nerve) 아래곧은근 (inferior rectus muscle) 눈물샘 (lacrimal gland) 분류: region=head (conf 0.86) · layers=['deep', 'skin'] · classes=['artery', 'bone', 'foramen', 'muscle', 'nerve', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-눈확-앞모습",
    "type": "anatomy",
+   "unit": "머리",
    "topic": "Anatomy",
    "subtopic": "눈확 앞모습",
    "tags": [],
@@ -4887,11 +5172,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-14-눈확-앞모습.md",
    "snippet": "구조물 용어 (7개) 해부 전 결막주머니 (conjuctival sac) 위곧은근 (superior rectus muscle) 아래곧은근 (inferior rectus muscle) 가쪽곧은근 (lateral rectus muscle) 안쪽곧은근 (medial rectus muscle) 아래빗근 (inferior oblique muscle) 위빗근 (superior oblique muscle) 분류: region=head (c",
-   "text": "Anatomy 눈확 앞모습 12차시(0925) 문용석pf.pdf 구조물 용어 (7개) 해부 전 결막주머니 (conjuctival sac) 위곧은근 (superior rectus muscle) 아래곧은근 (inferior rectus muscle) 가쪽곧은근 (lateral rectus muscle) 안쪽곧은근 (medial rectus muscle) 아래빗근 (inferior oblique muscle) 위빗근 (superior oblique muscle) 분류: region=head (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 눈확 앞모습 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (7개) 해부 전 결막주머니 (conjuctival sac) 위곧은근 (superior rectus muscle) 아래곧은근 (inferior rectus muscle) 가쪽곧은근 (lateral rectus muscle) 안쪽곧은근 (medial rectus muscle) 아래빗근 (inferior oblique muscle) 위빗근 (superior oblique muscle) 분류: region=head (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-눈물기관",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "눈물기관",
    "tags": [],
@@ -4900,11 +5186,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-11-눈물기관.md",
    "snippet": "구조물 용어 (6개) 눈물샘 (lacrimal gland) 안쪽눈꺼풀인대 (medial palpebral ligament) 가쪽눈꺼풀인대 (lateral palpebral ligament) 눈물주머니 (lacrimal sac) 아래로 내려가 코눈물관 (nasolacrimal duct) 통과하여 아래콧길 (inferior nasal meatus) 분류: region=abdomen (conf 0.6) · layers= · clas",
-   "text": "Anatomy 눈물기관 12차시(0925) 문용석pf.pdf 구조물 용어 (6개) 눈물샘 (lacrimal gland) 안쪽눈꺼풀인대 (medial palpebral ligament) 가쪽눈꺼풀인대 (lateral palpebral ligament) 눈물주머니 (lacrimal sac) 아래로 내려가 코눈물관 (nasolacrimal duct) 통과하여 아래콧길 (inferior nasal meatus) 분류: region=abdomen (conf 0.6) · layers= · classes=['duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 눈물기관 배 12차시(0925) 문용석pf.pdf 구조물 용어 (6개) 눈물샘 (lacrimal gland) 안쪽눈꺼풀인대 (medial palpebral ligament) 가쪽눈꺼풀인대 (lateral palpebral ligament) 눈물주머니 (lacrimal sac) 아래로 내려가 코눈물관 (nasolacrimal duct) 통과하여 아래콧길 (inferior nasal meatus) 분류: region=abdomen (conf 0.6) · layers= · classes=['duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-눈꺼풀",
    "type": "anatomy",
+   "unit": "9회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "눈꺼풀",
    "tags": [],
@@ -4913,11 +5200,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-10-눈꺼풀.md",
    "snippet": "구조물 용어 (24개) 위눈꺼풀 (upper eyelid) 아래눈꺼풀 (lower eyelid) 그사이 눈꺼풀틈새 (palpebral fissure) 안쪽눈꺼풀연결 (medial palpebral commissure) 가쪽눈꺼풀연결 (lateral palpebral commisure) 가쪽눈구석 (lateral angle of eye) 안쪽눈구석 (medial angle of eye) 공막 (sclera) 각막 (cornea)",
-   "text": "Anatomy 눈꺼풀 12차시(0925) 문용석pf.pdf 구조물 용어 (24개) 위눈꺼풀 (upper eyelid) 아래눈꺼풀 (lower eyelid) 그사이 눈꺼풀틈새 (palpebral fissure) 안쪽눈꺼풀연결 (medial palpebral commissure) 가쪽눈꺼풀연결 (lateral palpebral commisure) 가쪽눈구석 (lateral angle of eye) 안쪽눈구석 (medial angle of eye) 공막 (sclera) 각막 (cornea) 홍채 (iris) 동공 (pupil) 눈꺼풀결막 (palpebral conjuctiva) 안구결막 (bulbar conjuctiva) 아래결막구석 (inferior conjuctival fornix) 위결막구석 (superior conjuctival fornix) 눈물언덕 (lacrimal caruncle) 눈물못 (lacrimal lake) 눈물유두 (lacrimal papilla) 눈물점 (lacrimal punctum) 눈둘레근 (orbicularis oculi muscle) 눈확사이막 (orbital septum) 확 속 사이 나누는 막으로 눈확모서리에 부착하여 눈확뼈막 (periobita) 눈꺼풀의 눈꺼풀판 (tarsus) 눈꺼풀판 (tarsus) 분류: region=head (conf 0.91) · layers=['cavity visceral', 'superficial', 'superficial fascia'] · classes=['bone', 'foramen', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 눈꺼풀 9회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (24개) 위눈꺼풀 (upper eyelid) 아래눈꺼풀 (lower eyelid) 그사이 눈꺼풀틈새 (palpebral fissure) 안쪽눈꺼풀연결 (medial palpebral commissure) 가쪽눈꺼풀연결 (lateral palpebral commisure) 가쪽눈구석 (lateral angle of eye) 안쪽눈구석 (medial angle of eye) 공막 (sclera) 각막 (cornea) 홍채 (iris) 동공 (pupil) 눈꺼풀결막 (palpebral conjuctiva) 안구결막 (bulbar conjuctiva) 아래결막구석 (inferior conjuctival fornix) 위결막구석 (superior conjuctival fornix) 눈물언덕 (lacrimal caruncle) 눈물못 (lacrimal lake) 눈물유두 (lacrimal papilla) 눈물점 (lacrimal punctum) 눈둘레근 (orbicularis oculi muscle) 눈확사이막 (orbital septum) 확 속 사이 나누는 막으로 눈확모서리에 부착하여 눈확뼈막 (periobita) 눈꺼풀의 눈꺼풀판 (tarsus) 눈꺼풀판 (tarsus) 분류: region=head (conf 0.91) · layers=['cavity visceral', 'superficial', 'superficial fascia'] · classes=['bone', 'foramen', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-뇌막",
    "type": "anatomy",
+   "unit": "머리",
    "topic": "Anatomy",
    "subtopic": "뇌막",
    "tags": [],
@@ -4926,11 +5214,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-06-뇌막.md",
    "snippet": "구조물 용어 (13개) 경막 (dura mater) 거미막 (arachnoid mater) 연막 (pia mater) 머리뼈 속면 덮는 실제적 뼈막인 뼈막층 (periosteal layer) 수막층 (meningeal layer) 경막정맥굴 (dural venous sinus) 위시상정맥굴 (superior sagittal sinus) 가쪽정맥주머니 (lateral lacunae) 거미막과립 (arachnoid granulat",
-   "text": "Anatomy 뇌막 12차시(0925) 문용석pf.pdf 구조물 용어 (13개) 경막 (dura mater) 거미막 (arachnoid mater) 연막 (pia mater) 머리뼈 속면 덮는 실제적 뼈막인 뼈막층 (periosteal layer) 수막층 (meningeal layer) 경막정맥굴 (dural venous sinus) 위시상정맥굴 (superior sagittal sinus) 가쪽정맥주머니 (lateral lacunae) 거미막과립 (arachnoid granulation) 중간뇌막동맥 (middle meningeal artery) 머리뼈 관자놀이점 (pterion) 대뇌정맥 (cerebral vein) 거미막밑공간 (subarachnoid space) 분류: region=head (conf 0.62) · layers=['cavity visceral'] · classes=['artery', 'bone', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 뇌막 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (13개) 경막 (dura mater) 거미막 (arachnoid mater) 연막 (pia mater) 머리뼈 속면 덮는 실제적 뼈막인 뼈막층 (periosteal layer) 수막층 (meningeal layer) 경막정맥굴 (dural venous sinus) 위시상정맥굴 (superior sagittal sinus) 가쪽정맥주머니 (lateral lacunae) 거미막과립 (arachnoid granulation) 중간뇌막동맥 (middle meningeal artery) 머리뼈 관자놀이점 (pterion) 대뇌정맥 (cerebral vein) 거미막밑공간 (subarachnoid space) 분류: region=head (conf 0.62) · layers=['cavity visceral'] · classes=['artery', 'bone', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-뇌-적출",
    "type": "anatomy",
+   "unit": "7·13·15회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "뇌 적출",
    "tags": [],
@@ -4939,11 +5228,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-07-뇌-적출.md",
    "snippet": "구조물 용어 (14개) 대뇌낫 (falx cerebri) 소뇌천막 (tentorium cerebelli) 소뇌낫 (falx cerebelli) 안 장가로막 (diaphragma sellae) 볏돌기 (crista galli) 더듬자 사용하여 볏돌기 양 옆 벌집뼈체판 (ethmoid cribriform plate) 위에 놓인 후각망울 (olfactory bulb) 그 뒤 정중면에 위치한 뇌하수체줄기 (hypophyseal sta",
-   "text": "Anatomy 뇌 적출 12차시(0925) 문용석pf.pdf 구조물 용어 (14개) 대뇌낫 (falx cerebri) 소뇌천막 (tentorium cerebelli) 소뇌낫 (falx cerebelli) 안 장가로막 (diaphragma sellae) 볏돌기 (crista galli) 더듬자 사용하여 볏돌기 양 옆 벌집뼈체판 (ethmoid cribriform plate) 위에 놓인 후각망울 (olfactory bulb) 그 뒤 정중면에 위치한 뇌하수체줄기 (hypophyseal stalk) 그 뒤 눈돌림신경 (oculomotor nerve) 대뇌낫 (falx cerebri) 앞쪽 볏돌기 (crista galli) 소뇌천막 (tentorium cerebelli) 천막패임 (tentorial notch) 소뇌낫 (falx cerebelli) 분류: region=head (conf 0.84) · layers=['deep'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 뇌 적출 7·13·15회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (14개) 대뇌낫 (falx cerebri) 소뇌천막 (tentorium cerebelli) 소뇌낫 (falx cerebelli) 안 장가로막 (diaphragma sellae) 볏돌기 (crista galli) 더듬자 사용하여 볏돌기 양 옆 벌집뼈체판 (ethmoid cribriform plate) 위에 놓인 후각망울 (olfactory bulb) 그 뒤 정중면에 위치한 뇌하수체줄기 (hypophyseal stalk) 그 뒤 눈돌림신경 (oculomotor nerve) 대뇌낫 (falx cerebri) 앞쪽 볏돌기 (crista galli) 소뇌천막 (tentorium cerebelli) 천막패임 (tentorial notch) 소뇌낫 (falx cerebelli) 분류: region=head (conf 0.84) · layers=['deep'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-경막정맥굴",
    "type": "anatomy",
+   "unit": "13회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "경막정맥굴",
    "tags": [],
@@ -4952,11 +5242,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-08-경막정맥굴.md",
    "snippet": "구조물 용어 (19개) 위시상정맥굴 (superior sagittal sinus) 앞쪽으로 벌집뼈 (ethmoid bone) 가쪽정맥주머니 (lateral lacunae) 거미막과립 (arachnoid granulation) 아래시상정맥굴 (inferior sagittal sinus) 곧은정맥굴 (straight sinus) 가로정맥굴 (transverse sinus) 개 정 맥굴이 하나로 합쳐져 속뒤통수뼈융기에서 정맥굴합류 ",
-   "text": "Anatomy 경막정맥굴 12차시(0925) 문용석pf.pdf 구조물 용어 (19개) 위시상정맥굴 (superior sagittal sinus) 앞쪽으로 벌집뼈 (ethmoid bone) 가쪽정맥주머니 (lateral lacunae) 거미막과립 (arachnoid granulation) 아래시상정맥굴 (inferior sagittal sinus) 곧은정맥굴 (straight sinus) 가로정맥굴 (transverse sinus) 개 정 맥굴이 하나로 합쳐져 속뒤통수뼈융기에서 정맥굴합류 (confluence of sinuses) 구불정맥굴 (sigmoid sinus) 목정맥구멍 (jugular foramen) 위목정맥팽대 (superior bulb of jugular vein) 위바위정맥굴 (superior petrosal sinus) 뒤통수정맥굴 (occipital sinus) 해면정맥굴 (cavernous sinus) 삼차신경 (trigeminal nerve) 눈돌림신경 (oculomotor nerve) 도르래신경 (trochlear nerve) 갓돌림신경 (abducens nerve) 속목동맥 (internal carotid artery) 분류: region=head (conf 0.62) · layers= · classes=['artery', 'bone', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 경막정맥굴 13회차 · 머리 12차시(0925) 문용석pf.pdf 구조물 용어 (19개) 위시상정맥굴 (superior sagittal sinus) 앞쪽으로 벌집뼈 (ethmoid bone) 가쪽정맥주머니 (lateral lacunae) 거미막과립 (arachnoid granulation) 아래시상정맥굴 (inferior sagittal sinus) 곧은정맥굴 (straight sinus) 가로정맥굴 (transverse sinus) 개 정 맥굴이 하나로 합쳐져 속뒤통수뼈융기에서 정맥굴합류 (confluence of sinuses) 구불정맥굴 (sigmoid sinus) 목정맥구멍 (jugular foramen) 위목정맥팽대 (superior bulb of jugular vein) 위바위정맥굴 (superior petrosal sinus) 뒤통수정맥굴 (occipital sinus) 해면정맥굴 (cavernous sinus) 삼차신경 (trigeminal nerve) 눈돌림신경 (oculomotor nerve) 도르래신경 (trochlear nerve) 갓돌림신경 (abducens nerve) 속목동맥 (internal carotid artery) 분류: region=head (conf 0.62) · layers= · classes=['artery', 'bone', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s12-가로막",
    "type": "anatomy",
+   "unit": "1·12·13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "가로막",
    "tags": [],
@@ -4965,11 +5256,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s12/sec-19-가로막.md",
    "snippet": "구조물 용어 (12개) 주변 근육부분과 이들 근육이 부착하는 가운데 중심널힘줄 (central tendon) 복장부분 (sternal part) 갈비부분 (costal part) 허리부분 (lumbar part) 오른다리 (right crust) 식도구멍 (esophageal hiatus) 왼다리 (left crust) 대동맥구멍 (aortic hiatus) 큰허리근 (psoas major muscle) 안쪽활꼴인대 (medi",
-   "text": "Anatomy 가로막 12차시(0925) 문용석pf.pdf 구조물 용어 (12개) 주변 근육부분과 이들 근육이 부착하는 가운데 중심널힘줄 (central tendon) 복장부분 (sternal part) 갈비부분 (costal part) 허리부분 (lumbar part) 오른다리 (right crust) 식도구멍 (esophageal hiatus) 왼다리 (left crust) 대동맥구멍 (aortic hiatus) 큰허리근 (psoas major muscle) 안쪽활꼴인대 (medial arcuate ligament) 허리네모근 (quadratus lumborum muscle) 가쪽활꼴인대 (lateral arcuate ligament) 분류: region=abdomen (conf 0.44) · layers=['cavity visceral'] · classes=['artery', 'foramen', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 가로막 1·12·13회차 · 배 12차시(0925) 문용석pf.pdf 구조물 용어 (12개) 주변 근육부분과 이들 근육이 부착하는 가운데 중심널힘줄 (central tendon) 복장부분 (sternal part) 갈비부분 (costal part) 허리부분 (lumbar part) 오른다리 (right crust) 식도구멍 (esophageal hiatus) 왼다리 (left crust) 대동맥구멍 (aortic hiatus) 큰허리근 (psoas major muscle) 안쪽활꼴인대 (medial arcuate ligament) 허리네모근 (quadratus lumborum muscle) 가쪽활꼴인대 (lateral arcuate ligament) 분류: region=abdomen (conf 0.44) · layers=['cavity visceral'] · classes=['artery', 'foramen', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-폄근지지띠-섬유칸",
    "type": "anatomy",
+   "unit": "11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "폄근지지띠 섬유칸",
    "tags": [],
@@ -4978,11 +5270,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-07-폄근지지띠-섬유칸.md",
    "snippet": "구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (e",
-   "text": "Anatomy 폄근지지띠 섬유칸 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 폄근지지띠 섬유칸 11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-큰창자",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "큰창자",
    "tags": [],
@@ -4991,11 +5284,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-21-큰창자.md",
    "snippet": "구조물 용어 (10개) 잘록창자띠 (tenia coli) 잘록창자팽대 (haustra of colon) 복막주렁 (omental appendice) 창자간막 부착된 맞은편 벽에 위치 막창자 (cecum) 앞에서 세로로 잘라열어 돌창자구멍 (ileal orifice) 돌막창자판막 (ileocecal recess valve) 돌창자구멍 (ileal orifice) 에 돌잘록창자입술 (ileocolic lip) 인 위입술과 돌막창자",
-   "text": "Anatomy 큰창자 11차시(0922) 허미선pf.pdf 구조물 용어 (10개) 잘록창자띠 (tenia coli) 잘록창자팽대 (haustra of colon) 복막주렁 (omental appendice) 창자간막 부착된 맞은편 벽에 위치 막창자 (cecum) 앞에서 세로로 잘라열어 돌창자구멍 (ileal orifice) 돌막창자판막 (ileocecal recess valve) 돌창자구멍 (ileal orifice) 에 돌잘록창자입술 (ileocolic lip) 인 위입술과 돌막창자입술 (ileocecal lip) 막창자꼬리구멍 (orifice of vermiform appendix) 분류: region=abdomen (conf 0.9) · layers=['cavity visceral'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 큰창자 배 11차시(0922) 허미선pf.pdf 구조물 용어 (10개) 잘록창자띠 (tenia coli) 잘록창자팽대 (haustra of colon) 복막주렁 (omental appendice) 창자간막 부착된 맞은편 벽에 위치 막창자 (cecum) 앞에서 세로로 잘라열어 돌창자구멍 (ileal orifice) 돌막창자판막 (ileocecal recess valve) 돌창자구멍 (ileal orifice) 에 돌잘록창자입술 (ileocolic lip) 인 위입술과 돌막창자입술 (ileocecal lip) 막창자꼬리구멍 (orifice of vermiform appendix) 분류: region=abdomen (conf 0.9) · layers=['cavity visceral'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-지라",
    "type": "anatomy",
+   "unit": "11·13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "지라",
    "tags": [],
@@ -5004,11 +5298,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-16-지라.md",
    "snippet": "구조물 용어 (6개) 지라동맥 (splenic artery) 지라문 (splenic hilum) 에서 지라콩팥인대 (splenorenal ligament) 와 위지라인대 (gastrosplenic ligament) 지라 가로막면 (diaphragmatic surface) 지라문 (splenic hilum) 분류: region=abdomen (conf 0.94) · layers=['cavity visceral'] · classe",
-   "text": "Anatomy 지라 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 지라동맥 (splenic artery) 지라문 (splenic hilum) 에서 지라콩팥인대 (splenorenal ligament) 와 위지라인대 (gastrosplenic ligament) 지라 가로막면 (diaphragmatic surface) 지라문 (splenic hilum) 분류: region=abdomen (conf 0.94) · layers=['cavity visceral'] · classes=['artery', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 지라 11·13회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 지라동맥 (splenic artery) 지라문 (splenic hilum) 에서 지라콩팥인대 (splenorenal ligament) 와 위지라인대 (gastrosplenic ligament) 지라 가로막면 (diaphragmatic surface) 지라문 (splenic hilum) 분류: region=abdomen (conf 0.94) · layers=['cavity visceral'] · classes=['artery', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-주변혈관관찰",
    "type": "anatomy",
+   "unit": "11·13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "주변혈관관찰",
    "tags": [],
@@ -5017,11 +5312,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-13-주변혈관관찰.md",
    "snippet": "구조물 용어 (12개) 고유간동맥 (proper hepatic artery) 왼간동맥 (hepatic artery) 위샘창자동맥 (gastroduodenal artery) 온간동맥 (common hepatic artery) 이 부위에서 치밀한 자율신경얼기 (autonomic plexus) 쓸개동맥 (cystic artery) 오른위동맥 (right gastric artery) 복강동맥 (celiac trunk) 가로막대동맥구멍",
-   "text": "Anatomy 주변혈관관찰 11차시(0922) 허미선pf.pdf 구조물 용어 (12개) 고유간동맥 (proper hepatic artery) 왼간동맥 (hepatic artery) 위샘창자동맥 (gastroduodenal artery) 온간동맥 (common hepatic artery) 이 부위에서 치밀한 자율신경얼기 (autonomic plexus) 쓸개동맥 (cystic artery) 오른위동맥 (right gastric artery) 복강동맥 (celiac trunk) 가로막대동맥구멍 (aortic hiatus) 위샘창자동맥 (gastroduodenal artery) 더 아래로 내려가 오른위그물 막동맥 (right gastroomental artery) 과 위이자샘창자동맥 (superior pancreaticoduodenal artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 주변혈관관찰 11·13회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (12개) 고유간동맥 (proper hepatic artery) 왼간동맥 (hepatic artery) 위샘창자동맥 (gastroduodenal artery) 온간동맥 (common hepatic artery) 이 부위에서 치밀한 자율신경얼기 (autonomic plexus) 쓸개동맥 (cystic artery) 오른위동맥 (right gastric artery) 복강동맥 (celiac trunk) 가로막대동맥구멍 (aortic hiatus) 위샘창자동맥 (gastroduodenal artery) 더 아래로 내려가 오른위그물 막동맥 (right gastroomental artery) 과 위이자샘창자동맥 (superior pancreaticoduodenal artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-이자관",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "이자관",
    "tags": [],
@@ -5030,11 +5326,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-24-이자관.md",
    "snippet": "구조물 용어 (5개) 큰샘창자유두 (major duodenal papilla) 앞서 보았던 두 관이 합쳐져 쓸개이자관팽대 (hepatopancreatic ampulla) 작은샘창자유두 (minor duodenal papilla) 여기로 덧이자관 (accessory pancreatic duct) 돌림주름 (circular fold) 분류: region=abdomen (conf 1.0) · layers= · classes=['du",
-   "text": "Anatomy 이자관 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 큰샘창자유두 (major duodenal papilla) 앞서 보았던 두 관이 합쳐져 쓸개이자관팽대 (hepatopancreatic ampulla) 작은샘창자유두 (minor duodenal papilla) 여기로 덧이자관 (accessory pancreatic duct) 돌림주름 (circular fold) 분류: region=abdomen (conf 1.0) · layers= · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 이자관 배 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 큰샘창자유두 (major duodenal papilla) 앞서 보았던 두 관이 합쳐져 쓸개이자관팽대 (hepatopancreatic ampulla) 작은샘창자유두 (minor duodenal papilla) 여기로 덧이자관 (accessory pancreatic duct) 돌림주름 (circular fold) 분류: region=abdomen (conf 1.0) · layers= · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-이자-길이가-긴-샘조직",
    "type": "anatomy",
+   "unit": "11회차 · 배",
    "topic": "Anatomy",
    "subtopic": "이자 : 길이가 긴 샘조직",
    "tags": [],
@@ -5043,11 +5340,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-23-이자-길이가-긴-샘조직.md",
    "snippet": "구조물 용어 (12개) 갈고리돌기 (uncinate process) 지라정맥 (splenic vein) 간문맥 (hepatic portal vein) 왼콩팥정맥 (left renal vein) 복강동맥 (celiac trunk) 온간동맥 (common hepatic artery) 위샘창자동맥 (gastroduodenal artery) 위이자샘창자동맥 (superior pancreaticoduodenal artery) 아래이자샘",
-   "text": "Anatomy 이자 : 길이가 긴 샘조직 11차시(0922) 허미선pf.pdf 구조물 용어 (12개) 갈고리돌기 (uncinate process) 지라정맥 (splenic vein) 간문맥 (hepatic portal vein) 왼콩팥정맥 (left renal vein) 복강동맥 (celiac trunk) 온간동맥 (common hepatic artery) 위샘창자동맥 (gastroduodenal artery) 위이자샘창자동맥 (superior pancreaticoduodenal artery) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 지라동맥 (splenic artery) 왼위그물막동맥 (left gastroomental artery) 온쓸개관 (common bile duct) 분류: region=abdomen (conf 0.91) · layers= · classes=['artery', 'duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 이자 : 길이가 긴 샘조직 11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (12개) 갈고리돌기 (uncinate process) 지라정맥 (splenic vein) 간문맥 (hepatic portal vein) 왼콩팥정맥 (left renal vein) 복강동맥 (celiac trunk) 온간동맥 (common hepatic artery) 위샘창자동맥 (gastroduodenal artery) 위이자샘창자동맥 (superior pancreaticoduodenal artery) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 지라동맥 (splenic artery) 왼위그물막동맥 (left gastroomental artery) 온쓸개관 (common bile duct) 분류: region=abdomen (conf 0.91) · layers= · classes=['artery', 'duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위팔세갈래근-triceps-brachii-muscle-",
    "type": "anatomy",
+   "unit": "9·11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "위팔세갈래근 (triceps brachii muscle)",
    "tags": [],
@@ -5056,11 +5354,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-02-위팔세갈래근-triceps-brachii-m.md",
    "snippet": "구조물 용어 (3개) 확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절 (infraglenoid tubercle) 어 일어남 위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리 (olecranon) 긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근 (teres major muscle) 분류: region=upper limb (conf 0.95) · layers=['deep', 'deep fascia', 'superficial', 'su",
-   "text": "Anatomy 위팔세갈래근 (triceps brachii muscle) 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절 (infraglenoid tubercle) 어 일어남 위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리 (olecranon) 긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근 (teres major muscle) 분류: region=upper limb (conf 0.95) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔세갈래근 (triceps brachii muscle) 9·11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절 (infraglenoid tubercle) 어 일어남 위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리 (olecranon) 긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근 (teres major muscle) 분류: region=upper limb (conf 0.95) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위창자간막동맥-superior-mesenteric-ar",
    "type": "anatomy",
+   "unit": "7·11회차 · 배",
    "topic": "Anatomy",
    "subtopic": "위창자간막동맥 (superior mesenteric artery)",
    "tags": [],
@@ -5069,11 +5368,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-20-위창자간막동맥-superior-mesente.md",
    "snippet": "구조물 용어 (13개) 가로잘록창자 (transverse colon) 와 가로잘록창자간막 (transverse mesocolon) 빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리 (root of mesentery) 위창자간막신경얼기 (superior mesenteric plexus) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 창자동맥 (intestinal artery) 빈창자동",
-   "text": "Anatomy 위창자간막동맥 (superior mesenteric artery) 11차시(0922) 허미선pf.pdf 구조물 용어 (13개) 가로잘록창자 (transverse colon) 와 가로잘록창자간막 (transverse mesocolon) 빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리 (root of mesentery) 위창자간막신경얼기 (superior mesenteric plexus) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 창자동맥 (intestinal artery) 빈창자동맥 (jejunal artery) 돌창자동맥 (ileal artery) 곧은동맥 (vasa recta) 중간잘록창자동맥 (middle colic artery) 오른잘록창자동맥 (right colic artery) 돌잘록창자동맥 (ileocolic artery) 막창자꼬리동맥 (appendicular artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위창자간막동맥 (superior mesenteric artery) 7·11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (13개) 가로잘록창자 (transverse colon) 와 가로잘록창자간막 (transverse mesocolon) 빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리 (root of mesentery) 위창자간막신경얼기 (superior mesenteric plexus) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 창자동맥 (intestinal artery) 빈창자동맥 (jejunal artery) 돌창자동맥 (ileal artery) 곧은동맥 (vasa recta) 중간잘록창자동맥 (middle colic artery) 오른잘록창자동맥 (right colic artery) 돌잘록창자동맥 (ileocolic artery) 막창자꼬리동맥 (appendicular artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위의-혈관분포",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "위의 혈관분포",
    "tags": [],
@@ -5082,11 +5382,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-15-위의-혈관분포.md",
    "snippet": "구조물 용어 (5개) 오른위동맥 (right gastric artery) 왼위동맥 (left gastric artery) 오른위그물막동맥 (right gastroomental artery) 왼위그물막동맥 (left gastroomental artery) 짧은위동맥 (short gastric artery) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes=",
-   "text": "Anatomy 위의 혈관분포 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 오른위동맥 (right gastric artery) 왼위동맥 (left gastric artery) 오른위그물막동맥 (right gastroomental artery) 왼위그물막동맥 (left gastroomental artery) 짧은위동맥 (short gastric artery) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위의 혈관분포 배 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 오른위동맥 (right gastric artery) 왼위동맥 (left gastric artery) 오른위그물막동맥 (right gastroomental artery) 왼위그물막동맥 (left gastroomental artery) 짧은위동맥 (short gastric artery) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위의-겉모습",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "위의 겉모습",
    "tags": [],
@@ -5095,11 +5396,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-14-위의-겉모습.md",
    "snippet": "구조물 용어 (4개) 들문부분 (cardial part) 위바닥 (fundus of stomach) 날문부분 (pyloric part) 위몸통 (body of stomach) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 위의 겉모습 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 들문부분 (cardial part) 위바닥 (fundus of stomach) 날문부분 (pyloric part) 위몸통 (body of stomach) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위의 겉모습 배 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 들문부분 (cardial part) 위바닥 (fundus of stomach) 날문부분 (pyloric part) 위몸통 (body of stomach) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래팔뒤칸의-얕은층-근육",
    "type": "anatomy",
+   "unit": "10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 얕은층 근육",
    "tags": [],
@@ -5108,11 +5410,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-04-아래팔뒤칸의-얕은층-근육.md",
    "snippet": "구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris ",
-   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 11차시(0922) 허미선pf.pdf 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10·11·14·15회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래팔뒤칸의-깊은층-노출",
    "type": "anatomy",
+   "unit": "11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 깊은층 노출",
    "tags": [],
@@ -5121,11 +5424,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-06-아래팔뒤칸의-깊은층-노출.md",
    "snippet": "구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래팔뒤칸의-깊은층-근육",
    "type": "anatomy",
+   "unit": "팔",
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 깊은층 근육",
    "tags": [],
@@ -5134,11 +5438,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-08-아래팔뒤칸의-깊은층-근육.md",
    "snippet": "구조물 용어 (4개) 폄근지지띠 (extensor retinaculum) 긴엄지폄근 (extensor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴엄지벌림근 (abductor pollicis longus muscle) 분류: region=upper limb (conf 0.88) · layers=['deep'] · classes=['muscle'] 원문 전",
-   "text": "Anatomy 아래팔뒤칸의 깊은층 근육 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 폄근지지띠 (extensor retinaculum) 긴엄지폄근 (extensor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴엄지벌림근 (abductor pollicis longus muscle) 분류: region=upper limb (conf 0.88) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 깊은층 근육 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 폄근지지띠 (extensor retinaculum) 긴엄지폄근 (extensor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴엄지벌림근 (abductor pollicis longus muscle) 분류: region=upper limb (conf 0.88) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래창자간막동맥-inferior-mesenteric-a",
    "type": "anatomy",
+   "unit": "13·14회차 · 배",
    "topic": "Anatomy",
    "subtopic": "아래창자간막동맥 (inferior mesenteric artery)",
    "tags": [],
@@ -5147,11 +5452,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-25-아래창자간막동맥-inferior-mesent.md",
    "snippet": "구조물 용어 (3개) 왼잘록창자동맥 (left colic artery) 구불잘록창자가지 (sigmoid branch) 아래창자간막정맥 (inferior mesenteric vein) 분류: region=abdomen (conf 0.91) · layers=['cavity visceral'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래창자간막동맥 (inferior mesenteric artery) 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 왼잘록창자동맥 (left colic artery) 구불잘록창자가지 (sigmoid branch) 아래창자간막정맥 (inferior mesenteric vein) 분류: region=abdomen (conf 0.91) · layers=['cavity visceral'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래창자간막동맥 (inferior mesenteric artery) 13·14회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 왼잘록창자동맥 (left colic artery) 구불잘록창자가지 (sigmoid branch) 아래창자간막정맥 (inferior mesenteric vein) 분류: region=abdomen (conf 0.91) · layers=['cavity visceral'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-손등표면",
    "type": "anatomy",
+   "unit": "팔",
    "topic": "Anatomy",
    "subtopic": "손등표면",
    "tags": [],
@@ -5160,11 +5466,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-10-손등표면.md",
    "snippet": "구조물 용어 (6개) 손등정맥그물 (dorsal venous network of hand) 자신경 (ulnar nerve) 노신경 (radial nerve) 이를 연결하는 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활 (deep palmar arch) 분류: region=upper limb (conf 0.7) ·",
-   "text": "Anatomy 손등표면 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 손등정맥그물 (dorsal venous network of hand) 자신경 (ulnar nerve) 노신경 (radial nerve) 이를 연결하는 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활 (deep palmar arch) 분류: region=upper limb (conf 0.7) · layers=['cavity visceral', 'deep', 'skin'] · classes=['artery', 'muscle', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손등표면 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 손등정맥그물 (dorsal venous network of hand) 자신경 (ulnar nerve) 노신경 (radial nerve) 이를 연결하는 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활 (deep palmar arch) 분류: region=upper limb (conf 0.7) · layers=['cavity visceral', 'deep', 'skin'] · classes=['artery', 'muscle', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-손뒤침근-supinator-muscle-",
    "type": "anatomy",
+   "unit": "10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "손뒤침근 (supinator muscle)",
    "tags": [],
@@ -5173,11 +5480,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-09-손뒤침근-supinator-muscle.md",
    "snippet": "구조물 용어 (3개) 노신경깊은가지 (deep branch of radial nerve) 자뼈 뒤침근능선 (supinator crest) 뒤뼈사이신경 (posterior interossoeus nerve) 분류: region=upper limb (conf 1.0) · layers=['deep', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .priva",
-   "text": "Anatomy 손뒤침근 (supinator muscle) 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 노신경깊은가지 (deep branch of radial nerve) 자뼈 뒤침근능선 (supinator crest) 뒤뼈사이신경 (posterior interossoeus nerve) 분류: region=upper limb (conf 1.0) · layers=['deep', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손뒤침근 (supinator muscle) 10·11·14·15회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 노신경깊은가지 (deep branch of radial nerve) 자뼈 뒤침근능선 (supinator crest) 뒤뼈사이신경 (posterior interossoeus nerve) 분류: region=upper limb (conf 1.0) · layers=['deep', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-손가락폄근의-힘줄",
    "type": "anatomy",
+   "unit": "9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "손가락폄근의 힘줄",
    "tags": [],
@@ -5186,11 +5494,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-05-손가락폄근의-힘줄.md",
    "snippet": "구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손가락폄근의 힘줄 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손가락폄근의 힘줄 9회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-샘창자-duodenum-",
    "type": "anatomy",
+   "unit": "1·11회차 · 배",
    "topic": "Anatomy",
    "subtopic": "샘창자 (duodenum)",
    "tags": [],
@@ -5199,11 +5508,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-22-샘창자-duodenum.md",
    "snippet": "구조물 용어 (2개) 빈창자와 만나는 샘빈창자굽이 (duodenojejunal flexure) 빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근 (suspensory muscle of duodenum) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/a",
-   "text": "Anatomy 샘창자 (duodenum) 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 빈창자와 만나는 샘빈창자굽이 (duodenojejunal flexure) 빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근 (suspensory muscle of duodenum) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 샘창자 (duodenum) 1·11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 빈창자와 만나는 샘빈창자굽이 (duodenojejunal flexure) 빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근 (suspensory muscle of duodenum) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-복막구조물",
    "type": "anatomy",
+   "unit": "11·13회차 · 배",
    "topic": "Anatomy",
    "subtopic": "복막구조물",
    "tags": [],
@@ -5212,11 +5522,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-11-복막구조물.md",
    "snippet": "구조물 용어 (21개) 복막인대 (peritoneal ligament) 창자간막 (mesentery) 인대와 창자간막은 벽복막 (parietal peritoneum) 과 내장복막 (visceral peritoneum) 복막뒤기관 (retroperitoneal organ) 복막속기관 (intraperitoneal organ) 큰그물막 (greater omentum) 낫인대 (falciform ligament) 그 안에 간원인 대",
-   "text": "Anatomy 복막구조물 11차시(0922) 허미선pf.pdf 구조물 용어 (21개) 복막인대 (peritoneal ligament) 창자간막 (mesentery) 인대와 창자간막은 벽복막 (parietal peritoneum) 과 내장복막 (visceral peritoneum) 복막뒤기관 (retroperitoneal organ) 복막속기관 (intraperitoneal organ) 큰그물막 (greater omentum) 낫인대 (falciform ligament) 그 안에 간원인 대 (round ligament of liver) 작은그물막 (lesser omentum) 간 아랫면에서 위작은굽이까지 잇는 간위인대 (hepatogastric ligament) 와 간아 랫면에서 샘창자 (duodenum) 위부분 사이 잇는 간샘창자인대 (hepatoduodenal ligament) 위가로막인대 (gastrophrenic ligament) 위지라인대 (gastrosplenic ligament) 창자간막 (mesentery) 막창자간막 (mesocecum) 막창자 (cecum) 막창자꼬리간막 (mesoappendix) 가로잘록창자간막 (transverse mesocolon) 구불잘록창자간막 (sigmoid mesocolon) 분류: region=abdomen (conf 0.98) · layers=['cavity visceral'] · classes=['duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 복막구조물 11·13회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (21개) 복막인대 (peritoneal ligament) 창자간막 (mesentery) 인대와 창자간막은 벽복막 (parietal peritoneum) 과 내장복막 (visceral peritoneum) 복막뒤기관 (retroperitoneal organ) 복막속기관 (intraperitoneal organ) 큰그물막 (greater omentum) 낫인대 (falciform ligament) 그 안에 간원인 대 (round ligament of liver) 작은그물막 (lesser omentum) 간 아랫면에서 위작은굽이까지 잇는 간위인대 (hepatogastric ligament) 와 간아 랫면에서 샘창자 (duodenum) 위부분 사이 잇는 간샘창자인대 (hepatoduodenal ligament) 위가로막인대 (gastrophrenic ligament) 위지라인대 (gastrosplenic ligament) 창자간막 (mesentery) 막창자간막 (mesocecum) 막창자 (cecum) 막창자꼬리간막 (mesoappendix) 가로잘록창자간막 (transverse mesocolon) 구불잘록창자간막 (sigmoid mesocolon) 분류: region=abdomen (conf 0.98) · layers=['cavity visceral'] · classes=['duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-배",
    "type": "anatomy",
+   "unit": "11회차 · 배",
    "topic": "Anatomy",
    "subtopic": "배",
    "tags": [],
@@ -5225,11 +5536,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-01-배.md",
    "snippet": "구조물 용어 (0개) 분류: region=abdomen (conf 0.92) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 배 11차시(0922) 허미선pf.pdf 구조물 용어 (0개) 분류: region=abdomen (conf 0.92) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배 11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (0개) 분류: region=abdomen (conf 0.92) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-노신경",
    "type": "anatomy",
+   "unit": "10·11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "노신경",
    "tags": [],
@@ -5238,11 +5550,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-03-노신경.md",
    "snippet": "구조물 용어 (2개) 깊은위팔동맥 (deep brachial artery) 과 함꼐 위팔뼈 노신경고랑 (groove for radial nerve) 분류: region=upper limb (conf 0.97) · layers=['cavity visceral', 'deep'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 노신경 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 깊은위팔동맥 (deep brachial artery) 과 함꼐 위팔뼈 노신경고랑 (groove for radial nerve) 분류: region=upper limb (conf 0.97) · layers=['cavity visceral', 'deep'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 노신경 10·11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 깊은위팔동맥 (deep brachial artery) 과 함꼐 위팔뼈 노신경고랑 (groove for radial nerve) 분류: region=upper limb (conf 0.97) · layers=['cavity visceral', 'deep'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-그물막주머니-omental-bursa-",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "그물막주머니 (omental bursa)",
    "tags": [],
@@ -5251,11 +5564,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-12-그물막주머니-omental-bursa.md",
    "snippet": "구조물 용어 (2개) 그물막구멍 (omental foramen) 작은그물막 또는 그 부분인 간샘창자인대 (hepatoduodenal ligament) 분류: region=abdomen (conf 0.71) · layers=['cavity visceral'] · classes=['foramen', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 그물막주머니 (omental bursa) 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 그물막구멍 (omental foramen) 작은그물막 또는 그 부분인 간샘창자인대 (hepatoduodenal ligament) 분류: region=abdomen (conf 0.71) · layers=['cavity visceral'] · classes=['foramen', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 그물막주머니 (omental bursa) 배 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 그물막구멍 (omental foramen) 작은그물막 또는 그 부분인 간샘창자인대 (hepatoduodenal ligament) 분류: region=abdomen (conf 0.71) · layers=['cavity visceral'] · classes=['foramen', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-간의-적출",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "간의 적출",
    "tags": [],
@@ -5264,11 +5578,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-17-간의-적출.md",
    "snippet": "구조물 용어 (5개) 간문 (porta hepatis) 고유간동맥 (proper hepatic artery) 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 낫인대 (falciform ligament) 분류: region=abdomen (conf 0.89) · layers= · classes=['artery', 'duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않",
-   "text": "Anatomy 간의 적출 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 간문 (porta hepatis) 고유간동맥 (proper hepatic artery) 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 낫인대 (falciform ligament) 분류: region=abdomen (conf 0.89) · layers= · classes=['artery', 'duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 간의 적출 배 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 간문 (porta hepatis) 고유간동맥 (proper hepatic artery) 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 낫인대 (falciform ligament) 분류: region=abdomen (conf 0.89) · layers= · classes=['artery', 'duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-간의-속구조",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "간의 속구조",
    "tags": [],
@@ -5277,11 +5592,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-19-간의-속구조.md",
    "snippet": "구조물 용어 (4개) 간문 (porta hepatis) 맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 온간관 (common hepatic duct) 분류: region=abdomen (conf 0.92) · layers=['deep'] · classes=['artery', 'duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권",
-   "text": "Anatomy 간의 속구조 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 간문 (porta hepatis) 맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 온간관 (common hepatic duct) 분류: region=abdomen (conf 0.92) · layers=['deep'] · classes=['artery', 'duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 간의 속구조 배 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 간문 (porta hepatis) 맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 온간관 (common hepatic duct) 분류: region=abdomen (conf 0.92) · layers=['deep'] · classes=['artery', 'duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-간의-겉모습",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "간의 겉모습",
    "tags": [],
@@ -5290,11 +5606,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-18-간의-겉모습.md",
    "snippet": "구조물 용어 (14개) 가로막면 (diaphragmatic surface) 무장막구역 (bare area) 그 주변은 관상인대 (coronary ligament) 와 세모인대 (triangular ligament) 내장면 (visceral surface) 네모엽 (quadrate lobe) 꼬리엽 (caudate lobe) 내장면 뒤쪽에서 정맥관인대 (ligamentum venosum) 간문 (porta hepatis) 간세동",
-   "text": "Anatomy 간의 겉모습 11차시(0922) 허미선pf.pdf 구조물 용어 (14개) 가로막면 (diaphragmatic surface) 무장막구역 (bare area) 그 주변은 관상인대 (coronary ligament) 와 세모인대 (triangular ligament) 내장면 (visceral surface) 네모엽 (quadrate lobe) 꼬리엽 (caudate lobe) 내장면 뒤쪽에서 정맥관인대 (ligamentum venosum) 간문 (porta hepatis) 간세동이 (portal triad) 이들 구조물이 간샘창자인대 (hepatoduodenal ligament) 쓸개동맥 (cystic artery) 쓸개 속면 싸는 막은 나선주름 (spiral fold) 쓸개주머니관 (cystic duct) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 간의 겉모습 배 11차시(0922) 허미선pf.pdf 구조물 용어 (14개) 가로막면 (diaphragmatic surface) 무장막구역 (bare area) 그 주변은 관상인대 (coronary ligament) 와 세모인대 (triangular ligament) 내장면 (visceral surface) 네모엽 (quadrate lobe) 꼬리엽 (caudate lobe) 내장면 뒤쪽에서 정맥관인대 (ligamentum venosum) 간문 (porta hepatis) 간세동이 (portal triad) 이들 구조물이 간샘창자인대 (hepatoduodenal ligament) 쓸개동맥 (cystic artery) 쓸개 속면 싸는 막은 나선주름 (spiral fold) 쓸개주머니관 (cystic duct) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-피부벗기기",
    "type": "anatomy",
+   "unit": "9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "피부벗기기",
    "tags": [],
@@ -5303,11 +5620,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-15-피부벗기기.md",
    "snippet": "구조물 용어 (4개) 락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근 (flexor digitorum profundus muscle) 부에서 각각의 손가락끝으로 가는 선 손바닥에서 엄지두덩 (thenar eminence) 와 새끼두덩 (hypothenar eminence) 짧은손바닥근 (palmaris brevis muscle) 분류: region=upper limb (conf 0.82) · layers=['deep'",
-   "text": "Anatomy 피부벗기기 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근 (flexor digitorum profundus muscle) 부에서 각각의 손가락끝으로 가는 선 손바닥에서 엄지두덩 (thenar eminence) 와 새끼두덩 (hypothenar eminence) 짧은손바닥근 (palmaris brevis muscle) 분류: region=upper limb (conf 0.82) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 피부벗기기 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근 (flexor digitorum profundus muscle) 부에서 각각의 손가락끝으로 가는 선 손바닥에서 엄지두덩 (thenar eminence) 와 새끼두덩 (hypothenar eminence) 짧은손바닥근 (palmaris brevis muscle) 분류: region=upper limb (conf 0.82) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-폄근지지띠-섬유칸",
    "type": "anatomy",
+   "unit": "11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "폄근지지띠 섬유칸",
    "tags": [],
@@ -5316,11 +5634,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-14-폄근지지띠-섬유칸.md",
    "snippet": "구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (e",
-   "text": "Anatomy 폄근지지띠 섬유칸 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 폄근지지띠 섬유칸 11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-팔오금-구조물",
    "type": "anatomy",
+   "unit": "9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "팔오금 구조물",
    "tags": [],
@@ -5329,11 +5648,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-04-팔오금-구조물.md",
    "snippet": "구조물 용어 (0개) 분류: region=upper limb (conf 1.0) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 팔오금 구조물 10차시(0918) 허미선pf.pdf 구조물 용어 (0개) 분류: region=upper limb (conf 1.0) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 팔오금 구조물 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (0개) 분류: region=upper limb (conf 1.0) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-정중신경-median-erve-",
    "type": "anatomy",
+   "unit": "2·10·11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "정중신경 (median erve)",
    "tags": [],
@@ -5342,11 +5662,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-07-정중신경-median-erve.md",
    "snippet": "구조물 용어 (1개) 앞뼈사이신경 (anterior interosseous nerve) 분류: region=upper limb (conf 0.91) · layers=['deep', 'skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 정중신경 (median erve) 10차시(0918) 허미선pf.pdf 구조물 용어 (1개) 앞뼈사이신경 (anterior interosseous nerve) 분류: region=upper limb (conf 0.91) · layers=['deep', 'skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 정중신경 (median erve) 2·10·11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (1개) 앞뼈사이신경 (anterior interosseous nerve) 분류: region=upper limb (conf 0.91) · layers=['deep', 'skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-정삭-spermatic-cord-",
    "type": "anatomy",
+   "unit": "9·10회차 · 배",
    "topic": "Anatomy",
    "subtopic": "정삭 (spermatic cord)",
    "tags": [],
@@ -5355,11 +5676,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-31-정삭-spermatic-cord.md",
    "snippet": "구조물 용어 (8개) 음낭근육층 (dartos muscle layer) 인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음 정관 (ductus deferens) 바깥정삭근막 (external spermatic fascia) 고환올림근 (cremaster muscle) 고환올림근막 (cremasteric fascia) 속정삭근막 (internal spermatic fascia) 정관 (ductus deferens) 덩굴정맥얼기 (",
-   "text": "Anatomy 정삭 (spermatic cord) 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 음낭근육층 (dartos muscle layer) 인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음 정관 (ductus deferens) 바깥정삭근막 (external spermatic fascia) 고환올림근 (cremaster muscle) 고환올림근막 (cremasteric fascia) 속정삭근막 (internal spermatic fascia) 정관 (ductus deferens) 덩굴정맥얼기 (pampiniform plexus) 분류: region=abdomen (conf 0.44) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['duct', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 정삭 (spermatic cord) 9·10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 음낭근육층 (dartos muscle layer) 인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음 정관 (ductus deferens) 바깥정삭근막 (external spermatic fascia) 고환올림근 (cremaster muscle) 고환올림근막 (cremasteric fascia) 속정삭근막 (internal spermatic fascia) 정관 (ductus deferens) 덩굴정맥얼기 (pampiniform plexus) 분류: region=abdomen (conf 0.44) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['duct', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-자신경-ulnar-nerve-",
    "type": "anatomy",
+   "unit": "10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "자신경 (ulnar nerve)",
    "tags": [],
@@ -5368,11 +5690,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-09-자신경-ulnar-nerve.md",
    "snippet": "구조물 용어 (0개) 분류: region=upper limb (conf 0.81) · layers=['deep', 'skin', 'superficial'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 자신경 (ulnar nerve) 10차시(0918) 허미선pf.pdf 구조물 용어 (0개) 분류: region=upper limb (conf 0.81) · layers=['deep', 'skin', 'superficial'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 자신경 (ulnar nerve) 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (0개) 분류: region=upper limb (conf 0.81) · layers=['deep', 'skin', 'superficial'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-자동맥-ulnar-artery-",
    "type": "anatomy",
+   "unit": "10·11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "자동맥 (ulnar artery)",
    "tags": [],
@@ -5381,11 +5704,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-08-자동맥-ulnar-artery.md",
    "snippet": "구조물 용어 (4개) 자쪽되돌이동맥 (ulnar recurrent artery) 위에 서 내려오는 자쪽곁동맥 (ulnar collateral artery) 온뼈사이동맥 (common interosseous artery) 아래팔 먼쪽 절반에서 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 분류: region=upper limb (conf 0.83) · layers=['deep', 'superficial'] ",
-   "text": "Anatomy 자동맥 (ulnar artery) 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 자쪽되돌이동맥 (ulnar recurrent artery) 위에 서 내려오는 자쪽곁동맥 (ulnar collateral artery) 온뼈사이동맥 (common interosseous artery) 아래팔 먼쪽 절반에서 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 분류: region=upper limb (conf 0.83) · layers=['deep', 'superficial'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 자동맥 (ulnar artery) 10·11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 자쪽되돌이동맥 (ulnar recurrent artery) 위에 서 내려오는 자쪽곁동맥 (ulnar collateral artery) 온뼈사이동맥 (common interosseous artery) 아래팔 먼쪽 절반에서 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 분류: region=upper limb (conf 0.83) · layers=['deep', 'superficial'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔앞칸의-신경",
    "type": "anatomy",
+   "unit": "7·9·10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "위팔앞칸의 신경",
    "tags": [],
@@ -5394,11 +5718,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-02-위팔앞칸의-신경.md",
    "snippet": "구조물 용어 (3개) 정중신경 (median nerve) 팔오금까지 추적 위팔동맥 (brachial artery) 자신경 (ulnar nerve) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(",
-   "text": "Anatomy 위팔앞칸의 신경 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 정중신경 (median nerve) 팔오금까지 추적 위팔동맥 (brachial artery) 자신경 (ulnar nerve) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔앞칸의 신경 7·9·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 정중신경 (median nerve) 팔오금까지 추적 위팔동맥 (brachial artery) 자신경 (ulnar nerve) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔앞칸의-근육",
    "type": "anatomy",
+   "unit": "7·9·10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "위팔앞칸의 근육",
    "tags": [],
@@ -5407,11 +5732,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-01-위팔앞칸의-근육.md",
    "snippet": "구조물 용어 (5개) 팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면 (radial tuberosity) 결절사이고랑 (intertubercular groove) 지나 위로올라가 접시위결절 (supraglenoid tubercle) 위팔두갈래근널힘줄 (bicipital aponeurosis) 부리위팔근 (coracobrachialis muscle) 분류: region=upper limb (conf 0.92) · layers=['de",
-   "text": "Anatomy 위팔앞칸의 근육 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면 (radial tuberosity) 결절사이고랑 (intertubercular groove) 지나 위로올라가 접시위결절 (supraglenoid tubercle) 위팔두갈래근널힘줄 (bicipital aponeurosis) 부리위팔근 (coracobrachialis muscle) 분류: region=upper limb (conf 0.92) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔앞칸의 근육 7·9·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면 (radial tuberosity) 결절사이고랑 (intertubercular groove) 지나 위로올라가 접시위결절 (supraglenoid tubercle) 위팔두갈래근널힘줄 (bicipital aponeurosis) 부리위팔근 (coracobrachialis muscle) 분류: region=upper limb (conf 0.92) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔동맥-노동맥",
    "type": "anatomy",
+   "unit": "10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "위팔동맥, 노동맥",
    "tags": [],
@@ -5420,11 +5746,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-06-위팔동맥-노동맥.md",
    "snippet": "구조물 용어 (8개) 위팔동맥 (brachial artery) 팔오금에서 가쪽 노동맥 (radial artery) 와 안쪽깊은곳의 자동맥 (ulnar artery) 노쪽되돌이동맥 (radial recurrent artery) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 ",
-   "text": "Anatomy 위팔동맥, 노동맥 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 위팔동맥 (brachial artery) 팔오금에서 가쪽 노동맥 (radial artery) 와 안쪽깊은곳의 자동맥 (ulnar artery) 노쪽되돌이동맥 (radial recurrent artery) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 위팔자갈래 (humeroulnar head) 노뼈몸통앞선의 빗선에서 일어나는 노갈래 (radial head) 분류: region=upper limb (conf 0.77) · layers=['deep', 'superficial'] · classes=['artery', 'bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔동맥, 노동맥 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 위팔동맥 (brachial artery) 팔오금에서 가쪽 노동맥 (radial artery) 와 안쪽깊은곳의 자동맥 (ulnar artery) 노쪽되돌이동맥 (radial recurrent artery) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 위팔자갈래 (humeroulnar head) 노뼈몸통앞선의 빗선에서 일어나는 노갈래 (radial head) 분류: region=upper limb (conf 0.77) · layers=['deep', 'superficial'] · classes=['artery', 'bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔동맥",
    "type": "anatomy",
+   "unit": "9·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "위팔동맥",
    "tags": [],
@@ -5433,11 +5760,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-03-위팔동맥.md",
    "snippet": "구조물 용어 (5개) 안쪽두갈래근고랑 (medial bicipital groove) 동반정맥 (vena comitans) 깊은위팔동맥 (deep brachial artery) 자쪽곁동맥 (ulnar collateral artery) 위팔두갈래근널힘줄 (bicipital aponeurosis) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['artery', 'mu",
-   "text": "Anatomy 위팔동맥 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 안쪽두갈래근고랑 (medial bicipital groove) 동반정맥 (vena comitans) 깊은위팔동맥 (deep brachial artery) 자쪽곁동맥 (ulnar collateral artery) 위팔두갈래근널힘줄 (bicipital aponeurosis) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['artery', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔동맥 9·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 안쪽두갈래근고랑 (medial bicipital groove) 동반정맥 (vena comitans) 깊은위팔동맥 (deep brachial artery) 자쪽곁동맥 (ulnar collateral artery) 위팔두갈래근널힘줄 (bicipital aponeurosis) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['artery', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-엄지두덩근육-thenar-muscle-",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "엄지두덩근육 (thenar muscle)",
    "tags": [],
@@ -5446,11 +5774,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-19-엄지두덩근육-thenar-muscle.md",
    "snippet": "구조물 용어 (3개) 짧은엄지벌림근 (abductor pollicis brevis muscle) 짧은엄지굽힘근 (flexor pollicis brevis muscle) 엄지맞섬근 (opponens pollicis muscle) 분류: region=abdomen (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 엄지두덩근육 (thenar muscle) 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 짧은엄지벌림근 (abductor pollicis brevis muscle) 짧은엄지굽힘근 (flexor pollicis brevis muscle) 엄지맞섬근 (opponens pollicis muscle) 분류: region=abdomen (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엄지두덩근육 (thenar muscle) 배 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 짧은엄지벌림근 (abductor pollicis brevis muscle) 짧은엄지굽힘근 (flexor pollicis brevis muscle) 엄지맞섬근 (opponens pollicis muscle) 분류: region=abdomen (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-얕은근막",
    "type": "anatomy",
+   "unit": "1·2·6·9·10회차 · 배",
    "topic": "Anatomy",
    "subtopic": "얕은근막",
    "tags": [],
@@ -5459,11 +5788,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-24-얕은근막.md",
    "snippet": "구조물 용어 (19개) 얕은배벽정맥 (superficial epigastric vein) 얕은엉덩휘돌이정맥 (superifcial circumflex iliac vein) 배꼽옆정맥 (paraumbilical vein) 가슴배벽정맥 (thoracoepigastric vein) 가슴배신경 (thoracoabdominal nerve) 일곱째에서 열한째갈비신경과 갈비밑신경 (subcostal nerve) 정도 되는 곳에서 위에서 아",
-   "text": "Anatomy 얕은근막 10차시(0918) 허미선pf.pdf 구조물 용어 (19개) 얕은배벽정맥 (superficial epigastric vein) 얕은엉덩휘돌이정맥 (superifcial circumflex iliac vein) 배꼽옆정맥 (paraumbilical vein) 가슴배벽정맥 (thoracoepigastric vein) 가슴배신경 (thoracoabdominal nerve) 일곱째에서 열한째갈비신경과 갈비밑신경 (subcostal nerve) 정도 되는 곳에서 위에서 아래로 연속적으로 배곧은근집 (rectus sheath) 뚫고나옴 가쪽배피부가지는 중간겨드랑선 (midaxillary line) 근처에서 얕은근막으로 나옴 앞배벽아랫부분에서 얕은근막 (superficial investing fascia) 남자에서 두덩뼈결절 안쪽에서 아래쪽으로 음낭근육층 (dartos tunic) 표면 덮고 계속되며 음경에서는 음경고리인대 (fundiform ligament of penis) 와 얕은음경근막 (superficial fascia of penis) 얕은근막 자르고 아래가쪽 고샅인대방향 젖히면 배바깥빗근 (external abdominal oblique muscle) 과 배곧은근집 (rectus sheath) 드러남 젖히고보면 얕은고샅구멍 (superficial inguinal ring) 정삭 (spermatic cord) 자궁원인대 (round ligament of uterus) 에는 근막 덮여있지 않음 배벽아래부분에서 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 분류: region=abdomen (conf 0.59) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['foramen', 'ligament', 'muscle', 'nerve', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 얕은근막 1·2·6·9·10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (19개) 얕은배벽정맥 (superficial epigastric vein) 얕은엉덩휘돌이정맥 (superifcial circumflex iliac vein) 배꼽옆정맥 (paraumbilical vein) 가슴배벽정맥 (thoracoepigastric vein) 가슴배신경 (thoracoabdominal nerve) 일곱째에서 열한째갈비신경과 갈비밑신경 (subcostal nerve) 정도 되는 곳에서 위에서 아래로 연속적으로 배곧은근집 (rectus sheath) 뚫고나옴 가쪽배피부가지는 중간겨드랑선 (midaxillary line) 근처에서 얕은근막으로 나옴 앞배벽아랫부분에서 얕은근막 (superficial investing fascia) 남자에서 두덩뼈결절 안쪽에서 아래쪽으로 음낭근육층 (dartos tunic) 표면 덮고 계속되며 음경에서는 음경고리인대 (fundiform ligament of penis) 와 얕은음경근막 (superficial fascia of penis) 얕은근막 자르고 아래가쪽 고샅인대방향 젖히면 배바깥빗근 (external abdominal oblique muscle) 과 배곧은근집 (rectus sheath) 드러남 젖히고보면 얕은고샅구멍 (superficial inguinal ring) 정삭 (spermatic cord) 자궁원인대 (round ligament of uterus) 에는 근막 덮여있지 않음 배벽아래부분에서 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 분류: region=abdomen (conf 0.59) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['foramen', 'ligament', 'muscle', 'nerve', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-앞배벽속면-구조물",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "앞배벽속면 구조물",
    "tags": [],
@@ -5472,11 +5802,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-29-앞배벽속면-구조물.md",
    "snippet": "구조물 용어 (9개) 정중배꼽주름 (median umbilical fold) 두덩결합에서 배꼽까지 정중선에 있는 복막주름 (peritoneal fold) 안쪽배꼽주름 (medial umbilical fold) 가쪽배꼽주름 (lateral umbilical fold) 방광위오목 (supravesical fossa) 안쪽고샅오목 (medial inguinal fossa) 가쪽고샅오목 (lateral inguinal fossa) 깊",
-   "text": "Anatomy 앞배벽속면 구조물 10차시(0918) 허미선pf.pdf 구조물 용어 (9개) 정중배꼽주름 (median umbilical fold) 두덩결합에서 배꼽까지 정중선에 있는 복막주름 (peritoneal fold) 안쪽배꼽주름 (medial umbilical fold) 가쪽배꼽주름 (lateral umbilical fold) 방광위오목 (supravesical fossa) 안쪽고샅오목 (medial inguinal fossa) 가쪽고샅오목 (lateral inguinal fossa) 깊은고샅구멍 (deep inguinal ring) 되도록 복막과 복막바깥근막 (extraperitoneal fascia) 분류: region=abdomen (conf 0.84) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 앞배벽속면 구조물 배 10차시(0918) 허미선pf.pdf 구조물 용어 (9개) 정중배꼽주름 (median umbilical fold) 두덩결합에서 배꼽까지 정중선에 있는 복막주름 (peritoneal fold) 안쪽배꼽주름 (medial umbilical fold) 가쪽배꼽주름 (lateral umbilical fold) 방광위오목 (supravesical fossa) 안쪽고샅오목 (medial inguinal fossa) 가쪽고샅오목 (lateral inguinal fossa) 깊은고샅구멍 (deep inguinal ring) 되도록 복막과 복막바깥근막 (extraperitoneal fascia) 분류: region=abdomen (conf 0.84) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔앞칸의-깊은층-근육",
    "type": "anatomy",
+   "unit": "6·7회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "아래팔앞칸의 깊은층 근육",
    "tags": [],
@@ -5485,11 +5816,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-10-아래팔앞칸의-깊은층-근육.md",
    "snippet": "구조물 용어 (4개) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 긴엄지굽힘근 (flexor pollicis longus muscle) 깊은손가락굽힘근 (flexor digitorum profundus muscle) 네모엎침근 (pronator quadratus muscle) 분류: region=upper limb (conf 0.87) · layers=['deep', 'superfic",
-   "text": "Anatomy 아래팔앞칸의 깊은층 근육 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 긴엄지굽힘근 (flexor pollicis longus muscle) 깊은손가락굽힘근 (flexor digitorum profundus muscle) 네모엎침근 (pronator quadratus muscle) 분류: region=upper limb (conf 0.87) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔앞칸의 깊은층 근육 6·7회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 긴엄지굽힘근 (flexor pollicis longus muscle) 깊은손가락굽힘근 (flexor digitorum profundus muscle) 네모엎침근 (pronator quadratus muscle) 분류: region=upper limb (conf 0.87) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔뒤칸의-얕은층-근육",
    "type": "anatomy",
+   "unit": "10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 얕은층 근육",
    "tags": [],
@@ -5498,11 +5830,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-11-아래팔뒤칸의-얕은층-근육.md",
    "snippet": "구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris ",
-   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔뒤칸의-깊은층-노출",
    "type": "anatomy",
+   "unit": "11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 깊은층 노출",
    "tags": [],
@@ -5511,11 +5844,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-13-아래팔뒤칸의-깊은층-노출.md",
    "snippet": "구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 10차시(0918) 허미선pf.pdf 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔-앞칸의-얕은층-근육",
    "type": "anatomy",
+   "unit": "2·10·11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "아래팔 앞칸의 얕은층 근육",
    "tags": [],
@@ -5524,11 +5858,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-05-아래팔-앞칸의-얕은층-근육.md",
    "snippet": "구조물 용어 (6개) 원엎침근 (pronator teres muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 긴손바닥근 (palmaris longus muscle) 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 에 붙어있는 널힘줄에서 일 어나 콩알뼈 (pisiform) 갈고리뼈 (hamate) 분류: region=upper limb (conf 0.79) · layers=[",
-   "text": "Anatomy 아래팔 앞칸의 얕은층 근육 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 원엎침근 (pronator teres muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 긴손바닥근 (palmaris longus muscle) 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 에 붙어있는 널힘줄에서 일 어나 콩알뼈 (pisiform) 갈고리뼈 (hamate) 분류: region=upper limb (conf 0.79) · layers=['superficial'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔 앞칸의 얕은층 근육 2·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 원엎침근 (pronator teres muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 긴손바닥근 (palmaris longus muscle) 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 에 붙어있는 널힘줄에서 일 어나 콩알뼈 (pisiform) 갈고리뼈 (hamate) 분류: region=upper limb (conf 0.79) · layers=['superficial'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손바닥널힘줄-palmar-aponeurosis-",
    "type": "anatomy",
+   "unit": "10회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "손바닥널힘줄 (palmar aponeurosis)",
    "tags": [],
@@ -5537,11 +5872,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-16-손바닥널힘줄-palmar-aponeurosi.md",
    "snippet": "구조물 용어 (3개) 엄지두덩근막 (thenar fascia) 짧은손바닥근 (palmaris brevis muscle) 바닥쪽손목인대 (palmar carpal ligament) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'superficial'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .p",
-   "text": "Anatomy 손바닥널힘줄 (palmar aponeurosis) 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 엄지두덩근막 (thenar fascia) 짧은손바닥근 (palmaris brevis muscle) 바닥쪽손목인대 (palmar carpal ligament) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'superficial'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손바닥널힘줄 (palmar aponeurosis) 10회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 엄지두덩근막 (thenar fascia) 짧은손바닥근 (palmaris brevis muscle) 바닥쪽손목인대 (palmar carpal ligament) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'superficial'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손바닥깊은곳",
    "type": "anatomy",
+   "unit": "팔",
    "topic": "Anatomy",
    "subtopic": "손바닥깊은곳",
    "tags": [],
@@ -5550,11 +5886,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-22-손바닥깊은곳.md",
    "snippet": "구조물 용어 (4개) 깊은손바닥동맥활 (deep palmar arch) 바닥쪽뼈사이근 (palmar interossei muscle) 엄지모음근 (adductor pollicis muscle) 등쪽뼈사이근 (dorsal interossei muscle) 분류: region=upper limb (conf 0.76) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다",
-   "text": "Anatomy 손바닥깊은곳 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 깊은손바닥동맥활 (deep palmar arch) 바닥쪽뼈사이근 (palmar interossei muscle) 엄지모음근 (adductor pollicis muscle) 등쪽뼈사이근 (dorsal interossei muscle) 분류: region=upper limb (conf 0.76) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손바닥깊은곳 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 깊은손바닥동맥활 (deep palmar arch) 바닥쪽뼈사이근 (palmar interossei muscle) 엄지모음근 (adductor pollicis muscle) 등쪽뼈사이근 (dorsal interossei muscle) 분류: region=upper limb (conf 0.76) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손바닥-얕은곳의-혈관과-신경",
    "type": "anatomy",
+   "unit": "팔",
    "topic": "Anatomy",
    "subtopic": "손바닥 얕은곳의 혈관과 신경",
    "tags": [],
@@ -5563,11 +5900,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-17-손바닥-얕은곳의-혈관과-신경.md",
    "snippet": "구조물 용어 (6개) 바닥쪽손목인대 (palmar carpal ligament) 안쪽으로 주행하여 새끼두덩근육들 (hypothenar muscle) 얕은손바닥동맥활 (superficial palmar arch) 고유바닥쪽손가락동맥 (prper palmar digital artery) 온바닥쪽손가락동맥 (common palmar digital artery) 온바닥쪽손가락신경 (common palmar digital nerve) ",
-   "text": "Anatomy 손바닥 얕은곳의 혈관과 신경 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 바닥쪽손목인대 (palmar carpal ligament) 안쪽으로 주행하여 새끼두덩근육들 (hypothenar muscle) 얕은손바닥동맥활 (superficial palmar arch) 고유바닥쪽손가락동맥 (prper palmar digital artery) 온바닥쪽손가락동맥 (common palmar digital artery) 온바닥쪽손가락신경 (common palmar digital nerve) 분류: region=upper limb (conf 0.85) · layers=['deep', 'superficial'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손바닥 얕은곳의 혈관과 신경 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 바닥쪽손목인대 (palmar carpal ligament) 안쪽으로 주행하여 새끼두덩근육들 (hypothenar muscle) 얕은손바닥동맥활 (superficial palmar arch) 고유바닥쪽손가락동맥 (prper palmar digital artery) 온바닥쪽손가락동맥 (common palmar digital artery) 온바닥쪽손가락신경 (common palmar digital nerve) 분류: region=upper limb (conf 0.85) · layers=['deep', 'superficial'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손목굴-carpal-tunnel-",
    "type": "anatomy",
+   "unit": "팔",
    "topic": "Anatomy",
    "subtopic": "손목굴 (carpal tunnel)",
    "tags": [],
@@ -5576,11 +5914,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-18-손목굴-carpal-tunnel.md",
    "snippet": "구조물 용어 (8개) 손배뼈 (scaphoid) 큰마름뼈 (trapezium) 콩알뼈 (pisiform) 갈고리뼈갈고리 (hook of hamate) 정중신경 (median nerve) 자신경굴 (ulnar canal) 온바닥쪽손가락신경 (common palmarl digital nerve) 되돌이가지 (recurrent branch) 분류: region=upper limb (conf 0.73) · layers=['deep',",
-   "text": "Anatomy 손목굴 (carpal tunnel) 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 손배뼈 (scaphoid) 큰마름뼈 (trapezium) 콩알뼈 (pisiform) 갈고리뼈갈고리 (hook of hamate) 정중신경 (median nerve) 자신경굴 (ulnar canal) 온바닥쪽손가락신경 (common palmarl digital nerve) 되돌이가지 (recurrent branch) 분류: region=upper limb (conf 0.73) · layers=['deep', 'superficial'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손목굴 (carpal tunnel) 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 손배뼈 (scaphoid) 큰마름뼈 (trapezium) 콩알뼈 (pisiform) 갈고리뼈갈고리 (hook of hamate) 정중신경 (median nerve) 자신경굴 (ulnar canal) 온바닥쪽손가락신경 (common palmarl digital nerve) 되돌이가지 (recurrent branch) 분류: region=upper limb (conf 0.73) · layers=['deep', 'superficial'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손가락폄근의-힘줄",
    "type": "anatomy",
+   "unit": "9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "손가락폄근의 힘줄",
    "tags": [],
@@ -5589,11 +5928,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-12-손가락폄근의-힘줄.md",
    "snippet": "구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손가락폄근의 힘줄 10차시(0918) 허미선pf.pdf 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손가락폄근의 힘줄 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손가락굽힘근힘줄과-벌레근",
    "type": "anatomy",
+   "unit": "11·14·15회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "손가락굽힘근힘줄과 벌레근",
    "tags": [],
@@ -5602,11 +5942,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-21-손가락굽힘근힘줄과-벌레근.md",
    "snippet": "구조물 용어 (3개) 손가락굽힘근온힘줄집 (common flexor sheat) 벌레근 (lumbrical muscle) 힘줄끈 (vincula tendinum) 분류: region=upper limb (conf 0.86) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손가락굽힘근힘줄과 벌레근 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 손가락굽힘근온힘줄집 (common flexor sheat) 벌레근 (lumbrical muscle) 힘줄끈 (vincula tendinum) 분류: region=upper limb (conf 0.86) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손가락굽힘근힘줄과 벌레근 11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 손가락굽힘근온힘줄집 (common flexor sheat) 벌레근 (lumbrical muscle) 힘줄끈 (vincula tendinum) 분류: region=upper limb (conf 0.86) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-새끼두덩근육-자신경의-깊은가지-분포",
    "type": "anatomy",
+   "unit": "9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "새끼두덩근육 : 자신경의 깊은가지 분포",
    "tags": [],
@@ -5615,11 +5956,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-20-새끼두덩근육-자신경의-깊은가지-분포.md",
    "snippet": "구조물 용어 (8개) 새끼벌림근 (abductor digiti minimi muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis msucle) 새끼맞섬근 (opponens digiti minimi muscle) 손가락섬유집 (fibrous sheaths of digits of hand) 고리부분 (anular part) 가로섬유 (transverse fiber) 십자부분 (cruciform part)",
-   "text": "Anatomy 새끼두덩근육 : 자신경의 깊은가지 분포 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 새끼벌림근 (abductor digiti minimi muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis msucle) 새끼맞섬근 (opponens digiti minimi muscle) 손가락섬유집 (fibrous sheaths of digits of hand) 고리부분 (anular part) 가로섬유 (transverse fiber) 십자부분 (cruciform part) 십자섬유 (cruciate fiber) 분류: region=upper limb (conf 0.86) · layers=['deep', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 새끼두덩근육 : 자신경의 깊은가지 분포 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 새끼벌림근 (abductor digiti minimi muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis msucle) 새끼맞섬근 (opponens digiti minimi muscle) 손가락섬유집 (fibrous sheaths of digits of hand) 고리부분 (anular part) 가로섬유 (transverse fiber) 십자부분 (cruciform part) 십자섬유 (cruciate fiber) 분류: region=upper limb (conf 0.86) · layers=['deep', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-사분역과-부위",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "사분역과 부위",
    "tags": [],
@@ -5628,11 +5970,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-23-사분역과-부위.md",
    "snippet": "구조물 용어 (12개) 양쪽 열째갈비연골 아랫면 연결하는 갈비밑면 (subcostal plane) 양쪽엉덩뼈결절 사이 연결하는 결절사이면 (intertubercular plane) 빗장뼈 중간 지나는 양쪽빗장중간선 (midclavicular line) 오른갈비밑부위 (right hypochondrium) 명치부위 (epigastric region) 왼갈비밑부위 (left hypochondrium) 오른옆구리부위 (right f",
-   "text": "Anatomy 사분역과 부위 10차시(0918) 허미선pf.pdf 구조물 용어 (12개) 양쪽 열째갈비연골 아랫면 연결하는 갈비밑면 (subcostal plane) 양쪽엉덩뼈결절 사이 연결하는 결절사이면 (intertubercular plane) 빗장뼈 중간 지나는 양쪽빗장중간선 (midclavicular line) 오른갈비밑부위 (right hypochondrium) 명치부위 (epigastric region) 왼갈비밑부위 (left hypochondrium) 오른옆구리부위 (right flank) 배꼽부위 (umbilical region) 왼옆구리부위 (left flank) 오른고샅부위 (right inguinal region) 두덩부위 (public region) 왼고샅부위 (left inguinal region) 분류: region=abdomen (conf 0.53) · layers= · classes=['bone'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 사분역과 부위 배 10차시(0918) 허미선pf.pdf 구조물 용어 (12개) 양쪽 열째갈비연골 아랫면 연결하는 갈비밑면 (subcostal plane) 양쪽엉덩뼈결절 사이 연결하는 결절사이면 (intertubercular plane) 빗장뼈 중간 지나는 양쪽빗장중간선 (midclavicular line) 오른갈비밑부위 (right hypochondrium) 명치부위 (epigastric region) 왼갈비밑부위 (left hypochondrium) 오른옆구리부위 (right flank) 배꼽부위 (umbilical region) 왼옆구리부위 (left flank) 오른고샅부위 (right inguinal region) 두덩부위 (public region) 왼고샅부위 (left inguinal region) 분류: region=abdomen (conf 0.53) · layers= · classes=['bone'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배속빗근-internal-abdominal-obliqu",
    "type": "anatomy",
+   "unit": "10회차 · 배",
    "topic": "Anatomy",
    "subtopic": "배속빗근 (internal abdominal oblique muscle)",
    "tags": [],
@@ -5641,11 +5984,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-27-배속빗근-internal-abdominal-.md",
    "snippet": "구조물 용어 (5개) 이 섬유들이 두덩뼈빗 (pecten pubis) 정삭 (spermatic cord) 고환올림근막 (cremasteric fascia) 고환올림근 (cremaster muscle) 엉덩고샅신경 (inguinal nerve) 분류: region=abdomen (conf 0.8) · layers= · classes=['bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .pr",
-   "text": "Anatomy 배속빗근 (internal abdominal oblique muscle) 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 이 섬유들이 두덩뼈빗 (pecten pubis) 정삭 (spermatic cord) 고환올림근막 (cremasteric fascia) 고환올림근 (cremaster muscle) 엉덩고샅신경 (inguinal nerve) 분류: region=abdomen (conf 0.8) · layers= · classes=['bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배속빗근 (internal abdominal oblique muscle) 10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 이 섬유들이 두덩뼈빗 (pecten pubis) 정삭 (spermatic cord) 고환올림근막 (cremasteric fascia) 고환올림근 (cremaster muscle) 엉덩고샅신경 (inguinal nerve) 분류: region=abdomen (conf 0.8) · layers= · classes=['bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배바깥빗근-고샅구멍",
    "type": "anatomy",
+   "unit": "1·10회차 · 배",
    "topic": "Anatomy",
    "subtopic": "배바깥빗근, 고샅구멍",
    "tags": [],
@@ -5654,11 +5998,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-26-배바깥빗근-고샅구멍.md",
    "snippet": "구조물 용어 (5개) 얕은고샅구멍 (superficial inguinal ring) 에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관 (inguinal canal) 가쪽다리 (lateral crus) 다리사이섬유 (intercrural fiber) 근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근 (external abdominal oblique muscle) 분류: region=abdomen (conf 0.59)",
-   "text": "Anatomy 배바깥빗근, 고샅구멍 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 얕은고샅구멍 (superficial inguinal ring) 에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관 (inguinal canal) 가쪽다리 (lateral crus) 다리사이섬유 (intercrural fiber) 근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근 (external abdominal oblique muscle) 분류: region=abdomen (conf 0.59) · layers=['superficial'] · classes=['foramen', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배바깥빗근, 고샅구멍 1·10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 얕은고샅구멍 (superficial inguinal ring) 에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관 (inguinal canal) 가쪽다리 (lateral crus) 다리사이섬유 (intercrural fiber) 근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근 (external abdominal oblique muscle) 분류: region=abdomen (conf 0.59) · layers=['superficial'] · classes=['foramen', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배곧은근-배곧은집",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "배곧은근, 배곧은집",
    "tags": [],
@@ -5667,11 +6012,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-25-배곧은근-배곧은집.md",
    "snippet": "구조물 용어 (11개) 백색선 (linea alba) 반달선 (linea semilunaris) 줄과 만나 서로 합쳐져 백색선 되는 것 확인 배곧은근집 (rectus sheath) 배곧은근 나눔힘줄 (tendinous intersection) 배세모근 (pyramidalis muscle) 가슴배신경 (thoracoabdominal nerve) 위배벽동맥 (superior epigastric artery) 아래배벽동맥 (infe",
-   "text": "Anatomy 배곧은근, 배곧은집 10차시(0918) 허미선pf.pdf 구조물 용어 (11개) 백색선 (linea alba) 반달선 (linea semilunaris) 줄과 만나 서로 합쳐져 백색선 되는 것 확인 배곧은근집 (rectus sheath) 배곧은근 나눔힘줄 (tendinous intersection) 배세모근 (pyramidalis muscle) 가슴배신경 (thoracoabdominal nerve) 위배벽동맥 (superior epigastric artery) 아래배벽동맥 (inferior epigastric artery) 바깥엉덩동맥 (external iliac artery) 활꼴선 (arcuate line) 고샅인대 (inguinal ligament) 분류: region=abdomen (conf 0.84) · layers=['deep'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배곧은근, 배곧은집 배 10차시(0918) 허미선pf.pdf 구조물 용어 (11개) 백색선 (linea alba) 반달선 (linea semilunaris) 줄과 만나 서로 합쳐져 백색선 되는 것 확인 배곧은근집 (rectus sheath) 배곧은근 나눔힘줄 (tendinous intersection) 배세모근 (pyramidalis muscle) 가슴배신경 (thoracoabdominal nerve) 위배벽동맥 (superior epigastric artery) 아래배벽동맥 (inferior epigastric artery) 바깥엉덩동맥 (external iliac artery) 활꼴선 (arcuate line) 고샅인대 (inguinal ligament) 분류: region=abdomen (conf 0.84) · layers=['deep'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배가로근-transversus-abdominis-mus",
    "type": "anatomy",
+   "unit": "배",
    "topic": "Anatomy",
    "subtopic": "배가로근 (transversus abdominis muscle)",
    "tags": [],
@@ -5680,11 +6026,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-28-배가로근-transversus-abdomin.md",
    "snippet": "구조물 용어 (9개) 좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경 (intercostal nerve) 가슴배신경 (thoracoabdominal nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 깊은엉덩휘돌이동맥 (deep circumflex iliac artery) 배속빗근 널힘줄과 합쳐져 고샅낫힘줄 (",
-   "text": "Anatomy 배가로근 (transversus abdominis muscle) 10차시(0918) 허미선pf.pdf 구조물 용어 (9개) 좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경 (intercostal nerve) 가슴배신경 (thoracoabdominal nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 깊은엉덩휘돌이동맥 (deep circumflex iliac artery) 배속빗근 널힘줄과 합쳐져 고샅낫힘줄 (inguinal falx) 결합힘줄 (conjoint tendon) 배가로근막 (transversalis fascia) 분류: region=abdomen (conf 0.82) · layers=['cavity visceral', 'deep', 'superficial'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배가로근 (transversus abdominis muscle) 배 10차시(0918) 허미선pf.pdf 구조물 용어 (9개) 좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경 (intercostal nerve) 가슴배신경 (thoracoabdominal nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 깊은엉덩휘돌이동맥 (deep circumflex iliac artery) 배속빗근 널힘줄과 합쳐져 고샅낫힘줄 (inguinal falx) 결합힘줄 (conjoint tendon) 배가로근막 (transversalis fascia) 분류: region=abdomen (conf 0.82) · layers=['cavity visceral', 'deep', 'superficial'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-고환-testis-",
    "type": "anatomy",
+   "unit": "골반·회음",
    "topic": "Anatomy",
    "subtopic": "고환 (testis)",
    "tags": [],
@@ -5693,11 +6040,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-32-고환-testis.md",
    "snippet": "구조물 용어 (7개) 음낭사이막 (septum of scrotum) 고환집막 (tunica vaginalis) 고환집막공간 (cavum of tunica vaginalis) 고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막 (fibrous capsule) 백색막 (tunica albuginea) 정세관 (seminiferous tubule) 고환날세관 (efferent ductule of testis) 분류: region=p",
-   "text": "Anatomy 고환 (testis) 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 음낭사이막 (septum of scrotum) 고환집막 (tunica vaginalis) 고환집막공간 (cavum of tunica vaginalis) 고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막 (fibrous capsule) 백색막 (tunica albuginea) 정세관 (seminiferous tubule) 고환날세관 (efferent ductule of testis) 분류: region=pelvis perineum (conf 0.36) · layers=['cavity visceral'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고환 (testis) 골반·회음 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 음낭사이막 (septum of scrotum) 고환집막 (tunica vaginalis) 고환집막공간 (cavum of tunica vaginalis) 고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막 (fibrous capsule) 백색막 (tunica albuginea) 정세관 (seminiferous tubule) 고환날세관 (efferent ductule of testis) 분류: region=pelvis perineum (conf 0.36) · layers=['cavity visceral'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-고샅관-inguinal-canal-",
    "type": "anatomy",
+   "unit": "10회차 · 배",
    "topic": "Anatomy",
    "subtopic": "고샅관 (inguinal canal)",
    "tags": [],
@@ -5706,11 +6054,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-30-고샅관-inguinal-canal.md",
    "snippet": "구조물 용어 (7개) 정관 (ductus deferens) 자궁원인대 (round ligament of uterus) 정맥 (testicular artery) 정삭 (spermatic cord) 고샅낫힘줄 (inguinal falx) 음낭 (scrotum) 덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막 (tunica vaginalis) 분류: region=abdomen (conf 0.67) · layers=['cav",
-   "text": "Anatomy 고샅관 (inguinal canal) 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 정관 (ductus deferens) 자궁원인대 (round ligament of uterus) 정맥 (testicular artery) 정삭 (spermatic cord) 고샅낫힘줄 (inguinal falx) 음낭 (scrotum) 덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막 (tunica vaginalis) 분류: region=abdomen (conf 0.67) · layers=['cavity visceral', 'deep', 'skin'] · classes=['duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고샅관 (inguinal canal) 10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 정관 (ductus deferens) 자궁원인대 (round ligament of uterus) 정맥 (testicular artery) 정삭 (spermatic cord) 고샅낫힘줄 (inguinal falx) 음낭 (scrotum) 덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막 (tunica vaginalis) 분류: region=abdomen (conf 0.67) · layers=['cavity visceral', 'deep', 'skin'] · classes=['duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-홀정맥계통",
    "type": "anatomy",
+   "unit": "7·9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "홀정맥계통",
    "tags": [],
@@ -5719,11 +6068,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-09-홀정맥계통.md",
    "snippet": "구조물 용어 (5개) 홀정맥 (azygos vein) 반홀정맥 (semiazygos vein) 덧반홀정맥 (accessory hemiazygos vein) 배오른쪽 오름허리정맥 (ascending lumbar vein) 왼오름허리정맥 (left ascending lumbar vein) 분류: region=thorax (conf 0.55) · layers=['cavity visceral'] · classes=['vein'] 원문",
-   "text": "Anatomy 홀정맥계통 9차시(0911) 김홍태pf.pdf 구조물 용어 (5개) 홀정맥 (azygos vein) 반홀정맥 (semiazygos vein) 덧반홀정맥 (accessory hemiazygos vein) 배오른쪽 오름허리정맥 (ascending lumbar vein) 왼오름허리정맥 (left ascending lumbar vein) 분류: region=thorax (conf 0.55) · layers=['cavity visceral'] · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 홀정맥계통 7·9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (5개) 홀정맥 (azygos vein) 반홀정맥 (semiazygos vein) 덧반홀정맥 (accessory hemiazygos vein) 배오른쪽 오름허리정맥 (ascending lumbar vein) 왼오름허리정맥 (left ascending lumbar vein) 분류: region=thorax (conf 0.55) · layers=['cavity visceral'] · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-허파해부",
    "type": "anatomy",
+   "unit": "9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "허파해부",
    "tags": [],
@@ -5732,11 +6082,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-04-허파해부.md",
    "snippet": "구조물 용어 (6개) 기관지나무 (bronchial tree) 일차기관지 (primary bronchus) 에서 이차기관지 (secondary bronchus) 아래엽기관지 (lobar bronchus) 구역기관지 (segmental bronchus) 오른허파는 10개의 기관지허파구역 (bronchopulmonary segment) 분류: region=thorax (conf 0.92) · layers= · classes=['d",
-   "text": "Anatomy 허파해부 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 기관지나무 (bronchial tree) 일차기관지 (primary bronchus) 에서 이차기관지 (secondary bronchus) 아래엽기관지 (lobar bronchus) 구역기관지 (segmental bronchus) 오른허파는 10개의 기관지허파구역 (bronchopulmonary segment) 분류: region=thorax (conf 0.92) · layers= · classes=['duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 허파해부 9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 기관지나무 (bronchial tree) 일차기관지 (primary bronchus) 에서 이차기관지 (secondary bronchus) 아래엽기관지 (lobar bronchus) 구역기관지 (segmental bronchus) 오른허파는 10개의 기관지허파구역 (bronchopulmonary segment) 분류: region=thorax (conf 0.92) · layers= · classes=['duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-허파관찰",
    "type": "anatomy",
+   "unit": "7·9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "허파관찰",
    "tags": [],
@@ -5745,11 +6096,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-03-허파관찰.md",
    "snippet": "구조물 용어 (15개) 각 허파에는 갈비면 (costal surface) 세로칸면 (mediastinal surface) 가로막면 (diaphragmatic surface) 왼허파혀 (lingula of left lung) 큰심장자국 (cardiac impression) 대동맥활고랑 (groove for aortic arch) 내림대동맥고랑 (groove for descending aorta) 식 도고랑 (groove for ",
-   "text": "Anatomy 허파관찰 9차시(0911) 김홍태pf.pdf 구조물 용어 (15개) 각 허파에는 갈비면 (costal surface) 세로칸면 (mediastinal surface) 가로막면 (diaphragmatic surface) 왼허파혀 (lingula of left lung) 큰심장자국 (cardiac impression) 대동맥활고랑 (groove for aortic arch) 내림대동맥고랑 (groove for descending aorta) 식 도고랑 (groove for esophagus) 빗장밑동맥고랑 (groove for subclavian artery) 심장자국 (cardiac impression) 위대정맥고랑 (groove for superior vena cava) 홀정맥고랑 (groove for azygos vein) 식도 고랑 (groove for esophagus) 빗장밑동맥고랑 (groove for subclavian artery) 싸는 가슴막은 아래쪽으로 뻗어 허파인대 이룸 기관지동맥 (bronchial artery) 분류: region=thorax (conf 0.8) · layers= · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 허파관찰 7·9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (15개) 각 허파에는 갈비면 (costal surface) 세로칸면 (mediastinal surface) 가로막면 (diaphragmatic surface) 왼허파혀 (lingula of left lung) 큰심장자국 (cardiac impression) 대동맥활고랑 (groove for aortic arch) 내림대동맥고랑 (groove for descending aorta) 식 도고랑 (groove for esophagus) 빗장밑동맥고랑 (groove for subclavian artery) 심장자국 (cardiac impression) 위대정맥고랑 (groove for superior vena cava) 홀정맥고랑 (groove for azygos vein) 식도 고랑 (groove for esophagus) 빗장밑동맥고랑 (groove for subclavian artery) 싸는 가슴막은 아래쪽으로 뻗어 허파인대 이룸 기관지동맥 (bronchial artery) 분류: region=thorax (conf 0.8) · layers= · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-피부신경",
    "type": "anatomy",
+   "unit": "11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "피부신경",
    "tags": [],
@@ -5758,11 +6110,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-12-피부신경.md",
    "snippet": "구조물 용어 (6개) 안쪽위팔피부신경 (medial cutaneous nerve of arm) 안쪽아래팔피부신경 (medial cutaneous nerve of forearm) 위가쪽위팔피부신경 (superior lateral cutaneous nerve of arm) 가쪽아래팔피부신경 (lateral cutaneous nerve of forearm) 뒤위팔피부신경 (posterior cutaneous nerve of arm)",
-   "text": "Anatomy 피부신경 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 안쪽위팔피부신경 (medial cutaneous nerve of arm) 안쪽아래팔피부신경 (medial cutaneous nerve of forearm) 위가쪽위팔피부신경 (superior lateral cutaneous nerve of arm) 가쪽아래팔피부신경 (lateral cutaneous nerve of forearm) 뒤위팔피부신경 (posterior cutaneous nerve of arm) 뒤아래팔피부신경 (posterior cutaneous nerve of forearm) 분류: region=upper limb (conf 0.76) · layers=['deep', 'deep fascia', 'skin'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 피부신경 11회차 · 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 안쪽위팔피부신경 (medial cutaneous nerve of arm) 안쪽아래팔피부신경 (medial cutaneous nerve of forearm) 위가쪽위팔피부신경 (superior lateral cutaneous nerve of arm) 가쪽아래팔피부신경 (lateral cutaneous nerve of forearm) 뒤위팔피부신경 (posterior cutaneous nerve of arm) 뒤아래팔피부신경 (posterior cutaneous nerve of forearm) 분류: region=upper limb (conf 0.76) · layers=['deep', 'deep fascia', 'skin'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-팔신경얼기-brachial-plexus-",
    "type": "anatomy",
+   "unit": "7·9·11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "팔신경얼기 (brachial plexus)",
    "tags": [],
@@ -5771,11 +6124,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-16-팔신경얼기-brachial-plexus.md",
    "snippet": "구조물 용어 (16개) 갈비근과 중간목갈비근 사이 관찰 잘 하기위해서 부리위팔근 (coracobrachialis muscle) 뚫고 지나가는 근육피부신경 (musculocutaneous nerve) 부리위팔근 (coracobrachialis muscle) 안쪽가슴근신경 (medial pectoral nerve) 갈비사이위팔피부신경 (intrercostobrachial cutaneous nerve) 가쪽가슴근신경 (lateral",
-   "text": "Anatomy 팔신경얼기 (brachial plexus) 9차시(0911) 김홍태pf.pdf 구조물 용어 (16개) 갈비근과 중간목갈비근 사이 관찰 잘 하기위해서 부리위팔근 (coracobrachialis muscle) 뚫고 지나가는 근육피부신경 (musculocutaneous nerve) 부리위팔근 (coracobrachialis muscle) 안쪽가슴근신경 (medial pectoral nerve) 갈비사이위팔피부신경 (intrercostobrachial cutaneous nerve) 가쪽가슴근신경 (lateral pectoral nerve) 안쪽가슴근신경 (medial pectoral nerve) 아 겨드랑동맥 (axillary artery) 겨드랑신경 (axillary nerve) 노신경 (radial nerve) 겨드랑신경 (axillary nerve) 노신경 (radial nerve) 위어깨밑신경 (superior subscapular nerve) 가슴등신경 (thoracodorsal nerve) 아래어깨밑신경 (inferior subscapular nerve) 긴가슴신경 (long thoracic nerve) 분류: region=upper limb (conf 0.42) · layers=['cavity visceral', 'skin'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 팔신경얼기 (brachial plexus) 7·9·11회차 · 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (16개) 갈비근과 중간목갈비근 사이 관찰 잘 하기위해서 부리위팔근 (coracobrachialis muscle) 뚫고 지나가는 근육피부신경 (musculocutaneous nerve) 부리위팔근 (coracobrachialis muscle) 안쪽가슴근신경 (medial pectoral nerve) 갈비사이위팔피부신경 (intrercostobrachial cutaneous nerve) 가쪽가슴근신경 (lateral pectoral nerve) 안쪽가슴근신경 (medial pectoral nerve) 아 겨드랑동맥 (axillary artery) 겨드랑신경 (axillary nerve) 노신경 (radial nerve) 겨드랑신경 (axillary nerve) 노신경 (radial nerve) 위어깨밑신경 (superior subscapular nerve) 가슴등신경 (thoracodorsal nerve) 아래어깨밑신경 (inferior subscapular nerve) 긴가슴신경 (long thoracic nerve) 분류: region=upper limb (conf 0.42) · layers=['cavity visceral', 'skin'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-팔",
    "type": "anatomy",
+   "unit": "9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "팔",
    "tags": [],
@@ -5784,11 +6138,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-01-팔.md",
    "snippet": "구조물 용어 (0개) 분류: region=thorax (conf 0.43) · layers=['superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (0개) 분류: region=thorax (conf 0.43) · layers=['superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 팔 9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (0개) 분류: region=thorax (conf 0.43) · layers=['superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-얕은정맥",
    "type": "anatomy",
+   "unit": "7·9·10·11회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "얕은정맥",
    "tags": [],
@@ -5797,11 +6152,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-11-얕은정맥.md",
    "snippet": "구조물 용어 (4개) 노쪽피부정맥 (cephalic vein) 자쪽피부정맥 (basilic vein) 각각 손등정맥그물 (dorsal venous network of hand) 팔오금중간정맥 (median cubital vein) 분류: region=upper limb (conf 0.58) · layers=['deep', 'deep fascia', 'skin'] · classes=['vein'] 원문 전문은 커밋하지 않는다(저",
-   "text": "Anatomy 얕은정맥 9차시(0911) 김홍태pf.pdf 구조물 용어 (4개) 노쪽피부정맥 (cephalic vein) 자쪽피부정맥 (basilic vein) 각각 손등정맥그물 (dorsal venous network of hand) 팔오금중간정맥 (median cubital vein) 분류: region=upper limb (conf 0.58) · layers=['deep', 'deep fascia', 'skin'] · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 얕은정맥 7·9·10·11회차 · 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (4개) 노쪽피부정맥 (cephalic vein) 자쪽피부정맥 (basilic vein) 각각 손등정맥그물 (dorsal venous network of hand) 팔오금중간정맥 (median cubital vein) 분류: region=upper limb (conf 0.58) · layers=['deep', 'deep fascia', 'skin'] · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-식도",
    "type": "anatomy",
+   "unit": "4·5·9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "식도",
    "tags": [],
@@ -5810,11 +6166,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-05-식도.md",
    "snippet": "구조물 용어 (5개) 고 가슴벽에 붙어있는 나머지 벽가슴막 제거하기 섬유심장막 (fibrous pericardium) 뒷벽에서 빗심장막굴 (oblique pericardial sinus) 열째등뼈높이에서 가로막 근육부분에 있는 식도구멍 (esophageal hiatus) 식도에서는 여러가지로 나뉘어 신경식도얼기 (esophageal plexus) 뒤미주신경줄기 (posterior vagal trunk) 분류: region=th",
-   "text": "Anatomy 식도 9차시(0911) 김홍태pf.pdf 구조물 용어 (5개) 고 가슴벽에 붙어있는 나머지 벽가슴막 제거하기 섬유심장막 (fibrous pericardium) 뒷벽에서 빗심장막굴 (oblique pericardial sinus) 열째등뼈높이에서 가로막 근육부분에 있는 식도구멍 (esophageal hiatus) 식도에서는 여러가지로 나뉘어 신경식도얼기 (esophageal plexus) 뒤미주신경줄기 (posterior vagal trunk) 분류: region=thorax (conf 0.71) · layers= · classes=['foramen', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 식도 4·5·9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (5개) 고 가슴벽에 붙어있는 나머지 벽가슴막 제거하기 섬유심장막 (fibrous pericardium) 뒷벽에서 빗심장막굴 (oblique pericardial sinus) 열째등뼈높이에서 가로막 근육부분에 있는 식도구멍 (esophageal hiatus) 식도에서는 여러가지로 나뉘어 신경식도얼기 (esophageal plexus) 뒤미주신경줄기 (posterior vagal trunk) 분류: region=thorax (conf 0.71) · layers= · classes=['foramen', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-내림대동맥-descending-aorta-",
    "type": "anatomy",
+   "unit": "9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "내림대동맥 (descending aorta)",
    "tags": [],
@@ -5823,11 +6180,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-06-내림대동맥-descending-aorta.md",
    "snippet": "구조물 용어 (6개) 가슴대동맥 (thoracic aorta) 전체길이가 뒤세로칸 따라 내려가다 가 가로막 대동맥구멍 (aortic hiatus of diaphragm) 기관지동맥 (bronchial artery) 작은식도가지 (small esophageal branch) 작은세로칸가지 (small mediastinal branch) 가슴대동맥 앞쪽으로 당겨서 쌍으로 된 뒤갈비사이동맥 (posterior intercostal ",
-   "text": "Anatomy 내림대동맥 (descending aorta) 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 가슴대동맥 (thoracic aorta) 전체길이가 뒤세로칸 따라 내려가다 가 가로막 대동맥구멍 (aortic hiatus of diaphragm) 기관지동맥 (bronchial artery) 작은식도가지 (small esophageal branch) 작은세로칸가지 (small mediastinal branch) 가슴대동맥 앞쪽으로 당겨서 쌍으로 된 뒤갈비사이동맥 (posterior intercostal artery) 분류: region=thorax (conf 0.8) · layers= · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 내림대동맥 (descending aorta) 9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 가슴대동맥 (thoracic aorta) 전체길이가 뒤세로칸 따라 내려가다 가 가로막 대동맥구멍 (aortic hiatus of diaphragm) 기관지동맥 (bronchial artery) 작은식도가지 (small esophageal branch) 작은세로칸가지 (small mediastinal branch) 가슴대동맥 앞쪽으로 당겨서 쌍으로 된 뒤갈비사이동맥 (posterior intercostal artery) 분류: region=thorax (conf 0.8) · layers= · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-기관-기관지",
    "type": "anatomy",
+   "unit": "7·9·15회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "기관, 기관지",
    "tags": [],
@@ -5836,11 +6194,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-02-기관-기관지.md",
    "snippet": "구조물 용어 (7개) 기관 내려오면서 기관용골 (carina of trachea) 에서 왼기관지와 오른기관지 (main bronchus) 기관갈림 (tracheal bifurcation) 높이 각각의 기관지는 아래가쪽으로 달려 각각의 허파뿌리 (root of lung) 형성하며 허파문 (hilum of lung) 어감 왼기관지 앞에서 허파동맥이 왼허파동맥과 오른허파동맥 (pulmonary artery) 대동맥활에서 동맥관인대 ",
-   "text": "Anatomy 기관, 기관지 9차시(0911) 김홍태pf.pdf 구조물 용어 (7개) 기관 내려오면서 기관용골 (carina of trachea) 에서 왼기관지와 오른기관지 (main bronchus) 기관갈림 (tracheal bifurcation) 높이 각각의 기관지는 아래가쪽으로 달려 각각의 허파뿌리 (root of lung) 형성하며 허파문 (hilum of lung) 어감 왼기관지 앞에서 허파동맥이 왼허파동맥과 오른허파동맥 (pulmonary artery) 대동맥활에서 동맥관인대 (ligamentum arteriosum) 분류: region=thorax (conf 0.83) · layers= · classes=['artery', 'duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 기관, 기관지 7·9·15회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (7개) 기관 내려오면서 기관용골 (carina of trachea) 에서 왼기관지와 오른기관지 (main bronchus) 기관갈림 (tracheal bifurcation) 높이 각각의 기관지는 아래가쪽으로 달려 각각의 허파뿌리 (root of lung) 형성하며 허파문 (hilum of lung) 어감 왼기관지 앞에서 허파동맥이 왼허파동맥과 오른허파동맥 (pulmonary artery) 대동맥활에서 동맥관인대 (ligamentum arteriosum) 분류: region=thorax (conf 0.83) · layers= · classes=['artery', 'duct'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-교감신경줄기-sympathetic-trunk-양쪽에-존",
    "type": "anatomy",
+   "unit": "1·7회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "교감신경줄기 (sympathetic trunk) : 양쪽에 존재",
    "tags": [],
@@ -5849,11 +6208,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-07-교감신경줄기-sympathetic-trunk.md",
    "snippet": "구조물 용어 (6개) 가끔 가장 아래쪽 목교감신경절과 합쳐져 큰별신경절 (greater stellate ganglion) 큰내장신경 (greater splanchnic nerve) 작은내장신경 (lesser splanchnic nerve) 과해 내려감 각각의 가슴교감신경절은 이웃하는 갈비사이신경 (intercostal nerve) 으로 2개의 연결 가지는데 이들 작은 가지를 회색교통가지 (gray ramus communican",
-   "text": "Anatomy 교감신경줄기 (sympathetic trunk) : 양쪽에 존재 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 가끔 가장 아래쪽 목교감신경절과 합쳐져 큰별신경절 (greater stellate ganglion) 큰내장신경 (greater splanchnic nerve) 작은내장신경 (lesser splanchnic nerve) 과해 내려감 각각의 가슴교감신경절은 이웃하는 갈비사이신경 (intercostal nerve) 으로 2개의 연결 가지는데 이들 작은 가지를 회색교통가지 (gray ramus communicans) 와 백색교통가지 (white ramus communicans) 분류: region=thorax (conf 0.47) · layers=['cavity visceral'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 교감신경줄기 (sympathetic trunk) : 양쪽에 존재 1·7회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (6개) 가끔 가장 아래쪽 목교감신경절과 합쳐져 큰별신경절 (greater stellate ganglion) 큰내장신경 (greater splanchnic nerve) 작은내장신경 (lesser splanchnic nerve) 과해 내려감 각각의 가슴교감신경절은 이웃하는 갈비사이신경 (intercostal nerve) 으로 2개의 연결 가지는데 이들 작은 가지를 회색교통가지 (gray ramus communicans) 와 백색교통가지 (white ramus communicans) 분류: region=thorax (conf 0.47) · layers=['cavity visceral'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-겨드랑의-경계",
    "type": "anatomy",
+   "unit": "4·7·9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "겨드랑의 경계",
    "tags": [],
@@ -5862,11 +6222,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-13-겨드랑의-경계.md",
    "snippet": "구조물 용어 (2개) 어깨밑근 (subscapularis muscle) 목겨드랑관 (cervicoaxillary canal) 분류: region=upper limb (conf 0.52) · layers=['cavity visceral', 'skin'] · classes=['duct', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 겨드랑의 경계 9차시(0911) 김홍태pf.pdf 구조물 용어 (2개) 어깨밑근 (subscapularis muscle) 목겨드랑관 (cervicoaxillary canal) 분류: region=upper limb (conf 0.52) · layers=['cavity visceral', 'skin'] · classes=['duct', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 겨드랑의 경계 4·7·9회차 · 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (2개) 어깨밑근 (subscapularis muscle) 목겨드랑관 (cervicoaxillary canal) 분류: region=upper limb (conf 0.52) · layers=['cavity visceral', 'skin'] · classes=['duct', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-겨드랑동맥",
    "type": "anatomy",
+   "unit": "9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "겨드랑동맥",
    "tags": [],
@@ -5875,11 +6236,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-15-겨드랑동맥.md",
    "snippet": "구조물 용어 (14개) 위가슴동맥 (superior thoracic artery) 가슴봉우리동맥 (thoracoacromial artery) 큰가슴근과 작은가슴근에 분포하는 가슴근가지 (pectoral branch) 어깨세모근 젖히면서 자른 세모근가지 (deltoid branch) 세모근가지 나오면서 위로갈라져 봉우리로 간 봉우리가지 (acromial branch) 작고 빗장밑근으로 가서 분포하는 빗장가지 (clavicular",
-   "text": "Anatomy 겨드랑동맥 9차시(0911) 김홍태pf.pdf 구조물 용어 (14개) 위가슴동맥 (superior thoracic artery) 가슴봉우리동맥 (thoracoacromial artery) 큰가슴근과 작은가슴근에 분포하는 가슴근가지 (pectoral branch) 어깨세모근 젖히면서 자른 세모근가지 (deltoid branch) 세모근가지 나오면서 위로갈라져 봉우리로 간 봉우리가지 (acromial branch) 작고 빗장밑근으로 가서 분포하는 빗장가지 (clavicular branch) 가쪽가슴동맥 (lateral thoracic artery) 팔신경얼기의 긴가슴신경 (long thoracic nerve) 어깨밑동맥 (subscapular artery) 어깨휘돌이동맥 (circumflex scapular artery) 가슴등동맥 (thoracodorsal artery) 위팔휘돌이동맥 (circumflex humeral artery) 뒤위팔휘돌이동맥 (posterior circumflex humeral artery) 위팔휘돌이동맥과 가쪽으로 달리면서 위팔뼈 외과목 (surgical neck of humerus) 분류: region=thorax (conf 0.4) · layers=['cavity visceral', 'deep'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 겨드랑동맥 9회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (14개) 위가슴동맥 (superior thoracic artery) 가슴봉우리동맥 (thoracoacromial artery) 큰가슴근과 작은가슴근에 분포하는 가슴근가지 (pectoral branch) 어깨세모근 젖히면서 자른 세모근가지 (deltoid branch) 세모근가지 나오면서 위로갈라져 봉우리로 간 봉우리가지 (acromial branch) 작고 빗장밑근으로 가서 분포하는 빗장가지 (clavicular branch) 가쪽가슴동맥 (lateral thoracic artery) 팔신경얼기의 긴가슴신경 (long thoracic nerve) 어깨밑동맥 (subscapular artery) 어깨휘돌이동맥 (circumflex scapular artery) 가슴등동맥 (thoracodorsal artery) 위팔휘돌이동맥 (circumflex humeral artery) 뒤위팔휘돌이동맥 (posterior circumflex humeral artery) 위팔휘돌이동맥과 가쪽으로 달리면서 위팔뼈 외과목 (surgical neck of humerus) 분류: region=thorax (conf 0.4) · layers=['cavity visceral', 'deep'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-겨드랑근육",
    "type": "anatomy",
+   "unit": "팔",
    "topic": "Anatomy",
    "subtopic": "겨드랑근육",
    "tags": [],
@@ -5888,11 +6250,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-17-겨드랑근육.md",
    "snippet": "구조물 용어 (7개) 앞톱니근 (serratus anterior muscle) 긴가슴신경 (long thoracic nerve) 가쪽가슴동맥 (lateral thoracic artery) 어깨밑근 (subscapular muscle) 어깨뼈밑오목 (subscapular fossa) 어깨밑신경 (subscapular nerve) 빗장밑근 (subclavius muscle) 분류: region=upper limb (conf 0.5",
-   "text": "Anatomy 겨드랑근육 9차시(0911) 김홍태pf.pdf 구조물 용어 (7개) 앞톱니근 (serratus anterior muscle) 긴가슴신경 (long thoracic nerve) 가쪽가슴동맥 (lateral thoracic artery) 어깨밑근 (subscapular muscle) 어깨뼈밑오목 (subscapular fossa) 어깨밑신경 (subscapular nerve) 빗장밑근 (subclavius muscle) 분류: region=upper limb (conf 0.5) · layers= · classes=['artery', 'bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 겨드랑근육 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (7개) 앞톱니근 (serratus anterior muscle) 긴가슴신경 (long thoracic nerve) 가쪽가슴동맥 (lateral thoracic artery) 어깨밑근 (subscapular muscle) 어깨뼈밑오목 (subscapular fossa) 어깨밑신경 (subscapular nerve) 빗장밑근 (subclavius muscle) 분류: region=upper limb (conf 0.5) · layers= · classes=['artery', 'bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-겨드랑-해부준비-작업",
    "type": "anatomy",
+   "unit": "9회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "겨드랑 해부준비 작업",
    "tags": [],
@@ -5901,11 +6264,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-14-겨드랑-해부준비-작업.md",
    "snippet": "구조물 용어 (2개) 겨드랑집 (axillary sheath) 팔신경얼기 신경다발 (cords of brachial plexus) 분류: region=upper limb (conf 0.62) · layers=['skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 겨드랑 해부준비 작업 9차시(0911) 김홍태pf.pdf 구조물 용어 (2개) 겨드랑집 (axillary sheath) 팔신경얼기 신경다발 (cords of brachial plexus) 분류: region=upper limb (conf 0.62) · layers=['skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 겨드랑 해부준비 작업 9회차 · 팔 9차시(0911) 김홍태pf.pdf 구조물 용어 (2개) 겨드랑집 (axillary sheath) 팔신경얼기 신경다발 (cords of brachial plexus) 분류: region=upper limb (conf 0.62) · layers=['skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-갈비사이신경",
    "type": "anatomy",
+   "unit": "가슴",
    "topic": "Anatomy",
    "subtopic": "갈비사이신경",
    "tags": [],
@@ -5914,11 +6278,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-08-갈비사이신경.md",
    "snippet": "구조물 용어 (3개) 각각의 갈비사이공간 (intercostal space) 뒤갈비사이동맥 (posterior intercostal artery) 보통 맨위갈비사이동맥 (supreme intercostal artery) 분류: region=thorax (conf 0.69) · layers=['cavity visceral'] · classes=['artery', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .priv",
-   "text": "Anatomy 갈비사이신경 9차시(0911) 김홍태pf.pdf 구조물 용어 (3개) 각각의 갈비사이공간 (intercostal space) 뒤갈비사이동맥 (posterior intercostal artery) 보통 맨위갈비사이동맥 (supreme intercostal artery) 분류: region=thorax (conf 0.69) · layers=['cavity visceral'] · classes=['artery', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 갈비사이신경 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (3개) 각각의 갈비사이공간 (intercostal space) 뒤갈비사이동맥 (posterior intercostal artery) 보통 맨위갈비사이동맥 (supreme intercostal artery) 분류: region=thorax (conf 0.69) · layers=['cavity visceral'] · classes=['artery', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-가슴림프관",
    "type": "anatomy",
+   "unit": "1·6·7회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "가슴림프관",
    "tags": [],
@@ -5927,11 +6292,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s09/sec-10-가슴림프관.md",
    "snippet": "구조물 용어 (2개) 뒤에 위치 위로 올라와 목의 뿌리 부분에서 왼빗장밑정맥 (left subclavian vein) 이나 왼속목정맥 (left internal jugular vein) 분류: region=thorax (conf 0.35) · layers= · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 가슴림프관 9차시(0911) 김홍태pf.pdf 구조물 용어 (2개) 뒤에 위치 위로 올라와 목의 뿌리 부분에서 왼빗장밑정맥 (left subclavian vein) 이나 왼속목정맥 (left internal jugular vein) 분류: region=thorax (conf 0.35) · layers= · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 가슴림프관 1·6·7회차 · 가슴 9차시(0911) 김홍태pf.pdf 구조물 용어 (2개) 뒤에 위치 위로 올라와 목의 뿌리 부분에서 왼빗장밑정맥 (left subclavian vein) 이나 왼속목정맥 (left internal jugular vein) 분류: region=thorax (conf 0.35) · layers= · classes=['vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-피부벗기기와-발바닥널힘줄",
    "type": "anatomy",
+   "unit": "7·9회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "피부벗기기와 발바닥널힘줄",
    "tags": [],
@@ -5940,11 +6306,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-12-피부벗기기와-발바닥널힘줄.md",
    "snippet": "구조물 용어 (3개) 발바닥근막 (plantar fascia) 발바닥널힘줄 (plantar aponeurosis) 얕은가로발허리인대 (superficial transverse metatarsal ligament) 분류: region=lower limb (conf 0.87) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes",
-   "text": "Anatomy 피부벗기기와 발바닥널힘줄 7회차(0904) 문용석pf.pdf 구조물 용어 (3개) 발바닥근막 (plantar fascia) 발바닥널힘줄 (plantar aponeurosis) 얕은가로발허리인대 (superficial transverse metatarsal ligament) 분류: region=lower limb (conf 0.87) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['fascia', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 피부벗기기와 발바닥널힘줄 7·9회차 · 다리 7회차(0904) 문용석pf.pdf 구조물 용어 (3개) 발바닥근막 (plantar fascia) 발바닥널힘줄 (plantar aponeurosis) 얕은가로발허리인대 (superficial transverse metatarsal ligament) 분류: region=lower limb (conf 0.87) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['fascia', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-척주앞부위",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "척주앞부위",
    "tags": [],
@@ -5953,11 +6320,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-06-척주앞부위.md",
    "snippet": "구조물 용어 (7개) 목교감신경줄기 (cervical sympathetic trunk) 중간목신경절 (middle cervical ganglion) 아래목신경절 (inferior cervical ganglion) 일반적으로 첫째가슴교감신경절과 만나서 비교적 큰 별신경절 (satellite ganglion) 빗장밑신경고리 (ansa subclavia) 미주신경 (vagus nerve) 되돌이후두신경 (recurrent laryn",
-   "text": "Anatomy 척주앞부위 7회차(0904) 문용석pf.pdf 구조물 용어 (7개) 목교감신경줄기 (cervical sympathetic trunk) 중간목신경절 (middle cervical ganglion) 아래목신경절 (inferior cervical ganglion) 일반적으로 첫째가슴교감신경절과 만나서 비교적 큰 별신경절 (satellite ganglion) 빗장밑신경고리 (ansa subclavia) 미주신경 (vagus nerve) 되돌이후두신경 (recurrent laryngeal nerve) 분류: region=neck (conf 0.47) · layers=['deep'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 척주앞부위 7·15회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (7개) 목교감신경줄기 (cervical sympathetic trunk) 중간목신경절 (middle cervical ganglion) 아래목신경절 (inferior cervical ganglion) 일반적으로 첫째가슴교감신경절과 만나서 비교적 큰 별신경절 (satellite ganglion) 빗장밑신경고리 (ansa subclavia) 미주신경 (vagus nerve) 되돌이후두신경 (recurrent laryngeal nerve) 분류: region=neck (conf 0.47) · layers=['deep'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-정맥각-venous-angle-",
    "type": "anatomy",
+   "unit": "7회차 · 목",
    "topic": "Anatomy",
    "subtopic": "정맥각 (venous angle)",
    "tags": [],
@@ -5966,11 +6334,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-05-정맥각-venous-angle.md",
    "snippet": "구조물 용어 (13개) 오른정맥각 (right venous angle) 왼정맥각 (left venous angle) 빗장밑동맥 (subclavian artery) 척추동맥 (vertebral artery) 갑상목동맥 (thyrocervical trunk) 오름목동맥 (ascending cervical artery) 가로목동맥 (transverse cervical artery) 속가슴동맥 (internal thoracic art",
-   "text": "Anatomy 정맥각 (venous angle) 7회차(0904) 문용석pf.pdf 구조물 용어 (13개) 오른정맥각 (right venous angle) 왼정맥각 (left venous angle) 빗장밑동맥 (subclavian artery) 척추동맥 (vertebral artery) 갑상목동맥 (thyrocervical trunk) 오름목동맥 (ascending cervical artery) 가로목동맥 (transverse cervical artery) 속가슴동맥 (internal thoracic artery) 목갈비동맥 (costocervical trunk) 나와서 위깊은곳으로 진행하는 깊은목동맥 (deep cervical artery) 과 뒤로넘어가는 맨위갈비사이동맥 (supreme intercostal artery) 등쪽어깨동맥 (dorsal scapular artery) 빗장밑동맥 (subclavian artery) 분류: region=neck (conf 0.55) · layers=['deep'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 정맥각 (venous angle) 7회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (13개) 오른정맥각 (right venous angle) 왼정맥각 (left venous angle) 빗장밑동맥 (subclavian artery) 척추동맥 (vertebral artery) 갑상목동맥 (thyrocervical trunk) 오름목동맥 (ascending cervical artery) 가로목동맥 (transverse cervical artery) 속가슴동맥 (internal thoracic artery) 목갈비동맥 (costocervical trunk) 나와서 위깊은곳으로 진행하는 깊은목동맥 (deep cervical artery) 과 뒤로넘어가는 맨위갈비사이동맥 (supreme intercostal artery) 등쪽어깨동맥 (dorsal scapular artery) 빗장밑동맥 (subclavian artery) 분류: region=neck (conf 0.55) · layers=['deep'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-인두의-신경",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "인두의 신경",
    "tags": [],
@@ -5979,11 +6348,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-09-인두의-신경.md",
    "snippet": "구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.75) · layers= · classes=['nerve'] 원문 전문은 커밋하지 ",
-   "text": "Anatomy 인두의 신경 7회차(0904) 문용석pf.pdf 구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.75) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두의 신경 7·15회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.75) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-인두근육",
    "type": "anatomy",
+   "unit": "7·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "인두근육",
    "tags": [],
@@ -5992,11 +6362,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-08-인두근육.md",
    "snippet": "구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) ",
-   "text": "Anatomy 인두근육 7회차(0904) 문용석pf.pdf 구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) 아래인두수축근 (inferior constrictor muscle) 인두솔기 (pharyngeal raphe) 붓인두근 (stylopharyngeus muscle) 분류: region=neck (conf 0.72) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두근육 7·15회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) 아래인두수축근 (inferior constrictor muscle) 인두솔기 (pharyngeal raphe) 붓인두근 (stylopharyngeus muscle) 분류: region=neck (conf 0.72) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-앞목갈비근-주위구조",
    "type": "anatomy",
+   "unit": "7회차 · 목",
    "topic": "Anatomy",
    "subtopic": "앞목갈비근 주위구조",
    "tags": [],
@@ -6005,11 +6376,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-04-앞목갈비근-주위구조.md",
    "snippet": "구조물 용어 (12개) 앞목갈비근 (scalenus anterior muscle) 가로막신경 (phrenic nerve) 덧가로막신경 (accessory phrenic nerve) 오름목동맥 (ascending cervical artery) 빗장밑동맥의 갑상목동맥 (thyrocervical trunk) 빗장밑정맥 (subclavian vein) 위에서 내려오는 속목정맥과 만나서 아래쪽에서 팔머리정맥 (brachiocephali",
-   "text": "Anatomy 앞목갈비근 주위구조 7회차(0904) 문용석pf.pdf 구조물 용어 (12개) 앞목갈비근 (scalenus anterior muscle) 가로막신경 (phrenic nerve) 덧가로막신경 (accessory phrenic nerve) 오름목동맥 (ascending cervical artery) 빗장밑동맥의 갑상목동맥 (thyrocervical trunk) 빗장밑정맥 (subclavian vein) 위에서 내려오는 속목정맥과 만나서 아래쪽에서 팔머리정맥 (brachiocephalic vein) 팔신경얼기 (brachial plexus) 빗장밑동맥 (subclavian artery) 어깨위신경 (suprascapular nerve) 빗장위신경 (supraclavicular nerve) 빗장뼈 밑에있는 빗장밑근 (subclavius muscle) 분류: region=neck (conf 0.35) · layers=['deep'] · classes=['artery', 'muscle', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 앞목갈비근 주위구조 7회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (12개) 앞목갈비근 (scalenus anterior muscle) 가로막신경 (phrenic nerve) 덧가로막신경 (accessory phrenic nerve) 오름목동맥 (ascending cervical artery) 빗장밑동맥의 갑상목동맥 (thyrocervical trunk) 빗장밑정맥 (subclavian vein) 위에서 내려오는 속목정맥과 만나서 아래쪽에서 팔머리정맥 (brachiocephalic vein) 팔신경얼기 (brachial plexus) 빗장밑동맥 (subclavian artery) 어깨위신경 (suprascapular nerve) 빗장위신경 (supraclavicular nerve) 빗장뼈 밑에있는 빗장밑근 (subclavius muscle) 분류: region=neck (conf 0.35) · layers=['deep'] · classes=['artery', 'muscle', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-본문",
    "type": "anatomy",
+   "unit": "1·3·6·7·14·15회차 · 목",
    "topic": "Anatomy",
    "subtopic": "본문",
    "tags": [],
@@ -6018,11 +6390,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-01-본문.md",
    "snippet": "구조물 용어 (0개) 분류: region=neck (conf 0.44) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 본문 7회차(0904) 문용석pf.pdf 구조물 용어 (0개) 분류: region=neck (conf 0.44) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 본문 1·3·6·7·14·15회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (0개) 분류: region=neck (conf 0.44) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-발바닥-셋째층-발바닥네모근과-긴발가락굽힘근-힘줄-젖힌-",
    "type": "anatomy",
+   "unit": "7회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "발바닥 셋째층 : 발바닥네모근과 긴발가락굽힘근 힘줄 젖힌 후",
    "tags": [],
@@ -6031,11 +6404,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-14-발바닥-셋째층-발바닥네모근과-긴발가락굽힘근-.md",
    "snippet": "구조물 용어 (7개) 짧은엄지굽힘근 (flexor hallucis brevis muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis muscle) 엄지모음근 (adductor hallucis muscle) 의 가로갈래 (transverse head) 빗갈래 (oblique head) 깊은발바닥동맥활 (deep plantar arch) 개의 바닥쪽발허리동맥 (plantar metatarsal arter",
-   "text": "Anatomy 발바닥 셋째층 : 발바닥네모근과 긴발가락굽힘근 힘줄 젖힌 후 7회차(0904) 문용석pf.pdf 구조물 용어 (7개) 짧은엄지굽힘근 (flexor hallucis brevis muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis muscle) 엄지모음근 (adductor hallucis muscle) 의 가로갈래 (transverse head) 빗갈래 (oblique head) 깊은발바닥동맥활 (deep plantar arch) 개의 바닥쪽발허리동맥 (plantar metatarsal artery) 분류: region=lower limb (conf 0.88) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 발바닥 셋째층 : 발바닥네모근과 긴발가락굽힘근 힘줄 젖힌 후 7회차 · 다리 7회차(0904) 문용석pf.pdf 구조물 용어 (7개) 짧은엄지굽힘근 (flexor hallucis brevis muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis muscle) 엄지모음근 (adductor hallucis muscle) 의 가로갈래 (transverse head) 빗갈래 (oblique head) 깊은발바닥동맥활 (deep plantar arch) 개의 바닥쪽발허리동맥 (plantar metatarsal artery) 분류: region=lower limb (conf 0.88) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-발바닥-둘째층",
    "type": "anatomy",
+   "unit": "7회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "발바닥 둘째층",
    "tags": [],
@@ -6044,11 +6418,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-13-발바닥-둘째층.md",
    "snippet": "구조물 용어 (8개) 긴발가락굽힘근 (flexor digitorum longus muscle) 긴발가락굽힘근 힘줄은 끝마디뼈 (distal phalanx) 짧은발가락굽힘근 힘줄은 중간마디뼈 (middle phalanx) 긴엄지굽힘근 (flexor hallucis longus muscle) 발바닥으로 들어가면서 목말받침돌기 (sustentaculum tali) 발바닥네모근 (quadratus plantae muscle) 벌레근 ",
-   "text": "Anatomy 발바닥 둘째층 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 긴발가락굽힘근 (flexor digitorum longus muscle) 긴발가락굽힘근 힘줄은 끝마디뼈 (distal phalanx) 짧은발가락굽힘근 힘줄은 중간마디뼈 (middle phalanx) 긴엄지굽힘근 (flexor hallucis longus muscle) 발바닥으로 들어가면서 목말받침돌기 (sustentaculum tali) 발바닥네모근 (quadratus plantae muscle) 벌레근 (lumbrical muscle) 가쪽발바닥신경 (lateral plantar nerve) 분류: region=lower limb (conf 0.85) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 발바닥 둘째층 7회차 · 다리 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 긴발가락굽힘근 (flexor digitorum longus muscle) 긴발가락굽힘근 힘줄은 끝마디뼈 (distal phalanx) 짧은발가락굽힘근 힘줄은 중간마디뼈 (middle phalanx) 긴엄지굽힘근 (flexor hallucis longus muscle) 발바닥으로 들어가면서 목말받침돌기 (sustentaculum tali) 발바닥네모근 (quadratus plantae muscle) 벌레근 (lumbrical muscle) 가쪽발바닥신경 (lateral plantar nerve) 분류: region=lower limb (conf 0.85) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-발바닥-넷째층",
    "type": "anatomy",
+   "unit": "3·7회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "발바닥 넷째층",
    "tags": [],
@@ -6057,11 +6432,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-15-발바닥-넷째층.md",
    "snippet": "구조물 용어 (8개) 바닥쪽 뼈사이근 (dorsal and palmar interossei muscle) 뒤정강근 (tibialis posterior muscle) 과 발안쪽모서리 차례로 지나 발로 들어온 후 발배뼈거친면 (tuberosity of navicular) 과 안쪽 쐐기뼈 (medial cuneiform) 긴종아리근 (fibularis longus muscle) 긴발바닥인대 (long plantar ligament)",
-   "text": "Anatomy 발바닥 넷째층 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 바닥쪽 뼈사이근 (dorsal and palmar interossei muscle) 뒤정강근 (tibialis posterior muscle) 과 발안쪽모서리 차례로 지나 발로 들어온 후 발배뼈거친면 (tuberosity of navicular) 과 안쪽 쐐기뼈 (medial cuneiform) 긴종아리근 (fibularis longus muscle) 긴발바닥인대 (long plantar ligament) 질긴 섬유띠 (lemniscus) 뒤로는 발꿈치뼈 아랫면 전체에 붙고 앞으로는 입방뼈거친면 (tuberosity of cuboid) 분류: region=lower limb (conf 0.7) · layers=['deep'] · classes=['bone', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 발바닥 넷째층 3·7회차 · 다리 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 바닥쪽 뼈사이근 (dorsal and palmar interossei muscle) 뒤정강근 (tibialis posterior muscle) 과 발안쪽모서리 차례로 지나 발로 들어온 후 발배뼈거친면 (tuberosity of navicular) 과 안쪽 쐐기뼈 (medial cuneiform) 긴종아리근 (fibularis longus muscle) 긴발바닥인대 (long plantar ligament) 질긴 섬유띠 (lemniscus) 뒤로는 발꿈치뼈 아랫면 전체에 붙고 앞으로는 입방뼈거친면 (tuberosity of cuboid) 분류: region=lower limb (conf 0.7) · layers=['deep'] · classes=['bone', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-굽힘근지지띠-flexor-retinaculum-",
    "type": "anatomy",
+   "unit": "3·7회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "굽힘근지지띠 (flexor retinaculum)",
    "tags": [],
@@ -6070,11 +6446,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-11-굽힘근지지띠-flexor-retinaculu.md",
    "snippet": "구조물 용어 (3개) 굽힘근지지띠 전후로 긴발가락굽힘근 (flexor digitorum longus muscle) 과 긴엄지굽힘근 (flexor hallucis longus muscle) 굽힘근지지띠 열어젖히고 그 안에서 힘줄들이 힘줄윤활집 (synovial tendon sheath) 분류: region=lower limb (conf 0.88) · layers=['deep', 'deep fascia'] · classes=['m",
-   "text": "Anatomy 굽힘근지지띠 (flexor retinaculum) 7회차(0904) 문용석pf.pdf 구조물 용어 (3개) 굽힘근지지띠 전후로 긴발가락굽힘근 (flexor digitorum longus muscle) 과 긴엄지굽힘근 (flexor hallucis longus muscle) 굽힘근지지띠 열어젖히고 그 안에서 힘줄들이 힘줄윤활집 (synovial tendon sheath) 분류: region=lower limb (conf 0.88) · layers=['deep', 'deep fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 굽힘근지지띠 (flexor retinaculum) 3·7회차 · 다리 7회차(0904) 문용석pf.pdf 구조물 용어 (3개) 굽힘근지지띠 전후로 긴발가락굽힘근 (flexor digitorum longus muscle) 과 긴엄지굽힘근 (flexor hallucis longus muscle) 굽힘근지지띠 열어젖히고 그 안에서 힘줄들이 힘줄윤활집 (synovial tendon sheath) 분류: region=lower limb (conf 0.88) · layers=['deep', 'deep fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-갑상샘-혈관-갑상샘-내분비기관으로-많은-혈관-분보",
    "type": "anatomy",
+   "unit": "목",
    "topic": "Anatomy",
    "subtopic": "갑상샘 혈관 : 갑상샘 내분비기관으로 많은 혈관 분보",
    "tags": [],
@@ -6083,11 +6460,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-03-갑상샘-혈관-갑상샘-내분비기관으로-많은-혈관.md",
    "snippet": "구조물 용어 (8개) 위갑상동맥 (superior thyroid artery) 아래갑상동맥 (inferior thyroid artery) 빗장밑동맥 (subclavian artery) 가지인 갑상목동맥 (thyrocervical trunk) 위갑상정맥 (superior thyroid vein) 아래갑상정맥 (inferior thyroid vein) 기관 앞에서 갑상샘잘록 아래로 내려가 팔머리정맥 (brachiocephalic ",
-   "text": "Anatomy 갑상샘 혈관 : 갑상샘 내분비기관으로 많은 혈관 분보 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 위갑상동맥 (superior thyroid artery) 아래갑상동맥 (inferior thyroid artery) 빗장밑동맥 (subclavian artery) 가지인 갑상목동맥 (thyrocervical trunk) 위갑상정맥 (superior thyroid vein) 아래갑상정맥 (inferior thyroid vein) 기관 앞에서 갑상샘잘록 아래로 내려가 팔머리정맥 (brachiocephalic vein) 중간갑상정맥 (middle thyroid vein) 분류: region=neck (conf 0.82) · layers=['deep'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 갑상샘 혈관 : 갑상샘 내분비기관으로 많은 혈관 분보 목 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 위갑상동맥 (superior thyroid artery) 아래갑상동맥 (inferior thyroid artery) 빗장밑동맥 (subclavian artery) 가지인 갑상목동맥 (thyrocervical trunk) 위갑상정맥 (superior thyroid vein) 아래갑상정맥 (inferior thyroid vein) 기관 앞에서 갑상샘잘록 아래로 내려가 팔머리정맥 (brachiocephalic vein) 중간갑상정맥 (middle thyroid vein) 분류: region=neck (conf 0.82) · layers=['deep'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-갑상샘-thyroid-gland-",
    "type": "anatomy",
+   "unit": "목",
    "topic": "Anatomy",
    "subtopic": "갑상샘 (thyroid gland)",
    "tags": [],
@@ -6096,11 +6474,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-02-갑상샘-thyroid-gland.md",
    "snippet": "구조물 용어 (2개) 그 사이는 갑상샘잘록 (isthmus) 피라미드엽 (pyramidal lobe) 분류: region=neck (conf 0.77) · layers=['deep'] · classes=['organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 갑상샘 (thyroid gland) 7회차(0904) 문용석pf.pdf 구조물 용어 (2개) 그 사이는 갑상샘잘록 (isthmus) 피라미드엽 (pyramidal lobe) 분류: region=neck (conf 0.77) · layers=['deep'] · classes=['organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 갑상샘 (thyroid gland) 목 7회차(0904) 문용석pf.pdf 구조물 용어 (2개) 그 사이는 갑상샘잘록 (isthmus) 피라미드엽 (pyramidal lobe) 분류: region=neck (conf 0.77) · layers=['deep'] · classes=['organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-가쪽척주부위",
    "type": "anatomy",
+   "unit": "7·12회차 · 목",
    "topic": "Anatomy",
    "subtopic": "가쪽척주부위",
    "tags": [],
@@ -6109,11 +6488,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-07-가쪽척주부위.md",
    "snippet": "구조물 용어 (3개) 앞목갈비근 (scalenus anterior muscle) 중간목갈비근 (scalenus medius muscle) 뒤목갈비근 (scalenus posterior muscle) 분류: region=neck (conf 0.47) · layers=['skin'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 가쪽척주부위 7회차(0904) 문용석pf.pdf 구조물 용어 (3개) 앞목갈비근 (scalenus anterior muscle) 중간목갈비근 (scalenus medius muscle) 뒤목갈비근 (scalenus posterior muscle) 분류: region=neck (conf 0.47) · layers=['skin'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 가쪽척주부위 7·12회차 · 목 7회차(0904) 문용석pf.pdf 구조물 용어 (3개) 앞목갈비근 (scalenus anterior muscle) 중간목갈비근 (scalenus medius muscle) 뒤목갈비근 (scalenus posterior muscle) 분류: region=neck (conf 0.47) · layers=['skin'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s07-lower-limb",
    "type": "anatomy",
+   "unit": "2·3·7회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "lower limb",
    "tags": [],
@@ -6122,11 +6502,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s07/sec-10-lower-limb.md",
    "snippet": "구조물 용어 (8개) 종아리근 지지띠 (fibular retinaculum) 위종아리근지지띠 (superior fibular retinaculum) 아래종아리근지지띠 (inferior fibular retinaculum) 아래쪽에서 발꿈치뼈 가쪽면에 있는 종아리근도르래 (fibular trochlea) 긴종아리근 (fibularis longus muscle) 짧은종아리근 (fibularis brevis muscle) 두종아리근",
-   "text": "Anatomy lower limb 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 종아리근 지지띠 (fibular retinaculum) 위종아리근지지띠 (superior fibular retinaculum) 아래종아리근지지띠 (inferior fibular retinaculum) 아래쪽에서 발꿈치뼈 가쪽면에 있는 종아리근도르래 (fibular trochlea) 긴종아리근 (fibularis longus muscle) 짧은종아리근 (fibularis brevis muscle) 두종아리근 힘줄이 온힘줄집 (common tendinous sheath) 얕은종아리신경 (superficial fibular nerve) 분류: region=lower limb (conf 0.94) · layers=['deep', 'deep fascia', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy lower limb 2·3·7회차 · 다리 7회차(0904) 문용석pf.pdf 구조물 용어 (8개) 종아리근 지지띠 (fibular retinaculum) 위종아리근지지띠 (superior fibular retinaculum) 아래종아리근지지띠 (inferior fibular retinaculum) 아래쪽에서 발꿈치뼈 가쪽면에 있는 종아리근도르래 (fibular trochlea) 긴종아리근 (fibularis longus muscle) 짧은종아리근 (fibularis brevis muscle) 두종아리근 힘줄이 온힘줄집 (common tendinous sheath) 얕은종아리신경 (superficial fibular nerve) 분류: region=lower limb (conf 0.94) · layers=['deep', 'deep fascia', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s05-thorax-thoracic-cavity-and-ple",
    "type": "anatomy",
+   "unit": "가슴",
    "topic": "Anatomy",
    "subtopic": "Thorax - Thoracic cavity and pleara",
    "tags": [],
@@ -6135,11 +6516,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s05/sec-02-thorax-thoracic-cavity-a.md",
    "snippet": "구조물 용어 (3개) 속가슴동맥 (internal thorasica) 허파쪽 가슴막 (risceral pleura) 가슴막안 (plenral cavity) 분류: region=thorax (conf 0.71) · layers= · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy Thorax - Thoracic cavity and pleara 5회차(0829) 김홍태pf.pdf 구조물 용어 (3개) 속가슴동맥 (internal thorasica) 허파쪽 가슴막 (risceral pleura) 가슴막안 (plenral cavity) 분류: region=thorax (conf 0.71) · layers= · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy Thorax - Thoracic cavity and pleara 가슴 5회차(0829) 김홍태pf.pdf 구조물 용어 (3개) 속가슴동맥 (internal thorasica) 허파쪽 가슴막 (risceral pleura) 가슴막안 (plenral cavity) 분류: region=thorax (conf 0.71) · layers= · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s05-thorax-superior-mediastinum",
    "type": "anatomy",
+   "unit": "여러 부위",
    "topic": "Anatomy",
    "subtopic": "Thorax - Superior mediastinum",
    "tags": [],
@@ -6148,11 +6530,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s05/sec-03-thorax-superior-mediasti.md",
    "snippet": "구조물 용어 (2개) 위대정맥 (superion vena cava) 대동맥환 (aortic arch) 분류: region=multi (conf 0.29) · layers= · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy Thorax - Superior mediastinum 5회차(0829) 김홍태pf.pdf 구조물 용어 (2개) 위대정맥 (superion vena cava) 대동맥환 (aortic arch) 분류: region=multi (conf 0.29) · layers= · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy Thorax - Superior mediastinum 여러 부위 5회차(0829) 김홍태pf.pdf 구조물 용어 (2개) 위대정맥 (superion vena cava) 대동맥환 (aortic arch) 분류: region=multi (conf 0.29) · layers= · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s05-thorax-pericardiam-and-heart",
    "type": "anatomy",
+   "unit": "가슴",
    "topic": "Anatomy",
    "subtopic": "Thorax - Pericardiam and heart",
    "tags": [],
@@ -6161,11 +6544,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s05/sec-04-thorax-pericardiam-and-h.md",
    "snippet": "구조물 용어 (1개) 심방귀 (auricde) 분류: region=thorax (conf 0.71) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy Thorax - Pericardiam and heart 5회차(0829) 김홍태pf.pdf 구조물 용어 (1개) 심방귀 (auricde) 분류: region=thorax (conf 0.71) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy Thorax - Pericardiam and heart 가슴 5회차(0829) 김홍태pf.pdf 구조물 용어 (1개) 심방귀 (auricde) 분류: region=thorax (conf 0.71) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s05-head-supericial-layer-of-face",
    "type": "anatomy",
+   "unit": "14·15회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "Head - Supericial layer of face",
    "tags": [],
@@ -6174,11 +6558,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s05/sec-01-head-supericial-layer-of.md",
    "snippet": "구조물 용어 (5개) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 관자뼈 광대풀기 (aygomaatic process of temparal bone) 아래턱뼈 관철들기 관대팝 (candylar process ofmandible) 턱뼈패임 아래턱뼈 근육들기 (mandibutar match) 분류: region=head (conf 0.65) · layers=['deep', 'superficial",
-   "text": "Anatomy Head - Supericial layer of face 5회차(0829) 김홍태pf.pdf 구조물 용어 (5개) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 관자뼈 광대풀기 (aygomaatic process of temparal bone) 아래턱뼈 관철들기 관대팝 (candylar process ofmandible) 턱뼈패임 아래턱뼈 근육들기 (mandibutar match) 분류: region=head (conf 0.65) · layers=['deep', 'superficial'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy Head - Supericial layer of face 14·15회차 · 머리 5회차(0829) 김홍태pf.pdf 구조물 용어 (5개) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 관자뼈 광대풀기 (aygomaatic process of temparal bone) 아래턱뼈 관철들기 관대팝 (candylar process ofmandible) 턱뼈패임 아래턱뼈 근육들기 (mandibutar match) 분류: region=head (conf 0.65) · layers=['deep', 'superficial'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s04-엔정인경우",
    "type": "anatomy",
+   "unit": "9회차 · 가슴",
    "topic": "Anatomy",
    "subtopic": "엔정인경우",
    "tags": [],
@@ -6187,11 +6572,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s04/sec-02-엔정인경우.md",
    "snippet": "구조물 용어 (4개) 젖꼭기 위치 넷째 갈비사이공간 젖꼭지 (nipple) 젖몸통 (body of breast) 젖샘걸어인대 (suspensory ligament ofbreast) 큰가슴근 (pectoralis major muscle) 분류: region=thorax (conf 0.77) · layers=['cavity visceral'] · classes=['ligament', 'muscle', 'organ'] 원문 전문은 ",
-   "text": "Anatomy 엔정인경우 4회차(0828) 허미선pf.pdf 구조물 용어 (4개) 젖꼭기 위치 넷째 갈비사이공간 젖꼭지 (nipple) 젖몸통 (body of breast) 젖샘걸어인대 (suspensory ligament ofbreast) 큰가슴근 (pectoralis major muscle) 분류: region=thorax (conf 0.77) · layers=['cavity visceral'] · classes=['ligament', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엔정인경우 9회차 · 가슴 4회차(0828) 허미선pf.pdf 구조물 용어 (4개) 젖꼭기 위치 넷째 갈비사이공간 젖꼭지 (nipple) 젖몸통 (body of breast) 젖샘걸어인대 (suspensory ligament ofbreast) 큰가슴근 (pectoralis major muscle) 분류: region=thorax (conf 0.77) · layers=['cavity visceral'] · classes=['ligament', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s04-가슴",
    "type": "anatomy",
+   "unit": "4·6·7회차 · 머리",
    "topic": "Anatomy",
    "subtopic": "가슴",
    "tags": [],
@@ -6200,11 +6586,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s04/sec-01-가슴.md",
    "snippet": "구조물 용어 (34개) 가슴천자 (thoracentesis) 이것은 눈썹주름근 (corrugator supercilii muscle) 눈살금 (procerus muscle) 콧등 (dorsum of nose) 에 세로로 달리는 눈살근 (procerus muscle) 작은광대근 (zygomaticus minor muscle) 위입술올림근 (levator labit superioris muscle) 위입술올림근 (levator l",
-   "text": "Anatomy 가슴 4회차(0828) 허미선pf.pdf 구조물 용어 (34개) 가슴천자 (thoracentesis) 이것은 눈썹주름근 (corrugator supercilii muscle) 눈살금 (procerus muscle) 콧등 (dorsum of nose) 에 세로로 달리는 눈살근 (procerus muscle) 작은광대근 (zygomaticus minor muscle) 위입술올림근 (levator labit superioris muscle) 위입술올림근 (levator labii superioris muscle) 위입술콧방울올림근 (levator labii superforts alaeque nasi muscle) 위입술콧방울올림근 (levator labii superioris alaeque nasi muscle) 아래입술내림 (depressor labii inferioris muscle) 아래입술내림근 (depressor labii inferioris muscle) 입꼬리당김근 (risorius muscle) 입꼬리당김근 (risorius muscle) 턱끝근 (mentalis muscle) 턱끝근 (mentalis muscle) 입꼬리올림근 (levator anguli oris muscle) 입꼬리올림근 (levator anguli oris muscle) 얼굴신경의 목가지 (cervical branch) 목가지는 여러개 귀밑샘관 (paroid duct) 볼가지 (buacal branch) 택보서리가지 (marginal mandibular branch) 목가지 (cervical branch) 얼굴동맥 (facial artery) 주행방향 얼굴동맥 (facial artery) 이마가지 (frontal branch) 턱끝신경 (mental nerve) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 코중격연골 (septal cartilage) 코중격연골 (septal cartilage) 갈비뼈 (ribs) 복장뼈각 (sternal angle) 복장뼈칼돌기 (xiphoid process) 분류: region=head (conf 0.61) · layers=['deep', 'skin', 'superficial'] · classes=['artery', 'bone', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 가슴 4·6·7회차 · 머리 4회차(0828) 허미선pf.pdf 구조물 용어 (34개) 가슴천자 (thoracentesis) 이것은 눈썹주름근 (corrugator supercilii muscle) 눈살금 (procerus muscle) 콧등 (dorsum of nose) 에 세로로 달리는 눈살근 (procerus muscle) 작은광대근 (zygomaticus minor muscle) 위입술올림근 (levator labit superioris muscle) 위입술올림근 (levator labii superioris muscle) 위입술콧방울올림근 (levator labii superforts alaeque nasi muscle) 위입술콧방울올림근 (levator labii superioris alaeque nasi muscle) 아래입술내림 (depressor labii inferioris muscle) 아래입술내림근 (depressor labii inferioris muscle) 입꼬리당김근 (risorius muscle) 입꼬리당김근 (risorius muscle) 턱끝근 (mentalis muscle) 턱끝근 (mentalis muscle) 입꼬리올림근 (levator anguli oris muscle) 입꼬리올림근 (levator anguli oris muscle) 얼굴신경의 목가지 (cervical branch) 목가지는 여러개 귀밑샘관 (paroid duct) 볼가지 (buacal branch) 택보서리가지 (marginal mandibular branch) 목가지 (cervical branch) 얼굴동맥 (facial artery) 주행방향 얼굴동맥 (facial artery) 이마가지 (frontal branch) 턱끝신경 (mental nerve) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 코중격연골 (septal cartilage) 코중격연골 (septal cartilage) 갈비뼈 (ribs) 복장뼈각 (sternal angle) 복장뼈칼돌기 (xiphoid process) 분류: region=head (conf 0.61) · layers=['deep', 'skin', 'superficial'] · classes=['artery', 'bone', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s03-본문",
    "type": "anatomy",
+   "unit": "1·3·6·7·9·14·15회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "본문",
    "tags": [],
@@ -6213,11 +6600,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s03/sec-01-본문.md",
    "snippet": "구조물 용어 (0개) 분류: region=lower limb (conf 0.51) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 본문 3회차(0825) 허미선pf.pdf 구조물 용어 (0개) 분류: region=lower limb (conf 0.51) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 본문 1·3·6·7·9·14·15회차 · 다리 3회차(0825) 허미선pf.pdf 구조물 용어 (0개) 분류: region=lower limb (conf 0.51) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s02-본문",
    "type": "anatomy",
+   "unit": "1·3·7회차 · 등",
    "topic": "Anatomy",
    "subtopic": "본문",
    "tags": [],
@@ -6226,11 +6614,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s02/sec-01-본문.md",
    "snippet": "구조물 용어 (0개) 분류: region=back (conf 0.43) · layers=['cavity visceral', 'deep', 'skin'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 본문 2회차(0818) 김홍태pf.pdf 구조물 용어 (0개) 분류: region=back (conf 0.43) · layers=['cavity visceral', 'deep', 'skin'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 본문 1·3·7회차 · 등 2회차(0818) 김홍태pf.pdf 구조물 용어 (0개) 분류: region=back (conf 0.43) · layers=['cavity visceral', 'deep', 'skin'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-daily-2026-08-12",
    "type": "anatomy",
+   "unit": "등·다리",
    "topic": "Anatomy",
    "subtopic": "daily plan 2026-08-12",
    "tags": [],
@@ -6239,11 +6628,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/daily/2026-08-12.md",
    "snippet": "오늘의 학습 (2026 08 12 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 29일 · Tagging 2까지 68일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
-   "text": "Anatomy daily plan 2026-08-12 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 12 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 29일 · Tagging 2까지 68일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+   "text": "Anatomy daily plan 2026-08-12 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 12 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 29일 · Tagging 2까지 68일 예상 소요: 약 29분 문항 9개 · 개념 3개 · 복습 0개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-ans-a2-tagging2",
    "type": "anatomy",
+   "unit": "",
    "topic": "Anatomy",
    "subtopic": "Tagging 2 answer-only material",
    "tags": [],
@@ -6257,6 +6647,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "anatomy-2026-0022",
    "type": "anatomy",
+   "unit": "3회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "3회차 종합 정리 — 뒤통수밑삼각 / 어깨뼈부위 / 다리오금·종아리 뒤칸",
    "tags": [
@@ -6270,11 +6661,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/notes/anatomy-2026-0022-s03-study.md",
    "snippet": "0. 딸린 시각 자료 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 어깨뼈부위 3공간 + 어깨동맥그물 assets/anatomy/diag scapular spaces labeled.svg … quiz.svg anatomy 2026 0031 개념 카드 anatomy 2026 0032 에 같은 도해와 경계·내용물 표가 있다. 라벨판으로 익히고 → 퀴즈판으로 번호핀을 답한 뒤 → 문항 카드로 채점한다. 아직 없는 도해: 뒤통수밑삼각 ",
-   "text": "Anatomy 3회차 종합 정리 — 뒤통수밑삼각 / 어깨뼈부위 / 다리오금·종아리 뒤칸 정리 3회차 예습시험 태깅 0. 딸린 시각 자료 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 어깨뼈부위 3공간 + 어깨동맥그물 assets/anatomy/diag scapular spaces labeled.svg … quiz.svg anatomy 2026 0031 개념 카드 anatomy 2026 0032 에 같은 도해와 경계·내용물 표가 있다. 라벨판으로 익히고 → 퀴즈판으로 번호핀을 답한 뒤 → 문항 카드로 채점한다. 아직 없는 도해: 뒤통수밑삼각 · 다리오금(경계·내용물 깊이 순서). 같은 형식으로 추가 예정. 제작 규격은 docs/ANATOMY VISUALS.md . 1. 뒤통수밑삼각 (suboccipital triangle) 머리반가시근을 젖히면 나오는, C1·C2 주변의 깊은 삼각. 근육 4개 중 3개가 경계 를 이룬다. 근육 이는곳 → 닿는곳 삼각에서의 위치 큰뒤머리곧은근 rectus capitis posterior major C2 가시돌기 → 아래목덜미선 가쪽 위안쪽 경계 작은뒤머리곧은근 rectus capitis posterior minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖(안쪽) 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 위가쪽 경계 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 아래 경계 4개 모두 뒤통수밑신경(C1 뒤가지, 순수 운동) 지배. 작용: 머리 폄·같은쪽 돌림(미세조정). 내용물 : 척추동맥(C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경. 정맥얼기 동반. 신경 3형제 (모두 뒤가지) C1 뒤통수밑신경 → 운동 (뒤통수밑근육 4개) — 삼각 \"안\" C2 큰뒤통수신경 → 감각 (뒤통수 피부, 가장 굵은 피부가지) 아래머리빗근 \"아래모서리\"를 감아 올라와 등세모근 관통 C3 셋째뒤통수신경 → 감각 (뒤통수 아래 안쪽 좁은 영역) 혼동 주의: 뒤통수밑신경(운동) vs 큰뒤통수신경(감각) . 실습영상 태깅은 \"아래머리빗근을 감아 도는 신경\" = 큰뒤통수신경. 임상: 큰뒤통수신경 포착 → 뒤통수신경통. 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약. 2. 어깨뼈부위 (scapular region) 2 1. 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 겨드랑신경(C5·6) 벌림(15–90°)·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 어깨위신경 벌림 개시(0–15°) 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 돌림근띠(SITS): 가시위근·가시아래근·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다 . 2 2. 3개의 공간 — 태깅 최다 빈출 (위) 가시아래근/작은원근 ┌────────────┬──────────────┐ 세모공간│ triangular │ quadrangular │네모공간 (안쪽) │ space │ space │(가쪽) │ 어깨휘돌이A │ 겨드랑신경 │ │ │ 뒤위팔휘돌이A │ └────────────┴──────────────┘ (아래) 큰원근 (가쪽 경계: 위팔뼈 외과목 / 안쪽: 위팔세갈래근 긴갈래) 세모간격 triangular interval (큰원근 아래): 노신경 + 깊은위팔동맥 공간 경계 요약 내용물 네모공간 작은원근(위)·큰원근(아래)·긴갈래(안)·외과목(가쪽) 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 작은원근(위)·큰원근(아래)·긴갈래(가쪽) 어깨휘돌이동맥 세모간격 큰원근(위)·긴갈래(안)·위팔뼈(가쪽) 노신경 + 깊은위팔동맥 2 3. 어깨동맥그물 (scapular anastomosis) 빗장밑동맥 ↔ 겨드랑동맥 사이 우회로: 어깨위동맥(갑상목동맥) + 등쪽어깨동맥 ↔ 어깨휘돌이동맥(어깨밑동맥 가지) . 겨드랑동맥 근위 결찰 시 측부순환 경로 문항으로 출제. 어깨위신경·동맥과 위가로어깨인대: \"Army over the bridge, Navy under\" — 동맥(artery)은 인대 위, 신경(nerve)은 어깨패임 속(인대 아래). 3. 다리오금 (popliteal fossa) 경계(마름모) 내용물 (얕음 → 깊음) 위가쪽: 넙다리두갈래근 정강신경 → 오금정맥 → 오금동맥 위안쪽: 반힘줄근·반막근 (동맥이 가장 깊다 — 맥박 촉진 시 깊이 압박) 아래: 장딴지근 두 갈래 + 작은두렁정맥 말단, 오금림프절, 지방 넙다리동맥은 모음근구멍(adductor hiatus) 통과와 동시에 오금동맥으로 개명. 무릎동맥 5가지 : 위가쪽·위안쪽·중간·아래가쪽·아래안쪽 → 무릎동맥그물. 오금동맥은 오금근 아래모서리에서 앞정강동맥 + 뒤정강동맥 으로 종말분지. 뒤정강동맥은 곧 종아리동맥(fibular a.) 을 낸다. 온종아리신경은 넙다리두갈래근 힘줄 안쪽을 따라 종아리뼈목 을 감아돈다 — 종아리뼈목 골절·석고붕대 압박 → 발처짐(foot drop) + 발등 감각소실 . 오금동맥류·Baker낭도 오금 종괴 감별로 언급됨. 4. 종아리 뒤칸 (posterior compartment of leg) 4 1. 얕은층·깊은층 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius (두 갈래) 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용). 결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 무릎 잠금 해제 (unlocking) 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 가쪽(종아리뼈)에서 기시 — 교차 주의 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음. 발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). 4 2. 안쪽복사 뒤 통과 순서 (굴근지지띠 아래, 앞→뒤) Tom, Dick ANd Harry T 뒤정강근 힘줄 (Tibialis posterior) D 긴발가락굽힘근 (flexor Digitorum longus) A 뒤정강동맥 (posterior tibial Artery) N 정강신경 (tibial Nerve) H 긴엄지굽힘근 (flexor Hallucis longus) 뒤정강동맥 맥박: 안쪽복사 뒤에서 촉진(말초동맥질환 진찰). 장딴지 피부: 안쪽장딴지피부신경(정강신경) + 가쪽장딴지피부신경(온종아리신경) → 장딴지신경(sural n.) 합류, 작은두렁정맥과 동행(신경이식 공여 단골). 5. 예습시험 체크리스트 (10문제 대비) 1. 뒤통수밑삼각 경계 3근육 + 내용물 2가지(척추동맥·뒤통수밑신경). 2. 아래머리빗근 아래모서리를 감아 도는 신경 = 큰뒤통수신경(C2, 감각). 3. 뒤통수밑신경(C1) = 운동 — 큰뒤통수신경과 혼동 금지. 4. 네모공간 내용물 = 겨드랑신경 + 뒤위팔휘돌이동맥 (경계 4가지까지). 5. 세모간격 = 노신경 + 깊은위팔동맥. 6. 돌림근띠 4근육과 큰원근 제외 근거. 7. 다리오금 내용물 깊이 순서: 정강신경 오금정맥 오금동맥. 8. 넙다리동맥 → 오금동맥 개명 지점 = 모음근구멍. 9. 종아리뼈목 골절 → 온종아리신경 → 발처짐. 10. 안쪽복사 뒤 Tom Dick ANd Harry 순서 / 오금근 = 무릎 잠금 해제."
+   "text": "Anatomy 3회차 종합 정리 — 뒤통수밑삼각 / 어깨뼈부위 / 다리오금·종아리 뒤칸 3회차 · 등·다리 정리 3회차 예습시험 태깅 0. 딸린 시각 자료 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 어깨뼈부위 3공간 + 어깨동맥그물 assets/anatomy/diag scapular spaces labeled.svg … quiz.svg anatomy 2026 0031 개념 카드 anatomy 2026 0032 에 같은 도해와 경계·내용물 표가 있다. 라벨판으로 익히고 → 퀴즈판으로 번호핀을 답한 뒤 → 문항 카드로 채점한다. 아직 없는 도해: 뒤통수밑삼각 · 다리오금(경계·내용물 깊이 순서). 같은 형식으로 추가 예정. 제작 규격은 docs/ANATOMY VISUALS.md . 1. 뒤통수밑삼각 (suboccipital triangle) 머리반가시근을 젖히면 나오는, C1·C2 주변의 깊은 삼각. 근육 4개 중 3개가 경계 를 이룬다. 근육 이는곳 → 닿는곳 삼각에서의 위치 큰뒤머리곧은근 rectus capitis posterior major C2 가시돌기 → 아래목덜미선 가쪽 위안쪽 경계 작은뒤머리곧은근 rectus capitis posterior minor C1 뒤결절 → 아래목덜미선 안쪽 삼각 밖(안쪽) 위머리빗근 obliquus capitis superior C1 가로돌기 → 위·아래목덜미선 사이 위가쪽 경계 아래머리빗근 obliquus capitis inferior C2 가시돌기 → C1 가로돌기 아래 경계 4개 모두 뒤통수밑신경(C1 뒤가지, 순수 운동) 지배. 작용: 머리 폄·같은쪽 돌림(미세조정). 내용물 : 척추동맥(C1 뒤활 위 고랑을 가로지름) + 뒤통수밑신경. 정맥얼기 동반. 신경 3형제 (모두 뒤가지) C1 뒤통수밑신경 → 운동 (뒤통수밑근육 4개) — 삼각 \"안\" C2 큰뒤통수신경 → 감각 (뒤통수 피부, 가장 굵은 피부가지) 아래머리빗근 \"아래모서리\"를 감아 올라와 등세모근 관통 C3 셋째뒤통수신경 → 감각 (뒤통수 아래 안쪽 좁은 영역) 혼동 주의: 뒤통수밑신경(운동) vs 큰뒤통수신경(감각) . 실습영상 태깅은 \"아래머리빗근을 감아 도는 신경\" = 큰뒤통수신경. 임상: 큰뒤통수신경 포착 → 뒤통수신경통. 척추동맥은 고리뼈 위에서 굽이가 심해 경추 과신전 손상에 취약. 2. 어깨뼈부위 (scapular region) 2 1. 근육 근육 이는곳 → 닿는곳 신경 작용 어깨세모근 deltoid 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 → 세모근거친면 겨드랑신경(C5·6) 벌림(15–90°)·굽힘·폄 가시위근 supraspinatus 가시위오목 → 큰결절 위면 어깨위신경 벌림 개시(0–15°) 가시아래근 infraspinatus 가시아래오목 → 큰결절 중간면 어깨위신경 가쪽돌림 작은원근 teres minor 어깨뼈 가쪽모서리 위 → 큰결절 아래면 겨드랑신경 가쪽돌림 큰원근 teres major 어깨뼈 아래각 → 결절사이고랑 안쪽능선 아래어깨밑신경 모음·안쪽돌림 돌림근띠(SITS): 가시위근·가시아래근·작은원근·어깨밑근. 큰원근은 돌림근띠가 아니다 . 2 2. 3개의 공간 — 태깅 최다 빈출 (위) 가시아래근/작은원근 ┌────────────┬──────────────┐ 세모공간│ triangular │ quadrangular │네모공간 (안쪽) │ space │ space │(가쪽) │ 어깨휘돌이A │ 겨드랑신경 │ │ │ 뒤위팔휘돌이A │ └────────────┴──────────────┘ (아래) 큰원근 (가쪽 경계: 위팔뼈 외과목 / 안쪽: 위팔세갈래근 긴갈래) 세모간격 triangular interval (큰원근 아래): 노신경 + 깊은위팔동맥 공간 경계 요약 내용물 네모공간 작은원근(위)·큰원근(아래)·긴갈래(안)·외과목(가쪽) 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 작은원근(위)·큰원근(아래)·긴갈래(가쪽) 어깨휘돌이동맥 세모간격 큰원근(위)·긴갈래(안)·위팔뼈(가쪽) 노신경 + 깊은위팔동맥 2 3. 어깨동맥그물 (scapular anastomosis) 빗장밑동맥 ↔ 겨드랑동맥 사이 우회로: 어깨위동맥(갑상목동맥) + 등쪽어깨동맥 ↔ 어깨휘돌이동맥(어깨밑동맥 가지) . 겨드랑동맥 근위 결찰 시 측부순환 경로 문항으로 출제. 어깨위신경·동맥과 위가로어깨인대: \"Army over the bridge, Navy under\" — 동맥(artery)은 인대 위, 신경(nerve)은 어깨패임 속(인대 아래). 3. 다리오금 (popliteal fossa) 경계(마름모) 내용물 (얕음 → 깊음) 위가쪽: 넙다리두갈래근 정강신경 → 오금정맥 → 오금동맥 위안쪽: 반힘줄근·반막근 (동맥이 가장 깊다 — 맥박 촉진 시 깊이 압박) 아래: 장딴지근 두 갈래 + 작은두렁정맥 말단, 오금림프절, 지방 넙다리동맥은 모음근구멍(adductor hiatus) 통과와 동시에 오금동맥으로 개명. 무릎동맥 5가지 : 위가쪽·위안쪽·중간·아래가쪽·아래안쪽 → 무릎동맥그물. 오금동맥은 오금근 아래모서리에서 앞정강동맥 + 뒤정강동맥 으로 종말분지. 뒤정강동맥은 곧 종아리동맥(fibular a.) 을 낸다. 온종아리신경은 넙다리두갈래근 힘줄 안쪽을 따라 종아리뼈목 을 감아돈다 — 종아리뼈목 골절·석고붕대 압박 → 발처짐(foot drop) + 발등 감각소실 . 오금동맥류·Baker낭도 오금 종괴 감별로 언급됨. 4. 종아리 뒤칸 (posterior compartment of leg) 4 1. 얕은층·깊은층 층 근육 닿는곳 비고 얕은층 장딴지근 gastrocnemius (두 갈래) 발꿈치힘줄 무릎 위 기시 → 무릎 굽힘도 얕은층 가자미근 soleus 발꿈치힘줄 무릎 아래 기시 — \"제2의 심장\" 얕은층 장딴지빗근 plantaris 발꿈치힘줄 안쪽 힘줄 길다(이식용). 결손 변이 깊은층 오금근 popliteus 정강뼈 뒤 위 무릎 잠금 해제 (unlocking) 깊은층 긴발가락굽힘근 FDL 2–5 끝마디 안쪽에서 기시 깊은층 긴엄지굽힘근 FHL 엄지 끝마디 가쪽(종아리뼈)에서 기시 — 교차 주의 깊은층 뒤정강근 tibialis posterior 발배뼈·안쪽쐐기뼈 가장 깊음. 발바닥활 유지 전 근육 정강신경 지배, 혈류는 뒤정강동맥 (+종아리동맥). 4 2. 안쪽복사 뒤 통과 순서 (굴근지지띠 아래, 앞→뒤) Tom, Dick ANd Harry T 뒤정강근 힘줄 (Tibialis posterior) D 긴발가락굽힘근 (flexor Digitorum longus) A 뒤정강동맥 (posterior tibial Artery) N 정강신경 (tibial Nerve) H 긴엄지굽힘근 (flexor Hallucis longus) 뒤정강동맥 맥박: 안쪽복사 뒤에서 촉진(말초동맥질환 진찰). 장딴지 피부: 안쪽장딴지피부신경(정강신경) + 가쪽장딴지피부신경(온종아리신경) → 장딴지신경(sural n.) 합류, 작은두렁정맥과 동행(신경이식 공여 단골). 5. 예습시험 체크리스트 (10문제 대비) 1. 뒤통수밑삼각 경계 3근육 + 내용물 2가지(척추동맥·뒤통수밑신경). 2. 아래머리빗근 아래모서리를 감아 도는 신경 = 큰뒤통수신경(C2, 감각). 3. 뒤통수밑신경(C1) = 운동 — 큰뒤통수신경과 혼동 금지. 4. 네모공간 내용물 = 겨드랑신경 + 뒤위팔휘돌이동맥 (경계 4가지까지). 5. 세모간격 = 노신경 + 깊은위팔동맥. 6. 돌림근띠 4근육과 큰원근 제외 근거. 7. 다리오금 내용물 깊이 순서: 정강신경 오금정맥 오금동맥. 8. 넙다리동맥 → 오금동맥 개명 지점 = 모음근구멍. 9. 종아리뼈목 골절 → 온종아리신경 → 발처짐. 10. 안쪽복사 뒤 Tom Dick ANd Harry 순서 / 오금근 = 무릎 잠금 해제."
   },
   {
    "id": "anatomy-2026-0021",
    "type": "anatomy",
+   "unit": "2회차 · 등·다리",
    "topic": "Anatomy",
    "subtopic": "2회차 종합 정리 — 등 근육 3층 / 볼기부위 / 넓적다리 뒤칸",
    "tags": [
@@ -6288,11 +6680,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/notes/anatomy-2026-0021-s02-study.md",
    "snippet": "0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 등 근육 3층·신경지배 assets/anatomy/diag back layers labeled.svg … quiz.svg anatomy 2026 0027 큰궁둥구멍 통과 구조물 + 혈관 분지 assets/anatomy/diag gluteal foramina labeled.svg … quiz.svg anatomy 2026 0028 개념 카드 a",
-   "text": "Anatomy 2회차 종합 정리 — 등 근육 3층 / 볼기부위 / 넓적다리 뒤칸 정리 2회차 예습시험 태깅 0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 등 근육 3층·신경지배 assets/anatomy/diag back layers labeled.svg … quiz.svg anatomy 2026 0027 큰궁둥구멍 통과 구조물 + 혈관 분지 assets/anatomy/diag gluteal foramina labeled.svg … quiz.svg anatomy 2026 0028 개념 카드 anatomy 2026 0029 (등 근육 3층)· anatomy 2026 0030 (볼기부위)에 같은 도해와 표가 들어 있다. 라벨판으로 익히고 → 퀴즈판으로 번호핀을 답한 뒤 → 문항 카드로 채점한다. 1. 등 근육 — 3층 구조 등 근육은 얕은층(팔이음뼈 운동) → 중간층(호흡 보조) → 깊은층(고유등근육, 척주 운동) 으로 내려간다. 신경지배 대원칙: 얕은·중간층은 척수신경 앞가지 (등세모근만 더부신경 XI), 깊은층(고유등근육)은 뒤가지 . 태깅에서 \"이 근육의 지배신경은?\"이 나오면 층부터 판단한다. 1 1. 얕은층 (superficial layer) 근육 이는곳 닿는곳 신경 작용 등세모근 trapezius 바깥뒤통수뼈융기·목덜미인대·C7–T12 가시돌기 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 더부신경(XI) (+C3·4 고유감각) 상부: 올림·위쪽돌림 / 중부: 뒤당김 / 하부: 내림 넓은등근 latissimus dorsi T7–12 가시돌기·등허리근막·엉덩뼈능선·아래 갈비뼈 3–4 위팔뼈 결절사이고랑 바닥 가슴등신경(C6–8) 어깨 폄·모음·안쪽돌림 (수영·턱걸이) 어깨올림근 levator scapulae C1–4 가로돌기 어깨뼈 위각–가시 사이 안쪽모서리 등쪽어깨신경(C5) (+C3·4) 어깨뼈 올림·아래쪽돌림 작은마름근 rhomboid minor 목덜미인대·C7–T1 가시돌기 어깨뼈가시 안쪽 끝 높이 안쪽모서리 등쪽어깨신경(C5) 어깨뼈 뒤당김·고정 큰마름근 rhomboid major T2–5 가시돌기 어깨뼈 안쪽모서리(가시–아래각) 등쪽어깨신경(C5) 어깨뼈 뒤당김·아래쪽돌림 1 2. 중간층 — 호흡 보조 근육 위치·주행 신경 작용 위뒤톱니근 serratus posterior superior C7–T3 가시돌기 → 2–5갈비뼈 갈비사이신경 갈비뼈 올림(들숨) 아래뒤톱니근 serratus posterior inferior T11–L2 가시돌기 → 9–12갈비뼈 갈비사이신경 갈비뼈 내림(날숨) 1 3. 깊은층 — 고유등근육 (뒤가지 지배) 척주세움근 erector spinae (세로 3기둥, 가쪽→안쪽) ├─ 엉덩갈비근 iliocostalis (가장 가쪽 — 갈비뼈각에 닿음) ├─ 가장긴근 longissimus (중간 — 가로돌기·꼭지돌기) └─ 가시근 spinalis (가장 안쪽 — 가시돌기) 가로돌기가시근육 transversospinalis (깊은층의 깊은층, 얕→깊) ├─ 반가시근 semispinalis (4–6분절 건너뜀, 머리반가시근이 뒤통수까지) ├─ 뭇갈래근 multifidus (2–4분절, 허리에서 가장 발달) └─ 돌림근 rotatores (1–2분절, 가슴에서 발달) 공통 작용: 양쪽 수축 = 척주 폄, 한쪽 수축 = 같은쪽 굽힘·반대쪽 돌림(가로돌기가시근육). 청진삼각 triangle of auscultation : 등세모근 가쪽모서리·넓은등근 위모서리·큰마름근 안쪽(또는 어깨뼈 안쪽모서리) — 허파 청진이 잘 되는 얇은 부위. 허리삼각(Petit) : 엉덩뼈능선·넓은등근 앞모서리·배바깥빗근 뒤모서리 — 허리탈장 호발. 2. 볼기부위 (gluteal region) 2 1. 근육 근육 신경 작용 태깅 포인트 큰볼기근 gluteus maximus 아래볼기신경 엉덩관절 폄·가쪽돌림 (계단·일어서기) 가장 크고 얕음. 엉덩정강띠에도 닿음 중간볼기근 gluteus medius 위볼기신경 벌림·안쪽돌림, 보행 시 골반 수평 유지 Trendelenburg 작은볼기근 gluteus minimus 위볼기신경 벌림·안쪽돌림 중간볼기근 심부 궁둥구멍근 piriformis S1·2 앞가지 가쪽돌림 볼기부위의 landmark — 위·아래 기준 위쌍둥이근/속폐쇄근/아래쌍둥이근 — 가쪽돌림 궁둥구멍근 아래에 삼총사 넙다리네모근 quadratus femoris — 가쪽돌림 가장 아래 2 2. 큰궁둥구멍 통과 구조물 — 궁둥구멍근 기준 큰궁둥구멍 greater sciatic foramen ├─ 위구멍(suprapiriform): 위볼기동맥·정맥·신경 └─ 아래구멍(infrapiriform): 아래볼기동맥·정맥·신경 궁둥신경 (가장 가쪽) 뒤넙다리피부신경 음부신경·속음부동맥 (→ 작은궁둥구멍으로 재진입) 위·아래볼기동맥은 모두 속엉덩동맥 가지. 위볼기동맥은 뒤갈래, 아래볼기동맥은 앞갈래. Trendelenburg 징후 : 위볼기신경 손상(중간·작은볼기근 마비) → 한발서기에서 반대쪽 골반이 처짐. 보상 보행 = 몸통을 환측으로 기울임. 근육주사 안전구역 : 볼기 위가쪽 1/4 (또는 von Hochstetter 부위) — 궁둥신경·볼기신경 손상 회피. 2 3. 궁둥신경 (sciatic nerve, L4–S3) 인체 최대 신경. 아래구멍으로 나와 궁둥뼈결절과 큰돌기 중간점 심부를 지나 하행. 넓적다리 뒤칸에서 햄스트링 지배 → 다리오금 위쪽에서 정강신경 + 온종아리신경 으로 분지 (분지 높이는 변이 많음 — 궁둥구멍근을 뚫는 변이도 태깅 단골). 3. 넓적다리 뒤칸 — 햄스트링 근육 이는곳 닿는곳 신경 반힘줄근 semitendinosus 궁둥뼈결절 정강뼈 안쪽 (거위발 pes anserinus) 정강신경분 반막근 semimembranosus 궁둥뼈결절 정강뼈 안쪽관절융기 뒤 정강신경분 넙다리두갈래근 긴갈래 궁둥뼈결절 종아리뼈머리 정강신경분 넙다리두갈래근 짧은갈래 넙다리뼈 거친선 종아리뼈머리 온종아리신경분 햄스트링 공통 조건: 궁둥뼈결절 기시 + 무릎 아래 정지 + 정강신경 지배 → 짧은갈래는 셋 다 어긋나는 예외 (거친선 기시·온종아리 지배)로 구분 문항 단골. 작용: 엉덩관절 폄 + 무릎 굽힘. 무릎 굽힌 상태에서 반힘줄·반막근은 안쪽돌림, 두갈래근은 가쪽돌림. 안쪽 무릎 뒤에서 반막근 힘줄과 장딴지근 안쪽갈래 사이 윤활주머니 → Baker 낭. 4. 관계도 한 장 요약 [등] 피부 → 얕은근막 → 등세모근/넓은등근 (앞가지·XI) └ 마름근·어깨올림근 (등쪽어깨신경) → 뒤톱니근 (갈비사이신경) → 등허리근막 열면 → 척주세움근 3기둥 → 가로돌기가시근육 (모두 뒤가지) [볼기] 큰볼기근 젖히면 → 중간볼기근 / 궁둥구멍근(기준!) 위구멍: 위볼기 A·V·N 아래구멍: 아래볼기 A·V·N, 궁둥N, 뒤넙다리피부N, 음부N [뒤칸] 궁둥뼈결절 → 햄스트링 3 + 짧은갈래(예외) → 다리오금에서 정강N/온종아리N 분지 5. 예습시험 체크리스트 (10문제 대비) 1. 등세모근 지배신경 = 더부신경(XI) — 목빗근과 함께. 2. 넓은등근 닿는곳 = 결절사이고랑 바닥 (\"Lady between two Majors\" 사이). 3. 마름근·어깨올림근 = 등쪽어깨신경(C5). 4. 청진삼각 경계 3가지. 5. 고유등근육(척주세움근 3기둥 가쪽→안쪽 순서: 엉덩갈비 가장긴 가시). 6. 위볼기신경 손상 → Trendelenburg (처지는 쪽 = 반대쪽). 7. 궁둥구멍근 위/아래 통과 구조물 구분. 8. 궁둥신경 표면 표지: 궁둥뼈결절 큰돌기 중간점. 9. 햄스트링 4개 중 예외(짧은갈래) 3가지 근거. 10. 거위발(pes anserinus) 구성: 넙다리빗근·두덩정강근·반힘줄근."
+   "text": "Anatomy 2회차 종합 정리 — 등 근육 3층 / 볼기부위 / 넓적다리 뒤칸 2회차 · 등·다리 정리 2회차 예습시험 태깅 0. 딸린 시각 자료 (먼저 보고 시작) 도해 라벨판(학습) 퀴즈판(태깅 연습) 문항 등 근육 3층·신경지배 assets/anatomy/diag back layers labeled.svg … quiz.svg anatomy 2026 0027 큰궁둥구멍 통과 구조물 + 혈관 분지 assets/anatomy/diag gluteal foramina labeled.svg … quiz.svg anatomy 2026 0028 개념 카드 anatomy 2026 0029 (등 근육 3층)· anatomy 2026 0030 (볼기부위)에 같은 도해와 표가 들어 있다. 라벨판으로 익히고 → 퀴즈판으로 번호핀을 답한 뒤 → 문항 카드로 채점한다. 1. 등 근육 — 3층 구조 등 근육은 얕은층(팔이음뼈 운동) → 중간층(호흡 보조) → 깊은층(고유등근육, 척주 운동) 으로 내려간다. 신경지배 대원칙: 얕은·중간층은 척수신경 앞가지 (등세모근만 더부신경 XI), 깊은층(고유등근육)은 뒤가지 . 태깅에서 \"이 근육의 지배신경은?\"이 나오면 층부터 판단한다. 1 1. 얕은층 (superficial layer) 근육 이는곳 닿는곳 신경 작용 등세모근 trapezius 바깥뒤통수뼈융기·목덜미인대·C7–T12 가시돌기 빗장뼈 가쪽 1/3·봉우리·어깨뼈가시 더부신경(XI) (+C3·4 고유감각) 상부: 올림·위쪽돌림 / 중부: 뒤당김 / 하부: 내림 넓은등근 latissimus dorsi T7–12 가시돌기·등허리근막·엉덩뼈능선·아래 갈비뼈 3–4 위팔뼈 결절사이고랑 바닥 가슴등신경(C6–8) 어깨 폄·모음·안쪽돌림 (수영·턱걸이) 어깨올림근 levator scapulae C1–4 가로돌기 어깨뼈 위각–가시 사이 안쪽모서리 등쪽어깨신경(C5) (+C3·4) 어깨뼈 올림·아래쪽돌림 작은마름근 rhomboid minor 목덜미인대·C7–T1 가시돌기 어깨뼈가시 안쪽 끝 높이 안쪽모서리 등쪽어깨신경(C5) 어깨뼈 뒤당김·고정 큰마름근 rhomboid major T2–5 가시돌기 어깨뼈 안쪽모서리(가시–아래각) 등쪽어깨신경(C5) 어깨뼈 뒤당김·아래쪽돌림 1 2. 중간층 — 호흡 보조 근육 위치·주행 신경 작용 위뒤톱니근 serratus posterior superior C7–T3 가시돌기 → 2–5갈비뼈 갈비사이신경 갈비뼈 올림(들숨) 아래뒤톱니근 serratus posterior inferior T11–L2 가시돌기 → 9–12갈비뼈 갈비사이신경 갈비뼈 내림(날숨) 1 3. 깊은층 — 고유등근육 (뒤가지 지배) 척주세움근 erector spinae (세로 3기둥, 가쪽→안쪽) ├─ 엉덩갈비근 iliocostalis (가장 가쪽 — 갈비뼈각에 닿음) ├─ 가장긴근 longissimus (중간 — 가로돌기·꼭지돌기) └─ 가시근 spinalis (가장 안쪽 — 가시돌기) 가로돌기가시근육 transversospinalis (깊은층의 깊은층, 얕→깊) ├─ 반가시근 semispinalis (4–6분절 건너뜀, 머리반가시근이 뒤통수까지) ├─ 뭇갈래근 multifidus (2–4분절, 허리에서 가장 발달) └─ 돌림근 rotatores (1–2분절, 가슴에서 발달) 공통 작용: 양쪽 수축 = 척주 폄, 한쪽 수축 = 같은쪽 굽힘·반대쪽 돌림(가로돌기가시근육). 청진삼각 triangle of auscultation : 등세모근 가쪽모서리·넓은등근 위모서리·큰마름근 안쪽(또는 어깨뼈 안쪽모서리) — 허파 청진이 잘 되는 얇은 부위. 허리삼각(Petit) : 엉덩뼈능선·넓은등근 앞모서리·배바깥빗근 뒤모서리 — 허리탈장 호발. 2. 볼기부위 (gluteal region) 2 1. 근육 근육 신경 작용 태깅 포인트 큰볼기근 gluteus maximus 아래볼기신경 엉덩관절 폄·가쪽돌림 (계단·일어서기) 가장 크고 얕음. 엉덩정강띠에도 닿음 중간볼기근 gluteus medius 위볼기신경 벌림·안쪽돌림, 보행 시 골반 수평 유지 Trendelenburg 작은볼기근 gluteus minimus 위볼기신경 벌림·안쪽돌림 중간볼기근 심부 궁둥구멍근 piriformis S1·2 앞가지 가쪽돌림 볼기부위의 landmark — 위·아래 기준 위쌍둥이근/속폐쇄근/아래쌍둥이근 — 가쪽돌림 궁둥구멍근 아래에 삼총사 넙다리네모근 quadratus femoris — 가쪽돌림 가장 아래 2 2. 큰궁둥구멍 통과 구조물 — 궁둥구멍근 기준 큰궁둥구멍 greater sciatic foramen ├─ 위구멍(suprapiriform): 위볼기동맥·정맥·신경 └─ 아래구멍(infrapiriform): 아래볼기동맥·정맥·신경 궁둥신경 (가장 가쪽) 뒤넙다리피부신경 음부신경·속음부동맥 (→ 작은궁둥구멍으로 재진입) 위·아래볼기동맥은 모두 속엉덩동맥 가지. 위볼기동맥은 뒤갈래, 아래볼기동맥은 앞갈래. Trendelenburg 징후 : 위볼기신경 손상(중간·작은볼기근 마비) → 한발서기에서 반대쪽 골반이 처짐. 보상 보행 = 몸통을 환측으로 기울임. 근육주사 안전구역 : 볼기 위가쪽 1/4 (또는 von Hochstetter 부위) — 궁둥신경·볼기신경 손상 회피. 2 3. 궁둥신경 (sciatic nerve, L4–S3) 인체 최대 신경. 아래구멍으로 나와 궁둥뼈결절과 큰돌기 중간점 심부를 지나 하행. 넓적다리 뒤칸에서 햄스트링 지배 → 다리오금 위쪽에서 정강신경 + 온종아리신경 으로 분지 (분지 높이는 변이 많음 — 궁둥구멍근을 뚫는 변이도 태깅 단골). 3. 넓적다리 뒤칸 — 햄스트링 근육 이는곳 닿는곳 신경 반힘줄근 semitendinosus 궁둥뼈결절 정강뼈 안쪽 (거위발 pes anserinus) 정강신경분 반막근 semimembranosus 궁둥뼈결절 정강뼈 안쪽관절융기 뒤 정강신경분 넙다리두갈래근 긴갈래 궁둥뼈결절 종아리뼈머리 정강신경분 넙다리두갈래근 짧은갈래 넙다리뼈 거친선 종아리뼈머리 온종아리신경분 햄스트링 공통 조건: 궁둥뼈결절 기시 + 무릎 아래 정지 + 정강신경 지배 → 짧은갈래는 셋 다 어긋나는 예외 (거친선 기시·온종아리 지배)로 구분 문항 단골. 작용: 엉덩관절 폄 + 무릎 굽힘. 무릎 굽힌 상태에서 반힘줄·반막근은 안쪽돌림, 두갈래근은 가쪽돌림. 안쪽 무릎 뒤에서 반막근 힘줄과 장딴지근 안쪽갈래 사이 윤활주머니 → Baker 낭. 4. 관계도 한 장 요약 [등] 피부 → 얕은근막 → 등세모근/넓은등근 (앞가지·XI) └ 마름근·어깨올림근 (등쪽어깨신경) → 뒤톱니근 (갈비사이신경) → 등허리근막 열면 → 척주세움근 3기둥 → 가로돌기가시근육 (모두 뒤가지) [볼기] 큰볼기근 젖히면 → 중간볼기근 / 궁둥구멍근(기준!) 위구멍: 위볼기 A·V·N 아래구멍: 아래볼기 A·V·N, 궁둥N, 뒤넙다리피부N, 음부N [뒤칸] 궁둥뼈결절 → 햄스트링 3 + 짧은갈래(예외) → 다리오금에서 정강N/온종아리N 분지 5. 예습시험 체크리스트 (10문제 대비) 1. 등세모근 지배신경 = 더부신경(XI) — 목빗근과 함께. 2. 넓은등근 닿는곳 = 결절사이고랑 바닥 (\"Lady between two Majors\" 사이). 3. 마름근·어깨올림근 = 등쪽어깨신경(C5). 4. 청진삼각 경계 3가지. 5. 고유등근육(척주세움근 3기둥 가쪽→안쪽 순서: 엉덩갈비 가장긴 가시). 6. 위볼기신경 손상 → Trendelenburg (처지는 쪽 = 반대쪽). 7. 궁둥구멍근 위/아래 통과 구조물 구분. 8. 궁둥신경 표면 표지: 궁둥뼈결절 큰돌기 중간점. 9. 햄스트링 4개 중 예외(짧은갈래) 3가지 근거. 10. 거위발(pes anserinus) 구성: 넙다리빗근·두덩정강근·반힘줄근."
   },
   {
    "id": "anatomy-2026-0020",
    "type": "anatomy",
+   "unit": "3회차 · 등",
    "topic": "Anatomy",
    "subtopic": "큰뒤머리곧은근 실사 spotter (복원본)",
    "tags": [
@@ -6306,11 +6699,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0020.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 큰뒤머리곧은근 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 큰뒤머리곧은근 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0019",
    "type": "anatomy",
+   "unit": "3회차 · 등",
    "topic": "Anatomy",
    "subtopic": "큰뒤통수신경 실사 spotter (복원본)",
    "tags": [
@@ -6324,11 +6718,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0019.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 큰뒤통수신경 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 큰뒤통수신경 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0018",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "온종아리신경 실사 spotter (복원본)",
    "tags": [
@@ -6342,11 +6737,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0018.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 온종아리신경 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 온종아리신경 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0017",
    "type": "anatomy",
+   "unit": "3회차 · 다리",
    "topic": "Anatomy",
    "subtopic": "오금동맥 실사 spotter (복원본)",
    "tags": [
@@ -6360,11 +6756,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0017.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 오금동맥 실사 spotter (복원본) spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 오금동맥 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0016",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "등세모근 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -6379,11 +6776,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0016.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기가 그림 위에 많던 어려운 케이스의 복원 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p",
-   "text": "Anatomy 등세모근 실사 spotter (필기 제거·복원본) 등세모근 trapezius 등 얕은층 spotter 복원 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p1 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기가 그림 위에 많던 어려운 케이스의 복원 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf1 clean.png ."
+   "text": "Anatomy 등세모근 실사 spotter (필기 제거·복원본) 2회차 · 등 등세모근 trapezius 등 얕은층 spotter 복원 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf1 p1 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기가 그림 위에 많던 어려운 케이스의 복원 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf1 clean.png ."
   },
   {
    "id": "anatomy-2026-0015",
    "type": "anatomy",
+   "unit": "2회차 · 등",
    "topic": "Anatomy",
    "subtopic": "위볼기동맥 실사 spotter (필기 제거·복원본)",
    "tags": [
@@ -6398,11 +6796,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0015.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf2 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기 제거·복원 파이프라인 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf",
-   "text": "Anatomy 위볼기동맥 실사 spotter (필기 제거·복원본) 위볼기동맥 superior gluteal artery 볼기 spotter 복원 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p1 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf2 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기 제거·복원 파이프라인 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf2 clean.png ."
+   "text": "Anatomy 위볼기동맥 실사 spotter (필기 제거·복원본) 2회차 · 등 위볼기동맥 superior gluteal artery 볼기 spotter 복원 2회차(0818) 김홍태pf.pdf — 사용자 업로드 스캔 pf2 p1 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads a1 s02/pf2 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 필기 제거·복원 파이프라인 데모를 겸한다. 정답 및 해설 정답·해설은 frontmatter. 복원 전 원본은 업로드 PDF p1, 클린판은 pf2 clean.png ."
   },
   {
    "id": "anatomy-2026-0014",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "골반가로막 도해 spotter",
    "tags": [
@@ -6416,11 +6815,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0014.md",
    "snippet": "문제 자체 제작 모식도 spotter — 도해는 docs/assets/anatomy/diag pelvic diaphragm quiz.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판은 diag pelvic diaphragm labeled.svg (개념 카드에서 표시).",
-   "text": "Anatomy 골반가로막 도해 spotter 골반가로막 항문올림근 spotter 도해 14차시(0930) 문용석pf.pdf (도해는 자체 제작 모식도) 문제 자체 제작 모식도 spotter — 도해는 docs/assets/anatomy/diag pelvic diaphragm quiz.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판은 diag pelvic diaphragm labeled.svg (개념 카드에서 표시)."
+   "text": "Anatomy 골반가로막 도해 spotter 14회차 · 골반·회음 골반가로막 항문올림근 spotter 도해 14차시(0930) 문용석pf.pdf (도해는 자체 제작 모식도) 문제 자체 제작 모식도 spotter — 도해는 docs/assets/anatomy/diag pelvic diaphragm quiz.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판은 diag pelvic diaphragm labeled.svg (개념 카드에서 표시)."
   },
   {
    "id": "anatomy-2026-0013",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "속엉덩동맥 분지 도해 spotter",
    "tags": [
@@ -6433,11 +6833,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0013.md",
    "snippet": "문제 자체 제작 모식도 spotter — 도해는 docs/assets/anatomy/diag internal iliac quiz.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판은 diag internal iliac labeled.svg (개념 카드에서 표시).",
-   "text": "Anatomy 속엉덩동맥 분지 도해 spotter 속엉덩동맥 spotter 도해 14차시(0930) 문용석pf.pdf (도해는 자체 제작 모식도) 문제 자체 제작 모식도 spotter — 도해는 docs/assets/anatomy/diag internal iliac quiz.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판은 diag internal iliac labeled.svg (개념 카드에서 표시)."
+   "text": "Anatomy 속엉덩동맥 분지 도해 spotter 14회차 · 골반·회음 속엉덩동맥 spotter 도해 14차시(0930) 문용석pf.pdf (도해는 자체 제작 모식도) 문제 자체 제작 모식도 spotter — 도해는 docs/assets/anatomy/diag internal iliac quiz.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판은 diag internal iliac labeled.svg (개념 카드에서 표시)."
   },
   {
    "id": "anatomy-2026-0012",
    "type": "anatomy",
+   "unit": "12회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "항문관의 빗살선",
    "tags": [
@@ -6450,11 +6851,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0012.md",
    "snippet": "문제 빗살선 기준 — frontmatter 참조. 정답 및 해설 동맥·정맥·신경·림프의 분수령. 답가지 E는 자료에 없는 항목.",
-   "text": "Anatomy 항문관의 빗살선 빗살선 pectinate line 항문관 14차시(0930) 문용석pf.pdf 문제 빗살선 기준 — frontmatter 참조. 정답 및 해설 동맥·정맥·신경·림프의 분수령. 답가지 E는 자료에 없는 항목."
+   "text": "Anatomy 항문관의 빗살선 12회차 · 골반·회음 빗살선 pectinate line 항문관 14차시(0930) 문용석pf.pdf 문제 빗살선 기준 — frontmatter 참조. 정답 및 해설 동맥·정맥·신경·림프의 분수령. 답가지 E는 자료에 없는 항목."
   },
   {
    "id": "anatomy-2026-0011",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "사정관의 형성",
    "tags": [
@@ -6468,11 +6870,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0011.md",
    "snippet": "문제 사정관 형성 — frontmatter 참조. 정답 및 해설 정관팽대 + 정낭배출관 → 사정관 → 전립샘 관통 → 요도전립샘부분.",
-   "text": "Anatomy 사정관의 형성 사정관 ejaculatory duct 정관팽대 정낭 14차시(0930) 문용석pf.pdf 문제 사정관 형성 — frontmatter 참조. 정답 및 해설 정관팽대 + 정낭배출관 → 사정관 → 전립샘 관통 → 요도전립샘부분."
+   "text": "Anatomy 사정관의 형성 14회차 · 골반·회음 사정관 ejaculatory duct 정관팽대 정낭 14차시(0930) 문용석pf.pdf 문제 사정관 형성 — frontmatter 참조. 정답 및 해설 정관팽대 + 정낭배출관 → 사정관 → 전립샘 관통 → 요도전립샘부분."
   },
   {
    "id": "anatomy-2026-0010",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "요관의 골반 주행",
    "tags": [
@@ -6485,11 +6888,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0010.md",
    "snippet": "문제 요관 골반 주행 — frontmatter 참조. 정답 및 해설 속엉덩동맥 앞 → 자궁넓은인대 아래 → 방광 위가쪽각.",
-   "text": "Anatomy 요관의 골반 주행 요관 ureter 주행 14차시(0930) 문용석pf.pdf 문제 요관 골반 주행 — frontmatter 참조. 정답 및 해설 속엉덩동맥 앞 → 자궁넓은인대 아래 → 방광 위가쪽각."
+   "text": "Anatomy 요관의 골반 주행 14회차 · 골반·회음 요관 ureter 주행 14차시(0930) 문용석pf.pdf 문제 요관 골반 주행 — frontmatter 참조. 정답 및 해설 속엉덩동맥 앞 → 자궁넓은인대 아래 → 방광 위가쪽각."
   },
   {
    "id": "anatomy-2026-0009",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "자궁넓은인대의 부분 구별",
    "tags": [
@@ -6502,11 +6906,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0009.md",
    "snippet": "문제 자궁넓은인대 부분 구별 — frontmatter 참조. 정답 및 해설 위에서부터: 자궁관간막 난소간막 자궁간막. 걸이인대는 혈관 복막주름.",
-   "text": "Anatomy 자궁넓은인대의 부분 구별 자궁넓은인대 mesosalpinx 구별 14차시(0930) 문용석pf.pdf 문제 자궁넓은인대 부분 구별 — frontmatter 참조. 정답 및 해설 위에서부터: 자궁관간막 난소간막 자궁간막. 걸이인대는 혈관 복막주름."
+   "text": "Anatomy 자궁넓은인대의 부분 구별 14회차 · 골반·회음 자궁넓은인대 mesosalpinx 구별 14차시(0930) 문용석pf.pdf 문제 자궁넓은인대 부분 구별 — frontmatter 참조. 정답 및 해설 위에서부터: 자궁관간막 난소간막 자궁간막. 걸이인대는 혈관 복막주름."
   },
   {
    "id": "anatomy-2026-0008",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "항문올림근의 구성 — 위치 순서",
    "tags": [
@@ -6519,11 +6924,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0008.md",
    "snippet": "문제 항문올림근 위치 순서 — frontmatter 참조. 정답 및 해설 두덩곧창자근이 가장 앞·안쪽. 엉덩꼬리근은 힘줄활에서 기시(가장 가쪽).",
-   "text": "Anatomy 항문올림근의 구성 — 위치 순서 항문올림근 levator ani 골반가로막 14차시(0930) 문용석pf.pdf 문제 항문올림근 위치 순서 — frontmatter 참조. 정답 및 해설 두덩곧창자근이 가장 앞·안쪽. 엉덩꼬리근은 힘줄활에서 기시(가장 가쪽)."
+   "text": "Anatomy 항문올림근의 구성 — 위치 순서 14회차 · 골반·회음 항문올림근 levator ani 골반가로막 14차시(0930) 문용석pf.pdf 문제 항문올림근 위치 순서 — frontmatter 참조. 정답 및 해설 두덩곧창자근이 가장 앞·안쪽. 엉덩꼬리근은 힘줄활에서 기시(가장 가쪽)."
   },
   {
    "id": "anatomy-2026-0007",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "방광 속면의 매끈한 세모꼴 부위",
    "tags": [
@@ -6536,11 +6942,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0007.md",
    "snippet": "문제 방광 속면 spotter(단답) — frontmatter 참조. 정답 및 해설 정답은 frontmatter answer . 표지: 속요도구멍(아래 꼭짓점)·요관구멍×2·요관사이주름.",
-   "text": "Anatomy 방광 속면의 매끈한 세모꼴 부위 방광삼각 trigone spotter 14차시(0930) 문용석pf.pdf 문제 방광 속면 spotter(단답) — frontmatter 참조. 정답 및 해설 정답은 frontmatter answer . 표지: 속요도구멍(아래 꼭짓점)·요관구멍×2·요관사이주름."
+   "text": "Anatomy 방광 속면의 매끈한 세모꼴 부위 14회차 · 골반·회음 방광삼각 trigone spotter 14차시(0930) 문용석pf.pdf 문제 방광 속면 spotter(단답) — frontmatter 참조. 정답 및 해설 정답은 frontmatter answer . 표지: 속요도구멍(아래 꼭짓점)·요관구멍×2·요관사이주름."
   },
   {
    "id": "anatomy-2026-0006",
    "type": "anatomy",
+   "unit": "11회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "여자 골반안의 복막 오목",
    "tags": [
@@ -6553,11 +6960,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0006.md",
    "snippet": "문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다.",
-   "text": "Anatomy 여자 골반안의 복막 오목 곧창자자궁오목 rectouterine pouch 복막 14차시(0930) 문용석pf.pdf 문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다."
+   "text": "Anatomy 여자 골반안의 복막 오목 11회차 · 골반·회음 곧창자자궁오목 rectouterine pouch 복막 14차시(0930) 문용석pf.pdf 문제 여자 골반 복막 오목의 최하방 — frontmatter 참조. 정답 및 해설 곧창자자궁오목. 바닥은 질 윗부분을 덮는 복막이다."
   },
   {
    "id": "anatomy-2026-0005",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "폐쇄신경의 주행",
    "tags": [
@@ -6570,11 +6978,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0005.md",
    "snippet": "문제 폐쇄신경의 주행 순서 문제 — frontmatter stem / choices 참조. 정답 및 해설 기시(허리신경얼기) → 큰허리근 안쪽모서리 → 혈관 사이 통과 → 폐쇄관. 동맥은 신경 아래쪽.",
-   "text": "Anatomy 폐쇄신경의 주행 폐쇄신경 obturator nerve 주행 14차시(0930) 문용석pf.pdf 문제 폐쇄신경의 주행 순서 문제 — frontmatter stem / choices 참조. 정답 및 해설 기시(허리신경얼기) → 큰허리근 안쪽모서리 → 혈관 사이 통과 → 폐쇄관. 동맥은 신경 아래쪽."
+   "text": "Anatomy 폐쇄신경의 주행 14회차 · 골반·회음 폐쇄신경 obturator nerve 주행 14차시(0930) 문용석pf.pdf 문제 폐쇄신경의 주행 순서 문제 — frontmatter stem / choices 참조. 정답 및 해설 기시(허리신경얼기) → 큰허리근 안쪽모서리 → 혈관 사이 통과 → 폐쇄관. 동맥은 신경 아래쪽."
   },
   {
    "id": "anatomy-2026-0004",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "속엉덩동맥 분지 판별",
    "tags": [
@@ -6587,11 +6996,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-2/anatomy-2026-0004.md",
    "snippet": "문제 골반안의 동맥 박리 중이다. 다음 중 속엉덩동맥의 가지가 아닌 것은? A. 배꼽동맥 — B. 위볼기동맥 — C. 위곧창자동맥 — D. 폐쇄동맥 — E. 가쪽엉치동맥 정답 및 해설 정답은 frontmatter answer . 위곧창자동맥=아래창자간막동맥 가지(중간곧창자동맥과 문합).",
-   "text": "Anatomy 속엉덩동맥 분지 판별 속엉덩동맥 분지 internal iliac artery 14차시(0930) 문용석pf.pdf 문제 골반안의 동맥 박리 중이다. 다음 중 속엉덩동맥의 가지가 아닌 것은? A. 배꼽동맥 — B. 위볼기동맥 — C. 위곧창자동맥 — D. 폐쇄동맥 — E. 가쪽엉치동맥 정답 및 해설 정답은 frontmatter answer . 위곧창자동맥=아래창자간막동맥 가지(중간곧창자동맥과 문합)."
+   "text": "Anatomy 속엉덩동맥 분지 판별 14회차 · 골반·회음 속엉덩동맥 분지 internal iliac artery 14차시(0930) 문용석pf.pdf 문제 골반안의 동맥 박리 중이다. 다음 중 속엉덩동맥의 가지가 아닌 것은? A. 배꼽동맥 — B. 위볼기동맥 — C. 위곧창자동맥 — D. 폐쇄동맥 — E. 가쪽엉치동맥 정답 및 해설 정답은 frontmatter answer . 위곧창자동맥=아래창자간막동맥 가지(중간곧창자동맥과 문합)."
   },
   {
    "id": "anatomy-2026-0003",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "골반가로막의 구성 — 안에서 가쪽으로",
    "tags": [
@@ -6605,11 +7015,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/concepts/pelvis-perineum/anatomy-2026-0003.md",
    "snippet": "골반가로막 = 항문올림근 + 꼬리근 (+ 근막) 항문올림근(levator ani) ★tagging 답 후보 를 앞안쪽→가쪽 순서로: 1. 두덩곧창자근 (puborectalis) — 가장 앞·안쪽. 두덩뼈몸통에서 일어나 항문관을 감싸고 뒤에서 양쪽이 연결. 양쪽 사이 틈새 = 비뇨생식구멍 (요도·질 통과) 2. 두덩꼬리근 (pubococcygeus) — 두덩곧창자근 바로 가쪽. 두덩뼈몸통 → 꼬리뼈 3. 엉덩꼬리근 (ilioco",
-   "text": "Anatomy 골반가로막의 구성 — 안에서 가쪽으로 골반가로막 pelvic diaphragm 항문올림근 levator ani 14차시(0930) 문용석pf.pdf + tagging 2차.pdf 골반가로막 = 항문올림근 + 꼬리근 (+ 근막) 항문올림근(levator ani) ★tagging 답 후보 를 앞안쪽→가쪽 순서로: 1. 두덩곧창자근 (puborectalis) — 가장 앞·안쪽. 두덩뼈몸통에서 일어나 항문관을 감싸고 뒤에서 양쪽이 연결. 양쪽 사이 틈새 = 비뇨생식구멍 (요도·질 통과) 2. 두덩꼬리근 (pubococcygeus) — 두덩곧창자근 바로 가쪽. 두덩뼈몸통 → 꼬리뼈 3. 엉덩꼬리근 (iliococcygeus) — 가장 가쪽. 항문올림근힘줄활 에서 일어나 꼬리뼈로 4. 꼬리근 (coccygeus) — 항문올림근보다 가쪽. 궁둥뼈가시 → 꼬리뼈·엉치뼈 기준 구조물: 항문올림근힘줄활 — 속폐쇄근막이 선 모양으로 두꺼워진 것. 궁둥뼈가시 → 폐쇄관까지 거의 수평 전체 배열은 수평이 아니라 가쪽벽에서 아래안쪽으로 (움푹한 그릇 모양) — 그 아래면이 궁둥항문오목의 안쪽벽 이 된다 관계 문장(말로 설명하기) 1. 곧창자는 골반가로막을 뚫으며 항문곧창자연결이 그 높이에 있다. 2. 속폐쇄근(가쪽벽) → 속폐쇄근막 → 힘줄활 → 항문올림근 기시의 층 순서. 3. 궁둥구멍근은 골반가로막이 아니라 엉치뼈 앞면에서 일어나 볼기로 나간다(혼동 주의)."
+   "text": "Anatomy 골반가로막의 구성 — 안에서 가쪽으로 14회차 · 골반·회음 골반가로막 pelvic diaphragm 항문올림근 levator ani 14차시(0930) 문용석pf.pdf + tagging 2차.pdf 골반가로막 = 항문올림근 + 꼬리근 (+ 근막) 항문올림근(levator ani) ★tagging 답 후보 를 앞안쪽→가쪽 순서로: 1. 두덩곧창자근 (puborectalis) — 가장 앞·안쪽. 두덩뼈몸통에서 일어나 항문관을 감싸고 뒤에서 양쪽이 연결. 양쪽 사이 틈새 = 비뇨생식구멍 (요도·질 통과) 2. 두덩꼬리근 (pubococcygeus) — 두덩곧창자근 바로 가쪽. 두덩뼈몸통 → 꼬리뼈 3. 엉덩꼬리근 (iliococcygeus) — 가장 가쪽. 항문올림근힘줄활 에서 일어나 꼬리뼈로 4. 꼬리근 (coccygeus) — 항문올림근보다 가쪽. 궁둥뼈가시 → 꼬리뼈·엉치뼈 기준 구조물: 항문올림근힘줄활 — 속폐쇄근막이 선 모양으로 두꺼워진 것. 궁둥뼈가시 → 폐쇄관까지 거의 수평 전체 배열은 수평이 아니라 가쪽벽에서 아래안쪽으로 (움푹한 그릇 모양) — 그 아래면이 궁둥항문오목의 안쪽벽 이 된다 관계 문장(말로 설명하기) 1. 곧창자는 골반가로막을 뚫으며 항문곧창자연결이 그 높이에 있다. 2. 속폐쇄근(가쪽벽) → 속폐쇄근막 → 힘줄활 → 항문올림근 기시의 층 순서. 3. 궁둥구멍근은 골반가로막이 아니라 엉치뼈 앞면에서 일어나 볼기로 나간다(혼동 주의)."
   },
   {
    "id": "anatomy-2026-0002",
    "type": "anatomy",
+   "unit": "14회차 · 팔",
    "topic": "Anatomy",
    "subtopic": "돌림근띠와 어깨관절 안정화 구조물",
    "tags": [
@@ -6623,11 +7034,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/concepts/upper-limb/anatomy-2026-0002.md",
    "snippet": "어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로) 돌림근띠(rotator cuff) — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다: 근육 관절주머니에서의 위치 어깨밑근 (subscapularis) 앞 가시위근 (supraspinatus) 위 가시아래근 (infraspinatus) 뒤위 작은원근 (teres minor) 뒤아래 보조 구조물: 접시테두리(glenoid labrum) — 접시오목의 깊이를 깊게 함 접시",
-   "text": "Anatomy 돌림근띠와 어깨관절 안정화 구조물 rotator cuff 돌림근띠 어깨관절 glenohumeral 14차시(0930) 문용석pf.pdf 어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로) 돌림근띠(rotator cuff) — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다: 근육 관절주머니에서의 위치 어깨밑근 (subscapularis) 앞 가시위근 (supraspinatus) 위 가시아래근 (infraspinatus) 뒤위 작은원근 (teres minor) 뒤아래 보조 구조물: 접시테두리(glenoid labrum) — 접시오목의 깊이를 깊게 함 접시위팔인대(glenohumeral ligament) — 관절주머니 앞부분이 두꺼워진 띠. 겉보다 관절주머니 속에서 더 잘 보인다(위·중간·아래 구분) 부리위팔인대(coracohumeral ligament) — 부리돌기 가쪽모서리 → 위팔뼈 큰결절 위팔두갈래근 긴갈래 — 위팔가로인대 깊은쪽 결절사이고랑을 지난다 관계 문장(말로 설명하기) 1. 어깨밑근은 관절주머니 앞 을 덮고, 어깨밑근힘줄밑주머니는 관절주머니 섬유막구멍과 연결된다. 2. 관절주머니 섬유막은 안쪽으로 접시오목 모서리, 가쪽으로 위팔뼈 해부목 에 붙는다. 3. 부리빗장인대(마름인대 가쪽 + 원뿔인대 안쪽)는 봉우리빗장관절을 간접 지지한다."
+   "text": "Anatomy 돌림근띠와 어깨관절 안정화 구조물 14회차 · 팔 rotator cuff 돌림근띠 어깨관절 glenohumeral 14차시(0930) 문용석pf.pdf 어깨관절을 안정화하는 구조물 (실습 응용과제 1번 그대로) 돌림근띠(rotator cuff) — 힘줄이 관절주머니에 단단히 붙어 안정성을 만든다: 근육 관절주머니에서의 위치 어깨밑근 (subscapularis) 앞 가시위근 (supraspinatus) 위 가시아래근 (infraspinatus) 뒤위 작은원근 (teres minor) 뒤아래 보조 구조물: 접시테두리(glenoid labrum) — 접시오목의 깊이를 깊게 함 접시위팔인대(glenohumeral ligament) — 관절주머니 앞부분이 두꺼워진 띠. 겉보다 관절주머니 속에서 더 잘 보인다(위·중간·아래 구분) 부리위팔인대(coracohumeral ligament) — 부리돌기 가쪽모서리 → 위팔뼈 큰결절 위팔두갈래근 긴갈래 — 위팔가로인대 깊은쪽 결절사이고랑을 지난다 관계 문장(말로 설명하기) 1. 어깨밑근은 관절주머니 앞 을 덮고, 어깨밑근힘줄밑주머니는 관절주머니 섬유막구멍과 연결된다. 2. 관절주머니 섬유막은 안쪽으로 접시오목 모서리, 가쪽으로 위팔뼈 해부목 에 붙는다. 3. 부리빗장인대(마름인대 가쪽 + 원뿔인대 안쪽)는 봉우리빗장관절을 간접 지지한다."
   },
   {
    "id": "anatomy-2026-0001",
    "type": "anatomy",
+   "unit": "14회차 · 골반·회음",
    "topic": "Anatomy",
    "subtopic": "속엉덩동맥 분지 트리",
    "tags": [
@@ -6641,11 +7053,12 @@ window.MEDKOS_INDEX = {
    "date": "2026-08-12",
    "path": "content/anatomy/concepts/pelvis-perineum/anatomy-2026-0001.md",
    "snippet": "속엉덩동맥 분지 — 트리로 외우기 온엉덩동맥에서 일어나 아래로 달려 골반안으로 들어간다(강의 14차시 실측 확인). 낱말이 아니라 어디로 빠져나가는가 로 묶는 것이 태깅 대비 핵심이다. 앞쪽(내장 방향) : 배꼽동맥→위방광동맥 · 아래방광동맥 · 중간곧창자동맥 뒤·벽쪽 : 엉덩허리동맥(엉덩근/허리 가지) · 가쪽엉치동맥 큰궁둥구멍으로 나가는 셋 : 위볼기동맥(윗부분) / 아래볼기동맥·속음부동맥(아랫부분) 폐쇄관으로 : 폐쇄동맥",
-   "text": "Anatomy 속엉덩동맥 분지 트리 속엉덩동맥 internal iliac artery 분지 골반 14차시(0930) 문용석pf.pdf + tagging 2차.pdf 속엉덩동맥 분지 — 트리로 외우기 온엉덩동맥에서 일어나 아래로 달려 골반안으로 들어간다(강의 14차시 실측 확인). 낱말이 아니라 어디로 빠져나가는가 로 묶는 것이 태깅 대비 핵심이다. 앞쪽(내장 방향) : 배꼽동맥→위방광동맥 · 아래방광동맥 · 중간곧창자동맥 뒤·벽쪽 : 엉덩허리동맥(엉덩근/허리 가지) · 가쪽엉치동맥 큰궁둥구멍으로 나가는 셋 : 위볼기동맥(윗부분) / 아래볼기동맥·속음부동맥(아랫부분) 폐쇄관으로 : 폐쇄동맥(폐쇄신경 아래쪽 동행) 혼동 주의: 위곧창자동맥은 속엉덩동맥의 가지가 아니라 아래창자간막동맥의 가지 다(강의 항문관 절에서 명시) — 중간곧창자동맥과 문합한다. 관계 문장(말로 설명하기) 1. 폐쇄신경·동맥·정맥은 함께 폐쇄관으로 들어간다(신경이 위). 2. 속음부동맥은 궁둥뼈가시 바로 위에서 큰궁둥구멍 아랫부분으로 골반을 빠져나간다. 3. 요관은 속엉덩동맥 앞 에서 아래앞쪽으로 달린다(수술·태깅 표지 관계)."
+   "text": "Anatomy 속엉덩동맥 분지 트리 14회차 · 골반·회음 속엉덩동맥 internal iliac artery 분지 골반 14차시(0930) 문용석pf.pdf + tagging 2차.pdf 속엉덩동맥 분지 — 트리로 외우기 온엉덩동맥에서 일어나 아래로 달려 골반안으로 들어간다(강의 14차시 실측 확인). 낱말이 아니라 어디로 빠져나가는가 로 묶는 것이 태깅 대비 핵심이다. 앞쪽(내장 방향) : 배꼽동맥→위방광동맥 · 아래방광동맥 · 중간곧창자동맥 뒤·벽쪽 : 엉덩허리동맥(엉덩근/허리 가지) · 가쪽엉치동맥 큰궁둥구멍으로 나가는 셋 : 위볼기동맥(윗부분) / 아래볼기동맥·속음부동맥(아랫부분) 폐쇄관으로 : 폐쇄동맥(폐쇄신경 아래쪽 동행) 혼동 주의: 위곧창자동맥은 속엉덩동맥의 가지가 아니라 아래창자간막동맥의 가지 다(강의 항문관 절에서 명시) — 중간곧창자동맥과 문합한다. 관계 문장(말로 설명하기) 1. 폐쇄신경·동맥·정맥은 함께 폐쇄관으로 들어간다(신경이 위). 2. 속음부동맥은 궁둥뼈가시 바로 위에서 큰궁둥구멍 아랫부분으로 골반을 빠져나간다. 3. 요관은 속엉덩동맥 앞 에서 아래앞쪽으로 달린다(수술·태깅 표지 관계)."
   },
   {
    "id": "usmle-2026-0060",
    "type": "usmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Catatonia — Recognition and the Lorazepam Challenge",
    "tags": [
@@ -6665,6 +7078,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0059",
    "type": "usmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Congenital Complete Heart Block — Neonatal Lupus (Maternal Anti-Ro/SSA Antibody)",
    "tags": [
@@ -6684,6 +7098,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0058",
    "type": "usmle",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "Necrotizing Fasciitis — Recognition as a Surgical Emergency vs Cellulitis",
    "tags": [
@@ -6703,6 +7118,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0057",
    "type": "usmle",
+   "unit": "",
    "topic": "Microbiology",
    "subtopic": "Corynebacterium diphtheriae — Toxin Mechanism vs Other Bacterial Exotoxins",
    "tags": [
@@ -6722,6 +7138,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0056",
    "type": "usmle",
+   "unit": "",
    "topic": "Biochemistry",
    "subtopic": "Homocystinuria — Cystathionine Beta-Synthase Deficiency as a Marfan Mimicker",
    "tags": [
@@ -6741,6 +7158,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0055",
    "type": "usmle",
+   "unit": "",
    "topic": "Immunology",
    "subtopic": "Chronic Granulomatous Disease — NADPH Oxidase Defect and Catalase-Positive Organism Susceptibility",
    "tags": [
@@ -6760,6 +7178,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0187",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -6776,6 +7195,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0186",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -6792,6 +7212,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0185",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -6808,6 +7229,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0184",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -6824,6 +7246,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0183",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -6840,6 +7263,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0182",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -6856,6 +7280,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0181",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -6872,6 +7297,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0180",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -6888,6 +7314,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0179",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -6904,6 +7331,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0178",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -6920,6 +7348,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0177",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -6936,6 +7365,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0176",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -6952,6 +7382,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0175",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -6968,6 +7399,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0174",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -6984,6 +7416,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0173",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -7000,6 +7433,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0172",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -7016,6 +7450,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0521",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Scleroderma Renal Crisis",
    "tags": [
@@ -7034,6 +7469,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0520",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Reactive Arthritis",
    "tags": [
@@ -7052,6 +7488,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0519",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Sarcoidosis",
    "tags": [
@@ -7070,6 +7507,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0518",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Acute Respiratory Distress Syndrome",
    "tags": [
@@ -7088,6 +7526,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0517",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Postpartum Psychosis",
    "tags": [
@@ -7106,6 +7545,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0516",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Neuroleptic Malignant Syndrome",
    "tags": [
@@ -7125,6 +7565,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0515",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Henoch-Schönlein Purpura (IgA Vasculitis)",
    "tags": [
@@ -7144,6 +7585,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0514",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Croup (Viral Laryngotracheobronchitis)",
    "tags": [
@@ -7163,6 +7605,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0513",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Knee Dislocation with Popliteal Artery Injury",
    "tags": [
@@ -7182,6 +7625,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0512",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Open Fracture (Gustilo-Anderson)",
    "tags": [
@@ -7201,6 +7645,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0511",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Alkali Chemical Eye Burn",
    "tags": [
@@ -7220,6 +7665,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0510",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Orbital Cellulitis",
    "tags": [
@@ -7239,6 +7685,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0509",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Uterine Rupture",
    "tags": [
@@ -7258,6 +7705,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0508",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Eclampsia",
    "tags": [
@@ -7277,6 +7725,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0507",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Hypertensive Intracerebral Hemorrhage",
    "tags": [
@@ -7295,6 +7744,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0506",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Convulsive Status Epilepticus",
    "tags": [
@@ -7313,6 +7763,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0505",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Post-streptococcal Glomerulonephritis",
    "tags": [
@@ -7332,6 +7783,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0504",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Acute Interstitial Nephritis (drug-induced)",
    "tags": [
@@ -7351,6 +7803,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0503",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Meningococcemia (Waterhouse-Friderichsen)",
    "tags": [
@@ -7370,6 +7823,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0502",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Staphylococcal Toxic Shock Syndrome",
    "tags": [
@@ -7389,6 +7843,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0501",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Acute Chest Syndrome",
    "tags": [
@@ -7407,6 +7862,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0500",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Tumor Lysis Syndrome",
    "tags": [
@@ -7426,6 +7882,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0499",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Limb Ischemia",
    "tags": [
@@ -7445,6 +7902,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0498",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Blunt Splenic Injury",
    "tags": [
@@ -7464,6 +7922,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0497",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acetaminophen-induced Acute Liver Failure",
    "tags": [
@@ -7483,6 +7942,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0496",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Mesenteric Ischemia (arterial embolism)",
    "tags": [
@@ -7502,6 +7962,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0495",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "SIADH",
    "tags": [
@@ -7521,6 +7982,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0494",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Acute Adrenal (Addisonian) Crisis",
    "tags": [
@@ -7540,6 +8002,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0493",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Erythema Multiforme Major",
    "tags": [
@@ -7559,6 +8022,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0492",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "DRESS Syndrome",
    "tags": [
@@ -7578,6 +8042,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0491",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Cardiac Tamponade",
    "tags": [
@@ -7596,6 +8061,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0490",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Inferior Wall STEMI with Right Ventricular Involvement",
    "tags": [
@@ -7614,6 +8080,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0171",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -7630,6 +8097,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0170",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -7646,6 +8114,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0169",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -7662,6 +8131,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0168",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -7678,6 +8148,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0167",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -7694,6 +8165,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0166",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -7710,6 +8182,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0165",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -7726,6 +8199,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0164",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -7742,6 +8216,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0163",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -7758,6 +8233,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0162",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -7774,6 +8250,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0161",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -7790,6 +8267,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0160",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -7806,6 +8284,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0159",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -7822,6 +8301,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0158",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -7838,6 +8318,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0157",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -7854,6 +8335,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0156",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -7870,6 +8352,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0489",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Acute Generalized Exanthematous Pustulosis",
    "tags": [
@@ -7888,6 +8371,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0488",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Pemphigus Vulgaris",
    "tags": [
@@ -7906,6 +8390,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0487",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Calcium Pyrophosphate Deposition (Pseudogout)",
    "tags": [
@@ -7924,6 +8409,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0486",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Giant Cell Arteritis",
    "tags": [
@@ -7942,6 +8428,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0485",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Scaphoid Fracture",
    "tags": [
@@ -7960,6 +8447,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0484",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Cauda Equina Syndrome",
    "tags": [
@@ -7978,6 +8466,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0483",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Thyroid Eye Disease with Compressive Optic Neuropathy",
    "tags": [
@@ -7996,6 +8485,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0482",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Rhegmatogenous Retinal Detachment",
    "tags": [
@@ -8014,6 +8504,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0481",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Bipolar I Disorder — Acute Manic Episode",
    "tags": [
@@ -8032,6 +8523,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0480",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Serotonin Syndrome",
    "tags": [
@@ -8050,6 +8542,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0479",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Acute Epiglottitis",
    "tags": [
@@ -8068,6 +8561,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0478",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Hypertrophic Pyloric Stenosis",
    "tags": [
@@ -8086,6 +8580,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0477",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Ruptured Ectopic Pregnancy",
    "tags": [
@@ -8104,6 +8599,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0476",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Placental Abruption",
    "tags": [
@@ -8122,6 +8618,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0475",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Adhesive Small Bowel Obstruction",
    "tags": [
@@ -8140,6 +8637,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0474",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Perforated Peptic Ulcer",
    "tags": [
@@ -8158,6 +8656,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0473",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Disseminated Intravascular Coagulation",
    "tags": [
@@ -8176,6 +8675,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0472",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Thrombotic Thrombocytopenic Purpura",
    "tags": [
@@ -8194,6 +8694,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0471",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Disseminated Gonococcal Infection",
    "tags": [
@@ -8211,6 +8712,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0470",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Miliary Tuberculosis",
    "tags": [
@@ -8228,6 +8730,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0469",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Malignant Spinal Cord Compression",
    "tags": [
@@ -8246,6 +8749,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0468",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Myasthenic Crisis",
    "tags": [
@@ -8264,6 +8768,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0467",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Massive Hemoptysis",
    "tags": [
@@ -8282,6 +8787,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0466",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "High-risk Pulmonary Embolism with Shock",
    "tags": [
@@ -8300,6 +8806,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0465",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Shiga toxin-associated Hemolytic Uremic Syndrome",
    "tags": [
@@ -8318,6 +8825,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0464",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Rhabdomyolysis-induced Acute Kidney Injury",
    "tags": [
@@ -8336,6 +8844,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0463",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Ectopic ACTH Syndrome",
    "tags": [
@@ -8354,6 +8863,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0462",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Thyroid Storm",
    "tags": [
@@ -8372,6 +8882,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0461",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Ischemic Colitis",
    "tags": [
@@ -8390,6 +8901,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0460",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Esophageal Variceal Hemorrhage",
    "tags": [
@@ -8408,6 +8920,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0459",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Infective Endocarditis",
    "tags": [
@@ -8426,6 +8939,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0458",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Anterior ST-Elevation Myocardial Infarction",
    "tags": [
@@ -8444,6 +8958,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0054",
    "type": "usmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Magnesium Sulfate Toxicity in Preeclampsia — Recognition and Reversal",
    "tags": [
@@ -8463,6 +8978,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0053",
    "type": "usmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Acute Ischemic Stroke — Blood Pressure Threshold Before Thrombolysis",
    "tags": [
@@ -8482,6 +8998,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0052",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "New-Onset Atrial Fibrillation with RVR — Rate Control vs Cardioversion Decision",
    "tags": [
@@ -8501,6 +9018,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0051",
    "type": "usmle",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "Paradoxical Aciduria in Vomiting-Induced Metabolic Alkalosis",
    "tags": [
@@ -8520,6 +9038,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0050",
    "type": "usmle",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "Membranous Nephropathy — Immune Complex Deposition Site",
    "tags": [
@@ -8539,6 +9058,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0049",
    "type": "usmle",
+   "unit": "",
    "topic": "Pharmacology",
    "subtopic": "Warfarin–Metronidazole Interaction (CYP2C9 Inhibition)",
    "tags": [
@@ -8558,6 +9078,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0155",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -8574,6 +9095,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0154",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -8590,6 +9112,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0457",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Acute Gout Flare",
    "tags": [
@@ -8608,6 +9131,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0456",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Systemic Lupus Erythematosus",
    "tags": [
@@ -8626,6 +9150,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0455",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Severe Community-Acquired Pneumonia",
    "tags": [
@@ -8644,6 +9169,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0454",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Acute Exacerbation of COPD",
    "tags": [
@@ -8662,6 +9188,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0453",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Alcohol Withdrawal Delirium",
    "tags": [
@@ -8680,6 +9207,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0452",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Schizophrenia — First Episode",
    "tags": [
@@ -8698,6 +9226,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0451",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Wilms Tumor (Nephroblastoma)",
    "tags": [
@@ -8716,6 +9245,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0450",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Kawasaki Disease",
    "tags": [
@@ -8734,6 +9264,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0449",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Septic Arthritis of the Native Knee",
    "tags": [
@@ -8752,6 +9283,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0448",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Acute Compartment Syndrome",
    "tags": [
@@ -8770,6 +9302,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0447",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Central Retinal Artery Occlusion",
    "tags": [
@@ -8788,6 +9321,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0446",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Acute Angle-Closure Glaucoma",
    "tags": [
@@ -8806,6 +9340,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0445",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Intra-amniotic Infection (Chorioamnionitis)",
    "tags": [
@@ -8824,6 +9359,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0444",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Postpartum Hemorrhage from Uterine Atony",
    "tags": [
@@ -8842,6 +9378,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0443",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Acute Ischemic Stroke — Thrombolysis Contraindication",
    "tags": [
@@ -8860,6 +9397,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0442",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Guillain-Barré Syndrome",
    "tags": [
@@ -8878,6 +9416,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0441",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Autosomal Dominant Polycystic Kidney Disease",
    "tags": [
@@ -8896,6 +9435,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0440",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Anti-GBM (Goodpasture) Disease",
    "tags": [
@@ -8914,6 +9454,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0439",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Generalized Tetanus",
    "tags": [
@@ -8932,6 +9473,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0438",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Acute Bacterial Meningitis",
    "tags": [
@@ -8950,6 +9492,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0437",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Von Willebrand Disease",
    "tags": [
@@ -8968,6 +9511,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0436",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Chronic Myeloid Leukemia",
    "tags": [
@@ -8986,6 +9530,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0435",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Calculous Cholecystitis",
    "tags": [
@@ -9004,6 +9549,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0434",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Appendicitis",
    "tags": [
@@ -9022,6 +9568,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0433",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Hereditary Hemochromatosis",
    "tags": [
@@ -9040,6 +9587,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0432",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Gallstone Pancreatitis",
    "tags": [
@@ -9058,6 +9606,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0431",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Insulinoma",
    "tags": [
@@ -9076,6 +9625,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0430",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Diabetic Ketoacidosis",
    "tags": [
@@ -9094,6 +9644,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0429",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Stevens-Johnson Syndrome",
    "tags": [
@@ -9112,6 +9663,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0428",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Malignant Melanoma",
    "tags": [
@@ -9130,6 +9682,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0427",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Mitral Regurgitation from Papillary Muscle Rupture",
    "tags": [
@@ -9148,6 +9701,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0426",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Fibrillation with Rapid Ventricular Response",
    "tags": [
@@ -9166,6 +9720,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0153",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -9182,6 +9737,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0152",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -9198,6 +9754,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0151",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -9214,6 +9771,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0150",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -9230,6 +9788,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0149",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -9246,6 +9805,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0148",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -9262,6 +9822,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0147",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -9278,6 +9839,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0146",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -9294,6 +9856,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0145",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -9310,6 +9873,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0425",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Dermatomyositis",
    "tags": [
@@ -9328,6 +9892,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0424",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Ankylosing Spondylitis",
    "tags": [
@@ -9346,6 +9911,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0423",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Obstructive Sleep Apnea",
    "tags": [
@@ -9364,6 +9930,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0422",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Superior Vena Cava Syndrome",
    "tags": [
@@ -9382,6 +9949,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0421",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Anorexia Nervosa (Refeeding Syndrome)",
    "tags": [
@@ -9400,6 +9968,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0420",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Panic Disorder",
    "tags": [
@@ -9418,6 +9987,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0419",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Hirschsprung Disease",
    "tags": [
@@ -9436,6 +10006,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0418",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Acute Bronchiolitis",
    "tags": [
@@ -9454,6 +10025,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0417",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Fat Embolism Syndrome",
    "tags": [
@@ -9472,6 +10044,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0416",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Slipped Capital Femoral Epiphysis",
    "tags": [
@@ -9490,6 +10063,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0415",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Acute Anterior Uveitis",
    "tags": [
@@ -9508,6 +10082,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0414",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Postoperative Endophthalmitis",
    "tags": [
@@ -9526,6 +10101,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0413",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Shoulder Dystocia",
    "tags": [
@@ -9544,6 +10120,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0412",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Ovarian Torsion",
    "tags": [
@@ -9562,6 +10139,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0411",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Herpes Simplex Encephalitis",
    "tags": [
@@ -9580,6 +10158,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0410",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Wernicke Encephalopathy",
    "tags": [
@@ -9598,6 +10177,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0409",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Membranous Nephropathy",
    "tags": [
@@ -9616,6 +10196,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0408",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "IgA Nephropathy",
    "tags": [
@@ -9634,6 +10215,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0407",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Falciparum Malaria",
    "tags": [
@@ -9652,6 +10234,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0406",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Vibrio vulnificus Septicemia",
    "tags": [
@@ -9670,6 +10253,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0405",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Hereditary Spherocytosis",
    "tags": [
@@ -9688,6 +10272,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0404",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Immune Thrombocytopenic Purpura",
    "tags": [
@@ -9706,6 +10291,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0403",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Sigmoid Volvulus",
    "tags": [
@@ -9723,6 +10309,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0402",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Ruptured Abdominal Aortic Aneurysm",
    "tags": [
@@ -9741,6 +10328,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0401",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Zollinger-Ellison Syndrome",
    "tags": [
@@ -9759,6 +10347,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0400",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Ascending Cholangitis",
    "tags": [
@@ -9777,6 +10366,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0399",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Primary Hyperparathyroidism",
    "tags": [
@@ -9795,6 +10385,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0398",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Central Diabetes Insipidus",
    "tags": [
@@ -9813,6 +10404,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0397",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Porphyria Cutanea Tarda",
    "tags": [
@@ -9831,6 +10423,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0396",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Sweet Syndrome (Acute Febrile Neutrophilic Dermatosis)",
    "tags": [
@@ -9849,6 +10442,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0395",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Hypertrophic Obstructive Cardiomyopathy",
    "tags": [
@@ -9867,6 +10461,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0394",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Complete (Third-degree) Atrioventricular Block",
    "tags": [
@@ -9885,6 +10480,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0144",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -9901,6 +10497,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0143",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -9917,6 +10514,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0142",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -9933,6 +10531,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0141",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -9949,6 +10548,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0140",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -9965,6 +10565,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0139",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -9981,6 +10582,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0138",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -9997,6 +10599,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0137",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -10013,6 +10616,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0136",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -10029,6 +10633,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0135",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -10045,6 +10650,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0134",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -10061,6 +10667,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0133",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -10077,6 +10684,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0132",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -10093,6 +10701,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0131",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -10109,6 +10718,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0130",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -10125,6 +10735,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0393",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Polyarteritis Nodosa",
    "tags": [
@@ -10143,6 +10754,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0392",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Adult-onset Still Disease",
    "tags": [
@@ -10161,6 +10773,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0391",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Hypersensitivity Pneumonitis",
    "tags": [
@@ -10179,6 +10792,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0390",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Pulmonary Arterial Hypertension",
    "tags": [
@@ -10197,6 +10811,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0389",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Obsessive-Compulsive Disorder",
    "tags": [
@@ -10215,6 +10830,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0388",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Major Depressive Disorder",
    "tags": [
@@ -10233,6 +10849,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0387",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Acute Rheumatic Fever",
    "tags": [
@@ -10251,6 +10868,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0386",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Biliary Atresia",
    "tags": [
@@ -10269,6 +10887,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0385",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Legg-Calvé-Perthes Disease",
    "tags": [
@@ -10287,6 +10906,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0384",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Displaced Femoral Neck Fracture",
    "tags": [
@@ -10305,6 +10925,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0383",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Retinoblastoma",
    "tags": [
@@ -10323,6 +10944,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0382",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Optic Neuritis",
    "tags": [
@@ -10341,6 +10963,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0381",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Preterm Premature Rupture of Membranes",
    "tags": [
@@ -10359,6 +10982,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0380",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Amniotic Fluid Embolism",
    "tags": [
@@ -10377,6 +11001,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0379",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Foodborne Botulism",
    "tags": [
@@ -10395,6 +11020,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0378",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Carotid Artery Dissection",
    "tags": [
@@ -10413,6 +11039,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0377",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Type 4 Renal Tubular Acidosis",
    "tags": [
@@ -10431,6 +11058,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0376",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Ethylene Glycol Toxic Alcohol Poisoning",
    "tags": [
@@ -10449,6 +11077,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0375",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Hemorrhagic Fever with Renal Syndrome (Hantavirus)",
    "tags": [
@@ -10467,6 +11096,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0374",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Leptospirosis (Weil disease)",
    "tags": [
@@ -10485,6 +11115,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0373",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Multiple Myeloma",
    "tags": [
@@ -10503,6 +11134,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0372",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Polycythemia Vera",
    "tags": [
@@ -10521,6 +11153,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0371",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Colonic Pseudo-obstruction (Ogilvie)",
    "tags": [
@@ -10539,6 +11172,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0370",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Anastomotic Leak after Colorectal Surgery",
    "tags": [
@@ -10557,6 +11191,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0369",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Severe Ulcerative Colitis",
    "tags": [
@@ -10575,6 +11210,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0368",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Diverticulitis",
    "tags": [
@@ -10593,6 +11229,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0367",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Subacute (de Quervain) Thyroiditis",
    "tags": [
@@ -10611,6 +11248,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0366",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Postoperative Hypocalcemia",
    "tags": [
@@ -10629,6 +11267,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0365",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Crusted (Norwegian) Scabies",
    "tags": [
@@ -10647,6 +11286,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0364",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Erythema Nodosum",
    "tags": [
@@ -10665,6 +11305,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0363",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Pericarditis",
    "tags": [
@@ -10683,6 +11324,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0362",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Sustained Monomorphic Ventricular Tachycardia",
    "tags": [
@@ -10702,6 +11344,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0129",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -10718,6 +11361,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0128",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -10734,6 +11378,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0127",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -10750,6 +11395,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0126",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -10766,6 +11412,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0361",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Granulomatosis with Polyangiitis",
    "tags": [
@@ -10785,6 +11432,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0360",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Polymyalgia Rheumatica",
    "tags": [
@@ -10804,6 +11452,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0359",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Idiopathic Pulmonary Fibrosis",
    "tags": [
@@ -10823,6 +11472,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0358",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Tension Pneumothorax",
    "tags": [
@@ -10842,6 +11492,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0357",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Delirium",
    "tags": [
@@ -10861,6 +11512,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0356",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Lithium Toxicity",
    "tags": [
@@ -10880,6 +11532,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0355",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Necrotizing Enterocolitis",
    "tags": [
@@ -10899,6 +11552,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0354",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Duct-dependent Cyanotic Congenital Heart Disease",
    "tags": [
@@ -10918,6 +11572,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0353",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Acute Hematogenous Osteomyelitis",
    "tags": [
@@ -10937,6 +11592,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0352",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Posterior Hip Dislocation",
    "tags": [
@@ -10956,6 +11612,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0351",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Bacterial Keratitis",
    "tags": [
@@ -10975,6 +11632,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0350",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Central Retinal Vein Occlusion",
    "tags": [
@@ -10994,6 +11652,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0349",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Postmenopausal Bleeding",
    "tags": [
@@ -11013,6 +11672,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0348",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Umbilical Cord Prolapse",
    "tags": [
@@ -11032,6 +11692,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0347",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Idiopathic Intracranial Hypertension",
    "tags": [
@@ -11051,6 +11712,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0346",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Normal Pressure Hydrocephalus",
    "tags": [
@@ -11070,6 +11732,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0345",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Bilateral Renal Artery Stenosis",
    "tags": [
@@ -11089,6 +11752,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0344",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Minimal Change Disease",
    "tags": [
@@ -11108,6 +11772,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0343",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Scrub Typhus (Tsutsugamushi)",
    "tags": [
@@ -11127,6 +11792,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0342",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Pneumocystis jirovecii Pneumonia",
    "tags": [
@@ -11146,6 +11812,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0341",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Acute Hemolytic Transfusion Reaction",
    "tags": [
@@ -11165,6 +11832,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0340",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Heparin-Induced Thrombocytopenia",
    "tags": [
@@ -11184,6 +11852,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0339",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Boerhaave Syndrome",
    "tags": [
@@ -11203,6 +11872,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0338",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Strangulated Inguinal Hernia",
    "tags": [
@@ -11222,6 +11892,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0337",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Bleeding Peptic Ulcer",
    "tags": [
@@ -11241,6 +11912,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0336",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Hepatic Encephalopathy",
    "tags": [
@@ -11260,6 +11932,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0335",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Primary Aldosteronism (Conn)",
    "tags": [
@@ -11279,6 +11952,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0334",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Myxedema Coma",
    "tags": [
@@ -11298,6 +11972,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0333",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Pyoderma Gangrenosum",
    "tags": [
@@ -11317,6 +11992,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0332",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Staphylococcal Scalded Skin Syndrome",
    "tags": [
@@ -11336,6 +12012,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0331",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Vasospastic (Prinzmetal) Angina",
    "tags": [
@@ -11355,6 +12032,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0330",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Flutter",
    "tags": [
@@ -11374,6 +12052,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0125",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -11390,6 +12069,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0124",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -11406,6 +12086,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0123",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -11422,6 +12103,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0122",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -11438,6 +12120,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0121",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -11454,6 +12137,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0120",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -11470,6 +12154,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0119",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -11486,6 +12171,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0118",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -11502,6 +12188,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0117",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -11518,6 +12205,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0116",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -11534,6 +12222,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0115",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -11550,6 +12239,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0329",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Behçet Disease",
    "tags": [
@@ -11569,6 +12259,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0328",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Antiphospholipid Syndrome",
    "tags": [
@@ -11588,6 +12279,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0327",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Legionella Pneumonia",
    "tags": [
@@ -11607,6 +12299,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0326",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Primary Spontaneous Pneumothorax",
    "tags": [
@@ -11626,6 +12319,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0325",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Tricyclic Antidepressant Overdose",
    "tags": [
@@ -11645,6 +12339,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0324",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Bulimia Nervosa",
    "tags": [
@@ -11664,6 +12359,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0323",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Congenital Adrenal Hyperplasia",
    "tags": [
@@ -11683,6 +12379,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0322",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Intussusception",
    "tags": [
@@ -11702,6 +12399,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0321",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Anterior Shoulder Dislocation",
    "tags": [
@@ -11721,6 +12419,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0320",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Osteosarcoma",
    "tags": [
@@ -11740,6 +12439,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0319",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Traumatic Hyphema",
    "tags": [
@@ -11759,6 +12459,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0318",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Herpes Zoster Ophthalmicus",
    "tags": [
@@ -11778,6 +12479,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0317",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "HELLP Syndrome",
    "tags": [
@@ -11797,6 +12499,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0316",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Placenta Previa",
    "tags": [
@@ -11816,6 +12519,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0315",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Posterior Communicating Artery Aneurysm",
    "tags": [
@@ -11835,6 +12539,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0314",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Cerebral Venous Sinus Thrombosis",
    "tags": [
@@ -11854,6 +12559,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0313",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Hepatorenal Syndrome",
    "tags": [
@@ -11873,6 +12579,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0312",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Severe Hyperkalemia",
    "tags": [
@@ -11892,6 +12599,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0311",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Cryptococcal Meningitis",
    "tags": [
@@ -11911,6 +12619,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0310",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Febrile Neutropenia",
    "tags": [
@@ -11930,6 +12639,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0309",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "G6PD Deficiency",
    "tags": [
@@ -11949,6 +12659,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0308",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Hemophilia A",
    "tags": [
@@ -11968,6 +12679,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0307",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Hemorrhagic Shock (Trauma)",
    "tags": [
@@ -11987,6 +12699,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0306",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Necrotizing Fasciitis",
    "tags": [
@@ -12006,6 +12719,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0305",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Toxic Megacolon",
    "tags": [
@@ -12025,6 +12739,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0304",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Spontaneous Bacterial Peritonitis",
    "tags": [
@@ -12044,6 +12759,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0303",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Hyperosmolar Hyperglycemic State",
    "tags": [
@@ -12063,6 +12779,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0302",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Pheochromocytoma",
    "tags": [
@@ -12082,6 +12799,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0301",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Dermatitis Herpetiformis",
    "tags": [
@@ -12101,6 +12819,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0300",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Bullous Pemphigoid",
    "tags": [
@@ -12120,6 +12839,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0299",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Severe Aortic Stenosis",
    "tags": [
@@ -12139,6 +12859,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0298",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Symptomatic Sinus Bradycardia",
    "tags": [
@@ -12158,6 +12879,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0114",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -12174,6 +12896,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0113",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -12190,6 +12913,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0112",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -12206,6 +12930,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0111",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -12222,6 +12947,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0110",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -12238,6 +12964,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0109",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -12254,6 +12981,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0108",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -12270,6 +12998,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0107",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -12286,6 +13015,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0106",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -12302,6 +13032,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0105",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -12318,6 +13049,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0104",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -12334,6 +13066,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0103",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -12350,6 +13083,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0102",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -12366,6 +13100,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0101",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -12382,6 +13117,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0100",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -12398,6 +13134,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0099",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -12414,6 +13151,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0297",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Reactive Arthritis",
    "tags": [
@@ -12433,6 +13171,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0296",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Scleroderma Renal Crisis",
    "tags": [
@@ -12452,6 +13191,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0295",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Severe Asthma Exacerbation",
    "tags": [
@@ -12471,6 +13211,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0294",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Acute Respiratory Distress Syndrome",
    "tags": [
@@ -12490,6 +13231,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0293",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Postpartum Psychosis",
    "tags": [
@@ -12509,6 +13251,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0292",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Neuroleptic Malignant Syndrome",
    "tags": [
@@ -12528,6 +13271,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0291",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Henoch-Schönlein Purpura",
    "tags": [
@@ -12547,6 +13291,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0290",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Croup",
    "tags": [
@@ -12566,6 +13311,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0289",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Achilles Tendon Rupture",
    "tags": [
@@ -12585,6 +13331,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0288",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Open Fracture",
    "tags": [
@@ -12604,6 +13351,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0287",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Alkali Chemical Eye Burn",
    "tags": [
@@ -12623,6 +13371,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0286",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Orbital Cellulitis",
    "tags": [
@@ -12642,6 +13391,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0285",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Complete Hydatidiform Mole",
    "tags": [
@@ -12661,6 +13411,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0284",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Eclampsia",
    "tags": [
@@ -12680,6 +13431,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0283",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Multiple Sclerosis Relapse",
    "tags": [
@@ -12699,6 +13451,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0282",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Status Epilepticus",
    "tags": [
@@ -12718,6 +13471,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0281",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Acute Interstitial Nephritis",
    "tags": [
@@ -12737,6 +13491,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0280",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Post-streptococcal Glomerulonephritis",
    "tags": [
@@ -12756,6 +13511,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0279",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Rabies Post-exposure Prophylaxis",
    "tags": [
@@ -12775,6 +13531,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0278",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Toxic Shock Syndrome",
    "tags": [
@@ -12794,6 +13551,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0277",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Acute Promyelocytic Leukemia",
    "tags": [
@@ -12813,6 +13571,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0276",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Tumor Lysis Syndrome",
    "tags": [
@@ -12832,6 +13591,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0275",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Limb Ischemia",
    "tags": [
@@ -12851,6 +13611,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0274",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Blunt Splenic Injury",
    "tags": [
@@ -12870,6 +13631,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0273",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Clostridioides difficile Colitis",
    "tags": [
@@ -12889,6 +13651,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0272",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Mesenteric Ischemia",
    "tags": [
@@ -12908,6 +13671,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0271",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "SIADH",
    "tags": [
@@ -12927,6 +13691,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0270",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Adrenal Crisis",
    "tags": [
@@ -12946,6 +13711,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0269",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Eczema Herpeticum",
    "tags": [
@@ -12965,6 +13731,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0268",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Drug Reaction with Eosinophilia and Systemic Symptoms",
    "tags": [
@@ -12984,6 +13751,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0267",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Ventricular Fibrillation",
    "tags": [
@@ -13003,6 +13771,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0266",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Cardiac Tamponade",
    "tags": [
@@ -13022,6 +13791,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0098",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -13038,6 +13808,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0097",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -13054,6 +13825,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0096",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -13070,6 +13842,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0095",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -13086,6 +13859,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0094",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -13102,6 +13876,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0093",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -13118,6 +13893,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0092",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -13134,6 +13910,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0091",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -13150,6 +13927,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0090",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -13166,6 +13944,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0089",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -13182,6 +13961,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0088",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -13198,6 +13978,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0087",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -13214,6 +13995,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0086",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -13230,6 +14012,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0085",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -13246,6 +14029,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0084",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -13262,6 +14046,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0083",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -13278,6 +14063,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0265",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Scaphoid Fracture",
    "tags": [
@@ -13297,6 +14083,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0264",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Cauda Equina Syndrome",
    "tags": [
@@ -13316,6 +14103,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0263",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Proliferative Diabetic Retinopathy",
    "tags": [
@@ -13335,6 +14123,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0262",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Rhegmatogenous Retinal Detachment",
    "tags": [
@@ -13354,6 +14143,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0261",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Plaque Psoriasis",
    "tags": [
@@ -13373,6 +14163,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0260",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Pemphigus Vulgaris",
    "tags": [
@@ -13392,6 +14183,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0259",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Rheumatoid Arthritis",
    "tags": [
@@ -13411,6 +14203,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0258",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Giant Cell Arteritis",
    "tags": [
@@ -13430,6 +14223,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0257",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Disseminated Intravascular Coagulation",
    "tags": [
@@ -13449,6 +14243,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0256",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Thrombotic Thrombocytopenic Purpura",
    "tags": [
@@ -13468,6 +14263,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0255",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Bipolar I Manic Episode",
    "tags": [
@@ -13487,6 +14283,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0254",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Serotonin Syndrome",
    "tags": [
@@ -13506,6 +14303,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0253",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Placental Abruption",
    "tags": [
@@ -13525,6 +14323,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0252",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Ruptured Ectopic Pregnancy",
    "tags": [
@@ -13544,6 +14343,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0251",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Acute Epiglottitis",
    "tags": [
@@ -13563,6 +14363,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0250",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Hypertrophic Pyloric Stenosis",
    "tags": [
@@ -13582,6 +14383,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0249",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Adhesive Small Bowel Obstruction",
    "tags": [
@@ -13601,6 +14403,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0248",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Perforated Peptic Ulcer",
    "tags": [
@@ -13620,6 +14423,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0247",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Myasthenia Gravis",
    "tags": [
@@ -13639,6 +14443,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0246",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Subarachnoid Hemorrhage",
    "tags": [
@@ -13658,6 +14463,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0245",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Active Pulmonary Tuberculosis",
    "tags": [
@@ -13677,6 +14483,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0244",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Infective Endocarditis",
    "tags": [
@@ -13696,6 +14503,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0243",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Acromegaly",
    "tags": [
@@ -13715,6 +14523,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0242",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Thyroid Storm",
    "tags": [
@@ -13734,6 +14543,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0241",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Distal (Type 1) Renal Tubular Acidosis",
    "tags": [
@@ -13753,6 +14563,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0240",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Rhabdomyolysis-induced Acute Kidney Injury",
    "tags": [
@@ -13772,6 +14583,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0239",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Celiac Disease",
    "tags": [
@@ -13791,6 +14603,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0238",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Achalasia",
    "tags": [
@@ -13810,6 +14623,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0237",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Sarcoidosis",
    "tags": [
@@ -13829,6 +14643,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0236",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Acute Pulmonary Embolism",
    "tags": [
@@ -13848,6 +14663,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0235",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "New Bundle Branch Block with Ischemic Chest Pain",
    "tags": [
@@ -13867,6 +14683,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0234",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Aortic Dissection (Stanford A)",
    "tags": [
@@ -13886,6 +14703,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0233",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Acute Gout Flare in Chronic Kidney Disease",
    "tags": [
@@ -13905,6 +14723,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0232",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Systemic Lupus Erythematosus",
    "tags": [
@@ -13924,6 +14743,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0231",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Malignant Melanoma (excisional biopsy)",
    "tags": [
@@ -13943,6 +14763,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0230",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis",
    "tags": [
@@ -13962,6 +14783,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0229",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Central Retinal Artery Occlusion",
    "tags": [
@@ -13981,6 +14803,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0228",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Acute Angle-Closure Glaucoma",
    "tags": [
@@ -14000,6 +14823,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0227",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "First-Episode Schizophrenia",
    "tags": [
@@ -14019,6 +14843,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0226",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Alcohol Withdrawal / Delirium Tremens",
    "tags": [
@@ -14038,6 +14863,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0225",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Pelvic Inflammatory Disease",
    "tags": [
@@ -14057,6 +14883,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0224",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Postpartum Hemorrhage (uterine atony)",
    "tags": [
@@ -14076,6 +14903,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0223",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Foreign Body Aspiration",
    "tags": [
@@ -14095,6 +14923,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0222",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Kawasaki Disease",
    "tags": [
@@ -14114,6 +14943,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0221",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Septic Arthritis",
    "tags": [
@@ -14133,6 +14963,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0220",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Acute Compartment Syndrome",
    "tags": [
@@ -14152,6 +14983,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0219",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Calculous Cholecystitis",
    "tags": [
@@ -14171,6 +15003,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0218",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Appendicitis",
    "tags": [
@@ -14190,6 +15023,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0217",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Vitamin B12 Deficiency (subacute combined degeneration)",
    "tags": [
@@ -14209,6 +15043,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0216",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Warm Autoimmune Hemolytic Anemia",
    "tags": [
@@ -14228,6 +15063,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0215",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Septic Shock (vasopressor after fluid)",
    "tags": [
@@ -14247,6 +15083,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0214",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Acute Bacterial Meningitis (empiric therapy)",
    "tags": [
@@ -14266,6 +15103,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0213",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Guillain-Barré Syndrome (respiratory monitoring)",
    "tags": [
@@ -14285,6 +15123,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0212",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Acute Ischemic Stroke (thrombolysis window)",
    "tags": [
@@ -14304,6 +15143,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0211",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Insulinoma (endogenous hyperinsulinism)",
    "tags": [
@@ -14323,6 +15163,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0210",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Diabetic Ketoacidosis (initial management)",
    "tags": [
@@ -14342,6 +15183,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0209",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Contrast-Induced Nephropathy Prevention",
    "tags": [
@@ -14361,6 +15203,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0208",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Anti-GBM Disease (Pulmonary-Renal Syndrome)",
    "tags": [
@@ -14380,6 +15223,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0207",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Variceal Upper GI Bleeding",
    "tags": [
@@ -14399,6 +15243,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0206",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Gallstone Pancreatitis",
    "tags": [
@@ -14418,6 +15263,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0205",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Complicated Parapneumonic Effusion / Empyema",
    "tags": [
@@ -14437,6 +15283,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0204",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "COPD Exacerbation (controlled oxygen)",
    "tags": [
@@ -14456,6 +15303,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0203",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Fibrillation with Rapid Ventricular Response",
    "tags": [
@@ -14475,6 +15323,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0202",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Inferior STEMI with RV Infarction",
    "tags": [
@@ -14494,6 +15343,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0201",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Cellulitis",
    "tags": [
@@ -14513,6 +15363,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0200",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Herpes Zoster",
    "tags": [
@@ -14532,6 +15383,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0199",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Panic Disorder",
    "tags": [
@@ -14551,6 +15403,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0198",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Anorexia Nervosa",
    "tags": [
@@ -14570,6 +15423,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0197",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Slipped Capital Femoral Epiphysis",
    "tags": [
@@ -14589,6 +15443,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0196",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Fat Embolism Syndrome",
    "tags": [
@@ -14608,6 +15463,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0195",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Postoperative Endophthalmitis",
    "tags": [
@@ -14627,6 +15483,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0194",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Acute Anterior Uveitis",
    "tags": [
@@ -14646,6 +15503,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0193",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Ruptured Abdominal Aortic Aneurysm",
    "tags": [
@@ -14665,6 +15523,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0192",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Sigmoid Volvulus",
    "tags": [
@@ -14684,6 +15543,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0191",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Shoulder Dystocia",
    "tags": [
@@ -14703,6 +15563,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0190",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Ovarian Torsion",
    "tags": [
@@ -14722,6 +15583,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0189",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Simple Febrile Seizure",
    "tags": [
@@ -14741,6 +15603,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0188",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Bronchiolitis",
    "tags": [
@@ -14760,6 +15623,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0187",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Dermatomyositis",
    "tags": [
@@ -14779,6 +15643,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0186",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Ankylosing Spondylitis",
    "tags": [
@@ -14798,6 +15663,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0185",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Sickle Cell Vaso-occlusive Crisis",
    "tags": [
@@ -14817,6 +15683,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0184",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Immune Thrombocytopenia",
    "tags": [
@@ -14836,6 +15703,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0183",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Bell Palsy",
    "tags": [
@@ -14855,6 +15723,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0182",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Wernicke Encephalopathy",
    "tags": [
@@ -14874,6 +15743,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0181",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Herpes Simplex Encephalitis",
    "tags": [
@@ -14893,6 +15763,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0180",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Falciparum Malaria",
    "tags": [
@@ -14912,6 +15783,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0179",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Prolactinoma",
    "tags": [
@@ -14931,6 +15803,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0178",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Primary Hyperparathyroidism",
    "tags": [
@@ -14950,6 +15823,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0177",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Autosomal Dominant Polycystic Kidney Disease",
    "tags": [
@@ -14969,6 +15843,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0176",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "IgA Nephropathy",
    "tags": [
@@ -14988,6 +15863,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0175",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Ischemic Colitis",
    "tags": [
@@ -15007,6 +15883,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0174",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Cholangitis",
    "tags": [
@@ -15026,6 +15903,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0173",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Massive Hemoptysis",
    "tags": [
@@ -15045,6 +15923,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0172",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Obstructive Sleep Apnea",
    "tags": [
@@ -15064,6 +15943,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0171",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Hypertrophic Cardiomyopathy",
    "tags": [
@@ -15083,6 +15963,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0170",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Complete AV Block",
    "tags": [
@@ -15102,6 +15983,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0014",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical Signal AI",
    "subtopic": "심화 퀘스트 — PTB-XL 12유도 다중라벨의 열린 문제들",
    "tags": [
@@ -15126,6 +16008,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0013",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical Imaging AI",
    "subtopic": "오픈소스 프로젝트 분석 — PTB-XL 벤치마크(ecg_ptbxl_benchmarking)",
    "tags": [
@@ -15149,6 +16032,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0012",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical Signal AI",
    "subtopic": "12-Lead ECG Multi-label Diagnosis (PTB-XL)",
    "tags": [
@@ -15171,6 +16055,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0048",
    "type": "usmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Kawasaki Disease (Coronary Artery Aneurysm Prevention)",
    "tags": [
@@ -15190,6 +16075,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0047",
    "type": "usmle",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "Acute Cholangitis (Biliary Sepsis)",
    "tags": [
@@ -15209,6 +16095,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0046",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Flutter (ECG rhythm recognition)",
    "tags": [
@@ -15228,6 +16115,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0045",
    "type": "usmle",
+   "unit": "",
    "topic": "Microbiology",
    "subtopic": "Atypical Pneumonia (Legionella pneumophila)",
    "tags": [
@@ -15246,6 +16134,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0044",
    "type": "usmle",
+   "unit": "",
    "topic": "Biochemistry",
    "subtopic": "Fatty Acid Oxidation Disorder (MCAD Deficiency)",
    "tags": [
@@ -15264,6 +16153,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0043",
    "type": "usmle",
+   "unit": "",
    "topic": "Immunology",
    "subtopic": "X-linked Agammaglobulinemia (Bruton's Disease)",
    "tags": [
@@ -15283,6 +16173,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0082",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -15299,6 +16190,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0081",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -15315,6 +16207,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0080",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -15331,6 +16224,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0079",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -15347,6 +16241,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0078",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -15363,6 +16258,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0077",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -15379,6 +16275,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0076",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -15395,6 +16292,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0075",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -15411,6 +16309,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0074",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -15427,6 +16326,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0169",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Erythema Nodosum",
    "tags": [
@@ -15446,6 +16346,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0168",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Staphylococcal Scalded Skin Syndrome",
    "tags": [
@@ -15465,6 +16366,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0167",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Posterior Hip Dislocation",
    "tags": [
@@ -15484,6 +16386,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0166",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Supracondylar Humerus Fracture",
    "tags": [
@@ -15503,6 +16406,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0165",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Bacterial Keratitis",
    "tags": [
@@ -15522,6 +16426,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0164",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Central Retinal Vein Occlusion",
    "tags": [
@@ -15541,6 +16446,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0163",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Lithium Toxicity",
    "tags": [
@@ -15560,6 +16466,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0162",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Delirium",
    "tags": [
@@ -15579,6 +16486,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0161",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Umbilical Cord Prolapse",
    "tags": [
@@ -15598,6 +16506,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0160",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Chorioamnionitis",
    "tags": [
@@ -15617,6 +16526,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0159",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Necrotizing Enterocolitis",
    "tags": [
@@ -15636,6 +16546,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0158",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Biliary Atresia",
    "tags": [
@@ -15655,6 +16566,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0157",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Boerhaave Syndrome",
    "tags": [
@@ -15674,6 +16586,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0156",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Strangulated Inguinal Hernia",
    "tags": [
@@ -15693,6 +16606,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0155",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Granulomatosis with Polyangiitis",
    "tags": [
@@ -15712,6 +16626,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0154",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Polymyalgia Rheumatica",
    "tags": [
@@ -15731,6 +16646,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0153",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Hypertensive Intracerebral Hemorrhage",
    "tags": [
@@ -15750,6 +16666,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0152",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Idiopathic Intracranial Hypertension",
    "tags": [
@@ -15769,6 +16686,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0151",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Pneumocystis Pneumonia",
    "tags": [
@@ -15788,6 +16706,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0150",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Leptospirosis",
    "tags": [
@@ -15807,6 +16726,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0149",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Heparin-Induced Thrombocytopenia",
    "tags": [
@@ -15826,6 +16746,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0148",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Hereditary Spherocytosis",
    "tags": [
@@ -15845,6 +16766,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0147",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Superior Vena Cava Syndrome",
    "tags": [
@@ -15864,6 +16786,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0146",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Idiopathic Pulmonary Fibrosis",
    "tags": [
@@ -15884,6 +16807,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0145",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Ethylene Glycol Poisoning",
    "tags": [
@@ -15903,6 +16827,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0144",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Membranous Nephropathy",
    "tags": [
@@ -15922,6 +16847,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0143",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Central Diabetes Insipidus",
    "tags": [
@@ -15941,6 +16867,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0142",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Myxedema Coma",
    "tags": [
@@ -15960,6 +16887,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0141",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Hepatic Encephalopathy",
    "tags": [
@@ -15979,6 +16907,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0140",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Diverticulitis",
    "tags": [
@@ -15998,6 +16927,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0139",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Torsades de Pointes",
    "tags": [
@@ -16017,6 +16947,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0138",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Flutter",
    "tags": [
@@ -16036,6 +16967,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0073",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -16052,6 +16984,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0072",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -16068,6 +17001,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0071",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -16084,6 +17018,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0070",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -16100,6 +17035,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0069",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -16116,6 +17052,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0068",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -16132,6 +17069,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0067",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -16148,6 +17086,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0011",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical AI Lab",
    "subtopic": "심화 퀘스트 — 부정맥 inter-patient 일반화",
    "tags": [
@@ -16172,6 +17111,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0010",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical AI Lab",
    "subtopic": "1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [inter]",
    "tags": [
@@ -16191,6 +17131,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0009",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical AI Lab",
    "subtopic": "내가 공부한 모델 이해하기 — CNN·학습용어·Keras vs PyTorch·발전사",
    "tags": [
@@ -16214,6 +17155,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0008",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical AI Lab",
    "subtopic": "1주차 실행 로그 — ECG 1D-CNN (MIT-BIH AAMI 5-class) [intra]",
    "tags": [
@@ -16233,6 +17175,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0007",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical Signal AI",
    "subtopic": "1주차 심화 — ECG 부정맥 분류 딥다이브(구조·한계·대안·모델)",
    "tags": [
@@ -16257,6 +17200,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0066",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -16273,6 +17217,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0065",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -16289,6 +17234,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0064",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -16305,6 +17251,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0063",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -16321,6 +17268,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0062",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -16337,6 +17285,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0061",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -16353,6 +17302,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0060",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -16369,6 +17319,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0059",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -16385,6 +17336,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0058",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -16401,6 +17353,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0057",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -16417,6 +17370,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0137",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Spontaneous Bacterial Peritonitis",
    "tags": [
@@ -16437,6 +17391,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0136",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Tension Pneumothorax",
    "tags": [
@@ -16456,6 +17411,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0135",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Intussusception",
    "tags": [
@@ -16475,6 +17431,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0134",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Preeclampsia with Severe Features",
    "tags": [
@@ -16494,6 +17451,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0133",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Febrile Neutropenia",
    "tags": [
@@ -16513,6 +17471,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0132",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Pheochromocytoma (preoperative blockade)",
    "tags": [
@@ -16532,6 +17491,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0131",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Hyperkalemia (emergency management)",
    "tags": [
@@ -16551,6 +17511,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0130",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Unstable Ventricular Tachycardia",
    "tags": [
@@ -16570,6 +17531,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0129",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Scabies",
    "tags": [
@@ -16589,6 +17551,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0128",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Bullous Pemphigoid",
    "tags": [
@@ -16608,6 +17571,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0042",
    "type": "usmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Neuroleptic Malignant Syndrome vs Serotonin Syndrome (differentiating features)",
    "tags": [
@@ -16627,6 +17591,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0041",
    "type": "usmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Guillain-Barré Syndrome — Respiratory Monitoring Before Definitive Therapy",
    "tags": [
@@ -16646,6 +17611,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0040",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Inferior Wall MI with Suspected Right Ventricular Involvement (12-lead, real ECG)",
    "tags": [
@@ -16666,6 +17632,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0039",
    "type": "usmle",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "ACE Inhibitor-Induced AKI in Bilateral Renal Artery Stenosis",
    "tags": [
@@ -16685,6 +17652,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0038",
    "type": "usmle",
+   "unit": "",
    "topic": "Pharmacology",
    "subtopic": "Beta-Blocker Overdose — Glucagon Rescue Mechanism",
    "tags": [
@@ -16704,6 +17672,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0037",
    "type": "usmle",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "Chronic Passive Hepatic Congestion (centrilobular / zone 3 necrosis)",
    "tags": [
@@ -16723,6 +17692,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0056",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -16739,6 +17709,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0055",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -16755,6 +17726,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0054",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -16771,6 +17743,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0053",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -16787,6 +17760,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0052",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -16803,6 +17777,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0051",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -16819,6 +17794,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0050",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -16835,6 +17811,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0049",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -16851,6 +17828,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0048",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -16867,6 +17845,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0047",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -16883,6 +17862,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0046",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -16899,6 +17879,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0045",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -16915,6 +17896,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0044",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -16931,6 +17913,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0043",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -16947,6 +17930,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0042",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -16963,6 +17947,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0041",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -16979,6 +17964,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0097",
    "type": "kmle",
+   "unit": "",
    "topic": "Allergy",
    "subtopic": "DRESS Syndrome",
    "tags": [
@@ -16997,6 +17983,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0096",
    "type": "kmle",
+   "unit": "",
    "topic": "Allergy",
    "subtopic": "Anaphylaxis Management",
    "tags": [
@@ -17014,6 +18001,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0095",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Acute Hematogenous Osteomyelitis",
    "tags": [
@@ -17032,6 +18020,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0094",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Femoral Neck Fracture (Elderly)",
    "tags": [
@@ -17050,6 +18039,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0093",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Chemical (Alkali) Ocular Burn",
    "tags": [
@@ -17068,6 +18058,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0092",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Orbital Cellulitis",
    "tags": [
@@ -17086,6 +18077,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0091",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Breast Cancer (Palpable Mass Workup)",
    "tags": [
@@ -17103,6 +18095,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0090",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Mesenteric Ischemia",
    "tags": [
@@ -17121,6 +18114,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0089",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Hydatidiform Mole (GTD)",
    "tags": [
@@ -17139,6 +18133,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0088",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Placenta Previa",
    "tags": [
@@ -17157,6 +18152,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0087",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Henoch-Schonlein Purpura (IgA Vasculitis)",
    "tags": [
@@ -17175,6 +18171,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0086",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Croup (Laryngotracheobronchitis)",
    "tags": [
@@ -17193,6 +18190,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0085",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Post-traumatic Stress Disorder",
    "tags": [
@@ -17211,6 +18209,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0084",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Neuroleptic Malignant Syndrome",
    "tags": [
@@ -17228,6 +18227,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0083",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Multiple Sclerosis",
    "tags": [
@@ -17245,6 +18245,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0082",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Status Epilepticus",
    "tags": [
@@ -17262,6 +18263,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0081",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Scleroderma Renal Crisis",
    "tags": [
@@ -17279,6 +18281,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0080",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Antiphospholipid Syndrome",
    "tags": [
@@ -17297,6 +18300,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0079",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Clostridioides difficile Colitis",
    "tags": [
@@ -17315,6 +18319,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0078",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Febrile Neutropenia",
    "tags": [
@@ -17332,6 +18337,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0077",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "Acute Promyelocytic Leukemia (APL)",
    "tags": [
@@ -17350,6 +18356,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0076",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "Tumor Lysis Syndrome",
    "tags": [
@@ -17368,6 +18375,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0075",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Adrenal Crisis (Primary Adrenal Insufficiency)",
    "tags": [
@@ -17386,6 +18394,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0074",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Hyperosmolar Hyperglycemic State",
    "tags": [
@@ -17404,6 +18413,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0073",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Acute Poststreptococcal Glomerulonephritis",
    "tags": [
@@ -17422,6 +18432,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0072",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "SIADH Hyponatremia",
    "tags": [
@@ -17440,6 +18451,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0071",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Crohn Disease",
    "tags": [
@@ -17458,6 +18470,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0070",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Spontaneous Bacterial Peritonitis",
    "tags": [
@@ -17476,6 +18489,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0069",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "ARDS (lung-protective ventilation)",
    "tags": [
@@ -17494,6 +18508,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0068",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Community-Acquired Pneumonia (CURB-65)",
    "tags": [
@@ -17511,6 +18526,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0067",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Heart Failure GDMT (HFrEF)",
    "tags": [
@@ -17529,6 +18545,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0066",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Cardiac Tamponade",
    "tags": [
@@ -17548,6 +18565,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0006",
    "type": "ailab",
+   "unit": "",
    "topic": "ML Debugging",
    "subtopic": "의료 AI 디버그 로그 (에러 → 원인 → 수정)",
    "tags": [
@@ -17567,6 +18585,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0005",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical Signal AI",
    "subtopic": "ECG Arrhythmia Classification (MIT-BIH)",
    "tags": [
@@ -17587,6 +18606,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0004",
    "type": "ailab",
+   "unit": "",
    "topic": "AI Mentorship",
    "subtopic": "논의 노트 · 2026 W28",
    "tags": [
@@ -17606,6 +18626,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0003",
    "type": "ailab",
+   "unit": "",
    "topic": "ML Engineering",
    "subtopic": "Colab + Drive Setup & Reading Model Code",
    "tags": [
@@ -17625,6 +18646,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0002",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical Imaging AI",
    "subtopic": "3D Brain Tumor Segmentation",
    "tags": [
@@ -17645,6 +18667,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "ailab-2026-0001",
    "type": "ailab",
+   "unit": "",
    "topic": "Medical AI Curriculum",
    "subtopic": "12-Week Hands-on Roadmap",
    "tags": [
@@ -17664,6 +18687,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0036",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Complete Left Bundle Branch Block (12-lead, real ECG)",
    "tags": [
@@ -17683,6 +18707,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0035",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute STEMI management (12-lead, real ECG)",
    "tags": [
@@ -17702,6 +18727,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0034",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Complete Right Bundle Branch Block (12-lead, real ECG)",
    "tags": [
@@ -17721,6 +18747,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0033",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Normal Sinus Rhythm (real ECG from open DB)",
    "tags": [
@@ -17739,6 +18766,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0032",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Fibrillation (ECG rhythm recognition)",
    "tags": [
@@ -17757,6 +18785,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0031",
    "type": "usmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Severe Preeclampsia Management (delivery timing, IUGR/oligohydramnios)",
    "tags": [
@@ -17776,6 +18805,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0030",
    "type": "usmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "STEC-Hemolytic Uremic Syndrome (antibiotics contraindicated)",
    "tags": [
@@ -17795,6 +18825,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0029",
    "type": "usmle",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "Necrotizing Fasciitis",
    "tags": [
@@ -17814,6 +18845,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0028",
    "type": "usmle",
+   "unit": "",
    "topic": "Internal Medicine",
    "subtopic": "DKA Potassium Management",
    "tags": [
@@ -17833,6 +18865,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0027",
    "type": "usmle",
+   "unit": "",
    "topic": "Microbiology",
    "subtopic": "Invasive Aspergillosis in prolonged neutropenia",
    "tags": [
@@ -17852,6 +18885,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0026",
    "type": "usmle",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "Carbon Monoxide Poisoning (O2-Hb dissociation curve)",
    "tags": [
@@ -17871,6 +18905,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0025",
    "type": "usmle",
+   "unit": "",
    "topic": "Pharmacology",
    "subtopic": "Acetaminophen Toxicity (NAPQI / N-acetylcysteine)",
    "tags": [
@@ -17890,6 +18925,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0040",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -17906,6 +18942,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0039",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -17922,6 +18959,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0038",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -17938,6 +18976,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0037",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -17954,6 +18993,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0036",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -17970,6 +19010,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0035",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -17986,6 +19027,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0034",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -18002,6 +19044,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0033",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -18018,6 +19061,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0032",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -18034,6 +19078,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0031",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -18050,6 +19095,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0030",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -18066,6 +19112,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0065",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Giant Cell Arteritis",
    "tags": [
@@ -18083,6 +19130,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0064",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Rheumatoid Arthritis",
    "tags": [
@@ -18100,6 +19148,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0063",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Asthma",
    "tags": [
@@ -18117,6 +19166,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0062",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Pulmonary Embolism",
    "tags": [
@@ -18134,6 +19184,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0061",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Bipolar I Mania",
    "tags": [
@@ -18151,6 +19202,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0060",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Serotonin Syndrome",
    "tags": [
@@ -18168,6 +19220,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0059",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Pyloric Stenosis",
    "tags": [
@@ -18185,6 +19238,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0058",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Epiglottitis",
    "tags": [
@@ -18202,6 +19256,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0057",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Cauda Equina Syndrome",
    "tags": [
@@ -18219,6 +19274,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0056",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Scaphoid Fracture",
    "tags": [
@@ -18236,6 +19292,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0055",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Diabetic Retinopathy",
    "tags": [
@@ -18253,6 +19310,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0054",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Retinal Detachment",
    "tags": [
@@ -18270,6 +19328,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0053",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Placental Abruption",
    "tags": [
@@ -18287,6 +19346,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0052",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Ectopic Pregnancy",
    "tags": [
@@ -18304,6 +19364,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0051",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Myasthenia Gravis",
    "tags": [
@@ -18321,6 +19382,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0050",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Subarachnoid Hemorrhage",
    "tags": [
@@ -18338,6 +19400,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0049",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Rhabdomyolysis AKI",
    "tags": [
@@ -18355,6 +19418,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0048",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Minimal Change Nephrotic Syndrome",
    "tags": [
@@ -18372,6 +19436,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0047",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Necrotizing Fasciitis",
    "tags": [
@@ -18389,6 +19454,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0046",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Infective Endocarditis",
    "tags": [
@@ -18406,6 +19472,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0045",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Disseminated Intravascular Coagulation",
    "tags": [
@@ -18423,6 +19490,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0044",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Thrombotic Thrombocytopenic Purpura",
    "tags": [
@@ -18440,6 +19508,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0043",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Perforated Peptic Ulcer",
    "tags": [
@@ -18457,6 +19526,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0042",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Small Bowel Obstruction",
    "tags": [
@@ -18474,6 +19544,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0041",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Ulcerative Colitis",
    "tags": [
@@ -18491,6 +19562,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0040",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Achalasia",
    "tags": [
@@ -18508,6 +19580,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0039",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Cushing Syndrome",
    "tags": [
@@ -18525,6 +19598,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0038",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Thyroid Storm",
    "tags": [
@@ -18542,6 +19616,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0037",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Pemphigus Vulgaris",
    "tags": [
@@ -18559,6 +19634,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0036",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Psoriasis",
    "tags": [
@@ -18576,6 +19652,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0035",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Acute Pericarditis",
    "tags": [
@@ -18593,6 +19670,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0034",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Aortic Stenosis",
    "tags": [
@@ -18610,6 +19688,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0029",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -18626,6 +19705,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0028",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -18642,6 +19722,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0027",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -18658,6 +19739,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0026",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -18674,6 +19756,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0025",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -18690,6 +19773,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0024",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -18706,6 +19790,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0023",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -18722,6 +19807,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0022",
    "type": "paper",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "",
    "tags": [
@@ -18738,6 +19824,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0021",
    "type": "paper",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "",
    "tags": [
@@ -18754,6 +19841,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0020",
    "type": "paper",
+   "unit": "",
    "topic": "Laboratory Medicine",
    "subtopic": "",
    "tags": [
@@ -18770,6 +19858,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0019",
    "type": "paper",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "",
    "tags": [
@@ -18786,6 +19875,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0018",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -18802,6 +19892,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0017",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -18818,6 +19909,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0016",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -18834,6 +19926,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0015",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -18850,6 +19943,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0014",
    "type": "paper",
+   "unit": "",
    "topic": "Hematology-Oncology",
    "subtopic": "",
    "tags": [
@@ -18866,6 +19960,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0013",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -18882,6 +19977,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0012",
    "type": "paper",
+   "unit": "",
    "topic": "Oncology",
    "subtopic": "",
    "tags": [
@@ -18898,6 +19994,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0011",
    "type": "paper",
+   "unit": "",
    "topic": "Oncology",
    "subtopic": "",
    "tags": [
@@ -18914,6 +20011,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0010",
    "type": "paper",
+   "unit": "",
    "topic": "Oncology",
    "subtopic": "",
    "tags": [
@@ -18930,6 +20028,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0009",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -18946,6 +20045,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0008",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -18962,6 +20062,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0007",
    "type": "paper",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "",
    "tags": [
@@ -18978,6 +20079,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0006",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -18994,6 +20096,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0005",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -19010,6 +20113,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0004",
    "type": "paper",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "",
    "tags": [
@@ -19026,6 +20130,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0003",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -19042,6 +20147,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0002",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -19058,6 +20164,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "paper-2026-0001",
    "type": "paper",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "",
    "tags": [
@@ -19074,6 +20181,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0033",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Central Retinal Artery Occlusion",
    "tags": [
@@ -19091,6 +20199,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0032",
    "type": "kmle",
+   "unit": "",
    "topic": "Ophthalmology",
    "subtopic": "Acute Angle-Closure Glaucoma",
    "tags": [
@@ -19108,6 +20217,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0031",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Malignant Melanoma",
    "tags": [
@@ -19125,6 +20235,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0030",
    "type": "kmle",
+   "unit": "",
    "topic": "Dermatology",
    "subtopic": "Stevens-Johnson Syndrome",
    "tags": [
@@ -19142,6 +20253,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0029",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Postpartum Hemorrhage",
    "tags": [
@@ -19159,6 +20271,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0028",
    "type": "kmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Preeclampsia with Severe Features",
    "tags": [
@@ -19176,6 +20289,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0027",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Intussusception",
    "tags": [
@@ -19193,6 +20307,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0026",
    "type": "kmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Kawasaki Disease",
    "tags": [
@@ -19210,6 +20325,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0025",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Septic Arthritis",
    "tags": [
@@ -19227,6 +20343,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0024",
    "type": "kmle",
+   "unit": "",
    "topic": "Orthopedics",
    "subtopic": "Compartment Syndrome",
    "tags": [
@@ -19244,6 +20361,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0023",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Cholecystitis",
    "tags": [
@@ -19261,6 +20379,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0022",
    "type": "kmle",
+   "unit": "",
    "topic": "General Surgery",
    "subtopic": "Acute Appendicitis",
    "tags": [
@@ -19278,6 +20397,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0021",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Alcohol Withdrawal",
    "tags": [
@@ -19295,6 +20415,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0020",
    "type": "kmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Major Depressive Disorder",
    "tags": [
@@ -19312,6 +20433,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0019",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Guillain-Barre Syndrome",
    "tags": [
@@ -19329,6 +20451,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0018",
    "type": "kmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Acute Ischemic Stroke",
    "tags": [
@@ -19346,6 +20469,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0017",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Acute Gout",
    "tags": [
@@ -19363,6 +20487,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0016",
    "type": "kmle",
+   "unit": "",
    "topic": "Rheumatology",
    "subtopic": "Systemic Lupus Erythematosus",
    "tags": [
@@ -19380,6 +20505,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0015",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Vitamin B12 Deficiency",
    "tags": [
@@ -19397,6 +20523,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0014",
    "type": "kmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Iron Deficiency Anemia",
    "tags": [
@@ -19414,6 +20541,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0013",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Pulmonary Tuberculosis",
    "tags": [
@@ -19431,6 +20559,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0012",
    "type": "kmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Bacterial Meningitis",
    "tags": [
@@ -19448,6 +20577,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0011",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Primary Aldosteronism",
    "tags": [
@@ -19465,6 +20595,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0010",
    "type": "kmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Diabetic Ketoacidosis",
    "tags": [
@@ -19482,6 +20613,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0009",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Prerenal AKI",
    "tags": [
@@ -19499,6 +20631,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0008",
    "type": "kmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Hyperkalemia",
    "tags": [
@@ -19516,6 +20649,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0007",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Acute Pancreatitis",
    "tags": [
@@ -19533,6 +20667,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0006",
    "type": "kmle",
+   "unit": "",
    "topic": "Gastroenterology",
    "subtopic": "Variceal Bleeding",
    "tags": [
@@ -19550,6 +20685,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0005",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "COPD Exacerbation",
    "tags": [
@@ -19567,6 +20703,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0004",
    "type": "kmle",
+   "unit": "",
    "topic": "Pulmonology",
    "subtopic": "Tension Pneumothorax",
    "tags": [
@@ -19584,6 +20721,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0003",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Atrial Fibrillation",
    "tags": [
@@ -19601,6 +20739,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0002",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "STEMI",
    "tags": [
@@ -19618,6 +20757,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "basic-2026-0003",
    "type": "basic",
+   "unit": "",
    "topic": "Pharmacology",
    "subtopic": "Beta-lactam 작용기전과 내성",
    "tags": [
@@ -19637,6 +20777,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "basic-2026-0002",
    "type": "basic",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "Anion gap 산-염기",
    "tags": [
@@ -19655,6 +20796,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "basic-2026-0001",
    "type": "basic",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "Starling forces",
    "tags": [
@@ -19673,6 +20815,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0024",
    "type": "usmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Lithium Toxicity",
    "tags": [
@@ -19692,6 +20835,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0023",
    "type": "usmle",
+   "unit": "",
    "topic": "Psychiatry",
    "subtopic": "Serotonin Syndrome",
    "tags": [
@@ -19711,6 +20855,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0022",
    "type": "usmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Ectopic Pregnancy",
    "tags": [
@@ -19729,6 +20874,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0021",
    "type": "usmle",
+   "unit": "",
    "topic": "Obstetrics & Gynecology",
    "subtopic": "Preeclampsia with Severe Features",
    "tags": [
@@ -19747,6 +20893,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0020",
    "type": "usmle",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "Polyuria (SIADH vs Diabetes Insipidus)",
    "tags": [
@@ -19766,6 +20913,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0019",
    "type": "usmle",
+   "unit": "",
    "topic": "Physiology",
    "subtopic": "Hypoxemia (A-a Gradient)",
    "tags": [
@@ -19785,6 +20933,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0018",
    "type": "usmle",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "Amyloidosis",
    "tags": [
@@ -19804,6 +20953,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0017",
    "type": "usmle",
+   "unit": "",
    "topic": "Pathology",
    "subtopic": "Retinoblastoma (Two-Hit Hypothesis)",
    "tags": [
@@ -19823,6 +20973,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0016",
    "type": "usmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Hypertrophic Pyloric Stenosis",
    "tags": [
@@ -19841,6 +20992,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0015",
    "type": "usmle",
+   "unit": "",
    "topic": "Pediatrics",
    "subtopic": "Ductal-Dependent Cyanotic CHD",
    "tags": [
@@ -19860,6 +21012,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0014",
    "type": "usmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Acute Ischemic Stroke (Thrombolysis)",
    "tags": [
@@ -19879,6 +21032,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0013",
    "type": "usmle",
+   "unit": "",
    "topic": "Surgery",
    "subtopic": "Acute Mesenteric Ischemia",
    "tags": [
@@ -19897,6 +21051,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0012",
    "type": "usmle",
+   "unit": "",
    "topic": "Microbiology",
    "subtopic": "Exotoxin Mechanism (EF-2 ADP-ribosylation)",
    "tags": [
@@ -19916,6 +21071,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0011",
    "type": "usmle",
+   "unit": "",
    "topic": "Microbiology",
    "subtopic": "Vancomycin Resistance (VRE)",
    "tags": [
@@ -19935,6 +21091,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0010",
    "type": "usmle",
+   "unit": "",
    "topic": "Biochemistry",
    "subtopic": "Acute Intermittent Porphyria",
    "tags": [
@@ -19954,6 +21111,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0009",
    "type": "usmle",
+   "unit": "",
    "topic": "Immunology",
    "subtopic": "Terminal Complement Deficiency",
    "tags": [
@@ -19973,6 +21131,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0008",
    "type": "usmle",
+   "unit": "",
    "topic": "Biochemistry",
    "subtopic": "Urea Cycle (Ornithine Transcarbamylase Deficiency)",
    "tags": [
@@ -19992,6 +21151,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0007",
    "type": "usmle",
+   "unit": "",
    "topic": "Neurology",
    "subtopic": "Lambert-Eaton Myasthenic Syndrome",
    "tags": [
@@ -20011,6 +21171,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0006",
    "type": "usmle",
+   "unit": "",
    "topic": "Immunology",
    "subtopic": "Chronic Granulomatous Disease",
    "tags": [
@@ -20030,6 +21191,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0005",
    "type": "usmle",
+   "unit": "",
    "topic": "Hematology",
    "subtopic": "Heparin-Induced Thrombocytopenia",
    "tags": [
@@ -20049,6 +21211,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0004",
    "type": "usmle",
+   "unit": "",
    "topic": "Endocrinology",
    "subtopic": "Pheochromocytoma",
    "tags": [
@@ -20068,6 +21231,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0003",
    "type": "usmle",
+   "unit": "",
    "topic": "Nephrology",
    "subtopic": "Acid-Base (Mixed Disorder)",
    "tags": [
@@ -20087,6 +21251,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0002",
    "type": "usmle",
+   "unit": "",
    "topic": "Infectious Disease",
    "subtopic": "Infective Endocarditis",
    "tags": [
@@ -20106,6 +21271,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "usmle-2026-0001",
    "type": "usmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Heart Failure Pharmacology",
    "tags": [
@@ -20126,6 +21292,7 @@ window.MEDKOS_INDEX = {
   {
    "id": "kmle-2026-0001",
    "type": "kmle",
+   "unit": "",
    "topic": "Cardiology",
    "subtopic": "Heart Failure",
    "tags": [

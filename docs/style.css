@@ -40,6 +40,10 @@ h1{margin:0 0 4px; font-size:1.5rem}
 .paper .plink{color:var(--accent); text-decoration:none; font-size:.88rem}
 .paper .plink:hover{text-decoration:underline}
 .pill{background:rgba(59,130,246,.15); color:#9cc3ff; border:1px solid #2f4a72; border-radius:6px; padding:2px 8px; font-size:.8rem}
+/* 회차·부위 배지 — 날짜순 목록에서 해부 카드의 소속(2회차 · 등)을 제목 앞에 박는다 */
+.pill.unit{background:rgba(240,181,107,.14); color:#f0b56b; border-color:#7a5a2e;
+  margin-right:8px; cursor:pointer; vertical-align:middle; white-space:nowrap}
+.pill.unit:hover{background:rgba(240,181,107,.26)}
 .conf-medium{color:#e0b34d}
 .conf-low{color:#ef8f8f}
 .conf-high{color:var(--ok)}
@@ -192,6 +196,11 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
 .wn-kmle,.wn-usmle{color:#9cc3ff; border-color:#3d5166}
 .wn-paper{color:#7fd4a8; border-color:#3f7a5e}
 .wn-ailab{color:#e0c070; border-color:#5a4a20}
+/* 회차·부위 배지 — 날짜순 타임라인에서 해부 자료의 소속(2회차 · 등). 누르면 그 회차만 */
+.wn-unit{flex:none; font-size:.72rem; font-weight:700; border-radius:5px; padding:2px 7px;
+  background:rgba(240,181,107,.14); border:1px solid #7a5a2e; color:#f0b56b;
+  cursor:pointer; white-space:nowrap; font-family:inherit; line-height:1.5}
+.wn-unit:hover{background:rgba(240,181,107,.28)}
 .wn-title{flex:1 1 260px; color:var(--ink); font-size:.92rem}
 .wn-topic{color:var(--muted); font-size:.8rem}
 .wn-links{flex:none; font-size:.8rem; color:var(--muted)}
