@@ -14,6 +14,7 @@ export_anatomy_web.py — content/anatomy/ → docs/anatomy-data.js (자동 생�
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -94,6 +95,24 @@ def export_concepts() -> list[dict]:
     return out
 
 
+def _session_no(meta: dict) -> int | None:
+    """카드의 `session_no` 또는 `scheduled_dates` 첫 날짜로 회차 번호(1-base)를 정한다.
+
+    웹이 PDF와 **같은 회차 순서**로 흐르려면 모든 카드가 회차를 들고 있어야 한다.
+    문항은 `scheduled_dates` 만 갖고 서브노트는 `session_no` 를 갖는다 — 둘 다 본다.
+    """
+    if meta.get("session_no"):
+        return int(meta["session_no"])
+    for d in meta.get("scheduled_dates") or []:
+        try:
+            n = sched.session_no_for_date(date.fromisoformat(str(d)))
+        except ValueError:
+            n = None
+        if n:
+            return n
+    return None
+
+
 def export_questions() -> list[dict]:
     out = []
     for meta, body in _load("questions"):
@@ -101,6 +120,7 @@ def export_questions() -> list[dict]:
             continue
         out.append({
             "id": meta["id"], "style": meta.get("question_style", ""),
+            "session": _session_no(meta),
             "region": meta.get("region", "multi"),
             "subregion": meta.get("subregion", ""),
             "examPhase": meta.get("exam_phase", ""),
@@ -114,6 +134,29 @@ def export_questions() -> list[dict]:
             "imageOrigin": meta.get("asset_origin"),
             "refs": _refs(meta),
         })
+    return out
+
+
+def export_guides() -> list[dict]:
+    """회차 서브노트 목록. PDF 와 나란히 보려면 홈페이지가 같은 목차를 알아야 한다."""
+    out = []
+    for meta, body in _load("notes"):
+        if meta.get("kind") != "study_guide":
+            continue
+        figs = sorted(set(re.findall(r"!fig\s+(docs/assets/anatomy/[\w.-]+\.svg)", body)))
+        heads = [h.split("|")[0].strip() for h in re.findall(r"^## +(.+)$", body, re.M)]
+        out.append({
+            "id": meta["id"], "session": _session_no(meta),
+            "title": meta.get("pdf_title") or meta.get("subtopic", ""),
+            "subtitle": meta.get("pdf_subtitle", ""),
+            "sections": [h for h in heads if not h.startswith("0.")],
+            "figs": [f.split("/")[-1] for f in figs],
+            "mnemonics": [{"key": str(m.get("key", "")), "full": str(m.get("full", "")),
+                           "note": str(m.get("note", ""))}
+                          for m in (meta.get("mnemonics") or [])],
+            "scanCount": len(meta.get("scan_questions") or []),
+        })
+    out.sort(key=lambda g: (g["session"] or 99))
     return out
 
 
@@ -183,9 +226,13 @@ def export_sources() -> list[dict]:
 
 def main() -> int:
     schedule = [{
-        "date": s["date"].isoformat(), "topics": s["topics"],
+        "no": i, "date": s["date"].isoformat(), "topics": s["topics"],
         "regions": s.get("regions", []), "exam": s.get("exam"),
-    } for s in sched.SCHEDULE_2026]
+        "professor": (sched.SESSION_DETAILS.get(i) or {}).get("professor", ""),
+        "eanatomy": [list(x) for x in
+                     ((sched.SESSION_DETAILS.get(i) or {}).get("eanatomy") or [])],
+        "tasks": (sched.SESSION_DETAILS.get(i) or {}).get("tasks", []),
+    } for i, s in enumerate(sched.SCHEDULE_2026, 1)]
     payload = {
         "generated": date.today().isoformat(),
         "deadlines": {"tagging1": sched.TAGGING_1.isoformat(),
@@ -194,6 +241,7 @@ def main() -> int:
         "schedule": schedule,
         "concepts": export_concepts(),
         "questions": export_questions(),
+        "guides": export_guides(),
         "daily": export_daily(),
         "glossary": export_glossary(),
         "answersStats": export_answers_stats(),
@@ -212,7 +260,7 @@ def main() -> int:
     )
     print(f"생성: {OUT.relative_to(ROOT)} (개념 {len(payload['concepts'])} · "
           f"문항 {len(payload['questions'])} · 용어 {len(payload['glossary'])} · "
-          f"daily {len(payload['daily'])})")
+          f"daily {len(payload['daily'])} · 서브노트 {len(payload['guides'])})")
     return 0
 
 

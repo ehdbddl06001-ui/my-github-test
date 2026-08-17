@@ -229,3 +229,41 @@ mark{background:rgba(124,92,255,.35); color:#fff; border-radius:3px; padding:0 2
 .dg-links a{color:var(--accent); text-decoration:none}
 .dg-links a:hover{text-decoration:underline}
 .wn-diagram{color:#c9a34a; border-color:#5a4a20}
+
+
+/* ── 회차별 학습(진도 순) ─────────────────────────────────── */
+.co-list { list-style: none; margin: 0; padding: 0; }
+.co-item { border: 1px solid var(--line, #2a3550); border-radius: 10px; margin: 8px 0;
+           overflow: hidden; }
+.co-item.is-open { border-color: #6f7dff; }
+.co-item.is-exam .co-no { background: #7a2740; }
+.co-item.is-done .co-head { opacity: .62; }
+.co-head { display: grid; grid-template-columns: 84px 150px 1fr auto; gap: 10px;
+           align-items: center; width: 100%; text-align: left; cursor: pointer;
+           background: none; border: 0; color: inherit; font: inherit; padding: 11px 12px; }
+.co-head:hover { background: rgba(111,125,255,.10); }
+.co-no { background: #33407a; color: #dfe6ff; border-radius: 6px; padding: 3px 0;
+         text-align: center; font-weight: 700; font-size: .86em; }
+.co-date { font-size: .84em; opacity: .78; }
+.co-topic { font-size: .92em; }
+.co-meta { font-size: .8em; opacity: .7; white-space: nowrap; }
+.co-done { font-size: .8em; opacity: .75; padding: 0 12px 8px; display: inline-block; }
+.co-body { padding: 4px 14px 16px; border-top: 1px solid var(--line, #2a3550); }
+.co-body h4 { margin: 14px 0 6px; font-size: .95em; }
+.co-chip { display: inline-block; font-size: .74em; padding: 1px 7px; border-radius: 999px;
+           background: #33407a; margin-left: 5px; }
+.co-mn table { width: 100%; border-collapse: collapse; font-size: .86em; margin-top: 6px; }
+.co-mn td { padding: 4px 6px; border-top: 1px solid var(--line, #2a3550); vertical-align: top; }
+.co-qs { padding-left: 20px; }
+.co-qs li { margin: 9px 0; }
+.co-rev { margin-left: 8px; font-size: .78em; padding: 2px 9px; border-radius: 6px;
+          border: 1px solid var(--line, #2a3550); background: none; color: inherit;
+          cursor: pointer; }
+.co-rev:hover { background: rgba(111,125,255,.16); }
+.co-ans { margin: 6px 0 0; padding: 8px 10px; border-left: 3px solid #6f7dff;
+          background: rgba(111,125,255,.08); border-radius: 0 8px 8px 0; font-size: .9em; }
+.co-ans p { margin: 5px 0 0; opacity: .85; }
+@media (max-width: 720px) {
+  .co-head { grid-template-columns: 70px 1fr; }
+  .co-date, .co-meta { grid-column: 2; }
+}

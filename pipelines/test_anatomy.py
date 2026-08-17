@@ -477,6 +477,27 @@ def test_legacy_professor_names_are_marked() -> None:
     assert not bad, f"표시 없는 과거 학기 교수명: {bad[:6]} (총 {len(bad)}건)"
 
 
+def test_web_bundle_is_ordered_by_session() -> None:
+    """홈페이지가 **회차 순서**로 흐르려면 번들이 회차 번호를 들고 있어야 한다(2026-08-17).
+
+    사용자가 서브노트 PDF를 옆에 놓고 같은 순서로 본다 — 문항·서브노트에 session 이
+    없으면 '회차별 학습' 화면이 빈 채로 뜬다.
+    """
+    import json
+    root = Path(__file__).resolve().parents[1]
+    raw = (root / "docs/anatomy-data.js").read_text(encoding="utf-8")
+    data = json.loads(raw[raw.index("{"):raw.rindex(";")])
+    sch = data["schedule"]
+    assert [s["no"] for s in sch] == list(range(1, len(sch) + 1)), "회차 번호가 1..N 순서가 아니다"
+    assert [s["date"] for s in sch] == sorted(s["date"] for s in sch), "일정이 날짜순이 아니다"
+    qs = data["questions"]
+    missing = [q["id"] for q in qs if not q.get("session")]
+    assert not missing, f"회차 없는 문항이 번들에 있다: {missing[:5]}"
+    guides = data["guides"]
+    assert guides and all(g.get("session") for g in guides), "서브노트에 회차가 없다"
+    assert guides == sorted(guides, key=lambda g: g["session"]), "서브노트가 회차순이 아니다"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":
