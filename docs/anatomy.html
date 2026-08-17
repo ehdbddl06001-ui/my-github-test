@@ -14,7 +14,6 @@
   <a href="ailab.html">🤖 AI랩</a>
   <a href="anatomy.html" class="active">🫀 해부학</a>
   <a href="whatsnew.html">🆕 새 자료</a>
-  <a href="diagrams.html">🖼 도해</a>
   <a href="search.html">🔍 검색</a>
 </nav>
 <header>
@@ -30,6 +29,7 @@
     <button class="anat-tab" data-view="relation" role="tab" aria-selected="false">🔗 관계 모드</button>
     <button class="anat-tab" data-view="quiz" role="tab" aria-selected="false">📌 태깅 퀴즈</button>
     <button class="anat-tab" data-view="review" role="tab" aria-selected="false">♻️ 복습 큐</button>
+    <button class="anat-tab" data-view="diagrams" role="tab" aria-selected="false">🖼 도해·계보</button>
     <button class="anat-tab" data-view="sources" role="tab" aria-selected="false">📚 출처·자료</button>
   </div>
 </section>
@@ -39,6 +39,7 @@
 <section id="anatRelation" class="card anat-view hidden"></section>
 <section id="anatQuiz" class="card anat-view hidden"></section>
 <section id="anatReview" class="card anat-view hidden"></section>
+<section id="anatDiagrams" class="card anat-view hidden"></section>
 <section id="anatSources" class="card anat-view hidden"></section>
 
 <footer>
@@ -49,6 +50,7 @@
 </footer>
 
 <script src="anatomy-data.js"></script>
+<script src="diagrams-data.js"></script>
 <script src="anatomy-app.js"></script>
 </body>
 </html>

@@ -88,9 +88,11 @@
 
   // ── 탭 ────────────────────────────────────────────────────
   var VIEWS = { today: renderToday, region: renderRegion, relation: renderRelation,
-                quiz: renderQuizSetup, review: renderReview, sources: renderSources };
+                quiz: renderQuizSetup, review: renderReview, diagrams: renderDiagrams,
+                sources: renderSources };
   var viewEls = { today: "anatToday", region: "anatRegion", relation: "anatRelation",
-                  quiz: "anatQuiz", review: "anatReview", sources: "anatSources" };
+                  quiz: "anatQuiz", review: "anatReview", diagrams: "anatDiagrams",
+                  sources: "anatSources" };
   document.querySelectorAll(".anat-tab").forEach(function (btn) {
     btn.addEventListener("click", function () { show(btn.dataset.view); });
   });
@@ -467,6 +469,119 @@
     $("anatSources").innerHTML = html;
   }
 
+  // ── 도해·계보 갤러리 ───────────────────────────────────────
+  // 자산(SVG)은 content 카드가 아니라 검색 색인에 안 잡힌다 → 별도 매니페스트
+  // (diagrams-data.js, pipelines/export_diagrams_web.py)를 읽는다.
+  var DG = (window.MEDKOS_DIAGRAMS || {});
+  var DGI = DG.items || [];
+  var DG_SEEN = "medkos_diagrams_seen";
+  var dgState = { kind: "__ALL__", session: "__ALL__", variant: "labeled", q: "" };
+
+  function dgSeen() {
+    try { return localStorage.getItem(DG_SEEN) || ""; } catch (e) { return ""; }
+  }
+  function dgIsNew(it) {
+    var sd = dgSeen();
+    if (sd) return it.date > sd;
+    return Math.round((new Date(kstToday()) - new Date(it.date)) / 86400000) <= 7;
+  }
+  function dgFiltered() {
+    return DGI.filter(function (it) {
+      if (dgState.kind !== "__ALL__" && it.kind !== dgState.kind) return false;
+      if (dgState.session !== "__ALL__" && String(it.session || "") !== dgState.session) return false;
+      if (dgState.variant !== "__ALL__" && it.variant !== dgState.variant) return false;
+      if (dgState.q && (it.title + " " + it.file).toLowerCase().indexOf(dgState.q) < 0) return false;
+      return true;
+    });
+  }
+  function dgMate(it) {
+    var other = it.variant === "labeled" ? "quiz" : "labeled";
+    return DGI.filter(function (x) { return x.base === it.base && x.variant === other; })[0];
+  }
+  function dgTile(it) {
+    var mate = dgMate(it);
+    return '<figure class="dg-tile' + (dgIsNew(it) ? " is-new" : "") + '">'
+      + '<a href="assets/anatomy/' + esc(it.file) + '" target="_blank" rel="noopener">'
+      + '<img loading="lazy" src="assets/anatomy/' + esc(it.file) + '" alt="' + esc(it.title) + '" /></a>'
+      + "<figcaption>"
+      + '<span class="dg-kind dg-' + esc(it.kind) + '">' + esc(it.kindLabel) + "</span>"
+      + (it.session ? '<span class="dg-sess">' + it.session + "회차</span>" : "")
+      + (it.variant === "quiz" ? '<span class="dg-sess dg-quiz">퀴즈판</span>' : "")
+      + '<span class="dg-title">' + esc(it.title) + "</span>"
+      + '<span class="dg-links"><a href="assets/anatomy/' + esc(it.file)
+      + '" target="_blank" rel="noopener">크게 보기</a>'
+      + (mate ? ' · <a href="assets/anatomy/' + esc(mate.file) + '" target="_blank" rel="noopener">'
+          + (mate.variant === "quiz" ? "퀴즈판" : "라벨판") + "</a>" : "")
+      + "</span></figcaption></figure>";
+  }
+  function dgPaint() {
+    var rows = dgFiltered(), byDate = {}, order = [];
+    rows.forEach(function (it) {
+      if (!byDate[it.date]) { byDate[it.date] = []; order.push(it.date); }
+      byDate[it.date].push(it);
+    });
+    var html = order.map(function (d) {
+      var items = byDate[d], n = items.filter(dgIsNew).length;
+      return '<div class="wn-day"><h3 class="wn-date">' + esc(d) + " (" + weekdayKr(d) + ")"
+        + '<span class="muted"> · ' + items.length + "장</span>"
+        + (n ? ' <span class="wn-badge">NEW ' + n + "</span>" : "")
+        + '</h3><div class="dg-grid">' + items.map(dgTile).join("") + "</div></div>";
+    }).join("") || '<p class="muted">조건에 맞는 도해가 없습니다.</p>';
+    var box = $("dgResults");
+    if (box) box.innerHTML = html;
+    var cnt = $("dgCount");
+    if (cnt) cnt.textContent = rows.length + "장 · " + order.length + "일";
+  }
+  function weekdayKr(iso) {
+    return ["일", "월", "화", "수", "목", "금", "토"][new Date(iso + "T00:00:00+09:00").getDay()];
+  }
+  function renderDiagrams() {
+    if (!DGI.length) {
+      $("anatDiagrams").innerHTML = '<p class="muted">도해 목록이 비어 있습니다. '
+        + "<code>python pipelines/export_diagrams_web.py</code> 로 생성하세요.</p>";
+      return;
+    }
+    var kinds = [], seenK = {};
+    DGI.forEach(function (i) { if (!seenK[i.kind]) { seenK[i.kind] = i.kindLabel; kinds.push(i.kind); } });
+    var sess = [];
+    DGI.forEach(function (i) { if (i.session && sess.indexOf(i.session) < 0) sess.push(i.session); });
+    sess.sort(function (a, b) { return a - b; });
+    var nt = DGI.filter(dgIsNew).length;
+
+    $("anatDiagrams").innerHTML =
+      "<h2>도해·계보 <span class=\"muted\">만든 날짜순</span>"
+      + (nt ? ' <span class="wn-badge">NEW ' + nt + "</span>" : "") + "</h2>"
+      + '<p class="muted">직접 그린 도해와 분지 계보 트리. 날짜는 git에 처음 커밋된 날(KST)이다. '
+      + "라벨판과 퀴즈판이 짝이라 <b>퀴즈판을 먼저 풀고 라벨판으로 채점</b>한다.</p>"
+      + '<div class="filters">'
+      + '<select id="dgKind"><option value="__ALL__">전체 종류</option>'
+      + kinds.map(function (k) { return '<option value="' + esc(k) + '">' + esc(seenK[k]) + "</option>"; }).join("")
+      + "</select>"
+      + '<select id="dgSession"><option value="__ALL__">전체 회차</option>'
+      + sess.map(function (v) { return '<option value="' + v + '">' + v + "회차</option>"; }).join("")
+      + "</select>"
+      + '<select id="dgVariant"><option value="labeled">라벨판만 보기</option>'
+      + '<option value="quiz">퀴즈판만 보기</option><option value="__ALL__">둘 다</option></select>'
+      + '<input type="search" id="dgQ" placeholder="제목으로 좁히기" />'
+      + '<button id="dgSeenBtn" type="button" class="wn-btn">여기까지 봤음</button>'
+      + '</div><p id="dgCount" class="muted"></p><div id="dgResults"></div>';
+
+    $("dgKind").value = dgState.kind;
+    $("dgSession").value = dgState.session;
+    $("dgVariant").value = dgState.variant;
+    $("dgQ").value = dgState.q;
+    $("dgKind").addEventListener("change", function () { dgState.kind = this.value; dgPaint(); });
+    $("dgSession").addEventListener("change", function () { dgState.session = this.value; dgPaint(); });
+    $("dgVariant").addEventListener("change", function () { dgState.variant = this.value; dgPaint(); });
+    $("dgQ").addEventListener("input", function () { dgState.q = this.value.trim().toLowerCase(); dgPaint(); });
+    $("dgSeenBtn").addEventListener("click", function () {
+      try { localStorage.setItem(DG_SEEN, DGI[0].date); } catch (e) { /* 무시 */ }
+      renderDiagrams();
+    });
+    dgPaint();
+  }
+
   // 초기 화면
-  show("today");
+  var hash = (location.hash || "").replace("#", "");
+  show(VIEWS[hash] ? hash : "today");
 })();

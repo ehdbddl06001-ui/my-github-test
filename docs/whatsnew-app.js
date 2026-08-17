@@ -16,7 +16,7 @@
         topic: it.session ? it.session + "회차" : "",
         subtopic: it.title + " — " + it.kindLabel,
         tags: [it.kind], path: "docs/assets/anatomy/" + it.file,
-        _href: "diagrams.html"
+        _href: "anatomy.html#diagrams"
       });
     });
     DOCS.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
@@ -29,7 +29,7 @@
   };
   var TYPE_HREF = {
     anatomy: "anatomy.html", kmle: "index.html", usmle: "index.html",
-    paper: "papers.html", ailab: "ailab.html", diagram: "diagrams.html"
+    paper: "papers.html", ailab: "ailab.html", diagram: "anatomy.html#diagrams"
   };
   var REPO = DATA.repo || "";
   var BRANCH = DATA.branch || "main";
