@@ -352,19 +352,22 @@ python pipelines/test_anatomy.py                        # 10개 회귀 테스트
 
 실패하면 커밋하지 말고 원인을 보고한다.
 
-## 6. 번들 재생성 + 커밋
+## 6. 번들 재생성 + 커밋 — **한 명령**
 
 ```
-python pipelines/indexer.py
-python pipelines/export_anatomy_web.py
-python pipelines/export_search_web.py
+python pipelines/publish.py -m "해부 데일리 2026-MM-DD: 카드 N · 문항 M"
 ```
 
-- 새 `.md` + `docs/anatomy-data.js` + `docs/search-index.js`를 **같은 커밋**에.
-- **공개 이미지가 포함되거나 review 항목이 새로 생겼으면 자동 커밋 금지** — PR로.
-- 안정 흐름(텍스트 카드·문항·daily plan)은 main 직접 커밋 허용(KMLE와 동일 취급 —
-  병합 안 되면 홈페이지 '오늘의 학습'에 안 뜬다). 단 **아키텍처 PR 병합 전에는
-  전부 보고만**.
+검증(`indexer --check`) → 색인·번들 재생성 → `git merge origin/main` → 커밋 → **main 푸시**
+까지 한 번에 한다. 손으로 나눠 돌리면 한 단계가 빠지고(번들 미생성 → 홈페이지 안 바뀜,
+main 미동기화 → 푸시 거절) 그 사고가 실제로 났다.
+
+- 루틴은 `content/**` 와 `docs/**` 만 건드리므로 **콘텐츠 레인**으로 자동 통과한다.
+- `pipelines/**` · `.claude/**` 등을 고쳤다면 publish 가 main 푸시를 **거부**한다.
+  그때만 `--branch claude/<작업>` 으로 올리고 PR 을 연 뒤 **같은 세션에서 병합**한다.
+  열어 두고 끝내면 다음 날 루틴이 같은 파일을 처음부터 다시 만든다(2026-08-17 실측).
+- **공개 이미지가 새로 들어가거나 `needs_review: true` 가 생겼으면** 자동 푸시 대신
+  보고만 하고 사람 확인을 받는다.
 
 ## 7. 보고 형식
 
