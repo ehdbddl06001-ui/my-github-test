@@ -452,6 +452,31 @@ def test_publish_lane_guard() -> None:
     assert classify([".claude/skills/anatomy-daily/SKILL.md"])[0] == []
 
 
+def test_legacy_professor_names_are_marked() -> None:
+    """파일명에서 온 **과거 학기 교수명**이 2026 근거처럼 남아 있지 않아야 한다(2026-08-17).
+
+    2026 확정본 담당은 문용석·김홍태 둘뿐인데, 업로드 스캔의 파일명은 과거 학기의
+    회차·날짜·담당교수를 달고 있다. 그 이름이 카드 frontmatter 에 표시 없이 남으면
+    '이 회차는 그 교수 자료' 로 잘못 읽힌다 — 실제로 그 교수가 올해 수업에 들어오지
+    않는다는 사실이 확인됐다. 배정 기준은 부위지 교수가 아니다.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "legacy_sources.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"legacy_sources selftest 실패: {r.stdout}{r.stderr}"
+    sys.path.insert(0, str(Path(__file__).parent))
+    from legacy_sources import current_professors, needs_mark
+    cur = current_professors()
+    assert cur == {"문용석", "김홍태"}, f"2026 담당 집합이 바뀌었다: {cur}"
+    root = Path(__file__).resolve().parents[1]
+    bad = []
+    for p in (root / "content/anatomy").rglob("*.md"):
+        names = needs_mark(p.read_text(encoding="utf-8"), cur)
+        if names:
+            bad.append((p.name, sorted(set(names))))
+    assert not bad, f"표시 없는 과거 학기 교수명: {bad[:6]} (총 {len(bad)}건)"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

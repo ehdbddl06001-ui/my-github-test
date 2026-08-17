@@ -15,7 +15,7 @@ priority: high
 publishable: true
 needs_review: false
 source_refs:
-  - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf", page: null, section: "다리오금·종아리 / 뒤통수밑삼각 실습영상", note: "실습 캡처 스캔(업로드) — 범위 확인용"}
+  - {source_file_id: "1_2A2hJdNEXEsAxR9jMdnS_fjG5XD2pzG", source_file_name: "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕", page: null, section: "다리오금·종아리 / 뒤통수밑삼각 실습영상", note: "실습 캡처 스캔(업로드) — 범위 확인용"}
 tags: [정리, 3회차, 예습시험, 태깅]
 ---
 

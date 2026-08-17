@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1167,
+  "total": 1168,
   "byType": {
-   "anatomy": 309,
+   "anatomy": 310,
    "paper": 220,
    "kmle": 555,
    "usmle": 66,
@@ -15,7 +15,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 309,
+   "Anatomy": 310,
    "Cardiology": 86,
    "Nephrology": 63,
    "Infectious Disease": 61,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 731,
+   "high": 732,
    "medium": 387,
    "low": 49
   },
-  "tagCount": 2100
+  "tagCount": 2106
  },
  "docs": [
   {
@@ -73,6 +73,31 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-17.md",
    "snippet": "오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-17 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 17 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 24일 · Tagging 2까지 63일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0112",
+   "type": "anatomy",
+   "unit": "7회차 · 목·다리",
+   "topic": "Anatomy",
+   "subtopic": "7회차 서브노트 — 목의 뿌리·인두 / 종아리 가쪽·발목 안쪽면·발바닥",
+   "tags": [
+    "서브노트",
+    "7회차",
+    "목의뿌리",
+    "인두",
+    "종아리가쪽",
+    "발목굴",
+    "발바닥",
+    "표",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "",
+   "confidence": "high",
+   "date": "2026-08-17",
+   "path": "content/anatomy/notes/anatomy-2026-0112-s07-subnote.md",
+   "snippet": "0. 이 회차의 축 — 세 문장 1. 앞목갈비근이 목의 기준선 이다 — 정맥은 앞, 동맥과 팔신경얼기는 뒤(목갈비근틈새). 2. 굽힘근지지띠가 발목의 기준선 이다 — 그 밑 발목굴을 다섯이 정해진 순서로 지난다. 3. 칸마다 동맥이 있는 게 아니다 — 종아리 가쪽칸은 신경만 자기 것이고 혈액은 얻어 쓴다. 1. 목의 뿌리 Root of the neck !fig docs/assets/anatomy/tree s07 vessel l",
+   "text": "Anatomy 7회차 서브노트 — 목의 뿌리·인두 / 종아리 가쪽·발목 안쪽면·발바닥 7회차 · 목·다리 서브노트 7회차 목의뿌리 인두 종아리가쪽 발목굴 발바닥 표 예습시험 태깅 0. 이 회차의 축 — 세 문장 1. 앞목갈비근이 목의 기준선 이다 — 정맥은 앞, 동맥과 팔신경얼기는 뒤(목갈비근틈새). 2. 굽힘근지지띠가 발목의 기준선 이다 — 그 밑 발목굴을 다섯이 정해진 순서로 지난다. 3. 칸마다 동맥이 있는 게 아니다 — 종아리 가쪽칸은 신경만 자기 것이고 혈액은 얻어 쓴다. 1. 목의 뿌리 Root of the neck !fig docs/assets/anatomy/tree s07 vessel labeled.svg 빗장밑동맥 3부와 오금동맥 아래 갈래를 나란히 — 둘 다 '근육이 나눈다' 1) 위가슴문을 지나는 것 구조 앞목갈비근 기준 위치 빗장밑정맥 ==앞목갈비근 앞== (틈새 밖) 빗장밑동맥 2부 ==목갈비근틈새 안== (앞·중간목갈비근 사이) 팔신경얼기 동맥과 같은 틈새 가로막신경 앞목갈비근 ==앞면을 타고== 아래로 — 틈새가 아니다 [!임상] 목갈비근증후군 :: 목갈비근틈새가 좁아지면 동맥과 팔신경얼기 가 눌린다. 정맥은 틈새 밖이라 대개 무사하다 — 증상이 '저림+맥약함'인데 붓기가 없으면 이 구조 때문이다. 2) 빗장밑동맥의 가지 — 앞목갈비근이 3부로 나눈다 부 가지 메모 1부 ==척추동맥== 가로구멍(C6→C1)으로 올라가 뇌로 1부 속가슴동맥 아래로 — 앞갈비사이·위배벽동맥 1부 갑상목동맥 아래갑상 · ==어깨위== · 목가로동맥 2부 갈비목동맥 깊은목·최상갈비사이동맥 3부 (대개 가지 없음) 첫째 갈비뼈 가쪽모서리에서 겨드랑동맥 이 된다 = 겨드랑동맥을 작은가슴근 이 3부로 나누는 것과 같은 꼴 — 근육이 동맥의 이름을 바꾼다. [!기출] 되돌이후두신경의 좌우 차이 :: 오른쪽은 ==빗장밑동맥==을, 왼쪽은 ==대동맥활==(동맥관인대)을 감아 올라간다. 왼쪽이 훨씬 길어 대동맥류·폐암·심장수술 에서 잘 눌리거나 다쳐 쉰 목소리가 된다. 2. 인두 Pharynx 부분 경계 메모 코인두 뒤콧구멍 ~ 물렁입천장 ==귀인두관== 입구 · 인두편도 입인두 물렁입천장 ~ 후두덮개 위모서리 입천장편도(편도오목) 후두인두 후두덮개 ~ 반지연골 아래모서리 ==조롱박오목== — 이물 걸림 근육 지배 인두수축근 3개(위·중간·아래) ==인두신경얼기==(미주신경 X) 붓인두근 ==혀인두신경 IX== — 유일한 예외 입천장인두근·귀인두관인두근 인두신경얼기(X) [!주의] 인두의 예외 하나 :: 인두 근육은 전부 미주신경(X)인데 붓인두근만 혀인두신경(IX) 이다. 목구멍 근육에서 IX가 운동을 맡는 유일한 근육이라 시험에 자주 나온다. [!임상] 조롱박오목 :: 생선가시가 가장 잘 걸리는 자리이고, 바로 밑을 ==위후두신경 속가지==가 지나 이물·수술로 다치면 성대문 위 감각이 없어져 흡인 이 생긴다. 3. 종아리 가쪽칸 Lateral compartment of the leg !fig docs/assets/anatomy/tree s07 nerve labeled.svg 온종아리신경이 종아리뼈목을 감아 얕은·깊은으로 갈린다 항목 내용 근육 긴종아리근 · 짧은종아리근 작용 ==가쪽번짐(eversion)== + 발바닥굽힘 보조 신경 ==얕은종아리신경== (superficial fibular n.) 동맥 자기 동맥이 없다 — 종아리동맥의 곁가지로 먹는다 지지띠 위·아래 ==종아리근지지띠==가 가쪽복사 뒤에서 두 힘줄을 잡아 준다 = 긴종아리근 힘줄은 ==발바닥을 가로질러== 첫째 발허리뼈·안쪽쐐기뼈에 붙는다 → 가로발바닥활 을 떠받친다. 짧은종아리근은 다섯째 발허리뼈 거친면에서 끝난다. [!기출] 온종아리신경 손상 :: 종아리뼈목 을 감아 도는 자리가 가장 얕아 깁스·다리꼬기로도 눌린다. 앞칸(깊은가지)과 가쪽칸(얕은가지)이 함께 죽어 ==발처짐(foot drop)== + 가쪽번짐 소실 → 계단 오르듯 걷는 닭걸음(steppage gait) . 4. 발목 안쪽면과 발목굴 Medial ankle & tarsal tunnel !fig docs/assets/anatomy/tree s07 bundle labeled.svg 목갈비근틈새와 발목굴 — 두 통로의 순서를 나란히 1) 굽힘근지지띠 밑을 지나는 다섯 순서(앞→뒤) 구조 암기 ① 뒤정강근 힘줄 tibialis posterior T om ② 긴발가락굽힘근 힘줄 flexor digitorum longus D ick ③ ==뒤정강동맥== posterior tibial a. A nd ④ ==정강신경== tibial n. V ery N ervous ⑤ 긴엄지굽힘근 힘줄 flexor hallucis longus H arry = 힘줄–힘줄 사이에 혈관신경이 낀다 . 그래서 발목 안쪽면을 열면 힘줄 두 개를 젖혀야 동맥·신경이 보인다. [!임상] 발목굴증후군 :: 지지띠 밑이 좁아져 정강신경이 눌리면 발바닥이 저리고 탄다. 틴넬징후 (안쪽복사 뒤 두드림)로 재현되며, 손목굴증후군의 발 버전이다. 안쪽발꿈치가지는 지지띠를 뚫고 나가므로 발꿈치 감각은 대개 남는다 — 감별 포인트. 2) 촉지점 동맥 자리 뒤정강동맥 ==안쪽복사와 아킬레스힘줄 사이== 발등동맥 ==긴엄지폄근힘줄 가쪽==, 발등 5. 발바닥 Sole of the foot 층 구조 얕은 발바닥널힘줄 plantar aponeurosis — 세로발바닥활 유지 1층 엄지벌림근 · 짧은발가락굽힘근 · 새끼벌림근 2층 긴발가락굽힘근 힘줄 · ==발바닥네모근== · 벌레근 3층 짧은엄지굽힘근 · 엄지모음근 · 짧은새끼굽힘근 4층 뼈사이근 · 긴종아리근/뒤정강근 힘줄 신경 담당 안쪽발바닥신경 엄지벌림근·짧은발가락굽힘근·첫째벌레근·짧은엄지굽힘근 + 안쪽 3½ 발가락 피부 가쪽발바닥신경 나머지 대부분(뼈사이근·모음근·발바닥네모근) + 가쪽 1½ 피부 = 손의 정중신경 : 자신경 관계를 발에 그대로 옮긴 것 — 안쪽발바닥 = 정중신경, 가쪽발바닥 = 자신경. [!암기] 발바닥네모근의 존재 이유 :: 긴발가락굽힘근 힘줄이 비스듬히 들어오므로 그대로 당기면 발가락이 안쪽으로 휜다. 발바닥네모근이 힘줄을 발꿈치 쪽으로 잡아당겨 ==당기는 방향을 곧게== 편다. [!임상] 발바닥근막염 :: 발바닥널힘줄이 발꿈치뼈에 붙는 자리의 통증. 아침 첫 걸음이 가장 아프고, 널힘줄이 세로발바닥활을 지탱하는 ==활시위== 역할을 하기 때문에 활이 무너지면 부하가 커진다. 6. 실사 태깅 문항 이 회차의 실사(종아리 가쪽·발목 안쪽면 16장)는 복원·검수 중이다. 자동 마스킹이 영상 라벨 일부를 놓쳐, 4회차와 같은 수작업 QA를 거친 뒤 합본한다."
   },
   {
    "id": "paper-2026-0220",
@@ -1655,12 +1680,12 @@ window.MEDKOS_INDEX = {
     "종아리뒤칸",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0095.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지근 실사 spotter (필기 제거·복원본) 3회차 · 다리 spotter 복원 3회차 장딴지근 발꿈치힘줄 종아리뒤칸 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 장딴지근 실사 spotter (필기 제거·복원본) 3회차 · 다리 spotter 복원 3회차 장딴지근 발꿈치힘줄 종아리뒤칸 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 5183 p13 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p13)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0094",
@@ -1677,12 +1702,12 @@ window.MEDKOS_INDEX = {
     "정강신경",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0094.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 안쪽장딴지피부신경 실사 spotter (필기 제거·복원본) 1회차 · 다리 spotter 복원 3회차 안쪽장딴지피부신경 장딴지신경 정강신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 안쪽장딴지피부신경 실사 spotter (필기 제거·복원본) 1회차 · 다리 spotter 복원 3회차 안쪽장딴지피부신경 장딴지신경 정강신경 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 5183 p10 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p10)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0093",
@@ -1699,12 +1724,12 @@ window.MEDKOS_INDEX = {
     "갑상목동맥",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0093.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 어깨위동맥 실사 spotter (필기 제거·복원본) 3회차 · 팔 spotter 복원 3회차 어깨위동맥 어깨동맥그물 갑상목동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 어깨위동맥 실사 spotter (필기 제거·복원본) 3회차 · 팔 spotter 복원 3회차 어깨위동맥 어깨동맥그물 갑상목동맥 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p41 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p41)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0092",
@@ -1721,12 +1746,12 @@ window.MEDKOS_INDEX = {
     "어깨위신경",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0092.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 위가로어깨인대 실사 spotter (필기 제거·복원본) 3회차 · 팔 spotter 복원 3회차 위가로어깨인대 어깨뼈패임 어깨위신경 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 위가로어깨인대 실사 spotter (필기 제거·복원본) 3회차 · 팔 spotter 복원 3회차 위가로어깨인대 어깨뼈패임 어깨위신경 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p38 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p38)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0091",
@@ -1743,12 +1768,12 @@ window.MEDKOS_INDEX = {
     "고리뼈",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0091.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 척추동맥 실사 spotter (필기 제거·복원본) 3회차 · 등 spotter 복원 3회차 척추동맥 뒤통수밑삼각 고리뼈 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 척추동맥 실사 spotter (필기 제거·복원본) 3회차 · 등 spotter 복원 3회차 척추동맥 뒤통수밑삼각 고리뼈 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p12 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p12)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0090",
@@ -1765,12 +1790,12 @@ window.MEDKOS_INDEX = {
     "온종아리신경",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0090.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다.",
-   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) 3회차 · 다리 spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
+   "text": "Anatomy 다리오금 태깅 연습판 (자체 제작 도해) 3회차 · 다리 spotter 도해 3회차 다리오금 오금동맥 온종아리신경 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §다리오금·종아리 뒤칸 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag popliteal fossa quiz.svg , 라벨판은 docs/assets/anatomy/diag popliteal fossa labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 깊이 순서·무릎동맥 5가지·임상이 함께 있다."
   },
   {
    "id": "anatomy-2026-0089",
@@ -1961,12 +1986,12 @@ window.MEDKOS_INDEX = {
     "장딴지근",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0081.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 장딴지근 안쪽갈래 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 다리오금 장딴지근 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0080",
@@ -1982,12 +2007,12 @@ window.MEDKOS_INDEX = {
     "뒤정강근",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0080.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 뒤정강근 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 뒤정강근 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 종아리뒤칸 뒤정강근 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0079",
@@ -2003,12 +2028,12 @@ window.MEDKOS_INDEX = {
     "오금근",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0079.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 오금근 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 오금근 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 종아리뒤칸 오금근 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0078",
@@ -2024,12 +2049,12 @@ window.MEDKOS_INDEX = {
     "네모공간",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0078.md",
    "snippet": "문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
-   "text": "Anatomy 네모공간 실사 spotter (복원본) 3회차 · 팔 spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+   "text": "Anatomy 네모공간 실사 spotter (복원본) 3회차 · 팔 spotter 복원 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 . 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0077",
@@ -2260,12 +2285,12 @@ window.MEDKOS_INDEX = {
     "세모간격",
     "어깨동맥그물"
    ],
-   "source": "3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/concepts/upper-limb/anatomy-2026-0032.md",
    "snippet": "기준은 위팔세갈래근 긴갈래 하나 도해: docs/assets/anatomy/diag scapular spaces labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0031 ) 위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을 가르는 것은 위팔세갈래근 긴갈래 라는 세로 기둥이다. 작은원근 teres minor ┌──────────────┬───────────",
-   "text": "Anatomy 어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물 3회차 · 팔 도해 3회차 어깨뼈부위 네모공간 세모간격 어깨동맥그물 3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 기준은 위팔세갈래근 긴갈래 하나 도해: docs/assets/anatomy/diag scapular spaces labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0031 ) 위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을 가르는 것은 위팔세갈래근 긴갈래 라는 세로 기둥이다. 작은원근 teres minor ┌──────────────┬──────────────┐ │ 세모공간 │ 네모공간 │ │ (긴갈래 안쪽) │ (긴갈래 가쪽) │ └──────────────┴──────────────┘ 큰원근 teres major ┌──────────────┐ │ 세모간격 │ └──────────────┘ ↑ 세로 기둥 = 위팔세갈래근 긴갈래 경계와 내용물 공간 경계 내용물 네모공간 quadrangular space 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 외과목 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular space 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 외우는 법: 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격 . 어깨동맥그물 (scapular anastomosis) 빗장밑동맥 subclavian a. ├─ 갑상목동맥 → 어깨위동맥 suprascapular a. └─ 등쪽어깨동맥 dorsal scapular a. ↕ (문합) 겨드랑동맥 → 어깨밑동맥 → 어깨휘돌이동맥 circumflex scapular a. ← 세모공간 통과 겨드랑동맥 근위를 결찰해도 팔이 사는 이유. 어깨위신경·동맥과 위가로어깨인대의 관계는 \"Army over the bridge, Navy under\" — 동맥은 인대 위, 신경은 어깨패임 속(인대 아래). 임상 위팔뼈 외과목 골절 → 네모공간의 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽(견장 부위) 감각소실. 어깨 벌림 15–90°가 안 된다. 노신경 은 세모간격을 지나 위팔뼈 뒤면의 노신경고랑으로 들어간다 → 위팔뼈 몸통 중간 골절에서 손목처짐(wrist drop). 돌림근띠(SITS)는 가시위근·가시아래근·작은원근·어깨밑근 — 큰원근은 돌림근띠가 아니다 ."
+   "text": "Anatomy 어깨뼈부위 3공간 — 경계·내용물·어깨동맥그물 3회차 · 팔 도해 3회차 어깨뼈부위 네모공간 세모간격 어깨동맥그물 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 기준은 위팔세갈래근 긴갈래 하나 도해: docs/assets/anatomy/diag scapular spaces labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0031 ) 위·아래 경계는 세 공간이 사실상 공유한다(위 작은원근 / 아래 큰원근). 실제로 공간을 가르는 것은 위팔세갈래근 긴갈래 라는 세로 기둥이다. 작은원근 teres minor ┌──────────────┬──────────────┐ │ 세모공간 │ 네모공간 │ │ (긴갈래 안쪽) │ (긴갈래 가쪽) │ └──────────────┴──────────────┘ 큰원근 teres major ┌──────────────┐ │ 세모간격 │ └──────────────┘ ↑ 세로 기둥 = 위팔세갈래근 긴갈래 경계와 내용물 공간 경계 내용물 네모공간 quadrangular space 위 작은원근 · 아래 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 외과목 겨드랑신경 + 뒤위팔휘돌이동맥 세모공간 triangular space 위 작은원근 · 아래 큰원근 · 가쪽 긴갈래 어깨휘돌이동맥 세모간격 triangular interval 위 큰원근 · 안쪽 긴갈래 · 가쪽 위팔뼈 노신경 + 깊은위팔동맥 외우는 법: 긴갈래 가쪽 = 네모(신경) , 안쪽 = 세모(동맥) , 큰원근 아래 = 세모간격 . 어깨동맥그물 (scapular anastomosis) 빗장밑동맥 subclavian a. ├─ 갑상목동맥 → 어깨위동맥 suprascapular a. └─ 등쪽어깨동맥 dorsal scapular a. ↕ (문합) 겨드랑동맥 → 어깨밑동맥 → 어깨휘돌이동맥 circumflex scapular a. ← 세모공간 통과 겨드랑동맥 근위를 결찰해도 팔이 사는 이유. 어깨위신경·동맥과 위가로어깨인대의 관계는 \"Army over the bridge, Navy under\" — 동맥은 인대 위, 신경은 어깨패임 속(인대 아래). 임상 위팔뼈 외과목 골절 → 네모공간의 겨드랑신경 손상 → 어깨세모근 마비 + 어깨 가쪽(견장 부위) 감각소실. 어깨 벌림 15–90°가 안 된다. 노신경 은 세모간격을 지나 위팔뼈 뒤면의 노신경고랑으로 들어간다 → 위팔뼈 몸통 중간 골절에서 손목처짐(wrist drop). 돌림근띠(SITS)는 가시위근·가시아래근·작은원근·어깨밑근 — 큰원근은 돌림근띠가 아니다 ."
   },
   {
    "id": "anatomy-2026-0031",
@@ -2281,12 +2306,12 @@ window.MEDKOS_INDEX = {
     "네모공간",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022)",
    "confidence": "high",
    "date": "2026-08-14",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0031.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag scapular spaces quiz.svg , 라벨판은 docs/assets/anatomy/diag scapular spaces labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 경계 표·어깨동맥그물·임상이 함께 있다.",
-   "text": "Anatomy 어깨뼈부위 3공간 태깅 연습판 (자체 제작 도해) 3회차 · 팔 spotter 도해 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag scapular spaces quiz.svg , 라벨판은 docs/assets/anatomy/diag scapular spaces labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 경계 표·어깨동맥그물·임상이 함께 있다."
+   "text": "Anatomy 어깨뼈부위 3공간 태깅 연습판 (자체 제작 도해) 3회차 · 팔 spotter 도해 3회차 어깨뼈부위 네모공간 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §어깨뼈부위 + 3회차 종합정리(anatomy-2026-0022) 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag scapular spaces quiz.svg , 라벨판은 docs/assets/anatomy/diag scapular spaces labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 경계 표·어깨동맥그물·임상이 함께 있다."
   },
   {
    "id": "anatomy-2026-0030",
@@ -3133,12 +3158,12 @@ window.MEDKOS_INDEX = {
     "아래머리빗근",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처)",
    "confidence": "medium",
    "date": "2026-08-13",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0026.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가",
-   "text": "Anatomy 아래머리빗근 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 뒤통수밑삼각 아래머리빗근 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가 부드러운 얼룩으로 남았다. 근육 결이 다른 문항만큼 또렷하지 않다. 정답 근거는 영상의 근육 라벨이 아니라 삼각의 경계 정의(아래가쪽 = 아래머리빗근) 와 같은 프레임의 뒤통수밑신경 라벨이다. 핀 위치가 그 경계 근육 위에 놓였는지 눈으로 확인할 것. 얼룩이 거슬리면 같은 영상의 p9(큰뒤머리곧은근 라벨 프레임)로 교체 가능. 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (필기 제거만, 라벨 살아 있음)."
+   "text": "Anatomy 아래머리빗근 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 뒤통수밑삼각 아래머리빗근 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 0150 p11 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 0150 p11)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 사람 확인 필요 (needs review) 이 프레임은 학생 필기(흰 펜)가 정답 근육 위에 직접 겹쳐 있어, 획을 지운 자리와 라벨을 가린 자리가 부드러운 얼룩으로 남았다. 근육 결이 다른 문항만큼 또렷하지 않다. 정답 근거는 영상의 근육 라벨이 아니라 삼각의 경계 정의(아래가쪽 = 아래머리빗근) 와 같은 프레임의 뒤통수밑신경 라벨이다. 핀 위치가 그 경계 근육 위에 놓였는지 눈으로 확인할 것. 얼룩이 거슬리면 같은 영상의 p9(큰뒤머리곧은근 라벨 프레임)로 교체 가능. 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (필기 제거만, 라벨 살아 있음)."
   },
   {
    "id": "anatomy-2026-0025",
@@ -3154,12 +3179,12 @@ window.MEDKOS_INDEX = {
     "오금동맥",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-13",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0025.md",
    "snippet": "문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 ",
-   "text": "Anatomy 위가쪽무릎동맥 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 무릎동맥 오금동맥 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 모두 대시오 · 관절주머니를 뚫는 가지는? (중간무릎동맥)"
+   "text": "Anatomy 위가쪽무릎동맥 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 무릎동맥 오금동맥 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 5183 p2 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 복원 이미지(3회차 5183 p2)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용). 연계 질문: 5가지를 모두 대시오 · 관절주머니를 뚫는 가지는? (중간무릎동맥)"
   },
   {
    "id": "anatomy-2026-0024",
@@ -3981,8 +4006,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s15.md",
-   "snippet": "Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부2 15회차 · 머리·목·다리 Google Drive (3Q 해부학) Source 파일: 15차시(1013) 허미선pf.pdf (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "snippet": "Source 파일: 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .priva",
+   "text": "Anatomy 해부2 15회차 · 머리·목·다리 Google Drive (3Q 해부학) Source 파일: 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1R3MQ tL XMnzmqrJhgugvRFIfWW EEB ) 폴더: 해부2 · 크기 19,922,016 bytes · Drive modified 2026 08 04T05:18:18Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s14",
@@ -4037,8 +4062,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s11.md",
-   "snippet": "Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
-   "text": "Anatomy 해부2 11회차 · 팔·배 Google Drive (3Q 해부학) Source 파일: 11차시(0922) 허미선pf.pdf (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "snippet": "Source 파일: 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .priv",
+   "text": "Anatomy 해부2 11회차 · 팔·배 Google Drive (3Q 해부학) Source 파일: 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1vTTFerg qAFnYV0ofiolfcj5RDefrwml ) 폴더: 해부2 · 크기 28,495,453 bytes · Drive modified 2026 08 04T05:18:24Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s10",
@@ -4051,8 +4076,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a2-s10.md",
-   "snippet": "Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은",
-   "text": "Anatomy 해부2 10회차 · 팔·배 Google Drive (3Q 해부학) Source 파일: 10차시(0918) 허미선pf.pdf (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "snippet": "Source 파일: 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .priv",
+   "text": "Anatomy 해부2 10회차 · 팔·배 Google Drive (3Q 해부학) Source 파일: 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1HlXe71Yv3uMIhM6 UNWHqmtrw K0MOBT ) 폴더: 해부2 · 크기 19,163,006 bytes · Drive modified 2026 08 04T05:17:28Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a2-s09",
@@ -4135,8 +4160,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s04.md",
-   "snippet": "Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부1 4회차 · 가슴·머리 Google Drive (3Q 해부학) Source 파일: 4회차(0828) 허미선pf.pdf (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "snippet": "Source 파일: 4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .priva",
+   "text": "Anatomy 해부1 4회차 · 가슴·머리 Google Drive (3Q 해부학) Source 파일: 4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1n7KICVjUyEI4OYyd1aTZO2GMErC Ye1T ) 폴더: 해부1 · 크기 30,133,784 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s03",
@@ -4149,8 +4174,8 @@ window.MEDKOS_INDEX = {
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/sources/a1-s03.md",
-   "snippet": "Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 ",
-   "text": "Anatomy 해부1 3회차 · 등·다리 Google Drive (3Q 해부학) Source 파일: 3회차(0825) 허미선pf.pdf (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
+   "snippet": "Source 파일: 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .priva",
+   "text": "Anatomy 해부1 3회차 · 등·다리 Google Drive (3Q 해부학) Source 파일: 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 (Drive file ID 1 2A2hJdNEXEsAxR9jMdnS fjG5XD2pzG ) 폴더: 해부1 · 크기 38,060,594 bytes · Drive modified 2026 08 04T05:22:30Z 처리 상태: listed · revision 1 원본 PDF는 커밋하지 않는다. 페이지 파생물은 .private/anatomy/ (git 무시), 커밋되는 것은 용어·분류·관계 카드뿐이다."
   },
   {
    "id": "anatomy-src-a1-s02",
@@ -4173,12 +4198,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "후두절단면",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-16-후두절단면.md",
    "snippet": "구조물 용어 (11개) 속후두신경 (internal laryngeal nerve) 위후두동맥 (superior laryngeal artery) 가쪽방패목뿔인대 (lateral thyrohyoid ligament) 밀알연골 (triticeal cartilage) 안뜰주름 (vestibular fold) 성대주름 (vocal fold) 후두안뜰 (laryngeal vestibule) 후두실 (laryngeal ventricle) ",
-   "text": "Anatomy 후두절단면 15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (11개) 속후두신경 (internal laryngeal nerve) 위후두동맥 (superior laryngeal artery) 가쪽방패목뿔인대 (lateral thyrohyoid ligament) 밀알연골 (triticeal cartilage) 안뜰주름 (vestibular fold) 성대주름 (vocal fold) 후두안뜰 (laryngeal vestibule) 후두실 (laryngeal ventricle) 성대문아래공간 (infraglottic cavity) 성대틈새 (rima glottidis) 앞교차 (anterior commisure) 분류: region=neck (conf 0.86) · layers=['cavity visceral'] · classes=['artery', 'foramen', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 후두절단면 15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (11개) 속후두신경 (internal laryngeal nerve) 위후두동맥 (superior laryngeal artery) 가쪽방패목뿔인대 (lateral thyrohyoid ligament) 밀알연골 (triticeal cartilage) 안뜰주름 (vestibular fold) 성대주름 (vocal fold) 후두안뜰 (laryngeal vestibule) 후두실 (laryngeal ventricle) 성대문아래공간 (infraglottic cavity) 성대틈새 (rima glottidis) 앞교차 (anterior commisure) 분류: region=neck (conf 0.86) · layers=['cavity visceral'] · classes=['artery', 'foramen', 'ligament', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-후두속-자체기원근육",
@@ -4187,12 +4212,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "후두속 자체기원근육",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-15-후두속-자체기원근육.md",
    "snippet": "구조물 용어 (10개) 방패목뿔막 (thyrohyoid membrane) 반지방패인대 (cricothyroid ligament) 반지방패관절 (cricothyroid joint) 방패모뿔근 (thyroarytenoid muscle) 성대근 (vocalis muscle) 탄력원뿔 (conus elasticus) 성대인대 (vocal ligament) 모뿔덮개주름 (aryepiglottic fold) 모뿔덮개근 (aryepiglo",
-   "text": "Anatomy 후두속 자체기원근육 14·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 방패목뿔막 (thyrohyoid membrane) 반지방패인대 (cricothyroid ligament) 반지방패관절 (cricothyroid joint) 방패모뿔근 (thyroarytenoid muscle) 성대근 (vocalis muscle) 탄력원뿔 (conus elasticus) 성대인대 (vocal ligament) 모뿔덮개주름 (aryepiglottic fold) 모뿔덮개근 (aryepiglottic muscle) 방패목뿔막 (thyrohyoid membrane) 분류: region=neck (conf 1.0) · layers=['deep'] · classes=['joint', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 후두속 자체기원근육 14·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (10개) 방패목뿔막 (thyrohyoid membrane) 반지방패인대 (cricothyroid ligament) 반지방패관절 (cricothyroid joint) 방패모뿔근 (thyroarytenoid muscle) 성대근 (vocalis muscle) 탄력원뿔 (conus elasticus) 성대인대 (vocal ligament) 모뿔덮개주름 (aryepiglottic fold) 모뿔덮개근 (aryepiglottic muscle) 방패목뿔막 (thyrohyoid membrane) 분류: region=neck (conf 1.0) · layers=['deep'] · classes=['joint', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-후두바깥-자체기원근육",
@@ -4201,12 +4226,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "후두바깥 자체기원근육",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-14-후두바깥-자체기원근육.md",
    "snippet": "구조물 용어 (8개) 반지방패근 (cricothyroid muscle) 조롱박오목 (piriform fossa) 아래후두신경 (inferior laryngeal nerve) 뒤반지모뿔근 (posterior cricoarythenoid muscle) 모뿔근 (arytenoid muscle) 비스듬하게 엑스자모양으로 교차하는 빗모뿔근 (oblique arytenoid muscle) 과 그보다 깊이 가로로 주행하는 가로모뿔근 (tr",
-   "text": "Anatomy 후두바깥 자체기원근육 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (8개) 반지방패근 (cricothyroid muscle) 조롱박오목 (piriform fossa) 아래후두신경 (inferior laryngeal nerve) 뒤반지모뿔근 (posterior cricoarythenoid muscle) 모뿔근 (arytenoid muscle) 비스듬하게 엑스자모양으로 교차하는 빗모뿔근 (oblique arytenoid muscle) 과 그보다 깊이 가로로 주행하는 가로모뿔근 (transverse arytenoid muscle) 모뿔덮개근 (aryepiglottic muscle) 분류: region=neck (conf 0.89) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 후두바깥 자체기원근육 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (8개) 반지방패근 (cricothyroid muscle) 조롱박오목 (piriform fossa) 아래후두신경 (inferior laryngeal nerve) 뒤반지모뿔근 (posterior cricoarythenoid muscle) 모뿔근 (arytenoid muscle) 비스듬하게 엑스자모양으로 교차하는 빗모뿔근 (oblique arytenoid muscle) 과 그보다 깊이 가로로 주행하는 가로모뿔근 (transverse arytenoid muscle) 모뿔덮개근 (aryepiglottic muscle) 분류: region=neck (conf 0.89) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-혀의신경2",
@@ -4215,12 +4240,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "혀의신경2",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-08-혀의신경2.md",
    "snippet": "구조물 용어 (2개) 부교감신경섬유 (parasympathetic fiber) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.68) · layers=['deep', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 혀의신경2 7회차 · 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 부교감신경섬유 (parasympathetic fiber) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.68) · layers=['deep', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 혀의신경2 7회차 · 머리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 부교감신경섬유 (parasympathetic fiber) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.68) · layers=['deep', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-혀의신경1",
@@ -4229,12 +4254,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "혀의신경1",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-07-혀의신경1.md",
    "snippet": "구조물 용어 (4개) 혀신경 (lingual nerve) 셋째큰어금니 (third molar tooth) 턱밑신경절 (submandibular ganglion) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.69) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 혀의신경1 7회차 · 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 혀신경 (lingual nerve) 셋째큰어금니 (third molar tooth) 턱밑신경절 (submandibular ganglion) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.69) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 혀의신경1 7회차 · 머리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 혀신경 (lingual nerve) 셋째큰어금니 (third molar tooth) 턱밑신경절 (submandibular ganglion) 혀밑신경 (hypoglossal nerve) 분류: region=head (conf 0.69) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-코중격-시상면",
@@ -4243,12 +4268,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "코중격 시상면",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-02-코중격-시상면.md",
    "snippet": "구조물 용어 (10개) 벌집뼈수직판 (perpendicular plate) 보습뼈 (vomer) 코중격연골 (septal nasal cartilage) 입천장뼈 (palatine bone) 위 턱뼈 코능선 (nasal crest) 이마뼈 (frontal bone) 후각신경섬유 (olfactory nerve fiber) 앞니관 (incisive canal) 나비굴 (sphenoidal sinus) 나비굴구멍 (aperture o",
-   "text": "Anatomy 코중격 시상면 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 벌집뼈수직판 (perpendicular plate) 보습뼈 (vomer) 코중격연골 (septal nasal cartilage) 입천장뼈 (palatine bone) 위 턱뼈 코능선 (nasal crest) 이마뼈 (frontal bone) 후각신경섬유 (olfactory nerve fiber) 앞니관 (incisive canal) 나비굴 (sphenoidal sinus) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=head (conf 0.67) · layers=['cavity visceral'] · classes=['bone', 'duct', 'foramen', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 코중격 시상면 머리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (10개) 벌집뼈수직판 (perpendicular plate) 보습뼈 (vomer) 코중격연골 (septal nasal cartilage) 입천장뼈 (palatine bone) 위 턱뼈 코능선 (nasal crest) 이마뼈 (frontal bone) 후각신경섬유 (olfactory nerve fiber) 앞니관 (incisive canal) 나비굴 (sphenoidal sinus) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=head (conf 0.67) · layers=['cavity visceral'] · classes=['bone', 'duct', 'foramen', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-코안-가쪽벽",
@@ -4257,12 +4282,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "코안 가쪽벽",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-03-코안-가쪽벽.md",
    "snippet": "구조물 용어 (10개) 아래코선반 (nasal concha) 맨위코선반 (supreme nasal concha) 아래콧길 (nasal meatus) 각각의 콧길이 코인두길과 뒤콧구멍 (choanae) 코눈물관 (nasolacrimal duct) 갈고리돌기 (uncinate process) 벌집뼈융기 (ethmoidal bulla) 반달틈새 (semilunar hiatus) 나비벌집오목 (sphenoethmoidal recess",
-   "text": "Anatomy 코안 가쪽벽 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 아래코선반 (nasal concha) 맨위코선반 (supreme nasal concha) 아래콧길 (nasal meatus) 각각의 콧길이 코인두길과 뒤콧구멍 (choanae) 코눈물관 (nasolacrimal duct) 갈고리돌기 (uncinate process) 벌집뼈융기 (ethmoidal bulla) 반달틈새 (semilunar hiatus) 나비벌집오목 (sphenoethmoidal recess) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=neck (conf 0.6) · layers= · classes=['bone', 'duct', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 코안 가쪽벽 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (10개) 아래코선반 (nasal concha) 맨위코선반 (supreme nasal concha) 아래콧길 (nasal meatus) 각각의 콧길이 코인두길과 뒤콧구멍 (choanae) 코눈물관 (nasolacrimal duct) 갈고리돌기 (uncinate process) 벌집뼈융기 (ethmoidal bulla) 반달틈새 (semilunar hiatus) 나비벌집오목 (sphenoethmoidal recess) 나비굴구멍 (aperture of sphenoidal sinus) 분류: region=neck (conf 0.6) · layers= · classes=['bone', 'duct', 'foramen'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-입천장",
@@ -4271,12 +4296,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "입천장",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-04-입천장.md",
    "snippet": "구조물 용어 (5개) 두꼐는 입천장샘 (palatine gland) 부위에 있는 입천장널힘줄 (palatine aponeurosis) 입천장혀활 (palatoglossal arch) 입천장인두활 (palatopharyngeal arch) 목구멍편도 (palatine tonsil) 분류: region=neck (conf 0.6) · layers= · classes=['fascia', 'foramen', 'organ'] 원문 전문",
-   "text": "Anatomy 입천장 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (5개) 두꼐는 입천장샘 (palatine gland) 부위에 있는 입천장널힘줄 (palatine aponeurosis) 입천장혀활 (palatoglossal arch) 입천장인두활 (palatopharyngeal arch) 목구멍편도 (palatine tonsil) 분류: region=neck (conf 0.6) · layers= · classes=['fascia', 'foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 입천장 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 두꼐는 입천장샘 (palatine gland) 부위에 있는 입천장널힘줄 (palatine aponeurosis) 입천장혀활 (palatoglossal arch) 입천장인두활 (palatopharyngeal arch) 목구멍편도 (palatine tonsil) 분류: region=neck (conf 0.6) · layers= · classes=['fascia', 'foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두의-신경",
@@ -4285,12 +4310,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "인두의 신경",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-12-인두의-신경.md",
    "snippet": "구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.74) · layers= · classes=['nerve'] 원문 전문은 커밋하지 ",
-   "text": "Anatomy 인두의 신경 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.74) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두의 신경 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 혀인두신경 (glossopharyngeal nerve) 인두신경얼기 (pharyngeal plexus) 미주신경 (vagus nerve) 위후두신경 (superior laryngeal nerve) 더부신경 (accessory nerve) 혀밑신경 (hypoglossal nerve) 분류: region=neck (conf 0.74) · layers= · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두의-구분",
@@ -4299,12 +4324,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "인두의 구분",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-13-인두의-구분.md",
    "snippet": "구조물 용어 (7개) 코인두 (nasopharynx) 물렁입천장 위쪽공간 입인두 (oropharynx) 목젖 (uvula) 입인두 뒤쪽에서 혀 뒷부분 일부 관찰 후두인두 (laryngopharynx) 모뿔덮개주름 (aryepiglottic fold) 후두어귀 (laryngeal inlet) 조롱박오목 (piriform fossa) 분류: region=neck (conf 0.78) · layers=['cavity visceral",
-   "text": "Anatomy 인두의 구분 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 코인두 (nasopharynx) 물렁입천장 위쪽공간 입인두 (oropharynx) 목젖 (uvula) 입인두 뒤쪽에서 혀 뒷부분 일부 관찰 후두인두 (laryngopharynx) 모뿔덮개주름 (aryepiglottic fold) 후두어귀 (laryngeal inlet) 조롱박오목 (piriform fossa) 분류: region=neck (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두의 구분 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 코인두 (nasopharynx) 물렁입천장 위쪽공간 입인두 (oropharynx) 목젖 (uvula) 입인두 뒤쪽에서 혀 뒷부분 일부 관찰 후두인두 (laryngopharynx) 모뿔덮개주름 (aryepiglottic fold) 후두어귀 (laryngeal inlet) 조롱박오목 (piriform fossa) 분류: region=neck (conf 0.78) · layers=['cavity visceral', 'deep'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두벽",
@@ -4313,12 +4338,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "인두벽",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-06-인두벽.md",
    "snippet": "구조물 용어 (7개) 날개아래턱솔기 (pterygomandibular raphe) 날개갈고리 (pterygoid hamulus) 인두결절근막 (pharyngobasilar fascia) 연골벽 (cartilaginous wall) 막벽 (membranous wall) 입천장긴장근 (tensor veli palatini muscle) 귀관인두근 (salpingopharyngeus muscle) 분류: region=neck (co",
-   "text": "Anatomy 인두벽 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 날개아래턱솔기 (pterygomandibular raphe) 날개갈고리 (pterygoid hamulus) 인두결절근막 (pharyngobasilar fascia) 연골벽 (cartilaginous wall) 막벽 (membranous wall) 입천장긴장근 (tensor veli palatini muscle) 귀관인두근 (salpingopharyngeus muscle) 분류: region=neck (conf 0.53) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두벽 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 날개아래턱솔기 (pterygomandibular raphe) 날개갈고리 (pterygoid hamulus) 인두결절근막 (pharyngobasilar fascia) 연골벽 (cartilaginous wall) 막벽 (membranous wall) 입천장긴장근 (tensor veli palatini muscle) 귀관인두근 (salpingopharyngeus muscle) 분류: region=neck (conf 0.53) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-인두근육",
@@ -4327,12 +4352,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "인두근육",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-11-인두근육.md",
    "snippet": "구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) ",
-   "text": "Anatomy 인두근육 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) 아래인두수축근 (inferior constrictor muscle) 인두솔기 (pharyngeal raphe) 붓인두근 (stylopharyngeus muscle) 분류: region=neck (conf 0.72) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 인두근육 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (10개) 그 벽은 밖에서 안으로 볼인두근막 (buccopharyngeal fascia) 근육층 (muscle layer) 점막 (mucosa) 아래인두수축근 (inferior constrictor muscle) 중간인두수축근 (middle constrictor muscle) 위인두수축근 (superior constrictor muscle) 앞으로 달려 날개아래턱솔기 (pterygomandibular raphe) 아래인두수축근 (inferior constrictor muscle) 인두솔기 (pharyngeal raphe) 붓인두근 (stylopharyngeus muscle) 분류: region=neck (conf 0.72) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-엉덩관절-주변정리",
@@ -4341,12 +4366,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "엉덩관절 주변정리",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-17-엉덩관절-주변정리.md",
    "snippet": "구조물 용어 (0개) 분류: region=lower limb (conf 0.5) · layers=['deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 엉덩관절 주변정리 1·2·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (0개) 분류: region=lower limb (conf 0.5) · layers=['deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엉덩관절 주변정리 1·2·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (0개) 분류: region=lower limb (conf 0.5) · layers=['deep'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-엉덩관절-속구조",
@@ -4355,12 +4380,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "엉덩관절 속구조",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-19-엉덩관절-속구조.md",
    "snippet": "구조물 용어 (6개) 폐쇄막 (obturator membrane) 바깥폐쇄근 (obturator externus muscle) 폐쇄동맥 (obturator artery) 폐쇄관 (obturator canal) 절구가로인대 (transverse acetabular ligament) 절구테두리 (acetabular labrum) 분류: region=lower limb (conf 0.5) · layers= · classes=['ar",
-   "text": "Anatomy 엉덩관절 속구조 1·2·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (6개) 폐쇄막 (obturator membrane) 바깥폐쇄근 (obturator externus muscle) 폐쇄동맥 (obturator artery) 폐쇄관 (obturator canal) 절구가로인대 (transverse acetabular ligament) 절구테두리 (acetabular labrum) 분류: region=lower limb (conf 0.5) · layers= · classes=['artery', 'duct', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엉덩관절 속구조 1·2·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 폐쇄막 (obturator membrane) 바깥폐쇄근 (obturator externus muscle) 폐쇄동맥 (obturator artery) 폐쇄관 (obturator canal) 절구가로인대 (transverse acetabular ligament) 절구테두리 (acetabular labrum) 분류: region=lower limb (conf 0.5) · layers= · classes=['artery', 'duct', 'ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-십자인대",
@@ -4369,12 +4394,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "십자인대",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-23-십자인대.md",
    "snippet": "구조물 용어 (8개) 가쪽곁인대 (fibular collateral ligament) 안쪽곁인대 (tibial collateral ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 십자인대 (cruciate ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ",
-   "text": "Anatomy 십자인대 1·7·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (8개) 가쪽곁인대 (fibular collateral ligament) 안쪽곁인대 (tibial collateral ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 십자인대 (cruciate ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 십자인대 1·7·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (8개) 가쪽곁인대 (fibular collateral ligament) 안쪽곁인대 (tibial collateral ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 십자인대 (cruciate ligament) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-무릎지지띠와-무릎인대",
@@ -4383,12 +4408,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "무릎지지띠와 무릎인대",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-22-무릎지지띠와-무릎인대.md",
    "snippet": "구조물 용어 (4개) 가쪽무릎지지띠 (lateral patellar retinaculum) 안쪽무릎지지띠 (medial patellar retinaculum) 위오목 (superior recess) 무릎위주머니 (suprapatellar bursa) 분류: region=lower limb (conf 0.77) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 무릎지지띠와 무릎인대 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 가쪽무릎지지띠 (lateral patellar retinaculum) 안쪽무릎지지띠 (medial patellar retinaculum) 위오목 (superior recess) 무릎위주머니 (suprapatellar bursa) 분류: region=lower limb (conf 0.77) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 무릎지지띠와 무릎인대 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 가쪽무릎지지띠 (lateral patellar retinaculum) 안쪽무릎지지띠 (medial patellar retinaculum) 위오목 (superior recess) 무릎위주머니 (suprapatellar bursa) 분류: region=lower limb (conf 0.77) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-무릎관절-안쪽면",
@@ -4397,12 +4422,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "무릎관절 안쪽면",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-20-무릎관절-안쪽면.md",
    "snippet": "구조물 용어 (2개) 안쪽곁인대 (tibial collateral ligament) 깊은부분은 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 무릎관절 안쪽면 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 안쪽곁인대 (tibial collateral ligament) 깊은부분은 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 무릎관절 안쪽면 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 안쪽곁인대 (tibial collateral ligament) 깊은부분은 반달 (meniscus) 분류: region=lower limb (conf 0.91) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-무릎관절-뒷면",
@@ -4411,12 +4436,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "무릎관절 뒷면",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-21-무릎관절-뒷면.md",
    "snippet": "구조물 용어 (2개) 빗오금인대 (oblique popliteal ligament) 활꼴오금인대 (arcuate popliteal ligament) 분류: region=lower limb (conf 0.71) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 무릎관절 뒷면 1·3·7·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (2개) 빗오금인대 (oblique popliteal ligament) 활꼴오금인대 (arcuate popliteal ligament) 분류: region=lower limb (conf 0.71) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 무릎관절 뒷면 1·3·7·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 빗오금인대 (oblique popliteal ligament) 활꼴오금인대 (arcuate popliteal ligament) 분류: region=lower limb (conf 0.71) · layers=['deep'] · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-목구멍편도",
@@ -4425,12 +4450,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "목구멍편도",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-05-목구멍편도.md",
    "snippet": "구조물 용어 (7개) 입천장혀근 (palatoglossus muscle) 입천장인두근 (palatopharyngeus muscle) 인두결절근막 (pharyngobasilar fascia) 입천장인두근 (palatopharyngeus muscle) 위인두수축근 (superior constrictor muscle) 붓혀근 (styloglossus muscle) 혀인두신경 (glossopharyngeal nerve) 분류: reg",
-   "text": "Anatomy 목구멍편도 7·15회차 · 목 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 입천장혀근 (palatoglossus muscle) 입천장인두근 (palatopharyngeus muscle) 인두결절근막 (pharyngobasilar fascia) 입천장인두근 (palatopharyngeus muscle) 위인두수축근 (superior constrictor muscle) 붓혀근 (styloglossus muscle) 혀인두신경 (glossopharyngeal nerve) 분류: region=neck (conf 0.5) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 목구멍편도 7·15회차 · 목 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 입천장혀근 (palatoglossus muscle) 입천장인두근 (palatopharyngeus muscle) 인두결절근막 (pharyngobasilar fascia) 입천장인두근 (palatopharyngeus muscle) 위인두수축근 (superior constrictor muscle) 붓혀근 (styloglossus muscle) 혀인두신경 (glossopharyngeal nerve) 분류: region=neck (conf 0.5) · layers= · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-다리",
@@ -4439,12 +4464,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "다리",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-01-다리.md",
    "snippet": "구조물 용어 (0개) 분류: region=multi (conf 0.25) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 다리 1·14·15회차 · 등·다리 15차시(1013) 허미선pf.pdf 구조물 용어 (0개) 분류: region=multi (conf 0.25) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 다리 1·14·15회차 · 등·다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (0개) 분류: region=multi (conf 0.25) · layers= · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-관절주머니와-인대",
@@ -4453,12 +4478,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "관절주머니와 인대",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-18-관절주머니와-인대.md",
    "snippet": "구조물 용어 (4개) 큰허리근주머니 (psoas bursa) 궁둥넙다리인대 (ischiofemoral ligament) 엉덩넙다리인대 (iliofemoral ligament) 두덩넙다리인대 (pubofemoral ligament) 분류: region=lower limb (conf 0.82) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .pr",
-   "text": "Anatomy 관절주머니와 인대 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (4개) 큰허리근주머니 (psoas bursa) 궁둥넙다리인대 (ischiofemoral ligament) 엉덩넙다리인대 (iliofemoral ligament) 두덩넙다리인대 (pubofemoral ligament) 분류: region=lower limb (conf 0.82) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 관절주머니와 인대 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 큰허리근주머니 (psoas bursa) 궁둥넙다리인대 (ischiofemoral ligament) 엉덩넙다리인대 (iliofemoral ligament) 두덩넙다리인대 (pubofemoral ligament) 분류: region=lower limb (conf 0.82) · layers=['deep'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-관절주머니와-인대",
@@ -4467,12 +4492,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "관절주머니와 인대",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-25-관절주머니와-인대.md",
    "snippet": "구조물 용어 (1개) 세모인대 (triangular ligament) 분류: region=lower limb (conf 0.62) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 관절주머니와 인대 3·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (1개) 세모인대 (triangular ligament) 분류: region=lower limb (conf 0.62) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 관절주머니와 인대 3·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (1개) 세모인대 (triangular ligament) 분류: region=lower limb (conf 0.62) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-관절반달-meniscus-",
@@ -4481,12 +4506,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "관절반달 (meniscus)",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-24-관절반달-meniscus.md",
    "snippet": "구조물 용어 (3개) 무릎가로인대 (transverse ligament of knee) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 분류: region=lower limb (conf 0.89) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 관절반달 (meniscus) 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf 구조물 용어 (3개) 무릎가로인대 (transverse ligament of knee) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 분류: region=lower limb (conf 0.89) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 관절반달 (meniscus) 1·14·15회차 · 다리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 무릎가로인대 (transverse ligament of knee) 앞십자인대 (anterior cruciate ligament) 뒤십자인대 (posterior cruciate ligament) 분류: region=lower limb (conf 0.89) · layers= · classes=['ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-고실열기",
@@ -4495,12 +4520,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "고실열기",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-09-고실열기.md",
    "snippet": "구조물 용어 (7개) 고실 (tympanic cavity) 뒤쪽으로는 꼭지방어귀 (aditus to mastoid antrum) 고유고실 (tympanic cavity proper) 과 고실위쪽 고실위오목 (epitympanic recess) 뒤머리뼈우묵 (posterior cranial fossa) 무릎신경절 (geniculate ganglion) 큰바위신경 (greater petrosal nerve) 분류: region=h",
-   "text": "Anatomy 고실열기 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (7개) 고실 (tympanic cavity) 뒤쪽으로는 꼭지방어귀 (aditus to mastoid antrum) 고유고실 (tympanic cavity proper) 과 고실위쪽 고실위오목 (epitympanic recess) 뒤머리뼈우묵 (posterior cranial fossa) 무릎신경절 (geniculate ganglion) 큰바위신경 (greater petrosal nerve) 분류: region=head (conf 0.71) · layers=['cavity visceral'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고실열기 머리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 고실 (tympanic cavity) 뒤쪽으로는 꼭지방어귀 (aditus to mastoid antrum) 고유고실 (tympanic cavity proper) 과 고실위쪽 고실위오목 (epitympanic recess) 뒤머리뼈우묵 (posterior cranial fossa) 무릎신경절 (geniculate ganglion) 큰바위신경 (greater petrosal nerve) 분류: region=head (conf 0.71) · layers=['cavity visceral'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s15-고실",
@@ -4509,12 +4534,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "고실",
    "tags": [],
-   "source": "15차시(1013) 허미선pf.pdf",
+   "source": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s15/sec-10-고실.md",
    "snippet": "구조물 용어 (10개) 귓속뼈 (auditory ossicles) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 고실끈신경 (chorda tympani) 속귀 뼈미로 (bony labyrinth) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 즉 바닥이 달팽이의 타원창 (vestibular window) 분류: region=head (conf 0.38) · layers= · cla",
-   "text": "Anatomy 고실 1·14·15회차 · 머리 15차시(1013) 허미선pf.pdf 구조물 용어 (10개) 귓속뼈 (auditory ossicles) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 고실끈신경 (chorda tympani) 속귀 뼈미로 (bony labyrinth) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 즉 바닥이 달팽이의 타원창 (vestibular window) 분류: region=head (conf 0.38) · layers= · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고실 1·14·15회차 · 머리 15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (10개) 귓속뼈 (auditory ossicles) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 고실끈신경 (chorda tympani) 속귀 뼈미로 (bony labyrinth) 망치뼈 (malleus) 모루뼈 (incus) 등자뼈 (stapes) 즉 바닥이 달팽이의 타원창 (vestibular window) 분류: region=head (conf 0.38) · layers= · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s14-해부실습14-퀴즈",
@@ -5265,12 +5290,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "폄근지지띠 섬유칸",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-07-폄근지지띠-섬유칸.md",
    "snippet": "구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (e",
-   "text": "Anatomy 폄근지지띠 섬유칸 11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 폄근지지띠 섬유칸 11회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-큰창자",
@@ -5279,12 +5304,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "큰창자",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-21-큰창자.md",
    "snippet": "구조물 용어 (10개) 잘록창자띠 (tenia coli) 잘록창자팽대 (haustra of colon) 복막주렁 (omental appendice) 창자간막 부착된 맞은편 벽에 위치 막창자 (cecum) 앞에서 세로로 잘라열어 돌창자구멍 (ileal orifice) 돌막창자판막 (ileocecal recess valve) 돌창자구멍 (ileal orifice) 에 돌잘록창자입술 (ileocolic lip) 인 위입술과 돌막창자",
-   "text": "Anatomy 큰창자 배 11차시(0922) 허미선pf.pdf 구조물 용어 (10개) 잘록창자띠 (tenia coli) 잘록창자팽대 (haustra of colon) 복막주렁 (omental appendice) 창자간막 부착된 맞은편 벽에 위치 막창자 (cecum) 앞에서 세로로 잘라열어 돌창자구멍 (ileal orifice) 돌막창자판막 (ileocecal recess valve) 돌창자구멍 (ileal orifice) 에 돌잘록창자입술 (ileocolic lip) 인 위입술과 돌막창자입술 (ileocecal lip) 막창자꼬리구멍 (orifice of vermiform appendix) 분류: region=abdomen (conf 0.9) · layers=['cavity visceral'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 큰창자 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (10개) 잘록창자띠 (tenia coli) 잘록창자팽대 (haustra of colon) 복막주렁 (omental appendice) 창자간막 부착된 맞은편 벽에 위치 막창자 (cecum) 앞에서 세로로 잘라열어 돌창자구멍 (ileal orifice) 돌막창자판막 (ileocecal recess valve) 돌창자구멍 (ileal orifice) 에 돌잘록창자입술 (ileocolic lip) 인 위입술과 돌막창자입술 (ileocecal lip) 막창자꼬리구멍 (orifice of vermiform appendix) 분류: region=abdomen (conf 0.9) · layers=['cavity visceral'] · classes=['foramen', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-지라",
@@ -5293,12 +5318,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "지라",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-16-지라.md",
    "snippet": "구조물 용어 (6개) 지라동맥 (splenic artery) 지라문 (splenic hilum) 에서 지라콩팥인대 (splenorenal ligament) 와 위지라인대 (gastrosplenic ligament) 지라 가로막면 (diaphragmatic surface) 지라문 (splenic hilum) 분류: region=abdomen (conf 0.94) · layers=['cavity visceral'] · classe",
-   "text": "Anatomy 지라 11·13회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 지라동맥 (splenic artery) 지라문 (splenic hilum) 에서 지라콩팥인대 (splenorenal ligament) 와 위지라인대 (gastrosplenic ligament) 지라 가로막면 (diaphragmatic surface) 지라문 (splenic hilum) 분류: region=abdomen (conf 0.94) · layers=['cavity visceral'] · classes=['artery', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 지라 11·13회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 지라동맥 (splenic artery) 지라문 (splenic hilum) 에서 지라콩팥인대 (splenorenal ligament) 와 위지라인대 (gastrosplenic ligament) 지라 가로막면 (diaphragmatic surface) 지라문 (splenic hilum) 분류: region=abdomen (conf 0.94) · layers=['cavity visceral'] · classes=['artery', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-주변혈관관찰",
@@ -5307,12 +5332,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "주변혈관관찰",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-13-주변혈관관찰.md",
    "snippet": "구조물 용어 (12개) 고유간동맥 (proper hepatic artery) 왼간동맥 (hepatic artery) 위샘창자동맥 (gastroduodenal artery) 온간동맥 (common hepatic artery) 이 부위에서 치밀한 자율신경얼기 (autonomic plexus) 쓸개동맥 (cystic artery) 오른위동맥 (right gastric artery) 복강동맥 (celiac trunk) 가로막대동맥구멍",
-   "text": "Anatomy 주변혈관관찰 11·13회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (12개) 고유간동맥 (proper hepatic artery) 왼간동맥 (hepatic artery) 위샘창자동맥 (gastroduodenal artery) 온간동맥 (common hepatic artery) 이 부위에서 치밀한 자율신경얼기 (autonomic plexus) 쓸개동맥 (cystic artery) 오른위동맥 (right gastric artery) 복강동맥 (celiac trunk) 가로막대동맥구멍 (aortic hiatus) 위샘창자동맥 (gastroduodenal artery) 더 아래로 내려가 오른위그물 막동맥 (right gastroomental artery) 과 위이자샘창자동맥 (superior pancreaticoduodenal artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 주변혈관관찰 11·13회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (12개) 고유간동맥 (proper hepatic artery) 왼간동맥 (hepatic artery) 위샘창자동맥 (gastroduodenal artery) 온간동맥 (common hepatic artery) 이 부위에서 치밀한 자율신경얼기 (autonomic plexus) 쓸개동맥 (cystic artery) 오른위동맥 (right gastric artery) 복강동맥 (celiac trunk) 가로막대동맥구멍 (aortic hiatus) 위샘창자동맥 (gastroduodenal artery) 더 아래로 내려가 오른위그물 막동맥 (right gastroomental artery) 과 위이자샘창자동맥 (superior pancreaticoduodenal artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-이자관",
@@ -5321,12 +5346,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "이자관",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-24-이자관.md",
    "snippet": "구조물 용어 (5개) 큰샘창자유두 (major duodenal papilla) 앞서 보았던 두 관이 합쳐져 쓸개이자관팽대 (hepatopancreatic ampulla) 작은샘창자유두 (minor duodenal papilla) 여기로 덧이자관 (accessory pancreatic duct) 돌림주름 (circular fold) 분류: region=abdomen (conf 1.0) · layers= · classes=['du",
-   "text": "Anatomy 이자관 배 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 큰샘창자유두 (major duodenal papilla) 앞서 보았던 두 관이 합쳐져 쓸개이자관팽대 (hepatopancreatic ampulla) 작은샘창자유두 (minor duodenal papilla) 여기로 덧이자관 (accessory pancreatic duct) 돌림주름 (circular fold) 분류: region=abdomen (conf 1.0) · layers= · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 이자관 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 큰샘창자유두 (major duodenal papilla) 앞서 보았던 두 관이 합쳐져 쓸개이자관팽대 (hepatopancreatic ampulla) 작은샘창자유두 (minor duodenal papilla) 여기로 덧이자관 (accessory pancreatic duct) 돌림주름 (circular fold) 분류: region=abdomen (conf 1.0) · layers= · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-이자-길이가-긴-샘조직",
@@ -5335,12 +5360,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "이자 : 길이가 긴 샘조직",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-23-이자-길이가-긴-샘조직.md",
    "snippet": "구조물 용어 (12개) 갈고리돌기 (uncinate process) 지라정맥 (splenic vein) 간문맥 (hepatic portal vein) 왼콩팥정맥 (left renal vein) 복강동맥 (celiac trunk) 온간동맥 (common hepatic artery) 위샘창자동맥 (gastroduodenal artery) 위이자샘창자동맥 (superior pancreaticoduodenal artery) 아래이자샘",
-   "text": "Anatomy 이자 : 길이가 긴 샘조직 11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (12개) 갈고리돌기 (uncinate process) 지라정맥 (splenic vein) 간문맥 (hepatic portal vein) 왼콩팥정맥 (left renal vein) 복강동맥 (celiac trunk) 온간동맥 (common hepatic artery) 위샘창자동맥 (gastroduodenal artery) 위이자샘창자동맥 (superior pancreaticoduodenal artery) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 지라동맥 (splenic artery) 왼위그물막동맥 (left gastroomental artery) 온쓸개관 (common bile duct) 분류: region=abdomen (conf 0.91) · layers= · classes=['artery', 'duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 이자 : 길이가 긴 샘조직 11회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (12개) 갈고리돌기 (uncinate process) 지라정맥 (splenic vein) 간문맥 (hepatic portal vein) 왼콩팥정맥 (left renal vein) 복강동맥 (celiac trunk) 온간동맥 (common hepatic artery) 위샘창자동맥 (gastroduodenal artery) 위이자샘창자동맥 (superior pancreaticoduodenal artery) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 지라동맥 (splenic artery) 왼위그물막동맥 (left gastroomental artery) 온쓸개관 (common bile duct) 분류: region=abdomen (conf 0.91) · layers= · classes=['artery', 'duct', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위팔세갈래근-triceps-brachii-muscle-",
@@ -5349,12 +5374,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위팔세갈래근 (triceps brachii muscle)",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-02-위팔세갈래근-triceps-brachii-m.md",
    "snippet": "구조물 용어 (3개) 확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절 (infraglenoid tubercle) 어 일어남 위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리 (olecranon) 긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근 (teres major muscle) 분류: region=upper limb (conf 0.95) · layers=['deep', 'deep fascia', 'superficial', 'su",
-   "text": "Anatomy 위팔세갈래근 (triceps brachii muscle) 9·11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절 (infraglenoid tubercle) 어 일어남 위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리 (olecranon) 긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근 (teres major muscle) 분류: region=upper limb (conf 0.95) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔세갈래근 (triceps brachii muscle) 9·11회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 확인 긴갈래 힘줄 따라 올라가서 이 힘줄이 접시아래결절 (infraglenoid tubercle) 어 일어남 위팔세갈래근이 아래로 내려가 자뼈 팔꿈치머리 (olecranon) 긴갈래와 안쪽갈래 벌린틈새 위쪽에서 큰원근 (teres major muscle) 분류: region=upper limb (conf 0.95) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위창자간막동맥-superior-mesenteric-ar",
@@ -5363,12 +5388,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위창자간막동맥 (superior mesenteric artery)",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-20-위창자간막동맥-superior-mesente.md",
    "snippet": "구조물 용어 (13개) 가로잘록창자 (transverse colon) 와 가로잘록창자간막 (transverse mesocolon) 빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리 (root of mesentery) 위창자간막신경얼기 (superior mesenteric plexus) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 창자동맥 (intestinal artery) 빈창자동",
-   "text": "Anatomy 위창자간막동맥 (superior mesenteric artery) 7·11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (13개) 가로잘록창자 (transverse colon) 와 가로잘록창자간막 (transverse mesocolon) 빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리 (root of mesentery) 위창자간막신경얼기 (superior mesenteric plexus) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 창자동맥 (intestinal artery) 빈창자동맥 (jejunal artery) 돌창자동맥 (ileal artery) 곧은동맥 (vasa recta) 중간잘록창자동맥 (middle colic artery) 오른잘록창자동맥 (right colic artery) 돌잘록창자동맥 (ileocolic artery) 막창자꼬리동맥 (appendicular artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위창자간막동맥 (superior mesenteric artery) 7·11회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (13개) 가로잘록창자 (transverse colon) 와 가로잘록창자간막 (transverse mesocolon) 빈창자와 돌창자를 앞으로 왼쪽으로 잡아당겨 창자간막뿌리 (root of mesentery) 위창자간막신경얼기 (superior mesenteric plexus) 아래이자샘창자동맥 (inferior pancreaticoduodenal artery) 창자동맥 (intestinal artery) 빈창자동맥 (jejunal artery) 돌창자동맥 (ileal artery) 곧은동맥 (vasa recta) 중간잘록창자동맥 (middle colic artery) 오른잘록창자동맥 (right colic artery) 돌잘록창자동맥 (ileocolic artery) 막창자꼬리동맥 (appendicular artery) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위의-혈관분포",
@@ -5377,12 +5402,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위의 혈관분포",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-15-위의-혈관분포.md",
    "snippet": "구조물 용어 (5개) 오른위동맥 (right gastric artery) 왼위동맥 (left gastric artery) 오른위그물막동맥 (right gastroomental artery) 왼위그물막동맥 (left gastroomental artery) 짧은위동맥 (short gastric artery) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes=",
-   "text": "Anatomy 위의 혈관분포 배 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 오른위동맥 (right gastric artery) 왼위동맥 (left gastric artery) 오른위그물막동맥 (right gastroomental artery) 왼위그물막동맥 (left gastroomental artery) 짧은위동맥 (short gastric artery) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위의 혈관분포 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 오른위동맥 (right gastric artery) 왼위동맥 (left gastric artery) 오른위그물막동맥 (right gastroomental artery) 왼위그물막동맥 (left gastroomental artery) 짧은위동맥 (short gastric artery) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes=['artery'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-위의-겉모습",
@@ -5391,12 +5416,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위의 겉모습",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-14-위의-겉모습.md",
    "snippet": "구조물 용어 (4개) 들문부분 (cardial part) 위바닥 (fundus of stomach) 날문부분 (pyloric part) 위몸통 (body of stomach) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 위의 겉모습 배 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 들문부분 (cardial part) 위바닥 (fundus of stomach) 날문부분 (pyloric part) 위몸통 (body of stomach) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위의 겉모습 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 들문부분 (cardial part) 위바닥 (fundus of stomach) 날문부분 (pyloric part) 위몸통 (body of stomach) 분류: region=abdomen (conf 1.0) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래팔뒤칸의-얕은층-근육",
@@ -5405,12 +5430,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 얕은층 근육",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-04-아래팔뒤칸의-얕은층-근육.md",
    "snippet": "구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris ",
-   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10·11·14·15회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10·11·14·15회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래팔뒤칸의-깊은층-노출",
@@ -5419,12 +5444,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 깊은층 노출",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-06-아래팔뒤칸의-깊은층-노출.md",
    "snippet": "구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래팔뒤칸의-깊은층-근육",
@@ -5433,12 +5458,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 깊은층 근육",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-08-아래팔뒤칸의-깊은층-근육.md",
    "snippet": "구조물 용어 (4개) 폄근지지띠 (extensor retinaculum) 긴엄지폄근 (extensor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴엄지벌림근 (abductor pollicis longus muscle) 분류: region=upper limb (conf 0.88) · layers=['deep'] · classes=['muscle'] 원문 전",
-   "text": "Anatomy 아래팔뒤칸의 깊은층 근육 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 폄근지지띠 (extensor retinaculum) 긴엄지폄근 (extensor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴엄지벌림근 (abductor pollicis longus muscle) 분류: region=upper limb (conf 0.88) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 깊은층 근육 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 폄근지지띠 (extensor retinaculum) 긴엄지폄근 (extensor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴엄지벌림근 (abductor pollicis longus muscle) 분류: region=upper limb (conf 0.88) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-아래창자간막동맥-inferior-mesenteric-a",
@@ -5447,12 +5472,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래창자간막동맥 (inferior mesenteric artery)",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-25-아래창자간막동맥-inferior-mesent.md",
    "snippet": "구조물 용어 (3개) 왼잘록창자동맥 (left colic artery) 구불잘록창자가지 (sigmoid branch) 아래창자간막정맥 (inferior mesenteric vein) 분류: region=abdomen (conf 0.91) · layers=['cavity visceral'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래창자간막동맥 (inferior mesenteric artery) 13·14회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 왼잘록창자동맥 (left colic artery) 구불잘록창자가지 (sigmoid branch) 아래창자간막정맥 (inferior mesenteric vein) 분류: region=abdomen (conf 0.91) · layers=['cavity visceral'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래창자간막동맥 (inferior mesenteric artery) 13·14회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 왼잘록창자동맥 (left colic artery) 구불잘록창자가지 (sigmoid branch) 아래창자간막정맥 (inferior mesenteric vein) 분류: region=abdomen (conf 0.91) · layers=['cavity visceral'] · classes=['artery', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-손등표면",
@@ -5461,12 +5486,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손등표면",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-10-손등표면.md",
    "snippet": "구조물 용어 (6개) 손등정맥그물 (dorsal venous network of hand) 자신경 (ulnar nerve) 노신경 (radial nerve) 이를 연결하는 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활 (deep palmar arch) 분류: region=upper limb (conf 0.7) ·",
-   "text": "Anatomy 손등표면 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (6개) 손등정맥그물 (dorsal venous network of hand) 자신경 (ulnar nerve) 노신경 (radial nerve) 이를 연결하는 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활 (deep palmar arch) 분류: region=upper limb (conf 0.7) · layers=['cavity visceral', 'deep', 'skin'] · classes=['artery', 'muscle', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손등표면 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 손등정맥그물 (dorsal venous network of hand) 자신경 (ulnar nerve) 노신경 (radial nerve) 이를 연결하는 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 손바닥에서 자동맥 깊은가지와 만나서 깊은손바닥동맥활 (deep palmar arch) 분류: region=upper limb (conf 0.7) · layers=['cavity visceral', 'deep', 'skin'] · classes=['artery', 'muscle', 'nerve', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-손뒤침근-supinator-muscle-",
@@ -5475,12 +5500,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손뒤침근 (supinator muscle)",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-09-손뒤침근-supinator-muscle.md",
    "snippet": "구조물 용어 (3개) 노신경깊은가지 (deep branch of radial nerve) 자뼈 뒤침근능선 (supinator crest) 뒤뼈사이신경 (posterior interossoeus nerve) 분류: region=upper limb (conf 1.0) · layers=['deep', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .priva",
-   "text": "Anatomy 손뒤침근 (supinator muscle) 10·11·14·15회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (3개) 노신경깊은가지 (deep branch of radial nerve) 자뼈 뒤침근능선 (supinator crest) 뒤뼈사이신경 (posterior interossoeus nerve) 분류: region=upper limb (conf 1.0) · layers=['deep', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손뒤침근 (supinator muscle) 10·11·14·15회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 노신경깊은가지 (deep branch of radial nerve) 자뼈 뒤침근능선 (supinator crest) 뒤뼈사이신경 (posterior interossoeus nerve) 분류: region=upper limb (conf 1.0) · layers=['deep', 'superficial'] · classes=['muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-손가락폄근의-힘줄",
@@ -5489,12 +5514,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손가락폄근의 힘줄",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-05-손가락폄근의-힘줄.md",
    "snippet": "구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손가락폄근의 힘줄 9회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손가락폄근의 힘줄 9회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-샘창자-duodenum-",
@@ -5503,12 +5528,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "샘창자 (duodenum)",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-22-샘창자-duodenum.md",
    "snippet": "구조물 용어 (2개) 빈창자와 만나는 샘빈창자굽이 (duodenojejunal flexure) 빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근 (suspensory muscle of duodenum) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/a",
-   "text": "Anatomy 샘창자 (duodenum) 1·11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 빈창자와 만나는 샘빈창자굽이 (duodenojejunal flexure) 빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근 (suspensory muscle of duodenum) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 샘창자 (duodenum) 1·11회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 빈창자와 만나는 샘빈창자굽이 (duodenojejunal flexure) 빈창자굽이를 가로막 오른다리에 고정시켜주는 샘창자걸 이근 (suspensory muscle of duodenum) 분류: region=abdomen (conf 0.89) · layers=['cavity visceral'] · classes=['muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-복막구조물",
@@ -5517,12 +5542,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "복막구조물",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-11-복막구조물.md",
    "snippet": "구조물 용어 (21개) 복막인대 (peritoneal ligament) 창자간막 (mesentery) 인대와 창자간막은 벽복막 (parietal peritoneum) 과 내장복막 (visceral peritoneum) 복막뒤기관 (retroperitoneal organ) 복막속기관 (intraperitoneal organ) 큰그물막 (greater omentum) 낫인대 (falciform ligament) 그 안에 간원인 대",
-   "text": "Anatomy 복막구조물 11·13회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (21개) 복막인대 (peritoneal ligament) 창자간막 (mesentery) 인대와 창자간막은 벽복막 (parietal peritoneum) 과 내장복막 (visceral peritoneum) 복막뒤기관 (retroperitoneal organ) 복막속기관 (intraperitoneal organ) 큰그물막 (greater omentum) 낫인대 (falciform ligament) 그 안에 간원인 대 (round ligament of liver) 작은그물막 (lesser omentum) 간 아랫면에서 위작은굽이까지 잇는 간위인대 (hepatogastric ligament) 와 간아 랫면에서 샘창자 (duodenum) 위부분 사이 잇는 간샘창자인대 (hepatoduodenal ligament) 위가로막인대 (gastrophrenic ligament) 위지라인대 (gastrosplenic ligament) 창자간막 (mesentery) 막창자간막 (mesocecum) 막창자 (cecum) 막창자꼬리간막 (mesoappendix) 가로잘록창자간막 (transverse mesocolon) 구불잘록창자간막 (sigmoid mesocolon) 분류: region=abdomen (conf 0.98) · layers=['cavity visceral'] · classes=['duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 복막구조물 11·13회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (21개) 복막인대 (peritoneal ligament) 창자간막 (mesentery) 인대와 창자간막은 벽복막 (parietal peritoneum) 과 내장복막 (visceral peritoneum) 복막뒤기관 (retroperitoneal organ) 복막속기관 (intraperitoneal organ) 큰그물막 (greater omentum) 낫인대 (falciform ligament) 그 안에 간원인 대 (round ligament of liver) 작은그물막 (lesser omentum) 간 아랫면에서 위작은굽이까지 잇는 간위인대 (hepatogastric ligament) 와 간아 랫면에서 샘창자 (duodenum) 위부분 사이 잇는 간샘창자인대 (hepatoduodenal ligament) 위가로막인대 (gastrophrenic ligament) 위지라인대 (gastrosplenic ligament) 창자간막 (mesentery) 막창자간막 (mesocecum) 막창자 (cecum) 막창자꼬리간막 (mesoappendix) 가로잘록창자간막 (transverse mesocolon) 구불잘록창자간막 (sigmoid mesocolon) 분류: region=abdomen (conf 0.98) · layers=['cavity visceral'] · classes=['duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-배",
@@ -5531,12 +5556,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "배",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-01-배.md",
    "snippet": "구조물 용어 (0개) 분류: region=abdomen (conf 0.92) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 배 11회차 · 배 11차시(0922) 허미선pf.pdf 구조물 용어 (0개) 분류: region=abdomen (conf 0.92) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배 11회차 · 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (0개) 분류: region=abdomen (conf 0.92) · layers=['cavity visceral'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-노신경",
@@ -5545,12 +5570,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "노신경",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-03-노신경.md",
    "snippet": "구조물 용어 (2개) 깊은위팔동맥 (deep brachial artery) 과 함꼐 위팔뼈 노신경고랑 (groove for radial nerve) 분류: region=upper limb (conf 0.97) · layers=['cavity visceral', 'deep'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 노신경 10·11회차 · 팔 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 깊은위팔동맥 (deep brachial artery) 과 함꼐 위팔뼈 노신경고랑 (groove for radial nerve) 분류: region=upper limb (conf 0.97) · layers=['cavity visceral', 'deep'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 노신경 10·11회차 · 팔 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 깊은위팔동맥 (deep brachial artery) 과 함꼐 위팔뼈 노신경고랑 (groove for radial nerve) 분류: region=upper limb (conf 0.97) · layers=['cavity visceral', 'deep'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-그물막주머니-omental-bursa-",
@@ -5559,12 +5584,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "그물막주머니 (omental bursa)",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-12-그물막주머니-omental-bursa.md",
    "snippet": "구조물 용어 (2개) 그물막구멍 (omental foramen) 작은그물막 또는 그 부분인 간샘창자인대 (hepatoduodenal ligament) 분류: region=abdomen (conf 0.71) · layers=['cavity visceral'] · classes=['foramen', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 그물막주머니 (omental bursa) 배 11차시(0922) 허미선pf.pdf 구조물 용어 (2개) 그물막구멍 (omental foramen) 작은그물막 또는 그 부분인 간샘창자인대 (hepatoduodenal ligament) 분류: region=abdomen (conf 0.71) · layers=['cavity visceral'] · classes=['foramen', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 그물막주머니 (omental bursa) 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 그물막구멍 (omental foramen) 작은그물막 또는 그 부분인 간샘창자인대 (hepatoduodenal ligament) 분류: region=abdomen (conf 0.71) · layers=['cavity visceral'] · classes=['foramen', 'ligament'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-간의-적출",
@@ -5573,12 +5598,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "간의 적출",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-17-간의-적출.md",
    "snippet": "구조물 용어 (5개) 간문 (porta hepatis) 고유간동맥 (proper hepatic artery) 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 낫인대 (falciform ligament) 분류: region=abdomen (conf 0.89) · layers= · classes=['artery', 'duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않",
-   "text": "Anatomy 간의 적출 배 11차시(0922) 허미선pf.pdf 구조물 용어 (5개) 간문 (porta hepatis) 고유간동맥 (proper hepatic artery) 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 낫인대 (falciform ligament) 분류: region=abdomen (conf 0.89) · layers= · classes=['artery', 'duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 간의 적출 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 간문 (porta hepatis) 고유간동맥 (proper hepatic artery) 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 낫인대 (falciform ligament) 분류: region=abdomen (conf 0.89) · layers= · classes=['artery', 'duct', 'ligament', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-간의-속구조",
@@ -5587,12 +5612,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "간의 속구조",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-19-간의-속구조.md",
    "snippet": "구조물 용어 (4개) 간문 (porta hepatis) 맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 온간관 (common hepatic duct) 분류: region=abdomen (conf 0.92) · layers=['deep'] · classes=['artery', 'duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권",
-   "text": "Anatomy 간의 속구조 배 11차시(0922) 허미선pf.pdf 구조물 용어 (4개) 간문 (porta hepatis) 맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 온간관 (common hepatic duct) 분류: region=abdomen (conf 0.92) · layers=['deep'] · classes=['artery', 'duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 간의 속구조 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 간문 (porta hepatis) 맥과 왼간동맥이 일찍 나뉘어져 잘린모습으로 보임 간문맥 (hepatic portal vein) 온쓸개관 (common bile duct) 온간관 (common hepatic duct) 분류: region=abdomen (conf 0.92) · layers=['deep'] · classes=['artery', 'duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s11-간의-겉모습",
@@ -5601,12 +5626,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "간의 겉모습",
    "tags": [],
-   "source": "11차시(0922) 허미선pf.pdf",
+   "source": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s11/sec-18-간의-겉모습.md",
    "snippet": "구조물 용어 (14개) 가로막면 (diaphragmatic surface) 무장막구역 (bare area) 그 주변은 관상인대 (coronary ligament) 와 세모인대 (triangular ligament) 내장면 (visceral surface) 네모엽 (quadrate lobe) 꼬리엽 (caudate lobe) 내장면 뒤쪽에서 정맥관인대 (ligamentum venosum) 간문 (porta hepatis) 간세동",
-   "text": "Anatomy 간의 겉모습 배 11차시(0922) 허미선pf.pdf 구조물 용어 (14개) 가로막면 (diaphragmatic surface) 무장막구역 (bare area) 그 주변은 관상인대 (coronary ligament) 와 세모인대 (triangular ligament) 내장면 (visceral surface) 네모엽 (quadrate lobe) 꼬리엽 (caudate lobe) 내장면 뒤쪽에서 정맥관인대 (ligamentum venosum) 간문 (porta hepatis) 간세동이 (portal triad) 이들 구조물이 간샘창자인대 (hepatoduodenal ligament) 쓸개동맥 (cystic artery) 쓸개 속면 싸는 막은 나선주름 (spiral fold) 쓸개주머니관 (cystic duct) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 간의 겉모습 배 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (14개) 가로막면 (diaphragmatic surface) 무장막구역 (bare area) 그 주변은 관상인대 (coronary ligament) 와 세모인대 (triangular ligament) 내장면 (visceral surface) 네모엽 (quadrate lobe) 꼬리엽 (caudate lobe) 내장면 뒤쪽에서 정맥관인대 (ligamentum venosum) 간문 (porta hepatis) 간세동이 (portal triad) 이들 구조물이 간샘창자인대 (hepatoduodenal ligament) 쓸개동맥 (cystic artery) 쓸개 속면 싸는 막은 나선주름 (spiral fold) 쓸개주머니관 (cystic duct) 분류: region=abdomen (conf 0.96) · layers=['cavity visceral'] · classes=['artery', 'duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-피부벗기기",
@@ -5615,12 +5640,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "피부벗기기",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-15-피부벗기기.md",
    "snippet": "구조물 용어 (4개) 락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근 (flexor digitorum profundus muscle) 부에서 각각의 손가락끝으로 가는 선 손바닥에서 엄지두덩 (thenar eminence) 와 새끼두덩 (hypothenar eminence) 짧은손바닥근 (palmaris brevis muscle) 분류: region=upper limb (conf 0.82) · layers=['deep'",
-   "text": "Anatomy 피부벗기기 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근 (flexor digitorum profundus muscle) 부에서 각각의 손가락끝으로 가는 선 손바닥에서 엄지두덩 (thenar eminence) 와 새끼두덩 (hypothenar eminence) 짧은손바닥근 (palmaris brevis muscle) 분류: region=upper limb (conf 0.82) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 피부벗기기 9회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 락이 굽혀져 있어 하기 어려운데 이럴때는 깊은손가락굽힘근 (flexor digitorum profundus muscle) 부에서 각각의 손가락끝으로 가는 선 손바닥에서 엄지두덩 (thenar eminence) 와 새끼두덩 (hypothenar eminence) 짧은손바닥근 (palmaris brevis muscle) 분류: region=upper limb (conf 0.82) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-폄근지지띠-섬유칸",
@@ -5629,12 +5654,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "폄근지지띠 섬유칸",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-14-폄근지지띠-섬유칸.md",
    "snippet": "구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (e",
-   "text": "Anatomy 폄근지지띠 섬유칸 11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 폄근지지띠 섬유칸 11회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 긴엄지벌림근 (abductor pollicis longus muscle) 짧은엄지폄근 (extensor pollicis brevis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 긴엄지폄근 (extensor pollicis longus muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 분류: region=upper limb (conf 0.65) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-팔오금-구조물",
@@ -5643,12 +5668,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "팔오금 구조물",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-04-팔오금-구조물.md",
    "snippet": "구조물 용어 (0개) 분류: region=upper limb (conf 1.0) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 팔오금 구조물 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (0개) 분류: region=upper limb (conf 1.0) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 팔오금 구조물 9회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (0개) 분류: region=upper limb (conf 1.0) · layers=['deep', 'deep fascia', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-정중신경-median-erve-",
@@ -5657,12 +5682,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "정중신경 (median erve)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-07-정중신경-median-erve.md",
    "snippet": "구조물 용어 (1개) 앞뼈사이신경 (anterior interosseous nerve) 분류: region=upper limb (conf 0.91) · layers=['deep', 'skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 정중신경 (median erve) 2·10·11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (1개) 앞뼈사이신경 (anterior interosseous nerve) 분류: region=upper limb (conf 0.91) · layers=['deep', 'skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 정중신경 (median erve) 2·10·11회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (1개) 앞뼈사이신경 (anterior interosseous nerve) 분류: region=upper limb (conf 0.91) · layers=['deep', 'skin', 'superficial'] · classes=['nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-정삭-spermatic-cord-",
@@ -5671,12 +5696,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "정삭 (spermatic cord)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-31-정삭-spermatic-cord.md",
    "snippet": "구조물 용어 (8개) 음낭근육층 (dartos muscle layer) 인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음 정관 (ductus deferens) 바깥정삭근막 (external spermatic fascia) 고환올림근 (cremaster muscle) 고환올림근막 (cremasteric fascia) 속정삭근막 (internal spermatic fascia) 정관 (ductus deferens) 덩굴정맥얼기 (",
-   "text": "Anatomy 정삭 (spermatic cord) 9·10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 음낭근육층 (dartos muscle layer) 인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음 정관 (ductus deferens) 바깥정삭근막 (external spermatic fascia) 고환올림근 (cremaster muscle) 고환올림근막 (cremasteric fascia) 속정삭근막 (internal spermatic fascia) 정관 (ductus deferens) 덩굴정맥얼기 (pampiniform plexus) 분류: region=abdomen (conf 0.44) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['duct', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 정삭 (spermatic cord) 9·10회차 · 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (8개) 음낭근육층 (dartos muscle layer) 인 음낭피부 매우 얇고 얕은근막에 단단히 붙어있음 정관 (ductus deferens) 바깥정삭근막 (external spermatic fascia) 고환올림근 (cremaster muscle) 고환올림근막 (cremasteric fascia) 속정삭근막 (internal spermatic fascia) 정관 (ductus deferens) 덩굴정맥얼기 (pampiniform plexus) 분류: region=abdomen (conf 0.44) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['duct', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-자신경-ulnar-nerve-",
@@ -5685,12 +5710,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "자신경 (ulnar nerve)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-09-자신경-ulnar-nerve.md",
    "snippet": "구조물 용어 (0개) 분류: region=upper limb (conf 0.81) · layers=['deep', 'skin', 'superficial'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 자신경 (ulnar nerve) 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (0개) 분류: region=upper limb (conf 0.81) · layers=['deep', 'skin', 'superficial'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 자신경 (ulnar nerve) 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (0개) 분류: region=upper limb (conf 0.81) · layers=['deep', 'skin', 'superficial'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-자동맥-ulnar-artery-",
@@ -5699,12 +5724,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "자동맥 (ulnar artery)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-08-자동맥-ulnar-artery.md",
    "snippet": "구조물 용어 (4개) 자쪽되돌이동맥 (ulnar recurrent artery) 위에 서 내려오는 자쪽곁동맥 (ulnar collateral artery) 온뼈사이동맥 (common interosseous artery) 아래팔 먼쪽 절반에서 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 분류: region=upper limb (conf 0.83) · layers=['deep', 'superficial'] ",
-   "text": "Anatomy 자동맥 (ulnar artery) 10·11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 자쪽되돌이동맥 (ulnar recurrent artery) 위에 서 내려오는 자쪽곁동맥 (ulnar collateral artery) 온뼈사이동맥 (common interosseous artery) 아래팔 먼쪽 절반에서 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 분류: region=upper limb (conf 0.83) · layers=['deep', 'superficial'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 자동맥 (ulnar artery) 10·11회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 자쪽되돌이동맥 (ulnar recurrent artery) 위에 서 내려오는 자쪽곁동맥 (ulnar collateral artery) 온뼈사이동맥 (common interosseous artery) 아래팔 먼쪽 절반에서 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 분류: region=upper limb (conf 0.83) · layers=['deep', 'superficial'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔앞칸의-신경",
@@ -5713,12 +5738,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위팔앞칸의 신경",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-02-위팔앞칸의-신경.md",
    "snippet": "구조물 용어 (3개) 정중신경 (median nerve) 팔오금까지 추적 위팔동맥 (brachial artery) 자신경 (ulnar nerve) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(",
-   "text": "Anatomy 위팔앞칸의 신경 7·9·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 정중신경 (median nerve) 팔오금까지 추적 위팔동맥 (brachial artery) 자신경 (ulnar nerve) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔앞칸의 신경 7·9·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 정중신경 (median nerve) 팔오금까지 추적 위팔동맥 (brachial artery) 자신경 (ulnar nerve) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['artery', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔앞칸의-근육",
@@ -5727,12 +5752,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위팔앞칸의 근육",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-01-위팔앞칸의-근육.md",
    "snippet": "구조물 용어 (5개) 팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면 (radial tuberosity) 결절사이고랑 (intertubercular groove) 지나 위로올라가 접시위결절 (supraglenoid tubercle) 위팔두갈래근널힘줄 (bicipital aponeurosis) 부리위팔근 (coracobrachialis muscle) 분류: region=upper limb (conf 0.92) · layers=['de",
-   "text": "Anatomy 위팔앞칸의 근육 7·9·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면 (radial tuberosity) 결절사이고랑 (intertubercular groove) 지나 위로올라가 접시위결절 (supraglenoid tubercle) 위팔두갈래근널힘줄 (bicipital aponeurosis) 부리위팔근 (coracobrachialis muscle) 분류: region=upper limb (conf 0.92) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔앞칸의 근육 7·9·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 팔오금에서 굵은힘줄 되어 가쪽노 뼈 거친면 (radial tuberosity) 결절사이고랑 (intertubercular groove) 지나 위로올라가 접시위결절 (supraglenoid tubercle) 위팔두갈래근널힘줄 (bicipital aponeurosis) 부리위팔근 (coracobrachialis muscle) 분류: region=upper limb (conf 0.92) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔동맥-노동맥",
@@ -5741,12 +5766,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위팔동맥, 노동맥",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-06-위팔동맥-노동맥.md",
    "snippet": "구조물 용어 (8개) 위팔동맥 (brachial artery) 팔오금에서 가쪽 노동맥 (radial artery) 와 안쪽깊은곳의 자동맥 (ulnar artery) 노쪽되돌이동맥 (radial recurrent artery) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 ",
-   "text": "Anatomy 위팔동맥, 노동맥 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 위팔동맥 (brachial artery) 팔오금에서 가쪽 노동맥 (radial artery) 와 안쪽깊은곳의 자동맥 (ulnar artery) 노쪽되돌이동맥 (radial recurrent artery) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 위팔자갈래 (humeroulnar head) 노뼈몸통앞선의 빗선에서 일어나는 노갈래 (radial head) 분류: region=upper limb (conf 0.77) · layers=['deep', 'superficial'] · classes=['artery', 'bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔동맥, 노동맥 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (8개) 위팔동맥 (brachial artery) 팔오금에서 가쪽 노동맥 (radial artery) 와 안쪽깊은곳의 자동맥 (ulnar artery) 노쪽되돌이동맥 (radial recurrent artery) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 위팔뼈 안쪽위관절융기와 갈고리돌기에서 일어나는 위팔자갈래 (humeroulnar head) 노뼈몸통앞선의 빗선에서 일어나는 노갈래 (radial head) 분류: region=upper limb (conf 0.77) · layers=['deep', 'superficial'] · classes=['artery', 'bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-위팔동맥",
@@ -5755,12 +5780,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "위팔동맥",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-03-위팔동맥.md",
    "snippet": "구조물 용어 (5개) 안쪽두갈래근고랑 (medial bicipital groove) 동반정맥 (vena comitans) 깊은위팔동맥 (deep brachial artery) 자쪽곁동맥 (ulnar collateral artery) 위팔두갈래근널힘줄 (bicipital aponeurosis) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['artery', 'mu",
-   "text": "Anatomy 위팔동맥 9·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 안쪽두갈래근고랑 (medial bicipital groove) 동반정맥 (vena comitans) 깊은위팔동맥 (deep brachial artery) 자쪽곁동맥 (ulnar collateral artery) 위팔두갈래근널힘줄 (bicipital aponeurosis) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['artery', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 위팔동맥 9·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 안쪽두갈래근고랑 (medial bicipital groove) 동반정맥 (vena comitans) 깊은위팔동맥 (deep brachial artery) 자쪽곁동맥 (ulnar collateral artery) 위팔두갈래근널힘줄 (bicipital aponeurosis) 분류: region=upper limb (conf 0.93) · layers=['deep'] · classes=['artery', 'muscle', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-엄지두덩근육-thenar-muscle-",
@@ -5769,12 +5794,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "엄지두덩근육 (thenar muscle)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-19-엄지두덩근육-thenar-muscle.md",
    "snippet": "구조물 용어 (3개) 짧은엄지벌림근 (abductor pollicis brevis muscle) 짧은엄지굽힘근 (flexor pollicis brevis muscle) 엄지맞섬근 (opponens pollicis muscle) 분류: region=abdomen (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 엄지두덩근육 (thenar muscle) 배 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 짧은엄지벌림근 (abductor pollicis brevis muscle) 짧은엄지굽힘근 (flexor pollicis brevis muscle) 엄지맞섬근 (opponens pollicis muscle) 분류: region=abdomen (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엄지두덩근육 (thenar muscle) 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 짧은엄지벌림근 (abductor pollicis brevis muscle) 짧은엄지굽힘근 (flexor pollicis brevis muscle) 엄지맞섬근 (opponens pollicis muscle) 분류: region=abdomen (conf 1.0) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-얕은근막",
@@ -5783,12 +5808,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "얕은근막",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-24-얕은근막.md",
    "snippet": "구조물 용어 (19개) 얕은배벽정맥 (superficial epigastric vein) 얕은엉덩휘돌이정맥 (superifcial circumflex iliac vein) 배꼽옆정맥 (paraumbilical vein) 가슴배벽정맥 (thoracoepigastric vein) 가슴배신경 (thoracoabdominal nerve) 일곱째에서 열한째갈비신경과 갈비밑신경 (subcostal nerve) 정도 되는 곳에서 위에서 아",
-   "text": "Anatomy 얕은근막 1·2·6·9·10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (19개) 얕은배벽정맥 (superficial epigastric vein) 얕은엉덩휘돌이정맥 (superifcial circumflex iliac vein) 배꼽옆정맥 (paraumbilical vein) 가슴배벽정맥 (thoracoepigastric vein) 가슴배신경 (thoracoabdominal nerve) 일곱째에서 열한째갈비신경과 갈비밑신경 (subcostal nerve) 정도 되는 곳에서 위에서 아래로 연속적으로 배곧은근집 (rectus sheath) 뚫고나옴 가쪽배피부가지는 중간겨드랑선 (midaxillary line) 근처에서 얕은근막으로 나옴 앞배벽아랫부분에서 얕은근막 (superficial investing fascia) 남자에서 두덩뼈결절 안쪽에서 아래쪽으로 음낭근육층 (dartos tunic) 표면 덮고 계속되며 음경에서는 음경고리인대 (fundiform ligament of penis) 와 얕은음경근막 (superficial fascia of penis) 얕은근막 자르고 아래가쪽 고샅인대방향 젖히면 배바깥빗근 (external abdominal oblique muscle) 과 배곧은근집 (rectus sheath) 드러남 젖히고보면 얕은고샅구멍 (superficial inguinal ring) 정삭 (spermatic cord) 자궁원인대 (round ligament of uterus) 에는 근막 덮여있지 않음 배벽아래부분에서 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 분류: region=abdomen (conf 0.59) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['foramen', 'ligament', 'muscle', 'nerve', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 얕은근막 1·2·6·9·10회차 · 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (19개) 얕은배벽정맥 (superficial epigastric vein) 얕은엉덩휘돌이정맥 (superifcial circumflex iliac vein) 배꼽옆정맥 (paraumbilical vein) 가슴배벽정맥 (thoracoepigastric vein) 가슴배신경 (thoracoabdominal nerve) 일곱째에서 열한째갈비신경과 갈비밑신경 (subcostal nerve) 정도 되는 곳에서 위에서 아래로 연속적으로 배곧은근집 (rectus sheath) 뚫고나옴 가쪽배피부가지는 중간겨드랑선 (midaxillary line) 근처에서 얕은근막으로 나옴 앞배벽아랫부분에서 얕은근막 (superficial investing fascia) 남자에서 두덩뼈결절 안쪽에서 아래쪽으로 음낭근육층 (dartos tunic) 표면 덮고 계속되며 음경에서는 음경고리인대 (fundiform ligament of penis) 와 얕은음경근막 (superficial fascia of penis) 얕은근막 자르고 아래가쪽 고샅인대방향 젖히면 배바깥빗근 (external abdominal oblique muscle) 과 배곧은근집 (rectus sheath) 드러남 젖히고보면 얕은고샅구멍 (superficial inguinal ring) 정삭 (spermatic cord) 자궁원인대 (round ligament of uterus) 에는 근막 덮여있지 않음 배벽아래부분에서 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 분류: region=abdomen (conf 0.59) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes=['foramen', 'ligament', 'muscle', 'nerve', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-앞배벽속면-구조물",
@@ -5797,12 +5822,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "앞배벽속면 구조물",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-29-앞배벽속면-구조물.md",
    "snippet": "구조물 용어 (9개) 정중배꼽주름 (median umbilical fold) 두덩결합에서 배꼽까지 정중선에 있는 복막주름 (peritoneal fold) 안쪽배꼽주름 (medial umbilical fold) 가쪽배꼽주름 (lateral umbilical fold) 방광위오목 (supravesical fossa) 안쪽고샅오목 (medial inguinal fossa) 가쪽고샅오목 (lateral inguinal fossa) 깊",
-   "text": "Anatomy 앞배벽속면 구조물 배 10차시(0918) 허미선pf.pdf 구조물 용어 (9개) 정중배꼽주름 (median umbilical fold) 두덩결합에서 배꼽까지 정중선에 있는 복막주름 (peritoneal fold) 안쪽배꼽주름 (medial umbilical fold) 가쪽배꼽주름 (lateral umbilical fold) 방광위오목 (supravesical fossa) 안쪽고샅오목 (medial inguinal fossa) 가쪽고샅오목 (lateral inguinal fossa) 깊은고샅구멍 (deep inguinal ring) 되도록 복막과 복막바깥근막 (extraperitoneal fascia) 분류: region=abdomen (conf 0.84) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 앞배벽속면 구조물 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (9개) 정중배꼽주름 (median umbilical fold) 두덩결합에서 배꼽까지 정중선에 있는 복막주름 (peritoneal fold) 안쪽배꼽주름 (medial umbilical fold) 가쪽배꼽주름 (lateral umbilical fold) 방광위오목 (supravesical fossa) 안쪽고샅오목 (medial inguinal fossa) 가쪽고샅오목 (lateral inguinal fossa) 깊은고샅구멍 (deep inguinal ring) 되도록 복막과 복막바깥근막 (extraperitoneal fascia) 분류: region=abdomen (conf 0.84) · layers=['cavity visceral', 'deep'] · classes=['foramen', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔앞칸의-깊은층-근육",
@@ -5811,12 +5836,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔앞칸의 깊은층 근육",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-10-아래팔앞칸의-깊은층-근육.md",
    "snippet": "구조물 용어 (4개) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 긴엄지굽힘근 (flexor pollicis longus muscle) 깊은손가락굽힘근 (flexor digitorum profundus muscle) 네모엎침근 (pronator quadratus muscle) 분류: region=upper limb (conf 0.87) · layers=['deep', 'superfic",
-   "text": "Anatomy 아래팔앞칸의 깊은층 근육 6·7회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 긴엄지굽힘근 (flexor pollicis longus muscle) 깊은손가락굽힘근 (flexor digitorum profundus muscle) 네모엎침근 (pronator quadratus muscle) 분류: region=upper limb (conf 0.87) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔앞칸의 깊은층 근육 6·7회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 얕은손가락굽힘근 (flexor digitorum superficialis muscle) 긴엄지굽힘근 (flexor pollicis longus muscle) 깊은손가락굽힘근 (flexor digitorum profundus muscle) 네모엎침근 (pronator quadratus muscle) 분류: region=upper limb (conf 0.87) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔뒤칸의-얕은층-근육",
@@ -5825,12 +5850,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 얕은층 근육",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-11-아래팔뒤칸의-얕은층-근육.md",
    "snippet": "구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris ",
-   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 얕은층 근육 10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 위팔노근 (brachiradialis muscle) 긴노쪽손목폄근 (extensor carpi radialis longus muscle) 짧은노쪽손목폄근 (extensor carpi radialis brevis muscle) 손가락폄근 (extensor digitorum muscle) 새끼폄근 (extensor digiti minimi muscle) 자쪽손목폄근 (extensor carpi ulnaris muscle) 팔꿈치근 (anconeus muscle) 분류: region=upper limb (conf 0.83) · layers=['deep'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔뒤칸의-깊은층-노출",
@@ -5839,12 +5864,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔뒤칸의 깊은층 노출",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-13-아래팔뒤칸의-깊은층-노출.md",
    "snippet": "구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔뒤칸의 깊은층 노출 11회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 폄근지지띠 (extensor retinaculum) 힘줄윤활집 (synovial tendon sheath) 분류: region=upper limb (conf 0.75) · layers= · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-아래팔-앞칸의-얕은층-근육",
@@ -5853,12 +5878,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "아래팔 앞칸의 얕은층 근육",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-05-아래팔-앞칸의-얕은층-근육.md",
    "snippet": "구조물 용어 (6개) 원엎침근 (pronator teres muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 긴손바닥근 (palmaris longus muscle) 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 에 붙어있는 널힘줄에서 일 어나 콩알뼈 (pisiform) 갈고리뼈 (hamate) 분류: region=upper limb (conf 0.79) · layers=[",
-   "text": "Anatomy 아래팔 앞칸의 얕은층 근육 2·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 원엎침근 (pronator teres muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 긴손바닥근 (palmaris longus muscle) 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 에 붙어있는 널힘줄에서 일 어나 콩알뼈 (pisiform) 갈고리뼈 (hamate) 분류: region=upper limb (conf 0.79) · layers=['superficial'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 아래팔 앞칸의 얕은층 근육 2·10·11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 원엎침근 (pronator teres muscle) 노쪽손목굽힘근 (flexor carpi radialis muscle) 긴손바닥근 (palmaris longus muscle) 자쪽손목굽힘근 (flexor carpi ulnaris muscle) 에 붙어있는 널힘줄에서 일 어나 콩알뼈 (pisiform) 갈고리뼈 (hamate) 분류: region=upper limb (conf 0.79) · layers=['superficial'] · classes=['bone', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손바닥널힘줄-palmar-aponeurosis-",
@@ -5867,12 +5892,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손바닥널힘줄 (palmar aponeurosis)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-16-손바닥널힘줄-palmar-aponeurosi.md",
    "snippet": "구조물 용어 (3개) 엄지두덩근막 (thenar fascia) 짧은손바닥근 (palmaris brevis muscle) 바닥쪽손목인대 (palmar carpal ligament) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'superficial'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .p",
-   "text": "Anatomy 손바닥널힘줄 (palmar aponeurosis) 10회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 엄지두덩근막 (thenar fascia) 짧은손바닥근 (palmaris brevis muscle) 바닥쪽손목인대 (palmar carpal ligament) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'superficial'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손바닥널힘줄 (palmar aponeurosis) 10회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 엄지두덩근막 (thenar fascia) 짧은손바닥근 (palmaris brevis muscle) 바닥쪽손목인대 (palmar carpal ligament) 분류: region=upper limb (conf 0.88) · layers=['deep', 'deep fascia', 'superficial'] · classes=['ligament', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손바닥깊은곳",
@@ -5881,12 +5906,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손바닥깊은곳",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-22-손바닥깊은곳.md",
    "snippet": "구조물 용어 (4개) 깊은손바닥동맥활 (deep palmar arch) 바닥쪽뼈사이근 (palmar interossei muscle) 엄지모음근 (adductor pollicis muscle) 등쪽뼈사이근 (dorsal interossei muscle) 분류: region=upper limb (conf 0.76) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다",
-   "text": "Anatomy 손바닥깊은곳 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (4개) 깊은손바닥동맥활 (deep palmar arch) 바닥쪽뼈사이근 (palmar interossei muscle) 엄지모음근 (adductor pollicis muscle) 등쪽뼈사이근 (dorsal interossei muscle) 분류: region=upper limb (conf 0.76) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손바닥깊은곳 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 깊은손바닥동맥활 (deep palmar arch) 바닥쪽뼈사이근 (palmar interossei muscle) 엄지모음근 (adductor pollicis muscle) 등쪽뼈사이근 (dorsal interossei muscle) 분류: region=upper limb (conf 0.76) · layers=['deep'] · classes=['artery', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손바닥-얕은곳의-혈관과-신경",
@@ -5895,12 +5920,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손바닥 얕은곳의 혈관과 신경",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-17-손바닥-얕은곳의-혈관과-신경.md",
    "snippet": "구조물 용어 (6개) 바닥쪽손목인대 (palmar carpal ligament) 안쪽으로 주행하여 새끼두덩근육들 (hypothenar muscle) 얕은손바닥동맥활 (superficial palmar arch) 고유바닥쪽손가락동맥 (prper palmar digital artery) 온바닥쪽손가락동맥 (common palmar digital artery) 온바닥쪽손가락신경 (common palmar digital nerve) ",
-   "text": "Anatomy 손바닥 얕은곳의 혈관과 신경 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (6개) 바닥쪽손목인대 (palmar carpal ligament) 안쪽으로 주행하여 새끼두덩근육들 (hypothenar muscle) 얕은손바닥동맥활 (superficial palmar arch) 고유바닥쪽손가락동맥 (prper palmar digital artery) 온바닥쪽손가락동맥 (common palmar digital artery) 온바닥쪽손가락신경 (common palmar digital nerve) 분류: region=upper limb (conf 0.85) · layers=['deep', 'superficial'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손바닥 얕은곳의 혈관과 신경 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (6개) 바닥쪽손목인대 (palmar carpal ligament) 안쪽으로 주행하여 새끼두덩근육들 (hypothenar muscle) 얕은손바닥동맥활 (superficial palmar arch) 고유바닥쪽손가락동맥 (prper palmar digital artery) 온바닥쪽손가락동맥 (common palmar digital artery) 온바닥쪽손가락신경 (common palmar digital nerve) 분류: region=upper limb (conf 0.85) · layers=['deep', 'superficial'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손목굴-carpal-tunnel-",
@@ -5909,12 +5934,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손목굴 (carpal tunnel)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-18-손목굴-carpal-tunnel.md",
    "snippet": "구조물 용어 (8개) 손배뼈 (scaphoid) 큰마름뼈 (trapezium) 콩알뼈 (pisiform) 갈고리뼈갈고리 (hook of hamate) 정중신경 (median nerve) 자신경굴 (ulnar canal) 온바닥쪽손가락신경 (common palmarl digital nerve) 되돌이가지 (recurrent branch) 분류: region=upper limb (conf 0.73) · layers=['deep',",
-   "text": "Anatomy 손목굴 (carpal tunnel) 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 손배뼈 (scaphoid) 큰마름뼈 (trapezium) 콩알뼈 (pisiform) 갈고리뼈갈고리 (hook of hamate) 정중신경 (median nerve) 자신경굴 (ulnar canal) 온바닥쪽손가락신경 (common palmarl digital nerve) 되돌이가지 (recurrent branch) 분류: region=upper limb (conf 0.73) · layers=['deep', 'superficial'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손목굴 (carpal tunnel) 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (8개) 손배뼈 (scaphoid) 큰마름뼈 (trapezium) 콩알뼈 (pisiform) 갈고리뼈갈고리 (hook of hamate) 정중신경 (median nerve) 자신경굴 (ulnar canal) 온바닥쪽손가락신경 (common palmarl digital nerve) 되돌이가지 (recurrent branch) 분류: region=upper limb (conf 0.73) · layers=['deep', 'superficial'] · classes=['bone', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손가락폄근의-힘줄",
@@ -5923,12 +5948,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손가락폄근의 힘줄",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-12-손가락폄근의-힘줄.md",
    "snippet": "구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손가락폄근의 힘줄 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손가락폄근의 힘줄 9회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (2개) 힘줄사이연결 (intertendinous connection) 폄근널힘줄 (extensor expansion) 분류: region=upper limb (conf 0.5) · layers=['skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-손가락굽힘근힘줄과-벌레근",
@@ -5937,12 +5962,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "손가락굽힘근힘줄과 벌레근",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-21-손가락굽힘근힘줄과-벌레근.md",
    "snippet": "구조물 용어 (3개) 손가락굽힘근온힘줄집 (common flexor sheat) 벌레근 (lumbrical muscle) 힘줄끈 (vincula tendinum) 분류: region=upper limb (conf 0.86) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 손가락굽힘근힘줄과 벌레근 11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (3개) 손가락굽힘근온힘줄집 (common flexor sheat) 벌레근 (lumbrical muscle) 힘줄끈 (vincula tendinum) 분류: region=upper limb (conf 0.86) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 손가락굽힘근힘줄과 벌레근 11·14·15회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (3개) 손가락굽힘근온힘줄집 (common flexor sheat) 벌레근 (lumbrical muscle) 힘줄끈 (vincula tendinum) 분류: region=upper limb (conf 0.86) · layers=['deep', 'superficial'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-새끼두덩근육-자신경의-깊은가지-분포",
@@ -5951,12 +5976,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "새끼두덩근육 : 자신경의 깊은가지 분포",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-20-새끼두덩근육-자신경의-깊은가지-분포.md",
    "snippet": "구조물 용어 (8개) 새끼벌림근 (abductor digiti minimi muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis msucle) 새끼맞섬근 (opponens digiti minimi muscle) 손가락섬유집 (fibrous sheaths of digits of hand) 고리부분 (anular part) 가로섬유 (transverse fiber) 십자부분 (cruciform part)",
-   "text": "Anatomy 새끼두덩근육 : 자신경의 깊은가지 분포 9회차 · 팔 10차시(0918) 허미선pf.pdf 구조물 용어 (8개) 새끼벌림근 (abductor digiti minimi muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis msucle) 새끼맞섬근 (opponens digiti minimi muscle) 손가락섬유집 (fibrous sheaths of digits of hand) 고리부분 (anular part) 가로섬유 (transverse fiber) 십자부분 (cruciform part) 십자섬유 (cruciate fiber) 분류: region=upper limb (conf 0.86) · layers=['deep', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 새끼두덩근육 : 자신경의 깊은가지 분포 9회차 · 팔 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (8개) 새끼벌림근 (abductor digiti minimi muscle) 짧은새끼굽힘근 (flexor digiti minimi brevis msucle) 새끼맞섬근 (opponens digiti minimi muscle) 손가락섬유집 (fibrous sheaths of digits of hand) 고리부분 (anular part) 가로섬유 (transverse fiber) 십자부분 (cruciform part) 십자섬유 (cruciate fiber) 분류: region=upper limb (conf 0.86) · layers=['deep', 'skin', 'superficial', 'superficial fascia'] · classes=['muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-사분역과-부위",
@@ -5965,12 +5990,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "사분역과 부위",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-23-사분역과-부위.md",
    "snippet": "구조물 용어 (12개) 양쪽 열째갈비연골 아랫면 연결하는 갈비밑면 (subcostal plane) 양쪽엉덩뼈결절 사이 연결하는 결절사이면 (intertubercular plane) 빗장뼈 중간 지나는 양쪽빗장중간선 (midclavicular line) 오른갈비밑부위 (right hypochondrium) 명치부위 (epigastric region) 왼갈비밑부위 (left hypochondrium) 오른옆구리부위 (right f",
-   "text": "Anatomy 사분역과 부위 배 10차시(0918) 허미선pf.pdf 구조물 용어 (12개) 양쪽 열째갈비연골 아랫면 연결하는 갈비밑면 (subcostal plane) 양쪽엉덩뼈결절 사이 연결하는 결절사이면 (intertubercular plane) 빗장뼈 중간 지나는 양쪽빗장중간선 (midclavicular line) 오른갈비밑부위 (right hypochondrium) 명치부위 (epigastric region) 왼갈비밑부위 (left hypochondrium) 오른옆구리부위 (right flank) 배꼽부위 (umbilical region) 왼옆구리부위 (left flank) 오른고샅부위 (right inguinal region) 두덩부위 (public region) 왼고샅부위 (left inguinal region) 분류: region=abdomen (conf 0.53) · layers= · classes=['bone'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 사분역과 부위 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (12개) 양쪽 열째갈비연골 아랫면 연결하는 갈비밑면 (subcostal plane) 양쪽엉덩뼈결절 사이 연결하는 결절사이면 (intertubercular plane) 빗장뼈 중간 지나는 양쪽빗장중간선 (midclavicular line) 오른갈비밑부위 (right hypochondrium) 명치부위 (epigastric region) 왼갈비밑부위 (left hypochondrium) 오른옆구리부위 (right flank) 배꼽부위 (umbilical region) 왼옆구리부위 (left flank) 오른고샅부위 (right inguinal region) 두덩부위 (public region) 왼고샅부위 (left inguinal region) 분류: region=abdomen (conf 0.53) · layers= · classes=['bone'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배속빗근-internal-abdominal-obliqu",
@@ -5979,12 +6004,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "배속빗근 (internal abdominal oblique muscle)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-27-배속빗근-internal-abdominal-.md",
    "snippet": "구조물 용어 (5개) 이 섬유들이 두덩뼈빗 (pecten pubis) 정삭 (spermatic cord) 고환올림근막 (cremasteric fascia) 고환올림근 (cremaster muscle) 엉덩고샅신경 (inguinal nerve) 분류: region=abdomen (conf 0.8) · layers= · classes=['bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .pr",
-   "text": "Anatomy 배속빗근 (internal abdominal oblique muscle) 10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 이 섬유들이 두덩뼈빗 (pecten pubis) 정삭 (spermatic cord) 고환올림근막 (cremasteric fascia) 고환올림근 (cremaster muscle) 엉덩고샅신경 (inguinal nerve) 분류: region=abdomen (conf 0.8) · layers= · classes=['bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배속빗근 (internal abdominal oblique muscle) 10회차 · 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 이 섬유들이 두덩뼈빗 (pecten pubis) 정삭 (spermatic cord) 고환올림근막 (cremasteric fascia) 고환올림근 (cremaster muscle) 엉덩고샅신경 (inguinal nerve) 분류: region=abdomen (conf 0.8) · layers= · classes=['bone', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배바깥빗근-고샅구멍",
@@ -5993,12 +6018,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "배바깥빗근, 고샅구멍",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-26-배바깥빗근-고샅구멍.md",
    "snippet": "구조물 용어 (5개) 얕은고샅구멍 (superficial inguinal ring) 에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관 (inguinal canal) 가쪽다리 (lateral crus) 다리사이섬유 (intercrural fiber) 근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근 (external abdominal oblique muscle) 분류: region=abdomen (conf 0.59)",
-   "text": "Anatomy 배바깥빗근, 고샅구멍 1·10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (5개) 얕은고샅구멍 (superficial inguinal ring) 에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관 (inguinal canal) 가쪽다리 (lateral crus) 다리사이섬유 (intercrural fiber) 근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근 (external abdominal oblique muscle) 분류: region=abdomen (conf 0.59) · layers=['superficial'] · classes=['foramen', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배바깥빗근, 고샅구멍 1·10회차 · 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (5개) 얕은고샅구멍 (superficial inguinal ring) 에 위치하는 배바깥빗근 널힘줄에 의해 형성된 구멍 고샅관 (inguinal canal) 가쪽다리 (lateral crus) 다리사이섬유 (intercrural fiber) 근육 얇고 근육사이 얇은근막뿐이므로 주의하기 배바깥빗근 (external abdominal oblique muscle) 분류: region=abdomen (conf 0.59) · layers=['superficial'] · classes=['foramen', 'muscle'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배곧은근-배곧은집",
@@ -6007,12 +6032,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "배곧은근, 배곧은집",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-25-배곧은근-배곧은집.md",
    "snippet": "구조물 용어 (11개) 백색선 (linea alba) 반달선 (linea semilunaris) 줄과 만나 서로 합쳐져 백색선 되는 것 확인 배곧은근집 (rectus sheath) 배곧은근 나눔힘줄 (tendinous intersection) 배세모근 (pyramidalis muscle) 가슴배신경 (thoracoabdominal nerve) 위배벽동맥 (superior epigastric artery) 아래배벽동맥 (infe",
-   "text": "Anatomy 배곧은근, 배곧은집 배 10차시(0918) 허미선pf.pdf 구조물 용어 (11개) 백색선 (linea alba) 반달선 (linea semilunaris) 줄과 만나 서로 합쳐져 백색선 되는 것 확인 배곧은근집 (rectus sheath) 배곧은근 나눔힘줄 (tendinous intersection) 배세모근 (pyramidalis muscle) 가슴배신경 (thoracoabdominal nerve) 위배벽동맥 (superior epigastric artery) 아래배벽동맥 (inferior epigastric artery) 바깥엉덩동맥 (external iliac artery) 활꼴선 (arcuate line) 고샅인대 (inguinal ligament) 분류: region=abdomen (conf 0.84) · layers=['deep'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배곧은근, 배곧은집 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (11개) 백색선 (linea alba) 반달선 (linea semilunaris) 줄과 만나 서로 합쳐져 백색선 되는 것 확인 배곧은근집 (rectus sheath) 배곧은근 나눔힘줄 (tendinous intersection) 배세모근 (pyramidalis muscle) 가슴배신경 (thoracoabdominal nerve) 위배벽동맥 (superior epigastric artery) 아래배벽동맥 (inferior epigastric artery) 바깥엉덩동맥 (external iliac artery) 활꼴선 (arcuate line) 고샅인대 (inguinal ligament) 분류: region=abdomen (conf 0.84) · layers=['deep'] · classes=['artery', 'ligament', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-배가로근-transversus-abdominis-mus",
@@ -6021,12 +6046,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "배가로근 (transversus abdominis muscle)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-28-배가로근-transversus-abdomin.md",
    "snippet": "구조물 용어 (9개) 좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경 (intercostal nerve) 가슴배신경 (thoracoabdominal nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 깊은엉덩휘돌이동맥 (deep circumflex iliac artery) 배속빗근 널힘줄과 합쳐져 고샅낫힘줄 (",
-   "text": "Anatomy 배가로근 (transversus abdominis muscle) 배 10차시(0918) 허미선pf.pdf 구조물 용어 (9개) 좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경 (intercostal nerve) 가슴배신경 (thoracoabdominal nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 깊은엉덩휘돌이동맥 (deep circumflex iliac artery) 배속빗근 널힘줄과 합쳐져 고샅낫힘줄 (inguinal falx) 결합힘줄 (conjoint tendon) 배가로근막 (transversalis fascia) 분류: region=abdomen (conf 0.82) · layers=['cavity visceral', 'deep', 'superficial'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 배가로근 (transversus abdominis muscle) 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (9개) 좁은공간에서 배속빗근 속면 지나는 아래쪽 갈 비사이신경 (intercostal nerve) 가슴배신경 (thoracoabdominal nerve) 갈비밑신경 (subcostal nerve) 엉덩아랫배신경 (iliohypogastric nerve) 엉덩고샅신경 (ilioinguinal nerve) 깊은엉덩휘돌이동맥 (deep circumflex iliac artery) 배속빗근 널힘줄과 합쳐져 고샅낫힘줄 (inguinal falx) 결합힘줄 (conjoint tendon) 배가로근막 (transversalis fascia) 분류: region=abdomen (conf 0.82) · layers=['cavity visceral', 'deep', 'superficial'] · classes=['artery', 'muscle', 'nerve'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-고환-testis-",
@@ -6035,12 +6060,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "고환 (testis)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-32-고환-testis.md",
    "snippet": "구조물 용어 (7개) 음낭사이막 (septum of scrotum) 고환집막 (tunica vaginalis) 고환집막공간 (cavum of tunica vaginalis) 고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막 (fibrous capsule) 백색막 (tunica albuginea) 정세관 (seminiferous tubule) 고환날세관 (efferent ductule of testis) 분류: region=p",
-   "text": "Anatomy 고환 (testis) 골반·회음 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 음낭사이막 (septum of scrotum) 고환집막 (tunica vaginalis) 고환집막공간 (cavum of tunica vaginalis) 고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막 (fibrous capsule) 백색막 (tunica albuginea) 정세관 (seminiferous tubule) 고환날세관 (efferent ductule of testis) 분류: region=pelvis perineum (conf 0.36) · layers=['cavity visceral'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고환 (testis) 골반·회음 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 음낭사이막 (septum of scrotum) 고환집막 (tunica vaginalis) 고환집막공간 (cavum of tunica vaginalis) 고환집막 속면에서 고환전체 둘러싸는 두꺼운 섬유피막 (fibrous capsule) 백색막 (tunica albuginea) 정세관 (seminiferous tubule) 고환날세관 (efferent ductule of testis) 분류: region=pelvis perineum (conf 0.36) · layers=['cavity visceral'] · classes=['duct', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s10-고샅관-inguinal-canal-",
@@ -6049,12 +6074,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "고샅관 (inguinal canal)",
    "tags": [],
-   "source": "10차시(0918) 허미선pf.pdf",
+   "source": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a2-s10/sec-30-고샅관-inguinal-canal.md",
    "snippet": "구조물 용어 (7개) 정관 (ductus deferens) 자궁원인대 (round ligament of uterus) 정맥 (testicular artery) 정삭 (spermatic cord) 고샅낫힘줄 (inguinal falx) 음낭 (scrotum) 덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막 (tunica vaginalis) 분류: region=abdomen (conf 0.67) · layers=['cav",
-   "text": "Anatomy 고샅관 (inguinal canal) 10회차 · 배 10차시(0918) 허미선pf.pdf 구조물 용어 (7개) 정관 (ductus deferens) 자궁원인대 (round ligament of uterus) 정맥 (testicular artery) 정삭 (spermatic cord) 고샅낫힘줄 (inguinal falx) 음낭 (scrotum) 덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막 (tunica vaginalis) 분류: region=abdomen (conf 0.67) · layers=['cavity visceral', 'deep', 'skin'] · classes=['duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 고샅관 (inguinal canal) 10회차 · 배 10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (7개) 정관 (ductus deferens) 자궁원인대 (round ligament of uterus) 정맥 (testicular artery) 정삭 (spermatic cord) 고샅낫힘줄 (inguinal falx) 음낭 (scrotum) 덮는 구조물들이 그대로 연장되어 고환 덮는 막됨 고환집막 (tunica vaginalis) 분류: region=abdomen (conf 0.67) · layers=['cavity visceral', 'deep', 'skin'] · classes=['duct', 'ligament', 'organ', 'vein'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a2-s09-홀정맥계통",
@@ -6567,12 +6592,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "엔정인경우",
    "tags": [],
-   "source": "4회차(0828) 허미선pf.pdf",
+   "source": "4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s04/sec-02-엔정인경우.md",
    "snippet": "구조물 용어 (4개) 젖꼭기 위치 넷째 갈비사이공간 젖꼭지 (nipple) 젖몸통 (body of breast) 젖샘걸어인대 (suspensory ligament ofbreast) 큰가슴근 (pectoralis major muscle) 분류: region=thorax (conf 0.77) · layers=['cavity visceral'] · classes=['ligament', 'muscle', 'organ'] 원문 전문은 ",
-   "text": "Anatomy 엔정인경우 9회차 · 가슴 4회차(0828) 허미선pf.pdf 구조물 용어 (4개) 젖꼭기 위치 넷째 갈비사이공간 젖꼭지 (nipple) 젖몸통 (body of breast) 젖샘걸어인대 (suspensory ligament ofbreast) 큰가슴근 (pectoralis major muscle) 분류: region=thorax (conf 0.77) · layers=['cavity visceral'] · classes=['ligament', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 엔정인경우 9회차 · 가슴 4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (4개) 젖꼭기 위치 넷째 갈비사이공간 젖꼭지 (nipple) 젖몸통 (body of breast) 젖샘걸어인대 (suspensory ligament ofbreast) 큰가슴근 (pectoralis major muscle) 분류: region=thorax (conf 0.77) · layers=['cavity visceral'] · classes=['ligament', 'muscle', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s04-가슴",
@@ -6581,12 +6606,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "가슴",
    "tags": [],
-   "source": "4회차(0828) 허미선pf.pdf",
+   "source": "4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "medium",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s04/sec-01-가슴.md",
    "snippet": "구조물 용어 (34개) 가슴천자 (thoracentesis) 이것은 눈썹주름근 (corrugator supercilii muscle) 눈살금 (procerus muscle) 콧등 (dorsum of nose) 에 세로로 달리는 눈살근 (procerus muscle) 작은광대근 (zygomaticus minor muscle) 위입술올림근 (levator labit superioris muscle) 위입술올림근 (levator l",
-   "text": "Anatomy 가슴 4·6·7회차 · 머리 4회차(0828) 허미선pf.pdf 구조물 용어 (34개) 가슴천자 (thoracentesis) 이것은 눈썹주름근 (corrugator supercilii muscle) 눈살금 (procerus muscle) 콧등 (dorsum of nose) 에 세로로 달리는 눈살근 (procerus muscle) 작은광대근 (zygomaticus minor muscle) 위입술올림근 (levator labit superioris muscle) 위입술올림근 (levator labii superioris muscle) 위입술콧방울올림근 (levator labii superforts alaeque nasi muscle) 위입술콧방울올림근 (levator labii superioris alaeque nasi muscle) 아래입술내림 (depressor labii inferioris muscle) 아래입술내림근 (depressor labii inferioris muscle) 입꼬리당김근 (risorius muscle) 입꼬리당김근 (risorius muscle) 턱끝근 (mentalis muscle) 턱끝근 (mentalis muscle) 입꼬리올림근 (levator anguli oris muscle) 입꼬리올림근 (levator anguli oris muscle) 얼굴신경의 목가지 (cervical branch) 목가지는 여러개 귀밑샘관 (paroid duct) 볼가지 (buacal branch) 택보서리가지 (marginal mandibular branch) 목가지 (cervical branch) 얼굴동맥 (facial artery) 주행방향 얼굴동맥 (facial artery) 이마가지 (frontal branch) 턱끝신경 (mental nerve) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 코중격연골 (septal cartilage) 코중격연골 (septal cartilage) 갈비뼈 (ribs) 복장뼈각 (sternal angle) 복장뼈칼돌기 (xiphoid process) 분류: region=head (conf 0.61) · layers=['deep', 'skin', 'superficial'] · classes=['artery', 'bone', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 가슴 4·6·7회차 · 머리 4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (34개) 가슴천자 (thoracentesis) 이것은 눈썹주름근 (corrugator supercilii muscle) 눈살금 (procerus muscle) 콧등 (dorsum of nose) 에 세로로 달리는 눈살근 (procerus muscle) 작은광대근 (zygomaticus minor muscle) 위입술올림근 (levator labit superioris muscle) 위입술올림근 (levator labii superioris muscle) 위입술콧방울올림근 (levator labii superforts alaeque nasi muscle) 위입술콧방울올림근 (levator labii superioris alaeque nasi muscle) 아래입술내림 (depressor labii inferioris muscle) 아래입술내림근 (depressor labii inferioris muscle) 입꼬리당김근 (risorius muscle) 입꼬리당김근 (risorius muscle) 턱끝근 (mentalis muscle) 턱끝근 (mentalis muscle) 입꼬리올림근 (levator anguli oris muscle) 입꼬리올림근 (levator anguli oris muscle) 얼굴신경의 목가지 (cervical branch) 목가지는 여러개 귀밑샘관 (paroid duct) 볼가지 (buacal branch) 택보서리가지 (marginal mandibular branch) 목가지 (cervical branch) 얼굴동맥 (facial artery) 주행방향 얼굴동맥 (facial artery) 이마가지 (frontal branch) 턱끝신경 (mental nerve) 코뼈 (nasal bone) 큰콧방은연골 (majorcalar carilage) 코중격연골 (septal cartilage) 코중격연골 (septal cartilage) 갈비뼈 (ribs) 복장뼈각 (sternal angle) 복장뼈칼돌기 (xiphoid process) 분류: region=head (conf 0.61) · layers=['deep', 'skin', 'superficial'] · classes=['artery', 'bone', 'muscle', 'nerve', 'organ'] 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s03-본문",
@@ -6595,12 +6620,12 @@ window.MEDKOS_INDEX = {
    "topic": "Anatomy",
    "subtopic": "본문",
    "tags": [],
-   "source": "3회차(0825) 허미선pf.pdf",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "confidence": "low",
    "date": "2026-08-12",
    "path": "content/anatomy/pages/a1-s03/sec-01-본문.md",
    "snippet": "구조물 용어 (0개) 분류: region=lower limb (conf 0.51) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조.",
-   "text": "Anatomy 본문 1·3·6·7·9·14·15회차 · 다리 3회차(0825) 허미선pf.pdf 구조물 용어 (0개) 분류: region=lower limb (conf 0.51) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
+   "text": "Anatomy 본문 1·3·6·7·9·14·15회차 · 다리 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 구조물 용어 (0개) 분류: region=lower limb (conf 0.51) · layers=['deep', 'deep fascia', 'skin', 'superficial', 'superficial fascia'] · classes= 원문 전문은 커밋하지 않는다(저작권) — .private/anatomy/ 참조."
   },
   {
    "id": "anatomy-pg-a1-s02-본문",
@@ -6694,12 +6719,12 @@ window.MEDKOS_INDEX = {
     "3회차",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0020.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 큰뒤머리곧은근 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 큰뒤머리곧은근 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p9 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0019",
@@ -6713,12 +6738,12 @@ window.MEDKOS_INDEX = {
     "3회차",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0019.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 큰뒤통수신경 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 큰뒤통수신경 실사 spotter (복원본) 3회차 · 등 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q0150 p3 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0018",
@@ -6732,12 +6757,12 @@ window.MEDKOS_INDEX = {
     "3회차",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0018.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 온종아리신경 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 온종아리신경 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p8 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0017",
@@ -6751,12 +6776,12 @@ window.MEDKOS_INDEX = {
     "3회차",
     "예습시험"
    ],
-   "source": "3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
+   "source": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처)",
    "confidence": "high",
    "date": "2026-08-12",
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0017.md",
    "snippet": "문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조.",
-   "text": "Anatomy 오금동맥 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
+   "text": "Anatomy 오금동맥 실사 spotter (복원본) 3회차 · 다리 spotter 복원 3회차 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 — 사용자 업로드 스캔 (e-Anatomy 실습영상 캡처) 문제 실사 spotter — 이미지는 .private/anatomy/render/uploads s03/q5183 p1 quiz.png . 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정, 개인 학습용 로컬 열람 전용). 2026 3회차(8/24) 예습시험 대비 풀. 정답 및 해설 정답·해설은 frontmatter 참조."
   },
   {
    "id": "anatomy-2026-0016",

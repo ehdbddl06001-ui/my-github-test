@@ -6,10 +6,10 @@ topic: Anatomy
 subtopic: 위의 혈관분포
 date: '2026-08-12'
 confidence: medium
-source: 11차시(0922) 허미선pf.pdf
+source: 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_id: a2-s11
 source_file_id: 1vTTFerg-qAFnYV0ofiolfcj5RDefrwml
-source_file_name: 11차시(0922) 허미선pf.pdf
+source_file_name: 11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕
 source_page: null
 region: abdomen
 classification_confidence: 1.0

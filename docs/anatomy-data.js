@@ -563,7 +563,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "claude-drawn-svg",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "어깨뼈부위 — 3공간과 통과 구조물"
     }
@@ -632,7 +632,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "다리오금의 혈관 (업로드 스캔 5183 p1)"
     }
@@ -654,7 +654,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "다리오금의 신경 (업로드 스캔 5183 p8)"
     }
@@ -676,7 +676,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "표면해부와 피부벗기기 — 피부신경 (업로드 스캔 0150 p3)"
     }
@@ -698,7 +698,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "뒤통수밑삼각 (업로드 스캔 0150 p9)"
     }
@@ -764,7 +764,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "다리오금의 혈관 — 무릎동맥 5가지 (업로드 스캔 5183 p2)"
     }
@@ -830,7 +830,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "claude-drawn-svg",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "어깨뼈부위 — 3공간과 통과 구조물"
     }
@@ -1702,7 +1702,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "어깨뼈부위 — 네모공간 (업로드 스캔 0150 p35)"
     }
@@ -1724,7 +1724,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "종아리 뒤칸 — 깊은층 오금근 (업로드 스캔 5183 p25)"
     }
@@ -1746,7 +1746,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "종아리 뒤칸 — 깊은층 뒤정강근 (업로드 스캔 5183 p32)"
     }
@@ -1768,7 +1768,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "다리오금 — 경계(아래안쪽모서리) (업로드 스캔 0150 p47)"
     }
@@ -1966,7 +1966,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "claude-drawn-svg",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "다리오금 — 경계·내용물·무릎동맥 / 종아리 뒤칸"
     }
@@ -1988,7 +1988,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "뒤통수밑삼각 — 삼각 바닥의 혈관 (업로드 스캔 0150 p12)"
     }
@@ -2010,7 +2010,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "어깨뼈부위 — 가시위근을 젖힌 어깨뼈패임 (업로드 스캔 0150 p38)"
     }
@@ -2032,7 +2032,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "어깨뼈부위 — 어깨뼈패임 위를 지나는 혈관 (업로드 스캔 0150 p41)"
     }
@@ -2054,7 +2054,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "종아리 뒤칸 — 피부신경 (업로드 스캔 5183 p10)"
     }
@@ -2076,7 +2076,7 @@ window.MEDKOS_ANATOMY = {
    "imageOrigin": "restored-scan",
    "refs": [
     {
-     "file": "3회차(0825) 허미선pf.pdf",
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
      "page": null,
      "section": "종아리 뒤칸 — 얕은층 근육 (업로드 스캔 5183 p13)"
     }
@@ -9611,14 +9611,14 @@ window.MEDKOS_ANATOMY = {
    "session": 2
   },
   {
-   "name": "3회차(0825) 허미선pf.pdf",
+   "name": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "folder": "해부1",
    "status": "text_ingested",
    "pages": null,
    "session": 3
   },
   {
-   "name": "4회차(0828) 허미선pf.pdf",
+   "name": "4회차(0828) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "folder": "해부1",
    "status": "text_ingested",
    "pages": null,
@@ -9660,14 +9660,14 @@ window.MEDKOS_ANATOMY = {
    "session": 9
   },
   {
-   "name": "10차시(0918) 허미선pf.pdf",
+   "name": "10차시(0918) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "folder": "해부2",
    "status": "text_ingested",
    "pages": null,
    "session": 10
   },
   {
-   "name": "11차시(0922) 허미선pf.pdf",
+   "name": "11차시(0922) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "folder": "해부2",
    "status": "text_ingested",
    "pages": null,
@@ -9695,7 +9695,7 @@ window.MEDKOS_ANATOMY = {
    "session": 14
   },
   {
-   "name": "15차시(1013) 허미선pf.pdf",
+   "name": "15차시(1013) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
    "folder": "해부2",
    "status": "text_ingested",
    "pages": null,
