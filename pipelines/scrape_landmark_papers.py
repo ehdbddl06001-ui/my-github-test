@@ -88,6 +88,27 @@ def search_pool(query: str, pool: int, since_year: int | None) -> list[str]:
     return data.get("esearchresult", {}).get("idlist", [])
 
 
+# ── 큰 PMID 목록은 반드시 쪼갠다 ───────────────────────────────────────────
+# efetch·iCite 는 GET 쿼리스트링에 PMID 를 나열한다. 랜드마크는 '수천 회 인용'을 만나려고
+# 풀을 크게 잡으므로(기본 400) 한 번에 붙이면 URI 가 넘친다 — 실측: pool 400 에서 전 주제
+# `HTTP Error 414: Request-URI Too Long`(2026-08-17 CI). 그래서 배치로 나눠 호출한다.
+CHUNK = 150
+
+
+def _chunks(items: list[str], size: int = CHUNK):
+    for i in range(0, len(items), size):
+        yield items[i:i + size]
+
+
+def efetch_all(pmids: list[str]) -> list[dict]:
+    """PMID 목록을 배치로 efetch 해 레코드로 합친다(414 방지)."""
+    out: list[dict] = []
+    for batch in _chunks(pmids):
+        out.extend(parse_articles(efetch(batch)))
+        time.sleep(0.4)  # NCBI 예절
+    return out
+
+
 # ── iCite 인용지표 ─────────────────────────────────────────────────────────
 def _num(v):
     """iCite가 null/문자열로 줄 수 있는 값을 float 또는 None 으로."""
@@ -131,8 +152,7 @@ def icite(pmids: list[str], fixture: str | None = None,
         rows = raw
     else:
         rows = []
-        for i in range(0, len(pmids), 200):
-            batch = pmids[i:i + 200]
+        for batch in _chunks(pmids):
             url = f"{ICITE}?" + urllib.parse.urlencode({"pmids": ",".join(batch), "legacy": "false"})
             rows.extend(json.loads(_get(url)).get("data", []))
             time.sleep(0.3)  # API 예절
@@ -295,7 +315,7 @@ def run(topics: dict[str, str], pool: int, per_topic: int, min_citations: int,
     today = date.today().isoformat()
     saved, skipped = 0, 0
     # 지표 장애 감지용: 후보를 실제로 받아온 주제 수 vs 인용수를 읽어낸 주제 수.
-    topics_with_candidates = topics_with_metrics = 0
+    topics_with_candidates = topics_with_metrics = topics_failed = 0
 
     # 균형 모드: 이번 실행의 전체 예산을 코퍼스 부족분에서 역산한다.
     budget: int | None = None
@@ -322,11 +342,11 @@ def run(topics: dict[str, str], pool: int, per_topic: int, min_citations: int,
                 if not pmids:
                     print(f"[{topic}] 후보 논문 없음")
                     continue
-                recs = parse_articles(efetch(pmids))
-                time.sleep(0.4)  # NCBI 예절
+                recs = efetch_all(pmids)
             metrics = icite([r["pmid"] for r in recs], icite_fixture, debug=debug)
         except Exception as e:  # 네트워크·파싱 실패는 한 주제만 건너뛰고 계속
             print(f"[{topic}] 가져오기 실패: {e}", file=sys.stderr)
+            topics_failed += 1
             continue
 
         topics_with_candidates += 1
@@ -347,6 +367,12 @@ def run(topics: dict[str, str], pool: int, per_topic: int, min_citations: int,
                   f"(지표 확보 {got}편, 최고 인용 {top}회)")
             continue
         ranked_by_topic[topic] = ranked
+
+    # 전 주제가 네트워크·파싱에서 터졌다면 그것도 장애다(0편 성공으로 넘기지 않는다).
+    if topics and topics_failed == len(topics):
+        print(f"\n[치명] {topics_failed}개 주제 전부 가져오기에 실패했다 — "
+              "네트워크·API 형식·URI 길이(414)를 확인하라.", file=sys.stderr)
+        return 1
 
     # 지표를 한 주제도 못 읽었다면 그건 '랜드마크가 없다'가 아니라 장애다 → 빨갛게 실패.
     if topics_with_candidates and not topics_with_metrics:

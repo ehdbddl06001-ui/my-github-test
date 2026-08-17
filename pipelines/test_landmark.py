@@ -90,7 +90,20 @@ def test_balance_deficit() -> None:
         L.corpus_balance = orig
 
 
-# ── 4. 기본값이 '진짜 랜드마크' 급인가 ─────────────────────────────────────
+# ── 4. 큰 풀을 쪼개지 않으면 URI 가 넘친다(414) ────────────────────────────
+def test_pmid_requests_are_chunked() -> None:
+    """pool 400 을 한 URL 에 붙이면 efetch 가 414 로 죽는다(2026-08-17 CI 실측)."""
+    print("test_pmid_requests_are_chunked")
+    pmids = [str(30000000 + i) for i in range(400)]
+    batches = list(L._chunks(pmids))
+    check("400개가 여러 배치로 쪼개진다", len(batches) > 1, f"got {len(batches)}")
+    check("배치 크기가 상한을 넘지 않는다", all(len(b) <= L.CHUNK for b in batches))
+    check("쪼개도 원본이 보존된다", [p for b in batches for p in b] == pmids)
+    longest = max(len(",".join(b)) for b in batches)
+    check("배치 하나의 쿼리 길이가 2000자 미만", longest < 2000, f"got {longest}")
+
+
+# ── 5. 기본값이 '진짜 랜드마크' 급인가 ─────────────────────────────────────
 def test_defaults_are_landmark_grade() -> None:
     """기본 하한선이 낮으면(50회) 평범한 논문이 '꼭 봐야 함' 배지를 달고 올라온다."""
     print("test_defaults_are_landmark_grade")
@@ -107,6 +120,7 @@ def main() -> int:
     test_coverage_detects_metric_outage()
     test_rank_drops_unknown_metrics()
     test_balance_deficit()
+    test_pmid_requests_are_chunked()
     test_defaults_are_landmark_grade()
     print()
     if FAILS:
