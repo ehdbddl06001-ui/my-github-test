@@ -159,9 +159,37 @@ def answer_key(spec: dict) -> list[str]:
 
 
 def _key_names(spec: dict) -> list[str]:
+    return [n for _, n in _numbered(spec)]
+
+
+def _numbered(spec: dict) -> list[tuple[int, str]]:
+    """(핀 번호, 이름) — render(quiz=True) 의 번호 순서와 같다."""
     acc: list[dict] = []
     layout(spec["root"], 0, HEAD_H, acc)
-    return [b["node"].get("kr", "") for b in sorted(acc, key=lambda b: (b["depth"], b["y"]))]
+    boxes = sorted(acc, key=lambda b: (b["depth"], b["y"]))
+    return [(i, b["node"].get("kr", "")) for i, b in enumerate(boxes, 1)]
+
+
+def answer_groups(spec: dict) -> list[tuple[str, list[tuple[int, str]]]]:
+    """퀴즈판 핀을 **뿌리 바로 아래 가지**별로 묶는다.
+
+    큰 트리는 핀이 30개까지 가서 한 문항으로 다 물으면 풀기도 채점도 버겁다.
+    가지별로 쪼개면 문항 수가 늘고 한 문항이 한 계통만 다루게 된다.
+    번호는 전체 기준 그대로라 **같은 퀴즈판 그림 한 장**을 계속 쓴다.
+    """
+    acc: list[dict] = []
+    layout(spec["root"], 0, HEAD_H, acc)
+    boxes = sorted(acc, key=lambda b: (b["depth"], b["y"]))
+    num = {id(b["node"]): i for i, b in enumerate(boxes, 1)}
+
+    def walk(node) -> list[tuple[int, str]]:
+        out = [(num[id(node)], node.get("kr", ""))]
+        for k in node.get("children") or []:
+            out += walk(k)
+        return sorted(out)
+
+    return [(str(k.get("kr", "")), walk(k))
+            for k in (spec["root"].get("children") or [])]
 
 
 def render(spec: dict, quiz: bool = False) -> str:
