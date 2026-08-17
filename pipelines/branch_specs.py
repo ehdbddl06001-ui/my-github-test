@@ -543,6 +543,132 @@ SPECS: dict[str, dict] = {
     ]),
 },
 
+# ── 5회차 (2026-08-31) 가슴안·가슴막·위세로칸·심장 / 관자부위·관자아래부위 ──
+"s05-nerve": {
+    "title": "아래턱신경과 가슴의 신경", "en": "mandibular n. & nerves of the thorax",
+    "subtitle": "5회차 · 관자아래우묵의 V3와, 세로칸을 지나는 미주·가로막신경",
+    "kind": "nerve", "source": "5회차 §관자아래부위 · 위세로칸 · 심장막",
+    "footer": [
+        "V3만 감각+운동 — 씹기근육 넷은 전부 여기서 나온다.",
+        "허파뿌리 기준: 가로막신경은 **앞**, 미주신경은 **뒤** — 세로칸 태깅의 축.",
+    ],
+    "root": _n("5회차의 신경", children=[
+        _n("아래턱신경 V3", "mandibular n.", "타원구멍 → 관자아래우묵", star=True, children=[
+            _n("씹기근육 운동가지", "nn. to mastication",
+               "깨물근·깊은관자·안쪽/가쪽날개근신경", star=True, terminal=True),
+            _n("볼신경", "buccal n.", "**감각** — 볼 점막·피부(볼근 운동은 VII)",
+               star=True, terminal=True),
+            _n("혀신경", "lingual n.", "고실끈신경(VII)을 받아 혀 앞 2/3 미각·침샘",
+               star=True, terminal=True),
+            _n("아래이틀신경", "inferior alveolar n.",
+               "아래턱뼈 속 → **턱끝신경**으로 나온다", star=True, terminal=True),
+            _n("귓바퀴관자신경", "auriculotemporal n.", "중간뇌막동맥을 두 뿌리로 감쌈",
+               terminal=True)]),
+        _n("미주신경 X", "vagus n.", "허파뿌리 **뒤**로 내려간다", star=True, children=[
+            _n("왼되돌이후두신경", "left recurrent laryngeal n.",
+               "**대동맥활**(동맥관인대)을 감아 올라감", star=True, terminal=True),
+            _n("심장가지", "cardiac brr.", "심장신경얼기 — 부교감(느리게)", terminal=True),
+            _n("식도신경얼기", "esophageal plexus", "뒤세로칸으로", terminal=True)]),
+        _n("가로막신경", "phrenic n.", "C3–5 · 허파뿌리 **앞** · 심장막에 붙어 내려감",
+           star=True, children=[
+            _n("가로막 운동", "motor to diaphragm", terminal=True),
+            _n("심장막·세로칸가슴막 감각", "sensory",
+               "연관통이 **어깨끝(C4 피부분절)** 으로 간다", star=True, terminal=True)]),
+        _n("교감신경줄기", "sympathetic trunk", "갈비뼈 목 앞 · 내장신경을 낸다",
+           children=[
+            _n("심장가지", "cardiac brr.", "심장신경얼기 — 교감(빠르게)", terminal=True)]),
+    ]),
+},
+
+"s05-vessel": {
+    "title": "위턱동맥과 심장의 혈관", "en": "maxillary a. & vessels of the heart",
+    "subtitle": "5회차 · 가쪽날개근이 위턱동맥을 3부로 나누고, 심장동맥은 두 개에서 시작한다",
+    "kind": "mixed", "legend_kinds": ["artery", "vein"],
+    "source": "5회차 §관자아래부위 · 위세로칸 · 심장",
+    "footer": [
+        "위턱동맥 3부의 기준은 **가쪽날개근** — 근육이 동맥을 나누는 또 하나의 예.",
+        "우세(dominance)는 **뒤심실사이가지**를 누가 내느냐로 정한다 — 한국인 대부분 오른쪽.",
+    ],
+    "root": _n("5회차의 혈관", children=[
+        _n("위턱동맥", "maxillary a.", "바깥목동맥 종말가지 · 가쪽날개근이 3부로",
+           kind="artery", star=True, children=[
+            _n("1부(아래턱부)", "mandibular part", "뼈로 간다", kind="artery", children=[
+                _n("중간뇌막동맥", "middle meningeal a.",
+                   "가시구멍 → **경막외혈종**", kind="artery", star=True, terminal=True),
+                _n("아래이틀동맥", "inferior alveolar a.", "아래이틀신경 동반",
+                   kind="artery", star=True, terminal=True)]),
+            _n("2부(날개근부)", "pterygoid part", "근육으로 간다", kind="artery", children=[
+                _n("깊은관자·날개근·깨물근·볼동맥", "muscular brr.", kind="artery",
+                   terminal=True)]),
+            _n("3부(날개입천장부)", "pterygopalatine part", "날개위턱틈새를 지나",
+               kind="artery", star=True, children=[
+                _n("눈확아래동맥", "infraorbital a.", kind="artery", terminal=True),
+                _n("나비입천장동맥", "sphenopalatine a.",
+                   "코피(Little 부위)의 주범", kind="artery", star=True, terminal=True)]),
+        ]),
+        _n("위세로칸의 큰 혈관", "great vessels", kind="artery", star=True, children=[
+            _n("대동맥활", "aortic arch", "팔머리·왼온목·왼빗장밑동맥 3가지",
+               kind="artery", star=True, terminal=True),
+            _n("위대정맥", "superior vena cava", "좌우 팔머리정맥이 합쳐",
+               kind="vein", star=True, terminal=True),
+            _n("왼팔머리정맥", "left brachiocephalic v.",
+               "복장뼈 뒤를 **가로질러** 오른쪽으로 — 그래서 더 길다",
+               kind="vein", star=True, terminal=True)]),
+        _n("심장동맥", "coronary aa.", "대동맥판막 바로 위 대동맥굴에서", kind="artery",
+           star=True, children=[
+            _n("왼심장동맥", "left coronary a.", kind="artery", star=True, children=[
+                _n("앞심실사이가지", "ant. interventricular (LAD)",
+                   "심실사이막 앞 2/3 — 막힘이 가장 치명적", kind="artery",
+                   star=True, terminal=True),
+                _n("휘돌이가지", "circumflex br.", "왼모서리가지", kind="artery",
+                   terminal=True)]),
+            _n("오른심장동맥", "right coronary a.", kind="artery", star=True, children=[
+                _n("뒤심실사이가지", "post. interventricular",
+                   "**우세 판정 기준** · 굴심방·방실결절가지", kind="artery",
+                   star=True, terminal=True),
+                _n("오른모서리가지", "right marginal br.", kind="artery", terminal=True)]),
+            _n("심장정맥굴", "coronary sinus", "방실사이고랑 뒤 → 오른심방",
+               kind="vein", star=True, terminal=True)]),
+    ]),
+},
+
+"s05-bundle": {
+    "title": "함께 지나는 것 — 관자아래·세로칸", "en": "neurovascular bundles",
+    "subtitle": "5회차 · 관자아래우묵의 신경–동맥 짝과, 허파뿌리를 앞뒤로 지나는 두 신경",
+    "kind": "mixed", "legend_kinds": ["artery", "vein", "nerve"],
+    "source": "5회차 §관자아래우묵 · 가슴막 · 심장막",
+    "footer": [
+        "관자아래우묵은 '신경과 같은 이름의 동맥' 이 짝을 이룬다 — 아래이틀·깊은관자·볼.",
+        "심장막굴 둘: 가로굴은 **동맥 뒤**, 빗굴은 **오른심방 뒤** — 손가락이 어디까지 들어가나로 외운다.",
+    ],
+    "root": _n("세 자리", children=[
+        _n("관자아래우묵", "infratemporal fossa", "가쪽날개근 주위", star=True, children=[
+            _n("아래이틀신경 + 아래이틀동맥", "inf. alveolar n. & a.",
+               "아래턱구멍으로 함께 들어간다", kind="nerve", star=True, terminal=True),
+            _n("깊은관자신경 + 깊은관자동맥", "deep temporal n. & a.", kind="nerve",
+               terminal=True),
+            _n("귓바퀴관자신경 ↔ 중간뇌막동맥", "auriculotemporal n.",
+               "신경의 **두 뿌리가 동맥을 감싼다**", kind="artery", star=True, terminal=True)]),
+        _n("허파뿌리", "root of lung", "앞뒤로 지나는 두 신경", star=True, children=[
+            _n("가로막신경", "phrenic n.", "허파뿌리 **앞** (Phrenic = Pre)", kind="nerve",
+               star=True, terminal=True),
+            _n("미주신경", "vagus n.", "허파뿌리 **뒤**", kind="nerve", star=True,
+               terminal=True)]),
+        _n("심장막굴", "pericardial sinuses", "손가락이 들어가는 두 틈", star=True, children=[
+            _n("가로심장막굴", "transverse sinus",
+               "오름대동맥·허파동맥 **뒤** — 동맥을 한 번에 묶는 자리", kind="artery",
+               star=True, terminal=True),
+            _n("빗심장막굴", "oblique sinus", "오른심방 뒤·식도 앞 — 막다른 골목",
+               kind="vein", terminal=True)]),
+        _n("가슴막안의 오목", "pleural recesses", "허파가 안 들어차는 여분 공간", children=[
+            _n("갈비가로막오목", "costodiaphragmatic recess",
+               "**가장 깊다** — 가슴막천자·삼출액이 고이는 자리", kind="vein",
+               star=True, terminal=True),
+            _n("갈비세로칸오목", "costomediastinal recess", "왼쪽 심장패임 앞",
+               kind="vein", terminal=True)]),
+    ]),
+},
+
 # ── 7회차 (2026-09-07) 목의 뿌리·인두 / 종아리 가쪽·발목 안쪽면·발바닥 ──────
 "s07-nerve": {
     "title": "목뿌리·발목의 신경", "en": "nerves of the root of neck & ankle",

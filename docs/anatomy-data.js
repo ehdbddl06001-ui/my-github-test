@@ -3268,6 +3268,75 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0151",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 관자아래·세로칸)에서 번호핀 1~14가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 세 자리 / 2. 관자아래우묵 / 3. 허파뿌리 / 4. 심장막굴 / 5. 가슴막안의 오목 / 6. 아래이틀신경 + 아래이틀동맥 / 7. 깊은관자신경 + 깊은관자동맥 / 8. 귓바퀴관자신경 ↔ 중간뇌막동맥 / 9. 가로막신경 / 10. 미주신경 / 11. 가로심장막굴 / 12. 빗심장막굴 / 13. 갈비가로막오목 / 14. 갈비세로칸오목",
+   "explanation": "5회차 · 관자아래우묵의 신경–동맥 짝과, 허파뿌리를 앞뒤로 지나는 두 신경 관자아래우묵은 '신경과 같은 이름의 동맥' 이 짝을 이룬다 — 아래이틀·깊은관자·볼. 심장막굴 둘: 가로굴은 **동맥 뒤**, 빗굴은 **오른심방 뒤** — 손가락이 어디까지 들어가나로 외운다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 관자아래·세로칸"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0152",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(아래턱신경과 가슴의 신경)에서 번호핀 1~16가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 5회차의 신경 / 2. 아래턱신경 V3 / 3. 미주신경 X / 4. 가로막신경 / 5. 교감신경줄기 / 6. 씹기근육 운동가지 / 7. 볼신경 / 8. 혀신경 / 9. 아래이틀신경 / 10. 귓바퀴관자신경 / 11. 왼되돌이후두신경 / 12. 심장가지 / 13. 식도신경얼기 / 14. 가로막 운동 / 15. 심장막·세로칸가슴막 감각 / 16. 심장가지",
+   "explanation": "5회차 · 관자아래우묵의 V3와, 세로칸을 지나는 미주·가로막신경 V3만 감각+운동 — 씹기근육 넷은 전부 여기서 나온다. 허파뿌리 기준: 가로막신경은 **앞**, 미주신경은 **뒤** — 세로칸 태깅의 축. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-nerve",
+     "page": null,
+     "section": "아래턱신경과 가슴의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0153",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(위턱동맥과 심장의 혈관)에서 번호핀 1~22가 가리키는 구조의 이름을 번호 순서대로 답하시오. 위에서 아래로, 왼쪽에서 오른쪽 순으로 매겨져 있다.",
+   "choices": null,
+   "answer": "1. 5회차의 혈관 / 2. 위턱동맥 / 3. 위세로칸의 큰 혈관 / 4. 심장동맥 / 5. 1부(아래턱부) / 6. 2부(날개근부) / 7. 3부(날개입천장부) / 8. 대동맥활 / 9. 위대정맥 / 10. 왼팔머리정맥 / 11. 왼심장동맥 / 12. 오른심장동맥 / 13. 심장정맥굴 / 14. 중간뇌막동맥 / 15. 아래이틀동맥 / 16. 깊은관자·날개근·깨물근·볼동맥 / 17. 눈확아래동맥 / 18. 나비입천장동맥 / 19. 앞심실사이가지 / 20. 휘돌이가지 / 21. 뒤심실사이가지 / 22. 오른모서리가지",
+   "explanation": "5회차 · 가쪽날개근이 위턱동맥을 3부로 나누고, 심장동맥은 두 개에서 시작한다 위턱동맥 3부의 기준은 **가쪽날개근** — 근육이 동맥을 나누는 또 하나의 예. 우세(dominance)는 **뒤심실사이가지**를 누가 내느냐로 정한다 — 한국인 대부분 오른쪽. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "위턱동맥과 심장의 혈관"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -3628,20 +3697,22 @@ window.MEDKOS_ANATOMY = {
    "title": "1회차 서브노트 — 등 · 다리 피부벗기기",
    "subtitle": "층 구조 · 피부신경 · 얕은정맥 표 중심 정리 + 술기(허리천자·꼬리마취)",
    "sections": [
-    "1. 층 구조 — 피부벗기기가 지나는 길",
-    "2. 척수신경 — 앞가지와 뒤가지",
-    "2b. 신경 계보 — 척수신경에서 피부신경까지",
-    "2c. 얕은정맥 계보",
-    "2d. 함께 지나는 것",
-    "3. 볼기·다리 뒤 피부신경",
-    "4. 얕은정맥",
-    "5. 술기 — 허리천자와 꼬리마취",
-    "6. 마무리 체크리스트"
+    "1. 절개선과 피부판 — 칼이 지나는 길",
+    "2. 층 구조 — 피부벗기기가 지나는 길",
+    "3. 척수신경 — 앞가지와 뒤가지",
+    "3b. 신경 계보 — 척수신경에서 피부신경까지",
+    "3c. 얕은정맥 계보",
+    "3d. 함께 지나는 것",
+    "4. 볼기·다리 뒤 피부신경",
+    "5. 얕은정맥",
+    "6. 술기 — 허리천자와 꼬리마취",
+    "7. 마무리 체크리스트"
    ],
    "figs": [
     "diag-back-layers-rami-labeled.svg",
     "diag-lumbar-puncture-labeled.svg",
     "diag-posterior-cutaneous-nerves-labeled.svg",
+    "diag-skin-fascia-layers-labeled.svg",
     "tree-s01-bundle-labeled.svg",
     "tree-s01-nerve-labeled.svg",
     "tree-s01-vessel-labeled.svg"
@@ -3905,6 +3976,74 @@ window.MEDKOS_ANATOMY = {
     }
    ],
    "scanCount": 15
+  },
+  {
+   "id": "anatomy-2026-0150",
+   "session": 5,
+   "title": "5회차 서브노트 — 심장 · 관자아래우묵",
+   "subtitle": "근육·혈관·신경 표 정리 + 계보 트리 + 암기 3종",
+   "sections": [
+    "1. 관자부위·관자아래우묵",
+    "2. 가슴막과 가슴막안",
+    "3. 위세로칸",
+    "4. 심장막",
+    "5. 심장 속면과 판막",
+    "6. 심장동맥",
+    "7. 실사 태깅 문항"
+   ],
+   "figs": [
+    "tree-s05-bundle-labeled.svg",
+    "tree-s05-nerve-labeled.svg",
+    "tree-s05-vessel-labeled.svg"
+   ],
+   "mnemonics": [
+    {
+     "key": "가쪽날개근이 셋으로 나눈다",
+     "full": "위턱동맥 1부(뼈)·2부(근육)·3부(날개입천장)",
+     "note": "겨드랑동맥=작은가슴근, 빗장밑동맥=앞목갈비근과 같은 꼴"
+    },
+    {
+     "key": "1부는 뼈, 2부는 근육, 3부는 얼굴 속",
+     "full": "중간뇌막·아래이틀 / 씹기근육가지 / 눈확아래·나비입천장",
+     "note": "부마다 목적지가 다르다"
+    },
+    {
+     "key": "Phrenic = Pre",
+     "full": "가로막신경은 허파뿌리 **앞**, 미주신경은 **뒤**",
+     "note": "세로칸 태깅의 축"
+    },
+    {
+     "key": "왼쪽이 길다",
+     "full": "왼되돌이후두신경=대동맥활 / 오른쪽=빗장밑동맥",
+     "note": "왼팔머리정맥도 가로질러 와서 더 길다"
+    },
+    {
+     "key": "가로굴은 동맥 뒤, 빗굴은 오른심방 뒤",
+     "full": "가로심장막굴 / 빗심장막굴",
+     "note": "손가락이 어디까지 들어가나로 외운다"
+    },
+    {
+     "key": "갈비가로막오목이 가장 깊다",
+     "full": "가슴막천자·삼출액이 고이는 자리",
+     "note": "허파가 안 들어차는 여분 공간"
+    },
+    {
+     "key": "LAD가 앞 2/3",
+     "full": "앞심실사이가지 = 심실사이막 앞 2/3",
+     "note": "막히면 가장 넓은 경색 — widow maker"
+    },
+    {
+     "key": "우세는 뒤심실사이가지가 정한다",
+     "full": "그 가지를 오른심장동맥이 내면 우세",
+     "note": "한국인 대부분 오른쪽 우세"
+    },
+    {
+     "key": "판막은 왼둘 오른셋",
+     "full": "왼방실판막=승모(2첨) / 오른방실판막=삼첨(3첨)",
+     "note": "반달판막은 좌우 모두 3첨"
+    }
+   ],
+   "scanCount": 0
   },
   {
    "id": "anatomy-2026-0067",
