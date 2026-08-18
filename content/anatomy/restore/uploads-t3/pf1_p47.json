@@ -1,0 +1,71 @@
+{
+ "page": "pf1_p47",
+ "render_dir": "uploads-t3",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t3 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    664,
+    562,
+    706,
+    604
+   ]
+  ],
+  "keep_boxes": [
+   [
+    664,
+    562,
+    706,
+    604
+   ]
+  ],
+  "black_boxes": [
+   [
+    268,
+    872,
+    1360,
+    994
+   ]
+  ],
+  "label_boxes": [
+   [
+    506,
+    606,
+    1126,
+    688
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 858,
+    "y": 790,
+    "to": [
+     688,
+     604
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

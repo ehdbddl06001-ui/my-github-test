@@ -1,0 +1,71 @@
+{
+ "page": "pf1_p48",
+ "render_dir": "uploads-t3",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t3 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    1216,
+    578,
+    1258,
+    618
+   ]
+  ],
+  "keep_boxes": [
+   [
+    1216,
+    578,
+    1258,
+    618
+   ]
+  ],
+  "black_boxes": [
+   [
+    452,
+    874,
+    1216,
+    992
+   ]
+  ],
+  "label_boxes": [
+   [
+    1152,
+    620,
+    1326,
+    698
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 1064,
+    "y": 776,
+    "to": [
+     1236,
+     614
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

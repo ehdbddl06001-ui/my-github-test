@@ -1,0 +1,81 @@
+{
+ "page": "q0150_p38",
+ "render_dir": "uploads-t2",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t2 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    898,
+    488,
+    934,
+    534
+   ]
+  ],
+  "keep_boxes": [
+   [
+    898,
+    488,
+    934,
+    534
+   ]
+  ],
+  "stroke_boxes": [
+   [
+    688,
+    452,
+    866,
+    704
+   ]
+  ],
+  "stroke_drop": 24,
+  "stroke_pad": 3,
+  "label_boxes": [
+   [
+    822,
+    540,
+    1238,
+    600
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 640,
+    "y": 782,
+    "to": [
+     910,
+     518
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ],
+  "black_boxes": [
+   [
+    1000,
+    88,
+    1466,
+    114
+   ]
+  ]
+ }
+}

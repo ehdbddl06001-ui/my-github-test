@@ -1,0 +1,85 @@
+{
+ "page": "F042",
+ "render_dir": "uploads-s04",
+ "session": 4,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-s04 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   275
+  ],
+  "stroke_drop": 26,
+  "stroke_pad": 3,
+  "bright_drop": 20,
+  "bright_pad": 3,
+  "colors": {
+   "red": true
+  },
+  "erase_boxes": [
+   [
+    35,
+    262,
+    336,
+    452
+   ]
+  ],
+  "stroke_boxes": [
+   [
+    974,
+    544,
+    1116,
+    692
+   ],
+   [
+    834,
+    638,
+    1042,
+    694
+   ],
+   [
+    1088,
+    678,
+    1346,
+    844
+   ]
+  ],
+  "black_boxes": [
+   [
+    1198,
+    636,
+    1418,
+    718
+   ],
+   [
+    352,
+    934,
+    1296,
+    994
+   ]
+  ],
+  "pins": [
+   {
+    "x": 1256,
+    "y": 556,
+    "to": [
+     1172,
+     658
+    ],
+    "n": 1
+   }
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "page": "pf1_p7",
+ "render_dir": "uploads-t1",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t1 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    570,
+    294,
+    624,
+    346
+   ]
+  ],
+  "keep_boxes": [
+   [
+    570,
+    294,
+    624,
+    346
+   ]
+  ],
+  "black_boxes": [
+   [
+    608,
+    172,
+    834,
+    238
+   ]
+  ],
+  "label_boxes": [
+   [
+    538,
+    338,
+    818,
+    414
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 470,
+    "y": 300,
+    "to": [
+     580,
+     306
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}
