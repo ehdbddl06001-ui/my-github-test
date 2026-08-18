@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1566,
+  "total": 1578,
   "byType": {
    "usmle": 96,
-   "anatomy": 422,
+   "anatomy": 434,
    "paper": 444,
    "kmle": 587,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 422,
+   "Anatomy": 434,
    "Cardiology": 131,
    "Nephrology": 115,
    "Infectious Disease": 91,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 896,
+   "high": 908,
    "medium": 621,
    "low": 49
   },
-  "tagCount": 2296
+  "tagCount": 2306
  },
  "docs": [
   {
@@ -193,6 +193,258 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-18.md",
    "snippet": "오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-18 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0332",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "속갈비사이근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "속갈비사이근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p21",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0332.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 P p21, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 속갈비사이근 실사 spotter (라벨 블랭크 복원본) 4회차 · 가슴 spotter 복원 4회차 속갈비사이근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p21 문제 실사 spotter — 복원 이미지(4회차 P p21, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0331",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "작은가슴근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "작은가슴근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p17",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0331.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 P p17, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 작은가슴근 실사 spotter (라벨 블랭크 복원본) 4회차 · 가슴 spotter 복원 4회차 작은가슴근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 P p17 문제 실사 spotter — 복원 이미지(4회차 P p17, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0330",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자근 얕은층 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "관자근 얕은층",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p49",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0330.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p49, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 관자근 얕은층 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 관자근 얕은층 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p49 문제 실사 spotter — 복원 이미지(4회차 F p49, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0329",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "눈확아래신경과 눈확아래동맥 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "눈확아래신경과 눈확아래동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p43",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0329.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p43, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 눈확아래신경과 눈확아래동맥 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 눈확아래신경과 눈확아래동맥 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p43 문제 실사 spotter — 복원 이미지(4회차 F p43, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0328",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "귀밑샘 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "귀밑샘",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p32",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0328.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p32, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 귀밑샘 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 귀밑샘 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p32 문제 실사 spotter — 복원 이미지(4회차 F p32, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0327",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "입꼬리올림근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "입꼬리올림근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p24",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0327.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p24, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 입꼬리올림근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 입꼬리올림근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p24 문제 실사 spotter — 복원 이미지(4회차 F p24, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0326",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "입꼬리당김근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "입꼬리당김근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p16",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0326.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p16, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 입꼬리당김근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 입꼬리당김근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p16 문제 실사 spotter — 복원 이미지(4회차 F p16, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0325",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "큰광대근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "큰광대근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p15",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0325.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p15, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 큰광대근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 큰광대근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p15 문제 실사 spotter — 복원 이미지(4회차 F p15, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0324",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "입꼬리올림근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "입꼬리올림근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p14",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0324.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p14, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 입꼬리올림근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 입꼬리올림근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p14 문제 실사 spotter — 복원 이미지(4회차 F p14, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0323",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "아래입술내림근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "아래입술내림근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p13",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0323.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p13, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 아래입술내림근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 아래입술내림근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p13 문제 실사 spotter — 복원 이미지(4회차 F p13, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0322",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "위입술올림근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "위입술올림근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p11",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0322.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p11, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위입술올림근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 위입술올림근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p11 문제 실사 spotter — 복원 이미지(4회차 F p11, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0321",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "눈썹주름근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "4회차",
+    "눈썹주름근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p6",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0321.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(4회차 F p6, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 눈썹주름근 실사 spotter (라벨 블랭크 복원본) 4회차 · 머리 spotter 복원 4회차 눈썹주름근 예습시험 태깅 과거 학기 '얼굴 표층·표정근육·귀밑샘·얼굴신경/혈관·씹기근육' 영상 스캔 — 부위 기준으로 2026-08-27 4회차 — 업로드 스캔 F p6 문제 실사 spotter — 복원 이미지(4회차 F p6, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0176",

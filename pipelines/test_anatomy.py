@@ -549,6 +549,44 @@ def test_restored_scans_are_reproducible() -> None:
         assert "base64" not in t and "data:image" not in t, f"{p.name}: 이미지가 섞였다"
 
 
+def test_scan_blanks_hide_every_label() -> None:
+    """실사 블랭크는 **글자를 하나도 남기지 않아야** 한다(2026-08-18).
+
+    쪽지시험이 스캔의 라벨을 지운 형태라 이 lane 이 가장 중요한데, 5·7회차에서
+    '자동으로 만든 결과에 답이 그대로 남은' 사고가 세 번 났다. 그래서 만든 결과를
+    같은 검출기로 되훑는 검사를 코드에 박고(`scan_triage.verify`), 자동 검사가 못 잡는
+    것(표본 결에 섞인 흐린 캡션·손글씨)은 사람이 보고 `_rejected.json` 에 남긴다.
+    이 테스트는 **뺀 페이지가 정말 빠졌는지**와 설정/문항의 짝을 지킨다.
+    """
+    import subprocess
+    st = Path(__file__).parent / "scan_triage.py"
+    r = subprocess.run([sys.executable, str(st), "--selftest"],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, f"scan_triage selftest 실패: {r.stdout}{r.stderr}"
+    sys.path.insert(0, str(Path(__file__).parent))
+    import restore_store
+    import scan_triage
+    root = Path(__file__).resolve().parents[1]
+    for rej in (root / "content/anatomy/restore").glob("*/_rejected.json"):
+        rd = rej.parent.name
+        for page in json.loads(rej.read_text(encoding="utf-8")):
+            assert not restore_store.store_path(rd, page).exists(), \
+                f"{rd}/{page}: 사람이 뺐는데 설정이 남아 있다"
+            assert page not in {p for _c, d, p in restore_store.question_assets()
+                                if d == rd}, f"{rd}/{page}: 뺐는데 문항이 참조한다"
+        assert scan_triage.rejects_path(rd) == rej
+    # 커밋된 설정은 전부 '좌표뿐'이어야 한다 — 픽셀이 섞이면 공개 repo 사고다
+    for p in restore_store.configs():
+        rec = json.loads(p.read_text(encoding="utf-8"))
+        assert set(rec) >= {"page", "render_dir", "cfg"}, p.name
+        assert set(rec["cfg"]) <= {
+            "crop", "title_box", "colors", "protect", "olive_region", "keep_boxes",
+            "stroke_boxes", "stroke_drop", "stroke_pad", "bright_stroke_boxes",
+            "bright_drop", "bright_pad", "bright_bgk", "red_soft_boxes", "red_soft",
+            "erase_boxes", "label_boxes", "black_boxes", "donor", "donor_bad_boxes",
+            "pins"}, f"{p.name}: 모르는 설정 키 {sorted(rec['cfg'])}"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

@@ -30,19 +30,31 @@ source_refs:
   - {source_file_id: "upload-2026-08-16-s04-pectoral", source_file_name: "과거 학기 큰가슴근부위·가슴벽 영상 스캔 23장", page: null, section: "Upper limb — Pectoral region / Thorax — Thoracic wall", note: "같은 부위 기준 배정. 입술·바깥코 연골 페이지도 4회차 실습주제에 포함"}
 scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0096.md", quiz_image: ".private/anatomy/render/uploads-s04/F004_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F004_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0321.md", quiz_image: ".private/anatomy/render/uploads-s04/F006_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F006_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0097.md", quiz_image: ".private/anatomy/render/uploads-s04/F007_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F007_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0322.md", quiz_image: ".private/anatomy/render/uploads-s04/F011_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F011_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0098.md", quiz_image: ".private/anatomy/render/uploads-s04/F012_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F012_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0323.md", quiz_image: ".private/anatomy/render/uploads-s04/F013_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F013_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0324.md", quiz_image: ".private/anatomy/render/uploads-s04/F014_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F014_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0325.md", quiz_image: ".private/anatomy/render/uploads-s04/F015_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F015_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0326.md", quiz_image: ".private/anatomy/render/uploads-s04/F016_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F016_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0099.md", quiz_image: ".private/anatomy/render/uploads-s04/F019_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F019_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0327.md", quiz_image: ".private/anatomy/render/uploads-s04/F024_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F024_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0100.md", quiz_image: ".private/anatomy/render/uploads-s04/F028_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F028_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0101.md", quiz_image: ".private/anatomy/render/uploads-s04/F029_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F029_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0328.md", quiz_image: ".private/anatomy/render/uploads-s04/F032_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F032_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0102.md", quiz_image: ".private/anatomy/render/uploads-s04/F033_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F033_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0103.md", quiz_image: ".private/anatomy/render/uploads-s04/F037_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F037_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0104.md", quiz_image: ".private/anatomy/render/uploads-s04/F040_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F040_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0105.md", quiz_image: ".private/anatomy/render/uploads-s04/F042_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F042_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0329.md", quiz_image: ".private/anatomy/render/uploads-s04/F043_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F043_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0106.md", quiz_image: ".private/anatomy/render/uploads-s04/F046_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F046_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0330.md", quiz_image: ".private/anatomy/render/uploads-s04/F049_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F049_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0107.md", quiz_image: ".private/anatomy/render/uploads-s04/F050_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/F050_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0108.md", quiz_image: ".private/anatomy/render/uploads-s04/P015_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P015_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0109.md", quiz_image: ".private/anatomy/render/uploads-s04/P016_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P016_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0331.md", quiz_image: ".private/anatomy/render/uploads-s04/P017_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P017_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0332.md", quiz_image: ".private/anatomy/render/uploads-s04/P021_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P021_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0110.md", quiz_image: ".private/anatomy/render/uploads-s04/P022_quiz.png", clean_image: ".private/anatomy/render/uploads-s04/P022_clean.png"}
 mnemonics:
   - {key: "관광볼턱목", full: "관자 · 광대 · 볼 · 턱모서리 · 목", note: "얼굴신경 5분지 — 위에서 아래 순서"}

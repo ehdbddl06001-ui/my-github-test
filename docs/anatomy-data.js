@@ -5435,6 +5435,282 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0321",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "눈썹 안쪽끝에서 눈썹 피부로 비스듬히 올라가는 근육에 번호핀 ①이 놓여 있다. 이름과 이 근육이 만드는 주름의 방향을 말하시오.",
+   "choices": null,
+   "answer": "눈썹주름근 (corrugator supercilii muscle) — 미간에 **세로 주름**을 만든다",
+   "explanation": "눈썹주름근은 이마근·눈둘레근보다 **깊은 층**에서 눈썹활 안쪽끝(이마뼈)에서 일어나 눈썹 중간의 피부로 붙는다. 수축하면 눈썹을 안쪽·아래로 당겨 **미간의 세로 주름**을 만들어 '찡그림근'으로 통한다. 짝으로 외운다 — 이마근은 **가로** 주름(놀람), 눈썹주름근은 **세로** 주름(찡그림), 눈살근은 코뿌리의 **가로** 주름. 모두 얼굴신경(VII) **관자가지**가 지배해 눈썹 운동은 VII, 이마 피부 감각은 삼차신경 V1(눈확위신경)로 갈린다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "눈썹주름근 (F p6)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0322",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "눈확아래모서리에서 일어나 윗입술로 내려가는 근육에 번호핀 ①이 놓여 있다. 이름과 작용을 말하시오.",
+   "choices": null,
+   "answer": "위입술올림근 (levator labii superioris muscle) — 윗입술을 들어올린다",
+   "explanation": "위입술올림근은 눈확아래모서리(위턱뼈)에서 일어나 윗입술 피부·입둘레근으로 붙어 윗입술을 올린다. 바로 그 **깊은 곳으로 눈확아래신경·동맥이 눈확아래구멍에서 나오므로** 이 근육을 젖히면 신경혈관다발이 드러난다 — 실습에서 둘을 한 세트로 본다. 윗입술로 가는 세 근육을 안쪽→가쪽으로 묶어 외운다: **위입술콧방울올림근**(가장 안쪽, 콧방울까지) → **위입술올림근** → **작은광대근**. 모두 얼굴신경 **볼가지**. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "위입술올림근 (F p11)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0323",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "아래턱뼈 바닥모서리에서 일어나 아랫입술로 올라가는 네모난 근육에 번호핀이 놓여 있다. 이름과 작용, 지배신경을 말하시오.",
+   "choices": null,
+   "answer": "아래입술내림근 (depressor labii inferioris muscle) — 아랫입술을 아래·가쪽으로 내린다 · 얼굴신경 **아래턱모서리가지**",
+   "explanation": "아래입술내림근은 아래턱뼈 바닥모서리(턱끝구멍 앞)에서 일어나 아랫입술 피부·입둘레근에 붙는다. 같은 자리의 **입꼬리내림근**과 헷갈리기 쉬운데, 붙는 곳으로 가른다 — 아래입술내림근은 **입술**에, 입꼬리내림근은 **입꼬리**에 붙는다(그래서 전자는 '삐죽', 후자는 '시무룩'). 둘 다 얼굴신경 **아래턱모서리가지**가 지배해, 이 가지가 다치면 웃을 때 아랫입술이 안 내려가 비대칭이 된다 — 턱밑 절개 수술의 대표 합병증. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "아래입술내림근 (F p13)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0324",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "표정근을 젖히고 드러낸 깊은층에서, 눈확아래구멍 아래의 위턱뼈 송곳니오목에서 일어나 입꼬리로 내려가는 근육에 번호핀이 놓여 있다. 이름과 층을 말하시오.",
+   "choices": null,
+   "answer": "입꼬리올림근 (levator anguli oris muscle) — 표정근 **깊은층**",
+   "explanation": "입꼬리올림근은 위턱뼈 **송곳니오목**에서 일어나 입꼬리(모달리스결절)로 붙는 **깊은층** 표정근이다. 얕은층의 큰광대근·위입술올림근을 젖혀야 보인다는 점이 태깅 포인트 — 그래서 '깊은층 근육'이라 표시해 둔다. 입꼬리에 모이는 근육을 **모달리스결절(modiolus)** 로 묶어 외운다: 위에서 입꼬리올림근·큰광대근, 가쪽에서 입꼬리당김근·볼근, 아래에서 입꼬리내림근. **눈확아래신경은 이 근육의 깊은쪽(위쪽)** 을 지나므로 함께 확인한다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "입꼬리올림근 (F p14)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0325",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "광대뼈에서 일어나 입꼬리로 비스듬히 내려가는 긴 근육에 번호핀 ①이 놓여 있다. 이름과 작은광대근과의 구별점을 말하시오.",
+   "choices": null,
+   "answer": "큰광대근 (zygomaticus major muscle) — **입꼬리**에 붙는다(작은광대근은 **윗입술**)",
+   "explanation": "큰광대근은 광대뼈 가쪽면에서 일어나 **입꼬리**로 내려가 입꼬리를 위·가쪽으로 당긴다 — '웃음근'. 짝인 작은광대근은 더 안쪽에서 일어나 **윗입술**에 붙는다. 구별은 **붙는 곳 하나로 끝난다: 큰=입꼬리, 작은=윗입술.** 큰광대근 깊은쪽으로 얼굴동맥·얼굴정맥이 지나가고, 이 근육을 젖히면 깊은층의 입꼬리올림근이 나온다. 지배는 얼굴신경 **광대가지·볼가지**. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "큰광대근 (F p15)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0326",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "귀밑샘근막·깨물근근막에서 일어나 입꼬리로 **가로로** 달리는 얇은 근육에 번호핀 ①이 놓여 있다. 이름과 작용을 말하시오.",
+   "choices": null,
+   "answer": "입꼬리당김근 (risorius muscle) — 입꼬리를 **가쪽으로** 당긴다",
+   "explanation": "입꼬리당김근은 귀밑샘근막·깨물근근막에서 일어나 입꼬리로 **수평**으로 달리는 아주 얇은 근육이라 실습에서 자주 찢어지거나 넓은목근과 이어져 보인다. 방향으로 외운다 — **큰광대근은 비스듬히(위·가쪽), 입꼬리당김근은 수평(가쪽)**. 작용은 억지웃음·조소(risus = 웃음)를 만드는 것. 얼굴신경 **볼가지** 지배이며, 발생학적으로 넓은목근과 같은 무리라 목 쪽으로 이어지는 변이가 흔하다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "입꼬리당김근 (F p16)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0327",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "위턱뼈 송곳니오목에서 일어나 입꼬리로 내려가는 근육을 다른 각도에서 드러냈다. 번호핀 ①의 근육 이름과, 이 근육 위를 덮고 있던 근육을 말하시오.",
+   "choices": null,
+   "answer": "입꼬리올림근 (levator anguli oris muscle) — 위를 덮는 것은 **위입술올림근·큰광대근**(얕은층)",
+   "explanation": "같은 근육을 얕은층을 젖힌 뒤 본 장면이다. 층으로 정리하면 **얕은층**(위입술콧방울올림근·위입술올림근·작은광대근·큰광대근) → **깊은층**(입꼬리올림근·볼근·입꼬리내림근 일부). 태깅에서는 '어느 층에서 나왔는가'가 곧 답의 근거가 된다. 입꼬리올림근의 깊은쪽 위로 **눈확아래신경**이 지나므로, 이 근육을 찾으면 신경도 같이 찾은 셈이다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "입꼬리올림근 (F p24)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0328",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "parotid",
+   "examPhase": "tagging-1",
+   "stem": "귀 앞·아래에서 깨물근 뒤를 덮고 있는 침샘의 경계가 그려져 있고 번호핀이 놓여 있다. 이 샘의 이름과, 그 실질을 뚫고 지나는 구조 셋을 말하시오.",
+   "choices": null,
+   "answer": "귀밑샘 (parotid gland) — 실질을 뚫는 것: **얼굴신경**, 아래턱뒤정맥, 바깥목동맥",
+   "explanation": "귀밑샘은 얼굴 가쪽에서 가장 큰 침샘으로, 깨물근 뒤·바깥귀길 앞·아래턱가지 가쪽에 놓인다. 실질을 관통하는 구조는 **가쪽→속 순서로 얼굴신경 → 아래턱뒤정맥 → 바깥목동맥**(외우기: **신·정·동**, 얕은 것부터). 그래서 귀밑샘 종양·수술에서 얼굴신경 손상이 가장 먼저 문제된다. 분비신경은 혀인두신경(IX) → 작은바위신경 → 귀신경절 → **귓바퀴관자신경**을 타고 들어온다. 관(귀밑샘관)은 깨물근 위를 가로질러 볼근을 뚫고 **위 둘째 큰어금니** 맞은편으로 열린다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "귀밑샘 (F p32)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0329",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "face",
+   "examPhase": "tagging-1",
+   "stem": "위입술올림근을 젖히자 구멍에서 나오는 신경과 동맥이 함께 드러났다. 번호핀 ①의 두 구조의 이름과 나오는 구멍을 말하시오.",
+   "choices": null,
+   "answer": "눈확아래신경과 눈확아래동맥 (infraorbital nerve and artery) — **눈확아래구멍**에서 나온다",
+   "explanation": "눈확아래신경은 삼차신경 **위턱신경(V2)** 의 종말가지, 눈확아래동맥은 **위턱동맥**의 가지로, 둘이 눈확아래고랑·눈확아래관을 함께 지나 **눈확아래구멍**(눈확아래모서리 약 1 cm 아래)으로 나온다. 감각 영역은 아래눈꺼풀·코 가쪽·뺨·**윗입술** 피부. 얼굴 앞면의 세 구멍은 한 **수직선** 위에 놓여 함께 외운다 — 눈확위구멍(V1) → 눈확아래구멍(V2) → 턱끝구멍(V3). 치과의 윗니·윗입술 마취(눈확아래신경 차단)가 바로 이 구멍을 표적으로 한다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "눈확아래신경과 눈확아래동맥 (F p43)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0330",
+   "style": "spotter",
+   "session": 4,
+   "region": "head",
+   "subregion": "temporal",
+   "examPhase": "tagging-1",
+   "stem": "광대활 위 관자우묵에서 부챗살 모양으로 퍼진 근육의 얕은층이 드러나 있고 번호핀이 놓여 있다. 이름과 지배신경, 작용을 말하시오.",
+   "choices": null,
+   "answer": "관자근 얕은층 (superficial layer of temporalis muscle) — **아래턱신경(V3)의 깊은관자신경** 지배 · 턱을 닫고(올림), 뒤섬유는 **뒤로 당김**",
+   "explanation": "관자근은 관자우묵·관자근막에서 일어나 광대활 **깊은쪽**을 지나 아래턱뼈 **근육돌기**에 붙는다. 부챗살 방향으로 작용이 갈린다 — **앞·수직 섬유는 올림(닫기), 뒤·수평 섬유는 뒤당김(retraction)**. 씹기근육 넷은 모두 **V3(아래턱신경)** 지배라는 점이 시험 단골이며(깨물근·관자근·안쪽날개근·가쪽날개근), 그중 **가쪽날개근만 '입을 연다'** 는 예외로 묶어 외운다. 관자근을 보려면 관자근막을 벗기고 광대활을 젖혀야 하므로 '얕은층/깊은층'을 구분해 답한다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "관자근 얕은층 (F p49)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0331",
+   "style": "spotter",
+   "session": 4,
+   "region": "thorax",
+   "subregion": "pectoral",
+   "examPhase": "tagging-1",
+   "stem": "큰가슴근을 젖히자 드러난, 갈비뼈에서 어깨뼈 부리돌기로 올라가는 근육에 번호핀 ①이 놓여 있다. 이름과 이는곳·닿는곳, 임상적 의의를 말하시오.",
+   "choices": null,
+   "answer": "작은가슴근 (pectoralis minor muscle) — **3~5번 갈비뼈 → 어깨뼈 부리돌기**",
+   "explanation": "작은가슴근은 3·4·5번 갈비뼈 앞면에서 일어나 어깨뼈 **부리돌기**에 붙어 어깨뼈를 앞·아래로 당긴다(protraction·depression). 지배는 **안쪽가슴근신경**(팔신경얼기 안쪽다발). 임상에서 중요한 이유는 **겨드랑동맥을 세 부분으로 나누는 기준**이기 때문이다 — 이 근육 **위/뒤/아래**로 1·2·3부분. 또한 이 근육 뒤에서 팔신경얼기·겨드랑혈관이 눌리면 **가슴우리출구증후군**(pectoralis minor syndrome)이 된다. 큰가슴근을 젖혀야 나오므로 '층'을 함께 답하면 감점이 없다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "작은가슴근 (P p17)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0332",
+   "style": "spotter",
+   "session": 4,
+   "region": "thorax",
+   "subregion": "thoracic-wall",
+   "examPhase": "tagging-1",
+   "stem": "갈비사이공간에서 근섬유가 **뒤위 → 앞아래** 방향으로 달리는 층에 번호핀이 놓여 있다. 이름과 바깥층과의 구별점, 함께 지나는 구조를 말하시오.",
+   "choices": null,
+   "answer": "속갈비사이근 (internal intercostal muscle) — 섬유 방향이 바깥층과 **직각으로 교차**한다 · 갈비사이신경·혈관이 갈비뼈고랑을 따라 지난다",
+   "explanation": "갈비사이근은 세 층이다 — **바깥**(뒤위→앞아래, '주머니에 손 넣는 방향', 들숨), **속**(반대 방향, 앞위→뒤아래, 날숨), **맨속**(속층과 같은 방향, 신경혈관다발이 속층과 맨속층 **사이**를 지난다). 갈비사이 신경혈관다발의 순서는 위에서부터 **정맥–동맥–신경(VAN)** 이고 갈비뼈 **아래모서리의 갈비뼈고랑**에 숨어 있다 — 그래서 가슴막천자는 **아래 갈비뼈의 위모서리**를 따라 찔러야 안전하다. 이 방향·순서 두 가지가 태깅과 임상문제에서 함께 나온다. 원본 영상 라벨 실측 확인. 이미지는 쪽지시험과 같은 형태로 **라벨을 지우고 번호핀만 남긴** 복원본이며 타이틀·자막도 가렸다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "restored-scan",
+   "refs": [
+    {
+     "file": "과거 학기 얼굴·귀밑샘·씹기근육/가슴벽 영상 스캔",
+     "page": null,
+     "section": "속갈비사이근 (P p21)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -6073,7 +6349,7 @@ window.MEDKOS_ANATOMY = {
      "note": "이마힘살은 양쪽 겉질 지배"
     }
    ],
-   "scanCount": 15
+   "scanCount": 27
   },
   {
    "id": "anatomy-2026-0150",

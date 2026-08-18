@@ -54,6 +54,12 @@ def store_path(render_dir: str, page: str) -> Path:
     return STORE / render_dir / f"{page}.json"
 
 
+def configs() -> list[Path]:
+    """커밋된 복원 설정들. `_` 로 시작하는 파일은 설정이 아니다 —
+    `_rejected.json`(사람이 못 쓴다고 판정한 페이지 목록)이 여기 섞여 있다."""
+    return sorted(p for p in STORE.rglob("*.json") if not p.name.startswith("_"))
+
+
 def audit() -> dict:
     """문항이 참조하는 실사 이미지에 대해 (PNG 있음 / 설정 있음) 을 센다."""
     rows = []
@@ -115,7 +121,7 @@ def import_legacy(dry: bool) -> int:
 
 def rebuild(only: str | None, dry: bool) -> int:
     """저장된 설정 + 원본 렌더(src/*.png)로 clean/quiz PNG 를 다시 만든다."""
-    todo = sorted(STORE.rglob("*.json"))
+    todo = configs()
     if only:
         todo = [p for p in todo if only in str(p)]
     ok = fail = skip = 0
@@ -150,6 +156,48 @@ def rebuild(only: str | None, dry: bool) -> int:
     return 1 if fail else 0
 
 
+DATES_RE = re.compile(r"^scheduled_dates:\s*\[([^\]]*)\]", re.M)
+BLOCK_RE = re.compile(r"^scan_questions:\n(?:[ \t]+- \{.*\n)+", re.M)
+
+
+def _dates(text: str) -> set[str]:
+    m = DATES_RE.search(text)
+    return {s.strip().strip('"\'') for s in m.group(1).split(",") if s.strip()} if m else set()
+
+
+def sync_subnote(card: Path, dry: bool) -> int:
+    """서브노트 카드의 `scan_questions:` 를 **문항에서 다시 만든다**(결정론).
+
+    이 목록을 손으로 유지하면 실사 문항을 늘려도 서브노트 PDF 에 안 실린다 —
+    4회차를 15장에서 27장으로 늘렸을 때 실제로 15장까지만 나왔다(2026-08-18).
+    같은 `scheduled_dates` 를 가진 실사 문항 전부를 페이지 순서로 싣는다.
+    """
+    text = card.read_text(encoding="utf-8")
+    want = _dates(text)
+    if not want:
+        print(f"{card.name}: scheduled_dates 가 없다")
+        return 2
+    rows = []
+    for qc, rd, page in question_assets():
+        if not (_dates(qc.read_text(encoding="utf-8")) & want):
+            continue
+        rows.append((rd, page, qc.relative_to(ROOT).as_posix()))
+    rows.sort(key=lambda r: (r[0], r[1]))
+    if not rows:
+        print(f"{card.name}: 붙일 실사 문항이 없다")
+        return 0
+    block = "scan_questions:\n" + "".join(
+        f'  - {{card: "{c}", quiz_image: ".private/anatomy/render/{rd}/{p}_quiz.png",'
+        f' clean_image: ".private/anatomy/render/{rd}/{p}_clean.png"}}\n'
+        for rd, p, c in rows)
+    new = BLOCK_RE.sub(lambda _m: block, text, count=1) if BLOCK_RE.search(text) else text
+    old_n = len(BLOCK_RE.search(text).group(0).splitlines()) - 1 if BLOCK_RE.search(text) else 0
+    print(f"{card.name}: 실사 문항 {old_n} → {len(rows)}{' (dry-run)' if dry else ''}")
+    if not dry and new != text:
+        card.write_text(new, encoding="utf-8")
+    return 0
+
+
 def selftest() -> int:
     a = audit()
     assert isinstance(a["rows"], list)
@@ -157,7 +205,7 @@ def selftest() -> int:
     assert store_path("uploads-s05", "A044").name == "A044.json"
     assert store_path("uploads-s05", "A044").parent.name == "uploads-s05"
     # 설정에는 카데바 픽셀이 없다 — 좌표·플래그뿐이라 커밋해도 안전하다
-    for p in list(STORE.rglob("*.json"))[:20]:
+    for p in configs()[:20]:
         rec = json.loads(p.read_text(encoding="utf-8"))
         assert set(rec) >= {"page", "render_dir", "cfg"}, p
         assert "base64" not in p.read_text(encoding="utf-8"), f"{p}: 이미지가 섞여 있다"
@@ -171,6 +219,7 @@ def main() -> int:
     ap.add_argument("--rebuild", action="store_true")
     ap.add_argument("--only")
     ap.add_argument("--audit", action="store_true")
+    ap.add_argument("--sync-subnote", dest="sync", help="서브노트 카드 경로")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--selftest", action="store_true")
     a = ap.parse_args()
@@ -180,13 +229,15 @@ def main() -> int:
         return import_legacy(a.dry_run)
     if a.rebuild:
         return rebuild(a.only, a.dry_run)
+    if a.sync:
+        return sync_subnote(ROOT / a.sync, a.dry_run)
     if a.audit:
         r = audit()
         print(f"실사 참조 문항 {len(r['rows'])}건 — PNG 없음 {len(r['no_png'])} · 설정 없음 {len(r['no_cfg'])}")
         for x in r["no_cfg"][:12]:
             print(f"  설정 없음: {x['dir']}/{x['page']}  ({x['card']})")
         return 0
-    print("--import / --rebuild / --audit / --selftest 중 하나가 필요하다")
+    print("--import / --rebuild / --audit / --sync-subnote / --selftest 중 하나가 필요하다")
     return 2
 
 
