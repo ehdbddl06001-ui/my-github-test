@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-17",
+ "generated": "2026-08-18",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -3775,6 +3775,1662 @@ window.MEDKOS_ANATOMY = {
      "file": "5회차 업로드 스캔 C — 심장 속 구조(판막·유두근·사이막) (15장)",
      "page": null,
      "section": "C007 — 원본 영상 라벨 실측(정답을 지어내지 않음)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0249",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 얕은층)에서 **종아리·발 안쪽** 계통에 해당하는 번호핀 2, 5, 6 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 종아리·발 안쪽 / 5. 큰두렁정맥 / 6. 두렁신경",
+   "explanation": "1회차 · 얕은근막 안에서 정맥과 피부신경은 짝을 지어 다닌다 짝을 외우면 하나를 찾으면 다른 하나가 따라온다 — 피부벗기기의 요령. 복사 기준: 큰두렁정맥은 안쪽복사 **앞**, 작은두렁정맥은 가쪽복사 **뒤**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 얕은층"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0250",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 얕은층)에서 **종아리 뒤·발 가쪽** 계통에 해당하는 번호핀 3, 7, 8 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 종아리 뒤·발 가쪽 / 7. 작은두렁정맥 / 8. 장딴지신경",
+   "explanation": "1회차 · 얕은근막 안에서 정맥과 피부신경은 짝을 지어 다닌다 짝을 외우면 하나를 찾으면 다른 하나가 따라온다 — 피부벗기기의 요령. 복사 기준: 큰두렁정맥은 안쪽복사 **앞**, 작은두렁정맥은 가쪽복사 **뒤**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 얕은층"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0251",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 얕은층)에서 **등의 얕은층** 계통에 해당하는 번호핀 4, 9, 10 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 등의 얕은층 / 9. 뒤가지의 피부가지 / 10. 동반 피부정맥",
+   "explanation": "1회차 · 얕은근막 안에서 정맥과 피부신경은 짝을 지어 다닌다 짝을 외우면 하나를 찾으면 다른 하나가 따라온다 — 피부벗기기의 요령. 복사 기준: 큰두렁정맥은 안쪽복사 **앞**, 작은두렁정맥은 가쪽복사 **뒤**. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 얕은층"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0252",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(척수신경에서 피부신경까지)에서 **뒤가지** 계통에 해당하는 번호핀 2, 4, 5, 8, 9, 10 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 뒤가지 / 4. 안쪽가지 / 5. 가쪽가지 / 8. 등 피부 / 9. 위볼기피부신경 / 10. 중간볼기피부신경",
+   "explanation": "1회차 · 등·다리 얕은층 — 앞가지/뒤가지가 갈린 뒤로는 영역이 겹치지 않는다 뒤가지 계열은 얼기를 만들지 않는다 — 분절 배열이 그대로 유지된다. 볼기피부신경 3형제 중 아래볼기만 앞가지 계열 — 이름이 같아도 뿌리가 다르다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-nerve",
+     "page": null,
+     "section": "척수신경에서 피부신경까지"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0253",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(척수신경에서 피부신경까지)에서 **앞가지** 계통에 해당하는 번호핀 3, 6, 7, 11, 12, 13, 14, 15, 16, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 앞가지 / 6. 엉치신경얼기 / 7. 허리신경얼기 / 11. 뒤넙다리피부신경 / 12. 궁둥신경 / 13. 넙다리신경 → 두렁신경 / 14. 아래볼기피부신경 / 15. 관통가지 / 16. 정강신경 / 17. 온종아리신경 / 18. 안쪽장딴지피부신경 / 19. 장딴지신경교통가지",
+   "explanation": "1회차 · 등·다리 얕은층 — 앞가지/뒤가지가 갈린 뒤로는 영역이 겹치지 않는다 뒤가지 계열은 얼기를 만들지 않는다 — 분절 배열이 그대로 유지된다. 볼기피부신경 3형제 중 아래볼기만 앞가지 계열 — 이름이 같아도 뿌리가 다르다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-nerve",
+     "page": null,
+     "section": "척수신경에서 피부신경까지"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0254",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(다리의 얕은정맥과 깊은정맥)에서 **큰두렁정맥** 계통에 해당하는 번호핀 2, 5, 6, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 큰두렁정맥 / 5. 덧두렁정맥 / 6. 두렁정맥구멍 / 9. 넙다리정맥",
+   "explanation": "1회차 · 얕은근막 안에 있는 것과 깊은근막 아래 있는 것 얕은정맥은 얕은근막 안, 깊은정맥은 깊은근막 아래 — 피부벗기기에서 갈리는 층. 관통정맥의 판막은 깊은 쪽으로만 열린다 — 망가지면 역류해 하지정맥류. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-vessel",
+     "page": null,
+     "section": "다리의 얕은정맥과 깊은정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0255",
+   "style": "spotter",
+   "session": 1,
+   "region": "multi",
+   "subregion": "s01-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(다리의 얕은정맥과 깊은정맥)에서 **작은두렁정맥 · 관통정맥** 계통에 해당하는 번호핀 3, 4, 7, 8 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 작은두렁정맥 / 4. 관통정맥 / 7. 오금정맥 / 8. 깊은정맥",
+   "explanation": "1회차 · 얕은근막 안에 있는 것과 깊은근막 아래 있는 것 얕은정맥은 얕은근막 안, 깊은정맥은 깊은근막 아래 — 피부벗기기에서 갈리는 층. 관통정맥의 판막은 깊은 쪽으로만 열린다 — 망가지면 역류해 하지정맥류. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s01-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s01-vessel",
+     "page": null,
+     "section": "다리의 얕은정맥과 깊은정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0256",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 등·볼기)에서 **위구멍** 계통에 해당하는 번호핀 2, 5, 6, 7 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 위구멍 / 5. 위볼기동맥 / 6. 위볼기정맥 / 7. 위볼기신경",
+   "explanation": "2회차 · 구멍마다 동맥·정맥·신경이 한 다발로 지나간다 볼기의 다발은 모두 **같은 이름 3종 세트** — 위볼기 A·V·N, 아래볼기 A·V·N. 궁둥신경만 동반 동맥이 따로 없다(아래볼기동맥이 곁가지로 먹여 준다). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 등·볼기"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0257",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 등·볼기)에서 **아래구멍** 계통에 해당하는 번호핀 3, 8, 9, 10, 11, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 아래구멍 / 8. 아래볼기 A·V / 9. 아래볼기신경 / 10. 궁둥신경 / 11. 뒤넙다리피부신경 / 12. 속음부 A·V / 13. 음부신경",
+   "explanation": "2회차 · 구멍마다 동맥·정맥·신경이 한 다발로 지나간다 볼기의 다발은 모두 **같은 이름 3종 세트** — 위볼기 A·V·N, 아래볼기 A·V·N. 궁둥신경만 동반 동맥이 따로 없다(아래볼기동맥이 곁가지로 먹여 준다). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 등·볼기"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0258",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 등·볼기)에서 **어깨뼈 안쪽모서리** 계통에 해당하는 번호핀 4, 14, 15 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 어깨뼈 안쪽모서리 / 14. 등쪽어깨동맥 / 15. 등쪽어깨신경",
+   "explanation": "2회차 · 구멍마다 동맥·정맥·신경이 한 다발로 지나간다 볼기의 다발은 모두 **같은 이름 3종 세트** — 위볼기 A·V·N, 아래볼기 A·V·N. 궁둥신경만 동반 동맥이 따로 없다(아래볼기동맥이 곁가지로 먹여 준다). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 등·볼기"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0259",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(등·볼기의 신경 계보)에서 **더부신경 XI** 계통에 해당하는 번호핀 2, 6, 7 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 더부신경 XI / 6. 등세모근 / 7. 목빗근",
+   "explanation": "2회차 · 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 고유등근육만 뒤가지 지배 — 등세모근·넓은등근·마름근은 이주근육이라 예외. 볼기: 큰볼기근=아래볼기신경 / 중간·작은볼기근=위볼기신경 (크기와 이름이 반대). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-nerve",
+     "page": null,
+     "section": "등·볼기의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0260",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(등·볼기의 신경 계보)에서 **팔신경얼기** 계통에 해당하는 번호핀 3, 8, 9, 10, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 팔신경얼기 / 8. 등쪽어깨신경 C5 / 9. 가슴등신경 C6–8 / 10. 긴가슴신경 C5–7 / 17. 마름근·어깨올림근 / 18. 넓은등근 / 19. 앞톱니근",
+   "explanation": "2회차 · 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 고유등근육만 뒤가지 지배 — 등세모근·넓은등근·마름근은 이주근육이라 예외. 볼기: 큰볼기근=아래볼기신경 / 중간·작은볼기근=위볼기신경 (크기와 이름이 반대). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-nerve",
+     "page": null,
+     "section": "등·볼기의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0261",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(등·볼기의 신경 계보)에서 **척수신경 뒤가지** 계통에 해당하는 번호핀 4, 11, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 척수신경 뒤가지 / 11. 척주세움근 / 12. 가로돌기가시근육 / 13. 뒤통수밑근육",
+   "explanation": "2회차 · 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 고유등근육만 뒤가지 지배 — 등세모근·넓은등근·마름근은 이주근육이라 예외. 볼기: 큰볼기근=아래볼기신경 / 중간·작은볼기근=위볼기신경 (크기와 이름이 반대). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-nerve",
+     "page": null,
+     "section": "등·볼기의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0262",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(등·볼기의 신경 계보)에서 **엉치신경얼기** 계통에 해당하는 번호핀 5, 14, 15, 16, 20, 21, 22, 23 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 엉치신경얼기 / 14. 위볼기신경 L4–S1 / 15. 아래볼기신경 L5–S2 / 16. 궁둥신경 L4–S3 / 20. 중간·작은볼기근·넙다리근막긴장근 / 21. 큰볼기근 단독 / 22. 정강부분 → 햄스트링 / 23. 온종아리부분 → 두갈래근 짧은갈래",
+   "explanation": "2회차 · 등에 있다고 다 뒤가지가 아니다 — 이주근육은 앞가지·더부신경 고유등근육만 뒤가지 지배 — 등세모근·넓은등근·마름근은 이주근육이라 예외. 볼기: 큰볼기근=아래볼기신경 / 중간·작은볼기근=위볼기신경 (크기와 이름이 반대). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-nerve",
+     "page": null,
+     "section": "등·볼기의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0263",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(등·볼기의 혈관 계보)에서 **온엉덩동맥** 계통에 해당하는 번호핀 2, 4, 8, 9, 10, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 온엉덩동맥 / 4. 속엉덩동맥 / 8. 뒤갈래 / 9. 앞갈래 / 10. 위볼기동맥 / 11. 아래볼기동맥 / 12. 속음부동맥",
+   "explanation": "2회차 · 동맥은 속엉덩동맥에서 갈리고, 정맥은 같은 이름으로 되돌아온다 위볼기동맥만 속엉덩동맥 **뒤갈래** — 아래볼기·속음부는 앞갈래. 볼기부위 정맥은 동맥과 같은 이름·같은 구멍으로 되돌아와 속엉덩정맥으로 모인다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-vessel",
+     "page": null,
+     "section": "등·볼기의 혈관 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0264",
+   "style": "spotter",
+   "session": 2,
+   "region": "multi",
+   "subregion": "s02-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(등·볼기의 혈관 계보)에서 **속엉덩정맥** 계통에 해당하는 번호핀 3, 5, 6, 7 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 속엉덩정맥 / 5. 위·아래볼기정맥 / 6. 속음부정맥 / 7. 엉치정맥얼기",
+   "explanation": "2회차 · 동맥은 속엉덩동맥에서 갈리고, 정맥은 같은 이름으로 되돌아온다 위볼기동맥만 속엉덩동맥 **뒤갈래** — 아래볼기·속음부는 앞갈래. 볼기부위 정맥은 동맥과 같은 이름·같은 구멍으로 되돌아와 속엉덩정맥으로 모인다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s02-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s02-vessel",
+     "page": null,
+     "section": "등·볼기의 혈관 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0265",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 오금·어깨뼈)에서 **다리오금** 계통에 해당하는 번호핀 2, 5, 6, 7 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 다리오금 / 5. ① 정강신경 / 6. ② 오금정맥 / 7. ③ 오금동맥",
+   "explanation": "3회차 · 다리오금은 얕은 것부터 신경–정맥–동맥 순으로 겹쳐 있다 오금의 깊이 순서 '신–정–동' — 맥박이 안 잡히는 이유가 동맥이 가장 깊어서다. 어깨뼈패임: 동맥은 인대 **위**, 신경은 인대 **아래** — 같은 이름인데 층이 갈린다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 오금·어깨뼈"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0266",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 오금·어깨뼈)에서 **네모공간** 계통에 해당하는 번호핀 3, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 네모공간 / 8. 뒤위팔휘돌이동맥 / 9. 겨드랑신경",
+   "explanation": "3회차 · 다리오금은 얕은 것부터 신경–정맥–동맥 순으로 겹쳐 있다 오금의 깊이 순서 '신–정–동' — 맥박이 안 잡히는 이유가 동맥이 가장 깊어서다. 어깨뼈패임: 동맥은 인대 **위**, 신경은 인대 **아래** — 같은 이름인데 층이 갈린다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 오금·어깨뼈"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0267",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 오금·어깨뼈)에서 **어깨뼈패임** 계통에 해당하는 번호핀 4, 10, 11 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 어깨뼈패임 / 10. 어깨위동맥 / 11. 어깨위신경",
+   "explanation": "3회차 · 다리오금은 얕은 것부터 신경–정맥–동맥 순으로 겹쳐 있다 오금의 깊이 순서 '신–정–동' — 맥박이 안 잡히는 이유가 동맥이 가장 깊어서다. 어깨뼈패임: 동맥은 인대 **위**, 신경은 인대 **아래** — 같은 이름인데 층이 갈린다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 오금·어깨뼈"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0268",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(궁둥신경에서 발까지)에서 **정강신경** 계통에 해당하는 번호핀 2, 4, 5, 6, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 정강신경 / 4. 안쪽장딴지피부신경 / 5. 종아리 뒤칸 근육 전부 / 6. 발목굴 통과 / 11. 안쪽발바닥신경 / 12. 가쪽발바닥신경",
+   "explanation": "3회차 · 다리오금에서 갈리고, 종아리뼈목에서 다친다 온종아리신경이 종아리뼈목을 감아도는 자리가 가장 흔한 손상 부위 → 발처짐. 장딴지신경 = 안쪽장딴지피부신경(정강) + 교통가지(온종아리) — 순수 감각, 공여신경. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-nerve",
+     "page": null,
+     "section": "궁둥신경에서 발까지"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0269",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(궁둥신경에서 발까지)에서 **온종아리신경** 계통에 해당하는 번호핀 3, 7, 8, 9, 10, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 온종아리신경 / 7. 가쪽장딴지피부신경 / 8. 장딴지신경교통가지 / 9. 얕은종아리신경 / 10. 깊은종아리신경 / 13. 장딴지신경",
+   "explanation": "3회차 · 다리오금에서 갈리고, 종아리뼈목에서 다친다 온종아리신경이 종아리뼈목을 감아도는 자리가 가장 흔한 손상 부위 → 발처짐. 장딴지신경 = 안쪽장딴지피부신경(정강) + 교통가지(온종아리) — 순수 감각, 공여신경. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-nerve",
+     "page": null,
+     "section": "궁둥신경에서 발까지"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0270",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(빗장밑동맥과 오금동맥)에서 **빗장밑동맥** 계통에 해당하는 번호핀 2, 6, 7, 8, 17, 18 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 빗장밑동맥 / 6. 척추동맥 / 7. 갑상목동맥 / 8. 등쪽어깨동맥 / 17. 어깨위동맥 / 18. 가로목동맥",
+   "explanation": "3회차 · 어깨동맥그물과 무릎동맥그물 — 곁순환이 만들어지는 두 자리 무릎동맥 5가지 중 **중간무릎동맥만** 관절주머니를 뚫고 십자인대로 간다. 어깨위동맥은 위가로어깨인대 **위**로, 어깨위신경은 인대 **아래**로 — 짝지어 외운다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-vessel",
+     "page": null,
+     "section": "빗장밑동맥과 오금동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0271",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(빗장밑동맥과 오금동맥)에서 **겨드랑동맥** 계통에 해당하는 번호핀 3, 9, 10, 19, 20 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 겨드랑동맥 / 9. 어깨밑동맥 / 10. 뒤위팔휘돌이동맥 / 19. 어깨휘돌이동맥 / 20. 가슴등동맥",
+   "explanation": "3회차 · 어깨동맥그물과 무릎동맥그물 — 곁순환이 만들어지는 두 자리 무릎동맥 5가지 중 **중간무릎동맥만** 관절주머니를 뚫고 십자인대로 간다. 어깨위동맥은 위가로어깨인대 **위**로, 어깨위신경은 인대 **아래**로 — 짝지어 외운다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-vessel",
+     "page": null,
+     "section": "빗장밑동맥과 오금동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0272",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(빗장밑동맥과 오금동맥)에서 **오금동맥** 계통에 해당하는 번호핀 4, 11, 12, 13, 21, 22 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 오금동맥 / 11. 무릎동맥 5가지 / 12. 앞정강동맥 / 13. 뒤정강동맥 / 21. 중간무릎동맥 / 22. 종아리동맥",
+   "explanation": "3회차 · 어깨동맥그물과 무릎동맥그물 — 곁순환이 만들어지는 두 자리 무릎동맥 5가지 중 **중간무릎동맥만** 관절주머니를 뚫고 십자인대로 간다. 어깨위동맥은 위가로어깨인대 **위**로, 어깨위신경은 인대 **아래**로 — 짝지어 외운다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-vessel",
+     "page": null,
+     "section": "빗장밑동맥과 오금동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0273",
+   "style": "spotter",
+   "session": 3,
+   "region": "multi",
+   "subregion": "s03-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(빗장밑동맥과 오금동맥)에서 **오금정맥** 계통에 해당하는 번호핀 5, 14, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 오금정맥 / 14. 작은두렁정맥 합류 / 15. 앞·뒤정강정맥 / 16. 넙다리정맥",
+   "explanation": "3회차 · 어깨동맥그물과 무릎동맥그물 — 곁순환이 만들어지는 두 자리 무릎동맥 5가지 중 **중간무릎동맥만** 관절주머니를 뚫고 십자인대로 간다. 어깨위동맥은 위가로어깨인대 **위**로, 어깨위신경은 인대 **아래**로 — 짝지어 외운다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s03-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s03-vessel",
+     "page": null,
+     "section": "빗장밑동맥과 오금동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0274",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 귀밑샘·갈비사이)에서 **귀밑샘 속** 계통에 해당하는 번호핀 2, 6, 7, 8 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 귀밑샘 속 / 6. ① 얼굴신경 VII / 7. ② 아래턱뒤정맥 / 8. ③ 바깥목동맥",
+   "explanation": "4회차 · 귀밑샘은 얕은 것부터 신경–정맥–동맥, 갈비사이고랑은 위부터 정맥–동맥–신경 귀밑샘 속 순서 '신–정–동'(얕은→깊은) — 다리오금과 같은 순서로 묶어 외운다. 갈비사이고랑은 위부터 '정–동–신'(VAN) — 천자는 반드시 갈비뼈 **위모서리**를 따라. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 귀밑샘·갈비사이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0275",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 귀밑샘·갈비사이)에서 **갈비사이고랑** 계통에 해당하는 번호핀 3, 9, 10, 11 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 갈비사이고랑 / 9. ① 갈비사이정맥 / 10. ② 갈비사이동맥 / 11. ③ 갈비사이신경",
+   "explanation": "4회차 · 귀밑샘은 얕은 것부터 신경–정맥–동맥, 갈비사이고랑은 위부터 정맥–동맥–신경 귀밑샘 속 순서 '신–정–동'(얕은→깊은) — 다리오금과 같은 순서로 묶어 외운다. 갈비사이고랑은 위부터 '정–동–신'(VAN) — 천자는 반드시 갈비뼈 **위모서리**를 따라. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 귀밑샘·갈비사이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0276",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 귀밑샘·갈비사이)에서 **세모가슴근고랑** 계통에 해당하는 번호핀 4, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 세모가슴근고랑 / 12. 노쪽피부정맥 / 13. 어깨세모가지",
+   "explanation": "4회차 · 귀밑샘은 얕은 것부터 신경–정맥–동맥, 갈비사이고랑은 위부터 정맥–동맥–신경 귀밑샘 속 순서 '신–정–동'(얕은→깊은) — 다리오금과 같은 순서로 묶어 외운다. 갈비사이고랑은 위부터 '정–동–신'(VAN) — 천자는 반드시 갈비뼈 **위모서리**를 따라. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 귀밑샘·갈비사이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0277",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 귀밑샘·갈비사이)에서 **얼굴의 구멍 짝** 계통에 해당하는 번호핀 5, 14, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 얼굴의 구멍 짝 / 14. 눈확위구멍 / 15. 눈확아래구멍 / 16. 턱끝구멍",
+   "explanation": "4회차 · 귀밑샘은 얕은 것부터 신경–정맥–동맥, 갈비사이고랑은 위부터 정맥–동맥–신경 귀밑샘 속 순서 '신–정–동'(얕은→깊은) — 다리오금과 같은 순서로 묶어 외운다. 갈비사이고랑은 위부터 '정–동–신'(VAN) — 천자는 반드시 갈비뼈 **위모서리**를 따라. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 귀밑샘·갈비사이"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0278",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(얼굴의 두 신경 — VII과 V)에서 **얼굴신경 VII** 계통에 해당하는 번호핀 2, 4, 5, 6, 7, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 얼굴신경 VII / 4. 뒤귓바퀴신경 / 5. 관자가지 / 6. 광대가지 / 7. 볼가지 / 8. 턱모서리가지 / 9. 목가지",
+   "explanation": "4회차 · 표정근육은 얼굴신경, 씹기근육과 피부감각은 삼차신경 — 인두굽이가 갈랐다 얼굴신경은 귀밑샘을 **지나가기만** 한다 — 귀밑샘 분비는 IX → 귀신경절 → 귓바퀴관자신경. 표정근육=둘째 인두굽이=VII, 씹기근육=첫째 인두굽이=V3 — 근육의 족보가 신경을 정한다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-nerve",
+     "page": null,
+     "section": "얼굴의 두 신경 — VII과 V"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0279",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(얼굴의 두 신경 — VII과 V)에서 **삼차신경 V** 계통에 해당하는 번호핀 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 삼차신경 V / 10. 눈신경 V1 / 11. 위턱신경 V2 / 12. 아래턱신경 V3 / 13. 눈확위신경 / 14. 도르래위신경 / 15. 눈물·코섬모체신경 / 16. 눈확아래신경 / 17. 광대얼굴·광대관자가지 / 18. 귓바퀴관자신경 / 19. 턱끝신경 / 20. 씹기근육 운동가지",
+   "explanation": "4회차 · 표정근육은 얼굴신경, 씹기근육과 피부감각은 삼차신경 — 인두굽이가 갈랐다 얼굴신경은 귀밑샘을 **지나가기만** 한다 — 귀밑샘 분비는 IX → 귀신경절 → 귓바퀴관자신경. 표정근육=둘째 인두굽이=VII, 씹기근육=첫째 인두굽이=V3 — 근육의 족보가 신경을 정한다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-nerve",
+     "page": null,
+     "section": "얼굴의 두 신경 — VII과 V"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0280",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(얼굴·가슴벽의 동맥과 정맥)에서 **바깥목동맥** 계통에 해당하는 번호핀 2, 5, 6, 7, 13, 14, 15, 16, 17, 18, 19, 20, 21 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 바깥목동맥 / 5. 얼굴동맥 / 6. 얕은관자동맥 / 7. 위턱동맥 / 13. 아래입술동맥 / 14. 위입술동맥 / 15. 가쪽코동맥 / 16. 눈구석동맥 / 17. 가로얼굴동맥 / 18. 이마가지 / 19. 마루가지 / 20. 중간뇌막동맥 / 21. 눈확아래동맥",
+   "explanation": "4회차 · 바깥목동맥 계열과 겨드랑·속가슴·가슴대동맥 계열을 한 장에 가로얼굴동맥은 **얕은관자동맥** 가지 — 얼굴동맥 가지가 아니다(태깅 단골 함정). 얼굴정맥은 판막이 없어 눈구석정맥–위눈정맥을 거쳐 **해면정맥굴**과 통한다(위험삼각). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-vessel",
+     "page": null,
+     "section": "얼굴·가슴벽의 동맥과 정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0281",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(얼굴·가슴벽의 동맥과 정맥)에서 **얼굴의 정맥** 계통에 해당하는 번호핀 3, 8, 9, 22, 23, 24 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 얼굴의 정맥 / 8. 얼굴정맥 / 9. 아래턱뒤정맥 / 22. 온얼굴정맥 / 23. 앞가지 / 24. 뒤가지",
+   "explanation": "4회차 · 바깥목동맥 계열과 겨드랑·속가슴·가슴대동맥 계열을 한 장에 가로얼굴동맥은 **얕은관자동맥** 가지 — 얼굴동맥 가지가 아니다(태깅 단골 함정). 얼굴정맥은 판막이 없어 눈구석정맥–위눈정맥을 거쳐 **해면정맥굴**과 통한다(위험삼각). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-vessel",
+     "page": null,
+     "section": "얼굴·가슴벽의 동맥과 정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0282",
+   "style": "spotter",
+   "session": 4,
+   "region": "multi",
+   "subregion": "s04-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(얼굴·가슴벽의 동맥과 정맥)에서 **가슴벽의 혈관** 계통에 해당하는 번호핀 4, 10, 11, 12, 25, 26, 27, 28, 29 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 가슴벽의 혈관 / 10. 겨드랑동맥 / 11. 속가슴동맥 / 12. 가슴대동맥 / 25. 가슴봉우리동맥 / 26. 가쪽가슴동맥 / 27. 앞갈비사이동맥 / 28. 근육가로막·위배벽동맥 / 29. 뒤갈비사이동맥",
+   "explanation": "4회차 · 바깥목동맥 계열과 겨드랑·속가슴·가슴대동맥 계열을 한 장에 가로얼굴동맥은 **얕은관자동맥** 가지 — 얼굴동맥 가지가 아니다(태깅 단골 함정). 얼굴정맥은 판막이 없어 눈구석정맥–위눈정맥을 거쳐 **해면정맥굴**과 통한다(위험삼각). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s04-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s04-vessel",
+     "page": null,
+     "section": "얼굴·가슴벽의 동맥과 정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0283",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵)에서 **허파뿌리** 계통에 해당하는 번호핀 2, 6, 7, 8, 9, 10, 22, 23, 24 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 허파뿌리 / 6. 앞→뒤 순서 / 7. 위→아래(오른쪽) / 8. 위→아래(왼쪽) / 9. 가로막신경 / 10. 미주신경 / 22. ① 허파정맥 / 23. ② 허파동맥 / 24. ③ 기관지",
+   "explanation": "5회차 · 배열 순서가 그대로 태깅 문제가 되는 세 자리 허파뿌리 앞→뒤는 좌우 공통 **정–동–기(VAB)**, 위→아래만 좌우가 다르다. 심장막가로굴 앞벽=대동맥+허파동맥줄기, 뒤벽=위대정맥+왼심방 — 손가락이 통과한다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0284",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵)에서 **심장막굴** 계통에 해당하는 번호핀 3, 11, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 심장막굴 / 11. 가로굴 / 12. 빗굴 / 13. 심장막 감각",
+   "explanation": "5회차 · 배열 순서가 그대로 태깅 문제가 되는 세 자리 허파뿌리 앞→뒤는 좌우 공통 **정–동–기(VAB)**, 위→아래만 좌우가 다르다. 심장막가로굴 앞벽=대동맥+허파동맥줄기, 뒤벽=위대정맥+왼심방 — 손가락이 통과한다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0285",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵)에서 **관자아래우묵** 계통에 해당하는 번호핀 4, 14, 15, 16, 17, 18 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 관자아래우묵 / 14. ① 가쪽날개근 / 15. ② 날개정맥얼기 / 16. ③ 위턱동맥 / 17. ④ 아래이틀신경·혀신경 / 18. ⑤ 안쪽날개근",
+   "explanation": "5회차 · 배열 순서가 그대로 태깅 문제가 되는 세 자리 허파뿌리 앞→뒤는 좌우 공통 **정–동–기(VAB)**, 위→아래만 좌우가 다르다. 심장막가로굴 앞벽=대동맥+허파동맥줄기, 뒤벽=위대정맥+왼심방 — 손가락이 통과한다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0286",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵)에서 **갈비가로막오목** 계통에 해당하는 번호핀 5, 19, 20, 21 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 갈비가로막오목 / 19. 가슴막 아래경계 8·10·12 / 20. 허파 아래경계 6·8·10 / 21. 갈비뼈 위모서리로",
+   "explanation": "5회차 · 배열 순서가 그대로 태깅 문제가 되는 세 자리 허파뿌리 앞→뒤는 좌우 공통 **정–동–기(VAB)**, 위→아래만 좌우가 다르다. 심장막가로굴 앞벽=대동맥+허파동맥줄기, 뒤벽=위대정맥+왼심방 — 손가락이 통과한다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 허파뿌리·심장막굴·관자아래우묵"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0287",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(가슴안과 관자아래우묵의 신경)에서 **가로막신경** 계통에 해당하는 번호핀 2, 7, 17, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 가로막신경 / 7. 허파뿌리 앞으로 / 17. 심장막가지 / 18. 가로막 운동 / 19. 가로막가슴막·배막 감각",
+   "explanation": "5회차 · 목에서 내려온 신경이 허파뿌리를 앞뒤로 가르고, V3가 관자아래우묵을 채운다 가로막신경은 허파뿌리 **앞**, 미주신경은 허파뿌리 **뒤** — 세로칸에서 둘을 가르는 유일한 기준. 고실끈신경은 얼굴신경(VII) 가지인데 **혀신경(V3)에 얹혀** 간다 — 미각·침샘은 V가 아니다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-nerve",
+     "page": null,
+     "section": "가슴안과 관자아래우묵의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0288",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(가슴안과 관자아래우묵의 신경)에서 **미주신경 X** 계통에 해당하는 번호핀 3, 8, 9, 10 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 미주신경 X / 8. 왼되돌이후두신경 / 9. 허파가지·식도얼기 / 10. 심장가지",
+   "explanation": "5회차 · 목에서 내려온 신경이 허파뿌리를 앞뒤로 가르고, V3가 관자아래우묵을 채운다 가로막신경은 허파뿌리 **앞**, 미주신경은 허파뿌리 **뒤** — 세로칸에서 둘을 가르는 유일한 기준. 고실끈신경은 얼굴신경(VII) 가지인데 **혀신경(V3)에 얹혀** 간다 — 미각·침샘은 V가 아니다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-nerve",
+     "page": null,
+     "section": "가슴안과 관자아래우묵의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0289",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(가슴안과 관자아래우묵의 신경)에서 **갈비사이신경** 계통에 해당하는 번호핀 4, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 갈비사이신경 / 11. 벽쪽가슴막 감각 / 12. 가쪽·앞피부가지",
+   "explanation": "5회차 · 목에서 내려온 신경이 허파뿌리를 앞뒤로 가르고, V3가 관자아래우묵을 채운다 가로막신경은 허파뿌리 **앞**, 미주신경은 허파뿌리 **뒤** — 세로칸에서 둘을 가르는 유일한 기준. 고실끈신경은 얼굴신경(VII) 가지인데 **혀신경(V3)에 얹혀** 간다 — 미각·침샘은 V가 아니다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-nerve",
+     "page": null,
+     "section": "가슴안과 관자아래우묵의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0290",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(가슴안과 관자아래우묵의 신경)에서 **아래턱신경 V3** 계통에 해당하는 번호핀 5, 13, 14, 20, 21, 22, 23, 24, 25, 26, 27 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 아래턱신경 V3 / 13. 앞줄기 / 14. 뒤줄기 / 20. 깊은관자신경 / 21. 깨물근신경 / 22. 가쪽날개근신경 / 23. 볼신경 / 24. 귓바퀴관자신경 / 25. 혀신경 / 26. 아래이틀신경 / 27. 턱목뿔근신경",
+   "explanation": "5회차 · 목에서 내려온 신경이 허파뿌리를 앞뒤로 가르고, V3가 관자아래우묵을 채운다 가로막신경은 허파뿌리 **앞**, 미주신경은 허파뿌리 **뒤** — 세로칸에서 둘을 가르는 유일한 기준. 고실끈신경은 얼굴신경(VII) 가지인데 **혀신경(V3)에 얹혀** 간다 — 미각·침샘은 V가 아니다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-nerve",
+     "page": null,
+     "section": "가슴안과 관자아래우묵의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0291",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(가슴안과 관자아래우묵의 신경)에서 **얹혀 가는 섬유** 계통에 해당하는 번호핀 6, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 얹혀 가는 섬유 / 15. 고실끈신경 / 16. 귀신경절",
+   "explanation": "5회차 · 목에서 내려온 신경이 허파뿌리를 앞뒤로 가르고, V3가 관자아래우묵을 채운다 가로막신경은 허파뿌리 **앞**, 미주신경은 허파뿌리 **뒤** — 세로칸에서 둘을 가르는 유일한 기준. 고실끈신경은 얼굴신경(VII) 가지인데 **혀신경(V3)에 얹혀** 간다 — 미각·침샘은 V가 아니다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-nerve",
+     "page": null,
+     "section": "가슴안과 관자아래우묵의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0292",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(대동맥활·심장동맥과 위턱동맥)에서 **대동맥활** 계통에 해당하는 번호핀 2, 8, 9, 10, 20, 21 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 대동맥활 / 8. 팔머리동맥 / 9. 왼온목동맥 / 10. 왼빗장밑동맥 / 20. 오른온목동맥 / 21. 오른빗장밑동맥",
+   "explanation": "5회차 · 세로칸의 큰 줄기와, 관자아래우묵을 채우는 위턱동맥 3부 위턱동맥은 아래턱뼈목에서 갈려 **3부**로 나뉜다 — 1부는 구멍으로, 2부는 근육으로, 3부는 우묵으로. 심장정맥굴은 **왼심방 뒤 방실고랑**을 지나 오른심방으로 — 동맥과 반대 방향으로 훑는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "대동맥활·심장동맥과 위턱동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0293",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(대동맥활·심장동맥과 위턱동맥)에서 **오름대동맥** 계통에 해당하는 번호핀 3, 11, 12, 22, 23, 24, 25, 26, 37 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 오름대동맥 / 11. 오른심장동맥 / 12. 왼심장동맥 / 22. 굴심방결절가지 / 23. 오른모서리가지 / 24. 뒤심실사이가지 / 25. 앞심실사이가지 / 26. 휘돌이가지 / 37. 왼모서리가지",
+   "explanation": "5회차 · 세로칸의 큰 줄기와, 관자아래우묵을 채우는 위턱동맥 3부 위턱동맥은 아래턱뼈목에서 갈려 **3부**로 나뉜다 — 1부는 구멍으로, 2부는 근육으로, 3부는 우묵으로. 심장정맥굴은 **왼심방 뒤 방실고랑**을 지나 오른심방으로 — 동맥과 반대 방향으로 훑는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "대동맥활·심장동맥과 위턱동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0294",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(대동맥활·심장동맥과 위턱동맥)에서 **심장의 정맥** 계통에 해당하는 번호핀 4, 13, 27, 28, 29 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 심장의 정맥 / 13. 심장정맥굴 / 27. 큰심장정맥 / 28. 중간심장정맥 / 29. 작은심장정맥",
+   "explanation": "5회차 · 세로칸의 큰 줄기와, 관자아래우묵을 채우는 위턱동맥 3부 위턱동맥은 아래턱뼈목에서 갈려 **3부**로 나뉜다 — 1부는 구멍으로, 2부는 근육으로, 3부는 우묵으로. 심장정맥굴은 **왼심방 뒤 방실고랑**을 지나 오른심방으로 — 동맥과 반대 방향으로 훑는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "대동맥활·심장동맥과 위턱동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0295",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(대동맥활·심장동맥과 위턱동맥)에서 **위턱동맥** 계통에 해당하는 번호핀 6, 15, 16, 17, 30, 31, 32, 33, 34, 35, 36 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 위턱동맥 / 15. 1부 아래턱부 / 16. 2부 날개근부 / 17. 3부 날개입천장부 / 30. 중간뇌막동맥 / 31. 아래이틀동맥 / 32. 깊은관자동맥 / 33. 깨물동맥·날개근가지 / 34. 볼동맥 / 35. 눈확아래동맥 / 36. 나비입천장동맥",
+   "explanation": "5회차 · 세로칸의 큰 줄기와, 관자아래우묵을 채우는 위턱동맥 3부 위턱동맥은 아래턱뼈목에서 갈려 **3부**로 나뉜다 — 1부는 구멍으로, 2부는 근육으로, 3부는 우묵으로. 심장정맥굴은 **왼심방 뒤 방실고랑**을 지나 오른심방으로 — 동맥과 반대 방향으로 훑는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "대동맥활·심장동맥과 위턱동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0296",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(대동맥활·심장동맥과 위턱동맥)에서 **날개정맥얼기** 계통에 해당하는 번호핀 7, 18, 19 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "7. 날개정맥얼기 / 18. 위턱정맥 / 19. 해면정맥굴과 교통",
+   "explanation": "5회차 · 세로칸의 큰 줄기와, 관자아래우묵을 채우는 위턱동맥 3부 위턱동맥은 아래턱뼈목에서 갈려 **3부**로 나뉜다 — 1부는 구멍으로, 2부는 근육으로, 3부는 우묵으로. 심장정맥굴은 **왼심방 뒤 방실고랑**을 지나 오른심방으로 — 동맥과 반대 방향으로 훑는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "대동맥활·심장동맥과 위턱동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0297",
+   "style": "spotter",
+   "session": 5,
+   "region": "multi",
+   "subregion": "s05-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(대동맥활·심장동맥과 위턱동맥)에서 **위대정맥** 계통에 해당하는 번호핀 5, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 위대정맥 / 14. 홀정맥",
+   "explanation": "5회차 · 세로칸의 큰 줄기와, 관자아래우묵을 채우는 위턱동맥 3부 위턱동맥은 아래턱뼈목에서 갈려 **3부**로 나뉜다 — 1부는 구멍으로, 2부는 근육으로, 3부는 우묵으로. 심장정맥굴은 **왼심방 뒤 방실고랑**을 지나 오른심방으로 — 동맥과 반대 방향으로 훑는다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s05-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s05-vessel",
+     "page": null,
+     "section": "대동맥활·심장동맥과 위턱동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0298",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 목·넙다리)에서 **목혈관신경집** 계통에 해당하는 번호핀 2, 6, 7, 8 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 목혈관신경집 / 6. 온목동맥 / 7. 속목정맥 / 8. 미주신경 X",
+   "explanation": "6회차 · 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히 본다 목혈관신경집: 동맥 안쪽 · 정맥 가쪽 · 미주신경은 둘 사이 **뒤**. 넙다리삼각 NAVEL: 가쪽부터 신경–동맥–정맥–빈공간–림프. 정맥이 동맥 **안쪽**이다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 목·넙다리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0299",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 목·넙다리)에서 **넙다리혈관집** 계통에 해당하는 번호핀 3, 9, 10, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 넙다리혈관집 / 9. 넙다리신경 / 10. 넙다리동맥 / 11. 넙다리정맥 / 12. 넙다리관 + 림프절",
+   "explanation": "6회차 · 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히 본다 목혈관신경집: 동맥 안쪽 · 정맥 가쪽 · 미주신경은 둘 사이 **뒤**. 넙다리삼각 NAVEL: 가쪽부터 신경–동맥–정맥–빈공간–림프. 정맥이 동맥 **안쪽**이다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 목·넙다리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0300",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 목·넙다리)에서 **모음근굴** 계통에 해당하는 번호핀 4, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 모음근굴 / 13. 넙다리동·정맥 / 14. 두렁신경",
+   "explanation": "6회차 · 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히 본다 목혈관신경집: 동맥 안쪽 · 정맥 가쪽 · 미주신경은 둘 사이 **뒤**. 넙다리삼각 NAVEL: 가쪽부터 신경–동맥–정맥–빈공간–림프. 정맥이 동맥 **안쪽**이다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 목·넙다리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0301",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 목·넙다리)에서 **방패목뿔막** 계통에 해당하는 번호핀 5, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 방패목뿔막 / 15. 위후두동맥 / 16. 위후두신경 속가지",
+   "explanation": "6회차 · 목혈관신경집과 넙다리혈관집 — 두 '집' 의 배열을 나란히 본다 목혈관신경집: 동맥 안쪽 · 정맥 가쪽 · 미주신경은 둘 사이 **뒤**. 넙다리삼각 NAVEL: 가쪽부터 신경–동맥–정맥–빈공간–림프. 정맥이 동맥 **안쪽**이다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 목·넙다리"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0302",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목·다리 앞의 신경 계보)에서 **목신경얼기** 계통에 해당하는 번호핀 2, 5, 6, 7, 12, 13, 14, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 목신경얼기 / 5. 피부가지 4개 / 6. 목신경고리 / 7. 가로막신경 C3–5 / 12. 작은뒤통수신경 / 13. 큰귓바퀴신경 / 14. 가로목신경 / 15. 빗장위신경 / 16. 목뿔아래근육",
+   "explanation": "6회차 · 목신경얼기는 한 점(신경점)에서, 허리신경얼기는 큰허리근 뒤에서 넓은목근은 목신경이 아니라 **얼굴신경 목가지** — 운동이면 얼굴신경, 감각이면 가로목신경. 폐쇄신경 앞가지는 짧은모음근 **앞면**, 뒤가지는 **뒷면** — 층을 가르는 지표. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-nerve",
+     "page": null,
+     "section": "목·다리 앞의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0303",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목·다리 앞의 신경 계보)에서 **허리신경얼기** 계통에 해당하는 번호핀 4, 9, 10, 11, 17, 18, 19, 20, 21, 22, 23, 24 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 허리신경얼기 / 9. 넙다리신경 L2–L4 / 10. 폐쇄신경 L2–L4 / 11. 가쪽넙다리피부신경 L2–3 / 17. 앞피부가지 / 18. 넙다리네갈래근·넙다리빗근 / 19. 두렁신경 / 20. 앞가지 / 21. 뒤가지 / 22. 긴모음근·두덩정강근·짧은모음근 / 23. 앞피부가지 / 24. 바깥폐쇄근·큰모음근 모음부분",
+   "explanation": "6회차 · 목신경얼기는 한 점(신경점)에서, 허리신경얼기는 큰허리근 뒤에서 넓은목근은 목신경이 아니라 **얼굴신경 목가지** — 운동이면 얼굴신경, 감각이면 가로목신경. 폐쇄신경 앞가지는 짧은모음근 **앞면**, 뒤가지는 **뒷면** — 층을 가르는 지표. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-nerve",
+     "page": null,
+     "section": "목·다리 앞의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0304",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목·다리 앞의 신경 계보)에서 **얼굴신경 VII** 계통에 해당하는 번호핀 3, 8 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 얼굴신경 VII / 8. 목가지",
+   "explanation": "6회차 · 목신경얼기는 한 점(신경점)에서, 허리신경얼기는 큰허리근 뒤에서 넓은목근은 목신경이 아니라 **얼굴신경 목가지** — 운동이면 얼굴신경, 감각이면 가로목신경. 폐쇄신경 앞가지는 짧은모음근 **앞면**, 뒤가지는 **뒷면** — 층을 가르는 지표. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-nerve",
+     "page": null,
+     "section": "목·다리 앞의 신경 계보"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0305",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(바깥목동맥과 넙다리동맥)에서 **온목동맥** 계통에 해당하는 번호핀 2, 7, 8, 16, 17, 18, 19, 24, 25, 26, 27, 28, 29, 30, 31 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 온목동맥 / 7. 속목동맥 / 8. 바깥목동맥 / 16. 앞가지 / 17. 뒤가지 / 18. 안쪽가지 / 19. 종말가지 / 24. 위갑상동맥 / 25. 혀동맥 / 26. 얼굴동맥 / 27. 뒤통수동맥 / 28. 뒤귓바퀴동맥 / 29. 오름인두동맥 / 30. 위턱동맥 / 31. 얕은관자동맥",
+   "explanation": "6회차 · 목동맥삼각에서 갈리고, 넙다리삼각에서 갈린다 온목동맥은 갈리기 전까지 **가지를 내지 않는다** — 방패연골 위모서리(C4)에서 갈림. 안쪽넙다리휘돌이동맥이 넙다리뼈 머리·목의 주 공급원 — 끊기면 무혈성괴사. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-vessel",
+     "page": null,
+     "section": "바깥목동맥과 넙다리동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0306",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(바깥목동맥과 넙다리동맥)에서 **넙다리동맥** 계통에 해당하는 번호핀 3, 9, 10, 20, 21, 22, 23 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 넙다리동맥 / 9. 깊은넙다리동맥 / 10. 모음근구멍 통과 / 20. 안쪽넙다리휘돌이동맥 / 21. 가쪽넙다리휘돌이동맥 / 22. 관통동맥 3–4개 / 23. 오금동맥",
+   "explanation": "6회차 · 목동맥삼각에서 갈리고, 넙다리삼각에서 갈린다 온목동맥은 갈리기 전까지 **가지를 내지 않는다** — 방패연골 위모서리(C4)에서 갈림. 안쪽넙다리휘돌이동맥이 넙다리뼈 머리·목의 주 공급원 — 끊기면 무혈성괴사. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-vessel",
+     "page": null,
+     "section": "바깥목동맥과 넙다리동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0307",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(바깥목동맥과 넙다리동맥)에서 **속목정맥** 계통에 해당하는 번호핀 4, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 속목정맥 / 11. 얼굴정맥·혀정맥·위갑상정맥 / 12. 빗장밑정맥과 합류",
+   "explanation": "6회차 · 목동맥삼각에서 갈리고, 넙다리삼각에서 갈린다 온목동맥은 갈리기 전까지 **가지를 내지 않는다** — 방패연골 위모서리(C4)에서 갈림. 안쪽넙다리휘돌이동맥이 넙다리뼈 머리·목의 주 공급원 — 끊기면 무혈성괴사. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-vessel",
+     "page": null,
+     "section": "바깥목동맥과 넙다리동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0308",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(바깥목동맥과 넙다리동맥)에서 **넙다리정맥** 계통에 해당하는 번호핀 6, 14, 15 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 넙다리정맥 / 14. 큰두렁정맥 / 15. 깊은넙다리정맥",
+   "explanation": "6회차 · 목동맥삼각에서 갈리고, 넙다리삼각에서 갈린다 온목동맥은 갈리기 전까지 **가지를 내지 않는다** — 방패연골 위모서리(C4)에서 갈림. 안쪽넙다리휘돌이동맥이 넙다리뼈 머리·목의 주 공급원 — 끊기면 무혈성괴사. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-vessel",
+     "page": null,
+     "section": "바깥목동맥과 넙다리동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0309",
+   "style": "spotter",
+   "session": 6,
+   "region": "multi",
+   "subregion": "s06-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(바깥목동맥과 넙다리동맥)에서 **바깥목정맥** 계통에 해당하는 번호핀 5, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 바깥목정맥 / 13. 빗장밑정맥",
+   "explanation": "6회차 · 목동맥삼각에서 갈리고, 넙다리삼각에서 갈린다 온목동맥은 갈리기 전까지 **가지를 내지 않는다** — 방패연골 위모서리(C4)에서 갈림. 안쪽넙다리휘돌이동맥이 넙다리뼈 머리·목의 주 공급원 — 끊기면 무혈성괴사. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s06-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s06-vessel",
+     "page": null,
+     "section": "바깥목동맥과 넙다리동맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0310",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 위가슴문·발목)에서 **목갈비근틈새** 계통에 해당하는 번호핀 2, 5, 6, 7 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 목갈비근틈새 / 5. 빗장밑정맥 / 6. 빗장밑동맥 2부 / 7. 팔신경얼기",
+   "explanation": "7회차 · 목갈비근이 가르는 목의 통로와, 굽힘근지지띠 밑 발목굴 앞목갈비근이 기준: **정맥은 앞, 동맥·팔신경얼기는 뒤**(목갈비근틈새). 발목굴 앞→뒤 'Tom, Dick, And Very Nervous Harry' — 동맥·신경이 가운데 낀다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 위가슴문·발목"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0311",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 위가슴문·발목)에서 **발목굴(굽힘근지지띠 밑)** 계통에 해당하는 번호핀 3, 8, 9, 10, 11, 12 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 발목굴(굽힘근지지띠 밑) / 8. ① 뒤정강근 힘줄 / 9. ② 긴발가락굽힘근 힘줄 / 10. ③ 뒤정강동맥 / 11. ④ 정강신경 / 12. ⑤ 긴엄지굽힘근 힘줄",
+   "explanation": "7회차 · 목갈비근이 가르는 목의 통로와, 굽힘근지지띠 밑 발목굴 앞목갈비근이 기준: **정맥은 앞, 동맥·팔신경얼기는 뒤**(목갈비근틈새). 발목굴 앞→뒤 'Tom, Dick, And Very Nervous Harry' — 동맥·신경이 가운데 낀다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 위가슴문·발목"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0312",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-bundle",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(함께 지나는 것 — 위가슴문·발목)에서 **종아리근지지띠 밑** 계통에 해당하는 번호핀 4, 13, 14, 15 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 종아리근지지띠 밑 / 13. 긴종아리근 힘줄 / 14. 짧은종아리근 힘줄 / 15. 얕은종아리신경",
+   "explanation": "7회차 · 목갈비근이 가르는 목의 통로와, 굽힘근지지띠 밑 발목굴 앞목갈비근이 기준: **정맥은 앞, 동맥·팔신경얼기는 뒤**(목갈비근틈새). 발목굴 앞→뒤 'Tom, Dick, And Very Nervous Harry' — 동맥·신경이 가운데 낀다. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-bundle-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-bundle",
+     "page": null,
+     "section": "함께 지나는 것 — 위가슴문·발목"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0313",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·발목의 신경)에서 **미주신경 X** 계통에 해당하는 번호핀 2, 7, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 미주신경 X / 7. 되돌이후두신경(오른) / 8. 되돌이후두신경(왼) / 9. 위후두신경",
+   "explanation": "7회차 · 위가슴문을 지나는 신경과, 굽힘근지지띠 밑을 지나는 신경 되돌이후두신경은 좌우 경로가 다르다 — 오른쪽 빗장밑동맥 / 왼쪽 대동맥활. 정강신경은 굽힘근지지띠 **아래**에서 안쪽·가쪽 발바닥신경으로 갈린다(발목굴증후군). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-nerve",
+     "page": null,
+     "section": "목뿌리·발목의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0314",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·발목의 신경)에서 **온종아리신경** 계통에 해당하는 번호핀 5, 12, 13 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 온종아리신경 / 12. 얕은종아리신경 / 13. 깊은종아리신경",
+   "explanation": "7회차 · 위가슴문을 지나는 신경과, 굽힘근지지띠 밑을 지나는 신경 되돌이후두신경은 좌우 경로가 다르다 — 오른쪽 빗장밑동맥 / 왼쪽 대동맥활. 정강신경은 굽힘근지지띠 **아래**에서 안쪽·가쪽 발바닥신경으로 갈린다(발목굴증후군). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-nerve",
+     "page": null,
+     "section": "목뿌리·발목의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0315",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·발목의 신경)에서 **정강신경** 계통에 해당하는 번호핀 6, 14, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "6. 정강신경 / 14. 안쪽발바닥신경 / 15. 가쪽발바닥신경 / 16. 안쪽발꿈치가지",
+   "explanation": "7회차 · 위가슴문을 지나는 신경과, 굽힘근지지띠 밑을 지나는 신경 되돌이후두신경은 좌우 경로가 다르다 — 오른쪽 빗장밑동맥 / 왼쪽 대동맥활. 정강신경은 굽힘근지지띠 **아래**에서 안쪽·가쪽 발바닥신경으로 갈린다(발목굴증후군). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-nerve",
+     "page": null,
+     "section": "목뿌리·발목의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0316",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-nerve",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·발목의 신경)에서 **가로막신경 · 팔신경얼기** 계통에 해당하는 번호핀 3, 4, 10, 11 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 가로막신경 / 4. 팔신경얼기 / 10. 가로막 / 11. 위가슴문 통과",
+   "explanation": "7회차 · 위가슴문을 지나는 신경과, 굽힘근지지띠 밑을 지나는 신경 되돌이후두신경은 좌우 경로가 다르다 — 오른쪽 빗장밑동맥 / 왼쪽 대동맥활. 정강신경은 굽힘근지지띠 **아래**에서 안쪽·가쪽 발바닥신경으로 갈린다(발목굴증후군). 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-nerve-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-nerve",
+     "page": null,
+     "section": "목뿌리·발목의 신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0317",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·종아리의 동맥과 정맥)에서 **빗장밑동맥** 계통에 해당하는 번호핀 2, 6, 7, 8, 9 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "2. 빗장밑동맥 / 6. 1부 — 척추동맥 / 7. 1부 — 속가슴동맥 / 8. 1부 — 갑상목동맥 / 9. 2부 — 갈비목동맥",
+   "explanation": "7회차 · 빗장밑동맥 3부와 오금동맥 아래 갈래를 나란히 빗장밑동맥은 **앞목갈비근**이 1·2·3부로 나눈다 — 겨드랑동맥을 작은가슴근이 나누는 것과 같은 꼴. 발바닥동맥활은 **가쪽발바닥동맥**이 주로 만든다 — 손의 깊은손바닥동맥활에 해당. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-vessel",
+     "page": null,
+     "section": "목뿌리·종아리의 동맥과 정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0318",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·종아리의 동맥과 정맥)에서 **목의 정맥** 계통에 해당하는 번호핀 3, 10, 11 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "3. 목의 정맥 / 10. 속목정맥 / 11. 빗장밑정맥",
+   "explanation": "7회차 · 빗장밑동맥 3부와 오금동맥 아래 갈래를 나란히 빗장밑동맥은 **앞목갈비근**이 1·2·3부로 나눈다 — 겨드랑동맥을 작은가슴근이 나누는 것과 같은 꼴. 발바닥동맥활은 **가쪽발바닥동맥**이 주로 만든다 — 손의 깊은손바닥동맥활에 해당. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-vessel",
+     "page": null,
+     "section": "목뿌리·종아리의 동맥과 정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0319",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·종아리의 동맥과 정맥)에서 **오금동맥** 계통에 해당하는 번호핀 4, 12, 13, 14 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "4. 오금동맥 / 12. 앞정강동맥 / 13. 뒤정강동맥 / 14. 종아리동맥",
+   "explanation": "7회차 · 빗장밑동맥 3부와 오금동맥 아래 갈래를 나란히 빗장밑동맥은 **앞목갈비근**이 1·2·3부로 나눈다 — 겨드랑동맥을 작은가슴근이 나누는 것과 같은 꼴. 발바닥동맥활은 **가쪽발바닥동맥**이 주로 만든다 — 손의 깊은손바닥동맥활에 해당. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-vessel",
+     "page": null,
+     "section": "목뿌리·종아리의 동맥과 정맥"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0320",
+   "style": "spotter",
+   "session": 7,
+   "region": "multi",
+   "subregion": "s07-vessel",
+   "examPhase": "tagging-1",
+   "stem": "계보 구조도 퀴즈판(목뿌리·종아리의 동맥과 정맥)에서 **발의 동맥활** 계통에 해당하는 번호핀 5, 15, 16 번이 가리키는 구조의 이름을 번호 순서대로 답하시오.",
+   "choices": null,
+   "answer": "5. 발의 동맥활 / 15. 깊은발바닥동맥활 / 16. 발등동맥",
+   "explanation": "7회차 · 빗장밑동맥 3부와 오금동맥 아래 갈래를 나란히 빗장밑동맥은 **앞목갈비근**이 1·2·3부로 나눈다 — 겨드랑동맥을 작은가슴근이 나누는 것과 같은 꼴. 발바닥동맥활은 **가쪽발바닥동맥**이 주로 만든다 — 손의 깊은손바닥동맥활에 해당. 라벨판(tree-…-labeled.svg)과 짝이므로 퀴즈판을 먼저 풀고 라벨판으로 채점한다. 이 도해는 직접 그린 것이라 웹에 공개된다 — 실사 태깅 문항과 달리 화면에서 바로 풀 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/tree-s07-vessel-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "pipelines/branch_specs.py — s07-vessel",
+     "page": null,
+     "section": "목뿌리·종아리의 동맥과 정맥"
     }
    ]
   },
