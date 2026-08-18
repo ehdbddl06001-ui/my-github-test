@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1643,
+  "total": 1644,
   "byType": {
    "kmle": 619,
+   "anatomy": 468,
    "usmle": 96,
-   "anatomy": 467,
    "paper": 444,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 467,
+   "Anatomy": 468,
    "Cardiology": 133,
    "Nephrology": 117,
    "Infectious Disease": 93,
@@ -53,7 +53,7 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 973,
+   "high": 974,
    "medium": 621,
    "low": 49
   },
@@ -699,6 +699,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0618.md",
    "snippet": "78세 남자가 아침에 화장실에서 갑자기 정신을 잃고 쓰러져 응급실에 왔다. 곧 의식은 돌아왔으나 어지럽고 식은땀이 난다고 호소한다. 최근 며칠간 비슷한 실신이 두 번 더 있었다. 복용 중인 심박수 낮추는 약은 없다. 활력징후·검사와 심전도는 자료와 같다. 가장 먼저 시행할 처치는? A. 아트로핀을 정맥으로 준다 B. 아데노신을 정맥으로 준다 C. 경피 심박조율을 시작한다 D. 에스모롤을 정맥으로 준다 E. 별다른 처치 없이 경",
    "text": "Cardiology Complete (Third-degree) Atrioventricular Block complete-heart-block av-dissociation syncope transcutaneous-pacing bradyarrhythmia KMLE 2026 / Claude Routine 78세 남자가 아침에 화장실에서 갑자기 정신을 잃고 쓰러져 응급실에 왔다. 곧 의식은 돌아왔으나 어지럽고 식은땀이 난다고 호소한다. 최근 며칠간 비슷한 실신이 두 번 더 있었다. 복용 중인 심박수 낮추는 약은 없다. 활력징후·검사와 심전도는 자료와 같다. 가장 먼저 시행할 처치는? A. 아트로핀을 정맥으로 준다 B. 아데노신을 정맥으로 준다 C. 경피 심박조율을 시작한다 D. 에스모롤을 정맥으로 준다 E. 별다른 처치 없이 경과를 관찰한다 P파와 QRS가 서로 독립적으로 규칙적인 방실해리와 느린 넓은QRS 이스케이프는 완전방실차단이다. 저혈압·반복 실신으로 혈역학적으로 불안정하고 차단 부위가 방실결절 아래(넓은 QRS)라 아트로핀 반응을 기대하기 어렵다. 즉시 경피 심박조율로 심박수를 확보하고 경정맥 조율·영구 인공심박동기로 넘어간다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-19",
+   "type": "anatomy",
+   "unit": "등·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-19",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-19",
+   "path": "content/anatomy/daily/2026-08-19.md",
+   "snippet": "오늘의 학습 (2026 08 19 · t1 prep) 다음 수업/시험: 2026 08 20 등 얕은층·중간층·깊은층 근육, 볼기부위·넓적다리 뒤부분 Tagging 1까지 22일 · Tagging 2까지 61일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 33개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-19 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 19 · t1 prep) 다음 수업/시험: 2026 08 20 등 얕은층·중간층·깊은층 근육, 볼기부위·넓적다리 뒤부분 Tagging 1까지 22일 · Tagging 2까지 61일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 33개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0108",
