@@ -82,7 +82,14 @@ class Builder:
         if self.page is None or self.y + need > PAGE_H - MARGIN:
             self.new_page()
 
+    @staticmethod
+    def _plain(s: str) -> str:
+        """카드 본문의 `**강조**` 표시를 지운다 — 이 PDF 폰트에는 굵은 자형이 없어
+        별표가 글자 그대로 찍혀 오히려 읽기를 방해한다(실측)."""
+        return s.replace("**", "")
+
     def _wrap(self, text: str, size: float, width: float) -> list[str]:
+        text = self._plain(text)
         lines: list[str] = []
         for para in text.split("\n"):
             if not para:
@@ -120,11 +127,15 @@ class Builder:
         self.y += gap
 
     def heading(self, s: str, size: float = 15, color=ACCENT, rule: bool = True):
-        self._ensure(size * 2.4)
+        # 제목도 **접어서** 쓴다 — 정답을 제목 줄에 싣는 지면에서 긴 정답이 오른쪽
+        # 여백 밖으로 잘려 나가 답이 안 보였다(2회차 '정답 24' 실측).
+        lines = self._wrap(s, size, BODY_W)
+        self._ensure(size * 1.35 * len(lines) + size)
         self.y += 4
-        self.page.insert_text((MARGIN, self.y + size), s,
-                              fontname=FONT_NAME, fontsize=size, color=color)
-        self.y += size * 1.35
+        for ln in lines:
+            self.page.insert_text((MARGIN, self.y + size), ln,
+                                  fontname=FONT_NAME, fontsize=size, color=color)
+            self.y += size * 1.35
         if rule:
             self.page.draw_line((MARGIN, self.y), (PAGE_W - MARGIN, self.y),
                                 color=RULE, width=0.8)
@@ -370,11 +381,18 @@ def build_pdf(manifest: dict, root: Path = ROOT) -> Path:
     for i, q in enumerate(manifest["questions"], 1):
         card = _load_card(root / q["card"])
         cards.append((i, q, card))
-        b.new_page()
+        # 그림 문항은 한 지면을 통째로 쓰고, **그림 없는 관계형 문항은 이어 붙인다** —
+        # 관계형만 24개인 회차에서 한 문항당 한 장을 쓰면 빈 지면이 24장 나온다.
+        quiz = root / q["quiz_image"] if q.get("quiz_image") else None
+        if quiz is not None:
+            b.new_page()
+        else:
+            b._ensure(170)
         b.heading(f"문제 {i}", size=15)
         b.text(card.get("stem", ""), size=11, gap=10)
-        quiz = root / q["quiz_image"]
-        if quiz.exists():
+        if quiz is None:
+            b.spacer(46)                 # 손으로 답을 적을 자리
+        elif quiz.exists():
             b.image(quiz, max_h=520, max_px=img_px, jpg_q=img_q)
         else:
             b.text(f"[이미지 없음: {q['quiz_image']}]", size=10, color=WARN)

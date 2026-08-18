@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1578,
+  "total": 1611,
   "byType": {
    "usmle": 96,
-   "anatomy": 434,
+   "anatomy": 467,
    "paper": 444,
    "kmle": 587,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 434,
+   "Anatomy": 467,
    "Cardiology": 131,
    "Nephrology": 115,
    "Infectious Disease": 91,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 908,
+   "high": 941,
    "medium": 621,
    "low": 49
   },
-  "tagCount": 2306
+  "tagCount": 2329
  },
  "docs": [
   {
@@ -193,6 +193,675 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-18.md",
    "snippet": "오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-18 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 18 · t1 prep) 다음 수업/시험: 2026 08 18 orientation, 위령전례, 등·다리 피부벗기기 Tagging 1까지 23일 · Tagging 2까지 62일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 24개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0365",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "엉치결절인대·엉치가시인대와 두 구멍",
+   "tags": [
+    "relation",
+    "2회차",
+    "엉치결절인대·엉치가시인대와",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0365.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 엉치결절인대·엉치가시인대와 두 구멍 2회차 · 다리 relation 2회차 엉치결절인대·엉치가시인대와 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0364",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "볼기부위 절개와 층",
+   "tags": [
+    "layer-order",
+    "2회차",
+    "볼기부위",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0364.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 볼기부위 절개와 층 2회차 · 다리 layer-order 2회차 볼기부위 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0363",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "넓은등근과 큰원근의 구별",
+   "tags": [
+    "distinction",
+    "2회차",
+    "넓은등근과",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0363.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 넓은등근과 큰원근의 구별 2회차 · 등 distinction 2회차 넓은등근과 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0362",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "등쪽어깨신경과 마름근 젖히기",
+   "tags": [
+    "course-tracing",
+    "2회차",
+    "등쪽어깨신경과",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0362.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 등쪽어깨신경과 마름근 젖히기 2회차 · 등 course-tracing 2회차 등쪽어깨신경과 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0361",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "등 근육 실습 순서",
+   "tags": [
+    "layer-order",
+    "2회차",
+    "등",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0361.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 등 근육 실습 순서 2회차 · 등 layer-order 2회차 등 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0360",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "볼기부위 피부신경 세 무리",
+   "tags": [
+    "relation",
+    "2회차",
+    "볼기부위",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0360.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 볼기부위 피부신경 세 무리 2회차 · 다리 relation 2회차 볼기부위 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0359",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넓적다리 뒤 피부밑조직과 넓은근막",
+   "tags": [
+    "layer-order",
+    "2회차",
+    "넓적다리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0359.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 넓적다리 뒤 피부밑조직과 넓은근막 2회차 · 다리 layer-order 2회차 넓적다리 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0358",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "궁둥신경의 주행과 분지",
+   "tags": [
+    "course-tracing",
+    "2회차",
+    "궁둥신경의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0358.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 궁둥신경의 주행과 분지 2회차 · 다리 course-tracing 2회차 궁둥신경의 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0357",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넓적다리 뒤칸 세 근육",
+   "tags": [
+    "relation",
+    "2회차",
+    "넓적다리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0357.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 넓적다리 뒤칸 세 근육 2회차 · 다리 relation 2회차 넓적다리 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0356",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "궁둥구멍근 아래 구조와 근육주사",
+   "tags": [
+    "clinical-application",
+    "2회차",
+    "궁둥구멍근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0356.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 궁둥구멍근 아래 구조와 근육주사 2회차 · 다리 clinical-application 2회차 궁둥구멍근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0355",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "볼기 가쪽돌림근 여섯",
+   "tags": [
+    "layer-order",
+    "2회차",
+    "볼기",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0355.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 볼기 가쪽돌림근 여섯 2회차 · 다리 layer-order 2회차 볼기 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0354",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "궁둥구멍근 — 큰궁둥구멍의 기준",
+   "tags": [
+    "relation",
+    "2회차",
+    "궁둥구멍근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0354.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 궁둥구멍근 — 큰궁둥구멍의 기준 2회차 · 다리 relation 2회차 궁둥구멍근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0353",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "중간볼기근·작은볼기근과 Trendelenburg",
+   "tags": [
+    "clinical-application",
+    "2회차",
+    "중간볼기근·작은볼기근과",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0353.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 중간볼기근·작은볼기근과 Trendelenburg 2회차 · 다리 clinical-application 2회차 중간볼기근·작은볼기근과 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0352",
+   "type": "anatomy",
+   "unit": "2회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "큰볼기근",
+   "tags": [
+    "relation",
+    "2회차",
+    "큰볼기근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0352.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 큰볼기근 2회차 · 다리 relation 2회차 큰볼기근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0351",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "고유등근육의 정의",
+   "tags": [
+    "distinction",
+    "2회차",
+    "고유등근육의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0351.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 고유등근육의 정의 2회차 · 등 distinction 2회차 고유등근육의 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0350",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "가로돌기가시근육무리",
+   "tags": [
+    "layer-order",
+    "2회차",
+    "가로돌기가시근육무리",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0350.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 가로돌기가시근육무리 2회차 · 등 layer-order 2회차 가로돌기가시근육무리 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0349",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "척주세움근 세 기둥",
+   "tags": [
+    "layer-order",
+    "2회차",
+    "척주세움근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0349.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 척주세움근 세 기둥 2회차 · 등 layer-order 2회차 척주세움근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0348",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "널판근 두 갈래",
+   "tags": [
+    "distinction",
+    "2회차",
+    "널판근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0348.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 널판근 두 갈래 2회차 · 등 distinction 2회차 널판근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0347",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "등허리근막의 층",
+   "tags": [
+    "relation",
+    "2회차",
+    "등허리근막의",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0347.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 등허리근막의 층 2회차 · 등 relation 2회차 등허리근막의 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0346",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "아래뒤톱니근",
+   "tags": [
+    "relation",
+    "2회차",
+    "아래뒤톱니근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0346.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 아래뒤톱니근 2회차 · 등 relation 2회차 아래뒤톱니근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0345",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "청진삼각",
+   "tags": [
+    "relation",
+    "2회차",
+    "청진삼각",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0345.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 청진삼각 2회차 · 등 relation 2회차 청진삼각 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0344",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "어깨올림근",
+   "tags": [
+    "relation",
+    "2회차",
+    "어깨올림근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0344.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 어깨올림근 2회차 · 등 relation 2회차 어깨올림근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0343",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "등세모근과 넓은등근의 신경 대비",
+   "tags": [
+    "distinction",
+    "2회차",
+    "등세모근과",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0343.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 등세모근과 넓은등근의 신경 대비 2회차 · 등 distinction 2회차 등세모근과 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0342",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "넓은등근 이는곳·닿는곳·신경",
+   "tags": [
+    "relation",
+    "2회차",
+    "넓은등근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20)",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0342.md",
+   "snippet": "문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter.",
+   "text": "Anatomy 넓은등근 이는곳·닿는곳·신경 2회차 · 등 relation 2회차 넓은등근 예습시험 태깅 2026 2회차 강의 스캔 목차 실측(등 얕은·중간·깊은층 / 볼기부위 / 넓적다리 뒤칸) + 임상해부학술기 3Q 2026 실습시간표 §2회차(2026-08-20) 문제 관계형 문항 — 그림 없이 구조·층·신경 관계를 묻는다(쪽지시험의 서술형 대비). 정답 및 해설 정답·해설은 frontmatter."
+  },
+  {
+   "id": "anatomy-2026-0341",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "아래안쪽무릎동맥 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "아래안쪽무릎동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 B p44",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0341.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 B p44, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 아래안쪽무릎동맥 실사 spotter (라벨 블랭크 복원본) 3회차 · 다리 spotter 복원 3회차 아래안쪽무릎동맥 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 B p44 문제 실사 spotter — 복원 이미지(3회차 B p44, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0340",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "위안쪽무릎동맥 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "위안쪽무릎동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 B p42",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0340.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 B p42, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위안쪽무릎동맥 실사 spotter (라벨 블랭크 복원본) 3회차 · 다리 spotter 복원 3회차 위안쪽무릎동맥 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 B p42 문제 실사 spotter — 복원 이미지(3회차 B p42, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0339",
+   "type": "anatomy",
+   "unit": "1회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "위볼기피부신경 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "1회차",
+    "위볼기피부신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-18 1회차 — 업로드 스캔 A p44",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0339.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(1회차 A p44, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위볼기피부신경 실사 spotter (라벨 블랭크 복원본) 1회차 · 다리 spotter 복원 1회차 위볼기피부신경 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-18 1회차 — 업로드 스캔 A p44 문제 실사 spotter — 복원 이미지(1회차 A p44, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0338",
+   "type": "anatomy",
+   "unit": "3회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "머리반가시근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "머리반가시근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 A p34",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0338.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 A p34, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 머리반가시근 실사 spotter (라벨 블랭크 복원본) 3회차 · 등 spotter 복원 3회차 머리반가시근 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 A p34 문제 실사 spotter — 복원 이미지(3회차 A p34, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0337",
+   "type": "anatomy",
+   "unit": "3회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "뒤통수동맥 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "3회차",
+    "뒤통수동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 A p33",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0337.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(3회차 A p33, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 뒤통수동맥 실사 spotter (라벨 블랭크 복원본) 3회차 · 등 spotter 복원 3회차 뒤통수동맥 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-24 3회차 — 업로드 스캔 A p33 문제 실사 spotter — 복원 이미지(3회차 A p33, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0336",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "목빗근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "6회차",
+    "목빗근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-09-03 6회차 — 업로드 스캔 A p24",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0336.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(6회차 A p24, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 목빗근 실사 spotter (라벨 블랭크 복원본) 6회차 · 목 spotter 복원 6회차 목빗근 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-09-03 6회차 — 업로드 스캔 A p24 문제 실사 spotter — 복원 이미지(6회차 A p24, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0335",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "위뒤톱니근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "위뒤톱니근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-20 2회차 — 업로드 스캔 A p20",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0335.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 A p20, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 위뒤톱니근 실사 spotter (라벨 블랭크 복원본) 2회차 · 등 spotter 복원 2회차 위뒤톱니근 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-20 2회차 — 업로드 스캔 A p20 문제 실사 spotter — 복원 이미지(2회차 A p20, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0334",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "작은마름근과 큰마름근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "작은마름근과 큰마름근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-20 2회차 — 업로드 스캔 A p13",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0334.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 A p13, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 작은마름근과 큰마름근 실사 spotter (라벨 블랭크 복원본) 2회차 · 등 spotter 복원 2회차 작은마름근과 큰마름근 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-20 2회차 — 업로드 스캔 A p13 문제 실사 spotter — 복원 이미지(2회차 A p13, 번호핀 ①~②)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
+  },
+  {
+   "id": "anatomy-2026-0333",
+   "type": "anatomy",
+   "unit": "2회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "앞톱니근 실사 spotter (라벨 블랭크 복원본)",
+   "tags": [
+    "spotter",
+    "복원",
+    "2회차",
+    "앞톱니근",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-20 2회차 — 업로드 스캔 A p7",
+   "confidence": "high",
+   "date": "2026-08-18",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0333.md",
+   "snippet": "문제 실사 spotter — 복원 이미지(2회차 A p7, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용).",
+   "text": "Anatomy 앞톱니근 실사 spotter (라벨 블랭크 복원본) 2회차 · 등 spotter 복원 2회차 앞톱니근 예습시험 태깅 2026 2회차 강의 스캔(등 얕은·중간·깊은층 / 뒤통수밑삼각 / 볼기·넓적다리 뒤 / 다리오금) 97쪽 — 부위 기준으로 2026-08-20 2회차 — 업로드 스캔 A p7 문제 실사 spotter — 복원 이미지(2회차 A p7, 번호핀 ①)는 로컬 비공개 렌더 폴더에 있다(경로는 frontmatter). 카데바 사진 + e Anatomy 영상 캡처 파생물이므로 공개 웹 게시 금지 (publishable: false 고정). 정답 및 해설 정답·해설은 frontmatter. 클린판은 같은 폴더의 clean.png (라벨 살아 있음 — 자가 채점용)."
   },
   {
    "id": "anatomy-2026-0332",

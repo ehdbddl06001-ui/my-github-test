@@ -27,14 +27,17 @@ source_refs:
   - {source_file_id: "1SrTdEEy8ay95nl2Pqoa7NAwRYCGGFLmm", source_file_name: "2회차(0818) 김홍태pf.pdf", page: null, section: "등 얕은층 근육·볼기부위 실습영상"}
 scan_questions:
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0016.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf1_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf1_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0015.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf2_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf2_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0023.md", quiz_image: ".private/anatomy/render/uploads-b2/pf1_p2_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/pf1_p2_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0024.md", quiz_image: ".private/anatomy/render/uploads-b2/pf1_p8_quiz.png", clean_image: ".private/anatomy/render/uploads-b2/pf1_p8_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0082.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p7_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p7_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0333.md", quiz_image: ".private/anatomy/render/uploads-s02/A007_quiz.png", clean_image: ".private/anatomy/render/uploads-s02/A007_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0334.md", quiz_image: ".private/anatomy/render/uploads-s02/A013_quiz.png", clean_image: ".private/anatomy/render/uploads-s02/A013_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0335.md", quiz_image: ".private/anatomy/render/uploads-s02/A020_quiz.png", clean_image: ".private/anatomy/render/uploads-s02/A020_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0083.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p11_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p11_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0084.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p16_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p16_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0085.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p23_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p23_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0086.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p27_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p27_clean.png"}
-  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0015.md", quiz_image: ".private/anatomy/render/uploads-a1-s02/pf2_quiz.png", clean_image: ".private/anatomy/render/uploads-a1-s02/pf2_clean.png"}
+  - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0082.md", quiz_image: ".private/anatomy/render/uploads-t1/pf1_p7_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf1_p7_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0087.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p10_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p10_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0088.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p13_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p13_clean.png"}
   - {card: "content/anatomy/questions/tagging-1/anatomy-2026-0089.md", quiz_image: ".private/anatomy/render/uploads-t1/pf2_p24_quiz.png", clean_image: ".private/anatomy/render/uploads-t1/pf2_p24_clean.png"}

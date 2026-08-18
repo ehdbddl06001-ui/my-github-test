@@ -1,0 +1,65 @@
+{
+ "page": "q0150_p47",
+ "render_dir": "uploads-b3",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-b3 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false,
+   "blue": false,
+   "olive": false
+  },
+  "erase_boxes": [
+   [
+    170,
+    788,
+    882,
+    902
+   ]
+  ],
+  "label_boxes": [
+   [
+    708,
+    693,
+    1132,
+    772
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "black_boxes": [
+   [
+    380,
+    935,
+    1280,
+    1005
+   ]
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ],
+  "pins": [
+   {
+    "x": 700,
+    "y": 800,
+    "to": [
+     648,
+     700
+    ],
+    "n": 1
+   }
+  ]
+ }
+}

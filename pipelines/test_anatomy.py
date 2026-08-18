@@ -539,9 +539,12 @@ def test_restored_scans_are_reproducible() -> None:
     import restore_store
     a = restore_store.audit()
     assert a["rows"], "실사 참조 문항이 하나도 없다"
-    # 알려진 미복구분(5회차 8건)은 유예하되, 그 밖에 설정 없는 실사가 생기면 실패
+    # 알려진 미복구분만 유예한다. `restore_store` 이전에 만든 카드 몇 장은 설정이
+    # `.private/` 와 함께 사라졌다(uploads-s03 4건 · uploads-s05/A044 1건) — 원본
+    # 스캔을 다시 올려 재작업해야 복구된다. 그 밖에 설정 없는 실사가 새로 생기면 실패.
     pending = {r["dir"] for r in a["no_cfg"]}
-    assert pending <= {"uploads-s05"}, f"설정 없는 실사 문항: {sorted(pending)}"
+    assert pending <= {"uploads-s05", "uploads-s03"}, f"설정 없는 실사 문항: {sorted(pending)}"
+    assert len(a["no_cfg"]) <= 5, f"설정 없는 실사가 늘었다: {len(a['no_cfg'])}건"
     # 커밋된 설정에 비공개 경로·이미지가 섞이지 않는다
     root = Path(__file__).resolve().parents[1]
     for p in (root / "content/anatomy/restore").rglob("*.json"):

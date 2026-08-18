@@ -139,29 +139,34 @@ def grow_line(img, box, bar_top: int = BAR_TOP) -> tuple[int, int, int, int]:
     y0, y1 = max(0, y - 4), min(min(bar_top, img.shape[0]), y + h + 4)
     if y1 - y0 < 8:
         return box
-    col = (th[y0:y1] > 20).sum(axis=0) >= 3
+    col = (th[y0:y1] > 26).sum(axis=0) >= 4
+    # 한쪽으로 200px 까지만 — 밝은 표본(2회차 등근육) 위에서는 조직 결이 이 검사에
+    # 걸려 끝없이 이어져, 안 막으면 한 줄이 화면 폭 전체로 자란다(실측: 127 → 886px).
+    reach = 200
     left, gap = x, 0
-    for i in range(x - 1, max(-1, x - 620), -1):
+    for i in range(x - 1, max(-1, x - reach), -1):
         if col[i]:
             left, gap = i, 0
         else:
             gap += 1
-            if gap > 60:
+            if gap > 45:
                 break
     right, gap = x + w, 0
-    for i in range(x + w, min(img.shape[1], x + w + 620)):
+    for i in range(x + w, min(img.shape[1], x + w + reach)):
         if col[i]:
             right, gap = i + 1, 0
         else:
             gap += 1
-            if gap > 60:
+            if gap > 45:
                 break
     return (left, y, right - left, h)
 
 
 def text_lines(img, bar_top: int = BAR_TOP, grow: bool = True) -> list[tuple[int, int, int, int]]:
     """글자 '줄' 단위 박스 — 손글씨(어두운 배경)와 인쇄 캡션(밝은 표본 위)의 합집합."""
-    hand = _boxes(pen_mask(img, bar_top), 21, 45, 1.1, 600, 0)
+    # 획이 3개 이상 모여야 글자다 — 검은 여백에 닿은 표본 가장자리 한 줄기가
+    # '글자'로 잡혀 어깨·목이 통째로 검게 덮였다(2회차 A013 실측: 가짜 4줄).
+    hand = _boxes(pen_mask(img, bar_top), 21, 45, 1.1, 600, 3)
     cap = _boxes(caption_mask(img, bar_top), 17, 110, 2.0, 900, 5)
     # 두 검출기가 같은 줄을 잡으면 하나로 합친다 — 안 합치면 핀이 두 개 생긴다
     merged: list[list[int]] = []
@@ -198,20 +203,24 @@ def leaders(img, boxes, bar_top: int = BAR_TOP) -> list[tuple[int, int, int, int
     return out
 
 
-def title_band(img) -> list[int]:
+def title_band(img, lines) -> list[int]:
     """좌상단 캡션 띠 — 회차·부위 이름이 적혀 답이 새므로 통째로 덮는다.
 
     고정 `TITLE` 만으로는 긴 제목의 끝이 삐져나온다(D015 실측: 오른쪽으로 90px).
     검은 배경 위 밝은 픽셀의 실제 범위를 재서 그만큼 넓힌다.
     """
-    cv2, np = _cv()
-    g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    band = g[110:300, :1100]
-    ys, xs = np.where(band > 150)
-    if xs.size < 40:
+    # 캡션은 **항상 좌상단**이다. 오른쪽까지 열어 두면 표본의 밝은 결이 끌려 들어와
+    # 화면 위쪽이 통째로 검게 덮인다(2회차 A013 실측: x 39~968 이 한 박스가 됐다).
+    hits = [b for b in lines if b[1] < 290 and b[0] < 380]
+    if not hits:
         return list(TITLE)
-    return [min(TITLE[0], int(xs.min()) - 14), min(TITLE[1], 110 + int(ys.min()) - 12),
-            max(TITLE[2], int(xs.max()) + 16), max(TITLE[3], 110 + int(ys.max()) + 14)]
+    # **밝은 픽셀 전체**로 재면 안 된다 — 표본이 화면을 가득 채우는 회차(2회차 등근육)
+    # 에서는 그 덩어리째 검은 박스가 돼 화면 위쪽이 통째로 날아간다(실측).
+    # 글자로 검출된 줄만 감싼다.
+    return [min(TITLE[0], min(b[0] for b in hits) - 14),
+            min(TITLE[1], min(b[1] for b in hits) - 12),
+            max(TITLE[2], max(b[0] + b[2] for b in hits) + 16),
+            max(TITLE[3], max(b[1] + b[3] for b in hits) + 14)]
 
 
 def looks_like_text(img, box, bar_top: int = BAR_TOP) -> bool:
@@ -320,8 +329,9 @@ def _far_end(box, lead) -> tuple[int, int]:
     return max(corners, key=lambda p: (p[0] - cx) ** 2 + (p[1] - cy) ** 2)
 
 
-def _inside(pt, box) -> bool:
-    return box[0] <= pt[0] <= box[2] and box[1] <= pt[1] <= box[3]
+def _inside(pt, box, pad: int = 0) -> bool:
+    return (box[0] - pad <= pt[0] <= box[2] + pad
+            and box[1] - pad <= pt[1] <= box[3] + pad)
 
 
 def _near(box, other, pad: int) -> bool:
@@ -353,7 +363,7 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
     arrows = find_arrows(img)
     groups = group_lines(lines)
 
-    title = title_band(img)
+    title = title_band(img, lines)
     masks, lead_pins, arrow_pins = [], [], []
     if band:
         masks.append(list(band))
@@ -388,13 +398,17 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
     # ▲ 는 라벨 줄 끝에 붙어 있을 뿐이니, 그 앞에서 박스를 끊으면 글자는 다 가려진다.
     for _b, _p, tgt in arrow_pins:
         for m in masks:
-            if not _inside(tgt, m):
+            if not _inside(tgt, m, 40):
                 continue
+            # 화살표에서 40px 은 비워 둔다 — 박스 가장자리에 닿기만 해도 핀 선이
+            # 검은 면으로 들어가 버려 무엇을 묻는지 사라진다(2회차 실측).
             if tgt[0] - m[0] < m[2] - tgt[0]:
-                m[0] = min(m[2] - 40, tgt[0] + 22)
+                m[0] = min(m[2] - 40, tgt[0] + 40)
             else:
-                m[2] = max(m[0] + 40, tgt[0] - 22)
-    buried = [p for p in pins if any(_inside(p[2], m) for m in masks)]
+                m[2] = max(m[0] + 40, tgt[0] - 40)
+    # 가장자리에 딱 붙어도 핀 선이 검은 박스로 빨려 들어가 무엇을 묻는지 사라진다
+    # (2회차 A044·A045·A046 실측) → 여유 30px 을 두고 본다.
+    buried = [p for p in pins if any(_inside(p[2], m, 30) for m in masks)]
     if buried:
         return {"page": path.stem, "ok": False,
                 "why": f"가리킨 자리가 가림 박스 안이다({len(buried)}개) — 캡션이 구조 위에 얹혔다"}
@@ -533,9 +547,20 @@ def build(render_dir: str, limit: int, dry: bool) -> int:
             left = verify(quiz)
             if not left:
                 break
+            # 진짜 '샌 글자'는 이미 가린 캡션의 꼬리라 기존 박스 곁에 있다. 멀리
+            # 떨어진 것은 표본의 결일 확률이 높아, 그것까지 덮으면 화면이 걸레가 된다
+            # (2회차 A013 실측: 덧칠 6개가 전부 조직이었다) → 그런 페이지는 버린다.
+            near = []
             for x, y, w, h in left:      # quiz 좌표 → 자르기 전 좌표
-                cfg["black_boxes"].append([x + CROP[0] - 12, y + CROP[1] - 10,
-                                           x + w + CROP[0] + 12, y + h + CROP[1] + 10])
+                box = [x + CROP[0] - 12, y + CROP[1] - 10,
+                       x + w + CROP[0] + 12, y + h + CROP[1] + 10]
+                if any(_overlap(box[0] - 130, box[2] + 130, m[0], m[2]) > 0
+                       and _overlap(box[1] - 90, box[3] + 90, m[1], m[3]) > 0
+                       for m in cfg["black_boxes"]):
+                    near.append(box)
+            if not near:
+                break                    # 남은 게 조직뿐 → 아래에서 DROP 된다
+            cfg["black_boxes"].extend(near)
         if left:
             print(f"  DROP {page}  가려도 글자가 계속 남는다({len(left)}줄) {left[:2]}")
             quiz.unlink(missing_ok=True)

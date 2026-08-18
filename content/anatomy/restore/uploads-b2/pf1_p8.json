@@ -1,0 +1,71 @@
+{
+ "page": "pf1_p8",
+ "render_dir": "uploads-b2",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-b2 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": true,
+   "blue": true,
+   "olive": false
+  },
+  "protect": [
+   [
+    682,
+    576,
+    730,
+    628
+   ],
+   [
+    140,
+    175,
+    355,
+    425
+   ]
+  ],
+  "label_boxes": [
+   [
+    644,
+    598,
+    922,
+    706
+   ]
+  ],
+  "title_box": [
+   50,
+   188,
+   228,
+   296
+  ],
+  "black_boxes": [
+   [
+    428,
+    926,
+    1218,
+    1012
+   ]
+  ],
+  "pins": [
+   {
+    "x": 862,
+    "y": 702,
+    "to": [
+     706,
+     586
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

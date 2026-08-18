@@ -72,7 +72,7 @@ def audit() -> dict:
             "no_cfg": [r for r in rows if not r["cfg"]]}
 
 
-def _find_cfg(page: str) -> Path | None:
+def _find_cfg(render_dir: str, page: str) -> Path | None:
     """`.private/anatomy/cfg/` 에서 이 페이지의 설정 파일을 찾는다.
 
     옛 파일명 규칙이 제각각이라(`pf1_p44_supcluneal.json`, `s06_A010_cervbranch.json`)
@@ -81,8 +81,15 @@ def _find_cfg(page: str) -> Path | None:
     src = PRIV / "cfg"
     if not src.exists():
         return None
+    exact = src / f"{render_dir}_{page}.json"
+    if exact.exists():
+        return exact
     for cand in sorted(src.glob("*.json")):
         stem = cand.stem
+        # 페이지 이름(A044 등)은 폴더가 달라도 겹친다 — 다른 uploads 폴더의 설정을
+        # 끌어오면 엉뚱한 좌표로 복원된다(실측: uploads-s02_A044 가 s05/A044 로 갔다).
+        if stem.startswith("uploads-") and not stem.startswith(render_dir + "_"):
+            continue
         if stem.startswith(page + "_") or f"_{page}_" in stem or stem.endswith("_" + page):
             return cand
     return None
@@ -99,7 +106,7 @@ def import_legacy(dry: bool) -> int:
         out = store_path(rd, page)
         if out.exists():
             continue
-        cfg = _find_cfg(page)
+        cfg = _find_cfg(rd, page)
         if cfg is None:
             miss += 1
             print(f"  설정 못 찾음: {rd}/{page}  ({card.name})")
