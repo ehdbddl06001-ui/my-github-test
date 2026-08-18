@@ -2,6 +2,39 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0445",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Management of Residual Extracardiac Congenital Heart Disease After Heart Transplant",
+  "authors": [
+   "Marshall V William H",
+   "Broda Christopher R",
+   "Hasan Ayesha K",
+   "Kearney Katherine",
+   "Wright Lydia K"
+  ],
+  "journal": "JACC. Advances",
+  "doi": "10.1016/j.jacadv.2026.103081",
+  "pmid": "42611010",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42611010/",
+  "pubdate": "2026-07-29",
+  "date": "2026-08-18",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "(PubMed에 초록 없음)",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0444",
   "topic": "Cardiology",
   "subtopic": "",
