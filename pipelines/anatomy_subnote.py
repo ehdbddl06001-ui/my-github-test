@@ -706,7 +706,9 @@ def _load_card(path: Path) -> dict:
 
 
 def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3,
-                 meta_quiz_per_page: int = 2):
+                 meta_quiz_per_page: int = 2,
+                 title: str = "실사 태깅 문항", en: str = "restored scans — quiz",
+                 atitle: str = "실사 문항 정답 · 해설"):
     """실사 복원 문항을 같은 파일에 합친다 — 왼쪽 이미지 / 오른쪽 문제·정답.
 
     이미지는 `.private/` 산출물이므로 이 PDF도 반드시 `.private/` 아래로만 나간다
@@ -716,9 +718,19 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
     정답부와 같은 '행(row)' 배치로 페이지당 여러 문항을 싣는다."""
     if not items:
         return
-    cards = [(it, _load_card(root / it["card"])) for it in items]
+    # 복원 PNG 는 `.private/` 산출물이라 **스캔 원본이 있는 세션에서만** 만들어진다.
+    # 루틴 컨테이너에는 원본이 없어 파일이 통째로 비는데, 그대로 조판하면 그림 없는
+    # '실사 태깅 문항' 지면 8쪽 + 썸네일 없는 정답 지면 5쪽이 나온다(2026-08-19 실측).
+    # 없는 것은 싣지 않고 몇 건이 빠졌는지 알린다 — 문항 카드는 repo 에 그대로 남는다.
+    have = [it for it in items if (root / it["quiz_image"]).exists()]
+    if len(have) != len(items):
+        print(f"실사 이미지 없음 {len(items) - len(have)}/{len(items)}건 — 그 지면은 빼고 "
+              f"조판한다(복원 PNG 는 스캔 원본이 있는 세션에서만 재생성된다)")
+    if not have:
+        return
+    cards = [(it, _load_card(root / it["card"])) for it in have]
 
-    b.section_bar("실사 태깅 문항", "restored scans — quiz")
+    b.section_bar(title, en)
     qper = max(1, int(meta_quiz_per_page or 2)) if b.split else 1
     QROW = (b.PH - MARGIN * 2 - 56) / qper if b.split else 0
     for n, (it, card) in enumerate(cards, 1):
@@ -726,14 +738,14 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
             b.cur_fig = (it["quiz_image"], f"문제 {n} · 번호핀을 보고 답하시오")
             if n > 1:
                 b.new_page(plain=True)
-                b.cur_sec = ("실사 태깅 문항", "restored scans — quiz")
+                b.cur_sec = (title, en)
                 b._compose_split(cont=True) if b.split else None
             elif b.split:
                 b._compose_split(cont=False)
         else:
             if n > 1 and (n - 1) % qper == 0:
                 b.new_page(plain=True)
-                b.cur_sec = ("실사 태깅 문항", "restored scans — quiz")
+                b.cur_sec = (title, en)
                 b._compose_split(cont=True)
             y0 = b.y
             fig_w = (b.PW - 2 * MARGIN) * FIG_FRAC
@@ -749,7 +761,7 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
             b.page.draw_line(pymupdf.Point(b.x0, b.y + 12), pymupdf.Point(b.x1, b.y + 12),
                              color=RULE, width=0.8)
             b.y += 22
-        if card.get("needs_review"):
+        if card.get("needs_review") and str(it["quiz_image"]).startswith(".private"):
             b.callout("주의", "검수 대기",
                       "이 프레임은 필기가 정답 구조 위에 겹쳐 복원 얼룩이 남아 있다. "
                       "근육 결이 또렷하지 않으니 감안하고 볼 것.")
@@ -760,13 +772,13 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
     # ── 정답부: 페이지 절약을 위해 라벨판을 '작은 썸네일'로 두 문항씩 묶는다.
     # 문제 페이지와 같은 크기로 다시 넣으면 페이지 수가 두 배가 된다(사용자 지적).
     b.cur_fig = None
-    b.section_bar("실사 문항 정답 · 해설", "answers")
+    b.section_bar(atitle, "answers")
     per = int(meta_answers_per_page or 3)
     ROW_H = (b.PH - MARGIN * 2 - 56) / per if b.split else 250
     for n, (it, card) in enumerate(cards, 1):
         if n > 1 and (n - 1) % per == 0:
             b.new_page(plain=True)
-            b.cur_sec = ("실사 문항 정답 · 해설", "answers")
+            b.cur_sec = (atitle, "answers")
             if b.split:
                 b._compose_split(cont=True)
         y0 = b.y
@@ -798,6 +810,108 @@ def render_scans(b: Sub, items: list, root: Path, meta_answers_per_page: int = 3
     b.cur_fig = None
 
 
+STYLE_KR = {
+    "relation": "관계", "distinction": "감별", "clinical-application": "임상",
+    "branch-tree": "분지", "course-tracing": "주행", "layer-order": "층서열",
+    "spotter": "스포터",
+}
+
+
+def written_questions(root: Path, meta: dict) -> list[tuple[Path, dict]]:
+    """그림 없는 **관계형 문항**을 같은 회차에서 모은다(결정론 — id 순).
+
+    왜 필요한가(2026-08-19 실측): 서브노트는 `scan_questions`(실사)만 실었다. 그런데
+    실사 이미지는 스캔 원본이 있는 세션에서만 만들어져 루틴 컨테이너에서는 통째로
+    빠진다 → 수업 전날 사용자에게 간 PDF 에 **문항이 0개**가 된다. 예습시험은 그날
+    회차 범위에서 10문항 나오므로, 이미지가 없어도 관계형 문항은 반드시 실려야 한다.
+    """
+    want = {str(d) for d in (meta.get("scheduled_dates") or [])}
+    sess = meta.get("session_no")
+    qdir = root / "content/anatomy/questions"
+    if not qdir.is_dir():               # selftest 처럼 문항이 없는 루트
+        return []
+    out = []
+    for q in sorted(qdir.rglob("*.md")):
+        raw = q.read_text(encoding="utf-8")
+        if "asset_ref:" in raw:          # 실사 문항은 render_scans 담당
+            continue
+        card = _load_card(q)
+        if card.get("kind") != "question":
+            continue
+        dates = {str(d) for d in (card.get("scheduled_dates") or [])}
+        if not (dates & want) and card.get("session_no") != sess:
+            continue
+        out.append((q, card))
+    return out
+
+
+def _diagram_pair(root: Path, card: dict) -> tuple[str, str] | None:
+    """자체 제작 도해 문항의 (퀴즈판, 라벨판) 경로. 없으면 None.
+
+    spotter 문항은 그림이 곧 문제다 — 번호핀 없이 글만 실으면 풀 수 없다.
+    퀴즈판은 카드의 `web_asset`(`assets/anatomy/*-quiz.svg`), 정답 지면에 쓸
+    라벨판은 같은 이름의 `-labeled.svg` 다(둘 다 repo 안이라 컨테이너와 무관하다).
+    """
+    wa = str(card.get("web_asset") or "")
+    if not wa.endswith(".svg"):
+        return None
+    quiz = wa if wa.startswith("docs/") else f"docs/{wa}"
+    if not (root / quiz).exists():
+        return None
+    lab = quiz.replace("-quiz.svg", "-labeled.svg")
+    return quiz, (lab if (root / lab).exists() else quiz)
+
+
+def render_written(b: Sub, root: Path, cards: list[tuple[Path, dict]]):
+    """실사 밖 문항 — ① 자체 제작 도해 spotter ② 그림 없는 관계형.
+
+    ①은 실사와 같은 조판(왼쪽 그림 / 오른쪽 문제)을 그대로 쓴다. 도해는 repo 안
+    `docs/assets/anatomy/` 라 실사와 달리 어느 컨테이너에서도 실린다.
+    """
+    figs, plain = [], []
+    for path, card in cards:
+        pair = _diagram_pair(root, card)
+        if pair:
+            figs.append({"card": path.relative_to(root).as_posix(),
+                         "quiz_image": pair[0], "clean_image": pair[1]})
+        else:
+            plain.append(card)
+
+    if figs:
+        render_scans(b, figs, root, meta_answers_per_page=2, meta_quiz_per_page=1,
+                     title="도해 태깅 문항", en="diagram spotters — quiz",
+                     atitle="도해 문항 정답 · 해설")
+
+    if not plain:
+        return
+    b.cur_fig = None
+    b.section_bar("관계형 문항 — 예습시험 대비", "written questions")
+    b.rich("그림 없이 구조·층·신경 관계를 묻는다. 각 문항 아래 줄에 **답을 직접 써 본 뒤** "
+           "뒤쪽 정답부와 맞춰 본다.", size=9.0, color=MUTED)
+    b.y += 4
+    for n, c in enumerate(plain, 1):
+        style = STYLE_KR.get(str(c.get("question_style", "")), str(c.get("question_style", "")))
+        diff = "★" * int(c.get("difficulty", 0) or 0)
+        b.subsection(f"문제 {n} · {style}{('  ' + diff) if diff else ''}")
+        b.rich(str(c.get("stem", "")), size=10, leading=15)
+        b.y += 4
+        for _ in range(2):
+            b.page.draw_line(pymupdf.Point(b.x0, b.y + 11), pymupdf.Point(b.x1, b.y + 11),
+                             color=RULE, width=0.8)
+            b.y += 20
+
+    b.cur_fig = None
+    b.section_bar("관계형 문항 정답 · 해설", "written answers")
+    for n, c in enumerate(plain, 1):
+        b.subsection(f"정답 {n}")
+        b.rich(str(c.get("answer", "")), size=9.8, leading=14)
+        b.y += 2
+        expl = str(c.get("explanation", "") or "")
+        if expl:
+            b.rich(expl, size=9.0, color=MUTED, leading=13)
+        b.y += 6
+
+
 def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
     raw = card_path.read_text(encoding="utf-8")
     if not raw.startswith("---"):
@@ -822,6 +936,7 @@ def build(card_path: Path, output: str, root: Path = ROOT) -> Path:
     render_memory(b, meta, body)
     render_scans(b, meta.get("scan_questions") or [], root,
                  meta.get("answers_per_page", 3), meta.get("quiz_per_page", 2))
+    render_written(b, root, written_questions(root, meta))
     b.footer_all()
     try:
         doc.subset_fonts()          # 한글 폰트 통째 삽입 방지(1.7MB → 수십 KB)
