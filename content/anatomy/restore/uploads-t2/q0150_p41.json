@@ -1,0 +1,73 @@
+{
+ "page": "q0150_p41",
+ "render_dir": "uploads-t2",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t2 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    874,
+    422,
+    908,
+    466
+   ]
+  ],
+  "keep_boxes": [
+   [
+    874,
+    422,
+    908,
+    466
+   ]
+  ],
+  "stroke_boxes": [
+   [
+    722,
+    792,
+    1080,
+    934
+   ]
+  ],
+  "stroke_drop": 24,
+  "stroke_pad": 3,
+  "label_boxes": [
+   [
+    822,
+    472,
+    1072,
+    538
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 690,
+    "y": 640,
+    "to": [
+     886,
+     438
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

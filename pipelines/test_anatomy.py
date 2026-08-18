@@ -523,6 +523,32 @@ def test_every_session_has_a_web_solvable_question() -> None:
     assert not missing, f"트리는 있는데 그림 문항이 없는 회차: {missing}"
 
 
+def test_restored_scans_are_reproducible() -> None:
+    """실사 문항의 **복원 설정이 커밋돼 있어야** 한다(2026-08-18).
+
+    쪽지시험이 스캔 PDF 의 라벨을 지운 형태라 실사 문항이 가장 중요한데, 복원 설정과
+    결과 PNG 가 둘 다 gitignore 된 `.private/` 에만 있었다. 컨테이너가 바뀌면 카드만
+    남고 이미지를 다시 만들 방법이 사라진다 — 실제로 5회차 8문항이 그렇게 됐다.
+    설정 JSON 은 좌표·플래그뿐이라 커밋해도 카데바 픽셀이 새지 않는다.
+    """
+    import subprocess
+    r = subprocess.run([sys.executable, str(Path(__file__).parent / "restore_store.py"),
+                        "--selftest"], capture_output=True, text=True)
+    assert r.returncode == 0, f"restore_store selftest 실패: {r.stdout}{r.stderr}"
+    sys.path.insert(0, str(Path(__file__).parent))
+    import restore_store
+    a = restore_store.audit()
+    assert a["rows"], "실사 참조 문항이 하나도 없다"
+    # 알려진 미복구분(5회차 8건)은 유예하되, 그 밖에 설정 없는 실사가 생기면 실패
+    pending = {r["dir"] for r in a["no_cfg"]}
+    assert pending <= {"uploads-s05"}, f"설정 없는 실사 문항: {sorted(pending)}"
+    # 커밋된 설정에 비공개 경로·이미지가 섞이지 않는다
+    root = Path(__file__).resolve().parents[1]
+    for p in (root / "content/anatomy/restore").rglob("*.json"):
+        t = p.read_text(encoding="utf-8")
+        assert "base64" not in t and "data:image" not in t, f"{p.name}: 이미지가 섞였다"
+
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

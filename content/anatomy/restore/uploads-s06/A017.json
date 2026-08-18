@@ -1,0 +1,73 @@
+{
+ "page": "A017",
+ "render_dir": "uploads-s06",
+ "session": 6,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-s06 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    806,
+    500,
+    836,
+    542
+   ]
+  ],
+  "keep_boxes": [
+   [
+    806,
+    500,
+    836,
+    542
+   ]
+  ],
+  "stroke_boxes": [
+   [
+    706,
+    618,
+    1024,
+    684
+   ]
+  ],
+  "stroke_drop": 24,
+  "stroke_pad": 3,
+  "label_boxes": [
+   [
+    684,
+    542,
+    1000,
+    614
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 556,
+    "y": 772,
+    "to": [
+     820,
+     538
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

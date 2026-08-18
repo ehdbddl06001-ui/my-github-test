@@ -1,0 +1,77 @@
+{
+ "page": "pf1_p45",
+ "render_dir": "uploads-t3",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t3 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    248,
+    666,
+    286,
+    714
+   ]
+  ],
+  "keep_boxes": [
+   [
+    248,
+    666,
+    286,
+    714
+   ]
+  ],
+  "black_boxes": [
+   [
+    398,
+    918,
+    1252,
+    992
+   ],
+   [
+    1432,
+    900,
+    1621,
+    1012
+   ]
+  ],
+  "label_boxes": [
+   [
+    160,
+    716,
+    416,
+    796
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 466,
+    "y": 850,
+    "to": [
+     268,
+     712
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

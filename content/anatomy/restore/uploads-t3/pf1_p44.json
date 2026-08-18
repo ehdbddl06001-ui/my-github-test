@@ -1,0 +1,77 @@
+{
+ "page": "pf1_p44",
+ "render_dir": "uploads-t3",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t3 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    132,
+    618,
+    174,
+    664
+   ]
+  ],
+  "keep_boxes": [
+   [
+    132,
+    618,
+    174,
+    664
+   ]
+  ],
+  "black_boxes": [
+   [
+    1196,
+    102,
+    1436,
+    190
+   ],
+   [
+    416,
+    918,
+    1250,
+    992
+   ]
+  ],
+  "label_boxes": [
+   [
+    50,
+    666,
+    332,
+    750
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 352,
+    "y": 822,
+    "to": [
+     154,
+     660
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

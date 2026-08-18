@@ -1,0 +1,77 @@
+{
+ "page": "q5183_p10",
+ "render_dir": "uploads-t2",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t2 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    544,
+    556,
+    580,
+    602
+   ]
+  ],
+  "keep_boxes": [
+   [
+    544,
+    556,
+    580,
+    602
+   ]
+  ],
+  "black_boxes": [
+   [
+    468,
+    670,
+    832,
+    776
+   ],
+   [
+    348,
+    758,
+    1424,
+    916
+   ]
+  ],
+  "label_boxes": [
+   [
+    448,
+    608,
+    770,
+    678
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 400,
+    "y": 760,
+    "to": [
+     558,
+     574
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

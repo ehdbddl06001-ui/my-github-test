@@ -1,0 +1,77 @@
+{
+ "page": "pf1_p46",
+ "render_dir": "uploads-t3",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t3 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    392,
+    610,
+    436,
+    656
+   ]
+  ],
+  "keep_boxes": [
+   [
+    392,
+    610,
+    436,
+    656
+   ]
+  ],
+  "black_boxes": [
+   [
+    386,
+    874,
+    1254,
+    992
+   ],
+   [
+    1424,
+    888,
+    1621,
+    1012
+   ]
+  ],
+  "label_boxes": [
+   [
+    304,
+    658,
+    580,
+    740
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 628,
+    "y": 804,
+    "to": [
+     416,
+     656
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "page": "pf2_p24",
+ "render_dir": "uploads-t1",
+ "session": null,
+ "render_width": 1650,
+ "source": {
+  "hint": "uploads-t1 업로드 스캔",
+  "page_no": null,
+  "pages": null
+ },
+ "cfg": {
+  "colors": {
+   "red": false
+  },
+  "protect": [
+   [
+    1010,
+    558,
+    1052,
+    592
+   ]
+  ],
+  "keep_boxes": [
+   [
+    1010,
+    558,
+    1052,
+    592
+   ]
+  ],
+  "black_boxes": [
+   [
+    1385,
+    115,
+    1525,
+    325
+   ]
+  ],
+  "label_boxes": [
+   [
+    1044,
+    548,
+    1428,
+    620
+   ]
+  ],
+  "title_box": [
+   45,
+   150,
+   545,
+   265
+  ],
+  "pins": [
+   {
+    "x": 852,
+    "y": 762,
+    "to": [
+     978,
+     572
+    ],
+    "n": 1
+   }
+  ],
+  "crop": [
+   29,
+   89,
+   1621,
+   1085
+  ]
+ }
+}
