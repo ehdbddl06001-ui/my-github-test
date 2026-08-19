@@ -82,14 +82,10 @@ class Builder:
         if self.page is None or self.y + need > PAGE_H - MARGIN:
             self.new_page()
 
-    @staticmethod
-    def _plain(s: str) -> str:
-        """카드 본문의 `**강조**` 표시를 지운다 — 이 PDF 폰트에는 굵은 자형이 없어
-        별표가 글자 그대로 찍혀 오히려 읽기를 방해한다(실측)."""
-        return s.replace("**", "")
-
     def _wrap(self, text: str, size: float, width: float) -> list[str]:
-        text = self._plain(text)
+        # 이 PDF 폰트에는 굵은 자형이 없어 `**강조**` 가 별표 그대로 찍힌다(실측) →
+        # 조판 직전에 인라인 마크다운을 턴다.
+        text = _strip_inline(text)
         lines: list[str] = []
         for para in text.split("\n"):
             if not para:
@@ -143,6 +139,8 @@ class Builder:
 
     def image(self, path: Path, max_h: float = 430, max_px: int = 1500, jpg_q: int = 82):
         """긴 변 max_px로 축소 + JPEG 재압축 후 삽입(PDF 용량 억제)."""
+        if path.suffix.lower() == ".svg":
+            return self._svg(path, max_h)
         raw = pymupdf.Pixmap(str(path))
         if raw.alpha:
             raw = pymupdf.Pixmap(raw, 0)  # JPEG는 알파 불가
@@ -162,6 +160,25 @@ class Builder:
         rect = pymupdf.Rect(x0, self.y, x0 + dw, self.y + dh)
         self.page.insert_image(rect, stream=stream)
         self.page.draw_rect(rect, color=RULE, width=0.8)
+        self.y += dh + 12
+
+    def _svg(self, path: Path, max_h: float):
+        """도해(SVG)는 **벡터 그대로** 얹는다.
+
+        계보 트리·층 구조도는 우리가 직접 그린 자산이라 글자가 잘아, 래스터로 바꿔
+        JPEG 로 다시 누르면 번호핀 숫자가 뭉개진다. PyMuPDF 는 SVG 를 한 쪽짜리 문서로
+        열 수 있으므로 그 페이지를 그대로 **덧붙여** 해상도 손실 없이 넣는다.
+        """
+        src = pymupdf.open(str(path))
+        r = src[0].rect
+        scale = min(BODY_W / r.width, max_h / r.height)
+        dw, dh = r.width * scale, r.height * scale
+        self._ensure(dh + 8)
+        x0 = MARGIN + (BODY_W - dw) / 2
+        rect = pymupdf.Rect(x0, self.y, x0 + dw, self.y + dh)
+        self.page.show_pdf_page(rect, pymupdf.open("pdf", src.convert_to_pdf()), 0)
+        self.page.draw_rect(rect, color=RULE, width=0.8)
+        src.close()
         self.y += dh + 12
 
     def spacer(self, h: float):
