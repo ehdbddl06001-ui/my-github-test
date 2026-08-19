@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1647,
+  "total": 1648,
   "byType": {
+   "anatomy": 471,
    "kmle": 619,
-   "anatomy": 470,
    "usmle": 96,
    "paper": 445,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 470,
+   "Anatomy": 471,
    "Cardiology": 134,
    "Nephrology": 117,
    "Infectious Disease": 93,
@@ -53,13 +53,27 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 976,
+   "high": 977,
    "medium": 622,
    "low": 49
   },
   "tagCount": 2397
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-20",
+   "type": "anatomy",
+   "unit": "등·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-20",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/anatomy/daily/2026-08-20.md",
+   "snippet": "오늘의 학습 (2026 08 20 · t1 prep) 다음 수업/시험: 2026 08 20 등 얕은층·중간층·깊은층 근육, 볼기부위·넓적다리 뒤부분 Tagging 1까지 21일 · Tagging 2까지 60일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 35개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-20 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 20 · t1 prep) 다음 수업/시험: 2026 08 20 등 얕은층·중간층·깊은층 근육, 볼기부위·넓적다리 뒤부분 Tagging 1까지 21일 · Tagging 2까지 60일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 35개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "kmle-2026-0649",
    "type": "kmle",
