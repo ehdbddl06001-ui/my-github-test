@@ -2,9 +2,45 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-08-19",
- "count": 67,
- "groups": 35,
+ "count": 70,
+ "groups": 36,
  "items": [
+  {
+   "file": "diag-suboccipital-quiz.svg",
+   "base": "diag-suboccipital",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "뒤통수밑삼각",
+   "date": "2026-08-19",
+   "bytes": 9116
+  },
+  {
+   "file": "diag-popliteal-labeled.svg",
+   "base": "diag-popliteal",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "다리오금",
+   "date": "2026-08-19",
+   "bytes": 14609
+  },
+  {
+   "file": "diag-popliteal-quiz.svg",
+   "base": "diag-popliteal",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "다리오금",
+   "date": "2026-08-19",
+   "bytes": 11436
+  },
   {
    "file": "tree-s05-vessel-labeled.svg",
    "base": "tree-s05-vessel",
@@ -654,6 +690,18 @@ window.MEDKOS_DIAGRAMS = {
    "bytes": 8562
   },
   {
+   "file": "diag-suboccipital-labeled.svg",
+   "base": "diag-suboccipital",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 2,
+   "unit": "2회차 · 등·다리",
+   "title": "뒤통수밑삼각",
+   "date": "2026-08-14",
+   "bytes": 11200
+  },
+  {
    "file": "diag-gluteal-foramina-labeled.svg",
    "base": "diag-gluteal-foramina",
    "variant": "labeled",
@@ -700,18 +748,6 @@ window.MEDKOS_DIAGRAMS = {
    "title": "등 근육 3층 태깅 퀴즈판",
    "date": "2026-08-14",
    "bytes": 9380
-  },
-  {
-   "file": "diag-suboccipital-labeled.svg",
-   "base": "diag-suboccipital",
-   "variant": "labeled",
-   "kind": "diag",
-   "kindLabel": "위치 도해",
-   "session": 3,
-   "unit": "3회차 · 등·다리",
-   "title": "뒤통수밑삼각",
-   "date": "2026-08-14",
-   "bytes": 11733
   },
   {
    "file": "diag-scapular-spaces-labeled.svg",

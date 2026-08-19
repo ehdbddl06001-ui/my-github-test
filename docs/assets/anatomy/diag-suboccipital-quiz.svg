@@ -20,40 +20,26 @@
   <g class="ans" data-n="1">
     <path class="muscle" d="M176,160 L236,152 L286,352 L246,364 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
     <circle class="pin" cx="222" cy="252" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="222" y="257" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">1</text>
-    <text class="lab" x="40" y="238" style="fill:#e6eeff;font-size:12.5px">큰뒤머리곧은근</text>
-    <text class="en" x="40" y="252" style="fill:#93a9d4;font-size:10.5px">rectus capitis posterior major</text>
-    <text class="en" x="40" y="266" style="fill:#93a9d4;font-size:10.5px">— 위안쪽 경계 (C2 가시돌기 → 뒤통수뼈)</text>
   </g>
   <!-- 위가쪽: 위머리빗근 -->
   <g class="ans" data-n="2">
     <path class="muscle" d="M398,168 L446,186 L336,352 L300,336 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
     <circle class="pin" cx="382" cy="256" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="382" y="261" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">2</text>
-    <text class="lab" x="330" y="150" style="fill:#e6eeff;font-size:12.5px">위머리빗근</text>
-    <text class="en" x="330" y="164" style="fill:#93a9d4;font-size:10.5px">obliquus capitis superior</text>
-    <text class="en" x="330" y="178" style="fill:#93a9d4;font-size:10.5px">— 위가쪽 경계 (C1 가로돌기 → 뒤통수뼈)</text>
   </g>
   <!-- 아래: 아래머리빗근 -->
   <g class="ans" data-n="3">
     <path class="muscle" d="M212,380 L438,208 L462,238 L236,410 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
     <circle class="pin" cx="336" cy="312" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="336" y="317" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">3</text>
-    <text class="lab" x="40" y="418" style="fill:#e6eeff;font-size:12.5px">아래머리빗근</text>
-    <text class="en" x="40" y="432" style="fill:#93a9d4;font-size:10.5px">obliquus capitis inferior</text>
-    <text class="en" x="40" y="446" style="fill:#93a9d4;font-size:10.5px">— 아래 경계 (C2 가시돌기 → C1 가로돌기)</text>
   </g>
 
   <!-- 내용물 -->
   <g class="ans" data-n="4">
     <path class="art" d="M330,300 C300,266 268,244 222,238" style="fill:none;stroke:#ff7d8f;stroke-width:3.4"/>
     <circle class="pin" cx="296" cy="252" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="296" y="257" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">4</text>
-    <text class="lab" x="316" y="200" style="fill:#e6eeff;font-size:12.5px">척추동맥 (3부)</text>
-    <text class="en" x="316" y="214" style="fill:#93a9d4;font-size:10.5px">vertebral a. — C1 가로구멍에서 나와</text>
-    <text class="en" x="316" y="228" style="fill:#93a9d4;font-size:10.5px">C1 뒤활 위 고랑을 타고 큰구멍으로</text>
   </g>
   <g class="ans" data-n="5">
     <path class="nrv" d="M262,318 C288,300 306,288 330,282" style="fill:none;stroke:#e0d264;stroke-width:2.6"/>
     <circle class="pin" cx="266" cy="300" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="266" y="305" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">5</text>
-    <text class="lab" x="150" y="330" style="fill:#e6eeff;font-size:12.5px">뒤통수밑신경</text>
-    <text class="en" x="150" y="344" style="fill:#93a9d4;font-size:10.5px">suboccipital n. = C1 뒤가지 (운동만)</text>
   </g>
 
   <path d="M200,168 L420,196 L300,368 Z" style="fill:none;stroke:#ffd479;stroke-width:3;stroke-dasharray:7 5"/>
@@ -62,12 +48,10 @@
   <g class="ans" data-n="6">
     <rect class="roof" x="60" y="452" width="200" height="26" rx="7" style="fill:#2b3a2b;stroke:#8fc98a;stroke-width:1.6"/>
     <circle class="pin" cx="48" cy="465" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="48" y="470" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">6</text>
-    <text class="lab" x="72" y="470" style="fill:#e6eeff;font-size:12.5px">지붕: 머리반가시근</text>
   </g>
   <g class="ans" data-n="7">
     <rect class="bone" x="286" y="452" width="230" height="26" rx="7" style="fill:#2a2e3c;stroke:#8b93a8;stroke-width:1.4"/>
     <circle class="pin" cx="274" cy="465" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="274" y="470" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">7</text>
-    <text class="lab" x="296" y="470" style="fill:#e6eeff;font-size:12.5px">바닥: 뒤통수뒤통수막 + C1 뒤활</text>
   </g>
   <text class="note" x="42" y="504" style="fill:#9fb4dc;font-size:11.5px">지붕 위로 머리널판근·등세모근이 더 덮는다 — 실습에서는 <tspan style="fill:#f0c674">널판근 → 머리반가시근</tspan> 순으로 젖힌다.</text>
   <text class="note" x="42" y="524" style="fill:#9fb4dc;font-size:11.5px">삼각 근육 넷(위 셋 + 작은뒤머리곧은근)은 모두 <tspan style="fill:#f0c674">뒤통수밑신경(C1 뒤가지)</tspan> 지배.</text>
@@ -78,8 +62,6 @@
   <g class="ans" data-n="8">
     <rect class="nerve" x="576" y="112" width="278" height="40" rx="8" style="fill:#3a3a18;stroke:#e0d264;stroke-width:1.6"/>
     <circle class="pin" cx="564" cy="132" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="564" y="137" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">8</text>
-    <text class="lab" x="592" y="130" style="fill:#e6eeff;font-size:12.5px">큰뒤통수신경</text>
-    <text class="en" x="592" y="145" style="fill:#93a9d4;font-size:10.5px">greater occipital n. = C2 뒤가지</text>
   </g>
   <path class="nrv" d="M700,152 L700,180" style="fill:none;stroke:#e0d264;stroke-width:2.6"/>
   <rect class="panel" x="576" y="180" width="278" height="34" rx="10" style="fill:#16213a;stroke:#2b3f68;stroke-width:1.4"/>

@@ -6590,6 +6590,52 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0366",
+   "style": "spotter",
+   "session": 2,
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "다리오금 도해 퀴즈판에서 번호핀 1~15가 가리키는 구조의 이름을 번호 순서대로 답하시오. 1~4는 마름모의 네 경계, 5·6은 지붕과 바닥, 7~10은 내용물을 얕은쪽부터, 11~15는 오금동맥의 무릎가지다.",
+   "choices": null,
+   "answer": "1. 넙다리두갈래근 / 2. 반힘줄근 · 반막근 / 3. 장딴지근 가쪽갈래 / 4. 장딴지근 안쪽갈래 / 5. 지붕: 오금근막 popliteal fascia / 6. 바닥: 넙다리뼈 오금면·관절주머니·오금근 / 7. 정강신경 tibial n. — 가장 얕다 / 8. 오금정맥 popliteal v. — 가운데 / 9. 오금동맥 popliteal a. — 가장 깊다 / 10. 온종아리신경 / 11. 위가쪽무릎동맥 sup. lateral / 12. 위안쪽무릎동맥 sup. medial / 13. 중간무릎동맥 middle — 관절 안 / 14. 아래가쪽무릎동맥 inf. lateral / 15. 아래안쪽무릎동맥 inf. medial",
+   "explanation": "다리오금은 2회차 김홍태pf 마지막 부분(경계 → 혈관 → 신경)의 핵심이다. 경계는 **위 둘·아래 둘** — 위는 햄스트링(가쪽 넙다리두갈래근 / 안쪽 반힘줄근·반막근), 아래는 장딴지근 두 갈래. 내용물의 깊이는 **＂신·정·동＂**(정강신경 → 오금정맥 → 오금동맥)이고 동맥이 뼈에 가장 가깝다. 온종아리신경은 마름모를 곧게 지나지 않고 넙다리두갈래근 힘줄 안쪽을 따라 가쪽 벽으로 빠진다. 무릎가지는 위 둘·아래 둘·가운데 하나이며 **중간무릎동맥만 관절주머니를 뚫고** 십자인대로 간다. 나머지 넷이 무릎동맥그물을 만들어, 오금동맥이 막혀도 우회로가 된다. 정답표는 라벨판 SVG 에서 기계적으로 뽑았다(pipelines/diagram_quiz.py) — 사람이 번호를 세지 않는다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-popliteal-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2026 2회차 김홍태pf 강의 스캔 97쪽",
+     "page": null,
+     "section": "다리오금"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0367",
+   "style": "spotter",
+   "session": 2,
+   "region": "back",
+   "subregion": "suboccipital",
+   "examPhase": "tagging-1",
+   "stem": "뒤통수밑삼각 도해 퀴즈판에서 번호핀 1~8이 가리키는 구조의 이름을 번호 순서대로 답하시오. 1~3은 삼각의 세 경계, 4·5는 내용물, 6·7은 지붕과 바닥, 8은 삼각 밖을 지나는 신경이다.",
+   "choices": null,
+   "answer": "1. 큰뒤머리곧은근 / 2. 위머리빗근 / 3. 아래머리빗근 / 4. 척추동맥 (3부) / 5. 뒤통수밑신경 / 6. 지붕: 머리반가시근 / 7. 바닥: 뒤통수뒤통수막 + C1 뒤활 / 8. 큰뒤통수신경",
+   "explanation": "뒤통수밑삼각은 널판근 → 머리반가시근을 젖혀야 나온다. 경계 셋은 이름에 방향이 들어 있어 **＂위안쪽 곧은근 · 위가쪽 위빗근 · 아래 아래빗근＂** 으로 외운다. 내용물은 **척추동맥 3부 + C1 뒤가지** 둘뿐. 신경 둘을 갈라 외우는 것이 핵심이다 — **C1 뒤가지(뒤통수밑신경) = 운동만**, **C2 뒤가지(큰뒤통수신경) = 감각만**. 큰뒤통수신경은 아래머리빗근 아래를 돌아 머리반가시근을 뚫고 나와 뒤통수 피부로 가며, 거기서 바깥목동맥 가지인 뒤통수동맥과 만난다 — 출발이 정반대인데 도착이 같다. 정답표는 라벨판 SVG 에서 기계적으로 뽑았다(pipelines/diagram_quiz.py) — 사람이 번호를 세지 않는다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-suboccipital-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "2026 2회차 김홍태pf 강의 스캔 97쪽",
+     "page": null,
+     "section": "뒤통수밑삼각"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -7039,6 +7085,8 @@ window.MEDKOS_ANATOMY = {
    "figs": [
     "diag-back-layers-labeled.svg",
     "diag-gluteal-foramina-labeled.svg",
+    "diag-popliteal-labeled.svg",
+    "diag-suboccipital-labeled.svg",
     "tree-s02-bundle-labeled.svg",
     "tree-s02-nerve-labeled.svg",
     "tree-s02-vessel-labeled.svg"

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="다리오금 — 마름모 경계·지붕·바닥, 얕은쪽에서 깊은쪽 순서(정강신경-오금정맥-오금동맥), 오금동맥 무릎가지 다섯">
+  <!-- 자체 제작 도해(claude-drawn). 오른쪽 다리를 **뒤에서** 본 구도.
+       근거: 2회차 김홍태pf §다리오금(경계·혈관·신경) B032~B047 + 표준 교재.
+       라벨판(-labeled)과 퀴즈판(-quiz)은 pipelines/diagram_quiz.py 로 한 벌에서 만든다. -->
+  <defs>
+    
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fa6cf"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="900" height="760" style="fill:#0f1724"/>
+  <text class="ttl" x="26" y="34" style="fill:#e8eefc;font-size:21px;font-weight:700">다리오금 <tspan class="sub" style="fill:#8fa6cf;font-size:12.5px">popliteal fossa — 오른쪽 다리를 뒤에서 본 그림</tspan></text>
+  <text class="sub" x="26" y="54" style="fill:#8fa6cf;font-size:12.5px">2회차 김홍태pf §다리오금 · 경계는 근육 넷, 내용물은 얕은쪽부터 신경 → 정맥 → 동맥</text>
+
+  <!-- ============ 왼쪽: 마름모 경계 ============ -->
+  <rect class="panel" x="24" y="70" width="470" height="500" rx="10" style="fill:#16213a;stroke:#2b3f68;stroke-width:1.4"/>
+  <text class="h" x="42" y="96" style="fill:#cfe0ff;font-size:14px;font-weight:700">① 경계 — 위 둘, 아래 둘</text>
+
+  <!-- 마름모 -->
+  <path class="dash" d="M259,150 L399,320 L259,490 L119,320 Z" style="fill:none;stroke:#f0c674;stroke-width:2;stroke-dasharray:6 5"/>
+
+  <!-- 위가쪽: 넙다리두갈래근 -->
+  <g class="ans" data-n="1">
+    <path class="muscle" d="M300,132 L392,268 L360,288 L268,152 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
+    <circle class="pin" cx="345" cy="196" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="345" y="201" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">1</text>
+  </g>
+  <!-- 위안쪽: 반힘줄근·반막근 -->
+  <g class="ans" data-n="2">
+    <path class="muscle" d="M218,132 L126,268 L158,288 L250,152 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
+    <circle class="pin" cx="173" cy="196" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="173" y="201" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">2</text>
+  </g>
+  <!-- 아래가쪽: 장딴지근 가쪽갈래(+장딴지빗근) -->
+  <g class="ans" data-n="3">
+    <path class="muscle" d="M360,352 L392,372 L300,508 L268,488 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
+    <circle class="pin" cx="345" cy="444" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="345" y="449" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">3</text>
+  </g>
+  <!-- 아래안쪽: 장딴지근 안쪽갈래 -->
+  <g class="ans" data-n="4">
+    <path class="muscle" d="M158,352 L126,372 L218,508 L250,488 Z" style="fill:#4a2f3d;stroke:#c98aa6;stroke-width:1.6"/>
+    <circle class="pin" cx="173" cy="444" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="173" y="449" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">4</text>
+  </g>
+
+  <!-- 지붕 / 바닥 -->
+  <g class="ans" data-n="5">
+    <rect class="bone" x="150" y="104" width="218" height="22" rx="6" style="fill:#2a2e3c;stroke:#8b93a8;stroke-width:1.4"/>
+    <circle class="pin" cx="140" cy="115" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="140" y="120" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">5</text>
+  </g>
+  <g class="ans" data-n="6">
+    <rect class="bone" x="150" y="516" width="218" height="22" rx="6" style="fill:#2a2e3c;stroke:#8b93a8;stroke-width:1.4"/>
+    <circle class="pin" cx="140" cy="527" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="140" y="532" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">6</text>
+  </g>
+  <text class="note" x="42" y="558" style="fill:#9fb4dc;font-size:11.5px">지붕(오금근막)을 <tspan style="fill:#f0c674">작은두렁정맥</tspan>과 뒤넙다리피부신경이 뚫고 들어간다.</text>
+
+  <!-- ============ 오른쪽 위: 깊이 순서 ============ -->
+  <rect class="panel" x="512" y="70" width="364" height="286" rx="10" style="fill:#16213a;stroke:#2b3f68;stroke-width:1.4"/>
+  <text class="h" x="530" y="96" style="fill:#cfe0ff;font-size:14px;font-weight:700">② 내용물 — 얕은쪽 → 깊은쪽</text>
+  <text class="note" x="530" y="116" style="fill:#9fb4dc;font-size:11.5px">피부에서 파고들어 가며 만나는 순서. 동맥이 가장 깊고 뼈에 붙어 있다.</text>
+
+  <g class="ans" data-n="7">
+    <rect class="nerve" x="546" y="132" width="240" height="34" rx="8" style="fill:#3a3a18;stroke:#e0d264;stroke-width:1.6"/>
+    <circle class="pin" cx="534" cy="149" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="534" y="154" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">7</text>
+  </g>
+  <g class="ans" data-n="8">
+    <rect class="vein" x="546" y="176" width="240" height="34" rx="8" style="fill:#1d3350;stroke:#6fa8ff;stroke-width:1.6"/>
+    <circle class="pin" cx="534" cy="193" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="534" y="198" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">8</text>
+  </g>
+  <g class="ans" data-n="9">
+    <rect class="artery" x="546" y="220" width="240" height="34" rx="8" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+    <circle class="pin" cx="534" cy="237" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="534" y="242" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">9</text>
+  </g>
+  <path class="arrow" d="M812,132 L812,254" style="fill:none;stroke:#8fa6cf;stroke-width:1.4;marker-end:url(#a)"/>
+  <text class="en" x="820" y="196" transform="rotate(90 820 196)" style="fill:#93a9d4;font-size:10.5px">깊어짐</text>
+
+  <g class="ans" data-n="10">
+    <rect class="nerve" x="546" y="268" width="240" height="46" rx="8" style="fill:#3a3a18;stroke:#e0d264;stroke-width:1.6"/>
+    <circle class="pin" cx="534" cy="291" r="13" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="534" y="296" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">10</text>
+  </g>
+  <text class="note" x="530" y="336" style="fill:#9fb4dc;font-size:11.5px">오금 안에서 갈라져 나가므로 &apos;오금 내용물&apos;에 넣되 위치는 <tspan style="fill:#f0c674">가쪽 벽</tspan>이다.</text>
+
+  <!-- ============ 오른쪽 아래: 무릎동맥 다섯 ============ -->
+  <rect class="panel" x="512" y="372" width="364" height="198" rx="10" style="fill:#16213a;stroke:#2b3f68;stroke-width:1.4"/>
+  <text class="h" x="530" y="398" style="fill:#cfe0ff;font-size:14px;font-weight:700">③ 오금동맥의 무릎가지 다섯</text>
+  <rect class="artery" x="530" y="410" width="96" height="30" rx="8" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+  <text class="lab" x="542" y="430" style="fill:#e6eeff;font-size:12.5px">오금동맥</text>
+  <g class="ans" data-n="11">
+    <rect class="artery" x="660" y="408" width="196" height="26" rx="7" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+    <circle class="pin" cx="648" cy="421" r="12" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="648" y="426" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">11</text>
+  </g>
+  <g class="ans" data-n="12">
+    <rect class="artery" x="660" y="438" width="196" height="26" rx="7" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+    <circle class="pin" cx="648" cy="451" r="12" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="648" y="456" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">12</text>
+  </g>
+  <g class="ans" data-n="13">
+    <rect class="artery" x="660" y="468" width="196" height="26" rx="7" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+    <circle class="pin" cx="648" cy="481" r="12" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="648" y="486" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">13</text>
+  </g>
+  <g class="ans" data-n="14">
+    <rect class="artery" x="660" y="498" width="196" height="26" rx="7" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+    <circle class="pin" cx="648" cy="511" r="12" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="648" y="516" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">14</text>
+  </g>
+  <g class="ans" data-n="15">
+    <rect class="artery" x="660" y="528" width="196" height="26" rx="7" style="fill:#4a1f26;stroke:#ff7d8f;stroke-width:1.6"/>
+    <circle class="pin" cx="648" cy="541" r="12" style="fill:#eab308;stroke:#7c5a00;stroke-width:1.2"/><text class="pinn" x="648" y="546" style="fill:#2a1f05;font-size:12px;font-weight:700;text-anchor:middle">15</text>
+  </g>
+  <path class="arrow" d="M628,425 L654,421" style="fill:none;stroke:#8fa6cf;stroke-width:1.4;marker-end:url(#a)"/><path class="arrow" d="M628,428 L654,481" style="fill:none;stroke:#8fa6cf;stroke-width:1.4;marker-end:url(#a)"/><path class="arrow" d="M628,432 L654,541" style="fill:none;stroke:#8fa6cf;stroke-width:1.4;marker-end:url(#a)"/>
+
+  <!-- 하단 요약 -->
+  <rect class="panel" x="24" y="588" width="852" height="150" rx="10" style="fill:#16213a;stroke:#2b3f68;stroke-width:1.4"/>
+  <text class="h" x="42" y="614" style="fill:#cfe0ff;font-size:14px;font-weight:700">외우는 요령</text>
+  <text class="note" x="42" y="638" style="fill:#9fb4dc;font-size:11.5px">· 경계는 <tspan style="fill:#f0c674">위 둘 · 아래 둘</tspan> — 위는 햄스트링(가쪽 넙다리두갈래근 / 안쪽 반힘줄·반막근), 아래는 장딴지근 두 갈래.</text>
+  <text class="note" x="42" y="660" style="fill:#9fb4dc;font-size:11.5px">· 내용물 깊이는 <tspan style="fill:#f0c674">&quot;신 · 정 · 동&quot;</tspan>(정강신경 → 오금정맥 → 오금동맥). 얕은 것부터 세면 신경이 먼저, 동맥이 뼈에 가장 가깝다.</text>
+  <text class="note" x="42" y="682" style="fill:#9fb4dc;font-size:11.5px">· 무릎가지는 <tspan style="fill:#f0c674">위 둘 · 아래 둘 · 가운데 하나</tspan>. 가운데(중간무릎동맥)만 관절주머니를 뚫고 들어가 십자인대에 간다.</text>
+  <text class="note" x="42" y="704" style="fill:#9fb4dc;font-size:11.5px">· 넷은 <tspan style="fill:#f0c674">무릎동맥그물</tspan>을 만든다 → 내림무릎동맥(넙다리동맥)·앞정강되돌이동맥(앞정강동맥)이 합류해 우회로가 된다.</text>
+  <text class="note" x="42" y="726" style="fill:#9fb4dc;font-size:11.5px">· 오금동맥은 관절 뒤에 단단히 고정돼 <tspan style="fill:#f0c674">무릎 탈구·관절융기위 골절에서 잘 찢어진다</tspan> — 다리 생존이 이 그물에 달린다.</text>
+</svg>
