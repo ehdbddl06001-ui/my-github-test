@@ -5,18 +5,18 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1644,
+  "total": 1645,
   "byType": {
    "kmle": 619,
    "anatomy": 468,
    "usmle": 96,
-   "paper": 444,
+   "paper": 445,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 468,
-   "Cardiology": 133,
+   "Cardiology": 134,
    "Nephrology": 117,
    "Infectious Disease": 93,
    "Hematology-Oncology": 72,
@@ -54,7 +54,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 974,
-   "medium": 621,
+   "medium": 622,
    "low": 49
   },
   "tagCount": 2397
@@ -833,6 +833,23 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0103.md",
    "snippet": "A 23 year old woman comes to the clinic because of recurrent episodes of swelling of her lips and hands over the past 4 years. Each episode develops over several hours, lasts 2 to 3 days, and resolves without treatment; the swelling is not ",
    "text": "Immunology Hereditary Angioedema — Bradykinin as the Effector Mediator of C1 Inhibitor Deficiency hereditary-angioedema C1-inhibitor bradykinin complement kallikrein USMLE-style / MedKOS (immunology · complement and contact-system regulation) A 23 year old woman comes to the clinic because of recurrent episodes of swelling of her lips and hands over the past 4 years. Each episode develops over several hours, lasts 2 to 3 days, and resolves without treatment; the swelling is not itchy, and no hives have ever accompanied it. She has also had several episodes of severe crampy abdominal pain with vomiting that resolved spontaneously. Prior episodes did not improve with antihistamines or glucocorticoids. Her father has had similar episodes since adolescence. The current episode began the day after a dental extraction. Examination shows nonpitting, nonerythematous edema of the lips and dorsum of both hands without urticaria. Vital signs and laboratory studies are shown. Increased activity of which of the following mediators is most directly responsible for this patient's episodes of swelling? A. Histamine B. Bradykinin C. Leukotriene C4 D. Complement C5a E. Substance P Recurrent nonpruritic angioedema without urticaria, unresponsive to antihistamines and glucocorticoids, with a positive family history, attacks triggered by dental trauma, low C4, and low C1 inhibitor functional activity indicates hereditary angioedema. C1 inhibitor normally restrains plasma kallikrein and factor XIIa of the contact system; its deficiency permits unchecked kallikrein mediated cleavage of high molecular weight kininogen, generating excess bradykinin, which increases vascular permeability and produces the episodic edema. The histamine pathway is not involved, which is why urticaria is absent and antihistamines fail."
+  },
+  {
+   "id": "paper-2026-0445",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Advances",
+   "confidence": "medium",
+   "date": "2026-08-18",
+   "path": "content/papers/2026/2026-08-18_paper-2026-0445_management_of_residual_extracardiac_congenital_heart_disease.md",
+   "snippet": "Title Management of Residual Extracardiac Congenital Heart Disease After Heart Transplant Authors Marshall V William H, Broda Christopher R, Hasan Ayesha K, Kearney Katherine, Wright Lydia K Journal / DOI JACC. Advances · DOI: 10.1016/j.jac",
+   "text": "Cardiology scraped pubmed PubMed / JACC. Advances Title Management of Residual Extracardiac Congenital Heart Disease After Heart Transplant Authors Marshall V William H, Broda Christopher R, Hasan Ayesha K, Kearney Katherine, Wright Lydia K Journal / DOI JACC. Advances · DOI: 10.1016/j.jacadv.2026.103081 · PMID: 42611010 https://pubmed.ncbi.nlm.nih.gov/42611010/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-08-18",
