@@ -72,13 +72,27 @@ def changed_paths() -> list[str]:
     return out
 
 
+def push_refspec(branch: str) -> str:
+    """항상 **지금 커밋한 HEAD** 를 대상 브랜치로 민다.
+
+    로컬 브랜치명(`branch`)을 그대로 밀면 안 된다 — 루틴 컨테이너는 지정 작업
+    브랜치를 체크아웃한 채 뜨고, 그때 로컬 `main` 은 클론 시점에 멈춰 있다.
+    publish 는 HEAD(작업 브랜치)에 커밋하므로 `git push origin main` 은 그 낡은
+    main 을 밀어 non-fast-forward 로 거절된다(2026-08-20 실측: 하루치 산출물이
+    커밋됐는데도 푸시가 막혔다). `HEAD:<branch>` 로 밀면 체크아웃이 무엇이든
+    방금 만든 커밋이 대상 브랜치로 간다.
+    """
+    return f"HEAD:{branch}"
+
+
 def push_with_backoff(branch: str, dry: bool) -> bool:
     """네트워크 실패만 재시도한다(2·4·8·16초). 거절(non-fast-forward)은 즉시 실패."""
+    refspec = push_refspec(branch)
     for i, wait in enumerate((2, 4, 8, 16, 0)):
         if dry:
-            print(f"  [dry] git push -u origin {branch}")
+            print(f"  [dry] git push -u origin {refspec}")
             return True
-        r = _run(["git", "push", "-u", "origin", branch])
+        r = _run(["git", "push", "-u", "origin", refspec])
         if r.returncode == 0:
             print(r.stderr.strip().splitlines()[-1] if r.stderr.strip() else "pushed")
             return True
@@ -216,6 +230,11 @@ def selftest() -> int:
         "논문 카드의 브랜치 발행까지 막았다"
     assert blocks_question_branch(["content/kmle/2026/k.md"], [], "claude/x", False) == \
         ["content/kmle/2026/k.md"], "KMLE 도 동일하게 막혀야 한다"
+    # 푸시는 로컬 브랜치명이 아니라 HEAD 를 대상 브랜치로 밀어야 한다(2026-08-20).
+    # 루틴 컨테이너는 작업 브랜치를 체크아웃한 채 뜨므로 로컬 main 이 낡아 있다.
+    assert push_refspec("main") == "HEAD:main", "낡은 로컬 main 을 밀 위험이 남아 있다"
+    assert push_refspec("claude/x") == "HEAD:claude/x", "브랜치 발행 refspec 이 틀렸다"
+
     print("[ OK ] publish selftest")
     return 0
 
