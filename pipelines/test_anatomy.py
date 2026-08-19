@@ -430,6 +430,27 @@ def test_subnote_builder_selftest() -> None:
     assert r.returncode == 0, f"anatomy_subnote selftest 실패: {r.stdout}{r.stderr}"
 
 
+def test_subnote_has_questions_without_private_scans() -> None:
+    """서브노트는 `.private` 실사 이미지가 없어도 문항이 실려야 한다(2026-08-19 실측).
+
+    복원 PNG 는 스캔 원본이 있는 세션에서만 만들어져 **루틴 컨테이너에는 없다**.
+    예전엔 서브노트가 `scan_questions` 만 실어, 수업 전날 사용자에게 간 PDF 의 문항
+    지면 13쪽이 통째로 그림 없는 빈 지면이었다(문항 0개). 이제 같은 회차의 자체 제작
+    도해 spotter(=repo 안 SVG)와 관계형 문항이 같은 파일에 실린다.
+    """
+    import anatomy_subnote as sn
+    root = Path(__file__).resolve().parent.parent
+    for card in sorted((root / "content/anatomy/notes").glob("*-subnote.md")):
+        meta = sn._load_card(card)
+        qs = sn.written_questions(root, meta)
+        assert qs, f"{card.name}: 실사 밖 문항이 0개 — 컨테이너가 바뀌면 빈 문제집이 된다"
+        # 도해 문항은 repo 안 SVG 라 어느 컨테이너에서도 실려야 한다
+        for path, c in qs:
+            pair = sn._diagram_pair(root, c)
+            if pair:
+                assert (root / pair[0]).exists() and (root / pair[1]).exists(), path.name
+
+
 def test_publish_lane_guard() -> None:
     """publish.py: 콘텐츠만 main 자동 푸시, 코드 변경은 거부(2026-08-17).
 
