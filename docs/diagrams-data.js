@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
- "generated": "2026-08-19",
+ "generated": "2026-08-20",
  "count": 70,
  "groups": 36,
  "items": [
@@ -806,7 +806,7 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "골반가로막",
-   "date": "2026-08-12",
+   "date": "2026-08-13",
    "bytes": 10221
   },
   {
@@ -818,7 +818,7 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "골반가로막 spotter 퀴즈판",
-   "date": "2026-08-12",
+   "date": "2026-08-13",
    "bytes": 8201
   },
   {
@@ -830,7 +830,7 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "속엉덩동맥 분지",
-   "date": "2026-08-12",
+   "date": "2026-08-13",
    "bytes": 14315
   },
   {
@@ -842,7 +842,7 @@ window.MEDKOS_DIAGRAMS = {
    "session": 14,
    "unit": "14회차 · 팔·골반·회음",
    "title": "속엉덩동맥 분지 spotter 퀴즈판",
-   "date": "2026-08-12",
+   "date": "2026-08-13",
    "bytes": 10683
   }
  ]

@@ -5,11 +5,11 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1647,
+  "total": 1653,
   "byType": {
+   "usmle": 102,
    "kmle": 619,
    "anatomy": 470,
-   "usmle": 96,
    "paper": 445,
    "ailab": 14,
    "basic": 3
@@ -21,11 +21,11 @@ window.MEDKOS_INDEX = {
    "Infectious Disease": 93,
    "Hematology-Oncology": 72,
    "Pediatrics": 71,
-   "Pathology": 62,
-   "Obstetrics & Gynecology": 48,
+   "Pathology": 63,
+   "Obstetrics & Gynecology": 49,
    "Neurology": 47,
-   "Psychiatry": 46,
-   "Surgery": 44,
+   "Psychiatry": 47,
+   "Surgery": 45,
    "Endocrinology": 40,
    "Gastroenterology": 39,
    "Laboratory Medicine": 39,
@@ -37,9 +37,9 @@ window.MEDKOS_INDEX = {
    "Rheumatology": 38,
    "Hematology": 37,
    "Physiology": 13,
-   "Pharmacology": 7,
+   "Pharmacology": 8,
+   "Microbiology": 7,
    "Biochemistry": 6,
-   "Microbiology": 6,
    "Immunology": 4,
    "Internal Medicine": 4,
    "Medical AI Lab": 4,
@@ -53,13 +53,136 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 976,
+   "high": 982,
    "medium": 622,
    "low": 49
   },
-  "tagCount": 2397
+  "tagCount": 2407
  },
  "docs": [
+  {
+   "id": "usmle-2026-0114",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Ectopic Pregnancy — Selecting Medical Therapy When Methotrexate Criteria Are Met",
+   "tags": [
+    "ectopic-pregnancy",
+    "methotrexate",
+    "beta-hCG",
+    "transvaginal-ultrasound",
+    "salpingostomy"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · early pregnancy complications)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/usmle/usmle-2026-0114.md",
+   "snippet": "A 29 year old woman, gravida 2 para 1, comes to the emergency department because of 2 days of light vaginal spotting and mild left lower quadrant discomfort. Her last menstrual period was 6 weeks ago. She has no significant medical history,",
+   "text": "Obstetrics & Gynecology Ectopic Pregnancy — Selecting Medical Therapy When Methotrexate Criteria Are Met ectopic-pregnancy methotrexate beta-hCG transvaginal-ultrasound salpingostomy USMLE-style / MedKOS (obstetrics · early pregnancy complications) A 29 year old woman, gravida 2 para 1, comes to the emergency department because of 2 days of light vaginal spotting and mild left lower quadrant discomfort. Her last menstrual period was 6 weeks ago. She has no significant medical history, takes no medications, and does not breastfeed. On examination the abdomen is soft with mild left lower quadrant tenderness and no rebound; there is scant dark blood in the vaginal vault. Vital signs, laboratory studies, and ultrasound findings are shown. She wishes to preserve her fertility and states she can return reliably for follow up visits. Which of the following is the most appropriate management? A. Intramuscular methotrexate B. Laparoscopic salpingectomy C. Laparoscopic salpingostomy D. Repeat β hCG measurement in 48 hours E. Uterine curettage for histologic confirmation An empty uterus with a β hCG of 3,200 mIU/mL (above the discriminatory zone) and a 2.1 cm adnexal mass without cardiac activity establishes an ectopic pregnancy. She is hemodynamically stable without rupture signs, the mass is small without cardiac activity, hepatic and renal function are normal, and she is reliable for follow up — all criteria favoring single dose intramuscular methotrexate, which avoids surgery while preserving the tube."
+  },
+  {
+   "id": "usmle-2026-0113",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Blunt Abdominal Trauma — Unstable with Free Fluid Means Laparotomy, Not CT",
+   "tags": [
+    "blunt-abdominal-trauma",
+    "FAST",
+    "hemorrhagic-shock",
+    "laparotomy",
+    "trauma-triage"
+   ],
+   "source": "USMLE-style / MedKOS (surgery · trauma)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/usmle/usmle-2026-0113.md",
+   "snippet": "A 24 year old man is brought to the emergency department 30 minutes after a head on motor vehicle collision in which he was the unrestrained driver. He complains of diffuse abdominal pain. His airway is patent and breath sounds are equal bi",
+   "text": "Surgery Blunt Abdominal Trauma — Unstable with Free Fluid Means Laparotomy, Not CT blunt-abdominal-trauma FAST hemorrhagic-shock laparotomy trauma-triage USMLE-style / MedKOS (surgery · trauma) A 24 year old man is brought to the emergency department 30 minutes after a head on motor vehicle collision in which he was the unrestrained driver. He complains of diffuse abdominal pain. His airway is patent and breath sounds are equal bilaterally. The abdomen is distended and diffusely tender. Vital signs, laboratory studies, and bedside imaging findings are shown. After 1 L of warmed crystalloid and initiation of a blood transfusion, blood pressure is 88/60 mm Hg and pulse is 122/min. Which of the following is the most appropriate next step in management? A. Contrast enhanced computed tomography of the abdomen and pelvis B. Diagnostic peritoneal lavage C. Angiography with selective embolization D. Serial abdominal examinations with continued transfusion E. Exploratory laparotomy A blunt trauma patient who remains hypotensive and tachycardic despite crystalloid and blood (transient/non responder) with sonographic free fluid in the hepatorenal recess and pelvis has intra abdominal hemorrhage requiring immediate operative control. CT is reserved for hemodynamically stable patients; taking an unstable patient to the scanner delays definitive hemostasis."
+  },
+  {
+   "id": "usmle-2026-0112",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Serotonin Syndrome — Benzodiazepines Before Cyproheptadine",
+   "tags": [
+    "serotonin-syndrome",
+    "sertraline",
+    "tramadol",
+    "benzodiazepine",
+    "cyproheptadine",
+    "drug-interaction"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · drug-induced emergencies)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/usmle/usmle-2026-0112.md",
+   "snippet": "A 34 year old man with major depressive disorder treated with sertraline is brought to the emergency department because of 6 hours of agitation, sweating, and tremor. Three days ago he was prescribed tramadol for acute low back pain. On exa",
+   "text": "Psychiatry Serotonin Syndrome — Benzodiazepines Before Cyproheptadine serotonin-syndrome sertraline tramadol benzodiazepine cyproheptadine drug-interaction USMLE-style / MedKOS (psychiatry · drug-induced emergencies) A 34 year old man with major depressive disorder treated with sertraline is brought to the emergency department because of 6 hours of agitation, sweating, and tremor. Three days ago he was prescribed tramadol for acute low back pain. On examination he is restless and diaphoretic with dilated pupils and hyperactive bowel sounds. Deep tendon reflexes are markedly brisk in the lower extremities, and brisk dorsiflexion of each ankle elicits sustained rhythmic contractions. Vital signs and laboratory studies are shown. Both medications are withheld, and intravenous fluids and external cooling are begun. Which of the following is the most appropriate next step in pharmacotherapy? A. Dantrolene B. Lorazepam C. Cyproheptadine D. Bromocriptine E. Haloperidol An SSRI combined with tramadol (a serotonin reuptake inhibitor at the synapse) producing acute onset agitation, autonomic instability, mydriasis, hyperactive bowel sounds, hyperreflexia, and inducible sustained ankle contractions indicates serotonin excess. After stopping the offending agents and starting supportive care, first line pharmacotherapy is a benzodiazepine to control agitation and neuromuscular hyperactivity; cyproheptadine, a serotonin antagonist, is reserved for cases not controlled by benzodiazepines and supportive measures."
+  },
+  {
+   "id": "usmle-2026-0111",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Beta-Blocker Overdose — Glucagon Bypasses the Blocked β-Receptor",
+   "tags": [
+    "beta-blocker-overdose",
+    "glucagon",
+    "cAMP",
+    "bradycardia",
+    "toxicology",
+    "receptor-bypass"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · toxicology)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/usmle/usmle-2026-0111.md",
+   "snippet": "A 47 year old woman is brought to the emergency department 2 hours after her husband found her lethargic next to an empty bottle of his metoprolol. She is drowsy but arousable. Her skin is cool and her extremities are mottled. The cardiac m",
+   "text": "Pharmacology Beta-Blocker Overdose — Glucagon Bypasses the Blocked β-Receptor beta-blocker-overdose glucagon cAMP bradycardia toxicology receptor-bypass USMLE-style / MedKOS (pharmacology · toxicology) A 47 year old woman is brought to the emergency department 2 hours after her husband found her lethargic next to an empty bottle of his metoprolol. She is drowsy but arousable. Her skin is cool and her extremities are mottled. The cardiac monitor shows the rhythm in the figure. Vital signs and laboratory studies are shown. Intravenous crystalloid boluses and two doses of atropine produce no significant change in heart rate or blood pressure. Administration of which of the following drugs is most likely to improve this patient's hemodynamic status? A. Isoproterenol B. Sodium bicarbonate C. Glucagon D. Naloxone E. Calcium gluconate Bradycardia, hypotension, and hypoglycemia after metoprolol ingestion indicate beta blocker toxicity refractory to atropine and fluids. Glucagon binds its own Gs coupled cardiac receptor, activating adenylate cyclase and raising cAMP independently of the blocked β1 receptor, thereby restoring chronotropy and inotropy — the classic receptor bypass antidote."
+  },
+  {
+   "id": "usmle-2026-0110",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Legionella Pneumonia — Urinary Antigen as the Key Diagnostic Test",
+   "tags": [
+    "legionella",
+    "atypical-pneumonia",
+    "urinary-antigen",
+    "hyponatremia",
+    "gram-stain-negative"
+   ],
+   "source": "USMLE-style / MedKOS (microbiology · atypical pneumonia)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/usmle/usmle-2026-0110.md",
+   "snippet": "A 58 year old man is brought to the emergency department because of 3 days of fever, headache, watery diarrhea, and a cough productive of scant sputum. Symptoms began 5 days after he returned from a 4 day convention at a large hotel. He has",
+   "text": "Microbiology Legionella Pneumonia — Urinary Antigen as the Key Diagnostic Test legionella atypical-pneumonia urinary-antigen hyponatremia gram-stain-negative USMLE-style / MedKOS (microbiology · atypical pneumonia) A 58 year old man is brought to the emergency department because of 3 days of fever, headache, watery diarrhea, and a cough productive of scant sputum. Symptoms began 5 days after he returned from a 4 day convention at a large hotel. He has smoked one pack of cigarettes daily for 30 years. On examination he is confused about the date. There are crackles over the right lower lung field. Vital signs and laboratory studies are shown. Which of the following is most likely to establish the causative organism? A. Detection of bacterial antigen in a urine specimen B. Culture of sputum on standard 5% sheep blood agar C. Acid fast staining of three serial sputum specimens D. Measurement of serum cold agglutinin titers E. Culture of blood on standard aerobic media Pneumonia with high fever, confusion, watery diarrhea, hyponatremia, mildly elevated transaminases, exposure to an aerosolized water source (hotel), and a sputum Gram stain showing many neutrophils but no visible organisms points to Legionella pneumophila. The organism stains poorly with Gram stain and does not grow on standard media (it requires buffered charcoal yeast extract with cysteine and iron); the urinary antigen test detecting serogroup 1 antigen is the most practical confirmatory test."
+  },
+  {
+   "id": "usmle-2026-0109",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Sarcoidosis — Macrophage 1α-Hydroxylase as the Mechanism of Hypercalcemia",
+   "tags": [
+    "sarcoidosis",
+    "hypercalcemia",
+    "granuloma",
+    "calcitriol",
+    "1-alpha-hydroxylase",
+    "PTH-independent"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · granulomatous disease)",
+   "confidence": "high",
+   "date": "2026-08-20",
+   "path": "content/usmle/usmle-2026-0109.md",
+   "snippet": "A 42 year old woman comes to the clinic because of 3 months of dry cough, exertional dyspnea, and fatigue. Two months ago she had several tender, red, raised nodules over both shins that resolved without treatment. She takes no medications ",
+   "text": "Pathology Sarcoidosis — Macrophage 1α-Hydroxylase as the Mechanism of Hypercalcemia sarcoidosis hypercalcemia granuloma calcitriol 1-alpha-hydroxylase PTH-independent USMLE-style / MedKOS (pathology · granulomatous disease) A 42 year old woman comes to the clinic because of 3 months of dry cough, exertional dyspnea, and fatigue. Two months ago she had several tender, red, raised nodules over both shins that resolved without treatment. She takes no medications or supplements. Examination shows clear lung fields and no palpable lymphadenopathy. Vital signs and laboratory studies are shown. Biopsy of an enlarged mediastinal lymph node shows multiple well formed aggregates of epithelioid histiocytes with scattered multinucleated giant cells and no central necrosis. Which of the following mechanisms best explains this patient's serum calcium concentration? A. Secretion of a parathyroid hormone–related peptide by malignant epithelial cells B. Direct osteolysis of trabecular bone by metastatic tumor deposits C. Autonomous secretion of parathyroid hormone by a parathyroid adenoma D. Conversion of 25 hydroxyvitamin D to its active metabolite within activated macrophages E. Reduced renal calcium clearance caused by granulomatous interstitial nephritis Bilateral hilar lymphadenopathy with upper lobe reticular opacities, resolved tender shin nodules (erythema nodosum), and non necrotizing epithelioid granulomas on node biopsy establish sarcoidosis. Activated macrophages within granulomas express 1α hydroxylase independently of PTH regulation, converting 25 hydroxyvitamin D to calcitriol; the resulting hypercalcemia suppresses PTH, explaining the low PTH with normal 25 OH D and normal renal function."
+  },
   {
    "id": "kmle-2026-0649",
    "type": "kmle",
