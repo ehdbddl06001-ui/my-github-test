@@ -611,6 +611,32 @@ def test_scan_blanks_hide_every_label() -> None:
             "pins"}, f"{p.name}: 모르는 설정 키 {sorted(rec['cfg'])}"
 
 
+
+def test_cadaver_labels_are_restored_not_blacked() -> None:
+    """카데바 **위** 글자는 검은 박스가 아니라 복원으로 지운다(2026-08-19 사용자 지적).
+
+    표본 위에 검은 사각형을 얹으면 물어볼 구조까지 가려져 문항이 무의미해진다.
+    `scan_triage.split_by_bg` 가 가림 박스를 밑바탕(밝은 조직 / 검은 여백)으로 쪼개고,
+    조직 쪽은 `label_boxes`(주변·앞뒤 프레임으로 복원)로, 여백 쪽만 `black_boxes` 로 간다.
+    """
+    sys.path.insert(0, str(Path(__file__).parent))
+    import numpy as np
+    import scan_triage as st
+
+    img = np.zeros((1171, 1650, 3), np.uint8)
+    img[:, 700:1400] = (185, 180, 175)            # 오른쪽 절반이 표본
+    pieces = st.split_by_bg(img, [600, 400, 900, 460])
+    assert len(pieces) == 2, pieces
+    (b1, t1), (b2, t2) = pieces
+    assert t1 is False and t2 is True, pieces      # 왼쪽 여백 / 오른쪽 표본
+    assert b1[2] == b2[0], "쪼갠 조각 사이에 틈이 있으면 그만큼 글자가 남는다"
+    assert b1[0] == 600 and b2[2] == 900, pieces   # 원래 폭을 다 덮는다
+
+    cfg = st.config_for({"masks": [b1], "paint": [b2], "pins": [], "title": list(st.TITLE)})
+    assert cfg["black_boxes"] == [b1], cfg
+    assert cfg["label_boxes"] == [b2], cfg         # 표본 위는 복원 경로로
+    assert b2 not in cfg["black_boxes"], "표본을 검게 덮고 있다"
+
 TESTS = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
 
 if __name__ == "__main__":

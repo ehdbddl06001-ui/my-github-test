@@ -167,7 +167,9 @@ def text_lines(img, bar_top: int = BAR_TOP, grow: bool = True) -> list[tuple[int
     # 획이 3개 이상 모여야 글자다 — 검은 여백에 닿은 표본 가장자리 한 줄기가
     # '글자'로 잡혀 어깨·목이 통째로 검게 덮였다(2회차 A013 실측: 가짜 4줄).
     hand = _boxes(pen_mask(img, bar_top), 21, 45, 1.1, 600, 3)
-    cap = _boxes(caption_mask(img, bar_top), 17, 110, 2.0, 900, 5)
+    # 캡션은 짧은 한글 줄('큰마름근' 4자)도 있어 조건을 너무 죄면 통째로 놓친다
+    # (A013 실측: 영문 줄만 잡혀 한글 줄이 그대로 읽혔다).
+    cap = _boxes(caption_mask(img, bar_top), 17, 90, 1.8, 700, 3)
     # 두 검출기가 같은 줄을 잡으면 하나로 합친다 — 안 합치면 핀이 두 개 생긴다
     merged: list[list[int]] = []
     for x, y, w, h in sorted(hand + cap, key=lambda b: -b[2] * b[3]):
@@ -320,6 +322,113 @@ def bbox(group) -> list[int]:
             max(p[0] + p[2] for p in group), max(p[1] + p[3] for p in group)]
 
 
+TISSUE_BG = 96          # 이 밝기보다 밝으면 '표본 위'로 본다
+MIN_RUN = 26            # 이보다 좁은 조각은 이웃에 합친다
+
+
+def split_by_bg(img, box, bar_top: int = BAR_TOP) -> list[tuple[list[int], bool]]:
+    """가림 박스를 **밑에 무엇이 있는지**로 잘라 (조각, 표본위냐) 로 돌려준다.
+
+    라벨이 표본 위에 얹혀 있으면 검은 박스로 덮는 순간 **물어볼 구조까지 사라진다**
+    (사용자 지적, 2026-08-19). 그런 자리는 주변 조직과 앞뒤 프레임을 보고 **복원**해야
+    하고, 검은 여백 위의 글자만 검은 박스로 덮으면 된다. 한 라벨이 조직에서 시작해
+    여백으로 넘어가는 일이 흔하므로 **박스를 세로로 쪼개** 구간별로 정한다.
+    """
+    cv2, np = _cv()
+    x0, y0, x1, y1 = [int(v) for v in box]
+    x0, y0 = max(0, x0), max(0, y0)
+    x1, y1 = min(img.shape[1], x1), min(min(bar_top, img.shape[0]), y1)
+    if x1 - x0 < 8 or y1 - y0 < 6:
+        return [([x0, y0, x1, y1], False)]
+    g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    # 글자 자체(밝은 획)에 휘둘리지 않게 큰 커널 중앙값으로 '바탕'만 본다
+    bg = cv2.medianBlur(g, 61)[y0:y1, x0:x1]
+    tissue = np.median(bg, axis=0) > TISSUE_BG
+    runs: list[list] = []
+    for i, t in enumerate(tissue):
+        if runs and runs[-1][2] == bool(t):
+            runs[-1][1] = i + 1
+        else:
+            runs.append([i, i + 1, bool(t)])
+    # 자잘한 구간은 이웃에 흡수 — 조각이 잘게 나면 경계마다 이음매가 보인다
+    merged: list[list] = []
+    for r in runs:
+        if merged and (r[1] - r[0] < MIN_RUN or merged[-1][2] == r[2]):
+            merged[-1][1] = r[1]
+        else:
+            merged.append(r)
+    return [([x0 + a, y0, x0 + b, y1], t) for a, b, t in merged]
+
+
+def pick_donor(render_dir: str, page: str, span: int = 3) -> str | None:
+    """앞뒤 페이지 중 **같은 장면**을 고른다 — 복원에 쓸 진짜 조직 질감의 출처.
+
+    같은 영상의 이웃 캡처는 카메라 구도가 거의 같아, 지운 자리에 옆 프레임의 조직을
+    그대로 옮겨 붙일 수 있다(확산 인페인팅보다 훨씬 자연스럽다). 장면이 바뀌면 오히려
+    엉뚱한 걸 붙이므로 **전체 밝기 차이가 작은 것만** 쓴다.
+    """
+    cv2, np = _cv()
+    src = PRIV / render_dir / "src"
+    cur = cv2.imread(str(src / f"{page}.png"))
+    if cur is None:
+        return None
+    pages = sorted(p.stem for p in src.glob("*.png"))
+    if page not in pages:
+        return None
+    i = pages.index(page)
+    small = cv2.resize(cv2.cvtColor(cur, cv2.COLOR_BGR2GRAY), (160, 110))
+    best, score = None, 1e9
+    for j in range(max(0, i - span), min(len(pages), i + span + 1)):
+        if j == i:
+            continue
+        other = cv2.imread(str(src / f"{pages[j]}.png"))
+        if other is None:
+            continue
+        d = float(np.abs(small.astype(np.int16)
+                         - cv2.resize(cv2.cvtColor(other, cv2.COLOR_BGR2GRAY),
+                                      (160, 110)).astype(np.int16)).mean())
+        if d < score:
+            best, score = pages[j], d
+    # 12 이상이면 다른 장면이다(실측: 같은 shot 은 3~8)
+    return str((src / f"{best}.png").relative_to(ROOT)) if best and score < 12 else None
+
+
+def grow_block(img, box, bar_top: int = BAR_TOP) -> list[int]:
+    """라벨 덩어리를 **위아래로** 늘려 못 찾은 이웃 줄까지 감싼다.
+
+    캡션은 보통 한글 줄 + 영문 줄 두 줄인데, 표본 위에서는 한 줄만 잡히는 일이 잦다
+    (A013 실측: 영문 줄만 잡혀 '큰마름근'이 그대로 읽혔다). 잡힌 줄과 **같은 가로
+    범위**에서 획이 이어지는 행을 따라가면 놓친 줄이 딸려 온다.
+    """
+    cv2, np = _cv()
+    x0, y0, x1, y1 = [int(v) for v in box]
+    g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    th = cv2.morphologyEx(g, cv2.MORPH_TOPHAT,
+                          cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (13, 13)))
+    xa, xb = max(0, x0), min(img.shape[1], x1)
+    if xb - xa < 30:
+        return [x0, y0, x1, y1]
+    rows = (th[:, xa:xb] > 26).sum(axis=1)
+    need = max(8, int(0.06 * (xb - xa)))
+    top, gap = y0, 0
+    for i in range(y0 - 1, max(-1, y0 - 80), -1):
+        if rows[i] >= need:
+            top, gap = i, 0
+        else:
+            gap += 1
+            if gap > 16:
+                break
+    bot, gap = y1, 0
+    for i in range(y1, min(min(bar_top, img.shape[0]), y1 + 80)):
+        if rows[i] >= need:
+            bot, gap = i + 1, 0
+        else:
+            gap += 1
+            if gap > 16:
+                break
+    return [x0, top - 6, x1, bot + 6]
+
+
 def _far_end(box, lead) -> tuple[int, int]:
     """지시선의 **라벨에서 먼 쪽 끝** — 실제로 가리키는 자리."""
     x0, y0, x1, y1 = box
@@ -394,21 +503,23 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
     # **가리킨 자리가 검은 박스 안이면 문항이 안 된다.** 캡션이 구조 위에 바로 얹힌
     # 페이지(7회차 다수)는 답을 지우려면 그 구조까지 덮게 돼, 남는 건 검은 구멍을
     # 가리키는 핀뿐이다 — 그런 페이지는 자동 대상에서 뺀다.
-    # 늘린 캡션 박스가 ▲ 까지 삼키면 핀이 검은 박스를 가리키게 된다(F005 실측).
-    # ▲ 는 라벨 줄 끝에 붙어 있을 뿐이니, 그 앞에서 박스를 끊으면 글자는 다 가려진다.
-    for _b, _p, tgt in arrow_pins:
-        for m in masks:
+    # ▲ 자리를 비우려고 **가림 박스를 잘라내면 그만큼 글자가 남는다**(A013 실측:
+    # 캡션 왼쪽 277px 이 통째로 노출됐다). 이제 조직 위 조각은 검게 덮지 않고 복원하므로
+    # 자를 필요가 없다 — 아래에서 **검게 남는 조각에만** 여유를 준다.
+    # 가장자리에 딱 붙어도 핀 선이 검은 박스로 빨려 들어가 무엇을 묻는지 사라진다
+    # (2회차 A044·A045·A046 실측) → 여유 30px 을 두고 본다.
+    # 복원(label_boxes)될 자리는 조직이 남으므로 핀이 가리켜도 된다 — 검게 덮이는
+    # 조각만 따진다. split_by_bg 로 나눈 결과는 아래에서 만들므로 여기서 미리 본다.
+    dark_pieces = [pc for m in masks for pc, on_t in split_by_bg(img, m) if not on_t]
+    for _b, _p, tgt in arrow_pins:          # 검은 조각만 ▲ 앞에서 끊는다
+        for m in dark_pieces:
             if not _inside(tgt, m, 40):
                 continue
-            # 화살표에서 40px 은 비워 둔다 — 박스 가장자리에 닿기만 해도 핀 선이
-            # 검은 면으로 들어가 버려 무엇을 묻는지 사라진다(2회차 실측).
             if tgt[0] - m[0] < m[2] - tgt[0]:
                 m[0] = min(m[2] - 40, tgt[0] + 40)
             else:
                 m[2] = max(m[0] + 40, tgt[0] - 40)
-    # 가장자리에 딱 붙어도 핀 선이 검은 박스로 빨려 들어가 무엇을 묻는지 사라진다
-    # (2회차 A044·A045·A046 실측) → 여유 30px 을 두고 본다.
-    buried = [p for p in pins if any(_inside(p[2], m, 30) for m in masks)]
+    buried = [p for p in pins if any(_inside(p[2], m, 30) for m in dark_pieces)]
     if buried:
         return {"page": path.stem, "ok": False,
                 "why": f"가리킨 자리가 가림 박스 안이다({len(buried)}개) — 캡션이 구조 위에 얹혔다"}
@@ -420,20 +531,56 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
     pins.sort(key=lambda t: (t[0][1] // 60, t[0][0]))
     for i, (_, p, _t) in enumerate(pins, 1):
         p["n"] = i
-    return {"page": path.stem, "ok": True, "masks": masks, "title": title,
+    # **밑에 표본이 있는 조각은 검게 덮지 않고 복원한다**(label_boxes). 검은 여백 위
+    # 글자만 검은 박스로 남긴다 — 그래야 물어볼 구조가 화면에 남는다.
+    paint = [pc for m in masks for pc, on_t in split_by_bg(img, m) if on_t]
+    black = dark_pieces
+    if band:                       # 자막 띠는 화면 UI 다 — 복원할 구조가 없다
+        paint = [pc for pc in paint if not (pc[1] >= band[1] - 8 and pc[3] <= band[3] + 8)]
+        black = [pc for pc in black if not (pc[1] >= band[1] - 8 and pc[3] <= band[3] + 8)]
+        black.append(list(band))
+    return {"page": path.stem, "ok": True, "masks": black, "paint": paint,
+            "title": title,
             "strokes": [[x, y, x + w, y + h] for x, y, w, h in dark],
             "pins": [p for _, p, _t in pins], "lines": len(lines)}
 
 
-def config_for(p: dict) -> dict:
-    return {"crop": CROP, "title_box": p.get("title", list(TITLE)),
-            "colors": {"red": True},
-            "stroke_drop": 26, "stroke_pad": 3,
-            "stroke_boxes": p.get("strokes", []),
-            "black_boxes": p["masks"], "pins": p["pins"]}
+def config_for(p: dict, donor: str | None = None) -> dict:
+    cfg = {"crop": CROP, "title_box": p.get("title", list(TITLE)),
+           "colors": {"red": True},
+           "stroke_drop": 26, "stroke_pad": 3,
+           "stroke_boxes": p.get("strokes", []),
+           "black_boxes": p["masks"],
+           # 표본 위 글자는 **검게 덮지 않고 지워서 되살린다** — donor(앞뒤 프레임) →
+           # 점진 인페인팅 → 질감 매칭. 획만 지우는 방식도 해 봤지만 테두리를 두른
+           # 인쇄 캡션은 글자가 그대로 읽혀(A013 '큰마름근' 실측) 답이 샜다.
+           "label_boxes": p.get("paint", []),
+           "pins": p["pins"]}
+    if donor:
+        cfg["donor"] = donor
+        # donor 프레임에도 같은 자막이 떠 있으면 그 글자를 그대로 복사해 온다 →
+        # donor 쪽 글자 자리는 쓰지 않는다.
+        cfg["donor_bad_boxes"] = p.get("donor_bad", [])
+    return cfg
 
 
 # ---------------------------------------------------------------- 검사
+def box_has_text(quiz_img, box, pad: int = 6) -> bool:
+    """복원한 자리에 **글자가 남았는가** — 자르기 전 좌표 박스를 quiz 이미지에서 본다."""
+    cv2, np = _cv()
+    x0 = max(0, box[0] - CROP[0] - pad); y0 = max(0, box[1] - CROP[1] - pad)
+    x1 = min(quiz_img.shape[1], box[2] - CROP[0] + pad)
+    y1 = min(quiz_img.shape[0], box[3] - CROP[1] + pad)
+    if x1 - x0 < 20 or y1 - y0 < 10:
+        return False
+    sub = quiz_img[y0:y1, x0:x1]
+    bar = max(10, BAR_TOP - CROP[1] - y0)
+    m = pen_mask(sub, bar) | caption_mask(sub, bar)
+    n, _, st, _ = cv2.connectedComponentsWithStats(m * 255, 8)
+    # 글자 크기 조각이 여러 개 모여 있으면 글자가 남은 것이다
+    return sum(1 for i in range(1, n) if 18 <= st[i, cv2.CC_STAT_AREA] <= 900) >= 4
+
+
 def verify(quiz: Path) -> list[tuple[int, int, int, int]]:
     """만들어진 quiz PNG 에 **글자가 남았는지** 같은 검출기로 다시 본다.
 
@@ -517,7 +664,14 @@ def build(render_dir: str, limit: int, dry: bool) -> int:
     for r in rows:
         page = r["page"]
         src = PRIV / render_dir / "src" / f"{page}.png"
-        cfg = config_for(r)
+        donor = pick_donor(render_dir, page)
+        if donor:
+            import cv2 as _cv2
+            dimg = _cv2.imread(str(ROOT / donor))
+            # donor 프레임에도 같은 자막이 떠 있다 — 그 글자 자리는 가져오지 않는다
+            r["donor_bad"] = [[x - 14, y - 12, x + w + 14, y + h + 12]
+                              for x, y, w, h in text_lines(dimg)] if dimg is not None else []
+        cfg = config_for(r, donor)
         rec = {"page": page, "render_dir": render_dir, "render_width": 1650,
                "session": int(render_dir[-2:]) if render_dir[-2:].isdigit() else None,
                "source": {"hint": f"{render_dir} 업로드 스캔", "page_no": None, "pages": None},
@@ -534,7 +688,7 @@ def build(render_dir: str, limit: int, dry: bool) -> int:
         # 반사처럼 글자가 아닌 것도 섞이지만, 작은 검은 박스라 표본을 해치지 않는다 —
         # 반대로 여기서 그냥 버리면 멀쩡한 페이지가 무더기로 날아간다(실측).
         left: list = []
-        for _round in range(3):
+        for _round in range(4):
             tmp.write_text(json.dumps(cfg, ensure_ascii=False), encoding="utf-8")
             rr = subprocess.run(
                 [sys.executable, "pipelines/restore_scan.py", "--image", str(src),
@@ -544,6 +698,16 @@ def build(render_dir: str, limit: int, dry: bool) -> int:
                 print(f"  FAIL {page}: {rr.stderr.strip()[-140:]}")
                 left = [(0, 0, 0, 0)]
                 break
+            # 복원한 자리에 글자가 남으면(저대비 캡션) 그 조각만 검게 덮어 답을 막는다
+            qimg = _cv()[0].imread(str(quiz))
+            stuck = [b for b in cfg.get("label_boxes", [])
+                     if qimg is not None and box_has_text(qimg, b)]
+            if stuck and _round < 2:
+                cfg["label_boxes"] = [b for b in cfg["label_boxes"] if b not in stuck]
+                cfg["black_boxes"].extend(stuck)
+                print(f"    {page}: 복원해도 글자가 남은 라벨 {len(stuck)}개 → 검은 박스")
+                left = [(0, 0, 0, 0)]
+                continue
             left = verify(quiz)
             if not left:
                 break
