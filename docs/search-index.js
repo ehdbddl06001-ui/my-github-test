@@ -1,34 +1,34 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-19",
+ "generated": "2026-08-20",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1654,
+  "total": 1663,
   "byType": {
+   "anatomy": 472,
    "usmle": 102,
-   "anatomy": 471,
+   "paper": 453,
    "kmle": 619,
-   "paper": 445,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 471,
-   "Cardiology": 134,
-   "Nephrology": 117,
-   "Infectious Disease": 93,
-   "Hematology-Oncology": 72,
-   "Pediatrics": 71,
-   "Pathology": 63,
+   "Anatomy": 472,
+   "Cardiology": 135,
+   "Nephrology": 118,
+   "Infectious Disease": 94,
+   "Hematology-Oncology": 73,
+   "Pediatrics": 72,
+   "Pathology": 64,
    "Obstetrics & Gynecology": 49,
    "Neurology": 47,
    "Psychiatry": 47,
-   "Surgery": 45,
+   "Surgery": 46,
    "Endocrinology": 40,
+   "Laboratory Medicine": 40,
    "Gastroenterology": 39,
-   "Laboratory Medicine": 39,
    "Pulmonology": 39,
    "Dermatology": 38,
    "General Surgery": 38,
@@ -53,13 +53,27 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 983,
-   "medium": 622,
+   "high": 984,
+   "medium": 630,
    "low": 49
   },
   "tagCount": 2407
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-21",
+   "type": "anatomy",
+   "unit": "등·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-21",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-21",
+   "path": "content/anatomy/daily/2026-08-21.md",
+   "snippet": "오늘의 학습 (2026 08 21 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 20일 · Tagging 2까지 59일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-21 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 21 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 20일 · Tagging 2까지 59일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
   {
    "id": "usmle-2026-0114",
    "type": "usmle",
@@ -196,6 +210,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-20.md",
    "snippet": "오늘의 학습 (2026 08 20 · t1 prep) 다음 수업/시험: 2026 08 20 등 얕은층·중간층·깊은층 근육, 볼기부위·넓적다리 뒤부분 Tagging 1까지 21일 · Tagging 2까지 60일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 35개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-20 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 20 · t1 prep) 다음 수업/시험: 2026 08 20 등 얕은층·중간층·깊은층 근육, 볼기부위·넓적다리 뒤부분 Tagging 1까지 21일 · Tagging 2까지 60일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 35개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0453",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0453_radiographic_scaphoid_waist_index_and_nonunion_after_scaphoc.md",
+   "snippet": "Title Radiographic Scaphoid Waist Index and Nonunion After Scaphocapitate Fusion for Kienböck Disease Authors Nishimura Ken, Ward Cameron, Tunaboylu Mehmet Furkan, Emanuels Andrew F, Moran Steven L Journal / DOI The Journal of hand surgery ",
+   "text": "Surgery scraped pubmed PubMed / The Journal of hand surgery Title Radiographic Scaphoid Waist Index and Nonunion After Scaphocapitate Fusion for Kienböck Disease Authors Nishimura Ken, Ward Cameron, Tunaboylu Mehmet Furkan, Emanuels Andrew F, Moran Steven L Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.07.002 · PMID: 42615942 https://pubmed.ncbi.nlm.nih.gov/42615942/ Abstract PURPOSE: To evaluate whether lower radiographic scaphoid waist index (WI), measured on routine preoperative lateral wrist radiographs, is associated with nonunion after scaphocapitate fusion for Kienböck disease. METHODS: We performed a retrospective chart and imaging review of patients who underwent scaphocapitate fusion for Kienböck disease within a single integrated multicampus health system (1996 2025). The primary outcome was nonunion. Symptomatic adjacent joint osteoarthritis within 1 year was evaluated separately as a descriptive secondary outcome. WI was measured independently by two observers on preoperative lateral radiographs. Rater averaged WI was analyzed as a continuous variable. A conservative dichotomized scaphoid type analysis was performed exploratorily, with type II assigned only when both observers measured WI < 0.40. RESULTS: Of 98 scaphocapitate fusions identified, 22 met inclusion criteria after excluding cases with nonretrievable archived imaging or follow up <1 year. Median available postoperative follow up was 23.7 months (interquartile range [IQR]: 14.4 41.2 months); range, 12.0 185.4 months. Nonunion occurred in 5 of 22 wrists (23%). Rater averaged WI was numerically lower in wrists with nonunion than in wrists without nonunion: median 0.365 (IQR: 0.364 0.365) versus 0.429 (IQR: 0.375 0.452). The Hodges Lehmann median difference was 0.0568, with a bootstrap 95% CI: 0.0981 to 0.0087. In the exploratory conservative dichotomized analysis, nonunion occurred in four of nine scaphoid type II wrists and 1 of 13 scaphoid type I wrists; the odds ratio estimate was imprecise and included the null (OR: 9.60; exact 95% CI: 0.64 510.98). Symptomatic adjacent joint osteoarthritis occurred in two wrists. CONCLUSIONS: In this small, selected cohort, rater averaged radiographic WI was numerically lower in wrists with nonunion, suggesting a preliminary, hypothesis generating WI nonunion signal. The conservative scaphoid type I versus type II dichotomization was imprecise and should not be interpreted as definitive. Larger studies with more complete follow up and adjustment for technical and clinical confounders are needed. TYPE OF STUDY/LEVEL OF EVIDENCE: Prognostic III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0452",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of visualized experiments : JoVE",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0452_fast_track_surgery_combined_with_postoperative_targeted_trai.md",
+   "snippet": "Title Fast Track Surgery Combined with Postoperative Targeted Training in Children With Developmental Dysplasia of the Hip: A Randomized Study Authors An Jinli, Zuo Lu, Xing Yuan, An Jinhong Journal / DOI Journal of visualized experiments :",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of visualized experiments : JoVE Title Fast Track Surgery Combined with Postoperative Targeted Training in Children With Developmental Dysplasia of the Hip: A Randomized Study Authors An Jinli, Zuo Lu, Xing Yuan, An Jinhong Journal / DOI Journal of visualized experiments : JoVE · DOI: 10.3791/70910 · PMID: 42612081 https://pubmed.ncbi.nlm.nih.gov/42612081/ Abstract Developmental dysplasia of the hip (DDH) is a common congenital musculoskeletal disorder in children, and effective postoperative rehabilitation is important for functional recovery. This randomized study evaluated the application of postoperative targeted training combined with fast track surgery (FTS) in children with DDH. A total of 80 children with DDH treated between January 2022 and March 2023 were included. All children successfully underwent hip dislocation related surgery and were randomly divided into two groups. Group A (n = 40) received general nursing combined with routine rehabilitation training, whereas Group B (n = 40) received FTS combined with postoperative targeted training. Balance function was assessed using the Berg Balance Scale (BBS), motor function using the Fugl Meyer Assessment (FMA) scale, and hip function using the Harris Hip Score (HHS). Compliance with functional exercise and rehabilitation satisfaction were also evaluated. Before intervention, there were no significant differences between the two groups in dynamic or static BBS scores or HHSs (P 0.05). After intervention, the dynamic and static BBS scores, HHSs, and FMA scores of Group B were significantly higher than those of Group A (P < 0.05). In addition, compliance with functional exercise and rehabilitation satisfaction were significantly better in Group B than in Group A (P < 0.05). These findings suggest that postoperative targeted training combined with FTS may promote the recovery of balance, motor, and hip function in children with DDH while improving exercise compliance and rehabilitation satisfaction. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0451",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Expert review of molecular diagnostics",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0451_analytical_and_clinical_performance_of_a_novel_diard_cmv_qpc.md",
+   "snippet": "Title Analytical and clinical performance of a novel DiaRD CMV qPCR assay for Cytomegalovirus DNA quantification: a comparative study with the artus CMV RG PCR kit Authors Durmaz Bengul, Dal Tuba, Toptan Hande, Koroglu Mehmet, Durmaz Rıza J",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Expert review of molecular diagnostics Title Analytical and clinical performance of a novel DiaRD CMV qPCR assay for Cytomegalovirus DNA quantification: a comparative study with the artus CMV RG PCR kit Authors Durmaz Bengul, Dal Tuba, Toptan Hande, Koroglu Mehmet, Durmaz Rıza Journal / DOI Expert review of molecular diagnostics · DOI: 10.1080/14737159.2026.2721430 · PMID: 42615993 https://pubmed.ncbi.nlm.nih.gov/42615993/ Abstract BACKGROUND: Cytomegalovirus (CMV) remains a major cause of morbidity in transplant recipients and patients with hematological malignancies, requiring accurate viral load monitoring for clinical management. This study evaluated the performance of the novel DiaRD CMV qPCR assay compared with the reference artus CMV RG PCR Kit. RESEARCH DESIGN AND METHODS: A total of 180 anonymized plasma samples, including 47 CMV positive and 133 CMV negative specimens, were retrospectively analyzed. Diagnostic accuracy, quantitative agreement, analytical specificity, and precision were assessed. RESULTS: The DiaRD assay correctly identified 45 of 47 positive samples, yielding a sensitivity of 95.7% and specificity of 96.2%, with an overall accuracy of 96.1%. Positive and negative predictive values were 90.0% and 98.5%, respectively. Quantitative analysis demonstrated strong correlation between assays (R2 = 0.880, r = 0.938, p < 0.0001). Bland Altman analysis showed good agreement, with a mean difference of 0.009 log₁₀ IU/mL (SD: 0.272). Among concordant positive samples, 40 showed differences of <0.5 log₁₀ IU/mL. No cross reactivity was detected with other tested pathogens. Precision studies demonstrated coefficients of variation below 2% for Ct values and ≤6.81% for viral loads. CONCLUSION: Overall, the DiaRD CMV qPCR assay demonstrated reliable analytical and diagnostic performance, supporting its suitability for routine CMV DNA quantification in clinical laboratories. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0450",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Laryngoscope",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0450_hemithyroidectomy_eligibility_under_ata_2015_and_2025_criter.md",
+   "snippet": "Title Hemithyroidectomy Eligibility Under ATA 2015 and 2025 Criteria: A Reclassification Cohort Study Authors Ergenç Muhammer, Metin Pelin, Demirbağ Bayram, Uğurlu M Ümit Journal / DOI The Laryngoscope · DOI: 10.1002/lary.70843 · PMID: 4261",
+   "text": "Pathology scraped pubmed PubMed / The Laryngoscope Title Hemithyroidectomy Eligibility Under ATA 2015 and 2025 Criteria: A Reclassification Cohort Study Authors Ergenç Muhammer, Metin Pelin, Demirbağ Bayram, Uğurlu M Ümit Journal / DOI The Laryngoscope · DOI: 10.1002/lary.70843 · PMID: 42615792 https://pubmed.ncbi.nlm.nih.gov/42615792/ Abstract OBJECTIVE: To compare hemithyroidectomy eligibility and completion thyroidectomy recommendations under the ATA 2015 and ATA 2025 criteria within the same patient cohort (primary aim) and, as a secondary descriptive analysis, to assess the concordance between these guideline based classifications and the operations actually performed. METHODS: Retrospective cohort study of adult patients who underwent primary hemithyroidectomy for differentiated thyroid carcinoma at a tertiary center (January 2015 November 2025). NIFTP and tumors of uncertain malignant potential were excluded from the comparative analysis. Each case was independently reclassified by ATA 2015 and ATA 2025 criteria using final histopathology (a retrospective, hindsight reclassification that could not have informed preoperative decisions); paired comparisons used the McNemar test. RESULTS: Of 98 patients, 86 were eligible for comparative analysis. Hemithyroidectomy eligibility increased from 60.5% (52/86) under ATA 2015 to 81.4% (70/86) under ATA 2025 (absolute increase 20.9 points; 95% CI 12.3 29.5; p < 0.001). Completion thyroidectomy indications decreased from 44.2% (38/86) to 29.1% (25/86) (absolute reduction 15.1 points; 95% CI 7.5 22.7; p < 0.001). Despite this reduction, completion was actually performed in 40.7% (35/86) of the comparative cohort (vs. 35.7% overall; the difference reflects exclusion of NIFTP and tumors of uncertain malignant potential). CONCLUSION: The ATA 2025 criteria substantially expand hemithyroidectomy eligibility and reduce completion thyroidectomy indications compared with ATA 2015. Real world completion rates nonetheless exceeded guideline based projections, suggesting that additional pathological and clinical factors may influence individualized surgical decision making. These findings characterize the guideline update's impact on surgical strategy and do not address long term oncologic outcomes, which were beyond this study's scope. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0449",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Expert opinion on investigational drugs",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0449_taxane_therapy_in_mcrpc_current_positioning_and_emerging_str.md",
+   "snippet": "Title Taxane therapy in mCRPC: current positioning and emerging strategies to overcome resistance Authors Wang Ling, Tang Yanfeng, Liu Mingsheng, Zhou Hongqing, Zeng Hao, Tang Bo Journal / DOI Expert opinion on investigational drugs · DOI: ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Expert opinion on investigational drugs Title Taxane therapy in mCRPC: current positioning and emerging strategies to overcome resistance Authors Wang Ling, Tang Yanfeng, Liu Mingsheng, Zhou Hongqing, Zeng Hao, Tang Bo Journal / DOI Expert opinion on investigational drugs · DOI: 10.1080/13543784.2026.2713042 · PMID: 42615966 https://pubmed.ncbi.nlm.nih.gov/42615966/ Abstract INTRODUCTION: Metastatic castration resistant prostate cancer (mCRPC) remains a major cause of prostate cancer related mortality. Taxane based chemotherapy, including docetaxel and cabazitaxel, remains an important treatment option despite the expanding use of androgen receptor signaling inhibitors (ARSIs), poly(ADP ribose) polymerase (PARP) inhibitors, and prostate specific membrane antigen (PSMA) targeted radioligand therapy. AREAS COVERED: A structured literature search was conducted in PubMed/MEDLINE, Web of Science, and ClinicalTrials.gov from inception to March 2026. This review summarizes the evolving clinical role of docetaxel and cabazitaxel in mCRPC and briefly outlines the biological mechanisms underlying taxane activity and resistance as a rationale for therapeutic development. Particular emphasis is placed on investigational strategies designed to delay or overcome taxane resistance, including AR pathway directed combinations, platinum taxane strategies, PI3K/AKT/mTOR and other pathway directed combinations, immunotherapy or radiopharmaceutical combinations, and preclinical resistance directed approaches. Treatment sequencing, toxicity, quality of life, evidence maturity, and biomarker informed patient selection are also discussed. EXPERT OPINION: Taxane resistance is biologically heterogeneous and incompletely captured by current biomarkers. Cabazitaxel after prior docetaxel and early ARSI progression remains the most established sequencing strategy, whereas most resistance directed approaches remain investigational. Future progress will depend on molecular and imaging based selection, rational early phase trial design, and mechanism informed taxane combinations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0448",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of primary care & community health",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0448_barriers_and_facilitators_to_the_implementation_of_holistic_.md",
+   "snippet": "Title Barriers and Facilitators to the Implementation of Holistic Care Within an International Medical Center: A Case Based Qualitative Study Authors Ma Haoyang, Ke Weichun, Chen Yakun, Chen Xianying, Zhang Shan, Zhang Xiaodong, Li Hui, Che",
+   "text": "Nephrology scraped pubmed PubMed / Journal of primary care & community health Title Barriers and Facilitators to the Implementation of Holistic Care Within an International Medical Center: A Case Based Qualitative Study Authors Ma Haoyang, Ke Weichun, Chen Yakun, Chen Xianying, Zhang Shan, Zhang Xiaodong, Li Hui, Chen Yaru Journal / DOI Journal of primary care & community health · DOI: 10.1177/21501319261480285 · PMID: 42615837 https://pubmed.ncbi.nlm.nih.gov/42615837/ Abstract ObjectivesHolistic care aims to address the physical, psychosocial, and spiritual well being of patients and their families. In the context of China's ongoing healthcare reforms, the establishment of international medical centers within tertiary public hospitals reflects efforts to promote high quality and sustainable healthcare. However, the implementation of holistic care in these settings remains complex and insufficiently understood.MethodsThis study explored the barriers and facilitators to implementing holistic care in an international medical center in China. A qualitative multiple case study design was employed using three clinical vignettes. Data were analyzed according to the Consolidated Framework for Implementation Research (CFIR), and cross case synthesis followed Yin's case study methodology.ResultsThree clinical vignettes illustrated key domains of holistic care: a patient with chronic kidney disease and multiple complications, exemplifying patient centered care; a patient with hepatocellular carcinoma and possible metastasis, highlighting multidisciplinary teamwork; and a patient with advanced metastatic cancer, demonstrating end of life care. Barriers and facilitators emerged at the system, institutional, and professional levels, encompassing patient and family expectations, shared decision making and cultural safety, psychosocial and emotional well being, cultural and spiritual support, multidisciplinary care, and resource and system constraints.ConclusionThis study revealed critical enablers and constraints in implementing holistic care within an international medical center. Strengthening interdisciplinary collaboration, improving culturally appropriate communication and staff training, and establishing patient centered policies are essential for delivering holistic care. Future larger mixed methods studies involving multiple stakeholders are warranted. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0447",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of obstetrics and gynaecology : the journal of the Institute of Obstetrics and Gynaecology",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0447_vaginitis_testing_outcomes_by_documented_symptom_status_in_a.md",
+   "snippet": "Title Vaginitis testing outcomes by documented symptom status in a student run free clinic: a retrospective study Authors Lee Gabriel Alexander, Meyer Gunnar, Wang Yuehe Anna, Gluzman Isabella, Dunlop Hayley, Trezza Frances, Makkar Nisha, D",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of obstetrics and gynaecology : the journal of the Institute of Obstetrics and Gynaecology Title Vaginitis testing outcomes by documented symptom status in a student run free clinic: a retrospective study Authors Lee Gabriel Alexander, Meyer Gunnar, Wang Yuehe Anna, Gluzman Isabella, Dunlop Hayley, Trezza Frances, Makkar Nisha, Donnelly Bella, et al. Journal / DOI Journal of obstetrics and gynaecology : the journal of the Institute of Obstetrics and Gynaecology · DOI: 10.1080/01443615.2026.2718719 · PMID: 42615905 https://pubmed.ncbi.nlm.nih.gov/42615905/ Abstract BACKGROUND: Vaginitis is a common gynaecologic condition in patients assigned female at birth in the United States, most often caused by bacterial vaginosis (BV), vulvovaginal candidiasis (VVC), or trichomoniasis vaginalis (TV). Symptoms such as discharge, irritation, and burning often overlap. Symptom based diagnosis is frequently inaccurate, with correct identification in only about half of cases. Empiric treatment without confirmatory testing remains common and can drive inappropriate therapy and antimicrobial resistance. Uninsured populations face higher infection burdens and barriers to care, yet data on vaginitis testing outcomes in student run free clinics (SRFCs) are limited. METHODS: We conducted an IRB approved retrospective chart review of patients receiving vaginitis testing at a no cost SRFC affiliated with a Midwestern academic medical centre between October 2019 and November 2023. 104 testing encounters met inclusion criteria for BV, VVC, or TV testing. Demographics, age, and symptom status were extracted from the electronic medical record. Encounters were categorised as having documented vaginitis symptoms or no documented symptoms at the time of testing. All tests used transcription mediated amplification. Proportional difference chi square tests compared results by symptom status, and logistic regression assessed associations between age and positive test results. RESULTS: The sample was predominantly comprised of patients assigned female at birth with a mean age of 31.1 years; 38% identified as Black. No significant differences were observed in positive or negative BV, VVC, or TV test results between encounters with and without documented vaginitis symptoms. Comparisons of positive VVC and TV results were limited by the small number of positive cases. Age was not associated with testing positive for BV, VVC, or TV. CONCLUSIONS: Documented symptom status did not consistently correspond with organism specific test results in this uninsured clinic population. Findings among patients without documented symptoms should be interpreted cautiously because testing was frequently bundled and symptom status was determined retrospectively. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0446",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-19",
+   "path": "content/papers/2026/2026-08-19_paper-2026-0446_targeted_assessment_in_high_risk_patients_with_diabetes_to_i.md",
+   "snippet": "Title Targeted Assessment in High Risk Patients With Diabetes to Identify Undiagnosed Heart Failure (TARTAN HF) Authors Taylor Sweet Daniel, Petrie Mark C, McKinley Gemma, McGlynn Liane, Jarvie John, Beazer Jack, Butler Elaine, MacDonald El",
+   "text": "Cardiology scraped pubmed PubMed / Journal of the American College of Cardiology Title Targeted Assessment in High Risk Patients With Diabetes to Identify Undiagnosed Heart Failure (TARTAN HF) Authors Taylor Sweet Daniel, Petrie Mark C, McKinley Gemma, McGlynn Liane, Jarvie John, Beazer Jack, Butler Elaine, MacDonald Ellen, et al. Journal / DOI Journal of the American College of Cardiology · DOI: 10.1016/j.jacc.2026.06.042 · PMID: 42615958 https://pubmed.ncbi.nlm.nih.gov/42615958/ Abstract BACKGROUND: Heart failure (HF) is a common cardiovascular complication of diabetes. Early identification of unrecognized HF enables initiation of disease modifying therapies. International diabetes and HF clinical practice guidelines are inconsistent with respect to recommendations for screening for HF in people with diabetes. OBJECTIVES: The purpose of this trial was to evaluate the diagnostic yield of a natriuretic peptide based HF screening strategy in people with diabetes and HF risk factors. METHODS: TARTAN HF (Targeted Assessment in high Risk paTients with diAbetes to ideNtify undiagnosed HF) was a prospective, multicenter, unblinded, randomized controlled trial. Community based participants aged ≥40 years with type 1 or type 2 diabetes and at least 1 additional HF risk factor, but without known HF, were recruited in the west of Scotland. Participants were randomized to N terminal pro B type natriuretic peptide screening (with echocardiography if N terminal pro B type natriuretic peptide ≥125 pg/mL) or usual care. The primary outcome was a HF diagnosis at 6 months. HF was defined according to 2021 European Society of Cardiology Heart Failure guidelines. Secondary and exploratory outcomes included HF phenotype, sodium glucose cotransporter 2 inhibitor use, and a composite of HF hospitalization or death. RESULTS: From January 11, 2023 to May 29, 2025, 706 participants were randomized (354 screening; 352 usual care). Median age was 71 years, 69% were male, and 90% had type 2 diabetes. Median duration of diabetes was 12.5 years. Two HF risk factors were present in 26% and 3 or more risk factors in 10%. At 6 months, HF was diagnosed in 87 (24.6%) in the screening group vs 2 (1%) in usual care (OR: 58; 95% CI: 14 236; P < 0.001). Most cases were HF with preserved ejection fraction (23%). The number needed to screen was 5 (95% CI: 4 6). Sodium glucose cotransporter 2 inhibitor use increased from 24% to 39% in the screening group. Patients found to have unrecognized HF had significantly impaired health status as assessed using the Kansas City Cardiomyopathy Questionnaire 12 overall summary score compared with those without HF (median: 65.6 vs 89.6). CONCLUSIONS: A HF screening strategy identified a large proportion of patients living with diabetes with unrecognized symptomatic HF (mostly HF with preserved ejection fraction). Screening strategies for HF should be further investigated and considered for adoption in the care of people with diabetes. (Targeted Assessment in high Risk paTients with diAbetes to ideNtify undiagnosed Heart Failure: NCT05705869). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0649",
