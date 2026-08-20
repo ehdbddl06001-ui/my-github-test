@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1694,
+  "total": 1695,
   "byType": {
    "kmle": 651,
+   "anatomy": 472,
    "usmle": 102,
-   "anatomy": 471,
    "paper": 453,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 471,
+   "Anatomy": 472,
    "Cardiology": 137,
    "Nephrology": 120,
    "Infectious Disease": 96,
@@ -53,7 +53,7 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1015,
+   "high": 1016,
    "medium": 630,
    "low": 49
   },
@@ -663,6 +663,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0650.md",
    "snippet": "72세 여자가 두 시간 전부터 갑자기 시작된 가슴 두근거림으로 왔다. 숨이 약간 차지만 가슴 통증은 없고, 어지럽거나 실신하지는 않았다. 진찰에서 맥박은 불규칙하게 불규칙하고 빠르며, 폐음은 깨끗하고 다리 부종은 없다. 이전에 심부전이나 예비흥분(조기흥분) 진단을 받은 적은 없다. 심전도는 그림과 같고, 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 동기화 심율동전환 B. 정맥 딜티아젬 투여 C. 정맥 ",
    "text": "Cardiology Atrial Fibrillation with RVR atrial-fibrillation rapid-ventricular-response rate-control calcium-channel-blocker KMLE 2026 / Claude Routine 72세 여자가 두 시간 전부터 갑자기 시작된 가슴 두근거림으로 왔다. 숨이 약간 차지만 가슴 통증은 없고, 어지럽거나 실신하지는 않았다. 진찰에서 맥박은 불규칙하게 불규칙하고 빠르며, 폐음은 깨끗하고 다리 부종은 없다. 이전에 심부전이나 예비흥분(조기흥분) 진단을 받은 적은 없다. 심전도는 그림과 같고, 활력징후와 검사 소견은 자료와 같다. 가장 적절한 처치는? A. 즉시 동기화 심율동전환 B. 정맥 딜티아젬 투여 C. 정맥 아데노신 투여 D. 정맥 디곡신 급속 부하 E. 정맥 아미오다론으로 즉시 리듬전환 혈역학이 안정된 심방세동 빠른 심실반응에서는 우선 심박수 조절이 원칙이며, 심부전·예비흥분이 없으면 비다이하이드로피리딘 칼슘통로차단제(딜티아젬)나 베타차단제를 정맥 투여한다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-21",
+   "type": "anatomy",
+   "unit": "등·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-21",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-21",
+   "path": "content/anatomy/daily/2026-08-21.md",
+   "snippet": "오늘의 학습 (2026 08 21 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 20일 · Tagging 2까지 59일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-21 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 21 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 20일 · Tagging 2까지 59일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "usmle-2026-0114",
