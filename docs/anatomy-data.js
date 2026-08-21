@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-20",
+ "generated": "2026-08-21",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -7484,6 +7484,90 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-22",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "back",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0035"
+    ],
+    "relation": [
+     "anatomy-2026-0036",
+     "anatomy-2026-0037"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0040",
+    "anatomy-2026-0046",
+    "anatomy-2026-0044",
+    "anatomy-2026-0041",
+    "anatomy-2026-0039",
+    "anatomy-2026-0043",
+    "anatomy-2026-0015",
+    "anatomy-2026-0157",
+    "anatomy-2026-0353",
+    "anatomy-2026-0045",
+    "anatomy-2026-0048",
+    "anatomy-2026-0052"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-3": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-7": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0015",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0016",
+     "anatomy-2026-0017",
+     "anatomy-2026-0018"
+    ],
+    "d-14": []
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-21",
    "phase": "t1-prep",
