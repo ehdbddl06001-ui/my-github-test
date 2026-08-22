@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-21",
+ "generated": "2026-08-22",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -6636,6 +6636,190 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0368",
+   "style": "layer-order",
+   "session": 3,
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "다리오금을 뒤에서 열어 들어갈 때 만나는 세 구조물을 얕은 것부터 깊은 것 순서로 나열하시오.",
+   "choices": null,
+   "answer": "정강신경 (tibial n.) → 오금정맥 (popliteal v.) → 오금동맥 (popliteal a.)",
+   "explanation": "다리오금의 내용물은 얕은 곳에서 깊은 곳으로 **정강신경 → 오금정맥 → 오금동맥** 순이다. 동맥이 가장 깊어 무릎 뒤에서 맥박을 잡으려면 무릎을 살짝 굽혀 깊은근막을 늦추고 깊이 눌러야 한다. 순서를 뒤집어(동맥을 가장 얕은 곳에 두어) 내는 것이 태깅에서 가장 흔한 함정이다. 함께 있는 작은두렁정맥 말단과 오금림프절도 정강신경보다 얕은 면에서 만난다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "다리오금 실습영상 — 경계와 내용물"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0369",
+   "style": "distinction",
+   "session": 3,
+   "region": "back",
+   "subregion": "suboccipital",
+   "examPhase": "tagging-1",
+   "stem": "뒤통수밑삼각을 노출한 표본에서 아래머리빗근의 아래모서리를 감아 돌아 머리반가시근을 뚫고 뒤통수 피부로 올라가는 신경이 확인되었다. 이 신경의 이름과 뿌리·성격을 말하고, 삼각 안에서 근육으로 들어가는 신경과 대비하시오.",
+   "choices": null,
+   "answer": "큰뒤통수신경 (greater occipital n.) — C2 뒤가지의 안쪽가지 · 감각 ↔ 대비: 뒤통수밑신경 (suboccipital n.) — C1 뒤가지 · 순수 운동",
+   "explanation": "아래머리빗근 아래모서리를 감아 도는 것은 **큰뒤통수신경**으로 **C2 뒤가지**의 안쪽가지이며 **감각**신경이다. 뒤통수동맥과 함께 뒤통수 피부에 분포한다. 이와 짝을 이루는 **뒤통수밑신경**은 **C1 뒤가지**의 **순수 운동**신경으로, 삼각 **안**에서 뒤통수밑근육 4개로 들어가며 피부로 나가지 않는다. 태깅에서는 이 둘을 바꿔 내는 것이 단골이므로 '감아 도는 것은 감각(C2), 안에서 근육으로 들어가는 것은 운동(C1)'으로 붙여 외운다. 셋째뒤통수신경(C3 뒤가지)도 감각이지만 삼각 내용물이 아니고, 척추동맥과 함께 삼각 바닥에 있는 것은 뒤통수밑신경이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "뒤통수밑삼각 실습영상 — 삼각의 내용물과 피부신경"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0370",
+   "style": "relation",
+   "session": 3,
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 어깨를 뒤에서 관찰할 때 위팔세갈래근 긴갈래를 기준으로 세 공간이 갈린다. 세 공간의 이름과 각 공간을 지나는 구조물을 말하시오.",
+   "choices": null,
+   "answer": "긴갈래 가쪽 — 네모공간 (quadrangular space): 겨드랑신경 (axillary n.) + 뒤위팔휘돌이동맥 / 긴갈래 안쪽 — 세모공간 (triangular space): 어깨휘돌이동맥 / 큰원근 아래 — 세모간격 (triangular interval): 노신경 (radial n.) + 깊은위팔동맥",
+   "explanation": "기준은 위팔세갈래근 긴갈래 하나다. **긴갈래 가쪽 = 네모공간**으로 **겨드랑신경**과 뒤위팔휘돌이동맥이 지난다(가쪽 경계는 위팔뼈 외과목). **긴갈래 안쪽 = 세모공간**으로 어깨휘돌이동맥만 지나고, **큰원근 아래 = 세모간격**으로 **노신경**과 깊은위팔동맥이 지난다. '가쪽은 신경(네모), 안쪽은 동맥(세모), 아래는 노신경'으로 묶어 외운다. 두 공간의 내용물을 맞바꿔 내는 것이 단골 함정이며, 어깨위신경·어깨위동맥은 이 세 공간이 아니라 어깨뼈패임 부위를 지난다. 임상적으로 위팔뼈 외과목 골절은 네모공간의 겨드랑신경을, 몸통 골절은 세모간격을 나온 노신경을 다치게 한다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "어깨뼈부위 실습영상 — 네모공간·세모공간·세모간격"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0371",
+   "style": "course-tracing",
+   "session": 3,
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "넙다리동맥이 오금동맥으로 이름이 바뀌는 지점과, 오금동맥이 종말분지를 내는 지점 및 그 두 분지를 말하시오.",
+   "choices": null,
+   "answer": "개명 지점 — 큰모음근의 모음근구멍 (adductor hiatus) / 종말분지 지점 — 오금근 (popliteus) 아래모서리에서 앞정강동맥 (anterior tibial a.)·뒤정강동맥 (posterior tibial a.) 으로 갈라진다",
+   "explanation": "넙다리동맥은 큰모음근의 **모음근구멍**을 지나 다리오금으로 들어서면서 **오금동맥**으로 개명한다. 오금동맥은 오금을 수직으로 내려와 **오금근 아래모서리**에서 **앞정강동맥·뒤정강동맥**으로 갈라지며 끝나고, 종아리동맥은 그 직후 뒤정강동맥에서 나온다. 넓적다리 앞쪽 얕은근막의 두렁구멍(큰두렁정맥이 지나는 구멍)은 동맥 개명과 무관하고, 모음근굴 입구는 아직 넙다리동맥 구간이며, 무릎관절선은 개명·분지 어느 쪽의 기준도 아니다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "다리오금 실습영상 — 오금동맥의 주행과 분지"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0372",
+   "style": "branch-tree",
+   "session": 3,
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "오금동맥에서 나오는 무릎동맥 5가지를 모두 말하고, 그중 나머지 넷과 달리 관절주머니를 뚫고 들어가 십자인대에 분포하는 것은 무엇인지 답하시오.",
+   "choices": null,
+   "answer": "위가쪽·위안쪽·중간·아래가쪽·아래안쪽무릎동맥 (5 genicular aa.) — 이 중 관절주머니를 뚫는 것은 중간무릎동맥 (middle genicular a.)",
+   "explanation": "오금동맥은 위가쪽·위안쪽·**중간**·아래가쪽·아래안쪽의 무릎동맥 5가지를 낸다. 이 중 **중간무릎동맥**만 뒤쪽에서 곧장 **관절주머니를 뚫고** 관절안으로 들어가 **십자인대**와 윤활막에 분포한다. 나머지 넷은 관절 둘레를 감아 돌며 무릎동맥그물(genicular anastomosis)을 이루어, 모음근구멍이 막혀도 다리로 가는 우회로가 된다. 그래서 중간무릎동맥은 '관절 안', 나머지 넷은 '관절 밖 그물'로 갈라 외운다. 무릎관절 뒤쪽 손상에서 관절혈종이 잘 생기는 것도 이 동맥이 관절안에 있기 때문이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "다리오금 실습영상 — 무릎동맥그물"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0373",
+   "style": "clinical-application",
+   "session": 3,
+   "region": "lower-limb",
+   "subregion": "popliteal-fossa",
+   "examPhase": "tagging-1",
+   "stem": "정강뼈 골절로 무릎 아래에 석고붕대를 한 환자가 며칠 뒤 발등을 들지 못하고 발등 피부의 감각이 둔해졌다. 압박으로 손상된 신경과 그 신경이 눌린 자리를 말하시오.",
+   "choices": null,
+   "answer": "온종아리신경 (common fibular n.) — 종아리뼈목 (fibular neck) 에서 눌림",
+   "explanation": "발등을 들지 못하는 **발처짐(foot drop)** 과 발등 감각소실은 **온종아리신경** 손상의 전형이다. 이 신경은 넙다리두갈래근 힘줄 안쪽을 따라 내려와 **종아리뼈목**을 감아 도는데, 이 자리는 뼈와 피부 사이에 신경이 거의 그대로 놓여 있어 골절·석고붕대·오래 다리 꼬기로 눌리는 **말초신경 손상 최다 부위**다. 감싸고 돈 뒤 얕은종아리신경(가쪽칸·발등 감각)과 깊은종아리신경(앞칸·발등굽힘)으로 갈리므로 두 증상이 함께 나타난다. 정강신경이 다치면 발바닥굽힘과 발바닥 감각이 떨어져 반대 양상이 되고, 두렁신경은 순수 감각신경이라 운동마비를 설명하지 못한다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "다리오금 실습영상 — 온종아리신경의 주행"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0374",
+   "style": "distinction",
+   "session": 3,
+   "region": "lower-limb",
+   "subregion": "posterior-leg",
+   "examPhase": "tagging-1",
+   "stem": "종아리 뒤칸 깊은층의 긴발가락굽힘근(FDL)과 긴엄지굽힘근(FHL)은 각각 어느 뼈에서 일어나며 어떤 관계로 내려가는지, 그리고 두 근육의 지배신경을 말하시오. 이어서 안쪽복사 뒤를 지나는 구조물의 순서를 앞에서 뒤로 나열하시오.",
+   "choices": null,
+   "answer": "긴발가락굽힘근 (FDL) — 정강뼈 뒤면(안쪽) / 긴엄지굽힘근 (FHL) — 종아리뼈 뒤면(가쪽) 에서 일어나 발바닥에서 교차 · 둘 다 정강신경 (tibial n.) 지배 // 안쪽복사 뒤 앞→뒤: 뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근",
+   "explanation": "이름과 위치가 어긋나는 대표적인 짝이다. **긴발가락굽힘근(FDL)** 은 **정강뼈 뒤면(안쪽)** 에서, **긴엄지굽힘근(FHL)** 은 **종아리뼈 뒤면(가쪽)** 에서 일어나 발바닥으로 내려가며 서로 **교차**한다(엄지로 갈 근육이 가쪽에서 시작한다). 이름만 보고 위치를 찍으면 정확히 뒤집힌 답이 나온다. 종아리 뒤칸 근육은 **전부 정강신경** 지배이고 혈류는 뒤정강동맥(+종아리동맥)이다. 안쪽복사 뒤 통과 순서는 앞에서 뒤로 **뒤정강근 힘줄 → 긴발가락굽힘근 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근** 으로 'Tom, Dick ANd Harry' 로 외운다 — FHL이 가장 뒤다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "종아리 뒤칸 실습영상 — 깊은층 근육과 안쪽복사 뒤 통과 구조"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0375",
+   "style": "relation",
+   "session": 3,
+   "region": "upper-limb",
+   "subregion": "scapular-region",
+   "examPhase": "tagging-1",
+   "stem": "어깨뼈패임 부위에서 위가로어깨인대를 기준으로 어깨위동맥과 어깨위신경은 각각 어디를 지나는지 말하고, 이 관계가 임상에서 갖는 의미를 설명하시오.",
+   "choices": null,
+   "answer": "어깨위동맥 (suprascapular a.) — 위가로어깨인대 위 / 어깨위신경 (suprascapular n.) — 인대 아래(어깨뼈패임 속)",
+   "explanation": "이름이 같아 함께 다닐 것 같지만 어깨뼈패임에서 층이 갈린다. **어깨위동맥**은 위가로어깨인대 **위**를 넘어가고, **어깨위신경**은 인대 **아래**의 패임 속을 통과한다. 'Army over the bridge, Navy under'(동맥은 다리 위, 신경은 아래)로 외운다. 이 때문에 인대가 두꺼워지거나 골화되면 **신경만** 눌려 가시위근·가시아래근 위약이 생기는 어깨위신경 포착증후군이 된다(동맥은 위로 비켜 있어 무사하다). 어깨위동맥은 갑상목동맥 → 빗장밑동맥 계통으로, 겨드랑동맥 계통의 어깨휘돌이동맥과 만나 어깨동맥그물을 이루므로 겨드랑동맥이 막혀도 우회로가 열린다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "어깨뼈부위 실습영상 — 어깨동맥그물과 어깨뼈패임"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -7484,6 +7668,90 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-23",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "back",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0035"
+    ],
+    "relation": [
+     "anatomy-2026-0036",
+     "anatomy-2026-0037"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0040",
+    "anatomy-2026-0046",
+    "anatomy-2026-0044",
+    "anatomy-2026-0041",
+    "anatomy-2026-0039",
+    "anatomy-2026-0043",
+    "anatomy-2026-0015",
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0045",
+    "anatomy-2026-0048",
+    "anatomy-2026-0052"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-3": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0004",
+     "anatomy-2026-0047",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": []
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-22",
    "phase": "t1-prep",

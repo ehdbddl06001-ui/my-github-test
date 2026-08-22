@@ -1,34 +1,34 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-21",
+ "generated": "2026-08-22",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1703,
+  "total": 1720,
   "byType": {
-   "anatomy": 473,
+   "anatomy": 482,
+   "paper": 468,
    "kmle": 651,
    "usmle": 102,
-   "paper": 460,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 473,
-   "Cardiology": 138,
-   "Nephrology": 121,
-   "Infectious Disease": 97,
-   "Pediatrics": 75,
-   "Hematology-Oncology": 73,
-   "Pathology": 65,
+   "Anatomy": 482,
+   "Cardiology": 139,
+   "Nephrology": 122,
+   "Infectious Disease": 98,
+   "Pediatrics": 76,
+   "Hematology-Oncology": 74,
+   "Pathology": 66,
    "Obstetrics & Gynecology": 51,
    "Neurology": 49,
    "Psychiatry": 49,
-   "Surgery": 47,
+   "Surgery": 48,
    "Endocrinology": 42,
+   "Laboratory Medicine": 42,
    "Gastroenterology": 41,
-   "Laboratory Medicine": 41,
    "Pulmonology": 41,
    "Dermatology": 40,
    "General Surgery": 40,
@@ -53,13 +53,190 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1017,
-   "medium": 637,
+   "high": 1026,
+   "medium": 645,
    "low": 49
   },
-  "tagCount": 2456
+  "tagCount": 2458
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-23",
+   "type": "anatomy",
+   "unit": "등·다리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-23",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/daily/2026-08-23.md",
+   "snippet": "오늘의 학습 (2026 08 23 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 18일 · Tagging 2까지 57일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-23 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 23 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 18일 · Tagging 2까지 57일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0375",
+   "type": "anatomy",
+   "unit": "3회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "위가로어깨인대를 기준으로 갈리는 어깨위동맥과 어깨위신경",
+   "tags": [
+    "relation",
+    "3회차",
+    "어깨동맥그물",
+    "어깨위신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §3 어깨동맥그물 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0375.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위가로어깨인대를 기준으로 갈리는 어깨위동맥과 어깨위신경 3회차 · 팔 relation 3회차 어깨동맥그물 어깨위신경 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §3 어깨동맥그물 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0374",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "안쪽복사 뒤 통과 순서와 FDL·FHL의 기시 교차",
+   "tags": [
+    "distinction",
+    "3회차",
+    "종아리뒤칸",
+    "안쪽복사",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §5 종아리 뒤칸 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0374.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 안쪽복사 뒤 통과 순서와 FDL·FHL의 기시 교차 3회차 · 다리 distinction 3회차 종아리뒤칸 안쪽복사 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §5 종아리 뒤칸 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0373",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "종아리뼈목 압박과 발처짐",
+   "tags": [
+    "clinical-application",
+    "3회차",
+    "온종아리신경",
+    "발처짐",
+    "예습시험"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §4-3 다리오금 신경 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0373.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 종아리뼈목 압박과 발처짐 3회차 · 다리 clinical-application 3회차 온종아리신경 발처짐 예습시험 3회차 서브노트(anatomy-2026-0077) §4-3 다리오금 신경 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0372",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "무릎동맥 5가지와 중간무릎동맥의 예외",
+   "tags": [
+    "branch-tree",
+    "3회차",
+    "무릎동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §4-2 무릎동맥그물 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0372.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 무릎동맥 5가지와 중간무릎동맥의 예외 3회차 · 다리 branch-tree 3회차 무릎동맥 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §4-2 무릎동맥그물 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0371",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넙다리동맥에서 오금동맥으로 — 개명 지점과 종말분지",
+   "tags": [
+    "course-tracing",
+    "3회차",
+    "오금동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §4-2 다리오금 혈관 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0371.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 넙다리동맥에서 오금동맥으로 — 개명 지점과 종말분지 3회차 · 다리 course-tracing 3회차 오금동맥 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §4-2 다리오금 혈관 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0370",
+   "type": "anatomy",
+   "unit": "3회차 · 팔",
+   "topic": "Anatomy",
+   "subtopic": "위팔세갈래근 긴갈래를 기준으로 한 어깨뼈부위 3공간",
+   "tags": [
+    "relation",
+    "3회차",
+    "어깨뼈부위",
+    "네모공간",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §2 어깨뼈부위 3공간 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0370.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 위팔세갈래근 긴갈래를 기준으로 한 어깨뼈부위 3공간 3회차 · 팔 relation 3회차 어깨뼈부위 네모공간 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §2 어깨뼈부위 3공간 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0369",
+   "type": "anatomy",
+   "unit": "3회차 · 등",
+   "topic": "Anatomy",
+   "subtopic": "뒤통수밑신경과 큰뒤통수신경의 구분",
+   "tags": [
+    "distinction",
+    "3회차",
+    "뒤통수밑삼각",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §1 뒤통수밑삼각 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0369.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 뒤통수밑신경과 큰뒤통수신경의 구분 3회차 · 등 distinction 3회차 뒤통수밑삼각 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §1 뒤통수밑삼각 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0368",
+   "type": "anatomy",
+   "unit": "3회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "다리오금 내용물의 깊이 순서",
+   "tags": [
+    "layer-order",
+    "3회차",
+    "다리오금",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "3회차 서브노트(anatomy-2026-0077) §4 다리오금 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+   "confidence": "high",
+   "date": "2026-08-23",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0368.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 다리오금 내용물의 깊이 순서 3회차 · 다리 layer-order 3회차 다리오금 예습시험 태깅 3회차 서브노트(anatomy-2026-0077) §4 다리오금 — 원자료 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "anatomy-daily-2026-08-22",
    "type": "anatomy",
@@ -73,6 +250,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-22.md",
    "snippet": "오늘의 학습 (2026 08 22 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 19일 · Tagging 2까지 58일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-22 등·다리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 22 · t1 prep) 다음 수업/시험: 2026 08 24 뒤통수밑삼각, 어깨뼈부위, 다리오금·종아리 뒤부위 Tagging 1까지 19일 · Tagging 2까지 58일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 36개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0468",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0468_clinical_outcomes_of_the_allegra_transcatheter_system_in_bio.md",
+   "snippet": "Title Clinical Outcomes of the Allegra Transcatheter System in Bioprosthetic Aortic Valve Failure: A Multicentre Valve in Valve Registry Authors Khan Hilal, Ali Mohamed, Ibrahem Abdalazeem, Ratib Karim, Zaki Nur Ilia Mohd, Keshavarzi Freido",
+   "text": "Surgery scraped pubmed PubMed / Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions Title Clinical Outcomes of the Allegra Transcatheter System in Bioprosthetic Aortic Valve Failure: A Multicentre Valve in Valve Registry Authors Khan Hilal, Ali Mohamed, Ibrahem Abdalazeem, Ratib Karim, Zaki Nur Ilia Mohd, Keshavarzi Freidoon, Shah Alok, Abdelaziz Hesham, et al. Journal / DOI Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions · DOI: 10.1002/ccd.70811 · PMID: 42627148 https://pubmed.ncbi.nlm.nih.gov/42627148/ Abstract INTRODUCTION: The prevalence of bioprosthetic aortic valve failure is increasing due to the broader use of bioprosthetic valves, both surgical and transcatheter, and an ageing population. Registry data indicate a higher risk of coronary obstruction and elevated gradients following valve in valve transcatheter aortic valve implantation (TAVI). We report outcomes of the Allegra transcatheter heart valve system in valve in valve TAVI. METHODS: In this retrospective multicentre cohort study, all patients undergoing valve in valve TAVI with the Allegra system between 2019 and 2025 at five UK centers were included. The combined primary outcomes were technical success, device success, and early safety at 30 days, as per the VARC 3 (Valve Academic Research Consortium 3) criteria. A key secondary outcome was all cause mortality at the longest documented follow up. RESULTS: A total of 106 patients underwent valve in valve TAVI. The mean age was 79 ± 6 years, with 57.5% being female. Almost half of the patients had an index valve ≤ 21 mm, with an STS (Society of Thoracic Surgery) score of 7.1% (5.1 12.0). The post implant aortic valve mean pressure gradient was 12 ± 6 mmHg, and the mean valve area was 1.7 ± 0.5 cm2. The combined primary outcomes were technical success of 86.8% (CI 80.3% 93.2%), device success of 75.5% (CI 67.3% 83.7%), and early safety of 86.8% (CI 80.3% 93.2%). All cause mortality at 30 days was 0%. All cause mortality occurred in 6.6% at a median follow up of 15 months. CONCLUSIONS: The Allegra TAVI system demonstrates promising technical and device success rates, with early safety and good post implant haemodynamic performance in high risk patients undergoing valve in valve TAVI. Larger randomized trials are needed to confirm these results. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0467",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Gut microbes",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0467_biocard_framework_integrating_fecal_bile_acids_lipids_and_me.md",
+   "snippet": "Title BIOCARD framework: integrating fecal bile acids, lipids, and metabolites to assess response to a cardiovascular health intervention Authors Zhang Huan, Chen Li, Xu Rui, Jung Hyein, Gao Shuaixin, Khalsa Amrik Singh, Bailey Michael T, K",
+   "text": "Pediatrics scraped pubmed PubMed / Gut microbes Title BIOCARD framework: integrating fecal bile acids, lipids, and metabolites to assess response to a cardiovascular health intervention Authors Zhang Huan, Chen Li, Xu Rui, Jung Hyein, Gao Shuaixin, Khalsa Amrik Singh, Bailey Michael T, Kelleher Kelly J, et al. Journal / DOI Gut microbes · DOI: 10.1080/19490976.2026.2719242 · PMID: 42627058 https://pubmed.ncbi.nlm.nih.gov/42627058/ Abstract Cardiovascular disease (CVD) remains a leading cause of morbidity and mortality, particularly in under resourced populations. Although nutritional interventions are important for CVD prevention, their outcomes are commonly evaluated using conventional clinical and behavioral indicators, which may not fully capture early molecular responses. In this study, we developed the BIOCARD framework, an exploratory fecal multi omics platform integrating bile acids, lipids, and metabolites to evaluate intervention outcomes related to cardiovascular health. Fecal samples were collected from caregiver child participants enrolled in a 10 week randomized controlled trial comparing a multicomponent garden based intervention (SHA) with an education only control group (MSP). Fecal polar metabolites, lipids, and bile acids were analyzed by UHPLC HRMS based approaches and integrated with conventional health indicators. Traditional clinical indicators in the present study showed limited sensitivity for detecting intervention related differences. In contrast, fecal multi omics analyzes revealed intervention associated differences in metabolites, lipids, and bile acids, with children showing more apparent molecular variation than parents. Network analysis further revealed associations between selected molecular features and cardiovascular related indicators, including blood pressure, body fat, skin carotenoids, and Healthy Eating Index scores. Together, these findings suggest that the BIOCARD framework may serve as an exploratory molecular approach to complement traditional outcome measures and improve the evaluation of nutritional interventions for cardiovascular health. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0466",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Dento maxillo facial radiology",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0466_comparative_evaluation_of_mri_and_ultrasonography_for_tempor.md",
+   "snippet": "Title Comparative Evaluation of MRI and Ultrasonography for Temporomandibular Joint Pathologies with Emphasis on Bone Marrow Edema Authors Öztürk İrem, Orhan Kaan Journal / DOI Dento maxillo facial radiology · DOI: 10.1093/dmfr/twag059 · PM",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Dento maxillo facial radiology Title Comparative Evaluation of MRI and Ultrasonography for Temporomandibular Joint Pathologies with Emphasis on Bone Marrow Edema Authors Öztürk İrem, Orhan Kaan Journal / DOI Dento maxillo facial radiology · DOI: 10.1093/dmfr/twag059 · PMID: 42627352 https://pubmed.ncbi.nlm.nih.gov/42627352/ Abstract OBJECTIVES: This retrospective diagnostic accuracy study compared magnetic resonance imaging and ultrasonography in 98 temporomandibular joints from 49 patients for evaluating disc position, disc configuration, joint effusion, condylar degenerative changes, and bone marrow edema. METHODS: A total of 98 temporomandibular joints from 49 patients who underwent both modalities were retrospectively evaluated by two independent, blinded observers using established classification systems. All imaging was performed prior to the initiation of any specific TMJ treatment. Intra and inter observer agreement, the diagnostic accuracy of ultrasonography relative to the magnetic resonance imaging reference standard, diagnostic likelihood ratios, and associations between parameters were analysed statistically. RESULTS: Intra and inter observer agreement was good to excellent for both modalities (Kappa 0.71 0.91, p < 0.05). Ultrasonography showed high sensitivity and specificity for disc displacement (94.4 97.4% and 61.5 70.0%) and effusion (87.5 92.3% and 84.0 87.0%), but more limited performance for bone marrow edema, particularly in specificity (60.0 61.1%). On the left side, magnetic resonance imaging identified bone marrow edema in 63.3% of cases compared with 36.7% on ultrasonography (p = 0.015). Folded and convex disc configurations and marked or severe effusion were both associated with displacement without reduction (p ≤ 0.046). CONCLUSIONS: Ultrasonography appears suitable as a first line screening modality for selected TMJ abnormalities, whereas magnetic resonance imaging remains indispensable whenever bone marrow pathology or complex internal derangement is suspected. ADVANCES IN KNOWLEDGE: This study provides direct, same patient diagnostic accuracy data comparing ultrasonography with magnetic resonance imaging across multiple temporomandibular joint pathologies, including an indirect ultrasonographic assessment of bone marrow edema via cortical irregularity, clarifying which findings ultrasonography can reliably screen for and which still require magnetic resonance imaging confirmation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0465",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Retina (Philadelphia, Pa.)",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0465_metastatic_urothelial_carcinoma_of_the_bladder_to_the_retina.md",
+   "snippet": "Title Metastatic Urothelial Carcinoma of the Bladder to the Retina: A Clinicopathological Correlation and Review of the Literature Authors Mueller Nicholas M, Christensen Cory A, Mullane Elias M, Iacob Codrin E, Seth Rajeev K Journal / DOI ",
+   "text": "Pathology scraped pubmed PubMed / Retina (Philadelphia, Pa.) Title Metastatic Urothelial Carcinoma of the Bladder to the Retina: A Clinicopathological Correlation and Review of the Literature Authors Mueller Nicholas M, Christensen Cory A, Mullane Elias M, Iacob Codrin E, Seth Rajeev K Journal / DOI Retina (Philadelphia, Pa.) · DOI: 10.1097/IAE.0000000000004975 · PMID: 42627247 https://pubmed.ncbi.nlm.nih.gov/42627247/ Abstract PURPOSE: To report a rare case of metastatic urothelial carcinoma of the bladder (UCB) to the retina confirmed with histopathology and compare diagnostic findings, therapeutic techniques, and prognosis to other reported retinal and ocular metastatic cases, with focus on urothelial origin. METHODS: Intravenous fluorescein angiography (IVFA) was used to investigate a large yellow white superotemporal retinal lesion OS. Two pars plana vitrectomies OS were performed yielding vitreous cytology and retinal lesion biopsy histopathology, respectively. RESULTS: IVFA showed overlying vitreous debris blockage, punctate hyperfluorescence consistent with light bulb microaneurysms, patchy capillary nonperfusion, hemorrhagic blockage, and late central leakage. Vitreous cytology revealed atypical cells characterized by enlarged, pleomorphic nuclei, abundant cytoplasm, and harboring common cell borders. Retina biopsy revealed invasive irregular islands of carcinomatous cells with immunoreactivity to high molecular weight cytokeratin, uroplakin III, and GATA 3; the same cells were CK20 negative. CONCLUSION: We report the second documented case, to our knowledge, of retinal metastasis from UCB. The clinical pattern and presentation fit similarly to the first documented case. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0464",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Diabetes care",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0464_cell_function_and_diabetes_outcomes_1_year_after_stopping_or.md",
+   "snippet": "Title β Cell Function and Diabetes Outcomes 1 Year After Stopping Oral Baricitinib Immunotherapy for Type 1 Diabetes Authors So Michelle, Waibel Michaela, Couper Jennifer J, Cameron Fergus J, MacIsaac Richard J, Atlas Gabby, Gorelik Alexand",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Diabetes care Title β Cell Function and Diabetes Outcomes 1 Year After Stopping Oral Baricitinib Immunotherapy for Type 1 Diabetes Authors So Michelle, Waibel Michaela, Couper Jennifer J, Cameron Fergus J, MacIsaac Richard J, Atlas Gabby, Gorelik Alexandra, Vogrin Sara, et al. Journal / DOI Diabetes care · DOI: 10.2337/dc26 1072 · PMID: 42627334 https://pubmed.ncbi.nlm.nih.gov/42627334/ Abstract OBJECTIVE: The Baricitinib in New Onset Type 1 Diabetes (BANDIT) trial showed that baricitinib treatment for 48 weeks preserved β cell function and lowered insulin requirements and glucose in recent onset type 1 diabetes. We aimed to determine the durability of these effects following treatment cessation. RESEARCH DESIGN AND METHODS: The following posttreatment outcomes of the randomized, double blind, placebo controlled BANDIT trial were analyzed: C peptide and glucagon responses to a mixed meal, HbA1c, continuous glucose monitoring (CGM) measures, CD8+ T cell phenotype and function, and adverse events. RESULTS: Of 91 randomized participants, 88 (58 baricitinib and 30 placebo) completed the week 96 follow up. Mean ± SEM C peptide was significantly greater in baricitinib treated participants at week 72 (0.54 ± 0.05 vs. 0.38 ± 0.06 pmol/mL; P = 0.015) but not at week 96 (0.43 ± 0.05 vs. 0.35 ± 0.06 nmol/L; P = 0.336). No significant between group differences in insulin dose, HbA1c, or CGM measures were observed during follow up. Post hoc comparisons showed that when the study drug was ceased at week 48, baricitinib treated adults (n = 28) experienced full preservation of β cell function whereas C peptide decreased relative to baseline by 0.09 pmol/mL in baricitinib treated children (n = 32; P = 0.022). Baricitinib did not resolve paradoxical glucagon increase after a mixed meal. Decreased frequency and cytokine signaling of effector memory CD8+ T cells observed at week 48 resolved by week 96. CONCLUSIONS: The benefits of oral baricitinib in type 1 diabetes wane over 48 weeks following treatment cessation. Durable benefit is likely to require continuous treatment. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0463",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Retina (Philadelphia, Pa.)",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0463_the_impact_of_renal_function_on_pars_plana_vitrectomy_for_pr.md",
+   "snippet": "Title The impact of renal function on pars plana vitrectomy for proliferative diabetic retinopathy and analysis of prognosis Authors Wang Yalin, Kong Xianxian, Wang Jing, Zhou Weiyan Journal / DOI Retina (Philadelphia, Pa.) · DOI: 10.1097/I",
+   "text": "Nephrology scraped pubmed PubMed / Retina (Philadelphia, Pa.) Title The impact of renal function on pars plana vitrectomy for proliferative diabetic retinopathy and analysis of prognosis Authors Wang Yalin, Kong Xianxian, Wang Jing, Zhou Weiyan Journal / DOI Retina (Philadelphia, Pa.) · DOI: 10.1097/IAE.0000000000004972 · PMID: 42627255 https://pubmed.ncbi.nlm.nih.gov/42627255/ Abstract PURPOSE: To observe and analyze the impact of renal function on pars plana vitrectomy (PPV) for proliferative diabetic retinopathy (PDR). METHODS: This retrospective study included 110 patients (110 eyes) who were divided into an impaired renal function (IRF) group (52 eyes) and a normal renal function (NRF) group (58 eyes) based on chronic kidney disease (CKD) staging. Patients were followed up and assessed preoperatively and throughout one year postoperatively. Independent risk factors affecting visual acuity recovery after PPV were also identified. RESULTS: Compared with the NRF group, the IRF group had significantly longer diabetes duration, higher serum creatinine and blood urea nitrogen, and lower hemoglobin and serum albumin (all P < 0.05). Preoperative laser treatment was more frequent in the NRF group, while intraoperative silicone oil tamponade was more common in the IRF group (both P < 0.05). Although the NRF group showed better best corrected visual acuity (BCVA) at several postoperative time points (P < 0.05), the final visual improvement rate at 12 months did not differ significantly between groups (P = 0.156). No significant between group differences were observed in postoperative complications. Multivariable analysis identified longer diabetes duration and lower serum albumin as independent risk factors for worse visual prognosis, whereas renal function itself was not an independent predictor. CONCLUSION: Worse baseline BCVA, shorter diabetes duration, and higher serum albumin independently predicted postoperative visual improvement, whereas renal function itself did not. The poorer visual outcomes associated with renal impairment were likely attributable to greater ocular and systemic disease burden. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0462",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0462_myocardial_calcification_after_severe_sepsis_3_patient_case_.md",
+   "snippet": "Title Myocardial Calcification After Severe Sepsis: 3 Patient Case Series, Multimodality Imaging, and Review of the Literature Authors Ruiz López Adrià, Salido Iniesta Mario, Gómez Revelles Sònia, Rodríguez Pérez Álvaro, García Cosculluela ",
+   "text": "Infectious Disease scraped pubmed PubMed / JACC. Case reports Title Myocardial Calcification After Severe Sepsis: 3 Patient Case Series, Multimodality Imaging, and Review of the Literature Authors Ruiz López Adrià, Salido Iniesta Mario, Gómez Revelles Sònia, Rodríguez Pérez Álvaro, García Cosculluela Dánae, Fernández Martínez Juan, Majul Horacio, Simón Pascua Lluis, et al. Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.109933 · PMID: 42627318 https://pubmed.ncbi.nlm.nih.gov/42627318/ Abstract Myocardial calcification is a rare but increasingly recognized complication of severe systemic illness, particularly sepsis and critical illness. We report 3 men who developed left ventricular myocardial calcification after septic shock or prolonged intensive care unit admission. In all cases, computed tomography identified the extent and distribution of calcium deposition, whereas cardiac magnetic resonance demonstrated nonischemic late gadolinium enhancement in corresponding segments. These cases illustrate the heterogeneous long term consequences of postseptic myocardial calcification and highlight the complementary roles of cardiac computed tomography and cardiac magnetic resonance in diagnosis, tissue characterization, arrhythmic risk assessment, and follow up. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0461",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The British journal of radiology",
+   "confidence": "medium",
+   "date": "2026-08-21",
+   "path": "content/papers/2026/2026-08-21_paper-2026-0461_coronary_ct_angiography_derived_perivascular_fat_attenuation.md",
+   "snippet": "Title Coronary CT angiography derived perivascular fat attenuation index as a potential marker for heart failure in hypertrophic cardiomyopathy Authors Peng Lin, Feng Yu, Yuan Jun, Yang Yuelong, Wu Huanhua, Deng Chuanbao, Ma Hui, Chen Yuyin",
+   "text": "Cardiology scraped pubmed PubMed / The British journal of radiology Title Coronary CT angiography derived perivascular fat attenuation index as a potential marker for heart failure in hypertrophic cardiomyopathy Authors Peng Lin, Feng Yu, Yuan Jun, Yang Yuelong, Wu Huanhua, Deng Chuanbao, Ma Hui, Chen Yuying, et al. Journal / DOI The British journal of radiology · DOI: 10.1093/bjr/tqag195 · PMID: 42627363 https://pubmed.ncbi.nlm.nih.gov/42627363/ Abstract OBJECTIVE: This study aimed to evaluate coronary inflammation using the perivascular fat attenuation index (FAI) derived from coronary computed tomography angiography (CCTA) in patients with hypertrophic cardiomyopathy (HCM) and to investigate its association with heart failure (HF). METHODS: This retrospective study included 75 patients with HCM and 75 age and sex matched controls without structural heart disease. Perivascular FAI was measured around the proximal right coronary artery (RCA), left anterior descending artery (LAD), and left circumflex artery (LCX). All patients underwent cardiac magnetic resonance imaging for comprehensive assessment of left ventricular (LV) morphology, function, and strain parameters. RESULTS: FAI values were significantly elevated in HCM patients compared to controls across all three vessels: LAD FAI ( 75.49 ± 9.04 vs. 83.25 ± 8.97 HU), LCX FAI ( 71.96 ± 9.62 vs. 79.48 ± 8.51 HU), and RCA FAI ( 77.57 ± 10.25 vs. 83.20 ± 8.98 HU); all p < 0.001. LAD FAI demonstrated modest but significant correlations with markers of adverse LV remodeling, including LV mass index and global strain parameters. On multivariable logistic regression analysis, LAD FAI was independently associated with HF (OR: 1.40; 95% CI: 1.12 1.99; p = 0.018). CONCLUSION: Coronary inflammation, quantified by perivascular FAI on CCTA, is significantly heightened in patients with HCM and is correlated with LV hypertrophy and dysfunction. Notably, increased LAD FAI is independently associated with heart failure after adjustment for the included CMR parameters, suggesting its potential utility as a non invasive imaging biomarker for risk stratification in HCM, pending external validation. ADVANCES IN KNOWLEDGE: This study provides initial evidence that perivascular FAI, a non invasive imaging marker of coronary inflammation, is significantly elevated in patients with HCM and correlates with adverse left ventricular remodeling, impaired myocardial strain, and elevated NT proBNP levels. Notably, increased LAD FAI was independently associated with heart failure, suggesting a mechanistic link between regional coronary inflammation and disease severity in HCM. These findings highlight the potential utility of perivascular FAI as an imaging biomarker for heart failure risk stratification in HCM, warranting further validation in larger, prospective multicenter cohorts. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0681",
