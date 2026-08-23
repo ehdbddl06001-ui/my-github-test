@@ -2,9 +2,33 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-08-24",
- "count": 70,
- "groups": 36,
+ "count": 72,
+ "groups": 37,
  "items": [
+  {
+   "file": "diag-leg-posterior-layers-labeled.svg",
+   "base": "diag-leg-posterior-layers",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "종아리 뒤칸",
+   "date": "2026-08-24",
+   "bytes": 17546
+  },
+  {
+   "file": "diag-leg-posterior-layers-quiz.svg",
+   "base": "diag-leg-posterior-layers",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 3,
+   "unit": "3회차 · 등·다리",
+   "title": "종아리 뒤칸 퀴즈판",
+   "date": "2026-08-24",
+   "bytes": 12281
+  },
   {
    "file": "diag-suboccipital-quiz.svg",
    "base": "diag-suboccipital",
