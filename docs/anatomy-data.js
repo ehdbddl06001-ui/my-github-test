@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-22",
+ "generated": "2026-08-23",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -6820,6 +6820,29 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0376",
+   "style": "spotter",
+   "session": 3,
+   "region": "lower-limb",
+   "subregion": "leg-posterior",
+   "examPhase": "tagging-1",
+   "stem": "오른쪽 다리를 뒤에서 본 두 패널 도해(왼쪽이 가쪽)에서 왼쪽 패널은 종아리 뒤칸 얕은층, 오른쪽 패널은 깊은층이다. ①~⑤는 얕은층의 근육과 힘줄, ⑥~⑨는 깊은층의 근육, ⑩~⑫는 그 층을 타고 내려가는 신경·동맥이다. 각각을 한·영으로 답하고, 이어서 (가) ①·②와 ③의 기시 높이가 무릎관절을 기준으로 어떻게 다르며 그 차이가 작용에 무엇을 남기는지 (나) ⑧과 ⑨는 각각 어느 뼈에서 일어나고 두 힘줄이 어디서 어떻게 만나는지 (다) 안쪽복사 뒤를 굽힘근지지띠 아래로 지나는 다섯 구조를 앞에서 뒤 순서로 답하시오.",
+   "choices": null,
+   "answer": "① 장딴지근 가쪽갈래 lateral head of gastrocnemius / ② 장딴지근 안쪽갈래 medial head of gastrocnemius / ③ 가자미근 soleus / ④ 발꿈치힘줄 calcaneal tendon (Achilles tendon) / ⑤ 장딴지빗근 plantaris / ⑥ 오금근 popliteus / ⑦ 뒤정강근 tibialis posterior (가장 깊다) / ⑧ 긴발가락굽힘근 flexor digitorum longus / ⑨ 긴엄지굽힘근 flexor hallucis longus / ⑩ 정강신경 tibial n. / ⑪ 뒤정강동맥 posterior tibial a. / ⑫ 종아리동맥 fibular a. (peroneal a.) — (가) 장딴지근은 넙다리뼈 관절융기 즉 무릎관절 위에서, 가자미근은 종아리뼈머리·정강뼈 가자미근선 즉 무릎관절 아래에서 일어난다. 그래서 장딴지근만 두 관절을 건너 발바닥굽힘에 더해 무릎굽힘에도 관여하고, 무릎을 굽히면 장딴지근이 느슨해져 발바닥굽힘 힘이 떨어진다(가자미근 단독 검사법의 근거) / (나) 긴발가락굽힘근은 안쪽 즉 정강뼈 뒤면에서, 긴엄지굽힘근은 가쪽 즉 종아리뼈 뒤면에서 일어난다. 이름이 가리키는 발가락과 기시 쪽이 서로 어긋나므로 두 힘줄은 발바닥에서 서로 교차한다(Henry 매듭) / (다) 앞에서 뒤로 뒤정강근 힘줄 → 긴발가락굽힘근 힘줄 → 뒤정강동맥 → 정강신경 → 긴엄지굽힘근 힘줄 (Tom, Dick ANd Harry)",
+   "explanation": "종아리 뒤칸은 근막사이막으로 얕은층과 깊은층이 갈리지만 **두 층 모두 정강신경 하나가 지배**한다는 점이 앞칸(깊은종아리신경)·가쪽칸(얕은종아리신경)과 대비되는 이 부위의 핵심이다. 얕은층은 장딴지근 두 갈래·가자미근·장딴지빗근이고 셋이 한 발꿈치힘줄로 모여 발바닥굽힘을 만든다 — 세 갈래가 모인다는 뜻에서 장딴지세갈래근 triceps surae 이라 부른다. 장딴지근은 무릎 위에서 일어나 두 관절을 건너므로 무릎굽힘에도 관여하고, 무릎 아래에서 일어나는 가자미근은 종아리 정맥을 짜올려 '제2의 심장'이라 불린다. 장딴지빗근은 가쪽위관절융기 부근의 작은 힘살에서 아주 긴 힘줄을 내어 안쪽아래로 비스듬히 내려가 발꿈치힘줄 안쪽에 붙는데, 길고 여분이라 힘줄이식 공여건으로 쓰이고 결손 변이도 흔하다. 깊은층은 위에서부터 오금근(무릎 잠금 해제), 그리고 뒤정강근·긴발가락굽힘근·긴엄지굽힘근 셋이다. 뒤정강근이 뼈사이막 위에 놓여 가장 깊고 발배뼈·안쪽쐐기뼈에 붙어 발바닥활을 떠받친다. 긴발가락굽힘근과 긴엄지굽힘근은 이름과 기시 쪽이 어긋나 발바닥에서 교차하므로, 이름만 보고 위치를 찍으면 좌우가 뒤집힌다 — 태깅에서 실제로 갈리는 자리다. 신경혈관다발은 뒤정강근 위를 타고 내려간다. 오금동맥은 오금근 아래모서리에서 앞정강동맥·뒤정강동맥으로 갈리고, 앞정강동맥은 뼈사이막을 뚫고 앞칸으로 넘어간다. 뒤정강동맥은 곧 종아리동맥을 가쪽으로 내주고 정강신경과 나란히 내려가 안쪽복사 뒤를 돈다. 이 자리가 발목굴 tarsal tunnel 로, 굽힘근지지띠 아래에서 정강신경이 눌리면 발바닥 저림과 감각이상이 생긴다(발목굴증후군). 라벨판은 diag-leg-posterior-layers-labeled.svg.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": "assets/anatomy/diag-leg-posterior-layers-quiz.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕",
+     "page": null,
+     "section": "종아리 뒤부위 — 얕은층·깊은층 / 안쪽복사 뒤 통과 순서"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -7347,6 +7370,7 @@ window.MEDKOS_ANATOMY = {
     "6. 마무리 체크리스트"
    ],
    "figs": [
+    "diag-leg-posterior-layers-labeled.svg",
     "diag-popliteal-fossa-labeled.svg",
     "diag-scapular-spaces-labeled.svg",
     "diag-suboccipital-labeled.svg",
@@ -7668,6 +7692,90 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-24",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "back",
+    "lower-limb"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0029"
+    ],
+    "layer": [
+     "anatomy-2026-0030"
+    ],
+    "branch": [
+     "anatomy-2026-0035"
+    ],
+    "relation": [
+     "anatomy-2026-0036",
+     "anatomy-2026-0037"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0040",
+    "anatomy-2026-0046",
+    "anatomy-2026-0044",
+    "anatomy-2026-0041",
+    "anatomy-2026-0039",
+    "anatomy-2026-0043",
+    "anatomy-2026-0015",
+    "anatomy-2026-0372",
+    "anatomy-2026-0353",
+    "anatomy-2026-0045",
+    "anatomy-2026-0048",
+    "anatomy-2026-0052"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-3": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0004",
+     "anatomy-2026-0047",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": []
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-23",
    "phase": "t1-prep",
