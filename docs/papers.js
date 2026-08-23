@@ -2,6 +2,70 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0471",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Risk Factors for Posttraumatic Stress Disorder in Mexican Psychiatric Trauma Survivors",
+  "authors": [
+   "Mora Ortiz Laura Estefanía",
+   "Merlín García Ilyamín",
+   "Robles García Rebeca"
+  ],
+  "journal": "Actas espanolas de psiquiatria",
+  "doi": "10.62641/aep.v54i4.2253",
+  "pmid": "42633511",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42633511/",
+  "pubdate": "2026-08-15",
+  "date": "2026-08-23",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** There is extensive evidence linking specific sociodemographic and clinical factors to increased vulnerability for Posttraumatic Stress Disorder (PTSD). However, most studies have focused on community samples, and little is known about how such factors shape PTSD risk in clinical psychiatric settings in Latin America, where trauma exposure is highly prevalent. The present study addresses these gaps by examining sociodemographic characteristics and specific types of traumatic events linked to PTSD diagnosis among individuals receiving care at a tertiary mental health facility in Mexico City, Mexico.\n\n**METHODS:** A cross-sectional, observational design was employed, enrolling 160 psychiatric patients. Participants were assessed for exposure to potentially traumatic events using the Life Events Checklist for DSM-5 (LEC-5). Probable PTSD was initially identified with the PTSD Checklist for DSM-5 (PCL-5), followed by diagnostic confirmation using the Clinician-Administered PTSD Scale for DSM-5 (CAPS-5). Sociodemographic data, including age, sex, and educational attainment, were also collected. Multivariate logistic regression was used to identify PTSD predictors, with a significance set at p < 0.05.\n\n**RESULTS:** The frequency of PTSD in the sample was 31.9%. Multivariate logistic regression analysis revealed that sexual aggression was the strongest independent predictor of PTSD (odds ratio (OR) = 38.49; 95% confidence interval (CI): 10.59-139.95; p < 0.001). Other significant predictors included being female (OR = 8.09; 95% CI: 1.60-40.86; p < 0.001) and over 30 years old (OR = 2.86; 95% CI: 1.13-7.24; p < 0.05). The model demonstrated good overall fit (Pearson χ2 p = 0.673) and explained a moderate proportion of the variance (Nagelkerke R2 = 0.550).\n\n**CONCLUSIONS:** Sexual aggression, female sex, and older age were significantly associated with a PTSD diagnosis among psychiatric trauma survivors. These findings underscore the importance of incorporating trauma-informed care principles and systematic screening for sexual violence into mental health settings to improve diagnostic accuracy and optimize interventions for this population.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0470",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Risk Factors for Anxiety or Depression in Patients With Stroke During the Acute and Recovery Phases: An Independent Cohort Study",
+  "authors": [
+   "Li Mei",
+   "Ge Chuchu",
+   "Han Yu",
+   "Tang Yan",
+   "Zhao Li"
+  ],
+  "journal": "Actas espanolas de psiquiatria",
+  "doi": "10.62641/aep.v54i4.2286",
+  "pmid": "42633506",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42633506/",
+  "pubdate": "2026-08-15",
+  "date": "2026-08-23",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** To identify the overall risk factors for any clinically significant anxiety or depressive anxiety or depression in patients with stroke in the acute and recovery phase cohorts, compare the differences in overall risk factors between two independent patient cohorts at different disease stages, so as to provide a reliable basis for early screening and staged intervention of post-stroke emotional anxiety or depression.\n\n**METHODS:** This is a retrospective study that included 252 stroke patients admitted to Nantong Rici Hospital Affiliated to Yangzhou University from August 2023 to October 2025, which were divided into two independent cohorts: the acute phase cohort (7-14 days after onset, n = 143) and the recovery phase cohort (3 months after onset, n = 109), all eligible patients were assigned to either the anxiety or depression group or the non-anxiety or depression group according to the 14-item Hamilton Anxiety Rating Scale (HAMA-14) and 24-item Hamilton Depression Rating Scale (HAMD-24). Following univariate analysis-based screening of potential risk factors, the significantly different indicators were further included in the multivariate Logistic regression model to identify independent determinants and clarify differences across stages.\n\n**RESULTS:** In the acute phase cohort, the incidence of anxiety or depression was 30.07% (43/143), and the independent risk factors identified were age [odds ratio (OR) = 1.23, 95% confidence interval (CI): 1.10-1.38], illiterate educational level (OR = 8.15, 95% CI: 2.28-29.12), no dedicated care (OR = 5.52, 95% CI: 1.58-19.34), hemorrhagic stroke (OR = 6.39, 95% CI: 1.61-25.30), multiple lesions (OR = 5.07, 95% CI: 1.31-19.66), National Institutes of Health Stroke Scale (NIHSS) score (OR = 1.25, 95% CI: 1.03-1.52), and combined atrial fibrillation (AF) (OR = 5.38, 95% CI: 1.20-24.09) (p all < 0.05). In the recovery phase cohort, the incidence of anxiety or depression was 25.69% (28/109), and the independent risk factorsidentified were age (OR = 1.21, 95% CI: 1.05-1.39), combined diabetes mellitus (DM) (OR = 4.63, 95% CI: 1.18-18.20), AF (OR = 3.94, 95% CI: 1.07-14.45), and coronary heart disease (CHD) (OR = 5.86, 95% CI: 1.45-23.73) (p all < 0.05). Age and combined AF were the common independent risk factors in both cohorts.\n\n**CONCLUSIONS:** There are differences in the risk factors for anxiety/depression between independent stroke patients cohorts at different disease stages. Clinically, individualized intervention should be carried out according to the key risk factors of each disease stage to reduce the risk of anxiety or depression.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0469",
   "topic": "Cardiology",
   "subtopic": "",
