@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="갈비사이공간 도해의 퀴즈판 — 라벨을 지우고 1번부터 12번까지 번호핀만 남긴 태깅 연습용 마스킹판">
+  <!-- 자체 제작 도해(claude-drawn, Lane A)의 퀴즈판. 라벨을 지우고 번호핀 1~12 만 남겼다.
+       정답과 해설은 diag-intercostal-layers-labeled.svg 와 대응 문항 카드에 있다.
+       번호 순서는 문항 카드의 정답 순서와 1:1 — 임의로 바꾸지 말 것. -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="700" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">갈비사이공간 — 번호 태깅 연습
+    <tspan fill="#eab308" font-size="12" font-weight="400">퀴즈판 — 1~12 의 이름을 말하시오</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 근거: 4회차(2026-08-27) 실습주제 §가슴벽 · 오른쪽 가슴벽을 앞에서 자른 단면</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">근육 <tspan fill="#7fd3a4">초록</tspan> / 깊은층 <tspan fill="#f0b56b">주황</tspan> / 신경 <tspan fill="#9cc3ff">파랑</tspan> / 동맥 <tspan fill="#e0645f">빨강</tspan> / 정맥 <tspan fill="#b49ae0">보라</tspan> / 가슴막 <tspan fill="#7fd4c8">청록</tspan></text>
+  <text x="20" y="86" fill="#5d6f83" font-size="10">※ 번호는 대응 문항 카드의 정답 순서와 1:1 이다. 라벨판은 diag-intercostal-layers-labeled.svg.</text>
+
+  <!-- ============================================================= 패널 1 : 층 순서 -->
+  <rect x="30" y="100" width="470" height="460" fill="none" stroke="#2c4159" stroke-width="1.4" rx="6"/>
+  <text x="44" y="124" fill="#7fd3a4" font-size="13" class="kr">1. 층 순서 <tspan fill="#6f8299" font-size="10" font-weight="400">얕은 → 깊은 (피부에서 허파 쪽으로)</tspan></text>
+
+  <!-- 깊이 화살표 -->
+  <path d="M 46,150 L 46,404" fill="none" stroke="#3d5166" stroke-width="1.2"/>
+  <path d="M 46,404 l -4,-8 l 8,0 Z" fill="#3d5166"/>
+  <text x="40" y="278" fill="#6f8299" font-size="9.5" text-anchor="middle" transform="rotate(-90 40 278)">깊어진다 deep →</text>
+
+  <!-- 층 밴드 -->
+  <rect x="60" y="148" width="260" height="26" fill="#2a3648" stroke="#55677d" stroke-width="1.4" rx="3"/>
+  <rect x="60" y="178" width="260" height="42" fill="#2f5a44" stroke="#5aa87f" stroke-width="1.6" rx="3"/>
+  <rect x="60" y="224" width="260" height="42" fill="#3d6b52" stroke="#8ed3ac" stroke-width="1.6" rx="3"/>
+  <rect x="60" y="270" width="260" height="22" fill="#3a3320" stroke="#eab308" stroke-width="1.6" rx="3" stroke-dasharray="5 3"/>
+  <rect x="60" y="296" width="260" height="34" fill="#5a4324" stroke="#f0b56b" stroke-width="1.6" rx="3"/>
+  <rect x="60" y="334" width="260" height="20" fill="#33404f" stroke="#7b8ea3" stroke-width="1.4" rx="3"/>
+  <rect x="60" y="358" width="260" height="14" fill="#1d4a46" stroke="#7fd4c8" stroke-width="1.6" rx="3"/>
+  <rect x="60" y="376" width="260" height="30" fill="#141f2e" stroke="#2c4159" stroke-width="1.2" rx="3"/>
+
+  <!-- 섬유 방향 빗금 : 바깥은 뒤위→앞아래 -->
+  <g stroke="#8ed3ac" stroke-width="1.5" opacity="0.75">
+    <path d="M 72,182 L 96,216"/><path d="M 108,182 L 132,216"/><path d="M 144,182 L 168,216"/>
+    <path d="M 180,182 L 204,216"/><path d="M 216,182 L 240,216"/><path d="M 252,182 L 276,216"/>
+  </g>
+  
+  <!-- 속은 반대 -->
+  <g stroke="#b7ecd0" stroke-width="1.5" opacity="0.75">
+    <path d="M 72,262 L 96,228"/><path d="M 108,262 L 132,228"/><path d="M 144,262 L 168,228"/>
+    <path d="M 180,262 L 204,228"/><path d="M 216,262 L 240,228"/><path d="M 252,262 L 276,228"/>
+  </g>
+  
+
+  <!-- 신경혈관면 안의 세 점 -->
+  <circle cx="150" cy="281" r="5" fill="#b49ae0" stroke="#0e1826" stroke-width="1"/>
+  <circle cx="168" cy="281" r="5" fill="#e0645f" stroke="#0e1826" stroke-width="1"/>
+  <circle cx="186" cy="281" r="5" fill="#9cc3ff" stroke="#0e1826" stroke-width="1"/>
+  
+
+  <!-- 번호핀 (패널 1) — 정답 순서는 대응 문항 카드와 1:1 -->
+  <g stroke="#55677d" stroke-width="1">
+    <path d="M 320,199 L 340,199"/><path d="M 320,245 L 340,245"/>
+    <path d="M 320,281 L 340,281"/><path d="M 320,313 L 340,313"/>
+    <path d="M 320,365 L 340,365"/>
+  </g>
+  <g fill="#0e1826" stroke="#eab308" stroke-width="2">
+    <circle cx="354" cy="199" r="12"/><circle cx="354" cy="245" r="12"/>
+    <circle cx="354" cy="281" r="12"/><circle cx="354" cy="313" r="12"/>
+    <circle cx="354" cy="365" r="12"/>
+  </g>
+  <g fill="#eab308" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="354" y="204">1</text><text x="354" y="250">2</text>
+    <text x="354" y="286">3</text><text x="354" y="318">4</text>
+    <text x="354" y="370">5</text>
+  </g>
+
+  <!-- ============================================================= 패널 2 : 갈비사이고랑 -->
+  <rect x="515" y="100" width="335" height="460" fill="none" stroke="#2c4159" stroke-width="1.4" rx="6"/>
+  <text x="529" y="124" fill="#e0645f" font-size="13" class="kr">2. 갈비사이고랑 <tspan fill="#6f8299" font-size="10" font-weight="400">costal groove — 위에서 아래로</tspan></text>
+
+  <!-- 위갈비뼈 -->
+  <rect x="560" y="150" width="250" height="52" rx="18" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <path d="M 606,202 Q 610,178 642,176 Q 676,174 686,202 Z" fill="#0e1826" stroke="#3d5166" stroke-width="1.4"/>
+  <text x="583" y="170" fill="#7b8ea3" font-size="10" class="kr">위갈비뼈</text>
+  <text x="583" y="181" fill="#6f8299" font-size="8.5">rib above</text>
+  
+  <path d="M 576,212 L 622,201" fill="none" stroke="#55677d" stroke-width="1"/>
+  <circle cx="562" cy="214" r="12" fill="#0e1826" stroke="#eab308" stroke-width="2"/>
+  <text x="562" y="219" fill="#eab308" font-size="13" font-weight="700" text-anchor="middle">9</text>
+
+  <!-- 다발 : 위 → 아래 정 · 동 · 신 -->
+  <circle cx="646" cy="192" r="9" fill="#b49ae0" stroke="#e6ddf7" stroke-width="1.4"/>
+  <circle cx="646" cy="218" r="8" fill="#e0645f" stroke="#f5c3c1" stroke-width="1.4"/>
+  <circle cx="646" cy="244" r="7.5" fill="#9cc3ff" stroke="#d9e9ff" stroke-width="1.4"/>
+  <g stroke="#55677d" stroke-width="1">
+    <path d="M 656,192 L 706,192"/><path d="M 655,218 L 706,218"/><path d="M 654,244 L 706,244"/>
+  </g>
+  <g fill="#0e1826" stroke="#eab308" stroke-width="2">
+    <circle cx="720" cy="192" r="12"/><circle cx="720" cy="218" r="12"/><circle cx="720" cy="244" r="12"/>
+  </g>
+  <g fill="#eab308" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="720" y="197">6</text><text x="720" y="223">7</text><text x="720" y="249">8</text>
+  </g>
+
+  <!-- VAN 강조 -->
+  <rect x="560" y="266" width="250" height="30" fill="#40201f" stroke="#e0645f" stroke-width="1.4" rx="4"/>
+  <text x="685" y="286" fill="#f5c3c1" font-size="12.5" text-anchor="middle" class="kr">6 · 7 · 8 은 위에서 아래로 무엇인가?</text>
+
+  <!-- 근육층 (간략) -->
+  <rect x="560" y="298" width="250" height="26" fill="#2f5a44" stroke="#5aa87f" stroke-width="1.4" rx="3"/>
+  <text x="685" y="315" fill="#cfe9db" font-size="9.5" text-anchor="middle">근육 두 층 (1 · 2)</text>
+  <rect x="560" y="328" width="250" height="22" fill="#5a4324" stroke="#f0b56b" stroke-width="1.4" rx="3"/>
+  <text x="685" y="343" fill="#f7dcb8" font-size="9.5" text-anchor="middle">가장 깊은 층 (4)</text>
+
+  <!-- 아래갈비뼈 -->
+  <rect x="560" y="366" width="250" height="52" rx="18" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="685" y="397" fill="#7b8ea3" font-size="10" text-anchor="middle" class="kr">아래갈비뼈 <tspan font-weight="400" font-size="8.5">rib below</tspan></text>
+  <path d="M 578,365 L 792,365" fill="none" stroke="#eab308" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="806" cy="378" r="12" fill="#0e1826" stroke="#eab308" stroke-width="2"/>
+  <text x="806" y="383" fill="#eab308" font-size="12" font-weight="700" text-anchor="middle">10</text>
+  <path d="M 794,372 L 770,365" fill="none" stroke="#55677d" stroke-width="1"/>
+
+  <!-- 천자 바늘 -->
+  <path d="M 532,336 L 598,364" fill="none" stroke="#0e1826" stroke-width="6"/>
+  <path d="M 532,336 L 598,364" fill="none" stroke="#e6edf3" stroke-width="2.4"/>
+  <path d="M 598,364 l -11,-2 l 3,8 Z" fill="#e6edf3"/>
+  <text x="533" y="328" fill="#e6edf3" font-size="10" class="kr">바늘</text>
+
+  <rect x="529" y="430" width="307" height="116" fill="#141f2e" stroke="#2c4159" stroke-width="1.2" rx="4"/>
+  <text x="541" y="450" fill="#eab308" font-size="10.5" class="kr">스스로 답해 보기</text>
+  <text x="541" y="470" fill="#93a4b7" font-size="10">· 바늘은 어느 갈비뼈의 어느 모서리를 따라 넣는가?</text>
+  <text x="541" y="488" fill="#93a4b7" font-size="10">· 그 이유를 6 · 7 · 8 의 배열로 설명하라.</text>
+  <text x="541" y="506" fill="#93a4b7" font-size="10">· 1 과 2 의 섬유 방향은 각각 어느 쪽인가?</text>
+  <text x="541" y="524" fill="#93a4b7" font-size="10">· 3 은 어느 두 층 사이인가?</text>
+  <text x="541" y="540" fill="#6f8299" font-size="9">정답은 대응 문항 카드 · 4회차 서브노트 정답면에.</text>
+
+  <!-- ============================================================= 하단 : 갈비사이 동맥 -->
+  <rect x="30" y="575" width="820" height="110" fill="none" stroke="#2c4159" stroke-width="1.4" rx="6"/>
+  <text x="44" y="597" fill="#e0645f" font-size="12.5" class="kr">3. 갈비사이의 동맥 <tspan fill="#6f8299" font-size="10" font-weight="400">11 · 12 는 각각 어느 동맥인가?</tspan></text>
+
+  <!-- 대동맥 (왼쪽 세로) -->
+  <path d="M 120,610 L 120,672" fill="none" stroke="#e0645f" stroke-width="7"/>
+  <circle cx="74" cy="641" r="12" fill="#0e1826" stroke="#eab308" stroke-width="2"/>
+  <text x="74" y="646" fill="#eab308" font-size="12" font-weight="700" text-anchor="middle">11</text>
+  <path d="M 86,641 L 116,641" fill="none" stroke="#55677d" stroke-width="1"/>
+  
+  
+  <!-- 속가슴동맥 (오른쪽 세로) -->
+  <path d="M 720,610 L 720,672" fill="none" stroke="#e0645f" stroke-width="7"/>
+  <circle cx="768" cy="641" r="12" fill="#0e1826" stroke="#eab308" stroke-width="2"/>
+  <text x="768" y="646" fill="#eab308" font-size="12" font-weight="700" text-anchor="middle">12</text>
+  <path d="M 756,641 L 724,641" fill="none" stroke="#55677d" stroke-width="1"/>
+  
+  
+  <!-- 세 개의 고리 -->
+  <g stroke="#e0645f" stroke-width="3.4" fill="none">
+    <path d="M 124,622 L 420,622"/><path d="M 716,622 L 420,622"/>
+    <path d="M 124,641 L 420,641"/><path d="M 716,641 L 420,641"/>
+    <path d="M 124,660 L 420,660"/><path d="M 716,660 L 420,660"/>
+  </g>
+  <g fill="#eab308">
+    <circle cx="420" cy="622" r="4.5"/><circle cx="420" cy="641" r="4.5"/><circle cx="420" cy="660" r="4.5"/>
+  </g>
+  
+  
+  <text x="420" y="678" fill="#6f8299" font-size="9.5" text-anchor="middle">여기서 만나는 것을 무엇이라 하는가?</text>
+  
+  
+</svg>

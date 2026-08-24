@@ -205,6 +205,8 @@ tags: [서브노트, 4회차, 얼굴, 표정근육, 귀밑샘, 얼굴신경, 삼
 
 ## 7. 가슴벽과 갈비사이 | Thoracic wall
 
+!fig docs/assets/anatomy/diag-intercostal-layers-labeled.svg | 세 층과 그 사이의 다발 — 다발은 속과 맨속 **사이**를 지난다
+
 !fig docs/assets/anatomy/tree-s04-bundle-labeled.svg | 귀밑샘은 얕은→깊은 신–정–동, 갈비사이고랑은 위→아래 정–동–신
 
 | 층 | 근육 | 섬유 방향 · 메모 |
