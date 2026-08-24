@@ -7742,5 +7742,595 @@ window.USMLE_QUESTIONS = [
    ]
   },
   "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0115",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Immunology",
+  "subject_file": "Immunology",
+  "subtopic": "Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies",
+  "type": "Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies",
+  "difficulty": 4,
+  "created": "2026-08-25",
+  "vignette": "A 23-year-old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episode of prolonged watery diarrhea last year that resolved after treatment with metronidazole. Minutes after transfusion of crossmatch-compatible packed red blood cells begins, she develops diffuse flushing, urticaria, wheezing, and hypotension. The transfusion is stopped and intramuscular epinephrine is given, with improvement.",
+  "question": "Which of the following best explains this patient's transfusion reaction?",
+  "options": [
+   "Recipient IgM directed against donor erythrocyte ABO antigens",
+   "Donor antileukocyte antibodies reacting with recipient neutrophils",
+   "Cytokines released from residual leukocytes during product storage",
+   "Recipient antibodies directed against donor immunoglobulin A",
+   "Anamnestic recipient IgG response against minor erythrocyte antigens"
+  ],
+  "answer": 4,
+  "explanationText": "- 정답근거: 두 단계 추론이다. ① 반복 부비동·중이 감염 + 메트로니다졸에 반응한 장기 수양성 설사(지아르디아증) → 점막 방어 결손, 즉 선택적 IgA 결핍을 병력에서 읽는다. ② IgA가 거의 없는 환자는 공여 혈액 속 IgA를 외래 항원으로 인식해 항-IgA 항체를 이미 갖고 있을 수 있고, 수혈 수분 내 비만세포 탈과립로 아나필락시스가 온다. DAT 음성·유리 헤모글로빈 정상(용혈 배제)·트립타제 상승·깨끗한 흉부 X선이 이 기전을 지지한다.\n- 오답감별:\n  - (A) ABO 부적합 급성 용혈은 발열·옆구리 통증·혈색소뇨에 DAT 양성·유리 헤모글로빈 상승이 따른다 — 이 환자는 둘 다 정상이고 교차시험도 적합했다. '수혈 직후 쇼크'만 보고 넘겨짚기 쉬운 함정.\n  - (B) 공여자 항백혈구 항체는 TRALI의 기전 — 저산소증과 양측 폐침윤이 핵심인데 흉부 X선이 깨끗하다. 기관지연축·두드러기는 TRALI의 그림이 아니다.\n  - (C) 저장 중 축적된 사이토카인은 발열성 비용혈성 반응의 기전 — 발열·오한이 주 증상이고 저혈압·두드러기·쌕쌕거림 같은 아나필락시스 그림을 만들지 않는다(이 환자는 체온 36.7 °C).\n  - (E) 기억 IgG의 소수혈액형(Kidd 등) 반응은 지연성 용혈로 수혈 3일~2주 뒤 서서히 빈혈·경한 황달로 나타난다 — 수분 내 쇼크와 시간 경과가 맞지 않는다.\n- 임상핵심: 수혈 직후 아나필락시스 + 반복 점막 감염(부비동염·지아르디아) 병력이면 IgA 결핍의 항-IgA 반응을 먼저 떠올린다 — 이후 수혈은 세척 적혈구 또는 IgA 결핍 공여자 제제로.\n- 출처: Abbas Cellular and Molecular Immunology(원발성 면역결핍); UpToDate — Immunologic transfusion reactions. 표준 기전, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "두 단계 추론이다. ① 반복 부비동·중이 감염 + 메트로니다졸에 반응한 장기 수양성 설사(지아르디아증) → 점막 방어 결손, 즉 선택적 IgA 결핍을 병력에서 읽는다. ② IgA가 거의 없는 환자는 공여 혈액 속 IgA를 외래 항원으로 인식해 항-IgA 항체를 이미 갖고 있을 수 있고, 수혈 수분 내 비만세포 탈과립로 아나필락시스가 온다. DAT 음성·유리 헤모글로빈 정상(용혈 배제)·트립타제 상승·깨끗한 흉부 X선이 이 기전을 지지한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) ABO 부적합 급성 용혈은 발열·옆구리 통증·혈색소뇨에 DAT 양성·유리 헤모글로빈 상승이 따른다 — 이 환자는 둘 다 정상이고 교차시험도 적합했다. '수혈 직후 쇼크'만 보고 넘겨짚기 쉬운 함정.\n(B) 공여자 항백혈구 항체는 TRALI의 기전 — 저산소증과 양측 폐침윤이 핵심인데 흉부 X선이 깨끗하다. 기관지연축·두드러기는 TRALI의 그림이 아니다.\n(C) 저장 중 축적된 사이토카인은 발열성 비용혈성 반응의 기전 — 발열·오한이 주 증상이고 저혈압·두드러기·쌕쌕거림 같은 아나필락시스 그림을 만들지 않는다(이 환자는 체온 36.7 °C).\n(E) 기억 IgG의 소수혈액형(Kidd 등) 반응은 지연성 용혈로 수혈 3일~2주 뒤 서서히 빈혈·경한 황달로 나타난다 — 수분 내 쇼크와 시간 경과가 맞지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "수혈 직후 아나필락시스 + 반복 점막 감염(부비동염·지아르디아) 병력이면 IgA 결핍의 항-IgA 반응을 먼저 떠올린다 — 이후 수혈은 세척 적혈구 또는 IgA 결핍 공여자 제제로."
+   },
+   {
+    "k": "출처",
+    "v": "Abbas Cellular and Molecular Immunology(원발성 면역결핍); UpToDate — Immunologic transfusion reactions. 표준 기전, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (immunology · transfusion reactions)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "76/40 mmHg (수혈 중 급락)"
+   },
+   {
+    "name": "맥박",
+    "value": "132 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "28 /min, 쌕쌕거림 동반"
+   },
+   {
+    "name": "체온",
+    "value": "36.7 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "직접항글로불린검사(DAT)",
+    "value": "음성",
+    "ref": "음성"
+   },
+   {
+    "name": "혈장 유리 헤모글로빈",
+    "value": "4 mg/dL",
+    "ref": "< 10"
+   },
+   {
+    "name": "혈청 트립타제(반응 1시간 후)",
+    "value": "34 ng/mL",
+    "ref": "< 11.4"
+   },
+   {
+    "name": "흉부 X선",
+    "value": "폐야 깨끗함, 침윤 없음",
+    "ref": "—"
+   },
+   {
+    "name": "수혈 전 교차시험",
+    "value": "적합",
+    "ref": "적합"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "급성 수혈반응 감별 결정표\n─────────────────────────────────────────────\n시점 × 핵심 소견 → 유형 (기전)\n수분 내 · 두드러기+저혈압+기관지연축, DAT(-)    → 아나필락시스형 (항-IgA 등, 비만세포 매개)\n수분~수시간 · 발열+옆구리통증+혈색소뇨, DAT(+)  → 급성 용혈성 (ABO 부적합, IgM·보체)\n1–6시간 · 발열·오한만, 용혈 증거 없음            → 발열성 비용혈성 (저장 중 축적 사이토카인)\n6시간 내 · 저산소증+양측 폐침윤, 순환과부하 없음 → TRALI (공여자 항백혈구 항체)\n3일–2주 · 서서히 빈혈·경한 황달, 신규 동종항체    → 지연성 용혈성 (기억 IgG, Kidd 등)\n─────────────────────────────────────────────\n각주: 아나필락시스형 병력자는 세척(washed) 제제 또는 IgA 결핍 공여자 제제로 예방.\n",
+   "최신지견": "선택적 IgA 결핍은 가장 흔한 원발성 면역결핍(약 1/600)이며 대부분 무증상이라, 첫 발현이 수혈 아나필락시스인 경우가 있다 — 원인 불명 수혈 아나필락시스에서는 IgA 정량과 항-IgA 항체를 확인한다.",
+   "참고문헌": [
+    "Abbas — Cellular and Molecular Immunology, Primary Immunodeficiencies",
+    "UpToDate — Immunologic transfusion reactions"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0116",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Biochemistry",
+  "subject_file": "Biochemistry",
+  "subtopic": "McArdle Disease — Exercise Intolerance with Second Wind and Flat Lactate Curve",
+  "type": "McArdle Disease — Exercise Intolerance with Second Wind and Flat Lactate Curve",
+  "difficulty": 4,
+  "created": "2026-08-25",
+  "vignette": "A 17-year-old boy is evaluated for recurrent episodes of muscle cramping and fatigue that begin within the first few minutes of intense exercise such as sprinting or carrying heavy loads. He has noticed that if he briefly slows down when symptoms start, he can then continue exercising with much less difficulty. Two days ago, after a strenuous workout, he passed dark brown urine. He takes no medications or supplements, and his parents are healthy. An ischemic forearm exercise test is performed; results are shown.",
+  "question": "A deficiency of which of the following enzymes is the most likely cause of this patient's condition?",
+  "options": [
+   "Muscle glycogen phosphorylase",
+   "Glucose-6-phosphatase",
+   "Lysosomal acid alpha-1,4-glucosidase",
+   "Carnitine palmitoyltransferase II",
+   "Glycogen debranching enzyme"
+  ],
+  "answer": 1,
+  "explanationText": "- 정답근거: 소견 종합이 핵심이다. ① 고강도 운동 시작 수분 내 경련(즉시 에너지원인 근육 글리코겐을 못 씀), ② 잠시 늦추면 계속 운동 가능(second wind — 혈류로 온 포도당·유리지방산이 막힌 글리코겐 분해를 우회), ③ 어두운 소변 + 잠혈 3+인데 적혈구 없음(미오글로빈뇨, CK 3,850), ④ 허혈성 전완운동검사에서 젖산이 오르지 않고 암모니아만 과상승(글리코겐→해당 경로 차단, AMP deaminase 보상 항진). 네 가지가 모두 근육 glycogen phosphorylase(myophosphorylase) 결핍 = McArdle병(GSD V) 을 가리킨다.\n- 오답감별:\n  - (B) Glucose-6-phosphatase 결핍(von Gierke)은 간 질환이다 — 공복 저혈당·젖산산증·간비대가 그림이고, 운동 유발 경련·미오글로빈뇨는 없다. 이 환자의 공복 혈당은 정상이다.\n  - (C) 산성 α-glucosidase 결핍(Pompe)은 리소좀병으로 영아형은 심비대·저긴장·조기 사망, 후기형도 서서히 진행하는 근위부·호흡근 약화다 — 운동 수분 내 경련과 second wind 패턴이 아니다.\n  - (D) CPT II 결핍은 가장 매력적인 오답 — 같은 운동 유발 미오글로빈뇨를 보이지만 장시간 운동·공복·추위 후에 발생하고, second wind가 없으며, 글리코겐 분해가 온전해 전완검사에서 젖산이 정상적으로 상승한다. 젖산 곡선이 갈림길이다.\n  - (E) Debranching enzyme 결핍(Cori)은 저혈당·간비대가 앞서고 근육 침범은 서서히 오는 근력약화다 — 글리코겐 분해가 부분적으로는 가능해(바깥 가지) 전형적 second wind·즉발성 경련 패턴을 만들지 않는다.\n- 임상핵심: \"운동 시작 수분 내 경련 + second wind + 전완검사 flat lactate\"는 McArdle, \"장시간 운동·공복 후 미오글로빈뇨 + 정상 lactate 상승\"은 CPT II — 젖산 곡선으로 가른다.\n- 출처: Lippincott Biochemistry(글리코겐 대사); UpToDate — McArdle disease. 고전적 기전, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "소견 종합이 핵심이다. ① 고강도 운동 시작 수분 내 경련(즉시 에너지원인 근육 글리코겐을 못 씀), ② 잠시 늦추면 계속 운동 가능(second wind — 혈류로 온 포도당·유리지방산이 막힌 글리코겐 분해를 우회), ③ 어두운 소변 + 잠혈 3+인데 적혈구 없음(미오글로빈뇨, CK 3,850), ④ 허혈성 전완운동검사에서 젖산이 오르지 않고 암모니아만 과상승(글리코겐→해당 경로 차단, AMP deaminase 보상 항진). 네 가지가 모두 근육 glycogen phosphorylase(myophosphorylase) 결핍 = McArdle병(GSD V) 을 가리킨다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(B) Glucose-6-phosphatase 결핍(von Gierke)은 간 질환이다 — 공복 저혈당·젖산산증·간비대가 그림이고, 운동 유발 경련·미오글로빈뇨는 없다. 이 환자의 공복 혈당은 정상이다.\n(C) 산성 α-glucosidase 결핍(Pompe)은 리소좀병으로 영아형은 심비대·저긴장·조기 사망, 후기형도 서서히 진행하는 근위부·호흡근 약화다 — 운동 수분 내 경련과 second wind 패턴이 아니다.\n(D) CPT II 결핍은 가장 매력적인 오답 — 같은 운동 유발 미오글로빈뇨를 보이지만 장시간 운동·공복·추위 후에 발생하고, second wind가 없으며, 글리코겐 분해가 온전해 전완검사에서 젖산이 정상적으로 상승한다. 젖산 곡선이 갈림길이다.\n(E) Debranching enzyme 결핍(Cori)은 저혈당·간비대가 앞서고 근육 침범은 서서히 오는 근력약화다 — 글리코겐 분해가 부분적으로는 가능해(바깥 가지) 전형적 second wind·즉발성 경련 패턴을 만들지 않는다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "\"운동 시작 수분 내 경련 + second wind + 전완검사 flat lactate\"는 McArdle, \"장시간 운동·공복 후 미오글로빈뇨 + 정상 lactate 상승\"은 CPT II — 젖산 곡선으로 가른다."
+   },
+   {
+    "k": "출처",
+    "v": "Lippincott Biochemistry(글리코겐 대사); UpToDate — McArdle disease. 고전적 기전, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (biochemistry · glycogen storage diseases)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "118/72 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "76 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "14 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "혈청 CK",
+    "value": "3,850 U/L",
+    "ref": "< 200"
+   },
+   {
+    "name": "요 잠혈(dipstick)",
+    "value": "3+",
+    "ref": "음성"
+   },
+   {
+    "name": "요 현미경 적혈구",
+    "value": "0–1 /HPF",
+    "ref": "0–2"
+   },
+   {
+    "name": "허혈성 전완운동검사 — 젖산 증가",
+    "value": "0.2 mmol/L 상승",
+    "ref": "> 2.0 상승"
+   },
+   {
+    "name": "허혈성 전완운동검사 — 암모니아 증가",
+    "value": "정상 상한의 5배 상승",
+    "ref": "2–4배 상승"
+   },
+   {
+    "name": "공복 혈당",
+    "value": "91 mg/dL",
+    "ref": "70–99"
+   },
+   {
+    "name": "TSH",
+    "value": "1.8 µU/mL",
+    "ref": "0.5–4.7"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "운동 유발 근육증상 감별 결정표\n─────────────────────────────────────────────\n양상 × 검사 → 진단 (결손)\n고강도 운동 수분 내 경련 · second wind · 젖산 무증가 → McArdle (근육 phosphorylase)\n장시간 운동·공복 후 근육통 · second wind 없음 · 젖산 정상 증가 → CPT II 결핍 (지방산 수송)\n영아 심비대+저긴장 (운동과 무관, 전신)          → Pompe (lysosomal acid α-glucosidase)\n공복 저혈당+젖산산증+간비대 (근육증상 아님)     → von Gierke (glucose-6-phosphatase)\n저혈당+간비대+근력약화 · 비정상 구조 글리코겐    → Cori (debranching enzyme)\n─────────────────────────────────────────────\n각주: 미오글로빈뇨 = dipstick 잠혈(+) + 현미경 적혈구(−). 심한 발작 후 급성 신손상 감시.\n",
+   "최신지견": "McArdle병에서 운동 전 저강도 워밍업과 운동 직전 단순당 섭취가 second wind를 앞당겨 증상을 줄인다 — 혈중 포도당이 막힌 글리코겐 분해를 우회하는 같은 원리다.",
+   "참고문헌": [
+    "Lippincott Illustrated Reviews: Biochemistry — Glycogen Metabolism",
+    "UpToDate — Myophosphorylase deficiency (glycogen storage disease V, McArdle disease)"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0117",
+  "exam": "usmle",
+  "step": "Step 1",
+  "subject": "Physiology",
+  "subject_file": "Physiology",
+  "subtopic": "High-Altitude Acclimatization — 2,3-BPG and the Rightward Shift That Improves Oxygen Unloading",
+  "type": "High-Altitude Acclimatization — 2,3-BPG and the Rightward Shift That Improves Oxygen Unloading",
+  "difficulty": 3,
+  "created": "2026-08-25",
+  "vignette": "A 28-year-old man flies from sea level to a research station at 3,900 m (12,800 ft). The next morning he has a mild headache, fatigue, and dyspnea when climbing stairs. He has no chronic medical conditions and takes no medications. Arterial blood gas analysis on room air is shown. He plans to remain at the station for a month.",
+  "question": "Which of the following changes will contribute most to improved oxygen unloading to his tissues over the next several days?",
+  "options": [
+   "Increased hemoglobin affinity for oxygen",
+   "Decreased minute ventilation toward his sea-level baseline",
+   "Increased erythrocyte 2,3-bisphosphoglycerate concentration",
+   "Increased renal reabsorption of filtered bicarbonate",
+   "Decreased pulmonary vascular resistance"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 두 단계로 읽는다. ① ABG는 급성 호흡성 알칼리증(pH 7.47, PaCO2 29, HCO3⁻ 21로 아직 보상 미완) — 저산소혈증(PaO2 54)이 말초화학수용체를 자극해 과호흡 중이다. ② 알칼리증은 해리곡선을 왼쪽으로 밀어 조직 산소 방출에 불리한데, 수일에 걸쳐 적혈구 2,3-BPG가 증가하면서 곡선을 오른쪽으로 되돌려 헤모글로빈-산소 친화도를 낮추고, 같은 PaO2에서도 조직에 산소를 더 내려놓게 한다. '방출(unloading)'을 개선하는 기전은 이것이다.\n- 오답감별:\n  - (A) 친화도 증가는 곡선 좌측 이동 — 폐에서 싣기는 유리해도 조직에서 내려놓기는 불리해진다. 질문이 묻는 방향과 정반대. '친화도가 높아야 좋다'는 흔한 오개념.\n  - (B) 순응 중 환기는 기저치로 돌아가지 않는다 — 신장 보상으로 pH가 정상화되고 중추화학수용체가 재설정되면서 환기는 오히려 더 증가한다.\n  - (D) 신장 보상은 HCO3⁻ 재흡수 감소(배설 증가)다 — 호흡성 알칼리증을 pH 쪽에서 보상하는 방향이 재흡수 증가라고 착각하기 쉽다. 또한 이는 pH 교정 기전이지 산소 방출 자체의 기전이 아니다.\n  - (E) 폐포 저산소는 저산소성 폐혈관수축을 일으켜 폐혈관저항이 상승한다(만성 시 폐고혈압·우심비대) — 감소가 아니고, 산소 방출 개선과도 무관하다.\n- 임상핵심: 고지대 순응은 시간표로 외운다 — 즉시 과호흡(알칼리증) → 수일 2,3-BPG↑(우측 이동, 방출↑) + 신장 HCO3⁻ 배설 → 수주 EPO·적혈구량↑(운반↑); '방출'은 2,3-BPG, '운반'은 적혈구량.\n- 출처: Guyton & Hall(고지대 생리); West's Respiratory Physiology(산소 운반). 표준 생리, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "두 단계로 읽는다. ① ABG는 급성 호흡성 알칼리증(pH 7.47, PaCO2 29, HCO3⁻ 21로 아직 보상 미완) — 저산소혈증(PaO2 54)이 말초화학수용체를 자극해 과호흡 중이다. ② 알칼리증은 해리곡선을 왼쪽으로 밀어 조직 산소 방출에 불리한데, 수일에 걸쳐 적혈구 2,3-BPG가 증가하면서 곡선을 오른쪽으로 되돌려 헤모글로빈-산소 친화도를 낮추고, 같은 PaO2에서도 조직에 산소를 더 내려놓게 한다. '방출(unloading)'을 개선하는 기전은 이것이다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 친화도 증가는 곡선 좌측 이동 — 폐에서 싣기는 유리해도 조직에서 내려놓기는 불리해진다. 질문이 묻는 방향과 정반대. '친화도가 높아야 좋다'는 흔한 오개념.\n(B) 순응 중 환기는 기저치로 돌아가지 않는다 — 신장 보상으로 pH가 정상화되고 중추화학수용체가 재설정되면서 환기는 오히려 더 증가한다.\n(D) 신장 보상은 HCO3⁻ 재흡수 감소(배설 증가)다 — 호흡성 알칼리증을 pH 쪽에서 보상하는 방향이 재흡수 증가라고 착각하기 쉽다. 또한 이는 pH 교정 기전이지 산소 방출 자체의 기전이 아니다.\n(E) 폐포 저산소는 저산소성 폐혈관수축을 일으켜 폐혈관저항이 상승한다(만성 시 폐고혈압·우심비대) — 감소가 아니고, 산소 방출 개선과도 무관하다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "고지대 순응은 시간표로 외운다 — 즉시 과호흡(알칼리증) → 수일 2,3-BPG↑(우측 이동, 방출↑) + 신장 HCO3⁻ 배설 → 수주 EPO·적혈구량↑(운반↑); '방출'은 2,3-BPG, '운반'은 적혈구량."
+   },
+   {
+    "k": "출처",
+    "v": "Guyton & Hall(고지대 생리); West's Respiratory Physiology(산소 운반). 표준 생리, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (respiratory physiology · oxygen transport)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "122/78 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "94 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "22 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.8 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "SpO2 (실내 공기)",
+    "value": "88 %",
+    "ref": "≥ 95"
+   },
+   {
+    "name": "동맥혈 pH",
+    "value": "7.47",
+    "ref": "7.35–7.45"
+   },
+   {
+    "name": "PaCO2",
+    "value": "29 mmHg",
+    "ref": "35–45"
+   },
+   {
+    "name": "PaO2",
+    "value": "54 mmHg",
+    "ref": "80–100"
+   },
+   {
+    "name": "HCO3⁻",
+    "value": "21 mEq/L",
+    "ref": "22–26"
+   },
+   {
+    "name": "헤모글로빈",
+    "value": "14.9 g/dL",
+    "ref": "13.5–17.5"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "고지대 순응의 시간표 결정표\n─────────────────────────────────────────────\n시점 × 변화 → 효과\n수분~수시간   → 저산소 → 말초화학수용체 → 과호흡 → 호흡성 알칼리증 (곡선 좌측 이동, 일시적 불리)\n수시간~수일   → 적혈구 2,3-BPG 증가 → 곡선 우측 이동 → 조직 산소 방출 개선   ← 정답 축\n수일          → 신장 HCO3⁻ 배설 증가 → pH 정상화 → 중추화학수용체 재설정 → 환기 추가 증가\n수일~수주     → EPO 상승 → 적혈구량·헤모글로빈 증가 → 산소 '운반량' 증가\n지속          → 저산소성 폐혈관수축 → 폐혈관저항·폐동맥압 상승 (만성 시 우심 부담)\n─────────────────────────────────────────────\n",
+   "최신지견": "아세타졸라마이드는 신장 HCO3⁻ 배설을 앞당겨 '인공 순응'을 만든다 — 급성 고산병 예방의 1차 약제인 이유가 이 보상 시간표에 있다.",
+   "참고문헌": [
+    "Guyton & Hall — Aviation, High Altitude, and Space Physiology",
+    "West's Respiratory Physiology — Oxygen Transport"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0118",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Internal Medicine",
+  "subject_file": "Internal Medicine",
+  "subtopic": "Atrial Fibrillation of 5 Days — Rate Control and Anticoagulation, Not Immediate Cardioversion",
+  "type": "Atrial Fibrillation of 5 Days — Rate Control and Anticoagulation, Not Immediate Cardioversion",
+  "difficulty": 5,
+  "created": "2026-08-25",
+  "vignette": "A 62-year-old man comes to the emergency department because of 5 days of palpitations, mild exertional dyspnea, and fatigue. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin. He does not use tobacco and drinks alcohol only occasionally. He appears comfortable at rest. Cardiac examination shows an irregularly irregular rhythm without murmurs, and the lungs are clear. An electrocardiogram shows the rhythm in the figure.",
+  "question": "Which of the following is the most appropriate management at this time?",
+  "options": [
+   "Immediate synchronized electrical cardioversion",
+   "Intravenous adenosine administration",
+   "Pharmacologic cardioversion with intravenous amiodarone",
+   "Rate control with metoprolol and daily aspirin",
+   "Rate control with metoprolol and oral anticoagulation"
+  ],
+  "answer": 5,
+  "explanationText": "- 정답근거: 3단계 추론. ① 그림 판독 — P파 없이 기저선이 잔물결(fibrillatory wave)치고 QRS 간격이 irregularly irregular = 심방세동, 심박수 약 124(RVR). ② 전환 가능한가 — 혈역학적으로 안정적이지만 지속 5일(≥48시간) 이라 좌심방 부속지 혈전이 있을 수 있어, 전기든 약물이든 즉시 심율동전환은 색전 위험 때문에 안 된다(3주 항응고 후 또는 TEE 음성 확인 후). ③ 항응고가 필요한가 — CHA2DS2-VASc = HTN 1 + DM 1 = 2점(남성) → 경구 항응고 적응. 따라서 지금은 심박수 조절 + 경구 항응고 시작이다.\n- 오답감별:\n  - (A) 동기화 심율동전환은 불안정(저혈압·허혈·폐부종)할 때의 선택 — 안정 환자에서 ≥48시간 지속 심방세동을 항응고·TEE 없이 전환하면 뇌졸중을 유발할 수 있다. '리듬을 빨리 되돌리고 싶은' 대표 함정.\n  - (B) 아데노신은 AV결절 회귀성 빈맥(SVT) 종료용 — 심방세동은 회귀회로가 결절에 없어 종료되지 않고, 일시적 서맥 후 그대로 재개된다.\n  - (C) 약물 심율동전환도 전환은 전환이다 — 아미오다론이 리듬을 되돌리면 전기 전환과 똑같이 부속지 혈전을 털어낼 수 있어, 항응고 없는 ≥48시간 심방세동에서는 같은 이유로 부적절하다. '약이니까 안전하다'는 오개념.\n  - (D) 심박수 조절은 맞지만 아스피린은 심방세동 뇌졸중 예방 효과가 불충분해 현행 가이드라인에서 제외됐다 — CHA2DS2-VASc 2점 남성에게는 DOAC 등 경구 항응고가 필요하다. 절반만 맞는 매력적 오답.\n- 임상핵심: 심방세동은 세 질문 순서로 — ① 불안정한가(→즉시 전환) ② 48시간 넘었나(→전환 전 항응고/TEE) ③ CHA2DS2-VASc 몇 점인가(→장기 항응고); 안정 + ≥48h + 점수 충족 = 심박수 조절 + 항응고.\n- 출처: ACC/AHA/ACCP/HRS 심방세동 가이드라인; UpToDate — new-onset atrial fibrillation. 표준 알고리즘, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "3단계 추론. ① 그림 판독 — P파 없이 기저선이 잔물결(fibrillatory wave)치고 QRS 간격이 irregularly irregular = 심방세동, 심박수 약 124(RVR). ② 전환 가능한가 — 혈역학적으로 안정적이지만 지속 5일(≥48시간) 이라 좌심방 부속지 혈전이 있을 수 있어, 전기든 약물이든 즉시 심율동전환은 색전 위험 때문에 안 된다(3주 항응고 후 또는 TEE 음성 확인 후). ③ 항응고가 필요한가 — CHA2DS2-VASc = HTN 1 + DM 1 = 2점(남성) → 경구 항응고 적응. 따라서 지금은 심박수 조절 + 경구 항응고 시작이다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 동기화 심율동전환은 불안정(저혈압·허혈·폐부종)할 때의 선택 — 안정 환자에서 ≥48시간 지속 심방세동을 항응고·TEE 없이 전환하면 뇌졸중을 유발할 수 있다. '리듬을 빨리 되돌리고 싶은' 대표 함정.\n(B) 아데노신은 AV결절 회귀성 빈맥(SVT) 종료용 — 심방세동은 회귀회로가 결절에 없어 종료되지 않고, 일시적 서맥 후 그대로 재개된다.\n(C) 약물 심율동전환도 전환은 전환이다 — 아미오다론이 리듬을 되돌리면 전기 전환과 똑같이 부속지 혈전을 털어낼 수 있어, 항응고 없는 ≥48시간 심방세동에서는 같은 이유로 부적절하다. '약이니까 안전하다'는 오개념.\n(D) 심박수 조절은 맞지만 아스피린은 심방세동 뇌졸중 예방 효과가 불충분해 현행 가이드라인에서 제외됐다 — CHA2DS2-VASc 2점 남성에게는 DOAC 등 경구 항응고가 필요하다. 절반만 맞는 매력적 오답."
+   },
+   {
+    "k": "임상핵심",
+    "v": "심방세동은 세 질문 순서로 — ① 불안정한가(→즉시 전환) ② 48시간 넘었나(→전환 전 항응고/TEE) ③ CHA2DS2-VASc 몇 점인가(→장기 항응고); 안정 + ≥48h + 점수 충족 = 심박수 조절 + 항응고."
+   },
+   {
+    "k": "출처",
+    "v": "ACC/AHA/ACCP/HRS 심방세동 가이드라인; UpToDate — new-onset atrial fibrillation. 표준 알고리즘, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (cardiology · atrial fibrillation management)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "128/82 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "124 /min, 불규칙"
+   },
+   {
+    "name": "호흡",
+    "value": "16 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.9 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "TSH",
+    "value": "2.1 µU/mL",
+    "ref": "0.5–4.7"
+   },
+   {
+    "name": "Troponin I",
+    "value": "< 0.01 ng/mL",
+    "ref": "< 0.04"
+   },
+   {
+    "name": "혈청 크레아티닌",
+    "value": "1.0 mg/dL",
+    "ref": "0.7–1.3"
+   },
+   {
+    "name": "칼륨",
+    "value": "4.2 mEq/L",
+    "ref": "3.5–5.0"
+   },
+   {
+    "name": "심초음파",
+    "value": "좌심방 경도 확장, LVEF 55%, 판막 정상",
+    "ref": "—"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "심방세동 초기 관리 결정표\n─────────────────────────────────────────────\n안정성 × 지속시간 → 전략\n불안정(저혈압·허혈·폐부종)        → 즉시 동기화 심율동전환 (지속시간 불문)\n안정 · < 48시간                    → 심율동전환 고려 가능 (전·후 항응고와 함께)\n안정 · ≥ 48시간 또는 불명           → 심박수 조절 + 항응고 ≥3주 후 전환, 또는 TEE로 혈전 배제 후 전환\n전환 이후 공통                     → 최소 4주 항응고 지속, CHA2DS2-VASc에 따라 장기 지속\n─────────────────────────────────────────────\n각주1: CHA2DS2-VASc — CHF·HTN·Age≥75(2)·DM·Stroke/TIA(2)·Vascular·Age 65–74·Sex(여성).\n       남성 ≥2, 여성 ≥3이면 경구 항응고(DOAC 우선, 판막성이면 와파린).\n각주2: 심박수 조절 1차 = 베타차단제 또는 non-DHP 칼슘차단제 (EF 저하 시 베타차단제).\n",
+   "최신지견": "최신 가이드라인은 비판막성 심방세동에서 DOAC을 와파린보다 우선 권고하며, 아스피린 단독은 뇌졸중 예방 효과가 부족하고 출혈 위험만 더해 권고에서 제외됐다.",
+   "참고문헌": [
+    "ACC/AHA/ACCP/HRS Guideline for the Management of Atrial Fibrillation",
+    "UpToDate — Atrial fibrillation: Overview and management of new-onset atrial fibrillation"
+   ]
+  },
+  "figureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 900 198\" width=\"900\" height=\"198\" role=\"img\" aria-label=\"ECG afib · 124 bpm · 25 mm/s, 10 mm/mV\"><style>.bg{fill:#fff}.gmin{stroke:#f4c9c9;stroke-width:0.5}.gmaj{stroke:#e59a9a;stroke-width:1}.trace{fill:none;stroke:#111;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}.cap{font:11px -apple-system,Segoe UI,sans-serif;fill:#555}</style><rect class=\"bg\" x=\"0\" y=\"0\" width=\"900\" height=\"180\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"180\" class=\"gmaj\"/><line x1=\"6\" y1=\"0\" x2=\"6\" y2=\"180\" class=\"gmin\"/><line x1=\"12\" y1=\"0\" x2=\"12\" y2=\"180\" class=\"gmin\"/><line x1=\"18\" y1=\"0\" x2=\"18\" y2=\"180\" class=\"gmin\"/><line x1=\"24\" y1=\"0\" x2=\"24\" y2=\"180\" class=\"gmin\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"180\" class=\"gmaj\"/><line x1=\"36\" y1=\"0\" x2=\"36\" y2=\"180\" class=\"gmin\"/><line x1=\"42\" y1=\"0\" x2=\"42\" y2=\"180\" class=\"gmin\"/><line x1=\"48\" y1=\"0\" x2=\"48\" y2=\"180\" class=\"gmin\"/><line x1=\"54\" y1=\"0\" x2=\"54\" y2=\"180\" class=\"gmin\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"180\" class=\"gmaj\"/><line x1=\"66\" y1=\"0\" x2=\"66\" y2=\"180\" class=\"gmin\"/><line x1=\"72\" y1=\"0\" x2=\"72\" y2=\"180\" class=\"gmin\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"180\" class=\"gmin\"/><line x1=\"84\" y1=\"0\" x2=\"84\" y2=\"180\" class=\"gmin\"/><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"180\" class=\"gmaj\"/><line x1=\"96\" y1=\"0\" x2=\"96\" y2=\"180\" class=\"gmin\"/><line x1=\"102\" y1=\"0\" x2=\"102\" y2=\"180\" class=\"gmin\"/><line x1=\"108\" y1=\"0\" x2=\"108\" y2=\"180\" class=\"gmin\"/><line x1=\"114\" y1=\"0\" x2=\"114\" y2=\"180\" class=\"gmin\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"180\" class=\"gmaj\"/><line x1=\"126\" y1=\"0\" x2=\"126\" y2=\"180\" class=\"gmin\"/><line x1=\"132\" y1=\"0\" x2=\"132\" y2=\"180\" class=\"gmin\"/><line x1=\"138\" y1=\"0\" x2=\"138\" y2=\"180\" class=\"gmin\"/><line x1=\"144\" y1=\"0\" x2=\"144\" y2=\"180\" class=\"gmin\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"180\" class=\"gmaj\"/><line x1=\"156\" y1=\"0\" x2=\"156\" y2=\"180\" class=\"gmin\"/><line x1=\"162\" y1=\"0\" x2=\"162\" y2=\"180\" class=\"gmin\"/><line x1=\"168\" y1=\"0\" x2=\"168\" y2=\"180\" class=\"gmin\"/><line x1=\"174\" y1=\"0\" x2=\"174\" y2=\"180\" class=\"gmin\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"180\" class=\"gmaj\"/><line x1=\"186\" y1=\"0\" x2=\"186\" y2=\"180\" class=\"gmin\"/><line x1=\"192\" y1=\"0\" x2=\"192\" y2=\"180\" class=\"gmin\"/><line x1=\"198\" y1=\"0\" x2=\"198\" y2=\"180\" class=\"gmin\"/><line x1=\"204\" y1=\"0\" x2=\"204\" y2=\"180\" class=\"gmin\"/><line x1=\"210\" y1=\"0\" x2=\"210\" y2=\"180\" class=\"gmaj\"/><line x1=\"216\" y1=\"0\" x2=\"216\" y2=\"180\" class=\"gmin\"/><line x1=\"222\" y1=\"0\" x2=\"222\" y2=\"180\" class=\"gmin\"/><line x1=\"228\" y1=\"0\" x2=\"228\" y2=\"180\" class=\"gmin\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"180\" class=\"gmin\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"180\" class=\"gmaj\"/><line x1=\"246\" y1=\"0\" x2=\"246\" y2=\"180\" class=\"gmin\"/><line x1=\"252\" y1=\"0\" x2=\"252\" y2=\"180\" class=\"gmin\"/><line x1=\"258\" y1=\"0\" x2=\"258\" y2=\"180\" class=\"gmin\"/><line x1=\"264\" y1=\"0\" x2=\"264\" y2=\"180\" class=\"gmin\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"180\" class=\"gmaj\"/><line x1=\"276\" y1=\"0\" x2=\"276\" y2=\"180\" class=\"gmin\"/><line x1=\"282\" y1=\"0\" x2=\"282\" y2=\"180\" class=\"gmin\"/><line x1=\"288\" y1=\"0\" x2=\"288\" y2=\"180\" class=\"gmin\"/><line x1=\"294\" y1=\"0\" x2=\"294\" y2=\"180\" class=\"gmin\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"180\" class=\"gmaj\"/><line x1=\"306\" y1=\"0\" x2=\"306\" y2=\"180\" class=\"gmin\"/><line x1=\"312\" y1=\"0\" x2=\"312\" y2=\"180\" class=\"gmin\"/><line x1=\"318\" y1=\"0\" x2=\"318\" y2=\"180\" class=\"gmin\"/><line x1=\"324\" y1=\"0\" x2=\"324\" y2=\"180\" class=\"gmin\"/><line x1=\"330\" y1=\"0\" x2=\"330\" y2=\"180\" class=\"gmaj\"/><line x1=\"336\" y1=\"0\" x2=\"336\" y2=\"180\" class=\"gmin\"/><line x1=\"342\" y1=\"0\" x2=\"342\" y2=\"180\" class=\"gmin\"/><line x1=\"348\" y1=\"0\" x2=\"348\" y2=\"180\" class=\"gmin\"/><line x1=\"354\" y1=\"0\" x2=\"354\" y2=\"180\" class=\"gmin\"/><line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"180\" class=\"gmaj\"/><line x1=\"366\" y1=\"0\" x2=\"366\" y2=\"180\" class=\"gmin\"/><line x1=\"372\" y1=\"0\" x2=\"372\" y2=\"180\" class=\"gmin\"/><line x1=\"378\" y1=\"0\" x2=\"378\" y2=\"180\" class=\"gmin\"/><line x1=\"384\" y1=\"0\" x2=\"384\" y2=\"180\" class=\"gmin\"/><line x1=\"390\" y1=\"0\" x2=\"390\" y2=\"180\" class=\"gmaj\"/><line x1=\"396\" y1=\"0\" x2=\"396\" y2=\"180\" class=\"gmin\"/><line x1=\"402\" y1=\"0\" x2=\"402\" y2=\"180\" class=\"gmin\"/><line x1=\"408\" y1=\"0\" x2=\"408\" y2=\"180\" class=\"gmin\"/><line x1=\"414\" y1=\"0\" x2=\"414\" y2=\"180\" class=\"gmin\"/><line x1=\"420\" y1=\"0\" x2=\"420\" y2=\"180\" class=\"gmaj\"/><line x1=\"426\" y1=\"0\" x2=\"426\" y2=\"180\" class=\"gmin\"/><line x1=\"432\" y1=\"0\" x2=\"432\" y2=\"180\" class=\"gmin\"/><line x1=\"438\" y1=\"0\" x2=\"438\" y2=\"180\" class=\"gmin\"/><line x1=\"444\" y1=\"0\" x2=\"444\" y2=\"180\" class=\"gmin\"/><line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"180\" class=\"gmaj\"/><line x1=\"456\" y1=\"0\" x2=\"456\" y2=\"180\" class=\"gmin\"/><line x1=\"462\" y1=\"0\" x2=\"462\" y2=\"180\" class=\"gmin\"/><line x1=\"468\" y1=\"0\" x2=\"468\" y2=\"180\" class=\"gmin\"/><line x1=\"474\" y1=\"0\" x2=\"474\" y2=\"180\" class=\"gmin\"/><line x1=\"480\" y1=\"0\" x2=\"480\" y2=\"180\" class=\"gmaj\"/><line x1=\"486\" y1=\"0\" x2=\"486\" y2=\"180\" class=\"gmin\"/><line x1=\"492\" y1=\"0\" x2=\"492\" y2=\"180\" class=\"gmin\"/><line x1=\"498\" y1=\"0\" x2=\"498\" y2=\"180\" class=\"gmin\"/><line x1=\"504\" y1=\"0\" x2=\"504\" y2=\"180\" class=\"gmin\"/><line x1=\"510\" y1=\"0\" x2=\"510\" y2=\"180\" class=\"gmaj\"/><line x1=\"516\" y1=\"0\" x2=\"516\" y2=\"180\" class=\"gmin\"/><line x1=\"522\" y1=\"0\" x2=\"522\" y2=\"180\" class=\"gmin\"/><line x1=\"528\" y1=\"0\" x2=\"528\" y2=\"180\" class=\"gmin\"/><line x1=\"534\" y1=\"0\" x2=\"534\" y2=\"180\" class=\"gmin\"/><line x1=\"540\" y1=\"0\" x2=\"540\" y2=\"180\" class=\"gmaj\"/><line x1=\"546\" y1=\"0\" x2=\"546\" y2=\"180\" class=\"gmin\"/><line x1=\"552\" y1=\"0\" x2=\"552\" y2=\"180\" class=\"gmin\"/><line x1=\"558\" y1=\"0\" x2=\"558\" y2=\"180\" class=\"gmin\"/><line x1=\"564\" y1=\"0\" x2=\"564\" y2=\"180\" class=\"gmin\"/><line x1=\"570\" y1=\"0\" x2=\"570\" y2=\"180\" class=\"gmaj\"/><line x1=\"576\" y1=\"0\" x2=\"576\" y2=\"180\" class=\"gmin\"/><line x1=\"582\" y1=\"0\" x2=\"582\" y2=\"180\" class=\"gmin\"/><line x1=\"588\" y1=\"0\" x2=\"588\" y2=\"180\" class=\"gmin\"/><line x1=\"594\" y1=\"0\" x2=\"594\" y2=\"180\" class=\"gmin\"/><line x1=\"600\" y1=\"0\" x2=\"600\" y2=\"180\" class=\"gmaj\"/><line x1=\"606\" y1=\"0\" x2=\"606\" y2=\"180\" class=\"gmin\"/><line x1=\"612\" y1=\"0\" x2=\"612\" y2=\"180\" class=\"gmin\"/><line x1=\"618\" y1=\"0\" x2=\"618\" y2=\"180\" class=\"gmin\"/><line x1=\"624\" y1=\"0\" x2=\"624\" y2=\"180\" class=\"gmin\"/><line x1=\"630\" y1=\"0\" x2=\"630\" y2=\"180\" class=\"gmaj\"/><line x1=\"636\" y1=\"0\" x2=\"636\" y2=\"180\" class=\"gmin\"/><line x1=\"642\" y1=\"0\" x2=\"642\" y2=\"180\" class=\"gmin\"/><line x1=\"648\" y1=\"0\" x2=\"648\" y2=\"180\" class=\"gmin\"/><line x1=\"654\" y1=\"0\" x2=\"654\" y2=\"180\" class=\"gmin\"/><line x1=\"660\" y1=\"0\" x2=\"660\" y2=\"180\" class=\"gmaj\"/><line x1=\"666\" y1=\"0\" x2=\"666\" y2=\"180\" class=\"gmin\"/><line x1=\"672\" y1=\"0\" x2=\"672\" y2=\"180\" class=\"gmin\"/><line x1=\"678\" y1=\"0\" x2=\"678\" y2=\"180\" class=\"gmin\"/><line x1=\"684\" y1=\"0\" x2=\"684\" y2=\"180\" class=\"gmin\"/><line x1=\"690\" y1=\"0\" x2=\"690\" y2=\"180\" class=\"gmaj\"/><line x1=\"696\" y1=\"0\" x2=\"696\" y2=\"180\" class=\"gmin\"/><line x1=\"702\" y1=\"0\" x2=\"702\" y2=\"180\" class=\"gmin\"/><line x1=\"708\" y1=\"0\" x2=\"708\" y2=\"180\" class=\"gmin\"/><line x1=\"714\" y1=\"0\" x2=\"714\" y2=\"180\" class=\"gmin\"/><line x1=\"720\" y1=\"0\" x2=\"720\" y2=\"180\" class=\"gmaj\"/><line x1=\"726\" y1=\"0\" x2=\"726\" y2=\"180\" class=\"gmin\"/><line x1=\"732\" y1=\"0\" x2=\"732\" y2=\"180\" class=\"gmin\"/><line x1=\"738\" y1=\"0\" x2=\"738\" y2=\"180\" class=\"gmin\"/><line x1=\"744\" y1=\"0\" x2=\"744\" y2=\"180\" class=\"gmin\"/><line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"180\" class=\"gmaj\"/><line x1=\"756\" y1=\"0\" x2=\"756\" y2=\"180\" class=\"gmin\"/><line x1=\"762\" y1=\"0\" x2=\"762\" y2=\"180\" class=\"gmin\"/><line x1=\"768\" y1=\"0\" x2=\"768\" y2=\"180\" class=\"gmin\"/><line x1=\"774\" y1=\"0\" x2=\"774\" y2=\"180\" class=\"gmin\"/><line x1=\"780\" y1=\"0\" x2=\"780\" y2=\"180\" class=\"gmaj\"/><line x1=\"786\" y1=\"0\" x2=\"786\" y2=\"180\" class=\"gmin\"/><line x1=\"792\" y1=\"0\" x2=\"792\" y2=\"180\" class=\"gmin\"/><line x1=\"798\" y1=\"0\" x2=\"798\" y2=\"180\" class=\"gmin\"/><line x1=\"804\" y1=\"0\" x2=\"804\" y2=\"180\" class=\"gmin\"/><line x1=\"810\" y1=\"0\" x2=\"810\" y2=\"180\" class=\"gmaj\"/><line x1=\"816\" y1=\"0\" x2=\"816\" y2=\"180\" class=\"gmin\"/><line x1=\"822\" y1=\"0\" x2=\"822\" y2=\"180\" class=\"gmin\"/><line x1=\"828\" y1=\"0\" x2=\"828\" y2=\"180\" class=\"gmin\"/><line x1=\"834\" y1=\"0\" x2=\"834\" y2=\"180\" class=\"gmin\"/><line x1=\"840\" y1=\"0\" x2=\"840\" y2=\"180\" class=\"gmaj\"/><line x1=\"846\" y1=\"0\" x2=\"846\" y2=\"180\" class=\"gmin\"/><line x1=\"852\" y1=\"0\" x2=\"852\" y2=\"180\" class=\"gmin\"/><line x1=\"858\" y1=\"0\" x2=\"858\" y2=\"180\" class=\"gmin\"/><line x1=\"864\" y1=\"0\" x2=\"864\" y2=\"180\" class=\"gmin\"/><line x1=\"870\" y1=\"0\" x2=\"870\" y2=\"180\" class=\"gmaj\"/><line x1=\"876\" y1=\"0\" x2=\"876\" y2=\"180\" class=\"gmin\"/><line x1=\"882\" y1=\"0\" x2=\"882\" y2=\"180\" class=\"gmin\"/><line x1=\"888\" y1=\"0\" x2=\"888\" y2=\"180\" class=\"gmin\"/><line x1=\"894\" y1=\"0\" x2=\"894\" y2=\"180\" class=\"gmin\"/><line x1=\"900\" y1=\"0\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><line x1=\"0\" y1=\"0\" x2=\"900\" y2=\"0\" class=\"gmaj\"/><line x1=\"0\" y1=\"6\" x2=\"900\" y2=\"6\" class=\"gmin\"/><line x1=\"0\" y1=\"12\" x2=\"900\" y2=\"12\" class=\"gmin\"/><line x1=\"0\" y1=\"18\" x2=\"900\" y2=\"18\" class=\"gmin\"/><line x1=\"0\" y1=\"24\" x2=\"900\" y2=\"24\" class=\"gmin\"/><line x1=\"0\" y1=\"30\" x2=\"900\" y2=\"30\" class=\"gmaj\"/><line x1=\"0\" y1=\"36\" x2=\"900\" y2=\"36\" class=\"gmin\"/><line x1=\"0\" y1=\"42\" x2=\"900\" y2=\"42\" class=\"gmin\"/><line x1=\"0\" y1=\"48\" x2=\"900\" y2=\"48\" class=\"gmin\"/><line x1=\"0\" y1=\"54\" x2=\"900\" y2=\"54\" class=\"gmin\"/><line x1=\"0\" y1=\"60\" x2=\"900\" y2=\"60\" class=\"gmaj\"/><line x1=\"0\" y1=\"66\" x2=\"900\" y2=\"66\" class=\"gmin\"/><line x1=\"0\" y1=\"72\" x2=\"900\" y2=\"72\" class=\"gmin\"/><line x1=\"0\" y1=\"78\" x2=\"900\" y2=\"78\" class=\"gmin\"/><line x1=\"0\" y1=\"84\" x2=\"900\" y2=\"84\" class=\"gmin\"/><line x1=\"0\" y1=\"90\" x2=\"900\" y2=\"90\" class=\"gmaj\"/><line x1=\"0\" y1=\"96\" x2=\"900\" y2=\"96\" class=\"gmin\"/><line x1=\"0\" y1=\"102\" x2=\"900\" y2=\"102\" class=\"gmin\"/><line x1=\"0\" y1=\"108\" x2=\"900\" y2=\"108\" class=\"gmin\"/><line x1=\"0\" y1=\"114\" x2=\"900\" y2=\"114\" class=\"gmin\"/><line x1=\"0\" y1=\"120\" x2=\"900\" y2=\"120\" class=\"gmaj\"/><line x1=\"0\" y1=\"126\" x2=\"900\" y2=\"126\" class=\"gmin\"/><line x1=\"0\" y1=\"132\" x2=\"900\" y2=\"132\" class=\"gmin\"/><line x1=\"0\" y1=\"138\" x2=\"900\" y2=\"138\" class=\"gmin\"/><line x1=\"0\" y1=\"144\" x2=\"900\" y2=\"144\" class=\"gmin\"/><line x1=\"0\" y1=\"150\" x2=\"900\" y2=\"150\" class=\"gmaj\"/><line x1=\"0\" y1=\"156\" x2=\"900\" y2=\"156\" class=\"gmin\"/><line x1=\"0\" y1=\"162\" x2=\"900\" y2=\"162\" class=\"gmin\"/><line x1=\"0\" y1=\"168\" x2=\"900\" y2=\"168\" class=\"gmin\"/><line x1=\"0\" y1=\"174\" x2=\"900\" y2=\"174\" class=\"gmin\"/><line x1=\"0\" y1=\"180\" x2=\"900\" y2=\"180\" class=\"gmaj\"/><polyline class=\"trace\" points=\"0.0,88.8 0.6,88.5 1.2,88.2 1.8,88.0 2.4,88.0 3.0,88.1 3.6,88.2 4.2,88.4 4.8,88.7 5.4,89.0 6.0,89.2 6.6,89.5 7.2,89.7 7.8,89.9 8.4,90.1 9.0,90.2 9.6,90.2 10.2,90.2 10.8,90.2 11.4,90.2 12.0,90.2 12.6,90.3 13.2,90.3 13.8,90.4 14.4,90.5 15.0,90.7 15.6,90.9 16.2,91.1 16.8,91.3 17.4,91.4 18.0,91.6 18.6,91.6 19.2,91.6 19.8,91.5 20.4,91.3 21.0,90.9 21.6,90.6 22.2,90.1 22.8,89.6 23.4,89.1 24.0,88.6 24.6,88.1 25.2,87.7 25.8,87.4 26.4,87.2 27.0,87.2 27.6,87.3 28.2,87.6 28.8,87.9 29.4,88.4 30.0,89.0 30.6,89.7 31.2,90.3 31.8,91.0 32.4,91.6 33.0,92.1 33.6,92.5 34.2,92.7 34.8,92.9 35.4,92.8 36.0,92.7 36.6,92.5 37.2,92.4 37.8,92.6 38.4,92.9 39.0,92.4 39.6,89.8 40.2,83.9 40.8,74.6 41.4,62.2 42.0,48.0 42.6,34.9 43.2,26.8 43.8,26.4 44.4,34.2 45.0,47.8 45.6,63.3 46.2,77.5 46.8,88.4 47.4,95.3 48.0,98.8 48.6,99.4 49.2,98.2 49.8,96.0 50.4,93.8 51.0,92.1 51.6,91.0 52.2,90.4 52.8,90.1 53.4,90.1 54.0,90.2 54.6,90.3 55.2,90.5 55.8,90.7 56.4,91.0 57.0,91.2 57.6,91.5 58.2,91.7 58.8,91.8 59.4,91.9 60.0,91.8 60.6,91.7 61.2,91.4 61.8,91.1 62.4,90.6 63.0,90.1 63.6,89.6 64.2,89.0 64.8,88.5 65.4,88.0 66.0,87.5 66.6,87.2 67.2,87.0 67.8,87.0 68.4,87.0 69.0,87.2 69.6,87.6 70.2,88.0 70.8,88.5 71.4,89.0 72.0,89.5 72.6,89.9 73.2,90.3 73.8,90.5 74.4,90.5 75.0,90.4 75.6,90.1 76.2,89.6 76.8,88.9 77.4,88.0 78.0,86.9 78.6,85.8 79.2,84.5 79.8,83.2 80.4,81.8 81.0,80.5 81.6,79.2 82.2,78.0 82.8,76.9 83.4,76.0 84.0,75.1 84.6,74.4 85.2,73.8 85.8,73.3 86.4,73.0 87.0,72.8 87.6,72.7 88.2,72.7 88.8,72.8 89.4,73.0 90.0,73.2 90.6,73.6 91.2,74.1 91.8,74.7 92.4,75.4 93.0,76.1 93.6,77.0 94.2,78.0 94.8,79.1 95.4,80.2 96.0,81.3 96.6,82.5 97.2,83.7 97.8,84.8 98.4,85.9 99.0,86.8 99.6,87.6 100.2,88.3 100.8,88.8 101.4,89.1 102.0,89.3 102.6,89.3 103.2,89.2 103.8,88.9 104.4,88.6 105.0,88.2 105.6,87.8 106.2,87.4 106.8,87.1 107.4,86.9 108.0,86.8 108.6,86.8 109.2,87.0 109.8,87.3 110.4,87.8 111.0,88.3 111.6,89.0 112.2,89.6 112.8,90.3 113.4,90.9 114.0,91.5 114.6,91.9 115.2,92.3 115.8,92.5 116.4,92.6 117.0,92.6 117.6,92.4 118.2,92.1 118.8,91.8 119.4,91.4 120.0,90.9 120.6,90.4 121.2,90.0 121.8,89.6 122.4,89.3 123.0,89.0 123.6,88.9 124.2,88.8 124.8,88.8 125.4,88.8 126.0,88.9 126.6,89.0 127.2,89.1 127.8,89.3 128.4,89.4 129.0,89.4 129.6,89.5 130.2,89.5 130.8,89.4 131.4,89.4 132.0,89.4 132.6,89.3 133.2,89.3 133.8,89.4 134.4,89.5 135.0,89.6 135.6,89.9 136.2,90.2 136.8,90.8 137.4,91.8 138.0,93.0 138.6,93.6 139.2,92.1 139.8,87.4 140.4,79.0 141.0,67.3 141.6,53.4 142.2,40.0 142.8,30.8 143.4,29.1 144.0,35.4 144.6,47.8 145.2,62.5 145.8,76.1 146.4,86.5 147.0,93.2 147.6,96.4 148.2,96.9 148.8,95.5 149.4,93.4 150.0,91.3 150.6,89.8 151.2,89.0 151.8,88.9 152.4,89.2 153.0,89.7 153.6,90.3 154.2,90.9 154.8,91.4 155.4,91.8 156.0,92.2 156.6,92.4 157.2,92.5 157.8,92.4 158.4,92.3 159.0,92.0 159.6,91.7 160.2,91.3 160.8,90.9 161.4,90.4 162.0,90.1 162.6,89.7 163.2,89.4 163.8,89.2 164.4,89.1 165.0,89.0 165.6,89.0 166.2,89.0 166.8,89.0 167.4,89.1 168.0,89.1 168.6,89.1 169.2,89.1 169.8,89.0 170.4,88.8 171.0,88.7 171.6,88.4 172.2,88.1 172.8,87.8 173.4,87.5 174.0,87.2 174.6,86.9 175.2,86.6 175.8,86.3 176.4,86.1 177.0,85.8 177.6,85.6 178.2,85.3 178.8,84.9 179.4,84.5 180.0,84.0 180.6,83.4 181.2,82.6 181.8,81.8 182.4,80.8 183.0,79.7 183.6,78.6 184.2,77.3 184.8,76.1 185.4,74.9 186.0,73.7 186.6,72.7 187.2,71.8 187.8,71.1 188.4,70.7 189.0,70.5 189.6,70.6 190.2,70.9 190.8,71.6 191.4,72.4 192.0,73.5 192.6,74.8 193.2,76.2 193.8,77.7 194.4,79.2 195.0,80.7 195.6,82.1 196.2,83.4 196.8,84.6 197.4,85.6 198.0,86.4 198.6,87.1 199.2,87.6 199.8,88.0 200.4,88.2 201.0,88.4 201.6,88.5 202.2,88.5 202.8,88.5 203.4,88.5 204.0,88.6 204.6,88.6 205.2,88.8 205.8,89.1 206.4,89.7 207.0,90.7 207.6,91.3 208.2,90.2 208.8,86.1 209.4,78.4 210.0,67.3 210.6,53.7 211.2,40.0 211.8,29.7 212.4,26.3 213.0,31.3 213.6,43.0 214.2,58.1 214.8,72.8 215.4,84.7 216.0,93.0 216.6,97.6 217.2,99.3 217.8,98.9 218.4,97.3 219.0,95.5 219.6,94.0 220.2,93.2 220.8,92.8 221.4,92.7 222.0,92.7 222.6,92.7 223.2,92.6 223.8,92.3 224.4,92.0 225.0,91.5 225.6,90.9 226.2,90.3 226.8,89.7 227.4,89.0 228.0,88.4 228.6,87.9 229.2,87.5 229.8,87.2 230.4,87.0 231.0,87.1 231.6,87.2 232.2,87.5 232.8,87.9 233.4,88.4 234.0,89.0 234.6,89.5 235.2,90.1 235.8,90.6 236.4,91.1 237.0,91.4 237.6,91.6 238.2,91.7 238.8,91.7 239.4,91.5 240.0,91.3 240.6,90.9 241.2,90.4 241.8,89.9 242.4,89.3 243.0,88.7 243.6,88.1 244.2,87.5 244.8,86.9 245.4,86.2 246.0,85.6 246.6,84.9 247.2,84.2 247.8,83.5 248.4,82.7 249.0,81.9 249.6,81.1 250.2,80.6 250.8,80.4 251.4,80.0 252.0,78.5 252.6,74.3 253.2,66.7 253.8,55.7 254.4,42.0 255.0,27.4 255.6,15.3 256.2,9.5 256.8,12.1 257.4,22.4 258.0,37.3 258.6,53.1 259.2,66.9 259.8,77.1 260.4,83.6 261.0,86.9 261.6,87.8 262.2,87.1 262.8,85.9 263.4,84.7 264.0,84.0 264.6,83.8 265.2,83.8 265.8,84.0 266.4,84.2 267.0,84.3 267.6,84.4 268.2,84.4 268.8,84.4 269.4,84.5 270.0,84.6 270.6,84.8 271.2,85.1 271.8,85.4 272.4,85.9 273.0,86.4 273.6,87.1 274.2,87.7 274.8,88.4 275.4,89.1 276.0,89.7 276.6,90.3 277.2,90.8 277.8,91.2 278.4,91.5 279.0,91.6 279.6,91.7 280.2,91.7 280.8,91.5 281.4,91.2 282.0,91.0 282.6,90.6 283.2,90.3 283.8,89.9 284.4,89.6 285.0,89.3 285.6,88.9 286.2,88.6 286.8,88.3 287.4,88.0 288.0,87.6 288.6,87.1 289.2,86.6 289.8,86.0 290.4,85.3 291.0,84.5 291.6,83.6 292.2,82.6 292.8,81.5 293.4,80.4 294.0,79.3 294.6,78.2 295.2,77.2 295.8,76.2 296.4,75.4 297.0,74.7 297.6,74.2 298.2,73.9 298.8,73.7 299.4,73.7 300.0,73.9 300.6,74.2 301.2,74.7 301.8,75.2 302.4,75.8 303.0,76.4 303.6,77.0 304.2,77.5 304.8,78.0 305.4,78.5 306.0,78.9 306.6,79.2 307.2,79.5 307.8,79.7 308.4,80.0 309.0,80.2 309.6,80.5 310.2,80.9 310.8,81.3 311.4,81.8 312.0,82.4 312.6,83.1 313.2,83.8 313.8,84.6 314.4,85.5 315.0,86.4 315.6,87.3 316.2,88.1 316.8,88.9 317.4,89.5 318.0,90.1 318.6,90.6 319.2,90.9 319.8,91.2 320.4,91.3 321.0,91.3 321.6,91.2 322.2,91.1 322.8,91.0 323.4,90.8 324.0,90.7 324.6,90.5 325.2,90.4 325.8,90.3 326.4,90.3 327.0,90.3 327.6,90.3 328.2,90.3 328.8,90.3 329.4,90.2 330.0,90.2 330.6,90.1 331.2,90.0 331.8,89.8 332.4,89.5 333.0,89.2 333.6,89.0 334.2,88.7 334.8,88.4 335.4,88.2 336.0,88.0 336.6,88.0 337.2,88.0 337.8,88.2 338.4,88.4 339.0,88.8 339.6,89.3 340.2,89.8 340.8,90.4 341.4,91.0 342.0,91.5 342.6,92.0 343.2,92.4 343.8,92.8 344.4,92.9 345.0,92.9 345.6,92.9 346.2,92.8 346.8,92.9 347.4,93.2 348.0,93.2 348.6,91.4 349.2,86.7 349.8,78.6 350.4,67.0 351.0,53.1 351.6,39.0 352.2,28.3 352.8,24.6 353.4,29.3 354.0,41.1 354.6,56.4 355.2,71.6 355.8,84.0 356.4,92.8 357.0,97.8 357.6,99.7 358.2,99.4 358.8,97.8 359.4,95.7 360.0,94.0 360.6,92.7 361.2,92.0 361.8,91.5 362.4,91.3 363.0,91.1 363.6,90.9 364.2,90.8 364.8,90.7 365.4,90.6 366.0,90.5 366.6,90.5 367.2,90.5 367.8,90.5 368.4,90.5 369.0,90.6 369.6,90.6 370.2,90.5 370.8,90.4 371.4,90.3 372.0,90.1 372.6,89.8 373.2,89.5 373.8,89.2 374.4,88.8 375.0,88.5 375.6,88.1 376.2,87.9 376.8,87.7 377.4,87.6 378.0,87.6 378.6,87.7 379.2,87.9 379.8,88.2 380.4,88.6 381.0,89.0 381.6,89.4 382.2,89.8 382.8,90.1 383.4,90.3 384.0,90.4 384.6,90.3 385.2,90.0 385.8,89.5 386.4,88.8 387.0,87.9 387.6,86.7 388.2,85.5 388.8,84.1 389.4,82.6 390.0,81.1 390.6,79.6 391.2,78.1 391.8,76.8 392.4,75.5 393.0,74.5 393.6,73.6 394.2,72.9 394.8,72.4 395.4,72.2 396.0,72.1 396.6,72.2 397.2,72.4 397.8,72.8 398.4,73.2 399.0,73.8 399.6,74.4 400.2,75.1 400.8,75.8 401.4,76.5 402.0,77.2 402.6,78.0 403.2,78.8 403.8,79.5 404.4,80.4 405.0,81.2 405.6,82.0 406.2,82.9 406.8,83.7 407.4,84.6 408.0,85.4 408.6,86.1 409.2,86.8 409.8,87.4 410.4,87.9 411.0,88.3 411.6,88.6 412.2,88.8 412.8,88.8 413.4,88.8 414.0,88.6 414.6,88.4 415.2,88.2 415.8,87.9 416.4,87.7 417.0,87.5 417.6,87.4 418.2,87.4 418.8,87.5 419.4,87.7 420.0,88.1 420.6,88.6 421.2,89.1 421.8,89.7 422.4,90.4 423.0,91.0 423.6,91.6 424.2,92.1 424.8,92.5 425.4,92.8 426.0,93.0 426.6,93.0 427.2,92.8 427.8,92.5 428.4,92.1 429.0,91.6 429.6,91.0 430.2,90.4 430.8,89.8 431.4,89.2 432.0,88.7 432.6,88.2 433.2,87.9 433.8,87.7 434.4,87.6 435.0,87.7 435.6,87.9 436.2,88.1 436.8,88.4 437.4,88.8 438.0,89.2 438.6,89.5 439.2,89.9 439.8,90.2 440.4,90.4 441.0,90.6 441.6,90.7 442.2,90.7 442.8,90.8 443.4,90.7 444.0,90.8 444.6,91.1 445.2,91.8 445.8,92.6 446.4,92.5 447.0,90.0 447.6,84.3 448.2,75.0 448.8,62.6 449.4,48.7 450.0,36.3 450.6,29.1 451.2,29.9 451.8,38.4 452.4,52.2 453.0,67.2 453.6,80.5 454.2,90.2 454.8,96.1 455.4,98.5 456.0,98.2 456.6,96.3 457.2,93.7 457.8,91.3 458.4,89.4 459.0,88.4 459.6,87.9 460.2,87.9 460.8,88.1 461.4,88.5 462.0,89.1 462.6,89.7 463.2,90.4 463.8,91.0 464.4,91.6 465.0,92.1 465.6,92.5 466.2,92.8 466.8,93.0 467.4,93.0 468.0,92.8 468.6,92.5 469.2,92.1 469.8,91.6 470.4,91.0 471.0,90.4 471.6,89.8 472.2,89.2 472.8,88.7 473.4,88.3 474.0,88.0 474.6,87.8 475.2,87.7 475.8,87.7 476.4,87.8 477.0,87.9 477.6,88.1 478.2,88.3 478.8,88.5 479.4,88.7 480.0,88.7 480.6,88.7 481.2,88.6 481.8,88.4 482.4,88.1 483.0,87.7 483.6,87.2 484.2,86.7 484.8,86.0 485.4,85.3 486.0,84.6 486.6,83.9 487.2,83.2 487.8,82.4 488.4,81.7 489.0,81.0 489.6,80.2 490.2,79.5 490.8,78.7 491.4,77.9 492.0,77.2 492.6,76.4 493.2,75.6 493.8,74.8 494.4,74.1 495.0,73.4 495.6,72.8 496.2,72.3 496.8,72.0 497.4,71.8 498.0,71.8 498.6,72.0 499.2,72.4 499.8,73.1 500.4,74.0 501.0,75.0 501.6,76.3 502.2,77.6 502.8,79.1 503.4,80.7 504.0,82.2 504.6,83.7 505.2,85.1 505.8,86.4 506.4,87.5 507.0,88.5 507.6,89.2 508.2,89.7 508.8,90.0 509.4,90.2 510.0,90.1 510.6,90.0 511.2,89.7 511.8,89.4 512.4,89.0 513.0,88.7 513.6,88.4 514.2,88.1 514.8,87.9 515.4,87.9 516.0,87.9 516.6,88.0 517.2,88.2 517.8,88.4 518.4,88.7 519.0,89.0 519.6,89.3 520.2,89.5 520.8,89.7 521.4,90.0 522.0,90.5 522.6,91.3 523.2,92.2 523.8,91.9 524.4,89.2 525.0,83.1 525.6,73.5 526.2,60.9 526.8,46.9 527.4,34.8 528.0,28.3 528.6,29.8 529.2,39.2 529.8,53.5 530.4,69.0 531.0,82.5 531.6,92.5 532.2,98.5 532.8,101.1 533.4,101.0 534.0,99.2 534.6,96.6 535.2,94.1 535.8,92.0 536.4,90.5 537.0,89.4 537.6,88.7 538.2,88.1 538.8,87.7 539.4,87.4 540.0,87.2 540.6,87.2 541.2,87.3 541.8,87.5 542.4,87.9 543.0,88.4 543.6,89.0 544.2,89.7 544.8,90.3 545.4,91.0 546.0,91.6 546.6,92.1 547.2,92.4 547.8,92.7 548.4,92.8 549.0,92.8 549.6,92.6 550.2,92.3 550.8,91.9 551.4,91.4 552.0,90.8 552.6,90.3 553.2,89.7 553.8,89.2 554.4,88.7 555.0,88.3 555.6,87.9 556.2,87.7 556.8,87.5 557.4,87.3 558.0,87.2 558.6,87.1 559.2,86.9 559.8,86.8 560.4,86.5 561.0,86.2 561.6,85.8 562.2,85.3 562.8,84.7 563.4,84.0 564.0,83.2 564.6,82.4 565.2,81.5 565.8,80.7 566.4,79.8 567.0,79.0 567.6,78.2 568.2,77.5 568.8,76.9 569.4,76.4 570.0,76.0 570.6,75.7 571.2,75.5 571.8,75.3 572.4,75.2 573.0,75.1 573.6,75.1 574.2,75.1 574.8,75.1 575.4,75.2 576.0,75.3 576.6,75.3 577.2,75.5 577.8,75.7 578.4,76.0 579.0,76.3 579.6,76.8 580.2,77.4 580.8,78.2 581.4,79.0 582.0,80.0 582.6,81.1 583.2,82.2 583.8,83.5 584.4,84.7 585.0,86.0 585.6,87.2 586.2,88.3 586.8,89.3 587.4,90.2 588.0,90.8 588.6,91.4 589.2,91.7 589.8,91.9 590.4,91.9 591.0,91.7 591.6,91.4 592.2,91.1 592.8,90.7 593.4,90.2 594.0,89.8 594.6,89.4 595.2,89.1 595.8,88.9 596.4,88.7 597.0,88.6 597.6,88.6 598.2,88.6 598.8,88.7 599.4,88.9 600.0,89.0 600.6,89.2 601.2,89.3 601.8,89.4 602.4,89.5 603.0,89.6 603.6,89.6 604.2,89.8 604.8,90.3 605.4,91.2 606.0,91.7 606.6,90.6 607.2,86.5 607.8,79.0 608.4,68.2 609.0,54.9 609.6,41.4 610.2,31.5 610.8,28.4 611.4,33.6 612.0,45.7 612.6,61.0 613.2,75.9 613.8,87.9 614.4,96.0 615.0,100.3 615.6,101.4 616.2,100.2 616.8,97.7 617.4,94.9 618.0,92.3 618.6,90.4 619.2,89.1 619.8,88.2 620.4,87.6 621.0,87.2 621.6,87.1 622.2,87.0 622.8,87.2 623.4,87.5 624.0,87.9 624.6,88.4 625.2,89.0 625.8,89.6 626.4,90.3 627.0,90.9 627.6,91.4 628.2,91.9 628.8,92.3 629.4,92.5 630.0,92.6 630.6,92.5 631.2,92.3 631.8,92.1 632.4,91.7 633.0,91.3 633.6,90.8 634.2,90.3 634.8,89.9 635.4,89.5 636.0,89.1 636.6,88.8 637.2,88.6 637.8,88.4 638.4,88.3 639.0,88.1 639.6,88.0 640.2,87.9 640.8,87.8 641.4,87.6 642.0,87.3 642.6,86.9 643.2,86.5 643.8,85.9 644.4,85.3 645.0,84.6 645.6,83.9 646.2,83.1 646.8,82.3 647.4,81.5 648.0,80.7 648.6,80.0 649.2,79.3 649.8,78.7 650.4,78.2 651.0,77.7 651.6,77.3 652.2,77.1 652.8,77.0 653.4,77.4 654.0,77.9 654.6,77.9 655.2,75.7 655.8,70.3 656.4,61.4 657.0,49.2 657.6,35.1 658.2,21.9 658.8,13.3 659.4,12.4 660.0,19.7 660.6,33.1 661.2,48.9 661.8,63.6 662.4,75.2 663.0,83.1 663.6,87.6 664.2,89.4 664.8,89.4 665.4,88.6 666.0,87.7 666.6,87.3 667.2,87.4 667.8,87.9 668.4,88.6 669.0,89.4 669.6,90.1 670.2,90.6 670.8,91.0 671.4,91.2 672.0,91.3 672.6,91.2 673.2,91.0 673.8,90.8 674.4,90.5 675.0,90.2 675.6,89.9 676.2,89.6 676.8,89.4 677.4,89.2 678.0,89.1 678.6,89.1 679.2,89.1 679.8,89.2 680.4,89.2 681.0,89.3 681.6,89.3 682.2,89.3 682.8,89.3 683.4,89.2 684.0,89.1 684.6,89.0 685.2,88.8 685.8,88.6 686.4,88.5 687.0,88.3 687.6,88.1 688.2,88.0 688.8,87.9 689.4,87.9 690.0,87.8 690.6,87.8 691.2,87.8 691.8,87.7 692.4,87.6 693.0,87.4 693.6,87.1 694.2,86.7 694.8,86.1 695.4,85.3 696.0,84.4 696.6,83.3 697.2,82.1 697.8,80.7 698.4,79.3 699.0,77.8 699.6,76.3 700.2,74.9 700.8,73.6 701.4,72.5 702.0,71.5 702.6,70.8 703.2,70.4 703.8,70.3 704.4,70.4 705.0,70.8 705.6,71.5 706.2,72.4 706.8,73.4 707.4,74.6 708.0,75.9 708.6,77.2 709.2,78.5 709.8,79.8 710.4,81.0 711.0,82.1 711.6,83.0 712.2,83.9 712.8,84.6 713.4,85.2 714.0,85.6 714.6,86.0 715.2,86.4 715.8,86.6 716.4,86.9 717.0,87.1 717.6,87.4 718.2,87.6 718.8,87.9 719.4,88.1 720.0,88.4 720.6,88.6 721.2,88.8 721.8,89.0 722.4,89.1 723.0,89.2 723.6,89.2 724.2,89.1 724.8,89.1 725.4,89.0 726.0,88.8 726.6,88.7 727.2,88.7 727.8,88.7 728.4,88.7 729.0,88.8 729.6,88.9 730.2,89.2 730.8,89.6 731.4,90.0 732.0,90.4 732.6,90.9 733.2,91.4 733.8,91.8 734.4,92.2 735.0,92.5 735.6,92.6 736.2,92.7 736.8,92.6 737.4,92.4 738.0,92.0 738.6,91.5 739.2,90.9 739.8,90.3 740.4,89.8 741.0,89.5 741.6,89.6 742.2,89.9 742.8,89.3 743.4,86.4 744.0,80.3 744.6,70.8 745.2,58.3 745.8,44.6 746.4,32.7 747.0,26.3 747.6,28.0 748.2,37.5 748.8,52.1 749.4,67.9 750.0,81.8 750.6,92.1 751.2,98.5 751.8,101.4 752.4,101.5 753.0,99.9 753.6,97.5 754.2,95.1 754.8,93.3 755.4,92.0 756.0,91.1 756.6,90.6 757.2,90.3 757.8,90.1 758.4,89.9 759.0,89.8 759.6,89.8 760.2,89.8 760.8,89.8 761.4,89.8 762.0,89.8 762.6,89.7 763.2,89.7 763.8,89.6 764.4,89.5 765.0,89.3 765.6,89.1 766.2,88.9 766.8,88.7 767.4,88.5 768.0,88.4 768.6,88.4 769.2,88.4 769.8,88.5 770.4,88.7 771.0,88.9 771.6,89.3 772.2,89.7 772.8,90.1 773.4,90.6 774.0,91.0 774.6,91.4 775.2,91.6 775.8,91.7 776.4,91.7 777.0,91.5 777.6,91.1 778.2,90.5 778.8,89.7 779.4,88.8 780.0,87.7 780.6,86.5 781.2,85.3 781.8,83.9 782.4,82.6 783.0,81.3 783.6,80.1 784.2,79.0 784.8,78.0 785.4,77.1 786.0,76.4 786.6,75.8 787.2,75.3 787.8,75.0 788.4,74.7 789.0,74.6 789.6,74.6 790.2,74.6 790.8,74.6 791.4,74.7 792.0,74.8 792.6,75.0 793.2,75.1 793.8,75.4 794.4,75.6 795.0,75.9 795.6,76.3 796.2,76.8 796.8,77.4 797.4,78.0 798.0,78.9 798.6,80.3 799.2,81.9 799.8,83.2 800.4,82.9 801.0,79.5 801.6,72.5 802.2,62.1 802.8,49.2 803.4,36.1 804.0,26.5 804.6,23.9 805.2,29.4 805.8,41.6 806.4,56.8 807.0,71.6 807.6,83.4 808.2,91.4 808.8,95.8 809.4,97.2 810.0,96.5 810.6,94.7 811.2,92.8 811.8,91.3 812.4,90.5 813.0,90.3 813.6,90.5 814.2,90.9 814.8,91.5 815.4,92.0 816.0,92.4 816.6,92.7 817.2,92.9 817.8,92.9 818.4,92.8 819.0,92.5 819.6,92.1 820.2,91.6 820.8,91.0 821.4,90.4 822.0,89.7 822.6,89.0 823.2,88.5 823.8,88.0 824.4,87.6 825.0,87.3 825.6,87.2 826.2,87.2 826.8,87.4 827.4,87.7 828.0,88.0 828.6,88.4 829.2,88.9 829.8,89.3 830.4,89.8 831.0,90.1 831.6,90.4 832.2,90.5 832.8,90.6 833.4,90.5 834.0,90.3 834.6,90.0 835.2,89.6 835.8,89.1 836.4,88.5 837.0,87.9 837.6,87.2 838.2,86.4 838.8,85.7 839.4,84.9 840.0,84.2 840.6,83.3 841.2,82.5 841.8,81.7 842.4,80.8 843.0,80.0 843.6,79.3 844.2,79.1 844.8,78.9 845.4,77.8 846.0,74.3 846.6,67.6 847.2,57.4 847.8,44.3 848.4,29.7 849.0,16.7 849.6,9.2 850.2,9.8 850.8,18.6 851.4,32.9 852.0,49.0 852.6,63.5 853.2,74.8 853.8,82.5 854.4,86.7 855.0,88.4 855.6,88.4 856.2,87.5 856.8,86.7 857.4,86.3 858.0,86.2 858.6,86.5 859.2,86.9 859.8,87.3 860.4,87.5 861.0,87.6 861.6,87.6 862.2,87.5 862.8,87.3 863.4,87.1 864.0,86.8 864.6,86.7 865.2,86.6 865.8,86.5 866.4,86.6 867.0,86.8 867.6,87.1 868.2,87.5 868.8,87.9 869.4,88.4 870.0,88.9 870.6,89.4 871.2,89.9 871.8,90.3 872.4,90.6 873.0,90.9 873.6,91.0 874.2,91.1 874.8,91.0 875.4,90.9 876.0,90.8 876.6,90.6 877.2,90.3 877.8,90.1 878.4,89.8 879.0,89.5 879.6,89.2 880.2,89.0 880.8,88.6 881.4,88.3 882.0,87.9 882.6,87.5 883.2,86.9 883.8,86.3 884.4,85.5 885.0,84.6 885.6,83.6 886.2,82.5 886.8,81.3 887.4,80.1 888.0,78.8 888.6,77.6 889.2,76.4 889.8,75.3 890.4,74.3 891.0,73.5 891.6,72.8 892.2,72.4 892.8,72.2 893.4,72.3 894.0,72.5 894.6,73.0 895.2,73.6 895.8,74.3 896.4,75.2 897.0,76.1 897.6,77.0 898.2,77.9 898.8,78.8 899.4,79.6 900.0,80.2\"/><text class=\"cap\" x=\"4\" y=\"193\">afib · 124 bpm · 25 mm/s, 10 mm/mV</text></svg>"
+ },
+ {
+  "id": "usmle-2026-0119",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Pediatrics",
+  "subject_file": "Pediatrics",
+  "subtopic": "Hypertrophic Pyloric Stenosis — Correct Fluids and Electrolytes Before Pyloromyotomy",
+  "type": "Hypertrophic Pyloric Stenosis — Correct Fluids and Electrolytes Before Pyloromyotomy",
+  "difficulty": 5,
+  "created": "2026-08-25",
+  "vignette": "A 5-week-old boy, the firstborn child of healthy parents, is brought to the emergency department because of 8 days of vomiting after feeding that has become forceful and now follows every feed. The vomitus is nonbilious and nonbloody, and he roots eagerly and appears hungry shortly after each episode. He has had fewer wet diapers over the past 2 days. He appears listless, the anterior fontanelle is sunken, and capillary refill time is 4 seconds. Abdominal examination shows a small, firm, mobile mass in the right upper quadrant. Laboratory and ultrasonographic findings are shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Pyloromyotomy within the next several hours",
+   "Intravenous rehydration with correction of electrolytes",
+   "Upper gastrointestinal contrast radiography",
+   "Empiric acid suppression with thickened feedings",
+   "Contrast-enhanced computed tomography of the abdomen"
+  ],
+  "answer": 2,
+  "explanationText": "- 정답근거: 2단계 추론. ① 진단 — 생후 2–8주 첫째 아들, 수유 후 분출성 비담즙성 구토, 구토 직후 다시 배고파함, 우상복부 단단한 종괴, 초음파 유문근 5.1 mm·유문관 19 mm = 비대성 유문협착 확진(추가 검사 불필요). ② 순서 — 반복 구토로 저염소(86)·저칼륨(3.0)성 대사성 알칼리증(HCO3 33) + 탈수(재충만 4초, 함몰 대천문, 저혈압)가 와 있다. 유문협착은 장이 썩는 병이 아니라 대기수술이고, 알칼리증을 안 고치고 마취하면 수술 후 무호흡 위험이 있다 → 수액·전해질 교정이 먼저, 수술은 교정 후.\n- 오답감별:\n  - (A) 유문근절개술이 근치 치료인 것은 맞지만 응급이 아니다 — 미교정 알칼리증 상태의 마취는 수술 후 무호흡을 부른다. '진단 붙었으니 바로 수술'이 이 문항의 핵심 함정.\n  - (C) 상부위장관 조영검사는 초음파가 확진한 뒤에는 불필요하고, 구토 중인 탈수 영아에게 조영제 투여는 흡인 위험만 더한다 — 담즙성 구토로 회전이상·중장염전을 의심할 때의 검사다.\n  - (D) 위식도역류로 오독했을 때의 선택 — 역류는 분출성이 아니고 체중·수분 상태가 이 정도로 무너지지 않으며, 종괴·초음파 소견을 설명하지 못한다.\n  - (E) CT는 방사선 부담만 있고 유문협착 진단에 설 자리가 없다 — 초음파가 표준이고 이미 확진됐다.\n- 임상핵심: 유문협착은 \"외과 질환이지만 내과적 응급\" — 저염소·저칼륨성 대사성 알칼리증을 수액으로 교정한 뒤에 수술한다; '다음 단계'를 물으면 수술이 아니라 수액이 답이다.\n- 출처: Nelson Pediatrics; UpToDate — Infantile hypertrophic pyloric stenosis. 표준 관리 순서, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 진단 — 생후 2–8주 첫째 아들, 수유 후 분출성 비담즙성 구토, 구토 직후 다시 배고파함, 우상복부 단단한 종괴, 초음파 유문근 5.1 mm·유문관 19 mm = 비대성 유문협착 확진(추가 검사 불필요). ② 순서 — 반복 구토로 저염소(86)·저칼륨(3.0)성 대사성 알칼리증(HCO3 33) + 탈수(재충만 4초, 함몰 대천문, 저혈압)가 와 있다. 유문협착은 장이 썩는 병이 아니라 대기수술이고, 알칼리증을 안 고치고 마취하면 수술 후 무호흡 위험이 있다 → 수액·전해질 교정이 먼저, 수술은 교정 후."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 유문근절개술이 근치 치료인 것은 맞지만 응급이 아니다 — 미교정 알칼리증 상태의 마취는 수술 후 무호흡을 부른다. '진단 붙었으니 바로 수술'이 이 문항의 핵심 함정.\n(C) 상부위장관 조영검사는 초음파가 확진한 뒤에는 불필요하고, 구토 중인 탈수 영아에게 조영제 투여는 흡인 위험만 더한다 — 담즙성 구토로 회전이상·중장염전을 의심할 때의 검사다.\n(D) 위식도역류로 오독했을 때의 선택 — 역류는 분출성이 아니고 체중·수분 상태가 이 정도로 무너지지 않으며, 종괴·초음파 소견을 설명하지 못한다.\n(E) CT는 방사선 부담만 있고 유문협착 진단에 설 자리가 없다 — 초음파가 표준이고 이미 확진됐다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "유문협착은 \"외과 질환이지만 내과적 응급\" — 저염소·저칼륨성 대사성 알칼리증을 수액으로 교정한 뒤에 수술한다; '다음 단계'를 물으면 수술이 아니라 수액이 답이다."
+   },
+   {
+    "k": "출처",
+    "v": "Nelson Pediatrics; UpToDate — Infantile hypertrophic pyloric stenosis. 표준 관리 순서, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (pediatric surgery · pyloric stenosis)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "72/44 mmHg"
+   },
+   {
+    "name": "맥박",
+    "value": "178 /min"
+   },
+   {
+    "name": "호흡",
+    "value": "42 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.5 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "Na⁺",
+    "value": "132 mEq/L",
+    "ref": "135–145"
+   },
+   {
+    "name": "K⁺",
+    "value": "3.0 mEq/L",
+    "ref": "3.5–5.0"
+   },
+   {
+    "name": "Cl⁻",
+    "value": "86 mEq/L",
+    "ref": "98–107"
+   },
+   {
+    "name": "HCO3⁻",
+    "value": "33 mEq/L",
+    "ref": "20–26"
+   },
+   {
+    "name": "혈당",
+    "value": "78 mg/dL",
+    "ref": "60–100"
+   },
+   {
+    "name": "초음파 — 유문근 두께",
+    "value": "5.1 mm",
+    "ref": "< 3"
+   },
+   {
+    "name": "초음파 — 유문관 길이",
+    "value": "19 mm",
+    "ref": "< 15"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "비대성 유문협착 관리 결정표\n─────────────────────────────────────────────\n단계 × 기준 → 행동\n진단      → 초음파: 유문근 두께 ≥ 3–4 mm, 유문관 길이 ≥ 15 mm (제1선; 조영검사·CT 불필요)\n1단계     → 수액 소생: 등장액 볼루스 → 5% 포도당 + 0.45% NaCl + KCl(소변 확인 후) 유지\n수술 준비 → 대략 Cl⁻ > 100, HCO3⁻ < 30, K⁺ 정상화, 소변량 회복 → 그때 유문근절개술\n수술      → 램스테트 유문근절개술 (개복 또는 복강경) — 교정 후에는 안전한 대기수술\n─────────────────────────────────────────────\n각주: 알칼리증 미교정 시 마취 후 무호흡(뇌척수액 알칼리증에 의한 호흡 억제) 위험 —\n      '수술이 치료지만, 수술을 서두르는 것이 오답'인 이유.\n",
+   "최신지견": "마크로라이드(에리트로마이신) 신생아기 노출은 유문협착 위험을 높인다 — 백일해 접촉 후 예방요법을 받은 신생아에서 병력 청취 포인트.",
+   "참고문헌": [
+    "Nelson Textbook of Pediatrics — Hypertrophic Pyloric Stenosis",
+    "UpToDate — Infantile hypertrophic pyloric stenosis"
+   ]
+  },
+  "figureSvg": ""
+ },
+ {
+  "id": "usmle-2026-0120",
+  "exam": "usmle",
+  "step": "Step 2",
+  "subject": "Neurology",
+  "subject_file": "Neurology",
+  "subtopic": "Acute Ischemic Stroke in the Thrombolysis Window — Lower Blood Pressure Below 185/110 First",
+  "type": "Acute Ischemic Stroke in the Thrombolysis Window — Lower Blood Pressure Below 185/110 First",
+  "difficulty": 5,
+  "created": "2026-08-25",
+  "vignette": "A 68-year-old woman is brought to the emergency department 90 minutes after the sudden onset of right-sided weakness and difficulty speaking. She has hypertension and hyperlipidemia treated with amlodipine and atorvastatin; she takes no antithrombotic medications. Neurologic examination shows nonfluent speech, a right facial droop, and 2/5 strength in the right arm. Noncontrast CT of the head and laboratory results are shown.",
+  "question": "Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Intravenous alteplase administration",
+   "Oral aspirin administration",
+   "Intravenous labetalol administration",
+   "Intravenous heparin infusion",
+   "Mechanical thrombectomy without thrombolysis"
+  ],
+  "answer": 3,
+  "explanationText": "- 정답근거: 2단계 추론. ① 적응 확인 — 발병 90분(4.5시간 창 안), CT 출혈 배제, 혈당 108(저혈당 아님), 혈소판·INR 정상, 항혈전제 미복용 → 정맥 혈전용해 적응이다. ② 금기 점검 — 혈압 224/118(재측정 218/116)로 185/110 초과는 혈전용해의 금기(두개내출혈 위험)다. 따라서 다음 단계는 정맥 라베탈롤로 혈압을 185/110 미만으로 낮추는 것이고, 조절되면 곧바로 알테플라제를 투여한다.\n- 오답감별:\n  - (A) 적응은 다 맞지만 혈압 금기를 넘긴 채 투여하면 두개내출혈 위험이 크게 오른다 — '창이 닫히기 전에 빨리'라는 조급함이 만드는 이 문항의 핵심 함정. 강압은 몇 분이면 되고 창은 아직 넉넉하다.\n  - (B) 아스피린은 혈전용해 비대상자의 초기 치료이거나 혈전용해 24시간 후에 시작한다 — 혈전용해 후보에게 지금 주면 출혈 위험만 더하고, 재관류 효과는 알테플라제에 한참 못 미친다.\n  - (D) 급성 허혈성 뇌졸중에서 치료적 헤파린은 신경학적 결과를 개선하지 못하고 출혈성 변환만 늘린다 — 심방세동이 있어도 급성기 항응고는 표준이 아니다.\n  - (E) 혈전제거술은 대혈관폐색에서 혈전용해와 병행하는 치료다 — 적응이 되는 환자에서 혈전용해를 건너뛸 이유가 없고, 이 환자는 아직 혈관영상으로 대혈관폐색이 확인되지도 않았다.\n- 임상핵심: 혈전용해 전 마지막 관문은 혈압 185/110 — 넘으면 라베탈롤·니카르디핀으로 낮춘 뒤 투여하고, 투여 후 24시간은 180/105 미만으로 유지한다.\n- 출처: AHA/ASA 급성 허혈성 뇌졸중 조기관리 가이드라인; UpToDate — IV thrombolysis for acute ischemic stroke. 표준 프로토콜, 논쟁 없음.",
+  "explanationItems": [
+   {
+    "k": "정답근거",
+    "v": "2단계 추론. ① 적응 확인 — 발병 90분(4.5시간 창 안), CT 출혈 배제, 혈당 108(저혈당 아님), 혈소판·INR 정상, 항혈전제 미복용 → 정맥 혈전용해 적응이다. ② 금기 점검 — 혈압 224/118(재측정 218/116)로 185/110 초과는 혈전용해의 금기(두개내출혈 위험)다. 따라서 다음 단계는 정맥 라베탈롤로 혈압을 185/110 미만으로 낮추는 것이고, 조절되면 곧바로 알테플라제를 투여한다."
+   },
+   {
+    "k": "오답감별",
+    "v": "(A) 적응은 다 맞지만 혈압 금기를 넘긴 채 투여하면 두개내출혈 위험이 크게 오른다 — '창이 닫히기 전에 빨리'라는 조급함이 만드는 이 문항의 핵심 함정. 강압은 몇 분이면 되고 창은 아직 넉넉하다.\n(B) 아스피린은 혈전용해 비대상자의 초기 치료이거나 혈전용해 24시간 후에 시작한다 — 혈전용해 후보에게 지금 주면 출혈 위험만 더하고, 재관류 효과는 알테플라제에 한참 못 미친다.\n(D) 급성 허혈성 뇌졸중에서 치료적 헤파린은 신경학적 결과를 개선하지 못하고 출혈성 변환만 늘린다 — 심방세동이 있어도 급성기 항응고는 표준이 아니다.\n(E) 혈전제거술은 대혈관폐색에서 혈전용해와 병행하는 치료다 — 적응이 되는 환자에서 혈전용해를 건너뛸 이유가 없고, 이 환자는 아직 혈관영상으로 대혈관폐색이 확인되지도 않았다."
+   },
+   {
+    "k": "임상핵심",
+    "v": "혈전용해 전 마지막 관문은 혈압 185/110 — 넘으면 라베탈롤·니카르디핀으로 낮춘 뒤 투여하고, 투여 후 24시간은 180/105 미만으로 유지한다."
+   },
+   {
+    "k": "출처",
+    "v": "AHA/ASA 급성 허혈성 뇌졸중 조기관리 가이드라인; UpToDate — IV thrombolysis for acute ischemic stroke. 표준 프로토콜, 논쟁 없음."
+   }
+  ],
+  "source": "USMLE-style / MedKOS (neurology · acute stroke management)",
+  "vitals": [
+   {
+    "name": "혈압",
+    "value": "224/118 mmHg (재측정 218/116)"
+   },
+   {
+    "name": "맥박",
+    "value": "88 /min, 규칙적"
+   },
+   {
+    "name": "호흡",
+    "value": "16 /min"
+   },
+   {
+    "name": "체온",
+    "value": "36.7 °C"
+   }
+  ],
+  "labs": [
+   {
+    "name": "모세혈 혈당",
+    "value": "108 mg/dL",
+    "ref": "70–140"
+   },
+   {
+    "name": "혈소판",
+    "value": "235,000 /mm³",
+    "ref": "150,000–400,000"
+   },
+   {
+    "name": "INR",
+    "value": "1.0",
+    "ref": "0.8–1.2"
+   },
+   {
+    "name": "비조영 두부 CT",
+    "value": "출혈 없음, 초기 허혈 변화 없음",
+    "ref": "—"
+   }
+  ],
+  "appendix": {
+   "가이드라인": "급성 허혈성 뇌졸중 혈압 관리 결정표\n─────────────────────────────────────────────\n상황 × 혈압 → 행동\n혈전용해 예정 · > 185/110      → 정맥 강압(라베탈롤·니카르디핀) → 185/110 미만 확인 후 투여\n혈전용해 중·후 24시간          → < 180/105 유지 (집중 감시)\n혈전용해 비대상 · ≤ 220/120    → 강압하지 않음 (허용적 고혈압 — 관류 유지)\n혈전용해 비대상 · > 220/120    → 첫 24시간 약 15%만 조심스럽게 강압\n─────────────────────────────────────────────\n각주: 혈전용해 후 아스피린 등 항혈전제는 24시간 뒤 재출혈 배제 후 시작.\n",
+   "최신지견": "혈압이 창 안에서 조절되면 혈전용해를 포기할 이유가 아니다 — 강압 후 재측정으로 185/110 미만을 확인하고 바로 투여하는 것이 표준이며, 대혈관폐색이면 혈전용해와 병행해 혈전제거술을 준비한다.",
+   "참고문헌": [
+    "AHA/ASA Guidelines for the Early Management of Patients With Acute Ischemic Stroke",
+    "UpToDate — Intravenous thrombolytic therapy for acute ischemic stroke"
+   ]
+  },
+  "figureSvg": ""
  }
 ];

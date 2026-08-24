@@ -5,12 +5,12 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1763,
+  "total": 1769,
   "byType": {
+   "usmle": 108,
    "anatomy": 490,
    "kmle": 683,
    "paper": 471,
-   "usmle": 102,
    "ailab": 14,
    "basic": 3
   },
@@ -19,11 +19,11 @@ window.MEDKOS_INDEX = {
    "Cardiology": 143,
    "Nephrology": 124,
    "Infectious Disease": 100,
-   "Pediatrics": 78,
+   "Pediatrics": 79,
    "Hematology-Oncology": 74,
    "Pathology": 66,
    "Obstetrics & Gynecology": 53,
-   "Neurology": 51,
+   "Neurology": 52,
    "Psychiatry": 51,
    "Surgery": 48,
    "Endocrinology": 44,
@@ -36,12 +36,12 @@ window.MEDKOS_INDEX = {
    "Orthopedics": 42,
    "Rheumatology": 42,
    "Hematology": 41,
-   "Physiology": 13,
+   "Physiology": 14,
    "Pharmacology": 8,
+   "Biochemistry": 7,
    "Microbiology": 7,
-   "Biochemistry": 6,
-   "Immunology": 4,
-   "Internal Medicine": 4,
+   "Immunology": 5,
+   "Internal Medicine": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -53,13 +53,134 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1066,
+   "high": 1072,
    "medium": 648,
    "low": 49
   },
-  "tagCount": 2507
+  "tagCount": 2518
  },
  "docs": [
+  {
+   "id": "usmle-2026-0120",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Acute Ischemic Stroke in the Thrombolysis Window — Lower Blood Pressure Below 185/110 First",
+   "tags": [
+    "ischemic-stroke",
+    "alteplase",
+    "thrombolysis",
+    "blood-pressure",
+    "labetalol"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute stroke management)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0120.md",
+   "snippet": "A 68 year old woman is brought to the emergency department 90 minutes after the sudden onset of right sided weakness and difficulty speaking. She has hypertension and hyperlipidemia treated with amlodipine and atorvastatin; she takes no ant",
+   "text": "Neurology Acute Ischemic Stroke in the Thrombolysis Window — Lower Blood Pressure Below 185/110 First ischemic-stroke alteplase thrombolysis blood-pressure labetalol USMLE-style / MedKOS (neurology · acute stroke management) A 68 year old woman is brought to the emergency department 90 minutes after the sudden onset of right sided weakness and difficulty speaking. She has hypertension and hyperlipidemia treated with amlodipine and atorvastatin; she takes no antithrombotic medications. Neurologic examination shows nonfluent speech, a right facial droop, and 2/5 strength in the right arm. Noncontrast CT of the head and laboratory results are shown. Which of the following is the most appropriate next step in management? A. Intravenous alteplase administration B. Oral aspirin administration C. Intravenous labetalol administration D. Intravenous heparin infusion E. Mechanical thrombectomy without thrombolysis 발병 90분의 급성 허혈성 뇌졸중으로 CT에서 출혈이 배제됐고 혈당·혈소판·INR 모두 정상이라 정맥 혈전용해의 적응이다. 그러나 혈압이 224/118로, 185/110을 넘는 혈압은 혈전용해의 금기다 — 두개내출혈 위험 때문이다. 따라서 알테플라제 투여 전에 정맥 라베탈롤(또는 니카르디핀)로 혈압을 185/110 미만으로 낮추는 것이 다음 단계다. 창(4.5시간) 안이므로 혈압만 조절되면 혈전용해를 진행한다."
+  },
+  {
+   "id": "usmle-2026-0119",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Hypertrophic Pyloric Stenosis — Correct Fluids and Electrolytes Before Pyloromyotomy",
+   "tags": [
+    "pyloric-stenosis",
+    "metabolic-alkalosis",
+    "hypokalemia",
+    "pyloromyotomy",
+    "fluid-resuscitation"
+   ],
+   "source": "USMLE-style / MedKOS (pediatric surgery · pyloric stenosis)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0119.md",
+   "snippet": "A 5 week old boy, the firstborn child of healthy parents, is brought to the emergency department because of 8 days of vomiting after feeding that has become forceful and now follows every feed. The vomitus is nonbilious and nonbloody, and h",
+   "text": "Pediatrics Hypertrophic Pyloric Stenosis — Correct Fluids and Electrolytes Before Pyloromyotomy pyloric-stenosis metabolic-alkalosis hypokalemia pyloromyotomy fluid-resuscitation USMLE-style / MedKOS (pediatric surgery · pyloric stenosis) A 5 week old boy, the firstborn child of healthy parents, is brought to the emergency department because of 8 days of vomiting after feeding that has become forceful and now follows every feed. The vomitus is nonbilious and nonbloody, and he roots eagerly and appears hungry shortly after each episode. He has had fewer wet diapers over the past 2 days. He appears listless, the anterior fontanelle is sunken, and capillary refill time is 4 seconds. Abdominal examination shows a small, firm, mobile mass in the right upper quadrant. Laboratory and ultrasonographic findings are shown. Which of the following is the most appropriate next step in management? A. Pyloromyotomy within the next several hours B. Intravenous rehydration with correction of electrolytes C. Upper gastrointestinal contrast radiography D. Empiric acid suppression with thickened feedings E. Contrast enhanced computed tomography of the abdomen 생후 5주 첫째 아들의 수유 후 분출성 비담즙성 구토 + 구토 직후 배고파함 + 우상복부의 단단한 종괴 + 초음파에서 유문근 5.1 mm·유문관 19 mm = 비대성 유문협착 확진. 그러나 유문협착은 응급 수술이 아니라 '내과적 응급'이다 — 반복 구토로 저염소·저칼륨성 대사성 알칼리증과 탈수(모세혈관 재충만 4초, 함몰 대천문)가 와 있고, 교정 없이 마취하면 수술 후 무호흡 위험이 크다. 정답은 수액·전해질 교정을 먼저 하고, 알칼리증이 풀린 뒤(대략 Cl 100, HCO3 < 30) 유문근절개술을 시행하는 것이다."
+  },
+  {
+   "id": "usmle-2026-0118",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Atrial Fibrillation of 5 Days — Rate Control and Anticoagulation, Not Immediate Cardioversion",
+   "tags": [
+    "atrial-fibrillation",
+    "anticoagulation",
+    "CHA2DS2-VASc",
+    "cardioversion",
+    "rate-control",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · atrial fibrillation management)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0118.md",
+   "snippet": "A 62 year old man comes to the emergency department because of 5 days of palpitations, mild exertional dyspnea, and fatigue. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin. He does not use tobacco and",
+   "text": "Internal Medicine Atrial Fibrillation of 5 Days — Rate Control and Anticoagulation, Not Immediate Cardioversion atrial-fibrillation anticoagulation CHA2DS2-VASc cardioversion rate-control ECG USMLE-style / MedKOS (cardiology · atrial fibrillation management) A 62 year old man comes to the emergency department because of 5 days of palpitations, mild exertional dyspnea, and fatigue. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin. He does not use tobacco and drinks alcohol only occasionally. He appears comfortable at rest. Cardiac examination shows an irregularly irregular rhythm without murmurs, and the lungs are clear. An electrocardiogram shows the rhythm in the figure. Which of the following is the most appropriate management at this time? A. Immediate synchronized electrical cardioversion B. Intravenous adenosine administration C. Pharmacologic cardioversion with intravenous amiodarone D. Rate control with metoprolol and daily aspirin E. Rate control with metoprolol and oral anticoagulation P파 없이 불규칙한 잔물결과 irregularly irregular한 QRS = 심방세동. 혈역학적으로 안정적이고 지속시간이 48시간을 넘었으므로(5일) 즉시 심율동전환(전기든 약물이든)은 좌심방 부속지 혈전 색전의 위험이 있어 금기다 — 3주 이상 항응고 후 또는 TEE로 혈전 배제 후에만 시행한다. CHA2DS2 VASc = 고혈압 1 + 당뇨 1 = 2점(남성)으로 항응고 적응이므로, 지금 할 일은 베타차단제 심박수 조절 + 경구 항응고 시작이다. 아스피린은 심방세동 뇌졸중 예방에 더는 권고되지 않는다."
+  },
+  {
+   "id": "usmle-2026-0117",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "High-Altitude Acclimatization — 2,3-BPG and the Rightward Shift That Improves Oxygen Unloading",
+   "tags": [
+    "high-altitude",
+    "2-3-BPG",
+    "oxygen-dissociation-curve",
+    "respiratory-alkalosis",
+    "acclimatization"
+   ],
+   "source": "USMLE-style / MedKOS (respiratory physiology · oxygen transport)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0117.md",
+   "snippet": "A 28 year old man flies from sea level to a research station at 3,900 m (12,800 ft). The next morning he has a mild headache, fatigue, and dyspnea when climbing stairs. He has no chronic medical conditions and takes no medications. Arterial",
+   "text": "Physiology High-Altitude Acclimatization — 2,3-BPG and the Rightward Shift That Improves Oxygen Unloading high-altitude 2-3-BPG oxygen-dissociation-curve respiratory-alkalosis acclimatization USMLE-style / MedKOS (respiratory physiology · oxygen transport) A 28 year old man flies from sea level to a research station at 3,900 m (12,800 ft). The next morning he has a mild headache, fatigue, and dyspnea when climbing stairs. He has no chronic medical conditions and takes no medications. Arterial blood gas analysis on room air is shown. He plans to remain at the station for a month. Which of the following changes will contribute most to improved oxygen unloading to his tissues over the next several days? A. Increased hemoglobin affinity for oxygen B. Decreased minute ventilation toward his sea level baseline C. Increased erythrocyte 2,3 bisphosphoglycerate concentration D. Increased renal reabsorption of filtered bicarbonate E. Decreased pulmonary vascular resistance 고지대 저산소혈증은 과호흡을 일으켜 급성 호흡성 알칼리증(pH 7.47, PaCO2 29)을 만든다. 알칼리증은 산소 헤모글로빈 해리곡선을 왼쪽으로 밀어 조직 산소 방출을 오히려 방해하는데, 수일에 걸쳐 적혈구 해당과정의 2,3 BPG 합성이 증가하면서 곡선을 오른쪽으로 되돌려 헤모글로빈 친화도를 낮추고 조직에서의 산소 방출을 개선한다. 신장은 HCO3⁻ 재흡수를 줄여(배설 증가) pH를 보상하고, 환기는 오히려 더 증가하며, 저산소성 폐혈관수축으로 폐혈관저항은 올라간다. 적혈구량 증가(EPO)는 수주가 걸리고 운반량을 늘릴 뿐 '방출'의 기전이 아니다."
+  },
+  {
+   "id": "usmle-2026-0116",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "McArdle Disease — Exercise Intolerance with Second Wind and Flat Lactate Curve",
+   "tags": [
+    "McArdle",
+    "glycogen-storage-disease",
+    "myophosphorylase",
+    "rhabdomyolysis",
+    "second-wind"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · glycogen storage diseases)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0116.md",
+   "snippet": "A 17 year old boy is evaluated for recurrent episodes of muscle cramping and fatigue that begin within the first few minutes of intense exercise such as sprinting or carrying heavy loads. He has noticed that if he briefly slows down when sy",
+   "text": "Biochemistry McArdle Disease — Exercise Intolerance with Second Wind and Flat Lactate Curve McArdle glycogen-storage-disease myophosphorylase rhabdomyolysis second-wind USMLE-style / MedKOS (biochemistry · glycogen storage diseases) A 17 year old boy is evaluated for recurrent episodes of muscle cramping and fatigue that begin within the first few minutes of intense exercise such as sprinting or carrying heavy loads. He has noticed that if he briefly slows down when symptoms start, he can then continue exercising with much less difficulty. Two days ago, after a strenuous workout, he passed dark brown urine. He takes no medications or supplements, and his parents are healthy. An ischemic forearm exercise test is performed; results are shown. A deficiency of which of the following enzymes is the most likely cause of this patient's condition? A. Muscle glycogen phosphorylase B. Glucose 6 phosphatase C. Lysosomal acid alpha 1,4 glucosidase D. Carnitine palmitoyltransferase II E. Glycogen debranching enzyme 고강도 운동 시작 수분 내 경련 + 잠시 쉬면 호전되는 second wind 현상 + 운동 후 미오글로빈뇨(잠혈 양성이나 적혈구 없음) + 허혈성 전완운동검사에서 젖산이 오르지 않고 암모니아만 과도하게 오르는 소견은 근육 글리코겐 분해가 막힌 McArdle병(GSD V, 근육 glycogen phosphorylase 결핍)의 전형이다. 근육이 저장 글리코겐을 쓰지 못해 무산소 해당이 막히고(젖산 무증가), AMP 탈아미노화가 과활성화된다(암모니아 과상승)."
+  },
+  {
+   "id": "usmle-2026-0115",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies",
+   "tags": [
+    "IgA-deficiency",
+    "transfusion-reaction",
+    "anaphylaxis",
+    "anti-IgA",
+    "immunodeficiency"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · transfusion reactions)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0115.md",
+   "snippet": "A 23 year old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episod",
+   "text": "Immunology Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies IgA-deficiency transfusion-reaction anaphylaxis anti-IgA immunodeficiency USMLE-style / MedKOS (immunology · transfusion reactions) A 23 year old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episode of prolonged watery diarrhea last year that resolved after treatment with metronidazole. Minutes after transfusion of crossmatch compatible packed red blood cells begins, she develops diffuse flushing, urticaria, wheezing, and hypotension. The transfusion is stopped and intramuscular epinephrine is given, with improvement. Which of the following best explains this patient's transfusion reaction? A. Recipient IgM directed against donor erythrocyte ABO antigens B. Donor antileukocyte antibodies reacting with recipient neutrophils C. Cytokines released from residual leukocytes during product storage D. Recipient antibodies directed against donor immunoglobulin A E. Anamnestic recipient IgG response against minor erythrocyte antigens 반복 부비동·중이 감염 + 지아르디아형 장기 설사의 병력은 선택적 IgA 결핍을 시사한다. IgA가 거의 없는 환자는 혈액제제 속 공여자 IgA를 외래 항원으로 인식해 항 IgA 항체(IgE 또는 IgG)를 만들 수 있고, 수혈 수분 내 아나필락시스(홍조·두드러기·기관지연축·저혈압)가 온다. DAT 음성·유리 헤모글로빈 정상으로 용혈성 반응이 배제되고, 트립타제 상승이 비만세포 매개 반응을 뒷받침한다. 예방은 세척 적혈구 또는 IgA 결핍 공여자 제제."
+  },
   {
    "id": "anatomy-daily-2026-08-25",
    "type": "anatomy",
