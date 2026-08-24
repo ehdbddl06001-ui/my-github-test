@@ -1,47 +1,47 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-23",
+ "generated": "2026-08-24",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1755,
+  "total": 1763,
   "byType": {
+   "usmle": 108,
    "kmle": 683,
    "anatomy": 484,
-   "paper": 469,
-   "usmle": 102,
+   "paper": 471,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 484,
-   "Cardiology": 142,
+   "Cardiology": 143,
    "Nephrology": 124,
    "Infectious Disease": 100,
-   "Pediatrics": 78,
+   "Pediatrics": 79,
    "Hematology-Oncology": 74,
    "Pathology": 66,
    "Obstetrics & Gynecology": 53,
-   "Neurology": 51,
+   "Neurology": 52,
    "Psychiatry": 51,
    "Surgery": 48,
    "Endocrinology": 44,
    "Gastroenterology": 43,
+   "Laboratory Medicine": 43,
    "Pulmonology": 43,
    "Dermatology": 42,
    "General Surgery": 42,
-   "Laboratory Medicine": 42,
    "Ophthalmology": 42,
    "Orthopedics": 42,
    "Rheumatology": 42,
    "Hematology": 41,
-   "Physiology": 13,
+   "Physiology": 14,
    "Pharmacology": 8,
+   "Biochemistry": 7,
    "Microbiology": 7,
-   "Biochemistry": 6,
-   "Immunology": 4,
-   "Internal Medicine": 4,
+   "Immunology": 5,
+   "Internal Medicine": 5,
    "Medical AI Lab": 4,
    "Medical Signal AI": 4,
    "Oncology": 3,
@@ -53,13 +53,134 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1060,
-   "medium": 646,
+   "high": 1066,
+   "medium": 648,
    "low": 49
   },
-  "tagCount": 2494
+  "tagCount": 2505
  },
  "docs": [
+  {
+   "id": "usmle-2026-0120",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Acute Ischemic Stroke in the Thrombolysis Window — Lower Blood Pressure Below 185/110 First",
+   "tags": [
+    "ischemic-stroke",
+    "alteplase",
+    "thrombolysis",
+    "blood-pressure",
+    "labetalol"
+   ],
+   "source": "USMLE-style / MedKOS (neurology · acute stroke management)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0120.md",
+   "snippet": "A 68 year old woman is brought to the emergency department 90 minutes after the sudden onset of right sided weakness and difficulty speaking. She has hypertension and hyperlipidemia treated with amlodipine and atorvastatin; she takes no ant",
+   "text": "Neurology Acute Ischemic Stroke in the Thrombolysis Window — Lower Blood Pressure Below 185/110 First ischemic-stroke alteplase thrombolysis blood-pressure labetalol USMLE-style / MedKOS (neurology · acute stroke management) A 68 year old woman is brought to the emergency department 90 minutes after the sudden onset of right sided weakness and difficulty speaking. She has hypertension and hyperlipidemia treated with amlodipine and atorvastatin; she takes no antithrombotic medications. Neurologic examination shows nonfluent speech, a right facial droop, and 2/5 strength in the right arm. Noncontrast CT of the head and laboratory results are shown. Which of the following is the most appropriate next step in management? A. Intravenous alteplase administration B. Oral aspirin administration C. Intravenous labetalol administration D. Intravenous heparin infusion E. Mechanical thrombectomy without thrombolysis 발병 90분의 급성 허혈성 뇌졸중으로 CT에서 출혈이 배제됐고 혈당·혈소판·INR 모두 정상이라 정맥 혈전용해의 적응이다. 그러나 혈압이 224/118로, 185/110을 넘는 혈압은 혈전용해의 금기다 — 두개내출혈 위험 때문이다. 따라서 알테플라제 투여 전에 정맥 라베탈롤(또는 니카르디핀)로 혈압을 185/110 미만으로 낮추는 것이 다음 단계다. 창(4.5시간) 안이므로 혈압만 조절되면 혈전용해를 진행한다."
+  },
+  {
+   "id": "usmle-2026-0119",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Hypertrophic Pyloric Stenosis — Correct Fluids and Electrolytes Before Pyloromyotomy",
+   "tags": [
+    "pyloric-stenosis",
+    "metabolic-alkalosis",
+    "hypokalemia",
+    "pyloromyotomy",
+    "fluid-resuscitation"
+   ],
+   "source": "USMLE-style / MedKOS (pediatric surgery · pyloric stenosis)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0119.md",
+   "snippet": "A 5 week old boy, the firstborn child of healthy parents, is brought to the emergency department because of 8 days of vomiting after feeding that has become forceful and now follows every feed. The vomitus is nonbilious and nonbloody, and h",
+   "text": "Pediatrics Hypertrophic Pyloric Stenosis — Correct Fluids and Electrolytes Before Pyloromyotomy pyloric-stenosis metabolic-alkalosis hypokalemia pyloromyotomy fluid-resuscitation USMLE-style / MedKOS (pediatric surgery · pyloric stenosis) A 5 week old boy, the firstborn child of healthy parents, is brought to the emergency department because of 8 days of vomiting after feeding that has become forceful and now follows every feed. The vomitus is nonbilious and nonbloody, and he roots eagerly and appears hungry shortly after each episode. He has had fewer wet diapers over the past 2 days. He appears listless, the anterior fontanelle is sunken, and capillary refill time is 4 seconds. Abdominal examination shows a small, firm, mobile mass in the right upper quadrant. Laboratory and ultrasonographic findings are shown. Which of the following is the most appropriate next step in management? A. Pyloromyotomy within the next several hours B. Intravenous rehydration with correction of electrolytes C. Upper gastrointestinal contrast radiography D. Empiric acid suppression with thickened feedings E. Contrast enhanced computed tomography of the abdomen 생후 5주 첫째 아들의 수유 후 분출성 비담즙성 구토 + 구토 직후 배고파함 + 우상복부의 단단한 종괴 + 초음파에서 유문근 5.1 mm·유문관 19 mm = 비대성 유문협착 확진. 그러나 유문협착은 응급 수술이 아니라 '내과적 응급'이다 — 반복 구토로 저염소·저칼륨성 대사성 알칼리증과 탈수(모세혈관 재충만 4초, 함몰 대천문)가 와 있고, 교정 없이 마취하면 수술 후 무호흡 위험이 크다. 정답은 수액·전해질 교정을 먼저 하고, 알칼리증이 풀린 뒤(대략 Cl 100, HCO3 < 30) 유문근절개술을 시행하는 것이다."
+  },
+  {
+   "id": "usmle-2026-0118",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Internal Medicine",
+   "subtopic": "Atrial Fibrillation of 5 Days — Rate Control and Anticoagulation, Not Immediate Cardioversion",
+   "tags": [
+    "atrial-fibrillation",
+    "anticoagulation",
+    "CHA2DS2-VASc",
+    "cardioversion",
+    "rate-control",
+    "ECG"
+   ],
+   "source": "USMLE-style / MedKOS (cardiology · atrial fibrillation management)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0118.md",
+   "snippet": "A 62 year old man comes to the emergency department because of 5 days of palpitations, mild exertional dyspnea, and fatigue. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin. He does not use tobacco and",
+   "text": "Internal Medicine Atrial Fibrillation of 5 Days — Rate Control and Anticoagulation, Not Immediate Cardioversion atrial-fibrillation anticoagulation CHA2DS2-VASc cardioversion rate-control ECG USMLE-style / MedKOS (cardiology · atrial fibrillation management) A 62 year old man comes to the emergency department because of 5 days of palpitations, mild exertional dyspnea, and fatigue. He has hypertension and type 2 diabetes mellitus treated with lisinopril and metformin. He does not use tobacco and drinks alcohol only occasionally. He appears comfortable at rest. Cardiac examination shows an irregularly irregular rhythm without murmurs, and the lungs are clear. An electrocardiogram shows the rhythm in the figure. Which of the following is the most appropriate management at this time? A. Immediate synchronized electrical cardioversion B. Intravenous adenosine administration C. Pharmacologic cardioversion with intravenous amiodarone D. Rate control with metoprolol and daily aspirin E. Rate control with metoprolol and oral anticoagulation P파 없이 불규칙한 잔물결과 irregularly irregular한 QRS = 심방세동. 혈역학적으로 안정적이고 지속시간이 48시간을 넘었으므로(5일) 즉시 심율동전환(전기든 약물이든)은 좌심방 부속지 혈전 색전의 위험이 있어 금기다 — 3주 이상 항응고 후 또는 TEE로 혈전 배제 후에만 시행한다. CHA2DS2 VASc = 고혈압 1 + 당뇨 1 = 2점(남성)으로 항응고 적응이므로, 지금 할 일은 베타차단제 심박수 조절 + 경구 항응고 시작이다. 아스피린은 심방세동 뇌졸중 예방에 더는 권고되지 않는다."
+  },
+  {
+   "id": "usmle-2026-0117",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Physiology",
+   "subtopic": "High-Altitude Acclimatization — 2,3-BPG and the Rightward Shift That Improves Oxygen Unloading",
+   "tags": [
+    "high-altitude",
+    "2-3-BPG",
+    "oxygen-dissociation-curve",
+    "respiratory-alkalosis",
+    "acclimatization"
+   ],
+   "source": "USMLE-style / MedKOS (respiratory physiology · oxygen transport)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0117.md",
+   "snippet": "A 28 year old man flies from sea level to a research station at 3,900 m (12,800 ft). The next morning he has a mild headache, fatigue, and dyspnea when climbing stairs. He has no chronic medical conditions and takes no medications. Arterial",
+   "text": "Physiology High-Altitude Acclimatization — 2,3-BPG and the Rightward Shift That Improves Oxygen Unloading high-altitude 2-3-BPG oxygen-dissociation-curve respiratory-alkalosis acclimatization USMLE-style / MedKOS (respiratory physiology · oxygen transport) A 28 year old man flies from sea level to a research station at 3,900 m (12,800 ft). The next morning he has a mild headache, fatigue, and dyspnea when climbing stairs. He has no chronic medical conditions and takes no medications. Arterial blood gas analysis on room air is shown. He plans to remain at the station for a month. Which of the following changes will contribute most to improved oxygen unloading to his tissues over the next several days? A. Increased hemoglobin affinity for oxygen B. Decreased minute ventilation toward his sea level baseline C. Increased erythrocyte 2,3 bisphosphoglycerate concentration D. Increased renal reabsorption of filtered bicarbonate E. Decreased pulmonary vascular resistance 고지대 저산소혈증은 과호흡을 일으켜 급성 호흡성 알칼리증(pH 7.47, PaCO2 29)을 만든다. 알칼리증은 산소 헤모글로빈 해리곡선을 왼쪽으로 밀어 조직 산소 방출을 오히려 방해하는데, 수일에 걸쳐 적혈구 해당과정의 2,3 BPG 합성이 증가하면서 곡선을 오른쪽으로 되돌려 헤모글로빈 친화도를 낮추고 조직에서의 산소 방출을 개선한다. 신장은 HCO3⁻ 재흡수를 줄여(배설 증가) pH를 보상하고, 환기는 오히려 더 증가하며, 저산소성 폐혈관수축으로 폐혈관저항은 올라간다. 적혈구량 증가(EPO)는 수주가 걸리고 운반량을 늘릴 뿐 '방출'의 기전이 아니다."
+  },
+  {
+   "id": "usmle-2026-0116",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Biochemistry",
+   "subtopic": "McArdle Disease — Exercise Intolerance with Second Wind and Flat Lactate Curve",
+   "tags": [
+    "McArdle",
+    "glycogen-storage-disease",
+    "myophosphorylase",
+    "rhabdomyolysis",
+    "second-wind"
+   ],
+   "source": "USMLE-style / MedKOS (biochemistry · glycogen storage diseases)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0116.md",
+   "snippet": "A 17 year old boy is evaluated for recurrent episodes of muscle cramping and fatigue that begin within the first few minutes of intense exercise such as sprinting or carrying heavy loads. He has noticed that if he briefly slows down when sy",
+   "text": "Biochemistry McArdle Disease — Exercise Intolerance with Second Wind and Flat Lactate Curve McArdle glycogen-storage-disease myophosphorylase rhabdomyolysis second-wind USMLE-style / MedKOS (biochemistry · glycogen storage diseases) A 17 year old boy is evaluated for recurrent episodes of muscle cramping and fatigue that begin within the first few minutes of intense exercise such as sprinting or carrying heavy loads. He has noticed that if he briefly slows down when symptoms start, he can then continue exercising with much less difficulty. Two days ago, after a strenuous workout, he passed dark brown urine. He takes no medications or supplements, and his parents are healthy. An ischemic forearm exercise test is performed; results are shown. A deficiency of which of the following enzymes is the most likely cause of this patient's condition? A. Muscle glycogen phosphorylase B. Glucose 6 phosphatase C. Lysosomal acid alpha 1,4 glucosidase D. Carnitine palmitoyltransferase II E. Glycogen debranching enzyme 고강도 운동 시작 수분 내 경련 + 잠시 쉬면 호전되는 second wind 현상 + 운동 후 미오글로빈뇨(잠혈 양성이나 적혈구 없음) + 허혈성 전완운동검사에서 젖산이 오르지 않고 암모니아만 과도하게 오르는 소견은 근육 글리코겐 분해가 막힌 McArdle병(GSD V, 근육 glycogen phosphorylase 결핍)의 전형이다. 근육이 저장 글리코겐을 쓰지 못해 무산소 해당이 막히고(젖산 무증가), AMP 탈아미노화가 과활성화된다(암모니아 과상승)."
+  },
+  {
+   "id": "usmle-2026-0115",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Immunology",
+   "subtopic": "Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies",
+   "tags": [
+    "IgA-deficiency",
+    "transfusion-reaction",
+    "anaphylaxis",
+    "anti-IgA",
+    "immunodeficiency"
+   ],
+   "source": "USMLE-style / MedKOS (immunology · transfusion reactions)",
+   "confidence": "high",
+   "date": "2026-08-25",
+   "path": "content/usmle/usmle-2026-0115.md",
+   "snippet": "A 23 year old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episod",
+   "text": "Immunology Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies IgA-deficiency transfusion-reaction anaphylaxis anti-IgA immunodeficiency USMLE-style / MedKOS (immunology · transfusion reactions) A 23 year old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episode of prolonged watery diarrhea last year that resolved after treatment with metronidazole. Minutes after transfusion of crossmatch compatible packed red blood cells begins, she develops diffuse flushing, urticaria, wheezing, and hypotension. The transfusion is stopped and intramuscular epinephrine is given, with improvement. Which of the following best explains this patient's transfusion reaction? A. Recipient IgM directed against donor erythrocyte ABO antigens B. Donor antileukocyte antibodies reacting with recipient neutrophils C. Cytokines released from residual leukocytes during product storage D. Recipient antibodies directed against donor immunoglobulin A E. Anamnestic recipient IgG response against minor erythrocyte antigens 반복 부비동·중이 감염 + 지아르디아형 장기 설사의 병력은 선택적 IgA 결핍을 시사한다. IgA가 거의 없는 환자는 혈액제제 속 공여자 IgA를 외래 항원으로 인식해 항 IgA 항체(IgE 또는 IgG)를 만들 수 있고, 수혈 수분 내 아나필락시스(홍조·두드러기·기관지연축·저혈압)가 온다. DAT 음성·유리 헤모글로빈 정상으로 용혈성 반응이 배제되고, 트립타제 상승이 비만세포 매개 반응을 뒷받침한다. 예방은 세척 적혈구 또는 IgA 결핍 공여자 제제."
+  },
   {
    "id": "kmle-2026-0713",
    "type": "kmle",
@@ -715,6 +836,40 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0376.md",
    "snippet": "문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag leg posterior layers quiz.svg , 라벨판은 docs/assets/anatomy/diag leg posterior layers labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 두 층의 색 구분과 안쪽복사 뒤 통과 순서가 함께 있다.",
    "text": "Anatomy 종아리 뒤칸 두 층 태깅 연습판 (자체 제작 도해) 3회차 · 다리 spotter 도해 3회차 종아리뒤칸 정강신경 뒤정강동맥 발목굴 예습시험 3회차(0825) 허미선pf.pdf〔과거 학기 파일명 — 2026 담당·회차 근거 아님〕 §종아리 뒤부위 + 3회차 종합정리(anatomy-2026-0022) 5절 근육표 문제 자체 제작 도해 spotter — 퀴즈판은 docs/assets/anatomy/diag leg posterior layers quiz.svg , 라벨판은 docs/assets/anatomy/diag leg posterior layers labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 두 층의 색 구분과 안쪽복사 뒤 통과 순서가 함께 있다."
+  },
+  {
+   "id": "paper-2026-0471",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Actas espanolas de psiquiatria",
+   "confidence": "medium",
+   "date": "2026-08-23",
+   "path": "content/papers/2026/2026-08-23_paper-2026-0471_risk_factors_for_posttraumatic_stress_disorder_in_mexican_ps.md",
+   "snippet": "Title Risk Factors for Posttraumatic Stress Disorder in Mexican Psychiatric Trauma Survivors Authors Mora Ortiz Laura Estefanía, Merlín García Ilyamín, Robles García Rebeca Journal / DOI Actas espanolas de psiquiatria · DOI: 10.62641/aep.v5",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Actas espanolas de psiquiatria Title Risk Factors for Posttraumatic Stress Disorder in Mexican Psychiatric Trauma Survivors Authors Mora Ortiz Laura Estefanía, Merlín García Ilyamín, Robles García Rebeca Journal / DOI Actas espanolas de psiquiatria · DOI: 10.62641/aep.v54i4.2253 · PMID: 42633511 https://pubmed.ncbi.nlm.nih.gov/42633511/ Abstract BACKGROUND: There is extensive evidence linking specific sociodemographic and clinical factors to increased vulnerability for Posttraumatic Stress Disorder (PTSD). However, most studies have focused on community samples, and little is known about how such factors shape PTSD risk in clinical psychiatric settings in Latin America, where trauma exposure is highly prevalent. The present study addresses these gaps by examining sociodemographic characteristics and specific types of traumatic events linked to PTSD diagnosis among individuals receiving care at a tertiary mental health facility in Mexico City, Mexico. METHODS: A cross sectional, observational design was employed, enrolling 160 psychiatric patients. Participants were assessed for exposure to potentially traumatic events using the Life Events Checklist for DSM 5 (LEC 5). Probable PTSD was initially identified with the PTSD Checklist for DSM 5 (PCL 5), followed by diagnostic confirmation using the Clinician Administered PTSD Scale for DSM 5 (CAPS 5). Sociodemographic data, including age, sex, and educational attainment, were also collected. Multivariate logistic regression was used to identify PTSD predictors, with a significance set at p < 0.05. RESULTS: The frequency of PTSD in the sample was 31.9%. Multivariate logistic regression analysis revealed that sexual aggression was the strongest independent predictor of PTSD (odds ratio (OR) = 38.49; 95% confidence interval (CI): 10.59 139.95; p < 0.001). Other significant predictors included being female (OR = 8.09; 95% CI: 1.60 40.86; p < 0.001) and over 30 years old (OR = 2.86; 95% CI: 1.13 7.24; p < 0.05). The model demonstrated good overall fit (Pearson χ2 p = 0.673) and explained a moderate proportion of the variance (Nagelkerke R2 = 0.550). CONCLUSIONS: Sexual aggression, female sex, and older age were significantly associated with a PTSD diagnosis among psychiatric trauma survivors. These findings underscore the importance of incorporating trauma informed care principles and systematic screening for sexual violence into mental health settings to improve diagnostic accuracy and optimize interventions for this population. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0470",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Actas espanolas de psiquiatria",
+   "confidence": "medium",
+   "date": "2026-08-23",
+   "path": "content/papers/2026/2026-08-23_paper-2026-0470_risk_factors_for_anxiety_or_depression_in_patients_with_stro.md",
+   "snippet": "Title Risk Factors for Anxiety or Depression in Patients With Stroke During the Acute and Recovery Phases: An Independent Cohort Study Authors Li Mei, Ge Chuchu, Han Yu, Tang Yan, Zhao Li Journal / DOI Actas espanolas de psiquiatria · DOI: ",
+   "text": "Cardiology scraped pubmed PubMed / Actas espanolas de psiquiatria Title Risk Factors for Anxiety or Depression in Patients With Stroke During the Acute and Recovery Phases: An Independent Cohort Study Authors Li Mei, Ge Chuchu, Han Yu, Tang Yan, Zhao Li Journal / DOI Actas espanolas de psiquiatria · DOI: 10.62641/aep.v54i4.2286 · PMID: 42633506 https://pubmed.ncbi.nlm.nih.gov/42633506/ Abstract BACKGROUND: To identify the overall risk factors for any clinically significant anxiety or depressive anxiety or depression in patients with stroke in the acute and recovery phase cohorts, compare the differences in overall risk factors between two independent patient cohorts at different disease stages, so as to provide a reliable basis for early screening and staged intervention of post stroke emotional anxiety or depression. METHODS: This is a retrospective study that included 252 stroke patients admitted to Nantong Rici Hospital Affiliated to Yangzhou University from August 2023 to October 2025, which were divided into two independent cohorts: the acute phase cohort (7 14 days after onset, n = 143) and the recovery phase cohort (3 months after onset, n = 109), all eligible patients were assigned to either the anxiety or depression group or the non anxiety or depression group according to the 14 item Hamilton Anxiety Rating Scale (HAMA 14) and 24 item Hamilton Depression Rating Scale (HAMD 24). Following univariate analysis based screening of potential risk factors, the significantly different indicators were further included in the multivariate Logistic regression model to identify independent determinants and clarify differences across stages. RESULTS: In the acute phase cohort, the incidence of anxiety or depression was 30.07% (43/143), and the independent risk factors identified were age [odds ratio (OR) = 1.23, 95% confidence interval (CI): 1.10 1.38], illiterate educational level (OR = 8.15, 95% CI: 2.28 29.12), no dedicated care (OR = 5.52, 95% CI: 1.58 19.34), hemorrhagic stroke (OR = 6.39, 95% CI: 1.61 25.30), multiple lesions (OR = 5.07, 95% CI: 1.31 19.66), National Institutes of Health Stroke Scale (NIHSS) score (OR = 1.25, 95% CI: 1.03 1.52), and combined atrial fibrillation (AF) (OR = 5.38, 95% CI: 1.20 24.09) (p all < 0.05). In the recovery phase cohort, the incidence of anxiety or depression was 25.69% (28/109), and the independent risk factorsidentified were age (OR = 1.21, 95% CI: 1.05 1.39), combined diabetes mellitus (DM) (OR = 4.63, 95% CI: 1.18 18.20), AF (OR = 3.94, 95% CI: 1.07 14.45), and coronary heart disease (CHD) (OR = 5.86, 95% CI: 1.45 23.73) (p all < 0.05). Age and combined AF were the common independent risk factors in both cohorts. CONCLUSIONS: There are differences in the risk factors for anxiety/depression between independent stroke patients cohorts at different disease stages. Clinically, individualized intervention should be carried out according to the key risk factors of each disease stage to reduce the risk of anxiety or depression. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-08-23",
