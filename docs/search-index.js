@@ -1,34 +1,34 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-24",
+ "generated": "2026-08-25",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1769,
+  "total": 1787,
   "byType": {
+   "anatomy": 497,
    "usmle": 108,
-   "anatomy": 490,
+   "paper": 482,
    "kmle": 683,
-   "paper": 471,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 490,
-   "Cardiology": 143,
-   "Nephrology": 124,
-   "Infectious Disease": 100,
-   "Pediatrics": 79,
-   "Hematology-Oncology": 74,
-   "Pathology": 66,
+   "Anatomy": 497,
+   "Cardiology": 147,
+   "Nephrology": 125,
+   "Infectious Disease": 101,
+   "Pediatrics": 80,
+   "Hematology-Oncology": 75,
+   "Pathology": 67,
    "Obstetrics & Gynecology": 53,
    "Neurology": 52,
    "Psychiatry": 51,
-   "Surgery": 48,
+   "Surgery": 49,
    "Endocrinology": 44,
+   "Laboratory Medicine": 44,
    "Gastroenterology": 43,
-   "Laboratory Medicine": 43,
    "Pulmonology": 43,
    "Dermatology": 42,
    "General Surgery": 42,
@@ -53,13 +53,159 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1072,
-   "medium": 648,
+   "high": 1079,
+   "medium": 659,
    "low": 49
   },
-  "tagCount": 2518
+  "tagCount": 2529
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-26",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-26",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/daily/2026-08-26.md",
+   "snippet": "오늘의 학습 (2026 08 26 · t1 prep) 다음 수업/시험: 2026 08 27 큰가슴근부위, 가슴벽, 얼굴·표정근육·귀밑샘·얼굴 신경/혈관·씹기근육·입술·바깥코·바깥귀 Tagging 1까지 15일 · Tagging 2까지 54일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 45개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-26 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 26 · t1 prep) 다음 수업/시험: 2026 08 27 큰가슴근부위, 가슴벽, 얼굴·표정근육·귀밑샘·얼굴 신경/혈관·씹기근육·입술·바깥코·바깥귀 Tagging 1까지 15일 · Tagging 2까지 54일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 45개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0387",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "입술·바깥코·바깥귀 — 연골 골격과 신경 영역의 경계",
+   "tags": [
+    "distinction",
+    "4회차",
+    "입술",
+    "볼굴대",
+    "바깥코",
+    "바깥귀",
+    "삼차신경",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §입술·바깥코·바깥귀 + 4회차 서브노트(anatomy-2026-0111) 1·3·4절",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0387.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 입술·바깥코·바깥귀 — 연골 골격과 신경 영역의 경계 4회차 · 머리 distinction 4회차 입술 볼굴대 바깥코 바깥귀 삼차신경 예습시험 4회차(2026-08-27) 실습주제 §입술·바깥코·바깥귀 + 4회차 서브노트(anatomy-2026-0111) 1·3·4절 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0386",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "큰가슴근부위 — 두 가슴근신경의 대조와 젖샘의 표지점·림프흐름",
+   "tags": [
+    "relation",
+    "4회차",
+    "큰가슴근",
+    "작은가슴근",
+    "가슴근신경",
+    "젖샘",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §큰가슴근부위 + SESSION_DETAILS[4] 응용과제 '젖꼭지 표지점' + 4회차 서브노트(anatomy-2026-0111) 6절 큰가슴근부위 표",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0386.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 큰가슴근부위 — 두 가슴근신경의 대조와 젖샘의 표지점·림프흐름 4회차 · 가슴 relation 4회차 큰가슴근 작은가슴근 가슴근신경 젖샘 예습시험 4회차(2026-08-27) 실습주제 §큰가슴근부위 + SESSION_DETAILS[4] 응용과제 '젖꼭지 표지점' + 4회차 서브노트(anatomy-2026-0111) 6절 큰가슴근부위 표 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0385",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴동맥·얼굴정맥 주행 추적 — 가로얼굴동맥의 주인과 위험삼각",
+   "tags": [
+    "course-tracing",
+    "4회차",
+    "얼굴동맥",
+    "얼굴정맥",
+    "가로얼굴동맥",
+    "해면정맥굴",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §얼굴 혈관 + 4회차 서브노트(anatomy-2026-0111) 3절 혈관 표",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0385.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 얼굴동맥·얼굴정맥 주행 추적 — 가로얼굴동맥의 주인과 위험삼각 4회차 · 머리 course-tracing 4회차 얼굴동맥 얼굴정맥 가로얼굴동맥 해면정맥굴 예습시험 4회차(2026-08-27) 실습주제 §얼굴 혈관 + 4회차 서브노트(anatomy-2026-0111) 3절 혈관 표 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0384",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴신경 마비 — 중추성과 말초성의 감별, 귀밑샘과의 관계",
+   "tags": [
+    "clinical-application",
+    "4회차",
+    "얼굴신경",
+    "벨마비",
+    "귀밑샘",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §얼굴신경·귀밑샘 + SESSION_DETAILS[4] 응용과제 '귀밑샘-얼굴신경 관계' + 4회차 서브노트(anatomy-2026-0111) 2·8절",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0384.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 얼굴신경 마비 — 중추성과 말초성의 감별, 귀밑샘과의 관계 4회차 · 머리 clinical-application 4회차 얼굴신경 벨마비 귀밑샘 예습시험 4회차(2026-08-27) 실습주제 §얼굴신경·귀밑샘 + SESSION_DETAILS[4] 응용과제 '귀밑샘-얼굴신경 관계' + 4회차 서브노트(anatomy-2026-0111) 2·8절 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0383",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "씹기근육 네 개 대조 — 이는곳·닿는곳·작용·유일하게 입을 여는 근육",
+   "tags": [
+    "distinction",
+    "4회차",
+    "씹기근육",
+    "가쪽날개근",
+    "턱관절",
+    "인두굽이",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §씹기근육 + 4회차 서브노트(anatomy-2026-0111) 5절 씹기근육 표",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0383.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 씹기근육 네 개 대조 — 이는곳·닿는곳·작용·유일하게 입을 여는 근육 4회차 · 머리 distinction 4회차 씹기근육 가쪽날개근 턱관절 인두굽이 예습시험 4회차(2026-08-27) 실습주제 §씹기근육 + 4회차 서브노트(anatomy-2026-0111) 5절 씹기근육 표 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0382",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "삼차신경 세 가지 — 나오는 구멍·피부분포·운동지배",
+   "tags": [
+    "branch-tree",
+    "4회차",
+    "삼차신경",
+    "얼굴감각",
+    "큰귓바퀴신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §얼굴 신경 + SESSION_DETAILS[4] 응용과제 '삼차신경 가지·분포' + 4회차 서브노트(anatomy-2026-0111) 4·5절",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0382.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 삼차신경 세 가지 — 나오는 구멍·피부분포·운동지배 4회차 · 머리 branch-tree 4회차 삼차신경 얼굴감각 큰귓바퀴신경 예습시험 태깅 4회차(2026-08-27) 실습주제 §얼굴 신경 + SESSION_DETAILS[4] 응용과제 '삼차신경 가지·분포' + 4회차 서브노트(anatomy-2026-0111) 4·5절 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
   {
    "id": "usmle-2026-0120",
    "type": "usmle",
@@ -308,6 +454,196 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0377.md",
    "snippet": "문제 자체 제작 도해 태깅판 — 퀴즈판은 docs/assets/anatomy/diag intercostal layers quiz.svg , 라벨판은 docs/assets/anatomy/diag intercostal layers labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 층 순서와 VAN 배열, 앞뒤 동맥 문합 고리가 함께 있다.",
    "text": "Anatomy 갈비사이공간 층·다발 태깅 연습판 (자체 제작 도해) 4회차 · 가슴 layer-order 도해 4회차 갈비사이공간 신경혈관다발 VAN 흉관 예습시험 태깅 4회차(2026-08-27) 실습주제 §가슴벽 + 4회차 서브노트(anatomy-2026-0111) 7절 가슴벽·갈비사이 표 문제 자체 제작 도해 태깅판 — 퀴즈판은 docs/assets/anatomy/diag intercostal layers quiz.svg , 라벨판은 docs/assets/anatomy/diag intercostal layers labeled.svg . 정답 및 해설 정답·해설은 frontmatter. 라벨판에는 층 순서와 VAN 배열, 앞뒤 동맥 문합 고리가 함께 있다."
+  },
+  {
+   "id": "paper-2026-0482",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Heart rhythm",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0482_landmark_hrs_ehra_ecas_expert_consensus_statement_on_catheter_and_sur.md",
+   "snippet": "Title HRS/EHRA/ECAS expert Consensus Statement on catheter and surgical ablation of atrial fibrillation: recommendations for personnel, policy, procedures and follow up. A report of the Heart Rhythm Society (HRS) Task Force on catheter and ",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Heart rhythm Title HRS/EHRA/ECAS expert Consensus Statement on catheter and surgical ablation of atrial fibrillation: recommendations for personnel, policy, procedures and follow up. A report of the Heart Rhythm Society (HRS) Task Force on catheter and surgical ablation of atrial fibrillation Authors European Heart Rhythm Association (EHRA), European Cardiac Arrhythmia Scoiety (ECAS), American College of Cardiology (ACC), American Heart Association (AHA), Society of Thoracic Surgeons (STS), Calkins Hugh, Brugada Josep, Packer Douglas L, et al. Journal / DOI Heart rhythm · PMID: 17556213 https://pubmed.ncbi.nlm.nih.gov/17556213/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1044회 · RCR 30.49 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0481",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0481_landmark_guidelines_for_the_management_of_atrial_fibrillation_the_tas.md",
+   "snippet": "Title Guidelines for the management of atrial fibrillation: the Task Force for the Management of Atrial Fibrillation of the European Society of Cardiology (ESC) Authors Camm A John, Kirchhof Paulus, Lip Gregory Y H, Schotten Ulrich, Savelie",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology Title Guidelines for the management of atrial fibrillation: the Task Force for the Management of Atrial Fibrillation of the European Society of Cardiology (ESC) Authors Camm A John, Kirchhof Paulus, Lip Gregory Y H, Schotten Ulrich, Savelieva Irene, Ernst Sabine, Van Gelder Isabelle C, Al Attar Nawwar, et al. Journal / DOI Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology · DOI: 10.1093/europace/euq350 · PMID: 20876603 https://pubmed.ncbi.nlm.nih.gov/20876603/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1096회 · RCR 34.97 (분야평균=1.0) · NIH 상위 백분위 99.8. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0480",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "landmark",
+    "highly-cited",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the American College of Cardiology",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0480_landmark_acc_aha_2005_guideline_update_for_the_diagnosis_and_manageme.md",
+   "snippet": "Title ACC/AHA 2005 guideline update for the diagnosis and management of chronic heart failure in the adult: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines (Writing Committee to Up",
+   "text": "Cardiology landmark highly-cited pubmed PubMed / Journal of the American College of Cardiology Title ACC/AHA 2005 guideline update for the diagnosis and management of chronic heart failure in the adult: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines (Writing Committee to Update the 2001 Guidelines for the Evaluation and Management of Heart Failure) Authors Hunt Sharon Ann, American College of Cardiology, American Heart Association Task Force on Practice Guidelines (Writing Committee to Update the 2001 Guidelines for the Evaluation and Management of Heart Failure) Journal / DOI Journal of the American College of Cardiology · PMID: 16168273 https://pubmed.ncbi.nlm.nih.gov/16168273/ Why must read 파트(Cardiology) 내 고인용 랜드마크로 선정. 피인용 1131회 · RCR 30.34 (분야평균=1.0) · NIH 상위 백분위 99.7. (인용지표 출처: NIH iCite. 인용수는 시간에 따라 변하므로 재수집 시 갱신될 수 있음.) Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0479",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0479_when_surgical_intervention_becomes_a_risk_severe_drug_induce.md",
+   "snippet": "Title When Surgical Intervention Becomes a Risk: Severe Drug Induced Gingival Overgrowth and Clinical Decision Making in Alpers Huttenlocher Syndrome Authors Bueno Marcus Vinícius, Delgado Renata Zoraida Rizental, Ortega Karem, Franco Julia",
+   "text": "Surgery scraped pubmed PubMed / Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry Title When Surgical Intervention Becomes a Risk: Severe Drug Induced Gingival Overgrowth and Clinical Decision Making in Alpers Huttenlocher Syndrome Authors Bueno Marcus Vinícius, Delgado Renata Zoraida Rizental, Ortega Karem, Franco Juliana Bertoldi Journal / DOI Special care in dentistry : official publication of the American Association of Hospital Dentists, the Academy of Dentistry for the Handicapped, and the American Society for Geriatric Dentistry · DOI: 10.1111/scd.70241 · PMID: 42635616 https://pubmed.ncbi.nlm.nih.gov/42635616/ Abstract INTRODUCTION: Alpers Huttenlocher syndrome (AHS) is an ultra rare, autosomal recessive mitochondrial encephalopathy caused by pathogenic POLG variants, characterized by refractory epilepsy, hepatic dysfunction, and progressive neurodegeneration. Drug induced gingival overgrowth (DIGO) is a recognized complication of anticonvulsant and immunosuppressive therapy, particularly in medically complex patients. This report describes severe DIGO in a child with genetically confirmed AHS and explores the implications for multidisciplinary dental management. METHODS: A CARE compliant case analysis was conducted in a five year old girl with AHS, status post living donor liver transplantation, chronically hospitalized in a long term intensive care unit. Clinical findings, pharmacologic exposures, multidisciplinary decision making, and conservative oral management strategies were systematically documented. RESULTS: The patient, ventilator dependent and gastrostomy fed, had prolonged exposure to phenytoin, sodium valproate, topiramate, and tacrolimus without prior dental surveillance. Examination revealed severe fibrotic maxillary gingival overgrowth, delayed tooth eruption, and functional compromise. Given her profound systemic fragility, gingivoplasty under general anesthesia was contraindicated. A structured conservative protocol including 0.12% chlorhexidine, mucosal care, and continuous dental follow up was implemented to reduce inflammatory and infectious burden. CONCLUSION: This case underscores the necessity of integrating dental care into the multidisciplinary management of rare mitochondrial disorders and represents, to our knowledge, the first reported association between AHS and severe DIGO. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0478",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of evaluation in clinical practice",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0478_a_12_month_trial_based_economic_evaluation_comparing_positiv.md",
+   "snippet": "Title A 12 Month Trial Based Economic Evaluation Comparing Positive Parenting Program (Triple P) and Circle of Security Parenting Program (COSP) Versus Treatment as Usual for Families With Young Children (2 6 Years) Authors Tarride Jean Eri",
+   "text": "Pediatrics scraped pubmed PubMed / Journal of evaluation in clinical practice Title A 12 Month Trial Based Economic Evaluation Comparing Positive Parenting Program (Triple P) and Circle of Security Parenting Program (COSP) Versus Treatment as Usual for Families With Young Children (2 6 Years) Authors Tarride Jean Eric, Blackhouse Gord, Harvey Younis Natalie, Rieder Amber D, Melendez Torres G J, Joshi Divya, Demy Jazzmin, MacMillan Harriet, et al. Journal / DOI Journal of evaluation in clinical practice · DOI: 10.1111/jep.70567 · PMID: 42633699 https://pubmed.ncbi.nlm.nih.gov/42633699/ Abstract BACKGROUND: A 12 month trial economic evaluation was conducted to compare the Triple P Positive Parenting Program (Triple P) versus treatment as usual (TAU) and the Circle of Security Parenting Program (COSP) versus TAU from a societal perspective. METHODS: Trial data were used to determine the costs of delivering the interventions and the 12 month costs associated with children's health and social care service use based on the Child and Adolescent Service Use Schedule questionnaire, which was completed by caregivers of children aged 2 6. All costs were expressed in 2024 Canadian dollars. To calculate quality adjusted life years (QALYs), caregivers documented their children's quality of life using the Health Status Classification System Preschool Version (HSCSPV) and the Health Utility Index 3 for children less or more than 5 years of age, respectively. Cost effectiveness acceptability curves were used to represent the uncertainty. Several sensitivity analyses were conducted (e.g., change in Triple P intervention costs). RESULTS: The trial recruited 502 caregivers (93% female, mean age [standard deviation] of 36 years [6.7]) of 502 children (41% female, mean age of 3.8 years [SD = 1.4]). The differences in 12 month societal costs and QALYs between Triple P and TAU were $121 (95% Confidence interval [CI]: $258, $486) and 0.009 (95% CI: 0.018, 0.039), respectively. The differences in 12 month societal costs and QALYs between COSP and TAU were $253 (95% CI: $552, $40) and 0.004 (95% CI: 0.026, 0.035), respectively. Assuming that society was willing to spend up to $100,000 for each additional QALY gained, the probabilities that Triple P and COSP were cost effective compared to TAU were 0.71 and 0.68, respectively. The results of the sensitivity analyses were consistent with the main analyses. CONCLUSIONS: The trial results suggest that compared to TAU, Triple P and COSP represent efficient use of public resources. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0477",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / International journal of nursing knowledge",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0477_clinical_validation_of_the_nursing_diagnosis_of_inadequate_n.md",
+   "snippet": "Title Clinical validation of the nursing diagnosis of inadequate nutritional intake in children with cancer Authors Teixeira Iane Ximenes, Matos Natália Cabrera, de Oliveira Lopes Marcos Venícios, da Silva Viviane Martins, do Nascimento Ama",
+   "text": "Laboratory Medicine scraped pubmed PubMed / International journal of nursing knowledge Title Clinical validation of the nursing diagnosis of inadequate nutritional intake in children with cancer Authors Teixeira Iane Ximenes, Matos Natália Cabrera, de Oliveira Lopes Marcos Venícios, da Silva Viviane Martins, do Nascimento Amanda Laryssa Gomes, Cavalcante Yanka Alcântara, Dos Santos Ana Beatriz Oliveira Marques, Mouta Daniele Paula Alves Journal / DOI International journal of nursing knowledge · DOI: 10.1177/20473087261450939 · PMID: 42635550 https://pubmed.ncbi.nlm.nih.gov/42635550/ Abstract PurposeTo clinically validate the nursing diagnosis \"Inadequate Nutritional Intake\" based on elements identified within a specific situation theory framework in the context of children with cancer.MethodThis is a diagnostic accuracy study following the Standards for Reporting Diagnostic Accuracy Studies (STARD) protocol. Specifically, it refers to the clinical validation phase of the nursing diagnosis Inadequate nutritional intake, using a cross sectional design. The study was conducted in a tertiary pediatric hospital with a sample of 69 children diagnosed with cancer.FindingsA total of 11 clinical indicators demonstrated diagnostic accuracy above 50%, including: ascites, low weight for age ≤2 SD, cachexia, mid upper arm circumference < 10th percentile, fatigue, pale mucous membranes, dry mucosa, dry skin, weight loss greater than 5% within 1 month, compromised immune response, and delayed wound healing. The primary etiological factors identified in this study were chemotherapy, economic disadvantage, inadequate dietary pattern, insufficient dietary intake, rejection of hospital food, and family food culture. The nursing diagnosis had a prevalence of 7.25% among the participating children.ConclusionsDespite the low prevalence, this study highlights that inadequate nutritional intake is a real and complex health issue in this population, with multiple etiological factors requiring a precise and systematic assessment for early identification by healthcare professionals, particularly nurses. This underscores the importance of research focused on refining nursing diagnoses in specific populations.Implications for nursing practiceValidation studies such as this enhance the accuracy and evidence based nature of nursing practice, while also supporting collaborative decision making for addressing nutritional issues in children with cancer, considering the various etiological factors involved. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0476",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Interdisciplinary cardiovascular and thoracic surgery",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0476_angiosarcoma_in_the_setting_of_vascular_procedures_a_systema.md",
+   "snippet": "Title Angiosarcoma in the setting of vascular procedures: A systematic review and our experiences Authors Lu Phil Yi Jun, Ding Joel, Fung Casey Hiu Ching, Davis Michelle, Westcott Mark, Jedynak Justin, Lahham Yahya Journal / DOI Interdiscip",
+   "text": "Pathology scraped pubmed PubMed / Interdisciplinary cardiovascular and thoracic surgery Title Angiosarcoma in the setting of vascular procedures: A systematic review and our experiences Authors Lu Phil Yi Jun, Ding Joel, Fung Casey Hiu Ching, Davis Michelle, Westcott Mark, Jedynak Justin, Lahham Yahya Journal / DOI Interdisciplinary cardiovascular and thoracic surgery · DOI: 10.1093/icvts/ivag236 · PMID: 42635559 https://pubmed.ncbi.nlm.nih.gov/42635559/ Abstract OBJECTIVES: Angiosarcoma is a rare, aggressive endothelial malignancy with a poor prognosis; diagnosis is often delayed by vague symptoms, nonspecific imaging and challenging histopathology. Case reports have suggested an association with prior vascular procedures, with or without prosthetic material, but no causal link is established. We reviewed angiosarcoma across the full spectrum of vascular reconstruction. METHODS: We systematically reviewed English language human studies in PubMed, Embase and the Cochrane Library for histologically confirmed angiosarcomas diagnosed after and anatomically related to vascular procedures. The review was registered on PROSPERO (CRD42024602643). RESULTS: We describe three patients with metastatic angiosarcoma contiguous with vascular prostheses: a 75 year old male with left inguinal angiosarcoma seven years after PTFE bypass grafting; a 69 year old male with angiosarcoma within the aneurysm sac seven years after endovascular aneurysm repair (EVAR); and an 80 year old male with intraluminal angiosarcoma within an EVAR limb presenting as distal embolisation. Systematic review identified 44 studies comprising 46 additional cases. Including these, 49 patients were analysed: 27 associated with endovascular prostheses, 14 with open prosthetic or mixed grafts, and 8 with autologous vein bypass. Mean diagnostic latency was 7 years (range 5 months to 18 years); mean age 70.5 years; 12.2% were female. CONCLUSIONS: Angiosarcoma is difficult to diagnose given its nonspecific presentation but should be considered in atypical or refractory post procedural presentations. This is the largest synthesis to date and the first to describe intraluminal EVAR limb angiosarcoma with distal embolisation. Inclusion of autologous vein reconstructions argues against a purely prosthetic material explanation; further investigation is needed to clarify causality. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0475",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0475_uncoupling_type_i_interferon_benefits_from_inflammatory_toxi.md",
+   "snippet": "Title Uncoupling Type I Interferon Benefits From Inflammatory Toxicity: Transformer Prioritized Precision Agonists for Potent and Safer Cancer Immunotherapy Authors Guo Xuefei, Zhao Yang, Rong Xianle, Chen Xingyu, Wang Xiao, Liu Tianyi, Xie",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Advanced science (Weinheim, Baden-Wurttemberg, Germany) Title Uncoupling Type I Interferon Benefits From Inflammatory Toxicity: Transformer Prioritized Precision Agonists for Potent and Safer Cancer Immunotherapy Authors Guo Xuefei, Zhao Yang, Rong Xianle, Chen Xingyu, Wang Xiao, Liu Tianyi, Xie Yunfei, Zou Yushu, et al. Journal / DOI Advanced science (Weinheim, Baden Wurttemberg, Germany) · DOI: 10.1002/advs.77269 · PMID: 42635620 https://pubmed.ncbi.nlm.nih.gov/42635620/ Abstract Paclitaxel (PTX) chemotherapy is constrained by an \"immunomodulatory paradox,\" where antitumor Type I Interferon (IFN I) activation is coupled with detrimental pro inflammatory cascades. To address this challenge, we developed Deep Learning for Innate Immunity Modulatory Potential (DLINP), a Transformer based framework designed to identify precision immunomodulators that uncouple IFN I induction from deleterious inflammatory signaling. Screening 123 million entities identified Co68 an organometallic PNP pincer complex as a dual functional agent with superior potency to conventional taxanes. In pancreatic ductal adenocarcinoma (PDAC) models, Co68 elicited robust antitumor responses that exceeded those of the gold standard STING agonist DMXAA. Single cell and spatial transcriptomics revealed that Co68 selectively re engineered the myeloid compartment, reprogramming tumor associated macrophages toward an interferon stimulated gene (ISG) high phenotype while quenching the pro inflammatory IL1β PGE2 feedback loop. This reconfiguration converted \"cold\" tumor microenvironments into \"hot\" landscapes, enhancing NK and CD8+ T cell recruitment and synergy with anti PD 1 therapy. Mechanistically, Co68 engages the TLR4 MD2 complex via a non canonical binding mode, bifurcating innate signaling: triggering the TLR4 TRIF IFN I axis while attenuating NF κB driven inflammation through an early, IFNAR independent TLR4 SYK STAT1 pathway. Collectively, Co68 represents a taxane inspired precision therapeutic that uncouples beneficial antiviral like immunity from pathogenic inflammation, offering a transformative strategy for refractory solid tumors. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0474",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of diabetes investigation",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0474_use_of_glucagon_like_peptide_1_receptor_agonists_is_associat.md",
+   "snippet": "Title Use of glucagon like peptide 1 receptor agonists is associated with inadequate bowel preparation for colonoscopy in patients with diabetes Authors Ogawa Osamu Journal / DOI Journal of diabetes investigation · DOI: 10.1111/jdi.70426 · ",
+   "text": "Nephrology scraped pubmed PubMed / Journal of diabetes investigation Title Use of glucagon like peptide 1 receptor agonists is associated with inadequate bowel preparation for colonoscopy in patients with diabetes Authors Ogawa Osamu Journal / DOI Journal of diabetes investigation · DOI: 10.1111/jdi.70426 · PMID: 42635465 https://pubmed.ncbi.nlm.nih.gov/42635465/ Abstract AIMS/INTRODUCTION: Glucagon like peptide 1 receptor agonists (GLP 1RAs) delay gastric emptying and may impair bowel preparation for colonoscopy. However, evidence in Asian populations is limited, and the impact of dosing frequency remains unclear. We examined the association between GLP 1RA use and inadequate bowel preparation in Japanese patients with diabetes and compared weekly and daily formulations. MATERIALS AND METHODS: This single center retrospective observational study included Japanese patients with diabetes who underwent colonoscopy at Kameda Medical Center between October 2021 and September 2024. Bowel preparation quality was assessed using the Aronchick scale; fair, poor, and inadequate were classified as inadequate preparation. Propensity score matching was performed using age, sex, chronic kidney disease, HbA1c, and insulin use. Additional multivariable logistic regression and sensitivity analyses were performed. RESULTS: Among 997 eligible patients, 90 propensity score matched pairs were identified. Inadequate preparation was more frequent in GLP 1RA users than non users after matching (32.2% vs 16.7%; relative risk 1.933, 95% CI 1.115 3.353; P = 0.024). Additional analyses showed similar directional associations, although statistical significance was attenuated. Weekly formulations were associated with a higher rate of inadequate preparation than daily formulations (44.2% vs 22.9%; relative risk 1.928, 95% CI 1.039 3.577; P = 0.044). CONCLUSIONS: In Japanese patients with diabetes, GLP 1RA use was associated with a higher rate of inadequate bowel preparation in the propensity score matched analysis, although additional adjusted analyses were not statistically significant. The finding for weekly formulations should be interpreted cautiously. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0473",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0473_historians_not_prophets_sepsis_temperature_trajectories_in_t.md",
+   "snippet": "Title Historians, Not Prophets: Sepsis Temperature Trajectories in the Machine Learning Age Authors Forbes Michael L Journal / DOI Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federatio",
+   "text": "Infectious Disease scraped pubmed PubMed / Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies Title Historians, Not Prophets: Sepsis Temperature Trajectories in the Machine Learning Age Authors Forbes Michael L Journal / DOI Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies · DOI: 10.1097/PCC.0000000000004045 · PMID: 42635489 https://pubmed.ncbi.nlm.nih.gov/42635489/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0472",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of neuroimaging : official journal of the American Society of Neuroimaging",
+   "confidence": "medium",
+   "date": "2026-08-24",
+   "path": "content/papers/2026/2026-08-24_paper-2026-0472_association_of_early_m2_pulsatility_index_ratio_with_outcome.md",
+   "snippet": "Title Association of Early M2 Pulsatility Index Ratio With Outcomes After Successful Endovascular Thrombectomy Authors Jazayeri Seyed Behnam, Phan Cattien, Pirahanchi Yasaman, Shifflett Ben, Eghbalnejadmofrad Amirmohammad, D'Souza Marissa, ",
+   "text": "Cardiology scraped pubmed PubMed / Journal of neuroimaging : official journal of the American Society of Neuroimaging Title Association of Early M2 Pulsatility Index Ratio With Outcomes After Successful Endovascular Thrombectomy Authors Jazayeri Seyed Behnam, Phan Cattien, Pirahanchi Yasaman, Shifflett Ben, Eghbalnejadmofrad Amirmohammad, D'Souza Marissa, Hu Tiffany, Batarseh Sanad, et al. Journal / DOI Journal of neuroimaging : official journal of the American Society of Neuroimaging · DOI: 10.1111/jon.70144 · PMID: 42635626 https://pubmed.ncbi.nlm.nih.gov/42635626/ Abstract BACKGROUND AND PURPOSE: We investigated whether early transcranial Doppler (TCD) ultrasound asymmetry indices could serve as bedside predictors of hemorrhagic transformation (HT) and 90 day outcome after successful endovascular thrombectomy (EVT). METHODS: Patients with successful reperfusion (thrombolysis in cerebral infarction [TICI] ≥2b) after M1 segment EVT who underwent bilateral TCD within 8 h post EVT were included. Ipsilateral to contralateral ratios for mean flow velocity (MFV) and pulsatility index (PI) were calculated for M1 (segment of the middle cerebral artery) and M2 (segment of the middle cerebral artery) segments. Multivariate logistic regression identified independent predictors of HT and poor 90 day outcome. RESULTS: Among seventy patients (mean age 69.9 ± 6.7 years; 58.5% male), TCD was performed 5.3 ± 1.6 h after EVT. HT occurred in 45 patients (64.2%). Independent predictors of HT were younger age (p = 0.012), higher baseline NIHSS (p = 0.025), lower M2 PI ratio (p < 0.0001), and higher M2 MFV ratio (p = 0.010). Parenchymatous hemorrhage was predicted only by lower M2 PI ratio (p < 0.001). Poor 90 day outcome occurred in 35.7% and was associated with older age (p = 0.027), atrial fibrillation (p = 0.002), lower M2 PI ratio (p = 0.004), and higher M1 MFV ratio (p = 0.043). An M2 PI ratio ≤0.79 was associated with poor 90 day outcome with 89% specificity and 80% sensitivity (area under the curve [AUC] 0.91). CONCLUSIONS: Early M2 PI ratio was associated with PH type HT and poor 90 day outcome; however, given the small sample size, wide confidence intervals, and lack of external validation, these findings remain hypothesis generating rather than ready to use prognostic tools. Larger studies are needed to confirm these preliminary observations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0713",
