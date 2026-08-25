@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1812,
+  "total": 1819,
   "byType": {
    "kmle": 715,
+   "anatomy": 497,
    "usmle": 108,
-   "anatomy": 490,
    "paper": 482,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 490,
+   "Anatomy": 497,
    "Cardiology": 149,
    "Nephrology": 127,
    "Infectious Disease": 103,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1104,
+   "high": 1111,
    "medium": 659,
    "low": 49
   },
-  "tagCount": 2575
+  "tagCount": 2586
  },
  "docs": [
   {
@@ -667,6 +667,152 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0714.md",
    "snippet": "58세 남자가 건강검진에서 심전도 이상을 지적받아 왔다. 평소 계단을 오를 때 가벼운 숨참이 있으나 실신·흉통·두근거림은 없다. 진찰에서 규칙적인 맥이 만져지고 심잡음은 없다. 활력징후는 자료와 같고 혈청 트로포닌은 정상이다. 제시된 12유도 심전도에서 확인되는 전도 이상은? A. 완전우각차단 B. 완전좌각차단 C. 조기흥분증후군(부전도로) D. 3도 방실차단 E. 좌심실비대 QRS 폭이 120 ms 이상이면서 I·V6에서 넓",
    "text": "Cardiology Complete Left Bundle Branch Block left-bundle-branch-block wide-qrs ecg conduction-block KMLE 2026 / Claude Routine · PTB-XL 58세 남자가 건강검진에서 심전도 이상을 지적받아 왔다. 평소 계단을 오를 때 가벼운 숨참이 있으나 실신·흉통·두근거림은 없다. 진찰에서 규칙적인 맥이 만져지고 심잡음은 없다. 활력징후는 자료와 같고 혈청 트로포닌은 정상이다. 제시된 12유도 심전도에서 확인되는 전도 이상은? A. 완전우각차단 B. 완전좌각차단 C. 조기흥분증후군(부전도로) D. 3도 방실차단 E. 좌심실비대 QRS 폭이 120 ms 이상이면서 I·V6에서 넓은 단상 R파와 중격 q파 소실, ST T의 불일치 변화를 보이면 완전좌각차단이다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-26",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-26",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/daily/2026-08-26.md",
+   "snippet": "오늘의 학습 (2026 08 26 · t1 prep) 다음 수업/시험: 2026 08 27 큰가슴근부위, 가슴벽, 얼굴·표정근육·귀밑샘·얼굴 신경/혈관·씹기근육·입술·바깥코·바깥귀 Tagging 1까지 15일 · Tagging 2까지 54일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 45개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-26 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 26 · t1 prep) 다음 수업/시험: 2026 08 27 큰가슴근부위, 가슴벽, 얼굴·표정근육·귀밑샘·얼굴 신경/혈관·씹기근육·입술·바깥코·바깥귀 Tagging 1까지 15일 · Tagging 2까지 54일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 45개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0387",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "입술·바깥코·바깥귀 — 연골 골격과 신경 영역의 경계",
+   "tags": [
+    "distinction",
+    "4회차",
+    "입술",
+    "볼굴대",
+    "바깥코",
+    "바깥귀",
+    "삼차신경",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §입술·바깥코·바깥귀 + 4회차 서브노트(anatomy-2026-0111) 1·3·4절",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0387.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 입술·바깥코·바깥귀 — 연골 골격과 신경 영역의 경계 4회차 · 머리 distinction 4회차 입술 볼굴대 바깥코 바깥귀 삼차신경 예습시험 4회차(2026-08-27) 실습주제 §입술·바깥코·바깥귀 + 4회차 서브노트(anatomy-2026-0111) 1·3·4절 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0386",
+   "type": "anatomy",
+   "unit": "4회차 · 가슴",
+   "topic": "Anatomy",
+   "subtopic": "큰가슴근부위 — 두 가슴근신경의 대조와 젖샘의 표지점·림프흐름",
+   "tags": [
+    "relation",
+    "4회차",
+    "큰가슴근",
+    "작은가슴근",
+    "가슴근신경",
+    "젖샘",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §큰가슴근부위 + SESSION_DETAILS[4] 응용과제 '젖꼭지 표지점' + 4회차 서브노트(anatomy-2026-0111) 6절 큰가슴근부위 표",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0386.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 큰가슴근부위 — 두 가슴근신경의 대조와 젖샘의 표지점·림프흐름 4회차 · 가슴 relation 4회차 큰가슴근 작은가슴근 가슴근신경 젖샘 예습시험 4회차(2026-08-27) 실습주제 §큰가슴근부위 + SESSION_DETAILS[4] 응용과제 '젖꼭지 표지점' + 4회차 서브노트(anatomy-2026-0111) 6절 큰가슴근부위 표 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0385",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴동맥·얼굴정맥 주행 추적 — 가로얼굴동맥의 주인과 위험삼각",
+   "tags": [
+    "course-tracing",
+    "4회차",
+    "얼굴동맥",
+    "얼굴정맥",
+    "가로얼굴동맥",
+    "해면정맥굴",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §얼굴 혈관 + 4회차 서브노트(anatomy-2026-0111) 3절 혈관 표",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0385.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 얼굴동맥·얼굴정맥 주행 추적 — 가로얼굴동맥의 주인과 위험삼각 4회차 · 머리 course-tracing 4회차 얼굴동맥 얼굴정맥 가로얼굴동맥 해면정맥굴 예습시험 4회차(2026-08-27) 실습주제 §얼굴 혈관 + 4회차 서브노트(anatomy-2026-0111) 3절 혈관 표 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0384",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "얼굴신경 마비 — 중추성과 말초성의 감별, 귀밑샘과의 관계",
+   "tags": [
+    "clinical-application",
+    "4회차",
+    "얼굴신경",
+    "벨마비",
+    "귀밑샘",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §얼굴신경·귀밑샘 + SESSION_DETAILS[4] 응용과제 '귀밑샘-얼굴신경 관계' + 4회차 서브노트(anatomy-2026-0111) 2·8절",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0384.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 얼굴신경 마비 — 중추성과 말초성의 감별, 귀밑샘과의 관계 4회차 · 머리 clinical-application 4회차 얼굴신경 벨마비 귀밑샘 예습시험 4회차(2026-08-27) 실습주제 §얼굴신경·귀밑샘 + SESSION_DETAILS[4] 응용과제 '귀밑샘-얼굴신경 관계' + 4회차 서브노트(anatomy-2026-0111) 2·8절 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0383",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "씹기근육 네 개 대조 — 이는곳·닿는곳·작용·유일하게 입을 여는 근육",
+   "tags": [
+    "distinction",
+    "4회차",
+    "씹기근육",
+    "가쪽날개근",
+    "턱관절",
+    "인두굽이",
+    "예습시험"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §씹기근육 + 4회차 서브노트(anatomy-2026-0111) 5절 씹기근육 표",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0383.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 씹기근육 네 개 대조 — 이는곳·닿는곳·작용·유일하게 입을 여는 근육 4회차 · 머리 distinction 4회차 씹기근육 가쪽날개근 턱관절 인두굽이 예습시험 4회차(2026-08-27) 실습주제 §씹기근육 + 4회차 서브노트(anatomy-2026-0111) 5절 씹기근육 표 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
+  },
+  {
+   "id": "anatomy-2026-0382",
+   "type": "anatomy",
+   "unit": "4회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "삼차신경 세 가지 — 나오는 구멍·피부분포·운동지배",
+   "tags": [
+    "branch-tree",
+    "4회차",
+    "삼차신경",
+    "얼굴감각",
+    "큰귓바퀴신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "4회차(2026-08-27) 실습주제 §얼굴 신경 + SESSION_DETAILS[4] 응용과제 '삼차신경 가지·분포' + 4회차 서브노트(anatomy-2026-0111) 4·5절",
+   "confidence": "high",
+   "date": "2026-08-26",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0382.md",
+   "snippet": "문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조.",
+   "text": "Anatomy 삼차신경 세 가지 — 나오는 구멍·피부분포·운동지배 4회차 · 머리 branch-tree 4회차 삼차신경 얼굴감각 큰귓바퀴신경 예습시험 태깅 4회차(2026-08-27) 실습주제 §얼굴 신경 + SESSION_DETAILS[4] 응용과제 '삼차신경 가지·분포' + 4회차 서브노트(anatomy-2026-0111) 4·5절 문제 stem·정답·해설은 frontmatter. 그림 없는 관계형 문항이다. 정답 및 해설 frontmatter의 answer · explanation 참조."
   },
   {
    "id": "usmle-2026-0120",
