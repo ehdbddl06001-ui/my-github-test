@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-24",
+ "generated": "2026-08-25",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
