@@ -1,45 +1,45 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-25",
+ "generated": "2026-08-26",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1819,
+  "total": 1833,
   "byType": {
+   "usmle": 114,
    "kmle": 715,
    "anatomy": 497,
-   "usmle": 108,
-   "paper": 482,
+   "paper": 490,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 497,
-   "Cardiology": 149,
-   "Nephrology": 127,
-   "Infectious Disease": 103,
-   "Pediatrics": 82,
-   "Hematology-Oncology": 75,
-   "Pathology": 67,
-   "Obstetrics & Gynecology": 55,
+   "Cardiology": 150,
+   "Nephrology": 128,
+   "Infectious Disease": 104,
+   "Pediatrics": 83,
+   "Hematology-Oncology": 76,
+   "Pathology": 69,
+   "Obstetrics & Gynecology": 56,
    "Neurology": 54,
-   "Psychiatry": 53,
-   "Surgery": 49,
+   "Psychiatry": 54,
+   "Surgery": 51,
    "Endocrinology": 46,
    "Gastroenterology": 45,
+   "Laboratory Medicine": 45,
    "Pulmonology": 45,
    "Dermatology": 44,
    "General Surgery": 44,
-   "Laboratory Medicine": 44,
    "Ophthalmology": 44,
    "Orthopedics": 44,
    "Rheumatology": 44,
    "Hematology": 43,
    "Physiology": 14,
-   "Pharmacology": 8,
+   "Pharmacology": 9,
+   "Microbiology": 8,
    "Biochemistry": 7,
-   "Microbiology": 7,
    "Immunology": 5,
    "Internal Medicine": 5,
    "Medical AI Lab": 4,
@@ -53,13 +53,135 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1111,
-   "medium": 659,
+   "high": 1117,
+   "medium": 667,
    "low": 49
   },
-  "tagCount": 2586
+  "tagCount": 2600
  },
  "docs": [
+  {
+   "id": "usmle-2026-0127",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Painless Third-Trimester Bleeding — Ultrasound Localizes the Placenta Before Any Digital Examination",
+   "tags": [
+    "placenta-previa",
+    "antepartum-hemorrhage",
+    "third-trimester",
+    "ultrasound",
+    "cesarean-history"
+   ],
+   "source": "USMLE-style / MedKOS (obstetrics · antepartum hemorrhage)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/usmle/usmle-2026-0127.md",
+   "snippet": "A 33 year old woman, gravida 3, para 2, at 32 weeks' gestation is brought to the emergency department because she awoke with bright red vaginal bleeding that soaked two pads. She reports no abdominal pain and no contractions. She has had no",
+   "text": "Obstetrics & Gynecology Painless Third-Trimester Bleeding — Ultrasound Localizes the Placenta Before Any Digital Examination placenta-previa antepartum-hemorrhage third-trimester ultrasound cesarean-history USMLE-style / MedKOS (obstetrics · antepartum hemorrhage) A 33 year old woman, gravida 3, para 2, at 32 weeks' gestation is brought to the emergency department because she awoke with bright red vaginal bleeding that soaked two pads. She reports no abdominal pain and no contractions. She has had no prenatal care during this pregnancy. Both previous children were delivered by cesarean section. The uterus is soft and nontender, and fundal height is consistent with dates. Vital signs, laboratory studies, and fetal monitoring are shown. Which of the following is the most appropriate next step in management? A. Digital cervical examination B. Sterile speculum examination C. Transabdominal ultrasonography D. Emergency cesarean delivery E. Intramuscular betamethasone administration 무통성 선홍색 질출혈 + 부드럽고 압통 없는 자궁 + 산전진찰 없음 + 제왕절개 2회 병력은 전치태반(유착태반 위험 포함)을 먼저 생각하게 한다. 태반 위치가 확인되기 전에는 어떤 손가락·기구 검사도 태반을 건드려 대량출혈을 일으킬 수 있다 — 다음 단계는 경복부 초음파로 태반 위치를 확인하는 것이다. 모체·태아가 안정적이므로 응급분만은 아직 적응이 아니다."
+  },
+  {
+   "id": "usmle-2026-0126",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "Acute Compartment Syndrome After Tibial Fracture — Clinical Diagnosis Mandates Immediate Fasciotomy",
+   "tags": [
+    "compartment-syndrome",
+    "tibial-fracture",
+    "fasciotomy",
+    "orthopedic-emergency"
+   ],
+   "source": "USMLE-style / MedKOS (surgery · orthopedic emergencies)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/usmle/usmle-2026-0126.md",
+   "snippet": "A 23 year old man is admitted after sustaining a closed midshaft tibial fracture in a soccer game; the leg is placed in a long posterior splint. Ten hours later he reports steadily worsening leg pain that is not relieved by repeated doses o",
+   "text": "Surgery Acute Compartment Syndrome After Tibial Fracture — Clinical Diagnosis Mandates Immediate Fasciotomy compartment-syndrome tibial-fracture fasciotomy orthopedic-emergency USMLE-style / MedKOS (surgery · orthopedic emergencies) A 23 year old man is admitted after sustaining a closed midshaft tibial fracture in a soccer game; the leg is placed in a long posterior splint. Ten hours later he reports steadily worsening leg pain that is not relieved by repeated doses of intravenous morphine. The splint and all circumferential dressings are removed. The anterior leg is tense and markedly swollen, passive movement of the toes produces severe pain, and sensation is decreased in the first dorsal web space. The dorsalis pedis and posterior tibial pulses are 2+ bilaterally. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Measurement of intracompartmental pressures B. Emergency fasciotomy C. Elevation of the limb above heart level with ice packs D. Escalation of opioid analgesia with reassessment in 2 hours E. CT angiography of the lower extremity 골절 후 마약성 진통제로 안 잡히는 통증, 수동 신전 시 격통, 팽팽한 종창, 깊은종아리신경 영역 감각저하 — 의식 있는 환자에서 급성 구획증후군의 임상 진단은 이것으로 충분하고, 다음 단계는 즉시 근막절개술이다. 압력 측정은 의식저하·소견이 모호할 때의 보조 수단이며, 맥박은 늦게까지 유지되므로 기다리는 근거가 못 된다."
+  },
+  {
+   "id": "usmle-2026-0125",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Lithium Toxicity Precipitated by Thiazide and NSAID — When Hemodialysis, Not Saline Alone, Is the Answer",
+   "tags": [
+    "lithium",
+    "toxicity",
+    "hemodialysis",
+    "thiazide",
+    "NSAID",
+    "bipolar-disorder"
+   ],
+   "source": "USMLE-style / MedKOS (psychiatry · mood stabilizer toxicity)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/usmle/usmle-2026-0125.md",
+   "snippet": "A 41 year old woman with bipolar I disorder maintained on lithium is brought to the emergency department by her family because of 2 days of worsening confusion, vomiting, and an unsteady gait. Three weeks ago she was started on hydrochlorot",
+   "text": "Psychiatry Lithium Toxicity Precipitated by Thiazide and NSAID — When Hemodialysis, Not Saline Alone, Is the Answer lithium toxicity hemodialysis thiazide NSAID bipolar-disorder USMLE-style / MedKOS (psychiatry · mood stabilizer toxicity) A 41 year old woman with bipolar I disorder maintained on lithium is brought to the emergency department by her family because of 2 days of worsening confusion, vomiting, and an unsteady gait. Three weeks ago she was started on hydrochlorothiazide for hypertension, and she has been taking naproxen daily for knee pain. Examination shows disorientation to time and place, dysarthria, a coarse tremor of both hands, and a wide based ataxic gait. Vital signs and laboratory studies are shown. Which of the following is the most appropriate next step in management? A. Intravenous isotonic saline with serial lithium levels B. Oral administration of activated charcoal C. Whole bowel irrigation with polyethylene glycol D. Discontinuation of lithium with recheck in 12 hours E. Hemodialysis via a temporary vascular catheter 티아자이드(근위세뇨관 리튬 재흡수 증가)와 NSAID(신혈류 감소)가 겹쳐 만든 만성 리튬중독이다. 리튬 3.6 mEq/L에 의식변화·운동실조 등 중증 신경독성이 있고 크레아티닌 2.3으로 신배설도 망가졌다 — 수액만으로는 제거가 안 되므로 혈액투석이 다음 단계다. 리튬은 단백결합이 없고 분포용적이 작아 투석으로 잘 제거된다."
+  },
+  {
+   "id": "usmle-2026-0124",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pharmacology",
+   "subtopic": "Atrial Flutter Unmasked by a Transient AV Nodal Blocker — A1 Receptor Potassium Channel Activation",
+   "tags": [
+    "adenosine",
+    "A1-receptor",
+    "AV-node",
+    "atrial-flutter",
+    "GIRK",
+    "antiarrhythmic"
+   ],
+   "source": "USMLE-style / MedKOS (pharmacology · antiarrhythmics)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/usmle/usmle-2026-0124.md",
+   "snippet": "A 58 year old man comes to the emergency department because of 6 hours of palpitations. He has no chest pain. His ECG is shown. Carotid sinus massage does not change the rhythm. A rapid intravenous bolus of a short acting agent is administe",
+   "text": "Pharmacology Atrial Flutter Unmasked by a Transient AV Nodal Blocker — A1 Receptor Potassium Channel Activation adenosine A1-receptor AV-node atrial-flutter GIRK antiarrhythmic USMLE-style / MedKOS (pharmacology · antiarrhythmics) A 58 year old man comes to the emergency department because of 6 hours of palpitations. He has no chest pain. His ECG is shown. Carotid sinus massage does not change the rhythm. A rapid intravenous bolus of a short acting agent is administered; within seconds, conduction through the atrioventricular node slows markedly, the degree of block increases, and regular atrial activity at approximately 300/min becomes clearly visible before the effect dissipates in less than 20 seconds. Which of the following mechanisms most likely mediated the administered drug's effect on the atrioventricular node? A. Blockade of L type calcium channels in nodal cells B. Antagonism of β1 adrenergic receptors C. Activation of A1 receptors that increases outward potassium conductance D. Blockade of fast sodium channels in His Purkinje fibers E. Selective inhibition of pacemaker funny current in the sinoatrial node 수 초 만에 작용하고 20초 안에 사라지는 방실결절 차단제는 아데노신뿐이다. 아데노신은 결절세포의 A1 수용체(Gi)를 활성화해 칼륨 외향전류(GIRK)를 열어 과분극시키고 cAMP를 낮춰 칼슘전류를 줄인다 — 방실전도가 일시에 끊기며 심방조동의 300/min 조동파가 드러난다."
+  },
+  {
+   "id": "usmle-2026-0123",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Microbiology",
+   "subtopic": "Subacute Endocarditis After Dental Extraction — Dextran-Mediated Adherence of Viridans Streptococci",
+   "tags": [
+    "viridans-streptococci",
+    "endocarditis",
+    "dextran",
+    "biofilm",
+    "dental-procedure"
+   ],
+   "source": "USMLE-style / MedKOS (microbiology · infective endocarditis)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/usmle/usmle-2026-0123.md",
+   "snippet": "A 47 year old man comes to the physician because of 3 weeks of low grade fever, malaise, and exertional dyspnea. Four weeks ago he underwent extraction of an infected molar. He has a history of mitral regurgitation from a myxomatous valve. ",
+   "text": "Microbiology Subacute Endocarditis After Dental Extraction — Dextran-Mediated Adherence of Viridans Streptococci viridans-streptococci endocarditis dextran biofilm dental-procedure USMLE-style / MedKOS (microbiology · infective endocarditis) A 47 year old man comes to the physician because of 3 weeks of low grade fever, malaise, and exertional dyspnea. Four weeks ago he underwent extraction of an infected molar. He has a history of mitral regurgitation from a myxomatous valve. Examination shows a holosystolic murmur at the apex and a few painless erythematous macules on the palms. Vital signs, laboratory studies, and echocardiography are shown. Which of the following properties of the causative organism most directly enabled it to colonize this patient's valve? A. Synthesis of extracellular dextran that binds fibrin–platelet deposits B. Elaboration of protein A that binds the Fc portion of IgG C. Expression of M protein that blocks complement deposition D. Production of coagulase that converts fibrinogen to fibrin E. Formation of a polysaccharide capsule that resists phagocytosis 발치 4주 뒤 아급성 경과 + 기저 판막질환 + α 용혈·옵토친 내성·담즙 비용해 사슬알균 = 비리단스 연쇄상구균(S. sanguinis 등)의 아급성 감염성 심내막염. 이 균은 설탕(sucrose)에서 세포외 덱스트란(글루칸)을 합성해 손상된 판막 표면의 섬유소 혈소판 응괴에 달라붙는다 — 판막 정착의 직접 기전이다."
+  },
+  {
+   "id": "usmle-2026-0122",
+   "type": "usmle",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "Chronic Myeloid Leukemia — Massive Leukocytosis with Basophilia Points to the t(9;22) Fusion",
+   "tags": [
+    "CML",
+    "BCR-ABL1",
+    "t9-22",
+    "basophilia",
+    "myeloproliferative",
+    "LAP-score"
+   ],
+   "source": "USMLE-style / MedKOS (pathology · myeloproliferative neoplasms)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/usmle/usmle-2026-0122.md",
+   "snippet": "A 58 year old man comes to the physician because of 3 months of fatigue, early satiety, and a 6 kg weight loss. He takes no medications. Examination shows a spleen palpable 8 cm below the left costal margin; there is no lymphadenopathy. Vit",
+   "text": "Pathology Chronic Myeloid Leukemia — Massive Leukocytosis with Basophilia Points to the t(9;22) Fusion CML BCR-ABL1 t9-22 basophilia myeloproliferative LAP-score USMLE-style / MedKOS (pathology · myeloproliferative neoplasms) A 58 year old man comes to the physician because of 3 months of fatigue, early satiety, and a 6 kg weight loss. He takes no medications. Examination shows a spleen palpable 8 cm below the left costal margin; there is no lymphadenopathy. Vital signs and laboratory studies are shown. Which of the following genetic abnormalities is most likely to be identified in this patient's hematopoietic cells? A. JAK2 V617F point mutation B. PML RARA fusion from t(15;17) C. MYC overexpression from t(8;14) D. BCR ABL1 fusion from t(9;22) E. FLT3 internal tandem duplication 심한 백혈구증가(18만)에 전 성숙단계 과립구가 고르게 나오고, 호염기구 증가·혈소판 증가·비장비대·낮은 LAP 점수가 겹치면 만성골수성백혈병(CML)이다. CML의 정의적 병변은 t(9;22)로 생기는 BCR ABL1 융합유전자 — 구성적으로 활성화된 티로신 키나아제가 과립구 계열을 증식시킨다. 모세포 2%는 만성기임을 말한다."
+  },
   {
    "id": "kmle-2026-0745",
    "type": "kmle",
@@ -934,6 +1056,142 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0115.md",
    "snippet": "A 23 year old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episod",
    "text": "Immunology Selective IgA Deficiency — Anaphylactic Transfusion Reaction from Anti-IgA Antibodies IgA-deficiency transfusion-reaction anaphylaxis anti-IgA immunodeficiency USMLE-style / MedKOS (immunology · transfusion reactions) A 23 year old woman is brought to the emergency department after a motor vehicle collision with an open femoral fracture and significant blood loss. Her history is notable for recurrent sinus and ear infections since childhood and an episode of prolonged watery diarrhea last year that resolved after treatment with metronidazole. Minutes after transfusion of crossmatch compatible packed red blood cells begins, she develops diffuse flushing, urticaria, wheezing, and hypotension. The transfusion is stopped and intramuscular epinephrine is given, with improvement. Which of the following best explains this patient's transfusion reaction? A. Recipient IgM directed against donor erythrocyte ABO antigens B. Donor antileukocyte antibodies reacting with recipient neutrophils C. Cytokines released from residual leukocytes during product storage D. Recipient antibodies directed against donor immunoglobulin A E. Anamnestic recipient IgG response against minor erythrocyte antigens 반복 부비동·중이 감염 + 지아르디아형 장기 설사의 병력은 선택적 IgA 결핍을 시사한다. IgA가 거의 없는 환자는 혈액제제 속 공여자 IgA를 외래 항원으로 인식해 항 IgA 항체(IgE 또는 IgG)를 만들 수 있고, 수혈 수분 내 아나필락시스(홍조·두드러기·기관지연축·저혈압)가 온다. DAT 음성·유리 헤모글로빈 정상으로 용혈성 반응이 배제되고, 트립타제 상승이 비만세포 매개 반응을 뒷받침한다. 예방은 세척 적혈구 또는 IgA 결핍 공여자 제제."
+  },
+  {
+   "id": "paper-2026-0490",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0490_intermediate_term_patient_reported_outcomes_after_foveal_tfc.md",
+   "snippet": "Title Intermediate Term Patient Reported Outcomes After Foveal TFCC Repair: Timing of Recovery and Successful Return to Sports or Work Authors Hong Daniel Y, Bailey Karsyn N, Goldfarb Charles A Journal / DOI The Journal of hand surgery · DO",
+   "text": "Surgery scraped pubmed PubMed / The Journal of hand surgery Title Intermediate Term Patient Reported Outcomes After Foveal TFCC Repair: Timing of Recovery and Successful Return to Sports or Work Authors Hong Daniel Y, Bailey Karsyn N, Goldfarb Charles A Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.06.007 · PMID: 42640234 https://pubmed.ncbi.nlm.nih.gov/42640234/ Abstract PURPOSE: The triangular fibrocartilage complex (TFCC) is a critical stabilizer of the distal radioulnar and ulnocarpal joints. Recent literature has guided surgical practice in addressing deep foveal fibers that are essential for distal radioulnar joint stability. Although foveal TFCC repair has been associated with reduction in pain and improvement in patient reported outcomes, there is limited literature on the path of the recovery process. The purpose of this retrospective study is to better understand recovery following foveal TFCC repair using the ulnar tunnel technique in both adolescents and adults. METHODS: Forty six patients treated from 2018 to 2023 by a single surgeon with a foveal TFCC repair technique were included. Pre and post operative Patient Reported Outcome Measurement Instrument System (PROMIS) scores and range of motion, as well as complications were analyzed. Thirty two patients completed follow up questionnaires at a minimum of 2 years after surgery. RESULTS: PROMIS pain scores at 12 weeks after surgery were significantly improved; upper extremity and physical function were not significantly improved. At an average of 32 months after surgery, PROMIS upper extremity, pain, and physical function scores were all significantly improved. The vast majority of patients regained wrist and forearm motion by 12 weeks. Complication and reoperation rates were 8.7% and 4.3%, respectively. At an average of 32 month follow up, 77% of patients had returned to full sports and activity. The highest activity level was achieved at a median of 6 months. Of note, 45% of patients experienced a temporary setback during the recovery period. CONCLUSIONS: Ulnar tunnel repair of foveal TFCC tears is a reproducible and effective technique with good intermediate term results. Pain and range of motion reliably improve within the first three months; return to activity and maximum functionality may not significantly improve until six months after surgery. One quarter of our cohort did not return to full activity, and many patients experienced a temporary setback during the recovery process. At intermediate term follow up of 32 months, patients were doing well by all subjective measures. Patients should be counseled that functional recovery following foveal TFCC repair is not linear and may require more time than expected. TYPE OF STUDY/LEVEL OF EVIDENCE: III. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0489",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Scientific reports",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0489_effectiveness_of_an_interactive_music_tablet_intervention_to.md",
+   "snippet": "Title Effectiveness of an interactive music tablet intervention to reduce procedural anxiety in children: a randomized controlled trial Authors Imle Roland, Wiemer Ann Sophie, Hartwig Katharina, Hillebrenner Christiane, Vedder Stephan, Garb",
+   "text": "Pediatrics scraped pubmed PubMed / Scientific reports Title Effectiveness of an interactive music tablet intervention to reduce procedural anxiety in children: a randomized controlled trial Authors Imle Roland, Wiemer Ann Sophie, Hartwig Katharina, Hillebrenner Christiane, Vedder Stephan, Garbade Sven F, Blume Christina, Willuth Estelle, et al. Journal / DOI Scientific reports · DOI: 10.1038/s41598 026 66888 1 · PMID: 42637802 https://pubmed.ncbi.nlm.nih.gov/42637802/ Abstract Procedural anxiety in children is common and associated with maladaptive behavior, reduced cooperation, and increased perioperative stress. Although music based interventions show promise, few are designed for routine clinical care. We evaluated an interactive tablet based music intervention (\"MuMa\") for reducing procedural anxiety in children aged 3 11 undergoing elective surgery. We conducted a single center, parallel group, randomized controlled trial including 80 children undergoing elective surgery and their caregivers. Participants were randomized to receive the MuMa intervention preoperatively or standard care. Primary outcomes were child (modified Yale Preoperative Anxiety Scale) and caregiver anxiety (State Trait Anxiety Inventory), assessed before and after the intervention. Secondary outcomes included heart rate variability, compliance during anesthesia induction, postoperative agitation, and behavioral changes at 1, 4, and 12 weeks post procedure. Trial registration: German Clinical Trials Registry (DRKS00027873), registered 13 May 2022. Here we show that the intervention reduces preoperative anxiety by 38% (standardized mean difference 0.8; 95% CI 1.2 to 0.3) and integrates readily into routine perioperative workflows. Effects are greatest in children with high baseline anxiety (SMD 1.7; 95% CI 2.8 to 0.5) and in those aged 3 6 years (SMD 0.9; 95% CI 1.5 to 0.3). No clinically relevant differences are observed for secondary outcomes. This interactive music intervention significantly reduces procedural anxiety in children, particularly among younger participants and those with high baseline anxiety. Its low resource requirements and ease of implementation support its potential as a scalable non pharmacological strategy in pediatric perioperative care. Further research should evaluate its generalizability across diverse settings. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0488",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of hand surgery",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0488_can_large_language_models_preserve_diagnostic_accuracy_despi.md",
+   "snippet": "Title Can Large Language Models Preserve Diagnostic Accuracy Despite Patient Self Diagnosis and Framing Bias in Hypothetical Upper Extremity Scenarios? Authors Jaarsma Emily H, Ring David, Wickman John, Drost Alexander Journal / DOI The Jou",
+   "text": "Laboratory Medicine scraped pubmed PubMed / The Journal of hand surgery Title Can Large Language Models Preserve Diagnostic Accuracy Despite Patient Self Diagnosis and Framing Bias in Hypothetical Upper Extremity Scenarios? Authors Jaarsma Emily H, Ring David, Wickman John, Drost Alexander Journal / DOI The Journal of hand surgery · DOI: 10.1016/j.jhsa.2026.07.014 · PMID: 42640232 https://pubmed.ncbi.nlm.nih.gov/42640232/ Abstract PURPOSE: Online health queries are often addressed by large language models (LLMs) embedded in search engines. It is possible that LLMs, like human clinicians, might be misdirected by vague symptom descriptions or inaccurate self diagnoses. We examined patient and scenario factors associated with an LLM's ability to identify intended upper extremity musculoskeletal diagnoses and its tendency to deviate from patient self diagnoses in structured clinical vignettes. METHODS: ChatGPT (GPT 5) evaluated 180 randomized hypothetical clinical vignettes depicting five common upper extremity conditions: de Quervain tendinopathy, rotator cuff tendinopathy, lateral epicondylitis, trigger digit, and trapeziometacarpal arthritis. Each vignette included randomized patient characteristics, characteristic or vague symptom descriptions, and a patient self diagnosis (categorized as correct, a plausible alternative, or a common misconception diagnosis). The LLM was prompted to select the single most likely diagnosis. Multivariable logistic regression identified independent predictors of diagnostic accuracy and deviation. RESULTS: The LLM correctly identified the intended diagnosis in 165 of 180 scenarios (92%). Accuracy was unaffected by the patient's self diagnosis, was higher for characteristic than vague symptom, and was lower for de Quervain tendinopathy relative to other conditions. The model deviated from the patient's proposed diagnosis in 117 scenarios (65%), of which 104 deviations (89%) appropriately aligned with the intended diagnosis. The LLM was more likely to disregard patient provided diagnoses that did not match the intended diagnosis, regardless of whether they represented plausible alternatives or common misconceptions. CONCLUSIONS: In this experimental setting, an LLM identified simulated upper extremity conditions regardless of patient self diagnosis, suggesting limited susceptibility to the anchoring, confirmation, and acquiescence biases known to affect human diagnostic reasoning. LLMs may therefore support debiasing and patient guidance by helping address unhealthy misconceptions and aligning tests and treatment choices with patient values. TYPE OF STUDY/LEVEL OF EVIDENCE: V (Experimental Vignette Diagnostic Accuracy Study). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0487",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JACC. Case reports",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0487_incidental_atrial_amyloid_on_surgical_pathology_revealing_tr.md",
+   "snippet": "Title Incidental Atrial Amyloid on Surgical Pathology Revealing Transthyretin Cardiac Amyloidosis Authors Wright Jonathan, Haroun Fadi, Potter Adam, Vallakati Ajay, Whitson Bryan, Kahwash Rami Journal / DOI JACC. Case reports · DOI: 10.1016",
+   "text": "Pathology scraped pubmed PubMed / JACC. Case reports Title Incidental Atrial Amyloid on Surgical Pathology Revealing Transthyretin Cardiac Amyloidosis Authors Wright Jonathan, Haroun Fadi, Potter Adam, Vallakati Ajay, Whitson Bryan, Kahwash Rami Journal / DOI JACC. Case reports · DOI: 10.1016/j.jaccas.2026.109925 · PMID: 42640236 https://pubmed.ncbi.nlm.nih.gov/42640236/ Abstract BACKGROUND: Atrial amyloid is frequently encountered incidentally on surgical specimens and often attributed to isolated atrial amyloidosis. However, atrial amyloid may also represent early transthyretin amyloid (ATTR) cardiac amyloidosis (CA), a treatable condition. CASE SUMMARY: A 70 year old man presented with worsening dyspnea, lower extremity edema, and atrial fibrillation. He underwent coronary artery bypass grafting with MAZE procedure and left atrial appendage ligation. Pathology of the atrial appendage revealed Congo red positive amyloid deposits. Mass spectrometry confirmed transthyretin type amyloid. Transthyretin gene sequencing was negative, and technetium 99m pyrophosphate scintigraphy demonstrated significant cardiac uptake, confirming wild type ATTR CA. He was treated with tafamidis and spironolactone, maintained sinus rhythm after cardioversion, and remained clinically stable at 1 year follow up. DISCUSSION: This case highlights the diagnostic value of atrial tissue histopathology in detecting occult ATTR amyloidosis. Further, it emphasizes the importance of comprehensive evaluation and early initiation of disease modifying therapy. Proper evaluation of atrial amyloid can alter management and improve patient outcomes. TAKE HOME MESSAGES: Atrial amyloid identified on surgical pathology should prompt comprehensive evaluation for CA. Atrial amyloid should not be assumed to represent isolated atrial amyloidosis, as it may provide an opportunity for early diagnosis and initiation of disease modifying therapy. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0486",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / NEJM evidence",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0486_consolidation_therapy_based_on_mutation_clearance_in_acute_m.md",
+   "snippet": "Title Consolidation Therapy Based on Mutation Clearance in Acute Myeloid Leukemia Authors Jacoby Meagan A, Spencer David H, Gao Feng, Uy Geoffrey L, Burton Tasha, Heath Sharon E, Du Feiyu, O'Laughlin Michelle, et al. Journal / DOI NEJM evid",
+   "text": "Hematology-Oncology scraped pubmed PubMed / NEJM evidence Title Consolidation Therapy Based on Mutation Clearance in Acute Myeloid Leukemia Authors Jacoby Meagan A, Spencer David H, Gao Feng, Uy Geoffrey L, Burton Tasha, Heath Sharon E, Du Feiyu, O'Laughlin Michelle, et al. Journal / DOI NEJM evidence · DOI: 10.1056/EVIDoa2500352 · PMID: 42640163 https://pubmed.ncbi.nlm.nih.gov/42640163/ Abstract BACKGROUND: Optimal consolidation therapy for patients with intermediate risk acute myeloid leukemia (AML) in first complete remission (CR1) is controversial. Retrospective studies have suggested that the clearance of leukemia associated mutations (LAMs) in CR1 may predict lower relapse risk and better outcomes with high dose cytarabine (HiDAC) consolidation. We tested this hypothesis prospectively. METHODS: We performed a phase II, multicenter study of intermediate risk, transplant eligible, de novo AML in patients 18 60 years of age who achieved a complete remission (CR) or CR with incomplete count recovery (CRi) after induction therapy. Tumor and normal whole exome sequencing was performed at presentation to identify somatic LAMs (median ∼30 LAMs/patient). In remission marrow samples, LAM variant allele frequencies (VAFs) were then remeasured using a VAF cutoff of less than 2.5% to define clearance. Patients who met this LAM clearance threshold received HiDAC consolidation, whereas those with persistent LAMs (VAF ≥2.5%) were recommended to undergo allogeneic hematopoietic cell transplantation. The primary endpoint compared relapse free survival (RFS) of intermediate risk patients with complete LAM clearance to historical cohorts with intermediate risk AML who received HiDAC based regimens in CR1. To account for an unplanned interim assessment, the significance threshold for the primary analysis was 0.01. RESULTS: Among 100 patients who were evaluated, intermediate risk patients who cleared all LAMs in CR1 (n=33) had a median RFS of 33.1 months (95% confidence interval, 11.7 NA) compared to a median RFS of 11.7 months in the historical cohort (n=239; 95% confidence interval, 9.9 15.6, P=0.015). CONCLUSIONS: Among patients with intermediate risk AML, clearance of LAMs after induction, followed by HiDAC consolidation in CR1, was associated with longer RFS compared with similarly treated historical controls. Although this result did not meet the prespecified threshold for statistical significance, the reported association sets the stage for a randomized trial to further evaluate this strategy. (ClinicalTrials.gov number, NCT02756962.). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0485",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / NEJM evidence",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0485_does_intravenous_iron_improve_survival_and_physical_function.md",
+   "snippet": "Title Does Intravenous Iron Improve Survival and Physical Function and Reduce Heart Failure Events in Patients with Chronic Kidney Disease? Authors Neuen Brendon L, Levin Adeera Journal / DOI NEJM evidence · DOI: 10.1056/EVIDtt2600064 · PMI",
+   "text": "Nephrology scraped pubmed PubMed / NEJM evidence Title Does Intravenous Iron Improve Survival and Physical Function and Reduce Heart Failure Events in Patients with Chronic Kidney Disease? Authors Neuen Brendon L, Levin Adeera Journal / DOI NEJM evidence · DOI: 10.1056/EVIDtt2600064 · PMID: 42640172 https://pubmed.ncbi.nlm.nih.gov/42640172/ Abstract AbstractIron deficiency is common in patients with chronic kidney disease (CKD). Contemporary guidelines recommend the use of iron therapy only in the presence of anemia. However, patients with CKD are at increased risk of heart failure, and the coexistence of both conditions is associated with impaired quality of life, reduced physical function, and increased mortality compared with either condition alone. In this Tomorrow's Trial article, we review current evidence for intravenous iron in CKD and heart failure and propose the design of a randomized trial of intravenous iron, independent of hemoglobin, to assess its effects on mortality, heart failure, and physical function. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0484",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Emerging microbes & infections",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0484_experimental_evolution_of_phage_k_enhances_antibacterial_act.md",
+   "snippet": "Title Experimental Evolution of Phage K enhances Antibacterial Activity against USA300 MRSA in Lung Infection Models Authors Schapp Swanti, Seibold Paula, Reisser Yasmina, Kühn Niklas, Hornung Franziska, Lohde Mara, Brandt Christian, Nietzs",
+   "text": "Infectious Disease scraped pubmed PubMed / Emerging microbes & infections Title Experimental Evolution of Phage K enhances Antibacterial Activity against USA300 MRSA in Lung Infection Models Authors Schapp Swanti, Seibold Paula, Reisser Yasmina, Kühn Niklas, Hornung Franziska, Lohde Mara, Brandt Christian, Nietzsche Sandor, et al. Journal / DOI Emerging microbes & infections · DOI: 10.1080/22221751.2026.2724634 · PMID: 42640217 https://pubmed.ncbi.nlm.nih.gov/42640217/ Abstract Hypervirulent community associated MRSA clones such as Staphylococcus aureus (S. aureus) USA300 drive rapidly progressive necrotizing pneumonia with high morbidity and limited therapeutic options. Bacteriophage K (phage K) is a well characterized lytic phage active against S. aureus, but its efficacy is limited by restricted host range and the emergence of bacterial resistance. Here, we subjected phage K to experimental evolution on S. aureus USA300 to select an adapted variant with enhanced bactericidal properties. Wild type phage K and the evolved derivative, designated phage KJ25, were compared using growth inhibition assays, time kill kinetics, genomic differences and transcriptomic analyses of the bacterial response to infection. Efficacy was evaluated in an in vitro A549 lung epithelial cell infection model and ex vivo murine precision cut lung slices (PCLS).Phage KJ25 exhibited significantly improved killing of USA300, achieving faster bacterial reduction and sustained suppression of regrowth. Genomic analysis identified a function impairing mutation in gene gp102, encoding a predicted DNA binding protein implicated in transcriptional regulation. RNA sequencing revealed that KJ25 infection of USA300 induced a slower and less disruptive host transcriptional takeover than wild type phage K. Importantly, in both A549 cells and PCLS model, phage KJ25 markedly reduced bacterial burden while preserving lung tissue integrity, supporting its therapeutic potential.Collectively, these findings highlight the value of experimental evolution for tailoring therapeutic phages and support phage adaptation as a promising strategy for developing interventions against multidrug resistant S. aureus. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0483",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of general physiology",
+   "confidence": "medium",
+   "date": "2026-08-25",
+   "path": "content/papers/2026/2026-08-25_paper-2026-0483_diastolic_contributors_in_cardiomyocytes_of_a_cardiometaboli.md",
+   "snippet": "Title Diastolic contributors in cardiomyocytes of a cardiometabolic HFpEF like mouse model Authors Shahid Arooj, McMillen Timothy S, Daugherty Samuel, Burns Anna E, van den Berg Marloes, Regnier Michael, Granzier Henk, Methawasin Mei Journa",
+   "text": "Cardiology scraped pubmed PubMed / The Journal of general physiology Title Diastolic contributors in cardiomyocytes of a cardiometabolic HFpEF like mouse model Authors Shahid Arooj, McMillen Timothy S, Daugherty Samuel, Burns Anna E, van den Berg Marloes, Regnier Michael, Granzier Henk, Methawasin Mei Journal / DOI The Journal of general physiology · DOI: 10.1085/jgp.202614028 · PMID: 42640268 https://pubmed.ncbi.nlm.nih.gov/42640268/ Abstract Three main contributors to cardiomyocyte diastolic stiffness are (1) passive sarcomere stiffness, (2) microtubules, and (3) diastolic crossbridges (XBs), the XBs that are present in the diastolic phase. However, the relative contributions of these key determinants in heart failure with preserved ejection fraction (HFpEF) conditions are unclear. We quantify the relative contributions of passive sarcomere stress, the microtubule network, and diastolic XB activity to overall diastolic stress in intact cardiomyocytes isolated from two hit mice, a cardiometabolic HFpEF like model, in both sexes. The stretch release protocol was used to obtain the diastolic stress sarcomere length relation. XB inhibitor and colchicine treatment were used to determine the contributions of diastolic XBs and microtubules, respectively. Passive sarcomere stress was measured in cells treated with both colchicine and the XB inhibitor. Male HFpEF like cardiomyocytes exhibit increases in both passive sarcomere stress (by 70%) and diastolic XBs (by 52%), whereas female HFpEF like cardiomyocytes show an increase in passive sarcomere stress alone (by 55%). The microtubule network contributes to diastolic stress by augmenting the extent of diastolic XBs in males. The elevated diastolic XBs in male HFpEF like mice are accompanied by altered Ca2+ transient, suggesting that remodeled Ca2+ handling accounts, in part, for the enhanced diastolic XB activity in males. These findings imply that, in males, both increased passive sarcomere stiffness and diastolic XB activity represent potential therapeutic targets for reducing cardiomyocyte diastolic stiffness, whereas in females, diastolic stiffness is predominantly driven by elevated passive sarcomere stiffness. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "anatomy-daily-2026-08-25",
