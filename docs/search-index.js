@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1833,
+  "total": 1838,
   "byType": {
    "usmle": 114,
+   "anatomy": 502,
    "kmle": 715,
-   "anatomy": 497,
    "paper": 490,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 497,
+   "Anatomy": 502,
    "Cardiology": 150,
    "Nephrology": 128,
    "Infectious Disease": 104,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1117,
+   "high": 1122,
    "medium": 667,
    "low": 49
   },
-  "tagCount": 2600
+  "tagCount": 2607
  },
  "docs": [
   {
@@ -181,6 +181,108 @@ window.MEDKOS_INDEX = {
    "path": "content/usmle/usmle-2026-0122.md",
    "snippet": "A 58 year old man comes to the physician because of 3 months of fatigue, early satiety, and a 6 kg weight loss. He takes no medications. Examination shows a spleen palpable 8 cm below the left costal margin; there is no lymphadenopathy. Vit",
    "text": "Pathology Chronic Myeloid Leukemia — Massive Leukocytosis with Basophilia Points to the t(9;22) Fusion CML BCR-ABL1 t9-22 basophilia myeloproliferative LAP-score USMLE-style / MedKOS (pathology · myeloproliferative neoplasms) A 58 year old man comes to the physician because of 3 months of fatigue, early satiety, and a 6 kg weight loss. He takes no medications. Examination shows a spleen palpable 8 cm below the left costal margin; there is no lymphadenopathy. Vital signs and laboratory studies are shown. Which of the following genetic abnormalities is most likely to be identified in this patient's hematopoietic cells? A. JAK2 V617F point mutation B. PML RARA fusion from t(15;17) C. MYC overexpression from t(8;14) D. BCR ABL1 fusion from t(9;22) E. FLT3 internal tandem duplication 심한 백혈구증가(18만)에 전 성숙단계 과립구가 고르게 나오고, 호염기구 증가·혈소판 증가·비장비대·낮은 LAP 점수가 겹치면 만성골수성백혈병(CML)이다. CML의 정의적 병변은 t(9;22)로 생기는 BCR ABL1 융합유전자 — 구성적으로 활성화된 티로신 키나아제가 과립구 계열을 증식시킨다. 모세포 2%는 만성기임을 말한다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-27",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-27",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/anatomy/daily/2026-08-27.md",
+   "snippet": "오늘의 학습 (2026 08 27 · t1 prep) 다음 수업/시험: 2026 08 27 큰가슴근부위, 가슴벽, 얼굴·표정근육·귀밑샘·얼굴 신경/혈관·씹기근육·입술·바깥코·바깥귀 Tagging 1까지 14일 · Tagging 2까지 53일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 47개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-27 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 27 · t1 prep) 다음 수업/시험: 2026 08 27 큰가슴근부위, 가슴벽, 얼굴·표정근육·귀밑샘·얼굴 신경/혈관·씹기근육·입술·바깥코·바깥귀 Tagging 1까지 14일 · Tagging 2까지 53일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 47개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0391",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "종아리뼈목 온종아리신경 손상 — 가쪽칸·앞칸이 함께 죽는 이유",
+   "tags": [
+    "clinical-application",
+    "7회차",
+    "종아리가쪽칸",
+    "온종아리신경",
+    "발처짐",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §3 종아리 가쪽칸 — 2026 확정본 7회차 실습주제(종아리 가쪽)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0391.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 종아리뼈목 온종아리신경 손상 — 가쪽칸·앞칸이 함께 죽는 이유 7회차 · 다리 clinical-application 7회차 종아리가쪽칸 온종아리신경 발처짐 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §3 종아리 가쪽칸 — 2026 확정본 7회차 실습주제(종아리 가쪽) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0390",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "인두 근육의 신경지배 — 붓인두근만 혀인두신경(IX)인 이유",
+   "tags": [
+    "distinction",
+    "7회차",
+    "인두",
+    "붓인두근",
+    "조롱박오목",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §2 인두 근육·지배표 — 2026 확정본 7회차 실습주제(인두)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0390.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 인두 근육의 신경지배 — 붓인두근만 혀인두신경(IX)인 이유 7회차 · 목 distinction 7회차 인두 붓인두근 조롱박오목 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §2 인두 근육·지배표 — 2026 확정본 7회차 실습주제(인두) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0389",
+   "type": "anatomy",
+   "unit": "7회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "굽힘근지지띠 밑 발목굴을 지나는 다섯 구조의 앞→뒤 순서",
+   "tags": [
+    "course-tracing",
+    "7회차",
+    "발목굴",
+    "굽힘근지지띠",
+    "발목굴증후군",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §4-1 굽힘근지지띠 밑을 지나는 다섯 — 2026 확정본 7회차 실습주제(발목 안쪽면)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0389.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 굽힘근지지띠 밑 발목굴을 지나는 다섯 구조의 앞→뒤 순서 7회차 · 다리 course-tracing 7회차 발목굴 굽힘근지지띠 발목굴증후군 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §4-1 굽힘근지지띠 밑을 지나는 다섯 — 2026 확정본 7회차 실습주제(발목 안쪽면) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0388",
+   "type": "anatomy",
+   "unit": "7회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "앞목갈비근을 기준으로 갈리는 빗장밑정맥·빗장밑동맥·팔신경얼기·가로막신경",
+   "tags": [
+    "relation",
+    "7회차",
+    "목의뿌리",
+    "앞목갈비근",
+    "목갈비근증후군",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "7회차 서브노트(anatomy-2026-0112) §1-1 위가슴문을 지나는 것 — 2026 확정본 7회차 실습주제(목의 뿌리)",
+   "confidence": "high",
+   "date": "2026-08-27",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0388.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 앞목갈비근을 기준으로 갈리는 빗장밑정맥·빗장밑동맥·팔신경얼기·가로막신경 7회차 · 목 relation 7회차 목의뿌리 앞목갈비근 목갈비근증후군 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1-1 위가슴문을 지나는 것 — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "kmle-2026-0745",
