@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-25",
+ "generated": "2026-08-26",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -7101,6 +7101,98 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0388",
+   "style": "relation",
+   "session": 7,
+   "region": "neck",
+   "subregion": "root-of-neck",
+   "examPhase": "tagging-1",
+   "stem": "위가슴문에서 앞목갈비근을 기준으로 빗장밑정맥·빗장밑동맥·팔신경얼기·가로막신경이 각각 어디를 지나는지 말하고, 목갈비근증후군에서 정맥 증상이 대개 없는 이유를 설명하시오.",
+   "choices": null,
+   "answer": "빗장밑정맥 (subclavian v.) — 앞목갈비근 앞(틈새 밖) / 빗장밑동맥 2부 (subclavian a.) — 목갈비근틈새 안 / 팔신경얼기 (brachial plexus) — 동맥과 같은 틈새 안 / 가로막신경 (phrenic n.) — 앞목갈비근 앞면을 타고 하행",
+   "explanation": "앞목갈비근이 위가슴문의 기준선이다. **정맥은 앞, 동맥과 팔신경얼기는 뒤**(앞·중간목갈비근 사이의 ==목갈비근틈새==)로 갈린다. 가로막신경은 셋 어디에도 속하지 않고 앞목갈비근 **앞면**을 타고 내려가는데, 틈새 속을 지난다고 잘못 외우기 쉬운 지점이다(C3–C5, 'C3-4-5 keeps the diaphragm alive'). 목갈비근증후군은 이 **틈새가 좁아지는** 병이므로 틈새 안에 있는 동맥과 팔신경얼기만 눌린다 — 정맥은 틈새 밖(앞)에 있어 대개 무사하다. 그래서 증상이 저림·맥 약함으로 오면서도 팔이 붓지 않으면 이 해부 때문이다. 반대로 팔이 붓는 정맥형(Paget–Schroetter)은 빗장뼈–첫째갈비뼈 사이의 갈비빗장공간이 좁아진 경우다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "목의 뿌리 — 위가슴문·목갈비근·빗장밑동맥 (e-Anatomy Neck — Root of neck 0:00–17:08)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0389",
+   "style": "course-tracing",
+   "session": 7,
+   "region": "lower-limb",
+   "subregion": "medial-ankle",
+   "examPhase": "tagging-1",
+   "stem": "안쪽복사 뒤 굽힘근지지띠 밑(발목굴)을 지나는 다섯 구조를 앞(안쪽복사 쪽)에서 뒤 순서로 나열하고, 발목 안쪽면을 절개했을 때 동맥·신경이 바로 보이지 않는 이유를 설명하시오.",
+   "choices": null,
+   "answer": "① 뒤정강근 힘줄 (tibialis posterior m. tendon) → ② 긴발가락굽힘근 힘줄 (flexor digitorum longus m. tendon) → ③ 뒤정강동맥 (posterior tibial a.) → ④ 정강신경 (tibial n.) → ⑤ 긴엄지굽힘근 힘줄 (flexor hallucis longus m. tendon)",
+   "explanation": "'**Tom, Dick, And Very Nervous Harry**' — Tibialis posterior · flexor Digitorum longus · posterior tibial Artery · tibial Nerve(Very Nervous) · flexor Hallucis longus 순으로 앞에서 뒤로 지난다. 핵심은 ==힘줄–힘줄 사이에 혈관신경다발이 끼어 있다==는 배열이다. 그래서 발목 안쪽면을 열면 앞쪽 두 힘줄(뒤정강근·긴발가락굽힘근)을 먼저 젖혀야 동맥과 신경이 드러난다 — 태깅에서 '두 번째 힘줄 바로 뒤' 같은 위치 관계로 묻기 좋은 자리다. 촉지는 ==안쪽복사와 아킬레스힘줄 사이==에서 뒤정강동맥을 잡는다(발등동맥은 긴엄지폄근힘줄 가쪽). 지지띠 밑이 좁아져 정강신경이 눌리면 **발목굴증후군**이며 손목굴증후군의 발 버전이다. 다만 안쪽발꿈치가지는 지지띠를 **뚫고** 나가므로 발꿈치 감각은 대개 남는 것이 감별 포인트다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "발목 안쪽면·발목굴 (e-Anatomy Lower limb — Foot 05:43–17:17)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0390",
+   "style": "distinction",
+   "session": 7,
+   "region": "neck",
+   "subregion": "pharynx",
+   "examPhase": "tagging-1",
+   "stem": "인두 근육의 운동 신경지배를 정리하고, 그중 예외가 되는 근육 하나를 지목해 그 신경을 답하시오. 또 조롱박오목에 이물이 걸렸을 때 흡인이 생길 수 있는 해부학적 이유를 설명하시오.",
+   "choices": null,
+   "answer": "인두수축근 3개(위·중간·아래)·입천장인두근·귀인두관인두근 — 인두신경얼기(미주신경 X) / 예외: 붓인두근 (stylopharyngeus m.) — 혀인두신경 (glossopharyngeal n., IX)",
+   "explanation": "인두 근육은 ==인두신경얼기==를 통해 사실상 전부 **미주신경(X)**이 운동을 맡는데, ==붓인두근만 혀인두신경(IX)==이다. 목구멍 근육 중 IX가 운동을 담당하는 **유일한** 근육이라 시험 단골이다(IX는 그 외에는 감각·귀밑샘 분비가 주업이다). 인두는 코인두(뒤콧구멍~물렁입천장, 귀인두관 입구·인두편도) · 입인두(물렁입천장~후두덮개 위모서리, 입천장편도) · 후두인두(후두덮개~반지연골 아래모서리, 조롱박오목)로 나뉜다. **조롱박오목**은 생선가시가 가장 잘 걸리는 자리이고, 그 점막 바로 밑을 ==위후두신경 속가지==가 지난다. 이물이나 이물 제거술로 이 신경이 다치면 **성대문 위(후두 입구) 감각이 소실**되어 삼킬 때 기침반사가 일어나지 않아 **흡인**이 생긴다 — 운동마비가 없어도 감각만으로 흡인이 된다는 점이 핵심이다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "인두 (e-Anatomy Neck — Pharynx 0:00–07:37)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0391",
+   "style": "clinical-application",
+   "session": 7,
+   "region": "lower-limb",
+   "subregion": "lateral-compartment-leg",
+   "examPhase": "tagging-1",
+   "stem": "종아리뼈목에서 온종아리신경이 눌렸을 때 나타나는 운동 장애와 걸음 이상을 답하고, 종아리 가쪽칸이 '자기 동맥이 없는 칸'인 점을 함께 설명하시오.",
+   "choices": null,
+   "answer": "온종아리신경 (common fibular n.) 손상 — 발등굽힘 소실(발처짐, foot drop) + 가쪽번짐 소실 → 닭걸음 (steppage gait)",
+   "explanation": "온종아리신경은 ==종아리뼈목==을 감아 도는 자리에서 피부 바로 밑을 지나 가장 얕다 — 깁스 압박, 다리 꼬기, 그 부위 골절로도 눌린다. 이 지점은 신경이 **깊은종아리신경(앞칸)**과 **얕은종아리신경(가쪽칸)**으로 갈리기 **직전**이므로, 한 자리 손상으로 두 칸이 함께 죽는다: 앞칸 마비 → 발등굽힘 소실(==발처짐==), 가쪽칸 마비 → ==가쪽번짐 소실==. 발이 처져 발끝이 바닥에 걸리므로 무릎을 과하게 들어 계단 오르듯 걷는 **닭걸음**이 된다. 한편 종아리 가쪽칸은 '칸마다 동맥이 있다'는 통념의 예외로, **자기 동맥이 없고** 종아리동맥(fibular a.)의 곁가지로 혈액을 얻어 쓴다 — 신경만 자기 것(얕은종아리신경)이다. 근육은 긴·짧은종아리근이며, 긴종아리근 힘줄은 가쪽복사 뒤를 돌아 ==발바닥을 가로질러== 첫째 발허리뼈에 붙어 **가로발바닥활**을 떠받친다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "2026학년도 2학기 수업계획서(실습계획표) — 7회차",
+     "page": null,
+     "section": "종아리 가쪽칸 (e-Anatomy Lower limb — Leg 21:28–29:38)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -7952,6 +8044,102 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-27",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "thorax",
+    "head"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0029"
+    ],
+    "branch": [
+     "anatomy-2026-0030"
+    ],
+    "relation": [
+     "anatomy-2026-0032",
+     "anatomy-2026-0036"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0157",
+    "anatomy-2026-0162",
+    "anatomy-2026-0385",
+    "anatomy-2026-0154",
+    "anatomy-2026-0159",
+    "anatomy-2026-0043",
+    "anatomy-2026-0038",
+    "anatomy-2026-0161",
+    "anatomy-2026-0378",
+    "anatomy-2026-0380",
+    "anatomy-2026-0156",
+    "anatomy-2026-0377"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-3": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0013",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0014",
+     "anatomy-2026-0007"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-26",
    "phase": "t1-prep",
