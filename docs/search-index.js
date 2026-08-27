@@ -1,34 +1,34 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-26",
+ "generated": "2026-08-27",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1838,
+  "total": 1851,
   "byType": {
+   "anatomy": 507,
    "usmle": 114,
-   "anatomy": 502,
+   "paper": 498,
    "kmle": 715,
-   "paper": 490,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 502,
-   "Cardiology": 150,
-   "Nephrology": 128,
-   "Infectious Disease": 104,
-   "Pediatrics": 83,
-   "Hematology-Oncology": 76,
-   "Pathology": 69,
+   "Anatomy": 507,
+   "Cardiology": 151,
+   "Nephrology": 129,
+   "Infectious Disease": 105,
+   "Pediatrics": 84,
+   "Hematology-Oncology": 77,
+   "Pathology": 70,
    "Obstetrics & Gynecology": 56,
    "Neurology": 54,
    "Psychiatry": 54,
-   "Surgery": 51,
+   "Surgery": 52,
    "Endocrinology": 46,
+   "Laboratory Medicine": 46,
    "Gastroenterology": 45,
-   "Laboratory Medicine": 45,
    "Pulmonology": 45,
    "Dermatology": 44,
    "General Surgery": 44,
@@ -53,13 +53,117 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1122,
-   "medium": 667,
+   "high": 1127,
+   "medium": 675,
    "low": 49
   },
-  "tagCount": 2607
+  "tagCount": 2610
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-28",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-28",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/daily/2026-08-28.md",
+   "snippet": "오늘의 학습 (2026 08 28 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 13일 · Tagging 2까지 52일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-28 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 28 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 13일 · Tagging 2까지 52일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0395",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넙다리동맥 천자와 안쪽넙다리휘돌이동맥 — 6회차 응용과제 3의 해부학적 근거",
+   "tags": [
+    "clinical-application",
+    "6회차",
+    "넙다리동맥",
+    "안쪽넙다리휘돌이동맥",
+    "대퇴골두무혈성괴사",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §3 임상 콜아웃(왜 넙다리동맥에서 찌르나 — 응용과제 3)·기출 콜아웃(대퇴골두 무혈성괴사)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0395.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 넙다리동맥 천자와 안쪽넙다리휘돌이동맥 — 6회차 응용과제 3의 해부학적 근거 6회차 · 다리 clinical-application 6회차 넙다리동맥 안쪽넙다리휘돌이동맥 대퇴골두무혈성괴사 응용과제 예습시험 6회차 서브노트(anatomy-2026-0067) §3 임상 콜아웃(왜 넙다리동맥에서 찌르나 — 응용과제 3)·기출 콜아웃(대퇴골두 무혈성괴사) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0394",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넙다리삼각 → 모음근굴 → 모음근구멍 → 오금 — 넓적다리 앞의 통로 추적",
+   "tags": [
+    "course-tracing",
+    "6회차",
+    "넙다리삼각",
+    "모음근굴",
+    "모음근구멍",
+    "두렁신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §3 넙다리삼각 경계·NAVEL 배열 · §4 모음근굴 — 2026 확정본 6회차 실습주제(넓적다리 앞·안쪽칸)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0394.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 넙다리삼각 → 모음근굴 → 모음근구멍 → 오금 — 넓적다리 앞의 통로 추적 6회차 · 다리 course-tracing 6회차 넙다리삼각 모음근굴 모음근구멍 두렁신경 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §3 넙다리삼각 경계·NAVEL 배열 · §4 모음근굴 — 2026 확정본 6회차 실습주제(넓적다리 앞·안쪽칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0393",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "앞목삼각에서 갈라 외우는 두 쌍 — 넓은목근 vs 가로목신경, 두힘살근 앞힘살 vs 뒤힘살",
+   "tags": [
+    "distinction",
+    "6회차",
+    "넓은목근",
+    "가로목신경",
+    "두힘살근",
+    "인두굽이",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §1-2 기출 콜아웃(두힘살근의 두 얼굴) · §2-2 주의 콜아웃(넓은목근은 목신경이 아니다)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0393.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 앞목삼각에서 갈라 외우는 두 쌍 — 넓은목근 vs 가로목신경, 두힘살근 앞힘살 vs 뒤힘살 6회차 · 목 distinction 6회차 넓은목근 가로목신경 두힘살근 인두굽이 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-2 기출 콜아웃(두힘살근의 두 얼굴) · §2-2 주의 콜아웃(넓은목근은 목신경이 아니다) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0392",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "목동맥삼각의 경계와 온목동맥 갈림 — 목혈관신경집 3인방의 배열",
+   "tags": [
+    "relation",
+    "6회차",
+    "목동맥삼각",
+    "목혈관신경집",
+    "온목동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §1-2 앞목삼각의 네 소삼각 · §2-1 목혈관신경집 — 2026 확정본 6회차 실습주제(목의 삼각)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0392.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 목동맥삼각의 경계와 온목동맥 갈림 — 목혈관신경집 3인방의 배열 6회차 · 목 relation 6회차 목동맥삼각 목혈관신경집 온목동맥 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-2 앞목삼각의 네 소삼각 · §2-1 목혈관신경집 — 2026 확정본 6회차 실습주제(목의 삼각) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
   {
    "id": "usmle-2026-0127",
    "type": "usmle",
@@ -283,6 +387,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0388.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
    "text": "Anatomy 앞목갈비근을 기준으로 갈리는 빗장밑정맥·빗장밑동맥·팔신경얼기·가로막신경 7회차 · 목 relation 7회차 목의뿌리 앞목갈비근 목갈비근증후군 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1-1 위가슴문을 지나는 것 — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "paper-2026-0498",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of urology",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0498_anastomotic_urethroplasty_is_associated_with_a_lower_risk_of.md",
+   "snippet": "Title Anastomotic Urethroplasty is Associated with a Lower Risk of Stricture Recurrence Compared to Buccal Mucosa Graft Onlay after Reconstruction for Radiation Induced Bulbomembranous Urethral Stenosis Authors Rourke Keith, Gelman Joel Jou",
+   "text": "Surgery scraped pubmed PubMed / The Journal of urology Title Anastomotic Urethroplasty is Associated with a Lower Risk of Stricture Recurrence Compared to Buccal Mucosa Graft Onlay after Reconstruction for Radiation Induced Bulbomembranous Urethral Stenosis Authors Rourke Keith, Gelman Joel Journal / DOI The Journal of urology · DOI: 10.1097/JU.0000000000005279 · PMID: 42647825 https://pubmed.ncbi.nlm.nih.gov/42647825/ Abstract INTRODUCTION: The preferred treatment of bulbomembranous urethral stenosis (BMUS) after prostate cancer radiotherapy remains unclear. The purpose of this study is to examine the association of surgical technique and outcomes after urethroplasty for radiation induced BMUS. METHODS: From 01/2001 09/2024, a review of patients undergoing posterior urethroplasty for BMUS at two centers was performed. The primary outcome was stricture recurrence defined as stricture <16Fr confirmed on cystoscopy. Secondary outcomes included 90 day complications (Clavien ≥2), patient reported satisfaction, de novo erectile dysfunction, or incontinence. Cox regression was used to evaluate variables associated with stricture recurrence and Fisher's exact test was used for secondary outcomes. RESULTS: 212 patients with radiation induced BMUS were reconstructed with either anastomotic urethroplasty (163) or buccal mucosal graft (BMG) (49). Median stenosis length was 2.0 cm (IQR 2.0 3.0), median follow up for patients without recurrence was 97 months (IQR 52 144), and etiology was brachytherapy (46%), EBRT (45%) or combination (9.0%). On Cox regression, BMG urethroplasty was independently associated with stricture recurrence (Hazard Ratio 3.43, 95%C.I. 1.03 11.47; p=0.046) while patient age (p=0.3), stenosis length (p=0.1), diabetes (p=0.7), smoking (p=0.5), obesity (p=0.6), and prior endoscopic treatments (p=0.6) were not. For BMG urethroplasty, the estimated cumulative risk of stricture recurrence at 1, 2, and 10 years was 17%, 18%, and 20% compared to 3.3%, 5.0%, and 6.8% for anastomotic urethroplasty (log rank p=0.01). Techniques did not differ with respect to complications (10% versus 4.1%; p=0.3), satisfaction (90% versus 88%; p=0.6), erectile dysfunction (15% versus 8.2%; p=0.2), or incontinence (18% versus 18%; p=1.0). CONCLUSIONS: When technically feasible, anastomotic urethroplasty is associated with a lower risk of stricture recurrence compared to onlay with buccal mucosa when reconstructing radiation induced bulbomembranous urethral stenosis without a higher risk of adverse events. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0497",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA network open",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0497_bilevel_positive_airway_pressure_and_continuous_albuterol_fo.md",
+   "snippet": "Title Bilevel Positive Airway Pressure and Continuous Albuterol for Pediatric Asthma Exacerbations: A Randomized Clinical Trial Authors Wilson Patrick T, Tanverdi Melisa, Brinton John T, Ambroggio Lilliam, Szefler Stanley J Journal / DOI JA",
+   "text": "Pediatrics scraped pubmed PubMed / JAMA network open Title Bilevel Positive Airway Pressure and Continuous Albuterol for Pediatric Asthma Exacerbations: A Randomized Clinical Trial Authors Wilson Patrick T, Tanverdi Melisa, Brinton John T, Ambroggio Lilliam, Szefler Stanley J Journal / DOI JAMA network open · DOI: 10.1001/jamanetworkopen.2026.30627 · PMID: 42646841 https://pubmed.ncbi.nlm.nih.gov/42646841/ Abstract IMPORTANCE: A substantial knowledge gap remains in understanding the specific role bilevel positive airway pressure (BPAP) in the emergency department (ED) for acute pediatric asthma exacerbations. OBJECTIVE: To examine whether the early application of BPAP in the ED for acute pediatric asthma exacerbations reduces duration of critical care management time. DESIGN, SETTING, AND PARTICIPANTS: This double blind randomized clinical trial enrolled children between 5 and 17 years of age presenting to a single center, quaternary, referral pediatric ED with an acute asthma exacerbation, a pediatric respiratory assessment measure of at least 4 (moderate severity), and prescribed continuous albuterol therapy between June 1, 2023, and May 31, 2025. INTERVENTION: Participants were randomized to either the intervention arm (BPAP) or control arm (sham BPAP, which delivers minimal pressure) for 4 hours. Neither the health care practitioners nor participants were aware of study arm allocation. MAIN OUTCOME AND MEASURES: The primary outcome measure was duration of continuous albuterol therapy. A sequential design with a planned interim analysis for futility and superiority was used, and a t test compared mean duration of continuous β agonist therapy under an intention to treat approach. RESULTS: Sixty six study participants (median [IQR] age, 10.2 [6.8 13.2] years; 35 [53.0%] male; 1 [1.5%] American Indian or Alaskan, 1 [1.5%] Asian, 21 [31.8%] Black or African American, 21 [31.8%] White, and 22 [33.3%] other race) were included in the primary analysis, with a mean (SD) pediatric respiratory assessment measure of 5.2 (1.9), indicating moderate disease. At the 50% interim analysis, participants in the BPAP study arm received a mean (SD) of 8.3 (8.5) hours of continuous albuterol vs 8.7 (10.0) hours in the control group (mean difference, 0.5 hours; 95% CI, 5.0 to 4.1 hours; P = .84). The study was stopped due to meeting a priori bounds for futility at the 50% interim analysis. No deaths, invasive mechanical ventilation, air leak syndrome, or aspiration pneumonia were observed in either study arm. CONCLUSIONS AND RELEVANCE: In this randomized clinical trial of early initiation of BPAP in the ED, no clinically significant decrease in the duration of continuous β agonist therapy in pediatric patients presenting with moderate asthma exacerbations was observed. Additional open label studies in a more severe asthma cohort are required to better inform clinical practice. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT05848115. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0496",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of X-ray science and technology",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0496_pddunet_a_primal_dual_deep_unrolling_network_for_ct_metal_ar.md",
+   "snippet": "Title PDDUNet: A primal dual deep unrolling network for CT metal artifact reduction Authors Sun Zhen, Zhang Pengcheng, Liu Yi, Liu Tingyue, Wu Binfeng, Gui Zhiguo Journal / DOI Journal of X ray science and technology · DOI: 10.1177/08953996",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of X-ray science and technology Title PDDUNet: A primal dual deep unrolling network for CT metal artifact reduction Authors Sun Zhen, Zhang Pengcheng, Liu Yi, Liu Tingyue, Wu Binfeng, Gui Zhiguo Journal / DOI Journal of X ray science and technology · DOI: 10.1177/08953996261481688 · PMID: 42647755 https://pubmed.ncbi.nlm.nih.gov/42647755/ Abstract In computed tomography (CT) imaging, severe artifacts caused by metallic implants within patients degrade image quality and compromise clinical diagnostic accuracy. Currently, deep unrolling based methods have demonstrated strong capability in metal artifact reduction (MAR). However, these methods primarily focus only on the unfoldment of data fidelity term, limiting their effectiveness. To overcome this issue, both the data fidelity term and the regularization term were unrolled to construct a Primal Dual Deep Unrolling Network (PDDUNet) for MAR. First, a unified optimization model formulated for MAR consists of two data fidelity terms and a total variation regularization, where the prior image generated by a Prior net constitutes one data fidelity term to improve reconstruction performance. Then, the Chambolle Pock algorithm was employed to solve this model, yielding a single loop iterative algorithm suitable for neural network unrolling. Finally, each computational step in this iterative algorithm is replaced by a simple neural network, constructing a deep unrolling network for MAR tasks. Extensive experiments were conducted on the synthetic and clinical datasets. Experimental results show that our proposed method achieves superior performance and generalization over previous MAR methods. It reveals that our proposed method offers a new perspective for MAR tasks. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0495",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / IEEE journal of biomedical and health informatics",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0495_dirichlet_process_guided_dynamic_filtering_for_mitosis_detec.md",
+   "snippet": "Title Dirichlet Process Guided Dynamic Filtering for Mitosis Detection with Single Point Supervision Authors Shu Chang, Tang Qiling, Yue Jianchi, Chen Pengzhou, Liu Rong, Wang Shuai Journal / DOI IEEE journal of biomedical and health inform",
+   "text": "Pathology scraped pubmed PubMed / IEEE journal of biomedical and health informatics Title Dirichlet Process Guided Dynamic Filtering for Mitosis Detection with Single Point Supervision Authors Shu Chang, Tang Qiling, Yue Jianchi, Chen Pengzhou, Liu Rong, Wang Shuai Journal / DOI IEEE journal of biomedical and health informatics · DOI: 10.1109/JBHI.2026.3727613 · PMID: 42647704 https://pubmed.ncbi.nlm.nih.gov/42647704/ Abstract Accurate detection of mitotic figures in breast histopathology images is central to tumor grading and prognostic assessment. Precise bounding box annotation remains labor intensive and variable because mitotic figures are small, morphologically diverse, and boundary ambiguous. Point level supervision reduces annotation cost but lacks scale information, making reliable pseudo box generation essential. Existing point supervised pipelines often use static or heuristic thresholds that may become unstable as teacher predictions and proposal score distributions evolve. We propose DDFMitos Net, a point supervised teacher student framework for distribution aware proposal filtering. The framework learns initial scale priors from point guided simulated masks, refines teacher generated pseudo boxes through Adaptive Multiple Instance Learning, and uses Distribution based Dynamic Filtering to integrate classification confidence with point centered spatial information. Adaptive thresholds are estimated with a truncated Dirichlet Process Mixture Model. Transformation Scale Learning improves geometric consistency, and Center Aware Domain Adaptation provides auxiliary scanner aware feature alignment. On MITOS12, MITOS14, TUPAC16, and MIDOG21, DDFMitos Net achieved repeated run F1 scores of 0.837 ± 0.004, 0.716 ± 0.006, 0.785 ± 0.005, and 0.806 ± 0.004, respectively. These results indicate stable and competitive point supervised mitosis detection using low cost point level annotations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0494",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Leukemia & lymphoma",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0494_mllt10_rearranged_acute_leukemia_finding_order_in_ambiguity_.md",
+   "snippet": "Title MLLT10 rearranged acute leukemia finding order in ambiguity a case series from a North Indian tertiary care center Authors Acharya Shreyam, Chauhan Richa, Dass Jasmita, Kv Vinu Balraam, Agarwal Ayush, Kv Ganesh, Aggarwal Mukul, Kumar ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Leukemia & lymphoma Title MLLT10 rearranged acute leukemia finding order in ambiguity a case series from a North Indian tertiary care center Authors Acharya Shreyam, Chauhan Richa, Dass Jasmita, Kv Vinu Balraam, Agarwal Ayush, Kv Ganesh, Aggarwal Mukul, Kumar Pradeep, et al. Journal / DOI Leukemia & lymphoma · DOI: 10.1080/10428194.2026.2719275 · PMID: 42647857 https://pubmed.ncbi.nlm.nih.gov/42647857/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0493",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0493_referral_patterns_in_the_ckd_qld_registry_a_call_for_revisit.md",
+   "snippet": "Title Referral patterns in the CKD.QLD Registry: A call for revisiting the definition of late referral Authors Mutatiri Clyson, Ratsch Angela, McGrail Matthew, Venuthurupalli Sree Krishna, Kondalsamy Chennakesavan Srinivas Journal / DOI Plo",
+   "text": "Nephrology scraped pubmed PubMed / PloS one Title Referral patterns in the CKD.QLD Registry: A call for revisiting the definition of late referral Authors Mutatiri Clyson, Ratsch Angela, McGrail Matthew, Venuthurupalli Sree Krishna, Kondalsamy Chennakesavan Srinivas Journal / DOI PloS one · DOI: 10.1371/journal.pone.0338001 · PMID: 42647570 https://pubmed.ncbi.nlm.nih.gov/42647570/ Abstract BACKGROUND: Timely nephrology referral is considered important in chronic kidney disease (CKD), however, definitions of \"late referral\" vary, and may not accurately reflect patient risk or predict outcomes. STUDY AIM: To evaluate referral patterns among Chronic Kidney Disease Queensland Registry (CKD.QLD) participants, focusing on the timing and appropriateness of referrals and their association with clinical outcomes. METHODS: We conducted a retrospective cohort study of adults (≥18 years) in the CKD.QLD Registry from seven public nephrology clinics (May 2011 June 2018). Participants were followed from referral to kidney replacement therapy (KRT), death, or study end. Late referral was defined as initiation of KRT within 12 months of referral among those who progressed to KRT. Comorbidity burden was assessed using an unweighted count. A primary Cox proportional hazards model was performed in KRT starters. To address selection bias, a multivariable Fine Gray competing risks model with left truncation was applied to the full cohort, incorporating pre KRT mortality. RESULTS: Among 3,775 participants, 775 (20.5%) developed end stage kidney disease and 513 of these (66.2%) initiated KRT. Overall, 722 (19.1%) died, including 598 before KRT. Late referral occurred in 60 (11.7%) KRT patients. In a fully adjusted Cox proportional hazards model restricted to the 513 participants who progressed to KRT, late referral was not associated with post KRT mortality (hazard ratio [HR] 0.91; 95% CI 0.52 1.59; p = 0.74). On the other hand, in a fully adjusted Fine Gray model, longer pre KRT care showed a statistically significant but clinically small increase in post KRT mortality (sub distribution hazard ratio [SHR]1.004 per additional month; 95% CI 1.001 1.006; p = 0.004). This minimal effect was supported by near overlapping cumulative incidence curves across 1 , 3 , 6 , and 12 month referral thresholds. In contrast, baseline clinical factors were strongly associated with post KRT mortality: higher comorbidity score (SHR 2.113; 95% CI 1.792 2.493; p < 0.001), pre existing cardiovascular disease (SHR 1.910; 95% CI 1.232 2.961; p = 0.004), and Indigenous status (SHR 1.931; 95% CI 1.193 3.127; p = 0.007). CONCLUSION: After accounting for pre dialysis deaths, longer pre KRT care had minimal impact on post dialysis survival. Outcomes were instead driven mainly by baseline comorbidity and cardiovascular disease rather than referral timing. These findings support a shift from primarily using time based referral criteria toward risk stratified approaches in CKD management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0492",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Science advances",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0492_rapid_and_robust_diagnosis_of_bloodstream_infections_by_sing.md",
+   "snippet": "Title Rapid and robust diagnosis of bloodstream infections by single cell analysis Authors Chin Siew Mei, Epiphaniou Emma, Kovtunov Evgenii, Mach Kathleen E, Liao Joseph C, Bobenchik April M, Yang Samuel, Wong Pak Kin Journal / DOI Science ",
+   "text": "Infectious Disease scraped pubmed PubMed / Science advances Title Rapid and robust diagnosis of bloodstream infections by single cell analysis Authors Chin Siew Mei, Epiphaniou Emma, Kovtunov Evgenii, Mach Kathleen E, Liao Joseph C, Bobenchik April M, Yang Samuel, Wong Pak Kin Journal / DOI Science advances · DOI: 10.1126/sciadv.aeh3580 · PMID: 42647646 https://pubmed.ncbi.nlm.nih.gov/42647646/ Abstract Sepsis, a common consequence of bloodstream infection (BSI), is a leading cause of global mortality and morbidity. Diagnosis is challenging and slow due to extremely low pathogen loads and reliance on time consuming blood culture, necessitating empiric therapy that worsens outcomes and antimicrobial resistance. Here, we introduce sedimentation assisted tandem rocking and enrichment for analysis and monitoring (STREAM), a platform that efficiently isolates and enriches pathogens near their natural doubling times directly from whole blood. By integrating STREAM with single cell analysis, we achieved rapid and robust diagnosis of BSI from whole blood samples. Using molecularly barcoded sequential fluorescence in situ hybridization, pathogen identification in 104 positive blood culture samples showed 96.15% concordance with clinical laboratory results. Gel based single cell antimicrobial susceptibility testing yields 97.96% essential agreement and 93.9% categorical agreement across 219 drug dose combinations. The platform enabled comprehensive BSI diagnosis directly from whole blood, achieving a detection limit as low as 0.1 to 1 CFU/ml and delivering full diagnostic results within 6.75 to 17 hours. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0491",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of heart failure",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0491_the_c_mic_ii_follow_up_study_safety_and_efficacy_results_12_.md",
+   "snippet": "Title The C MIC II Follow Up Study: Safety and Efficacy Results 12 months After Deactivation of Cardiac Microcurrent Therapy Authors Rame Jesus E, Kosevic Dragana N, Kovacevic Preradovic Tamara, Jovev Sasko, Zdravkovic Marija, Granov Nermir",
+   "text": "Cardiology scraped pubmed PubMed / European journal of heart failure Title The C MIC II Follow Up Study: Safety and Efficacy Results 12 months After Deactivation of Cardiac Microcurrent Therapy Authors Rame Jesus E, Kosevic Dragana N, Kovacevic Preradovic Tamara, Jovev Sasko, Zdravkovic Marija, Granov Nermir, Popov Tanja, Rudez Igor, et al. Journal / DOI European journal of heart failure · DOI: 10.1093/ejhf/xuag274 · PMID: 42647736 https://pubmed.ncbi.nlm.nih.gov/42647736/ Abstract BACKGROUND: The C MIC II trial demonstrated benefits of 6 months of cardiac microcurrent (C MIC) therapy in patients with non ischemic heart failure with reduced ejection fraction (HFrEF). The prospective C MIC II Follow Up Study evaluates safety and efficacy outcomes post device deactivation. METHODS: Primary safety related endpoints included all cause, cardiovascular and device related mortality and hospitalizations and adverse events (AEs). Secondary efficacy related endpoints included changes in left ventricular ejection fraction (LVEF), Kansas City Cardiomyopathy Questionnaire Overall Summary Score (KCCQ OSS), 6 minute walk distance (6MWD), New York Heart Association (NYHA) class and device reactivation rate. Here, we report 12 month results comparing the 6 month time point (at the end of active therapy) with the 18 month time point (12 months post deactivation). RESULTS: Of 32 eligible patients, 31 (97%) were enrolled. At 12 months post device deactivation, 3 patients (10%) were hospitalized and 1 died (3%); none were device related. One device related AE occurred and resolved completely. Improvements in LVEF (vs pre implantation: +6%; 95% CI 5 8; p<0.0001) and KCCQ OSS (vs pre implantation: +43 points; 95% CI 36 49; p<0.0001) were sustained and unchanged from 6 months (LVEF: 0.1%; 95% CI 2 2; p=0.87; KCCQ OSS: 2; 95% CI 8 4; p=0.49). The 6MWD remained improved (vs pre implantation: +150 m; 95% CI 109 191; p<0.0001), with a modest decrease ( 31 m; 95% CI 56 7; p=0.013) from 6 months. Improvements in NYHA class (≥1 class improvement in 77% patients) were sustained. Three (10%) patients required device reactivation. CONCLUSION: Among patients previously treated with C MIC device, improvements in LVEF, 6MWD, NYHA class and KCCQ OSS were sustained, with a favorable safety profile 12 months post deactivation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0745",

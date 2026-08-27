@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-26",
+ "generated": "2026-08-27",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -7193,6 +7193,98 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0392",
+   "style": "relation",
+   "session": 6,
+   "region": "neck",
+   "subregion": "carotid-triangle",
+   "examPhase": "tagging-1",
+   "stem": "목동맥삼각의 세 경계를 말하고, 이 삼각을 열었을 때 드러나는 목혈관신경집 세 구조를 안쪽·가쪽·뒤 위치로 배열하시오. 또한 온목동맥이 갈라지는 높이와, 갈라지기 전 온목동맥이 가지를 내는지 답하시오.",
+   "choices": null,
+   "answer": "경계 — 위: 두힘살근 뒤힘살 (posterior belly of digastric m.) / 앞아래: 어깨목뿔근 위힘살 (superior belly of omohyoid m.) / 뒤: 목빗근 앞모서리 (anterior border of sternocleidomastoid m.). 목혈관신경집 — 안쪽: 온목동맥 (common carotid a.) / 가쪽: 속목정맥 (internal jugular v.) / 둘 사이 뒤: 미주신경 (vagus n., X). 갈림 높이 — 방패연골 위모서리(C4) 높이. 온목동맥은 갈라지기 전까지 가지를 내지 않는다.",
+   "explanation": "목동맥삼각은 앞목삼각의 네 소삼각 중 ==혈관신경집이 그대로 드러나는 자리==라 태깅에서 가장 많이 열린다. 경계 셋은 모두 '가르는 근육' — 두힘살근(뒤힘살)과 어깨목뿔근(위힘살)이 앞목삼각을 소삼각으로 쪼개고, 목빗근 앞모서리가 앞/뒤목삼각의 경계다. 집 안의 배열은 ==안쪽 동맥 – 가쪽 정맥 – 뒤쪽 미주신경==으로 외운다(정맥이 가쪽이라 중심정맥삽입의 표적이 된다). 갈림은 ==방패연골 위모서리, 대략 C4== 높이이고, **온목동맥은 갈라지기 전 가지가 없다**는 점이 바깥목동맥(8가지)과의 결정적 대비다 — 그래서 목에서 가지를 내는 동맥이 보이면 그것은 이미 바깥목동맥이다. 갈림부의 목동맥팽대(압력수용체)·목동맥토리(화학수용체)는 둘 다 ==혀인두신경(IX)==이 담당하므로, 양쪽 목동맥을 동시에 누르면 반사서맥으로 실신할 수 있다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 목의 삼각·목의 내장"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0393",
+   "style": "distinction",
+   "session": 6,
+   "region": "neck",
+   "subregion": "anterior-triangle",
+   "examPhase": "tagging-1",
+   "stem": "앞목삼각 부위에서 자리가 겹쳐 혼동되는 두 쌍을 감별하시오. (1) 넓은목근과 가로목신경은 각각 무슨 신경의 지배를 받으며, 무엇을 기준으로 갈라 외우는가? (2) 두힘살근은 한 근육인데 앞힘살과 뒤힘살의 지배신경이 다르다 — 각각의 신경과 그 이유를 말하고, 두 힘살을 잇는 구조가 어디에 매이는지 답하시오.",
+   "choices": null,
+   "answer": "(1) 넓은목근 (platysma m.) = 얼굴신경(facial n., VII)의 목가지 — 얕은근막 속 표정근육이다. 가로목신경 (transverse cervical n.) = 목신경얼기(C2–C3)의 피부가지 — 앞목삼각 피부 감각. 기준: 운동이면 얼굴신경, 감각이면 가로목신경. (2) 앞힘살 = 삼차신경(trigeminal n., V) 아래턱신경의 턱목뿔근신경 / 뒤힘살 = 얼굴신경(facial n., VII). 이유: 앞힘살은 첫째 인두굽이, 뒤힘살은 둘째 인두굽이에서 유래한다. 두 힘살을 잇는 중간힘줄 (intermediate tendon)은 섬유고리로 목뿔뼈 (hyoid bone)에 매인다.",
+   "explanation": "둘 다 ==같은 자리를 지나면서 계통이 다른== 전형적인 태깅 함정이다. 넓은목근은 목에 있지만 목신경이 아니라 **표정근육**이므로 ==얼굴신경 목가지==가 지배한다 — 목을 지나는 얼굴신경 가지라 목 수술에서 흔히 다치고, 손상되면 아랫입술을 아래·가쪽으로 당기지 못한다. 바로 그 위를 달리는 가로목신경은 순수 **감각**이라 '운동 = VII, 감각 = 목신경얼기'로 가른다. 두힘살근의 두 힘살이 다른 신경을 받는 것은 ==인두굽이 유래가 다르기== 때문이며, 인두굽이 유래가 지배신경을 결정한다는 원칙(1굽이 = V3, 2굽이 = VII)의 대표 예다. 그래서 이 근육 하나가 앞목삼각을 소삼각으로 가르면서 두 뇌신경의 경계 표지 노릇을 한다. 중간힘줄이 ==목뿔뼈에 섬유고리로 매여== 있어 두 힘살이 각도를 이루며 꺾이고, 이 지점이 턱밑삼각과 목동맥삼각을 나누는 실물 기준점이 된다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 목의 삼각·목의 내장"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0394",
+   "style": "course-tracing",
+   "session": 6,
+   "region": "lower-limb",
+   "subregion": "femoral-triangle",
+   "examPhase": "tagging-1",
+   "stem": "넙다리삼각의 네 경계(위·가쪽·안쪽·바닥)를 말하고, 고샅인대 아래에서 넙다리동맥이 오금동맥으로 이름이 바뀌기까지의 경로를 통로 이름 순서대로 추적하시오. 모음근굴의 지붕과 통과하는 구조물도 함께 답하시오.",
+   "choices": null,
+   "answer": "경계 — 위(바닥변): 고샅인대 (inguinal lig.) / 가쪽: 넙다리빗근 안쪽모서리 (medial border of sartorius m.) / 안쪽: 긴모음근 안쪽모서리 (medial border of adductor longus m.) / 바닥: 엉덩허리근(가쪽) + 두덩근(안쪽) (iliopsoas m. + pectineus m.). 경로 — 넙다리삼각 → 모음근굴 (adductor canal) → 모음근구멍 (adductor hiatus) → 오금 (popliteal fossa), 모음근구멍을 지나면서 넙다리동맥 (femoral a.)이 오금동맥 (popliteal a.)이 된다. 모음근굴 — 지붕: 넓은근모음근막(넙다리빗근이 그 위를 덮는다) / 통과: 넙다리동맥·넙다리정맥 + 두렁신경 (saphenous n.) + 안쪽넓은근신경.",
+   "explanation": "넓적다리 앞은 ==삼각 → 굴 → 구멍 → 오금==으로 이어지는 하나의 관이라고 보면 외우기 쉽다. 삼각의 내용물은 가쪽부터 **NAVEL** — 넙다리**신**경 · 넙다리**동**맥 · 넙다리**정**맥 · 빈공간(femoral canal) · **림**프절 순이다. 여기서 갈라 둘 것은 ==넙다리신경은 혈관집 바깥에 있다==는 점 — 그래서 넙다리동맥을 찔러도 신경은 대개 비껴간다. 삼각의 꼭짓점에서 혈관은 넙다리빗근 밑으로 들어가 ==모음근굴==이 되고, 이 굴에서 **두렁신경만 혈관과 끝까지 동행하다가 굴을 나와 피부로** 빠지므로 두렁신경은 굴 안에서 혈관 앞을 비스듬히 가로지르는 모습으로 잡힌다(태깅 단골). 굴의 아래끝 ==모음근구멍==은 큰모음근 힘줄이 넙다리뼈에 붙으며 남긴 틈으로, 이 구멍을 통과하는 그 순간부터 이름이 오금동맥으로 바뀐다 — **구조가 바뀌어서가 아니라 통로를 지나서 이름이 바뀐다**는 점을 묻는 문제가 자주 나온다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 실습주제 — 다리 얕은층·넓적다리 앞/안쪽칸·종아리 앞·발등"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0395",
+   "style": "clinical-application",
+   "session": 6,
+   "region": "lower-limb",
+   "subregion": "femoral-triangle",
+   "examPhase": "tagging-1",
+   "stem": "심장 더듬자(카테터) 삽입과 동맥채혈에서 넙다리동맥을 표준 경로로 쓰는 해부학적 이유를 세 가지 들고, 촉지 지점을 말하시오(응용과제 3). 이어서 깊은넙다리동맥의 가지 중 넙다리뼈 머리·목을 먹여 살리는 동맥은 무엇이며, 그 동맥이 어느 근육 사이로 지나가고 끊기면 무슨 병이 생기는지 답하시오.",
+   "choices": null,
+   "answer": "이유 — ① 굵다(속엉덩동맥 계열 중 가장 큰 표재 동맥이라 큰 구경 카테터가 들어간다) ② 얕다(넙다리삼각에서 넙다리근막 바로 밑이라 체표에서 촉지·천자된다) ③ 뒤에 뼈(넙다리뼈 머리)가 받쳐 있어 눌러 지혈이 된다. 촉지 지점 — 고샅인대 중간점 바로 아래. 동맥 — 안쪽넙다리휘돌이동맥 (medial circumflex femoral a.), 깊은넙다리동맥 (deep femoral a. / profunda femoris a.)의 가지. 주행 — 엉덩허리근과 두덩근 사이로 뒤로 돌아간다. 끊기면 — 대퇴골두 무혈성괴사 (avascular necrosis of the femoral head).",
+   "explanation": "'왜 하필 넙다리동맥이냐'는 ==굵고·얕고·뼈 위에 있다== 세 가지로 답한다. 특히 세 번째가 결정적이다 — 천자 후 압박지혈이 되려면 동맥 **뒤에 단단한 받침**이 있어야 하고, 고샅인대 중간점 아래에서는 넙다리뼈 머리가 그 받침이 된다. 그래서 천자는 고샅인대보다 **아래**에서 해야 한다(위에서 찌르면 바깥엉덩동맥이 배안으로 들어가 눌리지 않아 뒤배막뒤 출혈이 된다). 삼각 내 배열 **NAVEL** 상 넙다리신경은 동맥 가쪽에 따로 있어 대개 비껴간다. 한편 넙다리뼈 머리·목의 혈류는 ==안쪽넙다리휘돌이동맥==이 거의 전담하는데, 이 동맥이 ==엉덩허리근과 두덩근 사이==로 뒤로 돌아 관절주머니를 뚫고 올라가기 때문에 **넙다리뼈 목 골절이나 엉덩관절 뒤 탈구에서 함께 찢어진다** → 대퇴골두 무혈성괴사. 넙다리뼈 머리는 혈류가 한 곳에서만 오는 종말순환에 가까워 곁순환이 구제해 주지 못하며, 어린이에서만 볼기뼈절구가지(폐쇄동맥)가 일부 보조한다.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "6회차(2026-09-03) 응용과제 — 넙다리동맥 채혈·더듬자 삽입 이유 / 실습주제 넓적다리 앞·안쪽칸"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -8044,6 +8136,103 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-28",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "thorax",
+    "head"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0029"
+    ],
+    "branch": [
+     "anatomy-2026-0030"
+    ],
+    "relation": [
+     "anatomy-2026-0032",
+     "anatomy-2026-0036"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0157",
+    "anatomy-2026-0162",
+    "anatomy-2026-0385",
+    "anatomy-2026-0154",
+    "anatomy-2026-0159",
+    "anatomy-2026-0043",
+    "anatomy-2026-0038",
+    "anatomy-2026-0161",
+    "anatomy-2026-0378",
+    "anatomy-2026-0380",
+    "anatomy-2026-0156",
+    "anatomy-2026-0377"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0380",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0044",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0015",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0016",
+     "anatomy-2026-0017",
+     "anatomy-2026-0018"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-27",
    "phase": "t1-prep",
