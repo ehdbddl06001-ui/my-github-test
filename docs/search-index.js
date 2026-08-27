@@ -1,41 +1,41 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-26",
+ "generated": "2026-08-27",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1838,
+  "total": 1878,
   "byType": {
+   "kmle": 747,
    "usmle": 114,
    "anatomy": 502,
-   "kmle": 715,
-   "paper": 490,
+   "paper": 498,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
    "Anatomy": 502,
-   "Cardiology": 150,
-   "Nephrology": 128,
-   "Infectious Disease": 104,
-   "Pediatrics": 83,
-   "Hematology-Oncology": 76,
-   "Pathology": 69,
-   "Obstetrics & Gynecology": 56,
-   "Neurology": 54,
-   "Psychiatry": 54,
-   "Surgery": 51,
-   "Endocrinology": 46,
-   "Gastroenterology": 45,
-   "Laboratory Medicine": 45,
-   "Pulmonology": 45,
-   "Dermatology": 44,
-   "General Surgery": 44,
-   "Ophthalmology": 44,
-   "Orthopedics": 44,
-   "Rheumatology": 44,
-   "Hematology": 43,
+   "Cardiology": 153,
+   "Nephrology": 131,
+   "Infectious Disease": 107,
+   "Pediatrics": 86,
+   "Hematology-Oncology": 77,
+   "Pathology": 70,
+   "Obstetrics & Gynecology": 58,
+   "Neurology": 56,
+   "Psychiatry": 56,
+   "Surgery": 52,
+   "Endocrinology": 48,
+   "Gastroenterology": 47,
+   "Pulmonology": 47,
+   "Dermatology": 46,
+   "General Surgery": 46,
+   "Laboratory Medicine": 46,
+   "Ophthalmology": 46,
+   "Orthopedics": 46,
+   "Rheumatology": 46,
+   "Hematology": 45,
    "Physiology": 14,
    "Pharmacology": 9,
    "Microbiology": 8,
@@ -53,13 +53,621 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1122,
-   "medium": 667,
+   "high": 1154,
+   "medium": 675,
    "low": 49
   },
-  "tagCount": 2607
+  "tagCount": 2615
  },
  "docs": [
+  {
+   "id": "kmle-2026-0777",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Scleroderma Renal Crisis",
+   "tags": [
+    "scleroderma-renal-crisis",
+    "ACE-inhibitor",
+    "malignant-hypertension",
+    "systemic-sclerosis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0777.md",
+   "snippet": "48세 여자가 며칠 사이 심한 두통과 시야 흐림으로 왔다. 몇 달 전부터 손가락 피부가 두꺼워지고 추우면 하얗게 변한다고 한다. 진찰에서 손가락 피부가 딱딱하고 얼굴 피부가 팽팽하다. 활력징후와 검사는 자료와 같다. 혈압을 조절하기 위해 가장 적절한 약은? A. 경구 베타차단제 B. 정맥 하이드랄라진 C. 안지오텐신전환효소억제제 D. 정맥 furosemide E. 경구 칼슘통로차단제 피부경화·레이노현상 배경에서 급격한 악성 고",
+   "text": "Rheumatology Scleroderma Renal Crisis scleroderma-renal-crisis ACE-inhibitor malignant-hypertension systemic-sclerosis KMLE 2026 / Claude Routine 48세 여자가 며칠 사이 심한 두통과 시야 흐림으로 왔다. 몇 달 전부터 손가락 피부가 두꺼워지고 추우면 하얗게 변한다고 한다. 진찰에서 손가락 피부가 딱딱하고 얼굴 피부가 팽팽하다. 활력징후와 검사는 자료와 같다. 혈압을 조절하기 위해 가장 적절한 약은? A. 경구 베타차단제 B. 정맥 하이드랄라진 C. 안지오텐신전환효소억제제 D. 정맥 furosemide E. 경구 칼슘통로차단제 피부경화·레이노현상 배경에서 급격한 악성 고혈압과 미세혈관병용혈·신손상은 공피증신위기로, 안지오텐신전환효소억제제가 특이적 치료다."
+  },
+  {
+   "id": "kmle-2026-0776",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Rheumatology",
+   "subtopic": "Granulomatosis with Polyangiitis",
+   "tags": [
+    "GPA",
+    "ANCA",
+    "pulmonary-renal",
+    "vasculitis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0776.md",
+   "snippet": "52세 남자가 몇 주간 지속되는 코피·고름콧물과 함께 각혈·혈뇨가 생겨 왔다. 진찰에서 코 안 점막이 헐어 있고 콩팥기능이 나빠져 있다. 가슴사진에서 양쪽 폐에 결절이 보인다. 활력징후와 검사는 자료와 같다. 관해를 유도하기 위해 가장 적절한 처치는? A. 경구 콜히친을 투여한다 B. 광범위 항생제만 투여한다 C. 비스테로이드소염제만 투여한다 D. 요산저하제를 투여한다 E. 고용량 스테로이드와 면역억제제로 관해유도를 한다 위·",
+   "text": "Rheumatology Granulomatosis with Polyangiitis GPA ANCA pulmonary-renal vasculitis KMLE 2026 / Claude Routine 52세 남자가 몇 주간 지속되는 코피·고름콧물과 함께 각혈·혈뇨가 생겨 왔다. 진찰에서 코 안 점막이 헐어 있고 콩팥기능이 나빠져 있다. 가슴사진에서 양쪽 폐에 결절이 보인다. 활력징후와 검사는 자료와 같다. 관해를 유도하기 위해 가장 적절한 처치는? A. 경구 콜히친을 투여한다 B. 광범위 항생제만 투여한다 C. 비스테로이드소염제만 투여한다 D. 요산저하제를 투여한다 E. 고용량 스테로이드와 면역억제제로 관해유도를 한다 위·아래 기도(코·폐)와 콩팥을 함께 침범하고 c ANCA 양성인 것은 육아종증다발혈관염으로, 고용량 스테로이드+면역억제제 관해유도가 표준이다."
+  },
+  {
+   "id": "kmle-2026-0775",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Acute Respiratory Distress Syndrome",
+   "tags": [
+    "ARDS",
+    "lung-protective-ventilation",
+    "low-tidal-volume",
+    "hypoxemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0775.md",
+   "snippet": "62세 남자가 중증 폐렴으로 입원 중 급격히 산소요구량이 늘어 기관삽관·인공호흡을 시작하였다. 가슴사진에서 양쪽 폐에 미만성 침윤이 있고 심장크기는 정상이다. 심부전 근거는 없고 활력징후와 검사는 자료와 같다. 인공호흡기 설정으로 가장 적절한 것은? A. 낮은 일회호흡량으로 폐보호환기를 한다 B. 높은 일회호흡량으로 환기시킨다 C. 호기말양압을 0으로 유지한다 D. 고농도 산소만 올리고 압력은 높인다 E. 이뇨제로 다량 탈수시",
+   "text": "Pulmonology Acute Respiratory Distress Syndrome ARDS lung-protective-ventilation low-tidal-volume hypoxemia KMLE 2026 / Claude Routine 62세 남자가 중증 폐렴으로 입원 중 급격히 산소요구량이 늘어 기관삽관·인공호흡을 시작하였다. 가슴사진에서 양쪽 폐에 미만성 침윤이 있고 심장크기는 정상이다. 심부전 근거는 없고 활력징후와 검사는 자료와 같다. 인공호흡기 설정으로 가장 적절한 것은? A. 낮은 일회호흡량으로 폐보호환기를 한다 B. 높은 일회호흡량으로 환기시킨다 C. 호기말양압을 0으로 유지한다 D. 고농도 산소만 올리고 압력은 높인다 E. 이뇨제로 다량 탈수시킨다 유발질환 후 양측 침윤·심한 저산소혈증(P/F 160)에 심인성 부종 근거가 없으면 ARDS로, 낮은 일회호흡량 폐보호환기가 사망률을 낮춘다."
+  },
+  {
+   "id": "kmle-2026-0774",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pulmonology",
+   "subtopic": "Tension Pneumothorax",
+   "tags": [
+    "tension-pneumothorax",
+    "needle-decompression",
+    "obstructive-shock",
+    "trauma"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0774.md",
+   "snippet": "27세 남자가 교통사고로 왼쪽 가슴을 부딪친 뒤 급격히 악화된 호흡곤란으로 왔다. 진찰에서 왼쪽 가슴이 부풀어 있고 호흡음이 들리지 않으며 목정맥이 팽대되고 기관이 오른쪽으로 밀려 있다. 활력징후와 검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 흉부 CT를 먼저 촬영한다 B. 왼쪽 가슴에 바늘감압을 시행한다 C. 기관지확장제를 흡입시킨다 D. 정맥 furosemide를 투여한다 E. 앙와위로 눕히고 관찰한다 외상 후 편",
+   "text": "Pulmonology Tension Pneumothorax tension-pneumothorax needle-decompression obstructive-shock trauma KMLE 2026 / Claude Routine 27세 남자가 교통사고로 왼쪽 가슴을 부딪친 뒤 급격히 악화된 호흡곤란으로 왔다. 진찰에서 왼쪽 가슴이 부풀어 있고 호흡음이 들리지 않으며 목정맥이 팽대되고 기관이 오른쪽으로 밀려 있다. 활력징후와 검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 흉부 CT를 먼저 촬영한다 B. 왼쪽 가슴에 바늘감압을 시행한다 C. 기관지확장제를 흡입시킨다 D. 정맥 furosemide를 투여한다 E. 앙와위로 눕히고 관찰한다 외상 후 편측 호흡음 소실·목정맥 팽대·기관 편위와 쇼크는 긴장기흉으로, 영상 확인 전 즉시 바늘감압이 필요하다."
+  },
+  {
+   "id": "kmle-2026-0773",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Lithium Toxicity",
+   "tags": [
+    "lithium-toxicity",
+    "tremor",
+    "hemodialysis",
+    "bipolar"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0773.md",
+   "snippet": "56세 여자가 며칠간의 손떨림·구토·비틀거림·말어눌로 왔다. 양극성장애로 약을 먹던 중 최근 위장염으로 탈수가 있었고 소염제를 함께 복용했다. 진찰에서 거친 손떨림과 근간대경련, 운동실조가 있고 의식이 처진다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 약을 계속 복용하며 관찰한다 B. 활성탄을 투여한다 C. 저장성 수액을 제한한다 D. 항히스타민제를 투여한다 E. 혈액투석을 시행한다 탈수·소염제로 상승한 리튬",
+   "text": "Psychiatry Lithium Toxicity lithium-toxicity tremor hemodialysis bipolar KMLE 2026 / Claude Routine 56세 여자가 며칠간의 손떨림·구토·비틀거림·말어눌로 왔다. 양극성장애로 약을 먹던 중 최근 위장염으로 탈수가 있었고 소염제를 함께 복용했다. 진찰에서 거친 손떨림과 근간대경련, 운동실조가 있고 의식이 처진다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 약을 계속 복용하며 관찰한다 B. 활성탄을 투여한다 C. 저장성 수액을 제한한다 D. 항히스타민제를 투여한다 E. 혈액투석을 시행한다 탈수·소염제로 상승한 리튬농도(3.4)에 신손상과 신경증상(경련·운동실조·의식저하)을 동반한 중증 중독은 혈액투석 적응이다."
+  },
+  {
+   "id": "kmle-2026-0772",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Psychiatry",
+   "subtopic": "Neuroleptic Malignant Syndrome",
+   "tags": [
+    "NMS",
+    "antipsychotic",
+    "rigidity",
+    "hyperthermia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0772.md",
+   "snippet": "28세 남자가 이틀 사이 고열과 온몸이 뻣뻣해지고 의식이 처지는 증상으로 왔다. 조현병으로 최근 항정신병약을 증량했다. 진찰에서 전신 근육이 납관처럼 뻣뻣하고 땀을 많이 흘리며 반응이 느리다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 원인 항정신병약을 즉시 중단한다 B. 항정신병약을 더 증량한다 C. 선택적 세로토닌재흡수억제제를 시작한다 D. 할로페리돌을 추가한다 E. 리튬을 시작한다 항정신병약 증량 후 고열",
+   "text": "Psychiatry Neuroleptic Malignant Syndrome NMS antipsychotic rigidity hyperthermia KMLE 2026 / Claude Routine 28세 남자가 이틀 사이 고열과 온몸이 뻣뻣해지고 의식이 처지는 증상으로 왔다. 조현병으로 최근 항정신병약을 증량했다. 진찰에서 전신 근육이 납관처럼 뻣뻣하고 땀을 많이 흘리며 반응이 느리다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 원인 항정신병약을 즉시 중단한다 B. 항정신병약을 더 증량한다 C. 선택적 세로토닌재흡수억제제를 시작한다 D. 할로페리돌을 추가한다 E. 리튬을 시작한다 항정신병약 증량 후 고열·납관경직·자율신경불안정·CK 상승은 신경이완제악성증후군으로, 원인약 중단과 적극적 지지치료가 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0771",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Croup (Laryngotracheobronchitis)",
+   "tags": [
+    "croup",
+    "barking-cough",
+    "dexamethasone",
+    "stridor"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0771.md",
+   "snippet": "2세 여아가 밤에 갑자기 개 짖는 듯한 기침과 쉰 목소리, 숨쉴 때 소리가 나 왔다. 며칠간 콧물·미열이 있었다. 진찰에서 안정 시에도 들숨에 그렁거리는 소리가 들리나 침을 흘리거나 삼킴곤란은 없고 안색은 분홍빛이다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 경구 아목시실린을 투여한다 B. 즉시 기관내삽관을 한다 C. 항히스타민제를 투여한다 D. 덱사메타손을 투여한다 E. 기관지확장제 흡입만 시킨다 개 짖는 ",
+   "text": "Pediatrics Croup (Laryngotracheobronchitis) croup barking-cough dexamethasone stridor KMLE 2026 / Claude Routine 2세 여아가 밤에 갑자기 개 짖는 듯한 기침과 쉰 목소리, 숨쉴 때 소리가 나 왔다. 며칠간 콧물·미열이 있었다. 진찰에서 안정 시에도 들숨에 그렁거리는 소리가 들리나 침을 흘리거나 삼킴곤란은 없고 안색은 분홍빛이다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 경구 아목시실린을 투여한다 B. 즉시 기관내삽관을 한다 C. 항히스타민제를 투여한다 D. 덱사메타손을 투여한다 E. 기관지확장제 흡입만 시킨다 개 짖는 기침·쉰 목소리·들숨협착음에 삼킴곤란·침흘림이 없는 상기도 증상은 크룹으로, 중등도 이상이면 덱사메타손이 표준이다."
+  },
+  {
+   "id": "kmle-2026-0770",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "Intussusception",
+   "tags": [
+    "intussusception",
+    "air-enema",
+    "currant-jelly-stool",
+    "infant"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0770.md",
+   "snippet": "10개월 남아가 갑자기 자지러지게 울다 멈추기를 반복하고 딸기잼 같은 혈성 점액변을 보았다며 왔다. 진찰에서 오른쪽 윗배에서 소시지 모양 덩이가 만져지고 복막자극징후는 없다. 활력징후와 검사는 자료와 같다. 진단과 치료를 위해 가장 적절한 처치는? A. 지사제를 투여하며 관찰한다 B. 초음파 유도 공기정복을 시행한다 C. 즉시 개복 장절제를 한다 D. 관장약을 먹여 배변시킨다 E. 위장관운동촉진제를 투여한다 간헐적 심한 보챔·",
+   "text": "Pediatrics Intussusception intussusception air-enema currant-jelly-stool infant KMLE 2026 / Claude Routine 10개월 남아가 갑자기 자지러지게 울다 멈추기를 반복하고 딸기잼 같은 혈성 점액변을 보았다며 왔다. 진찰에서 오른쪽 윗배에서 소시지 모양 덩이가 만져지고 복막자극징후는 없다. 활력징후와 검사는 자료와 같다. 진단과 치료를 위해 가장 적절한 처치는? A. 지사제를 투여하며 관찰한다 B. 초음파 유도 공기정복을 시행한다 C. 즉시 개복 장절제를 한다 D. 관장약을 먹여 배변시킨다 E. 위장관운동촉진제를 투여한다 간헐적 심한 보챔·혈성 점액변·소시지 모양 덩이는 장중첩증으로, 복막징후가 없으면 공기(또는 조영)정복이 진단이자 치료다."
+  },
+  {
+   "id": "kmle-2026-0769",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Supracondylar Humerus Fracture with Vascular Compromise",
+   "tags": [
+    "supracondylar-fracture",
+    "pediatric",
+    "vascular-injury",
+    "emergency-reduction"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0769.md",
+   "snippet": "7세 남자가 철봉에서 떨어져 팔꿈치를 다친 뒤 극심한 통증으로 왔다. 진찰에서 팔꿈치가 붓고 변형되었으며 아래팔이 창백하고 차다. 손가락을 펼 때 통증이 심하다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 팔걸이만 하고 다음날 수술을 예약한다 B. 얼음찜질 후 경과관찰한다 C. 진통제만 주고 부기가 빠지길 기다린다 D. 석고고정 후 귀가시킨다 E. 응급 정복·고정으로 혈류를 회복시킨다 소아 위팔뼈관절융기위골절에",
+   "text": "Orthopedics Supracondylar Humerus Fracture with Vascular Compromise supracondylar-fracture pediatric vascular-injury emergency-reduction KMLE 2026 / Claude Routine 7세 남자가 철봉에서 떨어져 팔꿈치를 다친 뒤 극심한 통증으로 왔다. 진찰에서 팔꿈치가 붓고 변형되었으며 아래팔이 창백하고 차다. 손가락을 펼 때 통증이 심하다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 팔걸이만 하고 다음날 수술을 예약한다 B. 얼음찜질 후 경과관찰한다 C. 진통제만 주고 부기가 빠지길 기다린다 D. 석고고정 후 귀가시킨다 E. 응급 정복·고정으로 혈류를 회복시킨다 소아 위팔뼈관절융기위골절에서 노동맥맥박 소실과 창백·냉감은 혈관손상으로, 응급 정복·고정으로 혈류를 회복시켜야 한다."
+  },
+  {
+   "id": "kmle-2026-0768",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Orthopedics",
+   "subtopic": "Cauda Equina Syndrome",
+   "tags": [
+    "cauda-equina",
+    "urinary-retention",
+    "emergency-MRI",
+    "decompression"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0768.md",
+   "snippet": "45세 남자가 이틀 전부터 심한 허리통증과 함께 양쪽 다리가 저리고 소변을 보기 어렵다며 왔다. 진찰에서 항문 주위 감각이 둔하고 항문조임근 긴장도가 떨어져 있으며 잔뇨가 많다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 소염진통제 처방 후 외래 추적한다 B. 물리치료를 시작한다 C. 경막외 스테로이드 주사를 예약한다 D. 응급 요추 MRI 후 감압수술을 한다 E. 침상안정 후 경과관찰한다 양측 하지증상·안장마",
+   "text": "Orthopedics Cauda Equina Syndrome cauda-equina urinary-retention emergency-MRI decompression KMLE 2026 / Claude Routine 45세 남자가 이틀 전부터 심한 허리통증과 함께 양쪽 다리가 저리고 소변을 보기 어렵다며 왔다. 진찰에서 항문 주위 감각이 둔하고 항문조임근 긴장도가 떨어져 있으며 잔뇨가 많다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 소염진통제 처방 후 외래 추적한다 B. 물리치료를 시작한다 C. 경막외 스테로이드 주사를 예약한다 D. 응급 요추 MRI 후 감압수술을 한다 E. 침상안정 후 경과관찰한다 양측 하지증상·안장마취·항문긴장저하·요저류는 말총증후군으로, 응급 MRI 후 지체 없이 감압수술이 필요하다."
+  },
+  {
+   "id": "kmle-2026-0767",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Ocular Chemical (Alkali) Burn",
+   "tags": [
+    "chemical-burn",
+    "alkali",
+    "irrigation",
+    "ocular-emergency"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0767.md",
+   "snippet": "43세 남자가 공사장에서 시멘트 반죽이 왼쪽 눈에 튄 뒤 극심한 통증과 시야 흐림으로 왔다. 진찰에서 결막이 창백하고 각막이 뿌옇다. 활력징후와 검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 즉시 다량의 생리식염수로 세척한다 B. 안구를 압박붕대로 감는다 C. 스테로이드 안약을 먼저 점안한다 D. 항생제 안연고를 바르고 관찰한다 E. 산동제를 점안한다 알칼리(시멘트) 화학화상은 조직으로 깊이 침투하므로, 다른 어떤 처치",
+   "text": "Ophthalmology Ocular Chemical (Alkali) Burn chemical-burn alkali irrigation ocular-emergency KMLE 2026 / Claude Routine 43세 남자가 공사장에서 시멘트 반죽이 왼쪽 눈에 튄 뒤 극심한 통증과 시야 흐림으로 왔다. 진찰에서 결막이 창백하고 각막이 뿌옇다. 활력징후와 검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 즉시 다량의 생리식염수로 세척한다 B. 안구를 압박붕대로 감는다 C. 스테로이드 안약을 먼저 점안한다 D. 항생제 안연고를 바르고 관찰한다 E. 산동제를 점안한다 알칼리(시멘트) 화학화상은 조직으로 깊이 침투하므로, 다른 어떤 처치보다 먼저 pH가 정상화될 때까지 대량 세척한다."
+  },
+  {
+   "id": "kmle-2026-0766",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Ophthalmology",
+   "subtopic": "Orbital Cellulitis",
+   "tags": [
+    "orbital-cellulitis",
+    "proptosis",
+    "sinusitis",
+    "IV-antibiotics"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0766.md",
+   "snippet": "9세 남자가 하루 사이 오른쪽 눈꺼풀이 붓고 아프며 눈알을 움직일 때 통증이 심하다고 왔다. 최근 코곁굴염을 앓았다. 진찰에서 눈꺼풀이 붉게 붓고 안구가 앞으로 돌출되었으며 눈 운동이 제한되고 아프다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 입원시켜 정맥 항생제를 시작한다 B. 경구 항히스타민제를 투여한다 C. 냉찜질 후 귀가시킨다 D. 국소 항생제 안약만 점안한다 E. 경구 스테로이드만 투여한다 코곁굴염 ",
+   "text": "Ophthalmology Orbital Cellulitis orbital-cellulitis proptosis sinusitis IV-antibiotics KMLE 2026 / Claude Routine 9세 남자가 하루 사이 오른쪽 눈꺼풀이 붓고 아프며 눈알을 움직일 때 통증이 심하다고 왔다. 최근 코곁굴염을 앓았다. 진찰에서 눈꺼풀이 붉게 붓고 안구가 앞으로 돌출되었으며 눈 운동이 제한되고 아프다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 입원시켜 정맥 항생제를 시작한다 B. 경구 항히스타민제를 투여한다 C. 냉찜질 후 귀가시킨다 D. 국소 항생제 안약만 점안한다 E. 경구 스테로이드만 투여한다 코곁굴염 후 안구돌출·통증성 안구운동제한·발열은 눈확연조직염으로, 정맥 항생제와 안와 CT로 농양 유무를 확인한다."
+  },
+  {
+   "id": "kmle-2026-0765",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Shoulder Dystocia",
+   "tags": [
+    "shoulder-dystocia",
+    "McRoberts",
+    "obstetric-emergency",
+    "delivery"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0765.md",
+   "snippet": "34세 임신성당뇨 임부가 질식분만 중 아기 머리는 나왔으나 어깨가 걸려 더 진행되지 않는다. 아기 머리가 회음부로 다시 당겨지는 모습이 보인다. 활력징후와 검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 자궁바닥을 강하게 누른다 B. 즉시 흡입분만을 시도한다 C. 산모 넓적다리를 배쪽으로 굽힌다 D. 옥시토신을 증량한다 E. 아기 머리를 세게 잡아당긴다 머리 만출 후 어깨가 걸리고 거북목징후를 보이는 어깨난산에서, 첫 처",
+   "text": "Obstetrics & Gynecology Shoulder Dystocia shoulder-dystocia McRoberts obstetric-emergency delivery KMLE 2026 / Claude Routine 34세 임신성당뇨 임부가 질식분만 중 아기 머리는 나왔으나 어깨가 걸려 더 진행되지 않는다. 아기 머리가 회음부로 다시 당겨지는 모습이 보인다. 활력징후와 검사는 자료와 같다. 가장 먼저 시행할 처치는? A. 자궁바닥을 강하게 누른다 B. 즉시 흡입분만을 시도한다 C. 산모 넓적다리를 배쪽으로 굽힌다 D. 옥시토신을 증량한다 E. 아기 머리를 세게 잡아당긴다 머리 만출 후 어깨가 걸리고 거북목징후를 보이는 어깨난산에서, 첫 처치는 산모 다리를 배쪽으로 굽히는 매크로버츠 수기다."
+  },
+  {
+   "id": "kmle-2026-0764",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Obstetrics & Gynecology",
+   "subtopic": "Preeclampsia with Severe Features",
+   "tags": [
+    "preeclampsia",
+    "magnesium-sulfate",
+    "seizure-prophylaxis",
+    "pregnancy"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0764.md",
+   "snippet": "29세 임신 34주 초임부가 심한 두통과 눈앞이 번쩍이는 증상, 오른쪽 윗배 통증으로 왔다. 진찰에서 하지 부종과 심부건반사 항진이 있다. 활력징후와 검사는 자료와 같으며 태아심박수는 정상이다. 발작을 예방하기 위해 가장 적절한 처치는? A. 경구 페니토인을 투여한다 B. 정맥 로라제팜을 투여한다 C. 정맥 furosemide를 투여한다 D. 정맥 황산마그네슘을 투여한다 E. 정맥 노르에피네프린을 투여한다 심한 고혈압·단백뇨·",
+   "text": "Obstetrics & Gynecology Preeclampsia with Severe Features preeclampsia magnesium-sulfate seizure-prophylaxis pregnancy KMLE 2026 / Claude Routine 29세 임신 34주 초임부가 심한 두통과 눈앞이 번쩍이는 증상, 오른쪽 윗배 통증으로 왔다. 진찰에서 하지 부종과 심부건반사 항진이 있다. 활력징후와 검사는 자료와 같으며 태아심박수는 정상이다. 발작을 예방하기 위해 가장 적절한 처치는? A. 경구 페니토인을 투여한다 B. 정맥 로라제팜을 투여한다 C. 정맥 furosemide를 투여한다 D. 정맥 황산마그네슘을 투여한다 E. 정맥 노르에피네프린을 투여한다 심한 고혈압·단백뇨·두통·시야증상·상복부통·혈소판감소를 보이는 중증 임신중독증에서 자간증 예방의 표준은 황산마그네슘이다."
+  },
+  {
+   "id": "kmle-2026-0763",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Status Epilepticus",
+   "tags": [
+    "status-epilepticus",
+    "benzodiazepine",
+    "lorazepam",
+    "airway"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0763.md",
+   "snippet": "34세 남자가 전신 강직간대발작이 병원 도착 후에도 7분째 멈추지 않아 응급실에 있다. 뇌전증으로 약을 자주 거른다고 한다. 진찰에서 지속적 경련으로 청색증이 관찰된다. 기도확보와 산소·정맥로 확보를 마쳤고 활력징후와 검사는 자료와 같다. 발작을 멈추기 위해 가장 먼저 투여할 약은? A. 정맥 페니토인을 투여한다 B. 정맥 로라제팜을 투여한다 C. 경구 카바마제핀을 투여한다 D. 정맥 레베티라세탐을 투여한다 E. 정맥 발프로산",
+   "text": "Neurology Status Epilepticus status-epilepticus benzodiazepine lorazepam airway KMLE 2026 / Claude Routine 34세 남자가 전신 강직간대발작이 병원 도착 후에도 7분째 멈추지 않아 응급실에 있다. 뇌전증으로 약을 자주 거른다고 한다. 진찰에서 지속적 경련으로 청색증이 관찰된다. 기도확보와 산소·정맥로 확보를 마쳤고 활력징후와 검사는 자료와 같다. 발작을 멈추기 위해 가장 먼저 투여할 약은? A. 정맥 페니토인을 투여한다 B. 정맥 로라제팜을 투여한다 C. 경구 카바마제핀을 투여한다 D. 정맥 레베티라세탐을 투여한다 E. 정맥 발프로산을 투여한다 5분 이상 지속되는 전신경련은 뇌전증지속상태로, 기도·산소·정맥로 확보 후 일차 약물은 벤조디아제핀(로라제팜)이다."
+  },
+  {
+   "id": "kmle-2026-0762",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Neurology",
+   "subtopic": "Subarachnoid Hemorrhage",
+   "tags": [
+    "subarachnoid-hemorrhage",
+    "thunderclap-headache",
+    "noncontrast-CT",
+    "aneurysm"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0762.md",
+   "snippet": "48세 여자가 운동 중 갑자기 벼락 치듯 시작된 인생 최악의 두통과 구토로 왔다. 진찰에서 의식은 명료하나 목이 뻣뻣하고 빛을 싫어한다. 신경학적 국소마비는 없다. 활력징후와 검사는 자료와 같다. 진단을 위해 가장 먼저 시행할 검사는? A. 뇌 조영증강 MRI B. 요추천자를 먼저 시행 C. 비조영 뇌 CT D. 경동맥 초음파 E. 뇌파검사 벼락두통과 뒷목 뻣뻣함·수명은 거미막밑출혈을 시사하며, 초기 진단은 비조영 뇌 CT가 ",
+   "text": "Neurology Subarachnoid Hemorrhage subarachnoid-hemorrhage thunderclap-headache noncontrast-CT aneurysm KMLE 2026 / Claude Routine 48세 여자가 운동 중 갑자기 벼락 치듯 시작된 인생 최악의 두통과 구토로 왔다. 진찰에서 의식은 명료하나 목이 뻣뻣하고 빛을 싫어한다. 신경학적 국소마비는 없다. 활력징후와 검사는 자료와 같다. 진단을 위해 가장 먼저 시행할 검사는? A. 뇌 조영증강 MRI B. 요추천자를 먼저 시행 C. 비조영 뇌 CT D. 경동맥 초음파 E. 뇌파검사 벼락두통과 뒷목 뻣뻣함·수명은 거미막밑출혈을 시사하며, 초기 진단은 비조영 뇌 CT가 일차 검사다."
+  },
+  {
+   "id": "kmle-2026-0761",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "SIADH",
+   "tags": [
+    "SIADH",
+    "hyponatremia",
+    "fluid-restriction",
+    "euvolemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0761.md",
+   "snippet": "67세 남자가 며칠간의 두통·구역·집중력 저하로 왔다. 최근 소세포폐암을 진단받았다. 진찰에서 부종이나 탈수 소견 없이 혈압·맥박이 정상이고 신경학적 국소징후는 없다. 활력징후와 검사는 자료와 같으며 갑상선·부신기능은 정상이다. 경련은 없다. 가장 적절한 처치는? A. 데스모프레신을 투여한다 B. 3% 고장식염수를 빠르게 대량 투여한다 C. 저장성 수액을 투여한다 D. 이뇨제로 소변량을 늘린다 E. 수분섭취를 제한한다 정상용적",
+   "text": "Nephrology SIADH SIADH hyponatremia fluid-restriction euvolemia KMLE 2026 / Claude Routine 67세 남자가 며칠간의 두통·구역·집중력 저하로 왔다. 최근 소세포폐암을 진단받았다. 진찰에서 부종이나 탈수 소견 없이 혈압·맥박이 정상이고 신경학적 국소징후는 없다. 활력징후와 검사는 자료와 같으며 갑상선·부신기능은 정상이다. 경련은 없다. 가장 적절한 처치는? A. 데스모프레신을 투여한다 B. 3% 고장식염수를 빠르게 대량 투여한다 C. 저장성 수액을 투여한다 D. 이뇨제로 소변량을 늘린다 E. 수분섭취를 제한한다 정상용적의 저나트륨혈증에 낮은 혈청·높은 소변 삼투질농도와 높은 소변 나트륨, 소세포폐암은 SIADH로, 경증·무경련이면 수분제한이 일차 처치다."
+  },
+  {
+   "id": "kmle-2026-0760",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "Acute Interstitial Nephritis",
+   "tags": [
+    "interstitial-nephritis",
+    "drug-induced",
+    "eosinophilia",
+    "AKI"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0760.md",
+   "snippet": "62세 남자가 열과 발진, 소변량 감소로 왔다. 2주 전 요로감염으로 새 항생제를 시작했다. 진찰에서 몸통에 반점구진발진이 있다. 활력징후와 검사는 자료와 같고 소변에서 백혈구가 많으나 배양은 음성이다. 신기능을 회복시키기 위해 가장 적절한 처치는? A. 즉시 혈액투석을 시작한다 B. 광범위 항생제를 추가한다 C. 정맥 조영 CT를 시행한다 D. 원인이 된 약물을 중단한다 E. 비스테로이드소염제를 투여한다 약물 노출 후 발열·",
+   "text": "Nephrology Acute Interstitial Nephritis interstitial-nephritis drug-induced eosinophilia AKI KMLE 2026 / Claude Routine 62세 남자가 열과 발진, 소변량 감소로 왔다. 2주 전 요로감염으로 새 항생제를 시작했다. 진찰에서 몸통에 반점구진발진이 있다. 활력징후와 검사는 자료와 같고 소변에서 백혈구가 많으나 배양은 음성이다. 신기능을 회복시키기 위해 가장 적절한 처치는? A. 즉시 혈액투석을 시작한다 B. 광범위 항생제를 추가한다 C. 정맥 조영 CT를 시행한다 D. 원인이 된 약물을 중단한다 E. 비스테로이드소염제를 투여한다 약물 노출 후 발열·발진·호산구증가와 무균성 농뇨를 동반한 급성 신손상은 급성 세관사이질신염으로, 원인 약물 중단이 첫 처치다."
+  },
+  {
+   "id": "kmle-2026-0759",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Toxic Shock Syndrome",
+   "tags": [
+    "toxic-shock-syndrome",
+    "staphylococcus",
+    "desquamation",
+    "source-control"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0759.md",
+   "snippet": "24세 여자가 하루 사이의 고열·전신 발진·어지럼으로 왔다. 월경 중 질 탐폰을 오래 넣어두었다고 한다. 진찰에서 온몸에 햇볕에 탄 듯한 붉은 발진이 있고 손바닥이 붉으며 결막이 충혈되어 있다. 활력징후와 검사는 자료와 같다. 수액소생과 항생제와 함께 가장 먼저 시행할 처치는? A. 전신 스테로이드를 투여한다 B. 원인이 된 탐폰을 제거한다 C. 항히스타민제를 투여한다 D. 정맥면역글로불린만 투여한다 E. 국소 스테로이드를 바",
+   "text": "Infectious Disease Toxic Shock Syndrome toxic-shock-syndrome staphylococcus desquamation source-control KMLE 2026 / Claude Routine 24세 여자가 하루 사이의 고열·전신 발진·어지럼으로 왔다. 월경 중 질 탐폰을 오래 넣어두었다고 한다. 진찰에서 온몸에 햇볕에 탄 듯한 붉은 발진이 있고 손바닥이 붉으며 결막이 충혈되어 있다. 활력징후와 검사는 자료와 같다. 수액소생과 항생제와 함께 가장 먼저 시행할 처치는? A. 전신 스테로이드를 투여한다 B. 원인이 된 탐폰을 제거한다 C. 항히스타민제를 투여한다 D. 정맥면역글로불린만 투여한다 E. 국소 스테로이드를 바른다 탐폰 사용력에 발열·저혈압·미만성 홍반·다장기 침범은 포도알균 독성쇼크증후군으로, 수액·항생제와 함께 감염원(탐폰) 제거가 필수다."
+  },
+  {
+   "id": "kmle-2026-0758",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "Scrub Typhus (Tsutsugamushi)",
+   "tags": [
+    "scrub-typhus",
+    "eschar",
+    "doxycycline",
+    "rickettsia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0758.md",
+   "snippet": "56세 여자가 일주일간의 고열·두통·발진으로 왔다. 가을에 밭일을 자주 한다고 한다. 진찰에서 몸통에 발진이 퍼져 있고 겨드랑이에 검은 딱지가 앉은 궤양과 그 주변 림프절 비대가 있다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 경구 독시사이클린을 투여한다 B. 정맥 반코마이신을 투여한다 C. 경구 아시클로버를 투여한다 D. 경구 하이드록시클로로퀸을 투여한다 E. 정맥 암포테리신B를 투여한다 야외활동력, 검은 ",
+   "text": "Infectious Disease Scrub Typhus (Tsutsugamushi) scrub-typhus eschar doxycycline rickettsia KMLE 2026 / Claude Routine 56세 여자가 일주일간의 고열·두통·발진으로 왔다. 가을에 밭일을 자주 한다고 한다. 진찰에서 몸통에 발진이 퍼져 있고 겨드랑이에 검은 딱지가 앉은 궤양과 그 주변 림프절 비대가 있다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 경구 독시사이클린을 투여한다 B. 정맥 반코마이신을 투여한다 C. 경구 아시클로버를 투여한다 D. 경구 하이드록시클로로퀸을 투여한다 E. 정맥 암포테리신B를 투여한다 야외활동력, 검은 딱지(가피)와 국소 림프절병증, 발진·발열·간효소상승·혈소판감소는 쓰쓰가무시병으로, 독시사이클린이 일차 치료다."
+  },
+  {
+   "id": "kmle-2026-0757",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Tumor Lysis Syndrome",
+   "tags": [
+    "tumor-lysis-syndrome",
+    "hyperuricemia",
+    "rasburicase",
+    "hyperkalemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0757.md",
+   "snippet": "19세 남자가 급성 백혈병으로 항암치료를 시작한 지 이틀 만에 소변량이 줄고 근육이 경련한다며 왔다. 진찰에서 특이 소견은 뚜렷하지 않으나 심전도에서 T파가 뾰족하다. 활력징후와 검사는 자료와 같다. 대사이상을 조절하기 위해 가장 적절한 처치는? A. 고용량 비타민C를 투여한다 B. 칼슘글루콘산염만 정맥투여한다 C. 티아지드 이뇨제를 투여한다 D. 경구 인결합제만 처방한다 E. 수액과 라스부리케이스를 투여한다 항암 개시 후 고",
+   "text": "Hematology Tumor Lysis Syndrome tumor-lysis-syndrome hyperuricemia rasburicase hyperkalemia KMLE 2026 / Claude Routine 19세 남자가 급성 백혈병으로 항암치료를 시작한 지 이틀 만에 소변량이 줄고 근육이 경련한다며 왔다. 진찰에서 특이 소견은 뚜렷하지 않으나 심전도에서 T파가 뾰족하다. 활력징후와 검사는 자료와 같다. 대사이상을 조절하기 위해 가장 적절한 처치는? A. 고용량 비타민C를 투여한다 B. 칼슘글루콘산염만 정맥투여한다 C. 티아지드 이뇨제를 투여한다 D. 경구 인결합제만 처방한다 E. 수액과 라스부리케이스를 투여한다 항암 개시 후 고칼륨혈증·고인산혈증·고요산혈증·저칼슘혈증은 종양용해증후군으로, 적극적 수액과 요산분해효소(라스부리케이스)가 핵심이다."
+  },
+  {
+   "id": "kmle-2026-0756",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Hematology",
+   "subtopic": "Heparin-Induced Thrombocytopenia",
+   "tags": [
+    "HIT",
+    "thrombocytopenia",
+    "argatroban",
+    "heparin"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0756.md",
+   "snippet": "68세 남자가 무릎관절치환술 후 예방적 항응고제를 맞고 있다. 수술 5일째 오른쪽 종아리가 붓고 아프며 혈소판이 크게 떨어졌다. 진찰에서 오른쪽 장딴지가 붓고 압통이 있다. 활력징후와 검사는 자료와 같고 응고검사는 정상 범위다. 가장 적절한 처치는? A. 혈소판을 수혈한다 B. 헤파린을 저분자량 헤파린으로 바꾼다 C. 헤파린을 끊고 아르가트로반으로 바꾼다 D. 헤파린을 유지하며 관찰한다 E. 와파린을 단독으로 시작한다 헤파린 ",
+   "text": "Hematology Heparin-Induced Thrombocytopenia HIT thrombocytopenia argatroban heparin KMLE 2026 / Claude Routine 68세 남자가 무릎관절치환술 후 예방적 항응고제를 맞고 있다. 수술 5일째 오른쪽 종아리가 붓고 아프며 혈소판이 크게 떨어졌다. 진찰에서 오른쪽 장딴지가 붓고 압통이 있다. 활력징후와 검사는 자료와 같고 응고검사는 정상 범위다. 가장 적절한 처치는? A. 혈소판을 수혈한다 B. 헤파린을 저분자량 헤파린으로 바꾼다 C. 헤파린을 끊고 아르가트로반으로 바꾼다 D. 헤파린을 유지하며 관찰한다 E. 와파린을 단독으로 시작한다 헤파린 노출 5~10일째 혈소판 급감과 새로운 혈전은 헤파린유발혈소판감소증으로, 모든 헤파린을 끊고 비헤파린 항응고제(아르가트로반)로 교체한다."
+  },
+  {
+   "id": "kmle-2026-0755",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Strangulated Inguinal Hernia",
+   "tags": [
+    "inguinal-hernia",
+    "strangulation",
+    "emergency-surgery",
+    "incarceration"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0755.md",
+   "snippet": "66세 남자가 오른쪽 사타구니의 심한 통증과 구토로 왔다. 예전부터 그 부위에 튀어나오는 혹이 있었는데 오늘은 눌러도 들어가지 않는다고 한다. 진찰에서 사타구니 종괴 위 피부가 붉고 만지면 매우 아프며 배는 팽만하다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 진통제 주고 다음날 외래로 보낸다 B. 응급 수술로 정복·장 생존 확인·교정한다 C. 도수정복 후 귀가시킨다 D. 탈장대를 착용시킨다 E. 항생제만 투여",
+   "text": "General Surgery Strangulated Inguinal Hernia inguinal-hernia strangulation emergency-surgery incarceration KMLE 2026 / Claude Routine 66세 남자가 오른쪽 사타구니의 심한 통증과 구토로 왔다. 예전부터 그 부위에 튀어나오는 혹이 있었는데 오늘은 눌러도 들어가지 않는다고 한다. 진찰에서 사타구니 종괴 위 피부가 붉고 만지면 매우 아프며 배는 팽만하다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 진통제 주고 다음날 외래로 보낸다 B. 응급 수술로 정복·장 생존 확인·교정한다 C. 도수정복 후 귀가시킨다 D. 탈장대를 착용시킨다 E. 항생제만 투여하며 관찰한다 정복되지 않고 발적·압통·전신 염증반응을 동반한 사타구니 종괴는 교액탈장으로, 장 괴사 전 응급 수술이 필요하다."
+  },
+  {
+   "id": "kmle-2026-0754",
+   "type": "kmle",
+   "unit": "",
+   "topic": "General Surgery",
+   "subtopic": "Adhesive Small Bowel Obstruction",
+   "tags": [
+    "small-bowel-obstruction",
+    "adhesion",
+    "nasogastric-decompression",
+    "conservative"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0754.md",
+   "snippet": "60세 여자가 하루 사이 배가 부르고 구토하며 가스와 대변이 안 나온다고 왔다. 3년 전 자궁절제술을 받았다. 진찰에서 배가 팽만하고 고음의 장음이 들리며 복막자극징후는 없다. 복부 단순촬영에서 확장된 작은창자 고리와 공기 액체층이 보인다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 즉시 개복 유착박리술을 시행한다 B. 대장내시경 감압을 시행한다 C. 관장 후 귀가시킨다 D. 금식·비위관 감압과 수액으로 경과관",
+   "text": "General Surgery Adhesive Small Bowel Obstruction small-bowel-obstruction adhesion nasogastric-decompression conservative KMLE 2026 / Claude Routine 60세 여자가 하루 사이 배가 부르고 구토하며 가스와 대변이 안 나온다고 왔다. 3년 전 자궁절제술을 받았다. 진찰에서 배가 팽만하고 고음의 장음이 들리며 복막자극징후는 없다. 복부 단순촬영에서 확장된 작은창자 고리와 공기 액체층이 보인다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 즉시 개복 유착박리술을 시행한다 B. 대장내시경 감압을 시행한다 C. 관장 후 귀가시킨다 D. 금식·비위관 감압과 수액으로 경과관찰한다 E. 지사제를 투여한다 수술 병력이 있는 환자의 단순 유착 작은창자막힘으로 복막징후·허혈이 없으면, 금식·비위관 감압·수액으로 보존치료하며 관찰한다."
+  },
+  {
+   "id": "kmle-2026-0753",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Spontaneous Bacterial Peritonitis",
+   "tags": [
+    "SBP",
+    "cirrhosis",
+    "ascites",
+    "cefotaxime"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0753.md",
+   "snippet": "58세 남자가 발열과 복부 팽만·둔한 복통으로 왔다. 간경변으로 추적 중이며 복수가 있다. 진찰에서 복부가 팽만하고 미만성 압통이 있다. 복수천자를 시행하였고 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 3세대 세팔로스포린을 정맥투여한다 B. 이뇨제를 증량한다 C. 경구 리팍시민만 투여한다 D. 진단적 개복술을 시행한다 E. 경정맥 간내문맥전신단락술을 시행한다 간경변 복수에서 복수 다형핵백혈구 250/mm³ 이상",
+   "text": "Gastroenterology Spontaneous Bacterial Peritonitis SBP cirrhosis ascites cefotaxime KMLE 2026 / Claude Routine 58세 남자가 발열과 복부 팽만·둔한 복통으로 왔다. 간경변으로 추적 중이며 복수가 있다. 진찰에서 복부가 팽만하고 미만성 압통이 있다. 복수천자를 시행하였고 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 3세대 세팔로스포린을 정맥투여한다 B. 이뇨제를 증량한다 C. 경구 리팍시민만 투여한다 D. 진단적 개복술을 시행한다 E. 경정맥 간내문맥전신단락술을 시행한다 간경변 복수에서 복수 다형핵백혈구 250/mm³ 이상과 발열은 자발세균복막염으로, 즉시 3세대 세팔로스포린을 시작한다."
+  },
+  {
+   "id": "kmle-2026-0752",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Gastroenterology",
+   "subtopic": "Acute Mesenteric Ischemia",
+   "tags": [
+    "mesenteric-ischemia",
+    "embolism",
+    "lactate",
+    "pain-out-of-proportion"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0752.md",
+   "snippet": "74세 남자가 갑자기 시작된 극심한 배꼽 주위 복통으로 왔다. 심방세동으로 약을 자주 거른다고 한다. 진찰에서 통증 호소는 심한데 배는 부드럽고 압통이 뚜렷하지 않다. 활력징후와 검사는 자료와 같다. 진단을 위해 가장 적절한 검사는? A. 복부 초음파 B. 윗소화관내시경 C. 복부 CT 혈관조영 D. 복부 단순촬영 E. 대장내시경 색전원(심방세동)이 있는 노인의 진찰소견에 비해 과도한 급성 복통과 젖산 상승은 급성 창자간막허혈",
+   "text": "Gastroenterology Acute Mesenteric Ischemia mesenteric-ischemia embolism lactate pain-out-of-proportion KMLE 2026 / Claude Routine 74세 남자가 갑자기 시작된 극심한 배꼽 주위 복통으로 왔다. 심방세동으로 약을 자주 거른다고 한다. 진찰에서 통증 호소는 심한데 배는 부드럽고 압통이 뚜렷하지 않다. 활력징후와 검사는 자료와 같다. 진단을 위해 가장 적절한 검사는? A. 복부 초음파 B. 윗소화관내시경 C. 복부 CT 혈관조영 D. 복부 단순촬영 E. 대장내시경 색전원(심방세동)이 있는 노인의 진찰소견에 비해 과도한 급성 복통과 젖산 상승은 급성 창자간막허혈로, CT 혈관조영이 일차 진단검사다."
+  },
+  {
+   "id": "kmle-2026-0751",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Pheochromocytoma",
+   "tags": [
+    "pheochromocytoma",
+    "catecholamine",
+    "alpha-blockade",
+    "preoperative"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0751.md",
+   "snippet": "38세 남자가 발작적인 두통·심한 발한·두근거림과 함께 심하게 오르내리는 혈압으로 왔다. 복부 CT에서 오른쪽 부신에 3 cm 종괴가 있고 생화학검사는 자료와 같다. 수술로 절제하기로 하였다. 수술 전 혈압 조절을 위해 가장 먼저 시작할 약은? A. 경구 베타차단제 B. 정맥 furosemide C. 경구 칼슘통로차단제 D. 안지오텐신전환효소억제제 E. 경구 알파차단제 카테콜아민 분비 종양(갈색세포종)의 수술 전 준비는 알파차",
+   "text": "Endocrinology Pheochromocytoma pheochromocytoma catecholamine alpha-blockade preoperative KMLE 2026 / Claude Routine 38세 남자가 발작적인 두통·심한 발한·두근거림과 함께 심하게 오르내리는 혈압으로 왔다. 복부 CT에서 오른쪽 부신에 3 cm 종괴가 있고 생화학검사는 자료와 같다. 수술로 절제하기로 하였다. 수술 전 혈압 조절을 위해 가장 먼저 시작할 약은? A. 경구 베타차단제 B. 정맥 furosemide C. 경구 칼슘통로차단제 D. 안지오텐신전환효소억제제 E. 경구 알파차단제 카테콜아민 분비 종양(갈색세포종)의 수술 전 준비는 알파차단을 먼저 하고 이후 베타차단을 더한다. 베타차단을 먼저 하면 고혈압위기가 온다."
+  },
+  {
+   "id": "kmle-2026-0750",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Endocrinology",
+   "subtopic": "Adrenal (Addisonian) Crisis",
+   "tags": [
+    "adrenal-crisis",
+    "hydrocortisone",
+    "hyponatremia",
+    "hyperkalemia"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0750.md",
+   "snippet": "40세 여자가 이틀간의 구토·복통·심한 무력감으로 왔다. 자가면역 갑상선염으로 추적 중이며 최근 장염을 앓았다. 진찰에서 잇몸과 손금에 색소침착이 있고 수액에도 혈압이 잘 오르지 않는다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 인슐린을 투여한다 B. 정맥 하이드로코르티손을 투여한다 C. 경구 fludrocortisone만 시작한다 D. 정맥 노르에피네프린만 투여한다 E. 고칼륨혈증 교정 위해 투석한다 ",
+   "text": "Endocrinology Adrenal (Addisonian) Crisis adrenal-crisis hydrocortisone hyponatremia hyperkalemia KMLE 2026 / Claude Routine 40세 여자가 이틀간의 구토·복통·심한 무력감으로 왔다. 자가면역 갑상선염으로 추적 중이며 최근 장염을 앓았다. 진찰에서 잇몸과 손금에 색소침착이 있고 수액에도 혈압이 잘 오르지 않는다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 인슐린을 투여한다 B. 정맥 하이드로코르티손을 투여한다 C. 경구 fludrocortisone만 시작한다 D. 정맥 노르에피네프린만 투여한다 E. 고칼륨혈증 교정 위해 투석한다 저혈압·저나트륨혈증·고칼륨혈증·저혈당과 색소침착은 부신위기로, 수액 보충과 함께 정맥 하이드로코르티손을 즉시 투여한다."
+  },
+  {
+   "id": "kmle-2026-0749",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "DRESS Syndrome",
+   "tags": [
+    "DRESS",
+    "eosinophilia",
+    "drug-hypersensitivity",
+    "hepatitis"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0749.md",
+   "snippet": "45세 여자가 온몸 발진과 열, 얼굴 부종으로 왔다. 6주 전 통풍으로 새 약을 시작했고 발진 발견 즉시 그 약을 끊었다고 한다. 진찰에서 목·겨드랑이 림프절이 커져 있고 얼굴이 부어 있다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 경구 항히스타민제를 투여한다 B. 광범위 항생제를 투여한다 C. 국소 보습제만 사용한다 D. 전신 코르티코스테로이드를 투여한다 E. 정맥면역글로불린을 단독 투여한다 6주 잠복 후 ",
+   "text": "Dermatology DRESS Syndrome DRESS eosinophilia drug-hypersensitivity hepatitis KMLE 2026 / Claude Routine 45세 여자가 온몸 발진과 열, 얼굴 부종으로 왔다. 6주 전 통풍으로 새 약을 시작했고 발진 발견 즉시 그 약을 끊었다고 한다. 진찰에서 목·겨드랑이 림프절이 커져 있고 얼굴이 부어 있다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 경구 항히스타민제를 투여한다 B. 광범위 항생제를 투여한다 C. 국소 보습제만 사용한다 D. 전신 코르티코스테로이드를 투여한다 E. 정맥면역글로불린을 단독 투여한다 6주 잠복 후 발진·발열·림프절병증·호산구증가·간효소 상승(DRESS)으로, 원인 약물을 이미 끊었다면 다음 처치는 전신 스테로이드다."
+  },
+  {
+   "id": "kmle-2026-0748",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Dermatology",
+   "subtopic": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis",
+   "tags": [
+    "SJS",
+    "TEN",
+    "drug-reaction",
+    "mucocutaneous"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0748.md",
+   "snippet": "28세 남자가 3일 전부터 열과 함께 온몸에 통증성 붉은 반점이 번지고 물집이 잡힌다며 왔다. 2주 전 경련으로 항경련제를 새로 시작했다. 진찰에서 입술·구강·결막에 짓무름이 있고 피부를 옆으로 밀면 표피가 벗겨진다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 국소 스테로이드 연고만 바른다 B. 경험적 광범위 항생제를 시작한다 C. 원인 약물을 즉시 중단한다 D. 경구 항히스타민제를 투여한다 E. 경구 아시클로",
+   "text": "Dermatology Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis SJS TEN drug-reaction mucocutaneous KMLE 2026 / Claude Routine 28세 남자가 3일 전부터 열과 함께 온몸에 통증성 붉은 반점이 번지고 물집이 잡힌다며 왔다. 2주 전 경련으로 항경련제를 새로 시작했다. 진찰에서 입술·구강·결막에 짓무름이 있고 피부를 옆으로 밀면 표피가 벗겨진다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 국소 스테로이드 연고만 바른다 B. 경험적 광범위 항생제를 시작한다 C. 원인 약물을 즉시 중단한다 D. 경구 항히스타민제를 투여한다 E. 경구 아시클로버를 투여한다 항경련제 노출 후 점막을 침범하는 통증성 표피박리(SJS/TEN)로, 사망률을 좌우하는 첫 처치는 원인 약물의 즉각 중단이다."
+  },
+  {
+   "id": "kmle-2026-0747",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Cardiac Tamponade",
+   "tags": [
+    "tamponade",
+    "pulsus-paradoxus",
+    "pericardiocentesis",
+    "obstructive-shock"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0747.md",
+   "snippet": "55세 여자가 폐암으로 치료 중 하루 사이 악화된 호흡곤란으로 왔다. 진찰에서 목정맥이 팽대되고 심음이 멀게 들리며 사지가 차다. 심전도는 저전압과 동빈맥을 보인다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 베타차단제를 투여한다 B. 심장막천자를 시행한다 C. 정맥 furosemide를 투여한다 D. 혈전용해제를 투여한다 E. 니트로글리세린을 정맥주사한다 목정맥 팽대·심음 감소·저혈압(Beck 3징)과 ",
+   "text": "Cardiology Cardiac Tamponade tamponade pulsus-paradoxus pericardiocentesis obstructive-shock KMLE 2026 / Claude Routine 55세 여자가 폐암으로 치료 중 하루 사이 악화된 호흡곤란으로 왔다. 진찰에서 목정맥이 팽대되고 심음이 멀게 들리며 사지가 차다. 심전도는 저전압과 동빈맥을 보인다. 활력징후와 검사는 자료와 같다. 가장 적절한 처치는? A. 정맥 베타차단제를 투여한다 B. 심장막천자를 시행한다 C. 정맥 furosemide를 투여한다 D. 혈전용해제를 투여한다 E. 니트로글리세린을 정맥주사한다 목정맥 팽대·심음 감소·저혈압(Beck 3징)과 흡기 시 수축기혈압 18 mmHg 저하는 심장눌림증으로, 응급 심장막천자로 압박을 해소한다."
+  },
+  {
+   "id": "kmle-2026-0746",
+   "type": "kmle",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "Symptomatic Sinus Bradycardia",
+   "tags": [
+    "bradycardia",
+    "atropine",
+    "beta-blocker",
+    "syncope"
+   ],
+   "source": "KMLE 2026 / Claude Routine",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/kmle/2026/kmle-2026-0746.md",
+   "snippet": "72세 남자가 어지럼과 실신으로 왔다. 고혈압으로 최근 약을 늘렸다고 한다. 진찰에서 의식은 명료하나 창백하고 사지가 차다. 심전도는 자료와 같고 활력징후와 검사는 자료와 같다. 흉통은 없다. 가장 먼저 시행할 처치는? A. 아트로핀을 정맥주사한다 B. 아데노신을 정맥주사한다 C. 경구 베타차단제를 증량한다 D. 정맥 furosemide를 투여한다 E. 경정맥 아미오다론을 투여한다 저혈압·실신을 동반한 증상성 서맥(분당 36회",
+   "text": "Cardiology Symptomatic Sinus Bradycardia bradycardia atropine beta-blocker syncope KMLE 2026 / Claude Routine 72세 남자가 어지럼과 실신으로 왔다. 고혈압으로 최근 약을 늘렸다고 한다. 진찰에서 의식은 명료하나 창백하고 사지가 차다. 심전도는 자료와 같고 활력징후와 검사는 자료와 같다. 흉통은 없다. 가장 먼저 시행할 처치는? A. 아트로핀을 정맥주사한다 B. 아데노신을 정맥주사한다 C. 경구 베타차단제를 증량한다 D. 정맥 furosemide를 투여한다 E. 경정맥 아미오다론을 투여한다 저혈압·실신을 동반한 증상성 서맥(분당 36회)으로, 일차 약물은 아트로핀이며 반응이 없으면 경피 심박조율로 넘어간다."
+  },
   {
    "id": "usmle-2026-0127",
    "type": "usmle",
@@ -283,6 +891,142 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/questions/tagging-1/anatomy-2026-0388.md",
    "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
    "text": "Anatomy 앞목갈비근을 기준으로 갈리는 빗장밑정맥·빗장밑동맥·팔신경얼기·가로막신경 7회차 · 목 relation 7회차 목의뿌리 앞목갈비근 목갈비근증후군 예습시험 태깅 7회차 서브노트(anatomy-2026-0112) §1-1 위가슴문을 지나는 것 — 2026 확정본 7회차 실습주제(목의 뿌리) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "paper-2026-0498",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Journal of urology",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0498_anastomotic_urethroplasty_is_associated_with_a_lower_risk_of.md",
+   "snippet": "Title Anastomotic Urethroplasty is Associated with a Lower Risk of Stricture Recurrence Compared to Buccal Mucosa Graft Onlay after Reconstruction for Radiation Induced Bulbomembranous Urethral Stenosis Authors Rourke Keith, Gelman Joel Jou",
+   "text": "Surgery scraped pubmed PubMed / The Journal of urology Title Anastomotic Urethroplasty is Associated with a Lower Risk of Stricture Recurrence Compared to Buccal Mucosa Graft Onlay after Reconstruction for Radiation Induced Bulbomembranous Urethral Stenosis Authors Rourke Keith, Gelman Joel Journal / DOI The Journal of urology · DOI: 10.1097/JU.0000000000005279 · PMID: 42647825 https://pubmed.ncbi.nlm.nih.gov/42647825/ Abstract INTRODUCTION: The preferred treatment of bulbomembranous urethral stenosis (BMUS) after prostate cancer radiotherapy remains unclear. The purpose of this study is to examine the association of surgical technique and outcomes after urethroplasty for radiation induced BMUS. METHODS: From 01/2001 09/2024, a review of patients undergoing posterior urethroplasty for BMUS at two centers was performed. The primary outcome was stricture recurrence defined as stricture <16Fr confirmed on cystoscopy. Secondary outcomes included 90 day complications (Clavien ≥2), patient reported satisfaction, de novo erectile dysfunction, or incontinence. Cox regression was used to evaluate variables associated with stricture recurrence and Fisher's exact test was used for secondary outcomes. RESULTS: 212 patients with radiation induced BMUS were reconstructed with either anastomotic urethroplasty (163) or buccal mucosal graft (BMG) (49). Median stenosis length was 2.0 cm (IQR 2.0 3.0), median follow up for patients without recurrence was 97 months (IQR 52 144), and etiology was brachytherapy (46%), EBRT (45%) or combination (9.0%). On Cox regression, BMG urethroplasty was independently associated with stricture recurrence (Hazard Ratio 3.43, 95%C.I. 1.03 11.47; p=0.046) while patient age (p=0.3), stenosis length (p=0.1), diabetes (p=0.7), smoking (p=0.5), obesity (p=0.6), and prior endoscopic treatments (p=0.6) were not. For BMG urethroplasty, the estimated cumulative risk of stricture recurrence at 1, 2, and 10 years was 17%, 18%, and 20% compared to 3.3%, 5.0%, and 6.8% for anastomotic urethroplasty (log rank p=0.01). Techniques did not differ with respect to complications (10% versus 4.1%; p=0.3), satisfaction (90% versus 88%; p=0.6), erectile dysfunction (15% versus 8.2%; p=0.2), or incontinence (18% versus 18%; p=1.0). CONCLUSIONS: When technically feasible, anastomotic urethroplasty is associated with a lower risk of stricture recurrence compared to onlay with buccal mucosa when reconstructing radiation induced bulbomembranous urethral stenosis without a higher risk of adverse events. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0497",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / JAMA network open",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0497_bilevel_positive_airway_pressure_and_continuous_albuterol_fo.md",
+   "snippet": "Title Bilevel Positive Airway Pressure and Continuous Albuterol for Pediatric Asthma Exacerbations: A Randomized Clinical Trial Authors Wilson Patrick T, Tanverdi Melisa, Brinton John T, Ambroggio Lilliam, Szefler Stanley J Journal / DOI JA",
+   "text": "Pediatrics scraped pubmed PubMed / JAMA network open Title Bilevel Positive Airway Pressure and Continuous Albuterol for Pediatric Asthma Exacerbations: A Randomized Clinical Trial Authors Wilson Patrick T, Tanverdi Melisa, Brinton John T, Ambroggio Lilliam, Szefler Stanley J Journal / DOI JAMA network open · DOI: 10.1001/jamanetworkopen.2026.30627 · PMID: 42646841 https://pubmed.ncbi.nlm.nih.gov/42646841/ Abstract IMPORTANCE: A substantial knowledge gap remains in understanding the specific role bilevel positive airway pressure (BPAP) in the emergency department (ED) for acute pediatric asthma exacerbations. OBJECTIVE: To examine whether the early application of BPAP in the ED for acute pediatric asthma exacerbations reduces duration of critical care management time. DESIGN, SETTING, AND PARTICIPANTS: This double blind randomized clinical trial enrolled children between 5 and 17 years of age presenting to a single center, quaternary, referral pediatric ED with an acute asthma exacerbation, a pediatric respiratory assessment measure of at least 4 (moderate severity), and prescribed continuous albuterol therapy between June 1, 2023, and May 31, 2025. INTERVENTION: Participants were randomized to either the intervention arm (BPAP) or control arm (sham BPAP, which delivers minimal pressure) for 4 hours. Neither the health care practitioners nor participants were aware of study arm allocation. MAIN OUTCOME AND MEASURES: The primary outcome measure was duration of continuous albuterol therapy. A sequential design with a planned interim analysis for futility and superiority was used, and a t test compared mean duration of continuous β agonist therapy under an intention to treat approach. RESULTS: Sixty six study participants (median [IQR] age, 10.2 [6.8 13.2] years; 35 [53.0%] male; 1 [1.5%] American Indian or Alaskan, 1 [1.5%] Asian, 21 [31.8%] Black or African American, 21 [31.8%] White, and 22 [33.3%] other race) were included in the primary analysis, with a mean (SD) pediatric respiratory assessment measure of 5.2 (1.9), indicating moderate disease. At the 50% interim analysis, participants in the BPAP study arm received a mean (SD) of 8.3 (8.5) hours of continuous albuterol vs 8.7 (10.0) hours in the control group (mean difference, 0.5 hours; 95% CI, 5.0 to 4.1 hours; P = .84). The study was stopped due to meeting a priori bounds for futility at the 50% interim analysis. No deaths, invasive mechanical ventilation, air leak syndrome, or aspiration pneumonia were observed in either study arm. CONCLUSIONS AND RELEVANCE: In this randomized clinical trial of early initiation of BPAP in the ED, no clinically significant decrease in the duration of continuous β agonist therapy in pediatric patients presenting with moderate asthma exacerbations was observed. Additional open label studies in a more severe asthma cohort are required to better inform clinical practice. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT05848115. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0496",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of X-ray science and technology",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0496_pddunet_a_primal_dual_deep_unrolling_network_for_ct_metal_ar.md",
+   "snippet": "Title PDDUNet: A primal dual deep unrolling network for CT metal artifact reduction Authors Sun Zhen, Zhang Pengcheng, Liu Yi, Liu Tingyue, Wu Binfeng, Gui Zhiguo Journal / DOI Journal of X ray science and technology · DOI: 10.1177/08953996",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of X-ray science and technology Title PDDUNet: A primal dual deep unrolling network for CT metal artifact reduction Authors Sun Zhen, Zhang Pengcheng, Liu Yi, Liu Tingyue, Wu Binfeng, Gui Zhiguo Journal / DOI Journal of X ray science and technology · DOI: 10.1177/08953996261481688 · PMID: 42647755 https://pubmed.ncbi.nlm.nih.gov/42647755/ Abstract In computed tomography (CT) imaging, severe artifacts caused by metallic implants within patients degrade image quality and compromise clinical diagnostic accuracy. Currently, deep unrolling based methods have demonstrated strong capability in metal artifact reduction (MAR). However, these methods primarily focus only on the unfoldment of data fidelity term, limiting their effectiveness. To overcome this issue, both the data fidelity term and the regularization term were unrolled to construct a Primal Dual Deep Unrolling Network (PDDUNet) for MAR. First, a unified optimization model formulated for MAR consists of two data fidelity terms and a total variation regularization, where the prior image generated by a Prior net constitutes one data fidelity term to improve reconstruction performance. Then, the Chambolle Pock algorithm was employed to solve this model, yielding a single loop iterative algorithm suitable for neural network unrolling. Finally, each computational step in this iterative algorithm is replaced by a simple neural network, constructing a deep unrolling network for MAR tasks. Extensive experiments were conducted on the synthetic and clinical datasets. Experimental results show that our proposed method achieves superior performance and generalization over previous MAR methods. It reveals that our proposed method offers a new perspective for MAR tasks. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0495",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / IEEE journal of biomedical and health informatics",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0495_dirichlet_process_guided_dynamic_filtering_for_mitosis_detec.md",
+   "snippet": "Title Dirichlet Process Guided Dynamic Filtering for Mitosis Detection with Single Point Supervision Authors Shu Chang, Tang Qiling, Yue Jianchi, Chen Pengzhou, Liu Rong, Wang Shuai Journal / DOI IEEE journal of biomedical and health inform",
+   "text": "Pathology scraped pubmed PubMed / IEEE journal of biomedical and health informatics Title Dirichlet Process Guided Dynamic Filtering for Mitosis Detection with Single Point Supervision Authors Shu Chang, Tang Qiling, Yue Jianchi, Chen Pengzhou, Liu Rong, Wang Shuai Journal / DOI IEEE journal of biomedical and health informatics · DOI: 10.1109/JBHI.2026.3727613 · PMID: 42647704 https://pubmed.ncbi.nlm.nih.gov/42647704/ Abstract Accurate detection of mitotic figures in breast histopathology images is central to tumor grading and prognostic assessment. Precise bounding box annotation remains labor intensive and variable because mitotic figures are small, morphologically diverse, and boundary ambiguous. Point level supervision reduces annotation cost but lacks scale information, making reliable pseudo box generation essential. Existing point supervised pipelines often use static or heuristic thresholds that may become unstable as teacher predictions and proposal score distributions evolve. We propose DDFMitos Net, a point supervised teacher student framework for distribution aware proposal filtering. The framework learns initial scale priors from point guided simulated masks, refines teacher generated pseudo boxes through Adaptive Multiple Instance Learning, and uses Distribution based Dynamic Filtering to integrate classification confidence with point centered spatial information. Adaptive thresholds are estimated with a truncated Dirichlet Process Mixture Model. Transformation Scale Learning improves geometric consistency, and Center Aware Domain Adaptation provides auxiliary scanner aware feature alignment. On MITOS12, MITOS14, TUPAC16, and MIDOG21, DDFMitos Net achieved repeated run F1 scores of 0.837 ± 0.004, 0.716 ± 0.006, 0.785 ± 0.005, and 0.806 ± 0.004, respectively. These results indicate stable and competitive point supervised mitosis detection using low cost point level annotations. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0494",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Leukemia & lymphoma",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0494_mllt10_rearranged_acute_leukemia_finding_order_in_ambiguity_.md",
+   "snippet": "Title MLLT10 rearranged acute leukemia finding order in ambiguity a case series from a North Indian tertiary care center Authors Acharya Shreyam, Chauhan Richa, Dass Jasmita, Kv Vinu Balraam, Agarwal Ayush, Kv Ganesh, Aggarwal Mukul, Kumar ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Leukemia & lymphoma Title MLLT10 rearranged acute leukemia finding order in ambiguity a case series from a North Indian tertiary care center Authors Acharya Shreyam, Chauhan Richa, Dass Jasmita, Kv Vinu Balraam, Agarwal Ayush, Kv Ganesh, Aggarwal Mukul, Kumar Pradeep, et al. Journal / DOI Leukemia & lymphoma · DOI: 10.1080/10428194.2026.2719275 · PMID: 42647857 https://pubmed.ncbi.nlm.nih.gov/42647857/ Abstract (PubMed에 초록 없음) Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0493",
+   "type": "paper",
+   "unit": "",
+   "topic": "Nephrology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0493_referral_patterns_in_the_ckd_qld_registry_a_call_for_revisit.md",
+   "snippet": "Title Referral patterns in the CKD.QLD Registry: A call for revisiting the definition of late referral Authors Mutatiri Clyson, Ratsch Angela, McGrail Matthew, Venuthurupalli Sree Krishna, Kondalsamy Chennakesavan Srinivas Journal / DOI Plo",
+   "text": "Nephrology scraped pubmed PubMed / PloS one Title Referral patterns in the CKD.QLD Registry: A call for revisiting the definition of late referral Authors Mutatiri Clyson, Ratsch Angela, McGrail Matthew, Venuthurupalli Sree Krishna, Kondalsamy Chennakesavan Srinivas Journal / DOI PloS one · DOI: 10.1371/journal.pone.0338001 · PMID: 42647570 https://pubmed.ncbi.nlm.nih.gov/42647570/ Abstract BACKGROUND: Timely nephrology referral is considered important in chronic kidney disease (CKD), however, definitions of \"late referral\" vary, and may not accurately reflect patient risk or predict outcomes. STUDY AIM: To evaluate referral patterns among Chronic Kidney Disease Queensland Registry (CKD.QLD) participants, focusing on the timing and appropriateness of referrals and their association with clinical outcomes. METHODS: We conducted a retrospective cohort study of adults (≥18 years) in the CKD.QLD Registry from seven public nephrology clinics (May 2011 June 2018). Participants were followed from referral to kidney replacement therapy (KRT), death, or study end. Late referral was defined as initiation of KRT within 12 months of referral among those who progressed to KRT. Comorbidity burden was assessed using an unweighted count. A primary Cox proportional hazards model was performed in KRT starters. To address selection bias, a multivariable Fine Gray competing risks model with left truncation was applied to the full cohort, incorporating pre KRT mortality. RESULTS: Among 3,775 participants, 775 (20.5%) developed end stage kidney disease and 513 of these (66.2%) initiated KRT. Overall, 722 (19.1%) died, including 598 before KRT. Late referral occurred in 60 (11.7%) KRT patients. In a fully adjusted Cox proportional hazards model restricted to the 513 participants who progressed to KRT, late referral was not associated with post KRT mortality (hazard ratio [HR] 0.91; 95% CI 0.52 1.59; p = 0.74). On the other hand, in a fully adjusted Fine Gray model, longer pre KRT care showed a statistically significant but clinically small increase in post KRT mortality (sub distribution hazard ratio [SHR]1.004 per additional month; 95% CI 1.001 1.006; p = 0.004). This minimal effect was supported by near overlapping cumulative incidence curves across 1 , 3 , 6 , and 12 month referral thresholds. In contrast, baseline clinical factors were strongly associated with post KRT mortality: higher comorbidity score (SHR 2.113; 95% CI 1.792 2.493; p < 0.001), pre existing cardiovascular disease (SHR 1.910; 95% CI 1.232 2.961; p = 0.004), and Indigenous status (SHR 1.931; 95% CI 1.193 3.127; p = 0.007). CONCLUSION: After accounting for pre dialysis deaths, longer pre KRT care had minimal impact on post dialysis survival. Outcomes were instead driven mainly by baseline comorbidity and cardiovascular disease rather than referral timing. These findings support a shift from primarily using time based referral criteria toward risk stratified approaches in CKD management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0492",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Science advances",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0492_rapid_and_robust_diagnosis_of_bloodstream_infections_by_sing.md",
+   "snippet": "Title Rapid and robust diagnosis of bloodstream infections by single cell analysis Authors Chin Siew Mei, Epiphaniou Emma, Kovtunov Evgenii, Mach Kathleen E, Liao Joseph C, Bobenchik April M, Yang Samuel, Wong Pak Kin Journal / DOI Science ",
+   "text": "Infectious Disease scraped pubmed PubMed / Science advances Title Rapid and robust diagnosis of bloodstream infections by single cell analysis Authors Chin Siew Mei, Epiphaniou Emma, Kovtunov Evgenii, Mach Kathleen E, Liao Joseph C, Bobenchik April M, Yang Samuel, Wong Pak Kin Journal / DOI Science advances · DOI: 10.1126/sciadv.aeh3580 · PMID: 42647646 https://pubmed.ncbi.nlm.nih.gov/42647646/ Abstract Sepsis, a common consequence of bloodstream infection (BSI), is a leading cause of global mortality and morbidity. Diagnosis is challenging and slow due to extremely low pathogen loads and reliance on time consuming blood culture, necessitating empiric therapy that worsens outcomes and antimicrobial resistance. Here, we introduce sedimentation assisted tandem rocking and enrichment for analysis and monitoring (STREAM), a platform that efficiently isolates and enriches pathogens near their natural doubling times directly from whole blood. By integrating STREAM with single cell analysis, we achieved rapid and robust diagnosis of BSI from whole blood samples. Using molecularly barcoded sequential fluorescence in situ hybridization, pathogen identification in 104 positive blood culture samples showed 96.15% concordance with clinical laboratory results. Gel based single cell antimicrobial susceptibility testing yields 97.96% essential agreement and 93.9% categorical agreement across 219 drug dose combinations. The platform enabled comprehensive BSI diagnosis directly from whole blood, achieving a detection limit as low as 0.1 to 1 CFU/ml and delivering full diagnostic results within 6.75 to 17 hours. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0491",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European journal of heart failure",
+   "confidence": "medium",
+   "date": "2026-08-26",
+   "path": "content/papers/2026/2026-08-26_paper-2026-0491_the_c_mic_ii_follow_up_study_safety_and_efficacy_results_12_.md",
+   "snippet": "Title The C MIC II Follow Up Study: Safety and Efficacy Results 12 months After Deactivation of Cardiac Microcurrent Therapy Authors Rame Jesus E, Kosevic Dragana N, Kovacevic Preradovic Tamara, Jovev Sasko, Zdravkovic Marija, Granov Nermir",
+   "text": "Cardiology scraped pubmed PubMed / European journal of heart failure Title The C MIC II Follow Up Study: Safety and Efficacy Results 12 months After Deactivation of Cardiac Microcurrent Therapy Authors Rame Jesus E, Kosevic Dragana N, Kovacevic Preradovic Tamara, Jovev Sasko, Zdravkovic Marija, Granov Nermir, Popov Tanja, Rudez Igor, et al. Journal / DOI European journal of heart failure · DOI: 10.1093/ejhf/xuag274 · PMID: 42647736 https://pubmed.ncbi.nlm.nih.gov/42647736/ Abstract BACKGROUND: The C MIC II trial demonstrated benefits of 6 months of cardiac microcurrent (C MIC) therapy in patients with non ischemic heart failure with reduced ejection fraction (HFrEF). The prospective C MIC II Follow Up Study evaluates safety and efficacy outcomes post device deactivation. METHODS: Primary safety related endpoints included all cause, cardiovascular and device related mortality and hospitalizations and adverse events (AEs). Secondary efficacy related endpoints included changes in left ventricular ejection fraction (LVEF), Kansas City Cardiomyopathy Questionnaire Overall Summary Score (KCCQ OSS), 6 minute walk distance (6MWD), New York Heart Association (NYHA) class and device reactivation rate. Here, we report 12 month results comparing the 6 month time point (at the end of active therapy) with the 18 month time point (12 months post deactivation). RESULTS: Of 32 eligible patients, 31 (97%) were enrolled. At 12 months post device deactivation, 3 patients (10%) were hospitalized and 1 died (3%); none were device related. One device related AE occurred and resolved completely. Improvements in LVEF (vs pre implantation: +6%; 95% CI 5 8; p<0.0001) and KCCQ OSS (vs pre implantation: +43 points; 95% CI 36 49; p<0.0001) were sustained and unchanged from 6 months (LVEF: 0.1%; 95% CI 2 2; p=0.87; KCCQ OSS: 2; 95% CI 8 4; p=0.49). The 6MWD remained improved (vs pre implantation: +150 m; 95% CI 109 191; p<0.0001), with a modest decrease ( 31 m; 95% CI 56 7; p=0.013) from 6 months. Improvements in NYHA class (≥1 class improvement in 77% patients) were sustained. Three (10%) patients required device reactivation. CONCLUSION: Among patients previously treated with C MIC device, improvements in LVEF, 6MWD, NYHA class and KCCQ OSS were sustained, with a favorable safety profile 12 months post deactivation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "kmle-2026-0745",
