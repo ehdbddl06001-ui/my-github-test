@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1878,
+  "total": 1883,
   "byType": {
    "kmle": 747,
+   "anatomy": 507,
    "usmle": 114,
-   "anatomy": 502,
    "paper": 498,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 502,
+   "Anatomy": 507,
    "Cardiology": 153,
    "Nephrology": 131,
    "Infectious Disease": 107,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1154,
+   "high": 1159,
    "medium": 675,
    "low": 49
   },
-  "tagCount": 2615
+  "tagCount": 2618
  },
  "docs": [
   {
@@ -667,6 +667,110 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0746.md",
    "snippet": "72세 남자가 어지럼과 실신으로 왔다. 고혈압으로 최근 약을 늘렸다고 한다. 진찰에서 의식은 명료하나 창백하고 사지가 차다. 심전도는 자료와 같고 활력징후와 검사는 자료와 같다. 흉통은 없다. 가장 먼저 시행할 처치는? A. 아트로핀을 정맥주사한다 B. 아데노신을 정맥주사한다 C. 경구 베타차단제를 증량한다 D. 정맥 furosemide를 투여한다 E. 경정맥 아미오다론을 투여한다 저혈압·실신을 동반한 증상성 서맥(분당 36회",
    "text": "Cardiology Symptomatic Sinus Bradycardia bradycardia atropine beta-blocker syncope KMLE 2026 / Claude Routine 72세 남자가 어지럼과 실신으로 왔다. 고혈압으로 최근 약을 늘렸다고 한다. 진찰에서 의식은 명료하나 창백하고 사지가 차다. 심전도는 자료와 같고 활력징후와 검사는 자료와 같다. 흉통은 없다. 가장 먼저 시행할 처치는? A. 아트로핀을 정맥주사한다 B. 아데노신을 정맥주사한다 C. 경구 베타차단제를 증량한다 D. 정맥 furosemide를 투여한다 E. 경정맥 아미오다론을 투여한다 저혈압·실신을 동반한 증상성 서맥(분당 36회)으로, 일차 약물은 아트로핀이며 반응이 없으면 경피 심박조율로 넘어간다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-28",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-28",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/daily/2026-08-28.md",
+   "snippet": "오늘의 학습 (2026 08 28 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 13일 · Tagging 2까지 52일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-28 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 28 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 13일 · Tagging 2까지 52일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0395",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넙다리동맥 천자와 안쪽넙다리휘돌이동맥 — 6회차 응용과제 3의 해부학적 근거",
+   "tags": [
+    "clinical-application",
+    "6회차",
+    "넙다리동맥",
+    "안쪽넙다리휘돌이동맥",
+    "대퇴골두무혈성괴사",
+    "응용과제",
+    "예습시험"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §3 임상 콜아웃(왜 넙다리동맥에서 찌르나 — 응용과제 3)·기출 콜아웃(대퇴골두 무혈성괴사)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0395.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 넙다리동맥 천자와 안쪽넙다리휘돌이동맥 — 6회차 응용과제 3의 해부학적 근거 6회차 · 다리 clinical-application 6회차 넙다리동맥 안쪽넙다리휘돌이동맥 대퇴골두무혈성괴사 응용과제 예습시험 6회차 서브노트(anatomy-2026-0067) §3 임상 콜아웃(왜 넙다리동맥에서 찌르나 — 응용과제 3)·기출 콜아웃(대퇴골두 무혈성괴사) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0394",
+   "type": "anatomy",
+   "unit": "6회차 · 다리",
+   "topic": "Anatomy",
+   "subtopic": "넙다리삼각 → 모음근굴 → 모음근구멍 → 오금 — 넓적다리 앞의 통로 추적",
+   "tags": [
+    "course-tracing",
+    "6회차",
+    "넙다리삼각",
+    "모음근굴",
+    "모음근구멍",
+    "두렁신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §3 넙다리삼각 경계·NAVEL 배열 · §4 모음근굴 — 2026 확정본 6회차 실습주제(넓적다리 앞·안쪽칸)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0394.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 넙다리삼각 → 모음근굴 → 모음근구멍 → 오금 — 넓적다리 앞의 통로 추적 6회차 · 다리 course-tracing 6회차 넙다리삼각 모음근굴 모음근구멍 두렁신경 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §3 넙다리삼각 경계·NAVEL 배열 · §4 모음근굴 — 2026 확정본 6회차 실습주제(넓적다리 앞·안쪽칸) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0393",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "앞목삼각에서 갈라 외우는 두 쌍 — 넓은목근 vs 가로목신경, 두힘살근 앞힘살 vs 뒤힘살",
+   "tags": [
+    "distinction",
+    "6회차",
+    "넓은목근",
+    "가로목신경",
+    "두힘살근",
+    "인두굽이",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §1-2 기출 콜아웃(두힘살근의 두 얼굴) · §2-2 주의 콜아웃(넓은목근은 목신경이 아니다)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0393.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 앞목삼각에서 갈라 외우는 두 쌍 — 넓은목근 vs 가로목신경, 두힘살근 앞힘살 vs 뒤힘살 6회차 · 목 distinction 6회차 넓은목근 가로목신경 두힘살근 인두굽이 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-2 기출 콜아웃(두힘살근의 두 얼굴) · §2-2 주의 콜아웃(넓은목근은 목신경이 아니다) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0392",
+   "type": "anatomy",
+   "unit": "6회차 · 목",
+   "topic": "Anatomy",
+   "subtopic": "목동맥삼각의 경계와 온목동맥 갈림 — 목혈관신경집 3인방의 배열",
+   "tags": [
+    "relation",
+    "6회차",
+    "목동맥삼각",
+    "목혈관신경집",
+    "온목동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "6회차 서브노트(anatomy-2026-0067) §1-2 앞목삼각의 네 소삼각 · §2-1 목혈관신경집 — 2026 확정본 6회차 실습주제(목의 삼각)",
+   "confidence": "high",
+   "date": "2026-08-28",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0392.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 목동맥삼각의 경계와 온목동맥 갈림 — 목혈관신경집 3인방의 배열 6회차 · 목 relation 6회차 목동맥삼각 목혈관신경집 온목동맥 예습시험 태깅 6회차 서브노트(anatomy-2026-0067) §1-2 앞목삼각의 네 소삼각 · §2-1 목혈관신경집 — 2026 확정본 6회차 실습주제(목의 삼각) 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
   },
   {
    "id": "usmle-2026-0127",
