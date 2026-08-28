@@ -2,6 +2,77 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0500",
+  "topic": "Surgery",
+  "subtopic": "",
+  "title": "Prehabilitation models in patients undergoing radical prostatectomy: A scoping review",
+  "authors": [
+   "Li Yilei",
+   "Chen Qin",
+   "Chen Hong",
+   "Chen Yan",
+   "Huang Xiangru",
+   "Li Haixia"
+  ],
+  "journal": "PloS one",
+  "doi": "10.1371/journal.pone.0356745",
+  "pmid": "42659628",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42659628/",
+  "pubdate": "2026",
+  "date": "2026-08-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Prehabilitation, defined as the preoperative optimisation of physical, nutritional, and psychological status, has emerged as a promising strategy to improve postoperative recovery in surgical oncology. However, its application in patients undergoing radical prostatectomy (RP) remains poorly characterised. This scoping review aimed to systematically map existing evidence on prehabilitation models for patients scheduled for RP, with particular focus on delivery formats, intervention components, and outcome measures. Following the Arksey and O'Malley framework and reported in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR) guidelines, a comprehensive search of nine electronic databases was conducted from inception to 1 December 2025. Thirteen studies from eight countries were included, comprising randomised controlled trials (RCTs), quasi-experimental studies, and prospective cohort studies. Three distinct delivery formats were identified: digital remote interventions via mobile applications (n = 4), non-digital remote interventions via booklets and telephone follow-up (n = 4), and in-person hospital-based programmes (n = 5). Pelvic floor muscle training (PFMT) was the most consistently implemented component (n = 11), complemented by aerobic exercise, resistance training, nutritional support, psychological interventions, and health education. Outcome measures spanned six domains: urinary continence and sexual function, physical function, perioperative clinical outcomes, psychological status, health-related quality of life (HRQoL), and nutritional status. Considerable heterogeneity was observed across intervention content and outcome assessment instruments. Prehabilitation appears feasible and acceptable across diverse delivery formats; however, the current evidence base is constrained by methodological heterogeneity and inconsistent outcome measurement. High-quality RCTs are warranted to establish standardised multimodal prehabilitation protocols and consensus-based core outcome sets for this population.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0499",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Left Ventricular Fibrosis on T1 Mapping is Associated with Increased Risk of Incident Atrial Fibrillation: Results from the Multi-Ethnic Study of Atherosclerosis (MESA)",
+  "authors": [
+   "Ebrahimihoor Elnaz",
+   "Salameh Elio",
+   "Aronis Konstantinos N",
+   "Suzuki Takeki",
+   "Ambale Venkatesh Bharath",
+   "Armstrong Anderson",
+   "Nazarian Saman",
+   "Lima Joao A C",
+   "et al."
+  ],
+  "journal": "European heart journal. Cardiovascular Imaging",
+  "doi": "10.1093/ehjci/jeag226",
+  "pmid": "42659630",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42659630/",
+  "pubdate": "2026-08-27",
+  "date": "2026-08-28",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** T1 mapping and extracellular volume fraction (ECV) are validated markers of diffuse myocardial fibrosis on cardiac magnetic resonance (CMR). Factors promoting left ventricular (LV) fibrosis are also linked to incident atrial fibrillation (AF), but whether ECV expansion is associated with increased AF risk remains unknown.\n\n**OBJECTIVES:** We evaluated whether baseline LV-ECV independently predicts incident AF.\n\n**METHODS:** We studied 1,261 participants from the Multi-Ethnic Study of Atherosclerosis (MESA) free of AF at baseline who underwent myocardial T1-mapping between 2010-2012. Participants were followed prospectively for incident AF. Associations between ECV and incident AF were assessed using multivariable Cox models adjusted for CHARGE-AF risk factors, with additional analyses adjusting for myocardial scar, left atrial (LA) structure and function, and LV ejection fraction (LVEF).\n\n**RESULTS:** During a median follow-up of 7.82 years, 156 participants developed AF. ECV was independently associated with incident AF after adjustment for CHARGE-AF risk factors (HR 1.105 per 1% increase; 95% CI 1.045-1.168; p<0.001). Participants in the highest ECV quartile (>28.6%) had approximately a two-fold higher risk of AF compared with the lowest quartile (HR 1.914; 95% CI 1.198-3.058; p=0.007). Associations remained significant after adjusting for myocardial scar, LA parameters and LVEF. Higher ECV was associated with adverse LA remodeling, including increased LA volume and impaired atrial emptying (p<0.05), and remained associated with AF after LA adjustment.\n\n**CONCLUSION:** Diffuse LV interstitial fibrosis quantified by ECV independently predicts incident AF and is associated with adverse atrial remodeling, supporting ventricular fibrosis as an early substrate for AF development.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0498",
   "topic": "Surgery",
   "subtopic": "",
