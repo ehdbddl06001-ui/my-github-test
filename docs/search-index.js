@@ -1,22 +1,22 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-27",
+ "generated": "2026-08-28",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1883,
+  "total": 1890,
   "byType": {
+   "anatomy": 512,
+   "paper": 500,
    "kmle": 747,
-   "anatomy": 507,
    "usmle": 114,
-   "paper": 498,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 507,
-   "Cardiology": 153,
+   "Anatomy": 512,
+   "Cardiology": 154,
    "Nephrology": 131,
    "Infectious Disease": 107,
    "Pediatrics": 86,
@@ -25,7 +25,7 @@ window.MEDKOS_INDEX = {
    "Obstetrics & Gynecology": 58,
    "Neurology": 56,
    "Psychiatry": 56,
-   "Surgery": 52,
+   "Surgery": 53,
    "Endocrinology": 48,
    "Gastroenterology": 47,
    "Pulmonology": 47,
@@ -53,13 +53,158 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1159,
-   "medium": 675,
+   "high": 1160,
+   "medium": 681,
    "low": 49
   },
-  "tagCount": 2618
+  "tagCount": 2628
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-29",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-29",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-29",
+   "path": "content/anatomy/daily/2026-08-29.md",
+   "snippet": "오늘의 학습 (2026 08 29 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 12일 · Tagging 2까지 51일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-29 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 29 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 12일 · Tagging 2까지 51일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0399",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "날개근정맥얼기가 감염을 머리안으로 옮기는 길",
+   "tags": [
+    "clinical-application",
+    "5회차",
+    "날개근정맥얼기",
+    "해면정맥굴",
+    "얼굴정맥",
+    "깊은얼굴정맥",
+    "도출정맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0399.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 날개근정맥얼기가 감염을 머리안으로 옮기는 길 5회차 · 머리 clinical-application 5회차 날개근정맥얼기 해면정맥굴 얼굴정맥 깊은얼굴정맥 도출정맥 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0398",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "아래턱신경(V3)이 타원구멍을 나온 뒤의 가지와 주행",
+   "tags": [
+    "course-tracing",
+    "5회차",
+    "아래턱신경",
+    "V3",
+    "귀관자신경",
+    "혀신경",
+    "아래이틀신경",
+    "중간뇌막동맥",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0398.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 아래턱신경(V3)이 타원구멍을 나온 뒤의 가지와 주행 5회차 · 머리 course-tracing 5회차 아래턱신경 V3 귀관자신경 혀신경 아래이틀신경 중간뇌막동맥 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0397",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래우묵의 다섯 벽과 그 안의 내용물",
+   "tags": [
+    "relation",
+    "5회차",
+    "관자아래우묵",
+    "가쪽날개근",
+    "위턱동맥",
+    "아래턱신경",
+    "날개근정맥얼기",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0397.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자아래우묵의 다섯 벽과 그 안의 내용물 5회차 · 머리 relation 5회차 관자아래우묵 가쪽날개근 위턱동맥 아래턱신경 날개근정맥얼기 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0396",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자부위를 얕은층부터 벗겨 나가는 순서",
+   "tags": [
+    "layer-order",
+    "5회차",
+    "관자부위",
+    "관자근막",
+    "광대활",
+    "아래턱뼈가지",
+    "아래이틀신경",
+    "예습시험",
+    "태깅"
+   ],
+   "source": "임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/anatomy/questions/tagging-1/anatomy-2026-0396.md",
+   "snippet": "문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자부위를 얕은층부터 벗겨 나가는 순서 5회차 · 머리 layer-order 5회차 관자부위 관자근막 광대활 아래턱뼈가지 아래이틀신경 예습시험 태깅 임상해부학술기 3Q 2026 실습시간표 확정본 §5회차(2026-08-31) — 관자부위·관자아래부위 (부위 기준 배정) / e-Anatomy Head — Deep layer of face 00:00–28:14 문제 지문·보기는 frontmatter의 stem (+ choices )에 있다. 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "paper-2026-0500",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / PloS one",
+   "confidence": "medium",
+   "date": "2026-08-28",
+   "path": "content/papers/2026/2026-08-28_paper-2026-0500_prehabilitation_models_in_patients_undergoing_radical_prosta.md",
+   "snippet": "Title Prehabilitation models in patients undergoing radical prostatectomy: A scoping review Authors Li Yilei, Chen Qin, Chen Hong, Chen Yan, Huang Xiangru, Li Haixia Journal / DOI PloS one · DOI: 10.1371/journal.pone.0356745 · PMID: 4265962",
+   "text": "Surgery scraped pubmed PubMed / PloS one Title Prehabilitation models in patients undergoing radical prostatectomy: A scoping review Authors Li Yilei, Chen Qin, Chen Hong, Chen Yan, Huang Xiangru, Li Haixia Journal / DOI PloS one · DOI: 10.1371/journal.pone.0356745 · PMID: 42659628 https://pubmed.ncbi.nlm.nih.gov/42659628/ Abstract Prehabilitation, defined as the preoperative optimisation of physical, nutritional, and psychological status, has emerged as a promising strategy to improve postoperative recovery in surgical oncology. However, its application in patients undergoing radical prostatectomy (RP) remains poorly characterised. This scoping review aimed to systematically map existing evidence on prehabilitation models for patients scheduled for RP, with particular focus on delivery formats, intervention components, and outcome measures. Following the Arksey and O'Malley framework and reported in accordance with the Preferred Reporting Items for Systematic Reviews and Meta Analyses extension for Scoping Reviews (PRISMA ScR) guidelines, a comprehensive search of nine electronic databases was conducted from inception to 1 December 2025. Thirteen studies from eight countries were included, comprising randomised controlled trials (RCTs), quasi experimental studies, and prospective cohort studies. Three distinct delivery formats were identified: digital remote interventions via mobile applications (n = 4), non digital remote interventions via booklets and telephone follow up (n = 4), and in person hospital based programmes (n = 5). Pelvic floor muscle training (PFMT) was the most consistently implemented component (n = 11), complemented by aerobic exercise, resistance training, nutritional support, psychological interventions, and health education. Outcome measures spanned six domains: urinary continence and sexual function, physical function, perioperative clinical outcomes, psychological status, health related quality of life (HRQoL), and nutritional status. Considerable heterogeneity was observed across intervention content and outcome assessment instruments. Prehabilitation appears feasible and acceptable across diverse delivery formats; however, the current evidence base is constrained by methodological heterogeneity and inconsistent outcome measurement. High quality RCTs are warranted to establish standardised multimodal prehabilitation protocols and consensus based core outcome sets for this population. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0499",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / European heart journal. Cardiovascular Imaging",
+   "confidence": "medium",
+   "date": "2026-08-28",
+   "path": "content/papers/2026/2026-08-28_paper-2026-0499_left_ventricular_fibrosis_on_t1_mapping_is_associated_with_i.md",
+   "snippet": "Title Left Ventricular Fibrosis on T1 Mapping is Associated with Increased Risk of Incident Atrial Fibrillation: Results from the Multi Ethnic Study of Atherosclerosis (MESA) Authors Ebrahimihoor Elnaz, Salameh Elio, Aronis Konstantinos N, ",
+   "text": "Cardiology scraped pubmed PubMed / European heart journal. Cardiovascular Imaging Title Left Ventricular Fibrosis on T1 Mapping is Associated with Increased Risk of Incident Atrial Fibrillation: Results from the Multi Ethnic Study of Atherosclerosis (MESA) Authors Ebrahimihoor Elnaz, Salameh Elio, Aronis Konstantinos N, Suzuki Takeki, Ambale Venkatesh Bharath, Armstrong Anderson, Nazarian Saman, Lima Joao A C, et al. Journal / DOI European heart journal. Cardiovascular Imaging · DOI: 10.1093/ehjci/jeag226 · PMID: 42659630 https://pubmed.ncbi.nlm.nih.gov/42659630/ Abstract BACKGROUND: T1 mapping and extracellular volume fraction (ECV) are validated markers of diffuse myocardial fibrosis on cardiac magnetic resonance (CMR). Factors promoting left ventricular (LV) fibrosis are also linked to incident atrial fibrillation (AF), but whether ECV expansion is associated with increased AF risk remains unknown. OBJECTIVES: We evaluated whether baseline LV ECV independently predicts incident AF. METHODS: We studied 1,261 participants from the Multi Ethnic Study of Atherosclerosis (MESA) free of AF at baseline who underwent myocardial T1 mapping between 2010 2012. Participants were followed prospectively for incident AF. Associations between ECV and incident AF were assessed using multivariable Cox models adjusted for CHARGE AF risk factors, with additional analyses adjusting for myocardial scar, left atrial (LA) structure and function, and LV ejection fraction (LVEF). RESULTS: During a median follow up of 7.82 years, 156 participants developed AF. ECV was independently associated with incident AF after adjustment for CHARGE AF risk factors (HR 1.105 per 1% increase; 95% CI 1.045 1.168; p<0.001). Participants in the highest ECV quartile ( 28.6%) had approximately a two fold higher risk of AF compared with the lowest quartile (HR 1.914; 95% CI 1.198 3.058; p=0.007). Associations remained significant after adjusting for myocardial scar, LA parameters and LVEF. Higher ECV was associated with adverse LA remodeling, including increased LA volume and impaired atrial emptying (p<0.05), and remained associated with AF after LA adjustment. CONCLUSION: Diffuse LV interstitial fibrosis quantified by ECV independently predicts incident AF and is associated with adverse atrial remodeling, supporting ventricular fibrosis as an early substrate for AF development. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "kmle-2026-0777",
    "type": "kmle",

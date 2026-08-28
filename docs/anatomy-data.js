@@ -1,7 +1,7 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/anatomy/**/*.md → `python pipelines/export_anatomy_web.py`
 window.MEDKOS_ANATOMY = {
- "generated": "2026-08-27",
+ "generated": "2026-08-28",
  "deadlines": {
   "tagging1": "2026-09-10",
   "tagging2": "2026-10-19",
@@ -7285,6 +7285,118 @@ window.MEDKOS_ANATOMY = {
    ]
   },
   {
+   "id": "anatomy-2026-0396",
+   "style": "layer-order",
+   "session": 5,
+   "region": "head",
+   "subregion": "temporal",
+   "examPhase": "tagging-1",
+   "stem": "관자부위 피부에서 시작해 관자아래우묵의 가쪽날개근에 닿을 때까지 칼이 지나는 층을 순서대로 대고, 그 사이에 반드시 잘라내야 하는 뼈와 그때 함께 끊기는 구조를 답하시오.",
+   "choices": null,
+   "answer": "피부 → 피부밑조직(얕은관자동·정맥, 귀관자신경 주행) → 관자마루근막 (temporoparietal fascia) → 관자근막 (temporal fascia; 광대활 위에서 얕은층·깊은층으로 갈라져 광대활을 감싼다) → 관자근 (temporalis m.) → 광대활 (zygomatic arch)과 깨물근 (masseter m.)을 떼고 → 아래턱뼈가지 (ramus of mandible)를 잘라 젖히면 → 가쪽날개근 (lateral pterygoid m.). 아래턱뼈가지를 자를 때 그 안쪽면의 아래턱뼈구멍으로 들어가는 아래이틀신경 (inferior alveolar n.)·아래이틀동맥이 함께 끊긴다.",
+   "explanation": "관자부위의 핵심은 근막이 두 겹이라는 점이다 — 관자근막은 광대활 위 약 2 cm에서 얕은층·깊은층으로 갈라져 광대활의 가쪽·안쪽에 각각 붙고, 그 사이 지방이 실습에서 노출된다. 관자근은 힘줄이 되어 관자근막 **깊은쪽**으로 내려가 광대활 안쪽을 지나 근육돌기에 닿으므로, 광대활과 깨물근을 떼어야 근육돌기와 관자근 힘줄이 보인다. 관자아래우묵은 아래턱뼈가지가 가쪽 벽이라 이 뼈를 제거하기 전에는 열리지 않는다. 아래턱뼈구멍은 아래턱뼈가지 안쪽면 중앙에 있어 톱질 위치에 그대로 걸리므로, 실습에서 아래이틀신경혈관다발은 이 단계에서 잘린 단면으로 확인한다(응용과제 '아래이틀신경차단'과 같은 자리).",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "5회차(2026-08-31) 실습주제 — 관자부위·관자아래부위"
+    },
+    {
+     "file": "e-Anatomy Head — Deep layer of face",
+     "page": null,
+     "section": "00:00–28:14 (SESSION_DETAILS[5] 지정 구간)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0397",
+   "style": "relation",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래우묵의 가쪽·안쪽·앞·위·뒤 벽을 각각 만드는 구조를 대고, 이 우묵 안에서 만나는 근육 2개·신경 1개·동맥 1개·정맥구조 1개를 들어 서로의 앞뒤 관계를 답하시오.",
+   "choices": null,
+   "answer": "가쪽 벽 — 아래턱뼈가지 (ramus of mandible). 안쪽 벽 — 나비뼈 가쪽날개판 (lateral pterygoid plate). 앞 벽 — 위턱뼈 뒤가쪽면 (posterior surface of maxilla). 위 벽(천장) — 나비뼈 큰날개 (greater wing of sphenoid), 여기에 타원구멍·가시구멍이 열린다. 뒤 벽 — 관자뼈의 붓돌기·꼭지돌기와 턱관절. 내용물: 가쪽날개근·안쪽날개근 (lateral·medial pterygoid mm.), 아래턱신경 (mandibular n., V3), 위턱동맥 (maxillary a.), 날개근정맥얼기 (pterygoid venous plexus). 앞뒤 관계는 **가쪽날개근이 기준**이다 — 위턱동맥은 이 근육의 가쪽(약 2/3) 또는 안쪽(약 1/3)을 지나고, V3 가지들은 대개 그보다 깊은쪽(안쪽)에서 나오며, 날개근정맥얼기는 두 날개근 사이와 가쪽날개근 표면을 덮는다.",
+   "explanation": "우묵을 '아래턱뼈가지를 떼면 열리는 방'으로 잡으면 벽이 저절로 정리된다 — 가쪽은 방금 뗀 뼈, 안쪽은 그 반대편 뼈판(가쪽날개판), 앞은 위턱뼈, 위는 머리뼈바닥(나비뼈 큰날개), 뒤는 턱관절 쪽이다. 천장에 타원구멍(V3)과 가시구멍(중간뇌막동맥)이 있다는 사실이 내용물의 출처를 그대로 설명한다: 신경은 위에서 내려오고, 동맥은 뒤(턱관절 뒤 바깥목동맥)에서 들어와 앞안쪽 날개위턱틈새로 빠져나간다. 실습에서 층을 벗기는 순서도 이 관계를 따른다 — 가쪽날개근이 먼저 보이고, 그것을 젖혀야 V3 가지가 드러난다. 태깅에서는 벽 이름보다 '이 구조가 가쪽날개근의 앞인가 뒤인가, 가쪽인가 안쪽인가'를 묻는다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "5회차(2026-08-31) 실습주제 — 관자부위·관자아래부위"
+    },
+    {
+     "file": "e-Anatomy Head — Deep layer of face",
+     "page": null,
+     "section": "00:00–28:14 (SESSION_DETAILS[5] 지정 구간)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0398",
+   "style": "course-tracing",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "아래턱신경(V3)이 타원구멍을 나온 뒤 관자아래우묵에서 내는 가지 넷의 이름과 각각의 목적지를 주행 순서대로 답하고, 그중 하나가 중간뇌막동맥과 맺는 특징적 관계를 설명하시오.",
+   "choices": null,
+   "answer": "① 귀관자신경 (auriculotemporal n.) — 뒤로 가 두 뿌리로 갈라져 **중간뇌막동맥을 감싸 안은 뒤 다시 합쳐지고**, 턱관절 뒤·귀밑샘을 지나 얕은관자신경으로 올라가 관자부위 피부에 분포한다(귀밑샘에 부교감 분비섬유를 실어다 준다). ② 볼신경 (buccal n.) — 앞가쪽으로 가쪽날개근의 두 갈래 사이를 지나 볼 점막·피부의 **감각**을 맡는다(볼근의 운동은 얼굴신경). ③ 혀신경 (lingual n.) — 아래이틀신경 앞안쪽에서 내려와 안쪽날개근과 아래턱뼈가지 사이를 지나 셋째어금니 안쪽 점막 바로 밑을 달려 혀로 간다; 도중에 고실끈신경(VII)이 뒤에서 합류한다. ④ 아래이틀신경 (inferior alveolar n.) — 아래턱뼈구멍으로 들어가 아래턱관에서 아래턱 치아를 지배하고 턱끝구멍으로 나와 턱끝신경이 된다; 들어가기 직전에 턱목뿔근신경 (n. to mylohyoid)을 낸다.",
+   "explanation": "V3는 '감각 3 + 운동 섞임'으로 잡으면 순서가 산다 — 타원구멍을 나온 짧은 본줄기가 곧 앞갈래(주로 운동 + 볼신경)와 뒤갈래(주로 감각: 귀관자·혀·아래이틀)로 갈린다. 귀관자신경이 중간뇌막동맥을 두 뿌리로 감싸는 것은 태깅 단골 소견으로, 이 고리가 동맥을 붙잡아 두기 때문에 실습에서 가시구멍 부근의 표지가 된다. 혀신경과 아래이틀신경은 안쪽날개근 앞에서 나란히 내려가되 혀신경이 더 앞·안쪽이고 더 얕아, 아래이틀신경차단(응용과제) 시 마취제가 함께 퍼져 혀 앞 2/3의 **일반감각**까지 마비된다 — 미각(고실끈, VII)이 함께 둔해지는 것도 두 신경이 합쳐져 달리기 때문이다. 씹기근육으로 가는 운동가지(깊은관자·깨물·날개근가지)는 근육 속으로 바로 들어가므로 네 개의 '이름 있는 감각가지'와 구분해 외운다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "5회차(2026-08-31) 실습주제 — 관자부위·관자아래부위 / 응용과제 '아래이틀신경차단'"
+    },
+    {
+     "file": "e-Anatomy Head — Deep layer of face",
+     "page": null,
+     "section": "00:00–28:14 (SESSION_DETAILS[5] 지정 구간)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0399",
+   "style": "clinical-application",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "윗입술·코 옆(이른바 danger area)의 감염이 머리안의 해면정맥굴까지 번질 수 있는 이유를, 날개근정맥얼기가 끼어드는 두 갈래 경로로 나누어 설명하시오. 이 얼기가 어느 근육 사이에 있고 무엇으로 흘러나가는지도 함께 답하시오.",
+   "choices": null,
+   "answer": "날개근정맥얼기 (pterygoid venous plexus)는 관자아래우묵에서 **가쪽날개근과 안쪽날개근 사이·가쪽날개근 표면**에 놓이며, 위턱동맥의 가지들과 짝을 이루는 정맥을 모아 **위턱정맥 (maxillary v.)** 으로 나가고, 이는 얕은관자정맥과 만나 **아래턱뒤정맥 (retromandibular v.)** 이 된다. 해면정맥굴로 가는 두 경로: ① **눈확 경로** — 얼굴정맥 → 눈구석정맥 (angular v.) → 위눈정맥 (superior ophthalmic v.) → 해면정맥굴. ② **날개근얼기 경로** — 얼굴정맥이 깊은얼굴정맥 (deep facial v.)으로 날개근정맥얼기와 이어지고, 얼기는 **나비뼈 날개관·타원구멍·붓유돌구멍 부근의 도출정맥 (emissary vv.)** 을 통해 해면정맥굴과 직접 교통한다. 결정적 조건은 이 정맥들에 **판막이 없어(valveless)** 피가 양방향으로 흐를 수 있다는 점이다.",
+   "explanation": "'danger area'가 위험한 이유는 거리 때문이 아니라 판막이 없기 때문이다 — 얼굴정맥계는 판막이 거의 없어 염증·혈전이 중력이나 압력에 따라 거꾸로 올라갈 수 있고, 그 끝이 머리안의 해면정맥굴이라 해면정맥굴혈전증으로 이어진다. 시험에서 자주 놓치는 쪽은 ②다: 얼굴정맥은 눈구석정맥으로만 올라가는 것이 아니라 깊은얼굴정맥을 통해 관자아래우묵의 날개근정맥얼기와 이어지고, 얼기는 도출정맥으로 굴과 직접 통한다. 그래서 위턱 어금니 치성감염이나 아래이틀신경차단 시 얼기를 찔러 생긴 혈종도 같은 길을 탈 수 있다. 실습에서 얼기는 덩어리진 정맥그물로 보여 위턱동맥 노출을 방해하는데, 이때 '지저분한 정맥'으로 걷어내지 말고 위치(두 날개근 사이)와 배출로(위턱정맥 → 아래턱뒤정맥)를 확인하는 것이 태깅 대비다.",
+   "confidence": "medium",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": null,
+   "refs": [
+    {
+     "file": "임상해부학술기 3Q 2026 실습시간표 확정본",
+     "page": null,
+     "section": "5회차(2026-08-31) 실습주제 — 관자부위·관자아래부위"
+    },
+    {
+     "file": "e-Anatomy Head — Deep layer of face",
+     "page": null,
+     "section": "00:00–28:14 (SESSION_DETAILS[5] 지정 구간)"
+    }
+   ]
+  },
+  {
    "id": "anatomy-2026-0004",
    "style": "branch-tree",
    "session": 14,
@@ -8136,6 +8248,103 @@ window.MEDKOS_ANATOMY = {
   }
  ],
  "daily": [
+  {
+   "date": "2026-08-29",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "thorax",
+    "head"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0029"
+    ],
+    "branch": [
+     "anatomy-2026-0030"
+    ],
+    "relation": [
+     "anatomy-2026-0032",
+     "anatomy-2026-0036"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0157",
+    "anatomy-2026-0162",
+    "anatomy-2026-0385",
+    "anatomy-2026-0154",
+    "anatomy-2026-0159",
+    "anatomy-2026-0043",
+    "anatomy-2026-0038",
+    "anatomy-2026-0161",
+    "anatomy-2026-0378",
+    "anatomy-2026-0398",
+    "anatomy-2026-0156",
+    "anatomy-2026-0377"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0157",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": [
+     "anatomy-2026-0004",
+     "anatomy-2026-0012",
+     "anatomy-2026-0010",
+     "anatomy-2026-0009",
+     "anatomy-2026-0008",
+     "anatomy-2026-0011",
+     "anatomy-2026-0015",
+     "anatomy-2026-0005",
+     "anatomy-2026-0006",
+     "anatomy-2026-0016",
+     "anatomy-2026-0017",
+     "anatomy-2026-0018"
+    ]
+   },
+   "estMinutes": 35
+  },
   {
    "date": "2026-08-28",
    "phase": "t1-prep",
