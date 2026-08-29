@@ -312,7 +312,8 @@ class Sub:
                             color=None, fill=accent)
         y0 = self.y
         if label:
-            self._put((self.x0 + 12, y0 + 13), label, 9.2, accent, bold=True)
+            # 라벨은 이미 굵게 그린다 — 마커를 그대로 두면 "**위**모서리"로 찍힌다(2026-08-30 실측)
+            self._put((self.x0 + 12, y0 + 13), self._plain(label), 9.2, accent, bold=True)
             self.y = y0 + 17
         else:
             self.y = y0 + 5
