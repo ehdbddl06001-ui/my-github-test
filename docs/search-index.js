@@ -1,22 +1,22 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-28",
+ "generated": "2026-08-29",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1890,
+  "total": 1893,
   "byType": {
-   "anatomy": 512,
-   "paper": 500,
+   "anatomy": 513,
+   "paper": 502,
    "kmle": 747,
    "usmle": 114,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 512,
-   "Cardiology": 154,
+   "Anatomy": 513,
+   "Cardiology": 155,
    "Nephrology": 131,
    "Infectious Disease": 107,
    "Pediatrics": 86,
@@ -28,10 +28,10 @@ window.MEDKOS_INDEX = {
    "Surgery": 53,
    "Endocrinology": 48,
    "Gastroenterology": 47,
+   "Laboratory Medicine": 47,
    "Pulmonology": 47,
    "Dermatology": 46,
    "General Surgery": 46,
-   "Laboratory Medicine": 46,
    "Ophthalmology": 46,
    "Orthopedics": 46,
    "Rheumatology": 46,
@@ -53,13 +53,61 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1160,
-   "medium": 681,
+   "high": 1161,
+   "medium": 683,
    "low": 49
   },
   "tagCount": 2628
  },
  "docs": [
+  {
+   "id": "anatomy-daily-2026-08-30",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-30",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-30",
+   "path": "content/anatomy/daily/2026-08-30.md",
+   "snippet": "오늘의 학습 (2026 08 30 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 11일 · Tagging 2까지 50일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-30 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 30 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 11일 · Tagging 2까지 50일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0502",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / La Clinica terapeutica",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0502_thyroid_cancer_management_in_contemporary_practice_a_systema.md",
+   "snippet": "Title Thyroid Cancer Management in Contemporary Practice: A Systematic Review and Meta Analysis of Diagnostic Pathways, Surgical Strategies, Airway Challenges, and Mediastinal Extension Authors Koraitim Ahmed Farouk Ibrahim, Mohamed Mahmoud",
+   "text": "Laboratory Medicine scraped pubmed PubMed / La Clinica terapeutica Title Thyroid Cancer Management in Contemporary Practice: A Systematic Review and Meta Analysis of Diagnostic Pathways, Surgical Strategies, Airway Challenges, and Mediastinal Extension Authors Koraitim Ahmed Farouk Ibrahim, Mohamed Mahmoud Mostafa, Alwaseef Mohammad Abd Elhameed, Mawkili Abduallah, Abdesalam Hesham A, Abu Halimah Jalal H, Allam Khaled Asem, Ibrahim Ahmed Abd Alrahman Mahmoud, et al. Journal / DOI La Clinica terapeutica · DOI: 10.7417/CT.2026.2130 · PMID: 42664150 https://pubmed.ncbi.nlm.nih.gov/42664150/ Abstract BACKGROUND: Thyroid cancer is the most common endocrine malignancy worldwide, with a clinically significant subset of patients presenting with locally advanced disease involving the trachea, recurrent laryngeal nerve, esophagus, and superior mediastinum. However, evidence describing the integrated burden of diagnostic limitations, airway complications, surgical outcomes, and mediastinal involvement remains fragmented across small and heterogeneous studies. OBJECTIVES: This study aimed to systematically evaluate and quantitatively synthesize evidence on diagnostic performance, perioperative airway management, surgical outcomes, and mediastinal extension in thyroid cancer, with emphasis on locally advanced and complex disease reported between January 2021 and January 2026. METHODS: A systematic review and meta analysis were conducted in accordance with PRISMA 2020 guidelines and the MOOSE framework. PubMed/MEDLINE, Scopus, Web of Science, Cochrane Library, and Embase were searched. Studies reporting surgical outcomes, airway complications, mediastinal extension, recurrent laryngeal nerve injury, and imaging diagnostic accuracy in thyroid cancer were included. Secondary systematic reviews and meta analyses were excluded from quantitative pooling to avoid data duplication. Risk of bias was assessed using the Newcastle Ottawa Scale and Cochrane RoB 2 tool where applicable. Random effects meta analyses were performed using the DerSimonian Laird method. RESULTS: Eleven primary studies published between 2021 and 2026, comprising 6,142 patients, were included. The pooled incidence of difficult airway was 9.4% (95% CI: 6.1 14.2%; I² = 61.3%), while overall surgical morbidity was 21.3% (95% CI: 16.8 26.5%; I² = 72.6%). Tracheal invasion was present in 28.7% (95% CI: 21.4 37.3%) of locally advanced cases. Mediastinal extension requiring thoracic surgical access occurred in 18.3% (95% CI: 12.7 25.7%) of retrosternal cases. Recurrent laryngeal nerve injury ranged from 2.8% to 5.9% (transient) and 0.5% to 1.4% (permanent) across studies. Computed tomography demonstrated a pooled sensitivity of 61.4% and specificity of 90.8% for tracheal invasion detection. CONCLUSION: This meta analysis provides the most comprehensive and up to date quantitative synthesis of surgical complexity in thyroid cancer across diagnostic, airway, surgical, and mediastinal domains. Locally advanced disease is consistently associated with increased rates of difficult airway management, tracheal invasion, and requirement for thoracic surgical access, highlighting its substantially elevated perioperative risk profile. These findings underscore the importance of structured multidisciplinary preoperative assessment, advanced airway planning, and the routine use of intraoperative neuromonitoring in high risk cases to optimise surgical safety and outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0501",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Cardiology in review",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0501_comparing_loop_diuretics_furosemide_versus_bumetanide.md",
+   "snippet": "Title Comparing Loop Diuretics: Furosemide Versus Bumetanide Authors Dolan Lucas, Swamynathan Rithvik, Frishman William H, Aronow Wilbert S Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001407 · PMID: 42664023 https://pubm",
+   "text": "Cardiology scraped pubmed PubMed / Cardiology in review Title Comparing Loop Diuretics: Furosemide Versus Bumetanide Authors Dolan Lucas, Swamynathan Rithvik, Frishman William H, Aronow Wilbert S Journal / DOI Cardiology in review · DOI: 10.1097/CRD.0000000000001407 · PMID: 42664023 https://pubmed.ncbi.nlm.nih.gov/42664023/ Abstract Loop diuretics are widely used in the treatment of hypertension and edema caused by cardiovascular, renal, and hepatic dysfunction. Furosemide and bumetanide are 2 of the more commonly prescribed loop diuretics. Sharing a common mechanism of action of blocking the Na+ K+ 2Cl cotransporter in the thick ascending loop of Henle, these drugs can be used to promote diuresis and electrolyte excretion. This article reviews the uses of these loop diuretics and compares and contrasts the pharmacology, efficacy in treating congestive heart failure, adverse effects, and clinical trials comparing the 2 drugs to evaluate whether one drug has higher efficacy and under which circumstances it is preferable to use one drug over another. Numerous studies have shown that furosemide and bumetanide are both equally effective in treating congestive heart failure and the peripheral edema associated with it. As they both possess side effects that can be caused by low electrolyte levels, it is important to monitor these values during administration. Furosemide possesses a lower relative dose ratio to bumetanide, allowing the dosage to be more easily titrated for individual requirements, while bumetanide has a lower risk of ototoxicity and has a higher bioavailability. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
   {
    "id": "anatomy-daily-2026-08-29",
    "type": "anatomy",
