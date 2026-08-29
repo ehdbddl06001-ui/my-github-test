@@ -2,6 +2,75 @@
 // 원본: content/papers/**/*.md  →  `python pipelines/export_papers_web.py`로 재생성
 window.PAPERS = [
  {
+  "id": "paper-2026-0502",
+  "topic": "Laboratory Medicine",
+  "subtopic": "",
+  "title": "Thyroid Cancer Management in Contemporary Practice: A Systematic Review and Meta-Analysis of Diagnostic Pathways, Surgical Strategies, Airway Challenges, and Mediastinal Extension",
+  "authors": [
+   "Koraitim Ahmed Farouk Ibrahim",
+   "Mohamed Mahmoud Mostafa",
+   "Alwaseef Mohammad Abd Elhameed",
+   "Mawkili Abduallah",
+   "Abdesalam Hesham A",
+   "Abu Halimah Jalal H",
+   "Allam Khaled Asem",
+   "Ibrahim Ahmed Abd Alrahman Mahmoud",
+   "et al."
+  ],
+  "journal": "La Clinica terapeutica",
+  "doi": "10.7417/CT.2026.2130",
+  "pmid": "42664150",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42664150/",
+  "pubdate": "2026",
+  "date": "2026-08-29",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "**BACKGROUND:** Thyroid cancer is the most common endocrine malignancy worldwide, with a clinically significant subset of patients presenting with locally advanced disease involving the trachea, recurrent laryngeal nerve, esophagus, and superior mediastinum. However, evidence describing the integrated burden of diagnostic limitations, airway complications, surgical outcomes, and mediastinal involvement remains fragmented across small and heterogeneous studies.\n\n**OBJECTIVES:** This study aimed to systematically evaluate and quantitatively synthesize evidence on diagnostic performance, perioperative airway management, surgical outcomes, and mediastinal extension in thyroid cancer, with emphasis on locally advanced and complex disease reported between January 2021 and January 2026.\n\n**METHODS:** A systematic review and meta-analysis were conducted in accordance with PRISMA 2020 guidelines and the MOOSE framework. PubMed/MEDLINE, Scopus, Web of Science, Cochrane Library, and Embase were searched. Studies reporting surgical outcomes, airway complications, mediastinal extension, recurrent laryngeal nerve injury, and imaging diagnostic accuracy in thyroid cancer were included. Secondary systematic reviews and meta-analyses were excluded from quantitative pooling to avoid data duplication. Risk of bias was assessed using the Newcastle-Ottawa Scale and Cochrane RoB 2 tool where applicable. Random-effects meta-analyses were performed using the DerSimonian-Laird method.\n\n**RESULTS:** Eleven primary studies published between 2021 and 2026, comprising 6,142 patients, were included. The pooled incidence of difficult airway was 9.4% (95% CI: 6.1-14.2%; I² = 61.3%), while overall surgical morbidity was 21.3% (95% CI: 16.8-26.5%; I² = 72.6%). Tracheal invasion was present in 28.7% (95% CI: 21.4-37.3%) of locally advanced cases. Mediastinal extension requiring thoracic surgical access occurred in 18.3% (95% CI: 12.7-25.7%) of retrosternal cases. Recurrent laryngeal nerve injury ranged from 2.8% to 5.9% (transient) and 0.5% to 1.4% (permanent) across studies. Computed tomography demonstrated a pooled sensitivity of 61.4% and specificity of 90.8% for tracheal invasion detection.\n\n**CONCLUSION:** This meta-analysis provides the most comprehensive and up-to-date quantitative synthesis of surgical complexity in thyroid cancer across diagnostic, airway, surgical, and mediastinal domains. Locally advanced disease is consistently associated with increased rates of difficult airway management, tracheal invasion, and requirement for thoracic surgical access, highlighting its substantially elevated perioperative risk profile. These findings underscore the importance of structured multidisciplinary preoperative assessment, advanced airway planning, and the routine use of intraoperative neuromonitoring in high-risk cases to optimise surgical safety and outcomes.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
+  "id": "paper-2026-0501",
+  "topic": "Cardiology",
+  "subtopic": "",
+  "title": "Comparing Loop Diuretics: Furosemide Versus Bumetanide",
+  "authors": [
+   "Dolan Lucas",
+   "Swamynathan Rithvik",
+   "Frishman William H",
+   "Aronow Wilbert S"
+  ],
+  "journal": "Cardiology in review",
+  "doi": "10.1097/CRD.0000000000001407",
+  "pmid": "42664023",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42664023/",
+  "pubdate": "2026-08-03",
+  "date": "2026-08-29",
+  "tags": [
+   "scraped",
+   "pubmed"
+  ],
+  "confidence": "medium",
+  "landmark": false,
+  "citations": null,
+  "rcr": null,
+  "nihPercentile": null,
+  "abstract": "Loop diuretics are widely used in the treatment of hypertension and edema caused by cardiovascular, renal, and hepatic dysfunction. Furosemide and bumetanide are 2 of the more commonly prescribed loop diuretics. Sharing a common mechanism of action of blocking the Na+-K+-2Cl- cotransporter in the thick ascending loop of Henle, these drugs can be used to promote diuresis and electrolyte excretion. This article reviews the uses of these loop diuretics and compares and contrasts the pharmacology, efficacy in treating congestive heart failure, adverse effects, and clinical trials comparing the 2 drugs to evaluate whether one drug has higher efficacy and under which circumstances it is preferable to use one drug over another. Numerous studies have shown that furosemide and bumetanide are both equally effective in treating congestive heart failure and the peripheral edema associated with it. As they both possess side effects that can be caused by low electrolyte levels, it is important to monitor these values during administration. Furosemide possesses a lower relative dose ratio to bumetanide, allowing the dosage to be more easily titrated for individual requirements, while bumetanide has a lower risk of ototoxicity and has a higher bioavailability.",
+  "whyMustRead": "",
+  "summary": "",
+  "clinicalImpact": "",
+  "myIdeas": ""
+ },
+ {
   "id": "paper-2026-0500",
   "topic": "Surgery",
   "subtopic": "",
