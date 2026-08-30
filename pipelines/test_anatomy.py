@@ -573,6 +573,45 @@ def test_restored_scans_are_reproducible() -> None:
         assert "base64" not in t and "data:image" not in t, f"{p.name}: 이미지가 섞였다"
 
 
+def test_every_label_becomes_a_question() -> None:
+    """**지운 글씨는 전부 문항이 된다**(사용자 지시 2026-08-30).
+
+    옛 동작은 '지시선이나 ▲ 가 달린 라벨만' 물었다 — 그래서 지운 353개 중 148개
+    (42%)만 문항이 되고 나머지는 지워지기만 하고 영영 안 물어봤다. 전수 모드는
+    표본 **위**에 얹힌 라벨이면 지시선이 없어도 그 자리를 묻는다(복원되므로 구조가
+    남는다). 다만 **검은 여백 위 자막·타이틀은 여전히 문항이 아니다** — 지우면
+    가리킬 구조가 없어 검은 구멍을 묻는 꼴이 되기 때문이다.
+    """
+    sys.path.insert(0, str(Path(__file__).parent))
+    import scan_triage as st
+    cv2, np = st._cv()
+    img = np.zeros((1171, 1650, 3), np.uint8)
+    cv2.circle(img, (700, 600), 240, (185, 180, 175), -1)
+    # ① 지시선이 달린 라벨 — 옛 동작에서도 문항이었다
+    cv2.putText(img, "posterior tibial artery", (1000, 430),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
+    cv2.line(img, (1030, 450), (930, 570), (255, 255, 255), 3)
+    # ② 표본 위 캡션(지시선 없음) — 옛 동작은 버렸다, 이제 문항이 된다
+    cv2.putText(img, "tibial nerve", (560, 640),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.9, (60, 55, 50), 2)
+    # ③ 검은 여백 위 자막 — 어느 모드에서도 문항이 아니다
+    cv2.putText(img, "tibial nerve runs behind", (250, 1040),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
+    tmp = Path(tempfile.gettempdir()) / "_triage_all.png"
+    cv2.imwrite(str(tmp), img)
+
+    full = st.plan(tmp)                       # 기본값 = 전수
+    few = st.plan(tmp, exhaustive=False)      # 옛 선별 동작
+    assert full["ok"] and few["ok"], (full, few)
+    assert len(full["pins"]) > len(few["pins"]), \
+        f"전수 모드가 더 많이 물어야 한다: {len(full['pins'])} vs {len(few['pins'])}"
+    assert len(few["pins"]) == 1, few["pins"]
+    # 검은 여백 자막이 문항이 되면 안 된다 — 핀이 그 아래로 내려가면 실패
+    for pin in full["pins"]:
+        tgt = pin.get("to") or [pin["x"], pin["y"]]
+        assert tgt[1] < 960, f"검은 여백/진행바 자리를 묻고 있다: {pin}"
+
+
 def test_scan_blanks_hide_every_label() -> None:
     """실사 블랭크는 **글자를 하나도 남기지 않아야** 한다(2026-08-18).
 

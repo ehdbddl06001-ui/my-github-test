@@ -9,11 +9,16 @@
 1. **가린다(전부)**: 어두운 배경 위의 '가는 밝은 획' = 화면 글자. 손글씨 라벨·자막·
    타이틀·미리보기 썸네일이 모두 여기 걸린다. 답이 새는 곳은 전부 검은 박스로 덮는다.
    과하게 덮어도 답은 안 샌다 — 반대로 덜 덮으면 문항이 통째로 무의미해진다.
-2. **묻는다(지시선/▲ 가 달린 것만)**: 라벨이 구조를 가리키는 방식은 둘뿐이다 —
-   흰 **지시선**을 긋거나 빨간 **▲** 를 놓거나. 지시선은 글자를 지워도 그대로 남으므로
-   그 자리에 번호핀만 얹으면 무엇을 묻는지가 살아난다. ▲ 는 색 마스크로 지워지므로
-   핀에서 화살표 끝으로 잇는 선을 그린다. **자막에는 지시선이 없다** → 문항이 안 된다.
-   (D015 실측: 자막 3줄·손글씨 2줄 중 지시선이 달린 것은 손글씨 2줄뿐)
+2. **묻는다(지운 라벨은 전부 — 2026-08-30 사용자 지시)**: 예전에는 지시선/▲ 가 달린
+   것만 물었는데, 그러면 지운 353개 중 148개(42%)만 문항이 되고 나머지는 지워지기만
+   하고 영영 안 물어봤다. 이제 **표본 위에 얹힌 라벨은 지시선이 없어도 묻는다** —
+   그 자리가 곧 답이고, 복원(label_boxes)되므로 구조가 살아 있다. 필기(손글씨)도
+   같다: 획만 지우므로 밑의 조직이 남아 그대로 문항이 된다.
+   가리키는 방법 세 가지 — 흰 **지시선**(글자를 지워도 남으므로 라벨 자리에 번호핀만),
+   빨간 **▲**(색 마스크로 지워지므로 핀에서 화살표 끝으로 선을 긋는다),
+   **자기 자리**(지시선도 ▲ 도 없는 캡션 — 글자가 놓였던 자리를 가리킨다).
+   **예외는 검은 여백 위 글자뿐**: 자막 띠·좌상단 타이틀은 지우면 가리킬 구조가
+   없어(검은 구멍) 문항이 되지 않는다. 이건 화면 UI 지 해부 라벨이 아니다.
 3. **검사한다**: 만든 quiz PNG 를 같은 검출기로 다시 훑어 **글자가 남았으면 버린다**.
    5·7회차에서 세 번 연속 '자동 결과에 답이 남은' 사고가 났고, 그때마다 사람이 축소
    대지를 눈으로 봤다가 놓쳤다. 눈 대신 같은 검출기를 쓴다.
@@ -38,7 +43,10 @@ PRIV = ROOT / ".private/anatomy/render"
 CROP = [29, 89, 1621, 1085]
 TITLE = [45, 150, 545, 275]
 BAR_TOP = 960          # 이 아래는 진행바·컨트롤(답이 없다)
-MAX_PINS = 6           # 한 장에 이보다 많으면 문항으로 쓰기 번잡하다
+MAX_PINS = 6           # 선별 모드: 한 장에 이보다 많으면 문항으로 쓰기 번잡하다
+MAX_PINS_ALL = 20      # 전수 모드: 라벨을 다 묻는다 — 한 장 상한만 둔다
+MAX_DARK = 3           # 선별 모드: 표본 위 손글씨가 이보다 많으면 페이지를 버린다
+MAX_DARK_ALL = 10      # 전수 모드: 필기도 문항이므로 더 받는다(획만 지워 표본은 남는다)
 
 
 def _cv():
@@ -450,7 +458,7 @@ def _near(box, other, pad: int) -> bool:
             and _overlap(y0 - pad, y1 + pad, oy, oy + oh) > 0)
 
 
-def plan(path: Path, band: list[int] | None = None) -> dict:
+def plan(path: Path, band: list[int] | None = None, exhaustive: bool = True) -> dict:
     """페이지 하나의 가림 박스·핀을 정한다. ok=False 면 후보에서 뺀다."""
     cv2, _ = _cv()
     img = cv2.imread(str(path))
@@ -465,7 +473,9 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
     dark = dark_lines(img)
     # 눈·입술 같은 어두운 해부 구조도 이 검출기에 걸려 깨끗한 얼굴 페이지도 2줄쯤
     # 나온다(실측: F004·F007 = 2). 그래서 '기준선보다 확실히 많은' 쪽만 걷어낸다.
-    if len(dark) > 3:
+    # 전수 모드에서는 **필기도 문항**이라 더 받는다 — 획만 지우므로 표본은 남는다.
+    dark_cap = MAX_DARK_ALL if exhaustive else MAX_DARK
+    if len(dark) > dark_cap:
         return {"page": path.stem, "ok": False,
                 "why": f"표본 위 손글씨가 {len(dark)}줄 — 지우면 표본이 남지 않는다"}
     leads = leaders(img, lines)
@@ -473,7 +483,7 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
     groups = group_lines(lines)
 
     title = title_band(img, lines)
-    masks, lead_pins, arrow_pins = [], [], []
+    masks, lead_pins, arrow_pins, self_pins = [], [], [], []
     if band:
         masks.append(list(band))
     for g in groups:
@@ -496,10 +506,38 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
             tgt = (ax + aw // 2, ay + ah // 2)
             arrow_pins.append((box, {"x": max(80, box[0] - 120),
                                      "y": max(60, box[1] - 40), "to": list(tgt)}, tgt))
+            continue
+        if not exhaustive:
+            continue
+        # **지시선도 ▲ 도 없는 라벨**(전수 모드). 표본 위에 얹힌 캡션은 가리키는 선이
+        # 없어도 '그 글자가 놓인 자리'가 곧 답이다 — 복원(label_boxes)되면 구조가
+        # 되살아나므로 그 자리에 핀을 세우면 문항이 된다. 검은 여백 위 글자는
+        # 지우면 아무것도 안 남아(가리킬 구조가 없다) 여기서 제외된다.
+        onto = [pc for pc, on_t in split_by_bg(img, masks[-1]) if on_t]
+        if not onto:
+            continue
+        pc = max(onto, key=lambda q: (q[2] - q[0]) * (q[3] - q[1]))
+        tgt = ((pc[0] + pc[2]) // 2, (pc[1] + pc[3]) // 2)
+        self_pins.append((box, {"x": max(80, box[0] - 120),
+                                "y": max(60, box[1] - 40), "to": list(tgt)}, tgt))
 
     # 지시선 라벨이 있으면 ▲ 는 그 라벨을 되짚는 자막 옆 표식일 뿐이다(D015 실측:
     # ▲ 옆 인쇄 자막이 손글씨 라벨과 같은 구조를 가리켜 핀이 두 배로 늘었다).
-    pins = lead_pins or arrow_pins
+    # 지시선 라벨과 ▲ 는 서로 같은 구조를 되짚을 수 있어 하나만 고르지만,
+    # self_pins 는 '지시선도 ▲ 도 없는' 라벨이라 겹칠 일이 없다 → 언제나 더한다.
+    pins = (lead_pins or arrow_pins) + self_pins
+    if exhaustive:
+        # **표본 위 필기도 문항이다**(사용자 지시 2026-08-30). 손글씨는 `dark_mask`
+        # 라는 별도 검출기가 잡아 `strokes` 로 획만 지우므로(박스로 덮지 않는다)
+        # 밑의 조직이 그대로 남는다 → 지운 자리에 핀을 세우면 그대로 문항이 된다.
+        # 인쇄 캡션과 같은 줄을 두 검출기가 겹쳐 잡는 일이 있어 기존 핀과 가까우면 버린다.
+        for hx, hy, hw, hh in dark:
+            tgt = (hx + hw // 2, hy + hh // 2)
+            if any(abs(tgt[0] - t[0]) < 60 and abs(tgt[1] - t[1]) < 40 for _b, _p, t in pins):
+                continue
+            pins.append(([hx, hy, hx + hw, hy + hh],
+                         {"x": max(80, hx - 120), "y": max(60, hy - 40), "to": list(tgt)},
+                         tgt))
     # **가리킨 자리가 검은 박스 안이면 문항이 안 된다.** 캡션이 구조 위에 바로 얹힌
     # 페이지(7회차 다수)는 답을 지우려면 그 구조까지 덮게 돼, 남는 건 검은 구멍을
     # 가리키는 핀뿐이다 — 그런 페이지는 자동 대상에서 뺀다.
@@ -525,8 +563,9 @@ def plan(path: Path, band: list[int] | None = None) -> dict:
                 "why": f"가리킨 자리가 가림 박스 안이다({len(buried)}개) — 캡션이 구조 위에 얹혔다"}
     if not pins:
         return {"page": path.stem, "ok": False,
-                "why": f"지시선·▲ 가 달린 라벨이 없다(글자 {len(lines)}줄은 자막·타이틀)"}
-    if len(pins) > MAX_PINS:
+                "why": f"물어볼 라벨이 없다(글자 {len(lines)}줄은 자막·타이틀·검은 여백)"}
+    cap = MAX_PINS_ALL if exhaustive else MAX_PINS
+    if len(pins) > cap:
         return {"page": path.stem, "ok": False, "why": f"라벨 {len(pins)}개 — 한 장에 너무 많다"}
     pins.sort(key=lambda t: (t[0][1] // 60, t[0][0]))
     for i, (_, p, _t) in enumerate(pins, 1):
@@ -786,15 +825,22 @@ def selftest() -> int:
     cv2.putText(img, "posterior tibial artery", (1000, 430),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
     cv2.line(img, (1030, 450), (930, 570), (255, 255, 255), 3)
-    # 지시선이 없는 자막 → 가리기만
-    cv2.putText(img, "tibial nerve runs behind", (600, 830),
+    # 표본 **위**에 얹힌 캡션 → 지시선이 없어도 그 자리가 답이다(전수 모드에서 문항)
+    cv2.putText(img, "tibial nerve", (560, 640),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.9, (60, 55, 50), 2)
+    # 검은 여백 위 자막 → 지우면 가리킬 구조가 없다 → 문항이 되지 않는다
+    cv2.putText(img, "tibial nerve runs behind", (250, 1040),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
     tmp = Path("/tmp/_triage.png")
     cv2.imwrite(str(tmp), img)
     p = plan(tmp)
     assert p["ok"], p
-    assert len(p["pins"]) == 1, p          # 자막은 문항이 되지 않는다
-    assert len(p["masks"]) >= 2, p         # 그래도 자막은 가린다
+    # 전수 모드: 지시선 라벨 + 표본 위 캡션 = 2문항. 검은 여백 자막은 여전히 제외.
+    assert len(p["pins"]) >= 2, p
+    assert len(p["masks"]) >= 1, p         # 검은 여백 자막은 그래도 가린다
+    # 선별 모드(옛 동작)는 지시선 달린 것 하나만 묻는다 — 회귀 대비로 남겨 둔다
+    q = plan(tmp, exhaustive=False)
+    assert len(q["pins"]) == 1, q
     # 표본만 있는 페이지는 후보가 아니다
     plain = np.zeros((1171, 1650, 3), np.uint8)
     cv2.circle(plain, (700, 600), 240, (185, 180, 175), -1)

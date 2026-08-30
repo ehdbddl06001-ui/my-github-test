@@ -1,14 +1,14 @@
 // 자동 생성 파일 — 수정하지 마세요.
 // 원본: content/**/*.md  →  `python pipelines/export_search_web.py`로 재생성
 window.MEDKOS_INDEX = {
- "generated": "2026-08-29",
+ "generated": "2026-08-30",
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1893,
+  "total": 1900,
   "byType": {
    "anatomy": 513,
-   "paper": 502,
+   "paper": 509,
    "kmle": 747,
    "usmle": 114,
    "ailab": 14,
@@ -16,19 +16,19 @@ window.MEDKOS_INDEX = {
   },
   "byTopic": {
    "Anatomy": 513,
-   "Cardiology": 155,
+   "Cardiology": 156,
    "Nephrology": 131,
-   "Infectious Disease": 107,
-   "Pediatrics": 86,
-   "Hematology-Oncology": 77,
-   "Pathology": 70,
+   "Infectious Disease": 108,
+   "Pediatrics": 87,
+   "Hematology-Oncology": 78,
+   "Pathology": 71,
    "Obstetrics & Gynecology": 58,
    "Neurology": 56,
    "Psychiatry": 56,
-   "Surgery": 53,
+   "Surgery": 54,
    "Endocrinology": 48,
+   "Laboratory Medicine": 48,
    "Gastroenterology": 47,
-   "Laboratory Medicine": 47,
    "Pulmonology": 47,
    "Dermatology": 46,
    "General Surgery": 46,
@@ -54,7 +54,7 @@ window.MEDKOS_INDEX = {
   },
   "byConfidence": {
    "high": 1161,
-   "medium": 683,
+   "medium": 690,
    "low": 49
   },
   "tagCount": 2628
@@ -73,6 +73,125 @@ window.MEDKOS_INDEX = {
    "path": "content/anatomy/daily/2026-08-30.md",
    "snippet": "오늘의 학습 (2026 08 30 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 11일 · Tagging 2까지 50일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-30 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 30 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 11일 · Tagging 2까지 50일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "paper-2026-0509",
+   "type": "paper",
+   "unit": "",
+   "topic": "Surgery",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The international journal of medical robotics + computer assisted surgery : MRCAS",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0509_efficacy_and_safety_analysis_of_single_port_robotic_assisted.md",
+   "snippet": "Title Efficacy and Safety Analysis of Single Port Robotic Assisted Cholecystectomy Using a Novel Surgical Platform: A Bicentre, Single Arm, Prospective Phase II Clinical Study Authors Jing Chao, Liu Kun, Zhang Guowei, Wu Hongwei, Jia Zhe, L",
+   "text": "Surgery scraped pubmed PubMed / The international journal of medical robotics + computer assisted surgery : MRCAS Title Efficacy and Safety Analysis of Single Port Robotic Assisted Cholecystectomy Using a Novel Surgical Platform: A Bicentre, Single Arm, Prospective Phase II Clinical Study Authors Jing Chao, Liu Kun, Zhang Guowei, Wu Hongwei, Jia Zhe, Li Guoxin, Zhao Yaping, Zhang Zhongtao, et al. Journal / DOI The international journal of medical robotics + computer assisted surgery : MRCAS · DOI: 10.1002/rcs.70221 · PMID: 42667626 https://pubmed.ncbi.nlm.nih.gov/42667626/ Abstract BACKGROUND: Single port robotic cholecystectomy offers minimally invasive benefits. This trial evaluated the feasibility and safety of a novel system, MicroPort SA 1000. METHODS: In this dual centre, single arm, prospective study, eligible patients underwent single port robot assisted cholecystectomy with MicroPort SA 1000. The primary endpoint was the completion rate, while secondary endpoints included estimated blood loss, operating time, hospital length of stay and complications. RESULTS: From June 2023 to December 2023, a total of 44 patients from two centres were enrolled, and all patients underwent single port robot assisted cholecystectomy without conversion. The median EBL was 10 mL (range 5 200 mL). The total operative time was 88.43 ± 25.87 minutes. The median LOS was 2.5 days (range 1 7 days). No serious surgery related adverse events were observed. CONCLUSIONS: The novel single port robot demonstrated feasibility and safety in cholecystectomy with effective triangulation, controlled operative time and reduced trauma. Larger studies are needed to validate its performance across different surgical fields. TRIAL REGISTRATION: This study was registered at https://www.chictr.org.cn/showproj.html?proj=258677 (ChiCTR2500107401). Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0508",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pediatrics",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / The Pan African medical journal",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0508_effect_of_a_nutrition_education_intervention_on_mothers_comp.md",
+   "snippet": "Title Effect of a nutrition education intervention on mothers´ complementary feeding practices: a longitudinal study in two sub county hospitals in Nyeri County, Kenya Authors Omondi Lydiah Asiko, Mutai Joseph Kiplang At, Makokha Anselimo O",
+   "text": "Pediatrics scraped pubmed PubMed / The Pan African medical journal Title Effect of a nutrition education intervention on mothers´ complementary feeding practices: a longitudinal study in two sub county hospitals in Nyeri County, Kenya Authors Omondi Lydiah Asiko, Mutai Joseph Kiplang At, Makokha Anselimo Ouma Journal / DOI The Pan African medical journal · DOI: 10.11604/pamj.2026.53.173.49709 · PMID: 42662620 https://pubmed.ncbi.nlm.nih.gov/42662620/ Abstract INTRODUCTION: sub optimal complementary feeding remains a major contributor to child undernutrition during the first 1,000 days of life in low and middle income countries. Nutrition education is widely promoted to improve infant and young child feeding practices, but evidence from longitudinal facility based interventions in Kenya is limited. METHODS: a longitudinal intervention study was conducted among 451 mothers (intervention n = 220; control n = 231) of children aged 6 23 months attending two level IV hospitals in Nyeri County, Kenya. The study sites were randomly selected using a simple randomization procedure involving an unbiased coin toss, ensuring each of the two eligible sites had an equal probability of selection. The \"head\" and the \"tail\" were assigned to the intervention and control sites, respectively. Participants meeting the inclusion criteria were then recruited from the site that was randomly assigned during their specified clinic visits. Mothers attending Karatina Sub County Hospital received quarterly nutrition education sessions reinforced with cooking demonstrations over nine months, while those attending Othaya Sub County Hospital received routine health education. Complementary feeding practices were assessed using World Health Organization/United Nations Children´s Fund infant and young child feeding indicators. Data were collected at baseline and at 3, 6, and 9 months. Data were collected using structured questionnaires and analyzed using the Statistical Package for Social Sciences (SPSS) v24. Proportions, percentage change, net effect of intervention, odds ratios (OR) with 95% confidence interval (CI), and Chi square (χ2) tests were used; significance was set at P ≤ 0.05. RESULTS: at three months, the intervention group showed significantly greater improvements in egg and flesh food consumption, breastfeeding, minimum meal frequency, and minimum dietary diversity compared with the control group. The net effect of intervention for egg and flesh food consumption was +51.6% (odds ratio 6.17; 95% confidence interval 4.02 9.46; P < 0.001). Improvements in egg and flesh food consumption, breastfeeding, and minimum meal frequency were sustained at six and nine months. Reduction in zero vegetable and fruit consumption was greater in the control group at later follow up points. CONCLUSION: a structured nutrition education intervention reinforced with cooking demonstrations improved several key complementary feeding practices over nine months. Integrating such interventions within routine maternal and child health services may contribute to improved infant and young child feeding outcomes. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0507",
+   "type": "paper",
+   "unit": "",
+   "topic": "Laboratory Medicine",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of the Pediatric Infectious Diseases Society",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0507_the_role_of_1_3_beta_d_glucan_in_predicting_pneumocystis_jir.md",
+   "snippet": "Title The role of 1 3 beta D glucan in predicting Pneumocystis jirovecii Pneumonia in Immunocompromised Children Authors Keldorfer Markus, Ulreich Raphael, Martensen Johann, Faudon Patrick, Pfurtscheller Klaus, Rödl Siegfried, Krause Robert",
+   "text": "Laboratory Medicine scraped pubmed PubMed / Journal of the Pediatric Infectious Diseases Society Title The role of 1 3 beta D glucan in predicting Pneumocystis jirovecii Pneumonia in Immunocompromised Children Authors Keldorfer Markus, Ulreich Raphael, Martensen Johann, Faudon Patrick, Pfurtscheller Klaus, Rödl Siegfried, Krause Robert, Dichtl Karl, et al. Journal / DOI Journal of the Pediatric Infectious Diseases Society · DOI: 10.1093/jpids/piag085 · PMID: 42667642 https://pubmed.ncbi.nlm.nih.gov/42667642/ Abstract Serum 1,3 β D glucan (BDG) showed high negative predictive value (~99%) for Pneumocystis jirovecii pneumonia (PJP) in 106 non HIV immunocompromised children, but modest positive predictive value at low prevalence. These exploratory findings suggest BDG may help exclude PJP, pending prospective validation. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0506",
+   "type": "paper",
+   "unit": "",
+   "topic": "Pathology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Veterinary medicine and science",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0506_proliferative_sparganosis_due_to_spirometra_mansoni_in_a_dog.md",
+   "snippet": "Title Proliferative Sparganosis Due to Spirometra mansoni in a Dog: A Detailed Diagnostic Picture Authors Middlemast Stephanie, Lim Nicholas, Gauci Charles G, Jabbar Abdul Journal / DOI Veterinary medicine and science · DOI: 10.1002/vms3.71",
+   "text": "Pathology scraped pubmed PubMed / Veterinary medicine and science Title Proliferative Sparganosis Due to Spirometra mansoni in a Dog: A Detailed Diagnostic Picture Authors Middlemast Stephanie, Lim Nicholas, Gauci Charles G, Jabbar Abdul Journal / DOI Veterinary medicine and science · DOI: 10.1002/vms3.71206 · PMID: 42667636 https://pubmed.ncbi.nlm.nih.gov/42667636/ Abstract A young Blue Heeler presented for abdominal distension and weight gain, without a history of raw feeding or travel outside the western suburbs of Melbourne, Victoria, Australia. Abdominal ultrasound noted innumerable small anechoic oval cystic structures scattered throughout the peritoneal cavity and suspended in a large volume of echogenic peritoneal effusion. Subsequent diagnostics, including computed tomography, exploratory laparotomy, histopathology and molecular testing, confirmed the structures were Spirometra mansoni plerocercoids, and the patient was diagnosed with proliferative sparganosis. Despite treatment, the animal's health rapidly declined and was euthanised three weeks later. The postmortem revealed extensive diffuse severe granulomatous peritonitis with fibrinous adhesions throughout the peritoneal cavity. Proliferative sparganosis is a rare and devastating parasitic condition resulting from asexual replication of Spirometra spp. larvae within body cavities or organs. This article provides a detailed diagnostic picture of canine peritoneal proliferative sparganosis and is the first report describing the ultrasonographic findings of this condition. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0505",
+   "type": "paper",
+   "unit": "",
+   "topic": "Hematology-Oncology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of extracellular vesicles",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0505_selective_packaging_of_mir_22_and_mir_29_orthologues_into_ex.md",
+   "snippet": "Title Selective Packaging of miR 22 and miR 29 Orthologues into Extracellular Vesicles of the Porcine Whipworm Trichuris Suis Authors Whitehead Bradley, Mardahl Maibritt, Hansen Eline P, Fromm Bastian, Borup Anne, Boysen Anders Toftegaard, ",
+   "text": "Hematology-Oncology scraped pubmed PubMed / Journal of extracellular vesicles Title Selective Packaging of miR 22 and miR 29 Orthologues into Extracellular Vesicles of the Porcine Whipworm Trichuris Suis Authors Whitehead Bradley, Mardahl Maibritt, Hansen Eline P, Fromm Bastian, Borup Anne, Boysen Anders Toftegaard, Atay Jasmine C L, Nørregaard Rikke, et al. Journal / DOI Journal of extracellular vesicles · DOI: 10.1002/jev2.70351 · PMID: 42667670 https://pubmed.ncbi.nlm.nih.gov/42667670/ Abstract Helminths modulate host immunity, and in this respect, the porcine whipworm Trichuris suis has been explored clinically as an immunotherapy for inflammatory diseases. T. suis secretes a complex mixture of excretory/secretory products (ESP), including extracellular vesicles (EVs), nanosized membranous particles with bioactive cargoes of lipids, proteins and nucleic acids that are implicated in intercellular communication within organisms. Here, we characterise the EV protein and miRNA cargo of T. suis to identify potential roles in host parasite communication. In contrast to EVs from clade III/V helminth species characterised to date, we show that T. suis EVs did not suppress LPS induced TNF production by human macrophages under the conditions tested, in contrast to non vesicular ESP fractions which did. By generating the first extracellular miRNA complement for T. suis and quantifying EV associated versus free miRNAs across larval and adult stages, we identify selective enrichment of two miRNAs in adult EVs with homology to human miR 22 3p and miR 29 3p, canonical anti fibrotic and tumour suppressor miRNAs. Functional assays in human colon cancer epithelial cells reveal that these helminth derived orthologues downregulate conserved oncogenic targets, indicating evolutionary conservation of their regulatory capacity. Our findings uncover a previously unrecognised axis of whipworm biology in which selective EV mediated export of anti fibrotic miRNAs has the potential to modulate host tissue remodeling independently of classical immunomodulation, with implications for understanding helminth driven epithelial homeostasis and cancer risk. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0504",
+   "type": "paper",
+   "unit": "",
+   "topic": "Infectious Disease",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Journal of gastrointestinal and liver diseases : JGLD",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0504_burden_and_impact_of_infections_in_acute_pancreatitis_insigh.md",
+   "snippet": "Title Burden and Impact of Infections in Acute Pancreatitis: Insights from the National Inpatient Sample Authors Kohli Isha, Singh Anmol, Solanki Mehul, Jiwani Saniya, Singh Carol, Kumar Vikash, Sohal Aalam, Sandhu Dalbir Journal / DOI Jour",
+   "text": "Infectious Disease scraped pubmed PubMed / Journal of gastrointestinal and liver diseases : JGLD Title Burden and Impact of Infections in Acute Pancreatitis: Insights from the National Inpatient Sample Authors Kohli Isha, Singh Anmol, Solanki Mehul, Jiwani Saniya, Singh Carol, Kumar Vikash, Sohal Aalam, Sandhu Dalbir Journal / DOI Journal of gastrointestinal and liver diseases : JGLD · DOI: 10.15403/jgld 6842 · PMID: 42667662 https://pubmed.ncbi.nlm.nih.gov/42667662/ Abstract BACKGROUND AND AIMS: Acute pancreatitis (AP) is an inflammatory disease with a wide range of severity. Disruption of the intestinal barrier and translocation of gut flora increase the risk of infectious complications. Our study evaluates the impact of infections on in hospital outcomes among admitted AP patients. METHODS: Hospitalized adult AP patients were identified from the National Inpatient Sample (NIS) database (2016 2022) using ICD 10 codes. Patients with missing demographic or mortality data were excluded, and those remaining were stratified by infection type. Demographics, AP etiology, comorbidities, and clinical outcomes were analyzed. The primary outcome was in hospital mortality by infection type. Secondary outcomes included sepsis, shock, acute kidney injury (AKI), intensive care unit (ICU) admission, deep vein thrombosis (DVT), pulmonary embolism (PE), and portal vein thrombosis (PVT). RESULTS: Among 2,467,233 patients with AP, 392,255 (15.9%) developed infectious complications. Urinary tract infections (UTIs) were most common (51%), followed by pneumonia (29.7%), cholangitis (14.5%), Clostridioides difficile infection (CDI) (7.9%), cellulitis (5.6%), and spontaneous bacterial peritonitis (SBP) (1.9%). SBP had the highest mortality (21.1%), followed by pneumonia (12.8%), whereas mortality was lower with UTI (4.5%), cholangitis (5.2%), CDI (6.9%), and cellulitis (5.9%). AP patients with infections had higher in hospital mortality after adjusting for confounding factors (6.7% vs 1.6%, p < 0.001). CONCLUSIONS: Infectious complications, particularly SBP and pneumonia, were associated with significantly worse in hospital outcomes in patients with AP, highlighting the importance of early recognition and management. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
+  },
+  {
+   "id": "paper-2026-0503",
+   "type": "paper",
+   "unit": "",
+   "topic": "Cardiology",
+   "subtopic": "",
+   "tags": [
+    "scraped",
+    "pubmed"
+   ],
+   "source": "PubMed / Expert review of medical devices",
+   "confidence": "medium",
+   "date": "2026-08-29",
+   "path": "content/papers/2026/2026-08-29_paper-2026-0503_transcatheter_tricuspid_valve_replacement_for_severe_tricusp.md",
+   "snippet": "Title Transcatheter tricuspid valve replacement for severe tricuspid regurgitation: current and future perspectives Authors Calamita Gianmaria, Leone Pier Pasquale, Elsaid Ossama, Sturla Matteo, Rizvi Syed, Lin Jacopo, Sugiura Tadahisa, Sco",
+   "text": "Cardiology scraped pubmed PubMed / Expert review of medical devices Title Transcatheter tricuspid valve replacement for severe tricuspid regurgitation: current and future perspectives Authors Calamita Gianmaria, Leone Pier Pasquale, Elsaid Ossama, Sturla Matteo, Rizvi Syed, Lin Jacopo, Sugiura Tadahisa, Scotti Andrea, et al. Journal / DOI Expert review of medical devices · DOI: 10.1080/17434440.2026.2713742 · PMID: 42667674 https://pubmed.ncbi.nlm.nih.gov/42667674/ Abstract INTRODUCTION: Severe tricuspid regurgitation (TR) is common, undertreated, and associated with significant morbidity and mortality. Transcatheter tricuspid valve replacement (TTVR) has emerged as a promising option for patients unsuitable for surgical repair or transcatheter edge to edge repair. AREAS COVERED: This review examines the innovation trajectory, current device landscape, patient selection, imaging guidance, procedure specific challenges, and future perspectives of TTVR. A systematic literature search was performed using PubMed/MEDLINE, Embase, and ClinicalTrials.gov, covering publications from January 2015 to May 2025, using search terms including 'transcatheter tricuspid valve replacement,' 'TTVR,' 'tricuspid regurgitation,' and device specific names. EXPERT OPINION: TTVR offers near complete regurgitation elimination but remains anatomy and mechanism dependent. Its role is best defined in patients with anatomy unfavorable for repair. Optimal timing, device selection, antithrombotic management, and long term durability require prospective validation through dedicated trials and head to head comparisons with repair strategies. Summary <! TODO: /gen paper 로 핵심을 자기 언어로 요약 Clinical Impact <! TODO: 이 연구가 왜 practice changing인가 Guideline 변화 <! TODO: 이전 가이드라인과 무엇이 달라졌나 My Ideas <! TODO: 후속 아이디어/연구 메모"
   },
   {
    "id": "paper-2026-0502",
