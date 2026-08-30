@@ -831,7 +831,8 @@ def selftest() -> int:
     # 검은 여백 위 자막 → 지우면 가리킬 구조가 없다 → 문항이 되지 않는다
     cv2.putText(img, "tibial nerve runs behind", (250, 1040),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
-    tmp = Path("/tmp/_triage.png")
+    import tempfile
+    tmp = Path(tempfile.gettempdir()) / "_triage.png"   # 하드코딩 /tmp 는 Windows 에 없다
     cv2.imwrite(str(tmp), img)
     p = plan(tmp)
     assert p["ok"], p

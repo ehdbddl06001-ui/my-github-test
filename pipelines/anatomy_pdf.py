@@ -471,6 +471,7 @@ def selftest() -> int:
         doc = pymupdf.open(str(out))
         assert doc.page_count >= 4, f"페이지 부족: {doc.page_count}"
         full = "".join(p.get_text() for p in doc)
+        doc.close()   # Windows: 핸들이 열려 있으면 TemporaryDirectory 정리가 실패한다
         for token in ("셀프테스트", "문제 1", "등세모근", "공개·재배포 금지"):
             assert token in full, f"본문 누락: {token}"
         # .private 밖 출력은 거부
