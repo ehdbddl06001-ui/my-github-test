@@ -9320,6 +9320,103 @@ window.MEDKOS_ANATOMY = {
  ],
  "daily": [
   {
+   "date": "2026-08-31",
+   "phase": "t1-prep",
+   "examPhase": "tagging-1",
+   "regions": [
+    "thorax",
+    "head"
+   ],
+   "concepts": {
+    "preview": [
+     "anatomy-2026-0035"
+    ],
+    "layer": [
+     "anatomy-2026-0442"
+    ],
+    "branch": [
+     "anatomy-2026-0443"
+    ],
+    "relation": [
+     "anatomy-2026-0029",
+     "anatomy-2026-0030"
+    ]
+   },
+   "questions": [
+    "anatomy-2026-0157",
+    "anatomy-2026-0162",
+    "anatomy-2026-0385",
+    "anatomy-2026-0154",
+    "anatomy-2026-0159",
+    "anatomy-2026-0043",
+    "anatomy-2026-0038",
+    "anatomy-2026-0161",
+    "anatomy-2026-0378",
+    "anatomy-2026-0398",
+    "anatomy-2026-0156",
+    "anatomy-2026-0377"
+   ],
+   "review": {
+    "d-1": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0398",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-3": [
+     "anatomy-2026-0157",
+     "anatomy-2026-0162",
+     "anatomy-2026-0385",
+     "anatomy-2026-0154",
+     "anatomy-2026-0159",
+     "anatomy-2026-0043",
+     "anatomy-2026-0038",
+     "anatomy-2026-0161",
+     "anatomy-2026-0378",
+     "anatomy-2026-0380",
+     "anatomy-2026-0156",
+     "anatomy-2026-0377"
+    ],
+    "d-7": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0372",
+     "anatomy-2026-0353",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ],
+    "d-14": [
+     "anatomy-2026-0040",
+     "anatomy-2026-0046",
+     "anatomy-2026-0044",
+     "anatomy-2026-0041",
+     "anatomy-2026-0039",
+     "anatomy-2026-0043",
+     "anatomy-2026-0015",
+     "anatomy-2026-0004",
+     "anatomy-2026-0047",
+     "anatomy-2026-0045",
+     "anatomy-2026-0048",
+     "anatomy-2026-0052"
+    ]
+   },
+   "estMinutes": 35
+  },
+  {
    "date": "2026-08-30",
    "phase": "t1-prep",
    "examPhase": "tagging-1",

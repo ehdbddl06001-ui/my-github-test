@@ -5,17 +5,17 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1978,
+  "total": 1979,
   "byType": {
    "kmle": 779,
-   "anatomy": 559,
+   "anatomy": 560,
    "paper": 509,
    "usmle": 114,
    "ailab": 14,
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 559,
+   "Anatomy": 560,
    "Cardiology": 158,
    "Nephrology": 133,
    "Infectious Disease": 110,
@@ -53,7 +53,7 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1238,
+   "high": 1239,
    "medium": 691,
    "low": 49
   },
@@ -667,6 +667,20 @@ window.MEDKOS_INDEX = {
    "path": "content/kmle/2026/kmle-2026-0778.md",
    "snippet": "64세 남자가 1시간 전 시작된 가슴 조임과 식은땀으로 응급실에 왔다. 목정맥이 늘어나 있으나 폐 청진은 깨끗하다. 심전도는 자료와 같고, 활력징후와 검사 소견도 자료와 같다. 다음 중 이 환자에게 투여를 피해야 할 것은? A. 정맥 나이트로글리세린 투여 B. 산소 및 아스피린 투여 C. 응급 관상동맥중재술 준비 D. 생리식염수 정맥 주입 E. 헤파린 투여 하벽 심근경색에 목정맥 팽대·맑은 폐·저혈압·서맥이 동반되면 우심실경색",
    "text": "Cardiology Inferior STEMI with Right Ventricular Infarction inferior-STEMI right-ventricular-infarction nitroglycerin-contraindication preload-dependent KMLE 2026 / Claude Routine 64세 남자가 1시간 전 시작된 가슴 조임과 식은땀으로 응급실에 왔다. 목정맥이 늘어나 있으나 폐 청진은 깨끗하다. 심전도는 자료와 같고, 활력징후와 검사 소견도 자료와 같다. 다음 중 이 환자에게 투여를 피해야 할 것은? A. 정맥 나이트로글리세린 투여 B. 산소 및 아스피린 투여 C. 응급 관상동맥중재술 준비 D. 생리식염수 정맥 주입 E. 헤파린 투여 하벽 심근경색에 목정맥 팽대·맑은 폐·저혈압·서맥이 동반되면 우심실경색을 시사한다. 우심실경색은 전부하 의존성이므로 정맥 확장으로 전부하를 줄이는 나이트로글리세린이 혈압을 급격히 떨어뜨릴 수 있어 금기다."
+  },
+  {
+   "id": "anatomy-daily-2026-08-31",
+   "type": "anatomy",
+   "unit": "가슴·머리",
+   "topic": "Anatomy",
+   "subtopic": "daily plan 2026-08-31",
+   "tags": [],
+   "source": "pipelines/anatomy_daily.py (결정론 선택)",
+   "confidence": "high",
+   "date": "2026-08-31",
+   "path": "content/anatomy/daily/2026-08-31.md",
+   "snippet": "오늘의 학습 (2026 08 31 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 10일 · Tagging 2까지 49일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
+   "text": "Anatomy daily plan 2026-08-31 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 31 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 10일 · Tagging 2까지 49일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
   },
   {
    "id": "anatomy-daily-2026-08-30",
