@@ -671,6 +671,65 @@ window.MEDKOS_ANATOMY = {
    "body": "## 갈라지는 순서\n\n도해: `docs/assets/anatomy/diag-dorsal-rami-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0040`)\n\n```\n척수 ─┬─ 뒤뿌리(감각 · 척수신경절) ─┐\n      └─ 앞뿌리(운동 · 신경절 없음) ─┴─ 척수신경(혼합)\n                                        ├─ 뒤가지  (가늘다, 얼기 없음)\n                                        └─ 앞가지  (굵다, 얼기 만듦)\n```\n\n## 한눈 비교\n\n| 축 | 뒤가지 posterior ramus | 앞가지 anterior ramus |\n|---|---|---|\n| 운동 | 고유등근육(깊은층)**만** | 그 밖의 모든 뼈대근 — 등 얕은·중간층 포함 |\n| 피부 | 등 정중부 세로 띠 + 위·중간볼기 | 몸통 앞·가쪽, 사지 전부, 아래볼기 |\n| 신경얼기 | 만들지 않는다(분절 유지) | 목·팔·허리엉치 얼기 |\n| 굵기 | 가늘다 | 굵다 |\n| 예외 | C1 뒤가지(뒤통수밑신경) = **순수 운동** · C2 뒤가지 = 큰뒤통수신경 | 등세모근은 **더부신경(XI)** 지배 |\n\n## 뒤가지의 피부가지 — 높이에 따라 갈린다\n\n- T1–T6: **안쪽가지**가 피부까지 간다.\n- T7–T12: **가쪽가지**가 피부까지 간다.\n- 둘 다 고유등근육에 운동가지를 준다.\n\n## 볼기 피부신경 3형제\n\n| 신경 | 원어 | 유래 |\n|---|---|---|\n| 위볼기피부신경 | superior cluneal n. | L1–L3 **뒤가지** (엉덩뼈능선을 넘는다) |\n| 중간볼기피부신경 | middle cluneal n. | S1–S3 **뒤가지** |\n| 아래볼기피부신경 | inferior cluneal n. | 뒤넙다리피부신경의 가지 = **앞가지(S1–S3)** |\n\n외우는 법: **위·중간 = 뒤가지 / 아래 = 앞가지.**\n\n## 실습에서\n\n등 피부를 벗기면 정중선 가까이에서 얕은근막을 뚫고 나오는 신경이 보인다 —\n대부분 뒤가지의 피부가지다. 가쪽으로 갈수록 앞가지(갈비사이신경) 영역이 된다."
   },
   {
+   "id": "anatomy-2026-0442",
+   "title": "관자아래부위 동맥 위치 약도 — 위턱동맥 1·2·3부",
+   "region": "head",
+   "subregion": "infratemporal",
+   "layer": "deep",
+   "conceptStyle": "course-map",
+   "relations": [
+    "branches",
+    "passes-through"
+   ],
+   "structureClasses": [
+    "artery"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-infratemporal-artery-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료",
+     "page": null,
+     "section": "위턱동맥 구간(16:47–21:50) 실사에서 확인된 분지 관계를 교과식 구도로 재구성"
+    }
+   ],
+   "body": "## 약도가 보여주는 것 — 분지 「지점」\n\n도해: `docs/assets/anatomy/diag-infratemporal-artery-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0444`, 계보 트리는 `tree-s05-vessel` 참조)\n\n| 지점 | 무엇이 갈라지나 |\n|---|---|\n| 귀밑샘 안 · ==턱뼈목 높이== | 바깥목동맥 → **얕은관자 + 위턱동맥** 두 종말가지 |\n| 1부(턱뼈목 안쪽) | 깊은귀 · 앞고실 · ==중간뇌막(가시구멍)== · 덧뇌막(타원구멍) · ==아래이틀(턱뼈구멍)== |\n| 2부(가쪽날개근 표면) | 깊은관자(앞·뒤) · 날개근가지 · 깨물근(==턱뼈패임== 통과) · 볼동맥 |\n| 3부(날개위턱틈새 → 우묵) | 뒤위이틀 · 눈확아래 · 내림입천장 · ==나비입천장(종말, 코피)== |\n\n- 1·2·3부 = ==구멍 · 근육 · 우묵== — 가지의 행선지가 곧 구간 이름.\n- 얕은관자동맥 가지 = 가로얼굴(광대활 아래 전진) · 중간관자 · 이마·마루가지 종말.\n- 태깅 축: 중간뇌막동맥은 ==귓바퀴관자신경 두 뿌리== 사이로 상행 → 신경 약도(anatomy-2026-0443)와 겹쳐 볼 것."
+  },
+  {
+   "id": "anatomy-2026-0443",
+   "title": "관자아래부위 신경 위치 약도 — 아래턱신경 V3 갈래",
+   "region": "head",
+   "subregion": "infratemporal",
+   "layer": "deep",
+   "conceptStyle": "course-map",
+   "relations": [
+    "branches",
+    "passes-through",
+    "accompanies"
+   ],
+   "structureClasses": [
+    "nerve"
+   ],
+   "examPhase": "tagging-1",
+   "confidence": "high",
+   "classificationConfidence": null,
+   "tree": null,
+   "image": "assets/anatomy/diag-infratemporal-nerve-labeled.svg",
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료",
+     "page": 39,
+     "section": "P039 V3 가지 자필 라벨 노트에서 확인된 관계를 교과식 구도로 재구성"
+    }
+   ],
+   "body": "## 약도가 보여주는 것 — V3의 갈래와 위치관계\n\n도해: `docs/assets/anatomy/diag-infratemporal-nerve-labeled.svg`\n(퀴즈판 `…-quiz.svg`, 문항 `anatomy-2026-0445`, 계보 트리는 `tree-s05-nerve` 참조)\n\n| 구분 | 가지 | 예외 |\n|---|---|---|\n| 줄기 | 뇌막가지(가시구멍 회귀) · ==안쪽날개근신경== | 귀신경절이 줄기 안쪽면에 부착 |\n| 앞갈래 = ==운동== | 깨물근(턱뼈패임) · 깊은관자 · 가쪽날개근신경 | ==볼신경 = 감각== (두 갈래 사이로) |\n| 뒤갈래 = ==감각== | 귓바퀴관자 · 혀 · 아래이틀신경 | ==턱목뿔근신경 = 운동== |\n\n- ==혀신경이 아래이틀신경보다 앞·안쪽== — 실사 태깅의 결정 단서.\n- ==고실끈신경(VII)은 혀신경에 뒤·위에서 합류== — 혀 앞 2/3 미각 + 턱밑·혀밑샘 분비.\n- ==귓바퀴관자신경 두 뿌리가 중간뇌막동맥을 감싼다== — 동맥 약도(anatomy-2026-0442)와 겹쳐 볼 것.\n- 아래이틀신경은 턱뼈구멍 직전에 턱목뿔근신경을 낸다 — 턱뼈구멍 = 신경·동맥이 같이 들어가는 문."
+  },
+  {
    "id": "anatomy-2026-0030",
    "title": "큰궁둥구멍 통과 구조물과 볼기부위 혈관·신경 분지",
    "region": "lower-limb",
@@ -8359,6 +8418,52 @@ window.MEDKOS_ANATOMY = {
      "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료 (115장, 영상 캡처 + 자필 필기 스캔)",
      "page": 111,
      "section": "P111 — 원본 영상 라벨·자필 라벨 실측(정답을 지어내지 않음). Thorax — Pericardium and heart · 왼심실 (40:21)"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0444",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 동맥 약도 퀴즈판이다. 번호핀 1–18이 가리키는 동맥(가지)의 이름을 순서대로 답하시오. 지시선 끝이 해당 혈관이다. (5는 본줄기, 12는 앞·뒤 두 가지를 묶은 것)",
+   "choices": null,
+   "answer": "1. 바깥목동맥 (external carotid a.) 2. 얕은관자동맥 (superficial temporal a.) 3. 중간관자동맥 (middle temporal a.) 4. 가로얼굴동맥 (transverse facial a.) 5. 위턱동맥 (maxillary a.) 6. 깊은귀동맥 (deep auricular a.) 7. 앞고실동맥 (anterior tympanic a.) 8. 중간뇌막동맥 (middle meningeal a.) 9. 덧뇌막동맥 (accessory meningeal a.) 10. 아래이틀동맥 (inferior alveolar a.) 11. 턱목뿔근가지 (mylohyoid br.) 12. 깊은관자동맥 앞·뒤 (deep temporal aa.) 13. 깨물근동맥 (masseteric a.) 14. 볼동맥 (buccal a.) 15. 뒤위이틀동맥 (posterior superior alveolar a.) 16. 눈확아래동맥 (infraorbital a.) 17. 내림입천장동맥 (descending palatine a.) 18. 나비입천장동맥 (sphenopalatine a.)",
+   "explanation": "분지 순서가 곧 답이다 — 바깥목동맥은 귀밑샘 안·턱뼈목 높이에서 얕은관자(2·3·4의 모동맥)와 위턱동맥으로 종말. 위턱동맥 1부(6·7·8·9·10) = 전부 뼈구멍행, 2부(12·13·14) = 씹기근육행, 3부(15·16·17·18) = 날개입천장우묵행. 중간뇌막동맥 = 가시구멍, 덧뇌막 = 타원구멍, 아래이틀 = 턱뼈구멍(11을 낸 뒤 진입), 나비입천장 = 종말가지·코피.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료",
+     "page": null,
+     "section": "위턱동맥 구간(16:47–21:50) 실사에서 확인된 분지 관계"
+    }
+   ]
+  },
+  {
+   "id": "anatomy-2026-0445",
+   "style": "spotter",
+   "session": 5,
+   "region": "head",
+   "subregion": "infratemporal",
+   "examPhase": "tagging-1",
+   "stem": "관자아래부위 신경 약도 퀴즈판이다. 번호핀 1–13이 가리키는 구조의 이름을 순서대로 답하시오. 주황=운동·파랑=감각·보라=얼굴신경 계열이다. (1은 줄기, 13은 신경절)",
+   "choices": null,
+   "answer": "1. 아래턱신경 (mandibular n., V3) 2. 뇌막가지 — 가시신경 (meningeal br., nervus spinosus) 3. 안쪽날개근신경 (n. to medial pterygoid) 4. 깊은관자신경 (deep temporal nn.) 5. 깨물근신경 (masseteric n.) 6. 가쪽날개근신경 (n. to lateral pterygoid) 7. 볼신경 (buccal n.) 8. 귓바퀴관자신경 (auriculotemporal n.) 9. 혀신경 (lingual n.) 10. 고실끈신경 (chorda tympani n., VII) 11. 아래이틀신경 (inferior alveolar n.) 12. 턱목뿔근신경 (n. to mylohyoid) 13. 귀신경절 (otic ganglion)",
+   "explanation": "V3 = 타원구멍. 앞갈래(4·5·6)=운동, 예외 볼신경(7)=감각 — 가쪽날개근 두 갈래 사이. 뒤갈래(8·9·11)=감각, 예외 턱목뿔근신경(12)=운동. 귓바퀴관자신경(8) 두 뿌리가 중간뇌막동맥을 감싸고, 고실끈신경(10, VII)은 혀신경(9)에 뒤·위에서 합류. 혀신경이 아래이틀신경보다 앞·안쪽 — 태깅 결정 단서. 귀신경절(13) = V3 안쪽면, IX 부교감 → 귀밑샘.",
+   "confidence": "high",
+   "answerOnlyBacked": false,
+   "image": null,
+   "imageOrigin": "claude-drawn-svg",
+   "refs": [
+    {
+     "file": "[5차시] e-anatomy.pdf — 본과 2학년 3Q 자료/해부학/시험 자료",
+     "page": 39,
+     "section": "P039 V3 가지 자필 라벨 노트에서 확인된 관계"
     }
    ]
   },

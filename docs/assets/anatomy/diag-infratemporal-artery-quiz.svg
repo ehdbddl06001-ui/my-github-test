@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 720" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif" role="img" aria-label="관자아래부위 동맥 약도 퀴즈판 — 바깥목동맥 종말 분지와 위턱동맥 1·2·3부 가지의 위치. 자체 제작 도해">
+  <!-- 자체 제작 도해(claude-drawn, Lane A). 오른쪽 머리 가쪽면, 턱뼈가지를 제거하고 본 구도.
+       근거: 5회차 실사 스캔 [5차시] e-anatomy.pdf 위턱동맥 구간(P027-P039) + 인정 교재 표준.
+       카데바 사진을 본뜨지 않은 교과식 약도다.
+       핵심 ① 바깥목동맥은 턱뼈목 높이 귀밑샘 안에서 얕은관자+위턱동맥으로 종말
+             ② 위턱동맥 1부=뼈구멍행 / 2부=씹기근육행 / 3부=날개입천장우묵행
+             ③ 중간뇌막동맥=가시구멍, 아래이틀동맥=턱뼈구멍, 나비입천장동맥=종말가지 -->
+  <style>
+    text{paint-order:stroke;stroke:#0e1826;stroke-width:3.2px;stroke-linejoin:round}
+    .kr{font-weight:700}
+  </style>
+  <rect width="880" height="720" fill="#0e1826"/>
+
+  <text x="20" y="30" fill="#e6edf3" font-size="18" font-weight="700">관자아래부위 동맥 약도 퀴즈판 — 위턱동맥 1·2·3부
+    <tspan fill="#93a4b7" font-size="12" font-weight="400">maxillary a. in the infratemporal fossa</tspan></text>
+  <text x="20" y="50" fill="#93a4b7" font-size="11">자체 제작(교과식 구도) · 오른쪽 머리 가쪽면 · 턱뼈가지(점선)는 제거하고 본 것 · 근거: 5회차 실습영상 §위턱동맥</text>
+  <text x="20" y="68" fill="#6f8299" font-size="11">동맥 <tspan fill="#e0645f">빨강</tspan> · 뼈 <tspan fill="#7b8ea3">회청</tspan> · 근육 <tspan fill="#5d7391">남회색</tspan> · ★ = 태깅·임상 빈출 · 점선 = 뼈관·틈새 속 주행</text>
+  <text x="20" y="86" fill="#5d6f83" font-size="10">← 앞 anterior   |   뒤 posterior →</text>
+
+  <!-- ================= 머리뼈바닥 선 + 구멍 ================= -->
+  <line x1="240" y1="235" x2="640" y2="235" stroke="#3d5166" stroke-width="3"/>
+  <ellipse cx="408" cy="235" rx="9" ry="5" fill="#0e1826" stroke="#93a4b7" stroke-width="2"/>
+  <ellipse cx="462" cy="235" rx="7" ry="4.5" fill="#0e1826" stroke="#93a4b7" stroke-width="2"/>
+  <text x="330" y="228" fill="#93a4b7" font-size="10" text-anchor="end">타원구멍 foramen ovale</text>
+  <line x1="334" y1="225" x2="400" y2="233" stroke="#93a4b7" stroke-width="1"/>
+  <text x="478" y="224" fill="#93a4b7" font-size="10">가시구멍 foramen spinosum</text>
+  <line x1="474" y1="226" x2="466" y2="231" stroke="#93a4b7" stroke-width="1"/>
+
+  <!-- ================= 관자근(부채꼴, 반투명 배경) ================= -->
+  <path d="M 300,116 Q 430,96 560,126 Q 520,220 476,302 L 452,302 Q 380,200 300,116 Z"
+        fill="#22344a" fill-opacity="0.55" stroke="#3a4f68" stroke-width="1.5"/>
+  <text x="382" y="130" fill="#7b8ea3" font-size="11" class="kr">관자근 temporalis m.</text>
+
+  <!-- ================= 위턱뼈 뒤벽 · 가쪽날개판 · 날개입천장우묵 ================= -->
+  <path d="M 236,258 L 276,258 L 272,430 L 240,430 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="250" y="398" fill="#7b8ea3" font-size="10" text-anchor="middle" transform="rotate(-90 250,398)" class="kr">위턱뼈 maxilla</text>
+  <path d="M 306,258 L 330,258 L 336,382 L 314,382 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <!-- 우묵(위턱뼈와 날개판 사이 어두운 틈) -->
+  <rect x="278" y="262" width="26" height="150" fill="#060c14"/>
+
+  <!-- ================= 광대활 ================= -->
+  <path d="M 250,262 L 576,262 L 582,280 L 250,280 Z" fill="#1b2a3c" stroke="#3d5166" stroke-width="2"/>
+  <text x="262" y="304" fill="#7b8ea3" font-size="10.5" class="kr">광대활 zygomatic arch</text>
+  <line x1="300" y1="294" x2="308" y2="281" stroke="#7b8ea3" stroke-width="1"/>
+
+  <!-- ================= 바깥귀길 ================= -->
+  <circle cx="614" cy="300" r="15" fill="#22344a" stroke="#3d5166" stroke-width="2"/>
+  <circle cx="614" cy="300" r="6" fill="#060c14"/>
+
+  <!-- ================= 턱뼈가지(점선 = 제거) ================= -->
+  <path d="M 470,310 Q 510,296 528,302 Q 546,290 562,300 Q 572,308 566,322 L 552,342
+           Q 540,470 528,596 L 452,600 Q 458,470 470,310 Z"
+        fill="none" stroke="#5d6f83" stroke-width="2" stroke-dasharray="7 6"/>
+  <ellipse cx="498" cy="432" rx="8" ry="6" fill="none" stroke="#93a4b7" stroke-width="2"/>
+  <text x="560" y="418" fill="#93a4b7" font-size="10.5">턱뼈구멍</text>
+  <text x="560" y="431" fill="#93a4b7" font-size="9.5">mandibular foramen</text>
+  <line x1="556" y1="422" x2="508" y2="431" stroke="#93a4b7" stroke-width="1"/>
+  <text x="596" y="586" fill="#5d6f83" font-size="10">턱뼈가지(점선)=제거</text>
+  <line x1="592" y1="582" x2="540" y2="560" stroke="#5d6f83" stroke-width="1"/>
+
+  <!-- ================= 가쪽·안쪽날개근 ================= -->
+  <path d="M 332,266 L 396,262 L 552,296 L 548,310 L 336,282 Z" fill="#33465e" stroke="#4a6076" stroke-width="1.5"/>
+  <path d="M 330,318 L 394,312 L 556,320 L 552,338 L 334,342 Z" fill="#33465e" stroke="#4a6076" stroke-width="1.5"/>
+  <path d="M 338,358 L 378,352 L 512,580 L 470,592 Z" fill="#2c3d54" stroke="#41576f" stroke-width="1.5"/>
+  <text x="660" y="608" fill="#8fa5bd" font-size="11" class="kr">안쪽날개근</text>
+  <text x="660" y="622" fill="#6f8299" font-size="9.5">medial pterygoid m.</text>
+  <line x1="656" y1="610" x2="498" y2="560" stroke="#6f8299" stroke-width="1"/>
+
+  <!-- 가쪽날개근 라벨(근육 위 직접 표기) -->
+  <text x="352" y="278" fill="#c3d2e2" font-size="9.5" class="kr">가쪽날개근 위갈래</text>
+  <text x="352" y="334" fill="#c3d2e2" font-size="9.5" class="kr">가쪽날개근 아래갈래 <tspan fill="#8fa5bd" font-weight="400">lateral pterygoid m.</tspan></text>
+
+  <!-- ================= 동맥 ================= -->
+  <!-- 바깥목동맥 -->
+  <path d="M 646,652 C 634,540 612,420 602,344" fill="none" stroke="#e0645f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="602" cy="340" r="6" fill="#eab308"/>
+  <!-- 얕은관자동맥(상행) + 종말 갈림 -->
+  <path d="M 602,340 C 605,290 607,250 609,205 L 611,150" fill="none" stroke="#e0645f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 611,150 L 588,108" fill="none" stroke="#e0645f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 611,150 L 644,110" fill="none" stroke="#e0645f" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- 가로얼굴동맥 -->
+  <path d="M 603,302 L 436,290" fill="none" stroke="#e0645f" stroke-width="3" stroke-linecap="round"/>
+  <!-- 중간관자동맥 -->
+  <path d="M 605,258 C 616,238 621,222 624,204" fill="none" stroke="#e0645f" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 위턱동맥 본줄기: 1부(수평) → 2부(사선) → 3부(우묵 진입) -->
+  <path d="M 602,340 L 520,330 L 404,300 C 366,294 340,292 306,290" fill="none" stroke="#e0645f" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M 306,290 L 290,289" fill="none" stroke="#e0645f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 293,283 L 281,289 L 293,295 Z" fill="#e0645f"/>
+
+  <!-- 1부 가지 -->
+  <path d="M 586,336 L 599,314" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 572,334 L 580,306" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 552,332 C 538,300 498,262 466,240" fill="none" stroke="#e0645f" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M 538,329 C 498,300 440,260 412,240" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 528,329 C 519,362 507,396 500,428"
+        fill="none" stroke="#e0645f" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M 500,436 C 482,474 444,504 404,522" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <path d="M 497,420 C 486,446 474,462 464,474" fill="none" stroke="#e0645f" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- 2부 가지 -->
+  <path d="M 470,317 C 466,250 459,192 452,152" fill="none" stroke="#e0645f" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 434,308 C 428,248 422,200 416,160" fill="none" stroke="#e0645f" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 506,322 L 524,300" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 416,303 C 392,338 362,372 338,396" fill="none" stroke="#e0645f" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- 3부 가지 (우묵 앞에서) -->
+  <path d="M 330,292 C 312,330 296,356 284,376" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 316,289 C 300,272 288,258 274,246" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <path d="M 308,292 L 302,380" fill="none" stroke="#e0645f" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="6 5"/>
+
+  <!-- ================= 동맥 라벨 ================= -->
+  <!-- 오른쪽 열 -->
+  <line x1="696" y1="122" x2="613" y2="170" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="696" y1="198" x2="626" y2="206" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="696" y1="264" x2="560" y2="296" stroke="#e0645f" stroke-width="1"/>
+
+  <text x="700" y="316" fill="#e6edf3" font-size="11">바깥귀길</text>
+  <text x="700" y="329" fill="#93a4b7" font-size="9.5">ext. acoustic meatus</text>
+  <line x1="696" y1="312" x2="630" y2="302" stroke="#7b8ea3" stroke-width="1"/>
+
+  <line x1="696" y1="358" x2="600" y2="320" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="696" y1="402" x2="582" y2="312" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="696" y1="446" x2="524" y2="303" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="696" y1="514" x2="624" y2="512" stroke="#e0645f" stroke-width="1"/>
+
+  <!-- 위 열 -->
+  <line x1="394" y1="162" x2="414" y2="172" stroke="#e0645f" stroke-width="1"/>
+  <line x1="428" y1="162" x2="450" y2="168" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="530" y1="180" x2="500" y2="264" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="346" y1="188" x2="436" y2="258" stroke="#e0645f" stroke-width="1"/>
+
+  <!-- 왼쪽 열 -->
+  <line x1="118" y1="242" x2="278" y2="250" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="130" y1="286" x2="284" y2="289" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="112" y1="398" x2="282" y2="378" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="120" y1="442" x2="300" y2="378" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="72" y1="492" x2="332" y2="394" stroke="#e0645f" stroke-width="1"/>
+
+  <!-- 아래 열 -->
+  <line x1="330" y1="532" x2="452" y2="500" stroke="#e0645f" stroke-width="1"/>
+
+  <line x1="410" y1="580" x2="466" y2="472" stroke="#e0645f" stroke-width="1"/>
+
+
+  <!-- ================= 1·2·3부 구간 브레이스 ================= -->
+  <line x1="522" y1="646" x2="600" y2="646" stroke="#e0645f" stroke-width="2"/>
+  <line x1="522" y1="640" x2="522" y2="652" stroke="#e0645f" stroke-width="2"/>
+  <line x1="600" y1="640" x2="600" y2="652" stroke="#e0645f" stroke-width="2"/>
+  <text x="561" y="668" fill="#e6edf3" font-size="10.5" text-anchor="middle" class="kr">1부 아래턱부분</text>
+  <text x="561" y="682" fill="#93a4b7" font-size="9">턱뼈목 안쪽 · 가지 전부 뼈구멍행</text>
+
+  <line x1="408" y1="646" x2="516" y2="646" stroke="#e0645f" stroke-width="2"/>
+  <line x1="408" y1="640" x2="408" y2="652" stroke="#e0645f" stroke-width="2"/>
+  <text x="462" y="668" fill="#e6edf3" font-size="10.5" text-anchor="middle" class="kr">2부 날개근부분</text>
+  <text x="462" y="682" fill="#93a4b7" font-size="9">씹기근육행 가지</text>
+
+  <line x1="286" y1="646" x2="402" y2="646" stroke="#e0645f" stroke-width="2"/>
+  <line x1="286" y1="640" x2="286" y2="652" stroke="#e0645f" stroke-width="2"/>
+  <text x="344" y="668" fill="#e6edf3" font-size="10.5" text-anchor="middle" class="kr">3부 날개입천장부분</text>
+  <text x="344" y="682" fill="#93a4b7" font-size="9">날개위턱틈새 → 우묵 진입</text>
+
+  <text x="286" y="706" fill="#eab308" font-size="10">암기 — 위턱동맥 1·2·3부 = 구멍 · 근육 · 우묵</text>
+
+  <!-- 날개입천장우묵 라벨 -->
+  <text x="20" y="342" fill="#e6edf3" font-size="10.5" class="kr">날개입천장우묵</text>
+  <text x="20" y="355" fill="#93a4b7" font-size="9">pterygopalatine fossa</text>
+  <line x1="112" y1="344" x2="286" y2="336" stroke="#7b8ea3" stroke-width="1"/>
+  <!-- 번호핀: 대응 문항 카드 정답 순서와 1:1 (임의 변경 금지) -->
+  <circle cx="714.0" cy="521.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="525.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">1</text>
+  <circle cx="714.0" cy="129.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="133.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">2</text>
+  <circle cx="714.0" cy="205.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="209.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">3</text>
+  <circle cx="714.0" cy="271.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="275.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">4</text>
+  <line x1="560" y1="356" x2="560" y2="336" stroke="#eab308" stroke-width="1.6"/>
+  <circle cx="560" cy="356" r="12" fill="#eab308"/>
+  <text x="560" y="360.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">5</text>
+  <circle cx="714.0" cy="369.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="373.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">6</text>
+  <circle cx="714.0" cy="413.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="417.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">7</text>
+  <circle cx="522.0" cy="185.0" r="12" fill="#eab308"/>
+  <text x="522.0" y="189.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">8</text>
+  <circle cx="304.0" cy="192.0" r="12" fill="#eab308"/>
+  <text x="304.0" y="196.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">9</text>
+  <circle cx="250.0" cy="545.0" r="12" fill="#eab308"/>
+  <text x="250.0" y="549.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">10</text>
+  <circle cx="374.0" cy="598.0" r="12" fill="#eab308"/>
+  <text x="374.0" y="602.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">11</text>
+  <circle cx="314.0" cy="167.0" r="12" fill="#eab308"/>
+  <text x="314.0" y="171.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">12</text>
+  <circle cx="714.0" cy="456.0" r="12" fill="#eab308"/>
+  <text x="714.0" y="460.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">13</text>
+  <circle cx="34.0" cy="499.0" r="12" fill="#eab308"/>
+  <text x="34.0" y="503.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">14</text>
+  <circle cx="34.0" cy="405.0" r="12" fill="#eab308"/>
+  <text x="34.0" y="409.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">15</text>
+  <circle cx="34.0" cy="249.0" r="12" fill="#eab308"/>
+  <text x="34.0" y="253.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">16</text>
+  <circle cx="34.0" cy="449.0" r="12" fill="#eab308"/>
+  <text x="34.0" y="453.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">17</text>
+  <circle cx="34.0" cy="293.0" r="12" fill="#eab308"/>
+  <text x="34.0" y="297.5" fill="#0e1826" font-size="13" font-weight="700" text-anchor="middle" style="paint-order:normal;stroke:none">18</text>
+</svg>

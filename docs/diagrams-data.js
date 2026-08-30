@@ -2,9 +2,57 @@
 // 원본: docs/assets/anatomy/*.svg  →  `python pipelines/export_diagrams_web.py`
 window.MEDKOS_DIAGRAMS = {
  "generated": "2026-08-30",
- "count": 74,
- "groups": 38,
+ "count": 78,
+ "groups": 40,
  "items": [
+  {
+   "file": "diag-infratemporal-nerve-labeled.svg",
+   "base": "diag-infratemporal-nerve",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "관자아래부위 신경 약도",
+   "date": "2026-08-30",
+   "bytes": 14589
+  },
+  {
+   "file": "diag-infratemporal-nerve-quiz.svg",
+   "base": "diag-infratemporal-nerve",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "관자아래부위 신경 약도 퀴즈판",
+   "date": "2026-08-30",
+   "bytes": 13873
+  },
+  {
+   "file": "diag-infratemporal-artery-labeled.svg",
+   "base": "diag-infratemporal-artery",
+   "variant": "labeled",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "관자아래부위 동맥 약도",
+   "date": "2026-08-30",
+   "bytes": 16119
+  },
+  {
+   "file": "diag-infratemporal-artery-quiz.svg",
+   "base": "diag-infratemporal-artery",
+   "variant": "quiz",
+   "kind": "diag",
+   "kindLabel": "위치 도해",
+   "session": 5,
+   "unit": "5회차 · 가슴·머리",
+   "title": "관자아래부위 동맥 약도 퀴즈판",
+   "date": "2026-08-30",
+   "bytes": 16600
+  },
   {
    "file": "diag-intercostal-layers-labeled.svg",
    "base": "diag-intercostal-layers",

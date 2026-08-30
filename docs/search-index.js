@@ -5,9 +5,9 @@ window.MEDKOS_INDEX = {
  "repo": "ehdbddl06001-ui/my-github-test",
  "branch": "main",
  "stats": {
-  "total": 1942,
+  "total": 1946,
   "byType": {
-   "anatomy": 555,
+   "anatomy": 559,
    "paper": 509,
    "kmle": 747,
    "usmle": 114,
@@ -15,7 +15,7 @@ window.MEDKOS_INDEX = {
    "basic": 3
   },
   "byTopic": {
-   "Anatomy": 555,
+   "Anatomy": 559,
    "Cardiology": 156,
    "Nephrology": 131,
    "Infectious Disease": 108,
@@ -53,11 +53,11 @@ window.MEDKOS_INDEX = {
    "Medical AI Curriculum": 1
   },
   "byConfidence": {
-   "high": 1202,
+   "high": 1206,
    "medium": 691,
    "low": 49
   },
-  "tagCount": 2647
+  "tagCount": 2649
  },
  "docs": [
   {
@@ -73,6 +73,99 @@ window.MEDKOS_INDEX = {
    "path": "content\\anatomy\\daily\\2026-08-30.md",
    "snippet": "오늘의 학습 (2026 08 30 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 11일 · Tagging 2까지 50일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다.",
    "text": "Anatomy daily plan 2026-08-30 가슴·머리 pipelines/anatomy_daily.py (결정론 선택) 오늘의 학습 (2026 08 30 · t1 prep) 다음 수업/시험: 2026 08 31 가슴벽·가슴안·가슴막·위세로칸·심장막·심장, 관자부위·관자아래부위 Tagging 1까지 11일 · Tagging 2까지 50일 예상 소요: 약 35분 문항 12개 · 개념 5개 · 복습 48개 마지막에 오늘 반드시 말로 설명할 3개 관계 를 웹 화면이 오늘 문항의 관계 카드에서 뽑아 보여준다."
+  },
+  {
+   "id": "anatomy-2026-0445",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래부위 신경 약도 퀴즈 — V3 전 가지 (자체 제작 도해)",
+   "tags": [
+    "spotter",
+    "도해",
+    "약도",
+    "5회차",
+    "V3",
+    "아래턱신경",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "자체 제작 위치 약도(diag-infratemporal-nerve) 퀴즈판 — 근거는 5회차 실사 P039 V3 종합 노트 + 인정 교재 표준",
+   "confidence": "high",
+   "date": "2026-08-30",
+   "path": "content\\anatomy\\questions\\tagging-1\\anatomy-2026-0445.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (공개 도해 퀴즈판). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자아래부위 신경 약도 퀴즈 — V3 전 가지 (자체 제작 도해) 5회차 · 머리 spotter 도해 약도 5회차 V3 아래턱신경 태깅 예습시험 자체 제작 위치 약도(diag-infratemporal-nerve) 퀴즈판 — 근거는 5회차 실사 P039 V3 종합 노트 + 인정 교재 표준 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (공개 도해 퀴즈판). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0444",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래부위 동맥 약도 퀴즈 — 위턱동맥 전 가지 (자체 제작 도해)",
+   "tags": [
+    "spotter",
+    "도해",
+    "약도",
+    "5회차",
+    "위턱동맥",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "자체 제작 위치 약도(diag-infratemporal-artery) 퀴즈판 — 근거는 5회차 실사 §위턱동맥 + 인정 교재 표준",
+   "confidence": "high",
+   "date": "2026-08-30",
+   "path": "content\\anatomy\\questions\\tagging-1\\anatomy-2026-0444.md",
+   "snippet": "문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (공개 도해 퀴즈판). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다.",
+   "text": "Anatomy 관자아래부위 동맥 약도 퀴즈 — 위턱동맥 전 가지 (자체 제작 도해) 5회차 · 머리 spotter 도해 약도 5회차 위턱동맥 태깅 예습시험 자체 제작 위치 약도(diag-infratemporal-artery) 퀴즈판 — 근거는 5회차 실사 §위턱동맥 + 인정 교재 표준 문제 지문은 frontmatter의 stem 에 있다. 그림은 asset ref (공개 도해 퀴즈판). 정답 및 해설 정답·해설은 frontmatter( answer / explanation )에만 둔다 — 본문에 옮겨 적지 않는다."
+  },
+  {
+   "id": "anatomy-2026-0443",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래부위 신경 위치 약도 — 아래턱신경 V3 갈래",
+   "tags": [
+    "도해",
+    "약도",
+    "5회차",
+    "V3",
+    "아래턱신경",
+    "혀신경",
+    "고실끈신경",
+    "관자아래부위",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 실사 스캔 [5차시] e-anatomy.pdf P039(V3 가지 종합 노트) + 인정 교재 표준 — 계보 트리(tree-s05-nerve)와 달리 '어느 지형에서 갈라지는가'를 지도로 그린 판",
+   "confidence": "high",
+   "date": "2026-08-30",
+   "path": "content\\anatomy\\concepts\\head\\anatomy-2026-0443.md",
+   "snippet": "약도가 보여주는 것 — V3의 갈래와 위치관계 도해: docs/assets/anatomy/diag infratemporal nerve labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0445 , 계보 트리는 tree s05 nerve 참조) 구분 가지 예외 줄기 뇌막가지(가시구멍 회귀) · ==안쪽날개근신경== 귀신경절이 줄기 안쪽면에 부착 앞갈래 = ==운동== 깨물근(턱뼈패임) · 깊은관자",
+   "text": "Anatomy 관자아래부위 신경 위치 약도 — 아래턱신경 V3 갈래 5회차 · 머리 도해 약도 5회차 V3 아래턱신경 혀신경 고실끈신경 관자아래부위 태깅 예습시험 5회차 실사 스캔 [5차시] e-anatomy.pdf P039(V3 가지 종합 노트) + 인정 교재 표준 — 계보 트리(tree-s05-nerve)와 달리 '어느 지형에서 갈라지는가'를 지도로 그린 판 약도가 보여주는 것 — V3의 갈래와 위치관계 도해: docs/assets/anatomy/diag infratemporal nerve labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0445 , 계보 트리는 tree s05 nerve 참조) 구분 가지 예외 줄기 뇌막가지(가시구멍 회귀) · ==안쪽날개근신경== 귀신경절이 줄기 안쪽면에 부착 앞갈래 = ==운동== 깨물근(턱뼈패임) · 깊은관자 · 가쪽날개근신경 ==볼신경 = 감각== (두 갈래 사이로) 뒤갈래 = ==감각== 귓바퀴관자 · 혀 · 아래이틀신경 ==턱목뿔근신경 = 운동== ==혀신경이 아래이틀신경보다 앞·안쪽== — 실사 태깅의 결정 단서. ==고실끈신경(VII)은 혀신경에 뒤·위에서 합류== — 혀 앞 2/3 미각 + 턱밑·혀밑샘 분비. ==귓바퀴관자신경 두 뿌리가 중간뇌막동맥을 감싼다== — 동맥 약도(anatomy 2026 0442)와 겹쳐 볼 것. 아래이틀신경은 턱뼈구멍 직전에 턱목뿔근신경을 낸다 — 턱뼈구멍 = 신경·동맥이 같이 들어가는 문."
+  },
+  {
+   "id": "anatomy-2026-0442",
+   "type": "anatomy",
+   "unit": "5회차 · 머리",
+   "topic": "Anatomy",
+   "subtopic": "관자아래부위 동맥 위치 약도 — 위턱동맥 1·2·3부",
+   "tags": [
+    "도해",
+    "약도",
+    "5회차",
+    "위턱동맥",
+    "얕은관자동맥",
+    "관자아래부위",
+    "태깅",
+    "예습시험"
+   ],
+   "source": "5회차 실사 스캔 [5차시] e-anatomy.pdf §위턱동맥(P027–P039) + 인정 교재 표준 — 계보 트리(tree-s05-vessel)와 달리 '어느 지형에서 갈라지는가'를 지도로 그린 판",
+   "confidence": "high",
+   "date": "2026-08-30",
+   "path": "content\\anatomy\\concepts\\head\\anatomy-2026-0442.md",
+   "snippet": "약도가 보여주는 것 — 분지 「지점」 도해: docs/assets/anatomy/diag infratemporal artery labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0444 , 계보 트리는 tree s05 vessel 참조) 지점 무엇이 갈라지나 귀밑샘 안 · ==턱뼈목 높이== 바깥목동맥 → 얕은관자 + 위턱동맥 두 종말가지 1부(턱뼈목 안쪽) 깊은귀 · 앞고실 · ==중간뇌막(가",
+   "text": "Anatomy 관자아래부위 동맥 위치 약도 — 위턱동맥 1·2·3부 5회차 · 머리 도해 약도 5회차 위턱동맥 얕은관자동맥 관자아래부위 태깅 예습시험 5회차 실사 스캔 [5차시] e-anatomy.pdf §위턱동맥(P027–P039) + 인정 교재 표준 — 계보 트리(tree-s05-vessel)와 달리 '어느 지형에서 갈라지는가'를 지도로 그린 판 약도가 보여주는 것 — 분지 「지점」 도해: docs/assets/anatomy/diag infratemporal artery labeled.svg (퀴즈판 … quiz.svg , 문항 anatomy 2026 0444 , 계보 트리는 tree s05 vessel 참조) 지점 무엇이 갈라지나 귀밑샘 안 · ==턱뼈목 높이== 바깥목동맥 → 얕은관자 + 위턱동맥 두 종말가지 1부(턱뼈목 안쪽) 깊은귀 · 앞고실 · ==중간뇌막(가시구멍)== · 덧뇌막(타원구멍) · ==아래이틀(턱뼈구멍)== 2부(가쪽날개근 표면) 깊은관자(앞·뒤) · 날개근가지 · 깨물근(==턱뼈패임== 통과) · 볼동맥 3부(날개위턱틈새 → 우묵) 뒤위이틀 · 눈확아래 · 내림입천장 · ==나비입천장(종말, 코피)== 1·2·3부 = ==구멍 · 근육 · 우묵== — 가지의 행선지가 곧 구간 이름. 얕은관자동맥 가지 = 가로얼굴(광대활 아래 전진) · 중간관자 · 이마·마루가지 종말. 태깅 축: 중간뇌막동맥은 ==귓바퀴관자신경 두 뿌리== 사이로 상행 → 신경 약도(anatomy 2026 0443)와 겹쳐 볼 것."
   },
   {
    "id": "anatomy-2026-0441",
